@@ -1,0 +1,27 @@
+{
+	"fiscal_year": 2026,
+	"act_number": "RA 11639",
+	"total_appropriation": 15200000000,
+	"agencies": [
+		{
+			"agency_id": "DODB",
+			"agency_name": "Department of Budget and Development",
+			"total_appropriation": 5200000000,
+			"programs": [
+				{
+					"program_id": "DODB-001",
+					"program_name": "Budget Planning and Monitoring",
+					"personnel_services": 1200000000,
+					"mooe": 2600000000,
+					"capital_outlays": 1400000000,
+					"total": 5200000000,
+					"performance_indicators": ["Publish annual budget transparency report", "Complete interagency spending dashboard"],
+					"special_provisions": ["Funds are subject to reprogramming under approved guidelines."],
+					"source_file": "BAA_2026.pdf",
+					"source_page": 12,
+					"confidence_score": 0.92
+				}
+			]
+		}
+	]
+}

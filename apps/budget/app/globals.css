@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --paper: #f4f0e8;
+  --paper-2: #efece4;
+  --paper-3: #e3dfd2;
+  --rule: #cbc1a8;
+  --rule-soft: #e2dcc8;
+  --ink: #16140f;
+  --ink-2: #3a352a;
+  --ink-3: #6b6452;
+  --ink-mute: #968d75;
+  --accent: #8a2418;
+  --accent-deep: #5e1810;
+  --accent-soft: #d8b8a8;
+  --slate: #2d3e4f;
+  --positive: #4a5a3a;
+  --ochre: #9a7530;
+  --font-body:
+    var(--font-google-sans-flex, "Google Sans Flex"), -apple-system,
+    BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-display:
+    var(--font-google-sans-flex, "Google Sans Flex"), -apple-system,
+    BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-mono-ui:
+    var(--font-google-sans-flex, "Google Sans Flex"), "SF Mono", Menlo,
+    Consolas, ui-monospace, monospace;
+  --font-number:
+    var(--font-oswald, "Oswald"), "Arial Narrow", Arial, sans-serif;
+  background: var(--paper);
+}
+
+@theme inline {
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-mono-ui);
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-feature-settings: "tnum";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+@layer base {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+
+  table thead {
+    font-weight: 600;
+  }
+
+  table th,
+  table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+
+  table tr:hover {
+    background: var(--paper-2);
+  }
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--ink);
+}
+
+.num {
+  font-family: var(--font-number);
+  font-variant-numeric: tabular-nums;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-family: var(--font-mono-ui);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.special-provision-body ol {
+  margin: 0;
+  padding-left: 1.35rem;
+  list-style: decimal;
+}
+
+.special-provision-body ol ol {
+  margin-top: 0.25rem;
+  list-style: lower-alpha;
+}
+
+.special-provision-body li {
+  margin-top: 0.45rem;
+  padding-left: 0.15rem;
+}
+
+.special-provision-body li:first-child {
+  margin-top: 0;
+}
+
+.special-provision-body strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.special-provision-body li > strong:first-child {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.special-provision-body br {
+  display: block;
+  margin-top: 0.15rem;
+  content: "";
+}
+
+.special-provision-body br + br {
+  display: none;
+}

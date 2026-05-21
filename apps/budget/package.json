@@ -1,0 +1,19 @@
+{
+	"name": "@betterbarmm/budget",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "next dev -p 3001",
+		"build": "next build",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@betterbarmm/budget-data": "workspace:*",
+		"@betterbarmm/charts": "workspace:*",
+		"@betterbarmm/ui": "workspace:*",
+		"lucide-react": "^1.16.0",
+		"next": "16.2.6",
+		"react": "19.2.4",
+		"react-dom": "19.2.4"
+	}
+}

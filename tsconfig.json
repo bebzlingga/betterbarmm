@@ -1,0 +1,13 @@
+{
+	"extends": "./packages/config/tsconfig.base.json",
+	"include": ["apps/**/*", "packages/**/*", "datasets/**/*"],
+	"references": [
+		{ "path": "packages/ui" },
+		{ "path": "packages/schemas" },
+		{ "path": "packages/budget-data" },
+		{ "path": "packages/auth" },
+		{ "path": "packages/db" },
+		{ "path": "packages/charts" },
+		{ "path": "packages/pdf-tools" }
+	]
+}

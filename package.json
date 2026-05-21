@@ -1,0 +1,38 @@
+{
+	"name": "betterbarmm-platform",
+	"version": "0.1.0",
+	"private": true,
+	"packageManager": "bun@1.0.0",
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"scripts": {
+		"bootstrap": "bun install",
+		"dev": "bun run turbo dev",
+		"build": "bun run turbo build",
+		"lint": "bun run turbo lint",
+		"format": "bun run prettier --write ."
+	},
+	"dependencies": {
+		"next": "16.2.6",
+		"react": "19.2.4",
+		"react-dom": "19.2.4"
+	},
+	"devDependencies": {
+		"@tailwindcss/postcss": "^4.0.0",
+		"@types/node": "^20.15.0",
+		"@types/react": "^19.2.0",
+		"@types/react-dom": "^19.2.0",
+		"autoprefixer": "^10.4.19",
+		"clsx": "^2.1.1",
+		"eslint": "^9.0.0",
+		"eslint-config-next": "16.2.6",
+		"prettier": "^3.0.0",
+		"tailwind-merge": "^1.14.0",
+		"tailwindcss": "^4.0.0",
+		"turbo": "^1.11.5",
+		"typescript": "^5.6.0",
+		"zod": "^3.25.0"
+	}
+}

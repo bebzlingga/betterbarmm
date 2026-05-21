@@ -1,0 +1,16 @@
+{
+	"name": "@betterbarmm/admin",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "next dev -p 3003",
+		"build": "next build",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"next": "16.2.6",
+		"react": "19.2.4",
+		"react-dom": "19.2.4",
+		"@betterbarmm/ui": "workspace:*"
+	}
+}

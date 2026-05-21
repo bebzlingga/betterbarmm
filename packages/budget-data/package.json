@@ -1,0 +1,12 @@
+{
+	"name": "@betterbarmm/budget-data",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"dependencies": {
+		"@betterbarmm/schemas": "workspace:*"
+	}
+}

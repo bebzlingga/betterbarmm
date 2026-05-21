@@ -1,0 +1,21 @@
+{
+	"name": "@betterbarmm/config",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts",
+		"./eslint.config.mjs": "./eslint.config.mjs",
+		"./tailwind.config.ts": "./tailwind.config.ts",
+		"./postcss.config.mjs": "./postcss.config.mjs",
+		"./tsconfig.base.json": "./tsconfig.base.json"
+	},
+	"files": [
+		"*.ts",
+		"src",
+		"tsconfig.base.json",
+		"tailwind.config.ts",
+		"postcss.config.mjs",
+		"eslint.config.mjs"
+	]
+}

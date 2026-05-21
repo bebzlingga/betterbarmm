@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+
+:root {
+	color-scheme: light;
+	--paper: #f7f5f0;
+	--paper-2: #efece4;
+	--paper-3: #eeeade;
+	--rule: #cbc1a8;
+	--rule-soft: #e2dcc8;
+	--ink: #16140f;
+	--ink-2: #3a352a;
+	--ink-3: #6b6452;
+	--ink-mute: #968d75;
+	--accent: #8a2418;
+	--accent-deep: #5e1810;
+	--accent-soft: #d8b8a8;
+	--slate: #2d3e4f;
+	--positive: #4a5a3a;
+	--ochre: #9a7530;
+	--background: var(--paper);
+	--foreground: var(--ink);
+	--font-body: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+	--font-display: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+	--font-mono-ui: 'Google Sans', 'SF Mono', Menlo, Consolas, ui-monospace, monospace;
+}
+
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: var(--font-body);
+	--font-mono: var(--font-mono-ui);
+}
+
+body {
+	background: var(--background);
+	color: var(--foreground);
+	font-family: var(--font-body);
+	font-feature-settings: 'tnum';
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+::selection {
+	background: var(--accent-soft);
+	color: var(--ink);
+}
+
+.num {
+	font-family: var(--font-mono-ui);
+	font-variant-numeric: tabular-nums;
+}
+
+.eyebrow {
+	color: var(--accent);
+	font-family: var(--font-mono-ui);
+	font-size: 0.6875rem;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+.rule-link {
+	border-bottom: 1px solid var(--accent);
+	color: var(--ink);
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.rule-link:hover {
+	color: var(--accent);
+}
