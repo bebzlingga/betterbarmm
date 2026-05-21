@@ -175,7 +175,7 @@ function BudgetOverviewHero({ fromYear, toYear }: { fromYear: number; toYear: nu
 function OverviewMetric({ label, value, detail, tone }: { label: string; value: string | number; detail: string; tone?: 'positive' }) {
 	return (
 		<div className='border-b border-r border-[var(--rule)] p-6 last:border-r-0 sm:[&:nth-child(2n)]:border-r-0 lg:border-b-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0'>
-			<p className='inline-block bg-[var(--accent-deep)] px-1 pl-2 font-mono text-[9px] font-medium uppercase tracking-[0.28em] text-white'>{label}</p>
+			<p className='inline-block bg-[var(--accent)] px-1 pl-2 font-mono text-[9px] font-medium uppercase tracking-[0.28em] text-white'>{label}</p>
 			<p className='num mt-5 text-4xl font-semibold uppercase leading-none'>{value}</p>
 			<p className={`mt-3 font-mono text-[11px] font-medium uppercase tracking-[0.12em] ${tone === 'positive' ? 'text-[var(--positive)]' : 'text-[var(--ink-3)]'}`}>{detail}</p>
 		</div>
@@ -266,7 +266,7 @@ function AnnualAppropriationChart({ rows }: { rows: YearRow[] }) {
 					<polyline
 						points={points.map((point) => `${point.x},${point.y}`).join(' ')}
 						fill='none'
-						stroke='var(--accent-deep)'
+						stroke='var(--accent)'
 						strokeWidth='3'
 						strokeLinejoin='round'
 						strokeLinecap='round'
@@ -278,7 +278,7 @@ function AnnualAppropriationChart({ rows }: { rows: YearRow[] }) {
 								cx={point.x}
 								cy={point.y}
 								r='6'
-								fill='var(--accent-deep)'
+								fill='var(--accent)'
 							/>
 							<text
 								x={point.x}
@@ -413,7 +413,7 @@ function OfficeAppropriationTrendChart({
 					<polyline
 						points={points.map((point) => `${point.x},${point.y}`).join(' ')}
 						fill='none'
-						stroke='var(--accent-deep)'
+						stroke='var(--accent)'
 						strokeWidth='3'
 						strokeLinejoin='round'
 						strokeLinecap='round'
@@ -425,7 +425,7 @@ function OfficeAppropriationTrendChart({
 								cx={point.x}
 								cy={point.y}
 								r='6'
-								fill='var(--accent-deep)'
+								fill='var(--accent)'
 							/>
 							<text
 								x={point.x}

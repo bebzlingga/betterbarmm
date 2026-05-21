@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SiteFooter } from "./_components/site-footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -28,6 +29,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full bg-[var(--paper)] antialiased">
         {children}
+        <SiteFooter />
       </body>
     </html>
   );

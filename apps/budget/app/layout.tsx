@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Google_Sans_Flex, Oswald } from 'next/font/google'
+import { BudgetWorkInProgressDialog } from './_components/budget-work-in-progress-dialog'
 import './globals.css'
 
 const googleSansFlex = Google_Sans_Flex({
@@ -28,7 +29,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			lang='en'
 			className={`${googleSansFlex.variable} ${oswald.variable} h-full bg-[var(--paper)] text-[var(--ink)]`}
 		>
-			<body className='min-h-full bg-[var(--paper)] antialiased'>{children}</body>
+			<body className='min-h-full bg-[var(--paper)] antialiased'>
+				<BudgetWorkInProgressDialog />
+				{children}
+			</body>
 		</html>
 	)
 }
