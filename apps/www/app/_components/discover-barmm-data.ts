@@ -27,6 +27,7 @@ export type DiscoverBarmmDetailCard = {
 export type DiscoverBarmmTopic = {
 	slug: string
 	label: string
+	navTitle?: string
 	title: string
 	description: string
 	sections: string[]
@@ -42,6 +43,7 @@ export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
 	{
 		slug: 'history',
 		label: 'History',
+		navTitle: 'History',
 		title: 'How BARMM came to be',
 		description:
 			'A plain-language account of identity, self-governance, the peace process, the Bangsamoro Organic Law, the 2019 plebiscites, and the transition from ARMM to BARMM.',
@@ -66,6 +68,7 @@ export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
 	{
 		slug: 'governance',
 		label: 'Governance',
+		navTitle: 'Government',
 		title: 'How the Bangsamoro government works',
 		description:
 			'BARMM is an autonomous parliamentary regional government: Parliament makes regional laws, the Chief Minister leads the executive, and ministries deliver public services across the Bangsamoro.',
@@ -397,6 +400,7 @@ export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
 	{
 		slug: 'people',
 		label: 'People',
+		navTitle: 'People',
 		title: 'Peoples and communities of Bangsamoro',
 		description:
 			'Meet the Moro ethnolinguistic groups, Indigenous peoples, and settler communities that shape Bangsamoro public life through language, faith, memory, arts, livelihoods, customary practice, and place.',
@@ -558,6 +562,7 @@ export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
 	{
 		slug: 'culture-places',
 		label: 'Culture & Places',
+		navTitle: 'Culture & Places',
 		title: 'Mosques, food, islands, and living heritage',
 		description:
 			'A starting map for what makes BARMM vivid: grand mosques, old sacred sites, island landscapes, halal food traditions, textiles, landmarks, and community-based tourism.',

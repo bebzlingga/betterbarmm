@@ -45,6 +45,7 @@ body {
   color: var(--ink);
   font-family: var(--font-body);
   font-feature-settings: "tnum";
+  overflow-x: clip;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }

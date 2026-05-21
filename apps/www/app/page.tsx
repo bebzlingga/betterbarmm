@@ -78,27 +78,27 @@ export default function HomePage() {
 					className='absolute inset-0 opacity-70'
 					aria-hidden='true'
 				>
-					<div className='absolute left-0 top-0 h-full w-full bg-[linear-gradient(to_right,var(--rule-soft)_1px,transparent_1px),linear-gradient(to_bottom,var(--rule-soft)_1px,transparent_1px)] bg-[size:96px_96px]' />
+					<div className='absolute left-0 top-0 h-full w-full bg-[linear-gradient(to_right,var(--rule-soft)_1px,transparent_1px),linear-gradient(to_bottom,var(--rule-soft)_1px,transparent_1px)] bg-[size:72px_72px] sm:bg-[size:96px_96px]' />
 				</div>
 
-				<div className='relative mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-20 lg:py-32'>
+				<div className='relative mx-auto max-w-7xl px-12 py-12 sm:py-20 lg:py-32'>
 					<HomeHeroSlider />
 				</div>
 			</section>
 
-			<div className='mx-auto max-w-7xl px-5 py-8 sm:px-8'>
-				<section className='pb-24 pt-20'>
-					<div className='flex flex-wrap items-end justify-between gap-6 border-b border-[var(--ink)] pb-16'>
+			<div className='mx-auto max-w-7xl px-12 py-8'>
+				<section className='pb-20 pt-14 sm:pb-24 sm:pt-20'>
+					<div className='flex flex-col items-start justify-between gap-5 border-b border-[var(--ink)] pb-10 sm:gap-6 sm:pb-16 lg:flex-row lg:items-end'>
 						<div>
 							<p className='eyebrow'>Public workspaces</p>
-							<h2 className='mt-3 text-4xl font-extrabold leading-none tracking-[-0.03em] sm:text-6xl'>Start with the records.</h2>
+							<h2 className='mt-3 max-w-3xl text-3xl font-extrabold leading-none tracking-[-0.03em] sm:text-5xl lg:text-6xl'>Start with the records.</h2>
 						</div>
-						<p className='max-w-xl text-base leading-6 text-[var(--ink-3)]'>
+						<p className='max-w-xl text-sm leading-6 text-[var(--ink-3)] sm:text-base'>
 							Each workspace is designed around the same promise: show the public record, explain the method, and keep the trail visible.
 						</p>
 					</div>
 
-					<div className='grid lg:grid-cols-3'>
+					<div className='grid sm:grid-cols-2 lg:grid-cols-3'>
 						{portalCards.map((card, index) => (
 							<WorkspaceCard
 								key={card.title}
@@ -109,7 +109,6 @@ export default function HomePage() {
 					</div>
 				</section>
 			</div>
-
 		</main>
 	)
 }
@@ -132,14 +131,15 @@ function WorkspaceCard({ card, index }: { card: (typeof portalCards)[number]; in
 				</span>
 			</div>
 			<h3 className='mt-4 text-2xl font-extrabold tracking-[-0.02em]'>{card.title}</h3>
-			<p className='mt-2 min-h-20 pr-8! text-sm leading-5 text-[var(--ink-2)]'>{card.description}</p>
-			<div className='mt-8 flex items-center justify-between gap-4 border-t border-[var(--rule-soft)] pt-4 font-mono text-[10px] uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+			<p className='mt-2 text-sm leading-5 text-[var(--ink-2)] sm:min-h-20 sm:pr-4 lg:pr-8'>{card.description}</p>
+			<div className='mt-8 flex flex-col gap-2 border-t border-[var(--rule-soft)] pt-4 font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--ink-3)] sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:tracking-[0.16em]'>
 				<span>{card.measure}</span>
-				<span>{isOpen ? 'Source-backed' : 'In progress'}</span>
+				<span className='hidden sm:inline'>{isOpen ? 'Source-backed' : 'In progress'}</span>
 			</div>
 		</>
 	)
-	const className = 'group border-b border-[var(--rule)] p-6 text-[var(--ink)] transition hover:bg-[var(--paper-2)] lg:border-r lg:[&:nth-child(3n)]:border-r-0'
+	const className =
+		'group border-b border-[var(--rule)] p-5 text-[var(--ink)] transition hover:bg-[var(--paper-2)] sm:border-r sm:p-6 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(3n)]:border-r-0'
 
 	if (isOpen) {
 		return (

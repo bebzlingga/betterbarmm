@@ -49,11 +49,11 @@ export function HomeHeroSlider() {
 						className={`home-hero-copy ${isActive ? 'home-hero-copy--active' : ''}`}
 					>
 						<p className='eyebrow home-hero-kicker'>{slide.eyebrow}</p>
-						<h1 className='mt-5 max-w-6xl text-6xl font-extrabold tracking-[-0.045em] sm:text-8xl lg:text-[9rem]'>
+						<h1 className='mt-4 max-w-6xl text-5xl font-extrabold leading-[0.92] tracking-[-0.04em] sm:mt-5 sm:text-7xl md:text-8xl lg:text-[8.5rem] xl:text-[9rem]'>
 							{slide.titleLines.map((line, lineIndex) => (
 								<span
 									key={line}
-									className='home-hero-title-line block sm:whitespace-nowrap'
+									className='home-hero-title-line block md:whitespace-nowrap'
 									style={{ transitionDelay: isActive ? `${120 + lineIndex * 90}ms` : '0ms' }}
 								>
 									{line}
@@ -61,18 +61,18 @@ export function HomeHeroSlider() {
 							))}
 						</h1>
 						<p
-							className='home-hero-description mt-7 max-w-3xl text-lg leading-7! text-[var(--ink-2)] sm:text-xl sm:leading-9'
+							className='home-hero-description mt-6 max-w-3xl text-base leading-6! text-[var(--ink-2)] sm:mt-7 sm:text-lg sm:leading-7! lg:text-xl lg:leading-9!'
 							style={{ transitionDelay: isActive ? '340ms' : '0ms' }}
 						>
 							{slide.description}
 						</p>
 						<div
-							className='home-hero-actions mt-16 flex flex-wrap items-center gap-3'
+							className='home-hero-actions mt-10 flex flex-wrap items-center gap-3 sm:mt-14 lg:mt-16'
 							style={{ transitionDelay: isActive ? '460ms' : '0ms' }}
 						>
 							<a
 								href={slide.action.href}
-								className='inline-flex border border-[var(--ink)] bg-[var(--ink)] px-5 py-3 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--paper)] transition hover:bg-[var(--accent)]'
+								className='inline-flex w-full justify-center border border-[var(--ink)] bg-[var(--ink)] px-5 py-3 text-center font-mono text-[10px] font-semibold uppercase tracking-[0.13em] text-[var(--paper)] transition hover:bg-[var(--accent)] sm:w-auto sm:text-[11px] sm:tracking-[0.14em]'
 							>
 								{slide.action.label}
 							</a>
