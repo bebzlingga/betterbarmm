@@ -35,7 +35,7 @@ export default function DiscoverBarmmPage() {
 					<div className='absolute left-0 top-0 h-full w-full bg-[linear-gradient(to_right,var(--rule-soft)_1px,transparent_1px),linear-gradient(to_bottom,var(--rule-soft)_1px,transparent_1px)] bg-[size:72px_72px] sm:bg-[size:96px_96px]' />
 				</div>
 
-				<div className='relative mx-auto max-w-7xl px-12 py-16 sm:py-20 lg:py-32'>
+				<div className='relative mx-auto max-w-7xl px-8 py-16 sm:py-20 lg:py-32'>
 					<p className='eyebrow'>Bangsamoro primer</p>
 					<h1 className='mt-4 max-w-6xl text-5xl font-extrabold leading-[0.92] tracking-[-0.04em] sm:mt-5 sm:text-7xl md:text-8xl lg:text-[8.5rem] xl:text-[9rem]'>The Story of Bangsamoro.</h1>
 					<p className='mt-6 max-w-3xl text-base leading-6 text-[var(--ink-2)] sm:mt-8 sm:text-lg sm:leading-7 lg:text-xl lg:leading-snug'>
@@ -45,13 +45,13 @@ export default function DiscoverBarmmPage() {
 				</div>
 			</section>
 
-			<section className='mx-auto max-w-7xl px-12 py-16 sm:py-20 lg:py-24'>
+			<section className='mx-auto max-w-7xl px-8 py-16 sm:py-20 lg:py-24'>
 				<div className='grid border-y border-[var(--ink)] sm:grid-cols-2 lg:grid-cols-4'>
 					{discoverBarmmTopics.map((topic, index) => (
 						<a
 							key={topic.slug}
 							href={`#${topic.slug}`}
-							className='group border-b border-[var(--rule)] p-5 text-[var(--ink)] transition hover:bg-[var(--paper-2)] last:border-b-0 sm:border-r sm:p-6 sm:[&:nth-child(2n)]:border-r-0 sm:[&:nth-last-child(-n+2)]:border-b-0 lg:border-b-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0'
+							className='group border-b border-[var(--rule)] py-5 text-[var(--ink)] transition hover:bg-[var(--paper-2)] last:border-b-0 sm:border-r sm:p-6 sm:[&:nth-child(2n)]:border-r-0 sm:[&:nth-last-child(-n+2)]:border-b-0 lg:border-b-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0'
 						>
 							<div className='flex items-center justify-between gap-4'>
 								<p className='eyebrow'>
@@ -69,7 +69,7 @@ export default function DiscoverBarmmPage() {
 				id='history'
 				className='discover-dark-section scroll-mt-28'
 			>
-				<div className='mx-auto max-w-7xl px-12 py-20 sm:py-24 lg:py-32'>
+				<div className='mx-auto max-w-7xl px-8 py-20 sm:py-24 lg:py-32'>
 					<div className='border-b border-[var(--rule)]'>
 						<div className='border-b border-[var(--rule)] pb-16'>
 							<p className='eyebrow'>01 / History</p>
@@ -83,7 +83,7 @@ export default function DiscoverBarmmPage() {
 							{historyMilestones.map((milestone, index) => (
 								<div
 									key={milestone.label}
-									className='border-b border-[var(--rule)] p-5 last:border-b-0 sm:p-6 lg:border-b-0 lg:border-r lg:last:border-r-0'
+									className='border-b border-[var(--rule)] py-5 last:border-b-0 sm:p-6 lg:border-b-0 lg:border-r lg:last:border-r-0'
 								>
 									<p className='inline-block w-fit bg-[var(--accent)] px-2 py-1 font-mono text-[9px] font-semibold uppercase tracking-[0.22em] text-white'>0{index + 1}</p>
 									<p className='mt-3 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>{milestone.label}</p>
@@ -106,7 +106,7 @@ export default function DiscoverBarmmPage() {
 							id={topic.slug}
 							className={`scroll-mt-28 ${isDarkSection ? 'discover-dark-section' : ''}`}
 						>
-							<div className={`mx-auto max-w-7xl px-12 py-20 sm:py-24 lg:py-32`}>
+							<div className={`mx-auto max-w-7xl px-8 py-20 sm:py-24 lg:py-32`}>
 								<div className='border-b border-[var(--ink)]'>
 									<div className='border-b border-[var(--rule)] pb-10'>
 										<p className='eyebrow'>
@@ -198,7 +198,7 @@ function DetailCards({
 					return (
 						<article
 							key={`${card.label}-${card.title}`}
-							className={`flex flex-col border-[var(--rule)] p-5 transition hover:bg-[var(--paper-2)] sm:p-6 ${isLastItem ? '' : 'border-b'} ${isTabletLastRow ? 'sm:border-b-0' : 'sm:border-b'} ${isTabletRowEnd ? 'sm:border-r-0' : 'sm:border-r'} ${isDesktopLastRow ? 'lg:border-b-0' : 'lg:border-b'} ${isDesktopRowEnd ? 'lg:border-r-0' : 'lg:border-r'}`}
+							className={`flex flex-col border-[var(--rule)] py-5 transition hover:bg-[var(--paper-2)] sm:p-6 ${isLastItem ? '' : 'border-b'} ${isTabletLastRow ? 'sm:border-b-0' : 'sm:border-b'} ${isTabletRowEnd ? 'sm:border-r-0' : 'sm:border-r'} ${isDesktopLastRow ? 'lg:border-b-0' : 'lg:border-b'} ${isDesktopRowEnd ? 'lg:border-r-0' : 'lg:border-r'}`}
 						>
 							<p className='eyebrow'>{card.label}</p>
 							{card.value ? <p className='mt-5 text-3xl font-extrabold leading-none tracking-[-0.03em] sm:text-4xl'>{card.value}</p> : null}
@@ -277,7 +277,7 @@ function PeopleGroups({ groups }: { groups: DiscoverBarmmPeopleGroup[] }) {
 									return (
 										<article
 											key={person.name}
-											className={`flex flex-col border-[var(--rule)] p-5 transition hover:bg-[var(--paper-2)] sm:p-6 ${isLastItem ? '' : 'border-b'} ${isTabletLastRow ? 'sm:border-b-0' : 'sm:border-b'} ${isTabletRowEnd ? 'sm:border-r-0' : 'sm:border-r'} ${isDesktopLastRow ? 'lg:border-b-0' : 'lg:border-b'} ${isDesktopRowEnd ? 'lg:border-r-0' : 'lg:border-r'}`}
+											className={`flex flex-col border-[var(--rule)] py-5 transition hover:bg-[var(--paper-2)] sm:p-6 ${isLastItem ? '' : 'border-b'} ${isTabletLastRow ? 'sm:border-b-0' : 'sm:border-b'} ${isTabletRowEnd ? 'sm:border-r-0' : 'sm:border-r'} ${isDesktopLastRow ? 'lg:border-b-0' : 'lg:border-b'} ${isDesktopRowEnd ? 'lg:border-r-0' : 'lg:border-r'}`}
 										>
 											<p className='inline-block w-fit self-start bg-[var(--accent)] px-2 py-1 font-mono text-[9px] font-semibold uppercase tracking-[0.22em] text-white'>
 												{String(itemNumber).padStart(2, '0')}

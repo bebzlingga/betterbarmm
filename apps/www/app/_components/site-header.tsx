@@ -30,7 +30,7 @@ export function SiteHeader({ activeItem }: SiteHeaderProps) {
 
 	return (
 		<header className='sticky top-0 z-20 border-b border-[var(--ink)] bg-[var(--paper)]'>
-			<div className='mx-auto max-w-7xl px-12 py-4'>
+			<div className='mx-auto max-w-7xl px-8 py-4'>
 				<div className='flex items-center justify-between gap-4'>
 					<a
 						href='/'
