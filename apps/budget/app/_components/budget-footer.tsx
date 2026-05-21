@@ -36,7 +36,7 @@ export function BudgetFooter() {
 	const fiscalYearCount = selection.toYear - selection.fromYear + 1
 
 	return (
-		<footer className='bg-white border-t border-[var(--ink)] bg-[var(--paper)] px-5 py-8 pb-4 text-[var(--ink)] sm:py-10 sm:pb-6'>
+		<footer className='border-t border-[var(--ink)] bg-[var(--paper)] px-5 py-8 pb-4 text-[var(--ink)] sm:py-10 sm:pb-6'>
 			<div className='mx-auto max-w-[1440px] px-5'>
 				<p className='break-words font-mono text-[10px] uppercase leading-6 tracking-[0.16em] text-[var(--ink-3)] sm:tracking-[0.32em]'>
 					Source: Bangsamoro Appropriations Acts · {selection.budget.act_number} · {fiscalYearCount} fiscal years · {agencyRows.length} reporting units · {programRows.length} programs ·{' '}
@@ -48,8 +48,7 @@ export function BudgetFooter() {
 				<div className='pt-2 pb-2'>
 					<p className='max-w-4xl text-[11px] uppercase leading-7 tracking-[0.08em] text-[var(--ink-3)] sm:tracking-[0.1em]'>
 						<span className='font-mono font-bold text-[var(--ink)]'>AI-assisted analysis.</span> The figures, breakdowns, and editorial commentary on this site were parsed, aggregated, and drafted
-						with Codex for human review. The dataset and its interpretations may contain errors, missed classifications, or stale figures. Always verify against the official GAAB source before
-						citing.
+						with Codex for human review. The dataset and its interpretations may contain errors, missed classifications, or stale figures. Always verify against the official GAAB source before citing.
 					</p>
 					<div className='mt-6 flex gap-10'>
 						<FooterLinkBlock
@@ -78,11 +77,11 @@ export function BudgetFooter() {
 						{' & '}
 						Inspired by{' '}
 						<a
-							href='https://dict.bettergov.ph'
+							href='https://bettergov.ph'
 							target='_blank'
 							className='border-b border-[var(--accent)] font-bold tracking-[0.18em] text-[var(--ink)] hover:text-[var(--accent)]'
 						>
-							dict.bettergov.ph
+							bettergov.ph
 						</a>
 					</p>
 					<p className='font-mono text-[10px] uppercase leading-6 tracking-[0.16em] text-[var(--ink-3)] sm:tracking-[0.24em] md:text-right'>
