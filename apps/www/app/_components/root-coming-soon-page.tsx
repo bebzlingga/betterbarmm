@@ -2,7 +2,7 @@ import { SiteHeader } from './site-header'
 import { type ReactNode } from 'react'
 
 type RootComingSoonPageProps = {
-	activeItem: 'about' | 'contact'
+	activeItem: 'about' | 'contribute'
 	eyebrow: string
 	title: string
 	description: ReactNode

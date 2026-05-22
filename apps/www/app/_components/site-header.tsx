@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 type SiteHeaderProps = {
-	activeItem?: 'discover' | 'about' | 'contact'
+	activeItem?: 'discover' | 'about' | 'contribute'
 }
 
 const navItems = [
@@ -18,9 +18,9 @@ const navItems = [
 		href: '/about',
 	},
 	{
-		key: 'contact',
-		label: 'Contact Us',
-		href: '/contact',
+		key: 'contribute',
+		label: 'Contribute',
+		href: '/contribute',
 	},
 ] as const
 
