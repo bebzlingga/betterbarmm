@@ -16,7 +16,7 @@ interface BudgetComingSoonPageProps {
 export function BudgetComingSoonPage({ activeItem, eyebrow, title, accent, description, signal, statusHeading = "We're cooking.", notes, checkpoints }: BudgetComingSoonPageProps) {
 	return (
 		<BudgetPageShell activeItem={activeItem}>
-			<section className='mb-16 mt-16'>
+			<section className='mb-12 mt-10 sm:mb-16 sm:mt-16'>
 				<BudgetPageHeader
 					eyebrow={eyebrow}
 					title={
@@ -26,8 +26,8 @@ export function BudgetComingSoonPage({ activeItem, eyebrow, title, accent, descr
 					}
 					description={description}
 					aside={
-						<div className='mt-12 border-y border-[var(--ink)]'>
-							<div className='flex flex-wrap items-center justify-between gap-4 border-b border-[var(--rule)] px-8 py-4 font-mono text-[10px] font-bold uppercase tracking-[0.16em]'>
+						<div className='mt-8 border-y border-[var(--ink)] sm:mt-12'>
+							<div className='flex flex-wrap items-center justify-between gap-4 border-b border-[var(--rule)] px-4 py-4 font-mono text-[10px] font-bold uppercase tracking-[0.16em] sm:px-8'>
 								<p className='text-[var(--accent)]'>Now simmering</p>
 								<p className='text-[var(--ink-3)]'>Draft room / Not final</p>
 							</div>
@@ -35,7 +35,7 @@ export function BudgetComingSoonPage({ activeItem, eyebrow, title, accent, descr
 								{notes.map((note) => (
 									<div
 										key={note}
-										className='border-b border-[var(--rule)] p-8 last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0'
+										className='border-b border-[var(--rule)] p-4 last:border-b-0 sm:p-8 md:border-b-0 md:border-r md:last:border-r-0'
 									>
 										<p className='mb-4! font-mono text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--accent)]'>Coming soon</p>
 										<p className='num mt-3 text-xl font-semibold leading-snug! text-[var(--ink)]'>{note}</p>
@@ -47,10 +47,10 @@ export function BudgetComingSoonPage({ activeItem, eyebrow, title, accent, descr
 				/>
 			</section>
 
-			<section className='mt-36 mb-24 grid gap-10 border-t border-[var(--ink)] pt-10 lg:grid-cols-[minmax(18rem,0.75fr)_1fr]'>
-				<div className='pr-10'>
+			<section className='mt-20 mb-16 grid gap-10 border-t border-[var(--ink)] pt-10 sm:mt-36 sm:mb-24 lg:grid-cols-[minmax(18rem,0.75fr)_1fr]'>
+				<div className='lg:pr-10'>
 					<p className='eyebrow'>Status</p>
-					<h2 className='num mt-3 text-5xl font-extrabold uppercase tracking-normal'>{statusHeading}</h2>
+					<h2 className='num mt-3 text-3xl font-extrabold uppercase tracking-normal sm:text-5xl'>{statusHeading}</h2>
 					<p className='mt-5! text-sm leading-6 text-[var(--ink-3)]'>{signal}</p>
 				</div>
 

@@ -93,11 +93,11 @@ export default async function BudgetOfficesPage({ searchParams }: { searchParams
 
 function OfficeSpecialProvisionList({ rows, total, label, allocationByAgencyId }: { rows: OfficeSpecialProvisionRow[]; total: number; label: string; allocationByAgencyId: Map<string, AgencyRow> }) {
 	return (
-		<section className='my-24 mb-12'>
+		<section className='my-16 mb-12 sm:my-24'>
 			<div className='mb-6! flex flex-wrap items-end justify-between gap-4'>
 				<div>
 					<p className='eyebrow'>Special provisions</p>
-					<h2 className='num mt-2 text-5xl font-extrabold uppercase tracking-normal'>Special Provisions By Office</h2>
+					<h2 className='num mt-2 text-3xl font-extrabold uppercase tracking-normal sm:text-5xl'>Special Provisions By Office</h2>
 				</div>
 				<p className='font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>
 					{rows.length} {pluralize(rows.length, 'office', 'offices')} / {label}
@@ -105,7 +105,7 @@ function OfficeSpecialProvisionList({ rows, total, label, allocationByAgencyId }
 			</div>
 
 			<div className='overflow-x-auto bg-[var(--paper)]'>
-				<div className='min-w-[1040px]'>
+				<div className='md:min-w-[860px]'>
 					{rows.map((office) => {
 						const allocation = allocationByAgencyId.get(office.agency_id)
 						const personnel = allocation?.personnel ?? 0
@@ -119,8 +119,8 @@ function OfficeSpecialProvisionList({ rows, total, label, allocationByAgencyId }
 								name='office-special-provisions'
 								className='group border-b border-[var(--rule-soft)] last:border-b-0'
 							>
-								<summary className='grid cursor-pointer list-none grid-cols-[minmax(28rem,1fr)_minmax(22rem,35%)] items-center transition hover:bg-[var(--paper-2)] group-open:bg-[var(--ink)] group-open:text-[var(--paper)] group-open:hover:bg-[var(--ink)] [&::-webkit-details-marker]:hidden'>
-									<div className='flex items-center px-6 py-3 leading-tight'>
+								<summary className='grid cursor-pointer list-none gap-1 transition hover:bg-[var(--paper-2)] group-open:bg-[var(--ink)] group-open:text-[var(--paper)] group-open:hover:bg-[var(--ink)] md:grid-cols-[minmax(22rem,1fr)_minmax(18rem,35%)] md:items-center [&::-webkit-details-marker]:hidden'>
+									<div className='flex items-center px-4 py-4 leading-tight sm:px-6 md:py-3'>
 										<span className='mr-5 grid size-4 shrink-0 place-items-center border border-[var(--rule)] text-[var(--accent)] group-open:border-[var(--paper-2)] group-open:text-[var(--paper)]'>
 											<Plus
 												className='size-2.5 group-open:hidden'
@@ -141,7 +141,7 @@ function OfficeSpecialProvisionList({ rows, total, label, allocationByAgencyId }
 											</p>
 										</div>
 									</div>
-									<div className='px-6 py-3'>
+									<div className='px-4 pb-4 sm:px-6 md:py-3'>
 										<div className='mb-2 flex items-baseline justify-between gap-4'>
 											<p className='num text-left text-sm font-semibold leading-tight text-[var(--ink)] group-open:text-[var(--paper)]'>{exactTableCurrency(office.total_appropriation)}</p>
 											<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>
@@ -170,14 +170,14 @@ function OfficeSpecialProvisionList({ rows, total, label, allocationByAgencyId }
 
 function OfficeSpecialProvisionDetail({ office }: { office: OfficeSpecialProvisionRow }) {
 	return (
-		<div className='border border-[var(--rule)] bg-[var(--paper-2)] px-12 py-6'>
+		<div className='border border-[var(--rule)] bg-[var(--paper-2)] px-4 py-5 sm:px-6 lg:px-12 lg:py-6'>
 			<div className='mt-5 space-y-8'>
 				{office.special_provisions.map((provision, index) => (
 					<section
 						key={`${office.agency_id}-${provision.title}-${index}`}
 						className='border-t border-[var(--rule-soft)] pt-5 first:border-t-0 first:pt-0'
 					>
-						<h3 className='num uppercase text-3xl font-extrabold tracking-normal'>{provision.title}</h3>
+						<h3 className='num text-2xl font-extrabold uppercase tracking-normal sm:text-3xl'>{provision.title}</h3>
 						<div
 							className='special-provision-body mt-4 text-sm leading-normal text-[var(--ink-2)]'
 							dangerouslySetInnerHTML={{

@@ -107,7 +107,7 @@ export default function BudgetMethodologyPage() {
 
 	return (
 		<BudgetPageShell activeItem='Methodology'>
-			<section className='mb-12 mt-16'>
+			<section className='mb-12 mt-10 sm:mt-16'>
 				<BudgetPageHeader
 					eyebrow='Methodology'
 					title={<>How the BARMM budget dictionary is assembled.</>}
@@ -145,11 +145,11 @@ export default function BudgetMethodologyPage() {
 				]}
 			/>
 
-			<section className='my-32'>
+			<section className='my-20 sm:my-32'>
 				<div className='mb-12! flex flex-wrap items-end justify-between gap-4'>
 					<div>
 						<p className='eyebrow'>Processing pipeline</p>
-						<h2 className='num mt-2 text-5xl font-extrabold uppercase tracking-normal'>Assembly Steps</h2>
+						<h2 className='num mt-2 text-3xl font-extrabold uppercase tracking-normal sm:text-5xl'>Assembly Steps</h2>
 					</div>
 					<p className='font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{pipelineSteps.length} steps</p>
 				</div>
@@ -167,17 +167,17 @@ export default function BudgetMethodologyPage() {
 				</div>
 			</section>
 
-			<section className='mb-12 mt-24'>
+			<section className='mb-12 mt-16 sm:mt-24'>
 				<div className='mb-6! flex flex-wrap items-end justify-between gap-4'>
 					<div>
 						<p className='eyebrow'>Validation table</p>
-						<h2 className='num mt-2 text-5xl font-extrabold uppercase tracking-normal'>Checks</h2>
+						<h2 className='num mt-2 text-3xl font-extrabold uppercase tracking-normal sm:text-5xl'>Checks</h2>
 					</div>
 					<p className='font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{selection.budget.act_number}</p>
 				</div>
 				<div className='overflow-x-auto bg-[var(--paper)]'>
-					<div className='min-w-[980px] border-t border-[var(--ink)]'>
-						<div className='grid grid-cols-[16rem_minmax(28rem,1fr)_14rem] border-b border-[var(--rule-soft)] px-8 py-5 text-sm font-semibold text-[var(--ink)]'>
+					<div className='border-t border-[var(--ink)] md:min-w-[840px]'>
+						<div className='hidden grid-cols-[12rem_minmax(22rem,1fr)_10rem] border-b border-[var(--rule-soft)] px-6 py-5 text-sm font-semibold text-[var(--ink)] md:grid lg:grid-cols-[16rem_minmax(28rem,1fr)_14rem] lg:px-8'>
 							<div>Check</div>
 							<div>Rule</div>
 							<div>Status</div>
@@ -186,7 +186,7 @@ export default function BudgetMethodologyPage() {
 							{validationRows.map((row) => (
 								<div
 									key={row.check}
-									className='grid grid-cols-[16rem_minmax(28rem,1fr)_14rem] items-center px-8 py-6 transition hover:bg-[var(--paper-2)]'
+									className='grid gap-3 px-4 py-5 transition hover:bg-[var(--paper-2)] sm:px-6 md:grid-cols-[12rem_minmax(22rem,1fr)_10rem] md:items-center lg:grid-cols-[16rem_minmax(28rem,1fr)_14rem] lg:px-8 lg:py-6'
 								>
 									<p className='text-sm font-semibold text-[var(--ink)]'>{row.check}</p>
 									<p className='text-sm leading-6 text-[var(--ink-2)]'>{row.rule}</p>
@@ -198,20 +198,20 @@ export default function BudgetMethodologyPage() {
 				</div>
 			</section>
 
-			<section className='my-32 mb-24'>
+			<section className='my-20 mb-16 sm:my-32 sm:mb-24'>
 				<div className='mb-6! flex flex-wrap items-end justify-between gap-4'>
 					<div>
 						<p className='eyebrow'>Definition of terms</p>
-						<h2 className='num mt-2 text-5xl font-extrabold uppercase tracking-normal'>Budget Terms</h2>
+						<h2 className='num mt-2 text-3xl font-extrabold uppercase tracking-normal sm:text-5xl'>Budget Terms</h2>
 					</div>
 					<p className='font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{definitionTerms.length} terms</p>
 				</div>
 				<div className='overflow-x-auto bg-[var(--paper)]'>
-					<div className='min-w-[760px] border-t border-[var(--ink)]'>
+					<div className='border-t border-[var(--ink)] md:min-w-[760px]'>
 						{definitionTerms.map((item) => (
 							<div
 								key={item.term}
-								className='grid grid-cols-[16rem_minmax(28rem,1fr)] items-start border-b border-[var(--rule-soft)] px-8 py-6 transition hover:bg-[var(--paper-2)]'
+								className='grid gap-3 border-b border-[var(--rule-soft)] px-4 py-5 transition hover:bg-[var(--paper-2)] sm:px-6 md:grid-cols-[14rem_minmax(24rem,1fr)] md:px-8 md:py-6 lg:grid-cols-[16rem_minmax(28rem,1fr)]'
 							>
 								<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>{item.term}</p>
 								<p className='text-sm leading-6 text-[var(--ink-2)]'>{item.definition}</p>

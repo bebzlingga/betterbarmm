@@ -36,8 +36,8 @@ export function BudgetFooter() {
 	const fiscalYearCount = selection.toYear - selection.fromYear + 1
 
 	return (
-		<footer className='border-t border-[var(--ink)] bg-[var(--paper)] px-5 py-8 pb-4 text-[var(--ink)] sm:py-10 sm:pb-6'>
-			<div className='mx-auto max-w-[1440px] px-5'>
+		<footer className='border-t border-[var(--ink)] bg-[var(--paper)] px-4 py-8 pb-4 text-[var(--ink)] sm:px-6 sm:py-10 sm:pb-6 lg:px-8'>
+			<div className='mx-auto max-w-[1440px]'>
 				<p className='break-words font-mono text-[10px] uppercase leading-6 tracking-[0.16em] text-[var(--ink-3)] sm:tracking-[0.32em]'>
 					Source: Bangsamoro Appropriations Acts · {selection.budget.act_number} · {fiscalYearCount} fiscal years · {agencyRows.length} reporting units · {programRows.length} programs ·{' '}
 					{approxCount(sourceLineItems)} source line items
@@ -50,7 +50,7 @@ export function BudgetFooter() {
 						<span className='font-mono font-bold text-[var(--ink)]'>AI-assisted analysis.</span> The figures, breakdowns, and editorial commentary on this site were parsed, aggregated, and drafted
 						with Codex for human review. The dataset and its interpretations may contain errors, missed classifications, or stale figures. Always verify against the official GAAB source before citing.
 					</p>
-					<div className='mt-6 flex gap-10'>
+					<div className='mt-6 flex flex-col gap-6 sm:flex-row sm:flex-wrap sm:gap-10'>
 						<FooterLinkBlock
 							label='Data Source'
 							href='https://mfbm.bangsamoro.gov.ph/'

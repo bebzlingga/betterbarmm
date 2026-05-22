@@ -16,10 +16,10 @@ export function BudgetMetricStrip({ metrics }: BudgetMetricStripProps) {
 			{metrics.map((metric, index) => (
 				<div
 					key={metric.label}
-					className='border-b border-r border-b-[var(--ink)] border-r-[var(--rule)] p-6 lg:[&:nth-child(4n)]:border-r-0'
+					className='border-b border-b-[var(--ink)] border-r-[var(--rule)] p-5 sm:border-r sm:p-6 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0'
 				>
-					<p className='inline-block bg-[var(--accent)] pl-2 pr-1.5 font-mono text-[9px] font-medium uppercase tracking-[0.28em] text-white'>{metric.label}</p>
-					<p className='num mt-5 text-4xl font-semibold uppercase leading-none'>{metric.value}</p>
+					<p className='inline-block max-w-full break-words bg-[var(--accent)] pl-2 pr-1.5 font-mono text-[9px] font-medium uppercase leading-4 tracking-[0.24em] text-white sm:tracking-[0.28em]'>{metric.label}</p>
+					<p className='num mt-5 text-3xl font-semibold uppercase leading-none sm:text-4xl'>{metric.value}</p>
 					<p className='font-mono text-[10px] font-medium uppercase tracking-[0.12em] leading-tight! text-[var(--ink-3)]'>{metric.detail}</p>
 				</div>
 			))}

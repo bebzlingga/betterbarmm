@@ -116,13 +116,13 @@ export default async function BudgetOverviewPage({ searchParams }: { searchParam
 
 	return (
 		<BudgetPageShell activeItem='Overview'>
-			<div className='pt-12! pb-24'>
+			<div className='pt-6! pb-16 sm:pt-12! sm:pb-24'>
 				{/* <BudgetOverviewHero
 					fromYear={earliestYear.year}
 					toYear={latestYear.year}
 				/> */}
 
-				<section className='grid border-y border-[var(--ink)] sm:grid-cols-2 lg:grid-cols-4 mb-12!'>
+				<section className='mb-8! grid border-y border-[var(--ink)] sm:mb-12! sm:grid-cols-2 lg:grid-cols-4'>
 					<OverviewMetric
 						label={`FY ${latestYear.year} appropriation`}
 						value={formatPesoBillions(latestYear.total)}
@@ -163,7 +163,7 @@ function BudgetOverviewHero({ fromYear, toYear }: { fromYear: number; toYear: nu
 	return (
 		<section className='mb-10 pt-24!'>
 			<div>
-				<h1 className='num max-w-5xl text-9xl! font-extrabold uppercase leading-[0.88] tracking-normal sm:text-[6.5rem] lg:text-[8.5rem] xl:text-[9.5rem]'>Make public money readable.</h1>
+				<h1 className='num max-w-5xl text-5xl! font-extrabold uppercase leading-[0.88] tracking-normal sm:text-[6.5rem]! lg:text-[8.5rem]! xl:text-[9.5rem]!'>Make public money readable.</h1>
 				<p className='mt-8! max-w-3xl text-lg leading-7! text-[var(--ink-2)] sm:text-xl sm:leading-9'>
 					The BARMM budget portal turns appropriations, offices, programs, and source documents into a traceable public ledger for fiscal years {fromYear}-{toYear}.
 				</p>
@@ -174,9 +174,9 @@ function BudgetOverviewHero({ fromYear, toYear }: { fromYear: number; toYear: nu
 
 function OverviewMetric({ label, value, detail, tone }: { label: string; value: string | number; detail: string; tone?: 'positive' }) {
 	return (
-		<div className='border-b border-r border-[var(--rule)] p-6 last:border-r-0 sm:[&:nth-child(2n)]:border-r-0 lg:border-b-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0'>
-			<p className='inline-block bg-[var(--accent)] px-1 pl-2 font-mono text-[9px] font-medium uppercase tracking-[0.28em] text-white'>{label}</p>
-			<p className='num mt-5 text-4xl font-semibold uppercase leading-none'>{value}</p>
+		<div className='border-b border-[var(--rule)] p-5 sm:border-r sm:p-6 sm:[&:nth-child(2n)]:border-r-0 lg:border-b-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0'>
+			<p className='inline-block max-w-full break-words bg-[var(--accent)] px-1 pl-2 font-mono text-[9px] font-medium uppercase leading-4 tracking-[0.24em] text-white sm:tracking-[0.28em]'>{label}</p>
+			<p className='num mt-5 text-3xl font-semibold uppercase leading-none sm:text-4xl'>{value}</p>
 			<p className={`mt-3 font-mono text-[11px] font-medium uppercase tracking-[0.12em] ${tone === 'positive' ? 'text-[var(--positive)]' : 'text-[var(--ink-3)]'}`}>{detail}</p>
 		</div>
 	)
@@ -204,8 +204,8 @@ function AnnualAppropriationChart({ rows }: { rows: YearRow[] }) {
 	})
 
 	return (
-		<section className='mt-6 border border-[var(--ink)] bg-[var(--paper)] px-12 py-10'>
-			<div className='flex flex-wrap items-baseline justify-between gap-3'>
+		<section className='mt-6 border border-[var(--ink)] bg-[var(--paper)] px-4 py-6 sm:px-8 sm:py-8 lg:px-12 lg:py-10'>
+			<div className='flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-baseline sm:justify-between'>
 				<h2 className='num text-xl font-extrabold uppercase tracking-normal'>
 					BARMM total appropriation, FY {rows[0]?.year} - {rows[rows.length - 1]?.year}
 				</h2>
@@ -217,7 +217,7 @@ function AnnualAppropriationChart({ rows }: { rows: YearRow[] }) {
 					viewBox={`0 0 ${width} ${height}`}
 					role='img'
 					aria-label={`BARMM total appropriation from fiscal year ${rows[0]?.year} to fiscal year ${rows[rows.length - 1]?.year}`}
-					className='h-auto min-w-[860px] max-w-none'
+					className='h-auto min-w-[680px] max-w-none sm:min-w-[860px]'
 				>
 					{ticks.map((tick) => {
 						const y = top + ((chartMax - tick) / chartMax) * plotHeight
@@ -343,8 +343,8 @@ function OfficeAppropriationTrendChart({
 	})
 
 	return (
-		<section className='mt-6 border border-[var(--ink)] bg-[var(--paper)] px-12 py-10'>
-			<div className='flex flex-wrap items-center justify-between gap-5'>
+		<section className='mt-6 border border-[var(--ink)] bg-[var(--paper)] px-4 py-6 sm:px-8 sm:py-8 lg:px-12 lg:py-10'>
+			<div className='flex flex-col gap-5 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between'>
 				<div className='w-full max-w-xl'>
 					<BudgetQuerySelect
 						id='overview-trend-select'
@@ -354,7 +354,7 @@ function OfficeAppropriationTrendChart({
 						groups={selectGroups}
 					/>
 				</div>
-				<p className='pt-2 text-right font-mono text-[10px] font-medium uppercase tracking-[0.18em] text-[var(--ink-3)]'>
+				<p className='pt-2 text-left font-mono text-[10px] font-medium uppercase tracking-[0.18em] text-[var(--ink-3)] sm:text-right'>
 					Source: General Appropriations Act of the Bangsamoro · ₱ {chartScale.unitLabel}
 				</p>
 			</div>
@@ -364,7 +364,7 @@ function OfficeAppropriationTrendChart({
 					viewBox={`0 0 ${width} ${height}`}
 					role='img'
 					aria-label={`${selectedLabel} appropriation from fiscal year ${rows[0]?.year} to fiscal year ${rows[rows.length - 1]?.year}`}
-					className='h-auto min-w-[860px] max-w-none'
+					className='h-auto min-w-[680px] max-w-none sm:min-w-[860px]'
 				>
 					{ticks.map((tick) => {
 						const y = top + ((chartMax - tick) / chartMax) * plotHeight

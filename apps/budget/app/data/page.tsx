@@ -37,7 +37,7 @@ export default function BudgetDataPage() {
 
 	return (
 		<BudgetPageShell activeItem='Data'>
-			<section className='mt-16 mb-12'>
+			<section className='mb-12 mt-10 sm:mt-16'>
 				<BudgetPageHeader
 					eyebrow='Data catalogue'
 					title={<>Files, fields, and source coverage for the BARMM budget index.</>}
@@ -75,23 +75,23 @@ export default function BudgetDataPage() {
 				]}
 			/>
 
-			<section className='mt-32 mb-12'>
+			<section className='mb-12 mt-20 sm:mt-32'>
 				<div className='mb-6! flex flex-wrap items-end justify-between gap-4'>
 					<div>
 						<p className='eyebrow'>Source inventory</p>
-						<h2 className='num mt-2 text-5xl font-extrabold uppercase tracking-normal'>GAAB Files</h2>
+						<h2 className='num mt-2 text-3xl font-extrabold uppercase tracking-normal sm:text-5xl'>GAAB Files</h2>
 					</div>
 					<p className='font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{budgetDataFiles.length} files</p>
 				</div>
 				<div className='overflow-x-auto bg-[var(--paper)]'>
-					<div className='min-w-[1040px] divide-y divide-[var(--rule-soft)]'>
+					<div className='divide-y divide-[var(--rule-soft)] md:min-w-[840px]'>
 						{budgetDataFiles.map((file) => {
 							const Icon = file.type === 'JSON' ? FileJson : FileText
 
 							return (
 								<div
 									key={file.file}
-									className='grid items-center gap-6 px-8 py-6 transition hover:bg-[var(--paper-2)] xl:grid-cols-[minmax(28rem,1fr)_8rem_8rem_8rem_11rem]'
+									className='grid items-center gap-4 px-4 py-5 transition hover:bg-[var(--paper-2)] sm:px-6 md:grid-cols-[minmax(18rem,1fr)_6rem_7rem_7rem_10rem] lg:gap-6 xl:grid-cols-[minmax(28rem,1fr)_8rem_8rem_8rem_11rem]'
 								>
 									<div className='flex items-center gap-4'>
 										<span className='grid size-9 shrink-0 place-items-center border border-[var(--rule)] text-[var(--accent)]'>
@@ -111,7 +111,7 @@ export default function BudgetDataPage() {
 									<a
 										href={fileDownloadHref(file.file)}
 										download={displayFileName(file)}
-										className='inline-flex items-center justify-center gap-2 bg-[var(--ink)] px-4 py-3 font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--paper)] transition hover:bg-[var(--accent)]'
+										className='inline-flex w-full items-center justify-center gap-2 bg-[var(--ink)] px-4 py-3 font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--paper)] transition hover:bg-[var(--accent)] md:w-auto'
 									>
 										<Download
 											className='size-3'

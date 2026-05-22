@@ -21,13 +21,13 @@ export function BudgetPageShell({
   );
 
   return (
-    <main className="min-h-screen bg-[var(--paper)] text-[var(--ink)]">
+    <main className="min-h-screen overflow-x-clip bg-[var(--paper)] text-[var(--ink)]">
       <BudgetNavigation
         fiscalYears={fiscalYearRange}
         compiledTotal={compiledTotal}
         activeItem={activeItem}
       />
-      <div className="mx-auto max-w-[1440px] px-5 pb-8 pt-[180px]">
+      <div className="mx-auto max-w-[1440px] px-4 pb-8 pt-8 sm:px-6 sm:pt-10 lg:px-8">
         {children}
       </div>
       <BudgetFooter />

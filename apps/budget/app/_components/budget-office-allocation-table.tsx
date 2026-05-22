@@ -142,11 +142,11 @@ export function BudgetOfficeAllocationTable({
     .sort((a, b) => b.total_appropriation - a.total_appropriation);
 
   return (
-    <section className="my-24">
+    <section className="my-16 sm:my-24">
       <div className="mb-6! flex flex-wrap items-end justify-between gap-4">
         <div>
           <p className="eyebrow">Office allocation</p>
-          <h2 className="num  uppercase mt-2 text-5xl font-extrabold tracking-normal">
+          <h2 className="num mt-2 text-3xl font-extrabold uppercase tracking-normal sm:text-5xl">
             By Office Allotted Budget
           </h2>
         </div>
@@ -167,7 +167,7 @@ export function BudgetOfficeAllocationTable({
       </div>
 
       <div className="overflow-x-auto bg-[var(--paper)]">
-        <div className="min-w-[1040px]">
+        <div className="md:min-w-[860px]">
           {sortedAgencies.map((agency) => {
             const allocationTotal =
               agency.personnel + agency.mooe + agency.capital ||
@@ -181,8 +181,8 @@ export function BudgetOfficeAllocationTable({
                 name="office-allocation"
                 className="group border-b border-[var(--rule-soft)] last:border-b-0"
               >
-                <summary className="grid cursor-pointer list-none grid-cols-[minmax(28rem,1fr)_minmax(18rem,30%)] items-center transition hover:bg-[var(--paper-2)] group-open:bg-[var(--ink)] group-open:text-[var(--paper)] group-open:hover:bg-[var(--ink)] [&::-webkit-details-marker]:hidden">
-                  <div className="flex items-center px-6 py-3 leading-tight">
+                <summary className="grid cursor-pointer list-none gap-1 transition hover:bg-[var(--paper-2)] group-open:bg-[var(--ink)] group-open:text-[var(--paper)] group-open:hover:bg-[var(--ink)] md:grid-cols-[minmax(22rem,1fr)_minmax(16rem,30%)] md:items-center [&::-webkit-details-marker]:hidden">
+                  <div className="flex items-center px-4 py-4 leading-tight sm:px-6 md:py-3">
                     <span className="mr-5 grid size-4 shrink-0 place-items-center border border-[var(--rule)] text-[var(--accent)] group-open:border-[var(--paper-2)] group-open:text-[var(--paper)]">
                       <Plus
                         className="size-2.5 group-open:hidden"
@@ -205,7 +205,7 @@ export function BudgetOfficeAllocationTable({
                       </p>
                     </div>
                   </div>
-                  <div className="px-6 py-3">
+                  <div className="px-4 pb-4 sm:px-6 md:py-3">
                     <div className="mb-2 flex items-baseline justify-between gap-4">
                       <p className="num text-left text-sm font-semibold leading-tight text-[var(--ink)] group-open:text-[var(--paper)]">
                         {exactTableCurrency(agency.total_appropriation)}
@@ -293,7 +293,7 @@ export function AllocationBar({
         />
       </div>
       <div
-        className={`mt-0.5 flex justify-between gap-2 font-mono font-semibold uppercase leading-tight tracking-[0.08em] text-[var(--ink-3)] ${
+        className={`mt-0.5 flex flex-wrap justify-between gap-x-2 gap-y-1 font-mono font-semibold uppercase leading-tight tracking-[0.08em] text-[var(--ink-3)] ${
           compact ? "text-[7px]" : "text-[8px]"
         } ${activeOnOpen ? "group-open:text-[var(--paper-2)]" : ""}`}
       >
@@ -331,7 +331,7 @@ function OfficeAllocationDetail({ agency }: { agency: AgencyRow }) {
   );
 
   return (
-    <div className="border border-[var(--ink-3)] bg-[var(--paper-2)] px-12 py-6">
+    <div className="border border-[var(--ink-3)] bg-[var(--paper-2)] px-4 py-5 sm:px-6 lg:px-12 lg:py-6">
       {costRows.length > 0 || purposeRows.length > 0 ? (
         <div className="mt-5 space-y-7">
           <DetailRowGroup
@@ -353,7 +353,7 @@ function OfficeAllocationDetail({ agency }: { agency: AgencyRow }) {
             return (
               <div
                 key={program.program_id}
-                className="grid items-center gap-5 py-5 xl:grid-cols-[minmax(18rem,1fr)_13rem_24rem]"
+                className="grid items-center gap-3 py-5 sm:gap-5 lg:grid-cols-[minmax(18rem,1fr)_13rem_24rem]"
               >
                 <div>
                   <p className="text-base font-semibold text-[var(--ink)]">
@@ -425,8 +425,8 @@ function DetailAllocationRow({
   row: AgencyRow["detailRows"][number];
 }) {
   return (
-    <div className="grid items-center gap-5 py-3 xl:grid-cols-[minmax(18rem,1fr)_13rem_24rem]">
-      <div className="pr-16">
+    <div className="grid items-center gap-3 py-3 sm:gap-5 lg:grid-cols-[minmax(18rem,1fr)_13rem_24rem]">
+      <div className="sm:pr-16">
         <p className="text-sm font-semibold text-[var(--ink)] leading-0 leading-snug!">
           {titleCase(row.name)}
         </p>

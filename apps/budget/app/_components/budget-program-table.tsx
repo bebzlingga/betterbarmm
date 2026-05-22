@@ -17,10 +17,10 @@ export function BudgetProgramTable({ programs, total, label, limit }: BudgetProg
 	return (
 		<section
 			id='programs'
-			className='my-12 scroll-mt-[240px]'
+			className='my-10 scroll-mt-40 sm:my-12 sm:scroll-mt-[220px]'
 		>
 			<div className='overflow-x-auto bg-[var(--paper)]'>
-				<div className='min-w-[1040px]'>
+				<div className='md:min-w-[860px]'>
 					{visiblePrograms.map((program) => {
 						const allocationTotal = program.personnel_services + program.mooe + program.capital_outlays || program.total
 
@@ -30,8 +30,8 @@ export function BudgetProgramTable({ programs, total, label, limit }: BudgetProg
 								name='program-allocation'
 								className='group border-b border-[var(--rule-soft)] last:border-b-0'
 							>
-								<summary className='grid cursor-pointer list-none grid-cols-[minmax(28rem,1fr)_minmax(18rem,30%)] items-center transition hover:bg-[var(--paper-2)] group-open:bg-[var(--ink)] group-open:text-[var(--paper)] group-open:hover:bg-[var(--ink)] [&::-webkit-details-marker]:hidden'>
-									<div className='flex items-center px-6 py-3 leading-tight'>
+								<summary className='grid cursor-pointer list-none gap-1 transition hover:bg-[var(--paper-2)] group-open:bg-[var(--ink)] group-open:text-[var(--paper)] group-open:hover:bg-[var(--ink)] md:grid-cols-[minmax(22rem,1fr)_minmax(16rem,30%)] md:items-center [&::-webkit-details-marker]:hidden'>
+									<div className='flex items-center px-4 py-4 leading-tight sm:px-6 md:py-3'>
 										<span className='mr-5 grid size-4 shrink-0 place-items-center border border-[var(--rule)] text-[var(--accent)] group-open:border-[var(--paper-2)] group-open:text-[var(--paper)]'>
 											<Plus
 												className='size-2.5 group-open:hidden'
@@ -49,7 +49,7 @@ export function BudgetProgramTable({ programs, total, label, limit }: BudgetProg
 											</p>
 										</div>
 									</div>
-									<div className='px-6 py-3'>
+									<div className='px-4 pb-4 sm:px-6 md:py-3'>
 										<div className='mb-2 flex items-baseline justify-between gap-4'>
 											<p className='num text-left text-sm font-semibold leading-tight text-[var(--ink)] group-open:text-[var(--paper)]'>{exactTableCurrency(program.total)}</p>
 											<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>{budgetShare(program.total, total, label)}</p>
@@ -79,12 +79,12 @@ function ProgramDistributionDetail({ program }: { program: ProgramRow }) {
 	const objectDistributions = program.detail.objectDistributions
 
 	return (
-		<div className='border border-[var(--ink-3)] bg-[var(--paper-2)] px-12 py-6'>
+		<div className='border border-[var(--ink-3)] bg-[var(--paper-2)] px-4 py-5 sm:px-6 lg:px-12 lg:py-6'>
 			<div>
 				<div className='flex flex-wrap items-baseline justify-between gap-4'>
 					<div>
 						<p className='eyebrow'>Object-level distribution</p>
-						<h3 className='mt-3 text-2xl font-extrabold tracking-normal'>Funds by object item</h3>
+						<h3 className='mt-3 text-xl font-extrabold tracking-normal sm:text-2xl'>Funds by object item</h3>
 					</div>
 					<p className='font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{objectDistributions.length > 0 ? `${objectDistributions.length} classes` : 'Class split only'}</p>
 				</div>
@@ -101,7 +101,7 @@ function ProgramDistributionDetail({ program }: { program: ProgramRow }) {
 									{distribution.items.map((item, itemIndex) => (
 										<div
 											key={[distribution.key, item.name, item.amount, item.sourcePage ?? 'source', item.objectGroup ?? distribution.label, itemIndex].join('-')}
-											className='-mx-3 grid grid-cols-[minmax(20rem,1fr)_minmax(8rem,16%)_10rem] items-center gap-3 px-3 py-2 text-sm transition hover:bg-[var(--paper-3)]'
+											className='-mx-3 grid gap-2 px-3 py-2 text-sm transition hover:bg-[var(--paper-3)] sm:grid-cols-[minmax(12rem,1fr)_minmax(7rem,22%)_9rem] sm:items-center md:grid-cols-[minmax(20rem,1fr)_minmax(8rem,16%)_10rem]'
 										>
 											<p className='font-semibold text-[var(--ink)]'>{item.name}</p>
 											<div className='h-1.5 bg-[var(--rule-soft)]'>
@@ -112,7 +112,7 @@ function ProgramDistributionDetail({ program }: { program: ProgramRow }) {
 													}}
 												/>
 											</div>
-											<p className='num shrink-0 text-right text-[var(--ink-2)]'>{formatCurrency(item.amount)}</p>
+											<p className='num shrink-0 text-left text-[var(--ink-2)] sm:text-right'>{formatCurrency(item.amount)}</p>
 										</div>
 									))}
 								</div>
