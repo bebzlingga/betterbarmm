@@ -11,6 +11,7 @@
 		"@betterbarmm/budget-data": "workspace:*",
 		"@betterbarmm/charts": "workspace:*",
 		"@betterbarmm/ui": "workspace:*",
+		"@vercel/analytics": "^2.0.1",
 		"lucide-react": "^1.16.0",
 		"next": "16.2.6",
 		"react": "19.2.4",

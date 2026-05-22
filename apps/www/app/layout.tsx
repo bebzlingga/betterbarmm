@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { SiteFooter } from "./_components/site-footer";
 import "./globals.css";
 
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className="min-h-full bg-[var(--paper)] antialiased">
         {children}
         <SiteFooter />
+        <Analytics />
       </body>
     </html>
   );

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/next'
 import { Google_Sans_Flex, Oswald } from 'next/font/google'
 import { BudgetWorkInProgressDialog } from './_components/budget-work-in-progress-dialog'
 import './globals.css'
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className='min-h-full bg-[var(--paper)] antialiased'>
 				<BudgetWorkInProgressDialog />
 				{children}
+				<Analytics />
 			</body>
 		</html>
 	)
