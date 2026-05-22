@@ -31,25 +31,25 @@ export function BudgetAgencyTable({
         <table className="min-w-[880px]">
           <thead>
             <tr>
-              <th className="border-b border-[var(--ink)] px-3 py-3 text-left font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]">
+              <th className="border-b border-[var(--ink)] px-3 py-3 text-left text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]">
                 Object
               </th>
-              <th className="border-b border-[var(--ink)] px-3 py-3 text-left font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]">
+              <th className="border-b border-[var(--ink)] px-3 py-3 text-left text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]">
                 Category
               </th>
-              <th className="border-b border-[var(--ink)] px-3 py-3 text-right font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]">
+              <th className="border-b border-[var(--ink)] px-3 py-3 text-right text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]">
                 Appropriation
               </th>
-              <th className="border-b border-[var(--ink)] px-3 py-3 text-right font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]">
+              <th className="border-b border-[var(--ink)] px-3 py-3 text-right text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]">
                 Personnel
               </th>
-              <th className="border-b border-[var(--ink)] px-3 py-3 text-right font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]">
+              <th className="border-b border-[var(--ink)] px-3 py-3 text-right text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]">
                 MOOE
               </th>
-              <th className="border-b border-[var(--ink)] px-3 py-3 text-right font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]">
+              <th className="border-b border-[var(--ink)] px-3 py-3 text-right text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]">
                 Capital
               </th>
-              <th className="border-b border-[var(--ink)] px-3 py-3 text-right font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]">
+              <th className="border-b border-[var(--ink)] px-3 py-3 text-right text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]">
                 Share
               </th>
             </tr>
@@ -61,7 +61,7 @@ export function BudgetAgencyTable({
                   <span className="font-semibold text-[var(--ink)]">
                     {agency.agency_name}
                   </span>
-                  <span className="mt-1 block font-mono text-[10px] uppercase tracking-[0.08em] text-[var(--ink-3)]">
+                  <span className="mt-1 block text-[10px] uppercase tracking-[0.08em] text-[var(--ink-3)]">
                     {agency.agency_id}
                   </span>
                 </td>

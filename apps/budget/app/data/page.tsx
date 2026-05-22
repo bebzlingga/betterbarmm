@@ -79,9 +79,9 @@ export default function BudgetDataPage() {
 				<div className='mb-6! flex flex-wrap items-end justify-between gap-4'>
 					<div>
 						<p className='eyebrow'>Source inventory</p>
-						<h2 className='num mt-2 text-3xl font-extrabold uppercase tracking-normal sm:text-5xl'>GAAB Files</h2>
+						<h2 className='num mt-2 text-3xl font-extrabold tracking-normal sm:text-5xl'>GAAB Files</h2>
 					</div>
-					<p className='font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{budgetDataFiles.length} files</p>
+					<p className='text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{budgetDataFiles.length} files</p>
 				</div>
 				<div className='overflow-x-auto bg-[var(--paper)]'>
 					<div className='divide-y divide-[var(--rule-soft)] md:min-w-[840px]'>
@@ -102,16 +102,16 @@ export default function BudgetDataPage() {
 										</span>
 										<div>
 											<p className='text-sm font-semibold text-[var(--ink)]'>{displayFileName(file)}</p>
-											<p className='mt-1 font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{file.role}</p>
+											<p className='mt-1 text-[10px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{file.role}</p>
 										</div>
 									</div>
 									<p className='num text-sm font-semibold text-[var(--ink)]'>{file.year}</p>
-									<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>{file.type}</p>
-									<p className='font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{formatBytes(fileSizeFor(file))}</p>
+									<p className='text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>{file.type}</p>
+									<p className='text-[10px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{formatBytes(fileSizeFor(file))}</p>
 									<a
 										href={fileDownloadHref(file.file)}
 										download={displayFileName(file)}
-										className='inline-flex w-full items-center justify-center gap-2 bg-[var(--ink)] px-4 py-3 font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--paper)] transition hover:bg-[var(--accent)] md:w-auto'
+										className='inline-flex w-full items-center justify-center gap-2 bg-[var(--ink)] px-4 py-3 text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--paper)] transition hover:bg-[var(--accent)] md:w-auto'
 									>
 										<Download
 											className='size-3'

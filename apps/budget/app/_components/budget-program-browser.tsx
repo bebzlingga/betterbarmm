@@ -121,12 +121,12 @@ export function BudgetProgramBrowser({ programs, total, label, year, categoryGro
 							value={selectedQuery}
 							onChange={(event) => setSelectedQuery(event.target.value)}
 							placeholder='Program, office, or source'
-							className='mt-2 h-12 w-full border border-[var(--ink)] bg-[var(--paper)] px-4 font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--ink)] outline-none transition placeholder:text-[var(--ink-mute)] focus:border-[var(--accent)] sm:text-[12px] sm:tracking-[0.12em]'
+							className='mt-2 h-12 w-full border border-[var(--ink)] bg-[var(--paper)] px-4 text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--ink)] outline-none transition placeholder:text-[var(--ink-mute)] focus:border-[var(--accent)] sm:text-[12px] sm:tracking-[0.12em]'
 						/>
 					</label>
 					<button
 						type='submit'
-						className='inline-flex h-12 w-full items-center justify-center gap-2 border border-[var(--ink)] px-4 font-mono text-[11px] font-bold uppercase tracking-[0.12em] text-[var(--ink)] transition hover:bg-[var(--ink)] hover:text-[var(--paper)] lg:w-auto'
+						className='inline-flex h-12 w-full items-center justify-center gap-2 border border-[var(--ink)] px-4 text-[11px] font-bold uppercase tracking-[0.12em] text-[var(--ink)] transition hover:bg-[var(--ink)] hover:text-[var(--paper)] lg:w-auto'
 					>
 						<SlidersHorizontal
 							className='size-3.5'
@@ -137,7 +137,7 @@ export function BudgetProgramBrowser({ programs, total, label, year, categoryGro
 					<button
 						type='button'
 						onClick={clearFilters}
-						className='inline-flex h-12 w-full items-center justify-center gap-2 border border-[var(--rule)] px-4 font-mono text-[11px] font-bold uppercase tracking-[0.12em] text-[var(--ink-3)] transition hover:border-[var(--ink)] hover:text-[var(--ink)] lg:w-auto'
+						className='inline-flex h-12 w-full items-center justify-center gap-2 border border-[var(--rule)] px-4 text-[11px] font-bold uppercase tracking-[0.12em] text-[var(--ink-3)] transition hover:border-[var(--ink)] hover:text-[var(--ink)] lg:w-auto'
 					>
 						<X
 							className='size-3.5'

@@ -4,7 +4,7 @@ interface BudgetYearSelectorProps {
 }
 
 function yearLinkClass(isActive: boolean) {
-  return `grid min-h-11 place-items-center border-r border-[var(--rule)] px-3 font-mono text-xs font-semibold transition last:border-r-0 ${
+  return `grid min-h-11 place-items-center border-r border-[var(--rule)] px-3 text-xs font-semibold transition last:border-r-0 ${
     isActive
       ? "bg-[var(--ink)] text-[var(--paper)]"
       : "text-[var(--ink-3)] hover:bg-[var(--paper-2)] hover:text-[var(--ink)]"
@@ -20,7 +20,7 @@ export function BudgetYearSelector({
   return (
     <div className="mt-5 space-y-4">
       <div className="grid gap-2 lg:grid-cols-[6.5rem_1fr] lg:items-center">
-        <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">
+        <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">
           Fiscal year
         </p>
         <div className="grid grid-cols-1 border border-[var(--ink)] bg-[var(--paper)] sm:grid-cols-1">

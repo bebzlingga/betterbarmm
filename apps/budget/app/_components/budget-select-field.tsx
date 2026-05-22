@@ -39,7 +39,7 @@ export function BudgetSelectField({
       <span className="sr-only">{label}</span>
       <select
         id={id}
-        className={`h-12 w-full min-w-0 appearance-none border border-[var(--ink)] bg-[var(--paper)] py-0 pl-4 pr-10 font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--ink)] outline-none transition focus:border-[var(--accent)] sm:pr-12 sm:text-[12px] sm:tracking-[0.12em] ${selectClassName}`}
+        className={`h-12 w-full min-w-0 appearance-none border border-[var(--ink)] bg-[var(--paper)] py-0 pl-4 pr-10 text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--ink)] outline-none transition focus:border-[var(--accent)] sm:pr-12 sm:text-[12px] sm:tracking-[0.12em] ${selectClassName}`}
         {...selectProps}
       >
         {placeholder ? <option value="">{placeholder}</option> : null}

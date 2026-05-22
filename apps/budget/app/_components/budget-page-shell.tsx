@@ -27,7 +27,7 @@ export function BudgetPageShell({
         compiledTotal={compiledTotal}
         activeItem={activeItem}
       />
-      <div className="mx-auto max-w-[1440px] px-4 pb-8 pt-8 sm:px-6 sm:pt-10 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 pb-8 pt-0 sm:px-8">
         {children}
       </div>
       <BudgetFooter />

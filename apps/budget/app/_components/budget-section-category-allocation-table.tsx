@@ -117,9 +117,9 @@ export function BudgetSectionCategoryAllocationTable({ rows, agencies, total, la
 			<div className='mb-6! flex flex-wrap items-end justify-between gap-4'>
 				<div>
 					<p className='eyebrow'>Section category allocation</p>
-					<h2 className='num mt-2 text-3xl font-extrabold uppercase tracking-normal sm:text-5xl'>By Section Category Allotted Budget</h2>
+					<h2 className='num mt-2 text-3xl font-extrabold tracking-normal sm:text-5xl'>By Section Category Allotted Budget</h2>
 				</div>
-				<div className='flex flex-wrap items-center gap-4 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+				<div className='flex flex-wrap items-center gap-4 text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 					<span className='inline-flex items-center gap-2'>
 						<span className='h-2 w-5 bg-[var(--positive)]' />
 						PS
@@ -148,8 +148,8 @@ export function BudgetSectionCategoryAllocationTable({ rows, agencies, total, la
 								className='group border-b border-[var(--rule-soft)] last:border-b-0'
 							>
 								<summary className='grid cursor-pointer list-none gap-1 transition hover:bg-[var(--paper-2)] group-open:bg-[var(--ink)] group-open:text-[var(--paper)] group-open:hover:bg-[var(--ink)] md:grid-cols-[minmax(22rem,1fr)_minmax(16rem,30%)] md:items-center [&::-webkit-details-marker]:hidden'>
-									<div className='flex items-center px-4 py-4 leading-tight sm:px-6 md:py-3'>
-										<span className='mr-5 grid size-4 shrink-0 place-items-center border border-[var(--rule)] text-[var(--accent)] group-open:border-[var(--paper-2)] group-open:text-[var(--paper)]'>
+									<div className='flex items-start px-4 py-4 leading-tight sm:px-6 md:items-center md:py-3'>
+										<span className='mr-5 mt-1 grid size-4 md:mt-0 shrink-0 place-items-center border border-[var(--rule)] text-[var(--accent)] group-open:border-[var(--paper-2)] group-open:text-[var(--paper)]'>
 											<Plus
 												className='size-2.5 group-open:hidden'
 												aria-hidden='true'
@@ -161,15 +161,15 @@ export function BudgetSectionCategoryAllocationTable({ rows, agencies, total, la
 										</span>
 										<div>
 											<p className='text-sm font-semibold text-[var(--ink)] group-open:text-[var(--paper)]'>{row.category}</p>
-											<p className='mt-1 font-mono text-[10px] font-normal uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>
+											<p className='mt-1 text-[10px] font-normal uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>
 												{reportingUnits} reporting {reportingUnits === 1 ? 'unit' : 'units'}
 											</p>
 										</div>
 									</div>
 									<div className='px-4 pb-4 sm:px-6 md:py-3'>
-										<div className='mb-2 flex items-baseline justify-between gap-4'>
+										<div className='mb-1 flex items-baseline justify-between gap-4'>
 											<p className='num text-left text-sm font-semibold leading-tight text-[var(--ink)] group-open:text-[var(--paper)]'>{exactTableCurrency(row.total)}</p>
-											<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>{budgetShare(row.total, total, label)}</p>
+											<p className='text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>{budgetShare(row.total, total, label)}</p>
 										</div>
 										<AllocationBar
 											personnel={row.personnel}
@@ -215,22 +215,22 @@ function CategoryOfficeContributionGroup({ rows }: { rows: CategoryOfficeContrib
 		<div>
 			<div className='flex flex-wrap items-center justify-between gap-3 border-b border-[var(--rule)] pb-3'>
 				<div>
-					<h3 className='num mt-1 uppercase'>Offices contributing to this category.</h3>
+					<h3 className='num mt-1'>Offices contributing to this category.</h3>
 				</div>
-				<p className='font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{rows.length} offices</p>
+				<p className='text-[10px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{rows.length} offices</p>
 			</div>
 			<div className='divide-y divide-[var(--rule-soft)]'>
 				{rows.map((row) => (
 					<div
 						key={row.agencyId}
-						className='grid items-center gap-3 py-4 sm:gap-5 lg:grid-cols-[minmax(18rem,1fr)_13rem_24rem]'
+						className='grid items-center gap-y-1 py-4 sm:gap-5 lg:grid-cols-[minmax(18rem,1fr)_13rem_24rem]'
 					>
 						<div className='sm:pr-16'>
 							<p className='text-sm font-semibold leading-snug! text-[var(--ink)]'>
 								{titleCase(row.agencyName)} <span className='font-normal uppercase tracking-[0.08em] text-[var(--ink-3)]'>({row.agencyId})</span>
 							</p>
 						</div>
-						<p className='num text-left text-sm font-semibold'>{exactTableCurrency(row.total)}</p>
+						<p className='num mt-4! text-left text-sm font-semibold md:mt-0!'>{exactTableCurrency(row.total)}</p>
 						<div>
 							<AllocationBar
 								personnel={row.personnel}
@@ -254,21 +254,21 @@ function CategoryProgramContributionGroup({ rows }: { rows: CategoryProgramContr
 		<div>
 			<div className='flex flex-wrap items-center justify-between gap-3 border-b border-[var(--rule)] pb-3'>
 				<div>
-					<h3 className='num mt-1 uppercase'>Program and purpose lines contributing to this category.</h3>
+					<h3 className='num mt-1'>Program and purpose lines contributing to this category.</h3>
 				</div>
-				<p className='font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{rows.length} lines</p>
+				<p className='text-[10px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{rows.length} lines</p>
 			</div>
 			<div className='divide-y divide-[var(--rule-soft)]'>
 				{rows.map((row, index) => (
 					<div
 						key={`${row.fiscal_year}-${row.agencyId}-${row.name}-${row.total}-${index}`}
-						className='grid items-center gap-3 py-4 sm:gap-5 lg:grid-cols-[minmax(18rem,1fr)_13rem_24rem]'
+						className='grid items-center gap-y-1 py-4 sm:gap-5 lg:grid-cols-[minmax(18rem,1fr)_13rem_24rem]'
 					>
 						<div className='sm:pr-16'>
 							<p className='text-sm font-semibold leading-snug! text-[var(--ink)]'>{titleCase(row.name)}</p>
 							<p className='mt-0.5! text-xs leading-4 text-[var(--ink-3)]'>{metaForContribution(row).join('  ·  ')}</p>
 						</div>
-						<p className='num text-left text-sm font-semibold'>{exactTableCurrency(row.total)}</p>
+						<p className='num mt-4! text-left text-sm font-semibold md:mt-0!'>{exactTableCurrency(row.total)}</p>
 						<div>
 							<AllocationBar
 								personnel={row.personnel_services}

@@ -55,7 +55,7 @@ export function BudgetFiscalYearTiles({ rows, selectedYear, flushTop = false, hr
 
 	return (
 		<section className='mb-10'>
-			<div className={`${flushTop ? '-mt-4 sm:-mt-9' : 'mt-8'} border-y border-[var(--rule)] py-3 sm:hidden`}>
+			<div className={`${flushTop ? 'mt-0' : 'mt-8'} border-y border-[var(--rule)] py-3 sm:hidden`}>
 				<label
 					htmlFor='budget-fiscal-year-select'
 					className='relative block'
@@ -65,7 +65,7 @@ export function BudgetFiscalYearTiles({ rows, selectedYear, flushTop = false, hr
 						id='budget-fiscal-year-select'
 						value={displayYear}
 						onChange={(event) => handleYearChange(Number(event.target.value))}
-						className='mt-2 h-12 w-full appearance-none border border-[var(--ink)] bg-[var(--paper)] py-0 pl-4 pr-10 font-mono text-[11px] font-bold uppercase tracking-[0.12em] text-[var(--ink)] outline-none transition focus:border-[var(--accent)]'
+						className='mt-2 h-12 w-full appearance-none border border-[var(--ink)] bg-[var(--paper)] py-0 pl-4 pr-10 text-[11px] font-bold uppercase tracking-[0.12em] text-[var(--ink)] outline-none transition focus:border-[var(--accent)]'
 					>
 						{rows.map((row) => (
 							<option
@@ -81,7 +81,7 @@ export function BudgetFiscalYearTiles({ rows, selectedYear, flushTop = false, hr
 						aria-hidden='true'
 					/>
 				</label>
-				<div className='mt-3 flex items-center justify-between gap-4 font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+				<div className='mt-3 flex items-center justify-between gap-4 text-[10px] uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 					<p>{selectedRow ? `${formatBillions(selectedRow.total, 2)} GAAB` : 'GAAB'}</p>
 					{pendingYear ? (
 						<span
@@ -92,7 +92,7 @@ export function BudgetFiscalYearTiles({ rows, selectedYear, flushTop = false, hr
 				</div>
 			</div>
 
-			<div className={`${flushTop ? '-mt-4 sm:-mt-9' : 'mt-8'} hidden border-y border-[var(--rule)] py-3 sm:grid sm:grid-cols-2 sm:py-4 lg:grid-cols-4 xl:grid-cols-7`}>
+			<div className={`${flushTop ? 'mt-0' : 'mt-8'} hidden border-y border-[var(--rule)] py-3 sm:grid sm:grid-cols-2 sm:py-4 lg:grid-cols-4 xl:grid-cols-7`}>
 				{rows.map((row) => {
 					const isActive = row.year === displayYear
 					const isPending = row.year === pendingYear
@@ -118,7 +118,7 @@ export function BudgetFiscalYearTiles({ rows, selectedYear, flushTop = false, hr
 								/>
 							) : null}
 							<p className='text-2xl font-extrabold uppercase leading-none tracking-normal sm:text-3xl'>FY {row.year}</p>
-							<p className={`relative -top-1 font-mono text-[11px] font-medium uppercase tracking-[0.16em] ${isActive ? 'text-[var(--paper-2)]' : 'text-[var(--ink-3)]'}`}>
+							<p className={`relative -top-1 text-[11px] font-medium uppercase tracking-[0.16em] ${isActive ? 'text-[var(--paper-2)]' : 'text-[var(--ink-3)]'}`}>
 								{formatBillions(row.total, 2)} {appropriationSourceLabel(row.year)}
 							</p>
 							<div

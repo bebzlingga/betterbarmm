@@ -31,8 +31,8 @@ export function BudgetProgramTable({ programs, total, label, limit }: BudgetProg
 								className='group border-b border-[var(--rule-soft)] last:border-b-0'
 							>
 								<summary className='grid cursor-pointer list-none gap-1 transition hover:bg-[var(--paper-2)] group-open:bg-[var(--ink)] group-open:text-[var(--paper)] group-open:hover:bg-[var(--ink)] md:grid-cols-[minmax(22rem,1fr)_minmax(16rem,30%)] md:items-center [&::-webkit-details-marker]:hidden'>
-									<div className='flex items-center px-4 py-4 leading-tight sm:px-6 md:py-3'>
-										<span className='mr-5 grid size-4 shrink-0 place-items-center border border-[var(--rule)] text-[var(--accent)] group-open:border-[var(--paper-2)] group-open:text-[var(--paper)]'>
+									<div className='flex items-start px-4 py-4 leading-tight sm:px-6 md:items-center md:py-3'>
+										<span className='mr-5 mt-1 grid size-4 md:mt-0 shrink-0 place-items-center border border-[var(--rule)] text-[var(--accent)] group-open:border-[var(--paper-2)] group-open:text-[var(--paper)]'>
 											<Plus
 												className='size-2.5 group-open:hidden'
 												aria-hidden='true'
@@ -44,15 +44,15 @@ export function BudgetProgramTable({ programs, total, label, limit }: BudgetProg
 										</span>
 										<div>
 											<p className='text-sm font-semibold text-[var(--ink)] group-open:text-[var(--paper)]'>{titleCase(program.program_name)}</p>
-											<p className='mt-1 font-mono text-[10px] font-normal uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>
+											<p className='mt-1 text-[10px] font-normal uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>
 												{titleCase(program.agency_name)} ({program.agency_id}) / {program.category}
 											</p>
 										</div>
 									</div>
 									<div className='px-4 pb-4 sm:px-6 md:py-3'>
-										<div className='mb-2 flex items-baseline justify-between gap-4'>
+										<div className='mb-1 flex items-baseline justify-between gap-4'>
 											<p className='num text-left text-sm font-semibold leading-tight text-[var(--ink)] group-open:text-[var(--paper)]'>{exactTableCurrency(program.total)}</p>
-											<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>{budgetShare(program.total, total, label)}</p>
+											<p className='text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>{budgetShare(program.total, total, label)}</p>
 										</div>
 										<AllocationBar
 											personnel={program.personnel_services}
@@ -86,7 +86,7 @@ function ProgramDistributionDetail({ program }: { program: ProgramRow }) {
 						<p className='eyebrow'>Object-level distribution</p>
 						<h3 className='mt-3 text-xl font-extrabold tracking-normal sm:text-2xl'>Funds by object item</h3>
 					</div>
-					<p className='font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{objectDistributions.length > 0 ? `${objectDistributions.length} classes` : 'Class split only'}</p>
+					<p className='text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{objectDistributions.length > 0 ? `${objectDistributions.length} classes` : 'Class split only'}</p>
 				</div>
 
 				{objectDistributions.length > 0 ? (
@@ -94,7 +94,7 @@ function ProgramDistributionDetail({ program }: { program: ProgramRow }) {
 						{objectDistributions.map((distribution) => (
 							<div key={distribution.key}>
 								<div className='mb-3 flex items-baseline justify-between gap-6'>
-									<p className='font-mono text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--accent)]'>{distribution.label}</p>
+									<p className='text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--accent)]'>{distribution.label}</p>
 									<p className='num text-sm font-semibold text-[var(--ink)]'>{formatCurrency(distribution.total)}</p>
 								</div>
 								<div className='space-y-0!'>

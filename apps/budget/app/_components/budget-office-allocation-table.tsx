@@ -146,11 +146,11 @@ export function BudgetOfficeAllocationTable({
       <div className="mb-6! flex flex-wrap items-end justify-between gap-4">
         <div>
           <p className="eyebrow">Office allocation</p>
-          <h2 className="num mt-2 text-3xl font-extrabold uppercase tracking-normal sm:text-5xl">
+          <h2 className="num mt-2 text-3xl font-extrabold tracking-normal sm:text-5xl">
             By Office Allotted Budget
           </h2>
         </div>
-        <div className="flex flex-wrap items-center gap-4 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]">
+        <div className="flex flex-wrap items-center gap-4 text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]">
           <span className="inline-flex items-center gap-2">
             <span className="h-2 w-5 bg-[var(--positive)]" />
             PS
@@ -182,8 +182,8 @@ export function BudgetOfficeAllocationTable({
                 className="group border-b border-[var(--rule-soft)] last:border-b-0"
               >
                 <summary className="grid cursor-pointer list-none gap-1 transition hover:bg-[var(--paper-2)] group-open:bg-[var(--ink)] group-open:text-[var(--paper)] group-open:hover:bg-[var(--ink)] md:grid-cols-[minmax(22rem,1fr)_minmax(16rem,30%)] md:items-center [&::-webkit-details-marker]:hidden">
-                  <div className="flex items-center px-4 py-4 leading-tight sm:px-6 md:py-3">
-                    <span className="mr-5 grid size-4 shrink-0 place-items-center border border-[var(--rule)] text-[var(--accent)] group-open:border-[var(--paper-2)] group-open:text-[var(--paper)]">
+                  <div className="flex items-start px-4 py-4 leading-tight sm:px-6 md:items-center md:py-3">
+                    <span className="mr-5 mt-1 grid size-4 md:mt-0 shrink-0 place-items-center border border-[var(--rule)] text-[var(--accent)] group-open:border-[var(--paper-2)] group-open:text-[var(--paper)]">
                       <Plus
                         className="size-2.5 group-open:hidden"
                         aria-hidden="true"
@@ -200,17 +200,17 @@ export function BudgetOfficeAllocationTable({
                           ({agency.agency_id})
                         </span>
                       </p>
-                      <p className="mt-1 font-mono text-[10px] font-normal uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]">
+                      <p className="mt-1 text-[10px] font-normal uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]">
                         {detailedSourceLineCountLabel(detailedSourceLineCount)}
                       </p>
                     </div>
                   </div>
                   <div className="px-4 pb-4 sm:px-6 md:py-3">
-                    <div className="mb-2 flex items-baseline justify-between gap-4">
+                    <div className="mb-1 flex items-baseline justify-between gap-4">
                       <p className="num text-left text-sm font-semibold leading-tight text-[var(--ink)] group-open:text-[var(--paper)]">
                         {exactTableCurrency(agency.total_appropriation)}
                       </p>
-                      <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]">
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]">
                         {budgetShare(agency.total_appropriation, total, label)}
                       </p>
                     </div>
@@ -293,8 +293,8 @@ export function AllocationBar({
         />
       </div>
       <div
-        className={`mt-0.5 flex flex-wrap justify-between gap-x-2 gap-y-1 font-mono font-semibold uppercase leading-tight tracking-[0.08em] text-[var(--ink-3)] ${
-          compact ? "text-[7px]" : "text-[8px]"
+        className={`mt-0.5 flex flex-wrap justify-between gap-x-2 gap-y-1 font-semibold uppercase leading-tight tracking-[0.08em] text-[var(--ink-3)] ${
+          compact ? "text-[9px]" : "text-[10px]"
         } ${activeOnOpen ? "group-open:text-[var(--paper-2)]" : ""}`}
       >
         {labels.map((label) => (
@@ -353,18 +353,18 @@ function OfficeAllocationDetail({ agency }: { agency: AgencyRow }) {
             return (
               <div
                 key={program.program_id}
-                className="grid items-center gap-3 py-5 sm:gap-5 lg:grid-cols-[minmax(18rem,1fr)_13rem_24rem]"
+                className="grid items-center gap-y-1 py-5 sm:gap-5 lg:grid-cols-[minmax(18rem,1fr)_13rem_24rem]"
               >
                 <div>
                   <p className="text-base font-semibold text-[var(--ink)]">
                     {titleCase(program.program_name)}
                   </p>
-                  <div className="mt-2 grid gap-2 font-mono text-[10px] uppercase tracking-[0.08em] text-[var(--ink-3)] sm:grid-cols-2">
+                  <div className="mt-2 grid gap-2 text-[10px] uppercase tracking-[0.08em] text-[var(--ink-3)] sm:grid-cols-2">
                     <p>{program.program_id}</p>
                     <p>{sourceLabelForProgram(program)}</p>
                   </div>
                 </div>
-                <p className="num text-left text-sm font-semibold">
+                <p className="num mt-4! text-left text-sm font-semibold md:mt-0!">
                   {exactTableCurrency(programTotal)}
                 </p>
                 <div>
@@ -400,10 +400,10 @@ function DetailRowGroup({
     <div>
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--rule)] pb-3">
         <div>
-          {/* <p className='font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-[var(--accent)]'>{title}</p> */}
-          <h3 className="uppercase num mt-1">{description}</h3>
+          {/* <p className='text-[10px] font-bold uppercase tracking-[0.14em] text-[var(--accent)]'>{title}</p> */}
+          <h3 className="num mt-1">{description}</h3>
         </div>
-        <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--ink-3)]">
+        <p className="text-[10px] uppercase tracking-[0.12em] text-[var(--ink-3)]">
           {rows.length} lines
         </p>
       </div>
@@ -425,7 +425,7 @@ function DetailAllocationRow({
   row: AgencyRow["detailRows"][number];
 }) {
   return (
-    <div className="grid items-center gap-3 py-3 sm:gap-5 lg:grid-cols-[minmax(18rem,1fr)_13rem_24rem]">
+    <div className="grid items-center gap-y-1 py-3 sm:gap-5 lg:grid-cols-[minmax(18rem,1fr)_13rem_24rem]">
       <div className="sm:pr-16">
         <p className="text-sm font-semibold text-[var(--ink)] leading-0 leading-snug!">
           {titleCase(row.name)}
@@ -434,7 +434,7 @@ function DetailAllocationRow({
           {metaForDetailRow(row).join("  ·  ")}
         </p>
       </div>
-      <p className="num text-left text-sm font-semibold">
+      <p className="num mt-4! text-left text-sm font-semibold md:mt-0!">
         {exactTableCurrency(row.total)}
       </p>
       <div>

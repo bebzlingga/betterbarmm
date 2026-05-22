@@ -97,9 +97,9 @@ function OfficeSpecialProvisionList({ rows, total, label, allocationByAgencyId }
 			<div className='mb-6! flex flex-wrap items-end justify-between gap-4'>
 				<div>
 					<p className='eyebrow'>Special provisions</p>
-					<h2 className='num mt-2 text-3xl font-extrabold uppercase tracking-normal sm:text-5xl'>Special Provisions By Office</h2>
+					<h2 className='num mt-2 text-3xl font-extrabold tracking-normal sm:text-5xl'>Special Provisions By Office</h2>
 				</div>
-				<p className='font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>
+				<p className='text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>
 					{rows.length} {pluralize(rows.length, 'office', 'offices')} / {label}
 				</p>
 			</div>
@@ -120,8 +120,8 @@ function OfficeSpecialProvisionList({ rows, total, label, allocationByAgencyId }
 								className='group border-b border-[var(--rule-soft)] last:border-b-0'
 							>
 								<summary className='grid cursor-pointer list-none gap-1 transition hover:bg-[var(--paper-2)] group-open:bg-[var(--ink)] group-open:text-[var(--paper)] group-open:hover:bg-[var(--ink)] md:grid-cols-[minmax(22rem,1fr)_minmax(18rem,35%)] md:items-center [&::-webkit-details-marker]:hidden'>
-									<div className='flex items-center px-4 py-4 leading-tight sm:px-6 md:py-3'>
-										<span className='mr-5 grid size-4 shrink-0 place-items-center border border-[var(--rule)] text-[var(--accent)] group-open:border-[var(--paper-2)] group-open:text-[var(--paper)]'>
+									<div className='flex items-start px-4 py-4 leading-tight sm:px-6 md:items-center md:py-3'>
+										<span className='mr-5 mt-1 grid size-4 md:mt-0 shrink-0 place-items-center border border-[var(--rule)] text-[var(--accent)] group-open:border-[var(--paper-2)] group-open:text-[var(--paper)]'>
 											<Plus
 												className='size-2.5 group-open:hidden'
 												aria-hidden='true'
@@ -135,16 +135,16 @@ function OfficeSpecialProvisionList({ rows, total, label, allocationByAgencyId }
 											<p className='text-sm font-semibold text-[var(--ink)] group-open:text-[var(--paper)]'>
 												{titleCase(office.agency_name)} <span className='font-normal uppercase tracking-[0.08em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>({office.agency_id})</span>
 											</p>
-											<p className='mt-1 font-mono text-[10px] font-normal uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>
+											<p className='mt-1 text-[10px] font-normal uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>
 												{office.category}
 												{office.source_page ? ` / P.${office.source_page}` : ''}
 											</p>
 										</div>
 									</div>
 									<div className='px-4 pb-4 sm:px-6 md:py-3'>
-										<div className='mb-2 flex items-baseline justify-between gap-4'>
+										<div className='mb-1 flex items-baseline justify-between gap-4'>
 											<p className='num text-left text-sm font-semibold leading-tight text-[var(--ink)] group-open:text-[var(--paper)]'>{exactTableCurrency(office.total_appropriation)}</p>
-											<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>
+											<p className='text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>
 												{budgetShare(office.total_appropriation, total, label)}
 											</p>
 										</div>
@@ -177,7 +177,7 @@ function OfficeSpecialProvisionDetail({ office }: { office: OfficeSpecialProvisi
 						key={`${office.agency_id}-${provision.title}-${index}`}
 						className='border-t border-[var(--rule-soft)] pt-5 first:border-t-0 first:pt-0'
 					>
-						<h3 className='num text-2xl font-extrabold uppercase tracking-normal sm:text-3xl'>{provision.title}</h3>
+						<h3 className='num text-2xl font-extrabold tracking-normal sm:text-3xl'>{provision.title}</h3>
 						<div
 							className='special-provision-body mt-4 text-sm leading-normal text-[var(--ink-2)]'
 							dangerouslySetInnerHTML={{

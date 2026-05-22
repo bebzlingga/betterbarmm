@@ -12,7 +12,7 @@ export function BudgetExpenseComposition({ label, total, expenseClasses }: Budge
 		<section className='border border-[var(--ink)] bg-[var(--paper)] p-10'>
 			<div className='flex flex-wrap items-baseline justify-between gap-4'>
 				<h2 className='text-2xl font-extrabold tracking-normal'>Expense class composition</h2>
-				<p className='font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>
+				<p className='text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>
 					{label} / {formatCurrency(total)}
 				</p>
 			</div>
@@ -20,7 +20,7 @@ export function BudgetExpenseComposition({ label, total, expenseClasses }: Budge
 				{expenseClasses.map((expenseClass) => (
 					<div
 						key={expenseClass.label}
-						className={`flex min-w-0 items-center justify-center overflow-hidden ${expenseClass.color} font-mono text-[10px] font-semibold tracking-[0.08em] text-[var(--paper)]`}
+						className={`flex min-w-0 items-center justify-center overflow-hidden ${expenseClass.color} text-[10px] font-semibold tracking-[0.08em] text-[var(--paper)]`}
 						style={{
 							width: percentOfTotal(expenseClass.value, total),
 						}}

@@ -79,7 +79,7 @@ export function BudgetSectionCategoryChart({
             {description}
           </p>
         </div>
-        <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]">
+        <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]">
           {label} / {formatCurrency(total)}
         </p>
       </div>
@@ -88,7 +88,7 @@ export function BudgetSectionCategoryChart({
         {expenseSegments.map((segment) => (
           <span
             key={segment.key}
-            className="inline-flex items-center gap-2 font-mono text-[10px] font-bold uppercase tracking-[0.12em] text-[var(--ink-3)]"
+            className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.12em] text-[var(--ink-3)]"
           >
             <span className={`size-2.5 ${segment.className}`} />
             {segment.label}
@@ -110,7 +110,7 @@ export function BudgetSectionCategoryChart({
                   </p>
                 </div>
                 <div className="mt-2 grid grid-cols-[3rem_1fr] items-center gap-3">
-                  <p className="font-mono text-[10px] font-bold uppercase tracking-[0.12em] text-[var(--ink-3)]">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-[var(--ink-3)]">
                     {row.isRemainder ? "+" : `#${index + 1}`}
                   </p>
                   <div className="h-7 border border-[var(--rule)] bg-[var(--rule-soft)]">
@@ -148,7 +148,7 @@ export function BudgetSectionCategoryChart({
               {leadingRows.map((row, index) => (
                 <div key={row.category} className="border-t border-[var(--rule)] pt-4">
                   <div className="flex items-baseline justify-between gap-4">
-                    <p className="font-mono text-[11px] font-bold uppercase tracking-[0.12em] text-[var(--accent)]">
+                    <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-[var(--accent)]">
                       #{index + 1}
                     </p>
                     <p className="num text-sm font-semibold">
@@ -165,7 +165,7 @@ export function BudgetSectionCategoryChart({
               ))}
             </div>
             {rows[0]?.basis ? (
-              <p className="mt-6 border-t border-[var(--rule)] pt-4 font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--ink-3)]">
+              <p className="mt-6 border-t border-[var(--rule)] pt-4 text-[10px] uppercase tracking-[0.1em] text-[var(--ink-3)]">
                 Basis: {rows[0].basis.replaceAll("_", " ")}
               </p>
             ) : null}

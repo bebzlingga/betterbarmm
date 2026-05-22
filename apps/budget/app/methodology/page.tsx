@@ -149,9 +149,9 @@ export default function BudgetMethodologyPage() {
 				<div className='mb-12! flex flex-wrap items-end justify-between gap-4'>
 					<div>
 						<p className='eyebrow'>Processing pipeline</p>
-						<h2 className='num mt-2 text-3xl font-extrabold uppercase tracking-normal sm:text-5xl'>Assembly Steps</h2>
+						<h2 className='num mt-2 text-3xl font-extrabold tracking-normal sm:text-5xl'>Assembly Steps</h2>
 					</div>
-					<p className='font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{pipelineSteps.length} steps</p>
+					<p className='text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{pipelineSteps.length} steps</p>
 				</div>
 				<div className='grid gap-10 md:grid-cols-2 xl:grid-cols-4'>
 					{pipelineSteps.map((item) => (
@@ -159,8 +159,8 @@ export default function BudgetMethodologyPage() {
 							key={item.step}
 							className='border-t border-[var(--ink)] pt-5'
 						>
-							<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>Step {item.step}</p>
-							<h3 className='num uppercase mt-4 text-2xl font-extrabold tracking-normal'>{item.title}</h3>
+							<p className='text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>Step {item.step}</p>
+							<h3 className='num mt-4 text-2xl font-extrabold tracking-normal'>{item.title}</h3>
 							<p className='mt-2! text-sm leading-snug! text-[var(--ink-3)]'>{item.detail}</p>
 						</div>
 					))}
@@ -171,9 +171,9 @@ export default function BudgetMethodologyPage() {
 				<div className='mb-6! flex flex-wrap items-end justify-between gap-4'>
 					<div>
 						<p className='eyebrow'>Validation table</p>
-						<h2 className='num mt-2 text-3xl font-extrabold uppercase tracking-normal sm:text-5xl'>Checks</h2>
+						<h2 className='num mt-2 text-3xl font-extrabold tracking-normal sm:text-5xl'>Checks</h2>
 					</div>
-					<p className='font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{selection.budget.act_number}</p>
+					<p className='text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{selection.budget.act_number}</p>
 				</div>
 				<div className='overflow-x-auto bg-[var(--paper)]'>
 					<div className='border-t border-[var(--ink)] md:min-w-[840px]'>
@@ -190,7 +190,7 @@ export default function BudgetMethodologyPage() {
 								>
 									<p className='text-sm font-semibold text-[var(--ink)]'>{row.check}</p>
 									<p className='text-sm leading-6 text-[var(--ink-2)]'>{row.rule}</p>
-									<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>{row.status}</p>
+									<p className='text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>{row.status}</p>
 								</div>
 							))}
 						</div>
@@ -202,9 +202,9 @@ export default function BudgetMethodologyPage() {
 				<div className='mb-6! flex flex-wrap items-end justify-between gap-4'>
 					<div>
 						<p className='eyebrow'>Definition of terms</p>
-						<h2 className='num mt-2 text-3xl font-extrabold uppercase tracking-normal sm:text-5xl'>Budget Terms</h2>
+						<h2 className='num mt-2 text-3xl font-extrabold tracking-normal sm:text-5xl'>Budget Terms</h2>
 					</div>
-					<p className='font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{definitionTerms.length} terms</p>
+					<p className='text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>{definitionTerms.length} terms</p>
 				</div>
 				<div className='overflow-x-auto bg-[var(--paper)]'>
 					<div className='border-t border-[var(--ink)] md:min-w-[760px]'>
@@ -213,7 +213,7 @@ export default function BudgetMethodologyPage() {
 								key={item.term}
 								className='grid gap-3 border-b border-[var(--rule-soft)] px-4 py-5 transition hover:bg-[var(--paper-2)] sm:px-6 md:grid-cols-[14rem_minmax(24rem,1fr)] md:px-8 md:py-6 lg:grid-cols-[16rem_minmax(28rem,1fr)]'
 							>
-								<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>{item.term}</p>
+								<p className='text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>{item.term}</p>
 								<p className='text-sm leading-6 text-[var(--ink-2)]'>{item.definition}</p>
 							</div>
 						))}

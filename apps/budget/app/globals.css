@@ -18,22 +18,16 @@
   --positive: #4a5a3a;
   --ochre: #9a7530;
   --font-body:
-    var(--font-google-sans-flex, "Google Sans Flex"), -apple-system,
-    BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    "Google Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial,
+    sans-serif;
   --font-display:
-    var(--font-google-sans-flex, "Google Sans Flex"), -apple-system,
-    BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  --font-mono-ui:
-    var(--font-google-sans-flex, "Google Sans Flex"), "SF Mono", Menlo,
-    Consolas, ui-monospace, monospace;
-  --font-number:
-    var(--font-oswald, "Oswald"), "Arial Narrow", Arial, sans-serif;
+    "Google Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial,
+    sans-serif;
   background: var(--paper);
 }
 
 @theme inline {
   --font-sans: var(--font-body);
-  --font-mono: var(--font-mono-ui);
 }
 
 html {
@@ -116,13 +110,13 @@ p {
 }
 
 .num {
-  font-family: var(--font-number);
+  font-family: var(--font-body);
   font-variant-numeric: tabular-nums;
 }
 
 .eyebrow {
   color: var(--accent);
-  font-family: var(--font-mono-ui);
+  font-family: var(--font-body);
   font-size: 0.6875rem;
   font-weight: 700;
   letter-spacing: 0.18em;

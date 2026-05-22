@@ -48,4 +48,4 @@ bun run lint
 
 ## Budget app design tokens
 
-The budget app uses Google Sans Flex for body/display text and Oswald for numeric displays only. Keep typography wired through `apps/budget/app/globals.css` with `--font-body`, `--font-display`, `--font-mono-ui`, and `--font-number`.
+The budget app uses the same Google Sans stack as the other BetterBARMM apps for body, display, numeric, and navigation text. Keep typography wired through `apps/budget/app/globals.css` with `--font-body` and `--font-display`.
