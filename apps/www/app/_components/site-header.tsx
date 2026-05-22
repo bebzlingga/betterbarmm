@@ -30,8 +30,23 @@ export function SiteHeader({ activeItem }: SiteHeaderProps) {
 
 	return (
 		<header className='sticky top-0 z-20 border-b border-[var(--ink)] bg-[var(--paper)]'>
-			<div className='mx-auto max-w-7xl px-8 py-4'>
-				<div className='flex items-center justify-between gap-4'>
+			<div className='mx-auto max-w-7xl px-8 pb-3 pt-2'>
+				<div className='mb-3 hidden border-b border-[var(--rule-soft)] pb-2 font-mono text-[10px] font-semibold uppercase leading-5 tracking-[0.18em] text-[var(--ink-3)] sm:flex sm:items-center sm:justify-between sm:gap-4'>
+					<a
+						href='https://betterbarmm.com'
+						className='w-fit transition hover:text-[var(--accent)]'
+					>
+						betterbarmm.com
+					</a>
+					<a
+						href='mailto:support@betterbarmm.com'
+						className='w-fit transition hover:text-[var(--accent)]'
+					>
+						support@betterbarmm.com
+					</a>
+				</div>
+
+				<div className='flex items-center justify-between gap-4 py-2'>
 					<a
 						href='/'
 						className='w-fit text-xl font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)] sm:text-2xl'
