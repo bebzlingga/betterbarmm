@@ -38,11 +38,10 @@ export default function ContributePage() {
 
 				<div className='relative mx-auto max-w-7xl px-8 py-16 sm:py-20 lg:py-32'>
 					<p className='eyebrow'>Contribute to BetterBARMM</p>
-					<h1 className='mt-4 max-w-6xl text-5xl font-extrabold leading-[0.92] tracking-[-0.04em] sm:mt-5 sm:text-7xl md:text-8xl lg:text-[8.5rem] xl:text-[9rem]'>
-						Help make public records usable.
-					</h1>
+					<h1 className='mt-4 max-w-6xl text-5xl font-extrabold leading-[0.92] tracking-[-0.04em] sm:mt-5 sm:text-7xl md:text-8xl lg:text-[8.5rem] xl:text-[9rem]'>Help make public records usable.</h1>
 					<p className='mt-6 max-w-3xl text-base leading-6! text-[var(--ink-2)] sm:mt-8 sm:text-lg sm:leading-7! lg:text-xl lg:leading-9!'>
-						BetterBARMM is a public transparency project. If you have source documents, corrections, local context, research notes, or skills that can make Bangsamoro public information clearer, we want to hear from you.
+						BetterBARMM is a public transparency project. If you have source documents, corrections, local context, research notes, or skills that can make Bangsamoro public information clearer, we
+						want to hear from you.
 					</p>
 					<div className='mt-8 flex flex-col gap-3 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] sm:flex-row sm:flex-wrap'>
 						<a
@@ -51,7 +50,6 @@ export default function ContributePage() {
 						>
 							support@betterbarmm.com
 						</a>
-						<p className='inline-flex w-fit border border-[var(--rule)] px-5 py-3 text-[var(--ink-3)]'>Endpoint /contribute</p>
 					</div>
 				</div>
 			</section>
@@ -85,18 +83,16 @@ export default function ContributePage() {
 			</section>
 
 			<section className='mx-auto max-w-7xl px-8 pb-20 sm:pb-24 lg:pb-32'>
-				<div className='grid gap-10 border-t border-[var(--ink)] pt-10 lg:grid-cols-[minmax(18rem,0.7fr)_1fr]'>
+				<div className='grid gap-10 pt-10 lg:grid-cols-[minmax(18rem,0.7fr)_1fr]'>
 					<div>
 						<p className='eyebrow'>Contributor roll</p>
 						<h2 className='mt-3 text-4xl font-extrabold leading-none tracking-[-0.03em] sm:text-5xl'>Names will live here.</h2>
-						<p className='mt-5 text-sm leading-6 text-[var(--ink-3)]'>
-							As verified contributions are accepted, this page will recognize people and groups who helped improve the public record.
-						</p>
+						<p className='mt-5 text-sm leading-6 text-[var(--ink-3)]'>As verified contributions are accepted, this page will recognize people and groups who helped improve the public record.</p>
 					</div>
 
 					<div className='border-y border-[var(--ink)]'>
 						<div className='grid gap-4 py-8 sm:grid-cols-[8rem_1fr] sm:items-start'>
-							<p className='font-mono text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--accent)]'>Open slot</p>
+							<p className='mt-1 font-mono text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--accent)]'>Open slot</p>
 							<div>
 								<h3 className='text-2xl font-extrabold tracking-[-0.02em]'>Your name could be listed here.</h3>
 								<p className='mt-3 text-sm leading-6 text-[var(--ink-2)]'>
