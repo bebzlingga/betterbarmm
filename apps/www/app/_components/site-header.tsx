@@ -1,5 +1,6 @@
 'use client'
 
+import { ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 
 type SiteHeaderProps = {
@@ -24,9 +25,21 @@ const navItems = [
 	},
 ] as const
 
+const workspaceItems = [
+	{
+		label: 'Budget',
+		href: 'https://budget.betterbarmm.com',
+	},
+	{
+		label: 'Bills',
+		href: 'https://bills.betterbarmm.com',
+	},
+] as const
+
 export function SiteHeader({ activeItem }: SiteHeaderProps) {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
-	const navLinkClass = (item: SiteHeaderProps['activeItem']) => `block hover:text-[var(--accent)] ${activeItem === item ? 'font-bold text-[var(--ink)]' : ''}`
+	const navTextClass = 'hover:text-[var(--accent)]'
+	const navLinkClass = (item: SiteHeaderProps['activeItem']) => `block ${navTextClass} ${activeItem === item ? 'font-bold text-[var(--ink)]' : ''}`
 
 	return (
 		<header className='sticky top-0 z-20 border-b border-[var(--ink)] bg-[var(--paper)]'>
@@ -57,6 +70,32 @@ export function SiteHeader({ activeItem }: SiteHeaderProps) {
 					</a>
 
 					<nav className='hidden items-center justify-end gap-6 font-mono text-[11px] font-semibold uppercase leading-5 tracking-[0.14em] text-[var(--ink-3)] md:flex'>
+						<div className='group relative'>
+							<button
+								type='button'
+								className={`flex items-center gap-1 uppercase ${navTextClass}`}
+								aria-haspopup='true'
+							>
+								<span>Workspaces</span>
+								<ChevronDown
+									aria-hidden='true'
+									className='h-3 w-3 stroke-[2.5]'
+								/>
+							</button>
+							<div className='invisible absolute left-0 top-full z-30 w-48 pt-3 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100'>
+								<div className='border border-[var(--ink)] bg-[var(--paper)] shadow-sm'>
+									{workspaceItems.map((item) => (
+										<a
+											key={item.href}
+											href={item.href}
+											className='block border-b border-[var(--rule-soft)] px-4 py-3 text-[10px] transition last:border-b-0 hover:bg-[var(--paper-2)] hover:text-[var(--accent)]'
+										>
+											{item.label}
+										</a>
+									))}
+								</div>
+							</div>
+						</div>
 						{navItems.map((item) => (
 							<a
 								key={item.href}
@@ -96,6 +135,21 @@ export function SiteHeader({ activeItem }: SiteHeaderProps) {
 				>
 					<div className='min-h-0 overflow-hidden'>
 						<div className='grid gap-3'>
+							<div className='border-b border-[var(--rule-soft)] pb-3'>
+								<p className='mb-2 text-[9px] tracking-[0.18em] text-[var(--accent)]'>Workspaces</p>
+								<div className='grid gap-2 pl-3'>
+									{workspaceItems.map((item) => (
+										<a
+											key={item.href}
+											href={item.href}
+											className='block hover:text-[var(--accent)]'
+											onClick={() => setIsMenuOpen(false)}
+										>
+											{item.label}
+										</a>
+									))}
+								</div>
+							</div>
 							{navItems.map((item) => (
 								<a
 									key={item.href}

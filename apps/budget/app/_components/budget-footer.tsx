@@ -66,16 +66,15 @@ export function BudgetFooter() {
 
 				<div className='mt-8 flex flex-col items-start justify-between gap-4 border-t border-[var(--rule)] pt-4 md:flex-row md:items-center md:gap-8 md:pt-6'>
 					<p className='font-mono text-[10px] uppercase leading-6 tracking-[0.16em] text-[var(--ink-3)] sm:tracking-[0.24em]'>
-						Site by{' '}
+						2026{' '}
 						<a
-							href='https://bebz.dev'
+							href='https://betterbarmm.com'
 							target='_blank'
 							className='border-b border-[var(--accent)] font-bold tracking-[0.18em] text-[var(--ink)] hover:text-[var(--accent)]'
 						>
-							Bebz
+							betterbarmm.com
 						</a>
-						{' & '}
-						Inspired by{' '}
+						{' - All content is public domain unless otherwise specified. Inspired by '}
 						<a
 							href='https://bettergov.ph'
 							target='_blank'

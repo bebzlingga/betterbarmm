@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "BetterBARMM Bills Tracker",
+  title: "BetterBARMM Bills",
   description:
-    "Public legislative bill tracking for BARMM including status, sponsors, and committees.",
+    "A public ledger for Bangsamoro Autonomy Acts, source links, authors, categories, and plain-language legislative analysis.",
 };
 
 export default function RootLayout({
@@ -28,6 +29,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full bg-[var(--paper)] antialiased">
         {children}
+        <Analytics />
       </body>
     </html>
   );

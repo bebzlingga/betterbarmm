@@ -28,15 +28,16 @@ export function SiteFooter() {
 				</p>
 				<div className='mt-8 flex flex-col justify-between gap-4 border-t border-[var(--rule)] pt-5 font-mono text-[9px] uppercase leading-5 tracking-[0.14em] text-[var(--ink-3)] sm:mt-9 sm:flex-row sm:items-center sm:text-[10px] sm:leading-6 sm:tracking-[0.22em]'>
 					<p>
-						Site by{' '}
+						2026{' '}
 						<a
-							href='https://bebz.dev'
+							href='https://betterbarmm.com'
 							target='_blank'
 							rel='noreferrer'
 							className='border-b border-[var(--accent)] font-bold text-[var(--ink)] hover:text-[var(--accent)]'
 						>
-							Bebz
-						</a>
+							betterbarmm.com
+						</a>{' '}
+						- All content is public domain unless otherwise specified.
 					</p>
 					<p>
 						Inspired by{' '}

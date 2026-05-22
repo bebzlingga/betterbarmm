@@ -22,9 +22,9 @@ const portalCards = [
 		label: 'Bills',
 		title: 'Know your laws',
 		description: 'Track proposed measures, authors, committees, readings, and legislative movement as public records mature.',
-		href: '/bills',
+		href: 'https://bills.betterbarmm.com',
 		measure: 'Legislative records',
-		status: 'Soon',
+		status: 'Open',
 	},
 	{
 		label: 'Figures',
