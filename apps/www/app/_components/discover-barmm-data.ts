@@ -45,8 +45,7 @@ export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
 		label: 'History',
 		navTitle: 'History',
 		title: 'How BARMM came to be',
-		description:
-			'A plain-language account of identity, self-governance, the peace process, the Bangsamoro Organic Law, the 2019 plebiscites, and the transition from ARMM to BARMM.',
+		description: 'A plain-language path from identity and peace talks to the Bangsamoro Organic Law and BARMM transition.',
 		sections: [
 			'The Bangsamoro story is rooted in communities with distinct histories, faith traditions, customary institutions, and political aspirations across mainland and island Mindanao.',
 			'The modern region grew from a long peace process that moved political demands for self-governance into negotiated institutions, laws, and a public transition.',
@@ -70,8 +69,7 @@ export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
 		label: 'Governance',
 		navTitle: 'Government',
 		title: 'How the Bangsamoro government works',
-		description:
-			'BARMM is an autonomous parliamentary regional government: Parliament makes regional laws, the Chief Minister leads the executive, and ministries deliver public services across the Bangsamoro.',
+		description: 'How Parliament, the Chief Minister, ministries, and public offices fit together.',
 		sections: [
 			'BARMM was created under the Bangsamoro Organic Law and organized through the Bangsamoro Administrative Code. It is not a province, city, or ordinary regional office. It is an autonomous regional government with a parliamentary setup: the Bangsamoro Parliament exercises legislative power, while the Chief Minister leads the executive branch and works through ministries, agencies, offices, and commissions. As of May 21, 2026, the BARMM key officials page lists Abdulraof A. Macacua as Chief Minister; verify current officials against official pages before citation.',
 		],
@@ -402,8 +400,7 @@ export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
 		label: 'People',
 		navTitle: 'People',
 		title: 'Peoples and communities of Bangsamoro',
-		description:
-			'Meet the Moro ethnolinguistic groups, Indigenous peoples, and settler communities that shape Bangsamoro public life through language, faith, memory, arts, livelihoods, customary practice, and place.',
+		description: 'Meet the Moro, Indigenous, and settler communities that shape Bangsamoro public life.',
 		sections: [
 			'BCPCH groups the Bangsamoro People into Islamized ethnolinguistic groups, Indigenous peoples, and settler communities. Use the source links for deeper reading and keep local context in view.',
 		],
@@ -564,8 +561,7 @@ export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
 		label: 'Culture & Places',
 		navTitle: 'Culture & Places',
 		title: 'Mosques, food, islands, and living heritage',
-		description:
-			'A starting map for what makes BARMM vivid: grand mosques, old sacred sites, island landscapes, halal food traditions, textiles, landmarks, and community-based tourism.',
+		description: 'A starting map of mosques, sacred sites, islands, food, textiles, and living heritage.',
 		sections: [
 			'This is not a travel guide yet. It is a source-backed shortlist of places, food, and cultural markers that help readers recognize BARMM beyond government boundaries.',
 		],

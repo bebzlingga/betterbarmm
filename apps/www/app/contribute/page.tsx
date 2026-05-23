@@ -55,12 +55,12 @@ export default function ContributePage() {
 			</section>
 
 			<section className='mx-auto max-w-7xl px-8 py-20 sm:py-24 lg:py-32'>
-				<div className='mb-8 flex flex-wrap items-end justify-between gap-4'>
+				<div className='mb-12 flex flex-wrap items-end justify-between gap-4'>
 					<div>
 						<p className='eyebrow'>Ways to help</p>
 						<h2 className='mt-3 max-w-3xl text-4xl font-extrabold leading-none tracking-[-0.03em] sm:text-5xl'>Small contributions can improve the public record.</h2>
 					</div>
-					<p className='max-w-md text-sm leading-6 text-[var(--ink-3)]'>
+					<p className='max-w-lg text-base leading-6 text-[var(--ink-3)]'>
 						Every useful correction, source link, and review note makes the portal more reliable for citizens, journalists, researchers, and public servants.
 					</p>
 				</div>
@@ -75,33 +75,35 @@ export default function ContributePage() {
 								<p className='inline-block bg-[var(--accent)] px-2 py-1 font-mono text-[9px] font-medium uppercase tracking-[0.28em] text-white'>0{index + 1}</p>
 								<p className='font-mono text-[9px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>{item.label}</p>
 							</div>
-							<h3 className='mt-5 text-2xl font-extrabold leading-tight tracking-[-0.02em]'>{item.title}</h3>
-							<p className='mt-4 text-sm leading-6 text-[var(--ink-2)]'>{item.description}</p>
+							<h3 className='mt-5 text-xl font-extrabold leading-tight tracking-[-0.02em]'>{item.title}</h3>
+							<p className='mt-4 text-sm leading-snug! text-[var(--ink-2)]'>{item.description}</p>
 						</div>
 					))}
 				</div>
 			</section>
 
-			<section className='mx-auto max-w-7xl px-8 pb-20 sm:pb-24 lg:pb-32'>
-				<div className='grid gap-10 pt-10 lg:grid-cols-[minmax(18rem,0.7fr)_1fr]'>
-					<div>
-						<p className='eyebrow'>Contributor roll</p>
-						<h2 className='mt-3 text-4xl font-extrabold leading-none tracking-[-0.03em] sm:text-5xl'>Names will live here.</h2>
-						<p className='mt-5 text-sm leading-6 text-[var(--ink-3)]'>As verified contributions are accepted, this page will recognize people and groups who helped improve the public record.</p>
-					</div>
+			<section className='bg-[var(--paper-2)] py-20 sm:py-24 lg:py-32'>
+				<section className='mx-auto max-w-7xl px-8 '>
+					<div className='grid gap-16 pt-10 lg:grid-cols-[minmax(18rem,0.7fr)_1fr]'>
+						<div>
+							<p className='eyebrow'>Contributor roll</p>
+							<h2 className='mt-3 text-4xl font-extrabold leading-none tracking-[-0.03em] sm:text-5xl'>Names will live here.</h2>
+							<p className='mt-5 text-base leading-6 text-[var(--ink-3)]'>As verified contributions are accepted, this page will recognize people and groups who helped improve the public record.</p>
+						</div>
 
-					<div className='border-y border-[var(--ink)]'>
-						<div className='grid gap-4 py-8 sm:grid-cols-[8rem_1fr] sm:items-start'>
-							<p className='mt-1 font-mono text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--accent)]'>Open slot</p>
-							<div>
-								<h3 className='text-2xl font-extrabold tracking-[-0.02em]'>Your name could be listed here.</h3>
-								<p className='mt-3 text-sm leading-6 text-[var(--ink-2)]'>
-									Send a useful source, correction, review note, or improvement. Once reviewed, contributor names can appear here with the kind of public record work they helped strengthen.
-								</p>
+						<div className='border-t border-[var(--ink)]'>
+							<div className='grid gap-4 py-8 sm:grid-cols-[8rem_1fr] sm:items-start'>
+								<p className='mt-1 font-mono text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--accent)]'>Open slot</p>
+								<div>
+									<h3 className='text-2xl font-extrabold tracking-[-0.02em]'>Your name could be listed here.</h3>
+									<p className='mt-3 text-sm leading-6 text-[var(--ink-2)]'>
+										Send a useful source, correction, review note, or improvement. Once reviewed, contributor names can appear here with the kind of public record work they helped strengthen.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 			</section>
 		</main>
 	)

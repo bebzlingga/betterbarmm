@@ -1,4 +1,4 @@
-import { Building2, Database, HandHelping, HardHat, Landmark, Map as MapIcon, ScrollText, Vote } from 'lucide-react'
+import { BankIcon, BuildingsIcon, CheckSquareOffsetIcon, DatabaseIcon, HandshakeIcon, HardHatIcon, MapTrifoldIcon, ScrollIcon } from '@phosphor-icons/react/ssr'
 import { HomeHeroSlider } from './_components/home-hero-slider'
 import { SiteHeader } from './_components/site-header'
 
@@ -10,7 +10,7 @@ const portalCards = [
 		href: '/budget/data',
 		measure: 'PDFs and JSON',
 		status: 'Soon',
-		icon: Database,
+		icon: DatabaseIcon,
 	},
 	{
 		label: 'Election',
@@ -19,7 +19,7 @@ const portalCards = [
 		href: 'https://election.betterbarmm.com',
 		measure: '2026 Parliamentary Elections',
 		status: 'Open',
-		icon: Vote,
+		icon: CheckSquareOffsetIcon,
 	},
 	{
 		label: 'Budget',
@@ -28,7 +28,7 @@ const portalCards = [
 		href: 'https://budget.betterbarmm.com',
 		measure: 'GAAB FY 2020-2026',
 		status: 'Open',
-		icon: Landmark,
+		icon: BankIcon,
 	},
 	{
 		label: 'Bills',
@@ -37,7 +37,7 @@ const portalCards = [
 		href: 'https://bills.betterbarmm.com',
 		measure: 'Legislative records',
 		status: 'Open',
-		icon: ScrollText,
+		icon: ScrollIcon,
 	},
 	{
 		label: 'Infra',
@@ -46,7 +46,7 @@ const portalCards = [
 		href: '/infra',
 		measure: 'Infrastructure tracker',
 		status: 'Soon',
-		icon: HardHat,
+		icon: HardHatIcon,
 	},
 	{
 		label: 'Governance',
@@ -55,7 +55,7 @@ const portalCards = [
 		href: '/governance',
 		measure: 'LGU directory',
 		status: 'Soon',
-		icon: Building2,
+		icon: BuildingsIcon,
 	},
 	{
 		label: 'Services',
@@ -64,7 +64,7 @@ const portalCards = [
 		href: '/services',
 		measure: 'Service finder',
 		status: 'Soon',
-		icon: HandHelping,
+		icon: HandshakeIcon,
 	},
 	{
 		label: 'Places',
@@ -73,7 +73,7 @@ const portalCards = [
 		href: '/places',
 		measure: 'Tourism guide',
 		status: 'Soon',
-		icon: MapIcon,
+		icon: MapTrifoldIcon,
 	},
 ]
 
@@ -82,9 +82,9 @@ export default function HomePage() {
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader />
 
-			<section className='relative overflow-hidden border-b border-[var(--ink)]'>
+			<section className='dark-bg relative overflow-hidden border-b border-[var(--ink)]'>
 				<div
-					className='absolute inset-0 opacity-70'
+					className='absolute inset-0 opacity-25'
 					aria-hidden='true'
 				>
 					<div className='absolute left-0 top-0 h-full w-full bg-[linear-gradient(to_right,var(--rule-soft)_1px,transparent_1px),linear-gradient(to_bottom,var(--rule-soft)_1px,transparent_1px)] bg-[size:72px_72px] sm:bg-[size:96px_96px]' />
@@ -143,7 +143,7 @@ function WorkspaceCard({ card, index }: { card: (typeof portalCards)[number]; in
 			<div className='mt-4 text-[var(--accent)] transition group-hover:text-[var(--ink)]'>
 				<Icon
 					className='size-10 sm:size-12'
-					strokeWidth={1.2}
+					weight='duotone'
 					aria-hidden='true'
 				/>
 			</div>
@@ -156,7 +156,9 @@ function WorkspaceCard({ card, index }: { card: (typeof portalCards)[number]; in
 		</>
 	)
 	const className =
-		'group flex min-h-72 flex-col border-b border-[var(--rule)] py-5 text-[var(--ink)] transition hover:bg-[var(--paper-2)] sm:border-r sm:p-6 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(3n)]:border-r-0'
+		`group flex min-h-72 flex-col border-b border-[var(--rule)] py-5 text-[var(--ink)] transition sm:border-r sm:p-6 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(3n)]:border-r-0 ${
+			isOpen ? 'hover:bg-[var(--paper-2)]' : 'bg-neutral-200/55 text-[var(--ink-3)]'
+		}`
 
 	if (isOpen) {
 		return (

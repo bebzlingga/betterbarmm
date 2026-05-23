@@ -7,8 +7,7 @@ const heroSlides = [
 		id: 'election',
 		eyebrow: 'Election transparency layer',
 		titleLines: ['Choose Leaders.', 'Shape Bangsamoro.'],
-		description:
-			'Explore BARMM parliamentary parties, candidates, districts, sectoral seats, developing stories, and the election calendar shaping what voters will see before Election Day.',
+		description: 'Explore BARMM parliamentary parties, candidates, districts, sectoral seats, developing stories, and the election calendar shaping what voters will see before Election Day.',
 		action: {
 			label: 'Open election workspace',
 			href: 'https://election.betterbarmm.com',
@@ -72,7 +71,7 @@ export function HomeHeroSlider() {
 							))}
 						</h1>
 						<p
-							className='home-hero-description mt-6 max-w-3xl text-base leading-6! text-[var(--ink-2)] sm:mt-7 sm:text-lg sm:leading-7! lg:text-xl lg:leading-9!'
+							className='home-hero-description mt-6 max-w-3xl text-xl! leading-tight! text-[var(--ink-2)] sm:mt-7 sm:text-lg sm:leading-6! lg:text-xl lg:leading-8!'
 							style={{ transitionDelay: isActive ? '340ms' : '0ms' }}
 						>
 							{slide.description}
@@ -83,7 +82,7 @@ export function HomeHeroSlider() {
 						>
 							<a
 								href={slide.action.href}
-								className='inline-flex w-full justify-center border border-[var(--ink)] bg-[var(--ink)] px-5 py-3 text-center font-mono text-[10px] font-semibold uppercase tracking-[0.13em] text-[var(--paper)] transition hover:bg-[var(--accent)] sm:w-auto sm:text-[11px] sm:tracking-[0.14em]'
+								className='inline-flex w-full justify-center border border-[var(--ink)] bg-[var(--ink)] px-5 py-3 text-center font-mono text-[10px] font-semibold uppercase tracking-[0.13em] text-[#16140f] transition hover:border-[var(--accent)] hover:bg-[var(--accent)] sm:w-auto sm:text-[11px] sm:tracking-[0.14em]'
 							>
 								{slide.action.label}
 							</a>

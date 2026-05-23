@@ -51,7 +51,7 @@ export default function DiscoverBarmmPage() {
 						<a
 							key={topic.slug}
 							href={`#${topic.slug}`}
-							className='group border-b border-[var(--rule)] py-5 text-[var(--ink)] transition hover:bg-[var(--paper-2)] last:border-b-0 sm:border-r sm:p-6 sm:[&:nth-child(2n)]:border-r-0 sm:[&:nth-last-child(-n+2)]:border-b-0 lg:border-b-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0'
+							className='group border-b border-[var(--rule)] py-6 text-[var(--ink)] transition hover:bg-[var(--paper-2)] last:border-b-0 sm:border-r sm:px-6 sm:py-8 sm:[&:nth-child(2n)]:border-r-0 sm:[&:nth-last-child(-n+2)]:border-b-0 lg:border-b-0 lg:px-6 lg:py-10 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0'
 						>
 							<div className='flex items-center justify-between gap-4'>
 								<p className='eyebrow'>
@@ -59,7 +59,7 @@ export default function DiscoverBarmmPage() {
 								</p>
 							</div>
 							<h2 className='mt-5 text-2xl font-extrabold tracking-[-0.02em]'>{topic.navTitle ?? topic.title}</h2>
-							<p className='mt-3 text-sm leading-snug text-[var(--ink-2)] lg:min-h-28'>{topic.description}</p>
+							<p className='mt-3 text-sm leading-snug text-[var(--ink-2)]'>{topic.description}</p>
 						</a>
 					))}
 				</div>

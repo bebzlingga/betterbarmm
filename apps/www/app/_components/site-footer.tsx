@@ -1,6 +1,6 @@
 export function SiteFooter() {
 	return (
-		<footer className='border-t border-[var(--ink)] bg-[var(--paper)] py-10 pb-5 text-[var(--ink)]'>
+		<footer className='border-t border-[var(--rule)] bg-[var(--paper)] py-10 pb-5 text-[var(--ink)]'>
 			<div className='mx-auto max-w-7xl px-8'>
 				<div className='grid border-b border-[var(--rule)] pb-12 pt-6 sm:pb-16 sm:pt-8 lg:grid-cols-[0.72fr_1.28fr] lg:gap-12'>
 					<div>

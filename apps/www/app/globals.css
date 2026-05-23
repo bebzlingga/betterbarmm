@@ -84,7 +84,8 @@ body {
   color: var(--accent);
 }
 
-.discover-dark-section {
+.discover-dark-section,
+.dark-bg {
   --ink: #f7f7f7;
   --ink-2: #d8d0bd;
   --ink-3: #aaa084;
@@ -97,12 +98,14 @@ body {
   color: #f7f7f7;
 }
 
-.discover-dark-section .rule-link {
+.discover-dark-section .rule-link,
+.dark-bg .rule-link {
   border-bottom-color: var(--accent);
   color: #f7f7f7;
 }
 
-.discover-dark-section .rule-link:hover {
+.discover-dark-section .rule-link:hover,
+.dark-bg .rule-link:hover {
   color: var(--accent);
 }
 
