@@ -1,0 +1,1515 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-05-23T01:32:05+00:00",
+  "project": "betterbarmm.com",
+  "dataset_name": "BARMM 2026 Election Developing Stories",
+  "purpose": "A newsroom/workspace-ready developing-story layer for the first BARMM Parliamentary Elections, covering original scheduling, postponements, Sulu, redistricting litigation, TRO, cancellation/non-proceeding of the October 2025 election, current September 2026 calendar, and candidate/partylist watch items.",
+  "data_quality": {
+    "as_of": "2026-05-23T01:32:05+00:00",
+    "summary": "Developing-stories dataset for BetterBARMM election workspace. Official legal and COMELEC materials are prioritized. Calendar and candidate data should be rechecked against the latest COMELEC issuances before publication.",
+    "important_flags": [
+      "BAA 58 and BAA 77 are retained only as historical/legal-context items because the Supreme Court voided them for purposes of the 2025 election framework.",
+      "Legacy 2024 COC and nominee lists should not be treated as final for September 2026 without refiled/updated COMELEC confirmation under RA 12317.",
+      "The current election date is September 14, 2026 under RA 12317, but court orders or new legislation could still affect future schedules.",
+      "Use 'October 13, 2025 election did not proceed' or 'could not proceed for lack of valid districting law' where precision matters. 'Cancelled' is acceptable in a headline only with the legal explanation attached."
+    ]
+  },
+  "sources": {
+    "ra_11054": {
+      "title": "Republic Act No. 11054 / Bangsamoro Organic Law",
+      "type": "law",
+      "publisher": "Supreme Court E-Library",
+      "date": "2018-07-27",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/92699",
+      "notes": "Sets the Bangsamoro parliamentary structure, the BTA transition, and originally synchronized the first regular Bangsamoro Government election with the 2022 national elections."
+    },
+    "ra_11593": {
+      "title": "Republic Act No. 11593",
+      "type": "law",
+      "publisher": "Supreme Court E-Library",
+      "date": "2021-10-28",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/93880",
+      "notes": "First statutory reset: first regular BARMM election moved from 2022 to the 2025 national elections; BTA transition extended."
+    },
+    "baa_58": {
+      "title": "Bangsamoro Autonomy Act No. 58 / Bangsamoro Parliamentary Districts Act of 2024",
+      "type": "regional_law",
+      "publisher": "Bangsamoro Parliament / Official Gazette / PIA summary",
+      "date": "2024-02-28",
+      "url": "https://officialgazette.bangsamoro.gov.ph/wp-content/uploads/2024/03/BANGSAMORO-AUTONOMY-ACT-NO.-58.pdf",
+      "supporting_url": "https://mirror.pia.gov.ph/press-releases/2024/03/03/barmm-parliament-approves-bill-establishing-32-single-member-parliamentary-districts",
+      "notes": "Created 32 single-member parliamentary districts under the pre-Sulu-exclusion framework."
+    },
+    "sulu_sc_2024": {
+      "title": "Province of Sulu v. Medialdea, Supreme Court ruling",
+      "type": "court_case",
+      "publisher": "Supreme Court / Lawphil reference in later decision",
+      "date": "2024-09-09",
+      "url": "https://lawphil.net/judjuris/juri2025/sep2025/pdf/gr_02219_2025.pdf",
+      "notes": "Upheld the Bangsamoro Organic Law but declared Sulu's inclusion in BARMM void/unconstitutional; motions for reconsideration were denied with finality on 2024-11-26."
+    },
+    "ra_12123": {
+      "title": "Republic Act No. 12123",
+      "type": "law",
+      "publisher": "Supreme Court E-Library",
+      "date": "2025-02-19",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/98494",
+      "notes": "Second statutory reset: first regular BARMM election moved to October 13, 2025; BTA holdover; October election treated as continuation of the 2025 election process."
+    },
+    "baa_77": {
+      "title": "Bangsamoro Autonomy Act No. 77 / Bangsamoro Parliamentary Redistricting Act of 2025",
+      "type": "regional_law",
+      "publisher": "Bangsamoro Official Gazette",
+      "date": "2025-08-28",
+      "url": "https://officialgazette.bangsamoro.gov.ph/2025/08/28/bangsamoro-autonomy-act-no-77/",
+      "notes": "Reallocated the seven district seats originally assigned to Sulu after Sulu's exclusion from BARMM; later restrained and voided by the Supreme Court."
+    },
+    "sc_tro_2025_09_16": {
+      "title": "Supreme Court Press Briefer, September 16, 2025",
+      "type": "court_update",
+      "publisher": "Supreme Court of the Philippines",
+      "date": "2025-09-16",
+      "url": "https://sc.judiciary.gov.ph/press-briefer-september-16-2025/",
+      "notes": "SC TRO against implementation of BAA 77; consolidated redistricting cases."
+    },
+    "sc_decision_2025_10_01": {
+      "title": "Supreme Court Press Briefer, October 1, 2025",
+      "type": "court_update",
+      "publisher": "Supreme Court of the Philippines",
+      "date": "2025-10-01",
+      "url": "https://sc.judiciary.gov.ph/press-briefer-october-1-2025/",
+      "notes": "SC declares BAA 77 and BAA 58 unconstitutional; says there can be no October 13, 2025 BARMM parliamentary election without a valid districting law; orders COMELEC to prepare and conduct elections not later than March 31, 2026."
+    },
+    "pb_415": {
+      "title": "Districting law approved as BARMM gets ready for first parliamentary elections",
+      "type": "parliament_article",
+      "publisher": "Bangsamoro Parliament",
+      "date": "2026-01-13",
+      "url": "https://parliament.bangsamoro.gov.ph/2026/01/13/districting-law-approved-as-barmm-gets-ready-for-first-parliamentary-elections/",
+      "notes": "Parliament Bill No. 415 approved on third and final reading to define 32 BARMM parliamentary districts after the Supreme Court ruling."
+    },
+    "comelec_deferral_2026_01_28": {
+      "title": "COMELEC Statement: COMELEC Defers the Conduct of the March 30, 2026 BARMM Parliamentary Elections",
+      "type": "election_admin_update",
+      "publisher": "Commission on Elections",
+      "date": "2026-01-28",
+      "url": "https://www.facebook.com/comelec.ph/posts/1359475512884944/",
+      "notes": "Public COMELEC statement announcing deferment of the March 30, 2026 BARMM Parliamentary Elections."
+    },
+    "ra_12317": {
+      "title": "Republic Act No. 12317",
+      "type": "law",
+      "publisher": "Supreme Court E-Library",
+      "date": "2026-03-25",
+      "url": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/101088",
+      "notes": "Third statutory reset: first regular BARMM election set for the second Monday of September 2026; new COC and nominees filing period; elected officials assume office October 30, 2026."
+    },
+    "comelec_res_11214": {
+      "title": "COMELEC Resolution No. 11214",
+      "type": "comelec_resolution",
+      "publisher": "Commission on Elections",
+      "date": "2026-04-07",
+      "url": "https://www.comelec.gov.ph/?r=2025BARMMPE%2FResolutions%2Fcom_res_11214",
+      "notes": "Calendar of activities and periods of prohibited acts for the September 14, 2026 BARMM Parliamentary Elections."
+    },
+    "comelec_res_11221": {
+      "title": "COMELEC Resolution No. 11221",
+      "type": "comelec_resolution",
+      "publisher": "Commission on Elections",
+      "date": "2026-05-06",
+      "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025BARMMPE/Resolutions/com_res_11221.pdf",
+      "notes": "Adopts and adjusts prior election-administration resolutions for the September 14, 2026 BARMM Parliamentary Elections; notes RA 12317 reset to September 14 and Resolution 11214 calendar."
+    },
+    "abs_calendar_summary": {
+      "title": "Comelec releases official calendar, prohibited acts for 2026 BARMM parliamentary polls",
+      "type": "news_calendar_summary",
+      "publisher": "ABS-CBN News",
+      "date": "2026-04-10",
+      "url": "https://www.abs-cbn.com/news/regions/2026/4/10/comelec-releases-official-calendar-prohibited-acts-for-2026-barmm-parliamentary-polls-0728",
+      "notes": "News summary of COMELEC calendar release."
+    }
+  },
+  "chronology": [
+    {
+      "id": "evt_2018_ra11054_bol",
+      "date": "2018-07-27",
+      "type": "foundational_law",
+      "headline": "Bangsamoro Organic Law establishes the BARMM framework",
+      "summary": "Republic Act No. 11054 creates the Bangsamoro framework, an 80-member Parliament, proportional party seats, district seats, reserved/sectoral seats, and the Bangsamoro Transition Authority as the interim government.",
+      "story_ids": [
+        "story_001_origin_2022_first_election"
+      ],
+      "source_ids": [
+        "ra_11054"
+      ],
+      "status": "background"
+    },
+    {
+      "id": "evt_2019_plebiscites",
+      "date": "2019-01-21/2019-02-06",
+      "type": "plebiscite",
+      "headline": "Bangsamoro plebiscites ratify the new regional framework",
+      "summary": "The plebiscites created the political basis for BARMM’s transition from ARMM to the Bangsamoro Government.",
+      "story_ids": [
+        "story_001_origin_2022_first_election"
+      ],
+      "source_ids": [
+        "sulu_sc_2024"
+      ],
+      "status": "background"
+    },
+    {
+      "id": "evt_2022_original_schedule",
+      "date": "2022-05-09",
+      "type": "original_election_date",
+      "headline": "Original target: first regular Bangsamoro Government election synchronized with the 2022 national elections",
+      "summary": "The original Section 13 of RA 11054 set the first regular election for the Bangsamoro Government to be held with the 2022 national elections.",
+      "story_ids": [
+        "story_001_origin_2022_first_election"
+      ],
+      "source_ids": [
+        "ra_11054"
+      ],
+      "status": "superseded"
+    },
+    {
+      "id": "evt_2021_ra11593_reset_2025",
+      "date": "2021-10-28",
+      "type": "postponement_law",
+      "headline": "RA 11593 resets the first BARMM election to the 2025 national elections",
+      "summary": "The transition was extended and the BTA continued as interim government while the first regular election was moved to 2025.",
+      "story_ids": [
+        "story_002_first_postponement_2025"
+      ],
+      "source_ids": [
+        "ra_11593"
+      ],
+      "status": "superseded"
+    },
+    {
+      "id": "evt_2024_baa58_districts",
+      "date": "2024-02-28",
+      "type": "districting_law",
+      "headline": "BAA 58 creates the first 32 single-member parliamentary districts",
+      "summary": "BAA 58 distributed district seats across Basilan, Sulu, Tawi-Tawi, Maguindanao del Norte, Maguindanao del Sur, Lanao del Sur, Cotabato City, and the Special Geographic Area.",
+      "story_ids": [
+        "story_003_baa58_and_first_map"
+      ],
+      "source_ids": [
+        "baa_58"
+      ],
+      "status": "voided_by_sc"
+    },
+    {
+      "id": "evt_2024_sulu_ruling",
+      "date": "2024-09-09",
+      "type": "supreme_court_decision",
+      "headline": "Supreme Court rules Sulu is not part of BARMM",
+      "summary": "The ruling upheld the BOL but voided Sulu’s inclusion in BARMM, triggering the need to address seven Sulu parliamentary district seats.",
+      "story_ids": [
+        "story_004_sulu_exclusion"
+      ],
+      "source_ids": [
+        "sulu_sc_2024"
+      ],
+      "status": "final"
+    },
+    {
+      "id": "evt_2024_sulu_mr_finality",
+      "date": "2024-11-26",
+      "type": "supreme_court_finality",
+      "headline": "Sulu ruling becomes final after motions for reconsideration are denied",
+      "summary": "The Supreme Court’s Sulu ruling became final, forcing election planners and legislators to confront the district-map problem.",
+      "story_ids": [
+        "story_004_sulu_exclusion"
+      ],
+      "source_ids": [
+        "sulu_sc_2024"
+      ],
+      "status": "final"
+    },
+    {
+      "id": "evt_2025_ra12123_reset_october",
+      "date": "2025-02-19",
+      "type": "postponement_law",
+      "headline": "RA 12123 resets the first BARMM election to October 13, 2025",
+      "summary": "The 2025 May timetable was replaced with an October 13, 2025 parliamentary election date, with the BTA continuing as interim government.",
+      "story_ids": [
+        "story_005_second_postponement_october_2025"
+      ],
+      "source_ids": [
+        "ra_12123"
+      ],
+      "status": "superseded"
+    },
+    {
+      "id": "evt_2025_aug14_election_period",
+      "date": "2025-08-14",
+      "type": "comelec_calendar",
+      "headline": "Election period begins for the October 2025 BARMM Parliamentary Elections",
+      "summary": "The election period began under COMELEC’s October 2025 calendar; this date became central in the later Supreme Court ruling on BAA 77.",
+      "story_ids": [
+        "story_006_baa77_tro"
+      ],
+      "source_ids": [
+        "sc_tro_2025_09_16",
+        "sc_decision_2025_10_01"
+      ],
+      "status": "historical"
+    },
+    {
+      "id": "evt_2025_baa77_passed",
+      "date": "2025-08-19",
+      "type": "redistricting_law_passage",
+      "headline": "BTA passes BAA 77 five days after the election period starts",
+      "summary": "BAA 77 reorganized districts to reallocate the seven seats originally assigned to Sulu, but timing and district-contiguity issues became central legal challenges.",
+      "story_ids": [
+        "story_006_baa77_tro"
+      ],
+      "source_ids": [
+        "baa_77",
+        "sc_tro_2025_09_16",
+        "sc_decision_2025_10_01"
+      ],
+      "status": "voided_by_sc",
+      "notes": "The SC press briefer states the act was signed into law on 2025-08-28; the full decision has a timeline note that may be read differently. For editorial copy, use the Supreme Court press briefer when citing the public-facing timeline."
+    },
+    {
+      "id": "evt_2025_sc_tro_baa77",
+      "date": "2025-09-15",
+      "type": "tro",
+      "headline": "Supreme Court issues TRO against implementation of BAA 77",
+      "summary": "The Court consolidated redistricting cases and restrained COMELEC, the BTA, and persons acting under them from implementing BAA 77.",
+      "story_ids": [
+        "story_006_baa77_tro"
+      ],
+      "source_ids": [
+        "sc_tro_2025_09_16"
+      ],
+      "status": "historical"
+    },
+    {
+      "id": "evt_2025_sc_voids_baa58_baa77",
+      "date": "2025-09-30/2025-10-01",
+      "type": "supreme_court_decision",
+      "headline": "Supreme Court voids BAA 77 and says BAA 58 cannot be revived",
+      "summary": "The Court found BAA 77 unconstitutional and held that BAA 58 could not be reinstated because it still included Sulu. It said a valid districting law was needed before the first BARMM parliamentary election could proceed.",
+      "story_ids": [
+        "story_007_october_2025_cannot_proceed"
+      ],
+      "source_ids": [
+        "sc_decision_2025_10_01"
+      ],
+      "status": "final"
+    },
+    {
+      "id": "evt_2025_no_oct13_election",
+      "date": "2025-10-13",
+      "type": "election_did_not_proceed",
+      "headline": "October 13, 2025 election does not proceed",
+      "summary": "Because there was no valid districting law, the Supreme Court said there could be no BARMM parliamentary election on October 13, 2025.",
+      "story_ids": [
+        "story_007_october_2025_cannot_proceed"
+      ],
+      "source_ids": [
+        "sc_decision_2025_10_01"
+      ],
+      "status": "historical"
+    },
+    {
+      "id": "evt_2026_pb415_approved",
+      "date": "2026-01-13",
+      "type": "new_districting_law",
+      "headline": "Parliament approves PB 415 to define 32 districts after SC ruling",
+      "summary": "PB 415 was approved after a special session and was presented as the districting measure designed to address the Supreme Court’s concerns.",
+      "story_ids": [
+        "story_008_new_districting_after_sc"
+      ],
+      "source_ids": [
+        "pb_415"
+      ],
+      "status": "active_framework"
+    },
+    {
+      "id": "evt_2026_comelec_defers_march30",
+      "date": "2026-01-28",
+      "type": "comelec_deferral",
+      "headline": "COMELEC defers the March 30, 2026 BARMM parliamentary elections",
+      "summary": "COMELEC announced that the March 30 schedule would not proceed, opening the way for another legislative reset.",
+      "story_ids": [
+        "story_009_march_deferral_and_ra12317"
+      ],
+      "source_ids": [
+        "comelec_deferral_2026_01_28"
+      ],
+      "status": "superseded"
+    },
+    {
+      "id": "evt_2026_ra12317_september_reset",
+      "date": "2026-03-25",
+      "type": "postponement_law",
+      "headline": "RA 12317 resets the first BARMM election to September 2026",
+      "summary": "The first regular election is reset to the second Monday of September 2026, with elected officials’ term to begin at noon on October 30, 2026.",
+      "story_ids": [
+        "story_009_march_deferral_and_ra12317",
+        "story_010_current_2026_election_calendar"
+      ],
+      "source_ids": [
+        "ra_12317"
+      ],
+      "status": "current_law"
+    },
+    {
+      "id": "evt_2026_comelec_res11214_calendar",
+      "date": "2026-04-07",
+      "type": "comelec_calendar",
+      "headline": "COMELEC promulgates the September 14, 2026 election calendar",
+      "summary": "Resolution No. 11214 sets the calendar and prohibited-act periods for the September 14, 2026 BARMM Parliamentary Elections.",
+      "story_ids": [
+        "story_010_current_2026_election_calendar"
+      ],
+      "source_ids": [
+        "comelec_res_11214",
+        "comelec_res_11221"
+      ],
+      "status": "current_calendar"
+    },
+    {
+      "id": "evt_2026_coc_filing",
+      "date": "2026-05-05/2026-05-07",
+      "type": "candidate_filing",
+      "headline": "COC and party-nominee filing window for the reset September election",
+      "summary": "A new filing period is required under RA 12317 because previous 2024 filings must be refiled within the new period set by COMELEC.",
+      "story_ids": [
+        "story_010_current_2026_election_calendar",
+        "story_011_candidate_and_partylist_watch"
+      ],
+      "source_ids": [
+        "ra_12317",
+        "comelec_res_11214"
+      ],
+      "status": "completed_or_in_progress_at_generation",
+      "confidence": "medium"
+    },
+    {
+      "id": "evt_2026_election_period_start",
+      "date": "2026-07-16",
+      "type": "election_period",
+      "headline": "Election period begins for the September 2026 BARMM Parliamentary Elections",
+      "summary": "COMELEC Resolution No. 11221 references the Resolution No. 11214 election period as July 16 to September 29, 2026.",
+      "story_ids": [
+        "story_010_current_2026_election_calendar"
+      ],
+      "source_ids": [
+        "comelec_res_11221"
+      ],
+      "status": "upcoming"
+    },
+    {
+      "id": "evt_2026_campaign_period",
+      "date": "2026-07-30/2026-09-12",
+      "type": "campaign_period",
+      "headline": "Campaign period for BARMM parliamentary election",
+      "summary": "Campaign dates should be verified against the latest COMELEC Resolution No. 11214 and errata before publication.",
+      "story_ids": [
+        "story_010_current_2026_election_calendar"
+      ],
+      "source_ids": [
+        "comelec_res_11214",
+        "abs_calendar_summary"
+      ],
+      "status": "upcoming",
+      "confidence": "medium"
+    },
+    {
+      "id": "evt_2026_election_day",
+      "date": "2026-09-14",
+      "type": "election_day",
+      "headline": "Election Day: first regular BARMM Parliamentary Elections",
+      "summary": "RA 12317 sets the election on the second Monday of September 2026; for 2026 this is September 14.",
+      "story_ids": [
+        "story_010_current_2026_election_calendar"
+      ],
+      "source_ids": [
+        "ra_12317",
+        "comelec_res_11221"
+      ],
+      "status": "upcoming"
+    },
+    {
+      "id": "evt_2026_assumption_office",
+      "date": "2026-10-30",
+      "type": "assumption_of_office",
+      "headline": "First elected BARMM officials assume office",
+      "summary": "RA 12317 provides that first elected BARMM officials’ terms start at noon on October 30, 2026 and end at noon on June 30, 2031.",
+      "story_ids": [
+        "story_010_current_2026_election_calendar"
+      ],
+      "source_ids": [
+        "ra_12317"
+      ],
+      "status": "upcoming"
+    }
+  ],
+  "developing_stories": [
+    {
+      "id": "story_001_origin_2022_first_election",
+      "slug": "why-barmm-first-election-was-originally-2022",
+      "status": "backgrounder_ready",
+      "priority": 2,
+      "headline": "The first BARMM election was originally supposed to happen in 2022",
+      "deck": "The Bangsamoro Organic Law created an interim transition authority and set the first regular Bangsamoro Government election to be synchronized with the 2022 national elections.",
+      "summary": "This backgrounder explains the original electoral promise of the Bangsamoro Organic Law: an interim BTA would complete core transition laws, including districting and the electoral code, before the first elected Parliament.",
+      "why_it_matters": "It establishes the baseline from which all later postponements should be measured. Any timeline page should begin here so readers understand that the September 2026 vote is the result of repeated legal and political resets, not the original schedule.",
+      "key_facts": [
+        {
+          "text": "RA 11054 established the Bangsamoro framework and an 80-member Parliament with party representatives, single-member district representatives, and reserved/sectoral seats.",
+          "date": null,
+          "source_ids": [
+            "ra_11054"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "RA 11054 originally set the first regular election for the Bangsamoro Government to be held and synchronized with the 2022 national elections.",
+          "date": "2022-05-09",
+          "source_ids": [
+            "ra_11054"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "During the transition, the BTA was tasked with passing priority laws and determining parliamentary districts for the first regular election.",
+          "date": null,
+          "source_ids": [
+            "ra_11054"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "affected_entities": [
+        "Bangsamoro Transition Authority",
+        "COMELEC",
+        "regional political parties",
+        "BARMM voters"
+      ],
+      "reader_questions": [
+        "What was the BTA supposed to complete before the first election?",
+        "How are the 80 seats in the Bangsamoro Parliament divided?",
+        "Why does districting matter in a parliamentary system?"
+      ],
+      "workspace_actions": [
+        "Link this story to a visual explainer of the 40 party + 32 district + 8 sectoral seat structure.",
+        "Use this as the root node for all postponement and redistricting stories."
+      ],
+      "source_ids": [
+        "ra_11054"
+      ],
+      "tags": [
+        "background",
+        "BOL",
+        "BTA",
+        "first election",
+        "parliamentary system"
+      ]
+    },
+    {
+      "id": "story_002_first_postponement_2025",
+      "slug": "first-postponement-2022-to-2025-ra-11593",
+      "status": "backgrounder_ready",
+      "priority": 2,
+      "headline": "First reset: Congress moved the BARMM election from 2022 to 2025",
+      "deck": "RA 11593 extended the transition and moved the first regular Bangsamoro Government election to the 2025 national elections.",
+      "summary": "This story explains the first election postponement: instead of electing the first Parliament in 2022, the transition period continued under the BTA and the first regular election was synchronized with the 2025 national elections.",
+      "why_it_matters": "This is the first major extension of the appointed transition government, and it frames later debates on whether postponements are needed for readiness or whether they delay democratic representation.",
+      "key_facts": [
+        {
+          "text": "RA 11593 amended Section 13 of RA 11054 and moved the first regular Bangsamoro Government election to the 2025 national elections.",
+          "date": "2021-10-28",
+          "source_ids": [
+            "ra_11593"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "RA 11593 continued the BTA as the interim government and allowed the appointment of 80 interim members to serve up to June 30, 2025 or until successors are elected and qualified.",
+          "date": "2021-10-28",
+          "source_ids": [
+            "ra_11593"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "affected_entities": [
+        "BTA",
+        "Office of the President",
+        "COMELEC",
+        "BARMM voters"
+      ],
+      "reader_questions": [
+        "What reasons were given for the first transition extension?",
+        "Who served in the BTA during the extended transition?",
+        "What laws and institutions were completed between 2022 and 2025?"
+      ],
+      "workspace_actions": [
+        "Create a comparison card: original 2022 promise vs RA 11593 2025 reset.",
+        "Add a timeline marker showing how long the interim Parliament continued after 2022."
+      ],
+      "source_ids": [
+        "ra_11593"
+      ],
+      "tags": [
+        "postponement",
+        "RA 11593",
+        "transition extension"
+      ]
+    },
+    {
+      "id": "story_003_baa58_and_first_map",
+      "slug": "baa-58-first-parliamentary-district-map",
+      "status": "backgrounder_ready",
+      "priority": 2,
+      "headline": "BAA 58 drew the first BARMM parliamentary district map—but it still included Sulu",
+      "deck": "The 2024 districting law created 32 single-member parliamentary districts, including seven seats for Sulu before the Supreme Court later ruled Sulu was not part of BARMM.",
+      "summary": "This developing story tracks how the first district map was created and why it became unstable after the Supreme Court’s Sulu ruling.",
+      "why_it_matters": "Districting determines who can run in each constituency, what ballots voters receive, and how district seats translate local communities into parliamentary representation.",
+      "key_facts": [
+        {
+          "text": "BAA 58 established 32 single-member parliamentary districts for BARMM.",
+          "date": "2024-02-28",
+          "source_ids": [
+            "baa_58"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "Under BAA 58, district seats were distributed as three in Basilan, seven in Sulu, three in Tawi-Tawi, four each in Maguindanao del Norte and Maguindanao del Sur, eight in Lanao del Sur, two in Cotabato City, and one in the Special Geographic Area.",
+          "date": "2024-02-28",
+          "source_ids": [
+            "baa_58"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "The later Supreme Court ruling that Sulu is not part of BARMM made the BAA 58 framework unusable for the first election.",
+          "date": "2024-09-09",
+          "source_ids": [
+            "sulu_sc_2024",
+            "sc_decision_2025_10_01"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "affected_entities": [
+        "Sulu",
+        "Basilan",
+        "Tawi-Tawi",
+        "Lanao del Sur",
+        "Maguindanao del Norte",
+        "Maguindanao del Sur",
+        "Cotabato City",
+        "Special Geographic Area"
+      ],
+      "reader_questions": [
+        "How many district seats were assigned to each province or area under the first map?",
+        "How did the removal of Sulu change the district math?",
+        "What standards does the BOL require for parliamentary districts?"
+      ],
+      "workspace_actions": [
+        "Build a before/after district map module: BAA 58 vs later valid framework.",
+        "Flag BAA 58 as voided/superseded in district-level data views."
+      ],
+      "source_ids": [
+        "baa_58",
+        "sulu_sc_2024",
+        "sc_decision_2025_10_01"
+      ],
+      "tags": [
+        "districting",
+        "BAA 58",
+        "Sulu",
+        "map"
+      ]
+    },
+    {
+      "id": "story_004_sulu_exclusion",
+      "slug": "supreme-court-sulu-not-part-of-barmm",
+      "status": "backgrounder_ready",
+      "priority": 1,
+      "headline": "The Sulu ruling changed the entire election map",
+      "deck": "The Supreme Court upheld the Bangsamoro Organic Law but voided Sulu’s inclusion in BARMM, triggering a seat-reallocation problem just before the first parliamentary election.",
+      "summary": "This story explains why Sulu was central to the election disruption. When Sulu was removed from BARMM, the seven district seats allocated to it under BAA 58 had to be redistributed or otherwise addressed.",
+      "why_it_matters": "Without a districting law that excludes Sulu and complies with BOL standards, voters and candidates cannot be assigned to lawful district contests.",
+      "key_facts": [
+        {
+          "text": "The Supreme Court ruled in Province of Sulu v. Medialdea that Sulu is not part of BARMM.",
+          "date": "2024-09-09",
+          "source_ids": [
+            "sulu_sc_2024"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "The ruling became final when motions for reconsideration were denied with finality on November 26, 2024.",
+          "date": "2024-11-26",
+          "source_ids": [
+            "sulu_sc_2024"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "The ruling required the election framework to deal with seven district seats initially assigned to Sulu under BAA 58.",
+          "date": null,
+          "source_ids": [
+            "baa_58",
+            "sulu_sc_2024",
+            "sc_tro_2025_09_16"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "affected_entities": [
+        "Sulu voters",
+        "BARMM voters",
+        "COMELEC",
+        "BTA Parliament",
+        "district candidates"
+      ],
+      "reader_questions": [
+        "Why did Sulu vote differently in the plebiscite?",
+        "Can Sulu return to BARMM later?",
+        "What happens to Sulu’s block grant and regional representation?"
+      ],
+      "workspace_actions": [
+        "Tag Sulu-related stories separately from BARMM electoral contests after the ruling.",
+        "Include a legal-status badge on all Sulu-related district references: outside BARMM after SC ruling."
+      ],
+      "source_ids": [
+        "sulu_sc_2024"
+      ],
+      "tags": [
+        "Sulu",
+        "Supreme Court",
+        "territory",
+        "districting"
+      ]
+    },
+    {
+      "id": "story_005_second_postponement_october_2025",
+      "slug": "ra-12123-resets-barmm-election-to-october-2025",
+      "status": "backgrounder_ready",
+      "priority": 2,
+      "headline": "Second reset: the 2025 election moved from May to October",
+      "deck": "RA 12123 moved the first regular BARMM election to October 13, 2025 after Sulu’s exclusion complicated the district map.",
+      "summary": "This story explains the legal reset from a May 2025 election synchronized with the national polls to a separate October 13, 2025 parliamentary election.",
+      "why_it_matters": "The October 2025 calendar became the reference point for the later BAA 77 timing problem, because the redistricting law was passed after the election period had started.",
+      "key_facts": [
+        {
+          "text": "RA 12123 set the first regular election for the Bangsamoro Government on October 13, 2025.",
+          "date": "2025-02-19",
+          "source_ids": [
+            "ra_12123"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "RA 12123 continued the BTA as the interim government until successors are elected and qualified in an automated election.",
+          "date": "2025-02-19",
+          "source_ids": [
+            "ra_12123"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "The law also contemplated seat reapportionment after the seats originally allocated to Sulu were affected.",
+          "date": "2025-02-19",
+          "source_ids": [
+            "ra_12123"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "affected_entities": [
+        "BTA",
+        "COMELEC",
+        "party nominees",
+        "district COC filers"
+      ],
+      "reader_questions": [
+        "Why was a separate October 2025 BARMM election created?",
+        "What happened to candidates and nominees who already filed in 2024?",
+        "How did the law address Sulu’s block grant and seat issue?"
+      ],
+      "workspace_actions": [
+        "Mark all October 2025 candidate lists as historical/legacy and not automatically final for September 2026.",
+        "Add a warning label to pages using 2024 filings."
+      ],
+      "source_ids": [
+        "ra_12123"
+      ],
+      "tags": [
+        "RA 12123",
+        "postponement",
+        "October 2025"
+      ]
+    },
+    {
+      "id": "story_006_baa77_tro",
+      "slug": "baa-77-redistricting-tro-supreme-court",
+      "status": "backgrounder_ready",
+      "priority": 1,
+      "headline": "BAA 77, the TRO, and why redistricting became the election’s flashpoint",
+      "deck": "BAA 77 attempted to reallocate Sulu’s seven district seats, but petitions challenged the law’s timing and district design, leading to a Supreme Court TRO.",
+      "summary": "This story packages the fast-moving legal dispute: the election period had begun, BAA 77 was passed five days later, cases were filed, and the Supreme Court restrained implementation.",
+      "why_it_matters": "This is the pivotal legal conflict that stopped the October 2025 election machinery. It links district design, election-period restrictions, and voter readiness.",
+      "key_facts": [
+        {
+          "text": "Under RA 12123, the election was scheduled for October 13, 2025, and COMELEC set the election period to begin on August 14, 2025.",
+          "date": "2025-08-14",
+          "source_ids": [
+            "sc_tro_2025_09_16",
+            "ra_12123"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "The BTA passed BAA 77 on August 19, 2025, five days after the election period began, to reorganize districts and reallocate the seven seats initially assigned to Sulu.",
+          "date": "2025-08-19",
+          "source_ids": [
+            "sc_tro_2025_09_16",
+            "baa_77"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "The Supreme Court issued a TRO enjoining COMELEC, the BTA, and persons acting under them from implementing BAA 77.",
+          "date": "2025-09-15",
+          "source_ids": [
+            "sc_tro_2025_09_16"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "Petitions challenged BAA 77 on grounds including the Voter’s Registration Act and constitutional/election integrity concerns.",
+          "date": "2025-09-15",
+          "source_ids": [
+            "sc_tro_2025_09_16"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "affected_entities": [
+        "COMELEC",
+        "BTA Parliament",
+        "district candidates",
+        "BARMM voters",
+        "Sulu-related seat allocation"
+      ],
+      "case_tracker": [
+        {
+          "case_id": "G.R. No. E-02219",
+          "short_title": "Ali, Jr., et al. v. Bangsamoro Transition Authority Parliament, et al.",
+          "issue_tags": [
+            "Voter’s Registration Act",
+            "precinct alteration",
+            "redistricting timing"
+          ]
+        },
+        {
+          "case_id": "G.R. No. E-02235",
+          "short_title": "Macapaar, et al. v. Commission on Elections, et al.",
+          "issue_tags": [
+            "free orderly honest peaceful credible elections",
+            "status quo ante",
+            "redistricting"
+          ]
+        }
+      ],
+      "reader_questions": [
+        "What is a TRO and what did it stop?",
+        "Why does passing a redistricting law during the election period matter?",
+        "How were voters affected by changing districts close to election day?"
+      ],
+      "workspace_actions": [
+        "Create a legal-status component: BAA 77 = voided by Supreme Court; do not use as active district map.",
+        "Attach case IDs and source links to every BAA 77 district reference."
+      ],
+      "source_ids": [
+        "sc_tro_2025_09_16",
+        "baa_77",
+        "ra_12123"
+      ],
+      "tags": [
+        "TRO",
+        "BAA 77",
+        "redistricting",
+        "Supreme Court",
+        "election period"
+      ]
+    },
+    {
+      "id": "story_007_october_2025_cannot_proceed",
+      "slug": "supreme-court-says-no-october-2025-barmm-election",
+      "status": "backgrounder_ready",
+      "priority": 1,
+      "headline": "Why the October 13, 2025 election could not proceed",
+      "deck": "The Supreme Court voided BAA 77 and held that BAA 58 could not be revived, leaving no valid districting law for the election.",
+      "summary": "This story explains the Supreme Court’s dispositive ruling and its practical election-administration consequences.",
+      "why_it_matters": "It is the legal explanation for the election’s effective cancellation/postponement: no valid district map, insufficient time for voter education and election logistics, and no clear legal basis for COMELEC to proceed.",
+      "key_facts": [
+        {
+          "text": "The Supreme Court declared BAA 77 unconstitutional for violating the Voter’s Registration Act prohibition on precinct alterations once the election period has started.",
+          "date": "2025-10-01",
+          "source_ids": [
+            "sc_decision_2025_10_01"
+          ],
+          "confidence": "high",
+          "legal_status": "voided"
+        },
+        {
+          "text": "The Court also found BAA 77 void for violating the BOL requirement that districts comprise adjacent and adjoining areas as far as practicable.",
+          "date": "2025-10-01",
+          "source_ids": [
+            "sc_decision_2025_10_01"
+          ],
+          "confidence": "high",
+          "legal_status": "voided"
+        },
+        {
+          "text": "The nullification of BAA 77 did not revive BAA 58 because BAA 58 still included Sulu after Sulu’s exclusion from BARMM.",
+          "date": "2025-10-01",
+          "source_ids": [
+            "sc_decision_2025_10_01"
+          ],
+          "confidence": "high",
+          "legal_status": "voided"
+        },
+        {
+          "text": "The Supreme Court said there could be no BARMM parliamentary election on October 13, 2025 without a valid districting law.",
+          "date": "2025-10-01",
+          "source_ids": [
+            "sc_decision_2025_10_01"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "The Court directed COMELEC to prepare for and conduct the election not later than March 31, 2026.",
+          "date": "2025-10-01",
+          "source_ids": [
+            "sc_decision_2025_10_01"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "affected_entities": [
+        "COMELEC",
+        "BTA Parliament",
+        "voters",
+        "district and sectoral candidates",
+        "regional political parties"
+      ],
+      "reader_questions": [
+        "Did the Supreme Court postpone the election, or did the lack of a valid district law make it impossible?",
+        "Why did BAA 58 not automatically return after BAA 77 was voided?",
+        "What had COMELEC still needed to complete before election day?"
+      ],
+      "workspace_actions": [
+        "For UI labels, use 'October 2025 election did not proceed' rather than only 'cancelled' to avoid oversimplifying the legal mechanism.",
+        "Add a legal explainer card showing the chain: Sulu ruling → BAA 77 → TRO → no valid districting law."
+      ],
+      "source_ids": [
+        "sc_decision_2025_10_01"
+      ],
+      "tags": [
+        "October 2025",
+        "Supreme Court",
+        "no valid districting law",
+        "COMELEC"
+      ]
+    },
+    {
+      "id": "story_008_new_districting_after_sc",
+      "slug": "new-barmm-districting-law-pb415-baa86",
+      "status": "active_monitoring",
+      "priority": 1,
+      "headline": "The new districting fix: PB 415 and the post-SC map",
+      "deck": "After the Supreme Court voided the prior districting laws, Parliament approved PB 415 to define the 32 districts needed for the first election.",
+      "summary": "This story follows the replacement district framework and how lawmakers attempted to address the Supreme Court’s concerns on contiguity, compactness, adjacency, and population thresholds.",
+      "why_it_matters": "The current election can only proceed if the district framework remains legally viable and administratively workable.",
+      "key_facts": [
+        {
+          "text": "Parliament approved PB 415 on third and final reading at 12:33 a.m. on January 13, 2026 after a special session.",
+          "date": "2026-01-13",
+          "source_ids": [
+            "pb_415"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "PB 415 was described as defining the 32 parliamentary districts required for the first parliamentary elections.",
+          "date": "2026-01-13",
+          "source_ids": [
+            "pb_415"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "The 80-member Parliament is composed of 40 political party representatives, 32 district representatives, and eight sectoral representatives.",
+          "date": "2026-01-13",
+          "source_ids": [
+            "pb_415",
+            "ra_11054"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "Parliament said the new district allocation included nine seats in Lanao del Sur, five each in Maguindanao del Norte and Maguindanao del Sur, four each in Basilan and Tawi-Tawi, three in Cotabato City, and two in the Special Geographic Area.",
+          "date": "2026-01-13",
+          "source_ids": [
+            "pb_415"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "affected_entities": [
+        "Basilan",
+        "Lanao del Sur",
+        "Maguindanao del Norte",
+        "Maguindanao del Sur",
+        "Tawi-Tawi",
+        "Cotabato City",
+        "Special Geographic Area"
+      ],
+      "reader_questions": [
+        "What changed from BAA 58 and BAA 77?",
+        "Which communities moved districts?",
+        "Are new legal challenges pending or threatened?"
+      ],
+      "workspace_actions": [
+        "Build current district pages based only on the latest valid districting law and COMELEC filings.",
+        "Add a 'district version' field to candidate records so old BAA 58/BAA 77 maps are not mixed with the current map."
+      ],
+      "source_ids": [
+        "pb_415",
+        "sc_decision_2025_10_01"
+      ],
+      "tags": [
+        "PB 415",
+        "BAA 86",
+        "current districting",
+        "map",
+        "SC compliance"
+      ]
+    },
+    {
+      "id": "story_009_march_deferral_and_ra12317",
+      "slug": "march-2026-deferral-ra12317-september-reset",
+      "status": "active_monitoring",
+      "priority": 1,
+      "headline": "From March to September: the latest reset under RA 12317",
+      "deck": "After COMELEC deferred the March 30, 2026 date, RA 12317 reset the first regular BARMM election to the second Monday of September 2026.",
+      "summary": "This story tracks the final legislative reset currently governing the election: a new date, new filing period, automated election use, and a new assumption-of-office schedule.",
+      "why_it_matters": "It is the current legal basis of the election day, candidate filing reset, and official term schedule.",
+      "key_facts": [
+        {
+          "text": "COMELEC announced deferral of the March 30, 2026 BARMM Parliamentary Elections on January 28, 2026.",
+          "date": "2026-01-28",
+          "source_ids": [
+            "comelec_deferral_2026_01_28"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "text": "RA 12317 reset the first regular election for the Bangsamoro Government to the second Monday of September 2026.",
+          "date": "2026-03-25",
+          "source_ids": [
+            "ra_12317"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "RA 12317 requires a new period for filing COCs and party nominees; filings made from November 4 to 9, 2024 must be refiled within the new period.",
+          "date": "2026-03-25",
+          "source_ids": [
+            "ra_12317"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "The term of first elected BARMM officials starts at noon on October 30, 2026 and ends at noon on June 30, 2031.",
+          "date": "2026-03-25",
+          "source_ids": [
+            "ra_12317"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "affected_entities": [
+        "COMELEC",
+        "regional parties",
+        "district candidates",
+        "party nominees",
+        "sectoral candidates",
+        "BTA"
+      ],
+      "reader_questions": [
+        "Why was the March 2026 date deferred?",
+        "What must candidates and parties refile?",
+        "When does the elected Parliament actually begin?"
+      ],
+      "workspace_actions": [
+        "Set September 14, 2026 as current election day in the workspace unless superseded by a newer law or COMELEC resolution.",
+        "Flag 2024 nominees and COC lists as legacy data unless refiled or confirmed under the 2026 process."
+      ],
+      "source_ids": [
+        "ra_12317",
+        "comelec_deferral_2026_01_28"
+      ],
+      "tags": [
+        "RA 12317",
+        "September 2026",
+        "postponement",
+        "new filing period"
+      ]
+    },
+    {
+      "id": "story_010_current_2026_election_calendar",
+      "slug": "current-2026-barmm-election-calendar",
+      "status": "live_tracker",
+      "priority": 1,
+      "headline": "Live calendar: September 14, 2026 BARMM Parliamentary Elections",
+      "deck": "The current election calendar centers on September 14, 2026, with the election period beginning July 16 and officials assuming office October 30.",
+      "summary": "This tracker should be the workspace’s canonical election-calendar module. It should be updated whenever COMELEC issues an erratum, supplemental resolution, final candidate list, or case order.",
+      "why_it_matters": "The BARMM election calendar now drives filing, campaign rules, campaign-finance deadlines, prohibited acts, party-list nominee tracking, sectoral assemblies, and deployment/security planning.",
+      "key_dates": [
+        {
+          "label": "COC / nominee refiling window",
+          "date_range": "2026-05-05 to 2026-05-07",
+          "status": "verify_against_latest_COMELEC",
+          "source_ids": [
+            "ra_12317",
+            "comelec_res_11214"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "label": "Election period",
+          "date_range": "2026-07-16 to 2026-09-29",
+          "status": "current_in_COMELEC_11221_reference",
+          "source_ids": [
+            "comelec_res_11221"
+          ],
+          "confidence": "high"
+        },
+        {
+          "label": "Campaign period",
+          "date_range": "2026-07-30 to 2026-09-12",
+          "status": "verify_against_latest_COMELEC_errata",
+          "source_ids": [
+            "comelec_res_11214",
+            "abs_calendar_summary"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "label": "Election day",
+          "date": "2026-09-14",
+          "status": "current_law",
+          "source_ids": [
+            "ra_12317",
+            "comelec_res_11221"
+          ],
+          "confidence": "high"
+        },
+        {
+          "label": "Assumption of office",
+          "date": "2026-10-30",
+          "status": "current_law",
+          "source_ids": [
+            "ra_12317"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "key_facts": [
+        {
+          "text": "RA 12317 sets the first regular election on the second Monday of September 2026.",
+          "date": "2026-03-25",
+          "source_ids": [
+            "ra_12317"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "COMELEC Resolution No. 11221 says RA 12317 reset the first BPE to September 14, 2026 and references Resolution No. 11214 as the calendar for that election.",
+          "date": "2026-05-06",
+          "source_ids": [
+            "comelec_res_11221"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "The election period referenced in COMELEC Resolution No. 11221 runs from July 16, 2026 to September 29, 2026.",
+          "date": "2026-05-06",
+          "source_ids": [
+            "comelec_res_11221"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "affected_entities": [
+        "all candidates",
+        "regional political parties",
+        "sectoral organizations",
+        "COMELEC",
+        "security agencies",
+        "voters"
+      ],
+      "reader_questions": [
+        "When is election day?",
+        "What are the campaign and prohibited-act periods?",
+        "Where can voters check their district and precinct?"
+      ],
+      "workspace_actions": [
+        "Create a calendar API endpoint with event IDs, start/end dates, source IDs, and status flags.",
+        "Show a 'last verified' timestamp for calendar data because the dates can still be affected by COMELEC errata or court action."
+      ],
+      "source_ids": [
+        "ra_12317",
+        "comelec_res_11214",
+        "comelec_res_11221"
+      ],
+      "tags": [
+        "calendar",
+        "COMELEC",
+        "September 14 2026",
+        "live tracker"
+      ]
+    },
+    {
+      "id": "story_011_candidate_and_partylist_watch",
+      "slug": "partylist-candidates-nominees-watch-2026-barmm",
+      "status": "live_tracker",
+      "priority": 2,
+      "headline": "Candidate watch: parties, nominees, district representatives, and sectoral seats",
+      "deck": "The reset election requires careful separation of official 2026 filings from legacy 2024 filings and pre-reset nominee lists.",
+      "summary": "This tracker connects the developing-story timeline to the candidate workspace already created for BetterBARMM. It should surface official 2026 COC filers, party-representative entries, nominee lists, district races, and sectoral candidates without mixing old and current data.",
+      "why_it_matters": "The election has multiple ballot/representation streams: regional political party votes for 40 party seats, district races for 32 seats, and sectoral/reserved mechanisms for eight seats. Data quality is essential because old COC and nominee lists may not be final after RA 12317.",
+      "key_facts": [
+        {
+          "text": "RA 11054 sets a Parliament structure with party representatives, single-member parliamentary district representatives, and reserved/sectoral representatives.",
+          "date": null,
+          "source_ids": [
+            "ra_11054"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "RA 12317 requires 2024 COC and nominee filings to be refiled within the new period set for the September 2026 election.",
+          "date": "2026-03-25",
+          "source_ids": [
+            "ra_12317"
+          ],
+          "confidence": "high"
+        },
+        {
+          "text": "COMELEC Resolution No. 11221 applies the September 14, 2026 BPE calendar and relevant election-administration resolutions to the BARMM cities/municipalities covered by the election.",
+          "date": "2026-05-06",
+          "source_ids": [
+            "comelec_res_11221"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "data_rules": [
+        "Treat legacy November 2024 COC/nominee data as historical unless confirmed refiled under RA 12317 and COMELEC’s 2026 rules.",
+        "Separate party-representative ballot entries from sectoral organization candidates and district representative candidates.",
+        "Attach every candidate record to a district-map version and source ID.",
+        "Track disqualification, substitution, withdrawal, and final-list status separately."
+      ],
+      "workspace_actions": [
+        "Add data fields: filing_cycle, candidate_status, source_status, district_map_version, is_legacy_2024, is_refiled_2026, latest_comelec_list_date.",
+        "Build filters for regional party, district, sector, province/area, source reliability, and legal status."
+      ],
+      "source_ids": [
+        "ra_11054",
+        "ra_12317",
+        "comelec_res_11221"
+      ],
+      "tags": [
+        "candidates",
+        "partylist",
+        "nominees",
+        "district races",
+        "sectoral seats",
+        "data quality"
+      ]
+    }
+  ],
+  "watch_items": [
+    {
+      "id": "watch_legal_challenges_current_map",
+      "priority": "high",
+      "title": "Any new TRO or petition against the current districting law/map",
+      "why_watch": "A successful challenge could again affect the legal basis of district races.",
+      "signals": [
+        "Supreme Court docket updates",
+        "COMELEC case bulletins",
+        "BTA/Parliament legal statements",
+        "petitions filed by candidates or voters"
+      ],
+      "related_story_ids": [
+        "story_008_new_districting_after_sc",
+        "story_010_current_2026_election_calendar"
+      ],
+      "source_ids": [
+        "sc_decision_2025_10_01",
+        "pb_415"
+      ]
+    },
+    {
+      "id": "watch_final_candidate_lists",
+      "priority": "high",
+      "title": "COMELEC final lists for district candidates, party entries, and sectoral candidates",
+      "why_watch": "Tentative lists change after nuisance/disqualification cases, withdrawals, and corrections.",
+      "signals": [
+        "COMELEC certified lists",
+        "tentative list updates",
+        "candidate case decisions",
+        "party nominee list postings"
+      ],
+      "related_story_ids": [
+        "story_011_candidate_and_partylist_watch"
+      ],
+      "source_ids": [
+        "ra_12317",
+        "comelec_res_11221"
+      ]
+    },
+    {
+      "id": "watch_party_nominee_refiling",
+      "priority": "high",
+      "title": "Party nominee refiling and replacement after RA 12317",
+      "why_watch": "Old nominee lists should not be treated as final after the new refiling period required by RA 12317.",
+      "signals": [
+        "COMELEC list of nominees",
+        "party conventions",
+        "notarized acceptances of nomination",
+        "disqualification/death exceptions"
+      ],
+      "related_story_ids": [
+        "story_009_march_deferral_and_ra12317",
+        "story_011_candidate_and_partylist_watch"
+      ],
+      "source_ids": [
+        "ra_12317"
+      ]
+    },
+    {
+      "id": "watch_sectoral_assemblies",
+      "priority": "medium",
+      "title": "Sectoral assemblies and reserved-seat procedures",
+      "why_watch": "Sectoral seats are part of the 80-seat Parliament and require separate procedures from regular district and party contests.",
+      "signals": [
+        "COMELEC sectoral assembly calendar",
+        "sectoral candidate lists",
+        "sectoral organizations accredited/recognized"
+      ],
+      "related_story_ids": [
+        "story_010_current_2026_election_calendar",
+        "story_011_candidate_and_partylist_watch"
+      ],
+      "source_ids": [
+        "ra_11054",
+        "sc_decision_2025_10_01"
+      ]
+    },
+    {
+      "id": "watch_security_deployment",
+      "priority": "medium",
+      "title": "Security classification, gun ban, deployment, and election peace covenants",
+      "why_watch": "Security can affect campaign mobility, polling access, and public confidence in the first parliamentary vote.",
+      "signals": [
+        "COMELEC/PNP/AFP/PCG command conference updates",
+        "gun-ban enforcement",
+        "areas of concern",
+        "peace covenant events"
+      ],
+      "related_story_ids": [
+        "story_010_current_2026_election_calendar"
+      ],
+      "source_ids": [
+        "comelec_res_11221"
+      ]
+    },
+    {
+      "id": "watch_voter_education_precincts",
+      "priority": "high",
+      "title": "Voter education on districts, party votes, and sectoral mechanics",
+      "why_watch": "The Supreme Court highlighted risks of massive confusion when districts and procedures shift close to election day.",
+      "signals": [
+        "district lookup tools",
+        "sample ballots",
+        "COMELEC voter education schedules",
+        "precinct reassignment notices"
+      ],
+      "related_story_ids": [
+        "story_006_baa77_tro",
+        "story_007_october_2025_cannot_proceed",
+        "story_010_current_2026_election_calendar"
+      ],
+      "source_ids": [
+        "sc_decision_2025_10_01"
+      ]
+    },
+    {
+      "id": "watch_sulu_status",
+      "priority": "medium",
+      "title": "Sulu status, representation, and possible future reintegration discussions",
+      "why_watch": "Sulu’s exclusion was the trigger for district-map instability, and future political/legal developments could remain newsworthy even if Sulu is outside the current BARMM election.",
+      "signals": [
+        "Congress bills or resolutions",
+        "court filings",
+        "statements by Sulu officials",
+        "BARMM block grant/program implementation notes"
+      ],
+      "related_story_ids": [
+        "story_004_sulu_exclusion"
+      ],
+      "source_ids": [
+        "sulu_sc_2024",
+        "ra_12123"
+      ]
+    }
+  ],
+  "ui_suggestions": {
+    "homepage_cards": [
+      {
+        "slot": "lead",
+        "story_id": "story_010_current_2026_election_calendar",
+        "label": "LIVE CALENDAR",
+        "cta": "Track the September 14 election",
+        "badge": "Current schedule"
+      },
+      {
+        "slot": "explainer",
+        "story_id": "story_007_october_2025_cannot_proceed",
+        "label": "EXPLAINER",
+        "cta": "Why October 2025 failed",
+        "badge": "SC ruling"
+      },
+      {
+        "slot": "map",
+        "story_id": "story_008_new_districting_after_sc",
+        "label": "DISTRICT MAP",
+        "cta": "See the new 32-district framework",
+        "badge": "Monitor"
+      },
+      {
+        "slot": "tracker",
+        "story_id": "story_011_candidate_and_partylist_watch",
+        "label": "CANDIDATE WATCH",
+        "cta": "Check parties and nominees",
+        "badge": "Data quality"
+      }
+    ],
+    "timeline_filters": [
+      {
+        "id": "filter_law",
+        "label": "Laws",
+        "event_types": [
+          "foundational_law",
+          "postponement_law",
+          "districting_law",
+          "new_districting_law"
+        ]
+      },
+      {
+        "id": "filter_court",
+        "label": "Court actions",
+        "event_types": [
+          "supreme_court_decision",
+          "supreme_court_finality",
+          "tro"
+        ]
+      },
+      {
+        "id": "filter_comelec",
+        "label": "COMELEC calendar",
+        "event_types": [
+          "comelec_calendar",
+          "comelec_deferral",
+          "candidate_filing",
+          "election_period",
+          "campaign_period",
+          "election_day"
+        ]
+      },
+      {
+        "id": "filter_sulu",
+        "label": "Sulu-related",
+        "tag_or_story_ids": [
+          "story_003_baa58_and_first_map",
+          "story_004_sulu_exclusion",
+          "story_006_baa77_tro"
+        ]
+      }
+    ],
+    "badges": {
+      "voided_by_sc": {
+        "label": "Voided by SC",
+        "use_for": [
+          "BAA 58",
+          "BAA 77"
+        ]
+      },
+      "legacy_2024": {
+        "label": "Legacy 2024 filing",
+        "use_for": [
+          "old candidate and nominee records"
+        ]
+      },
+      "current_law": {
+        "label": "Current law",
+        "use_for": [
+          "RA 12317",
+          "September 14 election date"
+        ]
+      },
+      "verify_latest": {
+        "label": "Verify latest COMELEC",
+        "use_for": [
+          "calendar details",
+          "candidate lists",
+          "nominee lists"
+        ]
+      }
+    }
+  },
+  "integration_notes": {
+    "recommended_workspace_key": "developing_stories",
+    "candidate_workspace_links": [
+      "district_representative_candidates",
+      "regional_parties",
+      "sectoral_candidates"
+    ],
+    "recommended_candidate_fields_to_add": [
+      "filing_cycle",
+      "is_legacy_2024",
+      "is_refiled_2026",
+      "latest_source_id",
+      "candidate_status",
+      "district_map_version",
+      "related_story_ids"
+    ],
+    "recommended_story_relations": [
+      "story_id",
+      "event_ids",
+      "source_ids",
+      "affected_entities",
+      "candidate_ids",
+      "party_ids",
+      "district_ids"
+    ]
+  }
+}

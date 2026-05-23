@@ -34,6 +34,10 @@ const workspaceItems = [
 		label: 'Bills',
 		href: 'https://bills.betterbarmm.com',
 	},
+	{
+		label: 'Election',
+		href: 'https://election.betterbarmm.com',
+	},
 ] as const
 
 export function SiteHeader({ activeItem }: SiteHeaderProps) {

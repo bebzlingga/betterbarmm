@@ -11,6 +11,15 @@ const portalCards = [
 		status: 'Soon',
 	},
 	{
+		label: 'Election',
+		title: 'A Better Bangsamoro Begins With Your Vote',
+		description:
+			'Explore BARMM parliamentary parties, candidates, districts, sectoral seats, developing stories, and source-backed election records.',
+		href: 'https://election.betterbarmm.com',
+		measure: '2026 Parliamentary Elections',
+		status: 'Open',
+	},
+	{
 		label: 'Budget',
 		title: 'Follow the money',
 		description: 'Explore BARMM appropriations by fiscal year, office, program, and source-backed budget line.',
@@ -25,14 +34,6 @@ const portalCards = [
 		href: 'https://bills.betterbarmm.com',
 		measure: 'Legislative records',
 		status: 'Open',
-	},
-	{
-		label: 'Figures',
-		title: 'Know the public figures',
-		description: 'Get to know Bangsamoro leaders, including Members of Parliament, ministers, offices, and public roles.',
-		href: '/figures',
-		measure: 'People and offices',
-		status: 'Soon',
 	},
 	{
 		label: 'Infra',
@@ -132,14 +133,14 @@ function WorkspaceCard({ card, index }: { card: (typeof portalCards)[number]; in
 			</div>
 			<h3 className='mt-4 text-2xl font-extrabold tracking-[-0.02em]'>{card.title}</h3>
 			<p className='mt-2 text-sm leading-5 text-[var(--ink-2)] sm:min-h-20 sm:pr-4 lg:pr-8'>{card.description}</p>
-			<div className='mt-8 flex flex-col gap-2 border-t border-[var(--rule-soft)] pt-4 font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--ink-3)] sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:tracking-[0.16em]'>
+			<div className='mt-auto flex flex-col gap-2 border-t border-[var(--rule-soft)] pt-4 font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--ink-3)] sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:tracking-[0.16em]'>
 				<span>{card.measure}</span>
 				<span className='hidden sm:inline'>{isOpen ? 'Source-backed' : 'In progress'}</span>
 			</div>
 		</>
 	)
 	const className =
-		'group border-b border-[var(--rule)] py-5 text-[var(--ink)] transition hover:bg-[var(--paper-2)] sm:border-r sm:p-6 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(3n)]:border-r-0'
+		'group flex min-h-72 flex-col border-b border-[var(--rule)] py-5 text-[var(--ink)] transition hover:bg-[var(--paper-2)] sm:border-r sm:p-6 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(3n)]:border-r-0'
 
 	if (isOpen) {
 		return (

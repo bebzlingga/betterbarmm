@@ -4,6 +4,17 @@ import { useEffect, useState } from 'react'
 
 const heroSlides = [
 	{
+		id: 'election',
+		eyebrow: 'Election transparency layer',
+		titleLines: ['Choose Leaders.', 'Shape Bangsamoro.'],
+		description:
+			'Explore BARMM parliamentary parties, candidates, districts, sectoral seats, developing stories, and the election calendar shaping what voters will see before Election Day.',
+		action: {
+			label: 'Open election workspace',
+			href: 'https://election.betterbarmm.com',
+		},
+	},
+	{
 		id: 'budget',
 		eyebrow: 'Budget transparency layer',
 		titleLines: ['Make public', 'money readable.'],
