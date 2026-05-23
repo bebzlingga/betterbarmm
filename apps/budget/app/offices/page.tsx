@@ -3,7 +3,6 @@ import { AllocationBar, budgetShare, exactTableCurrency, titleCase } from '../_c
 import { AutoScrollDetails } from '../_components/auto-scroll-details'
 import { BudgetFiscalYearTiles } from '../_components/budget-fiscal-year-tiles'
 import { BudgetMetricStrip } from '../_components/budget-metric-strip'
-import { BudgetPageHeader } from '../_components/budget-page-header'
 import { BudgetPageShell } from '../_components/budget-page-shell'
 import {
 	buildAgencyRows,
@@ -38,23 +37,6 @@ export default async function BudgetOfficesPage({ searchParams }: { searchParams
 				flushTop
 				hrefBasePath='/offices'
 			/>
-
-			<div className='mb-16 mt-20'>
-				<BudgetPageHeader
-					eyebrow='Special provisions'
-					title={
-						<>
-							Special provisions <span className='text-[var(--accent)]'>by office.</span>
-						</>
-					}
-					description={
-						<>
-							Special provisions appear in the GAAB when an office appropriation carries legal conditions beyond the amount itself. They specify restricted purposes, release requirements, program
-							guidelines, reporting and posting duties, geo-tagging, or other transparency controls that explain how approved funds may be used.
-						</>
-					}
-				/>
-			</div>
 
 			<BudgetMetricStrip
 				metrics={[

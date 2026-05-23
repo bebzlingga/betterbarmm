@@ -2,7 +2,6 @@ import { Download, FileJson, FileText } from 'lucide-react'
 import { statSync } from 'node:fs'
 import { join } from 'node:path'
 import { BudgetMetricStrip } from '../_components/budget-metric-strip'
-import { BudgetPageHeader } from '../_components/budget-page-header'
 import { BudgetPageShell } from '../_components/budget-page-shell'
 import { budgetDataFiles, type BudgetDataFile } from '../_lib/budget-data-files'
 import { buildAgencyRows, buildProgramRows, compactCurrency, getFullBudgetSelection } from '../_lib/budget-view-model'
@@ -37,19 +36,6 @@ export default function BudgetDataPage() {
 
 	return (
 		<BudgetPageShell activeItem='Data'>
-			<section className='mb-12 mt-10 sm:mt-16'>
-				<BudgetPageHeader
-					eyebrow='Data catalogue'
-					title={<>Files, fields, and source coverage for the BARMM budget index.</>}
-					description={
-						<>
-							The GAAB remains the best source for BARMM budget figures. This page follows the BetterGov data view: source files first, normalized fields second, and validation notes close to
-							the tables they describe.
-						</>
-					}
-				/>
-			</section>
-
 			<BudgetMetricStrip
 				metrics={[
 					{
@@ -75,7 +61,7 @@ export default function BudgetDataPage() {
 				]}
 			/>
 
-			<section className='mb-12 mt-20 sm:mt-32'>
+			<section className='-mx-6 mb-12 mt-20 border-y border-[var(--rule)] bg-[var(--paper-2)] px-6 py-8 sm:-mx-8 sm:mt-32 sm:px-8 sm:py-10'>
 				<div className='mb-6! flex flex-wrap items-end justify-between gap-4'>
 					<div>
 						<p className='eyebrow'>Source inventory</p>

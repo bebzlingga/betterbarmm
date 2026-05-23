@@ -1,5 +1,4 @@
 import { BudgetFiscalYearTiles } from "../_components/budget-fiscal-year-tiles";
-import { BudgetPageHeader } from "../_components/budget-page-header";
 import { BudgetPageShell } from "../_components/budget-page-shell";
 import { BudgetProgramBrowser } from "../_components/budget-program-browser";
 import { type BudgetSelectGroup } from "../_components/budget-select-field";
@@ -7,7 +6,6 @@ import { titleCase } from "../_components/budget-office-allocation-table";
 import {
   buildProgramRows,
   buildYearRows,
-  compactCurrency,
   getBudgetSelection,
   type BudgetSearchParams,
   type ProgramRow,
@@ -105,28 +103,6 @@ export default async function BudgetProgramsPage({
         flushTop
         hrefBasePath="/programs"
       />
-
-      <div className="mb-16 mt-20">
-        <BudgetPageHeader
-          eyebrow="Appropriation ledger"
-          title={
-            <>
-              Where{" "}
-              <span className="text-[var(--accent)]">
-                {compactCurrency(budget.total_appropriation)}
-              </span>{" "}
-              goes, by program.
-            </>
-          }
-          description={
-            <>
-              Program rows follow the GAAB source lines by office and section
-              category. Use the filters below to narrow the table, then expand a
-              row to inspect PS, MOOE, CO, and object-level distributions.
-            </>
-          }
-        />
-      </div>
 
       <BudgetProgramBrowser
         programs={programRows}

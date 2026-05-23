@@ -1,4 +1,3 @@
-import { ElectionPageHeader } from '../_components/election-page-header'
 import { ElectionShell } from '../_components/election-shell'
 import { formatDate, getElectionViewModel, labelize, type Source } from '../_lib/election-data'
 
@@ -49,7 +48,7 @@ function SourceCard({ source }: { source: Source }) {
 }
 
 export default function AboutPage() {
-	const { metadata, sources, dataQuality, stats } = getElectionViewModel()
+	const { sources, dataQuality, stats } = getElectionViewModel()
 
 	const coverage = [
 		{
@@ -99,13 +98,6 @@ export default function AboutPage() {
 
 	return (
 		<ElectionShell activeItem='about'>
-			<ElectionPageHeader
-				eyebrow='About'
-				title='Election records, organized for public understanding.'
-				description='BetterBARMM Election helps voters, journalists, researchers, and civic groups read the 2026 BARMM Parliamentary Elections through structured public records.'
-				meta={`Dataset generated ${metadata.generatedAt}`}
-			/>
-
 			<section className='border-b border-[var(--ink)] py-14 sm:py-24 lg:py-32'>
 				<div className='mx-auto max-w-7xl px-6 sm:px-8'>
 					<SectionIntro

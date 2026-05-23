@@ -1,4 +1,3 @@
-import { ElectionPageHeader } from '../_components/election-page-header'
 import { ElectionShell } from '../_components/election-shell'
 import { type DistrictCandidate, getElectionViewModel, labelize } from '../_lib/election-data'
 
@@ -44,19 +43,12 @@ function PartyListCard({ party }: { party: Party }) {
 }
 
 export default function CandidatesPage() {
-	const { districtAreas, districtCandidates, metadata, parties, sectoralGroups, stats } = getElectionViewModel()
+	const { districtAreas, districtCandidates, parties, sectoralGroups, stats } = getElectionViewModel()
 
 	const districtCandidateById = new Map(districtCandidates.map((candidate) => [candidate.candidate_id, candidate]))
 
 	return (
 		<ElectionShell activeItem='candidates'>
-			<ElectionPageHeader
-				eyebrow='Candidates'
-				title='Candidates and party lists.'
-				description='Browse the regional party-list entries, sectoral candidates, and district COC filers organized for the 2026 BARMM Parliamentary Elections.'
-				meta={metadata.electionDay}
-			/>
-
 			<section className='border-b border-[var(--ink)]'>
 				<div className='mx-auto grid max-w-7xl grid-cols-1 px-2 min-[520px]:grid-cols-2 sm:px-4 lg:grid-cols-4'>
 					<CandidateMetric

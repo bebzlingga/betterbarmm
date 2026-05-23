@@ -1,7 +1,6 @@
 import { BudgetFiscalYearTiles } from '../_components/budget-fiscal-year-tiles'
 import { BudgetMetricStrip } from '../_components/budget-metric-strip'
 import { BudgetOfficeAllocationTable } from '../_components/budget-office-allocation-table'
-import { BudgetPageHeader } from '../_components/budget-page-header'
 import { BudgetPageShell } from '../_components/budget-page-shell'
 import { BudgetSectionCategoryAllocationTable } from '../_components/budget-section-category-allocation-table'
 import {
@@ -31,17 +30,6 @@ export default async function BudgetByYearPage({ searchParams }: { searchParams:
 				selectedYear={toYear}
 				flushTop
 			/>
-
-			<div className='mb-16 mt-20'>
-				<BudgetPageHeader
-					eyebrow='Appropriation ledger'
-					title={
-						<>
-							Where <span className='text-[var(--accent)]'>{compactCurrency(budget.total_appropriation)}</span> goes, by agency and program.
-						</>
-					}
-				/>
-			</div>
 
 			<BudgetMetricStrip
 				metrics={[

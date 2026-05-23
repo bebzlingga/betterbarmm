@@ -1,3 +1,4 @@
+import { Building2, Database, HandHelping, HardHat, Landmark, Map as MapIcon, ScrollText, Vote } from 'lucide-react'
 import { HomeHeroSlider } from './_components/home-hero-slider'
 import { SiteHeader } from './_components/site-header'
 
@@ -9,15 +10,16 @@ const portalCards = [
 		href: '/budget/data',
 		measure: 'PDFs and JSON',
 		status: 'Soon',
+		icon: Database,
 	},
 	{
 		label: 'Election',
 		title: 'A Better Bangsamoro Begins With Your Vote',
-		description:
-			'Explore BARMM parliamentary parties, candidates, districts, sectoral seats, developing stories, and source-backed election records.',
+		description: 'Explore BARMM parliamentary parties, candidates, districts, sectoral seats, developing stories, and source-backed election records.',
 		href: 'https://election.betterbarmm.com',
 		measure: '2026 Parliamentary Elections',
 		status: 'Open',
+		icon: Vote,
 	},
 	{
 		label: 'Budget',
@@ -26,6 +28,7 @@ const portalCards = [
 		href: 'https://budget.betterbarmm.com',
 		measure: 'GAAB FY 2020-2026',
 		status: 'Open',
+		icon: Landmark,
 	},
 	{
 		label: 'Bills',
@@ -34,6 +37,7 @@ const portalCards = [
 		href: 'https://bills.betterbarmm.com',
 		measure: 'Legislative records',
 		status: 'Open',
+		icon: ScrollText,
 	},
 	{
 		label: 'Infra',
@@ -42,6 +46,7 @@ const portalCards = [
 		href: '/infra',
 		measure: 'Infrastructure tracker',
 		status: 'Soon',
+		icon: HardHat,
 	},
 	{
 		label: 'Governance',
@@ -50,6 +55,7 @@ const portalCards = [
 		href: '/governance',
 		measure: 'LGU directory',
 		status: 'Soon',
+		icon: Building2,
 	},
 	{
 		label: 'Services',
@@ -58,6 +64,7 @@ const portalCards = [
 		href: '/services',
 		measure: 'Service finder',
 		status: 'Soon',
+		icon: HandHelping,
 	},
 	{
 		label: 'Places',
@@ -66,6 +73,7 @@ const portalCards = [
 		href: '/places',
 		measure: 'Tourism guide',
 		status: 'Soon',
+		icon: MapIcon,
 	},
 ]
 
@@ -116,6 +124,7 @@ export default function HomePage() {
 
 function WorkspaceCard({ card, index }: { card: (typeof portalCards)[number]; index: number }) {
 	const isOpen = card.status === 'Open'
+	const Icon = card.icon
 	const content = (
 		<>
 			<div className='flex items-center justify-between gap-4'>
@@ -131,7 +140,14 @@ function WorkspaceCard({ card, index }: { card: (typeof portalCards)[number]; in
 					{card.status}
 				</span>
 			</div>
-			<h3 className='mt-4 text-2xl font-extrabold tracking-[-0.02em]'>{card.title}</h3>
+			<div className='mt-4 text-[var(--accent)] transition group-hover:text-[var(--ink)]'>
+				<Icon
+					className='size-10 sm:size-12'
+					strokeWidth={1.2}
+					aria-hidden='true'
+				/>
+			</div>
+			<h3 className='mt-5 text-xl font-extrabold leading-tight tracking-[-0.02em]'>{card.title}</h3>
 			<p className='mt-2 text-sm leading-5 text-[var(--ink-2)] sm:min-h-20 sm:pr-4 lg:pr-8'>{card.description}</p>
 			<div className='mt-auto flex flex-col gap-2 border-t border-[var(--rule-soft)] pt-4 font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--ink-3)] sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:tracking-[0.16em]'>
 				<span>{card.measure}</span>

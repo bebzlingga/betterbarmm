@@ -1,4 +1,3 @@
-import { BillsPageHeader } from '../_components/bills-page-header'
 import { BillsShell } from '../_components/bills-shell'
 import { getBillsViewModel } from '../_lib/bills-data'
 
@@ -30,13 +29,6 @@ export default function BillsMethodologyPage() {
 
 	return (
 		<BillsShell activeItem='methodology'>
-			<BillsPageHeader
-				eyebrow='Methodology'
-				title='How the legislative ledger is assembled.'
-				description='This page explains how the bills workspace turns official BAA listings, source links, and reviewed PDFs into searchable public records.'
-				meta={metadata.coverage}
-			/>
-
 			<section className='mx-auto max-w-7xl px-6 py-14 sm:px-8 sm:py-20 lg:py-32'>
 				<div className='grid gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:gap-24'>
 					<div>

@@ -1,5 +1,4 @@
 import { BudgetMetricStrip } from '../_components/budget-metric-strip'
-import { BudgetPageHeader } from '../_components/budget-page-header'
 import { BudgetPageShell } from '../_components/budget-page-shell'
 import { buildAgencyRows, buildProgramRows, getFullBudgetSelection, sourceFiles } from '../_lib/budget-view-model'
 
@@ -107,19 +106,6 @@ export default function BudgetMethodologyPage() {
 
 	return (
 		<BudgetPageShell activeItem='Methodology'>
-			<section className='mb-12 mt-10 sm:mt-16'>
-				<BudgetPageHeader
-					eyebrow='Methodology'
-					title={<>How the BARMM budget dictionary is assembled.</>}
-					description={
-						<>
-							Inspired by BetterGov&apos;s dictionary approach, this portal keeps the GAAB source files close to the interface while normalizing each fiscal year into comparable offices, programs,
-							section categories, and PS/MOOE/CO allocations. Totals stay tied to their source year; derived views are built from those preserved rows.
-						</>
-					}
-				/>
-			</section>
-
 			<BudgetMetricStrip
 				metrics={[
 					{
@@ -145,7 +131,7 @@ export default function BudgetMethodologyPage() {
 				]}
 			/>
 
-			<section className='my-20 sm:my-32'>
+			<section className='-mx-6 my-16 border-y border-[var(--rule)] bg-[var(--paper-2)] px-6 py-8 sm:-mx-8 sm:my-24 sm:px-8 sm:py-10'>
 				<div className='mb-12! flex flex-wrap items-end justify-between gap-4'>
 					<div>
 						<p className='eyebrow'>Processing pipeline</p>
@@ -167,7 +153,7 @@ export default function BudgetMethodologyPage() {
 				</div>
 			</section>
 
-			<section className='mb-12 mt-16 sm:mt-24'>
+			<section className='my-16 sm:my-24'>
 				<div className='mb-6! flex flex-wrap items-end justify-between gap-4'>
 					<div>
 						<p className='eyebrow'>Validation table</p>
@@ -198,7 +184,7 @@ export default function BudgetMethodologyPage() {
 				</div>
 			</section>
 
-			<section className='my-20 mb-16 sm:my-32 sm:mb-24'>
+			<section className='-mx-6 my-16 border-y border-[var(--rule)] bg-[var(--paper-2)] px-6 py-8 sm:-mx-8 sm:my-24 sm:px-8 sm:py-10'>
 				<div className='mb-6! flex flex-wrap items-end justify-between gap-4'>
 					<div>
 						<p className='eyebrow'>Definition of terms</p>

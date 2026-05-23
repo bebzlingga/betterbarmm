@@ -1,4 +1,3 @@
-import { BillsPageHeader } from '../_components/bills-page-header'
 import { BillsShell } from '../_components/bills-shell'
 import { getBillsViewModel } from '../_lib/bills-data'
 
@@ -30,13 +29,6 @@ export default function BillsDataPage() {
 
 	return (
 		<BillsShell activeItem='data'>
-			<BillsPageHeader
-				eyebrow='Data notes'
-				title='Source files before summaries.'
-				description='The bills dataset starts from official BAA listings, detail pages, Gazette links, and selected full-text PDFs. The interface keeps those source paths visible beside normalized fields.'
-				meta={`${metadata.recordCount.toLocaleString()} records`}
-			/>
-
 			<section className='mx-auto max-w-7xl px-6 py-14 sm:px-8 sm:py-20 lg:px-10 lg:py-32'>
 				<div className='max-w-4xl'>
 					<div>

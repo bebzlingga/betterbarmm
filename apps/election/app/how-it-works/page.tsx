@@ -1,4 +1,3 @@
-import { ElectionPageHeader } from '../_components/election-page-header'
 import { ElectionShell } from '../_components/election-shell'
 import { formatDate, getElectionViewModel, labelize } from '../_lib/election-data'
 
@@ -45,13 +44,6 @@ export default function HowItWorksPage() {
 
 	return (
 		<ElectionShell activeItem='how'>
-			<ElectionPageHeader
-				eyebrow='Election explainer'
-				title='How the BARMM parliamentary election works.'
-				description='A plain-language guide to the 2026 BARMM Parliamentary Elections: what voters are choosing, how the seats are structured, and which dataset fields need careful handling.'
-				meta={`${stats.totalSeats} seats / ${stats.majorityThreshold} majority`}
-			/>
-
 			<section className='border-b border-[var(--ink)] py-14 sm:pt-24 sm:pb-20 lg:pt-32'>
 				<div className='mx-auto max-w-7xl px-6 sm:px-8'>
 					<div className='max-w-4xl'>

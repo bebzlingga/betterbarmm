@@ -30,7 +30,7 @@ function SectionHeading({ eyebrow, title, description }: { eyebrow: string; titl
 		<div className='max-w-4xl'>
 			<p className='eyebrow'>{eyebrow}</p>
 			<h2 className='mt-3 text-3xl font-extrabold leading-none tracking-[-0.035em] sm:text-5xl'>{title}</h2>
-			<p className='mt-5 text-base leading-snug text-[var(--ink-2)] sm:text-lg sm:leading-8'>{description}</p>
+			<p className='mt-5 text-base! leading-snug! text-[var(--ink-2)] sm:text-lg sm:leading-8'>{description}</p>
 		</div>
 	)
 }
@@ -39,12 +39,12 @@ function PartyCard({ party }: { party: Party }) {
 	return (
 		<article className='flex min-h-full flex-col border border-[var(--rule)] bg-[var(--paper)] p-6'>
 			<div className='flex items-start justify-between gap-0'>
-				<p className='eyebrow text-[9px]'>{party.party_id}</p>
+				<p className='font-mono text-[9px] font-bold uppercase tracking-[0.16em] text-[var(--accent)]'>{party.party_id}</p>
 				<p className='font-mono text-[9px] font-bold uppercase tracking-[0.16em] text-[var(--accent)]'>Official entry</p>
 			</div>
 			<h3 className='mt-5 text-2xl font-extrabold leading-none tracking-[-0.03em]'>{party.ballot_name}</h3>
 			<p className='mt-1 text-sm font-semibold leading-snug text-[var(--ink)]'>{party.full_name}</p>
-			<p className='mt-3 line-clamp-5 text-sm leading-snug text-[var(--ink-2)]'>{party.description}</p>
+			{/* <p className='mt-3 line-clamp-5 text-sm leading-snug text-[var(--ink-2)]'>{party.description}</p> */}
 			<div className='mt-auto grid grid-cols-3 gap-px pt-5 text-center'>
 				<div className='bg-[var(--paper-2)] px-2 py-3'>
 					<p className='num text-xl font-extrabold'>{party.computedStats.sectoralCandidates}</p>
