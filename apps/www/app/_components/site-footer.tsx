@@ -7,7 +7,7 @@ export function SiteFooter() {
 						{/* <p className='eyebrow'>Transparency engine</p> */}
 						<h2 className='text-3xl font-extrabold leading-none tracking-[-0.03em] sm:text-4xl lg:pr-20'>Public information should be usable by the public.</h2>
 					</div>
-					<p className='mt-6 max-w-3xl text-sm leading-6 text-[var(--ink-2)] sm:text-base sm:leading-7 lg:mt-0 lg:pl-12'>
+					<p className='mt-6 max-w-3xl text-sm! leading-snug! text-[var(--ink-2)] sm:text-base sm:leading-7 lg:mt-0 lg:pl-12'>
 						BetterBARMM exists to make Bangsamoro public information more readable, traceable, and useful. We organize records with source links, context, searchable access, and long-term memory so
 						citizens, journalists, researchers, and public servants can see how decisions move from documents into real life. Inspired by{' '}
 						<a
