@@ -1,6 +1,9 @@
+import { BankIcon, ClockCounterClockwiseIcon, MosqueIcon, UsersThreeIcon } from '@phosphor-icons/react/ssr'
 import { SiteHeader } from '../_components/site-header'
 import { discoverBarmmTopics, type DiscoverBarmmDetailCard, type DiscoverBarmmPeopleGroup } from '../_components/discover-barmm-data'
 import { DiscoverHashScroll } from '../_components/discover-hash-scroll'
+
+const discoverTopicIcons = [ClockCounterClockwiseIcon, BankIcon, UsersThreeIcon, MosqueIcon] as const
 
 const historyMilestones = [
 	{
@@ -35,9 +38,9 @@ export default function DiscoverBarmmPage() {
 					<div className='absolute left-0 top-0 h-full w-full bg-[linear-gradient(to_right,var(--rule-soft)_1px,transparent_1px),linear-gradient(to_bottom,var(--rule-soft)_1px,transparent_1px)] bg-[size:72px_72px] sm:bg-[size:96px_96px]' />
 				</div>
 
-				<div className='relative mx-auto max-w-7xl px-8 py-16 sm:py-20 lg:py-32'>
+				<div className='relative mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-20 lg:py-32'>
 					<p className='eyebrow'>Bangsamoro primer</p>
-					<h1 className='mt-4 max-w-6xl text-5xl font-extrabold leading-[0.92] tracking-[-0.04em] sm:mt-5 sm:text-7xl md:text-8xl lg:text-[8.5rem] xl:text-[9rem]'>The Story of Bangsamoro.</h1>
+					<h1 className='mt-4 max-w-6xl text-4xl font-extrabold leading-[0.92] tracking-[-0.035em] min-[380px]:text-5xl sm:mt-5 sm:text-7xl sm:tracking-[-0.04em] md:text-8xl lg:text-[8.5rem] xl:text-[9rem]'>The Story of Bangsamoro.</h1>
 					<p className='mt-6 max-w-3xl text-base leading-6 text-[var(--ink-2)] sm:mt-8 sm:text-lg sm:leading-7 lg:text-xl lg:leading-snug'>
 						Start with the region: its history, cultures, institutions, and places. This is a growing, source-backed public guide for readers who want context before reading budgets, bills, and source
 						records.
@@ -45,23 +48,34 @@ export default function DiscoverBarmmPage() {
 				</div>
 			</section>
 
-			<section className='mx-auto max-w-7xl px-8 py-16 sm:py-20 lg:py-24'>
+			<section className='mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-20 lg:py-24'>
 				<div className='grid border-y border-[var(--ink)] sm:grid-cols-2 lg:grid-cols-4'>
-					{discoverBarmmTopics.map((topic, index) => (
-						<a
-							key={topic.slug}
-							href={`#${topic.slug}`}
-							className='group border-b border-[var(--rule)] py-6 text-[var(--ink)] transition hover:bg-[var(--paper-2)] last:border-b-0 sm:border-r sm:px-6 sm:py-8 sm:[&:nth-child(2n)]:border-r-0 sm:[&:nth-last-child(-n+2)]:border-b-0 lg:border-b-0 lg:px-6 lg:py-10 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0'
-						>
-							<div className='flex items-center justify-between gap-4'>
-								<p className='eyebrow'>
-									0{index + 1} / {topic.label}
-								</p>
-							</div>
-							<h2 className='mt-5 text-2xl font-extrabold tracking-[-0.02em]'>{topic.navTitle ?? topic.title}</h2>
-							<p className='mt-3 text-sm leading-snug text-[var(--ink-2)]'>{topic.description}</p>
-						</a>
-					))}
+					{discoverBarmmTopics.map((topic, index) => {
+						const Icon = discoverTopicIcons[index]
+
+						return (
+							<a
+								key={topic.slug}
+								href={`#${topic.slug}`}
+								className='group border-b border-[var(--rule)] py-6 text-[var(--ink)] transition hover:bg-[var(--paper-2)] last:border-b-0 sm:border-r sm:px-6 sm:py-8 sm:[&:nth-child(2n)]:border-r-0 sm:[&:nth-last-child(-n+2)]:border-b-0 lg:border-b-0 lg:px-6 lg:py-10 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0'
+							>
+								<div className='flex items-center justify-between gap-4'>
+									<p className='eyebrow'>
+										0{index + 1} / {topic.label}
+									</p>
+								</div>
+								<div className='mt-8 text-[var(--accent)] transition group-hover:text-[var(--ink)]'>
+									<Icon
+										className='size-10 sm:size-12'
+										weight='duotone'
+										aria-hidden='true'
+									/>
+								</div>
+								<h2 className='mt-5 text-2xl font-extrabold tracking-[-0.02em]'>{topic.navTitle ?? topic.title}</h2>
+								<p className='mt-3 text-sm leading-snug text-[var(--ink-2)]'>{topic.description}</p>
+							</a>
+						)
+					})}
 				</div>
 			</section>
 
@@ -69,7 +83,7 @@ export default function DiscoverBarmmPage() {
 				id='history'
 				className='discover-dark-section scroll-mt-28'
 			>
-				<div className='mx-auto max-w-7xl px-8 py-20 sm:py-24 lg:py-32'>
+				<div className='mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24 lg:py-32'>
 					<div className='border-b border-[var(--rule)]'>
 						<div className='border-b border-[var(--rule)] pb-16'>
 							<p className='eyebrow'>01 / History</p>
@@ -106,7 +120,7 @@ export default function DiscoverBarmmPage() {
 							id={topic.slug}
 							className={`scroll-mt-28 ${isDarkSection ? 'discover-dark-section' : ''}`}
 						>
-							<div className={`mx-auto max-w-7xl px-8 py-20 sm:py-24 lg:py-32`}>
+							<div className={`mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24 lg:py-32`}>
 								<div className='border-b border-[var(--ink)]'>
 									<div className='border-b border-[var(--rule)] pb-10'>
 										<p className='eyebrow'>

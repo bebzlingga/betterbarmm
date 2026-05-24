@@ -90,12 +90,12 @@ export default function HomePage() {
 					<div className='absolute left-0 top-0 h-full w-full bg-[linear-gradient(to_right,var(--rule-soft)_1px,transparent_1px),linear-gradient(to_bottom,var(--rule-soft)_1px,transparent_1px)] bg-[size:72px_72px] sm:bg-[size:96px_96px]' />
 				</div>
 
-				<div className='relative mx-auto max-w-7xl px-8 py-12 sm:py-20 lg:py-32'>
+				<div className='relative mx-auto max-w-7xl px-5 py-12 sm:px-8 sm:py-20 lg:py-32'>
 					<HomeHeroSlider />
 				</div>
 			</section>
 
-			<div className='mx-auto max-w-7xl px-8 py-8'>
+			<div className='mx-auto max-w-7xl px-5 py-8 sm:px-8'>
 				<section className='pb-20 pt-14 sm:pb-24 sm:pt-20'>
 					<div className='flex flex-col items-start justify-between gap-5 border-b border-[var(--ink)] pb-10 sm:gap-6 sm:pb-16 lg:flex-row lg:items-end'>
 						<div>
@@ -156,7 +156,7 @@ function WorkspaceCard({ card, index }: { card: (typeof portalCards)[number]; in
 		</>
 	)
 	const className =
-		`group flex min-h-72 flex-col border-b border-[var(--rule)] py-5 text-[var(--ink)] transition sm:border-r sm:p-6 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(3n)]:border-r-0 ${
+		`group flex flex-col border-b border-[var(--rule)] py-5 text-[var(--ink)] transition sm:min-h-72 sm:border-r sm:p-6 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(3n)]:border-r-0 ${
 			isOpen ? 'hover:bg-[var(--paper-2)]' : 'bg-neutral-200/55 text-[var(--ink-3)]'
 		}`
 

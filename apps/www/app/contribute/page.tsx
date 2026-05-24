@@ -36,9 +36,9 @@ export default function ContributePage() {
 					<div className='absolute left-0 top-0 h-full w-full bg-[linear-gradient(to_right,var(--rule-soft)_1px,transparent_1px),linear-gradient(to_bottom,var(--rule-soft)_1px,transparent_1px)] bg-[size:72px_72px] sm:bg-[size:96px_96px]' />
 				</div>
 
-				<div className='relative mx-auto max-w-7xl px-8 py-16 sm:py-20 lg:py-32'>
+				<div className='relative mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-20 lg:py-32'>
 					<p className='eyebrow'>Contribute to BetterBARMM</p>
-					<h1 className='mt-4 max-w-6xl text-5xl font-extrabold leading-[0.92] tracking-[-0.04em] sm:mt-5 sm:text-7xl md:text-8xl lg:text-[8.5rem] xl:text-[9rem]'>Help make public records usable.</h1>
+					<h1 className='mt-4 max-w-6xl text-4xl font-extrabold leading-[0.92] tracking-[-0.035em] min-[380px]:text-5xl sm:mt-5 sm:text-7xl sm:tracking-[-0.04em] md:text-8xl lg:text-[8.5rem] xl:text-[9rem]'>Help make public records usable.</h1>
 					<p className='mt-6 max-w-3xl text-base leading-6! text-[var(--ink-2)] sm:mt-8 sm:text-lg sm:leading-7! lg:text-xl lg:leading-9!'>
 						BetterBARMM is a public transparency project. If you have source documents, corrections, local context, research notes, or skills that can make Bangsamoro public information clearer, we
 						want to hear from you.
@@ -54,7 +54,7 @@ export default function ContributePage() {
 				</div>
 			</section>
 
-			<section className='mx-auto max-w-7xl px-8 py-20 sm:py-24 lg:py-32'>
+			<section className='mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24 lg:py-32'>
 				<div className='mb-12 flex flex-wrap items-end justify-between gap-4'>
 					<div>
 						<p className='eyebrow'>Ways to help</p>
@@ -69,7 +69,7 @@ export default function ContributePage() {
 					{contributionPaths.map((item, index) => (
 						<div
 							key={item.label}
-							className='border-b border-[var(--rule)] py-5 sm:border-r sm:p-6 sm:[&:nth-child(2n)]:border-r-0 lg:border-b-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0'
+							className='border-b border-[var(--rule)] py-6 sm:border-r sm:p-6 sm:[&:nth-child(2n)]:border-r-0 lg:border-b-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0'
 						>
 							<div className='flex items-center justify-between gap-4'>
 								<p className='inline-block bg-[var(--accent)] px-2 py-1 font-mono text-[9px] font-medium uppercase tracking-[0.28em] text-white'>0{index + 1}</p>
@@ -83,7 +83,7 @@ export default function ContributePage() {
 			</section>
 
 			<section className='bg-[var(--paper-2)] py-20 sm:py-24 lg:py-32'>
-				<section className='mx-auto max-w-7xl px-8 '>
+				<section className='mx-auto max-w-7xl px-5 sm:px-8'>
 					<div className='grid gap-16 pt-10 lg:grid-cols-[minmax(18rem,0.7fr)_1fr]'>
 						<div>
 							<p className='eyebrow'>Contributor roll</p>

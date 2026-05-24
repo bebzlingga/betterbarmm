@@ -36,21 +36,29 @@ export function BudgetFooter() {
 	const fiscalYearCount = selection.toYear - selection.fromYear + 1
 
 	return (
-		<footer className='border-t border-[var(--ink)] bg-[var(--paper)] py-8 pb-4 text-[var(--ink)] sm:py-10 sm:pb-6'>
-			<div className='mx-auto max-w-7xl px-6 sm:px-8'>
-				<p className='break-words text-[10px] uppercase leading-6 tracking-[0.16em] text-[var(--ink-3)] sm:tracking-[0.32em]'>
+		<footer className='bb-footer'>
+			<div className='bb-container'>
+				<div className='bb-footer-main'>
+					<div>
+						<p className='eyebrow'>Budget transparency</p>
+						<h2 className='bb-footer-title mt-3'>Public budgets should be easy to trace.</h2>
+					</div>
+					<p className='bb-footer-copy'>
+						The BetterBARMM budget workspace organizes appropriations by fiscal year, office, program, expense class, and source-backed line item so readers can follow how public money is planned.
+					</p>
+				</div>
+
+				<p className='bb-footer-source break-words'>
 					Source: Bangsamoro Appropriations Acts · {selection.budget.act_number} · {fiscalYearCount} fiscal years · {agencyRows.length} reporting units · {programRows.length} programs ·{' '}
 					{approxCount(sourceLineItems)} source line items
 				</p>
 
-				<div className='my-8 h-px border-t border-dashed border-[var(--rule)]' />
-
-				<div className='pt-2 pb-2'>
-					<p className='max-w-4xl text-[11px] uppercase leading-7 tracking-[0.08em] text-[var(--ink-3)] sm:tracking-[0.1em]'>
+				<div className='pb-2 pt-2'>
+					<p className='bb-footer-note'>
 						<span className='font-bold text-[var(--ink)]'>AI-assisted analysis.</span> The figures, breakdowns, and editorial commentary on this site were parsed, aggregated, and drafted
 						with Codex for human review. The dataset and its interpretations may contain errors, missed classifications, or stale figures. Always verify against the official GAAB source before citing.
 					</p>
-					<div className='mt-6 flex flex-col gap-6 sm:flex-row sm:flex-wrap sm:gap-10'>
+					<div className='bb-footer-link-grid'>
 						<FooterLinkBlock
 							label='Data Source'
 							href='https://mfbm.bangsamoro.gov.ph/'
@@ -64,13 +72,14 @@ export function BudgetFooter() {
 					</div>
 				</div>
 
-				<div className='mt-8 flex flex-col items-start justify-between gap-4 border-t border-[var(--rule)] pt-4 md:flex-row md:items-center md:gap-8 md:pt-6'>
-					<p className='text-[10px] uppercase leading-6 tracking-[0.16em] text-[var(--ink-3)] sm:tracking-[0.24em]'>
+				<div className='bb-footer-bottom'>
+					<p>
 						2026{' '}
 						<a
 							href='https://betterbarmm.com'
 							target='_blank'
-							className='border-b border-[var(--accent)] font-bold tracking-[0.18em] text-[var(--ink)] hover:text-[var(--accent)]'
+							rel='noreferrer'
+							className='bb-footer-link'
 						>
 							betterbarmm.com
 						</a>
@@ -78,13 +87,14 @@ export function BudgetFooter() {
 						<a
 							href='https://bettergov.ph'
 							target='_blank'
-							className='border-b border-[var(--accent)] font-bold tracking-[0.18em] text-[var(--ink)] hover:text-[var(--accent)]'
+							rel='noreferrer'
+							className='bb-footer-link'
 						>
 							bettergov.ph
 						</a>
 					</p>
-					<p className='text-[10px] uppercase leading-6 tracking-[0.16em] text-[var(--ink-3)] sm:tracking-[0.24em] md:text-right'>
-						Last updated at <span className='font-bold tracking-[0.18em] text-[var(--ink)]'>{formatUpdatedAt(budgetGeneratedAt)}</span>
+					<p>
+						Last updated at <span className='bb-footer-strong'>{formatUpdatedAt(budgetGeneratedAt)}</span>
 					</p>
 				</div>
 			</div>
@@ -95,11 +105,12 @@ export function BudgetFooter() {
 function FooterLinkBlock({ label, href, title }: { label: string; href: string; title: string }) {
 	return (
 		<div className='min-w-0'>
-			<p className='text-[10px] uppercase tracking-[0.24em] text-[var(--ink-mute)]'>{label}</p>
+			<p className='bb-footer-link-label'>{label}</p>
 			<a
 				href={href}
 				target='_blank'
-				className='mt-1 inline-flex max-w-full items-start gap-2 border-b border-[var(--accent)] text-[10px] font-bold uppercase leading-6 tracking-[0.1em] text-[var(--ink)] hover:text-[var(--accent)] sm:tracking-[0.12em]'
+				rel='noreferrer'
+				className='bb-footer-source-link'
 			>
 				<span className='min-w-0 break-words'>{title}</span>
 				<ArrowRight

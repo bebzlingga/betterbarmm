@@ -59,11 +59,11 @@ export function HomeHeroSlider() {
 						className={`home-hero-copy ${isActive ? 'home-hero-copy--active' : ''}`}
 					>
 						<p className='eyebrow home-hero-kicker'>{slide.eyebrow}</p>
-						<h1 className='mt-4 max-w-6xl text-5xl font-extrabold leading-[0.92] tracking-[-0.04em] sm:mt-5 sm:text-7xl md:text-8xl lg:text-[8.5rem] xl:text-[9rem]'>
+						<h1 className='mt-4 max-w-6xl text-4xl font-extrabold leading-[0.92] tracking-[-0.035em] min-[380px]:text-5xl sm:mt-5 sm:text-7xl sm:tracking-[-0.04em] md:text-8xl lg:text-[8.5rem] xl:text-[9rem]'>
 							{slide.titleLines.map((line, lineIndex) => (
 								<span
 									key={line}
-									className='home-hero-title-line block md:whitespace-nowrap'
+									className='home-hero-title-line block'
 									style={{ transitionDelay: isActive ? `${120 + lineIndex * 90}ms` : '0ms' }}
 								>
 									{line}
@@ -77,7 +77,7 @@ export function HomeHeroSlider() {
 							{slide.description}
 						</p>
 						<div
-							className='home-hero-actions mt-10 flex flex-wrap items-center gap-3 sm:mt-14 lg:mt-16'
+							className='home-hero-actions mt-8 flex flex-wrap items-center gap-3 sm:mt-14 lg:mt-16'
 							style={{ transitionDelay: isActive ? '460ms' : '0ms' }}
 						>
 							<a

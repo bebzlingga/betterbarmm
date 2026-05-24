@@ -22,14 +22,14 @@ export function RootComingSoonPage({ activeItem, eyebrow, title, description, no
 					<div className='absolute left-0 top-0 h-full w-full bg-[linear-gradient(to_right,var(--rule-soft)_1px,transparent_1px),linear-gradient(to_bottom,var(--rule-soft)_1px,transparent_1px)] bg-[size:72px_72px] sm:bg-[size:96px_96px]' />
 				</div>
 
-				<div className='relative mx-auto max-w-7xl px-8 py-16 sm:py-20 lg:py-32'>
+				<div className='relative mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-20 lg:py-32'>
 					<p className='eyebrow'>{eyebrow}</p>
-					<h1 className='mt-4 max-w-6xl text-5xl font-extrabold leading-[0.92] tracking-[-0.04em] sm:mt-5 sm:text-7xl md:text-8xl lg:text-[8.5rem] xl:text-[9rem]'>{title}</h1>
+					<h1 className='mt-4 max-w-6xl text-4xl font-extrabold leading-[0.92] tracking-[-0.035em] min-[380px]:text-5xl sm:mt-5 sm:text-7xl sm:tracking-[-0.04em] md:text-8xl lg:text-[8.5rem] xl:text-[9rem]'>{title}</h1>
 					<p className='mt-6 max-w-3xl text-base leading-6! text-[var(--ink-2)] sm:mt-8 sm:text-lg sm:leading-7! lg:text-xl lg:leading-9!'>{description}</p>
 				</div>
 			</section>
 
-			<section className='mx-auto max-w-7xl px-8 py-20 sm:py-24 lg:py-32'>
+			<section className='mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24 lg:py-32'>
 				<div className='grid border-y border-[var(--ink)] sm:grid-cols-2 lg:grid-cols-3'>
 					{notes.map((note, index) => (
 						<div

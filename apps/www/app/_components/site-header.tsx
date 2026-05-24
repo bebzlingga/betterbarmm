@@ -47,7 +47,7 @@ export function SiteHeader({ activeItem }: SiteHeaderProps) {
 
 	return (
 		<header className='sticky top-0 z-20 border-b border-[var(--ink)] bg-[var(--paper)]'>
-			<div className='mx-auto max-w-7xl px-8 pb-3 pt-2'>
+			<div className='mx-auto max-w-7xl px-5 pb-3 pt-2 sm:px-8'>
 				<div className='mb-3 hidden border-b border-[var(--rule-soft)] pb-2 font-mono text-[10px] font-semibold uppercase leading-5 tracking-[0.18em] text-[var(--ink-3)] sm:flex sm:items-center sm:justify-between sm:gap-4'>
 					<a
 						href='https://betterbarmm.com'
@@ -55,12 +55,22 @@ export function SiteHeader({ activeItem }: SiteHeaderProps) {
 					>
 						betterbarmm.com
 					</a>
-					<a
-						href='mailto:support@betterbarmm.com'
-						className='w-fit transition hover:text-[var(--accent)]'
-					>
-						support@betterbarmm.com
-					</a>
+					<div className='flex items-center gap-5'>
+						<a
+							href='https://www.facebook.com/betterbarmm'
+							target='_blank'
+							rel='noreferrer'
+							className='w-fit transition hover:text-[var(--accent)]'
+						>
+							Facebook
+						</a>
+						<a
+							href='mailto:support@betterbarmm.com'
+							className='w-fit transition hover:text-[var(--accent)]'
+						>
+							support@betterbarmm.com
+						</a>
+					</div>
 				</div>
 
 				<div className='flex items-center justify-between gap-4 py-2'>

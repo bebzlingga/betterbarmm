@@ -4,9 +4,14 @@ import { SiteFooter } from "./_components/site-footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "BetterBARMM",
+  title: "BetterBARMM | Better Transparency. Better Governance.",
   description:
     "Official BetterBARMM landing site for government transparency and citizen services.",
+  icons: {
+    icon: [{ url: "/images/logo-ico.png", type: "image/png" }],
+    shortcut: [{ url: "/images/logo-ico.png", type: "image/png" }],
+    apple: [{ url: "/images/logo-ico.png", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({
