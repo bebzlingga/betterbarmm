@@ -13,27 +13,6 @@ const heroSlides = [
 			href: 'https://election.betterbarmm.com',
 		},
 	},
-	{
-		id: 'budget',
-		eyebrow: 'Budget transparency layer',
-		titleLines: ['Make public', 'money readable.'],
-		description:
-			'BetterBARMM turns appropriations, offices, programs, and source documents into civic infrastructure: searchable, traceable, and built for anyone who wants to follow how public money moves.',
-		action: {
-			label: 'Open budget portal',
-			href: 'https://budget.betterbarmm.com',
-		},
-	},
-	{
-		id: 'bills',
-		eyebrow: 'Legislative transparency layer',
-		titleLines: ['Bangsamoro Laws,', 'Simplified.'],
-		description: 'Track proposed measures, authors, committees, readings, and legislative movement as public records mature into laws, policies, and public accountability.',
-		action: {
-			label: 'Track public bills',
-			href: 'https://bills.betterbarmm.com',
-		},
-	},
 ]
 
 export function HomeHeroSlider() {
@@ -58,8 +37,8 @@ export function HomeHeroSlider() {
 						aria-hidden={!isActive}
 						className={`home-hero-copy ${isActive ? 'home-hero-copy--active' : ''}`}
 					>
-						<p className='eyebrow home-hero-kicker'>{slide.eyebrow}</p>
-						<h1 className='mt-4 max-w-6xl text-4xl font-extrabold leading-[0.92] tracking-[-0.035em] min-[380px]:text-5xl sm:mt-5 sm:text-7xl sm:tracking-[-0.04em] md:text-8xl lg:text-[8.5rem] xl:text-[9rem]'>
+						<p className='eyebrow home-hero-kicker text-[var(--accent-soft)]!'>{slide.eyebrow}</p>
+						<h1 className='mt-4 max-w-5xl text-4xl font-black leading-[0.94] tracking-[-0.035em] min-[380px]:text-5xl sm:mt-5 sm:text-6xl sm:tracking-[-0.04em] md:text-7xl lg:text-[5.5rem] xl:text-[6rem]'>
 							{slide.titleLines.map((line, lineIndex) => (
 								<span
 									key={line}
@@ -71,7 +50,7 @@ export function HomeHeroSlider() {
 							))}
 						</h1>
 						<p
-							className='home-hero-description mt-6 max-w-3xl text-xl! leading-tight! text-[var(--ink-2)] sm:mt-7 sm:text-lg sm:leading-6! lg:text-xl lg:leading-8!'
+							className='home-hero-description mt-6 max-w-3xl text-xl! leading-tight! text-white/80 sm:mt-7 sm:text-lg sm:leading-6! lg:text-xl lg:leading-8!'
 							style={{ transitionDelay: isActive ? '340ms' : '0ms' }}
 						>
 							{slide.description}
@@ -82,7 +61,7 @@ export function HomeHeroSlider() {
 						>
 							<a
 								href={slide.action.href}
-								className='inline-flex w-full justify-center border border-[var(--ink)] bg-[var(--ink)] px-5 py-3 text-center font-mono text-[10px] font-semibold uppercase tracking-[0.13em] text-[#16140f] transition hover:border-[var(--accent)] hover:bg-[var(--accent)] sm:w-auto sm:text-[11px] sm:tracking-[0.14em]'
+								className='inline-flex w-full justify-center border border-white px-5 py-3 text-center font-mono text-[10px] font-semibold uppercase tracking-[0.13em] text-white transition hover:bg-white hover:text-[var(--accent)] sm:w-auto sm:text-[11px] sm:tracking-[0.14em]'
 							>
 								{slide.action.label}
 							</a>

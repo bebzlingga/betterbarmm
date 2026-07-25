@@ -30,18 +30,24 @@ export default function DiscoverBarmmPage() {
 			<DiscoverHashScroll />
 			<SiteHeader activeItem='discover' />
 
-			<section className='relative overflow-hidden border-b border-[var(--ink)]'>
+			<section className='relative overflow-hidden border-b border-black/20 bg-[var(--accent)] text-white'>
 				<div
-					className='absolute inset-0 opacity-70'
+					className='pointer-events-none absolute inset-0'
 					aria-hidden='true'
 				>
-					<div className='absolute left-0 top-0 h-full w-full bg-[linear-gradient(to_right,var(--rule-soft)_1px,transparent_1px),linear-gradient(to_bottom,var(--rule-soft)_1px,transparent_1px)] bg-[size:72px_72px] sm:bg-[size:96px_96px]' />
+					<div
+						className='absolute left-0 top-0 h-full w-full bg-[linear-gradient(to_right,rgba(255,255,255,0.13)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.13)_1px,transparent_1px)] bg-[size:72px_72px] sm:bg-[size:96px_96px]'
+						style={{
+							WebkitMaskImage: 'radial-gradient(70% 75% at 72% 18%, #000 0%, rgba(0,0,0,0.35) 45%, transparent 74%)',
+							maskImage: 'radial-gradient(70% 75% at 72% 18%, #000 0%, rgba(0,0,0,0.35) 45%, transparent 74%)',
+						}}
+					/>
 				</div>
 
 				<div className='relative mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-20 lg:py-32'>
-					<p className='eyebrow'>Bangsamoro primer</p>
-					<h1 className='mt-4 max-w-6xl text-4xl font-extrabold leading-[0.92] tracking-[-0.035em] min-[380px]:text-5xl sm:mt-5 sm:text-7xl sm:tracking-[-0.04em] md:text-8xl lg:text-[8.5rem] xl:text-[9rem]'>The Story of Bangsamoro.</h1>
-					<p className='mt-6 max-w-3xl text-base leading-6 text-[var(--ink-2)] sm:mt-8 sm:text-lg sm:leading-7 lg:text-xl lg:leading-snug'>
+					<p className='eyebrow text-[var(--accent-soft)]!'>Bangsamoro primer</p>
+					<h1 className='mt-4 max-w-5xl text-4xl font-black leading-[0.94] tracking-[-0.035em] min-[380px]:text-5xl sm:mt-5 sm:text-6xl sm:tracking-[-0.04em] md:text-7xl lg:text-[5.5rem] xl:text-[6rem]'>Get to know the Bangsamoro.</h1>
+					<p className='mt-6 max-w-3xl text-base leading-6 text-white/80 sm:mt-8 sm:text-lg sm:leading-7 lg:text-xl lg:leading-snug'>
 						Start with the region: its history, cultures, institutions, and places. This is a growing, source-backed public guide for readers who want context before reading budgets, bills, and source
 						records.
 					</p>

@@ -2,92 +2,87 @@ import { BankIcon, BuildingsIcon, CheckSquareOffsetIcon, DatabaseIcon, Handshake
 import { HomeHeroSlider } from './_components/home-hero-slider'
 import { SiteHeader } from './_components/site-header'
 
-const portalCards = [
-	{
-		label: 'Data',
-		title: 'Open the source layer',
-		description: 'Browse published datasets, source documents, validation notes, and release context in one place.',
-		href: '/budget/data',
-		measure: 'PDFs and JSON',
-		status: 'Soon',
-		icon: DatabaseIcon,
-	},
-	{
-		label: 'Election',
-		title: 'A Better Bangsamoro Begins With Your Vote',
-		description: 'Explore BARMM parliamentary parties, candidates, districts, sectoral seats, developing stories, and source-backed election records.',
-		href: 'https://election.betterbarmm.com',
-		measure: '2026 Parliamentary Elections',
-		status: 'Open',
-		icon: CheckSquareOffsetIcon,
-	},
+const electionWorkspace = {
+	label: 'Election',
+	title: 'A Better Bangsamoro Begins With Your Vote',
+	description:
+		'Explore BARMM parliamentary parties, candidates, districts, sectoral seats, developing stories, and source-backed records for the 2026 Parliamentary Elections.',
+	href: 'https://election.betterbarmm.com',
+	measure: '2026 Parliamentary Elections',
+	icon: CheckSquareOffsetIcon,
+}
+
+const upcomingWorkspaces = [
 	{
 		label: 'Budget',
 		title: 'Follow the money',
 		description: 'Explore BARMM appropriations by fiscal year, office, program, and source-backed budget line.',
-		href: 'https://budget.betterbarmm.com',
 		measure: 'GAAB FY 2020-2026',
-		status: 'Open',
 		icon: BankIcon,
 	},
 	{
 		label: 'Bills',
 		title: 'Know your laws',
 		description: 'Track proposed measures, authors, committees, readings, and legislative movement as public records mature.',
-		href: 'https://bills.betterbarmm.com',
 		measure: 'Legislative records',
-		status: 'Open',
 		icon: ScrollIcon,
 	},
 	{
+		label: 'Data',
+		title: 'Open the source layer',
+		description: 'Browse published datasets, source documents, validation notes, and release context in one place.',
+		measure: 'PDFs and JSON',
+		icon: DatabaseIcon,
+	},
+	{
 		label: 'Infra',
-		title: 'Track Public Works',
+		title: 'Track public works',
 		description: 'See infrastructure development across the Bangsamoro region, from project locations to public investment trails.',
-		href: '/infra',
 		measure: 'Infrastructure tracker',
-		status: 'Soon',
 		icon: HardHatIcon,
 	},
 	{
 		label: 'Governance',
-		title: 'Map Local Government Units',
+		title: 'Map local government units',
 		description: 'Browse provinces, cities, municipalities, barangays, and local governance layers in one public directory.',
-		href: '/governance',
 		measure: 'LGU directory',
-		status: 'Soon',
 		icon: BuildingsIcon,
 	},
 	{
 		label: 'Services',
-		title: 'Find Public Services',
+		title: 'Find public services',
 		description: 'Locate public services, offices, requirements, and assistance channels as the service layer comes online.',
-		href: '/services',
 		measure: 'Service finder',
-		status: 'Soon',
 		icon: HandshakeIcon,
 	},
 	{
 		label: 'Places',
-		title: 'Discover Places',
+		title: 'Discover places',
 		description: 'Explore destinations, heritage sites, cultural landmarks, and tourism context across the Bangsamoro region.',
-		href: '/places',
 		measure: 'Tourism guide',
-		status: 'Soon',
 		icon: MapTrifoldIcon,
 	},
 ]
 
 export default function HomePage() {
+	const FeaturedIcon = electionWorkspace.icon
+
 	return (
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader />
 
-			<section className='dark-bg relative overflow-hidden border-b border-[var(--ink)]'>
+			<section className='relative overflow-hidden border-b border-black/20 bg-[var(--accent)] text-white'>
 				<div
-					className='absolute inset-0 opacity-25'
+					className='pointer-events-none absolute inset-0'
 					aria-hidden='true'
 				>
-					<div className='absolute left-0 top-0 h-full w-full bg-[linear-gradient(to_right,var(--rule-soft)_1px,transparent_1px),linear-gradient(to_bottom,var(--rule-soft)_1px,transparent_1px)] bg-[size:72px_72px] sm:bg-[size:96px_96px]' />
+					<div
+						className='absolute left-0 top-0 h-full w-full bg-[linear-gradient(to_right,rgba(255,255,255,0.13)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.13)_1px,transparent_1px)] bg-[size:72px_72px] sm:bg-[size:96px_96px]'
+						style={{
+							WebkitMaskImage: 'radial-gradient(70% 75% at 72% 18%, #000 0%, rgba(0,0,0,0.35) 45%, transparent 74%)',
+							maskImage: 'radial-gradient(70% 75% at 72% 18%, #000 0%, rgba(0,0,0,0.35) 45%, transparent 74%)',
+						}}
+					/>
 				</div>
 
 				<div className='relative mx-auto max-w-7xl px-5 py-12 sm:px-8 sm:py-20 lg:py-32'>
@@ -95,81 +90,91 @@ export default function HomePage() {
 				</div>
 			</section>
 
-			<div className='mx-auto max-w-7xl px-5 py-8 sm:px-8'>
-				<section className='pb-20 pt-14 sm:pb-24 sm:pt-20'>
-					<div className='flex flex-col items-start justify-between gap-5 border-b border-[var(--ink)] pb-10 sm:gap-6 sm:pb-16 lg:flex-row lg:items-end'>
+			<section className='border-b border-[var(--ink)]'>
+				<div className='mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-20 lg:py-24'>
+					<div className='flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end sm:gap-8'>
 						<div>
-							<p className='eyebrow'>Public workspaces</p>
-							<h2 className='mt-3 max-w-3xl text-3xl font-extrabold leading-none tracking-[-0.03em] sm:text-5xl lg:text-6xl'>Start with the records.</h2>
+							<p className='eyebrow'>Live now</p>
+							<h2 className='mt-3 max-w-2xl text-3xl font-extrabold leading-none tracking-[-0.03em] sm:text-5xl'>Start with the election.</h2>
 						</div>
-						<p className='max-w-xl text-sm leading-6 text-[var(--ink-3)] sm:text-base'>
-							Each workspace is designed around the same promise: show the public record, explain the method, and keep the trail visible.
+						<p className='max-w-sm text-sm leading-6 text-[var(--ink-3)] sm:text-right sm:text-base'>
+							The first BetterBARMM workspace is live. Everything in it traces back to a public record.
+						</p>
+					</div>
+
+					<a
+						href={electionWorkspace.href}
+						className='group mt-8 flex flex-col gap-8 border border-[var(--ink)] bg-[var(--paper)] p-6 transition hover:bg-[var(--paper-2)] sm:mt-10 sm:p-10 lg:flex-row lg:items-center lg:justify-between lg:gap-16 lg:p-12'
+					>
+						<div className='max-w-2xl'>
+							<div className='flex flex-wrap items-center gap-3'>
+								<span className='inline-flex items-center bg-[var(--accent)] px-2 py-1 font-mono text-[9px] font-bold uppercase leading-none tracking-[0.16em] text-white'>Open</span>
+								<p className='eyebrow'>01 / {electionWorkspace.label}</p>
+							</div>
+							<div className='mt-6 text-[var(--accent)]'>
+								<FeaturedIcon
+									className='size-12 sm:size-14'
+									weight='duotone'
+									aria-hidden='true'
+								/>
+							</div>
+							<h3 className='mt-6 text-3xl font-extrabold leading-none tracking-[-0.03em] sm:text-4xl lg:text-5xl'>{electionWorkspace.title}</h3>
+							<p className='mt-4 max-w-xl text-base leading-6 text-[var(--ink-2)] sm:text-lg sm:leading-7'>{electionWorkspace.description}</p>
+							<div className='mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+								<span>{electionWorkspace.measure}</span>
+								<span>Source-backed</span>
+							</div>
+						</div>
+						<span className='inline-flex w-full shrink-0 items-center justify-center border border-[var(--ink)] bg-[var(--ink)] px-5 py-3 font-mono text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--paper)] transition group-hover:border-[var(--accent)] group-hover:bg-[var(--accent)] sm:w-auto'>
+							Open workspace →
+						</span>
+					</a>
+				</div>
+			</section>
+
+			<section>
+				<div className='mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-20 lg:py-24'>
+					<div className='flex flex-col items-start justify-between gap-4 border-b border-[var(--ink)] pb-8 sm:flex-row sm:items-end sm:gap-8 sm:pb-10'>
+						<div>
+							<p className='eyebrow'>Coming soon</p>
+							<h2 className='mt-3 max-w-2xl text-2xl font-extrabold leading-none tracking-[-0.03em] sm:text-4xl'>More public workspaces on the way.</h2>
+						</div>
+						<p className='max-w-sm text-sm leading-6 text-[var(--ink-3)] sm:text-right sm:text-base'>
+							Each will follow the same promise: show the public record, explain the method, and keep the trail visible.
 						</p>
 					</div>
 
 					<div className='grid sm:grid-cols-2 lg:grid-cols-3'>
-						{portalCards.map((card, index) => (
-							<WorkspaceCard
-								key={card.title}
-								card={card}
-								index={index}
-							/>
-						))}
+						{upcomingWorkspaces.map((card, index) => {
+							const Icon = card.icon
+
+							return (
+								<article
+									key={card.label}
+									className='flex min-h-full flex-col border-b border-[var(--rule)] p-5 text-[var(--ink-3)] sm:min-h-64 sm:border-r sm:p-6 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(3n)]:border-r-0'
+								>
+									<div className='flex items-center justify-between gap-4'>
+										<p className='eyebrow text-[var(--ink-3)]!'>
+											0{index + 2} / {card.label}
+										</p>
+										<span className='inline-flex items-center bg-[var(--ink-3)] px-2 py-1 font-mono text-[9px] font-bold uppercase leading-none tracking-[0.14em] text-white'>Soon</span>
+									</div>
+									<div className='mt-6 text-[var(--ink-3)]'>
+										<Icon
+											className='size-10 sm:size-12'
+											weight='duotone'
+											aria-hidden='true'
+										/>
+									</div>
+									<h3 className='mt-5 text-xl font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink-2)]'>{card.title}</h3>
+									<p className='mt-2 text-sm leading-5 sm:min-h-15 sm:pr-4'>{card.description}</p>
+									<div className='mt-auto border-t border-[var(--rule-soft)] pt-4 font-mono text-[10px] uppercase tracking-[0.14em]'>{card.measure}</div>
+								</article>
+							)
+						})}
 					</div>
-				</section>
-			</div>
+				</div>
+			</section>
 		</main>
 	)
-}
-
-function WorkspaceCard({ card, index }: { card: (typeof portalCards)[number]; index: number }) {
-	const isOpen = card.status === 'Open'
-	const Icon = card.icon
-	const content = (
-		<>
-			<div className='flex items-center justify-between gap-4'>
-				<div>
-					<p className='eyebrow'>
-						0{index + 1} / {card.label}
-					</p>
-				</div>
-
-				<span
-					className={`inline-flex h-6 items-center font-mono font-semibold uppercase leading-none tracking-[0.14em] ${isOpen ? 'text-[11px] text-[var(--accent)] group-hover:text-[var(--ink)]' : 'bg-[var(--accent)] px-2 text-[9px] text-[var(--paper)]'}`}
-				>
-					{card.status}
-				</span>
-			</div>
-			<div className='mt-4 text-[var(--accent)] transition group-hover:text-[var(--ink)]'>
-				<Icon
-					className='size-10 sm:size-12'
-					weight='duotone'
-					aria-hidden='true'
-				/>
-			</div>
-			<h3 className='mt-5 text-xl font-extrabold leading-tight tracking-[-0.02em]'>{card.title}</h3>
-			<p className='mt-2 text-sm leading-5 text-[var(--ink-2)] sm:min-h-20 sm:pr-4 lg:pr-8'>{card.description}</p>
-			<div className='mt-auto flex flex-col gap-2 border-t border-[var(--rule-soft)] pt-4 font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--ink-3)] sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:tracking-[0.16em]'>
-				<span>{card.measure}</span>
-				<span className='hidden sm:inline'>{isOpen ? 'Source-backed' : 'In progress'}</span>
-			</div>
-		</>
-	)
-	const className =
-		`group flex flex-col border-b border-[var(--rule)] py-5 text-[var(--ink)] transition sm:min-h-72 sm:border-r sm:p-6 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(3n)]:border-r-0 ${
-			isOpen ? 'hover:bg-[var(--paper-2)]' : 'bg-neutral-200/55 text-[var(--ink-3)]'
-		}`
-
-	if (isOpen) {
-		return (
-			<a
-				href={card.href}
-				className={className}
-			>
-				{content}
-			</a>
-		)
-	}
-
-	return <article className={className}>{content}</article>
 }

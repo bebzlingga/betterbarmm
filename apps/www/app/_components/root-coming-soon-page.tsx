@@ -24,7 +24,7 @@ export function RootComingSoonPage({ activeItem, eyebrow, title, description, no
 
 				<div className='relative mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-20 lg:py-32'>
 					<p className='eyebrow'>{eyebrow}</p>
-					<h1 className='mt-4 max-w-6xl text-4xl font-extrabold leading-[0.92] tracking-[-0.035em] min-[380px]:text-5xl sm:mt-5 sm:text-7xl sm:tracking-[-0.04em] md:text-8xl lg:text-[8.5rem] xl:text-[9rem]'>{title}</h1>
+					<h1 className='mt-4 max-w-6xl text-4xl font-black leading-[0.92] tracking-[-0.035em] min-[380px]:text-5xl sm:mt-5 sm:text-7xl sm:tracking-[-0.04em] md:text-8xl lg:text-[8.5rem] xl:text-[9rem]'>{title}</h1>
 					<p className='mt-6 max-w-3xl text-base leading-6! text-[var(--ink-2)] sm:mt-8 sm:text-lg sm:leading-7! lg:text-xl lg:leading-9!'>{description}</p>
 				</div>
 			</section>

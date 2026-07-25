@@ -36,7 +36,7 @@ const workspaceNotes = [
 		title: 'Follow the money.',
 		description: 'The budget workspace turns appropriations into browsable fiscal years, offices, programs, expense classes, source files, and budget lines.',
 		href: 'https://budget.betterbarmm.com',
-		status: 'Open',
+		status: 'In progress',
 		icon: BankIcon,
 	},
 	{
@@ -44,7 +44,7 @@ const workspaceNotes = [
 		title: 'Know your laws.',
 		description: 'The bills workspace organizes Bangsamoro Autonomy Acts and legislative records so readers can track laws, categories, source links, and public context.',
 		href: 'https://bills.betterbarmm.com',
-		status: 'Open',
+		status: 'In progress',
 		icon: ScrollIcon,
 	},
 	{
@@ -92,20 +92,26 @@ export default function AboutPage() {
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader activeItem='about' />
 
-			<section className='relative overflow-hidden border-b border-[var(--ink)]'>
+			<section className='relative overflow-hidden border-b border-black/20 bg-[var(--accent)] text-white'>
 				<div
-					className='absolute inset-0 opacity-70'
+					className='pointer-events-none absolute inset-0'
 					aria-hidden='true'
 				>
-					<div className='absolute left-0 top-0 h-full w-full bg-[linear-gradient(to_right,var(--rule-soft)_1px,transparent_1px),linear-gradient(to_bottom,var(--rule-soft)_1px,transparent_1px)] bg-[size:72px_72px] sm:bg-[size:96px_96px]' />
+					<div
+						className='absolute left-0 top-0 h-full w-full bg-[linear-gradient(to_right,rgba(255,255,255,0.13)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.13)_1px,transparent_1px)] bg-[size:72px_72px] sm:bg-[size:96px_96px]'
+						style={{
+							WebkitMaskImage: 'radial-gradient(70% 75% at 72% 18%, #000 0%, rgba(0,0,0,0.35) 45%, transparent 74%)',
+							maskImage: 'radial-gradient(70% 75% at 72% 18%, #000 0%, rgba(0,0,0,0.35) 45%, transparent 74%)',
+						}}
+					/>
 				</div>
 
 				<div className='relative mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-20 lg:py-32'>
-					<p className='eyebrow'>About BetterBARMM</p>
-					<h1 className='mt-4 max-w-5xl text-4xl font-extrabold leading-[0.95] tracking-[-0.035em] min-[380px]:text-5xl sm:mt-5 sm:text-6xl sm:tracking-[-0.04em] md:text-7xl lg:text-[5.75rem] xl:text-[6.75rem]'>
+					<p className='eyebrow text-[var(--accent-soft)]!'>About BetterBARMM</p>
+					<h1 className='mt-4 max-w-5xl text-4xl font-black leading-[0.95] tracking-[-0.035em] min-[380px]:text-5xl sm:mt-5 sm:text-6xl sm:tracking-[-0.04em] md:text-7xl lg:text-[5.5rem] xl:text-[6rem]'>
 						Better transparency. Better governance.
 					</h1>
-					<p className='mt-6 max-w-3xl text-base leading-6 text-[var(--ink-2)] sm:mt-8 sm:text-lg sm:leading-7 lg:text-xl lg:leading-snug'>
+					<p className='mt-6 max-w-3xl text-base leading-6 text-white/80 sm:mt-8 sm:text-lg sm:leading-7 lg:text-xl lg:leading-snug'>
 						BetterBARMM is a public information project for the Bangsamoro. It organizes records, explains methods, and keeps source trails visible so people can understand how public decisions move
 						through elections, budgets, laws, offices, and services.
 					</p>
@@ -113,7 +119,7 @@ export default function AboutPage() {
 			</section>
 
 			<section className='mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24 lg:py-32'>
-				<div className='grid gap-10 border-b border-[var(--ink)] pb-12 lg:grid-cols-2 lg:gap-16'>
+				<div className='grid gap-6 border-b border-[var(--ink)] pb-12 lg:grid-cols-2 lg:gap-16'>
 					<div>
 						<p className='eyebrow'>Why it exists</p>
 						<h2 className='mt-4 max-w-3xl text-3xl font-extrabold leading-none tracking-[-0.03em] min-[380px]:text-4xl sm:text-5xl lg:text-5xl xl:text-6xl'>
@@ -160,7 +166,7 @@ export default function AboutPage() {
 
 			<section className='discover-dark-section'>
 				<div className='mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24 lg:py-32'>
-					<div className='grid gap-10 border-b border-[var(--rule)] pb-12 lg:grid-cols-2 lg:gap-16'>
+					<div className='grid gap-6 border-b border-[var(--rule)] pb-12 lg:grid-cols-2 lg:gap-16'>
 						<div>
 							<p className='eyebrow'>What it is</p>
 							<h2 className='mt-4 max-w-3xl text-3xl font-extrabold leading-none tracking-[-0.03em] min-[380px]:text-4xl sm:text-5xl lg:text-5xl xl:text-6xl'>
@@ -231,7 +237,7 @@ export default function AboutPage() {
 			</section>
 
 			<section className='mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24 lg:py-32'>
-				<div className='grid gap-10 border-b border-[var(--rule)] pb-12 lg:grid-cols-2 lg:gap-16'>
+				<div className='grid gap-6 border-b border-[var(--rule)] pb-12 lg:grid-cols-2 lg:gap-16'>
 					<div>
 						<p className='eyebrow'>How to use it</p>
 						<h2 className='mt-4 max-w-3xl text-3xl font-extrabold leading-none tracking-[-0.03em] min-[380px]:text-4xl sm:text-5xl lg:text-5xl xl:text-6xl'>
@@ -259,7 +265,7 @@ export default function AboutPage() {
 
 			<section className='bg-[var(--paper-2)]'>
 				<div className='mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24 lg:py-32'>
-					<div className='grid gap-10 border-b border-[var(--ink)] pb-20 lg:grid-cols-2 lg:gap-16'>
+					<div className='grid gap-6 border-b border-[var(--ink)] pb-20 lg:grid-cols-2 lg:gap-16'>
 						<div>
 							<p className='eyebrow'>Who it serves</p>
 							<h2 className='mt-4 max-w-3xl text-3xl font-extrabold leading-none tracking-[-0.03em] min-[380px]:text-4xl sm:text-5xl lg:text-5xl xl:text-6xl'>A shared memory for public work.</h2>

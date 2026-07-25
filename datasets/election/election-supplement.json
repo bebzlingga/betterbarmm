@@ -1,0 +1,522 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-07-17T00:00:00+08:00",
+  "note": "Supplementary, researched background context for the 2026 BARMM Parliamentary Elections. Every item is individually sourced and confidence-rated. This is secondary reference material and does NOT override the official COMELEC records in election.min.json. Party backgrounds are keyed by the party_id used in election.min.json.",
+  "party_backgrounds": {
+    "UBJP": {
+      "background": "The United Bangsamoro Justice Party (UBJP) is the political party of the Moro Islamic Liberation Front (MILF), organized by the MILF in 2014 and registered with the Commission on Elections (COMELEC) in May 2015 as its electoral vehicle. It is led by MILF chairman Ahod 'Al Haj Murad' Ebrahim, who served as the first interim chief minister of the MILF-led Bangsamoro Transition Authority from February 2019 to March 2025. COMELEC accredited UBJP as a regional parliamentary party in May 2026 over objections citing its MILF ties, then named it the 2026 election's 'dominant majority party' after it topped the poll body's ranking with 93.14 points for fielding the most candidates and maintaining one of the region's broadest organizational networks. Ebrahim heads the party as it contests the first regular BARMM parliamentary election set for September 14, 2026.",
+      "leaders": [
+        "Ahod 'Al-Haj Murad' Ebrahim (president / MILF chairman)",
+        "Mohagher Iqbal (vice president)",
+        "Ali Solaiman"
+      ],
+      "affiliation": "Moro Islamic Liberation Front (MILF); COMELEC-designated dominant majority party",
+      "source_url": "https://www.manilatimes.net/2026/07/09/news/national/comelec-picks-dominant-parties-in-barmm-polls/2381060",
+      "source_date": "2026-07-09",
+      "confidence": "high"
+    },
+    "BGC": {
+      "background": "The BARMM Grand Coalition (BGC) is a political alliance in the Bangsamoro Autonomous Region in Muslim Mindanao, formally launched on April 29, 2024 at Sarimanok Stadium in Marawi before a reported crowd of about 20,000. Built around traditional politicians and political families, it positions itself as an 'inclusive' alternative to the incumbent Moro Islamic Liberation Front-led regional government. Its member parties include the Bangsamoro People's Party of Basilan Representative Mujiv Hataman, Serbisyong Inklusibo–Alyansang Progresibo (SIAP) of Lanao del Sur Governor Mamintal 'Bombit' Adiong Jr., Al-Ittihad–UKB associated with Suharto 'Teng' Mangudadatu, and the Salaam party of Sulu Governor Sakur Tan, whom the coalition endorsed for Chief Minister. Accredited as a regional parliamentary political party, the BGC is contesting the Bangsamoro Parliament elections, which were postponed from 2025 to 2026.",
+      "leaders": [
+        "Mujiv Hataman (BPP)",
+        "Mamintal 'Bombit' Adiong Jr. (SIAP)",
+        "Suharto 'Teng' Mangudadatu (Al-Ittihad-UKB)"
+      ],
+      "affiliation": "Multi-party coalition (BPP, SIAP, Al-Ittihad-UKB); opposition to the MILF-led government",
+      "source_url": "https://en.wikipedia.org/wiki/BARMM_Grand_Coalition",
+      "source_date": "2026-07-17",
+      "confidence": "high"
+    },
+    "BAPA": {
+      "background": "The Bangsamoro Party (BAPA) is a BARMM regional party affiliated with the Muslimin Sema-led faction of the Moro National Liberation Front (MNLF), which since its 1996 peace agreement with Manila has split into rival wings. Launched on January 8, 2022 and tied to the MNLF's Executive Council of 15 (EC-15), it was billed as the first political party in the front's history. It is led by veteran MNLF figure Muslimin Sema, who also serves as the Bangsamoro government's labor minister and is a former Cotabato City mayor. The Commission on Elections accredited BAPA in November 2024 for the postponed May 2025 parliamentary polls, and it remains among the accredited major regional parties for the 2026 election, fielding Deputy Speaker Omar Yasser Sema — Muslimin Sema's son — as its first nominee.",
+      "leaders": [
+        "Muslimin Sema (MNLF-Sema faction)",
+        "Omar Yasser Sema (chief-minister nominee)"
+      ],
+      "affiliation": "MNLF (Sema faction)",
+      "source_url": "https://pcij.org/2024/11/05/list-barmm-regional-parties-aiming-for-parliamentary-seats-in-may-2025/",
+      "source_date": "2024-11-05",
+      "confidence": "high"
+    },
+    "MAHARDIKA": {
+      "background": "Mahardika is a Bangsamoro regional party tied to the faction of Moro National Liberation Front (MNLF) founding chairman Nur Misuari — one of two rival MNLF factions accredited to contest the region's first parliamentary elections, the other being the Muslimin Sema-led 'Council of 15' bloc. Organized by Misuari's children, it is chaired by his son Ustadz Abdulkarim Tan Misuari, an MNLF vice-chairman, with Adib Sayyadi Tan Misuari as president, MP Randolph Parcasio as secretary-general, and Misuari as founding chairman. The party first manifested its bid and petitioned the COMELEC in Cotabato City in June 2024 and met the commission's 2026 filing deadline to compete. For the 2026 polls it named Misuari's daughter, Deputy Social Services Minister Nur-Ainee Tan Lim, as its number-one nominee, while incumbent MP and women's-sector leader Tarhata Maglangit is among its prominent nominees.",
+      "leaders": [
+        "Nur Misuari (MNLF founding chairman, associated)",
+        "Tarhata Maglangit (chief-minister nominee)"
+      ],
+      "affiliation": "MNLF (Misuari faction)",
+      "source_url": "https://www.inquirer.net/472083/new-parties-emerge-for-historic-barmm-elections/",
+      "source_date": "2026-04-08",
+      "confidence": "high"
+    },
+    "BFP": {
+      "background": "The Bangsamoro Federalist Party (BFP) is a newly formed regional party contesting BARMM's first parliamentary elections, having held its inaugural general assembly and party convention on April 2, 2026 in Davao City. It describes itself as 'a unifying force representing a broad coalition of stakeholders', is chaired and led as president by Member of Parliament Tomanda Antok, with fellow Member of Parliament and lawyer Naguib Sinarimbo as its spokesperson. The party filed for registration with the Bangsamoro Electoral Office to contest the September 14, 2026 polls and claims the backing of most municipal mayors across several BARMM provinces. In July 2026 the Commission on Elections, through Resolution No. 11248, designated the BFP the 'dominant minority' regional parliamentary party after it scored 88.25 points, second to the United Bangsamoro Justice Party's 93.14.",
+      "leaders": [
+        "Naguib Sinarimbo (spokesperson, MP)"
+      ],
+      "affiliation": "New regional party; COMELEC-designated dominant minority party",
+      "source_url": "https://www.inquirer.net/472083/new-parties-emerge-for-historic-barmm-elections/",
+      "source_date": "2026-04-08",
+      "confidence": "medium"
+    },
+    "BEST": {
+      "background": "The Bangsamoro Empowerment and Social Transformation Party (BEST) is a regional parliamentary party contesting the first Bangsamoro Parliament election in the Bangsamoro Autonomous Region in Muslim Mindanao. It is led by president Al-Rashid Balt, who concurrently serves as director general of the Bangsamoro Ministry of Public Order and Safety and heads the party's slate as its top nominee. The Commission on Elections accredited BEST as one of nine 'major' regional parliamentary parties, a tier below the designated dominant majority (United Bangsamoro Justice Party) and dominant minority (Bangsamoro Federalist Party). It contests both proportional-representation and single-district seats with a full slate of 40 party-list nominees, and registered the highest number of women of any party — 19 female nominees, nearly half its slate.",
+      "leaders": [
+        "Al-Rashid Balt (president)"
+      ],
+      "affiliation": "Regional parliamentary party",
+      "source_url": "https://www.rappler.com/philippines/mindanao/g84892248-bangsamoro-empowerment-social-transformation-party/",
+      "source_date": "2026-07-17",
+      "confidence": "medium"
+    },
+    "ABOT": {
+      "background": "The Alliance of Bangsamoro Tri-People's Party (ABOT) is a regional parliamentary party contesting the first Bangsamoro Parliament election, set for September 14, 2026. It was among 13 regional parties that filed petitions for registration and accreditation with the Commission on Elections, which approved ABOT's bid. As its name signals, the party adopts a 'tri-people' framing invoking the region's three communities: Moro, Christian settlers, and non-Moro Indigenous (Lumad) peoples. Its party president is Samsodin C. Amella, who filed the party's petition and its manifestation of intent to participate. Contesting only the proportional-representation (party) seats rather than district or reserved contests, ABOT fielded 40 party nominees, 15 of them women.",
+      "leaders": [
+        "Samsodin C. Amella (president)"
+      ],
+      "affiliation": "Regional parliamentary party",
+      "source_url": "https://www.rappler.com/philippines/government/g37461061-alliance-bangsamoro-tri-peoples-party/",
+      "source_date": "2026-07-17",
+      "confidence": "medium"
+    },
+    "PBB": {
+      "background": "Partido Bangon Bangsamoro (PBB) is a regional parliamentary party in the Bangsamoro Autonomous Region in Muslim Mindanao; its name invokes the Filipino word 'bangon', meaning to rise or arise. It filed a petition for registration and accreditation as a new regional parliamentary party, published in the Bangsamoro Official Gazette on April 13, 2026, and is represented by its regional president, Nashrudin Kusain. The Commission on Elections later accredited PBB as one of the region's major regional parliamentary parties for the September 14, 2026 Bangsamoro Parliament elections, while designating the United Bangsamoro Justice Party and the Bangsamoro Federalist Party as the dominant majority and minority. For the 40 proportional party-representative seats, PBB fielded a full slate of 40 nominees, 12 of them women, with Kusain heading the list.",
+      "leaders": [
+        "Nashrudin Kusain (regional president)"
+      ],
+      "affiliation": "New regional parliamentary party",
+      "source_url": "https://officialgazette.bangsamoro.gov.ph/2026/04/13/petition-for-registration-and-accreditation-of-new-political-parliamentary-political-party-partido-bangon-bangsamoro-pbb/",
+      "source_date": "2026-04-13",
+      "confidence": "medium"
+    },
+    "ISAMA": {
+      "background": "The Indigenous, Settlers, Sama and Minorities Alliance Party (ISAMA) is a regional parliamentary party in the Bangsamoro Autonomous Region in Muslim Mindanao, framed as an alliance representing non-Moro Indigenous peoples, settler communities, the Sama people and other minorities. It was organized by Jamar Kulayan, who serves as its chairperson, alongside founding figures including Nafeesur Rahman Suhod and Danny Sahi. Ahead of the 2026 election it petitioned the Commission on Elections for registration and accreditation as a regional parliamentary party and was subsequently accredited. For the party-representative contest, ISAMA fielded only a partial slate of 14 nominees against the 40-nominee maximum — three of them women, below the 30 percent benchmark set under the Bangsamoro Electoral Code — and no chief-minister nominee is identified in the official nominees listing.",
+      "leaders": [],
+      "affiliation": "Regional parliamentary party (Indigenous / settler / minorities focus)",
+      "source_url": "https://en.wikipedia.org/wiki/Nominees_in_the_2026_Bangsamoro_Parliament_election",
+      "source_date": "2026-07-17",
+      "confidence": "low"
+    },
+    "MORO_AKO": {
+      "background": "Moro Ako Party ('I Am A Moro Party') is a Marawi City-based regional political party in the Bangsamoro Autonomous Region in Muslim Mindanao, using green and gold as its colors. It presents itself as a vehicle for a younger, professional generation of Bangsamoro leaders — its nominees and members include lawyers, doctors, engineers and other professionals, along with student leaders and youth and women's organizations. The group is not entirely new to electoral politics: it previously ran nationally as 'OK Partylist' in the 2022 party-list election but won no seat. Accredited as a regional party by the Commission on Elections in 2024, it was the first regional party to formally file for the Bangsamoro parliamentary polls, submitting its documents on November 4, 2024. It contests the 2026 election in the party-representative (proportional-representation) category, led by its first nominee and chief-minister nominee, lawyer Najeeb Taib.",
+      "leaders": [
+        "Najeeb Taib (chief-minister nominee)"
+      ],
+      "affiliation": "Regional parliamentary party",
+      "source_url": "https://en.wikipedia.org/wiki/2026_Bangsamoro_Parliament_election",
+      "source_date": "2026-07-17",
+      "confidence": "low"
+    },
+    "RAAYAT": {
+      "background": "The Bangsamoro Peoples' Democratic Party, also known as the Raayat Democratic Party (abbreviated 'Raayat'), is a regional political party established on August 7, 2020 in Zamboanga City and based in Lamitan, Basilan. It campaigns under the slogan 'Partido para sa lahat ng Bangsamoro' ('Party for all of Bangsamoro'). The party is led by president Jose Lorena, who serves as one of the deputy speakers of the Bangsamoro Parliament, with Nasser Mustafa as secretary-general. As an accredited regional parliamentary party — among the 13 on the tentative list published on May 13, 2026 — it is contesting the 2026 Bangsamoro Parliament election through proportional representation with a full slate of 40 nominees, and it put forward Nadia Lorena as its chief-minister nominee.",
+      "leaders": [
+        "Nadia Lorena (chief-minister nominee)"
+      ],
+      "affiliation": "Regional parliamentary party",
+      "source_url": "https://en.wikipedia.org/wiki/2026_Bangsamoro_Parliament_election",
+      "source_date": "2026-07-17",
+      "confidence": "low"
+    },
+    "PRO_BANGSAMORO": {
+      "background": "The Progresibong Bangsamoro Party (PRO Bangsamoro; literally 'Progressive Bangsamoro Party') is a regional political party in the Bangsamoro Autonomous Region in Muslim Mindanao, accredited by the Commission on Elections to contest the 2026 Bangsamoro Parliament election. It first signalled its entry by filing a manifestation of intent in Cotabato City on November 7, 2024, ahead of the parliamentary polls. The party presents itself as an advocate for strengthening the region's political-party system, with its leadership emphasizing flexible, quick decision-making and empowering citizens to demand responsive governance. It is led by its president and first nominee, Don Mustapha Loong, an engineer who has served as a Member of Parliament in the interim Bangsamoro Transition Authority since 2019 and is the party's chief-minister nominee. For 2026 it fielded a full slate of 40 party-representative nominees, with Loong topping the list.",
+      "leaders": [
+        "Don Mustapha Loong (chief-minister nominee)"
+      ],
+      "affiliation": "Regional parliamentary party",
+      "source_url": "https://en.wikipedia.org/wiki/2026_Bangsamoro_Parliament_election",
+      "source_date": "2026-07-17",
+      "confidence": "low"
+    },
+    "MUSHAWARA": {
+      "background": "The People's Consultative (Mushawara) Party is one of the accredited regional parliamentary parties contesting the September 14, 2026 Bangsamoro Parliament election, the region's first regular parliamentary polls. Its registered English name, 'People's Consultative Party', reflects the idea of consultation carried by the Arabic-derived term 'mushawara'. The party competes only in the proportional-representation contest for the 40 party-representative seats, fielding a full slate of 40 nominees headed by Alipikre Basher, 13 of them women. Its path to the ballot was uneven: the Commission on Elections initially dismissed its accreditation petition in late April 2026 for failing to meet a documentary requirement, but it was subsequently accredited and appears among the 13 parties on the tentative list published May 13, 2026. No detailed platform, founding history, or chief-minister preference was reported in accessible sources.",
+      "leaders": [],
+      "affiliation": "Regional parliamentary party",
+      "source_url": "https://en.wikipedia.org/wiki/Nominees_in_the_2026_Bangsamoro_Parliament_election",
+      "source_date": "2026-07-17",
+      "confidence": "low"
+    }
+  },
+  "key_figures": [
+    {
+      "name": "Abdulraof Macacua",
+      "role": "Interim Chief Minister of BARMM (2025–present)",
+      "note": "Also known as 'Sammy Gambar'; chief of staff of the MILF's Bangsamoro Islamic Armed Forces and former Maguindanao del Norte governor. Appointed by President Marcos in March 2025, replacing Murad Ebrahim; the move triggered friction within the MILF.",
+      "source_url": "https://pcij.org/2025/03/09/barmm-new-chief-minister/",
+      "source_date": "2025-03-09",
+      "confidence": "high"
+    },
+    {
+      "name": "Ahod 'Al-Haj Murad' Ebrahim",
+      "role": "MILF chairman; UBJP president; former interim Chief Minister (2019–2025)",
+      "note": "Led the interim BTA government from 2019 until March 2025. He is UBJP's lead nominee and chief-minister aspirant; the marquee 2026 contest is widely framed as Ebrahim versus interim CM Macacua.",
+      "source_url": "https://www.manilatimes.net/2026/04/09/regions/showdown-for-chief-minister-shapes-up-between-ebrahim-and-macacua-in-1st-barmm-parliament-elections/2316423",
+      "source_date": "2026-04-09",
+      "confidence": "high"
+    },
+    {
+      "name": "Muslimin Sema",
+      "role": "MNLF (Sema faction) chairman; leader of the Bangsamoro Party (BaPa)",
+      "note": "Heads the MNLF faction that backs the Bangsamoro Party, one of two MNLF-linked parties accredited separately for the election.",
+      "source_url": "https://pcij.org/2024/11/05/list-barmm-regional-parties-aiming-for-parliamentary-seats-in-may-2025/",
+      "source_date": "2024-11-05",
+      "confidence": "high"
+    },
+    {
+      "name": "Nur Misuari",
+      "role": "MNLF founding chairman; associated with the Mahardika Party",
+      "note": "The MNLF founder's faction is linked to the Mahardika Party, distinct from the Sema-faction Bangsamoro Party.",
+      "source_url": "https://www.inquirer.net/472083/new-parties-emerge-for-historic-barmm-elections/",
+      "source_date": "2026-04-08",
+      "confidence": "high"
+    },
+    {
+      "name": "Naguib Sinarimbo",
+      "role": "Member of Parliament; spokesperson of the Bangsamoro Federalist Party (BFP)",
+      "note": "A prominent BTA official who serves as spokesperson for the newly formed BFP, COMELEC's designated dominant minority party.",
+      "source_url": "https://www.inquirer.net/472083/new-parties-emerge-for-historic-barmm-elections/",
+      "source_date": "2026-04-08",
+      "confidence": "medium"
+    },
+    {
+      "name": "Mujiv Hataman",
+      "role": "Leader of the Bangsamoro People's Party (BPP), a core BARMM Grand Coalition member",
+      "note": "Veteran Bangsamoro politician and former ARMM governor whose BPP anchors the opposition BGC.",
+      "source_url": "https://en.wikipedia.org/wiki/BARMM_Grand_Coalition",
+      "source_date": "2026-07-17",
+      "confidence": "high"
+    },
+    {
+      "name": "Mamintal 'Bombit' Adiong Jr.",
+      "role": "Lanao del Sur governor; founder of Serbisyong Inklusibo–Alyansang Progresibo (SIAP), a BGC member",
+      "note": "SIAP is one of the three core parties of the BARMM Grand Coalition.",
+      "source_url": "https://www.manilatimes.net/2026/04/09/regions/showdown-for-chief-minister-shapes-up-between-ebrahim-and-macacua-in-1st-barmm-parliament-elections/2316423",
+      "source_date": "2026-04-09",
+      "confidence": "high"
+    },
+    {
+      "name": "Suharto 'Teng' Mangudadatu",
+      "role": "Leads Al-Ittihad–UKB, a core BARMM Grand Coalition member",
+      "note": "His Al-Ittihad–Ungaya sa Kawagib Nu Bangsamoro is one of the three core parties of the BARMM Grand Coalition.",
+      "source_url": "https://pcij.org/2024/11/05/list-barmm-regional-parties-aiming-for-parliamentary-seats-in-may-2025/",
+      "source_date": "2024-11-05",
+      "confidence": "medium"
+    },
+    {
+      "name": "Atty. Ray Sumalipao",
+      "role": "COMELEC-BARMM Regional Director",
+      "note": "Stated in July 2026 that COMELEC would proceed with the elections, noting the Supreme Court declined to issue a TRO and that 1,208 contingency special electoral boards were prepared.",
+      "source_url": "https://mindanews.com/top-stories/2026/07/barmm-parliamentary-elections-on-track-for-sept-14-say-comelec-and-pnp-officials/",
+      "source_date": "2026-07-15",
+      "confidence": "medium"
+    }
+  ],
+  "context_facts": [
+    {
+      "topic": "First regular Bangsamoro Parliament election",
+      "fact": "The September 14, 2026 vote is the first regular election for the 80-member Bangsamoro Parliament. It succeeds the interim, appointed Bangsamoro Transition Authority (BTA) that has governed BARMM since 2019 under the Bangsamoro Organic Law (RA 11054).",
+      "source_url": "https://www.pna.gov.ph/articles/1271808",
+      "source_date": "2026-03-25",
+      "confidence": "high"
+    },
+    {
+      "topic": "Chief Minister selection",
+      "fact": "The Chief Minister is not directly elected by voters; the incoming 80-member Parliament chooses the Chief Minister from among its members, requiring a majority of 41. The 2026 contest is widely framed as a showdown between UBJP's Murad Ebrahim and interim CM Abdulraof Macacua, with the BARMM Grand Coalition as the main opposition bloc.",
+      "source_url": "https://www.manilatimes.net/2026/04/09/regions/showdown-for-chief-minister-shapes-up-between-ebrahim-and-macacua-in-1st-barmm-parliament-elections/2316423",
+      "source_date": "2026-04-09",
+      "confidence": "medium"
+    },
+    {
+      "topic": "Sulu exclusion and its effect on seats",
+      "fact": "On September 9, 2024 the Supreme Court ruled that Sulu's inclusion in BARMM was unconstitutional because most Sulu residents rejected the region in the 2019 plebiscite; the ruling was declared final and executory. This removed the seats originally reserved for Sulu and forced a full redistricting of the 32 single-member districts, reducing BARMM to five provinces plus Cotabato City and the Special Geographic Area.",
+      "source_url": "https://newsinfo.inquirer.net/1981538/sc-sulu-not-part-of-barmm",
+      "source_date": "2024-09-09",
+      "confidence": "high"
+    },
+    {
+      "topic": "Redistricting law setting the 32-district map",
+      "fact": "After the Supreme Court struck down earlier BARMM redistricting laws (BAA 77 and BAA 58) as unconstitutional, the Bangsamoro Parliament approved a new districting law on January 13, 2026 setting the 32-district map used for the 2026 election.",
+      "source_url": "https://www.rappler.com/philippines/mindanao/barmm-parliament-approves-law-district-map-polls-january-2026/",
+      "source_date": "2026-01-13",
+      "confidence": "high"
+    },
+    {
+      "topic": "COMELEC dominant-party designation",
+      "fact": "On July 9, 2026 COMELEC designated the United Bangsamoro Justice Party (UBJP) as dominant majority party and the Bangsamoro Federalist Party (BFP) as dominant minority party, granting them election-day privileges such as poll-watcher and returns-copy entitlements.",
+      "source_url": "https://www.manilatimes.net/2026/07/09/news/national/comelec-picks-dominant-parties-in-barmm-polls/2381060",
+      "source_date": "2026-07-09",
+      "confidence": "high"
+    },
+    {
+      "topic": "Term of office of elected members",
+      "fact": "Under RA 12317, officials elected on September 14, 2026 assume office at noon on October 30, 2026 and serve until June 30, 2031; subsequent regular Bangsamoro elections will be held on the second Monday of May 2031 and every three years thereafter, synchronized with national and local elections.",
+      "source_url": "https://pco.gov.ph/news_releases/president-marcos-resets-barmm-polls-to-september-2026/",
+      "source_date": "2026-03-25",
+      "confidence": "high"
+    },
+    {
+      "topic": "Election and campaign periods; gun ban",
+      "fact": "The 90-day election period runs July 16 to September 29, 2026 and the campaign period runs July 30 to September 12, 2026. A firearms ban took effect July 16, 2026 under COMELEC Resolution No. 11214, with checkpoints across all 105 municipalities and 3 cities.",
+      "source_url": "https://www.manilatimes.net/2026/07/17/regions/election-period-begins-in-barmm/2386033",
+      "source_date": "2026-07-17",
+      "confidence": "high"
+    },
+    {
+      "topic": "Ballot design",
+      "fact": "Ballots for the 2026 BARMM election include candidate photos and political party logos to aid voters in the region's first parliamentary vote.",
+      "source_url": "https://en.wikipedia.org/wiki/2026_Bangsamoro_Parliament_election",
+      "source_date": "2026-07-17",
+      "confidence": "medium"
+    }
+  ],
+  "statistics": [
+    {
+      "label": "Registered voters in BARMM",
+      "value": "More than 2.3 million",
+      "as_of": "2026-07-17",
+      "source_url": "https://www.manilatimes.net/2026/07/17/regions/election-period-begins-in-barmm/2386033",
+      "confidence": "high"
+    },
+    {
+      "label": "Geographic coverage",
+      "value": "5 provinces + Cotabato City + the Special Geographic Area; 3 cities and 105 municipalities",
+      "as_of": "2026-07-17",
+      "source_url": "https://www.manilatimes.net/2026/07/17/regions/election-period-begins-in-barmm/2386033",
+      "confidence": "high"
+    },
+    {
+      "label": "Single-member districts by province",
+      "value": "Lanao del Sur 9 · Maguindanao del Norte 5 · Maguindanao del Sur 5 · Basilan 4 · Tawi-Tawi 4 · Cotabato City 3 · Special Geographic Area 2",
+      "as_of": "2026-01-13",
+      "source_url": "https://www.rappler.com/philippines/mindanao/barmm-parliament-approves-law-district-map-polls-january-2026/",
+      "confidence": "high"
+    },
+    {
+      "label": "Police deployment for the polls",
+      "value": "~8,300 PNP personnel region-wide, plus ~2,000 reinforcements and ~1,300 from specialized units; 93 mapped areas of concern including 10 'red' zones",
+      "as_of": "2026-07-15",
+      "source_url": "https://mindanews.com/top-stories/2026/07/barmm-parliamentary-elections-on-track-for-sept-14-say-comelec-and-pnp-officials/",
+      "confidence": "medium"
+    }
+  ],
+  "timeline_additions": [
+    {
+      "date": "2025-03-20",
+      "event_type": "appointment",
+      "title": "Abdulraof Macacua assumes as interim Chief Minister",
+      "description": "Macacua (appointed by President Marcos on March 3, 2025) took office as BARMM interim Chief Minister, replacing Murad Ebrahim; the MILF objected that the appointments bypassed its recommendations.",
+      "source_ids": [
+        "rappler_macacua_assumes",
+        "pcij_new_cm"
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "event_type": "court_ruling",
+      "title": "Supreme Court TRO against BARMM redistricting law",
+      "description": "The Supreme Court issued a temporary restraining order against the Bangsamoro parliamentary redistricting law (BAA 77), disrupting preparations for the then-scheduled October 2025 polls.",
+      "source_ids": [
+        "rappler_sc_tro_redistricting"
+      ]
+    },
+    {
+      "date": "2026-01-13",
+      "event_type": "legislation",
+      "title": "Bangsamoro Parliament approves the new 32-district map",
+      "description": "The Bangsamoro Parliament approved a new districting law (Parliament Bill 415, enacted as Bangsamoro Autonomy Act No. 86) establishing the 32 single-member districts used in the 2026 election, replacing the voided BAA 77 and BAA 58.",
+      "source_ids": [
+        "rappler_districting_32map"
+      ]
+    },
+    {
+      "date": "2026-07-09",
+      "event_type": "comelec_resolution",
+      "title": "COMELEC designates dominant majority and minority parties",
+      "description": "COMELEC named UBJP the dominant majority party and BFP the dominant minority party for the 2026 BARMM parliamentary elections, granting associated election-day privileges.",
+      "source_ids": [
+        "manilatimes_dominant_parties"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "pco_reset_sept2026",
+      "type": "official_record",
+      "title": "President Marcos resets BARMM polls to September 2026",
+      "publisher": "Presidential Communications Office",
+      "url": "https://pco.gov.ph/news_releases/president-marcos-resets-barmm-polls-to-september-2026/",
+      "date": "2026-03-25",
+      "reliability": "official_primary"
+    },
+    {
+      "id": "pna_pbbm_moves_polls",
+      "type": "official_record",
+      "title": "PBBM moves BARMM polls to September 2026",
+      "publisher": "Philippine News Agency",
+      "url": "https://www.pna.gov.ph/articles/1271808",
+      "date": "2026-03-25",
+      "reliability": "official_primary"
+    },
+    {
+      "id": "gazette_pbb",
+      "type": "official_record",
+      "title": "Petition for Registration and Accreditation of Partido Bangon Bangsamoro (PBB)",
+      "publisher": "Official Gazette of the Bangsamoro Government",
+      "url": "https://officialgazette.bangsamoro.gov.ph/2026/04/13/petition-for-registration-and-accreditation-of-new-political-parliamentary-political-party-partido-bangon-bangsamoro-pbb/",
+      "date": "2026-04-13",
+      "reliability": "official_primary"
+    },
+    {
+      "id": "manilatimes_election_period",
+      "type": "news_report",
+      "title": "Election period begins in BARMM",
+      "publisher": "The Manila Times",
+      "url": "https://www.manilatimes.net/2026/07/17/regions/election-period-begins-in-barmm/2386033",
+      "date": "2026-07-17",
+      "reliability": "reputable_secondary"
+    },
+    {
+      "id": "manilatimes_dominant_parties",
+      "type": "news_report",
+      "title": "Comelec picks dominant parties in BARMM polls",
+      "publisher": "The Manila Times",
+      "url": "https://www.manilatimes.net/2026/07/09/news/national/comelec-picks-dominant-parties-in-barmm-polls/2381060",
+      "date": "2026-07-09",
+      "reliability": "reputable_secondary"
+    },
+    {
+      "id": "manilatimes_cm_showdown",
+      "type": "news_report",
+      "title": "Showdown for chief minister shapes up between Ebrahim and Macacua",
+      "publisher": "The Manila Times",
+      "url": "https://www.manilatimes.net/2026/04/09/regions/showdown-for-chief-minister-shapes-up-between-ebrahim-and-macacua-in-1st-barmm-parliament-elections/2316423",
+      "date": "2026-04-09",
+      "reliability": "reputable_secondary"
+    },
+    {
+      "id": "mindanews_on_track",
+      "type": "news_report",
+      "title": "BARMM parliamentary elections on track for Sept. 14, say COMELEC and PNP officials",
+      "publisher": "MindaNews",
+      "url": "https://mindanews.com/top-stories/2026/07/barmm-parliamentary-elections-on-track-for-sept-14-say-comelec-and-pnp-officials/",
+      "date": "2026-07-15",
+      "reliability": "reputable_secondary"
+    },
+    {
+      "id": "inquirer_new_parties",
+      "type": "news_report",
+      "title": "New parties emerge for historic BARMM elections",
+      "publisher": "Philippine Daily Inquirer",
+      "url": "https://www.inquirer.net/472083/new-parties-emerge-for-historic-barmm-elections/",
+      "date": "2026-04-08",
+      "reliability": "reputable_secondary"
+    },
+    {
+      "id": "inquirer_sc_sulu",
+      "type": "news_report",
+      "title": "SC: Sulu not part of BARMM",
+      "publisher": "Philippine Daily Inquirer",
+      "url": "https://newsinfo.inquirer.net/1981538/sc-sulu-not-part-of-barmm",
+      "date": "2024-09-09",
+      "reliability": "reputable_secondary"
+    },
+    {
+      "id": "rappler_districting_32map",
+      "type": "news_report",
+      "title": "BARMM Parliament okays long-delayed law, sets 32-district map for polls",
+      "publisher": "Rappler",
+      "url": "https://www.rappler.com/philippines/mindanao/barmm-parliament-approves-law-district-map-polls-january-2026/",
+      "date": "2026-01-13",
+      "reliability": "reputable_secondary"
+    },
+    {
+      "id": "rappler_sc_tro_redistricting",
+      "type": "news_report",
+      "title": "Supreme Court issues TRO vs BARMM redistricting",
+      "publisher": "Rappler",
+      "url": "https://www.rappler.com/philippines/supreme-court-issues-tro-redistricting-barmm-elections-2025/",
+      "date": "2025-09-15",
+      "reliability": "reputable_secondary"
+    },
+    {
+      "id": "rappler_macacua_assumes",
+      "type": "news_report",
+      "title": "Macacua assumes BARMM leadership as MILF factions split over appointments",
+      "publisher": "Rappler",
+      "url": "https://www.rappler.com/philippines/abdulraof-macacua-assumes-barmm-leadership-march-20-2025/",
+      "date": "2025-03-20",
+      "reliability": "reputable_secondary"
+    },
+    {
+      "id": "pcij_party_list",
+      "type": "news_report",
+      "title": "LIST: BARMM regional parties accredited for the parliamentary elections",
+      "publisher": "Philippine Center for Investigative Journalism (PCIJ)",
+      "url": "https://pcij.org/2024/11/05/list-barmm-regional-parties-aiming-for-parliamentary-seats-in-may-2025/",
+      "date": "2024-11-05",
+      "reliability": "reputable_secondary"
+    },
+    {
+      "id": "pcij_new_cm",
+      "type": "news_report",
+      "title": "BARMM has a new interim chief minister",
+      "publisher": "Philippine Center for Investigative Journalism (PCIJ)",
+      "url": "https://pcij.org/2025/03/09/barmm-new-chief-minister/",
+      "date": "2025-03-09",
+      "reliability": "reputable_secondary"
+    },
+    {
+      "id": "businessmirror_80_seats",
+      "type": "news_report",
+      "title": "Comelec sets 80 seats for 2026 BARMM parliamentary elections",
+      "publisher": "BusinessMirror",
+      "url": "https://businessmirror.com.ph/2026/03/05/comelec-sets-80-seats-for-2026-barmm-parliamentary-elections/",
+      "date": "2026-03-05",
+      "reliability": "reputable_secondary"
+    },
+    {
+      "id": "rappler_abot_profile",
+      "type": "reference",
+      "title": "Alliance of Bangsamoro Tri-Peoples Party (party profile)",
+      "publisher": "Rappler",
+      "url": "https://www.rappler.com/philippines/government/g37461061-alliance-bangsamoro-tri-peoples-party/",
+      "date": "2026-07-17",
+      "reliability": "reputable_secondary"
+    },
+    {
+      "id": "rappler_best_profile",
+      "type": "reference",
+      "title": "Bangsamoro Empowerment and Social Transformation Party (party profile)",
+      "publisher": "Rappler",
+      "url": "https://www.rappler.com/philippines/mindanao/g84892248-bangsamoro-empowerment-social-transformation-party/",
+      "date": "2026-07-17",
+      "reliability": "reputable_secondary"
+    },
+    {
+      "id": "wikipedia_2026_election",
+      "type": "reference",
+      "title": "2026 Bangsamoro Parliament election",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_Bangsamoro_Parliament_election",
+      "date": "2026-07-17",
+      "reliability": "secondary_reference"
+    },
+    {
+      "id": "wikipedia_nominees",
+      "type": "reference",
+      "title": "Nominees in the 2026 Bangsamoro Parliament election",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nominees_in_the_2026_Bangsamoro_Parliament_election",
+      "date": "2026-07-17",
+      "reliability": "secondary_reference"
+    },
+    {
+      "id": "wikipedia_bgc",
+      "type": "reference",
+      "title": "BARMM Grand Coalition",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BARMM_Grand_Coalition",
+      "date": "2026-07-17",
+      "reliability": "secondary_reference"
+    }
+  ]
+}

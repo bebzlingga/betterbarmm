@@ -23,9 +23,13 @@ export default function RootLayout({
           crossOrigin=""
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
+        {/* Without JS the reveal animation never runs, so force content visible. */}
+        <noscript>
+          <style>{`[data-reveal]{opacity:1 !important;transform:none !important;}`}</style>
+        </noscript>
       </head>
       <body className="min-h-full bg-[var(--paper)] antialiased">
         {children}

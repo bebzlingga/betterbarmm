@@ -1,0 +1,269 @@
+"use client";
+
+import { useMemo, useState } from "react";
+import { type Confidence } from "../_lib/confidence";
+import { ConfidenceBadge } from "./confidence-badge";
+
+export type CandidateRow = {
+  id: string;
+  name: string;
+  track: "district" | "sectoral";
+  group: string; // area (district) or sector (sectoral)
+  district?: string;
+  partyId?: string | null;
+  partyLabel: string;
+  confidence: Confidence;
+};
+
+type Option = { value: string; label: string };
+
+function Select({
+  label,
+  value,
+  options,
+  onChange,
+}: {
+  label: string;
+  value: string;
+  options: Option[];
+  onChange: (value: string) => void;
+}) {
+  return (
+    <label className="relative block">
+      <span className="sr-only">{label}</span>
+      <select
+        value={value}
+        onChange={(event) => onChange(event.target.value)}
+        className="h-11 w-full min-w-0 appearance-none border border-[var(--ink)] bg-[var(--paper)] py-0 pl-3 pr-8 font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--ink)] outline-none transition focus:border-[var(--accent)]"
+      >
+        <option value="">{label}</option>
+        {options.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.label}
+          </option>
+        ))}
+      </select>
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[10px] text-[var(--ink)]"
+      >
+        ▼
+      </span>
+    </label>
+  );
+}
+
+function CandidateRowItem({ row }: { row: CandidateRow }) {
+  const rowClass =
+    "flex items-center justify-between gap-4 border-b border-[var(--rule-soft)] py-3 last:border-b-0";
+
+  const content = (
+    <>
+      <div className="min-w-0">
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+          <h3 className="break-words text-base font-bold leading-tight transition-colors group-hover:text-[var(--accent)]">
+            {row.name}
+          </h3>
+          {row.district ? (
+            <span className="shrink-0 bg-[var(--accent)] px-1.5 py-0.5 font-mono text-[8px] font-bold uppercase leading-none tracking-[0.12em] text-white">
+              {row.district}
+            </span>
+          ) : null}
+        </div>
+        <p className="mt-1 break-words font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-[var(--ink-2)]">
+          {row.partyLabel}
+        </p>
+      </div>
+      {row.partyId ? (
+        <span
+          aria-hidden="true"
+          className="shrink-0 font-mono text-sm text-[var(--ink-3)] transition duration-200 group-hover:translate-x-0.5 group-hover:text-[var(--accent)]"
+        >
+          →
+        </span>
+      ) : null}
+    </>
+  );
+
+  if (row.partyId) {
+    return (
+      <a
+        href={`/parties/${row.partyId}`}
+        className={`group ${rowClass} transition-colors hover:bg-[var(--paper-2)]`}
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return <div className={rowClass}>{content}</div>;
+}
+
+export function CandidateBrowser({ rows }: { rows: CandidateRow[] }) {
+  const [track, setTrack] = useState("");
+  const [group, setGroup] = useState("");
+  const [party, setParty] = useState("");
+  const [query, setQuery] = useState("");
+
+  const areaOptions = useMemo(
+    () =>
+      Array.from(
+        new Set(rows.filter((r) => r.track === "district").map((r) => r.group)),
+      )
+        .sort()
+        .map((value) => ({ value, label: value })),
+    [rows],
+  );
+  const sectorOptions = useMemo(
+    () =>
+      Array.from(
+        new Set(rows.filter((r) => r.track === "sectoral").map((r) => r.group)),
+      )
+        .sort()
+        .map((value) => ({ value, label: value })),
+    [rows],
+  );
+  const partyOptions = useMemo(
+    () =>
+      Array.from(new Set(rows.map((r) => r.partyId).filter(Boolean) as string[]))
+        .sort()
+        .map((value) => ({ value, label: value })),
+    [rows],
+  );
+
+  const groupOptions =
+    track === "sectoral"
+      ? sectorOptions
+      : track === "district"
+        ? areaOptions
+        : [...sectorOptions, ...areaOptions];
+
+  const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return rows.filter((row) => {
+      if (track && row.track !== track) return false;
+      if (group && row.group !== group) return false;
+      if (party && row.partyId !== party) return false;
+      if (q) {
+        const haystack =
+          `${row.name} ${row.partyLabel} ${row.group} ${row.district ?? ""}`.toLowerCase();
+        if (!haystack.includes(q)) return false;
+      }
+      return true;
+    });
+  }, [rows, track, group, party, query]);
+
+  // Group filtered results by their area/sector, sectoral clusters first.
+  const grouped = useMemo(() => {
+    const map = new Map<string, { track: "district" | "sectoral"; rows: CandidateRow[] }>();
+    for (const row of filtered) {
+      const entry = map.get(row.group) ?? { track: row.track, rows: [] };
+      entry.rows.push(row);
+      map.set(row.group, entry);
+    }
+    return Array.from(map.entries())
+      .map(([name, entry]) => ({ name, ...entry }))
+      .sort((a, b) => {
+        if (a.track !== b.track) return a.track === "sectoral" ? -1 : 1;
+        return a.name.localeCompare(b.name);
+      });
+  }, [filtered]);
+
+  const districtCount = filtered.filter((r) => r.track === "district").length;
+  const sectoralCount = filtered.filter((r) => r.track === "sectoral").length;
+  const hasFilters = Boolean(track || group || party || query);
+
+  return (
+    <div>
+      <div className="grid gap-3 border border-[var(--rule)] bg-[var(--paper-2)] p-4 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+        <label className="relative block">
+          <span className="sr-only">Search candidates</span>
+          <input
+            type="search"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Search by name…"
+            className="h-11 w-full border border-[var(--ink)] bg-[var(--paper)] px-3 text-sm font-semibold text-[var(--ink)] outline-none transition placeholder:font-normal placeholder:text-[var(--ink-3)] focus:border-[var(--accent)]"
+          />
+        </label>
+        <Select
+          label="All tracks"
+          value={track}
+          options={[
+            { value: "district", label: "District" },
+            { value: "sectoral", label: "Sectoral" },
+          ]}
+          onChange={(value) => {
+            setTrack(value);
+            setGroup("");
+          }}
+        />
+        <Select
+          label={track === "sectoral" ? "All sectors" : "All areas"}
+          value={group}
+          options={groupOptions}
+          onChange={setGroup}
+        />
+        <Select
+          label="All parties"
+          value={party}
+          options={partyOptions}
+          onChange={setParty}
+        />
+      </div>
+
+      <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
+        <p className="font-mono text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--ink-3)]">
+          {filtered.length} of {rows.length}
+          <span className="text-[var(--ink-mute)]">
+            {" · "}
+            {sectoralCount} sectoral · {districtCount} district
+          </span>
+        </p>
+        {hasFilters ? (
+          <button
+            type="button"
+            onClick={() => {
+              setTrack("");
+              setGroup("");
+              setParty("");
+              setQuery("");
+            }}
+            className="font-mono text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--accent)] transition-colors hover:text-[var(--accent-deep)]"
+          >
+            Clear filters ✕
+          </button>
+        ) : null}
+      </div>
+
+      {filtered.length === 0 ? (
+        <p className="mt-4 border-t border-[var(--ink)] py-12 text-center text-sm text-[var(--ink-3)]">
+          No candidates match these filters.
+        </p>
+      ) : (
+        <div className="mt-4 grid gap-x-10 gap-y-10 md:grid-cols-2">
+          {grouped.map((section) => (
+            <div key={`${section.track}-${section.name}`}>
+              <div className="flex items-center justify-between border-b border-[var(--ink)] pb-2">
+                <div className="flex min-w-0 items-center gap-2">
+                  <h3 className="truncate text-base font-extrabold leading-none tracking-[-0.02em]">
+                    {section.name}
+                  </h3>
+                  <ConfidenceBadge confidence={section.rows[0].confidence} />
+                </div>
+                <p className="num shrink-0 font-mono text-xs font-bold text-[var(--ink-3)]">
+                  {section.rows.length}
+                </p>
+              </div>
+              <div className="mt-1">
+                {section.rows.map((row) => (
+                  <CandidateRowItem key={row.id} row={row} />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}

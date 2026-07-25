@@ -1,4 +1,8 @@
 import workspaceJson from "../../../../datasets/election/election.min.json";
+import supplementJson from "../../../../datasets/election/election-supplement.json";
+import { type Confidence, confidenceMeta } from "./confidence";
+
+export { type Confidence, confidenceMeta };
 
 export type Source = {
   id: string;
@@ -10,6 +14,36 @@ export type Source = {
   url?: string;
   citation_note?: string;
   use_in_workspace?: string[];
+  description?: string;
+  summary?: string;
+  content?: string;
+  content_markdown?: string;
+  excerpt?: string;
+  source_role?: string;
+  reliability?: string;
+  source_scope?: string;
+  content_tags?: string[];
+  priority?: number;
+  key_points?: string[];
+  notes?: string;
+  alternate_urls?: string[];
+  verification?: {
+    status?: string;
+    method?: string;
+    note?: string;
+  };
+  display?: {
+    kicker?: string;
+    title?: string;
+    dek?: string;
+    body?: string;
+  };
+};
+
+export type SourceGroup = {
+  id: string;
+  label: string;
+  source_ids: string[];
 };
 
 type SeatDistribution = {
@@ -125,6 +159,12 @@ export type TimelineEvent = {
   status?: string | null;
 };
 
+type OtherDistrictParty = {
+  label: string;
+  normalized_id?: string;
+  note?: string;
+};
+
 type ElectionWorkspace = {
   dataset_name: string;
   generated_at: string;
@@ -142,11 +182,144 @@ type ElectionWorkspace = {
   };
   timeline: TimelineEvent[];
   sources: Source[];
+  source_groups?: SourceGroup[];
+  other_district_parties_or_labels_not_in_13_regional_party_representative_ballot?: OtherDistrictParty[];
   data_quality_summary: Record<string, string>;
-  workspace_fields_suggested_for_betterbarmm?: Record<string, string[]>;
+  workspace_fields_suggested_for_betterbarmm?: Record<string, unknown>;
+};
+
+// --- Researched supplement (secondary reference, individually sourced) ---
+
+export type PartyBackground = {
+  background?: string;
+  leaders?: string[];
+  affiliation?: string;
+  source_url?: string;
+  source_date?: string;
+  confidence?: string;
+};
+
+export type ContextFact = {
+  topic: string;
+  fact: string;
+  source_url?: string;
+  source_date?: string;
+  confidence?: string;
+};
+
+export type SupplementStatistic = {
+  label: string;
+  value: string;
+  as_of?: string;
+  source_url?: string;
+  confidence?: string;
+};
+
+export type KeyFigure = {
+  name: string;
+  role: string;
+  note?: string;
+  source_url?: string;
+  source_date?: string;
+  confidence?: string;
+};
+
+type ElectionSupplement = {
+  generated_at: string;
+  note: string;
+  party_backgrounds: Record<string, PartyBackground>;
+  key_figures: KeyFigure[];
+  context_facts: ContextFact[];
+  statistics: SupplementStatistic[];
+  timeline_additions: TimelineEvent[];
+  sources: Source[];
 };
 
 const workspace = workspaceJson as unknown as ElectionWorkspace;
+const supplement = supplementJson as unknown as ElectionSupplement;
+
+// --- Confidence model -------------------------------------------------------
+// A single, consistent trust signal (defined in ./confidence) that travels with
+// each record so readers can tell official ballot data apart from working lists
+// and legacy references.
+
+export function resolveDistrictConfidence(
+  candidate: DistrictCandidate,
+): Confidence {
+  // Every district filer is currently coc_filer_unverified_final_status.
+  return candidate.candidate_status?.includes("unverified")
+    ? "working"
+    : "official";
+}
+
+// --- Party blocs ------------------------------------------------------------
+// Editorial grouping derived from the sourced backgrounds in
+// election-supplement.json (affiliation, COMELEC dominant-party designation,
+// chief-minister nominee). Presentation layer only — the underlying facts and
+// their citations live in the supplement.
+
+export type PartyBloc =
+  | "Governing bloc (MILF)"
+  | "Opposition coalition"
+  | "MNLF-linked"
+  | "Other regional parties";
+
+export const blocOrder: PartyBloc[] = [
+  "Governing bloc (MILF)",
+  "Opposition coalition",
+  "MNLF-linked",
+  "Other regional parties",
+];
+
+export const blocSummary: Record<PartyBloc, string> = {
+  "Governing bloc (MILF)":
+    "The MILF-led incumbent bloc that has governed the transition authority.",
+  "Opposition coalition":
+    "The BARMM Grand Coalition, positioned as the main inclusive opposition.",
+  "MNLF-linked": "Parties tied to the two Moro National Liberation Front factions.",
+  "Other regional parties":
+    "New and independent regional parliamentary parties on the ballot.",
+};
+
+export const dominantStatusLabel: Record<string, string> = {
+  dominant_majority: "COMELEC dominant majority",
+  dominant_minority: "COMELEC dominant minority",
+};
+
+type PartyPresentation = {
+  bloc: PartyBloc;
+  dominantStatus?: "dominant_majority" | "dominant_minority";
+  cmNominee?: string;
+};
+
+const partyPresentation: Record<string, PartyPresentation> = {
+  UBJP: {
+    bloc: "Governing bloc (MILF)",
+    dominantStatus: "dominant_majority",
+    cmNominee: "Murad Ebrahim",
+  },
+  BGC: { bloc: "Opposition coalition" },
+  BAPA: { bloc: "MNLF-linked", cmNominee: "Omar Yasser Sema" },
+  MAHARDIKA: { bloc: "MNLF-linked", cmNominee: "Tarhata Maglangit" },
+  BFP: { bloc: "Other regional parties", dominantStatus: "dominant_minority" },
+  BEST: { bloc: "Other regional parties" },
+  ABOT: { bloc: "Other regional parties" },
+  PBB: { bloc: "Other regional parties" },
+  ISAMA: { bloc: "Other regional parties" },
+  MORO_AKO: { bloc: "Other regional parties", cmNominee: "Najeeb Taib" },
+  RAAYAT: { bloc: "Other regional parties", cmNominee: "Nadia Lorena" },
+  PRO_BANGSAMORO: {
+    bloc: "Other regional parties",
+    cmNominee: "Don Mustapha Loong",
+  },
+  MUSHAWARA: { bloc: "Other regional parties" },
+};
+
+function presentationFor(partyId: string): PartyPresentation {
+  return partyPresentation[partyId] ?? { bloc: "Other regional parties" };
+}
+
+// --- Formatting helpers -----------------------------------------------------
 
 const dateFormatter = new Intl.DateTimeFormat("en", {
   month: "short",
@@ -230,7 +403,11 @@ export function labelize(value?: string | null): string {
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
-export function groupSectoralCandidates(candidates = workspace.sectoral_candidates) {
+// --- Grouping helpers -------------------------------------------------------
+
+export function groupSectoralCandidates(
+  candidates = workspace.sectoral_candidates,
+) {
   const groups = new Map<string, SectoralCandidate[]>();
 
   for (const candidate of candidates) {
@@ -245,7 +422,9 @@ export function groupSectoralCandidates(candidates = workspace.sectoral_candidat
   }));
 }
 
-export function groupDistrictCandidates(candidates = workspace.district_representative_candidates.candidates) {
+export function groupDistrictCandidates(
+  candidates = workspace.district_representative_candidates.candidates,
+) {
   const groups = new Map<string, DistrictCandidate[]>();
 
   for (const candidate of candidates) {
@@ -260,55 +439,206 @@ export function groupDistrictCandidates(candidates = workspace.district_represen
   }));
 }
 
-function countSectoralByParty() {
-  const counts = new Map<string, number>();
+// --- Relationship resolution ------------------------------------------------
 
+function sectoralByParty() {
+  const map = new Map<string, SectoralCandidate[]>();
   for (const candidate of workspace.sectoral_candidates) {
-    if (!candidate.linked_party_id) {
-      continue;
-    }
-
-    counts.set(
-      candidate.linked_party_id,
-      (counts.get(candidate.linked_party_id) ?? 0) + 1,
-    );
+    if (!candidate.linked_party_id) continue;
+    const current = map.get(candidate.linked_party_id) ?? [];
+    current.push(candidate);
+    map.set(candidate.linked_party_id, current);
   }
-
-  return counts;
+  return map;
 }
 
-function countDistrictByParty() {
-  const counts = new Map<string, number>();
-
-  for (const candidate of workspace.district_representative_candidates.candidates) {
-    if (!candidate.normalized_party_id) {
-      continue;
-    }
-
-    counts.set(
-      candidate.normalized_party_id,
-      (counts.get(candidate.normalized_party_id) ?? 0) + 1,
-    );
+function districtByParty() {
+  const map = new Map<string, DistrictCandidate[]>();
+  for (const candidate of workspace.district_representative_candidates
+    .candidates) {
+    if (!candidate.normalized_party_id) continue;
+    const current = map.get(candidate.normalized_party_id) ?? [];
+    current.push(candidate);
+    map.set(candidate.normalized_party_id, current);
   }
-
-  return counts;
+  return map;
 }
+
+function buildParties() {
+  const sectoralMap = sectoralByParty();
+  const districtMap = districtByParty();
+
+  return workspace.regional_parties.map((party) => {
+    const sectoral = sectoralMap.get(party.party_id) ?? [];
+    const district = districtMap.get(party.party_id) ?? [];
+    const legacyNominees =
+      party.legacy_party_representative_nominees_2025_reference?.nominees
+        ?.length ?? 0;
+    const background = supplement.party_backgrounds[party.party_id] ?? null;
+    const presentation = presentationFor(party.party_id);
+
+    return {
+      ...party,
+      confidence: "official" as Confidence,
+      background,
+      bloc: presentation.bloc,
+      dominantStatus: presentation.dominantStatus,
+      cmNominee: presentation.cmNominee,
+      affiliation: background?.affiliation,
+      leaders: background?.leaders ?? [],
+      sectoral,
+      district,
+      computedStats: {
+        sectoralCandidates: sectoral.length,
+        districtCocFilers: district.length,
+        legacyNominees,
+      },
+    };
+  });
+}
+
+export type PartyView = ReturnType<typeof buildParties>[number];
+
+let partiesCache: PartyView[] | null = null;
+function allParties(): PartyView[] {
+  if (!partiesCache) partiesCache = buildParties();
+  return partiesCache;
+}
+
+export function getPartyById(partyId: string): PartyView | undefined {
+  return allParties().find(
+    (party) => party.party_id.toLowerCase() === partyId.toLowerCase(),
+  );
+}
+
+export function getPartyIds(): string[] {
+  return workspace.regional_parties.map((party) => party.party_id);
+}
+
+export function getPartyGroups() {
+  const parties = allParties();
+  return blocOrder
+    .map((bloc) => ({
+      bloc,
+      summary: blocSummary[bloc],
+      parties: parties.filter((party) => party.bloc === bloc),
+    }))
+    .filter((group) => group.parties.length > 0);
+}
+
+// --- Timeline phases --------------------------------------------------------
+
+const phaseByEventType: Record<string, string> = {
+  legal_foundation: "Foundations",
+  plebiscite: "Foundations",
+  transition: "Foundations",
+  electoral_code: "Foundations",
+  postponement: "Postponements & resets",
+  deferment: "Postponements & resets",
+  postponement_law: "Postponements & resets",
+  court_decision: "Postponements & resets",
+  court_ruling: "Postponements & resets",
+  appointment: "Postponements & resets",
+  legislation: "Postponements & resets",
+  comelec_resolution: "Road to Election Day",
+  filing_period: "Road to Election Day",
+  candidate_list: "Road to Election Day",
+  election_period: "Road to Election Day",
+  campaign_period: "Road to Election Day",
+  milestone: "Road to Election Day",
+  election_day: "Road to Election Day",
+};
+
+const phaseOrder = [
+  "Foundations",
+  "Postponements & resets",
+  "Road to Election Day",
+];
+
+function eventPhase(event: TimelineEvent): string {
+  return phaseByEventType[event.event_type ?? ""] ?? "Road to Election Day";
+}
+
+function timeValue(value: string): number {
+  const parsed = parseDate(value);
+  if (parsed && !Number.isNaN(parsed.getTime())) return parsed.getTime();
+  const yearMatch = value.match(/\d{4}/);
+  return yearMatch ? new Date(`${yearMatch[0]}-01-01`).getTime() : 0;
+}
+
+function fullTimeline(): TimelineEvent[] {
+  return [...workspace.timeline, ...supplement.timeline_additions].sort(
+    (a, b) => timeValue(a.date) - timeValue(b.date),
+  );
+}
+
+export function getTimelineViewModel() {
+  const events = fullTimeline();
+
+  const phases = phaseOrder
+    .map((phase) => ({
+      phase,
+      events: events.filter((event) => eventPhase(event) === phase),
+    }))
+    .filter((group) => group.events.length > 0);
+
+  const eventTypes = Array.from(
+    new Set(events.map((event) => event.event_type).filter(Boolean)),
+  ) as string[];
+
+  return { events, phases, eventTypes, eventPhase };
+}
+
+// --- Sources ----------------------------------------------------------------
+
+export function getSourcesViewModel() {
+  const sources = workspace.sources;
+  const byId = new Map(sources.map((source) => [source.id, source]));
+
+  const groups = (workspace.source_groups ?? []).map((group) => ({
+    ...group,
+    sources: group.source_ids
+      .map((id) => byId.get(id))
+      .filter((source): source is Source => Boolean(source)),
+  }));
+
+  const grouped = new Set(groups.flatMap((group) => group.source_ids));
+  const ungrouped = sources.filter((source) => !grouped.has(source.id));
+
+  return { sources, groups, ungrouped, supplementSources: supplement.sources };
+}
+
+export type LatestNewsItem = {
+  id: string;
+  title: string;
+  publisher: string;
+  date: string;
+  url?: string;
+  summary: string;
+};
+
+// Most recent reporting, drawn from the news-type sources in both the workspace
+// and the researched supplement, newest first.
+export function getLatestNews(limit = 10): LatestNewsItem[] {
+  return [...workspace.sources, ...supplement.sources]
+    .filter((source) => Boolean(source.date) && (source.type ?? "").includes("news"))
+    .sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""))
+    .slice(0, limit)
+    .map((source) => ({
+      id: source.id,
+      title: source.title,
+      publisher: source.publisher ?? "",
+      date: source.date as string,
+      url: source.url,
+      summary: source.summary ?? source.description ?? "",
+    }));
+}
+
+// --- Master view model ------------------------------------------------------
 
 export function getElectionViewModel() {
-  const sectoralByParty = countSectoralByParty();
-  const districtByParty = countDistrictByParty();
-  const partyIds = new Set(workspace.regional_parties.map((party) => party.party_id));
-
-  const parties = workspace.regional_parties.map((party) => ({
-    ...party,
-    computedStats: {
-      sectoralCandidates: sectoralByParty.get(party.party_id) ?? 0,
-      districtCocFilers: districtByParty.get(party.party_id) ?? 0,
-      legacyNominees:
-        party.legacy_party_representative_nominees_2025_reference?.nominees?.length ??
-        0,
-    },
-  }));
+  const parties = allParties();
+  const partyIds = new Set(parties.map((party) => party.party_id));
 
   const linkedDistrictCandidates =
     workspace.district_representative_candidates.candidates.filter((candidate) =>
@@ -328,12 +658,23 @@ export function getElectionViewModel() {
     districtAreas: workspace.district_representative_candidates.districts_by_area,
     timeline: workspace.timeline,
     sources: workspace.sources,
+    otherDistrictParties:
+      workspace.other_district_parties_or_labels_not_in_13_regional_party_representative_ballot ??
+      [],
     dataQuality: Object.entries(workspace.data_quality_summary),
+    contextFacts: supplement.context_facts,
+    keyFigures: supplement.key_figures,
+    supplementStatistics: supplement.statistics,
+    supplementNote: supplement.note,
     metadata: {
       datasetName: workspace.dataset_name,
+      schemaVersion: workspace.schema_version,
       generatedAt: formatDateTime(workspace.generated_at),
+      generatedAtRaw: workspace.generated_at,
       electionDay: formatDate(workspace.election.election_day),
-      districtStatus: labelize(workspace.district_representative_candidates.status),
+      districtStatus: labelize(
+        workspace.district_representative_candidates.status,
+      ),
     },
     stats: {
       totalSeats: workspace.election.parliament_structure.total_seats,
@@ -343,10 +684,12 @@ export function getElectionViewModel() {
         workspace.election.parliament_structure.single_member_district_seats,
       sectoralOrReservedSeats:
         workspace.election.parliament_structure.sectoral_or_reserved_seats,
-      majorityThreshold: workspace.election.parliament_structure.majority_threshold,
+      majorityThreshold:
+        workspace.election.parliament_structure.majority_threshold,
       regionalParties: workspace.regional_parties.length,
       sectoralCandidates: workspace.sectoral_candidates.length,
-      districtCocFilers: workspace.district_representative_candidates.candidate_count,
+      districtCocFilers:
+        workspace.district_representative_candidates.candidate_count,
       linkedDistrictCandidates,
       timelineEvents: workspace.timeline.length,
       sources: workspace.sources.length,
