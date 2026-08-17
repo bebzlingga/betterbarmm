@@ -1,0 +1,203 @@
+{
+  "record_type": "parliament_bill",
+  "basic_information": {
+    "bill_number": 416,
+    "short_title": "Creates Two Parliamentary Districts in the Special Geographic",
+    "official_title": "AN ACT CREATING TWO PARLIAMENTARY DISTRICTS IN THE SPECIAL GEOGRAPHIC AREA (63 BARANGAYS)",
+    "type": "Parliament Bill",
+    "session": "4th Regular Session (2025-)",
+    "date_filed": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "current_status": "Archived",
+    "status_as_of": "2026-01-12",
+    "date_approved": null
+  },
+  "citizen_summary": {
+    "what_is_this_about": "Creates Two Parliamentary Districts in the Special Geographic Area (63 Barangays).",
+    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note of the bill)",
+    "what_will_change": "Creates Two Parliamentary Districts in the Special Geographic Area (63 Barangays).",
+    "who_will_be_affected": [
+      "Barangay residents",
+      "COMELEC",
+      "Candidates",
+      "LGUs",
+      "Voters"
+    ],
+    "when_will_it_take_effect": "Only upon approval by Parliament and effectivity clause; this bill is not yet law",
+    "what_this_means_for_you": {
+      "in_short": "PROPOSAL: An election law: it changes the rules or the map for how you choose the Bangsamoro Parliament, with direct effect on the September 14, 2026 first regular elections. (This describes what the bill would do if enacted.)",
+      "in_practice": [
+        "Affects ballots, districts, parties, or procedures for the 2026 polls",
+        "Read together with the Electoral Code (BAA 35) and the Supreme Court's districting rulings"
+      ],
+      "for_specific_groups": {
+        "Voters": "May change your district or your ballot's format",
+        "Candidates & parties": "Compliance requirements may shift"
+      },
+      "where_this_applies": "All of BARMM",
+      "when_you_will_feel_it": "Not yet - only if and when enacted",
+      "what_you_can_do": [
+        "This is the stage where public input matters most: submit a position paper via the Parliament's 'Call for Position Papers' page",
+        "Attend or watch the committee hearings (schedules are on the Parliament site; many are livestreamed)",
+        "Contact a Member of Parliament - the 'Contact an MP' page lists them - to support, oppose, or suggest changes"
+      ],
+      "watch_out_for": [
+        "Nothing changes yet: a bill has no legal effect until Parliament approves it and it is enacted as a Bangsamoro Autonomy Act. Many bills are revised or merged along the way."
+      ],
+      "key_terms_explained": {
+        "First Reading": "The bill's title is read in plenary and it is referred to a committee - the earliest formal stage.",
+        "Committee stage": "A committee studies the bill, holds hearings, and can rewrite it before plenary debate.",
+        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
+      },
+      "status_note": "Bill status: Archived (as of 2026-01-12). Archived bills are dead in this form - usually merged into a consolidated bill.",
+      "benefits": {
+        "headline": "IF ENACTED: A real vote in choosing your own regional government.",
+        "direct_benefits": [
+          {
+            "benefit": "Your ballot elects the Bangsamoro Parliament on Sept 14, 2026 - district, party, and sectoral seats",
+            "who_gets_it": "Registered voters in BARMM",
+            "how_to_access": "Register/verify with COMELEC; vote on election day"
+          },
+          {
+            "benefit": "Clear district representation: a specific representative answerable to your area",
+            "who_gets_it": "District residents",
+            "how_to_access": "Know your district under BAA 86"
+          },
+          {
+            "benefit": "Sectoral seats give organized sectors (women, youth, ulama, IPs, etc.) guaranteed voices",
+            "who_gets_it": "Sectoral communities",
+            "how_to_access": "Through accredited sectoral organizations"
+          }
+        ],
+        "indirect_benefits": [
+          "Accountability: appointed transition officials give way to officials you can vote out"
+        ],
+        "limitations": [
+          "This bill is ARCHIVED - these prospective benefits now ride on whichever consolidated bill replaced it.",
+          "ALL benefits here are prospective: this is a bill, not a law. Nothing can be claimed unless it is enacted.",
+          "Election laws confer process rights, not material benefits; their value is exercised at the precinct"
+        ]
+      }
+    }
+  },
+  "key_provisions": [
+    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+  ],
+  "impact": {
+    "who_benefits": [
+      "Barangay residents",
+      "COMELEC",
+      "Candidates",
+      "LGUs",
+      "Voters"
+    ],
+    "impact_tags": [
+      "elections_districting",
+      "local_government"
+    ],
+    "estimated_beneficiaries": null,
+    "allocated_budget": null,
+    "figures_note": "Beneficiary/budget figures are only shown when stated in official documents; none captured for this record."
+  },
+  "legislative_journey": [
+    {
+      "stage": "Filed",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "First Reading",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Second Reading - Committee",
+      "reached": true,
+      "date": "2026-01-12"
+    },
+    {
+      "stage": "Second Reading - Plenary",
+      "reached": false,
+      "date": null
+    },
+    {
+      "stage": "Third Reading",
+      "reached": false,
+      "date": null
+    },
+    {
+      "stage": "Approved by Parliament",
+      "reached": false,
+      "date": null
+    },
+    {
+      "stage": "Enacted (BAA)",
+      "reached": false,
+      "date": null
+    },
+    {
+      "stage": "Archived (superseded/consolidated)",
+      "reached": true,
+      "date": "2026-01-12"
+    }
+  ],
+  "authors_and_sponsors": {
+    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "sponsor": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "note": "Listed on the bill's official page under General Information."
+  },
+  "related_documents": {
+    "original_bill_pdf": "On the bill's official page",
+    "committee_report": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "approved_version": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "irr": null
+  },
+  "related_legislation": {
+    "amends": [],
+    "repeals": [],
+    "related_bills": []
+  },
+  "implementation_status": {
+    "law_enacted": false,
+    "note": "Not applicable - bill not yet enacted."
+  },
+  "citizen_questions": [
+    {
+      "q": "Is this already a law?",
+      "a": "No - archived (usually superseded by a consolidated bill on the same subject)."
+    },
+    {
+      "q": "How can I support or oppose this bill?",
+      "a": "Submit a position paper via the Parliament's Call for Position Papers page, or attend/watch the responsible committee's public hearings."
+    },
+    {
+      "q": "Where do I read the full text?",
+      "a": "The bill's page on parliament.bangsamoro.gov.ph (Bills index) links the PDF and legislative history."
+    }
+  ],
+  "display_header": {
+    "line1": "Parliament Bill No. 416",
+    "line2": "Creates Two Parliamentary Districts in the Special Geographic",
+    "badges": [
+      "ARCHIVED",
+      "Elections Districting",
+      "Local Government",
+      "2026"
+    ],
+    "what_this_does": "Creates Two Parliamentary Districts in the Special Geographic Area (63 Barangays).",
+    "who_it_affects": "Barangay residents · COMELEC · Candidates · LGUs"
+  },
+  "views": {
+    "simple": "Creates Two Parliamentary Districts in the Special Geographic Area (63 Barangays).",
+    "official": "AN ACT CREATING TWO PARLIAMENTARY DISTRICTS IN THE SPECIAL GEOGRAPHIC AREA (63 BARANGAYS)"
+  },
+  "implementing_agency_if_enacted": {
+    "agency": "Bangsamoro Electoral Office / COMELEC",
+    "inferred": true
+  },
+  "provenance": {
+    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
+    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+  }
+}

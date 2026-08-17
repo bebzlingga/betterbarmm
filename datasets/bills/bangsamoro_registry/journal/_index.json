@@ -1,0 +1,535 @@
+{
+ "meta": {
+  "record_type": "journal_index",
+  "status": "CAPTURED",
+  "captured": "2026-08-15",
+  "source": [
+   "https://parliament.bangsamoro.gov.ph/journal-19/",
+   "https://parliament.bangsamoro.gov.ph/journals-22/"
+  ],
+  "note": "Every journal Parliament publishes on its two archive pages. The site lists 52 in all \u2014 30 for BTA1 (2019-2022) and 22 for BTA2, the latest being Journal No. 22 of March 2023. No journal has been published for the sittings since, and the numbering has gaps within each era, so this is the whole of what is published rather than the whole of what was sat.",
+  "count": 52
+ },
+ "journals": [
+  {
+   "journal_number": "1",
+   "title": "Journal No. 1 of March 29, 2019 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "1",
+   "date": "2019-03-29",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-1-of-march-29-2019-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/05/Journal-No.-01.pdf"
+  },
+  {
+   "journal_number": "2",
+   "title": "Journal No. 2 of April 22, 2019 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "2",
+   "date": "2019-04-22",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-2-of-april-22-2019/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/Journal-No.-02.pdf"
+  },
+  {
+   "journal_number": "3",
+   "title": "Journal No. 3 of April 23, 2019 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "3",
+   "date": "2019-04-23",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-3-of-april-23-2019-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/05/Journal-No.-03.pdf"
+  },
+  {
+   "journal_number": "4",
+   "title": "Journal No. 4 of April 24, 2019 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "4",
+   "date": "2019-04-24",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-04-of-april-24-2019-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/05/Journal-No.-04.pdf"
+  },
+  {
+   "journal_number": "5",
+   "title": "Journal No. 5 of May 20, 2019 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "5",
+   "date": "2019-05-20",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-5-of-may-20-2019-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-05.pdf"
+  },
+  {
+   "journal_number": "6",
+   "title": "Journal No. 6 of May 21, 2019 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "6",
+   "date": "2019-05-21",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-6-of-may-21-2019-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-06.pdf"
+  },
+  {
+   "journal_number": "7",
+   "title": "Journal No. 7 of May 22, 2019 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "7",
+   "date": "2019-05-22",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-7-of-may-22-2019-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-07.pdf"
+  },
+  {
+   "journal_number": "9",
+   "title": "Journal No. 9 of June 25, 2019 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "9",
+   "date": "2019-06-25",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-9-of-june-25-2019-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-09.pdf"
+  },
+  {
+   "journal_number": "10",
+   "title": "Journal No. 10 of June 26, 2019 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "10",
+   "date": "2019-06-26",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-10-of-june-26-2019-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-10.pdf"
+  },
+  {
+   "journal_number": "11",
+   "title": "Journal No. 11 of July 29, 2019 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "11",
+   "date": "2019-07-29",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-11-of-july-29-2019-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-11.pdf"
+  },
+  {
+   "journal_number": "12",
+   "title": "Journal No. 12 of July 30-31, 2019 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "12",
+   "date": "2019-07-30",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-12-of-july-30-31-2019-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-12.pdf"
+  },
+  {
+   "journal_number": "14",
+   "title": "Journal No. 14 of August 28-29, 2019 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "14",
+   "date": "2019-08-28",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-14-of-august-28-29-2019-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-14.pdf"
+  },
+  {
+   "journal_number": "15",
+   "title": "Journal No. 15 of August 30, 2019 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "15",
+   "date": "2019-08-30",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-15-of-august-30-2019-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-15.pdf"
+  },
+  {
+   "journal_number": "16",
+   "title": "Journal No. 16 of September 18, 2019 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "16",
+   "date": "2019-09-18",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-16-of-september-18-2019-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-16.pdf"
+  },
+  {
+   "journal_number": "17",
+   "title": "Journal No. 17 of September 19-20, 2019 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "17",
+   "date": "2019-09-19",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-17-of-september-19-20-2019-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-17.pdf"
+  },
+  {
+   "journal_number": "18",
+   "title": "Journal No. 18 of September 25, 2019 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "18",
+   "date": "2019-09-25",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-18-of-september-25-2019-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-18.pdf"
+  },
+  {
+   "journal_number": "50",
+   "title": "Journal No. 50 for January 26, 2020 Plenary Session",
+   "session": "Second Regular Session",
+   "plenary_session_number": "54",
+   "date": "2020-01-26",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-50-for-january-26-2020-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-50.pdf"
+  },
+  {
+   "journal_number": "38",
+   "title": "Journal No. 38 of July 16, 2020 Plenary Session",
+   "session": "Second Regular Session",
+   "plenary_session_number": "38",
+   "date": "2020-07-16",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-38-of-july-16-2020-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-38.pdf"
+  },
+  {
+   "journal_number": "39",
+   "title": "Journal No. 39 of July 21, 2020 Plenary Session",
+   "session": "Second Regular Session",
+   "plenary_session_number": "39",
+   "date": "2020-07-21",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-39-of-july-21-2020-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-39.pdf"
+  },
+  {
+   "journal_number": "41",
+   "title": "Journal No. 41 of July 23, 2020 Plenary Session",
+   "session": "Second Regular Session",
+   "plenary_session_number": "41",
+   "date": "2020-07-23",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-41-of-july-23-2020-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-41.pdf"
+  },
+  {
+   "journal_number": "42",
+   "title": "Journal No. 42 of August 26-27, 2020 Plenary Session",
+   "session": "Second Regular Session",
+   "plenary_session_number": "42",
+   "date": "2020-08-26",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-42-of-august-26-27-2020-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-42.pdf"
+  },
+  {
+   "journal_number": "43",
+   "title": "Journal No. 43 of September 17, 2020 Plenary Session",
+   "session": "Second Regular Session",
+   "plenary_session_number": "43",
+   "date": "2020-09-17",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-43-of-september-17-2020-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-43.pdf"
+  },
+  {
+   "journal_number": "44",
+   "title": "Journal No. 44 of November 17, 2020 Plenary Session",
+   "session": "Second Regular Session",
+   "plenary_session_number": "44",
+   "date": "2020-11-17",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-44-of-november-17-2020-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-44.pdf"
+  },
+  {
+   "journal_number": "45",
+   "title": "Journal No. 45 of November 25-26, 2020 Plenary Session",
+   "session": "Second Regular Session",
+   "plenary_session_number": "45",
+   "date": "2020-11-25",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-45-of-november-25-26-2020-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-45.pdf"
+  },
+  {
+   "journal_number": "46",
+   "title": "Journal No. 46 of December 16, 2020 Plenary Session",
+   "session": "Second Regular Session",
+   "plenary_session_number": "46",
+   "date": "2020-12-16",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-46-of-december-16-2020-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-46.pdf"
+  },
+  {
+   "journal_number": "47",
+   "title": "Journal No. 47 of December 17, 2020 Plenary Session",
+   "session": "Second Regular Session",
+   "plenary_session_number": "47",
+   "date": "2020-12-17",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-47-of-december-17-2020-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-47.pdf"
+  },
+  {
+   "journal_number": "49",
+   "title": "Journal No. 49 for January 19, 2021 Plenary Session",
+   "session": "Second Regular Session",
+   "plenary_session_number": "49",
+   "date": "2021-01-19",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-49-for-january-19-2021-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-49.pdf"
+  },
+  {
+   "journal_number": "51",
+   "title": "Journal No. 51 of January 27-28, 2021 Plenary Session",
+   "session": "Second Regular Session",
+   "plenary_session_number": "51",
+   "date": "2021-01-27",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-51-of-january-27-28-2021-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-51.pdf"
+  },
+  {
+   "journal_number": "52",
+   "title": "Journal No. 52 of February 16-18, 2021 Plenary Session",
+   "session": "Second Regular Session",
+   "plenary_session_number": "52",
+   "date": "2021-02-16",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-52-of-february-16-18-2021-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-52.pdf"
+  },
+  {
+   "journal_number": "54",
+   "title": "Journal No. 54 of February 24, 2021 Plenary Session",
+   "session": "Second Regular Session",
+   "plenary_session_number": "54",
+   "date": "2021-02-24",
+   "parliament": "BTA1 (2019-2022)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals/journal-no-54-of-february-24-2021-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/06/Journal-No.-54.pdf"
+  },
+  {
+   "journal_number": "1",
+   "title": "Journal No. 1 of Safar 19, 1444 | September 15, 2022 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "1",
+   "date": "2022-09-15",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-1-of-safar-19-1444-september-15-2022-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/10/Journal-No.-1.pdf"
+  },
+  {
+   "journal_number": "2",
+   "title": "Journal No. 2 of Safar 24, 1444 | September 20, 2022 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "2",
+   "date": "2022-09-20",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-2-of-safar-24-1444-september-20-2022-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/10/Journal-No.-2.pdf"
+  },
+  {
+   "journal_number": "3",
+   "title": "Journal No. 3 of Safar 25-26, 1444 | September 21-22, 2022 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "3",
+   "date": "2022-09-21",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-3-of-safar-25-26-1444-september-21-22-2022-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/10/Journal-No.-3.pdf"
+  },
+  {
+   "journal_number": "4",
+   "title": "Journal No. 4 of Safar 30, 1444 | September 26, 2022 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "4",
+   "date": "2022-09-26",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-4-of-safar-30-1444-september-26-2022-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/10/Journal-No.-4.pdf"
+  },
+  {
+   "journal_number": "5",
+   "title": "Journal No. 5 of Rabi ul Awwal 01, 1444 | September 27, 2022 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "5",
+   "date": "2022-09-27",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-5-of-rabi-ul-awwal-01-1444-september-27-2022-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/10/Journal-No.-5.pdf"
+  },
+  {
+   "journal_number": "6",
+   "title": "Journal No. 6 of Rabi ul Awwal 02, 1444 | September 28, 2022 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "6",
+   "date": "2022-09-28",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-6-of-rabi-ul-awwal-02-1444-september-28-2022-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/10/Journal-No.-6.pdf"
+  },
+  {
+   "journal_number": "7",
+   "title": "Journal No. 7 of Rabi ul Awwal 03, 1444 | September 29, 2022 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "7",
+   "date": "2022-09-29",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-7-of-rabi-ul-awwal-03-1444-september-29-2022-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/12/Journal-No.-07.pdf"
+  },
+  {
+   "journal_number": "8",
+   "title": "Journal No. 8 of Rabi Al-Awwal 21, 1444 | October 17, 2022 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "8",
+   "date": "2022-10-17",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-8-of-rabi-al-awwal-21-1444-october-17-2022-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/12/Journal-No.-08.pdf"
+  },
+  {
+   "journal_number": "9",
+   "title": "Journal No. 9 of Rabi Al-Akhir 27, 1444 | November 21, 2022 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "9",
+   "date": "2022-11-21",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-9-of-rabi-al-akhir-27-1444-november-21-2022-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/12/Journal-No.-09.pdf"
+  },
+  {
+   "journal_number": "10",
+   "title": "Journal No. 10 of Rabi Al-Akhir 28, 1444 | November 22, 2022 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "10",
+   "date": "2022-11-22",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-10-of-rabi-al-akhir-28-1444-november-22-2022-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/12/Journal-No.-10.pdf"
+  },
+  {
+   "journal_number": "11",
+   "title": "Journal No. 11 of Jumada Al-Awwal 26, 1444 | December 20, 2022 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "11",
+   "date": "2022-12-20",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-11-of-jumada-al-awwal-26-1444-december-20-2022-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/02/Journal-No.-11.pdf"
+  },
+  {
+   "journal_number": "12",
+   "title": "Journal No. 12 Jumada Al-Awwal 27-28, 1444 | December 21-22, 2022 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "12",
+   "date": "2022-12-21",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-12-jumada-al-awwal-27-28-1444-december-21-22-2022-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/04/Journal-No.-12.pdf"
+  },
+  {
+   "journal_number": "13",
+   "title": "Journal No. 13 Jumada Al- Akhirah 23, 1444 | January 16, 2023 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "13",
+   "date": "2023-01-16",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-13-jumada-al-akhirah-23-1444-january-16-2023-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/04/Journal-No.-13.pdf"
+  },
+  {
+   "journal_number": "14",
+   "title": "Journal No. 14 Jumada Al- Akhirah 23, 1444 | January 17, 2023 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "14",
+   "date": "2023-01-17",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-14-jumada-al-akhirah-23-1444-january-17-2023-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/04/Journal-No.-14.pdf"
+  },
+  {
+   "journal_number": "15",
+   "title": "Journal No. 15 Jumada Al-Akhirah 25, 1444 AH | January 18, 2023 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "15",
+   "date": "2023-01-18",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-15-jumada-al-akhirah-25-1444-ah-january-18-2023-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/04/Journal-No.-15.pdf"
+  },
+  {
+   "journal_number": "16",
+   "title": "Journal No. 16 Jumada Al-Akhirah 26, 1444/January 19, 2023 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "16",
+   "date": "2023-01-19",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-16-jumada-al-akhirah-26-1444-january-19-2023-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/04/Journal-No.-16.pdf"
+  },
+  {
+   "journal_number": "17",
+   "title": "Journal No. 17 Rajab 02, 1444/January 24, 2023 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "17",
+   "date": "2023-01-24",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-17-rajab-02-1444-january-24-2023-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/04/Journal-No.-17.pdf"
+  },
+  {
+   "journal_number": "18",
+   "title": "Journal No. 18 Jumada Al-Akhirah 3, 1444 | January 25, 2023 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "18",
+   "date": "2023-01-25",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-18-jumada-al-akhirah-3-1444-january-25-2023-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/04/Journal-No.-18.pdf"
+  },
+  {
+   "journal_number": "19",
+   "title": "Journal No. 19 Rajab 04, 1444/January 26, 2023 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "19",
+   "date": "2023-01-26",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-19-rajab-04-1444-january-26-2023-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/04/Journal-No.-19.pdf"
+  },
+  {
+   "journal_number": "20",
+   "title": "Journal No. 20 Rajab 26, 1444/February 17, 2023 Special Session No. 1",
+   "session": "First Regular Session",
+   "plenary_session_number": "20",
+   "date": "2023-02-17",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-20-rajab-26-1444-february-17-2023-special-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/07/Journal-No.-20-Special-Session-No.-1.pdf"
+  },
+  {
+   "journal_number": "21",
+   "title": "Journal No. 21 Sha\u2019ban 15 &16, 1444/March 07 & 08, 2023 Special Session No. 2",
+   "session": "First Regular Session",
+   "plenary_session_number": "21",
+   "date": "2023-03-07",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-21-shaban-15-16-1444-march-07-08-2023-special-session-no-2/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/07/Journal-No.-21.pdf"
+  },
+  {
+   "journal_number": "22",
+   "title": "Journal No. 22 Sha\u2019ban 28 & 29, 1444/March 20 &21, 2023 Plenary Session",
+   "session": "First Regular Session",
+   "plenary_session_number": "22",
+   "date": "2023-03-20",
+   "parliament": "BTA2 (2022-2025)",
+   "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-22-shaban-28-29-1444-march-20-21-2023-plenary-session/",
+   "pdf_url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/07/Journal-No.-22.pdf"
+  }
+ ]
+}

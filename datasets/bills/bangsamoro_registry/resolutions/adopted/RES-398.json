@@ -1,0 +1,113 @@
+{
+  "record_type": "adopted_resolution",
+  "basic_information": {
+    "resolution_number": 398,
+    "short_title": "Inviting CAAP/DPWH/MOTC/airlines to report on Awang Airport rehabilitation status",
+    "official_title": "pending_capture: available on the measure's official page / full text, not yet scraped (condensed summary shown)",
+    "type": "Adopted Resolution",
+    "date_adopted": "2023-09-19",
+    "current_status": "ADOPTED"
+  },
+  "citizen_summary": {
+    "what_is_this_about": "Inviting CAAP/DPWH/MOTC/airlines to report on Awang Airport rehabilitation status.",
+    "who_will_be_affected": [
+      "Commuters",
+      "LGUs"
+    ],
+    "is_it_binding": "Resolutions express Parliament's official position or direct BARMM offices; unlike Autonomy Acts they generally do not create binding law for the public, but internal-rules resolutions bind the Parliament itself.",
+    "what_this_means_for_you": {
+      "in_short": "Res. 398 (2023): Inviting CAAP/DPWH/MOTC/airlines to report on Awang Airport rehabilitation status. A message to Manila: the Parliament formally asking the national government (Congress, the President, national agencies, the courts) to act on something BARMM cannot decide alone. Its power is persuasive - it documents the region's official position in the intergovernmental relationship.",
+      "for_specific_groups": {
+        "Residents": "Issues like new provinces, courts, highways, or transition timelines run through these asks",
+        "National officials": "The Bangsamoro's position, on the record"
+      },
+      "watch_out_for": [
+        "Implementation depends entirely on national actors - these are requests, not commands"
+      ],
+      "in_practice": [
+        "Type: national intergovernmental"
+      ],
+      "where_this_applies": "All of BARMM unless the title names a specific place",
+      "when_you_will_feel_it": "Immediately as an official position; concrete action depends on the addressed agency",
+      "what_you_can_do": [
+        "If the resolution urges an agency to act, cite it when following up with that agency",
+        "Share it - resolutions gain force through public attention",
+        "Ask your MP to follow through with legislation if the issue needs a binding law"
+      ],
+      "key_terms_explained": {
+        "Adopted resolution": "An official position or instruction of the Parliament - persuasive and political, but not a law binding the public.",
+        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
+      },
+      "benefits": {
+        "headline": "The region's interests pressed in Manila.",
+        "direct_benefits": [
+          {
+            "benefit": "Your issue (courts, highways, provinces, timelines) carried as BARMM's official position",
+            "who_gets_it": "Affected residents",
+            "how_to_access": "Track the national counterpart's response"
+          }
+        ],
+        "indirect_benefits": [
+          "Builds the intergovernmental record autonomy depends on"
+        ],
+        "limitations": [
+          "A request, not a command - national actors decide"
+        ]
+      }
+    }
+  },
+  "impact": {
+    "impact_tags": [
+      "infrastructure_transport",
+      "national_intergovernmental"
+    ],
+    "who_benefits": [
+      "Commuters",
+      "LGUs"
+    ]
+  },
+  "legislative_journey": [
+    {
+      "stage": "Proposed",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Adopted in plenary",
+      "reached": true,
+      "date": "2023-09-19"
+    }
+  ],
+  "authors_and_sponsors": {
+    "authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "note": "On the resolution's official page."
+  },
+  "related_documents": {
+    "pdf": "On the Adopted Resolutions index at parliament.bangsamoro.gov.ph"
+  },
+  "citizen_questions": [
+    {
+      "q": "Does this resolution change the law?",
+      "a": "No - it expresses a position, urges, directs, or commends. Law changes require a Bangsamoro Autonomy Act."
+    },
+    {
+      "q": "Who is it addressed to?",
+      "a": "National government agencies/Congress"
+    }
+  ],
+  "display_header": {
+    "line1": "Adopted Resolution No. 398",
+    "line2": "Inviting CAAP/DPWH/MOTC/airlines to report on Awang Airport rehabilita...",
+    "badges": [
+      "ADOPTED",
+      "National Intergovernmental",
+      "2023"
+    ],
+    "what_this_does": "Inviting CAAP/DPWH/MOTC/airlines to report on Awang Airport rehabilitation status.",
+    "who_it_affects": "Commuters · LGUs"
+  },
+  "provenance": {
+    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
+    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+  }
+}

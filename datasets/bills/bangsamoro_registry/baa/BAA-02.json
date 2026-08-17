@@ -1,0 +1,165 @@
+{
+  "record_type": "bangsamoro_autonomy_act",
+  "basic_information": {
+    "baa_number": 2,
+    "short_title": "Adopts the Official Emblem for the Bangsamoro Autonomous",
+    "official_title": "AN ACT ADOPTING THE OFFICIAL EMBLEM FOR THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO",
+    "type": "Bangsamoro Autonomy Act (regional law)",
+    "enacting_parliament": "BTA1",
+    "date_ratified": "2019-08-29",
+    "current_status": "ENACTED - IN FORCE"
+  },
+  "citizen_summary": {
+    "what_is_this_about": "Adopts the Official Emblem for the Bangsamoro Autonomous Region in Muslim Mindanao.",
+    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
+    "what_will_change": "Adopts the Official Emblem for the Bangsamoro Autonomous Region in Muslim Mindanao.",
+    "who_will_be_affected": [
+      "Employees & students",
+      "Communities"
+    ],
+    "when_will_it_take_effect": "Ratified 2019-08-29; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
+    "what_this_means_for_you": {
+      "in_short": "An identity law: it defines an official symbol or observance of the Bangsamoro (flag, emblem, hymn, seal, calendar, holidays, or memorials). It doesn't hand out benefits, but it shapes the public face of the region you live in - what flies over government buildings, what days are non-working, how the Bangsamoro story is told.",
+      "in_practice": [
+        "Government offices, schools, and LGUs must use/observe it",
+        "Holiday-related acts affect work and class suspensions region-wide",
+        "Memorial acts create public sites and commemorations"
+      ],
+      "for_specific_groups": {
+        "Employees & students": "Regional holidays and observances flow from these laws",
+        "Communities": "Shared symbols of the autonomy won through the peace process"
+      },
+      "where_this_applies": "All of BARMM",
+      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
+      "what_you_can_do": [
+        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
+        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
+        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
+      ],
+      "watch_out_for": [],
+      "key_terms_explained": {
+        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
+        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
+        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
+      },
+      "benefits": {
+        "headline": "Identity, recognition, and (for holiday laws) actual days off.",
+        "direct_benefits": [
+          {
+            "benefit": "Official identity: the symbols/observances of your autonomous region",
+            "who_gets_it": "All residents",
+            "how_to_access": "Public display and observance"
+          }
+        ],
+        "indirect_benefits": [
+          "Cultural pride and the normalization of Bangsamoro identity in public life"
+        ],
+        "limitations": [
+          "Symbolic laws confer no monetary claims"
+        ]
+      }
+    }
+  },
+  "key_provisions": [
+    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+  ],
+  "impact": {
+    "who_benefits": [
+      "General public"
+    ],
+    "impact_tags": [
+      "other",
+      "symbols_identity"
+    ],
+    "estimated_beneficiaries": null,
+    "allocated_budget": null,
+    "figures_note": "Shown only when stated in official documents; none captured for this record."
+  },
+  "legislative_journey": [
+    {
+      "stage": "Filed as a bill",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Committee & plenary readings",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Third Reading",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Approved & Ratified",
+      "reached": true,
+      "date": "2019-08-29"
+    }
+  ],
+  "authors_and_sponsors": {
+    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "note": "Authors are recorded on the origin bill's page."
+  },
+  "related_documents": {
+    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
+    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
+  },
+  "related_legislation": {
+    "amends": [],
+    "amended_by": [],
+    "repeals": null,
+    "origin_bill": null
+  },
+  "implementation_status": {
+    "law_enacted": true,
+    "in_force": true,
+    "legal_challenge_note": null,
+    "irr_issued": "unknown - IRR registry pending capture",
+    "implementing_agency": {
+      "agency": "Office of the Chief Minister",
+      "inferred": true
+    },
+    "budget_appropriated": "Not stated in title"
+  },
+  "citizen_questions": [
+    {
+      "q": "Is this law in force?",
+      "a": "Yes - ratified 2019-08-29 and in force unless amended (see related legislation)."
+    },
+    {
+      "q": "Who implements it?",
+      "a": "Office of the Chief Minister (inferred from the law's subject; the Act itself designates the lead)."
+    },
+    {
+      "q": "Does it have implementing rules (IRR)?",
+      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
+    },
+    {
+      "q": "Where do I read the full text?",
+      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
+    }
+  ],
+  "display_header": {
+    "line1": "Bangsamoro Autonomy Act No. 2",
+    "line2": "Adopts the Official Emblem for the Bangsamoro Autonomous",
+    "badges": [
+      "ENACTED",
+      "Symbols Identity",
+      "2019"
+    ],
+    "what_this_does": "Adopts the Official Emblem for the Bangsamoro Autonomous Region in Muslim Mindanao.",
+    "who_it_affects": "General public",
+    "effective": "2019-08-29"
+  },
+  "views": {
+    "simple": "Adopts the Official Emblem for the Bangsamoro Autonomous Region in Muslim Mindanao.",
+    "official": "AN ACT ADOPTING THE OFFICIAL EMBLEM FOR THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO"
+  },
+  "provenance": {
+    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
+    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "record_type": "parliament_bill",
+  "basic_information": {
+    "bill_number": 136,
+    "short_title": "Creates the Municipality of Ligawasan",
+    "official_title": "AN ACT CREATING THE MUNICIPALITY OF LIGAWASAN",
+    "type": "Parliament Bill",
+    "session": "2nd Regular Session (2022-2023)",
+    "date_filed": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "current_status": "Approved",
+    "status_as_of": "2023-08-17",
+    "date_approved": "2023-08-17"
+  },
+  "citizen_summary": {
+    "what_is_this_about": "Creates the Municipality of Ligawasan.",
+    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note of the bill)",
+    "what_will_change": "Creates the Municipality of Ligawasan.",
+    "who_will_be_affected": [
+      "Barangay residents",
+      "LGUs"
+    ],
+    "when_will_it_take_effect": "Approved; effectivity per its final clause",
+    "what_this_means_for_you": {
+      "in_short": "PROPOSAL: Creates a new municipality (Ligawasan). If you live in the covered barangays, your community gets its own municipal government - a mayor, sanggunian, municipal hall, and its own share of national and regional funds - instead of being administered from a distant town center. (This describes what the bill would do if enacted.)",
+      "in_practice": [
+        "Your own municipal share of the National Tax Allotment and Bangsamoro funds, spent locally",
+        "Closer civil registry, business permits, social services, and health station",
+        "Local elections for your own mayor, vice mayor, and councilors once the LGU is organized",
+        "Barangay boundaries stay; what changes is which town hall serves you"
+      ],
+      "for_specific_groups": {
+        "Residents": "Government services move closer; local projects are decided by officials you elect",
+        "Business owners": "Permits and local taxes are handled by the new municipality - rates are set by its own sanggunian",
+        "Job seekers": "A new LGU means new municipal government positions",
+        "SGA residents": "For the eight 2023 municipalities: these convert the Special Geographic Area's 63 barangays (which voted to join BARMM) into full local governments"
+      },
+      "where_this_applies": "Ligawasan",
+      "watch_out_for": [
+        "Nothing changes yet: a bill has no legal effect until Parliament approves it and it is enacted as a Bangsamoro Autonomy Act. Many bills are revised or merged along the way.",
+        "A new municipality begins corporate existence only after its officials are elected/qualified and offices organized - there is a transition period",
+        "Boundary and asset-sharing details with the mother municipality can take time to settle"
+      ],
+      "when_you_will_feel_it": "Not yet - only if and when enacted",
+      "what_you_can_do": [
+        "This is the stage where public input matters most: submit a position paper via the Parliament's 'Call for Position Papers' page",
+        "Attend or watch the committee hearings (schedules are on the Parliament site; many are livestreamed)",
+        "Contact a Member of Parliament - the 'Contact an MP' page lists them - to support, oppose, or suggest changes"
+      ],
+      "key_terms_explained": {
+        "First Reading": "The bill's title is read in plenary and it is referred to a committee - the earliest formal stage.",
+        "Committee stage": "A committee studies the bill, holds hearings, and can rewrite it before plenary debate.",
+        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
+      },
+      "status_note": "Bill status: Approved (as of 2023-08-17).",
+      "benefits": {
+        "headline": "Your own local government - services, budget, and representation for Ligawasan.",
+        "direct_benefits": [
+          {
+            "benefit": "Municipal services (civil registry, permits, health station, social welfare) close to home",
+            "who_gets_it": "Residents of the new municipality",
+            "how_to_access": "New municipal hall once organized"
+          },
+          {
+            "benefit": "A dedicated share of national and Bangsamoro funds spent in your own town",
+            "who_gets_it": "The whole community",
+            "how_to_access": "Automatic; monitor via the municipal budget and sanggunian sessions"
+          },
+          {
+            "benefit": "Your own elected mayor, vice mayor, and councilors answerable to you",
+            "who_gets_it": "Voters of the municipality",
+            "how_to_access": "Vote in the first municipal elections"
+          },
+          {
+            "benefit": "New municipal government jobs and local contracts",
+            "who_gets_it": "Local job seekers, suppliers",
+            "how_to_access": "Municipal HR and BAC postings"
+          }
+        ],
+        "indirect_benefits": [
+          "Faster development decisions made locally",
+          "Recognition: for SGA towns, the plebiscite promise made real"
+        ],
+        "limitations": [
+          "Now REAL, not prospective: enacted as BAA 48 - see baa/BAA-48.json for claimable benefits."
+        ]
+      }
+    }
+  },
+  "key_provisions": [
+    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+  ],
+  "impact": {
+    "who_benefits": [
+      "Barangay residents",
+      "LGUs"
+    ],
+    "impact_tags": [
+      "local_government"
+    ],
+    "estimated_beneficiaries": null,
+    "allocated_budget": null,
+    "figures_note": "Beneficiary/budget figures are only shown when stated in official documents; none captured for this record."
+  },
+  "legislative_journey": [
+    {
+      "stage": "Filed",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "First Reading",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Second Reading - Committee",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Second Reading - Plenary",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Third Reading",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Approved by Parliament",
+      "reached": true,
+      "date": "2023-08-17"
+    },
+    {
+      "stage": "Enacted (BAA)",
+      "reached": true,
+      "date": null
+    }
+  ],
+  "authors_and_sponsors": {
+    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "sponsor": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "note": "Listed on the bill's official page under General Information."
+  },
+  "related_documents": {
+    "original_bill_pdf": "On the bill's official page",
+    "committee_report": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "approved_version": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "irr": null
+  },
+  "related_legislation": {
+    "amends": [],
+    "repeals": [],
+    "related_bills": [],
+    "enacted_as": "BAA 48"
+  },
+  "implementation_status": {
+    "law_enacted": true,
+    "see": "baa/BAA-48.json"
+  },
+  "citizen_questions": [
+    {
+      "q": "Is this already a law?",
+      "a": "Approved by Parliament; enactment/numbering as a BAA follows."
+    },
+    {
+      "q": "How can I support or oppose this bill?",
+      "a": "Submit a position paper via the Parliament's Call for Position Papers page, or attend/watch the responsible committee's public hearings."
+    },
+    {
+      "q": "Where do I read the full text?",
+      "a": "The bill's page on parliament.bangsamoro.gov.ph (Bills index) links the PDF and legislative history."
+    }
+  ],
+  "display_header": {
+    "line1": "Parliament Bill No. 136",
+    "line2": "Creates the Municipality of Ligawasan",
+    "badges": [
+      "APPROVED",
+      "Local Government",
+      "2023"
+    ],
+    "what_this_does": "Creates the Municipality of Ligawasan.",
+    "who_it_affects": "Barangay residents · LGUs"
+  },
+  "views": {
+    "simple": "Creates the Municipality of Ligawasan.",
+    "official": "AN ACT CREATING THE MUNICIPALITY OF LIGAWASAN"
+  },
+  "implementing_agency_if_enacted": {
+    "agency": "MILG",
+    "inferred": true
+  },
+  "provenance": {
+    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
+    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+  }
+}

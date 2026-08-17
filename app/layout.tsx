@@ -1,5 +1,19 @@
 import type { Metadata } from "next";
+import { DM_Sans, Outfit } from "next/font/google";
 import "./globals.css";
+
+// DM Sans reads the body copy, Outfit sets headings, buttons and labels.
+// Both are variable, so every weight the design uses comes from one file each.
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "BetterBARMM",
@@ -13,19 +27,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full antialiased">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin=""
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html
+      lang="en"
+      className={`${dmSans.variable} ${outfit.variable} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

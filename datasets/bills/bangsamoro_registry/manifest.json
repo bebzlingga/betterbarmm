@@ -1,0 +1,44 @@
+{
+  "title": "Bangsamoro Legislative Registry",
+  "schema_version": "2.2 - citizen view with explicit benefits",
+  "generated": "2026-08-14",
+  "per_record_sections": [
+    "basic_information",
+    "citizen_summary (what/why/change/who/when)",
+    "key_provisions",
+    "impact (who_benefits + tags; figures only when officially stated)",
+    "legislative_journey (stage ladder with reached flags + dates)",
+    "authors_and_sponsors",
+    "related_documents",
+    "related_legislation (amends/repeals/amended_by/origin_bill)",
+    "implementation_status",
+    "citizen_questions (grounded FAQ)",
+    "display_header (portal top-of-page block)",
+    "views (simple vs official text toggle)",
+    "citizen_summary.what_this_means_for_you (in_short / in_practice / for_specific_groups / where / when / what_you_can_do / watch_out_for / key_terms_explained)",
+    "what_this_means_for_you.benefits (headline / direct_benefits[{benefit, who_gets_it, how_to_access}] / indirect_benefits / limitations)"
+  ],
+  "honesty_rules": "Fields never invent data: figures are null unless officially stated; unscraped fields say pending_capture; mapped agencies say inferred:true.",
+  "structure": {
+    "members/_index.json": "156 members",
+    "baa/": "BAA-01..94 + _index (complete)",
+    "bills/": "BILL-101..475 (192) + _index",
+    "resolutions/adopted/": "RES-368..578 (194) + _index",
+    "resolutions/proposed/, journal/, irr/": "stubs with documented schema, pending capture"
+  },
+  "portal_features_supported": [
+    "Simple/Official text toggle (views)",
+    "status badges (display_header.badges)",
+    "clickable authors -> members/_index.json",
+    "related-legislation graph",
+    "track-this-bill: poll current_status + legislative_journey"
+  ],
+  "known_gaps": [
+    "Bills 1-285",
+    "Resolutions 1-367",
+    "proposed resolutions/journals/IRRs",
+    "per-measure authors (Bill 475 only)",
+    "dates_filed, committees, explanatory notes, beneficiary/budget figures (need full-text scrape)"
+  ],
+  "citizen_view_note": "Hand-written for landmark laws (codes, electoral laws, IDP/IP rights, bereavement leave, transitional justice, mujahideen assistance, flagship hospital, etc.); rule-generated from official titles for the rest. Location, bed capacity, and amendment facts are parsed from official titles - nothing is invented."
+}

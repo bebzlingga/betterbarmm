@@ -1,0 +1,109 @@
+{
+  "record_type": "adopted_resolution",
+  "basic_information": {
+    "resolution_number": 445,
+    "short_title": "Expressing consensus on appointment of Muslim Guiamaden as Wali of the Bangsamoro",
+    "official_title": "pending_capture: available on the measure's official page / full text, not yet scraped (condensed summary shown)",
+    "type": "Adopted Resolution",
+    "date_adopted": "2024-05-13",
+    "current_status": "ADOPTED"
+  },
+  "citizen_summary": {
+    "what_is_this_about": "Expressing consensus on appointment of Muslim Guiamaden as Wali of the Bangsamoro.",
+    "who_will_be_affected": [
+      "General public"
+    ],
+    "is_it_binding": "Resolutions express Parliament's official position or direct BARMM offices; unlike Autonomy Acts they generally do not create binding law for the public, but internal-rules resolutions bind the Parliament itself.",
+    "what_this_means_for_you": {
+      "in_short": "Res. 445 (2024): Expressing consensus on appointment of Muslim Guiamaden as Wali of the Bangsamoro. Touches Islamic institutional life - Shari'ah courts, qur'anic achievement, religious observance, fatwa implementation. For Muslim residents these resolutions push the infrastructure of faith: more Shari'ah judges, recognized scholars, supported observances.",
+      "for_specific_groups": {
+        "Muslim residents": "Better access to Shari'ah justice and religious services",
+        "Ulama & students": "Recognition and career pathways (bar, bench, kulliyah)"
+      },
+      "in_practice": [
+        "Type: islamic affairs"
+      ],
+      "where_this_applies": "All of BARMM unless the title names a specific place",
+      "when_you_will_feel_it": "Immediately as an official position; concrete action depends on the addressed agency",
+      "what_you_can_do": [
+        "If the resolution urges an agency to act, cite it when following up with that agency",
+        "Share it - resolutions gain force through public attention",
+        "Ask your MP to follow through with legislation if the issue needs a binding law"
+      ],
+      "watch_out_for": [],
+      "key_terms_explained": {
+        "Adopted resolution": "An official position or instruction of the Parliament - persuasive and political, but not a law binding the public.",
+        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
+      },
+      "benefits": {
+        "headline": "Stronger infrastructure of faith and Shari'ah justice.",
+        "direct_benefits": [
+          {
+            "benefit": "Pushes for more Shari'ah courts/judges = faster access to Islamic personal-law justice",
+            "who_gets_it": "Muslim litigants",
+            "how_to_access": "File in Shari'ah courts; cite the backlog resolutions when courts are vacant"
+          }
+        ],
+        "indirect_benefits": [
+          "Recognition and pathways for ulama and qur'anic achievers"
+        ],
+        "limitations": [
+          "Court creation/appointments rest with the Supreme Court and national bodies"
+        ]
+      }
+    }
+  },
+  "impact": {
+    "impact_tags": [
+      "islamic_affairs",
+      "other"
+    ],
+    "who_benefits": [
+      "General public"
+    ]
+  },
+  "legislative_journey": [
+    {
+      "stage": "Proposed",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Adopted in plenary",
+      "reached": true,
+      "date": "2024-05-13"
+    }
+  ],
+  "authors_and_sponsors": {
+    "authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "note": "On the resolution's official page."
+  },
+  "related_documents": {
+    "pdf": "On the Adopted Resolutions index at parliament.bangsamoro.gov.ph"
+  },
+  "citizen_questions": [
+    {
+      "q": "Does this resolution change the law?",
+      "a": "No - it expresses a position, urges, directs, or commends. Law changes require a Bangsamoro Autonomy Act."
+    },
+    {
+      "q": "Who is it addressed to?",
+      "a": "The honoree/subject and the public record"
+    }
+  ],
+  "display_header": {
+    "line1": "Adopted Resolution No. 445",
+    "line2": "Expressing consensus on appointment of Muslim Guiamaden as Wali of the...",
+    "badges": [
+      "ADOPTED",
+      "Islamic Affairs",
+      "2024"
+    ],
+    "what_this_does": "Expressing consensus on appointment of Muslim Guiamaden as Wali of the Bangsamoro.",
+    "who_it_affects": "General public"
+  },
+  "provenance": {
+    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
+    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+  }
+}

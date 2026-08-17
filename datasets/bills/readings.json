@@ -1,0 +1,145 @@
+{
+ "meta": {
+  "record_type": "measure_readings",
+  "note": "Plain-language readings of measures, written from the measure's own documents — the copy as filed, the enacted text, and the session journal where one covers it. This file is deliberately separate from the registry capture: the registry is Parliament's data normalised, and a reading is what someone found when they read the papers. Nothing here is generated from titles or metadata; a measure appears only once its documents have been read, and each entry names them.",
+  "method": [
+   "Bill and act texts are published as scans with no machine-readable text, so each was read through optical character recognition and then checked against the document by eye.",
+   "Deliberation is taken only from published sources — the session journals and committee reports. Parliament's journals stop at March 2023, so most measures have no published debate to draw on and say so rather than leaving the question out.",
+   "Figures, offices and dates are quoted from the text. Where the enacted act differs from the bill as filed, the difference is stated."
+  ],
+  "count": 3
+ },
+ "readings": [
+  {
+   "category": "acts",
+   "number": 35,
+   "whatItDoes": "This is the rulebook for how the Bangsamoro elects its own parliament. Before it, the region had no election law of its own — the Bangsamoro Organic Law required one, and this Code is it.\n\nIt sets the shape of an 80-member Parliament: half the seats go to party representatives elected region-wide, 40 percent to district representatives elected by their own districts, and 10 percent — at least eight seats — are reserved for sectors. Those reserved seats are named: two each for Non-Moro Indigenous Peoples and for settler communities, and one each for women, youth, traditional leaders, and the 'Ulama. A voter who belongs to more than one of those sectors may register in up to three of them.\n\nIt also builds the machinery around the vote. It establishes the Bangsamoro Electoral Office as COMELEC's arm in the region, and a Bangsamoro Registration and Accreditation Committee to register and accredit regional political parties, subject to COMELEC en banc approval. Parties must meet standards to register, and candidates for the reserved seats must be certified by the relevant ministry on the basis of a track record of advocacy for that sector, then declare their sector under oath.\n\nThe Code is written to push politics away from personalities and towards parties: it says so directly, instructing that where a provision is ambiguous, the reading that strengthens party-based parliamentary politics wins.",
+   "whyProposed": "The Bangsamoro Organic Law obliges the region to enact its own electoral code, and no parliamentary election could be held without one. Members debating it framed it as more than compliance: the first election law written for a parliamentary system in the Philippines, and the instrument that would let the first Bangsamoro parliamentary election proceed.",
+   "whoIsAffected": [
+    "Every registered voter in the BARMM, who will vote for party, district, and sectoral representatives under a system that did not exist before.",
+    "Regional political parties, which must register and be accredited, and meet the Code's standards to field candidates.",
+    "Non-Moro Indigenous Peoples, settler communities, women, youth, traditional leaders, and the 'Ulama — the six groups holding reserved seats.",
+    "Anyone seeking a seat: district candidates face a one-year residency requirement, and sectoral nominees must be certified and must swear to their sector."
+   ],
+   "implementedBy": [
+    "Commission on Elections (COMELEC), which retains authority over the conduct of elections and approves party accreditation en banc",
+    "Bangsamoro Electoral Office (BEO), COMELEC's office in the region, whose organisational structure and staffing COMELEC determines",
+    "Bangsamoro Registration and Accreditation Committee (BRAC), which registers and accredits regional political parties",
+    "The ministries and regional agencies that certify sectoral candidates, which were given 120 days from promulgation to issue their certification guidelines",
+    "Local governments, which continue to fund election boards, canvassing, forms, and voting centres"
+   ],
+   "funding": {
+    "required": false,
+    "detail": "The Code carries no appropriation of its own. The BEO's budget forms part of COMELEC's yearly budget, and the Bangsamoro Parliament may add to it — the Code provides for an election reserve fund in an election year, including for the assemblies that elect sectoral representatives. Local governments keep paying for election boards, forms, paraphernalia, and voting centres."
+   },
+   "whatChanges": [
+    "The region gains an election law of its own, making a Bangsamoro parliamentary election legally possible for the first time.",
+    "Eight seats are set aside for sectors that would otherwise have to win an ordinary contest to be represented.",
+    "Half of Parliament is elected by party rather than by locality, which shifts campaigning towards platforms and party lists.",
+    "Regional parties acquire a registration and accreditation process, and a body to run it.",
+    "Ministries acquire a new duty: certifying that a sectoral candidate genuinely represents that sector."
+   ],
+   "deliberation": [
+    "MP Alamia voted yes but said she would keep pressing for wider inclusion of women and marginalised sectors inside regional political parties.",
+    "MP Maglangit voted yes while recording a reservation: she believes in wider and bigger representation of women in Parliament than the Code provides.",
+    "MP Arnado gave four reasons for her vote, singling out the anti-political-dynasty provision as the first of its kind in the country, and a provision discouraging non-biodegradable campaign materials.",
+    "MP Basman argued the Code cements women's participation in practical terms, noting it requires a concrete women's agenda before a party can register.",
+    "MP Ali, Jr. noted the Code went through a series of consultations with COMELEC, and that it would enable the first parliamentary election in the region in 2025.",
+    "MP Alih framed it as asymmetry made real — a system built for the region rather than copied from the national one — and cited the 30 percent women requirement in party representation and the anti-dynasty provision.",
+    "Passed on Third and Final Reading by nominal voting, 64 in favour, none against, no abstentions (Journal No. 21, 7 March 2023)."
+   ],
+   "insight": "The reserved seats are the part to watch. Eight seats out of eighty is a floor, not a ceiling, and the Code hands the ministries a gatekeeping role — a sectoral candidate needs a certification of advocacy before standing. That makes the certification guidelines, due within 120 days of promulgation, as consequential as the seat count itself: they decide who is allowed to claim a sector. The other thing to watch is that the Code says out loud which way to resolve ambiguity — towards party-based politics — which is unusual, and tells you what its drafters expected to be argued about.",
+   "readFrom": [
+    {
+     "label": "Bangsamoro Autonomy Act No. 35, enacted text",
+     "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/BAA-35-Bangsamoro-Electoral-Code.pdf"
+    },
+    {
+     "label": "Journal No. 21, 7–8 March 2023",
+     "url": "https://parliament.bangsamoro.gov.ph/journals_22/journal-no-21-shaban-15-16-1444-march-07-08-2023-special-session-no-2/"
+    }
+   ],
+   "readOn": "August 2026"
+  },
+  {
+   "category": "acts",
+   "number": 48,
+   "whatItDoes": "This act creates a new municipality, Ligawasan, out of seven barangays that used to belong to Pikit in North Cotabato — Bagoinged, Barungis, Bulol, Buliok, Gli-Gli, Kabasalan, and Rajamuda. All seven voted in the 2019 plebiscite to join the Bangsamoro, and they sit in what the region calls its Special Geographic Areas. The act separates them from Pikit and constitutes them as a municipality in their own right, with its seat of government at Barangay Bagoinged and its boundary following the existing lines of the seven barangays.\n\nBecoming a municipality is not automatic. The act requires a plebiscite in those barangays within sixty days of approval, run by the Commission on Elections through the Bangsamoro Electoral Office, and Ligawasan acquires corporate existence only if a majority of the votes cast approve. Until an election is held, the first mayor, vice-mayor, and council are appointed rather than elected.\n\nA new municipality has no share of national tax revenue until it is entered into the allocation, so the act commits the Bangsamoro Government to pay monthly financial assistance for the new local government's administration and operation until that share arrives, subject to ordinary accounting and audit rules.",
+   "whyProposed": "The seven barangays voted in 2019 to leave North Cotabato for the Bangsamoro, which left them inside the region but still attached to a municipality outside it. The Bangsamoro Government has the power under the Organic Law to create municipalities, and this act uses it to give those barangays a local government of their own.",
+   "whoIsAffected": [
+    "Residents of the seven barangays — about 29,800 people across roughly 112 square kilometres, by the figures annexed to the bill.",
+    "The Municipality of Pikit, North Cotabato, which loses the seven barangays and the revenue attached to them.",
+    "Elected officials of Pikit who live in the separated barangays: the bill addressed how their existing terms are handled.",
+    "The Bangsamoro Government, which carries the new municipality's operating cost until national tax allotment begins."
+   ],
+   "implementedBy": [
+    "Commission on Elections, through the Bangsamoro Electoral Office, which conducts and supervises the plebiscite",
+    "The Bangsamoro Government, which appropriates the monthly financial assistance",
+    "The appointed first set of municipal officials, who run Ligawasan until an election is held"
+   ],
+   "funding": {
+    "required": true,
+    "detail": "The bill as filed named a figure: not less than ₱2,500,000 every month until the municipality received its share of national tax revenue. The enacted act keeps the monthly commitment but drops the amount, promising financial assistance \"every month\" subject to usual accounting and auditing rules. Plebiscite costs come out of existing COMELEC funds."
+   },
+   "whatChanges": [
+    "Seven barangays stop being part of Pikit and become a municipality, if the plebiscite approves.",
+    "Ligawasan gains its own local government, seated at Bagoinged, initially by appointment rather than election.",
+    "The Bangsamoro Government takes on a recurring monthly cost until national tax allotment reaches the new municipality.",
+    "North Cotabato's Pikit is reduced by seven barangays, about 112 square kilometres."
+   ],
+   "deliberation": [],
+   "insight": "The interesting difference is between the bill and the law. The filed copy guaranteed at least ₱2.5 million a month; the enacted text promises monthly assistance without saying how much. That converts a floor into a budget decision, and it is the kind of change that is invisible unless you read both documents. Worth tracking alongside it: the plebiscite had to happen within sixty days of approval, and a new municipality's finances stay dependent on the regional government until the national tax allotment catches up — which is a slower process than sixty days.",
+   "readFrom": [
+    {
+     "label": "Bangsamoro Autonomy Act No. 48, enacted text with metes and bounds",
+     "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-48-Mun.-of-Ligawasan-with-metes-and-bounds.pdf"
+    },
+    {
+     "label": "Parliament Bill No. 136, copy as filed",
+     "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/12/Bill-No.-136-Government-of-the-day-AN-ACT-CREATING-THE-MUNICIPALITY-OF-LIGAWASAN.pdf"
+    }
+   ],
+   "readOn": "August 2026"
+  },
+  {
+   "category": "bills",
+   "number": 136,
+   "whatItDoes": "This is the cabinet bill that became Bangsamoro Autonomy Act No. 48. It proposes a new municipality, Ligawasan, built from seven barangays of Pikit, North Cotabato — Bagoinged, Barungis, Bulol, Buliok, Gli-Gli, Kabasalan, and Rajamuda — all of which voted in the 2019 plebiscite to join the Bangsamoro and now sit in the region's Special Geographic Areas.\n\nThe bill separates those barangays from Pikit and constitutes them as a distinct municipality, with its seat of government at Barangay Bagoinged and a boundary following the existing barangay lines. Annexed tables give the detail: about 112 square kilometres, roughly 29,800 residents, and combined annual income of about ₱31.6 million as of 2020.\n\nThe municipality would come into existence only after a plebiscite held within sixty days of approval, conducted by the Commission on Elections through the Bangsamoro Electoral Office, and only if a majority of votes cast approve. Until an election, the first mayor, vice-mayor, and council would be appointed.\n\nBecause a new municipality gets no share of national revenue immediately, the bill commits the Bangsamoro Government to provide financial assistance of not less than ₱2,500,000 every month for the new local government's administration and operation, until its revenue share is allocated.",
+   "whyProposed": "The seven barangays voted in 2019 to move from North Cotabato into the Bangsamoro but remained administratively attached to Pikit, a municipality outside the region. The bill invokes the Bangsamoro Government's power to create and alter municipalities and gives those barangays a local government inside the region they voted to join.",
+   "whoIsAffected": [
+    "Roughly 29,800 residents of the seven barangays, across about 112 square kilometres.",
+    "The Municipality of Pikit, North Cotabato, which would lose the seven barangays.",
+    "Elected officials of Pikit residing in those barangays, whose positions the bill addresses.",
+    "The Bangsamoro Government, which would carry at least ₱2.5 million a month until national revenue sharing begins."
+   ],
+   "implementedBy": [
+    "Commission on Elections, through the Bangsamoro Electoral Office, which would conduct and supervise the plebiscite",
+    "The Bangsamoro Government, which would appropriate the monthly assistance",
+    "Appointed first municipal officials, pending an election"
+   ],
+   "funding": {
+    "required": true,
+    "detail": "Not less than ₱2,500,000 per month from the Bangsamoro Government until the new municipality is allocated its share of national revenue. Plebiscite expenses are to be taken from available COMELEC funds under its current appropriation."
+   },
+   "whatChanges": [
+    "Seven barangays leave Pikit and form a municipality, subject to the plebiscite.",
+    "A new local government is stood up at Bagoinged, appointed at first.",
+    "The Bangsamoro Government takes on a monthly financial commitment with a stated floor.",
+    "The region's Special Geographic Areas gain a municipality of their own."
+   ],
+   "deliberation": [],
+   "insight": "This bill is worth comparing with the act it became. The ₱2.5 million monthly floor written here does not survive into Bangsamoro Autonomy Act No. 48, which promises monthly assistance without naming an amount. If you want to know what a new municipality in the Special Geographic Areas is actually guaranteed, the answer is in the act, not in this bill — and it is less specific than what was filed.",
+   "readFrom": [
+    {
+     "label": "Parliament Bill No. 136, copy as filed",
+     "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/12/Bill-No.-136-Government-of-the-day-AN-ACT-CREATING-THE-MUNICIPALITY-OF-LIGAWASAN.pdf"
+    },
+    {
+     "label": "Bangsamoro Autonomy Act No. 48, enacted text",
+     "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-48-Mun.-of-Ligawasan-with-metes-and-bounds.pdf"
+    }
+   ],
+   "readOn": "August 2026"
+  }
+ ]
+}

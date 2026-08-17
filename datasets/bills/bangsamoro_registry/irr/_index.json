@@ -1,0 +1,8 @@
+{
+  "meta": {
+    "record_type": "irr_index",
+    "status": "PENDING_CAPTURE",
+    "note": "Implementing Rules and Regulations of enacted BAAs at /implementing-rules-and-regulations/. Suggested schema: {irr_for_baa, title, date, pdf_url} - link each IRR back to baa/BAA-XX.json."
+  },
+  "irrs": []
+}

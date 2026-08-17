@@ -1,0 +1,187 @@
+{
+  "record_type": "parliament_bill",
+  "basic_information": {
+    "bill_number": 431,
+    "short_title": "Expands the Scope of Authority and Services of",
+    "official_title": "AN ACT EXPANDING THE SCOPE OF AUTHORITY AND SERVICES OF SPECIAL GEOGRAPHIC AREA DEVELOPMENT AUTHORITY (SGADA)",
+    "type": "Parliament Bill",
+    "session": "4th Regular Session (2025-)",
+    "date_filed": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "current_status": "Approved",
+    "status_as_of": "2026-07-16",
+    "date_approved": "2026-07-16"
+  },
+  "citizen_summary": {
+    "what_is_this_about": "Expands the Scope of Authority and Services of Special Geographic Area Development Authority (sgada).",
+    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note of the bill)",
+    "what_will_change": "Expands the Scope of Authority and Services of Special Geographic Area Development Authority (sgada).",
+    "who_will_be_affected": [
+      "Barangay residents",
+      "LGUs"
+    ],
+    "when_will_it_take_effect": "Approved; effectivity per its final clause",
+    "what_this_means_for_you": {
+      "in_short": "PROPOSAL: A governance law shaping how the Bangsamoro Government works. Its effect on daily life is indirect but real: clearer rules inside government generally mean faster, more accountable service at the counter. (This describes what the bill would do if enacted.)",
+      "in_practice": [
+        "Defines powers, procedures, or structures within the regional government"
+      ],
+      "for_specific_groups": {
+        "General public": "Better-defined government duties are the basis for demanding service"
+      },
+      "where_this_applies": "All of BARMM",
+      "when_you_will_feel_it": "Not yet - only if and when enacted",
+      "what_you_can_do": [
+        "This is the stage where public input matters most: submit a position paper via the Parliament's 'Call for Position Papers' page",
+        "Attend or watch the committee hearings (schedules are on the Parliament site; many are livestreamed)",
+        "Contact a Member of Parliament - the 'Contact an MP' page lists them - to support, oppose, or suggest changes"
+      ],
+      "watch_out_for": [
+        "Nothing changes yet: a bill has no legal effect until Parliament approves it and it is enacted as a Bangsamoro Autonomy Act. Many bills are revised or merged along the way."
+      ],
+      "key_terms_explained": {
+        "First Reading": "The bill's title is read in plenary and it is referred to a committee - the earliest formal stage.",
+        "Committee stage": "A committee studies the bill, holds hearings, and can rewrite it before plenary debate.",
+        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
+      },
+      "status_note": "Bill status: Approved (as of 2026-07-16).",
+      "benefits": {
+        "headline": "A dedicated office now exists to serve and advocate for its sector.",
+        "direct_benefits": [
+          {
+            "benefit": "A service window: programs, assistance, and complaints handling for the covered sector",
+            "who_gets_it": "The sector named in the law",
+            "how_to_access": "The body's office/hotline once organized"
+          },
+          {
+            "benefit": "Representation inside government when policies are made",
+            "who_gets_it": "Sector members",
+            "how_to_access": "Through the body's consultations"
+          },
+          {
+            "benefit": "Employment in the new institution",
+            "who_gets_it": "Qualified applicants",
+            "how_to_access": "CSC-BARMM / agency postings"
+          }
+        ],
+        "indirect_benefits": [
+          "A formal partner for NGOs and donors working on the sector"
+        ],
+        "limitations": [
+          "Now REAL, not prospective: enacted as BAA 94 - see baa/BAA-94.json for claimable benefits."
+        ]
+      }
+    }
+  },
+  "key_provisions": [
+    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+  ],
+  "impact": {
+    "who_benefits": [
+      "Barangay residents",
+      "LGUs"
+    ],
+    "impact_tags": [
+      "local_government"
+    ],
+    "estimated_beneficiaries": null,
+    "allocated_budget": null,
+    "figures_note": "Beneficiary/budget figures are only shown when stated in official documents; none captured for this record."
+  },
+  "legislative_journey": [
+    {
+      "stage": "Filed",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "First Reading",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Second Reading - Committee",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Second Reading - Plenary",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Third Reading",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Approved by Parliament",
+      "reached": true,
+      "date": "2026-07-16"
+    },
+    {
+      "stage": "Enacted (BAA)",
+      "reached": true,
+      "date": null
+    }
+  ],
+  "authors_and_sponsors": {
+    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "sponsor": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "note": "Listed on the bill's official page under General Information."
+  },
+  "related_documents": {
+    "original_bill_pdf": "On the bill's official page",
+    "committee_report": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "approved_version": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "irr": null
+  },
+  "related_legislation": {
+    "amends": [],
+    "repeals": [],
+    "related_bills": [],
+    "enacted_as": "BAA 94"
+  },
+  "implementation_status": {
+    "law_enacted": true,
+    "see": "baa/BAA-94.json"
+  },
+  "citizen_questions": [
+    {
+      "q": "Is this already a law?",
+      "a": "Approved by Parliament; enactment/numbering as a BAA follows."
+    },
+    {
+      "q": "How can I support or oppose this bill?",
+      "a": "Submit a position paper via the Parliament's Call for Position Papers page, or attend/watch the responsible committee's public hearings."
+    },
+    {
+      "q": "Where do I read the full text?",
+      "a": "The bill's page on parliament.bangsamoro.gov.ph (Bills index) links the PDF and legislative history."
+    }
+  ],
+  "display_header": {
+    "line1": "Parliament Bill No. 431",
+    "line2": "Expands the Scope of Authority and Services of",
+    "badges": [
+      "APPROVED",
+      "Local Government",
+      "2026"
+    ],
+    "what_this_does": "Expands the Scope of Authority and Services of Special Geographic Area Development Authority (sgada).",
+    "who_it_affects": "Barangay residents · LGUs"
+  },
+  "views": {
+    "simple": "Expands the Scope of Authority and Services of Special Geographic Area Development Authority (sgada).",
+    "official": "AN ACT EXPANDING THE SCOPE OF AUTHORITY AND SERVICES OF SPECIAL GEOGRAPHIC AREA DEVELOPMENT AUTHORITY (SGADA)"
+  },
+  "implementing_agency_if_enacted": {
+    "agency": "MILG",
+    "inferred": true
+  },
+  "provenance": {
+    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
+    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+  }
+}

@@ -1,39 +1,251 @@
+/* ============================================================
+   BetterBARMM — one visual language
+
+   Every app draws from this file: the landing site, the legislation
+   registry, the budget and election explorers. It began as the
+   registry's own stylesheet, which was the first surface to be
+   designed as a system rather than a page, and was lifted here so the
+   rest of the estate stops drifting from it.
+
+   The shape of the thing:
+
+     · white canvas, near-neutral greys, one accent used sparingly
+     · hairline dividers instead of framed cards
+     · status carried by a soft tinted pill, not a bordered shout
+     · labels in small sentence case rather than wide-tracked caps
+
+   Everything is expressed as tokens, so an app that genuinely needs a
+   different palette re-points --ink/--paper/--rule in its own
+   globals.css and restyles itself without touching any markup.
+
+   These rules are deliberately unlayered. They therefore beat Tailwind
+   utilities, which live in @layer utilities — so `text-sm` will not
+   override `.label`'s size. Where a component needs to vary, add a
+   modifier class here rather than a utility at the call site.
+   ============================================================ */
+
 :root {
   color-scheme: light;
-  --paper: #f7f7f7;
-  --paper-2: #efece4;
-  --paper-3: #e6e0cd;
-  --rule: #cbc1a8;
-  --rule-soft: #e2dcc8;
-  --ink: #16140f;
-  --ink-2: #3a352a;
-  --ink-3: #6b6452;
-  --ink-mute: #968d75;
+
+  /* Surfaces. --paper-2 is the hover tint under every row, cell, and card,
+     so it is kept a hair off white — enough to follow the cursor down a list
+     of two hundred rows without the page turning grey under it. */
+  --paper: #ffffff;
+  --paper-2: #fbfbfa;
+  --paper-3: #efefed;
+
+  /* Lines — deliberately faint; structure comes from spacing. */
+  --rule: #e7e7e3;
+  --rule-soft: #f1f1ee;
+
+  /* Text. Quiet is not the same as faint — every step below still clears
+     WCAG AA on the white canvas, including the muted labels at 12px. */
+  --ink: #171715;
+  --ink-2: #3b3b36;
+  --ink-3: #5a5a53;
+  --ink-mute: #76766e;
+  /* Headline-only grey. Neutral rather than the warm cast the ink steps
+     carry, and light enough to read as a second voice — it clears 3:1,
+     the threshold that applies at display sizes. */
+  --ink-display: #949494;
+
+  /* The one inverted block on the site — closing caveats, calls to action.
+     It needs its own pair rather than reusing --ink/--paper, because those
+     swap with the theme: on a dark page an --ink panel would flip to
+     near-white. Light mode paints it near-black; dark mode lifts it just
+     off the page instead. */
+  --panel-bg: #171715;
+  --panel-fg: #ffffff;
+
+  /* Brand accent. */
   --accent: #8a2418;
-  --accent-deep: #5e1810;
-  --accent-soft: #d8b8a8;
+  --accent-deep: #6b1a11;
+  --accent-soft: #fbf1ef;
+
+  /* Status tones — soft fills, readable text, no borders needed.
+
+     One tone per stage of a measure's passage, in the order it travels
+     them: filed, first reading, committee, floor, third reading, law.
+     They read as a progression rather than a set of unrelated colours,
+     and because a badge and a rung on a timeline draw from the same pair,
+     "first reading" is the same blue wherever it appears. */
+  --tone-file-bg: #f6f1ec;
+  --tone-file-fg: #6b5a4a;
+  --tone-early-bg: #eef2f8;
+  --tone-early-fg: #3b5573;
+  --tone-committee-bg: #f2effa;
+  --tone-committee-fg: #5b4b8a;
+  --tone-move-bg: #fdf3ea;
+  --tone-move-fg: #99591b;
+  --tone-pass-bg: #e9f4f6;
+  --tone-pass-fg: #1f6470;
+  --tone-done-bg: #edf6ef;
+  --tone-done-fg: #2f6b40;
+  --tone-idle-bg: #f3f3f1;
+  --tone-idle-fg: #77776f;
+
+  /* ---- The bill funnel ----
+
+     A bill's stages are a sequence, not a set of identities: swapping "first
+     reading" and "approved" would change what the chart says. That makes this
+     ordinal, so it takes one hue stepped by lightness rather than the status
+     tones the badges use — those are tuned to sit quietly behind text and
+     measure out at ΔE 3.7 between the committee and early hues under
+     deuteranopia, which is invisible. Stepping the accent instead puts the
+     order into the colour and stays safe under any colour vision, because
+     lightness is the channel that survives.
+
+     Later stage = more prominent against the surface, so the anchor flips in
+     dark mode rather than the steps being reused. `--funnel-out` is grey on
+     purpose: an archived bill left the sequence. */
+  --funnel-1: #fe8c79;
+  --funnel-2: #dc604d;
+  --funnel-3: #b63c2d;
+  --funnel-4: #94180b;
+  --funnel-out: #9a9a92;
+
+  /* Kept from the earlier palette: the budget and election explorers chart
+     with these, and a chart colour is not a UI surface. */
   --slate: #2d3e4f;
   --positive: #4a5a3a;
   --ochre: #9a7530;
+
+  --radius: 10px;
+  --radius-sm: 7px;
+  /* For surfaces whose only outline is a hover tint — with no border to trace
+     the shape, the corner has to be obvious enough to read on its own. */
+  --radius-lg: 14px;
+
+  --ease: cubic-bezier(0.2, 0.7, 0.3, 1);
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quick: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* Two families carry the whole system: DM Sans for reading copy, Outfit for
+     anything structural — headings, buttons, nav, and the small uppercase
+     labels. Each app loads them with next/font, which defines the two
+     --font-*-var custom properties the stacks below point at. */
   --font-body:
-    "Google Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial,
-    sans-serif;
+    var(--font-dm-sans), -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Arial, sans-serif;
   --font-display:
-    "Google Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial,
-    sans-serif;
-  --font-mono-ui:
-    "Google Sans", "SF Mono", Menlo, Consolas, ui-monospace, monospace;
+    var(--font-outfit), -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Arial, sans-serif;
+  /* Named "mono" for the Tailwind `font-mono` utility it backs, but it is the
+     UI label face — Outfit, not a monospace. */
+  --font-mono-ui: var(--font-display);
+
   background: var(--paper);
+}
+
+/* ============================================================
+   Dark theme
+
+   Only the tokens change — every component reads through them, so
+   nothing else needs a dark variant. The palette isn't the light one
+   inverted: text steps are pulled back from pure white to avoid
+   halation on a dark ground, and the accent is lightened, because the
+   brand red at #8a2418 only reaches 2.3:1 against a dark canvas.
+
+   There is one block rather than two because the apps that offer a
+   theme resolve the system preference into an explicit `data-theme`
+   before first paint; CSS therefore never has to handle "unset". An
+   app with no toggle simply never sets the attribute and stays light.
+   ============================================================ */
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --paper: #121211;
+  /* The same near-invisible step, measured from the dark ground up. */
+  --paper-2: #171716;
+  --paper-3: #242421;
+
+  --rule: #2c2c29;
+  --rule-soft: #212120;
+
+  --ink: #f1f1ee;
+  --ink-2: #cfcfc8;
+  --ink-3: #a3a39a;
+  --ink-mute: #85857c;
+  --ink-display: #7d7d7d;
+
+  /* Lifted off the page rather than inverted to white. */
+  --panel-bg: #1e1e1c;
+  --panel-fg: #f1f1ee;
+
+  --accent: #e8796a;
+  --accent-deep: #f0907f;
+  --accent-soft: #2b1a16;
+
+  --tone-file-bg: #26201a;
+  --tone-file-fg: #c9b39a;
+  --tone-early-bg: #1a2233;
+  --tone-early-fg: #9ab8de;
+  --tone-committee-bg: #221d33;
+  --tone-committee-fg: #b3a2e2;
+  --tone-move-bg: #2b2114;
+  --tone-move-fg: #e5ac70;
+  --tone-pass-bg: #12292d;
+  --tone-pass-fg: #7fc4cf;
+  --tone-done-bg: #16281c;
+  --tone-done-fg: #87caa0;
+  --tone-idle-bg: #242421;
+  --tone-idle-fg: #a3a39a;
+
+  /* The funnel, re-anchored: on a dark ground the later stage is the lighter
+     step, so progress still reads as more presence. */
+  --funnel-1: #9a2208;
+  --funnel-2: #c74d36;
+  --funnel-3: #f1735a;
+  --funnel-4: #ffac9a;
+  --funnel-out: #8a8a82;
+}
+
+/* The wordmark ships in two cuts: the black "BARMM" glyphs are invisible
+   on a dark ground, so the dark cut recolours them and leaves the red
+   block alone. Swapped here rather than in the component so the markup
+   stays a plain pair of images. */
+.logo-dark {
+  display: none;
+}
+
+:root[data-theme="dark"] .logo-light {
+  display: none;
+}
+
+:root[data-theme="dark"] .logo-dark {
+  display: block;
 }
 
 @theme inline {
   --font-sans: var(--font-body);
   --font-mono: var(--font-mono-ui);
+  /* A utility for the display face, so a title that isn't a heading element
+     can still take it: `font-title`. */
+  --font-title: var(--font-display);
 }
+
+/* ============================================================
+   Two faces, one rule
+
+   Outfit is the interface: headings, titles, labels, navigation, controls,
+   numbers — anything you look at rather than read. DM Sans is reading
+   matter, and only that: the paragraphs of description, summary, and note
+   the interface wraps around.
+
+   So the display face is the default and prose opts out, rather than the
+   other way round. `p` is the whole opt-out list because a description is
+   always a paragraph here; a title that happens to be marked up as one
+   takes `font-title` back.
+   ============================================================ */
 
 html {
   min-height: 100%;
-  scroll-behavior: smooth;
+  /* No `scroll-behavior: smooth` here. The router scrolls to the top on every
+     navigation, and a smooth scroll turns that instant jump into an animation
+     the next page's render races — land on a short page from deep in a long
+     one and you arrive below its content, looking at nothing. Anchors that
+     want smoothing can ask for it themselves. */
 }
 
 body {
@@ -42,10 +254,21 @@ body {
   overflow-x: clip;
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--font-body);
-  font-feature-settings: "tnum";
+  font-family: var(--font-display);
+  /* A touch tighter than the browser default; prose leadings step down with it. */
+  line-height: 1.45;
+  /* Lining figures line up in columns of bill numbers and dates. */
+  font-feature-settings: "tnum", "cv05";
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+p,
+li,
+blockquote,
+dd,
+figcaption {
+  font-family: var(--font-body);
 }
 
 * {
@@ -57,37 +280,740 @@ body {
   color: var(--ink);
 }
 
-.num {
-  font-family: var(--font-mono-ui);
-  font-variant-numeric: tabular-nums;
-}
+/* ============================================================
+   Type primitives
 
+   Three sizes of supporting text cover the whole estate. Using named
+   classes instead of repeating a six-utility chain keeps the rhythm
+   consistent and makes a change like "labels are too loud" a one-line
+   edit rather than a sweep through forty files.
+   ============================================================ */
+
+/* Section kicker — small caps in the accent, announcing the block below it.
+   Caps set at text size run tight, so both uppercase primitives carry a
+   little tracking to open the letterfit back up. */
 .eyebrow {
   color: var(--accent);
-  font-family: var(--font-mono-ui);
-  font-size: 0.6875rem;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-.rule-link {
-  border-bottom: 1px solid var(--accent);
-  color: var(--ink);
+/* Field label / column head. The only place caps survive, and gently.
+   Set heavier than the copy beneath it — at this size the weight is what
+   separates a label from a value, since the size barely can. */
+.label {
+  color: var(--ink-mute);
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
   font-weight: 700;
+  /* A touch wider than the eyebrow — it sits a size smaller. */
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+/* A label standing on its own as a column head, rather than annotating a
+   value beneath it. Declared after `.label` so it wins on source order; a
+   Tailwind colour utility could not, because these primitives sit outside
+   Tailwind's layers. */
+.label-strong {
+  color: var(--ink);
+}
+
+/* A label heading a list rather than a field — set at the size of the list's
+   own rows, so the heading and the "Show all" beneath it read as one scale. */
+.label-lg {
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+}
+
+/* Supporting detail beside a title — dates, counts, provenance. */
+.meta {
+  color: var(--ink-3);
+  font-size: 0.8125rem;
+  line-height: 1.45;
+}
+
+.meta-sm {
+  color: var(--ink-mute);
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+/* ---- The reading scale ----
+
+   Three steps carry every page of prose on the site: the claim a section
+   opens with, the heading on one item inside it, and the copy itself. The
+   sizes are the ones "How Parliament works" settled on, and they are here so
+   every page uses them rather than each page picking its own — the estate had
+   drifted to four different section headings and three different item
+   headings, which read as four different sites.
+
+   Size, weight, and leading only. Colour stays a utility on the element: a
+   lead is quieter than the copy under it, a heading on a dark panel is
+   lighter than one on paper, and those are decisions per element rather than
+   per step of the scale. (It could not live here anyway — these primitives
+   sit outside Tailwind's layers, so a colour set here would beat any utility
+   trying to override it.) */
+
+/* A section's claim, under its eyebrow. Display face throughout: a heading is
+   looked at rather than read, so it keeps Outfit even inside a section that
+   has switched to the reading face. */
+.section-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+@media (min-width: 40rem) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* The same claim at the size of a standing note rather than a chapter opening
+   — for a block that qualifies the page instead of introducing part of it.
+   A modifier, not a utility: the scale here is unlayered and would win. */
+.section-title-sm {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 40rem) {
+  .section-title-sm {
+    font-size: 1.75rem;
+  }
+}
+
+/* The heading on one item within a section — a point, a rule, a question, a
+   dataset. Set at the size of the copy beneath it: at this scale the weight
+   is what separates a heading from its answer, and a size step as well would
+   break the column into stripes. */
+.item-title {
+  font-weight: 600;
+  line-height: 1.375;
+}
+
+/* The same heading one step up, for a row in a registry listing. There the
+   title is not a heading over an answer — it is the record, and the whole row
+   exists to be scanned for it, so it takes the step the copy beneath it does
+   not. A modifier rather than a utility at the call site: these primitives are
+   unlayered, so `text-[17px]` on the element would lose to the size set here. */
+.item-title-lg {
+  font-size: 1.0625rem;
+  line-height: 1.35;
+}
+
+/* The sentence under a section's claim, and the copy under an item heading —
+   one size, so a page holds a single reading measure from top to bottom. The
+   lead reads quieter than the copy through colour alone. */
+.section-lead,
+.copy,
+.item-title {
+  font-size: 0.9375rem;
+}
+
+.section-lead,
+.copy {
+  line-height: 1.5;
+}
+
+/* Numerals in a column read better tabular and unbolded. */
+.num {
+  font-family: var(--font-display);
+  font-variant-numeric: tabular-nums;
+}
+
+.rule-link {
+  border-bottom: 1px solid var(--rule);
+  color: var(--ink);
+  font-weight: 500;
   text-decoration: none;
+  transition: border-color 0.18s var(--ease);
 }
 
 .rule-link:hover {
+  border-bottom-color: var(--accent);
   color: var(--accent);
 }
 
+/* A list of links rather than a link inside a sentence — a roll of forty
+   authors, each on its own line, reads as forty ruled boxes. The rule goes;
+   the colour on hover still says the name is a link. */
+.rule-link-quiet {
+  border-bottom-color: transparent;
+}
+
+.rule-link-quiet:hover {
+  border-bottom-color: transparent;
+  color: var(--accent);
+}
+
+/* ============================================================
+   Status badge
+
+   One shape, four tones. A tinted fill carries the state at a glance
+   without adding another rectangle outline to a page already full of
+   rows.
+   ============================================================ */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  border-radius: 999px;
+  padding: 0.1875rem 0.5rem;
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.badge::before {
+  content: "";
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: 0.75;
+}
+
+/* A badge that is purely a label, not a state, drops the dot. */
+.badge-plain::before {
+  display: none;
+}
+
+.badge-done {
+  background: var(--tone-done-bg);
+  color: var(--tone-done-fg);
+}
+
+.badge-move {
+  background: var(--tone-move-bg);
+  color: var(--tone-move-fg);
+}
+
+.badge-early {
+  background: var(--tone-early-bg);
+  color: var(--tone-early-fg);
+}
+
+/* Filed, in committee, and passed on third reading — the three stages the
+   original four tones had to double up on. */
+.badge-file {
+  background: var(--tone-file-bg);
+  color: var(--tone-file-fg);
+}
+
+.badge-committee {
+  background: var(--tone-committee-bg);
+  color: var(--tone-committee-fg);
+}
+
+.badge-pass {
+  background: var(--tone-pass-bg);
+  color: var(--tone-pass-fg);
+}
+
+.badge-idle {
+  background: var(--tone-idle-bg);
+  color: var(--tone-idle-fg);
+}
+
+/* The office a person holds. Not one of the four states — it says what
+   someone is, not where a measure sits — so it takes the accent instead.
+   Titles run long ("Deputy Chief Minister for North Central Mindanao"), so
+   this one is allowed to wrap rather than push out of its cell. */
+.badge-role {
+  background: color-mix(in srgb, var(--accent) 11%, transparent);
+  color: var(--accent);
+  white-space: normal;
+}
+
+/* Filter chip — a pill tag that fills in when active. Rounder than the
+   controls it sits under, so a set of values reads as tags rather than as
+   more fields. */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4375rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--paper);
+  padding: 0.375rem 0.75rem;
+  color: var(--ink-3);
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.3;
+  white-space: nowrap;
+  transition:
+    background-color 0.16s var(--ease),
+    border-color 0.16s var(--ease),
+    color 0.16s var(--ease);
+}
+
+.chip:hover {
+  border-color: var(--ink-mute);
+  color: var(--ink);
+}
+
+.chip[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+.chip-count {
+  color: currentColor;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.55;
+}
+
+/* Tabs — one rule under the row, the selected label sitting on it. A chip
+   would say "filter, and you may pick several"; these are views of one
+   record, exactly one at a time, so they read as tabs instead. */
+.tab-list {
+  display: flex;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--rule);
+  /* Five long labels will not fit a phone. Scrolling the row keeps every
+     tab reachable without wrapping them into a block of text. */
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tab-list::-webkit-scrollbar {
+  display: none;
+}
+
+.tab {
+  /* Pulled down a pixel so the active underline covers the list's rule
+     rather than stacking a second line beneath it. */
+  margin-bottom: -1px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.75rem;
+  color: var(--ink-3);
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.3;
+  white-space: nowrap;
+  transition:
+    color 0.16s var(--ease),
+    border-color 0.16s var(--ease);
+}
+
+.tab:hover {
+  color: var(--ink);
+}
+
+.tab[aria-selected="true"] {
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+.tab-count {
+  margin-left: 0.4375rem;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.5;
+}
+
+/* ============================================================
+   Controls
+   ============================================================ */
+
+/* Search inputs and selects share one look. */
+.field {
+  height: 2.75rem;
+  width: 100%;
+  min-width: 0;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-lg);
+  background: var(--paper);
+  padding-inline: 0.875rem;
+  color: var(--ink);
+  /* A control, so it reads with the buttons beside it rather than the prose. */
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  outline: none;
+  transition:
+    border-color 0.16s var(--ease),
+    box-shadow 0.16s var(--ease);
+}
+
+.field::placeholder {
+  color: var(--ink-mute);
+}
+
+.field:focus {
+  border-color: var(--ink-mute);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ink) 9%, transparent);
+}
+
+/* Room for the icons sitting inside a field. These live here rather than as
+   pl-/pr- utilities at the call site because the rules in this file are
+   unlayered, so `.field`'s padding-inline would win against a utility class
+   no matter the order — the text would run under the icon. */
+.field-search {
+  padding-inline-start: 2.5rem;
+}
+
+.field-select {
+  padding-inline-end: 2.25rem;
+}
+
+/* Buttons — solid for the primary action, quiet for everything else. Pills,
+   like the chips and badges, so every pressable thing shares one shape. */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.625rem 1rem;
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.3;
+  /* Title case on every label, set here rather than typed into each one, so
+     the labels stay ordinary sentences in the markup and cannot drift. */
+  text-transform: capitalize;
+  cursor: pointer;
+  transition:
+    background-color 0.16s var(--ease),
+    border-color 0.16s var(--ease),
+    color 0.16s var(--ease);
+}
+
+.btn-solid {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.btn-solid:hover {
+  /* Tint rather than jump to black — in dark mode the solid button is
+     already near-white, so darkening would invert it. */
+  opacity: 0.86;
+}
+
+.btn-quiet {
+  border-color: var(--rule);
+  background: var(--paper);
+  color: var(--ink-2);
+}
+
+.btn-quiet:hover {
+  border-color: var(--ink-mute);
+  color: var(--ink);
+}
+
+/* The one button that carries the brand rather than the neutral. Reserved
+   for the single most-wanted action on a page — Contribute, mainly. */
+.btn-accent {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.btn-accent:hover {
+  background: var(--accent-deep);
+}
+
+/* A larger cut for a landing page, where a button stands alone rather than
+   in a row of controls. */
+.btn-lg {
+  padding: 0.8125rem 1.375rem;
+  font-size: 0.9375rem;
+}
+
+/* A button that sits in a row of fields — a Filters toggle, mainly. It
+   takes the field's corner instead of the pill's so the row reads as one
+   set of controls. Declared after `.btn` to win on source order. */
+.btn-field {
+  border-radius: var(--radius-lg);
+}
+
+/* ============================================================
+   Surfaces
+   ============================================================ */
+
+/* A bordered panel. Used sparingly — most groupings are just spacing. */
+.card {
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--paper);
+  transition:
+    border-color 0.18s var(--ease),
+    background-color 0.18s var(--ease);
+}
+
+.card-link:hover {
+  border-color: var(--ink-mute);
+  background: var(--paper-2);
+}
+
+/* Grid cell. No border and no frame: the grid is held together by alignment
+   alone, and a tint on hover is all that is needed to show it is a target. */
+.cell {
+  border-radius: var(--radius-lg);
+  transition: background-color 0.16s var(--ease);
+}
+
+.cell:hover {
+  background: var(--paper-2);
+}
+
+/* Focus, in the palette rather than in the browser's blue.
+
+   The ring is drawn only for `:focus-visible`, so it answers a keyboard and
+   stays out of the way of a mouse — a row that keeps a blue box after being
+   clicked, or after its dialog hands focus back on close, reads as an error
+   rather than as a position. Keyboard users still get a clear marker, which
+   is why the ring is restyled here rather than switched off. */
+:where(a, button, summary, [tabindex]):focus {
+  outline: none;
+}
+
+:where(a, button, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* List row — the workhorse. Separated by a hairline, tinted on hover. */
+.row {
+  border-bottom: 1px solid var(--rule-soft);
+  transition: background-color 0.16s var(--ease);
+}
+
+.row:hover {
+  background: var(--paper-2);
+}
+
+.row-arrow {
+  color: var(--ink-mute);
+  transition:
+    transform 0.22s var(--ease),
+    color 0.18s var(--ease);
+}
+
+.row:hover .row-arrow {
+  color: var(--accent);
+  transform: translateX(3px);
+}
+
+/* The inverted block — a closing statement, or a call to action. Reads as
+   the one moment of emphasis on an otherwise white page. */
+.panel {
+  background: var(--panel-bg);
+  color: var(--panel-fg);
+}
+
+/* Nav underline that grows from the left on hover. */
+.nav-link {
+  position: relative;
+  transition: color 0.16s var(--ease);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  height: 1px;
+  width: 100%;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s var(--ease);
+}
+
+/* Hover only — the active entry is marked by colour alone, so the header
+   doesn't carry a permanent underline under whichever tab you're on. */
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* ============================================================
+   Progress ladder
+
+   Where a dataset records which stages something has actually reached,
+   this shows the position on the path rather than a bare status string.
+   Reached segments fill; the rest stay as track.
+   ============================================================ */
+
+.ladder {
+  display: flex;
+  gap: 3px;
+}
+
+.ladder-step {
+  height: 3px;
+  flex: 1;
+  border-radius: 999px;
+  background: var(--paper-3);
+}
+
+.ladder-step[data-reached="true"] {
+  background: var(--ink);
+}
+
+.ladder-step[data-current="true"] {
+  background: var(--accent);
+}
+
+/* The same path named and dated — one rail read left to right. The whole
+   path fits the width it is given: the stages divide it evenly and their
+   names wrap, because a bill's route is short enough to show at once and
+   scrolling half of it out of view defeats the point of drawing it. */
+.timeline {
+  display: flex;
+}
+
+/* Every stage takes an equal share, however many there are. */
+.timeline-stage {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* "Now" on the rail — smaller and harder than a badge elsewhere, because it
+   marks a point on a path rather than labelling a record. */
+.timeline-now {
+  padding: 0.1875rem 0.5rem;
+  font-size: 0.5625rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   Motion
+
+   Short, small, and uniform. Movement here is meant to acknowledge a
+   change, not perform one — nothing travels far or lingers. Every
+   animation is CSS-driven so it survives without JS, and collapses
+   entirely under prefers-reduced-motion.
+   ============================================================ */
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 0.5s var(--ease),
+    transform 0.5s var(--ease);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+[data-reveal][data-shown="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* `backwards`, not `both`: with `both` the element keeps the animation's final
+   transform — an identity matrix, but a transform all the same — and a
+   transformed ancestor becomes the containing block for every `position:
+   fixed` descendant under it. That put a modal thousands of pixels down the
+   page instead of in the middle of the viewport. `backwards` still holds the
+   opening frame before the animation starts, then hands the element back to
+   its own styles. */
+.page-enter {
+  animation: page-enter 0.3s var(--ease) backwards;
+}
+
+/* Staggered rows. Capped early so a long list finishes settling fast. */
+@keyframes row-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.row-in {
+  /* `backwards` for the same reason as `.page-enter` above — and it leaves a
+     long list without a lingering transform on every row to composite. */
+  animation: row-in 0.3s var(--ease) backwards;
+  animation-delay: calc(min(var(--row-index, 0), 10) * 22ms);
+}
+
+/* Detail panel */
+@keyframes overlay-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sheet-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.overlay-in {
+  animation: overlay-in 0.2s var(--ease) both;
+}
+
+.sheet-in {
+  animation: sheet-in 0.32s var(--ease) both;
+}
+
+/* ============================================================
+   Page shell
+
+   A single measure for every page, so the header, the content, and the
+   footer share one pair of edges down the whole estate.
+   ============================================================ */
+
 .bb-container {
   width: 100%;
-  max-width: 80rem;
+  max-width: 88rem;
   margin-inline: auto;
-  padding-inline: 1.25rem;
+  padding-inline: 1.5rem;
 }
+
+@media (min-width: 1024px) {
+  .bb-container {
+    padding-inline: 2rem;
+  }
+}
+
+/* ============================================================
+   Broadsheet footer
+
+   The budget and election explorers still build their footer from these.
+   They are expressed entirely in tokens, so they took on the new palette
+   when it landed without any markup changing — kept here rather than
+   copied into each app so there is still one place to change them.
+   ============================================================ */
 
 .bb-footer {
   border-top: 1px solid var(--rule);
@@ -106,9 +1032,9 @@ body {
   margin: 0;
   font-family: var(--font-display);
   font-size: 1.875rem;
-  font-weight: 900;
-  letter-spacing: -0.03em;
-  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
 }
 
 .eyebrow + .bb-footer-title {
@@ -120,38 +1046,38 @@ body {
   margin: 1.5rem 0 0;
   color: var(--ink-2);
   font-size: 0.875rem;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .bb-footer-note {
   margin: 2rem 0 0;
   color: var(--ink-3);
-  font-family: var(--font-mono-ui);
-  font-size: 0.5625rem;
-  letter-spacing: 0.12em;
-  line-height: 1rem;
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+  line-height: 1.1rem;
   text-transform: uppercase;
 }
 
 .bb-footer-note strong,
 .bb-footer-strong {
   color: var(--ink);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .bb-footer-source {
   margin: 2rem 0 0;
   color: var(--ink-3);
-  font-family: var(--font-mono-ui);
-  font-size: 0.625rem;
-  letter-spacing: 0.16em;
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
   line-height: 1.5rem;
   text-transform: uppercase;
 }
 
 .bb-footer-divider {
   margin-block: 2rem;
-  border-top: 1px dashed var(--rule);
+  border-top: 1px solid var(--rule-soft);
 }
 
 .bb-footer-link-grid {
@@ -163,9 +1089,10 @@ body {
 
 .bb-footer-link-label {
   color: var(--ink-mute);
-  font-family: var(--font-mono-ui);
-  font-size: 0.625rem;
-  letter-spacing: 0.22em;
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -175,18 +1102,18 @@ body {
   max-width: 100%;
   align-items: flex-start;
   gap: 0.5rem;
-  margin-top: 0.25rem;
-  border-bottom: 1px solid var(--accent);
+  margin-top: 0.375rem;
+  border-bottom: 1px solid var(--rule);
   color: var(--ink);
-  font-family: var(--font-mono-ui);
-  font-size: 0.625rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  line-height: 1.5rem;
-  text-transform: uppercase;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+  transition: border-color 0.18s var(--ease);
 }
 
 .bb-footer-source-link:hover {
+  border-bottom-color: var(--accent);
   color: var(--accent);
 }
 
@@ -199,11 +1126,10 @@ body {
   border-top: 1px solid var(--rule);
   padding-top: 1.25rem;
   color: var(--ink-3);
-  font-family: var(--font-mono-ui);
-  font-size: 0.5625rem;
-  letter-spacing: 0.14em;
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
   line-height: 1.25rem;
-  text-transform: uppercase;
 }
 
 .bb-footer-bottom p {
@@ -211,46 +1137,19 @@ body {
 }
 
 .bb-footer-link {
-  border-bottom: 1px solid var(--accent);
+  border-bottom: 1px solid var(--rule);
   color: var(--ink);
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
+  transition: border-color 0.18s var(--ease);
 }
 
 .bb-footer-link:hover {
-  color: var(--accent);
-}
-
-.discover-dark-section,
-.dark-bg {
-  --ink: #f7f7f7;
-  --ink-2: #d8d0bd;
-  --ink-3: #aaa084;
-  --accent: #d6a33a;
-  --accent-soft: #f1d9a2;
-  --rule: rgba(247, 247, 247, 0.22);
-  --rule-soft: rgba(247, 247, 247, 0.12);
-  --paper-2: rgba(247, 247, 247, 0.08);
-  background: #16140f;
-  color: #f7f7f7;
-}
-
-.discover-dark-section .rule-link,
-.dark-bg .rule-link {
   border-bottom-color: var(--accent);
-  color: #f7f7f7;
-}
-
-.discover-dark-section .rule-link:hover,
-.dark-bg .rule-link:hover {
   color: var(--accent);
 }
 
 @media (min-width: 640px) {
-  .bb-container {
-    padding-inline: 2rem;
-  }
-
   .bb-footer-main {
     padding-block: 2rem 4rem;
   }
@@ -260,18 +1159,7 @@ body {
   }
 
   .bb-footer-copy {
-    font-size: 1rem;
-    line-height: 1.75;
-  }
-
-  .bb-footer-note {
-    margin-top: 2.5rem;
-    font-size: 0.625rem;
-    letter-spacing: 0.2em;
-  }
-
-  .bb-footer-source {
-    letter-spacing: 0.32em;
+    font-size: 0.9375rem;
   }
 
   .bb-footer-link-grid {
@@ -283,9 +1171,6 @@ body {
     margin-top: 2.25rem;
     flex-direction: row;
     align-items: center;
-    font-size: 0.625rem;
-    letter-spacing: 0.22em;
-    line-height: 1.5rem;
   }
 }
 
@@ -305,8 +1190,63 @@ body {
   }
 }
 
+/* ============================================================
+   Inverted sections
+
+   Kept for the discover pages, which alternate a dark band between
+   light ones. Re-points the tokens rather than restyling components,
+   so anything dropped inside adapts on its own.
+   ============================================================ */
+
+.discover-dark-section,
+.dark-bg {
+  --paper: #171715;
+  --paper-2: #1e1e1c;
+  --paper-3: #2c2c29;
+  --ink: #f7f7f7;
+  --ink-2: #d4d4cd;
+  --ink-3: #a8a89f;
+  --ink-mute: #8a8a81;
+  --accent: #e8796a;
+  --accent-soft: rgba(232, 121, 106, 0.14);
+  --rule: rgba(247, 247, 247, 0.16);
+  --rule-soft: rgba(247, 247, 247, 0.09);
+  background: var(--paper);
+  color: var(--ink);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .page-enter,
+  .row-in,
+  .overlay-in,
+  .sheet-in {
+    animation: none;
+  }
+
+  .chip,
+  .field,
+  .btn,
+  .card,
+  .cell,
+  .row,
+  .row-arrow,
+  .nav-link,
+  .nav-link::after,
+  .rule-link {
+    transition: none;
+  }
+
+  .row:hover .row-arrow {
+    transform: none;
   }
 }

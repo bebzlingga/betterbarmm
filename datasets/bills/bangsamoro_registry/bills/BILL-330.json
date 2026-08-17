@@ -1,0 +1,204 @@
+{
+  "record_type": "parliament_bill",
+  "basic_information": {
+    "bill_number": 330,
+    "short_title": "Supplemental Budget Act",
+    "official_title": "AN ACT APPROPRIATING SUPPLEMENTAL FUNDS FOR THE OPERATION OF THE BANGSAMORO GOVERNMENT",
+    "type": "Parliament Bill",
+    "session": "3rd Regular Session (2024-2025)",
+    "date_filed": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "current_status": "Approved",
+    "status_as_of": "2024-09-24",
+    "date_approved": "2024-09-24"
+  },
+  "citizen_summary": {
+    "what_is_this_about": "Appropriates Supplemental Funds for the Operation of the Bangsamoro Government.",
+    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note of the bill)",
+    "what_will_change": "Appropriates Supplemental Funds for the Operation of the Bangsamoro Government.",
+    "who_will_be_affected": [
+      "All BARMM ministries",
+      "Health workers",
+      "Hospitals",
+      "Patients",
+      "Public programs"
+    ],
+    "when_will_it_take_effect": "Approved; effectivity per its final clause",
+    "what_this_means_for_you": {
+      "in_short": "PROPOSAL: This is a money law: it decides how much funding BARMM ministries and programs get - the schools, hospitals, roads, scholarships, and social services you use are all paid from it. No single citizen 'applies' for it, but nearly every public service you touch depends on it. (This describes what the bill would do if enacted.)",
+      "in_practice": [
+        "Sets each ministry's budget ceiling for the year (or adds/extends funds mid-year for supplementals and extensions)",
+        "Slow disbursement is the recurring issue - several BAAs exist purely to extend the validity of unspent funds",
+        "Big-ticket items to watch: education (MBHTE), health (MOH), public works (MPW), and the Special Development Fund for conflict-affected communities"
+      ],
+      "for_specific_groups": {
+        "Parents & students": "Classroom construction, teacher hiring, and scholarship slots are set here",
+        "Patients": "Hospital operating budgets, medicines, and health worker salaries flow from this law",
+        "Workers & suppliers": "Government projects and procurement opportunities follow the appropriations",
+        "Taxpayers": "This is the accountability document - compare what was appropriated with what was actually delivered"
+      },
+      "where_this_applies": "All of BARMM",
+      "watch_out_for": [
+        "Nothing changes yet: a bill has no legal effect until Parliament approves it and it is enacted as a Bangsamoro Autonomy Act. Many bills are revised or merged along the way.",
+        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
+        "Follow-up reports: the Parliament itself has passed resolutions demanding ministries account for these funds"
+      ],
+      "when_you_will_feel_it": "Not yet - only if and when enacted",
+      "what_you_can_do": [
+        "This is the stage where public input matters most: submit a position paper via the Parliament's 'Call for Position Papers' page",
+        "Attend or watch the committee hearings (schedules are on the Parliament site; many are livestreamed)",
+        "Contact a Member of Parliament - the 'Contact an MP' page lists them - to support, oppose, or suggest changes"
+      ],
+      "key_terms_explained": {
+        "First Reading": "The bill's title is read in plenary and it is referred to a committee - the earliest formal stage.",
+        "Committee stage": "A committee studies the bill, holds hearings, and can rewrite it before plenary debate.",
+        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
+      },
+      "status_note": "Bill status: Approved (as of 2024-09-24).",
+      "benefits": {
+        "headline": "IF ENACTED: Funds every public service you use - the enabler of all other benefits.",
+        "direct_benefits": [
+          {
+            "benefit": "Operating budgets for schools, hospitals, roads, scholarships, social programs",
+            "who_gets_it": "Everyone using public services",
+            "how_to_access": "Automatic through the funded agencies"
+          },
+          {
+            "benefit": "Salaries of teachers, health workers, and government personnel",
+            "who_gets_it": "Public employees",
+            "how_to_access": "Through payroll of funded agencies"
+          },
+          {
+            "benefit": "Special Development Fund projects in conflict-affected communities",
+            "who_gets_it": "Camp and conflict-affected barangays",
+            "how_to_access": "Through LGU/OCM project identification"
+          }
+        ],
+        "indirect_benefits": [
+          "Procurement and job opportunities from funded projects",
+          "Predictability: agencies can plan the year"
+        ],
+        "limitations": [
+          "ALL benefits here are prospective: this is a bill, not a law. Nothing can be claimed unless it is enacted.",
+          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
+          "Compare appropriations vs. actual delivery - Parliament's own resolutions demand these reports; you can too"
+        ]
+      }
+    }
+  },
+  "key_provisions": [
+    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+  ],
+  "impact": {
+    "who_benefits": [
+      "All BARMM ministries",
+      "Health workers",
+      "Hospitals",
+      "Patients",
+      "Public programs"
+    ],
+    "impact_tags": [
+      "health",
+      "budget_appropriations"
+    ],
+    "estimated_beneficiaries": null,
+    "allocated_budget": null,
+    "figures_note": "Beneficiary/budget figures are only shown when stated in official documents; none captured for this record."
+  },
+  "legislative_journey": [
+    {
+      "stage": "Filed",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "First Reading",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Second Reading - Committee",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Second Reading - Plenary",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Third Reading",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Approved by Parliament",
+      "reached": true,
+      "date": "2024-09-24"
+    },
+    {
+      "stage": "Enacted (BAA)",
+      "reached": false,
+      "date": null
+    }
+  ],
+  "authors_and_sponsors": {
+    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "sponsor": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "note": "Listed on the bill's official page under General Information."
+  },
+  "related_documents": {
+    "original_bill_pdf": "On the bill's official page",
+    "committee_report": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "approved_version": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "irr": null
+  },
+  "related_legislation": {
+    "amends": [],
+    "repeals": [],
+    "related_bills": []
+  },
+  "implementation_status": {
+    "law_enacted": false,
+    "note": "Not applicable - bill not yet enacted."
+  },
+  "citizen_questions": [
+    {
+      "q": "Is this already a law?",
+      "a": "Approved by Parliament; enactment/numbering as a BAA follows."
+    },
+    {
+      "q": "How can I support or oppose this bill?",
+      "a": "Submit a position paper via the Parliament's Call for Position Papers page, or attend/watch the responsible committee's public hearings."
+    },
+    {
+      "q": "Where do I read the full text?",
+      "a": "The bill's page on parliament.bangsamoro.gov.ph (Bills index) links the PDF and legislative history."
+    }
+  ],
+  "display_header": {
+    "line1": "Parliament Bill No. 330",
+    "line2": "Supplemental Budget Act",
+    "badges": [
+      "APPROVED",
+      "Health",
+      "Budget Appropriations",
+      "2024"
+    ],
+    "what_this_does": "Appropriates Supplemental Funds for the Operation of the Bangsamoro Government.",
+    "who_it_affects": "All BARMM ministries · Health workers · Hospitals · Patients"
+  },
+  "views": {
+    "simple": "Appropriates Supplemental Funds for the Operation of the Bangsamoro Government.",
+    "official": "AN ACT APPROPRIATING SUPPLEMENTAL FUNDS FOR THE OPERATION OF THE BANGSAMORO GOVERNMENT"
+  },
+  "implementing_agency_if_enacted": {
+    "agency": "Ministry of Health (MOH)",
+    "inferred": true
+  },
+  "provenance": {
+    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
+    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+  }
+}

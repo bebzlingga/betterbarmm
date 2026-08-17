@@ -1,0 +1,2328 @@
+{
+  "meta": {
+    "record_type": "members_index",
+    "count": 156,
+    "note": "Analysis fields are template-generated classifications by Claude (2026-08-14) from official titles/metadata on parliament.bangsamoro.gov.ph; verify against the full official text before citing."
+  },
+  "members": [
+    {
+      "name": "ABAS, AKMAD I.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "North Cotabato",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [
+        475
+      ],
+      "resolutions": []
+    },
+    {
+      "name": "ABAS, HARON M.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Cotabato City / Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ABBAS, BASIT S.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Lanao del Sur",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ABU, MUDJIB C.",
+      "term_of_office": "May 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ALAMIA, LAISA M.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Deputy Speaker",
+      "representation": "Basilan",
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ALI, LANANG T., JR.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "AMBOLODTO, SUHARTO M.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "AMPATUAN, BAINTAN A.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Deputy Speaker",
+      "representation": "Maguindanao",
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ANAYATIN, SUSANA S.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Cotabato City",
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [
+        475
+      ],
+      "resolutions": []
+    },
+    {
+      "name": "GUERRA, EDUARD U.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / MPW Minister",
+      "representation": "North Cotabato",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "HASHIM, ABDULLAH B.",
+      "term_of_office": "February 2020 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Deputy Speaker",
+      "representation": "North Cotabato",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "HASSAN, HATIMIL E.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Deputy Speaker",
+      "representation": "Basilan",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "IQBAL, MOHAGHER M.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / MBHTE Minister",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ISMAEL, RASUL E.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Cotabato City",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "JAJURIE, RAISSA H.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / MSSD Minister / Deputy Floor Leader",
+      "representation": "Cotabato City / Sulu",
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "LOONG, DON MUSTAPHA A.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Sulu",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "LORENA, JOSE I.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Deputy Speaker",
+      "representation": "Sulu",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MACACUA, ABDULRAOF A.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Interim Chief Minister",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MACAPAAR, ABDULLAH G.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Lanao del Norte",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MITMUG, RASOL Y., JR.",
+      "term_of_office": "September 2020 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Deputy Floor Leader",
+      "representation": "Cotabato City / Lanao del Sur",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MUNOZ, HUSSEIN P.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / MPOS Minister",
+      "representation": "Davao Oriental",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ORANON, SUWAIB L.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "PACASEM, UBAIDA C.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / MFBM Minister",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "PAK, ABDULWAHAB M.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "SALENDAB, SAID Z.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "SALIK, ALI O.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "SEMA, OMAR YASSER C.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "SEMA, ROMEO K.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Deputy Speaker",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "SHIEK, SAID M.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Lanao del Norte",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "SOLAIMAN, ALI B.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Deputy Chief Minister for North Central Mindanao",
+      "representation": "Lanao del Sur",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "TAN, NABIL A.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Deputy Speaker",
+      "representation": "Sulu",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "USMAN, ADZFAR H.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Sulu",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "YACOB, MOHAMMAD S.",
+      "term_of_office": "March 2019 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / BTA Parliament Speaker",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [
+        475
+      ],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ALI, IBRAHIM D.",
+      "term_of_office": "March 2019 - February 2025",
+      "phases_served": [
+        "BTA1",
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ALIH, EDDIE M.",
+      "term_of_office": "March 2019 - February 2025",
+      "phases_served": [
+        "BTA1",
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "CANDAO, BAI MALEIHA B.",
+      "term_of_office": "March 2019 - February 2025",
+      "phases_served": [
+        "BTA1",
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "EBRAHIM, AHOD BALAWAG",
+      "term_of_office": "March 2019 - February 2025",
+      "phases_served": [
+        "BTA1",
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": "Interim Chief Minister 2019-Feb 2025 (Al Haj Murad)",
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "GAYAK, ABDULLAH E.",
+      "term_of_office": "March 2019 - February 2025",
+      "phases_served": [
+        "BTA1",
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "JAKILAN, MUSLIMIN A.",
+      "term_of_office": "March 2019 - February 2025",
+      "phases_served": [
+        "BTA1",
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "JIKIRI, ALBAKIL D.",
+      "term_of_office": "September 2021 - February 2025",
+      "phases_served": [
+        "BTA1",
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MACASALONG, MARJANIE S.",
+      "term_of_office": "March 2019 - February 2025",
+      "phases_served": [
+        "BTA1",
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MAWALLIL, AMILBAHAR S.",
+      "term_of_office": "March 2019 - February 2025",
+      "phases_served": [
+        "BTA1",
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "PANGANDAMAN, NABILA MARGARITA P.",
+      "term_of_office": "March 2019 - February 2025",
+      "phases_served": [
+        "BTA1",
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "RAMOS, DIAMILA D.",
+      "term_of_office": "August 2019 - February 2025",
+      "phases_served": [
+        "BTA1",
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "SANGKI, ALI B.",
+      "term_of_office": "January 2020 - February 2025",
+      "phases_served": [
+        "BTA1",
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "SILONGAN, AIDA M.",
+      "term_of_office": "March 2019 - February 2025",
+      "phases_served": [
+        "BTA1",
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "BALINDONG, PANGALIAN M.",
+      "term_of_office": "March 2019 - October 2025",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": "Speaker of the BTA Parliament 2019-2025",
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "BASMAN, ANNA TARHATA S.",
+      "term_of_office": "March 2019 - September 2024",
+      "phases_served": [
+        "BTA1",
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "TAGO, PAISALIN P.",
+      "term_of_office": "March 2019 - June 2025",
+      "phases_served": [
+        "BTA1",
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ABAS, ZUL QARNEYN M.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ADIONG, ZIAUR-RAHMAN A.",
+      "term_of_office": "August 2020 - June 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "AHANG, ABDULLA A.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ALAUDDIN, FAIZ S.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ALIL, ZESAR H.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ASMAWIL, MUSLIMA A.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "BARRA, HAMID AMINODDIN D.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "BATO, MOHAMMAD ZAINODEN P.",
+      "term_of_office": "March 2019 - August 2021",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "BURAHAN, ABRAHAM T.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "DIAMLA, MUSA K. S.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "DIPATUAN, SAFFRULLAH M.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ESMAEL, ABDULADZIS M.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "JAAFAR, GHAZALI B.",
+      "term_of_office": "February 2019 - March 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": "MILF Vice-Chairman; died in office March 2019",
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "KARON, BAINON G.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "LATIPH, MAISARA DANDAMUN",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "LIDASAN, MUSSOLINI S.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MACARAYA, JAMEL D.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MANGUDADATU, KHADAFEH G.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MANTAWIL, MALIK A.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MASTURA, DATU TUCAO O.",
+      "term_of_office": "March 2019 - June 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MASTURA, SITTIE SHAHARA I.",
+      "term_of_office": "March 2019 - June 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MIDTIMBANG, DATU MIDPANTAO M.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MUJAHID, USTADZ ABDULMUHMIN A.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "RIMBANG, EDRIEZA H.N.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "SACAR, MODAYAO M.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "SAHRIN, ABDUL R.",
+      "term_of_office": "March 2019 - January 2021",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "SALI, AL-SYED A.",
+      "term_of_office": "March 2019 - June 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "SALIGA, ROMEO C.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "SANI, PUNDUMA B.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "SATTAR, ALZAD T.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "UDJAH, SAHIE S.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ULAMA, MELANIO U.",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "YU EKEY, NARCISO CO",
+      "term_of_office": "March 2019 - August 2022",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "AHAJA, NUR-MAHADIL K.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "AMIRIL, SIDIK S.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ANNI, RUDJIA H.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "BAWASANTA, RODOLFO A.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "BURAHAN, NEDRA S.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "DATAYA, ABDUL M., SR.",
+      "term_of_office": "March 2019 - July 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "DAUD, NASHRUPER T.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "HANTIAN, RONIE A.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "IBAY, CAHAR P.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ISMAEL, AHMAD ALI S.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "LUCMAN JR., HAROUN ALRASHID A.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MACARAMBON, FAROUK, JR. A.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MACARAMBON, ROLAN ABDUL RASHID A.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MENOR, ALEXANDER B.M.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "PADATE, ABOL ALAM A.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "PIANG, PEARL JOY L.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "SINSUAT, DATU ROONIE Q.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "TILLAH, IRENE P.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "TINGKAHAN, RIZAL, JR. A.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "TOMAWIS, HAROLD D.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "TULAWIE, HANIBAL H.",
+      "term_of_office": "March 2019 - June 2019",
+      "phases_served": [
+        "BTA1"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ASARUL, HABER A.",
+      "term_of_office": "March 2019 - June 2019; March 2025 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "SUMAGAYAN, AMENODIN U.",
+      "term_of_office": "March 2019 - June 2019; March 2025 - Present",
+      "phases_served": [
+        "BTA1",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Deputy Speaker",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ALAUDDIN, MOSBER E.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Basilan",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [
+        475
+      ],
+      "resolutions": []
+    },
+    {
+      "name": "AMENODEN, ABDULAZIZ M.",
+      "term_of_office": "September 2022 - February 2025",
+      "phases_served": [
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ANTAO, MOHAMMAD KELIE U.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "North Cotabato",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ARNADO, MARY ANN M.",
+      "term_of_office": "September 2022 - February 2025",
+      "phases_served": [
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ASNAWIE, DAN S.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Basilan",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [
+        475
+      ],
+      "resolutions": []
+    },
+    {
+      "name": "BABAO, ALI MONTAHA D.",
+      "term_of_office": "September 2022 - February 2025",
+      "phases_served": [
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "DILANGALEN, HASHEMI N.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [
+        475
+      ],
+      "resolutions": []
+    },
+    {
+      "name": "DUMAMA-ALBA, SHA ELIJAH B.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Maguindanao",
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ESMAEL, SUHARTO S.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Deputy Floor Leader",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ESTINO, MATARUL M.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Sulu",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "HADJI ABDULLAH, KHALID M.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Lanao del Sur",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "KAHALAN, DENMARTIN A.",
+      "term_of_office": "September 2022 - February 2025",
+      "phases_served": [
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "KARON, FAIZAL G.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Deputy Speaker",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [
+        475
+      ],
+      "resolutions": []
+    },
+    {
+      "name": "LIM, JOHN ANTHONY L.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Floor Leader",
+      "representation": "Tawi-Tawi",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [
+        475
+      ],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "LOONG, BENJAMIN T.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Deputy Speaker",
+      "representation": "Sulu",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MACACUA, JAMEL B.",
+      "term_of_office": "September 2022 - February 2025",
+      "phases_served": [
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MACATANONG, AMROUSSI A.",
+      "term_of_office": "September 2022 - February 2025",
+      "phases_served": [
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MAGLANGIT, TARHATA M.",
+      "term_of_office": "September 2022 - February 2025",
+      "phases_served": [
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MALIK, HAMID U.",
+      "term_of_office": "September 2022 - February 2025",
+      "phases_served": [
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MANTAWIL, BAILENG S.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Maguindanao",
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MASTURA, ISHAK V.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MATALAM, JAAFAR APOLLO MIKHAIL L.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "North Cotabato",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MENDOZA, FROILYN T.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Maguindanao",
+      "gender": "female",
+      "notes": "Teduray/IP representative",
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MIDTIMBANG, MICHAEL E.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MIDTIMBANG, TAWAKAL B.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MISUARI, ABDULKARIM T.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Deputy Speaker",
+      "representation": "Sulu",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [
+        475
+      ],
+      "resolutions": []
+    },
+    {
+      "name": "MISUARI, NURREDHA I.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Sulu",
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "PARCASIO, RANDOLPH C.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Deputy Floor Leader",
+      "representation": "Maguindanao / Sulu",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "PIANG, RAMON A., SR.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Maguindanao",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [
+        475
+      ],
+      "resolutions": []
+    },
+    {
+      "name": "SINOLINDING, KADIL M., JR.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member / MOH Minister",
+      "representation": "North Cotabato",
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "UTTO, BASSIR D.",
+      "term_of_office": "September 2022 - February 2025",
+      "phases_served": [
+        "BTA2"
+      ],
+      "current_position": null,
+      "representation": null,
+      "gender": null,
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "UY-OYOD, SITTIE FAHANIE S.",
+      "term_of_office": "September 2022 - Present",
+      "phases_served": [
+        "BTA2",
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": "Maguindanao",
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ADIONG, RASHDI T.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "ANTOK, TOMANDA D.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [
+        475
+      ],
+      "resolutions": []
+    },
+    {
+      "name": "BALINDONG, AHMAD AMIR A.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "BAYAM, ZULFIKAR-ALI S.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [
+        475
+      ],
+      "resolutions": []
+    },
+    {
+      "name": "BENITO, ABDULBASIT R.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "CANDAO, MA-AROUPH B.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "CUTAN, UTTOH SALEM D.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "EBIL, MUHAMMAD NADZIR S.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "GAYAK, AMIRODDIN Y.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "HATAMAN, ABRAR J.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "IBAY, IBRAHIM P.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "JIKIRI, SARIPUDDIN D.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "KADATUAN, KITEM D., JR.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "KARON, BAI ALI S.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "female",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MALANG, BUTCH P.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "MUNDER, ALIRAKIM T.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "PAGAYAO, ALINDATU K.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [
+        475
+      ],
+      "resolutions": []
+    },
+    {
+      "name": "RAKIM, AMER ZAAKARIA A.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Deputy Floor Leader",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    },
+    {
+      "name": "SINARIMBO, NAGUIB G.",
+      "term_of_office": "March 2025 - Present",
+      "phases_served": [
+        "BTA3"
+      ],
+      "current_position": "BTA Member / Deputy Floor Leader",
+      "representation": null,
+      "gender": "male",
+      "notes": null,
+      "authored_bills": [],
+      "co_authored_bills": [],
+      "resolutions": []
+    }
+  ]
+}

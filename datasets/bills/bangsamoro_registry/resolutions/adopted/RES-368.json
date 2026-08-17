@@ -1,0 +1,112 @@
+{
+  "record_type": "adopted_resolution",
+  "basic_information": {
+    "resolution_number": 368,
+    "short_title": "Congratulating Samsodin Abdulrahman, weightlifting gold, Singapore International 2023",
+    "official_title": "pending_capture: available on the measure's official page / full text, not yet scraped (condensed summary shown)",
+    "type": "Adopted Resolution",
+    "date_adopted": "2023-07-18",
+    "current_status": "ADOPTED"
+  },
+  "citizen_summary": {
+    "what_is_this_about": "Congratulating Samsodin Abdulrahman, weightlifting gold, Singapore International 2023.",
+    "who_will_be_affected": [
+      "General public"
+    ],
+    "is_it_binding": "Resolutions express Parliament's official position or direct BARMM offices; unlike Autonomy Acts they generally do not create binding law for the public, but internal-rules resolutions bind the Parliament itself.",
+    "what_this_means_for_you": {
+      "in_short": "Res. 368 (2023): Congratulating Samsodin Abdulrahman, weightlifting gold, Singapore International 2023. A commendation/recognition: the Parliament putting an achievement or a life on the official record. It carries no money or obligation, but for the honoree it is the region's formal salute - and for everyone else, a signal of what the Bangsamoro chooses to celebrate.",
+      "for_specific_groups": {
+        "Honorees & families": "An official, citable recognition",
+        "Students & youth": "Achievement is noticed - topnotchers and athletes are regularly honored"
+      },
+      "in_practice": [
+        "Type: commendation, national intergovernmental, international solidarity"
+      ],
+      "where_this_applies": "All of BARMM unless the title names a specific place",
+      "when_you_will_feel_it": "Immediately as an official position; concrete action depends on the addressed agency",
+      "what_you_can_do": [
+        "If the resolution urges an agency to act, cite it when following up with that agency",
+        "Share it - resolutions gain force through public attention",
+        "Ask your MP to follow through with legislation if the issue needs a binding law"
+      ],
+      "watch_out_for": [],
+      "key_terms_explained": {
+        "Adopted resolution": "An official position or instruction of the Parliament - persuasive and political, but not a law binding the public.",
+        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
+      },
+      "benefits": {
+        "headline": "Recognition on the region's official record.",
+        "direct_benefits": [
+          {
+            "benefit": "An official, citable honor (useful for scholarships, portfolios, institutional memory)",
+            "who_gets_it": "The honoree(s)",
+            "how_to_access": "Copy of the resolution from the Parliament"
+          }
+        ],
+        "indirect_benefits": [
+          "Signals to youth what the region celebrates"
+        ],
+        "limitations": [
+          "No monetary award attaches unless separately provided"
+        ]
+      }
+    }
+  },
+  "impact": {
+    "impact_tags": [
+      "commendation",
+      "international_solidarity",
+      "national_intergovernmental",
+      "other"
+    ],
+    "who_benefits": [
+      "General public"
+    ]
+  },
+  "legislative_journey": [
+    {
+      "stage": "Proposed",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Adopted in plenary",
+      "reached": true,
+      "date": "2023-07-18"
+    }
+  ],
+  "authors_and_sponsors": {
+    "authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "note": "On the resolution's official page."
+  },
+  "related_documents": {
+    "pdf": "On the Adopted Resolutions index at parliament.bangsamoro.gov.ph"
+  },
+  "citizen_questions": [
+    {
+      "q": "Does this resolution change the law?",
+      "a": "No - it expresses a position, urges, directs, or commends. Law changes require a Bangsamoro Autonomy Act."
+    },
+    {
+      "q": "Who is it addressed to?",
+      "a": "National government agencies/Congress"
+    }
+  ],
+  "display_header": {
+    "line1": "Adopted Resolution No. 368",
+    "line2": "Congratulating Samsodin Abdulrahman, weightlifting gold, Singapore Int...",
+    "badges": [
+      "ADOPTED",
+      "Commendation",
+      "National Intergovernmental",
+      "2023"
+    ],
+    "what_this_does": "Congratulating Samsodin Abdulrahman, weightlifting gold, Singapore International 2023.",
+    "who_it_affects": "General public"
+  },
+  "provenance": {
+    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
+    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+  }
+}

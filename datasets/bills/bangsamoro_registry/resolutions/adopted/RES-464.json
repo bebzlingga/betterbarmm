@@ -1,0 +1,121 @@
+{
+  "record_type": "adopted_resolution",
+  "basic_information": {
+    "resolution_number": 464,
+    "short_title": "Condemning the May 19, 2024 Sto. Nino Chapel attack in Cotabato City; urging swift justice",
+    "official_title": "pending_capture: available on the measure's official page / full text, not yet scraped (condensed summary shown)",
+    "type": "Adopted Resolution",
+    "date_adopted": "2024-06-19",
+    "current_status": "ADOPTED"
+  },
+  "citizen_summary": {
+    "what_is_this_about": "Condemning the May 19, 2024 Sto. Nino Chapel attack in Cotabato City; urging swift justice.",
+    "who_will_be_affected": [
+      "Conflict-affected communities",
+      "Former combatants"
+    ],
+    "is_it_binding": "Resolutions express Parliament's official position or direct BARMM offices; unlike Autonomy Acts they generally do not create binding law for the public, but internal-rules resolutions bind the Parliament itself.",
+    "what_this_means_for_you": {
+      "in_short": "Res. 464 (2024): Condemning the May 19, 2024 Sto. Nino Chapel attack in Cotabato City; urging swift justice. The Parliament condemning a killing or attack and demanding investigation. It doesn't convict anyone, but it puts institutional pressure on police and prosecutors, keeps the case in public view, and tells victims' families the region has not looked away.",
+      "for_specific_groups": {
+        "Victims' families": "Cite this resolution when following up with PNP/NBI/prosecutors - it is official pressure on your side",
+        "Professional groups": "Part of a documented pattern of attacks on doctors, lawyers, and public servants",
+        "Authorities": "A formal demand for results"
+      },
+      "watch_out_for": [
+        "A resolution is not an investigation - progress still depends on law enforcement; keep following up"
+      ],
+      "in_practice": [
+        "Type: condemnation justice, directive oversight"
+      ],
+      "where_this_applies": "All of BARMM unless the title names a specific place",
+      "when_you_will_feel_it": "Immediately as an official position; concrete action depends on the addressed agency",
+      "what_you_can_do": [
+        "If the resolution urges an agency to act, cite it when following up with that agency",
+        "Share it - resolutions gain force through public attention",
+        "Ask your MP to follow through with legislation if the issue needs a binding law"
+      ],
+      "key_terms_explained": {
+        "Adopted resolution": "An official position or instruction of the Parliament - persuasive and political, but not a law binding the public.",
+        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
+      },
+      "benefits": {
+        "headline": "Institutional pressure toward justice.",
+        "direct_benefits": [
+          {
+            "benefit": "Official demand for investigation you can cite in follow-ups",
+            "who_gets_it": "Victims' families",
+            "how_to_access": "Reference the resolution number with PNP/NBI/prosecutors"
+          },
+          {
+            "benefit": "Public documentation that the case is not forgotten",
+            "who_gets_it": "Affected communities",
+            "how_to_access": "Resolution is a permanent public record"
+          }
+        ],
+        "indirect_benefits": [
+          "A documented pattern strengthens calls for protective measures for professionals"
+        ],
+        "limitations": [
+          "Not an investigation or conviction - persistence with law enforcement is still required"
+        ]
+      }
+    }
+  },
+  "impact": {
+    "impact_tags": [
+      "condemnation_justice",
+      "directive_oversight",
+      "peace_security_justice"
+    ],
+    "who_benefits": [
+      "Conflict-affected communities",
+      "Former combatants"
+    ]
+  },
+  "legislative_journey": [
+    {
+      "stage": "Proposed",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Adopted in plenary",
+      "reached": true,
+      "date": "2024-06-19"
+    }
+  ],
+  "authors_and_sponsors": {
+    "authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "note": "On the resolution's official page."
+  },
+  "related_documents": {
+    "pdf": "On the Adopted Resolutions index at parliament.bangsamoro.gov.ph"
+  },
+  "citizen_questions": [
+    {
+      "q": "Does this resolution change the law?",
+      "a": "No - it expresses a position, urges, directs, or commends. Law changes require a Bangsamoro Autonomy Act."
+    },
+    {
+      "q": "Who is it addressed to?",
+      "a": "BARMM ministries/offices"
+    }
+  ],
+  "display_header": {
+    "line1": "Adopted Resolution No. 464",
+    "line2": "Condemning the May 19, 2024 Sto. Nino Chapel attack in Cotabato City; ...",
+    "badges": [
+      "ADOPTED",
+      "Condemnation Justice",
+      "Directive Oversight",
+      "2024"
+    ],
+    "what_this_does": "Condemning the May 19, 2024 Sto. Nino Chapel attack in Cotabato City; urging swift justice.",
+    "who_it_affects": "Conflict-affected communities · Former combatants"
+  },
+  "provenance": {
+    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
+    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+  }
+}

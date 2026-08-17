@@ -24,6 +24,12 @@ export type DiscoverBarmmDetailCard = {
 	sourceLabel?: string
 }
 
+export type DiscoverBarmmTimelineEvent = {
+	era: string
+	title: string
+	description: string
+}
+
 export type DiscoverBarmmTopic = {
 	slug: string
 	label: string
@@ -37,6 +43,7 @@ export type DiscoverBarmmTopic = {
 	detailDescription?: string
 	detailCards?: DiscoverBarmmDetailCard[]
 	peopleGroups?: DiscoverBarmmPeopleGroup[]
+	timeline?: DiscoverBarmmTimelineEvent[]
 }
 
 export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
@@ -61,6 +68,93 @@ export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
 			{
 				label: 'Bangsamoro Government transition report',
 				href: 'https://bangsamoro.gov.ph/news/latest-news/2019-bangsamoro-government-made-significant-strides-in-governance/',
+			},
+		],
+		timeline: [
+			{
+				era: 'Before 1565',
+				title: 'Sultanates and self-rule',
+				description: 'Long before Manila became a colonial capital, the peoples of Mindanao and the Sulu archipelago governed themselves. Islam arrived through trade and missionaries from the 13th and 14th centuries, and by the 15th century powerful sultanates had formed — among them the Sultanate of Sulu (traditionally dated to around 1457) and the Sultanate of Maguindanao. These states ran their own courts, collected tribute, maintained armies and navies, and traded across maritime Southeast Asia — leaving the Bangsamoro a deep memory of sovereignty and self-rule.',
+			},
+			{
+				era: '1565–1898',
+				title: 'Three centuries of resistance',
+				description: 'When Spain colonized the northern Philippines, it tried again and again to bring the Muslim south under its control — and never fully succeeded. Across more than three centuries, the sultanates fought a long series of campaigns the Spanish called the "Moro Wars," defending their territory, faith, and institutions. That sustained resistance is why the region entered the 20th century with a distinct history, largely unconquered and never integrated into the colonial order on Spanish terms.',
+			},
+			{
+				era: '1899–1946',
+				title: 'Annexation under American rule',
+				description: 'After Spain ceded the Philippines to the United States in 1898, American forces moved to place the Moro territories under a single Philippine administration — through military campaigns in Sulu and Lanao, and later through civil governance and public-land laws. Homesteading and resettlement policies began opening Moro lands to migrants from the north. These decades folded the sultanate territories into a unitary state without the consent of their peoples, planting grievances over land, identity, and self-government that would shape the century ahead.',
+			},
+			{
+				era: '1946–1967',
+				title: 'Marginalization in the homeland',
+				description: 'Philippine independence in 1946 did not resolve those grievances. Resettlement programs kept moving settlers into Mindanao, steadily shifting land ownership and the demographic balance of once majority-Moro provinces. Political and economic power concentrated elsewhere, and many Moro communities came to feel like a marginalized minority in their own historic homeland — a sense of dispossession that made the coming decade combustible.',
+			},
+			{
+				era: '1968',
+				title: 'The Jabidah massacre',
+				description: 'In March 1968, reports emerged that Moro military trainees had been killed on Corregidor Island in a secret operation later known as the Jabidah incident. The details remain contested to this day, but the story struck a nerve. It became a powerful symbol of how little the state seemed to value Moro lives, and a catalyst for a new, more organized Bangsamoro political consciousness — pushing long-simmering grievances into open mobilization.',
+			},
+			{
+				era: '1969–1972',
+				title: 'The MNLF takes up the cause',
+				description: 'Out of that awakening, Nur Misuari and other young activists founded the Moro National Liberation Front (MNLF), which took shape around 1969 to 1972. The MNLF reframed the struggle as one for Bangsamoro self-determination and launched an armed campaign that escalated sharply after martial law was declared in 1972. By the mid-1970s the fighting in Mindanao had grown into one of the largest internal conflicts the country had seen.',
+			},
+			{
+				era: '1976',
+				title: 'The Tripoli Agreement',
+				description: 'With the Organisation of Islamic Cooperation mediating and Libya hosting, the government and the MNLF signed the Tripoli Agreement in December 1976. It envisioned autonomy for a Bangsamoro region spanning 13 provinces. But the two sides disagreed sharply over how to implement it — including a plebiscite the MNLF rejected — so the agreement was never fully carried out and the fighting resumed.',
+			},
+			{
+				era: '1977–1984',
+				title: 'The MILF emerges',
+				description: 'The stalled peace and disagreements over strategy, ideology, and religious direction split the movement. Hashim Salamat led a faction that broke away from the MNLF in the late 1970s and, by 1984, formally organized as the Moro Islamic Liberation Front (MILF). Emphasizing an Islamic character to the struggle, the MILF grew over the following decades into the largest Bangsamoro armed movement and, eventually, the main counterpart of the government in peace talks.',
+			},
+			{
+				era: '1989–1990',
+				title: 'The first autonomous region',
+				description: 'Acting on a mandate in the 1987 Constitution, Congress passed Republic Act 6734 in 1989 to create the Autonomous Region in Muslim Mindanao (ARMM). A plebiscite that year decided which areas would join, and only four provinces initially voted in. Inaugurated in 1990, the ARMM was the first attempt at Moro autonomy under Philippine law — but many saw it as under-powered and under-funded, falling short of the Tripoli terms.',
+			},
+			{
+				era: '1996',
+				title: 'MNLF signs a final peace deal',
+				description: 'After years of talks, the MNLF and the government signed the Final Peace Agreement in September 1996, meant to fully implement the 1976 Tripoli accord. Nur Misuari became ARMM governor, and a transitional body was created to steer development in conflict-affected areas. The deal ended the MNLF war — but it did not include the MILF, whose separate track and demands remained unresolved.',
+			},
+			{
+				era: '2008',
+				title: 'A deal struck down',
+				description: 'Negotiations with the MILF produced a Memorandum of Agreement on Ancestral Domain (MOA-AD) in 2008, which would have expanded Moro self-governance and territory. Before it could be signed, the Supreme Court halted it and later ruled it unconstitutional. The collapse set off a wave of violence in parts of Mindanao and displaced hundreds of thousands — but it also pushed both sides to rebuild the process on firmer legal ground.',
+			},
+			{
+				era: '2012',
+				title: 'Framework Agreement on the Bangsamoro',
+				description: 'In October 2012, the government and the MILF signed the Framework Agreement on the Bangsamoro, a roadmap to replace the ARMM with a new and more autonomous entity to be called the Bangsamoro. It set out the broad architecture — a ministerial form of government, wider powers, and arrangements for sharing wealth and authority — and created a commission to draft the enabling law.',
+			},
+			{
+				era: '2014',
+				title: 'The Comprehensive Agreement',
+				description: 'On March 27, 2014, the two sides signed the Comprehensive Agreement on the Bangsamoro (CAB), folding the Framework Agreement and its annexes into a single, complete peace accord. The CAB marked the formal end of the decades-long MILF armed struggle and became the political and moral basis for drafting the new organic law that would define the future Bangsamoro.',
+			},
+			{
+				era: '2018',
+				title: 'The Bangsamoro Organic Law',
+				description: 'After an earlier attempt failed, Congress passed and the President signed Republic Act 11054, the Bangsamoro Organic Law, in July 2018. It replaced the ARMM charter and set the legal framework for a new region: an 80-member Bangsamoro Parliament, a ministerial (parliamentary) form of regional government led by a chief minister, and broader fiscal and political powers than the ARMM ever held.',
+			},
+			{
+				era: '2019',
+				title: 'BARMM is ratified',
+				description: 'The Organic Law went to the people in a two-part plebiscite in January and February 2019. Voters ratified it, and additional areas — including Cotabato City and dozens of towns — voted to join. The Bangsamoro Autonomous Region in Muslim Mindanao (BARMM) formally replaced the ARMM, and the Bangsamoro Transition Authority (BTA) was inaugurated with MILF chair Ahod "Al Haj Murad" Ebrahim as interim chief minister.',
+			},
+			{
+				era: '2019–2025',
+				title: 'Building the institutions',
+				description: 'The transition was about turning a peace agreement into a working government. That meant decommissioning thousands of MILF combatants and their weapons, running normalization and development programs in former conflict zones, and building the machinery of a region almost from scratch — ministries, a bureaucracy, budgets, an electoral code, and an administrative code. Because the task was so large, the transition period was extended to 2025.',
+			},
+			{
+				era: 'September 14, 2026',
+				title: 'The first regular election',
+				description: 'The transition culminates in the first regular parliamentary elections, set for September 14, 2026. Voters will elect the 80-member Bangsamoro Parliament — through party-representative, single-member district, and reserved-sector seats — and that Parliament will in turn choose the chief minister. It is the moment the Bangsamoro moves from an appointed transition authority to a government its own people have elected.',
 			},
 		],
 	},

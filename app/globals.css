@@ -19,9 +19,11 @@
 	--ochre: #9a7530;
 	--background: var(--paper);
 	--foreground: var(--ink);
-	--font-body: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
-	--font-display: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
-	--font-mono-ui: 'Google Sans', 'SF Mono', Menlo, Consolas, ui-monospace, monospace;
+	/* DM Sans for reading copy, Outfit for headings, buttons and labels — the
+	   layout loads both with next/font and defines the two variables below. */
+	--font-body: var(--font-dm-sans), -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+	--font-display: var(--font-outfit), -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+	--font-mono-ui: var(--font-outfit), -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
 }
 
 @theme inline {
@@ -38,6 +40,21 @@ body {
 	font-feature-settings: 'tnum';
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
+}
+
+/* Kept in `base` so a `font-sans` utility on a heading still wins. */
+@layer base {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	button,
+	input[type='button'],
+	input[type='submit'] {
+		font-family: var(--font-display);
+	}
 }
 
 * {

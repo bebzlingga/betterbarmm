@@ -119,7 +119,7 @@ export default function Page() {
 				meta={`Generated ${metadata.generatedAt}`}
 			/>
 
-			<section className='border-b border-[var(--ink)]'>
+			<section className='border-b border-[var(--rule)]'>
 				<Reveal>
 					<div className='mx-auto grid max-w-7xl grid-cols-2 px-2 sm:px-4 md:grid-cols-4 lg:grid-cols-6'>
 						{statCards.map((card, index) => (
@@ -133,7 +133,7 @@ export default function Page() {
 				</Reveal>
 			</section>
 
-			<section className='border-b border-[var(--ink)] bg-[var(--accent)] text-white'>
+			<section className='border-b border-[var(--rule)] bg-[var(--accent)] text-white'>
 				<div className='mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-8'>
 					<div>
 						<p className='font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--accent-soft)]'>Voter guide</p>
@@ -158,7 +158,7 @@ export default function Page() {
 
 			<section
 				id='how'
-				className='scroll-mt-32 border-b border-[var(--ink)] py-14 sm:py-20 lg:py-24'
+				className='scroll-mt-32 border-b border-[var(--rule)] py-16 sm:py-24 lg:py-28'
 			>
 				<div className='mx-auto max-w-7xl px-6 sm:px-8'>
 					<SectionHeading
@@ -167,7 +167,7 @@ export default function Page() {
 						description='BARMM elects an 80-seat Parliament through 40 party-representative seats, 32 single-member district seats, and 8 sectoral or reserved seats. A parliamentary majority is 41 seats.'
 					/>
 
-					<Reveal className='mt-10 border border-[var(--ink)] bg-[var(--paper-2)] p-6 sm:p-8'>
+					<Reveal className='mt-10 border border-[var(--rule)] bg-[var(--paper-2)] p-6 sm:p-8'>
 						<div className='flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1'>
 							<p className='font-mono text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--ink-3)]'>Composition of the {stats.totalSeats}-seat Parliament</p>
 							<p className='font-mono text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--accent)]'>Majority = {stats.majorityThreshold}</p>
@@ -278,7 +278,7 @@ export default function Page() {
 							</p>
 						</div>
 						<div className='flex flex-col justify-center'>
-							<div className='flex items-baseline justify-between gap-4 border-b border-[var(--ink)] pb-4'>
+							<div className='flex items-baseline justify-between gap-4 border-b border-[var(--rule)] pb-4'>
 								<p className='eyebrow'>Parliament vote</p>
 								<p className='num text-2xl font-extrabold leading-none tracking-[-0.03em] sm:text-3xl'>
 									{stats.majorityThreshold}
@@ -336,7 +336,7 @@ export default function Page() {
 
 			<section
 				id='timeline'
-				className='scroll-mt-32 bg-[var(--paper-2)] py-14 sm:py-20 lg:py-24'
+				className='scroll-mt-32 bg-[var(--paper-2)] py-16 sm:py-24 lg:py-28'
 			>
 				<div className='mx-auto max-w-7xl px-6 sm:px-8'>
 					<SectionHeading
@@ -352,7 +352,7 @@ export default function Page() {
 
 			<section
 				id='news'
-				className='scroll-mt-32 border-t border-[var(--ink)] py-14 sm:py-20 lg:py-24'
+				className='scroll-mt-32 border-t border-[var(--rule)] py-16 sm:py-24 lg:py-28'
 			>
 				<div className='mx-auto max-w-7xl px-6 sm:px-8'>
 					<SectionHeading
@@ -360,7 +360,7 @@ export default function Page() {
 						title='Follow the election as it unfolds.'
 						description='The most recent reporting tracked in this workspace, newest first. Each headline links to the original source.'
 					/>
-					<div className='mt-10 border-t border-[var(--ink)]'>
+					<div className='mt-10 border-t border-[var(--rule)]'>
 						{latestNews.map((item) => (
 							<Reveal key={item.id}>
 								<a

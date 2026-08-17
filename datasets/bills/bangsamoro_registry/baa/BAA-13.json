@@ -1,0 +1,179 @@
+{
+  "record_type": "bangsamoro_autonomy_act",
+  "basic_information": {
+    "baa_number": 13,
+    "short_title": "Bangsamoro Administrative Code",
+    "official_title": "AN ACT PROVIDING FOR THE BANGSAMORO ADMINISTRATIVE CODE",
+    "type": "Bangsamoro Autonomy Act (regional law)",
+    "enacting_parliament": "BTA1",
+    "date_ratified": "2020-10-28",
+    "current_status": "ENACTED - IN FORCE"
+  },
+  "citizen_summary": {
+    "what_is_this_about": "Provides for the Bangsamoro Administrative Code.",
+    "why_was_it_proposed": "Foundational 'constitution-in-practice' of the regional bureaucracy; most-amended BAA (BAA 37, 93/94, plus multiple pending bills).",
+    "what_will_change": "Provides for the Bangsamoro Administrative Code.",
+    "who_will_be_affected": [
+      "Anyone transacting with government",
+      "Civil-society & researchers",
+      "Local officials"
+    ],
+    "when_will_it_take_effect": "Ratified 2020-10-28; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
+    "what_this_means_for_you": {
+      "in_short": "The Administrative Code is the operating manual of the Bangsamoro Government: it defines every ministry and office, their powers, and how they must deal with you. Whenever you transact with any BARMM office - permits, IDs, complaints, appeals - this law is the rulebook behind the counter.",
+      "in_practice": [
+        "Names the ministries and what each is responsible for, so you know which door to knock on",
+        "Sets the chain of authority - who can decide, who can be appealed to",
+        "Later laws keep amending it (seat of government, SGA authority), so always check the current consolidated text"
+      ],
+      "for_specific_groups": {
+        "Anyone transacting with government": "Defines your right to be served by a designated, accountable office",
+        "Civil-society & researchers": "The map of the whole bureaucracy in one law",
+        "Local officials": "Defines how BARMM relates to provinces, cities, and municipalities"
+      },
+      "where_this_applies": "All of BARMM unless the title names a specific place",
+      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
+      "what_you_can_do": [
+        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
+        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
+        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
+      ],
+      "watch_out_for": [
+        "Already amended by BAA 37, 93, 94 - read the consolidated text"
+      ],
+      "key_terms_explained": {
+        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
+        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
+        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
+      },
+      "benefits": {
+        "headline": "Clearer government = claimable service standards.",
+        "direct_benefits": [
+          {
+            "benefit": "Know exactly which ministry owes you which service - the basis of every complaint and follow-up",
+            "who_gets_it": "Anyone transacting with the Bangsamoro Government",
+            "how_to_access": "Cite the ministry's mandate under the Administrative Code"
+          },
+          {
+            "benefit": "Appeal routes: decisions can be elevated along the chain the Code defines",
+            "who_gets_it": "Aggrieved citizens",
+            "how_to_access": "File with the office's next-level authority"
+          }
+        ],
+        "indirect_benefits": [
+          "A professional bureaucracy instead of ad-hoc offices"
+        ],
+        "limitations": [
+          "Benefits are procedural - the Code enables claims, it doesn't hand out programs"
+        ]
+      }
+    }
+  },
+  "key_provisions": [
+    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+  ],
+  "impact": {
+    "who_benefits": [
+      "Government employees",
+      "Public-service users"
+    ],
+    "impact_tags": [
+      "governance_civil_service",
+      "priority_code"
+    ],
+    "estimated_beneficiaries": null,
+    "allocated_budget": null,
+    "figures_note": "Shown only when stated in official documents; none captured for this record."
+  },
+  "legislative_journey": [
+    {
+      "stage": "Filed as a bill",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Committee & plenary readings",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Third Reading",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Approved & Ratified",
+      "reached": true,
+      "date": "2020-10-28"
+    }
+  ],
+  "authors_and_sponsors": {
+    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "note": "Authors are recorded on the origin bill's page."
+  },
+  "related_documents": {
+    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
+    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
+  },
+  "related_legislation": {
+    "amends": [],
+    "amended_by": [
+      "BAA 37",
+      "BAA 93",
+      "BAA 94"
+    ],
+    "repeals": null,
+    "origin_bill": null
+  },
+  "implementation_status": {
+    "law_enacted": true,
+    "in_force": true,
+    "legal_challenge_note": null,
+    "irr_issued": "unknown - IRR registry pending capture",
+    "implementing_agency": {
+      "agency": "Multiple ministries (code-dependent)",
+      "inferred": true
+    },
+    "budget_appropriated": "Not stated in title"
+  },
+  "citizen_questions": [
+    {
+      "q": "Is this law in force?",
+      "a": "Yes - ratified 2020-10-28 and in force unless amended (see related legislation)."
+    },
+    {
+      "q": "Who implements it?",
+      "a": "Multiple ministries (code-dependent) (inferred from the law's subject; the Act itself designates the lead)."
+    },
+    {
+      "q": "Does it have implementing rules (IRR)?",
+      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
+    },
+    {
+      "q": "Where do I read the full text?",
+      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
+    }
+  ],
+  "display_header": {
+    "line1": "Bangsamoro Autonomy Act No. 13",
+    "line2": "Bangsamoro Administrative Code",
+    "badges": [
+      "ENACTED",
+      "Priority Code",
+      "2020"
+    ],
+    "what_this_does": "Provides for the Bangsamoro Administrative Code.",
+    "who_it_affects": "Government employees · Public-service users",
+    "effective": "2020-10-28"
+  },
+  "views": {
+    "simple": "Provides for the Bangsamoro Administrative Code.",
+    "official": "AN ACT PROVIDING FOR THE BANGSAMORO ADMINISTRATIVE CODE"
+  },
+  "provenance": {
+    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
+    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+  }
+}

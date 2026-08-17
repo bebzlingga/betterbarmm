@@ -1,0 +1,1668 @@
+{
+  "meta": {
+    "record_type": "adopted_resolutions_index",
+    "count": 194,
+    "coverage": "Res 368-578 (Jul 2023-Jun 2026); Res 1-367 pending capture. Titles are condensed summaries.",
+    "listing_schema": "number · short_title · date · tags - open RES-XXX.json for the full record.",
+    "by_type": {
+      "directive_oversight": 110,
+      "commendation": 69,
+      "national_intergovernmental": 37,
+      "islamic_affairs": 20,
+      "condemnation_justice": 17,
+      "internal_rules": 15,
+      "international_solidarity": 10,
+      "other": 4
+    },
+    "collection_findings": [
+      "Roughly half the adopted resolutions are ceremonial (congratulations to licensure topnotchers, athletes, scholars) - the Parliament functions as the region's official recognizer of achievement.",
+      "A steady stream condemns killings of professionals (doctors, lawyers, election officers, educators) and demands investigations - a running index of the region's security incidents against civilians.",
+      "Oversight resolutions repeatedly ask ministries (esp. MBHTE, MOH, MSSD, BPDA) for status reports - the Parliament's main accountability tool short of legislation.",
+      "Inter-governmental resolutions lobby Manila: transition extension to 2028 (Res 505), Kutawato Province creation (499), Shari'ah High Court organization (458), DPWH-BARMM office (547), Sulu-exclusion motions (507).",
+      "Distinctive foreign-policy voice: Gaza ceasefire resolutions (407, 419) - rare for a subnational legislature.",
+      "Political-support resolutions cluster around leadership transitions (courtesy resignations 552, Macacua support 578/576) - markers of the 2025 power shift."
+    ]
+  },
+  "resolutions": [
+    {
+      "resolution_number": 578,
+      "short_title": "Expressing full support and confidence in CM Macacua's leadership; reaffirming moral governance and anti-corruption commitment",
+      "date_adopted": "2026-06-17",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 577,
+      "short_title": "Supporting Senate Bill 1903 creating the Mindanao Railways Authority; urging immediate passage",
+      "date_adopted": "2026-05-21",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 576,
+      "short_title": "Supporting CM Macacua's leadership change at MBHTE; urging reforms to address the education crisis",
+      "date_adopted": "2026-05-19",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 575,
+      "short_title": "Supporting Darul-Ifta' Fatwa 07-2026 on Bangsamoro women OFWs; urging stronger labor protections",
+      "date_adopted": "2026-04-29",
+      "tags": [
+        "directive_oversight",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 574,
+      "short_title": "Gratitude and recognition to former OPAPRU Sec. Carlito Galvez Jr. for peace contributions",
+      "date_adopted": "2026-04-29",
+      "tags": [
+        "commendation",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 573,
+      "short_title": "Congratulating/welcoming Mel Senen Sarmiento as new OPAPRU Secretary",
+      "date_adopted": "2026-04-29",
+      "tags": [
+        "commendation",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 572,
+      "short_title": "Urging strict enforcement of RA 11361 (Anti-Obstruction of Power Lines Act) in BARMM",
+      "date_adopted": "2026-04-23",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 571,
+      "short_title": "Requesting MILG/DILG-BFP to establish municipal fire stations in the eight SGA LGUs",
+      "date_adopted": "2026-04-23",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 570,
+      "short_title": "Authorizing CM Macacua to establish a designated parking facility near the Bangsamoro Government Center",
+      "date_adopted": "2026-04-22",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "resolution_number": 569,
+      "short_title": "Commending former DBM Sec. Amenah Pangandaman for IGRB co-chairmanship contributions",
+      "date_adopted": "2026-04-21",
+      "tags": [
+        "commendation",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 568,
+      "short_title": "Setting the session calendar for the remainder of the transition period",
+      "date_adopted": "2026-04-20",
+      "tags": [
+        "internal_rules"
+      ]
+    },
+    {
+      "resolution_number": 567,
+      "short_title": "Authorizing all committees to meet during the mandatory adjournment",
+      "date_adopted": "2026-01-27",
+      "tags": [
+        "internal_rules"
+      ]
+    },
+    {
+      "resolution_number": 566,
+      "short_title": "Allowing livestreaming of committee hearings and public consultations (amending Rules Res. 268)",
+      "date_adopted": "2026-01-27",
+      "tags": [
+        "internal_rules"
+      ]
+    },
+    {
+      "resolution_number": 565,
+      "short_title": "Urging Pres. Marcos to authorize zero-tariff rice importation from Sabah exclusively for Tawi-Tawi",
+      "date_adopted": "2026-01-19",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 564,
+      "short_title": "Recommending immediate designation of the national chairman of the National IGR Body",
+      "date_adopted": "2025-12-17",
+      "tags": [
+        "commendation",
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 563,
+      "short_title": "Urging BAGO to ask the Supreme Court to resolve pending election cases before the poll date",
+      "date_adopted": "2025-12-15",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 562,
+      "short_title": "Authorizing the Speaker to establish an Association of Former Members of Parliament",
+      "date_adopted": "2025-11-17",
+      "tags": [
+        "internal_rules"
+      ]
+    },
+    {
+      "resolution_number": 561,
+      "short_title": "Commending Pres. Marcos on MO 36; requesting expedited amnesty safe conduct passes for MILF/MNLF applicants",
+      "date_adopted": "2025-11-13",
+      "tags": [
+        "commendation",
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 560,
+      "short_title": "Amending Res. 538 (session calendar, 4th Regular Session)",
+      "date_adopted": "2025-10-28",
+      "tags": [
+        "internal_rules"
+      ]
+    },
+    {
+      "resolution_number": 559,
+      "short_title": "Urging DPWH to fast-track renovation of Quirino Bridge, Cotabato City",
+      "date_adopted": "2025-08-20",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 558,
+      "short_title": "Urging IIDB to prioritize rehabilitation of the Awang-Upi-South Upi-Lebak highway",
+      "date_adopted": "2025-08-20",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 557,
+      "short_title": "Urging MSSD to report on the status of orphanages in BARMM",
+      "date_adopted": "2025-07-24",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 556,
+      "short_title": "Directing MSSD to report on trafficking in persons and related programs",
+      "date_adopted": "2025-07-24",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 555,
+      "short_title": "Prescribing accounting/liquidation rules for MPs' budgetary allocations",
+      "date_adopted": "2025-07-22",
+      "tags": [
+        "directive_oversight",
+        "internal_rules"
+      ]
+    },
+    {
+      "resolution_number": 554,
+      "short_title": "Urging OCM and Speaker's Office to create a TWG for orderly turnover to the first elected Parliament",
+      "date_adopted": "2025-07-17",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 553,
+      "short_title": "Urging reconstitution and convening of the Bangsamoro Council of Leaders",
+      "date_adopted": "2025-07-17",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 552,
+      "short_title": "Supporting CM Macacua's call for courtesy resignation of all ministers and agency heads",
+      "date_adopted": "2025-06-25",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 551,
+      "short_title": "Directing MOH to intensify tuberculosis elimination program",
+      "date_adopted": "2025-05-29",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 550,
+      "short_title": "Encouraging annual mental examinations for all BARMM government employees",
+      "date_adopted": "2025-05-29",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 549,
+      "short_title": "Supporting SAP Antonio Lagdameo Jr.; urging his continued appointment",
+      "date_adopted": "2025-05-29",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 548,
+      "short_title": "Supporting OPAPRU Sec. Galvez; urging his continued appointment",
+      "date_adopted": "2025-05-29",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 547,
+      "short_title": "Urging Pres. Marcos to prioritize creating a DPWH-BARMM regional office and five district engineering offices",
+      "date_adopted": "2025-05-21",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 546,
+      "short_title": "Urging the IGR Body to release information and study Sulu's budgetary transition",
+      "date_adopted": "2025-05-21",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 545,
+      "short_title": "Condemning the attack killing Atty. Junisa Kimamao and wounding Atty. Ibrahim Pendatu; calling for justice",
+      "date_adopted": "2025-04-22",
+      "tags": [
+        "condemnation_justice",
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 544,
+      "short_title": "Condemning the killing of COMELEC election officer Bai Maceda Lidasan-Abo and husband; urging investigation",
+      "date_adopted": "2025-04-15",
+      "tags": [
+        "condemnation_justice",
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 543,
+      "short_title": "Calling on MPOS to formulate a regional reintegration program for rebel returnees",
+      "date_adopted": "2025-02-18",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 542,
+      "short_title": "Condemning raid killing seven MILF members; requesting return of the International Monitoring Team",
+      "date_adopted": "2025-02-18",
+      "tags": [
+        "condemnation_justice",
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 541,
+      "short_title": "Urging food establishments to display 'No Pork'/'With Pork' signage on menus",
+      "date_adopted": "2025-02-18",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 540,
+      "short_title": "Requesting food establishments to display pork-serving status at entrances",
+      "date_adopted": "2025-02-18",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 539,
+      "short_title": "Authorizing committees to meet during recess",
+      "date_adopted": "2025-02-18",
+      "tags": [
+        "internal_rules"
+      ]
+    },
+    {
+      "resolution_number": 538,
+      "short_title": "Adopting the 4th Regular Session calendar",
+      "date_adopted": "2025-02-18",
+      "tags": [
+        "internal_rules"
+      ]
+    },
+    {
+      "resolution_number": 537,
+      "short_title": "Approving Brgy. Sarmiento, Parang, Maguindanao del Norte as Bangsamoro Government Center site",
+      "date_adopted": "2025-02-17",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "resolution_number": 536,
+      "short_title": "Honoring former Sen. Santanina Rasul for women empowerment, peace, and literacy advocacy",
+      "date_adopted": "2025-02-17",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 535,
+      "short_title": "Urging GPH-MILF panels to fast-track Joint Peace and Security Team deployment",
+      "date_adopted": "2025-02-13",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 534,
+      "short_title": "Urging MBHTE to require posting of scholarship notices in all academic institutions",
+      "date_adopted": "2025-02-13",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 533,
+      "short_title": "Requesting MBHTE report on textbooks, classrooms, and teacher sufficiency",
+      "date_adopted": "2025-02-12",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 532,
+      "short_title": "Requesting MBHTE report on comparative education performance SY2018-19 to SY2023-24",
+      "date_adopted": "2025-02-12",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 531,
+      "short_title": "Condemning the killing of Dr. Sonatria Gaspar (MBHTE-Sulu); urging investigation",
+      "date_adopted": "2025-02-11",
+      "tags": [
+        "condemnation_justice",
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 530,
+      "short_title": "Requesting CM Ebrahim to grant PHP10,000 inflation relief to all Bangsamoro government workers",
+      "date_adopted": "2025-02-11",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 529,
+      "short_title": "Calling on PNP to investigate the shooting of Engr. Darline Pacete in Datu Odin Sinsuat",
+      "date_adopted": "2025-02-11",
+      "tags": [
+        "condemnation_justice",
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 528,
+      "short_title": "Calling on PNP to investigate the shooting of two young huffadh in Shariff Aguak",
+      "date_adopted": "2025-02-11",
+      "tags": [
+        "condemnation_justice",
+        "directive_oversight",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 527,
+      "short_title": "Urging PNP to investigate the killing of Baiwan Banog Angan in Datu Hoffer",
+      "date_adopted": "2025-02-11",
+      "tags": [
+        "condemnation_justice",
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 526,
+      "short_title": "Urging BEDC and IIDB to formulate a 15-year infrastructure plan (2023-2038)",
+      "date_adopted": "2025-02-10",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 525,
+      "short_title": "Urging annual tree planting every Jan 21 per the Arbor Day Act",
+      "date_adopted": "2025-01-23",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 524,
+      "short_title": "Urging BEDC/BPDA to submit a comprehensive performance report of the Bangsamoro Government",
+      "date_adopted": "2025-01-23",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 523,
+      "short_title": "Requiring OCM/BPDA to update the Bangsamoro Transition Plan",
+      "date_adopted": "2025-01-23",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 522,
+      "short_title": "Supporting the inter-agency sports festival during BARMM founding anniversary",
+      "date_adopted": "2025-01-23",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 521,
+      "short_title": "Encouraging observance of Bangsamoro Foundation Day",
+      "date_adopted": "2025-01-23",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 520,
+      "short_title": "Urging BPDA to maintain its online database of programs and projects",
+      "date_adopted": "2025-01-23",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 519,
+      "short_title": "Calling on BEDC/BPDA to submit a long-term regional plan",
+      "date_adopted": "2025-01-23",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 518,
+      "short_title": "Requiring all ministries to submit annual accomplishment reports 2019-2024",
+      "date_adopted": "2025-01-23",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 517,
+      "short_title": "Requesting a Juris Doctor bridging program to qualify kulliyah-graduate ulama for Shari'ah courts",
+      "date_adopted": "2025-01-23",
+      "tags": [
+        "directive_oversight",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 516,
+      "short_title": "Requesting appointment of judges to vacant Shari'ah District Courts",
+      "date_adopted": "2025-01-23",
+      "tags": [
+        "directive_oversight",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 515,
+      "short_title": "Requesting DOJ/NBI district offices in every BARMM province including the SGA",
+      "date_adopted": "2025-01-23",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 514,
+      "short_title": "Gratitude for restoring PAO supervision to the PAO-BARMM regional office",
+      "date_adopted": "2025-01-23",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 513,
+      "short_title": "Requesting immediate activation of the Shari'ah Public Assistance Office",
+      "date_adopted": "2025-01-23",
+      "tags": [
+        "directive_oversight",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 512,
+      "short_title": "Requesting SC/LEB to include barangay-justice free legal aid in clinical legal education",
+      "date_adopted": "2025-01-23",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 511,
+      "short_title": "Urging IIDB to prioritize rehabilitation of the Narciso Ramos Highway",
+      "date_adopted": "2024-10-23",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 510,
+      "short_title": "Requesting GSIS branches/extension offices across BARMM",
+      "date_adopted": "2024-10-23",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 509,
+      "short_title": "Requesting MinDA briefing on the Mindanao River Basin Master Plan",
+      "date_adopted": "2024-10-23",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 508,
+      "short_title": "Supporting Senate Bill 2817 strengthening COMELEC independence and field offices",
+      "date_adopted": "2024-10-23",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 507,
+      "short_title": "Supporting BAGO motions before the SC on Sulu's exclusion from BARMM",
+      "date_adopted": "2024-10-23",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 506,
+      "short_title": "Encouraging MBHTE to provide free hygiene kits/sanitary napkins in public high schools",
+      "date_adopted": "2024-10-22",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 505,
+      "short_title": "Requesting Congress to extend the transition to 2028 and postpone the first parliamentary elections",
+      "date_adopted": "2024-10-22",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 504,
+      "short_title": "Directing MPW/BPDA to facilitate submission of provincial/municipal priority projects for national funding",
+      "date_adopted": "2024-10-17",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 503,
+      "short_title": "Urging MBHTE-Madaris to establish a madrasah and markadz database",
+      "date_adopted": "2024-10-15",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 502,
+      "short_title": "Urging incentives for families with 3+ students to ensure schooling completion",
+      "date_adopted": "2024-10-15",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 501,
+      "short_title": "Supporting MSU College of Law's continued legal education for the Bangsamoro",
+      "date_adopted": "2024-10-15",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 500,
+      "short_title": "Encouraging child-minding centers in BARMM workplaces",
+      "date_adopted": "2024-10-14",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 499,
+      "short_title": "Urging Congress to create Kutawato Province from the eight SGA municipalities",
+      "date_adopted": "2024-09-27",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 498,
+      "short_title": "Urging lactation stations in all government offices per RA 10028",
+      "date_adopted": "2024-08-28",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 497,
+      "short_title": "Requesting CSC-BARMM mechanism widening access to civil service exams",
+      "date_adopted": "2024-08-28",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 496,
+      "short_title": "Directing OSG to track implementation status of adopted resolutions",
+      "date_adopted": "2024-08-28",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 495,
+      "short_title": "Urging a picture gallery of BTA Parliament members",
+      "date_adopted": "2024-08-28",
+      "tags": [
+        "directive_oversight",
+        "internal_rules"
+      ]
+    },
+    {
+      "resolution_number": 494,
+      "short_title": "Providing plenary time for recognitions/condolences (amending Rules Res. 268)",
+      "date_adopted": "2024-08-22",
+      "tags": [
+        "commendation",
+        "internal_rules"
+      ]
+    },
+    {
+      "resolution_number": 493,
+      "short_title": "Adhering to EO 64 s.2024 updated salary schedule and additional allowance",
+      "date_adopted": "2024-08-22",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "resolution_number": 492,
+      "short_title": "Commending Atty. Nashmyleen Marohomsalic, first Bangsamoro/Filipina ICC-admitted counsel",
+      "date_adopted": "2024-08-22",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 491,
+      "short_title": "Dress code guidelines for parliamentary staff and visitors",
+      "date_adopted": "2024-08-21",
+      "tags": [
+        "internal_rules"
+      ]
+    },
+    {
+      "resolution_number": 490,
+      "short_title": "Efficient use of paper rule for the Parliament",
+      "date_adopted": "2024-08-21",
+      "tags": [
+        "internal_rules"
+      ]
+    },
+    {
+      "resolution_number": 489,
+      "short_title": "Dress code guidelines for Members of Parliament",
+      "date_adopted": "2024-08-21",
+      "tags": [
+        "internal_rules"
+      ]
+    },
+    {
+      "resolution_number": 488,
+      "short_title": "Commending enactment of RA 12018 creating additional Shari'ah judicial districts and circuit courts",
+      "date_adopted": "2024-08-20",
+      "tags": [
+        "commendation",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 487,
+      "short_title": "Recognizing the late Comm. Nasser Marohomsalic; condolences",
+      "date_adopted": "2024-08-20",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 486,
+      "short_title": "Congratulating Carlos Yulo's two Olympic golds and other 2024 Paris medalists",
+      "date_adopted": "2024-08-19",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 485,
+      "short_title": "Congratulating nuclear science olympiad gold medalist Mohammad Nur Casib",
+      "date_adopted": "2024-08-19",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 484,
+      "short_title": "Condemning the killing of South Upi Vice Mayor Roldan Benito and companion; urging investigation",
+      "date_adopted": "2024-08-19",
+      "tags": [
+        "condemnation_justice",
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 483,
+      "short_title": "Urging security for residents of Kusiong, Linek, Mompong, Badak (Datu Odin Sinsuat) amid armed attacks; IDP protection",
+      "date_adopted": "2024-07-25",
+      "tags": [
+        "condemnation_justice",
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 482,
+      "short_title": "Commending MOST/BASE scholarship program and first batch of graduates",
+      "date_adopted": "2024-07-25",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 481,
+      "short_title": "Urging MBHTE to allow teaching of religion in public schools within class hours",
+      "date_adopted": "2024-07-23",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 480,
+      "short_title": "Requesting DepEd to fast-track IRR of RA 11650 (inclusive education for learners with disabilities)",
+      "date_adopted": "2024-07-23",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 479,
+      "short_title": "Requesting House to retain MSU's three chancellor-regents in HB 969",
+      "date_adopted": "2024-07-23",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 478,
+      "short_title": "Urging MBHTE anti-hazing awareness programs for HEIs",
+      "date_adopted": "2024-07-23",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 477,
+      "short_title": "Commending new Shari'ah counselors-at-law (2024 Shari'ah Bar)",
+      "date_adopted": "2024-07-23",
+      "tags": [
+        "commendation",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 476,
+      "short_title": "Urging funding for two-year lease extension of Marawi IDP temporary shelters",
+      "date_adopted": "2024-07-17",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 475,
+      "short_title": "Congratulating Bangsamoro karate athletes (19th National Kyokushinryu tournament); urging BSC support",
+      "date_adopted": "2024-07-16",
+      "tags": [
+        "commendation",
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 474,
+      "short_title": "Congratulating Aqeel Mamutuk, gold medalist, 2024 Thailand International Mathematical Olympiad",
+      "date_adopted": "2024-07-16",
+      "tags": [
+        "commendation",
+        "national_intergovernmental",
+        "international_solidarity"
+      ]
+    },
+    {
+      "resolution_number": 473,
+      "short_title": "Commending PDEA-BARMM's successful anti-illegal drug operations",
+      "date_adopted": "2024-07-16",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 472,
+      "short_title": "Requesting PNP tourist-police assistance desks in major hotels",
+      "date_adopted": "2024-07-15",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 471,
+      "short_title": "Congratulating Speaker Balindong's honorary Doctor of Laws (MLQU)",
+      "date_adopted": "2024-07-15",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 470,
+      "short_title": "Gratitude for appointment of Amilbahar Amilasan Jr. as Al-Amanah Islamic Bank acting chairman/CEO",
+      "date_adopted": "2024-07-15",
+      "tags": [
+        "commendation",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 469,
+      "short_title": "Congratulating Bangsamoro topnotchers/passers, March 2024 teachers' licensure exam",
+      "date_adopted": "2024-06-27",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 468,
+      "short_title": "Congratulating Bangsamoro topnotchers/passers, May 2024 CPA licensure exam",
+      "date_adopted": "2024-06-27",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 467,
+      "short_title": "Gratitude to the Support to Bangsamoro Transition Program for committee benchmarking support",
+      "date_adopted": "2024-06-24",
+      "tags": [
+        "commendation",
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 466,
+      "short_title": "Congratulating MSU-Marawi: top university in Mindanao, 10th nationwide",
+      "date_adopted": "2024-06-24",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 465,
+      "short_title": "Urging promotion/incentives for maritime transportation and logistics investment, esp. island provinces",
+      "date_adopted": "2024-06-19",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 464,
+      "short_title": "Condemning the May 19, 2024 Sto. Nino Chapel attack in Cotabato City; urging swift justice",
+      "date_adopted": "2024-06-19",
+      "tags": [
+        "condemnation_justice",
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 463,
+      "short_title": "Congratulating Engr. Aminoden, 4th place, 2024 electrical engineers licensure exam",
+      "date_adopted": "2024-06-19",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 462,
+      "short_title": "Commending COMELEC and partners for the peaceful SGA plebiscite ratifying eight new municipalities",
+      "date_adopted": "2024-06-19",
+      "tags": [
+        "commendation",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 461,
+      "short_title": "Congratulating MSU Sining Kambayoka Ensemble's outstanding cultural theater award",
+      "date_adopted": "2024-06-19",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 460,
+      "short_title": "Congratulating MSU Karate Club athletes, 5th Karate Pilipinas National Championship",
+      "date_adopted": "2024-06-18",
+      "tags": [
+        "commendation",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 459,
+      "short_title": "Urging prohibition of vaping in indoor government premises except designated areas",
+      "date_adopted": "2024-05-22",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 458,
+      "short_title": "Requesting the Supreme Court to organize the Shari'ah High Court in BARMM",
+      "date_adopted": "2024-05-22",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 457,
+      "short_title": "Requesting PHILJA pre-judicature program for Shari'ah court judgeship applicants",
+      "date_adopted": "2024-05-22",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 456,
+      "short_title": "Urging strict registration of Muslim divorces per AO 1 s.2005",
+      "date_adopted": "2024-05-22",
+      "tags": [
+        "directive_oversight",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 455,
+      "short_title": "Requiring MOH progress report and action plan on child immunization",
+      "date_adopted": "2024-05-22",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 454,
+      "short_title": "Condolences to the family of the late Rostom Saaban, 106th Base Command commander",
+      "date_adopted": "2024-05-22",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 453,
+      "short_title": "Congratulating three Bangsamoro women, Mindanao Women in Development Awards 2024",
+      "date_adopted": "2024-05-22",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 452,
+      "short_title": "Calling on BCPCH to nominate Tausug artist Rameer Tawasil for the Order of National Artists",
+      "date_adopted": "2024-05-22",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 451,
+      "short_title": "Congratulating MPs Jajurie and Mendoza, 2024 Inquirer Women of Power awardees",
+      "date_adopted": "2024-05-22",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 450,
+      "short_title": "Condemning the killing of MSSD officer Christhia Angela Aragoncillo",
+      "date_adopted": "2024-05-21",
+      "tags": [
+        "condemnation_justice"
+      ]
+    },
+    {
+      "resolution_number": 449,
+      "short_title": "Congratulating six Bangsamoro topnotchers, respiratory therapy licensure exam",
+      "date_adopted": "2024-05-21",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 448,
+      "short_title": "Commending Bangsamoro placers/passers, registered microbiologists certification exam",
+      "date_adopted": "2024-05-21",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 447,
+      "short_title": "Congratulating Al Hafidz Muzaher Bito, 3rd place, 27th Dubai Int'l Holy Quran Competition",
+      "date_adopted": "2024-05-20",
+      "tags": [
+        "commendation",
+        "international_solidarity",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 446,
+      "short_title": "Gratitude for appointment of Sheikh Sabuddin Abdurahim as NCMF Secretary",
+      "date_adopted": "2024-05-20",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 445,
+      "short_title": "Expressing consensus on appointment of Muslim Guiamaden as Wali of the Bangsamoro",
+      "date_adopted": "2024-05-13",
+      "tags": [
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 444,
+      "short_title": "Commending BGen. Nasser Lidasan, first Bangsamoro Muslim CCCH chairperson",
+      "date_adopted": "2024-02-29",
+      "tags": [
+        "commendation",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 443,
+      "short_title": "Authorizing committees to meet during recess",
+      "date_adopted": "2024-02-29",
+      "tags": [
+        "internal_rules"
+      ]
+    },
+    {
+      "resolution_number": 442,
+      "short_title": "Adopting the 3rd Regular Session calendar",
+      "date_adopted": "2024-02-29",
+      "tags": [
+        "internal_rules"
+      ]
+    },
+    {
+      "resolution_number": 441,
+      "short_title": "Requesting PHP10,000 inflation relief for all Bangsamoro government workers during Ramadhan 1445",
+      "date_adopted": "2024-02-29",
+      "tags": [
+        "directive_oversight",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 440,
+      "short_title": "Supporting HWPL's Declaration of Peace and Cessation of War as an international peace instrument",
+      "date_adopted": "2024-02-26",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental",
+        "international_solidarity"
+      ]
+    },
+    {
+      "resolution_number": 439,
+      "short_title": "Declaring January 24 as 'Peace Day' in BARMM during Foundation Week",
+      "date_adopted": "2024-02-26",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "resolution_number": 438,
+      "short_title": "Congratulating Cotabato State University on its centennial",
+      "date_adopted": "2024-02-26",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 437,
+      "short_title": "Commending 36 Bangsamoro graduates of the Islamic University of Madinah",
+      "date_adopted": "2024-02-26",
+      "tags": [
+        "commendation",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 436,
+      "short_title": "Commending creation of the national committee for the 650th anniversary of Islam in the Philippines (2030)",
+      "date_adopted": "2024-02-26",
+      "tags": [
+        "commendation",
+        "national_intergovernmental",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 435,
+      "short_title": "Congratulating Abdurahim Abdulla, 10th place, Nov 2023 nursing licensure exam",
+      "date_adopted": "2024-02-26",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 434,
+      "short_title": "Condemning the ambush of Dr. Sharmaine Barroquillo; urging swift investigation",
+      "date_adopted": "2024-02-21",
+      "tags": [
+        "condemnation_justice",
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 433,
+      "short_title": "Supporting charter change to resolve constitutional issues in implementing the CAB",
+      "date_adopted": "2024-02-21",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 432,
+      "short_title": "Urging MOH to strengthen voluntary blood donation and transfusion services",
+      "date_adopted": "2024-01-16",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 431,
+      "short_title": "Condemning the killing of Betty and Jonard Lu in Pikit; urging investigation",
+      "date_adopted": "2024-01-16",
+      "tags": [
+        "condemnation_justice",
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 430,
+      "short_title": "Appreciation to former MILG Minister Naguib Sinarimbo",
+      "date_adopted": "2024-01-16",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 429,
+      "short_title": "Congratulating the Madjid siblings for passing the 2023 physicians licensure exam",
+      "date_adopted": "2024-01-15",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 428,
+      "short_title": "Congratulations to MP Sha Elijah Dumama-Alba",
+      "date_adopted": "2024-01-16",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 427,
+      "short_title": "Commending MP Dumama-Alba's designation as MILG Minister and other cabinet designations",
+      "date_adopted": "2024-01-16",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 426,
+      "short_title": "Congratulating Rep. Yasser Balindong's election as House Deputy Speaker",
+      "date_adopted": "2024-01-16",
+      "tags": [
+        "commendation",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 425,
+      "short_title": "Requesting DPWH to prioritize repair of national highways and bridges in BARMM",
+      "date_adopted": "2024-01-15",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 424,
+      "short_title": "Commending Sakinur-Ain Delasas, 'Manlilikha ng Bayan' for the Sama igal dance tradition",
+      "date_adopted": "2024-01-15",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 423,
+      "short_title": "Congratulating new Bangsamoro lawyers, 2023 Bar examination",
+      "date_adopted": "2024-01-15",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 422,
+      "short_title": "Commending Bangsamoro Al-Azhar University graduates in Islamic studies",
+      "date_adopted": "2024-01-15",
+      "tags": [
+        "commendation",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 421,
+      "short_title": "Congratulating Bangsamoro karate athletes, 1st Kyokushinryu World Tournament",
+      "date_adopted": "2024-01-15",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 420,
+      "short_title": "Condemning the Dec 3, 2023 MSU-Marawi gymnasium bombing; requesting speedy investigation",
+      "date_adopted": "2023-12-18",
+      "tags": [
+        "condemnation_justice",
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 419,
+      "short_title": "Reiterating call for unconditional Gaza ceasefire; urging aid to Gaza",
+      "date_adopted": "2023-12-18",
+      "tags": [
+        "directive_oversight",
+        "international_solidarity"
+      ]
+    },
+    {
+      "resolution_number": 418,
+      "short_title": "Urging Congress to prioritize the National Transitional Justice and Reconciliation Commission bill",
+      "date_adopted": "2023-11-20",
+      "tags": [
+        "directive_oversight",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 417,
+      "short_title": "Posthumous honor to Edison Morales for educational development contributions",
+      "date_adopted": "2023-11-20",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 416,
+      "short_title": "Congratulating Bai Rehana Lauban, 9th place, fisheries technologist licensure exam",
+      "date_adopted": "2023-11-20",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 415,
+      "short_title": "Thanking the Mennonite Church of Canada for the parliamentary study visit",
+      "date_adopted": "2023-11-16",
+      "tags": [
+        "commendation",
+        "international_solidarity"
+      ]
+    },
+    {
+      "resolution_number": 414,
+      "short_title": "Congratulating Kakaw Meranaw's Paris 2023 gourmet chocolate medal",
+      "date_adopted": "2023-11-16",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 413,
+      "short_title": "Appealing for presidential pardon for former ARMM Gov. Zacaria Candao, Dr. Abas Candao, and Israel Haron",
+      "date_adopted": "2023-10-24",
+      "tags": [
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 412,
+      "short_title": "Urging BIO voter-education campaign on the Bangsamoro Electoral Code",
+      "date_adopted": "2023-10-23",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 411,
+      "short_title": "Thanking Konrad Adenauer Stiftung for contributions to autonomy, peace, and development",
+      "date_adopted": "2023-10-23",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 410,
+      "short_title": "Congratulating the Republic of Turkiye on its 100th anniversary",
+      "date_adopted": "2023-10-23",
+      "tags": [
+        "commendation",
+        "international_solidarity"
+      ]
+    },
+    {
+      "resolution_number": 409,
+      "short_title": "Requesting DOH to establish an FDA regional field office in BARMM",
+      "date_adopted": "2023-10-17",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 408,
+      "short_title": "Directing Committee on Health inquiry into MOH hospital establishment/upgrading plan and budget",
+      "date_adopted": "2023-10-17",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 407,
+      "short_title": "Condemning violence against Palestinians; calling for cessation of hostilities and a Gaza humanitarian corridor",
+      "date_adopted": "2023-10-17",
+      "tags": [
+        "condemnation_justice",
+        "directive_oversight",
+        "international_solidarity"
+      ]
+    },
+    {
+      "resolution_number": 406,
+      "short_title": "Tasking OSG to print and distribute priority laws",
+      "date_adopted": "2023-10-17",
+      "tags": [
+        "commendation",
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 405,
+      "short_title": "Directing BPDA briefing on the regional housing program status",
+      "date_adopted": "2023-10-17",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 404,
+      "short_title": "Calling for compliance with RA 7277 (Magna Carta for Persons with Disability)",
+      "date_adopted": "2023-10-17",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 403,
+      "short_title": "Congratulating young Bangsamoro math olympiad medalists (Thailand/Hong Kong)",
+      "date_adopted": "2023-10-17",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 402,
+      "short_title": "Calling for annual pre-Ramadhan and Ramadhan symposia via Darul-Ifta'",
+      "date_adopted": "2023-10-17",
+      "tags": [
+        "directive_oversight",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 401,
+      "short_title": "Congratulating the BARMM men's volleyball team, NSCUAA 2023 gold",
+      "date_adopted": "2023-10-16",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 400,
+      "short_title": "Congratulating Hebban Tawantawan, Sept 2023 CPA licensure topnotcher",
+      "date_adopted": "2023-10-16",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 399,
+      "short_title": "Directing MENRE to intensify reforestation in landslide-prone areas",
+      "date_adopted": "2023-09-19",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 398,
+      "short_title": "Inviting CAAP/DPWH/MOTC/airlines to report on Awang Airport rehabilitation status",
+      "date_adopted": "2023-09-19",
+      "tags": [
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 397,
+      "short_title": "Congratulating Miriam Coronel-Ferrer, 65th Ramon Magsaysay Awards laureate",
+      "date_adopted": "2023-09-19",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 396,
+      "short_title": "Congratulating Sabaha Salik, 3rd place, 63rd Malaysian Int'l Qur'an assembly",
+      "date_adopted": "2023-09-19",
+      "tags": [
+        "commendation",
+        "international_solidarity",
+        "islamic_affairs"
+      ]
+    },
+    {
+      "resolution_number": 395,
+      "short_title": "Honoring local and foreign media for peace-process and accountability roles",
+      "date_adopted": "2023-09-19",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 394,
+      "short_title": "Encouraging participation in values transformation trainings",
+      "date_adopted": "2023-09-19",
+      "tags": [
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 393,
+      "short_title": "Congratulating Tawi-Tawi's 50th Kamahardikaan founding anniversary",
+      "date_adopted": "2023-09-18",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 392,
+      "short_title": "Condemning the killing of Mohammad Hessam Midtimbang and ambush of Pedro Tato Jr.; urging investigation",
+      "date_adopted": "2023-09-18",
+      "tags": [
+        "condemnation_justice",
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 391,
+      "short_title": "Condolences to MP Ramon Piang Sr. on the passing of his wife Amelita",
+      "date_adopted": "2023-09-18",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 390,
+      "short_title": "Congratulating Fadzrati Asarud, top 5, Aug 2023 psychometricians licensure exam",
+      "date_adopted": "2023-09-18",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 389,
+      "short_title": "Congratulating Mohammad Nur Casib, bronze, International Chemistry Olympiad (Zurich)",
+      "date_adopted": "2023-08-15",
+      "tags": [
+        "commendation",
+        "national_intergovernmental",
+        "international_solidarity"
+      ]
+    },
+    {
+      "resolution_number": 388,
+      "short_title": "Congratulating Jamal Pandi, badminton gold, Palarong Pambansa 2023",
+      "date_adopted": "2023-08-15",
+      "tags": [
+        "commendation"
+      ]
+    },
+    {
+      "resolution_number": 387,
+      "short_title": "Condemning the killing of Dr. Marivic Tello; urging CRMC security measures",
+      "date_adopted": "2023-08-15",
+      "tags": [
+        "condemnation_justice",
+        "directive_oversight"
+      ]
+    },
+    {
+      "resolution_number": 381,
+      "short_title": "Congratulating Fatima Aliah Dimaporo's appointment as DSWD Undersecretary",
+      "date_adopted": "2023-08-14",
+      "tags": [
+        "commendation",
+        "national_intergovernmental"
+      ]
+    },
+    {
+      "resolution_number": 368,
+      "short_title": "Congratulating Samsodin Abdulrahman, weightlifting gold, Singapore International 2023",
+      "date_adopted": "2023-07-18",
+      "tags": [
+        "commendation",
+        "national_intergovernmental",
+        "international_solidarity"
+      ]
+    }
+  ]
+}

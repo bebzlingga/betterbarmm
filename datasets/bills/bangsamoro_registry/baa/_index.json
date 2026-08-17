@@ -1,0 +1,1114 @@
+{
+  "meta": {
+    "record_type": "baa_index",
+    "count": 94,
+    "coverage": "Complete BAA 1-94 (2019-2026).",
+    "listing_schema": "number · short_title · one_liner · status · tags - open baa/BAA-XX.json for the full record.",
+    "collection_analysis": {
+      "headline_numbers": {
+        "total_baas": 94,
+        "note_on_count": "Official index lists 94 numbered acts; BAA 93 and 94 appear to be the same SGADA-expansion act listed twice.",
+        "by_year": {
+          "2019": 6,
+          "2020": 9,
+          "2021": 9,
+          "2022": 10,
+          "2023": 22,
+          "2024": 15,
+          "2025": 14,
+          "2026": 9
+        },
+        "by_era": {
+          "BTA1": 31,
+          "BTA2": 41,
+          "BTA3": 22
+        },
+        "by_type": {
+          "budget_finance": 20,
+          "hospital_health": 18,
+          "institution_commission": 16,
+          "municipality_lgu": 15,
+          "symbols_identity": 12,
+          "labor_social": 9,
+          "priority_code": 7,
+          "elections_districting": 6,
+          "governance_other": 1
+        }
+      },
+      "phases_of_lawmaking": [
+        {
+          "phase": "Identity & scaffolding (2019-2021)",
+          "baas": "1-24",
+          "pattern": "Flag, emblem, hymn, seal; annual budgets; the first three priority codes (Administrative, Civil Service, Education). The parliament was literally building the state's symbols and machinery before legislating policy."
+        },
+        {
+          "phase": "Hospital wave I + codes (2022-2023)",
+          "baas": "25-56",
+          "pattern": "Six hospital acts passed in one week of June 2022 (the outgoing first BTA's final sprint); then the second BTA delivered the Electoral Code, Local Governance Code, and created nine new municipalities - eight of them in the Special Geographic Area in a single day (Aug 17, 2023)."
+        },
+        {
+          "phase": "Peace-legacy & social protection (2024)",
+          "baas": "57-72",
+          "pattern": "Mujahideen financial assistance, martyr memorials (Salamat Hashim, Camp Abubakar), IDP rights, Indigenous Peoples rights, plus a second hospital wave (5 acts on Dec 12, 2024 alone) and the first districting law (BAA 58)."
+        },
+        {
+          "phase": "Election-crisis lawmaking (2025-2026)",
+          "baas": "73-94",
+          "pattern": "Dominated by the fallout of two shocks: the SC's exclusion of Sulu from BARMM and the SC voiding of districting law BAA 58. Result: BAA 77, then BAA 86 (apportionment), BAA 87-88 (electoral code amendments), all racing the Sept 14, 2026 election date - alongside a third hospital wave and the long-delayed Labor Code (BAA 82)."
+        }
+      ],
+      "priority_codes": {
+        "mandated_by": "Bangsamoro Organic Law (RA 11054) requires the BTA to enact seven priority codes during transition.",
+        "codes": [
+          {
+            "code": "Education Code",
+            "baa": 18,
+            "date": "2021-05-18",
+            "status": "Enacted"
+          },
+          {
+            "code": "Civil Service Code",
+            "baa": 17,
+            "date": "2021-02-24",
+            "status": "Enacted"
+          },
+          {
+            "code": "Administrative Code",
+            "baa": 13,
+            "date": "2020-10-28",
+            "status": "Enacted"
+          },
+          {
+            "code": "Electoral Code",
+            "baa": 35,
+            "date": "2023-03-08",
+            "status": "Enacted (amended by BAA 87, 88)"
+          },
+          {
+            "code": "Local Governance Code",
+            "baa": 49,
+            "date": "2023-09-28",
+            "status": "Enacted"
+          },
+          {
+            "code": "Labor and Employment Code",
+            "baa": 82,
+            "date": "2025-11-12",
+            "status": "Enacted"
+          },
+          {
+            "code": "Revenue Code",
+            "baa": null,
+            "date": null,
+            "status": "PENDING - Bill 286 filed 2024, still unenacted as of Aug 2026; the last unfinished priority code"
+          }
+        ]
+      },
+      "amendment_graph": {
+        "14": [
+          3
+        ],
+        "24": [
+          23
+        ],
+        "33": [
+          23
+        ],
+        "37": [
+          13
+        ],
+        "52": [
+          32
+        ],
+        "70": [
+          54
+        ],
+        "71": [
+          55
+        ],
+        "77": [
+          58
+        ],
+        "87": [
+          35
+        ],
+        "88": [
+          35
+        ],
+        "93": [
+          13,
+          49
+        ],
+        "94": [
+          13,
+          49
+        ]
+      },
+      "most_amended": {
+        "BAA 13 (Administrative Code)": "amended by BAA 37, 93/94; multiple pending amendment bills (409, 447, 474)",
+        "BAA 35 (Electoral Code)": "amended by BAA 87, 88; pending bills 395, 468, 469",
+        "BAA 58 (Districting)": "amended by BAA 77, then effectively replaced by BAA 86 after SC rulings"
+      },
+      "thematic_findings": [
+        "Hospitals are the single biggest BAA category (18 acts: [21, 25, 26, 27, 28, 29, 30, 66, 67, 68, 69, 73, 74, 76, 78, 79, 80, 83]). Health infrastructure - creating, upgrading, renaming hospitals - is the BTA's most reliable legislative output, and hospital acts cluster at session endings (Jun 2022, Dec 2024, Aug 2025), suggesting they serve as consensus 'deliverables'.",
+        "Budget/finance measures are second (20 acts): 7 annual GAAs (FY2020-FY2026), 4+ supplementals, and repeated validity-extension acts - the latter indicating chronic under-disbursement of appropriated funds in the early years.",
+        "Municipality creation (15 acts) is concentrated in the Special Geographic Area - the 63 North Cotabato barangays that voted to join BARMM - converting plebiscite promises into LGU structures (8 municipalities in one day in 2023).",
+        "Peace-process legacy is written directly into statute: mujahideen assistance (57), martyr memorial sites (60, 61), Camp Abubakar eco-park, transitional justice commission (89) - laws that institutionalize the MILF-government peace agreement's memory and obligations.",
+        "The Revenue Code is the conspicuous gap: the only Organic Law priority code still unenacted as the transition ends, leaving BARMM fiscally dependent on the national block grant.",
+        "Election-related lawmaking shows external-shock reactivity: 5 of the last 10 BAAs respond directly to Supreme Court rulings (Sulu exclusion, districting unconstitutionality)."
+      ]
+    }
+  },
+  "acts": [
+    {
+      "baa_number": 1,
+      "short_title": "Adopts the Official Flag of the Bangsamoro Autonomous",
+      "one_liner": "Adopts the Official Flag of the Bangsamoro Autonomous Region in Muslim Mindanao.",
+      "date_ratified": "2019-08-23",
+      "status": "IN FORCE",
+      "tags": [
+        "symbols_identity"
+      ]
+    },
+    {
+      "baa_number": 2,
+      "short_title": "Adopts the Official Emblem for the Bangsamoro Autonomous",
+      "one_liner": "Adopts the Official Emblem for the Bangsamoro Autonomous Region in Muslim Mindanao.",
+      "date_ratified": "2019-08-29",
+      "status": "IN FORCE",
+      "tags": [
+        "symbols_identity"
+      ]
+    },
+    {
+      "baa_number": 3,
+      "short_title": "Appropriates Funds for the Operation of the Bangsamoro",
+      "one_liner": "Appropriates Funds for the Operation of the Bangsamoro Government for FY 2020 (GAA).",
+      "date_ratified": "2019-11-29",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 4,
+      "short_title": "Operationalizes the Establishment of the Bangsamoro Human Rights",
+      "one_liner": "Operationalizes the Establishment of the Bangsamoro Human Rights Commission.",
+      "date_ratified": "2019-12-20",
+      "status": "IN FORCE",
+      "tags": [
+        "institution_commission"
+      ]
+    },
+    {
+      "baa_number": 5,
+      "short_title": "Creates the Bangsamoro ATTORNEY-GENERAL'S Office",
+      "one_liner": "Creates the Bangsamoro ATTORNEY-GENERAL'S Office.",
+      "date_ratified": "2019-12-27",
+      "status": "IN FORCE",
+      "tags": [
+        "institution_commission"
+      ]
+    },
+    {
+      "baa_number": 6,
+      "short_title": "Establishes the Bangsamoro Socio-economic Development Planning System",
+      "one_liner": "Establishes the Bangsamoro Socio-economic Development Planning System.",
+      "date_ratified": "2019-12-27",
+      "status": "IN FORCE",
+      "tags": [
+        "institution_commission"
+      ]
+    },
+    {
+      "baa_number": 7,
+      "short_title": "Adopts the Official Hymn of the Bangsamoro Autonomous",
+      "one_liner": "Adopts the Official Hymn of the Bangsamoro Autonomous Region in Muslim Mindanao.",
+      "date_ratified": "2020-01-30",
+      "status": "IN FORCE",
+      "tags": [
+        "symbols_identity"
+      ]
+    },
+    {
+      "baa_number": 8,
+      "short_title": "Creates the Bangsamoro Women Commission of the BARMM",
+      "one_liner": "Creates the Bangsamoro Women Commission of the BARMM.",
+      "date_ratified": "2020-01-31",
+      "status": "IN FORCE",
+      "tags": [
+        "institution_commission",
+        "labor_social"
+      ]
+    },
+    {
+      "baa_number": 9,
+      "short_title": "Regulates the Operations of Local and Foreign Recruitment",
+      "one_liner": "Regulates the Operations of Local and Foreign Recruitment Agencies Within BARMM.",
+      "date_ratified": "2020-02-19",
+      "status": "IN FORCE",
+      "tags": [
+        "labor_social"
+      ]
+    },
+    {
+      "baa_number": 10,
+      "short_title": "Creates and Establishing the Bangsamoro Youth Commission",
+      "one_liner": "Creates and Establishing the Bangsamoro Youth Commission.",
+      "date_ratified": "2020-02-28",
+      "status": "IN FORCE",
+      "tags": [
+        "institution_commission",
+        "labor_social"
+      ]
+    },
+    {
+      "baa_number": 11,
+      "short_title": "Defines the Power of Appointment in the Bangsamoro",
+      "one_liner": "Defines the Power of Appointment in the Bangsamoro Autonomous Region.",
+      "date_ratified": "2020-06-25",
+      "status": "IN FORCE",
+      "tags": [
+        "governance_other"
+      ]
+    },
+    {
+      "baa_number": 12,
+      "short_title": "Creates the Bangsamoro Sports Commission",
+      "one_liner": "Creates the Bangsamoro Sports Commission.",
+      "date_ratified": "2020-09-17",
+      "status": "IN FORCE",
+      "tags": [
+        "institution_commission",
+        "labor_social"
+      ]
+    },
+    {
+      "baa_number": 13,
+      "short_title": "Bangsamoro Administrative Code",
+      "one_liner": "Provides for the Bangsamoro Administrative Code.",
+      "date_ratified": "2020-10-28",
+      "status": "IN FORCE",
+      "tags": [
+        "priority_code"
+      ]
+    },
+    {
+      "baa_number": 14,
+      "short_title": "Extends the Availability of the 2020 Bangsamoro Appropriations",
+      "one_liner": "Extends the Availability of the 2020 Bangsamoro Appropriations to December 31, 2021 (amending Baa 3).",
+      "date_ratified": "2020-12-23",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 15,
+      "short_title": "Appropriates Funds for the Operation of the Bangsamoro",
+      "one_liner": "Appropriates Funds for the Operation of the Bangsamoro Government for FY 2021 (GAA).",
+      "date_ratified": "2020-12-23",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 16,
+      "short_title": "Adopts an Official SEAL for the Parliament of",
+      "one_liner": "Adopts an Official SEAL for the Parliament of BARMM.",
+      "date_ratified": "2021-01-19",
+      "status": "IN FORCE",
+      "tags": [
+        "symbols_identity"
+      ]
+    },
+    {
+      "baa_number": 17,
+      "short_title": "Bangsamoro Civil Service Code",
+      "one_liner": "Provides for the Bangsamoro Civil Service Code.",
+      "date_ratified": "2021-02-24",
+      "status": "IN FORCE",
+      "tags": [
+        "priority_code"
+      ]
+    },
+    {
+      "baa_number": 18,
+      "short_title": "Bangsamoro Education Code",
+      "one_liner": "Provides for a Complete and Integrated System of Quality Education in the Bangsamoro (education Code).",
+      "date_ratified": "2021-05-18",
+      "status": "IN FORCE",
+      "tags": [
+        "priority_code"
+      ]
+    },
+    {
+      "baa_number": 19,
+      "short_title": "Institutionalizes Policies for Bangsamoro Overseas Employment and Protection",
+      "one_liner": "Institutionalizes Policies for Bangsamoro Overseas Employment and Protection of Overseas Bangsamoro Workers.",
+      "date_ratified": "2021-06-17",
+      "status": "IN FORCE",
+      "tags": [
+        "labor_social"
+      ]
+    },
+    {
+      "baa_number": 20,
+      "short_title": "Mandates the Dual Use of Hijri and Gregorian",
+      "one_liner": "Mandates the Dual Use of Hijri and Gregorian Calendars in All BARMM Institutions.",
+      "date_ratified": "2021-08-17",
+      "status": "IN FORCE",
+      "tags": [
+        "symbols_identity"
+      ]
+    },
+    {
+      "baa_number": 21,
+      "short_title": "Authorizes PHP 50,000,000 for Additional Oxygen Tanks (2021",
+      "one_liner": "Authorizes PHP 50,000,000 for Additional Oxygen Tanks (2021 Quick Response Fund on Health).",
+      "date_ratified": "2021-08-24",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance",
+        "hospital_health"
+      ]
+    },
+    {
+      "baa_number": 22,
+      "short_title": "Appropriates P10,000,000,000 from the 2020 and 2021 Special",
+      "one_liner": "Appropriates P10,000,000,000 from the 2020 and 2021 Special Development Fund.",
+      "date_ratified": "2021-10-08",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 23,
+      "short_title": "Appropriates Funds for the Operation of the Bangsamoro",
+      "one_liner": "Appropriates Funds for the Operation of the Bangsamoro Government for FY 2022 (GAA).",
+      "date_ratified": "2021-12-28",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 24,
+      "short_title": "Extends the Availability of the 2020 and 2021",
+      "one_liner": "Extends the Availability of the 2020 and 2021 GAA Until December 31, 2022.",
+      "date_ratified": "2021-12-28",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 25,
+      "short_title": "an Act Upgrading Datu Blah Sinsuat District Hospital Act",
+      "one_liner": "Upgrades Datu Blah Sinsuat District Hospital, Maguindanao (level I/10-BED to Level II/100-BED).",
+      "date_ratified": "2022-06-15",
+      "status": "IN FORCE",
+      "tags": [
+        "hospital_health"
+      ]
+    },
+    {
+      "baa_number": 26,
+      "short_title": "an Act Upgrading Wao District Hospital Act",
+      "one_liner": "Upgrades Wao District Hospital, Lanao del Sur (level 1: 25-BED to 50-BED).",
+      "date_ratified": "2022-06-15",
+      "status": "IN FORCE",
+      "tags": [
+        "hospital_health"
+      ]
+    },
+    {
+      "baa_number": 27,
+      "short_title": "an Act Establishing a Level Ii District Hospital Act",
+      "one_liner": "Establishes a Level II District Hospital (100-BED) in Maimbung, Sulu.",
+      "date_ratified": "2022-06-16",
+      "status": "IN FORCE",
+      "tags": [
+        "hospital_health"
+      ]
+    },
+    {
+      "baa_number": 28,
+      "short_title": "an Act Upgrading the Sulu Provincial Hospital Into a Level Ii Hospital Act",
+      "one_liner": "Upgrades the Sulu Provincial Hospital Into a Level II Hospital (200-BED).",
+      "date_ratified": "2022-06-16",
+      "status": "IN FORCE",
+      "tags": [
+        "hospital_health"
+      ]
+    },
+    {
+      "baa_number": 29,
+      "short_title": "an Act Upgrading the Buluan District Hospital Act",
+      "one_liner": "Upgrades the Buluan District Hospital, Maguindanao (level I/75-BED to Level II/150-BED).",
+      "date_ratified": "2022-06-16",
+      "status": "IN FORCE",
+      "tags": [
+        "hospital_health"
+      ]
+    },
+    {
+      "baa_number": 30,
+      "short_title": "an Act Upgrading the Unayan Municipal Hospital Act",
+      "one_liner": "Upgrades the Unayan Municipal Hospital, Binidayan, Lanao del Sur Into a 50-BED District Hospital.",
+      "date_ratified": "2022-06-21",
+      "status": "IN FORCE",
+      "tags": [
+        "hospital_health"
+      ]
+    },
+    {
+      "baa_number": 31,
+      "short_title": "Creates the Bangsamoro Sustainable Development Board",
+      "one_liner": "Creates the Bangsamoro Sustainable Development Board.",
+      "date_ratified": "2022-06-23",
+      "status": "IN FORCE",
+      "tags": [
+        "institution_commission"
+      ]
+    },
+    {
+      "baa_number": 32,
+      "short_title": "Appropriates Funds for the Operation of the Bangsamoro",
+      "one_liner": "Appropriates Funds for the Operation of the Bangsamoro Government for FY 2023 (GAA).",
+      "date_ratified": "2022-12-20",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 33,
+      "short_title": "Extends the Availability of the Bangsamoro GAA Until",
+      "one_liner": "Extends the Availability of the Bangsamoro GAA Until December 31, 2023 (amending Baa 23).",
+      "date_ratified": "2022-12-20",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 34,
+      "short_title": "Extends the Availability of 2020 and 2021 Special",
+      "one_liner": "Extends the Availability of 2020 and 2021 Special Development Fund.",
+      "date_ratified": "2022-12-20",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 35,
+      "short_title": "Bangsamoro Electoral Code",
+      "one_liner": "Provides for the Bangsamoro Electoral Code of BARMM.",
+      "date_ratified": "2023-03-08",
+      "status": "IN FORCE",
+      "tags": [
+        "priority_code",
+        "elections_districting"
+      ]
+    },
+    {
+      "baa_number": 36,
+      "short_title": "Establishes a Revolving Fund for Salaries of Nationally",
+      "one_liner": "Establishes a Revolving Fund for Salaries of Nationally Funded Program Workers Deployed in BARMM.",
+      "date_ratified": "2023-05-17",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 37,
+      "short_title": "Establishes the Seat of Government of BARMM in",
+      "one_liner": "Establishes the Seat of Government of BARMM in Parang, Maguindanao del Norte (amending Baa 13).",
+      "date_ratified": "2023-06-19",
+      "status": "IN FORCE",
+      "tags": [
+        "municipality_lgu"
+      ]
+    },
+    {
+      "baa_number": 38,
+      "short_title": "Authorizes Continued Use of Funds for Unpaid Obligations",
+      "one_liner": "Authorizes Continued Use of Funds for Unpaid Obligations of FY 2020-2022 Appropriations.",
+      "date_ratified": "2023-06-22",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 39,
+      "short_title": "Governs the Observance of Regular and Special Holidays",
+      "one_liner": "Governs the Observance of Regular and Special Holidays in BARMM (repealing MMA Act 17).",
+      "date_ratified": "2023-07-20",
+      "status": "IN FORCE",
+      "tags": [
+        "symbols_identity"
+      ]
+    },
+    {
+      "baa_number": 40,
+      "short_title": "Establishes the Bangsamoro Science High School System",
+      "one_liner": "Establishes the Bangsamoro Science High School System.",
+      "date_ratified": "2023-08-14",
+      "status": "IN FORCE",
+      "tags": [
+        "institution_commission"
+      ]
+    },
+    {
+      "baa_number": 41,
+      "short_title": "Creates the Municipality of Pahamuddin (SGA)",
+      "one_liner": "Creates the Municipality of Pahamuddin (SGA).",
+      "date_ratified": "2023-08-17",
+      "status": "IN FORCE",
+      "tags": [
+        "municipality_lgu"
+      ]
+    },
+    {
+      "baa_number": 42,
+      "short_title": "Creates the Municipality of Kadayangan (SGA)",
+      "one_liner": "Creates the Municipality of Kadayangan (SGA).",
+      "date_ratified": "2023-08-17",
+      "status": "IN FORCE",
+      "tags": [
+        "municipality_lgu"
+      ]
+    },
+    {
+      "baa_number": 43,
+      "short_title": "Creates the Municipality of Nabalawag (SGA)",
+      "one_liner": "Creates the Municipality of Nabalawag (SGA).",
+      "date_ratified": "2023-08-17",
+      "status": "IN FORCE",
+      "tags": [
+        "municipality_lgu"
+      ]
+    },
+    {
+      "baa_number": 44,
+      "short_title": "Creates the Municipality of Old Kaabakan (SGA)",
+      "one_liner": "Creates the Municipality of Old Kaabakan (SGA).",
+      "date_ratified": "2023-08-17",
+      "status": "IN FORCE",
+      "tags": [
+        "municipality_lgu"
+      ]
+    },
+    {
+      "baa_number": 45,
+      "short_title": "Creates the Municipality of Kapalawan (SGA)",
+      "one_liner": "Creates the Municipality of Kapalawan (SGA).",
+      "date_ratified": "2023-08-17",
+      "status": "IN FORCE",
+      "tags": [
+        "municipality_lgu"
+      ]
+    },
+    {
+      "baa_number": 46,
+      "short_title": "Creates the Municipality of Malidegao (SGA)",
+      "one_liner": "Creates the Municipality of Malidegao (SGA).",
+      "date_ratified": "2023-08-17",
+      "status": "IN FORCE",
+      "tags": [
+        "municipality_lgu"
+      ]
+    },
+    {
+      "baa_number": 47,
+      "short_title": "Creates the Municipality of Tugunan (SGA)",
+      "one_liner": "Creates the Municipality of Tugunan (SGA).",
+      "date_ratified": "2023-08-17",
+      "status": "IN FORCE",
+      "tags": [
+        "municipality_lgu"
+      ]
+    },
+    {
+      "baa_number": 48,
+      "short_title": "Creates the Municipality of Ligawasan (SGA)",
+      "one_liner": "Creates the Municipality of Ligawasan (SGA).",
+      "date_ratified": "2023-08-17",
+      "status": "IN FORCE",
+      "tags": [
+        "municipality_lgu"
+      ]
+    },
+    {
+      "baa_number": 49,
+      "short_title": "Bangsamoro Local Governance Code",
+      "one_liner": "Provides for the Bangsamoro Local Governance Code.",
+      "date_ratified": "2023-09-28",
+      "status": "IN FORCE",
+      "tags": [
+        "priority_code"
+      ]
+    },
+    {
+      "baa_number": 50,
+      "short_title": "Creates the Bangsamoro Kulliyyah for Islamic Studies (repealing",
+      "one_liner": "Creates the Bangsamoro Kulliyyah for Islamic Studies (repealing MMA Act 164).",
+      "date_ratified": "2023-11-30",
+      "status": "IN FORCE",
+      "tags": [
+        "institution_commission"
+      ]
+    },
+    {
+      "baa_number": 51,
+      "short_title": "Further Continuing the Validity of the 2020-2023 Special",
+      "one_liner": "Further Continuing the Validity of the 2020-2023 Special Development Fund.",
+      "date_ratified": "2023-12-20",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 52,
+      "short_title": "Extends the Validity of the FY 2023 GAA",
+      "one_liner": "Extends the Validity of the FY 2023 GAA Until December 31, 2024 (amending Baa 32).",
+      "date_ratified": "2023-12-20",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 53,
+      "short_title": "Municipality of Nuling Charter",
+      "one_liner": "Creates the Municipality of Nuling, Maguindanao del Norte.",
+      "date_ratified": "2023-12-20",
+      "status": "IN FORCE",
+      "tags": [
+        "municipality_lgu"
+      ]
+    },
+    {
+      "baa_number": 54,
+      "short_title": "Municipality of Datu Sinsuat Balabaran Charter",
+      "one_liner": "Creates the Municipality of Datu Sinsuat Balabaran, Maguindanao del Norte.",
+      "date_ratified": "2023-12-20",
+      "status": "IN FORCE",
+      "tags": [
+        "municipality_lgu"
+      ]
+    },
+    {
+      "baa_number": 55,
+      "short_title": "Municipality of Sheik Abas Hamza Charter",
+      "one_liner": "Creates the Municipality of Sheik Abas Hamza, Maguindanao del Norte.",
+      "date_ratified": "2023-12-20",
+      "status": "IN FORCE",
+      "tags": [
+        "municipality_lgu"
+      ]
+    },
+    {
+      "baa_number": 56,
+      "short_title": "Appropriates Funds for the Operation of the Bangsamoro",
+      "one_liner": "Appropriates Funds for the Operation of the Bangsamoro Government for FY 2024 (GAA).",
+      "date_ratified": "2023-12-21",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 57,
+      "short_title": "Provides Financial Assistance to Bangsamoro Mujahideen; Creating the",
+      "one_liner": "Provides Financial Assistance to Bangsamoro Mujahideen; Creating the Office of the Bangsamoro Mujahideen under Special Circumstance.",
+      "date_ratified": "2024-02-26",
+      "status": "IN FORCE",
+      "tags": [
+        "institution_commission",
+        "labor_social"
+      ]
+    },
+    {
+      "baa_number": 58,
+      "short_title": "Provides for the Creation of Parliamentary Districts in",
+      "one_liner": "Provides for the Creation of Parliamentary Districts in BARMM (parliamentary Districts Act of 2024).",
+      "date_ratified": "2024-02-28",
+      "status": "STRUCK DOWN",
+      "tags": [
+        "elections_districting"
+      ]
+    },
+    {
+      "baa_number": 59,
+      "short_title": "Establishes the Bangsamoro Agriculture and Fisheries Training Institute",
+      "one_liner": "Establishes the Bangsamoro Agriculture and Fisheries Training Institute.",
+      "date_ratified": "2024-07-17",
+      "status": "IN FORCE",
+      "tags": [
+        "institution_commission"
+      ]
+    },
+    {
+      "baa_number": 60,
+      "short_title": "Declares the Burial Sites of Sheikh Salamat Hashim",
+      "one_liner": "Declares the Burial Sites of Sheikh Salamat Hashim and Alim Abdul Aziz Mimbantas as 'HASHIM and Mimbantas Memorial SITE'.",
+      "date_ratified": "2024-07-23",
+      "status": "IN FORCE",
+      "tags": [
+        "symbols_identity"
+      ]
+    },
+    {
+      "baa_number": 61,
+      "short_title": "Establishes a Bangsamoro Memorial Marker and Eco-park in",
+      "one_liner": "Establishes a Bangsamoro Memorial Marker and Eco-park in Camp Abubakar to Honor the Shuhada/martyrs.",
+      "date_ratified": "2024-08-19",
+      "status": "IN FORCE",
+      "tags": [
+        "symbols_identity"
+      ]
+    },
+    {
+      "baa_number": 62,
+      "short_title": "Bangsamoro IDP Rights Act",
+      "one_liner": "Protects and Promoting the Rights of Internally Displaced Persons of BARMM.",
+      "date_ratified": "2024-09-27",
+      "status": "IN FORCE",
+      "tags": [
+        "labor_social"
+      ]
+    },
+    {
+      "baa_number": 63,
+      "short_title": "Supplemental Budget Act",
+      "one_liner": "Appropriates Supplemental Funds for the Operation of the Bangsamoro Government.",
+      "date_ratified": "2024-09-27",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 64,
+      "short_title": "Bangsamoro Indigenous Peoples Rights Act",
+      "one_liner": "Recognize, Develop, and Protect the Indigenous Peoples and Their Rights in BARMM; Strengthening MIPA.",
+      "date_ratified": "2024-12-10",
+      "status": "IN FORCE",
+      "tags": [
+        "labor_social"
+      ]
+    },
+    {
+      "baa_number": 65,
+      "short_title": "Appropriates Funds for the Operation of the Bangsamoro",
+      "one_liner": "Appropriates Funds for the Operation of the Bangsamoro Government for FY 2025 (GAA).",
+      "date_ratified": "2024-12-10",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 66,
+      "short_title": "an Act Establishing South Ubian General Hospital Act",
+      "one_liner": "Establishes South Ubian General Hospital, Tawi-tawi (level 1, 25-BED).",
+      "date_ratified": "2024-12-12",
+      "status": "IN FORCE",
+      "tags": [
+        "hospital_health"
+      ]
+    },
+    {
+      "baa_number": 67,
+      "short_title": "an Act Creating the Pura Municipal Hospital Act",
+      "one_liner": "Creates the Pura Municipal Hospital in Datu Blah T. Sinsuat, Maguindanao del Norte.",
+      "date_ratified": "2024-12-12",
+      "status": "IN FORCE",
+      "tags": [
+        "hospital_health"
+      ]
+    },
+    {
+      "baa_number": 68,
+      "short_title": "an Act Establishing the Northern Kabuntalan General Hospital Act",
+      "one_liner": "Establishes the Northern Kabuntalan General Hospital (level I).",
+      "date_ratified": "2024-12-12",
+      "status": "IN FORCE",
+      "tags": [
+        "hospital_health"
+      ]
+    },
+    {
+      "baa_number": 69,
+      "short_title": "an Act Establishing Aleem Abdulazis S. Mimbantas Memorial Hospital Act",
+      "one_liner": "Establishes Aleem Abdulazis S. Mimbantas Memorial Hospital, Masiu, Lanao del Sur (level 1).",
+      "date_ratified": "2024-12-12",
+      "status": "IN FORCE",
+      "tags": [
+        "hospital_health",
+        "symbols_identity"
+      ]
+    },
+    {
+      "baa_number": 70,
+      "short_title": "Amends Section 5 of Baa 54 (municipality of",
+      "one_liner": "Amends Section 5 of Baa 54 (municipality of Datu Sinsuat Balabaran).",
+      "date_ratified": "2024-12-12",
+      "status": "IN FORCE",
+      "tags": [
+        "municipality_lgu"
+      ]
+    },
+    {
+      "baa_number": 71,
+      "short_title": "Amends Section 5 of Baa 55 (municipality of",
+      "one_liner": "Amends Section 5 of Baa 55 (municipality of Sheik Abas Hamza).",
+      "date_ratified": "2024-12-12",
+      "status": "IN FORCE",
+      "tags": [
+        "municipality_lgu"
+      ]
+    },
+    {
+      "baa_number": 72,
+      "short_title": "Bereavement Leave Act",
+      "one_liner": "Provides Seven Days Forfeitable Bereavement Leave with Pay in Public and Private Sectors (bereavement Leave Act of 2025).",
+      "date_ratified": "2025-02-20",
+      "status": "IN FORCE",
+      "tags": [
+        "labor_social"
+      ]
+    },
+    {
+      "baa_number": 73,
+      "short_title": "an Act Converting the Iranon District Hospital Act",
+      "one_liner": "Converts the Iranon District Hospital, Parang Into the Iranon Provincial Hospital.",
+      "date_ratified": "2025-05-19",
+      "status": "IN FORCE",
+      "tags": [
+        "hospital_health"
+      ]
+    },
+    {
+      "baa_number": 74,
+      "short_title": "an Act Upgrading the Maguindanao Provincial Hospital Into the Bangsamoro Regional Hospital Act",
+      "one_liner": "Upgrades the Maguindanao Provincial Hospital Into the Bangsamoro Regional Hospital and Medical Center (level III, 350-BED).",
+      "date_ratified": "2025-05-26",
+      "status": "IN FORCE",
+      "tags": [
+        "hospital_health"
+      ]
+    },
+    {
+      "baa_number": 75,
+      "short_title": "Supplemental Budget Act",
+      "one_liner": "Appropriates Supplemental Funds for the Operation of the Bangsamoro Government (2025).",
+      "date_ratified": "2025-05-29",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 76,
+      "short_title": "Sr. Memorial Hospital Act",
+      "one_liner": "Upgrades Datu Alawaddin T. Bandon, Sr. Memorial Hospital, Sibutu, Tawi-tawi (10-BED Infirmary to 25-BED Level I).",
+      "date_ratified": "2025-06-16",
+      "status": "IN FORCE",
+      "tags": [
+        "hospital_health",
+        "symbols_identity"
+      ]
+    },
+    {
+      "baa_number": 77,
+      "short_title": "Reconstituting the Parliamentary Districts in BARMM (amending Baa",
+      "one_liner": "Reconstituting the Parliamentary Districts in BARMM (amending Baa 58).",
+      "date_ratified": "2025-08-19",
+      "status": "STRUCK DOWN",
+      "tags": [
+        "elections_districting"
+      ]
+    },
+    {
+      "baa_number": 78,
+      "short_title": "an Act Establishing a Level I General Hospital Act",
+      "one_liner": "Establishes a Level I General Hospital in Tipo-tipo, Basilan.",
+      "date_ratified": "2025-08-20",
+      "status": "IN FORCE",
+      "tags": [
+        "hospital_health"
+      ]
+    },
+    {
+      "baa_number": 79,
+      "short_title": "an Act Establishing a Level I General Hospital Act",
+      "one_liner": "Establishes a Level I General Hospital in Maluso, Basilan.",
+      "date_ratified": "2025-08-20",
+      "status": "IN FORCE",
+      "tags": [
+        "hospital_health"
+      ]
+    },
+    {
+      "baa_number": 80,
+      "short_title": "Al-haj Memorial Hospital Act",
+      "one_liner": "Upgrades Dr. Serapio B. Montaner Jr., Al-haj Memorial Hospital (25 to 100-BED).",
+      "date_ratified": "2025-08-20",
+      "status": "IN FORCE",
+      "tags": [
+        "hospital_health",
+        "symbols_identity"
+      ]
+    },
+    {
+      "baa_number": 81,
+      "short_title": "Establishes the Salamat Excellence Award for Leadership (SEAL)",
+      "one_liner": "Establishes the Salamat Excellence Award for Leadership (SEAL) Program and Endowment Fund.",
+      "date_ratified": "2025-08-20",
+      "status": "IN FORCE",
+      "tags": [
+        "symbols_identity"
+      ]
+    },
+    {
+      "baa_number": 82,
+      "short_title": "Bangsamoro Labor and Employment Code",
+      "one_liner": "Institutes a Labor and Employment Code for the Bangsamoro Autonomous Region.",
+      "date_ratified": "2025-11-12",
+      "status": "IN FORCE",
+      "tags": [
+        "priority_code"
+      ]
+    },
+    {
+      "baa_number": 83,
+      "short_title": "Creates the Bangsamoro Nutrition Commission",
+      "one_liner": "Creates the Bangsamoro Nutrition Commission.",
+      "date_ratified": "2025-11-19",
+      "status": "IN FORCE",
+      "tags": [
+        "hospital_health",
+        "institution_commission"
+      ]
+    },
+    {
+      "baa_number": 84,
+      "short_title": "Bangsamoro Budget System Act",
+      "one_liner": "Prescribes a Budget System for the Bangsamoro Government.",
+      "date_ratified": "2025-12-09",
+      "status": "IN FORCE",
+      "tags": [
+        "priority_code"
+      ]
+    },
+    {
+      "baa_number": 85,
+      "short_title": "Appropriates Funds for the Operation of the Bangsamoro",
+      "one_liner": "Appropriates Funds for the Operation of the Bangsamoro Government for FY 2026 (GAA).",
+      "date_ratified": "2025-12-16",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 86,
+      "short_title": "Provides for the Apportionment of Parliamentary District Representative",
+      "one_liner": "Provides for the Apportionment of Parliamentary District Representative Seats in BARMM.",
+      "date_ratified": "2026-01-12",
+      "status": "IN FORCE",
+      "tags": [
+        "elections_districting"
+      ]
+    },
+    {
+      "baa_number": 87,
+      "short_title": "Removes the 'NONE of the ABOVE' Option from",
+      "one_liner": "Removes the 'NONE of the ABOVE' Option from the Official Ballot (amending Baa 35).",
+      "date_ratified": "2026-01-28",
+      "status": "IN FORCE",
+      "tags": [
+        "elections_districting"
+      ]
+    },
+    {
+      "baa_number": 88,
+      "short_title": "Bangsamoro Electoral Code",
+      "one_liner": "Amends Baa 35 (bangsamoro Electoral Code).",
+      "date_ratified": "2026-01-28",
+      "status": "IN FORCE",
+      "tags": [
+        "elections_districting"
+      ]
+    },
+    {
+      "baa_number": 89,
+      "short_title": "Bangsamoro Transitional Justice & Reconciliation Act",
+      "one_liner": "Establishes a Bangsamoro Transitional Justice and Reconciliation Program and Commission.",
+      "date_ratified": "2026-01-28",
+      "status": "IN FORCE",
+      "tags": [
+        "institution_commission"
+      ]
+    },
+    {
+      "baa_number": 90,
+      "short_title": "Renames the Municipality of Datu Blah T. Sinsuat",
+      "one_liner": "Renames the Municipality of Datu Blah T. Sinsuat to Municipality of West Upi, Maguindanao del Norte.",
+      "date_ratified": "2026-05-19",
+      "status": "IN FORCE",
+      "tags": [
+        "municipality_lgu"
+      ]
+    },
+    {
+      "baa_number": 91,
+      "short_title": "Supplemental Budget Act",
+      "one_liner": "Appropriates Supplemental Funds for the Operation of the Bangsamoro Government (2026).",
+      "date_ratified": "2026-05-20",
+      "status": "IN FORCE",
+      "tags": [
+        "budget_finance"
+      ]
+    },
+    {
+      "baa_number": 92,
+      "short_title": "Provides for a Charter for a DA'WAH Center",
+      "one_liner": "Provides for a Charter for a DA'WAH Center in BARMM.",
+      "date_ratified": "2026-07-15",
+      "status": "IN FORCE",
+      "tags": [
+        "institution_commission"
+      ]
+    },
+    {
+      "baa_number": 93,
+      "short_title": "Expands the Scope of Authority and Services of",
+      "one_liner": "Expands the Scope of Authority and Services of the SGA Development Authority (amending Baa 13 and Baa 49).",
+      "date_ratified": "2026-07-16",
+      "status": "IN FORCE",
+      "tags": [
+        "institution_commission"
+      ]
+    },
+    {
+      "baa_number": 94,
+      "short_title": "Expands the Scope of Authority and Services of",
+      "one_liner": "Expands the Scope of Authority and Services of the SGA Development Authority (amending Baa 13 and Baa 49) [listed Twice on the Official Index Alongside Baa 9...",
+      "date_ratified": "2026-07-16",
+      "status": "IN FORCE",
+      "tags": [
+        "institution_commission"
+      ]
+    }
+  ]
+}

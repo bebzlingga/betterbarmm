@@ -1,0 +1,8 @@
+{
+  "meta": {
+    "record_type": "proposed_resolutions_index",
+    "status": "PENDING_CAPTURE",
+    "note": "Proposed resolutions (600+ records, 2019-2026) are on a paginated index at parliament.bangsamoro.gov.ph/proposed-resolutions/. Each record page lists number, status, authors/co-authors, and legislative history - same schema as adopted/RES-XXX.json plus 'status' and 'authors'."
+  },
+  "resolutions": []
+}

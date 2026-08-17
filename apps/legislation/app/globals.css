@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import "@betterbarmm/ui/styles.css";
+
+/* ============================================================
+   Legislation workspace
+
+   The visual language this app was designed around now lives in
+   `@betterbarmm/ui` — tokens, type primitives, badges, chips, controls,
+   surfaces, and motion — because the rest of the estate adopted it.
+   Everything the registry needs is in there.
+
+   Anything genuinely local to reading legislation belongs here. Right
+   now that is nothing: the registry and the landing site are the same
+   system. Leave the file rather than delete it, so app-specific rules
+   have an obvious home when one is needed.
+   ============================================================ */

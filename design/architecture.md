@@ -6,7 +6,7 @@ This repository is organized as a multi-app monorepo with independent Next.js ap
 
 - `apps/www` — public landing site for `betterbarmm.gov`
 - `apps/budget` — budget transparency portal for `budget.betterbarmm.gov`
-- `apps/bills` — bills tracker for `bills.betterbarmm.gov`
+- `apps/legislation` — legislation registry for `bills.betterbarmm.com`
 - `apps/admin` — admin dashboard for `admin.betterbarmm.gov`
 
 Shared code lives in `packages/*` so each app can evolve independently while reusing UI, schemas, and domain helpers.
@@ -28,7 +28,7 @@ Each app is intended to deploy independently on Vercel or another platform:
 
 - `apps/www` -> `betterbarmm.gov`
 - `apps/budget` -> `budget.betterbarmm.gov`
-- `apps/bills` -> `bills.betterbarmm.gov`
+- `apps/legislation` -> `bills.betterbarmm.com`
 - `apps/admin` -> `admin.betterbarmm.gov`
 
 This avoids a single giant app and enables separate release cycles, caching, and permissions for each domain.

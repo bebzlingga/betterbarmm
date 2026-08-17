@@ -6,7 +6,7 @@ This repository is a monorepo for the BetterBARMM platform, built with Next.js A
 
 - `apps/www` — public landing site for `betterbarmm.gov`
 - `apps/budget` — budget transparency portal for `budget.betterbarmm.gov`
-- `apps/bills` — bills tracker for `bills.betterbarmm.gov`
+- `apps/legislation` — legislation registry for `bills.betterbarmm.com`
 - `apps/admin` — internal administration dashboard for `admin.betterbarmm.gov`
 
 - `packages/ui` — shared UI components and design system primitives
@@ -48,4 +48,4 @@ bun run lint
 
 ## Budget app design tokens
 
-The budget app uses the same Google Sans stack as the other BetterBARMM apps for body, display, numeric, and navigation text. Keep typography wired through `apps/budget/app/globals.css` with `--font-body` and `--font-display`.
+The budget app uses the same type stack as the other BetterBARMM apps: DM Sans for body and description copy, Outfit for headings, buttons, numeric, and navigation text. Each app loads both with `next/font/google` in its `layout.tsx`, which defines `--font-dm-sans` and `--font-outfit`; the stacks that consume them live in `packages/ui/src/styles.css` as `--font-body`, `--font-display`, and `--font-mono-ui`.

@@ -1,0 +1,1996 @@
+{
+  "meta": {
+    "record_type": "bills_index",
+    "count": 192,
+    "coverage": "Bills ~286-475 (2024-2026) + 101 & 136; Bills 1-285 pending capture.",
+    "listing_schema": "number · short_title · one_liner · status · tags - open bills/BILL-XXX.json for the full citizen-portal record."
+  },
+  "bills": [
+    {
+      "bill_number": 475,
+      "short_title": "Halal Development Act",
+      "status": "First Reading",
+      "as_of": "2026-07-16",
+      "tags": [
+        "islamic_culture_heritage"
+      ],
+      "one_liner": "Creates the Bangsamoro Halal Development Authority, Defining its Powers and Functions on Halal Certification and Enforcement."
+    },
+    {
+      "bill_number": 474,
+      "short_title": "Bangsamoro Administrative Code",
+      "status": "First Reading",
+      "as_of": "2026-07-16",
+      "tags": [
+        "women_children_social_welfare",
+        "governance_civil_service"
+      ],
+      "one_liner": "Amends Section 3, Chapter 1, Title Xvi of Baa No. 13 (BARMM Administrative Code) Relative to the Composition of the Bangsamoro Women Commission."
+    },
+    {
+      "bill_number": 473,
+      "short_title": "Establishes the Bangsamoro SHARI'AH Justice System Code",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-07-15",
+      "tags": [
+        "islamic_culture_heritage",
+        "peace_security_justice"
+      ],
+      "one_liner": "Establishes the Bangsamoro SHARI'AH Justice System Code."
+    },
+    {
+      "bill_number": 472,
+      "short_title": "Establishes a Revolving Fund for Hajj Operations for",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-07-14",
+      "tags": [
+        "islamic_culture_heritage"
+      ],
+      "one_liner": "Establishes a Revolving Fund for Hajj Operations for Bangsamoro Pilgrims under the Bangsamoro Pilgrimage Authority."
+    },
+    {
+      "bill_number": 471,
+      "short_title": "Provides for Bangsamoro Sustainable Forest Management Code of",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-07-13",
+      "tags": [
+        "environment_agriculture_fisheries"
+      ],
+      "one_liner": "Provides for Bangsamoro Sustainable Forest Management Code of 2026."
+    },
+    {
+      "bill_number": 470,
+      "short_title": "Supplemental Budget Act",
+      "status": "Approved",
+      "as_of": "2026-05-20",
+      "tags": [
+        "health",
+        "budget_appropriations"
+      ],
+      "one_liner": "Appropriates Supplemental Funds for the Operation of the Bangsamoro Government."
+    },
+    {
+      "bill_number": 469,
+      "short_title": "Bangsamoro Electoral Code",
+      "status": "First Reading",
+      "as_of": "2026-05-21",
+      "tags": [
+        "elections_districting"
+      ],
+      "one_liner": "Amends Article III, Section 9 of Baa No. 35 (bangsamoro Electoral Code of 2023), Deleting Section 9(d)."
+    },
+    {
+      "bill_number": 468,
+      "short_title": "Bangsamoro Local Governance Code",
+      "status": "First Reading",
+      "as_of": "2026-05-21",
+      "tags": [
+        "local_government"
+      ],
+      "one_liner": "Amends Section 45 of Baa No. 49 (local Governance Code) on Disqualifications for Elective Local Positions."
+    },
+    {
+      "bill_number": 467,
+      "short_title": "Establishes Bangsamoro Sports Complex in BARMM",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-07-15",
+      "tags": [
+        "sports_youth"
+      ],
+      "one_liner": "Establishes Bangsamoro Sports Complex in BARMM."
+    },
+    {
+      "bill_number": 466,
+      "short_title": "Establishes a Bahay Kanlungan One Stop-shop Center for",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-07-16",
+      "tags": [
+        "women_children_social_welfare",
+        "local_government"
+      ],
+      "one_liner": "Establishes a Bahay Kanlungan One Stop-shop Center for Women and Children in Every City and Municipality."
+    },
+    {
+      "bill_number": 465,
+      "short_title": "Establishes a Youth Information Desk in Every City",
+      "status": "First Reading",
+      "as_of": "2026-05-18",
+      "tags": [
+        "local_government",
+        "sports_youth"
+      ],
+      "one_liner": "Establishes a Youth Information Desk in Every City and Municipality."
+    },
+    {
+      "bill_number": 464,
+      "short_title": "Bereavement Leave Act",
+      "status": "First Reading",
+      "as_of": "2026-04-30",
+      "tags": [
+        "governance_civil_service"
+      ],
+      "one_liner": "Amends Section 5 of Baa No. 72 (bangsamoro Bereavement Leave Act of 2025)."
+    },
+    {
+      "bill_number": 463,
+      "short_title": "Institutionalizes DA'WAH Activities in the Bangsamoro Region",
+      "status": "Approved",
+      "as_of": "2026-07-15",
+      "tags": [
+        "islamic_culture_heritage"
+      ],
+      "one_liner": "Institutionalizes DA'WAH Activities in the Bangsamoro Region."
+    },
+    {
+      "bill_number": 462,
+      "short_title": "Strengthens Aftercare Support Services for Children in Conflict",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-06-18",
+      "tags": [
+        "women_children_social_welfare",
+        "peace_security_justice"
+      ],
+      "one_liner": "Strengthens Aftercare Support Services for Children in Conflict with the Law."
+    },
+    {
+      "bill_number": 461,
+      "short_title": "Institutionalizes the Absorption and Regularization of Volunteer Teachers",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-05-18",
+      "tags": [
+        "education"
+      ],
+      "one_liner": "Institutionalizes the Absorption and Regularization of Volunteer Teachers in MBHTE."
+    },
+    {
+      "bill_number": 460,
+      "short_title": "Promoting Inclusive Digital Education and Equitable Access to",
+      "status": "First Reading",
+      "as_of": "2026-04-28",
+      "tags": [
+        "education"
+      ],
+      "one_liner": "Promoting Inclusive Digital Education and Equitable Access to Learning Through Technology (idea)."
+    },
+    {
+      "bill_number": 459,
+      "short_title": "Establishes the Integrated QUR'AN Recitation and Adaptation (iqra)",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-05-21",
+      "tags": [
+        "education",
+        "islamic_culture_heritage"
+      ],
+      "one_liner": "Establishes the Integrated QUR'AN Recitation and Adaptation (iqra) Education System."
+    },
+    {
+      "bill_number": 458,
+      "short_title": "Establishes Support Systems to Preserve Traditional Madaris in",
+      "status": "First Reading",
+      "as_of": "2026-05-19",
+      "tags": [
+        "education"
+      ],
+      "one_liner": "Establishes Support Systems to Preserve Traditional Madaris in BARMM."
+    },
+    {
+      "bill_number": 457,
+      "short_title": "Establishes February as Special Geographic Area (SGA) History",
+      "status": "First Reading",
+      "as_of": "2026-04-29",
+      "tags": [
+        "islamic_culture_heritage",
+        "local_government"
+      ],
+      "one_liner": "Establishes February as Special Geographic Area (SGA) History Month."
+    },
+    {
+      "bill_number": 456,
+      "short_title": "Institutionalizes a Ligawasan Inland Fisheries Enterprise (life) Framework",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-06-17",
+      "tags": [
+        "environment_agriculture_fisheries",
+        "economy_trade_investment"
+      ],
+      "one_liner": "Institutionalizes a Ligawasan Inland Fisheries Enterprise (life) Framework."
+    },
+    {
+      "bill_number": 455,
+      "short_title": "Provides for a Comprehensive Administrative and Regulatory Framework",
+      "status": "First Reading",
+      "as_of": "2026-04-23",
+      "tags": [
+        "peace_security_justice"
+      ],
+      "one_liner": "Provides for a Comprehensive Administrative and Regulatory Framework for Firearms and Ammunition."
+    },
+    {
+      "bill_number": 454,
+      "short_title": "Provides for the Implementation of Children Social Security",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-04-28",
+      "tags": [
+        "women_children_social_welfare",
+        "peace_security_justice"
+      ],
+      "one_liner": "Provides for the Implementation of Children Social Security Program."
+    },
+    {
+      "bill_number": 453,
+      "short_title": "Establishes the 'MAY Ayuda Sa BASURA' Program (trash-to-cash",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-06-18",
+      "tags": [
+        "other"
+      ],
+      "one_liner": "Establishes the 'MAY Ayuda Sa BASURA' Program (trash-to-cash System)."
+    },
+    {
+      "bill_number": 452,
+      "short_title": "Creates the Bangsamoro CHILDREN'S Information Office (bcio) and",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-06-18",
+      "tags": [
+        "women_children_social_welfare"
+      ],
+      "one_liner": "Creates the Bangsamoro CHILDREN'S Information Office (bcio) and CHILDREN'S Integrated Database System."
+    },
+    {
+      "bill_number": 451,
+      "short_title": "Institutionalizes the Bangsamoro Disaster Volunteer Corps",
+      "status": "First Reading",
+      "as_of": "2026-05-18",
+      "tags": [
+        "disaster_resilience"
+      ],
+      "one_liner": "Institutionalizes the Bangsamoro Disaster Volunteer Corps."
+    },
+    {
+      "bill_number": 450,
+      "short_title": "Institutionalizes Disaster-resilient Infrastructure Standards, Safety Audits, and Retrofitting",
+      "status": "First Reading",
+      "as_of": "2026-05-19",
+      "tags": [
+        "infrastructure_transport",
+        "disaster_resilience"
+      ],
+      "one_liner": "Institutionalizes Disaster-resilient Infrastructure Standards, Safety Audits, and Retrofitting for Public Facilities."
+    },
+    {
+      "bill_number": 449,
+      "short_title": "Authorizes the Ministry of Health to Implement Programs",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-05-18",
+      "tags": [
+        "health"
+      ],
+      "one_liner": "Authorizes the Ministry of Health to Implement Programs for Prevention and Management of Asthma Among Low-income Families."
+    },
+    {
+      "bill_number": 448,
+      "short_title": "Promoting Maternal Wellness and Safe Pregnancy; Comprehensive Wellness",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-05-18",
+      "tags": [
+        "health",
+        "women_children_social_welfare"
+      ],
+      "one_liner": "Promoting Maternal Wellness and Safe Pregnancy; Comprehensive Wellness Program for Pregnant Women; Philhealth Maternity Claims Facilitation."
+    },
+    {
+      "bill_number": 447,
+      "short_title": "Establishes the Bangsamoro Transportation and Communications Code",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-04-27",
+      "tags": [
+        "infrastructure_transport"
+      ],
+      "one_liner": "Establishes the Bangsamoro Transportation and Communications Code."
+    },
+    {
+      "bill_number": 446,
+      "short_title": "Regulates the Grant of Regional Franchises and Concessions",
+      "status": "First Reading",
+      "as_of": "2026-04-27",
+      "tags": [
+        "economy_trade_investment"
+      ],
+      "one_liner": "Regulates the Grant of Regional Franchises and Concessions."
+    },
+    {
+      "bill_number": 445,
+      "short_title": "Creates the Bangsamoro Basic Utilities Assistance Office",
+      "status": "First Reading",
+      "as_of": "2026-04-28",
+      "tags": [
+        "infrastructure_transport"
+      ],
+      "one_liner": "Creates the Bangsamoro Basic Utilities Assistance Office."
+    },
+    {
+      "bill_number": 444,
+      "short_title": "Amends Baa No. 40 (bangsamoro Science High School",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-04-29",
+      "tags": [
+        "education"
+      ],
+      "one_liner": "Amends Baa No. 40 (bangsamoro Science High School System)."
+    },
+    {
+      "bill_number": 443,
+      "short_title": "Provides for the Magna Carta of Persons with",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-04-28",
+      "tags": [
+        "women_children_social_welfare"
+      ],
+      "one_liner": "Provides for the Magna Carta of Persons with Disabilities in the Bangsamoro."
+    },
+    {
+      "bill_number": 442,
+      "short_title": "Creates the Bangsamoro Environmental Adjudication Board",
+      "status": "First Reading",
+      "as_of": "2026-04-27",
+      "tags": [
+        "health",
+        "environment_agriculture_fisheries"
+      ],
+      "one_liner": "Creates the Bangsamoro Environmental Adjudication Board."
+    },
+    {
+      "bill_number": 441,
+      "short_title": "Halal Development Act",
+      "status": "First Reading",
+      "as_of": "2026-04-30",
+      "tags": [
+        "islamic_culture_heritage"
+      ],
+      "one_liner": "Institutionalizes the Bangsamoro Halal Festival."
+    },
+    {
+      "bill_number": 440,
+      "short_title": "Creates the Bangsamoro Maritime Safety Office",
+      "status": "First Reading",
+      "as_of": "2026-04-22",
+      "tags": [
+        "infrastructure_transport"
+      ],
+      "one_liner": "Creates the Bangsamoro Maritime Safety Office."
+    },
+    {
+      "bill_number": 439,
+      "short_title": "an Act Renaming the Tamparan District Hospital to Lanao del Sur Provincial Hospital Act",
+      "status": "First Reading",
+      "as_of": "2026-04-21",
+      "tags": [
+        "health",
+        "local_government"
+      ],
+      "one_liner": "Renames the Tamparan District Hospital to Lanao del Sur Provincial Hospital."
+    },
+    {
+      "bill_number": 438,
+      "short_title": "a Bill Establishing the Bangsamoro Commission on Early",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-05-21",
+      "tags": [
+        "women_children_social_welfare"
+      ],
+      "one_liner": "a Bill Establishing the Bangsamoro Commission on Early Childhood Care and Development."
+    },
+    {
+      "bill_number": 437,
+      "short_title": "Requires the Posting of Vacant Positions in the",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-04-30",
+      "tags": [
+        "governance_civil_service"
+      ],
+      "one_liner": "Requires the Posting of Vacant Positions in the Bangsamoro Job Portal."
+    },
+    {
+      "bill_number": 436,
+      "short_title": "Establishes the Bangsamoro Integrated Public Order and Safety",
+      "status": "First Reading",
+      "as_of": "2026-01-26",
+      "tags": [
+        "peace_security_justice"
+      ],
+      "one_liner": "Establishes the Bangsamoro Integrated Public Order and Safety, and Security Data and Information Management (bipossdim) Coordinating Body."
+    },
+    {
+      "bill_number": 435,
+      "short_title": "Institutionalizes Monthly Values Formation Sessions in Hr Development",
+      "status": "Second Reading (Second Stage)",
+      "as_of": "2026-01-27",
+      "tags": [
+        "governance_civil_service"
+      ],
+      "one_liner": "Institutionalizes Monthly Values Formation Sessions in Hr Development Plans of All Ministries."
+    },
+    {
+      "bill_number": 434,
+      "short_title": "Institutionalizes Flextime of Work Hours During Ramadhan",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-01-27",
+      "tags": [
+        "islamic_culture_heritage",
+        "governance_civil_service"
+      ],
+      "one_liner": "Institutionalizes Flextime of Work Hours During Ramadhan."
+    },
+    {
+      "bill_number": 433,
+      "short_title": "Regulates the Categorization of Local Conflicts and Prohibiting",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-05-21",
+      "tags": [
+        "peace_security_justice"
+      ],
+      "one_liner": "Regulates the Categorization of Local Conflicts and Prohibiting the Use of the Term 'RIDO' for Minor Disputes."
+    },
+    {
+      "bill_number": 432,
+      "short_title": "Supporting Community-based, Commodity Clustered, Value-chained Agricultural Crop Enterprise",
+      "status": "First Reading",
+      "as_of": "2026-01-26",
+      "tags": [
+        "environment_agriculture_fisheries",
+        "economy_trade_investment"
+      ],
+      "one_liner": "Supporting Community-based, Commodity Clustered, Value-chained Agricultural Crop Enterprise Development."
+    },
+    {
+      "bill_number": 431,
+      "short_title": "Expands the Scope of Authority and Services of",
+      "status": "Approved",
+      "as_of": "2026-07-16",
+      "tags": [
+        "local_government"
+      ],
+      "one_liner": "Expands the Scope of Authority and Services of Special Geographic Area Development Authority (sgada)."
+    },
+    {
+      "bill_number": 430,
+      "short_title": "Creates the Orphanage Village and Learning Center in",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-01-21",
+      "tags": [
+        "education",
+        "women_children_social_welfare",
+        "local_government"
+      ],
+      "one_liner": "Creates the Orphanage Village and Learning Center in Nabalawag, SGA."
+    },
+    {
+      "bill_number": 429,
+      "short_title": "Establishes a Comprehensive Housing and Human Settlement Framework",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-01-26",
+      "tags": [
+        "infrastructure_transport"
+      ],
+      "one_liner": "Establishes a Comprehensive Housing and Human Settlement Framework."
+    },
+    {
+      "bill_number": 428,
+      "short_title": "Institutionalizes a Graduate Scholarship Program for Teachers under",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-01-26",
+      "tags": [
+        "education"
+      ],
+      "one_liner": "Institutionalizes a Graduate Scholarship Program for Teachers under MBHTE."
+    },
+    {
+      "bill_number": 427,
+      "short_title": "Establishes the Amanah Chain (a-chain) System - Blockchain-based",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-01-19",
+      "tags": [
+        "economy_trade_investment"
+      ],
+      "one_liner": "Establishes the Amanah Chain (a-chain) System - Blockchain-based Public Financial Governance Platform."
+    },
+    {
+      "bill_number": 426,
+      "short_title": "Establishes a Bangsamoro Agriculture and Fishery School in",
+      "status": "First Reading",
+      "as_of": "2026-01-19",
+      "tags": [
+        "education",
+        "environment_agriculture_fisheries"
+      ],
+      "one_liner": "Establishes a Bangsamoro Agriculture and Fishery School in Parang, Maguindanao del Norte."
+    },
+    {
+      "bill_number": 425,
+      "short_title": "Establishes the Bangsamoro Licensure Examination Assistance Program (b-leap)",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-01-26",
+      "tags": [
+        "education"
+      ],
+      "one_liner": "Establishes the Bangsamoro Licensure Examination Assistance Program (b-leap)."
+    },
+    {
+      "bill_number": 424,
+      "short_title": "Institutionalizes Priority Use of Negotiated Procurement-community Participation for",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-07-16",
+      "tags": [
+        "economy_trade_investment"
+      ],
+      "one_liner": "Institutionalizes Priority Use of Negotiated Procurement-community Participation for Locally Produced Goods."
+    },
+    {
+      "bill_number": 423,
+      "short_title": "Strengthens Blood Donation Services in BARMM",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-07-15",
+      "tags": [
+        "health"
+      ],
+      "one_liner": "Strengthens Blood Donation Services in BARMM."
+    },
+    {
+      "bill_number": 422,
+      "short_title": "Upholding the Dignity and Welfare of Women Deprived",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-01-21",
+      "tags": [
+        "women_children_social_welfare"
+      ],
+      "one_liner": "Upholding the Dignity and Welfare of Women Deprived of Liberty."
+    },
+    {
+      "bill_number": 421,
+      "short_title": "Creates the Bangsamoro Bureau of Quarantine",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-12-17",
+      "tags": [
+        "health"
+      ],
+      "one_liner": "Creates the Bangsamoro Bureau of Quarantine."
+    },
+    {
+      "bill_number": 420,
+      "short_title": "Establishes the Salamat Hashim Boarding Madrasah (shbm)",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-12-17",
+      "tags": [
+        "education"
+      ],
+      "one_liner": "Establishes the Salamat Hashim Boarding Madrasah (shbm)."
+    },
+    {
+      "bill_number": 419,
+      "short_title": "Bangsamoro Electoral Code",
+      "status": "Approved",
+      "as_of": "2026-01-28",
+      "tags": [
+        "elections_districting"
+      ],
+      "one_liner": "Amends Baa No. 35 (bangsamoro Electoral Code)."
+    },
+    {
+      "bill_number": 418,
+      "short_title": "an Act Granting Zero Hospitalization Billing for Expired Patients in Government Hospital Act",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-12-11",
+      "tags": [
+        "health"
+      ],
+      "one_liner": "Grants Zero Hospitalization Billing for Expired Patients in Government Hospitals."
+    },
+    {
+      "bill_number": 417,
+      "short_title": "Creates the Bangsamoro Commission on Higher Education (bched)",
+      "status": "First Reading",
+      "as_of": "2025-12-09",
+      "tags": [
+        "education"
+      ],
+      "one_liner": "Creates the Bangsamoro Commission on Higher Education (bched)."
+    },
+    {
+      "bill_number": 416,
+      "short_title": "Creates Two Parliamentary Districts in the Special Geographic",
+      "status": "Archived",
+      "as_of": "2026-01-12",
+      "tags": [
+        "elections_districting",
+        "local_government"
+      ],
+      "one_liner": "Creates Two Parliamentary Districts in the Special Geographic Area (63 Barangays)."
+    },
+    {
+      "bill_number": 415,
+      "short_title": "Provides for the Apportionment of Parliamentary District Representative",
+      "status": "Approved",
+      "as_of": "2026-01-12",
+      "tags": [
+        "elections_districting"
+      ],
+      "one_liner": "Provides for the Apportionment of Parliamentary District Representative Seats."
+    },
+    {
+      "bill_number": 414,
+      "short_title": "Establishes a College Education Bridging Fund for Low-income",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-04-27",
+      "tags": [
+        "education"
+      ],
+      "one_liner": "Establishes a College Education Bridging Fund for Low-income Students."
+    },
+    {
+      "bill_number": 413,
+      "short_title": "Creates Bangsamoro Grand Athletic and Sports Complexes in",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-04-29",
+      "tags": [
+        "sports_youth"
+      ],
+      "one_liner": "Creates Bangsamoro Grand Athletic and Sports Complexes in Cotabato City and Lamitan City."
+    },
+    {
+      "bill_number": 412,
+      "short_title": "Provides for the Upgrade and Modernization of the",
+      "status": "First Reading",
+      "as_of": "2025-12-10",
+      "tags": [
+        "infrastructure_transport"
+      ],
+      "one_liner": "Provides for the Upgrade and Modernization of the Cotabato Airport."
+    },
+    {
+      "bill_number": 411,
+      "short_title": "Provides for the Creation of Parliamentary Districts in",
+      "status": "Archived",
+      "as_of": "2026-01-12",
+      "tags": [
+        "elections_districting"
+      ],
+      "one_liner": "Provides for the Creation of Parliamentary Districts in BARMM (redistricting Act of 2025)."
+    },
+    {
+      "bill_number": 410,
+      "short_title": "Appropriates Funds for the Operation of the Bangsamoro",
+      "status": "Approved",
+      "as_of": "2025-12-16",
+      "tags": [
+        "budget_appropriations"
+      ],
+      "one_liner": "Appropriates Funds for the Operation of the Bangsamoro Government for FY 2026 (GAA)."
+    },
+    {
+      "bill_number": 409,
+      "short_title": "Creates New Plantilla Positions and Org Structure of",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-12-15",
+      "tags": [
+        "economy_trade_investment",
+        "governance_civil_service"
+      ],
+      "one_liner": "Creates New Plantilla Positions and Org Structure of the Bangsamoro Board of Investments."
+    },
+    {
+      "bill_number": 408,
+      "short_title": "Provides for the Creation of Parliamentary Districts in",
+      "status": "Archived",
+      "as_of": "2026-01-12",
+      "tags": [
+        "elections_districting"
+      ],
+      "one_liner": "Provides for the Creation of Parliamentary Districts in BARMM."
+    },
+    {
+      "bill_number": 407,
+      "short_title": "Provides for the Creation of Parliamentary Districts in",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-10-30",
+      "tags": [
+        "elections_districting"
+      ],
+      "one_liner": "Provides for the Creation of Parliamentary Districts in BARMM."
+    },
+    {
+      "bill_number": 406,
+      "short_title": "Establishes a Regional Facility for Protection, Rehabilitation, and",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-04-29",
+      "tags": [
+        "women_children_social_welfare",
+        "peace_security_justice"
+      ],
+      "one_liner": "Establishes a Regional Facility for Protection, Rehabilitation, and Reintegration of Children Involved in Armed Conflict."
+    },
+    {
+      "bill_number": 405,
+      "short_title": "Establishes a Gratuity Fund for Separated BTA Employees",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-07-16",
+      "tags": [
+        "budget_appropriations",
+        "governance_civil_service"
+      ],
+      "one_liner": "Establishes a Gratuity Fund for Separated BTA Employees After the Transition."
+    },
+    {
+      "bill_number": 404,
+      "short_title": "Bangsamoro Indigenous Peoples Rights Act",
+      "status": "First Reading",
+      "as_of": "2025-11-13",
+      "tags": [
+        "peace_security_justice",
+        "indigenous_settlers"
+      ],
+      "one_liner": "Declares Sitio Mekir, South Upi as a Peace Sanctuary and Safe Evacuation Center for Non-moro Indigenous Peoples."
+    },
+    {
+      "bill_number": 403,
+      "short_title": "Provides for the Creation of the Parliamentary Districts",
+      "status": "Archived",
+      "as_of": "2026-01-12",
+      "tags": [
+        "elections_districting"
+      ],
+      "one_liner": "Provides for the Creation of the Parliamentary Districts in BARMM."
+    },
+    {
+      "bill_number": 402,
+      "short_title": "Establishes Drug Dependent Treatment and Rehabilitation Centers in",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-12-15",
+      "tags": [
+        "health"
+      ],
+      "one_liner": "Establishes Drug Dependent Treatment and Rehabilitation Centers in Every Province."
+    },
+    {
+      "bill_number": 401,
+      "short_title": "Provides for the Protection of Consumer Rights and",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-05-19",
+      "tags": [
+        "women_children_social_welfare",
+        "economy_trade_investment"
+      ],
+      "one_liner": "Provides for the Protection of Consumer Rights and Welfare; Creating the Bangsamoro Consumer Protection Council."
+    },
+    {
+      "bill_number": 400,
+      "short_title": "Institutionalizes the Bangsamoro Trust Fund for Development Continuity",
+      "status": "First Reading",
+      "as_of": "2025-11-13",
+      "tags": [
+        "budget_appropriations"
+      ],
+      "one_liner": "Institutionalizes the Bangsamoro Trust Fund for Development Continuity (btfdc)."
+    },
+    {
+      "bill_number": 399,
+      "short_title": "Institutionalizes Cso Engagement in Governance; Establishing the Bangsamoro",
+      "status": "First Reading",
+      "as_of": "2025-11-13",
+      "tags": [
+        "governance_civil_service"
+      ],
+      "one_liner": "Institutionalizes Cso Engagement in Governance; Establishing the Bangsamoro Cso Coordinating Office."
+    },
+    {
+      "bill_number": 398,
+      "short_title": "Institutionalizes the Grant of Ramadhan Bonus to All",
+      "status": "First Reading",
+      "as_of": "2025-11-13",
+      "tags": [
+        "islamic_culture_heritage",
+        "governance_civil_service"
+      ],
+      "one_liner": "Institutionalizes the Grant of Ramadhan Bonus to All Bangsamoro Government Employees."
+    },
+    {
+      "bill_number": 397,
+      "short_title": "an Act Establishing the Bangsamoro Children'S Hospital Act",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-12-11",
+      "tags": [
+        "health",
+        "women_children_social_welfare"
+      ],
+      "one_liner": "Establishes the Bangsamoro CHILDREN'S Hospital in Cotabato City."
+    },
+    {
+      "bill_number": 396,
+      "short_title": "Removes the 'NONE of the ABOVE' (nota) Option",
+      "status": "Approved",
+      "as_of": "2026-01-28",
+      "tags": [
+        "elections_districting"
+      ],
+      "one_liner": "Removes the 'NONE of the ABOVE' (nota) Option from the Official Ballot."
+    },
+    {
+      "bill_number": 395,
+      "short_title": "Bangsamoro Electoral Code",
+      "status": "First Reading",
+      "as_of": "2025-11-10",
+      "tags": [
+        "elections_districting"
+      ],
+      "one_liner": "Amends Article Vii, Section 14 of the Bangsamoro Electoral Code."
+    },
+    {
+      "bill_number": 394,
+      "short_title": "Institutionalizes Development Assistance to Bangsamoro People and Communities",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-01-20",
+      "tags": [
+        "other"
+      ],
+      "one_liner": "Institutionalizes Development Assistance to Bangsamoro People and Communities Outside BARMM."
+    },
+    {
+      "bill_number": 393,
+      "short_title": "an Act Converting the Matanog Wamy Clinic Into a Level I Hospital Act",
+      "status": "First Reading",
+      "as_of": "2025-11-10",
+      "tags": [
+        "health"
+      ],
+      "one_liner": "Converts the Matanog Wamy Clinic Into a Level I Hospital (matanog District Hospital)."
+    },
+    {
+      "bill_number": 392,
+      "short_title": "Provides One-time Death Benefits to Families of Biaf",
+      "status": "First Reading",
+      "as_of": "2025-11-10",
+      "tags": [
+        "peace_security_justice",
+        "economy_trade_investment"
+      ],
+      "one_liner": "Provides One-time Death Benefits to Families of Biaf Shaheed; Biaf Shaheed Benefit Investment Fund."
+    },
+    {
+      "bill_number": 391,
+      "short_title": "an Act Establishing Datu Saudi Ampatuan Municipal Hospital Act",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-12-11",
+      "tags": [
+        "health"
+      ],
+      "one_liner": "Establishes Datu Saudi Ampatuan Municipal Hospital (level I, 25-BED)."
+    },
+    {
+      "bill_number": 390,
+      "short_title": "Mandates Advance Release of Salaries When Payday Falls",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-05-20",
+      "tags": [
+        "governance_civil_service"
+      ],
+      "one_liner": "Mandates Advance Release of Salaries When Payday Falls on a Weekend or Holiday."
+    },
+    {
+      "bill_number": 389,
+      "short_title": "Prohibiting Single-use Plastics in the Bangsamoro Autonomous Region",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-04-28",
+      "tags": [
+        "environment_agriculture_fisheries"
+      ],
+      "one_liner": "Prohibiting Single-use Plastics in the Bangsamoro Autonomous Region."
+    },
+    {
+      "bill_number": 388,
+      "short_title": "Establishes the Basilan Science High School in Lamitan",
+      "status": "First Reading",
+      "as_of": "2025-10-27",
+      "tags": [
+        "education"
+      ],
+      "one_liner": "Establishes the Basilan Science High School in Lamitan City."
+    },
+    {
+      "bill_number": 387,
+      "short_title": "Grants Fiscal Autonomy to Osc, Bicto, Bio, and",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-11-10",
+      "tags": [
+        "governance_civil_service"
+      ],
+      "one_liner": "Grants Fiscal Autonomy to Osc, Bicto, Bio, and Bangsamoro DARUL-IFTA'."
+    },
+    {
+      "bill_number": 386,
+      "short_title": "Establishes Comprehensive Special Education (sped) Service and Support",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-04-27",
+      "tags": [
+        "education"
+      ],
+      "one_liner": "Establishes Comprehensive Special Education (sped) Service and Support Centers."
+    },
+    {
+      "bill_number": 385,
+      "short_title": "Establishes a Comprehensive Regional Framework for Water Sustainability",
+      "status": "First Reading",
+      "as_of": "2025-08-19",
+      "tags": [
+        "environment_agriculture_fisheries"
+      ],
+      "one_liner": "Establishes a Comprehensive Regional Framework for Water Sustainability."
+    },
+    {
+      "bill_number": 384,
+      "short_title": "Establishes a Comprehensive Regional Peace and Public Safety",
+      "status": "First Reading",
+      "as_of": "2025-08-19",
+      "tags": [
+        "peace_security_justice"
+      ],
+      "one_liner": "Establishes a Comprehensive Regional Peace and Public Safety Framework."
+    },
+    {
+      "bill_number": 383,
+      "short_title": "Establishes the Bangsamoro Social Equity Investment Fund",
+      "status": "First Reading",
+      "as_of": "2025-08-19",
+      "tags": [
+        "economy_trade_investment"
+      ],
+      "one_liner": "Establishes the Bangsamoro Social Equity Investment Fund."
+    },
+    {
+      "bill_number": 382,
+      "short_title": "an Act Establishing the Bangsamoro Women'S Welfare Center in Every Province and Major Hospital Act",
+      "status": "First Reading",
+      "as_of": "2025-08-20",
+      "tags": [
+        "health",
+        "women_children_social_welfare"
+      ],
+      "one_liner": "Establishes the Bangsamoro WOMEN'S Welfare Center in Every Province and Major Hospital."
+    },
+    {
+      "bill_number": 381,
+      "short_title": "Institutionalizes the Empowerment and Welfare of Ulama, Ustadhs",
+      "status": "First Reading",
+      "as_of": "2025-08-20",
+      "tags": [
+        "women_children_social_welfare",
+        "islamic_culture_heritage",
+        "indigenous_settlers"
+      ],
+      "one_liner": "Institutionalizes the Empowerment and Welfare of Ulama, Ustadhs, Ustadhas, Indigenous Spiritual Leaders, and Faith-based Counselors."
+    },
+    {
+      "bill_number": 380,
+      "short_title": "Renames South Upi to 'TEDURAY MUNICIPALITY'",
+      "status": "First Reading",
+      "as_of": "2025-08-20",
+      "tags": [
+        "local_government",
+        "indigenous_settlers"
+      ],
+      "one_liner": "Renames South Upi to 'TEDURAY MUNICIPALITY'."
+    },
+    {
+      "bill_number": 379,
+      "short_title": "Grants One-time Death Benefit and Disability Assistance to",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-12-11",
+      "tags": [
+        "local_government"
+      ],
+      "one_liner": "Grants One-time Death Benefit and Disability Assistance to Families of Barangay Officials and Sk Chairpersons."
+    },
+    {
+      "bill_number": 378,
+      "short_title": "Creates Institutional Mechanisms and Incentives for Solid Waste",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-11-19",
+      "tags": [
+        "environment_agriculture_fisheries"
+      ],
+      "one_liner": "Creates Institutional Mechanisms and Incentives for Solid Waste Management / Sanitary Landfills."
+    },
+    {
+      "bill_number": 377,
+      "short_title": "Establishes the Bangsamoro Sports Institute (bsi)",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-11-10",
+      "tags": [
+        "sports_youth"
+      ],
+      "one_liner": "Establishes the Bangsamoro Sports Institute (bsi)."
+    },
+    {
+      "bill_number": 376,
+      "short_title": "Establishes the Bangsamoro Enterprise Support Corporation (besc)",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-11-10",
+      "tags": [
+        "economy_trade_investment"
+      ],
+      "one_liner": "Establishes the Bangsamoro Enterprise Support Corporation (besc)."
+    },
+    {
+      "bill_number": 375,
+      "short_title": "Establishes a Community-based Health and Wellness Program for",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-12-10",
+      "tags": [
+        "health",
+        "women_children_social_welfare"
+      ],
+      "one_liner": "Establishes a Community-based Health and Wellness Program for Senior Citizens."
+    },
+    {
+      "bill_number": 374,
+      "short_title": "Establishes a Community-based Physical and Rehabilitation Medicine (cbprm)",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-05-20",
+      "tags": [
+        "health"
+      ],
+      "one_liner": "Establishes a Community-based Physical and Rehabilitation Medicine (cbprm) Program."
+    },
+    {
+      "bill_number": 373,
+      "short_title": "an Act Institutionalizing the Panglima Sugala Community Hospital Act",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-12-10",
+      "tags": [
+        "health"
+      ],
+      "one_liner": "Institutionalizes the Panglima Sugala Community Hospital, Tawi-tawi."
+    },
+    {
+      "bill_number": 372,
+      "short_title": "an Act Renaming Buluan District Hospital to Maguindanao del Sur Provincial Hospital Act",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-12-11",
+      "tags": [
+        "health",
+        "local_government"
+      ],
+      "one_liner": "Renames Buluan District Hospital to Maguindanao del Sur Provincial Hospital."
+    },
+    {
+      "bill_number": 371,
+      "short_title": "Mandates All LGUs to Establish Public Cemeteries",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-07-23",
+      "tags": [
+        "local_government"
+      ],
+      "one_liner": "Mandates All LGUs to Establish Public Cemeteries."
+    },
+    {
+      "bill_number": 370,
+      "short_title": "Creates Bangsamoro Identification System",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-05-20",
+      "tags": [
+        "governance_civil_service"
+      ],
+      "one_liner": "Creates Bangsamoro Identification System."
+    },
+    {
+      "bill_number": 369,
+      "short_title": "an Act Upgrading Wao District Hospital Act",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-11-19",
+      "tags": [
+        "health"
+      ],
+      "one_liner": "Upgrades Wao District Hospital from Level 1 to Level 2 (50 to 100 Beds)."
+    },
+    {
+      "bill_number": 368,
+      "short_title": "Grants Special Hardship Allowance for Teachers in Basilan",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-01-27",
+      "tags": [
+        "education"
+      ],
+      "one_liner": "Grants Special Hardship Allowance for Teachers in Basilan, Sulu, and Tawi-tawi."
+    },
+    {
+      "bill_number": 367,
+      "short_title": "Creates Special Education Centers for Children and Youth",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-04-30",
+      "tags": [
+        "education",
+        "women_children_social_welfare",
+        "sports_youth"
+      ],
+      "one_liner": "Creates Special Education Centers for Children and Youth in Every Province."
+    },
+    {
+      "bill_number": 366,
+      "short_title": "Provides Hmo Benefits to All Bangsamoro Government Employees",
+      "status": "First Reading",
+      "as_of": "2025-06-26",
+      "tags": [
+        "health",
+        "governance_civil_service"
+      ],
+      "one_liner": "Provides Hmo Benefits to All Bangsamoro Government Employees."
+    },
+    {
+      "bill_number": 365,
+      "short_title": "an Act Upgrading Datu Halun Sakilan Memorial Hospital Act",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-12-10",
+      "tags": [
+        "health",
+        "islamic_culture_heritage"
+      ],
+      "one_liner": "Upgrades Datu Halun Sakilan Memorial Hospital, Tawi-tawi (level 1/50-BED to Level 2/200-BED)."
+    },
+    {
+      "bill_number": 364,
+      "short_title": "Mandates Programmatic Inclusion of Right-of-way Indemnification in All",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-05-20",
+      "tags": [
+        "infrastructure_transport"
+      ],
+      "one_liner": "Mandates Programmatic Inclusion of Right-of-way Indemnification in All Infrastructure Projects."
+    },
+    {
+      "bill_number": 363,
+      "short_title": "Establishes the Bangsamoro SHARI'AH Judicial and Legal Academy",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-01-20",
+      "tags": [
+        "education",
+        "islamic_culture_heritage"
+      ],
+      "one_liner": "Establishes the Bangsamoro SHARI'AH Judicial and Legal Academy."
+    },
+    {
+      "bill_number": 362,
+      "short_title": "Establishes the Integrated Bangsamoro Greening Program",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-04-30",
+      "tags": [
+        "environment_agriculture_fisheries"
+      ],
+      "one_liner": "Establishes the Integrated Bangsamoro Greening Program."
+    },
+    {
+      "bill_number": 361,
+      "short_title": "Establishes a Special Intervention Fund for Urgent, Critical",
+      "status": "First Reading",
+      "as_of": "2025-05-29",
+      "tags": [
+        "infrastructure_transport"
+      ],
+      "one_liner": "Establishes a Special Intervention Fund for Urgent, Critical, and Endangered Infrastructures."
+    },
+    {
+      "bill_number": 360,
+      "short_title": "Integrating Bangsamoro History Into the Secondary Education Curriculum",
+      "status": "First Reading",
+      "as_of": "2025-05-29",
+      "tags": [
+        "education",
+        "islamic_culture_heritage"
+      ],
+      "one_liner": "Integrating Bangsamoro History Into the Secondary Education Curriculum."
+    },
+    {
+      "bill_number": 359,
+      "short_title": "Establishes the Bangsamoro State University",
+      "status": "First Reading",
+      "as_of": "2025-05-29",
+      "tags": [
+        "education"
+      ],
+      "one_liner": "Establishes the Bangsamoro State University."
+    },
+    {
+      "bill_number": 358,
+      "short_title": "Establishes the Shariff Kabunsuan Shrine in Kalanganan 2",
+      "status": "First Reading",
+      "as_of": "2025-05-20",
+      "tags": [
+        "islamic_culture_heritage"
+      ],
+      "one_liner": "Establishes the Shariff Kabunsuan Shrine in Kalanganan 2, Cotabato City."
+    },
+    {
+      "bill_number": 357,
+      "short_title": "Regulates Motorcycles-for-hire Operations and Providing Statutory Benefits to",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-06-17",
+      "tags": [
+        "infrastructure_transport"
+      ],
+      "one_liner": "Regulates Motorcycles-for-hire Operations and Providing Statutory Benefits to Riders."
+    },
+    {
+      "bill_number": 356,
+      "short_title": "Creates the Tawi-tawi Maritime School",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-05-27",
+      "tags": [
+        "education",
+        "infrastructure_transport"
+      ],
+      "one_liner": "Creates the Tawi-tawi Maritime School."
+    },
+    {
+      "bill_number": 355,
+      "short_title": "Establishes the Salamat Excellence Award for Leadership (SEAL)",
+      "status": "Approved",
+      "as_of": "2025-08-20",
+      "tags": [
+        "other"
+      ],
+      "one_liner": "Establishes the Salamat Excellence Award for Leadership (SEAL) Program."
+    },
+    {
+      "bill_number": 354,
+      "short_title": "Establishes a Bangsamoro Center for Children Diagnosed with",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-05-28",
+      "tags": [
+        "health",
+        "women_children_social_welfare"
+      ],
+      "one_liner": "Establishes a Bangsamoro Center for Children Diagnosed with Autism Spectrum Disorder (asd)."
+    },
+    {
+      "bill_number": 353,
+      "short_title": "Bangsamoro Transitional Justice & Reconciliation Act",
+      "status": "Approved",
+      "as_of": "2026-01-28",
+      "tags": [
+        "peace_security_justice"
+      ],
+      "one_liner": "Establishes a Bangsamoro Transitional Justice and Reconciliation Program and Commission."
+    },
+    {
+      "bill_number": 352,
+      "short_title": "for Sustainable Management and Conservation of Lake Lanao;",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-04-15",
+      "tags": [
+        "environment_agriculture_fisheries"
+      ],
+      "one_liner": "for Sustainable Management and Conservation of Lake Lanao; Creating the Lake Lanao Management Authority."
+    },
+    {
+      "bill_number": 351,
+      "short_title": "Reconstituting the Parliamentary Districts, Amending Baa No. 58",
+      "status": "Approved",
+      "as_of": "2025-08-19",
+      "tags": [
+        "elections_districting"
+      ],
+      "one_liner": "Reconstituting the Parliamentary Districts, Amending Baa No. 58."
+    },
+    {
+      "bill_number": 350,
+      "short_title": "an Act Upgrading Dr. Serapio B. Montaner Jr. Al Haj Memorial Hospital Act",
+      "status": "Approved",
+      "as_of": "2025-08-20",
+      "tags": [
+        "health",
+        "islamic_culture_heritage"
+      ],
+      "one_liner": "Upgrades Dr. Serapio B. Montaner Jr. Al Haj Memorial Hospital (25 to 100 Beds)."
+    },
+    {
+      "bill_number": 349,
+      "short_title": "Supplemental Budget Act",
+      "status": "Approved",
+      "as_of": "2025-05-29",
+      "tags": [
+        "health",
+        "budget_appropriations"
+      ],
+      "one_liner": "Appropriates the 2025 Supplemental Funds for the Bangsamoro Government."
+    },
+    {
+      "bill_number": 348,
+      "short_title": "Ensuring Safe and Clean Drinking Water and Sanitation",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-12-15",
+      "tags": [
+        "education"
+      ],
+      "one_liner": "Ensuring Safe and Clean Drinking Water and Sanitation Facilities in Schools."
+    },
+    {
+      "bill_number": 347,
+      "short_title": "Reapportioning the Seven Vacant Parliamentary Seats Following SULU'S",
+      "status": "Approved",
+      "as_of": "2025-08-19",
+      "tags": [
+        "elections_districting"
+      ],
+      "one_liner": "Reapportioning the Seven Vacant Parliamentary Seats Following SULU'S Exclusion from BARMM."
+    },
+    {
+      "bill_number": 346,
+      "short_title": "Establishes Trade and Tourism Centers in Cotabato, Lamitan",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-11-19",
+      "tags": [
+        "economy_trade_investment"
+      ],
+      "one_liner": "Establishes Trade and Tourism Centers in Cotabato, Lamitan, Marawi, Jolo, and Bongao."
+    },
+    {
+      "bill_number": 345,
+      "short_title": "Grants Civil Service Eligibility to Long-serving Job Order/contractual",
+      "status": "First Reading",
+      "as_of": "2025-02-10",
+      "tags": [
+        "governance_civil_service"
+      ],
+      "one_liner": "Grants Civil Service Eligibility to Long-serving Job Order/contractual Bangsamoro Government Employees."
+    },
+    {
+      "bill_number": 344,
+      "short_title": "Strengthens Promotion and Delivery of Mental Health Services",
+      "status": "First Reading",
+      "as_of": "2024-12-04",
+      "tags": [
+        "health"
+      ],
+      "one_liner": "Strengthens Promotion and Delivery of Mental Health Services."
+    },
+    {
+      "bill_number": 343,
+      "short_title": "Promoting Infrastructure and Connectivity Development in BARMM",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2026-06-17",
+      "tags": [
+        "infrastructure_transport"
+      ],
+      "one_liner": "Promoting Infrastructure and Connectivity Development in BARMM."
+    },
+    {
+      "bill_number": 342,
+      "short_title": "Institutionalizes the Bangsamoro Economic Zone Authority as an",
+      "status": "First Reading",
+      "as_of": "2025-01-23",
+      "tags": [
+        "economy_trade_investment"
+      ],
+      "one_liner": "Institutionalizes the Bangsamoro Economic Zone Authority as an Investment Promotion Agency."
+    },
+    {
+      "bill_number": 341,
+      "short_title": "Appropriates Funds for the Operation of the Bangsamoro",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2024-10-24",
+      "tags": [
+        "budget_appropriations"
+      ],
+      "one_liner": "Appropriates Funds for the Operation of the Bangsamoro Government FY 2025 (GAA)."
+    },
+    {
+      "bill_number": 340,
+      "short_title": "Mandates Installation of Handheld Bidets in Restrooms of",
+      "status": "First Reading",
+      "as_of": "2024-10-17",
+      "tags": [
+        "other"
+      ],
+      "one_liner": "Mandates Installation of Handheld Bidets in Restrooms of Commercial and Public Establishments."
+    },
+    {
+      "bill_number": 339,
+      "short_title": "Establishes Micro-grid Solar Systems in BARMM",
+      "status": "First Reading",
+      "as_of": "2024-10-17",
+      "tags": [
+        "environment_agriculture_fisheries"
+      ],
+      "one_liner": "Establishes Micro-grid Solar Systems in BARMM."
+    },
+    {
+      "bill_number": 338,
+      "short_title": "Establishes a Comprehensive Support Program for Children with",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-02-20",
+      "tags": [
+        "health",
+        "women_children_social_welfare"
+      ],
+      "one_liner": "Establishes a Comprehensive Support Program for Children with Neurodevelopmental Disorder and Special Needs."
+    },
+    {
+      "bill_number": 337,
+      "short_title": "Establishes Waqf Registration and Administration; Creating the Bangsamoro",
+      "status": "First Reading",
+      "as_of": "2024-10-14",
+      "tags": [
+        "islamic_culture_heritage"
+      ],
+      "one_liner": "Establishes Waqf Registration and Administration; Creating the Bangsamoro Waqf Commission."
+    },
+    {
+      "bill_number": 336,
+      "short_title": "Bangsamoro Gender and Development Code",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2024-10-14",
+      "tags": [
+        "women_children_social_welfare"
+      ],
+      "one_liner": "Bangsamoro Gender and Development Code."
+    },
+    {
+      "bill_number": 335,
+      "short_title": "Declares the House of Sheikh Salamat Hashim in",
+      "status": "First Reading",
+      "as_of": "2024-09-26",
+      "tags": [
+        "islamic_culture_heritage"
+      ],
+      "one_liner": "Declares the House of Sheikh Salamat Hashim in Camp Abubakar and Buliok Islamic Center as Historical Places."
+    },
+    {
+      "bill_number": 334,
+      "short_title": "Declares the First Seven Days of Shawwal as",
+      "status": "First Reading",
+      "as_of": "2024-09-18",
+      "tags": [
+        "health",
+        "islamic_culture_heritage"
+      ],
+      "one_liner": "Declares the First Seven Days of Shawwal as 'MENTAL Wellness and Family WEEK'."
+    },
+    {
+      "bill_number": 333,
+      "short_title": "Amends Baa No. 55 (municipality of Sheik Abas",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2024-09-19",
+      "tags": [
+        "local_government"
+      ],
+      "one_liner": "Amends Baa No. 55 (municipality of Sheik Abas Hamza, Maguindanao del Norte)."
+    },
+    {
+      "bill_number": 332,
+      "short_title": "Amends Baa No. 54 (municipality of Datu Sinsuat",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2024-09-19",
+      "tags": [
+        "local_government"
+      ],
+      "one_liner": "Amends Baa No. 54 (municipality of Datu Sinsuat Balabaran, Maguindanao del Norte)."
+    },
+    {
+      "bill_number": 331,
+      "short_title": "Amends Baa No. 53 (municipality of Nuling, Maguindanao",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2024-09-19",
+      "tags": [
+        "local_government"
+      ],
+      "one_liner": "Amends Baa No. 53 (municipality of Nuling, Maguindanao del Norte)."
+    },
+    {
+      "bill_number": 330,
+      "short_title": "Supplemental Budget Act",
+      "status": "Approved",
+      "as_of": "2024-09-24",
+      "tags": [
+        "health",
+        "budget_appropriations"
+      ],
+      "one_liner": "Appropriates Supplemental Funds for the Operation of the Bangsamoro Government."
+    },
+    {
+      "bill_number": 329,
+      "short_title": "Authorizes and Promoting Public-private Partnerships (ppps) in BARMM",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-07-24",
+      "tags": [
+        "economy_trade_investment"
+      ],
+      "one_liner": "Authorizes and Promoting Public-private Partnerships (ppps) in BARMM."
+    },
+    {
+      "bill_number": 328,
+      "short_title": "Renames Datu Blah T. Sinsuat Municipality to West",
+      "status": "Approved",
+      "as_of": "2026-05-19",
+      "tags": [
+        "local_government"
+      ],
+      "one_liner": "Renames Datu Blah T. Sinsuat Municipality to West Upi, Maguindanao del Norte."
+    },
+    {
+      "bill_number": 327,
+      "short_title": "Declares the Burial Site of Ghazali Jaafar as",
+      "status": "First Reading",
+      "as_of": "2024-08-29",
+      "tags": [
+        "islamic_culture_heritage"
+      ],
+      "one_liner": "Declares the Burial Site of Ghazali Jaafar as 'GAZALI Jaafar Memorial SITE'."
+    },
+    {
+      "bill_number": 326,
+      "short_title": "Provides Assistance, Benefits and Privileges to Families of",
+      "status": "First Reading",
+      "as_of": "2024-08-29",
+      "tags": [
+        "peace_security_justice"
+      ],
+      "one_liner": "Provides Assistance, Benefits and Privileges to Families of Non-decommissioned Martyred Mujahideen and Mujahidat."
+    },
+    {
+      "bill_number": 325,
+      "short_title": "Bangsamoro Budget System Act",
+      "status": "Approved",
+      "as_of": "2025-12-09",
+      "tags": [
+        "budget_appropriations"
+      ],
+      "one_liner": "Prescribes a Budget System for the Bangsamoro Government."
+    },
+    {
+      "bill_number": 324,
+      "short_title": "Establishes Eco Tourism Villages in All LGUs of",
+      "status": "First Reading",
+      "as_of": "2024-08-27",
+      "tags": [
+        "environment_agriculture_fisheries",
+        "local_government"
+      ],
+      "one_liner": "Establishes Eco Tourism Villages in All LGUs of BARMM."
+    },
+    {
+      "bill_number": 323,
+      "short_title": "Establishes a Points-based Performance Reward Framework for Bangsamoro",
+      "status": "First Reading",
+      "as_of": "2024-08-19",
+      "tags": [
+        "governance_civil_service"
+      ],
+      "one_liner": "Establishes a Points-based Performance Reward Framework for Bangsamoro Government Employees."
+    },
+    {
+      "bill_number": 322,
+      "short_title": "Establishes a Comprehensive Bike Route Network Linking LGUs",
+      "status": "First Reading",
+      "as_of": "2024-07-24",
+      "tags": [
+        "infrastructure_transport",
+        "local_government"
+      ],
+      "one_liner": "Establishes a Comprehensive Bike Route Network Linking LGUs."
+    },
+    {
+      "bill_number": 321,
+      "short_title": "Establishes the Bangsamoro Legislative Academy",
+      "status": "First Reading",
+      "as_of": "2024-07-23",
+      "tags": [
+        "education",
+        "governance_civil_service"
+      ],
+      "one_liner": "Establishes the Bangsamoro Legislative Academy."
+    },
+    {
+      "bill_number": 320,
+      "short_title": "Institutionalizes Public Petitions in the Bangsamoro Parliament",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2024-08-20",
+      "tags": [
+        "governance_civil_service"
+      ],
+      "one_liner": "Institutionalizes Public Petitions in the Bangsamoro Parliament."
+    },
+    {
+      "bill_number": 319,
+      "short_title": "Establishes a Legal Framework for Registration, Regulation, and",
+      "status": "First Reading",
+      "as_of": "2024-07-23",
+      "tags": [
+        "governance_civil_service"
+      ],
+      "one_liner": "Establishes a Legal Framework for Registration, Regulation, and Support of Csos."
+    },
+    {
+      "bill_number": 318,
+      "short_title": "an Act Establishing Pagalungan Municipal Hospital Act",
+      "status": "Filed",
+      "as_of": "2024-07-05",
+      "tags": [
+        "health"
+      ],
+      "one_liner": "Establishes Pagalungan Municipal Hospital (level I, 50-BED)."
+    },
+    {
+      "bill_number": 317,
+      "short_title": "Establishes a District Office of the Ministry of",
+      "status": "Filed",
+      "as_of": "2024-07-05",
+      "tags": [
+        "infrastructure_transport",
+        "local_government"
+      ],
+      "one_liner": "Establishes a District Office of the Ministry of Public Works in the SGA."
+    },
+    {
+      "bill_number": 316,
+      "short_title": "Banning the Sale and Use of Firecrackers and",
+      "status": "First Reading",
+      "as_of": "2024-07-15",
+      "tags": [
+        "peace_security_justice"
+      ],
+      "one_liner": "Banning the Sale and Use of Firecrackers and Pyrotechnic Devices."
+    },
+    {
+      "bill_number": 315,
+      "short_title": "Institutionalizes Qr Codes for All Bangsamoro Government Documents",
+      "status": "First Reading",
+      "as_of": "2024-07-15",
+      "tags": [
+        "governance_civil_service"
+      ],
+      "one_liner": "Institutionalizes Qr Codes for All Bangsamoro Government Documents."
+    },
+    {
+      "bill_number": 314,
+      "short_title": "Grants Benefits and Incentives to Accredited Barangay Health",
+      "status": "First Reading",
+      "as_of": "2024-07-15",
+      "tags": [
+        "health",
+        "local_government"
+      ],
+      "one_liner": "Grants Benefits and Incentives to Accredited Barangay Health Workers."
+    },
+    {
+      "bill_number": 313,
+      "short_title": "Establishes a Bangsamoro Sports Training Center (bstc)",
+      "status": "Filed",
+      "as_of": "2024-06-10",
+      "tags": [
+        "sports_youth"
+      ],
+      "one_liner": "Establishes a Bangsamoro Sports Training Center (bstc)."
+    },
+    {
+      "bill_number": 312,
+      "short_title": "an Act Establishing a Fifty-bed Bangsamoro People General Hospital Act",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2025-02-19",
+      "tags": [
+        "health",
+        "local_government"
+      ],
+      "one_liner": "Establishes a Fifty-bed Bangsamoro People General Hospital in the SGA."
+    },
+    {
+      "bill_number": 311,
+      "short_title": "Establishes the Bangsamoro Blood Services Center (bbsc)",
+      "status": "Filed",
+      "as_of": "2024-06-10",
+      "tags": [
+        "health"
+      ],
+      "one_liner": "Establishes the Bangsamoro Blood Services Center (bbsc)."
+    },
+    {
+      "bill_number": 310,
+      "short_title": "on Conservation and Management of Liguasan Marsh; Creating",
+      "status": "First Reading",
+      "as_of": "2024-06-24",
+      "tags": [
+        "environment_agriculture_fisheries"
+      ],
+      "one_liner": "on Conservation and Management of Liguasan Marsh; Creating the Liguasan Marsh Management Commission."
+    },
+    {
+      "bill_number": 309,
+      "short_title": "Recognizes and Protecting the Rights of Settlers; Renaming",
+      "status": "First Reading",
+      "as_of": "2024-06-24",
+      "tags": [
+        "local_government",
+        "indigenous_settlers"
+      ],
+      "one_liner": "Recognizes and Protecting the Rights of Settlers; Renaming Osc as Office of SETTLERS' Affairs."
+    },
+    {
+      "bill_number": 308,
+      "short_title": "Provides Assistance for Correction of Civil Register Entries",
+      "status": "First Reading",
+      "as_of": "2024-06-24",
+      "tags": [
+        "peace_security_justice"
+      ],
+      "one_liner": "Provides Assistance for Correction of Civil Register Entries of Mujahideen."
+    },
+    {
+      "bill_number": 307,
+      "short_title": "Provides a Mental Health Support Package for Public",
+      "status": "Filed",
+      "as_of": "2024-05-17",
+      "tags": [
+        "education",
+        "health"
+      ],
+      "one_liner": "Provides a Mental Health Support Package for Public School Teachers and Educators."
+    },
+    {
+      "bill_number": 306,
+      "short_title": "Provides Five-day Special Emergency Leave for Workers Affected",
+      "status": "First Reading",
+      "as_of": "2024-06-19",
+      "tags": [
+        "governance_civil_service",
+        "disaster_resilience"
+      ],
+      "one_liner": "Provides Five-day Special Emergency Leave for Workers Affected by Natural Calamities."
+    },
+    {
+      "bill_number": 305,
+      "short_title": "Establishes the Waste WORKERS' Health and Welfare Program",
+      "status": "First Reading",
+      "as_of": "2024-06-18",
+      "tags": [
+        "health",
+        "women_children_social_welfare",
+        "environment_agriculture_fisheries"
+      ],
+      "one_liner": "Establishes the Waste WORKERS' Health and Welfare Program."
+    },
+    {
+      "bill_number": 304,
+      "short_title": "Establishes the Legal and SHARI'AH Scholarship and Return",
+      "status": "First Reading",
+      "as_of": "2024-06-18",
+      "tags": [
+        "education",
+        "islamic_culture_heritage"
+      ],
+      "one_liner": "Establishes the Legal and SHARI'AH Scholarship and Return Service Program."
+    },
+    {
+      "bill_number": 303,
+      "short_title": "Declares a Two-day Holiday During EID'L Fitr",
+      "status": "First Reading",
+      "as_of": "2024-06-18",
+      "tags": [
+        "islamic_culture_heritage"
+      ],
+      "one_liner": "Declares a Two-day Holiday During EID'L Fitr."
+    },
+    {
+      "bill_number": 302,
+      "short_title": "an Act Requiring Accreditation of Hospitals as Ibadah-friendly Hospital Act",
+      "status": "Second Reading (Committee Stage)",
+      "as_of": "2024-10-17",
+      "tags": [
+        "health"
+      ],
+      "one_liner": "Requires Accreditation of Hospitals as Ibadah-friendly Hospitals."
+    },
+    {
+      "bill_number": 301,
+      "short_title": "Provides a Haven and Rehabilitation Center for Women",
+      "status": "First Reading",
+      "as_of": "2024-06-18",
+      "tags": [
+        "women_children_social_welfare"
+      ],
+      "one_liner": "Provides a Haven and Rehabilitation Center for Women Victims of Gender-based Violence."
+    },
+    {
+      "bill_number": 300,
+      "short_title": "Provides Wellness Through Weekly Physical Conditioning for Government",
+      "status": "First Reading",
+      "as_of": "2024-05-22",
+      "tags": [
+        "health",
+        "governance_civil_service"
+      ],
+      "one_liner": "Provides Wellness Through Weekly Physical Conditioning for Government Employees."
+    },
+    {
+      "bill_number": 299,
+      "short_title": "Provides a Museum Exclusively Exhibiting Bangsamoro History Towards",
+      "status": "First Reading",
+      "as_of": "2024-05-22",
+      "tags": [
+        "islamic_culture_heritage"
+      ],
+      "one_liner": "Provides a Museum Exclusively Exhibiting Bangsamoro History Towards Autonomy."
+    },
+    {
+      "bill_number": 298,
+      "short_title": "Institutionalizes Flextime During Ramadhan",
+      "status": "First Reading",
+      "as_of": "2024-05-22",
+      "tags": [
+        "islamic_culture_heritage",
+        "governance_civil_service"
+      ],
+      "one_liner": "Institutionalizes Flextime During Ramadhan."
+    },
+    {
+      "bill_number": 297,
+      "short_title": "Promoting Resilient Development Through Mandatory Comprehensive Risk Assessments",
+      "status": "First Reading",
+      "as_of": "2024-05-22",
+      "tags": [
+        "disaster_resilience"
+      ],
+      "one_liner": "Promoting Resilient Development Through Mandatory Comprehensive Risk Assessments."
+    },
+    {
+      "bill_number": 296,
+      "short_title": "Establishes an Emergency Runway Infrastructure System in All",
+      "status": "First Reading",
+      "as_of": "2024-05-22",
+      "tags": [
+        "infrastructure_transport"
+      ],
+      "one_liner": "Establishes an Emergency Runway Infrastructure System in All Provinces."
+    },
+    {
+      "bill_number": 295,
+      "short_title": "Creates the Gis Bureau of the Bangsamoro Planning",
+      "status": "First Reading",
+      "as_of": "2024-05-21",
+      "tags": [
+        "other"
+      ],
+      "one_liner": "Creates the Gis Bureau of the Bangsamoro Planning and Development Authority."
+    },
+    {
+      "bill_number": 294,
+      "short_title": "Creates the Bangsamoro Medical Assistance Program for Indigent",
+      "status": "First Reading",
+      "as_of": "2024-05-21",
+      "tags": [
+        "health"
+      ],
+      "one_liner": "Creates the Bangsamoro Medical Assistance Program for Indigent Patients."
+    },
+    {
+      "bill_number": 293,
+      "short_title": "Provides Financial Aid for Medication Maintenance of Senior",
+      "status": "First Reading",
+      "as_of": "2024-05-21",
+      "tags": [
+        "health",
+        "women_children_social_welfare"
+      ],
+      "one_liner": "Provides Financial Aid for Medication Maintenance of Senior Citizens."
+    },
+    {
+      "bill_number": 292,
+      "short_title": "Establishes a Comprehensive Economic Empowerment Framework for Former",
+      "status": "First Reading",
+      "as_of": "2024-05-21",
+      "tags": [
+        "women_children_social_welfare",
+        "peace_security_justice",
+        "economy_trade_investment"
+      ],
+      "one_liner": "Establishes a Comprehensive Economic Empowerment Framework for Former Bangsamoro Women Combatants."
+    },
+    {
+      "bill_number": 291,
+      "short_title": "Incorporating Basic Agri-fishery Knowledge in Elementary and Secondary",
+      "status": "First Reading",
+      "as_of": "2024-05-21",
+      "tags": [
+        "education",
+        "environment_agriculture_fisheries"
+      ],
+      "one_liner": "Incorporating Basic Agri-fishery Knowledge in Elementary and Secondary School Curriculum."
+    },
+    {
+      "bill_number": 290,
+      "short_title": "Establishes a Regional Diagnostic and Clinical Laboratory",
+      "status": "First Reading",
+      "as_of": "2024-05-20",
+      "tags": [
+        "health"
+      ],
+      "one_liner": "Establishes a Regional Diagnostic and Clinical Laboratory."
+    },
+    {
+      "bill_number": 289,
+      "short_title": "Institutionalizes the Social Protection Program for Bangsamoro Agri-fishery",
+      "status": "First Reading",
+      "as_of": "2024-05-20",
+      "tags": [
+        "women_children_social_welfare",
+        "environment_agriculture_fisheries"
+      ],
+      "one_liner": "Institutionalizes the Social Protection Program for Bangsamoro Agri-fishery Workers."
+    },
+    {
+      "bill_number": 288,
+      "short_title": "Provides Recognition and Incentives to Bangsamoro Authors",
+      "status": "First Reading",
+      "as_of": "2024-05-20",
+      "tags": [
+        "other"
+      ],
+      "one_liner": "Provides Recognition and Incentives to Bangsamoro Authors."
+    },
+    {
+      "bill_number": 287,
+      "short_title": "Establishes a Political Party Subsidy Fund in the",
+      "status": "First Reading",
+      "as_of": "2024-05-20",
+      "tags": [
+        "elections_districting"
+      ],
+      "one_liner": "Establishes a Political Party Subsidy Fund in the Bangsamoro."
+    },
+    {
+      "bill_number": 286,
+      "short_title": "Bangsamoro Revenue Code",
+      "status": "(status not captured)",
+      "as_of": "2024",
+      "tags": [
+        "budget_appropriations"
+      ],
+      "one_liner": "Provides for the Revenue Code of BARMM."
+    },
+    {
+      "bill_number": 136,
+      "short_title": "Creates the Municipality of Ligawasan",
+      "status": "Approved",
+      "as_of": "2023-08-17",
+      "tags": [
+        "local_government"
+      ],
+      "one_liner": "Creates the Municipality of Ligawasan."
+    },
+    {
+      "bill_number": 101,
+      "short_title": "Declares Tawi-tawi as the Seaweed Capital of the",
+      "status": "First Reading",
+      "as_of": "2023-01-24",
+      "tags": [
+        "environment_agriculture_fisheries"
+      ],
+      "one_liner": "Declares Tawi-tawi as the Seaweed Capital of the Philippines."
+    }
+  ]
+}

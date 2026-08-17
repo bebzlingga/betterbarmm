@@ -1,0 +1,178 @@
+{
+  "record_type": "bangsamoro_autonomy_act",
+  "basic_information": {
+    "baa_number": 64,
+    "short_title": "Bangsamoro Indigenous Peoples Rights Act",
+    "official_title": "AN ACT TO RECOGNIZE, DEVELOP, AND PROTECT THE INDIGENOUS PEOPLES AND THEIR RIGHTS IN BARMM; STRENGTHENING MIPA",
+    "type": "Bangsamoro Autonomy Act (regional law)",
+    "enacting_parliament": "BTA2",
+    "date_ratified": "2024-12-10",
+    "current_status": "ENACTED - IN FORCE"
+  },
+  "citizen_summary": {
+    "what_is_this_about": "Recognize, Develop, and Protect the Indigenous Peoples and Their Rights in BARMM; Strengthening MIPA.",
+    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
+    "what_will_change": "Recognize, Develop, and Protect the Indigenous Peoples and Their Rights in BARMM; Strengthening MIPA.",
+    "who_will_be_affected": [
+      "Indigenous communities",
+      "Non-Moro indigenous youth",
+      "Investors/LGUs"
+    ],
+    "when_will_it_take_effect": "Ratified 2024-12-10; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
+    "what_this_means_for_you": {
+      "in_short": "Recognizes and protects the rights of Indigenous Peoples in BARMM - the Teduray, Lambangian, Dulangan Manobo, Higaonon, and others - including their ancestral domains, culture, and self-governance, and strengthens the Ministry of Indigenous Peoples' Affairs to deliver on it.",
+      "in_practice": [
+        "Legal recognition of ancestral domain claims and customary governance within BARMM",
+        "Free, prior, and informed consent (FPIC) principles for projects affecting IP lands",
+        "MIPA strengthened as the responsible ministry"
+      ],
+      "for_specific_groups": {
+        "Indigenous communities": "The regional legal anchor for domain titling, cultural protection, and representation - engage through MIPA and your tribal leadership",
+        "Non-Moro indigenous youth": "Education and cultural-integrity protections",
+        "Investors/LGUs": "Consent and consultation duties before projects on IP lands"
+      },
+      "where_this_applies": "All of BARMM unless the title names a specific place",
+      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
+      "what_you_can_do": [
+        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
+        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
+        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
+      ],
+      "watch_out_for": [],
+      "key_terms_explained": {
+        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
+        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
+        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
+      },
+      "benefits": {
+        "headline": "Ancestral rights of non-Moro Indigenous Peoples, protected in regional law.",
+        "direct_benefits": [
+          {
+            "benefit": "Recognition of ancestral domains and customary governance",
+            "who_gets_it": "Teduray, Lambangian, Dulangan Manobo, and other IP communities",
+            "how_to_access": "Through MIPA and tribal leadership structures"
+          },
+          {
+            "benefit": "Free, prior, informed consent before projects on your lands",
+            "who_gets_it": "IP communities",
+            "how_to_access": "Invoke FPIC in any project consultation"
+          },
+          {
+            "benefit": "Cultural and educational protections for IP youth",
+            "who_gets_it": "Indigenous students",
+            "how_to_access": "MIPA/MBHTE programs"
+          }
+        ],
+        "indirect_benefits": [
+          "A ministry (MIPA) strengthened specifically to serve IPs"
+        ],
+        "limitations": [
+          "Domain delineation is a long process - the law starts it, doesn't finish it"
+        ]
+      }
+    }
+  },
+  "key_provisions": [
+    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+  ],
+  "impact": {
+    "who_benefits": [
+      "Indigenous Peoples",
+      "Settler communities"
+    ],
+    "impact_tags": [
+      "indigenous_settlers",
+      "labor_social"
+    ],
+    "estimated_beneficiaries": null,
+    "allocated_budget": null,
+    "figures_note": "Shown only when stated in official documents; none captured for this record."
+  },
+  "legislative_journey": [
+    {
+      "stage": "Filed as a bill",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Committee & plenary readings",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Third Reading",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Approved & Ratified",
+      "reached": true,
+      "date": "2024-12-10"
+    }
+  ],
+  "authors_and_sponsors": {
+    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "note": "Authors are recorded on the origin bill's page."
+  },
+  "related_documents": {
+    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
+    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
+  },
+  "related_legislation": {
+    "amends": [],
+    "amended_by": [],
+    "repeals": null,
+    "origin_bill": null
+  },
+  "implementation_status": {
+    "law_enacted": true,
+    "in_force": true,
+    "legal_challenge_note": null,
+    "irr_issued": "unknown - IRR registry pending capture",
+    "implementing_agency": {
+      "agency": "MOLE / MSSD",
+      "inferred": true
+    },
+    "budget_appropriated": "Not stated in title"
+  },
+  "citizen_questions": [
+    {
+      "q": "Is this law in force?",
+      "a": "Yes - ratified 2024-12-10 and in force unless amended (see related legislation)."
+    },
+    {
+      "q": "Who implements it?",
+      "a": "MOLE / MSSD (inferred from the law's subject; the Act itself designates the lead)."
+    },
+    {
+      "q": "Does it have implementing rules (IRR)?",
+      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
+    },
+    {
+      "q": "Where do I read the full text?",
+      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
+    }
+  ],
+  "display_header": {
+    "line1": "Bangsamoro Autonomy Act No. 64",
+    "line2": "Bangsamoro Indigenous Peoples Rights Act",
+    "badges": [
+      "ENACTED",
+      "Labor Social",
+      "2024"
+    ],
+    "what_this_does": "Recognize, Develop, and Protect the Indigenous Peoples and Their Rights in BARMM; Strengthening MIPA.",
+    "who_it_affects": "Indigenous Peoples · Settler communities",
+    "effective": "2024-12-10"
+  },
+  "views": {
+    "simple": "Recognize, Develop, and Protect the Indigenous Peoples and Their Rights in BARMM; Strengthening MIPA.",
+    "official": "AN ACT TO RECOGNIZE, DEVELOP, AND PROTECT THE INDIGENOUS PEOPLES AND THEIR RIGHTS IN BARMM; STRENGTHENING MIPA"
+  },
+  "provenance": {
+    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
+    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "record_type": "bangsamoro_autonomy_act",
+  "basic_information": {
+    "baa_number": 17,
+    "short_title": "Bangsamoro Civil Service Code",
+    "official_title": "AN ACT PROVIDING FOR THE BANGSAMORO CIVIL SERVICE CODE",
+    "type": "Bangsamoro Autonomy Act (regional law)",
+    "enacting_parliament": "BTA1",
+    "date_ratified": "2021-02-24",
+    "current_status": "ENACTED - IN FORCE"
+  },
+  "citizen_summary": {
+    "what_is_this_about": "Provides for the Bangsamoro Civil Service Code.",
+    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
+    "what_will_change": "Provides for the Bangsamoro Civil Service Code.",
+    "who_will_be_affected": [
+      "Job applicants",
+      "Government employees",
+      "Whistleblowers"
+    ],
+    "when_will_it_take_effect": "Ratified 2021-02-24; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
+    "what_this_means_for_you": {
+      "in_short": "The Civil Service Code governs government jobs in BARMM: hiring, qualifications, promotions, discipline, and employee rights. If you work for - or want to work for - the Bangsamoro Government, this law sets the rules of the game.",
+      "in_practice": [
+        "Merit-based hiring rules and eligibility requirements for regional positions",
+        "Protection from arbitrary dismissal; disciplinary due process",
+        "Defines contractual vs. plantilla status and benefits"
+      ],
+      "for_specific_groups": {
+        "Job applicants": "Know the required eligibilities and contest irregular appointments",
+        "Government employees": "Your security of tenure, leave, and grievance rights live here",
+        "Whistleblowers": "Disciplinary machinery for erring officials starts from this Code"
+      },
+      "where_this_applies": "All of BARMM unless the title names a specific place",
+      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
+      "what_you_can_do": [
+        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
+        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
+        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
+      ],
+      "watch_out_for": [],
+      "key_terms_explained": {
+        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
+        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
+        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
+      },
+      "benefits": {
+        "headline": "Fair access to government jobs - and protection once you're in.",
+        "direct_benefits": [
+          {
+            "benefit": "Merit-based hiring: vacancies must be published and qualifications applied equally",
+            "who_gets_it": "Job applicants",
+            "how_to_access": "Watch CSC-BARMM postings; protest irregular appointments"
+          },
+          {
+            "benefit": "Security of tenure and due process before discipline or dismissal",
+            "who_gets_it": "Bangsamoro Government employees",
+            "how_to_access": "Invoke the Code in grievance/administrative proceedings"
+          },
+          {
+            "benefit": "Defined leave, benefits, and employee welfare standards",
+            "who_gets_it": "Government workers",
+            "how_to_access": "Through agency HR, citing the Code"
+          }
+        ],
+        "indirect_benefits": [
+          "Less patronage pressure in the bureaucracy over time"
+        ],
+        "limitations": [
+          "Applies to regional government employment, not private jobs"
+        ]
+      }
+    }
+  },
+  "key_provisions": [
+    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+  ],
+  "impact": {
+    "who_benefits": [
+      "Government employees",
+      "Public-service users"
+    ],
+    "impact_tags": [
+      "governance_civil_service",
+      "priority_code"
+    ],
+    "estimated_beneficiaries": null,
+    "allocated_budget": null,
+    "figures_note": "Shown only when stated in official documents; none captured for this record."
+  },
+  "legislative_journey": [
+    {
+      "stage": "Filed as a bill",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Committee & plenary readings",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Third Reading",
+      "reached": true,
+      "date": null
+    },
+    {
+      "stage": "Approved & Ratified",
+      "reached": true,
+      "date": "2021-02-24"
+    }
+  ],
+  "authors_and_sponsors": {
+    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+    "note": "Authors are recorded on the origin bill's page."
+  },
+  "related_documents": {
+    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
+    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
+  },
+  "related_legislation": {
+    "amends": [],
+    "amended_by": [],
+    "repeals": null,
+    "origin_bill": null
+  },
+  "implementation_status": {
+    "law_enacted": true,
+    "in_force": true,
+    "legal_challenge_note": null,
+    "irr_issued": "unknown - IRR registry pending capture",
+    "implementing_agency": {
+      "agency": "Multiple ministries (code-dependent)",
+      "inferred": true
+    },
+    "budget_appropriated": "Not stated in title"
+  },
+  "citizen_questions": [
+    {
+      "q": "Is this law in force?",
+      "a": "Yes - ratified 2021-02-24 and in force unless amended (see related legislation)."
+    },
+    {
+      "q": "Who implements it?",
+      "a": "Multiple ministries (code-dependent) (inferred from the law's subject; the Act itself designates the lead)."
+    },
+    {
+      "q": "Does it have implementing rules (IRR)?",
+      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
+    },
+    {
+      "q": "Where do I read the full text?",
+      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
+    }
+  ],
+  "display_header": {
+    "line1": "Bangsamoro Autonomy Act No. 17",
+    "line2": "Bangsamoro Civil Service Code",
+    "badges": [
+      "ENACTED",
+      "Priority Code",
+      "2021"
+    ],
+    "what_this_does": "Provides for the Bangsamoro Civil Service Code.",
+    "who_it_affects": "Government employees · Public-service users",
+    "effective": "2021-02-24"
+  },
+  "views": {
+    "simple": "Provides for the Bangsamoro Civil Service Code.",
+    "official": "AN ACT PROVIDING FOR THE BANGSAMORO CIVIL SERVICE CODE"
+  },
+  "provenance": {
+    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
+    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+  }
+}
