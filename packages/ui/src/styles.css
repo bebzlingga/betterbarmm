@@ -330,7 +330,23 @@ figcaption {
   letter-spacing: 0.04em;
 }
 
-/* Supporting detail beside a title — dates, counts, provenance. */
+/* Supporting detail beside a title — dates, counts, provenance.
+
+   The family is stated rather than inherited. Metadata is looked at rather than
+   read, so it takes the interface face by the rule at the top of this file — but
+   neither of these named a family, which left the face to whichever tag the class
+   landed on: Outfit inside a `span`, DM Sans inside a `p`, since `p` opts into
+   the reading face. One line could carry both — "475 of 475 bills" set the first
+   count in Outfit and the second in DM Sans.
+
+   Tabular figures for the same reason `.num` takes them: these are mostly dates
+   and counts, and they line up down a list of rows. */
+.meta,
+.meta-sm {
+  font-family: var(--font-display);
+  font-variant-numeric: tabular-nums;
+}
+
 .meta {
   color: var(--ink-3);
   font-size: 0.8125rem;
@@ -403,28 +419,49 @@ figcaption {
    not. A modifier rather than a utility at the call site: these primitives are
    unlayered, so `text-[17px]` on the element would lose to the size set here. */
 .item-title-lg {
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   line-height: 1.35;
 }
 
 /* The sentence under a section's claim, and the copy under an item heading —
    one size, so a page holds a single reading measure from top to bottom. The
-   lead reads quieter than the copy through colour alone. */
+   lead reads quieter than the copy through colour alone.
+
+   Set at 16px on a 1.75 leading. The record dialog had drifted: its opening
+   "what this measure does" ran at that size while every section under it sat
+   at 14px, so the panel started comfortable and then tightened. This is the
+   size that read well, promoted to the standard rather than left as the
+   exception — which means the reading measure is now the same in a dialog as
+   it is on a standing page. */
 .section-lead,
 .copy,
 .item-title {
-  font-size: 0.9375rem;
+  font-size: 1rem;
 }
 
 .section-lead,
 .copy {
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 /* Numerals in a column read better tabular and unbolded. */
 .num {
   font-family: var(--font-display);
   font-variant-numeric: tabular-nums;
+}
+
+/* `font-title` is the Tailwind utility for the display face — the escape hatch
+   for a title that happens to be marked up as a `p`. It did not work: Tailwind
+   puts its utilities in `@layer utilities`, and a layered declaration loses to
+   an unlayered one, so the `p` rule above beat it every time and the element
+   stayed in the reading face. Every `p.item-title.font-title` on the site was
+   asking for Outfit and getting DM Sans — the numbered steps on About and the
+   "01. Referral" rows on Committees among them.
+
+   Re-declared here, unlayered and after the `p` rule, so the utility does what
+   its name says. Same trick `.num` and `.meta` rely on. */
+.font-title {
+  font-family: var(--font-display);
 }
 
 .rule-link {
@@ -629,14 +666,25 @@ figcaption {
    Controls
    ============================================================ */
 
-/* Search inputs and selects share one look. */
+/* Search inputs and selects share one look.
+
+   Filled rather than outlined. On a page that is mostly white with hairline
+   rules, an empty white box outlined in the same hairline reads as another
+   divider rather than as something to type in; the fill is what says this one
+   is yours to use. It takes --paper-3 rather than --paper-2, which is the
+   hover tint and too close to white to register as a field.
+
+   Focus lifts it to the page colour instead of tinting it further. Coming
+   from a grey rest state that is the clearer move — the field goes bright as
+   it takes the cursor — and it keeps the focus ring reading against the
+   lighter ground. */
 .field {
   height: 2.75rem;
   width: 100%;
   min-width: 0;
   border: 1px solid var(--rule);
   border-radius: var(--radius-lg);
-  background: var(--paper);
+  background: var(--paper-3);
   padding-inline: 0.875rem;
   color: var(--ink);
   /* A control, so it reads with the buttons beside it rather than the prose. */
@@ -645,6 +693,7 @@ figcaption {
   outline: none;
   transition:
     border-color 0.16s var(--ease),
+    background-color 0.16s var(--ease),
     box-shadow 0.16s var(--ease);
 }
 
@@ -654,6 +703,7 @@ figcaption {
 
 .field:focus {
   border-color: var(--ink-mute);
+  background: var(--paper);
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--ink) 9%, transparent);
 }
 
@@ -872,12 +922,25 @@ figcaption {
 /* The same path named and dated — one rail read left to right. The whole
    path fits the width it is given: the stages divide it evenly and their
    names wrap, because a bill's route is short enough to show at once and
-   scrolling half of it out of view defeats the point of drawing it. */
+   scrolling half of it out of view defeats the point of drawing it.
+
+   That holds while there is width to divide. Seven stages on a phone leave
+   each name about thirty pixels, which is not a column of text but a column
+   of broken syllables — so below `md` the rail stands up and runs down the
+   page instead, one stage per line. Same rungs, same tones, same order; only
+   the axis changes, and the markup follows with `md:` variants. */
 .timeline {
-  display: flex;
+  display: grid;
 }
 
-/* Every stage takes an equal share, however many there are. */
+@media (min-width: 48rem) {
+  .timeline {
+    display: flex;
+  }
+}
+
+/* Every stage takes an equal share, however many there are. Inert while the
+   rail is stacked, since a grid item ignores `flex`. */
 .timeline-stage {
   flex: 1 1 0;
   min-width: 0;
@@ -1198,6 +1261,57 @@ figcaption {
    so anything dropped inside adapts on its own.
    ============================================================ */
 
+/* ============================================================
+   Brand band
+
+   The masthead ground. Every page header sits on it, which makes it
+   the one place the accent is not used sparingly — so it is stated as
+   a ground of its own rather than by painting --accent behind text.
+
+   It re-points the tokens the way .dark-bg does instead of restyling
+   the header's parts: the eyebrow pill takes its border from --rule
+   and its colour from --ink-3 or --accent depending on the cut, the
+   headline from --ink, its muted half from --ink-display, the
+   description from --ink-2. Re-pointing means all of them adapt at
+   once, and anything added to a header later adapts with them.
+
+   The ground does not flip with the theme, for the same reason
+   --panel-bg doesn't: --accent inverts to a light coral in dark mode,
+   and white text on that would fail. Dark mode deepens it instead, so
+   the band still reads as brand against a dark canvas.
+
+   Contrast on the light ground (#8a2418, relative luminance 0.055):
+   --ink 21:1, --ink-2 7.3:1, --ink-3 6.2:1 — all clear AA for body
+   text; --ink-display lands at 4.3:1, well past the 3:1 that applies
+   to it at display sizes.
+   ============================================================ */
+
+.brand-bg {
+  --paper: #8a2418;
+  --paper-2: #7c2015;
+  --paper-3: #6b1a11;
+  --ink: #ffffff;
+  --ink-2: rgba(255, 255, 255, 0.82);
+  --ink-3: rgba(255, 255, 255, 0.72);
+  --ink-mute: rgba(255, 255, 255, 0.62);
+  --ink-display: rgba(255, 255, 255, 0.55);
+  /* The kicker and any rule-link inside read as the ground's own
+     highlight rather than as the accent, which is the ground. */
+  --accent: #ffffff;
+  --accent-deep: rgba(255, 255, 255, 0.85);
+  --accent-soft: rgba(255, 255, 255, 0.14);
+  --rule: rgba(255, 255, 255, 0.28);
+  --rule-soft: rgba(255, 255, 255, 0.16);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .brand-bg {
+  --paper: #6b1a11;
+  --paper-2: #5d160e;
+  --paper-3: #4f120b;
+}
+
 .discover-dark-section,
 .dark-bg {
   --paper: #171715;
@@ -1213,6 +1327,79 @@ figcaption {
   --rule-soft: rgba(247, 247, 247, 0.09);
   background: var(--paper);
   color: var(--ink);
+}
+
+/* ---- The bill path, on the hub ----
+
+   Seven named stages with a line behind them. Static, the row says how many
+   steps there are; moving, it says they are a sequence with a direction —
+   which is the one thing about the process a reader should leave the hub
+   knowing.
+
+   A travelling head runs the line, the fill follows it, and each dot flares as
+   the head reaches it. The whole thing is one cycle: the dots' delays are
+   spaced across the same span the head takes to cross, so a flare always lands
+   on the dot the head is passing rather than merely near it. Every element
+   shares `--bill-path-cycle`, so retiming the loop is one number.
+
+   The tail of the cycle is dead air on purpose. The line finishes, holds, then
+   fades out and resets at zero width while invisible — a rail that snapped back
+   to the left edge in view read as a glitch rather than as a repeat.
+
+   The head and the fill run `linear` where everything else on the site eases.
+   They have to: the flares are delayed by an even share of the travel, so any
+   easing on the head puts it ahead of the early dots and behind the late ones,
+   and the flare stops reading as something the head caused. The flare itself
+   still eases — that one is a reaction, not a clock. */
+
+@keyframes bill-path-line {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  78% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  90% {
+    transform: scaleX(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+
+@keyframes bill-path-head {
+  0% {
+    left: 0%;
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  78% {
+    left: 100%;
+    opacity: 1;
+  }
+  88% {
+    left: 100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0%;
+    opacity: 0;
+  }
+}
+
+.bill-path-line {
+  transform-origin: left center;
+  animation: bill-path-line var(--bill-path-cycle, 8s) linear infinite;
+}
+
+.bill-path-head {
+  animation: bill-path-head var(--bill-path-cycle, 8s) linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1231,6 +1418,20 @@ figcaption {
   .overlay-in,
   .sheet-in {
     animation: none;
+  }
+
+  .bill-path-line,
+  .bill-path-head,
+  .bill-path-flare {
+    animation: none;
+    opacity: 0;
+  }
+
+  .bill-path-tone,
+  .bill-path-label {
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
 
   .chip,

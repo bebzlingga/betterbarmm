@@ -50,10 +50,15 @@ function LegendRow({
 	const mirrored = side === 'left'
 
 	return (
+		// The mirroring is only meaningful while the two halves flank the ring —
+		// stacked under it they are one legend read straight down, and a block of
+		// right-aligned rows above a block of left-aligned ones reads as a fault.
+		// So the reversal, and the rule the first row of a column drops, both wait
+		// for the three-track layout at `lg`.
 		<div
-			className={`flex items-start gap-3 border-t border-[var(--rule-soft)] py-4 first:border-t-0 first:pt-0 ${
-				mirrored ? 'flex-row-reverse text-right' : 'text-left'
-			}`}
+			className={`flex items-start gap-3 border-t border-[var(--rule-soft)] py-4 text-left ${
+				mirrored ? 'lg:flex-row-reverse lg:text-right' : ''
+			} lg:first:border-t-0 lg:first:pt-0`}
 		>
 			{/* On the outer edge of the ring either way, so the two columns read as
 			    one legend wrapped around it rather than two lists. */}
@@ -64,7 +69,7 @@ function LegendRow({
 			/>
 
 			<div className='min-w-0'>
-				<p className={`flex flex-wrap items-center gap-x-2 ${mirrored ? 'justify-end' : ''}`}>
+				<p className={`flex flex-wrap items-center gap-x-2 ${mirrored ? 'lg:justify-end' : ''}`}>
 					{/* The count leads: the row answers "how many are here", and the
 					    stage name is what that number is a count of. */}
 					<span className='num text-[15px] font-semibold text-[var(--ink)]'>
@@ -119,14 +124,21 @@ export function BillFunnel({
 	let travelled = 0
 
 	return (
-		<div className='grid items-center gap-x-12 gap-y-10 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] xl:gap-x-16'>
+		// Stacked, the ring leads and the legend reads down from it — the picture
+		// is the claim and the rows annotate it, which is the same reading the
+		// three-track layout gives horizontally. `lg:order-none` hands the order
+		// back to the DOM once the columns exist, so the halves flank correctly.
+		<div className='grid items-center gap-x-12 gap-y-8 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:gap-y-10 xl:gap-x-16'>
 			<div>
 				{earlier.map((slice) => (
 					<LegendRow key={slice.label} slice={slice} total={total} side='left' />
 				))}
 			</div>
 
-			<figure className='relative mx-auto w-[20rem] shrink-0 sm:w-[24rem]'>
+			{/* Held to the width it is given rather than set to a fixed one: at
+			    20rem the ring was wider than the content box of a small phone and
+			    spilled past the page's own edge. */}
+			<figure className='relative order-first mx-auto w-full max-w-[18rem] shrink-0 sm:max-w-[22rem] lg:order-none lg:w-[24rem] lg:max-w-none'>
 				<svg
 					viewBox={`0 0 ${SIZE} ${SIZE}`}
 					className='w-full -rotate-90'

@@ -1,174 +1,264 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 72,
-    "short_title": "Bereavement Leave Act",
-    "official_title": "AN ACT PROVIDING SEVEN DAYS FORFEITABLE BEREAVEMENT LEAVE WITH PAY IN PUBLIC AND PRIVATE SECTORS (Bereavement Leave Act of 2025)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2025-02-20",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Provides Seven Days Forfeitable Bereavement Leave with Pay in Public and Private Sectors (bereavement Leave Act of 2025).",
-    "why_was_it_proposed": "Origin of Bill 464 (pending amendment to expand 'immediate family').",
-    "what_will_change": "Provides Seven Days Forfeitable Bereavement Leave with Pay in Public and Private Sectors (bereavement Leave Act of 2025).",
-    "who_will_be_affected": [
-      "Private-sector workers",
-      "Employers",
-      "Grieving families"
-    ],
-    "when_will_it_take_effect": "Ratified 2025-02-20; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Concrete and immediate: every employee in BARMM - government or private - gets seven (7) days of paid bereavement leave each year when a family member dies. If your employer operates in the region, this is a benefit you can claim on top of existing leave.",
-      "in_practice": [
-        "7 days, with pay, forfeitable (unused days don't carry over or convert to cash)",
-        "Applies to both public and private sector employees within BARMM",
-        "A pending bill (464) seeks to widen who counts as 'immediate family' - watch for amendments"
-      ],
-      "for_specific_groups": {
-        "Private-sector workers": "Show this law (BAA 72) to HR if bereavement leave is refused",
-        "Employers": "Update leave policies for BARMM-based staff",
-        "Grieving families": "Time for burial rites and the mourning period without losing income"
-      },
-      "where_this_applies": "All of BARMM unless the title names a specific place",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Seven paid days off, every year, when you lose a family member.",
-        "direct_benefits": [
-          {
-            "benefit": "7 days bereavement leave WITH PAY per year",
-            "who_gets_it": "Every public AND private employee in BARMM",
-            "how_to_access": "Notify HR citing BAA 72; no pay deduction allowed"
-          },
-          {
-            "benefit": "Time for burial rites and the mourning period without losing income",
-            "who_gets_it": "Grieving employees and their families",
-            "how_to_access": "Automatic entitlement upon a family member's death"
-          }
-        ],
-        "indirect_benefits": [
-          "Normalizes compassionate workplace standards region-wide"
-        ],
-        "limitations": [
-          "Forfeitable: unused days don't carry over or convert to cash",
-          "Coverage of extended family may change - Bill 464 proposes widening 'immediate family'"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 72,
+  "short_title": "Bangsamoro Bereavement Leave Act of 2025",
+  "official_title": "AN ACT PROVIDING FOR 7 DAYS FORFEITABLE BEREAVEMENT LEAVE PRIVILEGES ANNUALLY WITH PAY TO EMPLOYEES IN THE PUBLIC AND PRIVATE SECTORS WITHIN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2025-02-20",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session (begun 15 September 2022)",
+  "date_passed": "2025-02-20",
+  "date_passed_hijri": "Sha'ban 21, 1446",
+  "date_approved_by_chief_minister": "2025-03-03",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Government employees",
-      "Public-service users"
-    ],
-    "impact_tags": [
-      "governance_civil_service",
-      "labor_social"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2025-02-20"
-    }
+  "effectivity": "15 days after publication in the Bangsamoro Gazette or a newspaper of regional circulation within the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Gives every employee in the region — public or private, whatever their employment status — 7 days of paid leave each year when an immediate family member dies.",
+  "why_was_it_proposed": "The act declares that the Bangsamoro Government recognises the unique and societal aspects of bereavement and shall foster a workplace culture that upholds the welfare of its people.",
+  "what_will_change": "Seven working days of paid bereavement leave a year becomes a legal entitlement. An application not acted on within five working days is automatically approved, and using the leave cannot be a ground for dismissal, demotion or a bad performance rating.",
+  "who_will_be_affected": [
+   "Every employee in an employer-employee relationship in the BARMM, public or private",
+   "Employers, who must grant the leave — except small and micro enterprises, which are exempt",
+   "Employees who have lost a spouse, parent, parent-in-law, child, ward or full-blood sibling"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "MOLE / MSSD",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2025-02-20 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "MOLE / MSSD (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 72",
-    "line2": "Bereavement Leave Act",
-    "badges": [
-      "ENACTED",
-      "Labor Social",
-      "2025"
+  "when_will_it_take_effect": "In force since 2025 — 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. If an immediate family member dies, you get 7 days of paid leave. Weekends and holidays don't count against it. If your employer sits on the application for five working days, it is automatically approved.",
+   "in_practice": [
+    "7 days of bereavement leave with pay, each year",
+    "Saturdays, Sundays and holidays are excluded from the count — so it is seven working days",
+    "Available to any employee regardless of employment status, in the public or private sector",
+    "Unused leave does not carry over and cannot be converted to cash",
+    "An application not acted upon within five working days is deemed approved",
+    "Taking the leave cannot be a ground for termination, constructive dismissal, demotion, or an unsatisfactory performance rating"
+   ],
+   "for_specific_groups": {
+    "Private sector employees": "You are covered, unless your employer is a small or micro enterprise. Complaints about unjustified denial go to the Minister of Labor and Employment, decided through summary proceedings.",
+    "Government employees": "You are covered. Complaints against responsible officers follow the Revised Rules on Administrative Cases in the Civil Service.",
+    "Employees of small and micro enterprises": "Section 4 exempts these entities from granting the leave — this is the main gap in coverage.",
+    "Employees with more than one spouse": "Section 5 says 'legitimate spouse/s' in the plural, so a marriage recognised under Muslim personal law is within the definition.",
+    "Contractual and casual staff": "'Regardless of employment status' — the entitlement does not depend on being permanent."
+   },
+   "where_this_applies": "Workplaces within the BARMM.",
+   "when_you_will_feel_it": "In force since 2025.",
+   "what_you_can_do": [
+    "Apply in writing and note the date your employer received it — after five working days without action it is deemed approved",
+    "Have documentation ready: the employer may require a death certificate, obituary, or proof of relationship",
+    "If refused without justification, complain to the Minister of Labor and Employment (private sector) or use the civil service administrative route (public sector)",
+    "Check whether an existing company or agency benefit is more generous — this act does not reduce it"
+   ],
+   "watch_out_for": [
+    "Small and micro enterprises are exempt, which excludes a large share of the region's workforce.",
+    "The leave is forfeitable — unused days do not accumulate and cannot be cashed out.",
+    "Only full-blood siblings count; half-siblings and step-siblings are not in the definition.",
+    "The act sets no penalty on an employer beyond the complaint and administrative routes."
+   ],
+   "key_terms_explained": {
+    "Forfeitable": "Unused days are lost at the end of the year — they do not accumulate and cannot be converted to cash.",
+    "Deemed approved": "Treated in law as approved because the employer failed to act within the deadline.",
+    "Constructive dismissal": "Making conditions so intolerable that an employee is forced to resign.",
+    "Summary proceedings": "A simplified hearing process, faster than a full trial.",
+    "Small and micro enterprises": "Business size classifications used in Philippine law; entities in these classes are exempt from this act."
+   },
+   "status_note": "Passed Sha'ban 21, 1446 / 20 February 2025, approved by the Chief Minister on 3 March 2025.",
+   "benefits": {
+    "headline": "Seven paid working days off when an immediate family member dies, with automatic approval if your employer stalls.",
+    "direct_benefits": [
+     {
+      "benefit": "7 days of paid bereavement leave annually",
+      "who_gets_it": "Any employee in an employer-employee relationship in the BARMM, public or private, regardless of employment status",
+      "amount": "7 days with pay, excluding Saturdays, Sundays and holidays",
+      "how_to_access": "Apply to your employer or head of agency"
+     },
+     {
+      "benefit": "Automatic approval after five working days of inaction",
+      "who_gets_it": "Any applicant",
+      "how_to_access": "Section 9 — the application is deemed approved"
+     },
+     {
+      "benefit": "Protection from retaliation",
+      "who_gets_it": "Any employee who takes the leave",
+      "how_to_access": "Section 8 bars termination, constructive dismissal, demotion or an unsatisfactory rating on this ground"
+     },
+     {
+      "benefit": "A complaint route for unjustified denial",
+      "who_gets_it": "Private sector employees",
+      "how_to_access": "Minister of Labor and Employment or an authorised hearing officer, through summary proceedings"
+     }
     ],
-    "what_this_does": "Provides Seven Days Forfeitable Bereavement Leave with Pay in Public and Private Sectors (bereavement Leave Act of 2025).",
-    "who_it_affects": "Government employees · Public-service users",
-    "effective": "2025-02-20"
-  },
-  "views": {
-    "simple": "Provides Seven Days Forfeitable Bereavement Leave with Pay in Public and Private Sectors (bereavement Leave Act of 2025).",
-    "official": "AN ACT PROVIDING SEVEN DAYS FORFEITABLE BEREAVEMENT LEAVE WITH PAY IN PUBLIC AND PRIVATE SECTORS (Bereavement Leave Act of 2025)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Existing more generous benefits are preserved by the non-diminution clause"
+    ],
+    "limitations": [
+     "Small and micro enterprises are exempt.",
+     "Leave is non-cumulative and non-convertible to cash.",
+     "Immediate family is defined narrowly — full-blood siblings only.",
+     "Only those in an employer-employee relationship are covered."
+    ]
+   },
+   "your_responsibilities": {
+    "for_employees": [
+     "Apply to your employer or head of agency",
+     "Provide reasonable documentation if required — a death certificate, obituary, or proof of relationship"
+    ],
+    "for_employers": [
+     "Grant 7 days of paid bereavement leave annually, unless exempt as a small or micro enterprise",
+     "Act on an application within five working days, or it is deemed approved",
+     "Take no adverse action against an employee for using the leave"
+    ]
+   },
+   "what_is_prohibited": [
+    "Taking adverse employment action against an employee for availing of bereavement leave — including termination, constructive dismissal, demotion of any kind, or issuing an unsatisfactory performance rating.",
+    "Unjustified denial of, or refusal to act on, a bereavement leave application."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence committed by an employee.",
+    "for_employers": "The act sets no fine or imprisonment. Its remedies are procedural: an unacted application is deemed approved, and unjustified denial can be heard and decided by the Minister of Labor and Employment through summary proceedings.",
+    "for_public_officers": "Complaints against responsible officers in the public sector are governed by the Revised Rules on Administrative Cases in the Civil Service."
+   },
+   "where_to_complain": {
+    "private_sector": "The Minister of Labor and Employment (MOLE), or a duly authorised MOLE hearing officer, who may hear and decide through summary proceedings after due notice",
+    "public_sector": "Under the Revised Rules on Administrative Cases in the Civil Service",
+    "note": "Section 9 gives an express legal remedy, which most acts in this registry do not."
+   },
+   "everyday_scenarios": [
+    "Fatima's mother dies on a Thursday. She applies for bereavement leave; because Saturdays, Sundays and holidays are excluded, her 7 days are seven working days.",
+    "Omar submits an application and hears nothing. Five working days after his employer received it, the application is deemed approved by operation of law.",
+    "A worker is given a poor performance rating after taking bereavement leave. Section 8 bars exactly that, and the denial or retaliation can be brought to the Minister of Labor and Employment.",
+    "A shop with a handful of staff classified as a micro enterprise is exempt from granting the leave under Section 4.",
+    "An employee's company already offers 10 days. The non-diminution clause means the more beneficial policy stands."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Bangsamoro Bereavement Leave Act of 2025”.",
+  "Section 2 — Policy: the Bangsamoro Government recognises the unique and societal aspects of bereavement and shall foster a workplace culture that upholds the welfare of its people, alongside improving public morals, promoting full employment and preserving the well-being of inhabitants.",
+  "Section 3 — Any employee, regardless of employment status, in the private or public sector within the BARMM is entitled to 7 days of bereavement leave with pay annually, following the death of an immediate family member. Saturdays, Sundays and holidays are excluded in computing the leave period.",
+  "Section 4 — Only employees engaged in an employer-employee relationship are entitled. Entities classified as small and micro enterprises are exempt from granting the leave.",
+  "Section 5 — Immediate family means the employee's legitimate spouse or spouses; biological or adoptive parents or legal guardians; legitimate parents-in-law; biological or adoptive children or legal wards; or full-blood siblings. The employer may require reasonable documentation, including a death certificate, obituary, or proof of relationship.",
+  "Section 6 — Leave not availed of is non-cumulative and non-convertible to cash.",
+  "Section 7 — Nothing in the act diminishes more beneficial existing benefits under laws, contracts, agreements, or company policies.",
+  "Section 8 — Availing of the leave shall not be a ground for adverse action by the employer, including termination, constructive dismissal, demotion of any kind, or the issuance of an unsatisfactory performance rating.",
+  "Section 9 — An application not acted upon within five working days of receipt by the head of agency or the employer is deemed approved. On complaint of an aggrieved private sector employee, the Minister of Labor and Employment or an authorised hearing officer may hear and decide, through summary proceedings after due notice, any matter involving unjustified denial or refusal to act. Public sector complaints follow the Revised Rules on Administrative Cases in the Civil Service.",
+  "Section 10 — MOLE shall coordinate with the Civil Service Commission for the BARMM in issuing implementing rules within 60 days of effectivity.",
+  "Section 13 — Takes effect 15 days after publication in the Bangsamoro Gazette or a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Employees in the public and private sectors across the BARMM",
+   "Bereaved families"
+  ],
+  "impact_tags": [
+   "labor_social",
+   "governance_civil_service"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": null,
+  "figures_note": "The act appropriates no funds. Its figures are entitlements: 7 days of paid leave annually, and a 5-working-day deadline for acting on an application."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2025-02-20"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/04/BAA-72.pdf",
+  "irr": "MOLE, with the Civil Service Commission for the BARMM, required to issue rules within 60 days of effectivity. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bills 270 and 281",
+  "related_note": "Consolidated from two parliament bills. Implementation runs through MOLE with the Civil Service Commission for the BARMM; complaints in the public sector are governed by the Revised Rules on Administrative Cases in the Civil Service."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": null,
+  "irr_status": "Section 10 required MOLE and the Civil Service Commission for the BARMM to issue implementing rules within 60 days of effectivity. Whether they were issued is not recorded here.",
+  "note": "Read from the enacted text as signed."
+ },
+ "citizen_questions": [
+  {
+   "q": "How many days do I actually get?",
+   "a": "7 days with pay each year. Saturdays, Sundays and holidays are excluded from the count, so it is seven working days."
+  },
+  {
+   "q": "Does it matter if I am contractual or casual?",
+   "a": "No. Section 3 says any employee 'regardless of employment status', provided you are in an employer-employee relationship."
+  },
+  {
+   "q": "Who counts as immediate family?",
+   "a": "Your legitimate spouse or spouses; biological or adoptive parents or legal guardians; legitimate parents-in-law; biological or adoptive children or legal wards; and full-blood siblings."
+  },
+  {
+   "q": "What if my employer ignores my application?",
+   "a": "After five working days from receipt without action, the application is deemed approved by operation of law."
+  },
+  {
+   "q": "Can I be punished for taking it?",
+   "a": "No. Section 8 bars termination, constructive dismissal, demotion of any kind, and unsatisfactory performance ratings on that ground."
+  },
+  {
+   "q": "Is every employer covered?",
+   "a": "No. Entities classified as small and micro enterprises are exempt from granting the leave."
+  },
+  {
+   "q": "Can I save up unused days or cash them out?",
+   "a": "No. The leave is non-cumulative and non-convertible to cash — which is why the title calls it forfeitable."
+  },
+  {
+   "q": "Where do I complain?",
+   "a": "Private sector: the Minister of Labor and Employment or an authorised hearing officer, through summary proceedings. Public sector: the Revised Rules on Administrative Cases in the Civil Service."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 72",
+  "line2": "Bangsamoro Bereavement Leave Act of 2025",
+  "badges": [
+   "IN FORCE",
+   "Labor & Social",
+   "2025"
+  ],
+  "what_this_does": "Gives every employee in the region 7 days of paid leave a year when an immediate family member dies.",
+  "who_it_affects": "All employees in the BARMM · employers, except small and micro enterprises"
+ },
+ "views": {
+  "simple": "Entitles every employee in the region, public or private and whatever their status, to seven paid working days of bereavement leave a year, with automatic approval if the employer does not act in five working days and protection against retaliation.",
+  "official": "AN ACT PROVIDING FOR 7 DAYS FORFEITABLE BEREAVEMENT LEAVE PRIVILEGES ANNUALLY WITH PAY TO EMPLOYEES IN THE PUBLIC AND PRIVATE SECTORS WITHIN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 72, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

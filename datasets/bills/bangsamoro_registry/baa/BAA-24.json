@@ -1,187 +1,213 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 24,
-    "short_title": "Extends the Availability of the 2020 and 2021",
-    "official_title": "AN ACT EXTENDING THE AVAILABILITY OF THE 2020 AND 2021 GAA UNTIL DECEMBER 31, 2022",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2021-12-28",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Extends the Availability of the 2020 and 2021 GAA Until December 31, 2022.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Extends the Availability of the 2020 and 2021 GAA Until December 31, 2022.",
-    "who_will_be_affected": [
-      "Parents & students",
-      "Patients",
-      "Workers & suppliers",
-      "Taxpayers"
-    ],
-    "when_will_it_take_effect": "Ratified 2021-12-28; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "This is a money law: it decides how much funding BARMM ministries and programs get - the schools, hospitals, roads, scholarships, and social services you use are all paid from it. No single citizen 'applies' for it, but nearly every public service you touch depends on it.",
-      "in_practice": [
-        "Sets each ministry's budget ceiling for the year (or adds/extends funds mid-year for supplementals and extensions)",
-        "Slow disbursement is the recurring issue - several BAAs exist purely to extend the validity of unspent funds",
-        "Big-ticket items to watch: education (MBHTE), health (MOH), public works (MPW), and the Special Development Fund for conflict-affected communities"
-      ],
-      "for_specific_groups": {
-        "Parents & students": "Classroom construction, teacher hiring, and scholarship slots are set here",
-        "Patients": "Hospital operating budgets, medicines, and health worker salaries flow from this law",
-        "Workers & suppliers": "Government projects and procurement opportunities follow the appropriations",
-        "Taxpayers": "This is the accountability document - compare what was appropriated with what was actually delivered"
-      },
-      "where_this_applies": "All of BARMM",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Follow-up reports: the Parliament itself has passed resolutions demanding ministries account for these funds"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Funds every public service you use - the enabler of all other benefits.",
-        "direct_benefits": [
-          {
-            "benefit": "Operating budgets for schools, hospitals, roads, scholarships, social programs",
-            "who_gets_it": "Everyone using public services",
-            "how_to_access": "Automatic through the funded agencies"
-          },
-          {
-            "benefit": "Salaries of teachers, health workers, and government personnel",
-            "who_gets_it": "Public employees",
-            "how_to_access": "Through payroll of funded agencies"
-          },
-          {
-            "benefit": "Special Development Fund projects in conflict-affected communities",
-            "who_gets_it": "Camp and conflict-affected barangays",
-            "how_to_access": "Through LGU/OCM project identification"
-          }
-        ],
-        "indirect_benefits": [
-          "Procurement and job opportunities from funded projects",
-          "Predictability: agencies can plan the year"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Compare appropriations vs. actual delivery - Parliament's own resolutions demand these reports; you can too"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Amends: BAA 23",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 24,
+  "short_title": "Extension of the 2020 and 2021 Appropriations",
+  "official_title": "AN ACT EXTENDING THE AVAILABILITY OF THE GENERAL APPROPRIATIONS ACT OF THE BANGSAMORO UNTIL DECEMBER 31, 2022, EXCEPT PERSONNEL SERVICES AND OTHER ITEMS OF THE MOOE, AMENDING FOR THE PURPOSE SECTION 47 OF THE GENERAL PROVISIONS OF THE GENERAL APPROPRIATIONS ACT OF THE BANGSAMORO FOR YEARS 2020 AND 2021",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2021-12-28",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session",
+  "date_passed": "2021-12-28",
+  "date_passed_hijri": "Jumada Al-Ula 23, 1443",
+  "date_approved_by_chief_minister": "2022-02-07",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "budget_finance",
-      "other"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2021-12-28"
-    }
+  "effectivity": "Immediately after publication in a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Gives the region until the end of 2022 to spend leftover money from both the 2020 and 2021 budgets — and until mid-2023 to finish paying for infrastructure already started. Salaries are again excluded.",
+  "why_was_it_proposed": "Two budget years of unspent appropriations were due to lapse. Rather than let projects already funded expire, Parliament extended both at once, 8 days before the 2021 deadline.",
+  "what_will_change": "Appropriations from 2020 and 2021 stayed obligable until 31 December 2022. Infrastructure and capital outlays from both years could be delivered, inspected and paid up to 30 June 2023. Personnel Services from each year still expired on schedule.",
+  "who_will_be_affected": [
+   "Communities with projects funded in 2020 or 2021",
+   "Contractors delivering infrastructure under those budgets",
+   "Bangsamoro ministries and offices holding unspent funds",
+   "Taxpayers, since the money stayed in its original purposes"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [
-      "BAA 23"
+  "when_will_it_take_effect": "Took effect immediately on publication in early 2022. Its windows have now closed.",
+  "what_this_means_for_you": {
+   "in_short": "SPENT AND CLOSED. Leftover 2020 and 2021 money stayed usable through 2022, with infrastructure payments allowed until 30 June 2023. Salaries were not extended either year.",
+   "in_practice": [
+    "2020 appropriations: available for release and disbursement until 31 December 2022",
+    "2021 appropriations: available for obligation until 31 December 2022",
+    "Infrastructure and capital outlays from both years: obligable to 31 December 2022, with delivery, inspection and payment by 30 June 2023",
+    "Continuing MOOE programmes extended to 31 December 2022",
+    "Personnel Services: 2020 money expired 31 December 2020; 2021 money expired 31 December 2021"
+   ],
+   "for_specific_groups": {
+    "Communities awaiting projects": "Work funded in 2020 or 2021 did not have to be cancelled and re-appropriated.",
+    "Contractors": "An extra 6 months beyond the obligation deadline to complete delivery, inspection and payment.",
+    "Government employees": "Nothing changed — salary appropriations lapsed on their original dates."
+   },
+   "where_this_applies": "The Bangsamoro Government's 2020 and 2021 appropriations.",
+   "when_you_will_feel_it": "Historic. The last window closed on 30 June 2023.",
+   "what_you_can_do": [
+    "Read this as budget history — it explains why 2020- and 2021-funded projects were still being paid into 2023"
+   ],
+   "watch_out_for": [
+    "This is the second extension of the 2020 budget: BAA 14 had already pushed it to the end of 2021, and this act pushed it again to the end of 2022.",
+    "No new money, and no change of purpose.",
+    "Personnel Services excluded in both years, as in every extension act in this series."
+   ],
+   "key_terms_explained": {
+    "Obligation": "Committing money to a contract or purchase, as distinct from actually paying it out.",
+    "MOOE": "Maintenance and Other Operating Expenses — the running costs of an office.",
+    "Capital outlay": "Money for lasting things: buildings, vehicles, equipment, infrastructure.",
+    "MFBM": "The Ministry of Finance, and Budget and Management, which issues the implementing guidelines."
+   },
+   "status_note": "Passed Jumada Al-Ula 23, 1443 / 28 December 2021, approved by the Chief Minister on 7 February 2022.",
+   "benefits": {
+    "headline": "Two budget years of project money kept alive instead of lapsing.",
+    "direct_benefits": [
+     {
+      "benefit": "2020 and 2021 project and operating money remained spendable through 2022",
+      "who_gets_it": "Communities and agencies with pending funded work",
+      "how_to_access": "Automatic — it changed deadlines, not processes"
+     },
+     {
+      "benefit": "An extra window to 30 June 2023 to complete and pay for infrastructure",
+      "who_gets_it": "Contractors and the communities awaiting the works",
+      "how_to_access": "Automatic"
+     }
     ],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Finance, and Budget and Management (MFBM)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2021-12-28 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Finance, and Budget and Management (MFBM) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 24",
-    "line2": "Extends the Availability of the 2020 and 2021",
-    "badges": [
-      "ENACTED",
-      "Budget Finance",
-      "2021"
+    "indirect_benefits": [
+     "Avoided mass cancellation and re-appropriation of already-budgeted work"
     ],
-    "what_this_does": "Extends the Availability of the 2020 and 2021 GAA Until December 31, 2022.",
-    "who_it_affects": "General public",
-    "effective": "2021-12-28"
-  },
-  "views": {
-    "simple": "Extends the Availability of the 2020 and 2021 GAA Until December 31, 2022.",
-    "official": "AN ACT EXTENDING THE AVAILABILITY OF THE 2020 AND 2021 GAA UNTIL DECEMBER 31, 2022"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "limitations": [
+     "No new money.",
+     "Salaries excluded in both years.",
+     "All windows have now expired."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act governs government spending deadlines."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "Ministry of Finance, and Budget and Management (MFBM), authorised to issue the implementing guidelines",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A road funded in the 2021 budget was still under construction at the end of that year. This act let the money stay obligated through 2022 and be paid out up to 30 June 2023.",
+    "An agency with unspent 2021 salary money could not carry it forward — Personnel Services expired on 31 December 2021."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Amends Section 47 of Bangsamoro Autonomy Act No. 3 (the FY2020 General Appropriations Act). All appropriations are available for release and disbursement for the purpose specified until 31 December 2022. For FY2020, infrastructure and capital outlays are valid for obligation until 31 December 2022, with delivery, inspection and payment no later than 30 June 2023; continuing programmes under MOOE are likewise obligable until 31 December 2022. Personnel Services remain valid for obligation and disbursement only until 31 December 2020. The MFBM is authorised to issue implementing guidelines.",
+  "Section 2 — Amends Section 47 of Bangsamoro Autonomy Act No. 15 (the FY2021 General Appropriations Act) in parallel terms. All appropriations are obligable until 31 December 2022. FY2021 infrastructure and capital outlays are valid for obligation until 31 December 2022, with delivery, inspection and payment no later than 30 June 2023; MOOE is valid for obligation and disbursement until 31 December 2022. Personnel Services remain valid only until 31 December 2021.",
+  "Section 3 — Repeals or modifies inconsistent laws, decrees, executive issuances, rules and regulations.",
+  "Section 4 — Takes effect immediately after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Communities with 2020- and 2021-funded projects",
+   "Bangsamoro ministries and agencies",
+   "Contractors"
+  ],
+  "impact_tags": [
+   "budget_appropriations",
+   "governance_civil_service"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "No new appropriation. It extends the life of money already appropriated by BAA 3 (FY2020) and BAA 15 (FY2021).",
+  "figures_note": "The act states no amount — it changes deadlines, not sums."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2021-12-28"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BAA-24.pdf",
+  "irr": "MFBM guidelines authorised by the amended Section 47. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [
+   "BAA 3",
+   "BAA 15"
+  ],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 159",
+  "related_note": "The second extension of the FY2020 budget — BAA 14 had already carried it to the end of 2021. Part of a running series of validity-extension acts with BAA 33, 34, 38, 51 and 52."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": null,
+  "irr_status": "The amended sections authorise the MFBM to issue implementing guidelines.",
+  "note": "Read from the enacted text as signed. The extensions it granted have expired, so the act is spent."
+ },
+ "citizen_questions": [
+  {
+   "q": "What did this do?",
+   "a": "It moved two deadlines. Money appropriated in the 2020 and 2021 Bangsamoro budgets stayed usable until 31 December 2022, and infrastructure funded in either year could be delivered and paid up to 30 June 2023."
+  },
+  {
+   "q": "Did it add money?",
+   "a": "No. It extended the availability of appropriations already made."
+  },
+  {
+   "q": "Why are salaries always excluded?",
+   "a": "Every extension act in this series keeps Personnel Services on its original expiry — 2020 money died at the end of 2020, 2021 money at the end of 2021 — so unspent payroll cannot be carried forward and redirected."
+  },
+  {
+   "q": "Is it still operative?",
+   "a": "No. The last window it opened closed on 30 June 2023."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 24",
+  "line2": "Extension of the 2020 and 2021 Appropriations",
+  "badges": [
+   "IN FORCE",
+   "Budget & Appropriations",
+   "2021"
+  ],
+  "what_this_does": "Kept 2020 and 2021 budget money spendable through 2022, with infrastructure payable to mid-2023.",
+  "who_it_affects": "Agencies with unspent funds · communities awaiting projects · contractors"
+ },
+ "views": {
+  "simple": "Extended the 2020 and 2021 Bangsamoro budgets to 31 December 2022, with infrastructure delivery and payment allowed until 30 June 2023, while letting salary appropriations expire on their original dates.",
+  "official": "AN ACT EXTENDING THE AVAILABILITY OF THE GENERAL APPROPRIATIONS ACT OF THE BANGSAMORO UNTIL DECEMBER 31, 2022, EXCEPT PERSONNEL SERVICES AND OTHER ITEMS OF THE MOOE, AMENDING FOR THE PURPOSE SECTION 47 OF THE GENERAL PROVISIONS OF THE GENERAL APPROPRIATIONS ACT OF THE BANGSAMORO FOR YEARS 2020 AND 2021"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 24, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

@@ -1,165 +1,209 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 2,
-    "short_title": "Adopts the Official Emblem for the Bangsamoro Autonomous",
-    "official_title": "AN ACT ADOPTING THE OFFICIAL EMBLEM FOR THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2019-08-29",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Adopts the Official Emblem for the Bangsamoro Autonomous Region in Muslim Mindanao.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Adopts the Official Emblem for the Bangsamoro Autonomous Region in Muslim Mindanao.",
-    "who_will_be_affected": [
-      "Employees & students",
-      "Communities"
-    ],
-    "when_will_it_take_effect": "Ratified 2019-08-29; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "An identity law: it defines an official symbol or observance of the Bangsamoro (flag, emblem, hymn, seal, calendar, holidays, or memorials). It doesn't hand out benefits, but it shapes the public face of the region you live in - what flies over government buildings, what days are non-working, how the Bangsamoro story is told.",
-      "in_practice": [
-        "Government offices, schools, and LGUs must use/observe it",
-        "Holiday-related acts affect work and class suspensions region-wide",
-        "Memorial acts create public sites and commemorations"
-      ],
-      "for_specific_groups": {
-        "Employees & students": "Regional holidays and observances flow from these laws",
-        "Communities": "Shared symbols of the autonomy won through the peace process"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Identity, recognition, and (for holiday laws) actual days off.",
-        "direct_benefits": [
-          {
-            "benefit": "Official identity: the symbols/observances of your autonomous region",
-            "who_gets_it": "All residents",
-            "how_to_access": "Public display and observance"
-          }
-        ],
-        "indirect_benefits": [
-          "Cultural pride and the normalization of Bangsamoro identity in public life"
-        ],
-        "limitations": [
-          "Symbolic laws confer no monetary claims"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 2,
+  "short_title": "Official Emblem (Bangsamoro Seal)",
+  "official_title": "AN ACT ADOPTING THE OFFICIAL EMBLEM FOR THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2019-08-29",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "First Regular Session (begun 29 March 2019)",
+  "date_passed": "2019-08-29",
+  "date_approved_by_chief_minister": "2019-09-06",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "other",
-      "symbols_identity"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2019-08-29"
-    }
+  "effectivity": "15 days after publication in a newspaper of regional circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Adopts the Official Bangsamoro Seal — a circular emblem with a rope border, a golden crescent and seven-rayed star on green — used to authenticate the region's official acts. An Arabic version is equally official.",
+  "why_was_it_proposed": "A government needs a mark that authenticates its own documents. The act adopts one and fixes its meaning, declaring the region a political entity that recognises the justness and legitimacy of the Bangsamoro cause.",
+  "what_will_change": "The region has an official seal for authenticating official acts, with each element given a stated meaning — and an Arabic-language version that carries the same official status as the English one.",
+  "who_will_be_affected": [
+   "Bangsamoro government offices, which use the seal to authenticate official acts",
+   "Anyone receiving or checking an official Bangsamoro document",
+   "Arabic-reading users, since the Arabic version is expressly official"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Office of the Chief Minister",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2019-08-29 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Office of the Chief Minister (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 2",
-    "line2": "Adopts the Official Emblem for the Bangsamoro Autonomous",
-    "badges": [
-      "ENACTED",
-      "Symbols Identity",
-      "2019"
+  "when_will_it_take_effect": "In force since 2019 — 15 days after publication in a newspaper of regional circulation.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. The region has an official seal that authenticates its official acts, and the Arabic version of it is just as official as the English one.",
+   "in_practice": [
+    "Circular, bordered by a rope, with a slightly red strip inside the rope",
+    "'BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO' across the top, flanked by stars; '2019' at the bottom",
+    "A golden crescent with a seven-rayed star to its right, set on green",
+    "Lettering in green on white; rope, crescent and star in golden yellow",
+    "An Arabic version is also official"
+   ],
+   "for_specific_groups": {
+    "Government offices": "The seal is the mark used to authenticate official acts.",
+    "Anyone verifying a document": "The act describes each element, so a seal can be checked against the law.",
+    "Arabic readers": "The Arabic version is official in its own right, not a translation of lesser standing."
+   },
+   "where_this_applies": "The BARMM.",
+   "when_you_will_feel_it": "In force since 2019.",
+   "what_you_can_do": [
+    "Check an official Bangsamoro document against the description in Section 3 if its authenticity matters to you"
+   ],
+   "watch_out_for": [
+    "Unlike the flag act passed a week earlier, this one gives no hex codes — only colour names — so exact reproduction is left to practice.",
+    "The act creates no offence for forging or misusing the seal, and names no office to control its use."
+   ],
+   "key_terms_explained": {
+    "Seal / emblem": "The mark a government puts on a document to show it is genuinely its own act.",
+    "Qur'an 3:103": "The verse the rope is drawn from — 'Hold tight to the rope of Allah, together. And be not divided.'"
+   },
+   "status_note": "Passed 29 August 2019, approved by the Chief Minister on 6 September 2019.",
+   "benefits": {
+    "headline": "An official mark of authenticity for the region's acts, with an equally official Arabic version.",
+    "direct_benefits": [
+     {
+      "benefit": "A described, checkable seal on official documents",
+      "who_gets_it": "Anyone dealing with Bangsamoro government documents",
+      "how_to_access": "Section 3 describes every element"
+     },
+     {
+      "benefit": "An Arabic version of equal official standing",
+      "who_gets_it": "Arabic-reading citizens and institutions",
+      "how_to_access": "Stated in Section 3"
+     }
     ],
-    "what_this_does": "Adopts the Official Emblem for the Bangsamoro Autonomous Region in Muslim Mindanao.",
-    "who_it_affects": "General public",
-    "effective": "2019-08-29"
-  },
-  "views": {
-    "simple": "Adopts the Official Emblem for the Bangsamoro Autonomous Region in Muslim Mindanao.",
-    "official": "AN ACT ADOPTING THE OFFICIAL EMBLEM FOR THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "A symbol that names Non-Moro Indigenous Peoples and other peoples in the region alongside the Bangsamoro, through the rope"
+    ],
+    "limitations": [
+     "No colour specification beyond names.",
+     "No offence for misuse or forgery.",
+     "No funding and no controlling office."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts — it does not legislate on forgery or unauthorised use of the seal."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "The office that issued the document",
+    "note": "The act names no implementing body and creates no complaints procedure."
+   },
+   "everyday_scenarios": [
+    "A resident receives a certificate from a Bangsamoro office and wants to know it is genuine. Section 3 describes the seal element by element — rope border, red inner strip, golden crescent and seven-rayed star on green, '2019' at the foot.",
+    "An office prepares documents for Arabic-speaking counterparts. The Arabic version of the seal is official, so it can be used without a separate authorisation."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Adopts the official emblem, referred to as the Official Bangsamoro Seal, for the authentication of the region's official acts and other purposes.",
+  "Section 2 — Policy: the region establishes itself as a political entity that recognises the justness and legitimacy of the cause of the Bangsamoro people, and adopts a seal reflective of its peoples' struggles and aspirations.",
+  "Section 3 — Design: circular, with 'BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO' at the upper portion preceded and ended by stars, and the year of the region's creation, '2019', at the lower portion. The outermost part is bordered by a rope; at the centre sits a crescent with a seven-rayed star to its right. The rope, crescent and star are golden yellow; a slightly red strip runs inside the rope; the crescent and star are set on green; the lettering is green on white.",
+  "Section 3 — Symbolism: the rope is the unity of the Bangsamoro, Non-Moro Indigenous Peoples and other peoples of the region, inspired by Qur'an 3:103, 'Hold tight to the rope of Allah, together. And be not divided.' The red strip is the blood of the fallen mujahideen. The crescent is the principles that guided those who struggled for self-determination. The seven-rayed star stands for Maguindanao, Lanao del Sur with Marawi City, Basilan with Lamitan City, Sulu, Tawi-Tawi, the City of Cotabato, and the 63 barangays formerly part of North Cotabato.",
+  "Section 3 — An Arabic version of the Official Bangsamoro Seal is likewise considered official.",
+  "Section 4 — Takes effect 15 days after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Everyone in the BARMM"
+  ],
+  "impact_tags": [
+   "governance_civil_service",
+   "culture_heritage"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": null,
+  "figures_note": "The act appropriates no funds."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2019-08-29"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2020/05/BAA-2.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 8",
+  "related_note": "Companion to the flag act (BAA 1), passed 6 days earlier, and to the official hymn (BAA 7) and the Parliament's own seal (BAA 16)."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": null,
+  "irr_status": "None required by the act.",
+  "note": "Read from the enacted text as signed. The signed copy carries a colour plate of the emblem, marked 'EMBLEM ENGLISH VERSION', as its final page."
+ },
+ "citizen_questions": [
+  {
+   "q": "What is the seal for?",
+   "a": "Authenticating the region's official acts — it is the mark that shows a document is genuinely an act of the Bangsamoro Government."
+  },
+  {
+   "q": "What does the rope mean?",
+   "a": "Unity between the Bangsamoro, Non-Moro Indigenous Peoples and the other peoples of the region. The act cites Qur'an 3:103: 'Hold tight to the rope of Allah, together. And be not divided.'"
+  },
+  {
+   "q": "Is the Arabic version official?",
+   "a": "Yes. Section 3 says an Arabic version of the seal is likewise considered official."
+  },
+  {
+   "q": "Why 2019 on the seal?",
+   "a": "It is the year the Bangsamoro Autonomous Region in Muslim Mindanao was created."
+  },
+  {
+   "q": "Are the exact colours specified?",
+   "a": "No. The act names the colours — golden yellow, green, white, slightly red — but unlike the flag act it gives no hex codes."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 2",
+  "line2": "Official Emblem of the Bangsamoro",
+  "badges": [
+   "IN FORCE",
+   "Culture & Heritage",
+   "2019"
+  ],
+  "what_this_does": "Adopts the Official Bangsamoro Seal used to authenticate the region's acts, in English and Arabic.",
+  "who_it_affects": "Government offices · anyone checking an official document"
+ },
+ "views": {
+  "simple": "Adopts the Official Bangsamoro Seal — a rope-bordered circle with a golden crescent and seven-rayed star on green — to authenticate the region's official acts, with an equally official Arabic version.",
+  "official": "AN ACT ADOPTING THE OFFICIAL EMBLEM FOR THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 2, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

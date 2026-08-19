@@ -1,162 +1,357 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 84,
-    "short_title": "Bangsamoro Budget System Act",
-    "official_title": "AN ACT PRESCRIBING A BUDGET SYSTEM FOR THE BANGSAMORO GOVERNMENT",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA3",
-    "date_ratified": "2025-12-09",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Prescribes a Budget System for the Bangsamoro Government.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Prescribes a Budget System for the Bangsamoro Government.",
-    "who_will_be_affected": [
-      "General public"
-    ],
-    "when_will_it_take_effect": "Ratified 2025-12-09; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "A governance law shaping how the Bangsamoro Government works. Its effect on daily life is indirect but real: clearer rules inside government generally mean faster, more accountable service at the counter.",
-      "in_practice": [
-        "Defines powers, procedures, or structures within the regional government"
-      ],
-      "for_specific_groups": {
-        "General public": "Better-defined government duties are the basis for demanding service"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Better-ordered government, indirectly better service.",
-        "direct_benefits": [
-          {
-            "benefit": "Clearer rules inside government you can hold offices to",
-            "who_gets_it": "General public",
-            "how_to_access": "Cite the law when following up transactions"
-          }
-        ],
-        "indirect_benefits": [
-          "Institutional maturity of the autonomy"
-        ],
-        "limitations": [
-          "Benefits are structural rather than claimable programs"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 84,
+  "short_title": "Bangsamoro Budget System Act of 2025",
+  "official_title": "AN ACT PRESCRIBING A BUDGET SYSTEM FOR THE BANGSAMORO GOVERNMENT",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA3",
+  "date_ratified": "2025-12-09",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Fourth Regular Session, begun 15 September 2022",
+  "date_passed": "2025-12-09",
+  "date_passed_hijri": "Jumada Al-Akhirah 18, 1447",
+  "date_approved_by_chief_minister": "2025-12-16",
+  "approved_by": "Chief Minister Abdulraof A. Macacua",
+  "signed_by": [
+   "Mohammad S. Yacob, Speaker",
+   "Prof. Raby B. Angkal, Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "All BARMM ministries",
-      "Public programs"
-    ],
-    "impact_tags": [
-      "budget_appropriations",
-      "priority_code"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2025-12-09"
-    }
+  "origin_bills": "Parliament Bill No. 325",
+  "effectivity": "15 days after publication in the Bangsamoro Gazette or a newspaper of general circulation in the region"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "The rulebook for the region's money — how the budget is prepared, passed, spent and accounted for, with hard ceilings on contingency funds and debt, a floor for gender programmes, and salary suspension for officials who don't report.",
+  "why_was_it_proposed": "The Organic Law grants the region fiscal autonomy but the region had been running its budget on national rules and annual practice. This writes a permanent budget system of its own — with an explicit aim of 'meaningful fiscal autonomy toward the attainment of economic self-sufficiency' and an acknowledgment of the region's asymmetrical relationship with the National Government.",
+  "what_will_change": "A Budget Coordinating Committee seating the Minority Floor Leader and a civil society representative sets fiscal policy. Every expenditure bill must come with a six-year cost estimate. Ministries must consult civil society and attach what came of it. Idle public funds are invested with a preference for Shari'ah-compliant instruments. And an official who fails to file the required reports has their salary suspended automatically until they do.",
+  "who_will_be_affected": [
+   "Every Bangsamoro ministry, office and agency, and government-owned corporation",
+   "Members of Parliament, whose expenditure bills must carry a six-year costing",
+   "Civil society organisations, which must be consulted and which hold a seat on the budget committee",
+   "Constituent LGUs, as to their statutory shares of taxes and revenues collected in the region",
+   "Ministers, chief accountants, budget officers and disbursing officers, personally liable for illegal expenditures",
+   "Anyone reading the budget — a citizen-friendly People's Budget must be published every year"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page. Origin: Bill 325."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": "Bill 325"
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Multiple ministries (code-dependent)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2025-12-09 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Multiple ministries (code-dependent) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 84",
-    "line2": "Bangsamoro Budget System Act",
-    "badges": [
-      "ENACTED",
-      "Priority Code",
-      "2025"
+  "when_will_it_take_effect": "In force since 2026 — approved by the Chief Minister on 16 December 2025, effective 15 days after publication. The act is self-executory and needs no implementing rules.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. This is the machinery behind every peso the regional government spends. The parts that touch you directly: a plain-language People's Budget published each year, a transparency seal on every ministry website, and a requirement that ministries consult civil society and show what they did with the input.",
+   "in_practice": [
+    "The Contingent Fund can never exceed 10% of the total budget",
+    "Debt service can never exceed 20% of regular revenues, nor 20% of the block grant",
+    "At least 5% of every ministry's and corporation's budget must go to gender-responsive programmes",
+    "Education, health and social services get the highest budgetary priority",
+    "Parliament cannot increase the total the Chief Minister proposes — it can only cut, and cuts go to the Contingent Fund or a line item",
+    "Every proposed expenditure bill must carry estimated costs for the first year and the next five",
+    "Ministries must consult accredited civil society organisations and attach a summary of the inputs and how they were considered",
+    "A citizen-friendly 'Bangsamoro People's Budget' must be published every fiscal year",
+    "Idle treasury funds are invested with a preference for Shari'ah-compliant instruments",
+    "Officials who fail to file reports or maintain the transparency seal have their salaries suspended automatically"
+   ],
+   "for_specific_groups": {
+    "Civil society organisations": "A representative from the Bangsamoro Economic and Development Council sits on the Budget Coordinating Committee, and every ministry must hold focused consultations with accredited CSOs during budget preparation and attach a summary of the inputs and how they were considered.",
+    "Members of Parliament": "Every expenditure bill you file must be accompanied by a Financial and Budgetary Information Sheet estimating costs for the initial year and the following five. Parliament also gains a formal fiscal oversight role through its finance committee, which can compel a non-compliant ministry head to produce reports under pain of contempt.",
+    "The Minority": "The Minority Floor Leader sits on the Budget Coordinating Committee alongside the Majority Floor Leader.",
+    "Parliament and the Shari'ah High Court": "Your appropriations are automatically and regularly released, and your Speaker and Presiding Justice may declare and use your own savings.",
+    "Constituent LGUs": "Your legally mandated shares — in national taxes collected in the region, in natural resource revenues, and in quarry taxes — are released by the treasury and remain available for obligation until fully expended.",
+    "Ministry finance officers": "You are personally and solidarily liable for illegal certifications and illegal expenditures, and an overdraft is a less grave civil service offence.",
+    "Public health and frontline workers": "Hazard pay may be granted to those assigned to dangerous or strife-torn areas, disease-infested places, or distressed or isolated stations and camps — including workers not covered by the national Magna Carta of Public Health Workers."
+   },
+   "where_this_applies": "All Bangsamoro ministries, offices and agencies and regional government corporations. Constituent LGUs are covered only as to their share of taxes collected in the region and the impact of their finances on the regional government.",
+   "when_you_will_feel_it": "The act is self-executory. A Transitory Plan for the fiscal policy statement, medium-term strategy, annual fiscal report and cash budgeting system was due within 3 months of effectivity and no later than the first parliamentary elections.",
+   "what_you_can_do": [
+    "Read the Bangsamoro People's Budget — a citizen-friendly summary of the appropriations act must be published every fiscal year",
+    "Check any ministry's transparency seal on its website for approved budgets, targets, beneficiaries, procurement plans and contracts awarded",
+    "Join your organisation's accreditation so it can take part in the mandatory budget consultations",
+    "Follow the Medium-Term Fiscal Strategy, published in the official gazette within 7 days of submission, and the Annual Fiscal Report, published on the website within 7 days",
+    "If a ministry is not filing its reports, the salary suspension in Section 75 is automatic — and Parliament's finance committee can compel production under pain of contempt"
+   ],
+   "watch_out_for": [
+    "Parliament may not increase the total the Chief Minister proposes, and no appropriation bill may even reach Parliament without the Chief Minister's approval. Budget initiative rests firmly with the executive.",
+    "The Chief Minister may suspend or stop further expenditure of any allotted funds whenever public interest so requires — except salaries of permanent officials and employees.",
+    "The Chief Minister may declare savings from a discontinued project during a declared calamity and realign them, reporting to Parliament within 15 days after the fact.",
+    "The Contingent Fund's 10% ceiling is high in absolute terms for a discretionary pot.",
+    "Several key mechanisms — the fiscal policy statement, medium-term strategy, annual fiscal report and cash budgeting system — were deferred to a Transitory Plan and the first elected Parliament.",
+    "The act carries no appropriation of its own."
+   ],
+   "key_terms_explained": {
+    "GAAB": "General Appropriations Act of the Bangsamoro — the annual budget law passed by Parliament.",
+    "Allotment": "The finance ministry's authorisation letting a ministry actually commit money against its appropriation.",
+    "Savings": "Money left over from a completed, discontinued or abandoned project, from efficiencies, from a cheaper contract, or from unfilled positions. It may be used to top up an existing item — never to fund a new one.",
+    "Augmentation": "Using savings to cover a shortfall in an existing item. The act is explicit that a non-existent project may never be funded this way.",
+    "Virement": "Moving money between budget items. The act's virement rules set who may approve which kind of transfer.",
+    "Re-enacted budget": "Where Parliament fails to pass a budget in time, the previous year's act continues — but stripped of completed projects and barred from funding capital outlays.",
+    "Single Treasury Account": "One linked structure of bank accounts so the government can see and use all its cash at once.",
+    "Transparency seal": "A standard disclosure page every ministry must keep on its website, carrying budgets, targets, beneficiaries, procurement plans and contracts awarded.",
+    "Moral governance": "Defined in this act as rules, practices and processes 'completely devoid of all evils of graft and corruption and explicitly driven by the moral principles of utmost dedication, devotion, honesty, justice, and integrity'.",
+    "Block grant": "The annual transfer from the National Government that funds most of the regional budget."
+   },
+   "status_note": "Passed 9 December 2025 and approved by the Chief Minister on 16 December 2025.",
+   "benefits": {
+    "headline": "Hard ceilings on contingency and debt, a gender floor, mandatory civil society consultation with a paper trail, a published People's Budget — and automatic salary suspension for officials who won't report.",
+    "direct_benefits": [
+     {
+      "benefit": "A citizen-friendly People's Budget published every fiscal year",
+      "who_gets_it": "The public",
+      "how_to_access": "Section 69, published by the finance ministry"
+     },
+     {
+      "benefit": "A transparency seal on every ministry and corporation website, carrying budgets, targets, beneficiaries, procurement plans and contracts awarded",
+      "who_gets_it": "Anyone tracking public spending",
+      "how_to_access": "Section 68, monitored by the Budget Office which reports to Parliament and the public"
+     },
+     {
+      "benefit": "Mandatory consultation with accredited civil society organisations, with a summary of inputs and how they were considered attached to every budget proposal",
+      "who_gets_it": "Civil society and communities",
+      "how_to_access": "Section 70"
+     },
+     {
+      "benefit": "At least 5% of every ministry's and corporation's budget reserved for gender-responsive programmes",
+      "who_gets_it": "Women and gender programmes across government",
+      "how_to_access": "Section 17, following a gender and development plan"
+     },
+     {
+      "benefit": "Highest budgetary priority to education, health and social services",
+      "who_gets_it": "Users of those services",
+      "how_to_access": "Section 17, through the Budget Priorities Framework"
+     },
+     {
+      "benefit": "A Contingent Fund capped at 10% of the total budget, with every release reported by date, amount, purpose and recipient",
+      "who_gets_it": "The public, as a check on discretionary spending",
+      "how_to_access": "Section 29"
+     },
+     {
+      "benefit": "Debt service capped at 20% of regular revenues and 20% of the block grant",
+      "who_gets_it": "Future budgets",
+      "how_to_access": "Section 30(b)"
+     },
+     {
+      "benefit": "Automatic and regular release of appropriations for Parliament and the Shari'ah High Court",
+      "who_gets_it": "The legislature and the Shari'ah judiciary",
+      "how_to_access": "Section 41"
+     },
+     {
+      "benefit": "Personal and solidary liability of officials for illegal certifications and expenditures",
+      "who_gets_it": "The public treasury",
+      "how_to_access": "Sections 71 and 72"
+     },
+     {
+      "benefit": "Automatic suspension of salaries where reports or transparency requirements are not complied with",
+      "who_gets_it": "The public, as an enforcement lever",
+      "how_to_access": "Section 75"
+     }
     ],
-    "what_this_does": "Prescribes a Budget System for the Bangsamoro Government.",
-    "who_it_affects": "All BARMM ministries · Public programs",
-    "effective": "2025-12-09"
-  },
-  "views": {
-    "simple": "Prescribes a Budget System for the Bangsamoro Government.",
-    "official": "AN ACT PRESCRIBING A BUDGET SYSTEM FOR THE BANGSAMORO GOVERNMENT"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "A six-year costing sheet attached to every expenditure bill",
+     "Investment of idle treasury funds with a preference for Shari'ah-compliant instruments, and an Annual Investment Strategy submitted to Parliament",
+     "A Single Treasury Account consolidating the government's cash",
+     "Detailed rules governing a re-enacted budget, barring capital outlays and completed projects",
+     "COA retained as exclusive external auditor",
+     "An express bar on funding a non-existent programme through augmentation"
+    ],
+    "limitations": [
+     "Parliament cannot raise the executive's proposed total, and no appropriation bill reaches it without the Chief Minister's approval.",
+     "The Chief Minister may suspend expenditures and, during a declared calamity, realign savings with only after-the-fact reporting.",
+     "Key instruments were deferred to a Transitory Plan and the first elected Parliament.",
+     "The act appropriates nothing for its own implementation."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes duties on government, not on the public.",
+     "Accredited civil society organisations are the counterparties in the mandatory budget consultations."
+    ],
+    "for_ministries": [
+     "Submit budget proposals linked explicitly to the Development Plan and Investment Program, with performance indicators and comparative data",
+     "Consult accredited civil society organisations and attach a summary of the inputs and how they were considered",
+     "Submit Budget Execution Documents — financial plan, physical plan, monthly disbursement programme and annual procurement plan — before funds are released",
+     "File quarterly Budget and Financial Accountability Reports and an annual accomplishment report to Parliament",
+     "Maintain a transparency seal on the official website",
+     "Never incur an overdraft, certify a fictitious obligation, or fund a non-existent project from savings",
+     "Reserve at least 5% of the budget for gender-responsive programmes"
+    ],
+    "for_parliament": [
+     "Accompany every proposed expenditure bill with a Financial and Budgetary Information Sheet covering the initial year and the following five",
+     "Prioritise consideration of the appropriations bill, with a committee report within 60 days and plenary debate closed within 30 days of that report",
+     "Exercise fiscal oversight through its committees, and compel non-compliant ministry heads to produce reports under pain of contempt"
+    ]
+   },
+   "what_is_prohibited": [
+    "Certifying an obligation as payable without a valid claim supported by sufficient evidence, or certifying a non-existent or fictitious obligation or creditor.",
+    "Authorising or incurring any expenditure in violation of this act, the appropriations act, or any other appropriations law.",
+    "Incurring or authorising expenditures in excess of the allotments released.",
+    "Causing the inclusion of fraudulent information in any accountability report.",
+    "Funding a non-existent programme, activity or project through augmentation from savings.",
+    "Declaring savings from a project discontinued because of implementation delay or procurement failure.",
+    "Contracting out the monitoring and other regular or recurring activities of a ministry.",
+    "Employing anyone under the guise of voluntary service below the authorised hiring rate but with allowances or per diems, unless specifically approved by the Chief Minister.",
+    "Receiving both a pension and the compensation of a government position.",
+    "Applying any government fund or property to a purpose other than that for which it was appropriated."
+   ],
+   "penalties": {
+    "illegal_certification": "A grave offence under the Bangsamoro Civil Service Code, without prejudice to criminal prosecution; the payment is illegal and every official authorising, making, participating in or receiving it is jointly and severally liable to the Bangsamoro Government for the full amount.",
+    "illegal_expenditure": "The expenditure is null and void, the payment illegal, and every official or employee authorising, making, participating in or receiving it is jointly and severally liable for the full amount. Knowingly incurring such an obligation is a grave offence under the Civil Service Code, without prejudice to criminal prosecution.",
+    "overdraft": "A less grave offence under the Bangsamoro Civil Service Code, with the responsible party personally liable.",
+    "fraudulent_reports": "Administrative and criminal sanctions under existing laws.",
+    "failure_to_report": "Automatic suspension of the salaries of the Minister, heads of office, chief accountants, budget officers, cashiers, disbursing officers and other responsible officers until full compliance. No appropriation may be used to pay a violator's salary; no allotment release for negative-list items or realignment, and no recommendation on the use of savings, may be approved. Failure to report income at the end of a reporting period renders all disbursements in subsequent periods void, with joint and several liability for the full amount. Parliament's finance committee may compel production of the reports under pain of contempt.",
+    "misuse_of_funds": "Penalties under applicable penal statutes and civil service laws."
+   },
+   "where_to_complain": {
+    "first_stop": "The Ministry of Finance, and Budget and Management, through the Bangsamoro Budget Office, which monitors transparency seal compliance and reports periodically to Parliament and the public",
+    "oversight": "Parliament, through its Committee on Finance, Budget and Management, which may act on its own initiative or on the request of the Commission on Audit or the finance Minister",
+    "audit": "The Commission on Audit remains the exclusive external auditor of the Bangsamoro Government",
+    "note": "The Budget Coordinating Committee includes the Minority Floor Leader and a civil society representative."
+   },
+   "everyday_scenarios": [
+    "A resident wants to know what their municipality's share of regional spending is. Section 69's People's Budget and Section 68's transparency seal are the two published sources this act creates.",
+    "A civil society group is invited to a budget consultation and never hears back. Section 70 requires the ministry to attach a summary of the consultations, the inputs received, and how they were considered, to its budget proposal.",
+    "A ministry has not filed its reports for two quarters. Section 75 automatically suspends the salaries of the Minister, chief accountant, budget officer and disbursing officers until it complies, and blocks any realignment or use of savings.",
+    "A project stalls because procurement failed, and the ministry wants to call the money savings. Section 46 excludes discontinuance due to implementation delay or procurement failure from the definition of savings.",
+    "A minister wants to move money into a programme that was never in the budget. Section 48 states that in no case shall a non-existent programme be funded through augmentation."
+   ]
   }
+ },
+ "key_provisions": [
+  "Sections 1–4 — Short title: the “Bangsamoro Budget System Act of 2025”. Policy: accountability, integrity and moral governance in the use of public funds, through an integrated system of planning, programming, budgeting, management, internal control, accounting, reporting and review, “taking into account the Bangsamoro Government's fiscal autonomy and its asymmetrical relationship with the National Government and its constituent Local Government Units”, and directed at meaningful fiscal autonomy toward economic self-sufficiency. Coverage runs to all Bangsamoro ministries, offices and agencies and to regional government corporations; constituent LGUs are covered only as to their share of taxes collected in the region and the impact of their finances on the regional government. Among the definitions, “Moral Governance” means “the set of rules, practices, and processes completely devoid of all evils of graft and corruption and explicitly driven by the moral principles of utmost dedication, devotion, honesty, justice, and integrity”.",
+  "Sections 5–13 — Fiscal responsibility. A Bangsamoro Budget Coordinating Committee is created, chaired by the Senior Minister of the Office of the Chief Minister, co-chaired by the Minister of Finance, and Budget and Management, with the Director General of the planning authority, the heads of the Budget and Treasury Offices, the Majority Floor Leader, the Minority Floor Leader, and a civil society representative from the Bangsamoro Economic and Development Council. It aligns the Development Plan, investment programmes and proposed budget; approves macroeconomic targets, revenue projections and expenditure priorities; recommends the annual expenditure ceiling; prepares the Statement of Fiscal Policy and the Medium-Term Fiscal Strategy; and provides mechanisms to ensure all laws Parliament passes are sufficiently funded. The Statement of Fiscal Policy is submitted within 90 days of a Chief Minister taking office; the Medium-Term Fiscal Strategy by 15 March each year, published in the official gazette within 7 days; and the Annual Fiscal Report within 30 days from the fourth Monday of July, published on the website within 7 days. Deviations from fiscal objectives are permitted for a major natural disaster or unanticipated severe economic shock and must be disclosed in the Annual Fiscal Report. Under shared fiscal discipline, “all proposed expenditure bills shall, upon their filing, be accompanied by a Financial and Budgetary Information Sheet containing estimates of the financial and budgetary implications for the initial year of implementation and the succeeding five (5) years”.",
+  "Sections 14–25 — Budget preparation. Four budget philosophies govern the cycle: programmatic, transparent, performance-based and phased. No new appropriation may be proposed unless covered by estimated income or current surplus, or supported by a corresponding new revenue measure. Budget priorities follow the Bangsamoro Development Plan and Development Investment Program, and every proposal must state its linkage to them. The Budget Priorities Framework, presented each April, must give “the highest budgetary priority to education, health, and social services” and requires that “at least 5% (5%) of the total budget appropriation of each M/O/A and BGOCC shall be set aside for gender-responsive programs following a gender and development plan”. Budget proposals come from ministry heads, the Speaker of Parliament and the Presiding Justice of the Shari'ah High Court. Proposals are evaluated on their relationship to the Chief Minister's priority agenda, past performance against target spending including allotments left unobligated through the agency's own fault or negligence, implementation readiness, programme convergence, and all sources of funds available. The Chief Minister submits the Proposed Bangsamoro Budget to Parliament as far as practicable by 30 September, published on the official website the same day, comprising the Budget Message, the Expenditure Program, the Budget of Expenditures and Sources of Financing, the Budget Priorities Framework and the Annual Investment Strategy. No legislative proposal involving the appropriation of funds may be transmitted to Parliament without the Chief Minister's approval.",
+  "Sections 26–33 — Budget authorisation. Parliament prioritises the appropriations bill: filed and calendared for first reading within 5 calendar days of submission, second reading discussion starting within 5 days after, a committee report within 60 calendar days of referral, plenary debate and amendments closed within 30 calendar days of that report, and third reading 3 days after the second — waived where the bill is certified or an emergency measure. Special Purpose Funds comprise the Contingent Fund, the Special Development Fund, the Statutory Shares of Constituent LGUs, the Local Government Support Fund, and others Parliament may approve in highly exceptional circumstances. Releases from the Contingent Fund require the Chief Minister's approval on the finance ministry's recommendation after technical assessment, are reflected in the annual fiscal reports with date, amount, purpose and recipient, and “in no case shall the Contingent Fund exceed 10% (10%) of the total GAAB”. Automatic appropriations cover foreign grant counterparts, debt service — which “shall not exceed 20% (20%) of the regular sources of revenue” and “shall not exceed 20% (20%) of the block grant” — terminal leave benefits, and authorised special accounts. Parliament “shall, in no case, increase the total budget appropriations proposed by the Chief Minister”; reductions go to the Contingent Fund or to a line item. Where no budget is enacted, the previous year's act is deemed re-enacted, capped at the prior total and at the sources of financing in the proposed budget, excluding completed projects, and in no case released or used for capital outlays.",
+  "Sections 34–45 — Budget execution. No funds are disbursed except in pursuance of an appropriation law, and appropriated sums are available solely for their stated purposes. Within 3 years the government must implement an operational cash budgeting system; appropriations are available for obligation only until the end of each fiscal year, with payments made until the end of an Extended Payment Period, unreleased appropriations lapsing, and unobligated allotments reverting to the treasury under a Special Fund for reappropriation. The appropriations act itself serves as the allotment order for comprehensive release, with Special Allotment Release Orders for items on the negative list. Ministries submit Budget Execution Documents — financial plan, physical plan, monthly disbursement programme and annual procurement plan — before funds are released. Appropriations for Parliament and the Shari'ah High Court “shall be automatically and regularly released”. The legally mandated shares of constituent LGUs — in national taxes, fees and charges collected in the region other than tariff and customs duties, in revenues from the exploration, development and utilisation of natural resources, and in the regional tax on quarry resources — are released through the treasury. A Certificate of Availability of Funds must be secured before any obligation, and a Multi-Year Contracting Authority before any multi-year contract. Early procurement activities are authorised up to the recommendation of award, with the notice of award issued only after the appropriations act or the release order.",
+  "Sections 46–51 — Virement. Savings may be declared from the final completion, discontinuance or abandonment of a project — where that termination is due to force majeure or an unforeseen cause beyond the agency's control, or where the objectives are already met, “and not due to implementation delay or procurement failure” — from justified inability to obligate, from improved systems and efficiencies, from a lower contract cost, and from unused Personnel Services arising from unfilled or abolished positions, non-entitlement to allowances, unpaid leaves, and deaths or decreases among pensioners. During a declared state of national or regional calamity the Chief Minister may declare savings from a discontinued project to augment deficient programmes, reporting comprehensively to Parliament within 15 days. A project discontinued as the basis for savings may not be proposed for funding in the next two fiscal years, except where the discontinuance arose from a calamity declaration. The Chief Minister, the Speaker and the Presiding Justice of the Shari'ah High Court may each declare and use savings within their own appropriations. Augmentation may cover only a deficiency in an existing item, and “in no case shall a non-existent P/A/P be funded through augmentation from savings or by using an appropriation authorized in the GAAB”. The Chief Minister may suspend or stop further expenditure of allotted funds whenever public interest requires, except Personnel Services for permanent officials and employees, and the finance Minister may reduce allotments where receipts fall short of expectations.",
+  "Sections 52–59 — Financial management. All fees and receipts accrue to the General Fund unless authorised otherwise by national law or an Act of Parliament. A Single Treasury Account is adopted, following the structure of the national Treasury Single Account. The treasury may invest idle funds — excluding reverted unobligated allotments, which are reserved solely for reappropriation by Parliament — subject to terms set by the Chief Minister on the Budget Coordinating Committee's recommendation and with Parliament's concurrence through its finance committee. Consistent with Section 32, Article XII of the Organic Law on developing an Islamic banking and finance system, the treasury “shall prioritize investments in Shari'ah-compliant financial instruments” and may engage Islamic finance experts and fund managers, provided such investments are at par with conventional options in security, liquidity and yield; conventional investments — bank deposits, investment-grade sovereign securities, and AAA-rated fixed income confirmed by two international agencies — are a fallback where no suitable Shari'ah-compliant option exists. An Annual Investment Strategy is submitted to Parliament as part of the budget documents. Personnel controls cover hazard pay for those in dangerous, strife-torn, disease-infested, distressed or isolated posts including workers outside the national Magna Carta of Public Health Workers; a bar on drawing both a pension and a salary; a rule that monitoring and regular or recurring ministry activities shall not be contracted out; representation and transportation allowances down to division chiefs; personnel economic relief allowance; and a prohibition on employing anyone under the guise of voluntary service.",
+  "Sections 60–67 — Accountability and oversight. COA rules continue to govern accounting and reporting. Ministries file Budget and Financial Accountability Reports on appropriations, allotments, obligations, disbursements and unexpended balances. A management information system is to be designed with interoperability across the Bangsamoro and National Governments. The finance ministry conducts a continuing review of each agency's budgetary programme and project structure, oversees financial reporting and consolidates reports for the Chief Minister, Parliament and COA, exercises fiscal oversight over regional corporations in coordination with the Governance Commission for GOCCs, and monitors constituent LGUs' financial performance with the Bureau of Local Government Finance and the interior ministry. Ministries and corporations submit an annual accomplishment report to Parliament covering work and financial results. Parliament exercises fiscal oversight through its committees, reviewing performance against the appropriations act, the Statement of Fiscal Policy, the Medium-Term Fiscal Strategy and the audited reports. The Commission on Audit “shall serve as the exclusive external auditor of the Bangsamoro Government”.",
+  "Sections 68–70 — Transparency and participation. Every ministry, office, agency and government corporation must maintain a transparency seal on its website carrying approved budgets and targets, programme and project categories, beneficiaries and implementation status, evaluations, accomplishment reports, annual procurement plans and contracts awarded, with the Budget Office monitoring compliance and reporting periodically to Parliament and the public. The finance ministry must publish, every fiscal year, citizen-friendly summaries of the appropriations act — the “Bangsamoro People's Budget”. Participatory budget mechanisms are required, and as part of budget preparation every ministry “shall conduct focused consultations with relevant accredited civil society organizations and other key stakeholders to solicit public input on budget priorities”, including “a summary of the consultations held, the inputs received, and how these were considered, as a mandatory attachment to their budget proposals”.",
+  "Sections 71–76 — Enforcement. No obligation may be certified payable unless founded on a valid claim supported by sufficient evidence; a certification for a fictitious obligation or creditor is void, the certifying official commits a grave offence under the Bangsamoro Civil Service Code without prejudice to criminal prosecution, and every official authorising, making, participating in or receiving the payment is jointly and severally liable for the full amount. Expenditures in violation of the act or the appropriations law are null and void, with the same solidary liability and a grave offence for knowing violation. Incurring an overdraft is a less grave offence with personal liability. Fraudulent accountability reports draw administrative and criminal sanctions. Failure to submit required reports or to comply with the transparency seal “shall automatically cause the suspension of payment of their salaries until full compliance”, bars any appropriation from paying a violator's salary, and blocks allotment releases for negative-list items, realignments and recommendations on the use of savings; failure to report income at the end of a reporting period renders all disbursements in subsequent periods void with solidary liability; and Parliament's finance committee may, on its own initiative or at the request of COA or the finance Minister, compel the non-compliant agency head under pain of contempt to produce the reports and explain the failure. Misuse of government funds or property draws penalties under applicable penal statutes and civil service laws.",
+  "Sections 77–80 — The act “is self-executory and shall take effect without the need for detailed implementing guidelines”, though the finance ministry may issue clarifying guidelines. Because certain provisions — the Fiscal Policy Statement, Medium-Term Fiscal Strategy, Annual Fiscal Report and Cash Budgeting System — require a structured transition, the ministry must submit a Transitory Plan to Parliament within 3 months of effectivity and in no case later than the first elections of the Members of Parliament. Repealing and separability clauses. Effective 15 days after publication in the Bangsamoro Gazette or a newspaper of general circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "The public, through published budgets and transparency requirements",
+   "Civil society organisations, through mandatory consultation and a committee seat",
+   "Women and gender programmes, through the 5% floor",
+   "Users of education, health and social services, given the highest priority",
+   "Parliament and the Shari'ah High Court, through automatic release of their appropriations",
+   "Constituent LGUs, through defined statutory shares"
+  ],
+  "impact_tags": [
+   "budget_finance",
+   "governance_civil_service",
+   "priority_code",
+   "local_government"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "No appropriation of its own — the act prescribes the system rather than funding a programme",
+  "figures_note": "Key ratios: Contingent Fund capped at 10% of the total appropriations act; debt service capped at 20% of regular revenues and 20% of the block grant; at least 5% of each agency's budget for gender-responsive programmes."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2025-12-09"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page. Origin: Bill 325."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/12/BAA-84.pdf",
+  "irr": "None required — Section 77 declares the act self-executory. A Transitory Plan was due to Parliament within 3 months of effectivity."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": "All inconsistent regional laws, executive orders, rules and regulations",
+  "origin_bill": "Parliament Bill No. 325",
+  "related_note": "Implements the fiscal autonomy provisions of RA 11054, including Section 19 and Section 24(c) of Article XII on reverted funds and the block grant, and Section 32 of Article XII on developing an Islamic banking and finance system. Personnel controls run through BAA 17, the Bangsamoro Civil Service Code, which also supplies the offence classifications used in the enforcement title. Budget priorities are drawn from the Bangsamoro Development Plan and Development Investment Program produced under BAA 6, and the Budget Coordinating Committee seats the planning authority's Director General and a civil society representative from the council created by that act. Procurement follows RA 12009, the New Government Procurement Act, and COA remains the exclusive external auditor."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "None — the act prescribes a system rather than funding a programme",
+  "irr_status": "Section 77 declares the act self-executory and requiring no detailed implementing guidelines. The finance ministry may issue clarifying guidelines, and was required to submit a Transitory Plan to Parliament within 3 months of effectivity and no later than the first parliamentary elections.",
+  "implementing_agency": {
+   "agency": "Ministry of Finance, and Budget and Management, through the Bangsamoro Budget Office and Bangsamoro Treasury Office, with the Bangsamoro Budget Coordinating Committee",
+   "inferred": false
+  },
+  "note": "Read from the enacted text as signed, all 35 pages and 80 sections. Several core instruments — the Statement of Fiscal Policy, Medium-Term Fiscal Strategy, Annual Fiscal Report and Cash Budgeting System — were expressly deferred, with the first of each required only after the first elections of Members of Parliament and the constitution of the new Government of the Day."
+ },
+ "citizen_questions": [
+  {
+   "q": "Where can I read the budget in plain language?",
+   "a": "Section 69 requires the finance ministry to publish, every fiscal year, citizen-friendly summaries of the appropriations act — the Bangsamoro People's Budget — with in-depth explanations and both qualitative and quantitative data."
+  },
+  {
+   "q": "Do ministries have to consult the public on their budgets?",
+   "a": "Yes. Section 70 requires every ministry to conduct focused consultations with accredited civil society organisations and key stakeholders, and to attach a summary of the consultations, the inputs received, and how these were considered, as a mandatory attachment to its budget proposal."
+  },
+  {
+   "q": "Can Parliament add to the budget?",
+   "a": "No. Section 31 says Parliament shall in no case increase the total appropriations proposed by the Chief Minister. It can reduce, and any reduction goes to the Contingent Fund or to a line item. No appropriation proposal may even be transmitted to Parliament without the Chief Minister's approval."
+  },
+  {
+   "q": "How big can the discretionary fund get?",
+   "a": "The Contingent Fund may in no case exceed 10% of the total appropriations act, and every release must be reported in the annual fiscal reports with its date, amount, purpose and recipient ministry."
+  },
+  {
+   "q": "Is there a limit on borrowing?",
+   "a": "Yes. Appropriations for debt servicing shall not exceed 20% of the regular sources of revenue — excluding grants, endowments, donations, loans and development assistance — and shall not exceed 20% of the block grant."
+  },
+  {
+   "q": "Is any of the budget guaranteed for women's programmes?",
+   "a": "Yes. At least 5% of the total budget appropriation of every ministry, office, agency and regional government corporation must be set aside for gender-responsive programmes under a gender and development plan."
+  },
+  {
+   "q": "What happens if a ministry does not file its reports?",
+   "a": "Section 75 automatically suspends payment of the salaries of the Minister, heads of office, chief accountants, budget officers, cashiers, disbursing officers and other responsible officers until full compliance. No appropriation may be used to pay a violator's salary, and no allotment release, realignment or use of savings will be approved. Parliament's finance committee can also compel production under pain of contempt."
+  },
+  {
+   "q": "Can leftover money be moved to a new project?",
+   "a": "No. Savings may only top up a deficiency in an existing item — Section 48 states that in no case shall a non-existent programme, activity or project be funded through augmentation."
+  },
+  {
+   "q": "What if Parliament fails to pass a budget?",
+   "a": "The previous year's act is deemed re-enacted, capped at the prior total, stripped of completed projects, and in no case released or used for capital outlays."
+  },
+  {
+   "q": "Who audits the regional government?",
+   "a": "The Commission on Audit, which Section 67 retains as the exclusive external auditor."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 84",
+  "line2": "Bangsamoro Budget System Act of 2025",
+  "badges": [
+   "IN FORCE",
+   "Budget & Finance",
+   "2025"
+  ],
+  "what_this_does": "Sets the region's permanent budget rules — ceilings on contingency and debt, a gender floor, mandatory public consultation, and salary suspension for officials who don't report.",
+  "who_it_affects": "Every ministry and agency · Parliament · civil society · LGUs",
+  "effective": "2025-12-16"
+ },
+ "views": {
+  "simple": "The region's permanent budget system: a coordinating committee seating the Minority Floor Leader and a civil society representative, a six-year costing sheet required on every expenditure bill, a Contingent Fund capped at 10% and debt service at 20%, at least 5% of every agency's budget for gender programmes, highest priority to education, health and social services, idle treasury funds invested with a preference for Shari'ah-compliant instruments, a published People's Budget and transparency seals, mandatory civil society consultation with a written account of what came of it — and automatic salary suspension for officials who fail to report.",
+  "official": "AN ACT PRESCRIBING A BUDGET SYSTEM FOR THE BANGSAMORO GOVERNMENT"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 84, enacted text as signed (Parliament's acts index), all 35 pages and 80 sections.",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

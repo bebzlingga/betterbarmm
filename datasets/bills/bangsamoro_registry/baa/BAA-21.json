@@ -1,189 +1,217 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 21,
-    "short_title": "Authorizes PHP 50,000,000 for Additional Oxygen Tanks (2021",
-    "official_title": "AN ACT AUTHORIZING PHP 50,000,000 FOR ADDITIONAL OXYGEN TANKS (2021 QUICK RESPONSE FUND ON HEALTH)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2021-08-24",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Authorizes PHP 50,000,000 for Additional Oxygen Tanks (2021 Quick Response Fund on Health).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Authorizes PHP 50,000,000 for Additional Oxygen Tanks (2021 Quick Response Fund on Health).",
-    "who_will_be_affected": [
-      "Parents & students",
-      "Patients",
-      "Workers & suppliers",
-      "Taxpayers"
-    ],
-    "when_will_it_take_effect": "Ratified 2021-08-24; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "This is a money law: it decides how much funding BARMM ministries and programs get - the schools, hospitals, roads, scholarships, and social services you use are all paid from it. No single citizen 'applies' for it, but nearly every public service you touch depends on it.",
-      "in_practice": [
-        "Sets each ministry's budget ceiling for the year (or adds/extends funds mid-year for supplementals and extensions)",
-        "Slow disbursement is the recurring issue - several BAAs exist purely to extend the validity of unspent funds",
-        "Big-ticket items to watch: education (MBHTE), health (MOH), public works (MPW), and the Special Development Fund for conflict-affected communities"
-      ],
-      "for_specific_groups": {
-        "Parents & students": "Classroom construction, teacher hiring, and scholarship slots are set here",
-        "Patients": "Hospital operating budgets, medicines, and health worker salaries flow from this law",
-        "Workers & suppliers": "Government projects and procurement opportunities follow the appropriations",
-        "Taxpayers": "This is the accountability document - compare what was appropriated with what was actually delivered"
-      },
-      "where_this_applies": "All of BARMM",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Follow-up reports: the Parliament itself has passed resolutions demanding ministries account for these funds"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Funds every public service you use - the enabler of all other benefits.",
-        "direct_benefits": [
-          {
-            "benefit": "Operating budgets for schools, hospitals, roads, scholarships, social programs",
-            "who_gets_it": "Everyone using public services",
-            "how_to_access": "Automatic through the funded agencies"
-          },
-          {
-            "benefit": "Salaries of teachers, health workers, and government personnel",
-            "who_gets_it": "Public employees",
-            "how_to_access": "Through payroll of funded agencies"
-          },
-          {
-            "benefit": "Special Development Fund projects in conflict-affected communities",
-            "who_gets_it": "Camp and conflict-affected barangays",
-            "how_to_access": "Through LGU/OCM project identification"
-          }
-        ],
-        "indirect_benefits": [
-          "Procurement and job opportunities from funded projects",
-          "Predictability: agencies can plan the year"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Compare appropriations vs. actual delivery - Parliament's own resolutions demand these reports; you can too"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Amount stated in title: PHP 50,000,000",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 21,
+  "short_title": "Oxygen Buffer Stock of 2021",
+  "official_title": "AN ACT AUTHORIZING THE USE OF FIFTY MILLION PESOS (PHP 50,000,000.00) FOR THE ACQUISITION OF ADDITIONAL OXYGEN TANKS TO BE CHARGED AGAINST THE 2021 QUICK RESPONSE FUND ON HEALTH OF THE BANGSAMORO GOVERNMENT",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2021-08-24",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session",
+  "date_passed": "2021-08-24",
+  "date_passed_hijri": "Muharram 15, 1443",
+  "date_approved_by_chief_minister": "2021-09-22",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Health workers",
-      "Hospitals",
-      "Patients"
-    ],
-    "impact_tags": [
-      "budget_finance",
-      "health",
-      "hospital_health"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2021-08-24"
-    }
+  "effectivity": "Immediately after publication"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Releases ₱50 million from the region's health emergency fund to buy oxygen tanks for hospitals and health facilities across the BARMM, to be shared out equitably among the provinces.",
+  "why_was_it_proposed": "It was passed in August 2021, during the pandemic's most severe wave, when medical oxygen was the binding constraint on treating critically ill patients. The act is an emergency purchase — a buffer stock, as its own short title says.",
+  "what_will_change": "The Ministry of Health received ₱50 million specifically for additional oxygen tanks, distributed equitably across the provinces, and was required to publish the details of that distribution on its transparency seal.",
+  "who_will_be_affected": [
+   "Patients needing medical oxygen in any health facility in the region",
+   "Hospitals and health facilities across all provinces of the BARMM",
+   "The Ministry of Health, which receives and spends the money",
+   "Taxpayers, since the ₱50 million came from the 2021 Quick Response Fund on Health"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Health (MOH)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2021-08-24 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Health (MOH) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 21",
-    "line2": "Authorizes PHP 50,000,000 for Additional Oxygen Tanks (2021",
-    "badges": [
-      "ENACTED",
-      "Budget Finance",
-      "Hospital Health",
-      "2021"
+  "when_will_it_take_effect": "Took effect immediately on publication in 2021. The purchase it authorised is complete or lapsed; the act remains on the books.",
+  "what_this_means_for_you": {
+   "in_short": "SPENT. ₱50 million of emergency health money was released in 2021 to buy oxygen tanks for hospitals across the region, shared out among the provinces — and the Ministry of Health was required to publish where it went.",
+   "in_practice": [
+    "₱50,000,000 charged against the 2021 Quick Response Fund on Health",
+    "Spent specifically on additional oxygen tanks — the act names no other use",
+    "Distributed equitably among the different provinces of the BARMM",
+    "Released by the Ministry of Finance, and Budget and Management to the Ministry of Health",
+    "The Ministry of Health must post the details of distribution on its transparency seal"
+   ],
+   "for_specific_groups": {
+    "Patients": "The point of the act is that a health facility in your province has oxygen when you need it.",
+    "Provincial health facilities": "Distribution is required to be equitable across provinces, not concentrated where the biggest hospitals are.",
+    "Anyone checking where the money went": "Section 5 requires the Ministry of Health to publish the distribution details on its transparency seal — this is a rare, express publication duty."
+   },
+   "where_this_applies": "All provinces of the BARMM.",
+   "when_you_will_feel_it": "The purchase was made in 2021; the tanks remain in the health system.",
+   "what_you_can_do": [
+    "Look for the fund distribution details on the Ministry of Health's transparency seal — the act requires them to be posted"
+   ],
+   "watch_out_for": [
+    "'Equitably distributed' is not defined — no formula, no per-province allocation, and no requirement to publish one.",
+    "The act sets no deadline for the purchase and no reporting date.",
+    "No penalty attaches if the transparency duty in Section 5 is not met."
+   ],
+   "key_terms_explained": {
+    "Quick Response Fund": "A standing pot of money government keeps for emergencies so it does not have to pass a new budget in a crisis.",
+    "Transparency seal": "A page a Philippine government agency is required to maintain publishing its budget, projects and spending.",
+    "Buffer stock": "A reserve held so supply does not run out under a sudden surge in demand."
+   },
+   "status_note": "Passed Muharram 15, 1443 / 24 August 2021, approved by the Chief Minister on 22 September 2021.",
+   "benefits": {
+    "headline": "₱50 million of oxygen tanks for health facilities across the region, with the distribution required to be published.",
+    "direct_benefits": [
+     {
+      "benefit": "Additional oxygen tanks in regional health facilities",
+      "who_gets_it": "Patients needing medical oxygen",
+      "amount": "₱50,000,000 in total",
+      "how_to_access": "Through the health facility — the act funds supply, not an individual claim"
+     },
+     {
+      "benefit": "Published details of how the money was distributed",
+      "who_gets_it": "Anyone watching public spending",
+      "how_to_access": "Ministry of Health transparency seal"
+     }
     ],
-    "what_this_does": "Authorizes PHP 50,000,000 for Additional Oxygen Tanks (2021 Quick Response Fund on Health).",
-    "who_it_affects": "Health workers · Hospitals · Patients",
-    "effective": "2021-08-24"
-  },
-  "views": {
-    "simple": "Authorizes PHP 50,000,000 for Additional Oxygen Tanks (2021 Quick Response Fund on Health).",
-    "official": "AN ACT AUTHORIZING PHP 50,000,000 FOR ADDITIONAL OXYGEN TANKS (2021 QUICK RESPONSE FUND ON HEALTH)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "A regional buffer stock rather than facility-by-facility scramble during a surge"
+    ],
+    "limitations": [
+     "One-off purchase, not a continuing programme.",
+     "'Equitable' distribution is undefined.",
+     "No individual entitlement — this funds facilities."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None.",
+    "note": "No sanction is attached to the transparency duty in Section 5."
+   },
+   "where_to_complain": {
+    "first_stop": "Ministry of Health (MOH), which holds and spends the fund",
+    "oversight": "Ministry of Finance, and Budget and Management (MFBM), which releases it, under the usual accounting and auditing rules",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A district hospital in Tawi-Tawi runs short of medical oxygen during a surge. This act funded additional tanks distributed across the provinces so supply did not depend on reaching Cotabato City.",
+    "A resident wants to know how the ₱50 million was split between provinces. Section 5 requires the Ministry of Health to include the distribution details in what it posts on its transparency seal."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Oxygen Buffer Stock of 2021”.",
+  "Section 2 — Authorises ₱50,000,000 from the 2021 Quick Response Fund on Health for the acquisition of additional oxygen tanks in the BARMM.",
+  "Section 3 — The additional oxygen tanks are to be equitably distributed among the different provinces of the BARMM to ensure a sufficient supply of medical oxygen in the Region's health facilities.",
+  "Section 4 — The fund is released by the Ministry of Finance, and Budget and Management to the Ministry of Health, subject to the usual accounting and auditing laws, rules and regulations.",
+  "Section 5 — The Ministry of Health shall ensure the details of fund distribution are included in the information posted on its transparency seal.",
+  "Section 7 — Takes effect immediately after publication."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Patients needing medical oxygen",
+   "Health facilities across the BARMM"
+  ],
+  "impact_tags": [
+   "health",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱50,000,000 from the 2021 Quick Response Fund on Health",
+  "figures_note": "Quoted from Section 2 of the enacted text."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2021-08-24"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2021/10/BAA-21.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 95",
+  "related_note": "Charged against the 2021 Quick Response Fund on Health rather than creating a new appropriation."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱50,000,000",
+  "irr_status": "None required by the act.",
+  "note": "Read from the enacted text as signed. This authorised a one-off purchase in 2021; whether the transparency posting required by Section 5 was made is not recorded here."
+ },
+ "citizen_questions": [
+  {
+   "q": "How much was spent, and on what?",
+   "a": "₱50 million, on additional oxygen tanks — the act authorises nothing else."
+  },
+  {
+   "q": "Where did the money come from?",
+   "a": "The 2021 Quick Response Fund on Health of the Bangsamoro Government, the standing pot kept for emergencies. It was not a new appropriation."
+  },
+  {
+   "q": "Who got the tanks?",
+   "a": "Health facilities across the region. Section 3 requires equitable distribution among the different provinces of the BARMM, though it does not define what equitable means."
+  },
+  {
+   "q": "Can I find out how it was divided up?",
+   "a": "Section 5 requires the Ministry of Health to include the fund distribution details in what it posts on its transparency seal."
+  },
+  {
+   "q": "Is this a continuing programme?",
+   "a": "No. It authorised a single purchase in 2021."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 21",
+  "line2": "Oxygen Buffer Stock of 2021",
+  "badges": [
+   "IN FORCE",
+   "Health",
+   "2021"
+  ],
+  "what_this_does": "Released ₱50 million of emergency health money to buy oxygen tanks for health facilities across the region.",
+  "who_it_affects": "Patients needing oxygen · provincial health facilities"
+ },
+ "views": {
+  "simple": "Authorised ₱50 million from the 2021 health emergency fund to buy oxygen tanks, distributed equitably among the provinces, with the Ministry of Health required to publish where the money went.",
+  "official": "AN ACT AUTHORIZING THE USE OF FIFTY MILLION PESOS (PHP 50,000,000.00) FOR THE ACQUISITION OF ADDITIONAL OXYGEN TANKS TO BE CHARGED AGAINST THE 2021 QUICK RESPONSE FUND ON HEALTH OF THE BANGSAMORO GOVERNMENT"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 21, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

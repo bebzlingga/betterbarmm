@@ -1,166 +1,383 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 82,
-    "short_title": "Bangsamoro Labor and Employment Code",
-    "official_title": "AN ACT INSTITUTING A LABOR AND EMPLOYMENT CODE FOR THE BANGSAMORO AUTONOMOUS REGION",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA3",
-    "date_ratified": "2025-11-12",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Institutes a Labor and Employment Code for the Bangsamoro Autonomous Region.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Institutes a Labor and Employment Code for the Bangsamoro Autonomous Region.",
-    "who_will_be_affected": [
-      "General public"
-    ],
-    "when_will_it_take_effect": "Ratified 2025-11-12; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "A governance law shaping how the Bangsamoro Government works. Its effect on daily life is indirect but real: clearer rules inside government generally mean faster, more accountable service at the counter.",
-      "in_practice": [
-        "Defines powers, procedures, or structures within the regional government"
-      ],
-      "for_specific_groups": {
-        "General public": "Better-defined government duties are the basis for demanding service"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "A labor code tuned to the Bangsamoro workplace.",
-        "direct_benefits": [
-          {
-            "benefit": "Regional standards for wages, conditions, and dispute settlement",
-            "who_gets_it": "Private-sector workers in BARMM",
-            "how_to_access": "Through MOLE-BARMM labor standards and arbitration"
-          },
-          {
-            "benefit": "Protection and industrial-peace mechanisms for employers too",
-            "who_gets_it": "BARMM businesses",
-            "how_to_access": "MOLE-BARMM compliance guidance"
-          }
-        ],
-        "indirect_benefits": [
-          "Clearer rules attract formal employment and investment"
-        ],
-        "limitations": [
-          "Interplay with the national Labor Code matters - seek MOLE guidance on which rule governs your case"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 82,
+  "short_title": "Bangsamoro Labor and Employment Code",
+  "official_title": "AN ACT INSTITUTING A LABOR AND EMPLOYMENT CODE FOR THE BANGSAMORO AUTONOMOUS REGION, TO AFFORD PROTECTION TO LABOR, PROMOTE EMPLOYMENT AND HUMAN RESOURCES DEVELOPMENT, ENSURE INDUSTRIAL PEACE BASED ON SOCIAL JUSTICE, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA3",
+  "date_ratified": "2025-11-12",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Fourth Regular Session, begun 15 September 2022",
+  "date_passed": "2025-11-12",
+  "date_passed_hijri": "Jumada Al-Awwal 21, 1447",
+  "date_approved_by_chief_minister": "2025-12-10",
+  "approved_by": "Chief Minister Abdulraof A. Macacua",
+  "signed_by": [
+   "Mohammad S. Yacob, Speaker",
+   "Prof. Raby B. Angkal, Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "other",
-      "priority_code"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2025-11-12"
-    }
+  "effectivity": "15 days after publication in the Bangsamoro Gazette or a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "The region's own labour code — 278 sections across 8 books covering hiring, hours, wages, leaves, safety, unions, dismissal, retirement and a new regional labour court. It prevails over the national Labor Code inside the BARMM.",
+  "why_was_it_proposed": "The Organic Law devolved labour and employment to the region. Rather than administer national rules, Parliament wrote a code that keeps the familiar architecture of Philippine labour law and then adds what the national code has no reason to contain: a whole book on the religious and cultural rights of Muslim and non-Muslim workers, and a set of protections aimed at the specific ways workers here have been treated.",
+  "what_will_change": "Prayer breaks become paid working time. Employers must provide prayer space, respect the call to prayer, accommodate fasting and dietary restrictions, and grant pilgrimage leave. The minimum employable age rises to eighteen. Labour-only contracting draws a ₱5 million fine on the contractor and the principal alike. A worker who joins a strike that was procedurally defective cannot be dismissed for it. And no union organiser may be arrested — or even invited for questioning — over a labour dispute without the labour ministry's clearance.",
+  "who_will_be_affected": [
+   "Every worker and employer in the BARMM, in the formal and informal economy",
+   "Muslim workers, whose prayer, fasting, dress and pilgrimage obligations become enforceable workplace rights",
+   "Non-Muslim workers, whose own religious and cultural practices are protected in the same book",
+   "Contractors and the companies that hire them, now jointly liable and separately licensed",
+   "Unions and organisers, with a lower registration threshold and protection from arrest without ministry clearance",
+   "Domestic workers, overseas workers, working children, differently-abled and older workers, each with their own chapter"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Multiple ministries (code-dependent)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2025-11-12 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Multiple ministries (code-dependent) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 82",
-    "line2": "Bangsamoro Labor and Employment Code",
-    "badges": [
-      "ENACTED",
-      "Priority Code",
-      "2025"
+  "when_will_it_take_effect": "Approved by the Chief Minister on 10 December 2025 and in force 15 days after publication. The implementing rules have up to 1 year, so much of the machinery arrives later.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW, and it beats the national Labor Code inside the BARMM. Your prayer breaks are paid time. You can ask for prayer space and pilgrimage leave. You cannot be made to handle food or goods against your religion. You become a regular employee after 1 year. And if you are dismissed, the employer — not you — has to prove the dismissal was valid.",
+   "in_practice": [
+    "Short breaks for rest or prayer during working hours count as hours worked, and are paid",
+    "A 60-minute uninterrupted break on your weekly holy day, treated as compensable time",
+    "Employers with 20 or more employees must endeavour to provide a designated prayer space",
+    "Your preference for a weekly rest day must be respected, especially when based on religion — and where no fixed rest day can be scheduled, Friday work earns a 30% premium",
+    "Pilgrimage leave: up to 30 days, unpaid, once in your entire employment, after 2 years of service, with 60 days' notice",
+    "No employer may impose a dress code that contravenes your sincerely held religious beliefs, except for certified safety reasons",
+    "No worker can be compelled to handle, prepare, cook, buy or sell food or merchandise against their religious beliefs",
+    "You are a regular employee after 1 year of service — continuous or broken",
+    "7 days' paid bereavement leave a year, 15 days' paid quarantine leave in a public health crisis, and 10 days' paid leave for survivors of violence",
+    "You cannot be disciplined for ignoring a work message sent after hours",
+    "The minimum employable age in the region is 18",
+    "Filing a labour standards complaint costs nothing — there is no docket fee — and you can appear without a lawyer"
+   ],
+   "for_specific_groups": {
+    "Muslim workers": "Book III makes prayer time paid, requires prayer space, protects the call to prayer, guarantees Iftar and Suhoor during Ramadhan, grants pilgrimage leave, and forbids being forced to handle goods contrary to your beliefs.",
+    "Non-Muslim workers": "Book III is written for Muslim and non-Muslim workers alike — the holy-day break, clothing protection, dietary accommodation and religious-observance provisions are not limited by faith.",
+    "Married men with more than one wife": "Paternity leave covers the first four deliveries or miscarriages of a legal spouse; where a worker has multiple legal wives, the entitlement across the first four deliveries is aggregated, with rules to be issued taking the Muslim Code into account.",
+    "Women workers": "105 days' maternity leave with full pay plus 30 unpaid and 15 more for solo parents, 2 months' gynaecological leave, lactation stations in every establishment, female quarters and a child-minding area where there are 50 or more employees, and a workplace sexual harassment regime with an internal committee that must be headed by a woman and decide within 10 days.",
+    "Contractual and agency workers": "Labour-only contracting makes you a regular employee of the principal, retroactive to your first day of deployment, and the principal is solidarily liable for any violation of this Code.",
+    "Union members and organisers": "Registration needs 10% of the bargaining unit, participation in a procedurally illegal strike is not a dismissal ground, police must stay out of picket lines absent actual violence, and no organiser may be questioned, arrested or detained over a labour dispute without prior clearance from the labour ministry.",
+    "Informal-economy workers": "Employment Transition Assistance of ₱2,000 a month for up to 2 months, plus a stated framework for moving into the formal labour market.",
+    "Overseas workers": "Direct hiring is banned, recruitment agencies must register with the ministry and keep a physical office in the region, government officials and their relatives to the fourth degree are disqualified from the recruitment business, and money claims — land-based or sea-based — go to the regional board regardless of amount.",
+    "Domestic workers": "The ministry fixes your minimum wage, and your cases go to the Bangsamoro Labor Conciliation and Arbitration Board regardless of the amount involved.",
+    "Employers": "Almost every duty in the code is yours, and in a dismissal case the burden of proving just or authorised cause rests on you."
+   },
+   "where_this_applies": "All establishments and workplaces in the BARMM, for profit or not. The labour justice system is organised into three sub-regions: South Central Mindanao (Maguindanao del Norte and del Sur, Cotabato City and the Special Geographic Area), North Central Mindanao (Lanao del Sur and Marawi City), and South Western Mindanao (Basilan and Tawi-Tawi).",
+   "when_you_will_feel_it": "The rights are in force now. The implementing rules have up to a year, and the new arbitration board, wage orders and contractor licensing follow from those.",
+   "what_you_can_do": [
+    "Ask your employer for a designated prayer space if there are 20 or more of you, and for your holy-day break to be scheduled",
+    "Check whether short prayer and rest breaks are being deducted from your pay — under Section 61 they should not be",
+    "If you have served a year, you are a regular employee whatever your contract says",
+    "If you are placed by an agency that has no real capital or does not control your work, you are a regular employee of the company you actually work for",
+    "Bring wage and benefit complaints to the ministry — labour standards disputes carry no docket fee and you may appear without a lawyer",
+    "If you are dismissed, remember the employer must prove the cause; and a reinstatement order is executory immediately, even while the employer appeals"
+   ],
+   "watch_out_for": [
+    "₱30,000,000 is the entire initial appropriation for a 278-section code that has to stand up a new arbitration board with three sub-regional offices, a wage-setting function and an inspectorate.",
+    "The implementing rules have up to 1 year from effectivity, so much of the code is not yet operable.",
+    "The general penalty clause does not set its own scale — Section 268 applies the sanctions of the national Labor Code. Specific fines exist only where the code states them.",
+    "Retail, service and agricultural establishments with ten or fewer workers are exempt from holiday pay, service incentive leave and retirement pay — which in this region covers a great many employers.",
+    "Pilgrimage leave is unpaid, available once in an entire career, and may be refused where it would disrupt work or cause serious loss.",
+    "The Seasonal Incentive is expressly subject to the availability of the employer's funds.",
+    "Section 271 declares this code prevails over the national Labor Code inside the BARMM, and Section 216 conditions the arrest of a union organiser on ministry clearance. Both assert regional authority in areas where national law and national agencies also operate, and neither has been tested.",
+    "The three sub-regions of the labour justice system do not include Sulu."
+   ],
+   "key_terms_explained": {
+    "Labour-only contracting": "When an agency merely supplies workers without real capital, equipment or control over the work. It is prohibited, and the workers become regular employees of the company they were placed with.",
+    "Solidary liability": "Each of two parties is fully answerable for the whole obligation. Here the principal and the service contractor are both direct employers, so a worker may recover from either.",
+    "Security of tenure": "You cannot be dismissed except for a just or authorised cause, and only with due process.",
+    "SEnA": "Single Entry Approach — a mandatory 30-day conciliation-mediation step every labour issue goes through before it becomes a case.",
+    "BLCAB": "Bangsamoro Labor Conciliation and Arbitration Board — the region's labour tribunal, replacing recourse to the national commission for most disputes here.",
+    "Voluntary arbitration": "The parties pick a neutral decision-maker whose award is final. The code makes this the primary mode of settling labour disputes in the region.",
+    "Unfair labour practice": "Acts that attack the right to organise or bargain. Under this code they are civil wrongs and criminal offences, and include dismissal by reason of religion, political affiliation, age, sex, culture or tribal affiliation.",
+    "Wage order": "The ministry's issuance setting minimum wage rates for the region, effective 15 days after publication and appealable to the Minister within 10 days.",
+    "Iftar and Suhoor": "The breaking of the fast at sunset and the pre-dawn meal during Ramadhan. Employers are to respect both as a matter of company policy.",
+    "Right to disconnect": "You cannot be reprimanded or disciplined for ignoring work messages sent outside working hours."
+   },
+   "status_note": "Passed by the BTA Parliament on 12 November 2025 and approved by the Chief Minister on 10 December 2025.",
+   "benefits": {
+    "headline": "Religious practice becomes an enforceable workplace right, regularisation comes at 1 year, contracting abuses draw ₱5 million fines, and labour justice moves into the region — free to file and open to non-lawyers.",
+    "direct_benefits": [
+     {
+      "benefit": "Prayer and rest breaks counted as hours worked, and paid",
+      "who_gets_it": "All workers",
+      "how_to_access": "Section 61"
+     },
+     {
+      "benefit": "A 60-minute compensable holy-day break each week, a designated prayer space where there are 20 or more employees, and respect for the call to prayer",
+      "who_gets_it": "All workers observing a weekly holy day",
+      "how_to_access": "Sections 107 to 109, with prior notice for scheduling"
+     },
+     {
+      "benefit": "Pilgrimage leave of up to 30 days",
+      "who_gets_it": "Employees with at least 2 years of service, regardless of employment status",
+      "how_to_access": "Section 110 — unpaid, once in an entire tenure, with 60 days' notice; accrued leave credits may be used"
+     },
+     {
+      "benefit": "Protection of religious clothing, dietary restrictions and fasting, and a right not to handle merchandise against your beliefs",
+      "who_gets_it": "All workers, including managerial employees",
+      "how_to_access": "Sections 106, 111 and 113"
+     },
+     {
+      "benefit": "Regular employment after 1 year of service, continuous or broken",
+      "who_gets_it": "All employees",
+      "how_to_access": "Section 219(b)"
+     },
+     {
+      "benefit": "7 days' paid bereavement leave a year, 15 days' paid quarantine leave, 10 days' paid VAWC leave, 2 months' gynaecological leave",
+      "who_gets_it": "Employees in the public and private sector",
+      "how_to_access": "Sections 135 to 138"
+     },
+     {
+      "benefit": "Regularisation and a ₱5,000,000 fine on both contractor and principal where labour-only contracting is found",
+      "who_gets_it": "Agency-placed workers",
+      "how_to_access": "Section 223, retroactive to first deployment; the ministry may also close the contractor"
+     },
+     {
+      "benefit": "Protection from dismissal for taking part in a strike declared illegal on procedural grounds, even if a replacement was hired",
+      "who_gets_it": "Workers and union officers",
+      "how_to_access": "Section 215(b)"
+     },
+     {
+      "benefit": "No arrest, detention or invitation for questioning of a union member or organiser over a labour dispute without prior ministry clearance",
+      "who_gets_it": "Union members and organisers",
+      "how_to_access": "Section 216"
+     },
+     {
+      "benefit": "Free filing of labour standards disputes, appearance without a lawyer, and reinstatement orders executory despite appeal",
+      "who_gets_it": "All complaining workers",
+      "how_to_access": "Sections 202(b), 255 and 265"
+     },
+     {
+      "benefit": "₱2,000 a month for up to 2 months in Employment Transition Assistance",
+      "who_gets_it": "Informal-economy workers",
+      "how_to_access": "Section 51"
+     },
+     {
+      "benefit": "At least 1% of positions reserved for differently-abled persons in private corporations with more than 100 employees",
+      "who_gets_it": "Differently-abled workers",
+      "how_to_access": "Section 31"
+     }
     ],
-    "what_this_does": "Institutes a Labor and Employment Code for the Bangsamoro Autonomous Region.",
-    "who_it_affects": "General public",
-    "effective": "2025-11-12"
-  },
-  "views": {
-    "simple": "Institutes a Labor and Employment Code for the Bangsamoro Autonomous Region.",
-    "official": "AN ACT INSTITUTING A LABOR AND EMPLOYMENT CODE FOR THE BANGSAMORO AUTONOMOUS REGION"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "A regional labour tribunal with sub-regional offices, mandatory decision periods and voluntary arbitration as the primary mode",
+     "Mandatory licensing of contractors with ₱5 million paid-up capital, open to union inspection",
+     "Wage orders set for the region, including a minimum wage for domestic workers",
+     "A tripartite industrial peace council with 3 seats each for workers and employers",
+     "Annual compliance reporting by the ministry to Parliament, and mandatory parliamentary review of the whole code every 5 years"
+    ],
+    "limitations": [
+     "₱30 million initial funding for the entire code.",
+     "Implementing rules may take a year.",
+     "Small retail, service and agricultural employers are exempt from several core benefits.",
+     "The general penalty scale is borrowed from the national Labor Code."
+    ]
+   },
+   "your_responsibilities": {
+    "for_workers": [
+     "Give prior notice so your holy-day break can be scheduled, and 60 days' notice for pilgrimage leave.",
+     "Give 1 month's written notice if you resign without cause — though not where you leave over serious insult, inhuman treatment, sexual harassment, or a crime against you or your family.",
+     "Refrain from, discourage and report gender-based sexual harassment in the workplace."
+    ],
+    "for_employers": [
+     "Count prayer and rest breaks as hours worked, respect the call to prayer, provide prayer space where you have 20 or more employees, and grant the weekly holy-day break as compensable time",
+     "Accommodate religious clothing, dietary restrictions and fasting, and adopt a written accommodation policy with a grievance mechanism",
+     "Pay on the 15th and 30th; do not withhold wages, take kickbacks, or retaliate against a complaining worker",
+     "Provide lactation stations; provide female quarters and a child-minding area if you regularly employ 50 or more",
+     "Set up a sexual harassment committee headed by a woman, at least half women, deciding within 10 days",
+     "Issue guidelines on after-hours communication, and do not discipline anyone for ignoring it",
+     "Prove just or authorised cause in any dismissal, and give the ministry 1 month's notice with audited proof for retrenchment or redundancy",
+     "Obtain a ministry licence before engaging in contracting, with ₱5 million paid-up capital"
+    ],
+    "for_the_ministry": [
+     "MOLE fixes minimum wages by wage order after public hearings, licenses contractors and recruitment agencies, inspects workplaces day or night, may stop work where there is grave and imminent danger, issues the implementing rules within 1 year, and reports annually to Parliament"
+    ]
+   },
+   "what_is_prohibited": [
+    "Discrimination or harassment based on religious or cultural clothing, and dress codes contravening sincerely held religious beliefs absent a certified safety reason.",
+    "Compelling a worker to handle, prepare, process, cook, buy or sell any food or merchandise against their religious beliefs.",
+    "Withholding wages, inducing a worker to give up part of their wages, deducting wages as the price of employment, and retaliating against a worker who complains or testifies.",
+    "Labour-only contracting, and contracting without a ministry licence.",
+    "Employing anyone under 18 outside the narrow exceptions in the working-children chapter.",
+    "Direct hiring of overseas workers, and recruitment by government officials or their relatives within the fourth degree.",
+    "Dismissing or discriminating against an employee by reason of religion, political affiliation, age, sex, culture or tribal affiliation.",
+    "Terminating an employee for being afflicted with an emerging or re-emerging infectious disease.",
+    "Employing strike-breakers, and having public officials, the armed forces, police or private security introduce or escort replacement workers.",
+    "Arresting, detaining or inviting for questioning a union member or organiser over a labour dispute without prior ministry clearance.",
+    "Gender-based sexual harassment in work, education and training environments.",
+    "Obstructing or delaying the Minister's compliance orders — and no lower court may enjoin them."
+   ],
+   "penalties": {
+    "general": "Section 268 applies the sanctions of Presidential Decree No. 442, the national Labor Code, or other pertinent laws, to violations of this Code or its implementing rules.",
+    "specific": "₱5,000,000 against a labour-only contractor and its principal, with power to close the contractor (Section 223). ₱50,000 to ₱1,000,000 for breach of the employer's sexual harassment duties, and ₱5,000 to ₱100,000 for the related duties in Sections 150 to 152 (Sections 147 and 153). ₱50,000 to ₱5,000,000 for violations of the working-children chapter (Section 43). ₱100,000 to ₱500,000 plus closure and deportation for unlawful employment of foreign nationals (Section 53). Administrative penalties set by the ministry for religious and cultural discrimination (Sections 106 and 111).",
+    "criminal": "Unfair labour practices are criminal offences, but no prosecution may be started without a final administrative judgment first finding that one was committed; only officers who actually participated in, authorised or ratified the practice are criminally liable.",
+    "contempt": "The Minister and the Board may punish direct contempt summarily with a fine of up to ₱5,000."
+   },
+   "where_to_complain": {
+    "first_stop": "The Ministry of Labor and Employment — every labour issue goes through a mandatory 30-day conciliation-mediation under the Single Entry Approach",
+    "arbitration": "Bangsamoro Labor Conciliation and Arbitration Board, with conciliator-mediators in each of the three sub-regions; original and exclusive jurisdiction over unfair labour practice, illegal dismissal, wage and money claims, strike legality, domestic worker cases and overseas worker money claims",
+    "voluntary": "A voluntary arbitrator, which the code declares the primary mode of settlement; grievances unsettled after 7 days go there automatically",
+    "courts": "No court or tribunal other than the Court of Appeals or the Supreme Court may hear a labour dispute",
+    "note": "Labour standards disputes carry no docket fee, and non-lawyers may appear for themselves or for their organisation."
+   },
+   "everyday_scenarios": [
+    "A cashier is told prayer breaks will be deducted from her pay. Section 61 counts short breaks for rest or prayer during working hours as hours worked.",
+    "A Muslim stock clerk is assigned to handle alcohol and pork. Section 111 says no worker may be compelled to handle, prepare, buy or sell any merchandise against their religious beliefs.",
+    "A worker has been on repeated five-month contracts for 2 years. Section 219 makes an employee regular after 1 year of service, continuous or broken, and Section 221 deems a fixed term imposed to defeat security of tenure a regular employment.",
+    "An agency supplies janitors to a company but owns no equipment and does not supervise them. That is labour-only contracting: the janitors are regular employees of the company from their first day, and both firms face a ₱5 million fine.",
+    "A union officer joins a strike that turns out to have missed a notice requirement. Under Section 215(b) that participation is not a ground for termination, even if a replacement was hired.",
+    "An employee is messaged about work at 10pm and does not reply. Section 157 forbids reprimanding or disciplining them for it."
+   ]
   }
+ },
+ "key_provisions": [
+  "Sections 1–9 (General Provisions) — Short title: the Bangsamoro Labor and Employment Code. All doubts in implementing and interpreting the Code, including its implementing rules, are resolved in favour of labour. Section 8 sets the minimum employable age within the BARMM at eighteen, except as provided in the chapter on working children. Policy commitments include formalising the informal economy, regulating foreign nationals through a permit system, and ensuring culturally and gender-sensitive programmes.",
+  "Book I, Pre-Employment (Sections 10–58) — Technical-vocational and digital entrepreneurship training; the Special Program for Employment of Bangsamoro Students and Youth for those aged 15 to 30 whose family income is below the regional poverty threshold; an internship programme expressly open to Islamic degree holders; JobStart; public employment service offices; regulation of overseas employment with a ban on direct hiring, mandatory registration of recruitment agencies with a physical office in the region on a three-year licence, disqualification of government officials and their relatives within the fourth degree, and illegal recruitment carrying perpetual disqualification from government service; rights of public sector contract-of-service and job-order workers to self-organisation, collective negotiation and safe conditions; a reservation of at least 1% of positions for differently-abled persons in private corporations with more than 100 employees; the working-children chapter with a trust fund of 30% of earnings above ₱200,000 annually and fines of ₱50,000 to ₱5,000,000; Employment Transition Assistance of ₱2,000 a month for up to 2 months for informal-economy workers; and a work permit regime for foreign nationals with a labour market test and penalties of ₱100,000 to ₱500,000, closure and deportation.",
+  "Book II, Conditions of Employment and Wages (Sections 59–105) — Normal hours of eight a day with flexible arrangements not exceeding standard weekly hours. “Periods of short duration for rest or prayer during working hours shall be counted as hours worked.” Night shift differential of 10% between 10pm and 6am; overtime at 25%, or 30% on a rest day or holiday; women night workers protected for 16 weeks around childbirth. On rest days, the employer “shall primarily respect the preferences of employees regarding the weekly rest day, especially when such preference is based on religious grounds”, and where no regular rest day can be scheduled, work on Fridays and special non-working days earns a 30% premium. Holiday pay, 5 days' service incentive leave after a year, full and equal distribution of service charges, and a Seasonal Incentive of at least ₱1,000 subject to the availability of employer funds. Wages are paid on the 15th and 30th; withholding wages, kickbacks, deductions as the price of employment, retaliation against complainants and false reporting are all unlawful. Minimum wage rates for the region — including for domestic workers — are fixed by MOLE by wage order after public hearings, effective 15 days after publication on its website and social media, appealable to the Minister within 10 days with a mandatory 60-day decision. Financially distressed employers may seek exemption for a non-extendible maximum of 3 years per increase; if denied, workers receive the differential plus 1% monthly interest retroactive to the wage order.",
+  "Book III, Cultural Rights and Practices of Muslim and Non-Muslim Workers (Sections 106–113) — Employers must respect the religious and cultural clothing of all workers including managerial employees, and may not impose a dress code contravening sincerely held religious beliefs except on certified safety grounds; discrimination or harassment on that basis carries administrative penalties. Employees have the right to request a dedicated prayer space, and employers with 20 or more employees shall endeavour to provide one. Workers are entitled to an uninterrupted break of not less than 60 minutes during their weekly holy day, considered compensable time. Employers shall respect the call to prayer and take reasonable measures to minimise disturbances preventing employees from hearing it. Pilgrimage leave of up to 30 days, unpaid, may be availed once in an entire tenure by any employee with 2 years of service regardless of status, on 60 days' notice, with no termination or diminution of benefits or seniority for taking it. No worker may be forced into activities contrary to their religious or cultural beliefs; employers must accommodate dietary restrictions and fasting schedules and ensure no worker is compelled to handle, prepare, process, cook, buy or sell any food or non-food merchandise against their beliefs, under a written policy with a grievance mechanism. Bangsamoro holidays are observed under BAA 39, and Iftar and Suhoor during Ramadhan are to be respected as a matter of company policy.",
+  "Book IV, Social Welfare and Protection (Sections 114–160) — Occupational safety and health, with qualified health personnel including mental health professionals, a physician or dentist on the premises of hazardous workplaces for at least 2 hours, emergency hospital arrangements, mandatory workplace mental health policies, and ministry administration of safety standards with chartered cities allowed to inspect where capable. Maternity leave of 105 days with full pay plus an optional 30 unpaid and 15 more for solo parents, with 60 days for miscarriage, and up to 7 days allocable to the child's father or an alternate caregiver. Paternity leave of 7 days for the first four deliveries or miscarriages of a legal spouse — with the entitlement aggregated where a worker has multiple legal wives, under rules taking cognisance of the Muslim Code. Solo parent leave, VAWC leave of ten paid days, 2 months' gynaecological leave, 7 days' annual bereavement leave under BAA 72, and 15 days' paid quarantine leave during a public health crisis. Lactation stations in all establishments; female quarters and a play and child-minding area where 50 or more are regularly employed. A full gender-based sexual harassment regime covering work, education and training environments, with employer solidary liability, an internal committee headed by a woman and at least half women deciding within 10 days, fines of ₱50,000 to ₱1,000,000 and ₱5,000 to ₱100,000, and yearly spontaneous inspections. Prohibitions on disability and age discrimination. A right to disconnect: an employee shall not be reprimanded, punished or disciplined for disregarding a work-related communication sent after working hours, and every employer must issue guidelines.",
+  "Book V, Employment Relations (Sections 161–216) — Self-organisation for all employees including the ambulant, intermittent, itinerant, self-employed, rural workers and those without definite employers. Union registration with MOLE on a ₱1,000 fee and, for independent unions, members comprising at least 10% of the bargaining unit; DOLE-registered unions must additionally accredit with MOLE; applications acted on within 15 days. Certification election cases decided within 20 working days and elections held within 45 days, with the employer a bystander. Collective bargaining agreements running 5 years as to representation, renegotiated as to other terms within three. Unfair labour practices are both civil wrongs and criminal offences, and expressly include discrimination on beliefs, culture or tribal affiliations and dismissal by reason of religion, political affiliation, age or sex. A Bangsamoro Tripartite Industrial Peace Council with three representatives each from labour and employers, following ILO Convention No. 144's “most representative” criterion. No docket fee in labour standards disputes, and the decision periods in the Code are mandatory. On strikes and lockouts: 30 days' cooling-off for bargaining deadlocks and 15 for unfair labour practice, waived where union officers are dismissed in circumstances amounting to union-busting; improved-offer balloting by the thirtieth day; ministerial assumption of jurisdiction over essential services; and, critically, that “mere participation of a workers or union officer in a strike declared illegal for failure to comply with the procedural requirements under this Chapter shall not be a ground for termination of his or her employment, even if a replacement had been hired”. No public official, member of the armed forces or police, armed person or private security guard may introduce or escort replacement workers, and the police shall remain out of picket lines unless actual violence occurs. Section 216 provides that no union member or organiser shall be invited for questioning, arrested or detained in connection with any case arising out of a labour dispute involving freedom of association and trade union activities, without prior clearance from MOLE.",
+  "Book VI, Post-Employment (Sections 217–237) — Security of tenure for all employees irrespective of status or position, with illegal dismissal drawing reinstatement without loss of seniority, full back wages and accrued benefits, unremitted SSS, PhilHealth and Pag-IBIG contributions, and damages. An employee is regular by the nature of the work or by rendering at least 1 year of service, continuous or broken; a fixed term imposed to prevent security of tenure makes the employee regular; probation may not exceed 6 months. Labour-only contracting is prohibited, makes the workers regular employees of the principal retroactive to first deployment, and draws a ₱5,000,000 fine against contractor and principal alike with power in the ministry to close the contractor preventively or permanently. All contractors must hold a ministry licence with ₱5,000,000 paid-up capital, a ₱50,000 licence fee and a three-year term, open to inspection by any legitimate labour organisation; recruitment and placement agencies may not engage in contracting. Every principal is solidarily liable with the service contractor for any violation of the Code, both being considered direct employers. Just causes and authorised causes for termination, with 1 month's notice to the worker and the ministry, separation pay of 1 month per year of service for redundancy and labour-saving devices and one-half month per year for retrenchment and closure, and retrenchment valid only on an independently audited financial statement, a sworn undertaking that it is a last resort, and a commitment to priority re-hiring. Workers have preference over government and other creditors in bankruptcy. No employee may be terminated for being afflicted by emerging or re-emerging infectious diseases. An employee may resign without notice for serious insult, inhuman treatment, or sexual harassment regardless of conviction. The burden of proving a valid or authorised cause rests on the employer. Optional retirement at 60 and compulsory at 65 with 5 years' service, at one-half month's salary per year, with retail, service and agricultural establishments of ten or fewer workers exempted.",
+  "Book VII, Bangsamoro Labor Justice Administration (Sections 238–267) — All labour and employment disputes are first resolved through conciliation-mediation. The Minister holds visitorial power with access to records and premises at any time of day or night, may issue compliance orders and writs of execution, and may order work stoppage where non-compliance poses grave and imminent danger, with a hearing within 24 hours and wages payable during the stoppage where the employer is at fault; no inferior court may enjoin such orders. The Bangsamoro Labor Conciliation and Arbitration Board is established as the region's conciliation and arbitration authority — a Chairperson from the public sector and 2 Members nominated by the most representative workers' and employers' organisations, all members of the Philippine Bar with at least 3 years in labour practice, appointed by the Chief Minister on the Minister's recommendation, at Salary Grades 28, 27, 26 and 25, with a conciliator-mediator for each of three sub-regions: South Central Mindanao (Maguindanao del Norte, Maguindanao del Sur, Cotabato City and the Special Geographic Area), North Central Mindanao (Lanao del Sur and Marawi City), and South Western Mindanao (Basilan and Tawi-Tawi). Every issue passes a 30-day mandatory Single Entry Approach; conciliation-mediation is private and privileged, and mediators may not testify about it. The Board holds original and exclusive jurisdiction over unfair labour practice, illegal dismissal, wage and hours cases, damages, strike legality, overseas worker money claims land-based or sea-based regardless of amount, cases involving domestic workers regardless of amount, non-chartered GOCCs and cooperatives, deciding within 30 days without extension. No court other than the Court of Appeals or the Supreme Court may hear a labour dispute. Technical rules of evidence do not bind, non-lawyers may appear, and no attorney's or negotiation fees may be charged to an individual union member. Voluntary arbitration is declared the primary mode of settlement, administered through a Bangsamoro Voluntary Arbitration Tripartite Council and financed by a Special Voluntary Arbitration Fund; grievances unsettled after 7 days go automatically to a voluntary arbitrator, who must decide within 20 days. Reinstatement orders are immediately executory notwithstanding appeal.",
+  "Book VIII, Transitory and Final Provisions (Sections 268–278) — Violations draw the sanctions of Presidential Decree No. 442, the national Labor Code, or other pertinent laws. No court, tribunal or entity may enjoin any proceeding before MOLE or the Board. Implementing rules within 1 year of effectivity, except those for Title VI of Book I which are due within 60 days. In case of conflict or inconsistency between this Code and the National Labor Code, “the provisions of this Code shall prevail within the territorial jurisdiction of the BARMM”, with the national code applying suppletorily, and international labour standards suppletory where no law applies. The ministry reports annually to Parliament on implementation. An initial fund of ₱30,000,000 is sourced from any available Bangsamoro funds, with later requirements in the annual appropriations act. Parliament must review the Code every 5 years. Parts of Title IX of BAA 13, the Bangsamoro Administrative Code, on labour and employment are repealed or amended. Effective 15 days after publication in the Bangsamoro Gazette or a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Every worker in the BARMM, in the formal and informal economy",
+   "Muslim and non-Muslim workers observing religious practice at work",
+   "Agency-placed and contractual workers",
+   "Union members and organisers",
+   "Women workers, working children, differently-abled and older workers",
+   "Domestic workers and overseas workers from the region"
+  ],
+  "impact_tags": [
+   "labor_social",
+   "priority_code",
+   "islamic_culture_heritage",
+   "governance_civil_service",
+   "economy_trade_investment"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱30,000,000 initial, from any available Bangsamoro funds; subsequent requirements in the annual appropriations act",
+  "figures_note": "Quoted from Section 273."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2025-11-12"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/11/BAA-No.-82.pdf",
+  "irr": "Due within 1 year of effectivity, except Title VI of Book I within 60 days — not yet captured in this registry."
+ },
+ "related_legislation": {
+  "amends": [
+   "BAA 13 (Bangsamoro Administrative Code) — paragraph 2 of Section 1 and subparagraphs (b) to (f) and (k) of Section 11, Title IX, Chapter 4 repealed; Sections 12 and 13 amended as to mediation and conciliation; the rest of Title IX repealed or amended where inconsistent"
+  ],
+  "amended_by": [],
+  "repeals": "Parts of Title IX (Labor and Employment) of BAA 13, and all inconsistent regional issuances",
+  "related_note": "Enacted under Section 10, Article IX of RA 11054, the Organic Law, and Section 3, Article XIII of the 1987 Constitution. Section 271 provides that this Code prevails over the national Labor Code within the BARMM, with PD 442 applying suppletorily and supplying the general penalty scale under Section 268. Bangsamoro holidays are observed under BAA 39, the Bangsamoro Holidays Act of 2023, and bereavement leave is granted under BAA 72, the Bangsamoro Bereavement Leave Act of 2025. Unemployment benefits run through RA 11199, housing through RA 9679, and health coverage through PhilHealth."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "₱30,000,000 initial",
+  "irr_status": "Section 270 gives MOLE up to 1 year from effectivity to promulgate implementing rules, in consultation with tripartite partners; the rules for Title VI of Book I are due within 60 days. Not yet captured in this registry.",
+  "implementing_agency": {
+   "agency": "Ministry of Labor and Employment, with the Bangsamoro Labor Conciliation and Arbitration Board and the Bangsamoro Tripartite Industrial Peace Council",
+   "inferred": false
+  },
+  "note": "Read from the enacted text as signed, all 90 pages and 278 sections. Section 274 requires Parliament to review the Code every 5 years, and Section 272 requires annual ministry reports to Parliament. The three sub-regions defined for the labour justice system in Section 239(n) do not include Sulu."
+ },
+ "citizen_questions": [
+  {
+   "q": "Do I get paid for prayer breaks?",
+   "a": "Yes. Section 61 says periods of short duration for rest or prayer during working hours shall be counted as hours worked."
+  },
+  {
+   "q": "Can I ask for a prayer space at work?",
+   "a": "Yes. Section 107 gives employees the right to request a dedicated space for prayer or spiritual exercises, and employers with 20 or more employees shall endeavour to provide one or a reasonable alternative. The employer cannot restrict or prohibit you from freely exercising your religion at work."
+  },
+  {
+   "q": "Is there leave for Hajj or Umrah?",
+   "a": "Yes, but modestly. Section 110 gives up to 30 days' pilgrimage leave to any employee with at least 2 years of service, regardless of employment status — unpaid, once in your entire tenure, on 60 days' notice. You may use accrued leave credits to cover it, and you cannot be terminated or lose benefits or seniority for taking it. The employer may decline if granting it would unavoidably disrupt work or cause serious loss."
+  },
+  {
+   "q": "Can my employer make me handle food or goods my religion forbids?",
+   "a": "No. Section 111 says no worker shall be compelled to handle, prepare, process, cook, buy or sell any food or non-food merchandise against their religious beliefs, and requires employers to accommodate dietary restrictions and fasting schedules."
+  },
+  {
+   "q": "When do I become a regular employee?",
+   "a": "By the nature of your work if it is necessary or desirable to the business, or by rendering at least 1 year of service, whether continuous or broken. A fixed term imposed to stop you gaining security of tenure makes you regular, and staying on after a six-month probation makes you regular."
+  },
+  {
+   "q": "I work through an agency. Who is my real employer?",
+   "a": "If the agency has no substantial capital or equipment and you do work directly related to the client's main business, or the agency does not control your work, that is labour-only contracting: you are a regular employee of the client company retroactive to your first day of deployment, and both firms face a ₱5 million fine."
+  },
+  {
+   "q": "Can I be fired for joining a strike?",
+   "a": "Not merely for taking part in one declared illegal on procedural grounds. Section 215(b) says mere participation by a worker or union officer in such a strike is not a ground for termination, even if a replacement had been hired."
+  },
+  {
+   "q": "Can the police arrest an organiser over a strike?",
+   "a": "Section 216 says no union member or organiser shall be invited for questioning, arrested or detained in connection with any case arising out of a labour dispute involving freedom of association and trade union activities without prior clearance from the labour ministry. Police must also stay out of picket lines unless actual violence occurs."
+  },
+  {
+   "q": "What does it cost to file a complaint?",
+   "a": "Nothing for labour standards disputes — Section 202(b) bars docket fees for them. You may also appear for yourself without a lawyer, and no attorney's or negotiation fees may be charged against an individual union member."
+  },
+  {
+   "q": "Do I have to answer work messages after hours?",
+   "a": "No. Section 157 says you cannot be reprimanded, punished or disciplined for disregarding a work-related communication sent after work hours, and every employer must issue guidelines on this."
+  },
+  {
+   "q": "Which law wins — this or the national Labor Code?",
+   "a": "Section 271 says this Code prevails within the BARMM, with the national Labor Code applying suppletorily. Where this Code is silent, the national code and other social legislation fill the gap, and international labour standards after that."
+  },
+  {
+   "q": "How much money is behind it?",
+   "a": "₱30 million initially, from any available Bangsamoro funds, with later requirements in the annual budget — a small figure for a code that has to stand up a new arbitration board with three sub-regional offices, a wage-setting function and an inspectorate."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 82",
+  "line2": "Bangsamoro Labor and Employment Code",
+  "badges": [
+   "IN FORCE",
+   "Labor",
+   "2025"
+  ],
+  "what_this_does": "The region's own labour code — paid prayer breaks, pilgrimage leave, regularisation at 1 year, and a regional labour court that is free to file in.",
+  "who_it_affects": "Every worker and employer in the BARMM",
+  "effective": "2025-12-10"
+ },
+ "views": {
+  "simple": "The region's own labour code, prevailing over the national Labor Code inside the BARMM: prayer and rest breaks counted as paid work time, prayer space and holy-day breaks, pilgrimage leave, protection of religious dress and dietary restrictions, a minimum employable age of 18, regularisation after 1 year, ₱5 million fines for labour-only contracting with the principal solidarily liable, protection from dismissal for joining a procedurally defective strike, no arrest of organisers without ministry clearance, and a regional labour tribunal where filing is free and non-lawyers may appear.",
+  "official": "AN ACT INSTITUTING A LABOR AND EMPLOYMENT CODE FOR THE BANGSAMORO AUTONOMOUS REGION, TO AFFORD PROTECTION TO LABOR, PROMOTE EMPLOYMENT AND HUMAN RESOURCES DEVELOPMENT, ENSURE INDUSTRIAL PEACE BASED ON SOCIAL JUSTICE, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 82, enacted text as signed (Parliament's acts index), all 90 pages and 278 sections.",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

@@ -1,180 +1,252 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 6,
-    "short_title": "Establishes the Bangsamoro Socio-economic Development Planning System",
-    "official_title": "AN ACT ESTABLISHING THE BANGSAMORO SOCIO-ECONOMIC DEVELOPMENT PLANNING SYSTEM",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2019-12-27",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Establishes the Bangsamoro Socio-economic Development Planning System.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Establishes the Bangsamoro Socio-economic Development Planning System.",
-    "who_will_be_affected": [
-      "Target sector of the body",
-      "Job seekers",
-      "CSOs"
-    ],
-    "when_will_it_take_effect": "Ratified 2019-12-27; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Creates or strengthens a public institution. New offices sound bureaucratic, but each one is a service window: a place to bring complaints, apply for programs, or get support that previously had no dedicated home in the region.",
-      "in_practice": [
-        "Once organized (leadership appointed, budget released), it opens programs and services",
-        "Look for its office, hotline, or Facebook page under the Bangsamoro Government",
-        "Its mandate defines what you can demand from it"
-      ],
-      "for_specific_groups": {
-        "Target sector of the body": "You gain a dedicated advocate inside government",
-        "Job seekers": "New institutions hire staff",
-        "CSOs": "A formal counterpart for partnership and accountability"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "A dedicated office now exists to serve and advocate for its sector.",
-        "direct_benefits": [
-          {
-            "benefit": "A service window: programs, assistance, and complaints handling for the covered sector",
-            "who_gets_it": "The sector named in the law",
-            "how_to_access": "The body's office/hotline once organized"
-          },
-          {
-            "benefit": "Representation inside government when policies are made",
-            "who_gets_it": "Sector members",
-            "how_to_access": "Through the body's consultations"
-          },
-          {
-            "benefit": "Employment in the new institution",
-            "who_gets_it": "Qualified applicants",
-            "how_to_access": "CSC-BARMM / agency postings"
-          }
-        ],
-        "indirect_benefits": [
-          "A formal partner for NGOs and donors working on the sector"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "An office's value depends on leadership and funding - track its accomplishment reports"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 6,
+  "short_title": "Bangsamoro Socio-Economic Development Planning Act of 2019",
+  "official_title": "AN ACT ESTABLISHING THE BANGSAMORO SOCIO-ECONOMIC DEVELOPMENT PLANNING SYSTEM, PROVIDING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2019-12-27",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "First Regular Session, begun 29 March 2019",
+  "date_passed": "2019-12-27",
+  "date_approved_by_chief_minister": "2020-01-14",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Businesses",
-      "Consumers",
-      "Workers"
-    ],
-    "impact_tags": [
-      "economy_trade_investment",
-      "institution_commission"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2019-12-27"
-    }
+  "origin_bills": "Bill No. 37",
+  "effectivity": "15 days after publication in a newspaper of general circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Sets up how the region decides what gets built and funded — a planning council chaired by the Chief Minister that seats every provincial governor and city mayor, and a planning authority to staff it.",
+  "why_was_it_proposed": "A new government needed its own development planning system. The act creates the region's counterpart to the national economic planning machinery, and asserts that the Bangsamoro's own plan is the primary framework for the region rather than a chapter written elsewhere.",
+  "what_will_change": "The Bangsamoro Economic and Development Council becomes the planning, monitoring and coordinating body for all development plans of the regional government, recommending the Bangsamoro Development Plan to Parliament for approval. The Bangsamoro Planning and Development Authority is created to staff it, absorbing the ARMM-era Regional Planning and Development Office.",
+  "who_will_be_affected": [
+   "Provincial governors and city mayors, who sit on the Council",
+   "LGUs, whose approved development plans must be taken into account in the regional plan",
+   "Ministries and agencies, whose investment programmes the Council reviews and prioritises",
+   "National agencies and GOCCs operating in the region, whose programmes the Council monitors and evaluates",
+   "Private sector representatives, who hold 5 seats"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "The created body itself",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2019-12-27 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "The created body itself (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 6",
-    "line2": "Establishes the Bangsamoro Socio-economic Development Planning System",
-    "badges": [
-      "ENACTED",
-      "Institution Commission",
-      "2019"
+  "when_will_it_take_effect": "In force since 2020 — approved by the Chief Minister on 14 January 2020, effective 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. This is the machinery that turns priorities into plans and plans into budgets. It matters to ordinary people indirectly but heavily: your municipality's development plan is supposed to be taken into account in the regional plan, and the regional plan is supposed to be recognised in the national one.",
+   "in_practice": [
+    "A Council chaired by the Chief Minister, with the planning authority's Director General as vice-chair",
+    "The Speaker, the Majority Floor Leader and the Minority Floor Leader all sit on it",
+    "Every provincial governor and every city mayor is a member",
+    "Five private sector representatives, selected by the Council under criteria the planning authority drafts",
+    "It meets once a quarter, with a majority as quorum",
+    "Five sectoral committees: economic, social, infrastructure, development administration, and peace, public order, safety and security",
+    "The Bangsamoro Development Plan goes to Parliament for approval",
+    "₱26,000,000 to start — ₱15M personnel, ₱5M planning authority operations, ₱6M for convening the Council"
+   ],
+   "for_specific_groups": {
+    "Provincial governors and city mayors": "You sit on the regional planning council itself — not as consultees but as members.",
+    "Municipalities and barangays": "Your approved local development plans must be taken into consideration in the Bangsamoro Development Plan.",
+    "Ministries": "Your annual and multi-year investment programmes are reviewed, prioritised and endorsed to Parliament by the Council.",
+    "National agencies working in the region": "The Council monitors and evaluates all development programmes and projects implemented in the BARMM by the national government, regional ministries, LGUs and government corporations.",
+    "Private sector": "5 seats on the Council, filled under guidelines the planning authority drafts and the Council approves."
+   },
+   "where_this_applies": "The whole BARMM, with the plan intended to be recognised in the Mindanao Development Plan and the Philippine Development Plan.",
+   "when_you_will_feel_it": "Indirectly and over years — through which projects appear in the investment programme and reach a budget.",
+   "what_you_can_do": [
+    "Take part in your local development council — its approved plan is what the regional plan is supposed to take into account",
+    "Follow the Bangsamoro Development Plan when it goes to Parliament for approval, and the annual investment programme that follows it",
+    "If you represent a business or industry group, the five private sector seats are filled under published criteria"
+   ],
+   "watch_out_for": [
+    "The Council meets only quarterly, and it is large — every governor, every city mayor, five private sector members and the parliamentary leadership.",
+    "The Director General serves until the expiration of the Chief Minister's term, so the planning authority's head turns over with the government.",
+    "The act's claim that the regional plan shall be recognised and integrated in the Mindanao and Philippine Development Plans is a direction addressed to national planning bodies, not something the region can compel on its own.",
+    "Monitoring and evaluation of national government programmes in the region is asserted here; whether national agencies treat it as binding is not settled by this act."
+   ],
+   "key_terms_explained": {
+    "BEDC": "Bangsamoro Economic and Development Council — the region's top planning body, chaired by the Chief Minister.",
+    "BPDA": "Bangsamoro Planning and Development Authority — the technical agency that staffs the Council and does the planning work.",
+    "Subsidiarity": "The principle that decisions should be made at the lowest level capable of making them. The act invokes it to argue the regional plan is the primary framework for the region.",
+    "Investment programme": "The list of projects a government intends to fund, annual and multi-year, from which budgets are built.",
+    "NEDA-ICC": "The national Investment Coordination Committee, which reviews major public projects. The Council may recommend programmes to it on a Parliament resolution.",
+    "ODA": "Official Development Assistance — foreign grants and concessional loans, coordinated here through the planning authority's research bureau."
+   },
+   "status_note": "Passed 27 December 2019 and approved by the Chief Minister on 14 January 2020.",
+   "benefits": {
+    "headline": "A regional planning system with LGU chief executives seated on it, and a technical authority to run it.",
+    "direct_benefits": [
+     {
+      "benefit": "Local development plans taken into account in the regional plan",
+      "who_gets_it": "Provinces, cities, municipalities and barangays",
+      "how_to_access": "Sections 3 and 6(3)"
+     },
+     {
+      "benefit": "Seats on the regional planning council for every provincial governor and city mayor",
+      "who_gets_it": "Constituent LGUs",
+      "how_to_access": "Section 5"
+     },
+     {
+      "benefit": "Five private sector seats on the Council",
+      "who_gets_it": "Business and industry",
+      "how_to_access": "Section 5, under criteria the planning authority drafts"
+     },
+     {
+      "benefit": "Technical assistance in identifying and developing plans, programmes and projects",
+      "who_gets_it": "Ministries, agencies, LGUs and development partners",
+      "how_to_access": "Section 15(d)"
+     }
     ],
-    "what_this_does": "Establishes the Bangsamoro Socio-economic Development Planning System.",
-    "who_it_affects": "Businesses · Consumers · Workers",
-    "effective": "2019-12-27"
-  },
-  "views": {
-    "simple": "Establishes the Bangsamoro Socio-economic Development Planning System.",
-    "official": "AN ACT ESTABLISHING THE BANGSAMORO SOCIO-ECONOMIC DEVELOPMENT PLANNING SYSTEM"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Coordination of regional, national and foreign-assisted programmes in one place",
+     "Research and statistics administration supporting evidence-based planning",
+     "Representation of the Bangsamoro in national development planning bodies",
+     "Monitoring and evaluation of all development programmes in the region regardless of who implements them"
+    ],
+    "limitations": [
+     "The Council is advisory and recommendatory to Parliament, which approves the plan.",
+     "Quarterly meetings for a body of this size.",
+     "₱26 million initial funding."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act creates no duty on the public."
+    ],
+    "for_government": [
+     "The Council directs plan formulation and recommends the Bangsamoro Development Plan to Parliament",
+     "The planning authority coordinates formulation, monitoring and evaluation, and the annual and multi-year investment programming of ministries and offices",
+     "Ministries and LGUs coordinate implementation through the Council for effectiveness and responsiveness"
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "Your local development council, whose approved plan feeds the regional plan",
+    "oversight": "Bangsamoro Planning and Development Authority, which provides technical and secretariat services to the Council",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A municipality's road project keeps missing the regional list. Section 6(3) requires the Council to ensure the approved development plans of provinces, cities, municipalities and barangays are taken into consideration in the Bangsamoro Development Plan.",
+    "A national agency runs a programme in the region without regional coordination. Section 6(9) puts monitoring and evaluation of all development programmes implemented by the national government in the BARMM within the Council's functions."
+   ]
   }
+ },
+ "key_provisions": [
+  "Sections 1–2 — Short title: the “Bangsamoro Socio-Economic Development Planning Act of 2019”. Policy: accelerate socio-economic development through holistic, effective and responsive planning, coordination, monitoring and evaluation, ensuring programmes are reflected in national development plans such as the Philippine Development Plan, with active participation of government agencies, LGUs, non-government organisations and the private sector.",
+  "Sections 3–4 — The Bangsamoro Economic and Development Council serves as the socio-economic planning, monitoring and coordinating agency for all development plans, programmes and projects of the Bangsamoro Government, evaluating and recommending short-, medium- and long-term comprehensive plans for Parliament's approval, taking into account the development plans of provinces, cities, municipalities and barangays as approved by their local development councils. Following the principle of subsidiarity, the Bangsamoro Socio-economic Development Plan is the primary development framework for the BARMM and “shall be recognized and integrated in the Mindanao Development Plan and the Philippine Development Plan”.",
+  "Section 5 — Composition: the Chief Minister as Chairperson; the Bangsamoro Director General of the Planning and Development Authority as Vice-Chairperson; and as members the Speaker, the Majority Floor Leader, the Minority Floor Leader, the Minister of Finance, Budget and Management, the Executive Secretary, the chairpersons of the five sectoral committees, all provincial governors, all city mayors, and five private sector representatives selected by the Council under guidelines drafted by the planning authority.",
+  "Sections 6–8 — Powers: direct plan formulation and recommend the Bangsamoro Development Plan to Parliament; review, prioritise and endorse the annual and multi-year investment programme to Parliament for approval and possible national funding; ensure local development plans are taken into consideration; represent the Bangsamoro Government in the national development planning steering committee; ensure regional plans are annexed to national plans; promote an enabling environment for investment; coordinate implementation across ministries and LGUs; recommend programmes to the NEDA Investment Coordination Committee upon Parliament resolution; and monitor and evaluate all development programmes and projects implemented in the BARMM by the national government, Bangsamoro ministries and line agencies, local government units and government-owned or controlled corporations. The Council meets quarterly, with a majority as quorum, and adopts its own internal rules in its first regular session.",
+  "Sections 9–13 — An Executive Committee — the Chief Minister, the Director General, the Executive Secretary, the Finance Minister and all sectoral committee chairpersons — acts on urgent matters when the Council is not in session. Five sectoral committees assist it: Economic Development, Social Development, Infrastructure Development, Development Administration, and Peace, Public Order, Safety and Security. They coordinate sectoral policy and investment programming, translate regional goals into sectoral objectives, and endorse policies and projects recommended by local development councils. Technical and secretariat services are provided by the planning authority.",
+  "Sections 14–17 — The Bangsamoro Planning and Development Authority is created as the socio-economic development planning and policy coordinating authority. It coordinates the formulation, monitoring and evaluation of development policies and plans; reviews and recommends short-, medium- and long-term plans and proposed projects; coordinates annual and multi-year investment programming; gives technical assistance to ministries, LGUs and development partners; coordinates all regional, national and foreign-assisted programmes; and conducts research and statistics administration. Its bureaus are Planning and Policies, Research Development and Special Projects — which handles Official Development Assistance coordination — and Finance and Administrative Support Services. It is headed by a Bangsamoro Director General appointed by the Chief Minister with cabinet rank at Salary Grade 28, and a Deputy at Salary Grade 27, serving until the expiration of the Chief Minister's term without prejudice to reappointment.",
+  "Sections 18–22 — Appropriations: ₱15,000,000 for Personnel Services, ₱5,000,000 for the planning authority's operations and ₱6,000,000 for convening and meetings of the Council, from the Miscellaneous Personnel Benefits Fund and the Contingent Fund, with subsequent requirements in the Bangsamoro appropriations act. All functions, programmes, projects, activities and assets of the ARMM-era Regional Planning and Development Office transfer to the planning authority. Effective 15 days after publication in a newspaper of general circulation in the region."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Constituent LGUs, through seats on the Council and consideration of their plans",
+   "Ministries and agencies seeking investment programming",
+   "The private sector, through five Council seats",
+   "Communities whose local priorities reach the regional plan"
+  ],
+  "impact_tags": [
+   "governance_civil_service",
+   "budget_finance",
+   "local_government",
+   "economy_trade_investment"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱26,000,000 initial — ₱15M Personnel Services, ₱5M planning authority operations, ₱6M for convening the Council",
+  "figures_note": "Quoted from Section 18."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2019-12-27"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2020/02/BAA-6.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": "All inconsistent regional laws, decrees, orders, issuances, rules and regulations; transfers the functions and assets of the ARMM Regional Planning and Development Office",
+  "origin_bill": "Bill No. 37",
+  "related_note": "The Bangsamoro Planning and Development Authority created here sits on later coordinating bodies, including the internal displacement council under BAA 62. The Bangsamoro Development Plan it produces is the vehicle through which BAA 62 integrates displaced persons' rights and guides use of the Special Development Fund."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "₱26,000,000 initial",
+  "irr_status": "Section 8 requires the Council to promulgate its own internal rules and procedures in its first regular session; no separate IRR is required.",
+  "implementing_agency": {
+   "agency": "Bangsamoro Economic and Development Council, with the Bangsamoro Planning and Development Authority as secretariat",
+   "inferred": false
+  },
+  "note": "Read from the enacted text as signed, all 6 pages."
+ },
+ "citizen_questions": [
+  {
+   "q": "Who decides the region's development priorities?",
+   "a": "The Bangsamoro Economic and Development Council directs plan formulation and recommends the Bangsamoro Development Plan, but Parliament approves it."
+  },
+  {
+   "q": "Does my municipality have a say?",
+   "a": "Indirectly. Section 6(3) requires the Council to ensure that the approved development plans of provinces, cities, municipalities and barangays are taken into consideration. All provincial governors and city mayors sit on the Council itself."
+  },
+  {
+   "q": "How often does the Council meet?",
+   "a": "Once every quarter, with special meetings on 5 days' notice for a compelling reason called by the Chairperson or a majority of members."
+  },
+  {
+   "q": "Who runs the technical work?",
+   "a": "The Bangsamoro Planning and Development Authority, headed by a Director General with cabinet rank, which absorbed the ARMM-era Regional Planning and Development Office."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 6",
+  "line2": "Bangsamoro Socio-Economic Development Planning Act of 2019",
+  "badges": [
+   "IN FORCE",
+   "Governance",
+   "2019"
+  ],
+  "what_this_does": "Creates the region's development planning council and planning authority, seating every governor and city mayor.",
+  "who_it_affects": "LGUs · ministries · the private sector",
+  "effective": "2020-01-14"
+ },
+ "views": {
+  "simple": "Establishes the region's planning system: a Bangsamoro Economic and Development Council chaired by the Chief Minister and seating every provincial governor, every city mayor, the parliamentary leadership and five private sector members, which recommends the Bangsamoro Development Plan to Parliament and monitors all development projects in the region — supported by a new Bangsamoro Planning and Development Authority that absorbs the ARMM-era planning office.",
+  "official": "AN ACT ESTABLISHING THE BANGSAMORO SOCIO-ECONOMIC DEVELOPMENT PLANNING SYSTEM, PROVIDING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 6, enacted text as signed (Parliament's acts index), all 6 pages.",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

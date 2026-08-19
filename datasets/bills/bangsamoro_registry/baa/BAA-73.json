@@ -1,198 +1,231 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 73,
-    "short_title": "an Act Converting the Iranon District Hospital Act",
-    "official_title": "AN ACT CONVERTING THE IRANON DISTRICT HOSPITAL, PARANG INTO THE IRANON PROVINCIAL HOSPITAL",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA3",
-    "date_ratified": "2025-05-19",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Converts the Iranon District Hospital, Parang Into the Iranon Provincial Hospital.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Converts the Iranon District Hospital, Parang Into the Iranon Provincial Hospital.",
-    "who_will_be_affected": [
-      "Residents of the covered area",
-      "Pregnant women",
-      "Senior citizens & PWDs",
-      "Health workers"
-    ],
-    "when_will_it_take_effect": "Ratified 2025-05-19; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Upgrades a public hospital serving the covered area. For nearby families this means emergency and inpatient care closer to home instead of long, costly trips to distant referral hospitals.",
-      "in_practice": [
-        "More beds means fewer 'no vacancy' referrals and less floor-space crowding during outbreaks",
-        "A higher hospital level allows more services on-site: surgery, specialist clinics, better laboratory and imaging, more doctors and nurses on the plantilla",
-        "PhilHealth-accredited services expand with the facility's level, lowering out-of-pocket costs",
-        "Construction, staffing, and supplies take time after enactment - upgrades typically roll out over one or more budget years"
-      ],
-      "for_specific_groups": {
-        "Residents of the covered area": "Shorter travel time in emergencies - often the difference between life and death for stroke, hemorrhage, and obstetric cases",
-        "Pregnant women": "Facility-based deliveries and emergency obstetric care become available nearer home",
-        "Senior citizens & PWDs": "Follow-up care and dialysis/maintenance services without long-distance travel",
-        "Health workers": "New plantilla positions (nurses, midwives, med-techs, doctors) usually open when a hospital is created or upgraded - watch the MOH and hospital job postings"
-      },
-      "where_this_applies": "the covered area",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Ask the Ministry of Health (MOH-BARMM) or the hospital chief when the added beds/services actually open"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Closer, bigger, better-equipped public healthcare for the catchment area.",
-        "direct_benefits": [
-          {
-            "benefit": "Emergency and inpatient care near home (expanded capacity) instead of long referral trips",
-            "who_gets_it": "Residents of the catchment area",
-            "how_to_access": "Go directly; public hospitals cannot refuse emergencies"
-          },
-          {
-            "benefit": "More services as the hospital's level rises: surgery, laboratory, imaging, specialty clinics",
-            "who_gets_it": "Patients in the catchment area",
-            "how_to_access": "Outpatient department; bring PhilHealth/ID"
-          },
-          {
-            "benefit": "Lower out-of-pocket costs as PhilHealth-accredited services expand with the facility level",
-            "who_gets_it": "PhilHealth members and indigents (automatic UHC coverage)",
-            "how_to_access": "Hospital PhilHealth desk / Malasakit-type assistance where present"
-          },
-          {
-            "benefit": "Safer childbirth: facility-based delivery and emergency obstetric care nearby",
-            "who_gets_it": "Pregnant women",
-            "how_to_access": "Prenatal check-ups at the RHU, delivery at the hospital"
-          },
-          {
-            "benefit": "New jobs: doctors, nurses, midwives, med-techs, admin and support staff",
-            "who_gets_it": "Health professionals and local job seekers",
-            "how_to_access": "Watch MOH-BARMM and hospital postings"
-          }
-        ],
-        "indirect_benefits": [
-          "Decongests referral hospitals for everyone else",
-          "Local economy around the hospital (transport, food, pharmacies)",
-          "Faster outbreak and disaster response capacity in the area"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Bed count on paper becomes real only after construction/hiring - ask the hospital chief for the timeline"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 73,
+  "short_title": "Iranon Provincial Hospital Act of 2023",
+  "official_title": "AN ACT CONVERTING THE IRANON DISTRICT HOSPITAL IN THE MUNICIPALITY OF PARANG, PROVINCE OF MAGUINDANAO DEL NORTE INTO A PROVINCIAL HOSPITAL TO BE KNOWN AS THE IRANON PROVINCIAL HOSPITAL, AND APPROPRIATING FUNDS THEREFOR",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA3",
+  "date_ratified": "2025-05-19",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session (begun 15 September 2022)",
+  "date_passed": "2025-05-19",
+  "date_passed_hijri": "Dhul Qa'dah 21, 1446",
+  "date_approved_by_chief_minister": "2025-07-09",
+  "approved_by": "Chief Minister Abdulraof A. Macacua",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Health workers",
-      "Hospitals",
-      "Patients"
-    ],
-    "impact_tags": [
-      "health",
-      "hospital_health"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2025-05-19"
-    }
+  "effectivity": "15 days after complete publication in a newspaper of regional circulation",
+  "title_note": "The short title as enacted reads “Iranon Provincial Hospital Act of 2023”, although the act was passed in May 2025 and approved in July 2025."
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Converts the Iranon District Hospital in Parang, Maguindanao del Norte into a 200-bed provincial hospital — with a three-year deadline for the upgrade and an annual progress report to Parliament.",
+  "why_was_it_proposed": "To raise a district hospital to provincial level and scale its capacity, staff and facilities to match.",
+  "what_will_change": "Bed capacity rises to 200. Doctors, nurses and support staff must increase in step, with new plantilla positions determined and filled. The whole upgrade must be delivered within 3 years, and the Ministry of Health must report annually to the Chief Minister and Parliament on progress.",
+  "who_will_be_affected": [
+   "Residents of Parang and the wider province",
+   "Patients needing provincial-level hospital care",
+   "Doctors, nurses, midwives and support staff, whose numbers must rise with the beds",
+   "Parliament, which receives an annual progress report"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Health (MOH)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2025-05-19 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Health (MOH) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 73",
-    "line2": "an Act Converting the Iranon District Hospital Act",
-    "badges": [
-      "ENACTED",
-      "Hospital Health",
-      "2025"
+  "when_will_it_take_effect": "In force since 2025 — 15 days after complete publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. Iranon District Hospital becomes a 200-bed provincial hospital — and unlike earlier hospital acts, this one sets a three-year deadline and requires annual reports to Parliament.",
+   "in_practice": [
+    "Authorised bed capacity increased to 200",
+    "Converted from district to provincial hospital, under the direct supervision and control of the Ministry of Health",
+    "Existing workforce — doctors, nurses, support personnel — increased in proportion to the beds",
+    "Additional plantilla positions determined by MOH with the finance ministry and the Civil Service Commission, in consultation with hospital management",
+    "The upgrade must be implemented over 3 years from the act's approval",
+    "₱50,000,000 initial, charged against the 2025 Bangsamoro budget",
+    "Implementing rules within 60 days, in consultation with the Provincial Government of Maguindanao del Norte",
+    "An annual report on the outcome and progress of the conversion goes to the Chief Minister and to Parliament"
+   ],
+   "for_specific_groups": {
+    "Patients": "Provincial-level care with 200 beds, rather than a district facility.",
+    "Health workers": "Section 5 requires the workforce to grow with the bed count, and new permanent posts to be created and filled.",
+    "Anyone tracking delivery": "Section 9 is the one to use — an annual report to the Committee on Health and the Committee on Finance, Budget and Management."
+   },
+   "where_this_applies": "Parang, Maguindanao del Norte.",
+   "when_you_will_feel_it": "The upgrade is to be implemented over 3 years from approval in July 2025.",
+   "what_you_can_do": [
+    "Ask for the annual report to Parliament on the conversion's outcome and progress",
+    "Ask the Ministry of Health about the implementing rules, due within 60 days",
+    "Note the three-year implementation clock running from approval"
+   ],
+   "watch_out_for": [
+    "₱50 million is an initial amount for a 200-bed conversion; the rest depends on annual appropriations.",
+    "The short title dates the act to 2023 although it was passed in 2025.",
+    "No sanction attaches if the three-year deadline is missed."
+   ],
+   "key_terms_explained": {
+    "Provincial hospital": "A facility serving a whole province, above district level in the referral chain.",
+    "Plantilla position": "A permanent, funded post in the government staffing structure.",
+    "Hospital development plan": "The document, prepared here by the Chief of Hospital, on which further expansion depends.",
+    "COH / CFBM": "The Parliament's Committee on Health and Committee on Finance, Budget and Management, which receive the annual report."
+   },
+   "status_note": "Passed Dhul Qa'dah 21, 1446 / 19 May 2025, approved by Chief Minister Abdulraof A. Macacua on 9 July 2025.",
+   "benefits": {
+    "headline": "A 200-bed provincial hospital, on a three-year clock, with annual reports to Parliament.",
+    "direct_benefits": [
+     {
+      "benefit": "Provincial-level hospital care with 200 beds",
+      "who_gets_it": "Residents of Parang and Maguindanao del Norte",
+      "how_to_access": "Through the hospital"
+     },
+     {
+      "benefit": "More doctors, nurses, midwives and support staff",
+      "who_gets_it": "Patients and health workers",
+      "how_to_access": "Plantilla positions determined by MOH with MFBM and the Civil Service Commission"
+     },
+     {
+      "benefit": "An annual public account of progress",
+      "who_gets_it": "Anyone tracking delivery",
+      "how_to_access": "MOH report to the Chief Minister and Parliament"
+     }
     ],
-    "what_this_does": "Converts the Iranon District Hospital, Parang Into the Iranon Provincial Hospital.",
-    "who_it_affects": "Health workers · Hospitals · Patients",
-    "effective": "2025-05-19"
-  },
-  "views": {
-    "simple": "Converts the Iranon District Hospital, Parang Into the Iranon Provincial Hospital.",
-    "official": "AN ACT CONVERTING THE IRANON DISTRICT HOSPITAL, PARANG INTO THE IRANON PROVINCIAL HOSPITAL"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "A three-year implementation period, which most hospital acts lack",
+     "Provincial government consulted on the implementing rules"
+    ],
+    "limitations": [
+     "₱50 million initial only.",
+     "No sanction for missing the three-year deadline."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "Iranon Provincial Hospital administration",
+    "oversight": "Ministry of Health – BARMM, with direct supervision and control; Parliament's Committee on Health and Committee on Finance, Budget and Management receive the annual report",
+    "note": "The act creates no complaints procedure, but the annual report is a document a citizen can ask for."
+   },
+   "everyday_scenarios": [
+    "A patient in Parang previously referred out of the province for provincial-level care should find it locally once the conversion is delivered.",
+    "A resident asking whether the upgrade is on schedule can point to Section 9, which requires an annual report on outcome and progress to Parliament, and Section 6, which sets a three-year implementation period."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Iranon Provincial Hospital Act of 2023”.",
+  "Section 2 — Converts the Iranon District Hospital in Parang, Maguindanao del Norte into a 200-bed capacity provincial hospital, the Iranon Provincial Hospital, under the direct supervision and control of the Ministry of Health.",
+  "Section 3 — Authorised bed capacity is increased to 200. Any future increase must be consistent with a hospital development plan prepared by the Chief of Hospital and submitted to the MOH.",
+  "Section 4 — Existing professional health care services and facilities are upgraded to conform with and be commensurate to the increase in bed capacity.",
+  "Section 5 — The existing workforce, including doctors, nurses and support personnel, shall be increased corresponding to the increase in bed capacity. The MOH, coordinating with the Ministry of Finance, and Budget and Management and the Civil Service Commission, and consulting hospital management, shall determine the additional plantilla positions to be created and filled up.",
+  "Section 6 — The upgrade of professional health care services and facilities, including the workforce increase, shall be implemented over a period of 3 years from the approval of the act.",
+  "Section 7 — An initial ₱50,000,000 is charged against the 2025 General Appropriation Act of the Bangsamoro, with funds for operations thereafter included in the annual appropriations for the year following enactment.",
+  "Section 8 — Within 60 days of effectivity the MOH shall promulgate the necessary rules and regulations, in consultation with the Provincial Government of Maguindanao del Norte and other stakeholders.",
+  "Section 9 — The MOH shall submit to the Chief Minister and to Parliament, through the Committee on Health and the Committee on Finance, Budget and Management, an annual report on the outcome and progress of the conversion.",
+  "Section 12 — Takes effect 15 days following complete publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of Parang and Maguindanao del Norte",
+   "Health workers"
+  ],
+  "impact_tags": [
+   "health",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱50,000,000 initial, charged against the 2025 GAAB",
+  "figures_note": "Quoted from Sections 3 and 7: 200-bed capacity, ₱50,000,000 initial."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2025-05-19"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/08/BAA-73.pdf",
+  "irr": "Required from MOH within 60 days of effectivity, in consultation with the Provincial Government. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill 246",
+  "related_note": "The best-instrumented of the region's hospital acts — alone in combining a stated amount, a three-year implementation period and an annual report to Parliament."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱50,000,000 initial",
+  "irr_status": "Section 8 required MOH rules within 60 days of effectivity.",
+  "note": "Read from the enacted text as signed. Section 6 sets a three-year implementation period from approval on 9 July 2025; Section 9 requires annual progress reports to Parliament."
+ },
+ "citizen_questions": [
+  {
+   "q": "How big will the hospital be?",
+   "a": "200 beds, converted from a district hospital to a provincial one."
+  },
+  {
+   "q": "Is there a deadline?",
+   "a": "Yes — 3 years from the act's approval for the upgrade of services, facilities and workforce. That is unusual; most hospital acts in the registry set none."
+  },
+  {
+   "q": "Will there be more staff?",
+   "a": "Section 5 requires the workforce — doctors, nurses and support personnel — to increase in proportion to the beds, with new plantilla positions determined by the health ministry with the finance ministry and the Civil Service Commission."
+  },
+  {
+   "q": "How can I check progress?",
+   "a": "The Ministry of Health must submit an annual report on the outcome and progress of the conversion to the Chief Minister and to Parliament, through the Committee on Health and the Committee on Finance, Budget and Management."
+  },
+  {
+   "q": "Why does the title say 2023?",
+   "a": "The short title as enacted reads “Act of 2023” although Parliament passed it in May 2025. The registry records the title as enacted."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 73",
+  "line2": "Iranon Provincial Hospital Act of 2023",
+  "badges": [
+   "IN FORCE",
+   "Health",
+   "2025"
+  ],
+  "what_this_does": "Converts Iranon District Hospital into a 200-bed provincial hospital, on a three-year clock with annual reports to Parliament.",
+  "who_it_affects": "Residents of Parang and Maguindanao del Norte · health workers"
+ },
+ "views": {
+  "simple": "Converts the Iranon District Hospital in Parang into a 200-bed provincial hospital, requires the workforce to grow with it, sets a three-year implementation period, and requires an annual progress report to Parliament.",
+  "official": "AN ACT CONVERTING THE IRANON DISTRICT HOSPITAL IN THE MUNICIPALITY OF PARANG, PROVINCE OF MAGUINDANAO DEL NORTE INTO A PROVINCIAL HOSPITAL TO BE KNOWN AS THE IRANON PROVINCIAL HOSPITAL, AND APPROPRIATING FUNDS THEREFOR"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 73, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

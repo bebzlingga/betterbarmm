@@ -1,178 +1,285 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 88,
-    "short_title": "Bangsamoro Electoral Code",
-    "official_title": "AN ACT AMENDING BAA 35 (BANGSAMORO ELECTORAL CODE)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA3",
-    "date_ratified": "2026-01-28",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Amends Baa 35 (bangsamoro Electoral Code).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Amends Baa 35 (bangsamoro Electoral Code).",
-    "who_will_be_affected": [
-      "Voters",
-      "Candidates & parties"
-    ],
-    "when_will_it_take_effect": "Ratified 2026-01-28; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "An election law: it changes the rules or the map for how you choose the Bangsamoro Parliament, with direct effect on the September 14, 2026 first regular elections.",
-      "in_practice": [
-        "Affects ballots, districts, parties, or procedures for the 2026 polls",
-        "Read together with the Electoral Code (BAA 35) and the Supreme Court's districting rulings"
-      ],
-      "for_specific_groups": {
-        "Voters": "May change your district or your ballot's format",
-        "Candidates & parties": "Compliance requirements may shift"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "A real vote in choosing your own regional government.",
-        "direct_benefits": [
-          {
-            "benefit": "Your ballot elects the Bangsamoro Parliament on Sept 14, 2026 - district, party, and sectoral seats",
-            "who_gets_it": "Registered voters in BARMM",
-            "how_to_access": "Register/verify with COMELEC; vote on election day"
-          },
-          {
-            "benefit": "Clear district representation: a specific representative answerable to your area",
-            "who_gets_it": "District residents",
-            "how_to_access": "Know your district under BAA 86"
-          },
-          {
-            "benefit": "Sectoral seats give organized sectors (women, youth, ulama, IPs, etc.) guaranteed voices",
-            "who_gets_it": "Sectoral communities",
-            "how_to_access": "Through accredited sectoral organizations"
-          }
-        ],
-        "indirect_benefits": [
-          "Accountability: appointed transition officials give way to officials you can vote out"
-        ],
-        "limitations": [
-          "Election laws confer process rights, not material benefits; their value is exercised at the precinct"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Amends: BAA 35",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 88,
+  "short_title": "Bangsamoro Electoral Code Amendments of 2026",
+  "official_title": "AN ACT AMENDING BANGSAMORO AUTONOMY ACT NO. 35, ENTITLED “AN ACT PROVIDING FOR THE BANGSAMORO ELECTORAL CODE OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO”",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA3",
+  "date_ratified": "2026-01-28",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Fourth Regular Session (begun 15 September 2022)",
+  "date_passed": "2026-01-28",
+  "date_passed_hijri": "Sha'ban 09, 1447",
+  "date_approved_by_chief_minister": "2026-02-11",
+  "approved_by": "Chief Minister Abdulraof A. Macacua",
+  "signed_by": [
+   "Mohammad S. Yacob, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "COMELEC",
-      "Candidates",
-      "Voters"
-    ],
-    "impact_tags": [
-      "elections_districting"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2026-01-28"
-    }
+  "effectivity": "15 days after publication in a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Rewrites the rules for the region's first parliamentary election — who may form a party, how party and sectoral seats are won, and a ₱500 million appropriation to run the vote. Every existing party certification is cancelled and must be sought afresh.",
+  "why_was_it_proposed": "The act states no separate purpose. It amends the Bangsamoro Electoral Code ahead of the first BARMM Parliamentary Election, tightening party requirements and rebuilding the sectoral certification process.",
+  "what_will_change": "Regional parties need 5,000 members and chapters in every province and city. Parties need 2.5% of the vote to win party seats. All sectoral certifications are revoked and must be re-obtained under a new 15-day process. ₱500 million goes to COMELEC.",
+  "who_will_be_affected": [
+   "Every voter in the first BARMM parliamentary election",
+   "Regional political parties and coalitions, all of which must re-register",
+   "Sectoral organisations, whose certifications are cancelled outright",
+   "Non-Moro Indigenous Peoples, who elect their representative by sectoral assembly",
+   "Incumbent BTA members intending to run"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page. Origin: Bill 419."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [
-      "BAA 35"
+  "when_will_it_take_effect": "In force from 2026 — 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. If you belong to a party or a sectoral organisation, your accreditation is cancelled and you must apply again. Parties need 2.5% of the vote to win a seat, and at least 30% of their nominees must be women.",
+   "in_practice": [
+    "A regional political party needs at least 5,000 members who are residents and registered voters, distributed across a majority of provinces and cities",
+    "Every party must have provincial and city chapters in all provinces and cities, and municipal chapters in a majority of municipalities",
+    "Registration requires a notarised list of at least 5,000 members with names and signatures",
+    "At least 30% of a party's nominees must be women, and as far as practicable one in every three",
+    "A party needs at least 2.5% of the total valid votes in the party system election to qualify for party representation seats",
+    "All existing sectoral certifications are revoked; a new certification process applies",
+    "Certifying ministries must act on a sectoral application within a non-extendible 15 days, and the certification issues automatically if they do not",
+    "Non-Moro Indigenous Peoples elect their sectoral representative through their sectoral assembly; other sectors are elected by direct plurality",
+    "Only one candidate per accredited organisation for other sectors",
+    "₱500,000,000 is appropriated to augment COMELEC's funds, released immediately"
+   ],
+   "for_specific_groups": {
+    "Women": "Section 3 retains the requirement that at least 30% of a regional party's nominees be women — and, as far as practicable, one in every three.",
+    "Non-Moro Indigenous Peoples": "Your sectoral representative is elected by your own sectoral assembly rather than by a general vote — the one sector treated this way.",
+    "Sectoral organisations": "Every certification previously issued is revoked and cancelled. You must go through the new process, and the ministry has a non-extendible 15 days to decide.",
+    "Political parties": "All existing parties, organisations and coalitions must register and seek new accreditation. Failure to do so bars you from the election. COMELEC allows no more than 60 days after the rules are issued.",
+    "Incumbent BTA members": "Filing a Certificate of Candidacy does not make you ipso facto resigned, and Members designated to Cabinet or executive offices are likewise not deemed resigned."
+   },
+   "where_this_applies": "The BARMM, for the first Bangsamoro parliamentary election and after.",
+   "when_you_will_feel_it": "At the first BARMM Parliamentary Election, whose date is determined by the Philippine Congress.",
+   "what_you_can_do": [
+    "If you run a sectoral organisation, start the new certification process — your old certificate no longer exists",
+    "If you are in a political party, check it has re-registered with COMELEC through the BRAC within the 60-day window",
+    "Hold a certifying ministry to the 15-day deadline: the certification issues on lapse unless there is justifiable cause, and failure to act is a ground for disciplinary action",
+    "Ask COMELEC for the implementing rules, due within 30 days of effectivity"
+   ],
+   "watch_out_for": [
+    "Requiring chapters in every province and city, plus a majority of municipalities, is a high organisational bar that favours large established parties.",
+    "The blanket revocation of all sectoral certifications resets the field shortly before the first election.",
+    "Appointed BTA members may run without resigning, and may hold Cabinet posts while doing so.",
+    "The act repeals 5 sections of the Electoral Code (Sections 31–35) without restating what they contained.",
+    "The date of the first election is set by the Philippine Congress, not by the region."
+   ],
+   "key_terms_explained": {
+    "Regional political party": "A party organised within the Bangsamoro to contest its parliamentary elections.",
+    "Party representation seats": "Seats allocated to parties by share of the vote, separate from district seats.",
+    "Sectoral representative": "A member of Parliament representing a defined sector rather than a geographical district.",
+    "NMIP": "Non-Moro Indigenous Peoples.",
+    "BRAC": "Bangsamoro Registration and Accreditation Committee, which accredits organisations fielding sectoral candidates.",
+    "Ipso facto resigned": "Automatically treated as having resigned — which, under this act, filing a candidacy does not trigger for BTA members."
+   },
+   "status_note": "Passed Sha'ban 09, 1447 / 28 January 2026, approved by Chief Minister Abdulraof A. Macacua on 11 February 2026.",
+   "benefits": {
+    "headline": "Clear thresholds, a women's quota retained, and a deadline that certifying ministries cannot let slip.",
+    "direct_benefits": [
+     {
+      "benefit": "At least 30% of party nominees must be women",
+      "who_gets_it": "Women seeking parliamentary office",
+      "how_to_access": "Retained by Section 3"
+     },
+     {
+      "benefit": "Automatic certification if a ministry misses the 15-day deadline",
+      "who_gets_it": "Sectoral organisations",
+      "how_to_access": "Section 6(d)"
+     },
+     {
+      "benefit": "Disciplinary liability for officials who fail to act in time",
+      "who_gets_it": "Applicants facing delay",
+      "how_to_access": "Section 6(e)"
+     },
+     {
+      "benefit": "Self-determination of the Non-Moro Indigenous Peoples' representative",
+      "who_gets_it": "NMIP communities",
+      "how_to_access": "Election by their own sectoral assembly under Section 8"
+     },
+     {
+      "benefit": "₱500,000,000 for the conduct of the first parliamentary election",
+      "who_gets_it": "Voters, through COMELEC",
+      "how_to_access": "Released immediately on effectivity"
+     }
     ],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": "Bill 419"
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Bangsamoro Electoral Office / COMELEC",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2026-01-28 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Bangsamoro Electoral Office / COMELEC (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 88",
-    "line2": "Bangsamoro Electoral Code",
-    "badges": [
-      "ENACTED",
-      "Elections Districting",
-      "2026"
+    "indirect_benefits": [
+     "A written 2.5% threshold, so party seat allocation is predictable",
+     "Required written reasons before a certification is denied"
     ],
-    "what_this_does": "Amends Baa 35 (bangsamoro Electoral Code).",
-    "who_it_affects": "COMELEC · Candidates · Voters",
-    "effective": "2026-01-28"
-  },
-  "views": {
-    "simple": "Amends Baa 35 (bangsamoro Electoral Code).",
-    "official": "AN ACT AMENDING BAA 35 (BANGSAMORO ELECTORAL CODE)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "limitations": [
+     "High organisational thresholds for new parties.",
+     "All existing sectoral certifications cancelled.",
+     "Only one candidate per accredited organisation for other sectors."
+    ]
+   },
+   "your_responsibilities": {
+    "for_parties": [
+     "Register and seek new accreditation with COMELEC through the BRAC within the period allowed",
+     "Maintain at least 5,000 member-voters and the required provincial, city and municipal chapters",
+     "Ensure at least 30% of nominees are women"
+    ],
+    "for_sectoral_organisations": [
+     "Undergo the new certification process — submit a verified petition, member list, constitution and by-laws, and sector platform"
+    ],
+    "for_citizens": [
+     "None beyond voting."
+    ]
+   },
+   "what_is_prohibited": [
+    "Participating in the electoral process without securing accreditation under the new requirements — failure to do so bars a party from taking part.",
+    "Fielding more than one candidate per accredited organisation for other sectors."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment for voters.",
+    "for_officials": "Failure of a certifying official to act on a sectoral application within the prescribed period is a ground for disciplinary action.",
+    "for_parties": "A party that fails to secure accreditation under the new law is barred from participating in the electoral process."
+   },
+   "where_to_complain": {
+    "first_stop": "The certifying ministry or office, which must issue internal rules covering motions for reconsideration, appeals and revocation",
+    "oversight": "Commission on Elections, through the Bangsamoro Registration and Accreditation Committee",
+    "note": "A denial must specify the just cause or legal ground, and cannot be issued without notifying the organisation."
+   },
+   "everyday_scenarios": [
+    "A women's organisation applies for sectoral certification. The ministry has a non-extendible 15 days; if it does not act, the certification issues by operation of the act, and the official who let it lapse faces disciplinary action.",
+    "A new party wants to contest the election. It needs 5,000 member-voters spread across a majority of provinces and cities, chapters in every province and city, and municipal chapters in most municipalities.",
+    "A Non-Moro Indigenous community wants a say in who represents them. Their representative is elected by their own sectoral assembly, not by a region-wide vote.",
+    "An appointed BTA member files a Certificate of Candidacy. Under Section 16 they are not deemed resigned and may keep their position, including a Cabinet post."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Amends Section 1, Article III of BAA 35: a regional political party is established by at least 5,000 members who are residents and registered voters, distributed throughout a majority of the provinces and cities composing the Bangsamoro territory; all parties must establish provincial and city chapters in all provinces and cities and municipal chapters in a majority of the municipalities, and a provincial chapter must have municipal chapters in a majority of that province's municipalities.",
+  "Section 2 — Amends Section 4(c): registration requires a notarised list of at least 5,000 members manifesting their collective decision to register the party, with names, signatures and details determined by COMELEC.",
+  "Section 3 — Retains Section 9(b): regional political parties shall ensure that at least 30% of party nominees are women, and as far as practicable that at least one in every three nominees is a woman.",
+  "Sections 4–5 — Amend Sections 9 and 12 of Article IV(A): party representatives are members of registered regional political parties receiving at least two and one-half percent of the total valid votes cast for the party system election, and only such parties qualify to participate in the allocation of party representation seats.",
+  "Section 6 — Process of certification for sectoral organisations and sectoral wings: submission of a verified petition, a verified list of members and officers, constitution and by-laws, and the sector platform, policies, principles and legislative agenda. An incomplete submission is denied outright without prejudice to refiling. The certifying ministry must act within a non-extendible 15 days; the certification issues on lapse of that period unless justifiable cause for denial exists, and no denial may be made without notifying the organisation and specifying the just cause or legal ground. Failure to act within the period is a ground for disciplinary action against the erring official. Ministries issue their own rules on reconsideration, appeals and revocation, which shall not affect the incumbency of a sectoral representative duly elected in the immediately preceding parliamentary election.",
+  "Section 7 — All certifications previously issued to sectoral organisations and sectoral wings of political parties are revoked and cancelled, and a new certification process must be undertaken.",
+  "Section 8 — Amends Section 17, Article IV(C): except for the Non-Moro Indigenous Peoples, who are elected by their sectoral assembly, sectoral representatives are elected through direct plurality of valid votes cast for the representative sectors. Candidates must be members of a regional political party or an accredited sectoral party or organisation, certified by the appropriate ministry on the basis of their track record in their advocacy. The election of sectoral representatives commences in the first BARMM Parliamentary Election determined by the Philippine Congress.",
+  "Section 9 — Candidates for other sectors are fielded by organisations accredited by the Bangsamoro Registration and Accreditation Committee, with only one candidate per accredited organisation.",
+  "Sections 10–14 — Repeal Sections 31 and 32 of Article IV(E) and Sections 33, 34 and 35 of Article IV(F) of BAA 35.",
+  "Sections 15–16 — Amend the transitory provisions: the election of sectoral representatives, except the NMIPs, is synchronised with the first Parliamentary Elections and automated; and incumbent appointed BTA members whose positions are elective by nature are not deemed ipso facto resigned on filing a Certificate of Candidacy, nor are Members designated to Cabinet and other executive offices.",
+  "Section 17 — All existing political parties, organisations and coalitions intending to participate in the first BARMM Parliamentary Election must register and seek new accreditation with COMELEC through the BRAC under the new eligibility requirements; failure to secure accreditation bars a party from participating. COMELEC allows not more than 60 days for compliance after the implementing rules are promulgated.",
+  "Section 18 — Appropriates ₱500,000,000 to augment COMELEC's funds for the conduct of the first BARMM Parliamentary Election and the implementation of the act, from any readily available sources of Bangsamoro Government funds, released immediately upon effectivity.",
+  "Section 19 — COMELEC shall promulgate implementing rules within 30 days of effectivity.",
+  "Section 22 — Takes effect 15 days after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Women seeking parliamentary office",
+   "Non-Moro Indigenous Peoples",
+   "Sectoral organisations facing ministry delay",
+   "Voters in the first parliamentary election"
+  ],
+  "impact_tags": [
+   "elections",
+   "governance_civil_service",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱500,000,000 to augment COMELEC funds, released immediately on effectivity",
+  "figures_note": "Quoted from Section 18. Other figures are thresholds: 5,000 members to form a party, 2.5% of valid votes for a party seat, 30% women nominees."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2026-01-28"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page. Origin: Bill 419."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/03/BAA-88.pdf",
+  "irr": "Required from COMELEC within 30 days of effectivity. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [
+   "BAA 35"
+  ],
+  "amended_by": [],
+  "repeals": "Sections 31, 32, 33, 34 and 35 of BAA 35",
+  "origin_bill": "Parliament Bill 419",
+  "related_note": "Amends the Bangsamoro Electoral Code of 2023 (BAA 35), as does BAA 87, which removed the “None of the Above” ballot option. Operates alongside the parliamentary districting acts BAA 58, 77 and 86."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱500,000,000",
+  "irr_status": "Section 19 required COMELEC implementing rules within 30 days of effectivity.",
+  "note": "Read from the enacted text as signed. The act repeals 5 sections of the Electoral Code without restating their content; readers needing those provisions should consult BAA 35 as it stood before this amendment."
+ },
+ "citizen_questions": [
+  {
+   "q": "Do parties have to re-register?",
+   "a": "Yes. All existing political parties, organisations and coalitions intending to contest the first parliamentary election must register and seek new accreditation with COMELEC through the BRAC. Failure to do so bars them from participating."
+  },
+  {
+   "q": "Is the women's quota still there?",
+   "a": "Yes. Section 3 expressly retains the requirement that at least 30% of a regional party's nominees be women, and as far as practicable one in every three."
+  },
+  {
+   "q": "How much of the vote does a party need for a seat?",
+   "a": "At least two and one-half percent of the total valid votes cast for the party system election."
+  },
+  {
+   "q": "What happened to sectoral certifications?",
+   "a": "All of them were revoked and cancelled by Section 7. Organisations must go through a new certification process, and the certifying ministry has a non-extendible 15 days to act."
+  },
+  {
+   "q": "What if the ministry sits on my application?",
+   "a": "The certification issues on the lapse of the 15-day period unless there is justifiable cause for denial, and failure to act within the period is a ground for disciplinary action against the official."
+  },
+  {
+   "q": "How are Non-Moro Indigenous Peoples represented?",
+   "a": "Uniquely — their sectoral representative is elected by their own sectoral assembly, while other sectoral representatives are elected by direct plurality of votes."
+  },
+  {
+   "q": "Do BTA members have to resign to run?",
+   "a": "No. Section 16 provides that incumbent appointed BTA members whose positions are elective by nature are not deemed ipso facto resigned on filing a Certificate of Candidacy, and neither are Members holding Cabinet or other executive posts."
+  },
+  {
+   "q": "Who pays for the election?",
+   "a": "₱500 million is appropriated to augment COMELEC's funds, drawn from readily available Bangsamoro Government sources and released immediately."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 88",
+  "line2": "Bangsamoro Electoral Code Amendments of 2026",
+  "badges": [
+   "IN FORCE",
+   "Elections",
+   "2026"
+  ],
+  "what_this_does": "Rewrites party and sectoral rules for the first parliamentary election and funds it with ₱500 million.",
+  "who_it_affects": "Political parties · sectoral organisations · women candidates · every voter"
+ },
+ "views": {
+  "simple": "Amends the Bangsamoro Electoral Code ahead of the first parliamentary election: 5,000 members and region-wide chapters to form a party, a 2.5% threshold for party seats, a retained 30% women's quota, revocation of all sectoral certifications with a new 15-day process, and ₱500 million for COMELEC.",
+  "official": "AN ACT AMENDING BANGSAMORO AUTONOMY ACT NO. 35, ENTITLED “AN ACT PROVIDING FOR THE BANGSAMORO ELECTORAL CODE OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO”"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 88, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

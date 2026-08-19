@@ -148,3 +148,25 @@ export function getCategory(slug: CategorySlug): CategoryDefinition {
 
 	return category
 }
+
+/**
+ * Where a measure lives.
+ *
+ * Every record is a page of its own, so a row in a list, a cross-reference on
+ * another measure, and a link from a member's profile all resolve to the same
+ * URL. The two resolution rolls keep their own segment: numbering restarts on
+ * each roll, so "Resolution 12" names two different measures and one path
+ * could not address both.
+ */
+const RECORD_PATHS: Partial<Record<CategorySlug, string>> = {
+	acts: '/acts',
+	bills: '/bills',
+	'adopted-resolutions': '/resolutions/adopted',
+	'proposed-resolutions': '/resolutions/proposed',
+}
+
+/** The path to one measure's page, or `undefined` for a class with no pages. */
+export function recordHref(record: { category: CategorySlug; number: number }): string | undefined {
+	const base = RECORD_PATHS[record.category]
+	return base ? `${base}/${record.number}` : undefined
+}

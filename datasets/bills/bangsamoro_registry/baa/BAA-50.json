@@ -1,174 +1,290 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 50,
-    "short_title": "Creates the Bangsamoro Kulliyyah for Islamic Studies (repealing",
-    "official_title": "AN ACT CREATING THE BANGSAMORO KULLIYYAH FOR ISLAMIC STUDIES (REPEALING MMA ACT 164)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2023-11-30",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Creates the Bangsamoro Kulliyyah for Islamic Studies (repealing MMA Act 164).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Creates the Bangsamoro Kulliyyah for Islamic Studies (repealing MMA Act 164).",
-    "who_will_be_affected": [
-      "Target sector of the body",
-      "Job seekers",
-      "CSOs"
-    ],
-    "when_will_it_take_effect": "Ratified 2023-11-30; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Creates or strengthens a public institution. New offices sound bureaucratic, but each one is a service window: a place to bring complaints, apply for programs, or get support that previously had no dedicated home in the region.",
-      "in_practice": [
-        "Once organized (leadership appointed, budget released), it opens programs and services",
-        "Look for its office, hotline, or Facebook page under the Bangsamoro Government",
-        "Its mandate defines what you can demand from it"
-      ],
-      "for_specific_groups": {
-        "Target sector of the body": "You gain a dedicated advocate inside government",
-        "Job seekers": "New institutions hire staff",
-        "CSOs": "A formal counterpart for partnership and accountability"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "A government-backed path for higher Islamic studies.",
-        "direct_benefits": [
-          {
-            "benefit": "Kulliyyah (college) for Islamic Studies: degrees for ulama and asatidz",
-            "who_gets_it": "Islamic studies students and scholars",
-            "how_to_access": "Admission via the Kulliyyah/MBHTE"
-          },
-          {
-            "benefit": "A route toward Shari'ah careers (see Res 517's JD-bridging push)",
-            "who_gets_it": "Kulliyah graduates",
-            "how_to_access": "Follow MBHTE/LEB developments"
-          }
-        ],
-        "indirect_benefits": [
-          "Professionalizes religious education standards region-wide"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service."
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Repeals: MMA Act No. 164 (ARMM, Regional Madrasah Graduate Education Act of 2003)",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 50,
+  "short_title": "Bangsamoro Kulliyyah for Islamic Studies Act of 2023",
+  "official_title": "AN ACT CREATING THE BANGSAMORO KULLIYYAH FOR ISLAMIC STUDIES, REPEALING MUSLIM MINDANAO AUTONOMY ACT NO. 164, OTHERWISE KNOWN AS THE REGIONAL MADRASAH GRADUATE EDUCATION ACT OF 2003, PROVIDING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2023-11-30",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Second Regular Session, begun 15 September 2022",
+  "date_passed": "2023-11-30",
+  "date_passed_hijri": "Jumada Al-Awwal 16, 1445",
+  "date_approved_by_chief_minister": "2023-12-26",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Muslim communities",
-      "Religious institutions"
-    ],
-    "impact_tags": [
-      "institution_commission",
-      "islamic_culture_heritage"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2023-11-30"
-    }
+  "origin_bills": "Bill No. 31",
+  "effectivity": "15 days after publication in a newspaper of general and regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Turns the old Regional Madrasah Graduate Academy in Buluan into a proper regional institution of higher learning for Islamic studies and Arabic — with degree programmes, a governing board, and the power to open branches elsewhere in the region.",
+  "why_was_it_proposed": "The ARMM-era academy was created by a 2003 statute that this act repeals. The region needed a chartered institution able to award baccalaureate and postgraduate degrees in Islamic studies and Arabic, rather than an academy operating under an obsolete charter.",
+  "what_will_change": "The Bangsamoro Kulliyyah for Islamic Studies is created as a corporate body attached to the education ministry, governed by a Board of Trustees that seats students, faculty, alumni, the Bangsamoro Mufti and a private Islamic institution representative alongside government officials. It keeps its own tuition and income as special trust funds, may set socialised tuition for poor students, and may establish branches across the BARMM.",
+  "who_will_be_affected": [
+   "Madrasah graduates and students seeking degrees in Islamic studies and Arabic",
+   "Faculty and staff of the defunct Regional Madrasah Graduate Academy, whose personnel, assets and liabilities transfer",
+   "Private Islamic institutions in the region, with a seat on the Board",
+   "Students, through a Student Government Organization president on the Board",
+   "Communities elsewhere in the region, where branches may be established"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": "MMA Act No. 164 (ARMM, Regional Madrasah Graduate Education Act of 2003)",
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "The created body itself",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2023-11-30 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "The created body itself (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 50",
-    "line2": "Creates the Bangsamoro Kulliyyah for Islamic Studies (repealing",
-    "badges": [
-      "ENACTED",
-      "Institution Commission",
-      "2023"
+  "when_will_it_take_effect": "In force since 2024 — approved by the Chief Minister on 26 December 2023, effective 15 days after publication. Implementing rules were due within 60 days of passage.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. There is a regional Islamic university in Buluan, Maguindanao del Sur, offering baccalaureate and postgraduate degrees in Islamic studies and Arabic — and it may not turn you away on grounds of colour, race, religion, sex or disability.",
+   "in_practice": [
+    "Located at the former Regional Madrasah Graduate Academy site in Buluan, Maguindanao del Sur",
+    "Baccalaureate and postgraduate degree programmes in Islamic studies and Arabic language",
+    "Attached to the education ministry, under its direct supervision and regulatory powers",
+    "Governed by a Board of Trustees chaired by the education Minister",
+    "Students, faculty and alumni each hold a seat on that Board, as does the Bangsamoro Mufti",
+    "A socialised tuition scheme for poor but deserving students",
+    "Tuition, fees, subsidies and other income are retained by the institution as special trust funds",
+    "Donations to it are exempt from all taxes and deductible from the donor's income tax",
+    "It may establish branches in other areas of the BARMM"
+   ],
+   "for_specific_groups": {
+    "Madrasah graduates": "This is the region's chartered institution for advancing into degree-level Islamic and Arabic studies.",
+    "Students": "The President of the Student Government Organization sits on the Board of Trustees, and a socialised tuition scheme is required for poor but deserving students.",
+    "Faculty": "The President of the faculty association sits on the Board, and the institution may establish professorial chairs and fellowships.",
+    "Alumni": "The President of the Alumni Association sits on the Board.",
+    "Private Islamic institutions": "A representative of MBHTE-recognised private Islamic institutions sits on the Board.",
+    "Former REMAcademy personnel": "The education ministry had 90 days from approval to transition the disposition of personnel, assets and liabilities to the new institution.",
+    "Non-Muslim applicants": "Section 19 forbids discrimination on the basis of colour, race, religion, sex or disability in admissions, employment or any programme."
+   },
+   "where_this_applies": "Buluan, Maguindanao del Sur, and such other areas as the Board of Trustees determines — the act expressly allows branches elsewhere in the BARMM.",
+   "when_you_will_feel_it": "In force since early 2024, with implementing rules due within 60 days of passage.",
+   "what_you_can_do": [
+    "Ask about admission requirements — these are set by the Academic Council subject to Board approval",
+    "Ask about the socialised tuition scheme if cost is a barrier",
+    "Ask about scholarships and fellowships, which the Board may establish",
+    "If you are a student, faculty member or alumnus, your association's president holds a Board seat"
+   ],
+   "watch_out_for": [
+    "No peso figure is appropriated. Initial implementation is charged against the current year's appropriations, with continued operation carried in the education ministry's budget.",
+    "The President holds Salary Grade 26 — below the heads of the region's commissions — and the complete staffing pattern is determined by the education ministry rather than the Board.",
+    "The Board may extend the President's term beyond retirement age up to seventy, on a unanimous outstanding rating.",
+    "The institution may privatise non-academic services such as health, food and building maintenance.",
+    "Much of its academic autonomy is qualified — the education ministry holds direct supervision and regulatory powers over it."
+   ],
+   "key_terms_explained": {
+    "Kulliyyah": "An institution of higher learning offering specialised degrees in Islamic studies and the Arabic language. The word is Arabic for a faculty or college.",
+    "REMAcademy": "The Regional Madrasah Graduate Academy, created under Muslim Mindanao Autonomy Act No. 164 in 2003 and repealed by this act.",
+    "Madrasah": "An Islamic school. Plural: madaris.",
+    "Mufti": "A scholar qualified to issue religious legal opinions. The Bangsamoro Mufti sits on the Board of Trustees.",
+    "Special trust fund": "Money a government institution may keep and spend itself rather than remit, here covering tuition, fees, subsidies, auxiliary services and land grant income.",
+    "Socialised tuition": "Fees scaled to what a student can afford, so cost does not exclude poor but deserving applicants.",
+    "Board of Trustees": "The governing body of the institution, holding its highest policy-making power."
+   },
+   "status_note": "Passed 30 November 2023 and approved by the Chief Minister on 26 December 2023.",
+   "benefits": {
+    "headline": "A chartered regional institution for Islamic and Arabic higher learning, keeping its own income, with students and faculty on its governing board.",
+    "direct_benefits": [
+     {
+      "benefit": "Baccalaureate and postgraduate degree programmes in Islamic studies and Arabic",
+      "who_gets_it": "Students in the region, especially madrasah graduates",
+      "how_to_access": "Section 6"
+     },
+     {
+      "benefit": "A socialised scheme of tuition and school fees",
+      "who_gets_it": "Poor but deserving students",
+      "how_to_access": "Section 9(i)"
+     },
+     {
+      "benefit": "Scholarships, fellowships and professorial chairs",
+      "who_gets_it": "Deserving students and qualified faculty",
+      "how_to_access": "Section 9(j)"
+     },
+     {
+      "benefit": "Seats on the governing board for students, faculty and alumni",
+      "who_gets_it": "The academic community",
+      "how_to_access": "Section 8"
+     },
+     {
+      "benefit": "Admission and employment free from discrimination on colour, race, religion, sex or disability",
+      "who_gets_it": "All applicants",
+      "how_to_access": "Section 19"
+     },
+     {
+      "benefit": "Distance education, dual learning systems and community laboratories",
+      "who_gets_it": "Students unable to attend in person",
+      "how_to_access": "Section 9(q)"
+     },
+     {
+      "benefit": "Branches in other areas of the BARMM",
+      "who_gets_it": "Communities away from Buluan",
+      "how_to_access": "Section 9(u)"
+     }
     ],
-    "what_this_does": "Creates the Bangsamoro Kulliyyah for Islamic Studies (repealing MMA Act 164).",
-    "who_it_affects": "Muslim communities · Religious institutions",
-    "effective": "2023-11-30"
-  },
-  "views": {
-    "simple": "Creates the Bangsamoro Kulliyyah for Islamic Studies (repealing MMA Act 164).",
-    "official": "AN ACT CREATING THE BANGSAMORO KULLIYYAH FOR ISLAMIC STUDIES (REPEALING MMA ACT 164)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Income retention as special trust funds, giving the institution its own resources",
+     "Tax-exempt donations, deductible from the donor's income tax",
+     "Research and extension centres, consortia with LGUs, and joint ventures with industry",
+     "An external management audit the Board may authorise, with reforms based on its findings"
+    ],
+    "limitations": [
+     "No fixed appropriation of its own.",
+     "The education ministry holds direct supervision, regulatory powers and control of the staffing pattern.",
+     "The President is appointed by the Chief Minister from the Board's nominees, not chosen by the Board itself."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ],
+    "for_government": [
+     "MBHTE chairs the Board, exercises direct supervision and regulatory powers, determines the staffing pattern, formulates the implementing rules within 60 days and furnishes a copy to Parliament",
+     "MBHTE was to transition the personnel, assets and liabilities of the defunct REMAcademy within 90 days of approval",
+     "The Chief Minister appoints officials at Salary Grade 25 and above; the Minister appoints Salary Grade 24 and below"
+    ]
+   },
+   "what_is_prohibited": [
+    "Discrimination on the basis of colour, race, religion, sex or disability in admissions, employment, or any other programme or activity of the institution.",
+    "The act creates no criminal offence."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment.",
+    "student_discipline": "The Academic Council exercises disciplinary power over students, under rules of discipline drawn by the councils and approved by the Board."
+   },
+   "where_to_complain": {
+    "first_stop": "The Office of the President of the Kulliyyah",
+    "oversight": "The Board of Trustees, chaired by the Minister of Basic, Higher and Technical Education, meeting at least quarterly",
+    "note": "Administrative and non-teaching personnel are covered by civil service rules."
+   },
+   "everyday_scenarios": [
+    "A madrasah graduate wants a recognised degree in Islamic studies rather than an unaccredited certificate. This is the region's chartered institution for exactly that.",
+    "A student cannot afford the fees. Section 9(i) requires the Board to adopt and implement a socialised scheme of tuition and school fees for greater access to poor but deserving students.",
+    "A non-Muslim applicant wonders whether they may enrol. Section 19 forbids discrimination on the basis of religion in admissions, employment or any programme.",
+    "A community far from Buluan wants access. Section 9(u) allows the Board to establish branches in other areas of the BARMM."
+   ]
   }
+ },
+ "key_provisions": [
+  "Sections 1–3 — Short title: the “Bangsamoro Kulliyyah for Islamic Studies Act of 2023”. The Bangsamoro Educational System is declared a subsystem of the national education system, with the Bangsamoro Government promoting the constitutional right to quality and accessible education at all levels. A Kulliyyah is defined as an institution of higher learning offering specialised degrees in Islamic studies and the Arabic language; the REMAcademy is the Regional Madrasah Graduate Academy created under Muslim Mindanao Autonomy Act No. 164.",
+  "Sections 4–7 — The Bangsamoro Kulliyyah for Islamic Studies is created, attached to the Ministry of Basic, Higher and Technical Education, situated at the current location of the REMAcademy in the Municipality of Buluan, Province of Maguindanao del Sur, and such other areas as the Board of Trustees may determine. It is an institute of specialised higher learning primarily providing baccalaureate and postgraduate degree programmes, promoting instruction, advanced studies, research, extension services and innovation, and institutionalising “moral governance that is inclusive and reflective of the aspirations and ideals of the Bangsamoro people”. It is under the direct supervision and regulatory powers of the education ministry, and holds the general powers of a corporation under RA 11232, the Revised Corporation Code.",
+  "Section 8 — The Board of Trustees is the governing body: the Minister of Basic, Higher and Technical Education as Chairperson; the Director-General for Higher Education as first Vice-Chairperson; the Director-General for Madaris Education as second Vice-Chairperson; and as members the Kulliyyah President, the chairperson of Parliament's Committee on Basic, Higher and Technical Education, the Bangsamoro Mufti, the president of the faculty association, the president of the Student Government Organization, the president of the Alumni Association, and a representative from private Islamic institutions recognised by the ministry.",
+  "Section 9 — Board powers: formulate policies; receive and manage funds with full transparency; establish research and extension centres; receive legacies, gifts and donations of real and personal property, which “shall be exempt from all taxes and shall be considered as deductible items from the income tax of the donor/s”; approve curricula, institutional programmes and rules of discipline; set admission and graduation policies; award honorary degrees; and fix tuition and other charges after due consultation. Fees, government subsidies and other income constitute special trust funds deposited in an authorised government depository bank, with accrued interest forming part of the same fund; notwithstanding any law to the contrary, income from tuition, auxiliary services and land grants is retained by the Kulliyyah and disbursable by the Board for instruction, research, extension or other programmes, with fiduciary fees disbursed only for their stated purposes. The Board must adopt a socialised scheme of tuition and fees for poor but deserving students; may establish professorial chairs, fellowships and scholarships; may authorise an external management audit financed by the ministry and institute reforms on its findings; may collaborate with other governing boards of state colleges and universities in the region; may enter joint ventures with business and industry and develop consortia with LGUs and institutions local and foreign; may adopt information technology, dual learning, open or distance education and community laboratories; may privatise non-academic services such as health, food and building or grounds maintenance; may extend the President's term beyond retirement but not beyond the age of seventy on a unanimous outstanding performance rating and unanimous search committee recommendation; and may establish branches of the Kulliyyah in other areas of the BARMM.",
+  "Sections 10–16 — The Chief Minister appoints officials at Salary Grade 25 and above; the education Minister appoints officials and employees at Salary Grade 24 and below. Board members receive an honorarium per meeting attended. The Board meets at least quarterly, with a simple majority as quorum. The Kulliyyah is headed by a full-time President at Salary Grade 26; the complete staffing pattern is determined by the ministry. 6 months before the incumbent's term expires the Board creates a search committee, and the Chief Minister appoints the President from at least three nominees endorsed by the Board at least 1 month before expiry. The President serves 4 years and may be reappointed once, for a maximum of two terms. A Kulliyyah Secretary acts as Secretary of the Board.",
+  "Sections 17–20 — An Academic Council chaired by the President and composed of all academic staff at the rank of at least Assistant Professor acts as an advisory body on academics and programmes, reviews and recommends curricular offerings for Board approval, sets admission and graduation requirements subject to Board review, formulates academic policies and rules on discipline, and exercises disciplinary power over students. The Kulliyyah “shall not discriminate on the basis of color, race, religion, sex, or disability in its admissions, employment, or any other programs or activities”. Administrative and non-teaching personnel are covered by civil service rules.",
+  "Sections 21–26 — Transition: within 90 days after approval, the education ministry transitions the disposition of personnel, assets and liabilities of the defunct REMAcademy to the Kulliyyah, and all its assets, capital, records, funds, receivables, equipment and facilities transfer upon approval of the act. Appropriations: initial implementation is charged against the current year's appropriations, with continued operation and maintenance included in the ministry's appropriation under the General Appropriations Act of the BARMM. Implementing rules within 60 days of passage by the ministry, with a copy furnished to Parliament. Muslim Mindanao Autonomy Act No. 164, the Regional Madrasah Graduate Education Act of 2003, is repealed. Effective 15 days after publication in a newspaper of general and regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Madrasah graduates and students of Islamic studies and Arabic",
+   "Poor but deserving students, through socialised tuition",
+   "Faculty, students and alumni, seated on the governing board",
+   "Private Islamic institutions in the region",
+   "Communities where branches may be established"
+  ],
+  "impact_tags": [
+   "education",
+   "islamic_culture_heritage",
+   "culture_heritage"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "No peso figure stated — initial implementation charged against the current year's appropriations, with continued operation in the education ministry's budget under the annual appropriations act",
+  "figures_note": "Section 22 states no amount; it charges initial implementation against existing appropriations."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2023-11-30"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/BAA-50.pdf",
+  "irr": "Due from MBHTE within 60 days of passage, with a copy furnished to Parliament — not yet captured in this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": "Muslim Mindanao Autonomy Act No. 164, the Regional Madrasah Graduate Education Act of 2003",
+  "origin_bill": "Bill No. 31",
+  "related_note": "Operates within the Bangsamoro Educational System as a subsystem of the national education system, under the direct supervision of MBHTE. Its corporate powers are drawn from RA 11232, the Revised Corporation Code. It sits alongside the Tribal University directed to be created under BAA 64, the Bangsamoro Indigenous Peoples' Act — both are specialised regional institutions of higher learning, though the Tribal University still requires a separate charter law."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "No fixed amount; charged against existing appropriations and thereafter the education ministry's budget",
+  "irr_status": "Section 23 requires MBHTE to formulate implementing rules within 60 days of passage and furnish a copy to Parliament. Not yet captured in this registry.",
+  "implementing_agency": {
+   "agency": "Bangsamoro Kulliyyah for Islamic Studies, governed by its Board of Trustees under the Ministry of Basic, Higher and Technical Education",
+   "inferred": false
+  },
+  "note": "Read from the enacted text as signed, all 6 pages. The 90-day window for transitioning the defunct REMAcademy's personnel, assets and liabilities ran from the 26 December 2023 approval."
+ },
+ "citizen_questions": [
+  {
+   "q": "Where is it?",
+   "a": "At the current location of the former Regional Madrasah Graduate Academy in the Municipality of Buluan, Maguindanao del Sur — and the Board may establish branches in other areas of the BARMM."
+  },
+  {
+   "q": "What can I study there?",
+   "a": "Baccalaureate and postgraduate degree programmes in Islamic studies and the Arabic language, with instruction, advanced studies, research and extension services in its areas of specialisation."
+  },
+  {
+   "q": "Do I have to be Muslim to enrol?",
+   "a": "No. Section 19 provides that the Kulliyyah shall not discriminate on the basis of colour, race, religion, sex or disability in its admissions, employment, or any other programmes or activities."
+  },
+  {
+   "q": "What if I cannot afford the fees?",
+   "a": "Section 9(i) requires the Board to adopt and implement a socialised scheme of tuition and school fees for greater access to poor but deserving students, and Section 9(j) allows scholarships and fellowships."
+  },
+  {
+   "q": "Do students have a say in how it is run?",
+   "a": "Yes. The President of the Student Government Organization sits on the Board of Trustees, alongside the presidents of the faculty and alumni associations and the Bangsamoro Mufti."
+  },
+  {
+   "q": "Does it keep the money it earns?",
+   "a": "Yes. Tuition, other charges, government subsidies and income from auxiliary services and land grants constitute special trust funds retained by the Kulliyyah and disbursable by the Board for instruction, research, extension and other programmes."
+  },
+  {
+   "q": "What happened to the old Madrasah Graduate Academy?",
+   "a": "It was abolished. Its charter — Muslim Mindanao Autonomy Act No. 164 of 2003 — is repealed, and its assets, records, funds, equipment and facilities transferred to the Kulliyyah, with the education ministry given 90 days to transition personnel, assets and liabilities."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 50",
+  "line2": "Bangsamoro Kulliyyah for Islamic Studies Act of 2023",
+  "badges": [
+   "IN FORCE",
+   "Education",
+   "2023"
+  ],
+  "what_this_does": "Creates a chartered regional institution for degree-level Islamic and Arabic studies at Buluan, replacing the ARMM-era madrasah academy.",
+  "who_it_affects": "Madrasah graduates · students of Islamic studies · faculty and alumni",
+  "effective": "2023-12-26"
+ },
+ "views": {
+  "simple": "Creates the Bangsamoro Kulliyyah for Islamic Studies at Buluan in Maguindanao del Sur — a chartered institution offering baccalaureate and postgraduate degrees in Islamic studies and Arabic, governed by a Board of Trustees that seats students, faculty, alumni and the Bangsamoro Mufti, retaining its own tuition income as special trust funds, required to run socialised tuition for poor students, barred from discriminating on religion or disability, and free to open branches elsewhere in the region. It repeals the ARMM-era Regional Madrasah Graduate Education Act of 2003.",
+  "official": "AN ACT CREATING THE BANGSAMORO KULLIYYAH FOR ISLAMIC STUDIES, REPEALING MUSLIM MINDANAO AUTONOMY ACT NO. 164, OTHERWISE KNOWN AS THE REGIONAL MADRASAH GRADUATE EDUCATION ACT OF 2003, PROVIDING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 50, enacted text as signed (Parliament's acts index), all 6 pages.",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

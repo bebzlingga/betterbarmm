@@ -1,0 +1,382 @@
+{
+ "source": "parliament.bangsamoro.gov.ph measure pages",
+ "note": "PDF links only. The files are scans with no text layer and are not vendored into this repo.",
+ "measures": {
+  "1": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-adopting-an-official-flag-of-the-bangsamoro-autonomous-region-in-muslim-mindanao/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-1-Flag.pdf"
+  },
+  "2": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-adopting-an-official-bangsamoro-emblem-of-the-bangsamoro-autonomous-region-in-muslim-mindanao/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-2-Seal.pdf"
+  },
+  "3": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-appropriating-funds-for-the-operation-of-the-bangsamoro-government-from-january-one-to-december-thirty-one-two-thousand-and-twenty-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-3-2020-BARMM-Buget.pdf"
+  },
+  "4": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-operationalizing-the-establishment-of-the-bangsamoro-human-rights-commision-providing-for-its-mandate-powers-and-functions-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-4-BHRC.pdf"
+  },
+  "5": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-the-bangsamoro-attorney-generals-office-defining-its-functions-and-powers-appropriating-funds-therefore-and-for-other-related-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-5-BAGO.pdf"
+  },
+  "6": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-establishing-a-bangsamoro-socio-economic-development-planning-system-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-6-BCDP.pdf"
+  },
+  "7": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-adopting-the-official-hymn-of-the-bangsamoro-autonomous-region-in-muslim-mindanao/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-7-Hymn.pdf"
+  },
+  "8": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-the-bangsamoro-women-commission-of-the-barmm-providing-for-its-powers-functions-and-composition-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-8-BWC.pdf"
+  },
+  "9": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-regulating-the-operations-of-local-and-foreign-recruitment-agencies-within-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-9-Regulating-the-operations-of-foreign-recruitment.pdf"
+  },
+  "10": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-and-establishing-the-bangsamoro-youth-commission-defining-its-powers-functions-and-responsibilities-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-10-BYC.pdf"
+  },
+  "11": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-defining-the-power-of-appointment-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-11-Power-of-Appointment.pdf"
+  },
+  "12": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-bangsamoro-sports-commission-providing-for-its-mandate-powers-and-functions-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-12-BSC.pdf"
+  },
+  "13": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-providing-the-bangsamoro-administrative-code-and-for-other-related-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.13-Bangsamoro-Administrative-Code-Proofread-04052021-3-33pm.pdf"
+  },
+  "14": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-extending-the-availability-of-the-2020-bangsamoro-appropriations-to-december-31-2021-except-personnel-services-amending-for-the-purpose-section-47-of-the-general-provisions-of-bangsamoroauto/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-14.pdf"
+  },
+  "15": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-appropriating-funds-for-the-operation-of-the-bangsamoro-government-from-january-one-to-december-thirty-one-two-thousand-and-twenty-one-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-15-2021-Budget.pdf"
+  },
+  "16": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-adopting-an-official-seal-for-the-parliament-of-the-bangsamoro-autonomous-region-in-muslim-mindanao/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-16-The-Bangsamoro-Official-Seal.pdf"
+  },
+  "17": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-providing-for-the-bangsamoro-civil-service-code-of-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-17.pdf"
+  },
+  "18": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-providing-for-the-establishment-management-and-support-of-a-complete-and-integrated-system-of-quality-education-in-the-bangsamoro/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-18-Bangsamoro-Education-Code-2.pdf"
+  },
+  "19": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-to-institutionalize-policies-for-bangsamoro-overseas-employment-and-establishing-a-standard-of-protection-and-promotion-of-the-welfare-of-overseas-bangsamoro-workers-and-theirfamilies-and-for/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BAA-19-Overseas-Bangsamoro-Worker-Lapsed-into-Law.pdf"
+  },
+  "20": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-mandating-the-dual-use-of-hijri-and-gregorian-calendars-in-all-ministries-agencies-local-government-units-offices-and-institutions-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-bar/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BAA-20.pdf"
+  },
+  "21": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-authorizing-the-use-of-fifty-million-pesos-php-50000000-00-for-the-acquisition-of-additional-oxygen-tanks-to-be-charged-against-the-2021-quick-response-fund-on-health-of-the-bangsamoro-gove/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-21-50000000.00-Additonal-Oxygen-Tanks.pdf"
+  },
+  "22": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-appropriating-the-sum-of-ten-billion-pesos-p10000000-from-the-2020-and-2021-special-development-fund-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-22-10000000.00-From-the-2020-2021-Special-Development-Funds.pdf"
+  },
+  "23": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-appropriating-funds-for-the-operation-of-bangsamoro-government-from-january-one-to-december-thirty-one-two-thousand-and-twenty-two-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.-23-2022-Budget.pdf"
+  },
+  "24": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-extending-the-availability-of-the-general-appropriations-act-of-the-bangsamoro-until-december-31-2022-except-personnel-services-and-other-items-of-the-mooe-amending-for-the-purpose-section-4/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BAA-24-Extension-of-GAA-until-2022-1.pdf"
+  },
+  "25": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-upgrading-the-existing-datu-blah-sinsuat-district-hospital-in-maguindanao-from-its-present-level-i-with-a-10-bed-capacity-into-level-ii-with-an-authorized-100-bed-capacity-and-appropriating-fun/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/07/BAA-25-Upgrading-Datu-Blah-District-Hospital.pdf"
+  },
+  "26": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-upgrading-the-existing-wao-district-hospital-in-lanao-del-sur-from-its-present-level-1-with-a-25-bed-capacity-into-level-1-with-an-authorized-50-bed-capacity-and-appropriating-funds-therefor-a/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/07/BAA-26-Upgrading-Wao-District-Hospital-in-LDS.pdf"
+  },
+  "27": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-establishing-a-level-ii-district-hospital-with-one-hundred-100-bed-capacity-in-the-municipality-of-maimbung-province-of-sulu-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/07/BAA-27-Establishing-District-Hospital-in-Maimbung-Sulu.pdf"
+  },
+  "28": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-upgrading-the-sulu-provincial-hospital-into-a-level-ii-hospital-increasing-its-bed-capacity-to-two-hundred-200-upgrading-its-professional-health-care-services-and-facilities-authorizing-th/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/07/BAA-28-Upgrading-of-Sulu-Provincial-Hospital-in-Sulu.pdf"
+  },
+  "29": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-upgrading-the-buluan-district-hospital-from-level-i-district-hospital-with-seventy-five-75-bed-capacity-to-level-ii-district-hospital-with-one-hundred-fifty-150-bed-capacity-in-the-municipa/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/07/BAA-29-Upgrading-of-Buluan-District-Hospital-in-Maguindanao.pdf"
+  },
+  "30": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-upgrading-the-unayan-municipal-hospital-in-municipality-of-binidayan-lanao-del-sur-into-a-50-bed-capacity-district-hospital-and-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/07/BAA-30-Upgrading-of-Unayan-Municipal-Hospital-in-LDS.pdf"
+  },
+  "31": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-the-bangsamoro-sustainable-development-board-defining-its-powers-and-functions-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/07/BAA-31-Bangsamoro-Special-Development-Board.pdf"
+  },
+  "32": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-appropriating-funds-for-the-operation-of-the-bangsamoro-government-from-january-one-to-december-thirty-one-two-thousand-and-twenty-three-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/01/BAA-32-FINAL-FY-2023-GENERAL-APPROPRIATIONS-ACT-OF-THE-BANGSAMORO.pdf"
+  },
+  "33": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-extending-the-availability-of-the-general-appropriations-act-of-the-bangsamoro-until-december-31-2023-except-personnel-services-and-general-administration-and-support-under-maintenance-and-o/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/02/BAA-33-EXTENDING-THE-AVAILABILITY-OF-GENERAL-APPROPRIATIONS-ACT-OF-THE-BANGSAMORO.pdf"
+  },
+  "34": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/anact-extending-the-availability-of-2020-and-2021-special-development-fund/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/02/BAA-34-EXTENDING-THE-AVAILABILITY-OF-2020-AND-2021-SDF.pdf"
+  },
+  "35": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-providing-for-the-bangsamoro-electoral-code-of-the-bangsamoro-autonomous-region-in-muslim-mindanao/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/BAA-35-Bangsamoro-Electoral-Code.pdf"
+  },
+  "36": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-establishing-a-revolving-fund-for-the-payment-of-salaries-compensation-and-emoluments-of-workers-and-personnel-of-nationally-funded-programs-deployed-in-the-bangsamoro-autonomous-region-in-mu/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/BAA-36-ESTABLISHING-A-REVOLVING-FUND-FOR-THE-PAYMENT-OF-SALAR.pdf"
+  },
+  "37": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-establishing-the-seat-of-government-of-the-bangsamoro-autonomous-region-in-muslim-mindanao-in-the-municipality-of-parang-province-of-maguindanao-del-norte-appropriating-funds-therefor-amendi/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/07/BAA-37-AMENDING-BOOK-1-CHAPTER-2-SECTION-9-OF-THE-BAA-NO.-13-.pdf"
+  },
+  "38": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-authorizing-the-continued-use-of-funds-for-the-release-and-disbursement-ofobligations-of-fy-2020-2021-and-2022-appropriations/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/07/BAA-38-AUTHORIZING-THE-CONTINUED-USE-OF-FUNDS-FOR-THE-REALEASE-AND-DISBURSEMENT-.pdf"
+  },
+  "39": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-governing-the-observance-of-regular-and-special-holidays-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-repealing-for-the-purpose-muslim-mindanao-autonomy-act-no-17-otherwise/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-39-BARMM-Holidays.pdf"
+  },
+  "40": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-establishing-the-bangsamoro-science-high-school-system-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-40-Bangsamoro-Science-High-School-System.pdf"
+  },
+  "41": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-the-municipality-of-pahamuddin-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-41-BAA-41-Mun.-of-Pahamuddin-with-metes-and-bounds.pdf"
+  },
+  "42": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-the-municipality-of-kadayangan-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-42-BAA-42-Mun.-of-Kadayangan-with-metes-and-bounds.pdf"
+  },
+  "43": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-the-municipality-of-nabalawag-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-43-BAA-43-Mun.-of-Nabalawag-with-metes-and-bounds.pdf"
+  },
+  "44": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-the-municipality-of-old-kaabakan-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-44-BAA-44-Mun.-of-Old-Kaabakan-with-metes-and-bounds.pdf"
+  },
+  "45": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-the-municipality-of-northern-kabacan-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-45-BAA-45-Mun.-of-Kapalawan-with-metes-and-bounds.pdf"
+  },
+  "46": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-the-municipality-of-malidegao-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-46-Mun.-of-Malidegao-with-metes-and-bounds.pdf"
+  },
+  "47": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-the-municipality-of-tugunan-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-47-Mun.-of-Tugunan-with-metes-and-bounds.pdf"
+  },
+  "48": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-the-municipality-of-ligawasan-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-48-Mun.-of-Ligawasan-with-metes-and-bounds.pdf"
+  },
+  "49": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-providing-for-the-bangsamoro-local-governance-code/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/BAA-49-with-signature-ao-04082024-1026am-with-correction.pdf"
+  },
+  "50": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-the-bangsamoro-kulliyyah-for-islamic-studies-repealing-muslim-mindanao-autonomy-act-no-164-otherwise-known-as-the-regional-madrasah-graduate-education-act-of-2003-providing-funds-t/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/BAA-50-Bangsamoro-Kuliyyah-Islamic-Studies-Act-of-2023.pdf"
+  },
+  "51": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-further-continuing-the-validity-of-the-202020212022-and-2023-special-development-fund-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/BAA-51.pdf"
+  },
+  "52": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-extending-the-validity-of-the-general-appropriations-act-of-the-bangsamoro-for-fiscal-year-2023-until-december-31-2024-amending-for-the-purpose-section-50-of-bangsamoro-autonomy-act-no-32-a/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/BAA-52.pdf"
+  },
+  "53": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-the-municipality-of-nuling-in-the-province-of-maguindanao-del-norte-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/BAA-53-Municipality-of-Nuling.pdf"
+  },
+  "54": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-the-municipality-of-datu-sinsuat-balabaran-in-the-province-of-maguindanao-del-norte-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/BAA-54-Municipality-of-Datu-Sinsuat-Balabaran.pdf"
+  },
+  "55": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-the-municipality-of-sheik-abas-hamza-in-the-province-of-maguindanao-del-norte-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/BAA-55-Municipality-of-Sheik-Abas-Hamza.pdf"
+  },
+  "56": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-appropriating-funds-for-the-operation-of-the-bangsamoro-government-from-january-one-to-december-thirty-one-two-thousand-and-twenty-four-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/BAA-56-FINAL-GAAB-2024-ao-01122024-1119pm-with-CM-sig-1_compressed.pdf"
+  },
+  "57": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-for-financial-assistance-to-bangsamoro-mujahideen-and-creating-the-office-of-the-bangsamoro-mujahideen-under-special-circumstance-defining-its-basic-organizational-structure-providing-funds-t/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/04/BAA-57-Bangsamoro-Mujahidedn.pdf"
+  },
+  "58": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-providing-for-the-creation-of-parliamentary-districts-in-the-bangsamoro-autonomous-region-in-muslim-mindanao/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/04/BAA-58-PARLIAMENTARY-DISTRICT-OF-BARMM.pdf"
+  },
+  "59": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-establishing-the-bangsamoro-agriculture-and-fishiries-training-institute-appropriating-funds-therefor-and-for-other-pusposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/09/BAA-59-Bangsamoro-Agriculture-and-Fisheries-Training-Institut.pdf"
+  },
+  "60": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-to-declare-the-burial-site-of-the-late-shiekh-salamat-hashim-moro-islamic-liberation-front-founding-chairperson-and-the-late-abdul-aziz-mimbantas-moro-islamic-liberation-front-vice-chairpers/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/09/BAA-60-BURIAL-SITE-OF-THE-LATE-SHEIKH-SALAMAT-HASHIM.pdf"
+  },
+  "61": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-establishing-a-bangsamoro-memorial-marker-and-eco-park-in-camp-abubakar-municipality-of-barira-maguindanao-del-norte-to-honor-the-shuhada-martyrs-of-the-bangsamoro-struggle-who-gave-and-devot/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/10/BAA-61-EcoPark-in-Camp-Abubakar.pdf"
+  },
+  "62": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-protecting-and-promoting-the-rights-of-internally-displaced-persons-of-the-bangsamoro-autonomous-region-in-muslim-mindanao-providing-mechanisms-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/10/BAA-62-IDP.pdf"
+  },
+  "63": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-appropriating-supplemental-funds-for-the-operation-of-the-bangsamoro-government-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/10/BAA-63-SUPPLEMENTAL-FUND.pdf"
+  },
+  "64": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-to-recognize-develop-and-protect-the-indigenous-peoples-and-their-rights-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-strengthening-the-ministry-of-indigenous-peoples-affa-2/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/01/BAA-64-–-Bangsamoro-Indigenous-Peoples-Act-of-2024.pdf"
+  },
+  "65": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-appropriating-funds-for-the-operation-of-the-bangsamoro-government-from-january-one-to-december-thirty-one-two-thousand-and-twenty-five-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/01/FY-2025-General-Appropriations-Act-of-the-Bangsamoro-1.pdf"
+  },
+  "66": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-establishing-a-level-1-general-hospital-with-twenty-five-bed-capacity-in-the-municipality-of-south-ubian-province-of-tawi-tawi-to-be-known-as-the-south-ubian-general-hospital-and-appropriating/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/01/BAA-66-HOSPITAL-SOUTH-UBIAN.pdf"
+  },
+  "67": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-and-establishing-the-pura-municipal-hospital-in-the-municipality-of-datu-blah-t-sinsuat-province-of-maguindanao-del-norte-bangsamoro-autonomous-region-in-muslim-mindanao-appropriat/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/01/BAA-67-HOSPITAL-DATU-BLAH-SINSUAT.pdf"
+  },
+  "68": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-establishing-in-the-municipality-of-northern-kabuntalan-province-of-maguindanao-del-norte-a-level-i-general-hospital-to-be-known-as-the-northern-kabuntalan-general-hospital-and-appropriating/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/01/BAA-68-HOSPITAL-NORTHERN-KABUNTALAN.pdf"
+  },
+  "69": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-and-establishing-a-level-1-general-hospital-to-be-known-as-aleem-abdulazis-s-mimbantas-memorial-hospital-in-the-municipality-of-masiu-province-of-lanao-del-sur-and-appropriating-fund/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/01/BAA-69-HOSPITAL-MASIU.pdf"
+  },
+  "70": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-amending-section-5-of-bangsamoro-act-no-54-otherwise-known-as-the-act-creating-the-municipality-of-datu-balabaran-sinsuat-in-the-province-of-maguindanao-del-norte-providing-funds-th/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/01/BAA-70-–-AMENDING-SECTION-5-OF-BAA-NO.-54.pdf"
+  },
+  "71": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-amending-section-5-of-bangsamoro-act-no-55-otherwise-known-as-the-act-creating-the-municipality-of-sheikh-abas-hamza-in-the-province-of-maguindanao-del-norte-providing-funds-therefo/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/01/BAA-71-–-AMENDING-SECTION-5-OF-BAA-NO.-55.pdf"
+  },
+  "72": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-providing-for-seven-days-forfeitable-bereavement-leave-privileges-annually-with-pay-to-employees-in-the-public-and-private-sector-within-the-bangsamoro-autonomous-region-in-muslim-mindanao/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/03/BAA-72-7-DAYS-LEAVE-1.pdf"
+  },
+  "73": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-converting-the-iranon-district-hospital-in-the-municipality-of-parang-province-of-maguindanao-del-norte-into-a-provincial-hospital-to-be-known-as-the-iranon-provincial-hospital-and-appropriat/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/05/BAA-73.pdf"
+  },
+  "74": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-upgrading-the-maguindanao-provincial-hospital-to-be-known-as-the-bangsamoro-regional-hospital-and-medical-center-to-a-level-iii-hospital-and-thereby-increasing-its-bed-capaci/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/05/BAA-74.pdf"
+  },
+  "75": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-appropriating-supplemental-funds-for-the-operation-of-the-bangsamoro-government-and-for-other-purposes-2/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/06/BAA-75-SUPPLEMENTAL-FUNDS.pdf"
+  },
+  "76": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-upgrading-the-datu-alawaddin-t-bandon-sr-memorial-hospital-in-the-municipality-of-sibutu-province-of-tawi-tawi-from-a-ten-bed-capacity-infirmary-to-a-twenty-five-bed-capacity-level-i-gen/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/07/BAA-76.pdf"
+  },
+  "77": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-reconstituting-the-parliamentary-districts-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-amending-for-the-purpose-bangsamoro-autonomy-act-no-58-entitled-an-act-providing-fo/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/08/BAA-No.77.PDF.pdf"
+  },
+  "78": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-establishing-a-level-i-general-hospital-in-the-municipality-of-tipo-tipo-province-of-basilan-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/09/BAA-78.pdf"
+  },
+  "79": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-establishing-a-level-i-general-hospital-in-the-municipality-of-maluso-province-of-basilan-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/09/BAA-79.pdf"
+  },
+  "80": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-upgrading-the-existing-dr-serapio-b-montaner-jr-al-haj-memorial-hospital-from-twenty-five-to-one-hundred-bed-capacity-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/09/BAA-80.pdf"
+  },
+  "81": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-establishing-and-institutionalizing-the-salamat-excellence-award-for-leadership-program-for-the-bangsamoro-autonomous-region-in-muslim-mindanao-and-allocating-for-this-purpose-the-salamat-e/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/09/BAA-81.pdf"
+  },
+  "82": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-instituting-a-labor-and-employment-code-for-the-bangsamoro-autonomous-region-to-afford-protection-to-labor-promote-employment-and-human-resources-development-ensure-industrial-peace-based-on/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/11/BAA-No.-82.pdf"
+  },
+  "83": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-creating-the-bangsamoro-nutrition-council-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-providing-for-its-mandate-powers-and-functions-appropriating-funds-therefor-and-for-other-pu/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/11/BAA-No.-83.pdf"
+  },
+  "84": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-prescribing-a-budget-system-for-the-bangsamoro-government/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/12/BAA-No.-84.pdf"
+  },
+  "85": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-appropriating-funds-for-the-operation-of-the-bangsamoro-government-from-january-one-to-december-thirty-one-two-thousand-and-twenty-six-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/12/BAA-85-FY-2026-GENERAL-APPROPRIATIONS-ACT-OF-THE-BANGSAMORO.pdf"
+  },
+  "86": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-providing-for-the-apportionment-of-parliamentary-district-representative-seats-in-the-bangsamoro-autonomous-region-in-muslim-mindanao/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/BAA-86.pdf"
+  },
+  "87": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-removing-the-none-of-the-above-option-from-the-official-ballot-in-the-bangsamoro-autonomous-region-amending-for-the-purpose-section-14-article-vii-of-bangsamoro-autonomy-act/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/02/BAA-87.pdf"
+  },
+  "88": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-amending-bangsamoro-autonomy-act-no-35-entitled-an-act-providing-for-the-bangsamoro-electoral-code-of-the-bangsamoro-autonomous-region-in-muslim-mindanao/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/02/BAA-88.pdf"
+  },
+  "89": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-establishing-a-bangsamoro-transitional-justice-and-reconciliation-program-creating-for-this-purpose-the-bangsamoro-transitional-justice-and-reconciliation-commission-appropriating-funds-there/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/02/BAA-89.pdf"
+  },
+  "90": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-renaming-the-municipality-of-datu-blah-t-sinsuat-maguindanao-del-norte-to-municipality-of-west-upi-maguindanao-del-norte/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/06/BAA-90.pdf"
+  },
+  "91": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-appropriating-supplemental-funds-for-the-operation-of-the-bangsamoro-government-and-for-other-purposes-3/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/06/BAA-91.pdf"
+  },
+  "92": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-providing-for-a-charter-for-a-dawah-center-in-the-bangsamoro-autonomous-region-in-muslim-mindanao/",
+   "pdf": null
+  },
+  "93": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-expanding-the-scope-of-authority-and-services-of-the-special-geographic-area-development-authority-amending-for-the-purpose-bangsamoro-autonomy-act-no-13-otherwise-known-as-the-bang-2/",
+   "pdf": null
+  },
+  "94": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-expanding-the-scope-of-authority-and-services-of-the-special-geographic-area-development-authority-amending-for-the-purpose-bangsamoro-autonomy-act-no-13-otherwise-known-as-the-bang/",
+   "pdf": null
+  }
+ }
+}

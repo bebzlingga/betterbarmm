@@ -1,199 +1,204 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 26,
-    "short_title": "an Act Upgrading Wao District Hospital Act",
-    "official_title": "AN ACT UPGRADING WAO DISTRICT HOSPITAL, LANAO DEL SUR (LEVEL 1: 25-BED TO 50-BED)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2022-06-15",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Upgrades Wao District Hospital, Lanao del Sur (level 1: 25-BED to 50-BED).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Upgrades Wao District Hospital, Lanao del Sur (level 1: 25-BED to 50-BED).",
-    "who_will_be_affected": [
-      "Residents of Lanao Del Sur",
-      "Pregnant women",
-      "Senior citizens & PWDs",
-      "Health workers"
-    ],
-    "when_will_it_take_effect": "Ratified 2022-06-15; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Upgrades a public hospital serving Lanao Del Sur (25-bed to 50-bed). For nearby families this means emergency and inpatient care closer to home instead of long, costly trips to distant referral hospitals.",
-      "in_practice": [
-        "More beds means fewer 'no vacancy' referrals and less floor-space crowding during outbreaks",
-        "A higher hospital level allows more services on-site: surgery, specialist clinics, better laboratory and imaging, more doctors and nurses on the plantilla",
-        "PhilHealth-accredited services expand with the facility's level, lowering out-of-pocket costs",
-        "Construction, staffing, and supplies take time after enactment - upgrades typically roll out over one or more budget years"
-      ],
-      "for_specific_groups": {
-        "Residents of Lanao Del Sur": "Shorter travel time in emergencies - often the difference between life and death for stroke, hemorrhage, and obstetric cases",
-        "Pregnant women": "Facility-based deliveries and emergency obstetric care become available nearer home",
-        "Senior citizens & PWDs": "Follow-up care and dialysis/maintenance services without long-distance travel",
-        "Health workers": "New plantilla positions (nurses, midwives, med-techs, doctors) usually open when a hospital is created or upgraded - watch the MOH and hospital job postings"
-      },
-      "where_this_applies": "Lanao Del Sur",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Ask the Ministry of Health (MOH-BARMM) or the hospital chief when the added beds/services actually open"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Closer, bigger, better-equipped public healthcare for Lanao Del Sur.",
-        "direct_benefits": [
-          {
-            "benefit": "Emergency and inpatient care near home (up to 50 beds) instead of long referral trips",
-            "who_gets_it": "Residents of Lanao Del Sur",
-            "how_to_access": "Go directly; public hospitals cannot refuse emergencies"
-          },
-          {
-            "benefit": "More services as the hospital's level rises: surgery, laboratory, imaging, specialty clinics",
-            "who_gets_it": "Patients in the catchment area",
-            "how_to_access": "Outpatient department; bring PhilHealth/ID"
-          },
-          {
-            "benefit": "Lower out-of-pocket costs as PhilHealth-accredited services expand with the facility level",
-            "who_gets_it": "PhilHealth members and indigents (automatic UHC coverage)",
-            "how_to_access": "Hospital PhilHealth desk / Malasakit-type assistance where present"
-          },
-          {
-            "benefit": "Safer childbirth: facility-based delivery and emergency obstetric care nearby",
-            "who_gets_it": "Pregnant women",
-            "how_to_access": "Prenatal check-ups at the RHU, delivery at the hospital"
-          },
-          {
-            "benefit": "New jobs: doctors, nurses, midwives, med-techs, admin and support staff",
-            "who_gets_it": "Health professionals and local job seekers",
-            "how_to_access": "Watch MOH-BARMM and hospital postings"
-          }
-        ],
-        "indirect_benefits": [
-          "Decongests referral hospitals for everyone else",
-          "Local economy around the hospital (transport, food, pharmacies)",
-          "Faster outbreak and disaster response capacity in the area"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Bed count on paper becomes real only after construction/hiring - ask the hospital chief for the timeline"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Sets hospital bed capacity: 25-Bed",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 26,
+  "short_title": "Wao District Hospital Upgrade Act of 2022",
+  "official_title": "AN ACT UPGRADING THE EXISTING WAO DISTRICT HOSPITAL IN LANAO DEL SUR FROM ITS PRESENT LEVEL 1 WITH A 25-BED CAPACITY INTO LEVEL 1 WITH AN AUTHORIZED 50-BED CAPACITY AND APPROPRIATING FUNDS THEREFOR AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2022-06-15",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Fourth Regular Session",
+  "date_passed": "2022-06-15",
+  "date_passed_hijri": "Dhu Al-Qa'dah 16, 1443",
+  "date_approved_by_chief_minister": "2022-07-12",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Health workers",
-      "Hospitals",
-      "Patients"
-    ],
-    "impact_tags": [
-      "health",
-      "hospital_health"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2022-06-15"
-    }
+  "effectivity": "15 days after publication in a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Doubles the authorised size of the Wao District Hospital in Lanao del Sur from 25 beds to 50, keeping it at Level I.",
+  "why_was_it_proposed": "The same Organic Law duty behind the region's other hospital acts — comprehensive health service delivery and a general hospital system established by law.",
+  "what_will_change": "The hospital's authorised capacity doubles. Its buildings, equipment, facilities, operating funds and personnel are upgraded to meet Level I standards at the larger size.",
+  "who_will_be_affected": [
+   "Residents of Wao and surrounding areas in Lanao del Sur",
+   "Patients needing admission where beds were short",
+   "Hospital staff, whose posts and funding are upgraded"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Health (MOH)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2022-06-15 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Health (MOH) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 26",
-    "line2": "an Act Upgrading Wao District Hospital Act",
-    "badges": [
-      "ENACTED",
-      "Hospital Health",
-      "2022"
+  "when_will_it_take_effect": "In force since 2022. Delivery depends on the annual Bangsamoro budget.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. Wao District Hospital is authorised to double from 25 beds to 50. It stays a Level I hospital — this is about capacity, not about new specialist services.",
+   "in_practice": [
+    "25 beds becomes 50 authorised beds",
+    "The hospital remains Level I — the service level does not change",
+    "Buildings, equipment, operating funds and personnel are upgraded to match",
+    "The hospital integrates the Universal Health Care Act",
+    "The Ministry of Health supervises and sets the organisational structure"
+   ],
+   "for_specific_groups": {
+    "Patients": "More beds, but the same level of service — anything needing Level II care is still referred elsewhere.",
+    "Hospital staff": "Personnel are expressly upgraded along with the facility."
+   },
+   "where_this_applies": "Wao, Lanao del Sur.",
+   "when_you_will_feel_it": "In force since 2022; construction and staffing depend on annual appropriations.",
+   "what_you_can_do": [
+    "Ask the Ministry of Health about the implementing rules, due within 60 days of enactment",
+    "Ask how many of the 50 authorised beds are actually operating"
+   ],
+   "watch_out_for": [
+    "Unlike most of the June 2022 hospital cluster, this act does not raise the service level — Wao stays Level I.",
+    "No peso amount is stated and no completion deadline is set.",
+    "Authorised capacity is a ceiling, not a built figure."
+   ],
+   "key_terms_explained": {
+    "Level I hospital": "A basic facility — emergency care, general medicine, a small ward. Level II adds specialist departments.",
+    "Authorized bed capacity": "The number of beds the hospital may legally operate.",
+    "UHC Act": "Republic Act 11223, the national Universal Health Care law."
+   },
+   "status_note": "Passed Dhu Al-Qa'dah 16, 1443 / 15 June 2022, approved by the Chief Minister on 12 July 2022.",
+   "benefits": {
+    "headline": "Twice the beds at Wao District Hospital.",
+    "direct_benefits": [
+     {
+      "benefit": "50 authorised beds instead of 25",
+      "who_gets_it": "Patients needing admission in Wao",
+      "how_to_access": "Through the hospital, subject to construction"
+     }
     ],
-    "what_this_does": "Upgrades Wao District Hospital, Lanao del Sur (level 1: 25-BED to 50-BED).",
-    "who_it_affects": "Health workers · Hospitals · Patients",
-    "effective": "2022-06-15"
-  },
-  "views": {
-    "simple": "Upgrades Wao District Hospital, Lanao del Sur (level 1: 25-BED to 50-BED).",
-    "official": "AN ACT UPGRADING WAO DISTRICT HOSPITAL, LANAO DEL SUR (LEVEL 1: 25-BED TO 50-BED)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Upgraded staff establishment, equipment and operating funds",
+     "Universal Health Care provisions integrated into operations"
+    ],
+    "limitations": [
+     "No change in service level — it remains Level I.",
+     "No stated peso appropriation.",
+     "No completion deadline."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "The hospital administration",
+    "oversight": "Ministry of Health – BARMM",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A patient in Wao who could not be admitted for want of a bed has twice the capacity to draw on once the upgrade is delivered.",
+    "A patient needing specialist Level II care is still referred out — this act did not change the hospital's level."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Wao District Hospital Upgrade Act of 2022”.",
+  "Section 2 — Policy grounded on Section 22, Article IX of the Organic Law: comprehensive and integrated health service delivery and a general hospital system established by law.",
+  "Section 3 — Upgrades the hospital from Level 1 with a 25-bed capacity to Level 1 with an authorised 50-bed capacity, in accordance with national standards of the Bureau of Health Facilities and Services under the Department of Health. The existing building including landscaping, medical and office equipment and other facilities, its operating funds and personnel, are upgraded to include the construction and procurement needed to meet the prescribed standards.",
+  "Section 4 — The hospital shall integrate all relevant provisions of Republic Act 11223, the Universal Health Care Act.",
+  "Section 5 — The hospital is under the administrative supervision of the Ministry of Health, which determines and approves its organisational structure.",
+  "Section 6 — Funding is appropriated from the Bangsamoro General Appropriations for the upgrading, including infrastructure, medical and office equipment, and the annual budget for personnel services, maintenance and operations.",
+  "Section 7 — MOH-BARMM shall promulgate implementing rules within 60 days after enactment.",
+  "Section 9 — Repeals inconsistent BARMM laws, including those passed under the defunct ARMM, on the operations of the Wao District Hospital.",
+  "Section 10 — Takes effect 15 days after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of Wao, Lanao del Sur"
+  ],
+  "impact_tags": [
+   "health",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "No amount stated — funded from the Bangsamoro General Appropriations.",
+  "figures_note": "The act states capacity figures (25 beds to 50) but no peso amount."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2022-06-15"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/08/BAA-26.pdf",
+  "irr": "Required from MOH-BARMM within 60 days of enactment. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": "Inconsistent BARMM and former ARMM issuances on this hospital",
+  "origin_bill": "Bill 79",
+  "related_note": "Passed the same day as BAA 25 (Datu Blah Sinsuat) as part of a June 2022 cluster of hospital acts."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "No amount stated",
+  "irr_status": "Section 7 required MOH-BARMM implementing rules within 60 days of enactment.",
+  "note": "Read from the enacted text as signed."
+ },
+ "citizen_questions": [
+  {
+   "q": "Does this make Wao a bigger kind of hospital?",
+   "a": "No. It doubles the authorised beds from 25 to 50 but keeps the hospital at Level 1, so the range of services does not change."
+  },
+  {
+   "q": "How much was allocated?",
+   "a": "The act names no amount — funding comes from the Bangsamoro General Appropriations."
+  },
+  {
+   "q": "When will the extra beds exist?",
+   "a": "The act sets no deadline. Implementing rules were due from the Ministry of Health within 60 days of enactment; construction depends on the annual budget."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 26",
+  "line2": "Wao District Hospital Upgrade Act of 2022",
+  "badges": [
+   "IN FORCE",
+   "Health",
+   "2022"
+  ],
+  "what_this_does": "Doubles Wao District Hospital's authorised capacity from 25 to 50 beds, at Level 1.",
+  "who_it_affects": "Residents of Wao, Lanao del Sur"
+ },
+ "views": {
+  "simple": "Doubles the authorised bed capacity of Wao District Hospital in Lanao del Sur from 25 to 50, keeping it at Level 1.",
+  "official": "AN ACT UPGRADING THE EXISTING WAO DISTRICT HOSPITAL IN LANAO DEL SUR FROM ITS PRESENT LEVEL 1 WITH A 25-BED CAPACITY INTO LEVEL 1 WITH AN AUTHORIZED 50-BED CAPACITY AND APPROPRIATING FUNDS THEREFOR AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 26, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

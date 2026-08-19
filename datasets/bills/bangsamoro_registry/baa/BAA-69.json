@@ -1,203 +1,211 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 69,
-    "short_title": "an Act Establishing Aleem Abdulazis S. Mimbantas Memorial Hospital Act",
-    "official_title": "AN ACT ESTABLISHING ALEEM ABDULAZIS S. MIMBANTAS MEMORIAL HOSPITAL, MASIU, LANAO DEL SUR (LEVEL 1)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2024-12-12",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Establishes Aleem Abdulazis S. Mimbantas Memorial Hospital, Masiu, Lanao del Sur (level 1).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Establishes Aleem Abdulazis S. Mimbantas Memorial Hospital, Masiu, Lanao del Sur (level 1).",
-    "who_will_be_affected": [
-      "Residents of Lanao Del Sur",
-      "Pregnant women",
-      "Senior citizens & PWDs",
-      "Health workers"
-    ],
-    "when_will_it_take_effect": "Ratified 2024-12-12; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Establishes a public hospital serving Lanao Del Sur. For nearby families this means emergency and inpatient care closer to home instead of long, costly trips to distant referral hospitals.",
-      "in_practice": [
-        "More beds means fewer 'no vacancy' referrals and less floor-space crowding during outbreaks",
-        "A higher hospital level allows more services on-site: surgery, specialist clinics, better laboratory and imaging, more doctors and nurses on the plantilla",
-        "PhilHealth-accredited services expand with the facility's level, lowering out-of-pocket costs",
-        "Construction, staffing, and supplies take time after enactment - upgrades typically roll out over one or more budget years"
-      ],
-      "for_specific_groups": {
-        "Residents of Lanao Del Sur": "Shorter travel time in emergencies - often the difference between life and death for stroke, hemorrhage, and obstetric cases",
-        "Pregnant women": "Facility-based deliveries and emergency obstetric care become available nearer home",
-        "Senior citizens & PWDs": "Follow-up care and dialysis/maintenance services without long-distance travel",
-        "Health workers": "New plantilla positions (nurses, midwives, med-techs, doctors) usually open when a hospital is created or upgraded - watch the MOH and hospital job postings"
-      },
-      "where_this_applies": "Lanao Del Sur",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Ask the Ministry of Health (MOH-BARMM) or the hospital chief when the added beds/services actually open"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Closer, bigger, better-equipped public healthcare for Lanao Del Sur.",
-        "direct_benefits": [
-          {
-            "benefit": "Emergency and inpatient care near home (expanded capacity) instead of long referral trips",
-            "who_gets_it": "Residents of Lanao Del Sur",
-            "how_to_access": "Go directly; public hospitals cannot refuse emergencies"
-          },
-          {
-            "benefit": "More services as the hospital's level rises: surgery, laboratory, imaging, specialty clinics",
-            "who_gets_it": "Patients in the catchment area",
-            "how_to_access": "Outpatient department; bring PhilHealth/ID"
-          },
-          {
-            "benefit": "Lower out-of-pocket costs as PhilHealth-accredited services expand with the facility level",
-            "who_gets_it": "PhilHealth members and indigents (automatic UHC coverage)",
-            "how_to_access": "Hospital PhilHealth desk / Malasakit-type assistance where present"
-          },
-          {
-            "benefit": "Safer childbirth: facility-based delivery and emergency obstetric care nearby",
-            "who_gets_it": "Pregnant women",
-            "how_to_access": "Prenatal check-ups at the RHU, delivery at the hospital"
-          },
-          {
-            "benefit": "New jobs: doctors, nurses, midwives, med-techs, admin and support staff",
-            "who_gets_it": "Health professionals and local job seekers",
-            "how_to_access": "Watch MOH-BARMM and hospital postings"
-          }
-        ],
-        "indirect_benefits": [
-          "Decongests referral hospitals for everyone else",
-          "Local economy around the hospital (transport, food, pharmacies)",
-          "Faster outbreak and disaster response capacity in the area"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Bed count on paper becomes real only after construction/hiring - ask the hospital chief for the timeline"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 69,
+  "short_title": "Aleem Abdulazis S. Mimbantas Memorial Hospital Act of 2023",
+  "official_title": "AN ACT CREATING AND ESTABLISHING A LEVEL 1 GENERAL HOSPITAL TO BE KNOWN AS ALEEM ABDULAZIS S. MIMBANTAS MEMORIAL HOSPITAL IN THE MUNICIPALITY OF MASIU, PROVINCE OF LANAO DEL SUR AND APPROPRIATING FUNDS THEREFOR AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2024-12-12",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session (begun 15 September 2022)",
+  "date_passed": "2024-12-12",
+  "date_passed_hijri": "Jumada Al-Akhirah 11, 1446",
+  "date_approved_by_chief_minister": "2025-01-09",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Health workers",
-      "Hospitals",
-      "Muslim communities",
-      "Patients",
-      "Religious institutions"
-    ],
-    "impact_tags": [
-      "health",
-      "hospital_health",
-      "islamic_culture_heritage",
-      "symbols_identity"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2024-12-12"
-    }
+  "effectivity": "15 days after publication in a newspaper of regional circulation",
+  "title_note": "The act's own short title calls it the “Aleem Abdulazis S. Mimbantas Memorial Hospital Act of 2023”, although it was passed in December 2024 and approved in January 2025. The registry records the short title as enacted."
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates a 50-bed general hospital in Masiu, Lanao del Sur, named for Alim Abdul Aziz Mimbantas — the MILF vice chairperson whose burial site BAA 60 declared a memorial.",
+  "why_was_it_proposed": "The Organic Law duty to build a general hospital system, with the policy section adding a specific aim: to respond adequately to emergencies, disasters and emerging diseases.",
+  "what_will_change": "A 50-bed general hospital is established under the direct control and supervision of the Ministry of Health, with any future expansion tied to a hospital development plan the Ministry prepares.",
+  "who_will_be_affected": [
+   "Residents of Masiu and surrounding Lanao del Sur",
+   "Patients needing hospital care in the area"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Health (MOH)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2024-12-12 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Health (MOH) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 69",
-    "line2": "an Act Establishing Aleem Abdulazis S. Mimbantas Memorial Hospital Act",
-    "badges": [
-      "ENACTED",
-      "Hospital Health",
-      "Symbols Identity",
-      "2024"
+  "when_will_it_take_effect": "In force since 2025 — 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. A 50-bed general hospital for Masiu, Lanao del Sur, with ₱50 million named in the act.",
+   "in_practice": [
+    "A 50-bed capacity general hospital in the Municipality of Masiu",
+    "Under the direct control and supervision of the Ministry of Health",
+    "Any further increase in beds or upgrading of services must rest on a hospital development plan prepared by the Ministry of Health",
+    "₱50,000,000 initial, from the Miscellaneous and Personnel Benefit Fund of the 2025 Bangsamoro budget",
+    "Implementing rules due from the Ministry of Health within 60 days of enactment"
+   ],
+   "for_specific_groups": {
+    "Residents of Masiu": "A 50-bed hospital — twice the size of the 25-bed facilities established elsewhere in the same batch.",
+    "Patients in emergencies": "The policy section names emergencies, disasters and emerging diseases as part of what the hospital is for."
+   },
+   "where_this_applies": "Masiu, Lanao del Sur.",
+   "when_you_will_feel_it": "In force since 2025; delivery depends on the appropriation being released.",
+   "what_you_can_do": [
+    "Ask the Ministry of Health for the implementing rules, due within 60 days of enactment",
+    "Ask for the hospital development plan, which governs any future expansion"
+   ],
+   "watch_out_for": [
+    "No completion deadline is set.",
+    "₱50 million is initial only — the same amount as the 25-bed hospitals in this batch, for twice the beds.",
+    "Expansion depends on a development plan prepared by the Ministry, not by the hospital or the community."
+   ],
+   "key_terms_explained": {
+    "General hospital": "A facility providing a broad range of medical services rather than a specialism.",
+    "Hospital development plan": "The Ministry of Health document on which any future increase in capacity depends.",
+    "MPBF": "Miscellaneous and Personnel Benefit Fund — the budget line the initial ₱50 million comes from.",
+    "Aleem / Alim": "A scholar of Islamic learning; part of the name of the man the hospital commemorates."
+   },
+   "status_note": "Passed Jumada Al-Akhirah 11, 1446 / 12 December 2024, approved by the Chief Minister on 9 January 2025.",
+   "benefits": {
+    "headline": "A 50-bed general hospital for Masiu, the largest in its enacting batch.",
+    "direct_benefits": [
+     {
+      "benefit": "A 50-bed general hospital",
+      "who_gets_it": "Residents of Masiu and surrounding areas",
+      "how_to_access": "Through the hospital once built"
+     },
+     {
+      "benefit": "₱50,000,000 initial appropriation from a named fund",
+      "who_gets_it": "The hospital",
+      "how_to_access": "MPBF of the 2025 GAAB"
+     }
     ],
-    "what_this_does": "Establishes Aleem Abdulazis S. Mimbantas Memorial Hospital, Masiu, Lanao del Sur (level 1).",
-    "who_it_affects": "Health workers · Hospitals · Muslim communities · Patients",
-    "effective": "2024-12-12"
-  },
-  "views": {
-    "simple": "Establishes Aleem Abdulazis S. Mimbantas Memorial Hospital, Masiu, Lanao del Sur (level 1).",
-    "official": "AN ACT ESTABLISHING ALEEM ABDULAZIS S. MIMBANTAS MEMORIAL HOSPITAL, MASIU, LANAO DEL SUR (LEVEL 1)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "A stated capacity to respond to emergencies, disasters and emerging diseases",
+     "Implementing rules due within 60 days"
+    ],
+    "limitations": [
+     "No completion deadline.",
+     "Same initial appropriation as the 25-bed hospitals in the same batch.",
+     "Expansion controlled by a Ministry-prepared development plan."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "The hospital administration",
+    "oversight": "Ministry of Health – BARMM, which has direct control and supervision",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A patient in Masiu needing admission has a 50-bed general hospital in the municipality once it is delivered.",
+    "A resident asking whether the hospital can grow is directed to the hospital development plan, which the Ministry of Health prepares."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Aleem Abdulazis S. Mimbantas Memorial Hospital Act of 2023”.",
+  "Section 2 — Policy: comprehensive and integrated health service delivery and a general hospital system established by law, so the basic right to life is attainable through prompt intervention of excellent and affordable medical services — and, to adequately respond to emergencies, disasters and emerging diseases, the Bangsamoro Government shall protect the interest and promote the well-being and the medical needs of the Bangsamoro People.",
+  "Section 3 — Establishes a fifty-bed capacity general hospital in the Municipality of Masiu, Province of Lanao del Sur, to be known as the Aleem Abdulazis S. Mimbantas Memorial Hospital, under the direct control and supervision of the Ministry of Health. Any further increase in bed capacity and upgrading of health care services and facilities shall be based on a hospital development plan prepared by the Ministry of Health to reflect the development goals of the hospital.",
+  "Section 4 — An initial ₱50,000,000 is charged against the Miscellaneous and Personnel Benefit Fund of the 2025 General Appropriation Act of the Bangsamoro, with later operations in the annual appropriations.",
+  "Section 5 — The Ministry of Health shall promulgate implementing rules and regulations within 60 days from enactment.",
+  "Section 7 — Takes effect 15 days after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of Masiu, Lanao del Sur"
+  ],
+  "impact_tags": [
+   "health",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱50,000,000 initial, from the Miscellaneous and Personnel Benefit Fund of the 2025 GAAB",
+  "figures_note": "Quoted from Sections 3 and 4: 50-bed capacity, ₱50,000,000 initial."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2024-12-12"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/02/BAA-69.pdf",
+  "irr": "Required from the Ministry of Health within 60 days of enactment. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill 257",
+  "related_note": "Passed with BAA 66, 67 and 68 on 12 December 2024. Named for Alim Abdul Aziz Mimbantas, MILF vice chairperson, whose burial site was declared a Bangsamoro Memorial Site by BAA 60."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱50,000,000 initial",
+  "irr_status": "Section 5 required Ministry of Health implementing rules within 60 days of enactment.",
+  "note": "Read from the enacted text as signed. The short title dates itself to 2023 although enactment was in December 2024."
+ },
+ "citizen_questions": [
+  {
+   "q": "How big is the hospital?",
+   "a": "Fifty beds — twice the size of the other hospitals established in the same batch, which are 25 beds each."
+  },
+  {
+   "q": "Who is it named after?",
+   "a": "Alim Abdul Aziz Mimbantas, vice chairperson of the Moro Islamic Liberation Front, whose burial site in Butig was declared a Bangsamoro Memorial Site by BAA 60."
+  },
+  {
+   "q": "How much money, and from where?",
+   "a": "An initial ₱50 million from the Miscellaneous and Personnel Benefit Fund of the 2025 Bangsamoro budget — the same amount given to the 25-bed hospitals in this batch."
+  },
+  {
+   "q": "Can it get bigger?",
+   "a": "Any increase in bed capacity or upgrading of services must be based on a hospital development plan prepared by the Ministry of Health."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 69",
+  "line2": "Aleem Abdulazis S. Mimbantas Memorial Hospital",
+  "badges": [
+   "IN FORCE",
+   "Health",
+   "2024"
+  ],
+  "what_this_does": "Establishes a 50-bed general hospital in Masiu, Lanao del Sur.",
+  "who_it_affects": "Residents of Masiu and surrounding Lanao del Sur"
+ },
+ "views": {
+  "simple": "Establishes a 50-bed general hospital in Masiu, Lanao del Sur, named for MILF vice chairperson Alim Abdul Aziz Mimbantas, with ₱50 million from the 2025 regional budget.",
+  "official": "AN ACT CREATING AND ESTABLISHING A LEVEL 1 GENERAL HOSPITAL TO BE KNOWN AS ALEEM ABDULAZIS S. MIMBANTAS MEMORIAL HOSPITAL IN THE MUNICIPALITY OF MASIU, PROVINCE OF LANAO DEL SUR AND APPROPRIATING FUNDS THEREFOR AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 69, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

@@ -1,200 +1,210 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 27,
-    "short_title": "an Act Establishing a Level Ii District Hospital Act",
-    "official_title": "AN ACT ESTABLISHING A LEVEL II DISTRICT HOSPITAL (100-BED) IN MAIMBUNG, SULU",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2022-06-16",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Establishes a Level II District Hospital (100-BED) in Maimbung, Sulu.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Establishes a Level II District Hospital (100-BED) in Maimbung, Sulu.",
-    "who_will_be_affected": [
-      "Residents of Sulu",
-      "Pregnant women",
-      "Senior citizens & PWDs",
-      "Health workers"
-    ],
-    "when_will_it_take_effect": "Ratified 2022-06-16; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Establishes a public hospital serving Sulu (100 beds). For nearby families this means emergency and inpatient care closer to home instead of long, costly trips to distant referral hospitals.",
-      "in_practice": [
-        "More beds means fewer 'no vacancy' referrals and less floor-space crowding during outbreaks",
-        "A higher hospital level allows more services on-site: surgery, specialist clinics, better laboratory and imaging, more doctors and nurses on the plantilla",
-        "PhilHealth-accredited services expand with the facility's level, lowering out-of-pocket costs",
-        "Construction, staffing, and supplies take time after enactment - upgrades typically roll out over one or more budget years"
-      ],
-      "for_specific_groups": {
-        "Residents of Sulu": "Shorter travel time in emergencies - often the difference between life and death for stroke, hemorrhage, and obstetric cases",
-        "Pregnant women": "Facility-based deliveries and emergency obstetric care become available nearer home",
-        "Senior citizens & PWDs": "Follow-up care and dialysis/maintenance services without long-distance travel",
-        "Health workers": "New plantilla positions (nurses, midwives, med-techs, doctors) usually open when a hospital is created or upgraded - watch the MOH and hospital job postings"
-      },
-      "where_this_applies": "Sulu",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Ask the Ministry of Health (MOH-BARMM) or the hospital chief when the added beds/services actually open"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Closer, bigger, better-equipped public healthcare for Sulu.",
-        "direct_benefits": [
-          {
-            "benefit": "Emergency and inpatient care near home (up to 100 beds) instead of long referral trips",
-            "who_gets_it": "Residents of Sulu",
-            "how_to_access": "Go directly; public hospitals cannot refuse emergencies"
-          },
-          {
-            "benefit": "More services as the hospital's level rises: surgery, laboratory, imaging, specialty clinics",
-            "who_gets_it": "Patients in the catchment area",
-            "how_to_access": "Outpatient department; bring PhilHealth/ID"
-          },
-          {
-            "benefit": "Lower out-of-pocket costs as PhilHealth-accredited services expand with the facility level",
-            "who_gets_it": "PhilHealth members and indigents (automatic UHC coverage)",
-            "how_to_access": "Hospital PhilHealth desk / Malasakit-type assistance where present"
-          },
-          {
-            "benefit": "Safer childbirth: facility-based delivery and emergency obstetric care nearby",
-            "who_gets_it": "Pregnant women",
-            "how_to_access": "Prenatal check-ups at the RHU, delivery at the hospital"
-          },
-          {
-            "benefit": "New jobs: doctors, nurses, midwives, med-techs, admin and support staff",
-            "who_gets_it": "Health professionals and local job seekers",
-            "how_to_access": "Watch MOH-BARMM and hospital postings"
-          }
-        ],
-        "indirect_benefits": [
-          "Decongests referral hospitals for everyone else",
-          "Local economy around the hospital (transport, food, pharmacies)",
-          "Faster outbreak and disaster response capacity in the area"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Bed count on paper becomes real only after construction/hiring - ask the hospital chief for the timeline"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Sets hospital bed capacity: 100-Bed",
-    "Hospital classification: Level II",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 27,
+  "short_title": "Maimbung District Hospital (Sulu)",
+  "official_title": "AN ACT ESTABLISHING A LEVEL II DISTRICT HOSPITAL WITH ONE HUNDRED (100) BED CAPACITY IN THE MUNICIPALITY OF MAIMBUNG, PROVINCE OF SULU, AND APPROPRIATING FUNDS THEREFOR",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2022-06-16",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Fourth Regular Session",
+  "date_passed": "2022-06-16",
+  "date_passed_hijri": "Dhu Al-Qa'dah 17, 1443",
+  "date_approved_by_chief_minister": "2022-07-12",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Health workers",
-      "Hospitals",
-      "Patients"
-    ],
-    "impact_tags": [
-      "health",
-      "hospital_health"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2022-06-16"
-    }
+  "effectivity": "15 days after publication in a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates a new 100-bed Level II district hospital in Maimbung, Sulu, run under the Integrated Provincial Health Office of Sulu rather than directly by the regional Ministry of Health.",
+  "why_was_it_proposed": "To bring Level II hospital services into Maimbung, and into Sulu's provincial health network, rather than leaving residents dependent on facilities further away.",
+  "what_will_change": "A hospital that did not exist is established in law, with 100 beds at Level II. Its chief must submit an annual operational plan, and any future expansion must follow an annual hospital development plan.",
+  "who_will_be_affected": [
+   "Residents of Maimbung and nearby municipalities in Sulu",
+   "Patients currently travelling for Level II services",
+   "The Integrated Provincial Health Office – Sulu, which supervises it"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Health (MOH)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2022-06-16 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Health (MOH) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 27",
-    "line2": "an Act Establishing a Level Ii District Hospital Act",
-    "badges": [
-      "ENACTED",
-      "Hospital Health",
-      "2022"
+  "when_will_it_take_effect": "In force since 2022. The hospital's existence in law does not by itself mean it is built.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. A 100-bed Level II district hospital is established in Maimbung, Sulu — supervised by the provincial health office, with its funding carried in the annual regional budget.",
+   "in_practice": [
+    "A Level II district hospital with 100-bed capacity in Maimbung",
+    "Under the direct administrative and technical supervision of the Integrated Provincial Health Office – Sulu",
+    "Salaries and operating costs come through the annual General Appropriations Act of the Bangsamoro",
+    "The hospital chief submits an annual operational plan to the regional Ministry of Health",
+    "Future expansion follows an annual hospital development plan"
+   ],
+   "for_specific_groups": {
+    "Patients in Sulu": "Level II services in Maimbung rather than a journey to a provincial or regional facility.",
+    "The provincial health office": "IPHO-Sulu holds direct administrative and technical supervision — unusual among these acts, most of which report to the regional ministry.",
+    "Hospital management": "An annual operational plan covering programmes, projects, activities and budget must go to MOH-BARMM."
+   },
+   "where_this_applies": "Maimbung, Province of Sulu.",
+   "when_you_will_feel_it": "In force since 2022; delivery depends on annual appropriations.",
+   "what_you_can_do": [
+    "Ask IPHO-Sulu about the hospital's status and its annual hospital development plan",
+    "Ask what the annual operational plan submitted to MOH-BARMM contains"
+   ],
+   "watch_out_for": [
+    "The act names no peso amount and sets no construction deadline.",
+    "It creates the hospital in law; whether it has been built is a separate question the text does not answer.",
+    "Unlike the upgrading acts, this one has no implementing-rules clause and no Universal Health Care integration clause."
+   ],
+   "key_terms_explained": {
+    "Level II hospital": "A facility with specialist departments beyond basic emergency and general medicine.",
+    "IPHO": "Integrated Provincial Health Office — the provincial body running local health facilities.",
+    "RLED": "The Regulation and Licensing Enforcement Division of the regional health ministry, which sets the operational guidelines for the facility.",
+    "PS / MOOE": "Personnel Services (salaries) and Maintenance and Other Operating Expenses (running costs)."
+   },
+   "status_note": "Passed Dhu Al-Qa'dah 17, 1443 / 16 June 2022, approved by the Chief Minister on 12 July 2022.",
+   "benefits": {
+    "headline": "A new 100-bed Level II hospital for Maimbung, Sulu.",
+    "direct_benefits": [
+     {
+      "benefit": "A Level II district hospital with 100 beds",
+      "who_gets_it": "Residents of Maimbung and nearby municipalities",
+      "how_to_access": "Through the hospital once established"
+     },
+     {
+      "benefit": "An annual operational plan and hospital development plan",
+      "who_gets_it": "Anyone wanting to know what the hospital plans and needs",
+      "how_to_access": "Submitted to MOH-BARMM by the hospital chief"
+     }
     ],
-    "what_this_does": "Establishes a Level II District Hospital (100-BED) in Maimbung, Sulu.",
-    "who_it_affects": "Health workers · Hospitals · Patients",
-    "effective": "2022-06-16"
-  },
-  "views": {
-    "simple": "Establishes a Level II District Hospital (100-BED) in Maimbung, Sulu.",
-    "official": "AN ACT ESTABLISHING A LEVEL II DISTRICT HOSPITAL (100-BED) IN MAIMBUNG, SULU"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Level II operational guidelines brought into the regional health ministry's programme"
+    ],
+    "limitations": [
+     "No stated peso appropriation.",
+     "No construction deadline.",
+     "No implementing-rules requirement."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "Maimbung District Hospital administration",
+    "oversight": "Integrated Provincial Health Office – Sulu, which has direct administrative and technical supervision; and MOH-BARMM, which receives the annual operational plan",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A resident of Maimbung needing Level II care previously travelled to a larger facility. This act establishes one in the municipality.",
+    "Someone wanting to know whether the hospital will expand can ask for the annual hospital development plan — Section 1 makes any future increase in bed capacity depend on it."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Establishes a Level II District Hospital with 100-bed capacity in the Municipality of Maimbung, Province of Sulu, under the direct administrative and technical supervision of the Integrated Provincial Health Office – Sulu. Any future increase in bed capacity and upgrading of health care services and facilities must be based on the annual hospital development plan prepared by the hospital administration in coordination with IPHO-Sulu.",
+  "Section 2 — MOH-BARMM, specifically the Regulation and Licensing Enforcement Division, shall immediately include in the Ministry's programme the operational guidelines of a Level II facility with 100-bed capacity in accordance with national Department of Health standards.",
+  "Section 3 — Funding for Personnel Services and Maintenance and Other Operating Expenses shall be included in the annual General Appropriations Act of the Bangsamoro.",
+  "Section 4 — The Chief of Maimbung District Hospital, in consultation and coordination with IPHO-Sulu, shall submit to MOH-BARMM an annual operational plan reflecting the programmes, projects, activities and budgetary needs for the hospital's operation.",
+  "Section 7 — Takes effect 15 days after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of Maimbung and nearby municipalities in Sulu"
+  ],
+  "impact_tags": [
+   "health",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "No amount stated — Personnel Services and MOOE to be carried in the annual General Appropriations Act of the Bangsamoro.",
+  "figures_note": "The act states a capacity figure (100 beds) but no peso amount."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2022-06-16"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/08/BAA-27.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 89",
+  "related_note": "Part of the June 2022 cluster of hospital acts. Unlike the upgrading acts in that cluster, it places the facility under the provincial health office rather than the regional ministry."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "No amount stated",
+  "irr_status": "None required by the act; the RLED is instead directed to include Level II operational guidelines in the Ministry's programme.",
+  "note": "Read from the enacted text as signed. The act establishes the hospital in law; whether it has been built and staffed is not recorded here."
+ },
+ "citizen_questions": [
+  {
+   "q": "Is there now a hospital in Maimbung?",
+   "a": "In law, yes — the act establishes a Level II district hospital with 100-bed capacity there. Whether it has been built and staffed depends on the annual budget, and the act sets no deadline."
+  },
+  {
+   "q": "Who runs it?",
+   "a": "The Integrated Provincial Health Office – Sulu holds direct administrative and technical supervision. The regional Ministry of Health sets the operational guidelines and receives the annual operational plan."
+  },
+  {
+   "q": "Where does the money come from?",
+   "a": "Salaries and operating costs are to be included in the annual General Appropriations Act of the Bangsamoro. No amount is named in the act."
+  },
+  {
+   "q": "Can it get bigger later?",
+   "a": "Yes, but any increase in bed capacity or upgrading of services must be based on the annual hospital development plan prepared with IPHO-Sulu."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 27",
+  "line2": "Maimbung District Hospital, Sulu",
+  "badges": [
+   "IN FORCE",
+   "Health",
+   "2022"
+  ],
+  "what_this_does": "Establishes a 100-bed Level II district hospital in Maimbung, Sulu, under the provincial health office.",
+  "who_it_affects": "Residents of Maimbung and nearby Sulu municipalities"
+ },
+ "views": {
+  "simple": "Establishes a new 100-bed Level II district hospital in Maimbung, Sulu, supervised by the provincial health office and funded through the annual regional budget.",
+  "official": "AN ACT ESTABLISHING A LEVEL II DISTRICT HOSPITAL WITH ONE HUNDRED (100) BED CAPACITY IN THE MUNICIPALITY OF MAIMBUNG, PROVINCE OF SULU, AND APPROPRIATING FUNDS THEREFOR"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 27, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

@@ -1,184 +1,203 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 34,
-    "short_title": "Extends the Availability of 2020 and 2021 Special",
-    "official_title": "AN ACT EXTENDING THE AVAILABILITY OF 2020 AND 2021 SPECIAL DEVELOPMENT FUND",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2022-12-20",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Extends the Availability of 2020 and 2021 Special Development Fund.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Extends the Availability of 2020 and 2021 Special Development Fund.",
-    "who_will_be_affected": [
-      "Parents & students",
-      "Patients",
-      "Workers & suppliers",
-      "Taxpayers"
-    ],
-    "when_will_it_take_effect": "Ratified 2022-12-20; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "This is a money law: it decides how much funding BARMM ministries and programs get - the schools, hospitals, roads, scholarships, and social services you use are all paid from it. No single citizen 'applies' for it, but nearly every public service you touch depends on it.",
-      "in_practice": [
-        "Sets each ministry's budget ceiling for the year (or adds/extends funds mid-year for supplementals and extensions)",
-        "Slow disbursement is the recurring issue - several BAAs exist purely to extend the validity of unspent funds",
-        "Big-ticket items to watch: education (MBHTE), health (MOH), public works (MPW), and the Special Development Fund for conflict-affected communities"
-      ],
-      "for_specific_groups": {
-        "Parents & students": "Classroom construction, teacher hiring, and scholarship slots are set here",
-        "Patients": "Hospital operating budgets, medicines, and health worker salaries flow from this law",
-        "Workers & suppliers": "Government projects and procurement opportunities follow the appropriations",
-        "Taxpayers": "This is the accountability document - compare what was appropriated with what was actually delivered"
-      },
-      "where_this_applies": "All of BARMM",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Follow-up reports: the Parliament itself has passed resolutions demanding ministries account for these funds"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Funds every public service you use - the enabler of all other benefits.",
-        "direct_benefits": [
-          {
-            "benefit": "Operating budgets for schools, hospitals, roads, scholarships, social programs",
-            "who_gets_it": "Everyone using public services",
-            "how_to_access": "Automatic through the funded agencies"
-          },
-          {
-            "benefit": "Salaries of teachers, health workers, and government personnel",
-            "who_gets_it": "Public employees",
-            "how_to_access": "Through payroll of funded agencies"
-          },
-          {
-            "benefit": "Special Development Fund projects in conflict-affected communities",
-            "who_gets_it": "Camp and conflict-affected barangays",
-            "how_to_access": "Through LGU/OCM project identification"
-          }
-        ],
-        "indirect_benefits": [
-          "Procurement and job opportunities from funded projects",
-          "Predictability: agencies can plan the year"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Compare appropriations vs. actual delivery - Parliament's own resolutions demand these reports; you can too"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 34,
+  "short_title": "Extension of the 2020 and 2021 Special Development Fund",
+  "official_title": "AN ACT EXTENDING THE AVAILABILITY OF 2020 AND 2021 SPECIAL DEVELOPMENT FUND",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2022-12-20",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "First Regular Session, Second Bangsamoro Transition Authority (begun 15 September 2022)",
+  "date_passed": "2022-12-22",
+  "date_passed_hijri": "Jumada Al-Awwal 28, 1444",
+  "date_approved_by_chief_minister": "2023-01-12",
+  "date_approved_hijri": "Jumada Al-Akhirah 19, 1444",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "budget_finance",
-      "other"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2022-12-20"
-    }
+  "effectivity": "Immediately after publication in a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Extends the life of the ₱10 billion Special Development Fund appropriated from the 2020 and 2021 budgets, giving until the end of 2023 to commit it and into 2024 to finish paying for the works.",
+  "why_was_it_proposed": "The fund was about to lapse with projects unfinished. Rather than let ₱10 billion of development money expire, Parliament moved the deadlines.",
+  "what_will_change": "Appropriations under the fund stayed releasable and disbursable to 31 December 2023. Infrastructure could be obligated to that date with construction completed, inspected and paid by 30 June 2024; other items by 31 March 2024.",
+  "who_will_be_affected": [
+   "Communities with projects funded from the Special Development Fund",
+   "Contractors delivering those works",
+   "Bangsamoro ministries and offices administering the fund",
+   "Taxpayers, given the ₱10 billion involved"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Finance, and Budget and Management (MFBM)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2022-12-20 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Finance, and Budget and Management (MFBM) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 34",
-    "line2": "Extends the Availability of 2020 and 2021 Special",
-    "badges": [
-      "ENACTED",
-      "Budget Finance",
-      "2022"
+  "when_will_it_take_effect": "Took effect immediately on publication in early 2023. Its windows were later extended again by BAA 51.",
+  "what_this_means_for_you": {
+   "in_short": "₱10 billion of development money did not expire. This gave until end-2023 to commit it and into 2024 to finish paying — and BAA 51 later extended it further.",
+   "in_practice": [
+    "All appropriations under the fund available for release and disbursement until 31 December 2023",
+    "Infrastructure capital outlays obligable to 31 December 2023, with construction completed, inspected and paid by 30 June 2024",
+    "MOOE and other capital outlay items obligable to 31 December 2023, with delivery, inspection and payment by 31 March 2024",
+    "The Ministry of Finance, and Budget and Management issues the implementing guidelines",
+    "Took effect immediately on publication"
+   ],
+   "for_specific_groups": {
+    "Communities awaiting projects": "Development works funded from the 2020 and 2021 SDF did not have to be cancelled.",
+    "Contractors": "Deadlines for completion, inspection and payment were pushed into 2024.",
+    "Anyone tracking the fund": "This is the second act in a chain — BAA 51 extends the same money again, to 2024 and beyond."
+   },
+   "where_this_applies": "The Bangsamoro Special Development Fund appropriated from the 2020 and 2021 budgets.",
+   "when_you_will_feel_it": "Historic in itself; the same money was carried further by BAA 51.",
+   "what_you_can_do": [
+    "Read alongside BAA 22, which appropriated the ₱10 billion, and BAA 51, which extended it again"
+   ],
+   "watch_out_for": [
+    "Unlike the general appropriations extensions, this one carries no Personnel Services exclusion — the Special Development Fund is a development pot, not an operating budget.",
+    "No new money is added; only deadlines move.",
+    "The extension was itself later extended, which is the pattern to watch across this fund."
+   ],
+   "key_terms_explained": {
+    "Special Development Fund": "A dedicated development pot for the region, separate from the general operating budget. BAA 22 appropriated ₱10 billion from the 2020 and 2021 budgets.",
+    "Obligation": "Committing money to a contract, as distinct from paying it out.",
+    "MOOE": "Maintenance and Other Operating Expenses.",
+    "MFBM": "The Ministry of Finance, and Budget and Management."
+   },
+   "status_note": "Passed Jumada Al-Awwal 28, 1444 / 22 December 2022, approved by the Chief Minister on 12 January 2023.",
+   "benefits": {
+    "headline": "₱10 billion of development money kept alive rather than lapsing.",
+    "direct_benefits": [
+     {
+      "benefit": "Projects funded from the 2020–2021 Special Development Fund could continue",
+      "who_gets_it": "Communities and contractors with pending works",
+      "how_to_access": "Automatic — it changed deadlines, not processes"
+     }
     ],
-    "what_this_does": "Extends the Availability of 2020 and 2021 Special Development Fund.",
-    "who_it_affects": "General public",
-    "effective": "2022-12-20"
-  },
-  "views": {
-    "simple": "Extends the Availability of 2020 and 2021 Special Development Fund.",
-    "official": "AN ACT EXTENDING THE AVAILABILITY OF 2020 AND 2021 SPECIAL DEVELOPMENT FUND"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Avoided cancellation and re-appropriation of a large development programme"
+    ],
+    "limitations": [
+     "No new money.",
+     "Deadlines only.",
+     "Superseded in part by BAA 51, which extended the same fund further."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act governs government spending deadlines."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "Ministry of Finance, and Budget and Management (MFBM), authorised to issue the implementing guidelines",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A development project in a municipality funded from the 2020–2021 Special Development Fund was unfinished at the end of 2022. This act let the money stay committed through 2023 and be paid out into 2024."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Amends Section 3 of Bangsamoro Autonomy Act No. 22, the act appropriating ₱10,000,000,000 from the 2020 and 2021 Special Development Fund. As amended, all appropriations authorised in that act are available for release and disbursement for the purpose specified until 31 December 2023. Infrastructure capital outlays are valid for obligation until 31 December 2023, with completion of construction, inspection and payment no later than 30 June 2024; MOOE and other capital outlay items are likewise obligable until 31 December 2023, with delivery, inspection and payment no later than 31 March 2024. The MFBM is authorised to issue guidelines for the cash budgeting system.",
+  "Section 3 — Takes effect immediately after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Communities with Special Development Fund projects",
+   "Contractors",
+   "Bangsamoro ministries and offices"
+  ],
+  "impact_tags": [
+   "budget_appropriations",
+   "governance_civil_service"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "No new appropriation. It extends the ₱10,000,000,000 appropriated by BAA 22 from the 2020 and 2021 Special Development Fund.",
+  "figures_note": "The ₱10 billion figure comes from the title of BAA 22 as recited in this act."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2022-12-20"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/02/BAA-34.pdf",
+  "irr": "MFBM guidelines authorised by the amended Section 3. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [
+   "BAA 22"
+  ],
+  "amended_by": [
+   "BAA 51"
+  ],
+  "repeals": null,
+  "origin_bill": "Bill 127",
+  "related_note": "Amends BAA 22, which appropriated ₱10 billion from the 2020 and 2021 Special Development Fund. The same fund was extended again by BAA 51, which also removed the disbursement deadline."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": null,
+  "irr_status": "The amended section authorises the MFBM to issue implementing guidelines.",
+  "note": "Read from the enacted text as signed. The windows it set were superseded by BAA 51."
+ },
+ "citizen_questions": [
+  {
+   "q": "How much money is involved?",
+   "a": "The fund it extends is the ₱10 billion appropriated by BAA 22 from the 2020 and 2021 Special Development Fund. This act adds nothing; it moves deadlines."
+  },
+  {
+   "q": "What were the new deadlines?",
+   "a": "Release and disbursement to 31 December 2023; infrastructure completed, inspected and paid by 30 June 2024; other items by 31 March 2024."
+  },
+  {
+   "q": "Is this the final extension?",
+   "a": "No. BAA 51 extended the same fund again, to 31 December 2024 for release and obligation — and made it disbursable until fully expended."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 34",
+  "line2": "Extension of the 2020 and 2021 Special Development Fund",
+  "badges": [
+   "IN FORCE",
+   "Budget & Appropriations",
+   "2022"
+  ],
+  "what_this_does": "Kept the ₱10 billion Special Development Fund from lapsing, extending it into 2023 and 2024.",
+  "who_it_affects": "Communities with development projects · contractors"
+ },
+ "views": {
+  "simple": "Extends the ₱10 billion Special Development Fund from the 2020 and 2021 budgets, allowing commitment to the end of 2023 and payment for infrastructure into mid-2024.",
+  "official": "AN ACT EXTENDING THE AVAILABILITY OF 2020 AND 2021 SPECIAL DEVELOPMENT FUND"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 34, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

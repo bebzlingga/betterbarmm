@@ -1,6 +1,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { getCategory, type CategorySlug } from './categories'
+import { getCategory, recordHref, type CategorySlug } from './categories'
 import { getAllRecords, registryGeneratedAt, type LegislationRecord } from './legislation-data'
 import { capitaliseNameToken, parliamentLabel, type StatusTone } from './labels'
 import {
@@ -407,7 +407,7 @@ function toMemberMeasure(record: LegislationRecord, role: MemberRole): MemberMea
 		statusTone: record.statusTone,
 		dateDisplay: record.dateDisplay,
 		dateIso: record.dateIso ?? '',
-		href: `${category.href}?focus=${record.number}`,
+		href: recordHref(record) ?? category.href,
 		role,
 	}
 }

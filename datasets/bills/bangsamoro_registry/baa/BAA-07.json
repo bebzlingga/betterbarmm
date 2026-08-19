@@ -1,165 +1,227 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 7,
-    "short_title": "Adopts the Official Hymn of the Bangsamoro Autonomous",
-    "official_title": "AN ACT ADOPTING THE OFFICIAL HYMN OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2020-01-30",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Adopts the Official Hymn of the Bangsamoro Autonomous Region in Muslim Mindanao.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Adopts the Official Hymn of the Bangsamoro Autonomous Region in Muslim Mindanao.",
-    "who_will_be_affected": [
-      "Employees & students",
-      "Communities"
-    ],
-    "when_will_it_take_effect": "Ratified 2020-01-30; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "An identity law: it defines an official symbol or observance of the Bangsamoro (flag, emblem, hymn, seal, calendar, holidays, or memorials). It doesn't hand out benefits, but it shapes the public face of the region you live in - what flies over government buildings, what days are non-working, how the Bangsamoro story is told.",
-      "in_practice": [
-        "Government offices, schools, and LGUs must use/observe it",
-        "Holiday-related acts affect work and class suspensions region-wide",
-        "Memorial acts create public sites and commemorations"
-      ],
-      "for_specific_groups": {
-        "Employees & students": "Regional holidays and observances flow from these laws",
-        "Communities": "Shared symbols of the autonomy won through the peace process"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Identity, recognition, and (for holiday laws) actual days off.",
-        "direct_benefits": [
-          {
-            "benefit": "Official identity: the symbols/observances of your autonomous region",
-            "who_gets_it": "All residents",
-            "how_to_access": "Public display and observance"
-          }
-        ],
-        "indirect_benefits": [
-          "Cultural pride and the normalization of Bangsamoro identity in public life"
-        ],
-        "limitations": [
-          "Symbolic laws confer no monetary claims"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 7,
+  "short_title": "Bangsamoro Hymn Act of 2020",
+  "official_title": "AN ACT ADOPTING THE OFFICIAL HYMN OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2020-01-30",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "First Regular Session",
+  "date_passed": "2020-01-30",
+  "date_approved_by_chief_minister": "2020-02-13",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "other",
-      "symbols_identity"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2020-01-30"
-    }
+  "effectivity": "15 days after publication in a regional newspaper of general circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Adopts the Bangsamoro Hymn, sets its official lyrics in full, requires every school and government office in the region to sing it at flag ceremonies — and, unusually for a symbols law, makes wilful violation a criminal offence.",
+  "why_was_it_proposed": "The Organic Law lets the region adopt its own hymn as an expression of self-governance. The act fixes the lyrics so the anthem cannot drift, and settles how and when it is sung.",
+  "what_will_change": "Schools, colleges, universities, public offices and government corporations must play and sing the hymn at flag-raising and flag-lowering ceremonies — always after the Philippine National Anthem, never before it. Arabic, English and Bangsamoro-language versions approved by the Chief Minister are equally official.",
+  "who_will_be_affected": [
+   "Every school, college and university in the region — private as well as public",
+   "Public offices, government-owned or controlled corporations and other government instrumentalities",
+   "Bangsamoro offices located outside the area of autonomy",
+   "Anyone singing or performing the hymn, who is subject to the penalty clause"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Office of the Chief Minister",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2020-01-30 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Office of the Chief Minister (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 7",
-    "line2": "Adopts the Official Hymn of the Bangsamoro Autonomous",
-    "badges": [
-      "ENACTED",
-      "Symbols Identity",
-      "2020"
+  "when_will_it_take_effect": "In force since 2020 — 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. Schools and government offices must sing the Bangsamoro Hymn at flag ceremonies, always after the Philippine National Anthem. Unlike the flag and emblem laws, this one carries a fine of ₱50,000–₱100,000 and up to 6 months' imprisonment.",
+   "in_practice": [
+    "The official lyrics are set out in full in the act itself",
+    "Rendition must follow the official musical arrangement and composition",
+    "Arabic, English, or any Bangsamoro language or dialect version approved by the Chief Minister is equally official",
+    "Required at flag-raising and flag-lowering ceremonies in schools, public offices, GOCCs and other government instrumentalities",
+    "The Philippine National Anthem must always be sung first",
+    "It may also be sung at ceremonial and symbolic functions and at private activities"
+   ],
+   "for_specific_groups": {
+    "Private schools": "Section 5 names public and private schools, colleges and universities alike — the duty reaches institutions the government does not run.",
+    "Government offices": "Required at both flag-raising and flag-lowering, including Bangsamoro offices sitting outside the region.",
+    "Musicians and performers": "Rendition must accord with the official musical arrangement and composition, and the penalty clause applies to any person who wilfully violates any provision.",
+    "Non-Tagalog speakers": "Arabic, English and any Bangsamoro language or dialect version approved by the Chief Minister counts as official."
+   },
+   "where_this_applies": "The BARMM, and Bangsamoro offices outside it.",
+   "when_you_will_feel_it": "In force since 2020 — at every flag ceremony in a covered institution.",
+   "what_you_can_do": [
+    "Sing the Philippine National Anthem first — the act requires the Bangsamoro Hymn always to follow it",
+    "Use the official arrangement, or an approved Arabic, English or Bangsamoro-language version"
+   ],
+   "watch_out_for": [
+    "The penalty applies to 'any person found willfully violating any provision of this Act', which is broad and undefined — the act does not say which acts amount to a violation.",
+    "The offence carries up to 6 months' imprisonment as well as a fine, at the court's discretion.",
+    "There is no defined process for approving an alternative-language version beyond the Chief Minister's approval.",
+    "The flag and emblem acts carry no penalty at all; this one does, which is a sharp inconsistency across the region's symbols laws."
+   ],
+   "key_terms_explained": {
+    "Rendition": "How the hymn is actually performed — the act requires it to follow the official musical arrangement and composition.",
+    "Alhamdulillah": "'Praise be to God' — the phrase that closes the hymn's refrain.",
+    "Wilfully": "Deliberately rather than by accident. The penalty clause attaches to wilful violation."
+   },
+   "status_note": "Passed 30 January 2020, approved by the Chief Minister on 13 February 2020.",
+   "benefits": {
+    "headline": "An official anthem with fixed lyrics, and official versions in Arabic, English and Bangsamoro languages.",
+    "direct_benefits": [
+     {
+      "benefit": "Official lyrics published in the law itself",
+      "who_gets_it": "Schools, offices, performers, everyone",
+      "how_to_access": "Section 4 sets them out in full"
+     },
+     {
+      "benefit": "Equally official versions in Arabic, English, or a Bangsamoro language or dialect",
+      "who_gets_it": "Communities that do not use the original",
+      "how_to_access": "Subject to approval by the Chief Minister"
+     }
     ],
-    "what_this_does": "Adopts the Official Hymn of the Bangsamoro Autonomous Region in Muslim Mindanao.",
-    "who_it_affects": "General public",
-    "effective": "2020-01-30"
-  },
-  "views": {
-    "simple": "Adopts the Official Hymn of the Bangsamoro Autonomous Region in Muslim Mindanao.",
-    "official": "AN ACT ADOPTING THE OFFICIAL HYMN OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "A shared anthem at every flag ceremony in the region",
+     "The relationship with the national anthem settled in law rather than by custom"
+    ],
+    "limitations": [
+     "No funding for teaching or arrangement.",
+     "The penalty clause is broad and its triggers undefined."
+    ]
+   },
+   "your_responsibilities": {
+    "for_schools_and_offices": [
+     "Play and sing the hymn at flag-raising and flag-lowering ceremonies",
+     "Always sing the Philippine National Anthem first",
+     "Follow the official musical arrangement and composition"
+    ],
+    "for_citizens": [
+     "No duty to sing it — but the penalty clause reaches 'any person' who wilfully violates any provision."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act does not enumerate prohibited acts. Section 6 instead penalises any person found wilfully violating any provision — which on its face reaches a rendition departing from the official arrangement, or singing the hymn before the Philippine National Anthem."
+   ],
+   "penalties": {
+    "for_citizens": "Any person found wilfully violating any provision is, on conviction, punished by a fine of not less than ₱50,000 and not more than ₱100,000, or imprisonment of not more than 6 months, or both, at the discretion of the court.",
+    "note": "This is the only one of the region's symbols acts to carry a penalty. The flag act (BAA 1) and the emblem act (BAA 2) create no offence at all."
+   },
+   "where_to_complain": {
+    "first_stop": "The school or office concerned",
+    "note": "The act names no implementing body. Its penalty is enforced through the courts on conviction."
+   },
+   "everyday_scenarios": [
+    "A public school holds its Monday flag ceremony. It must play and sing the Philippine National Anthem first, then the Bangsamoro Hymn.",
+    "A private university in Maguindanao assumes the requirement applies only to public schools. It does not — Section 5 names private institutions expressly.",
+    "A community wants to sing the hymn in Maranao. A version in any Bangsamoro language or dialect is official once approved by the Chief Minister.",
+    "A performer rearranges the hymn for a concert. Section 5 requires rendition to accord with the official arrangement, and Section 6 penalises wilful violation of any provision."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Bangsamoro Hymn Act of 2020”.",
+  "Section 2 — Policy: in exercising its right to self-governance the region is free to adopt a hymn that conveys and preserves the peoples' identity, history, heritage and aspirations.",
+  "Section 3 — Adopts an Official Hymn of the BARMM pursuant to Article II, Section 2 of the Organic Law (RA 11054).",
+  "Section 4 — Sets out the official lyrics in full, opening 'Simula noon hanggang ngayon / Iisa ang naging layon' and closing on the refrain 'Bangsamoro'y tagumpay / Bunga ng pawis, dugo, at buhay / Kapayapaan, katarungan / Ay atin nang nakamtan / Alhamdulillah, Alhamdulillah / Pagpalain Bangsamoro'.",
+  "Section 5 — Rendition, whether played or sung, must accord with the official musical arrangement and composition. An Arabic, English, or any Bangsamoro language or dialect version approved by the Chief Minister is likewise official. All public and private schools, colleges and universities, public offices, government-owned or controlled corporations and other government instrumentalities in the Bangsamoro — and Bangsamoro offices outside the area of autonomy — are required to play and sing the hymn at flag-raising and flag-lowering ceremonies. It may also be sung at ceremonial and symbolic functions and private activities. Whenever it is sung it must always be preceded by the Philippine National Anthem.",
+  "Section 6 — Penalty: any person found wilfully violating any provision of the act shall, upon conviction, be punished by a fine of not less than ₱50,000 and not more than ₱100,000, or imprisonment of not more than 6 months, or both, at the discretion of the court.",
+  "Section 9 — Takes effect 15 days after publication in a regional newspaper of general circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Everyone in the BARMM",
+   "Schools and communities"
+  ],
+  "impact_tags": [
+   "culture_heritage",
+   "education",
+   "governance_civil_service"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": null,
+  "figures_note": "The act appropriates no funds. Its figures are penal: a fine of ₱50,000 to ₱100,000 and up to 6 months' imprisonment."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2020-01-30"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2020/05/BAA-7.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 39",
+  "related_note": "One of the first Parliament's four symbols acts, with the flag (BAA 1), the emblem (BAA 2) and the Parliament's own seal (BAA 16). It is the only one of them that creates an offence."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": null,
+  "irr_status": "None required by the act.",
+  "note": "Read from the enacted text as signed. The official musical arrangement referred to in Section 5 is not reproduced in the signed copy, which sets out the lyrics only."
+ },
+ "citizen_questions": [
+  {
+   "q": "When must the hymn be sung?",
+   "a": "At flag-raising and flag-lowering ceremonies in all public and private schools, colleges and universities, public offices, government corporations and other government instrumentalities in the region — and in Bangsamoro offices outside it."
+  },
+  {
+   "q": "Does the Philippine National Anthem still come first?",
+   "a": "Yes. Section 5 says that whenever the Bangsamoro Hymn is sung it shall always be preceded by the singing of the Philippine National Anthem."
+  },
+  {
+   "q": "Can it be sung in another language?",
+   "a": "Yes. An Arabic, English, or any Bangsamoro language or dialect version is likewise official, once approved by the Chief Minister."
+  },
+  {
+   "q": "Is there really a penalty?",
+   "a": "Yes, and it is the only symbols act that has one. Wilfully violating any provision carries, on conviction, a fine of ₱50,000 to ₱100,000, or up to 6 months' imprisonment, or both, at the court's discretion."
+  },
+  {
+   "q": "Can I sing it at a private event?",
+   "a": "Yes. Section 5 allows the hymn to be played and sung at ceremonial and symbolic functions and at private activities."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 7",
+  "line2": "Bangsamoro Hymn Act of 2020",
+  "badges": [
+   "IN FORCE",
+   "Culture & Heritage",
+   "2020"
+  ],
+  "what_this_does": "Adopts the region's official hymn, requires it at flag ceremonies after the national anthem, and penalises wilful violation.",
+  "who_it_affects": "Schools, public and private · government offices · anyone performing the hymn"
+ },
+ "views": {
+  "simple": "Adopts the Bangsamoro Hymn with its lyrics fixed in law, requires schools and offices to sing it at flag ceremonies after the Philippine National Anthem, and punishes wilful violation with a fine or up to 6 months' imprisonment.",
+  "official": "AN ACT ADOPTING THE OFFICIAL HYMN OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 7, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references and lyrics are quoted from that document. Verify against the official copy before citing."
+ }
 }

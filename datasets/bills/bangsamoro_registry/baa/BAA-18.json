@@ -1,179 +1,366 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 18,
-    "short_title": "Bangsamoro Education Code",
-    "official_title": "AN ACT PROVIDING FOR A COMPLETE AND INTEGRATED SYSTEM OF QUALITY EDUCATION IN THE BANGSAMORO (EDUCATION CODE)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2021-05-18",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Provides for a Complete and Integrated System of Quality Education in the Bangsamoro (education Code).",
-    "why_was_it_proposed": "First of the seven priority codes mandated by the Bangsamoro Organic Law to be enacted.",
-    "what_will_change": "Provides for a Complete and Integrated System of Quality Education in the Bangsamoro (education Code).",
-    "who_will_be_affected": [
-      "Parents",
-      "Madrasah teachers",
-      "Students"
-    ],
-    "when_will_it_take_effect": "Ratified 2021-05-18; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "The Education Code sets up the Bangsamoro's own integrated school system - basic education, madaris (Islamic schools), technical and higher education - under MBHTE. It shapes what your children learn, how teachers are hired, and how madrasah education is recognized alongside the regular curriculum.",
-      "in_practice": [
-        "Integrates Arabic language and Islamic values education options in public schools",
-        "Provides the legal basis for recognizing and supporting madaris and their asatidz (teachers)",
-        "Governs teacher hiring and school building priorities in the region"
-      ],
-      "for_specific_groups": {
-        "Parents": "Choice and recognition for both regular and madrasah tracks",
-        "Madrasah teachers": "Pathway to recognition, standards, and support",
-        "Students": "Scholarships and the Bangsamoro Science High School System (BAA 40) build on this Code"
-      },
-      "where_this_applies": "All of BARMM unless the title names a specific place",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "An education system built for Bangsamoro learners - including madaris.",
-        "direct_benefits": [
-          {
-            "benefit": "Recognition and support for madrasah education alongside the regular track",
-            "who_gets_it": "Madrasah students, parents, and asatidz",
-            "how_to_access": "Through MBHTE madaris programs"
-          },
-          {
-            "benefit": "Arabic and Islamic values education options in public schools",
-            "who_gets_it": "Muslim pupils",
-            "how_to_access": "Enrollment in offering schools"
-          },
-          {
-            "benefit": "The legal base for scholarships and the Science High School System (BAA 40)",
-            "who_gets_it": "Students",
-            "how_to_access": "MBHTE scholarship and BSHS admissions"
-          }
-        ],
-        "indirect_benefits": [
-          "Teachers' hiring and school-building priorities set regionally, closer to needs"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service."
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 18,
+  "short_title": "Bangsamoro Education Code of 2021",
+  "official_title": "AN ACT PROVIDING FOR THE ESTABLISHMENT, MANAGEMENT, AND SUPPORT OF A COMPLETE AND INTEGRATED SYSTEM OF QUALITY EDUCATION IN THE BANGSAMORO",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2021-05-18",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session, begun 29 March 2019",
+  "date_passed": "2021-05-18",
+  "date_approved_by_chief_minister": "2021-05-18",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Schools",
-      "Students",
-      "Teachers"
-    ],
-    "impact_tags": [
-      "education",
-      "priority_code"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2021-05-18"
-    }
+  "origin_bills": "Bill No. 70",
+  "effectivity": "15 days after complete publication in a newspaper of general or regional circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "The region's education code — and its central move is to make the madrasah a full parallel school system rather than an add-on, with its own grade levels, curriculum, diplomas and Director-General, held to common standards with the public schools.",
+  "why_was_it_proposed": "The Organic Law requires the Bangsamoro Government to establish and support a complete and integrated system of quality education as a subsystem of the national system. The code builds that system, absorbs the ARMM-era higher education commission's functions, and writes the region's own history, peace education and religious practice into the curriculum.",
+  "what_will_change": "Two parallel formal systems deliver basic education — the Public School System and the Public Madrasah System. The Ministry takes over what CHED-ARMM did, regulating every higher education institution in the region, and the Minister sits on the national commission. Bangsamoro history and peace education enter the curriculum at all levels, corporal punishment is prohibited, and schools must be allowed prayer spaces.",
+  "who_will_be_affected": [
+   "Every learner in the region, in schools and madaris alike",
+   "Madrasah teachers, who gain a special civil service eligibility route",
+   "Higher education institutions, now regulated by the regional ministry rather than CHED",
+   "Indigenous peoples, through an Indigenous Peoples' Education system and a Tribal University System",
+   "Out-of-school youth and adults, through the Alternative Learning System and community learning centres",
+   "Private and sectarian schools, supervised by the Ministry but protected from discrimination"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Multiple ministries (code-dependent)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2021-05-18 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Multiple ministries (code-dependent) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 18",
-    "line2": "Bangsamoro Education Code",
-    "badges": [
-      "ENACTED",
-      "Priority Code",
-      "2021"
+  "when_will_it_take_effect": "In force since 2021 — passed and approved by the Chief Minister on the same day, 18 May 2021, effective 15 days after publication. Implementing rules were due within a year of passage.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. Your child can complete their whole basic education through the madrasah system and receive a diploma from it — the code makes that a formal parallel track, not an enrichment class. Corporal punishment is banned, schools must allow prayer spaces, and Bangsamoro history is taught at every level.",
+   "in_practice": [
+    "Two parallel formal systems: the Public School System and the Public Madrasah System, under common standards",
+    "The madrasah track runs Tahderiyah, Lower and Upper Madrasah Ibtidaiyyah, Madrasah Mutawassitah and Madrasah Thanawiyyah, with its own certificates and diploma",
+    "Islamic subjects and Arabic are taught to Muslim learners in the school system too",
+    "Mother tongue is the medium for Kindergarten through Grade 3; English and Filipino from Grade 4",
+    "In the madrasah system, Arabic may be used as a medium from Mutawassitah onward alongside English and Filipino",
+    "Corporal and other excessive and humiliating punishments in schools are prohibited",
+    "The Ministry must allow prayer spaces in private and public schools",
+    "Bangsamoro history, culture and identity are integrated into the curriculum at all levels",
+    "Peace education is a core component across every level and delivery system",
+    "At least one Community Learning Center per municipality and city, with separate areas for female, male, young and old learners",
+    "Learners have a right to their certificates, transcripts and transfer credentials within 30 days of asking"
+   ],
+   "for_specific_groups": {
+    "Madrasah learners": "The Public Madrasah System is a full formal pathway with its own levels and its own Tahderiyyah, Ibtidaiyyah, Mutawassitah certificates and Thanawiyyah Diploma — not a weekend supplement.",
+    "Madrasah teachers (Asatidz/Mudarris)": "Section 105 creates a special qualifying examination and eligibility for permanent Mudarris appointments, and exempts honour graduates in Arabic or Islamic Studies from sitting it. Note the limit: that eligibility qualifies you only for Mudarris posts and is not a substitute for second-level eligibility unless the Civil Service Commission says so.",
+    "Parents": "You have the right to organise with teachers, to access any official record relating to your child, and to information and services in early childhood care and development from age zero to four.",
+    "Learners generally": "Rights include free choice of field of study, guidance and counselling, access to your own records, publication of a student newspaper, forming organisations, freedom from involuntary contributions, freedom from discrimination on disability, gender, religion or socio-economic status, and freedom from violence and humiliating treatment.",
+    "Indigenous learners": "A Bureau for Indigenous Peoples' Education, an Indigenous Peoples' Education Framework, dedicated regular funding, a Tribal University System founded on indigenous knowledge, and reserve quotas in student assistance programmes for needy but qualified learners from cultural communities.",
+    "Out-of-school youth and adults": "The Alternative Learning System is a separate pathway with an equivalency examination, and Tahfidz Al-Quran is recognised as an alternative delivery mode within it.",
+    "Learners with disabilities": "A Bureau for Special Education, an inclusive education framework, SPED Centers, and textbooks and learning resources that must include those for learners with disabilities.",
+    "Private and sectarian schools": "The Ministry supervises and regulates you, but the right to propagate religious beliefs may not be curtailed and no discrimination against sectarian institutions is permitted. Three private school representatives take part in Ministry deliberations on private school matters.",
+    "Higher education institutions": "Your regulator is now the Ministry, which absorbed CHED-ARMM's powers, budgets, personnel and assets — including the authority to grant, cancel, withdraw or restore recognition."
+   },
+   "where_this_applies": "The whole BARMM. Schools Division Offices and higher education provincial offices sit in Lanao del Sur, Maguindanao, Sulu, Basilan and Tawi-Tawi, the cities of Marawi, Lamitan and Cotabato, and one covering the Special Geographic Area.",
+   "when_you_will_feel_it": "In force since 2021, though much depends on the implementing rules and on annual budget allocations, since the code carries no appropriation of its own.",
+   "what_you_can_do": [
+    "Ask your school for your child's records — access to official records relating to a child under your parental responsibility is a listed parental right",
+    "Request certificates, diplomas, transcripts and transfer credentials; the code gives you a right to issuance within 30 days of request",
+    "If corporal punishment is used, Section 39(k) prohibits it outright",
+    "Ask whether your school has a prayer space — Section 84 requires the Ministry to allow them in public and private schools",
+    "For out-of-school learners, ask about the Alternative Learning System equivalency examination and your municipality's Community Learning Center",
+    "Ask about reserve quotas in scholarship and assistance programmes for needy but qualified learners from cultural communities"
+   ],
+   "watch_out_for": [
+    "The code carries no appropriation of its own — funding is left entirely to the annual appropriations act, for a system that includes two parallel school systems, a community learning centre in every municipality, and a Tribal University System.",
+    "The two systems' grade bands do not line up. The Public School System runs Junior High at Grades 7 to 10 and Senior High at 11 to 12; the Madrasah System runs Mutawassitah at Grades 7 to 9 and Thanawiyyah at 10 to 12. The code promises common standards but does not address transfers across that mismatch.",
+    "The special Mudarris eligibility is expressly not a substitute for second-level eligibility unless the Civil Service Commission authorises it.",
+    "The Tribal University System is mandated here and mandated again in BAA 64 of 2024; no charter had been enacted when this registry was compiled.",
+    "Implementing rules were given a full year from passage.",
+    "The act lists Sulu among the provinces with division and provincial offices; the parliamentary districting acts of 2025 and 2026 no longer include the province.",
+    "The only criminal penalty in the code concerns operating an educational institution without authorisation."
+   ],
+   "key_terms_explained": {
+    "Madrasah / Madaris": "An Islamic school, community-based and privately operated, where the medium of instruction is Arabic with Islamic studies and Arabic literacy at the core. Madaris is the plural.",
+    "Tahderiyah": "Pre-school level in the madrasah system, corresponding to kindergarten.",
+    "Ibtidaiyyah / Mutawassitah / Thanawiyyah": "The madrasah system's primary, intermediate and secondary levels.",
+    "Mudarris / Asatidz": "A teacher of Arabic and Islamic values. Asatidz is the plural form used for madrasah teachers.",
+    "ALIVE": "Arabic Language and Islamic Values Education — the enrichment programme offered in traditional madaris.",
+    "Tahfidz Al-Quran": "Institutions focused on memorising and understanding the Qur'an and the Sunnah, recognised here as an alternative delivery mode under the Alternative Learning System.",
+    "Kulliyyah": "An institution of higher learning offering degrees in Islamic studies and Arabic language.",
+    "ALS": "Alternative Learning System — a separate pathway to complete basic education outside the formal school system, certified by an equivalency examination.",
+    "Waqf": "An Islamic charitable endowment. Section 168 directs the Ministry to establish one for advanced education, faculty development and research.",
+    "IPEd": "Indigenous Peoples' Education — a system delivering intergenerational transmission of indigenous knowledge systems and practices.",
+    "SEF": "Special Education Fund — the local tax-funded pot for education, whose collection and use the Ministry guides jointly with the local government ministry."
+   },
+   "status_note": "Passed by the Bangsamoro Parliament and approved by the Chief Minister on the same day, 18 May 2021.",
+   "benefits": {
+    "headline": "A madrasah pathway that leads to a real diploma, Bangsamoro history and peace education in every classroom, a ban on corporal punishment, and regional control of higher education.",
+    "direct_benefits": [
+     {
+      "benefit": "A complete formal basic education pathway through the madrasah system, with its own certificates and diploma",
+      "who_gets_it": "Madrasah learners",
+      "how_to_access": "Sections 54, 91 to 102"
+     },
+     {
+      "benefit": "Islamic subjects and Arabic language taught to Muslim learners within the public school system",
+      "who_gets_it": "Muslim learners in public schools",
+      "how_to_access": "Section 62"
+     },
+     {
+      "benefit": "Mother-tongue instruction in the earliest years, in both systems",
+      "who_gets_it": "Kindergarten and early primary learners",
+      "how_to_access": "Sections 66 and 95"
+     },
+     {
+      "benefit": "A prohibition on corporal and other excessive and humiliating punishment",
+      "who_gets_it": "All learners",
+      "how_to_access": "Section 39(k)"
+     },
+     {
+      "benefit": "Prayer spaces allowed in public and private schools",
+      "who_gets_it": "All learners and staff",
+      "how_to_access": "Section 84"
+     },
+     {
+      "benefit": "Bangsamoro history, culture and identity integrated into the curriculum at all levels",
+      "who_gets_it": "All learners",
+      "how_to_access": "Sections 39(l) and 56"
+     },
+     {
+      "benefit": "Peace education as a core component with dedicated regular funding",
+      "who_gets_it": "All learners across all levels and delivery systems",
+      "how_to_access": "Sections 55 and 163 to 166"
+     },
+     {
+      "benefit": "A special civil service eligibility route for madrasah teachers",
+      "who_gets_it": "Asatidz and Mudarris seeking permanent appointment",
+      "how_to_access": "Section 105, with honour graduates in Arabic or Islamic Studies exempted from the examination"
+     },
+     {
+      "benefit": "At least one Community Learning Center in every municipality and city",
+      "who_gets_it": "Out-of-school youth and adult learners",
+      "how_to_access": "Section 128"
+     },
+     {
+      "benefit": "Reserve quotas in financial assistance for needy but academically qualified learners from cultural communities, including indigenous learners",
+      "who_gets_it": "Disadvantaged learners, including those affected by social, political and natural disasters",
+      "how_to_access": "Section 182"
+     },
+     {
+      "benefit": "Certificates, diplomas, transcripts and transfer credentials issued within 30 days of request",
+      "who_gets_it": "All learners",
+      "how_to_access": "Section 39(e)"
+     }
     ],
-    "what_this_does": "Provides for a Complete and Integrated System of Quality Education in the Bangsamoro (education Code).",
-    "who_it_affects": "Schools · Students · Teachers",
-    "effective": "2021-05-18"
-  },
-  "views": {
-    "simple": "Provides for a Complete and Integrated System of Quality Education in the Bangsamoro (education Code).",
-    "official": "AN ACT PROVIDING FOR A COMPLETE AND INTEGRATED SYSTEM OF QUALITY EDUCATION IN THE BANGSAMORO (EDUCATION CODE)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Regional control of higher education, with CHED-ARMM's powers, budgets, personnel and assets transferred to the Ministry",
+     "The Minister seated ex-officio on the Commission on Higher Education, the UniFAST Governing Board and the Private Education Assistance Committee",
+     "A waqf endowment fund for advanced education, faculty development and research",
+     "An Indigenous Peoples' Education Framework with dedicated regular funding",
+     "School- and madrasah-based management giving schools greater autonomy over local matters",
+     "Accreditation-based quality assurance for both schools and madaris"
+    ],
+    "limitations": [
+     "No appropriation of its own.",
+     "The two systems' grade bands do not align, and transfers between them are unaddressed.",
+     "The Tribal University System remains unchartered.",
+     "The Mudarris eligibility does not carry across to other second-level posts."
+    ]
+   },
+   "your_responsibilities": {
+    "for_parents": [
+     "Enable your children to obtain elementary education, and strive to enable them to obtain secondary and higher education",
+     "Cooperate with the school in implementing the curricular and co-curricular programme",
+     "Help carry out the educational objectives through the school systems"
+    ],
+    "for_learners": [
+     "Uphold the school's academic integrity and abide by its rules and your academic responsibilities",
+     "Promote and maintain the peace and tranquillity of the school",
+     "Exercise your rights responsibly, answerable for any infringement of public welfare or the rights of others"
+    ],
+    "for_teachers_and_administrators": [
+     "Be accountable for the efficient and effective attainment of specified learning objectives",
+     "Render regular reports on each learner's performance to the learner and to parents, with suggestions for improvement",
+     "Refrain from deducting from a learner's scholastic rating for acts that are clearly not manifestations of poor scholarship",
+     "Maintain a school atmosphere where there are no threats to the life and limb of learners, and observe due process and fairness in discipline"
+    ],
+    "for_the_ministry": [
+     "Formulate and implement the curricula for both systems and set common standards across them",
+     "Regulate and supervise all public and private educational institutions, including higher education, and Islamic higher education",
+     "Promulgate implementing rules within 1 year of passage",
+     "Provide regular funding for indigenous peoples' education and peace education",
+     "Establish at least one Community Learning Center per municipality and city, and allow prayer spaces in schools"
+    ]
+   },
+   "what_is_prohibited": [
+    "Corporal and other excessive and humiliating punishments in schools.",
+    "Discrimination against learners or school personnel on the basis of disability, gender, religion or socio-economic status.",
+    "Discrimination against sectarian educational institutions in any manner or form, or curtailment of their right to teach and propagate their religious beliefs.",
+    "Imposing involuntary contributions on learners or school personnel, except those approved by their own organisations.",
+    "Compulsory assignments on teaching staff unrelated to their appointments or contracts, unless compensated.",
+    "Operating an educational institution, course or programme without authorisation, or in violation of the terms of recognition.",
+    "Fraud or deceit in applying for a Ministry permit or recognition."
+   ],
+   "penalties": {
+    "criminal": "Section 193 — operating educational institutions or programmes without authorisation, or in violation of the terms of recognition: a fine of ₱100,000 to ₱250,000, or imprisonment for a maximum of 3 years, or both, at the court's discretion. Where the act is committed by a school, the head of the institution is equally liable.",
+    "administrative": "Section 194 — the Ministry may impose administrative sanctions for mismanagement of operations, gross inefficiency of teaching or non-teaching personnel, fraud or deceit in a permit or recognition application, failure to comply with the Code or its implementing rules, and unauthorised operation or violation of advertising requirements. Sanctions must be imposed without prejudice to the interest of learners, teachers and employees.",
+    "higher_education": "The Ministry may impose diminution or withdrawal of subsidy, downgrading or withdrawal of accreditation, programme termination, or closure of a higher education institution."
+   },
+   "where_to_complain": {
+    "first_stop": "The school head, then the Schools Division Office for your province or city",
+    "oversight": "The Ministry of Basic, Higher, and Technical Education, whose Inspection, Monitoring and Investigation Division investigates complaints or anomalies committed by ministry officers and employees",
+    "note": "Learners have a right to effective channels of communication with the academic and administrative bodies of their school, and school personnel to free legal service when charged for acts done in the lawful discharge of professional duties."
+   },
+   "everyday_scenarios": [
+    "A family wants their child educated in a madrasah without giving up a recognised diploma. Section 54 makes the Public Madrasah System a parallel formal system, and Section 102 provides for its own certificates and Thanawiyyah Diploma.",
+    "A teacher strikes a pupil for misbehaving. Section 39(k) prohibits corporal and other excessive and humiliating punishments in schools.",
+    "An Arabic Studies honour graduate wants a permanent teaching post. Section 105 grants a special eligibility for Mudarris positions and exempts honour graduates from the qualifying examination — though it does not substitute for second-level eligibility elsewhere.",
+    "An adult who never finished school wants a way back. The Alternative Learning System offers an equivalency examination, and the code requires at least one Community Learning Center per municipality or city.",
+    "A private college is told it needs regional recognition. The Ministry absorbed CHED-ARMM's authority to grant, cancel, withdraw or restore recognition for higher education institutions in the region."
+   ]
   }
+ },
+ "key_provisions": [
+  "Sections 1–10 — Short title: the “Bangsamoro Education Code of 2021”. The Bangsamoro Education System covers formal, non-formal and informal education, public and private, at basic, higher, technical and Madaris levels, as a subsystem of the national education system, conforming to minimum standards set by the National Government. Declared policies include establishing an indigenous education system, institutionalising peace education at all levels, integrating Islamic and Arabic studies for Muslim pupils in public schools and strengthening the Madaris system, applying moral governance at all levels, and a guarantee that the right of sectarian institutions to propagate their religious beliefs shall not be curtailed. Guiding principles are inclusivity, equity — “those who have less in life shall have more in educational services” — rights-based, rooted in context, integrated, balanced and moral governance.",
+  "Sections 11–35 — The Ministry of Basic, Higher, and Technical Education administers, supervises and regulates the system. Four Bangsamoro Directors-General are the highest career officials, one each for Basic Education, Higher Education, Technical Education and Madaris Education. Under Basic Education sit five bureaus: Basic Education, Alternative Learning Systems, Indigenous Peoples' Education, Physical Education and Sports Development, and Special Education. Schools Division Offices for basic and Madaris education are authorised in Lanao del Sur, Maguindanao, Sulu, Basilan and Tawi-Tawi, the cities of Marawi, Lamitan and Cotabato, and one covering the Special Geographic Area. A Bureau of Madaris Education sits under the Director-General for Madaris Education, and a Bangsamoro Education Board supports policy formulation. Support services include an Inspection, Monitoring and Investigation Division responsible for continuous inspection and management audit of personnel at all levels and for investigating complaints or anomalies by ministry officers.",
+  "Sections 36–48 — The education community. Parents have rights to organise with teachers, to access any official record relating to their children, and to early childhood care and development services from age zero to four. Learners have rights to relevant quality education, free choice of field of study, guidance and counselling, access to their own records, issuance of certificates, diplomas, transcripts and transfer credentials within 30 days of request, publication of a student newspaper, free expression, forming organisations, freedom from involuntary contributions, freedom from discrimination on disability, gender, religion or socio-economic status, protection from all forms of violence — with “corporal and other excessive and humiliating punishments in schools” prohibited — and “the right of learners to be taught of the Bangsamoro History, Cultures, Traditions and Practices”. School personnel have rights to free expression, free legal service when charged for acts in the lawful discharge of duty, to establish labour and professional organisations, freedom from involuntary contributions and freedom from discrimination, with persons with disabilities enjoying equal rights to enter the teaching profession. Teaching staff are free from uncompensated compulsory assignments unrelated to their appointments, hold intellectual property rights, and are deemed persons in authority.",
+  "Sections 49–59 — Learning is delivered through formal, non-formal and informal systems, with adaptive delivery modalities for pandemics, disasters and emergencies, and with Tahfidz Al-Quran institutions defined as a special type of madrasah. Levels are basic education — kindergarten plus 6 years elementary and 6 years secondary, “achieved through the school and/or madrasah systems” — higher education including Islamic Higher Education, and technical education and skills development including Madrasah education. The Ministry ensures all learners are granted admission, attendance and completion of basic education. Section 54 provides that the Bangsamoro Government “shall provide two parallel formal systems in delivering quality basic education – the ‘Public School System' and the ‘Public Madrasah System'”, both governed by common standards in curriculum and competency, assessment, teachers, textbooks and learning materials, infrastructure, management and quality assurance. Peace education is an integral part of the basic education curriculum; Bangsamoro People's history, culture and identity are integrated into the curriculum of all education levels; schools enjoy greater autonomy under school-based management; and an inclusive education framework is adopted.",
+  "Sections 60–90 — The Public School System. Levels are Kindergarten including early childhood care and education, Grades 1 to 3, Grades 4 to 6, Grades 7 to 10 as Junior High School, and Grades 11 to 12 as Senior High School, with curriculum content standards for each. Islamic subjects and the Arabic Language Curriculum shall be taught to Muslim learners. The medium of teaching for Kindergarten through Grade 3 is the learners' mother tongue; from Grade 4 the primary medium is English and Filipino, with mother tongue also usable. Assessment covers classroom-based, summative, standardised achievement and system assessment. Teachers must pass the licensure examination. The Ministry sets textbook and learning resource standards including for learners with disabilities, and standards for school infrastructure — and “shall allow prayer spaces in private and public schools”. School-based management is anchored on moral governance, and schools practise “engaged-time-on-task” by reducing teachers' non-teaching duties. Financing public schools is the Bangsamoro Government's responsibility, with guidelines issued in coordination with local government units and local school boards on the use of all education funds including the Special Education Fund.",
+  "Sections 91–121 — The Public Madrasah System. Levels are Tahderiyah including early childhood care and education, Grades 1 to 3 as Lower Madrasah Ibtidaiyyah, Grades 4 to 6 as Upper Madrasah Ibtidaiyyah, Grades 7 to 9 as Madrasah Mutawassitah, and Grades 10 to 12 as Madrasah Thanawiyyah, each with its own curriculum covering language, science, mathematics, social studies, civic education, arts, Islamic education and Arabic language, physical education and health. The medium for Tahderiyyah and Lower Ibtidaiyyah is the mother tongue; from Mutawassitah to Thanawiyyah Arabic may be used in addition to English and Filipino. The system has its own assessment mechanism and its own Tahderiyyah, Ibtidaiyyah and Mutawassitah Certificates and Thanawiyyah Diploma. Section 105 creates a special eligibility: the Ministry develops and administers special qualifying examinations for permanent appointment to Mudarris positions and, in coordination with the Civil Service Commission for BARMM, grants a special licence to those who pass — provided the eligibility qualifies the appointee only for Mudarris posts “and shall not be considered as a substitute to second level eligibility unless authorized by the Civil Service Commission”; graduates with honours from a recognised institution in Arabic or Islamic Studies, local or international, may be exempted from the examination. Madrasah-based management is anchored on moral governance espousing participation, responsiveness, efficiency, transparency, ethical conduct and “Cognizance of God ‘Taqwa'”. Private madrasah financing is primarily the owners' responsibility, with government subsidy possible.",
+  "Sections 122–128 — The Alternative Learning System is established as a separate pathway from the formal systems, with a curriculum emphasising livelihood subjects and modular learning, a community-based approach with local governments, and an equivalency examination certifying completion of primary and secondary levels. Tahfidz Al-Quran is recognised as an alternative delivery mode under the ALS and integrated into the region's educational framework. The Ministry “shall establish at least one (1) Community Learning Center per municipality/city”, with areas for female, male, young and old learners.",
+  "Sections 129–150 — Higher education. The Ministry covers all higher education institutions formerly under CHED-ARMM — state universities and colleges, CHED-supervised and supervised institutions, private institutions, Islamic higher education and transnational institutions. The powers and functions devolved to CHED-ARMM under Executive Order No. 315 and RA 7722 are transferred to the Ministry, along with all programmes, projects, budgets, assets, personnel and liabilities, and the Ministry may avail of the Higher Education Development Fund. It may set minimum standards, monitor and evaluate performance, impose sanctions including withdrawal of subsidy or accreditation, programme termination or closure, review institutional charters, recommend budgets, and grant, cancel, withdraw or restore recognition of private institutions. Under Article VI, Section 11 of the Organic Law the Minister sits as ex-officio member of the Commission on Higher Education, the UniFAST Governing Board and the Private Education Assistance Committee, and as ex-officio member of the governing boards of state and local colleges and universities in the region; the Minister chairs the Board of Regents of the Bangsamoro Tribal University System, of all regional colleges and universities Parliament may create, and of all existing non-chartered public higher education institutions. Fourteen state universities and colleges are named as integral components of the system, and the National Government is to continue supporting the Mindanao State University System. A Tribal University System is to be created, founded on Indigenous Knowledge Systems and Practices, to address indigenous peoples' higher education needs. Islamic higher education is provided through Islamic study programmes, schools, institutes and universities, with Islamic higher education institutions responsible for preparing Islamic and Arabic education teachers.",
+  "Sections 151–166 — Technical education and skills development covers all TVET programmes, formal, non-formal and informal, with the Ministry managing and regulating the sector, conducting competency assessment and certification, and formulating a Bangsamoro Manpower and Technical Education and Skills Development Plan. Delivery runs through the high school vocational strand, the Madrasah Thanawih vocational strand, higher education diploma programmes, and specialised training centres and community-based training. Indigenous Peoples' Education delivers intergenerational transmission of indigenous knowledge systems and practices, with a Bangsamoro Indigenous Peoples' Education Framework, regular funding in the Ministry budget, and specific policies for IPEd teacher education. Peace education is a core component integrated into the curriculum of all educational levels and delivery systems, with its own prescribed curriculum and regular funding.",
+  "Sections 167–189 — Funding. Public schools and madaris are funded from public funds. The Ministry “shall establish an endowment (waqaf) fund for advanced education, faculty development, research, and development”. Local governments are encouraged to appropriate for school operation and maintenance, and the Ministry issues policy guidance with the local government ministry on the Special Education Fund. Private institutions set their own tuition subject to Ministry rules, may receive grants and donations, may run auxiliary enterprises, and may pool institutional funds. Government assistance to learners covers scholarships, grants-in-aid, the Educational Loan Fund and subsidised tuition, extending to learners affected by social, political and natural disasters, and “shall provide for reserve quotas for financially needed but academically qualified learners from the cultural communities, including IP learners”. Under Article VI, Section 13 of the Organic Law, national education programmes and projects continue to be funded by the National Government, without prejudice to Bangsamoro supplemental funding.",
+  "Sections 190–199 — The Ministry supervises and regulates private schools, universities, colleges and learning centres, including sectarian and non-sectarian institutions; three private school representatives participate in Ministry deliberations on private school matters; and the right of sectarian institutions to propagate their religious beliefs shall not be curtailed. Section 193 punishes operating educational institutions or programmes without authorisation, or in violation of the terms of recognition, with a fine of ₱100,000 to ₱250,000 or imprisonment up to 3 years, or both, with the head of the institution equally liable. Administrative sanctions may be imposed for mismanagement, gross inefficiency, fraud in permit applications, non-compliance with the Code, and unauthorised operation — without prejudice to the interest of learners, teachers and employees. Implementing rules are due from the Minister within 1 year of passage, funding is included in the annual Bangsamoro Appropriations Act, and the Code takes effect 15 days after complete publication."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Learners in the madrasah system, who gain a full formal pathway and diploma",
+   "Madrasah teachers seeking permanent appointment",
+   "Muslim learners in public schools, through Islamic and Arabic curriculum",
+   "Indigenous learners, through IPEd and a Tribal University System",
+   "Out-of-school youth and adults, through ALS and community learning centres",
+   "Learners with disabilities, through the inclusive education framework"
+  ],
+  "impact_tags": [
+   "education",
+   "priority_code",
+   "islamic_culture_heritage",
+   "indigenous_settlers",
+   "culture_heritage"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "No amount stated — Section 196 provides that funding necessary for implementation shall be included in the annual Bangsamoro Appropriations Act",
+  "figures_note": "The only peso figures in the Code are the penalties in Section 193 (₱100,000 to ₱250,000)."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2021-05-18"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2021/06/BAA-18.pdf",
+  "irr": "Due from the Minister within 1 year of passage — not yet captured in this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": "All laws and issuances pertaining to the Bangsamoro Education Code and the creation of MBHTE, or parts inconsistent with this Act",
+  "origin_bill": "Bill No. 70",
+  "related_note": "Transfers to the Ministry the powers CHED-ARMM held under Executive Order No. 315 and RA 7722, and seats the Minister ex-officio on CHED, the UniFAST Governing Board under RA 10687 and the Private Education Assistance Committee, pursuant to Article VI, Section 11 of RA 11054. National education programmes continue to be nationally funded under Article VI, Section 13. Section 142 placed the Regional Madrasah Graduate Academy under the Ministry; BAA 50 of 2023 later repealed that academy's charter and converted it into the Bangsamoro Kulliyyah for Islamic Studies. The Tribal University System mandated in Sections 145 and 146 is restated as a directive to Parliament in BAA 64, the Bangsamoro Indigenous Peoples' Act of 2024. Physical education and sports coordinate with the Bangsamoro Sports Commission created by BAA 12, and personnel matters run through BAA 17, the Bangsamoro Civil Service Code."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "No amount stated; funding carried in the annual Bangsamoro Appropriations Act",
+  "irr_status": "Section 195 requires the Minister to promulgate implementing rules within 1 year of passage. Not yet captured in this registry.",
+  "implementing_agency": {
+   "agency": "Ministry of Basic, Higher, and Technical Education, with four Directors-General for Basic, Higher, Technical and Madaris Education",
+   "inferred": false
+  },
+  "note": "Read from the enacted text as signed, all 43 pages and 199 sections. Two structural gaps are visible on the face of the Code: the Public School System's Junior High (Grades 7–10) and Senior High (11–12) bands do not align with the Madrasah System's Mutawassitah (7–9) and Thanawiyyah (10–12), and transfers between the two parallel systems are not addressed; and the Tribal University System mandated in Sections 145–146 remains unchartered, being restated as a directive in BAA 64 3 years later. The Code also lists Sulu among the provinces with Schools Division and higher education provincial offices; the districting acts of 2025 and 2026 no longer include the province."
+ },
+ "citizen_questions": [
+  {
+   "q": "Can my child finish school entirely through a madrasah?",
+   "a": "Yes. Section 54 establishes the Public Madrasah System as one of two parallel formal systems, running from Tahderiyah through Madrasah Thanawiyyah, with its own certificates and a Thanawiyyah Diploma, governed by common standards with the public school system."
+  },
+  {
+   "q": "Do public school pupils learn Arabic and Islamic subjects?",
+   "a": "Section 62 provides that Islamic Subjects and the Arabic Language Curriculum shall be taught to Muslim learners in the school system."
+  },
+  {
+   "q": "What language will my child be taught in?",
+   "a": "Mother tongue for Kindergarten through Grade 3, then English and Filipino as the primary medium from Grade 4, with mother tongue still usable. In the madrasah system, mother tongue is used for Tahderiyyah and Lower Ibtidaiyyah, and Arabic may be used from Mutawassitah onward alongside English and Filipino."
+  },
+  {
+   "q": "Is corporal punishment allowed?",
+   "a": "No. Section 39(k) gives learners the right to be protected from all forms of violence and humiliating or abusive treatment, and states that corporal and other excessive and humiliating punishments in schools are prohibited."
+  },
+  {
+   "q": "Must schools provide a prayer space?",
+   "a": "Section 84 requires the Ministry to allow prayer spaces in private and public schools as part of the standards governing school infrastructure."
+  },
+  {
+   "q": "I teach in a madrasah. Can I get a permanent government post?",
+   "a": "Section 105 creates special qualifying examinations and a special licence for permanent appointment to Mudarris positions, and exempts honour graduates in Arabic or Islamic Studies. Note the limit: the eligibility qualifies you only for Mudarris posts and is not a substitute for second-level eligibility unless the Civil Service Commission authorises it."
+  },
+  {
+   "q": "How long should the school take to release my transcript?",
+   "a": "Learners have the right to issuance of official certificates, diplomas, transcripts of records, grades, transfer credentials and similar documents within 30 days from request."
+  },
+  {
+   "q": "Who regulates colleges and universities in the region now?",
+   "a": "The Ministry. The powers CHED-ARMM held were transferred to it, along with programmes, budgets, personnel and assets, and the Minister sits ex-officio on the national Commission on Higher Education."
+  },
+  {
+   "q": "Is there anything for people who never finished school?",
+   "a": "Yes — the Alternative Learning System is a separate pathway with an equivalency examination certifying completion of primary and secondary levels, and the Ministry must establish at least one Community Learning Center in every municipality and city."
+  },
+  {
+   "q": "Is Bangsamoro history actually taught?",
+   "a": "Section 39(l) makes it a learner's right to be taught Bangsamoro history, cultures, traditions and practices, and Section 56 requires that history, culture and identity be integrated into the curriculum of all education levels in the region."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 18",
+  "line2": "Bangsamoro Education Code of 2021",
+  "badges": [
+   "IN FORCE",
+   "Education",
+   "2021"
+  ],
+  "what_this_does": "Makes the madrasah a full parallel school system with its own diploma, brings higher education under regional control, and writes Bangsamoro history and peace education into every classroom.",
+  "who_it_affects": "Every learner · madrasah teachers · higher education institutions · indigenous learners",
+  "effective": "2021-05-18"
+ },
+ "views": {
+  "simple": "The region's education code: two parallel formal systems for basic education — the Public School System and the Public Madrasah System, held to common standards, the madrasah track running Tahderiyah through Thanawiyyah with its own diploma; Islamic subjects and Arabic for Muslim learners in public schools; mother-tongue instruction in the early years; a ban on corporal punishment; prayer spaces allowed in all schools; Bangsamoro history and peace education across every level; a special civil service eligibility for madrasah teachers; the Alternative Learning System with Tahfidz Al-Quran recognised within it and a community learning centre in every municipality; and the absorption of CHED-ARMM's authority over higher education, with a Tribal University System and a waqf education endowment still to be built.",
+  "official": "AN ACT PROVIDING FOR THE ESTABLISHMENT, MANAGEMENT, AND SUPPORT OF A COMPLETE AND INTEGRATED SYSTEM OF QUALITY EDUCATION IN THE BANGSAMORO"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 18, enacted text as signed (Parliament's acts index), all 43 pages and 199 sections.",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

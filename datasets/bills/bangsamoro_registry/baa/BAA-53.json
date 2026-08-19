@@ -1,191 +1,232 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 53,
-    "short_title": "Municipality of Nuling Charter",
-    "official_title": "AN ACT CREATING THE MUNICIPALITY OF NULING, MAGUINDANAO DEL NORTE",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2023-12-20",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Creates the Municipality of Nuling, Maguindanao del Norte.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Creates the Municipality of Nuling, Maguindanao del Norte.",
-    "who_will_be_affected": [
-      "Residents",
-      "Business owners",
-      "Job seekers",
-      "SGA residents"
-    ],
-    "when_will_it_take_effect": "Ratified 2023-12-20; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Creates a new municipality (Nuling, Maguindanao Del Norte). If you live in the covered barangays, your community gets its own municipal government - a mayor, sanggunian, municipal hall, and its own share of national and regional funds - instead of being administered from a distant town center.",
-      "in_practice": [
-        "Your own municipal share of the National Tax Allotment and Bangsamoro funds, spent locally",
-        "Closer civil registry, business permits, social services, and health station",
-        "Local elections for your own mayor, vice mayor, and councilors once the LGU is organized",
-        "Barangay boundaries stay; what changes is which town hall serves you"
-      ],
-      "for_specific_groups": {
-        "Residents": "Government services move closer; local projects are decided by officials you elect",
-        "Business owners": "Permits and local taxes are handled by the new municipality - rates are set by its own sanggunian",
-        "Job seekers": "A new LGU means new municipal government positions",
-        "SGA residents": "For the eight 2023 municipalities: these convert the Special Geographic Area's 63 barangays (which voted to join BARMM) into full local governments"
-      },
-      "where_this_applies": "Nuling, Maguindanao Del Norte",
-      "watch_out_for": [
-        "A new municipality begins corporate existence only after its officials are elected/qualified and offices organized - there is a transition period",
-        "Boundary and asset-sharing details with the mother municipality can take time to settle"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Your own local government - services, budget, and representation for Nuling, Maguindanao Del Norte.",
-        "direct_benefits": [
-          {
-            "benefit": "Municipal services (civil registry, permits, health station, social welfare) close to home",
-            "who_gets_it": "Residents of the new municipality",
-            "how_to_access": "New municipal hall once organized"
-          },
-          {
-            "benefit": "A dedicated share of national and Bangsamoro funds spent in your own town",
-            "who_gets_it": "The whole community",
-            "how_to_access": "Automatic; monitor via the municipal budget and sanggunian sessions"
-          },
-          {
-            "benefit": "Your own elected mayor, vice mayor, and councilors answerable to you",
-            "who_gets_it": "Voters of the municipality",
-            "how_to_access": "Vote in the first municipal elections"
-          },
-          {
-            "benefit": "New municipal government jobs and local contracts",
-            "who_gets_it": "Local job seekers, suppliers",
-            "how_to_access": "Municipal HR and BAC postings"
-          }
-        ],
-        "indirect_benefits": [
-          "Faster development decisions made locally",
-          "Recognition: for SGA towns, the plebiscite promise made real"
-        ],
-        "limitations": [
-          "Corporate existence starts only after officials are elected/qualified - a transition period is normal",
-          "Boundary/asset settlement with the mother municipality can take time"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 53,
+  "short_title": "Creation of the Municipality of Nuling",
+  "official_title": "AN ACT CREATING THE MUNICIPALITY OF NULING IN THE PROVINCE OF MAGUINDANAO DEL NORTE, PROVIDING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2023-12-20",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Second Regular Session (begun 15 September 2022)",
+  "date_passed": "2023-12-20",
+  "date_passed_hijri": "Jumada Al-Akhirah 07, 1445",
+  "date_approved_by_chief_minister": "2023-12-26",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Barangay residents",
-      "LGUs"
-    ],
-    "impact_tags": [
-      "local_government",
-      "municipality_lgu"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2023-12-20"
-    }
+  "effectivity": "15 days after publication in the Bangsamoro Gazette or one newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Carves 19 barangays out of the Municipality of Sultan Kudarat to create a new municipality, Nuling, in Maguindanao del Norte — subject to a plebiscite of the voters living there.",
+  "why_was_it_proposed": "The Organic Law empowers the Bangsamoro Government to create, divide, merge or abolish municipalities and barangays by act of Parliament, provided the change is ratified by the people directly affected.",
+  "what_will_change": "If ratified, 19 barangays become a distinct and independent municipality with its own mayor, vice-mayor and eight-member council, seated at Barangay Pinaring — and entitled to its own share of national taxes.",
+  "who_will_be_affected": [
+   "Residents of the 19 barangays, who vote in the plebiscite and would become residents of a new municipality",
+   "Residents of the remaining parts of Sultan Kudarat, the mother municipality",
+   "Voters, who decide whether it happens at all",
+   "Taxpayers, since ₱2.5 million a month is provided until the new municipality gets its revenue share"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of the Interior and Local Government (MILG)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2023-12-20 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of the Interior and Local Government (MILG) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 53",
-    "line2": "Municipality of Nuling Charter",
-    "badges": [
-      "ENACTED",
-      "Municipality Lgu",
-      "2023"
+  "when_will_it_take_effect": "The act is in force, but the municipality acquires corporate existence only when a majority of votes cast in the plebiscite ratifies it. The plebiscite was to be held within 60 days of the act's approval.",
+  "what_this_means_for_you": {
+   "in_short": "You decide. This act creates the Municipality of Nuling out of 19 barangays of Sultan Kudarat — but it only becomes real if a majority of voters in those barangays approve it in a plebiscite.",
+   "in_practice": [
+    "19 barangays separate from Sultan Kudarat: Matengen, Ladia, Pigcalagan, Alamada, Raguisi, Pinaring, Damaniog, Ibotegen, Banatin, Nara, Kakar, Katidtuan, Maidapa, Kapimpilan, Bulibod, Kabuntalan, Nalinan, Panatan and Katamlangan",
+    "The seat of government is Barangay Pinaring, renamed the Poblacion",
+    "A plebiscite of qualified voters in those barangays decides it, within 60 days of approval",
+    "COMELEC conducts and supervises; the cost comes from the BARMM Contingent Fund under the FY2024 budget",
+    "The Chief Minister appoints the first mayor, vice-mayor and eight Sangguniang Bayan members",
+    "₱2,500,000 a month in financial assistance until the municipality gets its Internal Revenue Allotment share"
+   ],
+   "for_specific_groups": {
+    "Voters in the 19 barangays": "Your vote is what creates the municipality — it does not exist until a majority of votes cast ratifies it.",
+    "Residents of the rest of Sultan Kudarat": "The mother municipality loses 19 barangays if the plebiscite passes.",
+    "Incumbent Sangguniang Bayan members of Sultan Kudarat": "If you actually reside in the new municipality, you serve out your remaining term in the mother municipality, not the new one.",
+    "Anyone expecting to elect the first officials": "You do not. The first mayor, vice-mayor and council are appointed by the Chief Minister and hold office until the next regular election."
+   },
+   "where_this_applies": "Maguindanao del Norte — 19 barangays currently in Sultan Kudarat.",
+   "when_you_will_feel_it": "On ratification in the plebiscite.",
+   "what_you_can_do": [
+    "Check whether your barangay is among the 19 named in Section 2",
+    "Vote in the plebiscite — a majority of votes cast decides it",
+    "Ask COMELEC when the plebiscite is scheduled; the act set 60 days from approval"
+   ],
+   "watch_out_for": [
+    "The first set of municipal officials is appointed by the Chief Minister, not elected.",
+    "The act states no land area and no population figure for the new municipality.",
+    "Financial assistance is a floor — 'not less than' ₱2.5 million monthly — with no stated ceiling or end date beyond the IRA allocation.",
+    "The plebiscite cost falls on the FY2024 Contingent Fund, so the timetable depends on that budget."
+   ],
+   "key_terms_explained": {
+    "Plebiscite": "A vote of the people directly affected, required before a municipality can be created.",
+    "Poblacion": "The seat of government of a municipality — here, Barangay Pinaring.",
+    "Sangguniang Bayan": "The municipal council.",
+    "IRA / Internal Revenue Allotment": "A local government's share of national taxes.",
+    "Mother municipality": "The municipality the new one is carved out of — here, Sultan Kudarat."
+   },
+   "status_note": "Passed Jumada Al-Akhirah 07, 1445 / 20 December 2023, approved by the Chief Minister on 26 December 2023.",
+   "benefits": {
+    "headline": "A new municipality of 19 barangays, with ₱2.5 million a month until its tax share arrives.",
+    "direct_benefits": [
+     {
+      "benefit": "A local government seated in your own area rather than in a distant poblacion",
+      "who_gets_it": "Residents of the 19 barangays",
+      "how_to_access": "Subject to ratification in the plebiscite"
+     },
+     {
+      "benefit": "₱2,500,000 monthly financial assistance",
+      "who_gets_it": "The new Municipal Government of Nuling",
+      "amount": "Not less than ₱2.5 million every month until the IRA share is allocated",
+      "how_to_access": "Appropriated by the Bangsamoro Government"
+     },
+     {
+      "benefit": "Entitlement to a share of national taxes",
+      "who_gets_it": "The new municipality",
+      "how_to_access": "Once allocated in the revenue allotment"
+     }
     ],
-    "what_this_does": "Creates the Municipality of Nuling, Maguindanao del Norte.",
-    "who_it_affects": "Barangay residents · LGUs",
-    "effective": "2023-12-20"
-  },
-  "views": {
-    "simple": "Creates the Municipality of Nuling, Maguindanao del Norte.",
-    "official": "AN ACT CREATING THE MUNICIPALITY OF NULING, MAGUINDANAO DEL NORTE"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Services delivered from a nearer seat of government"
+    ],
+    "limitations": [
+     "Nothing takes effect without a favourable plebiscite.",
+     "The first officials are appointed, not elected.",
+     "No land area or population figure is stated in the act."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None beyond voting in the plebiscite, which is a right rather than a duty."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "Commission on Elections (COMELEC), which conducts and supervises the plebiscite",
+    "oversight": "Office of the Chief Minister, which appoints the first municipal officials",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A resident of Barangay Kakar votes in the plebiscite. If a majority of votes cast approve, Kakar leaves Sultan Kudarat and becomes part of the Municipality of Nuling.",
+    "A sitting Sangguniang Bayan member of Sultan Kudarat who lives in one of the 19 barangays finishes their term serving the mother municipality, not the new one.",
+    "A resident asks who the first mayor will be. Under Section 6 the Chief Minister appoints the mayor, vice-mayor and eight councillors immediately after ratification; they serve until the next regular election."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Policy: in the exercise of genuine autonomy and self-governance the Bangsamoro Government may create, divide, merge, abolish or substantially alter the boundaries of municipalities or barangays by act of Parliament. Units so created are entitled to their appropriate share in national taxes or the Internal Revenue Allotment, provided the change is approved by a majority of the votes cast in a plebiscite in the political units directly affected.",
+  "Section 2 — Separates 19 barangays — Matengen, Ladia, Pigcalagan, Alamada, Raguisi, Pinaring, Damaniog, Ibotegen, Banatin, Nara, Kakar, Katidtuan, Maidapa, Kapimpilan, Bulibod, Kabuntalan, Nalinan, Panatan and Katamlangan — from the Municipality of Sultan Kudarat and constitutes them into the distinct and independent Municipality of Nuling.",
+  "Section 3 — The seat of government is Barangay Pinaring, known hereafter as the Poblacion.",
+  "Section 4 — The territorial boundary follows the existing boundaries of the constituent barangays.",
+  "Section 5 — The municipality acquires corporate existence on ratification by a majority of the votes cast by qualified voters in a plebiscite in those barangays, to be held within 60 days after approval of the act. COMELEC conducts and supervises it, and the cost is taken from the BARMM Contingent Fund under the FY2024 appropriations.",
+  "Section 6 — The municipal government comprises a mayor, a vice-mayor and eight Sangguniang Bayan members appointed by the Chief Minister immediately after ratification, holding office until successors are elected at the next regular election. Incumbent elective Sangguniang Bayan members of Sultan Kudarat who actually reside in the new municipality serve out their remaining terms in the mother municipality.",
+  "Section 7 — The Bangsamoro Government shall appropriate financial assistance of not less than ₱2,500,000 every month for the administration and operation of the Municipal Government of Nuling until it is allocated its share in the revenue allotment.",
+  "Section 10 — Takes effect 15 days after publication in the Bangsamoro Gazette or one newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of the 19 barangays",
+   "The new Municipal Government of Nuling"
+  ],
+  "impact_tags": [
+   "local_government",
+   "governance_civil_service",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "Not less than ₱2,500,000 per month until the municipality receives its Internal Revenue Allotment share; plebiscite costs from the BARMM Contingent Fund under FY2024.",
+  "figures_note": "Quoted from Sections 5 and 7. The act states no land area or population."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2023-12-20"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/BAA-53.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 223",
+  "related_note": "One of a cluster of municipality-creation acts passed on 20 December 2023 with BAA 54 (Datu Sinsuat Balabaran) and BAA 55 (Sheik Abas Hamza), all in Maguindanao del Norte."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "Not less than ₱2,500,000 monthly, pending IRA allocation",
+  "irr_status": "None required by the act.",
+  "note": "Read from the enacted text as signed. The municipality's corporate existence depends on ratification in a plebiscite; whether that plebiscite was held and what it decided is not recorded here."
+ },
+ "citizen_questions": [
+  {
+   "q": "Does this create the municipality straight away?",
+   "a": "No. It acquires corporate existence only when a majority of the votes cast in a plebiscite of the affected barangays ratifies it, to be held within 60 days of the act's approval."
+  },
+  {
+   "q": "Which barangays are involved?",
+   "a": "Nineteen, all currently in Sultan Kudarat: Matengen, Ladia, Pigcalagan, Alamada, Raguisi, Pinaring, Damaniog, Ibotegen, Banatin, Nara, Kakar, Katidtuan, Maidapa, Kapimpilan, Bulibod, Kabuntalan, Nalinan, Panatan and Katamlangan."
+  },
+  {
+   "q": "Who will be the first mayor?",
+   "a": "Whoever the Chief Minister appoints. The first mayor, vice-mayor and eight councillors are appointed immediately after ratification and serve until the next regular election."
+  },
+  {
+   "q": "How will the new municipality pay for itself?",
+   "a": "The Bangsamoro Government provides not less than ₱2.5 million a month until the municipality is allocated its share of the Internal Revenue Allotment."
+  },
+  {
+   "q": "Where is the seat of government?",
+   "a": "Barangay Pinaring, which becomes the Poblacion."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 53",
+  "line2": "Creation of the Municipality of Nuling",
+  "badges": [
+   "IN FORCE",
+   "Local Government",
+   "2023"
+  ],
+  "what_this_does": "Creates a new municipality from 19 barangays of Sultan Kudarat, subject to a plebiscite.",
+  "who_it_affects": "Residents of 19 barangays in Maguindanao del Norte"
+ },
+ "views": {
+  "simple": "Creates the Municipality of Nuling from 19 barangays of Sultan Kudarat in Maguindanao del Norte, subject to ratification by plebiscite, with appointed first officials and ₱2.5 million monthly support until its tax share arrives.",
+  "official": "AN ACT CREATING THE MUNICIPALITY OF NULING IN THE PROVINCE OF MAGUINDANAO DEL NORTE, PROVIDING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 53, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

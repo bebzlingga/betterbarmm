@@ -1,179 +1,352 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 13,
-    "short_title": "Bangsamoro Administrative Code",
-    "official_title": "AN ACT PROVIDING FOR THE BANGSAMORO ADMINISTRATIVE CODE",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2020-10-28",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Provides for the Bangsamoro Administrative Code.",
-    "why_was_it_proposed": "Foundational 'constitution-in-practice' of the regional bureaucracy; most-amended BAA (BAA 37, 93/94, plus multiple pending bills).",
-    "what_will_change": "Provides for the Bangsamoro Administrative Code.",
-    "who_will_be_affected": [
-      "Anyone transacting with government",
-      "Civil-society & researchers",
-      "Local officials"
-    ],
-    "when_will_it_take_effect": "Ratified 2020-10-28; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "The Administrative Code is the operating manual of the Bangsamoro Government: it defines every ministry and office, their powers, and how they must deal with you. Whenever you transact with any BARMM office - permits, IDs, complaints, appeals - this law is the rulebook behind the counter.",
-      "in_practice": [
-        "Names the ministries and what each is responsible for, so you know which door to knock on",
-        "Sets the chain of authority - who can decide, who can be appealed to",
-        "Later laws keep amending it (seat of government, SGA authority), so always check the current consolidated text"
-      ],
-      "for_specific_groups": {
-        "Anyone transacting with government": "Defines your right to be served by a designated, accountable office",
-        "Civil-society & researchers": "The map of the whole bureaucracy in one law",
-        "Local officials": "Defines how BARMM relates to provinces, cities, and municipalities"
-      },
-      "where_this_applies": "All of BARMM unless the title names a specific place",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [
-        "Already amended by BAA 37, 93, 94 - read the consolidated text"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Clearer government = claimable service standards.",
-        "direct_benefits": [
-          {
-            "benefit": "Know exactly which ministry owes you which service - the basis of every complaint and follow-up",
-            "who_gets_it": "Anyone transacting with the Bangsamoro Government",
-            "how_to_access": "Cite the ministry's mandate under the Administrative Code"
-          },
-          {
-            "benefit": "Appeal routes: decisions can be elevated along the chain the Code defines",
-            "who_gets_it": "Aggrieved citizens",
-            "how_to_access": "File with the office's next-level authority"
-          }
-        ],
-        "indirect_benefits": [
-          "A professional bureaucracy instead of ad-hoc offices"
-        ],
-        "limitations": [
-          "Benefits are procedural - the Code enables claims, it doesn't hand out programs"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 13,
+  "short_title": "Bangsamoro Administrative Code",
+  "official_title": "AN ACT INSTITUTING THE ADMINISTRATIVE CODE OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2020-10-28",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Second Regular Session, begun 29 March 2019",
+  "date_passed": "2020-10-28",
+  "date_approved_by_chief_minister": "2020-11-09",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Government employees",
-      "Public-service users"
-    ],
-    "impact_tags": [
-      "governance_civil_service",
-      "priority_code"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2020-10-28"
-    }
+  "origin_bills": "Bill No. 60",
+  "effectivity": "15 days after publication in a newspaper of general or regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "The organisation chart of the Bangsamoro Government in statute — every ministry, office, council and attached agency, what each is for, and how they relate to each other and to national agencies still operating in the region.",
+  "why_was_it_proposed": "A government created in 2019 had to be built. This Code assembles it in one instrument: 15 ministries, the Office of the Chief Minister and its attached bodies, the intergovernmental machinery with Manila, and the national agencies that continue to operate inside the region.",
+  "what_will_change": "The region gains a permanent administrative architecture — including institutions the national framework has no counterpart for, such as the Darul-Ifta' headed by the Bangsamoro Mufti and the Bangsamoro Pilgrimage Authority for Hajj and Umrah — while policing, jails, fire protection and the coast guard remain national services the Code recognises rather than creates.",
+  "who_will_be_affected": [
+   "Anyone dealing with a Bangsamoro ministry, office or attached agency",
+   "Pilgrims travelling for Hajj and Umrah",
+   "Cooperatives and social enterprises, which register with a single regional authority",
+   "Settler communities and Bangsamoro communities living outside the region, each with a dedicated office",
+   "Investors, through the Bangsamoro Board of Investments and its tax incentives",
+   "Constituent LGUs, bound by the 5% gender and development budget floor"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [
-      "BAA 37",
-      "BAA 93",
-      "BAA 94"
+  "when_will_it_take_effect": "In force since 2020 — approved by the Chief Minister on 9 November 2020, effective 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. This is the map of who does what in the regional government. The practical parts for ordinary people: which ministry handles your concern, a Darul-Ifta' that declares the start and end of Ramadan, a Pilgrimage Authority that cannot force you to buy your Hajj package from it, and an official logbook in every office that is open to the public.",
+   "in_practice": [
+    "15 ministries, each with a Minister, a Deputy Minister and career Directors-General",
+    "The Bangsamoro Darul-Ifta', headed by the Mufti with 6 ulama — one for each province and one for the Special Geographic Area, chosen by consultative process (mashuwarah)",
+    "The Mufti declares the start and end of Ramadan fasting, Eid'l Fit'r and Eid'l Adha",
+    "A Bangsamoro Pilgrimage Authority with primary jurisdiction over Hajj and Umrah",
+    "Pilgrims get free choice of travel agencies and airlines, and can never be forced to buy supplies from the Authority or its agents",
+    "A Cooperatives and Social Enterprise Authority as the sole registrar of cooperatives in the region",
+    "Offices dedicated to settler communities and to Bangsamoro communities living outside the region",
+    "Every ministry keeps an official logbook of final acts and decisions, open to the public",
+    "At least 5% of every ministry's, office's and constituent LGU's budget goes to gender-responsive programmes",
+    "The Chief Minister may proclaim a state of calamity, opening the way to domestic and international humanitarian assistance"
+   ],
+   "for_specific_groups": {
+    "Pilgrims": "The Pilgrimage Authority may collect only mutawiff and passporting or processing fees, deposited in a special trust fund. You keep free choice of travel agency, airline and supplier, and in no instance may you be forced to buy logistics, materials or supplies from the Authority or its authorised agents.",
+    "Cooperatives and social enterprises": "The Cooperatives and Social Enterprise Authority is the sole agency registering you, and is directed to promote cooperatives as pathways to reintegrate former combatants, surrenderees and disaster-affected communities.",
+    "Settler communities": "The Office for Settler Communities is your primary channel to the Bangsamoro Government, and both its Executive Director and Deputy must themselves be members of settler communities.",
+    "Bangsamoro living outside the region": "The Office for Other Bangsamoro Communities exists to assess your needs and recommend programmes for your welfare, coordinating with LGUs and national agencies where you live.",
+    "Investors": "The Bangsamoro Board of Investments evaluates incentives including income tax holidays, reduced income tax and special tax credits, and prepares a Regional Investment Priorities Plan integrated into the national plan on the President's approval.",
+    "People with complaints against police or soldiers": "The Bangsamoro Regional Peace and Order Council receives complaints against government personnel, civilian or military, endorses them to the agency concerned, and can demand a report on the action taken.",
+    "Employees and job seekers": "Relatives within the 4th civil degree of the Chief Minister, Deputy Chief Ministers, the Speaker, Ministers or their deputies cannot be appointed to positions where those officials are the appointing authority, except primarily confidential ones.",
+    "Anyone in a dispute with a government agency": "Disputes between Bangsamoro agencies are settled by the Bangsamoro Attorney-General, whose ruling is conclusive and binding; appeal lies to the Chief Minister only where the claim exceeds ₱1,000,000."
+   },
+   "where_this_applies": "All ministries, agencies, commissions, bureaus and offices of the BARMM.",
+   "when_you_will_feel_it": "In force since 2020, and progressively amended — BAA 82 repealed much of its labour title, BAA 64 its indigenous peoples' title, and BAA 93 and 94 amend it further.",
+   "what_you_can_do": [
+    "Ask which ministry handles your concern — the Code assigns every function to a named ministry",
+    "Ask to see an office's official logbook; it records all final official acts and decisions and is open to the public",
+    "For Hajj or Umrah, deal with the Bangsamoro Pilgrimage Authority and insist on your free choice of agency, airline and supplier",
+    "Register a cooperative or social enterprise with the Cooperatives and Social Enterprise Authority",
+    "Bring peace and order complaints, including against military or police personnel, to the Bangsamoro Regional Peace and Order Council"
+   ],
+   "watch_out_for": [
+    "Policing, jail management, fire protection and coast guard services are national. The Code recognises the establishment of regional offices by the PNP, BJMP, BFP and Coast Guard, all under national operational control. The Chief Minister is consulted on the Police Regional Director's appointment and on police matters, but does not command them.",
+    "The Bangsamoro Electoral Office sits under the Commission on Elections' supervision and control, funded from COMELEC's budget.",
+    "The Chief Minister holds continuing authority to reorganise executive offices — abolishing, consolidating or merging units and transferring whole agencies between ministries — without returning to Parliament.",
+    "Senior officials of the Office of the Chief Minister, including the Attorney-General, hold office coterminous with the appointing Chief Minister.",
+    "Contracts above ₱5,000,000 are executed by the Chief Minister; those at ₱5,000,000 and below by the Minister or agency head with Cabinet approval.",
+    "This registry has read pages 1–94 and 192–207 of the 207-page Code. Pages 95–191, covering the individual mandates of Titles VI to XVII, were not read — see the note in implementation status."
+   ],
+   "key_terms_explained": {
+    "Wali": "The ceremonial head of the Bangsamoro Autonomous Region, distinct from the Chief Minister who heads the government.",
+    "Darul-Ifta'": "The office of Islamic legal opinion. Here it is the consultative body for policy-making through Islamic jurisprudence, attached to the Office of the Chief Minister.",
+    "Mufti": "The scholar who heads the Darul-Ifta' and issues fatawa. The Bangsamoro Mufti also declares the start and end of Ramadan and the two Eids.",
+    "Fatwa": "A religious edict or legal opinion in Islamic jurisprudence. Plural: fatawa.",
+    "Mashuwarah": "Consultative process. The Darul-Ifta's provincial representatives are selected this way.",
+    "Mutawiff": "The guide who assists pilgrims during Hajj. One of only two fees the Pilgrimage Authority may collect.",
+    "Supervision and control": "The strongest administrative relationship — authority to act directly, reverse or modify a subordinate's decisions, and set priorities.",
+    "Administrative supervision": "A weaker relationship — general oversight and reporting, but no interference in day-to-day work and no power to reverse a regulatory agency's quasi-judicial decisions.",
+    "Attachment": "The loosest relationship — lateral coordination for policy purposes, usually through a seat on the attached body's governing board.",
+    "IGRB": "Intergovernmental Relations Body — the mechanism through which the Bangsamoro and National Governments resolve issues between them.",
+    "BAGO": "Bangsamoro Attorney-General's Office — the government's law office, ex officio legal adviser to all regional government corporations."
+   },
+   "status_note": "Passed 28 October 2020 and approved by the Chief Minister on 9 November 2020.",
+   "benefits": {
+    "headline": "A complete governmental architecture in one instrument — 15 ministries, the intergovernmental machinery with Manila, and distinctly Bangsamoro institutions the national framework has no counterpart for.",
+    "direct_benefits": [
+     {
+      "benefit": "A Darul-Ifta' issuing fatawa, promoting intra- and inter-religious dialogue, and coordinating Ramadan moon-sighting with Southeast Asian Muslim countries",
+      "who_gets_it": "Muslims across the region",
+      "how_to_access": "Book IV, Sections 52 to 56 — the Mufti declares the start and end of Ramadan, Eid'l Fit'r and Eid'l Adha"
+     },
+     {
+      "benefit": "A Pilgrimage Authority with fee caps, a special trust fund, and a guarantee of free choice of agency, airline and supplier",
+      "who_gets_it": "Hajj and Umrah pilgrims from the region",
+      "how_to_access": "Book IV, Sections 43 to 46"
+     },
+     {
+      "benefit": "A single regional registrar for cooperatives and social enterprises, with mediation and arbitration services",
+      "who_gets_it": "Cooperatives, social enterprises and their members",
+      "how_to_access": "Book IV, Sections 57 to 65"
+     },
+     {
+      "benefit": "A dedicated office for settler communities, headed by members of those communities",
+      "who_gets_it": "Settlers in the region",
+      "how_to_access": "Book IV, Sections 35 to 38"
+     },
+     {
+      "benefit": "An office for Bangsamoro communities living outside the region",
+      "who_gets_it": "Bangsamoro outside the BARMM",
+      "how_to_access": "Book IV, Sections 5 to 8"
+     },
+     {
+      "benefit": "At least 5% of every ministry's, office's and constituent LGU's budget for gender-responsive programmes, plus 5% to 30% of official development assistance",
+      "who_gets_it": "Women and gender programmes across the region",
+      "how_to_access": "Title XVIII, Section 30, with the Women Commission establishing consultation mechanisms"
+     },
+     {
+      "benefit": "An official logbook in every ministry, bureau and office, open to the public",
+      "who_gets_it": "Anyone checking when an official act was actually done",
+      "how_to_access": "Book V, Section 18 — the date and time recorded there is controlling"
+     },
+     {
+      "benefit": "Investment incentives including income tax holidays, reduced income tax and special tax credits",
+      "who_gets_it": "Enterprises registering with the Bangsamoro Board of Investments",
+      "how_to_access": "Book IV, Sections 25 to 30"
+     },
+     {
+      "benefit": "Free library services and a regional repository of laws, records and reports",
+      "who_gets_it": "The public, researchers and LGUs",
+      "how_to_access": "The Bangsamoro Library and Archives, including a children's library"
+     }
     ],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Multiple ministries (code-dependent)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2020-10-28 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Multiple ministries (code-dependent) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 13",
-    "line2": "Bangsamoro Administrative Code",
-    "badges": [
-      "ENACTED",
-      "Priority Code",
-      "2020"
+    "indirect_benefits": [
+     "A Bangsamoro Attorney-General's Office settling inter-agency disputes without litigation",
+     "A Development Academy of the Bangsamoro training the regional workforce",
+     "Satellite coordinating offices for mainland and island provinces, and a liaison office in Metro Manila",
+     "A Disaster Risk Reduction and Management Council chaired by the Chief Minister, who may proclaim a state of calamity",
+     "A Peace and Order Council that can demand reports on complaints against civilian or military personnel",
+     "At least 1 seat for the Bangsamoro Government on the boards of government corporations operating substantially in the region"
     ],
-    "what_this_does": "Provides for the Bangsamoro Administrative Code.",
-    "who_it_affects": "Government employees · Public-service users",
-    "effective": "2020-10-28"
-  },
-  "views": {
-    "simple": "Provides for the Bangsamoro Administrative Code.",
-    "official": "AN ACT PROVIDING FOR THE BANGSAMORO ADMINISTRATIVE CODE"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "limitations": [
+     "Policing, jails, fire protection and coast guard remain under national control.",
+     "The electoral office is a COMELEC unit, not a regional one.",
+     "The Chief Minister can restructure the executive without legislation.",
+     "The Code sets structure, not entitlements — most citizen rights come from the sectoral codes built on top of it."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The Code organises government rather than imposing duties on the public."
+    ],
+    "for_government": [
+     "Each Cabinet Minister administers their ministry, promulgates rules, exercises discipline, and submits an annual performance evaluation report to the Chief Minister",
+     "Administrative issuances affecting the public must be published before taking effect, with copies furnished to the Attorney-General's Office and the Library and Archives",
+     "Every ministry, commission, bureau, office and agency keeps a public logbook of final official acts, decisions, transactions and contracts",
+     "Government corporations attached to a ministry submit audited financial statements by 15 January each year",
+     "All ministries notify the Attorney-General of any litigation within 3 days, and no case may be filed for the Bangsamoro Government without prior notice to that office",
+     "Fees, charges, levies, taxes and other income collected by income-generating agencies and corporations are remitted to the Bangsamoro Treasury Office"
+    ]
+   },
+   "what_is_prohibited": [
+    "Appointing the spouse or a relative within the 4th civil degree of the Chief Minister, a Deputy Chief Minister, the Speaker, a Cabinet Minister or their deputies to a position of which those officials are the appointing authority, except primarily confidential positions.",
+    "Forcing pilgrims to purchase logistics, materials or supplies from the Pilgrimage Authority or its authorised agents.",
+    "Collecting pilgrimage fees beyond mutawiff and passporting or processing fees.",
+    "Prescribing penalties in a ministry's administrative issuances, except where expressly authorised by law.",
+    "Awarding a deed or contract conveying title to real estate other than through public bidding.",
+    "The Code creates no criminal offence of its own."
+   ],
+   "penalties": {
+    "for_citizens": "None. The Code creates no offence, fine or imprisonment. Administrative issuances of ministries may not prescribe penalties except where a law expressly authorises it.",
+    "officials": "Liability runs through the civil service and anti-graft laws rather than this Code. Officers of the Attorney-General's Office acting in good faith are protected from personal liability."
+   },
+   "where_to_complain": {
+    "first_stop": "The ministry with jurisdiction over the subject — the Code assigns every function to a named ministry",
+    "peace_and_order": "The Bangsamoro Regional Peace and Order Council, which receives complaints against government personnel, civilian or military, and can demand a report on the action taken",
+    "police_conduct": "The National Police Commission Bangsamoro Regional Office, which investigates complaints against members of the Police Regional Office, with appeal to NAPOLCOM",
+    "inter_agency": "The Bangsamoro Attorney-General settles disputes between government offices; the ruling is conclusive and binding, with appeal to the Chief Minister only where the claim exceeds ₱1,000,000",
+    "note": "Human rights complaints go to the Bangsamoro Human Rights Commission under BAA 4."
+   },
+   "everyday_scenarios": [
+    "A family preparing for Hajj is told they must buy their supplies through an accredited agent. The Code says in no instance shall pilgrims be forced to purchase logistics, materials and supplies from the Authority or its authorised agents, and guarantees free choice of travel agency and airline.",
+    "A community wants to know when Ramadan begins. The Bangsamoro Mufti declares the start and end of Ramadan fasting, including Eid'l Fit'r and Eid'l Adha, with moon-sighting information exchanged among nearby Southeast Asian Muslim countries.",
+    "A group of former combatants wants to form a cooperative. The Cooperatives and Social Enterprise Authority is the sole registering agency and is expressly directed to promote cooperatives as pathways to reintegrate former combatants and surrenderees.",
+    "2 ministries deadlock over a contract. The Bangsamoro Attorney-General settles it, and the ruling binds both — appeal to the Chief Minister is available only if the claim exceeds ₱1 million.",
+    "A resident disputes when a permit was actually approved. Every office keeps an official logbook of final acts open to the public, and the date and time recorded there is controlling."
+   ]
   }
+ },
+ "key_provisions": [
+  "Introductory Provisions and Book I (Bangsamoro Autonomy and Administration) — Establishes the Code as the administrative charter of the region, covering territory, symbols, the operation and effect of laws, weights and measures, public officers, immunity from suit, oaths, and reporting duties.",
+  "Book II (Intergovernmental Relations) — Provides for the Intergovernmental Relations Body and other intergovernmental mechanisms between the Bangsamoro and National Governments, and for the Council of Leaders.",
+  "Book III (The Bangsamoro Autonomous Government) — Title I on the Government itself; Title II on the Wali as ceremonial head of the region; Title III on the Parliament; Title IV on the Cabinet, which enumerates the 15 ministries: Finance, and Budget and Management; Social Services and Development; Trade, Investments, and Tourism; Labor and Employment; Transportation and Communications; Basic, Higher, and Technical Education; Indigenous Peoples' Affairs; Health; Public Works; Interior and Local Government; Environment, Natural Resources, and Energy; Human Settlements and Development; Science and Technology; Agriculture, Fisheries, and Agrarian Reform; and Public Order and Safety. Title V covers the justice system.",
+  "Book IV (Office of the Chief Minister), Titles I–II — The powers of the Chief Minister and the organisation of the Office, including the Bangsamoro Attorney-General's Office. The Attorney-General chairs the Legal Liaison Network of legal officers across all ministries, is the ex officio legal adviser of all regional government corporations, must be notified of all litigation within 3 days, and manages a budget directly transferred to the office. The Senior Minister, Assistant Senior Minister, Chief of Staff, Cabinet Secretary, Assistant Cabinet Secretary, Attorney-General and Assistant Attorney-General all hold office coterminous with the appointing Chief Minister, and are protected from personal liability for official functions done in good faith.",
+  "Book IV, Title II(C) — The Bangsamoro Management Support System comprises the Technical Management Service, Administrative Management Service, Finance Management Service, Intelligence and Security Service, Procurement Service, the Clinic, the Bangsamoro Satellite Coordinating Offices for mainland and island provinces headed by Deputy Chief Ministers, the Bangsamoro Liaison Office in Metro Manila, and the Bangsamoro Library and Archives — which serves as repository of regional records, provides free library services, maintains cooperation with the National Library, and establishes a children's library.",
+  "Book IV, Title III, Chapter 1 — Offices in the Office of the Chief Minister Proper: the Internal Audit Office, the Information and Communications Office, the Legal and Legislative Liaison Office, and the Office for Other Bangsamoro Communities, created to protect the rights and advance the economic, social and cultural development of Bangsamoro people residing outside the region.",
+  "Book IV, Title III, Chapter 2 — Councils in the Office of the Chief Minister: the Bangsamoro Disaster Risk Reduction and Management Council, chaired by the Chief Minister with ministers as vice-chairs for mitigation, preparedness, response and recovery, under which the Chief Minister may proclaim a state of calamity warranting domestic and international humanitarian assistance; the Bangsamoro Economic and Development Council, chaired by the Chief Minister and seating the Speaker, both Floor Leaders, all provincial governors, mayors of independent component and highly urbanised cities, and 5 private sector and civil society representatives, with the planning authority as technical secretariat and 5 sectoral committees; and the Bangsamoro Regional Peace and Order Council, chaired by the Chief Minister with the interior Minister as vice-chair and the Police Regional Director as co-vice-chair, which receives complaints against government personnel, civilian or military, endorses them to the agency concerned and demands a report on action taken.",
+  "Book IV, Title III, Chapter 3 — Attached agencies and offices: the Bangsamoro Board of Investments, exercising the national Board of Investments' powers within the region including approval of registrations, evaluation of incentives such as special tax credits, income tax holidays and reduced income tax, and preparation of a Regional Investment Priorities Plan integrated into the national plan on the President's approval; the Bangsamoro Information Office; the Office for Settler Communities, whose Executive Director and Deputy must both be members of settler communities; the Bangsamoro Planning and Development Authority as counterpart of the national economic planning authority; the Bangsamoro Pilgrimage Authority; the Development Academy of the Bangsamoro; the Bangsamoro Darul-Ifta'; the Cooperatives and Social Enterprise Authority; and the Bangsamoro Information and Communications Technology Office.",
+  "Book IV, Sections 43–46 (Bangsamoro Pilgrimage Authority) — The Bangsamoro Government has primary jurisdiction over Hajj and Umrah matters affecting pilgrims from the region, coordinating closely with the National Commission on Muslim Filipinos so that pilgrims from the Bangsamoro receive the same level of service as those from outside. The Authority processes travel documents, accredits qualified sheikhs, and fixes the annual Hajj timetable subject to the Chief Minister's approval. Collections are limited to mutawiff and passporting or processing fees only, deposited in a special trust fund subject to auditing laws. Pilgrims are accorded free choice of travel agencies, airlines and other transport, and are free to choose where to purchase logistics, materials and supplies: “In no instance shall the pilgrims be forced to purchase such logistics, materials and supplies from the Authority or its authorized agents.”",
+  "Book IV, Sections 52–56 (Bangsamoro Darul-Ifta') — Serves as the consultative body for policy-making through Islamic jurisprudence, attached to the Office of the Chief Minister. It is composed of the Bangsamoro Mufti and 6 duly recognised ulama representing Lanao del Sur including Marawi City, Maguindanao including Cotabato City, Sulu, Basilan including Lamitan City, Tawi-Tawi, and 1 from the Special Geographic Area, selected through a consultative process (mashuwarah). Its powers include promulgating fatawa across the breadth of Islamic jurisprudence, spearheading intra-religious and inter-religious dialogue for peaceful co-existence, serving as consultant to the Office of the Chief Minister on religious affairs, and collaborating on Ramadan moon-sighting information locally and internationally, especially among nearby Southeast Asian Muslim countries. The Mufti presides over sessions, represents the office in promotion of moral governance and inter-religious dialogue, and declares the start and end of Ramadan fasting including Eid'l Fit'r and Eid'l Adha.",
+  "Book IV, Sections 57–65 (Cooperatives and Social Enterprise Authority) — The sole agency registering cooperatives and social enterprises in the region. A social enterprise is defined as a business whose primary purpose is addressing a social, cultural or environmental challenge, with profit secondary, which must have a clear social purpose in its governing documents and re-invest a significant proportion of profits. Among its functions: ensuring marginalised, vulnerable and disabled individuals can participate in the region's socio-economic model, and promoting cooperatives and social enterprises “as pathways to reintegrate former combatants, surrenderees, and disaster-affected communities”. It may mediate and conciliate disputes within or between cooperatives, and assists LGUs lacking their own cooperative development office.",
+  "Book IV, Section 68 — Continuing authority of the Chief Minister to reorganise executive offices: restructuring the internal organisation of the Office of the Chief Minister or a Cabinet Ministry by abolishing, consolidating or merging units or transferring functions; transferring any function to any other ministry or agency; and transferring any agency from one ministry to another.",
+  "Book V (General Functions of the Cabinet) — Executive authority is exercised by the Cabinet headed by the Chief Minister, and Cabinet members' acts in the regular course of business are presumptively executive acts unless disapproved by the Chief Minister. Administrative relationships are defined in 3 grades: supervision and control, administrative supervision, and attachment. Ministers appoint all ministry officers except those vested elsewhere, exercise discipline, and submit annual performance evaluation reports. Each ministry establishes a Recruitment, Selection, Placement and Promotion Board. The spouse and relatives within the 4th civil degree of the Chief Minister, Deputy Chief Ministers, the Speaker, Cabinet Ministers or their deputies may not be appointed to positions of which those officials are the appointing authority, except primarily confidential positions. Administrative issuances take the form of circulars or orders, chronologically numbered, with publication required before those affecting the public take effect. Every ministry, commission, bureau, office or agency keeps an official logbook of all final official acts, decisions, transactions and contracts, in the custody of the chief administrative officer and open to the public, with the date and time recorded there controlling. Conveyances of real estate are awarded through public bidding; contracts above ₱5,000,000 are executed by the Chief Minister and those at ₱5,000,000 and below by the Minister or agency head subject to Cabinet approval. Disputes among government offices and corporations are settled by the Bangsamoro Attorney-General, whose ruling is conclusive and binding, with factual issues referable to an arbitration panel and appeal to the Chief Minister only where the claim or property value exceeds ₱1,000,000.",
+  "Book VI (Ministries and Offices) — Titles I to XV set out the 15 ministries in alphabetical order: I Agriculture, Fisheries and Agrarian Reform; II Basic, Higher and Technical Education; III Environment, Natural Resources and Energy; IV Finance, and Budget and Management; V Health; VI Human Settlements and Development; VII Indigenous Peoples' Affairs; VIII Interior and Local Government; IX Labor and Employment; X Public Order and Safety; XI Public Works; XII Science and Technology; XIII Social Services and Development; XIV Trade, Investments and Tourism; XV Transportation and Communications. Each Title follows the same template — declaration of policy, mandate, powers and functions, the Ministry Proper, Directors-General as highest career officials, structure, sectoral offices and provincial or field offices. Titles XVI and XVII cover the Bangsamoro Human Rights Commission and the Bangsamoro Investment and Appeals Board.",
+  "Book VI, Title XVIII (Administrative Services) — Covers records, budgeting and the fiscal year running 1 January to 31 December, property management, and gender and development. Section 30 requires that “at least 5% (5%) of the total budget appropriation of each ministry, office, and constituent local government unit of the Bangsamoro Autonomous Region shall be set aside for gender-responsive programs, in accordance with a gender and development plan”, and that 5% to 30% of official development assistance received be set aside to complement that allocation, with the Bangsamoro Women Commission establishing consultation mechanisms with women and local communities. Land, buildings, facilities and equipment owned or controlled by the Bangsamoro Government, including those transferred from the defunct autonomous government in Regions IX and XII and offices previously devolved to the former ARMM, remain Bangsamoro Government property.",
+  "Book VI, Title XIX (National Government Agencies in the BARMM) — The Code recognises rather than creates these. The Civil Service Commission for BARMM exercises powers under the Constitution and Executive Order No. 292. The Commission on Elections establishes a Bangsamoro Electoral Office under its own supervision and control, funded from COMELEC's budget. The Philippine National Police establishes a Police Regional Office under its direct operational control and supervision, headed by a Regional Director appointed under RA 6975 upon consultation with the Chief Minister; the National Police Commission establishes a Bangsamoro Regional Office that investigates complaints against members of that Police Regional Office, and “shall consult the Chief Minister on police matters affecting the Police Regional Office in the Bangsamoro Autonomous Region”. Regional offices of the Bureau of Jail Management and Penology, the Bureau of Fire Protection and the Philippine Coast Guard are likewise recognised under national administrative control, as is a regional office of the Bureau of Local Government Finance.",
+  "Book VI, Title XX (Government-Owned or -Controlled Corporations) — Parliament may create corporations in coordination with the National Government under RA 10149 by legislative charter or under the Corporation Code, and may create pioneer firms and other business entities. The Bangsamoro Government has authority and control over corporations operating exclusively in the region after the Intergovernmental Fiscal Policy Board determines their feasibility, and shall be represented on the boards of corporations operating a substantial portion of their business in the region, with at least 1 seat; that Board determines the extent of participation and the Bangsamoro share of operating results.",
+  "Book VII (General Provisions) — The Code applies to all ministries, agencies, commissions, bureaus and offices of the region. Masculine nouns and pronouns include the feminine. Fees, charges, levies, taxes, dues and other income collected by income-generating agencies and government corporations are remitted to the Bangsamoro Treasury Office. Any amendment, revision or repeal of the Code must be made by law enacted by the Bangsamoro Parliament. Repealing and separability clauses follow, and the Code takes effect 15 days after publication in a newspaper of general or regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Anyone dealing with a Bangsamoro ministry or attached agency",
+   "Hajj and Umrah pilgrims",
+   "Cooperatives, social enterprises and former combatants reintegrating through them",
+   "Settler communities and Bangsamoro communities outside the region",
+   "Women, through the 5% gender and development floor",
+   "Investors registering with the Board of Investments"
+  ],
+  "impact_tags": [
+   "governance_civil_service",
+   "priority_code",
+   "islamic_culture_heritage",
+   "local_government",
+   "economy_trade_investment"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "No appropriation of its own — the Code organises government rather than funding a programme",
+  "figures_note": "Key figures: at least 5% of each ministry, office and constituent LGU budget for gender-responsive programmes, plus 5% to 30% of official development assistance; contracts above ₱5,000,000 executed by the Chief Minister; inter-agency disputes appealable to the Chief Minister above ₱1,000,000."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2020-10-28"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2020/12/BAA-13.pdf",
+  "irr": "None required — the Code is self-executing, with amendments to be made only by law enacted by Parliament."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [
+   "BAA 64 (Bangsamoro Indigenous Peoples' Act of 2024) — Title VII on Indigenous Peoples' Affairs repealed or amended where inconsistent",
+   "BAA 82 (Bangsamoro Labor and Employment Code) — parts of Title IX on Labor and Employment repealed or amended",
+   "BAA 93 and BAA 94 — expanding the scope of the Special Geographic Area Development Authority"
+  ],
+  "repeals": "All laws, decrees, orders, rules and regulations inconsistent with the Code",
+  "origin_bill": "Bill No. 60",
+  "related_note": "The Code is the structural foundation the sectoral codes build on. BAA 6 separately legislates the Bangsamoro Economic and Development Council and Planning and Development Authority created here; BAA 17, the Civil Service Code, supplies the personnel rules the Code anticipates; BAA 84, the Budget System Act, replaces its budgeting chapter with a full fiscal system and restates the 5% gender floor; BAA 4 operationalises the Bangsamoro Human Rights Commission covered in Title XVI; BAA 62 invokes Title X for the public order ministry's clan-conflict mandate. National agencies operate under RA 6975, RA 8551, RA 9263, RA 9514 and RA 10149, and investment incentives under Executive Order No. 458 and the Omnibus Investments Code."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "None — the Code organises government rather than funding a programme",
+  "irr_status": "No implementing rules are required. Book VII, Section 4 provides that any amendment, revision or repeal must be made by law enacted by the Bangsamoro Parliament.",
+  "implementing_agency": {
+   "agency": "Office of the Chief Minister and the Bangsamoro Cabinet, with each ministry administering its own Title",
+   "inferred": false
+  },
+  "reading_scope": "PARTIAL READ. This record was written from pages 1–94 and 192–207 of the 207-page enacted text — the Introductory Provisions, Books I through V, Book VI Titles I to V (Agriculture and Agrarian Reform, Education, Environment and Energy, Finance and Budget, and Health), and Book VI Titles XVIII to XX together with Book VII. Pages 95–191, covering the individual mandates and internal structures of Titles VI to XVII (Human Settlements, Indigenous Peoples' Affairs, Interior and Local Government, Labor and Employment, Public Order and Safety, Public Works, Science and Technology, Social Services, Trade, Transportation, and the chapters on the Human Rights Commission and the Investment and Appeals Board) were not read. Those Titles follow the same drafting template as the ministry Titles that were read, and the list of ministries and the Title ordering are taken from Book III and confirmed against cross-references in BAA 62, BAA 64 and BAA 82. Specific provisions within the unread Titles should be checked against the official text.",
+  "note": "Read from the enacted text as signed. Much of the Code has since been overtaken in part: BAA 64 repealed or amended Title VII, BAA 82 repealed parts of Title IX, BAA 84 superseded its budgeting provisions, and BAA 93 and 94 amend it further."
+ },
+ "citizen_questions": [
+  {
+   "q": "How many ministries are there, and what are they?",
+   "a": "15 — Finance and Budget and Management; Social Services and Development; Trade, Investments and Tourism; Labor and Employment; Transportation and Communications; Basic, Higher and Technical Education; Indigenous Peoples' Affairs; Health; Public Works; Interior and Local Government; Environment, Natural Resources and Energy; Human Settlements and Development; Science and Technology; Agriculture, Fisheries and Agrarian Reform; and Public Order and Safety."
+  },
+  {
+   "q": "Does the Bangsamoro Government run the police?",
+   "a": "No. The Code recognises a Police Regional Office established by the Philippine National Police under its direct operational control and supervision. The Regional Director is appointed under national law upon consultation with the Chief Minister, and the National Police Commission must consult the Chief Minister on police matters affecting the region — but command remains national. The same pattern applies to jails, fire protection and the coast guard."
+  },
+  {
+   "q": "Who declares the start of Ramadan?",
+   "a": "The Bangsamoro Mufti, who heads the Darul-Ifta' and declares the start and end of Ramadan fasting including Eid'l Fit'r and Eid'l Adha. The Darul-Ifta' also exchanges moon-sighting information with nearby Southeast Asian Muslim countries."
+  },
+  {
+   "q": "Can the Pilgrimage Authority make me buy my Hajj package from them?",
+   "a": "No. Pilgrims are accorded free choice of travel agencies, airlines and other transport, and are free to choose where to buy logistics, materials and supplies. The Code states that in no instance shall pilgrims be forced to purchase these from the Authority or its authorised agents, and limits its collections to mutawiff and passporting or processing fees only."
+  },
+  {
+   "q": "Where do I register a cooperative?",
+   "a": "The Cooperatives and Social Enterprise Authority, attached to the Office of the Chief Minister, which is the sole agency of the Bangsamoro Government registering cooperatives and social enterprises."
+  },
+  {
+   "q": "Is there an office for settlers?",
+   "a": "Yes. The Office for Settler Communities is the primary agency promoting settlers' welfare and addressing their concerns, and both its Executive Director and Deputy Executive Director must be members of settler communities."
+  },
+  {
+   "q": "What about Bangsamoro living outside the region?",
+   "a": "The Office for Other Bangsamoro Communities, in the Office of the Chief Minister, assesses their economic, social and cultural needs and recommends programmes for their welfare, coordinating with local government units and national agencies where they live."
+  },
+  {
+   "q": "How much of the budget must go to women's programmes?",
+   "a": "At least 5% of the total budget appropriation of each ministry, office and constituent local government unit, under a gender and development plan — plus 5% to 30% of official development assistance received."
+  },
+  {
+   "q": "Can I see a record of an office's decisions?",
+   "a": "Yes. Every ministry, commission, bureau, office and agency keeps an official logbook recording all final official acts, decisions, transactions and contracts in chronological order. It is open to the public, and where the timing of an official act is in issue, the date and time in the logbook is controlling."
+  },
+  {
+   "q": "Can the Chief Minister reorganise the government without Parliament?",
+   "a": "Within the executive, largely yes. The Code gives the Chief Minister continuing authority to restructure the Office of the Chief Minister and Cabinet ministries by abolishing, consolidating or merging units, transferring functions, and moving whole agencies between ministries. Amending the Code itself requires a law enacted by Parliament."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 13",
+  "line2": "Bangsamoro Administrative Code",
+  "badges": [
+   "IN FORCE",
+   "Governance",
+   "2020"
+  ],
+  "what_this_does": "Builds the region's whole government in statute — 15 ministries, the Darul-Ifta', the Pilgrimage Authority, and the national agencies that still operate inside the region.",
+  "who_it_affects": "Everyone dealing with the regional government · pilgrims · cooperatives · settler communities",
+  "effective": "2020-11-09"
+ },
+ "views": {
+  "simple": "The administrative charter of the Bangsamoro Government: 15 ministries and their mandates, the Office of the Chief Minister and its attached bodies, the intergovernmental machinery with Manila, and the rules on administrative relationships, appointments, issuances, contracts and inter-agency disputes. It creates institutions with no national counterpart — the Darul-Ifta' headed by the Mufti who declares Ramadan, a Pilgrimage Authority barred from forcing pilgrims to buy from it, a Cooperatives and Social Enterprise Authority tasked with reintegrating former combatants, and offices for settler communities and for Bangsamoro living outside the region — while recognising that policing, jails, fire protection and the coast guard remain national services.",
+  "official": "AN ACT INSTITUTING THE ADMINISTRATIVE CODE OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 13, enacted text as signed (Parliament's acts index). Pages 1–94 and 192–207 of 207 were read; see reading_scope under implementation status for what was not.",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Section references are quoted from the portions read. Verify against the official copy before citing, particularly for Titles VI to XVII."
+ }
 }

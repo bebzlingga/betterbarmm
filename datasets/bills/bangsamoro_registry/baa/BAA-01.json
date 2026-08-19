@@ -1,165 +1,215 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 1,
-    "short_title": "Adopts the Official Flag of the Bangsamoro Autonomous",
-    "official_title": "AN ACT ADOPTING THE OFFICIAL FLAG OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2019-08-23",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Adopts the Official Flag of the Bangsamoro Autonomous Region in Muslim Mindanao.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Adopts the Official Flag of the Bangsamoro Autonomous Region in Muslim Mindanao.",
-    "who_will_be_affected": [
-      "Employees & students",
-      "Communities"
-    ],
-    "when_will_it_take_effect": "Ratified 2019-08-23; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "An identity law: it defines an official symbol or observance of the Bangsamoro (flag, emblem, hymn, seal, calendar, holidays, or memorials). It doesn't hand out benefits, but it shapes the public face of the region you live in - what flies over government buildings, what days are non-working, how the Bangsamoro story is told.",
-      "in_practice": [
-        "Government offices, schools, and LGUs must use/observe it",
-        "Holiday-related acts affect work and class suspensions region-wide",
-        "Memorial acts create public sites and commemorations"
-      ],
-      "for_specific_groups": {
-        "Employees & students": "Regional holidays and observances flow from these laws",
-        "Communities": "Shared symbols of the autonomy won through the peace process"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Identity, recognition, and (for holiday laws) actual days off.",
-        "direct_benefits": [
-          {
-            "benefit": "Official identity: the symbols/observances of your autonomous region",
-            "who_gets_it": "All residents",
-            "how_to_access": "Public display and observance"
-          }
-        ],
-        "indirect_benefits": [
-          "Cultural pride and the normalization of Bangsamoro identity in public life"
-        ],
-        "limitations": [
-          "Symbolic laws confer no monetary claims"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 1,
+  "short_title": "Official Flag of the Bangsamoro",
+  "official_title": "AN ACT ADOPTING THE OFFICIAL FLAG OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2019-08-23",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "First Regular Session (begun 29 March 2019)",
+  "date_passed": "2019-08-23",
+  "date_approved_by_chief_minister": "2019-08-28",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "other",
-      "symbols_identity"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2019-08-23"
-    }
+  "effectivity": "15 days after publication in a newspaper of regional circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Adopts the official flag of the Bangsamoro — green, white and red bands with a golden crescent and seven-rayed star, and a white kris — and requires government offices and schools across the region to fly it.",
+  "why_was_it_proposed": "The Organic Law (RA 11054), Article II Section 2, allows the region to adopt its own flag as part of its right to self-governance. This act exercises that right and fixes the design so it cannot drift.",
+  "what_will_change": "The region has one official flag with an exact specification — dimensions, hex colours and proportions — and every Bangsamoro office, public office, school, college, university and government corporation is required to display it, alongside the Philippine flag.",
+  "who_will_be_affected": [
+   "All Bangsamoro government offices, including those outside the area of autonomy",
+   "Public offices, government-owned or controlled corporations and other government instrumentalities",
+   "Public and private schools, colleges and universities in the region",
+   "Anyone producing or reproducing the flag, who now has an exact specification to follow"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Office of the Chief Minister",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2019-08-23 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Office of the Chief Minister (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 1",
-    "line2": "Adopts the Official Flag of the Bangsamoro Autonomous",
-    "badges": [
-      "ENACTED",
-      "Symbols Identity",
-      "2019"
+  "when_will_it_take_effect": "In force since 2019 — 15 days after publication in a newspaper of regional circulation.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. The Bangsamoro has an official flag with an exact design, and schools and government offices are required to fly it next to the Philippine flag.",
+   "in_practice": [
+    "Three horizontal bands, each one third: green #009966 on top, white #FFFFFF in the middle, red #FF3333 at the bottom",
+    "A golden #FFD700 crescent and seven-rayed star centred on the white band",
+    "A white kris on the red band, running 60% of the flag's length",
+    "Standard size 3 feet by 5½ feet",
+    "The Philippine flag must always be displayed alongside it"
+   ],
+   "for_specific_groups": {
+    "Schools": "Public and private schools, colleges and universities in the region are required to use and display the flag.",
+    "Government offices": "All Bangsamoro offices, public offices, GOCCs and other instrumentalities must display it — including Bangsamoro offices located outside the region.",
+    "Flag makers and printers": "The act gives exact hex codes and proportions, so a reproduction can be checked against the law.",
+    "Everyone else": "No duty falls on private individuals or businesses."
+   },
+   "where_this_applies": "The BARMM, and Bangsamoro offices outside it.",
+   "when_you_will_feel_it": "In force since 2019.",
+   "what_you_can_do": [
+    "Use the exact colours if you reproduce the flag: green #009966, white #FFFFFF, red #FF3333, gold #FFD700",
+    "Expect to see it flown at your school and at government offices, beside the Philippine flag"
+   ],
+   "watch_out_for": [
+    "The act creates no penalty for failing to display the flag, or for misusing it — the duty is stated without a sanction.",
+    "It sets no rules on desecration, half-masting, or the order of precedence beyond requiring the Philippine flag alongside."
+   ],
+   "key_terms_explained": {
+    "Kris": "The wavy-bladed sword of the region, here a symbol of protection and resistance against oppression, tyranny and injustice.",
+    "Sakina": "Tranquility — the meaning the act gives the white band, along with peace and righteousness.",
+    "Mujahideen": "Those who fought for the recognition of Bangsamoro identity and self-determination; the red band signifies their blood."
+   },
+   "status_note": "Passed 23 August 2019, approved by the Chief Minister on 28 August 2019.",
+   "benefits": {
+    "headline": "A single official flag, specified precisely enough that every copy matches.",
+    "direct_benefits": [
+     {
+      "benefit": "An exact, published design anyone can reproduce correctly",
+      "who_gets_it": "Schools, offices, manufacturers, citizens",
+      "how_to_access": "Section 3 gives dimensions, hex codes and proportions"
+     }
     ],
-    "what_this_does": "Adopts the Official Flag of the Bangsamoro Autonomous Region in Muslim Mindanao.",
-    "who_it_affects": "General public",
-    "effective": "2019-08-23"
-  },
-  "views": {
-    "simple": "Adopts the Official Flag of the Bangsamoro Autonomous Region in Muslim Mindanao.",
-    "official": "AN ACT ADOPTING THE OFFICIAL FLAG OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "A shared symbol of regional identity",
+     "Recognition in law of the region's history and of those who died in the struggle"
+    ],
+    "limitations": [
+     "No funding is appropriated for flags.",
+     "No penalty attaches to non-display or misuse."
+    ]
+   },
+   "your_responsibilities": {
+    "for_government_and_schools": [
+     "Use and display the Bangsamoro Flag",
+     "Always display the Philippine flag alongside it"
+    ],
+    "for_citizens": [
+     "None. The act imposes no duty on private individuals."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences — it does not legislate on desecration or misuse."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment.",
+    "note": "The display duty on offices and schools carries no stated sanction."
+   },
+   "where_to_complain": {
+    "first_stop": "The office or school concerned",
+    "note": "The act names no implementing body and creates no complaints procedure."
+   },
+   "everyday_scenarios": [
+    "A school principal in Sulu orders new flags. Section 3 gives the exact hex codes and the 3-by-5½-foot size, so the order can be specified against the law rather than by eye.",
+    "A barangay office wants to display the Bangsamoro flag alone. The act requires the Philippine flag alongside it.",
+    "A shop sells small souvenir flags. The act expressly allows reproduction in small sizes for ceremonial and symbolic purposes."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Adopts an Official Flag of the BARMM pursuant to Article II, Section 2 of the Organic Law (RA 11054).",
+  "Section 2 — Policy: in exercising its right to self-governance the region is free to adopt a flag reflective of its peoples' identity, history, heritage, struggles and aspiration.",
+  "Section 3 — Design: a standard flag 3 feet by 5½ feet in four colours, carrying a crescent, a seven-rayed star and a kris. The top third is green (#009966) for the Islamic teachings and principles the majority subscribe to; the middle third white (#FFFFFF) for peace, sakina and righteousness; the bottom third red (#FF3333) for the blood of the fallen mujahideen who fought for recognition of identity and self-determination.",
+  "Section 3(d) — The crescent and seven-rayed star sit on the white band in golden yellow (#FFD700) for the bright future ahead. The crescent stands for the principles that guided the struggle; the star's seven rays stand for the seven constituent units — Maguindanao, Lanao del Sur with Marawi City, Basilan with Lamitan City, Sulu, Tawi-Tawi, the City of Cotabato, and the 63 barangays formerly of North Cotabato.",
+  "Section 3(e) — A white kris (#FFFFFF) sits at the centre of the red band, 60% of the flag's length, symbolising the protection and resistance of the Bangsamoro and other indigenous peoples against oppression, tyranny and injustice.",
+  "Section 4 — The flag is to be regarded with utmost respect. The Philippine flag must always be displayed alongside it. All Bangsamoro offices, public and private schools, colleges and universities, public offices, government-owned or controlled corporations and other instrumentalities are required to use and display it, including Bangsamoro offices outside the area of autonomy. It may be used ceremonially and reproduced in small sizes.",
+  "Section 5 — Takes effect 15 days after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Everyone in the BARMM"
+  ],
+  "impact_tags": [
+   "governance_civil_service",
+   "culture_heritage"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": null,
+  "figures_note": "The act appropriates no funds."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2019-08-23"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2020/05/BAA-1.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 7",
+  "related_note": "One of four symbols acts from the first Parliament, with the official emblem (BAA 2), the official hymn (BAA 7) and the Parliament's own seal (BAA 16)."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": null,
+  "irr_status": "None required by the act.",
+  "note": "Read from the enacted text as signed. The signed copy carries a colour plate of the flag as its final page."
+ },
+ "citizen_questions": [
+  {
+   "q": "What do the colours mean?",
+   "a": "Green for the Islamic teachings and principles most of the population subscribe to; white for peace, sakina (tranquility) and righteousness; red for the blood of the fallen mujahideen who fought for recognition of Bangsamoro identity and self-determination."
+  },
+  {
+   "q": "Why seven rays on the star?",
+   "a": "One for each constituent unit of the Bangsamoro territory: Maguindanao, Lanao del Sur with Marawi City, Basilan with Lamitan City, Sulu, Tawi-Tawi, the City of Cotabato, and the 63 barangays formerly part of North Cotabato."
+  },
+  {
+   "q": "Do I have to fly it?",
+   "a": "Not as a private person. The duty falls on Bangsamoro offices, public offices, government corporations and instrumentalities, and on public and private schools, colleges and universities."
+  },
+  {
+   "q": "Can it be flown on its own?",
+   "a": "No. Section 4 requires the Philippine flag always to be displayed alongside it."
+  },
+  {
+   "q": "What are the exact colours?",
+   "a": "Green #009966, white #FFFFFF, red #FF3333, and golden yellow #FFD700 for the crescent and star. The flag is 3 feet by 5½ feet and the kris runs 60% of its length."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 1",
+  "line2": "Official Flag of the Bangsamoro",
+  "badges": [
+   "IN FORCE",
+   "Culture & Heritage",
+   "2019"
+  ],
+  "what_this_does": "Adopts the region's official flag and fixes its exact design, and requires offices and schools to fly it.",
+  "who_it_affects": "Government offices · schools · everyone in the BARMM"
+ },
+ "views": {
+  "simple": "Adopts the Bangsamoro flag — green, white and red with a golden crescent and seven-rayed star and a white kris — and requires offices and schools to display it beside the Philippine flag.",
+  "official": "AN ACT ADOPTING THE OFFICIAL FLAG OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 1, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

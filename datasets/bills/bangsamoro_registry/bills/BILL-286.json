@@ -1,186 +1,204 @@
 {
-  "record_type": "parliament_bill",
-  "basic_information": {
-    "bill_number": 286,
-    "short_title": "Bangsamoro Revenue Code",
-    "official_title": "AN ACT PROVIDING FOR THE REVENUE CODE OF BARMM",
-    "type": "Parliament Bill",
-    "session": "3rd Regular Session (2024-2025)",
-    "date_filed": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "current_status": "(status not captured)",
-    "status_as_of": "2024",
-    "date_approved": null
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Provides for the Revenue Code of BARMM.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note of the bill)",
-    "what_will_change": "Provides for the Revenue Code of BARMM.",
-    "who_will_be_affected": [
-      "All BARMM ministries",
-      "Public programs"
-    ],
-    "when_will_it_take_effect": "Only upon approval by Parliament and effectivity clause; this bill is not yet law",
-    "what_this_means_for_you": {
-      "in_short": "The proposed Bangsamoro Revenue Code - the last of the seven priority codes still unenacted. If passed, it defines the taxes and fees the Bangsamoro Government can collect itself, reducing dependence on the national block grant. For citizens and businesses it will eventually determine regional taxes, incentives, and exemptions.",
-      "in_practice": [
-        "Would establish BARMM's own taxing powers within the Organic Law's limits",
-        "Fiscal self-reliance is the transition's biggest unfinished task - watch this bill",
-        "Business groups should track hearings: rates and incentives are decided here"
-      ],
-      "for_specific_groups": {
-        "Businesses": "Your future regional tax obligations and incentives",
-        "Taxpayers": "Whether BARMM funds itself or stays block-grant-dependent",
-        "The first elected Parliament": "Likely inherits this if unfinished"
-      },
-      "where_this_applies": "All of BARMM unless the title names a specific place",
-      "when_you_will_feel_it": "Not yet - only if and when enacted",
-      "what_you_can_do": [
-        "This is the stage where public input matters most: submit a position paper via the Parliament's 'Call for Position Papers' page",
-        "Attend or watch the committee hearings (schedules are on the Parliament site; many are livestreamed)",
-        "Contact a Member of Parliament - the 'Contact an MP' page lists them - to support, oppose, or suggest changes"
-      ],
-      "watch_out_for": [
-        "Nothing changes yet: a bill has no legal effect until Parliament approves it and it is enacted as a Bangsamoro Autonomy Act. Many bills are revised or merged along the way."
-      ],
-      "key_terms_explained": {
-        "First Reading": "The bill's title is read in plenary and it is referred to a committee - the earliest formal stage.",
-        "Committee stage": "A committee studies the bill, holds hearings, and can rewrite it before plenary debate.",
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
-      },
-      "status_note": "Bill status: (status not captured) (as of 2024).",
-      "benefits": {
-        "headline": "IF ENACTED: fiscal self-reliance - the region funding its own future.",
-        "direct_benefits": [
-          {
-            "benefit": "Clear, predictable regional taxes and incentives set by your own parliament",
-            "who_gets_it": "Businesses and taxpayers",
-            "how_to_access": "Participate in hearings NOW - rates are being decided"
-          },
-          {
-            "benefit": "Revenue that stays home to fund BARMM services",
-            "who_gets_it": "All residents",
-            "how_to_access": "Automatic once collections flow"
-          }
-        ],
-        "indirect_benefits": [
-          "Less dependence on the national block grant strengthens autonomy itself"
-        ],
-        "limitations": [
-          "ALL benefits here are prospective: this is a bill, not a law. Nothing can be claimed unless it is enacted.",
-          "The last unenacted priority code - it may pass to the elected Parliament"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "parliament_bill",
+ "basic_information": {
+  "bill_number": 286,
+  "short_title": "Bangsamoro Revenue Code",
+  "official_title": "AN ACT PROVIDING FOR THE REVENUE CODE OF BARMM",
+  "type": "Parliament Bill",
+  "session": "3rd Regular Session (2024-2025)",
+  "date_filed": "2024-02-28",
+  "current_status": "(status not captured)",
+  "status_as_of": "2024",
+  "date_approved": null
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Provides for the Revenue Code of BARMM.",
+  "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note of the bill)",
+  "what_will_change": "Provides for the Revenue Code of BARMM.",
+  "who_will_be_affected": [
+   "All BARMM ministries",
+   "Public programs"
   ],
-  "impact": {
-    "who_benefits": [
-      "All BARMM ministries",
-      "Public programs"
+  "when_will_it_take_effect": "Only upon approval by Parliament and effectivity clause; this bill is not yet law",
+  "what_this_means_for_you": {
+   "in_short": "The proposed Bangsamoro Revenue Code - the last of the seven priority codes still unenacted. If passed, it defines the taxes and fees the Bangsamoro Government can collect itself, reducing dependence on the national block grant. For citizens and businesses it will eventually determine regional taxes, incentives, and exemptions.",
+   "in_practice": [
+    "Would establish BARMM's own taxing powers within the Organic Law's limits",
+    "Fiscal self-reliance is the transition's biggest unfinished task - watch this bill",
+    "Business groups should track hearings: rates and incentives are decided here"
+   ],
+   "for_specific_groups": {
+    "Businesses": "Your future regional tax obligations and incentives",
+    "Taxpayers": "Whether BARMM funds itself or stays block-grant-dependent",
+    "The first elected Parliament": "Likely inherits this if unfinished"
+   },
+   "where_this_applies": "All of BARMM unless the title names a specific place",
+   "when_you_will_feel_it": "Not yet - only if and when enacted",
+   "what_you_can_do": [
+    "This is the stage where public input matters most: submit a position paper via the Parliament's 'Call for Position Papers' page",
+    "Attend or watch the committee hearings (schedules are on the Parliament site; many are livestreamed)",
+    "Contact a Member of Parliament - the 'Contact an MP' page lists them - to support, oppose, or suggest changes"
+   ],
+   "watch_out_for": [
+    "Nothing changes yet: a bill has no legal effect until Parliament approves it and it is enacted as a Bangsamoro Autonomy Act. Many bills are revised or merged along the way."
+   ],
+   "key_terms_explained": {
+    "First Reading": "The bill's title is read in plenary and it is referred to a committee - the earliest formal stage.",
+    "Committee stage": "A committee studies the bill, holds hearings, and can rewrite it before plenary debate.",
+    "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
+   },
+   "status_note": "Bill status: (status not captured) (as of 2024).",
+   "benefits": {
+    "headline": "IF ENACTED: fiscal self-reliance - the region funding its own future.",
+    "direct_benefits": [
+     {
+      "benefit": "Clear, predictable regional taxes and incentives set by your own parliament",
+      "who_gets_it": "Businesses and taxpayers",
+      "how_to_access": "Participate in hearings NOW - rates are being decided"
+     },
+     {
+      "benefit": "Revenue that stays home to fund BARMM services",
+      "who_gets_it": "All residents",
+      "how_to_access": "Automatic once collections flow"
+     }
     ],
-    "impact_tags": [
-      "budget_appropriations"
+    "indirect_benefits": [
+     "Less dependence on the national block grant strengthens autonomy itself"
     ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Beneficiary/budget figures are only shown when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed",
-      "reached": true,
-      "date": "2024"
-    },
-    {
-      "stage": "First Reading",
-      "reached": false,
-      "date": null
-    },
-    {
-      "stage": "Second Reading - Committee",
-      "reached": false,
-      "date": null
-    },
-    {
-      "stage": "Second Reading - Plenary",
-      "reached": false,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": false,
-      "date": null
-    },
-    {
-      "stage": "Approved by Parliament",
-      "reached": false,
-      "date": null
-    },
-    {
-      "stage": "Enacted (BAA)",
-      "reached": false,
-      "date": null
-    }
-  ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "sponsor": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Listed on the bill's official page under General Information."
-  },
-  "related_documents": {
-    "original_bill_pdf": "On the bill's official page",
-    "committee_report": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "approved_version": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "irr": null
-  },
-  "related_legislation": {
-    "amends": [],
-    "repeals": [],
-    "related_bills": []
-  },
-  "implementation_status": {
-    "law_enacted": false,
-    "note": "Not applicable - bill not yet enacted."
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this already a law?",
-      "a": "Not yet - it is at the '(status not captured)' stage (as of 2024)."
-    },
-    {
-      "q": "How can I support or oppose this bill?",
-      "a": "Submit a position paper via the Parliament's Call for Position Papers page, or attend/watch the responsible committee's public hearings."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "The bill's page on parliament.bangsamoro.gov.ph (Bills index) links the PDF and legislative history."
-    }
-  ],
-  "display_header": {
-    "line1": "Parliament Bill No. 286",
-    "line2": "Bangsamoro Revenue Code",
-    "badges": [
-      "(STATUS NOT CAPTURED)",
-      "Budget Appropriations",
-      "2024"
-    ],
-    "what_this_does": "Provides for the Revenue Code of BARMM.",
-    "who_it_affects": "All BARMM ministries · Public programs"
-  },
-  "views": {
-    "simple": "Provides for the Revenue Code of BARMM.",
-    "official": "AN ACT PROVIDING FOR THE REVENUE CODE OF BARMM"
-  },
-  "implementing_agency_if_enacted": {
-    "agency": "MFBM",
-    "inferred": true
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "limitations": [
+     "ALL benefits here are prospective: this is a bill, not a law. Nothing can be claimed unless it is enacted.",
+     "The last unenacted priority code - it may pass to the elected Parliament"
+    ]
+   }
   }
+ },
+ "key_provisions": [
+  "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ ],
+ "impact": {
+  "who_benefits": [
+   "All BARMM ministries",
+   "Public programs"
+  ],
+  "impact_tags": [
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": null,
+  "figures_note": "Beneficiary/budget figures are only shown when stated in official documents; none captured for this record."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed",
+   "reached": true,
+   "date": "2024"
+  },
+  {
+   "stage": "First Reading",
+   "reached": false,
+   "date": "2024-02-28"
+  },
+  {
+   "stage": "Second Reading - Committee",
+   "reached": false,
+   "date": "2024-02-29"
+  },
+  {
+   "stage": "Second Reading - Plenary",
+   "reached": false,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": false,
+   "date": null
+  },
+  {
+   "stage": "Approved by Parliament",
+   "reached": false,
+   "date": null
+  },
+  {
+   "stage": "Enacted (BAA)",
+   "reached": false,
+   "date": null
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": [
+   "Government of the Day"
+  ],
+  "co_authors": [
+   "LOONG, DON MUSTAPHA A.",
+   "PIANG, RAMON A., SR.",
+   "JIKIRI, SARIPUDDIN D.",
+   "ANAYATIN, SUSANA S.",
+   "LOONG, BENJAMIN T.",
+   "ASNAWIE, DAN S.",
+   "BAYAM, ZULFIKAR-ALI S.",
+   "PARCASIO, RANDOLPH C.",
+   "KARON, FAIZAL G.",
+   "ABAS, AKMAD I."
+  ],
+  "sponsor": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": [
+   "Committee on Finance, Budget, and Management",
+   "Committee on Ways and Means"
+  ],
+  "note": "Authors, committee referrals and dates are taken from Parliament's own bills index (parliament.bangsamoro.gov.ph/bills/), which reflects the measure as it stood at capture.",
+  "committee_report": "Committee Report No. 175 RE: Bill No. 286 Adopted – 10/29/2025 (Resumption)"
+ },
+ "related_documents": {
+  "original_bill_pdf": "On the bill's official page",
+  "committee_report": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "approved_version": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "irr": null,
+  "official_page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-revenue-code-of-the-bangsamoro-autonomous-region-in-muslim-mindanao-appropriating-funds-therefor-and-for-other-purposes/"
+ },
+ "related_legislation": {
+  "amends": [],
+  "repeals": [],
+  "related_bills": []
+ },
+ "implementation_status": {
+  "law_enacted": false,
+  "note": "Not applicable - bill not yet enacted."
+ },
+ "citizen_questions": [
+  {
+   "q": "Is this already a law?",
+   "a": "Not yet - it is at the '(status not captured)' stage (as of 2024)."
+  },
+  {
+   "q": "How can I support or oppose this bill?",
+   "a": "Submit a position paper via the Parliament's Call for Position Papers page, or attend/watch the responsible committee's public hearings."
+  },
+  {
+   "q": "Where do I read the full text?",
+   "a": "The bill's page on parliament.bangsamoro.gov.ph (Bills index) links the PDF and legislative history."
+  }
+ ],
+ "display_header": {
+  "line1": "Parliament Bill No. 286",
+  "line2": "Bangsamoro Revenue Code",
+  "badges": [
+   "(STATUS NOT CAPTURED)",
+   "Budget Appropriations",
+   "2024"
+  ],
+  "what_this_does": "Provides for the Revenue Code of BARMM.",
+  "who_it_affects": "All BARMM ministries · Public programs"
+ },
+ "views": {
+  "simple": "Provides for the Revenue Code of BARMM.",
+  "official": "AN ACT PROVIDING FOR THE REVENUE CODE OF BARMM"
+ },
+ "implementing_agency_if_enacted": {
+  "agency": "MFBM",
+  "inferred": true
+ },
+ "provenance": {
+  "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
+  "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+ }
 }

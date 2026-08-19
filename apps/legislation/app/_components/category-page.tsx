@@ -1,6 +1,5 @@
 import type { CategorySlug } from '../_lib/categories'
 import { getDataset } from '../_lib/legislation-data'
-import { getMembersDataset } from '../_lib/members-data'
 import { AwaitingData } from './awaiting-data'
 import { PageHeader } from './page-header'
 import { RecordBrowser } from './record-browser'
@@ -31,11 +30,6 @@ export function CategoryPage({ slug }: { slug: CategorySlug }) {
 	const dataset = getDataset(slug)
 	const { category, metadata } = dataset
 
-	// Authors are written in roster form on every measure, so a lookup keyed
-	// that way lets the record dialog link each name to its profile.
-	const memberSlugs = Object.fromEntries(
-		getMembersDataset().members.map((member) => [member.rosterName.toUpperCase(), member.slug]),
-	)
 	const isLive = dataset.records.length > 0
 	const headline = splitHeadline(category.blurb)
 
@@ -59,7 +53,7 @@ export function CategoryPage({ slug }: { slug: CategorySlug }) {
 
 			{isLive ? (
 				<>
-					<RecordBrowser dataset={dataset} memberSlugs={memberSlugs} />
+					<RecordBrowser dataset={dataset} />
 
 					{metadata.knownGaps.length > 0 ? (
 						<section className='mx-auto max-w-[88rem] px-6 pb-16 lg:px-8'>

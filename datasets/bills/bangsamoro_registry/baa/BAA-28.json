@@ -1,200 +1,212 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 28,
-    "short_title": "an Act Upgrading the Sulu Provincial Hospital Into a Level Ii Hospital Act",
-    "official_title": "AN ACT UPGRADING THE SULU PROVINCIAL HOSPITAL INTO A LEVEL II HOSPITAL (200-BED)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2022-06-16",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Upgrades the Sulu Provincial Hospital Into a Level II Hospital (200-BED).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Upgrades the Sulu Provincial Hospital Into a Level II Hospital (200-BED).",
-    "who_will_be_affected": [
-      "Residents of Sulu",
-      "Pregnant women",
-      "Senior citizens & PWDs",
-      "Health workers"
-    ],
-    "when_will_it_take_effect": "Ratified 2022-06-16; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Upgrades a public hospital serving Sulu (200 beds). For nearby families this means emergency and inpatient care closer to home instead of long, costly trips to distant referral hospitals.",
-      "in_practice": [
-        "More beds means fewer 'no vacancy' referrals and less floor-space crowding during outbreaks",
-        "A higher hospital level allows more services on-site: surgery, specialist clinics, better laboratory and imaging, more doctors and nurses on the plantilla",
-        "PhilHealth-accredited services expand with the facility's level, lowering out-of-pocket costs",
-        "Construction, staffing, and supplies take time after enactment - upgrades typically roll out over one or more budget years"
-      ],
-      "for_specific_groups": {
-        "Residents of Sulu": "Shorter travel time in emergencies - often the difference between life and death for stroke, hemorrhage, and obstetric cases",
-        "Pregnant women": "Facility-based deliveries and emergency obstetric care become available nearer home",
-        "Senior citizens & PWDs": "Follow-up care and dialysis/maintenance services without long-distance travel",
-        "Health workers": "New plantilla positions (nurses, midwives, med-techs, doctors) usually open when a hospital is created or upgraded - watch the MOH and hospital job postings"
-      },
-      "where_this_applies": "Sulu",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Ask the Ministry of Health (MOH-BARMM) or the hospital chief when the added beds/services actually open"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Closer, bigger, better-equipped public healthcare for Sulu.",
-        "direct_benefits": [
-          {
-            "benefit": "Emergency and inpatient care near home (up to 200 beds) instead of long referral trips",
-            "who_gets_it": "Residents of Sulu",
-            "how_to_access": "Go directly; public hospitals cannot refuse emergencies"
-          },
-          {
-            "benefit": "More services as the hospital's level rises: surgery, laboratory, imaging, specialty clinics",
-            "who_gets_it": "Patients in the catchment area",
-            "how_to_access": "Outpatient department; bring PhilHealth/ID"
-          },
-          {
-            "benefit": "Lower out-of-pocket costs as PhilHealth-accredited services expand with the facility level",
-            "who_gets_it": "PhilHealth members and indigents (automatic UHC coverage)",
-            "how_to_access": "Hospital PhilHealth desk / Malasakit-type assistance where present"
-          },
-          {
-            "benefit": "Safer childbirth: facility-based delivery and emergency obstetric care nearby",
-            "who_gets_it": "Pregnant women",
-            "how_to_access": "Prenatal check-ups at the RHU, delivery at the hospital"
-          },
-          {
-            "benefit": "New jobs: doctors, nurses, midwives, med-techs, admin and support staff",
-            "who_gets_it": "Health professionals and local job seekers",
-            "how_to_access": "Watch MOH-BARMM and hospital postings"
-          }
-        ],
-        "indirect_benefits": [
-          "Decongests referral hospitals for everyone else",
-          "Local economy around the hospital (transport, food, pharmacies)",
-          "Faster outbreak and disaster response capacity in the area"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Bed count on paper becomes real only after construction/hiring - ask the hospital chief for the timeline"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Sets hospital bed capacity: 200-Bed",
-    "Hospital classification: Level II",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 28,
+  "short_title": "Sulu Provincial Hospital Upgrade",
+  "official_title": "AN ACT UPGRADING THE SULU PROVINCIAL HOSPITAL INTO A LEVEL II HOSPITAL, INCREASING ITS BED CAPACITY TO TWO HUNDRED (200), UPGRADING ITS PROFESSIONAL HEALTH CARE SERVICES AND FACILITIES, AUTHORIZING THE INCREASE OF ITS MEDICAL PERSONNEL, AND APPROPRIATING FUNDS THEREFOR",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2022-06-16",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Fourth Regular Session",
+  "date_passed": "2022-06-16",
+  "date_passed_hijri": "Dhu Al-Qa'dah 17, 1443",
+  "date_approved_by_chief_minister": "2022-07-12",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Health workers",
-      "Hospitals",
-      "Patients"
-    ],
-    "impact_tags": [
-      "health",
-      "hospital_health"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2022-06-16"
-    }
+  "effectivity": "15 days after publication in a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Upgrades the Sulu Provincial Hospital to Level II, doubles its beds from 100 to 200, and — unusually for these hospital acts — sets a three-year funding schedule of 40%, 30% and 30% starting in 2022.",
+  "why_was_it_proposed": "To raise the province's main hospital to Level II standards and expand its capacity, with the staffing and facilities to match.",
+  "what_will_change": "Bed capacity doubles to 200 under Level II classification. Professional services, staffing complements and facilities are upgraded to national DOH standards, with additional plantilla positions to be determined and filled.",
+  "who_will_be_affected": [
+   "Residents of Sulu province",
+   "Patients needing Level II care",
+   "Health workers, through the new plantilla positions to be created and filled"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Health (MOH)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2022-06-16 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Health (MOH) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 28",
-    "line2": "an Act Upgrading the Sulu Provincial Hospital Into a Level Ii Hospital Act",
-    "badges": [
-      "ENACTED",
-      "Hospital Health",
-      "2022"
+  "when_will_it_take_effect": "In force since 2022, with funding scheduled across three tranches from calendar year 2022.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. Sulu's provincial hospital doubles to 200 beds at Level II — and this one comes with a payment schedule: 40% in year one, 30% in each of the next two.",
+   "in_practice": [
+    "100 beds becomes 200, at Level II classification",
+    "Professional services, staffing complements and facilities upgraded to national DOH standards",
+    "Additional plantilla positions to be determined and filled on the hospital's recommendation",
+    "Budget apportioned in three tranches from 2022: 40% / 30% / 30%",
+    "Under the direct supervision and control of the Ministry of Health – BARMM"
+   ],
+   "for_specific_groups": {
+    "Patients in Sulu": "Level II services and twice the beds at the province's main hospital.",
+    "Health workers": "Section 3 requires additional plantilla positions to be determined and filled up, following the hospital administration's recommendations.",
+    "Anyone tracking delivery": "Section 5 gives a schedule — the only one of the June 2022 hospital acts to do so alongside BAA 29."
+   },
+   "where_this_applies": "Sulu Provincial Hospital.",
+   "when_you_will_feel_it": "Funding began in calendar year 2022 and ran across three tranches.",
+   "what_you_can_do": [
+    "Ask MOH-BARMM which tranche has been released and what was delivered against it",
+    "Ask about the additional plantilla positions created under Section 3"
+   ],
+   "watch_out_for": [
+    "The tranches are percentages of an amount the act never states.",
+    "No completion deadline for the physical works.",
+    "'Plantilla positions to be created and filled up' depends on the finance ministry's concurrence."
+   ],
+   "key_terms_explained": {
+    "Level II hospital": "A facility with specialist departments beyond basic emergency and general medicine.",
+    "Plantilla position": "A permanent, funded post in the government staffing structure.",
+    "Tranche": "One instalment of a budget released in stages.",
+    "RLED": "Regulation and Licensing Enforcement Division of the regional health ministry."
+   },
+   "status_note": "Passed Dhu Al-Qa'dah 17, 1443 / 16 June 2022, approved by the Chief Minister on 12 July 2022.",
+   "benefits": {
+    "headline": "200 beds at Level II for Sulu's provincial hospital, on a three-year funding schedule.",
+    "direct_benefits": [
+     {
+      "benefit": "Level II services with 200 beds",
+      "who_gets_it": "Residents of Sulu",
+      "how_to_access": "Through the provincial hospital"
+     },
+     {
+      "benefit": "New permanent health posts",
+      "who_gets_it": "Health workers",
+      "how_to_access": "Plantilla positions determined by RLED with MFBM on the hospital's recommendation"
+     }
     ],
-    "what_this_does": "Upgrades the Sulu Provincial Hospital Into a Level II Hospital (200-BED).",
-    "who_it_affects": "Health workers · Hospitals · Patients",
-    "effective": "2022-06-16"
-  },
-  "views": {
-    "simple": "Upgrades the Sulu Provincial Hospital Into a Level II Hospital (200-BED).",
-    "official": "AN ACT UPGRADING THE SULU PROVINCIAL HOSPITAL INTO A LEVEL II HOSPITAL (200-BED)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "A stated funding schedule against which delivery can be measured"
+    ],
+    "limitations": [
+     "The act names no peso amount, so the percentages have no base.",
+     "No completion deadline."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "Sulu Provincial Hospital administration",
+    "oversight": "Ministry of Health – BARMM, which has direct supervision and control and whose Minister issues implementing orders in consultation with hospital management",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A patient in Jolo needing specialist care that previously meant leaving the province should find it at the upgraded provincial hospital.",
+    "A nurse asks whether new permanent posts exist. Section 3 requires the additional plantilla positions to be determined and filled on the hospital's recommendation."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Upgrades the Sulu Provincial Hospital into a Level II hospital and increases bed capacity from 100 to 200, under the direct supervision and control of the Ministry of Health – BARMM.",
+  "Section 2 — Existing professional health care services, staffing complements and facilities are upgraded accordingly, in compliance with national Department of Health standards.",
+  "Section 3 — The Regulation and Licensing Enforcement Division of MOH-BARMM, coordinating with the Ministry of Finance, and Budget and Management, shall immediately include the operational guidelines of a Level II facility in the Ministry's programme and determine the additional plantilla positions to be created and filled following the recommendations of the hospital administration.",
+  "Section 4 — The Bangsamoro Autonomous Government shall provide the necessary funds for the upgrading and increase in bed capacity.",
+  "Section 5 — Personnel Services and Maintenance and Other Operating Expenses are included in the annual General Appropriations Act of the Bangsamoro. The budget is apportioned in three tranches beginning in calendar year 2022: Year 1 – 40%, Year 2 – 30%, Year 3 – 30%.",
+  "Section 6 — The Minister of MOH-BARMM, in consultation with hospital management, issues the orders, rules and circulars needed to implement the act.",
+  "Section 9 — Takes effect 15 days after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of Sulu province",
+   "Health workers"
+  ],
+  "impact_tags": [
+   "health",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "No amount stated; the budget is apportioned 40% / 30% / 30% across 3 years from 2022.",
+  "figures_note": "Capacity doubles from 100 to 200 beds. The tranche percentages are stated; the underlying amount is not."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2022-06-16"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/08/BAA-28.pdf",
+  "irr": "Orders, rules and circulars to be issued by the MOH Minister under Section 6. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 90",
+  "related_note": "Part of the June 2022 hospital cluster. Shares its three-tranche funding schedule with BAA 29 (Buluan)."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "Scheduled in three tranches from 2022 (40/30/30); no amount stated",
+  "irr_status": "Section 6 directs the MOH Minister to issue implementing orders, rules and circulars in consultation with hospital management.",
+  "note": "Read from the enacted text as signed."
+ },
+ "citizen_questions": [
+  {
+   "q": "How big will the hospital be?",
+   "a": "200 beds, doubled from 100, at Level II classification."
+  },
+  {
+   "q": "Is there a funding schedule?",
+   "a": "Yes — one of only two in the June 2022 hospital cluster. The budget is apportioned in three tranches from calendar year 2022: 40%, then 30%, then 30%."
+  },
+  {
+   "q": "Will there be new jobs?",
+   "a": "Section 3 requires additional plantilla positions to be determined and filled, on the hospital administration's recommendation, by the health ministry's licensing division with the finance ministry."
+  },
+  {
+   "q": "How much money is that in pesos?",
+   "a": "The act does not say. It gives percentages without stating the total."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 28",
+  "line2": "Sulu Provincial Hospital Upgrade",
+  "badges": [
+   "IN FORCE",
+   "Health",
+   "2022"
+  ],
+  "what_this_does": "Upgrades Sulu Provincial Hospital to Level II with 200 beds, funded in three tranches from 2022.",
+  "who_it_affects": "Residents of Sulu · health workers"
+ },
+ "views": {
+  "simple": "Upgrades Sulu Provincial Hospital to Level II and doubles it to 200 beds, with new permanent posts and a three-year funding schedule of 40/30/30 from 2022.",
+  "official": "AN ACT UPGRADING THE SULU PROVINCIAL HOSPITAL INTO A LEVEL II HOSPITAL, INCREASING ITS BED CAPACITY TO TWO HUNDRED (200), UPGRADING ITS PROFESSIONAL HEALTH CARE SERVICES AND FACILITIES, AUTHORIZING THE INCREASE OF ITS MEDICAL PERSONNEL, AND APPROPRIATING FUNDS THEREFOR"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 28, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

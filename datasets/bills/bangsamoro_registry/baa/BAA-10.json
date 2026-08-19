@@ -1,170 +1,262 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 10,
-    "short_title": "Creates and Establishing the Bangsamoro Youth Commission",
-    "official_title": "AN ACT CREATING AND ESTABLISHING THE BANGSAMORO YOUTH COMMISSION",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2020-02-28",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Creates and Establishing the Bangsamoro Youth Commission.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Creates and Establishing the Bangsamoro Youth Commission.",
-    "who_will_be_affected": [
-      "Target sector of the body",
-      "Job seekers",
-      "CSOs"
-    ],
-    "when_will_it_take_effect": "Ratified 2020-02-28; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Creates or strengthens a public institution. New offices sound bureaucratic, but each one is a service window: a place to bring complaints, apply for programs, or get support that previously had no dedicated home in the region.",
-      "in_practice": [
-        "Once organized (leadership appointed, budget released), it opens programs and services",
-        "Look for its office, hotline, or Facebook page under the Bangsamoro Government",
-        "Its mandate defines what you can demand from it"
-      ],
-      "for_specific_groups": {
-        "Target sector of the body": "You gain a dedicated advocate inside government",
-        "Job seekers": "New institutions hire staff",
-        "CSOs": "A formal counterpart for partnership and accountability"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Rights and protection for the covered group.",
-        "direct_benefits": [
-          {
-            "benefit": "A legal entitlement you can invoke at offices, workplaces, or in seeking assistance",
-            "who_gets_it": "The group named in the law",
-            "how_to_access": "Through the mandated ministry; bring proof of status"
-          }
-        ],
-        "indirect_benefits": [
-          "Being named in law shifts you from aid recipient to rights-holder"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service."
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 10,
+  "short_title": "Bangsamoro Youth Commission Act of 2020",
+  "official_title": "AN ACT CREATING AND ESTABLISHING THE BANGSAMORO YOUTH COMMISSION, DEFINING ITS POWERS, FUNCTIONS AND RESPONSIBILITIES, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2020-02-28",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "First Regular Session",
+  "date_passed": "2020-02-28",
+  "date_approved_by_chief_minister": "2020-04-14",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Athletes",
-      "Youth"
-    ],
-    "impact_tags": [
-      "institution_commission",
-      "labor_social",
-      "sports_youth"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2020-02-28"
-    }
+  "effectivity": "15 days after publication in a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates the region's youth commission — the policy body for everyone aged 15 to 40 — with a commissioner seated in every province, scholarships, and a duty to monitor whether ministries deliver on youth policy.",
+  "why_was_it_proposed": "Section 13, Article IX of the Organic Law provides for a youth commission. The act builds it, and adds a distinctly Bangsamoro framing: the role of religion, faith and traditional belief systems in the holistic development of young people.",
+  "what_will_change": "A commission attached to the Office of the Chief Minister becomes the primary policy-making and coordinating body on youth, accrediting youth organisations, granting scholarships, running peace-building programmes, and convening a council that monitors ministry compliance. It abolishes the old Office on Bangsamoro Youth Affairs.",
+  "who_will_be_affected": [
+   "Anyone aged 15 to 40 in the BARMM — the act's definition of youth",
+   "Youth organisations and youth-serving organisations, which the Commission accredits",
+   "Bangsamoro communities outside the BARMM, represented on the youth advisory council",
+   "Non-Moro Indigenous Peoples and settler communities, who hold voting ex-officio seats"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "MOLE / MSSD",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2020-02-28 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "MOLE / MSSD (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 10",
-    "line2": "Creates and Establishing the Bangsamoro Youth Commission",
-    "badges": [
-      "ENACTED",
-      "Institution Commission",
-      "Labor Social",
-      "2020"
+  "when_will_it_take_effect": "In force since 2020 — 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. If you are between 15 and 40 you are 'youth' under this act, there is a commissioner for your province, and the Commission can give scholarships and accredit your organisation.",
+   "in_practice": [
+    "Youth means ages 15 to 40 — a wider definition than the national one",
+    "A Chairperson plus four regular commissioners representing Maguindanao (with Cotabato City and the 63 barangays), Lanao del Sur, Sulu, Basilan and Tawi-Tawi",
+    "Two ex-officio commissioners for Non-Moro Indigenous Peoples and settler communities, both with the right to vote",
+    "At least two of the commissioners must be women",
+    "Each Commissioner keeps an office in the province they represent",
+    "Commissioners must be no more than 40 years old at appointment, and are chosen by the Chief Minister from nominees submitted by youth organisations",
+    "The Commission accredits, registers and oversees youth and youth-serving organisations",
+    "It may grant scholarships, run peace-building programmes and administer youth exchange programmes",
+    "₱30,000,000 total initial funding, released directly to the Commission"
+   ],
+   "for_specific_groups": {
+    "Young people 15–40": "You are within the act's definition of youth, which reaches considerably further than the usual cut-off.",
+    "Youth organisations": "The Commission accredits, registers and oversees you, and organisations at least 3 years old may nominate commissioners.",
+    "Sangguniang Kabataan": "You are expressly convened in the Commission's consultative mechanism with the youth sector.",
+    "Non-Moro Indigenous Peoples and settler communities": "Two ex-officio commissioners represent you, and both have the right to vote.",
+    "Bangsamoro communities outside the BARMM": "You have representation on the youth advisory council the Commission may convene.",
+    "Young women": "At least 2 commissioners must be women, and the women sector is represented on the advisory council."
+   },
+   "where_this_applies": "The whole BARMM, and reaching Bangsamoro communities outside it through the advisory council.",
+   "when_you_will_feel_it": "In force since 2020.",
+   "what_you_can_do": [
+    "Approach your provincial Commissioner — each has an office in the province they represent",
+    "Seek accreditation for your youth organisation",
+    "Ask about scholarship grants and youth exchange programmes",
+    "If your organisation is at least 3 years old, nominate candidates for commissioner"
+   ],
+   "watch_out_for": [
+    "Commissioners are appointed by the Chief Minister, though from lists nominated by youth organisations.",
+    "No member may be appointed or re-appointed more than once, and none may serve in a temporary or acting capacity.",
+    "The Youth Coordinating Council monitors ministry compliance but meets only twice a year, and the act attaches no consequence to non-compliance.",
+    "Sulu appears as a represented subdivision; the region's parliamentary districting acts of 2025 and 2026 no longer include the province."
+   ],
+   "key_terms_explained": {
+    "Youth": "Defined by the act as the period from the onset of adolescence to mature adulthood, comprising ages 15 to 40.",
+    "Youth-serving organisation": "An organisation whose principal programmes are youth-oriented, even if its members are not themselves youth.",
+    "Sangguniang Kabataan": "The barangay youth council under national law.",
+    "Ex-officio": "Holding a seat by virtue of another office. Here both ex-officio commissioners vote.",
+    "Expanded cabinet": "The wider group of officials sitting with the Chief Minister's cabinet; the Chairperson is part of it."
+   },
+   "status_note": "Passed 28 February 2020, approved by the Chief Minister on 14 April 2020.",
+   "benefits": {
+    "headline": "A youth commission with a seat in every province, scholarships, and a monitoring role over ministries.",
+    "direct_benefits": [
+     {
+      "benefit": "A Commissioner with an office in your own province",
+      "who_gets_it": "Young people across the region",
+      "how_to_access": "Section 17 requires a provincial office for each Commissioner"
+     },
+     {
+      "benefit": "Scholarship grants and assistance to deserving youth and youth organisations",
+      "who_gets_it": "Young people and their organisations",
+      "how_to_access": "Section 8(i)"
+     },
+     {
+      "benefit": "Accreditation and oversight of youth organisations",
+      "who_gets_it": "Youth and youth-serving organisations",
+      "how_to_access": "Section 7(d)"
+     },
+     {
+      "benefit": "Youth exchange programmes and international linkages",
+      "who_gets_it": "Young people in the region",
+      "how_to_access": "Sections 8(e) and 8(k)"
+     },
+     {
+      "benefit": "Peace-building activities and programmes",
+      "who_gets_it": "Young people in conflict-affected communities",
+      "how_to_access": "Section 8(j)"
+     }
     ],
-    "what_this_does": "Creates and Establishing the Bangsamoro Youth Commission.",
-    "who_it_affects": "Athletes · Youth",
-    "effective": "2020-02-28"
-  },
-  "views": {
-    "simple": "Creates and Establishing the Bangsamoro Youth Commission.",
-    "official": "AN ACT CREATING AND ESTABLISHING THE BANGSAMORO YOUTH COMMISSION"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "A standing forum for dialogue between government and the youth sector",
+     "A Youth Coordinating Council monitoring ministry compliance with youth policy",
+     "Direct release of the Commission's budget"
+    ],
+    "limitations": [
+     "The Coordinating Council meets only twice a year.",
+     "No sanction attaches to a ministry that ignores youth policy.",
+     "Commissioners are appointed rather than elected by the youth sector."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on young people."
+    ],
+    "for_ministries": [
+     "Implement youth development projects within their annual budgets and comply with youth-related policies, monitored by the Youth Coordinating Council"
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "The Commissioner for your province",
+    "oversight": "Bangsamoro Youth Commission, attached to the Office of the Chief Minister; the Youth Coordinating Council monitors ministry compliance",
+    "note": "The act creates no formal complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A 32-year-old organiser in Basilan assumes youth programmes are not for them. Under this act youth runs to 40, so they are within its scope.",
+    "A student group 3 years old wants a say in who leads the Commission. Organisations of that standing may submit nominees, from which the Chief Minister selects.",
+    "A young person in Tawi-Tawi wants to reach the Commission. Section 17 requires each Commissioner to keep an office in the province they represent."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Youth Commission of the Bangsamoro Autonomous Region in Muslim Mindanao Act of 2020”.",
+  "Section 2 — Policy: promote and protect the physical, moral, spiritual, intellectual and social well-being of the youth, inculcate patriotism and nationalism, and encourage involvement in public and civic affairs. The Bangsamoro Government appreciates the distinctive role of religion, faith or one's traditional belief system in the holistic development of the youth, and shall consistently incorporate the teachings of Islam and other major religions and belief systems in crafting policies affecting the youth.",
+  "Section 3 — Defines youth as the critical period from the onset of adolescence towards the peak of mature, self-reliant and responsible adulthood, comprising ages fifteen to forty, and defines youth organisations, youth groups and youth-serving organisations.",
+  "Sections 4–6 — Creates the Bangsamoro Youth Commission with the same status as other agencies attached to the Office of the Chief Minister, its Chairperson part of the Chief Minister's expanded cabinet. Pursuant to Section 13, Article IX of the Organic Law, it is the primary policy-making and coordinating body of the Bangsamoro Government in all matters affecting the youth, and ensures compliance by all ministries and agencies.",
+  "Section 7 — Powers: lead the formulation of regional youth policies and plans; establish a consultative mechanism providing a forum for continuing dialogue between government and the youth sector, convening all youth organisations including the Sangguniang Kabataan; issue rules; accredit, register and oversee youth and youth-serving organisations; enter contracts; acquire and dispose of property; accept donations, gifts, bequests and grants; and convene a youth advisory council of youth representatives from LGUs, the women sector, civil society organisations, traditional leaders, Bangsamoro communities outside the BARMM, and religious leaders.",
+  "Section 8 — Functions include coordinating implementation of youth laws and programmes across ministries and LGUs; planning a regional integrated youth promotion and development programme; establishing linkages with national and international youth organisations; conducting research; organising trainings and workshops enhancing skills and leadership with particular emphasis on Bangsamoro culture and Islamic values; extending support to deserving youth and youth organisations including scholarship grants; initiating peace-building activities and programmes; and administering youth exchange programmes and monitoring foreign-sponsored youth projects.",
+  "Sections 10–13 — Composition: a Chairperson and four regular commissioners representing Maguindanao including Cotabato City and the 63 barangays from North Cotabato, Lanao del Sur including Marawi City, Sulu, Basilan including Lamitan City, and Tawi-Tawi; plus two ex-officio commissioners from the Non-Moro Indigenous Peoples and settler communities, designated by the heads of the Ministry of Indigenous Peoples' Affairs and the office for settler communities, both with the right to participate and to vote. At least 2 commissioners shall be women. The Chief Minister appoints from lists of nominees submitted by youth organisations at least 3 years in existence, and the chairpersonship rotates each term among the geographical subdivisions. Terms are staggered at first and then 3 years, with no member appointed or re-appointed more than once and none designated in a temporary or acting capacity. Commissioners must be no more than 40 years old at appointment, registered voters of the subdivision they represent, resident in the BARMM for 2 years, with at least 1 year's exposure to youth affairs.",
+  "Sections 14–18 — A Secretariat headed by an Executive Director appointed by the Chief Minister on the Commission's recommendation; a Technical Services Division with planning, research, project monitoring and public relations units, and an Administrative and Finance Division; and an office for each Commissioner in the province they represent.",
+  "Section 19 — Creates a Youth Coordinating Council headed by the Commission's chairperson, composed of senior officers of the education, science and technology, social services, local government, environment, labour, agriculture, health, trade and tourism and indigenous peoples' ministries, the Bangsamoro Women Commission, the offices of settler communities, sports and religious affairs, and others. It coordinates implementation, monitors ministry compliance with youth-related policies, and meets twice a year or as often as necessary.",
+  "Section 20 — Abolishes the Office on Bangsamoro Youth Affairs and transfers its powers, funds, records, assets and properties to the Commission.",
+  "Section 21 — Appropriates ₱10,500,000 for Personnel Services, ₱18,000,000 for Maintenance and Other Operating Expenses and ₱1,500,000 for Capital Outlay, from the Miscellaneous Personnel Benefits Fund and the Contingent Fund, with succeeding budgets in the Appropriations Act released regularly and directly to the Commission.",
+  "Section 24 — Takes effect 15 days after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Young people aged 15 to 40 across the BARMM",
+   "Youth and youth-serving organisations",
+   "Non-Moro Indigenous and settler youth",
+   "Bangsamoro communities outside the region"
+  ],
+  "impact_tags": [
+   "youth",
+   "education",
+   "institution_commission",
+   "labor_social"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱30,000,000 total initial — ₱10.5M Personnel Services, ₱18M MOOE, ₱1.5M Capital Outlay",
+  "figures_note": "Quoted from Section 21."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2020-02-28"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2020/05/BAA-10.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": "Abolishes the Office on Bangsamoro Youth Affairs",
+  "origin_bill": "Bill 28",
+  "related_note": "Created pursuant to Section 13, Article IX of the Organic Law. Its Youth Coordinating Council seats the Bangsamoro Women Commission established by BAA 8, and its composition mirrors that Commission's provincial-representation model."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱30,000,000 initial",
+  "irr_status": "Section 7(c) empowers the Commission to issue its own rules and regulations.",
+  "note": "Read from the enacted text as signed. The act lists Sulu among the represented subdivisions; the parliamentary districting acts of 2025 and 2026 no longer include the province, and the effect on this Commission's composition is not addressed in any act read by this registry."
+ },
+ "citizen_questions": [
+  {
+   "q": "Am I still 'youth' under this act?",
+   "a": "If you are between 15 and 40, yes. The act's definition runs to forty — considerably wider than the usual national cut-off."
+  },
+  {
+   "q": "Is there someone from my province?",
+   "a": "Yes. Four regular commissioners represent Maguindanao (with Cotabato City and the 63 barangays), Lanao del Sur, Sulu, Basilan and Tawi-Tawi, and Section 17 requires each to keep an office in the province they represent."
+  },
+  {
+   "q": "Can the Commission help with school costs?",
+   "a": "Section 8(i) allows it to extend support or assistance to deserving youth and youth organisations, including scholarship grants."
+  },
+  {
+   "q": "Who chooses the commissioners?",
+   "a": "The Chief Minister appoints them — but from lists of nominees submitted by youth groups and youth-serving organisations that have existed for at least 3 years."
+  },
+  {
+   "q": "Are indigenous and settler youth represented?",
+   "a": "Yes. Two ex-officio commissioners come from the Non-Moro Indigenous Peoples and settler communities, and both have the right to vote."
+  },
+  {
+   "q": "How much money does it have?",
+   "a": "₱30 million initially — ₱10.5M for salaries, ₱18M for operating expenses and ₱1.5M for capital outlay — released directly to the Commission."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 10",
+  "line2": "Bangsamoro Youth Commission Act of 2020",
+  "badges": [
+   "IN FORCE",
+   "Youth",
+   "2020"
+  ],
+  "what_this_does": "Creates the region's youth commission for everyone aged 15 to 40, with a commissioner in every province.",
+  "who_it_affects": "Young people 15–40 · youth organisations · indigenous and settler youth"
+ },
+ "views": {
+  "simple": "Creates the Bangsamoro Youth Commission as the region's policy body for everyone aged 15 to 40, with a commissioner seated in each province, power to accredit youth organisations and grant scholarships, and a council monitoring ministry compliance with youth policy.",
+  "official": "AN ACT CREATING AND ESTABLISHING THE BANGSAMORO YOUTH COMMISSION, DEFINING ITS POWERS, FUNCTIONS AND RESPONSIBILITIES, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 10, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

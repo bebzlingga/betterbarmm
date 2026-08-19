@@ -1,189 +1,324 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 75,
-    "short_title": "Supplemental Budget Act",
-    "official_title": "AN ACT APPROPRIATING SUPPLEMENTAL FUNDS FOR THE OPERATION OF THE BANGSAMORO GOVERNMENT (2025)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA3",
-    "date_ratified": "2025-05-29",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Appropriates Supplemental Funds for the Operation of the Bangsamoro Government (2025).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Appropriates Supplemental Funds for the Operation of the Bangsamoro Government (2025).",
-    "who_will_be_affected": [
-      "Parents & students",
-      "Patients",
-      "Workers & suppliers",
-      "Taxpayers"
-    ],
-    "when_will_it_take_effect": "Ratified 2025-05-29; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "This is a money law: it decides how much funding BARMM ministries and programs get - the schools, hospitals, roads, scholarships, and social services you use are all paid from it. No single citizen 'applies' for it, but nearly every public service you touch depends on it.",
-      "in_practice": [
-        "Sets each ministry's budget ceiling for the year (or adds/extends funds mid-year for supplementals and extensions)",
-        "Slow disbursement is the recurring issue - several BAAs exist purely to extend the validity of unspent funds",
-        "Big-ticket items to watch: education (MBHTE), health (MOH), public works (MPW), and the Special Development Fund for conflict-affected communities"
-      ],
-      "for_specific_groups": {
-        "Parents & students": "Classroom construction, teacher hiring, and scholarship slots are set here",
-        "Patients": "Hospital operating budgets, medicines, and health worker salaries flow from this law",
-        "Workers & suppliers": "Government projects and procurement opportunities follow the appropriations",
-        "Taxpayers": "This is the accountability document - compare what was appropriated with what was actually delivered"
-      },
-      "where_this_applies": "All of BARMM",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Follow-up reports: the Parliament itself has passed resolutions demanding ministries account for these funds"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Funds every public service you use - the enabler of all other benefits.",
-        "direct_benefits": [
-          {
-            "benefit": "Operating budgets for schools, hospitals, roads, scholarships, social programs",
-            "who_gets_it": "Everyone using public services",
-            "how_to_access": "Automatic through the funded agencies"
-          },
-          {
-            "benefit": "Salaries of teachers, health workers, and government personnel",
-            "who_gets_it": "Public employees",
-            "how_to_access": "Through payroll of funded agencies"
-          },
-          {
-            "benefit": "Special Development Fund projects in conflict-affected communities",
-            "who_gets_it": "Camp and conflict-affected barangays",
-            "how_to_access": "Through LGU/OCM project identification"
-          }
-        ],
-        "indirect_benefits": [
-          "Procurement and job opportunities from funded projects",
-          "Predictability: agencies can plan the year"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Compare appropriations vs. actual delivery - Parliament's own resolutions demand these reports; you can too"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 75,
+  "short_title": "FY 2025 Supplemental Appropriations Act",
+  "official_title": "AN ACT APPROPRIATING SUPPLEMENTAL FUNDS FOR THE OPERATION OF THE BANGSAMORO GOVERNMENT AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA3",
+  "date_ratified": "2025-05-29",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session, begun 15 September 2022",
+  "date_passed": "2025-05-29",
+  "date_passed_hijri": "Dhu Al-Hijjah 02, 1446",
+  "date_approved_by_chief_minister": "2025-06-16",
+  "approved_by": "Chief Minister Abdulraof A. Macacua",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Jaime M. Ayub, Director III, OIC-Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "All BARMM ministries",
-      "Health workers",
-      "Hospitals",
-      "Patients",
-      "Public programs"
-    ],
-    "impact_tags": [
-      "budget_appropriations",
-      "budget_finance",
-      "health"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2025-05-29"
-    }
+  "origin_bills": "Parliament Bill No. 349",
+  "effectivity": "15 days after publication in any newspaper of general circulation in the Bangsamoro Autonomous Region"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "An ₱11.3 billion top-up to the 2025 regional budget, funded from Treasury investment income and unspent money from earlier years. More than a third of it — ₱4.02 billion — sits in a Contingent Fund released at the Chief Minister's discretion.",
+  "why_was_it_proposed": "Investment income and unutilised prior-year appropriations had accumulated in the Bangsamoro Treasury. This act redistributes ₱11.3 billion of them across 23 agencies and 2 special purpose funds.",
+  "what_will_change": "₱4.02 billion goes into a Contingent Fund covering digitalisation, Islamic finance and the acquisition of Al-Amanah Islamic Bank. The Office of the Chief Minister receives ₱1.50 billion, agriculture ₱1.27 billion, and the Parliament appropriates ₱400 million to itself. Funds run to 31 December 2026.",
+  "who_will_be_affected": [
+   "Households receiving TABANG assistance and AMBaG medical aid",
+   "Farmers and fisherfolk, through ₱1.27 billion in agriculture support",
+   "Families needing housing, through ₱720.8 million in human settlements",
+   "Disaster-affected communities, through ₱503.7 million in rapid emergency response",
+   "Madaris learners and scholars, through ₱447.2 million in education",
+   "Marawi residents, through a ₱17.3 million rehabilitation line"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page. Origin: Bill 349."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": "Bill 349"
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Finance, and Budget and Management (MFBM)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2025-05-29 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Finance, and Budget and Management (MFBM) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 75",
-    "line2": "Supplemental Budget Act",
-    "badges": [
-      "ENACTED",
-      "Budget Finance",
-      "2025"
+  "when_will_it_take_effect": "In force since 2025 — approved by the Chief Minister on 16 June 2025, effective 15 days after publication. Funds run to 31 December 2026, with Personnel Services expiring 31 December 2025.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. ₱11.3 billion of Treasury investment income and previously unspent money. The single largest item is not a ministry at all — it is a ₱4.02 billion Contingent Fund released only on the Chief Minister's approval.",
+   "in_practice": [
+    "₱11,300,000,000 total across 23 agencies plus 2 special purpose funds",
+    "Funded from income generated on Bureau of the Treasury investments and unutilised prior years' appropriations",
+    "Contingent Fund: ₱4.02 billion — 35.6% of the act",
+    "Office of the Chief Minister: ₱1.50 billion, including ₱507.5 million for TABANG and ₱111 million for AMBaG medical assistance",
+    "Agriculture, Fisheries and Agrarian Reform: ₱1.27 billion",
+    "Human Settlements and Development: ₱720.8 million, almost entirely capital outlay",
+    "Interior and Local Government: ₱715.4 million, including ₱503.7 million for rapid emergency disaster response",
+    "The Bangsamoro Transition Authority Parliament appropriated ₱400 million to itself, all operating expenses",
+    "Funds are available for release and disbursement until 31 December 2026; Personnel Services only until 31 December 2025"
+   ],
+   "for_specific_groups": {
+    "Households in need": "₱507,543,622 for Tulong Alay sa Bangsamorong Nangangailangan (TABANG) and ₱21,824,000 for Strengthening Access to Living Assistance to Marginalized Bangsamoro (SALAM), both through the Office of the Chief Minister.",
+    "Patients": "₱111,000,000 for Ayudang Medikal mula sa Bangsamoro Government (AMBaG), plus ₱462.4 million at the health ministry including ₱145.0 million for medical outreach and ₱52.4 million for nutrition.",
+    "Farmers and fisherfolk": "₱1,268,850,019, of which ₱1.19 billion for Basic Integration for Harmonized Intervention — including ₱447.6 million in machinery and equipment and ₱119.4 million in transportation equipment.",
+    "Families needing housing": "₱720,805,789 at the human settlements ministry, ₱702.0 million of it capital outlay including ₱566.8 million in infrastructure assets.",
+    "Madaris learners and scholars": "₱148.3 million for Madaris Education Services, ₱110.4 million for technical-vocational provisions and ₱100.6 million for the Access to Higher and Modern Education Scholarship Program.",
+    "Marawi residents": "₱17,274,114 for the Marawi Rehabilitation Program, under the Office of the Chief Minister.",
+    "Settler communities": "₱5,000,000 is set aside within the Contingent Fund exclusively for a General Assembly to be conducted by the Office for Settler Communities.",
+    "Indigenous peoples": "₱2,250,000 for Indigenous Peoples' Development Initiatives — 0.02% of the act, the smallest ministry allocation in it.",
+    "Conflict-affected communities": "₱206.3 million for public order and safety, including ₱160.4 million for peacebuilding initiatives and ₱13.2 million for Sustaining Journey to Peace."
+   },
+   "where_this_applies": "The whole BARMM, with funds released directly to ministries, offices and agencies including their provincial offices.",
+   "when_you_will_feel_it": "Release and disbursement run to 31 December 2026; Personnel Services expired 31 December 2025.",
+   "what_you_can_do": [
+    "Check ministry websites for infrastructure project disclosures required within 30 days of contract and of completion",
+    "Look for quarterly financial and physical accomplishment reports on the Contingent Fund, which must be published on the implementing agency's website",
+    "Ask your LGU or the social services ministry about TABANG, AMBaG and SALAM assistance",
+    "If reports are missing, note that officials' salaries are automatically suspended until they comply"
+   ],
+   "watch_out_for": [
+    "₱4.02 billion — 35.6% of the act — sits in a Contingent Fund released solely on the Chief Minister's approval, with stated uses that include 'other expenditures' covering unforeseen initiatives not otherwise in the act.",
+    "The Parliament appropriated ₱400 million to itself, entirely operating expenses, including ₱80 million in representation expenses, ₱46.7 million in travel and ₱213.3 million in unspecified 'other maintenance and operating expenses'.",
+    "The Office of the Chief Minister's ₱1.50 billion includes ₱404.2 million in representation expenses and ₱327.9 million in professional and consultancy services.",
+    "This is the second of 3 supplementals funded from unspent money — ₱8.44 billion for 2024, ₱11.3 billion for 2025 and ₱16.83 billion for 2026. The amount grows each year.",
+    "The Ministry of Indigenous Peoples' Affairs received ₱2.25 million, less than the Office of the Wali's ₱10 million and a fraction of the Sports Commission's ₱52 million."
+   ],
+   "key_terms_explained": {
+    "Supplemental appropriation": "A budget law passed during the year adding to what the annual appropriations act provided.",
+    "Contingent Fund": "A reserve for new or urgent projects arising during the year, released case by case on the Chief Minister's approval.",
+    "TABANG": "Tulong Alay sa Bangsamorong Nangangailangan — an assistance programme run from the Office of the Chief Minister.",
+    "AMBaG": "Ayudang Medikal mula sa Bangsamoro Government — medical assistance.",
+    "SALAM": "Strengthening Access to Living Assistance to Marginalized Bangsamoro.",
+    "KAPYANAN": "Kapayapaan sa Pamayanan — a community peace programme.",
+    "Representation expenses": "Spending on official entertainment, meetings and hospitality.",
+    "Al-Amanah Islamic Bank": "Al-Amanah Islamic Investment Bank of the Philippines, the country's only Islamic bank. The Contingent Fund may cover the cost of acquiring it.",
+    "Cash budgeting system": "Appropriations valid only within a fixed window, after which they lapse and unobligated balances revert."
+   },
+   "status_note": "Passed 29 May 2025 and approved by the Chief Minister on 16 June 2025. The enacted copy is attested by an OIC-Secretary-General rather than the Secretary-General.",
+   "benefits": {
+    "headline": "₱11.3 billion from Treasury investment income and unspent balances, with a third held in reserve and the rest weighted toward assistance programmes, agriculture and housing.",
+    "direct_benefits": [
+     {
+      "benefit": "₱507,543,622 for TABANG assistance and ₱111,000,000 for AMBaG medical assistance",
+      "who_gets_it": "Households in need and patients",
+      "how_to_access": "Through the Office of the Chief Minister"
+     },
+     {
+      "benefit": "₱1,268,850,019 for agriculture, fisheries and agrarian reform",
+      "who_gets_it": "Farmers, fisherfolk and agrarian reform beneficiaries",
+      "how_to_access": "Mostly through the BINHI programme, including machinery, equipment and transportation"
+     },
+     {
+      "benefit": "₱720,805,789 for housing and human settlement development",
+      "who_gets_it": "Families needing housing",
+      "how_to_access": "₱702.0 million of it capital outlay, including land, infrastructure and buildings"
+     },
+     {
+      "benefit": "₱503,722,470 for rapid emergency action on disaster incidence",
+      "who_gets_it": "Disaster-affected communities",
+      "how_to_access": "Through the interior ministry"
+     },
+     {
+      "benefit": "₱447,156,203 for education, including ₱148.3 million for madaris education and ₱100.6 million in scholarships",
+      "who_gets_it": "Learners, madaris and scholars",
+      "how_to_access": "Through MBHTE programmes"
+     },
+     {
+      "benefit": "₱462,375,700 for health, including ₱145.0 million for medical outreach and ₱136.0 million for Tiyakap Bangsamoro Kalusugan",
+      "who_gets_it": "Patients and communities, with named district and provincial hospitals funded",
+      "how_to_access": "Through MOH programmes"
+     },
+     {
+      "benefit": "₱206,341,632 for public order and safety, including ₱160.4 million for peacebuilding",
+      "who_gets_it": "Conflict-affected communities",
+      "how_to_access": "Through MPOS programmes"
+     },
+     {
+      "benefit": "₱23,779,700 for the Bangsamoro Women Commission, including ₱20.5 million for women's economic participation and political empowerment",
+      "who_gets_it": "Women in the region",
+      "how_to_access": "Through the Commission"
+     },
+     {
+      "benefit": "₱5,000,000 within the Contingent Fund exclusively for a General Assembly of settler communities",
+      "who_gets_it": "Settler communities",
+      "how_to_access": "Through the Office for Settler Communities"
+     }
     ],
-    "what_this_does": "Appropriates Supplemental Funds for the Operation of the Bangsamoro Government (2025).",
-    "who_it_affects": "All BARMM ministries · Health workers · Hospitals · Patients",
-    "effective": "2025-05-29"
-  },
-  "views": {
-    "simple": "Appropriates Supplemental Funds for the Operation of the Bangsamoro Government (2025).",
-    "official": "AN ACT APPROPRIATING SUPPLEMENTAL FUNDS FOR THE OPERATION OF THE BANGSAMORO GOVERNMENT (2025)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "A ₱4.02 billion Contingent Fund covering bureaucratic digitalisation, a Transitional Development Impact Fund, Islamic finance programmes, acquisition of Al-Amanah Islamic Bank, customs duties on foreign assistance including Japanese aid, and infrastructure for the Bangsamoro Government Center",
+     "A ₱41.9 million Personnel Benefit Fund for newly created positions, including in the Special Geographic Area and the Offices of the Deputy Speakers and Deputy Floor Leaders",
+     "Mandatory publication of infrastructure contracts, winning bidders and actual costs",
+     "Automatic salary suspension for officials who fail to file accountability reports"
+    ],
+    "limitations": [
+     "More than a third of the act is discretionary reserve rather than programmed spending.",
+     "Personnel Services expired on 31 December 2025 and the rest on 31 December 2026.",
+     "The act funds programmes, not entitlements.",
+     "Some of the largest object lines — representation expenses and 'other operating expenses' — are not itemised further."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. An appropriations act imposes no duty on the public."
+    ],
+    "for_agencies": [
+     "Secure a Special Allotment Release Order before obligating appropriations",
+     "Obtain a Certification of Availability of Funds from the chief accountant before incurring any obligation, made part of the signed contract",
+     "Obtain the Chief Minister's Authority to Purchase Motor Vehicle before procuring transportation equipment",
+     "For Contingent Fund releases, submit indicative programme plans, construction plans and programme of works, an indicative procurement plan, a cost-benefit analysis and a list of beneficiaries",
+     "Release Personnel Benefit Fund money for new positions only once posts are filled and appointment, assumption, oath, service record and deployment documents are submitted",
+     "Submit quarterly financial and physical accomplishment reports within 30 days of each quarter's end, published on the agency website for Contingent Fund items",
+     "Submit a status report on Commission on Audit findings within 60 days of the annual audit report and post it on the agency website",
+     "Post infrastructure project details, winning contractor, actual cost and variation orders within 30 days"
+    ]
+   },
+   "what_is_prohibited": [
+    "Incurring an obligation without first securing a Certification of Availability of Funds from the agency's chief accountant.",
+    "Procuring transportation equipment without the Chief Minister's Authority to Purchase Motor Vehicle.",
+    "Releasing Personnel Benefit Fund money for newly created positions before those positions are actually filled and the supporting documents submitted.",
+    "Treating funds transferred between organisational units, between agencies, or to LGUs as disbursed before the goods, works or services have actually been delivered, inspected and accepted within the validity period.",
+    "Deducting engineering and administrative overhead above 1%, or administrative costs above 3%, of project costs for projects over ₱1,000,000.",
+    "Obligating appropriations after the validity period."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence.",
+    "for_officials": "Failure to submit the required financial and physical accountability reports results in the automatic suspension of the salaries of the responsible official or employee until compliance. Repeated failure or refusal without justifiable cause may be a ground for administrative disciplinary action under civil service rules."
+   },
+   "where_to_complain": {
+    "first_stop": "The ministry, office or agency implementing the programme or project",
+    "oversight": "Ministry of Finance, and Budget and Management; the Speaker; and Parliament's Committee on Finance, Budget and Management",
+    "audit": "The Commission on Audit, whose annual audit report each agency must answer within 60 days",
+    "note": "Contingent Fund releases require the Chief Minister's approval on the finance ministry's recommendation, supported by a list of beneficiaries and a cost-benefit analysis."
+   },
+   "everyday_scenarios": [
+    "A family receives medical assistance from the regional government. ₱111 million was appropriated here for AMBaG through the Office of the Chief Minister.",
+    "A farmers' cooperative receives machinery. ₱447.6 million in machinery and equipment was appropriated under the agriculture ministry's BINHI programme.",
+    "A displaced family is resettled. ₱720.8 million went to human settlements, ₱566.8 million of it in infrastructure assets.",
+    "A resident wants to know what a project cost. Section 13 requires the agency to post the detailed actual cost and any variation orders within 30 days of the completion certificate.",
+    "A ministry stops filing accountability reports. Section 12 automatically suspends the salaries of the responsible officials until they comply."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Appropriation of Funds, made “out of the income generated from the investments made to the Bureau of Treasury, and unutilized prior years' appropriations from the Bangsamoro Treasury”. Agency totals for the FY 2025 supplemental appropriation: the Office of the Chief Minister ₱1,501,002,314; Agriculture, Fisheries and Agrarian Reform ₱1,268,850,019; Human Settlements and Development ₱720,805,789; the Interior and Local Government ₱715,363,470; Health ₱462,375,700; Basic, Higher and Technical Education ₱447,156,203; Public Works ₱425,913,400; the Bangsamoro Transition Authority ₱400,000,000; Transportation and Communications ₱399,777,350; Social Services and Development ₱229,478,100; Public Order and Safety ₱206,341,632; Labor and Employment ₱200,937,023; Science and Technology ₱85,094,521; the Bangsamoro Sports Commission ₱52,000,000; Environment, Natural Resources and Energy ₱39,900,000; the Cooperatives and Social Enterprise Authority ₱24,000,000; the Bangsamoro Women Commission ₱23,779,700; the Office of the Wali ₱10,000,000; the Bangsamoro Commission for the Preservation of Cultural Heritage ₱8,794,045; the Bangsamoro Board of Investments ₱8,702,767; Indigenous Peoples' Affairs ₱2,250,000; the Bangsamoro Youth Commission ₱2,000,000; and Trade, Investment and Tourism ₱835,500. Two special purpose funds follow: the Miscellaneous Personnel Benefit Fund ₱41,914,262 and the Contingent Fund ₱4,022,728,205 — a total of ₱11,300,000,000.",
+  "Section 1 (programme detail) — The Office of the Chief Minister's ₱1.50 billion covers Policy Formulation and Development ₱582,506,657, Tulong Alay sa Bangsamorong Nangangailangan ₱507,543,622, General Management and Supervision ₱166,048,734, Ayudang Medikal mula sa Bangsamoro Government ₱111,000,000, Management of Library and Archives Services ₱29,576,604, Strengthening Access to Living Assistance to Marginalized Bangsamoro ₱21,824,000, Kapayapaan sa Pamayanan ₱20,956,378, the Marawi Rehabilitation Program ₱17,274,114, Support to Local Moral Governance ₱12,500,000, Promotion of the Welfare of Bangsamoro Communities Outside the Region ₱6,975,866, and conflict resolution and reconciliation mechanisms ₱6,282,846. By object, it includes ₱611,000,000 in financial assistance and subsidy, ₱404,166,600 in representation expenses, ₱292,445,813 in professional services and ₱35,465,340 in consultancy services. The Bangsamoro Transition Authority's ₱400,000,000 is entirely maintenance and operating expenses, split into a Legislation Program ₱253,332,800, a Representation Program ₱103,333,600 and an Oversight Program ₱43,333,600, and by object into ₱213,332,800 other operating expenses, ₱80,000,000 representation expenses, ₱60,000,000 financial assistance and subsidy and ₱46,667,200 travelling expenses.",
+  "Special Provisions, Miscellaneous Personnel Benefit Fund — The ₱41,914,262 covers personnel services for newly created positions as additional staff complement for the Legal and Legislative Liaison Division and the Provincial Social Welfare Office in the Special Geographic Area under the social services ministry, for the Offices of the Deputy Speakers and Deputy Floor Leaders under the Bangsamoro Transition Authority, and for other newly created positions. Funds are released only when the positions are actually filled and on submission of appointment, certification of assumption to duty, oath of office, service record and deployment order.",
+  "Special Provisions, Contingent Fund — The ₱4,022,728,205 covers new or urgent projects and activities needing implementation or payment during the year, including the digitalization of the BARMM bureaucracy; a Transitional Development Impact Fund; Islamic Finance Programs, subject to Section 29 of BAA 65, the FY 2025 General Appropriations Act; “provision for cost of acquisition of Al-Amanah Islamic Bank and other related costs”; customs duties and taxes including tax expenditures and assumed tax payable on foreign assistance and donations such as Japan Government Assistance; infrastructure necessary for establishing the Bangsamoro Government Center; ₱5,000,000 exclusively for the General Assembly to be conducted by the Office for Settler Communities; and other expenditures supporting programmes mandated by law, including unforeseen initiatives not covered by the act. Release is subject to the Chief Minister's approval on the finance ministry's recommendation after technical assessment and review of indicative programme plans, construction plans and programme of works, indicative procurement plan, cost-benefit analysis and list of beneficiaries. Quarterly reports must be submitted and published on the implementing agency's website.",
+  "Sections 2–8 (General Provisions) — A Special Allotment Release Order authorises agencies to obligate appropriations; government funds must be used as authorised; agencies must strictly adhere to existing procurement laws; engineering and administrative overhead not exceeding 1% of project funds and administrative costs not exceeding 3% of project costs may be deducted for projects over ₱1,000,000; all transportation equipment outlays require the Chief Minister's Authority to Purchase Motor Vehicle on the finance ministry's recommendation; and no obligation may be incurred without a Certification of Availability of Funds from the agency's chief accountant, made part of the signed contract.",
+  "Section 9 — Cash Budgeting System. Appropriations are available for release and disbursement until 31 December 2026, except Personnel Services which are valid for obligation and disbursement only until 31 December 2025. After the validity period unreleased appropriations lapse and unobligated funds revert to the Bangsamoro Treasury under a Special Fund for reappropriation under Section 19, Article XII of RA 11054. Funds transferred between organisational units, between agencies, or to local government units are not considered disbursed until actually used to pay for completed construction, goods delivered and services rendered, inspected and accepted within the validity period.",
+  "Sections 10–15 — Funds are released directly to ministries, offices and agencies including their provincial offices and organisational units. Agencies must submit a status report on Commission on Audit findings within 60 days of the annual audit report, furnishing copies to the finance ministry, the Speaker and Parliament's Committee on Finance, Budget and Management, and posting it on the agency website. Financial and physical accountability reports must be submitted monthly, quarterly or yearly in hardcopy, electronically and on the agency website, with failure resulting in automatic suspension of the responsible officials' salaries until compliance and repeated failure a ground for administrative disciplinary action. Transparency in Infrastructure Projects requires posting the project title, location and description, the estimates behind the Approved Budget for the Contract and the winning contractor with awarded bid estimates within 30 calendar days of entering the contract, and the detailed actual cost with any variation orders within 30 calendar days of the certificate of completion. A separability clause follows, and the act takes effect 15 days after publication."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Households receiving TABANG, AMBaG and SALAM assistance",
+   "Farmers, fisherfolk and agrarian reform beneficiaries",
+   "Families needing housing and resettlement",
+   "Disaster-affected communities",
+   "Madaris learners and scholarship recipients",
+   "Conflict-affected communities and Marawi residents"
+  ],
+  "impact_tags": [
+   "budget_appropriations",
+   "budget_finance",
+   "agriculture_fisheries",
+   "labor_social",
+   "infrastructure"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱11,300,000,000 total, appropriated out of income from Bureau of the Treasury investments and unutilised prior years' appropriations",
+  "figures_note": "Agency, programme and special-purpose-fund totals read from Section 1 and the special provisions of the enacted text; the figures sum exactly to ₱11.3 billion. The Contingent Fund alone accounts for 35.6% of the act."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2025-05-29"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page. Origin: Bill 349."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/06/BAA-75.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill No. 349",
+  "related_note": "Supplements BAA 65, the FY 2025 General Appropriations Act of the Bangsamoro, whose Section 29 governs the Islamic finance programmes funded from the Contingent Fund. It sits between BAA 63, the FY 2024 supplemental at ₱8.44 billion, and BAA 91, the FY 2026 supplemental at ₱16.83 billion — all 3 funded from unspent prior-year appropriations. Reversion of unobligated funds follows Section 19, Article XII of RA 11054. The cash budgeting system and automatic salary suspension mirror Sections 35 and 75 of BAA 84, the Bangsamoro Budget System Act of 2025."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "₱11,300,000,000",
+  "irr_status": "None required. The finance ministry may issue guidelines on Contingent Fund releases and on the reporting and release of funds.",
+  "implementing_agency": {
+   "agency": "The 23 ministries, offices and agencies receiving appropriations, with the Ministry of Finance, and Budget and Management issuing release orders and the Chief Minister approving Contingent Fund releases",
+   "inferred": false
+  },
+  "note": "Read from the enacted text as signed, all 32 pages. Agency, programme and special-purpose-fund totals are recorded and sum exactly to ₱11.3 billion. Appropriations ran to 31 December 2026, with Personnel Services expiring 31 December 2025. The enacted copy is attested by Jaime M. Ayub, Director III, as OIC-Secretary-General."
+ },
+ "citizen_questions": [
+  {
+   "q": "How much is this, and where did the money come from?",
+   "a": "₱11,300,000,000, appropriated out of income generated on Bureau of the Treasury investments and unutilised prior years' appropriations held in the Bangsamoro Treasury."
+  },
+  {
+   "q": "What is the biggest item?",
+   "a": "The Contingent Fund, at ₱4,022,728,205 — 35.6% of the act. It is not allocated to any programme in advance; releases require the Chief Minister's approval on the finance ministry's recommendation."
+  },
+  {
+   "q": "What can the Contingent Fund be spent on?",
+   "a": "Digitalising the BARMM bureaucracy, a Transitional Development Impact Fund, Islamic finance programmes, the cost of acquiring Al-Amanah Islamic Bank, customs duties and taxes on foreign assistance including Japanese aid, infrastructure for the Bangsamoro Government Center, ₱5 million for a General Assembly of settler communities, and other expenditures including unforeseen initiatives not covered by the act."
+  },
+  {
+   "q": "Did Parliament give itself money?",
+   "a": "Yes — ₱400,000,000 to the Bangsamoro Transition Authority, entirely maintenance and operating expenses. By object it comprises ₱213.3 million in other operating expenses, ₱80 million in representation expenses, ₱60 million in financial assistance and subsidy and ₱46.7 million in travelling expenses."
+  },
+  {
+   "q": "Is there assistance for households?",
+   "a": "Yes. ₱507.5 million for TABANG, ₱111 million for AMBaG medical assistance and ₱21.8 million for SALAM, all through the Office of the Chief Minister, plus ₱229.5 million at the social services ministry."
+  },
+  {
+   "q": "Is there anything for Marawi?",
+   "a": "₱17,274,114 for the Marawi Rehabilitation Program, under the Office of the Chief Minister."
+  },
+  {
+   "q": "How long was the money available?",
+   "a": "Until 31 December 2026 for release and disbursement, except Personnel Services which expired on 31 December 2025. Unreleased appropriations lapsed and unobligated funds reverted to the Treasury."
+  },
+  {
+   "q": "How does this compare with other supplementals?",
+   "a": "It is the middle of 3. BAA 63 appropriated ₱8.44 billion for FY 2024, this act ₱11.3 billion for FY 2025, and BAA 91 ₱16.83 billion for FY 2026 — ₱36.57 billion in total, all of it money earlier budgets had not spent."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 75",
+  "line2": "FY 2025 Supplemental Appropriations Act",
+  "badges": [
+   "ENACTED",
+   "Budget",
+   "2025"
+  ],
+  "what_this_does": "Appropriates ₱11.3 billion from Treasury investment income and unspent balances, with 35.6% held in a Contingent Fund.",
+  "who_it_affects": "Households receiving assistance · farmers · families needing housing · disaster-affected communities",
+  "effective": "2025-06-16"
+ },
+ "views": {
+  "simple": "An ₱11.3 billion supplemental budget for 2025, funded from Bureau of the Treasury investment income and prior years' unspent appropriations. The largest single item is a ₱4.02 billion Contingent Fund released on the Chief Minister's approval, covering bureaucratic digitalisation, Islamic finance and the acquisition of Al-Amanah Islamic Bank. The Office of the Chief Minister takes ₱1.50 billion including TABANG and AMBaG assistance, agriculture ₱1.27 billion, human settlements ₱720.8 million, and the Parliament ₱400 million for itself. Funds ran to 31 December 2026.",
+  "official": "AN ACT APPROPRIATING SUPPLEMENTAL FUNDS FOR THE OPERATION OF THE BANGSAMORO GOVERNMENT AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 75, enacted text as signed (Parliament's acts index), all 32 pages.",
+  "generation": "Agency, programme and special-purpose-fund totals transcribed from Section 1 and the special provisions of the enacted text on 19 August 2026; percentages computed from those figures, which sum exactly to the ₱11.3 billion the act distributes. Verify against the official copy before citing."
+ }
 }

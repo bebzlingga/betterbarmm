@@ -1,184 +1,376 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 49,
-    "short_title": "Bangsamoro Local Governance Code",
-    "official_title": "AN ACT PROVIDING FOR THE BANGSAMORO LOCAL GOVERNANCE CODE",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2023-09-28",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Provides for the Bangsamoro Local Governance Code.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Provides for the Bangsamoro Local Governance Code.",
-    "who_will_be_affected": [
-      "Barangay residents",
-      "Local officials",
-      "Businesses"
-    ],
-    "when_will_it_take_effect": "Ratified 2023-09-28; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "The Local Governance Code is BARMM's own version of the Local Government Code: it defines the powers of provinces, cities, municipalities, and barangays inside the region - your barangay assembly, local taxes, local health and roads, even how localities can be created or renamed. Day-to-day, most services you feel come through the LGUs this Code governs.",
-      "in_practice": [
-        "Defines what your barangay and municipality must deliver (health stations, day care, local roads, peace and order)",
-        "Sets local taxation and the sharing of funds between BARMM and its LGUs",
-        "Provides mechanisms for citizen participation - assemblies, consultations, recall",
-        "Local public holidays and renaming of places follow its procedures"
-      ],
-      "for_specific_groups": {
-        "Barangay residents": "Your barangay's duties and funds are defined here - the basis for demanding services",
-        "Local officials": "Powers, term rules, and inter-LGU relations",
-        "Businesses": "Local permits, fees, and taxes flow from this Code"
-      },
-      "where_this_applies": "All of BARMM unless the title names a specific place",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [
-        "Already amended by BAA 93, 94 - read the consolidated text"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Empowered barangays and municipalities - and levers you can pull on them.",
-        "direct_benefits": [
-          {
-            "benefit": "Defined local services your LGU must deliver (health station, day care, roads, peace & order)",
-            "who_gets_it": "Every resident",
-            "how_to_access": "Demand them at the barangay/municipal hall citing the Code"
-          },
-          {
-            "benefit": "Citizen participation mechanisms: assemblies, consultations, and accountability processes",
-            "who_gets_it": "Community members",
-            "how_to_access": "Attend barangay assemblies; use the Code's participation provisions"
-          },
-          {
-            "benefit": "Localities' fair share of funds, spent near you",
-            "who_gets_it": "LGU constituents",
-            "how_to_access": "Monitor via local budget hearings"
-          }
-        ],
-        "indirect_benefits": [
-          "Clear BARMM-LGU relations reduce turf confusion that stalls projects"
-        ],
-        "limitations": [
-          "Your leverage still depends on showing up - the Code opens doors, residents must walk through them"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 49,
+  "short_title": "Bangsamoro Local Governance Code of 2023",
+  "official_title": "AN ACT PROVIDING FOR THE BANGSAMORO LOCAL GOVERNANCE CODE",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2023-09-28",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Second Regular Session, begun 15 September 2022",
+  "date_passed": "2023-09-28",
+  "date_passed_hijri": "Rabi Al-Awwal 13, 1445",
+  "date_approved_by_chief_minister": "2023-09-28",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Barangay residents",
-      "LGUs"
-    ],
-    "impact_tags": [
-      "local_government",
-      "priority_code"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2023-09-28"
-    }
+  "origin_bills": "Bill No. 30",
+  "effectivity": "Immediately following complete publication in at least 1 newspaper of general circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "The rulebook for every province, city, municipality and barangay in the region — how they are run, taxed, funded and disciplined. Its most consequential provision bars close relatives of incumbent officials from running in the same election, though only from May 2028.",
+  "why_was_it_proposed": "The region was still operating under the ARMM's 1990s local government code, which this repeals. The new Code sets out a 5-year devolution of powers from the regional government down to LGUs, and adds accountability measures the national Local Government Code does not contain.",
+  "what_will_change": "Ministries must gradually devolve basic services to LGUs within 5 years, supervised by a Devolution Committee. Newly elected officials must complete mandatory training or face disqualification. Relatives within the 2nd civil degree of an incumbent official cannot run in the same election. And a public, digital Bangsamoro Register of Ordinances is created.",
+  "who_will_be_affected": [
+   "Every voter and candidate for local office in the region",
+   "All 116 constituent LGUs — provinces, cities, municipalities and barangays",
+   "Ratepayers and taxpayers, through local taxation and real property tax rules",
+   "The 63 barangays of the Special Geographic Area, constituted into 8 municipalities",
+   "Marawi City, Cotabato City and Basilan, which keep full devolution status",
+   "Barangay officials and tanods, who gain insurance coverage"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [
-      "BAA 93",
-      "BAA 94"
+  "when_will_it_take_effect": "In force since 2023 — passed and approved by the Chief Minister on the same day, 28 September 2023, effective immediately on publication. But the anti-dynasty rule and the training disqualification apply only from the May 2028 elections.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. This governs your barangay, municipality, city and province. The headline is the anti-dynasty rule in Section 45(g) — but read Section 595 with it: that rule does not bite until the May 2028 elections.",
+   "in_practice": [
+    "From May 2028, anyone related within the 2nd civil degree to an incumbent local official running for office is disqualified from running in the same election in that province, city, municipality or barangay",
+    "Every candidate must declare in their certificate of candidacy that they are not so related",
+    "Where 2 candidates are related to each other and none to an incumbent, the one seeking the lower office is disqualified; if both seek the same office, it is settled by drawing of lots",
+    "An incumbent cannot run next election for office in an LGU outside their own jurisdiction, except for the higher LGU their unit belongs to",
+    "An incumbent chief executive cannot seek the immediately-lower position",
+    "Newly elected officials must complete 8 hours of onboarding, plus a 32-hour continuing programme covering Bangsamoro culture, history and autonomy, and conflict-sensitivity and peacebuilding",
+    "Terms are 3 years, with a maximum of 3 consecutive terms in the same position",
+    "Recall petitions need 25%, 20%, 15% or 10% of registered voters depending on the size of the LGU",
+    "Sanggunian sessions are open to the public and may be conducted in a local language",
+    "A public, digital Bangsamoro Register of Ordinances is maintained by the interior ministry",
+    "Officials may take their oath before the holy book of their religious affiliation, plus an oath of moral governance"
+   ],
+   "for_specific_groups": {
+    "Voters": "Recall for loss of confidence is available once per term, but not within 1 year of the official assuming office or 1 year before a regular election.",
+    "Candidates and political families": "Section 45(g) disqualifies relatives within the 2nd civil degree of consanguinity or affinity — including spouses — of an incumbent official running for elective position, from candidacy in the same election in the same province, city, municipality or barangay. Section 595 defers this to May 2028.",
+    "Newly elected officials": "8 hours of mandatory onboarding on assumption, then continuing training within your first 2 years. Deliberate failure is a disciplinary ground and disqualifies you from the immediately succeeding election until completed — also deferred to May 2028.",
+    "Barangay officials": "Insurance coverage is to be provided for the punong barangay, sangguniang barangay members, the barangay secretary and treasurer, the barangay tanod and the Barangay Peacekeeping Action Team.",
+    "Sanggunian members": "You must disclose in writing any business, financial or professional relationship — or relation within the 4th civil degree — with anyone affected by a measure under consideration, before you take part in deliberations.",
+    "Residents of the Special Geographic Area": "The 63 barangays that voted to join the BARMM are constituted into 8 municipalities under BAA 41 to 48, clustered as the SGA under the Chief Minister's general supervision, with the SGA Development Authority reorganised and attached to the Office of the Chief Minister. Pending creation of a new province, your municipalities may levy real property tax and professional tax — at rates initially no higher than those prevailing before inclusion in the region.",
+    "Marawi City, Cotabato City and Basilan": "You continue to enjoy full devolution status, including Basilan's component municipalities and Lamitan City.",
+    "Communities facing a project": "No project or programme may be implemented without the required prior consultation, and occupants may not be displaced unless relocation or resettlement sites and mitigating measures are provided."
+   },
+   "where_this_applies": "All constituent provinces, cities, municipalities and barangays of the BARMM, and to the extent provided, officials and agencies of the Bangsamoro Government.",
+   "when_you_will_feel_it": "In force since 2023. Devolution runs over 5 years; the anti-dynasty rule and training disqualification start with the May 2028 elections.",
+   "what_you_can_do": [
+    "Check the Bangsamoro Register of Ordinances — the interior ministry must keep it digital, online and accessible to the public",
+    "Attend sanggunian sessions; they are open to the public unless closed by an affirmative vote for reasons of security, decency or morality",
+    "Ask your local treasurer for the itemised monthly collections and disbursements — failure to post and publish them is punishable by a fine of ₱40,000 to ₱1,200,000, suspension or imprisonment",
+    "If your official has lost your confidence, recall requires a petition by 10% to 25% of registered voters depending on the size of your LGU",
+    "File administrative complaints against elective officials with the Office of the Chief Minister, the sangguniang panlalawigan, or the city or municipal sanggunian, depending on the office",
+    "Ask whether your LGU has a Gender and Development plan — failing to submit one for 2 consecutive years is dereliction of duty"
+   ],
+   "watch_out_for": [
+    "Section 595 defers the anti-dynasty rule and the training disqualification to the May 2028 elections — 5 years after the Code took effect, and past 1 full local election cycle.",
+    "The anti-dynasty bar reaches only the 2nd civil degree and only relatives of an incumbent running in the same election. It does not prevent a family from holding different offices across successive elections.",
+    "Devolution is gradual and conditional — ministries have 5 years, and transfers depend on an assessment of each LGU's financial viability and technical capacity.",
+    "Supervision of police, fire and jail personnel by local chief executives remains governed by national law and the Organic Law, not by this Code.",
+    "Amendments to the Code may only be based on the results of the mandatory review, the first of which falls 10 years after enactment.",
+    "This registry has read pages 1–38 and 290–304 of the 304-page Code. Books II and III — local taxation and fiscal matters, and the detailed powers of provinces, cities, municipalities and barangays including the Katarungang Pambarangay — were not read. See the note in implementation status."
+   ],
+   "key_terms_explained": {
+    "Sanggunian": "The local legislative council — panlalawigan for a province, panlungsod for a city, bayan for a municipality, barangay for a barangay.",
+    "Punong barangay": "The elected head of a barangay, the smallest unit of local government.",
+    "Devolution": "The act by which the Bangsamoro Government confers power and authority on LGUs to perform specific functions and responsibilities.",
+    "2nd civil degree of consanguinity or affinity": "Parents, children, grandparents, grandchildren and siblings — and the same relations by marriage, including spouses.",
+    "Recall": "A vote by registered voters to remove a local elective official for loss of confidence before their term ends.",
+    "NTA": "National Tax Allotment — the LGU share of national taxes, automatically and directly released.",
+    "Katarungang Pambarangay": "The barangay justice system, where a lupon and pangkat mediate disputes before they can go to court.",
+    "Lupon / pangkat": "The barangay conciliation body and the panel it forms to hear a particular dispute.",
+    "SGA": "Special Geographic Area — the 63 barangays of Cotabato province that voted to join the BARMM, now constituted into 8 municipalities.",
+    "Moral governance": "The oath local officials take under BAA 13 alongside the oath of office.",
+    "LGOO": "Local Government Operations Officer — the interior ministry's officer assigned to a constituent LGU."
+   },
+   "status_note": "Passed by the Bangsamoro Parliament and approved by the Chief Minister on the same day, 28 September 2023. It repeals Muslim Mindanao Autonomy Act No. 25, the ARMM's Local Government Code.",
+   "benefits": {
+    "headline": "A 5-year devolution of services to LGUs, mandatory training for officials, an anti-dynasty rule from 2028, and a public digital register of every local ordinance.",
+    "direct_benefits": [
+     {
+      "benefit": "A bar on close relatives of incumbents running in the same election",
+      "who_gets_it": "Voters in every constituent LGU",
+      "how_to_access": "Section 45(g), applicable from the May 2028 elections under Section 595"
+     },
+     {
+      "benefit": "Mandatory onboarding and continuing training for local officials, including conflict-sensitivity and peacebuilding",
+      "who_gets_it": "Constituents of every LGU",
+      "how_to_access": "Sections 43 and 44, delivered by the Bangsamoro Local Government Academy and partners"
+     },
+     {
+      "benefit": "Gradual devolution of basic services and facilities to LGUs within 5 years",
+      "who_gets_it": "Residents of every constituent LGU",
+      "how_to_access": "Section 18(b), supervised by the Devolution Committee under Section 592"
+     },
+     {
+      "benefit": "A public, digital Bangsamoro Register of Ordinances",
+      "who_gets_it": "Anyone needing to know what their LGU has enacted",
+      "how_to_access": "Section 69, maintained by the interior ministry"
+     },
+     {
+      "benefit": "Sanggunian sessions open to the public and conductible in a local language",
+      "who_gets_it": "Residents attending or following local legislation",
+      "how_to_access": "Section 60, with minutes translated into English or Tagalog"
+     },
+     {
+      "benefit": "Recall of a local elective official for loss of confidence",
+      "who_gets_it": "Registered voters of the LGU",
+      "how_to_access": "Sections 81 to 86, on a petition by 10% to 25% of voters depending on LGU size"
+     },
+     {
+      "benefit": "Sectoral representation in the sanggunian — 1 seat each for women, workers, and a third sector such as the urban poor, indigenous cultural communities or persons with disabilities",
+      "who_gets_it": "Those sectors",
+      "how_to_access": "Section 46(c)"
+     },
+     {
+      "benefit": "Insurance coverage for barangay officials, tanods and peacekeeping teams",
+      "who_gets_it": "Barangay-level officials and volunteers",
+      "how_to_access": "Section 587"
+     },
+     {
+      "benefit": "Taxing powers for SGA municipalities pending creation of a new province, capped at pre-inclusion rates",
+      "who_gets_it": "The 8 SGA municipalities and their residents",
+      "how_to_access": "Section 600"
+     },
+     {
+      "benefit": "The right to take an oath of office before the holy book of one's own religion",
+      "who_gets_it": "All elective and appointive local officials",
+      "how_to_access": "Section 104"
+     }
     ],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Multiple ministries (code-dependent)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2023-09-28 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Multiple ministries (code-dependent) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 49",
-    "line2": "Bangsamoro Local Governance Code",
-    "badges": [
-      "ENACTED",
-      "Priority Code",
-      "2023"
+    "indirect_benefits": [
+     "Full devolution status preserved for Marawi City, Cotabato City and Basilan",
+     "Local chief executives free to negotiate grants and donations without clearance from any higher authority",
+     "Prior consultation required before any project, with relocation and mitigation required before displacement",
+     "Mandatory disclosure of sanggunian members' conflicts of interest before deliberation",
+     "Criminal penalties for failing to publish monthly collections and disbursements",
+     "A mandatory parliamentary review 10 years after enactment and at least every 3 years thereafter"
     ],
-    "what_this_does": "Provides for the Bangsamoro Local Governance Code.",
-    "who_it_affects": "Barangay residents · LGUs",
-    "effective": "2023-09-28"
-  },
-  "views": {
-    "simple": "Provides for the Bangsamoro Local Governance Code.",
-    "official": "AN ACT PROVIDING FOR THE BANGSAMORO LOCAL GOVERNANCE CODE"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "limitations": [
+     "The anti-dynasty rule is deferred to May 2028 and reaches only the 2nd civil degree in the same election.",
+     "Devolution is conditional on assessed LGU capacity.",
+     "Police, fire and jail supervision remains governed by national law.",
+     "Amendments may only follow the mandatory review."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None imposed generally. Candidates must declare in their certificate of candidacy that they are not related within the 2nd civil degree to an incumbent local official running in the same election."
+    ],
+    "for_local_officials": [
+     "Complete the 8-hour mandatory onboarding on assumption and continuing training within the first 2 years",
+     "Disclose business, financial and professional relationships, and relations within the 4th civil degree, with anyone affected by a measure before taking part in deliberations",
+     "File statements of assets, liabilities and net worth, lists of relatives within the 4th civil degree in government service, and personnel data sheets",
+     "Take the oath of office and the oath of moral governance under BAA 13",
+     "Post and publish itemised monthly collections and disbursements within 10 days of month-end for at least 2 consecutive weeks",
+     "Governors and mayors may not practise a profession or engage in any other occupation",
+     "Do not appoint anyone related within the 4th civil degree to the appointing or recommending authority",
+     "Submit a Gender and Development plan and accomplishment report and establish a Gender Focal Point System"
+    ],
+    "for_the_bangsamoro_government": [
+     "Ministries gradually devolve powers, functions, services and facilities to LGUs within 5 years",
+     "The Chief Minister convenes the Devolution Committee within 1 month of approval",
+     "MILG promulgates implementing rules within 3 months of effectivity, establishes the Register of Ordinances, and sets up a monitoring and evaluation system",
+     "Regional agencies consult LGUs, NGOs and affected sectors before any project that may cause pollution, climate change or resource depletion"
+    ]
+   },
+   "what_is_prohibited": [
+    "Running for local office while related within the 2nd civil degree of consanguinity or affinity to an incumbent local official running in the same election, in the same province, city, municipality or barangay — from the May 2028 elections.",
+    "An incumbent local elective official running in the next election for office in an LGU outside their current jurisdiction, other than the higher LGU their unit belongs to.",
+    "An incumbent chief executive seeking the immediately-lower position.",
+    "Engaging in any business transaction with the LGU in which one is an official or over which one has supervision.",
+    "Holding interests in any cockpit or other games licensed by a local government unit.",
+    "Purchasing real estate forfeited to the LGU for unpaid taxes, acting as surety for anyone contracting with it, or using public property for private purposes.",
+    "Appointing anyone related within the 4th civil degree to the appointing or recommending authority in the local career service.",
+    "For a public official or a relative within the 4th civil degree, having a pecuniary interest in any credit-financed project contract or its supply procurement.",
+    "Practising a profession or other occupation, in the case of governors and city and municipal mayors.",
+    "Enforcing an ordinance or resolution after it has been disapproved.",
+    "Willfully and maliciously withholding benefits due to barangay, municipal, city or provincial officials and employees."
+   ],
+   "penalties": {
+    "failure_to_publish_finances": "A fine of ₱40,000 to ₱1,200,000, or suspension, or imprisonment not exceeding 1 year, or a combination — for a local treasurer or chief accountant who fails to post and publish itemised monthly collections and disbursements.",
+    "prohibited_business_interest": "Imprisonment of 6 months and 1 day to 6 years, or a fine of ₱40,000 to ₱1,200,000, or both.",
+    "tax_ordinance_violations": "Fines of ₱40,000 to ₱1,200,000 and imprisonment of 1 to 6 months, at the court's discretion; a sangguniang barangay may prescribe a fine of ₱1,000 to ₱10,000.",
+    "real_property_tax_offences": "Officers who fail to assess, omit taxable property, underassess, delay assessment, or fail to dispose of delinquent property at public auction face fines of ₱40,000 to ₱1,200,000, suspension, or imprisonment of 1 to 6 months.",
+    "credit_financing_contracts": "Removal from office and imprisonment of 2 months to 3 years for a public official or a relative within the 4th civil degree with a pecuniary interest in a credit-financed project.",
+    "failure_to_appear_before_lupon": "Punishable as indirect contempt of court; a complainant who fails to appear is barred from seeking judicial recourse for the same cause, and a respondent who refuses is barred from filing a counterclaim.",
+    "administrative": "Elective officials may be suspended — not exceeding 6 months per offence — or removed from office by order of the proper court. Removal bars candidacy for any elective position. Non-submission or non-implementation of a Gender and Development plan is dereliction of duty, and misuse of the GAD budget is abuse of authority.",
+    "withholding_benefits": "Suspension or dismissal from office for willfully and maliciously withholding benefits due to local officials and employees."
+   },
+   "where_to_complain": {
+    "first_stop": "For barangay officials, the sangguniang panlungsod or bayan; for component city and municipal officials, the sangguniang panlalawigan; for provincial, highly urbanised city and independent component city officials, the Office of the Chief Minister",
+    "concurrent": "The Office of the Chief Minister may also take a complaint against any local elective official where there is reasonable ground to believe a fair and just resolution will not be obtained before the sanggunian with jurisdiction — such as a conflict of interest, or where the case would be rendered moot",
+    "appeal": "To the sangguniang panlalawigan for component city and municipal decisions, and to the Office of the Chief Minister for provincial and highly urbanised city decisions, whose decisions are final and executory",
+    "note": "No investigation may be held within 90 days immediately before a local election, and any preventive suspension already imposed is automatically lifted at the start of that period."
+   },
+   "everyday_scenarios": [
+    "A mayor's spouse plans to run for the sanggunian in the same election. From May 2028 that is barred by Section 45(g), and the candidate must declare in their certificate of candidacy that no such relationship exists.",
+    "Two cousins file for different offices in the same municipality and neither is related to an incumbent. The one seeking the lower office is disqualified; had they sought the same office, the election supervisor would settle it by drawing lots.",
+    "A newly elected councillor skips the required onboarding. From 2028, deliberate failure is a disciplinary ground and disqualifies them from the immediately succeeding election until completed.",
+    "Residents want to see what their barangay has enacted. The interior ministry must maintain the Bangsamoro Register of Ordinances in digital, online and publicly accessible form.",
+    "A municipal treasurer stops publishing monthly collections. That carries a fine of ₱40,000 to ₱1,200,000, suspension, or up to 1 year's imprisonment.",
+    "A regional project will displace a community. Prior consultation is required, the sanggunian's approval must be obtained where adverse effects are determined, and occupants may not be displaced unless relocation sites and mitigating measures are provided."
+   ]
   }
+ },
+ "key_provisions": [
+  "Sections 1–5 (Book I, Basic Principles) — Short title: the “Bangsamoro Local Governance Code of 2023”. Policy commits the Bangsamoro Government to genuine and meaningful local autonomy through decentralisation proceeding from the regional government to its constituent LGUs, with accountability secured through recall, initiative, referendum and administrative supervision, and periodic public consultations required of ministries. Interpretation rules resolve doubt in favour of devolution and of the lower LGU, construe tax ordinances strictly against the LGU and liberally in favour of the taxpayer, and provide that where no legal provision or jurisprudence applies, “resort may be had to the customs and traditions in the place where the controversies take place”.",
+  "Sections 6–28 — General powers. Parliament may create, divide, merge, abolish or alter the boundaries of municipalities or barangays, subject to a plebiscite conducted by the Bangsamoro Electoral Office within 120 days. Creation and conversion rest on income, population and land area verified by the national finance and statistics agencies and the regional environment ministry. Naming of LGUs and public places requires consultation with the Bangsamoro Commission for the Preservation of Cultural Heritage; nothing may be named after a living person, and names of historical, cultural or ethnic significance may be changed only by unanimous vote. Every LGU exercises general welfare powers. Ministries must gradually devolve basic services and facilities to LGUs “within five (5) years after the effectivity of this Code”, subject to an assessment of financial viability and technical capacity. Marawi City, Cotabato City and the province of Basilan including its component municipalities and Lamitan City continue to enjoy full devolution status. LGUs may exercise eminent domain on a deposit of at least 15% of the fair market value; may reclassify agricultural land up to 15% for highly urbanised and independent component cities, 10% for component cities and 1st to 3rd class municipalities, and 5% for 4th to 6th class municipalities; and may negotiate and secure grants from local and foreign assistance agencies without clearance from any regional office or higher LGU, reporting within 30 days.",
+  "Sections 29–41 — Intergovernmental relations. The Chief Minister exercises general supervision over LGUs, directly over provinces and highly urbanised and independent component cities, through the province over component cities and municipalities, and through the city or municipality over barangays. Regional agencies planning any project that may cause pollution, climate change, resource depletion or loss of forest cover must consult the LGUs, non-governmental organisations and sectors concerned; no project may be implemented without those consultations, prior sanggunian approval is required where adverse effects are determined, and occupants “shall not be displaced unless appropriate relocation or resettlement sites and other measures to mitigate the adverse effects of displacement have been provided”. The extent of local chief executives' operational supervision and control over police, fire protection and jail management personnel “shall be governed by applicable national law and the BOL”.",
+  "Sections 42–48 — Elective officials. Qualifications require citizenship, registered voter status, 1 year's residence and literacy in Filipino or a local language, with age floors of 23 for governor, vice governor, provincial board member and highly urbanised city mayor and vice mayor; 21 for other city and municipal mayors and vice mayors; and 18 for sanggunian members, punong barangay and sangguniang barangay members. Section 43 requires all newly elected officials to undergo an 8-hour mandatory onboarding training run by the Bangsamoro Local Government Academy or an accredited provider, plus continuing skills training within the first 2 years; deliberate failure is a ground for disciplinary action and “disqualification for the immediately succeeding election”, continuing until the training is completed. Section 44 provides for a 32-hour mandatory and continuing programme designed jointly by MILG, the Development Academy of the Bangsamoro, the Local Government Academy and Mindanao State University, covering Bangsamoro culture, history and autonomy; leadership, local legislation, financial literacy, accountability and transparency; governance updates; and conflict-sensitivity and peacebuilding.",
+  "Section 45 — Disqualifications from running for local office: those sentenced by final judgment for moral turpitude or an offence punishable by 1 year or more, within 2 years of serving sentence; those removed from office in an administrative case; those convicted of violating the oath of allegiance; dual citizens; fugitives; permanent residents abroad; and — paragraph (g) — “Those who are related within the second civil degree of consanguinity or affinity, whether full or half-blood, legitimate or illegitimate, to any incumbent local official running for an elective position, including the spouses”, who are disqualified as candidates in the same election for any provincial elective position in the same province, city position in the same city, municipal position in the same municipality, and barangay position in the same barangay. Every candidate must declare in their certificate of candidacy that no such relationship exists. Where candidates are related to each other but not to an incumbent, the one seeking the lower office is disqualified; where they seek the same position, the Bangsamoro Electoral Office determines eligibility by drawing of lots within 48 hours of the filing period. Paragraph (h) disqualifies incumbents from running in the next election for office in an LGU outside their current jurisdiction, except the higher LGU to which their unit belongs; paragraph (i) disqualifies incumbent chief executives seeking the immediately-lower position; paragraph (j) disqualifies those failing the Section 43 training requirement.",
+  "Sections 46–55 — Manner of election, with sectoral representation providing 1 representative each from women, workers, and 1 further sector among the urban poor, indigenous cultural communities, persons with disabilities or others determined by ordinance. Elections are held every 3 years on the second Monday of May, with terms of 3 years and no more than 3 consecutive terms in the same position. Rules follow for permanent and temporary vacancies and succession, appointment to sanggunian vacancies by the Chief Minister or governor from the same political party, prohibited appointments circumventing succession, vacancies from failure of elections, and approval of leaves of absence, deemed approved if unacted upon within 5 working days.",
+  "Sections 56–69 — Local legislation. The vice governor or vice mayor presides and votes only to break a tie, and may not chair a standing committee. Sanggunian rules must provide for committees including appropriations, women and family, human rights, youth and sports, environmental protection and cooperatives, and for discipline of members, with suspension of up to 60 days or expulsion requiring a two-thirds vote and automatic expulsion on final conviction carrying at least 1 year's imprisonment for moral turpitude. Section 59 requires every sanggunian member to disclose in writing any business, financial or professional relationship, or any relation by affinity or consanguinity within the 4th civil degree, with anyone affected by a measure under consideration, before participating in deliberations. Sessions are held at least weekly for provinces, cities and municipalities and twice monthly for barangays, are open to the public unless closed by an affirmative vote for security, decency or morality, and “may use a local language”, with minutes translated into English or Tagalog. Ordinances are approved or vetoed within 15 days for provinces and 10 for cities and municipalities, with a veto exercisable only once and overridable by a two-thirds vote. Ordinances take effect 10 days after posting on the bulletin board and 2 other conspicuous places, must be disseminated in Filipino or English and in the language understood by the majority, and those with penal sanctions must be published in a newspaper. LGUs must, as far as practicable, maintain an official website or social media accounts posting all approved ordinances, and MILG establishes and maintains the Bangsamoro Register of Ordinances, which “shall have digital and online application and operability, and shall be accessible to the public”.",
+  "Sections 70–86 — Discipline and recall. Grounds for disciplining an elective official include disloyalty to the Republic, culpable violation of the Constitution, dishonesty, oppression, misconduct, gross negligence, moral turpitude offences, abuse of authority, unauthorised absence for 15 consecutive working days, and acquiring foreign citizenship or residence. Complaints go to the Office of the Chief Minister for provincial and highly urbanised or independent component city officials, the sangguniang panlalawigan for component city and municipal officials, and the city or municipal sanggunian for barangay officials — with the Office of the Chief Minister holding concurrent jurisdiction wherever there is reasonable ground to believe a fair and just resolution will not be obtained before the sanggunian with jurisdiction. No investigation may be held within 90 days immediately before a local election, and any preventive suspension imposed earlier is automatically lifted. Preventive suspension may not exceed 60 days in a single case or 90 days within a year, abuse of the power is penalised as abuse of authority, and the respondent receives no salary during suspension but full back pay on exoneration. Suspension may not exceed 6 months per offence and does not bar candidacy; removal from office does bar candidacy for any elective position. Recall for loss of confidence requires a petition supported by at least 25% of registered voters where the voting population is under 20,000, 20% where it is 20,000 to 75,000 with a floor of 5,000 petitioners, 15% where it is 75,000 to 300,000 with a floor of 15,000, and 10% where it exceeds 300,000 with a floor of 45,000. Recall may be sought only once per term, not within 1 year of assumption of office and not within 1 year before a regular local election, and the official may not resign while the process is in progress.",
+  "Sections 87–105 — Human resources. LGUs design their own structure and staffing subject to Civil Service Commission standards, with matters governed by national civil service law and BAA 17, the Bangsamoro Civil Service Code. No one related within the 4th civil degree to the appointing or recommending authority may be appointed to the local career service. Vacancies are posted for at least 15 days and screened by a personnel selection board, with preference given to bona fide residents of the locality. Prohibited business and pecuniary interests are enumerated. Governors and city and municipal mayors may not practise a profession or engage in any other occupation; sanggunian members may, except during session hours, with bar members barred from appearing against the government. Section 104 provides that officials may take the oath or affirmation of office “before the holy book of his/her religious affiliation”, and shall likewise take the oath of moral governance under BAA 13.",
+  "Books II and III — Local taxation and fiscal matters, and the structure, powers and officials of provinces, cities, municipalities and barangays, including local special bodies and the Katarungang Pambarangay. These occupy the bulk of the Code and were not read for this record; see the reading scope note.",
+  "Sections 550–570 (Book III, Leagues) — The Bangsamoro leagues of municipalities, cities and provinces, and the liga ng mga barangay, each affiliating with its national counterpart under RA 7160, submit quarterly written reports to MILG and may at any time report problems observed in the implementation of government projects or the acts and performance of any government official within their jurisdiction. League funds are held as trust funds, and MILG oversees league elections in coordination with the DILG.",
+  "Sections 571–585 (Book IV, Penal Provisions) — Ordinances with penal sanctions must be posted at 3 conspicuous places for at least 6 consecutive weeks, transmitted to the Bangsamoro Gazette within 12 days, and published with translation into local languages. Willfully withholding benefits due to local officials and employees is punishable by suspension or dismissal. Failure by a local treasurer or chief accountant to post and publish itemised monthly collections and disbursements within 10 days of month-end for at least 2 consecutive weeks carries a fine of ₱40,000 to ₱1,200,000, suspension, or imprisonment up to 1 year. Prohibited business transactions carry 6 months and 1 day to 6 years and a fine of ₱40,000 to ₱1,200,000. Refusal to appear before the lupon or pangkat is punishable as indirect contempt and bars the non-appearing complainant from judicial recourse and the non-appearing respondent from any counterclaim. Tax ordinance violations carry fines of ₱40,000 to ₱1,200,000 and 1 to 6 months' imprisonment, with barangay fines of ₱1,000 to ₱10,000. Officers who omit property from tax rolls, underassess, delay assessment, or fail to auction delinquent property face the same fine range. Pecuniary interest in credit-financed project contracts by an official or a relative within the 4th civil degree carries removal and 2 months to 3 years. Non-submission or non-implementation of a Gender and Development plan for 2 consecutive years is dereliction of duty, and misuse of the GAD budget is abuse of authority.",
+  "Sections 586–591 — Parliament exercises oversight through its Committee on Local Government and “shall undertake a mandatory review thereof ten (10) years after its enactment and at least three (3) years thereafter”, with any amendment of the Code to “only be based on the results, and upon the completion of the mandatory review”. An insurance system is to cover the punong barangay, sangguniang barangay members, barangay secretary and treasurer, barangay tanod and Barangay Peacekeeping Action Team, with MILG and the GSIS to undertake an actuarial study. Employees separated by reorganisation receive retirement benefits or separation pay of at least 1 month's salary per year of service. LGUs conduct periodic inventories of infrastructure, and no infrastructure or community project may be undertaken within an LGU without informing the local chief executive and sanggunian.",
+  "Sections 592–601 (Transitory) — Within 1 month of approval the Chief Minister convenes a Devolution Committee chaired by the Senior Minister with the interior Minister as vice-chairperson, the Cabinet, the chairperson of the Committee on Local Government and 5 Members of Parliament, and 1 representative each from provinces, municipalities and barangays. Its technical working group must assess LGU technical and financial capacity within 6 months of enactment and submit a devolution plan within the next 3 months, with an initial ₱10,000,000 charged against the Office of the Chief Minister including for an information campaign on the Code. Section 595 provides that “the implementation of Sections 43 and 45 (g) of this Code shall only be applicable starting from the May 2028 elections”. Incumbent appointive officials keep their positions without diminution. Existing tax ordinances remain in force pending review. Sections 599 to 601 govern the Special Geographic Area: the 63 barangays of Pikit, Pigkawayan, Carmen, Kabacan, Midsayap and Aleosan in Cotabato that voted for inclusion are constituted into 8 municipalities under BAA 41 to 48, clustered as the SGA under the Chief Minister's general supervision; the Special Geographic Area Development Authority created under BAA 13 is reorganised and attached to the Office of the Chief Minister, its board comprising all SGA mayors and all ministers, chaired by the Senior Minister with a mayor as vice-chairperson; and pending creation of a new province the SGA municipalities may levy real property tax and professional tax at rates initially no higher than those prevailing before their inclusion in the BARMM.",
+  "Sections 602–605 (Final) — MILG promulgates implementing rules within 3 months of effectivity in consultation with stakeholders. Muslim Mindanao Autonomy Act No. 25, the Local Government Code of the Autonomous Region in Muslim Mindanao, is repealed, and BAA 13 is repealed or amended insofar as inconsistent. The Code takes effect immediately following complete publication in at least 1 newspaper of general circulation in the BARMM."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Voters in every constituent LGU",
+   "Residents awaiting devolved basic services",
+   "Barangay officials and tanods, through insurance coverage",
+   "Women, workers and other sectors, through sanggunian representation",
+   "Residents of the Special Geographic Area",
+   "Communities facing displacement from projects"
+  ],
+  "impact_tags": [
+   "local_government",
+   "priority_code",
+   "governance_civil_service",
+   "elections",
+   "budget_finance"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱10,000,000 initial for the Devolution Committee, charged against the appropriations of the Office of the Chief Minister, including an information campaign on the Code",
+  "figures_note": "Quoted from Section 592(e). Penalty ranges in Book IV run from ₱40,000 to ₱1,200,000; barangay tax ordinance fines from ₱1,000 to ₱10,000."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2023-09-28"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/BAA-49.pdf",
+  "irr": "Due from MILG within 3 months of effectivity — not yet captured in this registry."
+ },
+ "related_legislation": {
+  "amends": [
+   "BAA 13 (Bangsamoro Administrative Code) — repealed or amended insofar as inconsistent, including the reorganisation of the Special Geographic Area Development Authority created under its Title VIII, Chapter 6"
+  ],
+  "amended_by": [
+   "BAA 93 and BAA 94 — expanding the scope of authority and services of the Special Geographic Area Development Authority"
+  ],
+  "repeals": "Muslim Mindanao Autonomy Act No. 25, the Local Government Code of the Autonomous Region in Muslim Mindanao",
+  "origin_bill": "Bill No. 30",
+  "related_note": "Personnel matters run through BAA 17, the Bangsamoro Civil Service Code, and officials take the oath of moral governance under BAA 13. The 8 SGA municipalities were created by BAA 41 to 48. Leagues affiliate with their national counterparts under RA 7160, and conduct standards follow RA 6713. Other acts build on this Code: BAA 62 uses its Section 130 for Local Internal Displacement Councils, Section 128 for local peace and order councils and Section 260 for the displaced persons' real property tax exemption; BAA 64 uses it for tribal local government units and for seating indigenous mandatory representatives; and BAA 81 governs SEAL grants to LGU awardees by reference to the 20% local development share of the National Tax Allotment."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "₱10,000,000 for the Devolution Committee",
+  "irr_status": "Section 602 requires MILG to promulgate implementing rules within 3 months of effectivity, in consultation with Bangsamoro and local government stakeholders. Not yet captured in this registry.",
+  "implementing_agency": {
+   "agency": "Ministry of the Interior and Local Government, with the Devolution Committee chaired by the Senior Minister",
+   "inferred": false
+  },
+  "reading_scope": "PARTIAL READ. This record was written from pages 1–38 and 290–304 of the 304-page enacted text — Book I's basic principles, general powers, intergovernmental relations, elective officials, local legislation, discipline, recall and human resources; the leagues chapters; and the whole of Book IV covering penal provisions, implementation, transitory and final provisions. Pages 39–289 were not read: these comprise Book II on local taxation and fiscal matters, including real property tax, and Book III on the structure, officials, powers and local special bodies of provinces, cities, municipalities and barangays, including the Katarungang Pambarangay. Specific provisions in those Books should be checked against the official text.",
+  "note": "Read from the enacted text as signed. Section 595 defers the anti-dynasty rule in Section 45(g) and the mandatory training disqualification in Section 43 to the May 2028 elections. Section 586 requires a mandatory parliamentary review 10 years after enactment and at least every 3 years thereafter, and provides that any amendment of the Code may only be based on the results of that review."
+ },
+ "citizen_questions": [
+  {
+   "q": "Does this ban political dynasties?",
+   "a": "Partly, and not yet. Section 45(g) disqualifies anyone related within the 2nd civil degree of consanguinity or affinity — including spouses — to an incumbent local official running for elective position, from being a candidate in the same election in the same province, city, municipality or barangay. But Section 595 provides that this applies only starting from the May 2028 elections."
+  },
+  {
+   "q": "What counts as the 2nd civil degree?",
+   "a": "Parents, children, grandparents, grandchildren and siblings, and the equivalent relations by marriage, including spouses. Relatives further out — cousins, nephews, in-laws beyond that circle — are not covered."
+  },
+  {
+   "q": "What if two relatives run and neither is related to an incumbent?",
+   "a": "If they seek different positions, the one running for the lower office is disqualified. If they seek the same position, the Bangsamoro Electoral Office determines who may run by drawing of lots, with the candidates notified to appear within 48 hours after the filing period."
+  },
+  {
+   "q": "Can a mayor run for a seat in a different town next election?",
+   "a": "No. Section 45(h) disqualifies incumbent local elective officials from running in the next election for any office in an LGU outside their current jurisdiction — except for office in the higher LGU their unit belongs to, or in a constituent LGU of it."
+  },
+  {
+   "q": "Do newly elected officials have to be trained?",
+   "a": "Yes. Section 43 requires 8 hours of mandatory onboarding on assumption plus continuing training within the first 2 years, covering Bangsamoro culture, history and autonomy, local legislation and financial management, and conflict-sensitivity and peacebuilding. Deliberate failure is a disciplinary ground and disqualifies the official from the immediately succeeding election — though this too starts only from May 2028."
+  },
+  {
+   "q": "How do we remove an official before their term ends?",
+   "a": "By recall for loss of confidence. A petition must be supported by at least 25% of registered voters where the voting population is under 20,000, 20% where it is 20,000 to 75,000, 15% where it is 75,000 to 300,000, and 10% above 300,000, with minimum petitioner counts at each tier. Recall may be sought only once per term, not within 1 year of the official assuming office and not within 1 year before a regular election."
+  },
+  {
+   "q": "When do services actually get devolved to my municipality?",
+   "a": "Ministries have 5 years from the Code's effectivity to gradually devolve basic services and facilities, subject to an assessment of each LGU's financial viability and technical capacity. A Devolution Committee chaired by the Senior Minister supervises the transfer, with ₱10 million for its work including an information campaign."
+  },
+  {
+   "q": "Where can I read my barangay's ordinances?",
+   "a": "The interior ministry maintains the Bangsamoro Register of Ordinances, which must be digital, online and accessible to the public. LGUs must also, as far as practicable, post ordinances on their own website or social media accounts, and ordinances must be posted at the hall and 2 other conspicuous places."
+  },
+  {
+   "q": "Can I take my oath of office on my own holy book?",
+   "a": "Yes. Section 104 allows all elective and appointive local officials and employees to take the oath or affirmation of office before the holy book of their religious affiliation, and requires them also to take the oath of moral governance under the Administrative Code."
+  },
+  {
+   "q": "What happens to the 63 barangays that joined the BARMM?",
+   "a": "They were constituted into 8 municipalities under BAA 41 to 48, clustered as the Special Geographic Area under the Chief Minister's general supervision, with the SGA Development Authority reorganised and attached to the Office of the Chief Minister. Pending the creation of a new province, those municipalities may levy real property tax and professional tax — at rates initially no higher than those in force before they joined the region."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 49",
+  "line2": "Bangsamoro Local Governance Code of 2023",
+  "badges": [
+   "IN FORCE",
+   "Local Government",
+   "2023"
+  ],
+  "what_this_does": "Governs every province, city, municipality and barangay — devolving services over 5 years and barring close relatives of incumbents from running, from 2028.",
+  "who_it_affects": "Every voter and local official · all constituent LGUs · Special Geographic Area residents",
+  "effective": "2023-09-28"
+ },
+ "views": {
+  "simple": "The region's local government code, replacing the ARMM's: 5-year gradual devolution of basic services to LGUs under a Devolution Committee; mandatory onboarding and continuing training for elected officials; an anti-dynasty rule disqualifying relatives within the 2nd civil degree of an incumbent from running in the same election, effective from May 2028; recall thresholds from 10% to 25% of voters; sanggunian sessions open to the public and conductible in a local language; a public digital Register of Ordinances; criminal penalties for failing to publish local finances; insurance for barangay officials and tanods; and transitory arrangements constituting the 63 Special Geographic Area barangays into 8 municipalities.",
+  "official": "AN ACT PROVIDING FOR THE BANGSAMORO LOCAL GOVERNANCE CODE"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 49, enacted text as signed (Parliament's acts index). Pages 1–38 and 290–304 of 304 were read; see reading_scope under implementation status for what was not.",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Section references are quoted from the portions read. Verify against the official copy before citing, particularly for Books II and III."
+ }
 }

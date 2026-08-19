@@ -1,187 +1,226 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 52,
-    "short_title": "Extends the Validity of the FY 2023 GAA",
-    "official_title": "AN ACT EXTENDING THE VALIDITY OF THE FY 2023 GAA UNTIL DECEMBER 31, 2024 (AMENDING BAA 32)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2023-12-20",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Extends the Validity of the FY 2023 GAA Until December 31, 2024 (amending Baa 32).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Extends the Validity of the FY 2023 GAA Until December 31, 2024 (amending Baa 32).",
-    "who_will_be_affected": [
-      "Parents & students",
-      "Patients",
-      "Workers & suppliers",
-      "Taxpayers"
-    ],
-    "when_will_it_take_effect": "Ratified 2023-12-20; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "This is a money law: it decides how much funding BARMM ministries and programs get - the schools, hospitals, roads, scholarships, and social services you use are all paid from it. No single citizen 'applies' for it, but nearly every public service you touch depends on it.",
-      "in_practice": [
-        "Sets each ministry's budget ceiling for the year (or adds/extends funds mid-year for supplementals and extensions)",
-        "Slow disbursement is the recurring issue - several BAAs exist purely to extend the validity of unspent funds",
-        "Big-ticket items to watch: education (MBHTE), health (MOH), public works (MPW), and the Special Development Fund for conflict-affected communities"
-      ],
-      "for_specific_groups": {
-        "Parents & students": "Classroom construction, teacher hiring, and scholarship slots are set here",
-        "Patients": "Hospital operating budgets, medicines, and health worker salaries flow from this law",
-        "Workers & suppliers": "Government projects and procurement opportunities follow the appropriations",
-        "Taxpayers": "This is the accountability document - compare what was appropriated with what was actually delivered"
-      },
-      "where_this_applies": "All of BARMM",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Follow-up reports: the Parliament itself has passed resolutions demanding ministries account for these funds"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Funds every public service you use - the enabler of all other benefits.",
-        "direct_benefits": [
-          {
-            "benefit": "Operating budgets for schools, hospitals, roads, scholarships, social programs",
-            "who_gets_it": "Everyone using public services",
-            "how_to_access": "Automatic through the funded agencies"
-          },
-          {
-            "benefit": "Salaries of teachers, health workers, and government personnel",
-            "who_gets_it": "Public employees",
-            "how_to_access": "Through payroll of funded agencies"
-          },
-          {
-            "benefit": "Special Development Fund projects in conflict-affected communities",
-            "who_gets_it": "Camp and conflict-affected barangays",
-            "how_to_access": "Through LGU/OCM project identification"
-          }
-        ],
-        "indirect_benefits": [
-          "Procurement and job opportunities from funded projects",
-          "Predictability: agencies can plan the year"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Compare appropriations vs. actual delivery - Parliament's own resolutions demand these reports; you can too"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Amends: BAA 32",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 52,
+  "short_title": "Extension of the 2023 Appropriations",
+  "official_title": "AN ACT EXTENDING THE VALIDITY OF THE GENERAL APPROPRIATIONS ACT OF THE BANGSAMORO FOR FISCAL YEAR 2023 UNTIL DECEMBER 31, 2024, AMENDING FOR THE PURPOSE SECTION 50 OF BANGSAMORO AUTONOMY ACT NO. 32, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2023-12-20",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Second Regular Session (begun 15 September 2022)",
+  "date_passed": "2023-12-20",
+  "date_passed_hijri": "Jumada Al-Akhirah 07, 1445",
+  "date_approved_by_chief_minister": "2023-12-29",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "budget_finance",
-      "other"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2023-12-20"
-    }
+  "effectivity": "Immediately after publication in a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Extends the 2023 Bangsamoro budget to the end of 2024 — and closes a loophole by ruling that money merely transferred between offices or to a local government does not count as spent until it actually pays for something delivered.",
+  "why_was_it_proposed": "The 2023 appropriations were about to lapse with works unfinished. Parliament used the same act to tighten what counts as disbursement and to protect local government units' tax shares.",
+  "what_will_change": "Most 2023 appropriations stayed releasable and obligable to 31 December 2024, with obligated infrastructure and operating items valid until fully expended. Unreleased money lapses and unspent money reverts to the Treasury. Transfers between units no longer count as disbursement.",
+  "who_will_be_affected": [
+   "Communities and contractors with 2023-funded works",
+   "Constituent local government units, whose national tax shares are protected until fully released, obligated and disbursed",
+   "Bangsamoro ministries, offices and agencies",
+   "Anyone concerned with whether budgeted money is actually spent on what it was voted for"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [
-      "BAA 32"
+  "when_will_it_take_effect": "Took effect immediately on publication at the end of 2023.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. The 2023 budget ran to end-2024 — and money shuffled between offices or handed to an LGU is not treated as spent until it actually pays for completed work.",
+   "in_practice": [
+    "2023 appropriations available for release and obligation until 31 December 2024",
+    "Amounts obligated by that date for infrastructure completion, and for MOOE under Support to Operations and Operations and other capital outlays, stay valid until fully expended",
+    "Unreleased appropriations lapse; unexpended funds revert to the Bangsamoro Treasury under a Special Fund for reappropriation",
+    "Constituent LGUs' shares in national taxes collected in the BARMM remain available until fully released, obligated and disbursed",
+    "Funds transferred between organisational units, between ministries, or to LGUs are not considered disbursed until actually used to pay for completed construction, goods delivered and services rendered, inspected and accepted within the validity period",
+    "Personnel Services and MOOE under General Administration and Support were obligable only to 31 December 2023",
+    "The Special Development Fund's validity is left to a separate law"
+   ],
+   "for_specific_groups": {
+    "Local government units": "Your share of national taxes collected in the region is protected — it remains available until fully released, obligated and disbursed, notwithstanding anything else in the section.",
+    "Anyone auditing spending": "Section 1's transfer rule is the important one: a ministry cannot beat a deadline by moving money to another unit or to an LGU and calling it disbursed.",
+    "Contractors": "Obligated infrastructure and operating items remain valid until fully expended."
+   },
+   "where_this_applies": "The Bangsamoro Government's fiscal year 2023 appropriations.",
+   "when_you_will_feel_it": "In force since the end of 2023.",
+   "what_you_can_do": [
+    "Ask whether money reported as disbursed actually paid for work completed, inspected and accepted — that is now the statutory test",
+    "Ask your LGU about its share of national taxes collected in the region, which this act protects"
+   ],
+   "watch_out_for": [
+    "Obligated amounts remain valid 'until fully expended', so there is no final payment date once money is committed.",
+    "The Special Development Fund is carved out and governed by its own law — see BAA 51.",
+    "Personnel Services and General Administration and Support MOOE were not extended beyond 2023."
+   ],
+   "key_terms_explained": {
+    "Release": "Making an appropriation available to a spending agency.",
+    "Obligation": "Committing money to a contract or purchase.",
+    "Disbursement": "Actually paying money out — which this act redefines to exclude mere transfers.",
+    "Reversion": "Unspent money returning to the Treasury, here into a Special Fund for reappropriation under the Organic Law.",
+    "GAS": "General Administration and Support — the overhead category excluded from the extension."
+   },
+   "status_note": "Passed Jumada Al-Akhirah 07, 1445 / 20 December 2023, approved by the Chief Minister on 29 December 2023.",
+   "benefits": {
+    "headline": "A year's extension for the 2023 budget, plus a statutory test for what counts as actually spending money.",
+    "direct_benefits": [
+     {
+      "benefit": "2023-funded projects and operations could continue through 2024",
+      "who_gets_it": "Communities, contractors and agencies",
+      "how_to_access": "Automatic"
+     },
+     {
+      "benefit": "Protection of LGU shares in national taxes until fully released, obligated and disbursed",
+      "who_gets_it": "Constituent local government units",
+      "how_to_access": "Stated notwithstanding any other provision or issuance"
+     },
+     {
+      "benefit": "A rule that transferred funds are not 'disbursed' until they pay for delivered work",
+      "who_gets_it": "Anyone relying on spending reports being meaningful",
+      "how_to_access": "Section 1"
+     }
     ],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Finance, and Budget and Management (MFBM)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2023-12-20 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Finance, and Budget and Management (MFBM) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 52",
-    "line2": "Extends the Validity of the FY 2023 GAA",
-    "badges": [
-      "ENACTED",
-      "Budget Finance",
-      "2023"
+    "indirect_benefits": [
+     "Clear reversion of unspent funds to the Treasury for reappropriation"
     ],
-    "what_this_does": "Extends the Validity of the FY 2023 GAA Until December 31, 2024 (amending Baa 32).",
-    "who_it_affects": "General public",
-    "effective": "2023-12-20"
-  },
-  "views": {
-    "simple": "Extends the Validity of the FY 2023 GAA Until December 31, 2024 (amending Baa 32).",
-    "official": "AN ACT EXTENDING THE VALIDITY OF THE FY 2023 GAA UNTIL DECEMBER 31, 2024 (AMENDING BAA 32)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "limitations": [
+     "No new money.",
+     "Obligated amounts have no final payment date.",
+     "The Special Development Fund is excluded and governed separately."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act governs government spending."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts for the public. Its restriction falls on agencies: treating a transfer of funds as a disbursement before the money has actually paid for completed and accepted work."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment.",
+    "note": "Ministries, offices and agencies are directed to strictly observe the validity of appropriations and the reversion of funds; no sanction is stated in this act."
+   },
+   "where_to_complain": {
+    "first_stop": "Ministry of Finance, and Budget and Management (MFBM), authorised to issue the implementing guidelines",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A ministry transfers project money to a municipality in December to avoid the deadline. Under Section 1 that is not a disbursement — the money only counts as spent once it has paid for completed construction or goods delivered, inspected and accepted.",
+    "An LGU worries its share of national taxes will lapse. The act says those shares remain available until fully released, obligated and disbursed, notwithstanding the rest of the section."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Amends Section 50 of Bangsamoro Autonomy Act No. 32 (the FY2023 General Appropriations Act). All appropriations are available for release and obligation until 31 December 2024. Amounts obligated as of that date for the completion of construction, inspection and payment of Infrastructure Capital Outlays, and for delivery, inspection and payment of MOOE under Support to Operations and Operations and other capital outlays, remain valid until fully expended. After the validity period, unreleased appropriations lapse and unexpended or undisbursed funds revert to the Bangsamoro Treasury under a Special Fund for reappropriation under Section 19, Article XII of RA 11054. Notwithstanding that provision and any other issuance, the shares of constituent LGUs in national taxes collected in the BARMM remain available until fully released, obligated and disbursed. Funds transferred between organisational units within a ministry, office or agency, between ministries, offices or agencies, or by them to LGUs, are not considered disbursed until the transferred amounts have actually been used to pay for completed construction, goods delivered and services rendered, inspected and accepted within the validity period, with transfers strictly in accordance with budgeting, accounting, auditing and procurement laws.",
+  "Section 2 — Inserts Section 50-A into BAA 32: Personnel Services and MOOE under General Administration and Support are valid for obligation only until 31 December 2023, and the extension of the Special Development Fund's validity is governed by a law enacted for the purpose.",
+  "Section 4 — Takes effect immediately after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Communities and contractors with 2023-funded works",
+   "Constituent LGUs",
+   "Anyone tracking public spending"
+  ],
+  "impact_tags": [
+   "budget_appropriations",
+   "local_government",
+   "governance_civil_service"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "No new appropriation. It extends the FY2023 budget enacted by BAA 32.",
+  "figures_note": "The act states no amount — it changes deadlines and the definition of disbursement."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2023-12-20"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/BAA-52.pdf",
+  "irr": "MFBM guidelines authorised by the amended Section 50. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [
+   "BAA 32"
+  ],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 266",
+  "related_note": "Passed the same day as BAA 51, which separately extended the Special Development Fund — a carve-out this act expressly makes in its new Section 50-A."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": null,
+  "irr_status": "The amended Section 50 authorises the MFBM to issue implementing guidelines.",
+  "note": "Read from the enacted text as signed."
+ },
+ "citizen_questions": [
+  {
+   "q": "What is the most useful thing in this act?",
+   "a": "The rule that money transferred between government units, or handed to a local government, is not counted as disbursed until it has actually paid for completed construction, goods delivered or services rendered, inspected and accepted."
+  },
+  {
+   "q": "How long did 2023 money last?",
+   "a": "Release and obligation to 31 December 2024. Once obligated, infrastructure and certain operating items remain valid until fully expended."
+  },
+  {
+   "q": "What happens to money never spent?",
+   "a": "Unreleased appropriations lapse, and unexpended or undisbursed funds revert to the Bangsamoro Treasury under a Special Fund for reappropriation."
+  },
+  {
+   "q": "Are local government tax shares affected?",
+   "a": "They are protected. Notwithstanding the rest of the section, constituent LGUs' shares in national taxes collected in the region remain available until fully released, obligated and disbursed."
+  },
+  {
+   "q": "Does this cover the Special Development Fund?",
+   "a": "No. Section 50-A expressly leaves that to a separate law — BAA 51, passed the same day."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 52",
+  "line2": "Extension of the 2023 Appropriations",
+  "badges": [
+   "IN FORCE",
+   "Budget & Appropriations",
+   "2023"
+  ],
+  "what_this_does": "Extends the 2023 budget to end-2024 and rules that transferred funds are not spent until they pay for delivered work.",
+  "who_it_affects": "Communities and contractors · LGUs · anyone tracking spending"
+ },
+ "views": {
+  "simple": "Extends the 2023 Bangsamoro budget to 31 December 2024, protects local government tax shares, and closes the loophole of treating fund transfers as disbursements.",
+  "official": "AN ACT EXTENDING THE VALIDITY OF THE GENERAL APPROPRIATIONS ACT OF THE BANGSAMORO FOR FISCAL YEAR 2023 UNTIL DECEMBER 31, 2024, AMENDING FOR THE PURPOSE SECTION 50 OF BANGSAMORO AUTONOMY ACT NO. 32, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 52, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

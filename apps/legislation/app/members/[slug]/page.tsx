@@ -53,8 +53,18 @@ export default async function MemberProfilePage({ params }: { params: Promise<{ 
 		<section className='mx-auto max-w-[88rem] px-6 pb-24 pt-12 lg:px-8 lg:pb-32 lg:pt-16'>
 			{/* Two columns: the person, then the record. Held well apart — the
 			    left column runs biography and the right runs a list of measures,
-			    and at a narrow gutter the two read as one column of text. */}
-			<div className='grid gap-10 lg:grid-cols-[minmax(0,24rem)_minmax(0,1fr)] lg:gap-24 xl:grid-cols-[minmax(0,28rem)_minmax(0,1fr)] xl:gap-32'>
+			    and at a narrow gutter the two read as one column of text.
+
+			    The single column is stated rather than left implicit, because an
+			    implicit track is sized `auto` and an `auto` track never shrinks below
+			    its contents' min-content width. The record's tab row is a nowrap flex
+			    strip about 470px across; it carries `overflow-x: auto` so it can
+			    scroll, but a scroll container still reports that full width upward, so
+			    the track took it and every paragraph on the page — both columns — set
+			    itself to 470 and ran off the side of a phone. `grid-cols-1` is
+			    `minmax(0,1fr)`, which lets the track be the width it is given and
+			    leaves the tab row to scroll, which is what it was built to do. */}
+			<div className='grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,24rem)_minmax(0,1fr)] lg:gap-24 xl:grid-cols-[minmax(0,28rem)_minmax(0,1fr)] xl:gap-32'>
 				<Reveal>
 					<MemberIdentity member={member} />
 				</Reveal>

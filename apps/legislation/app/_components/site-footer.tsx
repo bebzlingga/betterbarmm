@@ -32,7 +32,10 @@ function FooterLink({ href, label }: { href: string; label: string }) {
 export function SiteFooter() {
 	return (
 		<footer className='mt-12'>
-			<div className='mx-auto max-w-[88rem] px-6 py-16 lg:px-8'>
+			{/* Less air under the footer than over it. The top padding separates it
+			    from the page; the bottom only trails the copyright line off the end
+			    of the document, and there is nothing after it to be held apart from. */}
+			<div className='mx-auto max-w-[88rem] px-6 pb-6 pt-12 sm:pb-8 sm:pt-16 lg:px-8'>
 				{/* Two areas, not five columns: the mark and notice take the free
 				    space, and the three link lists share one content-sized column so
 				    they sit at their natural width instead of being stretched across
@@ -63,7 +66,9 @@ export function SiteFooter() {
 						</p>
 					</div>
 
-					<div className='flex flex-wrap gap-x-16 gap-y-10 sm:gap-x-20'>
+					{/* A narrower column gap on a phone, so two of the three lists still
+					    fit on a line instead of each claiming one of its own. */}
+					<div className='flex flex-wrap gap-x-10 gap-y-9 sm:gap-x-20 sm:gap-y-10'>
 						<div>
 							<p className='label label-strong'>Registry</p>
 							<div className='mt-4 grid gap-2.5'>
@@ -93,7 +98,7 @@ export function SiteFooter() {
 					</div>
 				</div>
 
-				<div className='mt-20 flex flex-col justify-between gap-2 border-t border-[var(--rule-soft)] pt-6 text-xs text-[var(--ink-mute)] sm:flex-row sm:items-center lg:mt-24'>
+				<div className='mt-14 flex flex-col justify-between gap-2 border-t border-[var(--rule-soft)] pt-6 text-xs text-[var(--ink-mute)] sm:mt-20 sm:flex-row sm:items-center lg:mt-24'>
 					<p>
 						2026{' '}
 						<a

@@ -1,164 +1,242 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 37,
-    "short_title": "Establishes the Seat of Government of BARMM in",
-    "official_title": "AN ACT ESTABLISHING THE SEAT OF GOVERNMENT OF BARMM IN PARANG, MAGUINDANAO DEL NORTE (AMENDING BAA 13)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2023-06-19",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Establishes the Seat of Government of BARMM in Parang, Maguindanao del Norte (amending Baa 13).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Establishes the Seat of Government of BARMM in Parang, Maguindanao del Norte (amending Baa 13).",
-    "who_will_be_affected": [
-      "General public"
-    ],
-    "when_will_it_take_effect": "Ratified 2023-06-19; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "A governance law shaping how the Bangsamoro Government works. Its effect on daily life is indirect but real: clearer rules inside government generally mean faster, more accountable service at the counter.",
-      "in_practice": [
-        "Defines powers, procedures, or structures within the regional government"
-      ],
-      "for_specific_groups": {
-        "General public": "Better-defined government duties are the basis for demanding service"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Better-ordered government, indirectly better service.",
-        "direct_benefits": [
-          {
-            "benefit": "Clearer rules inside government you can hold offices to",
-            "who_gets_it": "General public",
-            "how_to_access": "Cite the law when following up transactions"
-          }
-        ],
-        "indirect_benefits": [
-          "Institutional maturity of the autonomy"
-        ],
-        "limitations": [
-          "Benefits are structural rather than claimable programs"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Amends: BAA 13",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 37,
+  "short_title": "Seat of Government Act of 2023",
+  "official_title": "AN ACT ESTABLISHING THE SEAT OF GOVERNMENT OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO IN THE MUNICIPALITY OF PARANG, PROVINCE OF MAGUINDANAO DEL NORTE, APPROPRIATING FUNDS THEREFOR, AMENDING BOOK 1, CHAPTER 2, SECTION 9 OF THE BANGSAMORO AUTONOMY ACT NO. 13, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2023-06-19",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Second Regular Session (begun 15 September 2022)",
+  "date_passed": "2023-06-19",
+  "date_passed_hijri": "Dhul Hijjah 01, 1444",
+  "date_approved_by_chief_minister": "2023-06-24",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "municipality_lgu",
-      "other"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2023-06-19"
-    }
+  "effectivity": "15 days after publication in the Official Gazette or in two newspapers of general circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Moves the region's capital. The seat of government of the BARMM is established at Parang, Maguindanao del Norte, where a new government centre will be built — with the transfer from Cotabato City to happen gradually as the infrastructure is finished.",
+  "why_was_it_proposed": "The act rests on the region's power to organise its own bureaucracy in the exercise of self-governance. It gives no further reason for the choice of location.",
+  "what_will_change": "The Wali's office, the Chief Minister's office, the Parliament, the ministries and agencies are all to relocate to a new government centre at Parang. A committee chaired by the Senior Minister plans it, Parliament approves the site, and the whole project has a ten-year limit.",
+  "who_will_be_affected": [
+   "Residents of Parang, Maguindanao del Norte, where the new capital will sit",
+   "Cotabato City, which loses the seat of government",
+   "Government employees who would relocate",
+   "Anyone who travels to the regional government for services"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [
-      "BAA 13"
+  "when_will_it_take_effect": "In force since 2023, but the physical transfer is gradual and depends on infrastructure being built.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. The region's capital moves from Cotabato City to Parang, Maguindanao del Norte — gradually, as buildings, roads, power and water are completed, with a ten-year outer limit on the project.",
+   "in_practice": [
+    "The seat of government is established at Parang, where the Bangsamoro government centre will be built",
+    "It will house the Office of the Wali, the Office of the Chief Minister, the Parliament, ministries, offices and agencies",
+    "A Committee on the Establishment of the Seat of Government, chaired by the Senior Minister, plans the move and identifies the site — subject to Parliament's approval",
+    "Civil society organisations are invited as observers to the Committee",
+    "The physical transfer from Cotabato City proceeds gradually as office buildings, roads, light and power, water and communications are completed",
+    "The existing government centre in Cotabato City is to be improved and preserved for its historical value, and renamed after the transfer",
+    "₱50,000,000 for the first year, with later amounts through the annual budget; foreign grants and donations are permitted",
+    "The Committee dissolves on completion, and in any case within 10 years unless Parliament extends it"
+   ],
+   "for_specific_groups": {
+    "Residents of Parang": "The regional capital comes to your municipality — but Section 4 excludes the government centre from local policies that would run counter to uninterrupted government service.",
+    "Cotabato City": "You lose the seat of government. The existing centre is to be improved, preserved for its historical value, and renamed once the move is complete.",
+    "Government employees": "Relocation is gradual and tied to infrastructure, not to a fixed date.",
+    "Civil society": "CSO representatives are invited as observers to the planning committee — a rare express seat, though as observers rather than members."
+   },
+   "where_this_applies": "Parang, Maguindanao del Norte, and the existing government centre in Cotabato City.",
+   "when_you_will_feel_it": "Gradually. The transfer depends on completed infrastructure, with a ten-year outer limit on the Committee's life.",
+   "what_you_can_do": [
+    "Ask the Committee on the Establishment of the Seat of Government about the master plan and timetable",
+    "Note that the specific site requires Parliament's approval",
+    "Ask about the consultations with local government units the act requires"
+   ],
+   "watch_out_for": [
+    "Section 4 removes the government centre from the reach of local policies that would run counter to uninterrupted government service — a significant carve-out from municipal authority.",
+    "No completion deadline for the transfer itself; only the Committee has a ten-year limit, extendable by Parliament.",
+    "₱50 million is a first-year planning figure, not the cost of building a capital.",
+    "The act gives no stated reason for choosing Parang."
+   ],
+   "key_terms_explained": {
+    "Seat of government": "Where the region's central institutions are located.",
+    "Wali": "The ceremonial head of the Bangsamoro.",
+    "CESG": "Committee on the Establishment of the Seat of Government, which plans and oversees the move.",
+    "Inter-Governmental Fiscal Policy Board": "The joint national–regional body whose guidelines govern foreign grants and donations here."
+   },
+   "status_note": "Passed Dhul Hijjah 01, 1444 / 19 June 2023, approved by the Chief Minister on 24 June 2023.",
+   "benefits": {
+    "headline": "A purpose-built regional capital at Parang, planned by committee with Parliament approving the site.",
+    "direct_benefits": [
+     {
+      "benefit": "A new government centre housing the Wali, Chief Minister, Parliament, ministries and agencies",
+      "who_gets_it": "The region",
+      "how_to_access": "Built at Parang, transfer gradual"
+     },
+     {
+      "benefit": "₱50,000,000 first-year funding for planning and the master plan",
+      "who_gets_it": "The Committee on the Establishment of the Seat of Government",
+      "how_to_access": "Appropriated by Section 8"
+     },
+     {
+      "benefit": "Preservation and improvement of the existing Cotabato City centre",
+      "who_gets_it": "Cotabato City",
+      "how_to_access": "Required by Section 7"
+     }
     ],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of the Interior and Local Government (MILG)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2023-06-19 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of the Interior and Local Government (MILG) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 37",
-    "line2": "Establishes the Seat of Government of BARMM in",
-    "badges": [
-      "ENACTED",
-      "Municipality Lgu",
-      "2023"
+    "indirect_benefits": [
+     "Civil society observers on the planning committee",
+     "Consultations with affected local government units required",
+     "Foreign grants and donations permitted as additional funding"
     ],
-    "what_this_does": "Establishes the Seat of Government of BARMM in Parang, Maguindanao del Norte (amending Baa 13).",
-    "who_it_affects": "General public",
-    "effective": "2023-06-19"
-  },
-  "views": {
-    "simple": "Establishes the Seat of Government of BARMM in Parang, Maguindanao del Norte (amending Baa 13).",
-    "official": "AN ACT ESTABLISHING THE SEAT OF GOVERNMENT OF BARMM IN PARANG, MAGUINDANAO DEL NORTE (AMENDING BAA 13)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "limitations": [
+     "No completion deadline for the move itself.",
+     "₱50 million covers planning, not construction.",
+     "The government centre sits outside certain local policies."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "Committee on the Establishment of the Seat of Government, chaired by the Senior Minister",
+    "oversight": "Bangsamoro Parliament, whose approval is required for the specific site",
+    "note": "The act creates no complaints procedure, but requires consultations with local government units and stakeholders."
+   },
+   "everyday_scenarios": [
+    "A resident of Parang finds the regional capital being built in their municipality. The government centre will not be subject to local policies that would interrupt government service, and consultations with the LGU are required.",
+    "A government employee in Cotabato City asks when they must move. The transfer is gradual and begins only as office buildings, roads, power, water and communications are completed.",
+    "Someone asks what happens to the old centre. It is to be improved, preserved for its historical value, and renamed once the transfer is complete, with stakeholders consulted on the new name."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Seat of Government Act of 2023”. The act amends Book 1, Chapter 2, Section 9 of Bangsamoro Autonomy Act No. 13, the Bangsamoro Administrative Code.",
+  "Section 2 — Policy: in exercising its right to self-governance the region is free to pursue its political, economic, social and cultural development, and has the power to create offices and organise its own bureaucracy for efficient and effective delivery of government programmes and services.",
+  "Section 3 — Establishes the seat of the BARMM in the Municipality of Parang, Maguindanao del Norte, where the Bangsamoro government centre shall be built, housing the Office of the Wali, the Office of the Chief Minister, the Bangsamoro Parliament, ministries, offices and agencies, and other facilities.",
+  "Section 4 — The government centre within Parang shall not be subject to local policies, measures and issuances that would run counter to the primacy of uninterrupted government service. Consultations and dialogues with the local government unit and other stakeholders shall be conducted to ensure a smooth transition.",
+  "Section 5 — Establishes the Committee on the Establishment of the Seat of Government, chaired by the Senior Minister, with the Ministers of Finance and Budget and Management, Public Works, Environment, Natural Resources and Energy, and Transportation and Communications; the Chairperson of the Bangsamoro Commission for the Preservation of Cultural Heritage; and the Director-General of the Bangsamoro Planning and Development Authority. Civil society organisations' representatives are invited as observers. The Committee identifies the specific site and area, subject to the approval of Parliament; convenes within 30 days of effectivity; and ceases to exist on completion and full implementation, which shall not exceed 10 years unless extended by Parliament.",
+  "Section 6 — The actual physical transfer from Cotabato City to Parang proceeds gradually upon completion of required infrastructure — office buildings, roads, light and power, water, communication and other facilities. The Committee leads preparation of the master plan, strategies, processes and timetable, including identification of the site for the Parliament, and conducts consultations with concerned local government units and stakeholders.",
+  "Section 7 — The infrastructure, buildings and facilities of the existing government centre in Cotabato City shall be improved to sustain their usefulness for government operations and preserve their historical value. The present centre shall be renamed after the final transfer is completed, with stakeholders consulted on the new name.",
+  "Section 8 — ₱50,000,000 is initially appropriated for the Committee's first year, including crafting the master plan; later amounts go through the General Appropriations Act of the Bangsamoro. Foreign grants, aids and donations may also be used, subject to the guidelines of the Inter-Governmental Fiscal Policy Board.",
+  "Section 9 — The Committee, consulting appropriate agencies, shall promulgate implementing rules within 90 days of effectivity.",
+  "Section 12 — Takes effect 15 days after publication in the Official Gazette or in two newspapers of general circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of Parang, Maguindanao del Norte",
+   "The Bangsamoro Government"
+  ],
+  "impact_tags": [
+   "governance_civil_service",
+   "local_government",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱50,000,000 for the first year, with later amounts through the annual budget; foreign grants and donations permitted",
+  "figures_note": "Quoted from Sections 5 and 8: ₱50,000,000 first year, a ten-year limit on the Committee."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2023-06-19"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/08/BAA-37.pdf",
+  "irr": "Required from the Committee within 90 days of effectivity. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [
+   "BAA 13"
+  ],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 43",
+  "related_note": "Amends Book 1, Chapter 2, Section 9 of the Bangsamoro Administrative Code (BAA 13). Parang is also the site of the Iranon hospital converted to provincial status by BAA 73."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱50,000,000 first year",
+  "irr_status": "Section 9 required Committee rules within 90 days of effectivity.",
+  "note": "Read from the enacted text as signed. The transfer is gradual and infrastructure-dependent; whether the site has been identified and approved by Parliament is not recorded here."
+ },
+ "citizen_questions": [
+  {
+   "q": "Is the capital moving?",
+   "a": "Yes. The seat of government is established at Parang, Maguindanao del Norte, where a new Bangsamoro government centre will be built to house the Wali, the Chief Minister, the Parliament, and the ministries and agencies."
+  },
+  {
+   "q": "When does the move happen?",
+   "a": "Gradually, as the required infrastructure — office buildings, roads, power, water and communications — is completed. The act sets no completion date; only the planning Committee has a ten-year limit."
+  },
+  {
+   "q": "Who decides exactly where?",
+   "a": "The Committee on the Establishment of the Seat of Government identifies the specific site and area, subject to the approval of the Bangsamoro Parliament."
+  },
+  {
+   "q": "What happens to Cotabato City?",
+   "a": "The existing government centre is to be improved and preserved for its historical value, and renamed once the transfer is complete, with stakeholders consulted on the new name."
+  },
+  {
+   "q": "How much does it cost?",
+   "a": "₱50 million was appropriated for the Committee's first year including the master plan. The cost of actually building the capital is left to later budgets, with foreign grants and donations also permitted."
+  },
+  {
+   "q": "Will Parang's local government control the site?",
+   "a": "Not entirely. Section 4 says the government centre shall not be subject to local policies, measures and issuances that would run counter to the primacy of uninterrupted government service."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 37",
+  "line2": "Seat of Government Act of 2023",
+  "badges": [
+   "IN FORCE",
+   "Governance & Civil Service",
+   "2023"
+  ],
+  "what_this_does": "Moves the region's capital from Cotabato City to a new government centre at Parang, Maguindanao del Norte.",
+  "who_it_affects": "Residents of Parang · Cotabato City · government employees"
+ },
+ "views": {
+  "simple": "Establishes the region's seat of government at Parang, Maguindanao del Norte, with a new government centre to be built and the transfer from Cotabato City proceeding gradually as infrastructure is completed.",
+  "official": "AN ACT ESTABLISHING THE SEAT OF GOVERNMENT OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO IN THE MUNICIPALITY OF PARANG, PROVINCE OF MAGUINDANAO DEL NORTE, APPROPRIATING FUNDS THEREFOR, AMENDING BOOK 1, CHAPTER 2, SECTION 9 OF THE BANGSAMORO AUTONOMY ACT NO. 13, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 37, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

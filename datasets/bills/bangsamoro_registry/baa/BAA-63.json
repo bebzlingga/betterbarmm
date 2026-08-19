@@ -1,189 +1,307 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 63,
-    "short_title": "Supplemental Budget Act",
-    "official_title": "AN ACT APPROPRIATING SUPPLEMENTAL FUNDS FOR THE OPERATION OF THE BANGSAMORO GOVERNMENT",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2024-09-27",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Appropriates Supplemental Funds for the Operation of the Bangsamoro Government.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Appropriates Supplemental Funds for the Operation of the Bangsamoro Government.",
-    "who_will_be_affected": [
-      "Parents & students",
-      "Patients",
-      "Workers & suppliers",
-      "Taxpayers"
-    ],
-    "when_will_it_take_effect": "Ratified 2024-09-27; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "This is a money law: it decides how much funding BARMM ministries and programs get - the schools, hospitals, roads, scholarships, and social services you use are all paid from it. No single citizen 'applies' for it, but nearly every public service you touch depends on it.",
-      "in_practice": [
-        "Sets each ministry's budget ceiling for the year (or adds/extends funds mid-year for supplementals and extensions)",
-        "Slow disbursement is the recurring issue - several BAAs exist purely to extend the validity of unspent funds",
-        "Big-ticket items to watch: education (MBHTE), health (MOH), public works (MPW), and the Special Development Fund for conflict-affected communities"
-      ],
-      "for_specific_groups": {
-        "Parents & students": "Classroom construction, teacher hiring, and scholarship slots are set here",
-        "Patients": "Hospital operating budgets, medicines, and health worker salaries flow from this law",
-        "Workers & suppliers": "Government projects and procurement opportunities follow the appropriations",
-        "Taxpayers": "This is the accountability document - compare what was appropriated with what was actually delivered"
-      },
-      "where_this_applies": "All of BARMM",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Follow-up reports: the Parliament itself has passed resolutions demanding ministries account for these funds"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Funds every public service you use - the enabler of all other benefits.",
-        "direct_benefits": [
-          {
-            "benefit": "Operating budgets for schools, hospitals, roads, scholarships, social programs",
-            "who_gets_it": "Everyone using public services",
-            "how_to_access": "Automatic through the funded agencies"
-          },
-          {
-            "benefit": "Salaries of teachers, health workers, and government personnel",
-            "who_gets_it": "Public employees",
-            "how_to_access": "Through payroll of funded agencies"
-          },
-          {
-            "benefit": "Special Development Fund projects in conflict-affected communities",
-            "who_gets_it": "Camp and conflict-affected barangays",
-            "how_to_access": "Through LGU/OCM project identification"
-          }
-        ],
-        "indirect_benefits": [
-          "Procurement and job opportunities from funded projects",
-          "Predictability: agencies can plan the year"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Compare appropriations vs. actual delivery - Parliament's own resolutions demand these reports; you can too"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 63,
+  "short_title": "FY 2024 Supplemental Appropriations Act",
+  "official_title": "AN ACT APPROPRIATING SUPPLEMENTAL FUNDS FOR THE OPERATION OF THE BANGSAMORO GOVERNMENT AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2024-09-27",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session, begun 15 September 2022",
+  "date_passed": "2024-09-27",
+  "date_passed_hijri": "Rabi Al-Awwal 24, 1446",
+  "date_approved_by_chief_minister": "2024-10-14",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "All BARMM ministries",
-      "Health workers",
-      "Hospitals",
-      "Patients",
-      "Public programs"
-    ],
-    "impact_tags": [
-      "budget_appropriations",
-      "budget_finance",
-      "health"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2024-09-27"
-    }
+  "origin_bills": "Parliament Bill No. 330",
+  "effectivity": "15 days after publication in any newspaper of general circulation in the Bangsamoro Autonomous Region"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "An ₱8.44 billion top-up to the 2024 regional budget — funded not by new money but out of appropriations from earlier years that were never spent.",
+  "why_was_it_proposed": "Unutilised prior-year appropriations had accumulated in the Bangsamoro Treasury. Rather than let them lapse, Parliament re-appropriated them across 17 ministries, offices and commissions.",
+  "what_will_change": "₱8.44 billion is released, with agriculture taking 43.6% of it and public works, health and the interior ministry taking most of the rest. The money is available for obligation until 31 December 2025, after which unreleased appropriations lapse and unobligated funds revert to the Treasury.",
+  "who_will_be_affected": [
+   "Farmers and fisherfolk, through the ₱3.68 billion agriculture allocation",
+   "Communities awaiting roads, water supply and flood control",
+   "Patients and health workers, through ₱1 billion for health programmes",
+   "Barangay health workers, with ₱124.6 million of their own",
+   "Learners, through ₱375.8 million for education including school buildings",
+   "Disaster-affected communities, through ₱512.3 million for rapid emergency response"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Finance, and Budget and Management (MFBM)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2024-09-27 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Finance, and Budget and Management (MFBM) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 63",
-    "line2": "Supplemental Budget Act",
-    "badges": [
-      "ENACTED",
-      "Budget Finance",
-      "2024"
+  "when_will_it_take_effect": "In force since 2024 — approved by the Chief Minister on 14 October 2024, effective 15 days after publication. The appropriations were valid for obligation until 31 December 2025.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW, and now expired for new obligations. This was ₱8.44 billion of previously unspent money put back to work in 2024–2025. If a road, health programme or farm input reached your community in that window, this act may be where it came from.",
+   "in_practice": [
+    "₱8,441,261,975 total, across 17 ministries, offices and commissions",
+    "The money came from unutilised prior years' appropriations held in the Bangsamoro Treasury, not from new revenue",
+    "Agriculture, Fisheries and Agrarian Reform received ₱3.68 billion — 43.6% of the whole act",
+    "Public Works received ₱1.21 billion, all capital outlay",
+    "Health received ₱1.00 billion, including ₱124.6 million for barangay health workers",
+    "Interior and Local Government received ₱956.5 million, of which ₱512.3 million for rapid emergency action on disasters",
+    "Funds were available for obligation only until 31 December 2025",
+    "Unreleased appropriations lapse; unobligated funds revert to the Treasury for reappropriation"
+   ],
+   "for_specific_groups": {
+    "Farmers, fisherfolk and agrarian reform beneficiaries": "₱3.68 billion — ₱2.98 billion for the Basic Integration for Harmonized Intervention programme, ₱633.9 million for aquaculture and capture fisheries, and ₱60.5 million for land acquisition for poor agrarian reform beneficiaries.",
+    "Patients and health workers": "₱1.00 billion, including ₱298.4 million for non-communicable disease, ₱237.4 million for the Tiyakap Bangsamoro Kalusugan programme, ₱124.6 million for barangay health workers, ₱121.1 million for nutrition, and ₱65.6 million for surgical outreach.",
+    "Communities awaiting infrastructure": "₱1.21 billion in public works capital outlay — ₱704.5 million for other infrastructure, ₱294.6 million for road network development, ₱141.0 million for water supply and ₱25.2 million for flood management.",
+    "Learners and schools": "₱375.8 million for education — ₱174.0 million for school-based management and operations, ₱142.3 million for management support, ₱29.9 million for technical-vocational provisions, ₱14.0 million for school sports and ₱9.6 million for madaris education services.",
+    "Workers": "₱148.4 million for employment facilitation and promotion, including ₱104.1 million in financial assistance and subsidy and ₱27.5 million in labour and wages.",
+    "Young people": "₱69.5 million for the Bangsamoro Youth Commission, almost all of it training and scholarship expenses.",
+    "Indigenous peoples": "₱3.4 million for the Ministry of Indigenous Peoples' Affairs — 0.04% of the act, and the smallest agency allocation in it.",
+    "Communities in conflict": "₱271.7 million for public order and safety, including ₱168.5 million for peacebuilding initiatives and ₱39.0 million for alternative dispute resolution."
+   },
+   "where_this_applies": "The whole BARMM, with funds released directly to ministries, offices and agencies including their provincial offices.",
+   "when_you_will_feel_it": "The obligation window closed on 31 December 2025; delivery, inspection and payment continued until funds were fully expended.",
+   "what_you_can_do": [
+    "Check ministry websites for infrastructure project disclosures — Section 13 requires the project title, location, description, budget estimates and winning contractor to be posted within 30 days of contract signing, and the actual cost and any variation orders within 30 days of completion",
+    "Look for the agency's status report on Commission on Audit findings, due within 60 days of the annual audit report and required to be posted on the agency website",
+    "If reports are missing, note that Section 12 automatically suspends the salaries of the responsible officials until they comply"
+   ],
+   "watch_out_for": [
+    "This act spends money that earlier budgets failed to spend. ₱8.44 billion of accumulated underspending is itself a finding about the region's absorptive capacity.",
+    "Agriculture took 43.6% of the act in a single allocation.",
+    "The Ministry of Indigenous Peoples' Affairs received ₱3.4 million — less than a tenth of what the Darul-Ifta' received.",
+    "Engineering and administrative overhead of up to 1%, plus administrative costs of up to 3%, may be deducted from projects costing more than ₱1,000,000.",
+    "This registry has read the full act, but it records agency and programme totals rather than every object-of-expenditure line."
+   ],
+   "key_terms_explained": {
+    "Supplemental appropriation": "A budget law passed during the year to add to what the annual appropriations act already provided.",
+    "Unutilised prior years' appropriations": "Money appropriated in earlier budgets that was never obligated or released, sitting in the Treasury. This act's entire funding source.",
+    "SARO": "Special Allotment Release Order — the document authorising an agency to actually commit money against an appropriation.",
+    "MOOE": "Maintenance and Other Operating Expenses — day-to-day running costs, as distinct from salaries and capital outlay.",
+    "Capital outlay": "Spending on assets that last — buildings, roads, equipment, vehicles.",
+    "Cash budgeting system": "Appropriations valid for obligation only within a fixed window, after which they lapse.",
+    "Certification of Availability of Funds": "The chief accountant's certificate that money exists for a contract, required before any obligation is incurred.",
+    "EAO": "Engineering and Administrative Overhead — a percentage deducted from infrastructure project funds for supervision costs."
+   },
+   "status_note": "Passed 27 September 2024 and approved by the Chief Minister on 14 October 2024.",
+   "benefits": {
+    "headline": "₱8.44 billion of previously unspent money returned to service, weighted heavily toward agriculture, infrastructure and health.",
+    "direct_benefits": [
+     {
+      "benefit": "₱3,677,848,135 for agriculture, fisheries and agrarian reform",
+      "who_gets_it": "Farmers, fisherfolk and agrarian reform beneficiaries",
+      "how_to_access": "Through MAFAR programmes — BINHI, ISDA and LUPA"
+     },
+     {
+      "benefit": "₱1,210,224,400 for public works, entirely capital outlay",
+      "who_gets_it": "Communities awaiting roads, water and flood control",
+      "how_to_access": "Through MPW's road network, flood management, water supply and other infrastructure programmes"
+     },
+     {
+      "benefit": "₱1,000,661,574 for health programmes",
+      "who_gets_it": "Patients, barangay health workers and communities",
+      "how_to_access": "Through MOH clusters and outreach programmes"
+     },
+     {
+      "benefit": "₱956,492,335 for the interior ministry, including ₱512,315,000 for rapid emergency action on disaster incidence",
+      "who_gets_it": "LGUs and disaster-affected communities",
+      "how_to_access": "Through MILG services"
+     },
+     {
+      "benefit": "₱375,787,509 for education",
+      "who_gets_it": "Learners, schools and madaris",
+      "how_to_access": "Through MBHTE programmes"
+     },
+     {
+      "benefit": "₱271,650,000 for public order and safety, including ₱168,500,000 for peacebuilding",
+      "who_gets_it": "Conflict-affected communities",
+      "how_to_access": "Through MPOS programmes including alternative dispute resolution"
+     },
+     {
+      "benefit": "₱195,002,933 for social services, including ₱173.5 million for family and community welfare",
+      "who_gets_it": "Families needing assistance",
+      "how_to_access": "Through MSSD programmes"
+     },
+     {
+      "benefit": "Mandatory public disclosure of infrastructure contracts and costs",
+      "who_gets_it": "Anyone tracking public spending",
+      "how_to_access": "Section 13 — posted on agency websites within 30 days of contract and of completion"
+     }
     ],
-    "what_this_does": "Appropriates Supplemental Funds for the Operation of the Bangsamoro Government.",
-    "who_it_affects": "All BARMM ministries · Health workers · Hospitals · Patients",
-    "effective": "2024-09-27"
-  },
-  "views": {
-    "simple": "Appropriates Supplemental Funds for the Operation of the Bangsamoro Government.",
-    "official": "AN ACT APPROPRIATING SUPPLEMENTAL FUNDS FOR THE OPERATION OF THE BANGSAMORO GOVERNMENT"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Direct release of funds to ministries and their provincial offices",
+     "Status reports on Commission on Audit findings posted publicly within 60 days",
+     "Automatic salary suspension for officials who fail to file accountability reports",
+     "Reversion of unobligated funds to the Treasury for reappropriation rather than silent retention"
+    ],
+    "limitations": [
+     "The obligation window closed on 31 December 2025.",
+     "The act funds programmes, not entitlements — nothing here creates a right an individual can claim.",
+     "Allocation is heavily concentrated: 4 ministries account for 81% of the total."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. An appropriations act imposes no duty on the public."
+    ],
+    "for_agencies": [
+     "Secure a Special Allotment Release Order before obligating appropriations",
+     "Obtain a Certification of Availability of Funds from the chief accountant, made part of every contract, before incurring any obligation",
+     "Obtain the Chief Minister's Authority to Purchase Motor Vehicle before procuring any transportation equipment",
+     "Adhere strictly to government procurement laws",
+     "Submit monthly, quarterly or yearly financial and physical accountability reports through the Unified Reporting System, in hardcopy to the finance ministry, and on the agency website",
+     "Submit a status report on Commission on Audit findings within 60 days of the annual audit report, and post it on the agency website",
+     "Post infrastructure project details, budget estimates, winning contractor, actual cost and variation orders on the agency website within 30 days"
+    ]
+   },
+   "what_is_prohibited": [
+    "Incurring an obligation without first securing a Certification of Availability of Funds from the agency's chief accountant.",
+    "Procuring transportation equipment without the Chief Minister's Authority to Purchase Motor Vehicle.",
+    "Treating funds transferred between organisational units, between agencies, or to LGUs as disbursed before the goods, works or services have actually been delivered, inspected and accepted within the validity period.",
+    "Deducting engineering and administrative overhead above 1%, or administrative costs above 3%, of project costs for projects over ₱1,000,000.",
+    "Obligating appropriations after the validity period."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence.",
+    "for_officials": "Failure to submit the required financial and physical accountability reports results in the automatic suspension of the salaries of the responsible official or employee until they comply. Repeated failure or refusal without justifiable cause may be a ground for administrative disciplinary action under civil service rules, with the Minister or Head of Office responsible for enforcing this."
+   },
+   "where_to_complain": {
+    "first_stop": "The ministry, office or agency implementing the programme or project",
+    "oversight": "Ministry of Finance, and Budget and Management; the Speaker; and Parliament's Committee on Finance, Budget and Management, all of which receive copies of agencies' audit status reports",
+    "audit": "The Commission on Audit, whose annual audit report each agency must respond to within 60 days",
+    "note": "Infrastructure project details and costs must be posted on the implementing agency's website."
+   },
+   "everyday_scenarios": [
+    "A farmers' association receives seed and equipment support in 2025. The largest single allocation in this act — ₱2.98 billion for the Basic Integration for Harmonized Intervention programme — is the likely source.",
+    "A barangay gets a new water supply system. ₱141.0 million was appropriated here for the water supply programme under public works.",
+    "A resident wants to know who won the contract for a road in their municipality. Section 13 requires the agency to post the project title, location, description, budget estimates and winning contractor within 30 days of entering the contract.",
+    "A ministry stops filing its accountability reports. Section 12 automatically suspends the salaries of the responsible officials until they comply."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Appropriation of Funds. The amounts are appropriated “out of the unutilized prior years' appropriations from the Bangsamoro Treasury for the operation of the Bangsamoro Government”. Agency totals for the FY 2024 supplemental appropriation are: Agriculture, Fisheries and Agrarian Reform ₱3,677,848,135; Public Works ₱1,210,224,400; Health ₱1,000,661,574; the Interior and Local Government ₱956,492,335; Basic, Higher and Technical Education ₱375,787,509; Public Order and Safety ₱271,650,000; Social Services and Development ₱195,002,933; Science and Technology ₱194,578,999; Labor and Employment ₱148,385,580; Transportation and Communications ₱129,248,710; Human Settlements and Development ₱112,800,000; the Bangsamoro Youth Commission ₱69,450,000; Environment, Natural Resources and Energy ₱45,230,500; the Bangsamoro Darul-Ifta' ₱38,508,800; the Bangsamoro Sports Commission ₱7,500,000; Trade, Investment and Tourism ₱4,500,000; and Indigenous Peoples' Affairs ₱3,392,500 — a total of ₱8,441,261,975.",
+  "Section 1 (programme detail) — Among the larger programme lines: Basic Integration for Harmonized Intervention ₱2,983,428,351 and Integrated and Sustainable Development for Aquaculture/Capture ₱633,928,429 under agriculture; Other Infrastructure ₱704,520,600 and Road Network Development ₱294,633,800 under public works; Rapid Emergency Action on Disaster Incidence Services ₱512,315,000 and Interior Affairs Services ₱232,027,900 under the interior ministry; Non-Communicable Disease Cluster ₱298,427,374, Tiyakap Bangsamoro Kalusugan ₱237,375,000, Barangay Health Workers Program ₱124,560,000 and Nutrition Program ₱121,061,300 under health; School-Based Management and Operations ₱173,966,132 and Management Support to Education ₱142,255,577 under education; Peace Building Initiatives ₱168,500,000 and Alternative Dispute Resolution ₱39,000,000 under public order and safety; Employment Facilitation and Promotion ₱148,385,580 under labour; Science Education, Scholarship and Grants ₱93,878,299 under science and technology; and Promulgation of Religious Edicts ₱38,508,800, entirely professional services, under the Darul-Ifta'.",
+  "Sections 2–4 (General Provisions) — A Special Allotment Release Order authorises agencies to obligate the appropriations. Government funds are to be used in accordance with the appropriations authorised for the purpose, and agencies must strictly adhere to existing procurement laws, rules and regulations for goods, infrastructure projects and consulting services.",
+  "Sections 5–8 — Agencies may deduct engineering and administrative overhead not exceeding 1% of project funds, and administrative costs not exceeding 3% of project costs, for projects costing more than ₱1,000,000. All transportation equipment outlays require the Chief Minister's Authority to Purchase Motor Vehicle on the finance ministry's recommendation, subject to existing guidelines and procurement law. No obligation may be incurred without first securing a Certification of Availability of Funds from the agency's chief accountant, sufficient to cover the contracted activities and made part of the signed contract.",
+  "Section 9 — Cash Budgeting System. Appropriations are available for obligation until 31 December 2025, with delivery, inspection and payment valid until funds are fully expended. After the validity period, unreleased appropriations lapse and unobligated funds revert to the Bangsamoro Treasury under a Special Fund for reappropriation in accordance with Section 19, Article XII of RA 11054. Funds transferred between organisational units, between agencies, or to local government units are not considered disbursed until the transferred amounts have actually been used to pay for completed construction, goods delivered and services rendered, inspected and accepted within the validity period.",
+  "Sections 10–12 — Funds are released directly to ministries, offices and agencies, including funds specifically appropriated for their provincial offices and organisational units. Within 60 days of receiving the Commission on Audit's annual audit report, agencies must submit a status report on actions taken on audit findings and recommendations, furnishing copies to the finance ministry, the Speaker and Parliament's Committee on Finance, Budget and Management, and ensuring it is posted on the agency website. Agencies must submit financial and physical accountability reports monthly, quarterly or yearly through the Unified Reporting System, in hardcopy to the finance ministry, and on their websites. “Failure to comply with any of the foregoing shall result in the automatic suspension of the salaries of the responsible official or employee until they have complied”, with repeated failure a ground for administrative disciplinary action.",
+  "Sections 13–15 — Transparency in Infrastructure Projects requires agencies to post on their websites the project title, location and detailed description, the detailed estimates behind the Approved Budget for the Contract, and the winning contractor with the detailed estimates of the bid as awarded, within 30 calendar days of entering into the contract; and the detailed actual cost of the project with any variation orders, within 30 calendar days of the certificate of completion. Ministers, heads of offices and web administrators are responsible for compliance. A separability clause follows, and the act takes effect 15 days after publication in any newspaper of general circulation in the region."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Farmers, fisherfolk and agrarian reform beneficiaries",
+   "Communities awaiting roads, water supply and flood control",
+   "Patients, barangay health workers and nutrition programme beneficiaries",
+   "Learners and schools, including madaris",
+   "Disaster-affected communities",
+   "Conflict-affected communities, through peacebuilding and dispute resolution"
+  ],
+  "impact_tags": [
+   "budget_appropriations",
+   "agriculture_fisheries",
+   "infrastructure",
+   "health",
+   "budget_finance"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱8,441,261,975 total, appropriated out of unutilised prior years' appropriations from the Bangsamoro Treasury",
+  "figures_note": "Agency and programme totals read from Section 1 of the enacted text. Agriculture accounts for 43.6% of the act; the 4 largest agencies together account for 81%."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2024-09-27"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/10/BAA-63.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill No. 330",
+  "related_note": "Supplements the FY 2024 annual appropriations act. Reversion of unobligated funds follows Section 19, Article XII of RA 11054, the Organic Law. The automatic salary suspension for non-reporting in Section 12 anticipates the same mechanism later codified generally in Section 75 of BAA 84, the Bangsamoro Budget System Act of 2025, as does the cash budgeting system in Section 9."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "₱8,441,261,975",
+  "irr_status": "None required. The finance ministry may issue guidelines on the reporting and release of funds under Section 10.",
+  "implementing_agency": {
+   "agency": "The 17 ministries, offices and commissions receiving appropriations, with the Ministry of Finance, and Budget and Management issuing release orders and guidelines",
+   "inferred": false
+  },
+  "note": "Read from the enacted text as signed, all 21 pages. Agency and programme totals are recorded; object-of-expenditure detail within each programme was read but is not reproduced line by line. The appropriations were available for obligation only until 31 December 2025."
+ },
+ "citizen_questions": [
+  {
+   "q": "Where did this money come from?",
+   "a": "From unutilised prior years' appropriations held in the Bangsamoro Treasury — money that earlier budgets had appropriated but never spent. It is not new revenue."
+  },
+  {
+   "q": "How much was it in total?",
+   "a": "₱8,441,261,975 across 17 ministries, offices and commissions."
+  },
+  {
+   "q": "Which agency got the most?",
+   "a": "The Ministry of Agriculture, Fisheries and Agrarian Reform, with ₱3,677,848,135 — 43.6% of the whole act. Public works, health and the interior ministry follow, and together those 4 account for about 81% of the total."
+  },
+  {
+   "q": "Which got the least?",
+   "a": "The Ministry of Indigenous Peoples' Affairs, with ₱3,392,500 — about 0.04% of the act, and less than a tenth of the ₱38,508,800 appropriated to the Bangsamoro Darul-Ifta'."
+  },
+  {
+   "q": "Is the money still available?",
+   "a": "No. Section 9 made the appropriations available for obligation only until 31 December 2025. Unreleased appropriations lapsed, and unobligated funds reverted to the Bangsamoro Treasury under a Special Fund for reappropriation."
+  },
+  {
+   "q": "Can I find out who built a project funded by this act?",
+   "a": "Yes. Section 13 requires the implementing agency to post on its website the project title, location and description, the estimates behind the approved budget, and the winning contractor with its bid estimates, within 30 days of signing the contract — and the actual cost and any variation orders within 30 days of the completion certificate."
+  },
+  {
+   "q": "What happens if an agency does not report on its spending?",
+   "a": "The salaries of the responsible official or employee are automatically suspended until they comply, and repeated failure without justifiable cause may be a ground for administrative disciplinary action."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 63",
+  "line2": "FY 2024 Supplemental Appropriations Act",
+  "badges": [
+   "ENACTED",
+   "Budget",
+   "2024"
+  ],
+  "what_this_does": "Appropriates ₱8.44 billion of previously unspent money across 17 agencies, with 43.6% going to agriculture.",
+  "who_it_affects": "Farmers and fisherfolk · communities awaiting infrastructure · health and education users",
+  "effective": "2024-10-14"
+ },
+ "views": {
+  "simple": "A ₱8.44 billion supplemental budget for 2024, funded entirely out of appropriations from earlier years that were never spent. Agriculture, fisheries and agrarian reform took ₱3.68 billion, public works ₱1.21 billion, health ₱1.00 billion and the interior ministry ₱956.5 million. Funds were obligable until 31 December 2025, with agencies required to publish infrastructure contracts and costs and facing automatic salary suspension for failing to file accountability reports.",
+  "official": "AN ACT APPROPRIATING SUPPLEMENTAL FUNDS FOR THE OPERATION OF THE BANGSAMORO GOVERNMENT AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 63, enacted text as signed (Parliament's acts index), all 21 pages.",
+  "generation": "Agency and programme totals transcribed from Section 1 of the enacted text on 19 August 2026; percentages computed from those figures. Verify against the official copy before citing."
+ }
 }

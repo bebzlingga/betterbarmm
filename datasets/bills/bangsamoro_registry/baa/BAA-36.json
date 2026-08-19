@@ -1,185 +1,232 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 36,
-    "short_title": "Establishes a Revolving Fund for Salaries of Nationally",
-    "official_title": "AN ACT ESTABLISHING A REVOLVING FUND FOR SALARIES OF NATIONALLY FUNDED PROGRAM WORKERS DEPLOYED IN BARMM",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2023-05-17",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Establishes a Revolving Fund for Salaries of Nationally Funded Program Workers Deployed in BARMM.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Establishes a Revolving Fund for Salaries of Nationally Funded Program Workers Deployed in BARMM.",
-    "who_will_be_affected": [
-      "Parents & students",
-      "Patients",
-      "Workers & suppliers",
-      "Taxpayers"
-    ],
-    "when_will_it_take_effect": "Ratified 2023-05-17; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "This is a money law: it decides how much funding BARMM ministries and programs get - the schools, hospitals, roads, scholarships, and social services you use are all paid from it. No single citizen 'applies' for it, but nearly every public service you touch depends on it.",
-      "in_practice": [
-        "Sets each ministry's budget ceiling for the year (or adds/extends funds mid-year for supplementals and extensions)",
-        "Slow disbursement is the recurring issue - several BAAs exist purely to extend the validity of unspent funds",
-        "Big-ticket items to watch: education (MBHTE), health (MOH), public works (MPW), and the Special Development Fund for conflict-affected communities"
-      ],
-      "for_specific_groups": {
-        "Parents & students": "Classroom construction, teacher hiring, and scholarship slots are set here",
-        "Patients": "Hospital operating budgets, medicines, and health worker salaries flow from this law",
-        "Workers & suppliers": "Government projects and procurement opportunities follow the appropriations",
-        "Taxpayers": "This is the accountability document - compare what was appropriated with what was actually delivered"
-      },
-      "where_this_applies": "All of BARMM",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Follow-up reports: the Parliament itself has passed resolutions demanding ministries account for these funds"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Funds every public service you use - the enabler of all other benefits.",
-        "direct_benefits": [
-          {
-            "benefit": "Operating budgets for schools, hospitals, roads, scholarships, social programs",
-            "who_gets_it": "Everyone using public services",
-            "how_to_access": "Automatic through the funded agencies"
-          },
-          {
-            "benefit": "Salaries of teachers, health workers, and government personnel",
-            "who_gets_it": "Public employees",
-            "how_to_access": "Through payroll of funded agencies"
-          },
-          {
-            "benefit": "Special Development Fund projects in conflict-affected communities",
-            "who_gets_it": "Camp and conflict-affected barangays",
-            "how_to_access": "Through LGU/OCM project identification"
-          }
-        ],
-        "indirect_benefits": [
-          "Procurement and job opportunities from funded projects",
-          "Predictability: agencies can plan the year"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Compare appropriations vs. actual delivery - Parliament's own resolutions demand these reports; you can too"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 36,
+  "short_title": "Bangsamoro Revolving Fund Act of 2023",
+  "official_title": "AN ACT ESTABLISHING A REVOLVING FUND FOR THE PAYMENT OF SALARIES, COMPENSATION, AND EMOLUMENTS OF WORKERS AND PERSONNEL OF NATIONALLY FUNDED PROGRAMS DEPLOYED IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO, PROVIDING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2023-05-17",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Second Regular Session (begun 15 September 2022)",
+  "date_passed": "2023-05-17",
+  "date_passed_hijri": "Shawwal 26, 1444",
+  "date_approved_by_chief_minister": "2023-05-22",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Government employees",
-      "Public-service users"
-    ],
-    "impact_tags": [
-      "budget_finance",
-      "governance_civil_service"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2023-05-17"
-    }
+  "effectivity": "15 days after publication in a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates a ₱1 billion standby fund so workers on nationally-funded programmes in the region get paid on time even when the national government's money arrives late.",
+  "why_was_it_proposed": "Workers deployed under national programmes but supervised by Bangsamoro ministries were going unpaid when national funds were delayed in transfer or downloading. The act builds a bridge.",
+  "what_will_change": "When national funds are late, the Bangsamoro ministry can draw on the Fund to pay salaries, compensation and emoluments — and the Fund is reimbursed once the national agency finally transfers the money.",
+  "who_will_be_affected": [
+   "Workers and personnel on nationally-funded programmes in the region, supervised by Bangsamoro ministries",
+   "Bangsamoro ministries, agencies and offices implementing those programmes",
+   "The Ministry of Finance, and Budget and Management, which administers the Fund",
+   "Parliament, which receives quarterly reports"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Finance, and Budget and Management (MFBM)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2023-05-17 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Finance, and Budget and Management (MFBM) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 36",
-    "line2": "Establishes a Revolving Fund for Salaries of Nationally",
-    "badges": [
-      "ENACTED",
-      "Budget Finance",
-      "2023"
+  "when_will_it_take_effect": "In force since 2023 — 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. If you work on a nationally-funded programme run by a Bangsamoro ministry and the national money is late, there is a ₱1 billion fund to pay you on time. It gets repaid when the national funds arrive.",
+   "in_practice": [
+    "₱1,000,000,000 revolving fund, charged against the Contingent Fund",
+    "Covers salaries, compensation and emoluments of nationally-funded workers directly supervised by BARMM ministries, agencies or offices",
+    "Used specifically when there is delay in the transfer or downloading of funds by national government agencies",
+    "Released by the Ministry of Finance, and Budget and Management on request by the concerned ministry",
+    "Reimbursed to the Fund immediately once the national agency transfers the corresponding funds",
+    "A quarterly report on releases, obligations and disbursements goes to Parliament through the Speaker"
+   ],
+   "for_specific_groups": {
+    "Workers on national programmes": "You are the reason the Fund exists — it is there so a delay in Manila does not become a missed payday in the region.",
+    "Bangsamoro ministries": "You request a release from the Fund and must still do what is required to get the national funds downloaded.",
+    "Parliament": "Quarterly reports on releases, obligations and disbursements, submitted through the Speaker."
+   },
+   "where_this_applies": "Nationally-funded programmes implemented in the BARMM under Bangsamoro ministry supervision.",
+   "when_you_will_feel_it": "In force since 2023 — when national funds are delayed.",
+   "what_you_can_do": [
+    "If your salary on a nationally-funded programme is delayed, ask the supervising Bangsamoro ministry whether it has requested a release from the Revolving Fund",
+    "Ask for the quarterly utilisation report, which goes to Parliament through the Speaker"
+   ],
+   "watch_out_for": [
+    "The Fund covers delay, not liability — Section 5 says nothing in the act makes the Bangsamoro Government responsible for national government obligations.",
+    "It pays only workers directly supervised by BARMM ministries, agencies or offices.",
+    "The Fund is hard to wind up: it survives programme discontinuance and only dissolves after two fiscal years with no requests.",
+    "No penalty attaches if a ministry fails to request a release."
+   ],
+   "key_terms_explained": {
+    "Revolving fund": "A standing pot that is drawn down and then replenished, rather than spent once.",
+    "Downloading of funds": "The transfer of money from a national agency to a regional or local implementer.",
+    "Emoluments": "Payments for holding a post, beyond basic salary.",
+    "Contingent Fund": "The budget reserve the ₱1 billion is charged against.",
+    "Reversion": "Returning unused money to the Treasury — here only after two fiscal years without a request."
+   },
+   "status_note": "Passed Shawwal 26, 1444 / 17 May 2023, approved by the Chief Minister on 22 May 2023.",
+   "benefits": {
+    "headline": "₱1 billion standing behind the paycheques of workers on nationally-funded programmes.",
+    "direct_benefits": [
+     {
+      "benefit": "Timely payment of salaries, compensation and emoluments despite national funding delays",
+      "who_gets_it": "Nationally-funded workers and personnel supervised by BARMM ministries",
+      "amount": "Drawn from a ₱1,000,000,000 revolving fund",
+      "how_to_access": "The supervising ministry requests a release from the MFBM"
+     },
+     {
+      "benefit": "A quarterly public account of the Fund's use",
+      "who_gets_it": "Parliament and, through it, the public",
+      "how_to_access": "MFBM report to Parliament through the Speaker"
+     }
     ],
-    "what_this_does": "Establishes a Revolving Fund for Salaries of Nationally Funded Program Workers Deployed in BARMM.",
-    "who_it_affects": "Government employees · Public-service users",
-    "effective": "2023-05-17"
-  },
-  "views": {
-    "simple": "Establishes a Revolving Fund for Salaries of Nationally Funded Program Workers Deployed in BARMM.",
-    "official": "AN ACT ESTABLISHING A REVOLVING FUND FOR SALARIES OF NATIONALLY FUNDED PROGRAM WORKERS DEPLOYED IN BARMM"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Continuity of national programme delivery in the region",
+     "Automatic reimbursement once national funds arrive, so the Fund is not depleted"
+    ],
+    "limitations": [
+     "Covers only workers directly supervised by BARMM ministries, agencies or offices.",
+     "Does not transfer national government liability to the region.",
+     "No sanction if a ministry does not request a release."
+    ]
+   },
+   "your_responsibilities": {
+    "for_ministries": [
+     "Do what is required to secure the downloading of funds from the National Government",
+     "Request releases from the Fund where there is delay",
+     "Reimburse the Fund once national funds are transferred"
+    ],
+    "for_citizens": [
+     "None."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences. The Fund may be released only for the purpose specified."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "The Bangsamoro ministry, agency or office supervising your programme",
+    "oversight": "Ministry of Finance, and Budget and Management, which administers the Fund; and the Parliament's Committee on Finance, Budget and Management",
+    "note": "The act creates no complaints procedure, but the quarterly report is a document a citizen can ask for."
+   },
+   "everyday_scenarios": [
+    "A health worker on a nationally-funded programme supervised by the regional health ministry is not paid because the national transfer is late. The ministry can request a release from the Revolving Fund so the salary is paid on time, and the Fund is repaid when the national money arrives.",
+    "A programme ends and hiring stops. The Fund is not automatically dissolved — it survives, and reverts to the Treasury only after two fiscal years in which no ministry has requested anything from it."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Bangsamoro Revolving Fund Act of 2023”.",
+  "Section 2 — Policy: the Bangsamoro Government shall afford workers in the region full protection and promotion of their general welfare, and shall protect the interests of its workers and personnel — including those deployed under programmes funded by the National Government — by developing a mechanism ensuring timely payment of authorised salaries, compensation and emoluments for services rendered.",
+  "Section 3 — Establishes the Bangsamoro Revolving Fund for nationally-funded programmes, for the payment of salaries, compensation and emoluments of nationally-funded workers and personnel directly supervised by BARMM ministries, agencies or offices implementing nationally-funded programmes. The Fund ensures timely payment in case of delay in the transfer or downloading of funds by the national government agencies concerned.",
+  "Section 4 — The Fund is administered and managed by the Ministry of Finance, and Budget and Management under its cash management and disbursement system, subject to government accounting and auditing rules. It is released only for the specified purpose upon request by the concerned ministry, agency or office. The MFBM must ensure the availability of the requested amount immediately after effectivity, and must provide a mechanism for reimbursing the Fund immediately once the national agency has transferred or downloaded the corresponding funds.",
+  "Section 5 — The ministries concerned must fulfil their roles for the downloading of funds from the National Government. Nothing in the act shall be construed as the Bangsamoro Government assuming the responsibilities of the National Government for the salaries, compensation and emoluments of nationally funded programmes.",
+  "Section 6 — The Fund is not automatically dissolved on discontinuance of nationally-funded programmes, on the lapse of its appropriation, or on the cessation of hiring or renewal of deployed workers. It is dissolved and reverted to the Bangsamoro Treasury only when the ministries authorised to draw from it have stopped submitting requests for at least two fiscal years. Reversion is reported by the MFBM to the Chief Minister in the Parliament through the Committee on Finance, Budget and Management.",
+  "Section 7 — Appropriates ₱1,000,000,000 as the revolving fund, chargeable against the Contingent Fund.",
+  "Section 8 — The MFBM shall issue implementing rules governing request, utilisation and disbursement within 1 month after complete publication.",
+  "Section 9 — An official quarterly report on releases, obligations and disbursements shall be submitted by the MFBM to Parliament through the Speaker, in printed or electronic form.",
+  "Section 12 — Takes effect 15 days after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Workers on nationally-funded programmes in the BARMM",
+   "Bangsamoro ministries implementing them"
+  ],
+  "impact_tags": [
+   "labor_social",
+   "budget_appropriations",
+   "governance_civil_service"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱1,000,000,000 revolving fund, chargeable against the Contingent Fund",
+  "figures_note": "Quoted from Section 7."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2023-05-17"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/07/BAA-36.pdf",
+  "irr": "Required from the MFBM within 1 month of complete publication. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 41",
+  "related_note": "Operates alongside the Bangsamoro appropriations acts; the Fund is charged against the Contingent Fund rather than a line appropriation."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱1,000,000,000",
+  "irr_status": "Section 8 required MFBM rules within 1 month of complete publication.",
+  "note": "Read from the enacted text as signed. Section 9 requires quarterly utilisation reports to Parliament; those reports are not captured by this registry."
+ },
+ "citizen_questions": [
+  {
+   "q": "Who does this fund pay?",
+   "a": "Workers and personnel on nationally-funded programmes who are directly supervised by Bangsamoro ministries, agencies or offices."
+  },
+  {
+   "q": "When is it used?",
+   "a": "When there is delay in the transfer or downloading of funds by the national government agencies concerned — so the salary arrives on time even if the national money does not."
+  },
+  {
+   "q": "Does the region end up paying for national obligations?",
+   "a": "No. Section 5 says nothing in the act shall be construed as the Bangsamoro Government assuming the National Government's responsibilities. The Fund is reimbursed once the national agency transfers the money."
+  },
+  {
+   "q": "How much is in it?",
+   "a": "₱1 billion, charged against the Contingent Fund, replenished as reimbursements come in."
+  },
+  {
+   "q": "Can anyone see how it is used?",
+   "a": "Yes. Section 9 requires a quarterly report on releases, obligations and disbursements to Parliament through the Speaker."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 36",
+  "line2": "Bangsamoro Revolving Fund Act of 2023",
+  "badges": [
+   "IN FORCE",
+   "Labor & Social",
+   "2023"
+  ],
+  "what_this_does": "Creates a ₱1 billion standby fund so workers on nationally-funded programmes are paid on time when national money is late.",
+  "who_it_affects": "Workers on nationally-funded programmes · Bangsamoro ministries"
+ },
+ "views": {
+  "simple": "Creates a ₱1 billion revolving fund so salaries of workers on nationally-funded programmes in the region are paid on time despite delays in national transfers, with the fund reimbursed once the national money arrives.",
+  "official": "AN ACT ESTABLISHING A REVOLVING FUND FOR THE PAYMENT OF SALARIES, COMPENSATION, AND EMOLUMENTS OF WORKERS AND PERSONNEL OF NATIONALLY FUNDED PROGRAMS DEPLOYED IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO, PROVIDING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 36, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

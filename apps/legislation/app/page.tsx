@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { BillFunnel, type FunnelSlice } from './_components/bill-funnel'
 import { BillPathPreview } from './_components/bill-path-preview'
+import { MemberPayFigures } from './_components/member-pay'
 import { PageHeader } from './_components/page-header'
 import { Reveal } from './_components/reveal'
 import { StatBand } from './_components/stat-band'
@@ -117,14 +118,18 @@ export default function HomePage() {
 			     The claim centred over the picture, the legend wrapped around it, and
 			     the ways out underneath — so the section reads top to bottom as one
 			     statement rather than a column of text beside a chart. */}
-			<section className='mx-auto max-w-[88rem] px-6 py-16 lg:px-8 lg:py-24'>
+			<section className='mx-auto max-w-[88rem] px-6 py-14 sm:py-16 lg:px-8 lg:py-24'>
 				<Reveal>
 					<div className='mx-auto max-w-3xl text-center'>
 						<p className='eyebrow'>Where the bills are</p>
 						<h2 className='section-title mt-3'>Most bills never make it.</h2>
 						<p className='copy mx-auto mt-4 max-w-2xl text-[var(--ink-2)]'>
-							Of the {totalBills.toLocaleString()} bills tracked here, {approved} have been approved
-							on third reading. The rest are still somewhere in the sequence — and nearly all of
+							{/* The space after the count is explicit: the text node that follows
+							    it runs onto a second line, and JSX trims each line of a
+							    multi-line node — which ate the space and printed "52have". */}
+							Of the {totalBills.toLocaleString()} bills tracked here, {approved}{' '}
+							have been approved on third reading. The rest are still somewhere in the sequence — and
+							nearly all of
 							them are sitting in a committee, which is the one stage Parliament&rsquo;s own rules
 							open to the public.
 						</p>
@@ -159,8 +164,12 @@ export default function HomePage() {
 			     seven stages open, and running an abbreviated copy of it here only
 			     gave a reader two versions of the same thing to reconcile. */}
 			<Reveal>
-				<section className='mx-auto max-w-[88rem] px-6 pb-20 lg:px-8 lg:pb-28'>
-					<div className='rounded-[var(--radius-lg)] bg-[var(--paper-2)] px-6 py-20 text-center sm:px-12 lg:px-16 lg:py-28'>
+				<section className='mx-auto max-w-[88rem] px-6 pb-16 lg:px-8 lg:pb-28'>
+					{/* The panel's own padding nests inside the page gutter, so on a
+					    phone the copy sits two indents in from the edge and the measure
+					    collapses. It gives most of that back below `sm` — the tint is
+					    what marks the block off, and it does not need the inset too. */}
+					<div className='rounded-[var(--radius-lg)] bg-[var(--paper-2)] px-5 py-14 text-center sm:px-12 sm:py-20 lg:px-16 lg:py-28'>
 						<p className='eyebrow'>The process, simplified</p>
 						<h2 className='section-title mx-auto mt-3 max-w-3xl'>
 							Seven steps, and one of them is yours.
@@ -174,6 +183,36 @@ export default function HomePage() {
 
 						<Link href='/legislative-process' className='btn btn-solid mt-12'>
 							Follow a bill through Parliament
+						</Link>
+					</div>
+				</section>
+			</Reveal>
+
+			{/* ---- What a seat is provided ----
+			     The figure nobody publishes. Parliament does print it, but as one
+			     line of a 349-page budget, which is the same as not printing it.
+			     It sits on the hub because it is the single most asked question
+			     about the people in the roster, and because it is the clearest
+			     demonstration of what reading the acts is actually for. */}
+			<Reveal>
+				<section className='mx-auto max-w-[88rem] px-6 pb-20 lg:px-8 lg:pb-28'>
+					<div className='border-t border-[var(--rule)] pt-14 text-center lg:pt-20'>
+						<p className='eyebrow'>What a seat costs</p>
+						<h2 className='section-title mx-auto mt-3 max-w-3xl'>
+							₱3,277,082 a year for each member&rsquo;s post.
+						</h2>
+						<p className='copy mx-auto mt-4 max-w-2xl text-[var(--ink-2)]'>
+							That is not a salary figure, and the difference matters. It is the whole annual
+							provision the budget makes for the post &mdash; basic pay plus the bonuses,
+							allowances and government contributions costed against it.
+						</p>
+
+						<div className='mt-12'>
+							<MemberPayFigures centred />
+						</div>
+
+						<Link href='/what-members-do' className='btn btn-solid mt-12'>
+							What a member actually does
 						</Link>
 					</div>
 				</section>

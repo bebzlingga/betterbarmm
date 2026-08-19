@@ -1,180 +1,248 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 59,
-    "short_title": "Establishes the Bangsamoro Agriculture and Fisheries Training Institute",
-    "official_title": "AN ACT ESTABLISHING THE BANGSAMORO AGRICULTURE AND FISHERIES TRAINING INSTITUTE",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2024-07-17",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Establishes the Bangsamoro Agriculture and Fisheries Training Institute.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Establishes the Bangsamoro Agriculture and Fisheries Training Institute.",
-    "who_will_be_affected": [
-      "Target sector of the body",
-      "Job seekers",
-      "CSOs"
-    ],
-    "when_will_it_take_effect": "Ratified 2024-07-17; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Creates or strengthens a public institution. New offices sound bureaucratic, but each one is a service window: a place to bring complaints, apply for programs, or get support that previously had no dedicated home in the region.",
-      "in_practice": [
-        "Once organized (leadership appointed, budget released), it opens programs and services",
-        "Look for its office, hotline, or Facebook page under the Bangsamoro Government",
-        "Its mandate defines what you can demand from it"
-      ],
-      "for_specific_groups": {
-        "Target sector of the body": "You gain a dedicated advocate inside government",
-        "Job seekers": "New institutions hire staff",
-        "CSOs": "A formal counterpart for partnership and accountability"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "A dedicated office now exists to serve and advocate for its sector.",
-        "direct_benefits": [
-          {
-            "benefit": "A service window: programs, assistance, and complaints handling for the covered sector",
-            "who_gets_it": "The sector named in the law",
-            "how_to_access": "The body's office/hotline once organized"
-          },
-          {
-            "benefit": "Representation inside government when policies are made",
-            "who_gets_it": "Sector members",
-            "how_to_access": "Through the body's consultations"
-          },
-          {
-            "benefit": "Employment in the new institution",
-            "who_gets_it": "Qualified applicants",
-            "how_to_access": "CSC-BARMM / agency postings"
-          }
-        ],
-        "indirect_benefits": [
-          "A formal partner for NGOs and donors working on the sector"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "An office's value depends on leadership and funding - track its accomplishment reports"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 59,
+  "short_title": "Bangsamoro Agriculture and Fisheries Training Institute Act",
+  "official_title": "AN ACT ESTABLISHING THE BANGSAMORO AGRICULTURE AND FISHERIES TRAINING INSTITUTE, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2024-07-17",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session (begun 15 September 2022)",
+  "date_passed": "2024-07-17",
+  "date_passed_hijri": "Muharram 11, 1446",
+  "date_approved_by_chief_minister": "2024-08-19",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Communities",
-      "Farmers",
-      "Fisherfolk"
-    ],
-    "impact_tags": [
-      "environment_agriculture_fisheries",
-      "institution_commission"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2024-07-17"
-    }
+  "effectivity": "15 days after publication in a newspaper of general circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates a training institute for the region's farmers and fisherfolk — technical courses, extension services, technology transfer and halal industry development — with a training officer posted in every province.",
+  "why_was_it_proposed": "To promote agriculture and fisheries as a means of alleviating poverty and ensuring food sufficiency, by giving farmers and fisherfolk access to science and technology training and modern techniques.",
+  "what_will_change": "A Bangsamoro Agriculture and Fisheries Training Institute leads technical training and the regional extension agenda, accredits private extension providers, supports LGU extension workers, and prioritises halal industry development in every training module.",
+  "who_will_be_affected": [
+   "Farmers and fisherfolk across the region",
+   "Farmers' and fisherfolks' cooperatives",
+   "LGU extension workers, who get capability-building and technical assistance",
+   "Businesses in the halal industry"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "The created body itself",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2024-07-17 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "The created body itself (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 59",
-    "line2": "Establishes the Bangsamoro Agriculture and Fisheries Training Institute",
-    "badges": [
-      "ENACTED",
-      "Institution Commission",
-      "2024"
+  "when_will_it_take_effect": "In force since 2024 — 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. There is an institute whose job is training farmers and fisherfolk — with a training officer in every province and the Special Geographic Areas, and halal standards built into every module.",
+   "in_practice": [
+    "The Bangsamoro Agriculture and Fisheries Training Institute (BAFTI), attached to the Ministry of Agriculture, Fisheries and Agrarian Reform",
+    "Leads technical training and short courses, and formulates the regional Agriculture and Fisheries Extension agenda and budget",
+    "A BAFTI Training Officer stationed in each island and mainland province and in the Special Geographic Areas, to reach far-flung areas",
+    "Training needs assessments conducted with the ministry and the LGU, so training is correct, culturally appropriate and relevant",
+    "Information materials delivered in the language most appropriate to the end-user",
+    "Learning sites identified where successful farmers share their technologies on their own farms",
+    "An accreditation system for private entities providing extension services",
+    "Halal industry development prioritised, with halal standards and incentives in all training modules",
+    "₱10,000,000 initial funding"
+   ],
+   "for_specific_groups": {
+    "Farmers and fisherfolk": "You are the intended end-users — training, technology transfer, post-harvest handling, marketing and financing knowledge, delivered in your own language.",
+    "Cooperatives": "Farmers' and fisherfolks' cooperatives are named the cornerstone of training development and dissemination, in partnership with the Cooperative and Social Enterprise Authority.",
+    "LGU extension workers": "The Institute assists the local extension system with capability-building, technical assistance, training, facilities and research-based programmes.",
+    "Halal businesses": "Halal food, cosmetics, pharmaceuticals, tourism, logistics, Islamic financing, modest fashion and related markets are all within the act's definition of the halal industry.",
+    "Communities in the Special Geographic Areas": "A training officer is to be stationed there as well as in the provinces."
+   },
+   "where_this_applies": "The whole BARMM, including the island provinces and the Special Geographic Areas.",
+   "when_you_will_feel_it": "Through training programmes, extension services and learning sites.",
+   "what_you_can_do": [
+    "Ask your provincial BAFTI Training Officer about training programmes and needs assessments",
+    "Ask about accreditation if you provide extension services privately",
+    "Ask about halal certification support for food businesses"
+   ],
+   "watch_out_for": [
+    "Only one institute is established at first; further sites depend on an assessment 2 years after the first one opens.",
+    "₱10 million is a modest start for a region-wide training mandate.",
+    "The Institute trains and coordinates; it does not provide subsidies, credit or inputs."
+   ],
+   "key_terms_explained": {
+    "Extension services": "Training, information and support delivered to farmers and fisherfolk to improve their technical, business and social capabilities — including post-harvest training and market analysis.",
+    "BAFTI Training Officer": "The focal person in each province and Special Geographic Area, responsible for training needs assessment, designing and delivering programmes, and evaluating them.",
+    "Halal industry": "Defined broadly by the act — halal food, cosmetics, pharmaceuticals, Muslim-friendly tourism, logistics, Islamic financing, modest fashion, media and recreation.",
+    "Ladderized training": "Courses that build on each other so a learner can progress step by step.",
+    "SUCs": "State Universities and Colleges, partners in developing training modules."
+   },
+   "status_note": "Passed Muharram 11, 1446 / 17 July 2024, approved by the Chief Minister on 19 August 2024.",
+   "benefits": {
+    "headline": "Technical training, extension support and halal development for the region's farmers and fisherfolk.",
+    "direct_benefits": [
+     {
+      "benefit": "Technical training and short courses in agriculture and fisheries",
+      "who_gets_it": "Farmers, fisherfolk and their organisations",
+      "how_to_access": "Through BAFTI and its provincial training officers"
+     },
+     {
+      "benefit": "Training in your own language, based on a needs assessment for your area",
+      "who_gets_it": "End-users of extension services",
+      "how_to_access": "Sections 9 requires culturally appropriate materials in the appropriate language"
+     },
+     {
+      "benefit": "Learning sites on successful farmers' own farms",
+      "who_gets_it": "Farmers learning from peers",
+      "how_to_access": "Identified by BAFTI under Section 4(j)"
+     },
+     {
+      "benefit": "Support for halal certification in the food industry",
+      "who_gets_it": "Food businesses and Bangsamoro consumers",
+      "how_to_access": "Section 10"
+     }
     ],
-    "what_this_does": "Establishes the Bangsamoro Agriculture and Fisheries Training Institute.",
-    "who_it_affects": "Communities · Farmers · Fisherfolk",
-    "effective": "2024-07-17"
-  },
-  "views": {
-    "simple": "Establishes the Bangsamoro Agriculture and Fisheries Training Institute.",
-    "official": "AN ACT ESTABLISHING THE BANGSAMORO AGRICULTURE AND FISHERIES TRAINING INSTITUTE"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Capability-building for LGU extension workers",
+     "Accreditation of private extension providers",
+     "Ladderized agriculture and fisheries short courses with technical education"
+    ],
+    "limitations": [
+     "One institute initially; expansion depends on a two-year assessment.",
+     "₱10 million initial funding.",
+     "It trains and coordinates rather than financing production."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on farmers or fisherfolk."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "Your provincial BAFTI Training Officer",
+    "oversight": "Ministry of Agriculture, Fisheries and Agrarian Reform, to which BAFTI is attached and to whose Minister the Executive Director reports directly",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A rice farmer in a far-flung municipality wants post-harvest training. A BAFTI Training Officer is to be stationed in each province and the Special Geographic Areas precisely to reach areas like theirs.",
+    "A fisherfolk cooperative wants help with marketing and financing. Section 4(g) covers benchmarking, production, harvesting, storage, processing, marketing and financing for cooperative members.",
+    "A small food producer wants halal certification. Section 10 requires BAFTI to support policies for halal certification in the food industry and to include halal standards and incentives in all training modules.",
+    "A successful farmer is willing to host demonstrations. Section 4(j) has BAFTI identify learning sites where farmers share technologies on their own farms."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Bangsamoro Agriculture and Fisheries Training Institute Act”.",
+  "Section 2 — Policy: promote agriculture and fisheries to alleviate poverty and ensure food sufficiency; give priority to science and technology training and innovation for all Bangsamoro farmers and fisherfolk; and develop an extensive information campaign disseminating modern techniques, innovations and knowledge, toward enhanced production, competitiveness and strengthened extension institutions.",
+  "Section 3 — Defines agricultural and fisheries extension services, agriculture, fisheries, the BAFTI Training Officer, halal food, and the halal industry — the last covering halal food, cosmetics, pharmaceuticals, Muslim-friendly tourism, logistics and supply chain, Islamic financing, training standards, modest fashion, media and recreation, in strict compliance with Shari'ah including as expressed by the Bangsamoro Darul Ifta'.",
+  "Section 4 — BAFTI leads technical training and short courses; formulates the regional Agriculture and Fisheries Extension agenda and budget; prepares an integrated plan for publicly funded training; issues guidelines with the agriculture ministry for planning, implementing, monitoring and evaluating extension programmes and accrediting extension services; assists the LGU extension system with capability-building, technical assistance and training; establishes technology transfer mechanisms to farmers and fisherfolk; supports all extension workers with knowledge of benchmarking, production, harvesting, storage, processing, marketing and financing; accredits private extension providers; links small farmers with market stakeholders; identifies learning sites on successful farmers' own farms; and promotes innovation and diversification.",
+  "Section 5 — BAFTI is established in the administrative capital, headed by an Executive Director holding a master's degree in Agriculture or Fisheries with 5 years' supervisory or management experience and Career Service Professional Eligibility or its equivalent. 2 years after the first institute is established there shall be an overall assessment of its operations and programmes, which determines subsequent establishments in the island and mainland provinces including a site in the Special Geographic Area. BAFTI and its satellite offices are attached to the Ministry of Agriculture, Fisheries and Agrarian Reform, with the Executive Director reporting directly to the Minister.",
+  "Sections 6–8 — Training Officers are stationed in the island and mainland provinces and the Special Geographic Area; farmers' and fisherfolks' cooperatives are the cornerstone of training development in partnership with the Cooperative and Social Enterprise Authority; and BAFTI gives priority to research, keeping current with modern trends including machinery, with training modules developed with State Universities and Colleges.",
+  "Section 9 — BAFTI, with the agriculture ministry and the concerned LGU, conducts a Training Needs Assessment so that training is correct, culturally appropriate and relevant, and delivers information, education and communication materials in the language most appropriate to the end-user.",
+  "Section 10 — BAFTI prioritises development of the halal industry, includes halal standards and incentives in all training modules, and supports policies for halal certification in the food industry to protect Bangsamoro consumers.",
+  "Sections 11–13 — Agriculture and fisheries short courses including long-term ladderized training with technical education; coordination with ministries, agencies and local and international organisations to avoid duplication; and active encouragement of private sector participation and public-private partnerships.",
+  "Section 14 — An initial ₱10,000,000 is appropriated, with such sums as needed thereafter in the annual General Appropriations Act, and continuous allocation for BAFTI's infrastructure once the first institute is established.",
+  "Section 15 — Implementing rules within 90 days from the agriculture ministry, with the finance minister and the Chairperson of the Committee on Agriculture, Fisheries and Agrarian Reform.",
+  "Section 18 — Takes effect 15 days after publication in a newspaper of general circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Farmers and fisherfolk across the BARMM",
+   "Agricultural cooperatives",
+   "Halal industry businesses",
+   "LGU extension workers"
+  ],
+  "impact_tags": [
+   "agriculture_fisheries",
+   "education",
+   "business_trade"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱10,000,000 initial, with such sums as needed thereafter in the annual GAAB",
+  "figures_note": "Quoted from Section 14."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2024-07-17"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/09/BAA-59.pdf",
+  "irr": "Required within 90 days from MAFAR with the finance minister and the Committee chairperson. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill 39",
+  "related_note": "Works through the Ministry of Agriculture, Fisheries and Agrarian Reform, in partnership with the Cooperative and Social Enterprise Authority, State Universities and Colleges, and the Bangsamoro Darul Ifta' on halal standards."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱10,000,000 initial",
+  "irr_status": "Section 15 required implementing rules within 90 days of effectivity.",
+  "note": "Read from the enacted text as signed. Section 5 requires an overall assessment 2 years after the first institute is established, determining where further institutes are built; that assessment is not recorded here."
+ },
+ "citizen_questions": [
+  {
+   "q": "What does the Institute actually offer?",
+   "a": "Technical training and short courses in agriculture and fisheries, extension services, technology transfer, and support for cooperatives — with a training officer in each province and the Special Geographic Areas."
+  },
+  {
+   "q": "Will training be in my language?",
+   "a": "Section 9 requires culturally appropriate information, education and communication materials in the language most appropriate to the end-user, based on a training needs assessment for your area."
+  },
+  {
+   "q": "Is there anything on halal?",
+   "a": "Yes. Section 10 requires BAFTI to prioritise halal industry development, include halal standards and incentives in all training modules, and support halal certification policies in the food industry."
+  },
+  {
+   "q": "How many institutes will there be?",
+   "a": "One at first, in the administrative capital. 2 years after it opens, an overall assessment determines where further institutes are established across the island and mainland provinces, including a site in the Special Geographic Area."
+  },
+  {
+   "q": "How much funding?",
+   "a": "₱10 million initially, with further sums in the annual budget and continuing allocation for infrastructure."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 59",
+  "line2": "Bangsamoro Agriculture and Fisheries Training Institute",
+  "badges": [
+   "IN FORCE",
+   "Agriculture & Fisheries",
+   "2024"
+  ],
+  "what_this_does": "Creates a training institute for farmers and fisherfolk, with an officer in every province and halal development built in.",
+  "who_it_affects": "Farmers and fisherfolk · cooperatives · halal businesses"
+ },
+ "views": {
+  "simple": "Creates the Bangsamoro Agriculture and Fisheries Training Institute to train farmers and fisherfolk, lead the region's extension agenda, accredit extension providers and prioritise halal industry development, with a training officer in every province.",
+  "official": "AN ACT ESTABLISHING THE BANGSAMORO AGRICULTURE AND FISHERIES TRAINING INSTITUTE, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 59, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

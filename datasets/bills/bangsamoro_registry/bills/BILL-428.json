@@ -1,179 +1,206 @@
 {
-  "record_type": "parliament_bill",
-  "basic_information": {
-    "bill_number": 428,
-    "short_title": "Institutionalizes a Graduate Scholarship Program for Teachers under",
-    "official_title": "AN ACT INSTITUTIONALIZING A GRADUATE SCHOLARSHIP PROGRAM FOR TEACHERS UNDER MBHTE",
-    "type": "Parliament Bill",
-    "session": "4th Regular Session (2025-)",
-    "date_filed": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "current_status": "Second Reading (Committee Stage)",
-    "status_as_of": "2026-01-26",
-    "date_approved": null
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Institutionalizes a Graduate Scholarship Program for Teachers under MBHTE.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note of the bill)",
-    "what_will_change": "Institutionalizes a Graduate Scholarship Program for Teachers under MBHTE.",
-    "who_will_be_affected": [
-      "Schools",
-      "Students",
-      "Teachers"
-    ],
-    "when_will_it_take_effect": "Only upon approval by Parliament and effectivity clause; this bill is not yet law",
-    "what_this_means_for_you": {
-      "in_short": "PROPOSAL: A governance law shaping how the Bangsamoro Government works. Its effect on daily life is indirect but real: clearer rules inside government generally mean faster, more accountable service at the counter. (This describes what the bill would do if enacted.)",
-      "in_practice": [
-        "Defines powers, procedures, or structures within the regional government"
-      ],
-      "for_specific_groups": {
-        "General public": "Better-defined government duties are the basis for demanding service"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Not yet - only if and when enacted",
-      "what_you_can_do": [
-        "This is the stage where public input matters most: submit a position paper via the Parliament's 'Call for Position Papers' page",
-        "Attend or watch the committee hearings (schedules are on the Parliament site; many are livestreamed)",
-        "Contact a Member of Parliament - the 'Contact an MP' page lists them - to support, oppose, or suggest changes"
-      ],
-      "watch_out_for": [
-        "Nothing changes yet: a bill has no legal effect until Parliament approves it and it is enacted as a Bangsamoro Autonomy Act. Many bills are revised or merged along the way."
-      ],
-      "key_terms_explained": {
-        "First Reading": "The bill's title is read in plenary and it is referred to a committee - the earliest formal stage.",
-        "Committee stage": "A committee studies the bill, holds hearings, and can rewrite it before plenary debate.",
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
-      },
-      "status_note": "Bill status: Second Reading (Committee Stage) (as of 2026-01-26).",
-      "benefits": {
-        "headline": "IF ENACTED: Better-ordered government, indirectly better service.",
-        "direct_benefits": [
-          {
-            "benefit": "Clearer rules inside government you can hold offices to",
-            "who_gets_it": "General public",
-            "how_to_access": "Cite the law when following up transactions"
-          }
-        ],
-        "indirect_benefits": [
-          "Institutional maturity of the autonomy"
-        ],
-        "limitations": [
-          "ALL benefits here are prospective: this is a bill, not a law. Nothing can be claimed unless it is enacted.",
-          "Benefits are structural rather than claimable programs"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "parliament_bill",
+ "basic_information": {
+  "bill_number": 428,
+  "short_title": "Institutionalizes a Graduate Scholarship Program for Teachers under",
+  "official_title": "AN ACT INSTITUTIONALIZING A GRADUATE SCHOLARSHIP PROGRAM FOR TEACHERS UNDER MBHTE",
+  "type": "Parliament Bill",
+  "session": "4th Regular Session (2025-)",
+  "date_filed": "2026-01-12",
+  "current_status": "Second Reading (Committee Stage)",
+  "status_as_of": "2026-01-26",
+  "date_approved": null
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Institutionalizes a Graduate Scholarship Program for Teachers under MBHTE.",
+  "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note of the bill)",
+  "what_will_change": "Institutionalizes a Graduate Scholarship Program for Teachers under MBHTE.",
+  "who_will_be_affected": [
+   "Schools",
+   "Students",
+   "Teachers"
   ],
-  "impact": {
-    "who_benefits": [
-      "Schools",
-      "Students",
-      "Teachers"
+  "when_will_it_take_effect": "Only upon approval by Parliament and effectivity clause; this bill is not yet law",
+  "what_this_means_for_you": {
+   "in_short": "PROPOSAL: A governance law shaping how the Bangsamoro Government works. Its effect on daily life is indirect but real: clearer rules inside government generally mean faster, more accountable service at the counter. (This describes what the bill would do if enacted.)",
+   "in_practice": [
+    "Defines powers, procedures, or structures within the regional government"
+   ],
+   "for_specific_groups": {
+    "General public": "Better-defined government duties are the basis for demanding service"
+   },
+   "where_this_applies": "All of BARMM",
+   "when_you_will_feel_it": "Not yet - only if and when enacted",
+   "what_you_can_do": [
+    "This is the stage where public input matters most: submit a position paper via the Parliament's 'Call for Position Papers' page",
+    "Attend or watch the committee hearings (schedules are on the Parliament site; many are livestreamed)",
+    "Contact a Member of Parliament - the 'Contact an MP' page lists them - to support, oppose, or suggest changes"
+   ],
+   "watch_out_for": [
+    "Nothing changes yet: a bill has no legal effect until Parliament approves it and it is enacted as a Bangsamoro Autonomy Act. Many bills are revised or merged along the way."
+   ],
+   "key_terms_explained": {
+    "First Reading": "The bill's title is read in plenary and it is referred to a committee - the earliest formal stage.",
+    "Committee stage": "A committee studies the bill, holds hearings, and can rewrite it before plenary debate.",
+    "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
+   },
+   "status_note": "Bill status: Second Reading (Committee Stage) (as of 2026-01-26).",
+   "benefits": {
+    "headline": "IF ENACTED: Better-ordered government, indirectly better service.",
+    "direct_benefits": [
+     {
+      "benefit": "Clearer rules inside government you can hold offices to",
+      "who_gets_it": "General public",
+      "how_to_access": "Cite the law when following up transactions"
+     }
     ],
-    "impact_tags": [
-      "education"
+    "indirect_benefits": [
+     "Institutional maturity of the autonomy"
     ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Beneficiary/budget figures are only shown when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "First Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Second Reading - Committee",
-      "reached": true,
-      "date": "2026-01-26"
-    },
-    {
-      "stage": "Second Reading - Plenary",
-      "reached": false,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": false,
-      "date": null
-    },
-    {
-      "stage": "Approved by Parliament",
-      "reached": false,
-      "date": null
-    },
-    {
-      "stage": "Enacted (BAA)",
-      "reached": false,
-      "date": null
-    }
-  ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "sponsor": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Listed on the bill's official page under General Information."
-  },
-  "related_documents": {
-    "original_bill_pdf": "On the bill's official page",
-    "committee_report": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "approved_version": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "irr": null
-  },
-  "related_legislation": {
-    "amends": [],
-    "repeals": [],
-    "related_bills": []
-  },
-  "implementation_status": {
-    "law_enacted": false,
-    "note": "Not applicable - bill not yet enacted."
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this already a law?",
-      "a": "Not yet - it is at the 'Second Reading (Committee Stage)' stage (as of 2026-01-26)."
-    },
-    {
-      "q": "How can I support or oppose this bill?",
-      "a": "Submit a position paper via the Parliament's Call for Position Papers page, or attend/watch the responsible committee's public hearings."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "The bill's page on parliament.bangsamoro.gov.ph (Bills index) links the PDF and legislative history."
-    }
-  ],
-  "display_header": {
-    "line1": "Parliament Bill No. 428",
-    "line2": "Institutionalizes a Graduate Scholarship Program for Teachers under",
-    "badges": [
-      "SECOND READING (COMMITTEE STAGE)",
-      "Education",
-      "2026"
-    ],
-    "what_this_does": "Institutionalizes a Graduate Scholarship Program for Teachers under MBHTE.",
-    "who_it_affects": "Schools · Students · Teachers"
-  },
-  "views": {
-    "simple": "Institutionalizes a Graduate Scholarship Program for Teachers under MBHTE.",
-    "official": "AN ACT INSTITUTIONALIZING A GRADUATE SCHOLARSHIP PROGRAM FOR TEACHERS UNDER MBHTE"
-  },
-  "implementing_agency_if_enacted": {
-    "agency": "MBHTE",
-    "inferred": true
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "limitations": [
+     "ALL benefits here are prospective: this is a bill, not a law. Nothing can be claimed unless it is enacted.",
+     "Benefits are structural rather than claimable programs"
+    ]
+   }
   }
+ },
+ "key_provisions": [
+  "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ ],
+ "impact": {
+  "who_benefits": [
+   "Schools",
+   "Students",
+   "Teachers"
+  ],
+  "impact_tags": [
+   "education"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": null,
+  "figures_note": "Beneficiary/budget figures are only shown when stated in official documents; none captured for this record."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed",
+   "reached": true,
+   "date": "2026-01-12"
+  },
+  {
+   "stage": "First Reading",
+   "reached": true,
+   "date": "2026-01-19"
+  },
+  {
+   "stage": "Second Reading - Committee",
+   "reached": true,
+   "date": "2026-01-26"
+  },
+  {
+   "stage": "Second Reading - Plenary",
+   "reached": false,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": false,
+   "date": null
+  },
+  {
+   "stage": "Approved by Parliament",
+   "reached": false,
+   "date": null
+  },
+  {
+   "stage": "Enacted (BAA)",
+   "reached": false,
+   "date": null
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": [
+   "USMAN, ADZFAR H."
+  ],
+  "co_authors": [
+   "HASSAN, HATIMIL E.",
+   "PARCASIO, RANDOLPH C.",
+   "SINOLINDING, KADIL M., JR.",
+   "LOONG, DON MUSTAPHA A.",
+   "ABBAS, BASIT S.",
+   "SALENDAB, SAID Z.",
+   "MALANG, BUTCH P.",
+   "HATAMAN, ABRAR J.",
+   "SEMA, OMAR YASSER C.",
+   "CUTAN, UTTOH SALEM D.",
+   "KARON, FAIZAL G.",
+   "KARON, BAI ALI S.",
+   "ANAYATIN, SUSANA S.",
+   "PIANG, RAMON A., SR.",
+   "ALAUDDIN, MOSBER E.",
+   "ASNAWIE, DAN S.",
+   "IQBAL, MOHAGHER M.",
+   "SHIEK, SAID M.",
+   "MIDTIMBANG, MICHAEL E.",
+   "ESTINO, MATARUL M."
+  ],
+  "sponsor": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": [
+   "Committee on Basic, Higher, and Technical Education",
+   "Committee on Finance, Budget, and Management"
+  ],
+  "note": "Authors, committee referrals and dates are taken from Parliament's own bills index (parliament.bangsamoro.gov.ph/bills/), which reflects the measure as it stood at capture."
+ },
+ "related_documents": {
+  "original_bill_pdf": "On the bill's official page",
+  "committee_report": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "approved_version": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "irr": null,
+  "official_page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-a-graduate-scholarship-program-for-teachers-under-the-ministry-of-basic-higher-and-technical-education-mbhte-providing-for-masters-and-doctorate-degree-grants-r/"
+ },
+ "related_legislation": {
+  "amends": [],
+  "repeals": [],
+  "related_bills": []
+ },
+ "implementation_status": {
+  "law_enacted": false,
+  "note": "Not applicable - bill not yet enacted."
+ },
+ "citizen_questions": [
+  {
+   "q": "Is this already a law?",
+   "a": "Not yet - it is at the 'Second Reading (Committee Stage)' stage (as of 2026-01-26)."
+  },
+  {
+   "q": "How can I support or oppose this bill?",
+   "a": "Submit a position paper via the Parliament's Call for Position Papers page, or attend/watch the responsible committee's public hearings."
+  },
+  {
+   "q": "Where do I read the full text?",
+   "a": "The bill's page on parliament.bangsamoro.gov.ph (Bills index) links the PDF and legislative history."
+  }
+ ],
+ "display_header": {
+  "line1": "Parliament Bill No. 428",
+  "line2": "Institutionalizes a Graduate Scholarship Program for Teachers under",
+  "badges": [
+   "SECOND READING (COMMITTEE STAGE)",
+   "Education",
+   "2026"
+  ],
+  "what_this_does": "Institutionalizes a Graduate Scholarship Program for Teachers under MBHTE.",
+  "who_it_affects": "Schools · Students · Teachers"
+ },
+ "views": {
+  "simple": "Institutionalizes a Graduate Scholarship Program for Teachers under MBHTE.",
+  "official": "AN ACT INSTITUTIONALIZING A GRADUATE SCHOLARSHIP PROGRAM FOR TEACHERS UNDER MBHTE"
+ },
+ "implementing_agency_if_enacted": {
+  "agency": "MBHTE",
+  "inferred": true
+ },
+ "provenance": {
+  "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
+  "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+ }
 }

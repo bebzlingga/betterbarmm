@@ -1,170 +1,261 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 9,
-    "short_title": "Regulates the Operations of Local and Foreign Recruitment",
-    "official_title": "AN ACT REGULATING THE OPERATIONS OF LOCAL AND FOREIGN RECRUITMENT AGENCIES WITHIN BARMM",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2020-02-19",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Regulates the Operations of Local and Foreign Recruitment Agencies Within BARMM.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Regulates the Operations of Local and Foreign Recruitment Agencies Within BARMM.",
-    "who_will_be_affected": [
-      "Covered group",
-      "Employers/offices"
-    ],
-    "when_will_it_take_effect": "Ratified 2020-02-19; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "A social-protection law: it creates rights, benefits, or safeguards for a specific group of people. If you belong to the covered group, this law is something you can invoke - at work, at a government office, or in seeking assistance.",
-      "in_practice": [
-        "Check the covered group and benefit in the title/full text",
-        "Implementation runs through the mandated ministry - benefits usually require registration or application",
-        "Keep documents ready (IDs, proof of status) when claiming"
-      ],
-      "for_specific_groups": {
-        "Covered group": "A legal entitlement, not charity - it can be demanded",
-        "Employers/offices": "Compliance duties may apply to you"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "A shield against illegal recruiters.",
-        "direct_benefits": [
-          {
-            "benefit": "Only regulated agencies may recruit in BARMM - a basis to check legitimacy before paying anyone",
-            "who_gets_it": "Job applicants",
-            "how_to_access": "Verify the agency with MOLE-BARMM before signing/paying"
-          },
-          {
-            "benefit": "A complaint route against abusive or fake recruiters",
-            "who_gets_it": "Victims of illegal recruitment",
-            "how_to_access": "File with MOLE-BARMM / PNP"
-          }
-        ],
-        "indirect_benefits": [
-          "Raises the cost of trafficking operations in the region"
-        ],
-        "limitations": [
-          "Protection works only if you verify first - unregistered 'backdoor' recruitment remains the main risk"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 9,
+  "short_title": "Recruitment Agency Regulation Act of 2020",
+  "official_title": "AN ACT REGULATING THE OPERATIONS OF LOCAL AND FOREIGN RECRUITMENT AGENCIES WITHIN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO (BARMM)",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2020-02-19",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "First Regular Session",
+  "date_passed": "2020-02-19",
+  "date_approved_by_chief_minister": "2020-04-14",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "labor_social",
-      "other"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2020-02-19"
-    }
+  "effectivity": "15 days after publication in a newspaper of general circulation and/or on the MOLE or BARMM official website"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Requires every recruitment agency operating in the region — or recruiting anyone who lives there — to be accredited by the Bangsamoro Ministry of Labor and Employment, and fines those that operate without it ₱150,000 to ₱200,000.",
+  "why_was_it_proposed": "To protect Bangsamoro migrant workers from illegal recruitment, trafficking in persons and violation of their rights, and to strengthen enforcement of labour law in the region.",
+  "what_will_change": "An agency must hold a MOLE Certificate of Accreditation, renewed every 3 years, keep an office in the BARMM, hold ₱5 million in paid-up capital, and give preference to Bangsamoro residents in hiring. MOLE inspects, publishes the list of accredited agencies, and can suspend or cancel accreditation.",
+  "who_will_be_affected": [
+   "Anyone in the BARMM looking for work through an agency, at home or overseas",
+   "Bangsamoro residents recruited by agencies based anywhere — the act follows the worker, not just the office",
+   "Local and foreign recruitment and employment agencies, including branch and sub-offices",
+   "Travel agencies, airline sales agencies and insurance companies, which are disqualified from accreditation",
+   "Employees of national labour and immigration agencies and their relatives, who are also disqualified"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "MOLE / MSSD",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2020-02-19 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "MOLE / MSSD (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 9",
-    "line2": "Regulates the Operations of Local and Foreign Recruitment",
-    "badges": [
-      "ENACTED",
-      "Labor Social",
-      "2020"
+  "when_will_it_take_effect": "In force since 2020. Agencies had 30 days from effectivity to be accredited or stop operating.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. Before you sign with a recruiter, check they hold a MOLE Certificate of Accreditation. Operating without one is punishable by a fine of ₱150,000 to ₱200,000.",
+   "in_practice": [
+    "Every agency must be accredited by the Bangsamoro Ministry of Labor and Employment (MOLE), renewed every 3 years",
+    "Agencies must keep an office inside the BARMM",
+    "MOLE publishes an updated list of accredited agencies in a newspaper of general circulation or on its website",
+    "An accredited agency must have at least ₱5,000,000 paid-up capital and be at least 75% Filipino-owned",
+    "Agencies must give preference to Bangsamoro residents in recruitment, placement and hiring",
+    "A worker cannot be charged by a 'private recruitment entity' — that term means one that charges no fee, directly or indirectly"
+   ],
+   "for_specific_groups": {
+    "Jobseekers and migrant workers": "Ask to see the Certificate of Accreditation — it must be signed and bear the MOLE seal, and it is valid for 3 years. Check the published list before paying anyone anything.",
+    "Bangsamoro residents recruited from outside the region": "You are still covered. Section 4(B) requires accreditation of any agency recruiting or employing BARMM residents, wherever it operates.",
+    "Recruitment agencies": "Accreditation every 3 years, an office in the region, ₱5M paid-up capital, 75% Filipino ownership, and preference for Bangsamoro residents in hiring.",
+    "Travel and airline sales agencies": "Disqualified outright from accreditation, as are their officers and board members, and any company sharing officers with them.",
+    "Government staff and their families": "Officials and employees of DOLE, POEA, OWWA, DFA, DOJ, DOH, BI, IC, NLRC, TESDA, CFO, NBI, PNP, CAAP and international airport authorities are disqualified — and so are their relatives to the fourth civil degree."
+   },
+   "where_this_applies": "The BARMM, and to any agency anywhere recruiting BARMM residents.",
+   "when_you_will_feel_it": "In force since 2020.",
+   "what_you_can_do": [
+    "Check the agency against MOLE's published list of accredited agencies before paying any fee",
+    "Ask to see the Certificate of Accreditation — signed, sealed by MOLE, and valid for 3 years",
+    "Report an unaccredited recruiter to the Ministry of Labor and Employment, which inspects and can cancel accreditation",
+    "Remember that anyone offering employment to two or more people for a fee is legally engaged in recruitment, whatever they call themselves"
+   ],
+   "watch_out_for": [
+    "The penalty is a fine only — the act sets no imprisonment of its own, though forgery of a certificate is 'without prejudice to the criminal action that may be filed'.",
+    "The fine is fixed in pesos with no adjustment mechanism, so it erodes with inflation.",
+    "The act does not itself say what happens to a worker already recruited by an agency that is later cancelled.",
+    "A ₱5 million capital requirement is a high bar; it may push smaller local recruiters out rather than into compliance."
+   ],
+   "key_terms_explained": {
+    "Recruitment and placement": "Canvassing, enlisting, contracting, transporting, hiring or procuring workers — including referrals and advertising, whether for profit or not. Offering employment to two or more people for a fee counts.",
+    "Private recruitment entity": "One that recruits and places workers without charging them any fee, directly or indirectly.",
+    "Certificate of Accreditation": "The MOLE-signed and sealed document, valid 3 years, that makes an agency legal in the region.",
+    "Fourth civil degree of consanguinity or affinity": "Relatives out to first cousins, by blood or marriage.",
+    "Derogatory record": "An adverse record that disqualifies a proprietor, partner or board member from accreditation."
+   },
+   "status_note": "Passed 19 February 2020, approved by the Chief Minister on 14 April 2020.",
+   "benefits": {
+    "headline": "A checkable public list of legal recruiters, and a fine for those operating outside it.",
+    "direct_benefits": [
+     {
+      "benefit": "A published list of accredited agencies to check before you pay anyone",
+      "who_gets_it": "Jobseekers and migrant workers",
+      "how_to_access": "MOLE publishes it in a newspaper of general circulation or on its website"
+     },
+     {
+      "benefit": "Preference for Bangsamoro residents in recruitment, placement and hiring",
+      "who_gets_it": "Residents of the region",
+      "how_to_access": "Required of every accredited agency by Section 4(I)"
+     },
+     {
+      "benefit": "An agency office physically in the region, not only abroad or in Manila",
+      "who_gets_it": "Anyone needing to reach their recruiter",
+      "how_to_access": "Required by Section 4(A)"
+     },
+     {
+      "benefit": "A route to have an agency suspended or cancelled",
+      "who_gets_it": "Workers wronged by an agency",
+      "how_to_access": "MOLE, which inspects and may cancel accreditation"
+     }
     ],
-    "what_this_does": "Regulates the Operations of Local and Foreign Recruitment Agencies Within BARMM.",
-    "who_it_affects": "General public",
-    "effective": "2020-02-19"
-  },
-  "views": {
-    "simple": "Regulates the Operations of Local and Foreign Recruitment Agencies Within BARMM.",
-    "official": "AN ACT REGULATING THE OPERATIONS OF LOCAL AND FOREIGN RECRUITMENT AGENCIES WITHIN BARMM"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Conflicts of interest closed off — travel agencies, airline sales agencies, OFW insurers and labour-agency staff and their relatives cannot hold accreditation",
+     "National POEA rules on disciplinary action are pulled in to fill gaps"
+    ],
+    "limitations": [
+     "Fines only; no imprisonment under this act.",
+     "No compensation route for a worker already defrauded.",
+     "No stated protection for workers left stranded when an accreditation is cancelled."
+    ]
+   },
+   "your_responsibilities": {
+    "for_agencies": [
+     "Register and secure MOLE accreditation every 3 years",
+     "Establish an office in the BARMM",
+     "Maintain ₱5,000,000 paid-up capital and at least 75% Filipino ownership",
+     "Give preference to Bangsamoro residents in recruitment, placement and hiring",
+     "Answer within 15 days of a notice of cancellation"
+    ],
+    "for_citizens": [
+     "None imposed by the act — but checking accreditation before paying is the protection it gives you."
+    ]
+   },
+   "what_is_prohibited": [
+    "Operating as a local or foreign recruitment or employment agency in the BARMM, or recruiting BARMM residents, without a MOLE Certificate of Accreditation.",
+    "Tampering with, altering or forging a Certificate of Accreditation.",
+    "Holding accreditation while disqualified — as a travel or airline sales agency, an OFW insurer, someone with a derogatory record, or an official or employee of the listed national agencies or their relative to the fourth degree."
+   ],
+   "penalties": {
+    "for_agencies": "A fine of not less than ₱150,000 and not more than ₱200,000 for violating any provision. The same range applies to tampering, altering or forging a Certificate of Accreditation, without prejudice to any criminal action.",
+    "administrative": "MOLE may suspend or cancel a certificate of accreditation or licence to operate. The agency must be given at least 15 days from service of the notice to explain in writing why cancellation should not proceed.",
+    "for_citizens": "None. The act creates no offence committed by a worker.",
+    "note": "For penalties not covered here, Section 144, Rule IV of the Revised POEA Rules and Regulations of 2016 on disciplinary action against principals and employers applies."
+   },
+   "where_to_complain": {
+    "first_stop": "Bangsamoro Ministry of Labor and Employment (MOLE), which accredits, inspects, suspends and cancels",
+    "national_backstop": "POEA/DOLE channels under RA 8042 and the Revised POEA Rules, which the act incorporates",
+    "note": "The act gives the agency, not the worker, an express right to be heard — 15 days to answer a notice of cancellation."
+   },
+   "everyday_scenarios": [
+    "Norhata is offered work abroad by a recruiter in Cotabato City. Before paying anything she checks MOLE's published list and asks for the Certificate of Accreditation — signed, sealed, and valid 3 years. If the recruiter has none, operating is unlawful and carries a ₱150,000–₱200,000 fine.",
+    "A man offers jobs to five neighbours for a 'processing fee'. Under Section 3, offering employment to two or more people for a fee is recruitment — so he needs accreditation, whatever he calls his business.",
+    "An agency in another region recruits workers from Basilan. Section 4(B) still requires it to be accredited by MOLE, because it is recruiting BARMM residents.",
+    "A travel agency wants to branch into recruitment. It is disqualified outright, and so is any company that shares an officer or board member with it."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Recruitment Agency Regulation Act of 2020”.",
+  "Section 2 — Policy: protect the general welfare of the Bangsamoro people, particularly Bangsamoro migrant workers, from illegal recruitment, trafficking in persons and violation of rights, and strengthen enforcement of labour laws.",
+  "Section 3 — Defines recruitment and placement broadly — canvassing, enlisting, contracting, transporting, hiring or procuring workers, including referrals and advertising, for profit or not — and deems anyone who offers or promises employment to two or more persons for a fee to be engaged in recruitment. A private recruitment entity is one that charges the worker no fee, directly or indirectly.",
+  "Section 4(A)–(C) — Every local and foreign recruitment and employment agency operating or recruiting in the region, whether a main, branch or sub-office, must register and be accredited by the Ministry of Labor and Employment every 3 years, and must establish an office in the BARMM. A Certificate of Accreditation signed and bearing the MOLE seal is valid for 3 years.",
+  "Section 4(B) — Agencies recruiting or employing workers who are residents of the BARMM must likewise be accredited, wherever they operate.",
+  "Section 4(D)–(F) — MOLE issues guidelines including a schedule of reasonable fees, conducts inspections, and publishes an updated list of accredited agencies in a newspaper of general circulation or on its website. Within 30 days of effectivity, only accredited agencies may operate.",
+  "Section 4(G) — Disqualified from accreditation: travel agencies and airline sales agencies, and their officers, board members and partners; companies sharing officers with them; individuals and officers of insurance companies providing compulsory coverage for agency-hired OFWs; anyone with a derogatory record; officials and employees of DOLE, POEA, OWWA, DFA, DOJ, DOH, BI, IC, NLRC, TESDA, CFO, NBI, PNP, CAAP, international airport authorities and other agencies implementing RA 8042, together with their relatives within the fourth civil degree of consanguinity or affinity; and anyone found guilty of violating this act.",
+  "Section 4(H) — Capital and ownership: a Filipino citizen as sole proprietor, or a partnership or corporation at least 75% of whose authorised and voting capital stock is Filipino-owned and controlled, with a minimum paid-up capital of ₱5,000,000.",
+  "Section 4(I) — Agencies recruiting and operating in the BARMM shall give preference to Bangsamoro residents in recruitment, placement and hiring.",
+  "Section 5 — It is unlawful to operate without a Certificate of Accreditation. Violation of any provision carries a fine of not less than ₱150,000 and not more than ₱200,000; tampering, alteration or forgery of a certificate carries the same fine without prejudice to criminal action.",
+  "Section 6 — MOLE may suspend or cancel an accreditation or licence to operate; the agency gets at least 15 days from service of notice to explain in writing why cancellation should not be imposed.",
+  "Section 9 — Takes effect 15 days after publication in a newspaper of general circulation and/or on the MOLE or BARMM website."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Bangsamoro migrant workers",
+   "Jobseekers in the region",
+   "Workers recruited from the BARMM"
+  ],
+  "impact_tags": [
+   "labor_social",
+   "business_trade",
+   "governance_civil_service"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": null,
+  "figures_note": "The act appropriates no funds. Its figures are regulatory: ₱5,000,000 minimum paid-up capital for an agency, and fines of ₱150,000 to ₱200,000."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2020-02-19"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2020/05/BAA-9.pdf",
+  "irr": "MOLE guidelines required by Section 4(D), including the schedule of fees. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 22",
+  "related_note": "Incorporates Sections 95–103 and Section 144, Rule IV of the Revised POEA Rules and Regulations Governing the Recruitment and Employment of Land-Based Overseas Filipino Workers of 2016, and sits against RA 8042 (the Migrant Workers Act). Complemented by BAA 19 on Bangsamoro overseas employment policy."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": null,
+  "irr_status": "Section 4(D) requires MOLE to issue implementing guidelines and a schedule of reasonable fees. Whether they were issued is not recorded here.",
+  "note": "Read from the enacted text as signed."
+ },
+ "citizen_questions": [
+  {
+   "q": "How do I know a recruiter is legal?",
+   "a": "Ask for the Certificate of Accreditation — it must be signed and bear the seal of the Ministry of Labor and Employment and is valid for 3 years. MOLE also publishes an updated list of accredited agencies in a newspaper of general circulation or on its website."
+  },
+  {
+   "q": "What if the agency is based outside the BARMM?",
+   "a": "It still needs MOLE accreditation if it recruits or employs workers who are residents of the BARMM. The rule follows the worker, not only the office."
+  },
+  {
+   "q": "What is the penalty for operating without accreditation?",
+   "a": "A fine of not less than ₱150,000 and not more than ₱200,000. Forging or tampering with a certificate carries the same fine and can also be prosecuted criminally."
+  },
+  {
+   "q": "Can a travel agency recruit workers?",
+   "a": "No. Travel agencies and airline sales agencies are disqualified outright, along with their officers and board members, and any company that shares an officer with one."
+  },
+  {
+   "q": "Should a recruiter charge me a fee?",
+   "a": "The act defines a 'private recruitment entity' as one that charges the worker no fee, directly or indirectly. MOLE sets the schedule of reasonable fees, so ask to see it before paying anything."
+  },
+  {
+   "q": "Do local workers get priority?",
+   "a": "Yes. Section 4(I) requires agencies recruiting and operating in the region to give preference to Bangsamoro residents in recruitment, placement and hiring."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 9",
+  "line2": "Recruitment Agency Regulation Act of 2020",
+  "badges": [
+   "IN FORCE",
+   "Labor & Social",
+   "2020"
+  ],
+  "what_this_does": "Requires recruitment agencies to be accredited by MOLE and fines those operating without it ₱150,000–₱200,000.",
+  "who_it_affects": "Jobseekers · migrant workers · recruitment agencies"
+ },
+ "views": {
+  "simple": "Requires every recruiter operating in the region — or recruiting anyone who lives there — to hold a MOLE accreditation renewed every 3 years, and fines those without one ₱150,000 to ₱200,000.",
+  "official": "AN ACT REGULATING THE OPERATIONS OF LOCAL AND FOREIGN RECRUITMENT AGENCIES WITHIN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO (BARMM)"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 9, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

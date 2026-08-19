@@ -1,162 +1,209 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 90,
-    "short_title": "Renames the Municipality of Datu Blah T. Sinsuat",
-    "official_title": "AN ACT RENAMING THE MUNICIPALITY OF DATU BLAH T. SINSUAT TO MUNICIPALITY OF WEST UPI, MAGUINDANAO DEL NORTE",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA3",
-    "date_ratified": "2026-05-19",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Renames the Municipality of Datu Blah T. Sinsuat to Municipality of West Upi, Maguindanao del Norte.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Renames the Municipality of Datu Blah T. Sinsuat to Municipality of West Upi, Maguindanao del Norte.",
-    "who_will_be_affected": [
-      "General public"
-    ],
-    "when_will_it_take_effect": "Ratified 2026-05-19; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "A governance law shaping how the Bangsamoro Government works. Its effect on daily life is indirect but real: clearer rules inside government generally mean faster, more accountable service at the counter.",
-      "in_practice": [
-        "Defines powers, procedures, or structures within the regional government"
-      ],
-      "for_specific_groups": {
-        "General public": "Better-defined government duties are the basis for demanding service"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Better-ordered government, indirectly better service.",
-        "direct_benefits": [
-          {
-            "benefit": "Clearer rules inside government you can hold offices to",
-            "who_gets_it": "General public",
-            "how_to_access": "Cite the law when following up transactions"
-          }
-        ],
-        "indirect_benefits": [
-          "Institutional maturity of the autonomy"
-        ],
-        "limitations": [
-          "Benefits are structural rather than claimable programs"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 90,
+  "short_title": "Renaming of Datu Blah T. Sinsuat to West Upi",
+  "official_title": "AN ACT RENAMING THE MUNICIPALITY OF DATU BLAH T. SINSUAT, MAGUINDANAO DEL NORTE TO MUNICIPALITY OF WEST UPI, MAGUINDANAO DEL NORTE",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA3",
+  "date_ratified": "2026-05-19",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Fourth Regular Session (begun 15 September 2022)",
+  "date_passed": "2026-05-19",
+  "date_passed_hijri": "Dhul Hijjah 02, 1447",
+  "date_approved_by_chief_minister": "2026-05-21",
+  "approved_by": "Chief Minister Abdulraof A. Macacua",
+  "signed_by": [
+   "Mohammad S. Yacob, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Barangay residents",
-      "LGUs"
-    ],
-    "impact_tags": [
-      "local_government",
-      "municipality_lgu"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2026-05-19"
-    }
+  "effectivity": "15 days after complete publication in a newspaper of general circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Renames the Municipality of Datu Blah T. Sinsuat in Maguindanao del Norte to the Municipality of West Upi — subject to approval by its own voters in a plebiscite.",
+  "why_was_it_proposed": "The act states a policy of genuine and meaningful local autonomy so that subdivisions can develop as self-reliant communities. It gives no separate reason for the change of name itself.",
+  "what_will_change": "If ratified, the municipality carries a geographic name rather than one honouring an individual. Nothing else about its territory, government or status changes.",
+  "who_will_be_affected": [
+   "Residents of the municipality, who vote on the change",
+   "Anyone holding documents, records or addresses in the municipality's name",
+   "COMELEC, which conducts the plebiscite"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page. Origin: Bill 328."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": "Bill 328"
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of the Interior and Local Government (MILG)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2026-05-19 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of the Interior and Local Government (MILG) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 90",
-    "line2": "Renames the Municipality of Datu Blah T. Sinsuat",
-    "badges": [
-      "ENACTED",
-      "Municipality Lgu",
-      "2026"
+  "when_will_it_take_effect": "The act is in force, but the renaming happens only on ratification by a majority of the votes cast in a plebiscite.",
+  "what_this_means_for_you": {
+   "in_short": "You decide. The Municipality of Datu Blah T. Sinsuat becomes the Municipality of West Upi — but only if a majority of votes cast by its own voters approve it in a plebiscite.",
+   "in_practice": [
+    "The name changes from Datu Blah T. Sinsuat to West Upi",
+    "Ratification requires a majority of the votes cast by qualified voters of the municipality",
+    "COMELEC conducts and supervises the plebiscite under paragraph (g), Section 13 of the Local Government Code of 1991",
+    "Plebiscite costs are charged to the Contingent Fund of the Office of the Chief Minister",
+    "Muslim Mindanao Autonomy Act No. 198, which created the municipality, is amended accordingly"
+   ],
+   "for_specific_groups": {
+    "Residents": "Only voters of this municipality decide — the vote is confined to the unit whose name changes, which is also the only unit affected.",
+    "Anyone with records in the old name": "The act sets no transition arrangements for documents, addresses, signage or registrations.",
+    "Businesses and offices": "No compliance duty is created, but the municipality's legal name would change on ratification."
+   },
+   "where_this_applies": "The Municipality of Datu Blah T. Sinsuat, Maguindanao del Norte.",
+   "when_you_will_feel_it": "On ratification in the plebiscite.",
+   "what_you_can_do": [
+    "Vote in the plebiscite — a majority of votes cast decides",
+    "Ask COMELEC when it is scheduled; the act sets no deadline"
+   ],
+   "watch_out_for": [
+    "The act sets no deadline for holding the plebiscite, unlike the municipality-creation acts which specify 60 days.",
+    "No transition provisions are made for records, addresses or signage in the old name.",
+    "The act gives no stated reason for the change of name."
+   ],
+   "key_terms_explained": {
+    "Plebiscite": "A vote of the people affected, required here before the renaming takes effect.",
+    "Muslim Mindanao Autonomy Act No. 198": "The law of the former ARMM that created the Municipality of Datu Blah T. Sinsuat, amended by this act.",
+    "Local Government Code of 1991": "Republic Act 7160; its Section 13(g) governs the conduct of plebiscites on changes of name."
+   },
+   "status_note": "Passed Dhul Hijjah 02, 1447 / 19 May 2026, approved by Chief Minister Abdulraof A. Macacua on 21 May 2026.",
+   "benefits": {
+    "headline": "A change of municipal name, put to the municipality's own voters.",
+    "direct_benefits": [
+     {
+      "benefit": "A direct vote on the name of your municipality",
+      "who_gets_it": "Qualified voters of the municipality",
+      "how_to_access": "At the plebiscite conducted by COMELEC"
+     }
     ],
-    "what_this_does": "Renames the Municipality of Datu Blah T. Sinsuat to Municipality of West Upi, Maguindanao del Norte.",
-    "who_it_affects": "Barangay residents · LGUs",
-    "effective": "2026-05-19"
-  },
-  "views": {
-    "simple": "Renames the Municipality of Datu Blah T. Sinsuat to Municipality of West Upi, Maguindanao del Norte.",
-    "official": "AN ACT RENAMING THE MUNICIPALITY OF DATU BLAH T. SINSUAT TO MUNICIPALITY OF WEST UPI, MAGUINDANAO DEL NORTE"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "A geographic name in place of one honouring an individual"
+    ],
+    "limitations": [
+     "Nothing changes without a favourable plebiscite.",
+     "No deadline is set for holding it.",
+     "No transition arrangements for records in the old name."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None beyond voting in the plebiscite, which is a right rather than a duty."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "Commission on Elections (COMELEC), which conducts and supervises the plebiscite",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A resident votes in the plebiscite on whether their municipality is renamed West Upi. A majority of the votes cast decides it.",
+    "A business registered in the Municipality of Datu Blah T. Sinsuat would, on ratification, sit in the Municipality of West Upi. The act says nothing about how existing registrations are updated."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Renames the Municipality of Datu Blah T. Sinsuat in the Province of Maguindanao del Norte as the Municipality of West Upi, Maguindanao del Norte.",
+  "Section 2 — Policy: the Bangsamoro Government declares that its territorial and political subdivisions shall enjoy genuine and meaningful local autonomy, to attain their fullest development as self-reliant communities and become more effective partners in attaining regional development goals.",
+  "Section 3 — The renaming is subject to ratification by a majority of the votes cast by qualified voters of the Municipality of Datu Blah T. Sinsuat in a plebiscite conducted for the purpose. The Commission on Elections conducts and supervises it in compliance with paragraph (g), Section 13 of Republic Act 7160, the Local Government Code of 1991. Expenses are charged against the Contingent Fund of the Office of the Chief Minister.",
+  "Section 4 — Muslim Mindanao Autonomy Act No. 198, creating the Municipality of Datu Blah T. Sinsuat, is amended accordingly, and inconsistent laws, orders, rules and regulations are repealed, modified, superseded or amended.",
+  "Section 5 — Takes effect 15 days after complete publication in a newspaper of general circulation in the BARMM."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of the municipality"
+  ],
+  "impact_tags": [
+   "local_government",
+   "culture_heritage"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "Plebiscite expenses charged to the Contingent Fund of the Office of the Chief Minister; no amount stated.",
+  "figures_note": "The act states no amount."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2026-05-19"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page. Origin: Bill 328."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/06/BAA-90.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [
+   "Muslim Mindanao Autonomy Act No. 198"
+  ],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill 328",
+  "related_note": "Amends the former ARMM law that created the municipality. The same namesake appears in BAA 25, which upgraded the Datu Blah Sinsuat District Hospital."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": null,
+  "irr_status": "None required by the act.",
+  "note": "Read from the enacted text as signed. The renaming depends on ratification in a plebiscite; whether that plebiscite has been held is not recorded here."
+ },
+ "citizen_questions": [
+  {
+   "q": "Has the municipality been renamed?",
+   "a": "Not automatically. The change takes effect only on ratification by a majority of the votes cast by qualified voters of the municipality in a plebiscite."
+  },
+  {
+   "q": "Who votes?",
+   "a": "Qualified voters of the Municipality of Datu Blah T. Sinsuat. The vote is confined to the municipality whose name would change."
+  },
+  {
+   "q": "When is the plebiscite?",
+   "a": "The act does not set a deadline — unlike the municipality-creation acts, which require a plebiscite within 60 days."
+  },
+  {
+   "q": "Who pays for it?",
+   "a": "The Contingent Fund of the Office of the Chief Minister. No amount is stated."
+  },
+  {
+   "q": "What happens to documents in the old name?",
+   "a": "The act is silent. It makes no transition provision for records, addresses, signage or registrations."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 90",
+  "line2": "Renaming of Datu Blah T. Sinsuat to West Upi",
+  "badges": [
+   "IN FORCE",
+   "Local Government",
+   "2026"
+  ],
+  "what_this_does": "Renames the municipality to West Upi, subject to a plebiscite of its own voters.",
+  "who_it_affects": "Residents of Datu Blah T. Sinsuat, Maguindanao del Norte"
+ },
+ "views": {
+  "simple": "Renames the Municipality of Datu Blah T. Sinsuat in Maguindanao del Norte to the Municipality of West Upi, subject to ratification by a majority of its voters in a plebiscite.",
+  "official": "AN ACT RENAMING THE MUNICIPALITY OF DATU BLAH T. SINSUAT, MAGUINDANAO DEL NORTE TO MUNICIPALITY OF WEST UPI, MAGUINDANAO DEL NORTE"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 90, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

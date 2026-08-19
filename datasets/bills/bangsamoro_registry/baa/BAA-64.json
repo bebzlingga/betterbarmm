@@ -1,178 +1,379 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 64,
-    "short_title": "Bangsamoro Indigenous Peoples Rights Act",
-    "official_title": "AN ACT TO RECOGNIZE, DEVELOP, AND PROTECT THE INDIGENOUS PEOPLES AND THEIR RIGHTS IN BARMM; STRENGTHENING MIPA",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2024-12-10",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Recognize, Develop, and Protect the Indigenous Peoples and Their Rights in BARMM; Strengthening MIPA.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Recognize, Develop, and Protect the Indigenous Peoples and Their Rights in BARMM; Strengthening MIPA.",
-    "who_will_be_affected": [
-      "Indigenous communities",
-      "Non-Moro indigenous youth",
-      "Investors/LGUs"
-    ],
-    "when_will_it_take_effect": "Ratified 2024-12-10; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Recognizes and protects the rights of Indigenous Peoples in BARMM - the Teduray, Lambangian, Dulangan Manobo, Higaonon, and others - including their ancestral domains, culture, and self-governance, and strengthens the Ministry of Indigenous Peoples' Affairs to deliver on it.",
-      "in_practice": [
-        "Legal recognition of ancestral domain claims and customary governance within BARMM",
-        "Free, prior, and informed consent (FPIC) principles for projects affecting IP lands",
-        "MIPA strengthened as the responsible ministry"
-      ],
-      "for_specific_groups": {
-        "Indigenous communities": "The regional legal anchor for domain titling, cultural protection, and representation - engage through MIPA and your tribal leadership",
-        "Non-Moro indigenous youth": "Education and cultural-integrity protections",
-        "Investors/LGUs": "Consent and consultation duties before projects on IP lands"
-      },
-      "where_this_applies": "All of BARMM unless the title names a specific place",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Ancestral rights of non-Moro Indigenous Peoples, protected in regional law.",
-        "direct_benefits": [
-          {
-            "benefit": "Recognition of ancestral domains and customary governance",
-            "who_gets_it": "Teduray, Lambangian, Dulangan Manobo, and other IP communities",
-            "how_to_access": "Through MIPA and tribal leadership structures"
-          },
-          {
-            "benefit": "Free, prior, informed consent before projects on your lands",
-            "who_gets_it": "IP communities",
-            "how_to_access": "Invoke FPIC in any project consultation"
-          },
-          {
-            "benefit": "Cultural and educational protections for IP youth",
-            "who_gets_it": "Indigenous students",
-            "how_to_access": "MIPA/MBHTE programs"
-          }
-        ],
-        "indirect_benefits": [
-          "A ministry (MIPA) strengthened specifically to serve IPs"
-        ],
-        "limitations": [
-          "Domain delineation is a long process - the law starts it, doesn't finish it"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 64,
+  "short_title": "Bangsamoro Indigenous Peoples' Act of 2024",
+  "official_title": "AN ACT TO RECOGNIZE, DEVELOP, AND PROTECT THE INDIGENOUS PEOPLES AND THEIR RIGHTS IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO, STRENGTHENING THE MINISTRY OF INDIGENOUS PEOPLES' AFFAIRS, APPROPRIATING FUNDS THEREFOR AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2024-12-10",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session, begun 15 September 2022",
+  "date_passed": "2024-12-10",
+  "date_passed_hijri": "Jumada Al-Akhira 09, 1446",
+  "date_approved_by_chief_minister": "2024-12-11",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Indigenous Peoples",
-      "Settler communities"
-    ],
-    "impact_tags": [
-      "indigenous_settlers",
-      "labor_social"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2024-12-10"
-    }
+  "origin_bills": "Parliament Bill No. 273",
+  "effectivity": "15 days after publication in a newspaper of general circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "The region's indigenous peoples' code — 106 sections covering ancestral domain ownership, self-governance through traditional political structures, tribal justice, mandatory seats in every local council, consent over any project touching indigenous land, and a share of the revenue from resources taken out of it.",
+  "why_was_it_proposed": "The Organic Law promised recognition of indigenous rights, and the old regional statute — the Tribal Peoples Rights Act of the ARMM era — had been overtaken. Ancestral domain claims in the region, above all the Téduray Lambangian claim, had sat unresolved in the national commission for years. This act repeals the old law, brings those claims home to a regional ministry, and builds the machinery to decide them.",
+  "what_will_change": "Ancestral domains become inalienable and are held in perpetuity. No ministry or agency may issue or renew a concession, licence, lease or project permit without a certification from the indigenous peoples' ministry that the area does not overlap an ancestral domain — and none may issue at all while a domain claim is pending. Every LGU with ancestral land, or with an indigenous population above 5%, must seat an indigenous mandatory representative, and refusing to install one is an administrative offence. Communities receive no less than 10% of the revenue from resources taken from their domains. A ₱200 million Ancestral Domain Fund pays for delineation, titling, redemption and compensation.",
+  "who_will_be_affected": [
+   "The Téduray, Lambangian, Dulangan Manobo, Erumanun Ne Menuvu, Higaonon and B'laan",
+   "Marginalised Moro communities — the Badjao, Sama Dilaut, Jama Mapun, Sama Banguingui and Sama Pangutaran, expressly covered by this act",
+   "Every LGU in the region, which must seat indigenous representatives and may have to appoint a Deputy Governor or Mayor for indigenous peoples",
+   "Companies holding or seeking concessions, permits, leases or fishing rights over land or water inside ancestral domains",
+   "Settlers and organisations inside ancestral domains, whose terms of entry the indigenous political structures may review and renegotiate",
+   "The military, whose camps inside ancestral domains are declared to be owned by the communities"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "MOLE / MSSD",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2024-12-10 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "MOLE / MSSD (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 64",
-    "line2": "Bangsamoro Indigenous Peoples Rights Act",
-    "badges": [
-      "ENACTED",
-      "Labor Social",
-      "2024"
+  "when_will_it_take_effect": "In force since December 2024 — approved by the Chief Minister on 11 December 2024, effective 15 days after publication. Implementing rules were due within 90 days of passage.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. Your ancestral domain cannot be sold to anyone, ever. Nobody can get a permit, licence or concession over it without your free, prior and informed consent — and nobody can get one at all while your claim is still pending. You get at least 10% of the revenue from resources taken out of it. Your council of elders, not a court, decides land and family disputes first.",
+   "in_practice": [
+    "Ancestral domains are held in perpetuity and may not be sold or transferred to any LGU, agency, official, corporation or individual",
+    "Ancestral lands may be transferred only among bona fide members of the tribe — everything else is null and void, and punishable",
+    "If land was transferred to a non-member through vitiated consent or at an unconscionable price, you may redeem it for up to 15 years",
+    "No relocation without your consent, and by no means other than eminent domain",
+    "You may regulate who enters your domain — and review, assess and renegotiate the terms on which existing migrants and organisations came in",
+    "You receive not less than 10% of revenues from resources in your domain, paid directly to the community; royalties from outside operators are not less than 1% of gross income",
+    "Ancestral domains are exempt from real property tax, except portions used for large-scale agriculture, commercial forest plantation or residential purposes",
+    "Your council of elders is recognised — it can confer tribal titles, solemnise marriages, and assist in issuing birth, marriage, membership and death certificates",
+    "The military camps inside your domain are recognised as yours",
+    "₱200,000,000 Ancestral Domain Fund for delineation, titling, redemption and compensation"
+   ],
+   "for_specific_groups": {
+    "Téduray, Lambangian and Dulangan Manobo": "Pending ancestral domain applications at the national commission — the act names the Téduray Lambangian claim specifically — were to be turned over to the regional ministry within 90 days of passage for immediate action.",
+    "Badjao, Sama Dilaut, Jama Mapun, Sama Banguingui, Sama Pangutaran": "You are covered. This act extends indigenous peoples' protection to marginalised Moro communities, and directs the creation of a Sama Center for your upliftment.",
+    "Communities with a domain but no title": "Representation in your LGU's council is mandatory whether or not you hold a CADT or CALT, and self-delineation is the guiding principle — the sworn statement of your elders is essential proof.",
+    "Indigenous women": "Equal rights under CEDAW and the Magna Carta of Women, gender balance in bodies deciding IP matters, a regional action plan through the Women Commission, and — in areas with a predominant indigenous population — indigenous women employed as the primary providers of maternal and child care.",
+    "Indigenous learners": "The medium of instruction is the local indigenous language, teaching must be culturally appropriate, and a Tribal University founded on indigenous knowledge is to be created by a separate charter law.",
+    "Indigenous peacekeepers": "Indigenous Cultural Guardians are recognised — but must be civilian, unarmed, and never conscripted as an extension of the armed forces, the police, or any non-state armed group.",
+    "Companies and permit holders": "Existing contracts run to expiry, then cannot be renewed without consent and renegotiation. New ones require a Certification Precondition, and issuing a permit without one is both an administrative and a criminal offence.",
+    "Local chief executives and Sanggunians": "Installing the indigenous mandatory representative is mandatory and ministerial; interfering in their selection is unlawful; refusing to install them is a ground for administrative sanction."
+   },
+   "where_this_applies": "The whole BARMM. Where a domain straddles the boundary and the larger part lies outside, the national commission's process is recognised, though the regional ministry may still title the portion inside.",
+   "when_you_will_feel_it": "In force since December 2024. Delineation, titling and the adjudication bureau take years; the consent requirement over new permits bites immediately.",
+   "what_you_can_do": [
+    "File a Petition for Delineation with the ministry through your indigenous political structure — a majority of members must join it",
+    "Gather the proof the act accepts: sworn testimony of elders, photographs of burial grounds, sacred places and old villages, historical accounts of boundary pacts, genealogical surveys, and place-names in your own language",
+    "Ask whether a Certification Precondition was issued before any project on your land — its absence is prima facie evidence of unlawful intrusion",
+    "If your LGU has not seated an indigenous mandatory representative, that refusal is a ground for administrative sanction",
+    "If land was taken from you by an illegally acquired title, note the clocks: cancellation must be initiated within 5 years of the act taking effect, reconveyance within fifteen",
+    "Bring adverse claims, boundary disputes, fraudulent titles and consent violations to the Regional Adjudicators Bureau, which can subpoena, hold in contempt and issue injunctions"
+   ],
+   "watch_out_for": [
+    "Section 86 purports to bind national government agencies to the regional ministry's certification. Whether a regional act can direct national agencies is a real question the text does not resolve.",
+    "The right to review and renegotiate the terms of entry of existing migrants — Section 9(h) — reaches settler families long resident inside domains. The act does not say how that renegotiation works or what happens if it fails.",
+    "Where indigenous people already hold more than half of an LGU's elective offices, mandatory representation does not apply under Section 29(b).",
+    "The tax exemption in Section 74 carves out large-scale agriculture, commercial forest plantations and residential portions — the very uses most often disputed.",
+    "The primary penalty is customary law, with the statutory prison term and fine available only as an alternative the community may elect.",
+    "The action to cancel illegally acquired titles must be initiated within 5 years of the act taking effect, and reconveyance within fifteen. Those clocks began in December 2024.",
+    "The Tribal University exists only as an instruction to Parliament to enact a charter, which had not been enacted when this registry was compiled."
+   ],
+   "key_terms_explained": {
+    "Ancestral domain / Fusaka Ingëd": "All the land, water, forest, hunting and burial grounds and resources a community has held since time immemorial — and, the act says, not only the physical environment but the total environment, including the spiritual and cultural bonds to it.",
+    "Ancestral lands": "The identifiable share of a domain held by a particular member, family or clan. Transferable, but only within the tribe.",
+    "Native title": "Pre-conquest rights to land held under a claim of private ownership. Such land was never public domain — the act says it is indisputably presumed to have been privately held since before the Spanish conquest.",
+    "CADT / CALT": "Certificates of Ancestral Domain Title and Ancestral Lands Title — the formal recognition of ownership, registered with the Registry of Deeds.",
+    "FPIC": "Free, Prior and Informed Consent — a consensus decision reached under the community's own customary law, free of manipulation or coercion, on a proposal explained in a language and process they can understand.",
+    "Certification Precondition": "The ministry's certificate that an area does not overlap an ancestral domain, or that consent was obtained. Required before any concession, licence, lease, agreement or project.",
+    "IPMR": "Indigenous Peoples' Mandatory Representative — the person chosen by consensus of the community's own political structure to sit in the local legislative council.",
+    "IPS": "Indigenous Political Structure — the community's own governing institution, such as a Council of Elders, Council of Timuays, Timuay Justice and Governance, Gempa te Kalindaan ne Kamal, Kena Menuwa or Alimbubungan.",
+    "IKSP": "Indigenous Knowledge Systems and Practices — the body of knowledge, institutions and technologies a people has evolved. The act makes it their intellectual property.",
+    "Mamalu and Tabunaway": "The shared forebears of Moro and non-Moro peoples in the region. The act recognises Moro-IP kinship rooted in that common ancestry as a living tradition, and directs the building of a Banobo Center to memorialise it.",
+    "Kakap dulunan": "A boundary or memorial site marking a pact between peoples."
+   },
+   "status_note": "Passed 10 December 2024, approved by the Chief Minister the following day. It repeals Muslim Mindanao Autonomy Act No. 241, the Tribal Peoples Rights Act.",
+   "benefits": {
+    "headline": "Inalienable domains, consent over every permit, a revenue floor of 10%, guaranteed council seats, and an adjudication bureau with subpoena and contempt powers.",
+    "direct_benefits": [
+     {
+      "benefit": "Ancestral domains held in perpetuity and incapable of being sold to anyone",
+      "who_gets_it": "All covered indigenous communities",
+      "how_to_access": "Sections 6 to 8 — recognition by native title, formalised in a CADT when solicited"
+     },
+     {
+      "benefit": "A veto over projects — no concession, licence, lease or permit without consent, and none at all while a domain claim is pending",
+      "who_gets_it": "Communities inside or claiming ancestral domains",
+      "how_to_access": "Sections 84 to 86; communities may stop or suspend any project that has not satisfied consent guidelines"
+     },
+     {
+      "benefit": "Not less than 10% of revenues from resources in the domain, paid directly to the community",
+      "who_gets_it": "Communities with native, traditional or customary title",
+      "how_to_access": "Section 77, on a mutually agreed percentage that cannot fall below 10%"
+     },
+     {
+      "benefit": "Royalties of not less than 1% of gross income from outside operators, with agreements capped at 25 years renewable once",
+      "who_gets_it": "Communities whose resources are developed by non-members",
+      "how_to_access": "Sections 78 and 80, under a memorandum of agreement following consent"
+     },
+     {
+      "benefit": "A mandatory seat in the local legislative council, and a Deputy Governor or Mayor where the population is at least 5% indigenous",
+      "who_gets_it": "Communities in every constituent LGU",
+      "how_to_access": "Sections 29 to 32; installation is ministerial and refusal is sanctionable"
+     },
+     {
+      "benefit": "Your own justice system deciding land, property, succession and family disputes first, with doubts resolved in your favour",
+      "who_gets_it": "Members of covered communities, and non-members who voluntarily submit",
+      "how_to_access": "Sections 34 to 37"
+     },
+     {
+      "benefit": "Redemption of land transferred to a non-member through vitiated consent or at an unconscionable price",
+      "who_gets_it": "Ancestral land holders",
+      "how_to_access": "Section 10(b), for up to 15 years from the transfer"
+     },
+     {
+      "benefit": "Ownership of the parts of the domain occupied by military camps, with priority in development assistance",
+      "who_gets_it": "Communities hosting camps",
+      "how_to_access": "Section 66, with normalization agencies directed to coordinate with the IPS and access the Special Development Fund"
+     },
+     {
+      "benefit": "Exemption from real property tax, special levies and other exactions on the domain",
+      "who_gets_it": "Titled ancestral domains",
+      "how_to_access": "Section 74, excluding large-scale agriculture, commercial forest plantation and residential portions"
+     },
+     {
+      "benefit": "Schooling in your own language, and intellectual property rights over your own knowledge",
+      "who_gets_it": "Indigenous learners and communities",
+      "how_to_access": "Sections 52 and 59; public dissemination of that knowledge must go through the IPS"
+     },
+     {
+      "benefit": "A fiscally autonomous development office governed by your own political structures",
+      "who_gets_it": "All indigenous political structures in the region",
+      "how_to_access": "Sections 20 and 21 — the Fusaka Ingëd Development Office, whose board seats IPS representatives as regular members"
+     }
     ],
-    "what_this_does": "Recognize, Develop, and Protect the Indigenous Peoples and Their Rights in BARMM; Strengthening MIPA.",
-    "who_it_affects": "Indigenous Peoples · Settler communities",
-    "effective": "2024-12-10"
-  },
-  "views": {
-    "simple": "Recognize, Develop, and Protect the Indigenous Peoples and Their Rights in BARMM; Strengthening MIPA.",
-    "official": "AN ACT TO RECOGNIZE, DEVELOP, AND PROTECT THE INDIGENOUS PEOPLES AND THEIR RIGHTS IN BARMM; STRENGTHENING MIPA"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "A ₱200 million Ancestral Domain Fund covering delineation, titling, redemption and compensation for expropriated lands",
+     "A Regional Adjudicators Bureau with exclusive jurisdiction over domain disputes, fraudulent titles and consent violations",
+     "Ministry notification that terminates other agencies' claimed jurisdiction over a certified domain within 30 days",
+     "An Indigenous Peoples' Council with 1 seat per recognised tribe, convened at least quarterly",
+     "A Banobo Center memorialising Mamalu and Tabunaway, and a Sama Center for marginalised Moro communities",
+     "An Indigenous Peoples' Day declared under the Bangsamoro Holidays Act",
+     "Parliamentary review of the whole act beginning 5 years after enactment and every 5 years after"
+    ],
+    "limitations": [
+     "Delineation and titling are slow, evidence-heavy processes.",
+     "Section 86's reach over national agencies is legally untested.",
+     "Existing contracts and legitimately vested property rights survive until they expire.",
+     "The Tribal University requires a separate charter law that has not been enacted."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "If you hold ancestral domain: attend meetings and take part in protecting and developing it; preserve ecological balance, flora, fauna and watersheds; help reforest denuded areas, with just remuneration; and observe customary law along with this act.",
+     "If you are a company or proponent: obtain a Certification Precondition through consent before any project, renegotiate on renewal, and pay the agreed share and royalties.",
+     "If you are a local official: install the endorsed representative, and do not interfere in how they are chosen."
+    ],
+    "for_ministries": [
+     "MIPA delineates and issues titles, registers them with the Registry of Deeds, issues the Certification Precondition after field investigation, gives legal and paralegal assistance, exercises quasi-judicial powers, and convenes the Indigenous Peoples' Council quarterly",
+     "MENRE and MAFAR verify overlapping claims during delineation and may not permit resource use without the precondition",
+     "MILG confirms the mandatory representatives",
+     "MBHTE, with MIPA, provides an integrated education system and works toward the Tribal University",
+     "The Bangsamoro Women Commission develops the regional action plan for indigenous women",
+     "BCPCH builds the Banobo and Sama Centers and funds archaeological and historical sites",
+     "Every relevant ministry includes a specific appropriation for indigenous peoples in its own budget"
+    ]
+   },
+   "what_is_prohibited": [
+    "Selling, transferring or alienating an ancestral domain to any LGU, agency, official, corporation, institution, group or individual.",
+    "Buying or selling ancestral lands other than among bona fide members of the tribe, and any donation, leasehold or other conveyance made to circumvent this.",
+    "Unauthorised or unlawful intrusion upon any portion of an ancestral domain — with the penalty one degree higher when committed by a public officer.",
+    "Implementing any plan, programme, project or activity without a Certification Precondition obtained through free, prior and informed consent.",
+    "Issuing, renewing or granting any concession, licence, lease or production-sharing agreement without prior certification, or issuing any while a domain claim is pending.",
+    "Interfering, directly or indirectly, in the consent process by any person, official, LGU or entity that is not part of the affected community.",
+    "Intervening, as a local chief executive or Sanggunian, in the selection of the indigenous mandatory representative.",
+    "Discriminating in employment on the basis of indigenous identity, or discharging an employee to prevent them enjoying rights under this act.",
+    "Excavating archaeological sites for cultural materials or human remains without consent; defacing or destroying artifacts; logging, cutting trees or mining within identified indigenous areas; and desecrating sacred places and burial grounds.",
+    "Recruiting community members into the armed forces against their will — in particular for use against other indigenous communities — and recruiting their children under any circumstances.",
+    "Arming or conscripting Indigenous Cultural Guardians as an extension of the armed forces, the police, or any non-state armed group."
+   ],
+   "penalties": {
+    "primary": "Punishment in accordance with the customary laws of the community concerned, provided it is not cruel, degrading or inhuman, and is neither the death penalty nor an excessive fine.",
+    "statutory_alternative": "Without prejudice to the community's right to invoke existing laws: imprisonment of not less than 9 months and not more than 12 years, or a fine of ₱100,000 to ₱500,000, or both, at the court's discretion — plus damages payable to the community.",
+    "aggravation": "Unauthorised intrusion by a public officer carries a penalty one degree higher, without prejudice to civil and administrative action.",
+    "corporate": "Officers, managers and heads of a juridical entity are liable for its unlawful acts, and the entity's certification, registration or licence may be cancelled.",
+    "public_officials": "Punished under existing administrative laws after due process."
+   },
+   "where_to_complain": {
+    "first_stop": "Your indigenous political structure and its tribal justice system, which decides land, property and family disputes first",
+    "adjudication": "The Regional Adjudicators Bureau under MIPA — exclusive jurisdiction over adverse claims and boundary disputes, cancellation of fraudulent titles, cancellation of a Certification Precondition, consent violations, and protests against a mandatory representative",
+    "courts": "Decisions of the ministry on domain disputes may be brought to the proper courts of justice",
+    "note": "The Bureau can summon parties, administer oaths, issue subpoenas, hold people in contempt and enjoin acts pending before it."
+   },
+   "everyday_scenarios": [
+    "A mining application covers land a community has farmed for generations but never titled. No permit may issue without a Certification Precondition from the ministry — and none may issue at all while the community's domain claim is pending.",
+    "A municipality has never seated an indigenous representative, saying no title exists. Representation is mandatory where an ancestral domain or land exists whether or not there is a CADT, and refusing to install the endorsed representative is a ground for administrative sanction.",
+    "An elder sold ancestral land cheaply to an outsider under pressure 2 years ago. The family may redeem it for up to 15 years from the transfer.",
+    "A fishing corporation seeks a permit in waters inside a domain. The municipality or MAFAR may grant it only on a Certification Precondition, royalties are at least 1% of gross income, and issuing without the precondition is an administrative and criminal offence.",
+    "An army detachment sits on part of a domain. Section 66 recognises the community as owner of that area and its infrastructure, and directs normalization agencies to coordinate with the community's own structure."
+   ]
   }
+ },
+ "key_provisions": [
+  "Sections 1–4 — Short title: the “Bangsamoro Indigenous Peoples' Act of 2024”. Policy adopts the UN Declaration on the Rights of Indigenous Peoples as part of the regional framework; recognises Moro-IP kinship “rooted in their common ancestry from Mamalu and Tabunaway”; and acknowledges the entire Bangsamoro Territory as the shared homeland of all peoples with precolonial and historic ties, within which the various tribes hold distinct and separate ancestral domains, or fusaka ingëd.",
+  "Section 3 — Coverage: all native indigenous peoples in the region, including the Téduray, Lambangian, Dulangan Manobo, Erumanun Ne Menuvu, Higaonon, B'laan, Badjao, Sama Dilaut, Jama Mapun, Sama Banguingui, Sama Pangutaran, and other marginalised and minority communities identified by self-ascription and ascription by others. Section 5(s) separately defines “Marginalized Moro Peoples or Communities”, bringing marginalised Moro groups within the act's protection.",
+  "Section 5 — Definitions. Ancestral domain covers lands, marshlands, inland waters, coastal areas, shores, bays, lakes, rivers, coastal seas and their natural resources, held since time immemorial “except when interrupted by war, force majeure, displacement by force, deceit, stealth, or as a result of government projects or voluntary dealings”. Native title means pre-conquest rights never considered public land, indisputably presumed held since before the Spanish conquest. Free, Prior and Informed Consent is a consensus decision made under customary law, free from external manipulation, on a proposal disclosed in a language and process the community clearly understands.",
+  "Sections 6–8 — Ancestral domains cover not only the physical but the total environment, including spiritual and cultural bonds, and serve as the material basis of cultural integrity. They are held in perpetuity and “may not be sold, transferred, or otherwise alienated to any local government unit, agency, office or public official or non-government entity, institution, group, private corporation, or individual”. Ancestral lands may be bought and sold only among bona fide members of the tribe; any other transfer, donation, leasehold or conveyance in circumvention is null and void and punishable.",
+  "Section 9 — Rights to ancestral domains: ownership over lands, waters, sacred places, burial grounds, ethnomedicinal conservation areas and traditional hunting and fishing grounds; self-determination; an equitable share of resource revenues; the right to develop and to negotiate exploration terms, with just and fair compensation for damage; the right to stay in the territory, with relocation only through eminent domain and only with consent, a guaranteed right to return once the grounds cease, and — where return is impossible — replacement land of at least equal quality and legal status plus full compensation; rights during armed conflict under the Fourth Geneva Convention, with express bars on recruiting community members against their will “and in particular, for use against other ICCs/IPs”, on recruiting their children under any circumstances, on forcing abandonment of lands, and on relocation to special centres for military purposes without consultation with the indigenous political structure; rights in displacement, including security of tenure where the domain has ceased to exist; the right to regulate the entry of migrants, including “the right to review, assess, and renegotiate the terms of entry of existing migrants and organizations”; the right to a safe and clean environment; the right to reclaim parts of reservations not used for their intended purpose; and the right to resolve land and other conflicts under customary law.",
+  "Sections 10–13 — Ancestral land holders may transfer only to other members. Where a transfer to a non-member was tainted by vitiated consent or made for an unconscionable price, the transferor may redeem the property within 15 years, without prejudice to land review under the transitional justice mechanism. Communities owe duties to protect and develop the domain, maintain ecological balance, and restore denuded areas with just remuneration. Unauthorised intrusion is punishable; failure to provide a Certification Precondition secured through consent is prima facie evidence of unlawful intrusion; and where the intrusion is by a public officer the penalty is one degree higher.",
+  "Sections 14–19 — Self-governance. The Bangsamoro Government recognises the inherent right to self-determination and affirms the existing indigenous political structures — Council of Elders, Council of Timuays, Timuay Justice and Governance, Gempa te Kalindaan ne Kamal, Kena Menuwa, Alimbubungan — as the governing bodies defining policy, leadership and consensus for their members. Those structures may resolve conflicts, strengthen customary law, confer tribal titles, solemnise marriage and assist in issuing birth, tribal marriage, tribal membership and death certificates, recommend the mandatory representative, administer customary law within their territories, and negotiate resource exploration terms. They are to develop their own resource-generation strategies and establish a mutual support fund.",
+  "Sections 20–28 — The Fusaka Ingëd Development Office is created as an attached agency of MIPA with fiscal autonomy, its Board of Directors composed of representatives of the different indigenous political structures as regular members, with the Minister, the 2 Members of Parliament representing the Non-Moro IPs, and the Director as ex-officio members. It formulates conservation systems, may see communities authorised to prevent, apprehend and prosecute violators of environmental laws inside their domains, helps negotiate resource terms, seeks redress and compensation for damage to culture and domain, serves as custodian of the funds owed to the structures from revenue shares, assists delineation petitions, promotes indigenous women's participation, and works to have domains recognised as special zones of peace and life. An Indigenous Peoples Council advises the ministry, with 1 seat per recognised tribe selected under each tribe's own customary law — “MIPA shall not intervene nor unduly influence the internal process of selection” — serving three-year terms on honoraria and per diems, convened at least quarterly. Tribal local government units may be created in areas with substantial non-Moro populations under BAA 49.",
+  "Sections 29–33 — Mandatory representation. Where an ancestral domain or land exists in a constituent LGU, whether or not titled, indigenous representation in the local legislative council is mandatory, the representative chosen by consensus of the indigenous political structure from qualified traditional or actual rights holders. Where there is no domain, representation is still mandatory when at least 5% of the LGU's population is indigenous, provided not more than 50% of its local elective officials already are. Below that threshold an LGU may allow representation by resolution and receive financial support from the Bangsamoro Government for any resulting budget deficit. It is unlawful for the local chief executive or Sanggunian to intervene directly or indirectly in the selection; accepting and installing the endorsed, affirmed and confirmed representative is “mandatory and ministerial”, and willful refusal is a ground for administrative sanction. A Deputy Governor or Deputy Mayor for indigenous peoples is mandatory in provinces and municipalities that are at least 5% indigenous, appointed on the recommendation of the community's own structure. Women must be represented in the peace and order council and all local special bodies.",
+  "Sections 34–37 — Tribal justice. Customary laws, traditions and practices resolve claims and disputes among community members; different groups may agree which customs apply; and a non-member may voluntarily submit to the tribal justice system. Communities have the right to use their own justice systems, conflict resolution institutions and peacebuilding processes so far as compatible with the national legal system and internationally recognised human rights instruments, with complaints going to the regular courts only in default. The traditional tribal justice system decides personal and family relations and property rights under customary law, and the Bangsamoro Government is to resource the tribal justice council. Customary law applies first to property rights, claims and ownership, hereditary succession and land disputes, and “any doubt or ambiguity in the application and interpretation of laws shall be resolved in favor of the ICCs/IPs”.",
+  "Sections 38–41 — Social justice. Equal protection, the same political, economic, social, cultural and labour rights as every other citizen, including equal treatment, fair wages, safe working conditions and freedom from workplace discrimination. Special measures for employment, vocational training, housing, sanitation, health and social security, with particular attention to indigenous women, the elderly, youth and persons with disabilities; culturally sensitive medical facilities; and a requirement that relevant ministries include in their total budget a specific appropriation reserved for indigenous peoples. In areas with substantial indigenous populations, ministries and offices must prioritise qualified indigenous applicants resident in the area during hiring. It is unlawful to discriminate in employment on the basis of ethnicity or identity, to deny any right or benefit under the act, or to discharge an employee to prevent them enjoying one.",
+  "Sections 42–49 — Women, children and youth. No provision may be read to diminish rights already accorded to women; full protection against violence and discrimination under CEDAW and the Magna Carta of Women; gender balance in bodies deciding indigenous matters; a Bangsamoro Regional Action Plan for indigenous women developed through the Women Commission, incorporating support for preserving indigenous women's knowledge; a right to health including indigenous birthing methods “offered to indigenous women but not imposed upon them” and communicated in local languages; employment of indigenous women as the primary providers of maternal and child care in areas with predominant indigenous populations; direct benefit from the Gender and Development budget; protection of children and youth against violence, economic exploitation and hazardous work; and an integrated education system through MBHTE with MIPA.",
+  "Sections 50–61 — Indigenous knowledge and culture. Full ownership, control and protection of cultural and intellectual rights, including genetic resources, seeds, medicinal plants, traditional medicine, ecological knowledge, oral traditions, designs and performing arts. The medium of instruction shall be the local indigenous language, with culturally appropriate teaching methods, without precluding communities from running their own schools. A Tribal University founded on indigenous knowledge is to be created, with Parliament directed to enact its charter; it shall be open to all regardless of religion, ethnicity or nationality while prioritising non-Moro indigenous learners and teachers. Government-owned media must reflect indigenous cultural diversity. Indigenous Cultural Guardians — Diyaga Fénuwo Agubalang, Balagan, Bagani and similar peacekeeping structures — are recognised, and “shall be civilian in character and shall not be armed or conscripted as an extension of the Armed Forces of the Philippines, Philippine National Police, or non-state armed forces at any point in time”. A Banobo Center is to be built as a kakap dulunan site memorialising the founding of relations between Mamalu and Tabunaway, and a Sama Center for the marginalised Moro communities. Indigenous knowledge is the intellectual property of the community, with public dissemination going through the indigenous political structure, and a right to restitution of cultural, intellectual, religious and spiritual property taken without consent. It is unlawful to excavate archaeological sites for cultural materials or human remains without consent, deface or destroy artifacts, log, cut trees or mine within identified indigenous areas, or desecrate sacred places and burial grounds.",
+  "Sections 62–64 — MIPA delineates and issues CADTs and CALTs and registers them with the Registry of Deeds, coordinating with MENRE and MAFAR to avoid overlapping titles; facilitates consent consultations and issues the Certification Precondition as a precondition to any permit, lease or grant; provides legal and paralegal assistance; accredits local indigenous organisations and NGOs; hears and decides cases under quasi-judicial powers; builds a databank of indigenous knowledge subject to consent; and issues certificates of affirmation to mandatory representatives. It may open provincial and city offices, and service centres are to be established in designated ancestral domain areas.",
+  "Sections 65–76 — Delineation. Self-delineation is the guiding principle and the Sworn Statement of the Elders is essential. Communities are recognised as owners of the parts of their domains occupied by military camps, including associated residential, livelihood areas and infrastructure, with normalization agencies directed to coordinate with the indigenous political structure and access the Special Development Fund. Domains already delineated under national law are recognised; unified claims mostly outside the region stay with the national commission, without prejudice to a regional title over the portion inside. The process runs from a Petition for Delineation by a majority of members, through census and delineation with genuine community participation, proof drawn from a list of ten kinds of evidence — sworn elder testimony, written accounts of customs and political structures, photographs of old improvements, burial grounds, sacred places, ritual areas and old villages, historical boundary pacts, survey plans, anthropological data, genealogical surveys, descriptive histories of communal forests and landmarks, and place-names in the local language — verification with MAFAR, MENRE and the Registry of Deeds, a perimeter map, notice and publication including a native-language translation posted 15 days and newspaper publication twice, with radio broadcast a valid substitute where no newspaper exists, a fifteen-day window for opposition, and endorsement within 15 days. No endorsement may be made that directly benefits the endorsing authority; such matters go to the Chief Minister, and violation carries administrative sanction. Within 30 days of certification the ministry notifies MENRE, MAFAR, MILG, MBHTE, MTIT, MOH and any other agency claiming jurisdiction, and “such notification shall terminate any legal basis for the jurisdiction previously claimed”. Fraudulently acquired titles may be cancelled after notice and hearing if the case is filed within 1 year of registration. Areas within domains are presumed communally held, though communal rights are not co-ownership under the Civil Code. Legitimately vested property rights are respected, without prejudice to land review under transitional justice; existing contracts, licences, concessions, leases and permits run to expiry and cannot then be renewed without consent and renegotiation, and may be terminated for cause. Certified domains are exempt from real property taxes, special levies and other exactions except portions used for large-scale agriculture, commercial forest plantation or residential purposes, or upon titling by private persons. Expropriation may be resorted to; the ministry is to seek cancellation of illegally acquired titles, respecting good-faith possessors, with cancellation actions to begin within 5 years of effectivity and reconveyance within fifteen.",
+  "Sections 77–83 — Equitable share and priority rights. Communities receive an equitable share of revenues from resources within territories under native, traditional or customary title, on a mutually agreed percentage in their favour after the consent process, “but in no case shall it be less than 10% (10%)”, paid directly by the Bangsamoro Government to the communities. Communities hold priority rights in harvesting, extraction, development and use; a non-member may take part for no more than 25 years, renewable once for no more than 25, under a memorandum of agreement, with full royalties to the community of not less than 1% of gross income and visitorial powers in the ministry. Subsoil applications require ministry certification to MENRE on the favourable recommendation of the tribal council and the Indigenous Peoples Council after consent. Communities hold preferential fishing rights, and permits to private corporations in waters within domains may issue only on a Certification Precondition, with royalties of not less than 1% — issuance without the precondition being “an administrative and criminal offense”. Communities may enter into or deny Agribusiness Venture Agreements. Conservation of critical watersheds, mangroves, wildlife sanctuaries and protected areas requires full participation and consent, communities hold a preferential option to conserve, any transfer is temporary and reverts to them, and no community may be displaced for conservation purposes without consent. Access to biological and genetic resources, including digital sequence information, requires consent under customary law, with proper attribution and benefit sharing on mutually agreed terms.",
+  "Sections 84–88 — Free, Prior and Informed Consent. It is unlawful for public or private institutions to implement plans, programmes, projects or activities without a Certification Precondition obtained through consent. All ministries, agencies, offices “and other national governmental agencies” are strictly enjoined from issuing, renewing or granting any concession, licence or lease, entering any production-sharing agreement, or carrying out any project without prior certification from MIPA that the area does not overlap an ancestral domain — certification issuing only after a field-based investigation, never without consent and the participation of the Indigenous Peoples Council, and never while a domain application is pending. Communities have the right to stop or suspend any project that has not satisfied consent guidelines, and violation grounds administrative and criminal sanctions. Any person, public official, LGU or entity outside the affected community who directly or indirectly interferes with the consent process is administratively and criminally liable. Guidelines go into the implementing rules with active participation of the indigenous political structures, and the ministry reviews them every 3 years.",
+  "Sections 89–91 — A Regional Adjudicators Bureau under MIPA holds original and exclusive jurisdiction over adverse claims and boundary disputes arising from delineation — whether the parties are non-indigenous or from different communities — petitions to cancel fraudulently issued titles, petitions to cancel a Certification Precondition for irregularity or breach of the memorandum of agreement, violations of consent procedures, and disqualification or protest cases against a mandatory representative. Through the Bureau the ministry may summon parties, administer oaths, issue subpoenas for testimony and documents, hold persons in direct or indirect contempt and impose penalties, enjoin acts that would cause grave or irreparable damage, and promulgate its own rules.",
+  "Sections 92–95 — Support for indigenous disaster risk reduction and climate adaptation systems, with funds for resilience through sustainable agriculture, agroecology and food sovereignty; an Indigenous Peoples' Day declared under BAA 39, the Bangsamoro Holidays Act of 2023; affirmation of existing settlements and presidential proclamations; and a non-diminution clause preserving rights under UNDRIP, the Universal Declaration of Human Rights and RA 8371.",
+  "Sections 96–99 — Penalties: violations are punished under the customary laws of the community concerned, provided the punishment is not cruel, degrading or inhuman and is neither the death penalty nor an excessive fine — without prejudice to the community's right to invoke existing laws, under which conviction carries imprisonment of 9 months to 12 years, or a fine of ₱100,000 to ₱500,000, or both, plus damages. Officers, managers and heads of juridical entities are liable, and the entity's precondition certificate, registration or licence may be cancelled. An Ancestral Domain Fund is created as a Special Fund with an initial ₱200,000,000 for compensation of expropriated lands, redemption, delineation, titling and development, with later appropriations in the ministry's budget.",
+  "Sections 100–106 — Implementing rules within 90 days of passage by MIPA with the Committee on Indigenous Peoples' Affairs, in consultation with the indigenous political structures. Parliament reviews implementation beginning 5 years after enactment and every 5 years thereafter. Within 90 days, pending ancestral domain applications being processed by the National Commission on Indigenous Peoples — “such as the Téduray Lambangian Ancestral Domain Claim” — are turned over to MIPA for immediate action. A saving clause preserves rights under other treaties, laws and agreements. Muslim Mindanao Autonomy Act No. 241, the Tribal Peoples Rights Act, is repealed, and Title VII of BAA 13, the Administrative Code, is repealed or amended where inconsistent. The act takes effect 15 days after publication."
+ ],
+ "impact": {
+  "who_benefits": [
+   "The Téduray, Lambangian, Dulangan Manobo, Erumanun Ne Menuvu, Higaonon and B'laan",
+   "Marginalised Moro communities — Badjao, Sama Dilaut, Jama Mapun, Sama Banguingui, Sama Pangutaran",
+   "Indigenous women, children and youth",
+   "Indigenous political structures and tribal justice councils",
+   "Communities hosting military camps inside their domains"
+  ],
+  "impact_tags": [
+   "indigenous_settlers",
+   "priority_code",
+   "local_government",
+   "culture_heritage",
+   "environment_climate"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱200,000,000 initial Ancestral Domain Fund, a Special Fund for compensation, redemption, delineation, titling and domain development; other implementation funded through MIPA in the annual appropriations act",
+  "figures_note": "Quoted from Sections 98 and 99."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2024-12-10"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/01/BAA-64-–-Bangsamoro-Indigenous-Peoples-Act-of-2024.pdf",
+  "irr": "Due from MIPA within 90 days of passage, with the Committee on Indigenous Peoples' Affairs — not yet captured in this registry."
+ },
+ "related_legislation": {
+  "amends": [
+   "BAA 13 (Bangsamoro Administrative Code) — Title VII on Indigenous Peoples' Affairs, repealed or amended where inconsistent"
+  ],
+  "amended_by": [],
+  "repeals": "Muslim Mindanao Autonomy Act No. 241, the Tribal Peoples Rights Act",
+  "origin_bill": "Parliament Bill No. 273",
+  "related_note": "Adopts UNDRIP into the regional framework and preserves rights under RA 8371, the national IPRA. Tribal local government units are created under BAA 49, the Local Governance Code, and local councils under it seat the mandatory representatives. Indigenous Peoples' Day is declared under BAA 39, the Bangsamoro Holidays Act of 2023. Redemption of ancestral land and review of existing property rights are expressly left open to the transitional justice mechanism later built by BAA 89. Section 66 ties camp areas inside domains to the normalization process and the Special Development Fund, and Section 102 transfers pending national commission claims — naming the Téduray Lambangian Ancestral Domain Claim — to the regional ministry."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "₱200,000,000 Ancestral Domain Fund",
+  "irr_status": "Section 100 requires implementing rules within 90 days of passage. Section 88 places the consent guidelines in those rules, reviewed every 3 years. Not yet captured in this registry.",
+  "implementing_agency": {
+   "agency": "Ministry of Indigenous Peoples' Affairs, with the Bureau of Ancestral Domains, the Regional Adjudicators Bureau and the Fusaka Ingëd Development Office",
+   "inferred": false
+  },
+  "note": "Read from the enacted text as signed, all 32 pages and 106 sections. Two statutory clocks run from effectivity in December 2024: actions to cancel illegally acquired titles must begin within 5 years, and reconveyance within fifteen. Parliament is to review the act beginning 5 years after enactment."
+ },
+ "citizen_questions": [
+  {
+   "q": "Can our ancestral domain ever be sold?",
+   "a": "No. Section 6 holds domains in perpetuity and bars their sale, transfer or alienation to any local government unit, agency, office, public official, non-government entity, institution, group, corporation or individual. Ancestral lands may change hands only among bona fide members of the tribe."
+  },
+  {
+   "q": "Can a company get a permit over our land without asking us?",
+   "a": "No. Section 86 bars any ministry or agency from issuing, renewing or granting a concession, licence, lease or production-sharing agreement, or carrying out any project, without prior certification from the ministry that the area does not overlap an ancestral domain — and no certification issues without free, prior and informed consent. No new concession may issue at all while a domain claim is pending."
+  },
+  {
+   "q": "What do we get from resources taken out of our domain?",
+   "a": "Not less than 10% of the revenues, on a mutually agreed percentage in your favour, paid directly by the Bangsamoro Government to the community. Where an outside operator develops the resource, royalties are not less than 1% of gross income, under an agreement capped at 25 years renewable once."
+  },
+  {
+   "q": "Does our community get a seat in the municipal council?",
+   "a": "Yes, if there is an ancestral domain or ancestral land in the LGU — with or without a title — or if at least 5% of the population is indigenous. Installing the representative your own structure endorses is mandatory and ministerial, and willful refusal is a ground for administrative sanction. It is also unlawful for the mayor or the council to interfere in who is chosen."
+  },
+  {
+   "q": "Our land was taken years ago under a title we say was illegal. Is it too late?",
+   "a": "Not necessarily, but the clocks matter. The ministry may act to cancel illegally acquired titles if the action is initiated within 5 years of the act taking effect — that is, by around December 2029 — and reconveyance within 15 years. Land transferred to a non-member through vitiated consent or at an unconscionable price may be redeemed within 15 years of the transfer."
+  },
+  {
+   "q": "Who decides our land and family disputes?",
+   "a": "Your own customary law and tribal justice system, first. Only in default do complaints go to amicable settlement, alternative dispute resolution or the courts. Section 37 says customary law applies first to property, ownership, hereditary succession and land disputes, and that any doubt or ambiguity is resolved in favour of the community."
+  },
+  {
+   "q": "Does this act cover Moro communities too?",
+   "a": "Yes, marginalised ones. The Badjao, Sama Dilaut, Jama Mapun, Sama Banguingui and Sama Pangutaran are named in the coverage, the act separately defines “Marginalized Moro Peoples or Communities”, and it directs the creation of a Sama Center for their upliftment."
+  },
+  {
+   "q": "What happened to our claim that was pending with the national commission?",
+   "a": "Section 102 required pending ancestral domain applications with the NCIP — naming the Téduray Lambangian Ancestral Domain Claim — to be turned over to the regional ministry within 90 days of passage for immediate action."
+  },
+  {
+   "q": "What about the army camp on our land?",
+   "a": "Section 66 recognises the community as the rightful owner of the parts of the domain occupied by military camps, including associated residential and livelihood areas and infrastructure, with all rights of ownership, priority in development assistance, and a direction that normalization agencies coordinate with the community's own structure and work to access the Special Development Fund."
+  },
+  {
+   "q": "Can our peacekeepers be armed by the military?",
+   "a": "No. Section 56 recognises Indigenous Cultural Guardians but requires them to be civilian in character and forbids arming or conscripting them as an extension of the armed forces, the police, or any non-state armed group at any point in time."
+  },
+  {
+   "q": "What language will our children be taught in?",
+   "a": "Section 52 says the medium of instruction shall be the local indigenous language, with culturally sensitive teaching methods — and communities keep the right to run their own schools."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 64",
+  "line2": "Bangsamoro Indigenous Peoples' Act of 2024",
+  "badges": [
+   "IN FORCE",
+   "Indigenous Peoples",
+   "2024"
+  ],
+  "what_this_does": "Makes ancestral domains inalienable, requires consent before any permit over them, guarantees council seats and at least 10% of resource revenue.",
+  "who_it_affects": "Non-Moro indigenous peoples · marginalised Moro communities · LGUs · permit holders",
+  "effective": "2024-12-11"
+ },
+ "views": {
+  "simple": "The region's indigenous peoples' code: ancestral domains held in perpetuity and incapable of sale, free prior and informed consent required before any concession or project — and none at all while a claim is pending — mandatory seats in every local council with sanctions for refusing to seat them, tribal justice with primacy over land and family disputes, at least 10% of resource revenue paid directly to communities, recognition of communities as owners of the military camps on their land, and a ₱200 million fund for delineation, titling and redemption.",
+  "official": "AN ACT TO RECOGNIZE, DEVELOP, AND PROTECT THE INDIGENOUS PEOPLES AND THEIR RIGHTS IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO, STRENGTHENING THE MINISTRY OF INDIGENOUS PEOPLES' AFFAIRS, APPROPRIATING FUNDS THEREFOR AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 64, enacted text as signed (Parliament's acts index), all 32 pages and 106 sections.",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

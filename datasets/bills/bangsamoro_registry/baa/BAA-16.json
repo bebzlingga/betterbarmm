@@ -1,165 +1,199 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 16,
-    "short_title": "Adopts an Official SEAL for the Parliament of",
-    "official_title": "AN ACT ADOPTING AN OFFICIAL SEAL FOR THE PARLIAMENT OF BARMM",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2021-01-19",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Adopts an Official SEAL for the Parliament of BARMM.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Adopts an Official SEAL for the Parliament of BARMM.",
-    "who_will_be_affected": [
-      "Employees & students",
-      "Communities"
-    ],
-    "when_will_it_take_effect": "Ratified 2021-01-19; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "An identity law: it defines an official symbol or observance of the Bangsamoro (flag, emblem, hymn, seal, calendar, holidays, or memorials). It doesn't hand out benefits, but it shapes the public face of the region you live in - what flies over government buildings, what days are non-working, how the Bangsamoro story is told.",
-      "in_practice": [
-        "Government offices, schools, and LGUs must use/observe it",
-        "Holiday-related acts affect work and class suspensions region-wide",
-        "Memorial acts create public sites and commemorations"
-      ],
-      "for_specific_groups": {
-        "Employees & students": "Regional holidays and observances flow from these laws",
-        "Communities": "Shared symbols of the autonomy won through the peace process"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Identity, recognition, and (for holiday laws) actual days off.",
-        "direct_benefits": [
-          {
-            "benefit": "Official identity: the symbols/observances of your autonomous region",
-            "who_gets_it": "All residents",
-            "how_to_access": "Public display and observance"
-          }
-        ],
-        "indirect_benefits": [
-          "Cultural pride and the normalization of Bangsamoro identity in public life"
-        ],
-        "limitations": [
-          "Symbolic laws confer no monetary claims"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 16,
+  "short_title": "Official Seal of the Bangsamoro Parliament",
+  "official_title": "AN ACT ADOPTING AN OFFICIAL SEAL FOR THE PARLIAMENT OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2021-01-19",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Second Regular Session",
+  "date_passed": "2021-01-19",
+  "date_approved_by_chief_minister": "2021-02-12",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "other",
-      "symbols_identity"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2021-01-19"
-    }
+  "effectivity": "15 days after publication in a regional newspaper of general circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Adopts the Parliament's own official seal — a green circle carrying the Bangsamoro flag on a shield, eighty boxes for the 80 members, and an open book for the rule of law — used to authenticate its acts.",
+  "why_was_it_proposed": "To establish the Parliament as the legislative authority of the region in its own right, with a mark reflective of its functions and of the struggles and aspirations of its people.",
+  "what_will_change": "Parliament and its members have a seal of their own, distinct from the Bangsamoro Seal, for use on official acts, communications and documents.",
+  "who_will_be_affected": [
+   "Anyone receiving an official document from Parliament or a Member",
+   "Members of Parliament, who may use the seal on their own official communications"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Office of the Chief Minister",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2021-01-19 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Office of the Chief Minister (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 16",
-    "line2": "Adopts an Official SEAL for the Parliament of",
-    "badges": [
-      "ENACTED",
-      "Symbols Identity",
-      "2021"
+  "when_will_it_take_effect": "In force since 2021 — 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. Parliament has its own seal, separate from the region's. The eighty boxes on it stand for the 80 members, and the open book for adherence to the rule of law.",
+   "in_practice": [
+    "Circular, bordered by two green (#009966) circles",
+    "'BANGSAMORO PARLIAMENT' in green on white across the upper portion",
+    "'20 BARMM 19' on red (#FF3333) across the lower portion",
+    "At the centre, the Bangsamoro flag shaped as a shield, outlined in grey (#C8C8C8)",
+    "Eighty green boxes in a horseshoe shape, representing the Parliament's 80 members",
+    "An open book in light grey on a brown stand above the shield, for adherence to the rule of law",
+    "May be used on all official acts, communications and documents of Parliament and its members, alongside the Official Bangsamoro Seal"
+   ],
+   "for_specific_groups": {
+    "Anyone verifying a document": "Section 3 describes every element with hex codes, so a seal can be checked against the law.",
+    "Members of Parliament": "The seal may be used by members as well as by the institution, as provided in the Parliamentary Rules."
+   },
+   "where_this_applies": "The Bangsamoro Parliament and its members.",
+   "when_you_will_feel_it": "In force since 2021.",
+   "what_you_can_do": [
+    "Check an official parliamentary document against the description in Section 3 if its authenticity matters to you"
+   ],
+   "watch_out_for": [
+    "The act creates no offence for forging or misusing the seal.",
+    "Usage is permissive — the seal 'may be used' — with detail left to the Parliamentary Rules."
+   ],
+   "key_terms_explained": {
+    "Kris": "The wavy-bladed sword; here it represents the struggle for the right to self-determination.",
+    "Horseshoe": "The shape of a parliamentary chamber, formed here by the eighty boxes.",
+    "20 BARMM 19": "The region's year of creation, split across the lower band of the seal."
+   },
+   "status_note": "Passed 19 January 2021, approved by the Chief Minister on 12 February 2021.",
+   "benefits": {
+    "headline": "A described, checkable seal for the Parliament, distinct from the region's own.",
+    "direct_benefits": [
+     {
+      "benefit": "An authenticating mark on parliamentary documents",
+      "who_gets_it": "Anyone dealing with Parliament or a Member",
+      "how_to_access": "Section 3 describes every element, with hex codes"
+     }
     ],
-    "what_this_does": "Adopts an Official SEAL for the Parliament of BARMM.",
-    "who_it_affects": "General public",
-    "effective": "2021-01-19"
-  },
-  "views": {
-    "simple": "Adopts an Official SEAL for the Parliament of BARMM.",
-    "official": "AN ACT ADOPTING AN OFFICIAL SEAL FOR THE PARLIAMENT OF BARMM"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Parliament established visually as a legislative authority in its own right"
+    ],
+    "limitations": [
+     "No offence for forgery or misuse.",
+     "Usage detail left to the Parliamentary Rules."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "The office that issued the document",
+    "note": "The act names no implementing body and creates no complaints procedure."
+   },
+   "everyday_scenarios": [
+    "A constituent receives a letter bearing the Parliament seal from their Member. Section 4 allows members as well as the institution to use it.",
+    "Someone checking a document can compare the seal against Section 3, which gives the exact colours and every symbol's meaning."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Adopts an Official Seal for the Bangsamoro Parliament, for authentication in the exercise of its acts and other purposes.",
+  "Section 2 — Policy: in exercising its right to self-governance the region adopts a seal for the Parliament, establishing it as the legislative authority of the BARMM in recognition of the justness and legitimacy of the cause of the Bangsamoro people, reflective of its functions and of the struggles and aspirations of its people.",
+  "Section 3 — Design: circular, with two green (#009966) lines forming the outer and inner borders; 'BANGSAMORO PARLIAMENT' in the same green on white (#FFFFFF) in the upper portion, and '20 BARMM 19' on red (#FF3333) in the lower portion. At the centre of the inner circle is the BARMM flag shaped as a shield outlined in grey (#C8C8C8), surrounded by eighty boxes representing the Bangsamoro Parliament, in green, formed in a horseshoe shape. The Kris represents the struggle for the right to self-determination; the Crescent represents moral governance; the Star represents the component provinces, cities and geographic areas composing the BARMM; Crescent and Star together represent the BARMM. An open book in light grey (#EAEAEA, #D3D3D3) on a brown (#391C0C, #592912) stand, signifying the living adherence of the Parliament to the rule of law, sits above the shield.",
+  "Section 4 — The seal may be used in all official acts, communications and other documents of the Parliament and its members, alongside the Official Bangsamoro Seal, as may be provided in the Parliamentary Rules, Procedures and Practices.",
+  "Section 5 — Takes effect 15 days after publication in a regional newspaper of general circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Anyone dealing with the Bangsamoro Parliament"
+  ],
+  "impact_tags": [
+   "governance_civil_service",
+   "culture_heritage"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": null,
+  "figures_note": "The act appropriates no funds."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2021-01-19"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2021/03/BAA-16.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 24",
+  "related_note": "The fourth of the symbols acts, after the flag (BAA 1), the emblem or Bangsamoro Seal (BAA 2) and the hymn (BAA 7). Unlike BAA 2, this one specifies its colours by hex code."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": null,
+  "irr_status": "Usage detail left to the Parliamentary Rules, Procedures and Practices.",
+  "note": "Read from the enacted text as signed. The signed copy carries a colour plate of the seal, marked 'THE BANGSAMORO PARLIAMENT OFFICIAL SEAL', as its final page."
+ },
+ "citizen_questions": [
+  {
+   "q": "Why eighty boxes?",
+   "a": "They represent the Bangsamoro Parliament — the Bangsamoro Transition Authority has 80 members — arranged in a horseshoe, the shape of a parliamentary chamber."
+  },
+  {
+   "q": "What does the open book mean?",
+   "a": "Section 3 says it signifies the living adherence of the Parliament to the rule of law."
+  },
+  {
+   "q": "Is this the same as the Bangsamoro Seal?",
+   "a": "No. This is Parliament's own seal. Section 4 says it may be used alongside the Official Bangsamoro Seal adopted by BAA 2."
+  },
+  {
+   "q": "Can a Member of Parliament use it?",
+   "a": "Yes. Section 4 covers official acts, communications and documents of the Parliament and its members."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 16",
+  "line2": "Official Seal of the Bangsamoro Parliament",
+  "badges": [
+   "IN FORCE",
+   "Governance & Civil Service",
+   "2021"
+  ],
+  "what_this_does": "Adopts Parliament's own seal — eighty boxes for 80 members, an open book for the rule of law.",
+  "who_it_affects": "Anyone receiving an official parliamentary document"
+ },
+ "views": {
+  "simple": "Adopts the Bangsamoro Parliament's own official seal, specified to the hex code, with eighty boxes for its members and an open book signifying adherence to the rule of law.",
+  "official": "AN ACT ADOPTING AN OFFICIAL SEAL FOR THE PARLIAMENT OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 16, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

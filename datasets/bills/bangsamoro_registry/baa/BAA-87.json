@@ -1,176 +1,211 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 87,
-    "short_title": "Removes the 'NONE of the ABOVE' Option from",
-    "official_title": "AN ACT REMOVING THE 'NONE OF THE ABOVE' OPTION FROM THE OFFICIAL BALLOT (AMENDING BAA 35)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA3",
-    "date_ratified": "2026-01-28",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Removes the 'NONE of the ABOVE' Option from the Official Ballot (amending Baa 35).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Removes the 'NONE of the ABOVE' Option from the Official Ballot (amending Baa 35).",
-    "who_will_be_affected": [
-      "Voters"
-    ],
-    "when_will_it_take_effect": "Ratified 2026-01-28; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Removes the 'None of the Above' option from Bangsamoro ballots. In the 2026 elections you will choose among actual candidates/parties only - there is no longer a formal way to reject all of them on the ballot.",
-      "in_practice": [
-        "Simplifies the ballot and canvassing for the first parliamentary polls",
-        "Critics saw NOTA as a protest-vote safety valve; supporters argued it risked failed elections - the Parliament sided with removal"
-      ],
-      "for_specific_groups": {
-        "Voters": "A blank vote is your remaining form of ballot protest; it simply won't be counted for anyone"
-      },
-      "where_this_applies": "All of BARMM unless the title names a specific place",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "A real vote in choosing your own regional government.",
-        "direct_benefits": [
-          {
-            "benefit": "Your ballot elects the Bangsamoro Parliament on Sept 14, 2026 - district, party, and sectoral seats",
-            "who_gets_it": "Registered voters in BARMM",
-            "how_to_access": "Register/verify with COMELEC; vote on election day"
-          },
-          {
-            "benefit": "Clear district representation: a specific representative answerable to your area",
-            "who_gets_it": "District residents",
-            "how_to_access": "Know your district under BAA 86"
-          },
-          {
-            "benefit": "Sectoral seats give organized sectors (women, youth, ulama, IPs, etc.) guaranteed voices",
-            "who_gets_it": "Sectoral communities",
-            "how_to_access": "Through accredited sectoral organizations"
-          }
-        ],
-        "indirect_benefits": [
-          "Accountability: appointed transition officials give way to officials you can vote out"
-        ],
-        "limitations": [
-          "Election laws confer process rights, not material benefits; their value is exercised at the precinct"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Amends: BAA 35",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 87,
+  "short_title": "Removal of the “None of the Above” Ballot Option",
+  "official_title": "AN ACT REMOVING THE “NONE OF THE ABOVE” OPTION FROM THE OFFICIAL BALLOT IN THE BANGSAMORO AUTONOMOUS REGION, AMENDING FOR THE PURPOSE SECTION 14, ARTICLE VII OF BANGSAMORO AUTONOMY ACT NO. 35, OTHERWISE KNOWN AS THE “BANGSAMORO ELECTORAL CODE OF 2023”",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA3",
+  "date_ratified": "2026-01-28",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Fourth Regular Session (begun 15 September 2022)",
+  "date_passed": "2026-01-28",
+  "date_passed_hijri": "Sha'ban 09, 1447",
+  "date_approved_by_chief_minister": "2026-02-11",
+  "approved_by": "Chief Minister Abdulraof A. Macacua",
+  "signed_by": [
+   "Mohammad S. Yacob, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "COMELEC",
-      "Candidates",
-      "Voters"
-    ],
-    "impact_tags": [
-      "elections_districting"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2026-01-28"
-    }
+  "effectivity": "Immediately upon publication in the Bangsamoro Gazette or on its official website"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Takes the “None of the Above” option off the ballot for Bangsamoro parliamentary elections. Voters can no longer formally register a vote rejecting all the candidates.",
+  "why_was_it_proposed": "The act itself gives no reason. It states the change and directs COMELEC to revise the ballots immediately; the enacted text carries no declaration of policy or explanatory section.",
+  "what_will_change": "Official ballots carry the names of candidates, and party logos for political party representatives — and nothing else. Any ballot design including a “None of the Above” choice must be revised.",
+  "who_will_be_affected": [
+   "Every voter in Bangsamoro parliamentary elections",
+   "Candidates and political parties",
+   "COMELEC and the Bangsamoro Electoral Office, which must revise the ballots"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page. Origin: Bill 396."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [
-      "BAA 35"
+  "when_will_it_take_effect": "Immediately on publication — the act does not wait the usual 15 days.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. You can no longer vote for “None of the Above” in a Bangsamoro parliamentary election. The ballot lists candidates and party logos only.",
+   "in_practice": [
+    "Official ballots contain the names of the candidates",
+    "For political party representatives, the ballot includes their party logos",
+    "No ballot may include a “None of the Above” option",
+    "COMELEC, through the Bangsamoro Electoral Office, must revise the ballots immediately",
+    "The act took effect immediately on publication, not after the usual 15 days"
+   ],
+   "for_specific_groups": {
+    "Voters": "Your options are the candidates listed. There is no longer a formal way on the ballot to record that you reject all of them.",
+    "Voters who would have chosen it": "An abstention or a spoiled ballot is not the same thing — neither is counted as a deliberate rejection of the field.",
+    "Candidates and parties": "No candidate can now be outpolled by 'None of the Above'.",
+    "COMELEC": "Immediate revision of the official ballots is required."
+   },
+   "where_this_applies": "Bangsamoro parliamentary elections in the BARMM.",
+   "when_you_will_feel_it": "At the ballot box, from the first parliamentary election held after publication.",
+   "what_you_can_do": [
+    "Expect a ballot listing candidates and party logos only",
+    "Ask the Bangsamoro Electoral Office about the revised ballot design"
+   ],
+   "watch_out_for": [
+    "The act states no reason for the change — there is no policy declaration in the enacted text.",
+    "It took effect immediately rather than after the usual 15 days.",
+    "It removes a voter option shortly before the region's first parliamentary elections under the Electoral Code.",
+    "The act says nothing about how abstentions or blank votes are to be treated in place of the removed option."
+   ],
+   "key_terms_explained": {
+    "None of the Above": "A ballot choice letting a voter formally reject every candidate listed, as distinct from not voting or spoiling a ballot.",
+    "Bangsamoro Electoral Code of 2023": "BAA 35, the region's own election law, which this act amends.",
+    "Bangsamoro Electoral Office": "The COMELEC office for the region, responsible here for revising the ballots."
+   },
+   "status_note": "Passed Sha'ban 09, 1447 / 28 January 2026, approved by Chief Minister Abdulraof A. Macacua on 11 February 2026.",
+   "benefits": {
+    "headline": "A simplified ballot carrying candidate names and party logos.",
+    "direct_benefits": [
+     {
+      "benefit": "Party logos on the ballot for political party representatives",
+      "who_gets_it": "Voters identifying candidates by party",
+      "how_to_access": "On the official ballot"
+     }
     ],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": "Bill 396"
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Bangsamoro Electoral Office / COMELEC",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2026-01-28 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Bangsamoro Electoral Office / COMELEC (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 87",
-    "line2": "Removes the 'NONE of the ABOVE' Option from",
-    "badges": [
-      "ENACTED",
-      "Elections Districting",
-      "2026"
+    "indirect_benefits": [
+     "A single, uniform ballot design across the region's parliamentary elections"
     ],
-    "what_this_does": "Removes the 'NONE of the ABOVE' Option from the Official Ballot (amending Baa 35).",
-    "who_it_affects": "COMELEC · Candidates · Voters",
-    "effective": "2026-01-28"
-  },
-  "views": {
-    "simple": "Removes the 'NONE of the ABOVE' Option from the Official Ballot (amending Baa 35).",
-    "official": "AN ACT REMOVING THE 'NONE OF THE ABOVE' OPTION FROM THE OFFICIAL BALLOT (AMENDING BAA 35)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "limitations": [
+     "It removes a voter option rather than adding one.",
+     "No reason for the removal is stated in the act.",
+     "No replacement mechanism for registering rejection of all candidates is provided."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act changes what is on the ballot, not what a voter must do."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no offence for voters. Its prohibition falls on the ballot itself: no official ballot may include the “None of the Above” option."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "Bangsamoro Electoral Office of the Commission on Elections",
+    "oversight": "Commission on Elections",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A voter who dislikes every candidate in their district previously had a “None of the Above” box. Under this act that box is gone; the remaining choices are the listed candidates, an abstention, or a spoiled ballot — and none of those is recorded as a rejection of the field.",
+    "A voter looking for a party rather than a name will find party logos beside political party representatives on the revised ballot."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Amends Section 14, Article VII of Bangsamoro Autonomy Act No. 35, the Bangsamoro Electoral Code of 2023, by transferring Section 14 of Chapter 1 to Chapter 2 of Article VII and renumbering it as Section 1 of that Chapter, to read: the official ballots for BARMM parliamentary elections shall contain the names of the candidates, and for political party representatives shall include the logos of their respective political parties.",
+  "Section 2 — The Commission on Elections, through the Bangsamoro Electoral Office, shall cause the immediate revision of the official ballots for BARMM parliamentary elections to ensure that no ballot includes the “None of the Above” option.",
+  "Section 4 — Repeals or modifies inconsistent laws, decrees, executive orders, rules and regulations.",
+  "Section 5 — Takes effect immediately upon publication in the Bangsamoro Gazette or on its official website."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Candidates and political parties"
+  ],
+  "impact_tags": [
+   "elections",
+   "governance_civil_service"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": null,
+  "figures_note": "The act appropriates no funds. Ballot revision costs are not addressed."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2026-01-28"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page. Origin: Bill 396."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/02/BAA-87.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [
+   "BAA 35"
+  ],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill 396",
+  "related_note": "Amends the Bangsamoro Electoral Code of 2023 (BAA 35), which established the region's own election law ahead of its first parliamentary elections."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": null,
+  "irr_status": "None required by the act; COMELEC is directed to revise the ballots immediately.",
+  "note": "Read from the enacted text as signed. This is among the first acts signed by Chief Minister Abdulraof A. Macacua and Speaker Mohammad S. Yacob, and marks a change of both offices from the acts of earlier sessions."
+ },
+ "citizen_questions": [
+  {
+   "q": "Can I still vote “None of the Above”?",
+   "a": "No. The act removes that option and directs COMELEC to revise the ballots so that no ballot includes it."
+  },
+  {
+   "q": "What is on the ballot now?",
+   "a": "The names of the candidates, and for political party representatives the logos of their parties. Nothing else."
+  },
+  {
+   "q": "Why was it removed?",
+   "a": "The act does not say. Unlike most Bangsamoro acts it carries no declaration of policy or explanatory section — it states the change and directs the ballot revision."
+  },
+  {
+   "q": "Is spoiling my ballot the same thing?",
+   "a": "No. A spoiled or blank ballot is not recorded as a deliberate rejection of all candidates, which is what the removed option allowed. The act provides no replacement for that."
+  },
+  {
+   "q": "When did it take effect?",
+   "a": "Immediately upon publication in the Bangsamoro Gazette or on its official website, rather than after the usual 15 days."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 87",
+  "line2": "Removal of the “None of the Above” Ballot Option",
+  "badges": [
+   "IN FORCE",
+   "Elections",
+   "2026"
+  ],
+  "what_this_does": "Removes the “None of the Above” choice from Bangsamoro parliamentary election ballots.",
+  "who_it_affects": "Every voter in Bangsamoro parliamentary elections"
+ },
+ "views": {
+  "simple": "Removes the “None of the Above” option from Bangsamoro parliamentary ballots, leaving candidate names and party logos, and orders COMELEC to revise the ballots immediately.",
+  "official": "AN ACT REMOVING THE “NONE OF THE ABOVE” OPTION FROM THE OFFICIAL BALLOT IN THE BANGSAMORO AUTONOMOUS REGION, AMENDING FOR THE PURPOSE SECTION 14, ARTICLE VII OF BANGSAMORO AUTONOMY ACT NO. 35, OTHERWISE KNOWN AS THE “BANGSAMORO ELECTORAL CODE OF 2023”"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 87, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

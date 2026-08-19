@@ -47,3 +47,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Cached Parliament scans — large, and theirs to serve
+datasets/bills/.pdf-cache/

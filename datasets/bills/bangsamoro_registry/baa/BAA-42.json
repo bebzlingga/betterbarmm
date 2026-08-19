@@ -1,191 +1,230 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 42,
-    "short_title": "Creates the Municipality of Kadayangan (SGA)",
-    "official_title": "AN ACT CREATING THE MUNICIPALITY OF KADAYANGAN (SGA)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2023-08-17",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Creates the Municipality of Kadayangan (SGA).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Creates the Municipality of Kadayangan (SGA).",
-    "who_will_be_affected": [
-      "Residents",
-      "Business owners",
-      "Job seekers",
-      "SGA residents"
-    ],
-    "when_will_it_take_effect": "Ratified 2023-08-17; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Creates a new municipality (the covered barangays). If you live in the covered barangays, your community gets its own municipal government - a mayor, sanggunian, municipal hall, and its own share of national and regional funds - instead of being administered from a distant town center.",
-      "in_practice": [
-        "Your own municipal share of the National Tax Allotment and Bangsamoro funds, spent locally",
-        "Closer civil registry, business permits, social services, and health station",
-        "Local elections for your own mayor, vice mayor, and councilors once the LGU is organized",
-        "Barangay boundaries stay; what changes is which town hall serves you"
-      ],
-      "for_specific_groups": {
-        "Residents": "Government services move closer; local projects are decided by officials you elect",
-        "Business owners": "Permits and local taxes are handled by the new municipality - rates are set by its own sanggunian",
-        "Job seekers": "A new LGU means new municipal government positions",
-        "SGA residents": "For the eight 2023 municipalities: these convert the Special Geographic Area's 63 barangays (which voted to join BARMM) into full local governments"
-      },
-      "where_this_applies": "the covered barangays",
-      "watch_out_for": [
-        "A new municipality begins corporate existence only after its officials are elected/qualified and offices organized - there is a transition period",
-        "Boundary and asset-sharing details with the mother municipality can take time to settle"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Your own local government - services, budget, and representation for the covered barangays.",
-        "direct_benefits": [
-          {
-            "benefit": "Municipal services (civil registry, permits, health station, social welfare) close to home",
-            "who_gets_it": "Residents of the new municipality",
-            "how_to_access": "New municipal hall once organized"
-          },
-          {
-            "benefit": "A dedicated share of national and Bangsamoro funds spent in your own town",
-            "who_gets_it": "The whole community",
-            "how_to_access": "Automatic; monitor via the municipal budget and sanggunian sessions"
-          },
-          {
-            "benefit": "Your own elected mayor, vice mayor, and councilors answerable to you",
-            "who_gets_it": "Voters of the municipality",
-            "how_to_access": "Vote in the first municipal elections"
-          },
-          {
-            "benefit": "New municipal government jobs and local contracts",
-            "who_gets_it": "Local job seekers, suppliers",
-            "how_to_access": "Municipal HR and BAC postings"
-          }
-        ],
-        "indirect_benefits": [
-          "Faster development decisions made locally",
-          "Recognition: for SGA towns, the plebiscite promise made real"
-        ],
-        "limitations": [
-          "Corporate existence starts only after officials are elected/qualified - a transition period is normal",
-          "Boundary/asset settlement with the mother municipality can take time"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 42,
+  "short_title": "Creation of the Municipality of Kadayangan",
+  "official_title": "AN ACT CREATING THE MUNICIPALITY OF KADAYANGAN, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2023-08-17",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Second Regular Session (begun 15 September 2022)",
+  "date_passed": "2023-08-17",
+  "date_passed_hijri": "Safar 1, 1445",
+  "date_approved_by_chief_minister": "2023-09-04",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Barangay residents",
-      "LGUs"
-    ],
-    "impact_tags": [
-      "local_government",
-      "municipality_lgu"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2023-08-17"
-    }
+  "effectivity": "15 days after publication in the Bangsamoro Gazette or one newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates the Municipality of Kadayangan in the Special Geographic Area from 7 barangays of Midsayap, North Cotabato — barangays that petitioned and voted to join the Bangsamoro in the 2019 plebiscite.",
+  "why_was_it_proposed": "Those barangays voted themselves into the BARMM in 2019 but remained attached to municipalities outside it. This act gives them a municipality of their own inside the region.",
+  "what_will_change": "If ratified, the 7 barangays become a distinct and independent municipality seated at Barangay Kapinpilan, with first officials appointed with due regard to women's representation and monthly financial assistance until its national tax share arrives.",
+  "who_will_be_affected": [
+   "Residents of the 7 barangays, who vote in the plebiscite",
+   "Midsayap, North Cotabato — the mother municipality, which sit outside the BARMM",
+   "Women of the Bangsamoro, whose representation must be considered in the first appointments"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of the Interior and Local Government (MILG)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2023-08-17 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of the Interior and Local Government (MILG) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 42",
-    "line2": "Creates the Municipality of Kadayangan (SGA)",
-    "badges": [
-      "ENACTED",
-      "Municipality Lgu",
-      "2023"
+  "when_will_it_take_effect": "The act is in force, but corporate existence depends on ratification in a plebiscite within 60 days of approval.",
+  "what_this_means_for_you": {
+   "in_short": "You decide. This creates the Municipality of Kadayangan from 7 barangays that voted to join the Bangsamoro in 2019 — but it only exists if a majority of voters there approve it in a plebiscite.",
+   "in_practice": [
+    "7 barangays separate from their mother municipality: Central Labas, Kapinpilan, Malingao, Mudseng, Sambulawan, Tugal, Tumbras",
+    "They become the Municipality of Kadayangan in the Special Geographic Area of the BARMM",
+    "The seat of government is Barangay Kapinpilan",
+    "The territorial boundary follows the existing boundaries of the constituent barangays",
+    "A plebiscite decides it within 60 days of approval, conducted by COMELEC through the Bangsamoro Electoral Office",
+    "The Chief Minister appoints the first mayor, vice-mayor and eight Sangguniang Bayan members, with due regard to representation of women of the Bangsamoro",
+    "Monthly financial assistance from the Bangsamoro Government until the municipality receives its national tax allotment share"
+   ],
+   "for_specific_groups": {
+    "Voters in the barangays concerned": "You already voted to join the Bangsamoro in 2019. This vote decides whether you become a municipality of your own within it.",
+    "Women": "Section 7 requires the first appointments to be made with due regard to the representation of women of the Bangsamoro.",
+    "Incumbent councillors of Midsayap": "If you actually reside in the new municipality, you serve out your remaining term in the mother municipality.",
+    "Everyone else": "No duty falls on the public."
+   },
+   "where_this_applies": "The Special Geographic Area of the BARMM — 7 barangays formerly of Midsayap, North Cotabato.",
+   "when_you_will_feel_it": "On ratification in the plebiscite.",
+   "what_you_can_do": [
+    "Check whether your barangay is among the 7 named in Section 2",
+    "Vote in the plebiscite",
+    "Ask the Bangsamoro Electoral Office when it is scheduled"
+   ],
+   "watch_out_for": [
+    "The act states no peso figure for the monthly financial assistance — only that it shall be provided every month.",
+    "The first set of municipal officials is appointed by the Chief Minister, not elected.",
+    "As enacted, the plebiscite is confined to the barangays comprising the new municipality.",
+    "No population figure and no land area are stated in the operative sections."
+   ],
+   "key_terms_explained": {
+    "Special Geographic Area": "The barangays of North Cotabato that voted in the 2019 plebiscite to join the BARMM, now being organised into municipalities of the region.",
+    "Plebiscite": "A vote of the people affected, required before a municipality can be created.",
+    "Sangguniang Bayan": "The municipal council.",
+    "National Tax Allotment": "A local government's share of national taxes, formerly the Internal Revenue Allotment."
+   },
+   "status_note": "Passed Safar 1, 1445 / 17 August 2023, approved by the Chief Minister on 4 September 2023.",
+   "benefits": {
+    "headline": "A municipality of their own for barangays that voted into the Bangsamoro in 2019.",
+    "direct_benefits": [
+     {
+      "benefit": "A local government inside the region rather than attachment to a municipality outside it",
+      "who_gets_it": "Residents of the 7 barangays",
+      "how_to_access": "Subject to ratification in the plebiscite"
+     },
+     {
+      "benefit": "Monthly financial assistance until the national tax share arrives",
+      "who_gets_it": "The new Municipal Government of Kadayangan",
+      "how_to_access": "Appropriated by the Bangsamoro Government"
+     },
+     {
+      "benefit": "Consideration of women's representation in the first appointments",
+      "who_gets_it": "Women of the Bangsamoro",
+      "how_to_access": "Section 7"
+     }
     ],
-    "what_this_does": "Creates the Municipality of Kadayangan (SGA).",
-    "who_it_affects": "Barangay residents · LGUs",
-    "effective": "2023-08-17"
-  },
-  "views": {
-    "simple": "Creates the Municipality of Kadayangan (SGA).",
-    "official": "AN ACT CREATING THE MUNICIPALITY OF KADAYANGAN (SGA)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Entitlement to a share of national taxes once allocated"
+    ],
+    "limitations": [
+     "Nothing takes effect without a favourable plebiscite.",
+     "The first officials are appointed, not elected.",
+     "No amount is stated for the monthly assistance."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None beyond voting in the plebiscite, which is a right rather than a duty."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "Commission on Elections, through the Bangsamoro Electoral Office, which conducts and supervises the plebiscite",
+    "oversight": "Office of the Chief Minister, which appoints the first municipal officials",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A resident of Barangay Central Labas voted in 2019 to join the Bangsamoro but has remained under a municipality outside the region. This act would put them in a municipality inside it — subject to a further vote.",
+    "A sitting councillor of Midsayap who lives in one of the 7 barangays finishes their term serving the mother municipality, not the new one."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Policy: the Bangsamoro Government may create, divide, merge, abolish or substantially alter the boundaries of municipalities or barangays by act of Parliament, with units so created entitled to their appropriate share in the national tax allotment, provided the change is approved by a majority of the votes cast in a plebiscite in the political units directly affected.",
+  "Section 2 — Separates the barangays of Central Labas, Kapinpilan, Malingao, Mudseng, Sambulawan, Tugal, Tumbras, belonging to the Municipality of Midsayap, North Cotabato, which petitioned and voted to be included in the BARMM in the 2019 plebiscite, and constitutes them into the distinct and independent Municipality of Kadayangan, Special Geographic Area of the BARMM.",
+  "Section 3 — The seat of government is Barangay Kapinpilan.",
+  "Section 4 — The territorial boundary follows the existing boundaries of the constituent barangays.",
+  "Section 5 — The municipality acquires corporate existence on ratification by a majority of the votes cast by qualified voters in a plebiscite in those barangays, held within 60 days after approval of the act.",
+  "Section 6 — The Commission on Elections, through the Bangsamoro Electoral Office, conducts and supervises the plebiscite, with expenses taken from the current fiscal year appropriations of the Bangsamoro Government.",
+  "Section 7 — The first mayor, vice-mayor and eight Sangguniang Bayan members are appointed by the Chief Minister with due regard to representation of women of the Bangsamoro, and hold office until successors are elected at the next general elections for local officials. Incumbent elective Sangguniang Bayan members of the mother municipality who actually reside in the new municipality serve out their remaining terms there.",
+  "Section 8 — The Bangsamoro Government shall appropriate and provide financial assistance for the administration and operation of the Municipal Government of Kadayangan every month until it is allocated its share in the national tax allotment.",
+  "Section 11 — Takes effect 15 days after publication in the Bangsamoro Gazette or one newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of the 7 Special Geographic Area barangays",
+   "Women of the Bangsamoro, through the appointment provision"
+  ],
+  "impact_tags": [
+   "local_government",
+   "governance_civil_service",
+   "peace_security_justice"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "Monthly financial assistance, amount not stated; plebiscite costs from the current fiscal year appropriations.",
+  "figures_note": "The act states no peso amount, no land area and no population figure."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2023-08-17"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/BAA-42.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 130",
+  "related_note": "One of seven municipalities created in the Special Geographic Area on 17 August 2023, with BAA 41 (Pahamuddin), 42 (Kadayangan), 43 (Nabalawag), 44 (Old Kaabakan), 45 (Kapalawan), 46 (Malidegao) and 47 (Tugunan), organising the North Cotabato barangays that voted to join the BARMM in the 2019 plebiscite."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "Monthly financial assistance, amount unstated",
+  "irr_status": "None required by the act.",
+  "note": "Read from the enacted text as signed. Whether the plebiscite was held, and what it decided, is not recorded here."
+ },
+ "citizen_questions": [
+  {
+   "q": "What is the Special Geographic Area?",
+   "a": "The barangays of North Cotabato that petitioned and voted in the 2019 plebiscite to be included in the BARMM. Seven acts passed on the same day organise them into municipalities of the region."
+  },
+  {
+   "q": "Which barangays are involved?",
+   "a": "Central Labas, Kapinpilan, Malingao, Mudseng, Sambulawan, Tugal, Tumbras — formerly of Midsayap, North Cotabato."
+  },
+  {
+   "q": "Does the municipality exist yet?",
+   "a": "Not until a plebiscite ratifies it, to be held within 60 days of the act's approval and run by COMELEC through the Bangsamoro Electoral Office."
+  },
+  {
+   "q": "How much financial assistance is there?",
+   "a": "The act says monthly assistance shall be provided until the national tax allotment share is allocated, but states no amount — unlike the Maguindanao creation acts of December 2023, which specify not less than ₱2.5 million a month."
+  },
+  {
+   "q": "Who will be the first mayor?",
+   "a": "Whoever the Chief Minister appoints, with due regard to the representation of women of the Bangsamoro. The first officials serve until the next general elections for local officials."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 42",
+  "line2": "Creation of the Municipality of Kadayangan",
+  "badges": [
+   "IN FORCE",
+   "Local Government",
+   "2023"
+  ],
+  "what_this_does": "Creates a municipality in the Special Geographic Area from 7 barangays that voted into the BARMM in 2019.",
+  "who_it_affects": "Residents of 7 former North Cotabato barangays"
+ },
+ "views": {
+  "simple": "Creates the Municipality of Kadayangan in the Special Geographic Area from 7 barangays of Midsayap, North Cotabato that voted to join the Bangsamoro in 2019, subject to ratification by plebiscite.",
+  "official": "AN ACT CREATING THE MUNICIPALITY OF KADAYANGAN, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 42, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

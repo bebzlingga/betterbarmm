@@ -1,200 +1,217 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 25,
-    "short_title": "an Act Upgrading Datu Blah Sinsuat District Hospital Act",
-    "official_title": "AN ACT UPGRADING DATU BLAH SINSUAT DISTRICT HOSPITAL, MAGUINDANAO (LEVEL I/10-BED TO LEVEL II/100-BED)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2022-06-15",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Upgrades Datu Blah Sinsuat District Hospital, Maguindanao (level I/10-BED to Level II/100-BED).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Upgrades Datu Blah Sinsuat District Hospital, Maguindanao (level I/10-BED to Level II/100-BED).",
-    "who_will_be_affected": [
-      "Residents of Maguindanao",
-      "Pregnant women",
-      "Senior citizens & PWDs",
-      "Health workers"
-    ],
-    "when_will_it_take_effect": "Ratified 2022-06-15; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Upgrades a public hospital serving Maguindanao (10-bed to 100-bed). For nearby families this means emergency and inpatient care closer to home instead of long, costly trips to distant referral hospitals.",
-      "in_practice": [
-        "More beds means fewer 'no vacancy' referrals and less floor-space crowding during outbreaks",
-        "A higher hospital level allows more services on-site: surgery, specialist clinics, better laboratory and imaging, more doctors and nurses on the plantilla",
-        "PhilHealth-accredited services expand with the facility's level, lowering out-of-pocket costs",
-        "Construction, staffing, and supplies take time after enactment - upgrades typically roll out over one or more budget years"
-      ],
-      "for_specific_groups": {
-        "Residents of Maguindanao": "Shorter travel time in emergencies - often the difference between life and death for stroke, hemorrhage, and obstetric cases",
-        "Pregnant women": "Facility-based deliveries and emergency obstetric care become available nearer home",
-        "Senior citizens & PWDs": "Follow-up care and dialysis/maintenance services without long-distance travel",
-        "Health workers": "New plantilla positions (nurses, midwives, med-techs, doctors) usually open when a hospital is created or upgraded - watch the MOH and hospital job postings"
-      },
-      "where_this_applies": "Maguindanao",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Ask the Ministry of Health (MOH-BARMM) or the hospital chief when the added beds/services actually open"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Closer, bigger, better-equipped public healthcare for Maguindanao.",
-        "direct_benefits": [
-          {
-            "benefit": "Emergency and inpatient care near home (up to 100 beds) instead of long referral trips",
-            "who_gets_it": "Residents of Maguindanao",
-            "how_to_access": "Go directly; public hospitals cannot refuse emergencies"
-          },
-          {
-            "benefit": "More services as the hospital's level rises: surgery, laboratory, imaging, specialty clinics",
-            "who_gets_it": "Patients in the catchment area",
-            "how_to_access": "Outpatient department; bring PhilHealth/ID"
-          },
-          {
-            "benefit": "Lower out-of-pocket costs as PhilHealth-accredited services expand with the facility level",
-            "who_gets_it": "PhilHealth members and indigents (automatic UHC coverage)",
-            "how_to_access": "Hospital PhilHealth desk / Malasakit-type assistance where present"
-          },
-          {
-            "benefit": "Safer childbirth: facility-based delivery and emergency obstetric care nearby",
-            "who_gets_it": "Pregnant women",
-            "how_to_access": "Prenatal check-ups at the RHU, delivery at the hospital"
-          },
-          {
-            "benefit": "New jobs: doctors, nurses, midwives, med-techs, admin and support staff",
-            "who_gets_it": "Health professionals and local job seekers",
-            "how_to_access": "Watch MOH-BARMM and hospital postings"
-          }
-        ],
-        "indirect_benefits": [
-          "Decongests referral hospitals for everyone else",
-          "Local economy around the hospital (transport, food, pharmacies)",
-          "Faster outbreak and disaster response capacity in the area"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Bed count on paper becomes real only after construction/hiring - ask the hospital chief for the timeline"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Sets hospital bed capacity: 10-Bed",
-    "Hospital classification: Level I",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 25,
+  "short_title": "Datu Blah Sinsuat District Hospital Upgrading Act of 2022",
+  "official_title": "AN ACT UPGRADING THE EXISTING DATU BLAH SINSUAT DISTRICT HOSPITAL IN MAGUINDANAO FROM ITS PRESENT LEVEL I WITH A TEN (10) BED CAPACITY INTO LEVEL II WITH AN AUTHORIZED ONE HUNDRED (100) BED CAPACITY AND APPROPRIATING FUNDS THEREFOR AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2022-06-15",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Fourth Regular Session",
+  "date_passed": "2022-06-15",
+  "date_passed_hijri": "Dhu Al-Qa'dah 16, 1443",
+  "date_approved_by_chief_minister": "2022-07-12",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Health workers",
-      "Hospitals",
-      "Patients"
-    ],
-    "impact_tags": [
-      "health",
-      "hospital_health"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2022-06-15"
-    }
+  "effectivity": "15 days after publication in a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Upgrades the Datu Blah Sinsuat District Hospital in Maguindanao from a 10-bed Level I facility to a Level II hospital with 100 authorised beds — a tenfold increase in capacity.",
+  "why_was_it_proposed": "Section 22, Article IX of the Organic Law obliges the region to provide comprehensive and integrated health service delivery and to establish a general hospital system by law, so that the basic right to life is attainable through prompt, excellent and affordable medical services.",
+  "what_will_change": "The hospital moves from Level I to Level II under national Department of Health standards. Buildings, medical and office equipment, other facilities, operating funds and personnel are all upgraded to match, including the construction and procurement needed to meet the standard.",
+  "who_will_be_affected": [
+   "Residents of Datu Blah Sinsuat and surrounding areas in Maguindanao",
+   "Patients who previously had to travel for Level II services",
+   "Hospital staff, whose posts and funding are upgraded",
+   "PhilHealth members, since the hospital must integrate the Universal Health Care Act"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Health (MOH)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2022-06-15 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Health (MOH) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 25",
-    "line2": "an Act Upgrading Datu Blah Sinsuat District Hospital Act",
-    "badges": [
-      "ENACTED",
-      "Hospital Health",
-      "2022"
+  "when_will_it_take_effect": "In force since 2022. Delivery depends on the annual Bangsamoro budget.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. Your district hospital is authorised to grow from 10 beds to 100 and from Level I to Level II — more services, more staff, more equipment.",
+   "in_practice": [
+    "Level I (10 beds) becomes Level II (100 authorised beds)",
+    "Level II means a broader range of services under national DOH standards",
+    "Buildings, equipment, operating funds and personnel are upgraded with it",
+    "The hospital integrates the Universal Health Care Act into its operations",
+    "The Ministry of Health supervises and sets the organisational structure"
+   ],
+   "for_specific_groups": {
+    "Patients": "A Level II hospital offers more than a Level I — the upgrade is about what can be treated locally rather than referred away.",
+    "Hospital staff": "Personnel are expressly upgraded along with the facility.",
+    "PhilHealth members": "Section 4 requires the hospital to integrate all relevant provisions of the Universal Health Care Act."
+   },
+   "where_this_applies": "Datu Blah Sinsuat, Maguindanao.",
+   "when_you_will_feel_it": "In force since 2022; actual construction and staffing depend on annual appropriations.",
+   "what_you_can_do": [
+    "Ask the Ministry of Health about the implementing rules — the act required them within 60 days of enactment",
+    "Ask what stage the upgrade has reached; the act sets no completion deadline"
+   ],
+   "watch_out_for": [
+    "The act names no peso amount — funding is 'from the Bangsamoro General Appropriations' and 'such amount as may be needed'.",
+    "There is no deadline for completing the upgrade and no reporting requirement.",
+    "An authorised bed capacity is a legal ceiling, not a built one."
+   ],
+   "key_terms_explained": {
+    "Level I hospital": "A basic facility — emergency care, general medicine, a small ward.",
+    "Level II hospital": "A larger facility with specialist departments and services a Level I cannot provide.",
+    "Authorized bed capacity": "The number of beds the hospital is legally allowed to operate, which may exceed what is built.",
+    "UHC Act": "Republic Act 11223, the national Universal Health Care law."
+   },
+   "status_note": "Passed Dhu Al-Qa'dah 16, 1443 / 15 June 2022, approved by the Chief Minister on 12 July 2022.",
+   "benefits": {
+    "headline": "A tenfold bed increase and a step up to Level II services.",
+    "direct_benefits": [
+     {
+      "benefit": "Level II services closer to home",
+      "who_gets_it": "Residents of Datu Blah Sinsuat and nearby areas",
+      "how_to_access": "Through the hospital once upgraded"
+     },
+     {
+      "benefit": "100 authorised beds instead of 10",
+      "who_gets_it": "Patients needing admission",
+      "how_to_access": "Subject to actual construction"
+     }
     ],
-    "what_this_does": "Upgrades Datu Blah Sinsuat District Hospital, Maguindanao (level I/10-BED to Level II/100-BED).",
-    "who_it_affects": "Health workers · Hospitals · Patients",
-    "effective": "2022-06-15"
-  },
-  "views": {
-    "simple": "Upgrades Datu Blah Sinsuat District Hospital, Maguindanao (level I/10-BED to Level II/100-BED).",
-    "official": "AN ACT UPGRADING DATU BLAH SINSUAT DISTRICT HOSPITAL, MAGUINDANAO (LEVEL I/10-BED TO LEVEL II/100-BED)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Upgraded staff establishment and equipment",
+     "Universal Health Care coverage integrated into hospital operations"
+    ],
+    "limitations": [
+     "No stated peso appropriation.",
+     "No completion deadline.",
+     "Authorised capacity is not the same as operating capacity."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "The hospital administration",
+    "oversight": "Ministry of Health – BARMM, which has administrative supervision and approves the organisational structure",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A patient in Datu Blah Sinsuat previously referred to Cotabato City for a service a Level II hospital provides should, once the upgrade is delivered, be treated locally.",
+    "A resident asks why the hospital still has fewer than 100 beds. The act authorises the capacity; building it depends on the annual budget, and no deadline is set."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Datu Blah Sinsuat District Hospital Upgrading Act of 2022”.",
+  "Section 2 — Policy grounded on Section 22, Article IX of the Organic Law (RA 11054): comprehensive and integrated health service delivery, a general hospital system established by law, and the basic right to life made attainable through prompt intervention of excellent and affordable medical services.",
+  "Section 3 — Upgrades the existing Level I hospital with a 10-bed capacity into a Level II hospital with 100 authorised beds, in accordance with national standards of the Bureau of Health Facilities and Services under the Department of Health. Existing buildings including landscaping, medical and office equipment and other facilities, together with operating funds and personnel, are upgraded to include the construction and procurement needed to meet the prescribed standards.",
+  "Section 4 — The hospital shall integrate into its operations all relevant provisions of Republic Act 11223, the Universal Health Care Act.",
+  "Section 5 — The hospital is under the administrative supervision of the Ministry of Health, which determines and approves the organisational structure.",
+  "Section 6 — Funding is appropriated from the Bangsamoro General Appropriations for the upgrading, including construction of infrastructure, acquisition of medical and office equipment, and the annual budget for personnel services, maintenance and operations, and thereafter such amount as may be needed for continued operations.",
+  "Section 7 — MOH-BARMM shall promulgate implementing rules within 60 days after enactment.",
+  "Section 9 — Repeals inconsistent BARMM laws, including those passed under the defunct ARMM, on the operations and upgrading of this hospital.",
+  "Section 10 — Takes effect 15 days after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of Datu Blah Sinsuat, Maguindanao",
+   "Patients needing Level II services"
+  ],
+  "impact_tags": [
+   "health",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "No amount stated — funded from the Bangsamoro General Appropriations, and thereafter such amount as may be needed.",
+  "figures_note": "The act states capacity figures (10 beds to 100) but no peso amount."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2022-06-15"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/08/BAA-25.pdf",
+  "irr": "Required from MOH-BARMM within 60 days of enactment. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": "Inconsistent BARMM and former ARMM issuances on this hospital",
+  "origin_bill": "Bill 51",
+  "related_note": "One of a cluster of hospital acts passed in June 2022 — see BAA 26 (Wao), 27 (Maimbung), 28 (Sulu Provincial), 29 (Buluan) and 30 (Unayan)."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "No amount stated",
+  "irr_status": "Section 7 required MOH-BARMM implementing rules within 60 days of enactment. Whether they were issued is not recorded here.",
+  "note": "Read from the enacted text as signed. Authorised capacity is a legal ceiling; how much has actually been built is not recorded in the act."
+ },
+ "citizen_questions": [
+  {
+   "q": "What changes for patients?",
+   "a": "The hospital moves from Level I to Level II under national DOH standards, and from 10 beds to 100 authorised beds — meaning more services can be given locally rather than referred elsewhere."
+  },
+  {
+   "q": "How much money was allocated?",
+   "a": "The act names no amount. It appropriates funding 'from the Bangsamoro General Appropriations' and thereafter such amount as may be needed."
+  },
+  {
+   "q": "When will the upgrade be finished?",
+   "a": "The act sets no deadline. It required implementing rules from the Ministry of Health within 60 days of enactment, but no completion date for the works."
+  },
+  {
+   "q": "Does 100 beds mean 100 beds exist?",
+   "a": "No. It is the authorised capacity — the legal ceiling. Actual beds depend on construction funded through the annual budget."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 25",
+  "line2": "Datu Blah Sinsuat District Hospital Upgrading Act of 2022",
+  "badges": [
+   "IN FORCE",
+   "Health",
+   "2022"
+  ],
+  "what_this_does": "Upgrades the hospital from Level I with 10 beds to Level II with 100 authorised beds.",
+  "who_it_affects": "Residents of Datu Blah Sinsuat, Maguindanao"
+ },
+ "views": {
+  "simple": "Upgrades the Datu Blah Sinsuat District Hospital from a 10-bed Level I facility to a Level II hospital with 100 authorised beds, funded from the regional budget.",
+  "official": "AN ACT UPGRADING THE EXISTING DATU BLAH SINSUAT DISTRICT HOSPITAL IN MAGUINDANAO FROM ITS PRESENT LEVEL I WITH A TEN (10) BED CAPACITY INTO LEVEL II WITH AN AUTHORIZED ONE HUNDRED (100) BED CAPACITY AND APPROPRIATING FUNDS THEREFOR AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 25, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

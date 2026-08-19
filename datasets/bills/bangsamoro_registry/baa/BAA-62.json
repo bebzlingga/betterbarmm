@@ -1,178 +1,358 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 62,
-    "short_title": "Bangsamoro IDP Rights Act",
-    "official_title": "AN ACT PROTECTING AND PROMOTING THE RIGHTS OF INTERNALLY DISPLACED PERSONS OF BARMM",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2024-09-27",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Protects and Promoting the Rights of Internally Displaced Persons of BARMM.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Protects and Promoting the Rights of Internally Displaced Persons of BARMM.",
-    "who_will_be_affected": [
-      "IDP families",
-      "Marawi-siege and Maguindanao-conflict families",
-      "Host communities"
-    ],
-    "when_will_it_take_effect": "Ratified 2024-09-27; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "If you or your family have been displaced by conflict, feuds (rido), or disasters, this law recognizes you as a rights-holder - not just an aid recipient. It obliges the Bangsamoro Government to protect internally displaced persons, help you return or resettle, and prevent the conditions that displace people.",
-      "in_practice": [
-        "Recognizes rights during displacement: safety, shelter, food, education continuity, documentation",
-        "Creates duties to help IDPs return home voluntarily, or integrate/resettle with dignity",
-        "Covers displacement from armed conflict, violence, disasters, and development projects"
-      ],
-      "for_specific_groups": {
-        "IDP families": "Basis to demand registration, assistance, and durable solutions - start with MSSD and your LGU",
-        "Marawi-siege and Maguindanao-conflict families": "The law's core constituency; pair it with resolutions urging shelter funding (e.g., Res 476)",
-        "Host communities": "Support mechanisms recognize the burden host barangays carry"
-      },
-      "where_this_applies": "All of BARMM unless the title names a specific place",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Displaced families become rights-holders, not just aid recipients.",
-        "direct_benefits": [
-          {
-            "benefit": "Protection and assistance during displacement: safety, shelter, food, schooling continuity, documents",
-            "who_gets_it": "Internally displaced persons",
-            "how_to_access": "Register with MSSD/LGU as IDPs; invoke BAA 62"
-          },
-          {
-            "benefit": "Durable solutions: supported return home, or resettlement/integration with dignity",
-            "who_gets_it": "IDP families",
-            "how_to_access": "Through MSSD and LGU programs"
-          },
-          {
-            "benefit": "Replacement of lost civil documents",
-            "who_gets_it": "IDPs who lost papers",
-            "how_to_access": "PSA/LCR assistance citing the law"
-          }
-        ],
-        "indirect_benefits": [
-          "Host communities gain recognition and support for the burden they carry"
-        ],
-        "limitations": [
-          "An IRR and funded programs make this real - press MSSD on implementation",
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service."
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 62,
+  "short_title": "Rights of Internally Displaced Persons of the Bangsamoro Autonomous Region Act of 2024",
+  "official_title": "AN ACT PROTECTING AND PROMOTING THE RIGHTS OF INTERNALLY DISPLACED PERSONS OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO, PROVIDING MECHANISMS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2024-09-27",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session, begun 15 September 2022",
+  "date_passed": "2024-09-27",
+  "date_passed_hijri": "Rabi Al-Awwal 24, 1446",
+  "date_approved_by_chief_minister": "2024-11-07",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "labor_social",
-      "other"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2024-09-27"
-    }
+  "origin_bills": "Parliament Bill No. 32",
+  "effectivity": "15 days after publication in a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "A charter of rights for anyone forced from their home inside the Bangsamoro — by fighting, rido, political violence, a development project, or a disaster — covering what they are owed during displacement and what has to happen for it to end.",
+  "why_was_it_proposed": "Displacement in this region is not an event but a condition: Marawi, recurring clan wars, military operations, floods. Relief has been improvised and camp-shaped, while most displaced families actually shelter with relatives. This act sets out what people are entitled to, names which ministry owes it, and builds the coordinating machinery to deliver it.",
+  "what_will_change": "Nineteen enumerated rights become legally owed to displaced people. A Bangsamoro Internal Displacement Coordinating Council chaired by the social services minister — with 2 seats for displaced people themselves — coordinates the response, mirrored by councils in every province, city and municipality. Development projects must now assess and plan for the displacement they cause before they can be permitted. And a displaced person can sue for civil damages anyone, in government or out of it, who obstructs these rights.",
+  "who_will_be_affected": [
+   "Anyone displaced inside the BARMM — by armed conflict, clan war, political violence, human rights violations, a development project, or a disaster",
+   "Residents of the region displaced to areas outside it, and non-residents displaced into it",
+   "Families sheltering with relatives rather than in evacuation centres — 'home-based displacement' is defined and counted",
+   "Companies and agencies proposing development projects, who must now assess displacement risk to get and keep a permit",
+   "Every LGU in the region, which must stand up a Local Internal Displacement Council",
+   "Humanitarian organisations, whose access is protected and whose conduct is regulated"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "MOLE / MSSD",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2024-09-27 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "MOLE / MSSD (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 62",
-    "line2": "Bangsamoro IDP Rights Act",
-    "badges": [
-      "ENACTED",
-      "Labor Social",
-      "2024"
+  "when_will_it_take_effect": "In force since 2024 — approved by the Chief Minister on 7 November 2024, effective 15 days after publication. Implementing rules were due from the social services ministry within 90 days.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. If you have been forced from your home, this lists what you are owed — food, water, shelter, health care, your children's schooling, your documents, your land back — and names who owes it. Most importantly, Section 6(r) lets you sue for damages anyone who blocks those rights, whether a public officer or a private person.",
+   "in_practice": [
+    "You are an IDP whether you fled fighting, a rido, political violence, a development project or a disaster — and whether you are in an evacuation centre or staying with relatives",
+    "Schools may be used as evacuation centres for no more than 15 days, except in prolonged or recurring disasters with no other structure available",
+    "Your children cannot be asked for transfer or enrolment papers that only the school they fled could issue",
+    "You may leave and return to an evacuation centre freely, and you cannot be forcibly returned anywhere your life, safety, liberty or health would be at risk",
+    "Not having ID cannot keep you detained longer than it takes to verify who you are",
+    "You are exempt from real property tax on the property you left behind while displaced",
+    "Prices of basic necessities are to be controlled during displacement, and shops kept accessible near shelters",
+    "Aid given to Muslim IDPs must meet halal standards from a recognised Philippine certifying body",
+    "You can request protection and assistance without being punished or persecuted for asking",
+    "₱50,000,000 for initial implementation, from the Chief Minister's budget"
+   ],
+   "for_specific_groups": {
+    "Displaced families staying with relatives": "'Home-based displacement' is a defined term and the official database must record whether you are in a centre or home-based — so assistance is not written only for camps.",
+    "Displaced children": "Free and compulsory education that must not be disrupted; child-friendly spaces; child development centre workers mobilised for early education at evacuation sites; safeguards against recruitment into any armed force or group; and the right to be heard on matters affecting them.",
+    "Displaced women and girls": "Dignity kits, culturally sensitive safe spaces, reproductive health including the minimum initial service package, arranged safe delivery with transport by the barangay health emergency response team, and a full support package for survivors of gender-based violence.",
+    "Families of the missing and the dead": "A centralised missing-persons mechanism, lodged for now with the police regional office; burial assistance; a guaranteed right to visit graves; and a fatwa from the Bangsamoro Darul-Ifta' to guide handling of Muslim remains, including exhumation.",
+    "People whose land was left behind": "The human settlements ministry keeps a registry of abandoned properties so you can oppose any transfer of your title, the indigenous peoples' ministry keeps a parallel ancestral-domain registry, and compensation for lost or destroyed property goes on the Intergovernmental Relations Body's agenda.",
+    "Communities facing a development project": "The proponent must submit a displacement impact assessment to the approving authority. For an Environmental Compliance Certificate it must show no one will be displaced — or, if unavoidable, that you were consulted and a rights-based relocation plan exists. Carrying out that plan is a condition of renewing the permit.",
+    "Indigenous communities": "Where a project affects an IP community, the Ministry of Indigenous Peoples' Affairs is also an approving authority.",
+    "Voters who are displaced": "The government must coordinate with COMELEC on voter registration and on polling centres near evacuation camps.",
+    "Humanitarian organisations": "Your assistance is protected from diversion and your access from obstruction, consent cannot be arbitrarily withheld, and your staff are bound by rules against sexual exploitation and abuse."
+   },
+   "where_this_applies": "The whole BARMM. It also reaches residents of the region displaced outside it, and non-residents displaced into it, subject to national and outside-LGU jurisdiction.",
+   "when_you_will_feel_it": "In force since late 2024. The rights are immediate; the Council, the local councils and the three-year regional programme take longer to stand up.",
+   "what_you_can_do": [
+    "Ask your LGU whether its Local Internal Displacement Council exists — every province, city and municipality is required to have one, with IDP and CSO seats",
+    "Insist your children be enrolled without papers from the school they fled; the act forbids that requirement",
+    "Claim the real property tax exemption on what you left behind",
+    "Register the property you left with the Ministry of Human Settlements and Development so you can oppose any transfer of title",
+    "If a project threatens to displace you, ask the approving authority for the displacement impact assessment and the relocation plan — both are required",
+    "If an official or anyone else obstructs these rights, Section 6(r) lets you claim civil damages, and public officers are administratively liable as well"
+   ],
+   "watch_out_for": [
+    "The act creates no new crime and fixes no penalty of its own. Section 7 lists prohibited acts — murder, hostage-taking, starvation as a method of combat, landmines, recruiting children — but routes prosecution to the Revised Penal Code, RA 9851 and 'regional penal laws that may be enacted'. Those regional penal laws did not yet exist.",
+    "Confinement of IDPs is forbidden except in exceptional circumstances, but the exception is decided administratively by the social services ministry with the military and law enforcement, with no fixed maximum and no judicial review.",
+    "₱50 million initial funding is modest against the scale of displacement in the region.",
+    "Marawi is carved out: the existing Marawi Rehabilitation Programme is untouched, and the act acknowledges that the National Government keeps control of Task Force Bangon Marawi funding.",
+    "The 15-day cap on using schools has an exception for prolonged or recurring disasters that could swallow the rule.",
+    "Section 7(c)'s closing paragraph cross-references 'Sec. 11(c)', a renumbering slip in the enacted text; the acts it means are those listed in Section 7(c)."
+   ],
+   "key_terms_explained": {
+    "Internally displaced person": "Someone forced to flee their home but who has not crossed a national border — so not a refugee in law, and not covered by refugee protection.",
+    "Home-based displacement": "Being hosted in a private house rather than a government evacuation centre or camp. The act names it because most displacement here takes that form.",
+    "Durable solution": "The end of displacement — reached by returning home, integrating where you took refuge, or settling elsewhere in the country. The act says explicitly this is not the same as simply going back or restoring the status quo.",
+    "Protracted displacement": "Displacement where progress toward a durable solution is stalled for a long time. The Council must set a standard definition with an actual timeframe.",
+    "Rido": "Clan war — a feud between families or kinship groups, marked by sporadic retaliatory violence. A named cause of displacement in this act.",
+    "Aggressive implementation of development projects": "Carrying out a project in a way that displaces people — by skipping alternatives, failing the impact assessment, or ignoring relocation plan requirements. Legitimate resettlement schemes that follow Section 5 are excluded.",
+    "MISP": "Minimum initial service package — the set of reproductive health priorities delivered at the very start of an emergency to prevent avoidable deaths, especially of women and girls.",
+    "UNGPID": "The United Nations Guiding Principles on Internal Displacement, the international standard this act builds on.",
+    "Do no harm": "The humanitarian obligation to avoid causing harm through how aid is given — and through failing to give it.",
+    "BIDCC": "Bangsamoro Internal Displacement Coordinating Council — the region-wide body chaired by the social services minister that coordinates the whole response."
+   },
+   "status_note": "Passed 27 September 2024 and approved by the Chief Minister on 7 November 2024.",
+   "benefits": {
+    "headline": "Nineteen enumerated rights, displaced people seated on the body that governs the response, displacement risk written into project permitting, and a private right to sue for damages.",
+    "direct_benefits": [
+     {
+      "benefit": "Food, water, shelter, clothing and health care meeting stated standards — culturally and religiously appropriate, with safe spaces for women, girls and children",
+      "who_gets_it": "All IDPs, regardless of circumstances",
+      "how_to_access": "Section 6(a), owed by the Bangsamoro Government and the concerned LGU"
+     },
+     {
+      "benefit": "Uninterrupted schooling, with no demand for papers only the school you fled could give",
+      "who_gets_it": "IDP children, including in madaris, technical and alternative learning systems",
+      "how_to_access": "Section 6(c), through MSSD and MBHTE"
+     },
+     {
+      "benefit": "Reproductive health care, arranged safe delivery, and a full support package for survivors of gender-based violence",
+      "who_gets_it": "Displaced women and girls",
+      "how_to_access": "Section 6(b)"
+     },
+     {
+      "benefit": "Replacement of documents lost in flight, and free mobile registration drives where birth registration is low",
+      "who_gets_it": "IDPs without civil registry documents",
+      "how_to_access": "Section 6(i); MSSD coordinates with the Philippine Statistics Authority"
+     },
+     {
+      "benefit": "Exemption from real property tax on the property you left behind",
+      "who_gets_it": "IDPs with property in their place of origin",
+      "how_to_access": "Section 6(o), applying Section 260 of BAA 49"
+     },
+     {
+      "benefit": "A registry of abandoned property so any attempt to transfer your title can be opposed",
+      "who_gets_it": "Displaced landowners, and IP communities through a separate ancestral-domain registry",
+      "how_to_access": "Section 6(o), through MHSD and MIPA"
+     },
+     {
+      "benefit": "The right to claim civil damages from anyone — official or private — who obstructs these rights",
+      "who_gets_it": "Any IDP",
+      "how_to_access": "Section 6(r); public officers are also administratively liable"
+     },
+     {
+      "benefit": "A displacement impact assessment and rights-based relocation plan before a project can be permitted, enforced at permit renewal",
+      "who_gets_it": "Communities in the path of development projects",
+      "how_to_access": "Section 5(a), through the approving authority, MENRE and — for IP communities — MIPA"
+     },
+     {
+      "benefit": "Halal-compliant humanitarian assistance",
+      "who_gets_it": "Muslim IDPs",
+      "how_to_access": "Section 23, monitored by the Council through the BIDMMD"
+     },
+     {
+      "benefit": "2 seats for displaced people on the region-wide coordinating council, and representation on every local council",
+      "who_gets_it": "IDPs collectively",
+      "how_to_access": "Sections 14 and 16"
+     }
     ],
-    "what_this_does": "Protects and Promoting the Rights of Internally Displaced Persons of BARMM.",
-    "who_it_affects": "General public",
-    "effective": "2024-09-27"
-  },
-  "views": {
-    "simple": "Protects and Promoting the Rights of Internally Displaced Persons of BARMM.",
-    "official": "AN ACT PROTECTING AND PROMOTING THE RIGHTS OF INTERNALLY DISPLACED PERSONS OF BARMM"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "An official IDP database recording cause, duration, vulnerability and whether families are in centres or home-based",
+     "A Recovery and Rehabilitation Plan from every LGU with displacement in its territory",
+     "Protected humanitarian access, with consent that cannot be arbitrarily withheld when authorities are unable or unwilling to assist",
+     "A Chief Minister's award for LGUs that protect IDP rights well",
+     "A mandatory independent review of the whole act every 5 years, reported to the Chief Minister and Parliament"
+    ],
+    "limitations": [
+     "No criminal penalty of its own — the prohibitions in Section 7 depend on national statutes and on regional penal laws not yet enacted.",
+     "₱50 million initial appropriation against region-wide need.",
+     "Marawi's rehabilitation and its funding remain outside the act's reach.",
+     "Much turns on implementing rules, LGU capacity and the Council actually convening."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None as a displaced person — the act imposes duties on government, not on IDPs.",
+     "If you propose a development project, submit a displacement impact assessment and, where displacement is unavoidable, consult those affected and put a rights-based relocation plan in place; implementing it is a condition of permit renewal.",
+     "If you are a humanitarian organisation, respect domestic and regional law, the Do No Harm principles, and the rules against sexual exploitation and abuse."
+    ],
+    "for_ministries": [
+     "MSSD chairs the Council, houses the monitoring division, runs the IDP database and financial assistance programme, and issues the IRR within 90 days",
+     "MILG serves as vice-chair; MOH, MBHTE, MHSD, MPW, MAFAR, MOST and MPOS sit on the Council",
+     "MENRE requires displacement impact assessments of Environmental Compliance Certificate applicants",
+     "MPOS formulates policies for settling rido and other horizontal conflicts",
+     "MHSD and MIPA maintain the registries of abandoned and ancestral-domain property",
+     "BHRC investigates all allegations of violations against displaced people and may coordinate with the Office of the Prosecutor on filing criminal cases",
+     "The Bangsamoro Darul-Ifta' issues the fatwa guiding the handling of Muslim remains",
+     "Every LGU establishes a Local Internal Displacement Council and, where displaced, a Recovery and Rehabilitation Plan"
+    ]
+   },
+   "what_is_prohibited": [
+    "Murder, hostage-taking, summary or arbitrary execution, enforced disappearance, and unlawful confinement of IDPs.",
+    "Direct or indiscriminate attacks on IDPs, starvation as a method of combat, using IDPs or their property to shield military objectives, attacking evacuation centres, and using anti-personnel landmines.",
+    "Rape, forced prostitution, trafficking, gender-specific violence and indecent assault; mutilation, torture and cruel or degrading treatment.",
+    "Violence against displaced children, including recruitment, conscription or enlistment into government forces or any armed group, and attacks on schools, hospitals, places of worship and evacuation centres.",
+    "Slavery in any contemporary form, including sale into marriage, sexual exploitation and forced child labour.",
+    "Interning or confining IDPs in evacuation centres, except in exceptional circumstances and no longer than required.",
+    "Discriminatory recruitment into the armed forces, police or any armed group because of a person's displacement.",
+    "Punishing or persecuting anyone for requesting protection or humanitarian assistance.",
+    "Diverting humanitarian assistance for political or military reasons, or attacking humanitarian workers.",
+    "Occupying, appropriating or using the housing, land and property IDPs left behind.",
+    "Threats and incitement to commit the listed acts."
+   ],
+   "penalties": {
+    "for_citizens": "None created by this act.",
+    "for_violators": "The act fixes no penalty itself. Section 7 directs prosecution under the Revised Penal Code, RA 9851 on crimes against international humanitarian law, genocide and crimes against humanity, RA 10121, RA 10821, and regional penal laws including Shari'ah offences that may be enacted.",
+    "civil_and_administrative": "Section 6(r) — any IDP may claim and be awarded civil damages from any public officer, employee, or private person who directly or indirectly obstructs, defeats, violates or impedes these rights. Public officers are additionally administratively liable."
+   },
+   "where_to_complain": {
+    "first_stop": "Your Local Internal Displacement Council, headed by the governor or mayor",
+    "oversight": "Bangsamoro Internal Displacement Coordinating Council, chaired by the Minister of Social Services and Development; the Bangsamoro Human Rights Commission investigates alleged violations and may coordinate with the Office of the Prosecutor",
+    "courts": "Section 6(r) allows a civil damages claim, and administrative liability for public officers",
+    "note": "The Council reports annually to the Chief Minister on compliance with the act, and that report goes into Parliament's Order of Business."
+   },
+   "everyday_scenarios": [
+    "A family flees a firefight and shelters with cousins rather than in a centre. They are still IDPs — 'home-based displacement' is defined in the act and the official database must record it.",
+    "A displaced child is refused enrolment for lack of a transfer certificate from the school they fled. The act forbids imposing any requirement obtainable only from the school or teachers in the place of origin.",
+    "A barangay is told a project will proceed and they will be moved. The proponent must have filed a displacement impact assessment, and the relocation plan's implementation is checked when the permit comes up for renewal.",
+    "A displaced landowner hears their title is being transferred. The Ministry of Human Settlements and Development's registry of abandoned property exists so title holders can register opposition.",
+    "An official withholds relief from families who complained. Section 6(q) forbids persecution for requesting assistance, and Section 6(r) opens a civil damages claim against that officer personally."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Rights of Internally Displaced Persons of the Bangsamoro Autonomous Region Act of 2024”.",
+  "Section 2 — Policy: a rights-based approach consistent with the 1987 Constitution, international humanitarian and human rights law, the UN Guiding Principles on Internal Displacement and RA 11054; pursuit of durable solutions considering the needs of non-displaced host populations; and, under Article X of the Organic Law, guidance by the objectives of Shari'ah — the preservation of life, intellect, faith, posterity and property.",
+  "Section 3 — Definitions. An IDP is anyone compelled to flee their home within national borders because of armed conflict, generalised or organised violence, human rights violations, clan wars, political violence, land conversion or other land conflict, aggressive implementation of development projects, or hazards and disasters. “Home-based displacement” means being hosted in private residences rather than government centres. A “durable solution” is return, local integration, or settlement elsewhere — and is expressly “not to be understood as the mere return of the IDPs to their former homes and/or by a reestablishment of the status quo”. “Aggressive implementation of development projects” covers displacement arising from failure to explore alternatives, failure to assess displacement risk, or non-compliance with relocation plan requirements.",
+  "Section 4 — Scope: residents of the region displaced within it; residents displaced to areas outside it; and non-residents displaced into it, respecting national and outside-LGU jurisdiction. It operates alongside BAA 49, the Local Governance Code, and national laws on children in emergencies and in armed conflict, indigenous peoples' rights, international humanitarian law, genocide and crimes against humanity.",
+  "Section 5 — Prevention. Feasible alternatives must be explored before any decision requiring displacement. Development projects may displace only when authorised by law, justified by compelling public interest, necessary, and conducted with full respect for human rights; every project submitted for approval requires a displacement impact assessment with mitigation plans. MENRE must require one of Environmental Compliance Certificate applicants, demonstrating that no population will be displaced or, failing that, that affected populations were consulted and a rights-based relocation plan is in place — and implementation of that plan becomes a requirement for renewing permits. MIPA is an approving authority where an IP community is affected. On armed conflict: proactive monitoring of the peace agreements and alignment with the Annex on Normalization of the 2014 CAB. On clan wars: MPOS formulates rido settlement policies under the Administrative Code, with agreements to include access to formal and informal property dispute mechanisms. On disasters: the Regional Disaster Risk Reduction and Management Plan.",
+  "Section 6 — Nineteen rights during and after displacement, without discrimination. (a) Basic necessities: nutritious food and potable water conforming to cultural and religious sensitivities; dignified, adequate shelter with sanitation, electricity and water and culturally sensitive safe spaces for children, women and girls; clothing and dignity kits; essential medical, dental and psychosocial services with PhilHealth and financial risk protection. Price increases of basic necessities are to be controlled; shops kept accessible near shelters; alternative shelter including private lots and houses identified when centres are full; structures other than schools prioritised. (b) Health, including reproductive health, the minimum initial service package, arranged safe and dignified delivery with local health office monitoring and barangay transport, and a full package for survivors of gender-based violence. (c) Education: free and compulsory schooling for IDP children, schools as zones of peace, child-friendly spaces, no transfer or enrolment requirements obtainable only from the school of origin, curriculum modifications, coverage of madaris, higher, technical and alternative learning, use of schools as evacuation centres capped at 15 days except in prolonged or recurring disasters with MBHTE approval, and Child Development Centre workers mobilised for emergency early childhood education. (d) Rights of women, (e) rights of children including safeguards against recruitment and the right to be heard, (f) livelihood and employment, (g) cultural heritage and identity.",
+  "Section 6 (continued) — (h) Freedom of movement in and out of centres, protection against forcible return or resettlement to anywhere life, safety, liberty or health would be at risk, restrictions only in exceptional circumstances by written lawful order, the right to visit residences of origin once safe, a rule that lack of identity documents cannot ground detention beyond the time needed to verify identity, and the right to seek safety elsewhere, leave the country and seek asylum. (i) Recognition, issuance and replacement of documents without unreasonable conditions and with equal rights for men and women to be issued documents in their own names, plus free mobile registration drives where birth registration is low; MSSD coordinates with the Philippine Statistics Authority under RA 10821 on restoring destroyed civil registry records and registering children born during a calamity. (j) Information in accessible language and format. (k) Personal data protection. (l) Family reunification, missing persons and the deceased: a centralised missing-persons mechanism lodged for now with the Police Regional Office BAR; the Bangsamoro Darul-Ifta' to issue a fatwa guiding the management of Muslim mortal remains including exhumation; burial assistance; and a guaranteed right to visit and protection of grave sites. (m) Security and protection, including reception without discrimination by host communities and freedom from arbitrary arrest and detention.",
+  "Section 6 (continued) — (n) Property and possessions protected against pillage, indiscriminate attack, use as a military shield, reprisal, destruction as collective punishment, and arbitrary appropriation, with the territorial LGU facilitating safe transport of belongings. (o) Housing, land and property: exemption from real property taxes and local assessments on property left behind, per Section 260 of BAA 49; an MHSD registry of abandoned properties, with agencies informed so title holders may oppose any alienation, transfer or conveyance, plus a registry of disputed land in displacement-prone areas; a parallel MIPA registry for ancestral domain claims; BHRC investigation of housing, land and property violations; and compensation for lost or destroyed property placed on the Intergovernmental Relations Body's agenda. (p) Participation in planning and camp management, with consultation required but not permitted to delay life-saving assistance, feedback mechanisms, transparency over relocation sites and budgets, and COMELEC coordination on voter registration and polling centres near evacuation camps. (q) The right to request protection and humanitarian assistance without being punished or persecuted for asking. (r) The right to pursue civil and administrative remedies — any IDP may claim and be awarded civil damages from any public officer, employee or private person who directly or indirectly obstructs, defeats, violates or impedes these rights, with administrative liability additionally attaching to public officers. (s) Other rights under international, national and regional law.",
+  "Section 7 — Prohibited acts, prosecuted under the Revised Penal Code, RA 9851 on crimes against international humanitarian law, genocide and other crimes against humanity, RA 10121, RA 10821, and regional penal laws including Shari'ah offences that may be enacted: murder, hostage taking, summary or arbitrary execution, enforced disappearance and unlawful confinement; direct or indiscriminate attacks, starvation as a method of combat, using IDPs to shield military objectives, attacks on evacuation centres, and anti-personnel landmines; rape and other outrages on personal dignity, trafficking, torture and degrading treatment; violence against children including recruitment or enlistment into government forces or any armed group and attacks on schools, hospitals, places of worship, evacuation centres, playgrounds and malls; slavery including sale into marriage; and acts of violence intended to spread terror. IDPs shall not be interned or confined except in exceptional circumstances no longer than required, as determined by MSSD with the military and law enforcement. Discriminatory recruitment into the armed forces, police or any armed group by reason of displacement is prohibited in all circumstances.",
+  "Sections 8–10 — Immediate assistance is the primary duty of MSSD, MILG, MOH and the LGUs, with a reasonable financial assistance programme to be included in MSSD's regular programmes; the National Government has a duty to assist where the magnitude exceeds regional capacity, “especially if the displacement is a result of government law enforcement operations”. Humanitarian assistance shall not be diverted for political or military reasons and free passage must be granted. Durable solutions — voluntary, safe and dignified return, local integration with the same rights as other residents of the host community, or settlement elsewhere — rest on free and informed choice, with clear timeframes, benchmarks and monitoring, and a bar on administrative requirements that delay return.",
+  "Sections 11–12 — The Bangsamoro Internal Displacement Program, formulated by the BIDMMD and approved by the Council, runs over a three-year period reviewed annually and is mainstreamed into LGU development plans. LGUs with displacement in their territory craft a Recovery and Rehabilitation Plan after consultation with IDPs, following due diligence to prevent secondary displacement from hazards or conflicting land claims.",
+  "Sections 13–14 — Intergovernmental relations acknowledge national jurisdiction, with coordination through the Office of Civil Defense on Marawi rehabilitation, the Commission on Human Rights, and the DSWD; the National Government retains authority over Task Force Bangon Marawi funding under Article VI, Section 13 of the Organic Law, without prejudice to Bangsamoro supplemental funding. The Bangsamoro Internal Displacement Coordinating Council is chaired by the Minister of Social Services and Development with the Minister of the Interior and Local Government as vice-chairperson, seating MHSD, MPW, MAFAR, MOST, MOH, MBHTE, MPOS, the Bangsamoro Human Rights, Women and Youth Commissions, BPDA, the Cooperative and Social Enterprise Authority, the Bangsamoro Darul-Ifta', the Police Regional Office, LGU representatives, and two representatives from the IDPs and two from civil society — one mainland, one from the island provinces — with children's and women's sectors represented. MIPA and the Office of Settler Communities join when displacement involves non-Moro IPs or settlers.",
+  "Sections 15–18 — The Council adopts plans after prior consultation with children, women and other IDPs; supports LGUs in crafting local IDP protection ordinances and in designing local infrastructure usable as alternative shelter; coordinates international humanitarian organisations; and submits an annual compliance report to the Chief Minister that is placed in Parliament's Order of Business. Local Internal Displacement Councils are established at provincial, city and municipal level under Section 130 of BAA 49, headed by the local chief executive with IDP, CSO and private sector members. The Bangsamoro Internal Displacement Management and Monitoring Division under MSSD is the institutional focal point: official repository of IDP data with an age- and sex-disaggregated database recording cause, duration, vulnerability, origin and whether IDPs are in centres or home-based; secretariat to the Council; coordinator with the Bangsamoro Rapid Emergency Action on Disaster Incidence; and operational owner of humanitarian standards including protection from sexual exploitation and abuse and of IDPs' privacy over their images and data. MSSD retains exclusive authority over the data and system. The Division has planning and development, policy and coordination, and information management sections.",
+  "Sections 19–25 — The existing Marawi Rehabilitation Program is unaffected, with the Marawi City Local Council coordinating with its project management office on a Recovery and Rehabilitation Plan. IDP rights are integrated into the Bangsamoro Development Plan guiding the Special Development Fund, consistent with the principles of transitional justice. International humanitarian organisations are enjoined to offer their services, which shall be considered done in good faith and not as interference in internal affairs, with consent not to be arbitrarily withheld “particularly when authorities concerned are unable or unwilling to provide the required humanitarian assistance”; they are bound by rules against sexual exploitation and abuse. Importation and donation of relief goods is authorised under Section 105 of the Tariff and Customs Code. Humanitarian aid to Muslim IDPs must adhere to halal standards and certifications from recognised Philippine certifying bodies, monitored by the Council. The BHRC investigates all allegations of violations of displaced people's human rights, may coordinate with the Office of the Prosecutor on filing criminal cases, may provide financial and legal assistance to victims, and reports its IDP monitoring in its annual reports. A Chief Minister's award recognises IDP-friendly LGUs.",
+  "Sections 26–31 — ₱50,000,000 for initial implementation charged to the budget of the Office of the Chief Minister, with continued funding thereafter through MSSD and concerned agencies in the annual appropriations act. MSSD issues implementing rules within 90 days of effectivity, in coordination with the Ministry of Finance, and Budget and Management, and in consultation with LGUs, CSOs and IDPs. The Council reports annually to the Chief Minister. Every 5 years an independent review panel of experts appointed by the Chief Minister reviews implementation and reports its findings to the Chief Minister and Parliament. The act takes effect 15 days after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "People displaced by armed conflict, rido, political violence, development projects and disasters",
+   "Displaced children, women and girls, elderly people and persons with disabilities",
+   "Families sheltering with relatives rather than in evacuation centres",
+   "Displaced landowners and ancestral domain claimants",
+   "Communities in the path of development projects",
+   "Humanitarian organisations working in the region"
+  ],
+  "impact_tags": [
+   "peace_security_justice",
+   "labor_social",
+   "local_government",
+   "health"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱50,000,000 initial, charged to the budget of the Office of the Chief Minister; thereafter through MSSD and concerned agencies in the annual appropriations act",
+  "figures_note": "Quoted from Section 26."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2024-09-27"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/10/BAA-62-IDP.pdf",
+  "irr": "Due from MSSD within 90 days of effectivity — not yet captured in this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill No. 32",
+  "related_note": "Builds on the UN Guiding Principles on Internal Displacement and RA 11054. It applies Section 260 of BAA 49, the Local Governance Code, for the real property tax exemption, Section 130 for the Local Internal Displacement Councils, and Section 128 for the local peace and order councils' ad hoc bodies on rido; Title X, Section 3 of BAA 13, the Administrative Code, for the public order ministry's clan-conflict mandate; and BAA 4, the Bangsamoro Human Rights Act, for the Human Rights Commission's investigative role and its Human Rights Clearance requirement (Section 55 of that act). Section 20 ties IDP rights to the Bangsamoro Development Plan and the Special Development Fund, and to the principles of transitional justice later institutionalised by BAA 89. Prosecution routes to national statutes — RA 9851, RA 10121 and RA 10821 — and to regional penal laws not yet enacted."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "₱50,000,000 initial",
+  "irr_status": "Section 27 requires MSSD to issue implementing rules within 90 days of effectivity, consulting LGUs, CSOs and IDPs. Not yet captured in this registry.",
+  "implementing_agency": {
+   "agency": "Ministry of Social Services and Development, chairing the Bangsamoro Internal Displacement Coordinating Council, with the Internal Displacement Management and Monitoring Division as focal point",
+   "inferred": false
+  },
+  "note": "Read from the enacted text as signed, all 26 pages. Section 29 requires an independent expert panel to review implementation every 5 years and report to the Chief Minister and Parliament."
+ },
+ "citizen_questions": [
+  {
+   "q": "Am I an IDP if I'm staying with relatives instead of in an evacuation centre?",
+   "a": "Yes. The act defines 'home-based displacement' as being hosted in private residences, and the official database must record whether displaced families are in centres or home-based."
+  },
+  {
+   "q": "Can my child be refused enrolment because we left their records behind?",
+   "a": "No. Section 6(c) says in no case shall transfer or enrolment requirements be imposed on displaced learners where those could only be obtained from the schools or teachers in their place of origin."
+  },
+  {
+   "q": "Do I still owe real property tax on the house I fled?",
+   "a": "No. Section 6(o) exempts IDPs from real property taxes and other local assessments on properties left behind while in displacement."
+  },
+  {
+   "q": "Can they make us go home before it is safe?",
+   "a": "No. Section 6(h) protects IDPs against forcible return or resettlement to any place where their lives, safety, liberty or health would be at risk, and return under Section 10 must be voluntary."
+  },
+  {
+   "q": "How long can our children's school be used as an evacuation centre?",
+   "a": "15 days at most, except in prolonged or recurring disasters where no other suitable structure is available, and then only with the education ministry's approval."
+  },
+  {
+   "q": "Someone is trying to sell the land I left. Can I stop it?",
+   "a": "The Ministry of Human Settlements and Development must keep a registry of properties left behind by displaced people and inform other agencies so that title holders can register opposition to any alienation, transfer or conveyance. Ancestral domain claims go on a separate registry kept by the Ministry of Indigenous Peoples' Affairs."
+  },
+  {
+   "q": "An official blocked our relief. Can I do anything?",
+   "a": "Yes. Section 6(r) entitles any IDP to claim and be awarded civil damages from any public officer, employee or private person who directly or indirectly obstructs, defeats, violates or impedes these rights, and public officers are administratively liable as well. The Bangsamoro Human Rights Commission also investigates."
+  },
+  {
+   "q": "Does the aid we receive have to be halal?",
+   "a": "Yes, for Muslim IDPs. Section 23 requires humanitarian assistance from the Bangsamoro Government, the National Government, local authorities or international organisations to adhere to halal standards and certifications from recognised Philippine certifying bodies."
+  },
+  {
+   "q": "Does this cover Marawi?",
+   "a": "Partly. The existing Marawi Rehabilitation Programme is left untouched, and the National Government keeps authority over Task Force Bangon Marawi's funding. The Marawi City Local Internal Displacement Council coordinates with the programme's project office on a Recovery and Rehabilitation Plan."
+  },
+  {
+   "q": "What if a development project will displace us?",
+   "a": "The proponent must submit a displacement impact assessment to the approving authority. For an Environmental Compliance Certificate it must show no population will be displaced — or, if unavoidable, that affected people were consulted and a rights-based relocation plan is in place. Implementing that plan is a condition for renewing permits, and for indigenous communities the Ministry of Indigenous Peoples' Affairs is also an approving authority."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 62",
+  "line2": "Rights of Internally Displaced Persons Act of 2024",
+  "badges": [
+   "IN FORCE",
+   "Peace & Justice",
+   "2024"
+  ],
+  "what_this_does": "Sets out nineteen rights owed to anyone displaced inside the region, names who owes them, and lets displaced people sue for damages when they are obstructed.",
+  "who_it_affects": "Displaced families · host communities · LGUs · development project proponents",
+  "effective": "2024-11-07"
+ },
+ "views": {
+  "simple": "A charter of rights for the internally displaced — food, shelter, health care, uninterrupted schooling, replacement documents, protection of the land left behind, freedom from forced return — enforced through a coordinating council that seats displaced people themselves, local councils in every LGU, displacement impact assessments as a condition of project permits, and a right to claim civil damages from anyone who obstructs those rights.",
+  "official": "AN ACT PROTECTING AND PROMOTING THE RIGHTS OF INTERNALLY DISPLACED PERSONS OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO, PROVIDING MECHANISMS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 62, enacted text as signed (Parliament's acts index), all 26 pages.",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

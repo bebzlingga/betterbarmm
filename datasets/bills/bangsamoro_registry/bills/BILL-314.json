@@ -1,185 +1,214 @@
 {
-  "record_type": "parliament_bill",
-  "basic_information": {
-    "bill_number": 314,
-    "short_title": "Grants Benefits and Incentives to Accredited Barangay Health",
-    "official_title": "AN ACT GRANTING BENEFITS AND INCENTIVES TO ACCREDITED BARANGAY HEALTH WORKERS",
-    "type": "Parliament Bill",
-    "session": "3rd Regular Session (2024-2025)",
-    "date_filed": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "current_status": "First Reading",
-    "status_as_of": "2024-07-15",
-    "date_approved": null
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Grants Benefits and Incentives to Accredited Barangay Health Workers.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note of the bill)",
-    "what_will_change": "Grants Benefits and Incentives to Accredited Barangay Health Workers.",
-    "who_will_be_affected": [
-      "Barangay residents",
-      "Health workers",
-      "Hospitals",
-      "LGUs",
-      "Patients"
-    ],
-    "when_will_it_take_effect": "Only upon approval by Parliament and effectivity clause; this bill is not yet law",
-    "what_this_means_for_you": {
-      "in_short": "PROPOSAL: A governance law shaping how the Bangsamoro Government works. Its effect on daily life is indirect but real: clearer rules inside government generally mean faster, more accountable service at the counter. (This describes what the bill would do if enacted.)",
-      "in_practice": [
-        "Defines powers, procedures, or structures within the regional government"
-      ],
-      "for_specific_groups": {
-        "General public": "Better-defined government duties are the basis for demanding service"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Not yet - only if and when enacted",
-      "what_you_can_do": [
-        "This is the stage where public input matters most: submit a position paper via the Parliament's 'Call for Position Papers' page",
-        "Attend or watch the committee hearings (schedules are on the Parliament site; many are livestreamed)",
-        "Contact a Member of Parliament - the 'Contact an MP' page lists them - to support, oppose, or suggest changes"
-      ],
-      "watch_out_for": [
-        "Nothing changes yet: a bill has no legal effect until Parliament approves it and it is enacted as a Bangsamoro Autonomy Act. Many bills are revised or merged along the way."
-      ],
-      "key_terms_explained": {
-        "First Reading": "The bill's title is read in plenary and it is referred to a committee - the earliest formal stage.",
-        "Committee stage": "A committee studies the bill, holds hearings, and can rewrite it before plenary debate.",
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
-      },
-      "status_note": "Bill status: First Reading (as of 2024-07-15).",
-      "benefits": {
-        "headline": "IF ENACTED: Better-ordered government, indirectly better service.",
-        "direct_benefits": [
-          {
-            "benefit": "Clearer rules inside government you can hold offices to",
-            "who_gets_it": "General public",
-            "how_to_access": "Cite the law when following up transactions"
-          }
-        ],
-        "indirect_benefits": [
-          "Institutional maturity of the autonomy"
-        ],
-        "limitations": [
-          "ALL benefits here are prospective: this is a bill, not a law. Nothing can be claimed unless it is enacted.",
-          "Benefits are structural rather than claimable programs"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "parliament_bill",
+ "basic_information": {
+  "bill_number": 314,
+  "short_title": "Grants Benefits and Incentives to Accredited Barangay Health",
+  "official_title": "AN ACT GRANTING BENEFITS AND INCENTIVES TO ACCREDITED BARANGAY HEALTH WORKERS",
+  "type": "Parliament Bill",
+  "session": "3rd Regular Session (2024-2025)",
+  "date_filed": "2024-06-10",
+  "current_status": "First Reading",
+  "status_as_of": "2024-07-15",
+  "date_approved": null
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Grants Benefits and Incentives to Accredited Barangay Health Workers.",
+  "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note of the bill)",
+  "what_will_change": "Grants Benefits and Incentives to Accredited Barangay Health Workers.",
+  "who_will_be_affected": [
+   "Barangay residents",
+   "Health workers",
+   "Hospitals",
+   "LGUs",
+   "Patients"
   ],
-  "impact": {
-    "who_benefits": [
-      "Barangay residents",
-      "Health workers",
-      "Hospitals",
-      "LGUs",
-      "Patients"
+  "when_will_it_take_effect": "Only upon approval by Parliament and effectivity clause; this bill is not yet law",
+  "what_this_means_for_you": {
+   "in_short": "PROPOSAL: A governance law shaping how the Bangsamoro Government works. Its effect on daily life is indirect but real: clearer rules inside government generally mean faster, more accountable service at the counter. (This describes what the bill would do if enacted.)",
+   "in_practice": [
+    "Defines powers, procedures, or structures within the regional government"
+   ],
+   "for_specific_groups": {
+    "General public": "Better-defined government duties are the basis for demanding service"
+   },
+   "where_this_applies": "All of BARMM",
+   "when_you_will_feel_it": "Not yet - only if and when enacted",
+   "what_you_can_do": [
+    "This is the stage where public input matters most: submit a position paper via the Parliament's 'Call for Position Papers' page",
+    "Attend or watch the committee hearings (schedules are on the Parliament site; many are livestreamed)",
+    "Contact a Member of Parliament - the 'Contact an MP' page lists them - to support, oppose, or suggest changes"
+   ],
+   "watch_out_for": [
+    "Nothing changes yet: a bill has no legal effect until Parliament approves it and it is enacted as a Bangsamoro Autonomy Act. Many bills are revised or merged along the way."
+   ],
+   "key_terms_explained": {
+    "First Reading": "The bill's title is read in plenary and it is referred to a committee - the earliest formal stage.",
+    "Committee stage": "A committee studies the bill, holds hearings, and can rewrite it before plenary debate.",
+    "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
+   },
+   "status_note": "Bill status: First Reading (as of 2024-07-15).",
+   "benefits": {
+    "headline": "IF ENACTED: Better-ordered government, indirectly better service.",
+    "direct_benefits": [
+     {
+      "benefit": "Clearer rules inside government you can hold offices to",
+      "who_gets_it": "General public",
+      "how_to_access": "Cite the law when following up transactions"
+     }
     ],
-    "impact_tags": [
-      "health",
-      "local_government"
+    "indirect_benefits": [
+     "Institutional maturity of the autonomy"
     ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Beneficiary/budget figures are only shown when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "First Reading",
-      "reached": true,
-      "date": "2024-07-15"
-    },
-    {
-      "stage": "Second Reading - Committee",
-      "reached": false,
-      "date": null
-    },
-    {
-      "stage": "Second Reading - Plenary",
-      "reached": false,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": false,
-      "date": null
-    },
-    {
-      "stage": "Approved by Parliament",
-      "reached": false,
-      "date": null
-    },
-    {
-      "stage": "Enacted (BAA)",
-      "reached": false,
-      "date": null
-    }
-  ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "sponsor": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Listed on the bill's official page under General Information."
-  },
-  "related_documents": {
-    "original_bill_pdf": "On the bill's official page",
-    "committee_report": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "approved_version": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "irr": null
-  },
-  "related_legislation": {
-    "amends": [],
-    "repeals": [],
-    "related_bills": []
-  },
-  "implementation_status": {
-    "law_enacted": false,
-    "note": "Not applicable - bill not yet enacted."
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this already a law?",
-      "a": "Not yet - it is at the 'First Reading' stage (as of 2024-07-15)."
-    },
-    {
-      "q": "How can I support or oppose this bill?",
-      "a": "Submit a position paper via the Parliament's Call for Position Papers page, or attend/watch the responsible committee's public hearings."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "The bill's page on parliament.bangsamoro.gov.ph (Bills index) links the PDF and legislative history."
-    }
-  ],
-  "display_header": {
-    "line1": "Parliament Bill No. 314",
-    "line2": "Grants Benefits and Incentives to Accredited Barangay Health",
-    "badges": [
-      "FIRST READING",
-      "Health",
-      "Local Government",
-      "2024"
-    ],
-    "what_this_does": "Grants Benefits and Incentives to Accredited Barangay Health Workers.",
-    "who_it_affects": "Barangay residents · Health workers · Hospitals · LGUs"
-  },
-  "views": {
-    "simple": "Grants Benefits and Incentives to Accredited Barangay Health Workers.",
-    "official": "AN ACT GRANTING BENEFITS AND INCENTIVES TO ACCREDITED BARANGAY HEALTH WORKERS"
-  },
-  "implementing_agency_if_enacted": {
-    "agency": "Ministry of Health (MOH)",
-    "inferred": true
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "limitations": [
+     "ALL benefits here are prospective: this is a bill, not a law. Nothing can be claimed unless it is enacted.",
+     "Benefits are structural rather than claimable programs"
+    ]
+   }
   }
+ },
+ "key_provisions": [
+  "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ ],
+ "impact": {
+  "who_benefits": [
+   "Barangay residents",
+   "Health workers",
+   "Hospitals",
+   "LGUs",
+   "Patients"
+  ],
+  "impact_tags": [
+   "health",
+   "local_government"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": null,
+  "figures_note": "Beneficiary/budget figures are only shown when stated in official documents; none captured for this record."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed",
+   "reached": true,
+   "date": "2024-06-10"
+  },
+  {
+   "stage": "First Reading",
+   "reached": true,
+   "date": "2024-07-15"
+  },
+  {
+   "stage": "Second Reading - Committee",
+   "reached": false,
+   "date": null
+  },
+  {
+   "stage": "Second Reading - Plenary",
+   "reached": false,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": false,
+   "date": null
+  },
+  {
+   "stage": "Approved by Parliament",
+   "reached": false,
+   "date": null
+  },
+  {
+   "stage": "Enacted (BAA)",
+   "reached": false,
+   "date": null
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": [
+   "ESMAEL, SUHARTO S."
+  ],
+  "co_authors": [
+   "MIDTIMBANG, TAWAKAL B.",
+   "MIDTIMBANG, MICHAEL E.",
+   "CANDAO, BAI MALEIHA B.",
+   "MACACUA, JAMEL B.",
+   "SOLAIMAN, ALI B.",
+   "AMENODEN, ABDULAZIZ M.",
+   "PANGANDAMAN, NABILA MARGARITA P.",
+   "ESTINO, MATARUL M.",
+   "JIKIRI, ALBAKIL D.",
+   "DILANGALEN, HASHEMI N.",
+   "MACATANONG, AMROUSSI A.",
+   "TAN, NABIL A.",
+   "KARON, FAIZAL G.",
+   "HADJI ABDULLAH, KHALID M.",
+   "SEMA, OMAR YASSER C.",
+   "SALENDAB, SAID Z.",
+   "ALIH, EDDIE M.",
+   "ANAYATIN, SUSANA S.",
+   "RAMOS, DIAMILA D.",
+   "SEMA, ROMEO K.",
+   "SINOLINDING, KADIL M., JR.",
+   "SHIEK, SAID M.",
+   "ALAUDDIN, MOSBER E.",
+   "ALI, IBRAHIM D.",
+   "PARCASIO, RANDOLPH C."
+  ],
+  "sponsor": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors, committee referrals and dates are taken from Parliament's own bills index (parliament.bangsamoro.gov.ph/bills/), which reflects the measure as it stood at capture."
+ },
+ "related_documents": {
+  "original_bill_pdf": "On the bill's official page",
+  "committee_report": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "approved_version": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "irr": null,
+  "official_page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-the-grant-of-benefits-and-incentives-to-accredited-and-active-barangay-health-workers-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-and-providing-funds-therfor/"
+ },
+ "related_legislation": {
+  "amends": [],
+  "repeals": [],
+  "related_bills": []
+ },
+ "implementation_status": {
+  "law_enacted": false,
+  "note": "Not applicable - bill not yet enacted."
+ },
+ "citizen_questions": [
+  {
+   "q": "Is this already a law?",
+   "a": "Not yet - it is at the 'First Reading' stage (as of 2024-07-15)."
+  },
+  {
+   "q": "How can I support or oppose this bill?",
+   "a": "Submit a position paper via the Parliament's Call for Position Papers page, or attend/watch the responsible committee's public hearings."
+  },
+  {
+   "q": "Where do I read the full text?",
+   "a": "The bill's page on parliament.bangsamoro.gov.ph (Bills index) links the PDF and legislative history."
+  }
+ ],
+ "display_header": {
+  "line1": "Parliament Bill No. 314",
+  "line2": "Grants Benefits and Incentives to Accredited Barangay Health",
+  "badges": [
+   "FIRST READING",
+   "Health",
+   "Local Government",
+   "2024"
+  ],
+  "what_this_does": "Grants Benefits and Incentives to Accredited Barangay Health Workers.",
+  "who_it_affects": "Barangay residents · Health workers · Hospitals · LGUs"
+ },
+ "views": {
+  "simple": "Grants Benefits and Incentives to Accredited Barangay Health Workers.",
+  "official": "AN ACT GRANTING BENEFITS AND INCENTIVES TO ACCREDITED BARANGAY HEALTH WORKERS"
+ },
+ "implementing_agency_if_enacted": {
+  "agency": "Ministry of Health (MOH)",
+  "inferred": true
+ },
+ "provenance": {
+  "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
+  "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+ }
 }

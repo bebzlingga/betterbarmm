@@ -1,178 +1,245 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 5,
-    "short_title": "Creates the Bangsamoro ATTORNEY-GENERAL'S Office",
-    "official_title": "AN ACT CREATING THE BANGSAMORO ATTORNEY-GENERAL'S OFFICE",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2019-12-27",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Creates the Bangsamoro ATTORNEY-GENERAL'S Office.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Creates the Bangsamoro ATTORNEY-GENERAL'S Office.",
-    "who_will_be_affected": [
-      "Target sector of the body",
-      "Job seekers",
-      "CSOs"
-    ],
-    "when_will_it_take_effect": "Ratified 2019-12-27; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Creates or strengthens a public institution. New offices sound bureaucratic, but each one is a service window: a place to bring complaints, apply for programs, or get support that previously had no dedicated home in the region.",
-      "in_practice": [
-        "Once organized (leadership appointed, budget released), it opens programs and services",
-        "Look for its office, hotline, or Facebook page under the Bangsamoro Government",
-        "Its mandate defines what you can demand from it"
-      ],
-      "for_specific_groups": {
-        "Target sector of the body": "You gain a dedicated advocate inside government",
-        "Job seekers": "New institutions hire staff",
-        "CSOs": "A formal counterpart for partnership and accountability"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "A dedicated office now exists to serve and advocate for its sector.",
-        "direct_benefits": [
-          {
-            "benefit": "A service window: programs, assistance, and complaints handling for the covered sector",
-            "who_gets_it": "The sector named in the law",
-            "how_to_access": "The body's office/hotline once organized"
-          },
-          {
-            "benefit": "Representation inside government when policies are made",
-            "who_gets_it": "Sector members",
-            "how_to_access": "Through the body's consultations"
-          },
-          {
-            "benefit": "Employment in the new institution",
-            "who_gets_it": "Qualified applicants",
-            "how_to_access": "CSC-BARMM / agency postings"
-          }
-        ],
-        "indirect_benefits": [
-          "A formal partner for NGOs and donors working on the sector"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "An office's value depends on leadership and funding - track its accomplishment reports"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 5,
+  "short_title": "Bangsamoro Attorney-General's Office Act of 2019",
+  "official_title": "AN ACT CREATING THE BANGSAMORO ATTORNEY-GENERAL'S OFFICE, DEFINING ITS FUNCTIONS AND POWERS, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER RELATED PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2019-12-27",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "First Regular Session",
+  "date_passed": "2019-12-27",
+  "date_approved_by_chief_minister": "2020-01-14",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "institution_commission",
-      "other"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2019-12-27"
-    }
+  "effectivity": "15 days after complete publication in at least one newspaper of general circulation in the Bangsamoro region",
+  "title_note": "The page footers of the signed copy read “Page X of BAA 7”, although the act is numbered 5 in its own heading and on the official index. Recorded as enacted."
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates the office of the region's chief government lawyer — the Bangsamoro Attorney-General — who advises the Chief Minister and ministries, represents the government in court, and must be told about every case the government is involved in.",
+  "why_was_it_proposed": "Section 8, Article XVI of the Organic Law provides for a Bangsamoro Attorney-General. This act sets up the office, its powers and its funding.",
+  "what_will_change": "The Bangsamoro Government has a single chief legal counsel with power to demand information from any official, summon any employee except Members of Parliament, and represent the region in court and in international negotiations.",
+  "who_will_be_affected": [
+   "Anyone in litigation with the Bangsamoro Government",
+   "Every Bangsamoro ministry, agency and office",
+   "Government legal officers, who form a Legal Liaison Network under the Attorney-General",
+   "Lawyers in private practice engaged by ministries, whose engagement must be reported"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "The created body itself",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2019-12-27 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "The created body itself (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 5",
-    "line2": "Creates the Bangsamoro ATTORNEY-GENERAL'S Office",
-    "badges": [
-      "ENACTED",
-      "Institution Commission",
-      "2019"
+  "when_will_it_take_effect": "In force since 2020 — 15 days after complete publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. The region has a chief government lawyer who represents it in court, advises the Chief Minister, and must be notified of every case involving the Bangsamoro Government within 3 days.",
+   "in_practice": [
+    "The Attorney-General is the chief legal counsel of the Bangsamoro Government, with the rank of a cabinet member",
+    "Appointed by the Chief Minister, and coterminous with the appointing authority because the position is primarily confidential",
+    "Must be a Philippine Bar member in good standing, a bonafide resident of the BARMM, with at least 10 years in practice (6 for the Assistant)",
+    "Four divisions: Litigation; Legal Research and Opinion; Intergovernmental Relations; and Administrative and Finance",
+    "May require any officer or employee to furnish information, and summon any of them — except Members of Parliament and their immediate staff — to explain or assist",
+    "All ministries must notify the Attorney-General of all litigation within 3 days, and no case may be filed for the government without prior notice",
+    "The Legal Research and Opinion Division formulates and reviews policy on Shari'ah matters and gives written Shari'ah opinions to the Chief Minister and Cabinet",
+    "₱15,000,000 for personal services and ₱3,000,000 for initial operations"
+   ],
+   "for_specific_groups": {
+    "Anyone suing or being sued by the Bangsamoro Government": "The Litigation Division represents the government in all civil and administrative proceedings, and in criminal cases where it is the plaintiff.",
+    "Ministries and agencies": "You must notify the Attorney-General of all litigation within 3 days, and report any engagement of a private lawyer for records purposes.",
+    "Government legal officers": "You form part of the Legal Liaison Network, chaired ex officio by the Attorney-General.",
+    "Members of Parliament": "You and your immediate staff are expressly outside the Attorney-General's summons power."
+   },
+   "where_this_applies": "The Bangsamoro Government, its ministries, agencies, offices and instrumentalities.",
+   "when_you_will_feel_it": "In force since 2020.",
+   "what_you_can_do": [
+    "If you are litigating against a Bangsamoro ministry, expect the Attorney-General's Office to appear",
+    "Note that ministries may seek the Attorney-General's opinion on constitutional issues"
+   ],
+   "watch_out_for": [
+    "Section 17 bars criminal, civil or administrative suits against the Attorney-General, the Assistant and subordinate officers in respect of proceedings or the discharge of functions under the act — an unusually broad immunity.",
+    "The appointment is coterminous with the Chief Minister, so the government's chief legal counsel changes with the government.",
+    "Legal service to a ministry is provided only where no conflict of interest arises and the agency lacks legal capacity itself.",
+    "Seeking the Attorney-General's opinion on constitutional issues is permissive — ministries may do so, not must."
+   ],
+   "key_terms_explained": {
+    "Chief legal counsel": "The government's own lawyer — advising it, drafting for it and representing it, rather than prosecuting crime.",
+    "Coterminous": "The appointment ends when the appointing authority's term ends.",
+    "Motu proprio": "On the official's own initiative, without being asked.",
+    "Case build-up": "Assembling the evidence and legal basis of a case before it is filed.",
+    "Legal Liaison Network": "All legal officers across the Bangsamoro Government, coordinating under the Attorney-General as ex officio chair."
+   },
+   "status_note": "Passed 27 December 2019, approved by the Chief Minister on 14 January 2020.",
+   "benefits": {
+    "headline": "One chief government lawyer, with sight of every case the region is involved in.",
+    "direct_benefits": [
+     {
+      "benefit": "Consistent legal representation for the Bangsamoro Government in court",
+      "who_gets_it": "The region and, indirectly, litigants facing a single competent counterparty",
+      "how_to_access": "Litigation Division"
+     },
+     {
+      "benefit": "Written Shari'ah opinions to the Chief Minister and Cabinet, and Shari'ah policy review",
+      "who_gets_it": "The Bangsamoro Government and, through it, the public",
+      "how_to_access": "Legal Research and Opinion Division"
+     },
+     {
+      "benefit": "Representation of the Bangsamoro in international litigation, negotiations and conferences",
+      "who_gets_it": "The region",
+      "how_to_access": "On the Chief Minister's directive"
+     }
     ],
-    "what_this_does": "Creates the Bangsamoro ATTORNEY-GENERAL'S Office.",
-    "who_it_affects": "General public",
-    "effective": "2019-12-27"
-  },
-  "views": {
-    "simple": "Creates the Bangsamoro ATTORNEY-GENERAL'S Office.",
-    "official": "AN ACT CREATING THE BANGSAMORO ATTORNEY-GENERAL'S OFFICE"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "A coordinated Legal Liaison Network across all ministries",
+     "Direct transfer of the office's budget, rather than routing through a parent ministry",
+     "Advice available to any committee of Parliament on request"
+    ],
+    "limitations": [
+     "Broad immunity from suit for the office's principals.",
+     "Appointment tied to the Chief Minister's term.",
+     "No power to summon Members of Parliament or their staff."
+    ]
+   },
+   "your_responsibilities": {
+    "for_ministries": [
+     "Notify the Attorney-General of all litigation within 3 days",
+     "Give prior notice before filing any case for the Bangsamoro Government",
+     "Report engagement of any private lawyer for records purposes",
+     "Furnish information and attend when summoned"
+    ],
+    "for_citizens": [
+     "None."
+    ]
+   },
+   "what_is_prohibited": [
+    "No case or litigation of any kind may be filed or commenced on behalf of the Bangsamoro Government, its ministries, commissions, agencies or offices without prior notice to the Attorney-General."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment.",
+    "note": "No sanction is stated for a ministry that fails to give the required notice of litigation."
+   },
+   "where_to_complain": {
+    "first_stop": "The ministry or agency concerned",
+    "oversight": "Office of the Chief Minister, before which administrative complaints are lodged and on which the Attorney-General recommends action",
+    "note": "The act creates no public complaints procedure, and Section 17 restricts suits against the office's principals."
+   },
+   "everyday_scenarios": [
+    "A contractor sues a Bangsamoro ministry. The ministry must notify the Attorney-General within 3 days, and the Litigation Division represents the government.",
+    "A ministry wants to hire an outside law firm. It may, but must notify the Attorney-General of the engagement for records purposes.",
+    "The Cabinet needs to know whether a proposed policy complies with Shari'ah. The Legal Research and Opinion Division formulates and reviews Shari'ah policy and issues written opinions."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Bangsamoro Attorney-General's Office Act of 2019”.",
+  "Sections 3–4 — Creates the Bangsamoro Attorney-General's Office pursuant to Section 8, Article XVI of Republic Act 11054, with the Attorney-General as chief legal counsel of the Bangsamoro Government.",
+  "Sections 5–7 — The Chief Minister appoints the Attorney-General and Assistant Attorney-General; in line with the primarily confidential nature of the positions, both appointments are coterminous with the appointing authority. The Attorney-General appoints all officials and employees below the Assistant, subject to civil service law. Qualifications: Philippine citizenship, membership of the Philippine Bar in good standing, recognised competence, bonafide residence in the BARMM, and 10 years in practice for the Attorney-General or six for the Assistant. The Attorney-General holds the rank of a cabinet member at Salary Grade 28, the Assistant at 27.",
+  "Section 8 — Functions: render legal opinions on all legal matters brought by Parliament, the Chief Minister and ministries, and give advice to officials on his or her own initiative or on request; review, vet and interpret local, national and international documents, contracts and agreements for the Chief Minister; recommend action on administrative complaints lodged before the Office of the Chief Minister; assist the Inter-Governmental Relations body when called upon; and provide legal services facilitating, promoting and monitoring democracy, the rule of law and good governance.",
+  "Section 9 — Powers: require any officer or employee of the Bangsamoro Government to furnish information relating to their duties; summon any officer or employee — except Members of Parliament and their immediate staff — to explain or assist, including case build-up on any matter that is or could be the subject of litigation by or against the government; administer oaths; propose to Parliament the establishment, merger or abolition of divisions subject to Cabinet approval; and, on request, appear and advise on any legal matter in any committee of the Bangsamoro Parliament.",
+  "Section 11 — Four divisions. The Litigation Division represents the government in all civil and administrative proceedings and in criminal cases where it is plaintiff, appears in actions on the validity of laws and issuances, initiates action to enforce contracts, deputises government legal officers with their head of office's concurrence, and — on the Chief Minister's directive — represents the Bangsamoro in international litigation, negotiations and conferences. The Legal Research and Opinion Division advises the Chief Minister and Cabinet, reviews and drafts executive issuances and decisions reversing a ministry head, drafts and reviews contracts, and formulates and reviews policy on Shari'ah matters, providing written Shari'ah opinions to the Chief Minister and Cabinet. There are also Intergovernmental Relations and Administrative and Finance Divisions.",
+  "Sections 12–13 — All legal officers of the Office and of the ministries form the Legal Liaison Network, chaired ex officio by the Attorney-General. Ministries engaging a private practice lawyer must notify the Attorney-General for records purposes, and may request legal service in writing — which may be provided only where no conflict of interest arises and the agency lacks the legal capacity itself.",
+  "Sections 14–16 — The Attorney-General manages the Office's budget, which the Bangsamoro Government transfers and releases directly. Ministries may seek the Attorney-General's opinion on matters involving constitutional issues. All ministries must notify the Attorney-General of all litigation within 3 days, and no case may be filed or commenced on behalf of the Bangsamoro Government without prior notice.",
+  "Section 17 — No criminal, civil or administrative suit shall be brought against the Attorney-General, the Assistant Attorney-General or a subordinate officer in respect of any proceeding in a court of law or in the course of discharging the functions of the Attorney-General under the act; and where an official function is exercised in good faith, they shall not be personally liable for any action, claim or demand whatsoever.",
+  "Section 19 — An initial ₱15,000,000 for Personal Services and ₱3,000,000 for initial operation, sourced from the Miscellaneous Personnel Benefits Fund and the Contingent Fund, with subsequent funding in the Bangsamoro Appropriations Act.",
+  "Section 23 — Takes effect 15 days after complete publication in at least one newspaper of general circulation in the region."
+ ],
+ "impact": {
+  "who_benefits": [
+   "The Bangsamoro Government",
+   "Litigants facing a single competent government counsel",
+   "Government legal officers"
+  ],
+  "impact_tags": [
+   "governance_civil_service",
+   "peace_security_justice",
+   "institution_commission"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱15,000,000 for Personal Services and ₱3,000,000 for initial operation, from the Miscellaneous Personnel Benefits Fund and the Contingent Fund",
+  "figures_note": "Quoted from Section 19."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2019-12-27"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2020/05/BAA-5.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 26",
+  "related_note": "Created pursuant to Section 8, Article XVI of the Organic Law (RA 11054). Its oath-administering power references Section 41(2), Chapter 10 of Executive Order 292, the national Administrative Code."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱15,000,000 Personal Services; ₱3,000,000 initial operation",
+  "irr_status": "None required by the act.",
+  "note": "Read from the enacted text as signed. The page footers of the signed copy misnumber the act as BAA 7; the heading and the official index give it as BAA 5."
+ },
+ "citizen_questions": [
+  {
+   "q": "What does the Attorney-General do?",
+   "a": "Acts as the Bangsamoro Government's own lawyer — advising the Chief Minister, Cabinet and ministries, drafting and reviewing contracts and issuances, and representing the government in court. It is not a prosecutor."
+  },
+  {
+   "q": "Can the Attorney-General compel information?",
+   "a": "Yes. Section 9 allows the Attorney-General to require any officer or employee to furnish information, and to summon any of them — except Members of Parliament and their immediate staff — to explain or assist, including case build-up."
+  },
+  {
+   "q": "Does the Attorney-General handle Shari'ah questions?",
+   "a": "Yes. The Legal Research and Opinion Division formulates and reviews policy on Shari'ah matters to ensure compliance with Shari'ah rules and principles, and provides written Shari'ah opinions to the Chief Minister and the Cabinet."
+  },
+  {
+   "q": "Is the Attorney-General independent of the Chief Minister?",
+   "a": "No. The Chief Minister appoints, and Section 5 makes the appointment coterminous with the appointing authority on the basis that the position is primarily confidential."
+  },
+  {
+   "q": "Can the Attorney-General be sued?",
+   "a": "Section 17 bars criminal, civil or administrative suits against the Attorney-General, the Assistant and subordinate officers in respect of proceedings or the discharge of functions under the act, and shields them from personal liability where the function was exercised in good faith."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 5",
+  "line2": "Bangsamoro Attorney-General's Office Act of 2019",
+  "badges": [
+   "IN FORCE",
+   "Governance & Civil Service",
+   "2019"
+  ],
+  "what_this_does": "Creates the region's chief government lawyer, with sight of every case the Bangsamoro Government is in.",
+  "who_it_affects": "Litigants against the government · all ministries · government legal officers"
+ },
+ "views": {
+  "simple": "Creates the Bangsamoro Attorney-General's Office as the region's chief legal counsel — advising the Chief Minister and ministries, giving Shari'ah opinions, representing the government in court and internationally, and requiring notice of every case involving the Bangsamoro Government.",
+  "official": "AN ACT CREATING THE BANGSAMORO ATTORNEY-GENERAL'S OFFICE, DEFINING ITS FUNCTIONS AND POWERS, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER RELATED PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 5, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

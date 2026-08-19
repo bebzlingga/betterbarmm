@@ -256,17 +256,22 @@ export default function AboutPage() {
 					{steps.map((item, index) => (
 						<Reveal key={item.step} delay={index * 50}>
 							<div className='flex h-full flex-col items-center text-center'>
-								<div className='flex w-full items-center gap-3'>
+								{/* The connectors only tell the truth on the five-column row:
+								    anywhere the grid wraps, the line at a row's edge runs out
+								    into nothing, and stacked on a phone every numeral wears a
+								    pair of stray hairlines. So they wait for `xl`, and the row
+								    centres its numeral itself until then. */}
+								<div className='flex w-full items-center justify-center gap-3'>
 									<span
 										aria-hidden='true'
-										className={`-ml-6 h-px flex-1 bg-[var(--rule)] ${index === 0 ? 'invisible' : ''}`}
+										className={`-ml-6 hidden h-px flex-1 bg-[var(--rule)] xl:block ${index === 0 ? 'xl:invisible' : ''}`}
 									/>
 									<span className='num inline-flex size-8 shrink-0 items-center justify-center rounded-full border border-[var(--rule)] bg-[var(--paper)] text-[11px] font-bold text-[var(--ink-3)]'>
 										{String(index + 1).padStart(2, '0')}
 									</span>
 									<span
 										aria-hidden='true'
-										className={`-mr-6 h-px flex-1 bg-[var(--rule)] ${index === steps.length - 1 ? 'invisible' : ''}`}
+										className={`-mr-6 hidden h-px flex-1 bg-[var(--rule)] xl:block ${index === steps.length - 1 ? 'xl:invisible' : ''}`}
 									/>
 								</div>
 
@@ -298,7 +303,10 @@ export default function AboutPage() {
 										>
 											{category.officialLabel}
 										</Link>
-										<p className='mt-2 text-[13px] text-[var(--ink-3)]'>
+										{/* A coverage range is a figure, not a sentence — "BAA 1–94
+										    (2019–2026), complete" — so it takes the interface face
+										    rather than the reading one. */}
+										<p className='font-title mt-2 text-[13px] text-[var(--ink-3)]'>
 											{dataset.metadata.coverage}
 										</p>
 									</div>

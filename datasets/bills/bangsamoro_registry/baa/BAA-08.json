@@ -1,171 +1,257 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 8,
-    "short_title": "Creates the Bangsamoro Women Commission of the BARMM",
-    "official_title": "AN ACT CREATING THE BANGSAMORO WOMEN COMMISSION OF THE BARMM",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2020-01-31",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Creates the Bangsamoro Women Commission of the BARMM.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Creates the Bangsamoro Women Commission of the BARMM.",
-    "who_will_be_affected": [
-      "Target sector of the body",
-      "Job seekers",
-      "CSOs"
-    ],
-    "when_will_it_take_effect": "Ratified 2020-01-31; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Creates or strengthens a public institution. New offices sound bureaucratic, but each one is a service window: a place to bring complaints, apply for programs, or get support that previously had no dedicated home in the region.",
-      "in_practice": [
-        "Once organized (leadership appointed, budget released), it opens programs and services",
-        "Look for its office, hotline, or Facebook page under the Bangsamoro Government",
-        "Its mandate defines what you can demand from it"
-      ],
-      "for_specific_groups": {
-        "Target sector of the body": "You gain a dedicated advocate inside government",
-        "Job seekers": "New institutions hire staff",
-        "CSOs": "A formal counterpart for partnership and accountability"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Rights and protection for the covered group.",
-        "direct_benefits": [
-          {
-            "benefit": "A legal entitlement you can invoke at offices, workplaces, or in seeking assistance",
-            "who_gets_it": "The group named in the law",
-            "how_to_access": "Through the mandated ministry; bring proof of status"
-          }
-        ],
-        "indirect_benefits": [
-          "Being named in law shifts you from aid recipient to rights-holder"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service."
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 8,
+  "short_title": "Bangsamoro Women Commission Act of 2020",
+  "official_title": "AN ACT CREATING THE BANGSAMORO WOMEN COMMISSION OF THE BARMM, PROVIDING FOR ITS POWERS, FUNCTIONS AND COMPOSITION AND APPROPRIATING FUNDS THEREFOR",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2020-01-31",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "First Regular Session (begun 29 March 2019)",
+  "date_passed": "2020-01-31",
+  "date_approved_by_chief_minister": "2020-02-13",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Children",
-      "Vulnerable groups",
-      "Women"
-    ],
-    "impact_tags": [
-      "institution_commission",
-      "labor_social",
-      "women_children_social_welfare"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2020-01-31"
-    }
+  "effectivity": "15 days after publication in a newspaper of local circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates the Bangsamoro Women Commission — the region's watchdog and policy body for women's rights, attached to the Office of the Chief Minister, with commissioners seated province by province.",
+  "why_was_it_proposed": "The Organic Law (RA 11054) requires the Bangsamoro Government to ensure women's representation and participation in governance. The act builds the machinery for that, and anchors itself on CEDAW and on UN Security Council Resolution 1325 on women in peacebuilding.",
+  "what_will_change": "There is now a standing body that can require every Bangsamoro ministry and office to submit its gender and development plan and budget, refer women needing help to the right agency, work with police and the Shari'ah and regular courts on gender-based violence, and accredit women's organisations.",
+  "who_will_be_affected": [
+   "Women across the BARMM — the Commission is the region's primary policy-making, coordinating and monitoring body on women, gender and development",
+   "Every Bangsamoro ministry, agency and office, which can be required to submit GAD plans, budgets and implementation reports",
+   "Local government units in the region, whose gender development plans follow the Commission's guidelines",
+   "Non-Moro Indigenous Peoples and settler communities, represented by two ex-officio Commissioners who hold the right to vote",
+   "Women's and people's organisations, which the Commission may accredit"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "MOLE / MSSD",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2020-01-31 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "MOLE / MSSD (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 8",
-    "line2": "Creates the Bangsamoro Women Commission of the BARMM",
-    "badges": [
-      "ENACTED",
-      "Institution Commission",
-      "Labor Social",
-      "2020"
+  "when_will_it_take_effect": "In force since 2020 — 15 days after publication in a newspaper of local circulation in the BARMM.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. If you are a woman in the BARMM, there is a Commission whose job is your rights — with a commissioner seated in your province, power to make ministries account for their gender plans, and a duty to refer your case to the agency that can act on it.",
+   "in_practice": [
+    "A Commissioner with an office in each of Basilan, Sulu, Tawi-Tawi, Lanao del Sur, and Maguindanao",
+    "The Commission can require any ministry or office to submit its gender and development plan, budget and progress reports",
+    "It refers specific cases of women needing assistance to the agency that can help",
+    "It works with law enforcement and with the Shari'ah and regular courts on gender-based violence",
+    "It accredits women's and people's organisations working on women's rights",
+    "It convenes an advisory council that seats one woman each from youth, civil society, traditional leaders, Bangsamoro communities outside BARMM, and religious leaders"
+   ],
+   "for_specific_groups": {
+    "Women in the provinces": "Section 13 requires each Commissioner to keep an office in the province she represents — the body is not only in Cotabato City.",
+    "Survivors of gender-based violence": "The Commission is mandated to work with law enforcement and with both the Shari'ah and the regular courts, and to refer cases on.",
+    "Non-Moro Indigenous and settler women": "Two ex-officio seats represent these communities, held by the heads of the Ministry of Indigenous Peoples' Affairs and the office for settler communities — and those seats vote.",
+    "Women's organisations": "You can seek accreditation, and a seat on the advisory council through the civil society slot.",
+    "Women seeking appointment": "Qualifications: Filipino citizen, at least 25, 5 years' residence in the BARMM, a registered voter there, a record of leadership in government or women's organisations, and no conviction for a crime of moral turpitude."
+   },
+   "where_this_applies": "The whole BARMM, including Cotabato City and the 63 barangays of North Cotabato.",
+   "when_you_will_feel_it": "In force since 2020.",
+   "what_you_can_do": [
+    "Approach the Commissioner for your province — each has an office there",
+    "Ask your LGU or a ministry for its gender and development plan; the Commission can require them to produce one",
+    "Bring a case needing assistance to the Commission for referral",
+    "Seek accreditation if you run a women's or people's organisation"
+   ],
+   "watch_out_for": [
+    "The Commission is a policy, monitoring and referral body — it does not itself prosecute, adjudicate or pay benefits.",
+    "It is attached to the Office of the Chief Minister, which supervises it, and the Chief Minister appoints all five voting commissioners.",
+    "Its initial appropriation was ₱30 million in total, which is small for a region-wide mandate.",
+    "A live bill, Parliament Bill 474, would convert the two ex-officio seats into regular Commissioner positions — see it for the current argument about this Commission's composition."
+   ],
+   "key_terms_explained": {
+    "GAD plan": "Gender and Development plan — the plan and budget each government office must produce for how its work serves women.",
+    "CEDAW": "The UN Convention on the Elimination of All Forms of Discrimination Against Women.",
+    "UNSCR 1325": "The UN Security Council resolution on women, peace and security.",
+    "Ex-officio": "Holding a seat by virtue of another office, rather than by separate appointment.",
+    "En banc": "The whole Commission sitting together — its orders need the concurrence and signature of a majority of members."
+   },
+   "benefits": {
+    "headline": "A standing body for women's rights, seated in every province, that can hold ministries to account.",
+    "direct_benefits": [
+     {
+      "benefit": "A Commissioner with an office in your province",
+      "who_gets_it": "Women in Basilan, Sulu, Tawi-Tawi, Lanao del Sur and Maguindanao",
+      "how_to_access": "The provincial office (Section 13)"
+     },
+     {
+      "benefit": "Referral of a case needing assistance to the agency that can act",
+      "who_gets_it": "Women needing help",
+      "how_to_access": "Through the Commission"
+     },
+     {
+      "benefit": "Accreditation for women's and people's organisations",
+      "who_gets_it": "Organisations working on women's rights in the Bangsamoro",
+      "how_to_access": "Apply to the Commission"
+     },
+     {
+      "benefit": "A seat on the advisory council",
+      "who_gets_it": "One woman each from youth, CSOs, traditional leaders, Bangsamoro communities outside BARMM, and religious leaders",
+      "how_to_access": "Under guidelines the Commission issues"
+     }
     ],
-    "what_this_does": "Creates the Bangsamoro Women Commission of the BARMM.",
-    "who_it_affects": "Children · Vulnerable groups · Women",
-    "effective": "2020-01-31"
-  },
-  "views": {
-    "simple": "Creates the Bangsamoro Women Commission of the BARMM.",
-    "official": "AN ACT CREATING THE BANGSAMORO WOMEN COMMISSION OF THE BARMM"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Sex-disaggregated data generated with the planning authority, which is what evidence-based policy for women needs",
+     "Ministries and LGUs held to published gender plans and budgets"
+    ],
+    "limitations": [
+     "No cash benefit or entitlement for individuals.",
+     "No power to prosecute or adjudicate — it refers, monitors and recommends.",
+     "₱30 million initial funding against a region-wide mandate."
+    ]
+   },
+   "status_note": "Passed 31 January 2020, approved by the Chief Minister on 13 February 2020.",
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty, fee or filing on the public."
+    ],
+    "for_government": [
+     "Ministries, agencies and offices may be required to submit GAD plans, budgets and implementation reports",
+     "LGUs follow the Commission's guidelines for their gender development plans"
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts for the public and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment.",
+    "for_officials": "The Commission may suspend, dismiss or discipline its own officials and employees below Salary Grade 25.",
+    "note": "The act provides no sanction against a ministry that fails to submit its GAD plan — compliance rests on monitoring and reporting, not penalty."
+   },
+   "where_to_complain": {
+    "first_stop": "The Bangsamoro Women Commission, or the Commissioner for your province",
+    "oversight": "Office of the Chief Minister, which supervises the Commission",
+    "note": "The act creates no formal complaints or appeals procedure of its own."
+   },
+   "everyday_scenarios": [
+    "Sittie in Tawi-Tawi wants to know what her provincial government is doing for women. Her province has a seated Commissioner with an office there, and the Commission can require the LGU's gender development plan.",
+    "A women's cooperative in Lanao del Sur wants recognition to work with government on women's rights. Section 8(f) lets the Commission accredit it.",
+    "A survivor of gender-based violence needs somewhere to start. The Commission's mandate is to work with law enforcement and with the Shari'ah and regular courts, and to refer her case to the agency that can act — though the Commission itself does not prosecute."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Bangsamoro Women Commission Act of 2020”.",
+  "Section 2 — Policy: reaffirms women's role under the Organic Law (RA 11054), their rights to representation, lawful employment and protection from exploitation, abuse and discrimination under CEDAW, and their place at the forefront of peacebuilding under UN Security Council Resolution 1325.",
+  "Section 3 — Creates the Bangsamoro Women Commission, supervised by the Chief Minister, with the status of a Bangsamoro Government agency attached to the Office of the Chief Minister. It exercises corporate powers, has a seal, and may sue and be sued.",
+  "Section 4 — Mandate: promote, protect and uphold women's rights as human rights; work for the elimination of all discrimination against women; and act as the region's primary policy-making, coordinating and monitoring body on women, gender and development.",
+  "Section 5 — Composition: a Chairperson and four regular Commissioners representing Basilan (with Lamitan City), Sulu, Tawi-Tawi, Lanao del Sur (with Marawi City), and Maguindanao (with Cotabato City and the 63 barangays of North Cotabato); plus two ex-officio Commissioners for non-Moro Indigenous Peoples and settler communities, being the heads of the Ministry of Indigenous Peoples' Affairs and the office for settler communities. The ex-officio Commissioners have the right to vote.",
+  "Section 6 — Qualifications: Filipino citizen, at least 25 years old, a resident of the BARMM for 5 years before appointment, a registered voter there, with a record of leadership in government or in women's organisations, and no conviction for a crime involving moral turpitude. A majority must hold a bachelor's degree or its equivalent.",
+  "Section 7 — The Chief Minister appoints the Chairperson and the 4 Commissioners. First terms are staggered — 5 years for the chairperson, four for 2 members, three for 2 members — then 3 years each. No member may serve more than two consecutive terms.",
+  "Section 8 — Powers: hire and promote personnel below Salary Grade 25; discipline staff below that grade; contract; acquire and dispose of property; solicit and accept grants, aid and donations from any legitimate entity, local or foreign; and accredit women's and people's organisations.",
+  "Section 9 — Functions: issue guidelines for the gender development plans of the Bangsamoro Government and LGUs; prepare the Bangsamoro Gender and Development plan; research; pilot programmes; recommend legislation to Parliament; require ministries to submit GAD plans, budgets and implementation reports; monitor compliance with CEDAW and UNSCR 1325 and take part in international reporting; generate sex-disaggregated data with the planning authority; refer women needing assistance to the right agency; work with law enforcement and the Shari'ah and regular courts on gender-based violence; and convene an advisory council seating one woman each from youth, civil society, traditional leaders, Bangsamoro communities outside the BARMM, and religious leaders.",
+  "Section 10 — A collegial body of seven. Orders and resolutions are rendered en banc and must bear the concurrence and signature of a majority of members; a majority is a quorum.",
+  "Section 11 — Structure: Offices of the Chairperson and Commissioners, an Executive Director heading the Secretariat, an Administrative and Finance Services Division, and a Technical Services Division of three units — Policy and Program Development, Monitoring and Evaluation, and Coordinating and Public Engagement.",
+  "Sections 12–14 — The Chairperson is paid at Salary Grade 28 and regular Commissioners at 27; each Commissioner keeps an office in the province she represents; and the Commission's budget is transferred directly to it.",
+  "Section 15 — Appropriations: ₱15,000,000 for Personal Services, ₱14,000,000 for Maintenance and Other Operating Expenses, and ₱1,000,000 for Capital Outlay, sourced from the Miscellaneous Personnel Benefits Fund and the Contingent Fund under Bangsamoro Act No. 3, with later requirements carried in the Bangsamoro Appropriations Act.",
+  "Section 18 — Takes effect 15 days after publication in a newspaper of local circulation in the BARMM."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Women across the BARMM",
+   "Non-Moro Indigenous and settler communities",
+   "Women's organisations"
+  ],
+  "impact_tags": [
+   "women_children_social_welfare",
+   "governance_civil_service",
+   "institution_commission"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱30,000,000 initial — ₱15M Personal Services, ₱14M MOOE, ₱1M Capital Outlay",
+  "figures_note": "Quoted from Section 15 of the enacted text."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2020-01-31"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2020/05/BAA-8.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 34",
+  "related_note": "Parliament Bill 474 (at First Reading) proposes converting this Commission's two ex-officio seats — the Ministry of Indigenous Peoples' Affairs and the Office for Settler Communities — into regular Commissioner positions, by amending the Bangsamoro Administrative Code."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "legal_challenge_note": null,
+  "irr_issued": "unknown - IRR registry pending capture",
+  "implementing_agency": {
+   "agency": "MOLE / MSSD",
+   "inferred": true
+  },
+  "budget_appropriated": "Not stated in title"
+ },
+ "citizen_questions": [
+  {
+   "q": "What does the Commission actually do for me?",
+   "a": "It sets the region's policy on women, requires ministries and LGUs to produce gender plans and budgets, refers women needing assistance to the agency that can act, works with police and the Shari'ah and regular courts on gender-based violence, and accredits women's organisations. It does not prosecute or pay benefits."
+  },
+  {
+   "q": "Is there someone from my province?",
+   "a": "Yes. Four regular Commissioners represent Basilan, Sulu, Tawi-Tawi, Lanao del Sur, and Maguindanao — and Section 13 requires each to keep an office in the province she represents."
+  },
+  {
+   "q": "Who represents non-Moro Indigenous Peoples and settlers?",
+   "a": "Two ex-officio Commissioners: the heads of the Ministry of Indigenous Peoples' Affairs and of the office for settler communities. They have the right to vote. A pending bill would turn these into regular Commissioner posts."
+  },
+  {
+   "q": "Can I be appointed?",
+   "a": "If you are a Filipino citizen, at least 25, have lived in the BARMM for 5 years, are a registered voter there, have held positions of responsibility and leadership in government or in women's or women-serving organisations, and have no conviction for a crime involving moral turpitude. The Chief Minister appoints."
+  },
+  {
+   "q": "How much does it cost, and who pays?",
+   "a": "₱30 million to start — ₱15M for salaries, ₱14M for operating expenses, ₱1M for capital outlay — drawn from the Miscellaneous Personnel Benefits Fund and the Contingent Fund, with later funding through the Bangsamoro Appropriations Act."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 8",
+  "line2": "Bangsamoro Women Commission Act of 2020",
+  "badges": [
+   "IN FORCE",
+   "Women, Children & Social Welfare",
+   "2020"
+  ],
+  "what_this_does": "Creates the region's policy and monitoring body for women's rights, with a commissioner seated in each province.",
+  "who_it_affects": "Women in the BARMM · ministries and LGUs · women's organisations"
+ },
+ "views": {
+  "simple": "Creates the Bangsamoro Women Commission — the region's policy, monitoring and referral body for women's rights, with a commissioner in each province.",
+  "official": "AN ACT CREATING THE BANGSAMORO WOMEN COMMISSION OF THE BARMM, PROVIDING FOR ITS POWERS, FUNCTIONS AND COMPOSITION AND APPROPRIATING FUNDS THEREFOR"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 8, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

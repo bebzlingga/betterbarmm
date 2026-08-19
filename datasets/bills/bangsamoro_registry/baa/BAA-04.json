@@ -1,178 +1,339 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 4,
-    "short_title": "Operationalizes the Establishment of the Bangsamoro Human Rights",
-    "official_title": "AN ACT OPERATIONALIZING THE ESTABLISHMENT OF THE BANGSAMORO HUMAN RIGHTS COMMISSION",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2019-12-20",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Operationalizes the Establishment of the Bangsamoro Human Rights Commission.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Operationalizes the Establishment of the Bangsamoro Human Rights Commission.",
-    "who_will_be_affected": [
-      "Target sector of the body",
-      "Job seekers",
-      "CSOs"
-    ],
-    "when_will_it_take_effect": "Ratified 2019-12-20; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Creates or strengthens a public institution. New offices sound bureaucratic, but each one is a service window: a place to bring complaints, apply for programs, or get support that previously had no dedicated home in the region.",
-      "in_practice": [
-        "Once organized (leadership appointed, budget released), it opens programs and services",
-        "Look for its office, hotline, or Facebook page under the Bangsamoro Government",
-        "Its mandate defines what you can demand from it"
-      ],
-      "for_specific_groups": {
-        "Target sector of the body": "You gain a dedicated advocate inside government",
-        "Job seekers": "New institutions hire staff",
-        "CSOs": "A formal counterpart for partnership and accountability"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "A dedicated office now exists to serve and advocate for its sector.",
-        "direct_benefits": [
-          {
-            "benefit": "A service window: programs, assistance, and complaints handling for the covered sector",
-            "who_gets_it": "The sector named in the law",
-            "how_to_access": "The body's office/hotline once organized"
-          },
-          {
-            "benefit": "Representation inside government when policies are made",
-            "who_gets_it": "Sector members",
-            "how_to_access": "Through the body's consultations"
-          },
-          {
-            "benefit": "Employment in the new institution",
-            "who_gets_it": "Qualified applicants",
-            "how_to_access": "CSC-BARMM / agency postings"
-          }
-        ],
-        "indirect_benefits": [
-          "A formal partner for NGOs and donors working on the sector"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "An office's value depends on leadership and funding - track its accomplishment reports"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 4,
+  "short_title": "Bangsamoro Human Rights Act of 2019",
+  "official_title": "AN ACT OPERATIONALIZING THE ESTABLISHMENT OF THE BANGSAMORO HUMAN RIGHTS COMMISSION, PROVIDING FOR ITS MANDATE, POWERS, AND FUNCTIONS, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2019-12-20",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "First Regular Session, begun 29 March 2019",
+  "date_passed": "2019-12-20",
+  "date_approved_by_chief_minister": "2020-01-14",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "institution_commission",
-      "other"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2019-12-20"
-    }
+  "origin_bills": "Bill No. 35",
+  "effectivity": "15 days after publication in a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Builds the region's human rights commission — and gives it powers the national commission does not have: it can issue binding protection orders during an investigation, inspect any detention facility including those inside military camps, and block the promotion of any soldier, police officer or civil servant with a human rights case against them.",
+  "why_was_it_proposed": "Section 7, Article IX of the Organic Law creates the Commission. This act operationalises it, replacing the ARMM-era Regional Human Rights Commission and equipping the new body for a region where the primary duty bearer — as the act says outright — includes the military, the police, and jail wardens.",
+  "what_will_change": "A three-member commission with fiscal autonomy, subpoena and contempt powers, and the authority to issue six kinds of compulsory order mid-investigation. It investigates on its own initiative, accepts anonymous complaints, runs a 24-hour hotline and a witness protection programme, and monitors government offices, police and military camps and detention facilities without restriction. No promotion in the security sector or civil service may be considered without its clearance.",
+  "who_will_be_affected": [
+   "Anyone whose rights are violated by government or by anyone acting on its behalf",
+   "Members of the military, police, jail and correctional services — named as duty bearers, and subject to the clearance requirement for promotion",
+   "Detainees, who gain a right of access to counsel, a doctor and a religious adviser through a Mandatory Access Order",
+   "Human rights defenders, with a dedicated protection article",
+   "Women and children, through the Commission's roles as Gender and Development Ombud and Children Ombud",
+   "Every government office in the region, whose facilities may be monitored without restriction"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "The created body itself",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2019-12-20 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "The created body itself (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 4",
-    "line2": "Operationalizes the Establishment of the Bangsamoro Human Rights",
-    "badges": [
-      "ENACTED",
-      "Institution Commission",
-      "2019"
+  "when_will_it_take_effect": "In force since 2020 — approved by the Chief Minister on 14 January 2020, effective 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. If a soldier, police officer, jail warden or government employee violates your rights, this is the body to go to. It can order them to stop while it investigates, get you or a relative access to a detainee, protect you as a witness, pay for your lawyer — and it can stand between the officer responsible and their next promotion.",
+   "in_practice": [
+    "You can complain, or someone with personal knowledge can complain for you — and anonymous complaints are allowed",
+    "There is a 24-hour hotline, e-filing, and staff available on holidays and non-working days",
+    "No statute of limitations applies to the investigation of human rights violations",
+    "The Commission can investigate on its own initiative, and another tribunal's investigation is no bar",
+    "It can subpoena witnesses and documents, cite for contempt, and petition for writs of amparo, habeas data, habeas corpus and mandamus",
+    "It can order a respondent to desist, to stay away from your home, to stop hiding or transferring a detainee, and to let you see someone in detention",
+    "It can inspect jails, prisons, police lock-ups, military camps and detention facilities inside them, without restriction",
+    "It runs a witness protection programme with security, shelter, relocation and financial assistance",
+    "It can pay for a private lawyer for indigent and detained victims, whether the case is heard inside or outside the region",
+    "₱50,000,000 to start — ₱30M for personnel and ₱20M for initial operations"
+   ],
+   "for_specific_groups": {
+    "Victims of abuse by state forces": "The primary duty bearer is expressly defined to include military officials and personnel, police, jail and correctional wardens, other law enforcers and all civil servants.",
+    "Detainees and their families": "A Mandatory Access Order can direct the government to let counsel, a physician, a psychologist, an imam, priest, pastor, rabbi or other spiritual adviser, and relatives reach a person deprived of liberty. A Mandatory Transfer Order can move someone in danger of reprisal.",
+    "Witnesses": "A witness protection programme provides security, shelter, relocation and financial assistance to you and your family.",
+    "Human rights defenders": "Article VIII is written for you — free legal assistance, protective orders, petitions for writs, and monitoring of law enforcers and military forces in how they treat you.",
+    "Women and children": "The Commission acts as the Gender and Development Ombud and the Children Ombud, investigating violations, assisting in filing cases, and recommending administrative action for failures to implement the Magna Carta of Women or the Juvenile Justice and Welfare Act.",
+    "Officers seeking promotion": "No appointing authority may consider your promotion without a certification from the Commission that you have no pending human rights cases and have not been found guilty by final judgment.",
+    "Civil society organisations": "The Commission must meet with you quarterly."
+   },
+   "where_this_applies": "The BARMM, with provincial director offices. The Commission and the national commission may investigate jointly outside the region where the subject involves the Bangsamoro, or inside it where the subject is of national complexion.",
+   "when_you_will_feel_it": "In force since 2020. Note that the Commission's transitional justice role under Section 51 has since passed to the separate commission created by BAA 89 in 2026.",
+   "what_you_can_do": [
+    "Call the 24-hour hotline or file electronically — you do not need a lawyer, and you may file anonymously",
+    "Ask for a preventive order if the person you are complaining about can still reach you",
+    "If a relative is detained and you are being refused access, ask for a Mandatory Access Order",
+    "If you are indigent and detained, ask the Commission to engage a private lawyer for you",
+    "If an officer with a case against them is up for promotion, the clearance requirement in Section 55 applies",
+    "Read the Annual Report — it goes to the President, the Chief Minister and Parliament"
+   ],
+   "watch_out_for": [
+    "The act creates no offence and fixes no penalty. Its instruments are contempt, its protective orders, the promotion clearance, and going to court.",
+    "The President appoints the Chairperson and Commissioners — from three names per position submitted by the Chief Minister. A body whose named duty bearers include the military is staffed by the national Commander-in-Chief's choice from a regional shortlist.",
+    "Commissioners hold policy-making powers only; executive authority sits with the Chairperson unless a Commissioner is designated officer-in-charge.",
+    "₱50 million initial funding for a commission with provincial offices, a witness protection programme, a 24-hour hotline and legal assistance for indigent victims.",
+    "The obligation on government to respond to the Commission's advice is set at 'a reasonable time', with no consequence stated for ignoring it.",
+    "Section 51's transitional justice function has now moved to the commission created by BAA 89, which required this Commission to make a terminal report and hand over its records."
+   ],
+   "key_terms_explained": {
+    "Duty bearer": "The party legally obliged to respect and protect rights. Here it is the government — national, regional and local — including the security sector and anyone acting on government's behalf.",
+    "Motu proprio": "On its own initiative. The Commission does not need a complaint to start investigating.",
+    "Imprescriptibility": "No time limit. However long ago a violation occurred, it can still be investigated.",
+    "Writ of amparo": "A court remedy protecting the right to life, liberty and security, used especially in cases of extrajudicial killing and enforced disappearance.",
+    "Writ of habeas data": "A court remedy letting a person find out what information the government holds about them, and have it corrected or destroyed.",
+    "Writ of habeas corpus": "A court order requiring that a detained person be produced and the legality of their detention justified.",
+    "Human Rights Clearance": "A certification from the Commission that a person has no pending human rights case and no final conviction — required before any promotion or appointment in the military, police, other law enforcement, or the civil service can even be considered.",
+    "Ombud": "An official charged with investigating complaints and championing a group's rights. This Commission serves as the Bangsamoro's Gender and Development Ombud and Children Ombud.",
+    "RHRC": "The Regional Human Rights Commission of the ARMM, created under Muslim Mindanao Autonomy Act No. 288, whose assets, records and functions this Commission absorbed."
+   },
+   "status_note": "Passed 20 December 2019 and approved by the Chief Minister on 14 January 2020.",
+   "benefits": {
+    "headline": "A human rights commission that can order rather than only recommend — protective orders during investigation, unrestricted access to detention facilities, and a veto on promotions in the security sector.",
+    "direct_benefits": [
+     {
+      "benefit": "Six kinds of compulsory order issued during an investigation",
+      "who_gets_it": "Complainants, victims and detainees",
+      "how_to_access": "Section 38 — Preventive Protection, Transfer and Desistance Orders; Mandatory Protection, Access and Transfer Orders"
+     },
+     {
+      "benefit": "Access to a person in detention by counsel, a physician, a psychologist, a religious adviser and relatives",
+      "who_gets_it": "Persons deprived of liberty and their families",
+      "how_to_access": "Mandatory Access Order under Section 38(b)(2)"
+     },
+     {
+      "benefit": "Investigation with no time limit, on complaint or on the Commission's own initiative, even where another tribunal is already investigating",
+      "who_gets_it": "Anyone whose rights were violated, however long ago",
+      "how_to_access": "Sections 34 and 37"
+     },
+     {
+      "benefit": "Anonymous complaints, e-filing, a 24-hour hotline and staff on holidays",
+      "who_gets_it": "Anyone afraid to be identified or unable to reach an office in working hours",
+      "how_to_access": "Sections 35 and 39"
+     },
+     {
+      "benefit": "Financial and legal assistance, including a private lawyer for indigent and detained victims",
+      "who_gets_it": "Victims whose complaints are given due course",
+      "how_to_access": "Section 40 — available whether the case is heard inside or outside the region, and exempt from coordination requirements with Bangsamoro agencies"
+     },
+     {
+      "benefit": "Witness protection — security, shelter, relocation and financial assistance",
+      "who_gets_it": "Witnesses and their families",
+      "how_to_access": "Section 41"
+     },
+     {
+      "benefit": "Unrestricted monitoring of government offices, police and military stations, camps, bases, jails, prisons, lock-ups, youth homes and detention facilities inside military camps",
+      "who_gets_it": "Everyone held in or affected by those facilities",
+      "how_to_access": "Section 42(f)"
+     },
+     {
+      "benefit": "A promotion clearance requirement covering the military, police, other law enforcement and the civil service",
+      "who_gets_it": "The public, as a check on the security sector",
+      "how_to_access": "Section 55"
+     },
+     {
+      "benefit": "Petitions for writs of amparo, habeas data, habeas corpus and mandamus filed by the Commission",
+      "who_gets_it": "Victims and human rights defenders",
+      "how_to_access": "Sections 36(e) and 50(d)"
+     }
     ],
-    "what_this_does": "Operationalizes the Establishment of the Bangsamoro Human Rights Commission.",
-    "who_it_affects": "General public",
-    "effective": "2019-12-20"
-  },
-  "views": {
-    "simple": "Operationalizes the Establishment of the Bangsamoro Human Rights Commission.",
-    "official": "AN ACT OPERATIONALIZING THE ESTABLISHMENT OF THE BANGSAMORO HUMAN RIGHTS COMMISSION"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Fiscal autonomy with a floor barring any reduction below the previous year's appropriation",
+     "Investigative sessions open to the public unless confidentiality is necessary",
+     "Annual, public inquiry, financial and special reports published, and the Annual Report sent to the President, the Chief Minister and Parliament",
+     "Advice addressed to Parliament must be calendared for parliamentary debate",
+     "Quarterly meetings with civil society organisations",
+     "Engagement with the national commission for reporting to UN treaty bodies"
+    ],
+    "limitations": [
+     "No offence is created and no penalty fixed by this act.",
+     "The Commission cannot prosecute — it assists in filing and recommends.",
+     "₱50 million initial funding against a region-wide mandate with provincial offices.",
+     "The duty to respond to its advice carries no stated consequence."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes duties on government, not on the public.",
+     "If summoned by subpoena, appear and produce what is required — obstruction can be punished as contempt."
+    ],
+    "for_government": [
+     "Respond to the Commission's advice within a reasonable time; where it is addressed to Parliament, it is calendared for debate",
+     "Give the assistance and cooperation the Commission requires, and allow facility monitoring without restriction",
+     "Comply with preventive and mandatory orders issued during an investigation",
+     "Obtain a human rights clearance before considering any promotion or appointment in the military, police, other law enforcement, or the civil service"
+    ]
+   },
+   "what_is_prohibited": [
+    "Willfully obstructing the lawful exercise of the Commission's investigative powers or defying its lawful orders — punishable as direct or indirect contempt.",
+    "Hiding, transferring, torturing or abusing a victim of human rights violations, which a Preventive Transfer Order directs government personnel to desist from immediately.",
+    "Entering the vicinity of an affected area or a victim's residence, or searching the victim or their belongings, where a Preventive Desistance Order has issued.",
+    "Considering a promotion or appointment in the security sector or civil service without the Commission's clearance.",
+    "The act itself creates no criminal offence; violations of human rights are prosecuted under the Revised Penal Code, RA 9851 and other laws."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence.",
+    "contempt": "Direct or indirect contempt against those who willfully obstruct the Commission's investigative powers or violate its lawful orders.",
+    "career_consequence": "Section 55 — no promotion or appointment in the military, police, other law enforcement agencies, or among government officials and employees may be considered by any appointing authority without a certification from the Commission that the person has no pending case and has not been found guilty by final judgment of human rights violations or abuses.",
+    "administrative": "The Commission may recommend administrative action to the disciplining authority or the Civil Service Commission, including for failures to implement the Magna Carta of Women or the Juvenile Justice and Welfare Act."
+   },
+   "where_to_complain": {
+    "first_stop": "Bangsamoro Human Rights Commission — 24-hour hotline, e-filing, or a provincial director office",
+    "who_can_file": "The victim, or any individual, group or people with personal knowledge of the facts; anonymous complaints are permitted",
+    "oversight": "The Commission's Annual Report goes to the Office of the President, the Office of the Chief Minister and Parliament",
+    "note": "Investigation by another tribunal is not a bar, and no statute of limitation applies."
+   },
+   "everyday_scenarios": [
+    "A family is refused any word of a relative held at a military detachment. A Mandatory Access Order can direct the government to let counsel, a physician, an imam and relatives reach them.",
+    "A complainant fears the officer they reported will come back to the house. A Preventive Desistance Order can bar that officer and personnel under their supervision from entering the vicinity.",
+    "A witness is afraid to testify. The Commission's witness protection programme provides security, shelter, relocation and financial assistance to the witness and their family.",
+    "A violation happened decades ago and everyone assumes it is too late. Section 37 says no statute of limitation applies to its investigation.",
+    "An officer with a pending human rights case is up for promotion. Under Section 55 no appointing authority may even consider it without the Commission's certification."
+   ]
   }
+ },
+ "key_provisions": [
+  "Sections 1–8 — Short title: the “Bangsamoro Human Rights Act of 2019”. Human rights are declared universal, inalienable, interdependent, indivisible and interrelated, drawn from the Universal Declaration of Human Rights, international instruments the Philippines has acceded to including their optional protocols, customary laws, international norms, generally accepted principles of international law, the Constitution, statutes, the Organic Law and acts of Parliament. The primary duty bearer is the government — national, Bangsamoro and local — including the security sector, government-owned corporations and financial institutions, “and any person acting on behalf of the government, such as military officials and personnel, members of the police, jail and correctional wardens, other law enforcers, and all officials and employees of the civil service”. The act is to be liberally construed in favour of the enjoyment and exercise of human rights.",
+  "Sections 9–12 — The Bangsamoro Human Rights Commission, created under Section 7, Article IX of RA 11054, is the human rights institution of the Bangsamoro, mandated to promote and protect human rights and, during armed conflict, uphold international humanitarian law. Its independence is guaranteed and it shall not be subject to interference, directly or indirectly, from any government or private entity. It has fiscal autonomy: funding regularly and automatically released, an annual appropriation that shall not be reduced from the preceding fiscal year, and compensation and benefits that shall not be decreased.",
+  "Sections 13–19 — A Chairperson and 2 Commissioners, of proven integrity and independence, resident in the region for at least 2 years, natural-born citizens, at least 30 years old, with at least 5 years' experience in human rights work; the Chairperson a member of the Philippine Bar in practice for 5 years, the Commissioners degree holders and preferably lawyers. Disqualified: those found culpable of human rights violations or abuse, convicted of moral turpitude, removed or suspended for at least a year, dual citizens, fugitives, and those who have acquired the privilege to reside abroad. The President appoints the Chairperson and Commissioners from a list of three recommendees for each position submitted by the Chief Minister, for seven-year terms — the first appointees staggered at seven, five and 3 years — with no reappointment and no temporary or acting designation. The Chairperson receives Salary Grade 28 and Commissioners Salary Grade 27. The structure includes a Commission Proper, the Office of the Chairperson, a Secretariat and Provincial Director Offices.",
+  "Sections 20–26 — The Commission Proper is the highest decision-making body, meeting without prior call every first and third Monday. All investigative sessions are open to the public except where confidentiality is necessary; administrative and internal matters are heard in executive session. The Chairperson is chief executive; the Commissioners' powers are limited to policy-making and they exercise no executive functions unless designated officer-in-charge.",
+  "Sections 27–30 — Powers: promote human rights through education, training, public awareness and publications; protect them and uphold international humanitarian law through investigations, monitoring, fact-finding missions and public inquiries, reporting the results and proceeding with prosecution when warranted; advise the government; protect human rights defenders; and act as the transitional justice mechanism. The Commission serves as the Bangsamoro's Gender and Development Ombud under the Magna Carta of Women and Children Ombud under the Juvenile Justice and Welfare Act — monitoring compliance, investigating violations involving women and children, facilitating their access to legal remedies, assisting in filing cases, and recommending administrative action to the disciplining authority or the Civil Service Commission.",
+  "Sections 34–37 — The Commission investigates alleged human rights violations and abuses within the region on complaint or motu proprio, and an investigation by any other tribunal is no bar. It likewise investigates violations of international humanitarian law under RA 9851 on genocide and other crimes against humanity. It may agree with the national commission on joint investigations — outside the region where the subject involves the Bangsamoro, and within it where the subject is of national complexion. Its Rules of Procedure must permit the victim or any person with personal knowledge to complain, permit anonymous complaints, protect the identity of victims, witnesses and their families where there is danger of harassment or reprisal, provide for citing obstruction as contempt, and require a Journal and Records. No statute of limitation applies to the investigation of human rights violations and abuses.",
+  "Section 36 — Ancillary powers: administer oaths; issue compulsory subpoena to secure the attendance of witnesses and the production of documentary or object evidence; require the assistance and cooperation of government or private entities; cite for direct or indirect contempt; petition for the issuance of Writs of Amparo, Habeas Data, Habeas Corpus or Mandamus; issue preventive and mandatory measures; and deputise lawyers, legal aid groups and medical organisations.",
+  "Section 38 — Compulsory measures incident to investigation. Preventive: a Preventive Protection Order requiring the respondent to refrain from acts that would cause irreparable harm or render the investigation moot; a Preventive Transfer Order directing any member of the government or person acting on its behalf “to immediately desist from hiding, transferring, torturing or abusing victims of human rights violations or abuses”; and a Preventive Desistance Order prohibiting the respondent and personnel under their supervision from entering the vicinity of the affected area or a victim's residence, and from searching the victim or their belongings. Mandatory: a Mandatory Protection Order directing the government to protect victims and witnesses; a Mandatory Access Order directing the government controlling any place of detention to allow access to persons deprived of liberty by counsel, physician, psychologist, priest, pastor, rabbi, imam or any spiritual adviser and their relatives; and a Mandatory Transfer Order directing the transfer of a detained person in danger of reprisal or retaliation for having filed a complaint.",
+  "Sections 39–41 — Redress must be accessible: e-filing, a hotline open 24 hours, and personnel available on holidays and non-working days with additional compensation. The Commission extends financial and legal assistance to victims whose complaints are given due course, working with the Public Attorney's Office, human rights organisations, the Integrated Bar and school-based legal aid clinics, and may engage a private lawyer for indigent and detained victims “whether the cases are heard within or outside the Bangsamoro Autonomous Region”, exempt from coordination and notification requirements to any instrumentality of the Bangsamoro Government. It implements a witness protection programme providing security, shelter, relocation and financial assistance to witnesses and their families.",
+  "Sections 42–46 — Monitoring covers policy, thematic, sectoral, incident and progressive-realisation monitoring, and facility monitoring “without restriction” of government offices; police and military stations, installations, camps and bases and their training schools; and jails, prisons, detention facilities including those inside military camps, police lock-up cells, youth homes and other confinement facilities. The Commission may mount fact-finding missions on its own initiative and hold public inquiries on systemic violations. It publishes Annual Reports carrying complaint statistics, findings, an analysis of the factors contributing to violations, an assessment of government's legal mechanisms and recommendations for reform, together with public inquiry, financial and special reports, and engages the national commission for reporting to international human rights mechanisms.",
+  "Sections 47–49 — The Commission advises the government by findings, reports and recommendations; may summon the government to explain the measures its agencies have taken; recommends treaties for signature or ratification; and submits its Annual Report to the Office of the President, the Office of the Chief Minister and the Parliament. The government has a duty to respond within a reasonable time, and advice addressed to Parliament “shall be calendared for parliamentary debate”.",
+  "Section 50 — Protection of human rights defenders: monitoring and investigating the government and other duty bearers including law enforcers and military forces; free legal assistance and help filing cases against duty bearers; preventive and mandatory measures; petitions for habeas corpus, amparo and habeas data; recommendation of administrative action for failures to protect defenders; and assessment of the government's protection mechanisms.",
+  "Sections 51–54 — Until a law establishing the transitional justice mechanism is enacted, the Commission performs the human rights component of that mechanism under Section 1, Article IX of RA 11054 — documenting and investigating past violations, collecting testimonial, object and documentary evidence, and conducting public inquiries at its discretion — and on the mechanism's establishment must render a terminal report and transfer its transitional justice documents and data. It may enter a memorandum of agreement with the national commission on joint investigation, mutual assistance in gathering evidence, sharing of records on clearances issued to the military and law enforcers, referral of cases including where there is forum-shopping, and capacity-building; pending that agreement, the ARMM-era memorandum under MMA Act No. 288 governs. It cooperates with the Human Rights Council, the Office of the High Commissioner, treaty bodies and the ICRC, and meets with civil society organisations quarterly.",
+  "Section 55 — Human Rights Clearance: in addition to the usual requirements for the promotion or appointment of members of the military, police, other law enforcement agencies, or government officials or employees, “no promotion shall be considered by any appointing authority without a certification from the Commission that they have no pending cases therein or they have not been found guilty, by final judgment, of human rights violations or abuses.”",
+  "Sections 56–63 — Transitory: the assets, capital, records, accounts, contracts, funds, receivables, equipment and facilities of the ARMM Regional Human Rights Commission transfer to the Commission, with no liabilities absorbed; its appointive officers hold over pending the approved phase-out, and its Chairperson may issue no new appointments; separation follows Section 10, Article XVI of RA 11054, and its Chairperson and Commissioners whose terms are prematurely ended receive retirement benefits no lower than those of the National Labor Relations Commission's counterparts. Appropriations: ₱30,000,000 for Personnel Services and ₱20,000,000 for initial operation, from the Miscellaneous Personnel Benefits Fund and the Contingent Fund respectively, with subsequent requirements in the Bangsamoro Appropriations Act. Effective 15 days after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Victims of abuse by state forces and government personnel",
+   "Detainees and their families",
+   "Witnesses and human rights defenders",
+   "Women and children, through the Ombud functions",
+   "Communities near military camps and detention facilities"
+  ],
+  "impact_tags": [
+   "peace_security_justice",
+   "institution_commission",
+   "governance_civil_service",
+   "women_children_social_welfare"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱50,000,000 initial — ₱30,000,000 Personnel Services from the Miscellaneous Personnel Benefits Fund and ₱20,000,000 for initial operation from the Contingent Fund",
+  "figures_note": "Quoted from Section 60."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2019-12-20"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2020/02/BAA-4.pdf",
+  "irr": "The act directs the Commission to promulgate its own Rules of Procedure under Section 35 rather than an IRR; not captured in this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": "All inconsistent regional acts, decrees, instructions, rules and regulations; supersedes the ARMM Regional Human Rights Commission created under Muslim Mindanao Autonomy Act No. 288",
+  "origin_bill": "Bill No. 35",
+  "related_note": "Operationalises Section 7, Article IX of RA 11054. Section 51 gave the Commission the human rights component of transitional justice until a dedicated law was passed; BAA 89, the Bangsamoro Transitional Justice and Reconciliation Act, created that mechanism in 2026 and required this Commission to turn over all records and outputs from Section 51. BAA 62, the Internally Displaced Persons Act, assigns the Commission to investigate violations against displaced people, coordinate with prosecutors and provide financial and legal assistance. BAA 64, the Indigenous Peoples' Act, engages it on housing, land and property violations in ancestral domains. Its Ombud roles run through RA 9710 and RA 9344, and its international humanitarian law jurisdiction through RA 9851."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "₱50,000,000 initial",
+  "irr_status": "Section 35 requires the Commission to promulgate Rules of Procedure governing its investigations, consistent with international human rights standards.",
+  "implementing_agency": {
+   "agency": "Bangsamoro Human Rights Commission",
+   "inferred": false
+  },
+  "note": "Read from the enacted text as signed, all 15 pages. The transitional justice function under Section 51 has since passed to the commission created by BAA 89 in 2026, which required a terminal report and transfer of records."
+ },
+ "citizen_questions": [
+  {
+   "q": "Who can I complain about to this Commission?",
+   "a": "Government and anyone acting on its behalf. Section 7 names military officials and personnel, members of the police, jail and correctional wardens, other law enforcers, and all officials and employees of the civil service, along with national, regional and local government, government corporations and financial institutions."
+  },
+  {
+   "q": "Can I complain without giving my name?",
+   "a": "Yes. Section 35 requires the Commission's Rules of Procedure to permit anonymous complaints, and to protect the identity of victims, witnesses and their families where there is danger of harassment or reprisal."
+  },
+  {
+   "q": "It happened a long time ago. Is it too late?",
+   "a": "No. Section 37 provides that no statute of limitation applies to the investigation of human rights violations and abuses."
+  },
+  {
+   "q": "My relative is detained and we are being refused access. What can be done?",
+   "a": "The Commission can issue a Mandatory Access Order directing the government in control of the place of detention to allow access by counsel, a physician, a psychologist, a priest, pastor, rabbi, imam or other spiritual adviser, and relatives."
+  },
+  {
+   "q": "Can it actually make anyone do anything, or only recommend?",
+   "a": "It can order. Section 38 gives it six compulsory measures — three preventive and three mandatory — issued incident to its investigation, and Section 36 lets it subpoena, cite for contempt and petition for writs of amparo, habeas corpus, habeas data and mandamus. What it cannot do is prosecute or convict."
+  },
+  {
+   "q": "Can it inspect a military camp?",
+   "a": "Yes. Section 42(f) provides for facility monitoring without restriction of police and military stations, installations, camps and bases and their training schools, and of jails, prisons and detention facilities including those inside military camps."
+  },
+  {
+   "q": "Does a human rights case affect an officer's career?",
+   "a": "Yes. Under Section 55 no appointing authority may consider any promotion or appointment in the military, police, other law enforcement agencies, or among government officials and employees without a certification from the Commission that the person has no pending case and has not been found guilty by final judgment."
+  },
+  {
+   "q": "Who appoints the commissioners?",
+   "a": "The President of the Philippines, from a list of three recommendees for each position submitted by the Chief Minister. Terms are 7 years, with the first set staggered at seven, five and three, and no reappointment."
+  },
+  {
+   "q": "Can it help me pay for a lawyer?",
+   "a": "Yes. Section 40 allows the Commission to extend financial and legal assistance to victims whose complaints are given due course, and to engage a private lawyer for indigent and detained victims whether the case is heard inside or outside the region."
+  },
+  {
+   "q": "Does it still handle transitional justice?",
+   "a": "No longer. Section 51 gave it the human rights component of transitional justice only until a dedicated law was enacted. BAA 89 created that mechanism in 2026 and required this Commission to render a terminal report and transfer its transitional justice records."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 4",
+  "line2": "Bangsamoro Human Rights Act of 2019",
+  "badges": [
+   "IN FORCE",
+   "Human Rights",
+   "2019"
+  ],
+  "what_this_does": "Builds a human rights commission that can issue binding protection orders, inspect any detention facility, and block promotions in the security sector.",
+  "who_it_affects": "Victims of state abuse · detainees · witnesses · human rights defenders · the security sector",
+  "effective": "2020-01-14"
+ },
+ "views": {
+  "simple": "Operationalises the Bangsamoro Human Rights Commission — 3 members with fiscal autonomy, subpoena and contempt powers, six kinds of binding protective order, unrestricted access to jails and military camps, a witness protection programme, a 24-hour hotline that accepts anonymous complaints, no statute of limitations on investigations, and a clearance requirement without which no soldier, police officer or civil servant's promotion may be considered.",
+  "official": "AN ACT OPERATIONALIZING THE ESTABLISHMENT OF THE BANGSAMORO HUMAN RIGHTS COMMISSION, PROVIDING FOR ITS MANDATE, POWERS, AND FUNCTIONS, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 4, enacted text as signed (Parliament's acts index), all 15 pages.",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

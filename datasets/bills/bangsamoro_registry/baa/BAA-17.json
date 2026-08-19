@@ -1,178 +1,360 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 17,
-    "short_title": "Bangsamoro Civil Service Code",
-    "official_title": "AN ACT PROVIDING FOR THE BANGSAMORO CIVIL SERVICE CODE",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2021-02-24",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Provides for the Bangsamoro Civil Service Code.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Provides for the Bangsamoro Civil Service Code.",
-    "who_will_be_affected": [
-      "Job applicants",
-      "Government employees",
-      "Whistleblowers"
-    ],
-    "when_will_it_take_effect": "Ratified 2021-02-24; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "The Civil Service Code governs government jobs in BARMM: hiring, qualifications, promotions, discipline, and employee rights. If you work for - or want to work for - the Bangsamoro Government, this law sets the rules of the game.",
-      "in_practice": [
-        "Merit-based hiring rules and eligibility requirements for regional positions",
-        "Protection from arbitrary dismissal; disciplinary due process",
-        "Defines contractual vs. plantilla status and benefits"
-      ],
-      "for_specific_groups": {
-        "Job applicants": "Know the required eligibilities and contest irregular appointments",
-        "Government employees": "Your security of tenure, leave, and grievance rights live here",
-        "Whistleblowers": "Disciplinary machinery for erring officials starts from this Code"
-      },
-      "where_this_applies": "All of BARMM unless the title names a specific place",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Fair access to government jobs - and protection once you're in.",
-        "direct_benefits": [
-          {
-            "benefit": "Merit-based hiring: vacancies must be published and qualifications applied equally",
-            "who_gets_it": "Job applicants",
-            "how_to_access": "Watch CSC-BARMM postings; protest irregular appointments"
-          },
-          {
-            "benefit": "Security of tenure and due process before discipline or dismissal",
-            "who_gets_it": "Bangsamoro Government employees",
-            "how_to_access": "Invoke the Code in grievance/administrative proceedings"
-          },
-          {
-            "benefit": "Defined leave, benefits, and employee welfare standards",
-            "who_gets_it": "Government workers",
-            "how_to_access": "Through agency HR, citing the Code"
-          }
-        ],
-        "indirect_benefits": [
-          "Less patronage pressure in the bureaucracy over time"
-        ],
-        "limitations": [
-          "Applies to regional government employment, not private jobs"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 17,
+  "short_title": "Bangsamoro Civil Service Code of 2021",
+  "official_title": "AN ACT PROVIDING FOR THE BANGSAMORO CIVIL SERVICE CODE",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2021-02-24",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Second Regular Session, begun 29 March 2019",
+  "date_passed": "2021-02-24",
+  "date_approved_by_chief_minister": "2021-02-24",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Government employees",
-      "Public-service users"
-    ],
-    "impact_tags": [
-      "governance_civil_service",
-      "priority_code"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2021-02-24"
-    }
+  "origin_bills": "Bill No. 59",
+  "effectivity": "15 days after complete publication in at least 1 newspaper of general or regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "The rulebook for working in the Bangsamoro Government — hiring, promotion, conduct, discipline and separation. Its most consequential provision reserves up to 30% of entry-level posts for former MILF and MNLF combatants.",
+  "why_was_it_proposed": "A new regional government needed its own civil service rules, replacing the ARMM-era ones. It also needed a lawful route into government employment for the combatants the peace process was decommissioning — which is what Article 305 provides.",
+  "what_will_change": "Recruitment and discipline follow a regional code administered by the Civil Service Commission for BARMM. Friday and Ramadan working hours are written into law. Shari'ah Bar passers gain civil service eligibility. Special examinations open for indigenous peoples. And Mujahideen and Mujahidat certified by the MILF and MNLF Central Committees may be hired into first-level posts without civil service eligibility.",
+  "who_will_be_affected": [
+   "Everyone employed by the Bangsamoro Government, its LGUs, state universities and chartered corporations",
+   "Former MILF and MNLF combatants seeking government employment",
+   "Muslim employees, whose Friday and Ramadan hours are set by the Code",
+   "Shari'ah Bar passers and madrasah teachers, with recognised eligibility routes",
+   "Indigenous peoples, through special civil service examinations",
+   "Job applicants generally, since bona fide residents are preferred"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Multiple ministries (code-dependent)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2021-02-24 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Multiple ministries (code-dependent) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 17",
-    "line2": "Bangsamoro Civil Service Code",
-    "badges": [
-      "ENACTED",
-      "Priority Code",
-      "2021"
+  "when_will_it_take_effect": "In force since 2021 — passed and approved by the Chief Minister on the same day, 24 February 2021, effective 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. If you want a government job in the region, this sets the rules. Residents of the locality get preference. Former combatants get a reserved share of entry-level posts. Friday hours are adjusted for Muslim employees, and Ramadan hours are shortened without it counting as undertime.",
+   "in_practice": [
+    "Preference in hiring goes to bona fide residents — of the locality for local posts, of the region for regional posts",
+    "Working hours are 8 hours a day, 5 days a week, 40 hours total",
+    "On Fridays, office hours for Muslim employees may run 7:00 a.m. to 10:00 a.m. and 2:00 p.m. to 6:00 p.m.",
+    "During Ramadan, employees may report 7:30 a.m. to 3:30 p.m. with no noon break, and the 2-hour difference is not counted as undertime",
+    "Employees may opt to work Sundays and take Friday as a compensatory day off",
+    "Passing the Shari'ah Bar counts as eligibility for first and second level positions if you held a college degree at the time",
+    "Special civil service examinations are held for indigenous peoples in the region",
+    "Certificates that a foreign degree — including from Islamic educational institutions — is equivalent to a bachelor's or master's are accepted",
+    "Up to 30% of entry-level plantilla positions are allocated to Mujahideen and Mujahidat",
+    "Vacancies are published in the Bangsamoro Job Portal, and the appointment form may be translated into Arabic where necessary"
+   ],
+   "for_specific_groups": {
+    "Mujahideen and Mujahidat": "Article 305 lets you be hired as a temporary appointee to first-level positions at Salary Grade 9 and below even where civil service eligibles have applied. Up to 30% of the government's entry-level plantilla is allocated to you. Appointments run 12 months, renewable 3 times, and if you gain eligibility within that period you qualify for permanent appointment. The MILF and MNLF Central Committees determine who is on the roster, and hiring is to happen within the transition period.",
+    "Muslim employees": "Friday hours may be split around Jumu'ah, Ramadan hours are shortened without an undertime penalty, and Islamic values formation may count as human resource development.",
+    "Shari'ah Bar passers": "Your Bar passage is an eligibility for first and second level positions if you were a college degree holder when you took it; for first level positions if you were not.",
+    "Madrasah teachers (Asatidz)": "The Commission is to set the standards for your qualifications, appointments and promotions under the Bangsamoro Education Code, and meanwhile follows the education ministry's recommendations.",
+    "Indigenous peoples": "Special civil service examinations are conducted for indigenous peoples in the region.",
+    "Employees facing reorganisation": "A statutory order of removal protects permanent employees, a Placement Committee with elected employee members handles placement, and those separated go automatically onto a Roster of Bangsamoro Eligibles with priority for re-employment.",
+    "Employees generally": "The right to self-organisation is guaranteed, there is a Rehabilitation Privilege of up to 6 months for injuries sustained on duty, and no discrimination is permitted on age, sex, sexual orientation and gender identity, civil status, disability, religion, ethnicity or political affiliation.",
+    "Probationers": "You become a regular employee automatically if no notice of termination is given before the 6-month probationary period ends."
+   },
+   "where_this_applies": "All agencies of the Bangsamoro Government, its component LGUs, state universities and colleges, and government corporations with original charters within BARMM.",
+   "when_you_will_feel_it": "In force since 2021. Agencies had 6 months to submit revised Merit Selection Plans.",
+   "what_you_can_do": [
+    "Watch the Bangsamoro Job Portal and your agency's bulletin boards — vacancies must be published for at least 10 calendar days in Bangsamoro agencies and 15 for LGUs",
+    "If you are a Shari'ah Bar passer, submit an authenticated Certificate of Membership in the Shari'ah Bar issued by the Supreme Court",
+    "If you were injured on duty, the Rehabilitation Privilege runs up to 6 months with salary and regular benefits, and first-aid reimbursement up to ₱5,000",
+    "If you are dismissed or suspended and later exonerated, back wages cover salary, allowances, leave credits, bonuses and loyalty award",
+    "Administrative complaints against officials at Salary Grade 25 and above go to the Office of the Chief Minister"
+   ],
+   "watch_out_for": [
+    "Article 2 provides that in case of conflict with the Constitution and existing national civil service laws, rules and regulations, the national ones prevail — the opposite of the primacy the Labor and Employment Code later claimed for itself.",
+    "The Mujahideen allocation is capped at 30% of entry-level plantilla positions, limited to Salary Grade 9 and below, and framed as temporary appointments renewable 3 times.",
+    "It is the MILF and MNLF Central Committees, not a government body, that determine who counts as Mujahideen or Mujahidat for hiring purposes.",
+    "Complaints against coterminous appointees of the Chief Minister and against elective officials are outside the Code's disciplinary book.",
+    "Preventive suspension runs up to 90 days for Bangsamoro Government personnel but only 60 days for component LGU personnel.",
+    "'Disloyalty to the Republic of the Philippines, including the BARMM; and to the Filipino people, including the Bangsamoro people' is a grave offence punishable by dismissal.",
+    "Promotion is generally limited to 3 salary grades above a current position, subject to a long list of exceptions."
+   ],
+   "key_terms_explained": {
+    "Mujahideen / Mujahidat": "Defined by the Code as the legitimate members, men and women, of the MILF and the MNLF, duly certified by the Chairperson of their respective Central Committees.",
+    "Plantilla": "The official list of authorised positions in an agency. 'Entry-level plantilla positions' are the first-level posts at the bottom of that list.",
+    "Eligibility": "The result of passing a merit and fitness test — a civil service examination, a bar or board examination, or another test the Commission recognises.",
+    "First and second level": "First level covers clerical, trades and custodial posts; second level covers professional, technical and scientific work up to division chief.",
+    "Coterminous": "An appointment that ends when the appointing official's own term ends.",
+    "Preventive suspension": "A precautionary removal from the workplace while a case is pending. The Code is explicit that it is not a penalty.",
+    "Merit Selection Plan": "The agency's own written rules for recruitment, selection and promotion, approved by the Commission and binding as a contract.",
+    "Moral governance": "Defined here as governance devoid of graft and corruption and driven by dedication, devotion, honesty, justice and integrity, with sincerity (ikhlaas), perfection (itqaan), excellence (ihsaan) and optimism (tafaa-ul).",
+    "Adat": "The customary law of Moro and non-Moro indigenous peoples, which civil servants are required not to act contrary to.",
+    "DAB": "Development Academy of the Bangsamoro — the government's training and research arm."
+   },
+   "status_note": "Passed by the Bangsamoro Parliament and approved by the Chief Minister on the same day, 24 February 2021.",
+   "benefits": {
+    "headline": "A regional civil service with a reserved entry route for former combatants, Friday and Ramadan hours in statute, and Shari'ah Bar and indigenous eligibility pathways.",
+    "direct_benefits": [
+     {
+      "benefit": "Up to 30% of entry-level plantilla positions allocated to Mujahideen and Mujahidat, hireable without civil service eligibility",
+      "who_gets_it": "Certified members of the MILF and MNLF",
+      "how_to_access": "Article 305 — temporary appointments of 12 months, renewable 3 times, at Salary Grade 9 and below"
+     },
+     {
+      "benefit": "Friday working hours adjusted around congregational prayer, and shortened Ramadan hours not counted as undertime",
+      "who_gets_it": "Muslim employees",
+      "how_to_access": "Article 198"
+     },
+     {
+      "benefit": "The option to work Sundays and take Friday as a compensatory day off",
+      "who_gets_it": "All employees, subject to agency approval",
+      "how_to_access": "Article 200"
+     },
+     {
+      "benefit": "Shari'ah Bar passage recognised as civil service eligibility",
+      "who_gets_it": "Shari'ah Bar passers",
+      "how_to_access": "Article 120 — second level if a college degree holder at the time, first level otherwise"
+     },
+     {
+      "benefit": "Special civil service examinations for indigenous peoples",
+      "who_gets_it": "Indigenous peoples in the BARMM",
+      "how_to_access": "Article 16"
+     },
+     {
+      "benefit": "Preference in appointment for bona fide residents",
+      "who_gets_it": "Residents of the locality for local posts, of the region for regional posts",
+      "how_to_access": "Article 12"
+     },
+     {
+      "benefit": "Recognition of foreign degrees, including from Islamic educational institutions, as equivalent",
+      "who_gets_it": "Graduates of foreign and Islamic institutions",
+      "how_to_access": "Article 86, on certification by the education ministry or CHED"
+     },
+     {
+      "benefit": "Rehabilitation Privilege of up to 6 months with salary and regular benefits for injuries sustained on duty",
+      "who_gets_it": "Permanent, temporary, casual and contractual personnel, including those with fixed terms",
+      "how_to_access": "Articles 205 to 212, with first-aid reimbursement up to ₱5,000"
+     },
+     {
+      "benefit": "Automatic regularisation where no termination notice is given before probation ends",
+      "who_gets_it": "Probationary appointees",
+      "how_to_access": "Article 53"
+     },
+     {
+      "benefit": "A Roster of Bangsamoro Eligibles giving priority re-employment to those separated by reorganisation",
+      "who_gets_it": "Permanent career employees separated by reduction in force or reorganisation",
+      "how_to_access": "Article 191, maintained through the Office of the Chief Minister"
+     }
     ],
-    "what_this_does": "Provides for the Bangsamoro Civil Service Code.",
-    "who_it_affects": "Government employees · Public-service users",
-    "effective": "2021-02-24"
-  },
-  "views": {
-    "simple": "Provides for the Bangsamoro Civil Service Code.",
-    "official": "AN ACT PROVIDING FOR THE BANGSAMORO CIVIL SERVICE CODE"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "The right to self-organisation, with a bar on interference by government authorities",
+     "Rank-and-file representatives elected by the employees association sitting on every selection board",
+     "A Bangsamoro Committee on Awards chaired by the Senior Deputy Chief Minister and seating the Bangsamoro Mufti",
+     "Non-discrimination extending to sexual orientation and gender identity",
+     "A mandatory parliamentary review of the Code at least every 5 years",
+     "Videoconference hearings and electronic service in administrative cases"
+    ],
+    "limitations": [
+     "National civil service law prevails in case of conflict.",
+     "The Mujahideen route is temporary, capped and confined to Salary Grade 9 and below.",
+     "Coterminous and elective officials fall outside the disciplinary book.",
+     "The Code sets no salaries — compensation is governed elsewhere."
+    ]
+   },
+   "your_responsibilities": {
+    "for_civil_servants": [
+     "Uphold moral governance, commitment to public interest, professionalism, justness and sincerity, political neutrality, responsiveness, nationalism, commitment to democracy, simple living, respect for human dignity and equality",
+     "Act on simple transactions within 3 working days and complex ones within 7, with a maximum of 20 working days for highly technical applications",
+     "Wear an official identification card visibly during office hours, and staff a public assistance or complaints desk",
+     "File a Statement of Assets, Liabilities and Net Worth within 30 days of assuming office, by 30 April each year, and within 30 days of separation",
+     "Resign from any conflicting private enterprise within 30 days of assuming office, or divest within 60 days",
+     "Do not engage in private business or practice a profession without annual written permission from the agency head",
+     "Do not solicit or accept gifts, or borrow money from persons with whom the office has business relations",
+     "Refrain from partisan political activity, and note that filing a certificate of candidacy is an ipso facto resignation"
+    ],
+    "for_agencies": [
+     "Publish vacancies for at least 10 calendar days, or 15 for LGUs, and submit the list to the Civil Service Commission for BARMM",
+     "Constitute Bangsamoro Promotion and Selection Boards including 2 rank-and-file representatives chosen by the accredited employees association",
+     "Submit appointments to the Commission within 30 calendar days of issuance",
+     "Submit a revised Agency Merit Selection Plan within 6 months of the Code's effectivity",
+     "Provide each employee at least 1 planned human resource development intervention a year, and 40 hours of supervisory or management training for supervisors and managers",
+     "Render an annual performance report within 45 working days from the end of the year, open to the public"
+    ]
+   },
+   "what_is_prohibited": [
+    "Nepotism — appointments in favour of a relative within the 3rd degree of consanguinity or affinity of the appointing or recommending authority, or of the head of the bureau or office, or of the person exercising immediate supervision. In the local government career service the bar extends to the 4th degree.",
+    "Engaging in private business or practising a profession without annual written permission, or using government facilities while doing so.",
+    "Having a financial or material interest in any transaction requiring the approval of one's office.",
+    "Soliciting or accepting gifts, gratuities, favours, entertainment or loans in the course of official duties.",
+    "Disclosing or misusing confidential information for private gain or to the prejudice of the public interest.",
+    "Partisan political activity, and soliciting contributions from subordinates.",
+    "Receiving additional or double compensation, or accepting any present, emolument, office or title from a foreign state without the President's consent.",
+    "Appointment or reemployment within 1 year for a losing candidate, and reemployment within 6 months for an employee who resigned in the 3 months before an election to promote another's candidacy.",
+    "Appointment of a person with dual citizenship who has not renounced foreign citizenship, or who continues to use a foreign passport after renouncing.",
+    "Appointments by outgoing elective or coterminous officials after an election up to 30 June, unless strict requisites are met.",
+    "Assigning laborers to clerical duties, and designating non-career or contract-of-service employees to positions exercising control over career employees.",
+    "Promotion within 6 months before compulsory retirement."
+   ],
+   "penalties": {
+    "grave_offences": "Punishable by dismissal: serious dishonesty; gross neglect of duty; grave misconduct; conviction of a crime involving moral turpitude; falsification of official document; physical or mental disorder due to immoral or vicious habits; receiving a fee or gift for personal use in the course of official duties; contracting loans from persons with whom the office has business relations; soliciting or accepting gifts; nepotism; and disloyalty to the Republic of the Philippines including the BARMM, and to the Filipino people including the Bangsamoro people.",
+    "grave_offences_suspension": "Suspension of 6 months and 1 day to 1 year for the first offence and dismissal for the second: less serious dishonesty, oppression, disgraceful and immoral conduct, inefficiency and incompetence, habitual absenteeism, habitual tardiness prejudicing operations, loafing, refusal to perform official duty, gross insubordination, conduct prejudicial to the best interest of the service, financial or material interest in office transactions, prohibited outside employment, misuse of confidential information, misuse of a SALN filing, and improper recommendation to a private enterprise.",
+    "less_grave_offences": "Suspension of 1 month and 1 day to 6 months for the first offence and dismissal for the second: simple neglect of duty, simple misconduct, discourtesy in the course of official duty, serious violation of civil service rules, insubordination, habitual drunkenness, unfair discrimination by party affiliation, failure to file a sworn SALN, failure to resign or divest where there is conflict of interest, and partisan political activity.",
+    "light_offences": "Reprimand for the first offence, suspension of 1 to 30 days for the second, and dismissal for the third — covering simple discourtesy, unauthorised solicitation from subordinates, violation of office rules, habitual tardiness, gambling, refusal to render overtime, borrowing money from subordinates, willful failure to pay just debts or taxes, unauthorised lobbying, and failures to act promptly on public transactions.",
+    "fixing": "Fixing or collusion with fixers under RA 9485 is a grave offence punishable by dismissal and perpetual disqualification from public service.",
+    "accessory_penalties": "Dismissal carries cancellation of eligibility, perpetual disqualification from public office, a ban on taking civil service examinations, and forfeiture of retirement benefits — though terminal leave benefits and personal GSIS contributions are not forfeited.",
+    "fine_in_lieu": "A fine may be allowed in lieu of suspension of 6 months or less, at 1 day's salary per day of suspension, payable within a year and in installments."
+   },
+   "where_to_complain": {
+    "first_stop": "Your agency, which has jurisdiction over administrative cases against its own officials and employees",
+    "senior_officials": "The Office of the Chief Minister has primary jurisdiction over cases involving positions at Salary Grade 25 and above, with the Bangsamoro Attorney-General's Office conducting the formal investigation; cases against Bangsamoro Human Rights Commission Commissioners are forwarded to the Office of the President",
+    "appeal": "Decisions of the Chief Minister, an agency head or a regional government corporation may be appealed to the Civil Service Commission within 15 days, for penalties exceeding 30 days' suspension or a fine exceeding 30 days' salary",
+    "note": "Anonymous complaints are entertained only where the act complained of is of public knowledge or the allegations can be verified by documentary or direct evidence."
+   },
+   "everyday_scenarios": [
+    "A decommissioned combatant with no civil service eligibility applies for a clerical post. Article 305 allows a temporary appointment at Salary Grade 9 or below even where eligibles applied, within a 30% allocation of entry-level positions, renewable up to 3 times while eligibility is pursued.",
+    "A Muslim employee needs to attend Friday congregational prayer. Article 198 allows office hours on Fridays of 7:00 to 10:00 a.m. and 2:00 to 6:00 p.m. for Muslim employees.",
+    "An employee fasting through Ramadan reports at 7:30 a.m. and leaves at 3:30 p.m. The Code says the 2-hour difference is not counted as undertime.",
+    "A probationary appointee reaches the end of 6 months and hears nothing. Article 53 makes them a regular employee of the agency.",
+    "An office is abolished in a reorganisation and staff are replaced by less qualified people. Article 213 treats that as evidence of bad faith, giving rise to a claim for reinstatement."
+   ]
   }
+ },
+ "key_provisions": [
+  "Articles 1–11 (Book I, General Provisions) — Short title: the “Bangsamoro Civil Service Code of 2021”. It governs the Bangsamoro Government, its component LGUs, state universities and colleges and chartered government corporations, administered by the Civil Service Commission for BARMM. Article 2 provides that in case of conflict with national laws, “the Constitution and existing national civil service laws, rules, and regulations shall prevail”. Article 4 bars discrimination on age, religion, culture, ethnicity, gender, disability or political affiliation. Article 6 defines Moral Governance as governance “completely devoid of all evils of graft and corruption” driven by dedication, devotion, honesty, justice and integrity, and defines “Mujahideen/Mujahidat” as the legitimate members, men and women, of the MILF and MNLF duly certified by the Chairperson of their respective Central Committees.",
+  "Articles 12–19 — Recruitment. Preference in appointment goes to bona fide residents — of the locality for local positions, of the region for regional ones. Article 16 provides for special civil service examinations for indigenous peoples in the BARMM. New entrants undergo an Employee Onboarding Program run with the Development Academy of the Bangsamoro.",
+  "Articles 20–60 (Book II) — Appointments. Vacancies are published in the Bangsamoro Job Portal and posted in 3 conspicuous places; the appointment form may be translated into Arabic when necessary. Probationary appointment runs 6 months with performance reviews, and where no notice of termination is issued before it ends “the probationer becomes a regular employee of the agency concerned”. Appointments take effect on signing and must be submitted to the Commission within 30 calendar days; delay is not held against the appointee but the responsible official may be liable for neglect of duty. LGU department head appointments require the concurrence of a majority of the local sanggunian, deemed given if it fails to act within 15 calendar days. An appointment may be cancelled if the appointee does not assume office within 30 calendar days.",
+  "Articles 61–120 — Vacancy, qualification standards and eligibility. Vacancies are published for at least 10 calendar days in Bangsamoro agencies, state universities and chartered corporations, and 15 for LGUs, with publication valid until filled but not beyond 9 months. Article 78 provides that for madaris asatidz the Commission shall promulgate rules setting the standards for their qualifications, appointments and promotions as provided in the Bangsamoro Education Code, basing them meanwhile on the education ministry's recommendations. Article 86 accepts certification that a degree from a foreign school “including Islamic educational institutions” is equivalent to a bachelor's or master's degree. Article 101 provides that human resource development intervention “may include Islamic values formation trainings or its equivalent”, with each employee to undergo at least 1 planned intervention a year and supervisors 40 hours of management training. Article 120 provides that passing the Shari'ah Bar is an eligibility for first and second level positions where the passer held a college degree at the time, and for first level positions where they did not.",
+  "Articles 121–143 — Merit selection. Article 121 bars discrimination “on account of age, sex, sexual orientation and gender identity, civil status, disability, religion, ethnicity, or political affiliation”. Each agency constitutes Bangsamoro Promotion and Selection Boards — one for first and second level positions and one for executive and managerial posts — whose membership includes 2 regular and alternate representatives of rank-and-file career employees chosen by the duly accredited employees association, serving 2 years. The Board submits the top 5 ranking candidates to the appointing authority. Deliberation may not occur earlier than 10 calendar days from publication, or 15 for LGUs. Promotion is limited to not more than 3 salary grades above the employee's present position, subject to exceptions including deep selection, lone or entrance positions, and hard-to-fill posts.",
+  "Articles 144–169 — Separation and prohibitions. Resignation requires written intention, acceptance, and written notice of acceptance, and is deemed complete if unacted upon for 30 days. Appointments made by outgoing elective officials after an election up to 30 June, and by appointive officials coterminous with the Chief Minister, are disapproved unless strict requisites are met. Promotion within 6 months before compulsory retirement is prohibited, and no one who has reached 65 may be appointed except to a primarily confidential position. Article 165 prohibits discrimination against or in favour of any person examined or employed by reason of political or religious opinions or affiliations, sex, sexual orientation and gender identity, civil status, age, disability or ethnicity. Persons with dual citizenship may not be appointed unless they renounce their foreign citizenship, and may not be appointed at all if they continue to use a foreign passport after renunciation.",
+  "Articles 170–187 (Book III, Conduct) — Norms of conduct: adherence to moral governance requiring “a high sense of sincerity (ikhlaas), perfection (itqaan), excellence (ihsaan), and optimism (tafaa-ul)”; commitment to public interest; professionalism; justness and sincerity, including refraining from acts contrary to law, “Adat or the Moro or non-Moro indigenous people's customary law”; political neutrality; responsiveness to the public, including compliance with RA 11106 on Filipino Sign Language; nationalism and patriotism; commitment to democracy; simple living; respect for human dignity; and upholding equality. Duties include acting on simple transactions within 3 working days and complex ones within 7, with highly technical applications capped at 20 working days; limiting signatories to 3; wearing visible identification; and establishing a public assistance and complaints desk in every office. A Bangsamoro Committee on Awards is created, chaired by the Senior Deputy Chief Minister with the Bangsamoro Mufti, an accredited NGO representative and 2 employee organisation representatives. Prohibited acts cover financial and material interest, outside employment, misuse of confidential information and solicitation of gifts, with SALN filing, disclosure of relatives, and divestment requirements. Nepotism extends to the 3rd degree of consanguinity or affinity, and to the 4th degree in the local government career service.",
+  "Articles 188–220 (Book IV, Protection of Eligibles) — Security of tenure is declared policy; no officer or employee may be removed, suspended or disciplined except for cause and, in the career service, after notice and hearing. A Roster of Bangsamoro Eligibles is maintained through the Office of the Chief Minister, into which permanent career employees separated by reduction in force or reorganisation are automatically entered and prioritised for re-employment. The right to self-organisation is guaranteed, with non-discrimination and non-interference clauses, though high-level policy-making, managerial and highly confidential employees may not join rank-and-file organisations. Working hours are 8 hours a day for 5 days, totalling 40 hours, normally 8:00 a.m. to 12:00 p.m. and 1:00 p.m. to 5:00 p.m., “except on Fridays where the office hours for Muslim employees may be from 7:00 a.m. to 10:00 a.m. and 2:00 p.m. to 6:00 p.m.”; during Ramadan employees may report 7:30 a.m. to 3:30 p.m. without noon break “and the difference of two (2) hours is not counted as undertime”. Employees may opt to work Sundays and choose Friday as a compensatory day off. A Rehabilitation Privilege of up to 6 months is available for wounds or injuries sustained in the performance of official duties, with salary and regular benefits continuing, leave credits not deducted, and first-aid reimbursement up to ₱5,000. In reorganisation, a statutory order of removal runs from casual employees with under 5 years' service through to permanent appointees, bad faith indicators are enumerated, permanent employees hold preference for new positions, and a Placement Committee including 2 members elected by career employees handles placement.",
+  "Articles 221–303 (Book V, Disciplinary Procedure) — The Office of the Chief Minister holds primary jurisdiction over administrative cases involving positions at Salary Grade 25 and above, with the Bangsamoro Attorney-General's Office conducting formal investigation; cases against Bangsamoro Human Rights Commission Commissioners are forwarded to the Office of the President. Complaints against coterminous appointees of the Chief Minister and against elective officials fall outside this Book. Anonymous complaints are entertained only where the act is of public knowledge or the allegations can be verified by documentary or direct evidence. Preliminary investigation commences within a non-extendible 5 days and terminates within 20; a formal charge issues within 15 days of the investigation report. Preventive suspension lasts up to 90 days, or 60 days for component LGU personnel, and a suspension order void on its face entitles the respondent to immediate reinstatement and back wages. Formal investigation is completed within 30 days, hearings run to no more than 5 hearing days, videoconference hearings are allowed, and subpoenas ad testificandum and duces tecum may issue. Decisions are rendered within 15 days and become final after 15 days absent a motion for reconsideration; decisions are executory pending appeal unless restrained by a court. Offences are classified as grave, less grave and light, with dismissal carrying cancellation of eligibility, perpetual disqualification, an examination ban and forfeiture of retirement benefits other than terminal leave and personal contributions. A fine may be paid in lieu of suspension of 6 months or less at 1 day's salary per day of suspension. Settlement is permitted only for light offences that are purely personal and cause no injury to the government, and never for a second offence of the same act.",
+  "Articles 304–311 (Miscellaneous, Transitory and Final) — Alternative work arrangements including work-from-home, skeleton workforce, a 4-day compressed workweek and staggered hours may be adopted during pandemics and calamities with the Chief Minister's prior approval. Article 305 provides that Mujahideen and Mujahidat “may be hired as temporary appointees for first level positions (SG 9 and below) of the Bangsamoro Government regardless of the presence of applicants who are civil service eligible; Provided, That not more than 30% of the total number of entry level plantilla positions of the Bangsamoro Government shall be allocated to them.” Such appointments are valid for 12 months, renewable 3 times, and an appointee who acquires the required eligibility within that period qualifies for permanent appointment subject to performance appraisal. The Development Academy of the Bangsamoro is to develop specialised training programmes for their integration, and “it shall be the responsibility of the Central Committees of the MILF and the MNLF to determine the mujahideen/mujahidat in the roster of their organic members who shall be considered for hiring under this provision”, with hiring to take place within the transition period. Agencies submit revised Merit Selection Plans within 6 months of effectivity. Parliament must undertake a mandatory review of the Code at least once every 5 years. All civil service laws and issuances passed by the ARMM Regional Legislative Assembly are repealed. The Code takes effect 15 days after complete publication."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Former MILF and MNLF combatants entering government service",
+   "Muslim employees, through Friday and Ramadan working hours",
+   "Shari'ah Bar passers and madrasah teachers",
+   "Indigenous peoples, through special examinations",
+   "Bona fide residents of the region and its localities",
+   "Career employees facing reorganisation"
+  ],
+  "impact_tags": [
+   "governance_civil_service",
+   "priority_code",
+   "peace_security_justice",
+   "islamic_culture_heritage"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "No appropriation — the Code prescribes rules rather than funding a programme",
+  "figures_note": "Key figures: up to 30% of entry-level plantilla positions allocated to Mujahideen and Mujahidat; promotion limited to 3 salary grades; preventive suspension of 90 days, or 60 for LGU personnel."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2021-02-24"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2021/03/BAA-17.pdf",
+  "irr": "The Code is largely self-executing; agencies submit revised Merit Selection Plans to the Civil Service Commission for BARMM within 6 months of effectivity."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": "All laws and issuances pertaining to civil service passed by the Autonomous Region in Muslim Mindanao Regional Legislative Assembly",
+  "origin_bill": "Bill No. 59",
+  "related_note": "Article 2 subordinates the Code to the Constitution and national civil service law in case of conflict — the reverse of the primacy BAA 82, the Labor and Employment Code, later claimed over the national Labor Code. Article 78 defers the standards for madaris asatidz to BAA 18, the Bangsamoro Education Code, whose Section 105 creates the special Mudarris eligibility. Offence classifications in Book V are the ones invoked by BAA 84, the Budget System Act, in its enforcement title. Disciplinary jurisdiction over Bangsamoro Human Rights Commission Commissioners is routed to the Office of the President, consistent with their presidential appointment under BAA 4. Article 305's hiring route for Mujahideen and Mujahidat implements the normalization track of the Comprehensive Agreement on the Bangsamoro. National rules continue to apply through the 2017 RACCS, RA 6713, RA 7041, RA 9485 and RA 11032."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "None — the Code prescribes rules rather than funding a programme",
+  "irr_status": "No separate IRR is required. Article 307 requires agencies to submit revised Agency Merit Selection Plans within 6 months of effectivity, and the Code's own rules apply in the meantime.",
+  "implementing_agency": {
+   "agency": "Civil Service Commission for BARMM, with the Office of the Chief Minister and the Bangsamoro Attorney-General's Office for senior disciplinary cases",
+   "inferred": false
+  },
+  "note": "Read from the enacted text as signed, all 98 pages and 311 articles. Article 308 requires Parliament to review the Code at least once every 5 years. Article 305's hiring window for Mujahideen and Mujahidat is framed as running 'within the transition period', a term the Code does not itself define."
+ },
+ "citizen_questions": [
+  {
+   "q": "Can a former combatant get a government job without civil service eligibility?",
+   "a": "Yes, at entry level. Article 305 allows Mujahideen and Mujahidat to be hired as temporary appointees to first-level positions at Salary Grade 9 and below even where civil service eligibles have applied, with up to 30% of the government's entry-level plantilla positions allocated to them. The appointments run 12 months and are renewable 3 times, and eligibility gained in that period opens permanent appointment."
+  },
+  {
+   "q": "Who decides who counts as a Mujahid or Mujahida?",
+   "a": "The Central Committees of the MILF and the MNLF, which determine who in the roster of their organic members is considered for hiring. The Code defines the term by reference to certification from the Chairperson of each Central Committee."
+  },
+  {
+   "q": "What are the working hours?",
+   "a": "8 hours a day, 5 days a week, 40 hours in total — normally 8:00 a.m. to 12:00 p.m. and 1:00 p.m. to 5:00 p.m. On Fridays, office hours for Muslim employees may run 7:00 to 10:00 a.m. and 2:00 to 6:00 p.m. During Ramadan, employees may report 7:30 a.m. to 3:30 p.m. without a noon break, and the 2-hour difference is not counted as undertime."
+  },
+  {
+   "q": "Does passing the Shari'ah Bar count as civil service eligibility?",
+   "a": "Yes. Article 120 makes it an eligibility for first and second level positions if you held a college degree when you took the Bar, and for first level positions if you did not. You must submit an authenticated Certificate of Membership in the Shari'ah Bar issued by the Supreme Court."
+  },
+  {
+   "q": "Are there examinations specifically for indigenous peoples?",
+   "a": "Yes. Article 16 provides for special civil service examinations for indigenous peoples in the BARMM."
+  },
+  {
+   "q": "Do local applicants get preference?",
+   "a": "Yes. Article 12 gives preference to bona fide residents of the locality for positions in local government, and of the region for regional positions."
+  },
+  {
+   "q": "My probation ended and nobody told me anything. Am I permanent?",
+   "a": "Yes. Article 53 provides that if no notice of termination is given before the 6-month probationary period expires, the probationer becomes a regular employee of the agency."
+  },
+  {
+   "q": "Which law wins if this Code conflicts with national civil service rules?",
+   "a": "The national ones. Article 2 states that in case of conflict, the Constitution and existing national civil service laws, rules and regulations shall prevail."
+  },
+  {
+   "q": "Where do I complain about a senior official?",
+   "a": "The Office of the Chief Minister has primary jurisdiction over administrative cases involving positions at Salary Grade 25 and above, with the Bangsamoro Attorney-General's Office conducting the formal investigation. Cases against Commissioners of the Bangsamoro Human Rights Commission are forwarded to the Office of the President."
+  },
+  {
+   "q": "I was hurt on the job. Is there anything beyond sick leave?",
+   "a": "Yes. The Rehabilitation Privilege in Articles 205 to 212 gives up to 6 months for wounds or injuries sustained in the performance of official duties, with salary and regular benefits continuing and without deduction from your leave credits, plus first-aid reimbursement of up to ₱5,000."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 17",
+  "line2": "Bangsamoro Civil Service Code of 2021",
+  "badges": [
+   "IN FORCE",
+   "Governance",
+   "2021"
+  ],
+  "what_this_does": "Sets the region's rules for government employment — and reserves up to 30% of entry-level posts for former MILF and MNLF combatants.",
+  "who_it_affects": "Government employees · job applicants · former combatants · Muslim and indigenous civil servants",
+  "effective": "2021-02-24"
+ },
+ "views": {
+  "simple": "The region's civil service code: hiring, promotion, conduct, discipline and separation across the Bangsamoro Government, its LGUs, state universities and chartered corporations — with preference for bona fide residents, special examinations for indigenous peoples, Shari'ah Bar passage recognised as eligibility, Friday and Ramadan working hours written into statute, a Rehabilitation Privilege for on-duty injuries, non-discrimination extending to sexual orientation and gender identity, and a transitory provision allocating up to 30% of entry-level positions to Mujahideen and Mujahidat certified by the MILF and MNLF Central Committees.",
+  "official": "AN ACT PROVIDING FOR THE BANGSAMORO CIVIL SERVICE CODE"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 17, enacted text as signed (Parliament's acts index), all 98 pages and 311 articles.",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Article references are quoted from that document. Verify against the official copy before citing."
+ }
 }

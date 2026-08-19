@@ -1,205 +1,229 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 76,
-    "short_title": "Sr. Memorial Hospital Act",
-    "official_title": "AN ACT UPGRADING DATU ALAWADDIN T. BANDON, SR. MEMORIAL HOSPITAL, SIBUTU, TAWI-TAWI (10-BED INFIRMARY TO 25-BED LEVEL I)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA3",
-    "date_ratified": "2025-06-16",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Upgrades Datu Alawaddin T. Bandon, Sr. Memorial Hospital, Sibutu, Tawi-tawi (10-BED Infirmary to 25-BED Level I).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Upgrades Datu Alawaddin T. Bandon, Sr. Memorial Hospital, Sibutu, Tawi-tawi (10-BED Infirmary to 25-BED Level I).",
-    "who_will_be_affected": [
-      "Residents of Tawi-Tawi",
-      "Pregnant women",
-      "Senior citizens & PWDs",
-      "Health workers"
-    ],
-    "when_will_it_take_effect": "Ratified 2025-06-16; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Upgrades a public hospital serving Tawi-Tawi (10-bed to 25-bed). For nearby families this means emergency and inpatient care closer to home instead of long, costly trips to distant referral hospitals.",
-      "in_practice": [
-        "More beds means fewer 'no vacancy' referrals and less floor-space crowding during outbreaks",
-        "A higher hospital level allows more services on-site: surgery, specialist clinics, better laboratory and imaging, more doctors and nurses on the plantilla",
-        "PhilHealth-accredited services expand with the facility's level, lowering out-of-pocket costs",
-        "Construction, staffing, and supplies take time after enactment - upgrades typically roll out over one or more budget years"
-      ],
-      "for_specific_groups": {
-        "Residents of Tawi-Tawi": "Shorter travel time in emergencies - often the difference between life and death for stroke, hemorrhage, and obstetric cases",
-        "Pregnant women": "Facility-based deliveries and emergency obstetric care become available nearer home",
-        "Senior citizens & PWDs": "Follow-up care and dialysis/maintenance services without long-distance travel",
-        "Health workers": "New plantilla positions (nurses, midwives, med-techs, doctors) usually open when a hospital is created or upgraded - watch the MOH and hospital job postings"
-      },
-      "where_this_applies": "Tawi-Tawi",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Ask the Ministry of Health (MOH-BARMM) or the hospital chief when the added beds/services actually open"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Closer, bigger, better-equipped public healthcare for Tawi-Tawi.",
-        "direct_benefits": [
-          {
-            "benefit": "Emergency and inpatient care near home (up to 25 beds) instead of long referral trips",
-            "who_gets_it": "Residents of Tawi-Tawi",
-            "how_to_access": "Go directly; public hospitals cannot refuse emergencies"
-          },
-          {
-            "benefit": "More services as the hospital's level rises: surgery, laboratory, imaging, specialty clinics",
-            "who_gets_it": "Patients in the catchment area",
-            "how_to_access": "Outpatient department; bring PhilHealth/ID"
-          },
-          {
-            "benefit": "Lower out-of-pocket costs as PhilHealth-accredited services expand with the facility level",
-            "who_gets_it": "PhilHealth members and indigents (automatic UHC coverage)",
-            "how_to_access": "Hospital PhilHealth desk / Malasakit-type assistance where present"
-          },
-          {
-            "benefit": "Safer childbirth: facility-based delivery and emergency obstetric care nearby",
-            "who_gets_it": "Pregnant women",
-            "how_to_access": "Prenatal check-ups at the RHU, delivery at the hospital"
-          },
-          {
-            "benefit": "New jobs: doctors, nurses, midwives, med-techs, admin and support staff",
-            "who_gets_it": "Health professionals and local job seekers",
-            "how_to_access": "Watch MOH-BARMM and hospital postings"
-          }
-        ],
-        "indirect_benefits": [
-          "Decongests referral hospitals for everyone else",
-          "Local economy around the hospital (transport, food, pharmacies)",
-          "Faster outbreak and disaster response capacity in the area"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Bed count on paper becomes real only after construction/hiring - ask the hospital chief for the timeline"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Sets hospital bed capacity: 10-Bed",
-    "Hospital classification: Level I",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 76,
+  "short_title": "Datu Alawaddin T. Bandon, Sr. Memorial Hospital Upgrade",
+  "official_title": "AN ACT UPGRADING THE DATU ALAWADDIN T. BANDON, SR. MEMORIAL HOSPITAL IN THE MUNICIPALITY OF SIBUTU, PROVINCE OF TAWI-TAWI, FROM A TEN-BED CAPACITY INFIRMARY TO A TWENTY-FIVE-BED CAPACITY LEVEL I GENERAL HOSPITAL, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA3",
+  "date_ratified": "2025-06-16",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Fourth Regular Session (begun 15 September 2022)",
+  "date_passed": "2025-06-16",
+  "date_passed_hijri": "Dhu Al-Hijjah 20, 1446",
+  "date_approved_by_chief_minister": "2025-07-09",
+  "approved_by": "Chief Minister Abdulraof A. Macacua",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Health workers",
-      "Hospitals",
-      "Muslim communities",
-      "Patients",
-      "Religious institutions"
-    ],
-    "impact_tags": [
-      "health",
-      "hospital_health",
-      "islamic_culture_heritage",
-      "symbols_identity"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2025-06-16"
-    }
+  "effectivity": "15 days after publication in the Official Gazette or a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Upgrades a 10-bed island infirmary in Sibutu, Tawi-Tawi into a 25-bed Level I general hospital — and requires its annual report on operations, spending and outcomes to be made publicly accessible.",
+  "why_was_it_proposed": "The hospital was created by a 1990 national law as a 10-bed municipal facility. The act raises it to Level I standards, modernises its record systems, and corrects a location problem created when its host municipality was split.",
+  "what_will_change": "Capacity rises to 25 beds at Level I. Facilities and professional manpower are upgraded, the patient information system is modernised for data sharing between departments, and the hospital administrator must publish an annual report.",
+  "who_will_be_affected": [
+   "Residents of Sibutu, Tawi-Tawi",
+   "Patients whose records move between departments and doctors",
+   "Hospital staff, through new plantilla positions",
+   "Local government units, which receive a copy of the annual report"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Health (MOH)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2025-06-16 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Health (MOH) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 76",
-    "line2": "Sr. Memorial Hospital Act",
-    "badges": [
-      "ENACTED",
-      "Hospital Health",
-      "Symbols Identity",
-      "2025"
+  "when_will_it_take_effect": "In force since 2025 — 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. A 10-bed infirmary becomes a 25-bed Level I hospital, with a modernised patient record system and an annual report that must be made public.",
+   "in_practice": [
+    "10-bed municipal hospital becomes a Level I general hospital with 25 beds, to Ministry of Health standards",
+    "Existing facilities and professional manpower upgraded and expanded to Level I standards",
+    "The patient information system is streamlined for comprehensive records in a simplified format, with data sharing across departments",
+    "MOH with the finance ministry determines and approves the organisational structure and plantilla positions",
+    "MOH, the Ministry of Interior and Local Government and the concerned LGUs must cooperate to enhance local health services",
+    "₱50,000,000 initial from the 2025 Bangsamoro budget",
+    "The hospital administrator submits an annual report on operations, performance, financial expenditures and service delivery outcomes — copied to LGUs and made publicly accessible"
+   ],
+   "for_specific_groups": {
+    "Patients": "25 beds instead of 10, and a record system built so your information moves between the doctors treating you.",
+    "Anyone tracking the hospital": "Section 8 is unusually strong — the annual report covers operations, performance, financial expenditures and service delivery outcomes, and must be publicly accessible.",
+    "Local government": "You receive a copy of the annual report, and the health and interior ministries must coordinate with you on local health services.",
+    "Anyone confused about the address": "The hospital was created by law in Sitangkai; after Sibutu was carved out of Sitangkai, it now sits in Sibutu. Section 2 records this."
+   },
+   "where_this_applies": "Sibutu, Tawi-Tawi.",
+   "when_you_will_feel_it": "In force since 2025; delivery depends on the appropriation being released.",
+   "what_you_can_do": [
+    "Ask for the hospital's annual report — Section 8 requires it to be publicly accessible",
+    "Ask your LGU, which also receives a copy"
+   ],
+   "watch_out_for": [
+    "No completion deadline for the upgrade.",
+    "₱50 million initial only.",
+    "Future expansion depends on an MOH recommendation and the availability of funds."
+   ],
+   "key_terms_explained": {
+    "Infirmary": "A small facility below hospital classification — here 10 beds.",
+    "Level I general hospital": "A basic hospital with emergency care, general medicine and a ward.",
+    "Plantilla positions": "Permanent, funded posts in the government staffing structure.",
+    "RA 6853": "The 1990 national law creating the hospital.",
+    "MMA Act No. 197": "The ARMM-era law that created the Municipality of Sibutu out of Sitangkai."
+   },
+   "status_note": "Passed Dhu Al-Hijjah 20, 1446 / 16 June 2025, approved by Chief Minister Abdulraof A. Macacua on 9 July 2025.",
+   "benefits": {
+    "headline": "A 25-bed Level I hospital for an island municipality, with a public annual report.",
+    "direct_benefits": [
+     {
+      "benefit": "25 beds at Level I instead of a 10-bed infirmary",
+      "who_gets_it": "Residents of Sibutu",
+      "how_to_access": "Through the hospital"
+     },
+     {
+      "benefit": "A publicly accessible annual report on operations, spending and outcomes",
+      "who_gets_it": "Anyone tracking the hospital",
+      "how_to_access": "Section 8 — submitted to MOH, copied to LGUs, made publicly accessible"
+     },
+     {
+      "benefit": "A modernised patient information system with data sharing across departments",
+      "who_gets_it": "Patients and clinicians",
+      "how_to_access": "Required by Section 4"
+     }
     ],
-    "what_this_does": "Upgrades Datu Alawaddin T. Bandon, Sr. Memorial Hospital, Sibutu, Tawi-tawi (10-BED Infirmary to 25-BED Level I).",
-    "who_it_affects": "Health workers · Hospitals · Muslim communities · Patients",
-    "effective": "2025-06-16"
-  },
-  "views": {
-    "simple": "Upgrades Datu Alawaddin T. Bandon, Sr. Memorial Hospital, Sibutu, Tawi-tawi (10-BED Infirmary to 25-BED Level I).",
-    "official": "AN ACT UPGRADING DATU ALAWADDIN T. BANDON, SR. MEMORIAL HOSPITAL, SIBUTU, TAWI-TAWI (10-BED INFIRMARY TO 25-BED LEVEL I)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Coordination required between the health ministry, the interior ministry and local governments",
+     "A route to further expansion on MOH recommendation to the Chief Minister and Parliament"
+    ],
+    "limitations": [
+     "No completion deadline.",
+     "₱50 million initial only.",
+     "Expansion is discretionary and fund-dependent."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "The hospital administration",
+    "oversight": "Ministry of Health – BARMM, which supervises and monitors administration and management; the concerned LGUs receive the annual report",
+    "note": "The act creates no complaints procedure, but the annual report is public by law."
+   },
+   "everyday_scenarios": [
+    "A patient in Sibutu previously had a 10-bed infirmary; the upgrade authorises a 25-bed Level I hospital.",
+    "A resident wants to know how the hospital spent its money. Section 8 requires an annual report covering financial expenditures and service delivery outcomes, made publicly accessible.",
+    "Someone searching for the hospital's legal address finds it created in Sitangkai — Section 2 explains that Sibutu was later created out of Sitangkai, so the hospital now sits in Sibutu."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Records that the hospital was established by Republic Act No. 6853 as a 10-bed municipal hospital in Sitangkai, Tawi-Tawi, on 24 February 1990.",
+  "Section 2 — Notes that with the enactment of Muslim Mindanao Autonomy Act No. 197, which created the Municipality of Sibutu from Sitangkai, the hospital is now located in Sibutu.",
+  "Section 3 — Upgrades the hospital from a 10-bed municipal hospital to a Level I general hospital with 25-bed capacity, in accordance with Ministry of Health standards, integrating the relevant provisions of Republic Act 11223, the Universal Health Care Act.",
+  "Section 4 — Existing health service facilities and professional manpower are upgraded and expanded to comply with Level I standards and to align operating systems with current advancements in science and technology. The hospital's information system shall be streamlined to maintain comprehensive patient records in a simplified and easily comprehensible format, enabling seamless data sharing and synchronisation among doctors and authorised personnel across departments and offices.",
+  "Section 5 — The MOH, coordinating with the Ministry of Finance, and Budget and Management, determines and approves the organisational structure and plantilla positions, and supervises and monitors the hospital's administration and management.",
+  "Section 6 — The MOH, the Ministry of Interior and Local Government and the concerned local government units shall cooperate and coordinate to further enhance the delivery of health services in their locality.",
+  "Section 7 — The MOH may recommend to the Chief Minister and the Bangsamoro Parliament further expansion of the hospital's facilities, services or bed capacity based on evolving healthcare needs, subject to the availability of funds.",
+  "Section 8 — The hospital administrator shall submit an annual report to the MOH detailing operations, performance, financial expenditures and service delivery outcomes. A copy shall also be submitted to the concerned LGUs. All such reports shall be made publicly accessible.",
+  "Section 9 — An initial ₱50,000,000 is charged against the 2025 General Appropriations Act of the Bangsamoro, with operations thereafter in the annual appropriations.",
+  "Section 12 — Takes effect 15 days after publication in the Official Gazette or a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of Sibutu, Tawi-Tawi",
+   "Patients and clinicians using the hospital's records"
+  ],
+  "impact_tags": [
+   "health",
+   "budget_appropriations",
+   "governance_civil_service"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱50,000,000 initial, charged against the 2025 GAAB",
+  "figures_note": "Quoted from Sections 3 and 9: 10 beds to 25, ₱50,000,000 initial."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2025-06-16"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/08/BAA-76.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill 100",
+  "related_note": "Builds on Republic Act No. 6853 (1990), which created the hospital, and records the effect of Muslim Mindanao Autonomy Act No. 197, which created Sibutu out of Sitangkai."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱50,000,000 initial",
+  "irr_status": "None required by the act.",
+  "note": "Read from the enacted text as signed. Section 8 requires publicly accessible annual reports; those reports are not captured by this registry."
+ },
+ "citizen_questions": [
+  {
+   "q": "How much bigger is the hospital?",
+   "a": "From a 10-bed municipal facility to a Level I general hospital with 25 beds."
+  },
+  {
+   "q": "Can I see how it performs?",
+   "a": "Yes. Section 8 requires an annual report on operations, performance, financial expenditures and service delivery outcomes, copied to local government units and made publicly accessible."
+  },
+  {
+   "q": "Why does the founding law say Sitangkai?",
+   "a": "The hospital was created there by Republic Act 6853 in 1990. Muslim Mindanao Autonomy Act No. 197 later created the Municipality of Sibutu out of Sitangkai, so the hospital now sits in Sibutu. Section 2 records this."
+  },
+  {
+   "q": "What changes about my records?",
+   "a": "Section 4 requires the information system to be streamlined for comprehensive patient records in a simplified format, with data shared across departments and among the doctors treating you."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 76",
+  "line2": "Datu Alawaddin T. Bandon, Sr. Memorial Hospital Upgrade",
+  "badges": [
+   "IN FORCE",
+   "Health",
+   "2025"
+  ],
+  "what_this_does": "Turns a 10-bed island infirmary into a 25-bed Level I hospital, with a public annual report.",
+  "who_it_affects": "Residents of Sibutu, Tawi-Tawi"
+ },
+ "views": {
+  "simple": "Upgrades the Datu Alawaddin T. Bandon, Sr. Memorial Hospital in Sibutu, Tawi-Tawi from a 10-bed infirmary to a 25-bed Level I general hospital, modernises its patient records, and requires a publicly accessible annual report.",
+  "official": "AN ACT UPGRADING THE DATU ALAWADDIN T. BANDON, SR. MEMORIAL HOSPITAL IN THE MUNICIPALITY OF SIBUTU, PROVINCE OF TAWI-TAWI, FROM A TEN-BED CAPACITY INFIRMARY TO A TWENTY-FIVE-BED CAPACITY LEVEL I GENERAL HOSPITAL, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 76, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

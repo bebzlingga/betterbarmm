@@ -1,178 +1,241 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 74,
-    "short_title": "an Act Upgrading the Maguindanao Provincial Hospital Into the Bangsamoro Regional Hospital Act",
-    "official_title": "AN ACT UPGRADING THE MAGUINDANAO PROVINCIAL HOSPITAL INTO THE BANGSAMORO REGIONAL HOSPITAL AND MEDICAL CENTER (LEVEL III, 350-BED)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA3",
-    "date_ratified": "2025-05-26",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Upgrades the Maguindanao Provincial Hospital Into the Bangsamoro Regional Hospital and Medical Center (level III, 350-BED).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Upgrades the Maguindanao Provincial Hospital Into the Bangsamoro Regional Hospital and Medical Center (level III, 350-BED).",
-    "who_will_be_affected": [
-      "Seriously ill patients",
-      "Medical professionals",
-      "Nearby residents"
-    ],
-    "when_will_it_take_effect": "Ratified 2025-05-26; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Upgrades the Maguindanao Provincial Hospital into the Bangsamoro Regional Hospital and Medical Center - a Level III, 350-bed facility. This is the region's flagship hospital project: tertiary care (specialists, complex surgery, ICU capacity) inside BARMM, so the hardest cases no longer have to travel to Cotabato City's private hospitals or Davao.",
-      "in_practice": [
-        "Level III means teaching/training capability, specialty departments, and advanced diagnostics",
-        "350 beds makes it the largest public hospital in the region",
-        "Referral hub: district hospitals (the many BAA hospital acts) feed into it"
-      ],
-      "for_specific_groups": {
-        "Seriously ill patients": "Complex care without leaving the region - dialysis, surgery, ICU",
-        "Medical professionals": "Residency/training slots and specialist posts inside BARMM",
-        "Nearby residents": "Hospital-adjacent livelihood and transport opportunities"
-      },
-      "where_this_applies": "Regional (site: Maguindanao); serves all BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Tertiary-level care without leaving the region.",
-        "direct_benefits": [
-          {
-            "benefit": "Level III services: complex surgery, ICU, specialists, advanced diagnostics - 350 beds",
-            "who_gets_it": "Seriously ill patients across BARMM",
-            "how_to_access": "Referral from district/provincial hospitals; emergencies direct"
-          },
-          {
-            "benefit": "Training posts and specialist careers inside BARMM",
-            "who_gets_it": "Doctors, nurses, allied professionals",
-            "how_to_access": "Hospital/MOH hiring and residency programs"
-          }
-        ],
-        "indirect_benefits": [
-          "Every district hospital works better with a real referral apex",
-          "Reduces catastrophic spending on private/out-of-region care"
-        ],
-        "limitations": [
-          "A Level III build-out is multi-year - benefits phase in",
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service."
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Sets hospital bed capacity: 350-Bed",
-    "Hospital classification: Level III",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 74,
+  "short_title": "Bangsamoro Regional Hospital and Medical Center Act of 2025",
+  "official_title": "AN ACT UPGRADING THE MAGUINDANAO PROVINCIAL HOSPITAL TO BE KNOWN AS THE “BANGSAMORO REGIONAL HOSPITAL AND MEDICAL CENTER” TO A LEVEL III HOSPITAL, AND THEREBY INCREASING ITS BED CAPACITY TO THREE HUNDRED FIFTY, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA3",
+  "date_ratified": "2025-05-26",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session (begun 15 September 2022)",
+  "date_passed": "2025-05-26",
+  "date_passed_hijri": "Dhu Al-Qa'dah 28, 1446",
+  "date_approved_by_chief_minister": "2025-07-09",
+  "approved_by": "Chief Minister Abdulraof A. Macacua",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Health workers",
-      "Hospitals",
-      "Patients"
-    ],
-    "impact_tags": [
-      "health",
-      "hospital_health"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2025-05-26"
-    }
+  "effectivity": "15 days after complete publication in a newspaper of general circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Turns the Maguindanao Provincial Hospital into the Bangsamoro Regional Hospital and Medical Center — a 350-bed Level III teaching hospital, the highest classification in the region.",
+  "why_was_it_proposed": "To give the region its own top-tier referral hospital, so patients needing trauma, stroke, cancer, dialysis or specialist surgical care are not sent outside the Bangsamoro for it.",
+  "what_will_change": "The hospital moves from Level II to Level III with 350 beds. Level III means a teaching hospital with accredited residency training in four specialties, plus trauma and stroke care, an oncology centre, dialysis, a blood bank and interventional radiology.",
+  "who_will_be_affected": [
+   "Patients across the region needing tertiary care",
+   "Residents of Maguindanao del Sur and nearby areas",
+   "Doctors in training, since Level III requires accredited residency programmes",
+   "Health workers, whose numbers must increase with the beds"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Health (MOH)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2025-05-26 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Health (MOH) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 74",
-    "line2": "an Act Upgrading the Maguindanao Provincial Hospital Into the Bangsamoro Regional Hospital Act",
-    "badges": [
-      "ENACTED",
-      "Hospital Health",
-      "2025"
+  "when_will_it_take_effect": "In force since 2025 — 15 days after complete publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. The region gets its own top-tier hospital: 350 beds, Level III, with cancer care, dialysis, trauma and stroke services, and doctors trained on site.",
+   "in_practice": [
+    "Maguindanao Provincial Hospital at Datu Hoffer Ampatuan, Maguindanao del Sur, becomes the Bangsamoro Regional Hospital and Medical Center",
+    "Level II becomes Level III; bed capacity rises to 350",
+    "Level III requires a teaching or training hospital with accredited residency programmes in Medicine, Pediatrics, Obstetrics and Gynecology, and Surgery",
+    "It must also provide trauma and stroke care, an oncology and wellness centre, physical medicine and rehabilitation, an ambulatory surgical clinic, dialysis, a blood bank, a tertiary laboratory with histopathology, and Level III imaging with interventional radiology",
+    "Physical structures, services, facilities and equipment comprehensively upgraded, with modern infrastructure and advanced medical technologies",
+    "The workforce — doctors, nurses, other practitioners and support staff — increased accordingly, with additional plantilla positions determined by MOH with the finance ministry",
+    "₱50,000,000 initial from the 2025 Bangsamoro budget; implementing rules within 60 days"
+   ],
+   "for_specific_groups": {
+    "Patients needing specialist care": "Cancer, dialysis, trauma, stroke and complex surgery become available inside the region rather than through referral elsewhere.",
+    "Doctors and medical graduates": "Level III status requires accredited residency training in four major specialties — the region gains a teaching hospital.",
+    "Health workers": "Section 7 requires the workforce to increase, with new permanent posts determined and filled.",
+    "Residents of Maguindanao del Sur": "The objectives name you specifically, along with the sick, the poor and other marginalised individuals."
+   },
+   "where_this_applies": "Datu Hoffer Ampatuan, Maguindanao del Sur — serving the whole region as its top referral hospital.",
+   "when_you_will_feel_it": "In force since 2025; the services depend on the upgrade being delivered.",
+   "what_you_can_do": [
+    "Ask the Ministry of Health for the implementing rules, due within 60 days",
+    "Ask which Level III services are operating — the act lists them in Section 4"
+   ],
+   "watch_out_for": [
+    "₱50 million is the same initial figure given to 25-bed hospitals elsewhere in the registry, for a 350-bed tertiary medical centre.",
+    "No completion deadline is set and no progress report is required — unlike BAA 73, passed a week earlier.",
+    "Level III accreditation depends on meeting every service standard in Section 4, not on the act alone."
+   ],
+   "key_terms_explained": {
+    "Level III hospital": "The highest classification — a teaching hospital with residency training, plus trauma, stroke, oncology, dialysis, blood bank and interventional radiology.",
+    "Tertiary care": "Specialist care beyond what a general hospital provides.",
+    "Plantilla positions": "Permanent, funded posts in the government staffing structure.",
+    "DOH AO 2012-0012": "The national administrative order setting hospital classification standards, which the act quotes at length.",
+    "Histopathology": "Laboratory examination of tissue, needed for cancer diagnosis."
+   },
+   "status_note": "Passed Dhu Al-Qa'dah 28, 1446 / 26 May 2025, approved by Chief Minister Abdulraof A. Macacua on 9 July 2025.",
+   "benefits": {
+    "headline": "The region's own 350-bed Level III teaching hospital.",
+    "direct_benefits": [
+     {
+      "benefit": "Tertiary services — trauma and stroke care, oncology, dialysis, blood bank, interventional radiology",
+      "who_gets_it": "Patients across the BARMM",
+      "how_to_access": "Through the hospital once upgraded"
+     },
+     {
+      "benefit": "350 beds, up from Level II capacity",
+      "who_gets_it": "Patients needing admission",
+      "how_to_access": "Subject to the upgrade being delivered"
+     },
+     {
+      "benefit": "Accredited residency training in four major specialties",
+      "who_gets_it": "Doctors training in the region",
+      "how_to_access": "Required for Level III accreditation"
+     },
+     {
+      "benefit": "More permanent health posts",
+      "who_gets_it": "Doctors, nurses and support personnel",
+      "how_to_access": "Plantilla positions determined by MOH with MFBM"
+     }
     ],
-    "what_this_does": "Upgrades the Maguindanao Provincial Hospital Into the Bangsamoro Regional Hospital and Medical Center (level III, 350-BED).",
-    "who_it_affects": "Health workers · Hospitals · Patients",
-    "effective": "2025-05-26"
-  },
-  "views": {
-    "simple": "Upgrades the Maguindanao Provincial Hospital Into the Bangsamoro Regional Hospital and Medical Center (level III, 350-BED).",
-    "official": "AN ACT UPGRADING THE MAGUINDANAO PROVINCIAL HOSPITAL INTO THE BANGSAMORO REGIONAL HOSPITAL AND MEDICAL CENTER (LEVEL III, 350-BED)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Retention of medical graduates who would otherwise train outside the region",
+     "Universal Health Care provisions integrated into operations"
+    ],
+    "limitations": [
+     "₱50 million initial for a tertiary medical centre.",
+     "No completion deadline.",
+     "No reporting requirement."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "The hospital administration",
+    "oversight": "Ministry of Health – BARMM, which has administrative supervision and approves the organisational structure and personnel",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A patient needing dialysis or cancer treatment previously travelled outside the region. Level III status requires an oncology and wellness centre and a dialysis facility on site.",
+    "A stroke patient needs care within hours. Level III requires provision for trauma and stroke care.",
+    "A medical graduate from the region wants residency training close to home. Level III requires accredited residency programmes in Medicine, Pediatrics, Obstetrics and Gynecology, and Surgery."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Bangsamoro Regional Hospital and Medical Center Act of 2025”.",
+  "Section 2 — Policy: protect and promote the people's right to health, instill health consciousness, and adopt an integrated and comprehensive approach to health development providing essential goods, health care and other social services to all people at an affordable cost.",
+  "Section 3 — Objectives: upgrade the Maguindanao Provincial Hospital to a Level III hospital with 350-bed capacity; integrate the Universal Health Care Act; improve government health services for the general public, especially residents of Maguindanao del Sur and nearby areas; provide essential and quality health services especially to the sick, the poor and other marginalised individuals; and improve the morale and the social and economic well-being of the hospital's health workers.",
+  "Section 4 — Defines the DOH classification levels in detail. Level III requires all of Level II capacity plus a teaching and/or training hospital with an accredited residency training programme in Medicine, Pediatrics, Obstetrics and Gynecology, and Surgery; provision for trauma and stroke care; an oncology and wellness centre; a physical medicine and rehabilitation unit; an ambulatory surgical clinic; a dialysis facility; a blood bank; a DOH-licensed tertiary clinical laboratory equipped for histopathology; and a DOH-licensed Level III imaging facility with interventional radiology.",
+  "Section 5 — Upgrades the Maguindanao Provincial Hospital, located in Datu Hoffer Ampatuan, Maguindanao del Sur, from Level II to a Level III hospital with 350-bed capacity, to be known as the Bangsamoro Regional Hospital and Medical Center, in accordance with national classification standards of the DOH Bureau of Health Facilities and Services, to attain full accreditation.",
+  "Section 6 — Existing physical structures, professional health care services, facilities and equipment are comprehensively upgraded and expanded to accommodate the increased bed capacity, incorporating modern infrastructure, advanced medical technologies and innovative systems.",
+  "Section 7 — The existing workforce — doctors, nurses, other health care practitioners and support personnel — shall be increased accordingly. The MOH, coordinating with the Ministry of Finance, Budget and Management and the hospital management, determines the additional plantilla positions to be created and filled.",
+  "Section 8 — The hospital remains under the administrative supervision of the MOH, authorised to establish and approve the organisational structure and personnel.",
+  "Section 9 — Implementing rules to be formulated by the MOH within 60 days of promulgation.",
+  "Section 10 — An initial ₱50,000,000 is charged against the 2025 General Appropriation Act of the Bangsamoro, with funds for operations thereafter in the annual appropriations for the following year.",
+  "Section 13 — Takes effect 15 days after complete publication in a newspaper of general circulation in the BARMM."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Patients across the BARMM needing tertiary care",
+   "Residents of Maguindanao del Sur",
+   "Doctors in residency training",
+   "Health workers"
+  ],
+  "impact_tags": [
+   "health",
+   "budget_appropriations",
+   "education"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱50,000,000 initial, charged against the 2025 GAAB",
+  "figures_note": "Quoted from Sections 5 and 10: Level II to Level III, 350-bed capacity, ₱50,000,000 initial."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2025-05-26"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/08/BAA-74.pdf",
+  "irr": "Required from the MOH within 60 days of promulgation. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill 225",
+  "related_note": "The apex of the region's hospital network, sitting above the district and provincial facilities upgraded by BAA 25–30, 73, 76 and 80. Quotes DOH Administrative Order 2012-0012 for its classification standards."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱50,000,000 initial",
+  "irr_status": "Section 9 required MOH rules within 60 days of promulgation.",
+  "note": "Read from the enacted text as signed. Level III accreditation depends on meeting every service standard in Section 4; whether the hospital has attained it is not recorded here."
+ },
+ "citizen_questions": [
+  {
+   "q": "What does Level III mean for me?",
+   "a": "It is the highest hospital classification. On top of everything a Level II provides, the hospital must have accredited residency training in four specialties, trauma and stroke care, an oncology and wellness centre, physical medicine and rehabilitation, an ambulatory surgical clinic, dialysis, a blood bank, a tertiary laboratory with histopathology, and Level III imaging with interventional radiology."
+  },
+  {
+   "q": "How many beds?",
+   "a": "350, up from its Level II capacity."
+  },
+  {
+   "q": "Where is it?",
+   "a": "Datu Hoffer Ampatuan, Maguindanao del Sur. It becomes the region's referral hospital, renamed the Bangsamoro Regional Hospital and Medical Center."
+  },
+  {
+   "q": "How much money is behind it?",
+   "a": "An initial ₱50 million from the 2025 Bangsamoro budget — the same initial figure given to 25-bed hospitals elsewhere in the registry. Continuing operations come through later annual appropriations."
+  },
+  {
+   "q": "When will the services exist?",
+   "a": "The act sets no completion deadline. Implementing rules were due from the Ministry of Health within 60 days, and full Level III accreditation depends on meeting every standard in Section 4."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 74",
+  "line2": "Bangsamoro Regional Hospital and Medical Center Act of 2025",
+  "badges": [
+   "IN FORCE",
+   "Health",
+   "2025"
+  ],
+  "what_this_does": "Upgrades the Maguindanao Provincial Hospital into the region's 350-bed Level III teaching hospital.",
+  "who_it_affects": "Patients across the BARMM · doctors in training · health workers"
+ },
+ "views": {
+  "simple": "Upgrades the Maguindanao Provincial Hospital to Level III with 350 beds and renames it the Bangsamoro Regional Hospital and Medical Center — the region's top referral hospital, with cancer care, dialysis, trauma and stroke services and accredited residency training.",
+  "official": "AN ACT UPGRADING THE MAGUINDANAO PROVINCIAL HOSPITAL TO BE KNOWN AS THE “BANGSAMORO REGIONAL HOSPITAL AND MEDICAL CENTER” TO A LEVEL III HOSPITAL, AND THEREBY INCREASING ITS BED CAPACITY TO THREE HUNDRED FIFTY, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 74, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

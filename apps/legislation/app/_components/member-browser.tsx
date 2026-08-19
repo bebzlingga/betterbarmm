@@ -187,20 +187,114 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 		: 'min-[520px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'
 
 	return (
-		<section className='mx-auto max-w-[88rem] px-6 py-12 lg:px-8'>
-			{/* Laid out like the registry: the facets stand open in a column of
-			    their own, the roster reads beside them, and the button by the
-			    search folds the column away for a reader who wants the width.
-			    Both axes animate, because the column is a column on a wide screen
-			    and a stacked block on a narrow one. */}
+		// Less air above the search than below it — see the note on the same
+		// section in `record-browser`.
+		<section className='mx-auto max-w-[88rem] px-6 pb-12 pt-6 sm:pt-12 lg:px-8'>
+			{/* Laid out like the registry, and for the same reasons — see the notes
+			    on the same grid in `record-browser`. The facets stand open in a
+			    column of their own, the roster reads beside them, and the button by
+			    the search folds the column away for a reader who wants the width.
+			    Stacked, the panel opens below the button that opens it, and the
+			    blocks carry their own margins because a row gap either side of the
+			    collapsed panel is dead space above the roster. */}
 			<div
-				className={`grid gap-10 transition-[grid-template-columns,column-gap] duration-300 ease-out ${
+				className={`grid grid-cols-1 transition-[grid-template-columns,column-gap] duration-300 ease-out ${
 					filtersOpen
-						? 'lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)] lg:gap-24 xl:grid-cols-[minmax(0,24rem)_minmax(0,1fr)] xl:gap-32'
-						: 'lg:grid-cols-[minmax(0,0rem)_minmax(0,1fr)] lg:gap-0 xl:grid-cols-[minmax(0,0rem)_minmax(0,1fr)] xl:gap-0'
+						? 'lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)] lg:gap-x-24 xl:grid-cols-[minmax(0,24rem)_minmax(0,1fr)] xl:gap-x-32'
+						: 'lg:grid-cols-[minmax(0,0rem)_minmax(0,1fr)] lg:gap-x-0 xl:grid-cols-[minmax(0,0rem)_minmax(0,1fr)] xl:gap-x-0'
 				}`}
 			>
-				{/* ---- Column one: filters ----
+				{/* ---- Search, then the roster it searches ---- */}
+				<div className='order-1 min-w-0 lg:order-none lg:col-start-2 lg:row-start-1'>
+					{/* Stacked, the search takes its own full-width line and the two
+					    controls that act on it share the line below. From `sm` the
+					    three sit on one row, the search taking 60% of it — a full-width
+					    box over a grid of short cells reads heavier than the thing it
+					    searches — with the toggle where the column it controls begins. */}
+					<div className='grid grid-cols-2 gap-2.5 sm:grid-cols-[auto_60%_1fr] sm:items-center'>
+						<button
+							type='button'
+							onClick={() => setFiltersOpen((current) => !current)}
+							aria-expanded={filtersOpen}
+							aria-controls='member-filters'
+							className='btn btn-quiet btn-field order-2 h-11 shrink-0 sm:order-none'
+						>
+							{/* The icon says what the button will do next: a funnel to
+							    open the facets, a cross to put them away. */}
+							{filtersOpen ? (
+								<XIcon size={15} weight='bold' aria-hidden='true' />
+							) : (
+								<FunnelIcon
+									size={15}
+									weight={activeCount > 0 ? 'fill' : 'regular'}
+									aria-hidden='true'
+								/>
+							)}
+							Filters
+							{activeCount > 0 ? (
+								<span className='num inline-flex size-[18px] items-center justify-center rounded-full bg-[var(--ink)] text-[11px] text-[var(--paper)]'>
+									{activeCount}
+								</span>
+							) : null}
+						</button>
+
+						<label className='relative order-1 col-span-2 block sm:order-none sm:col-span-1'>
+							<span className='sr-only'>Search members</span>
+							<svg
+								className='pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-[var(--ink-mute)]'
+								viewBox='0 0 24 24'
+								fill='none'
+								stroke='currentColor'
+								strokeWidth='2'
+								strokeLinecap='round'
+								aria-hidden='true'
+							>
+								<circle cx='11' cy='11' r='7' />
+								<path d='m20 20-3.5-3.5' />
+							</svg>
+							<input
+								value={query}
+								onChange={(event) => setQuery(event.target.value)}
+								onKeyDown={(event) => {
+									if (event.key === 'Escape') setQuery('')
+								}}
+								placeholder='Search members by name, role, or province'
+								className='field field-search'
+							/>
+						</label>
+
+						{/* Pushed to the far edge of the row, away from the search — it
+						    orders the roster rather than narrowing it. */}
+						<label className='relative order-3 block sm:order-none sm:w-52 sm:justify-self-end'>
+							<span className='sr-only'>Sort</span>
+							<select
+								value={sort}
+								onChange={(event) => setSort(event.target.value as SortKey)}
+								className='field field-select cursor-pointer appearance-none'
+							>
+								{SORT_OPTIONS.map((option) => (
+									<option key={option.value} value={option.value}>
+										{option.label}
+									</option>
+								))}
+							</select>
+							<svg
+								className='pointer-events-none absolute right-3 top-1/2 size-3.5 -translate-y-1/2 text-[var(--ink-mute)]'
+								viewBox='0 0 24 24'
+								fill='none'
+								stroke='currentColor'
+								strokeWidth='2'
+								strokeLinecap='round'
+								strokeLinejoin='round'
+								aria-hidden='true'
+							>
+								<path d='m6 9 6 6 6-6' />
+							</svg>
+						</label>
+					</div>
+				</div>
+
+				{/* ---- The filters themselves ----
 
 				    The sticky element carries no overflow of its own: clipping it
 				    would make it its own scrollport and sticky would stop tracking
@@ -208,14 +302,24 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 				<aside
 					id='member-filters'
 					aria-hidden={!filtersOpen}
-					className='lg:sticky lg:top-24 lg:self-start'
+					className={`order-2 lg:order-none lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:mt-0 lg:sticky lg:top-24 lg:self-start ${
+						filtersOpen ? 'mt-7' : ''
+					}`}
 				>
 					<div
 						className={`grid overflow-hidden transition-[grid-template-rows,opacity] duration-300 ease-out ${
 							filtersOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
 						}`}
 					>
-						<div className='grid min-h-0 gap-6 overflow-hidden lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:pr-1'>
+						{/* Open on a phone this is most of a screen, so it scrolls within
+						    a cap rather than burying the roster it is there to narrow. */}
+						<div
+							className={`grid min-h-0 gap-6 lg:max-h-[calc(100vh-8rem)] lg:pr-1 ${
+								filtersOpen
+									? 'max-h-[60vh] overflow-y-auto overscroll-contain lg:max-h-[calc(100vh-8rem)]'
+									: 'overflow-hidden'
+							}`}
+						>
 							<FilterGroup
 								label='Parliament'
 								options={dataset.parliaments.map((parliament) => ({
@@ -255,102 +359,20 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 								</div>
 								<p className='text-[13px] leading-5 text-[var(--ink-mute)]'>
 									{dataset.stats.withMeasures} of {dataset.stats.total} members can be linked to a
-									measure, drawn from the {dataset.stats.measuresCredited} measures whose authors
-									this registry records. An empty profile means those measure pages haven&rsquo;t
-									been read yet, not that the member filed nothing.
+									measure, drawn from the {dataset.stats.measuresCredited}{' '}
+									measures whose authors this registry records. An empty profile means those measure
+									pages haven&rsquo;t been read yet, not that the member filed nothing.
 								</p>
 							</div>
 						</div>
 					</div>
 				</aside>
 
-				{/* ---- Column two: search, then the roster it searches ---- */}
-				<div className='min-w-0'>
-					{/* The search field takes 60% of the row rather than all of it —
-					    a full-width box over a grid of short cells reads heavier than
-					    the thing it searches. The filter toggle sits to its left,
-					    where the column it controls begins. */}
-					<div className='grid gap-2.5 sm:grid-cols-[auto_60%_1fr] sm:items-center'>
-						<button
-							type='button'
-							onClick={() => setFiltersOpen((current) => !current)}
-							aria-expanded={filtersOpen}
-							aria-controls='member-filters'
-							className='btn btn-quiet btn-field h-11 shrink-0'
-						>
-							{/* The icon says what the button will do next: a funnel to
-							    open the facets, a cross to put them away. */}
-							{filtersOpen ? (
-								<XIcon size={15} weight='bold' aria-hidden='true' />
-							) : (
-								<FunnelIcon
-									size={15}
-									weight={activeCount > 0 ? 'fill' : 'regular'}
-									aria-hidden='true'
-								/>
-							)}
-							<span className='hidden sm:inline'>Filters</span>
-							{activeCount > 0 ? (
-								<span className='num inline-flex size-[18px] items-center justify-center rounded-full bg-[var(--ink)] text-[11px] text-[var(--paper)]'>
-									{activeCount}
-								</span>
-							) : null}
-						</button>
+				{/* ---- The roster itself ----
 
-						<label className='relative block'>
-							<span className='sr-only'>Search members</span>
-							<svg
-								className='pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-[var(--ink-mute)]'
-								viewBox='0 0 24 24'
-								fill='none'
-								stroke='currentColor'
-								strokeWidth='2'
-								strokeLinecap='round'
-								aria-hidden='true'
-							>
-								<circle cx='11' cy='11' r='7' />
-								<path d='m20 20-3.5-3.5' />
-							</svg>
-							<input
-								value={query}
-								onChange={(event) => setQuery(event.target.value)}
-								onKeyDown={(event) => {
-									if (event.key === 'Escape') setQuery('')
-								}}
-								placeholder='Search members by name, role, or province'
-								className='field field-search'
-							/>
-						</label>
-
-						{/* Pushed to the far edge of the row, away from the search — it
-						    orders the roster rather than narrowing it. */}
-						<label className='relative block sm:w-52 sm:justify-self-end'>
-							<span className='sr-only'>Sort</span>
-							<select
-								value={sort}
-								onChange={(event) => setSort(event.target.value as SortKey)}
-								className='field field-select cursor-pointer appearance-none'
-							>
-								{SORT_OPTIONS.map((option) => (
-									<option key={option.value} value={option.value}>
-										{option.label}
-									</option>
-								))}
-							</select>
-							<svg
-								className='pointer-events-none absolute right-3 top-1/2 size-3.5 -translate-y-1/2 text-[var(--ink-mute)]'
-								viewBox='0 0 24 24'
-								fill='none'
-								stroke='currentColor'
-								strokeWidth='2'
-								strokeLinecap='round'
-								strokeLinejoin='round'
-								aria-hidden='true'
-							>
-								<path d='m6 9 6 6 6-6' />
-							</svg>
-						</label>
-					</div>
+				    Follows the controls on a phone and sits under them in column
+				    two on a wide screen. */}
+				<div className='order-3 min-w-0 lg:order-none lg:col-start-2 lg:row-start-2'>
 
 					{/* ---- Result summary ----
 

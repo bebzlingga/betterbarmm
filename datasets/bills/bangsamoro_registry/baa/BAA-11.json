@@ -1,161 +1,222 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 11,
-    "short_title": "Defines the Power of Appointment in the Bangsamoro",
-    "official_title": "AN ACT DEFINING THE POWER OF APPOINTMENT IN THE BANGSAMORO AUTONOMOUS REGION",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2020-06-25",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Defines the Power of Appointment in the Bangsamoro Autonomous Region.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Defines the Power of Appointment in the Bangsamoro Autonomous Region.",
-    "who_will_be_affected": [
-      "General public"
-    ],
-    "when_will_it_take_effect": "Ratified 2020-06-25; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "A governance law shaping how the Bangsamoro Government works. Its effect on daily life is indirect but real: clearer rules inside government generally mean faster, more accountable service at the counter.",
-      "in_practice": [
-        "Defines powers, procedures, or structures within the regional government"
-      ],
-      "for_specific_groups": {
-        "General public": "Better-defined government duties are the basis for demanding service"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Better-ordered government, indirectly better service.",
-        "direct_benefits": [
-          {
-            "benefit": "Clearer rules inside government you can hold offices to",
-            "who_gets_it": "General public",
-            "how_to_access": "Cite the law when following up transactions"
-          }
-        ],
-        "indirect_benefits": [
-          "Institutional maturity of the autonomy"
-        ],
-        "limitations": [
-          "Benefits are structural rather than claimable programs"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 11,
+  "short_title": "Power of Appointment in the Bangsamoro",
+  "official_title": "AN ACT DEFINING THE POWER OF APPOINTMENT IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2020-06-25",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Second Regular Session",
+  "date_passed": "2020-06-25",
+  "date_approved_by_chief_minister": "2020-06-29",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "governance_other",
-      "other"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2020-06-25"
-    }
+  "effectivity": "15 days after publication in a newspaper of general circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Settles who in the Bangsamoro Government has the power to hire — the Chief Minister for senior posts, the Speaker for Parliament's own staff, and each head of office for everyone at Salary Grade 24 and below.",
+  "why_was_it_proposed": "A new government inherited ministries, bureaus, boards and commissions without a single rule on who could appoint whom. The act draws the line by salary grade, and requires appointments to be merit-based with attention to gender and ethnic balance.",
+  "what_will_change": "Appointment authority is fixed by position rather than negotiated office by office. Salary Grade 25 and above sits with the Chief Minister; SG 24 and below sits with each head of office; Parliament's own staff sit with the Speaker.",
+  "who_will_be_affected": [
+   "Anyone applying for a job in the Bangsamoro Government — which office decides your appointment now depends on the salary grade",
+   "Heads of ministries, offices, commissions, boards and agencies, whose appointing power is defined and limited",
+   "Heads of offices attached to a ministry, who do not hold this appointing power unless their own charter gives it",
+   "Staff of individual Members of Parliament, who are appointed only on that member's recommendation"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "OCM",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2020-06-25 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "OCM (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 11",
-    "line2": "Defines the Power of Appointment in the Bangsamoro",
-    "badges": [
-      "ENACTED",
-      "Governance Other",
-      "2020"
+  "when_will_it_take_effect": "In force since 2020 — 15 days after publication in a newspaper of general circulation.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. Who hires you in the Bangsamoro Government depends on your salary grade: SG 25 and above is the Chief Minister, SG 24 and below is your head of office, and Parliament's own staff answer to the Speaker.",
+   "in_practice": [
+    "Chief Minister: heads of ministries, offices, commissions, boards, agencies and bureaus; heads of Bangsamoro-owned or controlled corporations with original charters; deputy ministers and directors; and every position at Salary Grade 25 and above",
+    "Speaker: all career positions in Parliament, including coterminous and contractual posts and contracts of service — but must consult the Chief Minister for SG 25 and above",
+    "Heads of office: positions at Salary Grade 24 and below in their own agency",
+    "Staff of an individual MP: appointed only on that member's recommendation, and supervised by them directly",
+    "All appointments must be merit-based and consider gender and ethnic balance"
+   ],
+   "for_specific_groups": {
+    "Job applicants": "The salary grade of the post tells you which office decides. SG 24 and below is decided inside the agency; SG 25 and above goes to the Chief Minister.",
+    "Heads of attached offices": "Section 3 is explicit — if your office is attached to a ministry, you do not hold this appointing power unless the law creating your office says so.",
+    "Parliament staff": "The Speaker appoints and administratively supervises, except for staff of individual members.",
+    "Women and non-Moro applicants": "Section 5 requires gender and ethnic balance to be considered, though it sets no target or quota."
+   },
+   "where_this_applies": "The whole Bangsamoro Government, its bureaus, boards, commissions, agencies, and Bangsamoro-owned or controlled corporations with original charters.",
+   "when_you_will_feel_it": "In force since 2020.",
+   "what_you_can_do": [
+    "Check the salary grade of a post to know which office decides the appointment",
+    "If you work for an office attached to a ministry, check your own charter before assuming your head can appoint"
+   ],
+   "watch_out_for": [
+    "'Strictly merit-based' and 'gender and ethnic balance' are stated as policy in Section 5, with no mechanism, target or remedy attached.",
+    "The act creates no appeals route for a rejected applicant and no penalty for an appointment made outside these rules.",
+    "It concentrates every senior appointment — SG 25 and up, across the whole government — in one office."
+   ],
+   "key_terms_explained": {
+    "Salary Grade": "The pay level of a government post. It is the dividing line this act uses: 24 and below, versus 25 and above.",
+    "Coterminous position": "A post that ends when the official who appointed you leaves.",
+    "Original charter": "A government corporation created by its own law rather than registered like a private company.",
+    "Attached office": "An office placed under a ministry for policy and programme coordination while keeping some independence."
+   },
+   "status_note": "Passed 25 June 2020, approved by the Chief Minister on 29 June 2020.",
+   "benefits": {
+    "headline": "One clear rule on who appoints whom, drawn at Salary Grade 25.",
+    "direct_benefits": [
+     {
+      "benefit": "A published, checkable answer to 'who decides this appointment'",
+      "who_gets_it": "Applicants and government staff",
+      "how_to_access": "Section 4"
+     },
+     {
+      "benefit": "MPs choose and supervise their own office staff",
+      "who_gets_it": "Members of Parliament and their staff",
+      "how_to_access": "Section 4(c)"
+     }
     ],
-    "what_this_does": "Defines the Power of Appointment in the Bangsamoro Autonomous Region.",
-    "who_it_affects": "General public",
-    "effective": "2020-06-25"
-  },
-  "views": {
-    "simple": "Defines the Power of Appointment in the Bangsamoro Autonomous Region.",
-    "official": "AN ACT DEFINING THE POWER OF APPOINTMENT IN THE BANGSAMORO AUTONOMOUS REGION"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "A stated merit standard for all Bangsamoro Government hiring",
+     "Gender and ethnic balance written into appointment policy"
+    ],
+    "limitations": [
+     "No quota, target or measurement for gender and ethnic balance.",
+     "No appeal for an applicant.",
+     "No sanction for breach."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public — it governs government."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts for the public. Its one restriction falls on government: a head of an attached office may not exercise this appointing power unless its own charter provides otherwise."
+   ],
+   "penalties": {
+    "for_citizens": "None.",
+    "note": "The act sets no penalty for an appointment made outside these rules."
+   },
+   "where_to_complain": {
+    "first_stop": "The appointing office named in Section 4 for that salary grade",
+    "oversight": "Civil Service rules apply to appointments under this act",
+    "note": "The act creates no complaints or appeals procedure of its own."
+   },
+   "everyday_scenarios": [
+    "Nur applies for an SG 18 post at a Bangsamoro agency. The head of that office appoints — it does not go to the Chief Minister.",
+    "A director post at SG 26 opens. That is the Chief Minister's appointment, whatever the agency prefers.",
+    "An MP wants to hire a legislative aide. The Speaker makes the appointment, but only on that member's recommendation, and the member supervises the staffer directly.",
+    "An office attached to a ministry wants to hire its own staff. Unless the law that created it says so, it does not hold the appointing power this act describes."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 2 — Purpose: effective and efficient selection and appointment of officials and personnel across ministries, offices, bureaus, boards, commissions and agencies, based on merit and with due consideration to gender and ethnic balance.",
+  "Section 3 — Defines the power of appointment as the authority exercised under the Organic Law (RA 11054), regional laws, and Civil Service laws and rules. Defines heads of office, and provides that heads of offices attached to a ministry shall not exercise this appointing power unless the law creating the office provides otherwise.",
+  "Section 4(a)–(b) — The Chief Minister appoints heads of ministries, offices, commissions, boards, agencies and bureaus, and heads of Bangsamoro-owned or controlled corporations or entities with original charters; and likewise deputy ministers, directors or their equivalents, and all positions at Salary Grade 25 and above, unless a law expressly provides otherwise.",
+  "Section 4(c) — The Speaker exercises administrative supervision over Parliament's legislative personnel, staff and secretariat, and appoints to all career positions in Parliament including coterminous and contractual positions and contracts of service — consulting the Chief Minister on posts at Salary Grade 25 and above. Personnel under the office of an individual Member of Parliament are appointed only on that member's recommendation, and that member exercises direct supervision and control over them.",
+  "Section 4(d) — Heads of offices appoint officials and employees at Salary Grade 24 and below in their own agencies.",
+  "Section 5 — Appointments are to be made through an independent, strictly merit-based and credible placement and hiring process across all offices, agencies and institutions, and shall consider gender and ethnic balance.",
+  "Section 8 — Takes effect 15 days after publication in a newspaper of general circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Government job applicants",
+   "Bangsamoro Government agencies",
+   "Parliament staff"
+  ],
+  "impact_tags": [
+   "governance_civil_service"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": null,
+  "figures_note": "The act appropriates no funds."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2020-06-25"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2020/05/BAA-11.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 46",
+  "related_note": "Grounded on Article VII, Section 32 of the Organic Law (RA 11054). Sits alongside the Bangsamoro Civil Service Code (BAA 17), which governs the wider terms of public employment in the region."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": null,
+  "irr_status": "None required by the act.",
+  "note": "Read from the enacted text as signed."
+ },
+ "citizen_questions": [
+  {
+   "q": "Who decides whether I get the job?",
+   "a": "It depends on the salary grade. Salary Grade 24 and below is appointed by the head of the office you applied to. Salary Grade 25 and above is appointed by the Chief Minister."
+  },
+  {
+   "q": "Who hires Parliament's staff?",
+   "a": "The Speaker, who also administratively supervises them — but must consult the Chief Minister for posts at Salary Grade 25 and above. Staff of an individual MP are appointed only on that member's recommendation."
+  },
+  {
+   "q": "Does my head of office always have the power to hire?",
+   "a": "Not if the office is attached to a ministry. Section 3 says heads of attached offices do not exercise this appointing power unless the law creating the office provides otherwise."
+  },
+  {
+   "q": "Does the law require fair hiring?",
+   "a": "It requires an independent, strictly merit-based and credible process, and says appointments shall consider gender and ethnic balance. It sets no target and provides no remedy if that is ignored."
+  },
+  {
+   "q": "Can I appeal if I am passed over?",
+   "a": "Not under this act — it creates no appeals procedure. Civil Service laws and rules still apply to appointments made under it."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 11",
+  "line2": "Power of Appointment",
+  "badges": [
+   "IN FORCE",
+   "Governance & Civil Service",
+   "2020"
+  ],
+  "what_this_does": "Fixes who appoints whom across the Bangsamoro Government, drawn at Salary Grade 25.",
+  "who_it_affects": "Government job applicants · agency heads · Parliament staff"
+ },
+ "views": {
+  "simple": "Sets who has the power to hire in the Bangsamoro Government: the Chief Minister from Salary Grade 25 up, heads of office at 24 and below, and the Speaker for Parliament's own staff.",
+  "official": "AN ACT DEFINING THE POWER OF APPOINTMENT IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 11, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

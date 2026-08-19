@@ -1,198 +1,224 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 67,
-    "short_title": "an Act Creating the Pura Municipal Hospital Act",
-    "official_title": "AN ACT CREATING THE PURA MUNICIPAL HOSPITAL IN DATU BLAH T. SINSUAT, MAGUINDANAO DEL NORTE",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2024-12-12",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Creates the Pura Municipal Hospital in Datu Blah T. Sinsuat, Maguindanao del Norte.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Creates the Pura Municipal Hospital in Datu Blah T. Sinsuat, Maguindanao del Norte.",
-    "who_will_be_affected": [
-      "Residents of Maguindanao Del Norte",
-      "Pregnant women",
-      "Senior citizens & PWDs",
-      "Health workers"
-    ],
-    "when_will_it_take_effect": "Ratified 2024-12-12; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Establishes a public hospital serving Maguindanao Del Norte. For nearby families this means emergency and inpatient care closer to home instead of long, costly trips to distant referral hospitals.",
-      "in_practice": [
-        "More beds means fewer 'no vacancy' referrals and less floor-space crowding during outbreaks",
-        "A higher hospital level allows more services on-site: surgery, specialist clinics, better laboratory and imaging, more doctors and nurses on the plantilla",
-        "PhilHealth-accredited services expand with the facility's level, lowering out-of-pocket costs",
-        "Construction, staffing, and supplies take time after enactment - upgrades typically roll out over one or more budget years"
-      ],
-      "for_specific_groups": {
-        "Residents of Maguindanao Del Norte": "Shorter travel time in emergencies - often the difference between life and death for stroke, hemorrhage, and obstetric cases",
-        "Pregnant women": "Facility-based deliveries and emergency obstetric care become available nearer home",
-        "Senior citizens & PWDs": "Follow-up care and dialysis/maintenance services without long-distance travel",
-        "Health workers": "New plantilla positions (nurses, midwives, med-techs, doctors) usually open when a hospital is created or upgraded - watch the MOH and hospital job postings"
-      },
-      "where_this_applies": "Maguindanao Del Norte",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Ask the Ministry of Health (MOH-BARMM) or the hospital chief when the added beds/services actually open"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Closer, bigger, better-equipped public healthcare for Maguindanao Del Norte.",
-        "direct_benefits": [
-          {
-            "benefit": "Emergency and inpatient care near home (expanded capacity) instead of long referral trips",
-            "who_gets_it": "Residents of Maguindanao Del Norte",
-            "how_to_access": "Go directly; public hospitals cannot refuse emergencies"
-          },
-          {
-            "benefit": "More services as the hospital's level rises: surgery, laboratory, imaging, specialty clinics",
-            "who_gets_it": "Patients in the catchment area",
-            "how_to_access": "Outpatient department; bring PhilHealth/ID"
-          },
-          {
-            "benefit": "Lower out-of-pocket costs as PhilHealth-accredited services expand with the facility level",
-            "who_gets_it": "PhilHealth members and indigents (automatic UHC coverage)",
-            "how_to_access": "Hospital PhilHealth desk / Malasakit-type assistance where present"
-          },
-          {
-            "benefit": "Safer childbirth: facility-based delivery and emergency obstetric care nearby",
-            "who_gets_it": "Pregnant women",
-            "how_to_access": "Prenatal check-ups at the RHU, delivery at the hospital"
-          },
-          {
-            "benefit": "New jobs: doctors, nurses, midwives, med-techs, admin and support staff",
-            "who_gets_it": "Health professionals and local job seekers",
-            "how_to_access": "Watch MOH-BARMM and hospital postings"
-          }
-        ],
-        "indirect_benefits": [
-          "Decongests referral hospitals for everyone else",
-          "Local economy around the hospital (transport, food, pharmacies)",
-          "Faster outbreak and disaster response capacity in the area"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Bed count on paper becomes real only after construction/hiring - ask the hospital chief for the timeline"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 67,
+  "short_title": "Pura Municipal Hospital Act of 2022",
+  "official_title": "AN ACT CREATING AND ESTABLISHING THE PURA MUNICIPAL HOSPITAL IN THE MUNICIPALITY OF DATU BLAH T. SINSUAT, PROVINCE OF MAGUINDANAO DEL NORTE, BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2024-12-12",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session (begun 15 September 2022)",
+  "date_passed": "2024-12-12",
+  "date_passed_hijri": "Jumada Al-Akhirah 11, 1446",
+  "date_approved_by_chief_minister": "2025-01-09",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Health workers",
-      "Hospitals",
-      "Patients"
-    ],
-    "impact_tags": [
-      "health",
-      "hospital_health"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2024-12-12"
-    }
+  "effectivity": "15 days after full publication in a newspaper of general circulation in the BARMM",
+  "title_note": "The act's own short title calls it the “Pura Municipal Hospital Act of 2022”, although it was passed in December 2024 and approved in January 2025. The registry records the short title as enacted."
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates the Pura Municipal Hospital in Barangay Pura, Datu Blah T. Sinsuat, Maguindanao del Norte — at least 25 beds, serving the municipality and the coastal areas around it.",
+  "why_was_it_proposed": "The Organic Law duty to provide comprehensive and integrated health service delivery and establish a general hospital system by law.",
+  "what_will_change": "A hospital is created with at least 25 beds to national DOH minimum standards, expressly available to patients from adjacent municipalities, especially the coastal areas of Maguindanao del Norte.",
+  "who_will_be_affected": [
+   "Residents of Datu Blah T. Sinsuat — the municipality BAA 90 would rename West Upi",
+   "Patients from adjacent municipalities, especially coastal areas",
+   "Existing medical facilities the hospital is to augment and support"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Health (MOH)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2024-12-12 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Health (MOH) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 67",
-    "line2": "an Act Creating the Pura Municipal Hospital Act",
-    "badges": [
-      "ENACTED",
-      "Hospital Health",
-      "2024"
+  "when_will_it_take_effect": "In force since 2025 — 15 days after full publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. A hospital of at least 25 beds at Barangay Pura, serving Datu Blah T. Sinsuat and — expressly — patients from adjacent coastal municipalities.",
+   "in_practice": [
+    "At least 25 beds, following minimum national Department of Health standards",
+    "Located in Barangay Pura, Municipality of Datu Blah T. Sinsuat",
+    "Serves primarily but not exclusively Datu Blah T. Sinsuat; may extend services to adjacent municipalities, especially coastal areas",
+    "Future upgrades considered on Ministry of Health evaluations and recommendations",
+    "Integrates the Universal Health Care Act into its operations",
+    "₱50,000,000 initial, from the Miscellaneous and Personnel Benefit Fund of the 2025 Bangsamoro budget"
+   ],
+   "for_specific_groups": {
+    "Residents of adjacent municipalities": "Section 5 expressly extends services beyond the host municipality, especially to coastal areas — you are not excluded because you live next door.",
+    "Coastal communities": "Named specifically in the catchment clause.",
+    "Anyone tracking the municipality's name": "BAA 90 would rename Datu Blah T. Sinsuat to West Upi, subject to a plebiscite."
+   },
+   "where_this_applies": "Barangay Pura, Datu Blah T. Sinsuat, Maguindanao del Norte, and adjacent coastal municipalities.",
+   "when_you_will_feel_it": "In force since 2025; delivery depends on the appropriation being released.",
+   "what_you_can_do": [
+    "Ask the Ministry of Health about construction and staffing progress",
+    "Note the bed count is a floor — 'at least' 25 — with upgrades based on MOH evaluation"
+   ],
+   "watch_out_for": [
+    "No completion deadline is set.",
+    "The short title says 2022 although the act was passed in December 2024.",
+    "₱50 million is initial only; later operations depend on annual appropriations."
+   ],
+   "key_terms_explained": {
+    "Catchment area": "The population a hospital is intended to serve.",
+    "Minimum national standards": "The Department of Health's baseline requirements for a hospital of this kind.",
+    "MPBF": "Miscellaneous and Personnel Benefit Fund — the budget line the initial ₱50 million is charged against.",
+    "UHC Act": "Republic Act 11223, the national Universal Health Care law."
+   },
+   "status_note": "Passed Jumada Al-Akhirah 11, 1446 / 12 December 2024, approved by the Chief Minister on 9 January 2025.",
+   "benefits": {
+    "headline": "A hospital of at least 25 beds serving a municipality and its coastal neighbours.",
+    "direct_benefits": [
+     {
+      "benefit": "A hospital with at least 25 beds",
+      "who_gets_it": "Residents of Datu Blah T. Sinsuat",
+      "how_to_access": "Through the hospital once built"
+     },
+     {
+      "benefit": "Services extended to adjacent municipalities, especially coastal areas",
+      "who_gets_it": "Patients from neighbouring coastal communities",
+      "how_to_access": "Section 5 makes the catchment explicitly non-exclusive"
+     },
+     {
+      "benefit": "₱50,000,000 initial appropriation from a named fund",
+      "who_gets_it": "The hospital",
+      "how_to_access": "MPBF of the 2025 GAAB"
+     }
     ],
-    "what_this_does": "Creates the Pura Municipal Hospital in Datu Blah T. Sinsuat, Maguindanao del Norte.",
-    "who_it_affects": "Health workers · Hospitals · Patients",
-    "effective": "2024-12-12"
-  },
-  "views": {
-    "simple": "Creates the Pura Municipal Hospital in Datu Blah T. Sinsuat, Maguindanao del Norte.",
-    "official": "AN ACT CREATING THE PURA MUNICIPAL HOSPITAL IN DATU BLAH T. SINSUAT, MAGUINDANAO DEL NORTE"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Augmentation and support for other existing medical facilities in the area",
+     "Universal Health Care provisions integrated into operations"
+    ],
+    "limitations": [
+     "No completion deadline.",
+     "Bed count is a minimum, with upgrades left to MOH evaluation.",
+     "Continuing funding depends on annual appropriations."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "The hospital administration",
+    "oversight": "Ministry of Health – BARMM, which has administrative supervision",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A patient from a coastal municipality next to Datu Blah T. Sinsuat is within the hospital's stated catchment — Section 5 extends services to adjacent municipalities, especially coastal areas.",
+    "A resident asks whether the hospital can grow beyond 25 beds. Section 4 makes future upgrades a matter for Ministry of Health evaluation and recommendation."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Pura Municipal Hospital Act of 2022”.",
+  "Section 2 — Policy grounded on Section 22, Article IX of the Organic Law: comprehensive and integrated health service delivery, a general hospital system established by law, and the basic right to life made attainable through prompt intervention of excellent and affordable medical services.",
+  "Section 3 — Creates the Pura Municipal Hospital (PMH) in Barangay Pura, Municipality of Datu Blah T. Sinsuat, Maguindanao del Norte.",
+  "Section 4 — The hospital shall have at least 25 beds following the minimum national standards and guidelines of the Department of Health, and shall be equipped and operated accordingly. Future upgrades to expand capacity are considered on evaluations and recommendations by the Ministry of Health.",
+  "Section 5 — The hospital serves primarily but not exclusively patients from Datu Blah T. Sinsuat, and may extend its services as augmentation and support to other existing medical facilities, particularly for patients from adjacent municipalities, especially the coastal areas of Maguindanao del Norte.",
+  "Section 6 — Objectives: highly accessible, affordable and comprehensive healthcare services including hospital care, and integration of all relevant provisions of Republic Act 11223, the Universal Health Care Act.",
+  "Section 7 — The hospital is under the administrative supervision of the Ministry of Health, which determines and approves its organisational structure.",
+  "Section 8 — An initial ₱50,000,000 is charged against the Miscellaneous and Personnel Benefit Fund of the 2025 General Appropriation Act of the Bangsamoro, with later operations included in the annual appropriations.",
+  "Section 10 — Repeals inconsistent BARMM laws, including those enacted by the defunct ARMM Government, on the construction, establishment and operations of the hospital.",
+  "Section 11 — Takes effect 15 days after full publication in a newspaper of general circulation in the BARMM."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of Datu Blah T. Sinsuat",
+   "Patients from adjacent coastal municipalities of Maguindanao del Norte"
+  ],
+  "impact_tags": [
+   "health",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱50,000,000 initial, from the Miscellaneous and Personnel Benefit Fund of the 2025 GAAB",
+  "figures_note": "Quoted from Sections 4 and 8: at least 25 beds, ₱50,000,000 initial."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2024-12-12"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/02/BAA-67.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": "Inconsistent BARMM and former ARMM issuances on this hospital",
+  "origin_bill": "Parliament Bill 123",
+  "related_note": "Passed with BAA 66, 68 and 69 on 12 December 2024. The host municipality, Datu Blah T. Sinsuat, would be renamed West Upi by BAA 90 subject to a plebiscite; its district hospital was separately upgraded by BAA 25."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱50,000,000 initial",
+  "irr_status": "None required by the act.",
+  "note": "Read from the enacted text as signed. The short title dates itself to 2022 although enactment was in December 2024."
+ },
+ "citizen_questions": [
+  {
+   "q": "How big is the hospital?",
+   "a": "At least 25 beds, following minimum national Department of Health standards. Future upgrades depend on Ministry of Health evaluation."
+  },
+  {
+   "q": "Can I use it if I live in the next municipality?",
+   "a": "Yes. Section 5 says the hospital serves primarily but not exclusively Datu Blah T. Sinsuat, and may extend services to adjacent municipalities, especially coastal areas."
+  },
+  {
+   "q": "How much money, and from where?",
+   "a": "An initial ₱50 million from the Miscellaneous and Personnel Benefit Fund of the 2025 Bangsamoro budget."
+  },
+  {
+   "q": "Why does the title say 2022?",
+   "a": "The short title as enacted reads “Pura Municipal Hospital Act of 2022”, although Parliament passed it in December 2024 and it was approved in January 2025. The registry records the title as enacted rather than correcting it."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 67",
+  "line2": "Pura Municipal Hospital Act of 2022",
+  "badges": [
+   "IN FORCE",
+   "Health",
+   "2024"
+  ],
+  "what_this_does": "Creates a hospital of at least 25 beds at Barangay Pura, serving the municipality and adjacent coastal areas.",
+  "who_it_affects": "Residents of Datu Blah T. Sinsuat and adjacent coastal municipalities"
+ },
+ "views": {
+  "simple": "Creates the Pura Municipal Hospital in Datu Blah T. Sinsuat, Maguindanao del Norte, with at least 25 beds and ₱50 million from the 2025 regional budget, serving the municipality and adjacent coastal areas.",
+  "official": "AN ACT CREATING AND ESTABLISHING THE PURA MUNICIPAL HOSPITAL IN THE MUNICIPALITY OF DATU BLAH T. SINSUAT, PROVINCE OF MAGUINDANAO DEL NORTE, BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 67, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

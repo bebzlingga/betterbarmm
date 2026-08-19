@@ -1,169 +1,259 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 83,
-    "short_title": "Creates the Bangsamoro Nutrition Commission",
-    "official_title": "AN ACT CREATING THE BANGSAMORO NUTRITION COMMISSION",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA3",
-    "date_ratified": "2025-11-19",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Creates the Bangsamoro Nutrition Commission.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Creates the Bangsamoro Nutrition Commission.",
-    "who_will_be_affected": [
-      "Target sector of the body",
-      "Job seekers",
-      "CSOs"
-    ],
-    "when_will_it_take_effect": "Ratified 2025-11-19; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Creates or strengthens a public institution. New offices sound bureaucratic, but each one is a service window: a place to bring complaints, apply for programs, or get support that previously had no dedicated home in the region.",
-      "in_practice": [
-        "Once organized (leadership appointed, budget released), it opens programs and services",
-        "Look for its office, hotline, or Facebook page under the Bangsamoro Government",
-        "Its mandate defines what you can demand from it"
-      ],
-      "for_specific_groups": {
-        "Target sector of the body": "You gain a dedicated advocate inside government",
-        "Job seekers": "New institutions hire staff",
-        "CSOs": "A formal counterpart for partnership and accountability"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "An institution dedicated to ending malnutrition.",
-        "direct_benefits": [
-          {
-            "benefit": "Nutrition programs (feeding, first-1000-days, micronutrients) with a responsible body",
-            "who_gets_it": "Children, mothers, food-insecure families",
-            "how_to_access": "Barangay nutrition scholars / MOH-linked programs"
-          }
-        ],
-        "indirect_benefits": [
-          "BARMM's stunting crisis gets an accountable owner"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service."
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 83,
+  "short_title": "Bangsamoro Nutrition Commission Act of 2025",
+  "official_title": "AN ACT CREATING THE BANGSAMORO NUTRITION COMMISSION IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO, PROVIDING FOR ITS MANDATE, POWERS, AND FUNCTIONS, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA3",
+  "date_ratified": "2025-11-19",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Fourth Regular Session (begun 15 September 2022)",
+  "date_passed": "2025-11-19",
+  "date_passed_hijri": "Jumada Al-Awwal 28, 1447",
+  "date_approved_by_chief_minister": null,
+  "approved_by": "Chief Minister Abdulraof A. Macacua — approved in December 2025; the day is handwritten on the signed copy and is not clearly legible in the captured scan, so the registry records the month only.",
+  "signed_by": [
+   "Mohammad S. Yacob, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "hospital_health",
-      "institution_commission",
-      "other"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2025-11-19"
-    }
+  "effectivity": "15 days after publication in the Bangsamoro Gazette or a newspaper of regional circulation within the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates a Bangsamoro Nutrition Commission to lead the region's fight against hunger and malnutrition — with power to require data from any ministry and to make nutrition a scored criterion in local government awards.",
+  "why_was_it_proposed": "The act treats nutritional improvement as the key component of human resource development, and sets out to build a mechanism for collaboration across agencies and sectors on hunger and malnutrition, especially for vulnerable groups.",
+  "what_will_change": "A commission attached to the Office of the Chief Minister becomes the region's policy-making and coordinating body on food, nutrition and food security. Local governments must align their nutrition plans with the regional one and fold them into their investment programmes, and nutrition becomes a mandatory criterion in local governance awards.",
+  "who_will_be_affected": [
+   "Children and families affected by hunger and malnutrition",
+   "Every LGU in the region, whose nutrition plans and staffing are now scored",
+   "Barangays, which are expected to recruit Barangay Nutrition Scholars",
+   "Ministries running feeding programmes, which must coordinate through the Commission"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Health (MOH)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2025-11-19 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Health (MOH) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 83",
-    "line2": "Creates the Bangsamoro Nutrition Commission",
-    "badges": [
-      "ENACTED",
-      "Hospital Health",
-      "Institution Commission",
-      "2025"
+  "when_will_it_take_effect": "In force from 2026 — 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. The region has a Nutrition Commission that can demand data from any ministry, must align every LGU's nutrition plan with the regional one, and makes nutrition a scored criterion for local government awards.",
+   "in_practice": [
+    "A Bangsamoro Nutrition Commission attached to the Office of the Chief Minister",
+    "A Board of Commissioners headed by a Chairperson who must be a nutrition expert, appointed by the Chief Minister for 6 years",
+    "Five ex officio members: the Ministers of Health; Basic, Higher and Technical Education; Agriculture, Fisheries and Agrarian Reform; Interior and Local Government; and Social Services and Development",
+    "It leads the Bangsamoro Plan of Action for Nutrition and the Bangsamoro Food Security and Nutrition Plan",
+    "It may require submission of all necessary data, records and reports, and reports findings to the Chief Minister and Parliament",
+    "Every LGU's Local Nutrition Action Plan must be consistent with the regional plan and integrated into its Annual Investment Program",
+    "Nutrition becomes a mandatory criterion in local governance awards, scored on four indicators",
+    "₱15,000,000 initial, transferred directly to the Commission"
+   ],
+   "for_specific_groups": {
+    "Families facing hunger": "The Commission is the region's coordinating body on food and nutrition, working with the ministries that run the Supplementary Feeding Program and the School-Based Feeding Program.",
+    "Local government units": "Your nutrition plan must align with the regional plan and enter your Annual Investment Program. Four things are scored for governance awards: activating a Local Nutrition Committee, integrating the plan into your investment programme, recruiting Barangay Nutrition Scholars, and hiring a Registered Nutritionist-Dietitian as Nutrition Action Officer.",
+    "Nutritionists and dietitians": "Section 13 pushes LGUs to hire a Registered Nutritionist-Dietitian as Nutrition Action Officer.",
+    "Barangays": "Recruitment of Barangay Nutrition Scholars is one of the scored indicators."
+   },
+   "where_this_applies": "The whole BARMM, including every local government unit.",
+   "when_you_will_feel_it": "Through local nutrition plans, feeding programmes and LGU staffing.",
+   "what_you_can_do": [
+    "Ask your LGU whether its Local Nutrition Action Plan is in the Annual Investment Program",
+    "Ask whether your municipality has a Local Nutrition Committee and a Nutrition Action Officer",
+    "Ask the Commission for its periodic programmatic reviews — it must submit findings and recommendations to the Chief Minister and Parliament"
+   ],
+   "watch_out_for": [
+    "The Commission is a policy, coordinating and monitoring body — it does not itself deliver food or run feeding programmes.",
+    "The award indicators create pressure on LGUs but carry no penalty for failing them.",
+    "₱15 million is a floor for a region-wide mandate."
+   ],
+   "key_terms_explained": {
+    "BPAN": "Bangsamoro Plan of Action for Nutrition — the regional plan every local plan must align with.",
+    "BFSNP": "Bangsamoro Food Security and Nutrition Plan.",
+    "LNAP": "Local Nutrition Action Plan, prepared by each LGU.",
+    "AIP": "Annual Investment Program — an LGU's yearly spending plan, which must now include the nutrition plan.",
+    "Barangay Nutrition Scholar": "A community-level nutrition worker; recruiting them is one of the scored indicators.",
+    "Subsidiarity": "The principle that decisions are made at the most local level capable of handling them — invoked here to align regional and national plans."
+   },
+   "status_note": "Passed Jumada Al-Awwal 28, 1447 / 19 November 2025, approved by the Chief Minister in December 2025.",
+   "benefits": {
+    "headline": "A dedicated commission for hunger and malnutrition, with real leverage over local governments.",
+    "direct_benefits": [
+     {
+      "benefit": "A regional body coordinating food, nutrition and food security policy",
+      "who_gets_it": "Everyone in the BARMM, especially vulnerable groups",
+      "how_to_access": "Through its policies, plans and programmatic reviews"
+     },
+     {
+      "benefit": "Local nutrition plans aligned to the regional plan and funded through LGU investment programmes",
+      "who_gets_it": "Communities",
+      "how_to_access": "Required by Section 12"
+     },
+     {
+      "benefit": "Nutrition staffing at local level — Nutrition Action Officers and Barangay Nutrition Scholars",
+      "who_gets_it": "Barangays and municipalities",
+      "how_to_access": "Scored under Section 13 in governance awards"
+     },
+     {
+      "benefit": "Findings and policy recommendations submitted to the Chief Minister and Parliament",
+      "who_gets_it": "Anyone tracking nutrition policy",
+      "how_to_access": "Regular submissions required by Section 5(b)"
+     }
     ],
-    "what_this_does": "Creates the Bangsamoro Nutrition Commission.",
-    "who_it_affects": "General public",
-    "effective": "2025-11-19"
-  },
-  "views": {
-    "simple": "Creates the Bangsamoro Nutrition Commission.",
-    "official": "AN ACT CREATING THE BANGSAMORO NUTRITION COMMISSION"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Coordination with the Supplementary Feeding and School-Based Feeding Programs",
+     "Research on the state of food security and nutrition in the region",
+     "Authority to accept domestic and foreign grants"
+    ],
+    "limitations": [
+     "It coordinates and monitors; it does not deliver services.",
+     "No penalty attaches to the LGU indicators.",
+     "₱15 million is an initial floor."
+    ]
+   },
+   "your_responsibilities": {
+    "for_lgus": [
+     "Keep your Local Nutrition Action Plan consistent with the Bangsamoro Plan of Action for Nutrition",
+     "Integrate the plan into your Annual Investment Program and pass the ordinances needed to implement it",
+     "Activate a Local Nutrition Committee, recruit Barangay Nutrition Scholars, and hire a Registered Nutritionist-Dietitian as Nutrition Action Officer"
+    ],
+    "for_ministries": [
+     "Submit data, records and reports the Commission requires for its programmatic reviews"
+    ],
+    "for_citizens": [
+     "None."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts for the public and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment.",
+    "note": "The act relies on award criteria and reporting rather than sanctions to move local governments."
+   },
+   "where_to_complain": {
+    "first_stop": "Bangsamoro Nutrition Commission, attached to the Office of the Chief Minister",
+    "for_local_issues": "Your LGU's Local Nutrition Committee and Nutrition Action Officer; the Ministry of the Interior and Local Government, which develops the assessment tools",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A parent asks why the school feeding programme is inconsistent. The Commission coordinates with the education ministry on the School-Based Feeding Program and with social services on the Supplementary Feeding Program, and can require data on how they are performing.",
+    "A municipality wants to win a local governance award. It must activate a Local Nutrition Committee, fold its nutrition plan into its investment programme, recruit Barangay Nutrition Scholars, and hire a Registered Nutritionist-Dietitian.",
+    "A researcher wants regional malnutrition data. The Commission leads research on the state of food security and nutrition and can require records from any ministry."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Bangsamoro Nutrition Commission Act of 2025”.",
+  "Section 2 — Policy: nutritional improvement is the key component in human resource development; the Bangsamoro Government shall promote and protect access to adequate food and nutrition among all inhabitants, and establish a mechanism for collaboration and cooperation among agencies, sectors and stakeholders in addressing hunger and malnutrition, responsive to constituents and especially vulnerable groups.",
+  "Section 3 — Creates the Bangsamoro Nutrition Commission, attached to the Office of the Chief Minister.",
+  "Section 4 — A Board of Commissioners headed by a Chairperson, who must be a nutrition expert with wide experience of nutrition concerns in the BARMM, appointed by the Chief Minister for a six-year term subject to reappointment; five ex officio members — the Ministers of Health, of Basic, Higher and Technical Education, of Agriculture, Fisheries and Agrarian Reform, of the Interior and Local Government, and of Social Services and Development; and the Executive Director of the Commission Secretariat.",
+  "Section 5 — The Commission is the policy-making and coordinating body on food and nutrition, nutrition and health, and food security. It prescribes regional policies; coordinates planning, monitoring and evaluation of regional programmes including the private sector, conducting periodic in-depth programmatic reviews against the Bangsamoro Plan of Action for Nutrition, with authority to require submission of all necessary data, records and reports, and regularly submitting findings and policy recommendations to the Office of the Chief Minister and Parliament; promotes food security through education and public awareness; leads formulation of the BPAN and the Bangsamoro Food Security and Nutrition Plan; represents the region nationally; leads research; ensures all Local Nutrition Action Plans are consistent with the BPAN; strengthens stakeholder ownership through participation at every stage; may call on any ministry for personnel, facilities and resources; creates technical working committees; and may accept donations and grants from domestic or foreign sources.",
+  "Sections 6–9 — Organisational structure, a Secretariat headed by an Executive Director, and the Executive Director's qualifications: a Filipino citizen resident in the BARMM, at least 30 years old, of good moral character, a college graduate with at least 3 years' relevant experience in nutrition, public health administration or social services.",
+  "Section 11 — Coordination with the Ministry of Health on health policy, Agriculture, Fisheries and Agrarian Reform on food security, the Interior and Local Government on local policy, Social Services and Development on the Supplementary Feeding Program, Basic, Higher and Technical Education on the School-Based Feeding Program, and Science and Technology on the innovation of complementary foods, along with other agencies and the LGUs.",
+  "Section 12 — In line with the principle of subsidiarity, regional nutrition plans are aligned with national plans and reference the Philippine Plan of Action for Nutrition. LGUs shall integrate their Local Nutrition Action Plan into their Annual Investment Programs and ensure implementation through appropriate programmes, policies and ordinances.",
+  "Section 13 — Consistent with the Bangsamoro Local Governance Code of 2023 (BAA 49), nutrition programmes are a mandatory component criterion for any local governance awards and recognition programmes in the BARMM. LGUs are scored on four indicators: activation of Local Nutrition Committees; integration of the LNAP into the AIP; recruitment of Barangay Nutrition Scholars; and hiring of a Registered Nutritionist-Dietitian as Nutrition Action Officer. The MILG with the Commission develops the guidelines and assessment tools.",
+  "Section 14 — Not less than ₱15,000,000 is initially appropriated, with succeeding budgets in the annual General Appropriations Act. The budget is transferred directly to the Commission.",
+  "Section 15 — The Ministry of Health shall issue implementing rules within 90 days of effectivity.",
+  "Section 18 — Takes effect 15 days after publication in the Bangsamoro Gazette or a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Children and families affected by hunger and malnutrition",
+   "Vulnerable groups across the BARMM",
+   "Nutrition workers and Barangay Nutrition Scholars"
+  ],
+  "impact_tags": [
+   "health",
+   "labor_social",
+   "local_government",
+   "institution_commission"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "Not less than ₱15,000,000 initial, transferred directly to the Commission, with later budgets in the annual GAAB",
+  "figures_note": "Quoted from Section 14."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2025-11-19"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/BAA-83.pdf",
+  "irr": "Required from the Ministry of Health within 90 days of effectivity. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill 55",
+  "related_note": "Ties into the Bangsamoro Local Governance Code of 2023 (BAA 49) through the local governance award criteria, and references the national Philippine Plan of Action for Nutrition."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "Not less than ₱15,000,000 initial",
+  "irr_status": "Section 15 required Ministry of Health rules within 90 days of effectivity.",
+  "note": "Read from the enacted text as signed. The approval date on the signed copy is handwritten and the day is not clearly legible in the captured scan; the registry records December 2025 rather than inferring a day."
+ },
+ "citizen_questions": [
+  {
+   "q": "Does the Commission feed people?",
+   "a": "No. It is the region's policy-making, coordinating and monitoring body on food and nutrition. Delivery runs through ministries — social services for the Supplementary Feeding Program, education for the School-Based Feeding Program — which the Commission coordinates."
+  },
+  {
+   "q": "What does it change for my local government?",
+   "a": "Your Local Nutrition Action Plan must be consistent with the regional plan and integrated into your Annual Investment Program. Nutrition also becomes a mandatory criterion in local governance awards, scored on four indicators."
+  },
+  {
+   "q": "What are the four indicators?",
+   "a": "Activating a Local Nutrition Committee; integrating the nutrition plan into the Annual Investment Program; recruiting Barangay Nutrition Scholars; and hiring a Registered Nutritionist-Dietitian as Nutrition Action Officer."
+  },
+  {
+   "q": "Can the Commission compel information?",
+   "a": "Yes. Section 5(b) gives it authority to require the submission of all necessary data, records and reports for its programmatic reviews, and it must regularly submit findings and policy recommendations to the Chief Minister and Parliament."
+  },
+  {
+   "q": "Who leads it?",
+   "a": "A Chairperson who must be a nutrition expert with wide experience of nutrition concerns in the region, appointed by the Chief Minister for 6 years, sitting with five ministers as ex officio members."
+  },
+  {
+   "q": "How much money is there?",
+   "a": "Not less than ₱15 million initially, transferred directly to the Commission, with later budgets in the annual appropriations act."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 83",
+  "line2": "Bangsamoro Nutrition Commission Act of 2025",
+  "badges": [
+   "IN FORCE",
+   "Health",
+   "2025"
+  ],
+  "what_this_does": "Creates the region's nutrition commission, with power to require data and to score local governments on nutrition.",
+  "who_it_affects": "Families facing hunger · every LGU · barangays"
+ },
+ "views": {
+  "simple": "Creates the Bangsamoro Nutrition Commission as the region's policy and coordinating body on hunger, malnutrition and food security, requires every LGU's nutrition plan to align with the regional plan and enter its investment programme, and makes nutrition a scored criterion in local governance awards.",
+  "official": "AN ACT CREATING THE BANGSAMORO NUTRITION COMMISSION IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO, PROVIDING FOR ITS MANDATE, POWERS, AND FUNCTIONS, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 83, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

@@ -1,170 +1,240 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 20,
-    "short_title": "Mandates the Dual Use of Hijri and Gregorian",
-    "official_title": "AN ACT MANDATING THE DUAL USE OF HIJRI AND GREGORIAN CALENDARS IN ALL BARMM INSTITUTIONS",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2021-08-17",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Mandates the Dual Use of Hijri and Gregorian Calendars in All BARMM Institutions.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Mandates the Dual Use of Hijri and Gregorian Calendars in All BARMM Institutions.",
-    "who_will_be_affected": [
-      "Employees & students",
-      "Communities"
-    ],
-    "when_will_it_take_effect": "Ratified 2021-08-17; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "An identity law: it defines an official symbol or observance of the Bangsamoro (flag, emblem, hymn, seal, calendar, holidays, or memorials). It doesn't hand out benefits, but it shapes the public face of the region you live in - what flies over government buildings, what days are non-working, how the Bangsamoro story is told.",
-      "in_practice": [
-        "Government offices, schools, and LGUs must use/observe it",
-        "Holiday-related acts affect work and class suspensions region-wide",
-        "Memorial acts create public sites and commemorations"
-      ],
-      "for_specific_groups": {
-        "Employees & students": "Regional holidays and observances flow from these laws",
-        "Communities": "Shared symbols of the autonomy won through the peace process"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Identity, recognition, and (for holiday laws) actual days off.",
-        "direct_benefits": [
-          {
-            "benefit": "Official identity: the symbols/observances of your autonomous region",
-            "who_gets_it": "All residents",
-            "how_to_access": "Public display and observance"
-          },
-          {
-            "benefit": "Official documents recognize the Hijri calendar alongside the Gregorian",
-            "who_gets_it": "Muslim residents transacting with government",
-            "how_to_access": "Automatic in BARMM offices"
-          }
-        ],
-        "indirect_benefits": [
-          "Cultural pride and the normalization of Bangsamoro identity in public life"
-        ],
-        "limitations": [
-          "Symbolic laws confer no monetary claims"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 20,
+  "short_title": "Bangsamoro Dual Calendar Act of 2021",
+  "official_title": "AN ACT MANDATING THE DUAL USE OF HIJRI AND GREGORIAN CALENDARS IN ALL MINISTRIES, AGENCIES, LOCAL GOVERNMENT UNITS, OFFICES AND INSTITUTIONS IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO (BARMM), APPROPRIATING FUNDS THEREFOR AND OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2021-08-17",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session",
+  "date_passed": "2021-08-17",
+  "date_passed_hijri": "Muharram 8, 1443",
+  "date_approved_by_chief_minister": "2021-09-22",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "other",
-      "symbols_identity"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2021-08-17"
-    }
+  "effectivity": "15 days after publication in a newspaper of general or regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Requires every government office, local government unit and school in the region — public and private — to put both the Hijri and Gregorian dates on official documents, with the Hijri date written first.",
+  "why_was_it_proposed": "The act frames it as the region exercising self-governance to pursue its cultural development, recognising the primacy of the predominant way of life in the region while encouraging all-inclusive understanding, coexistence and harmony.",
+  "what_will_change": "Memoranda, office orders and formal correspondence now carry two dates instead of one, Hijri first. A religious body, the Bangsamoro Darul-Ifta', is given ₱10 million and the job of sighting the moon on the 29th of each Hijri month so the date is accurate.",
+  "who_will_be_affected": [
+   "Every ministry, bureau, office, commission, board, committee, institute and corporation of the BARMM",
+   "Every provincial, city, municipal and barangay local government unit in the region",
+   "Every school — public and private, and basic, higher and technical education alike",
+   "Anyone reading or filing an official document in the region"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Office of the Chief Minister",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2021-08-17 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Office of the Chief Minister (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 20",
-    "line2": "Mandates the Dual Use of Hijri and Gregorian",
-    "badges": [
-      "ENACTED",
-      "Symbols Identity",
-      "2021"
+  "when_will_it_take_effect": "In force since 2021 — 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. Official documents in the region carry two dates — Hijri and Gregorian — and the Hijri date goes first. This binds schools, including private ones, as well as government.",
+   "in_practice": [
+    "Memoranda, office orders and other formal correspondence must show both calendars for the year, month and date",
+    "The Hijri date appears first, before the Gregorian date",
+    "It applies to all BARMM offices and corporations, and to provincial, city, municipal and barangay LGUs",
+    "It applies to public and private schools, in basic, higher and technical education",
+    "The Bangsamoro Darul-Ifta' sights the moon on the 29th of each Hijri month to fix the date"
+   ],
+   "for_specific_groups": {
+    "Private schools": "Section 4 covers private schools expressly — this is one of the few Bangsamoro acts that reaches private institutions directly.",
+    "Barangay officials": "Barangay LGUs are named, so the duty reaches the smallest unit of local government.",
+    "Non-Muslim residents and staff": "The duty is on the document, not on your beliefs. The act's stated objective is inclusiveness, understanding and coexistence.",
+    "Anyone filing paperwork": "Expect two dates on official correspondence, Hijri first."
+   },
+   "where_this_applies": "The core territory of the BARMM.",
+   "when_you_will_feel_it": "In force since 2021 — visible on any official document from a covered office.",
+   "what_you_can_do": [
+    "Write both dates on formal correspondence with a covered office, Hijri first",
+    "Use the Darul-Ifta' as the authority for the correct Hijri date; it performs the moon-sighting"
+   ],
+   "watch_out_for": [
+    "The act sets no penalty for using one calendar only, and names no consequence for a document dated the old way.",
+    "It gives no transition period and no template — offices were left to work out the format themselves.",
+    "Because the Hijri month begins on a sighted new moon, the date can shift by a day; the Darul-Ifta''s sighting on the 29th is what settles it."
+   ],
+   "key_terms_explained": {
+    "Hijri calendar": "The Islamic lunar calendar of 12 months and 354 or 355 days, counted from the Hijrah. A new month starts when a new moon is sighted.",
+    "Hijrah": "The migration of the Prophet Muhammad from Makkah to Madinah (Yathrib) to escape persecution — the event the calendar counts from.",
+    "Darul-Ifta'": "The region's body of Islamic jurisprudence, which issues fatwa and here performs the moon-sighting.",
+    "Fatwa": "A religious verdict on a point of Islamic jurisprudence."
+   },
+   "status_note": "Passed Muharram 8, 1443 / 17 August 2021, approved by the Chief Minister on 22 September 2021.",
+   "benefits": {
+    "headline": "Both calendars on every official document, with a funded body responsible for getting the Hijri date right.",
+    "direct_benefits": [
+     {
+      "benefit": "Official documents carry the Hijri date",
+      "who_gets_it": "Everyone dealing with government or schools in the region",
+      "how_to_access": "Automatic — it is a duty on the office"
+     },
+     {
+      "benefit": "An authoritative Hijri date, fixed by monthly moon-sighting",
+      "who_gets_it": "Anyone needing the correct Islamic date",
+      "how_to_access": "Bangsamoro Darul-Ifta'"
+     },
+     {
+      "benefit": "₱10 million initial funding for the Darul-Ifta'",
+      "who_gets_it": "The implementing body",
+      "how_to_access": "Section 9"
+     }
     ],
-    "what_this_does": "Mandates the Dual Use of Hijri and Gregorian Calendars in All BARMM Institutions.",
-    "who_it_affects": "General public",
-    "effective": "2021-08-17"
-  },
-  "views": {
-    "simple": "Mandates the Dual Use of Hijri and Gregorian Calendars in All BARMM Institutions.",
-    "official": "AN ACT MANDATING THE DUAL USE OF HIJRI AND GREGORIAN CALENDARS IN ALL BARMM INSTITUTIONS"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Muslim holidays under the Code on Muslim Personal Laws are promoted equally",
+     "A standing channel for intrareligious and interreligious dialogue"
+    ],
+    "limitations": [
+     "No penalty for non-compliance.",
+     "No prescribed format for how the two dates are written.",
+     "No transition period."
+    ]
+   },
+   "your_responsibilities": {
+    "for_offices_lgus_and_schools": [
+     "Show both the Hijri and Gregorian year, month and date on official documents and formal correspondence",
+     "Write the Hijri date first"
+    ],
+    "for_citizens": [
+     "None. The duty falls on offices, LGUs and schools, not on private individuals."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None.",
+    "for_offices": "None stated. The act imposes the duty without attaching a sanction."
+   },
+   "where_to_complain": {
+    "first_stop": "The office, LGU or school concerned",
+    "oversight": "Office of the Chief Minister, through the Bangsamoro Darul-Ifta', which implements the law",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A municipal office issues a memorandum. It must carry both dates — for example Muharram 8, 1443 / August 17, 2021 — with the Hijri date first.",
+    "A private high school in Lanao del Sur sends formal correspondence. Section 4 covers private schools, so the dual date applies to it too.",
+    "A resident wants to know the correct Hijri date for a religious observance. The Darul-Ifta' performs moon-sighting on the 29th of each Hijri month and coordinates with nearby Southeast Asian Muslim countries."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Bangsamoro Dual Calendar Act of 2021”.",
+  "Section 2 — Policy: in exercising its right to self-governance the region pursues its political, economic, social and cultural development under the Organic Law, and adopts dual use of the Hijri and Gregorian calendars recognising the primacy of the predominant way of life in the region while encouraging all-inclusive understanding, coexistence and harmony.",
+  "Section 3 — Defines the Hijri calendar (12 lunar months, 354 or 355 days, a month beginning at the sighting of a new moon, listed from Muharram to Dhul Al-Hijjah), the Gregorian calendar, and the Hijrah — the Prophet Muhammad's migration from Makkah to Madinah.",
+  "Section 4 — Agencies covered: all ministries, bureaus, offices, commissions, administrations, boards, committees, institutes and corporations of the BARMM whether governmental or proprietary; provincial, city, municipal and barangay local government units; and public and private schools, including basic, higher and technical education.",
+  "Section 5 — Dual use means official documents and communications — memoranda, office orders and other formal correspondence — use both calendars at once for the year, month and date. The Hijri date appears first, before the Gregorian date.",
+  "Section 6 — Objectives include inclusiveness in public affairs, familiarising the calendar of the Hijrah, fulfilling equally the declaration of Islamic holidays, promoting Muslim holidays under Presidential Decree 1083 (the Code on Muslim Personal Laws), and establishing dual use within the core territory.",
+  "Section 7 — The Office of the Chief Minister implements the law through the Bangsamoro Darul-Ifta'.",
+  "Section 8 — The Darul-Ifta' promulgates fatwa across Islamic jurisprudence, leads intrareligious and interreligious dialogue, advises the Chief Minister on religious affairs, exchanges Ramadhan moon-sighting information locally and with nearby Southeast Asian Muslim countries, and performs moon-sighting every 29th day of the Hijri month to determine the calendar accurately.",
+  "Section 9 — Initial funding of ₱10,000,000 for the Bangsamoro Darul-Ifta' from any available funds of the Bangsamoro Government, with later years included in the agency's regular budget.",
+  "Section 12 — Takes effect 15 days after publication in a newspaper of general or regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Everyone in the BARMM",
+   "Muslim communities",
+   "Schools and LGUs"
+  ],
+  "impact_tags": [
+   "culture_heritage",
+   "governance_civil_service",
+   "education"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱10,000,000 initial for the Bangsamoro Darul-Ifta'",
+  "figures_note": "Quoted from Section 9 of the enacted text."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2021-08-17"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2021/10/BAA-20.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 87",
+  "related_note": "Refers to Presidential Decree 1083, the Code on Muslim Personal Laws of the Philippines, for the Muslim holidays it promotes."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱10,000,000 initial",
+  "irr_status": "None required by the act; implementation runs through the Office of the Chief Minister and the Bangsamoro Darul-Ifta'.",
+  "note": "Read from the enacted text as signed. The act dates its own passage in both calendars — Muharram 8, 1443 / August 17, 2021."
+ },
+ "citizen_questions": [
+  {
+   "q": "Which date comes first?",
+   "a": "The Hijri date. Section 5 requires it to appear before the Gregorian date on official documents and formal correspondence."
+  },
+  {
+   "q": "Does this apply to private schools?",
+   "a": "Yes. Section 4 covers public and private schools alike, across basic, higher and technical education."
+  },
+  {
+   "q": "Does it apply to my barangay?",
+   "a": "Yes. Provincial, city, municipal and barangay local government units are all named."
+  },
+  {
+   "q": "Who decides the correct Hijri date?",
+   "a": "The Bangsamoro Darul-Ifta', which performs moon-sighting on the 29th day of each Hijri month and coordinates with nearby Southeast Asian Muslim countries."
+  },
+  {
+   "q": "What happens if an office uses only one calendar?",
+   "a": "The act sets no penalty. It states the duty without attaching a sanction."
+  },
+  {
+   "q": "Do I have to use both dates personally?",
+   "a": "No. The duty falls on offices, LGUs and schools, not on private individuals."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 20",
+  "line2": "Bangsamoro Dual Calendar Act of 2021",
+  "badges": [
+   "IN FORCE",
+   "Culture & Heritage",
+   "2021"
+  ],
+  "what_this_does": "Requires both Hijri and Gregorian dates on official documents across government, LGUs and schools — Hijri first.",
+  "who_it_affects": "All BARMM offices · LGUs down to barangay · public and private schools"
+ },
+ "views": {
+  "simple": "Requires every government office, LGU and school in the region to date official documents in both the Hijri and Gregorian calendars, with the Hijri date first, and funds the Darul-Ifta' to fix the Hijri date by moon-sighting.",
+  "official": "AN ACT MANDATING THE DUAL USE OF HIJRI AND GREGORIAN CALENDARS IN ALL MINISTRIES, AGENCIES, LOCAL GOVERNMENT UNITS, OFFICES AND INSTITUTIONS IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO (BARMM), APPROPRIATING FUNDS THEREFOR AND OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 20, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

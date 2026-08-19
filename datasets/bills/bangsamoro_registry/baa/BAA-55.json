@@ -1,194 +1,229 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 55,
-    "short_title": "Municipality of Sheik Abas Hamza Charter",
-    "official_title": "AN ACT CREATING THE MUNICIPALITY OF SHEIK ABAS HAMZA, MAGUINDANAO DEL NORTE",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2023-12-20",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Creates the Municipality of Sheik Abas Hamza, Maguindanao del Norte.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Creates the Municipality of Sheik Abas Hamza, Maguindanao del Norte.",
-    "who_will_be_affected": [
-      "Residents",
-      "Business owners",
-      "Job seekers",
-      "SGA residents"
-    ],
-    "when_will_it_take_effect": "Ratified 2023-12-20; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Creates a new municipality (Sheik Abas Hamza, Maguindanao Del Norte). If you live in the covered barangays, your community gets its own municipal government - a mayor, sanggunian, municipal hall, and its own share of national and regional funds - instead of being administered from a distant town center.",
-      "in_practice": [
-        "Your own municipal share of the National Tax Allotment and Bangsamoro funds, spent locally",
-        "Closer civil registry, business permits, social services, and health station",
-        "Local elections for your own mayor, vice mayor, and councilors once the LGU is organized",
-        "Barangay boundaries stay; what changes is which town hall serves you"
-      ],
-      "for_specific_groups": {
-        "Residents": "Government services move closer; local projects are decided by officials you elect",
-        "Business owners": "Permits and local taxes are handled by the new municipality - rates are set by its own sanggunian",
-        "Job seekers": "A new LGU means new municipal government positions",
-        "SGA residents": "For the eight 2023 municipalities: these convert the Special Geographic Area's 63 barangays (which voted to join BARMM) into full local governments"
-      },
-      "where_this_applies": "Sheik Abas Hamza, Maguindanao Del Norte",
-      "watch_out_for": [
-        "A new municipality begins corporate existence only after its officials are elected/qualified and offices organized - there is a transition period",
-        "Boundary and asset-sharing details with the mother municipality can take time to settle",
-        "Already amended by BAA 71 - read the consolidated text"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Your own local government - services, budget, and representation for Sheik Abas Hamza, Maguindanao Del Norte.",
-        "direct_benefits": [
-          {
-            "benefit": "Municipal services (civil registry, permits, health station, social welfare) close to home",
-            "who_gets_it": "Residents of the new municipality",
-            "how_to_access": "New municipal hall once organized"
-          },
-          {
-            "benefit": "A dedicated share of national and Bangsamoro funds spent in your own town",
-            "who_gets_it": "The whole community",
-            "how_to_access": "Automatic; monitor via the municipal budget and sanggunian sessions"
-          },
-          {
-            "benefit": "Your own elected mayor, vice mayor, and councilors answerable to you",
-            "who_gets_it": "Voters of the municipality",
-            "how_to_access": "Vote in the first municipal elections"
-          },
-          {
-            "benefit": "New municipal government jobs and local contracts",
-            "who_gets_it": "Local job seekers, suppliers",
-            "how_to_access": "Municipal HR and BAC postings"
-          }
-        ],
-        "indirect_benefits": [
-          "Faster development decisions made locally",
-          "Recognition: for SGA towns, the plebiscite promise made real"
-        ],
-        "limitations": [
-          "Corporate existence starts only after officials are elected/qualified - a transition period is normal",
-          "Boundary/asset settlement with the mother municipality can take time"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 55,
+  "short_title": "Creation of the Municipality of Sheik Abas Hamza",
+  "official_title": "AN ACT CREATING THE MUNICIPALITY OF SHEIK ABAS HAMZA IN THE PROVINCE OF MAGUINDANAO DEL NORTE, PROVIDING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2023-12-20",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Second Regular Session (begun 15 September 2022)",
+  "date_passed": "2023-12-20",
+  "date_passed_hijri": "Jumada Al-Akhirah 07, 1445",
+  "date_approved_by_chief_minister": "2023-12-26",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Barangay residents",
-      "LGUs"
-    ],
-    "impact_tags": [
-      "local_government",
-      "municipality_lgu"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2023-12-20"
-    }
+  "effectivity": "15 days after publication in the Bangsamoro Gazette or one newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Carves 10 barangays out of the Municipality of Datu Odin Sinsuat to create a new municipality, Sheik Abas Hamza, in Maguindanao del Norte — subject to a plebiscite of the voters living there.",
+  "why_was_it_proposed": "The Organic Law empowers the Bangsamoro Government to create, divide, merge or abolish municipalities and barangays by act of Parliament, provided the change is ratified by the people directly affected.",
+  "what_will_change": "If ratified, 10 barangays covering about 164.4 square kilometres become a distinct and independent municipality with its own appointed mayor, vice-mayor and eight-member council, seated at Barangay Bugawas.",
+  "who_will_be_affected": [
+   "Residents of the 10 barangays, who vote in the plebiscite",
+   "Residents of the remaining parts of Datu Odin Sinsuat, the mother municipality",
+   "Taxpayers, since ₱2.5 million a month is provided until the new municipality gets its revenue share"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [
-      "BAA 71"
+  "when_will_it_take_effect": "The act is in force, but corporate existence depends on ratification in a plebiscite to be held within 60 days of approval.",
+  "what_this_means_for_you": {
+   "in_short": "You decide. This act creates the Municipality of Sheik Abas Hamza out of 10 barangays of Datu Odin Sinsuat — but only if a majority of voters there approve it in a plebiscite.",
+   "in_practice": [
+    "10 barangays separate from Datu Odin Sinsuat: Labungan, Taviran, Baka, Sapalan, Sifaran, Bugawas, Bitu, Kurintem, Margues and Makir",
+    "Land area of 164,387,474 square metres — about 164.4 square kilometres",
+    "The seat of government is Barangay Bugawas, renamed the Poblacion",
+    "A plebiscite of qualified voters decides it, within 60 days of approval, run by COMELEC",
+    "Plebiscite costs come from the BARMM Contingent Fund under the FY2024 budget",
+    "The Chief Minister appoints the first mayor, vice-mayor and eight Sangguniang Bayan members",
+    "₱2,500,000 a month until the municipality receives its Internal Revenue Allotment share"
+   ],
+   "for_specific_groups": {
+    "Voters in the 10 barangays": "Your vote creates the municipality — it does not exist until a majority of votes cast ratifies it.",
+    "Residents of the rest of Datu Odin Sinsuat": "The mother municipality loses 10 barangays if the plebiscite passes.",
+    "Incumbent Sangguniang Bayan members of Datu Odin Sinsuat": "If you actually reside in the new municipality, you serve out your remaining term in the mother municipality.",
+    "Anyone expecting to elect the first officials": "The first mayor, vice-mayor and council are appointed by the Chief Minister until the next regular election."
+   },
+   "where_this_applies": "Maguindanao del Norte — 10 barangays currently in Datu Odin Sinsuat.",
+   "when_you_will_feel_it": "On ratification in the plebiscite.",
+   "what_you_can_do": [
+    "Check whether your barangay is among the 10 named in Section 2",
+    "Vote in the plebiscite",
+    "Ask COMELEC when it is scheduled; the act set 60 days from approval"
+   ],
+   "watch_out_for": [
+    "The first set of municipal officials is appointed, not elected.",
+    "Financial assistance is a floor — 'not less than' ₱2.5 million monthly — with no ceiling stated.",
+    "The act states a land area but no population figure.",
+    "The plebiscite cost depends on the FY2024 Contingent Fund."
+   ],
+   "key_terms_explained": {
+    "Plebiscite": "A vote of the people directly affected, required before a municipality can be created.",
+    "Poblacion": "The seat of government of a municipality — here, Barangay Bugawas.",
+    "Sangguniang Bayan": "The municipal council.",
+    "IRA / Internal Revenue Allotment": "A local government's share of national taxes.",
+    "Mother municipality": "The municipality the new one is carved out of — here, Datu Odin Sinsuat."
+   },
+   "status_note": "Passed Jumada Al-Akhirah 07, 1445 / 20 December 2023, approved by the Chief Minister on 26 December 2023.",
+   "benefits": {
+    "headline": "A new municipality of 10 barangays and about 164 square kilometres, with ₱2.5 million a month until its tax share arrives.",
+    "direct_benefits": [
+     {
+      "benefit": "A local government seated in your own area",
+      "who_gets_it": "Residents of the 10 barangays",
+      "how_to_access": "Subject to ratification in the plebiscite"
+     },
+     {
+      "benefit": "₱2,500,000 monthly financial assistance",
+      "who_gets_it": "The new Municipal Government of Sheik Abas Hamza",
+      "amount": "Not less than ₱2.5 million every month until the IRA share is allocated",
+      "how_to_access": "Appropriated by the Bangsamoro Government"
+     }
     ],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of the Interior and Local Government (MILG)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2023-12-20 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of the Interior and Local Government (MILG) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 55",
-    "line2": "Municipality of Sheik Abas Hamza Charter",
-    "badges": [
-      "ENACTED",
-      "Municipality Lgu",
-      "2023"
+    "indirect_benefits": [
+     "Entitlement to a share of national taxes once allocated",
+     "Services delivered from a nearer seat of government"
     ],
-    "what_this_does": "Creates the Municipality of Sheik Abas Hamza, Maguindanao del Norte.",
-    "who_it_affects": "Barangay residents · LGUs",
-    "effective": "2023-12-20"
-  },
-  "views": {
-    "simple": "Creates the Municipality of Sheik Abas Hamza, Maguindanao del Norte.",
-    "official": "AN ACT CREATING THE MUNICIPALITY OF SHEIK ABAS HAMZA, MAGUINDANAO DEL NORTE"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "limitations": [
+     "Nothing takes effect without a favourable plebiscite.",
+     "The first officials are appointed, not elected.",
+     "No population figure is stated."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None beyond voting in the plebiscite, which is a right rather than a duty."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "Commission on Elections (COMELEC), which conducts and supervises the plebiscite",
+    "oversight": "Office of the Chief Minister, which appoints the first municipal officials",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A resident of Barangay Taviran votes in the plebiscite. If a majority of votes cast approve, Taviran leaves Datu Odin Sinsuat for the new municipality.",
+    "A sitting councillor of Datu Odin Sinsuat who lives in Bugawas finishes their term serving the mother municipality."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Policy: the Bangsamoro Government may create, divide, merge, abolish or substantially alter the boundaries of municipalities or barangays by act of Parliament, with units so created entitled to their share in national taxes, provided the change is approved by a majority of the votes cast in a plebiscite in the political units directly affected.",
+  "Section 2 — Separates the barangays of Labungan, Taviran, Baka, Sapalan, Sifaran, Bugawas, Bitu, Kurintem, Margues and Makir from the Municipality of Datu Odin Sinsuat and constitutes them into the distinct and independent Municipality of Sheik Abas Hamza.",
+  "Section 3 — The seat of government is Barangay Bugawas, known hereafter as the Poblacion.",
+  "Section 4 — The municipality contains a land area of 164,387,474 square metres, and its territorial boundary follows the existing boundaries of the constituent barangays.",
+  "Section 5 — The municipality acquires corporate existence on ratification by a majority of the votes cast by qualified voters in a plebiscite in those barangays, to be held within 60 days after approval of the act. The Commission on Elections conducts and supervises it, with the cost taken from the BARMM Contingent Fund under the FY2024 appropriations.",
+  "Section 6 — The municipal government comprises a mayor, a vice-mayor and eight Sangguniang Bayan members appointed by the Chief Minister immediately after ratification, holding office until successors are elected at the next regular election. Incumbent elective Sangguniang Bayan members of Datu Odin Sinsuat who actually reside in the new municipality serve out their remaining terms in the mother municipality.",
+  "Section 7 — The Bangsamoro Government shall appropriate financial assistance of not less than ₱2,500,000 every month for the administration and operation of the Municipal Government of Sheik Abas Hamza until it is allocated its share in the Internal Revenue Allotment.",
+  "Section 10 — Takes effect 15 days after publication in the Bangsamoro Gazette or one newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of the 10 barangays",
+   "The new Municipal Government of Sheik Abas Hamza"
+  ],
+  "impact_tags": [
+   "local_government",
+   "governance_civil_service",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "Not less than ₱2,500,000 per month until the municipality receives its Internal Revenue Allotment share; plebiscite costs from the BARMM Contingent Fund under FY2024.",
+  "figures_note": "Quoted from Sections 4, 5 and 7. Land area 164,387,474 square metres; no population figure is stated."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2023-12-20"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/BAA-55.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [
+   "BAA 71"
+  ],
+  "repeals": null,
+  "origin_bill": "Bill 191",
+  "related_note": "Passed the same day as BAA 53 (Nuling) and BAA 54 (Datu Sinsuat Balabaran). Section 5, the plebiscite requirement, was later amended by BAA 71."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "Not less than ₱2,500,000 monthly, pending IRA allocation",
+  "irr_status": "None required by the act.",
+  "note": "Read from the enacted text as signed. Section 5 was subsequently amended by BAA 71 — read that act for the plebiscite requirement as it now stands."
+ },
+ "citizen_questions": [
+  {
+   "q": "Does this create the municipality straight away?",
+   "a": "No. Corporate existence depends on ratification by a majority of the votes cast in a plebiscite of the affected barangays. Note that Section 5 was later amended by BAA 71."
+  },
+  {
+   "q": "Which barangays are involved?",
+   "a": "Ten, currently in Datu Odin Sinsuat: Labungan, Taviran, Baka, Sapalan, Sifaran, Bugawas, Bitu, Kurintem, Margues and Makir."
+  },
+  {
+   "q": "How big is it?",
+   "a": "164,387,474 square metres — roughly 164 square kilometres. The act gives no population figure."
+  },
+  {
+   "q": "Who will be the first mayor?",
+   "a": "Whoever the Chief Minister appoints. The first mayor, vice-mayor and eight councillors are appointed after ratification and serve until the next regular election."
+  },
+  {
+   "q": "How will it pay for itself?",
+   "a": "Not less than ₱2.5 million a month from the Bangsamoro Government until it receives its Internal Revenue Allotment share."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 55",
+  "line2": "Creation of the Municipality of Sheik Abas Hamza",
+  "badges": [
+   "IN FORCE",
+   "Local Government",
+   "2023"
+  ],
+  "what_this_does": "Creates a new municipality from 10 barangays of Datu Odin Sinsuat, subject to a plebiscite.",
+  "who_it_affects": "Residents of 10 barangays in Maguindanao del Norte"
+ },
+ "views": {
+  "simple": "Creates the Municipality of Sheik Abas Hamza from 10 barangays of Datu Odin Sinsuat, subject to ratification by plebiscite, with appointed first officials and ₱2.5 million monthly support until its tax share arrives.",
+  "official": "AN ACT CREATING THE MUNICIPALITY OF SHEIK ABAS HAMZA IN THE PROVINCE OF MAGUINDANAO DEL NORTE, PROVIDING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 55, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

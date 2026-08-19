@@ -1,166 +1,248 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 61,
-    "short_title": "Establishes a Bangsamoro Memorial Marker and Eco-park in",
-    "official_title": "AN ACT ESTABLISHING A BANGSAMORO MEMORIAL MARKER AND ECO-PARK IN CAMP ABUBAKAR TO HONOR THE SHUHADA/MARTYRS",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2024-08-19",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Establishes a Bangsamoro Memorial Marker and Eco-park in Camp Abubakar to Honor the Shuhada/martyrs.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Establishes a Bangsamoro Memorial Marker and Eco-park in Camp Abubakar to Honor the Shuhada/martyrs.",
-    "who_will_be_affected": [
-      "Employees & students",
-      "Communities"
-    ],
-    "when_will_it_take_effect": "Ratified 2024-08-19; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "An identity law: it defines an official symbol or observance of the Bangsamoro (flag, emblem, hymn, seal, calendar, holidays, or memorials). It doesn't hand out benefits, but it shapes the public face of the region you live in - what flies over government buildings, what days are non-working, how the Bangsamoro story is told.",
-      "in_practice": [
-        "Government offices, schools, and LGUs must use/observe it",
-        "Holiday-related acts affect work and class suspensions region-wide",
-        "Memorial acts create public sites and commemorations"
-      ],
-      "for_specific_groups": {
-        "Employees & students": "Regional holidays and observances flow from these laws",
-        "Communities": "Shared symbols of the autonomy won through the peace process"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Identity, recognition, and (for holiday laws) actual days off.",
-        "direct_benefits": [
-          {
-            "benefit": "Official identity: the symbols/observances of your autonomous region",
-            "who_gets_it": "All residents",
-            "how_to_access": "Public display and observance"
-          }
-        ],
-        "indirect_benefits": [
-          "Cultural pride and the normalization of Bangsamoro identity in public life"
-        ],
-        "limitations": [
-          "Symbolic laws confer no monetary claims"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 61,
+  "short_title": "Bangsamoro Memorial Marker Act of 2024",
+  "official_title": "AN ACT ESTABLISHING A BANGSAMORO MEMORIAL MARKER AND ECO-PARK IN CAMP ABUBAKAR, MUNICIPALITY OF BARIRA, MAGUINDANAO DEL NORTE TO HONOR THE SHUHADA/MARTYRS OF THE BANGSAMORO STRUGGLE WHO GAVE AND DEVOTED THEIR LIVES FOR THE RIGHT TO SELF-DETERMINATION AND FREEDOM OF THE BANGSAMORO, PROVIDING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2024-08-19",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session (begun 15 September 2022)",
+  "date_passed": "2024-08-19",
+  "date_passed_hijri": "Safar 15, 1446",
+  "date_approved_by_chief_minister": "2024-09-19",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Muslim communities",
-      "Religious institutions"
-    ],
-    "impact_tags": [
-      "islamic_culture_heritage",
-      "symbols_identity"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2024-08-19"
-    }
+  "effectivity": "15 days after publication in the Official Gazette or a newspaper of general circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates a memorial marker bearing the names of the shuhada — those who gave their lives for Bangsamoro self-determination — set inside a public eco-park at Camp Abubakar in Barira, Maguindanao del Norte.",
+  "why_was_it_proposed": "To honour the martyrs of the struggle, and to do so in a place that is also usable: a landscaped park with a hall, a playground and facilities, reflecting Bangsamoro culture and arts.",
+  "what_will_change": "A memorial marker listing names is built within a new eco-park. A management board sets the criteria for whose names appear, determines the land, runs a grievance mechanism, and must consult local communities so the site has their ownership.",
+  "who_will_be_affected": [
+   "Families of the shuhada, whose names may appear on the marker",
+   "Residents of Barira and visitors to the park",
+   "Indigenous peoples, whose distinct identity the policy section protects",
+   "Every province of the region, each of which has a seat on the board"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Office of the Chief Minister",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2024-08-19 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Office of the Chief Minister (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 61",
-    "line2": "Establishes a Bangsamoro Memorial Marker and Eco-park in",
-    "badges": [
-      "ENACTED",
-      "Symbols Identity",
-      "2024"
+  "when_will_it_take_effect": "In force since 2024 — 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. A memorial listing the names of the shuhada will stand inside a public eco-park at Camp Abubakar — with a board that decides whose names appear, and a grievance mechanism if you disagree.",
+   "in_practice": [
+    "The Bangsamoro Memorial Marker will carry a list of names of the shuhada",
+    "'Shuhada' covers those who gave and devoted their lives directly or indirectly in the armed struggle for Bangsamoro self-determination and freedom",
+    "The marker sits within a Bangsamoro Eco-Park at Camp Abubakar, Barira, Maguindanao del Norte",
+    "The park is to be landscaped and designed with structures and ornaments reflective of Bangsamoro culture and arts, with a multi-purpose hall, children's playground, parking, comfort rooms and wash areas, and access roads",
+    "A Bangsamoro Memorial Management Board chaired by the cultural heritage commission builds and runs it, with a representative from every province of the region",
+    "The Board sets the eligibility criteria for names, and must run a grievance mechanism",
+    "₱15,000,000 initial funding, with grants and donations — domestic or foreign — permitted",
+    "The Board dissolves once the project is completed and turned over to the cultural heritage commission"
+   ],
+   "for_specific_groups": {
+    "Families of the shuhada": "Whether a name appears is decided against eligibility criteria the Board must establish, and there is a grievance mechanism if you dispute the outcome.",
+    "Residents of Barira": "The local government has a seat on the Board, and the Board must consult and actively involve local communities to ensure their ownership of the site.",
+    "Indigenous peoples": "The policy section states that indigenous peoples shall have the freedom to retain their distinct indigenous and ethnic identity in addition to their Bangsamoro political identity.",
+    "Every province": "Each province of the BARMM has a representative on the Board.",
+    "Families and visitors": "This is a park as well as a memorial — a hall, a playground and facilities, not only a monument."
+   },
+   "where_this_applies": "Camp Abubakar, Municipality of Barira, Maguindanao del Norte.",
+   "when_you_will_feel_it": "In force since 2024; construction depends on funding and the Board's work.",
+   "what_you_can_do": [
+    "Ask the Bangsamoro Memorial Management Board for the eligibility criteria for inclusion of names",
+    "Use the grievance mechanism the Board is required to establish if a name is disputed",
+    "Take part in the community consultations the Board must conduct"
+   ],
+   "watch_out_for": [
+    "The eligibility criteria for names are not in the act — the Board sets them, and the final list goes to the Office of the Chief Minister.",
+    "The land area is not fixed by the act; the Board determines the metes and bounds.",
+    "₱15 million is an initial amount for a park with a hall, playground, roads and facilities.",
+    "No completion deadline is set."
+   ],
+   "key_terms_explained": {
+    "Shuhada": "Martyrs — here defined as those who gave and devoted their lives, directly or indirectly, in the armed struggle for Bangsamoro self-determination and freedom.",
+    "Camp Abubakar": "The site in Barira, Maguindanao del Norte where the memorial and eco-park are to be built.",
+    "BMMB": "Bangsamoro Memorial Management Board, which builds and manages the site until turnover.",
+    "BCPCH": "Bangsamoro Commission for the Preservation of Cultural Heritage, which chairs the Board and takes over on completion.",
+    "Grievance mechanism": "A route for disputes, which the Board must establish and keep functional."
+   },
+   "status_note": "Passed Safar 15, 1446 / 19 August 2024, approved by the Chief Minister on 19 September 2024.",
+   "benefits": {
+    "headline": "A named memorial to the shuhada inside a public park, with criteria, consultation and a grievance route.",
+    "direct_benefits": [
+     {
+      "benefit": "A memorial marker carrying the names of the shuhada",
+      "who_gets_it": "Families of the fallen and the wider public",
+      "how_to_access": "Names included against criteria set by the Board"
+     },
+     {
+      "benefit": "A public eco-park with a multi-purpose hall, playground, parking, comfort rooms and access roads",
+      "who_gets_it": "Residents of Barira and visitors",
+      "how_to_access": "Open site at Camp Abubakar"
+     },
+     {
+      "benefit": "A grievance mechanism over the memorial's implementation",
+      "who_gets_it": "Anyone with a dispute, including over names",
+      "how_to_access": "Established and kept functional by the Board"
+     },
+     {
+      "benefit": "Community consultation with stated ownership and cultural relevance",
+      "who_gets_it": "Local communities and stakeholders",
+      "how_to_access": "Required of the Board by Section 8(h)"
+     }
     ],
-    "what_this_does": "Establishes a Bangsamoro Memorial Marker and Eco-park in Camp Abubakar to Honor the Shuhada/martyrs.",
-    "who_it_affects": "Muslim communities · Religious institutions",
-    "effective": "2024-08-19"
-  },
-  "views": {
-    "simple": "Establishes a Bangsamoro Memorial Marker and Eco-park in Camp Abubakar to Honor the Shuhada/martyrs.",
-    "official": "AN ACT ESTABLISHING A BANGSAMORO MEMORIAL MARKER AND ECO-PARK IN CAMP ABUBAKAR TO HONOR THE SHUHADA/MARTYRS"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Representation for every province of the region on the Board",
+     "Authority to raise grants and donations, domestic and foreign, with a transparency duty attached"
+    ],
+    "limitations": [
+     "Eligibility criteria are left to the Board.",
+     "Land area undetermined in the act.",
+     "₱15 million initial only; no completion deadline."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences — it does not legislate on damage to or desecration of the memorial."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "The grievance mechanism the Bangsamoro Memorial Management Board is required to establish under Section 8(d)",
+    "oversight": "Bangsamoro Commission for the Preservation of Cultural Heritage, which chairs the Board and takes over on completion",
+    "note": "This is one of the few acts in the registry that expressly requires a grievance mechanism."
+   },
+   "everyday_scenarios": [
+    "A family believes their relative should be named on the marker. The Board must establish eligibility criteria, submits the final list to the Office of the Chief Minister, and must keep a grievance mechanism functional.",
+    "A family in Barira visits the site on a weekend. It is designed as an eco-park — hall, playground, parking, comfort rooms — not only as a monument.",
+    "A community group wants a say in how the site looks. Section 8(h) requires the Board to consult and actively involve local communities and stakeholders to ensure their ownership and cultural relevance."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Bangsamoro Memorial Marker Act of 2024”.",
+  "Section 2 — Policy: promote unity, peace, justice and goodwill among all people; ensure the provision of basic necessities and equal opportunities and the promotion of social justice; ensure that indigenous peoples have the freedom to retain their distinct indigenous and ethnic identity in addition to their Bangsamoro political identity; and support the preservation and enrichment of culture, promote health and safety, and enhance the right of the people to a balanced ecology.",
+  "Section 3 — Defines shuhada as individuals who gave and devoted their lives, directly or indirectly, engaging in the armed struggle to assert the right to self-determination and freedom of the Bangsamoro.",
+  "Section 4 — The Bangsamoro Memorial Marker shall include a list of names of the shuhada.",
+  "Section 5 — Creates a Bangsamoro Eco-Park at Camp Abubakar, Municipality of Barira, Maguindanao del Norte, to be constructed, properly landscaped and designed with structures and ornaments reflective of Bangsamoro culture and arts, with complete facilities including a multi-purpose hall, children's playground, parking area, comfort rooms and wash areas, and access roads. The memorial marker is built within the eco-park.",
+  "Sections 6–7 — The marker and eco-park are constructed, maintained and managed under the supervision and control of a Bangsamoro Memorial Management Board, chaired by the Bangsamoro Commission for the Preservation of Cultural Heritage with members from the Ministry of Public Works; the Ministry of Trade, Investments and Tourism; the Bangsamoro Darul-Ifta'; the Ministry of Basic, Higher, and Technical Education; the Ministry of Environment, Natural Resources and Energy; the local government unit of Barira; and a representative from each province of the region. The Commission also serves as secretariat.",
+  "Section 8 — Board functions: establish eligibility criteria for identifying and including names on the marker; determine the metes and bounds of the land area; engage in collaborations, partnerships and joint ventures with agencies, NGOs, academic institutions and businesses; ensure the establishment and functionality of a grievance mechanism; submit the final list of names to the Office of the Chief Minister; monitor construction against the set standards and designs; formulate plans, programmes, policies and rules; and consult and actively involve local communities and stakeholders in planning and development, ensuring their ownership and cultural relevance.",
+  "Section 9 — The Board dissolves on the completion and turnover of the marker and eco-park to the cultural heritage commission, with remaining assets, liabilities and ongoing matters transferred to it.",
+  "Section 10 — Necessary funds are provided in the annual appropriations of the Commission, with an initial ₱15,000,000 appropriated.",
+  "Section 11 — The Board may accept grants, donations and contributions in cash or in kind from public and private entities, domestic and foreign, and engage in collaborations and joint ventures, ensuring transparency and accountability and complying with all relevant reporting and regulatory requirements.",
+  "Section 14 — Takes effect 15 days after publication in the Official Gazette or a newspaper of general circulation in the BARMM."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Families of the shuhada",
+   "Residents of Barira and visitors",
+   "Indigenous peoples, through the policy section"
+  ],
+  "impact_tags": [
+   "culture_heritage",
+   "peace_security_justice",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱15,000,000 initial, with further funds through the annual appropriations of the cultural heritage commission; grants and donations permitted",
+  "figures_note": "Quoted from Section 10."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2024-08-19"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/10/BAA-61.pdf",
+  "irr": "Plans, programmes, policies and rules to be formulated by the Board under Section 8(g). Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill 35",
+  "related_note": "Companion to BAA 60, which declared the burial site of Sheikh Salamat Hashim and Alim Abdul Aziz Mimbantas at Butig a Bangsamoro Memorial Site. Both are chaired by the Bangsamoro Commission for the Preservation of Cultural Heritage."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱15,000,000 initial",
+  "irr_status": "Section 8(g) empowers the Board to formulate the necessary plans, programmes, policies, rules and regulations.",
+  "note": "Read from the enacted text as signed. The eligibility criteria for names, the land area and the completion of the project are all left to the Board and are not recorded here."
+ },
+ "citizen_questions": [
+  {
+   "q": "Who counts as shuhada?",
+   "a": "Section 3 defines them as individuals who gave and devoted their lives, directly or indirectly, engaging in the armed struggle to assert the right to self-determination and freedom of the Bangsamoro. 'Directly or indirectly' is deliberately wide."
+  },
+  {
+   "q": "How is it decided whose name goes on the marker?",
+   "a": "The Bangsamoro Memorial Management Board establishes the eligibility criteria and submits the final list to the Office of the Chief Minister. The criteria are not written into the act."
+  },
+  {
+   "q": "What if I disagree with a decision?",
+   "a": "Section 8(d) requires the Board to ensure the establishment and functionality of a grievance mechanism for the act's implementation."
+  },
+  {
+   "q": "Is it only a monument?",
+   "a": "No. The marker sits within an eco-park with a multi-purpose hall, children's playground, parking, comfort rooms and wash areas and access roads, landscaped and designed to reflect Bangsamoro culture and arts."
+  },
+  {
+   "q": "How much does it cost, and can it take donations?",
+   "a": "₱15 million initially, with further funds through the cultural heritage commission's annual budget. The Board may accept grants and donations, domestic and foreign, subject to transparency and reporting requirements."
+  },
+  {
+   "q": "Who decides how big the park is?",
+   "a": "The Board determines the metes and bounds of the land area; the act does not fix them."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 61",
+  "line2": "Bangsamoro Memorial Marker Act of 2024",
+  "badges": [
+   "IN FORCE",
+   "Culture & Heritage",
+   "2024"
+  ],
+  "what_this_does": "Creates a memorial naming the shuhada inside a public eco-park at Camp Abubakar.",
+  "who_it_affects": "Families of the fallen · residents of Barira · every province of the region"
+ },
+ "views": {
+  "simple": "Establishes a memorial marker bearing the names of the shuhada of the Bangsamoro struggle inside a new eco-park at Camp Abubakar, Barira, run by a management board with a grievance mechanism and community consultation, funded with ₱15 million to start.",
+  "official": "AN ACT ESTABLISHING A BANGSAMORO MEMORIAL MARKER AND ECO-PARK IN CAMP ABUBAKAR, MUNICIPALITY OF BARIRA, MAGUINDANAO DEL NORTE TO HONOR THE SHUHADA/MARTYRS OF THE BANGSAMORO STRUGGLE WHO GAVE AND DEVOTED THEIR LIVES FOR THE RIGHT TO SELF-DETERMINATION AND FREEDOM OF THE BANGSAMORO, PROVIDING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 61, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

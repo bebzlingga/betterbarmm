@@ -1,199 +1,211 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 30,
-    "short_title": "an Act Upgrading the Unayan Municipal Hospital Act",
-    "official_title": "AN ACT UPGRADING THE UNAYAN MUNICIPAL HOSPITAL, BINIDAYAN, LANAO DEL SUR INTO A 50-BED DISTRICT HOSPITAL",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2022-06-21",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Upgrades the Unayan Municipal Hospital, Binidayan, Lanao del Sur Into a 50-BED District Hospital.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Upgrades the Unayan Municipal Hospital, Binidayan, Lanao del Sur Into a 50-BED District Hospital.",
-    "who_will_be_affected": [
-      "Residents of Lanao Del Sur",
-      "Pregnant women",
-      "Senior citizens & PWDs",
-      "Health workers"
-    ],
-    "when_will_it_take_effect": "Ratified 2022-06-21; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Upgrades a public hospital serving Lanao Del Sur (50 beds). For nearby families this means emergency and inpatient care closer to home instead of long, costly trips to distant referral hospitals.",
-      "in_practice": [
-        "More beds means fewer 'no vacancy' referrals and less floor-space crowding during outbreaks",
-        "A higher hospital level allows more services on-site: surgery, specialist clinics, better laboratory and imaging, more doctors and nurses on the plantilla",
-        "PhilHealth-accredited services expand with the facility's level, lowering out-of-pocket costs",
-        "Construction, staffing, and supplies take time after enactment - upgrades typically roll out over one or more budget years"
-      ],
-      "for_specific_groups": {
-        "Residents of Lanao Del Sur": "Shorter travel time in emergencies - often the difference between life and death for stroke, hemorrhage, and obstetric cases",
-        "Pregnant women": "Facility-based deliveries and emergency obstetric care become available nearer home",
-        "Senior citizens & PWDs": "Follow-up care and dialysis/maintenance services without long-distance travel",
-        "Health workers": "New plantilla positions (nurses, midwives, med-techs, doctors) usually open when a hospital is created or upgraded - watch the MOH and hospital job postings"
-      },
-      "where_this_applies": "Lanao Del Sur",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Ask the Ministry of Health (MOH-BARMM) or the hospital chief when the added beds/services actually open"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Closer, bigger, better-equipped public healthcare for Lanao Del Sur.",
-        "direct_benefits": [
-          {
-            "benefit": "Emergency and inpatient care near home (up to 50 beds) instead of long referral trips",
-            "who_gets_it": "Residents of Lanao Del Sur",
-            "how_to_access": "Go directly; public hospitals cannot refuse emergencies"
-          },
-          {
-            "benefit": "More services as the hospital's level rises: surgery, laboratory, imaging, specialty clinics",
-            "who_gets_it": "Patients in the catchment area",
-            "how_to_access": "Outpatient department; bring PhilHealth/ID"
-          },
-          {
-            "benefit": "Lower out-of-pocket costs as PhilHealth-accredited services expand with the facility level",
-            "who_gets_it": "PhilHealth members and indigents (automatic UHC coverage)",
-            "how_to_access": "Hospital PhilHealth desk / Malasakit-type assistance where present"
-          },
-          {
-            "benefit": "Safer childbirth: facility-based delivery and emergency obstetric care nearby",
-            "who_gets_it": "Pregnant women",
-            "how_to_access": "Prenatal check-ups at the RHU, delivery at the hospital"
-          },
-          {
-            "benefit": "New jobs: doctors, nurses, midwives, med-techs, admin and support staff",
-            "who_gets_it": "Health professionals and local job seekers",
-            "how_to_access": "Watch MOH-BARMM and hospital postings"
-          }
-        ],
-        "indirect_benefits": [
-          "Decongests referral hospitals for everyone else",
-          "Local economy around the hospital (transport, food, pharmacies)",
-          "Faster outbreak and disaster response capacity in the area"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Bed count on paper becomes real only after construction/hiring - ask the hospital chief for the timeline"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Sets hospital bed capacity: 50-Bed",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 30,
+  "short_title": "Unayan Municipal Hospital Upgrading Act of 2022",
+  "official_title": "AN ACT UPGRADING THE UNAYAN MUNICIPAL HOSPITAL IN MUNICIPALITY OF BINIDAYAN, LANAO DEL SUR, INTO A FIFTY (50) BED CAPACITY DISTRICT HOSPITAL AND APPROPRIATING FUNDS THEREFOR AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2022-06-21",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Fourth Regular Session",
+  "date_passed": "2022-06-21",
+  "date_passed_hijri": "Dhu Al-Qa'dah 22, 1443",
+  "date_approved_by_chief_minister": "2022-07-12",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Health workers",
-      "Hospitals",
-      "Patients"
-    ],
-    "impact_tags": [
-      "health",
-      "hospital_health"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2022-06-21"
-    }
+  "effectivity": "15 days after publication in a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Turns the Unayan Municipal Hospital in Binidayan, Lanao del Sur, into a 50-bed district hospital — 5 times its current capacity — and renames it the Unayan District Hospital.",
+  "why_was_it_proposed": "The Organic Law duty to provide comprehensive and integrated health service delivery and establish a general hospital system by law.",
+  "what_will_change": "A ten-bed municipal hospital becomes a fifty-bed district hospital, with buildings, equipment, facilities, operating funds and personnel upgraded to the prescribed standards, and a new name to match its new status.",
+  "who_will_be_affected": [
+   "Residents of Binidayan and the wider Unayan area of Lanao del Sur",
+   "Patients previously limited to a ten-bed facility",
+   "Hospital staff, whose posts and funding are upgraded"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Health (MOH)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2022-06-21 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Health (MOH) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 30",
-    "line2": "an Act Upgrading the Unayan Municipal Hospital Act",
-    "badges": [
-      "ENACTED",
-      "Hospital Health",
-      "2022"
+  "when_will_it_take_effect": "In force since 2022. Delivery depends on the annual Bangsamoro budget.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. Unayan Municipal Hospital becomes Unayan District Hospital, with 50 authorised beds instead of 10.",
+   "in_practice": [
+    "10 authorised beds becomes 50",
+    "The facility is reclassified from municipal to district hospital",
+    "It is renamed the Unayan District Hospital",
+    "Buildings, landscaping, equipment, operating funds and personnel upgraded to the prescribed standards",
+    "The hospital integrates the Universal Health Care Act",
+    "Under the administrative supervision of the Ministry of Health"
+   ],
+   "for_specific_groups": {
+    "Patients": "5 times the beds, and district rather than municipal classification.",
+    "Hospital staff": "Personnel are expressly upgraded along with the facility.",
+    "PhilHealth members": "Section 4 requires integration of the Universal Health Care Act."
+   },
+   "where_this_applies": "Binidayan, Lanao del Sur.",
+   "when_you_will_feel_it": "In force since 2022; construction and staffing depend on annual appropriations.",
+   "what_you_can_do": [
+    "Ask MOH-BARMM about the implementing rules, due within 60 days of enactment",
+    "Ask how many of the 50 authorised beds are operating"
+   ],
+   "watch_out_for": [
+    "No peso amount is stated and no completion deadline is set.",
+    "Unlike BAA 28 and 29 passed days earlier, this act has no funding schedule.",
+    "Authorised capacity is a ceiling, not a built figure."
+   ],
+   "key_terms_explained": {
+    "Municipal vs district hospital": "A district hospital serves a wider catchment than a single municipality and carries a higher classification.",
+    "Authorized bed capacity": "The number of beds the hospital may legally operate.",
+    "UHC Act": "Republic Act 11223, the national Universal Health Care law."
+   },
+   "status_note": "Passed Dhu Al-Qa'dah 22, 1443 / 21 June 2022, approved by the Chief Minister on 12 July 2022.",
+   "benefits": {
+    "headline": "A five-fold capacity increase and district status for Binidayan's hospital.",
+    "direct_benefits": [
+     {
+      "benefit": "50 authorised beds instead of 10",
+      "who_gets_it": "Residents of Binidayan and the Unayan area",
+      "how_to_access": "Through the hospital, subject to construction"
+     },
+     {
+      "benefit": "District hospital classification",
+      "who_gets_it": "The wider catchment beyond the municipality",
+      "how_to_access": "Automatic on delivery"
+     }
     ],
-    "what_this_does": "Upgrades the Unayan Municipal Hospital, Binidayan, Lanao del Sur Into a 50-BED District Hospital.",
-    "who_it_affects": "Health workers · Hospitals · Patients",
-    "effective": "2022-06-21"
-  },
-  "views": {
-    "simple": "Upgrades the Unayan Municipal Hospital, Binidayan, Lanao del Sur Into a 50-BED District Hospital.",
-    "official": "AN ACT UPGRADING THE UNAYAN MUNICIPAL HOSPITAL, BINIDAYAN, LANAO DEL SUR INTO A 50-BED DISTRICT HOSPITAL"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Upgraded staff establishment, equipment and operating funds",
+     "Universal Health Care provisions integrated into operations"
+    ],
+    "limitations": [
+     "No stated peso appropriation.",
+     "No funding schedule.",
+     "No completion deadline."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "The hospital administration",
+    "oversight": "Ministry of Health – BARMM",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A resident of Binidayan who could not be admitted to a ten-bed hospital has 5 times the capacity once the upgrade is delivered.",
+    "Someone looking for 'Unayan Municipal Hospital' should note the act renames it the Unayan District Hospital."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Unayan Municipal Hospital Upgrading Act of 2022”.",
+  "Section 2 — Policy grounded on Section 22, Article IX of the Organic Law: comprehensive and integrated health service delivery and a general hospital system established by law.",
+  "Section 3 — Upgrades the existing Unayan Municipal Hospital from ten authorised beds into a District Hospital with fifty authorised beds, to be known as the Unayan District Hospital. Existing buildings including landscaping, medical and office equipment and other facilities, together with operating funds and personnel, are upgraded to include the construction and procurement needed to meet the prescribed standards.",
+  "Section 4 — The hospital shall integrate all relevant provisions of Republic Act 11223, the Universal Health Care Act.",
+  "Section 5 — The hospital is under the administrative supervision of the Ministry of Health, which determines and approves its organisational structure.",
+  "Section 6 — Funding is appropriated from the Bangsamoro General Appropriations for the upgrading, including infrastructure, medical and office equipment and the annual operating budget, and thereafter such amount as may be needed.",
+  "Section 7 — MOH-BARMM shall promulgate implementing rules within 60 days after enactment.",
+  "Section 9 — Repeals inconsistent BARMM laws, including those passed under the defunct ARMM, on the operations of the Unayan Municipal Hospital.",
+  "Section 10 — Takes effect 15 days after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of Binidayan and the Unayan area, Lanao del Sur"
+  ],
+  "impact_tags": [
+   "health",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "No amount stated — funded from the Bangsamoro General Appropriations.",
+  "figures_note": "The act states capacity figures (10 beds to 50) but no peso amount."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2022-06-21"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/08/BAA-30.pdf",
+  "irr": "Required from MOH-BARMM within 60 days of enactment. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": "Inconsistent BARMM and former ARMM issuances on this hospital",
+  "origin_bill": "Bill 74",
+  "related_note": "The last of the June 2022 hospital cluster, passed 5 days after BAA 28 and 29 — and, unlike those two, without a funding schedule."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "No amount stated",
+  "irr_status": "Section 7 required MOH-BARMM implementing rules within 60 days of enactment.",
+  "note": "Read from the enacted text as signed."
+ },
+ "citizen_questions": [
+  {
+   "q": "What is changing?",
+   "a": "The Unayan Municipal Hospital becomes a district hospital with 50 authorised beds instead of 10, and is renamed the Unayan District Hospital."
+  },
+  {
+   "q": "How much was allocated?",
+   "a": "The act names no amount — funding comes from the Bangsamoro General Appropriations, and thereafter such amount as may be needed."
+  },
+  {
+   "q": "Is there a timetable?",
+   "a": "No. Unlike the Sulu and Buluan acts passed days earlier, this one sets no funding schedule and no completion deadline. Implementing rules were due within 60 days of enactment."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 30",
+  "line2": "Unayan Municipal Hospital Upgrading Act of 2022",
+  "badges": [
+   "IN FORCE",
+   "Health",
+   "2022"
+  ],
+  "what_this_does": "Turns a 10-bed municipal hospital into a 50-bed district hospital in Binidayan, Lanao del Sur.",
+  "who_it_affects": "Residents of Binidayan and the Unayan area"
+ },
+ "views": {
+  "simple": "Upgrades the Unayan Municipal Hospital in Binidayan, Lanao del Sur, from 10 beds to a 50-bed district hospital, renaming it the Unayan District Hospital.",
+  "official": "AN ACT UPGRADING THE UNAYAN MUNICIPAL HOSPITAL IN MUNICIPALITY OF BINIDAYAN, LANAO DEL SUR, INTO A FIFTY (50) BED CAPACITY DISTRICT HOSPITAL AND APPROPRIATING FUNDS THEREFOR AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 30, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

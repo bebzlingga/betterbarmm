@@ -1476,4 +1476,54 @@ export function getAllRecords(): LegislationRecord[] {
 	return [...allRecords.acts, ...allRecords.bills, ...allRecords.resolutions]
 }
 
+/** One measure by its roll and number — the lookup behind each record page. */
+export function getRecord(category: CategorySlug, number: number): LegislationRecord | undefined {
+	if (!Number.isFinite(number)) return undefined
+	return allRecords[category].find((record) => record.number === number)
+}
+
+/**
+ * Every number on a roll, for `generateStaticParams`.
+ *
+ * Deduplicated: a roll is assembled from captured files plus Parliament's
+ * index, and a number appearing in both would otherwise be prerendered twice.
+ */
+export function getRecordNumbers(category: CategorySlug): number[] {
+	return [...new Set(allRecords[category].map((record) => record.number))]
+}
+
+/**
+ * The registry at a glance, for the standing caveat above the footer.
+ *
+ * The caveat is only worth reading if it says how far the reading actually
+ * goes, so these are the two numbers that matter: everything Parliament lists,
+ * and the far smaller count of measures whose own documents someone opened and
+ * quoted. The gap between them is the honest shape of this registry.
+ */
+export type RegistryScale = {
+	/** Every act, bill and resolution Parliament publishes an index for. */
+	listed: number
+	/** Measures read from their own documents, section by section. */
+	read: number
+	/** Earliest and latest year carried by any record, e.g. "2019-2026". */
+	years: string
+	/** The date the registry was last rebuilt from source. */
+	compiledOn: string
+}
+
+export function getRegistryScale(): RegistryScale {
+	const records = getAllRecords()
+	const years = records
+		.map((record) => record.year)
+		.filter((year) => /^\d{4}$/.test(year))
+		.sort()
+
+	return {
+		listed: records.length,
+		read: records.filter((record) => record.reading).length,
+		years: years.length > 0 ? `${years[0]}\u2013${years[years.length - 1]}` : '',
+		compiledOn: GENERATED_AT,
+	}
+}
+
 export const registryGeneratedAt = GENERATED_AT

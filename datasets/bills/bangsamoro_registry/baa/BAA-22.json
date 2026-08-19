@@ -1,185 +1,259 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 22,
-    "short_title": "Appropriates P10,000,000,000 from the 2020 and 2021 Special",
-    "official_title": "AN ACT APPROPRIATING P10,000,000,000 FROM THE 2020 AND 2021 SPECIAL DEVELOPMENT FUND",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2021-10-08",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Appropriates P10,000,000,000 from the 2020 and 2021 Special Development Fund.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Appropriates P10,000,000,000 from the 2020 and 2021 Special Development Fund.",
-    "who_will_be_affected": [
-      "Parents & students",
-      "Patients",
-      "Workers & suppliers",
-      "Taxpayers"
-    ],
-    "when_will_it_take_effect": "Ratified 2021-10-08; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "This is a money law: it decides how much funding BARMM ministries and programs get - the schools, hospitals, roads, scholarships, and social services you use are all paid from it. No single citizen 'applies' for it, but nearly every public service you touch depends on it.",
-      "in_practice": [
-        "Sets each ministry's budget ceiling for the year (or adds/extends funds mid-year for supplementals and extensions)",
-        "Slow disbursement is the recurring issue - several BAAs exist purely to extend the validity of unspent funds",
-        "Big-ticket items to watch: education (MBHTE), health (MOH), public works (MPW), and the Special Development Fund for conflict-affected communities"
-      ],
-      "for_specific_groups": {
-        "Parents & students": "Classroom construction, teacher hiring, and scholarship slots are set here",
-        "Patients": "Hospital operating budgets, medicines, and health worker salaries flow from this law",
-        "Workers & suppliers": "Government projects and procurement opportunities follow the appropriations",
-        "Taxpayers": "This is the accountability document - compare what was appropriated with what was actually delivered"
-      },
-      "where_this_applies": "All of BARMM",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Follow-up reports: the Parliament itself has passed resolutions demanding ministries account for these funds"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Funds every public service you use - the enabler of all other benefits.",
-        "direct_benefits": [
-          {
-            "benefit": "Operating budgets for schools, hospitals, roads, scholarships, social programs",
-            "who_gets_it": "Everyone using public services",
-            "how_to_access": "Automatic through the funded agencies"
-          },
-          {
-            "benefit": "Salaries of teachers, health workers, and government personnel",
-            "who_gets_it": "Public employees",
-            "how_to_access": "Through payroll of funded agencies"
-          },
-          {
-            "benefit": "Special Development Fund projects in conflict-affected communities",
-            "who_gets_it": "Camp and conflict-affected barangays",
-            "how_to_access": "Through LGU/OCM project identification"
-          }
-        ],
-        "indirect_benefits": [
-          "Procurement and job opportunities from funded projects",
-          "Predictability: agencies can plan the year"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Compare appropriations vs. actual delivery - Parliament's own resolutions demand these reports; you can too"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Amount stated in title: PHP 10,000,000,000",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 22,
+  "short_title": "₱10 Billion Special Development Fund (2020–2021)",
+  "official_title": "AN ACT APPROPRIATING THE SUM OF TEN BILLION PESOS (P10,000,000,000.00) FROM THE 2020 AND 2021 SPECIAL DEVELOPMENT FUND, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2021-10-08",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session",
+  "date_passed": "2021-10-08",
+  "date_passed_hijri": "Rabi ul Awwal 1, 1443",
+  "date_approved_by_chief_minister": "2021-10-25",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "budget_finance",
-      "other"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2021-10-08"
-    }
+  "effectivity": "Immediately upon publication in a newspaper of general circulation in the region"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Appropriates ₱10 billion — ₱5 billion each from the 2020 and 2021 Special Development Fund — for rebuilding, rehabilitating and developing conflict-affected communities in the Bangsamoro.",
+  "why_was_it_proposed": "The Organic Law provides a Special Development Fund for the region. This act appropriates 2 years of it and directs the money at communities damaged by conflict, under the Bangsamoro Development Plan 2020–2022.",
+  "what_will_change": "₱10 billion becomes available for rebuilding and development, with rules on where infrastructure may be built, mandatory website publication of contracts and costs, monthly and quarterly reporting, and salary suspension for officials who fail to report.",
+  "who_will_be_affected": [
+   "Conflict-affected communities across the BARMM — the stated beneficiaries",
+   "Contractors bidding for infrastructure projects, whose winning bids and costs must be published",
+   "Ministries and offices implementing projects, and their ministers and web administrators",
+   "Anyone wanting to know where ₱10 billion went"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Finance, and Budget and Management (MFBM)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2021-10-08 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Finance, and Budget and Management (MFBM) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 22",
-    "line2": "Appropriates P10,000,000,000 from the 2020 and 2021 Special",
-    "badges": [
-      "ENACTED",
-      "Budget Finance",
-      "2021"
+  "when_will_it_take_effect": "Took effect immediately on publication in 2021. Its spending deadlines were later extended by BAA 34 and BAA 51.",
+  "what_this_means_for_you": {
+   "in_short": "₱10 billion for conflict-affected communities. Every infrastructure contract, winning bidder and final cost must be posted on the implementing ministry's website — and officials who miss the reports have their salaries suspended.",
+   "in_practice": [
+    "₱5 billion as the 2020 Special Development Fund and ₱5 billion as the 2021 fund",
+    "For the rebuilding, rehabilitation and development of conflict-affected communities in the BARMM",
+    "Spending must follow the Bangsamoro Development Plan 2020–2022",
+    "Released by the finance ministry directly to implementing ministries, on the Chief Minister's approval and a Special Budget Request",
+    "Infrastructure may not be sited in critical geo-hazard areas or no-build zones, must meet structural strength and climate resilience standards, and in protected areas may only proceed if intended to enhance biodiversity",
+    "Within 30 days of signing a contract: project title, location, description, detailed budget estimates, winning contractor and bid details must be posted on the ministry's website",
+    "Within 30 days of a certificate of completion: the detailed actual cost and any variation orders must be posted",
+    "Quarterly financial and physical reports within 30 days of each quarter; monthly financial reports by the 10th of the following month",
+    "Failure to report suspends the responsible official's salary until they comply"
+   ],
+   "for_specific_groups": {
+    "Conflict-affected communities": "You are the stated purpose of the fund — rebuilding, rehabilitation and development.",
+    "Anyone watching procurement": "Section 5 is the provision to use. Contract details, the winning contractor, the bid as awarded, the final actual cost and every variation order must all be on the ministry's website, with named officials responsible for compliance.",
+    "Women": "The chairperson of the Bangsamoro Women Commission sits ex officio on the fund's Technical Working Group to ensure programmes are gender-responsive.",
+    "Communities in hazard zones or protected areas": "Section 4 bars siting in critical geo-hazard areas and no-build zones, and restricts major infrastructure in protected areas to projects intended to enhance biodiversity."
+   },
+   "where_this_applies": "Conflict-affected communities across the BARMM.",
+   "when_you_will_feel_it": "Spending ran from 2021, with deadlines later extended by BAA 34 and BAA 51.",
+   "what_you_can_do": [
+    "Check the implementing ministry's website for the project title, budget estimates, winning contractor and bid — required within 30 days of contract signing",
+    "Check again after completion for the detailed actual cost and any variation orders",
+    "Ask for the quarterly financial and physical reports, and the monthly financial reports",
+    "Ask whether a project site was cleared against the geo-hazard and no-build restrictions"
+   ],
+   "watch_out_for": [
+    "Section 7 allows changes to project design — scope, location, beneficiaries, implementation period — subject to planning authority endorsement and the Chief Minister's approval, so the project you were told about can lawfully change.",
+    "The original spending deadlines were extended twice, by BAA 34 and then BAA 51, which removed the disbursement deadline entirely.",
+    "The act does not itself publish anything; it obliges ministries to."
+   ],
+   "key_terms_explained": {
+    "Special Development Fund": "A dedicated development fund for the region under Section 2, Article XIV of the Organic Law.",
+    "Approved Budget for the Contract": "The government's own cost estimate for a project, against which bids are judged.",
+    "Variation order": "A change to a contract after award, often the point at which costs rise.",
+    "NIPAS": "National Integrated Protected Areas System — the protected-area regime restricting construction.",
+    "URS": "Unified Reporting System, the electronic channel for submitting government reports.",
+    "TWG": "Technical Working Group, which prepares the fund's programme of projects."
+   },
+   "status_note": "Passed Rabi ul Awwal 1, 1443 / 8 October 2021, approved by the Chief Minister on 25 October 2021.",
+   "benefits": {
+    "headline": "₱10 billion for conflict-affected communities, with contracts and final costs required to be published.",
+    "direct_benefits": [
+     {
+      "benefit": "₱10 billion for rebuilding, rehabilitation and development",
+      "who_gets_it": "Conflict-affected communities in the BARMM",
+      "amount": "₱5 billion (2020 SDF) plus ₱5 billion (2021 SDF)",
+      "how_to_access": "Through implementing ministries under the Bangsamoro Development Plan"
+     },
+     {
+      "benefit": "Published contract details, winning bidder, actual cost and variation orders",
+      "who_gets_it": "Anyone watching public spending",
+      "how_to_access": "Implementing ministry's website, within 30 days of contract and of completion"
+     },
+     {
+      "benefit": "Monthly and quarterly financial reporting with a real sanction",
+      "who_gets_it": "Everyone relying on the reports existing",
+      "how_to_access": "Salary suspension applies to officials who fail to comply"
+     },
+     {
+      "benefit": "Gender-responsive programming",
+      "who_gets_it": "Women in conflict-affected communities",
+      "how_to_access": "The Bangsamoro Women Commission chair sits ex officio on the Technical Working Group"
+     }
     ],
-    "what_this_does": "Appropriates P10,000,000,000 from the 2020 and 2021 Special Development Fund.",
-    "who_it_affects": "General public",
-    "effective": "2021-10-08"
-  },
-  "views": {
-    "simple": "Appropriates P10,000,000,000 from the 2020 and 2021 Special Development Fund.",
-    "official": "AN ACT APPROPRIATING P10,000,000,000 FROM THE 2020 AND 2021 SPECIAL DEVELOPMENT FUND"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Hazard, climate resilience and biodiversity conditions on where and how infrastructure is built",
+     "Flexibility for agencies to adjust projects without exceeding the authorised allotment"
+    ],
+    "limitations": [
+     "Project design may be changed after approval.",
+     "Deadlines were extended twice and eventually left open-ended.",
+     "The act sets no per-community or per-province allocation."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The duties fall on ministries and officials."
+    ],
+    "for_ministries": [
+     "Post contract and cost information on the ministry website within the stated periods",
+     "Submit monthly and quarterly financial and physical reports",
+     "Ensure infrastructure sites comply with the geo-hazard, climate resilience and protected-area conditions"
+    ]
+   },
+   "what_is_prohibited": [
+    "Siting infrastructure projects in critical geo-hazard areas or no-build zones identified or certified by the environment ministry or other competent authority.",
+    "Undertaking major infrastructure within protected areas unless intended to enhance biodiversity.",
+    "Failing to submit the required monthly and quarterly reports."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence committed by a member of the public.",
+    "for_officials": "Failure to comply with the reporting requirements results in the automatic suspension of the salaries of the responsible official or employee until they comply, under Section 57, Chapter 6, Book VI of Executive Order 292. Repeated failure or refusal without justifiable cause may be a ground for administrative disciplinary action. The act calls this a penal provision and makes the Minister or Head of Office responsible for enforcing it."
+   },
+   "where_to_complain": {
+    "first_stop": "The implementing ministry or office, whose minister and web administrator are responsible for compliance with the posting rules",
+    "oversight": "Ministry of Finance, and Budget and Management, which releases the funds and receives the reports; the Bangsamoro Planning and Development Authority, which reviews the programme of projects",
+    "note": "The act creates no complaints procedure, but it creates a large body of documents that must be public."
+   },
+   "everyday_scenarios": [
+    "A road is built in a conflict-affected barangay. Within 30 days of the contract, the ministry must post the project description, the budget estimates, the winning contractor and the bid; within 30 days of completion, the actual cost and any variation orders.",
+    "A ministry misses a quarterly report. The responsible official's salary is suspended until it is filed.",
+    "A proposed project site sits in a no-build zone. Section 4 bars it — the location must not be in a critical geo-hazard area or no-build zone certified by the environment ministry.",
+    "A community is told its project has changed scope. Section 7 permits that, subject to the planning authority's endorsement and the Chief Minister's approval."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Appropriates ₱5,000,000,000 as the 2020 Special Development Fund and ₱5,000,000,000 as the 2021 Special Development Fund, pursuant to Section 2, Article XIV of Republic Act 11054, the Bangsamoro Organic Law.",
+  "Section 2 — The amounts are to be used for the rebuilding, rehabilitation and development of conflict-affected communities in the BARMM, in accordance with the Bangsamoro Development Plan 2020–2022 as adopted by the Bangsamoro Economic and Development Council on 5 June 2020 and by the BTA Parliament on 3 July 2020. Releases are made by the MFBM directly to implementing ministries and offices, subject to the Chief Minister's approval and submission of a Special Budget Request with supporting documents.",
+  "Section 3 — Cash budgeting: appropriations are available for release and disbursement until 31 December 2022. Infrastructure capital outlays are obligable to that date with completion, inspection and payment by 30 June 2023; MOOE and other capital outlays likewise obligable to that date with delivery, inspection and payment by 31 March 2023.",
+  "Section 4 — Additional requirements for infrastructure: sites must not lie in critical geo-hazard areas or no-build zones identified or certified by the Ministry of Environment, Natural Resources and Energy or another competent authority; construction standards must follow Ministry of Public Works rules considering structural strength and climate resilience; and projects within the National Integrated Protected Area System must minimise biodiversity loss, with major infrastructure permitted there only if intended to enhance biodiversity. The MPW shall consider climate data, risk assessment and green building standards in planning, designing, constructing, engineering and renovating government buildings and facilities.",
+  "Section 5 — Transparency in infrastructure projects: ministries and offices shall post on their websites the project title, location and detailed description, the detailed estimates behind the Approved Budget for the Contract, and the winning contractor with the detailed estimates of the bid as awarded, within 30 calendar days of entering into the contract; and the detailed actual cost and any variation orders within 30 calendar days of the certificate of completion. Ministers, heads of offices and web administrators are responsible for compliance.",
+  "Section 6 — Reporting: quarterly financial and physical accomplishment reports within 30 days of each quarter, via the Unified Reporting System, in hard copy to the MFBM and on the ministry's website, with written notice of submission. Failure results in automatic suspension of the salaries of the responsible official or employee until compliance, under Section 57, Chapter 6, Book VI of E.O. 292; repeated failure may ground administrative disciplinary action, and the Minister or Head of Office is responsible for enforcing this penal provision. Monthly financial reports on appropriations, allotments, obligations and disbursements are due by the 10th day of the following month through the same three channels.",
+  "Section 7 — Implementing agencies are given maximum flexibility in the use of cash allocations provided the authorised allotment for a specific purpose is not exceeded, including adjustments to project design for changes in scope, location, beneficiaries and implementation period, subject to the endorsement of the Director General of the Bangsamoro Planning and Development Authority and the approval of the Chief Minister.",
+  "Section 8 — Creates a Special Development Fund Technical Working Group chaired by the Senior Minister, with members determined by the Chief Minister and the BPDA as Secretariat. To ensure programmes, projects and activities are gender-responsive, the chairperson of the Bangsamoro Women Commission is an ex officio member. The TWG consolidates the programme of projects and submits it to the BPDA for review against the Bangsamoro Development Plan, and the BPDA Director General submits it for the Chief Minister's approval.",
+  "Section 11 — Takes effect immediately upon publication in a newspaper of general circulation in the region."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Conflict-affected communities in the BARMM",
+   "Women, through gender-responsive programming"
+  ],
+  "impact_tags": [
+   "budget_appropriations",
+   "peace_security_justice",
+   "infrastructure"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱10,000,000,000 — ₱5 billion as the 2020 Special Development Fund and ₱5 billion as the 2021 fund",
+  "figures_note": "Quoted from Section 1. This is the largest single appropriation in the registry."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2021-10-08"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2021/11/BAA-22.pdf",
+  "irr": "MFBM guidelines on the release of the SDF and on the use of funds and project adjustments. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [
+   "BAA 34",
+   "BAA 51"
+  ],
+  "repeals": null,
+  "origin_bill": "Bill 139",
+  "related_note": "Grounded on Section 2, Article XIV of the Organic Law. Its cash budgeting section was extended by BAA 34 and then by BAA 51, which removed the disbursement deadline. The Bangsamoro Women Commission created by BAA 8 sits ex officio on its Technical Working Group."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱10,000,000,000",
+  "irr_status": "Sections 2 and 7 require the MFBM to formulate and issue guidelines.",
+  "note": "Read from the enacted text as signed. The reports and website postings this act requires are not captured by this registry."
+ },
+ "citizen_questions": [
+  {
+   "q": "How much money is this, and what is it for?",
+   "a": "₱10 billion — ₱5 billion each from the 2020 and 2021 Special Development Fund — for the rebuilding, rehabilitation and development of conflict-affected communities in the BARMM."
+  },
+  {
+   "q": "Can I find out who won a contract and what it cost?",
+   "a": "Yes. Section 5 requires the implementing ministry to post the project description, budget estimates, winning contractor and bid on its website within 30 days of signing, and the detailed actual cost and any variation orders within 30 days of completion."
+  },
+  {
+   "q": "What happens if a ministry does not report?",
+   "a": "The responsible official's salary is automatically suspended until they comply, and repeated refusal can be a ground for administrative disciplinary action."
+  },
+  {
+   "q": "Can a project be built anywhere?",
+   "a": "No. Sites must not be in critical geo-hazard areas or no-build zones, construction must meet structural strength and climate resilience standards, and major infrastructure in protected areas is allowed only if intended to enhance biodiversity."
+  },
+  {
+   "q": "Can the project I was promised change?",
+   "a": "Yes. Section 7 allows adjustments in scope, location, beneficiaries and implementation period, provided the authorised allotment is not exceeded, with the planning authority's endorsement and the Chief Minister's approval."
+  },
+  {
+   "q": "Is there anything on women's participation?",
+   "a": "The chairperson of the Bangsamoro Women Commission is an ex officio member of the fund's Technical Working Group, expressly to ensure programmes are gender-responsive."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 22",
+  "line2": "₱10 Billion Special Development Fund (2020–2021)",
+  "badges": [
+   "IN FORCE",
+   "Budget & Appropriations",
+   "2021"
+  ],
+  "what_this_does": "Appropriates ₱10 billion to rebuild conflict-affected communities, with contracts and costs required to be published.",
+  "who_it_affects": "Conflict-affected communities · contractors · implementing ministries"
+ },
+ "views": {
+  "simple": "Appropriates ₱10 billion from the 2020 and 2021 Special Development Fund to rebuild conflict-affected communities, with siting and climate-resilience conditions on infrastructure, mandatory website publication of contracts and final costs, and salary suspension for officials who fail to report.",
+  "official": "AN ACT APPROPRIATING THE SUM OF TEN BILLION PESOS (P10,000,000,000.00) FROM THE 2020 AND 2021 SPECIAL DEVELOPMENT FUND, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 22, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

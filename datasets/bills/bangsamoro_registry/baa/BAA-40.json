@@ -1,180 +1,251 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 40,
-    "short_title": "Establishes the Bangsamoro Science High School System",
-    "official_title": "AN ACT ESTABLISHING THE BANGSAMORO SCIENCE HIGH SCHOOL SYSTEM",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2023-08-14",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Establishes the Bangsamoro Science High School System.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Establishes the Bangsamoro Science High School System.",
-    "who_will_be_affected": [
-      "Target sector of the body",
-      "Job seekers",
-      "CSOs"
-    ],
-    "when_will_it_take_effect": "Ratified 2023-08-14; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Creates or strengthens a public institution. New offices sound bureaucratic, but each one is a service window: a place to bring complaints, apply for programs, or get support that previously had no dedicated home in the region.",
-      "in_practice": [
-        "Once organized (leadership appointed, budget released), it opens programs and services",
-        "Look for its office, hotline, or Facebook page under the Bangsamoro Government",
-        "Its mandate defines what you can demand from it"
-      ],
-      "for_specific_groups": {
-        "Target sector of the body": "You gain a dedicated advocate inside government",
-        "Job seekers": "New institutions hire staff",
-        "CSOs": "A formal counterpart for partnership and accountability"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "A dedicated office now exists to serve and advocate for its sector.",
-        "direct_benefits": [
-          {
-            "benefit": "A service window: programs, assistance, and complaints handling for the covered sector",
-            "who_gets_it": "The sector named in the law",
-            "how_to_access": "The body's office/hotline once organized"
-          },
-          {
-            "benefit": "Representation inside government when policies are made",
-            "who_gets_it": "Sector members",
-            "how_to_access": "Through the body's consultations"
-          },
-          {
-            "benefit": "Employment in the new institution",
-            "who_gets_it": "Qualified applicants",
-            "how_to_access": "CSC-BARMM / agency postings"
-          }
-        ],
-        "indirect_benefits": [
-          "A formal partner for NGOs and donors working on the sector"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "An office's value depends on leadership and funding - track its accomplishment reports"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 40,
+  "short_title": "Bangsamoro Science High School System Act of 2023",
+  "official_title": "AN ACT ESTABLISHING THE BANGSAMORO SCIENCE HIGH SCHOOL SYSTEM, PROVIDING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2023-08-14",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Second Regular Session (begun 15 September 2022)",
+  "date_passed": "2023-08-14",
+  "date_passed_hijri": "Muharram 27, 1445",
+  "date_approved_by_chief_minister": "2023-09-04",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Schools",
-      "Students",
-      "Teachers"
-    ],
-    "impact_tags": [
-      "education",
-      "institution_commission"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2023-08-14"
-    }
+  "effectivity": "15 days after publication in a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates a system of science high schools for the Bangsamoro, built to Philippine Science High School standards, offering free education to qualified learners with scholarships and stipends.",
+  "why_was_it_proposed": "The region declares science and technology essential to progress and commits to a science education system tailored to Bangsamoro learners — one that also strengthens their foundation of faith through Values Education.",
+  "what_will_change": "Qualified Bangsamoro learners can attend a science high school free of charge, with scholarships, stipends and allowances, under a curriculum designed to make them globally competitive in science and technology.",
+  "who_will_be_affected": [
+   "Bangsamoro learners with talent in science and mathematics",
+   "Families who could not afford specialist secondary schooling",
+   "Teachers and faculty in science education",
+   "Alumni, who hold a seat on the governing board"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "The created body itself",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2023-08-14 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "The created body itself (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 40",
-    "line2": "Establishes the Bangsamoro Science High School System",
-    "badges": [
-      "ENACTED",
-      "Institution Commission",
-      "2023"
+  "when_will_it_take_effect": "In force since 2023 — 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. Qualified Bangsamoro learners can attend a science high school for free — same standards as the Philippine Science High School, plus Values Education, with scholarships and stipends available.",
+   "in_practice": [
+    "The Bangsamoro Science High School System is on par with Philippine Science High School standards",
+    "It offers free education to qualified Bangsamoro learners",
+    "Values Education is integrated, aimed at strengthening the foundation of faith alongside science training",
+    "A Board of Trustees approves the admission criteria, the curricula, and the grant of scholarships, stipends and allowances",
+    "Campuses are established in different locations, with accessibility, safety and conduciveness for learning as the utmost considerations",
+    "All donations and revenues go to a dedicated BSHS Fund used exclusively for the System",
+    "Gifts and legacies to the System are exempt from Bangsamoro Government taxes",
+    "₱55,000,000 initial funding"
+   ],
+   "for_specific_groups": {
+    "Learners and their families": "Free education, plus scholarships, stipends and allowances the Board may grant. The curriculum is designed for careers in science and technology.",
+    "Students with special talent in science and mathematics": "The Board approves strategic plans focused specifically on developing them.",
+    "Girls and women in science": "Section 15 requires gender equity and inclusivity across all operations, with a non-discriminatory policy addressing disparities so students and faculty of both genders can thrive.",
+    "Students, faculty and staff with a complaint": "Section 17 requires feedback and grievance mechanisms to raise concerns, report misconduct and seek resolution fairly and confidentially.",
+    "Alumni": "The President of the BSHS Alumni Association sits on the Board of Trustees."
+   },
+   "where_this_applies": "Campuses in different locations across the BARMM.",
+   "when_you_will_feel_it": "Through admissions to the System's campuses.",
+   "what_you_can_do": [
+    "Ask about admission criteria and the screening and selection process, which the Executive Committee runs",
+    "Ask about scholarships, stipends and allowances, which the Board approves",
+    "Use the feedback and grievance mechanism if you are a student, parent, faculty or staff member"
+   ],
+   "watch_out_for": [
+    "The act contemplates the System starting with a single campus — Section 10 provides expressly for that case.",
+    "Enrolment quotas are set by Board policy, so free education is available to those admitted, not to all applicants.",
+    "₱55 million is the initial appropriation for a whole school system.",
+    "Implementing rules were given 6 months, longer than the 60–90 days most acts allow."
+   ],
+   "key_terms_explained": {
+    "Values Education": "A subject in the BSHS curriculum aimed at strengthening the foundations of faith among learners as they are trained in science and technology.",
+    "Philippine Science High School": "The national specialist science school system whose standards the BSHS is to match.",
+    "Board of Trustees": "The governing body, chaired ex officio by the Minister of Science and Technology.",
+    "BSHS Fund": "The special fund holding all revenues and donations, used exclusively for the System.",
+    "Campus Director": "The administrative and academic head of a campus, serving a fixed four-year term and removable only for just cause."
+   },
+   "status_note": "Passed Muharram 27, 1445 / 14 August 2023, approved by the Chief Minister on 4 September 2023.",
+   "benefits": {
+    "headline": "Free science high school education to national specialist standards, with scholarships and stipends.",
+    "direct_benefits": [
+     {
+      "benefit": "Free education for qualified Bangsamoro learners",
+      "who_gets_it": "Admitted students",
+      "how_to_access": "Through screening and selection by the Executive Committee under Board-approved criteria"
+     },
+     {
+      "benefit": "Scholarships, stipends and other allowances",
+      "who_gets_it": "Students selected by the Executive Committee",
+      "how_to_access": "Approved by the Board of Trustees"
+     },
+     {
+      "benefit": "A curriculum built to Philippine Science High School standards",
+      "who_gets_it": "Students",
+      "how_to_access": "Section 4"
+     },
+     {
+      "benefit": "A confidential grievance and feedback mechanism",
+      "who_gets_it": "Students, faculty, staff and stakeholders",
+      "how_to_access": "Required by Section 17"
+     }
     ],
-    "what_this_does": "Establishes the Bangsamoro Science High School System.",
-    "who_it_affects": "Schools · Students · Teachers",
-    "effective": "2023-08-14"
-  },
-  "views": {
-    "simple": "Establishes the Bangsamoro Science High School System.",
-    "official": "AN ACT ESTABLISHING THE BANGSAMORO SCIENCE HIGH SCHOOL SYSTEM"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Tax exemption for gifts and legacies to the System",
+     "A dedicated fund so donations cannot be diverted",
+     "A consultative body a Campus Director may convene as a citizen's arm on local educational needs"
+    ],
+    "limitations": [
+     "Enrolment is capped by Board-set quotas.",
+     "The System may begin with a single campus.",
+     "₱55 million initial for the whole system."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. Attendance is by application and selection, not obligation."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts for the public. It requires the Board to formulate rules of discipline for students, faculty and staff."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "The feedback and grievance mechanism the System must implement under Section 17, which must handle concerns fairly and confidentially",
+    "oversight": "Board of Trustees, chaired by the Minister of Science and Technology; the Ministry of Science and Technology has administrative control and supervision",
+    "note": "Section 17 is an express grievance requirement, which most acts in this registry lack."
+   },
+   "everyday_scenarios": [
+    "A talented student from a low-income family in a rural municipality is admitted. Education is free, and the Board may grant a scholarship, stipend and allowances on top.",
+    "A parent wants to know how students are chosen. The Board approves the selection and admission criteria; the Executive Committee runs the screening and selection.",
+    "A student experiences misconduct by a staff member. Section 17 requires a feedback and grievance mechanism allowing concerns to be raised and resolved in a fair and confidential manner.",
+    "A community wants the campus to reflect local needs. A Campus Director may constitute a consultative body acting as a citizen's arm to interpret the educational needs of the service area."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Bangsamoro Science High School (BSHS) System Act of 2023”.",
+  "Section 2 — Policy: establish, maintain and support a complete and integrated system of quality education as a subsystem of the national education system conforming to national standards, with an educational framework relevant to the needs, ideals and aspirations of the Bangsamoro people; and recognise science and technology as essential to national and regional progress, maintaining a comprehensive high school science education system tailored to Bangsamoro learners.",
+  "Sections 3–5 — Defines the Bangsamoro Science High School as a secondary school offering deserving Bangsamoro learners a curriculum designed to make them globally competitive and prepared for careers in science and technology, and defines Values Education as the subject aimed at strengthening the foundations of faith as learners are trained in science. Creates the BSHS System on par with the standards of the Philippine Science High School, integrating Values Education and offering free education to qualified Bangsamoro learners. Objectives: bring science and technology education closer to Bangsamoro learners, adopt PSHS quality standards with values education, and regulate the establishment and expansion of science high schools in the region.",
+  "Sections 6–7 — The System is under the administrative control and supervision of the Ministry of Science and Technology, composed of a Board of Trustees, an Executive Director and Campus Directors. The Board comprises the Minister of Science and Technology as ex officio Chairperson; the Minister of Basic, Higher and Technical Education as ex officio Vice-Chairperson; the President of the Mindanao State University System; the Campus Director or Executive Director; the President of the BSHS Alumni Association; the Chairperson of the Parliament's Committee on Science and Technology; two private sector representatives from education for the gifted, emerging technologies, agriculture and fisheries and other industries of regional significance; and the Mufti of the Bangsamoro Darul Ifta'.",
+  "Section 8 — The Board exercises the powers of a board of trustees under the Revised Corporation Code, and in addition formulates administrative policies; sets policies on appointment, promotion, retention, removal, rewards and incentives; approves curricula; approves the criteria for selection and admission of students; approves scholarships, stipends and allowances; approves graduation; sets rules of discipline; endorses the annual budget proposal; receives legacies, gifts and donations in trust; develops enrolment quota policies; rationalises the establishment and expansion of science high schools; and approves strategic plans focused on youth with special talents in science and mathematics.",
+  "Sections 10–11 — An Executive Committee implements Board policy, screening and selecting students, selecting scholarship and stipend recipients, and developing curricula and rules of discipline subject to Board approval; while the System has only one campus, the Campus Director heads it. A Campus Director serves a fixed four-year term renewable at the Board's option, may not be removed except for just cause, and may constitute a consultative body acting as a citizen's arm to interpret the educational needs of the service area.",
+  "Sections 12–14 — Campuses are established in different locations within the region, with accessibility, safety and conduciveness for learning as the utmost considerations. Legacies, gifts and conditions for the System's benefit are exempt from taxes levied by the Bangsamoro Government. All revenues and donations accrue entirely to the System and go into a special BSHS Fund used exclusively for it.",
+  "Section 15 — The System shall promote gender equity and inclusivity in all aspects of its operations, fostering an inclusive learning environment with equal opportunities and support for all faculty and students regardless of gender, and establishing a non-discriminatory policy to address disparities.",
+  "Section 16 — ₱55,000,000 is appropriated to support initial implementation, with such sums as needed thereafter in the annual General Appropriations Act of the Bangsamoro.",
+  "Section 17 — The System shall adhere to the usual government transparency and accountability measures, and shall implement feedback and grievance mechanisms allowing students, faculty, staff and other stakeholders to raise concerns, report misconduct and seek resolution in a fair and confidential manner.",
+  "Section 18 — The Ministry of Science and Technology promulgates implementing rules within 6 months of passage.",
+  "Section 21 — Takes effect 15 days after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Bangsamoro learners talented in science and mathematics",
+   "Low-income families",
+   "Science teachers and faculty"
+  ],
+  "impact_tags": [
+   "education",
+   "science_technology",
+   "labor_social"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱55,000,000 initial, with such sums as needed thereafter in the annual GAAB",
+  "figures_note": "Quoted from Section 16."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2023-08-14"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/BAA-40.pdf",
+  "irr": "Required from the Ministry of Science and Technology within 6 months of passage. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 37",
+  "related_note": "Modelled on the Philippine Science High School system and governed under the Revised Corporation Code (RA 11232) for the Board's trustee powers. The Mindanao State University System President and the Mufti of the Bangsamoro Darul Ifta' both sit on the Board."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱55,000,000 initial",
+  "irr_status": "Section 18 required MOST implementing rules within 6 months of passage.",
+  "note": "Read from the enacted text as signed. Section 10 contemplates the System operating with a single campus initially; how many campuses now exist is not recorded here."
+ },
+ "citizen_questions": [
+  {
+   "q": "Is it really free?",
+   "a": "Yes. Section 4 says the System offers free education to qualified Bangsamoro learners, and the Board may additionally grant scholarships, stipends and other allowances."
+  },
+  {
+   "q": "How good is it meant to be?",
+   "a": "The act says the System shall be on par with the standards of the Philippine Science High School — the national specialist science school system."
+  },
+  {
+   "q": "Who gets in?",
+   "a": "Deserving Bangsamoro learners, selected by the Executive Committee under criteria the Board of Trustees approves. Enrolment quotas are set by Board policy."
+  },
+  {
+   "q": "What is Values Education doing in a science school?",
+   "a": "The act defines it as a subject aimed at strengthening the foundations of faith among learners as they are trained in science and technology, and integrates it as a way of strengthening the foundation of both science education and faith."
+  },
+  {
+   "q": "Where will the campuses be?",
+   "a": "In different locations across the region, with accessibility, safety and conduciveness for learning as the utmost considerations in choosing sites."
+  },
+  {
+   "q": "What if something goes wrong at the school?",
+   "a": "Section 17 requires feedback and grievance mechanisms letting students, faculty, staff and other stakeholders raise concerns, report misconduct and seek resolution in a fair and confidential manner."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 40",
+  "line2": "Bangsamoro Science High School System Act of 2023",
+  "badges": [
+   "IN FORCE",
+   "Education",
+   "2023"
+  ],
+  "what_this_does": "Creates free science high schools to national specialist standards, with scholarships and stipends.",
+  "who_it_affects": "Bangsamoro learners · families · science teachers"
+ },
+ "views": {
+  "simple": "Creates a Bangsamoro science high school system on par with the Philippine Science High School, offering free education to qualified learners with scholarships and stipends, integrating Values Education, and funded with ₱55 million to start.",
+  "official": "AN ACT ESTABLISHING THE BANGSAMORO SCIENCE HIGH SCHOOL SYSTEM, PROVIDING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 40, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

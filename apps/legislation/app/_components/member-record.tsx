@@ -20,7 +20,10 @@ function MeasureRow({ measure, index }: { measure: MemberMeasure; index: number 
 		<Link
 			href={measure.href}
 			style={{ '--row-index': index } as React.CSSProperties}
-			className='row row-in grid grid-cols-[minmax(0,1fr)_auto] items-start gap-6 py-8 sm:gap-16 lg:gap-24'
+			// Stacked on a phone: the date is a fixed column against a title that
+			// has to wrap, and it was taking a third of the row. See the same note
+			// on the registry's rows in `record-browser`.
+			className='row row-in grid grid-cols-1 items-start gap-1.5 py-6 sm:grid-cols-[minmax(0,1fr)_auto] sm:gap-16 sm:py-8 lg:gap-24'
 		>
 			<div className='min-w-0'>
 				{/* Number, then what they were to it, then where it stands — the
@@ -49,7 +52,7 @@ function MeasureRow({ measure, index }: { measure: MemberMeasure; index: number 
 
 			{/* The date runs down the right edge, so a list of measures can be
 			    read as a chronology without the eye hunting for it mid-line. */}
-			<div className='flex items-center gap-3'>
+			<div className='flex items-center gap-3 sm:justify-end'>
 				<span className='meta-sm shrink-0'>{measure.dateDisplay}</span>
 				<svg
 					className='row-arrow hidden size-4 sm:block'
@@ -83,7 +86,7 @@ function NoMeasures({
 	total: number
 }) {
 	return (
-		<div className='card p-8 sm:p-10'>
+		<div className='card p-6 sm:p-10'>
 			<span className='badge badge-plain badge-idle'>No measures linked yet</span>
 			<h3 className='mt-4 max-w-2xl text-xl font-semibold leading-snug sm:text-2xl'>
 				This is missing data, not a record of inactivity.
@@ -132,7 +135,7 @@ function CommitteeRow({ committee, index }: { committee: MemberCommittee; index:
 		<Link
 			href={`/committees/${committee.slug}`}
 			style={{ '--row-index': index } as React.CSSProperties}
-			className='row row-in grid grid-cols-[minmax(0,1fr)_auto] items-start gap-6 py-8 sm:gap-16 lg:gap-24'
+			className='row row-in grid grid-cols-1 items-start gap-1.5 py-6 sm:grid-cols-[minmax(0,1fr)_auto] sm:gap-16 sm:py-8 lg:gap-24'
 		>
 			<div className='min-w-0'>
 				{/* The seat they hold sits beside the committee's name — it qualifies
@@ -147,7 +150,9 @@ function CommitteeRow({ committee, index }: { committee: MemberCommittee; index:
 				</p>
 			</div>
 
-			<div className='flex items-center'>
+			{/* Nothing but the arrow, which is itself desktop-only — so the cell
+			    goes entirely rather than leaving a stray row in the stack. */}
+			<div className='hidden items-center sm:flex sm:justify-end'>
 				<svg
 					className='row-arrow hidden size-4 sm:block'
 					viewBox='0 0 24 24'
@@ -164,6 +169,16 @@ function CommitteeRow({ committee, index }: { committee: MemberCommittee; index:
 		</Link>
 	)
 }
+
+/**
+ * How many rows a tab shows before asking.
+ *
+ * The same page as the registry lists, so a reader who has already met the
+ * control there meets the same one here. A member on a long-running committee
+ * can carry a couple of hundred measures, and the tab row underneath is what
+ * a reader is usually reaching for.
+ */
+const PAGE_SIZE = 30
 
 type Tab = {
 	key: string
@@ -239,9 +254,16 @@ export function MemberRecord({
 
 	// Open on the first tab that has something in it, so a member credited only
 	// on resolutions doesn't land on an empty panel.
+	// Held per tab rather than as one number: expanding the acts list and then
+	// looking at bills should not carry the expansion across, and coming back
+	// should not collapse what you opened.
+	const [shownByTab, setShownByTab] = useState<Record<string, number>>({})
+
 	const activeKey = chosen ?? tabs.find((tab) => tab.count > 0)?.key ?? tabs[0].key
 	const activeIndex = tabs.findIndex((tab) => tab.key === activeKey)
 	const active = tabs[activeIndex] ?? tabs[0]
+	const shown = shownByTab[activeKey] ?? PAGE_SIZE
+	const remaining = active.count - shown
 
 	// Arrow keys move between tabs, as a tablist is expected to.
 	const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
@@ -343,12 +365,48 @@ export function MemberRecord({
 						className='mt-6'
 					>
 						{active.key === 'committees'
-							? committees.map((committee, index) => (
-									<CommitteeRow key={committee.slug} committee={committee} index={index} />
-								))
-							: active.measures.map((measure, index) => (
-									<MeasureRow key={measure.id} measure={measure} index={index} />
-								))}
+							? committees
+									.slice(0, shown)
+									.map((committee, index) => (
+										<CommitteeRow key={committee.slug} committee={committee} index={index} />
+									))
+							: active.measures
+									.slice(0, shown)
+									.map((measure, index) => (
+										<MeasureRow key={measure.id} measure={measure} index={index} />
+									))}
+
+						{remaining > 0 ? (
+							<div className='flex flex-col items-center gap-2 pt-8'>
+								<button
+									type='button'
+									onClick={() =>
+										setShownByTab((current) => ({
+											...current,
+											[activeKey]: shown + PAGE_SIZE,
+										}))
+									}
+									className='btn btn-quiet'
+								>
+									Show {Math.min(PAGE_SIZE, remaining)} more
+									<svg
+										className='size-3.5'
+										viewBox='0 0 24 24'
+										fill='none'
+										stroke='currentColor'
+										strokeWidth='2'
+										strokeLinecap='round'
+										strokeLinejoin='round'
+										aria-hidden='true'
+									>
+										<path d='m6 9 6 6 6-6' />
+									</svg>
+								</button>
+								<p className='meta-sm'>
+									<span className='num'>{remaining.toLocaleString()}</span> more below
+								</p>
+							</div>
+						) : null}
 
 						{active.count === 0 ? (
 							<p className='max-w-2xl text-sm leading-6 text-[var(--ink-3)]'>{active.empty}</p>

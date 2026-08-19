@@ -1,0 +1,882 @@
+{
+ "source": "parliament.bangsamoro.gov.ph measure pages",
+ "note": "PDF links only. The files are scans with no text layer and are not vendored into this repo.",
+ "measures": {
+  "474": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-amending-section-3-chapter-1-title-xvi-of-bangsamoro-autonomy-act-no-13-otherwise-known-as-the-barmm-administrative-code-of-2023-relative-to-the-composition-of-the-bangsamoro-women-commiss/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/07/Bill-No.-474-MP-Susana-S.-Anayatin.pdf"
+  },
+  "475": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-the-bangsamoro-halal-development-authority-defining-its-powers-and-functions-on-halal-certification-and-enforcement-appropriating-funds-therefor-and-for-other-purposes-2/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/07/Bill-No.-475-Enhanced-MP-John-Anthony-L.-Lim.pdf"
+  },
+  "473": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-bangsamoro-shariah-justice-system-code-providing-for-shariah-civil-actions-shariah-commercial-transactions-supplementary-muslim-family-relations-ta%ca%bfzir-offenses/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/07/Bill-No.-473-MP-Romeo-K.-Sema.pdf"
+  },
+  "472": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-revolving-fund-for-the-purpose-of-conducting-successful-hajj-operations-for-the-bangsamoro-pilgrims-appropriating-funds-therefor-and-providing-for-the-administration-managemen/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/07/Bill-No.-472-Government-of-the-Day.pdf"
+  },
+  "471": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-bangsamoro-sustainable-forest-management-code-of-2026-of-the-bangsamoro-autonomous-region-in-muslim-mindanao-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/06/Bill-No.-471-Enhanced-MP-Amenodin-U.-Sumagayan.pdf"
+  },
+  "469": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-amending-article-iii-section-9-of-bangsamoro-autonomy-act-no-35-otherwise-known-as-the-bangsamoro-electoral-code-of-2023-by-deleting-section-9d/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/05/Bill-No.-469-Enhanced-MP-Amer-Zaakaria-A.-Rakim.pdf"
+  },
+  "470": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-appropriating-supplemental-funds-for-the-operation-of-the-bangsamoro-government-and-for-other-purposes-2/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/05/Bill-No.-470-MP-Kitem-D.-Kadatuan-2.pdf"
+  },
+  "468": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-amending-section-45-title-ii-chapter-v-of-bangsamoro-autonomy-act-no-49-otherwise-known-as-the-bangsamoro-local-governance-code-of-2023-on-disqualifications-for-elective-local-positions/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/05/Bill-No.-468-Enhanced-MP-Amer-Zaakaria-A.-Rakim.pdf"
+  },
+  "467": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-bangsamoro-sports-complex-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-appropriating-funds-thereof-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/05/Bill-No.-467-MP-Kadil-M.-Sinolinding.pdf"
+  },
+  "466": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-bahay-kanlungan-one-stop-shop-center-for-women-and-children-in-every-city-and-municipality-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-and-appropriating-funds-therefo/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/05/Bill-No.-466-MP-Alirakim-T.-Munder.pdf"
+  },
+  "465": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-youth-information-desk-in-every-city-and-municipality-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-and-providing-its-functions-thereof/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/05/Bill-No.-465-MP-Alirakim-T.-Munder.pdf"
+  },
+  "464": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-amending-section-5-of-bangsamoro-autonomy-act-no-72-otherwise-known-as-the-bangsamoro-bereavement-leave-act-of-2025-to-include-ascendants-and-descendants-in-the-definition-o/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-464-MP-Amer-Zaakaria-A.-Rakim.pdf"
+  },
+  "459": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-integrated-quran-recitation-and-adaptation-iqra-education-system-incorporating-needs-based-skills-and-civic-competencies-into-the-iqra-curriculum-mandating-all-mbhte-accr/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-459-MP-Mohammad-Kelie-U.-Antao.pdf"
+  },
+  "458": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-support-systems-to-preserve-promote-and-sustain-the-functioning-of-traditional-madaris-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-recognizing-their-importanc/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-458-MP-Mohammad-Kelie-U.-Antao.pdf"
+  },
+  "457": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-february-of-each-year-as-the-special-geographic-area-sga-history-month-designating-february-14-as-its-commemorative-date-as-an-expanded-territory-of-the-bangsamoro-autonomous-re/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-457-MP-Mohammad-Kelie-U.-Antao.pdf"
+  },
+  "456": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-a-ligawasan-inland-fisheries-enterprise-life-framework-aimed-at-providing-support-for-organizational-and-human-resource-development-micro-financing-and-multi-purpose-fac/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-456-MP-Mohammad-Kelie-U.-Antao.pdf"
+  },
+  "463": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-dawah-activities-in-the-bangsamoro-region-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-463-MP-Mohammad-S.-Yacob.pdf"
+  },
+  "462": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-strengthening-aftercare-support-services-for-children-in-conflict-with-the-law-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-462-MP-Abrar-J.-Hataman.pdf"
+  },
+  "461": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-the-absorption-and-regularization-of-volunteer-teachers-in-the-ministry-of-basic-higher-and-technical-education-mbhte-establishing-support-mechanisms-for-their-professio/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-461-MP-Abrar-J.-Hataman.pdf"
+  },
+  "460": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-promoting-inclusive-digital-education-and-equitable-access-to-learning-through-technology-otherwise-known-as-the-inclusive-digital-education-act-idea/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-460-MP-Abrar-J.-Hataman.pdf"
+  },
+  "455": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-a-comprehensive-administrative-and-regulatory-framework-for-firearms-and-ammunition-within-the-bangsamoro-and-appropriating-fund-therfor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-455-MP-Omar-Yasser-Sema.pdf"
+  },
+  "454": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-implementation-of-children-social-security-program-in-the-bangsamoro-and-approproating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-454-MP-Omar-Yasser-Sema.pdf"
+  },
+  "453": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-may-ayuda-sa-basura-program-institutionalizing-a-trash-to-cash-system-by-providing-incentives-for-sustainable-waste-management-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-453-MP-Sha-Elijah-Dumama-Alba.pdf"
+  },
+  "452": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-the-bangsamoro-childrens-information-office-bcio-institutionalizing-the-bangsamoro-childrens-integrated-database-system-bcids-appropriating-funds-therefor-and-for-other-purp/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-452-MP-Hashemi-Dilangalen.pdf"
+  },
+  "451": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-the-bangsamoro-disaster-volunteer-corps-as-an-integral-component-of-the-regional-disaster-risk-reduction-and-management-system-defining-its-organization-functions-rights/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-451-MP-Hashemi-Dilangalen.pdf"
+  },
+  "450": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-disaster-resilient-infrastructure-standards-safety-audits-and-retrofitting-mechanisms-for-public-facilities-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-450-MP-Hashemi-Dilangalen.pdf"
+  },
+  "449": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-authorizing-the-ministry-of-health-to-implement-programs-and-grants-for-the-prevention-and-management-of-asthma-and-other-related-respiratory-problems-among-low-income-families-and-communities/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-449-MP-Hashemi-Dilangalen-2.pdf"
+  },
+  "448": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-promoting-maternal-wellness-and-safe-pregnancy-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-establishing-a-comprehensive-wellness-program-for-pregnant-women-and-requiring-barangay-h/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-448-MP-Sha-Elijah-Dumama-Alba-2-1.pdf"
+  },
+  "447": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-amending-relevant-provisions-of-bangsamoro-autonomy-act-no-13-relating-to-the-ministry-of-transportation-and-communications-establishing-the-bangsamoro-transportation-and-communications-code/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-447-MP-Romeo-K.-Sema.pdf"
+  },
+  "446": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-regulating-the-grant-of-regional-franchises-and-concessions-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-empowering-the-chief-minister-to-grant-leases-permits-and-licenses-over-agr/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-446-MP-Sha-Elijah-Dumama-Alba.pdf"
+  },
+  "445": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-the-bangsamoro-basic-utilities-assistance-office-defining-its-mandate-powers-and-organizational-structure-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-445-MP-Suharto-Esmael.pdf"
+  },
+  "444": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-amending-section-6-section-7-section-8-section-10-and-section-11-of-article-iii-of-bangsamoro-autonomy-act-no-40-otherwise-known-as-the-bangsamoro-science-high-school-bshs-system-prov/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-444-MP-Suharto-Esmael.pdf"
+  },
+  "443": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-magna-carta-of-persons-with-disabilities-in-the-bangsamoro-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-443-Government-of-the-Day.pdf"
+  },
+  "441": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-the-bangsamoro-halal-festival-to-promote-the-islamic-cultural-heritage-through-the-halal-industry-as-a-strategic-sector-for-sustainable-economic-development-in-the-bangsamoro/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-441-MP-Amenodin-U.-Sumagayan-Enhanced-2.pdf"
+  },
+  "442": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-the-bangsamoro-environmental-adjudication-board-defining-its-powers-and-functions-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/03/Bill-No.-442-MP-Amenodin-U.-Sumagayan.pdf"
+  },
+  "440": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-the-bangsamoro-maritime-safety-office-as-a-regional-maritime-safety-inspection-survey-incident-response-and-marine-environmental-protection-authority-in-the-bangsamoro-autonomous-r/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/03/Bill-No.-440-MP-Amenodin-U.-Sumagayan.pdf"
+  },
+  "438": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/a-bill-establishing-the-bangsamoro-commission-on-early-childhood-care-and-development-providing-for-its-implementation-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/03/Bill-No.-438-MP-Tomanda-Antok.pdf"
+  },
+  "437": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-requiring-the-posting-of-existing-vacant-positions-in-bangsamoro-government-offices-in-the-bangsamoro-job-portal/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/03/Bill-No.-437-MP-Sha-Elijah-B.-Dumama-Alba.pdf"
+  },
+  "439": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-renaming-the-tamparan-district-hospital-to-lanao-del-sur-provincial-hospital/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/03/Bill-No.-439-MP-Kadil-Sinolinding.pdf"
+  },
+  "435": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-the-conduct-of-monthly-values-formation-sessions-in-the-human-resource-development-plans-of-all-ministries-offices-and-agencies-of-the-bangsamoro-government-and-for-other-2/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/Bill-No.-435-MP-Tawakal-Midtimbang-MONTHLY-VALUES-FROMATION-S.pdf"
+  },
+  "436": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-bangsamoro-integrated-public-order-and-safety-and-security-data-and-information-management-bipossdim-coordinating-body-aimed-at-ensuring-the-accuracy-and-reliability-of/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/Bill-No.-436-MP-MOHAMMAD-KELIE-U.-ANTAO.pdf"
+  },
+  "433": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-regulating-the-categorization-of-local-conflicts-and-prohibiting-the-use-of-the-term-rido-for-minor-disputes-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-and-for-ot/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/Bill-No.-433-MP-Mohammad-Kelie-U.-Antao.pdf"
+  },
+  "434": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-the-conduct-of-monthly-values-formation-sessions-in-the-human-resource-development-plans-of-all-ministries-offices-and-agencies-of-the-bangsamoro-government-and-for-other/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/Bill-No.-434-MP-Tomanda-D.-Antok-FLEXTIME-WORK-HOURS.pdf"
+  },
+  "432": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-mechanisms-to-support-community-based-commodity-clustered-and-value-chained-agricultural-crop-enterprise-development-within-the-small-farming-communities-in-the-bangsamoro-autono/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/Bill-No.-432-MP-Mohammad-Kelie-U.-Antao.pdf"
+  },
+  "431": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-expanding-the-scope-of-authority-and-services-of-special-geographic-area-development-authority-amending-bangsamoro-autonomy-act-no-13-otherwise-known-as-the-bangsamoro-administrative/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/Bill-No.-431-MP-Butch-P.-Malang-4.pdf"
+  },
+  "430": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-the-orphanage-village-and-learning-center-in-the-municipality-of-nabalawag-special-geographic-area-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-to-foster-the-development/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/Bill-No.-430-MP-Mohammad-Kelie-U.-Antao.pdf"
+  },
+  "429": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-comprehensive-housing-and-human-settlement-framework-for-the-bangsamoro-autonomous-region-in-muslim-mindanao-and-strengthening-the-role-of-the-ministry-of-human-settlements-and-d/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/Bill-No.-429-MP-Romeo-K.-Sema.pdf"
+  },
+  "428": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-a-graduate-scholarship-program-for-teachers-under-the-ministry-of-basic-higher-and-technical-education-mbhte-providing-for-masters-and-doctorate-degree-grants-r/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/Bill-No.-428-MP-Adzfar-H.-Usman.pdf"
+  },
+  "427": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-amanah-chain-a-chain-system-a-blockchain-based-platform-for-transparent-accountable-and-trustworthy-public-financial-governance-in-the-bangsamoro-autonomous-regio/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/Bill-No.-427-MP-Jaafar-Apollo-Mikhail-L.-Matalam.pdf"
+  },
+  "426": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-and-establishing-a-bangsamoro-agriculture-and-fishery-school-in-the-municipality-of-parang-province-of-maguindanao-del-norte-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/Bill-No.-426-–-MP-Baintan-Adil-Ampatuan-BANGSAMORO-AGRICULTURE-AND-FISHERY-SCHOOL.pdf"
+  },
+  "425": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-bangsamoro-licensure-examination-assistance-program-b-leap-for-bangsamoro-examinees-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/Bill-No.-425-Baintan-Adil-Ampatuan-BANGSAMORO-LICENSURE-EXAMINATION-ASSISTANCE-PROGRAM.pdf"
+  },
+  "136": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-the-municipality-of-ligawasan-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/12/Bill-No.-136-Government-of-the-day-AN-ACT-CREATING-THE-MUNICIPALITY-OF-LIGAWASAN.pdf"
+  },
+  "424": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-the-priority-use-of-negotiated-procurement-community-participation-in-the-procurement-of-locally-produced-goods-and-services-in-the-bangsamoro-autonomous-region-in-muslim-min/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/12/Bill-No.-424-MP-Sha-Elijah-B.-Dumama-Alba.pdf"
+  },
+  "423": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-strengthening-blood-donation-services-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/12/Bill-No.-423-MP-Sha-Elijah-B.-Dumama-Alba.pdf"
+  },
+  "101": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-declaring-tawi-tawi-as-the-seaweed-capital-of-the-philippines/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/12/Bill-No.-101-MP-Eddie-Alih-DECLARING-TAWI-TAWI-AS-THE-SEAWEED-CAPITAL-OF-THE-PHILIPPINES.pdf"
+  },
+  "422": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-upholding-the-dignity-and-welfare-of-women-deprived-of-liberty-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/12/Bill-No.-422-MP-Sha-Elijah-B.-Dumama-Alba.pdf"
+  },
+  "421": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-the-bangsamoro-bureau-of-quarantine-defining-its-functions-powers-and-responsibilities-appropriating-funds-thereof-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/12/Bill-No.-421-MP-Sha-Elijah-B.-Dumama-Alba.pdf"
+  },
+  "420": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-salamat-hashim-boarding-madrasah-shbm-defining-its-mandate-structure-and-curriculum-framework-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/12/Bill-No.-420-Enhanced-MP-Abdulbasit-R.-Benito.pdf"
+  },
+  "417": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-the-bangsamoro-commission-on-higher-education-bched-amending-book-vi-title-ii-of-the-bangsamoro-administrative-code-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/12/Bill-No.-417-MP-Tomanda-D.-Antok.pdf"
+  },
+  "419": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-amending-bangsamoro-autonomy-act-no-35-entitled-an-act-providing-for-the-bangsamoro-electoral-code-of-the-bangsamoro-autonomous-region-in-muslim-mindanao/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/12/Bill-No.-419-MP-ISHAK-V.-MASTURA.pdf"
+  },
+  "418": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-granting-zero-hospitalization-billing-for-expired-patients-in-government-hospitals-of-the-bangsamoro-autonomous-region-in-muslim-mindanao-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/12/Bill-No.-418-MP-Suharto-S.-Esmael.pdf"
+  },
+  "416": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-two-2-parliamentary-districts-in-the-special-geographic-area-63-barangays-of-the-bangsamoro-autonomous-region-indicating-their-composition-and-allocating-two-2-seats-2/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/11/Bill-No.-416-MP-MOHAMMAD-KELIE-U.-ANTAO.pdf"
+  },
+  "415": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-apportionment-of-parliamentary-district-representative-seats-in-the-bangsamoro-autonomous-region-in-muslim-mindanao/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/11/Bill-No.-415-MP-Naguib-G.-Sinarimbo.pdf"
+  },
+  "414": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-college-education-bridging-fund-to-support-qualified-students-from-low-income-families-in-the-bangsamoro-region-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/11/Bill-No.-414-MP-Baintan-A.-Ampatuan.pdf"
+  },
+  "413": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-bangsamoro-grand-athletic-and-sports-complexes-in-cotabato-city-and-lamitan-city-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/11/Bill-No.-413-MP-Baintan-A.-Ampatuan.pdf"
+  },
+  "412": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-upgrade-and-modernization-of-the-cotabato-airport-in-datu-odin-sinsuat-maguindanao-del-norte-enhancing-its-infrastructure-promoting-regional-economic-development-appropri/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/11/Bill-No.-412-MP-Baintan-A.-Ampatuan.pdf"
+  },
+  "411": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-creation-of-parliamentary-districts-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/11/Bill-No.-411-MP-Baintan-A.-Ampatuan.pdf"
+  },
+  "410": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-appropriating-funds-for-the-operation-of-the-bangsamoro-government-from-january-one-to-december-thirty-one-two-thousand-and-twenty-six-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/11/Bill-No.-410-Government-of-the-Dday-BEP.pdf"
+  },
+  "409": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-creation-of-new-plantilla-positions-and-organizational-structure-of-the-bangsamoro-board-of-investments-of-the-bangsamoro-autonomous-region-in-muslim-mindanao-amending-for-th/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/11/Bill-No.-409-MP-John-Anthony-L.-Lim.pdf"
+  },
+  "408": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-creation-of-parliamentary-districts-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-3/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/10/Bill-No.-408-MP-Romeo-K.-Sema.pdf"
+  },
+  "407": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-creation-of-parliamentary-districts-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-2/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/10/Bill-No.-407-MP-Mohammad-S.-Yacob.pdf"
+  },
+  "406": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-regional-facility-and-system-for-the-protection-rehabilitation-and-reintegration-of-children-involved-in-armed-conflict-in-the-bangsamoro-autonomous-region-in-muslim-mindanao/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/10/Bill-No.-406-MP-Amer-Zaakaria-Rakim.pdf"
+  },
+  "405": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-gratuity-fund-for-separated-employees-of-the-bangsamoro-transition-authority-after-the-transition-period-providing-for-the-grant-of-separation-benefits-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/10/Bill-No.-405-MP-Susana-S.-Anayatin.pdf"
+  },
+  "404": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-declaring-sitio-mekir-in-barangay-lamud-south-upi-maguindanao-del-sur-as-a-peace-sanctuary-and-safe-evacuation-center-for-non-moro-indigenous-peoples-during-armed-hostilities-providing-funds/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/10/Bill-No.-404-MP-Froilyn-T.-Mendoza.pdf"
+  },
+  "403": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-creation-of-the-parliamentary-districts-in-the-bangsamoro-autonomous-region-in-muslim-mindanao/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/10/Bill-No.-403-MP-Suharto-Ambolodto-2.pdf"
+  },
+  "402": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-drug-dependent-treatment-and-rehabilitation-centers-in-every-province-of-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-appropriating-funds-therefor-and-for-other/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/10/Bill-No.-402-MP-Butch-P.-Malang.pdf"
+  },
+  "401": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-protection-of-consumer-rights-and-welfare-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-creating-the-bangsamoro-consumer-protection-council-appropriating-funds-ther/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/10/Bill-No.-401-MP-Susana-Anayatin.pdf"
+  },
+  "400": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-the-bangsamoro-trust-fund-for-development-continuity-btfdc-providing-for-its-structure-management-utilization-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/10/Bill-No.-400-MP-Rasol-Y.-Mitmug-Jr.pdf"
+  },
+  "399": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-and-strengthening-civil-society-organizations-cso-engagement-in-governance-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-establishing-the-bangsamoro-cso/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/10/Bill-No.-399-MP-Abdulbasit-Benito.pdf"
+  },
+  "398": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-the-grant-of-ramadhan-bonus-as-an-additional-yearly-benefit-to-all-employees-of-the-bangsamoro-government-and-providing-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/10/Bill-No.-398-MP-Susana-S.-Anayatin.pdf"
+  },
+  "397": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-establishment-of-childrens-hospital-in-the-city-of-cotabato-to-be-known-as-bangsamoro-childrens-hospital-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/10/Bill-No.-397-MP-Naguib-G.-Sinarimbo.pdf"
+  },
+  "396": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-removing-the-none-of-the-above-nota-option-from-the-official-ballot-in-the-bangsamoro-autonomous-region-amending-for-the-purpose-section-14-article-vii-of-bangsamoro-auton/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/09/Bill-No.-396-MP-Baintan-A.-Ampatuan.pdf"
+  },
+  "394": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-development-assistance-to-bangsamoro-people-and-communities-outside-the-bangsamoro-autonomous-region-in-muslim-mindanao-defining-its-implementing-mechanism-providing-funds/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/09/Bill-No.-394-MP-Hussein-P.-Munoz.pdf"
+  },
+  "395": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-amending-article-vii-section-14-of-the-bangsamoro-electoral-code-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/09/Bill-No.-395-MP-Randolph-C.-Parcasio.pdf"
+  },
+  "393": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-converting-the-matanog-world-assembly-of-muslim-youth-wamy-clinic-in-the-municipality-of-matanog-province-of-maguindanao-del-norte-into-a-level-i-hospital-with-ten-10-bed-capacity-to-be/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/08/Bill-No.-393-MP-Butch-P.-Malang-1.pdf"
+  },
+  "392": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-one-time-death-benefits-to-the-families-of-bangsamoro-islamic-armed-forces-biaf-shaheed-establishing-the-biaf-shaheed-benefit-investment-fund-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/08/Bill-No.-392-MP-Kitem-D.-Kadatuan.pdf"
+  },
+  "391": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-in-the-municipality-of-datu-saudi-ampatuan-province-of-maguindanao-del-sur-a-level-i-25-bed-capacity-general-hospital-known-as-datu-saudi-ampatuan-municipal-hospital-providing-f/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/08/Bill-No.-391-MP-Kitem-D.-Kadatuan.pdf"
+  },
+  "390": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-mandating-the-advance-release-of-salaries-in-the-bangsamoro-autonomous-region-when-payday-falls-on-a-weekend-or-holiday-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/08/Bill-No.-390-MP-Kitem-D.-Kadatuan.pdf"
+  },
+  "389": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-prohibiting-the-manufacture-importation-distribution-sale-and-use-of-single-use-plastics-in-the-bangsamoro-autonomous-region-providing-for-a-transition-period-establishing-implementation/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/08/Bill-No.-389-MP-Amer-Zaakaria-A.-Rakim.pdf"
+  },
+  "388": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-basilan-science-high-school-in-lamitan-city-basilan-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/08/Bill-No.-388-MP-Abrar-Jainuddin-Hataman.pdf"
+  },
+  "387": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-the-administrative-and-finance-divisions-and-granting-fiscal-autonomy-to-the-office-for-settler-communities-osc-bangsamoro-information-and-communications-technology-office/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/08/Bill-No.-387-MP-Rasol-Y.-Mitmug-Jr.pdf"
+  },
+  "386": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-comprehensive-special-education-sped-service-and-support-centers-cssscs-in-strategic-regional-hubs-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-providing-f/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/07/Bill-No.-386-MP-Nurredha-I.-Misuari-1-1.pdf"
+  },
+  "385": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-comprehensive-regional-framework-for-water-sustainability-in-the-barmm-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/07/Bill-No.-385-MP-Nurredha-I.-Misuari.pdf"
+  },
+  "384": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-comprehensive-regional-peace-and-public-safety-framework-institutionalizing-the-culture-of-security-and-mandating-integrated-security-mechanisms-in-the-bangsamoro-autonomous-re/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/07/Bill-No.-384-MP-Nurredha-I.-Misuari.pdf"
+  },
+  "383": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-bangsamoro-social-equity-investment-fund-for-inclusive-economic-participation-providing-for-the-allocation-of-non-transferable-equity-shares-to-vulnerable-bangsamoro-sectors/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/07/Bill-No.-383-MP-Nurredha-I.-Misuari.pdf"
+  },
+  "382": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-bangsamoro-womens-welfare-center-%d9%85%d8%b1%d9%83%d8%b2-%d8%b1%d8%b9%d8%a7%d9%8a%d8%a9-%d8%a7%d9%84%d9%85%d8%b1%d8%a3%d8%a9-%d9%81%d9%8a-%d8%a8%d9%86%d8%ba/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/07/Bill-No.-382-MP-Nurredha-I.-Misuari.pdf"
+  },
+  "381": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-the-empowerment-and-welfare-of-ulama-ustadhs-ustadhas-indigenous-spiritual-leaders-and-other-faith-based-counselors-in-the-bangsamoro-autonomous-region-and-appropriating/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/07/Bill-No.-381-MP-Nurredha-I.-Misuari.pdf"
+  },
+  "380": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-renaming-the-municipality-of-south-upi-in-the-province-of-maguindanao-del-sur-to-teduray-municipality/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/07/Bill-No.-380-MP-Froilyn-T.-Mendoza.pdf"
+  },
+  "379": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-granting-a-one-time-death-benefit-and-permanent-disability-assistance-to-the-families-of-barangay-officials-and-sangguniang-kabataan-sk-chairpersons-in-the-bangsamoro-autonomous-region-in-mus/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/07/Bill-No.-379-MP-Naguib-G.-Sinarimbo.pdf"
+  },
+  "378": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-necessary-institutional-mechanisms-and-incentives-for-solid-waste-management-including-a-phased-and-clustered-compliance-for-local-government-units-to-build-sanitary-landfills-in-the/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/07/Bill-No.-378-MP-Amenodin-U.-Sumagayan.pdf"
+  },
+  "377": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-bangsamoro-sports-institute-bsi-under-the-bangsamoro-sports-commission-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/07/Bill-No.-377-MP-Alindatu-K.-Pagayao.pdf"
+  },
+  "376": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-bangsamoro-enterprise-support-corporation-besc/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/07/Bill-No.-376-MP-Romeo-K.-Sema.pdf"
+  },
+  "375": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-community-based-health-and-wellness-program-for-senior-citizens-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-providing-for-inclusive-access-to-essential-health-and-soc/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/07/Bill-No.-375-MP-Hashemi-N.-Dilangalen.pdf"
+  },
+  "374": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-community-based-physical-and-rehabilitation-medicine-cbprm-program-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-providing-for-decentralized-accessible-and-inclusiv/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/07/Bill-No.-374-MP-Hashemi-N.-Dilangalen.pdf"
+  },
+  "373": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-the-panglima-sugala-community-hospital-a-ten-10-bed-infirmary-hospital-in-panglima-sugala-tawi-tawi-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/07/Bill-No.-373-MP-John-Anthony-L.-Lim.pdf"
+  },
+  "372": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-changing-the-name-of-the-buluan-district-hospital-to-maguindanao-del-sur-provincial-hospital-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/06/Bill-No.-372-MP-Suharto-S.-Esmael-Buluan-District-Hospital.pdf"
+  },
+  "371": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-mandating-all-local-government-units-lgus-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-to-establish-public-cemeteries-to-allocate-an-adequate-land-for-such-purpose-providin/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/06/Bill-No.-371-MP-Suharto-S.-Esmael-BARMM-Public-Cementery.pdf"
+  },
+  "370": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-bangsamoro-identification-system-and-providing-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/06/Bill-No.-370-MP-Suharto-S.-Esmael-BIS.pdf"
+  },
+  "369": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-to-upgrade-the-existing-wao-district-hospital-in-the-municipality-of-wao-province-of-lanao-del-sur-from-a-level-1-to-a-level-2-hospital-increasing-its-authorized-bed-capacity-from-fifty-50/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/06/Bill-No.-369-MP-Rashdi-T.-Adiong-WAO-DISTRICT-HOSPITAL.pdf"
+  },
+  "368": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-granting-special-hardship-allowance-for-teachers-in-the-island-provinces-of-basilan-sulu-and-tawi-tawi-and-appropriating-funds-thereof/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/06/Bill-No.-368-Enhanced-MP-Abrar-J.-Hataman.pdf"
+  },
+  "367": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-inclusive-education-through-the-creation-of-one-1-special-education-centers-for-children-and-youth-in-every-province-of-the-bangsamoro-autonomous-region-in-muslim-mindanao/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/06/Bill-No.-367-Enhanced-MP-Abrar-J.-Hataman.pdf"
+  },
+  "366": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-health-maintenance-organization-hmo-benefits-to-all-employees-of-the-bangsamoro-government-creating-a-barmm-health-benefit-program-appropriating-funds-therefor-and-for-other/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/06/Bill-No.-366-MP-Abrar-J.-Hataman-HMO-Bill.pdf"
+  },
+  "365": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-upgrading-the-datu-halun-sakilan-memorial-hospital-tawi-tawi-in-the-municipality-of-bongao-province-of-tawi-tawi-from-a-level-1-50-bed-capacity-to-a-level-2-200-bed-capacity-hospital-and-a/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/06/Bill-No.-365-MP-John-Anthony-LIm.pdf"
+  },
+  "364": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-mandating-the-programmatic-inclusion-of-right-of-way-indemnification-in-all-infrastructure-projects-to-be-undertaken-by-the-bangsamoro-government-appropriating-funds-therefor-and-for-other-pu/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/06/Bill-No.-364-MP-Baintan-A.-Ampatuan-Right-of-Way-2.pdf"
+  },
+  "363": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-bangsamoro-shariah-judicial-and-legal-academy-defining-its-powers-and-functions-providing-for-its-governance-and-support-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/06/Bill-No.-363-MP-Laisa-Alamia.pdf"
+  },
+  "362": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-integrated-bangsamoro-greening-program-providing-for-its-implementation-institutional-framework-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/06/Bill-No.-362-MP-Alindatu-K.-Pagayao.pdf"
+  },
+  "361": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-special-intervention-fund-for-urgent-critical-and-endangered-infrastructures-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-providing-funds-therefor-and-for-o/",
+   "pdf": null
+  },
+  "360": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-mandating-the-ministry-of-basic-higher-and-technical-education-mbhte-to-integrate-basic-knowledge-of-bangsamoro-history-into-the-secondary-education-curriculum-of-all-public-and-private-edu/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/05/Bill-No.-360-MP-Baintan-Ampatuan-Bangsamoro-History-Curriculum.pdf"
+  },
+  "359": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-establishment-of-the-bangsamoro-state-university-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/05/Bill-No.-359-MP-Baintan-Ampatuan-Bangsamoro-State-University.pdf"
+  },
+  "358": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-shariff-kabunsuan-shrine-in-barangay-kalanganan-2-cotabato-city-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/05/Bill-No.-358-MP-Lanang-T.-Ali-Jr-Shariff-Kabunsuan-Shrine.pdf"
+  },
+  "357": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-regulating-the-operations-of-motorcycles-for-hires-in-the-bangsamoro-region-and-providing-mandatory-statutory-benefits-to-its-riders/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/05/Bill-No.-357-MP-Romeo-K.-Sema-Motorcyle-for-Hire.pdf"
+  },
+  "356": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-the-tawi-tawi-maritime-school-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/04/Bill-No.-356-MP-JOHN-ANTHONY-L.-LIM-Tawi-Maritime-School.pdf"
+  },
+  "355": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-and-institutionalizing-the-salamat-excellence-award-for-leadership-seal-program-for-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/04/Bill-No.-355-MP-Naguib-G.-Sinarimbo-SEAL-Act-of-2025.pdf"
+  },
+  "354": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-bangsamoro-center-for-children-diagnosed-with-autism-spectrum-disorder-asd-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-appropriating-funds-therefor-and-for-other-p/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/04/Bill-No.-354-MP-Baintan-A.-Ampatuan-Bangsamoro-ASD-Center-2.pdf"
+  },
+  "353": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-bangsamoro-transitional-justice-and-reconciliation-program-creating-for-the-purpose-the-bangsamoro-transitional-justice-and-reconciliation-commission-appropriating-funds-theref/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/04/Bill-No.-353-Government-of-the-Day-Bangsamoro-TJR-Bill_Body.pdf"
+  },
+  "352": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-sustainable-management-development-and-conservation-of-lake-lanao-and-its-watershed-creating-for-this-purpose-the-lake-lanao-management-authority-appropriating-funds-there/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/04/Bill-No.-352-Government-of-the-Day-Lake-Lanao-Bill_ao-25-Sept-2025_CLEAN.pdf"
+  },
+  "351": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-reconstituting-the-parliamentary-districts-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-amending-for-the-purpose-bangsamoro-autonomy-act-no-58-entitled-an-act-providing-fo/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/04/Bill-No.-351-Government-of-the-Day-Parliamentary-Re-District.pdf"
+  },
+  "350": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-upgrading-the-existing-dr-serapio-b-montaner-jr-al-haj-memorial-hospital-dsbmmh-from-twenty-five-25-to-one-hundred-100-bed-capacity-appropriating-funds-therefor-and-for-other-purpo/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/03/Bill-No.-350-MP-Kadil-M.-Sinolinding-MONTANER-HOSPITAL-SUBSTITUTE-BILL.pdf"
+  },
+  "348": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-ensuring-safe-and-clean-drinking-water-and-adequate-sanitation-facilities-in-schools-within-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-providing-funds-for-the-purpose-and-for/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/03/Bill-No.-348-MP-Hashemi-N.-Dilangalen-BARMM-Water-Safety-in-Schools-Act.pdf"
+  },
+  "347": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-reapportioning-the-seven-7-vacant-parliamentary-seats-in-the-bangsamoro-parliament-following-the-exclusion-of-sulu-province-from-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-a/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/03/Bill-No.-347-MP-Baintan-A.-Ampatuan-Re-apportionment-VACANT-PARLIAMENTARY-SEATS.pdf"
+  },
+  "349": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-appropriating-the-2025-supplemental-funds-for-the-operation-of-the-bangsamoro-government-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/02/Bill-No.-349-Government-of-the-day-2025-SUPPLEMENTAL-FUNDS-1.pdf"
+  },
+  "346": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-trade-and-tourism-centers-in-cotabato-city-lamitan-city-marawi-city-jolo-sulu-and-bongao-tawi-tawi-and-providing-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/02/Bill-No.-346-MP-John-Anthony-Lim-Trade-and-Tourism-Hub.pdf"
+  },
+  "345": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-granting-civil-service-eligibility-under-certain-conditions-to-bangsamoro-government-employees-appointed-under-job-order-contract-of-service-casual-or-contractual-status-who-have-rendered-a-t/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/02/Bill-No.-345-MP-Marjanie-S.-Macasalong-Eligibility-Grant.pdf"
+  },
+  "344": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-strengthening-the-promotion-and-delivery-of-mental-health-services-by-establishing-structures-and-mechanisms-in-the-bangsamoro-autonomous-region-appropriating-funds-therefor-and-for-other-pur/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/12/Bill-No.-344-MP-Baintan-A.-Ampatuan-AN-ACT-STRENGTHENING-THE-.pdf"
+  },
+  "343": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-promoting-infrastructure-and-connectivity-development-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-to-support-economic-growth-employment-and-sustainable-development-appropr/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/12/Bill-No.-343-MP-Baintan-A.-Ampatuan-AN-ACT-PROMOTING-INFRASTRUCTURE-AND-CONNECTIVITY-DEVELOPMENT-IN-THE-BANGSAMORO-AUTONOMOUS-REGION-IN-MUSLIM-MINDANAO.pdf"
+  },
+  "342": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-the-bangsamoro-economic-zone-authority-as-an-investment-promotion-agency-providing-for-its-mandate-powers-and-functions-appropriating-funds-therefor-and-for-other-purpos/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/12/Bill-No.-342.pdf"
+  },
+  "341": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-appropriating-funds-for-the-operation-of-the-bangsamoro-government-from-january-one-to-december-thirty-one-two-thousand-and-twenty-five-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/10/Bill-No.-341.pdf"
+  },
+  "340": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-mandating-commercial-and-public-establishments-within-the-bangsamoro-autonomous-region-to-install-handheld-bidet-in-its-restrooms-imposing-penalties-for-violations-therefore-and-for-other-purp/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/10/Bill-No.-340-MP-Suharto-S.-Esmael-HANDHELD-BIDET-IN-RESTROOM.pdf"
+  },
+  "339": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-micro-grid-solar-systems-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/10/Bill-No.-339-MP-Suharto-S.-Esmael-MICRO-GRID-SOLAR-SYSTEM-IN-.pdf"
+  },
+  "338": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-comprehensive-bangsamoro-support-program-for-children-with-neurodevelopmental-disorder-and-other-special-needs-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/10/Bill-No.-338-MP-Suharto-S.-Esmael-SUPPORT-PROGRAM-FOR-CHILDRE-2.pdf"
+  },
+  "337": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-mechanism-for-the-registration-management-and-administration-of-waqf-in-the-bangsamoro-creating-the-bangsamoro-waqf-commission-appropriating-funds-therefor-and-for-other-purp/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/09/Bill-No.-337-MP-Tarhata-M.-Maglangit-BANGSAMORO-WAQF-COMMISSI.pdf"
+  },
+  "336": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/bangsamoro-gender-and-development-code/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/09/Bill-No.-336-Government-of-the-Day-BARMM-GAD-CODE.pdf"
+  },
+  "335": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-declaring-the-house-of-ameerul-mujahideen-sheikh-salamat-hashim-in-camp-abubakar-and-in-islamic-center-in-buliok-pagalungan-maguindanao-del-sur-as-historical-place-being-his-headquarters-in-l/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/09/Bill-No.-335-MP-Akmad-I.-ABAS-HOUSE-OF-AMEERUL-MUJAHIDEEN-SHEIKH-SALAMAT-HASHIM-.pdf"
+  },
+  "334": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-declaring-the-first-seven-days-of-shawwal-as-mental-wellness-and-family-week-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-providing-appropriations-therefor-and-for-other/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/09/Bill-No.-334-MP-Baileng-Mantawil-Mental-Wellness-and-Family-W-2.pdf"
+  },
+  "333": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-amending-section-5-of-bangsamoro-act-no-55-otherwise-known-as-the-an-act-creating-the-municipality-of-sheik-abas-hamza-in-the-province-of-maguindanao-del-norte-providing-funds-there/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/09/Bill-No.-333-Government-of-the-Day-AN-ACT-AMENDING-SECTION-5-OF-BANGSAMORO-ACT-NO.-55-2.pdf"
+  },
+  "332": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-amending-section-5-of-bangsamoro-act-no-54-otherwise-known-as-the-act-creating-the-municipality-of-datu-sinsuat-balabaran-in-the-province-of-maguindanao-del-norte-providing-funds-th/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/09/Bill-No.-332-Government-of-the-Day-AN-ACT-AMENDING-SECTION-5-OF-BANGSAMORO-ACT-NO.-54-1.pdf"
+  },
+  "331": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-amending-section-5-of-bangsamoro-act-no-53-otherwise-known-as-the-an-act-creating-the-municipality-of-nuling-in-the-province-of-maguindanao-del-norte-providing-funds-therefor-and-for-other-p/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/09/Bill-No.-331-Government-of-the-Day-AN-ACT-AMENDING-SECTION-5-OF-BANGSAMORO-ACT-NO.-53-2.pdf"
+  },
+  "330": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-appropriating-supplemental-funds-for-the-operation-of-the-bangsamoro-government-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/08/Bill-No.-330-Government-of-the-Day-General-Provisions-FY-2024-Supplemental.pdf"
+  },
+  "329": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-authorizing-and-promoting-public-private-partnerships-ppps-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-establishing-the-requirements-standards-and-procedures-therefor-a/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/08/Bill-No.-329-MP-Mohammad-Kelie-U.-Antao-PUBLIC-PRIVATE-PARTNERSHIPS.pdf"
+  },
+  "328": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-renaming-the-municipality-of-datu-blah-t-sinsuat-maguindanao-del-norte-to-municipality-of-west-upi-maguindanao-del-norte/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/08/Bill-No.-328-MP-Baintan-A.-Ampatuan-RENAMING-DATU-BLAH-T.-SIN.pdf"
+  },
+  "327": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-declaring-the-burial-site-of-late-hajji-salik-b-abu-ghazali-jaafar-moro-islamic-liberation-front-vice-chair-for-political-affairs-and-chairman-of-the-expanded-bangsamoro-tra/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/08/Bill-No.-327-MP-Susana-S.-Anayatin-Ghazali-Jaafar-Memorial-Site-Act-of-2024.pdf"
+  },
+  "326": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-assistance-benefits-and-privileges-to-families-of-non-decommissioned-martyred-mujahideen-and-mujahidat-providing-funds-therefore-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/08/Bill-No.-326-MP-Michael-E.-Midtimbang-Martyred-Mujahideen-Act.pdf"
+  },
+  "325": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-prescribing-a-budget-system-for-the-bangsamoro-government/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/08/Bill-No.-325-Government-of-the-Day-Bangsamoro-Budget-System-Act.docx.pdf"
+  },
+  "324": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-eco-tourism-villages-in-all-local-government-units-lgus-of-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-to-promote-sustainable-development-cultural-preservation/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/08/Bill-No.-324-MP-John-Anthony-L.-Lim-ECOTOURISM-VILLAGE-ACT.pdf"
+  },
+  "323": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-comprehensive-framework-for-acknowledging-and-rewarding-outstanding-performance-among-bangsamoro-government-employees-through-a-points-based-system-and-providing-guidelines-for-2/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/08/Bill-No.-323-MP-Jamel-B.-Macacua-Leave-Benefits.pdf"
+  },
+  "322": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-comprehensive-bike-route-network-linking-local-government-units-within-the-bangsamoro-region-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/07/Bill-No.-322-MP-Rasul-Y.-Mitmug-Jr.-A-COMPREHENSIVE-BIKE-ROUTE-NETWORK-LINKING-LOCAL-GOVERNMENT-UNITS.pdf"
+  },
+  "321": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-bangsamoro-legislative-academy-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/07/Bill-No.-321-MP-Omar-Yasser-C.-Sema-BANGSAMORO-LEGISLATIVE-ACADEMY.pdf"
+  },
+  "320": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-public-petitions-in-the-bangsamoro-parliament-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/07/Bill-No.-320-MP-Omar-Yasser-C.-Sema-Public-Petitions-Law.pdf"
+  },
+  "319": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-comprehensive-legal-framework-for-the-registration-regulation-and-support-of-civil-society-organizations-csos-operating-within-the-bangsamoro-autonomous-region-in-muslim-mind/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/07/Bill-No.-319-MP-Omar-Yasser-C.-Sema-Civil-Society-Code.pdf"
+  },
+  "318": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-and-constructing-a-level-i-municipal-hospital-with-fifty-50-bed-capacity-in-the-municipality-of-pagalungan-province-of-maguindanao-del-sur-to-be-known-as-pagalungan-mu/",
+   "pdf": null
+  },
+  "317": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-district-office-of-the-ministry-of-public-works-in-special-geographic-area-of-bangsamoro-autonomous-region-in-muslim-mindanao-appropriating-funds-therefor/",
+   "pdf": null
+  },
+  "316": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-banning-the-sale-and-use-of-firecrackers-and-other-pyrotechnic-devices-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/06/Bill-No.-316-MP-Baintan-A.-Ampatuan-Firecrackers-Ban.pdf"
+  },
+  "315": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-the-use-of-quick-response-qr-codes-for-all-documents-issued-by-bangsamoro-ministries-offices-and-agencies-and-recognizing-all-photocopied-documents-bea/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/06/Bill-No.-315-–-MP-Jamel-B.-Macacua-INSTITUTIONALIZING-THE-USE-OF-QUICK-RESPONSE-CODE.pdf"
+  },
+  "314": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-the-grant-of-benefits-and-incentives-to-accredited-and-active-barangay-health-workers-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-and-providing-funds-therfor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/06/Bill-No.-314-–-MP-Suharto-S.-Esmael-INSTITUTIONALIZING-THE-GRANT-OF-BENEFITS-AND-INCENTIVES-TO-ACCREDITED-AND-ACTIVE-BARANGAY-HEALTH-WORKERS.pdf"
+  },
+  "313": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-bangsamoro-sports-training-center-bstc-in-bangsamoro-autonomous-region-in-muslim-mindanao-and-providing-funds-therefor/",
+   "pdf": null
+  },
+  "312": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-fifty-bed-capacity-bangsamoro-people-general-hospital-in-the-special-geographic-areas-sga-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/06/Bill-No.-312-–-MP-Suharto-S.-Esmael-ESTABLISHING-THE-FIFTY-BED-CAPACITY-BANGSAMORO-PEOPLE-GENERAL-HOSPITAL-IN-THE-SGA.pdf"
+  },
+  "311": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-bangsamoro-blood-services-center-bbsc-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-defining-its-purpose-and-appropriating-funds-therefor/",
+   "pdf": null
+  },
+  "310": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-legal-framework-for-the-harmonization-and-implementation-of-pertinent-laws-and-policies-relevant-to-the-conservation-and-management-of-the-resources-of-liguasan-marsh-creating-for-th/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/06/Bill-No.-310-–-MP-Ali-B.-Sangki-THE-CONSERVATION-AND-MANAGEMENT-OF-THE-RESOURCES-OF-LIGUASAN-MARSH.pdf"
+  },
+  "309": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-recognizing-and-protecting-the-rights-of-the-settlers-promoting-their-welfare-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-renaming-the-office-for-settler-communities-as-of/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/06/Bill-No.-309.pdf"
+  },
+  "308": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-assistance-for-the-correction-and-or-change-of-entries-in-the-civil-register-of-mujahideen-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/05/Bill-No.-308-–-MP-Abdullah-B.-Hashim-AN-ACT-PROVIDING-ASSISTANCE-FOR-THE-CORRECTION-ANDOR-CHANGE-OF-ENTRIES.pdf"
+  },
+  "307": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-a-mental-health-support-package-for-public-school-teachers-and-educators-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": null
+  },
+  "306": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-five-5-day-special-emergency-leave-for-all-workers-in-the-public-and-private-sectors-in-barmm-directly-affected-by-natural-calamities-or-disasters/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/05/Bill-No.-306-MP-Hashemi-N.-Dilangalen-Bangsamoro-Special-Emergency-Leave-Act-of-2024.pdf"
+  },
+  "305": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-waste-workers-health-and-welfare-program-for-bangsamoro-autonomous-region-in-muslim-mindanao-and-appropriating-funds-thereof/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/05/Bill-No.-305-Enhanced-MP-Hashemi-N.-Dilangalen-Bangsamoro-Waste-Workers-Health-and-Welfare-Act-of-2024.pdf"
+  },
+  "304": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-legal-and-shariah-scholarship-and-return-service-for-deserving-students-in-the-bangsamoro-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/05/Bill-No.-304-MP-Kelie-U.-Antao-An-Act-Establishing-the-Legal-and-Shariah-Scholarship.docx.pdf"
+  },
+  "303": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-declaring-a-two-day-holiday-during-eidl-fitr-in-the-bangsamoro-region/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/05/Bill-No.-303-MP-Jamel-B.-Macacua-AN-ACT-DECLARING-A-TWO-DAY-HOLIDAY-DURING-EIDL-FITR.pdf"
+  },
+  "302": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-requiring-the-accreditation-of-hospitals-in-the-bangsamoro-autonomous-region-as-ibadah-friendly-hospital-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/05/Bill-No.-302-MP-Suharto-S.-Esmael-IBADAH-FRIENDLY-HOSPITAL.pdf"
+  },
+  "301": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-a-haven-and-rehabilitation-center-for-women-who-are-victims-of-gender-based-violence-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/05/Bill-No.-301-MP-Jamel-B.-Macacua-Haven-for-Gender-based-victims.pdf"
+  },
+  "300": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-wellness-through-the-conduct-of-weekly-physical-conditioning-activities-for-employees-of-the-bangsamoro-government/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/05/Bill-No.-300-MP-Jamel-B.-Macacua-Physical-Fitness-Activities-in-every-MOA.pdf"
+  },
+  "299": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-a-museum-exclusively-exhibiting-the-bangsamoro-history-towards-autonomy-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/05/Bill-No.-299-MP-Jamel-B.-Macacua-Bangsamoro-Museum.pdf"
+  },
+  "298": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-the-flextime-of-work-hours-during-the-hijri-calendar-month-of-ramadhan-for-all-departments-bureaus-and-agencies-local-government-units-government-owned-or-controlled-corp/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/04/Bill-No.-298-–-MP-Jamel-B.-Macacua-AN-ACT-INSTITUTIONALIZING-THE-FLEXTIME-OF-WORK-HOURS-DURING-THE-HIJRI-CALENDAR-MONTH-OF-RAMADHAN.pdf"
+  },
+  "297": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-promoting-resilient-development-through-mandatory-comprehensive-risk-assessments-of-development-projects-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/04/Bill-No.-297-–-MP-Amilbahar-S.-Mawallil-PROMOTING-RESILIENT-DEVELOPMENT.pdf"
+  },
+  "296": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-an-emergency-runway-infrastructure-system-in-all-provinces-of-the-bangsamoro-autonomous-region-and-providing-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/04/Bill-No.-296-–-MP-Amilbahar-S.-Mawallil-ESTABLISHING-AN-EMERGENCY-RUNWAY-INFRASTRUCTURE-SYSTEM.pdf"
+  },
+  "295": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-to-enhance-development-project-planning-and-implementation-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-creating-for-the-purpose-the-geographic-information-system-bureau-of-the-bangs/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/04/Bill-No.-295-–-MP-Amilbahar-S.-Mawallil-TO-ENHANCE-DEVELOPMENT-PROJECT-PLANNING-AND-IMPLEMENTATION.pdf"
+  },
+  "294": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-ensuring-equitable-healthcare-access-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-through-the-creation-of-the-bangsamoro-medical-assistance-program-for-indigent-patients-appropriatin/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/04/Bill-No.-294-–-MP-Amilbahar-S.-Mawallil-ENSURING-EQUITABLE-HEALTHCARE-ACCESS.pdf"
+  },
+  "293": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-financial-aid-for-medication-maintenance-of-senior-citizens-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/04/Bill-No.-293-–-MP-Amilbahar-S.-Mawallil-PROVIDING-FINANCIAL-AID-FOR-MEDICATION-MAINTENANCE-OF-SENIOR-CITIZENS.pdf"
+  },
+  "292": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-comprehensive-economic-empowerment-framework-for-former-bangsamoro-women-combatants-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/04/Bill-No.-292-MP-Diamila-D.-Ramos-Economic-Empowerment-of-Former-Bangsamoro-Women-Combatants-Act-2.pdf"
+  },
+  "291": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-incorporating-basic-agri-fishery-knowledge-in-the-elementary-and-secondary-schools-curriculum-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-providing-funds-therefor-and-for-o/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/04/Bill-No.-291-–-MP-Baintan-A.-Ampatuan-AN-ACT-INCORPORATING-BASIC-AGRI-FISHERY-KNOWLEDGE.pdf"
+  },
+  "290": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-regional-diagnostic-and-clinical-laboratory-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-barmm-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/04/Bill-No.-290-–-MP-Baintan-A.-Ampatuan-AN-ACT-ESTABLISHING-A-REGIONAL-DIAGNOSTIC-AND-CLINICAL-LABORATORY.pdf"
+  },
+  "289": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-the-comprehensive-social-protection-program-for-bangsamoro-agri-fishery-workers-creating-for-its-purpose-the-bangsamoro-agri-fishery-workers-social-protection-board-bawspb/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/04/Bill-No.-289-–-MP-Baintan-A.-Ampatuan-COMPREHENSIVE-SOCIAL-PROTECTION-FRAMEWORK-FOR-BANGSAMORO-AGRI-FISHERY-WORKERS.pdf"
+  },
+  "288": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-recognition-and-incentives-to-bangsamoro-authors-who-have-written-and-published-books-of-excellence-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/03/Bill-No.-288-–-MP-Don-Mustapha-A.-Loong-INCENTIVES-TO-BANGSAMORO-AUTHORS-WHO-HAVE-WRITTEN-AND-PUBLISHED-BOOKS-OF-EXCELLENCE.pdf"
+  },
+  "287": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-political-party-subsidy-fund-in-the-bangsamoro-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/03/Bill-No.-287-–-MP-Tarhata-M.-Maglangit-ESTABLISHING-A-POLITICAL-PARTY-SUBSIDY-FUND-IN-THE-BANGSAMORO.pdf"
+  },
+  "286": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-revenue-code-of-the-bangsamoro-autonomous-region-in-muslim-mindanao-appropriating-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-286-Government-of-the-Day-REVENUE-CODE.pdf"
+  },
+  "285": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-granting-bangsamoro-radio-suwara-meranaw-a-franchise-to-construct-install-establish-operate-and-maintain-telecommunications-services-in-the-bangsamoro-autonomous-region-in-muslim-mindanao/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-285-–-MP-Ali-B.-Solaiman-BANGSAMORO-RADIO-SUWARA-MERANAW.pdf"
+  },
+  "284": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-renaming-the-municipality-of-sultan-mastura-maguindanao-del-norte-to-municipality-of-subpangen/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-284-MP-LANANG-T.-ALI-JR.ACT-RENAMING-THE-MUNICIPALITY-OF-SULTAN-MASTURA.pdf"
+  },
+  "283": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-and-establishing-an-infirmary-hospital-in-tipo-tipo-municipality-province-of-basilan-otherwise-known-as-tipo-tipo-community-hospital-appropriating-funds-therefor-and-for-other-purpo/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-283-MP-Kadil-Sinolinding-BILL-ON-TIPO-TIPO.docx-2.pdf"
+  },
+  "282": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-granting-government-officials-and-employees-of-the-bangsamoro-autonomous-region-in-muslim-mindanao-a-thirty-30-calendar-days-paid-leave-to-perform-pilgrimage-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-282-–-MP-Abdullah-Hashim-A-THIRTY-30-CALENDAR-DAYS-PAID-LEAVE-TO-PERFORM-PILGRIMAGE.pdf"
+  },
+  "281": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-granting-bereavement-leave-to-all-employees-in-the-private-and-public-sectors-within-the-bangsamoro-autonomous-region-in-muslim-mindanao-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-281-–-MP-Abdullah-Hashim-AN-ACT-GRANTING-BEREAVEMENT-LEAVE-TO-ALL-EMPLOYEES-IN-THE-PRIVATE-AND-PUBLIC-SECTORS.pdf"
+  },
+  "280": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-a-comprehensive-framework-for-the-promotion-and-development-of-tourism-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-280-–-MP-Baintan-A.-Ampatuan-AN-ACT-ESTABLISHING-A-COMPREHENSIVE-FRAMEWORK-FOR-THE-PROMOTION-AND-DEVELOPMENT-OF-TOURISM.pdf"
+  },
+  "279": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-requiring-all-provincial-government-hospitals-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-to-establish-maintain-and-operate-a-dialysis-unit-in-their-respective-hospital-and-provide/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-279-–-MP-Hashemi-N.-Dilangalen-TO-ESTABLISH-MAINTAIN-AND-OPERATE-A-DIALYSIS-UNIT.pdf"
+  },
+  "278": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-the-bangsamoro-river-basin-management-council-providing-for-its-mandate-and-functions-members-and-officers-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-278-–-MP-Hashemi-N.-Dilangalen-BANGSAMORO-RIVER-BASIN-MANAGEMENT-COUNCIL.pdf"
+  },
+  "277": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-strengthening-the-implementation-of-republic-act-no-11330-which-converted-the-dinaig-municipal-hospital-into-a-50-bed-capacity-hospital-known-as-the-datu-odin-sinsuat-district-hospital-in-the/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-277-–-MP-Hashemi-N.-Dilangalen-THE-DINAIG-MUNICIPAL-HOSPITAL-INTO-A-50-BED-CAPACITY.pdf"
+  },
+  "276": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-granting-fifteen-15-days-of-moral-recovery-leave-to-government-officials-and-employees-in-the-public-sector/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-276-–-MP-Hashemi-N.-Dilangalen-MORAL-RECOVERY-LEAVE.pdf"
+  },
+  "275": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-comprehensive-regional-public-health-literacy-and-promotion-on-the-effects-and-benefits-of-vaccination-providing-for-government-subsidy-on-flu-vaccination-appropriating-fund/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-275-–-MP-Hashemi-N.-Dilangalen-COMPREHENSIVE-REGIONAL-PUBLIC-HEALTH-LITERACY.pdf"
+  },
+  "274": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-converting-upi-agricultural-school-in-the-municipality-of-upi-province-of-maguindanao-del-norte-into-a-university-to-be-known-as-the-bangsamoro-tribal-university-and-appropriating-funds-there/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-274-–-MP-Ramon-A.-Piang-AN-ACT-CONVERTING-UPI-AGRICULTURAL-SCHOOL-IN-THE-MUNICIPALITY-OF-UPI.pdf"
+  },
+  "273": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-to-recognize-develop-and-protect-the-indigenous-peoples-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-strengthening-the-ministry-of-indigenous-peoples-affairs-appropriating/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/Bill-No.-273-Government-of-the-Day-TO-RECOGNIZE-DEVELOP-AND-.pdf"
+  },
+  "272": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-the-municipality-of-bayantol-in-the-province-lanao-del-sur-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/Bill-No.-272-MP-Ali-Montaha-Babao-CREATING-MUNICIPALITY-OF-BA.pdf"
+  },
+  "271": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-the-municipality-of-saripada-in-the-province-lanao-del-sur-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/Bill-No.-271-Enhanced-MP-Ali-Montaha-Babao-CREATING-MUNICIPALITY-OF-PILINTANGAN.pdf"
+  },
+  "270": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-bereavement-leave-of-five-5-days-with-half-pay-to-regular-and-contractual-employees-in-public-and-private-sector/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/Bill-No.-270-MP-ROMEO-K.-SEMA-AN-ACT-PROVIDING-FOR-BREAVEMENT.pdf"
+  },
+  "269": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-an-infirmary-hospital-in-bongo-island-parang-maguindanao-del-norte-defining-its-service-capacity-providing-funds-therefor-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/Bill-No.-269-MP-KADIL-M.-SINOLINDING-AN-ACT-CREATING-AN-INFIR.pdf"
+  },
+  "268": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-halal-consumers-act/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/12/Bill-No.-268-MP-ROMEO-K.-SEMA-AN-ACT-PROVIDING-FOR-THE-HALAL-CONSUMERS-ACT.pdf"
+  },
+  "267": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-providing-for-the-creation-of-parliamentary-districts-in-the-bangsamoro-autonomous-region-in-muslim-mindanao/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/12/Bill-No.-267-Government-of-the-Day-PARLIAMENTARY-DISTRICTS-IN.pdf"
+  },
+  "266": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-authorizing-the-continued-use-of-funds-for-the-release-and-disbursement-of-unpaid-obligations-of-fy-2023-appropriations/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/11/Bill-No.-266-Government-of-the-Day-CONTINUED-USE-OF-FUNDS-FOR-THE-RELEASE-AND-DISBURSEMENT-OF-UNPAID-OBLIGATIONS-OF-FY-2023-APPROPRIATIONS.pdf"
+  },
+  "265": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-further-continuing-the-validity-of-the-2020-to-2022-special-development-fund-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/11/Bill-No.-265-Government-of-the-Day-CONTINUING-THE-VALIDITY-OF-THE-2020-TO-2022-SPECIAL-DEVELOPMENT-FUND-.pdf"
+  },
+  "264": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-standardizing-the-bed-capacity-of-the-siasi-district-hospital-in-the-municipality-of-siasi-province-of-sulu-from-its-present-operational-twenty-five-25-beds-to-fifty-50-beds-and-appropriat/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/11/Bill-No.-264-MP-Hamid-U.-Malik-STANDARDIZING-THE-BED-CAPACITY-OF-THE-SIASI-DISTRICT-HOSPITAL-IN-THE-MUNICIPALITY-OF-SIASI.pdf"
+  },
+  "263": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-to-recognize-protect-promote-and-strengthen-the-bangsamoro-rights-to-rural-electrification-creating-a-bangsamoro-electrification-administration-bea-defining-its-powers-and-functions-and/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/11/Bill-No.-263-MP-Jaafar-Apollo-Mikhail-L.-Matalam-THE-BANGSAMORO-RIGHTS-TO-RURAL-ELECTRIFICATION.pdf"
+  },
+  "262": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-appropriating-funds-for-the-operation-of-the-bangsamoro-government-from-january-one-to-december-thirty-one-two-thousand-and-twenty-four-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-262-Government-of-the-day-BANGSAMORO-EXPENDITURE-PROGRAM.pdf"
+  },
+  "261": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-developing-and-promoting-the-bangsamoro-tourism-establishing-the-bangsamoro-tourism-promotion-board-for-the-purpose-and-appropriating-funds-therefor/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-261-MP-Amilbahar-Mawallil-DEVELOPING-AND-PROMOTING-THE-BANGSAMORO-TOURISM.pdf"
+  },
+  "260": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-implementing-agricultural-modernization-strategies-in-the-bangsamoro-autonomous-region-in-muslim-mindanao-to-empower-farmers-and-promote-sustainable-agribusiness-growth-and-appropriating-funds/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-260-MP-Amilbahar-Mawallil-IMPLEMENTING-AGRICULTURAL-MODERNIZATION-STRATEGIES-1.pdf"
+  },
+  "259": {
+   "page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-bangsamoro-learning-recovery-fund-thereby-implementing-comprehensive-learning-recovery-initiatives-for-students-in-response-to-the-covid-19-pandemic-and-for-other-purposes/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-259-MP-Amilbahar-Mawallil-ESTABLISHING-THE-BANGSAMORO-LEARNING-RECOVERY-FUND.pdf"
+  }
+ }
+}

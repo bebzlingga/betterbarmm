@@ -1,187 +1,365 @@
 {
-  "record_type": "parliament_bill",
-  "basic_information": {
-    "bill_number": 431,
-    "short_title": "Expands the Scope of Authority and Services of",
-    "official_title": "AN ACT EXPANDING THE SCOPE OF AUTHORITY AND SERVICES OF SPECIAL GEOGRAPHIC AREA DEVELOPMENT AUTHORITY (SGADA)",
-    "type": "Parliament Bill",
-    "session": "4th Regular Session (2025-)",
-    "date_filed": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "current_status": "Approved",
-    "status_as_of": "2026-07-16",
-    "date_approved": "2026-07-16"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Expands the Scope of Authority and Services of Special Geographic Area Development Authority (sgada).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note of the bill)",
-    "what_will_change": "Expands the Scope of Authority and Services of Special Geographic Area Development Authority (sgada).",
-    "who_will_be_affected": [
-      "Barangay residents",
-      "LGUs"
-    ],
-    "when_will_it_take_effect": "Approved; effectivity per its final clause",
-    "what_this_means_for_you": {
-      "in_short": "PROPOSAL: A governance law shaping how the Bangsamoro Government works. Its effect on daily life is indirect but real: clearer rules inside government generally mean faster, more accountable service at the counter. (This describes what the bill would do if enacted.)",
-      "in_practice": [
-        "Defines powers, procedures, or structures within the regional government"
-      ],
-      "for_specific_groups": {
-        "General public": "Better-defined government duties are the basis for demanding service"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Not yet - only if and when enacted",
-      "what_you_can_do": [
-        "This is the stage where public input matters most: submit a position paper via the Parliament's 'Call for Position Papers' page",
-        "Attend or watch the committee hearings (schedules are on the Parliament site; many are livestreamed)",
-        "Contact a Member of Parliament - the 'Contact an MP' page lists them - to support, oppose, or suggest changes"
-      ],
-      "watch_out_for": [
-        "Nothing changes yet: a bill has no legal effect until Parliament approves it and it is enacted as a Bangsamoro Autonomy Act. Many bills are revised or merged along the way."
-      ],
-      "key_terms_explained": {
-        "First Reading": "The bill's title is read in plenary and it is referred to a committee - the earliest formal stage.",
-        "Committee stage": "A committee studies the bill, holds hearings, and can rewrite it before plenary debate.",
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
-      },
-      "status_note": "Bill status: Approved (as of 2026-07-16).",
-      "benefits": {
-        "headline": "A dedicated office now exists to serve and advocate for its sector.",
-        "direct_benefits": [
-          {
-            "benefit": "A service window: programs, assistance, and complaints handling for the covered sector",
-            "who_gets_it": "The sector named in the law",
-            "how_to_access": "The body's office/hotline once organized"
-          },
-          {
-            "benefit": "Representation inside government when policies are made",
-            "who_gets_it": "Sector members",
-            "how_to_access": "Through the body's consultations"
-          },
-          {
-            "benefit": "Employment in the new institution",
-            "who_gets_it": "Qualified applicants",
-            "how_to_access": "CSC-BARMM / agency postings"
-          }
-        ],
-        "indirect_benefits": [
-          "A formal partner for NGOs and donors working on the sector"
-        ],
-        "limitations": [
-          "Now REAL, not prospective: enacted as BAA 94 - see baa/BAA-94.json for claimable benefits."
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "parliament_bill",
+ "basic_information": {
+  "bill_number": 431,
+  "short_title": "Expands the powers and funding of the Special Geographic Area Development Authority",
+  "official_title": "AN ACT EXPANDING THE SCOPE OF AUTHORITY AND SERVICES OF SPECIAL GEOGRAPHIC AREA DEVELOPMENT AUTHORITY AMENDING BANGSAMORO AUTONOMY ACT NO. 13 OTHERWISE KNOWN AS THE “BANGSAMORO ADMINISTRATIVE CODE” AND BANGSAMORO AUTONOMY ACT NO. 49 OTHERWISE KNOWN AS “BANGSAMORO LOCAL GOVERNANCE CODE”, PROVIDING FUNDS THEREFOR AND FOR OTHER PURPOSES",
+  "type": "Parliament Bill",
+  "session": "4th Regular Session (2025-)",
+  "date_filed": "2026-01-19",
+  "current_status": "Enacted — indexed as both BAA 93 and BAA 94",
+  "status_as_of": "2026-07-16",
+  "date_approved": "2026-07-16",
+  "parliament": "Third Parliament (BTA3)",
+  "date_filed_note": "Received by the Bills and Index Division at 2:58 PM on 19 January 2026, per the receiving stamp on the filed copy.",
+  "enactment_number_note": "Parliament's index carries the enactment twice — as Bangsamoro Autonomy Act No. 93 and again as No. 94, same title and same ratification date of 16 July 2026, both naming Bill 431 as origin. The bill's own legislative history on the index closes with 'BAA No. 93', which points to 93 as the operative number and 94 as an indexing artefact — but the registry records both rather than quietly deleting one."
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Turns the Special Geographic Area — the eight municipalities that voted to join the Bangsamoro in 2019 — into a special development and administrative area run by a strengthened Special Geographic Area Development Authority (SGADA), and gives that Authority money of its own: ₱500 million to start and a fixed 5% share of all Bangsamoro Government revenue every year after.",
+  "why_was_it_proposed": "The eight SGA municipalities are new, poor in infrastructure, and share problems that stop at no town boundary — flooding in the Ligawasan marsh, drainage, land use, health and sanitation, disaster response. The bill's policy section argues these are services no single municipality can finance or plan on its own, and that they are better planned and supervised area-wide. An interim SGADA already existed under BAA 13; this bill gives it a permanent legal footing, a governing board, a staff structure, and a standing budget.",
+  "what_will_change": "A single authority, supervised directly by the Chief Minister, now plans and oversees area-wide services across the eight SGA municipalities — flood control, drainage, land use, shelter, health and sanitation, pollution control, and disaster response — with its own board, staff and guaranteed funding. Town governments keep their autonomy over purely local matters, and SGADA may only deliver basic services in a municipality with that municipality's consent.",
+  "who_will_be_affected": [
+   "Residents of the eight Special Geographic Area municipalities: Kadayangan, Kapalawan, Ligawasan, Malidegao, Nabalawag, Old Kaabakan, Pahamuddin, Tugunan",
+   "The mayors and councils of those eight municipalities, whose area-wide planning is now coordinated by SGADA",
+   "Employees of the interim SGADA, whose posts, duties and assignments may change",
+   "Bangsamoro ministries and agencies, whose plans for the SGA must align with SGADA's master plan",
+   "Every Bangsamoro taxpayer, because 5% of all regional revenue collection is earmarked to SGADA annually"
   ],
-  "impact": {
-    "who_benefits": [
-      "Barangay residents",
-      "LGUs"
+  "when_will_it_take_effect": "Fifteen (15) days after the law is published in full in at least two (2) newspapers of regional circulation. Passage alone does not start it.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW — ratified 16 July 2026. (Parliament's index lists the enactment twice, as BAA 93 and BAA 94; the number is unsettled, the law is not.) If you live in one of the eight Special Geographic Area municipalities, one regional authority is now responsible for the big things your town cannot do alone — flood control, drainage, land use, health and sanitation, disaster response — and it has guaranteed money to do them. Your mayor and council still run purely local matters.",
+   "in_practice": [
+    "Area-wide problems get one accountable office instead of eight separate town plans",
+    "A master plan for the SGA that Bangsamoro ministries and the eight town development plans must line up with",
+    "₱500 million to start the Authority, then 5% of all Bangsamoro revenue every year",
+    "SGADA may charge fees and levy fines for services it renders",
+    "SGADA can only step in to deliver basic services inside a municipality with that municipality's prior consent"
+   ],
+   "for_specific_groups": {
+    "Residents of the eight SGA municipalities": "The main intended beneficiaries — area-wide flood control, drainage, land use planning, shelter, health and sanitation, and disaster response are now one authority's job.",
+    "Mayors and councils in the SGA": "Autonomy over purely local matters is expressly preserved, and SGADA needs your consent before delivering basic services in your town. Your local development plan must fit SGADA's master plan. The President of the SGA League of Mayors sits on the governing board.",
+    "Interim SGADA employees": "You keep your duties, salary and allowances until formally notified of a change or transfer. If displaced, you are entitled to 1¼ month's salary for every year of service, or retirement benefits if you qualify and prefer them.",
+    "Job seekers": "A new staffing pattern, an Executive Director, three Deputy Executive Directors, and subordinate posts up to Salary Grade 24. The Deputy Executive Director for planning needs 5 years' experience in development planning or a master's degree in rural development or a similar field.",
+    "NGOs, people's organisations and the private sector in the SGA": "SGADA is required to consult and work closely with you, and may enter contracts, memoranda of agreement and cooperative arrangements.",
+    "Bangsamoro taxpayers": "A standing 5% claim on regional revenue is set aside for this Authority before other spending decisions."
+   },
+   "where_this_applies": "The Special Geographic Area only — the eight municipalities of Kadayangan, Kapalawan, Ligawasan, Malidegao, Nabalawag, Old Kaabakan, Pahamuddin, Tugunan. The funding, however, is drawn from Bangsamoro-wide revenue.",
+   "when_you_will_feel_it": "The law is in force. Services should follow as SGADA's board, staffing pattern and master plan are organised; the transitory section exists precisely so services do not stop while that happens.",
+   "what_you_can_do": [
+    "Bring an area-wide problem — flooding, drainage, land use, sanitation — to the SGADA office rather than only to your municipal hall",
+    "Ask your mayor how the town's development plan is being aligned with SGADA's master plan",
+    "Ask to see SGADA's annual accomplishment report: the law requires the Chairperson to submit one to the Board and the Chief Minister at the close of every calendar year",
+    "Take part as a people's organisation, NGO or private-sector group — the law obliges SGADA to consult these bodies"
+   ],
+   "watch_out_for": [
+    "The Authority's leadership serves at the Chief Minister's discretion: the Chairperson is appointed by, and holds office at the pleasure of, the Chief Minister.",
+    "The 5% annual share of all Bangsamoro revenue is a standing claim on the regional budget that is not tied to a spending ceiling or a sunset date in the text.",
+    "SGADA may levy fines and impose fees and charges for services rendered; the law does not set the amounts, so watch the implementing rules.",
+    "Your town's consent is required before SGADA delivers basic services locally — but not before it plans, regulates or supervises area-wide services."
+   ],
+   "key_terms_explained": {
+    "Special Geographic Area (SGA)": "The 63 barangays in eight newly constituted municipalities of North Cotabato that voted in 2019 to join the Bangsamoro region.",
+    "SGADA": "Special Geographic Area Development Authority — the regional body that plans and supervises services covering the whole SGA.",
+    "SGA-wide services": "Services whose impact crosses town boundaries, or that cost so much no single municipality could provide them alone.",
+    "Per diem": "A payment given to board members for each meeting attended, on top of any salary.",
+    "Salary Grade 24": "A pay level in the government salary scale. The Chairperson may appoint staff up to this grade; higher posts are appointed by the Chief Minister.",
+    "BAA": "Bangsamoro Autonomy Act — a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
+   },
+   "status_note": "Enacted on 16 July 2026. Parliament's official index lists this enactment twice — once as Bangsamoro Autonomy Act No. 93 and again as No. 94, with the same title and the same ratification date of 16 July 2026, both naming Bill 431 as their origin. Which number is the operative one is unresolved; the registry flags it rather than picking one. This record reads the bill as filed on 19 January 2026; the enacted text has not been read line by line.",
+   "benefits": {
+    "headline": "One authority, with its own money, is now answerable for the area-wide services the eight SGA towns cannot fund alone.",
+    "direct_benefits": [
+     {
+      "benefit": "Area-wide flood control, drainage and sewerage planning and works",
+      "who_gets_it": "Residents of the eight SGA municipalities",
+      "how_to_access": "Through SGADA and your municipal government; SGADA plans and supervises, LGUs and ministries carry out"
+     },
+     {
+      "benefit": "Land use, zoning and shelter/housing services planned across the whole area",
+      "who_gets_it": "Residents and landholders in the SGA",
+      "how_to_access": "Through your municipal planning office, working within SGADA's master plan"
+     },
+     {
+      "benefit": "Health and sanitation, environmental protection and pollution control programmes",
+      "who_gets_it": "SGA communities",
+      "how_to_access": "Through SGADA programmes and the concerned Bangsamoro ministries"
+     },
+     {
+      "benefit": "Public safety: disaster preparedness, rescue, relief and rehabilitation, with contingency plans for floods, fires and earthquakes",
+      "who_gets_it": "SGA communities",
+      "how_to_access": "Through SGADA in coordination with Bangsamoro ministries and your LGU"
+     },
+     {
+      "benefit": "Employment in the Authority — Executive Director, three Deputy Executive Directors, and subordinate posts up to Salary Grade 24",
+      "who_gets_it": "Qualified applicants",
+      "how_to_access": "Through SGADA/CSC-BARMM postings once the staffing pattern is fixed"
+     },
+     {
+      "benefit": "Separation benefits of 1¼ month's salary per year of service, or retirement benefits if qualified",
+      "who_gets_it": "Interim SGADA employees displaced by the reorganisation",
+      "how_to_access": "Through SGADA/MFBM under civil service rules"
+     }
     ],
-    "impact_tags": [
-      "local_government"
+    "indirect_benefits": [
+     "A single, funded counterpart for donors and foreign assistance agencies — the law directs SGADA to interface with them for grants and financing, with BPDA and the finance ministry",
+     "A formal seat for the SGA League of Mayors on the governing board",
+     "Projects packaged and presented to funding institutions, which small municipalities rarely have the capacity to do"
     ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Beneficiary/budget figures are only shown when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "First Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Second Reading - Committee",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Second Reading - Plenary",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved by Parliament",
-      "reached": true,
-      "date": "2026-07-16"
-    },
-    {
-      "stage": "Enacted (BAA)",
-      "reached": true,
-      "date": null
-    }
-  ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "sponsor": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Listed on the bill's official page under General Information."
-  },
-  "related_documents": {
-    "original_bill_pdf": "On the bill's official page",
-    "committee_report": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "approved_version": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "irr": null
-  },
-  "related_legislation": {
-    "amends": [],
-    "repeals": [],
-    "related_bills": [],
-    "enacted_as": "BAA 94"
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "see": "baa/BAA-94.json"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this already a law?",
-      "a": "Approved by Parliament; enactment/numbering as a BAA follows."
-    },
-    {
-      "q": "How can I support or oppose this bill?",
-      "a": "Submit a position paper via the Parliament's Call for Position Papers page, or attend/watch the responsible committee's public hearings."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "The bill's page on parliament.bangsamoro.gov.ph (Bills index) links the PDF and legislative history."
-    }
-  ],
-  "display_header": {
-    "line1": "Parliament Bill No. 431",
-    "line2": "Expands the Scope of Authority and Services of",
-    "badges": [
-      "APPROVED",
-      "Local Government",
-      "2026"
+    "limitations": [
+     "The bill creates no individual entitlement or cash benefit you can claim: it funds and empowers an office, it does not open a payout window.",
+     "Amounts for fees, fines and charges are not set in the text — they follow later issuances.",
+     "Nothing here applies outside the eight SGA municipalities, though the money comes from region-wide revenue."
+    ]
+   },
+   "your_responsibilities": {
+    "for_residents": [
+     "None. The law imposes no registration, filing, fee or reporting duty on ordinary residents."
     ],
-    "what_this_does": "Expands the Scope of Authority and Services of Special Geographic Area Development Authority (sgada).",
-    "who_it_affects": "Barangay residents · LGUs"
-  },
-  "views": {
-    "simple": "Expands the Scope of Authority and Services of Special Geographic Area Development Authority (sgada).",
-    "official": "AN ACT EXPANDING THE SCOPE OF AUTHORITY AND SERVICES OF SPECIAL GEOGRAPHIC AREA DEVELOPMENT AUTHORITY (SGADA)"
-  },
-  "implementing_agency_if_enacted": {
-    "agency": "MILG",
-    "inferred": true
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "for_lgus": [
+     "Align the municipal development plan with SGADA's master plan, which the law makes the framework for component LGU plans",
+     "Coordinate with SGADA on area-wide services; give or withhold consent when SGADA proposes to deliver basic services in your town"
+    ],
+    "for_the_authority": [
+     "Consult and work closely with LGUs, BPDA, ministries, accredited people's organisations, NGOs and the private sector",
+     "Submit development plans and investment programmes to BPDA for integration into the Bangsamoro Development Plan",
+     "Submit an annual accomplishment report to the Board and the Chief Minister at the close of each calendar year",
+     "Prepare an annual budget for Board approval"
+    ]
+   },
+   "what_is_prohibited": [
+    "The bill defines no prohibited acts for citizens, businesses or officials, and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The bill creates no offence, fine or imprisonment for any person.",
+    "for_businesses": "None created by this bill.",
+    "for_officials": "The Chairperson may discipline subordinate officials and employees under existing law, and staff may be removed only for cause. The Chairperson carries the disqualifications and prohibitions of a cabinet member.",
+    "note": "SGADA may levy fines and impose fees and charges for services it renders, but the bill sets no amounts and defines no violations — those would come from later issuances."
+   },
+   "where_to_complain": {
+    "first_stop": "The SGADA office, and your municipal government for purely local matters",
+    "oversight": "Office of the Chief Minister, which directly supervises the Special Geographic Area",
+    "money_matters": "Ministry of Finance, and Budget and Management, and the Commission on Audit — both are named in the law's transitory section over SGADA's assets and liabilities",
+    "your_representatives": "Members of Parliament, listed on parliament.bangsamoro.gov.ph, including the bill's own authors",
+    "note": "The bill establishes no dedicated complaints desk, hotline or appeals procedure of its own."
+   },
+   "everyday_scenarios": [
+    "Sittie farms in Nabalawag and loses her crop to marsh flooding most years. Flood control across the Ligawasan basin is now one authority's job rather than a project her municipality alone could never fund — though she will only see works once SGADA's plans and budget are in place.",
+    "Mayor Datu runs one of the eight towns. He keeps control of purely local matters, but his development plan must now fit SGADA's master plan, and SGADA cannot deliver basic services in his municipality without his consent. He is represented on the board through the President of the SGA League of Mayors.",
+    "Norhata has worked for the interim SGADA since 2023. She keeps her duties, salary and allowances until she is formally notified of a change. If her post is abolished, she is entitled to 1¼ month's salary for every year she served, or retirement benefits if she qualifies.",
+    "Abdul runs a hauling business in Cotabato City, outside the SGA. None of the services reach him, but 5% of the regional revenue his taxes contribute to is now earmarked for this Authority every year."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Declares the Special Geographic Area a special development and administrative area under the direct supervision of the Chief Minister, covering the municipalities of Kadayangan, Kapalawan, Ligawasan, Malidegao, Nabalawag, Old Kaabakan, Pahamuddin, Tugunan, without prejudice to the autonomy of the affected local government units.",
+  "Section 2 — Places the affairs of the SGA under the Special Geographic Area Development Authority (SGADA), which plans, monitors, coordinates, regulates and supervises the delivery of SGA-wide services without diminishing LGU autonomy over purely local matters.",
+  "Section 3 — Defines SGA-wide services as those with area-wide impact, crossing local political boundaries, or too costly for individual LGUs: development planning; flood control and sewerage; rural, zoning and land use planning and shelter; health and sanitation, environmental protection and pollution control; public safety and disaster response; and other services the Chief Minister may delegate pursuant to a law.",
+  "Section 4 — Creates the Special Geographic Area Board as governing and policy-making body: the SGADA Chairperson, the MILG Minister, the Minister of Finance and Budget and Management, the BPDA Director General, and the President of the League of Mayors in the SGA. The Chairperson is appointed by and serves at the discretion of the Chief Minister with the rank and prohibitions of a cabinet member, assisted by an Executive Director and three Deputy Executive Directors (finance and administration, planning, operations). The Deputy for planning needs 5 years' experience in development planning or a master's degree in rural development or a similar discipline. Board members receive allowances and per diems.",
+  "Section 5 — Powers of SGADA: formulate and regulate medium and long-term plans for SGA-wide services and land use; prepare medium-term investment programmes and package projects for funding institutions; undertake and manage its own area-wide programmes and create operating units, subject to Board approval; coordinate and monitor implementation; and deliver basic services to LGUs when necessary, but only with the prior coordination and consent of the LGU concerned.",
+  "Section 6 — Functions of the Chairperson: appoint staff up to Salary Grade 24 and engage experts and consultants; execute Board policies; prepare the annual budget and the staffing pattern; discipline subordinates; and submit an annual accomplishment report to the Board and the Chief Minister at the close of each calendar year.",
+  "Section 7 — Functions of the Executive Director: assist the Chairperson in administration, in supervising operating centres and units, and in reviewing plans and preparing the annual report.",
+  "Section 8 — Institutional linkages: SGADA must consult and work closely with LGUs, BPDA, ministries, accredited people's organisations, NGOs and the private sector; its master plan frames both ministry strategic plans and component LGU development plans; its plans go to BPDA for integration into the Bangsamoro Development Plan; and it interfaces with foreign assistance agencies for financing, grants and donations together with BPDA and the finance ministry.",
+  "Section 10 — Funding: ₱500,000,000 authorised for initial operation, with later annual expenditures and capital outlays provided in the General Appropriations Act; a fixed 5% annual share of all revenue collection of the Bangsamoro Government; and the power to levy fines and impose fees and charges for services rendered.",
+  "Section 11 — Transitory: interim SGADA officials and employees keep their duties, salaries and allowances until notified of a change or transfer; the interim body's assets, obligations and liabilities pass to the expanded SGADA subject to conditions set by the finance ministry, the Office of the Chief Minister and the Commission on Audit; displaced employees receive 1¼ month's salary for every year of service, or retirement benefits if qualified.",
+  "Section 12 — Repeals or modifies all inconsistent laws, decrees, executive orders, rules and regulations.",
+  "Section 13 — Separability clause.",
+  "Section 14 — Takes effect 15 days after publication in at least two newspapers of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of the eight Special Geographic Area municipalities",
+   "LGUs in the SGA",
+   "Interim SGADA employees",
+   "Bangsamoro ministries operating in the SGA"
+  ],
+  "impact_tags": [
+   "local_government",
+   "infrastructure_transport",
+   "disaster_resilience",
+   "governance_civil_service",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱500,000,000 initial appropriation, plus a fixed 5% annual share of all Bangsamoro Government revenue collection",
+  "figures_note": "Figures are quoted from Section 10 of the bill as filed. The number of residents in the eight SGA municipalities is not stated in the bill and is not asserted here."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed",
+   "reached": true,
+   "date": "2026-01-19"
+  },
+  {
+   "stage": "First Reading",
+   "reached": true,
+   "date": "2026-01-26"
+  },
+  {
+   "stage": "Second Reading - Committee",
+   "reached": true,
+   "date": "2026-01-28"
+  },
+  {
+   "stage": "Second Reading - Plenary",
+   "reached": true,
+   "date": "2026-07-16"
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": "2026-07-16"
+  },
+  {
+   "stage": "Approved by Parliament",
+   "reached": true,
+   "date": "2026-07-16"
+  },
+  {
+   "stage": "Enacted (BAA)",
+   "reached": true,
+   "date": "2026-07-16"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": [
+   "MALANG, BUTCH P.",
+   "ANTOK, TOMANDA D.",
+   "SINARIMBO, NAGUIB G.",
+   "KADATUAN, KITEM D., JR."
+  ],
+  "co_authors": [
+   "HASSAN, HATIMIL E.",
+   "SEMA, ROMEO K.",
+   "MISUARI, ABDULKARIM T.",
+   "ANAYATIN, SUSANA S.",
+   "PIANG, RAMON A., SR.",
+   "PARCASIO, RANDOLPH C.",
+   "SHIEK, SAID M.",
+   "SINOLINDING, KADIL M., JR.",
+   "ASNAWIE, DAN S.",
+   "CUTAN, UTTOH SALEM D.",
+   "ANTAO, MOHAMMAD KELIE U.",
+   "MASTURA, ISHAK V.",
+   "MIDTIMBANG, MICHAEL E.",
+   "CANDAO, MA-AROUPH B.",
+   "PAGAYAO, ALINDATU K.",
+   "ABU, MUDJIB C.",
+   "BAYAM, ZULFIKAR-ALI S.",
+   "BENITO, ABDULBASIT R.",
+   "MATALAM, JAAFAR APOLLO MIKHAIL L.",
+   "ISMAEL, RASUL E.",
+   "GAYAK, AMIRODDIN Y.",
+   "MISUARI, NURREDHA I."
+  ],
+  "sponsor": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": [
+   "Committee on Local Government",
+   "Committee on Amendments, Revision and Codification of Laws"
+  ],
+  "note": "Authorship is taken from Parliament's bills index, which reflects the measure as it stood at passage: four principal authors and 22 co-authors. The copy filed on 19 January 2026 named MP Butch P. Malang as sole principal author with three co-authors (Antok, Kadatuan and Sinarimbo) — authorship grew as the bill moved. Both are recorded because the filed document and the index answer slightly different questions.",
+  "author_interest_note": "The principal author, MP Butch P. Malang, is recorded on Parliament's own member profile as Administrator of the Special Geographic Area and Development Authority since 2022 — the body this bill expands and funds. Stated as a matter of record. Parliament's Rules (Rule II, Section 1(f)) require a member to take no part in proceedings on a measure in which they hold a conflict of interest or stand to gain or lose financially; whether that rule was engaged here is not something this registry can determine, and no finding is implied.",
+  "principal_authors_as_filed": [
+   "MALANG, BUTCH P."
+  ],
+  "co_authors_as_filed": [
+   "ANTOK, TOMANDA D.",
+   "KADATUAN, KITEM D., JR.",
+   "SINARIMBO, NAGUIB G."
+  ],
+  "committee_report": "Committee Report No. 223 RE: Bill No. 431, adopted 16 July 2026"
+ },
+ "related_documents": {
+  "original_bill_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/Bill-No.-431-MP-Butch-P.-Malang-4.pdf",
+  "committee_report": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "approved_version": "Not published. Parliament's pages for BAA 93 and BAA 94 carry no attachment as of this capture.",
+  "irr": null,
+  "official_page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-expanding-the-scope-of-authority-and-services-of-special-geographic-area-development-authority-amending-bangsamoro-autonomy-act-no-13-otherwise-known-as-the-bangsamoro-administrative/"
+ },
+ "related_legislation": {
+  "amends": [
+   "BAA 13",
+   "BAA 49"
+  ],
+  "amends_detail": [
+   "BAA 13 — Bangsamoro Administrative Code, which created the interim SGADA",
+   "BAA 49 — Bangsamoro Local Governance Code"
+  ],
+  "repeals": "All other laws, decrees, executive orders, rules and regulations inconsistent with this Act, to the extent of the inconsistency (Section 12)",
+  "related_bills": [],
+  "enacted_as": "BAA 93 (the index also lists a duplicate BAA 94)",
+  "enacted_as_note": "Parliament's index carries the enactment twice — as Bangsamoro Autonomy Act No. 93 and again as No. 94, same title and same ratification date of 16 July 2026, both naming Bill 431 as origin. The bill's own legislative history on the index closes with 'BAA No. 93', which points to 93 as the operative number and 94 as an indexing artefact — but the registry records both rather than quietly deleting one.",
+  "enacted_as_index": "BAA No. 93"
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "see": "baa/BAA-93.json and baa/BAA-94.json",
+  "budget_appropriated": "₱500,000,000 initial, plus 5% of annual Bangsamoro revenue collection",
+  "note": "This record reads the bill as filed on 19 January 2026. Parliament has not published the signed text of this enactment. Its act pages carry no attachment, and the same is true of the two other acts ratified alongside it (BAA 92 and 94) — the three most recent acts on the index are all text-less as of this capture. So the filed bill is currently the only readable version of this law. Parliament may have amended the measure in committee or on the floor — Committee Report No. 223 was adopted the same day it passed second and third reading — so where the enacted text differs, it governs. Parliament's index also carries the enactment twice, as BAA 93 and BAA 94, with the same title and ratification date; the bill's own history line closes with 'BAA No. 93', which points to 93 as the operative number."
+ },
+ "citizen_questions": [
+  {
+   "q": "Is this already a law?",
+   "a": "Yes. Parliament approved it on 16 July 2026 and it is in force, taking effect 15 days after publication in at least two newspapers of regional circulation. One caveat on the paperwork: Parliament's index lists the enactment twice, as Bangsamoro Autonomy Act No. 93 and as No. 94, with the same title and date. The law is not in doubt; its official number is, and this registry flags that rather than choosing one."
+  },
+  {
+   "q": "Does this apply to me?",
+   "a": "Directly, if you live in one of the eight Special Geographic Area municipalities: Kadayangan, Kapalawan, Ligawasan, Malidegao, Nabalawag, Old Kaabakan, Pahamuddin, Tugunan. Indirectly, if you are a Bangsamoro taxpayer — 5% of all regional revenue collection is set aside for this Authority each year."
+  },
+  {
+   "q": "Does my mayor lose power over our town?",
+   "a": "No. The law twice preserves LGU autonomy: the SGA is constituted 'without prejudice to the autonomy of the affected local government units', and SGADA supervises area-wide services 'without diminution of the autonomy of the local government units concerning purely local matters'. SGADA also needs your municipality's consent before delivering basic services there. What does change is that your town's development plan must fit SGADA's master plan."
+  },
+  {
+   "q": "What money is involved and where does it come from?",
+   "a": "₱500 million is authorised for the Authority's initial operation, with later spending provided through the General Appropriations Act. On top of that, SGADA gets a fixed 5% of all revenue the Bangsamoro Government collects each year, and may charge fees and levy fines for services it renders."
+  },
+  {
+   "q": "Can I be fined or penalised under this law?",
+   "a": "No. The bill creates no offences and imposes no fines or imprisonment on any person. It does empower SGADA to levy fines and charge fees for services it renders, but the amounts and the conduct involved are not set in the text."
+  },
+  {
+   "q": "I work for the interim SGADA. What happens to my job?",
+   "a": "You keep your duties, salary and allowances until you are formally notified of a change of duties or a transfer. If you are displaced, the Bangsamoro Government must pay 1¼ month's salary for every year of service; if you qualify for retirement under existing laws, you may take those benefits instead."
+  },
+  {
+   "q": "Who is accountable, and who do I ask for help?",
+   "a": "SGADA itself, under the direct supervision of the Chief Minister. The governing board includes the MILG Minister, the Minister of Finance and Budget and Management, the BPDA Director General, and the President of the SGA League of Mayors. The Commission on Audit and the finance ministry are named over its assets and liabilities. The law creates no dedicated complaints desk or appeals route of its own."
+  },
+  {
+   "q": "How can I take part or read the full text?",
+   "a": "The measure's page on parliament.bangsamoro.gov.ph carries the filed PDF and the legislative history, and the enacted law is Bangsamoro Autonomy Act No. 94. SGADA is required by law to consult LGUs, people's organisations, NGOs and the private sector, so those consultations are the practical way in."
+  }
+ ],
+ "display_header": {
+  "line1": "Parliament Bill No. 431",
+  "line2": "Expands the powers and funding of the SGA Development Authority",
+  "badges": [
+   "ENACTED",
+   "Local Government",
+   "2026"
+  ],
+  "what_this_does": "Makes the eight Special Geographic Area municipalities one development area under a funded authority responsible for flood control, land use, health and sanitation, and disaster response.",
+  "who_it_affects": "The eight SGA municipalities · LGUs · Bangsamoro taxpayers"
+ },
+ "views": {
+  "simple": "Makes the eight Special Geographic Area municipalities one development area under a funded authority responsible for the services no single town can deliver alone.",
+  "official": "AN ACT EXPANDING THE SCOPE OF AUTHORITY AND SERVICES OF SPECIAL GEOGRAPHIC AREA DEVELOPMENT AUTHORITY AMENDING BANGSAMORO AUTONOMY ACT NO. 13 OTHERWISE KNOWN AS THE “BANGSAMORO ADMINISTRATIVE CODE” AND BANGSAMORO AUTONOMY ACT NO. 49 OTHERWISE KNOWN AS “BANGSAMORO LOCAL GOVERNANCE CODE”, PROVIDING FUNDS THEREFOR AND FOR OTHER PURPOSES"
+ },
+ "implementing_agency_if_enacted": {
+  "agency": "Special Geographic Area Development Authority (SGADA), under the direct supervision of the Chief Minister",
+  "governing_board": [
+   "Chairperson of SGADA",
+   "Minister, Ministry of the Interior and Local Government",
+   "Minister, Ministry of Finance, and Budget and Management",
+   "Bangsamoro Director General, Bangsamoro Planning and Development Authority",
+   "President of the League of Mayors in the Special Geographic Area"
+  ],
+  "inferred": false,
+  "note": "Named in Sections 1, 2 and 4 of the bill. The earlier 'MILG' entry in this record was an inference from the subject tag and was wrong: MILG sits on the board but does not lead the Authority."
+ },
+ "provenance": {
+  "source": "Bill No. 431 copy as filed (received by the Bills and Index Division, 19 January 2026); Parliament member profiles for author names and roles; registry index for status and BAA linkage.",
+  "generation": "Plain-language fields on this record were rewritten from the filed text of the bill on 18 August 2026, replacing the earlier rule-based transformations of the title. Section references are quoted from that copy. The enacted BAA 94 text has not been read; where it differs, it governs. Verify against the official document before citing.",
+  "data_note": "Two things the source does not settle. First, the filed copy runs Section 8 straight to Section 10 — there is no Section 9 in the document as received; the numbering is reproduced as filed. Second, parliament's index carries the enactment twice — as Bangsamoro Autonomy Act No. 93 and again as No. 94, same title and same ratification date of 16 July 2026, both naming Bill 431 as origin. The bill's own legislative history on the index closes with 'BAA No. 93', which points to 93 as the operative number and 94 as an indexing artefact — but the registry records both rather than quietly deleting one."
+ }
 }

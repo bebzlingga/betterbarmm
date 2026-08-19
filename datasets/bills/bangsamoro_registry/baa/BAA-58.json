@@ -1,182 +1,231 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 58,
-    "short_title": "Provides for the Creation of Parliamentary Districts in",
-    "official_title": "AN ACT PROVIDING FOR THE CREATION OF PARLIAMENTARY DISTRICTS IN BARMM (Parliamentary Districts Act of 2024)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2024-02-28",
-    "current_status": "STRUCK DOWN / SUPERSEDED"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Provides for the Creation of Parliamentary Districts in BARMM (parliamentary Districts Act of 2024).",
-    "why_was_it_proposed": "First districting law; struck down by the Supreme Court, triggering the 2025-2026 redistricting scramble (Bills 403/407/408/411/415/416).",
-    "what_will_change": "Provides for the Creation of Parliamentary Districts in BARMM (parliamentary Districts Act of 2024).",
-    "who_will_be_affected": [
-      "Voters",
-      "Researchers"
-    ],
-    "when_will_it_take_effect": "Ratified 2024-02-28; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "IMPORTANT: this districting law was STRUCK DOWN by the Supreme Court. It originally drew the map of parliamentary districts for the 2026 elections, but the Court found the apportionment unconstitutional. Your district today is defined by BAA 86, not this law.",
-      "in_practice": [
-        "Kept here for the historical record and to understand the redistricting fight",
-        "Its successor BAA 77 was also affected; BAA 86 (Jan 2026) is the compliant apportionment now in force",
-        "The episode delayed election preparations and drove a cluster of 2025-2026 bills"
-      ],
-      "for_specific_groups": {
-        "Voters": "Check your current district under BAA 86 before the Sept 14, 2026 polls",
-        "Researchers": "A rare case study of judicial review shaping a first regional election"
-      },
-      "where_this_applies": "All of BARMM unless the title names a specific place",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [
-        "LEGAL STATUS: Declared unconstitutional by the Supreme Court (2025) for malapportionment; superseded by BAA 77 and later BAA 86.",
-        "Already amended by BAA 77 - read the consolidated text"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "A real vote in choosing your own regional government.",
-        "direct_benefits": [
-          {
-            "benefit": "Your ballot elects the Bangsamoro Parliament on Sept 14, 2026 - district, party, and sectoral seats",
-            "who_gets_it": "Registered voters in BARMM",
-            "how_to_access": "Register/verify with COMELEC; vote on election day"
-          },
-          {
-            "benefit": "Clear district representation: a specific representative answerable to your area",
-            "who_gets_it": "District residents",
-            "how_to_access": "Know your district under BAA 86"
-          },
-          {
-            "benefit": "Sectoral seats give organized sectors (women, youth, ulama, IPs, etc.) guaranteed voices",
-            "who_gets_it": "Sectoral communities",
-            "how_to_access": "Through accredited sectoral organizations"
-          }
-        ],
-        "indirect_benefits": [
-          "Accountability: appointed transition officials give way to officials you can vote out"
-        ],
-        "limitations": [
-          "VOID/SUPERSEDED: Declared unconstitutional by the Supreme Court (2025) for malapportionment; superseded by BAA 77 and later BAA 86. Benefits described applied only while operative.",
-          "Election laws confer process rights, not material benefits; their value is exercised at the precinct"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 58,
+  "short_title": "Bangsamoro Parliamentary Districts Act of 2024",
+  "official_title": "AN ACT PROVIDING FOR THE CREATION OF PARLIAMENTARY DISTRICTS IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2024-02-28",
+  "current_status": "STRUCK DOWN / SUPERSEDED",
+  "session": "Second Regular Session (begun 15 September 2022)",
+  "date_passed": "2024-02-28",
+  "date_passed_hijri": "Sha'ban 18, 1445",
+  "date_approved_by_chief_minister": "2024-02-28",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "COMELEC",
-      "Candidates",
-      "Voters"
-    ],
-    "impact_tags": [
-      "elections_districting"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2024-02-28"
-    }
+  "effectivity": "15 days after completion of publication in the Bangsamoro Gazette or a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Draws the region's first electoral map — 32 single-member parliamentary districts covering every province, Cotabato City and the Special Geographic Area, with the population of each district set out.",
+  "why_was_it_proposed": "The Bangsamoro Parliament will be partly elected by district. Before anyone can vote for a district representative, the districts have to exist and their boundaries be fixed by law.",
+  "what_will_change": "The BARMM is divided into 32 parliamentary districts, each electing one representative, drawn on population and geographical area with a minimum of 100,000 people per district.",
+  "who_will_be_affected": [
+   "Every voter in the BARMM — this determines which district you vote in",
+   "Candidates for district seats in the Bangsamoro Parliament",
+   "Municipalities and barangays grouped into districts",
+   "The Special Geographic Area, which receives a single Lone District"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [
-      "BAA 77"
+  "when_will_it_take_effect": "In force from 2024. The districts were subsequently reconstituted by BAA 77 and re-apportioned by BAA 86 — read those for the map as it now stands.",
+  "what_this_means_for_you": {
+   "in_short": "This is the map. 32 single-member districts, each electing 1 Member of Parliament, each with at least 100,000 people. Note that later acts redrew it.",
+   "in_practice": [
+    "32 single-member parliamentary districts in total",
+    "Basilan 3 · Lanao del Sur 8 · Maguindanao del Norte 4 · Maguindanao del Sur 4 · Sulu 7 · Tawi-Tawi 3 · City of Cotabato 2 · Special Geographic Area 1 lone district",
+    "Districts are apportioned on population and geographical area",
+    "Each district must comprise, as far as practicable, contiguous, compact and adjacent territory",
+    "Each district must have a population of at least 100,000",
+    "The act records a total BARMM population of 4,944,800"
+   ],
+   "for_specific_groups": {
+    "Voters": "Your district determines whose name appears on your ballot for a district seat. The act lists every municipality and, for Cotabato City, every barangay.",
+    "Lanao del Sur": "The largest allocation — 8 of the 32 districts, on a population of 1,195,518.",
+    "The Special Geographic Area": "A single Lone District covering all eight of its municipalities, with a population of 215,433.",
+    "Cotabato City": "Two districts, drawn at barangay level rather than by municipality.",
+    "Candidates": "District boundaries define where you must run and who you must reach."
+   },
+   "where_this_applies": "The whole BARMM as constituted when the act was passed.",
+   "when_you_will_feel_it": "At parliamentary elections — but read the later reconstituting and apportionment acts first.",
+   "what_you_can_do": [
+    "Find your municipality in the district list to see which district you fall in",
+    "Check BAA 77 and BAA 86, which reconstituted and re-apportioned the districts after this act"
+   ],
+   "watch_out_for": [
+    "This map has been superseded in part. BAA 77 reconstituted the parliamentary districts in 2025 and BAA 86 provided for their apportionment in 2026.",
+    "The act was passed and approved by the Chief Minister on the same day, 28 February 2024 — unusually fast.",
+    "The Special Geographic Area's Lone District lists eight municipalities, including Ligawasan, for which this registry has not identified a separate creating act alongside the seven at BAA 41–47.",
+    "Some districts sit close to the 100,000 floor, so small population changes matter."
+   ],
+   "key_terms_explained": {
+    "Parliamentary district": "A geographical constituency electing 1 Member of Parliament.",
+    "Single-member district": "A district that returns exactly one representative.",
+    "Apportionment": "Dividing seats among areas according to agreed criteria — here population and geographical area.",
+    "Contiguous, compact and adjacent": "The standard test that a district should be a single connected shape rather than scattered pieces.",
+    "Special Geographic Area": "The former North Cotabato barangays that voted into the BARMM in 2019, organised into municipalities by BAA 41–47."
+   },
+   "status_note": "Passed Sha'ban 18, 1445 / 28 February 2024 and approved by the Chief Minister the same day.",
+   "benefits": {
+    "headline": "The region's first electoral map, with every district's population published.",
+    "direct_benefits": [
+     {
+      "benefit": "A defined district for every voter in the region",
+      "who_gets_it": "All BARMM voters",
+      "how_to_access": "The district lists in Section 4"
+     },
+     {
+      "benefit": "Published population figures for each district",
+      "who_gets_it": "Anyone checking whether representation is equitable",
+      "how_to_access": "Stated alongside every district"
+     },
+     {
+      "benefit": "A dedicated seat for the Special Geographic Area",
+      "who_gets_it": "Residents of the eight SGA municipalities",
+      "how_to_access": "The Lone District"
+     }
     ],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": false,
-    "legal_challenge_note": "Declared unconstitutional by the Supreme Court (2025) for malapportionment; superseded by BAA 77 and later BAA 86.",
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Bangsamoro Electoral Office / COMELEC",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Declared unconstitutional by the Supreme Court (2025) for malapportionment; superseded by BAA 77 and later BAA 86."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Bangsamoro Electoral Office / COMELEC (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 58",
-    "line2": "Provides for the Creation of Parliamentary Districts in",
-    "badges": [
-      "STRUCK DOWN",
-      "Elections Districting",
-      "2024"
+    "indirect_benefits": [
+     "A stated minimum population per district, which limits how unequal districts may become",
+     "Barangay-level detail for Cotabato City"
     ],
-    "what_this_does": "Provides for the Creation of Parliamentary Districts in BARMM (parliamentary Districts Act of 2024).",
-    "who_it_affects": "COMELEC · Candidates · Voters",
-    "effective": "2024-02-28"
-  },
-  "views": {
-    "simple": "Provides for the Creation of Parliamentary Districts in BARMM (parliamentary Districts Act of 2024).",
-    "official": "AN ACT PROVIDING FOR THE CREATION OF PARLIAMENTARY DISTRICTS IN BARMM (Parliamentary Districts Act of 2024)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "limitations": [
+     "Superseded in part by later reconstituting and apportionment acts.",
+     "No provision for periodic redistricting within the act itself.",
+     "No standard is set for how far district populations may diverge above the minimum."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act creates no duty — it draws boundaries."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "Commission on Elections, through the Bangsamoro Electoral Office",
+    "note": "The act creates no complaints or challenge procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A voter in Maluso, Basilan looks up their district: Maluso sits in Basilan's 3rd District, together with Tabuan-Lasa, Lantawan, Hadji Muhtamad and Sumisip.",
+    "A resident of the Special Geographic Area finds their municipality in the Lone District, which covers all eight SGA municipalities as one constituency.",
+    "A candidate planning a campaign in Cotabato City needs the barangay lists — the act divides the city into two districts barangay by barangay."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Title: the “Bangsamoro Parliamentary Districts Act of 2024”.",
+  "Section 2 — Policy: the Bangsamoro Parliament shall ensure the equitable representation of the inhabitants of the BARMM in the apportionment of parliamentary districts.",
+  "Section 3 — Criteria: parliamentary districts are apportioned among the provinces, cities, municipalities and other geographical areas of the BARMM based on population and geographical area. Each district shall comprise, as far as practicable, contiguous, compact and adjacent territory, and shall have a population of at least 100,000.",
+  "Section 4 — Creates 32 single-member parliamentary districts for the election of district representatives, against a stated total BARMM population of 4,944,800: Basilan 3 districts (426,207); Lanao del Sur 8 (1,195,518); Maguindanao del Norte 4 (618,421); Maguindanao del Sur 4 (723,758); Sulu 7 (1,000,108); Tawi-Tawi 3 (440,276); the City of Cotabato 2 (325,079), enumerated barangay by barangay; and the Special Geographic Areas 1 Lone District (215,433) covering Kadayangan, Kapalawan, Ligawasan, Malidegao, Nabalawag, Old Kaabakan, Pahamuddin and Tugunan. Each district is listed with its component municipalities or barangays and their populations.",
+  "Section 7 — Takes effect 15 days after completion of publication in the Bangsamoro Gazette or a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Every voter in the BARMM",
+   "Residents of the Special Geographic Area, who gain a dedicated seat"
+  ],
+  "impact_tags": [
+   "elections",
+   "governance_civil_service",
+   "local_government"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": null,
+  "figures_note": "Population figures are quoted from Section 4: a regional total of 4,944,800 across 32 districts, with a stated minimum of 100,000 per district."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2024-02-28"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/04/BAA-58.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [
+   "BAA 77",
+   "BAA 86"
+  ],
+  "repeals": null,
+  "origin_bill": "Bill 267",
+  "related_note": "The first parliamentary district map. It was followed by BAA 77, reconstituting the parliamentary districts, and BAA 86, providing for their apportionment — both of which should be read for the current map. The Special Geographic Area municipalities it lists were created by BAA 41–47."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": null,
+  "irr_status": "None required by the act.",
+  "note": "Read from the enacted text as signed. This map has been overtaken by BAA 77 and BAA 86; anyone relying on district boundaries should read those acts. The Lone District list includes a municipality, Ligawasan, for which this registry has not identified a separate creating act among BAA 41–47."
+ },
+ "citizen_questions": [
+  {
+   "q": "How many districts are there?",
+   "a": "Thirty-two single-member parliamentary districts, each electing one representative — though the map was later reconstituted by BAA 77 and re-apportioned by BAA 86."
+  },
+  {
+   "q": "How were they drawn?",
+   "a": "On population and geographical area, with each district comprising as far as practicable contiguous, compact and adjacent territory and a population of at least 100,000."
+  },
+  {
+   "q": "Which province has the most?",
+   "a": "Lanao del Sur, with 8 districts on a population of 1,195,518. Sulu has 7, Basilan and Tawi-Tawi 3 each, both Maguindanao provinces 4 each, Cotabato City 2, and the Special Geographic Area 1."
+  },
+  {
+   "q": "Does the Special Geographic Area get a seat?",
+   "a": "Yes — a single Lone District covering all eight of its municipalities, with a population of 215,433."
+  },
+  {
+   "q": "Is this still the map?",
+   "a": "Not entirely. BAA 77 reconstituted the parliamentary districts in 2025 and BAA 86 provided for their apportionment in 2026. Read those for the current position."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 58",
+  "line2": "Bangsamoro Parliamentary Districts Act of 2024",
+  "badges": [
+   "IN FORCE",
+   "Elections",
+   "2024"
+  ],
+  "what_this_does": "Draws the region's first electoral map — 32 single-member parliamentary districts.",
+  "who_it_affects": "Every voter in the BARMM · candidates · municipalities"
+ },
+ "views": {
+  "simple": "Creates 32 single-member parliamentary districts across the BARMM's provinces, Cotabato City and the Special Geographic Area, drawn on population and geography with a minimum of 100,000 people per district.",
+  "official": "AN ACT PROVIDING FOR THE CREATION OF PARLIAMENTARY DISTRICTS IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 58, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references and population figures are quoted from that document. Verify against the official copy before citing."
+ }
 }

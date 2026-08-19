@@ -1,166 +1,226 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 60,
-    "short_title": "Declares the Burial Sites of Sheikh Salamat Hashim",
-    "official_title": "AN ACT DECLARING THE BURIAL SITES OF SHEIKH SALAMAT HASHIM AND ALIM ABDUL AZIZ MIMBANTAS AS 'HASHIM AND MIMBANTAS MEMORIAL SITE'",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2024-07-23",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Declares the Burial Sites of Sheikh Salamat Hashim and Alim Abdul Aziz Mimbantas as 'HASHIM and Mimbantas Memorial SITE'.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Declares the Burial Sites of Sheikh Salamat Hashim and Alim Abdul Aziz Mimbantas as 'HASHIM and Mimbantas Memorial SITE'.",
-    "who_will_be_affected": [
-      "Employees & students",
-      "Communities"
-    ],
-    "when_will_it_take_effect": "Ratified 2024-07-23; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "An identity law: it defines an official symbol or observance of the Bangsamoro (flag, emblem, hymn, seal, calendar, holidays, or memorials). It doesn't hand out benefits, but it shapes the public face of the region you live in - what flies over government buildings, what days are non-working, how the Bangsamoro story is told.",
-      "in_practice": [
-        "Government offices, schools, and LGUs must use/observe it",
-        "Holiday-related acts affect work and class suspensions region-wide",
-        "Memorial acts create public sites and commemorations"
-      ],
-      "for_specific_groups": {
-        "Employees & students": "Regional holidays and observances flow from these laws",
-        "Communities": "Shared symbols of the autonomy won through the peace process"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Identity, recognition, and (for holiday laws) actual days off.",
-        "direct_benefits": [
-          {
-            "benefit": "Official identity: the symbols/observances of your autonomous region",
-            "who_gets_it": "All residents",
-            "how_to_access": "Public display and observance"
-          }
-        ],
-        "indirect_benefits": [
-          "Cultural pride and the normalization of Bangsamoro identity in public life"
-        ],
-        "limitations": [
-          "Symbolic laws confer no monetary claims"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 60,
+  "short_title": "Hashim and Mimbantas Memorial Site",
+  "official_title": "AN ACT TO DECLARE THE BURIAL SITE OF THE LATE SHEIKH SALAMAT HASHIM, MORO ISLAMIC LIBERATION FRONT FOUNDING CHAIRPERSON, AND THE LATE ALIM ABDUL AZIZ MIMBANTAS, MORO ISLAMIC LIBERATION FRONT VICE CHAIRPERSON AND VICE CHAIRPERSON FOR MILITARY AFFAIRS, AS “HASHIM AND MIMBANTAS MEMORIAL SITE,” TO PROVIDE FOR THE PRESERVATION OF THE SAME, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2024-07-23",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session (begun 15 September 2022)",
+  "date_passed": "2024-07-23",
+  "date_passed_hijri": "Muharram 17, 1446",
+  "date_approved_by_chief_minister": "2024-08-20",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Muslim communities",
-      "Religious institutions"
-    ],
-    "impact_tags": [
-      "islamic_culture_heritage",
-      "symbols_identity"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2024-07-23"
-    }
+  "effectivity": "15 days after publication in the Official Gazette or a newspaper of general circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Declares the burial site of MILF founding chairperson Sheikh Salamat Hashim and vice chairperson Alim Abdul Aziz Mimbantas, in Camp Bushra Somiorang in Butig, Lanao del Sur, a Bangsamoro Memorial Site — protected, preserved, and funded with ₱5 million to start.",
+  "why_was_it_proposed": "To preserve the burial place of two founding figures of the movement that negotiated the region into existence, and to bring it into the region's recognised heritage and tourism sites.",
+  "what_will_change": "At least 1,000 square metres is declared a memorial site. A management board — chaired by the cultural heritage commission and including a representative of each family — supervises its reconstruction, preservation and management, and issues its own rules.",
+  "who_will_be_affected": [
+   "Residents of Butig, Lanao del Sur, where the site is located",
+   "Visitors and pilgrims to the memorial",
+   "The families of the two men, who each hold a seat on the management board",
+   "Taxpayers, through the ₱5 million initial appropriation"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Office of the Chief Minister",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2024-07-23 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Office of the Chief Minister (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 60",
-    "line2": "Declares the Burial Sites of Sheikh Salamat Hashim",
-    "badges": [
-      "ENACTED",
-      "Symbols Identity",
-      "2024"
+  "when_will_it_take_effect": "In force since 2024 — 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. The burial site of Sheikh Salamat Hashim and Alim Abdul Aziz Mimbantas in Butig, Lanao del Sur is a protected Bangsamoro Memorial Site, with ₱5 million to begin preserving it.",
+   "in_practice": [
+    "At least 1,000 square metres in Camp Bushra Somiorang, Butig, Lanao del Sur",
+    "The exact site is determined by the management board",
+    "The site is preserved and, where necessary, reconstructed as far as possible in its original form",
+    "It becomes part of the tourism and heritage sites recognised by the relevant agencies",
+    "₱5,000,000 initial appropriation, with continuing funds through the annual budgets of the ministries concerned"
+   ],
+   "for_specific_groups": {
+    "The two families": "Section 5(f) gives a representative of each family a seat on the management board — the families sit alongside the ministries deciding how the site is run.",
+    "Residents of Butig": "The memorial sits in your municipality and becomes a recognised heritage and tourism site.",
+    "Visitors": "The site is to be preserved and promoted as part of the region's heritage network."
+   },
+   "where_this_applies": "Camp Bushra Somiorang, Municipality of Butig, Lanao del Sur.",
+   "when_you_will_feel_it": "In force since 2024.",
+   "what_you_can_do": [
+    "Ask the Bangsamoro Commission for the Preservation of Cultural Heritage, which chairs the board, about the site's rules and status"
+   ],
+   "watch_out_for": [
+    "The exact boundaries are not fixed by the act — 1,000 square metres is a floor, and the precise site is left to the board.",
+    "No deadline is set for the board's formation, its rules, or any reconstruction work.",
+    "₱5 million is an initial amount only; continuing funds depend on each ministry's annual budget."
+   ],
+   "key_terms_explained": {
+    "Bangsamoro Memorial Site": "A status created by this act, bringing the place under a management board and into the recognised heritage and tourism network.",
+    "Camp Bushra Somiorang": "The location in Butig, Lanao del Sur where the two men are buried.",
+    "Darul-Ifta'": "The region's body of Islamic jurisprudence, seated on the management board.",
+    "Alim": "A scholar of Islamic learning — part of Alim Abdul Aziz Mimbantas's title."
+   },
+   "status_note": "Passed Muharram 17, 1446 / 23 July 2024, approved by the Chief Minister on 20 August 2024.",
+   "benefits": {
+    "headline": "Legal protection and ₱5 million for the burial site of two founders of the Bangsamoro movement.",
+    "direct_benefits": [
+     {
+      "benefit": "Declared status as a Bangsamoro Memorial Site",
+      "who_gets_it": "The site itself, and those who visit it",
+      "how_to_access": "Automatic on effectivity"
+     },
+     {
+      "benefit": "₱5,000,000 initial appropriation for preservation",
+      "who_gets_it": "The memorial site",
+      "how_to_access": "Through the ministries concerned"
+     },
+     {
+      "benefit": "A seat on the management board for each family",
+      "who_gets_it": "The families of Sheikh Salamat Hashim and Alim Abdul Aziz Mimbantas",
+      "how_to_access": "Section 5(f)"
+     }
     ],
-    "what_this_does": "Declares the Burial Sites of Sheikh Salamat Hashim and Alim Abdul Aziz Mimbantas as 'HASHIM and Mimbantas Memorial SITE'.",
-    "who_it_affects": "Muslim communities · Religious institutions",
-    "effective": "2024-07-23"
-  },
-  "views": {
-    "simple": "Declares the Burial Sites of Sheikh Salamat Hashim and Alim Abdul Aziz Mimbantas as 'HASHIM and Mimbantas Memorial SITE'.",
-    "official": "AN ACT DECLARING THE BURIAL SITES OF SHEIKH SALAMAT HASHIM AND ALIM ABDUL AZIZ MIMBANTAS AS 'HASHIM AND MIMBANTAS MEMORIAL SITE'"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Inclusion in the region's recognised tourism and heritage sites",
+     "A standing body to govern preservation rather than ad hoc care"
+    ],
+    "limitations": [
+     "Exact boundaries left to the board.",
+     "No timetable for reconstruction or for the board's rules.",
+     "Continuing funding depends on annual ministry budgets."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences — it does not legislate on desecration, trespass or damage to the site."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment.",
+    "note": "Rules issued by the management board may govern conduct at the site; the act itself attaches no sanction."
+   },
+   "where_to_complain": {
+    "first_stop": "Hashim and Mimbantas Memorial Site Management Board",
+    "oversight": "Bangsamoro Commission for the Preservation of Cultural Heritage, which chairs the board",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A visitor travelling to Butig finds a site with a legal status, a management board and a preservation mandate rather than an unmarked grave.",
+    "A family member of one of the two men sits on the board deciding how the site is reconstructed and managed."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Declares the burial site of Sheikh Salamat Hashim and Alim Abdul Aziz Mimbantas in Camp Bushra Somiorang, Municipality of Butig, Lanao del Sur a Bangsamoro Memorial Site, to be known as the “Hashim and Mimbantas Memorial Site”.",
+  "Section 2 — The declared area shall be at least 1,000 square metres, with the exact site determined by the management board.",
+  "Section 3 — The site shall be preserved and, whenever necessary, reconstructed as much as possible in its original form, and shall form part of the tourism and heritage sites recognised by the relevant agencies.",
+  "Section 4 — Creates the Hashim and Mimbantas Memorial Site Management Board, which exercises supervision and control over the reconstruction, preservation and management of the site and issues rules and regulations to effectuate the act.",
+  "Section 5 — The Board comprises the Bangsamoro Commission for the Preservation of Cultural Heritage as Chair; the Ministry of Basic, Higher, and Technical Education; the Ministry of Public Works; the Ministry of Trade, Investments and Tourism; the Bangsamoro Darul-Ifta'; and a representative of each family as members.",
+  "Section 6 — Necessary funds are to be included in the annual appropriations of the Bangsamoro ministries, offices and agencies concerned. An initial ₱5,000,000 is appropriated for the purpose.",
+  "Section 9 — Takes effect 15 days after publication in the Official Gazette or a newspaper of general circulation in the BARMM."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of Butig, Lanao del Sur",
+   "Visitors and pilgrims",
+   "The families of the two men"
+  ],
+  "impact_tags": [
+   "culture_heritage",
+   "peace_security_justice",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱5,000,000 initial, with continuing funds through the annual appropriations of the ministries concerned",
+  "figures_note": "Quoted from Sections 2 and 6: at least 1,000 square metres, ₱5,000,000 initial appropriation."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2024-07-23"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/09/BAA-60.pdf",
+  "irr": "Rules and regulations to be issued by the Memorial Site Management Board under Section 4. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill 36",
+  "related_note": "Sits alongside BAA 61, which establishes a Bangsamoro memorial marker and eco-park at Camp Abubakar in Barira, Maguindanao — both memorialising sites of the movement's history."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱5,000,000 initial",
+  "irr_status": "Section 4 empowers the Management Board to issue rules and regulations; no deadline is set.",
+  "note": "Read from the enacted text as signed. Whether the board has been constituted and the exact site determined is not recorded here."
+ },
+ "citizen_questions": [
+  {
+   "q": "Where is the memorial site?",
+   "a": "Camp Bushra Somiorang in the Municipality of Butig, Lanao del Sur — the burial place of Sheikh Salamat Hashim and Alim Abdul Aziz Mimbantas."
+  },
+  {
+   "q": "How big is it?",
+   "a": "At least 1,000 square metres. The exact site is determined by the management board, not fixed in the act."
+  },
+  {
+   "q": "Who decides how it is run?",
+   "a": "A management board chaired by the Bangsamoro Commission for the Preservation of Cultural Heritage, with the education, public works and tourism ministries, the Darul-Ifta', and a representative of each of the two families."
+  },
+  {
+   "q": "How much money is there?",
+   "a": "₱5 million initially, with continuing funds carried in the annual appropriations of the ministries concerned."
+  },
+  {
+   "q": "Is it protected from damage?",
+   "a": "The act declares and funds preservation but creates no offence for desecration or damage. The management board may issue rules governing the site."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 60",
+  "line2": "Hashim and Mimbantas Memorial Site",
+  "badges": [
+   "IN FORCE",
+   "Culture & Heritage",
+   "2024"
+  ],
+  "what_this_does": "Declares and funds the burial site of two MILF founding leaders as a protected Bangsamoro Memorial Site.",
+  "who_it_affects": "Residents of Butig · visitors · the two families"
+ },
+ "views": {
+  "simple": "Declares the burial site of MILF founding chairperson Sheikh Salamat Hashim and vice chairperson Alim Abdul Aziz Mimbantas in Butig, Lanao del Sur a protected Bangsamoro Memorial Site, governed by a management board including their families and funded with ₱5 million to start.",
+  "official": "AN ACT TO DECLARE THE BURIAL SITE OF THE LATE SHEIKH SALAMAT HASHIM, MORO ISLAMIC LIBERATION FRONT FOUNDING CHAIRPERSON, AND THE LATE ALIM ABDUL AZIZ MIMBANTAS, MORO ISLAMIC LIBERATION FRONT VICE CHAIRPERSON AND VICE CHAIRPERSON FOR MILITARY AFFAIRS, AS “HASHIM AND MIMBANTAS MEMORIAL SITE,” TO PROVIDE FOR THE PRESERVATION OF THE SAME, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 60, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

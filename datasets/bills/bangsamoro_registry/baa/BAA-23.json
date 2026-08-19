@@ -1,189 +1,243 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 23,
-    "short_title": "Appropriates Funds for the Operation of the Bangsamoro",
-    "official_title": "AN ACT APPROPRIATING FUNDS FOR THE OPERATION OF THE BANGSAMORO GOVERNMENT FOR FY 2022 (GAA)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2021-12-28",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Appropriates Funds for the Operation of the Bangsamoro Government for FY 2022 (GAA).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Appropriates Funds for the Operation of the Bangsamoro Government for FY 2022 (GAA).",
-    "who_will_be_affected": [
-      "Parents & students",
-      "Patients",
-      "Workers & suppliers",
-      "Taxpayers"
-    ],
-    "when_will_it_take_effect": "Ratified 2021-12-28; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "This is a money law: it decides how much funding BARMM ministries and programs get - the schools, hospitals, roads, scholarships, and social services you use are all paid from it. No single citizen 'applies' for it, but nearly every public service you touch depends on it.",
-      "in_practice": [
-        "Sets each ministry's budget ceiling for the year (or adds/extends funds mid-year for supplementals and extensions)",
-        "Slow disbursement is the recurring issue - several BAAs exist purely to extend the validity of unspent funds",
-        "Big-ticket items to watch: education (MBHTE), health (MOH), public works (MPW), and the Special Development Fund for conflict-affected communities"
-      ],
-      "for_specific_groups": {
-        "Parents & students": "Classroom construction, teacher hiring, and scholarship slots are set here",
-        "Patients": "Hospital operating budgets, medicines, and health worker salaries flow from this law",
-        "Workers & suppliers": "Government projects and procurement opportunities follow the appropriations",
-        "Taxpayers": "This is the accountability document - compare what was appropriated with what was actually delivered"
-      },
-      "where_this_applies": "All of BARMM",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Follow-up reports: the Parliament itself has passed resolutions demanding ministries account for these funds",
-        "Already amended by BAA 24, 33 - read the consolidated text"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Funds every public service you use - the enabler of all other benefits.",
-        "direct_benefits": [
-          {
-            "benefit": "Operating budgets for schools, hospitals, roads, scholarships, social programs",
-            "who_gets_it": "Everyone using public services",
-            "how_to_access": "Automatic through the funded agencies"
-          },
-          {
-            "benefit": "Salaries of teachers, health workers, and government personnel",
-            "who_gets_it": "Public employees",
-            "how_to_access": "Through payroll of funded agencies"
-          },
-          {
-            "benefit": "Special Development Fund projects in conflict-affected communities",
-            "who_gets_it": "Camp and conflict-affected barangays",
-            "how_to_access": "Through LGU/OCM project identification"
-          }
-        ],
-        "indirect_benefits": [
-          "Procurement and job opportunities from funded projects",
-          "Predictability: agencies can plan the year"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Compare appropriations vs. actual delivery - Parliament's own resolutions demand these reports; you can too"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 23,
+  "short_title": "General Appropriations Act of the Bangsamoro, FY 2022",
+  "official_title": "AN ACT APPROPRIATING FUNDS FOR THE OPERATION OF THE BANGSAMORO GOVERNMENT FROM JANUARY ONE TO DECEMBER THIRTY-ONE, TWO THOUSAND AND TWENTY-TWO AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2021-12-28",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session, begun 29 March 2019",
+  "date_passed": "2021-12-28",
+  "date_approved_by_chief_minister": "2021-12-28",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Ali Pangalian M. Balindong, Speaker",
+   "Raby B. Angkal, Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "All BARMM ministries",
-      "Public programs"
-    ],
-    "impact_tags": [
-      "budget_appropriations",
-      "budget_finance"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2021-12-28"
-    }
+  "origin_bills": "Bill No. 155",
+  "effectivity": "1 January 2022, unless otherwise provided"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "The region's ₱79.86 billion budget for 2022 — the first one that funds a Special Development Fund and a Local Government Support Fund as line items, and the first to draw openly on money earlier budgets failed to spend.",
+  "why_was_it_proposed": "The Bangsamoro Government requires an annual appropriations act to operate. This one covers 1 January to 31 December 2022, the last budget of the first Bangsamoro Transition Authority.",
+  "what_will_change": "₱79,862,015,000.00 is appropriated from the annual block grant and other subsidies from the National Government, the region's share of national taxes, fees and charges collected in its territory, unused or unutilized appropriations from the Bangsamoro Treasury, and projected collections on regional taxes, fees and charges. The act funds 17 ministries, 11 other executive offices and 5 special purpose funds, and carries 71 sections of general provisions.",
+  "who_will_be_affected": [
+   "Everyone in the region, through the ministries and services this funds",
+   "Constituent local government units, through a ₱1.39 billion support fund and their share of income taxes",
+   "All Bangsamoro Government personnel, whose allowances and bonuses it sets",
+   "Contractors and suppliers, through procurement and disclosure rules",
+   "Institutions moving to Islamic or Shari'ah-compliant finance"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [
-      "BAA 24",
-      "BAA 33"
+  "when_will_it_take_effect": "1 January 2022 (Section 72). Passed and signed 28 December 2021.",
+  "what_this_means_for_you": {
+   "in_short": "This is a money law: it decides how much funding BARMM ministries and programs get - the schools, hospitals, roads, scholarships, and social services you use are all paid from it. No single citizen 'applies' for it, but nearly every public service you touch depends on it.",
+   "in_practice": [
+    "Sets each ministry's budget ceiling for the year (or adds/extends funds mid-year for supplementals and extensions)",
+    "Slow disbursement is the recurring issue - several BAAs exist purely to extend the validity of unspent funds",
+    "Big-ticket items to watch: education (MBHTE), health (MOH), public works (MPW), and the Special Development Fund for conflict-affected communities"
+   ],
+   "for_specific_groups": {
+    "Parents & students": "Classroom construction, teacher hiring, and scholarship slots are set here",
+    "Patients": "Hospital operating budgets, medicines, and health worker salaries flow from this law",
+    "Workers & suppliers": "Government projects and procurement opportunities follow the appropriations",
+    "Taxpayers": "This is the accountability document - compare what was appropriated with what was actually delivered"
+   },
+   "where_this_applies": "All of BARMM",
+   "watch_out_for": [
+    "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
+    "Follow-up reports: the Parliament itself has passed resolutions demanding ministries account for these funds",
+    "Already amended by BAA 24, 33 - read the consolidated text"
+   ],
+   "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
+   "what_you_can_do": [
+    "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
+    "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
+    "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
+   ],
+   "key_terms_explained": {
+    "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
+    "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
+    "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
+   },
+   "benefits": {
+    "headline": "Funds every public service you use - the enabler of all other benefits.",
+    "direct_benefits": [
+     {
+      "benefit": "Operating budgets for schools, hospitals, roads, scholarships, social programs",
+      "who_gets_it": "Everyone using public services",
+      "how_to_access": "Automatic through the funded agencies"
+     },
+     {
+      "benefit": "Salaries of teachers, health workers, and government personnel",
+      "who_gets_it": "Public employees",
+      "how_to_access": "Through payroll of funded agencies"
+     },
+     {
+      "benefit": "Special Development Fund projects in conflict-affected communities",
+      "who_gets_it": "Camp and conflict-affected barangays",
+      "how_to_access": "Through LGU/OCM project identification"
+     }
     ],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Finance, and Budget and Management (MFBM)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2021-12-28 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Finance, and Budget and Management (MFBM) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 23",
-    "line2": "Appropriates Funds for the Operation of the Bangsamoro",
-    "badges": [
-      "ENACTED",
-      "Budget Finance",
-      "2021"
+    "indirect_benefits": [
+     "Procurement and job opportunities from funded projects",
+     "Predictability: agencies can plan the year"
     ],
-    "what_this_does": "Appropriates Funds for the Operation of the Bangsamoro Government for FY 2022 (GAA).",
-    "who_it_affects": "All BARMM ministries · Public programs",
-    "effective": "2021-12-28"
-  },
-  "views": {
-    "simple": "Appropriates Funds for the Operation of the Bangsamoro Government for FY 2022 (GAA).",
-    "official": "AN ACT APPROPRIATING FUNDS FOR THE OPERATION OF THE BANGSAMORO GOVERNMENT FOR FY 2022 (GAA)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "limitations": [
+     "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
+     "Compare appropriations vs. actual delivery - Parliament's own resolutions demand these reports; you can too"
+    ]
+   }
   }
+ },
+ "key_provisions": [
+  "Section 1 — Appropriation of Funds. ₱79,862,015,000.00 is appropriated “out of the annual block grant and other subsidies from the National Government, share in the National Government taxes, fees and charges collected in the Bangsamoro territorial jurisdiction, unused/unutilized appropriations from the Bangsamoro Treasury and projected collections on regional taxes, fees and charges” for the operation of the Bangsamoro Government from 1 January to 31 December 2022. Two of those sources are new: “other subsidies” and, more consequentially, “unused/unutilized appropriations from the Bangsamoro Treasury”.",
+  "Bangsamoro Government Budget — The act funds 17 ministries and 11 other executive offices: the Office of the Wali, the Bangsamoro Planning and Development Authority, the Attorney-General's Office, the Human Rights Commission, the Women Commission, the Youth Commission, the Sports Commission, the Pilgrimage Authority, the Commission for the Preservation of Cultural Heritage, the Cooperatives and Social Enterprise Authority and the Development Academy of the Bangsamoro — up from 6 the previous year. The Bangsamoro Transition Authority receives ₱3,558,163,162.00, or 4.5% of the total: General Administration and Support ₱409,883,926, Support to Operations ₱360,984,732 and Operations ₱2,787,294,504, the last comprising a Legislation line of ₱314,640,000, Representations/Constituency Building ₱1,026,816,000, Oversight ₱104,544,000, a Bangsamoro Parliament Program for Community and Cultural Acceleration ₱387,840,000, a Parliamentary Learning Program ₱20,000,000 and a Philippine Congress–Bangsamoro Parliament Forum ₱5,445,148. Personnel Services of ₱928,009,356 sits in the Operations total without being distributed across those sub-programmes.",
+  "Special purpose funds — 5 funds, up from 3. The Pension and Gratuity Fund is ₱319,405,191.02 and the Miscellaneous Personnel Benefit Fund ₱663,300,922.35, the latter covering positions for the Bangsamoro Information Communications Technology Office, the Office for Settlers Communities and other offices created by BAA 13, and the benefits of employees transferred from the schools division of Cotabato City and 63 barangays of North Cotabato. The Contingent Fund is ₱5,465,688,924.88, earmarking ₱2,400,000,000 for a Transitional Development Impact Fund and allowing use for the “cost of acquisition of Al-Amanah Islamic Bank and other related costs”, customs duties and tax expenditures on foreign assistance, and “supplies and materials in response to the effect of the COVID19 pandemic including vaccines, health protective gears”. Two funds appear as budget lines for the first time: the Special Development Fund at ₱5,000,000,000.00 and the Local Government Support Fund at ₱1,394,016,000.00.",
+  "Sections 2–14 (Receipts and Income) — The act itself serves as the allotment order except for appropriations with pre-release conditions, lump sums without release details, and items requiring a Special Budget. Fees, charges and revenues are remitted to the Bangsamoro Treasury under Section 3, Chapter I, Book VII of BAA 13, the Bangsamoro Administrative Code, and form part of the general fund; the schedule of fees must be posted on ministry websites and displayed in big bold characters in a conspicuous place in every provincial, municipal and field office. Foreign grants require prior clearance from the President. Trust receipts, performance bonds, public-private partnership receipts and revolving funds are separately regulated, with revolving funds barred from paying discretionary and representation expenses. Section 10 requires the Treasury to publish information on all Special Accounts and Funds. National internal revenue taxes and import duties on foreign donations, grants and loans are deemed automatically appropriated.",
+  "Sections 15–23 (Expenditure) — Procurement follows existing government procurement law, with early procurement activities authorised. Amounts for information and communications technology equipment must be used to provide officials and employees with personal computers, operating systems, basic software and other essential electronic devices. Supply inventories are capped at a 3-month requirement. Infrastructure projects may not be sited in critical geohazard areas or no-build zones, must meet the structural strength and climate resilience standards set by the Ministry of Public Works, and must minimise biodiversity loss within the National Integrated Protected Area System. Rainwater collection systems are required in public markets, school sites and government buildings, and may never be built on private lots or privately owned market places. A Certification of Availability of Funds is required before any obligation, and a Multi-Year Contractual Authority before any multi-year contract.",
+  "Sections 24–32 (Cross-cutting programmes) — Every ministry and office must formulate a Gender and Development Plan integrated into its regular activities amounting to at least 5% of its budget, following RA 9710, the Magna Carta of Women. Ministries must address senior citizens and persons with disability, and all government infrastructure must include accessibility features. Section 27, appearing for the first time in a Bangsamoro budget, encourages all ministries and offices “to formulate plans, programs, and projects intended to support the full integration and mainstreaming of Islamic or Shari'ah compliant finance within their services and activities”, with the Chief Minister to promulgate guidelines on the recommendation of the Technical Working Group on Islamic Finance and to create a body to review compliance with Islamic finance principles and standards. Built heritage and cultural landscapes may be altered only with the Chief Minister's prior approval. Disaster risk reduction and climate change adaptation must be built into projects, energy efficiency measures adopted, biodiversity protected, and structures in seismically vulnerable areas repaired and retrofitted.",
+  "Sections 33–47 (Personnel benefits) — Section 33 caps Personnel Services for one fiscal year at 45% of the Bangsamoro Government's total revenue sources, under Section 6, Article XII of RA 11054. Section 35 sets annual extraordinary expenses at ₱264,000 for the Chief Minister, ₱108,000 for each Deputy Chief Minister, the Speaker and each Member of the Parliament, ₱45,600 for each Minister, ₱26,400 for each Deputy Minister or Bangsamoro Director-General and ₱19,200 for each Director II or Director III, with miscellaneous expenses of up to ₱90,000 for each of their offices — up from ₱72,000 in FY 2020. Section 39 provides that deductions may never reduce an employee's monthly net take-home pay below ₱5,000. Section 40 grants PERA of ₱2,000 a month; Section 41 a uniform or clothing allowance of up to ₱6,000 a year. Section 43 grants hazard duty pay only to personnel assigned to “strife-torn or embattled areas as may be determined and certified by the Secretary of National Defense”. Section 44 sets monthly representation and transportation allowances at ₱14,000 for the Chief Minister, ₱11,000 for Deputy Chief Ministers, the Speaker and Members of the Parliament, ₱9,000 for Ministers, ₱8,500 for Deputy Ministers, ₱7,500 for Director II and Director III and ₱5,000 for Chiefs of Division and Director I. Sections 45 and 46 grant a mid-year bonus of 1 month's basic salary and a year-end bonus of 1 month plus a ₱5,000 cash gift.",
+  "Sections 48–61 (Release and use of funds) — Section 48 makes appropriations available for release and disbursement until 31 December 2022, while “the amount appropriated herein, as share of the constituent LGUs on the income taxes collected within the BARMM shall be available for disbursement… until December 31, 2023” — the first time a class of appropriation is given a longer life than the rest. Infrastructure capital outlays must be completed, inspected and paid by 30 June 2023, and MOOE and other capital outlays delivered, inspected and paid by 31 March 2023. Unreleased appropriations lapse; unexpended or undisbursed funds revert to the Bangsamoro Treasury under a Special Fund for reappropriation under Section 19, Article XII of RA 11054. Only the Chief Minister and the Speaker may declare and use savings, and only to augment actual deficiencies in existing items of their own appropriations; allotments not obligated through the ministry's own fault are not savings. Cash advances may not be granted until earlier ones are liquidated, and an Annual Report on Cash Advances naming the recipients must go to the Committee on Finance, and Budget and Management.",
+  "Sections 62–72 (Administrative procedures and final provisions) — Foreign travel of Ministers, Heads of Offices and officials at salary grade 25 and above requires clearance from the Office of the Chief Minister. Section 65 requires a status report to the Commission on Audit within 60 days of receiving its Annual Audit Report, published on the ministry's website. Section 67 requires quarterly financial and physical reports, with failure resulting in “the automatic suspension of the salaries of the responsible official or employee until they have complied”. Section 68 requires publication of each infrastructure project's title, location, description, estimates, winning contractor and bid within 30 calendar days of contract, and of its detailed actual cost and any variation orders within 30 calendar days of the certificate of completion. Section 69 cautions any court, ministry or office against garnishing or subjecting public funds to levy and execution. Section 70 makes payment for the Personnel Services of employees absorbed under Section 10, Article XVI of RA 11054 without prejudice to a funding request to the National Government. Section 72 sets effectivity at 1 January 2022."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Everyone in the region served by Bangsamoro Government programmes",
+   "Constituent local government units, through the new ₱1.39 billion support fund",
+   "Conflict-affected communities, through the ₱5 billion Special Development Fund",
+   "Bangsamoro Government personnel, through allowances and bonuses",
+   "Women, through the 5% gender and development floor",
+   "Communities awaiting infrastructure, with published contracts and costs"
+  ],
+  "impact_tags": [
+   "budget_appropriations",
+   "budget_finance",
+   "governance_civil_service",
+   "local_government",
+   "infrastructure"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱79,862,015,000.00 for fiscal year 2022",
+  "figures_note": "Grand total quoted from Section 1. The Bangsamoro Transition Authority's ₱3,558,163,162 is 4.5% of that total, down from 4.9% the year before. The Contingent Fund is ₱5,465,688,924.88 (6.8% of the budget), the Special Development Fund ₱5,000,000,000.00, the Local Government Support Fund ₱1,394,016,000.00, the Miscellaneous Personnel Benefit Fund ₱663,300,922.35 and the Pension and Gratuity Fund ₱319,405,191.02. Personnel Services across government are capped at 45% of total revenue sources, and at least 5% of every ministry and office budget must go to gender-responsive programmes."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2021-12-28"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "Published by the Ministry of Finance, and Budget and Management as the FY 2022 General Appropriations Act of the Bangsamoro; linked from the Parliament's measure page for BAA 23",
+  "irr": "None required. The Ministry of Finance, and Budget and Management issues guidelines on the cash budgeting system, releases and personnel benefits."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [
+   "BAA 33 (2022) — extending the availability of the FY 2022 appropriations to 31 December 2023 except Personnel Services and General Administration and Support MOOE, amending Sections 48 and 67",
+   "BAA 38 (2023) — authorising the continued use of funds for the release and disbursement of unpaid obligations of the FY 2020, 2021 and 2022 appropriations"
+  ],
+  "repeals": null,
+  "origin_bill": "Bill No. 155",
+  "related_note": "Funding sources and the 45% Personnel Services ceiling derive from Sections 6 and 19 of Article XII of RA 11054, the Organic Law; the Special Development Fund of ₱5 billion a year comes from Article XIV of the same law. Remittance of agency income follows Section 3, Chapter I, Book VII of BAA 13, the Bangsamoro Administrative Code, which also created the Bangsamoro Information Communications Technology Office and the Office for Settlers Communities funded here through the Miscellaneous Personnel Benefit Fund. Section 70 gives effect to Section 10, Article XVI of RA 11054 on absorbed employees. Gender and development follows RA 9710 and reports flow to the Bangsamoro Women Commission created by BAA 8. The Sports Commission funded here was created by BAA 12 and the Youth Commission by BAA 10. BAA 34 separately extended the 2020 and 2021 Special Development Fund. BAA 84, the Bangsamoro Budget System Act of 2025, later codified as permanent law many of the rules this act carried annually."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "₱79,862,015,000.00",
+  "irr_status": "None required. The finance ministry issues implementing guidelines on cash budgeting, releases, allotment modification and personnel benefits.",
+  "implementing_agency": {
+   "agency": "All Bangsamoro ministries and offices, with the Ministry of Finance, and Budget and Management administering releases",
+   "inferred": false
+  },
+  "reading_scope": "PARTIAL READ. This record was written from the table of contents, Section 1, the Bangsamoro Transition Authority's appropriation, the 5 special purpose funds with their special provisions, and the whole of the General Provisions (Sections 2 to 72) with the signature page — pages 1 to 5, 208 to 214 and 245 to 263 of the 263-page enacted text. The remaining ministry-by-ministry and programme-by-programme line items on pages 6 to 207, their special provisions, and the Staffing Summary were not read. Agency totals other than the Bangsamoro Transition Authority's and the special purpose funds' are therefore not recorded here and should be taken from the official text.",
+  "note": "Read from the enacted text as published by the Ministry of Finance, and Budget and Management. The one-year validity in Section 48 was extended by BAA 33 to 31 December 2023, and unpaid obligations were carried further by BAA 38 in June 2023.",
+  "full_text_note": "Pages 1, 4 and 244 of the PDF (covers and dividers) carry no text layer; page 262, the signature page, was read as a page image."
+ },
+ "citizen_questions": [
+  {
+   "q": "How big was the 2022 regional budget?",
+   "a": "₱79,862,015,000.00, covering 1 January to 31 December 2022 — 5.6% more than the year before."
+  },
+  {
+   "q": "Where did the money come from?",
+   "a": "The annual block grant and other subsidies from the National Government, the region's share of national taxes, fees and charges collected in its territory, unused or unutilized appropriations from the Bangsamoro Treasury, and projected collections on regional taxes, fees and charges. The third of those is new: this is the first budget to fund itself partly from money earlier budgets did not spend."
+  },
+  {
+   "q": "How much did Parliament get?",
+   "a": "₱3,558,163,162 through the Bangsamoro Transition Authority — 4.5% of the whole budget. Within that sit Representations/Constituency Building at ₱1,026,816,000, a Bangsamoro Parliament Program for Community and Cultural Acceleration at ₱387,840,000, a Legislation line of ₱314,640,000, Oversight at ₱104,544,000 and a Parliamentary Learning Program at ₱20,000,000."
+  },
+  {
+   "q": "What do local governments get?",
+   "a": "A Local Government Support Fund of ₱1,394,016,000, appearing as a budget line for the first time, plus their share of income taxes collected within the region — which Section 48 alone allows to be disbursed until 31 December 2023, a year longer than everything else in the act."
+  },
+  {
+   "q": "What is the Special Development Fund?",
+   "a": "₱5,000,000,000 for conflict-affected communities, the annual amount the Organic Law provides for. It appears as a line in the budget for the first time here; the FY 2020 and FY 2021 funds were appropriated separately, by BAA 22."
+  },
+  {
+   "q": "Was there a limit on salaries?",
+   "a": "Yes. Section 33 caps Personnel Services for one fiscal year at 45% of the Bangsamoro Government's total revenue sources, following Section 6, Article XII of RA 11054."
+  },
+  {
+   "q": "What does the act say about Islamic finance?",
+   "a": "Section 27 — new this year — encourages every ministry and office to formulate plans, programmes and projects supporting “the full integration and mainstreaming of Islamic or Shari'ah compliant finance”, and directs the Chief Minister, on the recommendation of the Technical Working Group on Islamic Finance, to issue guidelines and create a body to review compliance with Islamic finance principles and standards. The provision has been carried in every budget since."
+  },
+  {
+   "q": "What allowances did government employees get?",
+   "a": "PERA of ₱2,000 a month, a uniform or clothing allowance of up to ₱6,000 a year, a mid-year bonus of 1 month's salary and a year-end bonus of 1 month plus a ₱5,000 cash gift. Deductions could never reduce monthly net take-home pay below ₱5,000."
+  },
+  {
+   "q": "What happened if an official did not file the required reports?",
+   "a": "Section 67 provided for automatic suspension of that official's or employee's salary until they complied, with repeated refusal a ground for administrative disciplinary action."
+  },
+  {
+   "q": "How long was the money available?",
+   "a": "Until 31 December 2022, with construction completed and paid by 30 June 2023 and other deliveries paid by 31 March 2023 — except the constituent LGUs' share of income taxes, which ran to 31 December 2023. Parliament then extended the rest by BAA 33 to 31 December 2023."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 23",
+  "line2": "General Appropriations Act of the Bangsamoro, FY 2022",
+  "badges": [
+   "IN FORCE",
+   "Budget",
+   "2022"
+  ],
+  "what_this_does": "Appropriates ₱79.86 billion for 2022, partly from money earlier budgets did not spend.",
+  "who_it_affects": "Everyone in the region · local government units · all government personnel · contractors",
+  "effective": "2022-01-01"
+ },
+ "views": {
+  "simple": "The region's ₱79.86 billion budget for 2022, drawn from the block grant, other national subsidies, the region's share of national taxes collected in its territory, projected regional tax collections — and, for the first time, unused or unutilized appropriations sitting in the Bangsamoro Treasury. It funds 17 ministries, 11 other executive offices and 5 special purpose funds, two of which appear as budget lines for the first time: a ₱5 billion Special Development Fund and a ₱1.39 billion Local Government Support Fund. Its 71 sections of operating rules include Personnel Services capped at 45% of revenue, at least 5% of every budget for gender programmes, a first-ever direction to mainstream Islamic and Shari'ah-compliant finance, a ₱5,000 net take-home pay floor, hazard duty pay certified by the Secretary of National Defense, published contracts and actual costs for every infrastructure project, and automatic salary suspension for officials who fail to report.",
+  "official": "AN ACT APPROPRIATING FUNDS FOR THE OPERATION OF THE BANGSAMORO GOVERNMENT FROM JANUARY ONE TO DECEMBER THIRTY-ONE, TWO THOUSAND AND TWENTY-TWO AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 23, enacted text as published by the Ministry of Finance, and Budget and Management. Pages 1–5, 208–214 and 245–263 of 263 were read; see reading_scope under implementation status for what was not.",
+  "generation": "Section 1, the Bangsamoro Transition Authority's appropriation, the special purpose funds and the General Provisions transcribed from the enacted text on 19 August 2026. Ministry line items and their special provisions were not read. Verify against the official copy before citing.",
+  "reading_status": "read_partial"
+ }
 }

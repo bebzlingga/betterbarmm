@@ -1,9 +1,7 @@
-'use client'
-
-import { useCallback, useState } from 'react'
+import Link from 'next/link'
 import { statusToneClass } from '../_lib/labels'
+import { recordHref } from '../_lib/categories'
 import type { LegislationRecord } from '../_lib/legislation-data'
-import { RecordDetail } from './record-detail'
 import { ShowAll } from './show-all'
 
 /* ============================================================
@@ -12,9 +10,9 @@ import { ShowAll } from './show-all'
    The committee pages list referrals as a line of capitals and a WordPress
    permalink — no number, no status, and a link that takes a reader off the
    site to a page with less on it than the record here. Every referral
-   resolves to a record by title, so the row opens that record instead: the
-   reader stays where they are, and gets the stage, the date, and the authors
-   the source page never showed them.
+   resolves to a record by title, so the row links to that record instead: the
+   reader stays on the site, and gets the stage, the date, and the authors the
+   source page never showed them.
 
    A referral that resolves to nothing keeps its outbound link. That happens
    for none of them today, and the fallback is here for the day the committee
@@ -32,16 +30,11 @@ export function ReferralList({
 	label,
 	noun,
 	items,
-	memberSlugs,
 }: {
 	label: string
 	noun: string
 	items: Referral[]
-	memberSlugs?: Record<string, string>
 }) {
-	const [selected, setSelected] = useState<LegislationRecord | null>(null)
-	const closeRecord = useCallback(() => setSelected(null), [])
-
 	if (items.length === 0) return null
 
 	return (
@@ -54,11 +47,12 @@ export function ReferralList({
 				<ShowAll as='ul' noun={noun}>
 					{items.map((item, index) => (
 						<li key={`${item.title}-${index}`} className='border-b border-[var(--rule-soft)]'>
-							{item.record ? (
-								<button
-									type='button'
-									onClick={() => setSelected(item.record ?? null)}
-									className='row-in flex w-full cursor-pointer items-start gap-4 py-3.5 text-left'
+							{item.record && recordHref(item.record) ? (
+								<Link
+									href={recordHref(item.record) as string}
+									// The date follows the title on a phone rather than holding a
+									// column beside it — see the same note on the registry rows.
+									className='row-in flex w-full cursor-pointer flex-col items-start gap-1 py-3.5 text-left sm:flex-row sm:gap-4'
 								>
 									<span className='min-w-0 flex-1'>
 										<span className='flex flex-wrap items-center gap-x-2 gap-y-1.5'>
@@ -73,8 +67,8 @@ export function ReferralList({
 											{item.record.title}
 										</span>
 									</span>
-									<span className='meta-sm shrink-0 pt-0.5'>{item.record.dateDisplay}</span>
-								</button>
+									<span className='meta-sm shrink-0 sm:pt-0.5'>{item.record.dateDisplay}</span>
+								</Link>
 							) : (
 								<a
 									href={item.url}
@@ -89,10 +83,6 @@ export function ReferralList({
 					))}
 				</ShowAll>
 			</div>
-
-			{selected ? (
-				<RecordDetail record={selected} memberSlugs={memberSlugs} onClose={closeRecord} />
-			) : null}
 		</div>
 	)
 }

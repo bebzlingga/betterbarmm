@@ -63,7 +63,7 @@ export default function CommitteesPage() {
 							<div
 								key={committee.slug}
 								style={{ '--row-index': index } as React.CSSProperties}
-								className='row-in relative flex h-full flex-col border-l border-t border-[var(--rule)] p-8 transition hover:bg-[var(--paper-2)] lg:p-10'
+								className='row-in relative flex h-full flex-col border-l border-t border-[var(--rule)] p-6 transition hover:bg-[var(--paper-2)] sm:p-8 lg:p-10'
 							>
 								<h2 className='item-title text-[var(--ink)]'>
 									<Link
@@ -162,8 +162,9 @@ export default function CommitteesPage() {
 							</h2>
 							<p className='mt-4 text-sm leading-6 text-[var(--ink-2)]'>
 								{stats.membersSeated} members of the roster hold at least one of the{' '}
-								{stats.seated.toLocaleString()} seats recorded here. Membership is read from each
-								committee&rsquo;s own page, so it is current as of capture and nothing more.
+								{stats.seated.toLocaleString()}{' '}
+								seats recorded here. Membership is read from each committee&rsquo;s own page, so it is
+								current as of capture and nothing more.
 							</p>
 							<p className='meta-sm mt-8'>
 								Sources:{' '}

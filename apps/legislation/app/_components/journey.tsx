@@ -116,19 +116,38 @@ export function JourneyList({ stages }: { stages: JourneyStage[] }) {
 				const next = stages[index + 1]
 
 				return (
-					<li key={`${stage.label}-${index}`} className='timeline-stage flex flex-col'>
-						{/* The rail: the dot at the head of its stage, then the line
-						    running on to the next — so each rung starts where its name
-						    starts, and the whole path starts at the left edge.
+					<li key={`${stage.label}-${index}`} className='timeline-stage flex gap-3.5 md:block'>
+						{/* The rail. Across a row of columns the dot sits at the centre of
+						    its own, with the connector split into the half that arrives and
+						    the half that leaves — so the dot lands over the middle of the
+						    stage name rather than at its left edge, and the line still runs
+						    unbroken from one dot to the next. The first stage's arriving
+						    half and the last stage's leaving half are drawn transparent
+						    rather than dropped, so every dot is centred on the same amount
+						    of rail.
+
+						    Stacked on a phone it is the same construction turned ninety
+						    degrees, and keeps the original shape: the marker column runs
+						    down beside the names, the dot sits at the head of its stage,
+						    and only the leaving half is drawn.
 
 						    A segment is travelled once the stage at its far end is
 						    reached, and takes that stage's colour with it. Each rung is
 						    drawn in its own tone, so the rail runs blue through amber to
 						    green as a measure advances; the rungs still ahead stay grey,
 						    and the current one is picked out by a halo. */}
-						<div className='flex items-center' aria-hidden='true'>
+						<div className='flex flex-col items-center md:flex-row md:items-center' aria-hidden='true'>
 							<span
-								className={`size-2.5 shrink-0 rounded-full ${
+								className={`hidden md:block md:h-px md:flex-1 ${
+									index === 0
+										? 'bg-transparent'
+										: stage.reached
+											? TONE_FILL[tone]
+											: 'bg-[var(--rule)]'
+								}`}
+							/>
+							<span
+								className={`mt-1 size-2.5 shrink-0 rounded-full md:mt-0 ${
 									stage.reached
 										? `${TONE_FILL[tone]} ${stage.current ? `ring-4 ${TONE_HALO[tone]}` : ''}`
 										: 'border border-[var(--rule)] bg-[var(--tone-idle-bg)]'
@@ -136,21 +155,28 @@ export function JourneyList({ stages }: { stages: JourneyStage[] }) {
 							/>
 							{!isLast && next ? (
 								<span
-									className={`h-px flex-1 ${
+									className={`w-px flex-1 md:h-px md:w-auto ${
 										next.reached ? TONE_FILL[stageTone(next.label)] : 'bg-[var(--rule)]'
 									}`}
 								/>
-							) : null}
+							) : (
+								<span className='hidden bg-transparent md:block md:h-px md:flex-1' />
+							)}
 						</div>
 
-						{/* Narrow columns on a phone: the names step down a size and are
-						    allowed to break mid-word, so a long stage never pushes into
-						    the one beside it. */}
-						<div className='mt-3 pr-3 sm:pr-5'>
+						{/* Stacked, each name has the full measure, reads as a line, and
+						    stays ranged left beside the rail. Divided into columns from
+						    `md` it centres under its own dot and is allowed to break
+						    mid-word, so a long stage never pushes into the one beside it.
+						    The padding is symmetric there for the same reason the text is:
+						    a centred name needs equal room on both sides. */}
+						<div
+							className={`min-w-0 md:mt-3 md:px-2 md:pb-0 md:text-center ${isLast ? '' : 'pb-7'}`}
+						>
 							{/* "Now" rides at the end of the stage name, so it reads as part
 							    of the line rather than as a second row over the rail. */}
 							<p
-								className={`hyphens-auto break-words text-[11px] leading-snug sm:text-[13px] ${
+								className={`hyphens-auto break-words text-[13px] leading-snug ${
 									stage.reached ? 'font-medium text-[var(--ink)]' : 'text-[var(--ink-display)]'
 								}`}
 							>

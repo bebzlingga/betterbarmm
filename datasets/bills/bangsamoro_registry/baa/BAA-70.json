@@ -1,165 +1,200 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 70,
-    "short_title": "Amends Section 5 of Baa 54 (municipality of",
-    "official_title": "AN ACT AMENDING SECTION 5 OF BAA 54 (MUNICIPALITY OF DATU SINSUAT BALABARAN)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2024-12-12",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Amends Section 5 of Baa 54 (municipality of Datu Sinsuat Balabaran).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Amends Section 5 of Baa 54 (municipality of Datu Sinsuat Balabaran).",
-    "who_will_be_affected": [
-      "General public"
-    ],
-    "when_will_it_take_effect": "Ratified 2024-12-12; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "A governance law shaping how the Bangsamoro Government works. Its effect on daily life is indirect but real: clearer rules inside government generally mean faster, more accountable service at the counter.",
-      "in_practice": [
-        "Defines powers, procedures, or structures within the regional government"
-      ],
-      "for_specific_groups": {
-        "General public": "Better-defined government duties are the basis for demanding service"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Better-ordered government, indirectly better service.",
-        "direct_benefits": [
-          {
-            "benefit": "Clearer rules inside government you can hold offices to",
-            "who_gets_it": "General public",
-            "how_to_access": "Cite the law when following up transactions"
-          }
-        ],
-        "indirect_benefits": [
-          "Institutional maturity of the autonomy"
-        ],
-        "limitations": [
-          "Benefits are structural rather than claimable programs"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Amends: BAA 54",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 70,
+  "short_title": "Plebiscite Requirement for Datu Sinsuat Balabaran, amended",
+  "official_title": "AN ACT AMENDING SECTION 5 OF BANGSAMORO AUTONOMY ACT NO. 54, OTHERWISE KNOWN AS THE “ACT CREATING THE MUNICIPALITY OF DATU SINSUAT BALABARAN IN THE PROVINCE OF MAGUINDANAO DEL NORTE, PROVIDING FUNDS THEREFOR AND FOR OTHER PURPOSES”",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2024-12-12",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session (begun 15 September 2022)",
+  "date_passed": "2024-12-12",
+  "date_passed_hijri": "Jumada Al-Akhirah 11, 1446",
+  "date_approved_by_chief_minister": "2024-12-20",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Barangay residents",
-      "LGUs"
-    ],
-    "impact_tags": [
-      "local_government",
-      "municipality_lgu"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2024-12-12"
-    }
+  "effectivity": "15 days after publication in the Bangsamoro Gazette or one newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Changes who votes on whether the Municipality of Datu Sinsuat Balabaran is created. The plebiscite is now held in “the political units directly affected”, not only in the barangays being carved out.",
+  "why_was_it_proposed": "BAA 54 confined the plebiscite to the barangays leaving the mother municipality. The Organic Law requires ratification by the political units directly affected — wording this amendment restores, and which is generally understood to include the municipality losing the territory.",
+  "what_will_change": "The franchise for the ratification vote widens. The 60-day deadline and the requirement of a majority of votes cast are unchanged.",
+  "who_will_be_affected": [
+   "Voters in the barangays that would form Datu Sinsuat Balabaran",
+   "Voters in the mother municipality, who on the amended wording are within the units directly affected",
+   "COMELEC, which must call and conduct the plebiscite on the wider basis"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [
-      "BAA 54"
+  "when_will_it_take_effect": "In force since 2025 — 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. The vote on creating Datu Sinsuat Balabaran is held in the political units directly affected — a wider franchise than the original act, which polled only the departing barangays.",
+   "in_practice": [
+    "The plebiscite is 'called for the purpose in the political units directly affected'",
+    "Ratification still requires a majority of the votes cast by qualified voters",
+    "It must still be held within 60 days after approval of the Act",
+    "Everything else in BAA 54 — the barangays, the seat of government, the appointed first officials, the ₱2.5 million monthly assistance — is untouched"
+   ],
+   "for_specific_groups": {
+    "Voters in the departing barangays": "You still vote, and a majority of votes cast still decides.",
+    "Voters in the mother municipality": "The amended wording reaches the political units directly affected, which is ordinarily read to include the municipality losing the barangays.",
+    "COMELEC": "The plebiscite must be called on the wider basis rather than confined to the new municipality's barangays."
+   },
+   "where_this_applies": "Maguindanao del Norte.",
+   "when_you_will_feel_it": "At the plebiscite, whenever it is called.",
+   "what_you_can_do": [
+    "Ask COMELEC which units are included in the plebiscite under the amended Section 5",
+    "Read this alongside BAA 54, which carries everything else about the new municipality"
+   ],
+   "watch_out_for": [
+    "'The political units directly affected' is not defined in the act itself.",
+    "The 60-day clock runs from 'approval of the Act', and the amendment does not say whether that means the original creating act or this amending one.",
+    "The amendment does not say what happens to any plebiscite already held on the narrower basis."
+   ],
+   "key_terms_explained": {
+    "Plebiscite": "A vote of the people directly affected, required before a municipality can be created.",
+    "Political units directly affected": "The local government units whose territory or composition the change alters — ordinarily read to include both the new unit and the one it is carved from.",
+    "Corporate existence": "The point at which a municipality legally exists and can act."
+   },
+   "status_note": "Passed Jumada Al-Akhirah 11, 1446 / 12 December 2024, approved by the Chief Minister on 20 December 2024.",
+   "benefits": {
+    "headline": "A wider franchise for the vote that decides whether the municipality is created.",
+    "direct_benefits": [
+     {
+      "benefit": "A say in the plebiscite for the units directly affected, not only the departing barangays",
+      "who_gets_it": "Voters in the affected local government units",
+      "how_to_access": "At the plebiscite called by COMELEC"
+     }
     ],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of the Interior and Local Government (MILG)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2024-12-12 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of the Interior and Local Government (MILG) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 70",
-    "line2": "Amends Section 5 of Baa 54 (municipality of",
-    "badges": [
-      "ENACTED",
-      "Municipality Lgu",
-      "2024"
+    "indirect_benefits": [
+     "Alignment with the Organic Law's own formulation of the ratification requirement"
     ],
-    "what_this_does": "Amends Section 5 of Baa 54 (municipality of Datu Sinsuat Balabaran).",
-    "who_it_affects": "Barangay residents · LGUs",
-    "effective": "2024-12-12"
-  },
-  "views": {
-    "simple": "Amends Section 5 of Baa 54 (municipality of Datu Sinsuat Balabaran).",
-    "official": "AN ACT AMENDING SECTION 5 OF BAA 54 (MUNICIPALITY OF DATU SINSUAT BALABARAN)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "limitations": [
+     "The act does not define which units are 'directly affected'.",
+     "It changes only the plebiscite provision; nothing else about the municipality."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None beyond voting in the plebiscite, which is a right rather than a duty."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "Commission on Elections (COMELEC), which calls and conducts the plebiscite",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A resident of the mother municipality assumed they had no say in whether Datu Sinsuat Balabaran is created. Under the amended Section 5 the plebiscite is held in the political units directly affected, not only in the departing barangays.",
+    "A voter asks when the plebiscite happens. It must be held within 60 days after approval of the Act — though the amendment leaves it unclear which act that clock runs from."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Amends Section 5 of Bangsamoro Autonomy Act No. 54 to read: the Municipality of Datu Sinsuat Balabaran shall acquire corporate existence upon ratification of its creation by a majority of the votes cast by qualified voters in a plebiscite called for the purpose in the political units directly affected, to be held within sixty (60) days after approval of the Act.",
+  "Section 4 — Takes effect 15 days after publication in the Bangsamoro Gazette or one newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Voters in the affected local government units"
+  ],
+  "impact_tags": [
+   "local_government",
+   "governance_civil_service"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": null,
+  "figures_note": "The act appropriates no funds."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2024-12-12"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/01/BAA-70.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [
+   "BAA 54"
+  ],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill 332",
+  "related_note": "Amends the plebiscite requirement in BAA 54. Passed alongside its twin — BAA 70 and BAA 71 make the identical change to the Datu Sinsuat Balabaran and Sheik Abas Hamza creating acts respectively."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": null,
+  "irr_status": "None required by the act.",
+  "note": "Read from the enacted text as signed. It governs only the plebiscite provision; the substance of the municipality's creation remains in BAA 54."
+ },
+ "citizen_questions": [
+  {
+   "q": "What actually changed?",
+   "a": "Who votes. BAA 54 confined the plebiscite to the barangays being carved out; this amendment holds it in 'the political units directly affected', which is ordinarily read to include the mother municipality as well."
+  },
+  {
+   "q": "Does the municipality exist now?",
+   "a": "Not until the plebiscite ratifies it. This act changes the terms of that vote, not the result."
+  },
+  {
+   "q": "When must the plebiscite be held?",
+   "a": "Within 60 days after approval of the Act. The amendment does not specify whether that clock runs from the original creating act or from this one."
+  },
+  {
+   "q": "Did anything else change?",
+   "a": "No. The barangays, the seat of government, the appointed first officials and the ₱2.5 million monthly assistance all remain as enacted in BAA 54."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 70",
+  "line2": "Plebiscite Requirement for Datu Sinsuat Balabaran, amended",
+  "badges": [
+   "IN FORCE",
+   "Local Government",
+   "2024"
+  ],
+  "what_this_does": "Widens the plebiscite on creating Datu Sinsuat Balabaran to the political units directly affected.",
+  "who_it_affects": "Voters in the affected local government units"
+ },
+ "views": {
+  "simple": "Amends the creating act for the Municipality of Datu Sinsuat Balabaran so the ratification plebiscite is held in the political units directly affected, rather than only in the barangays being carved out.",
+  "official": "AN ACT AMENDING SECTION 5 OF BANGSAMORO AUTONOMY ACT NO. 54, OTHERWISE KNOWN AS THE “ACT CREATING THE MUNICIPALITY OF DATU SINSUAT BALABARAN IN THE PROVINCE OF MAGUINDANAO DEL NORTE, PROVIDING FUNDS THEREFOR AND FOR OTHER PURPOSES”"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 70, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

@@ -1,165 +1,297 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 81,
-    "short_title": "Establishes the Salamat Excellence Award for Leadership (SEAL)",
-    "official_title": "AN ACT ESTABLISHING THE SALAMAT EXCELLENCE AWARD FOR LEADERSHIP (SEAL) PROGRAM AND ENDOWMENT FUND",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA3",
-    "date_ratified": "2025-08-20",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Establishes the Salamat Excellence Award for Leadership (SEAL) Program and Endowment Fund.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Establishes the Salamat Excellence Award for Leadership (SEAL) Program and Endowment Fund.",
-    "who_will_be_affected": [
-      "Employees & students",
-      "Communities"
-    ],
-    "when_will_it_take_effect": "Ratified 2025-08-20; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "An identity law: it defines an official symbol or observance of the Bangsamoro (flag, emblem, hymn, seal, calendar, holidays, or memorials). It doesn't hand out benefits, but it shapes the public face of the region you live in - what flies over government buildings, what days are non-working, how the Bangsamoro story is told.",
-      "in_practice": [
-        "Government offices, schools, and LGUs must use/observe it",
-        "Holiday-related acts affect work and class suspensions region-wide",
-        "Memorial acts create public sites and commemorations"
-      ],
-      "for_specific_groups": {
-        "Employees & students": "Regional holidays and observances flow from these laws",
-        "Communities": "Shared symbols of the autonomy won through the peace process"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Identity, recognition, and (for holiday laws) actual days off.",
-        "direct_benefits": [
-          {
-            "benefit": "Official identity: the symbols/observances of your autonomous region",
-            "who_gets_it": "All residents",
-            "how_to_access": "Public display and observance"
-          }
-        ],
-        "indirect_benefits": [
-          "Cultural pride and the normalization of Bangsamoro identity in public life"
-        ],
-        "limitations": [
-          "Symbolic laws confer no monetary claims"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 81,
+  "short_title": "Salamat Excellence Award for Leadership Act of 2025",
+  "official_title": "AN ACT ESTABLISHING AND INSTITUTIONALIZING THE SALAMAT EXCELLENCE AWARD FOR LEADERSHIP PROGRAM FOR THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO, AND ALLOCATING FOR THIS PURPOSE THE SALAMAT EXCELLENCE AWARD FOR LEADERSHIP ENDOWMENT FUND",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA3",
+  "date_ratified": "2025-08-20",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Fourth Regular Session, begun 15 September 2022",
+  "date_passed": "2025-08-20",
+  "date_passed_hijri": "Safar 26, 1447",
+  "date_approved_by_chief_minister": "2025-09-24",
+  "approved_by": "Chief Minister Abdulraof A. Macacua",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "other",
-      "symbols_identity"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2025-08-20"
-    }
+  "origin_bills": "Parliament Bill No. 355",
+  "effectivity": "15 days after complete publication in the Bangsamoro Gazette or a newspaper of regional circulation, whichever is earlier"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates an annual leadership award for one leader in the region, backed by a ₱500 million endowment fund invested under Islamic financing principles — with the winner's LGU or organisation receiving a ₱20 million development grant.",
+  "why_was_it_proposed": "The interior ministry already ran a SEAL programme administratively. This gives it a statute, a three-stage assessment process with named committees, and — the substantive change — a permanent endowment so the award does not depend on an annual budget line.",
+  "what_will_change": "One awardee is chosen each year through three levels of assessment, by a Selection Committee chaired by the Senior Minister and seating the Grand Mufti, voting in secret. The awardee receives a ₱500,000 medallion; their LGU, organisation or institution receives ₱20 million that may only be spent on development projects. The endowment's principal stays invested; only its returns pay out.",
+  "who_will_be_affected": [
+   "Leaders in the BARMM eligible for nomination — local officials and leaders of organisations and institutions",
+   "The LGU, organisation or institution the awardee represents, which receives the grant",
+   "Higher education institutions in the region, which must integrate awardees' leadership models into public administration courses",
+   "The Bangsamoro Treasury Office, which manages the fund as trustee",
+   "Civil society, health, women, youth, business, religious, indigenous peoples and disability sectors, all represented on the Validation Team"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page. Origin: Bill 355."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": "Bill 355"
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Office of the Chief Minister",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2025-08-20 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Office of the Chief Minister (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 81",
-    "line2": "Establishes the Salamat Excellence Award for Leadership (SEAL)",
-    "badges": [
-      "ENACTED",
-      "Symbols Identity",
-      "2025"
+  "when_will_it_take_effect": "In force since 2025 — approved by the Chief Minister on 24 September 2025, effective 15 days after publication. Implementing rules were due within 45 days of effectivity.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. If you lead an LGU or an organisation in the region, you can be nominated for this — one award a year, and the ₱20 million that comes with it goes to your LGU or organisation for development projects, not to you.",
+   "in_practice": [
+    "One SEAL awardee per year, selected by secret vote",
+    "Three leadership domains assessed: accountable, participatory and service-oriented leadership",
+    "Three levels of assessment — screening by a technical working group, onsite validation by a Validation Team, and final interviews by a Selection Committee",
+    "You must score at least 75% in each domain and 80% overall at the second level to reach the shortlist",
+    "You must have no pending civil, criminal or administrative case, and never have won before",
+    "The awardee receives a ₱500,000 medallion",
+    "Their LGU, organisation or institution receives a ₱20,000,000 grant",
+    "₱500,000,000 seeds a permanent endowment fund, invested as far as practicable in Shari'ah-compliant products",
+    "If nobody qualifies in a given year, no award is given and the money rolls over"
+   ],
+   "for_specific_groups": {
+    "Local chief executives": "You are the most obvious nominees, and the grant your LGU receives is governed by the same rules as the 20% of the National Tax Allotment reserved for local development projects.",
+    "Organisations and institutions": "A leader representing you may be nominated, and any incentive must be used only to further your primary purpose.",
+    "Applicants generally": "Applications go to the MILG Provincial Focal Person, who endorses them to the regional office. The ministry sets the documentary requirements.",
+    "Higher education institutions": "Documented information, case studies and leadership models from awardees must be institutionalised in your public administration courses, subject to Commission on Higher Education guidelines.",
+    "Academics": "The ministry engages accredited academic institutions in documentation, assessment and validation, with honoraria payable from the programme's appropriation.",
+    "Sectoral representatives": "Civil society, health, women, youth, business, religious, indigenous peoples and persons with disability each hold two Validation Team seats."
+   },
+   "where_this_applies": "The whole BARMM.",
+   "when_you_will_feel_it": "In force since 2025. The existing MILG programme transitioned into the statutory one on effectivity.",
+   "what_you_can_do": [
+    "Submit an application to the MILG Provincial Focal Person, who endorses it to the regional office",
+    "Check the eligibility bar first — no pending civil, criminal or administrative case, and no prior conferment",
+    "Note the interpretive rule: the burden is on you to show you qualify, and the criteria are construed strictly against you",
+    "If your LGU wins, the grant may only fund development projects — not salaries, vehicles, offices, travel or administrative costs"
+   ],
+   "watch_out_for": [
+    "₱500 million is committed as endowment principal for an awards programme. For comparison, the Ancestral Domain Fund under BAA 64 received ₱200 million, the Transitional Justice Commission ₱150 million, the whole Internally Displaced Persons programme ₱50 million, and the entire Labor and Employment Code ₱30 million.",
+    "Section 12 contradicts itself on scoring. The text says the Third Level Assessment contributes 40% of the overall rating; the formula printed immediately below it reads 10% + 60% + 30%. Only the formula sums to 100.",
+    "Section 22 requires all criteria and rules to be strictly construed against the nominee, with the burden on the nominee to show they qualify — an unusually adverse canon for an award.",
+    "Only one award may be given each year, and no person may win twice.",
+    "The Selection Committee declares awardees by secret voting, and the act sets out no publication requirement for the reasons.",
+    "The act nowhere explains whom or what the award is named for."
+   ],
+   "key_terms_explained": {
+    "SEAL": "Salamat Excellence Award for Leadership — described in the act as the highest leadership award, incentive, honour and recognition-based programme for all leaders in the BARMM.",
+    "Endowment fund": "A permanent capital fund. The principal stays invested and only the returns are spent, so the award does not depend on a yearly appropriation.",
+    "Vicegerency": "Khalifa — the Islamic concept of humanity holding authority as a trust, answerable for how it is exercised. Listed among the principles of accountable leadership.",
+    "Shari'ah-compliant investment": "Investment products conforming to Islamic finance principles, which prohibit interest and certain speculative or prohibited activities.",
+    "National Tax Allotment": "The share of national taxes given to LGUs, 20% of which is reserved for local development projects. The grant is governed by those same rules.",
+    "Darul-Ifta'": "The regional office of Islamic legal opinion. Its Grand Mufti sits on the Selection Committee.",
+    "Validation Team": "The body conducting onsite second-level verification of a candidate's claims, through document review, site visits and community interviews."
+   },
+   "status_note": "Passed 20 August 2025 and approved by the Chief Minister on 24 September 2025.",
+   "benefits": {
+    "headline": "A permanently endowed leadership award — ₱500,000 to the leader, ₱20 million in development money to the community they lead.",
+    "direct_benefits": [
+     {
+      "benefit": "A ₱500,000 medallion to the awardee",
+      "who_gets_it": "One leader per year",
+      "how_to_access": "Section 14, after passing all three assessment levels and ranking first"
+     },
+     {
+      "benefit": "A ₱20,000,000 grant to the awardee's LGU, organisation or institution",
+      "who_gets_it": "The community or body the awardee represents",
+      "how_to_access": "Section 14, released from the endowment's profits on the Selection Committee's certification"
+     },
+     {
+      "benefit": "A permanent endowment so the award does not depend on the annual budget",
+      "who_gets_it": "The programme itself, and future awardees",
+      "how_to_access": "Section 15 — ₱500,000,000 seed capital held in trust by the Bangsamoro Treasury Office"
+     },
+     {
+      "benefit": "Sectoral seats on the body that validates candidates onsite",
+      "who_gets_it": "Civil society, health, women, youth, business, religious, indigenous peoples and disability sectors",
+      "how_to_access": "Section 6"
+     },
+     {
+      "benefit": "Honoraria for academic participants in assessment and validation",
+      "who_gets_it": "Participating faculty, researchers and institutions",
+      "how_to_access": "Section 21"
+     }
     ],
-    "what_this_does": "Establishes the Salamat Excellence Award for Leadership (SEAL) Program and Endowment Fund.",
-    "who_it_affects": "General public",
-    "effective": "2025-08-20"
-  },
-  "views": {
-    "simple": "Establishes the Salamat Excellence Award for Leadership (SEAL) Program and Endowment Fund.",
-    "official": "AN ACT ESTABLISHING THE SALAMAT EXCELLENCE AWARD FOR LEADERSHIP (SEAL) PROGRAM AND ENDOWMENT FUND"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Documented leadership models taught in public administration courses across the region's higher education institutions",
+     "An annual analytical report from the academe on best practices and lessons learned",
+     "Onsite validation with community interviews, rather than assessment on paper alone",
+     "Investment of public capital under Islamic financing principles"
+    ],
+    "limitations": [
+     "One awardee a year, from the whole region.",
+     "The grant is restricted to development projects and may not fund operations.",
+     "The interpretive rule runs against the nominee.",
+     "Where no candidate qualifies, no award is made."
+    ]
+   },
+   "your_responsibilities": {
+    "for_nominees": [
+     "Meet the eligibility bar: good moral character, no pending civil, criminal or administrative case, no adverse judgment, and no previous conferment",
+     "Submit the documentary requirements the interior ministry sets",
+     "Carry the burden of showing that you qualify — the criteria and rules are strictly construed against you"
+    ],
+    "for_awardee_recipients": [
+     "Spend the grant only on development projects under the rules governing the 20% local development share, the Annual Investment Program and the Local Development Investment Program",
+     "If an organisation, spend it only to further your primary purpose",
+     "Do not use it for micro credits or loans, travel outside the Act's purposes, administrative expenses, cash gifts, bonuses, allowances, uniforms, utilities, vehicles not directly used for the undertaking, salaries or per diems, office construction or refurbishing, or loan guarantees"
+    ],
+    "for_government": [
+     "MILG hosts the technical working group, sets documentary requirements, engages the academe and organises the awarding ceremony",
+     "The Bangsamoro Treasury Office manages the endowment as trustee, determines the investment strategy, and withdraws only on the Selection Committee's certification",
+     "MILG and the finance ministry jointly issue implementing rules within 45 days of effectivity"
+    ]
+   },
+   "what_is_prohibited": [
+    "Using the incentive for micro credits and loans.",
+    "Using it for travel, domestic or foreign, except in advancement of the Act's purposes.",
+    "Using it for administrative expenses, including cash gifts, bonuses, food allowances, staff uniforms, communication bills, utilities and transportation costs.",
+    "Purchasing, maintaining or repairing motor vehicles or motorcycles not directly used for the SEAL undertaking.",
+    "Paying salaries, wages, emoluments, per diems or overtime.",
+    "Constructing, repairing or refurnishing administrative offices.",
+    "Using it as a loan guarantee.",
+    "Withdrawing from the endowment fund without a Selection Committee certification naming the awardee and authorising the withdrawal."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment.",
+    "eligibility_bar": "A nominee with any pending civil, criminal or administrative case, or any adverse judgment, is disqualified — as is anyone previously conferred with the award.",
+    "interpretive_rule": "Section 22 requires all definitions of the criteria and all rules issued under the Act to be strictly construed against the leader-nominee, who bears the burden of showing they qualify."
+   },
+   "where_to_complain": {
+    "first_stop": "The MILG Provincial Focal Person, who receives applications and endorses them to the regional office",
+    "oversight": "The Technical Working Group within MILG's Operations Management Service; the Validation Team; and the Selection Committee chaired by the Senior Minister of the Office of the Chief Minister",
+    "note": "The act creates no appeal or protest mechanism against a selection decision."
+   },
+   "everyday_scenarios": [
+    "A municipality's mayor is nominated for consistently transparent budgeting. The Validation Team conducts an onsite visit and interviews the community before any shortlisting.",
+    "A winning LGU wants to use the ₱20 million for staff bonuses. It cannot — Section 16 bars salaries, bonuses, allowances and administrative expenses, and confines the money to development projects.",
+    "No candidate clears the third-level assessment in a given year. Section 13 declares no awardee and retains the award fund for the next cycle, or lets the treasury invest it.",
+    "A public administration student in the region studies a case on a past awardee. Section 20 requires awardees' documented leadership models to be built into those courses."
+   ]
   }
+ },
+ "key_provisions": [
+  "Sections 1–3 — Short title: “The Salamat Excellence Award for Leadership Act of 2025”. Policy: recognise and institutionalise exemplary leadership embodying moral governance, accountability and inclusive development, honouring leaders who exemplify the Bangsamoro's aspirations for self-determination, peace and progress. SEAL is described as the highest leadership award, incentive, honour and recognition-based programme for all leaders in the BARMM, assessed across three domains — Accountable Leadership, guided by transparency, honesty, accountability, integrity, vicegerency, flexibility, moderation and righteousness; Participatory Leadership, guided by participation, justness, fairness and equity, consultation, consensus building, inclusiveness and gender sensitivity; and Service-Oriented Leadership, guided by efficiency, effectiveness, general welfare, responsiveness, justice, fairness and equity.",
+  "Sections 4–5 — Definitions of the three assessment levels and the bodies conducting them. A Technical Working Group is created within the Ministry of the Interior and Local Government under its Operations Management Service to implement the programme: producing information materials, drafting and revising the tools and criteria, receiving applications through a Provincial Focal Person for endorsement to the regional office, reviewing documents, conducting the First Level Assessment, convening the Validation Team and Selection Committee, maintaining a database of assessment results, preparing a terminal report, and organising the awarding ceremony.",
+  "Sections 6–7 — The Validation Team is chaired by the MILG Director II for Operations Management Services, with technical representatives from ministries at Division Chief rank or above, the MILG Focal Person for the Search for Model Barangay, the Dean of the College of Public Affairs–Public Administration of Mindanao State University Main Campus, two representatives each from civil society organisations, the health sector, the women sector, the youth sector, the business sector, the religious sector, indigenous peoples' affairs and persons with disability, and one from the academe. It reviews applications, conducts the Second Level Assessment through onsite visits and interviews with stakeholders and the community, shortlists qualified candidates, deliberates, and presents its reports to the Selection Committee.",
+  "Sections 8–9 — The Selection Committee is chaired by the Senior Minister of the Office of the Chief Minister, co-chaired by the Minister of the Interior and Local Government, with the Bangsamoro Director General of MILG as Vice-Chairperson, and as members the chairperson of Parliament's Committee on Local Governance, the Grand Mufti of the Regional Darul-Ifta', the Mindanao State University dean, one representative from a non-governmental organisation focusing on leadership and governance, one from the Chamber of Commerce, three from civil society organisations or institutions focusing on leadership and governance, and the MILG Director II for Operations Management Services. It reviews the validation results, conducts final interviews under the SEAL Leadership Framework, and convenes to “declare the awardees of the SEAL Program through secret voting” — selecting one awardee for the current year.",
+  "Sections 10–12 — Eligibility: good moral character; no pending civil, criminal or administrative case; no adverse judgment in any criminal or administrative case; and no previous conferment of the award. The interior ministry sets the documentary requirements. Selection runs through three levels. The First Level Assessment by the technical working group contributes 10% of the final score. The Second Level Assessment is an onsite validation scored against the three leadership domains; to be shortlisted a candidate must score at least 75% in each domain and at least 80% overall, and this level contributes 60%. The Third Level Assessment is the Selection Committee's final interview, with the three domains equally weighted — the text states this contributes 40%, while the formula printed immediately below reads “First Level 10% (10%) + Second Level 60% (60%) + Third Level 30% (30%)”. The highest-rated nominee is selected, with ties resolved by a vote during deliberation.",
+  "Sections 13–14 — If no qualified or eligible nominee passes the Third Level Assessment, the Selection Committee declares no awardee for that fiscal year, and the award fund is retained in the Special SEAL Fund for the next cycle or invested by the treasury. The awardee receives a SEAL medallion worth ₱500,000 and a grant of ₱20,000,000 to the local government unit, organisation or institution of the awardee's representation.",
+  "Sections 15–18 — A SEAL Endowment Fund is established, managed by the Bangsamoro Treasury Office as trustee, with ₱500,000,000 appropriated as seed capital, and a special account called the Special SEAL Fund serving as depository for the seed capital and realised profits. The Fund is used exclusively to pay the incentives to the awardee and their LGU, organisation or institution. Where the awardee represents an LGU, the incentive is governed by the policies for the 20% of the annual National Tax Allotment reserved for local development projects, the Annual Investment Program and the Local Development Investment Program; where an organisation, only for the furtherance of its primary purpose. The incentives may not be used for micro credits and loans; travel except in advancement of the Act; administrative expenses including cash gifts, bonuses, food allowances, staff uniforms, communication bills, utilities and transportation; motor vehicles not directly used for the undertaking; salaries, wages, emoluments, per diems or overtime; construction, repair or refurnishing of administrative offices; or loan guarantees. The treasury determines the investment strategy and, “as far as practicable”, invests the endowment in Shari'ah-compliant and/or Islamic financing investment products, whether foreign or local. It withdraws only the profits corresponding to the incentives, and only on a Selection Committee certification naming the awardee and authorising the withdrawal.",
+  "Sections 19–22 — The interior ministry engages accredited academic institutions within the BARMM in documenting, assessing and validating awardees' leadership exemplars, developing evidence-based evaluation methodologies, conducting independent reviews of documented achievements and governance innovations, and submitting an annual analytical report. Documented information, case studies and leadership models from awardees “shall be institutionalized in the Public Administration courses of higher education institutions in BARMM”, subject to Commission on Higher Education guidelines, with impact on leadership education reviewed every 3 years in coordination with Mindanao State University, Cotabato State University and other state and private universities. Academic participants receive honoraria charged against the programme's annual appropriation. In interpreting the Act, “all definitions of the criteria and all rules and regulations issued pursuant to this Act shall be strictly construed against the leader-nominee. It shall be the burden of the leader-nominee to show that it qualifies for the SEAL.”",
+  "Sections 23–27 — Implementing rules jointly formulated by MILG and the Ministry of Finance, and Budget and Management within 45 days from effectivity. On effectivity, the existing SEAL Program of the interior ministry transitions into the statutory programme. Separability and repealing clauses. Effective 15 days after complete publication in the Bangsamoro Gazette or a newspaper of regional circulation, whichever is earlier."
+ ],
+ "impact": {
+  "who_benefits": [
+   "One leader in the region each year",
+   "The LGU, organisation or institution the awardee represents",
+   "Higher education institutions teaching public administration",
+   "Sectoral organisations seated on the Validation Team"
+  ],
+  "impact_tags": [
+   "governance_civil_service",
+   "local_government",
+   "budget_finance",
+   "education"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱500,000,000 seed capital for the SEAL Endowment Fund; annual payout of a ₱500,000 medallion and a ₱20,000,000 grant, drawn from the fund's profits rather than its principal",
+  "figures_note": "Quoted from Sections 14 and 15."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2025-08-20"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page. Origin: Bill 355."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/09/BAA-81.pdf",
+  "irr": "Due jointly from MILG and the finance ministry within 45 days of effectivity — not yet captured in this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": "All inconsistent regional laws, executive orders, rules and regulations; the existing MILG SEAL Program transitions into this Act",
+  "origin_bill": "Parliament Bill No. 355",
+  "related_note": "Grants to LGU awardees are governed by the rules for the 20% local development share of the National Tax Allotment, the Annual Investment Program and the Local Development Investment Program. The endowment is held by the Bangsamoro Treasury Office and invested under Islamic financing principles, placing it alongside the region's other Shari'ah-aligned fiscal instruments. Curriculum integration runs through the Commission on Higher Education and the region's state universities."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "₱500,000,000 endowment seed capital",
+  "irr_status": "Section 23 requires MILG and the Ministry of Finance, and Budget and Management to jointly promulgate implementing rules within 45 days of effectivity. Not yet captured in this registry.",
+  "implementing_agency": {
+   "agency": "Ministry of the Interior and Local Government, with the Bangsamoro Treasury Office as trustee of the endowment fund",
+   "inferred": false
+  },
+  "note": "Read from the enacted text as signed, all 10 pages. Section 12 is internally inconsistent on scoring weights: the prose gives the Third Level Assessment 40%, while the formula immediately below assigns it thirty. Only the formula sums to one hundred."
+ },
+ "citizen_questions": [
+  {
+   "q": "Who can be nominated?",
+   "a": "Any leader in the BARMM — the act frames it as covering all leaders, and the incentive contemplates awardees representing either a local government unit or an organisation or institution. You must have good moral character, no pending civil, criminal or administrative case, no adverse judgment, and no previous conferment."
+  },
+  {
+   "q": "What does the winner actually get?",
+   "a": "A medallion worth ₱500,000. The ₱20 million goes to the local government unit, organisation or institution the awardee represents — not to the awardee personally — and may only be spent on development projects."
+  },
+  {
+   "q": "Can the ₱20 million be used for salaries or a new office?",
+   "a": "No. Section 16 bars salaries, wages, per diems and overtime; cash gifts, bonuses, allowances, uniforms, utilities and transportation; vehicles not directly used for the undertaking; construction, repair or refurnishing of administrative offices; travel outside the Act's purposes; micro credits and loans; and loan guarantees."
+  },
+  {
+   "q": "How is it funded?",
+   "a": "By a ₱500,000,000 endowment fund held in trust by the Bangsamoro Treasury Office. The principal stays invested — as far as practicable in Shari'ah-compliant or Islamic financing products — and only the profits are withdrawn to pay the incentives, on a certification from the Selection Committee."
+  },
+  {
+   "q": "How many awards are given each year?",
+   "a": "One. And if no candidate passes the final assessment, none is given — the money stays in the Special SEAL Fund for the next cycle."
+  },
+  {
+   "q": "How is the winner chosen?",
+   "a": "Through three levels — a technical screening, an onsite validation with community interviews, and a final interview by the Selection Committee, which declares the awardee by secret voting."
+  },
+  {
+   "q": "Who sits on the Selection Committee?",
+   "a": "The Senior Minister of the Office of the Chief Minister as chair, the interior Minister as co-chair, the ministry's Director General as vice-chair, and as members the chair of Parliament's Committee on Local Governance, the Grand Mufti of the Regional Darul-Ifta', a Mindanao State University dean, an NGO representative, a Chamber of Commerce representative, three civil society representatives, and a ministry director."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 81",
+  "line2": "Salamat Excellence Award for Leadership Act of 2025",
+  "badges": [
+   "IN FORCE",
+   "Governance",
+   "2025"
+  ],
+  "what_this_does": "Creates an annual leadership award backed by a ₱500 million endowment, with a ₱20 million development grant to the winner's LGU or organisation.",
+  "who_it_affects": "Local leaders · LGUs and organisations · universities teaching public administration",
+  "effective": "2025-09-24"
+ },
+ "views": {
+  "simple": "Establishes the Salamat Excellence Award for Leadership as a statutory programme: one awardee a year chosen through three levels of assessment by a Selection Committee voting in secret, judged on accountable, participatory and service-oriented leadership; a ₱500,000 medallion for the leader and a ₱20 million development grant for their LGU or organisation, restricted to development projects; and a ₱500 million endowment fund held by the Bangsamoro Treasury Office and invested under Islamic financing principles, from whose profits alone the awards are paid.",
+  "official": "AN ACT ESTABLISHING AND INSTITUTIONALIZING THE SALAMAT EXCELLENCE AWARD FOR LEADERSHIP PROGRAM FOR THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO, AND ALLOCATING FOR THIS PURPOSE THE SALAMAT EXCELLENCE AWARD FOR LEADERSHIP ENDOWMENT FUND"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 81, enacted text as signed (Parliament's acts index), all 10 pages.",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

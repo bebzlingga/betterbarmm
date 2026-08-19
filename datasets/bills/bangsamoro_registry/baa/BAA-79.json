@@ -1,199 +1,236 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 79,
-    "short_title": "an Act Establishing a Level I General Hospital Act",
-    "official_title": "AN ACT ESTABLISHING A LEVEL I GENERAL HOSPITAL IN MALUSO, BASILAN",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA3",
-    "date_ratified": "2025-08-20",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Establishes a Level I General Hospital in Maluso, Basilan.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Establishes a Level I General Hospital in Maluso, Basilan.",
-    "who_will_be_affected": [
-      "Residents of Basilan",
-      "Pregnant women",
-      "Senior citizens & PWDs",
-      "Health workers"
-    ],
-    "when_will_it_take_effect": "Ratified 2025-08-20; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Establishes a public hospital serving Basilan. For nearby families this means emergency and inpatient care closer to home instead of long, costly trips to distant referral hospitals.",
-      "in_practice": [
-        "More beds means fewer 'no vacancy' referrals and less floor-space crowding during outbreaks",
-        "A higher hospital level allows more services on-site: surgery, specialist clinics, better laboratory and imaging, more doctors and nurses on the plantilla",
-        "PhilHealth-accredited services expand with the facility's level, lowering out-of-pocket costs",
-        "Construction, staffing, and supplies take time after enactment - upgrades typically roll out over one or more budget years"
-      ],
-      "for_specific_groups": {
-        "Residents of Basilan": "Shorter travel time in emergencies - often the difference between life and death for stroke, hemorrhage, and obstetric cases",
-        "Pregnant women": "Facility-based deliveries and emergency obstetric care become available nearer home",
-        "Senior citizens & PWDs": "Follow-up care and dialysis/maintenance services without long-distance travel",
-        "Health workers": "New plantilla positions (nurses, midwives, med-techs, doctors) usually open when a hospital is created or upgraded - watch the MOH and hospital job postings"
-      },
-      "where_this_applies": "Basilan",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Ask the Ministry of Health (MOH-BARMM) or the hospital chief when the added beds/services actually open"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Closer, bigger, better-equipped public healthcare for Basilan.",
-        "direct_benefits": [
-          {
-            "benefit": "Emergency and inpatient care near home (expanded capacity) instead of long referral trips",
-            "who_gets_it": "Residents of Basilan",
-            "how_to_access": "Go directly; public hospitals cannot refuse emergencies"
-          },
-          {
-            "benefit": "More services as the hospital's level rises: surgery, laboratory, imaging, specialty clinics",
-            "who_gets_it": "Patients in the catchment area",
-            "how_to_access": "Outpatient department; bring PhilHealth/ID"
-          },
-          {
-            "benefit": "Lower out-of-pocket costs as PhilHealth-accredited services expand with the facility level",
-            "who_gets_it": "PhilHealth members and indigents (automatic UHC coverage)",
-            "how_to_access": "Hospital PhilHealth desk / Malasakit-type assistance where present"
-          },
-          {
-            "benefit": "Safer childbirth: facility-based delivery and emergency obstetric care nearby",
-            "who_gets_it": "Pregnant women",
-            "how_to_access": "Prenatal check-ups at the RHU, delivery at the hospital"
-          },
-          {
-            "benefit": "New jobs: doctors, nurses, midwives, med-techs, admin and support staff",
-            "who_gets_it": "Health professionals and local job seekers",
-            "how_to_access": "Watch MOH-BARMM and hospital postings"
-          }
-        ],
-        "indirect_benefits": [
-          "Decongests referral hospitals for everyone else",
-          "Local economy around the hospital (transport, food, pharmacies)",
-          "Faster outbreak and disaster response capacity in the area"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Bed count on paper becomes real only after construction/hiring - ask the hospital chief for the timeline"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Hospital classification: Level I",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 79,
+  "short_title": "Maluso General Hospital, Basilan",
+  "official_title": "AN ACT ESTABLISHING A LEVEL I GENERAL HOSPITAL IN THE MUNICIPALITY OF MALUSO, PROVINCE OF BASILAN, AND APPROPRIATING FUNDS THEREFOR",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA3",
+  "date_ratified": "2025-08-20",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Fourth Regular Session (begun 15 September 2022)",
+  "date_passed": "2025-08-20",
+  "date_passed_hijri": "Safar 26, 1447",
+  "date_approved_by_chief_minister": "2025-09-24",
+  "approved_by": "Chief Minister Abdulraof A. Macacua",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Health workers",
-      "Hospitals",
-      "Patients"
-    ],
-    "impact_tags": [
-      "health",
-      "hospital_health"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2025-08-20"
-    }
+  "effectivity": "15 days after publication in a newspaper of general circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates a 25-bed Level I general hospital in Maluso, Basilan, on the same terms as the Tipo-Tipo hospital passed the same day — including a tested, monitored path to provincial ownership.",
+  "why_was_it_proposed": "To put a general hospital in the municipality, and to build a path toward provincial management rather than permanent regional control.",
+  "what_will_change": "A hospital is established under the regional health ministry, which funds construction and initial running. Management transfers to the Provincial Government of Basilan when the province asks and the ministry agrees, or a five-yearly assessment finds it capable — with a joint transition plan, a one-year timetable, and parliamentary monitoring.",
+  "who_will_be_affected": [
+   "Residents of Maluso and surrounding Basilan",
+   "The Provincial Government of Basilan, the intended eventual manager",
+   "Parliament, which monitors the transition plan and receives annual reports on continuing support"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Health (MOH)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2025-08-20 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Health (MOH) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 79",
-    "line2": "an Act Establishing a Level I General Hospital Act",
-    "badges": [
-      "ENACTED",
-      "Hospital Health",
-      "2025"
+  "when_will_it_take_effect": "In force since 2025 — 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. A 25-bed Level I hospital for Maluso, built and run by the region at first, then handed to Basilan province on a tested trigger with a one-year handover and reports to Parliament.",
+   "in_practice": [
+    "A Level I general hospital with 25-bed capacity in Maluso, Basilan",
+    "Under the administrative supervision and operational control of the Ministry of Health, which funds construction, infrastructure, equipment and initial maintenance and personnel costs",
+    "Implementing rules within 90 days of effectivity",
+    "The Chief of Hospital submits an annual development plan prepared with the Basilan Integrated Provincial Health Office, which governs personnel, capital outlays, budget and any future expansion",
+    "Transfer to the Provincial Government on a formal provincial request with MOH concurrence, or a favourable MOH assessment conducted every 5 years",
+    "A joint transition plan phases the turnover of responsibilities, personnel, assets and systems within 1 year of the transfer order",
+    "The transition plan goes to Parliament through the Committee on Health for information and monitoring",
+    "After transfer, the region continues technical support and, when necessary, financial support — with an annual report to Parliament",
+    "₱50,000,000 initial from the 2025 Bangsamoro budget"
+   ],
+   "for_specific_groups": {
+    "Residents of Maluso": "A Level I general hospital in the municipality, funded and built by the region.",
+    "The Provincial Government of Basilan": "You can request the transfer, but it needs MOH concurrence — or wait for the five-yearly assessment.",
+    "Anyone worried about devolution leaving a hospital stranded": "Section 6, the continuity provision, keeps regional technical and financial support in place after transfer, including salary augmentation and medical supplies."
+   },
+   "where_this_applies": "Maluso, Basilan.",
+   "when_you_will_feel_it": "In force since 2025; construction and the eventual handover follow their own timetables.",
+   "what_you_can_do": [
+    "Ask the Committee on Health for the transition plan",
+    "Ask for the MOH's annual report on continuing technical and financial support",
+    "Ask for the hospital's annual development plan"
+   ],
+   "watch_out_for": [
+    "No construction completion deadline — the one-year timetable applies to the handover, not the building.",
+    "The province cannot take over unilaterally; MOH concurrence or a favourable assessment is required.",
+    "The MOH's annual reporting duty continues only while it is actually providing support."
+   ],
+   "key_terms_explained": {
+    "Level I general hospital": "A basic facility — emergency care, general medicine, a ward.",
+    "Operational control": "Day-to-day authority over how the hospital runs, held by the regional health ministry until transfer.",
+    "Continuity provision": "The clause keeping regional support in place after the handover.",
+    "IPHO": "Integrated Provincial Health Office, which co-prepares the annual development plan."
+   },
+   "status_note": "Passed Safar 26, 1447 / 20 August 2025, approved by Chief Minister Abdulraof A. Macacua on 24 September 2025.",
+   "benefits": {
+    "headline": "A 25-bed hospital for Maluso, with the same devolution roadmap as Tipo-Tipo.",
+    "direct_benefits": [
+     {
+      "benefit": "A Level I general hospital with 25 beds",
+      "who_gets_it": "Residents of Maluso and surrounding Basilan",
+      "how_to_access": "Through the hospital once built"
+     },
+     {
+      "benefit": "Regional funding for construction, equipment and initial operating costs",
+      "who_gets_it": "The hospital",
+      "how_to_access": "Ensured by the MOH under Section 2"
+     },
+     {
+      "benefit": "Continuing technical and financial support after handover",
+      "who_gets_it": "The provincial government and the hospital's patients",
+      "how_to_access": "Section 6, including salary augmentation and essential supplies"
+     },
+     {
+      "benefit": "Parliamentary monitoring of the handover and continuing support",
+      "who_gets_it": "Anyone tracking the hospital",
+      "how_to_access": "Transition plan and annual reports via the Committee on Health"
+     }
     ],
-    "what_this_does": "Establishes a Level I General Hospital in Maluso, Basilan.",
-    "who_it_affects": "Health workers · Hospitals · Patients",
-    "effective": "2025-08-20"
-  },
-  "views": {
-    "simple": "Establishes a Level I General Hospital in Maluso, Basilan.",
-    "official": "AN ACT ESTABLISHING A LEVEL I GENERAL HOSPITAL IN MALUSO, BASILAN"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "An annual development plan co-prepared with the provincial health office",
+     "A capability assessment cycle rather than an arbitrary handover date"
+    ],
+    "limitations": [
+     "No construction deadline.",
+     "₱50 million initial only.",
+     "Transfer depends on MOH judgement of provincial readiness."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "The hospital administration",
+    "oversight": "Ministry of Health – BARMM, with administrative supervision and operational control; the Bangsamoro Parliament through the Committee on Health",
+    "note": "The act creates no complaints procedure, but it creates documents a citizen can ask for."
+   },
+   "everyday_scenarios": [
+    "A patient in Maluso gains a Level I general hospital in the municipality rather than travelling for basic hospital care.",
+    "Basilan's provincial government wants to run the hospital. It can formally request the transfer, but the health ministry must concur — or the province can wait for the five-yearly assessment.",
+    "After the handover the province cannot cover salaries 1 month. Section 6 lets the region temporarily augment operational requirements, and requires it to report that support to Parliament annually."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Establishes a Level I general hospital with 25-bed capacity in the Municipality of Maluso, Province of Basilan, to be known as the Maluso General Hospital (MGH).",
+  "Section 2 — The hospital is under the administrative supervision and operational control of the Ministry of Health, which determines and approves its organisational structure, formulates guidelines for its operation as a Level I hospital, and ensures funding for construction of the building and other complementary infrastructure, facilities and medical equipment, as well as initial maintenance and personnel costs pending full transfer of management under Sections 5 and 6. Implementing rules are due within 90 days of effectivity.",
+  "Section 3 — The Chief of Hospital, in consultation and coordination with the Basilan Integrated Provincial Health Office, submits to the MOH an annual development plan reflecting the hospital's developmental goals. Medical personnel, capital outlays and budgetary needs are based on that plan, and any future increase in bed capacity or upgrading of services must be consistent with it.",
+  "Section 4 — All relevant provisions of Republic Act 11223, the Universal Health Care Act, are integrated into the hospital's operational system.",
+  "Section 5 — Full management and control transfers from the Bangsamoro Government to the Provincial Government of Basilan on whichever comes first: a formal request from the Provincial Government with the concurrence of the MOH confirming readiness and institutional capacity; or a favourable assessment by the MOH, conducted every 5 years under its prescribed guidelines, determining that the Provincial Government has sufficient administrative, technical and financial capability to operate the hospital independently. The MOH then issues a formal order of transfer, effective on completion of a joint transition plan outlining the phased turnover of responsibilities, personnel, assets and systems, with a clear timetable not exceeding 1 year. The transition plan is submitted to the Bangsamoro Parliament, through the Committee on Health, for information and monitoring.",
+  "Section 6 — Continuity provision: notwithstanding the transfer, the Bangsamoro Government through the MOH shall continue to provide technical support and, when necessary, financial support. Financial support means temporary augmentation of operational requirements the Provincial Government cannot provide, including personnel salaries, essential medical supplies and equipment maintenance; technical support includes capacity building, policy guidance, health systems monitoring and quality assurance. The MOH shall submit an annual report to Parliament, through the Committee on Health and the Committee on Finance, Budget and Management, detailing the nature, scope and impact of that support, continuing only for the duration of the support.",
+  "Section 7 — An initial ₱50,000,000 is charged against the 2025 General Appropriations Act of the Bangsamoro, with continued operation and maintenance thereafter in the annual appropriations.",
+  "Section 10 — Takes effect 15 days after publication in a newspaper of general circulation in the BARMM."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of Maluso and surrounding Basilan",
+   "The Provincial Government of Basilan"
+  ],
+  "impact_tags": [
+   "health",
+   "local_government",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱50,000,000 initial, charged against the 2025 GAAB",
+  "figures_note": "Quoted from Sections 1 and 7: 25-bed capacity, ₱50,000,000 initial."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2025-08-20"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/10/BAA-79.pdf",
+  "irr": "Required from MOH within 90 days of effectivity. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill 105",
+  "related_note": "Twin of BAA 78 (Tipo-Tipo General Hospital), passed and approved on the same days and carrying an identical devolution scheme for the same province. Both develop the phased transfer first sketched in BAA 68."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱50,000,000 initial",
+  "irr_status": "Section 2 required MOH rules within 90 days of effectivity.",
+  "note": "Read from the enacted text as signed. Whether the hospital has been built, and whether any transfer assessment has been conducted, is not recorded here."
+ },
+ "citizen_questions": [
+  {
+   "q": "Who will run the hospital?",
+   "a": "The regional Ministry of Health at first, with administrative supervision and operational control and responsibility for funding construction. Management then transfers to the Provincial Government of Basilan."
+  },
+  {
+   "q": "When does the province take over?",
+   "a": "On whichever comes first: a formal provincial request with the health ministry's concurrence, or a favourable ministry assessment — conducted every 5 years — that the province can operate the hospital independently."
+  },
+  {
+   "q": "How fast is the handover?",
+   "a": "A joint transition plan must set a timetable not exceeding 1 year from the transfer order, covering responsibilities, personnel, assets and systems, and goes to Parliament's Committee on Health for monitoring."
+  },
+  {
+   "q": "What if the province cannot cope after taking over?",
+   "a": "Section 6 keeps the region providing technical support and, when necessary, financial support — including temporary help with salaries, essential medical supplies and equipment maintenance — with an annual report to Parliament."
+  },
+  {
+   "q": "Is this the same as the Tipo-Tipo hospital act?",
+   "a": "Substantially yes. BAA 78 and this act were passed and approved on the same days for the same province and carry the same devolution scheme, differing mainly in the municipality and the section heading of the continuity clause."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 79",
+  "line2": "Maluso General Hospital, Basilan",
+  "badges": [
+   "IN FORCE",
+   "Health",
+   "2025"
+  ],
+  "what_this_does": "Establishes a 25-bed Level I hospital in Maluso and sets a tested, monitored path to provincial ownership.",
+  "who_it_affects": "Residents of Maluso · the Provincial Government of Basilan"
+ },
+ "views": {
+  "simple": "Establishes a 25-bed Level I general hospital in Maluso, Basilan, built and run by the region, with a capability-tested transfer to the provincial government, a one-year handover timetable, continuing regional support afterwards, and parliamentary monitoring.",
+  "official": "AN ACT ESTABLISHING A LEVEL I GENERAL HOSPITAL IN THE MUNICIPALITY OF MALUSO, PROVINCE OF BASILAN, AND APPROPRIATING FUNDS THEREFOR"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 79, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

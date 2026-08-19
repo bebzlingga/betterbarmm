@@ -1,171 +1,267 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 39,
-    "short_title": "Governs the Observance of Regular and Special Holidays",
-    "official_title": "AN ACT GOVERNING THE OBSERVANCE OF REGULAR AND SPECIAL HOLIDAYS IN BARMM (REPEALING MMA ACT 17)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2023-07-20",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Governs the Observance of Regular and Special Holidays in BARMM (repealing MMA Act 17).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Governs the Observance of Regular and Special Holidays in BARMM (repealing MMA Act 17).",
-    "who_will_be_affected": [
-      "Employees & students",
-      "Communities"
-    ],
-    "when_will_it_take_effect": "Ratified 2023-07-20; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "An identity law: it defines an official symbol or observance of the Bangsamoro (flag, emblem, hymn, seal, calendar, holidays, or memorials). It doesn't hand out benefits, but it shapes the public face of the region you live in - what flies over government buildings, what days are non-working, how the Bangsamoro story is told.",
-      "in_practice": [
-        "Government offices, schools, and LGUs must use/observe it",
-        "Holiday-related acts affect work and class suspensions region-wide",
-        "Memorial acts create public sites and commemorations"
-      ],
-      "for_specific_groups": {
-        "Employees & students": "Regional holidays and observances flow from these laws",
-        "Communities": "Shared symbols of the autonomy won through the peace process"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Identity, recognition, and (for holiday laws) actual days off.",
-        "direct_benefits": [
-          {
-            "benefit": "Non-working regional holidays (Islamic and historic dates) with holiday-pay rules",
-            "who_gets_it": "Workers and students in BARMM",
-            "how_to_access": "Automatic on proclaimed dates; check pay rules with HR"
-          },
-          {
-            "benefit": "Official identity: the symbols/observances of your autonomous region",
-            "who_gets_it": "All residents",
-            "how_to_access": "Public display and observance"
-          }
-        ],
-        "indirect_benefits": [
-          "Cultural pride and the normalization of Bangsamoro identity in public life"
-        ],
-        "limitations": [
-          "Symbolic laws confer no monetary claims"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Repeals: MMA Act No. 17 (ARMM)",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 39,
+  "short_title": "Bangsamoro Holidays Act of 2023",
+  "official_title": "AN ACT GOVERNING THE OBSERVANCE OF REGULAR AND SPECIAL HOLIDAYS IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO (BARMM), REPEALING FOR THE PURPOSE MUSLIM MINDANAO AUTONOMY ACT NO. 17",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2023-07-20",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Second Regular Session (begun 15 September 2022)",
+  "date_passed": "2023-07-20",
+  "date_passed_hijri": "Muharram 02, 1445",
+  "date_approved_by_chief_minister": "2023-08-17",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "other",
-      "symbols_identity"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2023-07-20"
-    }
+  "effectivity": "15 days after completion of publication in the Bangsamoro Gazette or at least one newspaper of general circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Sets the region's own holidays — which days are non-working, which are working, and who declares them — and confirms that private sector workers get national holiday pay rules until the region writes its own labour code.",
+  "why_was_it_proposed": "To replace the old ARMM holiday law with one that recognises the Bangsamoro's own history and religious calendar, upholds workers' rights and well-being, and keeps the regional economy competitive.",
+  "what_will_change": "Four regular non-working holidays and two special non-working holidays are fixed, alongside nine special working holidays. The Chief Minister must publish next year's holidays by 31 December each year, and Islamic dates are set on the Grand Mufti's recommendation.",
+  "who_will_be_affected": [
+   "Every private sector worker and employer in the BARMM",
+   "All regional government branches, agencies and local government units",
+   "BARMM offices located outside the region, which are also covered",
+   "Anyone whose legal deadline falls on a holiday"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": "MMA Act No. 17 (ARMM)",
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Office of the Chief Minister",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2023-07-20 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Office of the Chief Minister (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 39",
-    "line2": "Governs the Observance of Regular and Special Holidays",
-    "badges": [
-      "ENACTED",
-      "Symbols Identity",
-      "2023"
+  "when_will_it_take_effect": "In force since 2023 — 15 days after completion of publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. The region has its own holidays. Four are regular non-working days, two more are special non-working, and nine are working holidays. Private sector holiday pay follows the national Labor Code until the Bangsamoro writes its own.",
+   "in_practice": [
+    "Regular non-working holidays: Bangsamoro Foundation Day (21 January), Eid'l Fit'r (Shawwal 1), Eid'l Adha (Dhul Hijja 10), Day of Shuhada (18 March)",
+    "Special non-working holidays: Day of Arafah (Dhul Hijja 9) and the 1st Day of Tashriq (Dhul Hijja 11)",
+    "Special working holidays include Bangsamoro Day of Solidarity (1 February), Battle of Bud Daho Day (6 March), the Comprehensive Agreement on the Bangsamoro signing (27 March), Battle of Bayang Day (2 May), the MNLF–OIC–GRP 1996 Final Peace Agreement and 1976 Tripoli Agreement (2 September), Shiek Karimul Makhdum Day (7 November), Shariff Kabunsuan Day (19 December), and Bangsamoro Indigenous Peoples' Thanksgiving Day",
+    "The Chief Minister issues a proclamation on or before 31 December each year listing the next year's holidays",
+    "Islamic holiday dates follow the Grand Mufti of the Bangsamoro Darul Ifta's recommendation",
+    "If a legal deadline falls on a holiday, the act may be done on the next business day"
+   ],
+   "for_specific_groups": {
+    "Private sector workers": "You are covered — Section 4 binds the private sector, and Section 12 applies the national Labor Code's holiday compensation rules until a Bangsamoro Labor Code exists.",
+    "Employers": "Holidays under this act must be officially observed by the private sector as well as by government.",
+    "BARMM staff posted outside the region": "Section 4 covers BARMM offices located outside its territorial jurisdiction.",
+    "Local governments": "You can endorse a founding-anniversary holiday by council resolution, and must give the Chief Minister's office at least 15 days' notice.",
+    "Indigenous Peoples": "Bangsamoro Indigenous Peoples' Thanksgiving Day is a special working holiday, set on the day the IP Code is enacted.",
+    "Anyone with a filing deadline": "Section 13 lets you do it on the next business day if the deadline falls on a holiday."
+   },
+   "where_this_applies": "The BARMM, its constituent LGUs, and BARMM offices outside the region.",
+   "when_you_will_feel_it": "Every year — the Chief Minister's proclamation is due by 31 December for the following year.",
+   "what_you_can_do": [
+    "Look for the Chief Minister's annual proclamation, due on or before 31 December, for next year's dates",
+    "Check whether a day is working or non-working — the proclamation must say which",
+    "If you are in the private sector, holiday pay follows the national Labor Code rules",
+    "Ask your LGU to endorse a local founding-anniversary holiday by resolution"
+   ],
+   "watch_out_for": [
+    "Special *working* holidays are commemorations, not days off — most of the historical dates fall in this category.",
+    "Islamic holidays move with the Hijri calendar, so the exact date each year comes from the Grand Mufti's recommendation and the Chief Minister's proclamation.",
+    "A special non-working holiday must be proclaimed at least 5 days before the date, and endorsements need 15 days' notice.",
+    "The act sets no penalty for an employer who fails to observe a holiday; enforcement runs through labour law."
+   ],
+   "key_terms_explained": {
+    "Regular non-working holiday": "A day off observed throughout the region, with national and regional holidays provided by law.",
+    "Special working holiday": "A commemorative day that is still a working day.",
+    "Day of Shuhada": "Day of the Martyrs, 18 March.",
+    "Grand Mufti": "The highest authority of the Bangsamoro Darul Ifta', who recommends the actual dates of Islamic holidays.",
+    "Pretermission": "Moving an act to the next business day when its deadline falls on a holiday.",
+    "PD 1083": "The Code on Muslim Personal Laws of the Philippines, whose other holidays are treated as special working holidays."
+   },
+   "status_note": "Passed Muharram 02, 1445 / 20 July 2023, approved by the Chief Minister on 17 August 2023.",
+   "benefits": {
+    "headline": "The region's own holiday calendar, with national holiday pay rules confirmed for private sector workers.",
+    "direct_benefits": [
+     {
+      "benefit": "Four regular non-working holidays and two special non-working holidays",
+      "who_gets_it": "Workers across the region, public and private",
+      "how_to_access": "Observed automatically; dates confirmed in the annual proclamation"
+     },
+     {
+      "benefit": "Holiday compensation under the national Labor Code",
+      "who_gets_it": "Private sector employees in the BARMM",
+      "how_to_access": "Section 12, pending a Bangsamoro Labor Code"
+     },
+     {
+      "benefit": "An annual published list of next year's holidays",
+      "who_gets_it": "Everyone planning around them",
+      "how_to_access": "Chief Minister's proclamation, due on or before 31 December"
+     },
+     {
+      "benefit": "Extra time when a deadline falls on a holiday",
+      "who_gets_it": "Anyone with a legal filing deadline",
+      "how_to_access": "Section 13"
+     }
     ],
-    "what_this_does": "Governs the Observance of Regular and Special Holidays in BARMM (repealing MMA Act 17).",
-    "who_it_affects": "General public",
-    "effective": "2023-07-20"
-  },
-  "views": {
-    "simple": "Governs the Observance of Regular and Special Holidays in BARMM (repealing MMA Act 17).",
-    "official": "AN ACT GOVERNING THE OBSERVANCE OF REGULAR AND SPECIAL HOLIDAYS IN BARMM (REPEALING MMA ACT 17)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Funded commemorative activities — ministries, agencies and LGUs must allocate funds for them",
+     "A route for localities to have their founding anniversary proclaimed"
+    ],
+    "limitations": [
+     "Most historical commemorations are working holidays, not days off.",
+     "No penalty in this act for non-observance.",
+     "Islamic dates are not fixed in advance in the act itself."
+    ]
+   },
+   "your_responsibilities": {
+    "for_employers": [
+     "Officially observe the holidays provided under the act",
+     "Apply national Labor Code holiday compensation rules to private sector employees"
+    ],
+    "for_government_and_lgus": [
+     "Allocate funds and conduct activities commemorating the holidays",
+     "Give the Chief Minister's office at least 15 days' notice with a certified copy of any endorsing resolution"
+    ],
+    "for_citizens": [
+     "None."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment.",
+    "note": "Holiday pay obligations on private employers are enforced through the Labor Code of the Philippines, which Section 12 applies pending a Bangsamoro Labor Code."
+   },
+   "where_to_complain": {
+    "first_stop": "Office of the Chief Minister, which proclaims the holidays",
+    "for_pay_disputes": "Labour authorities applying the Labor Code of the Philippines, per Section 12",
+    "for_local_holidays": "Bangsamoro Commission for the Preservation of Cultural Heritage, which recommends localized proclamations",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A shop worker in Cotabato City works on Eid'l Fit'r. That is a regular non-working holiday, and holiday compensation follows the national Labor Code under Section 12.",
+    "A municipality wants its founding anniversary declared a special non-working holiday. Its Sangguniang Bayan passes a resolution, endorses it to the Chief Minister, and the office must have notice and a certified copy at least 15 days before the date.",
+    "A permit application is due on the Day of Shuhada. Section 13 lets it be filed on the next business day.",
+    "A family plans around Eid'l Adha. The exact date follows the Hijri calendar, recommended by the Grand Mufti and confirmed in the Chief Minister's annual proclamation issued by 31 December."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Bangsamoro Holidays Act of 2023”.",
+  "Section 2 — Policy: recognise regional and local public holidays preserving the history, tradition and cultural heritage of the Bangsamoro and other peoples in the BARMM, reflective of their system of life as prescribed by their faith; uphold the rights and well-being of workers; and promote the vibrance and competitiveness of the regional economy.",
+  "Section 3 — Defines regular non-working holidays as national and regional holidays provided by law observed throughout the area of autonomy, and special holidays as non-regular holidays in the region and certain LGUs marking historical, religious and other significant events. Special holidays may be classified as working or non-working days.",
+  "Section 4 — Coverage: holidays under the act are officially observed by the private sector and by all branches, subdivisions, instrumentalities and agencies of the regional government including constituent LGUs, and by all BARMM offices located outside its territorial jurisdiction.",
+  "Section 5 — Regular non-working holidays: Bangsamoro Foundation Day (21 January), Eid'l Fit'r (Shawwal 1), Eid'l Adha (Dhul Hijja 10) and the Day of Shuhada (18 March). Special non-working holidays: the Day of Arafah (Dhul Hijja 9) and the 1st Day of Tashriq (Dhul Hijja 11). Special working holidays: holidays under Presidential Decree 1083 other than those named here, Bangsamoro Day of Solidarity (1 February), Battle of Bud Daho Day (6 March), the signing of the Comprehensive Agreement on the Bangsamoro (27 March), Battle of Bayang Day (2 May), Shiek Karimul Makhdum Day (7 November), Shariff Kabunsuan Day (19 December), the signing of the MNLF–OIC–GRP 1996 Final Peace Agreement and 1976 Tripoli Agreement (2 September), and Bangsamoro Indigenous Peoples' Thanksgiving Day on the day of the enactment of the IP Code. The Chief Minister may modify actual dates of observance by proclamation.",
+  "Section 6 — The Grand Mufti of the Bangsamoro Darul Ifta' recommends to the Chief Minister the actual dates for declaring Islamic holidays based on the Hijri calendar.",
+  "Section 7 — Days of historical significance to specific LGUs may be proclaimed special non-working holidays in that locality by the Chief Minister, on the recommendation of the Bangsamoro Commission for the Preservation of Cultural Heritage, which formulates guidelines; LGUs submit proposals at least 15 days before.",
+  "Section 8 — All ministries, agencies, offices and instrumentalities, including LGUs, shall allocate funds and conduct activities commemorating the holidays.",
+  "Sections 9–10 — Regional and local special holidays require official proclamation by the Chief Minister stating whether they are working or non-working. Parliament or the relevant local council may endorse by resolution; the Office of the Chief Minister must receive notice and a certified copy at least 15 calendar days before, and any proclamation of a special non-working holiday must be made at least 5 days before the date.",
+  "Section 11 — The Chief Minister shall issue a proclamation on or before 31 December each year declaring the regular and special holidays to be observed in the next succeeding year.",
+  "Section 12 — Pending enactment of a Bangsamoro Labor Code, the holiday compensation provisions of the Labor Code of the Philippines apply to private sector employees within the BARMM.",
+  "Section 13 — Where the day, or last day, for performing any act required or permitted by law falls on a regular or special holiday, the act may be done on the next succeeding business day.",
+  "Section 15 — Repeals Muslim Mindanao Autonomy Act No. 17 and all other regional issuances pertaining to regional holidays.",
+  "Section 16 — Takes effect 15 days after completion of publication in the Bangsamoro Gazette or at least one newspaper of general circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Workers across the BARMM",
+   "Private sector employees",
+   "Local communities marking their own histories"
+  ],
+  "impact_tags": [
+   "labor_social",
+   "culture_heritage",
+   "governance_civil_service"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "No amount stated. Section 8 requires ministries, agencies and LGUs to allocate funds for commemorative activities from their own budgets.",
+  "figures_note": "The act states dates and notice periods rather than sums."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2023-07-20"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-39.pdf",
+  "irr": "Guidelines for localized proclamations to be formulated by the Bangsamoro Commission for the Preservation of Cultural Heritage. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": "Muslim Mindanao Autonomy Act No. 17, and other regional issuances on regional holidays",
+  "origin_bill": "Bill 192",
+  "related_note": "Applies Presidential Decree 1083 (Code on Muslim Personal Laws) and, pending a Bangsamoro Labor Code, the holiday compensation rules of the Labor Code of the Philippines. Islamic dates are set through the Bangsamoro Darul Ifta', also the implementing body for the dual calendar act (BAA 20)."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": null,
+  "irr_status": "Section 7 requires the BCPCH to formulate guidelines for localized proclamations.",
+  "note": "Read from the enacted text as signed. Section 11 requires an annual proclamation on or before 31 December; those proclamations are not captured by this registry."
+ },
+ "citizen_questions": [
+  {
+   "q": "Which days are actual days off?",
+   "a": "Four regular non-working holidays — Bangsamoro Foundation Day (21 January), Eid'l Fit'r, Eid'l Adha and the Day of Shuhada (18 March) — plus two special non-working holidays, the Day of Arafah and the 1st Day of Tashriq."
+  },
+  {
+   "q": "Are the historical commemorations days off?",
+   "a": "Mostly no. Bud Daho, Bayang, the Comprehensive Agreement signing, the 1996 Final Peace Agreement and the rest are special *working* holidays — commemorated, but still working days."
+  },
+  {
+   "q": "Do private companies have to follow this?",
+   "a": "Yes. Section 4 says holidays under the act are officially observed by the private sector as well as by government."
+  },
+  {
+   "q": "What about holiday pay?",
+   "a": "Pending a Bangsamoro Labor Code, Section 12 applies the holiday compensation provisions of the Labor Code of the Philippines to private sector employees in the region."
+  },
+  {
+   "q": "How do I know the exact dates each year?",
+   "a": "The Chief Minister must issue a proclamation on or before 31 December each year listing the next year's holidays. Islamic dates follow the Grand Mufti's recommendation under the Hijri calendar."
+  },
+  {
+   "q": "What if a legal deadline lands on a holiday?",
+   "a": "Section 13 lets the act be done on the next succeeding business day."
+  },
+  {
+   "q": "Can my town have its own holiday?",
+   "a": "Yes. A local council can endorse its founding anniversary by resolution to the Chief Minister, with at least 15 days' notice, and days of local historical significance can be proclaimed on the cultural heritage commission's recommendation."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 39",
+  "line2": "Bangsamoro Holidays Act of 2023",
+  "badges": [
+   "IN FORCE",
+   "Labor & Social",
+   "2023"
+  ],
+  "what_this_does": "Sets the region's own holidays, who declares them, and confirms holiday pay for private sector workers.",
+  "who_it_affects": "Every worker and employer in the BARMM · LGUs · government offices"
+ },
+ "views": {
+  "simple": "Sets the Bangsamoro's own regular and special holidays, requires an annual proclamation of next year's dates, and applies national holiday pay rules to private sector workers pending a Bangsamoro Labor Code.",
+  "official": "AN ACT GOVERNING THE OBSERVANCE OF REGULAR AND SPECIAL HOLIDAYS IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO (BARMM), REPEALING FOR THE PURPOSE MUSLIM MINDANAO AUTONOMY ACT NO. 17"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 39, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

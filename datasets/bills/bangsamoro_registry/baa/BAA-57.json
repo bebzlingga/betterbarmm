@@ -1,176 +1,253 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 57,
-    "short_title": "Provides Financial Assistance to Bangsamoro Mujahideen; Creating the",
-    "official_title": "AN ACT PROVIDING FINANCIAL ASSISTANCE TO BANGSAMORO MUJAHIDEEN; CREATING THE OFFICE OF THE BANGSAMORO MUJAHIDEEN UNDER SPECIAL CIRCUMSTANCE",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2024-02-26",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Provides Financial Assistance to Bangsamoro Mujahideen; Creating the Office of the Bangsamoro Mujahideen under Special Circumstance.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Provides Financial Assistance to Bangsamoro Mujahideen; Creating the Office of the Bangsamoro Mujahideen under Special Circumstance.",
-    "who_will_be_affected": [
-      "Former combatants & families",
-      "Conflict-affected communities",
-      "Everyone"
-    ],
-    "when_will_it_take_effect": "Ratified 2024-02-26; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Provides financial assistance to Bangsamoro mujahideen - former fighters of the liberation fronts - and creates a dedicated office for them. It converts a core peace-agreement promise (that those who fought will not be left behind) into a legal entitlement.",
-      "in_practice": [
-        "Creates the Office of the Bangsamoro Mujahideen to run the assistance program",
-        "Assistance reaches decommissioned combatants and their communities",
-        "Part of 'normalization' - the peace process track that transforms combatants and camps into civilian life"
-      ],
-      "for_specific_groups": {
-        "Former combatants & families": "A legal basis to claim assistance - ask the Office of the Bangsamoro Mujahideen or your base command about qualification",
-        "Conflict-affected communities": "Camp-transformation and community programs ride on this framework",
-        "Everyone": "Sustained peace dividends depend on commitments like this being honored"
-      },
-      "where_this_applies": "All of BARMM unless the title names a specific place",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "The peace agreement's promise to fighters, made claimable.",
-        "direct_benefits": [
-          {
-            "benefit": "Financial assistance for qualified Bangsamoro mujahideen",
-            "who_gets_it": "Former fighters (per the Act's criteria)",
-            "how_to_access": "Through the Office of the Bangsamoro Mujahideen / base commands"
-          },
-          {
-            "benefit": "A dedicated office responsible for their welfare",
-            "who_gets_it": "Mujahideen and families",
-            "how_to_access": "Office of the Bangsamoro Mujahideen"
-          }
-        ],
-        "indirect_benefits": [
-          "Every assisted ex-combatant is one more stake in peace holding"
-        ],
-        "limitations": [
-          "Qualification criteria and validation apply - assistance is not automatic",
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service."
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 57,
+  "short_title": "Bangsamoro Mujahideen Under Special Circumstance Act of 2024",
+  "official_title": "AN ACT PROVIDING FOR FINANCIAL ASSISTANCE TO BANGSAMORO MUJAHIDEEN AND CREATING THE OFFICE OF THE BANGSAMORO MUJAHIDEEN UNDER SPECIAL CIRCUMSTANCE, DEFINING ITS BASIC ORGANIZATIONAL STRUCTURE, PROVIDING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2024-02-26",
+  "current_status": "ENACTED - IN FORCE",
+  "date_passed": "2024-02-26",
+  "date_approved_by_chief_minister": "2024-03-13",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Conflict-affected communities",
-      "Former combatants"
-    ],
-    "impact_tags": [
-      "institution_commission",
-      "labor_social",
-      "peace_security_justice"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2024-02-26"
-    }
+  "session": "Second Regular Session (begun 15 September 2022)",
+  "effectivity": "15 days after publication in the Official Gazette or a newspaper of regional circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Pays a lifetime pension of ₱7,000 a month to elderly or permanently disabled MILF and MNLF fighters who took part in the Bangsamoro struggle for at least 20 years and are poor, and creates an office inside the Office of the Chief Minister to run it.",
+  "why_was_it_proposed": "The act's policy section states the Bangsamoro Government's aim of ensuring every Bangsamoro is provided basic necessities and equal opportunities, with economic mechanisms tailored to its people's needs. It addresses combatants who gave two decades to the struggle and reached old age or permanent disability without income.",
+  "what_will_change": "A qualified Mujahideen receives ₱7,000 a month for life — paid as a single ₱84,000 lump sum in the first year of implementation, then quarterly thereafter. A dedicated office, the OBMUSC, validates claimants, keeps the register, and must review whether ₱7,000 is still enough every 3 years.",
+  "who_will_be_affected": [
+   "Male and female members of the MILF and the MNLF who are senior citizens and/or have a permanent partial or total disability",
+   "…who meaningfully participated in the struggle for Bangsamoro self-determination between 1969 and 2014, for at least 20 years",
+   "…and who are underprivileged: annual income of not more than ₱250,000",
+   "The Central Committees of the MILF and the MNLF, which supply the list of qualified and validated beneficiaries",
+   "Bangsamoro taxpayers — ₱500 million was appropriated for initial implementation"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "MOLE / MSSD",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2024-02-26 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "MOLE / MSSD (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 57",
-    "line2": "Provides Financial Assistance to Bangsamoro Mujahideen; Creating the",
-    "badges": [
-      "ENACTED",
-      "Institution Commission",
-      "Labor Social",
-      "2024"
+  "when_will_it_take_effect": "In force. It took effect 15 days after publication in the Official Gazette or a newspaper of regional circulation.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. If you fought with the MILF or MNLF for at least 20 years between 1969 and 2014, are now a senior citizen or permanently disabled, and earn no more than ₱250,000 a year, you are entitled to ₱7,000 a month for life.",
+   "in_practice": [
+    "₱7,000 per month, for life, and it cannot be transferred to anyone else",
+    "First year: paid as one lump sum of ₱84,000 covering the whole year",
+    "Later years: paid quarterly",
+    "If you qualify as both a senior citizen and as permanently disabled, you are counted under one of the two — the allowance is not doubled",
+    "The amount must be reviewed against the cost of living every 3 years"
+   ],
+   "for_specific_groups": {
+    "Elderly former combatants": "Qualify on age plus 20 years' meaningful participation plus the income ceiling.",
+    "Permanently disabled former combatants": "The act lists what counts. Partial: loss of use of any finger, one arm, one foot, any toe, one hand, one leg, one or both ears, hearing in one or both ears, or sight in one eye. Total: blindness in both eyes, loss of two limbs at or above the ankle or wrists, permanent paralysis of two limbs, or brain injury causing incurable incapacity. The office may approve other cases.",
+    "Women who fought": "The act says male and female members expressly — it is not limited to men.",
+    "Families": "The pension is non-transferrable, so it does not pass to heirs.",
+    "Everyone else": "No entitlement, but ₱500 million of public money was appropriated to start it."
+   },
+   "where_this_applies": "The Bangsamoro Autonomous Region in Muslim Mindanao.",
+   "when_you_will_feel_it": "The law is in force. Payment depends on being on the validated register held by the OBMUSC.",
+   "what_you_can_do": [
+    "Check the three tests together: 20 years of meaningful participation between 1969 and 2014, senior citizen or permanent disability, and annual income not over ₱250,000",
+    "Get on the list through the Central Committee of the MILF or the MNLF — the act routes validation through them",
+    "Approach the Office of the Bangsamoro Mujahideen Under Special Circumstance, a division of the Office of the Chief Minister",
+    "Ask for the implementing rules: the act required a technical working group to issue them within 90 days of effectivity"
+   ],
+   "watch_out_for": [
+    "\"Meaningful participation\" is defined narrowly — actual combat, logistics, or medical participation.",
+    "The 20-year requirement and the 1969–2014 window are strict, and the act does not say how service is proved; that is left to the implementing rules and to the MILF and MNLF central committees.",
+    "The pension is non-transferrable and does not pass to survivors.",
+    "₱7,000 is fixed in the text; only the three-yearly cost-of-living review can raise the question of changing it."
+   ],
+   "key_terms_explained": {
+    "Mujahideen Under Special Circumstance": "Male and female MILF or MNLF members who are senior citizens and/or have a permanent partial or total disability.",
+    "Meaningful participation": "Actual combat, logistics, or medical participation — as defined by the act.",
+    "Underprivileged": "Annual income of not more than ₱250,000.",
+    "OBMUSC": "Office of the Bangsamoro Mujahideen Under Special Circumstance, a division under the Office of the Chief Minister.",
+    "IRR": "Implementing rules and regulations — the detailed rules that make an act work in practice."
+   },
+   "benefits": {
+    "headline": "₱7,000 a month for life for qualified elderly or permanently disabled MILF and MNLF veterans.",
+    "direct_benefits": [
+     {
+      "benefit": "Cash allowance of ₱7,000 per month, for life",
+      "who_gets_it": "Qualified Mujahideen under special circumstance",
+      "amount": "₱7,000/month — ₱84,000 lump sum in the first year, quarterly thereafter",
+      "how_to_access": "Validation via the MILF or MNLF Central Committee and the OBMUSC register"
+     },
+     {
+      "benefit": "A standing office to process claims, hold the register and handle availment",
+      "who_gets_it": "All claimants",
+      "how_to_access": "OBMUSC — Processing and Validation, Benefit Availment, and Monitoring Evaluation sections"
+     },
+     {
+      "benefit": "A mandatory review of whether the allowance is still enough, every 3 years",
+      "who_gets_it": "All beneficiaries",
+      "how_to_access": "Conducted by the OBMUSC"
+     }
     ],
-    "what_this_does": "Provides Financial Assistance to Bangsamoro Mujahideen; Creating the Office of the Bangsamoro Mujahideen under Special Circumstance.",
-    "who_it_affects": "Conflict-affected communities · Former combatants",
-    "effective": "2024-02-26"
-  },
-  "views": {
-    "simple": "Provides Financial Assistance to Bangsamoro Mujahideen; Creating the Office of the Bangsamoro Mujahideen under Special Circumstance.",
-    "official": "AN ACT PROVIDING FINANCIAL ASSISTANCE TO BANGSAMORO MUJAHIDEEN; CREATING THE OFFICE OF THE BANGSAMORO MUJAHIDEEN UNDER SPECIAL CIRCUMSTANCE"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Recognition in law of service given during the struggle",
+     "A validated register that makes the beneficiary population countable for the first time"
+    ],
+    "limitations": [
+     "Non-transferrable and not inheritable.",
+     "No double allowance for someone who is both a senior citizen and permanently disabled.",
+     "The act sets no application deadline, no appeal route, and no penalty for a wrongly refused claim."
+    ]
+   },
+   "status_note": "Passed by Parliament on 26 February 2024 and approved by the Chief Minister on 13 March 2024.",
+   "your_responsibilities": {
+    "for_claimants": [
+     "Be validated through the MILF or MNLF Central Committee list",
+     "Meet the income ceiling of ₱250,000 a year"
+    ],
+    "note": "The act itself imposes no fee, filing deadline or reporting duty on beneficiaries."
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment.",
+    "note": "There is also no stated penalty for a fraudulent claim — the act relies on validation rather than sanction."
+   },
+   "where_to_complain": {
+    "first_stop": "Office of the Bangsamoro Mujahideen Under Special Circumstance (OBMUSC)",
+    "oversight": "Office of the Chief Minister, which has operational supervision and control over the OBMUSC",
+    "validation_disputes": "The Central Committees of the MILF and the MNLF, which supply the validated list",
+    "note": "The act creates no appeals procedure of its own."
+   },
+   "everyday_scenarios": [
+    "Ustadz Karim, 68, fought with the MILF from 1980 to 2005 and now farms a small plot earning about ₱90,000 a year. He meets all three tests — age, 20+ years within 1969–2014, and the income ceiling — so he is entitled to ₱7,000 a month for life, starting with an ₱84,000 lump sum.",
+    "Bai Amina lost the sight of one eye in the fighting. That is a permanent partial disability under the act, so she can qualify on disability even though she is not yet a senior citizen — if her service and income also qualify.",
+    "Hadji Musa is both 70 and permanently disabled. He is counted under one category only: the allowance is ₱7,000, not ₱14,000.",
+    "Karim's son cannot inherit the pension when his father dies — the act makes it non-transferrable."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Bangsamoro Mujahideen Under Special Circumstance Act of 2024”.",
+  "Section 2 — Creates the Office of the Bangsamoro Mujahideen Under Special Circumstance (OBMUSC) under the operational supervision and control of the Office of the Chief Minister, as one of its component divisions.",
+  "Section 3 — Purpose: financial assistance to MILF and MNLF Mujahideen who are senior citizens and/or permanently disabled, and the establishment of the OBMUSC.",
+  "Section 5 — Defines meaningful participation (actual combat, logistics, medical), permanent partial disability (loss of use of a finger, arm, foot, toe, hand, leg, one or both ears, hearing, or sight of one eye), permanent total disability (blindness in both eyes, loss of two limbs at or above the ankle or wrists, paralysis of two limbs, brain injury causing incurable incapacity), and underprivileged (annual income not more than ₱250,000).",
+  "Section 6 — Qualification: senior citizens, and permanently disabled Mujahideen, who meaningfully participated in the struggle for Bangsamoro self-determination between 1969 and 2014 for at least 20 years and are underprivileged. Someone qualifying under both heads is counted under one for the allowance. Benefits are lifetime and non-transferrable.",
+  "Section 7 — Cash allowance of ₱7,000 per month: a lump sum of ₱84,000 for the first year of implementation, then quarterly releases in succeeding fiscal years.",
+  "Section 8 — OBMUSC is headed by a Director II, with a Processing and Validation Section, a Benefit Availment Section, and a Monitoring Evaluation Section.",
+  "Section 9 — The Director II is appointed by the Interim Chief Minister for a three-year term, without prejudice to reappointment, which is on a yearly basis.",
+  "Section 10 — OBMUSC extends assistance, maintains an updated register of qualified beneficiaries, conducts a mandatory cost-of-living review of the allowance every 3 years, and performs other functions under the IRR or as assigned by the Chief Minister.",
+  "Section 11 — ₱500,000,000 appropriated for initial implementation upon effectivity; thereafter such sums as needed are included in the annual General Appropriations Act of the Bangsamoro under the Office of the Chief Minister.",
+  "Section 12 — The OCM, with the Committee on Social Services and Development, creates a technical working group to issue implementing rules within 90 days of effectivity; the TWG coordinates with the MILF and MNLF Central Committees for the list of qualified and validated beneficiaries.",
+  "Section 15 — Takes effect 15 days after publication in the Official Gazette or a newspaper of regional circulation in the BARMM."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Elderly MILF and MNLF veterans",
+   "Permanently disabled former combatants",
+   "Conflict-affected communities"
+  ],
+  "impact_tags": [
+   "labor_social",
+   "peace_security_justice",
+   "institution_commission",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱500,000,000 for initial implementation; thereafter through the annual General Appropriations Act under the Office of the Chief Minister",
+  "benefit_per_person": "₱7,000 per month for life (₱84,000 lump sum in the first year)",
+  "figures_note": "Figures are quoted from Sections 7 and 11 of the enacted text. The number of qualified beneficiaries is not stated in the act — it depends on the register the OBMUSC builds with the MILF and MNLF central committees."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2024-02-26"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/05/BAA-57.pdf",
+  "irr": "Required within 90 days of effectivity; not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 44"
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱500,000,000 initial",
+  "irr_status": "The act required implementing rules within 90 days of effectivity. Whether they were issued is not recorded here.",
+  "note": "Read from the enacted text as signed. Payment in practice depends on the OBMUSC register, which is built from lists supplied by the MILF and MNLF central committees."
+ },
+ "citizen_questions": [
+  {
+   "q": "Do I qualify?",
+   "a": "Three tests must all be met: you meaningfully participated in the struggle for Bangsamoro self-determination between 1969 and 2014 for at least 20 years; you are a senior citizen and/or have a permanent partial or total disability; and your annual income is not more than ₱250,000."
+  },
+  {
+   "q": "How much will I receive, and when?",
+   "a": "₱7,000 a month for life. In the first year of implementation it is paid as one lump sum of ₱84,000 covering the whole year; after that it is released quarterly."
+  },
+  {
+   "q": "What counts as a permanent disability?",
+   "a": "Partial: complete and permanent loss of the use of any finger, one arm, one foot, any toe, one hand, one leg, one or both ears, hearing in one or both ears, or sight in one eye. Total: blindness in both eyes, loss of two limbs at or above the ankle or wrists, permanent complete paralysis of two limbs, or brain injury causing incurable incapacity. The office may approve other cases."
+  },
+  {
+   "q": "I am both elderly and disabled — do I get double?",
+   "a": "No. The act says someone falling under both heads is identified under one of the two so far as the amount of the cash allowance is concerned."
+  },
+  {
+   "q": "Can my family keep receiving it after I die?",
+   "a": "No. The benefit is lifetime and non-transferrable."
+  },
+  {
+   "q": "How do I get on the list?",
+   "a": "Validation runs through the Central Committees of the MILF and the MNLF, which supply the list of qualified and validated beneficiaries to the technical working group, and through the OBMUSC's Processing and Validation Section."
+  },
+  {
+   "q": "Where does the money come from?",
+   "a": "₱500 million was appropriated for initial implementation, and continuing costs are carried in the annual General Appropriations Act of the Bangsamoro under the Office of the Chief Minister."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 57",
+  "line2": "Bangsamoro Mujahideen Under Special Circumstance Act of 2024",
+  "badges": [
+   "IN FORCE",
+   "Social Welfare",
+   "2024"
+  ],
+  "what_this_does": "Pays ₱7,000 a month for life to elderly or permanently disabled MILF and MNLF veterans who served at least 20 years and are poor.",
+  "who_it_affects": "MILF and MNLF veterans · senior citizens · persons with disability"
+ },
+ "views": {
+  "simple": "A lifetime ₱7,000 monthly pension for elderly or permanently disabled MILF and MNLF veterans who served at least 20 years between 1969 and 2014 and earn under ₱250,000 a year.",
+  "official": "AN ACT PROVIDING FOR FINANCIAL ASSISTANCE TO BANGSAMORO MUJAHIDEEN AND CREATING THE OFFICE OF THE BANGSAMORO MUJAHIDEEN UNDER SPECIAL CIRCUMSTANCE, DEFINING ITS BASIC ORGANIZATIONAL STRUCTURE, PROVIDING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 57, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields were written from the enacted text on 18 August 2026, replacing rule-based transformations of the title. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

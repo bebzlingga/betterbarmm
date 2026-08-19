@@ -11,12 +11,16 @@ export function AwaitingData({ category, gaps }: { category: CategoryDefinition;
 	return (
 		<section className='mx-auto max-w-[88rem] px-6 py-12 lg:px-8'>
 			<Reveal>
-				<div className='card grid gap-10 p-8 sm:p-10 lg:grid-cols-[minmax(0,1fr)_minmax(16rem,0.75fr)] lg:gap-14'>
+				<div className='card grid gap-10 p-6 sm:p-10 lg:grid-cols-[minmax(0,1fr)_minmax(16rem,0.75fr)] lg:gap-14'>
 					<div>
 						<span className='badge badge-plain badge-idle'>Not yet compiled</span>
 
+						{/* The space after the label is explicit: the text that follows runs
+						    onto a second line, and JSX trims each line of a multi-line node
+						    — which ate it and printed "Journalhaven't". */}
 						<h2 className='mt-4 max-w-xl text-xl font-semibold leading-snug sm:text-2xl'>
-							{category.officialLabel} haven&rsquo;t been captured yet.
+							{category.officialLabel}{' '}
+							haven&rsquo;t been captured yet.
 						</h2>
 
 						<p className='mt-4 max-w-xl text-sm leading-6 text-[var(--ink-2)]'>

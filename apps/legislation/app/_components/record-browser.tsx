@@ -1,11 +1,12 @@
 'use client'
 
 import { FunnelIcon, XIcon } from '@phosphor-icons/react'
+import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useCallback, useDeferredValue, useEffect, useMemo, useState } from 'react'
 import { statusToneClass } from '../_lib/labels'
+import { recordHref } from '../_lib/categories'
 import type { FilterOption, LegislationDataset, LegislationRecord } from '../_lib/legislation-data'
-import { RecordDetail } from './record-detail'
 
 type SortKey = 'newest' | 'oldest' | 'number-desc' | 'number-asc'
 
@@ -87,13 +88,7 @@ function FilterGroup({
 	)
 }
 
-export function RecordBrowser({
-	dataset,
-	memberSlugs,
-}: {
-	dataset: LegislationDataset
-	memberSlugs?: Record<string, string>
-}) {
+export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 	const { records, category } = dataset
 	const router = useRouter()
 
@@ -103,37 +98,10 @@ export function RecordBrowser({
 	// Closed by default: the list is what a reader came for, and it gets the
 	// full width until they ask to narrow it. The button says what is behind it.
 	const [filtersOpen, setFiltersOpen] = useState(false)
-	const [selected, setSelected] = useState<LegislationRecord | null>(null)
 	const [pageCount, setPageCount] = useState(1)
 
 	// Deferring the query keeps typing responsive while the list re-filters.
 	const deferredQuery = useDeferredValue(query)
-
-	/* --- deep linking: ?focus=<number> opens a record, and opening one
-	   updates the URL so any record can be shared or bookmarked. --- */
-
-	useEffect(() => {
-		const focus = new URLSearchParams(window.location.search).get('focus')
-		if (!focus) return
-
-		const match = records.find((record) => String(record.number) === focus)
-		if (match) setSelected(match)
-	}, [records])
-
-	const openRecord = useCallback((record: LegislationRecord) => {
-		setSelected(record)
-		const params = new URLSearchParams(window.location.search)
-		params.set('focus', String(record.number))
-		window.history.replaceState(null, '', `?${params.toString()}`)
-	}, [])
-
-	const closeRecord = useCallback(() => {
-		setSelected(null)
-		const params = new URLSearchParams(window.location.search)
-		params.delete('focus')
-		const search = params.toString()
-		window.history.replaceState(null, '', search ? `?${search}` : window.location.pathname)
-	}, [])
 
 	/* --- filtering --- */
 
@@ -211,25 +179,141 @@ export function RecordBrowser({
 
 	return (
 		<>
-			<section className='mx-auto max-w-[88rem] px-6 py-12 lg:px-8'>
-				{/* Filters stand open in a column of their own rather than behind a
-				    toggle: on a registry the facets are half the point, and seeing
-				    what can be narrowed is what tells a reader the list is narrowable
-				    at all. The column sticks while the list scrolls past it, and the
-				    button beside the search folds it away for a reader who would
-				    rather have the width. */}
-				{/* Both axes animate, because the column is a column on a wide screen
-				    and a stacked block on a narrow one: the track width closes to
-				    nothing at `lg`, and everywhere the inner wrapper collapses its
-				    own row from `1fr` to `0fr`. */}
+			{/* Less air above the search than below it: the masthead already closes
+			    with its own bottom padding, and stacked the two ran to nearly a
+			    hundred pixels of nothing between the description and the field. */}
+			<section className='mx-auto max-w-[88rem] px-6 pb-12 pt-6 sm:pt-12 lg:px-8'>
+				{/* The facets live in a column of their own, opened from the button
+				    beside the search: on a registry they are half the point, and the
+				    column sticks while the list scrolls past it.
+
+				    The track changes width without a transition, and only the panel
+				    animates. Animating the column too meant the list was being
+				    re-flowed for the whole 300ms it took to open — every row rewrapping
+				    line by line — which reads as the page resizing its own contents
+				    rather than as a panel opening beside them. The list takes its new
+				    width in one step and stays still; the panel is the thing that
+				    moves, and it moves in the axis it actually grows in.
+
+				    Only the column gap is the wide-screen one — a row gap of six rem
+				    between the controls and the list is meaningless on a two-track
+				    layout where they sit in the same column. There is no row gap at
+				    all: the filter panel collapses to nothing rather than unmounting,
+				    and a gap either side of a zero-height row is dead space above the
+				    list whenever the filters are shut. The blocks carry their own
+				    margins instead. */}
 				<div
-					className={`grid gap-10 transition-[grid-template-columns,column-gap] duration-300 ease-out ${
+					className={`grid grid-cols-1 ${
 						filtersOpen
-							? 'lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)] lg:gap-24 xl:grid-cols-[minmax(0,24rem)_minmax(0,1fr)] xl:gap-32'
-							: 'lg:grid-cols-[minmax(0,0rem)_minmax(0,1fr)] lg:gap-0 xl:grid-cols-[minmax(0,0rem)_minmax(0,1fr)] xl:gap-0'
+							? 'lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)] lg:gap-x-24 xl:grid-cols-[minmax(0,24rem)_minmax(0,1fr)] xl:gap-x-32'
+							: 'lg:grid-cols-[minmax(0,0rem)_minmax(0,1fr)] lg:gap-x-0 xl:grid-cols-[minmax(0,0rem)_minmax(0,1fr)] xl:gap-x-0'
 					}`}
 				>
-					{/* ---- Column one: filters ----
+					{/* The three blocks are placed explicitly rather than by source
+					    order, because the order that reads is not the same at both
+					    layouts. Stacked, the panel has to open *below* the button that
+					    opens it: with the panel first, tapping Filters pushed the button
+					    out from under the reader's own thumb and drove the list off the
+					    bottom of the screen. In two tracks the filters are a column
+					    beside everything, so they span both rows. */}
+
+					{/* ---- Search, then the list it searches ----
+
+					    The row leads on a phone and heads column two on a wide screen. */}
+					<div className='order-1 min-w-0 lg:order-none lg:col-start-2 lg:row-start-1'>
+						{/* Stacked, the search takes the full width on its own line and the
+						    two controls that act on it share the line below — a full-width
+						    bar carrying nothing but a funnel glyph read as a broken field
+						    rather than as a button. From `sm` the three sit on one row,
+						    with the toggle where the column it controls begins.
+
+						    The search field takes 60% of that row rather than all of it —
+						    a full-width box over a list of short rows reads heavier than
+						    the thing it searches. */}
+						<div className='grid grid-cols-2 gap-2.5 sm:grid-cols-[auto_60%_1fr] sm:items-center'>
+							<button
+								type='button'
+								onClick={() => setFiltersOpen((current) => !current)}
+								aria-expanded={filtersOpen}
+								aria-controls='record-filters'
+								className='btn btn-quiet btn-field order-2 h-11 shrink-0 sm:order-none'
+							>
+								{/* The icon says what the button will do next: a funnel to
+								    open the facets, a cross to put them away. */}
+								{filtersOpen ? (
+									<XIcon size={15} weight='bold' aria-hidden='true' />
+								) : (
+									<FunnelIcon
+										size={15}
+										weight={activeCount > 0 ? 'fill' : 'regular'}
+										aria-hidden='true'
+									/>
+								)}
+								Filters
+								{activeCount > 0 ? (
+									<span className='num inline-flex size-[18px] items-center justify-center rounded-full bg-[var(--ink)] text-[11px] text-[var(--paper)]'>
+										{activeCount}
+									</span>
+								) : null}
+							</button>
+
+							<label className='relative order-1 col-span-2 block sm:order-none sm:col-span-1'>
+								<span className='sr-only'>Search {category.label}</span>
+								<svg
+									className='pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-[var(--ink-mute)]'
+									viewBox='0 0 24 24'
+									fill='none'
+									stroke='currentColor'
+									strokeWidth='2'
+									strokeLinecap='round'
+									aria-hidden='true'
+								>
+									<circle cx='11' cy='11' r='7' />
+									<path d='m20 20-3.5-3.5' />
+								</svg>
+								<input
+									value={query}
+									onChange={(event) => setQuery(event.target.value)}
+									onKeyDown={(event) => {
+										if (event.key === 'Escape') setQuery('')
+									}}
+									placeholder={`Search ${category.label.toLowerCase()} by number, title, sector, or author`}
+									className='field field-search'
+								/>
+							</label>
+
+							{/* Pushed to the far edge of the row, away from the search — it
+							    orders the list rather than narrowing it. */}
+							<label className='relative order-3 block sm:order-none sm:w-52 sm:justify-self-end'>
+								<span className='sr-only'>Sort</span>
+								<select
+									value={sort}
+									onChange={(event) => setSort(event.target.value as SortKey)}
+									className='field field-select cursor-pointer appearance-none'
+								>
+									{SORT_OPTIONS.map((option) => (
+										<option key={option.value} value={option.value}>
+											{option.label}
+										</option>
+									))}
+								</select>
+								<svg
+									className='pointer-events-none absolute right-3 top-1/2 size-3.5 -translate-y-1/2 text-[var(--ink-mute)]'
+									viewBox='0 0 24 24'
+									fill='none'
+									stroke='currentColor'
+									strokeWidth='2'
+									strokeLinecap='round'
+									strokeLinejoin='round'
+									aria-hidden='true'
+								>
+									<path d='m6 9 6 6 6-6' />
+								</svg>
+							</label>
+						</div>
+					</div>
+
+					{/* ---- The filters themselves ----
 
 					    The sticky element carries no overflow of its own: clipping it
 					    would make it its own scrollport and sticky would stop tracking
@@ -237,7 +321,7 @@ export function RecordBrowser({
 					<aside
 						id='record-filters'
 						aria-hidden={!filtersOpen}
-						className='lg:sticky lg:top-24 lg:self-start'
+						className='order-2 lg:order-none lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:sticky lg:top-24 lg:self-start'
 					>
 						<div
 							className={`grid overflow-hidden transition-[grid-template-rows,opacity] duration-300 ease-out ${
@@ -246,8 +330,27 @@ export function RecordBrowser({
 						>
 							{/* No heading over these: the chips say what they are, and the
 							    "Clear search and filters" link over the list already resets
-							    them. */}
-							<div className='grid min-h-0 gap-6 overflow-hidden lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:pr-1'>
+							    them.
+
+							    Six groups of chips is most of a phone screen, so open it
+							    scrolls within a cap rather than burying the results it is
+							    there to narrow. */}
+							{/* The space above the panel is padding inside the collapsing row rather
+							    than a margin on the column, so it closes with the panel instead of
+							    vanishing the moment the button is pressed and dropping the list by
+							    its own height.
+
+							    Pinned to the width of its own track from `lg`. The track collapses to
+							    nothing in one step, and a panel sized by that track would rewrap every
+							    chip into a zero-width column while it was still fading out. Given a
+							    width of its own it is simply clipped by the row above it. */}
+							<div
+								className={`grid min-h-0 gap-6 pt-7 lg:max-h-[calc(100vh-8rem)] lg:w-80 lg:pr-1 lg:pt-0 xl:w-96 ${
+									filtersOpen
+										? 'max-h-[60vh] overflow-y-auto overscroll-contain lg:max-h-[calc(100vh-8rem)]'
+										: 'overflow-hidden'
+								}`}
+							>
 								{/* Only on a view that reads more than one of Parliament's lists,
 							    where it is the first question a reader has: adopted, or still
 							    pending. Empty everywhere else, and an empty group renders
@@ -292,93 +395,11 @@ export function RecordBrowser({
 						</div>
 					</aside>
 
-					{/* ---- Column two: search, then the list it searches ---- */}
-					<div className='min-w-0'>
-						{/* The search field takes 60% of the row rather than all of it —
-						    a full-width box over a list of short rows reads heavier than
-						    the thing it searches. The filter toggle sits to its left,
-						    where the column it controls begins. */}
-						<div className='grid gap-2.5 sm:grid-cols-[auto_60%_1fr] sm:items-center'>
-							<button
-								type='button'
-								onClick={() => setFiltersOpen((current) => !current)}
-								aria-expanded={filtersOpen}
-								aria-controls='record-filters'
-								className='btn btn-quiet btn-field h-11 shrink-0'
-							>
-								{/* The icon says what the button will do next: a funnel to
-								    open the facets, a cross to put them away. */}
-								{filtersOpen ? (
-									<XIcon size={15} weight='bold' aria-hidden='true' />
-								) : (
-									<FunnelIcon
-										size={15}
-										weight={activeCount > 0 ? 'fill' : 'regular'}
-										aria-hidden='true'
-									/>
-								)}
-								<span className='hidden sm:inline'>Filters</span>
-								{activeCount > 0 ? (
-									<span className='num inline-flex size-[18px] items-center justify-center rounded-full bg-[var(--ink)] text-[11px] text-[var(--paper)]'>
-										{activeCount}
-									</span>
-								) : null}
-							</button>
+					{/* ---- The list itself ----
 
-							<label className='relative block'>
-								<span className='sr-only'>Search {category.label}</span>
-								<svg
-									className='pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-[var(--ink-mute)]'
-									viewBox='0 0 24 24'
-									fill='none'
-									stroke='currentColor'
-									strokeWidth='2'
-									strokeLinecap='round'
-									aria-hidden='true'
-								>
-									<circle cx='11' cy='11' r='7' />
-									<path d='m20 20-3.5-3.5' />
-								</svg>
-								<input
-									value={query}
-									onChange={(event) => setQuery(event.target.value)}
-									onKeyDown={(event) => {
-										if (event.key === 'Escape') setQuery('')
-									}}
-									placeholder={`Search ${category.label.toLowerCase()} by number, title, sector, or author`}
-									className='field field-search'
-								/>
-							</label>
-
-							{/* Pushed to the far edge of the row, away from the search — it
-							    orders the list rather than narrowing it. */}
-							<label className='relative block sm:w-52 sm:justify-self-end'>
-								<span className='sr-only'>Sort</span>
-								<select
-									value={sort}
-									onChange={(event) => setSort(event.target.value as SortKey)}
-									className='field field-select cursor-pointer appearance-none'
-								>
-									{SORT_OPTIONS.map((option) => (
-										<option key={option.value} value={option.value}>
-											{option.label}
-										</option>
-									))}
-								</select>
-								<svg
-									className='pointer-events-none absolute right-3 top-1/2 size-3.5 -translate-y-1/2 text-[var(--ink-mute)]'
-									viewBox='0 0 24 24'
-									fill='none'
-									stroke='currentColor'
-									strokeWidth='2'
-									strokeLinecap='round'
-									strokeLinejoin='round'
-									aria-hidden='true'
-								>
-									<path d='m6 9 6 6 6-6' />
-								</svg>
-							</label>
-						</div>
+					    Follows the controls on a phone and sits under them in column
+					    two on a wide screen. */}
+					<div className='order-3 min-w-0 lg:order-none lg:col-start-2 lg:row-start-2'>
 
 						{/* ---- Result summary ---- */}
 						<div className='mt-8 flex flex-col justify-between gap-2 border-b border-[var(--rule)] pb-3 sm:flex-row sm:items-center'>
@@ -404,7 +425,7 @@ export function RecordBrowser({
 									Clear search and filters
 								</button>
 							) : (
-								<p className='meta-sm'>Select a row for the full record</p>
+								<p className='meta-sm'>Open a row for the full record</p>
 							)}
 						</div>
 
@@ -415,12 +436,16 @@ export function RecordBrowser({
 						    the right edge so a list reads as a chronology. */}
 						<div>
 							{visibleRecords.slice(0, shown).map((record, index) => (
-								<button
+								<Link
 									key={record.id}
-									type='button'
-									onClick={() => openRecord(record)}
+									href={recordHref(record) ?? '#'}
 									style={{ '--row-index': index } as React.CSSProperties}
-									className='row row-in grid w-full cursor-pointer grid-cols-[minmax(0,1fr)_auto] items-start gap-6 py-8 text-left sm:gap-16 lg:gap-24'
+									// The date sits down the right edge so a list reads as a
+									// chronology — but it is a fixed column against a title that
+									// has to wrap, and on a phone it took a third of the row and
+									// left the measure's name in a four-word gutter. Stacked, the
+									// title gets the width and the date follows it as a caption.
+									className='row row-in grid w-full cursor-pointer grid-cols-1 items-start gap-1.5 py-6 text-left sm:grid-cols-[minmax(0,1fr)_auto] sm:gap-16 sm:py-8 lg:gap-24'
 								>
 									<div className='min-w-0'>
 										<div className='flex flex-wrap items-center gap-x-2 gap-y-1.5'>
@@ -436,16 +461,19 @@ export function RecordBrowser({
 															role='link'
 															tabIndex={0}
 															onClick={(event) => {
-																// The row itself opens this bill; the act is
-																// somewhere else entirely.
+																// The row itself leads to this bill; the act is
+																// somewhere else entirely. The row is an anchor,
+																// so the default has to be stopped as well as the
+																// bubbling.
+																event.preventDefault()
 																event.stopPropagation()
-																router.push(`/acts?focus=${record.becameActNumber}`)
+																router.push(`/acts/${record.becameActNumber}`)
 															}}
 															onKeyDown={(event) => {
 																if (event.key !== 'Enter' && event.key !== ' ') return
 																event.preventDefault()
 																event.stopPropagation()
-																router.push(`/acts?focus=${record.becameActNumber}`)
+																router.push(`/acts/${record.becameActNumber}`)
 															}}
 															className='rule-link cursor-pointer'
 														>
@@ -469,13 +497,13 @@ export function RecordBrowser({
 
 										{/* The full official name is what identifies a measure, so the
 										    row carries that alone. The registry's short name for it is
-										    still in the record dialog. */}
+										    on the measure's own page. */}
 										<h2 className='item-title item-title-lg mt-2 text-[var(--ink)]'>
 											{record.title}
 										</h2>
 									</div>
 
-									<div className='flex items-center gap-3'>
+									<div className='flex items-center gap-3 sm:justify-end'>
 										<span className='meta-sm shrink-0'>{record.dateDisplay}</span>
 										<svg
 											className='row-arrow hidden size-4 sm:block'
@@ -490,7 +518,7 @@ export function RecordBrowser({
 											<path d='M5 12h14M13 6l6 6-6 6' />
 										</svg>
 									</div>
-								</button>
+								</Link>
 							))}
 
 							{remaining > 0 ? (
@@ -541,10 +569,6 @@ export function RecordBrowser({
 					</div>
 				</div>
 			</section>
-
-			{selected ? (
-				<RecordDetail record={selected} memberSlugs={memberSlugs} onClose={closeRecord} />
-			) : null}
 		</>
 	)
 }

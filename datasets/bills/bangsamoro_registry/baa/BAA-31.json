@@ -1,178 +1,250 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 31,
-    "short_title": "Creates the Bangsamoro Sustainable Development Board",
-    "official_title": "AN ACT CREATING THE BANGSAMORO SUSTAINABLE DEVELOPMENT BOARD",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2022-06-23",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Creates the Bangsamoro Sustainable Development Board.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Creates the Bangsamoro Sustainable Development Board.",
-    "who_will_be_affected": [
-      "Target sector of the body",
-      "Job seekers",
-      "CSOs"
-    ],
-    "when_will_it_take_effect": "Ratified 2022-06-23; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Creates or strengthens a public institution. New offices sound bureaucratic, but each one is a service window: a place to bring complaints, apply for programs, or get support that previously had no dedicated home in the region.",
-      "in_practice": [
-        "Once organized (leadership appointed, budget released), it opens programs and services",
-        "Look for its office, hotline, or Facebook page under the Bangsamoro Government",
-        "Its mandate defines what you can demand from it"
-      ],
-      "for_specific_groups": {
-        "Target sector of the body": "You gain a dedicated advocate inside government",
-        "Job seekers": "New institutions hire staff",
-        "CSOs": "A formal counterpart for partnership and accountability"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "A dedicated office now exists to serve and advocate for its sector.",
-        "direct_benefits": [
-          {
-            "benefit": "A service window: programs, assistance, and complaints handling for the covered sector",
-            "who_gets_it": "The sector named in the law",
-            "how_to_access": "The body's office/hotline once organized"
-          },
-          {
-            "benefit": "Representation inside government when policies are made",
-            "who_gets_it": "Sector members",
-            "how_to_access": "Through the body's consultations"
-          },
-          {
-            "benefit": "Employment in the new institution",
-            "who_gets_it": "Qualified applicants",
-            "how_to_access": "CSC-BARMM / agency postings"
-          }
-        ],
-        "indirect_benefits": [
-          "A formal partner for NGOs and donors working on the sector"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "An office's value depends on leadership and funding - track its accomplishment reports"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 31,
+  "short_title": "Bangsamoro Sustainable Development Board Act of 2022",
+  "official_title": "AN ACT CREATING THE BANGSAMORO SUSTAINABLE DEVELOPMENT BOARD, DEFINING ITS POWERS AND FUNCTIONS, PROVIDING FUNDS THEREFOR AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2022-06-23",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Fourth Regular Session",
+  "date_passed": "2022-06-23",
+  "date_passed_hijri": "Dhu Al-Qa'dah 24, 1443",
+  "date_approved_by_chief_minister": null,
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim (signed; the date line on the signed copy is blank)",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "institution_commission",
-      "other"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2022-06-23"
-    }
+  "effectivity": "15 days after complete publication in a newspaper of general or regional circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates a joint national–regional board to set the region's sustainable development framework, and earmarks at least 1% of revenues from natural resource extraction in the Bangsamoro to run it — money protected from being deducted from the block grant.",
+  "why_was_it_proposed": "To integrate economic, social and environmental considerations into how the region's natural resources are conserved, developed and used, under a framework the act grounds in both ecological and Islamic principles.",
+  "what_will_change": "A board chaired by the Senior Minister and co-chaired by a national government official formulates the Bangsamoro Sustainable Development Framework, sets natural resource policy, and must review its own implementation every 5 years with Parliament taking part.",
+  "who_will_be_affected": [
+   "Communities near natural resource extraction, whose revenues part-fund the Board",
+   "Women and marginalised groups, whose climate vulnerability the Board must address",
+   "Non-Moro Indigenous Peoples, whose rights the policy section recognises",
+   "NGOs, which elect one of their own onto the Board"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "The created body itself",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2022-06-23 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "The created body itself (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 31",
-    "line2": "Creates the Bangsamoro Sustainable Development Board",
-    "badges": [
-      "ENACTED",
-      "Institution Commission",
-      "2022"
+  "when_will_it_take_effect": "In force since 2022 — 15 days after complete publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. A joint national–regional board sets the region's sustainable development framework, funded by at least 1% of natural resource revenues — and that 1% cannot be clawed back out of the block grant.",
+   "in_practice": [
+    "A Bangsamoro Sustainable Development Board chaired by the Senior Minister and co-chaired by a National Government official",
+    "Members include the environment, interior and finance ministers, the planning authority head, the Parliament's environment committee chair, and an NGO representative",
+    "The NGO representative is elected by recognised NGOs in a forum organised by the Bangsamoro Government, and sits as head of their organisation rather than personally",
+    "National Government representatives number no more than six",
+    "The Board formulates the Bangsamoro Sustainable Development Framework and natural resource policy",
+    "It must provide measures for environmental justice and for reducing the vulnerability of women and marginalised groups to climate change",
+    "It meets at least quarterly, with a simple majority as quorum",
+    "Not less than 1% of revenues from exploration, development and utilisation of natural resources in the region funds its operations",
+    "A mandatory review of the act's implementation 5 years in, and every 5 years after, with Parliament part of the process"
+   ],
+   "for_specific_groups": {
+    "Communities near mining, energy or other extraction": "At least 1% of the revenues collected from those activities is earmarked for the Board that sets the rules governing them.",
+    "Women and marginalised groups": "Section 6(c) obliges the Board to provide measures reducing their vulnerability to climate change and variability.",
+    "Non-Moro Indigenous Peoples": "The policy section recognises and promotes their rights within the framework of the Constitution and national laws.",
+    "NGOs": "You elect one representative onto the Board from nominees submitted by recognised NGOs.",
+    "Settler communities, children and youth": "All are named in the Social Justice and Well-Being principle of the Framework."
+   },
+   "where_this_applies": "The whole BARMM, and natural resource activity within it.",
+   "when_you_will_feel_it": "Through the sustainable development framework and natural resource policies the Board adopts.",
+   "what_you_can_do": [
+    "Ask for the Bangsamoro Sustainable Development Framework the Board is required to formulate and adopt",
+    "Ask about the mandatory five-year review, which Parliament must be part of",
+    "If you run a recognised NGO, take part in the forum that elects the NGO representative"
+   ],
+   "watch_out_for": [
+    "The Board sets frameworks and policies; it does not itself issue permits or enforce against polluters.",
+    "The signed copy carries the Chief Minister's signature above a blank date line.",
+    "Board members receive travel expenses and honoraria for every meeting attended, in amounts the Board itself fixes.",
+    "The 1% is of revenues collected — if little is collected, little is allocated."
+   ],
+   "key_terms_explained": {
+    "Moral Governance": "The act's governing principle — rules, practices and processes 'completely devoid of all the evils of graft and corruption', driven by dedication, devotion, honesty, justice and integrity.",
+    "Khalifa / Environmental Vicegerency": "The Islamic concept of humankind as trustee and steward of the earth, used here as a principle of the development framework.",
+    "Block grant": "The annual transfer from the National Government to the Bangsamoro under Section 21, Article XII of the Organic Law.",
+    "BPDA": "Bangsamoro Planning and Development Authority.",
+    "MENRE": "Ministry of Environment, Natural Resources and Energy, which serves as the Board's regional secretariat."
+   },
+   "status_note": "Passed Dhu Al-Qa'dah 24, 1443 / 23 June 2022. Signed by the Chief Minister; the date of approval is blank on the signed copy.",
+   "benefits": {
+    "headline": "A funded, joint board for sustainable development, with 1% of resource revenues ring-fenced for it.",
+    "direct_benefits": [
+     {
+      "benefit": "A comprehensive sustainable development framework for the region",
+      "who_gets_it": "Everyone in the BARMM",
+      "how_to_access": "Formulated and adopted by the Board"
+     },
+     {
+      "benefit": "Dedicated funding from natural resource revenues, protected from block grant deduction",
+      "who_gets_it": "The Board and its work",
+      "amount": "Not less than 1% of revenues from exploration, development and utilisation of natural resources in the region",
+      "how_to_access": "Section 10"
+     },
+     {
+      "benefit": "Measures on environmental justice and on women's and marginalised groups' climate vulnerability",
+      "who_gets_it": "Women and marginalised communities",
+      "how_to_access": "Required of the Board by Section 6(c)"
+     },
+     {
+      "benefit": "A seat for civil society",
+      "who_gets_it": "Recognised NGOs",
+      "how_to_access": "Elected in a forum organised by the Bangsamoro Government"
+     }
     ],
-    "what_this_does": "Creates the Bangsamoro Sustainable Development Board.",
-    "who_it_affects": "General public",
-    "effective": "2022-06-23"
-  },
-  "views": {
-    "simple": "Creates the Bangsamoro Sustainable Development Board.",
-    "official": "AN ACT CREATING THE BANGSAMORO SUSTAINABLE DEVELOPMENT BOARD"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "A standing forum where national and regional government sit together on resource policy",
+     "A mandatory five-yearly review that Parliament takes part in"
+    ],
+    "limitations": [
+     "The Board makes policy; it does not license or enforce.",
+     "The 1% depends on how much revenue is actually collected.",
+     "Honoraria and travel expenses are fixed by the Board itself."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "Ministry of Environment, Natural Resources and Energy, which serves as the Board's secretariat",
+    "oversight": "The Bangsamoro Parliament, which is part of the mandatory five-year review, and its Committee on Environment, Natural Resources and Energy, whose chair sits on the Board",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A community near a mining operation asks what share of the revenue stays in the region's own environmental governance. At least 1% of what is collected from exploration, development and utilisation funds the Board — and it cannot be netted off against the block grant.",
+    "A women's organisation wants climate adaptation on the agenda. Section 6(c) requires the Board to provide measures reducing the vulnerability of women and marginalised groups to climate change and variability.",
+    "An NGO wants a say in resource policy. Recognised NGOs elect one representative onto the Board in a forum organised by the Bangsamoro Government."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: “The Bangsamoro Sustainable Development Board Act of 2022”.",
+  "Section 2 — Policies: protect and advance the right to a balanced and healthful ecology in accordance with the rhythm and harmony of nature; improve quality of life through careful planning taking account of ecological balance and the natural resources available to current and future generations; promote effective use of economic resources toward food security, economic development and social justice; provide equitable opportunities for constituent LGUs and strengthen governance systems for people's participation; ensure basic necessities and equal opportunities; recognise the role of women and youth and ensure their representation in decision-making and policy determining bodies; and recognise and promote the rights of Non-Moro Indigenous Peoples within the framework of the Constitution and national laws.",
+  "Section 3 — The Board formulates and adopts a Bangsamoro Sustainable Development Framework guided by the principle of Moral Governance — 'the set of rules, practices, and processes completely devoid of all the evils of graft and corruption, and explicitly driven by the moral principles of utmost dedication, devotion, honesty, justice, and integrity' — which serves as the compass and balancing power of four further principles: Environmental Vicegerency, invoking Khalifa, the trusteeship and stewardship of the earth; Social Justice and Well-Being, covering equity of access, basic services, housing, labour rights, and the rights and participation of women, youth, children and settler communities; Respect to Culture, Belief and Heritage across the region's ethno-linguistic groups; and Economic Progress with Equity.",
+  "Sections 4–5 — Creates the Bangsamoro Sustainable Development Board, composed of representatives of the National Government and the Bangsamoro Government, to ensure the integration and harmonisation of economic, social and environmental considerations. It is chaired by the Senior Minister and co-chaired by an appropriate National Government official, with the Ministers of Environment, Natural Resources and Energy, of the Interior and Local Government, and of Finance and Budget and Management; the Director-General of the Bangsamoro Planning and Development Authority; the Chair of the Parliament's Committee on Environment, Natural Resources and Energy; and an NGO representative elected from nominees submitted by recognised NGOs in a forum organised by the Bangsamoro Government, sitting as head of the organisation represented. National Government representatives shall not exceed six.",
+  "Section 6 — Powers: develop a comprehensive sustainable development framework ensuring proper conservation, development and utilisation of natural resources; formulate natural resource policies and plans; provide measures for environmental justice and governance and for reducing the vulnerability of women and marginalised groups to climate change and variability; promote effective and responsible use of economic resources toward growth, full employment, human development, gender equality and social justice; call on national agencies, LGUs or the private sector for opinions and advice; and monitor and review implementation of its policies and plans.",
+  "Sections 7–9 — Each government organises its own secretariat, the Bangsamoro Government's being the MENRE. The Board adopts its own internal rules, meets at least quarterly on prior notice to all members, does business on a simple majority quorum, and its members receive travel expenses and honoraria per meeting in amounts the Board fixes.",
+  "Section 10 — Initial funding is charged against the Contingent Fund of the 2022 General Appropriations Act of the Bangsamoro, with later years in the regular budget of the MENRE. An amount equivalent to not less than 1% of the revenues collected from the exploration, development and utilisation of any natural resources within the BARMM shall be allocated for the Board's operation, and that amount shall not be included in the amount deducted from the block grant under Section 21, Article XII of the Bangsamoro Organic Law. The National Government bears the expenses of its own secretariat and representation.",
+  "Section 11 — The Bangsamoro Government, through the Board, shall undertake a mandatory review of the act's implementation 5 years after implementation and every 5 years thereafter, with the Bangsamoro Parliament part of the process.",
+  "Section 14 — Takes effect 15 days after complete publication in a newspaper of general or regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Communities affected by natural resource extraction",
+   "Women and marginalised groups facing climate vulnerability",
+   "Non-Moro Indigenous Peoples",
+   "NGOs and civil society"
+  ],
+  "impact_tags": [
+   "environment_climate",
+   "governance_civil_service",
+   "institution_commission",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "Initial funding from the Contingent Fund of the 2022 GAAB; thereafter the MENRE budget, plus not less than 1% of revenues collected from natural resource exploration, development and utilisation in the region.",
+  "figures_note": "Quoted from Section 10. The act states a percentage rather than a peso amount."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2022-06-23"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/08/BAA-31.pdf",
+  "irr": "The Board adopts its own internal rules and procedures under Section 8. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Bill 53",
+  "related_note": "Its funding provision interacts directly with Section 21, Article XII of the Bangsamoro Organic Law on the annual block grant, expressly excluding the 1% allocation from block grant deduction."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "Contingent Fund initial, plus not less than 1% of natural resource revenues",
+  "irr_status": "Section 8 requires the Board to adopt its own internal rules and procedures.",
+  "note": "Read from the enacted text as signed. The signed copy bears the Chief Minister's signature above a blank date line, so the registry records no approval date. Section 11 required a mandatory review 5 years after implementation; that review is not captured here."
+ },
+ "citizen_questions": [
+  {
+   "q": "What does the Board actually do?",
+   "a": "It formulates the region's sustainable development framework and its policies for conserving, developing and using natural resources, provides measures for environmental justice and climate vulnerability, and monitors implementation. It does not issue permits or enforce against polluters."
+  },
+  {
+   "q": "How is it funded?",
+   "a": "Initially from the 2022 Contingent Fund, then the environment ministry's budget — plus at least 1% of revenues collected from exploration, development and utilisation of natural resources in the region."
+  },
+  {
+   "q": "Why does it matter that the 1% is not deducted from the block grant?",
+   "a": "Without that clause the region could fund the Board out of resource revenues and then see the same amount netted off its annual block grant from the National Government — leaving it no better off. Section 10 expressly forbids that."
+  },
+  {
+   "q": "Is the National Government involved?",
+   "a": "Yes. The Board is jointly composed, co-chaired by a National Government official, with up to six national representatives, and each government funds its own secretariat."
+  },
+  {
+   "q": "Does civil society have a seat?",
+   "a": "Yes — one NGO representative, elected by recognised NGOs in a forum organised by the Bangsamoro Government, sitting as head of their organisation rather than in a personal capacity."
+  },
+  {
+   "q": "Is the act reviewed?",
+   "a": "Section 11 requires a mandatory review of implementation 5 years in and every 5 years after, with Parliament part of the process."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 31",
+  "line2": "Bangsamoro Sustainable Development Board Act of 2022",
+  "badges": [
+   "IN FORCE",
+   "Environment & Climate",
+   "2022"
+  ],
+  "what_this_does": "Creates a joint national–regional sustainable development board funded by 1% of natural resource revenues.",
+  "who_it_affects": "Resource-affected communities · women and marginalised groups · NGOs"
+ },
+ "views": {
+  "simple": "Creates a joint national–regional Sustainable Development Board to set the Bangsamoro's development framework and natural resource policy, funded by at least 1% of resource revenues that cannot be deducted from the block grant, with a mandatory five-yearly review involving Parliament.",
+  "official": "AN ACT CREATING THE BANGSAMORO SUSTAINABLE DEVELOPMENT BOARD, DEFINING ITS POWERS AND FUNCTIONS, PROVIDING FUNDS THEREFOR AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 31, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

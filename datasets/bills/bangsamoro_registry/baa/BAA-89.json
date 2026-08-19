@@ -1,178 +1,316 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 89,
-    "short_title": "Bangsamoro Transitional Justice & Reconciliation Act",
-    "official_title": "AN ACT ESTABLISHING A BANGSAMORO TRANSITIONAL JUSTICE AND RECONCILIATION PROGRAM AND COMMISSION",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA3",
-    "date_ratified": "2026-01-28",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Establishes a Bangsamoro Transitional Justice and Reconciliation Program and Commission.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Establishes a Bangsamoro Transitional Justice and Reconciliation Program and Commission.",
-    "who_will_be_affected": [
-      "Victims' families",
-      "Massacre-site & land-dispossession communities",
-      "Researchers & CSOs"
-    ],
-    "when_will_it_take_effect": "Ratified 2026-01-28; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Creates a Bangsamoro Transitional Justice and Reconciliation Commission to deal with the legacy of decades of conflict: documenting atrocities, land dispossession, and marginalization, and recommending reparations and healing measures. For families carrying wartime losses, this is the official doorway for acknowledgment and redress.",
-      "in_practice": [
-        "A standing commission to receive accounts, document violations, and design reparative programs",
-        "Implements a long-delayed Comprehensive Agreement on the Bangsamoro (CAB) commitment",
-        "Expect public consultations and community documentation drives once organized"
-      ],
-      "for_specific_groups": {
-        "Victims' families": "Prepare testimonies and records (deaths, destroyed property, land taken) for when the Commission opens intake",
-        "Massacre-site & land-dispossession communities": "Collective reparations and memorialization fall under its mandate",
-        "Researchers & CSOs": "A future primary archive of the conflict; partner on documentation"
-      },
-      "where_this_applies": "All of BARMM unless the title names a specific place",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Official acknowledgment - and a path to redress - for conflict victims.",
-        "direct_benefits": [
-          {
-            "benefit": "A commission to receive and document your family's wartime losses",
-            "who_gets_it": "Victims of conflict-era violations, land dispossession, marginalization",
-            "how_to_access": "Prepare testimonies/records for the Commission's intake once organized"
-          },
-          {
-            "benefit": "Reparations and rehabilitation programs designed from that record",
-            "who_gets_it": "Documented victims and communities",
-            "how_to_access": "Through the Commission's recommendations"
-          },
-          {
-            "benefit": "Memorialization of atrocity sites and community healing measures",
-            "who_gets_it": "Affected communities",
-            "how_to_access": "Commission programs with LGUs/CSOs"
-          }
-        ],
-        "indirect_benefits": [
-          "A shared factual record against denial and for non-repetition"
-        ],
-        "limitations": [
-          "Reparations follow documentation and funding - this is a marathon, but it has now legally begun"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 89,
+  "short_title": "Bangsamoro Transitional Justice and Reconciliation Act of 2025",
+  "official_title": "AN ACT ESTABLISHING A BANGSAMORO TRANSITIONAL JUSTICE AND RECONCILIATION PROGRAM, CREATING FOR THIS PURPOSE THE BANGSAMORO TRANSITIONAL JUSTICE AND RECONCILIATION COMMISSION, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA3",
+  "date_ratified": "2026-01-28",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Fourth Regular Session, begun 15 September 2022",
+  "date_passed": "2026-01-28",
+  "date_passed_hijri": "Sha'ban 09, 1447",
+  "date_approved_by_chief_minister": "2026-02-11",
+  "approved_by": "Chief Minister Abdulraof A. Macacua",
+  "signed_by": [
+   "Mohammad S. Yacob, Speaker",
+   "Prof. Raby B. Angkal, Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Conflict-affected communities",
-      "Former combatants"
-    ],
-    "impact_tags": [
-      "institution_commission",
-      "peace_security_justice"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2026-01-28"
-    }
+  "origin_bills": "Parliament Bill Nos. 353 and 25, consolidated",
+  "effectivity": "15 days after complete publication in the Bangsamoro Gazette or a newspaper of general circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates an independent commission to document what was done to the Bangsamoro people and other indigenous peoples over more than a century — killings and other human rights violations from the American period onward, and land taken from the Treaty of Paris in 1898 to the present — and to recommend how it should be redressed.",
+  "why_was_it_proposed": "Transitional justice was promised in the Comprehensive Agreement on the Bangsamoro and written into the Organic Law, and the Transitional Justice and Reconciliation Commission set up under the CAB delivered its reports in 2016. Nothing was built to act on them. This act is the Bangsamoro Government doing what it can within its own jurisdiction while the national programme the TJRC recommended still does not exist.",
+  "what_will_change": "A five-member independent commission with subpoena and contempt powers begins taking testimony, holding hearings and community listening sessions, mapping a century of land dispossession, building a public archive, opening museums, and writing the historical injustices into the school curriculum. It publishes thematic reports and a terminal report, and reports annually to both the Bangsamoro Parliament and the Philippine Congress.",
+  "who_will_be_affected": [
+   "Survivors of conflict-era killings, displacement and other violations, and their families",
+   "Communities that lost land through force, fraud or 'ostensible lawful means' since 1898",
+   "Non-Moro Indigenous Peoples — Teduray, Lambangian, Dulangan Manobo, B'laan, Higaonon and Erumanen ne Menuvu — named in the act",
+   "Anyone summoned to testify or produce documents, including private individuals and corporations",
+   "Schoolchildren, through a curriculum the Commission helps write with the education ministry"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page. Origin: Bill 353."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": "Bill 353"
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "The created body itself",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2026-01-28 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "The created body itself (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 89",
-    "line2": "Bangsamoro Transitional Justice & Reconciliation Act",
-    "badges": [
-      "ENACTED",
-      "Institution Commission",
-      "2026"
+  "when_will_it_take_effect": "Approved by the Chief Minister on 11 February 2026 and in force 15 days after publication. The Commission's seven-year clock starts only once a Chairperson and 2 Commissioners are appointed and assume office.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. If your family lost people or land to the conflict, or to the laws and settlement policies that preceded it, this creates the official body to record what happened. It can compel testimony and documents. It cannot pay you, prosecute anyone, or give land back — every remedy in the act is a recommendation to somebody else.",
+   "in_practice": [
+    "An independent commission of five — a Chairperson and 4 Commissioners — with a seven-year life, extendable once by up to 3 years",
+    "It can summon witnesses, administer oaths, demand documents by subpoena duces tecum, and hold people in contempt for defying it",
+    "It deliberately runs 'without being restricted by the usual formalities of law and judicial processes', so survivors can be heard without lawyers",
+    "Human rights violations are documented from the American period up to the ratification of the Organic Law in 2019",
+    "Land dispossession is mapped from the Treaty of Paris in 1898 to the present",
+    "Mental health and psychosocial support is a duty of the Commission, with priority given to minors",
+    "It builds an archive, publishes an official narration of land dispossession, opens physical and digital museums, and works with the education ministry on curriculum",
+    "₱150,000,000 to start, from the Chief Minister's Contingent Fund, with fiscal autonomy and a floor: its budget cannot be cut below the previous year's",
+    "It meets every Tuesday"
+   ],
+   "for_specific_groups": {
+    "Survivors and families of victims": "You can be heard. Fact-finding includes community-based listening sessions with survivors and their kin, and the act prefers the term 'survivors' over 'victims' to avoid re-traumatisation.",
+    "Communities that lost land": "Land dispossession is a full component of the programme — the evolution of land policy since 1898 is to be mapped and an official narration published, naming laws and policies that transferred land to private corporations and individuals largely from outside the region.",
+    "Non-Moro Indigenous Peoples": "Six peoples are named in the act's definitions, 1 Commissioner seat is reserved for an NMIP representative, and NMIP organisations are guaranteed participation in the CSO Forum.",
+    "Civil society organisations": "One of the 5 Commissioners is nominated by a CSO Forum, and after the first appointment that Forum nominates the successor.",
+    "Anyone holding records or accused of wrongdoing": "The Commission can summon you and compel documents, and can punish defiance as contempt. It cannot convict you — but it can recommend that legal action be filed.",
+    "Teachers and students": "The Commission works with the Ministry of Basic, Higher and Technical Education to put the historical injustices into the curriculum.",
+    "Bangsamoro Human Rights Commission": "You hand over all records and outputs from your transitional justice functions under Section 51 of BAA 4 once the new Commission is constituted."
+   },
+   "where_this_applies": "The whole BARMM. The Commission is also directed to press the national government to act outside the region, and to encourage LGUs beyond it to adopt memorialisation.",
+   "when_you_will_feel_it": "Not immediately. The Selection Committee is due within 30 days of effectivity and the IRR within 60 days of approval, but intake begins only once commissioners are appointed and the Commission adopts its own rules of procedure.",
+   "what_you_can_do": [
+    "Gather what you have now — names, dates, places, death records, old titles, tax declarations, photographs, and the accounts of elders who remember",
+    "Watch for the Selection Committee: it must publish the application and nomination period and make the shortlist public, so the choice of commissioners is open to scrutiny",
+    "If you belong to a victims' organisation or CSO, seek a place in the CSO Forum — it nominates one of the 5 Commissioners",
+    "Ask your LGU to take up transitional justice locally; capacitating LGUs to do so is one of the programme's stated aims"
+   ],
+   "watch_out_for": [
+    "The Commission recommends; it does not decide. Prosecution, compensation, restitution and land return are all listed as things it identifies and recommends to the Philippine Government, not things it can order.",
+    "Human rights violations are documented only up to the ratification of the Organic Law in 2019, while land dispossession runs 'to the present'. Violations after 2019 fall outside the human rights component.",
+    "The human rights component covers violations that are emblematic or arose from the imposition of a monolithic Filipino identity and a centralised Philippine State — narrower than the act's own definition of human rights violations, which includes those committed independently by non-state actors.",
+    "All commissioners must be descendants of native inhabitants of the Bangsamoro, or spouses thereof. Settler-community descendants are not eligible, and the CSO Forum's participation guarantee names Moro and NMIP organisations only.",
+    "The seven-year clock starts at constitution, not at effectivity, so delay in appointing commissioners delays everything.",
+    "Whether to extend past 7 years rests with the Chief Minister alone, decided during the final year.",
+    "The findings will not carry the weight of a court judgment — the Commission is expressly freed from the usual formalities of law and judicial processes."
+   ],
+   "key_terms_explained": {
+    "Transitional justice": "The processes a society uses to come to terms with a violent past — truth-telling, accountability, reparations and institutional reform — so that it does not repeat.",
+    "Dealing with the Past": "The framework the act adopts, resting on four pillars: the right to know, the right to justice, the right to reparations, and the guarantee of non-recurrence.",
+    "Land dispossession": "Defined by the act as losing ownership, access or control of land by force, coercion, fraud, or ostensible lawful means — the last phrase reaching titling and settlement laws that were legal on their face.",
+    "Guarantee of non-recurrence": "The duty to dismantle impunity and reform institutions so the same violations cannot happen again.",
+    "Reparation": "Measures restoring the dignity and rights of victims — restitution, compensation, rehabilitation and symbolic reparations such as memorials and apologies.",
+    "TJRC": "The Transitional Justice and Reconciliation Commission created under the peace agreement, which issued its reports in 2016. This act builds on those reports; it is a different body.",
+    "Subpoena duces tecum": "A legal order to produce documents. Defying it can be punished as contempt.",
+    "Vetting and lustration": "Screening people out of public office because of their role in past violations. The act lists this among the things the Commission may recommend to the national government.",
+    "NMIPs": "Non-Moro Indigenous Peoples — here the Teduray, Lambangian, Dulangan Manobo, B'laan, Higaonon and Erumanen ne Menuvu."
+   },
+   "status_note": "Passed by the BTA Parliament on 28 January 2026 and approved by the Chief Minister on 11 February 2026. The short title reads 'Act of 2025', a drafting artefact from its passage across sessions.",
+   "benefits": {
+    "headline": "A commission with real investigative teeth, a century-wide mandate, ₱150 million and a protected budget — able to establish the record, but only to recommend the remedy.",
+    "direct_benefits": [
+     {
+      "benefit": "A place to be heard, without lawyers or court formality",
+      "who_gets_it": "Survivors, their kin, and affected communities",
+      "how_to_access": "Hearings and community-based listening sessions under Section 9(q); Section 8 frees the Commission from the usual formalities of law"
+     },
+     {
+      "benefit": "Mental health and psychosocial support, with priority for minors",
+      "who_gets_it": "Individuals and communities who suffered the effects of armed conflict, human rights violations and gender-based violence",
+      "how_to_access": "Section 9(h)"
+     },
+     {
+      "benefit": "An official, published narration of land dispossession since 1898",
+      "who_gets_it": "Communities whose land was taken, and anyone litigating or negotiating over it",
+      "how_to_access": "Section 9(y)"
+     },
+     {
+      "benefit": "Recommendations for reparation, restitution, compensation and prosecution",
+      "who_gets_it": "Documented victims",
+      "how_to_access": "Section 9(o) and 9(r) — addressed to the Philippine Government and the appropriate forum"
+     },
+     {
+      "benefit": "Memorials, museums and commemoration of martyrs of the struggle",
+      "who_gets_it": "Affected communities",
+      "how_to_access": "Sections 9(s), 9(v) and 9(w), with the Bangsamoro Commission for the Preservation of Cultural Heritage and LGUs"
+     },
+     {
+      "benefit": "The historical injustices taught in school",
+      "who_gets_it": "Present and future generations",
+      "how_to_access": "Section 9(u), with the Ministry of Basic, Higher and Technical Education"
+     },
+     {
+      "benefit": "A permanent public archive of testimony, documents and artifacts",
+      "who_gets_it": "Survivors, researchers, and the public",
+      "how_to_access": "Section 9(l); records pass to the Bangsamoro Library Archives when the Commission dissolves"
+     }
     ],
-    "what_this_does": "Establishes a Bangsamoro Transitional Justice and Reconciliation Program and Commission.",
-    "who_it_affects": "Conflict-affected communities · Former combatants",
-    "effective": "2026-01-28"
-  },
-  "views": {
-    "simple": "Establishes a Bangsamoro Transitional Justice and Reconciliation Program and Commission.",
-    "official": "AN ACT ESTABLISHING A BANGSAMORO TRANSITIONAL JUSTICE AND RECONCILIATION PROGRAM AND COMMISSION"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "A shared factual record that makes denial harder",
+     "Institutional reform recommendations for land titling, registration, taxation and management, engaging DENR, DAR, DHSUD, NCIP and the Land Registration Authority",
+     "Annual reports to both the Bangsamoro Parliament and the Philippine Congress, keeping the record in front of two legislatures",
+     "A standing CSO Forum giving victims' organisations a formal channel"
+    ],
+    "limitations": [
+     "No power to award reparations, prosecute, or restore land — only to recommend.",
+     "The human rights component closes at the 2019 ratification of the Organic Law.",
+     "Findings carry no judicial force.",
+     "The programme neither substitutes for nor supersedes the national transitional justice programme, which had not been created when this act was passed."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "If summoned as a witness, appear and testify; if served a subpoena duces tecum, produce the documents. Defying an order, or disrupting proceedings, can be punished as contempt."
+    ],
+    "for_ministries": [
+     "Provide the support the Commission calls for to carry out its mandate and implement the programme",
+     "The Bangsamoro Human Rights Commission turns over all records and outputs from its transitional justice functions under Section 51 of BAA 4",
+     "The Ministry of Finance, and Budget and Management helps finalise the Commission's structure and staffing within 1 month of its convening",
+     "The Office of the Chief Minister promulgates the IRR within 60 days of approval"
+    ]
+   },
+   "what_is_prohibited": [
+    "Disrupting or obstructing the Commission's proceedings.",
+    "Defying or violating its orders, including a subpoena duces tecum.",
+    "The act creates no other offence — it does not criminalise the underlying violations it documents."
+   ],
+   "penalties": {
+    "for_citizens": "Contempt, exercised by the Commission itself under Section 9(f), against those who disrupt or obstruct its proceedings or defy its orders. No fine or imprisonment is fixed in the act.",
+    "for_perpetrators": "None under this act. It creates no offence for the violations it documents; it can only recommend that legal action be filed before the appropriate forum."
+   },
+   "where_to_complain": {
+    "first_stop": "The Bangsamoro Transitional Justice and Reconciliation Commission, once constituted",
+    "oversight": "The CSO Forum channels stakeholder recommendations to the Commission; the Commission reports annually to the Bangsamoro Parliament and the Philippine Congress",
+    "note": "The Commission sets its own rules of procedure, so the intake route will be defined there rather than in the act."
+   },
+   "everyday_scenarios": [
+    "A family in Lanao del Sur has kept the names and dates of relatives killed in a 1970s military operation but never had anywhere to lodge them. This creates that place, and the account is taken as testimony rather than as a court complaint.",
+    "A community farms land their grandparents held before a homestead law issued title to a settler family. 'Ostensible lawful means' is expressly within the act's definition of dispossession, so the case belongs in the mapping — though the Commission can only recommend a resolution, not order one.",
+    "A Teduray organisation wants a say in the Commission's work. 1 Commissioner seat is reserved for an NMIP representative, and NMIP organisations are guaranteed participation in the CSO Forum.",
+    "A company is asked to hand over decades-old land records. The Commission can compel production by subpoena, and treat refusal as contempt."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Bangsamoro Transitional Justice and Reconciliation Act of 2025”.",
+  "Section 2 — Policy: pursue lasting peace through faithful implementation of what was bilaterally agreed between the Philippine Government and the MILF, and with the MNLF as an integral component of the peace process; address legitimate grievances, human rights violations and marginalisation arising from land dispossession; correct historical injustices; and adopt measures guaranteeing their non-recurrence.",
+  "Section 3 — Definitions. Land dispossession is deprivation or loss of ownership, access or control “by force, coercion, fraud, or ostensible lawful means”. Legitimate grievances are harms suffered as a result of systematic and large-scale state-sponsored or state-sanctioned gross human rights violations “as part of the imposition of a monolithic Filipino identity and a centralized Philippine State, which led to marginalization of these peoples in their own homeland”. Human rights violations include those independently committed by non-state actors. Perpetrators include corporate entities and those with indirect participation. Non-Moro Indigenous Peoples are the Teduray, Lambangian, Dulangan Manobo, B'laan, Higaonon and Erumanen ne Menuvu. “Survivors” is the preferred term over “victims”, to avoid re-traumatisation.",
+  "Sections 4–5 — Establishes the Bangsamoro Transitional Justice and Reconciliation Program, building on the 2016 TJRC Reports and guided by the Dealing with the Past framework. The Program forms part of, but does not supplant, the national programme; it aims to provide venues for victims to be heard, resolve outstanding land disputes in conflict-affected areas, counter impunity, promote healing, capacitate LGUs, and build CSO monitoring and feedback systems.",
+  "Section 6 — Fourteen guiding principles: human rights-based; victim-centred, including victims of sexual and gender-based violence; future-oriented; culturally sensitive, prioritising indigenous methodologies; people-owned and bottom-up; women's participation and gender equality, with gender balance in recruitment; respect for diversity and inclusivity; transgenerational, recognising an obligation to those not yet born; conflict-sensitivity; do no harm; trauma-informed; intersectionality; restorative justice; and cooperation and complementarity.",
+  "Section 7 — Three components. (a) Human rights violations committed “from the American period up to the ratification of the OLBARMM” documented with testimonies, historical records and forensic evidence, in preparation for possible prosecution or reparation claims — limited by proviso to violations that are emblematic and/or resulted from the imposition of a monolithic Filipino identity and a centralised Philippine State. (b) Land dispossession, mapping the evolution of land policy “from the Treaty of Paris in 1898 onward”. (c) History, memory and truth, establishing a complete picture of the earliest recorded history up to the Organic Law's ratification, soliciting both historical memory as told by survivors and forensic truth.",
+  "Section 8 — Creates the Bangsamoro Transitional Justice and Reconciliation Commission as an independent body, adopting its own rules of procedure to ensure active stakeholder participation “without being restricted by the usual formalities of law and judicial processes”.",
+  "Section 9 — Powers and functions. General: implement the Program; coordinate with the Philippine Government; run information and education campaigns; investigate and recommend on cases of individuals and communities harmed by armed conflict, serious violations of human rights and international humanitarian law, projects causing massive displacement and environmental harm, and outstanding land disputes; take testimony, receive evidence, administer oaths, summon witnesses and compel documents by subpoena duces tecum; exercise contempt; determine the factors sustaining impunity; deliver mental health and psychosocial support with priority to minors; call on ministries, civil society, humanitarian organisations and the academe; maintain an archive under data privacy law, assisting the Bangsamoro Commission for the Preservation of Cultural Heritage and passing its records to the Bangsamoro Library Archives on dissolution; publish periodic thematic reports and a public terminal report; submit annual reports to the Philippine Congress and the Bangsamoro Parliament; identify gaps for the Philippine Government including prosecution, witness protection, reparation, compensation, restitution, institutional reform, vetting and lustration, and public recognition or apologies; and accept donations and grants from domestic or foreign sources.",
+  "Section 9 (continued) — On human rights violations: conduct fact-finding hearings and community-based listening sessions to author comprehensive truth-telling narrations; recommend the filing of legal action where warranted; and oversee memorialisation of notable occurrences, victims, and martyrs of the struggle for the right to self-determination. On historical injustice: document Bangsamoro history from the pre-colonial period to the present; work with the education ministry on curriculum; establish physical and digital transitional justice museums; and declare historically or culturally significant places, structures and events. On land dispossession: document and publish an official narration of dispossession and marginalisation from 1898 to the present, including laws and policies that transferred land to private corporations and individuals largely from outside the region, and specific instances of land grabbing, encroachment and machinations; support enhanced dispute resolution; and recommend institutional reforms in land titling, registration, taxation and management, engaging DENR, DAR, DHSUD, NCIP and the Land Registration Authority.",
+  "Sections 10–11 — Composition: a Chairperson and four regular members, at least 35 years old, of proven integrity, competence and independence, with at least 10 years' relevant experience. All members shall be descendants of native inhabitants of the Bangsamoro, or spouses thereof. The Commission shall include at least two women, two lawyers, two residents of the island provinces, one NMIP representative, one alim in Shari'ah, and one civil society representative. Disqualified: those found culpable of human rights violations or acts contrary to transitional justice principles; those convicted of an offence involving moral turpitude; those removed or suspended for at least a year for disciplinary reasons; and fugitives from justice.",
+  "Sections 12–13 — Appointment. Within 30 days of effectivity the Chief Minister constitutes a three-member Selection Committee — a civil society leader, an academician and a civil servant, at least one female — supported by the Technical Management Service of the Office of the Chief Minister. The Committee publishes the application and nomination period, makes the shortlist public, interviews candidates, and submits three names for Chairperson and nine for the 3 Commissioner posts; the Chief Minister appoints within 30 days. The fifth Commissioner comes from civil society, nominated by the CSO Forum; the first is drawn from three names put forward by CSO leaders convened by the Chairperson and the three appointed Commissioners.",
+  "Sections 14–15 — The Chairperson and Commissioners serve for the full duration of the Commission. CSO Commissioners' terms are staggered — 2 years, then three, then two. Commissioners receive compensation equivalent to Salary Grade 27 and the Chairperson Salary Grade 28.",
+  "Sections 16–19 — The Chairperson executes Commission decisions, represents it, presides over sessions, and signs appointments — with positions at Salary Grade 25 and above exempt from paragraph (b), Section 4 of BAA 11, the Power of Appointment Act. Commissioners may be designated Commissioners-in-Charge over particular programmes. The Commissioner from the CSOs forms the CSO Forum within 2 months of appointment and carries its recommendations to the Commission. The Forum represents civil society, people's organisations and especially victims' organisations, with guaranteed and meaningful participation for legitimate organisations of both Moro and NMIPs, and writes its own rules.",
+  "Sections 20–23 — Structure and staffing finalised within 1 month of convening, in coordination with the Ministry of Finance, and Budget and Management, on merit and fitness with gender, geographical and ethnic balance. The Commission meets every Tuesday, with special meetings on the Chairperson's call or that of 3 Commissioners; a majority of sitting Commissioners is a quorum and the Chairperson breaks ties. It operates for 7 years from its constitution — deemed constituted when the Chairperson and at least 2 Commissioners assume office — or until its purpose is complete, whichever comes first, extendable by up to 3 years on the Chief Minister's determination made during the final year. Annual milestones are set against the seven-year mandate.",
+  "Sections 24–25 — ₱150,000,000 for initial operating expenses from the Contingent Fund of the Office of the Chief Minister, with the regular budget thereafter in the General Appropriations Act. The Commission has fiscal autonomy: funds regularly and automatically released, an annual appropriation that shall not be reduced below the preceding fiscal year, and compensation and benefits that shall not be decreased.",
+  "Sections 26–28 — IRR within 60 days of approval by the Office of the Chief Minister, effective 15 days after publication in the Bangsamoro Gazette. This act neither substitutes nor supersedes the national transitional justice programme; once that is created, the Commission submits its findings and recommendations to the Chief Minister within 90 days, for transmittal to the national mechanism. Transitory: on the Commission's constitution, the Bangsamoro Human Rights Commission turns over all records and outputs from Section 51 of BAA 4, the Bangsamoro Human Rights Act of 2019.",
+  "Sections 29–31 — Repealing and separability clauses; effect 15 days after complete publication in the Bangsamoro Gazette or a newspaper of general circulation in the region."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Survivors of conflict-era human rights violations and their families",
+   "Communities dispossessed of land since 1898",
+   "Non-Moro Indigenous Peoples named in the act",
+   "Victims' organisations and civil society, through a seat and a standing Forum",
+   "Future generations, through curriculum, archive and memorials"
+  ],
+  "impact_tags": [
+   "peace_security_justice",
+   "institution_commission",
+   "culture_heritage",
+   "indigenous_settlers"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱150,000,000 initial, from the Contingent Fund of the Office of the Chief Minister; thereafter in the annual Bangsamoro budget, with a floor barring any reduction below the previous year",
+  "figures_note": "Quoted from Sections 24 and 25."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2026-01-28"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page. Origin: Bill 353."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/02/BAA-89.pdf",
+  "irr": "Due within 60 days of approval, from the Office of the Chief Minister — not yet captured in this registry."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill Nos. 353 and 25, consolidated",
+  "related_note": "Operationalises the transitional justice provisions of the Comprehensive Agreement on the Bangsamoro and RA 11054, the Organic Law, and builds on the 2016 TJRC Reports. Section 28 transfers to this Commission the transitional justice records and outputs held by the Bangsamoro Human Rights Commission under Section 51 of BAA 4. Section 16(e) exempts its senior appointments from paragraph (b), Section 4 of BAA 11 on the power of appointment. It works alongside the Bangsamoro Commission for the Preservation of Cultural Heritage on documentation, museums and memorials."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "₱150,000,000 initial",
+  "irr_status": "Due within 60 days of the 11 February 2026 approval; not yet captured.",
+  "implementing_agency": {
+   "agency": "Bangsamoro Transitional Justice and Reconciliation Commission, with the Office of the Chief Minister constituting it",
+   "inferred": false
+  },
+  "note": "Read from the enacted text as signed. The Commission's seven-year term runs from its constitution, not from effectivity, and this registry has no record of commissioners having been appointed."
+ },
+ "citizen_questions": [
+  {
+   "q": "Can this Commission pay my family compensation?",
+   "a": "No. It can document your case and recommend reparation, compensation and restitution — but the recommendations go to the Philippine Government and other bodies. The act gives the Commission no power to award anything."
+  },
+  {
+   "q": "Can it prosecute the people responsible?",
+   "a": "No. It can recommend that legal action be filed before the appropriate forum, and it prepares documentation and forensic evidence with prosecution in mind. It creates no offence and convicts no one."
+  },
+  {
+   "q": "How far back does it go?",
+   "a": "Human rights violations from the American period up to the ratification of the Organic Law in 2019. Land dispossession from the Treaty of Paris in 1898 to the present."
+  },
+  {
+   "q": "Can it force someone to testify or hand over records?",
+   "a": "Yes. It can summon witnesses, administer oaths and compel documents by subpoena duces tecum, and it can punish defiance or obstruction as contempt."
+  },
+  {
+   "q": "Do I need a lawyer to be heard?",
+   "a": "No. Section 8 expressly frees the Commission from the usual formalities of law and judicial processes, and its fact-finding includes community-based listening sessions with survivors and their kin."
+  },
+  {
+   "q": "Who sits on it, and who chooses them?",
+   "a": "5 members: a Chairperson and 4 Commissioners. A public Selection Committee shortlists, and the Chief Minister appoints from that shortlist; the fifth Commissioner is nominated by a civil society Forum. It must include at least two women, two lawyers, two residents of the island provinces, an NMIP representative, an alim in Shari'ah and a CSO representative — and all must be descendants of native inhabitants of the Bangsamoro or their spouses."
+  },
+  {
+   "q": "How long does it last?",
+   "a": "7 years from the day it is constituted, or until its purpose is complete. The Chief Minister may extend it by up to three more years, deciding during the seventh year."
+  },
+  {
+   "q": "How much money does it have?",
+   "a": "₱150 million to start, from the Chief Minister's Contingent Fund, then a regular budget in the annual appropriations act. It has fiscal autonomy, and its appropriation cannot be cut below the previous year's."
+  },
+  {
+   "q": "Does this replace a national truth commission?",
+   "a": "No. The act says explicitly that it neither substitutes nor supersedes a national programme. If one is created, the Commission must send its findings to the Chief Minister within 90 days for transmittal to it."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 89",
+  "line2": "Bangsamoro Transitional Justice and Reconciliation Act of 2025",
+  "badges": [
+   "IN FORCE",
+   "Peace & Justice",
+   "2026"
+  ],
+  "what_this_does": "Creates an independent commission to document a century of human rights violations and land dispossession, and to recommend redress.",
+  "who_it_affects": "Survivors and their families · dispossessed communities · Non-Moro Indigenous Peoples",
+  "effective": "2026-02-11"
+ },
+ "views": {
+  "simple": "Creates the Bangsamoro Transitional Justice and Reconciliation Commission — 5 members, 7 years, ₱150 million, and the power to summon witnesses and compel documents — to document human rights violations from the American period to 2019 and land dispossession from 1898 to the present, build an archive and museums, write the record into schools, and recommend reparation, prosecution and land reform to the national government.",
+  "official": "AN ACT ESTABLISHING A BANGSAMORO TRANSITIONAL JUSTICE AND RECONCILIATION PROGRAM, CREATING FOR THIS PURPOSE THE BANGSAMORO TRANSITIONAL JUSTICE AND RECONCILIATION COMMISSION, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 89, enacted text as signed (Parliament's acts index), all 15 pages.",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

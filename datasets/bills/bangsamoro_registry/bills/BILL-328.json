@@ -1,177 +1,218 @@
 {
-  "record_type": "parliament_bill",
-  "basic_information": {
-    "bill_number": 328,
-    "short_title": "Renames Datu Blah T. Sinsuat Municipality to West",
-    "official_title": "AN ACT RENAMING DATU BLAH T. SINSUAT MUNICIPALITY TO WEST UPI, MAGUINDANAO DEL NORTE",
-    "type": "Parliament Bill",
-    "session": "4th Regular Session (2025-)",
-    "date_filed": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "current_status": "Approved",
-    "status_as_of": "2026-05-19",
-    "date_approved": "2026-05-19"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Renames Datu Blah T. Sinsuat Municipality to West Upi, Maguindanao del Norte.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note of the bill)",
-    "what_will_change": "Renames Datu Blah T. Sinsuat Municipality to West Upi, Maguindanao del Norte.",
-    "who_will_be_affected": [
-      "Barangay residents",
-      "LGUs"
-    ],
-    "when_will_it_take_effect": "Approved; effectivity per its final clause",
-    "what_this_means_for_you": {
-      "in_short": "PROPOSAL: A governance law shaping how the Bangsamoro Government works. Its effect on daily life is indirect but real: clearer rules inside government generally mean faster, more accountable service at the counter. (This describes what the bill would do if enacted.)",
-      "in_practice": [
-        "Defines powers, procedures, or structures within the regional government"
-      ],
-      "for_specific_groups": {
-        "General public": "Better-defined government duties are the basis for demanding service"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Not yet - only if and when enacted",
-      "what_you_can_do": [
-        "This is the stage where public input matters most: submit a position paper via the Parliament's 'Call for Position Papers' page",
-        "Attend or watch the committee hearings (schedules are on the Parliament site; many are livestreamed)",
-        "Contact a Member of Parliament - the 'Contact an MP' page lists them - to support, oppose, or suggest changes"
-      ],
-      "watch_out_for": [
-        "Nothing changes yet: a bill has no legal effect until Parliament approves it and it is enacted as a Bangsamoro Autonomy Act. Many bills are revised or merged along the way."
-      ],
-      "key_terms_explained": {
-        "First Reading": "The bill's title is read in plenary and it is referred to a committee - the earliest formal stage.",
-        "Committee stage": "A committee studies the bill, holds hearings, and can rewrite it before plenary debate.",
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
-      },
-      "status_note": "Bill status: Approved (as of 2026-05-19).",
-      "benefits": {
-        "headline": "Better-ordered government, indirectly better service.",
-        "direct_benefits": [
-          {
-            "benefit": "Clearer rules inside government you can hold offices to",
-            "who_gets_it": "General public",
-            "how_to_access": "Cite the law when following up transactions"
-          }
-        ],
-        "indirect_benefits": [
-          "Institutional maturity of the autonomy"
-        ],
-        "limitations": [
-          "Now REAL, not prospective: enacted as BAA 90 - see baa/BAA-90.json for claimable benefits."
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "parliament_bill",
+ "basic_information": {
+  "bill_number": 328,
+  "short_title": "Renames Datu Blah T. Sinsuat Municipality to West",
+  "official_title": "AN ACT RENAMING DATU BLAH T. SINSUAT MUNICIPALITY TO WEST UPI, MAGUINDANAO DEL NORTE",
+  "type": "Parliament Bill",
+  "session": "4th Regular Session (2025-)",
+  "date_filed": "2024-08-28",
+  "current_status": "Approved",
+  "status_as_of": "2026-05-19",
+  "date_approved": "2026-05-19"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Renames Datu Blah T. Sinsuat Municipality to West Upi, Maguindanao del Norte.",
+  "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note of the bill)",
+  "what_will_change": "Renames Datu Blah T. Sinsuat Municipality to West Upi, Maguindanao del Norte.",
+  "who_will_be_affected": [
+   "Barangay residents",
+   "LGUs"
   ],
-  "impact": {
-    "who_benefits": [
-      "Barangay residents",
-      "LGUs"
+  "when_will_it_take_effect": "Approved; effectivity per its final clause",
+  "what_this_means_for_you": {
+   "in_short": "PROPOSAL: A governance law shaping how the Bangsamoro Government works. Its effect on daily life is indirect but real: clearer rules inside government generally mean faster, more accountable service at the counter. (This describes what the bill would do if enacted.)",
+   "in_practice": [
+    "Defines powers, procedures, or structures within the regional government"
+   ],
+   "for_specific_groups": {
+    "General public": "Better-defined government duties are the basis for demanding service"
+   },
+   "where_this_applies": "All of BARMM",
+   "when_you_will_feel_it": "Not yet - only if and when enacted",
+   "what_you_can_do": [
+    "This is the stage where public input matters most: submit a position paper via the Parliament's 'Call for Position Papers' page",
+    "Attend or watch the committee hearings (schedules are on the Parliament site; many are livestreamed)",
+    "Contact a Member of Parliament - the 'Contact an MP' page lists them - to support, oppose, or suggest changes"
+   ],
+   "watch_out_for": [
+    "Nothing changes yet: a bill has no legal effect until Parliament approves it and it is enacted as a Bangsamoro Autonomy Act. Many bills are revised or merged along the way."
+   ],
+   "key_terms_explained": {
+    "First Reading": "The bill's title is read in plenary and it is referred to a committee - the earliest formal stage.",
+    "Committee stage": "A committee studies the bill, holds hearings, and can rewrite it before plenary debate.",
+    "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
+   },
+   "status_note": "Bill status: Approved (as of 2026-05-19).",
+   "benefits": {
+    "headline": "Better-ordered government, indirectly better service.",
+    "direct_benefits": [
+     {
+      "benefit": "Clearer rules inside government you can hold offices to",
+      "who_gets_it": "General public",
+      "how_to_access": "Cite the law when following up transactions"
+     }
     ],
-    "impact_tags": [
-      "local_government"
+    "indirect_benefits": [
+     "Institutional maturity of the autonomy"
     ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Beneficiary/budget figures are only shown when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "First Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Second Reading - Committee",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Second Reading - Plenary",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved by Parliament",
-      "reached": true,
-      "date": "2026-05-19"
-    },
-    {
-      "stage": "Enacted (BAA)",
-      "reached": true,
-      "date": null
-    }
-  ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "sponsor": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Listed on the bill's official page under General Information."
-  },
-  "related_documents": {
-    "original_bill_pdf": "On the bill's official page",
-    "committee_report": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "approved_version": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "irr": null
-  },
-  "related_legislation": {
-    "amends": [],
-    "repeals": [],
-    "related_bills": [],
-    "enacted_as": "BAA 90"
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "see": "baa/BAA-90.json"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this already a law?",
-      "a": "Approved by Parliament; enactment/numbering as a BAA follows."
-    },
-    {
-      "q": "How can I support or oppose this bill?",
-      "a": "Submit a position paper via the Parliament's Call for Position Papers page, or attend/watch the responsible committee's public hearings."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "The bill's page on parliament.bangsamoro.gov.ph (Bills index) links the PDF and legislative history."
-    }
-  ],
-  "display_header": {
-    "line1": "Parliament Bill No. 328",
-    "line2": "Renames Datu Blah T. Sinsuat Municipality to West",
-    "badges": [
-      "APPROVED",
-      "Local Government",
-      "2026"
-    ],
-    "what_this_does": "Renames Datu Blah T. Sinsuat Municipality to West Upi, Maguindanao del Norte.",
-    "who_it_affects": "Barangay residents · LGUs"
-  },
-  "views": {
-    "simple": "Renames Datu Blah T. Sinsuat Municipality to West Upi, Maguindanao del Norte.",
-    "official": "AN ACT RENAMING DATU BLAH T. SINSUAT MUNICIPALITY TO WEST UPI, MAGUINDANAO DEL NORTE"
-  },
-  "implementing_agency_if_enacted": {
-    "agency": "MILG",
-    "inferred": true
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "limitations": [
+     "Now REAL, not prospective: enacted as BAA 90 - see baa/BAA-90.json for claimable benefits."
+    ]
+   }
   }
+ },
+ "key_provisions": [
+  "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ ],
+ "impact": {
+  "who_benefits": [
+   "Barangay residents",
+   "LGUs"
+  ],
+  "impact_tags": [
+   "local_government"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": null,
+  "figures_note": "Beneficiary/budget figures are only shown when stated in official documents; none captured for this record."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed",
+   "reached": true,
+   "date": "2024-08-28"
+  },
+  {
+   "stage": "First Reading",
+   "reached": true,
+   "date": "2024-09-16"
+  },
+  {
+   "stage": "Second Reading - Committee",
+   "reached": true,
+   "date": "2025-11-19"
+  },
+  {
+   "stage": "Second Reading - Plenary",
+   "reached": true,
+   "date": "2026-04-30"
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": "2026-05-19"
+  },
+  {
+   "stage": "Approved by Parliament",
+   "reached": true,
+   "date": "2026-05-19"
+  },
+  {
+   "stage": "Enacted (BAA)",
+   "reached": true,
+   "date": null
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": [
+   "AMPATUAN, BAINTAN A.",
+   "SEMA, OMAR YASSER C.",
+   "UY-OYOD, SITTIE FAHANIE S.",
+   "MANTAWIL, BAILENG S.",
+   "ALAMIA, LAISA M.",
+   "TAGO, PAISALIN P.",
+   "MIDTIMBANG, MICHAEL E.",
+   "HADJI ABDULLAH, KHALID M.",
+   "PIANG, RAMON A., SR.",
+   "ESMAEL, SUHARTO S.",
+   "ANAYATIN, SUSANA S.",
+   "MAGLANGIT, TARHATA M.",
+   "ALIH, EDDIE M.",
+   "LORENA, JOSE I.",
+   "MENDOZA, FROILYN T.",
+   "MACACUA, JAMEL B.",
+   "ISMAEL, RASUL E.",
+   "LOONG, DON MUSTAPHA A.",
+   "SANGKI, ALI B.",
+   "IQBAL, MOHAGHER M."
+  ],
+  "co_authors": [
+   "YACOB, MOHAMMAD S.",
+   "ABAS, AKMAD I.",
+   "PARCASIO, RANDOLPH C.",
+   "MIDTIMBANG, TAWAKAL B.",
+   "ALAUDDIN, MOSBER E.",
+   "ABAS, HARON M.",
+   "ALI, IBRAHIM D.",
+   "KARON, FAIZAL G.",
+   "SALIK, ALI O.",
+   "LOONG, BENJAMIN T.",
+   "ASNAWIE, DAN S.",
+   "ESTINO, MATARUL M.",
+   "EBIL, MUHAMMAD NADZIR S.",
+   "SHIEK, SAID M."
+  ],
+  "sponsor": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": [
+   "Committee on Local Government"
+  ],
+  "note": "Authors, committee referrals and dates are taken from Parliament's own bills index (parliament.bangsamoro.gov.ph/bills/), which reflects the measure as it stood at capture.",
+  "committee_report": "Committee Report No. 201 RE: Bill No. 328 Adopted – 4/30/2026 (Resumption)"
+ },
+ "related_documents": {
+  "original_bill_pdf": "On the bill's official page",
+  "committee_report": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "approved_version": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "irr": null,
+  "official_page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-renaming-the-municipality-of-datu-blah-t-sinsuat-maguindanao-del-norte-to-municipality-of-west-upi-maguindanao-del-norte/"
+ },
+ "related_legislation": {
+  "amends": [],
+  "repeals": [],
+  "related_bills": [],
+  "enacted_as": "BAA 90",
+  "enacted_as_index": "BAA No. 90"
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "see": "baa/BAA-90.json"
+ },
+ "citizen_questions": [
+  {
+   "q": "Is this already a law?",
+   "a": "Approved by Parliament; enactment/numbering as a BAA follows."
+  },
+  {
+   "q": "How can I support or oppose this bill?",
+   "a": "Submit a position paper via the Parliament's Call for Position Papers page, or attend/watch the responsible committee's public hearings."
+  },
+  {
+   "q": "Where do I read the full text?",
+   "a": "The bill's page on parliament.bangsamoro.gov.ph (Bills index) links the PDF and legislative history."
+  }
+ ],
+ "display_header": {
+  "line1": "Parliament Bill No. 328",
+  "line2": "Renames Datu Blah T. Sinsuat Municipality to West",
+  "badges": [
+   "APPROVED",
+   "Local Government",
+   "2026"
+  ],
+  "what_this_does": "Renames Datu Blah T. Sinsuat Municipality to West Upi, Maguindanao del Norte.",
+  "who_it_affects": "Barangay residents · LGUs"
+ },
+ "views": {
+  "simple": "Renames Datu Blah T. Sinsuat Municipality to West Upi, Maguindanao del Norte.",
+  "official": "AN ACT RENAMING DATU BLAH T. SINSUAT MUNICIPALITY TO WEST UPI, MAGUINDANAO DEL NORTE"
+ },
+ "implementing_agency_if_enacted": {
+  "agency": "MILG",
+  "inferred": true
+ },
+ "provenance": {
+  "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
+  "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+ }
 }

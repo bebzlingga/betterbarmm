@@ -1,199 +1,217 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 66,
-    "short_title": "an Act Establishing South Ubian General Hospital Act",
-    "official_title": "AN ACT ESTABLISHING SOUTH UBIAN GENERAL HOSPITAL, TAWI-TAWI (LEVEL 1, 25-BED)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA2",
-    "date_ratified": "2024-12-12",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Establishes South Ubian General Hospital, Tawi-tawi (level 1, 25-BED).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Establishes South Ubian General Hospital, Tawi-tawi (level 1, 25-BED).",
-    "who_will_be_affected": [
-      "Residents of Tawi-Tawi",
-      "Pregnant women",
-      "Senior citizens & PWDs",
-      "Health workers"
-    ],
-    "when_will_it_take_effect": "Ratified 2024-12-12; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Establishes a public hospital serving Tawi-Tawi (25 beds). For nearby families this means emergency and inpatient care closer to home instead of long, costly trips to distant referral hospitals.",
-      "in_practice": [
-        "More beds means fewer 'no vacancy' referrals and less floor-space crowding during outbreaks",
-        "A higher hospital level allows more services on-site: surgery, specialist clinics, better laboratory and imaging, more doctors and nurses on the plantilla",
-        "PhilHealth-accredited services expand with the facility's level, lowering out-of-pocket costs",
-        "Construction, staffing, and supplies take time after enactment - upgrades typically roll out over one or more budget years"
-      ],
-      "for_specific_groups": {
-        "Residents of Tawi-Tawi": "Shorter travel time in emergencies - often the difference between life and death for stroke, hemorrhage, and obstetric cases",
-        "Pregnant women": "Facility-based deliveries and emergency obstetric care become available nearer home",
-        "Senior citizens & PWDs": "Follow-up care and dialysis/maintenance services without long-distance travel",
-        "Health workers": "New plantilla positions (nurses, midwives, med-techs, doctors) usually open when a hospital is created or upgraded - watch the MOH and hospital job postings"
-      },
-      "where_this_applies": "Tawi-Tawi",
-      "watch_out_for": [
-        "A law appropriating funds is a promise on paper: actual services depend on the budget being released and spent - ask the implementing ministry for the implementation timeline.",
-        "Ask the Ministry of Health (MOH-BARMM) or the hospital chief when the added beds/services actually open"
-      ],
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Closer, bigger, better-equipped public healthcare for Tawi-Tawi.",
-        "direct_benefits": [
-          {
-            "benefit": "Emergency and inpatient care near home (up to 25 beds) instead of long referral trips",
-            "who_gets_it": "Residents of Tawi-Tawi",
-            "how_to_access": "Go directly; public hospitals cannot refuse emergencies"
-          },
-          {
-            "benefit": "More services as the hospital's level rises: surgery, laboratory, imaging, specialty clinics",
-            "who_gets_it": "Patients in the catchment area",
-            "how_to_access": "Outpatient department; bring PhilHealth/ID"
-          },
-          {
-            "benefit": "Lower out-of-pocket costs as PhilHealth-accredited services expand with the facility level",
-            "who_gets_it": "PhilHealth members and indigents (automatic UHC coverage)",
-            "how_to_access": "Hospital PhilHealth desk / Malasakit-type assistance where present"
-          },
-          {
-            "benefit": "Safer childbirth: facility-based delivery and emergency obstetric care nearby",
-            "who_gets_it": "Pregnant women",
-            "how_to_access": "Prenatal check-ups at the RHU, delivery at the hospital"
-          },
-          {
-            "benefit": "New jobs: doctors, nurses, midwives, med-techs, admin and support staff",
-            "who_gets_it": "Health professionals and local job seekers",
-            "how_to_access": "Watch MOH-BARMM and hospital postings"
-          }
-        ],
-        "indirect_benefits": [
-          "Decongests referral hospitals for everyone else",
-          "Local economy around the hospital (transport, food, pharmacies)",
-          "Faster outbreak and disaster response capacity in the area"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service.",
-          "Bed count on paper becomes real only after construction/hiring - ask the hospital chief for the timeline"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Sets hospital bed capacity: 25-Bed",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 66,
+  "short_title": "South Ubian General Hospital",
+  "official_title": "AN ACT ESTABLISHING A LEVEL 1 GENERAL HOSPITAL WITH TWENTY-FIVE BED CAPACITY IN THE MUNICIPALITY OF SOUTH UBIAN, PROVINCE OF TAWI-TAWI TO BE KNOWN AS THE SOUTH UBIAN GENERAL HOSPITAL AND APPROPRIATING FUNDS THEREFOR",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA2",
+  "date_ratified": "2024-12-12",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session (begun 15 September 2022)",
+  "date_passed": "2024-12-12",
+  "date_passed_hijri": "Jumada Al-Akhirah 11, 1446",
+  "date_approved_by_chief_minister": "2025-01-09",
+  "approved_by": "Chief Minister Ahod B. Ebrahim",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Health workers",
-      "Hospitals",
-      "Patients"
-    ],
-    "impact_tags": [
-      "health",
-      "hospital_health"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2024-12-12"
-    }
+  "effectivity": "15 days after publication in a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates a 25-bed Level 1 general hospital in South Ubian, Tawi-Tawi, to serve the municipality and its neighbouring islands — with ₱50 million named and a funding source identified.",
+  "why_was_it_proposed": "To put comprehensive and integrated health services within reach of an island municipality where the nearest hospital means a sea crossing.",
+  "what_will_change": "A Level 1 general hospital is established under the direct supervision of the Ministry of Health, which determines its structure and plantilla positions and integrates the Universal Health Care Act into its operations.",
+  "who_will_be_affected": [
+   "Residents of South Ubian, Tawi-Tawi",
+   "People on the neighbouring islands the act expressly names",
+   "Health workers appointed to the new plantilla positions"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Ministry of Health (MOH)",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2024-12-12 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Ministry of Health (MOH) (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 66",
-    "line2": "an Act Establishing South Ubian General Hospital Act",
-    "badges": [
-      "ENACTED",
-      "Hospital Health",
-      "2024"
+  "when_will_it_take_effect": "In force since 2025 — 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. A 25-bed Level 1 hospital for South Ubian and its neighbouring islands, with ₱50 million named in the act itself.",
+   "in_practice": [
+    "A Level 1 general hospital with 25-bed capacity in South Ubian, Tawi-Tawi",
+    "Serves the municipality and its neighbouring islands",
+    "Under the direct supervision of the Ministry of Health, which approves the structure and plantilla positions",
+    "Integrates the Universal Health Care Act into its operations",
+    "₱50,000,000 initial, charged to the Miscellaneous Personnel Benefits Fund of the 2025 Bangsamoro budget"
+   ],
+   "for_specific_groups": {
+    "Island residents": "Section 2 expressly covers the neighbouring islands, not just the municipality — the catchment is written to match how people actually reach care here.",
+    "Health workers": "The Ministry of Health determines and approves plantilla positions, so the posts are created rather than assumed.",
+    "PhilHealth members": "The hospital must integrate the Universal Health Care Act."
+   },
+   "where_this_applies": "South Ubian, Tawi-Tawi, and neighbouring islands.",
+   "when_you_will_feel_it": "In force since 2025; delivery depends on the appropriation being released.",
+   "what_you_can_do": [
+    "Ask the Ministry of Health what stage construction and staffing have reached",
+    "Note the ₱50 million is an initial amount — later operations run through the annual budget"
+   ],
+   "watch_out_for": [
+    "No completion deadline is set.",
+    "₱50 million is initial only; continuing operations depend on annual appropriations.",
+    "Level 1 is a basic facility — anything needing specialist care is still referred onward."
+   ],
+   "key_terms_explained": {
+    "Level 1 hospital": "A basic facility — emergency care, general medicine, a small ward.",
+    "Plantilla position": "A permanent, funded post in the government staffing structure.",
+    "MPBF": "Miscellaneous Personnel Benefits Fund — the budget line the initial ₱50 million is charged against.",
+    "UHC Act": "Republic Act 11223, the national Universal Health Care law."
+   },
+   "status_note": "Passed Jumada Al-Akhirah 11, 1446 / 12 December 2024, approved by the Chief Minister on 9 January 2025.",
+   "benefits": {
+    "headline": "A 25-bed hospital for an island municipality, with ₱50 million actually named.",
+    "direct_benefits": [
+     {
+      "benefit": "A Level 1 general hospital with 25 beds",
+      "who_gets_it": "Residents of South Ubian and neighbouring islands",
+      "how_to_access": "Through the hospital once built"
+     },
+     {
+      "benefit": "₱50,000,000 initial appropriation from a named fund",
+      "who_gets_it": "The hospital",
+      "how_to_access": "Miscellaneous Personnel Benefits Fund of the 2025 GAAB"
+     },
+     {
+      "benefit": "Permanent health posts",
+      "who_gets_it": "Health workers",
+      "how_to_access": "Plantilla positions determined and approved by the Ministry of Health"
+     }
     ],
-    "what_this_does": "Establishes South Ubian General Hospital, Tawi-tawi (level 1, 25-BED).",
-    "who_it_affects": "Health workers · Hospitals · Patients",
-    "effective": "2024-12-12"
-  },
-  "views": {
-    "simple": "Establishes South Ubian General Hospital, Tawi-tawi (level 1, 25-BED).",
-    "official": "AN ACT ESTABLISHING SOUTH UBIAN GENERAL HOSPITAL, TAWI-TAWI (LEVEL 1, 25-BED)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Universal Health Care provisions integrated into hospital operations"
+    ],
+    "limitations": [
+     "No completion deadline.",
+     "Level 1 only — specialist cases still referred.",
+     "Continuing funding depends on annual appropriations."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act imposes no duty on the public."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "The hospital administration",
+    "oversight": "Ministry of Health – BARMM, which has direct supervision",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A patient on an island near South Ubian previously faced a sea crossing for basic hospital care. Section 2 writes the neighbouring islands into the hospital's purpose.",
+    "A nurse asks whether permanent posts exist. The Ministry of Health determines and approves the plantilla positions under Section 4."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Establishes the South Ubian General Hospital in the Municipality of South Ubian, Province of Tawi-Tawi, to address the health and social services of its constituents.",
+  "Section 2 — Purpose: a Level 1 general hospital of 25-bed capacity providing comprehensive and integrated health services to the people of South Ubian and its neighbouring islands, as an essential institution in the effective delivery of the health system.",
+  "Section 3 — The hospital shall include the units and services the Ministry of Health deems necessary, integrating the appropriate provisions of Republic Act 11223, the Universal Health Care Act.",
+  "Section 4 — The hospital is under the direct supervision of the Ministry of Health, which determines and approves its organisational structure and plantilla positions.",
+  "Section 5 — An initial ₱50,000,000 is charged against the Miscellaneous Personnel Benefits Fund of the 2025 General Appropriation Act of the Bangsamoro. Thereafter funds for operations are included in the annual appropriations.",
+  "Section 6 — Takes effect 15 days after publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Residents of South Ubian, Tawi-Tawi",
+   "People on neighbouring islands"
+  ],
+  "impact_tags": [
+   "health",
+   "budget_appropriations"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱50,000,000 initial, from the Miscellaneous Personnel Benefits Fund of the 2025 GAAB",
+  "figures_note": "Quoted from Sections 2 and 5: 25-bed capacity, ₱50,000,000 initial."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2024-12-12"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/02/BAA-66.pdf",
+  "irr": null
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill 99",
+  "related_note": "One of four hospital acts passed on 12 December 2024 with BAA 67 (Pura), 68 (Northern Kabuntalan) and 69 (Aleem Abdulazis S. Mimbantas Memorial) — all carrying the same ₱50 million initial appropriation from the same fund."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": "₱50,000,000 initial",
+  "irr_status": "None required by the act.",
+  "note": "Read from the enacted text as signed."
+ },
+ "citizen_questions": [
+  {
+   "q": "What kind of hospital is it?",
+   "a": "A Level 1 general hospital with 25 beds — basic emergency care, general medicine and a small ward. Specialist cases are still referred onward."
+  },
+  {
+   "q": "Does it serve only South Ubian?",
+   "a": "No. Section 2 names the people of South Ubian and its neighbouring islands."
+  },
+  {
+   "q": "How much money, and from where?",
+   "a": "An initial ₱50 million charged against the Miscellaneous Personnel Benefits Fund of the 2025 Bangsamoro budget. Later operations run through the annual appropriations."
+  },
+  {
+   "q": "When will it be built?",
+   "a": "The act sets no deadline."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 66",
+  "line2": "South Ubian General Hospital",
+  "badges": [
+   "IN FORCE",
+   "Health",
+   "2024"
+  ],
+  "what_this_does": "Establishes a 25-bed Level 1 hospital in South Ubian, Tawi-Tawi, serving the municipality and neighbouring islands.",
+  "who_it_affects": "Residents of South Ubian and nearby islands"
+ },
+ "views": {
+  "simple": "Establishes a 25-bed Level 1 general hospital in South Ubian, Tawi-Tawi for the municipality and its neighbouring islands, with ₱50 million from the 2025 regional budget.",
+  "official": "AN ACT ESTABLISHING A LEVEL 1 GENERAL HOSPITAL WITH TWENTY-FIVE BED CAPACITY IN THE MUNICIPALITY OF SOUTH UBIAN, PROVINCE OF TAWI-TAWI TO BE KNOWN AS THE SOUTH UBIAN GENERAL HOSPITAL AND APPROPRIATING FUNDS THEREFOR"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 66, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 18 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

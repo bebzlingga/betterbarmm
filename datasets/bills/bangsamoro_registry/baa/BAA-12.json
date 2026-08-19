@@ -1,170 +1,282 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 12,
-    "short_title": "Creates the Bangsamoro Sports Commission",
-    "official_title": "AN ACT CREATING THE BANGSAMORO SPORTS COMMISSION",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2020-09-17",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Creates the Bangsamoro Sports Commission.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Creates the Bangsamoro Sports Commission.",
-    "who_will_be_affected": [
-      "Target sector of the body",
-      "Job seekers",
-      "CSOs"
-    ],
-    "when_will_it_take_effect": "Ratified 2020-09-17; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "Creates or strengthens a public institution. New offices sound bureaucratic, but each one is a service window: a place to bring complaints, apply for programs, or get support that previously had no dedicated home in the region.",
-      "in_practice": [
-        "Once organized (leadership appointed, budget released), it opens programs and services",
-        "Look for its office, hotline, or Facebook page under the Bangsamoro Government",
-        "Its mandate defines what you can demand from it"
-      ],
-      "for_specific_groups": {
-        "Target sector of the body": "You gain a dedicated advocate inside government",
-        "Job seekers": "New institutions hire staff",
-        "CSOs": "A formal counterpart for partnership and accountability"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Rights and protection for the covered group.",
-        "direct_benefits": [
-          {
-            "benefit": "A legal entitlement you can invoke at offices, workplaces, or in seeking assistance",
-            "who_gets_it": "The group named in the law",
-            "how_to_access": "Through the mandated ministry; bring proof of status"
-          }
-        ],
-        "indirect_benefits": [
-          "Being named in law shifts you from aid recipient to rights-holder"
-        ],
-        "limitations": [
-          "Benefits arrive only as fast as funds are released and the implementing office organizes - expect a lag between enactment and service."
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 12,
+  "short_title": "Bangsamoro Sports Commission Act of 2020",
+  "official_title": "AN ACT CREATING THE BANGSAMORO SPORTS COMMISSION, PROVIDING FOR ITS MANDATE, POWERS, AND FUNCTIONS, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2020-09-17",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Second Regular Session, begun 29 March 2019",
+  "date_passed": "2020-09-17",
+  "date_approved_by_chief_minister": "2022-05-10",
+  "approved_by": "Chief Minister Ahod Balawag Ebrahim",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "Athletes",
-      "Youth"
-    ],
-    "impact_tags": [
-      "institution_commission",
-      "labor_social",
-      "sports_youth"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2020-09-17"
-    }
+  "origin_bills": "Bill No. 52",
+  "effectivity": "15 days after publication in the Official Gazette or a newspaper of general circulation in the BARMM"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Creates the region's sports commission — with a commissioner for each province, seats for indigenous and settler communities, and an unusual mandate: to make sports a tool for peace and transitional justice.",
+  "why_was_it_proposed": "Section 20, Article IX of the Organic Law provides for a sports commission. The act builds it and gives it a framing beyond athletics — supporting indigenous games and martial arts, and researching sport as an instrument against criminality, drugs and violent extremism.",
+  "what_will_change": "A commission attached to the Office of the Chief Minister becomes the policy-making and coordinating body for all amateur sports in the region. It can accredit sports clubs, sanction associations, athletes and officials, and require every ministry to submit its sports plan, budget and implementation reports.",
+  "who_will_be_affected": [
+   "Athletes and sports officials in the region, who fall under the Commission's regulatory power",
+   "Sports clubs and people's organisations, which the Commission accredits",
+   "Non-Moro indigenous peoples and settler communities, holding two ex-officio seats",
+   "Out-of-school youth, marginalised children and persons with disability, engaged through the youth commission",
+   "Every ministry with a sports programme, which must submit plans, budgets and reports",
+   "Schools, whose sports programme stays with the education ministry with the Commission assisting"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "MOLE / MSSD",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2020-09-17 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "MOLE / MSSD (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 12",
-    "line2": "Creates the Bangsamoro Sports Commission",
-    "badges": [
-      "ENACTED",
-      "Institution Commission",
-      "Labor Social",
-      "2020"
+  "when_will_it_take_effect": "In force since 2022 — the enacted copy is date-stamped 10 May 2022, about 2 years after Parliament passed it, effective 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. There is a commissioner for your province, the Commission can accredit your sports club, and it is expressly directed to support indigenous games and martial arts — not only the sports that travel to national meets.",
+   "in_practice": [
+    "A Chairman and four regular Commissioners representing Basilan with Lamitan City, Lanao del Sur with Marawi City, Maguindanao with Cotabato City and the 63 barangays, Sulu, and Tawi-Tawi",
+    "Two ex-officio Commissioners for Non-Moro Indigenous Peoples and settler communities",
+    "Fixed seven-year terms — long for a Philippine commission",
+    "Commissioners need only be 21 years old, resident in the region for 5 years, and a registered voter of the subdivision they represent",
+    "The Commission accredits sports clubs and people's organisations",
+    "It can impose sanctions on sports associations, teams, athletes and officials for violating its rules",
+    "It coordinates with the education ministry on Palarong Pambansa and the regional athletic association meet",
+    "₱9,500,000 total initial funding — the smallest of the region's commissions"
+   ],
+   "for_specific_groups": {
+    "Athletes": "The Commission provides incentives, recognition and awards as far as the rules of amateurism permit, procures and distributes sportswear and equipment for the regional pool, and can refer individual athletes needing help to regional or national agencies.",
+    "Indigenous and traditional sports": "Supporting indigenous games and martial arts is written into the policy section, and research on promoting and preserving indigenous sports is among the Commission's functions.",
+    "Non-Moro indigenous peoples and settler communities": "Two ex-officio commissioners, designated by the Chief Minister from three nominees each submitted by the indigenous peoples' ministry and the settler communities office. They must be organic personnel of the Bangsamoro Government and receive per diems rather than a salary.",
+    "Out-of-school youth, marginalised children and persons with disability": "The Commission works with the Bangsamoro Youth Commission to engage organisations serving you and develop your potential in sports.",
+    "Sports clubs": "You can seek accreditation, and you fall under the Commission's sanctioning power.",
+    "LGUs": "The Commission assists in setting up provincial, municipal, barangay and school district sports councils, and in promoting sports at community level."
+   },
+   "where_this_applies": "The whole BARMM, with commissioners representing five major political subdivisions.",
+   "when_you_will_feel_it": "In force since 2022, though the act sat about 2 years between passage and approval.",
+   "what_you_can_do": [
+    "Seek accreditation for your sports club or organisation",
+    "Approach the commissioner for your province",
+    "If you run indigenous games or martial arts programmes, these are expressly within the Commission's mandate to encourage and support",
+    "Ask your LGU about a local sports promotion and development council — the Commission is directed to assist in establishing them"
+   ],
+   "watch_out_for": [
+    "₱9.5 million total initial funding, against ₱30 million each for the Women and Youth Commissions.",
+    "The act lists Sulu among the represented subdivisions; the region's parliamentary districting acts of 2025 and 2026 no longer include the province, and no act read by this registry addresses the effect on this Commission's composition.",
+    "The enacted copy is date-stamped 10 May 2022 — roughly 2 years after Parliament passed it in September 2020.",
+    "Commissioners hold policy-making powers only; executive authority sits with the Chairperson and the Executive Director.",
+    "Ex-officio commissioners must be existing Bangsamoro Government personnel, which limits who the indigenous and settler communities can nominate."
+   ],
+   "key_terms_explained": {
+    "Amateur sports": "Sport played without payment. The Commission is the policy body for all amateur sports development programmes and institutions in the region.",
+    "Indigenous games": "Recreational activities originating from a particular cultural group — part of a people's heritage, preserving traditions and stories.",
+    "Ex-officio": "Holding a seat by virtue of another office. Here the two ex-officio commissioners receive per diems rather than a salary.",
+    "Palarong Pambansa": "The national school sports meet.",
+    "BARMMAA": "The regional athletic association meet through which the region's school athletes qualify onward.",
+    "Sports Advisory Council": "A council advising the Chairman on capital expenditure priorities, grants to sporting societies, sports development, international competitions and the use of facilities."
+   },
+   "status_note": "Passed 17 September 2020; the enacted copy carries a Chief Minister's approval date-stamped 5/10/22.",
+   "benefits": {
+    "headline": "A sports commission with a provincial commissioner each, indigenous and settler seats, and a mandate reaching into peace work.",
+    "direct_benefits": [
+     {
+      "benefit": "A commissioner representing your province",
+      "who_gets_it": "Athletes and sports organisations across the region",
+      "how_to_access": "Section 7"
+     },
+     {
+      "benefit": "Accreditation for sports clubs and people's organisations",
+      "who_gets_it": "Sports organisations in the region",
+      "how_to_access": "Section 11(c)(2)"
+     },
+     {
+      "benefit": "Sportswear, equipment, instruments and tools for training the regional pool of athletes",
+      "who_gets_it": "Athletes in the regional pool",
+      "how_to_access": "Section 11(c)(3)"
+     },
+     {
+      "benefit": "Incentives, recognition and awards for deserving athletes and supporters",
+      "who_gets_it": "Athletes and those supporting sports development",
+      "how_to_access": "Section 11(b)(9), as far as amateurism rules permit"
+     },
+     {
+      "benefit": "Support for indigenous games and martial arts",
+      "who_gets_it": "Communities practising traditional sports",
+      "how_to_access": "Sections 2 and 11(a)(3)"
+     },
+     {
+      "benefit": "Programmes reaching out-of-school youth, marginalised children and persons with disability",
+      "who_gets_it": "Young people outside school sports",
+      "how_to_access": "Section 11(b)(3), with the Bangsamoro Youth Commission"
+     },
+     {
+      "benefit": "Sports facilities and centres in strategic places",
+      "who_gets_it": "Communities across the region",
+      "how_to_access": "Section 11(b)(10), as far as practicable"
+     }
     ],
-    "what_this_does": "Creates the Bangsamoro Sports Commission.",
-    "who_it_affects": "Athletes · Youth",
-    "effective": "2020-09-17"
-  },
-  "views": {
-    "simple": "Creates the Bangsamoro Sports Commission.",
-    "official": "AN ACT CREATING THE BANGSAMORO SPORTS COMMISSION"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Local sports promotion and development councils at provincial, municipal, barangay and school district level",
+     "Linkages with the Philippine Sports Commission and foreign sports bodies",
+     "Research on sport as an instrument against criminality, drugs and violent extremism",
+     "Ministries required to submit sports plans, budgets and implementation reports"
+    ],
+    "limitations": [
+     "₱9.5 million initial funding for a region-wide mandate.",
+     "School sports remain with the education ministry, with the Commission assisting.",
+     "The Commission's regulatory reach is over amateur sport, not professional."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None imposed on the public. Sports associations, teams, athletes and officials are subject to the Commission's policies, rules and regulations, and may be sanctioned for violating them."
+    ],
+    "for_ministries": [
+     "Submit sports plans and budgets, and regular reports on implementation and utilisation, when the Commission requires them",
+     "Implement the sports promotion and development programmes indicated in their budgets",
+     "MBHTE formulates and implements the school sports development programme with the Commission's assistance",
+     "All heads of ministries, agencies and offices are enjoined to render full assistance to the Commission"
+    ]
+   },
+   "what_is_prohibited": [
+    "The act creates no offence. It empowers the Commission to impose sanctions on regional sports associations, institutions, bodies, teams, athletes and sports officials for violating its policies, rules and regulations."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no criminal offence, fine or imprisonment.",
+    "administrative": "Sanctions imposed by the Commission on sports associations, institutions, bodies, teams, athletes and officials for violation of its policies, rules and regulations."
+   },
+   "where_to_complain": {
+    "first_stop": "The Commissioner representing your province",
+    "oversight": "Bangsamoro Sports Commission, attached to the Office of the Chief Minister, under the Chief Minister's general supervision",
+    "note": "The act creates no formal complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A community wants its traditional game supported rather than replaced by imported sports. The policy section directs the government to encourage and support indigenous games and martial arts, and research on preserving them is a Commission function.",
+    "A youth group outside the school system wants access to training. The Commission is directed to work with the Bangsamoro Youth Commission to engage organisations dealing with out-of-school youth, marginalised children and persons with disability.",
+    "A ministry budgets for a sports programme and never delivers it. The Commission may require any ministry to submit its sports plan and budget along with regular reports on implementation and utilisation."
+   ]
   }
+ },
+ "key_provisions": [
+  "Sections 1–3 — Short title: “The Bangsamoro Sports Commission Act of 2020”. Policy: promote physical education and encourage sports programmes, league competitions and amateur sports, including training for regional, national and international competitions; develop innovative and productive individuals, promote sportsmanship, and “encourage and support indigenous games, martial arts and amateur sports”; and recognise the diverse cultures of the region, considering gender, culture and religious sensitivity. Indigenous games are defined as recreational activities originating from a particular cultural group, important to a people's heritage and preserving age-old traditions and stories.",
+  "Sections 4–6 — The Bangsamoro Sports Commission is created pursuant to Section 20, Article IX of RA 11054, attached to the Office of the Chief Minister under the Chief Minister's general supervision. It exercises corporate powers, may sue and be sued, and is the policy-making and coordinating body of all amateur sports development programmes and institutions in the Bangsamoro — except the school sports development programme, which MBHTE formulates and implements with the Commission's assistance. Its mandate is to formulate policy, promote, regulate, coordinate and implement sports programmes and, “as a policy, make sure that sports is a tool for peace and transitional justice”.",
+  "Sections 7–10 — Composition: a Chairman and four regular Commissioners drawn from Basilan including Lamitan City, Lanao del Sur including Marawi City, Maguindanao including Cotabato City and the 63 barangays of North Cotabato, Sulu, and Tawi-Tawi; plus two ex-officio Commissioners representing Non-Moro Indigenous Peoples and settler communities, designated by the Chief Minister from three nominees submitted by the Ministry of Indigenous Peoples' Affairs and the Office for Settler Communities respectively, who must be organic personnel of the Bangsamoro Government and serve no more than 7 years. The Chief Minister appoints for fixed seven-year terms. Qualifications: Filipino citizen, proven integrity and independence, at least 21 years old, resident of the region for at least 5 years, registered voter of the subdivision represented, experience in positions of responsibility and leadership in government or registered sports organisations, and no conviction for moral turpitude; a majority of Commissioners must hold a bachelor's degree. The Chairperson receives Salary Grade 28 and regular Commissioners Salary Grade 27; ex-officio Commissioners receive per diems only.",
+  "Section 11 — Powers. On plan and policy-making: prepare the Bangsamoro Sports and Development Plan; recommend sports policies for legislation; research sports development including the promotion and preservation of indigenous sports; research the rights and welfare of Bangsamoro athletes; undertake research “in making sports as instrument to fight against criminalities, drugs, and violent extremism; and as a vehicle for peace”; pilot special programmes; and make sports a tool for peace and transitional justice. On coordination and promotion: maintain linkages with the Philippine Sports Commission and foreign bodies; coordinate with MBHTE on Palarong Pambansa, the regional athletic association meet and other competitions; engage, with the Bangsamoro Youth Commission, organisations dealing with youth, out-of-school youth, marginalised children, persons with disability and other vulnerable sectors; convene public and private sports bodies; assist in establishing regional, provincial, municipal, barangay and school district sports promotion and development councils; assist LGUs in community-level sports; provide incentives, recognition and awards as permissible under the rules of amateurism; refer athletes needing assistance to regional and national agencies; and establish and manage fully-equipped sports facilities in strategic places. On regulation: impose sanctions on any regional sports association, institution, body, entity or team, including athletes and sports officials, for violation of its policies, rules and regulations; accredit sports clubs and people's organisations; procure and distribute sportswear, equipment and tools for the regional pool of athletes; delineate areas of responsibility across sectors; and monitor and ensure compliance by Bangsamoro Government agencies, requiring all ministries, agencies and offices to submit their sports plan and budget and regular reports on implementation and utilisation.",
+  "Sections 12–24 — Structure: a Commission Proper, the Office of the Chairperson and an Office of the Secretariat. The Commission Proper — the Chairperson, four regular and two ex-officio Commissioners — is the highest policy and decision-making body, meeting without prior call every first and third Monday, transacting business by majority with a majority quorum, and promulgating its internal rules within 30 days of its first meeting. Commissioners hold policy-making powers only and exercise no executive functions unless designated officer-in-charge. The Secretariat is headed by an Executive Director at Salary Grade 26 with three divisions — Policy, Research and Development; Regulatory, Promotion and Coordination; and Financial and Administrative — each headed by a Division Chief at Salary Grade 25. The Commission may call on any Bangsamoro Government entity for assistance, and all heads of ministries, agencies and offices are enjoined to render full cooperation.",
+  "Sections 25–29 — Appropriations: ₱6,500,000 for Personnel Services, ₱1,500,000 for Maintenance and Other Operating Expenses and ₱1,500,000 for Capital Outlay, from the Miscellaneous Personnel Benefits Fund and the Contingent Fund under the 2020 Bangsamoro Appropriations Act, with subsequent requirements in the annual appropriations act. Transitory: of the first members appointed, the Chairperson holds office for 7 years, two regular commissioners for five and the remaining two for three. Effective 15 days after publication in the Official Gazette or at least one newspaper of general circulation in the region."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Athletes and sports organisations across the region",
+   "Communities practising indigenous games and martial arts",
+   "Out-of-school youth, marginalised children and persons with disability",
+   "Non-Moro indigenous and settler communities, through ex-officio seats",
+   "LGUs establishing local sports councils"
+  ],
+  "impact_tags": [
+   "sports_youth",
+   "institution_commission",
+   "culture_heritage",
+   "education"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱9,500,000 total initial — ₱6.5M Personnel Services, ₱1.5M MOOE, ₱1.5M Capital Outlay",
+  "figures_note": "Quoted from Section 25."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2020-09-17"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/07/BAA-12.pdf",
+  "irr": "Section 13 requires the Commission to promulgate its own internal rules within 30 days of its first meeting."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": "All inconsistent regional laws, orders, rules and regulations",
+  "origin_bill": "Bill No. 52",
+  "related_note": "Created pursuant to Section 20, Article IX of the Organic Law. Its provincial-representation model with two voting-adjacent ex-officio seats for Non-Moro Indigenous Peoples and settler communities mirrors BAA 8 (Women Commission) and BAA 10 (Youth Commission), and it works with the Youth Commission on out-of-school youth and vulnerable sectors. Its initial funding is drawn against BAA 3, the 2020 Bangsamoro Appropriations Act."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "₱9,500,000 initial",
+  "irr_status": "Section 13 requires the Commission Proper to promulgate its own internal rules within 30 days of its first meeting.",
+  "implementing_agency": {
+   "agency": "Bangsamoro Sports Commission, attached to the Office of the Chief Minister",
+   "inferred": false
+  },
+  "note": "Read from the enacted text as signed, all 8 pages. The enacted copy carries a Chief Minister's approval date-stamped 5/10/22, roughly 2 years after Parliament passed the act on 17 September 2020. The act lists Sulu among the represented subdivisions; the parliamentary districting acts of 2025 and 2026 no longer include the province, and the effect on this Commission's composition is not addressed in any act read by this registry."
+ },
+ "citizen_questions": [
+  {
+   "q": "Is there a commissioner for my province?",
+   "a": "Yes. A Chairman and four regular Commissioners are drawn from Basilan with Lamitan City, Lanao del Sur with Marawi City, Maguindanao with Cotabato City and the 63 barangays, Sulu, and Tawi-Tawi."
+  },
+  {
+   "q": "Does it cover traditional games?",
+   "a": "Yes. Encouraging and supporting indigenous games and martial arts is written into the policy section, and research on promoting and preserving indigenous sports is a Commission function."
+  },
+  {
+   "q": "Can my sports club get accredited?",
+   "a": "Yes. Section 11(c)(2) empowers the Commission to accredit sports clubs and people's organisations operating in the Bangsamoro engaged in the protection and promotion of sports."
+  },
+  {
+   "q": "Who runs school sports?",
+   "a": "The Ministry of Basic, Higher and Technical Education formulates and implements the school sports development programme, with the Commission assisting within the framework of the regional and national sports development programme."
+  },
+  {
+   "q": "Are indigenous and settler communities represented?",
+   "a": "Yes — two ex-officio Commissioners, designated by the Chief Minister from three nominees each submitted by the Ministry of Indigenous Peoples' Affairs and the Office for Settler Communities. They must be organic personnel of the Bangsamoro Government and receive per diems rather than a salary."
+  },
+  {
+   "q": "How much money does it have?",
+   "a": "₱9.5 million initially — ₱6.5M for salaries, ₱1.5M for operating expenses and ₱1.5M for capital outlay. That is the smallest initial appropriation of the region's commissions; the Women and Youth Commissions each received ₱30 million."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 12",
+  "line2": "Bangsamoro Sports Commission Act of 2020",
+  "badges": [
+   "IN FORCE",
+   "Sports & Youth",
+   "2020"
+  ],
+  "what_this_does": "Creates the region's sports commission, with a commissioner per province and a mandate to support indigenous games and use sport for peace.",
+  "who_it_affects": "Athletes · sports clubs · indigenous and settler communities · out-of-school youth",
+  "effective": "2022-05-10"
+ },
+ "views": {
+  "simple": "Creates the Bangsamoro Sports Commission as the policy body for amateur sport in the region — a commissioner for each province, ex-officio seats for Non-Moro Indigenous Peoples and settler communities, power to accredit clubs and sanction associations and athletes, an express mandate to support indigenous games and martial arts, and a directive to treat sport as a tool for peace and transitional justice.",
+  "official": "AN ACT CREATING THE BANGSAMORO SPORTS COMMISSION, PROVIDING FOR ITS MANDATE, POWERS, AND FUNCTIONS, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 12, enacted text as signed (Parliament's acts index), all 8 pages.",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

@@ -1,181 +1,238 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 77,
-    "short_title": "Reconstituting the Parliamentary Districts in BARMM (amending Baa",
-    "official_title": "AN ACT RECONSTITUTING THE PARLIAMENTARY DISTRICTS IN BARMM (AMENDING BAA 58)",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA3",
-    "date_ratified": "2025-08-19",
-    "current_status": "STRUCK DOWN / SUPERSEDED"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Reconstituting the Parliamentary Districts in BARMM (amending Baa 58).",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Reconstituting the Parliamentary Districts in BARMM (amending Baa 58).",
-    "who_will_be_affected": [
-      "Voters",
-      "Court watchers"
-    ],
-    "when_will_it_take_effect": "Ratified 2025-08-19; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "The second attempt at drawing parliamentary districts after BAA 58 was struck down - and itself overtaken by Supreme Court rulings. Like BAA 58, treat it as history: BAA 86 defines the districts actually used in the Sept 14, 2026 elections.",
-      "in_practice": [
-        "Reconstituted districts after Sulu's exclusion from BARMM reshaped the region",
-        "Superseded in effect by BAA 86 following further Court action"
-      ],
-      "for_specific_groups": {
-        "Voters": "Your operative district map is BAA 86",
-        "Court watchers": "Read with the SC's 2025 districting decisions"
-      },
-      "where_this_applies": "All of BARMM unless the title names a specific place",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [
-        "LEGAL STATUS: Voided/affected by Supreme Court ruling on districting (Oct 2025); Parliament passed BAA 86 to comply."
-      ],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "A real vote in choosing your own regional government.",
-        "direct_benefits": [
-          {
-            "benefit": "Your ballot elects the Bangsamoro Parliament on Sept 14, 2026 - district, party, and sectoral seats",
-            "who_gets_it": "Registered voters in BARMM",
-            "how_to_access": "Register/verify with COMELEC; vote on election day"
-          },
-          {
-            "benefit": "Clear district representation: a specific representative answerable to your area",
-            "who_gets_it": "District residents",
-            "how_to_access": "Know your district under BAA 86"
-          },
-          {
-            "benefit": "Sectoral seats give organized sectors (women, youth, ulama, IPs, etc.) guaranteed voices",
-            "who_gets_it": "Sectoral communities",
-            "how_to_access": "Through accredited sectoral organizations"
-          }
-        ],
-        "indirect_benefits": [
-          "Accountability: appointed transition officials give way to officials you can vote out"
-        ],
-        "limitations": [
-          "VOID/SUPERSEDED: Voided/affected by Supreme Court ruling on districting (Oct 2025); Parliament passed BAA 86 to comply. Benefits described applied only while operative.",
-          "Election laws confer process rights, not material benefits; their value is exercised at the precinct"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Amends: BAA 58",
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 77,
+  "short_title": "Bangsamoro Parliamentary Redistricting Act of 2025",
+  "official_title": "AN ACT RECONSTITUTING THE PARLIAMENTARY DISTRICTS IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO, AMENDING FOR THE PURPOSE BANGSAMORO AUTONOMY ACT NO. 58, ENTITLED “AN ACT PROVIDING FOR THE CREATION OF THE PARLIAMENTARY DISTRICTS IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO”",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA3",
+  "date_ratified": "2025-08-19",
+  "current_status": "STRUCK DOWN / SUPERSEDED",
+  "session": "Fourth Regular Session (begun 15 September 2022)",
+  "date_passed": "2025-08-19",
+  "date_passed_hijri": "Safar 24, 1447",
+  "date_approved_by_chief_minister": "2025-08-28",
+  "approved_by": "Chief Minister Abdulraof A. Macacua",
+  "signed_by": [
+   "Atty. Pangalian M. Balindong, Speaker (signed “FOR” by another hand on the captured copy)",
+   "Prof. Raby B. Angkal, Secretary General"
   ],
-  "impact": {
-    "who_benefits": [
-      "COMELEC",
-      "Candidates",
-      "Voters"
-    ],
-    "impact_tags": [
-      "elections_districting"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2025-08-19"
-    }
+  "effectivity": "Immediately upon publication in the Bangsamoro Gazette or on its official website"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "Redraws the region's entire electoral map. The 32 parliamentary districts remain, but Sulu's seven are gone and every other province, Cotabato City and the Special Geographic Area gains at least 1 seat.",
+  "why_was_it_proposed": "The act does not state a reason. Its own transitory provision speaks of Sulu “rejoining” the BARMM, which indicates the province is no longer part of the region — and its seven districts are accordingly redistributed.",
+  "what_will_change": "Basilan goes from 3 districts to 4, Lanao del Sur 8 to 9, both Maguindanao provinces 4 to 5, Tawi-Tawi 3 to 4, Cotabato City 2 to 3, and the Special Geographic Area 1 to 2. Sulu has none.",
+  "who_will_be_affected": [
+   "Every voter in the BARMM — your district has almost certainly changed",
+   "Candidates in the 2025 Bangsamoro Parliamentary Election",
+   "Residents of the Special Geographic Area, whose representation doubles",
+   "Sulu, which holds no parliamentary districts under this map"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page. Origin: Bill 351."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [
-      "BAA 58"
+  "when_will_it_take_effect": "Took effect immediately on publication in 2025. Read alongside BAA 86, which provided for apportionment in 2026.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. Still 32 districts, but the map is completely redrawn: Sulu's 7 seats are gone and every remaining area gains at least one. Check your district again.",
+   "in_practice": [
+    "32 single-member parliamentary districts, on a stated regional population of 4,545,486",
+    "Basilan 4 districts (541,947) · Lanao del Sur 9 (1,368,137) · Maguindanao del Norte 5 (741,428) · Maguindanao del Sur 5 (813,243) · Tawi-Tawi 4 (482,645) · Special Geographic Area 2 (214,703) · City of Cotabato 3 (383,383)",
+    "Sulu holds no parliamentary districts under this act",
+    "If Sulu rejoins the BARMM, Congress may allocate at least seven district seats to it",
+    "For the 2025 election, candidates who already filed keep their candidacy in the district where they originally filed, even if their home barangay moved to another district",
+    "Voting takes place only within the boundaries as redrawn by this act",
+    "If a new district has no elected representative after the candidacy deadline, the President of the Philippines appoints an interim representative"
+   ],
+   "for_specific_groups": {
+    "Voters": "Your district has very likely changed. Municipalities have been regrouped across the whole region, not only where seats were added.",
+    "Residents of the Special Geographic Area": "Your representation doubles — from a single Lone District to two districts, splitting the eight municipalities into a 1st and 2nd District.",
+    "Cotabato City": "Three districts instead of two, drawn barangay by barangay.",
+    "Sulu": "The province holds no parliamentary districts under this map. Section 3 contemplates its return.",
+    "Candidates in the 2025 election": "You keep your candidacy where you filed, even if your registered barangay has been reassigned — but voting happens only inside the new boundaries."
+   },
+   "where_this_applies": "The BARMM as constituted under this act.",
+   "when_you_will_feel_it": "At the 2025 Bangsamoro Parliamentary Election and after.",
+   "what_you_can_do": [
+    "Check your municipality against the new district lists — do not rely on the BAA 58 map",
+    "Ask COMELEC for the implementing guidelines it is directed to issue for the 2025 election",
+    "Read BAA 86, which followed this act on apportionment"
+   ],
+   "watch_out_for": [
+    "The act gives no reason for Sulu's removal. Its language of “rejoining” is the only indication of the province's status.",
+    "Restoring Sulu's seats is assigned to Congress, not to the Bangsamoro Parliament.",
+    "An interim representative for a new district is appointed by the President of the Philippines — an unelected seat filled from Manila.",
+    "Candidates may end up representing a district in which they are not registered to vote, under the 2025 transition rule.",
+    "The Special Geographic Area table is headed “Barangay” but lists municipalities."
+   ],
+   "key_terms_explained": {
+    "Redistricting": "Redrawing the boundaries of electoral districts.",
+    "Reapportionment": "Redistributing the number of seats among areas.",
+    "COC": "Certificate of Candidacy — the formal filing that makes someone a candidate.",
+    "Interim representative": "A person appointed to hold a seat until an election fills it.",
+    "2025 BPE": "The 2025 BARMM Parliamentary Election."
+   },
+   "status_note": "Passed Safar 24, 1447 / 19 August 2025, approved by Chief Minister Abdulraof A. Macacua on 28 August 2025.",
+   "benefits": {
+    "headline": "A rebalanced map — every remaining area of the region gains representation.",
+    "direct_benefits": [
+     {
+      "benefit": "Two districts for the Special Geographic Area instead of one",
+      "who_gets_it": "Residents of the eight SGA municipalities",
+      "how_to_access": "1st District: Kadayangan, Nabalawag, Pahamuddin, Tugunan. 2nd District: Malidegao, Ligawasan, Old Kaabakan, Kapalawan"
+     },
+     {
+      "benefit": "An additional district for Basilan, Lanao del Sur, both Maguindanao provinces, Tawi-Tawi and Cotabato City",
+      "who_gets_it": "Voters in those areas",
+      "how_to_access": "The district lists in Section 2"
+     },
+     {
+      "benefit": "Continuity of candidacy for those who had already filed",
+      "who_gets_it": "Candidates in the 2025 election",
+      "how_to_access": "Section 5"
+     }
     ],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": "Bill 351"
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": false,
-    "legal_challenge_note": "Voided/affected by Supreme Court ruling on districting (Oct 2025); Parliament passed BAA 86 to comply.",
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "Bangsamoro Electoral Office / COMELEC",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Voided/affected by Supreme Court ruling on districting (Oct 2025); Parliament passed BAA 86 to comply."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "Bangsamoro Electoral Office / COMELEC (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 77",
-    "line2": "Reconstituting the Parliamentary Districts in BARMM (amending Baa",
-    "badges": [
-      "STRUCK DOWN",
-      "Elections Districting",
-      "2025"
+    "indirect_benefits": [
+     "Published population figures for every district, allowing the apportionment to be checked",
+     "A stated route for Sulu's seats to be restored if it rejoins"
     ],
-    "what_this_does": "Reconstituting the Parliamentary Districts in BARMM (amending Baa 58).",
-    "who_it_affects": "COMELEC · Candidates · Voters",
-    "effective": "2025-08-19"
-  },
-  "views": {
-    "simple": "Reconstituting the Parliamentary Districts in BARMM (amending Baa 58).",
-    "official": "AN ACT RECONSTITUTING THE PARLIAMENTARY DISTRICTS IN BARMM (AMENDING BAA 58)"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "limitations": [
+     "No reason given for the removal of Sulu's districts.",
+     "Restoration of those seats rests with Congress.",
+     "Interim representatives are appointed by the President rather than elected."
+    ]
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. The act redraws boundaries; it imposes no duty."
+    ]
+   },
+   "what_is_prohibited": [
+    "The act defines no prohibited acts and creates no offences."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "Commission on Elections, which is directed to issue guidelines implementing the new districting for the 2025 election",
+    "note": "The act creates no challenge or complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A voter in Sumisip, Basilan finds their municipality now in the 3rd District with Ungkaya Pukan and Tabuan Lasa — a different grouping from the 2024 map.",
+    "A resident of Ligawasan in the Special Geographic Area now votes in the SGA's 2nd District rather than a single lone district covering all eight municipalities.",
+    "A candidate filed a Certificate of Candidacy before the redistricting, and their home barangay has since been moved to another district. Section 5 lets them keep their candidacy where they filed, though voting occurs only within the new boundaries."
+   ]
   }
+ },
+ "key_provisions": [
+  "Section 1 — Short title: the “Bangsamoro Parliamentary Redistricting Act of 2025”.",
+  "Section 2 — Amends Section 4 of Bangsamoro Autonomy Act No. 58, reapportioning the thirty-two single-member parliamentary districts against a stated BARMM population of 4,545,486: Basilan 4 districts (541,947); Lanao del Sur 9 (1,368,137); Maguindanao del Norte 5 (741,428); Maguindanao del Sur 5 (813,243); Tawi-Tawi 4 (482,645); the Special Geographic Area 2 (214,703); and the City of Cotabato 3 (383,383), enumerated barangay by barangay. Sulu, which held seven districts under BAA 58, has none under this act.",
+  "Section 3 — Transitory provision: in the event that the province of Sulu rejoins the BARMM, Congress may allocate at least seven Parliamentary District Seats corresponding to the population and other equitable requirements of the law.",
+  "Section 4 — Interim representation: where the act creates a new parliamentary district after the deadline for filing Certificates of Candidacy for the immediately forthcoming parliamentary elections, and the district is left without a duly elected representative, the President of the Philippines shall appoint an Interim Parliamentary District Representative with the same rights, duties and privileges as an elected representative, whose term ends automatically when the duly elected representative assumes office after the next regular or special elections.",
+  "Section 5 — Effect of the new redistricting: for the 2025 BARMM Parliamentary Election, aspirants who have filed their Certificate of Candidacy retain their candidacy in the district where they originally filed, notwithstanding that the barangay where they are registered has been reassigned to a different district, provided that voting takes place only within the boundaries as defined by this act. The Commission on Elections shall issue appropriate implementing guidelines.",
+  "Section 8 — Takes effect immediately upon publication in the Bangsamoro Gazette or on its official website."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Voters in Basilan, Lanao del Sur, both Maguindanao provinces, Tawi-Tawi, Cotabato City and the Special Geographic Area",
+   "Residents of the Special Geographic Area, whose seats double"
+  ],
+  "impact_tags": [
+   "elections",
+   "governance_civil_service",
+   "local_government"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": null,
+  "figures_note": "Population figures quoted from Section 2: a regional total of 4,545,486 across 32 districts, against 4,944,800 under BAA 58."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2025-08-19"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page. Origin: Bill 351."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/09/BAA-77.pdf",
+  "irr": "COMELEC guidelines required by Section 5 for the 2025 election. Not captured by this registry."
+ },
+ "related_legislation": {
+  "amends": [
+   "BAA 58"
+  ],
+  "amended_by": [],
+  "repeals": null,
+  "origin_bill": "Parliament Bill 351",
+  "related_note": "Amends Section 4 of BAA 58, the original parliamentary districts act. Followed by BAA 86 on the apportionment of parliamentary districts. The Special Geographic Area municipalities it lists were created by BAA 41–47, and this act confirms Ligawasan among them."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "budget_appropriated": null,
+  "irr_status": "Section 5 directs COMELEC to issue implementing guidelines for the 2025 Bangsamoro Parliamentary Election.",
+  "note": "Read from the enacted text as signed. The act gives no reason for the removal of Sulu's districts; its transitory provision refers to Sulu “rejoining” the BARMM. Whether and when Sulu's seats are restored is a matter the act assigns to Congress. Read alongside BAA 86 for the position after 2026."
+ },
+ "citizen_questions": [
+  {
+   "q": "Has my district changed?",
+   "a": "Almost certainly. The whole map was redrawn — municipalities were regrouped across every province, not only where seats were added. Check the lists in this act rather than the 2024 map in BAA 58."
+  },
+  {
+   "q": "What happened to Sulu's seven districts?",
+   "a": "They are not in this map. The act gives no reason, but its transitory provision speaks of Sulu “rejoining” the BARMM, which indicates the province is no longer part of the region."
+  },
+  {
+   "q": "Could Sulu get its seats back?",
+   "a": "Section 3 says that if Sulu rejoins the BARMM, Congress may allocate at least seven Parliamentary District Seats to it. Notably that power is given to Congress, not to the Bangsamoro Parliament."
+  },
+  {
+   "q": "Did the Special Geographic Area gain anything?",
+   "a": "Yes. It goes from a single Lone District to two — the 1st covering Kadayangan, Nabalawag, Pahamuddin and Tugunan, and the 2nd covering Malidegao, Ligawasan, Old Kaabakan and Kapalawan."
+  },
+  {
+   "q": "I filed as a candidate before this passed. What now?",
+   "a": "Section 5 lets you retain your candidacy in the district where you originally filed, even if the barangay where you are registered has moved to another district. Voting happens only within the new boundaries."
+  },
+  {
+   "q": "Who fills a new district that has no elected representative?",
+   "a": "The President of the Philippines appoints an Interim Parliamentary District Representative, whose term ends when a duly elected representative takes office after the next regular or special elections."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 77",
+  "line2": "Bangsamoro Parliamentary Redistricting Act of 2025",
+  "badges": [
+   "IN FORCE",
+   "Elections",
+   "2025"
+  ],
+  "what_this_does": "Redraws all 32 parliamentary districts — Sulu's seven are gone and every other area gains a seat.",
+  "who_it_affects": "Every voter in the BARMM · candidates · the Special Geographic Area"
+ },
+ "views": {
+  "simple": "Redraws the BARMM's 32 parliamentary districts: Sulu's 7 seats are removed and redistributed, with Basilan, Lanao del Sur, both Maguindanao provinces, Tawi-Tawi, Cotabato City and the Special Geographic Area each gaining at least one.",
+  "official": "AN ACT RECONSTITUTING THE PARLIAMENTARY DISTRICTS IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO, AMENDING FOR THE PURPOSE BANGSAMORO AUTONOMY ACT NO. 58"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 77, enacted text as signed (Parliament's acts index).",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Section references and population figures are quoted from that document. Verify against the official copy before citing."
+ }
 }

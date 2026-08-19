@@ -43,6 +43,12 @@ const processLinks = [
 		blurb: 'The path a bill takes, the shorter one a resolution takes, and where you can act.',
 	},
 	{
+		href: '/what-members-do',
+		label: 'What a member actually does',
+		blurb:
+			'The eleven duties the rulebook sets, when the Parliament sits, and what each seat is paid.',
+	},
+	{
 		href: '/questions',
 		label: 'Common questions',
 		blurb:
@@ -111,7 +117,13 @@ export function SiteNav() {
 	return (
 		// A hairline under the bar, so a page scrolling beneath it has an edge to
 		// sit against rather than sliding behind a floating row.
-		<header className='sticky top-0 z-30 border-b border-[var(--rule)] backdrop-blur-md'>
+		//
+		// The blur alone was doing the whole job of separating the bar from the
+		// page, and a blur is not a background: a heading scrolling underneath
+		// stayed dark enough to read straight through the nav links. The tint
+		// gives it a ground, and the blur keeps what passes behind it as motion
+		// rather than as legible text.
+		<header className='sticky top-0 z-30 border-b border-[var(--rule)] bg-[var(--paper)]/85 backdrop-blur-md'>
 			<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
 				{/* Three tracks so the links sit on the true centre of the header
 				    rather than wherever the mark and controls leave room. */}
@@ -330,10 +342,14 @@ export function SiteNav() {
 
 			{/* Mobile menu — the rule sits on a full-width wrapper so it meets the
 			    header's own border edge to edge; only the links are held to the
-			    page container. */}
+			    page container.
+
+			    Opaque rather than the bar's tint: a translucent panel is fine for a
+			    row of links you glance at, and wrong for a list you read down with
+			    the page showing through every entry. */}
 			<div
 				className={`border-[var(--rule)] transition-[border-width] duration-200 md:hidden ${
-					isMenuOpen ? 'border-t' : 'border-t-0'
+					isMenuOpen ? 'border-t bg-[var(--paper)]' : 'border-t-0'
 				}`}
 			>
 				<nav
@@ -345,7 +361,19 @@ export function SiteNav() {
 							: 'mb-0 grid-rows-[0fr] pt-0 opacity-0'
 					}`}
 				>
-					<div className='min-h-0 overflow-hidden'>
+					{/* Sixteen entries and four headings outrun a small phone, and the
+					    menu lives inside a sticky header — so the overflow cannot be
+					    scrolled to by scrolling the page, it simply sits below the fold
+					    unreachable. Capping it against the viewport and letting the list
+					    itself scroll is what makes the last entries gettable. Closed,
+					    the clip is what lets the row collapse to nothing. */}
+					<div
+						className={`min-h-0 ${
+							isMenuOpen
+								? 'max-h-[calc(100dvh-6rem)] overflow-y-auto overscroll-contain'
+								: 'overflow-hidden'
+						}`}
+					>
 						<p className='label'>Registry</p>
 						<div className='mt-3 grid'>
 							{categories.map((category) => (
@@ -406,6 +434,19 @@ export function SiteNav() {
 								</Link>
 							))}
 						</div>
+
+						{/* The bar drops Contribute below `sm` for room, which left a phone
+						    with no way to reach it at all. It closes the menu instead. */}
+						<a
+							href='https://betterbarmm.com/contribute'
+							target='_blank'
+							rel='noreferrer'
+							onClick={closeMenu}
+							className='mt-7 flex w-full items-center justify-center gap-1.5 rounded-full bg-[var(--accent)] px-4 py-2.5 text-[13px] font-medium text-white transition hover:bg-[var(--accent-deep)] sm:hidden'
+						>
+							<HandHeartIcon size={16} weight='fill' aria-hidden='true' />
+							Contribute
+						</a>
 					</div>
 				</nav>
 			</div>

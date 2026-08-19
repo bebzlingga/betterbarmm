@@ -1,170 +1,355 @@
 {
-  "record_type": "bangsamoro_autonomy_act",
-  "basic_information": {
-    "baa_number": 19,
-    "short_title": "Institutionalizes Policies for Bangsamoro Overseas Employment and Protection",
-    "official_title": "AN ACT INSTITUTIONALIZING POLICIES FOR BANGSAMORO OVERSEAS EMPLOYMENT AND PROTECTION OF OVERSEAS BANGSAMORO WORKERS",
-    "type": "Bangsamoro Autonomy Act (regional law)",
-    "enacting_parliament": "BTA1",
-    "date_ratified": "2021-06-17",
-    "current_status": "ENACTED - IN FORCE"
-  },
-  "citizen_summary": {
-    "what_is_this_about": "Institutionalizes Policies for Bangsamoro Overseas Employment and Protection of Overseas Bangsamoro Workers.",
-    "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-    "what_will_change": "Institutionalizes Policies for Bangsamoro Overseas Employment and Protection of Overseas Bangsamoro Workers.",
-    "who_will_be_affected": [
-      "Covered group",
-      "Employers/offices"
-    ],
-    "when_will_it_take_effect": "Ratified 2021-06-17; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
-    "what_this_means_for_you": {
-      "in_short": "A social-protection law: it creates rights, benefits, or safeguards for a specific group of people. If you belong to the covered group, this law is something you can invoke - at work, at a government office, or in seeking assistance.",
-      "in_practice": [
-        "Check the covered group and benefit in the title/full text",
-        "Implementation runs through the mandated ministry - benefits usually require registration or application",
-        "Keep documents ready (IDs, proof of status) when claiming"
-      ],
-      "for_specific_groups": {
-        "Covered group": "A legal entitlement, not charity - it can be demanded",
-        "Employers/offices": "Compliance duties may apply to you"
-      },
-      "where_this_applies": "All of BARMM",
-      "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
-      "what_you_can_do": [
-        "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-        "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-        "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
-      ],
-      "watch_out_for": [],
-      "key_terms_explained": {
-        "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-        "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-        "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
-      },
-      "benefits": {
-        "headline": "Protection and support for Bangsamoro OFWs and their families.",
-        "direct_benefits": [
-          {
-            "benefit": "Institutional protection and welfare standards for overseas workers",
-            "who_gets_it": "Bangsamoro OFWs",
-            "how_to_access": "Through MOLE-BARMM and its overseas-employment programs"
-          },
-          {
-            "benefit": "Family support services while the worker is abroad",
-            "who_gets_it": "OFW families",
-            "how_to_access": "MOLE / MSSD programs"
-          }
-        ],
-        "indirect_benefits": [
-          "Cleaner deployment reduces trafficking and abuse"
-        ],
-        "limitations": [
-          "Overseas enforcement still relies on national agencies (DMW/OWWA) - this law adds the regional layer"
-        ]
-      }
-    }
-  },
-  "key_provisions": [
-    "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+ "record_type": "bangsamoro_autonomy_act",
+ "basic_information": {
+  "baa_number": 19,
+  "short_title": "Overseas Bangsamoro Workers Act of 2020",
+  "official_title": "AN ACT TO INSTITUTIONALIZE POLICIES FOR BANGSAMORO OVERSEAS EMPLOYMENT AND ESTABLISHING A STANDARD OF PROTECTION AND PROMOTION OF THE WELFARE OF OVERSEAS BANGSAMORO WORKERS AND THEIR FAMILIES, AND FOR OTHER PURPOSES",
+  "type": "Bangsamoro Autonomy Act (regional law)",
+  "enacting_parliament": "BTA1",
+  "date_ratified": "2021-06-17",
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Third Regular Session, begun 29 March 2019",
+  "date_passed": "2021-06-17",
+  "date_approved_by_chief_minister": null,
+  "approved_by": "Lapsed into law on 2 August 2021 without the signature of the Chief Minister, under Article VII, Section 25(c) of RA 11054",
+  "signed_by": [
+   "Atty. Ali Pangalian M. Balindong, Speaker",
+   "Prof. Raby B. Angkal, Secretary-General"
   ],
-  "impact": {
-    "who_benefits": [
-      "General public"
-    ],
-    "impact_tags": [
-      "labor_social",
-      "other"
-    ],
-    "estimated_beneficiaries": null,
-    "allocated_budget": null,
-    "figures_note": "Shown only when stated in official documents; none captured for this record."
-  },
-  "legislative_journey": [
-    {
-      "stage": "Filed as a bill",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Committee & plenary readings",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Third Reading",
-      "reached": true,
-      "date": null
-    },
-    {
-      "stage": "Approved & Ratified",
-      "reached": true,
-      "date": "2021-06-17"
-    }
+  "origin_bills": "Bill No. 36",
+  "effectivity": "15 days after complete publication in a newspaper of regional circulation"
+ },
+ "citizen_summary": {
+  "what_is_this_about": "The region's own law for people who work abroad — what their contract must contain, what they may and may not be charged, which countries they may be sent to, and what the government owes them when things go wrong.",
+  "why_was_it_proposed": "Overseas work is a mainstay of household income across the region, and the workers who go are among the most exposed to illegal recruitment, debt and abuse. The act builds a regional layer of protection on top of the national migrant workers law — and states plainly that the Bangsamoro Government does not promote overseas employment as a way to grow the economy.",
+  "what_will_change": "Employment contracts must meet a floor that includes the higher of the host country's minimum wage or Metro Manila's. Employers, not workers, pay for visas, airfare, processing and welfare membership. Deployment is barred to countries without protective guarantees, and to companies with a record of discriminating against migrants on religious or cultural grounds. An Emergency Repatriation Fund and a Legal Assistance Fund are created, each with a statutory floor.",
+  "who_will_be_affected": [
+   "Overseas Bangsamoro Workers and their families",
+   "Recruitment and manning agencies operating in or recruiting from the region",
+   "Medical clinics conducting health examinations for overseas employment",
+   "Insurance companies covering agency-hired workers",
+   "Lending institutions offering placement-fee loans",
+   "Officials of the labour ministry and their relatives, barred from the recruitment business"
   ],
-  "authors_and_sponsors": {
-    "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-    "note": "Authors are recorded on the origin bill's page."
-  },
-  "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-    "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
-  },
-  "related_legislation": {
-    "amends": [],
-    "amended_by": [],
-    "repeals": null,
-    "origin_bill": null
-  },
-  "implementation_status": {
-    "law_enacted": true,
-    "in_force": true,
-    "legal_challenge_note": null,
-    "irr_issued": "unknown - IRR registry pending capture",
-    "implementing_agency": {
-      "agency": "MOLE / MSSD",
-      "inferred": true
-    },
-    "budget_appropriated": "Not stated in title"
-  },
-  "citizen_questions": [
-    {
-      "q": "Is this law in force?",
-      "a": "Yes - ratified 2021-06-17 and in force unless amended (see related legislation)."
-    },
-    {
-      "q": "Who implements it?",
-      "a": "MOLE / MSSD (inferred from the law's subject; the Act itself designates the lead)."
-    },
-    {
-      "q": "Does it have implementing rules (IRR)?",
-      "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
-    },
-    {
-      "q": "Where do I read the full text?",
-      "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
-    }
-  ],
-  "display_header": {
-    "line1": "Bangsamoro Autonomy Act No. 19",
-    "line2": "Institutionalizes Policies for Bangsamoro Overseas Employment and Protection",
-    "badges": [
-      "ENACTED",
-      "Labor Social",
-      "2021"
+  "when_will_it_take_effect": "In force since 2021 — the act lapsed into law on 2 August 2021 without the Chief Minister's signature, effective 15 days after publication.",
+  "what_this_means_for_you": {
+   "in_short": "NOW LAW. Your contract cannot pay you less than the host country's minimum wage or Metro Manila's, whichever is higher. Your employer pays your visa, airfare and processing fee. Nobody may charge you anything beyond a short list of document costs. And if you are stranded, there is a fund to bring you home.",
+   "in_practice": [
+    "Your salary must be at least the host country's minimum wage or the prevailing Metro Manila minimum wage, whichever is higher",
+    "The employer pays the visa or work permit fee, the airfare, the ministry processing fee and your welfare bureau membership",
+    "You pay only listed documentary costs — passport, clearance, authentication, birth certificate, school credentials, trade test, medical exam and inoculation",
+    "No other charge in any amount, form, manner or purpose may be made against you",
+    "You cannot be forced to borrow from a designated lender, use a designated clinic, or train at a designated school",
+    "You are exempt from travel tax and airport fee on showing proof of entitlement",
+    "Your remittances are exempt from documentary stamp tax",
+    "Your insurance is compulsory and must cost you nothing",
+    "A mandatory Pre-Departure Orientation Seminar before you leave",
+    "A help desk in every Philippine labour office in a country where workers from the region are deployed",
+    "₱10,000,000 Emergency Repatriation Fund and ₱5,000,000 Legal Assistance Fund, neither of which may ever fall below those figures"
+   ],
+   "for_specific_groups": {
+    "Workers going abroad": "Fees are capped, the contract floor is set, and pre-departure orientation is mandatory. Deployment is only allowed to countries that have protective labour laws, have ratified the relevant conventions, or have a bilateral agreement with the Philippines or the Bangsamoro Government.",
+    "Workers under 21": "Twenty-one is the minimum age for overseas deployment under this act. If you are found abroad below that age, repatriation is mandatory, the agency's licence is automatically revoked, it faces a ₱500,000 to ₱1,000,000 fine, and all your fees must be refunded in full within 30 days without you having to ask.",
+    "Distressed workers": "Free legal assistance, a legal assistance fund, and — in matters where the Shari'ah Court may have jurisdiction — free Bangsamoro Shari'ah counselling.",
+    "Workers in debt for placement fees": "Granting a loan in violation of Islamic financing principles for placement fees is a prohibited act, as is refusing to condone or renegotiate a loan after your contract was cut short through no fault of your own.",
+    "Returning workers": "A reintegration programme through the welfare bureau, social services for deportees and undocumented returnees, counselling including critical incident stress debriefing, and a comprehensive mental health and psychosocial support programme.",
+    "Families": "The act names strengthening family solidarity as policy, and covers repatriation of remains and belongings at the employer's expense.",
+    "Recruitment agencies": "Licensing and accreditation through the labour ministry's employment bureau, with suspension liftable only on payment of ₱50,000 for every month of suspension.",
+    "Medical clinics": "Fees regulated and published, no monopoly over any receiving country, workers free to choose an accredited clinic, and the decking practice prohibited. A clinic that clears a worker later found medically unfit on arrival pays their repatriation and deployment costs."
+   },
+   "where_this_applies": "All Overseas Bangsamoro Workers and Overseas Bangsamoro within Bangsamoro territory, with assistance extended to those outside it.",
+   "when_you_will_feel_it": "In force since 2021. The help desks, funds and programmes depend on ministry rollout.",
+   "what_you_can_do": [
+    "Ask to see the ministry-approved contract before you sign — the agency must give you a copy and explain your rights and obligations",
+    "Check the salary against both the host country's minimum wage and Metro Manila's; the higher one governs",
+    "Refuse any charge outside the listed documentary costs",
+    "Choose your own accredited medical clinic — being sent to a designated one is prohibited",
+    "If you are a victim of illegal recruitment, the Minister or any aggrieved person may initiate the action, and free legal assistance is available",
+    "Claim your travel tax and airport fee exemption with proof of entitlement from the employment bureau"
+   ],
+   "watch_out_for": [
+    "The act lapsed into law without the Chief Minister's signature — passed 17 June 2021, in force 2 August 2021 under Article VII, Section 25(c) of the Organic Law. It is the only act read by this registry to have taken effect that way.",
+    "Section 46 designates 'the day of signing by the Chief Minister' as Overseas Bangsamoro Workers Day. No such signing occurred.",
+    "Sections 12 and 21 contradict each other. Section 12 lists documentary costs the worker pays; Section 21 says documentary costs must be borne by the principal or recruitment agency.",
+    "The exemptions from travel tax, airport fee and documentary stamp tax are exemptions from national taxes granted by a regional act.",
+    "The minimum age for overseas deployment here is 21, while BAA 82, the later Labor and Employment Code, sets the general minimum employable age in the region at 18.",
+    "Penalties are expressly pegged to RA 10022, and Section 32 anticipates that Parliament may need to amend the act if the national law changes."
+   ],
+   "key_terms_explained": {
+    "OBW": "Overseas Bangsamoro Worker — a Bangsamoro engaged, or to be engaged, in paid work in a country where they are not a citizen, or aboard a foreign-going vessel or offshore installation. Used interchangeably with migrant worker.",
+    "Overseas Bangsamoro": "All Bangsamoro migrants, whether permanent, resident or temporary, authorised or unauthorised.",
+    "Placement fee": "What a recruitment agency charges a worker for recruitment and placement services, as prescribed by the labour Minister.",
+    "Decking": "The practice of sending a worker first to a registration office and then farming them out to a medical clinic elsewhere. Prohibited by this act.",
+    "Economic sabotage": "Illegal recruitment committed by a syndicate of three or more people, or against three or more victims. It carries life imprisonment.",
+    "POLO": "Philippine Overseas Labor Office — the labour post attached to an embassy or consulate, where the act requires a Bangsamoro help desk.",
+    "PDOS / PEOS": "Pre-Departure and Pre-Employment Orientation Seminars — mandatory briefings before recruitment and before leaving.",
+    "Lapsed into law": "Where the Chief Minister neither signs nor vetoes a bill within the period the Organic Law allows, it becomes law anyway."
+   },
+   "status_note": "Passed by Parliament on 17 June 2021; lapsed into law on 2 August 2021 without the Chief Minister's signature, under Article VII, Section 25(c) of RA 11054.",
+   "benefits": {
+    "headline": "A wage floor pegged to Metro Manila, employer-paid deployment costs, a repatriation fund with a statutory minimum, and a ban on sending workers to countries or companies that will not protect them.",
+    "direct_benefits": [
+     {
+      "benefit": "A salary floor of the host country's minimum wage or Metro Manila's, whichever is higher",
+      "who_gets_it": "All Overseas Bangsamoro Workers",
+      "how_to_access": "Section 8(c), as a minimum provision of the employment contract"
+     },
+     {
+      "benefit": "Employer pays the visa or work permit fee, airfare, ministry processing fee and welfare bureau membership",
+      "who_gets_it": "All OBWs",
+      "how_to_access": "Section 11"
+     },
+     {
+      "benefit": "A closed list of charges — nothing else may be collected from you in any amount, form, manner or purpose",
+      "who_gets_it": "All applicants and workers",
+      "how_to_access": "Sections 12 and 13"
+     },
+     {
+      "benefit": "An Emergency Repatriation Fund that may never fall below ₱10 million",
+      "who_gets_it": "Workers needing repatriation in special or compelling circumstances",
+      "how_to_access": "Section 28, administered by the labour ministry"
+     },
+     {
+      "benefit": "A Legal Assistance Fund that may never fall below ₱5 million, plus free legal assistance and Shari'ah counselling",
+      "who_gets_it": "Victims of illegal recruitment and distressed workers",
+      "how_to_access": "Sections 37 and 38"
+     },
+     {
+      "benefit": "Mandatory repatriation, automatic licence revocation, a ₱500,000–₱1,000,000 fine and full refund within 30 days where an underage worker was deployed",
+      "who_gets_it": "Workers deployed below 21",
+      "how_to_access": "Section 29"
+     },
+     {
+      "benefit": "Compulsory insurance covering death, injury, repatriation, subsistence, money claims, compassionate visit and medical evacuation — at no cost to the worker",
+      "who_gets_it": "Agency-hired OBWs",
+      "how_to_access": "Section 45"
+     },
+     {
+      "benefit": "Exemption from travel tax and airport fee, and from documentary stamp tax on remittances",
+      "who_gets_it": "OBWs and their remittance recipients",
+      "how_to_access": "Sections 43 and 44, on proof of entitlement from the employment bureau"
+     },
+     {
+      "benefit": "A help desk in every Philippine labour office where workers from the region are deployed",
+      "who_gets_it": "OBWs abroad",
+      "how_to_access": "Section 27"
+     },
+     {
+      "benefit": "Reintegration, counselling and a mental health and psychosocial support programme",
+      "who_gets_it": "Returning, repatriated and distressed workers",
+      "how_to_access": "Sections 30 and 31"
+     }
     ],
-    "what_this_does": "Institutionalizes Policies for Bangsamoro Overseas Employment and Protection of Overseas Bangsamoro Workers.",
-    "who_it_affects": "General public",
-    "effective": "2021-06-17"
-  },
-  "views": {
-    "simple": "Institutionalizes Policies for Bangsamoro Overseas Employment and Protection of Overseas Bangsamoro Workers.",
-    "official": "AN ACT INSTITUTIONALIZING POLICIES FOR BANGSAMORO OVERSEAS EMPLOYMENT AND PROTECTION OF OVERSEAS BANGSAMORO WORKERS"
-  },
-  "provenance": {
-    "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-    "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing."
+    "indirect_benefits": [
+     "Deployment barred to countries without protective guarantees, and to companies with a record of discriminating against migrants on religious or cultural grounds",
+     "Travel advisories published in a newspaper of general circulation",
+     "A Migration Affairs Unit under the labour ministry",
+     "A registry of qualified applicant workers",
+     "Regulated and published medical examination fees, with free choice of accredited clinic"
+    ],
+    "limitations": [
+     "Penalties are borrowed from national law and change with it.",
+     "The tax exemptions granted are over national taxes.",
+     "Sections 12 and 21 conflict over who bears documentary costs.",
+     "The two funds are modest against the scale of overseas migration from the region."
+    ]
+   },
+   "your_responsibilities": {
+    "for_workers": [
+     "Provide the agency and employer with accurate statements about your skills, experience and qualifications",
+     "Understand and abide by your contract and the company's rules",
+     "Obey the laws of the Philippines and of the host country, and respect its customs, traditions and religious practices",
+     "Support your family financially and morally, communicate regularly, and preserve the integrity of the family",
+     "Attend the mandatory Pre-Departure Orientation Seminar"
+    ],
+    "for_agencies_and_employers": [
+     "Disclose the full terms and conditions before signing, and give the worker a copy of the ministry-approved contract",
+     "Bear the visa, airfare, processing and welfare membership costs, and never pass the insurance premium to the worker",
+     "Ensure the appropriate skills test is administered, and require a medical exam only once there is reasonable certainty of hire",
+     "Repatriate the worker and their belongings, and a deceased worker's remains, at the principal's or agency's expense",
+     "Never allow a non-Filipino citizen to head or manage a licensed recruitment or manning agency"
+    ],
+    "for_government": [
+     "MOLE, through the Bureau of Employment Promotion Welfare, licenses and accredits agencies and issues deployment permits only for countries meeting the guarantees",
+     "The Overseas Workers Welfare Bureau runs welfare, orientation and reintegration programmes",
+     "MSSD provides social services and counselling to deportees, undocumented returnees and repatriated underage workers",
+     "MOH regulates the health examination clinics, publishes their fees, and bars monopolies and decking",
+     "LGUs disseminate information on overseas employment and host pre-employment orientation seminars"
+    ]
+   },
+   "what_is_prohibited": [
+    "Charging any amount beyond the schedule of allowable fees, or making a worker acknowledge more than they actually received as a loan or advance.",
+    "Publishing false notices or documents, or misrepresenting to secure a licence or document hired workers — including reprocessing workers through a job order for nonexistent work, different work, or a different employer.",
+    "Inducing an employed worker to quit, except to free them from oppressive conditions.",
+    "Recruiting or placing workers in jobs harmful to public health or morality or to the dignity of the Republic, particularly the Bangsamoro Government.",
+    "Substituting or altering a ministry-verified contract to the worker's prejudice.",
+    "Withholding or denying travel documents for monetary or other unauthorised reasons.",
+    "Failing to deploy a contracted worker without valid reason, or failing to reimburse their expenses when deployment does not happen through no fault of theirs.",
+    "Allowing a non-Filipino citizen to head or manage a licensed recruitment or manning agency.",
+    "Granting a loan to a worker in violation of Islamic financing for payment of placement fees, imposing a compulsory exclusive lender, or refusing to condone or renegotiate a loan after the contract ends through no fault of the worker.",
+    "Imposing a compulsory exclusive medical clinic or training provider.",
+    "Recruiting while suspended, and passing insurance premiums or charges on to the worker.",
+    "For officials or employees of the labour ministry or other Bangsamoro agencies implementing the act, or their relatives within the fourth civil degree, to engage directly or indirectly in the recruitment business."
+   ],
+   "penalties": {
+    "illegal_recruitment": "Imprisonment of 12 years and 1 day to 20 years and a fine of ₱1,000,000 to ₱2,000,000 — with the maximum imposed where the person recruited is under 18 or the offender is a non-licensee.",
+    "economic_sabotage": "Life imprisonment and a fine of ₱2,000,000 to ₱5,000,000, where illegal recruitment is committed by a syndicate of three or more or against three or more victims.",
+    "prohibited_acts": "Imprisonment of 6 years and 1 day to 12 years and a fine of ₱500,000 to ₱1,000,000. An alien offender is deported without further proceedings, and conviction automatically revokes the licence or registration of the agency, lending institution, training school or medical clinic, and the ministry accreditation.",
+    "underage_deployment": "Automatic revocation of the agency's accreditation and licence, a fine of ₱500,000 to ₱1,000,000, and full refund of all processing fees within 30 days without need of notice, independent of damages.",
+    "officials": "A ministry official who issues a deployment permit in violation of the country-guarantee rule, or who violates the health examination provisions, is removed or dismissed from service with disqualification from appointive public office for 5 years.",
+    "note": "Section 32 states the penalties conform to RA 10022 and other national laws, and that Parliament may amend the act should the national law change."
+   },
+   "where_to_complain": {
+    "first_stop": "Ministry of Labor and Employment, through the Bureau of Employment Promotion Welfare",
+    "abroad": "The Overseas Bangsamoro Workers Help Desk in the Philippine Overseas Labor Office of the country where you are deployed",
+    "legal": "Free legal assistance through MOLE, coordinated with the Department of Justice, the Integrated Bar and volunteer groups; free Bangsamoro Shari'ah counselling where the Shari'ah Court may have jurisdiction",
+    "note": "The Minister, an authorised representative, or any aggrieved person may initiate an action for illegal recruitment. Affidavits of ministry operatives who witnessed the acts suffice to file a complaint, and ministry lawyers act as private prosecutors under the Public Prosecutor's supervision."
+   },
+   "everyday_scenarios": [
+    "An agency asks a worker to pay for their own airfare and visa. Section 11 puts both on the principal or employer, and Section 13 bars any charge outside the listed documentary costs.",
+    "A worker is told they must borrow the placement fee from a particular lender. Imposing a compulsory and exclusive loan arrangement is a prohibited act, as is any placement-fee loan granted in violation of Islamic financing.",
+    "A recruiter offers a job in a country with no migrant worker protections and no bilateral agreement. No deployment permit may issue — and the official who issues one anyway faces dismissal and a five-year disqualification.",
+    "A 19-year-old is found working abroad. Repatriation is mandatory, the agency's licence is automatically revoked, and every fee paid must be refunded within 30 days without anyone having to ask.",
+    "A worker arrives and is declared medically unfit. The clinic that conducted the examination pays for their repatriation and the cost of their deployment."
+   ]
   }
+ },
+ "key_provisions": [
+  "Sections 1–4 — Short title: the “Overseas Bangsamoro Workers Act of 2020”. Policy commits the government to uphold the dignity of the Bangsamoro whether local or overseas, to provide social, economic and legal services, and — while recognising the contribution of remittances — states that “the Bangsamoro government does not promote overseas employment as a means to sustain economic growth and achieve development”, resting the programme solely on the assurance that dignity and fundamental rights will not be compromised, and committing instead to create local employment. It applies gender-sensitive criteria, guarantees free access to courts with legal assistance not denied for poverty, protects documented and undocumented workers alike, recognises the right of overseas Bangsamoro to participate in the region's democratic processes, and commits to deploy only skilled workers as soon as practicable. Coverage extends to all Overseas Bangsamoro Workers and Overseas Bangsamoro within the territory, with assistance to those outside it.",
+  "Sections 5–6 — Rights of every OBW: equality regardless of race, colour, sex, language, religion, political belief and age; equal pay; the right to work and protection from unemployment; rest and leisure with paid periodic holidays; standard treatment free from abuse, physical violence, harassment or acts degrading dignity; and a guaranteed privacy extending to all forms of communication and personal effects. These include all rights recognised under national law, international instruments and the host country. Obligations run to the worker's family, fellow workers, the country, the recruitment agency and employer, and the host country's customs, traditions and religious practices.",
+  "Sections 7–13 — Employment standards. The minimum provisions of an OBW employment contract include the employer's complete name and address, the position and jobsite, and a basic monthly salary that “shall not be lower than the prescribed minimum wage in the host country or prevailing minimum wage in the National Capital Region of the Philippines, whichever is higher”; food and accommodation or a commensurate equivalent; contract duration; free transport to and from the point of hire and free inland transport; regular hours and a day off; overtime pay; vacation and sick leave; free emergency medical and dental treatment; just causes for termination taking account of the host country's customs and laws; dispute settlement; repatriation in case of war, calamity or analogous circumstances at the employer's expense; and repatriation of remains and belongings at the employer's expense. Parties may stipulate additional benefits above the minimum. The agency must disclose the full terms before signing and give the worker a copy of the ministry-approved contract. The principal or employer pays the visa or work permit fee, airfare, the ministry processing fee and the welfare bureau membership contribution; the worker pays only documentary costs — passport, clearance, authentication, birth certificate, school credentials, trade test, medical examination and inoculation — and “no other charges in whatever amount, form, manner or purpose shall be charged against OBW, except those specified”.",
+  "Sections 14–22 — Applicants undergo a skills test at an accredited testing centre only after pre-qualification against an approved job order, and a medical examination at a clinic of their choice only once there is reasonable certainty of hire. A registry of qualified applicants is maintained. The applicant must be of legal age, verified by the agency; where both parties collude to falsify age the ministry may bring action before a competent court. The contract must be presented and explained before signing, and non-disclosure is dealt with by the authorised authority. Section 21 provides that the necessary costs of the documentary process “must be borne by the Principal/Recruitment Agency”. A Pre-Departure Orientation Seminar is mandatory before departure.",
+  "Section 23 — Illegal recruitment covers canvassing, enlisting, contracting, transporting, hiring or procuring workers, including referrals and advertising, by a non-licensee or non-holder of authority under Bangsamoro Autonomy Act No. 9. Prohibited acts, whether by a licensee or not, include overcharging; publishing false documents; misrepresentation to secure a licence or to document hired workers, including reprocessing through job orders for nonexistent work, different work or a different employer; inducing an employed worker to quit except to free them from oppressive terms; blacklisting workers who did not apply through the agency or who joined a union; recruiting into jobs harmful to public health or morality or to the dignity of the Republic, particularly the Bangsamoro Government; failing to submit required reports; substituting or altering a ministry-verified contract to the worker's prejudice; an agency officer becoming an officer of a travel agency; withholding travel documents; failing to deploy without valid reason; failing to reimburse expenses where deployment does not occur through no fault of the worker; and allowing a non-Filipino citizen to head or manage a licensed agency. Illegal recruitment is committed by a syndicate where three or more conspire, and in large scale where committed against three or more, and is then an offence involving economic sabotage. Further prohibited acts include granting a loan to a worker “in violation of Islamic Financing” for payment of placement fees; imposing a compulsory and exclusive lender, medical clinic or training provider; refusing to condone or renegotiate a loan after the worker's contract was prematurely terminated through no fault of their own; recruiting while suspended; and passing insurance premiums or charges on to the worker. Principals, accomplices and accessories are liable, and in juridical persons the officers with ownership, control, management or direction of the business and the responsible employees or agents.",
+  "Sections 24–26 — Deployment is permitted only to countries where OBW rights are protected, evidenced by existing labour and social laws protecting migrant workers, ratification of relevant multilateral instruments, or a bilateral agreement with the National or Bangsamoro Government — and only where the receiving country is taking positive and concrete measures. Absent a clear showing, no deployment permit may issue, and the ministry official responsible for issuing one in violation “shall suffer the penalties of removal or dismissal from service with disqualification to hold any appointive public office for five (5) years”. The ministry must obtain certification from the Department of Foreign Affairs specifying the protective provisions relied on. Deployment to vessels and offshore installations requires compliance with international standards, and deployment to international companies requires compliance with prescribed contract standards and that the company have “no record of discriminating migrants on account of religious affiliation and cultural diversity”. The ministry may terminate or ban deployment in the Bangsamoro interest or where public safety and welfare require. No discrimination is permitted in the deployment process based on a person's appearance by reason of religion, tribe, gender, age, culture or political affiliation.",
+  "Sections 27–31 — An Overseas Bangsamoro Workers Help Desk is established in every Philippine Overseas Labor Office in a country where OBWs are deployed, headed by a co-terminus officer appointed by the Chief Minister on the Minister's recommendation, to assist, monitor and inventory workers and report their status. Repatriation and transport of belongings is the primary responsibility of the recruiting or deploying agency and its principal, including for a deceased worker's remains — except where termination is solely the worker's fault. An Emergency Repatriation Fund under the labour ministry is created, initially ₱10,000,000 from the block grant, and “the amount appropriated shall in no case be less than Ten Million Pesos, inclusive of outstanding balances”. Where an OBW is found below 21 — the minimum age for overseas deployment — repatriation is mandatory, the agency's accreditation and licence are automatically revoked, a fine of ₱500,000 to ₱1,000,000 is imposed, and all processing fees must be refunded in full within 30 days without need of notice, independent of damages. A reintegration programme, and a Comprehensive Mental Health and Psychosocial Support Program for returning, repatriated and distressed workers, are established.",
+  "Sections 32–38 — Penalties conform to RA 10022 and other national laws, with Parliament free to amend the act should the national law change. Illegal recruitment carries 12 years and 1 day to 20 years' imprisonment and a fine of ₱1,000,000 to ₱2,000,000, the maximum applying where the person recruited is under 18 or the offender is a non-licensee. Where it constitutes economic sabotage, the penalty is life imprisonment and a fine of ₱2,000,000 to ₱5,000,000. Prohibited acts carry 6 years and 1 day to 12 years and a fine of ₱500,000 to ₱1,000,000, with deportation for alien offenders and automatic revocation of the licence or registration of the agency, lending institution, training school or medical clinic. It is unlawful for officials or employees of the labour ministry or other Bangsamoro agencies implementing the act, or their relatives within the fourth civil degree, to engage directly or indirectly in the recruitment business. The Minister or any aggrieved person may initiate an action; affidavits of ministry operatives who witnessed the acts suffice to file; and ministry lawyers act as private prosecutors under the Public Prosecutor's supervision. Free legal assistance is provided, the ministry may hire private lawyers foreign or domestic, free Bangsamoro Shari'ah counselling is available where the Shari'ah Court may have jurisdiction, and a Legal Assistance Fund is created with ₱5,000,000 initially from the block grant, never to fall below that figure inclusive of outstanding balances.",
+  "Sections 39–42 — Travel advisories on labour conditions and migration realities are published in a newspaper of general circulation. A Migration Affairs Unit is created under the labour ministry. Intergovernmental coordination runs with the Department of Foreign Affairs, the tourism and statistics authorities, the airport authority, the Department of Justice and regional ministries. Ministry roles are assigned: the Bureau of Employment Promotion Welfare accredits, licenses and registers agencies, regulates overseas employment from the pre-employment stage, deploys only to countries with bilateral agreements guaranteeing protection, and may lift the suspension of an erring agency on payment of ₱50,000 for every month of suspension, engaging in recruitment itself only on a government-to-government basis; the Overseas Workers Welfare Bureau assists workers and families in enforcing contractual obligations, runs welfare programmes and conducts pre-employment and pre-departure seminars; the social services ministry serves deportees, undocumented returnees and repatriated underage workers, with counselling including critical incident stress debriefing; and the health ministry regulates examination clinics — publishing and monitoring their fees, requiring examinations only when hire is reasonably certain, barring any monopoly over a receiving country, guaranteeing free choice of accredited clinic, prohibiting the decking practice, and making a clinic that cleared a worker later found unfit pay their repatriation and deployment costs, with violating officials removed or dismissed and disqualified for 5 years. Local government units disseminate information and host orientation seminars.",
+  "Sections 43–50 — Fees charged by Bangsamoro offices on migrant workers may not be increased, other ministry services are rendered free, and administrative costs may not be borne by the worker. OBWs are exempt from travel tax and airport fee on proof of entitlement, and their remittances from documentary stamp tax. Compulsory insurance for agency-hired workers must be secured at no cost to the worker, covering death, injury, repatriation cost, subsistence allowance, money claims, compassionate visit, medical evacuation and medical repatriation; insurers with officers or relatives within the fourth civil degree connected to agencies or to government agencies in the programme are disqualified; an agency that passes the premium to the worker loses its licence and its directors, partners, proprietors, officers and employees are disqualified from the business; a foreign employer's guarantee fund covers government-to-government hires; and the employment bureau may ban or blacklist insurers evasive or unresponsive to legitimate claims. Section 46 designates “the day of signing by the Chief Minister of this Act” as Overseas Bangsamoro Workers Day. Rights under RA 8042 as amended are reserved. Effective 15 days after complete publication in a newspaper of regional circulation."
+ ],
+ "impact": {
+  "who_benefits": [
+   "Overseas Bangsamoro Workers and their families",
+   "Applicants for overseas employment",
+   "Workers deployed underage or stranded abroad",
+   "Returning and distressed workers",
+   "Remittance recipients"
+  ],
+  "impact_tags": [
+   "labor_social",
+   "governance_civil_service",
+   "health",
+   "economy_trade_investment"
+  ],
+  "estimated_beneficiaries": null,
+  "allocated_budget": "₱10,000,000 Emergency Repatriation Fund and ₱5,000,000 Legal Assistance Fund, both initially from the block grant and thereafter in the Bangsamoro Expenditure Program, neither ever to fall below those amounts inclusive of outstanding balances",
+  "figures_note": "Quoted from Sections 28 and 38."
+ },
+ "legislative_journey": [
+  {
+   "stage": "Filed as a bill",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Committee & plenary readings",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Third Reading",
+   "reached": true,
+   "date": null
+  },
+  {
+   "stage": "Approved & Ratified",
+   "reached": true,
+   "date": "2021-06-17"
+  }
+ ],
+ "authors_and_sponsors": {
+  "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
+  "note": "Authors are recorded on the origin bill's page."
+ },
+ "related_documents": {
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2021/08/BAA-19.pdf",
+  "irr": "The act does not require a separate IRR; implementation runs through MOLE and its bureaus."
+ },
+ "related_legislation": {
+  "amends": [],
+  "amended_by": [],
+  "repeals": "All inconsistent regional laws, decrees, executive orders, issuances, rules and regulations",
+  "origin_bill": "Bill No. 36",
+  "related_note": "Builds on RA 8042 as amended and RA 10022, from which its penalty scale is drawn, and expressly reserves rights under those laws. Illegal recruitment is defined against the licensing regime of BAA 9. BAA 82, the Bangsamoro Labor and Employment Code of 2025, later covered overseas employment regulation in Title III of its Book I — banning direct hiring and requiring agencies to register with the ministry — and set the region's general minimum employable age at 18, while this act keeps 21 as the minimum age for overseas deployment. Legal assistance connects to the Bangsamoro Shari'ah courts for matters within their jurisdiction."
+ },
+ "implementation_status": {
+  "law_enacted": true,
+  "in_force": true,
+  "budget_appropriated": "₱10,000,000 Emergency Repatriation Fund; ₱5,000,000 Legal Assistance Fund",
+  "irr_status": "No implementing rules are required by the act itself; the labour ministry and its bureaus implement directly.",
+  "implementing_agency": {
+   "agency": "Ministry of Labor and Employment, through the Bureau of Employment Promotion Welfare and the Overseas Workers Welfare Bureau",
+   "inferred": false
+  },
+  "note": "Read from the enacted text as published, all 20 pages. The act lapsed into law on 2 August 2021 without the Chief Minister's signature, under Article VII, Section 25(c) of RA 11054 — the only act read by this registry to have taken effect that way. Two internal issues: Sections 12 and 21 conflict over who bears documentary costs, and Section 46 keys Overseas Bangsamoro Workers Day to a signing by the Chief Minister that did not occur."
+ },
+ "citizen_questions": [
+  {
+   "q": "What is the least I can legally be paid?",
+   "a": "Your contract's basic monthly salary must not be lower than the prescribed minimum wage in the host country or the prevailing minimum wage in the National Capital Region of the Philippines, whichever is higher."
+  },
+  {
+   "q": "What am I allowed to be charged?",
+   "a": "Only documentary costs — passport, NBI or police clearance, authentication or notarisation, birth certificate, school credentials, trade test if needed, medical examination and inoculation. Section 13 says no other charge in whatever amount, form, manner or purpose may be made against you. Note that Section 21 separately says the documentary costs must be borne by the principal or recruitment agency, which conflicts with Section 12."
+  },
+  {
+   "q": "Who pays my airfare and visa?",
+   "a": "The principal or employer — along with the work permit fee, the ministry processing fee and your welfare bureau membership contribution."
+  },
+  {
+   "q": "Can I be sent anywhere?",
+   "a": "No. Deployment is only allowed to countries that have labour and social laws protecting migrant workers, have ratified relevant international instruments, or have a bilateral agreement with the National or Bangsamoro Government — and that are taking concrete measures. A ministry official who issues a permit in violation faces dismissal and 5 years' disqualification from appointive office."
+  },
+  {
+   "q": "How old must I be to work abroad?",
+   "a": "Twenty-one. If you are found deployed below that age, repatriation is mandatory, the agency's licence is automatically revoked, it is fined ₱500,000 to ₱1,000,000, and every fee you paid must be refunded in full within 30 days without you having to ask."
+  },
+  {
+   "q": "Is there help if I get stranded?",
+   "a": "Yes. Repatriation is primarily the agency's responsibility at its own cost. Beyond that, an Emergency Repatriation Fund under the labour ministry — never less than ₱10 million — subsidises repatriation in special or compelling circumstances, and there is a help desk in every Philippine labour office where workers from the region are deployed."
+  },
+  {
+   "q": "Can I be made to borrow from a particular lender for my placement fee?",
+   "a": "No. Imposing a compulsory and exclusive loan arrangement is a prohibited act, as is granting a placement-fee loan in violation of Islamic financing, and refusing to condone or renegotiate a loan after your contract ended through no fault of yours."
+  },
+  {
+   "q": "Do I pay for my insurance?",
+   "a": "No. Compulsory insurance for agency-hired workers must be secured at no cost to you. An agency shown to have passed the premium on to you loses its licence, and its directors, partners, officers and employees are disqualified from the recruitment business."
+  },
+  {
+   "q": "Was this signed by the Chief Minister?",
+   "a": "No. Parliament passed it on 17 June 2021 and it lapsed into law on 2 August 2021 without the Chief Minister's signature, under Article VII, Section 25(c) of the Organic Law. It is in force all the same."
+  }
+ ],
+ "display_header": {
+  "line1": "Bangsamoro Autonomy Act No. 19",
+  "line2": "Overseas Bangsamoro Workers Act of 2020",
+  "badges": [
+   "IN FORCE",
+   "Labor",
+   "2021"
+  ],
+  "what_this_does": "Sets a wage floor and fee cap for workers going abroad, puts deployment costs on employers, and creates repatriation and legal assistance funds.",
+  "who_it_affects": "Overseas workers and their families · recruitment agencies · medical clinics · insurers",
+  "effective": "2021-08-02"
+ },
+ "views": {
+  "simple": "The region's overseas workers law: a contract floor pegged to the higher of the host country's or Metro Manila's minimum wage, deployment costs shifted onto employers, a closed list of what a worker may be charged, deployment barred to countries without protective guarantees and to companies that discriminate against migrants on religious grounds, a minimum deployment age of 21 with automatic licence revocation for breaches, prohibitions on placement-fee lending that violates Islamic financing, free legal assistance including Shari'ah counselling, and Emergency Repatriation and Legal Assistance Funds with statutory floors. It lapsed into law without the Chief Minister's signature.",
+  "official": "AN ACT TO INSTITUTIONALIZE POLICIES FOR BANGSAMORO OVERSEAS EMPLOYMENT AND ESTABLISHING A STANDARD OF PROTECTION AND PROMOTION OF THE WELFARE OF OVERSEAS BANGSAMORO WORKERS AND THEIR FAMILIES, AND FOR OTHER PURPOSES"
+ },
+ "provenance": {
+  "source": "Bangsamoro Autonomy Act No. 19, enacted text as published (Parliament's acts index), all 20 pages.",
+  "generation": "Plain-language fields written from the enacted text on 19 August 2026. Section references are quoted from that document. Verify against the official copy before citing."
+ }
 }

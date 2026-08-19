@@ -7,7 +7,6 @@ import { Reveal } from '../../_components/reveal'
 import { ShowAll } from '../../_components/show-all'
 import { ReferralList, type Referral } from '../../_components/referral-list'
 import { findRecordByTitle } from '../../_lib/legislation-data'
-import { getMembersDataset } from '../../_lib/members-data'
 import {
 	getCommittee,
 	getCommitteeSlugs,
@@ -78,12 +77,6 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 	const referredBills = committee.referredBills.map(toReferral)
 	const referredResolutions = committee.referredResolutions.map(toReferral)
 
-	// Authors in the record dialog link to their profiles, keyed the way every
-	// measure writes a name.
-	const memberSlugs = Object.fromEntries(
-		getMembersDataset().members.map((member) => [member.rosterName.toUpperCase(), member.slug]),
-	)
-
 	const officers = committee.seats.filter(
 		(seat) => seat.role !== 'Member' && seat.role !== 'Ex-officio',
 	)
@@ -93,7 +86,10 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 	return (
 		<section className='mx-auto max-w-[88rem] px-6 pb-16 pt-12 lg:px-8 lg:pt-16'>
 			{/* Two columns: what it is on the left, what it holds on the right. */}
-			<div className='grid gap-12 lg:grid-cols-[minmax(0,24rem)_minmax(0,1fr)] lg:gap-24 xl:grid-cols-[minmax(0,28rem)_minmax(0,1fr)] xl:gap-32'>
+			{/* The single column is stated, not implicit — an implicit `auto` track
+			    sizes to its contents' min-content and cannot shrink to a phone. See
+			    the note on the same grid in `members/[slug]`. */}
+			<div className='grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,24rem)_minmax(0,1fr)] lg:gap-24 xl:grid-cols-[minmax(0,28rem)_minmax(0,1fr)] xl:gap-32'>
 				<Reveal>
 					<div>
 						<p className='eyebrow'>Bangsamoro Parliament</p>
@@ -218,13 +214,11 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 									label='Referred bills'
 									noun='bills'
 									items={referredBills}
-									memberSlugs={memberSlugs}
 								/>
 								<ReferralList
 									label='Referred resolutions'
 									noun='resolutions'
 									items={referredResolutions}
-									memberSlugs={memberSlugs}
 								/>
 							</div>
 						) : (
