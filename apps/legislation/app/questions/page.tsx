@@ -97,7 +97,7 @@ function Block({
 		<Reveal>
 			{/* DM Sans below the masthead, and `scroll-mt` to clear the sticky
 			    header — see the notes on the same section in `how-parliament-works`. */}
-			<section id={id} className='scroll-mt-32 py-12 font-sans lg:py-14'>
+			<section id={id} className='scroll-mt-32 py-14 font-sans lg:py-20'>
 				<p className='eyebrow'>{label}</p>
 				<h2 className='section-title mt-4 max-w-3xl'>{title}</h2>
 				{lead ? <p className='section-lead mt-4 max-w-2xl text-[var(--ink-3)]'>{lead}</p> : null}
@@ -169,13 +169,13 @@ export default function QuestionsPage() {
 						A bill is a proposal. An act is a bill that made it all the way through and became law —
 						here they are called Bangsamoro Autonomy Acts. A resolution is Parliament saying
 						something in its own name: it does not become law and binds nobody outside the
-						Parliament. <Full href='/legislative-process'>Both paths, step by step</Full>.
+						Parliament. <Full href='/how-parliament-works#the-bill-path'>Both paths, step by step</Full>.
 					</Question>
 					<Question ask='Who is allowed to file a bill?'>
 						A member holding no executive post, the Chief Minister or a cabinet minister, or a
 						committee that decided through its own inquiries that a law is needed. Which of the
 						three filed it tells you a lot about how far it is likely to get.{' '}
-						<Full href='/legislative-process#the-bill-path'>The path a bill takes</Full>.
+						<Full href='/how-parliament-works#the-bill-path'>The path a bill takes</Full>.
 					</Question>
 					<Question ask='What happens if the Chief Minister refuses to sign a bill?'>
 						Refusing changes nothing on its own. Thirty days after a passed bill reaches the Chief
@@ -186,7 +186,7 @@ export default function QuestionsPage() {
 					<Question ask='When does a new law actually start to apply to me?'>
 						Fifteen days after it is printed in full in a newspaper circulating in the region — not
 						the day it was passed, and not the day it was signed.{' '}
-						<Full href='/legislative-process#the-bill-path'>The path a bill takes</Full>.
+						<Full href='/how-parliament-works#the-bill-path'>The path a bill takes</Full>.
 					</Question>
 					<Question ask='Why are there so many resolutions and so few acts?'>
 						Because a resolution is much easier to pass and does much less. One that concerns
@@ -313,17 +313,17 @@ export default function QuestionsPage() {
 				</Block>
 
 				<Reveal>
-					<section className='py-14'>
+					<section className='py-14 lg:py-20'>
 						<p className='label label-strong'>Where the full answers are</p>
 						<div className='mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm'>
 							<Link href='/how-parliament-works' className='rule-link'>
 								Powers, limits, and the rulebook
 							</Link>
-							<Link href='/legislative-process' className='rule-link'>
+							<Link href='/how-parliament-works#the-bill-path' className='rule-link'>
 								How a measure becomes law
 							</Link>
 						</div>
-						<p className='mt-5 max-w-3xl text-[13px] leading-6 text-[var(--ink-3)]'>
+						<p className='mt-5 max-w-3xl bb-body text-[var(--ink-3)]'>
 							Every answer above is short on purpose. The two pages behind it carry the same ground
 							in full, and name the rule each point rests on — where they and this page differ, they
 							are right.

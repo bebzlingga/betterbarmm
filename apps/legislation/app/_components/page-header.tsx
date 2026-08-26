@@ -1,8 +1,10 @@
+import { LineReveal, OkirBloom, Rise } from '@betterbarmm/editorial'
+
 type PageHeaderProps = {
 	eyebrow: string
 	title: string
 	/**
-	 * The second half of a two-tone headline, set in a lighter grey. The dark
+	 * The second half of a two-tone headline, set in the muted grey. The dark
 	 * line carries the claim; this one carries the qualifier, so the eye lands
 	 * on what matters before reading the rest.
 	 */
@@ -10,31 +12,39 @@ type PageHeaderProps = {
 	description: string
 	meta?: string
 	/**
-	 * `brand` is for the standing pages — About — where the heading is the
-	 * page's whole point rather than a label over a list of records. It runs
-	 * centred, large, and heavy, since there is no list beneath it competing
-	 * for the eye.
+	 * `brand` is for the standing pages — the hub, Data & Methodology — where
+	 * the heading is the page's whole point rather than a label over a list of
+	 * records. It runs large, with the medallion behind it.
 	 */
 	emphasis?: 'default' | 'brand'
 	/**
-	 * Only read on `brand`. Centring suits a page that is purely a statement;
-	 * a page that opens onto a list reads better ranged left, so the headline
+	 * Only read on `brand`. Centring suits a page that is purely a statement; a
+	 * page that opens onto a list reads better ranged left, so the headline
 	 * shares an edge with the records underneath it.
 	 */
 	align?: 'center' | 'left'
 	/**
-	 * Only read on `brand`. `compact` steps the headline down a size and holds
-	 * the header to three quarters of the page — for a page whose masthead is a
-	 * label over a grid rather than the page's whole point. `hero` steps it up,
-	 * for the one page that opens the site.
+	 * Only read on `brand`. `compact` steps the headline down for a masthead
+	 * that is a label over a grid; `hero` steps it up, for the page that opens
+	 * the registry.
 	 */
 	size?: 'display' | 'compact' | 'hero'
 }
 
 /**
- * The top of every page. Deliberately plain — no rules, no background pattern,
- * just one column of text with room around it. The page's own content is what
- * should carry weight, not its masthead.
+ * The top of every page in the registry.
+ *
+ * It used to sit on the crimson band. That band is now spent once per page, at
+ * the foot, on the one thing the page is asking for — and a masthead on it
+ * meant every page opened and closed on the same shout. So the header takes the
+ * warm paper instead, with the woven lattice behind it and one okir medallion
+ * turning off the top-right corner: quieter than the crimson, and the same
+ * masthead the landing site uses, which is the point. A reader crossing from
+ * betterbarmm.com to the registry should not feel they have changed sites.
+ *
+ * The headline arrives a line at a time. Where it breaks is given rather than
+ * measured — at these sizes a wrap decided by the container puts a two-letter
+ * word alone on a line, and the shape falls apart.
  */
 export function PageHeader({
 	eyebrow,
@@ -49,91 +59,98 @@ export function PageHeader({
 	const isBrand = emphasis === 'brand'
 
 	if (isBrand) {
-		// Ranged left, the column just drops its centring — the pill and the
-		// spacing are the same header either way.
 		const centred = align === 'center'
-		const compact = size === 'compact'
 		const column = centred ? 'mx-auto ' : ''
 		// A centred header needs a measure, or the lines run too long to track
 		// back to. Ranged left it shares the page's edges with the content under
-		// it, so it takes the full width — unless it is compact, which holds it
-		// to three quarters and leaves the right edge to breathe.
-		// The hero takes the full measure of the page: at this size a cap would
-		// break the line where the container doesn't, and the point of the cut is
-		// that it spans the page. Prose below keeps its own measure.
-		const titleWidth =
-			size === 'hero' ? '' : centred ? 'max-w-5xl ' : compact ? 'lg:max-w-[75%] ' : ''
-		const proseWidth = centred ? 'max-w-4xl ' : compact ? 'lg:max-w-[75%] ' : ''
-		// Three cuts, and the size follows the length of the line rather than the
-		// importance of the page: `hero` is set for a short headline that fits on
-		// one or two lines, and would wrap a sentence three times.
-		//
-		// Each cut takes an extra step below `sm`. The gap from a phone to 640px
-		// is the widest one in the scale, and a size picked so a display line
-		// clears a 640px column is set against roughly half that on a 360px
-		// screen — the words still fit, but the headline stops being a masthead
-		// and becomes a wall. The narrow step lands around 400px, where a phone
-		// held in one hand has the width to carry the full cut.
-		const titleSize = compact
-			? 'text-[2rem] min-[400px]:text-[2.25rem] sm:text-[3rem] lg:text-[3.5rem]'
-			: size === 'hero'
-				? 'text-[2.75rem] min-[400px]:text-[3.5rem] sm:text-[5.25rem] lg:text-[6.5rem]'
-				: 'text-[2.5rem] min-[400px]:text-[3.25rem] sm:text-[4.75rem] lg:text-[5.5rem]'
+		// it, so it takes the full width.
+		const titleWidth = centred ? 'max-w-5xl ' : size === 'compact' ? 'lg:max-w-[75%] ' : ''
+		const proseWidth = centred ? 'max-w-3xl ' : size === 'compact' ? 'lg:max-w-[75%] ' : 'max-w-2xl '
+		const titleClass =
+			// Each cut one step up from where it started, to sit with the landing
+			// site's mastheads: `hero` on the largest display cut, `compact` — the
+			// label over a register — at the size the main site opens a section.
+			size === 'compact' ? 'bb-display-md' : size === 'hero' ? 'bb-display-lg' : 'bb-display'
 
 		return (
-			// The ground runs the full width of the viewport while the header keeps
-			// the estate's column, so the band reads as the page's masthead rather
-			// than as a coloured card sitting on it. `brand-bg` re-points the
-			// tokens, so every part below takes its colour from the ground without
-			// being told about it.
-			<div className='brand-bg'>
-				<section
-					className={`mx-auto max-w-[88rem] px-6 pb-12 pt-14 sm:pb-14 sm:pt-20 lg:px-8 lg:pb-20 lg:pt-28${
+			/* The landing site's masthead, to the point: same lattice, same medallion
+			   off the top-right corner, same proportions. `hero` fills four fifths of
+			   the screen the way betterbarmm.com's mastheads do — a reader crossing
+			   from there to the registry should not feel they have changed sites. The
+			   other cuts stay in the flow: a masthead that size over a page of four
+			   hundred rows is furniture in the way of what they came for. */
+			<section
+				className={`bb-lattice relative overflow-hidden${
+					size === 'hero' ? ' flex min-h-[80svh] items-center' : ''
+				}`}
+			>
+				<OkirBloom className='absolute -right-[14%] -top-[38%] size-[min(44rem,86vw)] opacity-[0.15]' />
+				<span aria-hidden='true' className='bb-glow absolute -right-[10%] -top-[20%] size-[34rem]' />
+
+				<div
+					className={`bb-container relative w-full pb-16 pt-16 lg:pb-24 lg:pt-24${
 						centred ? ' text-center' : ''
 					}`}
 				>
-					{/* The kicker states the size of the thing rather than naming the
-				    page — the headline already says what the page is. */}
-					<p className='font-title inline-flex items-center rounded-full border border-[var(--rule)] px-3.5 py-1.5 text-[11px] font-semibold uppercase text-[var(--ink-3)]'>
-						{eyebrow}
-					</p>
+					<Rise distance={14}>
+						{/* The kicker states the size or the subject of the thing rather
+						    than naming the page — the headline already says what it is. */}
+						<p className={`bb-label${centred ? ' justify-center' : ''}`}>{eyebrow}</p>
+					</Rise>
 
-					<h1
-						className={`${column}${titleWidth}mt-6 font-extrabold leading-[1.02] text-[var(--ink)] ${titleSize}`}
-					>
-						{title}
-						{/* Flows inline — where it breaks is left to the text, not forced. */}
-						{titleMuted ? (
-							<>
-								{' '}
-								<span className='text-[var(--ink-display)]'>{titleMuted}</span>
-							</>
-						) : null}
-					</h1>
+					<LineReveal
+						lines={titleMuted ? [title, titleMuted] : [title]}
+						delay={0.08}
+						className={`${column}${titleWidth}${titleClass} mt-8 text-[var(--ink)]`}
+						lineClassName={[undefined, 'bb-mute']}
+					/>
 
-					<p className={`${column}${proseWidth}mt-7 text-base leading-6 text-[var(--ink-2)]`}>
-						{description}
-					</p>
+					<Rise delay={0.32} distance={16}>
+						<p
+							className={`${column}${proseWidth}bb-body mt-8 text-[var(--ink-2)]`}
+						>
+							{description}
+						</p>
+					</Rise>
 
-					{meta ? <p className='meta-sm mt-7'>{meta}</p> : null}
-				</section>
-			</div>
+					{meta ? (
+						<Rise delay={0.42} distance={12}>
+							<p className='meta-sm mt-8'>{meta}</p>
+						</Rise>
+					) : null}
+				</div>
+
+				{/* The seam into the page proper. A malong's warp, not a 1px rule. */}
+				<div className='bb-weave' aria-hidden='true' />
+			</section>
 		)
 	}
 
+	// The list-page cut: a label over a register, so the type steps well down and
+	// the medallion goes. A masthead this size on a page of four hundred rows is
+	// furniture in the way of the thing the reader came for.
 	return (
-		<div className='brand-bg'>
-			<section className='mx-auto max-w-[88rem] px-6 pb-10 pt-12 sm:pb-12 sm:pt-16 lg:px-8 lg:pb-16 lg:pt-24'>
-				<p className='eyebrow'>{eyebrow}</p>
+		<section className='bb-lattice relative overflow-hidden'>
+			<div className='bb-container relative pb-12 pt-12 lg:pb-16 lg:pt-20'>
+				<Rise distance={12}>
+					<p className='bb-label'>{eyebrow}</p>
+				</Rise>
 
-				<h1 className='mt-4 max-w-3xl text-[1.75rem] font-semibold leading-[1.1] text-[var(--ink)] min-[400px]:text-[2rem] sm:text-[2.75rem]'>
-					{title}
-				</h1>
+				<LineReveal
+					lines={[title]}
+					delay={0.06}
+					className='bb-display-md mt-8 max-w-3xl text-[var(--ink)]'
+				/>
 
-				<p className='mt-5 max-w-2xl text-base leading-6 text-[var(--ink-2)]'>{description}</p>
+				<Rise delay={0.25} distance={14}>
+					<p className='bb-body mt-6 max-w-2xl text-[var(--ink-2)]'>
+						{description}
+					</p>
+					{meta ? <p className='meta-sm mt-6'>{meta}</p> : null}
+				</Rise>
+			</div>
 
-				{meta ? <p className='meta-sm mt-6'>{meta}</p> : null}
-			</section>
-		</div>
+			<div className='bb-weave' aria-hidden='true' />
+		</section>
 	)
 }

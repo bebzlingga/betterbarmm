@@ -68,7 +68,7 @@ export function MemberPayFigures({ centred = false }: { centred?: boolean }) {
 						<p className='num mt-3 text-2xl font-black leading-none text-[var(--ink)]'>
 							{figure.value}
 						</p>
-						<p className='mt-2.5 text-[13px] leading-5 text-[var(--ink-3)]'>{figure.detail}</p>
+						<p className='mt-2.5 bb-body text-[var(--ink-3)]'>{figure.detail}</p>
 					</dd>
 				</div>
 			))}

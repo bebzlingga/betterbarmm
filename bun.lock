@@ -36,27 +36,17 @@
         "react-dom": "19.2.4",
       },
     },
-    "apps/bills": {
-      "name": "@betterbarmm/bills",
-      "version": "0.0.1",
-      "dependencies": {
-        "@betterbarmm/ui": "workspace:*",
-        "@phosphor-icons/react": "^2.1.10",
-        "@vercel/analytics": "^2.0.1",
-        "next": "16.2.6",
-        "react": "19.2.4",
-        "react-dom": "19.2.4",
-      },
-    },
     "apps/budget": {
       "name": "@betterbarmm/budget",
       "version": "0.0.1",
       "dependencies": {
         "@betterbarmm/budget-data": "workspace:*",
         "@betterbarmm/charts": "workspace:*",
+        "@betterbarmm/editorial": "workspace:*",
         "@betterbarmm/ui": "workspace:*",
         "@vercel/analytics": "^2.0.1",
         "lucide-react": "^1.16.0",
+        "motion": "^13.1.1",
         "next": "16.2.6",
         "react": "19.2.4",
         "react-dom": "19.2.4",
@@ -66,9 +56,40 @@
       "name": "@betterbarmm/election",
       "version": "0.0.1",
       "dependencies": {
+        "@betterbarmm/editorial": "workspace:*",
         "@betterbarmm/ui": "workspace:*",
         "@phosphor-icons/react": "^2.1.10",
         "@vercel/analytics": "^2.0.1",
+        "motion": "^13.1.1",
+        "next": "16.2.6",
+        "react": "19.2.4",
+        "react-dom": "19.2.4",
+      },
+    },
+    "apps/legislation": {
+      "name": "@betterbarmm/legislation",
+      "version": "0.0.1",
+      "dependencies": {
+        "@betterbarmm/editorial": "workspace:*",
+        "@betterbarmm/ui": "workspace:*",
+        "@phosphor-icons/react": "^2.1.10",
+        "@vercel/analytics": "^2.0.1",
+        "motion": "^13.1.1",
+        "next": "16.2.6",
+        "react": "19.2.4",
+        "react-dom": "19.2.4",
+      },
+    },
+    "apps/lgu": {
+      "name": "@betterbarmm/lgu",
+      "version": "0.0.1",
+      "dependencies": {
+        "@betterbarmm/editorial": "workspace:*",
+        "@betterbarmm/lgu-data": "workspace:*",
+        "@betterbarmm/ui": "workspace:*",
+        "@phosphor-icons/react": "^2.1.10",
+        "@vercel/analytics": "^2.0.1",
+        "motion": "^13.1.1",
         "next": "16.2.6",
         "react": "19.2.4",
         "react-dom": "19.2.4",
@@ -78,10 +99,13 @@
       "name": "@betterbarmm/www",
       "version": "0.0.1",
       "dependencies": {
+        "@betterbarmm/editorial": "workspace:*",
+        "@betterbarmm/lgu-data": "workspace:*",
         "@betterbarmm/ui": "workspace:*",
         "@phosphor-icons/react": "^2.1.10",
         "@vercel/analytics": "^2.0.1",
         "lucide-react": "^1.16.0",
+        "motion": "^13.1.1",
         "next": "16.2.6",
         "react": "19.2.4",
         "react-dom": "19.2.4",
@@ -108,6 +132,18 @@
     },
     "packages/db": {
       "name": "@betterbarmm/db",
+      "version": "0.0.1",
+    },
+    "packages/editorial": {
+      "name": "@betterbarmm/editorial",
+      "version": "0.0.1",
+      "peerDependencies": {
+        "motion": "^13.1.1",
+        "react": "^19.0.0",
+      },
+    },
+    "packages/lgu-data": {
+      "name": "@betterbarmm/lgu-data",
       "version": "0.0.1",
     },
     "packages/pdf-tools": {
@@ -169,8 +205,6 @@
 
     "@betterbarmm/auth": ["@betterbarmm/auth@workspace:packages/auth"],
 
-    "@betterbarmm/bills": ["@betterbarmm/bills@workspace:apps/bills"],
-
     "@betterbarmm/budget": ["@betterbarmm/budget@workspace:apps/budget"],
 
     "@betterbarmm/budget-data": ["@betterbarmm/budget-data@workspace:packages/budget-data"],
@@ -181,7 +215,15 @@
 
     "@betterbarmm/db": ["@betterbarmm/db@workspace:packages/db"],
 
+    "@betterbarmm/editorial": ["@betterbarmm/editorial@workspace:packages/editorial"],
+
     "@betterbarmm/election": ["@betterbarmm/election@workspace:apps/election"],
+
+    "@betterbarmm/legislation": ["@betterbarmm/legislation@workspace:apps/legislation"],
+
+    "@betterbarmm/lgu": ["@betterbarmm/lgu@workspace:apps/lgu"],
+
+    "@betterbarmm/lgu-data": ["@betterbarmm/lgu-data@workspace:packages/lgu-data"],
 
     "@betterbarmm/pdf-tools": ["@betterbarmm/pdf-tools@workspace:packages/pdf-tools"],
 
@@ -609,6 +651,8 @@
 
     "fraction.js": ["fraction.js@5.3.4", "", {}, "sha512-1X1NTtiJphryn/uLQz3whtY6jK3fTqoE3ohKs0tT+Ujr1W59oopxmoEh7Lu5p6vBaPbgoM0bzveAW4Qi5RyWDQ=="],
 
+    "framer-motion": ["framer-motion@13.1.1", "", { "dependencies": { "motion-dom": "^13.1.1", "motion-utils": "^13.0.0", "tslib": "^2.4.0" }, "peerDependencies": { "react": "^18.0.0 || ^19.0.0", "react-dom": "^18.0.0 || ^19.0.0" }, "optionalPeers": ["react", "react-dom"] }, "sha512-B/xn2TPS4f61cEBLFjiYlQFnBZUW1YVj/LM+C+N4OP8Rs95VLEI2ot/RlfBg111la/EiyECFaJJi/A3FWA8MUA=="],
+
     "function-bind": ["function-bind@1.1.2", "", {}, "sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA=="],
 
     "function.prototype.name": ["function.prototype.name@1.1.8", "", { "dependencies": { "call-bind": "^1.0.8", "call-bound": "^1.0.3", "define-properties": "^1.2.1", "functions-have-names": "^1.2.3", "hasown": "^2.0.2", "is-callable": "^1.2.7" } }, "sha512-e5iwyodOHhbMr/yNrc7fDYG4qlbIvI5gajyzPnb5TCwyhjApznQh1BMFou9b30SevY43gCJKXycoCBjMbsuW0Q=="],
@@ -792,6 +836,12 @@
     "minimatch": ["minimatch@3.1.5", "", { "dependencies": { "brace-expansion": "^1.1.7" } }, "sha512-VgjWUsnnT6n+NUk6eZq77zeFdpW2LWDzP6zFGrCbHXiYNul5Dzqk2HHQ5uFH2DNW5Xbp8+jVzaeNt94ssEEl4w=="],
 
     "minimist": ["minimist@1.2.8", "", {}, "sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA=="],
+
+    "motion": ["motion@13.1.1", "", { "dependencies": { "framer-motion": "^13.1.1", "tslib": "^2.4.0" }, "peerDependencies": { "react": "^18.0.0 || ^19.0.0", "react-dom": "^18.0.0 || ^19.0.0" }, "optionalPeers": ["react", "react-dom"] }, "sha512-WNZoK6xiF+kkTqkZ5K7FDDh6A8BG4i5Hc7KXtW8gtTxkpJFds+hIOrDaQGKjQj/AE/i4hJqAaUHEqp/Qo02y6Q=="],
+
+    "motion-dom": ["motion-dom@13.1.1", "", { "dependencies": { "motion-utils": "^13.0.0" } }, "sha512-XSf8VYWSB6G/0IY3rWVbyLcxWXtAVHkN1PQE2agTaCv3u8RGvbwu56TyyR/MNzBqqNavEBTZzErcxI1TxBrjcA=="],
+
+    "motion-utils": ["motion-utils@13.0.0", "", {}, "sha512-7DnN7TmbLcYXcG4RVadXIihWlyuM9afoUww8Y5Agg431kGKiuL2/OMyP4mJ5wLz+pvN3t5ySClLOaVXJ+wekRQ=="],
 
     "ms": ["ms@2.1.3", "", {}, "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA=="],
 

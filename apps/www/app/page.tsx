@@ -1,48 +1,46 @@
-import {
-	ArrowRightIcon,
-	ArrowsClockwiseIcon,
-	BankIcon,
-	ClockCounterClockwiseIcon,
-	DatabaseIcon,
-	FileMagnifyingGlassIcon,
-	MosqueIcon,
-	UsersThreeIcon,
-} from '@phosphor-icons/react/ssr'
+import { ArrowRightIcon, ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
-import { PageHeader } from './_components/page-header'
-import { Reveal } from './_components/reveal'
+import { ChapterStrip, type StripCard } from './_components/chapter-strip'
+import { Counter, CtaAction, CtaPanel, LineReveal, Magnetic, OkirBloom, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { bangsamoroParliament, discoverBarmmTopics } from './_components/discover-barmm-data'
+import { DiscoverMarquee } from './_components/discover-marquee'
+import { photo } from './_components/discover-media'
+import { lguCounts } from '@betterbarmm/lgu-data'
+import { lguData } from '@betterbarmm/lgu-data'
+import { SectionHead } from './_components/masthead'
+import { ContextDiagram, LivingDiagram, SourceDiagram } from './_components/method-diagram'
+import { HeroGraphic } from './_components/hero-graphic'
+import { ScrollCue } from './_components/scroll-cue'
 import { SiteHeader } from './_components/site-header'
+import { WorkspaceIndex, type Workspace } from './_components/workspace-index'
 
 /**
- * Every workspace, live or planned, in one list.
+ * The band under the hero.
  *
- * They used to be split across a featured card and a "what comes next"
- * column, which made the live one loud and the rest an afterthought. As one
- * list they read the way the registry reads: a row per thing, its state on
- * the same line, in the order it will arrive.
+ * It ran the thirty office acronyms — OCM, BICTO, BPDA — which is a roll call
+ * of bodies a first-time reader has never heard of, at the one point on the
+ * page where they are still deciding whether this site is for them. What it
+ * says now is what the site is promising, in the words the promise is made in.
+ *
+ * Two lines and no more. A band that moves is read a phrase at a time, and a
+ * reader who catches a different one on each pass has been given a list to
+ * assemble rather than a claim to take away. The marquee repeats them itself,
+ * as many times as the window is wide.
  */
-type Workspace = {
-	label: string
-	/** Absent while a workspace is still only planned — the row is then inert. */
-	href?: string
-	blurb: string
-	/** What the workspace covers, in the source's own units. */
-	measure: string
-	state: 'live' | 'soon' | 'planned'
-}
+const principlesBand = ['Better Transparency', 'Better Governance']
 
 const workspaces: Workspace[] = [
 	{
 		label: 'Election',
-		href: 'https://election.betterbarmm.com',
+		href: '/soon',
 		blurb:
 			'Parties, candidates, districts, and sectoral seats for the 2026 Parliamentary Elections, with the source record behind each one.',
-		measure: '2026 Parliamentary Elections',
+		measure: '2026 Parliament',
 		state: 'live',
 	},
 	{
 		label: 'Legislation',
-		href: 'https://bills.betterbarmm.com',
+		href: 'https://legislation.betterbarmm.com',
 		blurb:
 			'Bills, autonomy acts, resolutions, committees, and the members who filed them — with the stage each measure has reached.',
 		measure: 'Bangsamoro Parliament',
@@ -50,7 +48,7 @@ const workspaces: Workspace[] = [
 	},
 	{
 		label: 'Budget',
-		href: 'https://budget.betterbarmm.com',
+		href: '/soon',
 		blurb: 'Appropriations by agency and programme, traced to the General Appropriations Act.',
 		measure: 'GAAB FY 2020–2026',
 		state: 'soon',
@@ -58,14 +56,16 @@ const workspaces: Workspace[] = [
 	{
 		label: 'Public works',
 		blurb: 'Infrastructure projects, their cost, their contractor, and whether they were finished.',
-		measure: 'Infrastructure tracker',
+		measure: 'Infrastructure',
 		state: 'planned',
 	},
 	{
 		label: 'Local government',
-		blurb: 'The provinces, cities, and municipalities of the region, and who runs them.',
+		href: '/soon',
+		blurb:
+			'Every province, city, municipality and barangay in the region — population, land area, and the officials elected to each.',
 		measure: 'LGU directory',
-		state: 'planned',
+		state: 'live',
 	},
 	{
 		label: 'Public services',
@@ -81,37 +81,42 @@ const workspaces: Workspace[] = [
 	},
 ]
 
-const stateBadge = {
-	live: { className: 'badge badge-done', label: 'Live' },
-	soon: { className: 'badge badge-plain badge-move', label: 'Soon' },
-	planned: { className: 'badge badge-plain badge-idle', label: 'Planned' },
-} as const
-
-const discoverTopics = [
+/** The five chapters of the primer, as the strip presents them. */
+const chapters: StripCard[] = [
 	{
-		title: 'History',
-		blurb:
-			'From the sultanates and the Bangsamoro struggle to the Organic Law and the ongoing transition.',
 		href: '/discover/history',
-		icon: ClockCounterClockwiseIcon,
+		title: 'History',
+		blurb: 'From the sultanates and the Bangsamoro struggle to the Organic Law and the transition.',
+		photo: photo('makhdumMosque'),
+		contains: ['Sultanates', 'Peace process'],
 	},
 	{
+		href: '/discover/governance',
 		title: 'Government',
 		blurb: 'Parliament, the chief minister, ministries, and the offices that run the region.',
-		href: '/discover/governance',
-		icon: BankIcon,
+		photo: photo('parliamentBuilding'),
+		contains: ['Parliament', 'Ministries'],
 	},
 	{
+		href: '/discover/local-government',
+		title: 'Local Government',
+		blurb: 'Provinces, cities, municipalities and barangays — and who you elect to each.',
+		photo: photo('cotabatoPlaza'),
+		contains: ['Provinces', 'Barangays'],
+	},
+	{
+		href: '/discover/people',
 		title: 'People',
 		blurb: 'The Moro, Indigenous, and settler communities that shape Bangsamoro life.',
-		href: '/discover/people',
-		icon: UsersThreeIcon,
+		photo: photo('singkil'),
+		contains: ['13 Moro groups', 'Languages'],
 	},
 	{
+		href: '/discover/culture-places',
 		title: 'Culture & Places',
 		blurb: 'Mosques, sacred sites, islands, food, textiles, and living heritage.',
-		href: '/discover/culture-places',
-		icon: MosqueIcon,
+		photo: photo('budBongao'),
+		contains: ['Islands', 'Textiles'],
 	},
 ]
 
@@ -121,252 +126,314 @@ const principles = [
 		title: 'Start with the record.',
 		description:
 			'Every workspace is built on a visible source trail — official PDFs, datasets, and public records you can open yourself.',
-		icon: DatabaseIcon,
+		diagram: SourceDiagram,
 	},
 	{
 		label: 'Context',
 		title: 'Explain what it means.',
 		description:
 			'Records come with dates, labels, plain-language notes, and enough background to know why they matter.',
-		icon: FileMagnifyingGlassIcon,
+		diagram: ContextDiagram,
 	},
 	{
 		label: 'Living data',
 		title: 'Keep it honest.',
 		description:
 			'Names, figures, and statuses change. Warnings and verification notes stay right beside the data.',
-		icon: ArrowsClockwiseIcon,
+		diagram: LivingDiagram,
 	},
 ]
 
-/** A workspace row. Only the ones that exist are links. */
-function WorkspaceRow({ workspace, index }: { workspace: Workspace; index: number }) {
-	const badge = stateBadge[workspace.state]
-
-	const body = (
-		<>
-			<div className='min-w-0'>
-				<div className='flex flex-wrap items-center gap-x-2 gap-y-1.5'>
-					<span className='num text-[13px] font-medium text-[var(--ink-3)]'>
-						{String(index + 1).padStart(2, '0')}
-					</span>
-					<span className={badge.className}>{badge.label}</span>
-					<span className='meta-sm'>{workspace.measure}</span>
-				</div>
-
-				<h3 className='mt-2 text-[16.5px] font-medium leading-snug text-[var(--ink)]'>
-					{workspace.label}
-				</h3>
-
-				<p className='mt-1.5 max-w-2xl text-sm leading-6 text-[var(--ink-2)]'>{workspace.blurb}</p>
-			</div>
-
-			{workspace.href ? (
-				<div className='flex items-center'>
-					<ArrowRightIcon className='row-arrow hidden size-4 sm:block' aria-hidden='true' />
-				</div>
-			) : null}
-		</>
-	)
-
-	const className =
-		'row row-in grid grid-cols-[minmax(0,1fr)_auto] items-start gap-4 py-6 sm:gap-8'
-
-	return workspace.href ? (
-		<a
-			href={workspace.href}
-			style={{ '--row-index': index } as React.CSSProperties}
-			className={className}
-		>
-			{body}
-		</a>
-	) : (
-		<div style={{ '--row-index': index } as React.CSSProperties} className={className}>
-			{body}
-		</div>
-	)
-}
+/**
+ * The band under the masthead names the offices of the Bangsamoro Government.
+ *
+ * It used to run the region's peoples, which is the right band for Discover —
+ * that half of the site is about who the Bangsamoro are. This half is about
+ * what governs them, and a reader who arrives knowing "BARMM" as an acronym
+ * should have met the ministries and commissions that spend its budget before
+ * they reach the first heading.
+ *
+ * They run as abbreviations — MILG, MBHTE, BCPCH — which is what the offices
+ * are called in the region and what fits a band at this size.
+ */
 
 export default function HomePage() {
 	const live = workspaces.filter((workspace) => workspace.state === 'live').length
+
+	// The primer's own size, counted from its data the way the Discover index
+	// counts it. A chapter added or a date added to a timeline moves these
+	// figures without anyone remembering to come back here.
+	const chapterCount = discoverBarmmTopics.length
+	const peopleCount = discoverBarmmTopics
+		.flatMap((topic) => topic.peopleGroups ?? [])
+		.reduce((sum, group) => sum + group.people.length, 0)
+	const momentCount = discoverBarmmTopics.reduce(
+		(sum, topic) => sum + (topic.timeline?.length ?? 0),
+		0,
+	)
 
 	return (
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader />
 
-			<PageHeader
-				eyebrow='Public transparency for the Bangsamoro'
-				title='Public records,'
-				titleMuted='made usable.'
-				description='BetterBARMM turns scattered Bangsamoro public records into workspaces you can read, question, and trace back to the source — starting with the 2026 parliamentary elections and the Parliament that will be elected.'
-			>
-				<a href='https://election.betterbarmm.com' className='btn btn-solid btn-lg'>
-					Open the Election workspace
-					<ArrowRightIcon className='size-4' aria-hidden='true' />
-				</a>
-				<Link href='/about' className='btn btn-quiet btn-lg'>
-					What is BetterBARMM?
-				</Link>
-			</PageHeader>
+			{/* ---- Masthead ----
+
+			    Type on the left, ornament on the right. The right-hand column is the
+			    whole argument for the split: every other page on this estate opens on
+			    a paragraph, and a paragraph is not what makes someone who has never
+			    heard of the Bangsamoro read the next screen. */}
+			<section className='bb-lattice relative overflow-hidden'>
+				<OkirBloom className='absolute -left-[16%] -top-[30%] size-[min(50rem,92vw)] opacity-[0.14]' />
+				<span aria-hidden='true' className='bb-glow absolute -left-[6%] -top-[14%] size-[34rem]' />
+
+				<div className='bb-container relative pb-24 pt-14 lg:pb-32 lg:pt-20'>
+					{/* The left column is given the room the headline actually needs. At an
+					    even split "Public records," wrapped at every desktop width, and a
+					    two-word line broken across two rows is not a masthead. */}
+					<div className='grid items-center gap-20 lg:grid-cols-[1.25fr_0.75fr] lg:gap-16'>
+						<div>
+							<Rise distance={14}>
+								<p className='bb-label'>Public transparency for the Bangsamoro</p>
+							</Rise>
+
+							<LineReveal
+								lines={['Public records,', 'in one place.']}
+								delay={0.08}
+								className='bb-display mt-7 text-[var(--ink)]'
+								lineClassName={[undefined, 'bb-mute']}
+							/>
+
+							<Rise delay={0.35} distance={16}>
+								<p className='mt-9 max-w-2xl text-[17px] leading-[var(--leading-body)] text-[var(--ink-2)]'>
+									BetterBARMM turns scattered Bangsamoro public records into workspaces you can read,
+									question, and trace back to the source — the bills before Parliament, the budgets
+									behind them, and every local government in the region.
+								</p>
+							</Rise>
+
+							<Rise delay={0.45} distance={14}>
+								<div className='mt-11 flex flex-wrap items-center gap-3'>
+									<Magnetic strength={0.24}>
+										<Link href='/soon' className='bb-btn bb-btn-solid'>
+											Open the Election workspace
+											<ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
+										</Link>
+									</Magnetic>
+									<Magnetic strength={0.24}>
+										<Link href='/discover' className='bb-btn bb-btn-ghost'>
+											Discover BARMM
+										</Link>
+									</Magnetic>
+								</div>
+							</Rise>
+
+							{/* Three measurements on a brass rule. They used to count the
+							    workspaces and the seats, which is the registry describing
+							    itself to someone who already knows what a registry is for.
+							    A reader arriving cold needs the region first, so the figures
+							    are the primer's: what there is to read, and how much of the
+							    Bangsamoro is in it. */}
+							<Rise delay={0.6} distance={14}>
+								<dl className='mt-14 flex flex-wrap gap-x-10 gap-y-6 border-t border-[var(--brass-line)] pt-6'>
+									{[
+										{ value: `${chapterCount}`, label: 'Chapters to read' },
+										{ value: `${peopleCount}`, label: 'Peoples and communities' },
+										{ value: `${momentCount}`, label: 'Moments on the timeline' },
+									].map((fact) => (
+										<div key={fact.label}>
+											<dt className='sr-only'>{fact.label}</dt>
+											<dd className='bb-figure-sm text-[var(--ink)]'>{fact.value}</dd>
+											<p className='mt-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+												{fact.label}
+											</p>
+										</div>
+									))}
+								</dl>
+							</Rise>
+						</div>
+
+						<HeroGraphic className='mb-14 lg:mb-0' />
+					</div>
+
+					<Rise delay={0.7} distance={10}>
+						<ScrollCue to='#discover' label='Start with the region' className='mt-16' />
+					</Rise>
+				</div>
+			</section>
+
+			{/* ---- The names ---- */}
+			<DiscoverMarquee items={principlesBand} duration={50} />
 
 			{/* ---- The workspaces ---- */}
-			<section className='mx-auto max-w-[88rem] px-6 py-12 lg:px-8'>
-				<Reveal>
-					<div className='flex flex-col justify-between gap-2 border-b border-[var(--rule)] pb-3 sm:flex-row sm:items-end'>
-						<div>
-							<p className='eyebrow'>The workspaces</p>
-							<h2 className='mt-3 text-2xl font-semibold leading-tight'>
-								{live} live. More on the way.
-							</h2>
+			<section id='workspaces' className='bb-container scroll-mt-20 bb-section'>
+				<SectionHead
+					index='01'
+					eyebrow='The workspaces'
+					title={`${live} live.`}
+					titleMuted='More on the way.'
+					lead='Each one turns a pile of public records into something you can read, question, and trace back to the source. A card without a link is one we have not built yet.'
+				/>
+
+				<div>
+					<WorkspaceIndex workspaces={workspaces} />
+				</div>
+			</section>
+
+			{/* ---- The region, in figures ----
+
+			    The dark band between two light ones. It answers the question the
+			    workspaces above raise and never state: how big is the thing all
+			    this is about. */}
+			<section className='bb-ground bb-grain bb-lattice relative isolate overflow-hidden border-y border-[var(--rule)]'>
+				<OkirBloom className='absolute -right-[14%] top-[-40%] size-[min(38rem,84vw)] opacity-[0.16]' />
+
+				<div className='bb-container relative z-2 bb-section'>
+					<Rise distance={14}>
+						<div className='bb-kicker'>
+							<span>02</span>
+							<span>What is being governed</span>
 						</div>
-						<p className='meta'>
-							<span className='num font-medium text-[var(--ink)]'>{workspaces.length}</span> planned
-							in total
-						</p>
+					</Rise>
+
+					<div className='mt-10 grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end lg:gap-16'>
+						<LineReveal
+							as='h2'
+							lines={['One region.', 'Five provinces and a city.']}
+							className='bb-display-md text-[var(--ink)]'
+							lineClassName={[undefined, 'bb-mute']}
+						/>
+						<Rise delay={0.2} distance={14}>
+							<p className='max-w-md bb-body text-[var(--ink-2)] lg:text-right'>
+								BARMM is the only autonomous region in the Philippines with its own parliament. On{' '}
+								{bangsamoroParliament.electionDay} its voters elect all{' '}
+								{bangsamoroParliament.totalSeats} members for the first time.
+							</p>
+						</Rise>
 					</div>
 
-					<div>
-						{workspaces.map((workspace, index) => (
-							<WorkspaceRow key={workspace.label} workspace={workspace} index={index} />
+					<Stagger
+						gap={0.09}
+						className='mt-16 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:mt-20 lg:grid-cols-4'
+					>
+						{[
+							{
+								value: bangsamoroParliament.totalSeats,
+								label: 'Seats in Parliament',
+								note: `${bangsamoroParliament.partyRepresentativeSeats} by party, ${bangsamoroParliament.districtSeats} by district, ${bangsamoroParliament.reservedSeats} reserved.`,
+							},
+							{
+								value: lguData.totals.provinces + 1,
+								label: 'Provinces and cities',
+								note: 'Five provinces plus Cotabato City. Sulu was excluded by the Supreme Court.',
+							},
+							{
+								value: lguCounts.barangays,
+								label: 'Barangays',
+								group: true,
+								note: 'The rung of government nearest the household, and the one most often elected.',
+							},
+							{
+								value: 5.69,
+								decimals: 2,
+								suffix: 'M',
+								label: 'People',
+								note: `Regional population as of ${lguCounts.populationAsOf}, excluding Sulu.`,
+							},
+						].map((stat) => (
+							<StaggerItem key={stat.label}>
+								<div className='border-t border-[var(--brass-line)] pt-6'>
+									<p className='bb-figure text-[var(--ink)]'>
+										<Counter
+											value={stat.value}
+											decimals={stat.decimals ?? 0}
+											suffix={stat.suffix ?? ''}
+											group={stat.group ?? false}
+										/>
+									</p>
+									<p className='mt-4 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--brass)]'>
+										{stat.label}
+									</p>
+									<p className='mt-2.5 bb-body text-[var(--ink-2)]'>{stat.note}</p>
+								</div>
+							</StaggerItem>
 						))}
-					</div>
-
-					<p className='mt-8 max-w-2xl text-[13px] leading-6 text-[var(--ink-3)]'>
-						Each workspace turns a pile of public records into something you can read, question, and
-						trace back to the source. A row without a link is one we have not built yet.
-					</p>
-				</Reveal>
+					</Stagger>
+				</div>
 			</section>
 
 			{/* ---- Discover ----
 
-			    Interior rules only: every cell draws its own top and left edge, and
-			    the grid is nudged a pixel up and left so the outermost of those are
-			    clipped away. That separates the cells at every breakpoint without
-			    hand-counting which one starts a row or a column. */}
-			<section className='mx-auto max-w-[88rem] px-6 py-12 lg:px-8'>
-				<Reveal>
-					<div className='border-b border-[var(--rule)] pb-3'>
-						<p className='eyebrow'>Discover BARMM</p>
-						<h2 className='mt-3 text-2xl font-semibold leading-tight'>
-							Get to know the Bangsamoro.
-						</h2>
-						<p className='mt-3 max-w-2xl text-sm leading-6 text-[var(--ink-2)]'>
-							Beyond the data: who the Bangsamoro are, how they are governed, and how they got
-							here.
-						</p>
-					</div>
+			    The photographic section, and the only one that travels sideways.
+			    Everything above it is a record you came looking for; this is the
+			    part for someone who does not yet know what the Bangsamoro is.
 
-					<div className='overflow-hidden'>
-						<div className='-ml-px -mt-px grid sm:grid-cols-2 lg:grid-cols-4'>
-							{discoverTopics.map((topic, index) => {
-								const Icon = topic.icon
-
-								return (
-									<Link
-										key={topic.href}
-										href={topic.href}
-										style={{ '--row-index': index } as React.CSSProperties}
-										className='row-in group flex h-full flex-col border-l border-t border-[var(--rule)] p-8 transition hover:bg-[var(--paper-2)] lg:p-10'
-									>
-										<Icon
-											className='size-8 text-[var(--accent)]'
-											weight='duotone'
-											aria-hidden='true'
-										/>
-										<h3 className='mt-6 text-[15px] font-bold leading-snug text-[var(--ink)]'>
-											{topic.title}
-										</h3>
-										<p className='mt-2 flex-1 text-[13px] leading-6 text-[var(--ink-2)]'>
-											{topic.blurb}
-										</p>
-										<span className='meta-sm mt-6 inline-flex items-center gap-1.5 transition group-hover:text-[var(--accent)]'>
-											Explore
-											<ArrowRightIcon
-												className='size-3 transition group-hover:translate-x-0.5'
-												aria-hidden='true'
-											/>
-										</span>
-									</Link>
-								)
-							})}
-						</div>
-					</div>
-				</Reveal>
-			</section>
+			    The head is handed to the strip rather than set above it, so it
+			    stays on screen for as long as the cards are travelling. */}
+			{/* Half the section rhythm above, not the full step. The band overhead is
+			    dark and full-bleed, and a dark edge already reads as a division — the
+			    usual distance on top of it left the head floating away from both. */}
+			<div id='discover' className='bb-container scroll-mt-20 pt-[clamp(2.25rem,4.75vw,4.5rem)]'>
+				<ChapterStrip
+					cards={chapters}
+					heading={
+						<SectionHead
+							index='03'
+							eyebrow='Discover BARMM'
+							title='Get to know'
+							titleMuted='the Bangsamoro.'
+						/>
+					}
+				/>
+			</div>
 
 			{/* ---- Method ---- */}
-			<section className='mx-auto max-w-[88rem] px-6 py-12 lg:px-8'>
-				<Reveal>
-					<div className='border-b border-[var(--rule)] pb-3'>
-						<p className='eyebrow'>How it works</p>
-						<h2 className='mt-3 text-2xl font-semibold leading-tight'>Built to be trusted.</h2>
-						<p className='mt-3 max-w-2xl text-sm leading-6 text-[var(--ink-2)]'>
-							Every workspace follows the same method — so you never have to take our word for it.
-						</p>
-					</div>
-				</Reveal>
+			<section className='bb-container bb-section'>
+				<SectionHead
+					index='04'
+					eyebrow='How it works'
+					title='Built to'
+					titleMuted='be checked.'
+				/>
 
-				<div className='mt-10 grid gap-10 sm:grid-cols-3 sm:gap-12'>
-					{principles.map((principle, index) => {
-						const Icon = principle.icon
+				<Stagger gap={0.12} className='grid gap-14 sm:grid-cols-3 sm:gap-10'>
+					{principles.map((principle) => {
+						const Diagram = principle.diagram
 
 						return (
-							<Reveal key={principle.label} delay={index * 90}>
-								<Icon
-									className='size-7 text-[var(--accent)]'
-									weight='duotone'
-									aria-hidden='true'
-								/>
-								<p className='label label-strong mt-5'>{principle.label}</p>
-								<h3 className='mt-2 text-lg font-semibold leading-snug text-[var(--ink)]'>
-									{principle.title}
-								</h3>
-								<p className='mt-2 text-sm leading-6 text-[var(--ink-2)]'>
-									{principle.description}
-								</p>
-							</Reveal>
+							<StaggerItem key={principle.label}>
+								<div className='flex h-full flex-col'>
+									<Diagram />
+									<p className='bb-label mt-9'>{principle.label}</p>
+									<h3 className='mt-4 text-[1.35rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>
+										{principle.title}
+									</h3>
+									<p className='mt-3 bb-body text-[var(--ink-2)]'>
+										{principle.description}
+									</p>
+								</div>
+							</StaggerItem>
 						)
 					})}
-				</div>
+				</Stagger>
 			</section>
 
-			{/* ---- Get involved ----
-
-			    The one inverted block on the page. It sits on a container a touch
-			    wider than the content measure, so the panel steps outside the page
-			    without running the full width of the viewport. */}
-			<Reveal>
-				<div className='mx-auto max-w-[96rem] px-6 lg:px-8'>
-					<div className='mt-12 rounded-[24px] bg-[var(--panel-bg)] px-6 py-20 text-center lg:mt-16 lg:px-12 lg:py-24'>
-						<h2 className='mx-auto max-w-4xl text-[2rem] font-extrabold leading-[1.05] text-[var(--panel-fg)] sm:text-[2.75rem]'>
-							Public records get better when people check them.
-						</h2>
-
-						<p className='mx-auto mt-8 max-w-2xl text-sm leading-6 text-[var(--panel-fg)]/70'>
-							Spotted an error, or have a document worth adding? Every correction and every source
-							makes the record stronger — and the official source is always right where we are
-							wrong.
-						</p>
-
-						<div className='mt-10 flex flex-wrap items-center justify-center gap-3'>
-							<Link
-								href='/contribute'
-								className='inline-flex items-center gap-2 rounded-full bg-[var(--panel-fg)] px-5 py-2.5 text-sm font-medium text-[var(--panel-bg)] transition hover:opacity-90'
-							>
-								Contribute
-								<ArrowRightIcon className='size-4' aria-hidden='true' />
-							</Link>
-							<Link
-								href='/about'
-								className='inline-flex items-center rounded-full border border-[var(--panel-fg)]/30 px-5 py-2.5 text-sm font-medium text-[var(--panel-fg)] transition hover:border-[var(--panel-fg)]/60'
-							>
-								About the project
-							</Link>
-						</div>
-					</div>
-				</div>
-			</Reveal>
+			<CtaPanel
+				label='Get involved'
+				lines={['Public records get better', 'when people check them.']}
+				standfirst='Spotted an error, or have a document worth adding? Every correction and every source makes the record stronger — and the official source is always right where we are wrong.'
+			>
+				<CtaAction>
+					<Link href='/contribute' className='bb-btn bb-btn-brass'>
+						Contribute
+						<ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
+					</Link>
+				</CtaAction>
+				<CtaAction>
+					<Link href='/about' className='bb-btn bb-btn-ghost'>
+						About the project
+					</Link>
+				</CtaAction>
+			</CtaPanel>
 		</main>
 	)
 }

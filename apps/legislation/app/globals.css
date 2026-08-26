@@ -1,16 +1,78 @@
 @import "tailwindcss";
 @import "@betterbarmm/ui/styles.css";
+@import "@betterbarmm/editorial/styles.css";
+
+/* Tailwind v4 finds its classes by walking out from this file, which stops at
+   the app. The editorial package sits outside it and its components carry
+   utility classes of their own, so it has to be pointed at explicitly or those
+   classes are never generated. */
+@source "../../../packages/editorial/src";
 
 /* ============================================================
    Legislation workspace
 
-   The visual language this app was designed around now lives in
-   `@betterbarmm/ui` — tokens, type primitives, badges, chips, controls,
-   surfaces, and motion — because the rest of the estate adopted it.
-   Everything the registry needs is in there.
+   Two layers underneath this file. `@betterbarmm/ui` is the base every
+   app in the estate draws from — badges, chips, fields, tables, the
+   status tones, the bill funnel's ordinal ramp. `@betterbarmm/editorial`
+   is the public-facing layer on top of it, shared with the landing
+   site: the warm paper, the brass, the okir, the display type, the
+   motion primitives.
 
-   Anything genuinely local to reading legislation belongs here. Right
-   now that is nothing: the registry and the landing site are the same
-   system. Leave the file rather than delete it, so app-specific rules
-   have an obvious home when one is needed.
+   What belongs here is what only a register needs. Right now that is
+   the reading column and the record's own furniture — a bill page is
+   the one surface on the estate that is genuinely a document rather
+   than a page, and it wants a measure and a rhythm of its own.
    ============================================================ */
+
+/* ---- The reading column ----
+
+   A record page is read rather than scanned, so its prose takes a real
+   measure rather than the full width of the grid it sits in. Kept as a
+   name of its own so the record pages read as asking for a measure
+   rather than for a utility.
+
+   Wider than the chapters on the landing site, and deliberately. A
+   chapter is continuous prose; a record is a stack of short labelled
+   answers — what it does, who runs it, what it costs — where each one
+   is a paragraph or two under its own heading. At 34em those broke into
+   narrow ragged blocks with a third of the column standing empty beside
+   them, which reads as a page that failed to fill rather than as a set
+   measure. */
+
+.reg-measure {
+  max-width: 38em;
+}
+
+/* The width steps with the window rather than holding one number. A record
+   page puts this column beside a sidebar of about 19rem, so at 1440 and below
+   a 46em measure leaves the two crowded against each other with no gutter left
+   to speak of — the room for the full measure only exists on a screen wider
+   than that. */
+@media (min-width: 80rem) {
+  .reg-measure {
+    max-width: 42em;
+  }
+}
+
+@media (min-width: 100rem) {
+  .reg-measure {
+    max-width: 46em;
+  }
+}
+
+/* ---- The record's own rule ----
+
+   A section break inside a record, as against a break between sections
+   of a page. Quieter than `.bb-kicker` — a bill has a dozen of these
+   and a brass rule at each one turns the document into a ladder. */
+
+.reg-rule {
+  border-top: 1px solid var(--rule);
+  padding-top: 0.85rem;
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}

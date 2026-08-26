@@ -34,7 +34,7 @@ export default function MembersPage() {
 			    on the left, the caveats enumerated on the right — so the gaps read
 			    as a numbered list of specific limits rather than a wall of small
 			    grey text at the foot of the page. */}
-			<section className='mx-auto max-w-[88rem] px-6 pb-20 pt-10 lg:px-8 lg:pt-16'>
+			<section className='bb-container bb-section'>
 				<Reveal>
 					<div className='grid gap-8 border-t border-[var(--rule)] pt-12 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:gap-12'>
 						{/* Two fifths of the measure, and the text stops short of even that —
@@ -44,7 +44,7 @@ export default function MembersPage() {
 							<h2 className='mt-3 text-xl font-semibold leading-tight text-[var(--ink)] sm:text-2xl'>
 								Known gaps in this dataset
 							</h2>
-							<p className='mt-4 text-sm leading-6 text-[var(--ink-2)]'>{dataset.coverageNote}</p>
+							<p className='mt-4 bb-body text-[var(--ink-2)]'>{dataset.coverageNote}</p>
 							<p className='meta-sm mt-8'>
 								Roster source: parliament.bangsamoro.gov.ph member listings, fetched{' '}
 								{dataset.generatedAt}
@@ -58,10 +58,10 @@ export default function MembersPage() {
 									className='flex gap-4 border-b border-[var(--rule-soft)] py-4 first:pt-0 last:border-0 last:pb-0 sm:gap-6'
 								>
 									{/* Zero-padded so the numerals hold one column width. */}
-									<span className='num shrink-0 text-[13px] leading-6 text-[var(--ink-mute)]'>
+									<span className='num shrink-0 bb-body text-[var(--ink-mute)]'>
 										{String(index + 1).padStart(2, '0')}
 									</span>
-									<p className='text-[13px] leading-6 text-[var(--ink-3)]'>{gap}</p>
+									<p className='bb-body text-[var(--ink-3)]'>{gap}</p>
 								</li>
 							))}
 						</ol>

@@ -1,6 +1,8 @@
+import { OkirCorner, OkirRule, SectionHead } from '@betterbarmm/editorial'
 import Link from 'next/link'
 import { BillFunnel, type FunnelSlice } from './_components/bill-funnel'
 import { BillPathPreview } from './_components/bill-path-preview'
+import { DidYouKnow } from './_components/did-you-know'
 import { MemberPayFigures } from './_components/member-pay'
 import { PageHeader } from './_components/page-header'
 import { Reveal } from './_components/reveal'
@@ -118,26 +120,20 @@ export default function HomePage() {
 			     The claim centred over the picture, the legend wrapped around it, and
 			     the ways out underneath — so the section reads top to bottom as one
 			     statement rather than a column of text beside a chart. */}
-			<section className='mx-auto max-w-[88rem] px-6 py-14 sm:py-16 lg:px-8 lg:py-24'>
-				<Reveal>
-					<div className='mx-auto max-w-3xl text-center'>
-						<p className='eyebrow'>Where the bills are</p>
-						<h2 className='section-title mt-3'>Most bills never make it.</h2>
-						<p className='copy mx-auto mt-4 max-w-2xl text-[var(--ink-2)]'>
-							{/* The space after the count is explicit: the text node that follows
-							    it runs onto a second line, and JSX trims each line of a
-							    multi-line node — which ate the space and printed "52have". */}
-							Of the {totalBills.toLocaleString()} bills tracked here, {approved}{' '}
-							have been approved on third reading. The rest are still somewhere in the sequence — and
-							nearly all of
-							them are sitting in a committee, which is the one stage Parliament&rsquo;s own rules
-							open to the public.
-						</p>
-					</div>
-				</Reveal>
+			<section className='bb-container bb-section'>
+				<SectionHead
+					index='01'
+					eyebrow='Where the bills are'
+					title='Most bills'
+					titleMuted='never make it.'
+					/* The space after the count is explicit: the text node that follows it
+					   runs onto a second line, and JSX trims each line of a multi-line
+					   node — which ate the space and printed "52have". */
+					lead={`Of the ${totalBills.toLocaleString()} bills tracked here, ${approved} have been approved on third reading. The rest are still somewhere in the sequence — and nearly all of them are sitting in a committee, which is the one stage Parliament's own rules open to the public.`}
+				/>
 
 				<Reveal delay={80}>
-					<div className='mt-14 lg:mt-16'>
+					<div className='mt-16 lg:mt-20'>
 						<BillFunnel
 							slices={funnel}
 							total={totalBills}
@@ -148,45 +144,54 @@ export default function HomePage() {
 				</Reveal>
 
 				<Reveal delay={160}>
-					<div className='mt-14 flex flex-wrap justify-center gap-3'>
-						<Link href='/bills' className='btn btn-solid'>
+					<div className='mt-14 flex flex-wrap gap-3'>
+						<Link href='/bills' className='bb-btn bb-btn-solid'>
 							Browse all {totalBills.toLocaleString()} bills
 						</Link>
-						<Link href='/legislative-process' className='btn btn-quiet'>
+						<Link href='/how-parliament-works#the-bill-path' className='bb-btn bb-btn-ghost'>
 							What each stage means
 						</Link>
 					</div>
 				</Reveal>
 			</section>
 
+			<DidYouKnow />
+
 			{/* ---- The path itself ----
 			     A pointer rather than the walkthrough: the process page carries all
 			     seven stages open, and running an abbreviated copy of it here only
 			     gave a reader two versions of the same thing to reconcile. */}
-			<Reveal>
-				<section className='mx-auto max-w-[88rem] px-6 pb-16 lg:px-8 lg:pb-28'>
-					{/* The panel's own padding nests inside the page gutter, so on a
-					    phone the copy sits two indents in from the edge and the measure
-					    collapses. It gives most of that back below `sm` — the tint is
-					    what marks the block off, and it does not need the inset too. */}
-					<div className='rounded-[var(--radius-lg)] bg-[var(--paper-2)] px-5 py-14 text-center sm:px-12 sm:py-20 lg:px-16 lg:py-28'>
-						<p className='eyebrow'>The process, simplified</p>
-						<h2 className='section-title mx-auto mt-3 max-w-3xl'>
-							Seven steps, and one of them is yours.
-						</h2>
-						<p className='copy mx-auto mt-4 max-w-2xl text-[var(--ink-2)]'>
-							Parliament publishes the path a bill takes as thirteen steps of rules citations. It is
-							the same path said plainly here — with what happens at each stage, and the one point
-							where its own rules say a committee may ask the public in.
-						</p>
+			<OkirRule className='mx-auto max-w-[88rem] opacity-70' />
+
+			{/* ---- The path itself ----
+			     A pointer rather than the walkthrough: the process page carries all
+			     seven stages open, and running an abbreviated copy of it here only
+			     gave a reader two versions of the same thing to reconcile. */}
+			<section className='bb-container bb-section'>
+				<SectionHead
+					index='02'
+					eyebrow='The process, simplified'
+					title='Seven steps,'
+					titleMuted='and one of them is yours.'
+					lead={`Parliament publishes the path a bill takes as thirteen steps of rules citations. It is the same path said plainly here — with what happens at each stage, and the one point where its own rules say a committee may ask the public in.`}
+				/>
+
+				<Reveal>
+					{/* The plate marks the block off without boxing it: a brass hairline
+					    at the head and the paper's own second step, rather than four
+					    borders on a page already full of rules. */}
+					<div className='bb-plate relative mt-16 px-5 py-14 text-center sm:px-12 sm:py-16 lg:px-16 lg:py-20'>
+						<OkirCorner position='top-left' className='m-4 opacity-60' />
+						<OkirCorner position='bottom-right' className='m-4 opacity-60' />
+
 						<BillPathPreview />
 
-						<Link href='/legislative-process' className='btn btn-solid mt-12'>
+						<Link href='/how-parliament-works#the-bill-path' className='bb-btn bb-btn-solid mt-12'>
 							Follow a bill through Parliament
 						</Link>
 					</div>
-				</section>
-			</Reveal>
+				</Reveal>
+			</section>
 
 			{/* ---- What a seat is provided ----
 			     The figure nobody publishes. Parliament does print it, but as one
@@ -194,29 +199,26 @@ export default function HomePage() {
 			     It sits on the hub because it is the single most asked question
 			     about the people in the roster, and because it is the clearest
 			     demonstration of what reading the acts is actually for. */}
-			<Reveal>
-				<section className='mx-auto max-w-[88rem] px-6 pb-20 lg:px-8 lg:pb-28'>
-					<div className='border-t border-[var(--rule)] pt-14 text-center lg:pt-20'>
-						<p className='eyebrow'>What a seat costs</p>
-						<h2 className='section-title mx-auto mt-3 max-w-3xl'>
-							₱3,277,082 a year for each member&rsquo;s post.
-						</h2>
-						<p className='copy mx-auto mt-4 max-w-2xl text-[var(--ink-2)]'>
-							That is not a salary figure, and the difference matters. It is the whole annual
-							provision the budget makes for the post &mdash; basic pay plus the bonuses,
-							allowances and government contributions costed against it.
-						</p>
+			<section className='bb-container bb-section-bottom'>
+				<SectionHead
+					index='03'
+					eyebrow='What a seat costs'
+					title='₱3,277,082 a year'
+					titleMuted={`for each member's post.`}
+					lead='That is not a salary figure, and the difference matters. It is the whole annual provision the budget makes for the post — basic pay plus the bonuses, allowances and government contributions costed against it.'
+				/>
 
-						<div className='mt-12'>
-							<MemberPayFigures centred />
-						</div>
-
-						<Link href='/what-members-do' className='btn btn-solid mt-12'>
-							What a member actually does
-						</Link>
+				<Reveal delay={80}>
+					<div className='mt-16'>
+						<MemberPayFigures />
 					</div>
-				</section>
-			</Reveal>
+
+					<Link href='/how-parliament-works#the-job' className='bb-btn bb-btn-solid mt-12'>
+						What a member actually does
+					</Link>
+				</Reveal>
+			</section>
+
 		</>
 	)
 }

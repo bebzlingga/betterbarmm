@@ -189,7 +189,7 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 	return (
 		// Less air above the search than below it — see the note on the same
 		// section in `record-browser`.
-		<section className='mx-auto max-w-[88rem] px-6 pb-12 pt-6 sm:pt-12 lg:px-8'>
+		<section className='bb-container pb-12 pt-6 sm:pt-12'>
 			{/* Laid out like the registry, and for the same reasons — see the notes
 			    on the same grid in `record-browser`. The facets stand open in a
 			    column of their own, the roster reads beside them, and the button by
@@ -217,7 +217,7 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 							onClick={() => setFiltersOpen((current) => !current)}
 							aria-expanded={filtersOpen}
 							aria-controls='member-filters'
-							className='btn btn-quiet btn-field order-2 h-11 shrink-0 sm:order-none'
+							className='bb-btn bb-btn-ghost btn-field order-2 h-11 shrink-0 sm:order-none'
 						>
 							{/* The icon says what the button will do next: a funnel to
 							    open the facets, a cross to put them away. */}
@@ -357,7 +357,7 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 										<span className='chip-count'>{dataset.stats.withMeasures}</span>
 									</button>
 								</div>
-								<p className='text-[13px] leading-5 text-[var(--ink-mute)]'>
+								<p className='bb-body text-[var(--ink-mute)]'>
 									{dataset.stats.withMeasures} of {dataset.stats.total} members can be linked to a
 									measure, drawn from the {dataset.stats.measuresCredited}{' '}
 									measures whose authors this registry records. An empty profile means those measure
@@ -461,7 +461,7 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 											{/* Pinned to the bottom so cells line up regardless of role length. */}
 											<div className='mt-auto pt-4'>
 												{member.representation ? (
-													<p className='text-[13px] leading-5 text-[var(--ink-3)]'>
+													<p className='bb-body text-[var(--ink-3)]'>
 														{member.representation}
 													</p>
 												) : null}
@@ -478,10 +478,10 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 								<p className='font-title text-base font-medium text-[var(--ink)]'>
 									Nothing matches this view.
 								</p>
-								<p className='mx-auto mt-2 max-w-md text-sm leading-6 text-[var(--ink-3)]'>
+								<p className='mx-auto mt-2 max-w-md bb-body text-[var(--ink-3)]'>
 									Try a broader search term, or clear a filter or two.
 								</p>
-								<button type='button' onClick={clearAll} className='btn btn-quiet mt-6'>
+								<button type='button' onClick={clearAll} className='bb-btn bb-btn-ghost mt-6'>
 									Clear everything
 								</button>
 							</div>

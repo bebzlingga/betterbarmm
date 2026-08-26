@@ -16,7 +16,7 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
 	return (
 		<div>
 			<p className='label label-strong'>{label}</p>
-			<div className='mt-2 text-sm leading-6 text-[var(--ink-2)]'>{children}</div>
+			<div className='mt-2 bb-body text-[var(--ink-2)]'>{children}</div>
 		</div>
 	)
 }
@@ -221,7 +221,7 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 			{/* Ranged left, sharing an edge with the detail underneath: the head and
 			    the body are one read down the same column, and a centred head over a
 			    left-ranged body put a seam across the page. */}
-			<div className='mx-auto max-w-[88rem] px-6 pt-12 lg:px-8 lg:pt-20'>
+			<div className='bb-container pt-12 lg:pt-20'>
 				{/* Badges never break, so on a phone the row wraps rather than running
 				    off the edge — a measure can carry a status and a Cabinet mark at
 				    once. */}
@@ -264,16 +264,23 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 			    rail inside it keeps the site's column. */}
 			{record.journey.length > 0 ? (
 				<div className='mt-11 bg-[var(--paper-2)]'>
-					<div className='mx-auto max-w-[88rem] px-6 pb-12 pt-16 lg:px-8'>
+					<div className='bb-container pb-12 pt-16'>
 						<JourneyList stages={record.journey} />
 					</div>
 				</div>
 			) : null}
 
-			<div className='mx-auto max-w-[88rem] px-6 pb-24 pt-12 lg:px-8 lg:pb-32'>
+			<div className='bb-container pb-24 pt-12 lg:pb-32'>
 				<div className='grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(14.5rem,18.7rem)] lg:gap-32 xl:gap-40'>
-					{/* Main column */}
-					<div className='space-y-9'>
+					{/* Main column.
+
+					    `reg-measure` is what turns this from a page into a document. The
+					    column is about 970px at desktop width, which runs the summaries
+					    of the longer autonomy acts past a hundred characters a line —
+					    comfortably readable for a table row and punishing for six
+					    paragraphs of statute. The sidebar keeps the full track; only the
+					    prose is held to a measure. */}
+					<div className='reg-measure space-y-9'>
 						{/* What the stage on the rail above actually means for the
 						    measure — the first thing to read once you know where it
 						    stands, so it leads the column. */}
@@ -371,7 +378,7 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 								href={sourceHref}
 								target='_blank'
 								rel='noreferrer'
-								className='btn btn-solid w-full'
+								className='bb-btn bb-btn-solid w-full'
 							>
 								Official page
 								<svg
@@ -481,7 +488,7 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 								{/* Principal authors first, then co-authors, each block A–Z by
 								    surname. A name the roster knows opens that member's
 								    profile; one it doesn't is still shown, just not linked. */}
-								<ul className='grid gap-1.5 text-sm leading-6 text-[var(--ink-2)]'>
+								<ul className='grid gap-1.5 bb-body text-[var(--ink-2)]'>
 									{authors.map(({ name, displayName, isPrincipal }) => {
 										const slug = memberSlugs[name.toUpperCase()]
 

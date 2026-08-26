@@ -91,12 +91,12 @@ function NoMeasures({
 			<h3 className='mt-4 max-w-2xl text-xl font-semibold leading-snug sm:text-2xl'>
 				This is missing data, not a record of inactivity.
 			</h3>
-			<p className='mt-4 max-w-2xl text-sm leading-6 text-[var(--ink-2)]'>
+			<p className='mt-4 max-w-2xl bb-body text-[var(--ink-2)]'>
 				Parliament lists the authors of a measure on that measure&rsquo;s own page, not on the
 				member roster. Only {credited} of the {total} measures in this registry name their authors,
 				so most members cannot yet be linked to anything they filed.
 			</p>
-			<p className='mt-4 max-w-2xl text-sm leading-6 text-[var(--ink-3)]'>
+			<p className='mt-4 max-w-2xl bb-body text-[var(--ink-3)]'>
 				So this profile can say what {member.displayName} held and when, but not yet what they
 				filed. As measure pages are captured, anything carrying their name will appear here
 				automatically.
@@ -107,11 +107,11 @@ function NoMeasures({
 					href='https://parliament.bangsamoro.gov.ph/bills/'
 					target='_blank'
 					rel='noreferrer'
-					className='btn btn-solid'
+					className='bb-btn bb-btn-solid'
 				>
 					Check the official source
 				</a>
-				<Link href='/about' className='btn btn-quiet'>
+				<Link href='/about' className='bb-btn bb-btn-ghost'>
 					How this registry is built
 				</Link>
 			</div>
@@ -145,7 +145,7 @@ function CommitteeRow({ committee, index }: { committee: MemberCommittee; index:
 					<span className='badge badge-plain badge-role'>{committee.role}</span>
 				</div>
 
-				<p className='mt-1.5 line-clamp-2 text-[13px] leading-6 text-[var(--ink-3)]'>
+				<p className='mt-1.5 line-clamp-2 bb-body text-[var(--ink-3)]'>
 					{committee.jurisdiction}
 				</p>
 			</div>
@@ -386,7 +386,7 @@ export function MemberRecord({
 											[activeKey]: shown + PAGE_SIZE,
 										}))
 									}
-									className='btn btn-quiet'
+									className='bb-btn bb-btn-ghost'
 								>
 									Show {Math.min(PAGE_SIZE, remaining)} more
 									<svg
@@ -409,7 +409,7 @@ export function MemberRecord({
 						) : null}
 
 						{active.count === 0 ? (
-							<p className='max-w-2xl text-sm leading-6 text-[var(--ink-3)]'>{active.empty}</p>
+							<p className='max-w-2xl bb-body text-[var(--ink-3)]'>{active.empty}</p>
 						) : null}
 					</div>
 
@@ -417,7 +417,7 @@ export function MemberRecord({
 					    its place when there is a list. On an empty tab the panel has
 					    just said the same thing in one line. */}
 					{active.count > 0 && active.key !== 'committees' ? (
-						<p className='mt-8 max-w-2xl text-[13px] leading-6 text-[var(--ink-3)]'>
+						<p className='mt-8 max-w-2xl bb-body text-[var(--ink-3)]'>
 							This list covers measures whose authorship the registry has captured. It is not a
 							complete legislative record — most measure pages have not been scraped, so a member
 							may have filed far more than appears here.

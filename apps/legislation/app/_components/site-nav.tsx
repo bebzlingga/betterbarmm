@@ -1,6 +1,7 @@
 'use client'
 
 import { CaretDownIcon, HandHeartIcon } from '@phosphor-icons/react'
+import { Magnetic, ScrollProgress } from '@betterbarmm/editorial'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -34,16 +35,16 @@ const secondaryLinks = [{ href: '/about', label: 'Data & Methodology' }]
 const processLinks = [
 	{
 		href: '/how-parliament-works',
-		label: 'Powers, limits, and the rulebook',
-		blurb: 'What it can do, what holds it back, how a sitting runs, and how it votes.',
+		label: 'How Parliament works',
+		blurb: 'What it can do, how a measure moves, what a seat costs, and where you can act.',
 	},
 	{
-		href: '/legislative-process',
+		href: '/how-parliament-works#the-bill-path',
 		label: 'How a measure becomes law',
 		blurb: 'The path a bill takes, the shorter one a resolution takes, and where you can act.',
 	},
 	{
-		href: '/what-members-do',
+		href: '/how-parliament-works#the-job',
 		label: 'What a member actually does',
 		blurb:
 			'The eleven duties the rulebook sets, when the Parliament sits, and what each seat is paid.',
@@ -123,11 +124,11 @@ export function SiteNav() {
 		// stayed dark enough to read straight through the nav links. The tint
 		// gives it a ground, and the blur keeps what passes behind it as motion
 		// rather than as legible text.
-		<header className='sticky top-0 z-30 border-b border-[var(--rule)] bg-[var(--paper)]/85 backdrop-blur-md'>
-			<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
+		<header className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'>
+			<div className='bb-container'>
 				{/* Three tracks so the links sit on the true centre of the header
 				    rather than wherever the mark and controls leave room. */}
-				<div className='grid grid-cols-[1fr_auto_1fr] items-center gap-4 py-4'>
+				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[1fr_auto_1fr] items-center gap-4'>
 					<div className='flex min-w-0 items-center gap-3'>
 						<Link href='/' onClick={closeMenu} className='w-fit shrink-0'>
 							{/* `priority` because the mark sits at the top of every page —
@@ -138,7 +139,8 @@ export function SiteNav() {
 								width={142}
 								height={26}
 								priority
-								className='logo-light h-[26px] w-auto'
+								className='logo-light'
+								style={{ height: 26, width: 'auto' }}
 							/>
 							<Image
 								src='/logo-dark.png'
@@ -146,13 +148,17 @@ export function SiteNav() {
 								width={142}
 								height={26}
 								priority
-								className='logo-dark h-[26px] w-auto'
+								className='logo-dark'
+								style={{ height: 26, width: 'auto' }}
 							/>
 						</Link>
+						{/* The wordmark says BetterBARMM; this says which of its
+						    workspaces you are in. Set as a label rather than as a link's
+						    worth of body copy, so it reads as part of the mark. */}
 						<Link
 							href='/'
 							onClick={closeMenu}
-							className='hidden text-sm text-[var(--ink-3)] transition hover:text-[var(--ink)] sm:block'
+							className='hidden font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
 						>
 							Legislation
 						</Link>
@@ -172,7 +178,8 @@ export function SiteNav() {
 								aria-controls='registry-menu'
 								onClick={() => setIsRegistryOpen((current) => !current)}
 								data-active={isRegistryActive}
-								className='flex cursor-pointer items-center gap-1.5 rounded-full px-3.5 py-1.5 transition hover:bg-[var(--paper)] hover:text-[var(--ink)] data-[active=true]:font-semibold data-[active=true]:text-[var(--ink)]'
+								data-open={isRegistryOpen}
+								className='nav-item flex cursor-pointer items-center gap-1.5'
 							>
 								Registry
 								<CaretDownIcon
@@ -185,7 +192,7 @@ export function SiteNav() {
 
 							<div
 								id='registry-menu'
-								className={`absolute left-1/2 top-full z-40 mt-4 w-[19rem] -translate-x-1/2 rounded-[var(--radius)] border border-[var(--rule)] bg-[var(--paper)] p-3 shadow-[0_16px_40px_-16px_rgba(0,0,0,0.22)] transition duration-200 ${
+								className={`absolute left-1/2 top-full z-40 mt-3 w-[19rem] -translate-x-1/2 border border-[var(--ink)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-[var(--brass)] before:content-[''] transition duration-200 ${
 									isRegistryOpen
 										? 'visible translate-y-0 opacity-100'
 										: 'invisible -translate-y-1 opacity-0'
@@ -197,7 +204,7 @@ export function SiteNav() {
 										href={category.href}
 										onClick={closeMenu}
 										data-active={isActive(category.href)}
-										className='flex items-center justify-between gap-3 rounded-[var(--radius-sm)] px-3.5 py-3 text-[15px] transition hover:bg-[var(--paper-2)] hover:text-[var(--ink)] data-[active=true]:font-semibold data-[active=true]:text-[var(--accent)]'
+										className='nav-menu-item data-[active=true]:font-semibold data-[active=true]:text-[var(--accent)]'
 									>
 										<span>{category.label}</span>
 										{category.status === 'pending' ? <SoonBadge /> : null}
@@ -216,7 +223,8 @@ export function SiteNav() {
 								aria-controls='people-menu'
 								onClick={() => setIsPeopleOpen((current) => !current)}
 								data-active={isPeopleActive}
-								className='flex cursor-pointer items-center gap-1.5 rounded-full px-3.5 py-1.5 transition hover:bg-[var(--paper)] hover:text-[var(--ink)] data-[active=true]:font-semibold data-[active=true]:text-[var(--ink)]'
+								data-open={isPeopleOpen}
+								className='nav-item flex cursor-pointer items-center gap-1.5'
 							>
 								People
 								<CaretDownIcon
@@ -229,7 +237,7 @@ export function SiteNav() {
 
 							<div
 								id='people-menu'
-								className={`absolute left-1/2 top-full z-40 mt-4 w-[13rem] -translate-x-1/2 rounded-[var(--radius)] border border-[var(--rule)] bg-[var(--paper)] p-3 shadow-[0_16px_40px_-16px_rgba(0,0,0,0.22)] transition duration-200 ${
+								className={`absolute left-1/2 top-full z-40 mt-3 w-[13rem] -translate-x-1/2 border border-[var(--ink)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-[var(--brass)] before:content-[''] transition duration-200 ${
 									isPeopleOpen
 										? 'visible translate-y-0 opacity-100'
 										: 'invisible -translate-y-1 opacity-0'
@@ -241,7 +249,7 @@ export function SiteNav() {
 										href={item.href}
 										onClick={closeMenu}
 										data-active={isActive(item.href)}
-										className='block rounded-[var(--radius-sm)] px-3.5 py-3 text-[15px] text-[var(--ink)] transition hover:bg-[var(--paper-2)] data-[active=true]:font-semibold data-[active=true]:text-[var(--accent)]'
+										className='nav-menu-item !block data-[active=true]:font-semibold data-[active=true]:text-[var(--accent)]'
 									>
 										{item.label}
 									</Link>
@@ -259,7 +267,8 @@ export function SiteNav() {
 								aria-controls='process-menu'
 								onClick={() => setIsProcessOpen((current) => !current)}
 								data-active={isProcessActive}
-								className='flex cursor-pointer items-center gap-1.5 rounded-full px-3.5 py-1.5 transition hover:bg-[var(--paper)] hover:text-[var(--ink)] data-[active=true]:font-semibold data-[active=true]:text-[var(--ink)]'
+								data-open={isProcessOpen}
+								className='nav-item flex cursor-pointer items-center gap-1.5'
 							>
 								How Parliament works
 								<CaretDownIcon
@@ -272,7 +281,7 @@ export function SiteNav() {
 
 							<div
 								id='process-menu'
-								className={`absolute right-0 top-full z-40 mt-4 w-[22rem] rounded-[var(--radius)] border border-[var(--rule)] bg-[var(--paper)] p-3 shadow-[0_16px_40px_-16px_rgba(0,0,0,0.22)] transition duration-200 ${
+								className={`absolute right-0 top-full z-40 mt-3 w-[22rem] border border-[var(--ink)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-[var(--brass)] before:content-[''] transition duration-200 ${
 									isProcessOpen
 										? 'visible translate-y-0 opacity-100'
 										: 'invisible -translate-y-1 opacity-0'
@@ -284,14 +293,17 @@ export function SiteNav() {
 										href={item.href}
 										onClick={closeMenu}
 										data-active={isActive(item.href)}
-										className='block rounded-[var(--radius-sm)] px-3.5 py-3 text-[15px] text-[var(--ink)] transition hover:bg-[var(--paper-2)] data-[active=true]:font-semibold data-[active=true]:text-[var(--accent)]'
+										className='nav-menu-item !block data-[active=true]:font-semibold data-[active=true]:text-[var(--accent)]'
 									>
 										<span>{item.label}</span>
 										{/* A shade lighter than the label above it: the blurb is there to
 										    be glanced at, not read down a list of three. `font-normal`
 										    holds it there when the entry is active — the bold marks which
 										    page you are on, and that is the label's job, not the blurb's. */}
-										<span className='mt-1 block text-[13px] font-normal leading-5 text-[var(--ink-mute)]'>
+										{/* Off the body size on purpose. `.bb-body` is the estate's reading
+										    measure and this is a menu: three of these stacked at reading size
+										    turn a list of links into a page of prose to scan before choosing. */}
+										<span className='mt-1 block text-[12.5px] font-normal leading-[1.45] text-[var(--ink-mute)]'>
 											{item.blurb}
 										</span>
 									</Link>
@@ -305,15 +317,17 @@ export function SiteNav() {
 
 						<span className='w-1.5' aria-hidden='true' />
 
-						<a
-							href='https://betterbarmm.com/contribute'
-							target='_blank'
-							rel='noreferrer'
-							className='hidden items-center gap-1.5 rounded-full bg-[var(--accent)] px-4 py-2 text-[13px] font-medium text-white transition hover:bg-[var(--accent-deep)] sm:inline-flex'
-						>
-							<HandHeartIcon size={16} weight='fill' aria-hidden='true' />
-							Contribute
-						</a>
+						<Magnetic strength={0.22} className='hidden sm:inline-flex'>
+							<a
+								href='https://betterbarmm.com/contribute'
+								target='_blank'
+								rel='noreferrer'
+								className='bb-btn bb-btn-accent !px-4 !py-2.5 !text-[10px]'
+							>
+								<HandHeartIcon size={15} weight='fill' aria-hidden='true' />
+								Contribute
+							</a>
+						</Magnetic>
 
 						<button
 							type='button'
@@ -321,7 +335,7 @@ export function SiteNav() {
 							aria-expanded={isMenuOpen}
 							aria-controls='legislation-mobile-menu'
 							onClick={() => setIsMenuOpen((current) => !current)}
-							className='inline-flex size-9 cursor-pointer items-center justify-center rounded-full border border-[var(--rule)] text-[var(--ink)] transition hover:bg-[var(--paper-2)] md:hidden'
+							className='inline-flex size-9 cursor-pointer items-center justify-center border border-[var(--ink)] text-[var(--ink)] transition hover:bg-[var(--ink)] hover:text-[var(--paper)] md:hidden'
 						>
 							<span className='sr-only'>{isMenuOpen ? 'Close menu' : 'Open menu'}</span>
 							<span aria-hidden='true' className='flex h-2.5 w-4 flex-col justify-between'>
@@ -374,7 +388,7 @@ export function SiteNav() {
 								: 'overflow-hidden'
 						}`}
 					>
-						<p className='label'>Registry</p>
+						<p className='bb-label'>Registry</p>
 						<div className='mt-3 grid'>
 							{categories.map((category) => (
 								<Link
@@ -390,7 +404,7 @@ export function SiteNav() {
 							))}
 						</div>
 
-						<p className='label mt-6'>People</p>
+						<p className='bb-label mt-7'>People</p>
 						<div className='mt-3 grid'>
 							{peopleLinks.map((item) => (
 								<Link
@@ -405,7 +419,7 @@ export function SiteNav() {
 							))}
 						</div>
 
-						<p className='label mt-6'>How Parliament works</p>
+						<p className='bb-label mt-7'>How Parliament works</p>
 						<div className='mt-3 grid'>
 							{processLinks.map((item) => (
 								<Link
@@ -420,7 +434,7 @@ export function SiteNav() {
 							))}
 						</div>
 
-						<p className='label mt-6'>Project</p>
+						<p className='bb-label mt-7'>Project</p>
 						<div className='mt-3 grid'>
 							{secondaryLinks.map((item) => (
 								<Link
@@ -442,7 +456,7 @@ export function SiteNav() {
 							target='_blank'
 							rel='noreferrer'
 							onClick={closeMenu}
-							className='mt-7 flex w-full items-center justify-center gap-1.5 rounded-full bg-[var(--accent)] px-4 py-2.5 text-[13px] font-medium text-white transition hover:bg-[var(--accent-deep)] sm:hidden'
+							className='bb-btn bb-btn-accent mt-7 w-full sm:hidden'
 						>
 							<HandHeartIcon size={16} weight='fill' aria-hidden='true' />
 							Contribute
@@ -450,6 +464,11 @@ export function SiteNav() {
 					</div>
 				</nav>
 			</div>
+
+			{/* How far down the document the reader is. A record page runs to
+			    several screens of statute, and a reader is entitled to know how
+			    much of one they are in. */}
+			<ScrollProgress />
 		</header>
 	)
 }

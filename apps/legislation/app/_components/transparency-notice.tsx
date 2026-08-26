@@ -32,7 +32,7 @@ export function TransparencyNotice() {
 	return (
 		<Reveal>
 			<div className='mt-16 border-t border-[var(--rule-soft)] lg:mt-24'>
-				<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
+				<div className='bb-container'>
 					<div className='border-b border-[var(--rule-soft)] py-12 lg:py-14'>
 						{/* Held to a reading measure rather than the page column. The block
 						    is one short paragraph, and run across 88rem it read as a caption
@@ -71,7 +71,7 @@ export function TransparencyNotice() {
 									href='https://parliament.bangsamoro.gov.ph/'
 									target='_blank'
 									rel='noreferrer'
-									className='btn btn-solid'
+									className='bb-btn bb-btn-solid'
 								>
 									Open the official source
 								</a>

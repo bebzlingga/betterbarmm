@@ -63,7 +63,7 @@ export function ReferralList({
 												{item.record.statusShort}
 											</span>
 										</span>
-										<span className='mt-1 block text-[13px] leading-6 text-[var(--ink-2)]'>
+										<span className='mt-1 block bb-body text-[var(--ink-2)]'>
 											{item.record.title}
 										</span>
 									</span>
@@ -74,7 +74,7 @@ export function ReferralList({
 									href={item.url}
 									target='_blank'
 									rel='noreferrer'
-									className='block py-3.5 text-[13px] leading-6 text-[var(--ink-2)] transition hover:text-[var(--ink)]'
+									className='block py-3.5 bb-body text-[var(--ink-2)] transition hover:text-[var(--ink)]'
 								>
 									{item.title}
 								</a>

@@ -167,7 +167,7 @@ export default function Page() {
 						description='BARMM elects an 80-seat Parliament through 40 party-representative seats, 32 single-member district seats, and 8 sectoral or reserved seats. A parliamentary majority is 41 seats.'
 					/>
 
-					<Reveal className='mt-10 border border-[var(--rule)] bg-[var(--paper-2)] p-6 sm:p-8'>
+					<Reveal className='border border-[var(--rule)] bg-[var(--paper-2)] p-6 sm:p-8'>
 						<div className='flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1'>
 							<p className='font-mono text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--ink-3)]'>Composition of the {stats.totalSeats}-seat Parliament</p>
 							<p className='font-mono text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--accent)]'>Majority = {stats.majorityThreshold}</p>
@@ -360,7 +360,7 @@ export default function Page() {
 						title='Follow the election as it unfolds.'
 						description='The most recent reporting tracked in this workspace, newest first. Each headline links to the original source.'
 					/>
-					<div className='mt-10 border-t border-[var(--rule)]'>
+					<div className='border-t border-[var(--rule)]'>
 						{latestNews.map((item) => (
 							<Reveal key={item.id}>
 								<a

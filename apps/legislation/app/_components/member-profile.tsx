@@ -23,7 +23,7 @@ function Fact({ label, value }: { label: string; value: string | string[] }) {
 	return (
 		<div>
 			<p className='label label-strong'>{label}</p>
-			<div className='mt-2 text-sm leading-6 text-[var(--ink-2)]'>
+			<div className='mt-2 bb-body text-[var(--ink-2)]'>
 				{lines.map((line, index) => (
 					<p key={index}>{line}</p>
 				))}
@@ -241,13 +241,13 @@ function Biography({ member }: { member: Member }) {
 
 	if (!text) {
 		return (
-			<p className='mt-7 text-sm leading-6 text-[var(--ink-3)]'>
+			<p className='mt-7 bb-body text-[var(--ink-3)]'>
 				Parliament has not published a biography for this member.
 			</p>
 		)
 	}
 
-	return <p className='mt-7 text-sm leading-6 text-[var(--ink-2)]'>{text}</p>
+	return <p className='mt-7 bb-body text-[var(--ink-2)]'>{text}</p>
 }
 
 /** Column one: who this person is. */
@@ -304,13 +304,13 @@ export function MemberIdentity({ member, titleId }: { member: Member; titleId?: 
 			{member.bio.length > 0 ? (
 				<Biography member={member} />
 			) : member.isInstitution ? null : (
-				<p className='mt-7 text-sm leading-6 text-[var(--ink-3)]'>
+				<p className='mt-7 bb-body text-[var(--ink-3)]'>
 					Parliament has not published a biography for this member.
 				</p>
 			)}
 
 			{member.notes ? (
-				<p className='mt-4 text-sm leading-6 text-[var(--ink-2)]'>{member.notes}</p>
+				<p className='mt-4 bb-body text-[var(--ink-2)]'>{member.notes}</p>
 			) : null}
 
 			{/* No rule under the name — the badges already close that block, and a

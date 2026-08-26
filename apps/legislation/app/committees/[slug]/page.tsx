@@ -84,7 +84,7 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 	const exOfficio = committee.seats.filter((seat) => seat.role === 'Ex-officio')
 
 	return (
-		<section className='mx-auto max-w-[88rem] px-6 pb-16 pt-12 lg:px-8 lg:pt-16'>
+		<section className='bb-container bb-section'>
 			{/* Two columns: what it is on the left, what it holds on the right. */}
 			{/* The single column is stated, not implicit — an implicit `auto` track
 			    sizes to its contents' min-content and cannot shrink to a phone. See
@@ -112,7 +112,7 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 						{committee.jurisdiction ? (
 							<div className='mt-8'>
 								<p className='label label-strong'>Duties, powers, and jurisdiction</p>
-								<p className='mt-3 text-sm leading-6 text-[var(--ink-2)]'>
+								<p className='mt-3 bb-body text-[var(--ink-2)]'>
 									{committee.jurisdiction}
 								</p>
 							</div>
@@ -121,7 +121,7 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 						{committee.subcommittees ? (
 							<div className='mt-8 border-t border-[var(--rule)] pt-6'>
 								<p className='label label-strong'>Subcommittees</p>
-								<p className='mt-3 text-sm leading-6 text-[var(--ink-2)]'>
+								<p className='mt-3 bb-body text-[var(--ink-2)]'>
 									{committee.subcommittees}
 								</p>
 							</div>
@@ -222,7 +222,7 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 								/>
 							</div>
 						) : (
-							<p className='mt-12 max-w-2xl text-[13px] leading-6 text-[var(--ink-3)]'>
+							<p className='mt-12 max-w-2xl bb-body text-[var(--ink-3)]'>
 								No measures are listed as referred to this committee on its official page.
 							</p>
 						)}

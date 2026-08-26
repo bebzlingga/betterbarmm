@@ -46,6 +46,57 @@ export type DiscoverBarmmTopic = {
 	timeline?: DiscoverBarmmTimelineEvent[]
 }
 
+/* ============================================================
+   The region, in figures
+
+   Discover opens with numbers rather than prose because a reader who has
+   never heard of BARMM needs a shape to hang the rest on: how many seats,
+   split how, elected when.
+
+   Every figure below is transcribed from this repository's own election
+   dataset — `datasets/election/election.min.json`, which carries the
+   COMELEC and Parliament sources behind each one. It is transcribed
+   rather than imported because the landing site does not otherwise depend
+   on the election workspace, and four numbers are not worth a dependency.
+   If the dataset moves, these move with it.
+   ============================================================ */
+
+export type BangsamoroSeatBlock = {
+	constituency: string
+	seats: number
+}
+
+/**
+ * Single-member district seats by constituency, 32 in total.
+ *
+ * Sulu is absent rather than listed at zero. The Supreme Court excluded it
+ * from BARMM, so it is not a constituency with no seats — it is not a
+ * constituency. Where that matters historically, the History timeline says so.
+ */
+export const bangsamoroDistrictSeats: BangsamoroSeatBlock[] = [
+	{ constituency: 'Lanao del Sur', seats: 9 },
+	{ constituency: 'Maguindanao del Norte', seats: 5 },
+	{ constituency: 'Maguindanao del Sur', seats: 5 },
+	{ constituency: 'Basilan', seats: 4 },
+	{ constituency: 'Tawi-Tawi', seats: 4 },
+	{ constituency: 'Cotabato City', seats: 3 },
+	{ constituency: 'Special Geographic Area', seats: 2 },
+]
+
+export const bangsamoroParliament = {
+	totalSeats: 80,
+	partyRepresentativeSeats: 40,
+	districtSeats: 32,
+	reservedSeats: 8,
+	majorityThreshold: 41,
+	/** First regular parliamentary election under the Bangsamoro Organic Law. */
+	electionDay: 'September 14, 2026',
+	source: {
+		label: 'BetterBARMM election dataset',
+		href: '/soon',
+	},
+} as const
+
 export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
 	{
 		slug: 'history',
@@ -54,11 +105,9 @@ export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
 		title: 'How BARMM came to be',
 		description: 'A plain-language path from identity and peace talks to the Bangsamoro Organic Law and BARMM transition.',
 		sections: [
-			'The Bangsamoro story is rooted in communities with distinct histories, faith traditions, customary institutions, and political aspirations across mainland and island Mindanao.',
-			'The modern region grew from a long peace process that moved political demands for self-governance into negotiated institutions, laws, and a public transition.',
-			'The Bangsamoro Organic Law created the legal basis for BARMM, and the 2019 plebiscites shaped the new autonomous region that replaced ARMM.',
-			'The transition period focused on building ministries, Parliament, public offices, codes, and financial systems capable of serving a diverse region.',
-			'History is not only a timeline. It is also a public memory that explains why budgets, laws, land, identity, and local governance remain closely connected.',
+			'What followed was a long cycle of deals that fell short. The Tripoli Agreement in 1976 promised autonomy and did not deliver it; the first autonomous region, set up at the end of the 1980s, arrived with powers thinner than the ones being demanded; a final peace deal with the MNLF in 1996 left the underlying question open. In 2008 an agreement on ancestral domain was struck down by the Supreme Court before it could be signed — which is why the map of what it would have covered is worth looking at.',
+			'The settlement that held was built in stages: a framework agreement in 2012, a comprehensive one in 2014, and a law in 2018. That law is the Bangsamoro Organic Law. It was ratified in plebiscites in 2019, and it did three things at once — it abolished the ARMM, drew the new region by asking each area whether it wanted to be in it, and created a parliament to govern what the vote produced.',
+			'The parliament that has governed since is a transitional one, appointed rather than elected, and it has spent the years since ratification building ministries, codes and budgets from very little. The first regular election is the moment that ends: the region stops being administered by an interim body and starts being governed by one the voters chose.',
 		],
 		references: [
 			{
@@ -164,9 +213,10 @@ export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
 		navTitle: 'Government',
 		title: 'How the Bangsamoro government works',
 		description: 'How Parliament, the Chief Minister, ministries, and public offices fit together.',
-		sections: [
-			'BARMM was created under the Bangsamoro Organic Law and organized through the Bangsamoro Administrative Code. It is not a province, city, or ordinary regional office. It is an autonomous regional government with a parliamentary setup: the Bangsamoro Parliament exercises legislative power, while the Chief Minister leads the executive branch and works through ministries, agencies, offices, and commissions. As of May 21, 2026, the BARMM key officials page lists Abdulraof A. Macacua as Chief Minister; verify current officials against official pages before citation.',
-		],
+		// No opening prose. What it said — that this is a parliamentary government
+		// with a Chief Minister and ministries under it — is what the modules below
+		// set out at length, each beside the record it is read from.
+		sections: [],
 		detailEyebrow: 'Government map',
 		detailTitle: 'Ministries, offices, and their public roles',
 		detailDescription:
@@ -495,9 +545,10 @@ export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
 		navTitle: 'People',
 		title: 'Peoples and communities of Bangsamoro',
 		description: 'Meet the Moro, Indigenous, and settler communities that shape Bangsamoro public life.',
-		sections: [
-			'BCPCH groups the Bangsamoro People into Islamized ethnolinguistic groups, Indigenous peoples, and settler communities. Use the source links for deeper reading and keep local context in view.',
-		],
+		// No lede. The one paragraph this chapter had said the communities are
+		// grouped three ways and to follow the sources — which is what the module
+		// directly below it says at greater length, beside the groups themselves.
+		sections: [],
 		peopleGroups: [
 			{
 				category: 'Islamized ethnolinguistic groups',
@@ -656,9 +707,9 @@ export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
 		navTitle: 'Culture & Places',
 		title: 'Mosques, food, islands, and living heritage',
 		description: 'A starting map of mosques, sacred sites, islands, food, textiles, and living heritage.',
-		sections: [
-			'This is not a travel guide yet. It is a source-backed shortlist of places, food, and cultural markers that help readers recognize BARMM beyond government boundaries.',
-		],
+		// No opening prose. The modules below carry it: the places and food it
+		// summarised are set out card by card, and by people, further down.
+		sections: [],
 		detailCards: [
 			{
 				label: 'Faith landmarks',
@@ -725,4 +776,59 @@ export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
 			},
 		],
 	},
+	{
+		slug: 'local-government',
+		label: 'Local Government',
+		navTitle: 'Local Government',
+		title: 'Who runs your province, town, and barangay',
+		description:
+			'The ladder of local government units inside BARMM, what is elected at each rung, and where to look up the officials.',
+		sections: [
+			'BARMM is an autonomous regional government sitting over provinces, cities, municipalities, and barangays that keep their own elected officials. The Bangsamoro Parliament does not replace a governor, a mayor, or a barangay captain — it is a different office on a different ballot, and confusing the two is the single most common mistake readers arrive with.',
+			'The Bangsamoro Local Governance Code, enacted in 2023, sets out how local units inside the region are governed. The national Local Government Code of 1991 still defines the offices themselves: the governor and provincial board, the mayor and the council, the punong barangay and the sangguniang barangay.',
+			'The Ministry of the Interior and Local Government is the regional ministry that supervises these units. It is the first place to ask about any province, city, municipality, or barangay inside BARMM.',
+			'A full directory — every unit, every elected official, down to the barangay — is a workspace on our list and is not built yet. This chapter gives the structure and points at the offices that already hold the record.',
+		],
+		references: [
+			{
+				label: 'Bangsamoro Official Gazette',
+				href: 'https://officialgazette.bangsamoro.gov.ph/',
+			},
+			{
+				label: 'Ministry of the Interior and Local Government',
+				href: 'https://milg.bangsamoro.gov.ph/',
+			},
+			{
+				label: 'Local Government Code of 1991 (RA 7160)',
+				href: 'https://www.officialgazette.gov.ph/1991/10/10/republic-act-no-7160/',
+			},
+			{
+				label: 'PSA — BARMM population, 2024 census',
+				href: 'https://psa.gov.ph/content/highlights-bangsamoro-autonomous-region-muslim-mindanao-barmm-population-2024-census',
+			},
+			{
+				label: 'PSA — Philippine Standard Geographic Code',
+				href: 'https://psa.gov.ph/classification/psgc',
+			},
+		],
+	},
 ]
+
+/**
+ * The offices of the Bangsamoro Government, by the initials they go by.
+ *
+ * MILG, MBHTE, BCPCH — this is what the offices are actually called in the
+ * region, on their own letterheads and in every news item about them, and the
+ * abbreviations are what fit a running band. The full names are two lines each
+ * at that size, which turns a texture into a queue.
+ *
+ * Derived from the Government chapter's own cards rather than typed out again,
+ * so the band and the directory on that chapter cannot disagree about what
+ * exists. The filter is the abbreviation itself: every office carries one, and
+ * the four cards on that chapter that are places or food traditions do not.
+ */
+export const bangsamoroOffices: string[] = (
+	discoverBarmmTopics.find((topic) => topic.slug === 'governance')?.detailCards ?? []
+)
+	.map((card) => card.value)
+	.filter((value): value is string => value != null && /^[A-Z]{2,6}$/.test(value))

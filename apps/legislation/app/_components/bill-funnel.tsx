@@ -98,7 +98,7 @@ function LegendRow({
 						<span className='ml-px text-[8px] font-bold'>%</span>
 					</span>
 				</p>
-				<p className='mt-1 text-[13px] leading-5 text-[var(--ink-3)]'>{slice.note}</p>
+				<p className='mt-1 bb-body text-[var(--ink-3)]'>{slice.note}</p>
 			</div>
 		</div>
 	)
@@ -180,7 +180,7 @@ export function BillFunnel({
 					<span className='font-title text-[2.75rem] font-extrabold leading-none tracking-tight text-[var(--ink)] sm:text-[3.25rem]'>
 						{heroValue}
 					</span>
-					<span className='mt-3 max-w-[11rem] text-[13px] leading-5 text-[var(--ink-mute)]'>
+					<span className='mt-3 max-w-[11rem]  bb-body text-[var(--ink-mute)]'>
 						{heroLabel}
 					</span>
 				</figcaption>

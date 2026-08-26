@@ -179,7 +179,7 @@ export default function AboutPage() {
 				description='Parliament publishes its record across six archives, in legal shorthand, with no way to search between them. This adds nothing new — it puts everything in one place, explains each measure in plain language, and links every entry back to its source.'
 			/>
 
-			<section className='mx-auto max-w-[88rem] px-6 pb-20 pt-16 lg:px-8 lg:pb-28 lg:pt-20'>
+			<section className='bb-container bb-section'>
 				{/* Coverage table */}
 				<div>
 					<Reveal>
@@ -228,7 +228,7 @@ export default function AboutPage() {
 												{count.toLocaleString()}
 											</p>
 
-											<p className='mt-4 text-sm leading-6 text-[var(--ink-3)]'>{category.blurb}</p>
+											<p className='mt-4 bb-body text-[var(--ink-3)]'>{category.blurb}</p>
 										</Link>
 									</Reveal>
 								)
@@ -276,7 +276,7 @@ export default function AboutPage() {
 								</div>
 
 								<p className='item-title font-title mt-5'>{item.step}</p>
-								<p className='mt-2.5 text-[13px] leading-6 text-[var(--ink-2)]'>{item.rule}</p>
+								<p className='mt-2.5 bb-body text-[var(--ink-2)]'>{item.rule}</p>
 								<p className='mt-auto pt-4 text-[13px] text-[var(--accent)]'>{item.status}</p>
 							</div>
 						</Reveal>
@@ -315,13 +315,13 @@ export default function AboutPage() {
 										{dataset.metadata.knownGaps.length > 0 ? (
 											<ul className='grid gap-2'>
 												{dataset.metadata.knownGaps.map((gap, gapIndex) => (
-													<li key={gapIndex} className='text-sm leading-6 text-[var(--ink-2)]'>
+													<li key={gapIndex} className='bb-body text-[var(--ink-2)]'>
 														{gap}
 													</li>
 												))}
 											</ul>
 										) : (
-											<p className='text-sm leading-6 text-[var(--ink-3)]'>
+											<p className='bb-body text-[var(--ink-3)]'>
 												No gaps recorded for this dataset.
 											</p>
 										)}
@@ -341,7 +341,7 @@ export default function AboutPage() {
 							<div className='mx-auto max-w-3xl text-center'>
 								<p className='eyebrow'>Sector glossary</p>
 								<h2 className='section-title mt-4'>What each tag actually means.</h2>
-								<p className='mt-5 text-sm leading-6 text-[var(--ink-3)]'>
+								<p className='mt-5 bb-body text-[var(--ink-3)]'>
 									Sectors are analytical labels applied to help you filter — they are not part of
 									the official record. A measure can carry more than one. When a tag and the
 									official title disagree, the title wins.
@@ -376,7 +376,7 @@ export default function AboutPage() {
 														{count.toLocaleString()}
 													</span>
 												</div>
-												<p className='mt-3 text-[13px] leading-6 text-[var(--ink-3)]'>
+												<p className='mt-3 bb-body text-[var(--ink-3)]'>
 													{sectorDefinitions[value] ??
 														'A grouping label applied during classification. Check the official title for the exact scope.'}
 												</p>

@@ -50,7 +50,7 @@ export default async function MemberProfilePage({ params }: { params: Promise<{ 
 	}))
 
 	return (
-		<section className='mx-auto max-w-[88rem] px-6 pb-24 pt-12 lg:px-8 lg:pb-32 lg:pt-16'>
+		<section className='bb-container bb-section'>
 			{/* Two columns: the person, then the record. Held well apart — the
 			    left column runs biography and the right runs a list of measures,
 			    and at a narrow gutter the two read as one column of text.

@@ -1,17 +1,24 @@
-import { ArrowLeftIcon, ArrowRightIcon } from '@phosphor-icons/react/ssr'
+import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import { CtaAction, CtaPanel, Rise } from '@betterbarmm/editorial'
 import { discoverBarmmTopics } from '../../_components/discover-barmm-data'
-import { DiscoverTopicBody } from '../../_components/discover-topic'
-import { PageHeader } from '../../_components/page-header'
+import { DiscoverChapterHero } from '../../_components/discover-hero'
+import { photo } from '../../_components/discover-media'
+import { ChapterLinkCard, DiscoverTopicBody } from '../../_components/discover-topic'
+import { discoverTopicMedia, topicMedia } from '../../_components/discover-topic-media'
 import { SiteHeader } from '../../_components/site-header'
 
 export function generateStaticParams() {
 	return discoverBarmmTopics.map((topic) => ({ slug: topic.slug }))
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+export async function generateMetadata({
+	params,
+}: {
+	params: Promise<{ slug: string }>
+}): Promise<Metadata> {
 	const { slug } = await params
 	const topic = discoverBarmmTopics.find((item) => item.slug === slug)
 
@@ -21,11 +28,24 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 	return {
 		title: `${topic.navTitle ?? topic.label} — Discover BARMM`,
-		description: topic.description,
+		description: topicMedia(slug)?.standfirst ?? topic.description,
 	}
 }
 
-export default async function DiscoverTopicPage({ params }: { params: Promise<{ slug: string }> }) {
+/** The photograph that stands in for a chapter when it is linked from another. */
+const chapterCardPhoto = {
+	history: 'makhdumMosque',
+	governance: 'parliamentBuilding',
+	'local-government': 'cotabatoPlaza',
+	people: 'singkil',
+	'culture-places': 'budBongao',
+} as const
+
+export default async function DiscoverTopicPage({
+	params,
+}: {
+	params: Promise<{ slug: string }>
+}) {
 	const { slug } = await params
 	const index = discoverBarmmTopics.findIndex((item) => item.slug === slug)
 
@@ -34,72 +54,105 @@ export default async function DiscoverTopicPage({ params }: { params: Promise<{ 
 	}
 
 	const topic = discoverBarmmTopics[index]
+	const media = discoverTopicMedia[topic.slug]
 	const previous = discoverBarmmTopics[index - 1]
 	const next = discoverBarmmTopics[index + 1]
 
 	return (
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
-			<SiteHeader activeItem='discover' />
+			{/* Transparent over the opening photograph, solid once the reader has
+			    scrolled into the text. The progress hairline under the bar is the
+			    chapter's own length — these run to three thousand words and a reader
+			    is entitled to know how much of one they are in. */}
+			<SiteHeader activeItem='discover' overlay />
 
-			<PageHeader
-				eyebrow={topic.navTitle ?? topic.label}
+			<DiscoverChapterHero
+				chapter={`Chapter ${String(index + 1).padStart(2, '0')} of ${String(discoverBarmmTopics.length).padStart(2, '0')} · Discover BARMM`}
 				title={topic.title}
-				description={topic.description}
-			>
-				<Link href='/discover' className='btn btn-quiet'>
-					<ArrowLeftIcon className='size-4' aria-hidden='true' />
-					All of Discover BARMM
-				</Link>
-			</PageHeader>
+				standfirst={media?.standfirst ?? topic.description}
+				photo={photo(media?.hero ?? 'panampangan')}
+				scrollTo='#read'
+			/>
 
-			<section className='border-b border-[var(--rule)]'>
-				<div className='mx-auto max-w-[88rem] px-6 py-12 lg:px-8'>
-					<DiscoverTopicBody topic={topic} />
-				</div>
-			</section>
+			<DiscoverTopicBody topic={topic} media={media} />
 
-			{/* Where to go next, as a pair of rows rather than two boxes — the
-			    same hairline-and-tint treatment the rest of the site uses. */}
+			{/* ---- Where to go next ----
+
+			    Two photographs the size of doors rather than two text rows. At the
+			    foot of three thousand words, a hairline link is not a strong enough
+			    signal that there is another chapter. */}
 			<section>
-				<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
-					<div className='grid sm:grid-cols-2 sm:gap-x-16'>
-						{previous ? (
-							<Link
-								href={`/discover/${previous.slug}`}
-								className='row group flex items-center gap-4 py-8'
-							>
-								<ArrowLeftIcon
-									className='row-arrow size-4 shrink-0 group-hover:-translate-x-0.5'
-									aria-hidden='true'
-								/>
-								<div className='min-w-0'>
-									<p className='label label-strong'>Previous</p>
-									<h2 className='mt-1.5 text-[16.5px] font-medium leading-snug text-[var(--ink)]'>
-										{previous.navTitle ?? previous.label}
-									</h2>
-								</div>
-							</Link>
-						) : (
-							<div className='hidden sm:block' />
-						)}
+				<div className='bb-container pb-28 pt-24 lg:pb-36 lg:pt-32'>
+					<Rise distance={14}>
+						<div className='bb-kicker'>
+							<span>&mdash;</span>
+							<span>Keep reading</span>
+						</div>
+					</Rise>
 
-						{next ? (
-							<Link
-								href={`/discover/${next.slug}`}
-								className='row group flex items-center justify-between gap-4 py-8 text-right'
-							>
-								<div className='ml-auto min-w-0'>
-									<p className='label label-strong'>Next</p>
-									<h2 className='mt-1.5 text-[16.5px] font-medium leading-snug text-[var(--ink)]'>
-										{next.navTitle ?? next.label}
-									</h2>
-								</div>
-								<ArrowRightIcon className='row-arrow size-4 shrink-0' aria-hidden='true' />
-							</Link>
-						) : null}
+					<div className='mt-12 grid gap-5 sm:grid-cols-2'>
+						<Rise distance={18}>
+							{previous ? (
+								<Link href={`/discover/${previous.slug}`} className='group block'>
+									<ChapterLinkCard
+										label='← Previous chapter'
+										title={previous.navTitle ?? previous.label}
+										photoKey={chapterCardPhoto[previous.slug as keyof typeof chapterCardPhoto]}
+									/>
+								</Link>
+							) : (
+								<Link href='/discover' className='group block'>
+									<ChapterLinkCard
+										label='← Back to the start'
+										title={`All ${discoverBarmmTopics.length} chapters`}
+										photoKey='panampangan'
+									/>
+								</Link>
+							)}
+						</Rise>
+
+						<Rise delay={0.09} distance={18}>
+							{next ? (
+								<Link href={`/discover/${next.slug}`} className='group block'>
+									<ChapterLinkCard
+										label='Next chapter →'
+										title={next.navTitle ?? next.label}
+										photoKey={chapterCardPhoto[next.slug as keyof typeof chapterCardPhoto]}
+										align='right'
+									/>
+								</Link>
+							) : (
+								<Link href='/soon' className='group block'>
+									<ChapterLinkCard
+										label='Next →'
+										title='The 2026 Election workspace'
+										photoKey='parliamentSession'
+										align='right'
+									/>
+								</Link>
+							)}
+						</Rise>
 					</div>
 				</div>
 			</section>
+
+			<CtaPanel
+				label='Keep it honest'
+				lines={['Names change.', 'Figures get revised.']}
+				standfirst='Where this chapter differs from an official page, the official page is right — and the correction is welcome. Send the source and it gets checked against the record.'
+			>
+				<CtaAction>
+					<Link href='/contribute' className='bb-btn bb-btn-brass'>
+						Send a correction
+						<ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
+					</Link>
+				</CtaAction>
+				<CtaAction>
+					<Link href='/discover' className='bb-btn bb-btn-ghost'>
+						All {discoverBarmmTopics.length} chapters
+					</Link>
+				</CtaAction>
+			</CtaPanel>
 		</main>
 	)
 }

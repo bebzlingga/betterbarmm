@@ -9,7 +9,12 @@ type AutoScrollDetailsProps = ComponentPropsWithoutRef<"details"> & {
 export function AutoScrollDetails({
   children,
   onToggle,
-  scrollOffset = 190,
+  /* How far above the opened row to stop — enough to clear the sticky bar, and
+     no more. Set generously it works against itself: `Math.max(0, …)` clamps
+     the target, so for any row near the top of the document the page scrolls to
+     the very top instead and the row the reader just opened ends up below the
+     fold. */
+  scrollOffset = 120,
   ...props
 }: AutoScrollDetailsProps) {
   const animationFrameRef = useRef<number | null>(null);

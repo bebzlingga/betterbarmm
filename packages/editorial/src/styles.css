@@ -1,0 +1,1423 @@
+/* ============================================================
+   BetterBARMM — the editorial layer
+
+   The shared visual language of the public-facing surfaces: the
+   landing site and the legislation registry. It sits on top of
+   `@betterbarmm/ui`, which every app in the estate draws from, and
+   re-points that palette rather than replacing it — so every component
+   from the base layer (badges, fields, rows, tables) takes the
+   editorial ground without a single override written anywhere.
+
+   Why it is a package rather than a file in one app: the two surfaces
+   that use it are a magazine and a register, they are maintained
+   separately, and a copy in each would have drifted by the second
+   change. The workspaces that do not import it — election, budget —
+   are untouched by anything in here.
+
+   ---- Okir ----
+
+   Okir (ukkil, okkil) is the curvilinear carving tradition of the
+   Maranao, Maguindanaon, Tausug, and Sama — the scrollwork on a
+   torogan's panolong, on a kulintang frame, on the prow of a lepa. It
+   is not decoration bolted on: it is the visual grammar the region
+   already writes in, and a Bangsamoro site that draws its dividers as
+   plain 1px rules is speaking somebody else's dialect.
+
+   It appears three ways, and only three, so it stays an accent rather
+   than wallpaper:
+
+     · as a rule between sections, drawn stroke-by-stroke on scroll
+     · as a large bloom behind a masthead, at very low contrast
+     · as a corner mark on the one panel per page that carries weight
+
+   ---- Brass ----
+
+   The second brand colour, beside the crimson. Maranao brassware —
+   the gadur, the kulintang gongs, the betel box — is where it comes
+   from, and it does a job the crimson cannot: crimson is the colour of
+   emphasis and is spent on one thing per screen, while brass can carry
+   ornament, rules, and small labels across a whole page without ever
+   competing with a photograph or a table.
+
+   ---- Motion ----
+
+   Everything that moves is decoration on content that is already
+   there. `MotionProvider` sets `reducedMotion="user"`, which collapses
+   the library's animations under the OS preference; the CSS ones
+   collapse in the media query at the foot of this file. Nothing that
+   uses this layer is only visible because it moved.
+   ============================================================ */
+
+/* ============================================================
+   Tokens
+
+   These re-point the shared palette rather than adding a second one
+   beside it, so every component from `@betterbarmm/ui` — badges,
+   buttons, fields, rows — takes the editorial ground without a single
+   dark variant written here.
+   ============================================================ */
+
+:root {
+  /* The height of the sticky bar, in one place. Anything that pins itself
+     under the header has to know how tall it is — the tribe rail on Culture &
+     Places sits directly beneath it, and a guessed offset put it 12px behind
+     the bar. The value is the whole bar including its bottom hairline, which
+     is what a sticky child has to clear. */
+  --site-header-h: 4.375rem;
+
+  /* Where the underside of the bar is, right now. The bar hides on the way down
+     and returns on the way up, so anything sticking beneath it cannot use a
+     fixed offset: at `--site-header-h` it floats a bar's height below the top
+     of a screen the bar has left, and at 0 it sits under the bar the moment one
+     comes back. Sticky elements take this instead. */
+  --sticky-top: var(--site-header-h);
+
+  /* ---- Paper ----
+
+     Warm rather than white. A pure #ffffff canvas under a warm-toned
+     photograph makes the photograph look dirty; a paper ground a few points
+     off white makes it look printed. The steps stay as close together as
+     they were, because the hover tint still has to survive two hundred rows
+     without turning the page grey. */
+  --paper: #fbf9f5;
+  --paper-2: #f6f3ec;
+  --paper-3: #ece7dc;
+
+  --rule: #e3ddd0;
+  --rule-soft: #efeae0;
+
+  /* Ink, warmed by the same few points so the text sits on the paper rather
+     than on top of it. Every step still clears AA on the ground above. */
+  --ink: #191713;
+  --ink-2: #3d3931;
+  --ink-3: #5c574c;
+  --ink-mute: #7a7466;
+  --ink-display: #9c9384;
+
+  /* ---- Brass ----
+
+     The ornament colour. Deliberately desaturated — a true gold at these
+     sizes reads as a warning state, and this has to sit under a photograph
+     without pulling the eye off it. `--brass-line` is the one used for
+     hairlines and okir strokes, held low enough to read as texture. */
+  --brass: #a8813f;
+  --brass-deep: #7c5e2c;
+  --brass-soft: #f4ead6;
+  --brass-line: rgba(168, 129, 63, 0.42);
+
+  /* The dark band. Not the ink — an ink-coloured panel would flip to
+     near-white in dark mode, and the band's whole job is to stay dark. */
+  --ground: #14120e;
+  --ground-2: #1d1a15;
+  --panel-bg: #14120e;
+  --panel-fg: #faf7f1;
+
+  /* ---- Body leading ----
+
+     One line-height for every description on the estate: card blurbs,
+     row notes, standfirsts, captions, leads. They had drifted to eight
+     different values between 1.4 and 2.0, which reads as carelessness
+     at the scale a reader sees two of them side by side. Long-form
+     prose keeps its own, looser measure in `.bb-prose` — a paragraph
+     read for four hundred words wants more air than a note read for
+     twelve. */
+  --leading-body: 1.5;
+
+  /* Editorial easing. The library uses springs; the CSS half of the site
+     uses these, and they are tuned to feel like the same hand. */
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-swift: cubic-bezier(0.22, 1, 0.36, 1);
+
+  background: var(--paper);
+}
+
+:root[data-header-hidden="true"] {
+  --sticky-top: 0px;
+}
+
+:root[data-theme="dark"] {
+  --paper: #100e0b;
+  --paper-2: #16130f;
+  --paper-3: #221e18;
+
+  --rule: #2d2820;
+  --rule-soft: #211d17;
+
+  --ink: #f4f1e9;
+  --ink-2: #cfc9bb;
+  --ink-3: #a29b8c;
+  --ink-mute: #837c6e;
+  --ink-display: #6f6859;
+
+  /* Lifted, because the crimson at #8a2418 only reaches 2.3:1 on a dark
+     ground. The brass lifts with it for the same reason. */
+  --brass: #d3a95f;
+  --brass-deep: #e5c288;
+  --brass-soft: #2a2115;
+  --brass-line: rgba(211, 169, 95, 0.34);
+
+  --ground: #0a0908;
+  --ground-2: #14120e;
+  --panel-bg: #1b1813;
+  --panel-fg: #f4f1e9;
+}
+
+/* ============================================================
+   Grounds
+
+   A band that re-points the tokens rather than restyling what is
+   inside it, so anything dropped in — a badge, a button, a row —
+   adapts on its own. Same trick `.dark-bg` uses in the shared file;
+   these are the editorial cuts of it.
+   ============================================================ */
+
+.bb-ground {
+  --paper: var(--ground);
+  --paper-2: #1c1912;
+  --paper-3: #272219;
+  --ink: #f7f4ec;
+  --ink-2: #d5cec0;
+  --ink-3: #a9a292;
+  --ink-mute: #8b8474;
+  --ink-display: #6b6353;
+  --accent: #e8796a;
+  --accent-deep: #f0907f;
+  --accent-soft: rgba(232, 121, 106, 0.14);
+  --brass: #d3a95f;
+  --brass-deep: #e5c288;
+  --brass-soft: rgba(211, 169, 95, 0.14);
+  --brass-line: rgba(211, 169, 95, 0.36);
+  --rule: rgba(247, 244, 236, 0.14);
+  --rule-soft: rgba(247, 244, 236, 0.08);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+/* The same band on the crimson rather than on the near-black. One per page
+   at most — it is the loudest thing the site owns. */
+.bb-crimson {
+  --paper: #7d2015;
+  --paper-2: #6d1b11;
+  --paper-3: #5c160d;
+  --ink: #fdf8f5;
+  --ink-2: rgba(253, 248, 245, 0.84);
+  --ink-3: rgba(253, 248, 245, 0.7);
+  --ink-mute: rgba(253, 248, 245, 0.58);
+  --ink-display: rgba(253, 248, 245, 0.48);
+  --accent: #f0c98a;
+  --accent-deep: #f7ddb4;
+  --accent-soft: rgba(240, 201, 138, 0.16);
+  --brass: #f0c98a;
+  --brass-deep: #f7ddb4;
+  --brass-soft: rgba(240, 201, 138, 0.14);
+  --brass-line: rgba(240, 201, 138, 0.4);
+  --rule: rgba(253, 248, 245, 0.26);
+  --rule-soft: rgba(253, 248, 245, 0.14);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .bb-crimson {
+  --paper: #601509;
+  --paper-2: #521108;
+  --paper-3: #450e06;
+}
+
+/* ============================================================
+   Section rhythm
+
+   One value, everywhere, so the page has a beat rather than a set of
+   locally-tuned gaps. Every standing section takes `.bb-section`, and
+   because they all take the same padding, the space between any two of
+   them is exactly twice it — which is what makes the rhythm read as
+   deliberate instead of as whatever the two neighbours happened to
+   declare.
+
+   The failure this replaces was not that the numbers were wrong; most
+   of them were already 112px. It was that a handful of sections
+   carried padding on one edge only — a `pb` with no `pt`, a `pt` with
+   no `pb` — so those seams came out at half the gap of every other
+   one, and the page quietly lost its measure at three places on three
+   different pages.
+
+   Fluid rather than stepped: the same clamp from a phone to a 2560px
+   monitor, so the rhythm scales with the type instead of jumping at a
+   breakpoint.
+   ============================================================ */
+
+.bb-section {
+  padding-block: clamp(4.5rem, 9.5vw, 9rem);
+}
+
+/* For a section that opens or closes against something full-bleed — a
+   picture wall, a coloured band — and so wants the rhythm on one edge
+   only. Used sparingly; a section reaching for these usually wants
+   `.bb-section` and does not know it yet. */
+.bb-section-top {
+  padding-block-start: clamp(4.5rem, 9.5vw, 9rem);
+}
+
+.bb-section-bottom {
+  padding-block-end: clamp(4.5rem, 9.5vw, 9rem);
+}
+
+/* The same distance as a margin, for a full-bleed band that carries its
+   own padding inside and only needs holding off the section above it. */
+.bb-section-gap {
+  margin-block-start: clamp(4.5rem, 9.5vw, 9rem);
+}
+
+/* The distance from a section head to the block it introduces.
+ *
+ * It lived at every call site, as a top margin on whatever came next: mt-10,
+ * mt-14, mt-16, mt-20, and a handful of components carrying their own. Four
+ * pages down the estate that is four different gaps under four identical
+ * heads, and nobody chose any of them.
+ *
+ * It belongs to the head, not to the thing after it — the head is what is
+ * being spaced away from. Fluid, so the distance grows with the type it is
+ * separating rather than staying a phone-sized gap on a large screen. */
+.bb-head-gap {
+  margin-bottom: clamp(3.5rem, 5.5vw, 6rem);
+}
+
+/* The same distance taken from the other side, for a head whose content is a
+   sibling it cannot put a margin under — the registry's explainer sections,
+   where the heading and its points sit in one block. */
+.bb-head-gap-top {
+  margin-top: clamp(3.5rem, 5.5vw, 6rem);
+}
+
+/* One step further, for a head set in two columns. A split head is a heading
+   and a paragraph side by side rather than a heading alone: it occupies more of
+   the screen and reads as a block of its own, so the standard distance leaves
+   it sitting closer to the content than to the section it belongs to. */
+.bb-head-gap-lg {
+  margin-bottom: clamp(5rem, 7.5vw, 8.5rem);
+}
+
+/* ============================================================
+   Display type
+
+   Fluid rather than stepped — these run from a phone to a 2560px
+   monitor and the breakpoints between were never the interesting part.
+   Tracking tightens as the size grows: at 8rem the default letterfit
+   reads as gaps rather than as a word.
+   ============================================================ */
+
+/* The masthead cut, one step above `.bb-display`.
+ *
+ * For an opening screen that fills the window and holds nothing else. At the
+ * standard display size a headline with a whole viewport to itself reads as a
+ * heading with a lot of room around it rather than as a masthead.
+ *
+ * The ceiling is set where a twenty-character line still clears the container
+ * at 1440 — the same constraint `.bb-display` records below, one size up. */
+.bb-display-lg {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 0.84;
+  letter-spacing: -0.052em;
+  font-size: clamp(2.9rem, 8.4vw, 7.25rem);
+  text-wrap: balance;
+}
+
+.bb-display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 0.86;
+  letter-spacing: -0.048em;
+  /* Sized so a headline line fits the measure it is given rather than wrapping
+     inside its own mask. At 9rem a twenty-character line ran about 120px wider
+     than the page container, so every masthead broke into three ragged rows
+     where two were designed. */
+  font-size: clamp(2.6rem, 7.2vw, 6.25rem);
+  text-wrap: balance;
+}
+
+.bb-display-md {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  font-size: clamp(2.15rem, 5.2vw, 4.4rem);
+  text-wrap: balance;
+}
+
+.bb-display-sm {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 0.96;
+  letter-spacing: -0.034em;
+  font-size: clamp(1.9rem, 4vw, 3.15rem);
+  text-wrap: balance;
+}
+
+/* The quiet half of a two-tone headline — the qualifier, so the eye lands on
+   the claim before it reads the rest. */
+.bb-mute {
+  color: var(--ink-display);
+}
+
+/* Outlined display type, for a word that should read as texture rather than
+   as a second claim competing with the solid line above it. */
+.bb-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--ink-display);
+}
+
+/* The same over a photograph. Thicker, with a shadow under it, because a
+   scrim alone cannot cover every crop.
+
+   Neither kind of shadow can be used on it, and both were tried.
+
+   A `text-shadow` is painted from the glyph's fill, and the fill here is
+   transparent — it renders a blurred solid letterform directly behind a hollow
+   one, which reads as a grey smear inside every counter. So it is switched off,
+   since the class it sits with sets one and text-shadow inherits.
+
+   A `drop-shadow` filter follows the stroke correctly, but these lines are
+   revealed a line at a time from inside `.bb-line-mask`, which clips at
+   `overflow: hidden` — and a filter on a clipped child is clipped with it. The
+   16px blur was cut off square at the edges of every line box, which is the
+   grey rectangle it produced.
+
+   What is left is a heavier stroke on the scrim the hero already lays under
+   it. The stroke is the contrast now, so it carries a little more weight. */
+.bb-outline-over {
+  color: transparent;
+  -webkit-text-stroke: 1.9px rgba(255, 255, 255, 0.94);
+  paint-order: stroke fill;
+  text-shadow: none;
+}
+
+.bb-over {
+  text-shadow: 0 2px 28px rgba(8, 8, 6, 0.5);
+}
+
+/* Except on a headline that arrives a line at a time.
+ *
+ * Those lines are revealed from inside `.bb-line-mask`, which clips at
+ * `overflow: hidden` so a line can rise into view from under its own baseline.
+ * A shadow is painted as part of the text it belongs to, so it is clipped with
+ * it: the 28px blur ends square at the edges of every line box, and what the
+ * reader sees is a dark rectangle behind each line rather than a glow behind
+ * the letters.
+ *
+ * The mask cannot give the blur room to breathe — padding the sides and top
+ * would leave the bottom edge, and the bottom edge is the one the reveal
+ * needs. So the shadow comes off, and the contrast comes from the scrim the
+ * frame already lays under the type. `.bb-over` on ordinary text — a quote over
+ * a photograph, with no mask around it — keeps its shadow. */
+.bb-over .bb-line-mask {
+  text-shadow: none;
+}
+
+/* ---- The line mask ----
+
+   Display type arrives one line at a time from under its own baseline. The
+   clip is on the wrapper and the transform on the child, which is what makes
+   the line appear to be uncovered rather than to slide in from somewhere
+   else. Motion drives the child; this only supplies the window.
+
+   `padding-bottom` and the matching negative margin are load-bearing: a clip
+   at the exact baseline crops descenders off "g" and "y". */
+.bb-line-mask {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.14em;
+  margin-bottom: -0.14em;
+}
+
+/* ============================================================
+   Kickers and labels
+   ============================================================ */
+
+/* A number and a label on one line, with a brass rule above. Cheap to repeat,
+   and it gives a long scrolling page a spine to count along. */
+.bb-kicker {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  border-top: 1px solid var(--brass-line);
+  padding-top: 0.85rem;
+  font-family: var(--font-display);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.bb-kicker > span:first-child {
+  color: var(--brass);
+  font-variant-numeric: tabular-nums;
+}
+
+/* A standalone label — small display capitals with a lozenge before them.
+   The lozenge is the okir terminal reduced to its smallest possible mark. */
+.bb-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+
+.bb-label::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  flex: none;
+  background: currentColor;
+  transform: rotate(45deg);
+}
+
+/* The same, ranged right — the mirror for a two-ended header row. */
+.bb-label-end::before {
+  display: none;
+}
+
+.bb-label-end::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  flex: none;
+  background: currentColor;
+  transform: rotate(45deg);
+}
+
+/* ============================================================
+   Ornament
+
+   Two motifs, both from cloth and brass rather than invented for the
+   site. They are backgrounds, never content, so both are drawn in
+   `--brass-line` and neither carries meaning a reader would miss.
+   ============================================================ */
+
+/* ---- Pis siyabit lattice ----
+
+   The Tausug head-cloth is built from nested diamonds stepping across a
+   grid. Reduced to two nested outlines it tiles at 64px and reads as woven
+   texture at arm's length and as nothing at all at a glance, which is what a
+   ground should do. `currentColor` is not available inside a data URI, so
+   the stroke is written out and the whole layer is faded with opacity. */
+.bb-lattice {
+  position: relative;
+  isolation: isolate;
+}
+
+.bb-lattice::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23a8813f' stroke-width='1' stroke-opacity='0.34'%3E%3Cpath d='M32 0 L64 32 L32 64 L0 32 Z'/%3E%3Cpath d='M32 14 L50 32 L32 50 L14 32 Z'/%3E%3Cpath d='M32 27 L37 32 L32 37 L27 32 Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 64px 64px;
+  -webkit-mask-image: radial-gradient(
+    ellipse 80% 70% at 50% 40%,
+    #000 0%,
+    transparent 78%
+  );
+  mask-image: radial-gradient(
+    ellipse 80% 70% at 50% 40%,
+    #000 0%,
+    transparent 78%
+  );
+}
+
+/* A quieter cut, for a ground that already has a lot going on — the footer,
+   mainly, where the weave sits under a medallion and three columns of links.
+   Held at half the standard strength: enough to read as cloth at arm's
+   length, not enough to be the first thing the eye finds. */
+.bb-lattice-soft::before {
+  opacity: 0.25;
+}
+
+:root[data-theme="dark"] .bb-lattice::before,
+.bb-ground .bb-lattice::before,
+.bb-crimson .bb-lattice::before {
+  opacity: 0.34;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23d3a95f' stroke-width='1' stroke-opacity='0.36'%3E%3Cpath d='M32 0 L64 32 L32 64 L0 32 Z'/%3E%3Cpath d='M32 14 L50 32 L32 50 L14 32 Z'/%3E%3Cpath d='M32 27 L37 32 L32 37 L27 32 Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Declared last of the lattice rules so it wins on source order inside a
+   `.bb-ground` or `.bb-crimson` band, which set their own stronger value. */
+:root[data-theme="dark"] .bb-lattice-soft::before,
+.bb-ground .bb-lattice-soft::before,
+.bb-crimson .bb-lattice-soft::before {
+  opacity: 0.17;
+}
+
+/* ---- The weave band ----
+
+   A malong's warp reduced to a band of vertical strokes at uneven weights.
+   Used as a seam between two sections where a 1px rule would be too quiet
+   and a full okir rule too loud. */
+.bb-weave {
+  height: 7px;
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--brass-line) 0 1px,
+    transparent 1px 4px,
+    var(--brass-line) 4px 5px,
+    transparent 5px 7px
+  );
+  opacity: 0.75;
+}
+
+/* ---- Grain ----
+
+   Flat black bands at this size band badly on a phone screen; the noise
+   breaks the gradient up. Kept very fine and blended rather than laid over,
+   so it never reads as a texture in its own right. */
+.bb-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.42;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+}
+
+/* ---- Warm glow ----
+
+   A single soft radial behind a masthead, in the brass rather than in a
+   neutral, so the top of a page reads as lit rather than as tinted. */
+.bb-glow {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 999px;
+  filter: blur(64px);
+  opacity: 0.5;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--brass) 55%, transparent) 0%,
+    transparent 70%
+  );
+}
+
+.bb-glow-crimson {
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--accent) 45%, transparent) 0%,
+    transparent 70%
+  );
+}
+
+/* ============================================================
+   Surfaces
+   ============================================================ */
+
+/* ---- The plate ----
+
+   The one card shape on the site. Square, on the paper's own second step,
+   with a brass hairline at the top edge only — a full four-sided border on a
+   page that already has hairline dividers reads as a second grid fighting the
+   first. It lifts on hover rather than tinting, because these are usually
+   photographs and a tint under a photograph does nothing. */
+.bb-plate {
+  transition:
+    background-color 0.3s var(--ease-editorial),
+    transform 0.5s var(--ease-editorial),
+    box-shadow 0.5s var(--ease-editorial);
+}
+
+.bb-plate-link:hover {
+  background: var(--paper-3);
+}
+
+/* ---- The frame ----
+
+   The wrapper around every photograph; the <img> inside is the only child
+   that scales. `overflow: clip` rather than `hidden` so the frame never
+   becomes a scroll container — a `hidden` ancestor silently captures anchor
+   jumps and `scrollIntoView` from anything nested inside it. */
+/* Layered, unlike almost everything else in this file, and deliberately.
+
+   The type primitives here are unlayered so they beat Tailwind utilities —
+   `text-sm` must not override `.bb-label`'s size. That is the right call for
+   type and the wrong one for layout: an unlayered `position: relative` beats
+   `absolute`, silently, with no warning and no visual clue beyond the element
+   ending up in the wrong place. The photo cluster on the landing site was
+   composed of three `.bb-frame` plates positioned with `absolute right-0` and
+   the like, every one of which the browser quietly resolved to `relative` and
+   laid out in flow.
+
+   So the frame's own layout properties go in `components`, which utilities
+   beat. Nothing about a frame needs to win against a utility: a caller asking
+   for `absolute`, or for a different overflow or ground, should get it. */
+@layer components {
+  .bb-frame,
+  .dsc-frame {
+    position: relative;
+    overflow: clip;
+    background: var(--paper-3);
+  }
+
+  .bb-plate {
+    position: relative;
+    background: var(--paper-2);
+    border-top: 1px solid var(--brass-line);
+  }
+
+  .bb-bar {
+    display: flex;
+    height: 0.9rem;
+    overflow: clip;
+    background: var(--rule-soft);
+  }
+}
+
+.bb-frame img,
+.dsc-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* A very slow drift over a wide crop. The scale is what buys the room to
+   move — at 1.0 the translate would expose an edge. */
+@keyframes bb-drift {
+  from {
+    transform: scale(1.06) translate3d(-1%, 0.6%, 0);
+  }
+  to {
+    transform: scale(1.16) translate3d(1.4%, -1%, 0);
+  }
+}
+
+.bb-drift img,
+.dsc-kenburns img {
+  animation: bb-drift 30s var(--ease) infinite alternate;
+}
+
+.bb-zoom img,
+.dsc-zoom img {
+  transition: transform 0.8s var(--ease-editorial);
+}
+
+.group:hover .bb-zoom img,
+.bb-zoom:hover img,
+.group:hover .dsc-zoom img,
+.dsc-zoom:hover img {
+  transform: scale(1.06);
+}
+
+/* ---- Scrims ----
+
+   Display type over a photograph needs a floor under it, or the contrast is
+   whatever the sky happened to be. Two stops at the bottom, one at the top
+   for the header to sit on. Warmed a few points off neutral so the dark
+   never goes blue against the paper. */
+.bb-scrim::after,
+.dsc-scrim::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(12, 10, 8, 0.92) 0%,
+    rgba(12, 10, 8, 0.74) 26%,
+    rgba(12, 10, 8, 0.46) 52%,
+    rgba(12, 10, 8, 0.24) 74%,
+    rgba(12, 10, 8, 0.48) 100%
+  );
+}
+
+.bb-scrim-soft::after,
+.dsc-scrim-soft::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(12, 10, 8, 0.85) 0%,
+    rgba(12, 10, 8, 0.3) 46%,
+    rgba(12, 10, 8, 0) 76%
+  );
+}
+
+/* ---- Credit ----
+
+   Attribution is a licence condition, not a nicety, so it rides on the frame
+   rather than sitting in a colophon. Collapsed to a corner mark; the full
+   line opens on hover or keyboard focus. */
+.dsc-credit {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(12, 10, 8, 0.62);
+  backdrop-filter: blur(6px);
+}
+
+.dsc-credit-mark {
+  flex: none;
+  padding: 0.45rem 0.6rem;
+  line-height: 1;
+}
+
+.dsc-credit-body {
+  display: grid;
+  grid-template-columns: 0fr;
+  transition: grid-template-columns 0.45s var(--ease-editorial);
+}
+
+.dsc-credit-body > span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  font-size: 10.5px;
+}
+
+.dsc-credit:hover .dsc-credit-body,
+.dsc-credit:focus-visible .dsc-credit-body,
+.dsc-frame:hover .dsc-credit-body,
+.bb-frame:hover .dsc-credit-body {
+  grid-template-columns: 1fr;
+}
+
+.dsc-credit-body > span > span {
+  display: block;
+  padding: 0.45rem 0.7rem 0.45rem 0;
+}
+
+/* A locator over a frame — where, before what. Brass rather than crimson: it
+   is a label, and the crimson is spent on the one thing per screen that is
+   actually being pointed at. */
+.bb-locator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  padding: 0.4rem 0.7rem;
+  background: var(--brass);
+  color: #17140d;
+  font-family: var(--font-display);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   Controls
+
+   Square, because everything else on the page is. The shared file's
+   `.btn` is a pill and stays that way for the workspaces; these are the
+   editorial cuts and are used on this site instead.
+   ============================================================ */
+
+.bb-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.95rem 1.5rem;
+  border: 1px solid transparent;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    color 0.32s var(--ease-swift),
+    border-color 0.32s var(--ease-swift);
+}
+
+/* The fill wipes up from the bottom edge rather than fading in, so the button
+   answers in the same direction the eye is already travelling down the page. */
+.bb-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  transition: transform 0.42s var(--ease-editorial);
+}
+
+.bb-btn:hover::before,
+.bb-btn:focus-visible::before {
+  transform: scaleY(1);
+}
+
+.bb-btn-solid {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.bb-btn-solid::before {
+  background: var(--accent);
+}
+
+.bb-btn-solid:hover,
+.bb-btn-solid:focus-visible {
+  color: #fff;
+}
+
+.bb-btn-accent {
+  background: var(--accent);
+  color: #fff;
+}
+
+.bb-btn-accent::before {
+  background: var(--ink);
+}
+
+.bb-btn-ghost {
+  border-color: var(--brass-line);
+  color: var(--ink-2);
+}
+
+.bb-btn-ghost::before {
+  background: var(--ink);
+}
+
+.bb-btn-ghost:hover,
+.bb-btn-ghost:focus-visible {
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+.bb-btn-brass {
+  background: var(--brass);
+  color: #17140d;
+}
+
+.bb-btn-brass::before {
+  background: var(--ink);
+}
+
+.bb-btn-brass:hover,
+.bb-btn-brass:focus-visible {
+  color: var(--paper);
+}
+
+/* An arrow inside a button travels with the fill. */
+.bb-btn svg {
+  transition: transform 0.42s var(--ease-editorial);
+}
+
+.bb-btn:hover svg {
+  transform: translateX(3px);
+}
+
+/* A pill of metadata — what a chapter contains, what a workspace covers. */
+.bb-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid var(--rule);
+  padding: 0.3rem 0.6rem;
+  font-family: var(--font-display);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  white-space: nowrap;
+  transition:
+    border-color 0.28s var(--ease),
+    color 0.28s var(--ease),
+    background-color 0.28s var(--ease);
+}
+
+.group:hover .bb-chip {
+  border-color: var(--brass-line);
+  color: var(--brass);
+}
+
+/* ============================================================
+   Navigation
+
+   The bar takes the page's vocabulary: square edges, small display
+   capitals, and a rule that draws itself under the label rather than a
+   tinted lozenge appearing behind it. The rule grows from the left, so
+   the motion points along the row the way reading does.
+   ============================================================ */
+
+.nav-item {
+  position: relative;
+  padding: 0.5rem 0.85rem;
+  font-family: var(--font-display);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  transition: color 0.18s var(--ease);
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0.85rem;
+  right: 0.85rem;
+  bottom: 0.15rem;
+  height: 1.5px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.28s var(--ease-swift);
+}
+
+.nav-item:hover,
+.nav-item[data-active="true"],
+.nav-item[data-open="true"] {
+  color: var(--ink);
+}
+
+.nav-item:hover::after,
+.nav-item[data-active="true"]::after,
+.nav-item[data-open="true"]::after {
+  transform: scaleX(1);
+}
+
+.nav-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.7rem 0.85rem;
+  font-size: 0.875rem;
+  color: var(--ink-2);
+  transition:
+    background-color 0.16s var(--ease),
+    color 0.16s var(--ease),
+    padding-left 0.22s var(--ease-swift);
+}
+
+.nav-menu-item:hover {
+  background: var(--paper-2);
+  color: var(--ink);
+  padding-left: 1.15rem;
+}
+
+/* The reading-progress hairline under the bar. Width is a scaleX driven by
+   the library from the document's own scroll, so it needs no width here. */
+.bb-progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  transform-origin: left center;
+  background: linear-gradient(
+    to right,
+    var(--accent),
+    var(--brass)
+  );
+}
+
+/* ============================================================
+   Index rows
+
+   A list of chapters or workspaces as an agency index: a number, the
+   word at display size, and — while the pointer is on the row — the
+   photograph of that chapter washed in behind it. On a phone there is
+   no hover and no room, so the same markup falls back to a thumbnail
+   in the row.
+   ============================================================ */
+
+.bb-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1.25rem;
+  border-top: 1px solid var(--rule);
+  padding-block: clamp(1.5rem, 3.4vw, 2.6rem);
+  transition: padding-left 0.55s var(--ease-editorial);
+}
+
+.bb-row:last-of-type {
+  border-bottom: 1px solid var(--rule);
+}
+
+.bb-row-word {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.038em;
+  font-size: clamp(1.9rem, 5.6vw, 4.5rem);
+  color: var(--ink);
+  transition: color 0.35s var(--ease);
+}
+
+/* The chapter's photograph, washed in behind its own row on hover.
+ *
+ * It arrives rather than appears: the picture is already at 1.06 and settles
+ * to 1 as it fades up, which is the difference between a photograph being
+ * revealed and an image being switched on.
+ *
+ * Legibility is not left to a low opacity. The picture runs at full strength
+ * and a wash of the page's own ground is laid over it — opaque at the left
+ * where the number, the word and the blurb sit, clearing toward the right
+ * where the row is empty. Because the wash is `--paper`, it follows the theme:
+ * on the dark cut the same gradient darkens instead of lightening, and the
+ * type stays readable without a second rule.
+ */
+.bb-row-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: clip;
+  opacity: 0;
+  transform: scale(1.06);
+  transition:
+    opacity 0.55s var(--ease),
+    transform 0.9s var(--ease-editorial);
+}
+
+.bb-row:hover .bb-row-bg,
+.bb-row:focus-visible .bb-row-bg {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.bb-row-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    var(--paper) 0%,
+    color-mix(in srgb, var(--paper) 94%, transparent) 40%,
+    color-mix(in srgb, var(--paper) 62%, transparent) 62%,
+    color-mix(in srgb, var(--paper) 22%, transparent) 100%
+  );
+}
+
+.bb-row-bg img {
+  object-fit: cover;
+}
+
+/* The brass wash that runs in behind a hovered row, from the left edge. It is
+   what replaces the flat tint — a tint says "target", a wash that arrives says
+   "this one". */
+.bb-row::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left center;
+  background: linear-gradient(
+    to right,
+    color-mix(in srgb, var(--brass) 12%, transparent),
+    transparent 70%
+  );
+  transition: transform 0.6s var(--ease-editorial);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .bb-row:hover {
+    padding-left: clamp(0.75rem, 2vw, 2rem);
+  }
+
+  .bb-row:hover::before {
+    transform: scaleX(1);
+  }
+
+  .bb-row:hover .bb-row-word {
+    color: var(--accent);
+  }
+}
+
+/* ============================================================
+   Figures
+   ============================================================ */
+
+.bb-figure {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 0.88;
+  letter-spacing: -0.045em;
+  font-size: clamp(2.6rem, 6.2vw, 5.25rem);
+  font-variant-numeric: tabular-nums;
+}
+
+.bb-figure-sm {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- The seat bar ----
+
+   Widths come from the data, so the bar is the figure rather than a picture
+   of one. Segments grow from the left on reveal, staggered, so the bar reads
+   as being filled rather than as having appeared. */
+.bb-bar-seg {
+  transform-origin: left center;
+  transition: filter 0.3s var(--ease);
+}
+
+.bb-bar-seg:hover {
+  filter: brightness(1.15);
+}
+
+/* ============================================================
+   Prose
+
+   The chapter body. One measure, one leading, and two devices —
+   a drop cap on the lede and a pull quote between sections — because
+   three thousand words of 15px grey is the thing this redesign exists
+   to stop.
+   ============================================================ */
+
+.bb-lede {
+  font-family: var(--font-body);
+  font-size: clamp(1.3rem, 2.6vw, 2rem);
+  font-weight: 400;
+  line-height: 1.42;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  text-wrap: pretty;
+}
+
+/* The drop cap. `initial-letter` where it is supported, which is everywhere
+   that matters now; the float fallback underneath keeps the letter large and
+   in the right place where it is not, rather than leaving a 2rem capital
+   sitting on the baseline. */
+.bb-dropcap::first-letter {
+  -webkit-initial-letter: 3;
+  initial-letter: 3;
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--accent);
+  margin-right: 0.12em;
+}
+
+@supports not (initial-letter: 3) {
+  .bb-dropcap::first-letter {
+    float: left;
+    font-size: 3.4em;
+    line-height: 0.82;
+    padding-top: 0.06em;
+    padding-right: 0.08em;
+  }
+}
+
+/* The reading measure.
+ *
+ * About 68 characters. Prose on these pages was running to between 88 and 96 a
+ * line at desktop width, which is fine for a table row and punishing for six
+ * paragraphs — the eye loses the start of the next line on the way back from
+ * the end of the last one.
+ *
+ * `em`, not `ch`, and the difference is not academic. `ch` is the advance of
+ * the digit zero, which in DM Sans is 0.68em, while the average advance of
+ * running lowercase is nearer 0.5em. `68ch` therefore sets a line that fits
+ * about ninety-three characters, not sixty-eight — it reads as the right
+ * instruction and does almost nothing. 34em is the width sixty-eight
+ * characters of this face actually occupy.
+ *
+ * It still scales with the type, which is the property worth having: a section
+ * set a size larger stays the same number of characters wide, and character
+ * count is what governs whether a paragraph reads. */
+.bb-measure {
+  max-width: 34em;
+}
+
+.bb-prose {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.78;
+  max-width: 34em;
+  color: var(--ink-2);
+  text-wrap: pretty;
+}
+
+.bb-prose p + p {
+  margin-top: 1.35rem;
+}
+
+/* A pull quote. Set in the display face at a size between the lede and a
+   heading, with a brass rule down its left edge — the only place on the site
+   a vertical rule is used, so it cannot be mistaken for structure. */
+.bb-quote {
+  border-left: 2px solid var(--brass);
+  padding-left: clamp(1.25rem, 3vw, 2.5rem);
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+/* ============================================================
+   The timeline
+
+   A rail down the left with a fill that tracks the scroll. The fill is
+   driven by the library rather than by `animation-timeline`, because it
+   has to stay in step with the markers beside it and a scroll-driven
+   CSS animation cannot tell the markers anything.
+   ============================================================ */
+
+.bb-rail {
+  position: absolute;
+  inset-block: 0;
+  left: 0;
+  width: 1px;
+  background: var(--rule);
+}
+
+.bb-rail-fill {
+  position: absolute;
+  inset: 0;
+  transform-origin: top center;
+  background: linear-gradient(
+    to bottom,
+    var(--accent),
+    var(--brass)
+  );
+}
+
+/* The marker on each event. It sits on the rail, so it needs its own ground
+   colour to punch a hole in the line behind it. */
+.bb-node {
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  z-index: 1;
+  width: 11px;
+  height: 11px;
+  transform: translateX(-50%) rotate(45deg);
+  background: var(--paper);
+  border: 1.5px solid var(--ink-3);
+  transition:
+    background 0.35s var(--ease),
+    border-color 0.35s var(--ease),
+    transform 0.45s var(--ease-editorial);
+}
+
+.bb-event:hover .bb-node {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: translateX(-50%) rotate(45deg) scale(1.4);
+}
+
+/* The era, set large and sticky so it hangs beside its own paragraph for as
+   long as that paragraph is being read. */
+.bb-era {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  font-size: clamp(1.4rem, 2.8vw, 2.15rem);
+  line-height: 1;
+  color: var(--accent);
+}
+
+/* The description voice.
+ *
+ * Card blurbs, row notes, section leads, the sentence under a heading — every
+ * paragraph on the estate that is explaining rather than arguing. They had
+ * drifted across seven sizes between 13px and 17px, set per call site, so two
+ * descriptions sitting in adjacent columns were routinely a point apart.
+ *
+ * The size is the one the closing panel's standfirst was already using, which
+ * is the largest of them: descriptions were being set small to fit, and what
+ * that mostly achieved was making the site harder to read.
+ *
+ * It sets size and leading only. Colour stays a utility at the call site —
+ * these run on paper and over photographs, and there is no one ink for both.
+ */
+.bb-body {
+  font-size: 15.5px;
+  line-height: var(--leading-body);
+}
+
+/* ---- Scroll cue ---- */
+
+@keyframes bb-cue {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translateY(7px);
+    opacity: 1;
+  }
+}
+
+.bb-cue {
+  animation: bb-cue 2.2s var(--ease) infinite;
+}
+
+/* ============================================================
+   Reduced motion
+
+   Everything above is decoration on content that is already there.
+   Under a reduced-motion preference all of it stops; nothing is
+   hidden, because nothing was only visible because it moved. The
+   library's own animations are handled by `MotionProvider`, which sets
+   `reducedMotion="user"`, rather than here.
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .bb-drift img,
+  .bb-cue {
+    animation: none;
+  }
+
+  .nav-item::after,
+  .nav-menu-item,
+  .bb-row-bg,
+  .bb-row,
+  .bb-row::before,
+  .bb-row-word,
+  .bb-node,
+  .bb-plate,
+  .bb-btn,
+  .bb-btn::before,
+  .bb-btn svg,
+  .bb-chip,
+  .bb-zoom img,
+  .bb-bar-seg {
+    transition: none;
+  }
+
+  .bb-row:hover {
+    padding-left: 0;
+  }
+
+  .bb-btn::before {
+    display: none;
+  }
+}

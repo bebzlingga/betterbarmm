@@ -182,7 +182,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 			{/* Less air above the search than below it: the masthead already closes
 			    with its own bottom padding, and stacked the two ran to nearly a
 			    hundred pixels of nothing between the description and the field. */}
-			<section className='mx-auto max-w-[88rem] px-6 pb-12 pt-6 sm:pt-12 lg:px-8'>
+			<section className='bb-container pb-12 pt-6 sm:pt-12'>
 				{/* The facets live in a column of their own, opened from the button
 				    beside the search: on a registry they are half the point, and the
 				    column sticks while the list scrolls past it.
@@ -236,7 +236,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 								onClick={() => setFiltersOpen((current) => !current)}
 								aria-expanded={filtersOpen}
 								aria-controls='record-filters'
-								className='btn btn-quiet btn-field order-2 h-11 shrink-0 sm:order-none'
+								className='bb-btn bb-btn-ghost btn-field order-2 h-11 shrink-0 sm:order-none'
 							>
 								{/* The icon says what the button will do next: a funnel to
 								    open the facets, a cross to put them away. */}
@@ -526,7 +526,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 									<button
 										type='button'
 										onClick={() => setPageCount((current) => current + 1)}
-										className='btn btn-quiet'
+										className='bb-btn bb-btn-ghost'
 									>
 										Show {Math.min(PAGE_SIZE, remaining)} more
 										<svg
@@ -555,12 +555,12 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 									<p className='font-title text-base font-medium text-[var(--ink)]'>
 										Nothing matches this view.
 									</p>
-									<p className='mx-auto mt-2 max-w-md text-sm leading-6 text-[var(--ink-3)]'>
+									<p className='mx-auto mt-2 max-w-md bb-body text-[var(--ink-3)]'>
 										Try a broader search term, or clear a filter or two. The registry doesn&rsquo;t
 										yet cover {category.label.toLowerCase()} outside{' '}
 										{dataset.metadata.coverage.toLowerCase()}.
 									</p>
-									<button type='button' onClick={clearAll} className='btn btn-quiet mt-6'>
+									<button type='button' onClick={clearAll} className='bb-btn bb-btn-ghost mt-6'>
 										Clear everything
 									</button>
 								</div>

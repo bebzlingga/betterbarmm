@@ -1,0 +1,14 @@
+{
+	"name": "@betterbarmm/editorial",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts",
+		"./styles.css": "./src/styles.css"
+	},
+	"peerDependencies": {
+		"motion": "^13.1.1",
+		"react": "^19.0.0"
+	}
+}

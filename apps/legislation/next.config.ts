@@ -1,7 +1,7 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-	transpilePackages: ['@betterbarmm/ui'],
+	transpilePackages: ['@betterbarmm/ui', '@betterbarmm/editorial'],
 	experimental: {
 		externalDir: true,
 	},
@@ -18,6 +18,17 @@ const nextConfig: NextConfig = {
 			// Journal's nominal-voting rule and more appeared on both. They are
 			// one page now.
 			{ source: '/rules', destination: '/how-parliament-works', permanent: true },
+			// And the same again for the two pages beside it. How a bill moves,
+			// and what the job of a member is, are questions about the same
+			// chamber — asked by the same reader, in the same sitting. Splitting
+			// them across three pages meant the calendar, the conflict-of-interest
+			// bar and the committee stage were each written out twice.
+			{
+				source: '/legislative-process',
+				destination: '/how-parliament-works#the-bill-path',
+				permanent: true,
+			},
+			{ source: '/what-members-do', destination: '/how-parliament-works#the-job', permanent: true },
 		]
 	},
 }

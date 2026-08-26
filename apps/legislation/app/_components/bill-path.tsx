@@ -44,7 +44,7 @@ export function BillPath({ id }: { id: string }) {
 
 								{step.publicAction ? (
 									<div className='mt-6 border-t border-[var(--rule-soft)] pt-5'>
-										<p className='text-sm leading-6 text-[var(--ink-2)]'>
+										<p className='bb-body text-[var(--ink-2)]'>
 											{step.publicAction.text}
 										</p>
 										<a
@@ -52,7 +52,7 @@ export function BillPath({ id }: { id: string }) {
 											{...(step.publicAction.href.startsWith('http')
 												? { target: '_blank', rel: 'noreferrer' }
 												: {})}
-											className='btn btn-quiet mt-4'
+											className='bb-btn bb-btn-ghost mt-4'
 										>
 											{step.publicAction.label}
 										</a>

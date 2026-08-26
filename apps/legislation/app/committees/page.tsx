@@ -51,7 +51,7 @@ export default function CommitteesPage() {
 			    the grid is nudged a pixel up and left so the outermost of those are
 			    clipped away. That separates the cells at every breakpoint without
 			    hand-counting which one starts a row or a column. */}
-			<section className='mx-auto max-w-[88rem] px-6 pb-4 lg:px-8'>
+			<section className='bb-container pb-4'>
 				<div className='overflow-hidden border-t border-[var(--rule)]'>
 					<div className='-ml-px -mt-px grid sm:grid-cols-2 lg:grid-cols-3'>
 						{committees.map((committee, index) => (
@@ -65,7 +65,7 @@ export default function CommitteesPage() {
 								style={{ '--row-index': index } as React.CSSProperties}
 								className='row-in relative flex h-full flex-col border-l border-t border-[var(--rule)] p-6 transition hover:bg-[var(--paper-2)] sm:p-8 lg:p-10'
 							>
-								<h2 className='item-title text-[var(--ink)]'>
+								<h2 className='text-[1.35rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 									<Link
 										href={`/committees/${committee.slug}`}
 										className='after:absolute after:inset-0 after:content-[""]'
@@ -92,7 +92,7 @@ export default function CommitteesPage() {
 
 								{/* The committee's own words on what it covers, trimmed to a few
 								    lines — the full statement is on its page. */}
-								<p className='mt-3.5 line-clamp-4 text-[13px] leading-6 text-[var(--ink-2)]'>
+								<p className='mt-3.5 line-clamp-4 bb-body text-[var(--ink-2)]'>
 									{committee.jurisdiction}
 								</p>
 
@@ -121,7 +121,7 @@ export default function CommitteesPage() {
 			</section>
 
 			{/* ---- What a committee does ---- */}
-			<section className='mx-auto max-w-[88rem] px-6 py-20 lg:px-8 lg:py-28'>
+			<section className='bb-container border-t border-[var(--rule)] bb-section'>
 				<Reveal>
 					<div>
 						<p className='eyebrow'>What a committee does</p>
@@ -144,62 +144,13 @@ export default function CommitteesPage() {
 									</span>{' '}
 									{stage.label}
 								</p>
-								<p className='mt-2.5 text-[13px] leading-6 text-[var(--ink-2)]'>{stage.detail}</p>
+								<p className='mt-2.5 bb-body text-[var(--ink-2)]'>{stage.detail}</p>
 							</div>
 						</Reveal>
 					))}
 				</div>
 			</section>
 
-			{/* ---- Known gaps ---- */}
-			<section className='mx-auto max-w-[88rem] px-6 pb-20 pt-10 lg:px-8 lg:pt-16'>
-				<Reveal>
-					<div className='grid gap-8 pt-12 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:gap-12'>
-						<div className='lg:pr-8 xl:pr-16'>
-							<p className='eyebrow'>Coverage</p>
-							<h2 className='mt-3 text-xl font-semibold leading-tight text-[var(--ink)] sm:text-2xl'>
-								Known gaps in this dataset
-							</h2>
-							<p className='mt-4 text-sm leading-6 text-[var(--ink-2)]'>
-								{stats.membersSeated} members of the roster hold at least one of the{' '}
-								{stats.seated.toLocaleString()}{' '}
-								seats recorded here. Membership is read from each committee&rsquo;s own page, so it is
-								current as of capture and nothing more.
-							</p>
-							<p className='meta-sm mt-8'>
-								Sources:{' '}
-								<a href={dataset.source} target='_blank' rel='noreferrer' className='rule-link'>
-									committee pages
-								</a>{' '}
-								and{' '}
-								<a
-									href={dataset.reportsSource}
-									target='_blank'
-									rel='noreferrer'
-									className='rule-link'
-								>
-									committee reports
-								</a>
-								, fetched {dataset.generatedAt}
-							</p>
-						</div>
-
-						<ol className='grid content-start'>
-							{dataset.knownGaps.map((gap, index) => (
-								<li
-									key={index}
-									className='flex gap-4 border-b border-[var(--rule-soft)] py-4 first:pt-0 last:border-0 last:pb-0 sm:gap-6'
-								>
-									<span className='num shrink-0 text-[13px] leading-6 text-[var(--ink-mute)]'>
-										{String(index + 1).padStart(2, '0')}
-									</span>
-									<p className='text-[13px] leading-6 text-[var(--ink-3)]'>{gap}</p>
-								</li>
-							))}
-						</ol>
-					</div>
-				</Reveal>
-			</section>
 		</>
 	)
 }

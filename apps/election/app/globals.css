@@ -1,5 +1,12 @@
 @import "tailwindcss";
 @import "@betterbarmm/ui/styles.css";
+@import "@betterbarmm/editorial/styles.css";
+
+/* Tailwind v4 finds its classes by walking out from this file, which stops at
+   the app. The editorial package sits outside it and its components carry
+   utility classes of their own, so it has to be pointed at explicitly or those
+   classes are never generated. */
+@source "../../../packages/editorial/src";
 
 .timeline-scroll {
   -ms-overflow-style: none;

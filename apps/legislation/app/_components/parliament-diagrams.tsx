@@ -101,7 +101,7 @@ export function SittingCalendar() {
 				</div>
 			</div>
 
-			<figcaption className='mt-5 flex flex-wrap gap-x-6 gap-y-2 text-[13px] leading-6 text-[var(--ink-3)]'>
+			<figcaption className='mt-5 flex flex-wrap gap-x-6 gap-y-2 bb-body text-[var(--ink-3)]'>
 				<span className='flex items-center gap-2'>
 					<span className='size-3 rounded-[3px] bg-[var(--accent-soft)]' aria-hidden='true' />
 					Plenary sits, from 1:00 pm
@@ -195,7 +195,7 @@ export function VoteComparison() {
 						</span>
 					</div>
 
-					<p className='mt-3 text-[13px] leading-5 text-[var(--ink-3)]'>{panel.note}</p>
+					<p className='mt-3 bb-body text-[var(--ink-3)]'>{panel.note}</p>
 				</div>
 			))}
 		</figure>

@@ -16,7 +16,7 @@ export function ReadingColumn({
 	children: React.ReactNode
 }) {
 	return (
-		<div className='mx-auto max-w-[88rem] px-6 pb-20 lg:px-8'>
+		<div className='bb-container pb-20'>
 			<div className='gap-x-16 lg:grid lg:grid-cols-[minmax(0,1fr)_13rem] xl:gap-x-24'>
 				{/* Hairlines between the sections. Ranged left the headings no longer
 				    have space either side to separate them, so the rules do it. */}

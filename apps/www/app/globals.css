@@ -1,15 +1,648 @@
 @import "tailwindcss";
 @import "@betterbarmm/ui/styles.css";
+@import "@betterbarmm/editorial/styles.css";
+
+/* Tailwind v4 finds its classes by walking out from this file, which stops at
+   the app. The editorial package sits outside it and its components carry
+   utility classes of their own, so it has to be pointed at explicitly or those
+   classes are never generated. */
+@source "../../../packages/editorial/src";
 
 /* ============================================================
-   BetterBARMM landing site
+   The page ground
 
-   The visual language — tokens, type primitives, badges, chips,
-   controls, surfaces, and motion — lives in `@betterbarmm/ui`, shared
-   with the registry and the other workspaces.
+   Two thirds of the way from the shared warm paper to white. The
+   editorial layer runs `#fbf9f5`, which reads as cream on a large
+   screen; pure white read as clinical, and did the thing the shared
+   palette warns about — a warm-toned photograph on a pure white
+   canvas looks grubby by comparison, and this is the site carrying
+   the photographs. This keeps a couple of points of warmth, enough
+   that the pictures and the brass still sit on something, and not
+   enough to read as a colour.
 
-   Anything genuinely local to this site belongs here. Right now that is
-   nothing: the landing site and the registry are the same system. Leave
-   the file rather than delete it, so site-specific rules have an obvious
-   home when one is needed.
+   Scoped here rather than changed at the token, so the workspaces —
+   the registry, the election and budget rooms — keep the ground they
+   were designed on.
+
+   `--paper-2` and `--paper-3` are left where they are on purpose:
+   they are the hover tint and the sunken surface, and they need to
+   read as a step away from the page rather than as a second white.
    ============================================================ */
+
+:root {
+  --paper: #fdfcfa;
+}
+
+/* ============================================================
+   Discover BARMM — what is local to this site
+
+   The shared visual language — tokens, display type, ornament,
+   surfaces, controls, motion — is in `@betterbarmm/editorial`,
+   imported above and shared with the legislation registry.
+
+   What is left here is the part only this site has: the running band
+   of names, the picture wall, the lightbox, the local-government
+   directory's tabs, and the compatibility names the older Discover
+   markup still uses. None of it is wanted by a register of bills.
+   ============================================================ */
+
+/* ============================================================
+   The marquee
+
+   Two identical tracks side by side, the pair translated by exactly
+   half its own width. That is what makes the seam invisible: at -50%
+   the second copy is sitting precisely where the first one started.
+
+   `width: max-content` on the mover is load-bearing — a percentage
+   translate resolves against the element's own width, so the track has
+   to size to its contents rather than to the viewport.
+   ============================================================ */
+
+.dsc-marquee {
+  position: relative;
+  overflow: clip;
+  border-block: 1px solid var(--brass-line);
+  padding-block: 1.15rem;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+}
+
+.dsc-marquee-mover {
+  display: flex;
+  width: max-content;
+  animation: dsc-marquee var(--dsc-marquee-duration, 48s) linear infinite;
+}
+
+/* It does not stop for a pointer. Pausing on hover meant the band halted every
+   time the cursor crossed it on the way to the nav above, which read as the
+   animation breaking rather than as a control. Focus still stops it — a tab
+   landing on a moving row is a different problem. */
+.dsc-marquee:focus-within .dsc-marquee-mover {
+  animation-play-state: paused;
+}
+
+/* The track carries the size, and every gap in the band is the same one.
+ *
+ * A name and the diamond after it were one flex pair with a gap of their own,
+ * and the space between pairs came from the track — 0.55em against 2.5rem. So
+ * each diamond sat hard against the word on its left with five times that much
+ * air before the next one, and a mark that is supposed to separate two names
+ * read as punctuation belonging to the first. The three gaps are now one value,
+ * which is what puts the diamond at the midpoint of the two words either side.
+ *
+ * The size moves here from the pair so `em` means the same thing in all of
+ * them: the track's gap, the pair's gap, and the offsets on the mark itself
+ * resolve against the size of the words they are spacing.
+ *
+ * `padding-right` is that same gap once more, at the end of the track. It is
+ * the join between the two copies, and if it were any other value the loop
+ * would show a seam every time it came round. */
+.dsc-marquee-track {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 0.9em;
+  padding-right: 0.9em;
+  font-size: clamp(1.05rem, 2.1vw, 1.7rem);
+}
+
+/* The diamond has to sit on the optical centre of the capitals beside it, and
+ * `align-items: center` cannot put it there: it centres against the line box,
+ * which carries the descender space under the baseline and whatever the font's
+ * default line-height adds above the ascender. Every name in this band is set
+ * in capitals, so that centre is always low, and low by an amount that moves
+ * with the line-height rather than with the type.
+ *
+ * Aligning on the baseline instead makes it arithmetic — both marks are
+ * measured from one shared line, and the mark's own offset is worked out
+ * against it below. */
+.dsc-marquee-pair {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9em;
+}
+
+/* Black weight, held back in colour. The two pull against each other on
+   purpose: 900 gives the band the presence of a masthead, and taking the ink
+   right down stops it becoming the darkest thing on the page and pulling the
+   eye off whatever sits above. Weight carries the letterforms,
+   colour decides how loudly they speak — the band is meant to be read in
+   passing, not competing with the title. `--ink-display` is the lightest step
+   the ink scale has, and it is a step meant for large type — which is what this
+   is. Below it the scale is rules and hairlines, not text. */
+.dsc-marquee-item {
+  font-family: var(--font-display);
+  font-size: inherit;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  color: var(--ink-display);
+}
+
+/* Every other item is set as an outline rather than a solid, so the band has a
+   rhythm instead of reading as one continuous wall of black. The stroke follows
+   the solids to `--ink-display` — left any darker it would be the heavier of
+   the two and the alternation would read backwards. It is held at a full pixel
+   rather than scaled down with the colour: a hairline this pale is the first
+   thing to disappear, and the outline is carrying a name, not an ornament. */
+.dsc-marquee-item[data-quiet="true"] {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--ink-display);
+  -webkit-text-fill-color: transparent;
+}
+
+/* An empty box has no baseline of its own, so flexbox synthesises one from the
+   bottom of its border box — the mark lands sitting on the baseline, its own
+   centre 0.13em above it. Outfit's cap height is 676/1000 of the em, read off
+   the file the site actually serves, which puts the middle of a capital at
+   0.338em. The lift is the difference between the two. Every number here is a
+   font metric rather than a nudge by eye, which is why it holds at both ends of
+   the clamp above. */
+.dsc-marquee-dot {
+  position: relative;
+  top: -0.208em;
+  flex: none;
+  width: 0.26em;
+  height: 0.26em;
+  background: var(--brass);
+  transform: rotate(45deg);
+}
+
+@keyframes dsc-marquee {
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* ============================================================
+   The picture wall
+
+   Three rows that drift past on their own, the middle one against the
+   other two. A static grid asks to be scanned and then finished; a wall
+   in motion reads as a place that keeps going past the edge of the
+   frame, which is nearer the truth about a region of six provinces.
+
+   The seam trick is the marquee's. Direction alternates by reversing
+   the same animation rather than by writing a second keyframe, so both
+   stay in step if the timing changes. Hovering anywhere stops all three
+   rows — not just the row under the cursor, which looked like a fault
+   and left the photograph you were reaching for still moving.
+   ============================================================ */
+
+.dsc-wall {
+  /* Tight. The wall is one continuous surface of photographs, not a grid of
+     cards, and a 40px gutter between tiles turned it back into a grid. At 8px
+     the pictures read as a single moving band. */
+  --dsc-wall-gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--dsc-wall-gap);
+  overflow: clip;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 5%,
+    #000 95%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 5%,
+    #000 95%,
+    transparent
+  );
+}
+
+.dsc-wall-row {
+  overflow: clip;
+}
+
+.dsc-wall-mover {
+  display: flex;
+  width: max-content;
+  animation: dsc-marquee var(--dsc-wall-duration, 70s) linear infinite;
+}
+
+.dsc-wall-mover[data-dir="right"] {
+  animation-direction: reverse;
+}
+
+/* Only a keyboard stops it. Pausing on hover meant the wall halted every time
+   the pointer crossed it on the way to something else, which read as the
+   animation breaking rather than as a control; and a reader who wants to look
+   at one photograph can open it. Focus is a different case — a tab landing on
+   a tile that is still travelling is unusable — so that one still stops. */
+.dsc-wall:focus-within .dsc-wall-mover {
+  animation-play-state: paused;
+}
+
+.dsc-wall-track {
+  display: flex;
+  flex: none;
+  gap: var(--dsc-wall-gap);
+  padding-right: var(--dsc-wall-gap);
+}
+
+.dsc-wall-tile {
+  flex: none;
+  height: clamp(9rem, 17vw, 15.5rem);
+  /* Width follows from the height and the tile's own ratio, set per tile so
+     the row has a rhythm rather than a repeat. */
+  width: auto;
+  aspect-ratio: var(--dsc-ratio, 4 / 3);
+}
+
+/* ============================================================
+   The LGU directory
+   ============================================================ */
+
+.lgu-tab {
+  position: relative;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.95rem 0.9rem;
+  font-family: var(--font-display);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--ink-3);
+  cursor: pointer;
+  transition: color 0.18s var(--ease);
+}
+
+.lgu-tab::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0.5rem;
+  bottom: -1px;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.26s var(--ease-swift);
+}
+
+.lgu-tab:hover,
+.lgu-tab[aria-selected="true"] {
+  color: var(--ink);
+}
+
+.lgu-tab[aria-selected="true"]::after {
+  transform: scaleX(1);
+}
+
+.lgu-tab-badge {
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--ink-mute);
+  font-variant-numeric: tabular-nums;
+}
+
+.lgu-tab[aria-selected="true"] .lgu-tab-badge {
+  color: var(--accent);
+}
+
+/* Term chips. A term with no canvass on record is shown struck through and
+   disabled rather than hidden — the gap in the record is itself information,
+   and a picker offering only the current term would imply there was never
+   anything before it. */
+.lgu-term {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  border: 1px solid var(--rule);
+  padding: 0.4rem 0.7rem;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--ink-3);
+  cursor: pointer;
+  transition:
+    border-color 0.18s var(--ease),
+    background-color 0.18s var(--ease),
+    color 0.18s var(--ease);
+}
+
+.lgu-term:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.lgu-term[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+.lgu-term:disabled {
+  cursor: not-allowed;
+  color: var(--ink-mute);
+  border-style: dashed;
+  text-decoration: line-through;
+  text-decoration-color: var(--rule);
+}
+
+.lgu-term-flag {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  text-decoration: none;
+}
+
+.lgu-stat {
+  border-top: 1px solid var(--brass-line);
+  padding-top: 0.85rem;
+}
+
+.lgu-stat-value {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-size: clamp(1.6rem, 3.2vw, 2.35rem);
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+
+.lgu-stat-label {
+  margin-top: 0.6rem;
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+/* ============================================================
+   The lightbox
+   ============================================================ */
+
+.dsc-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 4vw, 3rem);
+  background: rgba(9, 8, 6, 0.97);
+}
+
+/* ---- Scroll cue ---- */
+
+@keyframes bb-cue {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translateY(7px);
+    opacity: 1;
+  }
+}
+
+.bb-cue,
+.dsc-cue {
+  animation: bb-cue 2.2s var(--ease) infinite;
+}
+
+/* ============================================================
+   Compatibility
+
+   Names the older Discover markup still uses, re-pointed at the
+   editorial primitives above rather than left as a second definition
+   that could drift from them.
+   ============================================================ */
+
+.dsc-display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 0.86;
+  letter-spacing: -0.048em;
+  font-size: clamp(2.6rem, 7.2vw, 6.25rem);
+  text-wrap: balance;
+}
+
+.dsc-display-sm {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 0.96;
+  letter-spacing: -0.034em;
+  font-size: clamp(1.9rem, 4vw, 3.15rem);
+  text-wrap: balance;
+}
+
+.dsc-display-mute {
+  color: var(--ink-display);
+}
+
+.dsc-outline-over {
+  color: transparent;
+  -webkit-text-stroke: 1.6px rgba(255, 255, 255, 0.9);
+  paint-order: stroke fill;
+  filter: drop-shadow(0 2px 16px rgba(8, 8, 6, 0.6));
+}
+
+.dsc-over {
+  text-shadow: 0 2px 28px rgba(8, 8, 6, 0.5);
+}
+
+.dsc-kicker {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  border-top: 1px solid var(--brass-line);
+  padding-top: 0.85rem;
+  font-family: var(--font-display);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.dsc-kicker span:first-child {
+  color: var(--brass);
+}
+
+.dsc-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.42;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+}
+
+/* The old dark section, re-pointed at the editorial ground so the two cannot
+   drift apart. */
+.discover-dark-section {
+  --paper: var(--ground);
+  --paper-2: #1c1912;
+  --paper-3: #272219;
+  --ink: #f7f4ec;
+  --ink-2: #d5cec0;
+  --ink-3: #a9a292;
+  --ink-mute: #8b8474;
+  --ink-display: #6b6353;
+  --accent: #e8796a;
+  --brass: #d3a95f;
+  --brass-line: rgba(211, 169, 95, 0.36);
+  --rule: rgba(247, 244, 236, 0.14);
+  --rule-soft: rgba(247, 244, 236, 0.08);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+/* ============================================================
+   The overlay header's dropdown
+
+   Over a photograph the bar has no ground of its own, so it paints
+   every descendant white. A dropdown panel brings its own paper
+   ground with it, and everything in it came out white on near-white.
+
+   The fix is in the header's own class rather than here: the white
+   is set on `*:not(.nav-menu, .nav-menu *)`, so the panel is never
+   painted in the first place. Overriding it from this file could not
+   work, and it took three tries to see why — the white is a Tailwind
+   utility marked `!important`, and for important declarations the
+   cascade inverts its layer order, which puts unlayered styles last
+   rather than first. No specificity in an unlayered rule can beat an
+   important one inside a layer.
+
+   What is left here is the one thing the panel needs that the shared
+   styles do not give it: a colour for a workspace that has no page
+   yet, which is a row rather than a link.
+   ============================================================ */
+
+.nav-menu .nav-menu-item-idle {
+  color: var(--ink-mute);
+  cursor: default;
+}
+
+.nav-menu .nav-menu-item-idle:hover {
+  background: none;
+  color: var(--ink-mute);
+  padding-left: 0.85rem;
+}
+
+/* ============================================================
+   A chapter opening with no photograph beside it
+
+   The lede and the paragraphs under it were sized for a row they
+   shared with a picture — a 26ch headline and a column of prose at
+   1.1fr of a two-column grid. With the picture gone that leaves the
+   opening at just over half the page with nothing in the other half.
+
+   They take the width the photograph was using instead, stopping at
+   80% so the measure still ends somewhere deliberate rather than at
+   the container's own edge. `.bb-prose` carries a 34em cap in the
+   shared layer, which is what the `max-width` here is overriding.
+   ============================================================ */
+
+@media (min-width: 1024px) {
+  .dsc-wide-measure {
+    max-width: 80%;
+  }
+
+  /* Set in two, because a single column at that width runs past 100 characters
+     a line and the eye stops finding the next one. Two columns land near the
+     65–75 a measure wants while the block keeps the width the photograph used
+     to hold — which is the whole point of taking the width in the first place.
+
+     Applied to the opening paragraph, this splits one paragraph across the two
+     columns, the way a magazine opener does. Applied to a block of them, the
+     paragraph rules below keep the second column's first line level with the
+     first column's. */
+  .dsc-two-column {
+    columns: 2;
+    column-gap: 4rem;
+    /* Balanced rather than filled: with `column-fill: auto` the first column
+       runs to the full height of the block and the second takes whatever is
+       left, which on a three-paragraph opening left one column long and one a
+       third empty. */
+    column-fill: balance;
+    orphans: 2;
+    widows: 2;
+  }
+
+  /* Paragraph spacing moves from the top of a paragraph to its bottom. A
+     paragraph that falls at the head of the second column carries a top margin
+     the column has no use for, and sits a line lower than the one beside it. */
+  .dsc-two-column > p + p {
+    margin-top: 0;
+  }
+
+  .dsc-two-column > p {
+    margin-bottom: 1.35rem;
+  }
+
+  .dsc-two-column > p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* ============================================================
+   Reduced motion
+
+   The shared layer collapses its own animations; this covers the
+   pieces that only exist here. Nothing is hidden — none of it was
+   only visible because it moved.
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .dsc-kenburns img,
+  .dsc-marquee-mover,
+  .dsc-wall-mover,
+  .dsc-cue {
+    animation: none;
+  }
+
+  .lgu-tab,
+  .lgu-tab::after,
+  .lgu-term,
+  .dsc-zoom img,
+  .dsc-credit-body {
+    transition: none;
+  }
+
+  /* A stopped marquee hides everything past the first screenful. Give the row
+     a scrollbar so the rest of the wall is still reachable, and drop the
+     duplicate track that only existed to make the loop seamless. */
+  .dsc-wall-row {
+    overflow-x: auto;
+  }
+
+  .dsc-wall-track[data-clone="true"] {
+    display: none;
+  }
+
+  .dsc-wall {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}

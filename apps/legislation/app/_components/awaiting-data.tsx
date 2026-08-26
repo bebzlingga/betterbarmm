@@ -9,7 +9,7 @@ import { Reveal } from './reveal'
  */
 export function AwaitingData({ category, gaps }: { category: CategoryDefinition; gaps: string[] }) {
 	return (
-		<section className='mx-auto max-w-[88rem] px-6 py-12 lg:px-8'>
+		<section className='bb-container py-12'>
 			<Reveal>
 				<div className='card grid gap-10 p-6 sm:p-10 lg:grid-cols-[minmax(0,1fr)_minmax(16rem,0.75fr)] lg:gap-14'>
 					<div>
@@ -23,11 +23,11 @@ export function AwaitingData({ category, gaps }: { category: CategoryDefinition;
 							haven&rsquo;t been captured yet.
 						</h2>
 
-						<p className='mt-4 max-w-xl text-sm leading-6 text-[var(--ink-2)]'>
+						<p className='mt-4 max-w-xl bb-body text-[var(--ink-2)]'>
 							{category.description}
 						</p>
 
-						<p className='mt-4 max-w-xl text-sm leading-6 text-[var(--ink-3)]'>
+						<p className='mt-4 max-w-xl bb-body text-[var(--ink-3)]'>
 							This section is built and waiting on data. The moment the records are compiled into
 							the registry, they will appear here with the same search, filtering, and
 							plain-language notes as every other category.
@@ -38,11 +38,11 @@ export function AwaitingData({ category, gaps }: { category: CategoryDefinition;
 								href={category.sourceUrl}
 								target='_blank'
 								rel='noreferrer'
-								className='btn btn-solid'
+								className='bb-btn bb-btn-solid'
 							>
 								View the official source
 							</a>
-							<Link href='/bills' className='btn btn-quiet'>
+							<Link href='/bills' className='bb-btn bb-btn-ghost'>
 								Browse bills instead
 							</Link>
 						</div>
@@ -53,7 +53,7 @@ export function AwaitingData({ category, gaps }: { category: CategoryDefinition;
 							<p className='label'>What&rsquo;s missing</p>
 							<ul className='mt-4 grid gap-3'>
 								{gaps.map((gap, index) => (
-									<li key={index} className='text-[13px] leading-6 text-[var(--ink-3)]'>
+									<li key={index} className='bb-body text-[var(--ink-3)]'>
 										{gap}
 									</li>
 								))}

@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageHeader } from '../_components/page-header'
 import { SittingCalendar, VoteComparison } from '../_components/parliament-diagrams'
+import { Block, Point, Source } from '../_components/explainer'
+import { MemberSections } from '../_components/member-sections'
+import { ProcessSections } from '../_components/process-sections'
 import { ReadingColumn } from '../_components/reading-column'
 import { Reveal } from '../_components/reveal'
 import type { TocItem } from '../_components/table-of-contents'
@@ -9,7 +12,7 @@ import type { TocItem } from '../_components/table-of-contents'
 export const metadata: Metadata = {
 	title: 'How Parliament works',
 	description:
-		'Plain answers about the Bangsamoro Parliament: who its members are, what it can and cannot do, how it votes, what gets written down, and where an ordinary person can actually take part.',
+		'Plain answers about the Bangsamoro Parliament: what it can and cannot do, how a bill becomes law, what a member is paid and barred from, how it votes, what gets written down, and where an ordinary person can actually take part.',
 }
 
 /* ============================================================
@@ -61,35 +64,6 @@ const SOURCES = {
 	schedules: 'https://parliament.bangsamoro.gov.ph/schedules/',
 }
 
-function Source({ href, children }: { href: string; children: React.ReactNode }) {
-	return (
-		<a href={href} target='_blank' rel='noreferrer' className='rule-link'>
-			{children}
-		</a>
-	)
-}
-
-/** One plain-language point, with the rule it comes from underneath. */
-function Point({
-	title,
-	children,
-	cite,
-}: {
-	title: string
-	children: React.ReactNode
-	cite: string
-}) {
-	return (
-		<div className='border-t border-[var(--rule-soft)] py-6 first:border-t-0 first:pt-0'>
-			<h3 className='item-title text-[var(--ink)]'>{title}</h3>
-			<div className='copy mt-2.5 text-[var(--ink-2)]'>{children}</div>
-			{/* Held off the paragraph above it — the citation belongs to the point
-			    but is not part of reading it. */}
-			<p className='meta-sm mt-4'>{cite}</p>
-		</div>
-	)
-}
-
 function Term({ term, children }: { term: string; children: React.ReactNode }) {
 	return (
 		<div className='border-t border-[var(--rule-soft)] py-5 first:border-t-0 first:pt-0'>
@@ -107,51 +81,21 @@ const SECTIONS: TocItem[] = [
 	{ id: 'the-sitting', label: 'The sitting' },
 	{ id: 'the-calendar', label: 'The calendar' },
 	{ id: 'committees', label: 'Committees' },
+	{ id: 'the-bill-path', label: 'How a bill becomes law' },
+	{ id: 'resolutions', label: 'Resolutions' },
+	{ id: 'bill-or-resolution', label: 'Bill or resolution' },
 	{ id: 'voting-and-the-record', label: 'Voting and the record' },
-	{ id: 'members', label: 'Members' },
+	{ id: 'members', label: 'Rules on members' },
+	{ id: 'the-job', label: 'The job' },
+	{ id: 'duties', label: 'What they must do' },
+	{ id: 'pay', label: 'What a seat costs' },
+	{ id: 'allowances', label: 'Allowances' },
+	{ id: 'member-limits', label: 'What they may not do' },
+	{ id: 'holding-them-to-it', label: 'Holding them to it' },
 	{ id: 'where-you-come-in', label: 'Where you come in' },
 	{ id: 'glossary', label: 'The words they use' },
 	{ id: 'sources', label: 'Read the originals' },
 ]
-
-/**
- * A section, headed the way the page itself is: the kicker in the accent and
- * the claim under it, both ranged left, so the heading shares an edge with the
- * points beneath it and with the index in the margin.
- */
-function Block({
-	id,
-	label,
-	title,
-	lead,
-	children,
-}: {
-	id: string
-	label: string
-	title: string
-	lead?: string
-	children: React.ReactNode
-}) {
-	return (
-		<Reveal>
-			{/* The reading face throughout. Outfit is the interface — labels, nav,
-			    the masthead — and everything below that on this page is something
-			    to be read rather than looked at, so it takes DM Sans. The kicker
-			    keeps Outfit: `.eyebrow` sets its own family. */}
-			{/* `scroll-mt` clears the sticky header, so a jump from the index lands
-			    on the kicker rather than behind the bar. */}
-			<section id={id} className='scroll-mt-32 py-12 font-sans lg:py-14'>
-				<p className='eyebrow'>{label}</p>
-				{/* The claim keeps the display face: it is a heading to look at, not
-				    reading matter, so DM Sans stops at the text beneath it. */}
-				<h2 className='section-title mt-4 max-w-3xl'>{title}</h2>
-				{lead ? <p className='section-lead mt-4 max-w-2xl text-[var(--ink-3)]'>{lead}</p> : null}
-
-				<div className='mt-10 max-w-4xl'>{children}</div>
-			</section>
-		</Reveal>
-	)
-}
 
 export default function HowParliamentWorksPage() {
 	return (
@@ -163,7 +107,7 @@ export default function HowParliamentWorksPage() {
 				eyebrow='Powers, limits, and the rulebook'
 				title='What this Parliament can actually do.'
 				titleMuted='And the rules it does it by.'
-				description='Nobody has voted for the people in it yet. It writes the region&rsquo;s laws and runs the region at the same time. And it follows a rulebook it wrote for itself &mdash; 34 rules, public, and very hard to read. This page says the same things in ordinary words, and names the rule behind each one so you can check it.'
+				description='Nobody has voted for the people in it yet. It writes the region&rsquo;s laws and runs the region at the same time. And it follows a rulebook it wrote for itself &mdash; 34 rules, public, and very hard to read. Everything about the chamber is on this one page: what it can do, how a measure moves through it, what a seat costs, and where you fit. Ordinary words throughout, with the rule or the section named on every point so you can check it.'
 			/>
 
 			<ReadingColumn sections={SECTIONS}>
@@ -297,6 +241,20 @@ export default function HowParliamentWorksPage() {
 							Parliament as a whole. Once it starts it cannot be interrupted &mdash; except to point
 							out a broken rule, or to move that the sitting end.
 						</Point>
+			<Point title='Remote sittings need an emergency' cite='Rules, Rule VI, Section 4'>
+				The Parliament may convene by teleconference or video conference, but only on a motion
+				carried before the previous session closed, and only on account of force majeure or a
+				national or regional emergency preventing members from being physically present. Members
+				joining that way count for quorum and may vote.
+			</Point>
+			<Point
+				title='Special sessions can be called during a recess'
+				cite='Rules, Rule VI, Section 3(c)'
+			>
+				The Speaker calls special sessions at the Chief Minister&rsquo;s request in an emergency
+				&mdash; or on the Speaker&rsquo;s own initiative, even while the Parliament is in
+				recess.
+			</Point>
 					</div>
 				</Block>
 
@@ -323,9 +281,9 @@ export default function HowParliamentWorksPage() {
 						A committee goes through a bill line by line. It can change it, or rewrite it entirely,
 						before handing it back. By the time the full Parliament debates a bill, most of what it
 						says was already decided here.{' '}
-						<Link href='/legislative-process' className='rule-link'>
-							The full path is here
-						</Link>
+						<a href='#the-bill-path' className='rule-link'>
+							The full path is below
+						</a>
 						.
 					</Point>
 					<Point title='Members have to turn up' cite='Rules, Rules XIII and XIV'>
@@ -333,6 +291,8 @@ export default function HowParliamentWorksPage() {
 						members to attend &mdash; in person or by sending a representative.
 					</Point>
 				</Block>
+
+				<ProcessSections />
 
 				<Block
 					id='voting-and-the-record'
@@ -405,6 +365,8 @@ export default function HowParliamentWorksPage() {
 					</Point>
 				</Block>
 
+				<MemberSections />
+
 				<Block
 					id='where-you-come-in'
 					label='Where you come in'
@@ -440,9 +402,9 @@ export default function HowParliamentWorksPage() {
 							every member is listed here
 						</Link>{' '}
 						with what they have filed, and{' '}
-						<Link href='/what-members-do' className='rule-link'>
-							the full job description is here
-						</Link>
+						<a href='#the-job' className='rule-link'>
+							the full job description is below
+						</a>
 						.
 					</Point>
 				</Block>
@@ -451,7 +413,7 @@ export default function HowParliamentWorksPage() {
 					{/* The vocabulary a reader has to carry through the page. Every term
 					    here is also explained where it first appears — this is the place
 					    to look it up again, not the place it is first met. */}
-					<section id='glossary' className='scroll-mt-32 py-12 font-sans lg:py-14'>
+					<section id='glossary' className='scroll-mt-32 py-14 font-sans lg:py-20'>
 						<p className='eyebrow'>The words they use</p>
 						<h2 className='section-title mt-4 max-w-3xl'>What the words mean</h2>
 						<p className='section-lead mt-4 max-w-2xl text-[var(--ink-3)]'>
@@ -525,7 +487,7 @@ export default function HowParliamentWorksPage() {
 				<Reveal>
 					{/* The last entry in the index, so the sources are reachable from the
 					    top of the page rather than only by scrolling to the end. */}
-					<section id='sources' className='scroll-mt-32 py-14'>
+					<section id='sources' className='scroll-mt-32 py-14 lg:py-20'>
 						<p className='label label-strong'>Read the originals</p>
 						<div className='mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm'>
 							<Source href={SOURCES.rules}>
@@ -534,13 +496,20 @@ export default function HowParliamentWorksPage() {
 							<Source href={SOURCES.rulesPdf}>Full rulebook (PDF)</Source>
 							<Source href={SOURCES.process}>Legislative process</Source>
 							<Source href={SOURCES.organicLaw}>Organic Law (RA 11054)</Source>
+							<Source href={SOURCES.schedules}>Sitting schedules</Source>
+							<Link href='/acts/85' className='rule-link'>
+								FY 2026 budget (BAA 85)
+							</Link>
 						</div>
-						<p className='mt-5 max-w-3xl text-[13px] leading-6 text-[var(--ink-3)]'>
+						<p className='mt-5 max-w-3xl bb-body text-[var(--ink-3)]'>
 							This page puts those documents into ordinary words. It is not a replacement for them.
 							It leaves out the procedural machinery &mdash; motions, points of order, how to get
 							the floor &mdash; which matters to a member mid-debate and to nobody else. Where this
 							page and the rules disagree, the rules are right: every point above names the one it
-							came from, so you can go and check. If you came with one specific question,{' '}
+							came from, so you can go and check. Every peso figure is read from the enacted
+							General Appropriations Act of the Bangsamoro for FY 2026 &mdash; the Staffing Summary
+							for the per-post provisions, the General Provisions for the allowances. If you came
+							with one specific question,{' '}
 							<Link href='/questions' className='rule-link'>
 								the short answers are here
 							</Link>

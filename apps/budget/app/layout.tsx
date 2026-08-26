@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { MotionProvider } from '@betterbarmm/editorial'
 import { DM_Sans, Outfit } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { BudgetWorkInProgressDialog } from './_components/budget-work-in-progress-dialog'
@@ -21,10 +22,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			className={`${dmSans.variable} ${outfit.variable} h-full bg-[var(--paper)] text-[var(--ink)]`}
 		>
 			<body className='min-h-full bg-[var(--paper)] antialiased'>
+        <MotionProvider>
 				<BudgetWorkInProgressDialog />
 				{children}
 				<Analytics />
-			</body>
+        </MotionProvider>
+      </body>
 		</html>
 	)
 }

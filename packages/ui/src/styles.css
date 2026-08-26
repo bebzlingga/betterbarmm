@@ -378,16 +378,22 @@ figcaption {
 /* A section's claim, under its eyebrow. Display face throughout: a heading is
    looked at rather than read, so it keeps Outfit even inside a section that
    has switched to the reading face. */
+/* A step up, to sit with the display scale the landing site opens its sections
+   at — `.bb-display-sm` runs to 3.15rem there, and a registry section heading
+   set two thirds of that read as a subheading of a page it is actually part
+   of. Tracking tightens with the size: at 3rem the default letterfit reads as
+   gaps rather than as a word. */
 .section-title {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: 2.35rem;
   font-weight: 800;
-  line-height: 1.05;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
 }
 
 @media (min-width: 40rem) {
   .section-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -395,12 +401,12 @@ figcaption {
    — for a block that qualifies the page instead of introducing part of it.
    A modifier, not a utility: the scale here is unlayered and would win. */
 .section-title-sm {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 @media (min-width: 40rem) {
   .section-title-sm {
-    font-size: 1.75rem;
+    font-size: 2.05rem;
   }
 }
 
@@ -436,12 +442,18 @@ figcaption {
 .section-lead,
 .copy,
 .item-title {
-  font-size: 1rem;
+  font-size: 15.5px;
 }
 
+/* The same size and leading the rest of the estate reads at — `--leading-body`
+   and `.bb-body` in the editorial layer. The registry had its own measure, a
+   point larger and a good deal looser, which is visible the moment a reader
+   crosses from betterbarmm.com to a workspace: the same project, setting the
+   same kind of sentence two different ways. The fallback is for a page that
+   loads the registry styles without the editorial ones. */
 .section-lead,
 .copy {
-  line-height: 1.75;
+  line-height: var(--leading-body, 1.5);
 }
 
 /* Numerals in a column read better tabular and unbolded. */

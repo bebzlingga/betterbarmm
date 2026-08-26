@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { MotionProvider } from '@betterbarmm/editorial'
 import { DM_Sans, Outfit } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
@@ -37,10 +38,15 @@ export default function RootLayout({
         <noscript>
           <style>{`[data-reveal]{opacity:1 !important;transform:none !important;}`}</style>
         </noscript>
+        <noscript>
+          <style>{`[data-anim]{opacity:1 !important;transform:none !important;}`}</style>
+        </noscript>
       </head>
       <body className="min-h-full bg-[var(--paper)] antialiased">
+        <MotionProvider>
         {children}
         <Analytics />
+        </MotionProvider>
       </body>
     </html>
   );
