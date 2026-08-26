@@ -575,10 +575,25 @@ function fullTimeline(): TimelineEvent[] {
 export function getTimelineViewModel() {
   const events = fullTimeline();
 
+  // A phase is a stretch of time, not a bucket of event types. Taken purely
+  // from the type, the 2023 electoral code filed under "Foundations" and the
+  // 2021 postponement under "Postponements", which is correct as a
+  // classification and wrong as a timeline: drawn along an axis the reader ran
+  // forward to 2023, then back to 2021. So the type only proposes a phase, and
+  // the story is not allowed to go backwards — once the timeline has entered a
+  // later phase, everything after it stays there.
+  let furthest = 0;
+  const phaseOf = new Map<TimelineEvent, string>();
+  for (const event of events) {
+    const proposed = phaseOrder.indexOf(eventPhase(event));
+    furthest = Math.max(furthest, proposed === -1 ? furthest : proposed);
+    phaseOf.set(event, phaseOrder[furthest]);
+  }
+
   const phases = phaseOrder
     .map((phase) => ({
       phase,
-      events: events.filter((event) => eventPhase(event) === phase),
+      events: events.filter((event) => phaseOf.get(event) === phase),
     }))
     .filter((group) => group.events.length > 0);
 

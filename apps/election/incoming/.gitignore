@@ -1,0 +1,4 @@
+# Staging only — the record is app/_images/people
+*
+!README.md
+!.gitignore

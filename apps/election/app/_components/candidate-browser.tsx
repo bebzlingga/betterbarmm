@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { type Confidence } from "../_lib/confidence";
 import { ConfidenceBadge } from "./confidence-badge";
+import { PersonAvatar } from "./marks";
 
 export type CandidateRow = {
   id: string;
@@ -55,25 +56,26 @@ function Select({
 
 function CandidateRowItem({ row }: { row: CandidateRow }) {
   const rowClass =
-    "flex items-center justify-between gap-4 border-b border-[var(--rule-soft)] py-3 last:border-b-0";
+    "flex items-center gap-3.5 border-b border-[var(--rule-soft)] py-3 last:border-b-0";
 
+  // The face is the row's anchor. Where there is no portrait on file the plate
+  // takes its place at the same size, so the column of names stays a column
+  // rather than ragging in and out as photographs come and go.
   const content = (
     <>
-      <div className="min-w-0">
-        <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-          <h3 className="break-words text-base font-bold leading-tight transition-colors group-hover:text-[var(--accent)]">
-            {row.name}
-          </h3>
-          {row.district ? (
-            <span className="shrink-0 bg-[var(--accent)] px-1.5 py-0.5 font-mono text-[8px] font-bold uppercase leading-none tracking-[0.12em] text-white">
-              {row.district}
-            </span>
-          ) : null}
-        </div>
-        <p className="mt-1 break-words font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-[var(--ink-2)]">
+      <PersonAvatar name={row.name} size={40} />
+
+      <div className="min-w-0 flex-1">
+        {/* No district chip: every row now sits under the district it filed
+            in, and repeating it on the name was the label twice. */}
+        <h3 className="break-words text-base font-bold leading-tight transition-colors group-hover:text-[var(--accent)]">
+          {row.name}
+        </h3>
+        <p className="mt-1 break-words font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]">
           {row.partyLabel}
         </p>
       </div>
+
       {row.partyId ? (
         <span
           aria-hidden="true"
@@ -153,20 +155,49 @@ export function CandidateBrowser({ rows }: { rows: CandidateRow[] }) {
     });
   }, [rows, track, group, party, query]);
 
-  // Group filtered results by their area/sector, sectoral clusters first.
-  const grouped = useMemo(() => {
-    const map = new Map<string, { track: "district" | "sectoral"; rows: CandidateRow[] }>();
+  // Sectors group as they always did. District filers group by the district
+  // they filed in, not by the province: a province is an administrative label,
+  // a district is the actual contest — one seat, and the two to six people
+  // running for it. Grouped by province, "Lanao del Sur · 36" told a reader
+  // nothing about which of the nine races any of those names was in.
+  const sectoralSections = useMemo(() => {
+    const map = new Map<string, CandidateRow[]>();
     for (const row of filtered) {
-      const entry = map.get(row.group) ?? { track: row.track, rows: [] };
-      entry.rows.push(row);
-      map.set(row.group, entry);
+      if (row.track !== "sectoral") continue;
+      map.set(row.group, [...(map.get(row.group) ?? []), row]);
     }
     return Array.from(map.entries())
-      .map(([name, entry]) => ({ name, ...entry }))
-      .sort((a, b) => {
-        if (a.track !== b.track) return a.track === "sectoral" ? -1 : 1;
-        return a.name.localeCompare(b.name);
-      });
+      .map(([sector, sectorRows]) => ({ sector, rows: sectorRows }))
+      .sort((a, b) => a.sector.localeCompare(b.sector));
+  }, [filtered]);
+
+  const districtAreas = useMemo(() => {
+    const areas = new Map<string, Map<string, CandidateRow[]>>();
+    for (const row of filtered) {
+      if (row.track !== "district") continue;
+      const districts = areas.get(row.group) ?? new Map<string, CandidateRow[]>();
+      const key = row.district ?? "District not reported";
+      districts.set(key, [...(districts.get(key) ?? []), row]);
+      areas.set(row.group, districts);
+    }
+    return Array.from(areas.entries())
+      .map(([area, districts]) => ({
+        area,
+        count: Array.from(districts.values()).reduce((sum, list) => sum + list.length, 0),
+        districts: Array.from(districts.entries())
+          .map(([district, districtRows]) => ({ district, rows: districtRows }))
+          // "1st" through "9th", then "District I" and "District II" — a plain
+          // string sort puts the 10th before the 2nd, so the leading number is
+          // what gets compared where there is one.
+          .sort((a, b) => {
+            const numberOf = (value: string) => Number(value.match(/\d+/)?.[0] ?? Number.NaN);
+            const left = numberOf(a.district);
+            const right = numberOf(b.district);
+            if (!Number.isNaN(left) && !Number.isNaN(right)) return left - right;
+            return a.district.localeCompare(b.district);
+          }),
+      }))
+      .sort((a, b) => a.area.localeCompare(b.area));
   }, [filtered]);
 
   const districtCount = filtered.filter((r) => r.track === "district").length;
@@ -175,14 +206,14 @@ export function CandidateBrowser({ rows }: { rows: CandidateRow[] }) {
 
   return (
     <div>
-      <div className="grid gap-3 border border-[var(--rule)] bg-[var(--paper-2)] p-4 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+      <div className="grid gap-3 border border-[var(--brass-line)] bg-[var(--paper-2)] p-4 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] sm:p-5">
         <label className="relative block">
           <span className="sr-only">Search candidates</span>
           <input
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search by name…"
+            placeholder="Search a name, party, or district…"
             className="h-11 w-full border border-[var(--ink)] bg-[var(--paper)] px-3 text-sm font-semibold text-[var(--ink)] outline-none transition placeholder:font-normal placeholder:text-[var(--ink-3)] focus:border-[var(--accent)]"
           />
         </label>
@@ -241,23 +272,68 @@ export function CandidateBrowser({ rows }: { rows: CandidateRow[] }) {
           No candidates match these filters.
         </p>
       ) : (
-        <div className="mt-4 grid gap-x-10 gap-y-10 md:grid-cols-2">
-          {grouped.map((section) => (
-            <div key={`${section.track}-${section.name}`}>
-              <div className="flex items-center justify-between border-b border-[var(--ink)] pb-2">
-                <div className="flex min-w-0 items-center gap-2">
-                  <h3 className="truncate text-base font-extrabold leading-none tracking-[-0.02em]">
-                    {section.name}
-                  </h3>
-                  <ConfidenceBadge confidence={section.rows[0].confidence} />
+        <div className="mt-6">
+          {sectoralSections.length > 0 ? (
+            <div className="grid gap-x-10 gap-y-10 md:grid-cols-2">
+              {sectoralSections.map((section) => (
+                <div key={`sector-${section.sector}`}>
+                  <div className="flex items-center justify-between gap-3 border-b border-[var(--ink)] pb-2">
+                    <div className="flex min-w-0 items-center gap-2">
+                      <h3 className="truncate text-base font-extrabold leading-none tracking-[-0.02em]">
+                        {section.sector}
+                      </h3>
+                      <ConfidenceBadge confidence={section.rows[0].confidence} />
+                    </div>
+                    <p className="num shrink-0 font-mono text-xs font-bold text-[var(--ink-3)]">
+                      {section.rows.length}
+                    </p>
+                  </div>
+                  <div className="mt-1">
+                    {section.rows.map((row) => (
+                      <CandidateRowItem key={row.id} row={row} />
+                    ))}
+                  </div>
                 </div>
-                <p className="num shrink-0 font-mono text-xs font-bold text-[var(--ink-3)]">
-                  {section.rows.length}
+              ))}
+            </div>
+          ) : null}
+
+          {districtAreas.map((area, index) => (
+            <div
+              key={`area-${area.area}`}
+              className={index === 0 && sectoralSections.length === 0 ? "" : "mt-14"}
+            >
+              {/* The province is a heading over its own races rather than a
+                  container for a hundred names. */}
+              <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-[var(--ink)] pb-2">
+                <h3 className="text-lg font-extrabold leading-none tracking-[-0.025em] text-[var(--ink)]">
+                  {area.area}
+                </h3>
+                <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]">
+                  {area.districts.length} {area.districts.length === 1 ? "district" : "districts"} ·{" "}
+                  {area.count} filed
                 </p>
               </div>
-              <div className="mt-1">
-                {section.rows.map((row) => (
-                  <CandidateRowItem key={row.id} row={row} />
+
+              <div className="mt-6 grid gap-x-10 gap-y-8 md:grid-cols-2 xl:grid-cols-3">
+                {area.districts.map((district) => (
+                  <div key={`${area.area}-${district.district}`}>
+                    <div className="flex items-baseline justify-between gap-3 border-b border-[var(--brass-line)] pb-2">
+                      <h4 className="truncate font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]">
+                        {district.district}
+                      </h4>
+                      {/* Every district returns one member, so the count is the
+                          size of the contest for that seat. */}
+                      <p className="num shrink-0 font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]">
+                        {district.rows.length} for 1 seat
+                      </p>
+                    </div>
+                    <div className="mt-1">
+                      {district.rows.map((row) => (
+                        <CandidateRowItem key={row.id} row={row} />
+                      ))}
+                    </div>
+                  </div>
                 ))}
               </div>
             </div>

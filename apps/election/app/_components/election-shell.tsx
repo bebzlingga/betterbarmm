@@ -1,64 +1,55 @@
-import { CtaPanel, SiteFooter } from "@betterbarmm/editorial";
-import {
-  ElectionNavigation,
-  type ElectionNavItem,
-} from "./election-navigation";
-
-type ElectionShellProps = {
-  activeItem?: ElectionNavItem;
-  children: React.ReactNode;
-};
+import { CtaPanel, SiteFooter } from '@betterbarmm/editorial'
+import { SiteNav } from './site-nav'
 
 /**
- * Every page in the workspace closes the same way: the one ask on the crimson
- * band, then the estate footer on the dark ground. Both come from
- * `@betterbarmm/editorial`, so this workspace ends exactly as the landing site
- * and the registry do — which is the point of them being shared rather than
+ * Every page in the workspace opens and closes the same way: the estate's bar
+ * at the top, the project's one ask on the crimson band at the foot, then the
+ * footer on the dark ground. All three come from `@betterbarmm/editorial` or
+ * follow it, so this workspace begins and ends exactly as the landing site and
+ * the other three do — which is the point of them being shared rather than
  * written out per app.
  */
-export function ElectionShell({ activeItem, children }: ElectionShellProps) {
-  return (
-    <main className="min-h-screen bg-[var(--paper)] text-[var(--ink)]">
-      <ElectionNavigation activeItem={activeItem} />
-      {children}
+export function ElectionShell({ children }: { children: React.ReactNode }) {
+	return (
+		<div className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
+			<SiteNav />
+			<main>{children}</main>
 
-      {/* The project's ask, not this workspace's. Same panel, same words, at
-          the foot of every page of every app — one project, said once. */}
-      <CtaPanel />
+			<CtaPanel />
 
-      <SiteFooter
-        base="https://betterbarmm.com"
-        columns={[
-          {
-            title: "This workspace",
-            links: [
-              { href: "https://election.betterbarmm.com/", label: "Overview" },
-              { href: "https://election.betterbarmm.com/ballot", label: "Your ballot" },
-              { href: "https://election.betterbarmm.com/about", label: "About" },
-            ],
-          },
-          {
-            title: "Workspaces",
-            links: [
-              { href: "https://legislation.betterbarmm.com", label: "Legislation" },
-              { href: "https://budget.betterbarmm.com", label: "Budget" },
-              { href: 'https://lgu.betterbarmm.com', label: 'Local government' },
-              { href: "https://betterbarmm.com/discover", label: "Discover BARMM" },
-            ],
-          },
-          {
-            title: "Project",
-            links: [
-              { href: "/about", label: "About" },
-              { href: "/contribute", label: "Contribute" },
-              { href: "mailto:support@betterbarmm.com", label: "Email us" },
-            ],
-          },
-        ]}
-        blurb="Public elections deserve public records. This gathers the 2026 BARMM Parliamentary Elections — regional parties, district COC filers, sectoral candidates, the timeline, and the sources behind each entry — into one place you can read, question, and trace back to where it came from."
-        note="The 2026 Bangsamoro Parliamentary Elections"
-        bottomRight="Dataset: datasets/election/election.min.json"
-      />
-    </main>
-  );
+			<SiteFooter
+				base='https://betterbarmm.com'
+				columns={[
+					{
+						title: 'This workspace',
+						links: [
+							{ href: 'https://election.betterbarmm.com/', label: 'The election' },
+							{ href: 'https://election.betterbarmm.com/candidates', label: 'Candidates' },
+							{ href: 'https://election.betterbarmm.com/parties/UBJP', label: 'The parties' },
+						],
+					},
+					{
+						title: 'Workspaces',
+						links: [
+							{ href: 'https://legislation.betterbarmm.com', label: 'Legislation' },
+							{ href: 'https://budget.betterbarmm.com', label: 'Budget' },
+							{ href: 'https://lgu.betterbarmm.com', label: 'Local government' },
+							{ href: 'https://betterbarmm.com/discover', label: 'Discover BARMM' },
+						],
+					},
+					{
+						title: 'Project',
+						links: [
+							{ href: 'https://betterbarmm.com/about', label: 'About' },
+							{ href: 'https://betterbarmm.com/contribute', label: 'Contribute' },
+							{ href: 'mailto:support@betterbarmm.com', label: 'Email us' },
+						],
+					},
+				]}
+				blurb='The first regular election of the Bangsamoro Parliament, as a public record: the parties on the regional ballot, the candidates who filed in each district, the reserved seats, the dates the vote moved through — and the source behind every line of it.'
+				note='The 2026 Bangsamoro Parliamentary Election'
+				bottomRight='Dataset: datasets/election/election.min.json'
+			/>
+		</div>
+	)
 }
