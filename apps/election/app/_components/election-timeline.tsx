@@ -139,7 +139,7 @@ export function ElectionTimeline({ phases }: { phases: TimelinePhase[] }) {
 		<div className='w-full'>
 			<div
 				ref={scrollerRef}
-				className={`timeline-scroll select-none overflow-x-auto pb-2 pl-6 pr-6 lg:pl-[max(2rem,calc((100vw-88rem)/2+2rem))] lg:pr-8 ${
+				className={`timeline-scroll select-none overflow-x-auto overflow-y-hidden pb-2 pl-6 pr-6 lg:pl-[max(2rem,calc((100vw-88rem)/2+2rem))] lg:pr-8 ${
 					isDragging ? 'cursor-grabbing' : 'cursor-grab'
 				}`}
 				aria-label='Election timeline'
@@ -198,7 +198,14 @@ export function ElectionTimeline({ phases }: { phases: TimelinePhase[] }) {
 								<article
 									key={item.id}
 									style={{ width: COLUMN }}
-									className='relative h-[27rem] shrink-0 snap-start px-4'
+									// Tall enough for the longest card in the set, so nothing is
+									// clipped and the rail never scrolls vertically. The row is a
+									// fixed height because the axis sits at its exact middle, and
+									// that height is measured from the content rather than guessed:
+									// the longest description runs five lines at this column width,
+									// which with a two-line title, the phase bar and the clearance
+									// above the connector needs about 250 points either side.
+									className='relative h-[32rem] shrink-0 snap-start px-4'
 								>
 									<span
 										aria-hidden='true'
@@ -264,7 +271,7 @@ export function ElectionTimeline({ phases }: { phases: TimelinePhase[] }) {
 													{item.title}
 												</h3>
 												{item.body ? (
-													<p className='mt-2.5 line-clamp-5 text-[13px] leading-6 text-[var(--ink-2)]'>
+													<p className='mt-2.5 text-[13px] leading-6 text-[var(--ink-2)]'>
 														{item.body}
 													</p>
 												) : null}

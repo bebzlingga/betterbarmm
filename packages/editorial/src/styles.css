@@ -74,17 +74,29 @@
 
   /* ---- Paper ----
 
-     Warm rather than white. A pure #ffffff canvas under a warm-toned
-     photograph makes the photograph look dirty; a paper ground a few points
-     off white makes it look printed. The steps stay as close together as
-     they were, because the hover tint still has to survive two hundred rows
-     without turning the page grey. */
-  --paper: #fbf9f5;
-  --paper-2: #f6f3ec;
-  --paper-3: #ece7dc;
+     White. The cream this replaces sat in the same family as the brass, so the
+     rules, the labels and the woven lattice were all a shade of the ground
+     rather than marks on it, and the estate read sepia end to end; on white
+     every one of them is unmistakably ink laid on paper, which is the register
+     a public record wants.
 
-  --rule: #e3ddd0;
-  --rule-soft: #efeae0;
+     The one thing white costs is the photographs — a warm-toned picture on a
+     pure #ffffff canvas looks a shade dirty where a few points off white makes
+     the same picture look printed. Discover is the half of the estate that
+     carries them, and it is the place to watch if this ever needs revisiting.
+
+     The steps above it are neutral greys rather than tinted ones, so the hover
+     tint reads as a shadow of the page rather than as a colour on it, and they
+     stay as close together as the cream's did — the tint still has to survive
+     two hundred rows without turning the page grey. Every ink clears AA by a
+     distance: 17.7:1 at `--ink`, 11.4 at `--ink-2`, 7.1 at `--ink-3`, 8.9 for
+     the accent. */
+  --paper: #ffffff;
+  --paper-2: #f7f7f5;
+  --paper-3: #eeeeeb;
+
+  --rule: #e6e6e2;
+  --rule-soft: #f1f1ee;
 
   /* Ink, warmed by the same few points so the text sits on the paper rather
      than on top of it. Every step still clears AA on the ground above. */
@@ -106,11 +118,13 @@
   --brass-line: rgba(168, 129, 63, 0.42);
 
   /* The dark band. Not the ink — an ink-coloured panel would flip to
-     near-white in dark mode, and the band's whole job is to stay dark. */
-  --ground: #14120e;
-  --ground-2: #1d1a15;
-  --panel-bg: #14120e;
-  --panel-fg: #faf7f1;
+     near-white in dark mode, and the band's whole job is to stay dark. The
+     same neutral black the dark theme runs on, so a band on the light page and
+     the dark page's own ground are one colour rather than two browns. */
+  --ground: #161615;
+  --ground-2: #201f1e;
+  --panel-bg: #161615;
+  --panel-fg: #f7f6f3;
 
   /* ---- Body leading ----
 
@@ -136,12 +150,26 @@
 }
 
 :root[data-theme="dark"] {
-  --paper: #100e0b;
-  --paper-2: #16130f;
-  --paper-3: #221e18;
+  /* Black, but a neutral one.
+   *
+   * `#100e0b` was a brown-black — the cream's own hue turned all the way
+   * down — and it carried the same problem into the dark theme that the cream
+   * carried into the light one: the brass rules and the lattice were a shade
+   * of the ground rather than marks on it, and the whole page read sepia.
+   * This is the same near-black with the brown taken out and the barest warmth
+   * left in, so it sits with the limestone above rather than against it.
+   *
+   * Not pure `#000`. A page at zero makes light type halate and every surface
+   * above it has to be invented from nothing; a couple of points up gives the
+   * hover tint and the sunken cell somewhere to stand. Every ink still clears
+   * AA by a distance: 16.5:1 at `--ink`, 11.3 at `--ink-2`, 6.7 at `--ink-3`,
+   * 8.5 for the brass and 6.5 for the accent. */
+  --paper: #131312;
+  --paper-2: #1a1a18;
+  --paper-3: #212120;
 
-  --rule: #2d2820;
-  --rule-soft: #211d17;
+  --rule: #262624;
+  --rule-soft: #1d1d1b;
 
   --ink: #f4f1e9;
   --ink-2: #cfc9bb;
@@ -156,8 +184,9 @@
   --brass-soft: #2a2115;
   --brass-line: rgba(211, 169, 95, 0.34);
 
-  --ground: #0a0908;
-  --ground-2: #14120e;
+  /* The band under the page, and the step above it — the same neutral. */
+  --ground: #0c0c0b;
+  --ground-2: #161615;
   --panel-bg: #1b1813;
   --panel-fg: #f4f1e9;
 }
@@ -1021,11 +1050,23 @@
    the motion points along the row the way reading does.
    ============================================================ */
 
+/* Up from the 10.5px it ran at. The bar's links were the smallest type on any
+   page — smaller than the captions under the figures they sit above — and a
+   navigation is the one row a reader has to be able to find without looking
+   for it. The tracking and the capitals stay, so it still reads as a control
+   rather than as a line of prose. */
 .nav-item {
   position: relative;
-  padding: 0.5rem 0.85rem;
+  /* The link fills the bar's height so its active mark can sit on the bar's
+     own edge. The type stays centred in it; only the hit area and the box grow
+     to the row, which also makes the whole tab clickable rather than just the
+     word. */
+  display: inline-flex;
+  align-items: center;
+  height: calc(var(--site-header-h) - 1px);
+  padding: 0 0.85rem;
   font-family: var(--font-display);
-  font-size: 10.5px;
+  font-size: 11.5px;
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1033,13 +1074,25 @@
   transition: color 0.18s var(--ease);
 }
 
+/* The active mark sits on the bar's own bottom edge rather than under the
+   word.
+ *
+ * An underline a few points below a link is a second rule inside a row that
+ * already ends in one, and at a glance the two read as a mark that failed to
+ * line up with anything. On the bar's edge it is the header's own border going
+ * crimson under the page you are on — one line doing two jobs, which is what
+ * that edge is there for.
+ *
+ * Three points, because it now has to be read against a 1px border rather than
+ * against white space. It spans the whole item, padding included: an edge mark
+ * measures the tab, not the word inside it. */
 .nav-item::after {
   content: "";
   position: absolute;
-  left: 0.85rem;
-  right: 0.85rem;
-  bottom: 0.15rem;
-  height: 1.5px;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 3px;
   background: var(--accent);
   transform: scaleX(0);
   transform-origin: left center;

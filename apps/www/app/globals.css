@@ -9,31 +9,6 @@
 @source "../../../packages/editorial/src";
 
 /* ============================================================
-   The page ground
-
-   Two thirds of the way from the shared warm paper to white. The
-   editorial layer runs `#fbf9f5`, which reads as cream on a large
-   screen; pure white read as clinical, and did the thing the shared
-   palette warns about — a warm-toned photograph on a pure white
-   canvas looks grubby by comparison, and this is the site carrying
-   the photographs. This keeps a couple of points of warmth, enough
-   that the pictures and the brass still sit on something, and not
-   enough to read as a colour.
-
-   Scoped here rather than changed at the token, so the workspaces —
-   the registry, the election and budget rooms — keep the ground they
-   were designed on.
-
-   `--paper-2` and `--paper-3` are left where they are on purpose:
-   they are the hover tint and the sunken surface, and they need to
-   read as a step away from the page rather than as a second white.
-   ============================================================ */
-
-:root {
-  --paper: #fdfcfa;
-}
-
-/* ============================================================
    Discover BARMM — what is local to this site
 
    The shared visual language — tokens, display type, ornament,

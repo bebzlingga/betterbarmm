@@ -24,26 +24,6 @@
    than a page, and it wants a measure and a rhythm of its own.
    ============================================================ */
 
-/* ============================================================
-   The page ground
-
-   The editorial layer runs `#fbf9f5`, a warm cream tuned for the
-   landing site's photographs. This is a register: pages of hairline
-   rules, tables, badges and small type, with no photography to sit
-   against. At that weight the cream reads as a tint over the record
-   rather than as paper, and the surfaces above it — `--paper-2` for a
-   hover, `--paper-3` for a sunken cell — lose the little distance they
-   have from it.
-
-   Two thirds of the way to white, which is the same step the landing
-   site takes. Scoped here rather than changed at the token, so the
-   editorial layer keeps the ground it was designed on.
-   ============================================================ */
-
-:root {
-  --paper: #fdfcfa;
-}
-
 /* ---- The reading column ----
 
    A record page is read rather than scanned, so its prose takes a real
