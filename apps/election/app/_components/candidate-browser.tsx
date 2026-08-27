@@ -35,7 +35,7 @@ function Select({
       <select
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        className="h-11 w-full min-w-0 appearance-none border border-[var(--ink)] bg-[var(--paper)] py-0 pl-3 pr-8 font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--ink)] outline-none transition focus:border-[var(--accent)]"
+        className="field field-select cursor-pointer appearance-none"
       >
         <option value="">{label}</option>
         {options.map((option) => (
@@ -44,12 +44,22 @@ function Select({
           </option>
         ))}
       </select>
-      <span
+      {/* The registry's own caret, drawn rather than typed. The ▼ this
+          replaces is a text glyph: it lands at a different size and weight in
+          every font a browser might fall back to, and on several platforms it
+          arrives as a colour emoji. */}
+      <svg
+        className="pointer-events-none absolute right-3 top-1/2 size-3.5 -translate-y-1/2 text-[var(--ink-mute)]"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         aria-hidden="true"
-        className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[10px] text-[var(--ink)]"
       >
-        ▼
-      </span>
+        <path d="m6 9 6 6 6-6" />
+      </svg>
     </label>
   );
 }
@@ -63,12 +73,12 @@ function CandidateRowItem({ row }: { row: CandidateRow }) {
   // rather than ragging in and out as photographs come and go.
   const content = (
     <>
-      <PersonAvatar name={row.name} size={40} />
+      <PersonAvatar name={row.name} partyId={row.partyId} size={40} />
 
       <div className="min-w-0 flex-1">
         {/* No district chip: every row now sits under the district it filed
             in, and repeating it on the name was the label twice. */}
-        <h3 className="break-words text-base font-bold leading-tight transition-colors group-hover:text-[var(--accent)]">
+        <h3 className="item-title item-title-strong break-words transition-colors group-hover:text-[var(--accent)]">
           {row.name}
         </h3>
         <p className="mt-1 break-words font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]">
@@ -206,15 +216,32 @@ export function CandidateBrowser({ rows }: { rows: CandidateRow[] }) {
 
   return (
     <div>
-      <div className="grid gap-3 border border-[var(--brass-line)] bg-[var(--paper-2)] p-4 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] sm:p-5">
+      {/* Hairlines rather than a filled panel, and the estate's own controls
+          inside them. This bar was built to itself — a tinted box, fields
+          outlined in full ink, a typed caret — while the registry next door
+          uses one field primitive for every search and select on the site. The
+          two workspaces are one site and a reader crosses between them. */}
+      <div className="grid gap-3 border-y border-[var(--brass-line)] py-5 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <label className="relative block">
           <span className="sr-only">Search candidates</span>
+          <svg
+            className="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-[var(--ink-mute)]"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.5-3.5" />
+          </svg>
           <input
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Search a name, party, or district…"
-            className="h-11 w-full border border-[var(--ink)] bg-[var(--paper)] px-3 text-sm font-semibold text-[var(--ink)] outline-none transition placeholder:font-normal placeholder:text-[var(--ink-3)] focus:border-[var(--accent)]"
+            className="field field-search"
           />
         </label>
         <Select
@@ -244,8 +271,8 @@ export function CandidateBrowser({ rows }: { rows: CandidateRow[] }) {
       </div>
 
       <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
-        <p className="font-mono text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--ink-3)]">
-          {filtered.length} of {rows.length}
+        <p className="meta-sm">
+          <span className="num text-[var(--ink)]">{filtered.length}</span> of {rows.length}
           <span className="text-[var(--ink-mute)]">
             {" · "}
             {sectoralCount} sectoral · {districtCount} district
@@ -260,9 +287,9 @@ export function CandidateBrowser({ rows }: { rows: CandidateRow[] }) {
               setParty("");
               setQuery("");
             }}
-            className="font-mono text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--accent)] transition-colors hover:text-[var(--accent-deep)]"
+            className="label text-[var(--accent)] transition-colors hover:text-[var(--accent-deep)]"
           >
-            Clear filters ✕
+            Clear filters
           </button>
         ) : null}
       </div>
@@ -279,9 +306,7 @@ export function CandidateBrowser({ rows }: { rows: CandidateRow[] }) {
                 <div key={`sector-${section.sector}`}>
                   <div className="flex items-center justify-between gap-3 border-b border-[var(--ink)] pb-2">
                     <div className="flex min-w-0 items-center gap-2">
-                      <h3 className="truncate text-base font-extrabold leading-none tracking-[-0.02em]">
-                        {section.sector}
-                      </h3>
+                      <h3 className="item-title item-title-strong truncate">{section.sector}</h3>
                       <ConfidenceBadge confidence={section.rows[0].confidence} />
                     </div>
                     <p className="num shrink-0 font-mono text-xs font-bold text-[var(--ink-3)]">
@@ -306,7 +331,7 @@ export function CandidateBrowser({ rows }: { rows: CandidateRow[] }) {
               {/* The province is a heading over its own races rather than a
                   container for a hundred names. */}
               <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-[var(--ink)] pb-2">
-                <h3 className="text-lg font-extrabold leading-none tracking-[-0.025em] text-[var(--ink)]">
+                <h3 className="item-title item-title-lg item-title-strong text-[var(--ink)]">
                   {area.area}
                 </h3>
                 <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]">

@@ -34,7 +34,7 @@ const discoverSections = [
 ] as const
 
 const workspaces = [
-	{ label: 'Election', href: '/soon', open: false },
+	{ label: 'Election', href: 'https://election.betterbarmm.com', open: true },
 	{ label: 'Legislation', href: 'https://legislation.betterbarmm.com', open: true },
 	{ label: 'Budget', href: '/soon', open: false },
 	{ label: 'Local government', href: '/soon', open: false },
@@ -211,9 +211,18 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 			>
 				<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
 					{/* Three tracks so the links sit on the true centre of the header
-					    rather than wherever the mark and controls leave room. */}
-					<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[1fr_auto_1fr] items-center gap-4'>
-						<div className='flex min-w-0 items-center gap-3'>
+					    rather than wherever the mark and controls leave room.
+
+					    Two on a phone, where the centre track holds a nav that is not
+					    rendered at all. Three equal-ish tracks with nothing in the middle
+					    one gave the mark half the row and the controls the other half,
+					    and the mark is a fixed-width image: the moment its share fell
+					    below its natural width it was squeezed narrower while its height
+					    stayed put, which is a wordmark rendered out of proportion. An
+					    `auto` track gives it exactly what it measures and hands the rest
+					    to the controls. */}
+					<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[auto_1fr] items-center gap-4 md:grid-cols-[1fr_auto_1fr]'>
+						<div className='flex items-center gap-3'>
 							<Link href='/' onClick={closeMenu} className='w-fit shrink-0'>
 								{/* The mark ships in two cuts: the dark-ink one for a light
 								    ground, the light-ink one for a dark ground. Normally the
@@ -232,6 +241,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 										width={142}
 										height={26}
 										priority
+										className='max-w-none'
 										style={{ height: 26, width: 'auto' }}
 									/>
 								) : (
@@ -242,7 +252,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 											width={142}
 											height={26}
 											priority
-											className='logo-light'
+											className='logo-light max-w-none'
 											style={{ height: 26, width: 'auto' }}
 										/>
 										<Image
@@ -251,7 +261,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 											width={142}
 											height={26}
 											priority
-											className='logo-dark'
+											className='logo-dark max-w-none'
 											style={{ height: 26, width: 'auto' }}
 										/>
 									</>
@@ -303,10 +313,16 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 							))}
 						</nav>
 
-						<div className='flex items-center justify-end gap-1.5'>
-							<ThemeToggle />
-
-							<span className='w-1.5' aria-hidden='true' />
+						<div className='flex items-center justify-end gap-2 md:gap-1.5'>
+							{/* The theme switch is a desktop control here. On a phone the row
+							    is a mark, a call to action and a way into the site, and a fourth
+							    icon between them read as clutter — it is a setting, which is
+							    what the menu panel is for. It moves there rather than being
+							    duplicated, so there is only ever one of it. */}
+							<div className='hidden items-center md:flex'>
+								<ThemeToggle />
+								<span className='w-1.5' aria-hidden='true' />
+							</div>
 
 							<Magnetic strength={0.22} className='hidden sm:inline-flex'>
 								<Link
@@ -426,6 +442,20 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 								>
 									Contribute
 								</Link>
+							</div>
+
+							{/* Last, under the links: the one row here that changes the page
+							    rather than leaving it. The button carries the icon and the
+							    label says which control it is, since an icon alone in a list
+							    of words has nothing to read it against. The pull to the right
+							    is the button's own padding, so the glyph lines up with the
+							    rows above it rather than the box around it. */}
+							<p className='bb-label mt-7'>Appearance</p>
+							<div className='mt-3 flex items-center justify-between gap-3 py-1'>
+								Theme
+								<span className='-mr-2 flex'>
+									<ThemeToggle />
+								</span>
 							</div>
 						</nav>
 					</motion.div>

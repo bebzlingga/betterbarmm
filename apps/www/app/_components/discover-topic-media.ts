@@ -46,15 +46,29 @@ export const discoverTopicMedia: Record<string, DiscoverTopicMedia> = {
 			'Six centuries, one unbroken argument about who governs the Bangsamoro — told through the moments that changed the answer.',
 		// No `inline`: the MOA-AD map is already on the timeline at 2008, and it was
 		// carrying the opening screen as well.
-		// Two, not six. A photograph on every era turned the timeline into a
-		// slideshow with dates attached, and the pictures that were carrying an
-		// argument got no more weight than the ones that were only decorating a
-		// year. What is left is the pair that is evidence: the territory the
-		// MOA-AD would have covered, and the room where the Organic Law was
-		// ratified.
+		// A picture on every era we can source one for. This ran at two for a
+		// while, on the argument that a photograph beside every date reads as a
+		// slideshow — but six centuries told in prose alone is six centuries a
+		// reader has to take on trust, and a sourced photograph is the same kind
+		// of evidence as a sourced figure. Two eras still have none: nothing
+		// freely licensed turned up for the resettlement decades or for Tripoli
+		// in 1976, and an approximate picture under a date is worse than none.
 		eraPhotos: {
+			'Before 1565': 'makhdumMosque',
+			'1565–1898': 'tausugWarriors',
+			'1899–1946': 'suluSultan1905',
+			'1968': 'corregidor',
+			'1969–1972': 'mnlfVeterans',
+			'1977–1984': 'milfVeterans',
+			'1989–1990': 'armmRegionalCenter',
+			'1996': 'nurMisuari',
 			'2008': 'moaAdMap',
+			'2012': 'fab2012',
+			'2014': 'iqbalAquino',
+			'2018': 'bolPresentation',
 			'2019': 'bolRatification',
+			'2019–2025': 'btaFirstSession',
+			'September 14, 2026': 'parliamentHall',
 		},
 		gallery: ['makhdumMosque', 'tausugWarriors', 'moaAdMap', 'bolRatification', 'btaFirstSession'],
 	},

@@ -10,7 +10,6 @@ import { lguData } from '@betterbarmm/lgu-data'
 import { SectionHead } from './_components/masthead'
 import { ContextDiagram, LivingDiagram, SourceDiagram } from './_components/method-diagram'
 import { HeroGraphic } from './_components/hero-graphic'
-import { ScrollCue } from './_components/scroll-cue'
 import { SiteHeader } from './_components/site-header'
 import { WorkspaceIndex, type Workspace } from './_components/workspace-index'
 
@@ -32,7 +31,7 @@ const principlesBand = ['Better Transparency', 'Better Governance']
 const workspaces: Workspace[] = [
 	{
 		label: 'Election',
-		href: '/soon',
+		href: 'https://election.betterbarmm.com',
 		blurb:
 			'Parties, candidates, districts, and sectoral seats for the 2026 Parliamentary Elections, with the source record behind each one.',
 		measure: '2026 Parliament',
@@ -214,7 +213,7 @@ export default function HomePage() {
 							<Rise delay={0.45} distance={14}>
 								<div className='mt-11 flex flex-wrap items-center gap-3'>
 									<Magnetic strength={0.24}>
-										<Link href='/soon' className='bb-btn bb-btn-solid'>
+										<Link href='https://election.betterbarmm.com' className='bb-btn bb-btn-solid'>
 											Open the Election workspace
 											<ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
 										</Link>
@@ -252,12 +251,15 @@ export default function HomePage() {
 							</Rise>
 						</div>
 
-						<HeroGraphic className='mb-14 lg:mb-0' />
+						{/* The artwork is the right-hand column of the split, and nothing
+						    else. Below the breakpoint there is no right-hand column: it
+						    stacked under the headline as a tall diagram of a document
+						    standing between the reader and the first workspace, on the one
+						    screen size where the scroll to get past it costs the most. The
+						    headline beside it already says what it draws, which is why it
+						    can go without leaving a hole. */}
+						<HeroGraphic className='hidden lg:block' />
 					</div>
-
-					<Rise delay={0.7} distance={10}>
-						<ScrollCue to='#discover' label='Start with the region' className='mt-16' />
-					</Rise>
 				</div>
 			</section>
 
@@ -313,7 +315,7 @@ export default function HomePage() {
 
 					<Stagger
 						gap={0.09}
-						className='mt-16 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:mt-20 lg:grid-cols-4'
+						className='mt-16 grid grid-cols-2 gap-x-6 gap-y-10 sm:gap-x-10 sm:gap-y-12 lg:mt-20 lg:grid-cols-4'
 					>
 						{[
 							{
@@ -353,7 +355,9 @@ export default function HomePage() {
 									<p className='mt-4 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--brass)]'>
 										{stat.label}
 									</p>
-									<p className='mt-2.5 bb-body text-[var(--ink-2)]'>{stat.note}</p>
+									<p className='mt-2.5 text-[13.5px] leading-[var(--leading-body)] text-[var(--ink-2)]'>
+										{stat.note}
+									</p>
 								</div>
 							</StaggerItem>
 						))}

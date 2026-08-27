@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { partyMarks, photoFor } from '../_lib/media'
+import { partyColor, partyInk } from '../_lib/party-color'
 
 /* ============================================================
    Faces and marks
@@ -28,22 +29,6 @@ function initials(name: string): string {
 }
 
 /**
- * A stable tint per name, from the site's four marking colours.
- *
- * Deterministic rather than random so a person keeps the same plate on every
- * page they appear on, and cheap enough to run for every row of a long list.
- */
-const TINTS = ['var(--slate)', 'var(--ochre)', 'var(--positive)', 'var(--accent-deep)'] as const
-
-function tintFor(seed: string): string {
-	let hash = 0
-	for (let index = 0; index < seed.length; index += 1) {
-		hash = (hash * 31 + seed.charCodeAt(index)) % 9973
-	}
-	return TINTS[hash % TINTS.length]
-}
-
-/**
  * A person, at whatever size the row it sits in needs.
  *
  * Square rather than round: every other frame on the estate has corners, and
@@ -51,10 +36,21 @@ function tintFor(seed: string): string {
  */
 export function PersonAvatar({
 	name,
+	partyId,
 	size = 44,
 	className = '',
 }: {
 	name: string
+	/**
+	 * Whose plate this is, where the person is running under a party.
+	 *
+	 * Without a portrait the plate used to take one of four house tints off a
+	 * hash of the name, which is a colour that means nothing — two people from
+	 * the same party could sit in the same list wearing different colours. The
+	 * party's own colour puts them together, and a candidate with no party
+	 * falls back to the house tints, which is itself the fact.
+	 */
+	partyId?: string | null
 	size?: number
 	className?: string
 }) {
@@ -78,14 +74,25 @@ export function PersonAvatar({
 		)
 	}
 
+	/* Their party's colour, or a quiet neutral where there is no party.
+	 *
+	 * The fallback used to be one of four house tints hashed off the name —
+	 * `--slate` and `--positive` among them, which are a near-black navy and a
+	 * dark olive. Beside the party colours they read as somebody's colour rather
+	 * than as nobody's, and they were the darkest thing on a page of hairlines.
+	 * An unpainted plate says the true thing: this person is running without a
+	 * party behind them, or under one this workspace has not linked yet. */
+	const color = partyColor(partyId)
+
 	return (
 		<span
 			aria-hidden='true'
-			className={`flex shrink-0 items-center justify-center font-extrabold leading-none tracking-[-0.02em] text-white ${className}`}
+			className={`flex shrink-0 items-center justify-center font-extrabold leading-none tracking-[-0.02em] ${className}`}
 			style={{
 				width: size,
 				height: size,
-				background: tintFor(name),
+				background: color ?? 'var(--paper-3)',
+				color: color ? partyInk(color) : 'var(--ink-3)',
 				fontSize: size * 0.36,
 				fontFamily: 'var(--font-display)',
 			}}
@@ -100,9 +107,15 @@ export function PersonAvatar({
  * A party, as an emblem where one is publishable and a lettered plate where
  * it is not.
  *
- * The plate carries the ballot name rather than initials, because the ballot
- * name is what the voter is looking for on the paper — for eleven of the
- * thirteen it is already an acronym.
+ * The plate is one letter on the party's own colour. It carried the whole
+ * ballot name, which for the longer entries meant six or seven characters
+ * stepped down to nine points inside a square — small type in a box, read as
+ * neither a mark nor a name. A single letter at plate size is a mark, and the
+ * colour under it is what actually identifies the party: the same colour the
+ * card, the party's page and its candidates' plates all carry.
+ *
+ * Two parties can share a first letter; they never share a colour, and the
+ * ballot name is set beside the plate in every place this appears.
  */
 export function PartyMark({
 	partyId,
@@ -135,20 +148,29 @@ export function PartyMark({
 		)
 	}
 
+	/* Filled, not outlined. A hairline box around a letter is the lightest
+	 * thing in a card that also holds a name at 24px and a paragraph under it,
+	 * and it read as an empty frame where an emblem had failed to load — the
+	 * one thing it must not say. Filled, it is a plate: something deliberately
+	 * set in place of a picture, which is what the note under the grid says it
+	 * is. */
+	const color = partyColor(partyId)
+
 	return (
 		<span
 			aria-hidden='true'
-			className={`flex shrink-0 items-center justify-center border border-[var(--brass-line)] bg-[var(--paper-2)] px-1 text-center font-extrabold leading-none tracking-[-0.02em] text-[var(--ink)] ${className}`}
+			className={`flex shrink-0 items-center justify-center text-center font-extrabold leading-none tracking-[-0.02em] ${className}`}
 			style={{
 				width: size,
 				height: size,
+				background: color ?? 'var(--paper-3)',
+				color: color ? partyInk(color) : 'var(--ink-3)',
+				boxShadow: 'inset 0 0 0 1px var(--rule)',
 				fontFamily: 'var(--font-display)',
-				// Long names step down rather than overflow the plate; the acronyms
-				// most of these are stay at the size the plate was drawn for.
-				fontSize: label.length > 6 ? size * 0.2 : label.length > 4 ? size * 0.26 : size * 0.32,
+				fontSize: size * 0.44,
 			}}
 		>
-			{label}
+			{label.slice(0, 1)}
 		</span>
 	)
 }

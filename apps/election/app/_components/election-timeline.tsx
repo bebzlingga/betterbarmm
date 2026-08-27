@@ -24,6 +24,22 @@ export type TimelinePhase = {
 const COLUMN = 18 * 16
 
 /**
+ * A colour per phase, in the order the phases run.
+ *
+ * The cards used to open on a two-pixel black rule, which is the heaviest
+ * mark on the page and says nothing — every card wore the same one, so twenty
+ * of them read as twenty identical objects strung along a line. A short bar in
+ * the phase's own colour says which stretch of the road a moment belongs to
+ * without a word, and it is the same bar the band above the axis carries, so a
+ * card and its band are visibly one thing.
+ *
+ * The tokens are the estate's, and they run brass to crimson: the foundations,
+ * then the years the date moved, then the calendar being kept, then the vote.
+ * A phase past the fourth wraps rather than inventing a colour.
+ */
+const PHASE_COLORS = ['var(--brass)', 'var(--slate)', 'var(--ochre)', 'var(--accent)'] as const
+
+/**
  * The road to the vote, along an axis the reader drags.
  *
  * Horizontal because the story is one of a date being moved: an election first
@@ -112,7 +128,12 @@ export function ElectionTimeline({ phases }: { phases: TimelinePhase[] }) {
 		}
 	}, [])
 
-	const items = phases.flatMap((group) => group.events)
+	const items = phases.flatMap((group, index) =>
+		group.events.map((event) => ({
+			...event,
+			color: PHASE_COLORS[index % PHASE_COLORS.length],
+		})),
+	)
 
 	return (
 		<div className='w-full'>
@@ -138,14 +159,20 @@ export function ElectionTimeline({ phases }: { phases: TimelinePhase[] }) {
 					{/* The bands. Each spans its own events, so a phase is a length of
 					    track rather than a heading floating over one. */}
 					<div className='flex' aria-hidden='true'>
-						{phases.map((group) => (
+						{phases.map((group, index) => (
 							<div
 								key={group.phase}
 								style={{ width: group.events.length * COLUMN }}
 								className='shrink-0 px-4'
 							>
-								<div className='border-t-2 border-[var(--brass-line)] pt-2.5'>
-									<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
+								<div
+									className='border-t-2 pt-2.5'
+									style={{ borderColor: PHASE_COLORS[index % PHASE_COLORS.length] }}
+								>
+									<p
+										className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em]'
+										style={{ color: PHASE_COLORS[index % PHASE_COLORS.length] }}
+									>
 										{group.phase}
 									</p>
 									<p className='mt-1 font-mono text-[10px] text-[var(--ink-3)]'>
@@ -207,20 +234,41 @@ export function ElectionTimeline({ phases }: { phases: TimelinePhase[] }) {
 										</p>
 									</div>
 
-									<div className={`absolute left-4 right-4 ${above ? 'top-0' : 'bottom-0'}`}>
-										<div
-											className={`border-t-2 pt-4 ${
-												item.isElectionDay ? 'border-[var(--accent)]' : 'border-[var(--ink)]'
-											}`}
-										>
-											<h3 className='text-[17px] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)]'>
-												{item.title}
-											</h3>
-											{item.body ? (
-												<p className='mt-2.5 line-clamp-6 text-[13px] leading-6 text-[var(--ink-2)]'>
-													{item.body}
-												</p>
-											) : null}
+									{/* The card is bounded on the axis side rather than left to grow
+									    toward it. It was anchored only at the far edge, so a long body
+									    ran down the column and straight through the stub of line that
+									    joins the card to the axis. Stopping it short of the stub — and
+									    growing it away from the axis with `justify-end` on the ones
+									    above — means the connector always has clear track to cross.
+
+									    The rule over it is a short bar in the phase's own colour now.
+									    A full-width two-pixel black line is the heaviest mark on the
+									    page and the same on every card; twenty of them read as twenty
+									    identical objects. Election day keeps the crimson, because that
+									    is the one moment the whole axis is travelling toward. */}
+									<div
+										className={`absolute left-4 right-4 flex flex-col ${
+											above
+												? 'top-0 bottom-[calc(50%+4.25rem)] justify-end'
+												: 'bottom-0 top-[calc(50%+4.25rem)]'
+										}`}
+									>
+										<div>
+											<span
+												aria-hidden='true'
+												className='block h-1.5 w-10'
+												style={{ background: item.isElectionDay ? 'var(--accent)' : item.color }}
+											/>
+											<div className='pt-4'>
+												<h3 className='text-[17px] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)]'>
+													{item.title}
+												</h3>
+												{item.body ? (
+													<p className='mt-2.5 line-clamp-5 text-[13px] leading-6 text-[var(--ink-2)]'>
+														{item.body}
+													</p>
+												) : null}
+											</div>
 										</div>
 									</div>
 								</article>

@@ -12,7 +12,8 @@
 		"dev": "bun run turbo dev",
 		"build": "bun run turbo build",
 		"lint": "bun run turbo lint",
-		"format": "bun run prettier --write ."
+		"format": "bun run prettier --write .",
+		"all": "bun run turbo lint build"
 	},
 	"dependencies": {
 		"next": "16.2.6",

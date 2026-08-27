@@ -812,20 +812,43 @@ function loadActs(): LegislationRecord[] {
 			const relations = raw.related_legislation ?? {}
 			const { sectors, types } = splitTags(raw.impact?.impact_tags)
 
-			// No captured act file names its authors — each one says they are on
-			// the origin bill's page, which hasn't been read. Parliament's own acts
-			// index publishes them for all 94, split into principals and
-			// co-authors, so it is the source; the hand-compiled catalogue covers
-			// only BAA 1-89 and stands in where the index is silent.
+			// Who wrote an act is the hardest field on this dataset to fill, and
+			// it is worth naming why rather than letting it come out empty.
+			//
+			// No captured act file names its authors: all 94 carry the same
+			// `pending_capture` sentinel and the same note — the authors are on
+			// the origin bill's page. Parliament's own acts index is no help
+			// either; it publishes a number, a title, a link and a date, and no
+			// author field at all. (It is still read here: if the index ever
+			// grows one, this picks it up without a change.)
+			//
+			// So the hand-compiled catalogue answers for the acts it covers —
+			// BAA 1-89, and only 48 of those actually carry authors — and after
+			// it, the bill the act was. The bills index names every principal and
+			// co-author for all 477 of them, and the bill that became an act is
+			// the same measure under its earlier name, so its authors are the
+			// act's authors. That is what fills BAA 90: nothing in the acts data
+			// names anyone, and Bill 328 names twenty.
+			// The bill this act was. The captured file names it on a sixth of the
+			// acts; the bills index names the act each bill became, so it answers
+			// for the rest of what has been captured. Resolved here rather than
+			// further down because the authors below are read off it.
 			const officialAct = getOfficialMeasure('acts', number)
+			const originBillNumber = parseMeasureNumber(relations?.origin_bill)
+			const originBill = originBillNumber
+				? getOfficialBill(originBillNumber)
+				: getOfficialBillForAct(number)
 			const capturedPrincipals = cleanArray(raw.authors_and_sponsors?.principal_authors)
 			const indexedPrincipals = officialAct?.principalAuthors ?? []
+			const legacyPrincipals = cleanArray(legacy?.principal_authors)
 
 			const principalAuthors = capturedPrincipals.length
 				? capturedPrincipals
 				: indexedPrincipals.length
 					? indexedPrincipals
-					: cleanArray(legacy?.principal_authors)
+					: legacyPrincipals.length
+						? legacyPrincipals
+						: (originBill?.principalAuthors ?? [])
 
 			// Read from whichever source supplied the principals, so a measure is
 			// never credited with one list's principals and another's co-authors.
@@ -833,15 +856,10 @@ function loadActs(): LegislationRecord[] {
 				? cleanArray(raw.authors_and_sponsors?.co_authors)
 				: indexedPrincipals.length
 					? (officialAct?.coAuthors ?? [])
-					: cleanArray(legacy?.co_authors)
+					: legacyPrincipals.length
+						? cleanArray(legacy?.co_authors)
+						: (originBill?.coAuthors ?? [])
 
-			// The bill this act was. The captured file names it on a sixth of the
-			// acts; the bills index names the act each bill became, so it answers
-			// for the rest of what has been captured.
-			const originBill = parseMeasureNumber(relations?.origin_bill)
-			const originBillMeasure = originBill
-				? getOfficialBill(originBill)
-				: getOfficialBillForAct(number)
 
 			return withSearchText({
 				id: `acts-${number}`,
@@ -857,7 +875,7 @@ function loadActs(): LegislationRecord[] {
 				statusShort: status.short,
 				statusTone: status.tone,
 				// The rungs a bill climbs, dated from that bill's own history.
-				journey: actJourney(originBillMeasure?.history ?? [], dateIso),
+				journey: actJourney(originBill?.history ?? [], dateIso),
 				statusMeaning: status.meaning,
 				dateIso,
 				dateDisplay: formatDate(dateIso),
@@ -871,7 +889,7 @@ function loadActs(): LegislationRecord[] {
 				principalAuthors,
 				coAuthors,
 				isCabinetMeasure: isCabinetAuthor([...principalAuthors, ...coAuthors]),
-				originBillNumber: originBill ?? originBillMeasure?.number,
+				originBillNumber: originBillNumber ?? originBill?.number,
 				amendsBaa: parseMeasureNumbers(relations?.amends),
 				amendedByBaa: parseMeasureNumbers(relations?.amended_by),
 				repeals: clean(relations?.repeals) || undefined,
@@ -987,6 +1005,38 @@ function loadBills(actsByOriginBill: Map<number, number>): LegislationRecord[] {
 		.sort((left, right) => right.number - left.number)
 }
 
+/* ============================================================
+   Subjects read off the filed bill
+
+   Parliament publishes every bill as a scan — page images from a document
+   feeder, no text layer — so the registry could read a bill's number, title
+   and status from the index and nothing else. That is why two fifths of the
+   bills carried a subject tag and three fifths carried none.
+
+   This file is the other three fifths, read by putting the filed PDF through
+   OCR and taking the subject from what the bill actually says rather than
+   from the words in its title. It is kept apart from the capture for the same
+   reason the written readings are: a re-capture must never overwrite work
+   done on the documents, and work done on the documents must never be
+   mistaken for something Parliament published in this form.
+   ============================================================ */
+
+type BillSubjects = { number: number; sectors?: unknown }
+
+const billSubjects = (() => {
+	const raw = readJson<{ bills?: BillSubjects[] }>(path.join(DATASET_ROOT, 'bill-subjects.json'))
+
+	const index = new Map<number, Tag[]>()
+	for (const entry of raw?.bills ?? []) {
+		const tags = cleanArray(entry.sectors)
+			.filter((value) => classifyTag(value) === 'sector')
+			.map((value) => ({ value, label: sectorLabel(value) }))
+		if (tags.length) index.set(Number(entry.number), tags)
+	}
+
+	return index
+})()
+
 /**
  * The bills Parliament lists but this registry has not read.
  *
@@ -1028,7 +1078,9 @@ function loadIndexedBills(
 				dateLabel: 'Status as of',
 				year: measure.dateIso ? measure.dateIso.slice(0, 4) : 'Undated',
 				session: sessionLabel(measure.session) || undefined,
-				sectors: [],
+				// Read off the filed document where it has been read; empty where the
+				// scan could not be got at, which the coverage note states.
+				sectors: billSubjects.get(measure.number) ?? [],
 				types: [],
 				authors,
 				principalAuthors: measure.principalAuthors,

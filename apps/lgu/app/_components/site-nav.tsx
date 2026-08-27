@@ -109,7 +109,7 @@ export function SiteNav() {
 			<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
 				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[1fr_auto_1fr] items-center gap-4'>
 					<div className='flex min-w-0 items-center gap-3'>
-						<Link href='/' onClick={closeMenu} className='w-fit shrink-0'>
+						<a href='https://betterbarmm.com' onClick={closeMenu} className='w-fit shrink-0'>
 							<Image
 								src='/logo.png'
 								alt='BetterBARMM'
@@ -128,7 +128,7 @@ export function SiteNav() {
 								className='logo-dark'
 								style={{ height: 26, width: 'auto' }}
 							/>
-						</Link>
+						</a>
 						{/* The wordmark says BetterBARMM; this says which of its
 						    workspaces you are in. */}
 						<Link

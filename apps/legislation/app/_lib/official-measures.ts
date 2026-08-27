@@ -232,17 +232,41 @@ export function getOfficialBill(number: number): OfficialMeasure | undefined {
  * act files name their origin bill. But the bills index says which act each
  * bill turned into, and carries the dated stage lines the act never had, so an
  * act can be told its own passage by reading it off the bill behind it.
+ *
+ * Matched on the title, because `became_act` is a title and never a number.
+ * It was read by pulling the first run of digits out of that string, which is
+ * a different question — "does this act's title happen to contain a number" —
+ * and the answer was wrong every time it was not empty. The bill that amends
+ * Autonomy Act 35 was filed under the act it changes, so it was handed to act
+ * 35 rather than to act 88, which is the one it became; a bill extending the
+ * 2020 special development fund produced an act numbered 2020. Three links,
+ * none of them right, while the thirteen bills that actually name their act
+ * went unmatched.
  */
+const actTitleKey = (title: string) =>
+	title
+		.normalize('NFKD')
+		.toUpperCase()
+		.replace(/[\u2018\u2019]/g, "'")
+		.replace(/[\u201c\u201d]/g, '"')
+		.replace(/[^A-Z0-9]+/g, ' ')
+		.trim()
+
 const billByAct = (() => {
+	const actNumberByTitle = new Map<string, number>()
+	for (const measure of measures) {
+		if (measure.category !== 'acts') continue
+		actNumberByTitle.set(actTitleKey(measure.title), measure.number)
+	}
+
 	const index = new Map<number, OfficialMeasure>()
 
 	for (const measure of measures) {
-		if (measure.category !== 'bills') continue
+		if (measure.category !== 'bills' || !measure.becameAct) continue
 
-		const match = measure.becameAct.match(/\d+/)
-		if (!match) continue
+		const act = actNumberByTitle.get(actTitleKey(measure.becameAct))
+		if (act === undefined) continue
 
-		const act = Number(match[0])
 		const existing = index.get(act)
 		// Where two entries claim the same act, the fuller history wins.
 		if (!existing || measure.history.length > existing.history.length) index.set(act, measure)

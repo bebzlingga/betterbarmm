@@ -51,7 +51,7 @@ export function DiscoverIndexRows({ rows }: { rows: DiscoverIndexRow[] }) {
 						/>
 					</span>
 
-					<span className='num w-10 shrink-0 self-start pt-2 text-[12px] font-semibold text-[var(--brass)] sm:w-14'>
+					<span className='bb-row-num num w-10 shrink-0 self-start pt-2 text-[12px] font-semibold text-[var(--brass)] sm:w-14'>
 						{String(index + 1).padStart(2, '0')}
 					</span>
 
@@ -60,7 +60,7 @@ export function DiscoverIndexRows({ rows }: { rows: DiscoverIndexRow[] }) {
 
 						<span className='mt-3 block max-w-xl bb-body text-[var(--ink-2)]'>{row.blurb}</span>
 
-						<span className='mt-4 flex flex-wrap items-center gap-x-2 gap-y-1.5'>
+						<span className='bb-row-contains mt-4 flex flex-wrap items-center gap-x-2 gap-y-1.5'>
 							{row.contains.map((item) => (
 								<span key={item} className='bb-chip'>
 									{item}

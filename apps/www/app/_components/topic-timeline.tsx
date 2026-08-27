@@ -17,10 +17,11 @@ import { EASE, Rise, TimelineRail } from '@betterbarmm/editorial'
  * cannot tell them anything.
  *
  * Each marker fills as its own event arrives, which is the part that makes the
- * rail read as being travelled rather than as being coloured in. Eras that have
- * a photograph get one, full width under the paragraph. Not every one does, and
- * that is deliberate: an unbroken column of pictures reads as a slideshow,
- * while an occasional one reads as evidence.
+ * rail read as being travelled rather than as being coloured in. Nearly every
+ * era carries a photograph in its own column; the few with none leave that
+ * column empty rather than reflowing, so the paragraph beside the rail keeps
+ * one measure the whole way down and the timeline reads as a single column of
+ * type with pictures against it, not as rows of two different widths.
  */
 export function Timeline({
   events,
@@ -30,6 +31,10 @@ export function Timeline({
   eraPhotos?: Partial<Record<string, DiscoverPhotoKey>>
 }) {
   const ref = useRef<HTMLOListElement>(null)
+  // Asked of the whole set, not of the row: the column has to be reserved for
+  // every event or the two eras without a picture set their prose to a wider
+  // measure than their neighbours.
+  const anyPhoto = events.some((event) => eraPhotos?.[event.era])
 
   return (
     <div className='relative'>
@@ -71,7 +76,7 @@ export function Timeline({
                   rotate: 45,
                   scale: 1,
                 }}
-                viewport={{ once: true, amount: 1 }}
+                viewport={{ once: true, amount: 0.6 }}
                 transition={{ duration: 0.5, ease: EASE }}
               />
 
@@ -83,7 +88,7 @@ export function Timeline({
                     own column it sits beside the paragraph instead. */}
                 <div
                   className={`grid gap-x-10 gap-y-4 ${
-                    photo
+                    anyPhoto
                       ? 'lg:grid-cols-[minmax(0,15rem)_minmax(0,1fr)_minmax(0,20rem)]'
                       : 'lg:grid-cols-[minmax(0,15rem)_minmax(0,1fr)]'
                   }`}

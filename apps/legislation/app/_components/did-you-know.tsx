@@ -26,6 +26,111 @@ type Fact = {
 	headline: string
 	detail: string
 	act: { number: number; label: string }
+	/** Which of the marks below stands over the card. */
+	mark: MarkName
+}
+
+/* ---- The marks ----
+
+   One small drawing per card, and each one draws the shape of the
+   entitlement rather than illustrating its subject: a run of seven days, a
+   cost standing on one side of a line and not the other, a five per cent
+   arc off a whole. A stock icon of a briefcase would say "work", which the
+   label above it already says.
+
+   The house rule from the estate's other line art holds here — brass is the
+   furniture and the crimson appears exactly once in each mark, on the part
+   that is the fact. Everything is stroked rather than filled, at one weight,
+   so six of them in a row read as one set.
+
+   `aria-hidden` throughout: every one of them is a restatement of the
+   headline beside it, and a screen reader that announced them would be
+   reading the card twice. */
+
+type MarkName = 'run-of-days' | 'other-side' | 'no-cost' | 'built' | 'share' | 'span'
+
+const MARKS: Record<MarkName, React.ReactNode> = {
+	// Seven days, run off together and marked as one span.
+	'run-of-days': (
+		<>
+			<rect x='6' y='12' width='36' height='30' />
+			<path d='M6 20h36M16 8v8M32 8v8' />
+			{[0, 1, 2, 3, 4, 5, 6].map((day) => (
+				<path key={day} d={`M${12 + day * 4.5} 26v5`} />
+			))}
+			<path d='M12 36h27' stroke='var(--accent)' strokeWidth='2.4' />
+		</>
+	),
+
+	// The cost is a column, and it stands on the far side of the line.
+	'other-side': (
+		<>
+			<path d='M24 8v34M8 42h32' />
+			<path d='M12 42v-8' />
+			<path d='M34 42V22' stroke='var(--accent)' strokeWidth='4' />
+		</>
+	),
+
+	// A price, struck through: the place a figure would go, and no figure.
+	'no-cost': (
+		<>
+			<rect x='8' y='10' width='32' height='28' />
+			<path d='M14 18h20M14 24h20M14 30h12' />
+			<path d='M10 40 40 8' stroke='var(--accent)' strokeWidth='2.4' />
+		</>
+	),
+
+	// Built up one act at a time, and still going.
+	built: (
+		<>
+			<path d='M6 42h36' />
+			<path d='M10 42V30h7v12M19 42V24h7v18' />
+			<path d='M28 42V16h8v26' stroke='var(--accent)' />
+			<path d='M32 21v6M29 24h6' stroke='var(--accent)' />
+		</>
+	),
+
+	// A whole, and the slice of it that is spoken for.
+	share: (
+		<>
+			<circle cx='24' cy='24' r='14' />
+			<circle
+				cx='24'
+				cy='24'
+				r='14'
+				stroke='var(--accent)'
+				strokeWidth='3.5'
+				strokeDasharray='4.4 87.9'
+				transform='rotate(-90 24 24)'
+			/>
+		</>
+	),
+
+	// A range, and how much of the axis it covers.
+	span: (
+		<>
+			<path d='M6 24h36' />
+			<path d='M12 18v12M36 18v12' />
+			<path d='M12 24h24' stroke='var(--accent)' strokeWidth='3.5' />
+		</>
+	),
+}
+
+function Mark({ name }: { name: MarkName }) {
+	return (
+		<svg
+			viewBox='0 0 48 48'
+			className='size-10 text-[var(--brass)]'
+			fill='none'
+			stroke='currentColor'
+			strokeWidth='1.4'
+			strokeLinecap='round'
+			strokeLinejoin='round'
+			aria-hidden='true'
+		>
+			{MARKS[name]}
+		</svg>
+	)
 }
 
 const FACTS: Fact[] = [
@@ -35,6 +140,7 @@ const FACTS: Fact[] = [
 		detail:
 			'Every employee in the region has it — public or private, whatever your employment status. If your employer does not act on the application within 5 working days it is automatically approved, and taking it cannot be used to dismiss you, demote you or mark down your performance rating.',
 		act: { number: 72, label: 'Bangsamoro Bereavement Leave Act of 2025' },
+		mark: 'run-of-days',
 	},
 	{
 		sector: 'Working abroad',
@@ -42,6 +148,7 @@ const FACTS: Fact[] = [
 		detail:
 			'The visa, the airfare, the processing and the welfare membership are the employer’s to carry. Your basic monthly salary cannot be lower than the host country’s minimum wage or Metro Manila’s, whichever is higher.',
 		act: { number: 19, label: 'Overseas Bangsamoro Workers Act of 2020' },
+		mark: 'other-side',
 	},
 	{
 		sector: 'Education',
@@ -49,6 +156,7 @@ const FACTS: Fact[] = [
 		detail:
 			'Qualified Bangsamoro learners attend free of charge, with scholarships, stipends and allowances, on a curriculum built to Philippine Science High School standards.',
 		act: { number: 40, label: 'Bangsamoro Science High School System Act of 2023' },
+		mark: 'no-cost',
 	},
 	{
 		sector: 'Health',
@@ -56,6 +164,7 @@ const FACTS: Fact[] = [
 		detail:
 			'Since 2022, one act at a time, from a municipal infirmary in Sibutu to the 350-bed Level III teaching hospital in Maguindanao — the highest classification the region has.',
 		act: { number: 74, label: 'Bangsamoro Regional Hospital and Medical Center Act of 2025' },
+		mark: 'built',
 	},
 	{
 		sector: 'Women',
@@ -63,6 +172,7 @@ const FACTS: Fact[] = [
 		detail:
 			'A floor, not a target: each ministry, office and agency must run a Gender and Development Plan worth at least 5% of its budget, and file both the plan and what it achieved with the Bangsamoro Women Commission.',
 		act: { number: 85, label: 'General Appropriations Act of the Bangsamoro, FY 2026' },
+		mark: 'share',
 	},
 	{
 		sector: 'Youth',
@@ -70,6 +180,7 @@ const FACTS: Fact[] = [
 		detail:
 			'Wider than almost anywhere else, which decides who qualifies for youth programmes and scholarships. The commission that runs them seats a commissioner in every province.',
 		act: { number: 10, label: 'Bangsamoro Youth Commission Act of 2020' },
+		mark: 'span',
 	},
 ]
 
@@ -94,8 +205,9 @@ export function DidYouKnow() {
 					{FACTS.map((fact) => (
 						<div key={fact.sector} className='border-t border-[var(--rule-soft)] pt-6'>
 							<dt>
-								<span className='label'>{fact.sector}</span>
-								<p className='item-title mt-3 text-[var(--ink)]'>{fact.headline}</p>
+								<Mark name={fact.mark} />
+								<span className='label mt-5 block'>{fact.sector}</span>
+								<p className='fact-title mt-2.5 text-[var(--ink)]'>{fact.headline}</p>
 							</dt>
 							<dd>
 								<p className='mt-2.5 bb-body text-[var(--ink-3)]'>{fact.detail}</p>

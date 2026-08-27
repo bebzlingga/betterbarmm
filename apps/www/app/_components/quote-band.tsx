@@ -70,8 +70,8 @@ export function QuoteBand({
           data-anim=''
           initial={{ opacity: 0, y: 26 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.9, ease: EASE }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ duration: 0.7, ease: EASE }}
           className='max-w-4xl'
         >
           {/* The rule is brass rather than white: over a photograph, a white

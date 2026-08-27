@@ -210,7 +210,7 @@ export default function DiscoverBarmmPage() {
 						</PhotoFrame>
 					</Link>
 
-					<Link href='/soon' className='group block'>
+					<Link href='https://election.betterbarmm.com' className='group block'>
 						<PhotoFrame
 							photo={photo('parliamentSession')}
 							className='aspect-[4/3] sm:aspect-[16/10]'

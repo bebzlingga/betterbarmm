@@ -2,7 +2,7 @@
 
 import { motion } from 'motion/react'
 import type { ReactNode } from 'react'
-import { EASE } from '@betterbarmm/editorial'
+import { EASE, IN_VIEW } from '@betterbarmm/editorial'
 
 type RevealProps = {
   children: ReactNode
@@ -22,7 +22,9 @@ type RevealProps = {
  * distance, the same duration, and the same curve.
  *
  * The delay stays in milliseconds here — every existing call site passes
- * `delay={90}` — and is converted at the boundary.
+ * `delay={90}` — and is converted at the boundary. The trigger line is
+ * `IN_VIEW` rather than a local one, so a block does not arrive at a different
+ * point on the screen depending on which of the two names wrapped it.
  */
 export function Reveal({ children, delay = 0, className }: RevealProps) {
   return (
@@ -31,8 +33,8 @@ export function Reveal({ children, delay = 0, className }: RevealProps) {
       className={className}
       initial={{ opacity: 0, y: 22 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2, margin: '0px 0px -8% 0px' }}
-      transition={{ duration: 0.75, delay: delay / 1000, ease: EASE }}
+      viewport={IN_VIEW}
+      transition={{ duration: 0.6, delay: delay / 1000, ease: EASE }}
     >
       {children}
     </motion.div>

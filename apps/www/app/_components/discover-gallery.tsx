@@ -160,19 +160,69 @@ export function DiscoverGallery({ photos }: { photos: DiscoverPhoto[] }) {
               if (event.target === event.currentTarget) setOpen(null)
             }}
           >
-            <button
-              type='button'
-              onClick={() => setOpen(null)}
-              aria-label='Close'
-              className='absolute right-4 top-4 z-2 flex size-11 items-center justify-center border border-white/25 text-white transition hover:border-[var(--brass)] hover:text-[var(--brass)] sm:right-8 sm:top-8'
+            {/* Every control in one row along the very top of the screen, out
+                of the flow: the count on the left, the way through the set on
+                the right.
+
+                They sat under the caption, which put them at the bottom of a
+                near-opaque scrim with the page's own headings showing faintly
+                through from behind — a row of buttons apparently floating over
+                someone else's section. Up here they belong to the viewer rather
+                than to the photograph, and they hold the same place while the
+                picture changes shape under them, which is what lets a reader
+                step through twelve frames without hunting for the arrow each
+                time.
+
+                Close travels with them. It was pinned to the viewport corner,
+                which only clears the arrows on a window wider than the figure's
+                own 64rem; at any narrower width the two would have landed on
+                top of each other. */}
+            <div
+              className='dsc-lightbox-bar'
+              // The bar is an invisible strip the full width of the glass, and
+              // the whole of it used to be backdrop. Clicking its empty middle
+              // still closes, or the top of the screen becomes a dead zone in a
+              // dialog where everywhere else dismisses.
+              onClick={(event) => {
+                if (event.target === event.currentTarget) setOpen(null)
+              }}
             >
-              <XIcon className='size-5' aria-hidden='true' />
-            </button>
+              <p className='num text-[12px] text-white/50'>
+                {String((open ?? 0) + 1).padStart(2, '0')} / {String(photos.length).padStart(2, '0')}
+              </p>
+
+              <div className='flex items-center gap-3'>
+                <button
+                  type='button'
+                  onClick={() => step(-1)}
+                  aria-label='Previous photo'
+                  className='flex size-10 items-center justify-center border border-white/25 text-white transition hover:border-[var(--brass)] hover:text-[var(--brass)]'
+                >
+                  <ArrowLeftIcon className='size-4' aria-hidden='true' />
+                </button>
+                <button
+                  type='button'
+                  onClick={() => step(1)}
+                  aria-label='Next photo'
+                  className='flex size-10 items-center justify-center border border-white/25 text-white transition hover:border-[var(--brass)] hover:text-[var(--brass)]'
+                >
+                  <ArrowRightIcon className='size-4' aria-hidden='true' />
+                </button>
+                <button
+                  type='button'
+                  onClick={() => setOpen(null)}
+                  aria-label='Close'
+                  className='ml-1 flex size-10 items-center justify-center border border-white/25 text-white transition hover:border-[var(--brass)] hover:text-[var(--brass)]'
+                >
+                  <XIcon className='size-4.5' aria-hidden='true' />
+                </button>
+              </div>
+            </div>
 
             <motion.figure
-              // Keyed on the photograph, so stepping through the set cross-fades
-              // one frame into the next rather than swapping the src underneath
-              // a static box.
+              // Keyed on the photograph, so stepping through the set
+              // cross-fades one frame into the next rather than swapping the
+              // src underneath a static box.
               key={current.source}
               className='flex max-h-full w-full max-w-5xl flex-col'
               initial={{ opacity: 0, scale: 0.97, y: 12 }}
@@ -208,28 +258,6 @@ export function DiscoverGallery({ photos }: { photos: DiscoverPhoto[] }) {
                   {current.credit} · {current.license}
                 </a>
               </figcaption>
-
-              <div className='mt-5 flex items-center gap-3'>
-                <button
-                  type='button'
-                  onClick={() => step(-1)}
-                  aria-label='Previous photo'
-                  className='flex size-10 items-center justify-center border border-white/25 text-white transition hover:border-[var(--brass)] hover:text-[var(--brass)]'
-                >
-                  <ArrowLeftIcon className='size-4' aria-hidden='true' />
-                </button>
-                <button
-                  type='button'
-                  onClick={() => step(1)}
-                  aria-label='Next photo'
-                  className='flex size-10 items-center justify-center border border-white/25 text-white transition hover:border-[var(--brass)] hover:text-[var(--brass)]'
-                >
-                  <ArrowRightIcon className='size-4' aria-hidden='true' />
-                </button>
-                <p className='num ml-2 text-[12px] text-white/50'>
-                  {String((open ?? 0) + 1).padStart(2, '0')} / {String(photos.length).padStart(2, '0')}
-                </p>
-              </div>
             </motion.figure>
           </motion.div>
         ) : null}

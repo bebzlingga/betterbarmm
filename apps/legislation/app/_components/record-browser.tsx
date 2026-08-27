@@ -167,11 +167,24 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 		return sorted
 	}, [deferredQuery, filters, records, sort])
 
-	// Narrowing the list starts it again from the top: the rows a reader has
-	// already paged past are not the rows their new query is about.
-	useEffect(() => {
+	/* Narrowing the list starts it again from the top: the rows a reader has
+	   already paged past are not the rows their new query is about.
+	 *
+	 * Done during render rather than in an effect. An effect keyed on the query
+	 * fires after the browser has already been handed a page of the wrong
+	 * length, so React renders twice and commits the first one — the cascade it
+	 * warns about. Comparing against what was last seen resets the count in the
+	 * same pass that changes the list. The three are compared by identity,
+	 * exactly as the effect's dependency array did. */
+	const [lastView, setLastView] = useState({ query: deferredQuery, filters, sort })
+	if (
+		lastView.query !== deferredQuery ||
+		lastView.filters !== filters ||
+		lastView.sort !== sort
+	) {
+		setLastView({ query: deferredQuery, filters, sort })
 		setPageCount(1)
-	}, [deferredQuery, filters, sort])
+	}
 
 	const shown = Math.min(pageCount * PAGE_SIZE, visibleRecords.length)
 	const remaining = visibleRecords.length - shown

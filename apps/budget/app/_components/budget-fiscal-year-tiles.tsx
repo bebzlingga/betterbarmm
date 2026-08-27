@@ -3,7 +3,7 @@
 import { ChevronDown } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { useEffect, useState, type MouseEvent } from 'react'
+import { useState, type MouseEvent } from 'react'
 
 export interface BudgetFiscalYearTileRow {
 	year: number
@@ -35,7 +35,23 @@ function isNormalClick(event: MouseEvent<HTMLAnchorElement>) {
 
 export function BudgetFiscalYearTiles({ rows, selectedYear, flushTop = false, hrefBasePath = '/by-year' }: BudgetFiscalYearTilesProps) {
 	const router = useRouter()
+	// The year the reader just picked, held only until the URL catches up with
+	// it — a tile should look selected the moment it is clicked rather than
+	// after the navigation lands.
 	const [pendingYear, setPendingYear] = useState<number | null>(null)
+	const [lastSelected, setLastSelected] = useState(selectedYear)
+
+	// Dropped during render rather than in an effect. Setting state inside an
+	// effect that runs on every change of `selectedYear` schedules a second
+	// render after the first has already committed, which is the cascade React
+	// warns about; adjusting it here means the component renders once, with the
+	// right answer. This is the documented shape for resetting state when a
+	// prop changes.
+	if (selectedYear !== lastSelected) {
+		setLastSelected(selectedYear)
+		setPendingYear(null)
+	}
+
 	const maxTotal = Math.max(...rows.map((row) => row.total), 1)
 	const displayYear = pendingYear ?? selectedYear
 	const selectedRow = rows.find((row) => row.year === displayYear)
@@ -48,10 +64,6 @@ export function BudgetFiscalYearTiles({ rows, selectedYear, flushTop = false, hr
 		if (nextYear !== selectedYear) setPendingYear(nextYear)
 		router.push(yearHref(nextYear))
 	}
-
-	useEffect(() => {
-		setPendingYear(null)
-	}, [selectedYear])
 
 	return (
 		<section className='mb-10'>

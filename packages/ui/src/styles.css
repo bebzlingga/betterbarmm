@@ -177,6 +177,21 @@
   --accent-deep: #f0907f;
   --accent-soft: #2b1a16;
 
+  /* The chart colours lift with the accent, and for the same reason.
+     `--slate` at #2d3e4f reaches 1.76:1 on this ground — the election's seat
+     map paints its thirty-two district seats with it, and on the dark theme
+     the largest bloc in the chamber was navy dots on near-black, which is a
+     third of the Parliament missing from the picture. `--ochre` cleared the
+     bar at 4.55:1 but sat two full steps below the other two, which reads as
+     one track mattering less than the others rather than as three tracks.
+
+     Both are stepped to land beside the accent's own 6.8:1, and the three
+     hold ΔE 11 under protanopia and 17 under normal vision at these values.
+     `--positive` is a status colour rather than a chart one and keeps its
+     own treatment. */
+  --slate: #7e9cb8;
+  --ochre: #c19a45;
+
   --tone-file-bg: #26201a;
   --tone-file-fg: #c9b39a;
   --tone-early-bg: #1a2233;
@@ -423,10 +438,27 @@ figcaption {
    title is not a heading over an answer — it is the record, and the whole row
    exists to be scanned for it, so it takes the step the copy beneath it does
    not. A modifier rather than a utility at the call site: these primitives are
-   unlayered, so `text-[17px]` on the element would lose to the size set here. */
+   unlayered, so `text-[17px]` on the element would lose to the size set here.
+
+   Fluid, and a real step above the row's own furniture. At a flat 18px the
+   official title — the one thing a reader is scanning a page of four hundred
+   rows for — sat a point or two off the badges, the date and the sector tags
+   around it, so the row read as a block of same-sized parts with nothing
+   leading it. It grows with the window rather than holding one number,
+   because the rows do too. */
 .item-title-lg {
-  font-size: 1.125rem;
-  line-height: 1.35;
+  font-size: clamp(1.375rem, 1.75vw, 1.75rem);
+  line-height: 1.25;
+}
+
+/* The same heading with more weight and no more size, for a title that has to
+   lead a block rather than a row — a term at the head of its own definition,
+   where there is no date or badge column to range against and weight is the
+   only thing marking the term apart from what it means. Here for the reason
+   the note above gives: `.item-title` sets 600 from an unlayered rule, so
+   `font-bold` at the call site would never reach it. */
+.item-title-strong {
+  font-weight: 700;
 }
 
 /* The sentence under a section's claim, and the copy under an item heading —
@@ -680,23 +712,26 @@ figcaption {
 
 /* Search inputs and selects share one look.
 
-   Filled rather than outlined. On a page that is mostly white with hairline
-   rules, an empty white box outlined in the same hairline reads as another
-   divider rather than as something to type in; the fill is what says this one
-   is yours to use. It takes --paper-3 rather than --paper-2, which is the
-   hover tint and too close to white to register as a field.
+   Outlined rather than filled. The fill was there to say "this one is yours
+   to use" on a page of hairlines, and on a toolbar it did the opposite: a
+   long tinted bar next to an outlined button is the heaviest object in the
+   row, and the row is furniture over the records the reader came for. The
+   border and the placeholder are enough to say it takes typing.
 
-   Focus lifts it to the page colour instead of tinting it further. Coming
-   from a grey rest state that is the clearer move — the field goes bright as
-   it takes the cursor — and it keeps the focus ring reading against the
-   lighter ground. */
+   Nothing is painted at rest, so the control sits on whatever ground it is
+   dropped on — the warm paper, the brand band, the dark theme — without a
+   tint of its own to reconcile with any of them.
+
+   Focus is carried by the border and the ring alone, which is why the
+   background comes out of the transition as well: there is no longer a
+   colour there to cross-fade. */
 .field {
   height: 2.75rem;
   width: 100%;
   min-width: 0;
   border: 1px solid var(--rule);
   border-radius: var(--radius-lg);
-  background: var(--paper-3);
+  background: transparent;
   padding-inline: 0.875rem;
   color: var(--ink);
   /* A control, so it reads with the buttons beside it rather than the prose. */
@@ -705,7 +740,6 @@ figcaption {
   outline: none;
   transition:
     border-color 0.16s var(--ease),
-    background-color 0.16s var(--ease),
     box-shadow 0.16s var(--ease);
 }
 
@@ -715,7 +749,6 @@ figcaption {
 
 .field:focus {
   border-color: var(--ink-mute);
-  background: var(--paper);
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--ink) 9%, transparent);
 }
 

@@ -22,8 +22,11 @@ function Fact({ label, value }: { label: string; value: string | string[] }) {
 
 	return (
 		<div>
-			<p className='label label-strong'>{label}</p>
-			<div className='mt-2 bb-body text-[var(--ink-2)]'>
+			{/* The same heading the record page gives its blocks: brass capitals
+			    at the heavier weight, so a member's particulars read as the page's
+			    structure and the answers under them carry the ink. */}
+			<p className='label label-section'>{label}</p>
+			<div className='mt-2.5 bb-body text-[var(--ink-2)]'>
 				{lines.map((line, index) => (
 					<p key={index}>{line}</p>
 				))}

@@ -24,39 +24,6 @@ const peopleLinks = [
 
 const secondaryLinks = [{ href: '/about', label: 'Data & Methodology' }]
 
-/**
- * How the institution works, in our own words.
- *
- * Parliament publishes all of this — as rules citations and statutory prose,
- * which is precise and unreadable. Each page here restates it plainly and
- * cites the rule behind every claim, so the menu keeps a reader on the site
- * instead of handing them a 34-rule document.
- */
-const processLinks = [
-	{
-		href: '/how-parliament-works',
-		label: 'How Parliament works',
-		blurb: 'What it can do, how a measure moves, what a seat costs, and where you can act.',
-	},
-	{
-		href: '/how-parliament-works#the-bill-path',
-		label: 'How a measure becomes law',
-		blurb: 'The path a bill takes, the shorter one a resolution takes, and where you can act.',
-	},
-	{
-		href: '/how-parliament-works#the-job',
-		label: 'What a member actually does',
-		blurb:
-			'The eleven duties the rulebook sets, when the Parliament sits, and what each seat is paid.',
-	},
-	{
-		href: '/questions',
-		label: 'Common questions',
-		blurb:
-			'Short answers to what people actually ask, pointing at the pages that carry the full ones.',
-	},
-]
-
 /** Marks a category whose route exists but whose records aren't compiled yet. */
 function SoonBadge() {
 	return <span className='badge badge-plain badge-idle shrink-0'>Soon</span>
@@ -67,10 +34,8 @@ export function SiteNav() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
 	const [isRegistryOpen, setIsRegistryOpen] = useState(false)
 	const [isPeopleOpen, setIsPeopleOpen] = useState(false)
-	const [isProcessOpen, setIsProcessOpen] = useState(false)
 	const registryRef = useRef<HTMLDivElement>(null)
 	const peopleRef = useRef<HTMLDivElement>(null)
-	const processRef = useRef<HTMLDivElement>(null)
 
 	// `/resolutions/adopted` should light up its own entry, not `/`, so match the
 	// longest href rather than any prefix.
@@ -79,32 +44,28 @@ export function SiteNav() {
 
 	const isRegistryActive = categories.some((category) => isActive(category.href))
 	const isPeopleActive = peopleLinks.some((item) => isActive(item.href))
-	const isProcessActive = processLinks.some((item) => isActive(item.href))
 
 	const closeMenu = () => {
 		setIsMenuOpen(false)
 		setIsRegistryOpen(false)
 		setIsPeopleOpen(false)
-		setIsProcessOpen(false)
 	}
 
 	// A dropdown that only closes by clicking its own trigger feels broken, so
 	// dismiss on Escape and on any pointer landing outside it.
 	useEffect(() => {
-		if (!isRegistryOpen && !isPeopleOpen && !isProcessOpen) return
+		if (!isRegistryOpen && !isPeopleOpen) return
 
 		const onPointerDown = (event: PointerEvent) => {
 			if (!registryRef.current?.contains(event.target as Node)) setIsRegistryOpen(false)
 			if (!peopleRef.current?.contains(event.target as Node)) setIsPeopleOpen(false)
-			if (!processRef.current?.contains(event.target as Node)) setIsProcessOpen(false)
 		}
 
 		const onKeyDown = (event: KeyboardEvent) => {
 			if (event.key !== 'Escape') return
 			setIsRegistryOpen(false)
 			setIsPeopleOpen(false)
-			setIsProcessOpen(false)
-		}
+			}
 
 		document.addEventListener('pointerdown', onPointerDown)
 		document.addEventListener('keydown', onKeyDown)
@@ -113,7 +74,7 @@ export function SiteNav() {
 			document.removeEventListener('pointerdown', onPointerDown)
 			document.removeEventListener('keydown', onKeyDown)
 		}
-	}, [isRegistryOpen, isPeopleOpen, isProcessOpen])
+	}, [isRegistryOpen, isPeopleOpen])
 
 	return (
 		// A hairline under the bar, so a page scrolling beneath it has an edge to
@@ -130,7 +91,7 @@ export function SiteNav() {
 				    rather than wherever the mark and controls leave room. */}
 				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[1fr_auto_1fr] items-center gap-4'>
 					<div className='flex min-w-0 items-center gap-3'>
-						<Link href='/' onClick={closeMenu} className='w-fit shrink-0'>
+						<a href='https://betterbarmm.com' onClick={closeMenu} className='w-fit shrink-0'>
 							{/* `priority` because the mark sits at the top of every page —
 							    lazy-loading it would leave a gap on first paint. */}
 							<Image
@@ -151,7 +112,7 @@ export function SiteNav() {
 								className='logo-dark'
 								style={{ height: 26, width: 'auto' }}
 							/>
-						</Link>
+						</a>
 						{/* The wordmark says BetterBARMM; this says which of its
 						    workspaces you are in. Set as a label rather than as a link's
 						    worth of body copy, so it reads as part of the mark. */}
@@ -257,59 +218,29 @@ export function SiteNav() {
 							</div>
 						</div>
 
-						{/* Parliament's own rules, kept in a menu of their own so it is
-						    obvious these lead off the site. */}
-						<div ref={processRef} className='relative'>
-							<button
-								type='button'
-								aria-expanded={isProcessOpen}
-								aria-haspopup='menu'
-								aria-controls='process-menu'
-								onClick={() => setIsProcessOpen((current) => !current)}
-								data-active={isProcessActive}
-								data-open={isProcessOpen}
-								className='nav-item flex cursor-pointer items-center gap-1.5'
-							>
-								How Parliament works
-								<CaretDownIcon
-									size={13}
-									weight='bold'
-									aria-hidden='true'
-									className={`text-[var(--ink-mute)] transition-transform duration-200 ${isProcessOpen ? 'rotate-180' : ''}`}
-								/>
-							</button>
+						{/* The registry counted rather than read one record at a time — what
+						    the chamber actually legislates about. Plain links and not menus:
+						    each is one page, and a caret that opens onto a single entry is a
+						    control that wastes the click it asks for.
 
-							<div
-								id='process-menu'
-								className={`absolute right-0 top-full z-40 mt-3 w-[22rem] border border-[var(--ink)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-[var(--brass)] before:content-[''] transition duration-200 ${
-									isProcessOpen
-										? 'visible translate-y-0 opacity-100'
-										: 'invisible -translate-y-1 opacity-0'
-								}`}
+						    The two sit together on purpose. The first is the figures; the
+						    second is where they came from and where they fall short, which
+						    is the question the first one raises. It was in the phone menu
+						    and nowhere in the bar. */}
+						<Link href='/stats' data-active={isActive('/stats')} className='nav-item'>
+							Stats
+						</Link>
+
+						{secondaryLinks.map((item) => (
+							<Link
+								key={item.href}
+								href={item.href}
+								data-active={isActive(item.href)}
+								className='nav-item'
 							>
-								{processLinks.map((item) => (
-									<Link
-										key={item.href}
-										href={item.href}
-										onClick={closeMenu}
-										data-active={isActive(item.href)}
-										className='nav-menu-item !block data-[active=true]:font-semibold data-[active=true]:text-[var(--accent)]'
-									>
-										<span>{item.label}</span>
-										{/* A shade lighter than the label above it: the blurb is there to
-										    be glanced at, not read down a list of three. `font-normal`
-										    holds it there when the entry is active — the bold marks which
-										    page you are on, and that is the label's job, not the blurb's. */}
-										{/* Off the body size on purpose. `.bb-body` is the estate's reading
-										    measure and this is a menu: three of these stacked at reading size
-										    turn a list of links into a page of prose to scan before choosing. */}
-										<span className='mt-1 block text-[12.5px] font-normal leading-[1.45] text-[var(--ink-mute)]'>
-											{item.blurb}
-										</span>
-									</Link>
-								))}
-							</div>
-						</div>
+								{item.label}
+							</Link>
+						))}
 					</nav>
 
 					<div className='flex items-center justify-end gap-1.5'>
@@ -419,19 +350,16 @@ export function SiteNav() {
 							))}
 						</div>
 
-						<p className='bb-label mt-7'>How Parliament works</p>
+						<p className='bb-label mt-7'>Stats</p>
 						<div className='mt-3 grid'>
-							{processLinks.map((item) => (
-								<Link
-									key={item.href}
-									href={item.href}
-									onClick={closeMenu}
-									data-active={isActive(item.href)}
-									className='border-b border-[var(--rule-soft)] py-2.5 data-[active=true]:font-semibold data-[active=true]:text-[var(--accent)]'
-								>
-									{item.label}
-								</Link>
-							))}
+							<Link
+								href='/stats'
+								onClick={closeMenu}
+								data-active={isActive('/stats')}
+								className='border-b border-[var(--rule-soft)] py-2.5 data-[active=true]:font-semibold data-[active=true]:text-[var(--accent)]'
+							>
+								The registry, counted
+							</Link>
 						</div>
 
 						<p className='bb-label mt-7'>Project</p>

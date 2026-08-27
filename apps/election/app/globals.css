@@ -19,3 +19,26 @@
 .timeline-scroll::-webkit-scrollbar {
   display: none;
 }
+
+/* ============================================================
+   The election room's own cloth
+
+   A tally rather than a textile: four uprights and the fifth stroke laid
+   across them, tiled. It is the mark every counting in the world makes,
+   and this workspace is about a count that has not happened yet — the
+   ground says what the room is for before a word of it is read.
+
+   Everything except the tile is the estate's: the 64px scale, the
+   hairline, the brass, the opacity, the mask that fades it out under the
+   type. Same weaving, different cloth.
+   ============================================================ */
+
+:root {
+  --bb-lattice: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23a8813f' stroke-width='1' stroke-opacity='0.32' stroke-linecap='round'%3E%3Cpath d='M8 8 V28 M16 8 V28 M24 8 V28 M32 8 V28 M4 26 L36 10'/%3E%3Cpath d='M40 36 V56 M48 36 V56 M56 36 V56'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+:root[data-theme="dark"],
+.bb-ground,
+.bb-crimson {
+  --bb-lattice-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23d3a95f' stroke-width='1' stroke-opacity='0.34' stroke-linecap='round'%3E%3Cpath d='M8 8 V28 M16 8 V28 M24 8 V28 M32 8 V28 M4 26 L36 10'/%3E%3Cpath d='M40 36 V56 M48 36 V56 M56 36 V56'/%3E%3C/g%3E%3C/svg%3E");
+}

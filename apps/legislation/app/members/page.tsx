@@ -41,7 +41,13 @@ export default function MembersPage() {
 						    the room on the right holds the note apart from the list. */}
 						<div className='lg:pr-12 xl:pr-24'>
 							<p className='eyebrow'>Coverage</p>
-							<h2 className='mt-3 text-xl font-semibold leading-tight text-[var(--ink)] sm:text-2xl'>
+							{/* The estate's section heading rather than a one-off size: this
+							    is an h2 opening a block, the same job the heading over every
+							    other section does, and it was the only one set in the body
+							    face at body weight. `section-title-sm` is that primitive at
+							    the step a two-fifths column can hold — the full cut runs to
+							    3rem and would break this line four ways. */}
+							<h2 className='section-title section-title-sm mt-3 text-[var(--ink)]'>
 								Known gaps in this dataset
 							</h2>
 							<p className='mt-4 bb-body text-[var(--ink-2)]'>{dataset.coverageNote}</p>

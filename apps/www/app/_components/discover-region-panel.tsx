@@ -42,7 +42,9 @@ function Stat({
 			<p className='mt-4 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--brass)]'>
 				{label}
 			</p>
-			<p className='mt-2.5 bb-body text-[var(--ink-2)]'>{note}</p>
+			<p className='mt-2.5 text-[13.5px] leading-[var(--leading-body)] text-[var(--ink-2)]'>
+				{note}
+			</p>
 		</div>
 	)
 }
@@ -187,7 +189,7 @@ export function DiscoverRegionPanel({
 						/>
 
 						<a
-							href='/soon'
+							href='https://election.betterbarmm.com'
 							className='group mt-6 flex items-center justify-between gap-4 border-t border-[var(--brass-line)] py-5 transition hover:border-[var(--accent)]'
 						>
 							<span>
@@ -213,7 +215,7 @@ export function DiscoverRegionPanel({
 				    a hole under the shorter one. */}
 				<Stagger
 					gap={0.09}
-					className='mt-16 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:mt-24 lg:grid-cols-4'
+					className='mt-16 grid grid-cols-2 gap-x-6 gap-y-10 sm:gap-x-10 sm:gap-y-12 lg:mt-24 lg:grid-cols-4'
 				>
 					<StaggerItem>
 						<Stat

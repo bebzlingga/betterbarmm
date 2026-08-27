@@ -24,6 +24,26 @@
    than a page, and it wants a measure and a rhythm of its own.
    ============================================================ */
 
+/* ============================================================
+   The page ground
+
+   The editorial layer runs `#fbf9f5`, a warm cream tuned for the
+   landing site's photographs. This is a register: pages of hairline
+   rules, tables, badges and small type, with no photography to sit
+   against. At that weight the cream reads as a tint over the record
+   rather than as paper, and the surfaces above it — `--paper-2` for a
+   hover, `--paper-3` for a sunken cell — lose the little distance they
+   have from it.
+
+   Two thirds of the way to white, which is the same step the landing
+   site takes. Scoped here rather than changed at the token, so the
+   editorial layer keeps the ground it was designed on.
+   ============================================================ */
+
+:root {
+  --paper: #fdfcfa;
+}
+
 /* ---- The reading column ----
 
    A record page is read rather than scanned, so its prose takes a real
@@ -75,4 +95,226 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--ink-3);
+}
+
+/* ---- What the laws actually give you ----
+
+   The entitlement on each card is the thing worth reading — "7 days of
+   paid leave", "your employer pays the recruitment costs" — and it was
+   set at body size, one weight above the sentence under it. In a
+   three-up grid that made six cards of undifferentiated grey where the
+   headline is the whole point of the block.
+
+   A size of its own rather than `.item-title-lg`: that step exists for a
+   row in a registry listing, where the title is a record among hundreds.
+   This is a claim, and it is allowed to be read from further away.
+
+   The display face at 700, which is where the rest of the estate puts a
+   claim — `.section-title` is the same family a step further up. The body
+   face at 600 was a heading of a paragraph; this is the sentence the card
+   exists to say, and it should be readable at the distance the section
+   title is. Tracking comes in as the size goes up, the way it does on
+   every other display setting here.
+
+   Set here rather than as a utility at the call site for the reason the
+   `.item-title-lg` note gives: these primitives are unlayered, and an
+   unlayered rule outranks any Tailwind class. */
+
+.fact-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 1.6vw, 1.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.022em;
+}
+
+/* ---- The registry's own masthead leading ----
+
+   `.bb-display-lg` runs at 0.84, which is right for the landing site's
+   mastheads: each given line there is two or three words and never wraps,
+   so the leading is only ever setting the gap between one line and the
+   next. The registry opens on a full sentence — "Every law, from filing
+   to page one." — which wraps on anything narrower than a wide desktop,
+   and at that size 0.84 runs the descenders of the first row into the
+   capitals of the second.
+
+   Loosened only here, and only on the hero cut. The shared value stays
+   as it is for the pages it was tuned on. */
+
+.reg-hero-title {
+  line-height: 0.94;
+}
+
+/* ---- A badge that is not a status ----
+
+   The five steps of the compilation each say what was done to the record —
+   taken verbatim, generated, reviewed. That is a kind, not a stage, and the
+   badge tones in the shared layer are all stages: a green "done" beside
+   "Verbatim" would read as somewhere a measure had got to.
+
+   So it takes the brass, which is the estate's furniture colour and carries
+   no legislative meaning at all. Both tokens flip with the theme, so the tint
+   and the ink stay legible on either ground. */
+
+.badge-treatment {
+  background: color-mix(in srgb, var(--brass) 15%, transparent);
+  color: var(--brass-deep);
+}
+
+/* ---- The archive name in the inventory ----
+
+   Each row of the dataset inventory opens with the archive it describes —
+   "Bangsamoro Autonomy Acts", "Implementing Rules and Regulations" — and it
+   was set at body size in the body face, a step under the gaps listed beside
+   it. The name is what the row is; the gaps are what it says about itself.
+
+   The display face at 700, the same treatment `.fact-title` gives a claim on
+   the front page, one step down for a row rather than a card. Set here for
+   the reason the `.item-title-lg` note gives: these primitives are unlayered,
+   so a Tailwind `font-bold` on the element would lose to the weight the
+   primitive sets. */
+
+.reg-archive-title {
+  font-family: var(--font-display);
+  font-size: 1.1875rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+}
+
+/* ============================================================
+   The subject treemap
+
+   Four shades of the register's own crimson, stepped by rank so larger areas
+   sit deeper in it. They are mixed from `--accent` into the page's own ground
+   rather than written out as four hex values, which is what makes the set a
+   ramp of one colour instead of four colours that happen to be related — and
+   what lets it flip with the theme on its own. On paper the mix runs from a
+   pale tint to the accent at full strength; on the dark ground the same
+   percentages run from a near-black wash up to the lifted crimson, so the
+   order holds without a second set of values.
+
+   What cannot follow the mix is the ink on top of it, because which end of the
+   ramp is dark changes with the theme. Each step names its own, and every pair
+   clears 4.5:1 against the tile it sits on — measured, not guessed. On paper
+   the two pale steps take the page's ink and the two deep ones take white; on
+   the dark theme only the last step is light enough to need dark ink.
+
+   Colour agrees with the area rather than adding to it: the measurement is the
+   tile's size, and every tile carries its own name and count as text.
+   ============================================================ */
+
+:root {
+  --tm-1: color-mix(in srgb, var(--accent) 20%, var(--paper));
+  --tm-2: color-mix(in srgb, var(--accent) 45%, var(--paper));
+  --tm-3: color-mix(in srgb, var(--accent) 72%, var(--paper));
+  --tm-4: var(--accent);
+
+  --tm-on-1: var(--ink);
+  --tm-on-2: var(--ink);
+  --tm-on-3: #ffffff;
+  --tm-on-4: #ffffff;
+}
+
+:root[data-theme="dark"] {
+  --tm-on-1: #ffffff;
+  --tm-on-2: #ffffff;
+  --tm-on-3: #ffffff;
+  --tm-on-4: #14120e;
+}
+
+.tm-tile {
+  overflow: hidden;
+}
+
+.tm-1 {
+  background: var(--tm-1);
+  color: var(--tm-on-1);
+}
+
+.tm-2 {
+  background: var(--tm-2);
+  color: var(--tm-on-2);
+}
+
+.tm-3 {
+  background: var(--tm-3);
+  color: var(--tm-on-3);
+}
+
+.tm-4 {
+  background: var(--tm-4);
+  color: var(--tm-on-4);
+}
+
+/* The label wears the tile's ink rather than a text token — the one place the
+   estate allows it, because the text is set inside the fill and the fill is
+   what it has to clear. */
+.tm-label {
+  font-family: var(--font-display);
+  font-size: 11.5px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+}
+
+.tm-value {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- A heading inside a record ----
+
+   The capitals over "Authors", "Appropriation", "Who would implement it" and
+   the rest of a record's blocks. They were `.label-strong`, which is the page's
+   own ink — the same weight of colour as the answer under it — so a record read
+   as a column of questions with answers between them rather than the other way
+   round.
+
+   Brass rather than the page's ink, and heavier than the primitive sets. The
+   pair is what makes small capitals read as furniture rather than as a first
+   line of the block underneath: a colour that is nowhere else in the reading
+   column marks them as the page's own structure, and the weight lets them
+   carry that colour at nine points without going faint.
+
+   The brass and not the crimson, though both are the estate's own. Crimson is
+   spent once per screen on the thing being asked of the reader; a record page
+   carries a dozen of these headings, and a dozen crimson capitals down one
+   column would leave nothing for the one place it is meant to land.
+
+   Set here because `.label` is unlayered: a Tailwind colour or weight at the
+   call site would lose to the primitive. */
+
+.label-section {
+  font-weight: 800;
+  color: var(--brass);
+}
+
+/* ============================================================
+   The registry's own cloth
+
+   Inaul, the Maguindanaon handloom, reduced to what survives at 64px: a
+   band of weft crossing a warp, with the shed opening at the crossing. It
+   is the right cloth for this room — the inaul is woven a row at a time
+   and the pattern only exists once the rows are counted, which is what a
+   register is.
+
+   Everything except the tile is the estate's: the scale, the hairline, the
+   brass, the opacity, the mask that fades it out under the type. Read
+   beside the landing site's head-cloth it is plainly the same weaving and
+   plainly not the same cloth, which is the whole of what a workspace
+   ground has to say.
+   ============================================================ */
+
+:root {
+  --bb-lattice: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23a8813f' stroke-width='1' stroke-opacity='0.32'%3E%3Cpath d='M0 16 H64 M0 48 H64'/%3E%3Cpath d='M16 0 V64 M48 0 V64'/%3E%3Cpath d='M16 16 L32 32 L16 48 M48 16 L32 32 L48 48'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+:root[data-theme="dark"],
+.bb-ground,
+.bb-crimson {
+  --bb-lattice-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23d3a95f' stroke-width='1' stroke-opacity='0.34'%3E%3Cpath d='M0 16 H64 M0 48 H64'/%3E%3Cpath d='M16 0 V64 M48 0 V64'/%3E%3Cpath d='M16 16 L32 32 L16 48 M48 16 L32 32 L48 48'/%3E%3C/g%3E%3C/svg%3E");
 }

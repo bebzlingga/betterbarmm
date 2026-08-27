@@ -1,20 +1,28 @@
 import type { StaticImageData } from 'next/image'
 
 import agung from '../_images/discover/agung.jpg'
+import armmRegionalCenter from '../_images/discover/armm-regional-center.jpg'
 import bataTransitionPlan from '../_images/discover/bta-transition-plan.jpg'
 import bolRatification from '../_images/discover/bol-ratification.jpg'
+import bolPresentation from '../_images/discover/bol-presentation.jpg'
 import btaFirstSession from '../_images/discover/bta-first-session.jpg'
 import budBongao from '../_images/discover/bud-bongao.jpg'
 import cabinet from '../_images/discover/cabinet.jpg'
 import chiefMinisterOffice from '../_images/discover/chief-minister-office.jpg'
+import corregidor from '../_images/discover/corregidor.jpg'
 import cotabatoPlaza from '../_images/discover/cotabato-plaza.jpg'
 import governmentCenter from '../_images/discover/government-center.jpg'
+import fab2012 from '../_images/discover/fab-2012.jpg'
+import iqbalAquino from '../_images/discover/iqbal-aquino.jpg'
 import kulintang from '../_images/discover/kulintang.jpg'
 import lakeLanao from '../_images/discover/lake-lanao.jpg'
 import makhdumMosque from '../_images/discover/makhdum-mosque.jpg'
 import malong from '../_images/discover/malong.jpg'
 import marawiGrandMosque from '../_images/discover/marawi-grand-mosque.jpg'
 import marawiIslamicCenter from '../_images/discover/marawi-islamic-center.jpg'
+import milfVeterans from '../_images/discover/milf-veterans.jpg'
+import mnlfVeterans from '../_images/discover/mnlf-veterans.jpg'
+import nurMisuari from '../_images/discover/nur-misuari.jpg'
 import moaAdMap from '../_images/discover/moa-ad-map.jpg'
 import panampangan from '../_images/discover/panampangan.jpg'
 import panolong from '../_images/discover/panolong.jpg'
@@ -25,6 +33,7 @@ import pastil from '../_images/discover/pastil.jpg'
 import paterPalapa from '../_images/discover/pater-palapa.jpg'
 import pisSiyabit from '../_images/discover/pis-siyabit.jpg'
 import singkil from '../_images/discover/singkil.jpg'
+import suluSultan1905 from '../_images/discover/sulu-sultan-1905.jpg'
 import tausugAttire from '../_images/discover/tausug-attire.jpg'
 import tepoMat from '../_images/discover/tepo-mat.jpg'
 import tiyulaItum from '../_images/discover/tiyula-itum.jpg'
@@ -102,6 +111,88 @@ export const discoverPhotos = {
 		credit: 'Bangsamoro Regional Government',
 		license: 'Public domain',
 		source: 'https://commons.wikimedia.org/wiki/File:BARMM_BTA_First_Session,_Wali_Nando_and_CM_Ebrahim.jpg',
+	},
+	suluSultan1905: {
+		src: suluSultan1905,
+		alt: 'A 1905 group portrait: the American military governor of Sulu seated beside Sultan Jamalul Kiram II, with officials and hadjis standing behind them.',
+		caption:
+			'Major Hugh Scott, American military governor of Sulu, seated beside Sultan Jamalul Kiram II with local officials, 1905.',
+		credit: 'Library of Congress, Prints & Photographs Division',
+		license: 'Public domain',
+		source:
+			'https://commons.wikimedia.org/wiki/File:Major_Hugh_Scott,_Military_Governor_of_the_Sulu_Archipelago,_Philippines,_Sultan_Jamalul_Kiram_II,_interpreter_Charles_Schuck,_and_local_government_officials_and_hadjis,_dressed_to_call_on_LCCN2016650207.jpg',
+	},
+	corregidor: {
+		src: corregidor,
+		alt: 'Corregidor Island seen low from the water at the entrance to Manila Bay, its ridge dark against a pale sky.',
+		caption:
+			'Corregidor Island, where Moro trainees were reported killed in March 1968 — the Jabidah incident. Photographed 2020.',
+		credit: 'Mercyreyes888',
+		license: 'CC BY-SA 4.0',
+		source: 'https://commons.wikimedia.org/wiki/File:Corregidor_island.jpg',
+	},
+	mnlfVeterans: {
+		src: mnlfVeterans,
+		alt: 'An elderly MNLF veteran in camouflage and a black beret bearing a Bangsa Moro badge, other fighters behind him.',
+		caption: 'Veterans of the Moro National Liberation Front in uniform, photographed in 2009.',
+		credit: 'Keith Bacongco',
+		license: 'CC BY 2.0',
+		source: 'https://commons.wikimedia.org/wiki/File:MNLF_045_(3335118474).jpg',
+	},
+	milfVeterans: {
+		src: milfVeterans,
+		alt: 'Two older fighters of the Moro Islamic Liberation Front in camouflage, sleeve patches bearing the front\'s emblem.',
+		caption:
+			'Fighters of the Moro Islamic Liberation Front — the front that formed in 1984 became the largest Bangsamoro armed movement.',
+		credit: 'Morsid Kadir / Bangsamoro Information Office',
+		license: 'Public domain',
+		source: 'https://commons.wikimedia.org/wiki/File:MILF_mujahideen_veterans.jpg',
+	},
+	armmRegionalCenter: {
+		src: armmRegionalCenter,
+		alt: 'The facade of the ARMM Regional Center in Cotabato City, its concrete screen cut in Islamic geometric pattern.',
+		caption: 'The ARMM Regional Center in Cotabato City — the seat of the region BARMM replaced.',
+		place: 'Cotabato City',
+		credit: 'Shubert Ciencia',
+		license: 'CC BY 2.0',
+		source: 'https://commons.wikimedia.org/wiki/File:ARMM_Regional_Center_architectural_details.jpg',
+	},
+	nurMisuari: {
+		src: nurMisuari,
+		alt: 'Nur Misuari in a dark suit, photographed in 2007.',
+		caption:
+			'Nur Misuari, who founded the MNLF and became ARMM governor under the 1996 peace agreement. Photographed 2007.',
+		credit: 'Jfkassad',
+		license: 'Public domain',
+		source: 'https://commons.wikimedia.org/wiki/File:Nur_Misuari.jpg',
+	},
+	fab2012: {
+		src: fab2012,
+		alt: 'Malaysian Prime Minister Najib Razak signing a book at a table in Malacañan Palace as President Aquino watches.',
+		caption:
+			'Malaysian Prime Minister Najib Razak at Malacañan Palace on 15 October 2012 — the day the Framework Agreement was signed. Malaysia brokered the talks.',
+		credit: 'Malacañang Photo Bureau',
+		license: 'Public domain',
+		source:
+			'https://commons.wikimedia.org/wiki/File:Benigno_S._Aquino_III_Najib_Tun_Razak_at_the_Malaca%C3%B1an_Palace_in_2012_(2).jpg',
+	},
+	iqbalAquino: {
+		src: iqbalAquino,
+		alt: 'Mohagher Iqbal and President Benigno Aquino III shaking hands over a bound report before the Philippine seal.',
+		caption:
+			'MILF peace panel chair Mohagher Iqbal, who signed the Comprehensive Agreement for the front in 2014, hands President Aquino the transition commission\'s final report in 2016.',
+		credit: 'Joseph Vidal / Malacañang Photo Bureau',
+		license: 'Public domain',
+		source: 'https://commons.wikimedia.org/wiki/File:Mohagher_Iqbal_and_Benigno_Aquino_III.jpg',
+	},
+	bolPresentation: {
+		src: bolPresentation,
+		alt: 'President Duterte with legislators, peace negotiators and MILF officials at the presentation of the Bangsamoro Organic Law.',
+		caption:
+			'The presentation of the Bangsamoro Organic Law to the MILF, August 2018, a month after Republic Act 11054 was signed.',
+		credit: 'King Rodriguez / Presidential Communications Operations Office',
+		license: 'Public domain',
+		source: 'https://commons.wikimedia.org/wiki/File:BOL_Presentation_to_MILF,_Duterte.jpg',
 	},
 	btaTransitionPlan: {
 		src: bataTransitionPlan,

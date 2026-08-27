@@ -10,9 +10,7 @@ import {
 	formatDate,
 	getPartyById,
 	getPartyIds,
-	getSourcesViewModel,
 	groupDistrictCandidates,
-	type Source,
 } from '../../_lib/election-data'
 import { displayName } from '../../_lib/names'
 
@@ -46,27 +44,16 @@ export default async function PartyDetailPage({
 		notFound()
 	}
 
-	const { sources } = getSourcesViewModel()
-	const sourceById = new Map<string, Source>(sources.map((source) => [source.id, source]))
-	const referencedSources = (party.source_ids ?? [])
-		.map((sourceId) => sourceById.get(sourceId))
-		.filter((source): source is Source => Boolean(source))
-
 	const districtGroups = groupDistrictCandidates(party.district)
-	const nominees2026 = party.party_representative_nominees_2026
-	const legacy = party.legacy_party_representative_nominees_2025_reference
-
-	const facts = [
-		{ value: party.party_representative_seats_vying_for ?? 0, label: 'Seats vying for' },
-		{ value: party.computedStats.sectoralCandidates, label: 'Sectoral links' },
-		{ value: party.computedStats.districtCocFilers, label: 'District filers' },
-	]
 
 	return (
 		<ElectionShell>
 			{/* ---- The entry ---- */}
 			<section className='bb-lattice relative overflow-hidden'>
-				<OkirBloom className='absolute -right-[14%] -top-[38%] size-[min(44rem,86vw)] opacity-[0.15]' />
+				<OkirBloom
+					variant='tally'
+					className='absolute -right-[14%] -top-[38%] size-[min(44rem,86vw)] opacity-[0.15]'
+				/>
 
 				<div className='bb-container relative pb-16 pt-14 lg:pb-24 lg:pt-20'>
 					<Rise distance={12}>
@@ -98,59 +85,29 @@ export default async function PartyDetailPage({
 
 					<Rise delay={0.12} distance={16}>
 						<div className='mt-7 flex flex-wrap items-center gap-5'>
-							<PartyMark partyId={party.party_id} ballotName={party.ballot_name} size={72} />
+							<PartyMark partyId={party.party_id} ballotName={party.ballot_name} size={144} />
 							<h1 className='bb-display text-[var(--ink)]'>{party.ballot_name}</h1>
 						</div>
 					</Rise>
 
 					<Rise delay={0.2} distance={14}>
-						<p className='bb-measure mt-6 text-[17px] font-semibold leading-8 text-[var(--ink)]'>
+						<p className='mt-6 max-w-[52rem] text-[17px] font-semibold leading-8 text-[var(--ink)]'>
 							{party.full_name}
 						</p>
 					</Rise>
 
 					{party.description ? (
 						<Rise delay={0.26} distance={14}>
-							<p className='bb-measure mt-5 bb-body text-[var(--ink-2)]'>{party.description}</p>
+							{/* Wider than the estate's reading measure, like the mastheads.
+						    This is a sentence read once under a name at display size, not a
+						    column somebody settles into; at 34em it stacked into a narrow
+						    stripe beside a very large heading. */}
+						<p className='mt-5 max-w-[52rem] text-[17px] leading-8 text-[var(--ink-2)]'>
+							{party.description}
+						</p>
 						</Rise>
 					) : null}
 
-					{party.cmNominee ? (
-						<Rise delay={0.32} distance={12}>
-							<div className='mt-7 inline-flex items-center gap-4 border border-[var(--brass-line)] p-3 pr-5'>
-								<PersonAvatar name={party.cmNominee} size={52} />
-								<div>
-									<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
-										Chief-minister nominee
-									</p>
-									<p className='mt-1.5 text-[17px] font-bold leading-none text-[var(--ink)]'>
-										{party.cmNominee}
-									</p>
-								</div>
-							</div>
-						</Rise>
-					) : null}
-
-					<Rise delay={0.4} distance={14}>
-						<dl className='mt-12 flex flex-wrap gap-x-10 gap-y-6 border-t border-[var(--brass-line)] pt-6'>
-							{facts.map((fact) => (
-								<div key={fact.label}>
-									<dd className='bb-figure-sm text-[var(--ink)]'>{fact.value}</dd>
-									<dt className='mt-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
-										{fact.label}
-									</dt>
-								</div>
-							))}
-						</dl>
-					</Rise>
-
-					{party.aliases && party.aliases.length > 0 ? (
-						<Rise delay={0.46} distance={12}>
-							<p className='mt-6 font-mono text-[10px] font-semibold uppercase leading-6 tracking-[0.14em] text-[var(--ink-3)]'>
-								Also known as: {party.aliases.join(' · ')}
-							</p>
-						</Rise>
-					) : null}
 				</div>
 
 				<div className='bb-weave' aria-hidden='true' />
@@ -159,121 +116,70 @@ export default async function PartyDetailPage({
 			{/* ---- Background ---- */}
 			{party.background ? (
 				<section className='bb-container bb-section'>
-					<SectionHead
-						index='01'
-						eyebrow='Background'
-						title='Where this'
-						titleMuted='entry comes from.'
-						lead='Gathered from public reporting rather than from the certified list, and marked accordingly.'
-						aside={<ConfidenceBadge confidence='reference' />}
-					/>
-
-					<div className='mt-12 grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:gap-16'>
-						<Rise distance={14}>
-							<div>
-								<p className='bb-measure bb-body text-[var(--ink-2)]'>
-									{party.background.background}
-								</p>
-								{party.background.source_url ? (
-									<p className='mt-6 break-words font-mono text-[10px] font-semibold uppercase leading-6 tracking-[0.14em] text-[var(--ink-3)]'>
-										Source:{' '}
-										<a
-											href={party.background.source_url}
-											target='_blank'
-											rel='noreferrer'
-											className='rule-link'
-										>
-											{party.background.source_url}
-										</a>
-										{party.background.source_date
-											? ` · ${formatDate(party.background.source_date)}`
-											: ''}
-									</p>
-								) : null}
-							</div>
-						</Rise>
-
-						{party.background.affiliation ||
-						(party.background.leaders && party.background.leaders.length > 0) ? (
-							<Rise delay={0.12} distance={14}>
-								<div className='flex flex-col gap-8 border-t border-[var(--brass-line)] pt-6 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0'>
-									{party.background.affiliation ? (
-										<div>
-											<p className='bb-label'>Affiliation</p>
-											<p className='mt-3 bb-body text-[var(--ink-2)]'>
-												{party.background.affiliation}
-											</p>
-										</div>
-									) : null}
-
-									{party.background.leaders && party.background.leaders.length > 0 ? (
-										<div>
-											<p className='bb-label'>Reported figures</p>
-											<ul className='mt-3'>
-												{party.background.leaders.map((leader) => (
-													<li
-														key={leader}
-														className='flex items-baseline gap-2.5 border-b border-[var(--rule-soft)] py-2 bb-body text-[var(--ink-2)]'
-													>
-														<span
-															aria-hidden='true'
-															className='mt-1.5 size-1.5 shrink-0 rotate-45 bg-[var(--brass)]'
-														/>
-														<span className='min-w-0 break-words'>{leader}</span>
-													</li>
-												))}
-											</ul>
-										</div>
-									) : null}
-								</div>
-							</Rise>
-						) : null}
+					{/* The party's own account, under a label rather than a headline.
+					    "Where this entry comes from." was a display line about the
+					    record's provenance standing over the one paragraph anybody came
+					    here to read — the background itself. The provenance is still
+					    said, in the badge and in the source line under the prose, which
+					    is where a caveat belongs. */}
+					<div className='flex flex-wrap items-center justify-between gap-4'>
+						<p className='bb-label'>Background</p>
+						<ConfidenceBadge confidence='reference' />
 					</div>
+
+					{/* One column. The affiliation and the reported figures sat in a
+					    sidebar beside this — two short lists that repeated what the badge
+					    row at the head of the page and the background itself already say.
+					    With them gone the account has the section to itself, which is
+					    what it was always the point of.
+
+					    Full width, as asked. Worth knowing: at the container's 88rem a
+					    17px line runs past two hundred characters, which is roughly three
+					    times the measure prose is comfortable at — say the word and I
+					    will cap it. */}
+					<Rise distance={14}>
+						<div className='mt-10'>
+							<p className='text-[17px] leading-8 text-[var(--ink-2)]'>
+								{party.background.background}
+							</p>
+							{party.background.source_url ? (
+								<p className='mt-6 break-words font-mono text-[10px] font-semibold uppercase leading-6 tracking-[0.14em] text-[var(--ink-3)]'>
+									Source:{' '}
+									<a
+										href={party.background.source_url}
+										target='_blank'
+										rel='noreferrer'
+										className='rule-link'
+									>
+										{party.background.source_url}
+									</a>
+									{party.background.source_date
+										? ` · ${formatDate(party.background.source_date)}`
+										: ''}
+								</p>
+							) : null}
+						</div>
+					</Rise>
 				</section>
 			) : null}
 
-			{/* ---- Who fills the seats ---- */}
-			<section className='bb-container bb-section-bottom'>
-				<SectionHead
-					index='02'
-					eyebrow='Nominees'
-					title='Who fills the seats'
-					titleMuted='this party wins.'
-					lead='Party-representative seats are filled from a list the party files, not from the ballot. Which list is in force is the thing to watch here.'
-				/>
-
-				<Rise distance={14}>
-					<dl className='mt-12 grid gap-px border border-[var(--rule)] bg-[var(--rule)] md:grid-cols-2'>
-						<div className='bg-[var(--paper)] p-6'>
-							<dt className='flex flex-wrap items-center gap-2.5'>
-								<span className='bb-label'>2026 nominees</span>
-								<ConfidenceBadge confidence='working' />
-							</dt>
-							<dd className='mt-4 bb-body text-[var(--ink-2)]'>
-								{nominees2026?.note ??
-									'The official 2026 list of nominees has not been imported into this workspace yet.'}
-							</dd>
-						</div>
-						<div className='bg-[var(--paper)] p-6'>
-							<dt className='flex flex-wrap items-center gap-2.5'>
-								<span className='bb-label'>2025 reference</span>
-								<ConfidenceBadge confidence='legacy' />
-							</dt>
-							<dd className='mt-4 bb-body text-[var(--ink-2)]'>
-								{legacy?.warning ?? 'No legacy 2025 nominee list is attached to this party.'}
-							</dd>
-						</div>
-					</dl>
-				</Rise>
-			</section>
-
 			{/* ---- The people running under it ---- */}
+			{/* On the page's own paper. It sat on the dark band, which is the
+			    treatment this estate keeps for a single figure or a closing ask —
+			    a hundred names, two grids and a set of plates on it made the page's
+			    longest section its heaviest, and the party colours had to fight the
+			    ground to be read. */}
+			{/* Closer to the background above it than a full section step. The two
+			    are one account of the same party — what it is, then who is standing
+			    under it — and with the sidebar and the nominee section gone the page
+			    is short enough that a full rhythm between them read as a gap where
+			    something had been removed. */}
 			{party.sectoral.length > 0 || party.district.length > 0 ? (
-				<section className='bb-ground bb-grain bb-lattice relative isolate overflow-hidden border-y border-[var(--rule)] py-16 lg:py-24'>
-					<div className='bb-container'>
+				<section className='bb-container bb-section-bottom scroll-mt-24 pt-8 lg:pt-12'>
+					<div>
 						<SectionHead
-							index='03'
-							eyebrow='On the ballot'
+							index='02'
+							eyebrow='Candidates'
 							title='The names carrying'
 							titleMuted='this label.'
 							lead='Sectoral nominees come from the regional certified list. District filers are working records from reporting on COMELEC filings, and a label reported in a district is not always one of the regional ballot entries.'
@@ -281,20 +187,27 @@ export default async function PartyDetailPage({
 
 						{party.sectoral.length > 0 ? (
 							<div className='mt-12'>
-								<div className='flex flex-wrap items-baseline justify-between gap-3 border-t border-[var(--brass-line)] pt-6'>
-									<h3 className='bb-display-sm text-[var(--ink)]'>Sectoral nominees</h3>
+								<div className='flex flex-wrap items-baseline justify-between gap-3'>
+									{/* A step down from the display scale, the same one the bloc
+									    headings on the candidates page take. These label a list inside
+									    a section that already has its own head above it; at
+									    `bb-display-sm` they ran to fifty points and read as two more
+									    sections opening. */}
+									<h3 className='section-title section-title-sm text-[var(--ink)]'>
+										Sectoral nominees
+									</h3>
 									<p className='num font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 										{party.sectoral.length}
 									</p>
 								</div>
 
-								<div className='mt-6 grid gap-px bg-[var(--rule)] sm:grid-cols-2 lg:grid-cols-3'>
+								<div className='mt-6 grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3'>
 									{party.sectoral.map((candidate) => (
 										<div
 											key={`${candidate.sector}-${candidate.rank_or_number}-${candidate.full_name}`}
-											className='flex items-start gap-4 bg-[var(--paper)] p-5'
+											className='flex items-start gap-4'
 										>
-											<PersonAvatar name={candidate.full_name} size={44} />
+											<PersonAvatar name={candidate.full_name} partyId={party.party_id} size={44} />
 											<div className='min-w-0'>
 											<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
 												{candidate.sector}
@@ -316,7 +229,9 @@ export default async function PartyDetailPage({
 							<div className='mt-14'>
 								<div className='flex flex-wrap items-baseline justify-between gap-3 border-t border-[var(--brass-line)] pt-6'>
 									<div className='flex flex-wrap items-center gap-3'>
-										<h3 className='bb-display-sm text-[var(--ink)]'>District filers</h3>
+										<h3 className='section-title section-title-sm text-[var(--ink)]'>
+											District filers
+										</h3>
 										<ConfidenceBadge confidence='working' />
 									</div>
 									<p className='num font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
@@ -324,23 +239,33 @@ export default async function PartyDetailPage({
 									</p>
 								</div>
 
-								<div className='mt-6 grid gap-x-10 lg:grid-cols-2'>
+								{/* The gap is the grid's, on both axes. It carried `gap-x` only and
+								    left each province to space itself with a top margin that was
+								    then cancelled at `lg` — so in two columns the provinces ran
+								    into each other, one roster's last filer sitting directly on the
+								    next province's rule. */}
+								<div className='mt-6 grid gap-x-12 gap-y-12 lg:grid-cols-2'>
 									{districtGroups.map((group) => (
-										<div key={group.area} className='mt-8 first:mt-0 lg:mt-0'>
-											<div className='flex items-baseline justify-between gap-3 border-b border-[var(--rule)] pb-2'>
+										<div key={group.area}>
+											{/* The label needs room under it, like every other small header
+											    on the estate. At `pb-2` the province sat on its own rule and
+											    the first filer sat on the other side of it, so the three read
+											    as one block of type rather than as a heading and a roster. */}
+											<div className='flex items-baseline justify-between gap-3 border-b border-[var(--rule)] pb-4'>
 												<p className='bb-label'>{group.area}</p>
 												<p className='num font-mono text-[11px] text-[var(--ink-3)]'>
 													{group.candidates.length}
 												</p>
 											</div>
 
+											<div className='mt-2'>
 											{group.candidates.map((candidate) => (
 												<div
 													key={candidate.candidate_id}
 													className='flex flex-wrap items-center justify-between gap-x-4 gap-y-2 border-b border-[var(--rule-soft)] py-3'
 												>
 													<p className='flex min-w-0 items-center gap-3'>
-														<PersonAvatar name={candidate.name_as_reported} size={36} />
+														<PersonAvatar name={candidate.name_as_reported} partyId={party.party_id} size={36} />
 														<span className='min-w-0 break-words text-[15px] font-semibold leading-snug text-[var(--ink)]'>
 															{displayName(candidate.name_as_reported)}
 														</span>
@@ -350,6 +275,7 @@ export default async function PartyDetailPage({
 													</p>
 												</div>
 											))}
+											</div>
 										</div>
 									))}
 								</div>
@@ -359,57 +285,6 @@ export default async function PartyDetailPage({
 				</section>
 			) : null}
 
-			{/* ---- Sources ---- */}
-			<section className='bb-container bb-section'>
-				<SectionHead
-					index='04'
-					eyebrow='Sources'
-					title='What this entry'
-					titleMuted='is built on.'
-					lead='Every claim on this page traces to one of these records on the registry.'
-				/>
-
-				<div className='mt-12 border-t border-[var(--ink)]'>
-					{referencedSources.length > 0 ? (
-						referencedSources.map((source) => (
-							<Rise key={source.id} distance={12}>
-								<a
-									href={source.url ?? '#'}
-									target={source.url ? '_blank' : undefined}
-									rel={source.url ? 'noreferrer' : undefined}
-									className='group grid gap-x-10 gap-y-1 border-b border-[var(--rule)] py-5 transition-colors hover:bg-[var(--paper-2)] lg:grid-cols-[minmax(0,16rem)_minmax(0,1fr)_2rem]'
-								>
-									<p className='min-w-0 break-words font-mono text-[10px] font-semibold uppercase leading-5 tracking-[0.14em] text-[var(--brass)]'>
-										{source.id}
-									</p>
-									<div className='min-w-0'>
-										<p className='break-words text-[15px] font-semibold leading-snug text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]'>
-											{source.title}
-										</p>
-										{source.publisher ? (
-											<p className='mt-1 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
-												{source.publisher}
-											</p>
-										) : null}
-									</div>
-									{source.url ? (
-										<span
-											aria-hidden='true'
-											className='hidden self-center font-mono text-[var(--ink-3)] transition group-hover:text-[var(--accent)] lg:block'
-										>
-											↗
-										</span>
-									) : null}
-								</a>
-							</Rise>
-						))
-					) : (
-						<p className='py-5 bb-body text-[var(--ink-3)]'>
-							No sources are attached to this party record.
-						</p>
-					)}
-				</div>
-			</section>
 		</ElectionShell>
 	)
 }

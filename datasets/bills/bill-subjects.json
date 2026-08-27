@@ -1,0 +1,1047 @@
+{
+	"meta": {
+		"generated": "2026-08-27",
+		"source": "https://parliament.bangsamoro.gov.ph/bills/",
+		"method": "Parliament publishes each filed bill as a scan with no text layer. The PDF linked from the bill's own page was rasterised and put through OCR, and the subject was read from what the bill says about itself — its explanatory note and its sections — rather than inferred from the words in its title.",
+		"vocabulary": "The registry's own sector tags, as used by the captured records.",
+		"note": "Subjects only. Nothing else here is derived from the scans, and none of it is presented as something Parliament published in this form.",
+		"count": 124
+	},
+	"bills": [
+		{
+			"number": 285,
+			"sectors": [
+				"infrastructure_transport"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-285-–-MP-Ali-B.-Solaiman-BANGSAMORO-RADIO-SUWARA-MERANAW.pdf",
+			"pages": 10
+		},
+		{
+			"number": 284,
+			"sectors": [
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-284-MP-LANANG-T.-ALI-JR.ACT-RENAMING-THE-MUNICIPALITY-OF-SULTAN-MASTURA.pdf",
+			"pages": 1
+		},
+		{
+			"number": 283,
+			"sectors": [
+				"health",
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-283-MP-Kadil-Sinolinding-BILL-ON-TIPO-TIPO.docx-2.pdf",
+			"pages": 4
+		},
+		{
+			"number": 282,
+			"sectors": [
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-282-–-MP-Abdullah-Hashim-A-THIRTY-30-CALENDAR-DAYS-PAID-LEAVE-TO-PERFORM-PILGRIMAGE.pdf",
+			"pages": 4
+		},
+		{
+			"number": 281,
+			"sectors": [
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-281-–-MP-Abdullah-Hashim-AN-ACT-GRANTING-BEREAVEMENT-LEAVE-TO-ALL-EMPLOYEES-IN-THE-PRIVATE-AND-PUBLIC-SECTORS.pdf",
+			"pages": 3
+		},
+		{
+			"number": 280,
+			"sectors": [
+				"economy_trade_investment"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-280-–-MP-Baintan-A.-Ampatuan-AN-ACT-ESTABLISHING-A-COMPREHENSIVE-FRAMEWORK-FOR-THE-PROMOTION-AND-DEVELOPMENT-OF-TOURISM.pdf",
+			"pages": 14
+		},
+		{
+			"number": 279,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-279-–-MP-Hashemi-N.-Dilangalen-TO-ESTABLISH-MAINTAIN-AND-OPERATE-A-DIALYSIS-UNIT.pdf",
+			"pages": 4
+		},
+		{
+			"number": 278,
+			"sectors": [
+				"environment_agriculture_fisheries"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-278-–-MP-Hashemi-N.-Dilangalen-BANGSAMORO-RIVER-BASIN-MANAGEMENT-COUNCIL.pdf",
+			"pages": 7
+		},
+		{
+			"number": 277,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-277-–-MP-Hashemi-N.-Dilangalen-THE-DINAIG-MUNICIPAL-HOSPITAL-INTO-A-50-BED-CAPACITY.pdf",
+			"pages": 3
+		},
+		{
+			"number": 276,
+			"sectors": [
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-276-–-MP-Hashemi-N.-Dilangalen-MORAL-RECOVERY-LEAVE.pdf",
+			"pages": 3
+		},
+		{
+			"number": 275,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-275-–-MP-Hashemi-N.-Dilangalen-COMPREHENSIVE-REGIONAL-PUBLIC-HEALTH-LITERACY.pdf",
+			"pages": 4
+		},
+		{
+			"number": 274,
+			"sectors": [
+				"education"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-274-–-MP-Ramon-A.-Piang-AN-ACT-CONVERTING-UPI-AGRICULTURAL-SCHOOL-IN-THE-MUNICIPALITY-OF-UPI.pdf",
+			"pages": 10
+		},
+		{
+			"number": 273,
+			"sectors": [
+				"indigenous_settlers"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/Bill-No.-273-Government-of-the-Day-TO-RECOGNIZE-DEVELOP-AND-.pdf",
+			"pages": 14
+		},
+		{
+			"number": 272,
+			"sectors": [
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/Bill-No.-272-MP-Ali-Montaha-Babao-CREATING-MUNICIPALITY-OF-BA.pdf",
+			"pages": 6
+		},
+		{
+			"number": 271,
+			"sectors": [
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/Bill-No.-271-Enhanced-MP-Ali-Montaha-Babao-CREATING-MUNICIPALITY-OF-PILINTANGAN.pdf",
+			"pages": 5
+		},
+		{
+			"number": 270,
+			"sectors": [
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/Bill-No.-270-MP-ROMEO-K.-SEMA-AN-ACT-PROVIDING-FOR-BREAVEMENT.pdf",
+			"pages": 4
+		},
+		{
+			"number": 269,
+			"sectors": [
+				"health",
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/Bill-No.-269-MP-KADIL-M.-SINOLINDING-AN-ACT-CREATING-AN-INFIR.pdf",
+			"pages": 4
+		},
+		{
+			"number": 268,
+			"sectors": [
+				"islamic_culture_heritage",
+				"economy_trade_investment"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/12/Bill-No.-268-MP-ROMEO-K.-SEMA-AN-ACT-PROVIDING-FOR-THE-HALAL-CONSUMERS-ACT.pdf",
+			"pages": 9
+		},
+		{
+			"number": 267,
+			"sectors": [
+				"elections_districting"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/12/Bill-No.-267-Government-of-the-Day-PARLIAMENTARY-DISTRICTS-IN.pdf",
+			"pages": 8
+		},
+		{
+			"number": 266,
+			"sectors": [
+				"budget_appropriations"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/11/Bill-No.-266-Government-of-the-Day-CONTINUED-USE-OF-FUNDS-FOR-THE-RELEASE-AND-DISBURSEMENT-OF-UNPAID-OBLIGATIONS-OF-FY-2023-APPROPRIATIONS.pdf",
+			"pages": 2
+		},
+		{
+			"number": 265,
+			"sectors": [
+				"budget_appropriations"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/11/Bill-No.-265-Government-of-the-Day-CONTINUING-THE-VALIDITY-OF-THE-2020-TO-2022-SPECIAL-DEVELOPMENT-FUND-.pdf",
+			"pages": 2
+		},
+		{
+			"number": 264,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/11/Bill-No.-264-MP-Hamid-U.-Malik-STANDARDIZING-THE-BED-CAPACITY-OF-THE-SIASI-DISTRICT-HOSPITAL-IN-THE-MUNICIPALITY-OF-SIASI.pdf",
+			"pages": 5
+		},
+		{
+			"number": 263,
+			"sectors": [
+				"infrastructure_transport"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/11/Bill-No.-263-MP-Jaafar-Apollo-Mikhail-L.-Matalam-THE-BANGSAMORO-RIGHTS-TO-RURAL-ELECTRIFICATION.pdf",
+			"pages": 12
+		},
+		{
+			"number": 262,
+			"sectors": [
+				"budget_appropriations"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-262-Government-of-the-day-BANGSAMORO-EXPENDITURE-PROGRAM.pdf",
+			"pages": 14
+		},
+		{
+			"number": 261,
+			"sectors": [
+				"economy_trade_investment"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-261-MP-Amilbahar-Mawallil-DEVELOPING-AND-PROMOTING-THE-BANGSAMORO-TOURISM.pdf",
+			"pages": 5
+		},
+		{
+			"number": 260,
+			"sectors": [
+				"environment_agriculture_fisheries"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-260-MP-Amilbahar-Mawallil-IMPLEMENTING-AGRICULTURAL-MODERNIZATION-STRATEGIES-1.pdf",
+			"pages": 6
+		},
+		{
+			"number": 259,
+			"sectors": [
+				"education"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-259-MP-Amilbahar-Mawallil-ESTABLISHING-THE-BANGSAMORO-LEARNING-RECOVERY-FUND.pdf",
+			"pages": 5
+		},
+		{
+			"number": 258,
+			"sectors": [
+				"education"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-258-MP-Amilbahar-Mawallil-ESTABLISHING-THE-BANGSAMORO-TEACHERS-CONTINUING-EDUCATION-PROGRAM.pdf",
+			"pages": 4
+		},
+		{
+			"number": 257,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-257-MP-Said-M.-Shiek-ALEEM-ABDULAZIS-S.-MIMBANTAS-MEMORIAL-HOSPITAL.pdf",
+			"pages": 4
+		},
+		{
+			"number": 256,
+			"sectors": [
+				"women_children_social_welfare"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-256-MP-Tawakal-Midtimbang-FREE-MARRIAGE-COUNSELING.pdf",
+			"pages": 6
+		},
+		{
+			"number": 255,
+			"sectors": [
+				"education",
+				"women_children_social_welfare"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-255-MP-Baintan-Ampatuan-SPECIAL-NEEDS-EDUCATION-SPED-CENTER-PER-MUNICIPALITY.pdf",
+			"pages": 7
+		},
+		{
+			"number": 254,
+			"sectors": [
+				"education"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-254-MP-Baintan-Ampatuan-BRIGADA-ESKWELA.pdf",
+			"pages": 6
+		},
+		{
+			"number": 253,
+			"sectors": [
+				"education"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-253-MP-Baintan-Ampatuan-TESDA-CENTER-IN-EVERY-MUNICIPALITIES.pdf",
+			"pages": 6
+		},
+		{
+			"number": 252,
+			"sectors": [
+				"education"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-252-MP-Baintan-Ampatuan-ONE-HIGHSCHOOL-PER-BARANGAY-ACT.pdf",
+			"pages": 6
+		},
+		{
+			"number": 251,
+			"sectors": [
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-251-MP-Tarhata-Maglangit-AN-ACT-ESTABLISHING-THE-BANGSAMORO-ADMINISTRATIVE-REGISTER.pdf",
+			"pages": 4
+		},
+		{
+			"number": 250,
+			"sectors": [
+				"women_children_social_welfare",
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-250-MP-Kadil-Sinolinding-BANGSAMORO-DISABILITY-AFFAIRS-OFFICE-PROVIDING-FOR-ITS-MANDATE.docx.pdf",
+			"pages": 7
+		},
+		{
+			"number": 249,
+			"sectors": [
+				"environment_agriculture_fisheries",
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/Bill-No.-249-MP-Hashemi-N.-Dilangalen-AN-ACT-AUGMENTING-THE-PROGRAMS-AND-SERVICES-PROVIDED-BY-VETERINARY-OFFICES.pdf",
+			"pages": 6
+		},
+		{
+			"number": 248,
+			"sectors": [
+				"environment_agriculture_fisheries"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/Bill-No.-248-–-MP-Amilbagar-S.-Mawallil-REGULATING-THE-DISTRIBUTION-ANDOR-USE-OF-SINGLE-USE-PLASTICS-PRODUCTS.pdf",
+			"pages": 6
+		},
+		{
+			"number": 247,
+			"sectors": [
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/08/Bill-No.-247-MP-Suwaib-L.-Oranon-AN-ACT-CREATING-THE-MUNICIPALITY-OF-BONGGO.pdf",
+			"pages": 8
+		},
+		{
+			"number": 246,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/08/Bill-No.-246-MP-Ubaida-C.-Pacasem-Converting-IDH-to-Iranon-Provincial-Hospital.pdf",
+			"pages": 3
+		},
+		{
+			"number": 245,
+			"sectors": [
+				"health",
+				"women_children_social_welfare"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/08/Bill-No.-245-MP-Baintan-Ampatuan-ESTABLISHING-A-PROGRAM-TO-HELP-CHILDREN-WITH-AUTISM-SPECTRUM-DISORDER-ASD-IN-THE-BANGSAMORO-REGION-IN-MUSLIM-MIMDANAO-.pdf",
+			"pages": 7
+		},
+		{
+			"number": 244,
+			"sectors": [
+				"environment_agriculture_fisheries",
+				"women_children_social_welfare"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/08/Bill-No.-244-MP-Amroussi-A.-Macatanong-AN-ACT-REQUIRING-THE-MANDATORY-PLANTING-AND-GROWING-OF-FRUIT-BEARING-TREES.pdf",
+			"pages": 7
+		},
+		{
+			"number": 243,
+			"sectors": [
+				"economy_trade_investment"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/08/Bill-No.-243-MP-Jaafar-Apollo-Mikhail-L.-Matalam-AN-ACT-AUTHORIZING-AND-PROMOTING-PUBLIC-PRIVATE-PARTNERSHIPS-PPP.pdf",
+			"pages": 14
+		},
+		{
+			"number": 242,
+			"sectors": [
+				"environment_agriculture_fisheries",
+				"disaster_resilience"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/08/Bill-No.-242-MP-Marjanie-S.-Macasalong-AN-ACT-CREATING-AND-ESTABLISHING-THE-BANGSAMORO-CLIMATE-CHANGE-COMMISSION.pdf",
+			"pages": 9
+		},
+		{
+			"number": 241,
+			"sectors": [
+				"islamic_culture_heritage"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/08/Bill-No.-241-MP-Romeo-K.-Sema-TO-AND-FOR-MUSLIMS-IN-BANGSAMORO-AUTONOMOUS-REGION-IN-MUSLIM-MINDANAO.pdf",
+			"pages": 4
+		},
+		{
+			"number": 240,
+			"sectors": [
+				"budget_appropriations"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/08/Bill-No.-240-MP-Amilbahar-Mawallil-AN-ACT-INSTITUTING-THE-SCHEDULE-OF-SUBMISSION-OF-THE-PROPOSED-BANGSAMORO-BUDGET-EXPENDITURE-PROGRAM.pdf",
+			"pages": 5
+		},
+		{
+			"number": 239,
+			"sectors": [
+				"infrastructure_transport"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/08/Bill-No.-239-MP-Amilbahar-Mawallil-AN-ACT-MANDATING-THE-CONSTRUCTION-OF-SOLAR-POWERED-WATER.pdf",
+			"pages": 5
+		},
+		{
+			"number": 238,
+			"sectors": [
+				"environment_agriculture_fisheries",
+				"infrastructure_transport"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/08/Bill-No.-238-MP-Amilbahar-Mawallil-AN-ACT-MANDATING-THE-ESTABLISHMENT-OF-RAINWATER-HARVESTING-FACILITIES-IN-ALL-INDUSTRIAL.pdf",
+			"pages": 5
+		},
+		{
+			"number": 237,
+			"sectors": [
+				"health",
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/08/Bill-No.-237-MP-Amilbahar-Mawallil-AN-ACT-PROMOTING-ADEQUATE-COMPENSATION-AND-ADDITIONAL-BENEFITS-TO-PUBLIC-HEALTH-WORKERS.pdf",
+			"pages": 5
+		},
+		{
+			"number": 236,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/08/Bill-No.-236-MP-Suharto-AmbolodtoTHE-GHAZALI-JAAFAR-GENERAL-HOSPITAL.pdf",
+			"pages": 4
+		},
+		{
+			"number": 235,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/08/Bill-No.-235-MP-Suharto-Ambolodto-GENERAL-HOSPITAL-WITH-TWENTY-FIVE-BED-CAPACITY-IN-THE-MUNICIPALITY-OF-KABUNTALAN.pdf",
+			"pages": 4
+		},
+		{
+			"number": 234,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/08/Bill-No.-234-MP-Suharto-Ambolodto-AN-ACT-ESTABLISHING-GENERAL-HOSPITAL-WITH-TWENTY-FIVE-BED-CAPACITY-IN-MUNICIPALITY-OF-SULTAN-MASTURA.pdf",
+			"pages": 4
+		},
+		{
+			"number": 233,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/08/Bill-No.-233-MP-Suharto-Ambolodto-AN-ACT-ESTABLISHING-THE-BULDON-GENERAL-HOSPITAL-WITH-25-BED-CAPACITY-AT-THE-MUNICIPALITY-OF-BULDON.pdf",
+			"pages": 4
+		},
+		{
+			"number": 232,
+			"sectors": [
+				"infrastructure_transport"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/07/Bill-No.-232-Enhanced-MP-Hussein-Munoz-AN-ACT-PROHIBITING-THE-UNAUTHORIZED-CONSTRUCTION-OR-ALTERATION-OF-ANY-PART-OF-THE-PUBLIC-ROADS-AND-BRIDGES-1-1.pdf",
+			"pages": 6
+		},
+		{
+			"number": 231,
+			"sectors": [
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/07/Bill-No.-231-Enhanced-MP-Hussein-Munoz-AN-ACT-ESTABLISHING-THE-LOCAL-AREA-NETWORK-LAN-SYSTEM-1.pdf",
+			"pages": 4
+		},
+		{
+			"number": 230,
+			"sectors": [
+				"health",
+				"peace_security_justice"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/07/Bill-No.-230-MP-Kadil-Sinolinding-Jr.-AN-ACT-ESTABLISHING-DRUG-REHABILITATION-CENTER-.pdf",
+			"pages": 6
+		},
+		{
+			"number": 229,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/07/Bill-No.-229-MP-Kadil-Sinolinding-AN-ACT-ESTABLISHING-BUREAU-OF-HEALTH-QUARANTINE.pdf",
+			"pages": 7
+		},
+		{
+			"number": 228,
+			"sectors": [
+				"economy_trade_investment",
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/07/Bill-No.-228-MP-Romeo-K.-Sema-INSTITUTIONALIZING-SINGLE-WINDOW-TRANSACTION-SWiT-MODIFIED-BUSINESS-ONE-STOP-SHOP.pdf",
+			"pages": 5
+		},
+		{
+			"number": 227,
+			"sectors": [
+				"disaster_resilience",
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/07/Bill-No.-227-MP-Jaafar-Apollo-Mikhail-L.-Matalam-AN-ACT-ENSURING-MANDATORY-EVACUATION-CENTERS-IN-EVERY-BARANGAYS.pdf",
+			"pages": 7
+		},
+		{
+			"number": 226,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/07/Bill-No.-226-MP-Jaafar-Apollo-Mikhail-L.-Matalam-AN-ACT-ESTABLISHING-CANCER-CARE-CENTER-AND-A-CANCER-ASSISTANCE-FUND.pdf",
+			"pages": 9
+		},
+		{
+			"number": 225,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/07/Bill-No.-225-Enhanced-MP-Baintan-Ampatuan-TO-A-LEVEL-III-HOSPITAL-AND-THEREBY-INCREASING-ITS-BED-CAPACITY-TO-THREE-HUNDRED-FIFTY-3.pdf",
+			"pages": 8
+		},
+		{
+			"number": 224,
+			"sectors": [
+				"education",
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/07/Bill-No.-224-MP-Marjanie-Macasalong-AN-ACT-PROTECTING-THE-BAN.pdf",
+			"pages": 6
+		},
+		{
+			"number": 223,
+			"sectors": [
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-223-MP-Baileng-Mantawil-MUNICIPALITY-OF-NULING.docx.pdf",
+			"pages": 4
+		},
+		{
+			"number": 222,
+			"sectors": [
+				"education"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-222-MP-Abdullah-B.-Hashim-AN-ACT-GIVING-RECOGNITION-AND-INCENTIVES-TO-RESIDENT-BANGSAMORO-TOPNOTCHERS.pdf",
+			"pages": 6
+		},
+		{
+			"number": 221,
+			"sectors": [
+				"environment_agriculture_fisheries"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-221-MP-Ali-B.-Sangki-AN-ACT-CREATING-THE-BUREAU-OF-AGRICULTURAL-AND-FISHERIES-ENGINEERING-.pdf",
+			"pages": 10
+		},
+		{
+			"number": 220,
+			"sectors": [
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-220-MP-Don-Mustapha-Loong-AN-ACT-PROVIDING-FOR-THE-DIVERSITY-EQUITY-AND-INCLUSIVITY-IN-PUBLIC-SERVICE-ACT-OF-2023.pdf",
+			"pages": 7
+		},
+		{
+			"number": 219,
+			"sectors": [
+				"infrastructure_transport",
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-219-MP-Don-Mustapha-Loong-AN-ACT-ESTABLISHING-A-REGIONWIDE-GEO-TAGGING-SYSTEM.pdf",
+			"pages": 10
+		},
+		{
+			"number": 218,
+			"sectors": [
+				"economy_trade_investment"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-218-MP-Don-Mustapha-Loong-BUD-TUKAY-PEAK.pdf",
+			"pages": 9
+		},
+		{
+			"number": 217,
+			"sectors": [
+				"islamic_culture_heritage"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-217-MP-Don-Mustapha-Loong-KUTAWATO-CAVE.pdf",
+			"pages": 6
+		},
+		{
+			"number": 216,
+			"sectors": [
+				"islamic_culture_heritage"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-216-MP-Don-Mustapha-Loong-TOMB-OF-SULTAN-SHARIEFUL-HASHIM.pdf",
+			"pages": 6
+		},
+		{
+			"number": 215,
+			"sectors": [
+				"indigenous_settlers"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-215-MP-Don-Mustapha-Loong-AN-ACT-ESTABLISHING-INDIGENOUS-PEOPLES-COMMUNITY-CENTERS.pdf",
+			"pages": 8
+		},
+		{
+			"number": 214,
+			"sectors": [
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-214-MP-Don-Mustapha-Loong-AN-ACT-STRENGTHENING-THE-SYSTEM-OF-MANAGEMENT-AND-ARCHIVAL-RECORDS-OF-THE-BANGSAMORO-GOVERNMENT.pdf",
+			"pages": 9
+		},
+		{
+			"number": 213,
+			"sectors": [
+				"education"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-213-MP-Don-Mustapha-Loong-AN-ACT-ESTABLISHING-A-SUPPLEMENTAL-ACADEMIC-LEARNING-AMELIORATION-PROGRAM.pdf",
+			"pages": 10
+		},
+		{
+			"number": 211,
+			"sectors": [
+				"infrastructure_transport",
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-211-MP-Don-Mustapha-Loong-AN-ACT-CREATING-THE-BUREAU-OF-INFORMATION-AND-COMMUNICATIONS-TECHNOLOGY.pdf",
+			"pages": 11
+		},
+		{
+			"number": 210,
+			"sectors": [
+				"economy_trade_investment"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-210-MP-Diamila-Ramos-AN-ACT-PROVIDING-FOR-THE-BANGSAMORO-COOPERATIVE.pdf",
+			"pages": 14
+		},
+		{
+			"number": 209,
+			"sectors": [
+				"governance_civil_service",
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-209-MP-Don-Mustapha-Loong-Bangsamoro-Provincial-Government-Centers.pdf",
+			"pages": 9
+		},
+		{
+			"number": 208,
+			"sectors": [
+				"sports_youth"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-208-MP-Don-Mustpha-Loong-GRANTING-CASH-INCENTIVES-TO-BANGSAMORO-ATHLETES-IN-NATIONAL-AND-INTERNATIONAL-SPORTS-COMPETITIONS.pdf",
+			"pages": 9
+		},
+		{
+			"number": 207,
+			"sectors": [
+				"education"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-207-MP-Don-Mustapha-Loong-GRANTING-CASH-INCENTIVES-AND-RECOGNITION-TO-BANGSAMORO-TOPNOTCHERS.pdf",
+			"pages": 6
+		},
+		{
+			"number": 206,
+			"sectors": [
+				"infrastructure_transport",
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-206-MP-Don-Mustapha-Loong-on-Local-Road-Maintenance.pdf",
+			"pages": 12
+		},
+		{
+			"number": 205,
+			"sectors": [
+				"women_children_social_welfare"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-205-MP-Diamila-Ramos-Social-Justice-Measures-and-Assistance-Programs-for-OBCs-Act.pdf",
+			"pages": 8
+		},
+		{
+			"number": 204,
+			"sectors": [
+				"islamic_culture_heritage"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-204-MP-Diamila-Ramos-Cultural-Heritage-Act-of-the-Bangsamoro.pdf",
+			"pages": 10
+		},
+		{
+			"number": 203,
+			"sectors": [
+				"peace_security_justice",
+				"islamic_culture_heritage"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-203-MP-Diamila-Ramos-OBC-Peace-and-Culture-Centers.pdf",
+			"pages": 6
+		},
+		{
+			"number": 202,
+			"sectors": [
+				"education",
+				"sports_youth"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-202-MP-Diamila-Ramos-Bangsamoro-Achievers-Act-of-2023.pdf",
+			"pages": 10
+		},
+		{
+			"number": 201,
+			"sectors": [
+				"sports_youth"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-201-MP-Baintan-Ampatuan-GRANTING-AWARDS-AND-INCENTIVES-TO-BANGSAMORO-INDIVIDUALS-WHO-HAVE-BROUGHT-HONOR-AND-RECOGNITION-TO-THE-BANGSAMORO-AUTONOMOUS-REGION.pdf",
+			"pages": 7
+		},
+		{
+			"number": 200,
+			"sectors": [
+				"sports_youth"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-200-MP-Amilbahar-Mawallil-Bangsamoro-Athletes-Recognition-Act.pdf",
+			"pages": 6
+		},
+		{
+			"number": 199,
+			"sectors": [
+				"economy_trade_investment"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-199-MP-Amilbahar-Mawallil-Bangsamoro-Brand-Promotion-Act.pdf",
+			"pages": 7
+		},
+		{
+			"number": 198,
+			"sectors": [
+				"education"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-198-MP-Hashemi-Dilangalen-ACT-GRANTING-CASH-INCENTINVES-TO-BAR-AND-BOARD-TOPNOTCHERS-AND-WINNERS-OF-INTERNATIONAL-ACADEMICS-SPORTS-AND-SKILLS-COMPETITIONS.pdf",
+			"pages": 5
+		},
+		{
+			"number": 197,
+			"sectors": [
+				"health",
+				"peace_security_justice"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-197-MP-Hashemi-Dilangalen-ESTABLISHING-DRUG-REHABILITATION-CENTERS.pdf",
+			"pages": 5
+		},
+		{
+			"number": 196,
+			"sectors": [
+				"islamic_culture_heritage"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-196-MP-Rasol-Y.-Mitmug-Jr.-Bangsamoro-Holiday.docx.pdf",
+			"pages": 6
+		},
+		{
+			"number": 195,
+			"sectors": [
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-195-Enhanced-MP-Rasol-Y.-Mitmug-Jr.-Bangsamoro-Gazette-1.pdf",
+			"pages": 9
+		},
+		{
+			"number": 194,
+			"sectors": [
+				"economy_trade_investment",
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-194-Enhanced-MP-Rasol-Y.-Mitmug-Jr.-IE-Regisitration-Database-June-2023-1.pdf",
+			"pages": 9
+		},
+		{
+			"number": 193,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-193-MP-Rasol-Y.-Mitmug-Jr.-Mental-Health-Act.docx.pdf",
+			"pages": 9
+		},
+		{
+			"number": 192,
+			"sectors": [
+				"islamic_culture_heritage",
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-192-Government-of-the-day-SPECIAL-HOLIDAY-IN-BARMM.pdf",
+			"pages": 4
+		},
+		{
+			"number": 191,
+			"sectors": [
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-191-MP-Lanang-T.-Ali-CREATING-MUNICIPALITY-OF-SHEIK-ABAS-HAMZA.pdf",
+			"pages": 5
+		},
+		{
+			"number": 190,
+			"sectors": [
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-190-MP-Lanang-T.-Ali-CREATING-THE-MUNICIPALITY-OF-DATU-BALABARAN.pdf",
+			"pages": 5
+		},
+		{
+			"number": 189,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-189-MP-Kadil-Sinolinding-TO-COMPLY-TO-THE-HOSPITAL-MANPOWER-REQUIREMENT-OF-THE-CONGRESSIONALLY-APPROVED-100-BED-CAPACITY-DR.-SERAPIO-B.-MONTANER-JR.-AL-HAJ-MEMORIAL-HOSPITAL.pdf",
+			"pages": 4
+		},
+		{
+			"number": 188,
+			"sectors": [
+				"governance_civil_service",
+				"economy_trade_investment"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-188-MP-Baintan-Ampatuan-CREATING-THE-MINISTRY-OF-BANGSAMORO-MIGRANT-WORKERS-ESTABLISHING-ITS-POWERS-AND-JURISDICTION-AMENDING-SECTIONS-14-TO-17-TITLE-IX-OF-THE-BAA-No.-13.docx.pdf",
+			"pages": 14
+		},
+		{
+			"number": 187,
+			"sectors": [
+				"health",
+				"education"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/bill-187.pdf",
+			"pages": 5
+		},
+		{
+			"number": 186,
+			"sectors": [
+				"health",
+				"women_children_social_welfare"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-186-MP-Amilbahar-S.-Mawallil-REQUIRING-THE-ESTABLISHMENT-OF-BREASTFEEDING-FACILITIES-IN-GOVERNMENT-AND-PRIVATE-ESTABLISHMENTS-WITHIN-THE-BANGSAMORO-REGION.pdf",
+			"pages": 4
+		},
+		{
+			"number": 185,
+			"sectors": [
+				"education"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-185-MP-Amilbahar-S.-Mawallil-PROVIDING-FOR-BASIC-DIGITAL-LITERACY-AND-INTERMEDIATE-INFORMATION-AND-COMMUNICATION-TECHNOLOGIES-SKILLS-TRAINING-IN-THE-BARMM.pdf",
+			"pages": 6
+		},
+		{
+			"number": 184,
+			"sectors": [
+				"environment_agriculture_fisheries",
+				"economy_trade_investment"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-184.pdf",
+			"pages": 10
+		},
+		{
+			"number": 183,
+			"sectors": [
+				"infrastructure_transport",
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-183-–-MP-Amilbahar-S.-Mawallil-ENABLING-THE-ACCELERATION-OF-INFRASTRUCTURE-AND-OTHER-DEVELOPMENT-PROJECTS-IN-THE-BANGSAMORO-AUTONOMOUS-REGION-IN-MUSLIM-MINDANAO.pdf",
+			"pages": 7
+		},
+		{
+			"number": 182,
+			"sectors": [
+				"disaster_resilience"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-182-–-MP-Amilbahar-S.-Mawallil-REQUIRING-MULTI-HAZARD-MAPS-AND-FLOOD-HAZARD-MAPS-IN-ALL-VULNERABLE-BARMM-TERRITORIES-.pdf",
+			"pages": 5
+		},
+		{
+			"number": 181,
+			"sectors": [
+				"islamic_culture_heritage",
+				"peace_security_justice"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-181-MP-Amilbahar-S.-Mawallil-ESTABLISHING-A-DATABASE-OF-CULTURAL-PROPERTIES-LOST-DURING-THE-MARAWI-SIEGE-PROHIBITING-THE-SALE-THEREOF.pdf",
+			"pages": 5
+		},
+		{
+			"number": 180,
+			"sectors": [
+				"environment_agriculture_fisheries"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-180-MP-Amilbahar-S.-Mawallil-ADOPTING-AN-INTEGRATED-COASTAL-MANAGEMENT-POLICY-IN-THE-BANGSAMORO-REGION-ESTABLISHING-MECHANISM-.pdf",
+			"pages": 5
+		},
+		{
+			"number": 179,
+			"sectors": [
+				"budget_appropriations"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-179-GOVERNMENT-OF-THE-DAY-Use-of-Funds-for-the-unpai.pdf",
+			"pages": 5
+		},
+		{
+			"number": 178,
+			"sectors": [
+				"islamic_culture_heritage",
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-178-MP-Suharto-Esmael-MANDATING-A-TEN-MINUTE-PRAYER-BREAK-IN-BANGSAMORO-AUTONOMOUS-REGION-IN-MUSLIM-MINDANAO.pdf",
+			"pages": 2
+		},
+		{
+			"number": 177,
+			"sectors": [
+				"islamic_culture_heritage",
+				"peace_security_justice"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-177-MP-Suharto-Esmael-CREATING-A-MUJAHIDEEN-MEMORIAL-WALL-IN-THE-BANGSAMORO-AUTONOMOUS-REGION-IN-MUSLIM-MINDANAO-AND-PROVIDING-FUNDS-THEREFOR.pdf",
+			"pages": 3
+		},
+		{
+			"number": 176,
+			"sectors": [
+				"islamic_culture_heritage"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-176-MP-Suharto-Esmael-IMPLEMENTING-THE-USE-OF-ENGLISH-ARABIC-AS-AN-OFFICIAL-LANGUAGE-FOR-SIGNAGES-IN-THE-BANGSAMORO-AUTONOMOUS-REGION-AND-PROVIDING-FUNDS-THEREFOR.pdf",
+			"pages": 3
+		},
+		{
+			"number": 175,
+			"sectors": [
+				"islamic_culture_heritage"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-175-MP-Suharto-Esmael-PROVIDING-FOR-THE-BANGSAMORO-HYMN-CODE-OF-DECORUM-AND-RULES.pdf",
+			"pages": 3
+		},
+		{
+			"number": 174,
+			"sectors": [
+				"peace_security_justice",
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-174-MP-Don-Mustapha-Loong-MANDATING-THE-CREATION-OF-BARANGAY-JUSTICE-SYSTEM-MULTISECTORAL-TRADITIONAL-AND-CUSTOMARY-LAWS-ADVISORY-COUNCIL.pdf",
+			"pages": 5
+		},
+		{
+			"number": 173,
+			"sectors": [
+				"peace_security_justice",
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-173-MP-Don-Mustapha-Loong-STRENGTHENING-THE-KATARUNGANG-PAMBARANGAY-SYSTEM.pdf",
+			"pages": 11
+		},
+		{
+			"number": 172,
+			"sectors": [
+				"peace_security_justice",
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-172-MP-Don-Mustapha-Loong-ANDATING-THE-FORMULATION-AND-PUBLICATION-OF-A-KATARUNGANG-PAMBARANGAY-HANDBOOK.pdf",
+			"pages": 6
+		},
+		{
+			"number": 171,
+			"sectors": [
+				"education",
+				"indigenous_settlers",
+				"islamic_culture_heritage"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-171-MP-Don-Mustapha-Loong-MANDATING-THE-INTEGRATION-OF-BANGSAMORO-AND-INDIGENOUS-PEOPLES-CULTURE-TRADITIONS-CUSTOMS-AND-BELIEFS-IN-THE-SECONDARY-EDUCATION-CURRICULUM.pdf",
+			"pages": 6
+		},
+		{
+			"number": 170,
+			"sectors": [
+				"peace_security_justice",
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-170-MP-Don-Mustapha-Loong-PROVIDING-FOR-THE-RECOGNITION-OF-THE-BEST-LUPON-TAGAPAMAYAPA-AND-THE-PROMOTION-OF-BARANGAY-JUSTICE-SYSTEM.pdf",
+			"pages": 6
+		},
+		{
+			"number": 169,
+			"sectors": [
+				"governance_civil_service",
+				"peace_security_justice"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-169-MP-Mohammad-Kelie-Antao-BANGSAMORO-INVESTIGATIVE-RESEARCH-AGENCY-.pdf",
+			"pages": 7
+		},
+		{
+			"number": 168,
+			"sectors": [
+				"education",
+				"islamic_culture_heritage"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-168-MP-Mohammad-Kelie-Antao-SPECIAL-MADRASAH-FUND.docx.pdf",
+			"pages": 8
+		},
+		{
+			"number": 167,
+			"sectors": [
+				"education",
+				"islamic_culture_heritage"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-167-MP-Baintan-Ampatuan-PROVIDING-GOVERNMENT-ASSISTANCE-TO-STUDENTS-AND-TEACHERS-IN-MADARIS-IN-THE-BANGSAMORO-AUTONOMOUS-REGION-IN-MUSLIM-MINDANAO.doc.pdf",
+			"pages": 7
+		},
+		{
+			"number": 166,
+			"sectors": [
+				"indigenous_settlers"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/04/Bill-No.-166-MP-Froilyn-T.-Mendoza-RECOGNIZING-RESPECTING-PROTECTING-PROMOTING-AND-SUPPORTING-THE-RIGHTS-OF-NON-MORO-INDIGENOUS-PEOPLES.docx.pdf",
+			"pages": 14
+		},
+		{
+			"number": 165,
+			"sectors": [
+				"elections_districting",
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/04/Bill-No.-165-MP-TARHATA-M.-MAGLANGIT-AN-ACT-PROVIDING-FOR-A-SYSTEM-OF-INITIATIVE-IN-THE-BANGSAMORO-AND-APPROPRIATING-FUNDS-THEREFOR.docx.pdf",
+			"pages": 12
+		},
+		{
+			"number": 164,
+			"sectors": [
+				"health",
+				"economy_trade_investment"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/03/Bill-No.-164-MP-Hashemi-N.-Dilangalen-AN-ACT-REQUIRING-ALL-BRANCHES-OF-POPULAR-CHAINS-OF-FAST-FOOD-RESTAURANTS-OPERATING-IN-THE-BANGMORO-AUTONOMOUS-REGION-IN-MUSLIM-MINDANAO-.pdf",
+			"pages": 7
+		},
+		{
+			"number": 163,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/03/Bill-No.-163-Enhanced-MP-Don-Mustapha-Loong-Establishing-Languyan-District-Hospital-1.pdf",
+			"pages": 6
+		},
+		{
+			"number": 162,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/03/Bill-No.-162-MP-Don-Mustapha-Loong-AN-ACT-UPGRADING-THE-EXISTING-PARANG-DISTRICT-HOSPITAL-IN-THE-MUNICIPALITY-OF-PARANG-PROVINCE-OF-SULU-1-1.pdf",
+			"pages": 4
+		},
+		{
+			"number": 161,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/03/Bill-No.-161-MP-Don-Mustapha-Loong-AN-ACT-INCREASING-THE-BED-CAPACITY-OF-LUUK-DISTRICT-HOSPITAL-IN-TUBIG-PUTIH-MUNICIPALITY-OF-LUUK-PROVINCE-OF-SULU.pdf",
+			"pages": 4
+		}
+	]
+}

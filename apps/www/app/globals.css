@@ -62,7 +62,7 @@
   position: relative;
   overflow: clip;
   border-block: 1px solid var(--brass-line);
-  padding-block: 1.15rem;
+  padding-block: 1.5rem;
   -webkit-mask-image: linear-gradient(
     to right,
     transparent,
@@ -115,7 +115,7 @@
   align-items: center;
   gap: 0.9em;
   padding-right: 0.9em;
-  font-size: clamp(1.05rem, 2.1vw, 1.7rem);
+  font-size: clamp(1.5rem, 3.2vw, 2.6rem);
 }
 
 /* The diamond has to sit on the optical centre of the capitals beside it, and
@@ -400,13 +400,45 @@
    ============================================================ */
 
 .dsc-lightbox {
+  --dsc-lightbox-pad: clamp(1rem, 4vw, 3rem);
   position: fixed;
   inset: 0;
   z-index: 90;
   display: grid;
   place-items: center;
-  padding: clamp(1rem, 4vw, 3rem);
+  padding: var(--dsc-lightbox-pad);
   background: rgba(9, 8, 6, 0.97);
+}
+
+/* The controls, floated off the top edge.
+ *
+ * Out of the flow on purpose: in it, the bar was a row of the layout and the
+ * photograph centred itself in what was left, which is not the middle of the
+ * screen. The picture is the thing being looked at and it should sit on the
+ * centre; the controls are furniture and belong at an edge. An absolutely
+ * positioned grid child takes no track, so the figure is centred against the
+ * full height as though the bar were not there.
+ *
+ * An absolute child is placed against the padding box, so `top: 0` is the top
+ * of the glass itself rather than the inside corner the figure starts at — the
+ * gap above the row is set here rather than inherited. It clears the edge by
+ * about two thirds of the frame's own margin, which is enough that the row
+ * reads as sitting in the dark rather than clinging to it, and still leaves the
+ * picture the middle of the screen. Below it, only enough to hold the line off
+ * whatever the figure's top edge turns out to be.
+ *
+ * The inline padding is the full margin, so the count and the arrows line up
+ * with the photograph's edges rather than sitting outside them. */
+.dsc-lightbox-bar {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: clamp(1.25rem, 3vw, 2rem) var(--dsc-lightbox-pad) clamp(0.6rem, 1.4vw, 1rem);
 }
 
 /* ---- Scroll cue ---- */
@@ -441,7 +473,7 @@
   font-weight: 800;
   line-height: 0.86;
   letter-spacing: -0.048em;
-  font-size: clamp(2.6rem, 7.2vw, 6.25rem);
+  font-size: clamp(min(3.1rem, 12.2vw), 7.2vw, 6.25rem);
   text-wrap: balance;
 }
 
@@ -450,7 +482,7 @@
   font-weight: 800;
   line-height: 0.96;
   letter-spacing: -0.034em;
-  font-size: clamp(1.9rem, 4vw, 3.15rem);
+  font-size: clamp(min(2.3rem, 8.9vw), 4vw, 3.15rem);
   text-wrap: balance;
 }
 
@@ -534,10 +566,24 @@
    rather than first. No specificity in an unlayered rule can beat an
    important one inside a layer.
 
+   The colour is settled that way. The shadow under it is not, and it
+   is a different problem: `:not()` only stops the declaration being
+   applied to the panel, and `text-shadow` inherits. So the panel took
+   the picture's scrim down from the nav item above it — every row in
+   a white box carrying a 14px blur meant for white type on a
+   photograph, which is the smudge under each word. Declaring `none`
+   here ends it: an inherited value loses to a declared one, and the
+   rows below inherit that `none` in turn, since the `:not()` kept the
+   scrim off them too.
+
    What is left here is the one thing the panel needs that the shared
    styles do not give it: a colour for a workspace that has no page
    yet, which is a row rather than a link.
    ============================================================ */
+
+.nav-menu {
+  text-shadow: none;
+}
 
 .nav-menu .nav-menu-item-idle {
   color: var(--ink-mute);

@@ -12,11 +12,21 @@ type RecordArticleProps = {
 	memberSlugs?: Record<string, string>
 }
 
+/**
+ * One particular of the record — when it was ratified, which sitting, what
+ * subject.
+ *
+ * The label is the quiet half. It was set in the page's own ink at
+ * `.label-strong`, which put "Sector" at the same weight of colour as the
+ * sector itself; in a column of six of these the eye landed on the questions
+ * rather than the answers. Plain `.label` is the muted step, and the value
+ * under it keeps the ink.
+ */
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
 	return (
 		<div>
-			<p className='label label-strong'>{label}</p>
-			<div className='mt-2 bb-body text-[var(--ink-2)]'>{children}</div>
+			<p className='label'>{label}</p>
+			<div className='mt-2.5 bb-body text-[var(--ink-2)]'>{children}</div>
 		</div>
 	)
 }
@@ -24,8 +34,11 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
 function Section({ label, children }: { label: string; children: React.ReactNode }) {
 	return (
 		<section>
-			<p className='label label-strong'>{label}</p>
-			<div className='mt-3'>{children}</div>
+			{/* The heading is furniture: quiet in colour, heavy in weight, and held
+			    well off what it introduces. At `mt-3` in the page's own ink it sat
+			    on top of its own block like a first line of it. */}
+			<p className='label label-section'>{label}</p>
+			<div className='mt-5'>{children}</div>
 		</section>
 	)
 }
@@ -218,10 +231,31 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 
 	return (
 		<article>
+			{/* Where it stands, before anything else on the page.
+			    
+			    It sat under the title, on the argument that a dated rail beneath a
+			    measure's name says what it is. Directly under the site's own bar it
+			    does a different job: a reader arriving at a measure wants to know
+			    whether it is law before they read a word of it, and the rail answers
+			    that in one glance without them scrolling to find it. The trade is
+			    that the rail now arrives before the name it belongs to — which the
+			    number and status directly beneath it settle immediately.
+
+			    A tinted band rather than a second pair of rules, since the rail is
+			    already a set of lines. The band runs the full width of the page; the
+			    rail inside it keeps the site's column. */}
+			{record.journey.length > 0 ? (
+				<div className='bg-[var(--paper-2)]'>
+					<div className='bb-container pb-12 pt-12'>
+						<JourneyList stages={record.journey} />
+					</div>
+				</div>
+			) : null}
+
 			{/* Ranged left, sharing an edge with the detail underneath: the head and
 			    the body are one read down the same column, and a centred head over a
 			    left-ranged body put a seam across the page. */}
-			<div className='bb-container pt-12 lg:pt-20'>
+			<div className='bb-container pt-12 lg:pt-16'>
 				{/* Badges never break, so on a phone the row wraps rather than running
 				    off the edge — a measure can carry a status and a Cabinet mark at
 				    once. */}
@@ -256,19 +290,6 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 					<p className='mt-5 max-w-4xl copy text-[var(--ink-2)]'>{lead}</p>
 				) : null}
 			</div>
-
-			{/* Where it stands, under the name of the thing it happened to. No
-			    heading — a dated rail beneath a measure's title says what it is — and
-			    a tinted band rather than a second pair of rules, since the rail is
-			    already a set of lines. The band runs the full width of the page; the
-			    rail inside it keeps the site's column. */}
-			{record.journey.length > 0 ? (
-				<div className='mt-11 bg-[var(--paper-2)]'>
-					<div className='bb-container pb-12 pt-16'>
-						<JourneyList stages={record.journey} />
-					</div>
-				</div>
-			) : null}
 
 			<div className='bb-container pb-24 pt-12 lg:pb-32'>
 				<div className='grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(14.5rem,18.7rem)] lg:gap-32 xl:gap-40'>
@@ -453,7 +474,7 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 						{/* The record's own particulars — what it is, when, and under
 						    which sitting. They head the column: they answer the shortest
 						    questions, and the list of names below can run long. */}
-						<div className='grid gap-5 border-t border-[var(--rule)] pt-6 first:border-t-0 first:pt-0'>
+						<div className='grid gap-8 border-t border-[var(--rule)] pt-6 first:border-t-0 first:pt-0'>
 							<Field label={record.dateLabel}>{record.dateDisplay}</Field>
 
 							{record.session ? <Field label='Session'>{record.session}</Field> : null}
@@ -518,7 +539,7 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 				{/* Sources */}
 				{record.sourceUrl || record.sourceLinks.length > 0 ? (
 					<div className='mt-12 border-t border-[var(--rule)] pt-5'>
-						<p className='label label-strong'>Sources</p>
+						<p className='label label-section'>Sources</p>
 						<div className='mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm'>
 							{record.sourceUrl ? (
 								<a

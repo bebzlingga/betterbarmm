@@ -9,6 +9,12 @@ import { Reveal } from './_components/reveal'
 import { StatBand } from './_components/stat-band'
 import { getCategoryCounts, getDataset, registryGeneratedAt } from './_lib/legislation-data'
 
+/** The seat-cost section, held back until it is ready to run again. */
+const SHOW_SEAT_COST = false
+
+/** The entitlements block, held back the same way and for the same reason. */
+const SHOW_DID_YOU_KNOW = false
+
 export default function HomePage() {
 	const counts = getCategoryCounts()
 	const bills = getDataset('bills')
@@ -130,6 +136,7 @@ export default function HomePage() {
 					   runs onto a second line, and JSX trims each line of a multi-line
 					   node — which ate the space and printed "52have". */
 					lead={`Of the ${totalBills.toLocaleString()} bills tracked here, ${approved} have been approved on third reading. The rest are still somewhere in the sequence — and nearly all of them are sitting in a committee, which is the one stage Parliament's own rules open to the public.`}
+					align='center'
 				/>
 
 				<Reveal delay={80}>
@@ -144,7 +151,10 @@ export default function HomePage() {
 				</Reveal>
 
 				<Reveal delay={160}>
-					<div className='mt-14 flex flex-wrap gap-3'>
+					{/* On the same axis as the claim and the chart above them. Ranged
+					    left under a centred section, the two ways out read as the start
+					    of the next block rather than the end of this one. */}
+					<div className='mt-14 flex flex-wrap justify-center gap-3'>
 						<Link href='/bills' className='bb-btn bb-btn-solid'>
 							Browse all {totalBills.toLocaleString()} bills
 						</Link>
@@ -155,7 +165,7 @@ export default function HomePage() {
 				</Reveal>
 			</section>
 
-			<DidYouKnow />
+			{SHOW_DID_YOU_KNOW ? <DidYouKnow /> : null}
 
 			{/* ---- The path itself ----
 			     A pointer rather than the walkthrough: the process page carries all
@@ -198,7 +208,13 @@ export default function HomePage() {
 			     line of a 349-page budget, which is the same as not printing it.
 			     It sits on the hub because it is the single most asked question
 			     about the people in the roster, and because it is the clearest
-			     demonstration of what reading the acts is actually for. */}
+			     demonstration of what reading the acts is actually for.
+
+			     Held back for the moment. Behind a flag rather than commented out
+			     or deleted: the block still compiles, its figures still come from
+			     the live record, and putting it back is one word here rather than
+			     a diff to reconstruct. */}
+			{SHOW_SEAT_COST ? (
 			<section className='bb-container bb-section-bottom'>
 				<SectionHead
 					index='03'
@@ -218,6 +234,7 @@ export default function HomePage() {
 					</Link>
 				</Reveal>
 			</section>
+			) : null}
 
 		</>
 	)

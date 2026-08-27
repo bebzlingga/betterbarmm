@@ -38,7 +38,7 @@ export function Drawn({
   className?: string
 }) {
   const ref = useRef<SVGSVGElement>(null)
-  const drawn = useInView(ref, { once: true, amount: 0.6 })
+  const drawn = useInView(ref, { once: true, amount: 0.2 })
 
   return (
     <svg

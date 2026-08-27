@@ -121,7 +121,25 @@ export function BillFunnel({
 	const earlier = slices.slice(0, split)
 	const later = slices.slice(split)
 
-	let travelled = 0
+	/* Each arc's length and where it starts, worked out before anything is
+	   drawn.
+	 *
+	 * It used to run a `travelled` counter and add to it inside the map that
+	 * builds the circles. That is a mutation during render — React is free to
+	 * call a render closure more than once or out of order, and a running total
+	 * only gives the right answer if it is called exactly once, in order. Two
+	 * derived arrays say the same thing without a variable to reassign: the
+	 * share each slice takes of the circle, and the sum of every share before
+	 * it.
+	 *
+	 * The offset advances by the true share rather than by the drawn length, so
+	 * trimming a sliver back for its gap never shifts everything after it. */
+	const shares = slices.map((slice) => (slice.count / total) * CIRCUMFERENCE)
+	const arcs = slices.map((slice, index) => ({
+		slice,
+		length: Math.max(shares[index] - GAP, 0.5),
+		offset: -shares.slice(0, index).reduce((sum, share) => sum + share, 0),
+	}))
 
 	return (
 		// Stacked, the ring leads and the legend reads down from it — the picture
@@ -147,13 +165,7 @@ export function BillFunnel({
 						.map((slice) => `${slice.label}, ${slice.count}`)
 						.join('. ')}.`}
 				>
-					{slices.map((slice) => {
-						const length = Math.max((slice.count / total) * CIRCUMFERENCE - GAP, 0.5)
-						const offset = -travelled
-						// Advanced by the true share, not the drawn length, so trimming a
-						// sliver for its gap never shifts everything after it.
-						travelled += (slice.count / total) * CIRCUMFERENCE
-
+					{arcs.map(({ slice, length, offset }) => {
 						return (
 							<circle
 								key={slice.label}

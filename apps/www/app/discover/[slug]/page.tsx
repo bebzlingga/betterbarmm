@@ -122,7 +122,7 @@ export default async function DiscoverTopicPage({
 									/>
 								</Link>
 							) : (
-								<Link href='/soon' className='group block'>
+								<Link href='https://election.betterbarmm.com' className='group block'>
 									<ChapterLinkCard
 										label='Next →'
 										title='The 2026 Election workspace'

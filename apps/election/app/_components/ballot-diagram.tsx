@@ -128,7 +128,12 @@ export function BallotDiagram({
 			</div>
 
 			<figcaption className='border-t border-[var(--ink)] bg-[var(--paper-2)] px-6 py-5'>
-				<p className='bb-measure text-[13px] leading-7 text-[var(--ink-2)]'>
+				{/* The full width of the ballot rather than a reading measure. This
+				    note is the third track — the eight seats that never appear on the
+				    paper above it — and held to 34em under a figure that runs the page
+				    it read as an aside about the diagram rather than as the rest of
+				    the diagram's own account. */}
+				<p className='text-[13px] leading-7 text-[var(--ink-2)]'>
 					<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink)]'>
 						Not on the ballot ·{' '}
 					</span>

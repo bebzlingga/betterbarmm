@@ -35,10 +35,14 @@ export default function CommitteesPage() {
 
 	return (
 		<>
+			{/* The middle cut rather than the small one. `compact` is for a
+			    masthead that is a label over a register of hundreds of rows, where
+			    the headline should get out of the way; twenty-four committees is a
+			    page a reader arrives at rather than scrolls past, and the claim can
+			    be the size of a claim. */}
 			<PageHeader
 				emphasis='brand'
 				align='left'
-				size='compact'
 				eyebrow={`${stats.total} committees`}
 				title='Where a bill is worked on,'
 				titleMuted='before anyone votes on it.'

@@ -113,6 +113,57 @@ export const OKIR_BLOOM_STUDS = 16
 export const OKIR_BLOOM_SPOKES = 8
 export const OKIR_BLOOM_VIEWBOX = '0 0 400 400'
 
+/**
+ * The medallion in each workspace's own hand.
+ *
+ * Same carving throughout — three rings, a repeated figure between the middle
+ * and outer one, a band of studs, a spoked centre — and a different figure in
+ * each room. The construction, the stroke, the drawing-on and the slow turn
+ * are the estate's; only what is repeated round the circle changes, which is
+ * enough for two mastheads to be plainly the same workshop and plainly not the
+ * same piece.
+ *
+ * `bloom` is the okir itself and stays the default: a workspace that asks for
+ * nothing gets the estate's own.
+ */
+export type OkirBloomVariant = 'bloom' | 'weave' | 'tally'
+
+export const OKIR_BLOOM_VARIANTS: Record<
+	OkirBloomVariant,
+	{ petal: readonly string[]; stud: string; petals: number; studs: number; spokes: number }
+> = {
+	bloom: {
+		petal: OKIR_BLOOM_PETAL,
+		stud: OKIR_BLOOM_STUD,
+		petals: OKIR_BLOOM_PETALS,
+		studs: OKIR_BLOOM_STUDS,
+		spokes: OKIR_BLOOM_SPOKES,
+	},
+
+	// The registry's. The lancet squares off into the stepped chevron an inaul
+	// throws up where weft crosses warp, and there are more of them: a register
+	// is a thing counted in rows, and the ring should read as courses rather
+	// than as a flower.
+	weave: {
+		petal: ['M200 84 L184 60 L200 36 L216 60 Z', 'M200 72 L192 60 L200 48 L208 60 Z'],
+		stud: 'M194 109 H206 M194 121 H206 M194 109 V121 M206 109 V121',
+		petals: 16,
+		studs: 24,
+		spokes: 4,
+	},
+
+	// The election's. The figure is the mark a hand makes when it counts —
+	// four uprights and the fifth laid across them — turned round the circle,
+	// so the medallion is a tally the moment before it is read.
+	tally: {
+		petal: ['M200 84 V34', 'M188 44 L212 34'],
+		stud: 'M200 108 L206 115 L200 122 L194 115 Z',
+		petals: 20,
+		studs: 12,
+		spokes: 8,
+	},
+}
+
 /* ------------------------------------------------------------
    The corner
 

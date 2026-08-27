@@ -17,6 +17,7 @@ import {
 	WarningIcon,
 } from '@phosphor-icons/react/dist/ssr'
 import type { Icon } from '@phosphor-icons/react'
+import { OkirRule, SectionHead } from '@betterbarmm/editorial'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageHeader } from '../_components/page-header'
@@ -85,27 +86,22 @@ const sectorDefinitions: Record<string, string> = {
 const steps = [
 	{
 		step: 'Capture',
-		rule: 'Records were read from the Bangsamoro Parliament’s own index pages and the BARMM Official Gazette. Each measure keeps its official number, its title as published, and the date the listing recorded — nothing is renumbered or inferred.',
+		rule: 'Read from Parliament’s own index pages and the BARMM Official Gazette. Numbers, titles, dates and the link between a bill and the act it became stay as published — nothing is renumbered or inferred.',
 		status: 'Verbatim',
 	},
 	{
 		step: 'Classification',
-		rule: 'Sector and measure-type tags were generated from official titles and metadata, not from full texts. They exist to make filtering possible and are the least authoritative part of any record.',
+		rule: 'Sector and type tags come from titles and metadata, not full texts. They exist to make filtering possible, and are the least authoritative part of a record.',
 		status: 'Generated',
 	},
 	{
 		step: 'Plain language',
-		rule: 'Stage explanations, citizen notes, and summaries were written to make a record understandable at a glance. Where a full PDF was actually read, the record says so.',
+		rule: 'Stage notes and summaries written to be understood at a glance. Where a full PDF was read, the record says so.',
 		status: 'Reviewed',
 	},
 	{
-		step: 'Cross-linking',
-		rule: 'Where the source records an originating bill number or an amendment relationship, those links are preserved so a law can be traced back to the proposal it came from.',
-		status: 'Preserved',
-	},
-	{
 		step: 'Gaps',
-		rule: 'Coverage windows and missing ranges are carried through to the interface rather than being smoothed over. Every category page states what it does not contain.',
+		rule: 'Coverage windows and missing ranges are carried through, not smoothed over. Every category page states what it does not hold.',
 		status: 'Disclosed',
 	},
 ]
@@ -151,12 +147,33 @@ function LatticeBlanks({ cells, columns }: { cells: number; columns: number[] })
 
 export default function AboutPage() {
 	const counts = getCategoryCounts()
-	const total = Object.values(counts).reduce((sum, count) => sum + count, 0)
 
 	const datasets = categories.map((category) => ({
 		category,
 		dataset: getDataset(category.slug),
 	}))
+
+	// The whole, then one figure per archive in the order the registry lists
+	// them, with what the card that used to carry the number said about it.
+	//
+	// Six across four tracks on purpose. The last row is the two archives that
+	// have not been captured at all — a ragged row that lands exactly on the
+	// break between what this registry holds and what it does not yet, which
+	// says more than an even grid would.
+	const archives = [
+		{
+			label: 'Records indexed',
+			value: Object.values(counts)
+				.reduce((sum, count) => sum + count, 0)
+				.toLocaleString(),
+			detail: 'Every measure this registry has captured, across all five archives.',
+		},
+		...categories.map((category) => ({
+			label: category.officialLabel,
+			value: counts[category.slug].toLocaleString(),
+			detail: counts[category.slug] > 0 ? category.blurb : 'Not yet captured.',
+		})),
+	]
 
 	// Sector tags are shared across categories, so pool them for the glossary.
 	const sectorTally = new Map<string, { label: string; count: number }>()
@@ -173,77 +190,48 @@ export default function AboutPage() {
 		<>
 			<PageHeader
 				emphasis='brand'
-				eyebrow={`${total.toLocaleString()} records indexed`}
-				title='Every act, bill, and resolution.'
-				titleMuted='Searchable, sourced, and plainly explained.'
+				size='compact'
+				eyebrow='What this registry holds'
+				title='Every record, in one place.'
+				titleMuted='Explained in plain words.'
 				description='Parliament publishes its record across six archives, in legal shorthand, with no way to search between them. This adds nothing new — it puts everything in one place, explains each measure in plain language, and links every entry back to its source.'
+				/* The size of the thing, under the sentence that claims it. It was a
+				   single figure in the kicker above the headline — the one place on
+				   the page a reader is least likely to weigh a number, and the page
+				   is about what is indexed. The lattice below still holds each
+				   archive with its own count, its coverage and its link; this is the
+				   total those add to. */
+				/* Every archive, counted, under the sentence that claims them. These
+				   were a lattice of six cards further down the page; the number was
+				   the only thing on a card the inventory below did not already say
+				   better, and a page about what is indexed should say how much is
+				   indexed in its opening rather than a screen later. An archive with
+				   nothing captured still gets its row, at zero — a gap stated is
+				   worth more than a gap left out. */
+				figures={archives}
 			/>
 
+			{/* Three reference blocks, each a section in its own right rather than
+			    three headings inside one — so the page keeps the rhythm every other
+			    page on the estate is set to, with the okir rule marking the joins.
+			    The heads are the shared `SectionHead`: the brass kicker and its
+			    numeral, the two-tone display line, centred as this page's heads
+			    already were.
+
+			    What is indexed used to open the page as a lattice of six cards, one
+			    per archive, each printing a count. Those counts are the masthead's
+			    now — they are the size of the thing the page is about, and they
+			    belong under the sentence that claims it. What the cards carried
+			    besides the number, the inventory below already carried better: each
+			    archive with its coverage, its known gaps and its total. */}
 			<section className='bb-container bb-section'>
-				{/* Coverage table */}
-				<div>
-					<Reveal>
-						<div className='mx-auto max-w-3xl text-center'>
-							<p className='eyebrow'>Coverage</p>
-							<h2 className='section-title mt-4'>What is indexed, and what is not.</h2>
-						</div>
-					</Reveal>
-
-					{/* Interior rules only: every cell draws its top and left edge, and
-					    the grid is nudged a pixel up and left so the outermost of those
-					    are clipped away. That keeps the frame open at every breakpoint
-					    without hand-counting which cell starts a row or column. */}
-					<div className='mt-12 overflow-hidden'>
-						<div className='-ml-px -mt-px grid sm:grid-cols-2 lg:grid-cols-3'>
-							{categories.map((category, index) => {
-								const count = counts[category.slug]
-
-								return (
-									<Reveal
-										key={category.slug}
-										delay={index * 50}
-										className='border-l border-t border-[var(--rule)]'
-									>
-										<Link
-											href={category.href}
-											className='flex h-full flex-col p-6 transition hover:bg-[var(--paper-2)] lg:p-8'
-										>
-											<div className='flex items-start justify-between gap-3'>
-												<h3 className='item-title'>{category.officialLabel}</h3>
-												<span
-													className={`badge badge-plain shrink-0 ${count > 0 ? 'badge-done' : 'badge-idle'}`}
-												>
-													{count > 0 ? 'Indexed' : 'Soon'}
-												</span>
-											</div>
-
-											{/* A greyed zero rather than a dash — the "Soon" badge above
-											    already explains why it is zero, so the number can stay a
-											    number and the column keeps its rhythm. */}
-											<p
-												className={`num mt-5 text-3xl font-semibold leading-none ${
-													count > 0 ? 'text-[var(--ink)]' : 'text-[var(--ink-display)]'
-												}`}
-											>
-												{count.toLocaleString()}
-											</p>
-
-											<p className='mt-4 bb-body text-[var(--ink-3)]'>{category.blurb}</p>
-										</Link>
-									</Reveal>
-								)
-							})}
-							<LatticeBlanks cells={categories.length} columns={[2, 3]} />
-						</div>
-					</div>
-				</div>
-
-				<Reveal className='mt-28'>
-					<div className='mx-auto max-w-3xl text-center'>
-						<p className='eyebrow'>Process</p>
-						<h2 className='section-title mt-4'>Five steps, in order.</h2>
-					</div>
-				</Reveal>
+				<SectionHead
+					index='01'
+					eyebrow='Process'
+					title='Four steps,'
+					titleMuted='in order.'
+					align='center'
+				/>
 
 				{/* A timeline rather than a list: the steps happen in order, so the
 				    numbered nodes and the rule joining them carry that sequence.
@@ -252,54 +240,66 @@ export default function AboutPage() {
 				    the grid gap so the line reads as continuous across the row. The
 				    first and last connectors are held in place but hidden, which
 				    keeps every numeral on the same centre line. */}
-				<div className='mt-12 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5'>
+				<div className='grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4'>
 					{steps.map((item, index) => (
 						<Reveal key={item.step} delay={index * 50}>
 							<div className='flex h-full flex-col items-center text-center'>
-								{/* The connectors only tell the truth on the five-column row:
+								{/* The connectors only tell the truth on the four-column row:
 								    anywhere the grid wraps, the line at a row's edge runs out
 								    into nothing, and stacked on a phone every numeral wears a
-								    pair of stray hairlines. So they wait for `xl`, and the row
+								    pair of stray hairlines. So they wait for `lg`, and the row
 								    centres its numeral itself until then. */}
 								<div className='flex w-full items-center justify-center gap-3'>
 									<span
 										aria-hidden='true'
-										className={`-ml-6 hidden h-px flex-1 bg-[var(--rule)] xl:block ${index === 0 ? 'xl:invisible' : ''}`}
+										className={`-ml-6 hidden h-px flex-1 bg-[var(--rule)] lg:block ${index === 0 ? 'lg:invisible' : ''}`}
 									/>
 									<span className='num inline-flex size-8 shrink-0 items-center justify-center rounded-full border border-[var(--rule)] bg-[var(--paper)] text-[11px] font-bold text-[var(--ink-3)]'>
 										{String(index + 1).padStart(2, '0')}
 									</span>
 									<span
 										aria-hidden='true'
-										className={`-mr-6 hidden h-px flex-1 bg-[var(--rule)] xl:block ${index === steps.length - 1 ? 'xl:invisible' : ''}`}
+										className={`-mr-6 hidden h-px flex-1 bg-[var(--rule)] lg:block ${index === steps.length - 1 ? 'lg:invisible' : ''}`}
 									/>
 								</div>
 
-								<p className='item-title font-title mt-5'>{item.step}</p>
-								<p className='mt-2.5 bb-body text-[var(--ink-2)]'>{item.rule}</p>
-								<p className='mt-auto pt-4 text-[13px] text-[var(--accent)]'>{item.status}</p>
+									<p className='item-title font-title mt-5'>{item.step}</p>
+
+								{/* Under the name rather than at the foot of the column. It is
+								    what the step does to the record — the second thing to know
+								    about it, not the last — and stranded below a paragraph of
+								    varying length it read as a stray word rather than a label.
+								    Brass rather than a status tone: these are kinds, and the
+								    tones are reserved for stages. */}
+								<span className='badge badge-plain badge-treatment mt-3'>{item.status}</span>
+
+								<p className='mt-3 bb-body text-[var(--ink-2)]'>{item.rule}</p>
 							</div>
 						</Reveal>
 					))}
 				</div>
 
-				<div className='mt-28'>
-					{/* Dataset inventory */}
-					<Reveal>
-						<div className='mx-auto max-w-3xl text-center'>
-							<p className='eyebrow'>Inventory</p>
-							<h2 className='section-title mt-4'>Six archives, three captured.</h2>
-						</div>
-					</Reveal>
+			</section>
 
-					<div className='mt-12 border-t border-[var(--rule)]'>
+			<OkirRule className='mx-auto max-w-[88rem] opacity-70' />
+
+			<section className='bb-container bb-section'>
+				<SectionHead
+					index='02'
+					eyebrow='Inventory'
+					title='Six archives,'
+					titleMuted='three captured.'
+					align='center'
+				/>
+
+				<div className='border-t border-[var(--rule)]'>
 						{datasets.map(({ category, dataset }, index) => (
 							<Reveal key={category.slug} delay={index * 50}>
 								<div className='grid gap-4 border-b border-[var(--rule)] py-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.4fr)_7rem] lg:items-start lg:gap-10'>
 									<div className='min-w-0'>
 										<Link
 											href={category.href}
-											className='font-bold leading-snug hover:text-[var(--accent)]'
+											className='reg-archive-title hover:text-[var(--accent)]'
 										>
 											{category.officialLabel}
 										</Link>
@@ -331,28 +331,27 @@ export default function AboutPage() {
 										{dataset.records.length > 0 ? dataset.records.length.toLocaleString() : '—'}
 									</p>
 								</div>
-							</Reveal>
-						))}
-					</div>
-
-					{/* Sector glossary */}
-					<div className='mt-28'>
-						<Reveal>
-							<div className='mx-auto max-w-3xl text-center'>
-								<p className='eyebrow'>Sector glossary</p>
-								<h2 className='section-title mt-4'>What each tag actually means.</h2>
-								<p className='mt-5 bb-body text-[var(--ink-3)]'>
-									Sectors are analytical labels applied to help you filter — they are not part of
-									the official record. A measure can carry more than one. When a tag and the
-									official title disagree, the title wins.
-								</p>
-							</div>
 						</Reveal>
+					))}
+				</div>
+			</section>
 
-						{/* Same interior-rule lattice as the coverage grid above, so the two
-					    reference blocks on this page read as one family. */}
-						<div className='mt-12 overflow-hidden'>
-							<div className='-ml-px -mt-px grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+			<OkirRule className='mx-auto max-w-[88rem] opacity-70' />
+
+			<section className='bb-container bb-section'>
+				<SectionHead
+					index='03'
+					eyebrow='Sector glossary'
+					title='What each tag'
+					titleMuted='actually means.'
+					lead='Sectors are analytical labels applied to help you filter — they are not part of the official record. A measure can carry more than one. When a tag and the official title disagree, the title wins.'
+					align='center'
+				/>
+
+				{/* Same interior-rule lattice as the coverage grid above, so the two
+				    reference blocks on this page read as one family. */}
+				<div className='overflow-hidden'>
+					<div className='-ml-px -mt-px grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 								{sectors.map(([value, { label, count }], index) => {
 									const SectorIcon = sectorIcons[value] ?? TagIcon
 
@@ -363,15 +362,20 @@ export default function AboutPage() {
 											className='border-l border-t border-[var(--rule)]'
 										>
 											<div className='flex h-full flex-col p-6'>
+													{/* Brass at a single weight, not a duotone in the accent.
+												    The crimson is the loudest ink the estate has and it is
+												    spent on one thing at a time; sixteen of them down a
+												    lattice made the glyphs the subject and the definitions
+												    the caption. */}
 												<SectorIcon
 													size={22}
-													weight='duotone'
+													weight='regular'
 													aria-hidden='true'
-													className='shrink-0 text-[var(--accent)]'
+													className='shrink-0 text-[var(--brass)]'
 												/>
 
 												<div className='mt-9 flex flex-wrap items-center gap-2'>
-													<h3 className='item-title'>{label}</h3>
+													<h3 className='item-title item-title-strong'>{label}</h3>
 													<span className='badge badge-plain badge-idle num'>
 														{count.toLocaleString()}
 													</span>
@@ -384,9 +388,7 @@ export default function AboutPage() {
 										</Reveal>
 									)
 								})}
-								<LatticeBlanks cells={sectors.length} columns={[2, 3, 4]} />
-							</div>
-						</div>
+						<LatticeBlanks cells={sectors.length} columns={[2, 3, 4]} />
 					</div>
 				</div>
 			</section>

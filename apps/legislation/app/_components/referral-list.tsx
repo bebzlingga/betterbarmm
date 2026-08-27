@@ -63,7 +63,10 @@ export function ReferralList({
 												{item.record.statusShort}
 											</span>
 										</span>
-										<span className='mt-1 block bb-body text-[var(--ink-2)]'>
+										{/* The title is what the row is for — the number and the stage above
+										    it are how it is filed. It carries the weight and the full ink;
+										    everything else on the row stays quiet. */}
+										<span className='mt-1 block bb-body font-semibold text-[var(--ink)]'>
 											{item.record.title}
 										</span>
 									</span>
@@ -74,7 +77,7 @@ export function ReferralList({
 									href={item.url}
 									target='_blank'
 									rel='noreferrer'
-									className='block py-3.5 bb-body text-[var(--ink-2)] transition hover:text-[var(--ink)]'
+									className='block py-3.5 bb-body font-semibold text-[var(--ink-2)] transition hover:text-[var(--ink)]'
 								>
 									{item.title}
 								</a>

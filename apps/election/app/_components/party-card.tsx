@@ -1,6 +1,6 @@
 import { dominantStatusLabel, type PartyView } from '../_lib/election-data'
 import { ConfidenceBadge } from './confidence-badge'
-import { PartyMark, PersonAvatar } from './marks'
+import { PartyMark } from './marks'
 
 /**
  * One entry on the party ballot.
@@ -22,13 +22,13 @@ export function PartyCard({
 			href={`/parties/${party.party_id}`}
 			className='group flex min-h-full flex-col bg-[var(--paper)] p-6 transition-colors duration-300 hover:bg-[var(--paper-2)]'
 		>
+			{/* The plate and the mark on the record, and nothing between them. The
+			    party's id sat beside the plate in brass capitals — the same string
+			    the plate's letter is cut from and the ballot name below spells out,
+			    so the card opened by naming the party three times before it said
+			    anything about it. */}
 			<div className='flex items-start justify-between gap-3'>
-				<div className='flex min-w-0 items-center gap-3'>
-					<PartyMark partyId={party.party_id} ballotName={party.ballot_name} size={44} />
-					<p className='min-w-0 truncate font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
-						{party.party_id}
-					</p>
-				</div>
+				<PartyMark partyId={party.party_id} ballotName={party.ballot_name} size={96} />
 				{party.dominantStatus ? (
 					<span className='border border-[var(--accent)] px-2 py-1 font-mono text-[9px] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--accent)]'>
 						{dominantStatusLabel[party.dominantStatus]}
@@ -57,35 +57,31 @@ export function PartyCard({
 				</p>
 			) : null}
 
-			{party.cmNominee ? (
-				<div className='mt-5 flex items-center gap-3'>
-					<PersonAvatar name={party.cmNominee} size={36} />
-					<div className='min-w-0'>
-						<p className='font-mono text-[9px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
-							Chief-minister nominee
-						</p>
-						<p className='mt-1 truncate text-[13.5px] font-semibold text-[var(--ink)]'>
-							{party.cmNominee}
-						</p>
-					</div>
-				</div>
-			) : null}
-
-			<dl className='mt-auto flex gap-8 border-t border-[var(--brass-line)] pt-5'>
-				{[
-					{ value: party.computedStats.sectoralCandidates, label: 'Sectoral links' },
-					{ value: party.computedStats.districtCocFilers, label: 'District filers' },
-				].map((stat) => (
-					<div key={stat.label}>
-						<dd className='num text-xl font-extrabold leading-none text-[var(--ink)]'>
-							{stat.value}
-						</dd>
-						<dt className='mt-2 font-mono text-[9px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
-							{stat.label}
-						</dt>
-					</div>
-				))}
-			</dl>
+			{/* The rule needs room above it whether the card is full or half empty.
+			    `mt-auto` alone pushes the figures to the foot of the card, and on a
+			    card whose description runs the full four lines that leaves the last
+			    line sitting on the rule. The padding is on the wrapper, so it holds
+			    at any length; `mt-auto` still does the pushing. */}
+			<div className='mt-auto pt-7'>
+				<dl className='flex gap-8 border-t border-[var(--brass-line)] pt-5'>
+					{[
+						{ value: party.computedStats.sectoralCandidates, label: 'Sectoral links' },
+						{ value: party.computedStats.districtCocFilers, label: 'District filers' },
+					].map((stat) => (
+						// Term first in the source, figure first on the page — a list names
+						// what it is describing before it describes it, and `dd` before
+						// `dt` is not a description list at all.
+						<div key={stat.label} className='flex flex-col-reverse'>
+							<dt className='mt-2 font-mono text-[9px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+								{stat.label}
+							</dt>
+							<dd className='num text-xl font-extrabold leading-none text-[var(--ink)]'>
+								{stat.value}
+							</dd>
+						</div>
+					))}
+				</dl>
+			</div>
 		</a>
 	)
 }

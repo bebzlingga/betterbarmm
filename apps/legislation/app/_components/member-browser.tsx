@@ -459,9 +459,15 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 											) : null}
 
 											{/* Pinned to the bottom so cells line up regardless of role length. */}
+											{/* The place and the term are the card's footnote — where this
+											    member sits and for how long — not a second line of reading.
+											    At the body size the province was competing with the name for
+											    the eye, and the two lines under it read as a paragraph rather
+											    than as a caption. Off `.bb-body` to take a size at all: that
+											    class is unlayered and beats a utility. */}
 											<div className='mt-auto pt-4'>
 												{member.representation ? (
-													<p className='bb-body text-[var(--ink-3)]'>
+													<p className='text-[13px] leading-[1.5] text-[var(--ink-3)]'>
 														{member.representation}
 													</p>
 												) : null}

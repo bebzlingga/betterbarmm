@@ -46,20 +46,20 @@ export const EASE = [0.16, 1, 0.3, 1] as const
 export const SPRING = { stiffness: 260, damping: 30, mass: 0.6 } as const
 
 /**
- * Shared in-view settings: fire once, when the element crosses 70% of the
- * screen.
+ * Shared in-view settings: fire once, just before the element reaches the fold.
  *
- * The bottom margin is what sets that line. Trimming 30% off the bottom of the
- * viewport means nothing counts as in view until it has come up past seven
- * tenths of the window — so a section arrives while the reader is still moving
- * toward it rather than after it has already been read, and a block that lands
- * at the very foot of the screen does not animate somewhere nobody is looking.
+ * The bottom margin is what sets that line. It used to trim 30% off the bottom
+ * of the viewport, which meant nothing animated until it had climbed past seven
+ * tenths of the window — a reader scrolling at any pace watched blocks sit blank
+ * most of the way up the screen and only fill in near the top. Growing the
+ * viewport by 15% instead starts the move while the block is still below the
+ * fold, so by the time it is on screen it has arrived rather than is arriving.
  *
  * `amount: 0` goes with it: with a slice of the element required as well, a
- * tall section would wait for a quarter of its own height on top of the margin,
- * and on anything a screen deep that lands well past the line this is setting.
+ * tall section would wait for part of its own height on top of the margin, and
+ * on anything a screen deep that lands well past the line this is setting.
  */
-export const IN_VIEW = { once: true, amount: 0, margin: '0px 0px -30% 0px' } as const
+export const IN_VIEW = { once: true, amount: 0, margin: '0px 0px 15% 0px' } as const
 
 /* ------------------------------------------------------------
    Arrival
@@ -102,7 +102,7 @@ export function Rise({
       initial={{ opacity: 0, ...from }}
       whileInView={{ opacity: 1, y: 0, x: 0 }}
       viewport={IN_VIEW}
-      transition={{ duration: 0.75, delay, ease: EASE }}
+      transition={{ duration: 0.6, delay, ease: EASE }}
     >
       {children}
     </Tag>
@@ -161,7 +161,7 @@ export function StaggerItem({
       className={className}
       variants={{
         rest: { opacity: 0, y: distance },
-        go: { opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE } },
+        go: { opacity: 1, y: 0, transition: { duration: 0.55, ease: EASE } },
       }}
     >
       {children}
@@ -545,7 +545,7 @@ export function Counter({
   className?: string
 }) {
   const ref = useRef<HTMLSpanElement>(null)
-  const inView = useInView(ref, { once: true, amount: 0.5 })
+  const inView = useInView(ref, { once: true, amount: 0.15 })
   const reduced = useReducedMotion()
   const count = useMotionValue(value)
   const [shown, setShown] = useState(value)
@@ -602,7 +602,7 @@ export function BarSegment({
       title={title}
       initial={{ scaleX: 0 }}
       whileInView={{ scaleX: 1 }}
-      viewport={{ once: true, amount: 0.6 }}
+      viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.85, delay: 0.1 + index * 0.09, ease: EASE }}
     />
   )

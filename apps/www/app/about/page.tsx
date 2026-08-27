@@ -82,7 +82,7 @@ const workspaceNotes = [
 		title: 'Candidates, parties, and seats for 2026.',
 		description:
 			'Follows the 2026 BARMM Parliamentary Elections: parties, district candidates, sectoral seats, timelines, and developing stories.',
-		href: '/soon',
+		href: 'https://election.betterbarmm.com',
 		state: 'live',
 	},
 	{

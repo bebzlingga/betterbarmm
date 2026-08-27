@@ -4,13 +4,10 @@ import { motion, useInView } from 'motion/react'
 import { useRef } from 'react'
 import {
   OKIR_BLOOM_CORE,
-  OKIR_BLOOM_PETAL,
-  OKIR_BLOOM_PETALS,
   OKIR_BLOOM_RINGS,
-  OKIR_BLOOM_SPOKES,
-  OKIR_BLOOM_STUD,
-  OKIR_BLOOM_STUDS,
+  OKIR_BLOOM_VARIANTS,
   OKIR_BLOOM_VIEWBOX,
+  type OkirBloomVariant,
   OKIR_CORNER,
   OKIR_CORNER_VIEWBOX,
   OKIR_RULE_CENTRE,
@@ -169,8 +166,12 @@ export function OkirBloom({
   duration = 3.2,
   delay = 0,
   spin = true,
-}: Drawable & { spin?: boolean }) {
+  variant = 'bloom',
+}: Drawable & { spin?: boolean; variant?: OkirBloomVariant }) {
   const { ref, drawn } = useDrawn()
+  // Same medallion, in the hand of whichever workspace is asking. Only the
+  // repeated figure and its count change; every other line here is shared.
+  const cut = OKIR_BLOOM_VARIANTS[variant]
 
   return (
     <motion.svg
@@ -199,12 +200,12 @@ export function OkirBloom({
 
         {/* The petals, laid down one after another round the circle, so the
             ring is built rather than switched on. */}
-        {Array.from({ length: OKIR_BLOOM_PETALS }, (_, petal) =>
-          OKIR_BLOOM_PETAL.map((d, index) => (
+        {Array.from({ length: cut.petals }, (_, petal) =>
+          cut.petal.map((d, index) => (
             <motion.path
               key={`${petal}-${index}`}
               d={d}
-              transform={`rotate(${(360 / OKIR_BLOOM_PETALS) * petal} 200 200)`}
+              transform={`rotate(${(360 / cut.petals) * petal} 200 200)`}
               initial={{ pathLength: 0, opacity: 0 }}
               animate={drawn ? { pathLength: 1, opacity: 1 } : undefined}
               transition={{
@@ -226,22 +227,22 @@ export function OkirBloom({
           style={{ transformOrigin: '200px 200px' }}
           transition={{ duration: 0.8, delay: delay + 0.5, ease: [0.16, 1, 0.3, 1] }}
         >
-          {Array.from({ length: OKIR_BLOOM_STUDS }, (_, stud) => (
+          {Array.from({ length: cut.studs }, (_, stud) => (
             <path
               key={stud}
-              d={OKIR_BLOOM_STUD}
-              transform={`rotate(${(360 / OKIR_BLOOM_STUDS) * stud} 200 200)`}
+              d={cut.stud}
+              transform={`rotate(${(360 / cut.studs) * stud} 200 200)`}
             />
           ))}
 
-          {Array.from({ length: OKIR_BLOOM_SPOKES }, (_, spoke) =>
+          {Array.from({ length: cut.spokes }, (_, spoke) =>
             OKIR_BLOOM_CORE.map((d, index) => (
               // The centre diamond is drawn once; only the spoke repeats.
               index === 0 && spoke > 0 ? null : (
                 <path
                   key={`${spoke}-${index}`}
                   d={d}
-                  transform={`rotate(${(360 / OKIR_BLOOM_SPOKES) * spoke} 200 200)`}
+                  transform={`rotate(${(360 / cut.spokes) * spoke} 200 200)`}
                 />
               )
             )),

@@ -36,28 +36,40 @@ function Track({
 }) {
 	return (
 		<Rise distance={16}>
-			<article className='grid gap-x-10 gap-y-6 border-t border-[var(--rule)] py-12 lg:grid-cols-[minmax(0,11rem)_minmax(0,1fr)]'>
-				<div>
-					<p className='bb-figure leading-none' style={{ color }}>
-						{seats}
-					</p>
-					<p className='mt-3 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
-						of {total} seats
-					</p>
-				</div>
+			{/* A column rather than a row.
+			 *
+			 * The three ways into the chamber were three full-width bands stacked
+			 * down the page, each with its figure in a narrow left track and its
+			 * account beside it. Read that way they are three separate arguments
+			 * and the reader meets them one at a time — but they are three parts of
+			 * one eighty-seat chamber, and the legend directly above already sets
+			 * them side by side. Three columns under it continues that reading:
+			 * the same three things, in the same order, in the same places.
+			 *
+			 * The bar over each column is the one from the legend, so a column and
+			 * its cell above are visibly the same track. */}
+			<article className='flex h-full flex-col border-t border-[var(--rule)] pt-7'>
+				<span
+					aria-hidden='true'
+					className='block h-1.5 w-10'
+					style={{ background: color }}
+				/>
 
-				<div className='min-w-0'>
-					<div className='flex flex-wrap items-baseline gap-x-4 gap-y-2'>
-						<h3 className='bb-display-sm text-[var(--ink)]'>{title}</h3>
-						<span
-							className='border-l-2 pl-2.5 font-mono text-[10px] font-semibold uppercase leading-tight tracking-[0.14em] text-[var(--ink-3)]'
-							style={{ borderColor: color }}
-						>
-							{voterAction}
-						</span>
-					</div>
-					<div className='mt-6'>{children}</div>
-				</div>
+				<p className='bb-figure-sm mt-5 leading-none' style={{ color }}>
+					{seats}
+				</p>
+				<p className='mt-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+					of {total} seats
+				</p>
+
+				<h3 className='mt-6 text-[19px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+					{title}
+				</h3>
+				<p className='mt-2 font-mono text-[10px] font-semibold uppercase leading-tight tracking-[0.14em] text-[var(--ink-3)]'>
+					{voterAction}
+				</p>
+
+				<div className='mt-5'>{children}</div>
 			</article>
 		</Rise>
 	)
@@ -133,11 +145,15 @@ export default function Page() {
 
 				<Rise delay={0.1} distance={14}>
 					<div className='mt-12'>
-						<SeatMap tracks={tracks} total={stats.totalSeats} majority={stats.majorityThreshold} />
+						{/* The threshold is section 02's subject, drawn there as a bar of
+						    eighty cells. Printed in this well as well it was the same fact
+						    stated twice on one page, the second time without the picture
+						    that makes it mean anything. */}
+						<SeatMap tracks={tracks} total={stats.totalSeats} />
 					</div>
 				</Rise>
 
-				<div className='mt-16'>
+				<div className='mt-14 grid gap-x-10 gap-y-12 lg:grid-cols-3'>
 					<Track
 						seats={stats.partyRepresentativeSeats}
 						total={stats.totalSeats}
@@ -145,7 +161,7 @@ export default function Page() {
 						voterAction='You mark one party'
 						color='var(--accent)'
 					>
-						<p className='bb-measure bb-body text-[var(--ink-2)]'>
+						<p className='bb-body text-[var(--ink-2)]'>
 							Every voter in the region sees the same {stats.regionalParties} entries. The vote is
 							for the party rather than a person: each one takes a share of these seats in
 							proportion to its share of the vote, then fills them from its own nominee list.
@@ -165,7 +181,7 @@ export default function Page() {
 						voterAction='You mark one candidate'
 						color='var(--slate)'
 					>
-						<p className='bb-measure bb-body text-[var(--ink-2)]'>
+						<p className='bb-body text-[var(--ink-2)]'>
 							One name wins the seat for the place you are registered in. The seats are not spread
 							evenly: Lanao del Sur returns nine of them, and Sulu returns none at all after the
 							Supreme Court excluded it from the region for election purposes.
@@ -185,26 +201,34 @@ export default function Page() {
 						voterAction='Filled from sector lists'
 						color='var(--ochre)'
 					>
-						<p className='bb-measure bb-body text-[var(--ink-2)]'>
+						<p className='bb-body text-[var(--ink-2)]'>
 							These are held for communities that a region-wide count would otherwise leave out.
 							The seats are fixed in the Organic Law, and the nominees for them appear on the
 							regional certified list.
 						</p>
+						{/* A list, not a grid of tiles.
+						 *
+						 * Six bordered cells two across put a one-digit figure in a box of
+						 * its own and set the sector's name in nine-point capitals under
+						 * it — a lot of furniture around the word "Women" and the number
+						 * 1. As rows the six read down in one pass, the counts line up in
+						 * a column the eye can add, and it is the same shape the district
+						 * seats take in the column beside it. */}
 						<Stagger gap={0.04} className='mt-8'>
-							<div className='grid gap-px border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-3 lg:grid-cols-6'>
+							<dl className='border-t border-[var(--rule-soft)]'>
 								{election.sectoral_seat_distribution.map((item) => (
 									<StaggerItem key={item.sector} distance={10}>
-										<div className='h-full bg-[var(--paper)] px-4 py-5'>
-											<p className='num text-2xl font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
-												{item.seats}
-											</p>
-											<p className='mt-3 font-mono text-[9px] font-semibold uppercase leading-snug tracking-[0.16em] text-[var(--ink-3)]'>
+										<div className='flex items-baseline justify-between gap-4 border-b border-[var(--rule-soft)] py-2.5'>
+											<dt className='min-w-0 text-[13.5px] font-semibold leading-snug text-[var(--ink)]'>
 												{item.sector}
-											</p>
+											</dt>
+											<dd className='num shrink-0 text-[15px] font-bold leading-none text-[var(--ink)]'>
+												{item.seats}
+											</dd>
 										</div>
 									</StaggerItem>
 								))}
-							</div>
+							</dl>
 						</Stagger>
 					</Track>
 				</div>
@@ -237,7 +261,7 @@ export default function Page() {
 				<div className='mt-12 grid gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-16'>
 					<Rise distance={14}>
 						<div>
-							<p className='bb-measure bb-body text-[var(--ink-2)]'>
+							<p className='bb-body text-[var(--ink-2)]'>
 								A member needs {stats.majorityThreshold} of the {stats.totalSeats} votes — a
 								majority of all members, not of those present. If no one reaches it, Parliament
 								holds a runoff between the top two. That is why the party vote and the district
@@ -264,7 +288,13 @@ export default function Page() {
 			</section>
 
 			{/* ---- The timeline ---- */}
-			<section className='bb-lattice-soft relative isolate overflow-hidden border-y border-[var(--rule)] bg-[var(--paper-2)] py-16 lg:py-24'>
+			{/* The estate's own rhythm, like every other section on the page. It
+			    carried a hand-set `py-16 lg:py-24` — 64 and 96 points against the
+			    `bb-section` clamp's 72 to 144 — so the one full-bleed band on the
+			    page was also the one block breathing differently from its
+			    neighbours. `bb-section` sets padding only, which a tinted band takes
+			    as happily as a plain container. */}
+			<section className='bb-lattice-soft relative isolate overflow-hidden border-y border-[var(--rule)] bg-[var(--paper-2)] bb-section'>
 				<div className='bb-container'>
 					<SectionHead
 						index='03'

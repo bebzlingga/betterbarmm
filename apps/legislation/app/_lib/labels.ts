@@ -220,6 +220,29 @@ const SECTOR_LABELS: Record<string, string> = {
 	indigenous_settlers: 'Indigenous Peoples & Settlers',
 	disaster_resilience: 'Disaster Resilience',
 	other: 'Other',
+
+	/* The acts were tagged under an earlier vintage of this vocabulary and
+	   were never re-tagged, so the same subject is written two ways across the
+	   two lists — "infrastructure" against "infrastructure_transport",
+	   "elections" against "elections_districting". Unlisted keys fall through
+	   to `humanizeSnake`, which printed them as "Environment Climate" and
+	   "Business Trade": a filter option and a chart row that read as raw data
+	   rather than as English.
+
+	   Named, not merged. Folding the old keys into the new ones would assert
+	   equivalences the registry does not: "culture_heritage" is not only
+	   Islamic heritage, and "agriculture_fisheries" carries no claim about the
+	   environment. Two subjects that overlap is the truth about the data; one
+	   subject invented here would not be. */
+	culture_heritage: 'Culture & Heritage',
+	infrastructure: 'Infrastructure',
+	elections: 'Elections',
+	agriculture_fisheries: 'Agriculture & Fisheries',
+	environment_climate: 'Environment & Climate',
+	business_trade: 'Business & Trade',
+	health_services: 'Health Services',
+	science_technology: 'Science & Technology',
+	youth: 'Youth',
 }
 
 /** Human labels for the registry's snake_case measure-type tags. */

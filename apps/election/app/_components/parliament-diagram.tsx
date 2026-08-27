@@ -94,12 +94,9 @@ function hemicycle(total: number, rows = 4): Seat[] {
 export function SeatMap({
 	tracks,
 	total,
-	majority,
 }: {
 	tracks: SeatTrack[]
 	total: number
-	/** Printed in the well under the total: the line any government has to cross. */
-	majority?: number
 }) {
 	const seats = hemicycle(total)
 	const colors: string[] = []
@@ -144,38 +141,56 @@ export function SeatMap({
 
 				{/* HTML rather than <text>: the type here is the site's own scale and
 				    tokens, and an SVG label would have to re-declare both. */}
-				<div className='pointer-events-none absolute inset-x-0 bottom-[6%] text-center'>
+				{/* Lifted off the floor line. The figure and its caption sit inside the
+				    arc, and at 6% the caption was almost touching the rule the seats
+				    stand on — a well needs its own floor before the chamber's. */}
+				<div className='pointer-events-none absolute inset-x-0 bottom-[14%] text-center'>
 					<p className='bb-figure leading-none text-[var(--ink)]'>{total}</p>
-					<p className='mt-2.5 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+					{/* Tight under the numeral. The figure and its caption are one
+					    statement — "eighty seats in Parliament" — and at two and a half
+					    rems apart they read as a number and then a label about it. */}
+					<p className='mt-1 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 						seats in Parliament
 					</p>
-					{majority ? (
-						<p className='mt-3 inline-block border-t border-[var(--brass-line)] pt-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
-							{majority} for a majority
-						</p>
-					) : null}
+
 				</div>
 			</div>
 
-			<figcaption className='mt-8 grid gap-px border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-3'>
+			{/* The legend takes the chamber's own colours rather than pointing at
+			    them — but as a bar across the head of each cell, not as a ground
+			    under its type.
+
+			    A dot beside a figure is a key: it asks the reader to carry a colour
+			    from here up to the arc and match it. A bar is the colour at a size
+			    the eye can hold, and it leaves the paper under the figures alone,
+			    so the three colours can be their exact selves rather than a tint
+			    mixed weak enough for type to sit on. Nothing is set on them. */}
+			{/* No frame and no dividers — the colour bar is the whole of the cell's
+			    furniture. Boxed, three figures read as three panels to be inspected
+			    one after another; on the open page with a bar over each they read as
+			    one row of three, which is what they are. The gap between them is
+			    what separates them now, the way it separates everything else. */}
+			<figcaption className='mt-10 grid gap-x-10 gap-y-9 sm:grid-cols-3'>
 				{tracks.map((track) => (
-					<div key={track.key} className='bg-[var(--paper)] px-5 py-4'>
-						<div className='flex items-baseline gap-2.5'>
-							<span
-								aria-hidden='true'
-								className='size-2.5 shrink-0 translate-y-[-1px] rounded-full'
-								style={{ background: track.color }}
-							/>
-							<p className='num text-2xl font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
-								{track.seats}
-							</p>
-							<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
-								{Math.round((track.seats / total) * 100)}% of the chamber
+					<div key={track.key} className='text-center'>
+						<span
+							aria-hidden='true'
+							className='block h-1.5 w-full'
+							style={{ background: track.color }}
+						/>
+						<div className='pt-5'>
+							<div className='flex flex-wrap items-baseline justify-center gap-x-2.5 gap-y-1'>
+								<p className='num text-2xl font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
+									{track.seats}
+								</p>
+								<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+									{Math.round((track.seats / total) * 100)}% of the chamber
+								</p>
+							</div>
+							<p className='mt-2.5 text-[13px] font-semibold leading-snug text-[var(--ink-2)]'>
+								{track.label}
 							</p>
 						</div>
-						<p className='mt-2.5 text-[13px] font-semibold leading-snug text-[var(--ink-2)]'>
-							{track.label}
-						</p>
 					</div>
 				))}
 			</figcaption>
@@ -242,29 +257,34 @@ export function DistrictSeatBars({
 		<figure>
 			<dl>
 				{seats.map((item) => (
+					// Stacked rather than in three tracks. The rows sit in a third of
+					// the page now, and a 13rem name column beside a bar and a count
+					// leaves the bar about eighty points wide — too short to compare,
+					// which is the only thing a bar is for. Name and count share a
+					// line; the bar has the full width under them.
 					<div
 						key={item.constituency ?? item.seats}
-						className='grid items-center gap-x-5 gap-y-1 border-t border-[var(--rule-soft)] py-3 sm:grid-cols-[minmax(0,13rem)_minmax(0,1fr)_2.5rem]'
+						className='border-t border-[var(--rule-soft)] py-2.5'
 					>
-						<dt className='text-[13.5px] font-semibold leading-snug text-[var(--ink)]'>
-							{item.constituency}
-							{item.note ? (
-								<span className='mt-0.5 block text-[12px] font-normal leading-snug text-[var(--ink-3)]'>
-									{item.note}
-								</span>
-							) : null}
-						</dt>
+						<div className='flex items-baseline justify-between gap-3'>
+							<dt className='min-w-0 text-[13.5px] font-semibold leading-snug text-[var(--ink)]'>
+								{item.constituency}
+							</dt>
+							<dd className='num shrink-0 text-[15px] font-bold leading-none text-[var(--ink)]'>
+								{item.seats}
+							</dd>
+						</div>
 
-						<dd className='order-3 sm:order-none'>
+						{item.note ? (
+							<p className='mt-1 text-[12px] leading-snug text-[var(--ink-3)]'>{item.note}</p>
+						) : null}
+
+						<dd className='mt-2'>
 							<span
-								className='block h-3 bg-[var(--slate)]'
+								className='block h-2.5 bg-[var(--slate)]'
 								style={{ width: `${Math.max((item.seats / largest) * 100, item.seats === 0 ? 0 : 4)}%` }}
 								aria-hidden='true'
 							/>
-						</dd>
-
-						<dd className='num text-right text-[15px] font-bold leading-none text-[var(--ink)] sm:text-[17px]'>
-							{item.seats}
 						</dd>
 					</div>
 				))}

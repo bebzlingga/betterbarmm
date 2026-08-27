@@ -1,4 +1,5 @@
 import { LineReveal, OkirBloom, Rise } from '@betterbarmm/editorial'
+import { StatFigures, type Stat } from './stat-band'
 
 type PageHeaderProps = {
 	eyebrow: string
@@ -10,6 +11,13 @@ type PageHeaderProps = {
 	 */
 	titleMuted?: string
 	description: string
+	/**
+	 * Headline figures, set inside the masthead under the sentence that
+	 * introduces them rather than in a band of their own below it. A page whose
+	 * whole subject is a set of counts wants them read as part of the opening
+	 * claim; a page that merely has counts is better served by `StatBand`.
+	 */
+	figures?: Stat[]
 	meta?: string
 	/**
 	 * `brand` is for the standing pages — the hub, Data & Methodology — where
@@ -18,9 +26,11 @@ type PageHeaderProps = {
 	 */
 	emphasis?: 'default' | 'brand'
 	/**
-	 * Only read on `brand`. Centring suits a page that is purely a statement; a
-	 * page that opens onto a list reads better ranged left, so the headline
-	 * shares an edge with the records underneath it.
+	 * Only read on `brand`. Ranged left by default: every masthead in this
+	 * registry opens onto something — a list, a set of figures, a page of
+	 * reference blocks — and a headline that shares an edge with what follows
+	 * it gives the reader one line to come down. Centring is available for a
+	 * page that is purely a statement and has nothing under it to align to.
 	 */
 	align?: 'center' | 'left'
 	/**
@@ -51,9 +61,10 @@ export function PageHeader({
 	title,
 	titleMuted,
 	description,
+	figures,
 	meta,
 	emphasis = 'default',
-	align = 'center',
+	align = 'left',
 	size = 'display',
 }: PageHeaderProps) {
 	const isBrand = emphasis === 'brand'
@@ -70,7 +81,17 @@ export function PageHeader({
 			// Each cut one step up from where it started, to sit with the landing
 			// site's mastheads: `hero` on the largest display cut, `compact` — the
 			// label over a register — at the size the main site opens a section.
-			size === 'compact' ? 'bb-display-md' : size === 'hero' ? 'bb-display-lg' : 'bb-display'
+			//
+			// The hero cut takes a leading of its own with it. The shared 0.84 is
+			// tuned for the landing site's mastheads, where every given line is a
+			// short phrase that never wraps; this registry's opening line is a
+			// whole sentence and wraps at most widths, and two rows of 100px type
+			// at 0.84 put the descenders of one through the capitals of the next.
+			size === 'compact'
+				? 'bb-display-md'
+				: size === 'hero'
+					? 'bb-display-lg reg-hero-title'
+					: 'bb-display'
 
 		return (
 			/* The landing site's masthead, to the point: same lattice, same medallion
@@ -79,18 +100,33 @@ export function PageHeader({
 			   from there to the registry should not feel they have changed sites. The
 			   other cuts stay in the flow: a masthead that size over a page of four
 			   hundred rows is furniture in the way of what they came for. */
+			// A column rather than a centred row on the hero cut. `items-center`
+			// made every child a flex item on one line, and the seam at the foot of
+			// this section is a child: a 7px strip with no width of its own, it was
+			// laid beside the masthead instead of under it and measured zero. The
+			// column stacks them again, and the content takes `my-auto` below to
+			// hold the middle of the screen the way the row was holding it.
 			<section
 				className={`bb-lattice relative overflow-hidden${
-					size === 'hero' ? ' flex min-h-[80svh] items-center' : ''
+					size === 'hero' ? ' flex min-h-[80svh] flex-col' : ''
 				}`}
 			>
-				<OkirBloom className='absolute -right-[14%] -top-[38%] size-[min(44rem,86vw)] opacity-[0.15]' />
+				<OkirBloom
+					variant='weave'
+					className='absolute -right-[14%] -top-[38%] size-[min(44rem,86vw)] opacity-[0.15]'
+				/>
 				<span aria-hidden='true' className='bb-glow absolute -right-[10%] -top-[20%] size-[34rem]' />
 
+				{/* More air than the panel used to give it. At 16/24 the masthead was
+				    a block of type with the lattice edge close above and below it,
+				    which reads as a banner; the room around it is what makes it an
+				    opening. It matters more now that the figures sit inside the panel
+				    on the pages that carry them — the block is taller, and a taller
+				    block in the same margins is tighter, not roomier. */}
 				<div
-					className={`bb-container relative w-full pb-16 pt-16 lg:pb-24 lg:pt-24${
-						centred ? ' text-center' : ''
-					}`}
+					className={`bb-container relative w-full pb-20 pt-20 lg:pb-32 lg:pt-32${
+						size === 'hero' ? ' my-auto' : ''
+					}${centred ? ' text-center' : ''}`}
 				>
 					<Rise distance={14}>
 						{/* The kicker states the size or the subject of the thing rather
@@ -112,6 +148,18 @@ export function PageHeader({
 							{description}
 						</p>
 					</Rise>
+
+					{/* On the brass rule the masthead already ends on, rather than in
+					    a band under the panel. The figures are the page's opening claim
+					    here — they are what it is about — and set outside the lattice
+					    they read as a summary of something that has already finished. */}
+					{figures?.length ? (
+						<Rise delay={0.4} distance={14}>
+							<div className='mt-12 border-t border-[var(--brass-line)] pt-9'>
+								<StatFigures stats={figures} />
+							</div>
+						</Rise>
+					) : null}
 
 					{meta ? (
 						<Rise delay={0.42} distance={12}>

@@ -220,6 +220,7 @@ export function DiscoverTopicBody({
 							eyebrow='The story'
 							title='From the struggle to BARMM.'
 							description={`${topic.timeline.length} moments that shaped the Bangsamoro — from centuries-old sultanates to the first regular parliamentary election.`}
+							split
 						/>
 						<Timeline events={topic.timeline} eraPhotos={media?.eraPhotos} />
 					</div>

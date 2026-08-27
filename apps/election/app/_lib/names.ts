@@ -44,15 +44,63 @@ function capitalise(word: string): string {
 	return lower.charAt(0).toUpperCase() + lower.slice(1)
 }
 
+/** A suffix that belongs after the surname, however the form was filled in. */
+const SUFFIX = /^(jr|sr|ii|iii|iv|v|vi)\.?$/i
+
+/** Particles that belong to the surname rather than standing as a middle name. */
+const PARTICLES = new Set(['de', 'del', 'dela', 'delos', 'los', 'da', 'van', 'von', 'bin', 'binti', 'al', 'bte'])
+
+/**
+ * The middle name as an initial — but only where there is exactly one of them.
+ *
+ * The lists print the same person three ways: "HABBAS SABPA CAMENDAN" from a
+ * COMELEC form, "Susana Salvador Anayatin" from the certified list, "BADRUDIN
+ * S. MAMAD" from a filing where the clerk abbreviated. Set in one column they
+ * read as three different conventions rather than as a roster, and the middle
+ * name is the part that varies — nobody is looking a candidate up by it.
+ *
+ * One middle word only. Beyond that the shapes stop being reliable: "Mary Ann
+ * Madroño Arnado" carries a two-word given name, "Dayang Rajsidana K.
+ * Amilbangsa" opens on a title, and "USMAN JR M. SARANGANI" has a suffix
+ * filed in the middle of the name. A rule that initialised every inside word
+ * would turn the first into "Mary A. M. Arnado" and the second into someone
+ * else entirely. A name this workspace cannot read confidently is printed as
+ * it was reported, which is the same rule the casing follows.
+ */
+function abbreviateMiddle(words: string[]): string[] {
+	const suffixes: string[] = []
+	const core = [...words]
+	while (core.length > 0 && SUFFIX.test(core[core.length - 1])) {
+		suffixes.unshift(core.pop() as string)
+	}
+
+	if (core.length !== 3) return [...core, ...suffixes]
+
+	const [given, middle, surname] = core
+
+	// Already an initial, a particle of the surname, or too short to be a name
+	// in its own right — all left exactly as they were reported.
+	if (/^[A-Za-z]\.?$/.test(middle)) return [...core, ...suffixes]
+	if (PARTICLES.has(middle.toLowerCase())) return [...core, ...suffixes]
+
+	return [given, `${middle.charAt(0).toUpperCase()}.`, surname, ...suffixes]
+}
+
 export function displayName(name: string): string {
 	if (!name) return name
 
-	// Already cased by whoever entered it. Leave it alone.
-	if (/[a-z]/.test(name)) return name.trim()
+	const trimmed = name.trim()
 
-	return name
-		.trim()
-		.split(/\s+/)
-		.map(capitalise)
-		.join(' ')
+	// A name written in the comma order — "Ampatuan, Baintan A." — is already
+	// abbreviated by whoever filed it, and re-cutting it risks reading the
+	// surname as a given name.
+	if (trimmed.includes(',')) return trimmed
+
+	// Already cased by whoever entered it: the casing is left alone, but the
+	// middle name is still brought to the roster's one shape.
+	const words = /[a-z]/.test(trimmed)
+		? trimmed.split(/\s+/)
+		: trimmed.split(/\s+/).map(capitalise)
+
+	return abbreviateMiddle(words).join(' ')
 }
