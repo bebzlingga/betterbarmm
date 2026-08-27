@@ -89,7 +89,7 @@ export function Masthead({
 
         {standfirst ? (
           <Rise delay={0.35} distance={16}>
-            <p className='mt-9 max-w-2xl text-[17px] leading-[var(--leading-body)] text-[var(--ink-2)] sm:text-lg'>
+            <p className='mt-9 max-w-2xl text-[16px] leading-[var(--leading-body)] text-[var(--ink-2)] sm:text-lg'>
               {standfirst}
             </p>
           </Rise>

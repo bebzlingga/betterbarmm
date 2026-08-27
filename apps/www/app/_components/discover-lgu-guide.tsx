@@ -144,7 +144,7 @@ function Lookups() {
 							className='row-in group flex flex-col border-b border-[var(--rule)] py-6 transition hover:bg-[var(--paper-2)] sm:px-6 sm:[&:nth-child(odd)]:border-r'
 						>
 							<div className='flex items-start justify-between gap-4'>
-								<h4 className='text-[17px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
+								<h4 className='text-[16px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
 									{lookup.office}
 								</h4>
 								<ArrowUpRightIcon

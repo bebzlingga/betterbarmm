@@ -146,7 +146,7 @@ export function DiscoverHero({
 						    pulls whatever follows up into the headline's descender band. At
 						    display size that is around 16px of overlap, which is what this
 						    gives back. */}
-						<p className='bb-measure mt-4 text-base leading-[var(--leading-body)] text-white/80 sm:text-[17px]'>
+						<p className='bb-measure mt-4 text-base leading-[var(--leading-body)] text-white/80 sm:text-[16px]'>
 							{standfirst}
 						</p>
 					</Rise>

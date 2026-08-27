@@ -34,8 +34,17 @@ export function SiteNav() {
 	return (
 		<header className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'>
 			<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
-				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[1fr_auto_1fr] items-center gap-4'>
-					<div className='flex min-w-0 items-center gap-3'>
+				{/* Two tracks on a phone, three from `md` up.
+				 *
+				 * The centre track holds a nav that is not rendered below `md`, so
+				 * three equal-ish tracks gave the wordmark half the row and the
+				 * controls the other half. The mark is a fixed-height image: the
+				 * moment its share fell under its natural width, `max-width: 100%`
+				 * squeezed it narrower while the inline height held, which is a
+				 * wordmark rendered out of proportion. An `auto` track gives it
+				 * exactly what it measures. */}
+				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[auto_1fr] items-center gap-4 md:grid-cols-[1fr_auto_1fr]'>
+					<div className='flex items-center gap-3'>
 						<a href='https://betterbarmm.com' onClick={closeMenu} className='w-fit shrink-0'>
 							<Image
 								src='/logo.png'
@@ -43,7 +52,7 @@ export function SiteNav() {
 								width={142}
 								height={26}
 								priority
-								className='logo-light'
+								className='logo-light max-w-none'
 								style={{ height: 26, width: 'auto' }}
 							/>
 							<Image
@@ -52,7 +61,7 @@ export function SiteNav() {
 								width={142}
 								height={26}
 								priority
-								className='logo-dark'
+								className='logo-dark max-w-none'
 								style={{ height: 26, width: 'auto' }}
 							/>
 						</a>
@@ -80,9 +89,16 @@ export function SiteNav() {
 						))}
 					</nav>
 
-					<div className='flex items-center justify-end gap-1.5'>
-						<ThemeToggle />
-						<span className='w-1.5' aria-hidden='true' />
+					<div className='flex items-center justify-end gap-2 md:gap-1.5'>
+						{/* The theme switch is a desktop control here. On a phone the row
+						    is a mark, a call to action and a way into the workspace, and a
+						    fourth icon between them read as clutter — it is a setting,
+						    which is what the menu panel is for. It moves there rather than
+						    being duplicated, so there is only ever one of it. */}
+						<div className='hidden items-center md:flex'>
+							<ThemeToggle />
+							<span className='w-1.5' aria-hidden='true' />
+						</div>
 
 						<Magnetic strength={0.22} className='hidden sm:inline-flex'>
 							<a
@@ -153,6 +169,16 @@ export function SiteNav() {
 										{page.label}
 									</Link>
 								))}
+							</div>
+
+							{/* Last, under the links: the one row here that changes the page
+							    rather than leaving it. */}
+							<p className='bb-label mt-7'>Appearance</p>
+							<div className='mt-3 flex items-center justify-between gap-3 py-1'>
+								Theme
+								<span className='-mr-2 flex'>
+									<ThemeToggle />
+								</span>
 							</div>
 						</nav>
 					</motion.div>

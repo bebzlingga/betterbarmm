@@ -40,7 +40,7 @@ function Column({
 		<div className='bg-[var(--paper)] p-6 sm:p-7'>
 			<div className='flex items-baseline gap-3'>
 				<p className='num text-[13px] font-bold leading-none text-[var(--accent)]'>{step}</p>
-				<h3 className='text-[17px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+				<h3 className='text-[16px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 					{title}
 				</h3>
 			</div>

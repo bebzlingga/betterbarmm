@@ -260,7 +260,7 @@ export function ElectionTimeline({ phases }: { phases: TimelinePhase[] }) {
 												style={{ background: item.isElectionDay ? 'var(--accent)' : item.color }}
 											/>
 											<div className='pt-4'>
-												<h3 className='text-[17px] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)]'>
+												<h3 className='text-[16px] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)]'>
 													{item.title}
 												</h3>
 												{item.body ? (

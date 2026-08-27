@@ -203,7 +203,7 @@ export default function HomePage() {
 							/>
 
 							<Rise delay={0.35} distance={16}>
-								<p className='mt-9 max-w-2xl text-[17px] leading-[var(--leading-body)] text-[var(--ink-2)]'>
+								<p className='mt-9 max-w-2xl text-[16px] leading-[var(--leading-body)] text-[var(--ink-2)]'>
 									BetterBARMM turns scattered Bangsamoro public records into workspaces you can read,
 									question, and trace back to the source — the bills before Parliament, the budgets
 									behind them, and every local government in the region.

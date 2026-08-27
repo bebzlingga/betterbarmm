@@ -25,6 +25,12 @@ type MastheadProps = {
 	/** Indices of `lines` set in the muted grey — the qualifier, not the claim. */
 	muted?: number[]
 	standfirst: string
+	/**
+	 * `lg` is the largest display cut, for a page that opens on its headline
+	 * and nothing else. The default is the middle one, which is right where a
+	 * masthead also carries figures and actions.
+	 */
+	size?: 'display' | 'lg'
 	/** The figures on the brass rule under the standfirst. Three at most; six is a table. */
 	facts?: MastheadFact[]
 	/** Ranged right on the same rule as the facts — the page's actions, or a note on the record. */
@@ -46,6 +52,7 @@ export function Masthead({
 	lines,
 	muted = [],
 	standfirst,
+	size = 'display',
 	facts,
 	children,
 }: MastheadProps) {
@@ -65,7 +72,7 @@ export function Masthead({
 				<LineReveal
 					lines={lines}
 					delay={0.08}
-					className='bb-display mt-7 text-[var(--ink)]'
+					className={`${size === 'lg' ? 'bb-display-lg' : 'bb-display'} mt-7 text-[var(--ink)]`}
 					lineClassName={lines.map((_, index) => (muted.includes(index) ? 'bb-mute' : undefined))}
 				/>
 
@@ -75,7 +82,11 @@ export function Masthead({
 					    standfirst is one sentence read once, under a headline that runs
 					    the page, and at 34em it stacked into five short lines and left
 					    the masthead looking like a narrow column pushed to the left. */}
-					<p className='mt-9 max-w-[46rem] text-[17px] leading-8 text-[var(--ink-2)]'>
+					{/* Tighter than the reading leading. A standfirst is one sentence
+					    taken in at a glance under a headline, not a column somebody
+					    settles into — set at the body's own 1.88 it stacked into loose,
+					    widely separated lines that read as four short paragraphs. */}
+					<p className='mt-9 max-w-[46rem] text-[16px] leading-[1.5] text-[var(--ink-2)]'>
 						{standfirst}
 					</p>
 				</Rise>
@@ -152,8 +163,16 @@ export function Masthead({
 								</dl>
 							) : null}
 
+							{/* Not on a phone. The actions repeat what the bar above already
+							    offers — the workspace's own pages are one tap away in the menu,
+							    and the data link is a file download nobody starts on a handset.
+							    On a narrow column they wrapped under the figures as a third
+							    block, which pushed the first section of the page a screen
+							    further down. */}
 							{children ? (
-								<div className='flex flex-wrap items-center gap-3 lg:justify-end'>{children}</div>
+								<div className='hidden flex-wrap items-center gap-3 sm:flex lg:justify-end'>
+									{children}
+								</div>
 							) : null}
 						</div>
 					</Rise>

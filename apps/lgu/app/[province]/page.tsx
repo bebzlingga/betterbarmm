@@ -255,7 +255,7 @@ export default async function ProvincePage({
 											className='group flex h-full flex-col border-b border-[var(--rule)] py-5 transition hover:bg-[var(--paper-2)] sm:border-r sm:px-5 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(3n)]:border-r-0'
 										>
 											<div className='flex items-start justify-between gap-3'>
-												<h3 className='text-[17px] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
+												<h3 className='text-[16px] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
 													{unit.name}
 												</h3>
 												<ArrowUpRightIcon

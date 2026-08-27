@@ -92,6 +92,7 @@ export default function CandidatesPage() {
 				label='Candidates & parties'
 				lines={['Explore the people', 'on the ballot.']}
 				muted={[1]}
+				size='lg'
 				standfirst={`The ${stats.regionalParties} parties every voter in the region chooses from, and every sectoral nominee and district filer this workspace holds a record for — searchable by name, by party, and by the place they are running in.`}
 				/* The registry's own masthead shape: each figure says what it counts
 				   and where it came from, because the three routes onto this page are

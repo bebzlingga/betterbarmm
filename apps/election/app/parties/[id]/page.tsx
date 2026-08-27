@@ -91,7 +91,7 @@ export default async function PartyDetailPage({
 					</Rise>
 
 					<Rise delay={0.2} distance={14}>
-						<p className='mt-6 max-w-[52rem] text-[17px] font-semibold leading-8 text-[var(--ink)]'>
+						<p className='mt-6 max-w-[52rem] text-[16px] font-semibold leading-8 text-[var(--ink)]'>
 							{party.full_name}
 						</p>
 					</Rise>
@@ -102,7 +102,7 @@ export default async function PartyDetailPage({
 						    This is a sentence read once under a name at display size, not a
 						    column somebody settles into; at 34em it stacked into a narrow
 						    stripe beside a very large heading. */}
-						<p className='mt-5 max-w-[52rem] text-[17px] leading-8 text-[var(--ink-2)]'>
+						<p className='mt-5 max-w-[52rem] text-[16px] leading-8 text-[var(--ink-2)]'>
 							{party.description}
 						</p>
 						</Rise>
@@ -139,7 +139,7 @@ export default async function PartyDetailPage({
 					    will cap it. */}
 					<Rise distance={14}>
 						<div className='mt-10'>
-							<p className='text-[17px] leading-8 text-[var(--ink-2)]'>
+							<p className='text-[16px] leading-8 text-[var(--ink-2)]'>
 								{party.background.background}
 							</p>
 							{party.background.source_url ? (
@@ -212,7 +212,7 @@ export default async function PartyDetailPage({
 											<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
 												{candidate.sector}
 											</p>
-											<h4 className='mt-2 text-[17px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+											<h4 className='mt-2 text-[16px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 												{displayName(candidate.full_name)}
 											</h4>
 											<p className='mt-2 bb-body text-[var(--ink-2)]'>

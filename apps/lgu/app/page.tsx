@@ -154,7 +154,7 @@ function Lookups() {
 							className='group flex h-full flex-col border-l border-t border-[var(--rule)] p-7 transition hover:bg-[var(--paper-2)] lg:p-8'
 						>
 							<div className='flex items-start justify-between gap-4'>
-								<h3 className='text-[17px] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
+								<h3 className='text-[16px] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
 									{lookup.office}
 								</h3>
 								<ArrowUpRightIcon
@@ -192,7 +192,7 @@ export default function LguHomePage() {
 					/>
 
 					<Rise delay={0.35} distance={16}>
-						<p className='bb-measure mt-9 text-[17px] leading-8 text-[var(--ink-2)]'>
+						<p className='bb-measure mt-9 text-[16px] leading-8 text-[var(--ink-2)]'>
 							The region down to the barangay: what each unit is, how many people live in it, which
 							posts are on its ballot, and the governors, mayors and councillors COMELEC canvassed
 							into office in 2025.
