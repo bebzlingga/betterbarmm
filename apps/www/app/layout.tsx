@@ -22,11 +22,6 @@ export const metadata: Metadata = {
   title: 'BetterBARMM | Better Transparency. Better Governance.',
   description:
     'A public transparency project for the Bangsamoro. Public records — elections, laws, budgets — organised into workspaces you can read, question, and trace back to the source.',
-  icons: {
-    icon: [{ url: '/images/logo-ico.png', type: 'image/png' }],
-    shortcut: [{ url: '/images/logo-ico.png', type: 'image/png' }],
-    apple: [{ url: '/images/logo-ico.png', type: 'image/png' }],
-  },
 	/* Absolute, because everything below it is relative. Without a
 	   `metadataBase` the generated card resolves to a path rather than a URL,
 	   and a platform scraping the page has nothing to fetch — which is why a
@@ -47,6 +42,20 @@ export const metadata: Metadata = {
 		description:
 			'A public transparency project for the Bangsamoro. Public records — elections, laws, budgets — organised into workspaces you can read, question, and trace back to the source.',
 	},
+
+	/* The canonical address, and permission to index it.
+	   Four apps on four subdomains serve overlapping subjects — an act appears
+	   on the registry and is linked from the election workspace — so each page
+	   naming its own address is what stops a crawler treating a link as a
+	   duplicate of the page it points at. */
+	alternates: { canonical: 'https://betterbarmm.com' },
+	robots: { index: true, follow: true },
+	authors: [{ name: 'BetterBARMM', url: 'https://betterbarmm.com' }],
+	creator: 'BetterBARMM',
+	publisher: 'BetterBARMM',
+	/* A page of act numbers, seat counts and dates is full of strings a phone
+	   will turn into telephone links if it is not told otherwise. */
+	formatDetection: { telephone: false, date: false, address: false, email: false },
 
 	twitter: {
 		card: 'summary_large_image',

@@ -38,6 +38,20 @@ export const metadata: Metadata = {
 			'The 2026 Bangsamoro Parliamentary Election as a public record: the parties on the regional ballot, the candidates who filed in each district, the reserved seats, the dates the vote moved through, and the source behind every line.',
 	},
 
+	/* The canonical address, and permission to index it.
+	   Four apps on four subdomains serve overlapping subjects — an act appears
+	   on the registry and is linked from the election workspace — so each page
+	   naming its own address is what stops a crawler treating a link as a
+	   duplicate of the page it points at. */
+	alternates: { canonical: 'https://election.betterbarmm.com' },
+	robots: { index: true, follow: true },
+	authors: [{ name: 'BetterBARMM', url: 'https://betterbarmm.com' }],
+	creator: 'BetterBARMM',
+	publisher: 'BetterBARMM',
+	/* A page of act numbers, seat counts and dates is full of strings a phone
+	   will turn into telephone links if it is not told otherwise. */
+	formatDetection: { telephone: false, date: false, address: false, email: false },
+
 	twitter: {
 		card: 'summary_large_image',
 		title: 'BetterBARMM Election',

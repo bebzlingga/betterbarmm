@@ -12,6 +12,11 @@ import { ThemeToggle } from './theme-toggle'
 const pages = [
 	{ href: '/', label: 'The election' },
 	{ href: '/candidates', label: 'Candidates' },
+	/* What the seat actually is. The workspace could say who is standing and how
+	   the seats are filled, and a reader could still leave without knowing what
+	   the person they are voting for will do — which is the question underneath
+	   the whole exercise. */
+	{ href: '/the-job', label: 'The job' },
 ] as const
 
 /**

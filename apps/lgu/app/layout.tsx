@@ -39,6 +39,20 @@ export const metadata: Metadata = {
 			'Every province, city, municipality and barangay in the Bangsamoro — population, land area, the officials elected to each, and the services each rung is responsible for.',
 	},
 
+	/* The canonical address, and permission to index it.
+	   Four apps on four subdomains serve overlapping subjects — an act appears
+	   on the registry and is linked from the election workspace — so each page
+	   naming its own address is what stops a crawler treating a link as a
+	   duplicate of the page it points at. */
+	alternates: { canonical: 'https://lgu.betterbarmm.com' },
+	robots: { index: true, follow: true },
+	authors: [{ name: 'BetterBARMM', url: 'https://betterbarmm.com' }],
+	creator: 'BetterBARMM',
+	publisher: 'BetterBARMM',
+	/* A page of act numbers, seat counts and dates is full of strings a phone
+	   will turn into telephone links if it is not told otherwise. */
+	formatDetection: { telephone: false, date: false, address: false, email: false },
+
 	twitter: {
 		card: 'summary_large_image',
 		title: 'BetterBARMM Local Government',
