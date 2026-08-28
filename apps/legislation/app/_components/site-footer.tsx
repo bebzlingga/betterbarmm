@@ -37,7 +37,7 @@ export function SiteFooter() {
 							href: 'https://legislation.betterbarmm.com/how-parliament-works#the-bill-path',
 							label: 'How a bill becomes law',
 						},
-						{ href: 'https://legislation.betterbarmm.com/about', label: 'Data & Methodology' },
+						{ href: 'https://legislation.betterbarmm.com/about', label: 'Data' },
 					],
 				},
 				{

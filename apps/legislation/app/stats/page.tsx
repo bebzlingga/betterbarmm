@@ -251,7 +251,7 @@ export default function DataPage() {
 							</div>
 
 							<Link href='/about' className='bb-btn bb-btn-ghost'>
-								Data &amp; Methodology
+								Data
 							</Link>
 						</div>
 					</div>

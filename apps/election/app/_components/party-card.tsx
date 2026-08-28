@@ -20,7 +20,10 @@ export function PartyCard({
 	return (
 		<a
 			href={`/parties/${party.party_id}`}
-			className='group flex min-h-full flex-col bg-[var(--paper)] p-6 transition-colors duration-300 hover:bg-[var(--paper-2)]'
+			// Stacked on a phone, the card has the page's margin either side of it
+			// already, so its own horizontal padding only shortened the line. It
+			// comes back at `sm`, where two cards share a row.
+			className='group flex min-h-full flex-col bg-[var(--paper)] py-6 transition-colors duration-300 hover:bg-[var(--paper-2)] sm:p-6'
 		>
 			{/* The plate and the mark on the record, and nothing between them. The
 			    party's id sat beside the plate in brass capitals — the same string

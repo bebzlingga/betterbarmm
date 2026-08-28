@@ -64,7 +64,11 @@ const workspaces: Workspace[] = [
 		blurb:
 			'Every province, city, municipality and barangay in the region — population, land area, and the officials elected to each.',
 		measure: 'LGU directory',
-		state: 'live',
+		// Marked by where it actually goes. It was flagged live while its link
+		// still pointed at the holding page, which is the one inconsistency an
+		// index like this cannot afford: a reader who trusts the badge clicks it
+		// and lands on "not yet".
+		state: 'soon',
 	},
 	{
 		label: 'Public services',

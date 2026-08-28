@@ -22,7 +22,11 @@ const peopleLinks = [
 	{ href: '/committees', label: 'Committees' },
 ]
 
-const secondaryLinks = [{ href: '/about', label: 'Data & Methodology' }]
+/* One word in the bar. "Data & Methodology" is what the page is called and
+   what its own masthead says; in a row of one-word tabs — Registry, People,
+   Stats — a three-word label with an ampersand in it reads as a sentence
+   someone left in the navigation. */
+const secondaryLinks = [{ href: '/about', label: 'Data' }]
 
 /** Marks a category whose route exists but whose records aren't compiled yet. */
 function SoonBadge() {

@@ -67,7 +67,14 @@ export default function CommitteesPage() {
 							<div
 								key={committee.slug}
 								style={{ '--row-index': index } as React.CSSProperties}
-								className='row-in relative flex h-full flex-col border-l border-t border-[var(--rule)] p-6 transition hover:bg-[var(--paper-2)] sm:p-8 lg:p-10'
+								/* No horizontal padding while the grid is one card wide. A card
+								   in a single column already has the page's own margin either
+								   side of it, and its padding sits inside that — so the type ran
+								   at two margins' distance from the edge and the line got shorter
+								   on the screen with the least room for it. From `sm`, where two
+								   cards share a row and a card needs its own edges, the padding
+								   comes back. */
+								className='row-in relative flex h-full flex-col border-l border-t border-[var(--rule)] py-6 transition hover:bg-[var(--paper-2)] sm:p-8 lg:p-10'
 							>
 								<h2 className='text-[1.35rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 									<Link

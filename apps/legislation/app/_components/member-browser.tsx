@@ -420,7 +420,10 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 											key={member.slug}
 											href={`/members/${member.slug}`}
 											style={{ '--row-index': index } as React.CSSProperties}
-											className='cell row-in flex flex-col p-4'
+											// One card to a row below 520px, where the page's own margin is
+											// the card's margin too; the padding returns with the second
+											// column.
+											className='cell row-in flex flex-col py-4 min-[520px]:p-4'
 										>
 											{/* The sitting is the section heading, so it isn't repeated here. */}
 											<MemberAvatar name={member.displayName} src={member.photoUrl} />
