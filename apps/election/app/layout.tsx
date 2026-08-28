@@ -17,6 +17,33 @@ export const metadata: Metadata = {
 	},
 	description:
 		'The 2026 Bangsamoro Parliamentary Election as a public record: the parties on the regional ballot, the candidates who filed in each district, the reserved seats, the dates the vote moved through, and the source behind every line.',
+	/* Absolute, because everything below it is relative. Without a
+	   `metadataBase` the generated card resolves to a path rather than a URL,
+	   and a platform scraping the page has nothing to fetch — which is why a
+	   shared link unfurled as a bare line of text. */
+	metadataBase: new URL('https://election.betterbarmm.com'),
+	applicationName: 'BetterBARMM Election',
+
+	/* One estate across four addresses: every card names the estate, then the
+	   workspace. `openGraph.images` is left unset so the generated
+	   `opengraph-image` beside this file fills it in — naming it here would
+	   override the per-route cards a page can bring of its own. */
+	openGraph: {
+		type: 'website',
+		siteName: 'BetterBARMM',
+		locale: 'en_PH',
+		url: 'https://election.betterbarmm.com',
+		title: 'BetterBARMM Election',
+		description:
+			'The 2026 Bangsamoro Parliamentary Election as a public record: the parties on the regional ballot, the candidates who filed in each district, the reserved seats, the dates the vote moved through, and the source behind every line.',
+	},
+
+	twitter: {
+		card: 'summary_large_image',
+		title: 'BetterBARMM Election',
+		description:
+			'The 2026 Bangsamoro Parliamentary Election as a public record: the parties on the regional ballot, the candidates who filed in each district, the reserved seats, the dates the vote moved through, and the source behind every line.',
+	},
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

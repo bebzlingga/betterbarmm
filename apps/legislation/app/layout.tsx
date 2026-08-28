@@ -11,13 +11,41 @@ import './globals.css'
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans', display: 'swap' })
 const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit', display: 'swap' })
 
+const DESCRIPTION =
+	'A public, searchable record of the Bangsamoro Parliament — autonomy acts, bills, and resolutions with sources, sectors, status, and plain-language notes.'
+
 export const metadata: Metadata = {
+	/* Absolute, because everything below it is relative.
+	 *
+	 * Without a `metadataBase` the generated card resolves to a path rather
+	 * than a URL, and a platform scraping the page has nothing to fetch — which
+	 * is why a shared link unfurled as a bare line of text. */
+	metadataBase: new URL('https://legislation.betterbarmm.com'),
 	title: {
 		default: 'BetterBARMM Legislation',
 		template: '%s / BetterBARMM Legislation',
 	},
-	description:
-		'A public, searchable record of the Bangsamoro Parliament — autonomy acts, bills, and resolutions with sources, sectors, status, and plain-language notes.',
+	description: DESCRIPTION,
+	applicationName: 'BetterBARMM Legislation',
+
+	/* The estate is one site across four addresses, so every card names the
+	   estate and then the workspace. `openGraph.images` is left unset: the
+	   generated `opengraph-image` beside this file fills it in, and naming it
+	   here as well would override the per-route cards a page can bring. */
+	openGraph: {
+		type: 'website',
+		siteName: 'BetterBARMM',
+		locale: 'en_PH',
+		url: 'https://legislation.betterbarmm.com',
+		title: 'BetterBARMM Legislation',
+		description: DESCRIPTION,
+	},
+
+	twitter: {
+		card: 'summary_large_image',
+		title: 'BetterBARMM Legislation',
+		description: DESCRIPTION,
+	},
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

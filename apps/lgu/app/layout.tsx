@@ -18,6 +18,33 @@ export const metadata: Metadata = {
 	},
 	description:
 		'Every province, city, municipality and barangay in the Bangsamoro — population, land area, the officials elected to each, and the services each rung is responsible for.',
+	/* Absolute, because everything below it is relative. Without a
+	   `metadataBase` the generated card resolves to a path rather than a URL,
+	   and a platform scraping the page has nothing to fetch — which is why a
+	   shared link unfurled as a bare line of text. */
+	metadataBase: new URL('https://lgu.betterbarmm.com'),
+	applicationName: 'BetterBARMM Local Government',
+
+	/* One estate across four addresses: every card names the estate, then the
+	   workspace. `openGraph.images` is left unset so the generated
+	   `opengraph-image` beside this file fills it in — naming it here would
+	   override the per-route cards a page can bring of its own. */
+	openGraph: {
+		type: 'website',
+		siteName: 'BetterBARMM',
+		locale: 'en_PH',
+		url: 'https://lgu.betterbarmm.com',
+		title: 'BetterBARMM Local Government',
+		description:
+			'Every province, city, municipality and barangay in the Bangsamoro — population, land area, the officials elected to each, and the services each rung is responsible for.',
+	},
+
+	twitter: {
+		card: 'summary_large_image',
+		title: 'BetterBARMM Local Government',
+		description:
+			'Every province, city, municipality and barangay in the Bangsamoro — population, land area, the officials elected to each, and the services each rung is responsible for.',
+	},
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
