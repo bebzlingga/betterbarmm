@@ -559,10 +559,30 @@ function eventPhase(event: TimelineEvent): string {
   return phaseByEventType[event.event_type ?? ""] ?? "Road to Election Day";
 }
 
+/**
+ * When an event goes on the axis.
+ *
+ * A period is written as a range — "2026-05-05/2026-05-07" for the filing
+ * window, "2026-07-30/2026-09-12" for the campaign — and it sorts by the day
+ * it starts, which is the only reading of a range an axis can use.
+ *
+ * It used to sort by 1 January of its year, and not by accident: `new Date()`
+ * cannot parse a range, so the whole string fell through to the year fallback
+ * below. Both periods landed at the head of 2026, which put the campaign
+ * period ahead of the deferment in January and the law in March — an axis
+ * about a date being moved, telling the story out of order.
+ *
+ * The fallback stays for the dates that really are only a year — "2019", the
+ * 2023 electoral code — where the first of January is a placeholder rather
+ * than a claim, and the card prints the bare year.
+ */
 function timeValue(value: string): number {
-  const parsed = parseDate(value);
+  const start = value.includes("/") ? value.split("/")[0].trim() : value;
+
+  const parsed = parseDate(start);
   if (parsed && !Number.isNaN(parsed.getTime())) return parsed.getTime();
-  const yearMatch = value.match(/\d{4}/);
+
+  const yearMatch = start.match(/\d{4}/);
   return yearMatch ? new Date(`${yearMatch[0]}-01-01`).getTime() : 0;
 }
 
