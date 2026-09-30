@@ -32,9 +32,9 @@
 
    ---- Brass ----
 
-   The second brand colour, beside the crimson. Maranao brassware —
+   The second brand color, beside the blue. Maranao brassware —
    the gadur, the kulintang gongs, the betel box — is where it comes
-   from, and it does a job the crimson cannot: crimson is the colour of
+   from, and it does a job the blue cannot: the blue is the color of
    emphasis and is spent on one thing per screen, while brass can carry
    ornament, rules, and small labels across a whole page without ever
    competing with a photograph or a table.
@@ -86,7 +86,7 @@
      carries them, and it is the place to watch if this ever needs revisiting.
 
      The steps above it are neutral greys rather than tinted ones, so the hover
-     tint reads as a shadow of the page rather than as a colour on it, and they
+     tint reads as a shadow of the page rather than as a color on it, and they
      stay as close together as the cream's did — the tint still has to survive
      two hundred rows without turning the page grey. Every ink clears AA by a
      distance: 17.7:1 at `--ink`, 11.4 at `--ink-2`, 7.1 at `--ink-3`, 8.9 for
@@ -108,7 +108,7 @@
 
   /* ---- Brass ----
 
-     The ornament colour. Deliberately desaturated — a true gold at these
+     The ornament color. Deliberately desaturated — a true gold at these
      sizes reads as a warning state, and this has to sit under a photograph
      without pulling the eye off it. `--brass-line` is the one used for
      hairlines and okir strokes, held low enough to read as texture. */
@@ -117,10 +117,10 @@
   --brass-soft: #f4ead6;
   --brass-line: rgba(168, 129, 63, 0.42);
 
-  /* The dark band. Not the ink — an ink-coloured panel would flip to
+  /* The dark band. Not the ink — an ink-colored panel would flip to
      near-white in dark mode, and the band's whole job is to stay dark. The
      same neutral black the dark theme runs on, so a band on the light page and
-     the dark page's own ground are one colour rather than two browns. */
+     the dark page's own ground are one color rather than two browns. */
   --ground: #161615;
   --ground-2: #201f1e;
   --panel-bg: #161615;
@@ -279,7 +279,7 @@
 }
 
 /* For a section that opens or closes against something full-bleed — a
-   picture wall, a coloured band — and so wants the rhythm on one edge
+   picture wall, a colored band — and so wants the rhythm on one edge
    only. Used sparingly; a section reaching for these usually wants
    `.bb-section` and does not know it yet. */
 .bb-section-top {
@@ -306,8 +306,12 @@
  * It belongs to the head, not to the thing after it — the head is what is
  * being spaced away from. Fluid, so the distance grows with the type it is
  * separating rather than staying a phone-sized gap on a large screen. */
+/* Reduced from clamp(3.5rem, 5.5vw, 6rem) (user decision). Every consumer puts
+   its own mt-6 or mt-12 under the head as well, so the old value was landing as
+   seven to nine rem of air and the head read as belonging to the section above
+   it rather than to the block it introduces. */
 .bb-head-gap {
-  margin-bottom: clamp(3.5rem, 5.5vw, 6rem);
+  margin-bottom: clamp(2.5rem, 3.5vw, 3.75rem);
 }
 
 /* The same distance taken from the other side, for a head whose content is a
@@ -327,6 +331,12 @@
 
 /* ============================================================
    Display type
+
+   Titles are bold and figures are black, and the gap between them is
+   deliberate: on a page whose whole subject is money, the number is the
+   thing being said and the heading is what introduces it. They used to
+   share a weight of 800, which left a peso amount and the word above it
+   competing at exactly the same volume.
 
    Fluid rather than stepped — these run from a phone to a 2560px
    monitor and the breakpoints between were never the interesting part.
@@ -357,7 +367,7 @@
  * at 1440 — the same constraint `.bb-display` records below, one size up. */
 .bb-display-lg {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 0.84;
   letter-spacing: -0.052em;
   font-size: clamp(min(3.4rem, 13.4vw), 8.4vw, 7.25rem);
@@ -366,7 +376,7 @@
 
 .bb-display {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 0.86;
   letter-spacing: -0.048em;
   /* Sized so a headline line fits the measure it is given rather than wrapping
@@ -379,7 +389,7 @@
 
 .bb-display-md {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 0.92;
   letter-spacing: -0.04em;
   font-size: clamp(min(2.55rem, 10vw), 5.2vw, 4.4rem);
@@ -388,7 +398,7 @@
 
 .bb-display-sm {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 0.96;
   letter-spacing: -0.034em;
   font-size: clamp(min(2.3rem, 8.9vw), 4vw, 3.15rem);
@@ -496,10 +506,10 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* The kicker without its rule, for a head that is centred.
+/* The kicker without its rule, for a head that is centerd.
  *
  * The brass line is what hangs a section off the left edge of the grid. Over
- * centred type it stops doing that and becomes a full-width bar with two words
+ * centerd type it stops doing that and becomes a full-width bar with two words
  * floating under the middle of it — the rule says "the block starts at this
  * corner" and the type says otherwise. A modifier here rather than a utility at
  * the call site: `.bb-kicker` is unlayered, and an unlayered rule outranks any
@@ -571,7 +581,7 @@
  * Every workspace on this estate opened on the same cloth. Read one after
  * another they were the same site with the records swapped out, and the ground
  * is the one layer that can say which room a reader is standing in without
- * spending a word or a colour on it — it is behind the type, not in it.
+ * spending a word or a color on it — it is behind the type, not in it.
  *
  * So a workspace overrides `--bb-lattice` with its own tile and inherits
  * everything else: the 64px scale, the hairline stroke, the brass, the opacity
@@ -615,22 +625,22 @@
    against. A workspace overrides this one too, or takes the head-cloth. */
 :root[data-theme="dark"],
 .bb-ground,
-.bb-crimson {
+.bb-brand {
   --bb-lattice-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23d3a95f' stroke-width='1' stroke-opacity='0.36'%3E%3Cpath d='M32 0 L64 32 L32 64 L0 32 Z'/%3E%3Cpath d='M32 14 L50 32 L32 50 L14 32 Z'/%3E%3Cpath d='M32 27 L37 32 L32 37 L27 32 Z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 :root[data-theme="dark"] .bb-lattice::before,
 .bb-ground .bb-lattice::before,
-.bb-crimson .bb-lattice::before {
+.bb-brand .bb-lattice::before {
   opacity: 0.34;
   background-image: var(--bb-lattice-dark, var(--bb-lattice));
 }
 
 /* Declared last of the lattice rules so it wins on source order inside a
-   `.bb-ground` or `.bb-crimson` band, which set their own stronger value. */
+   `.bb-ground` or `.bb-brand` band, which set their own stronger value. */
 :root[data-theme="dark"] .bb-lattice-soft::before,
 .bb-ground .bb-lattice-soft::before,
-.bb-crimson .bb-lattice-soft::before {
+.bb-brand .bb-lattice-soft::before {
   opacity: 0.17;
 }
 
@@ -684,7 +694,7 @@
   );
 }
 
-.bb-glow-crimson {
+.bb-glow-brand {
   background: radial-gradient(
     circle,
     color-mix(in srgb, var(--accent) 45%, transparent) 0%,
@@ -830,7 +840,7 @@
 
 /* ---- Credit ----
 
-   Attribution is a licence condition, not a nicety, so it rides on the frame
+   Attribution is a license condition, not a nicety, so it rides on the frame
    rather than sitting in a colophon. Collapsed to a corner mark; the full
    line opens on hover or keyboard focus. */
 .dsc-credit {
@@ -884,8 +894,8 @@
   padding: 0.45rem 0.7rem 0.45rem 0;
 }
 
-/* A locator over a frame — where, before what. Brass rather than crimson: it
-   is a label, and the crimson is spent on the one thing per screen that is
+/* A locator over a frame — where, before what. Amber rather than blue: it
+   is a label, and the blue is spent on the one thing per screen that is
    actually being pointed at. */
 .bb-locator {
   position: absolute;
@@ -939,7 +949,7 @@
 }
 
 /* The fill wipes up from the bottom edge rather than fading in, so the button
-   answers in the same direction the eye is already travelling down the page. */
+   answers in the same direction the eye is already traveling down the page. */
 .bb-btn::before {
   content: "";
   position: absolute;
@@ -969,6 +979,17 @@
   color: #fff;
 }
 
+/* The solid button on the brand ground.
+
+   `.brand-bg` points --ink and --accent both at white, which leaves the resting
+   button correct — white ground, crimson type — and the hover invisible: the
+   wipe fills white over white while the label turns white with it. The fill
+   goes to the ground's own deepest crimson instead, so the button still inverts
+   on hover the way it does on paper. */
+.brand-bg .bb-btn-solid::before {
+  background: var(--paper-3);
+}
+
 .bb-btn-accent {
   background: var(--accent);
   color: #fff;
@@ -981,6 +1002,21 @@
 .bb-btn-ghost {
   border-color: var(--brass-line);
   color: var(--ink-2);
+}
+
+/* The filter chip, squared.
+
+   `@betterbarmm/ui` gives it a 999px pill, which suits the product surfaces
+   that layer was built for and is wrong on a page of this estate: every
+   control around it — the search field it sits beside, `.bb-btn`, the rules,
+   the diamond markers — is square, and a pill reads as a control borrowed from
+   somewhere else.
+
+   Overridden here rather than changed in `ui`, so the apps built directly on
+   that layer keep their pills. This file is imported after it in every
+   editorial app, so a plain class at the same specificity is enough. */
+.chip {
+  border-radius: 0;
 }
 
 .bb-btn-ghost::before {
@@ -1058,7 +1094,7 @@
 .nav-item {
   position: relative;
   /* The link fills the bar's height so its active mark can sit on the bar's
-     own edge. The type stays centred in it; only the hit area and the box grow
+     own edge. The type stays centerd in it; only the hit area and the box grow
      to the row, which also makes the whole tab clickable rather than just the
      word. */
   display: inline-flex;
@@ -1080,29 +1116,48 @@
  * An underline a few points below a link is a second rule inside a row that
  * already ends in one, and at a glance the two read as a mark that failed to
  * line up with anything. On the bar's edge it is the header's own border going
- * crimson under the page you are on — one line doing two jobs, which is what
+ * accent under the page you are on — one line doing two jobs, which is what
  * that edge is there for.
  *
- * Three points, because it now has to be read against a 1px border rather than
- * against white space. It spans the whole item, padding included: an edge mark
- * measures the tab, not the word inside it. */
+ * One point (user decision), matching the hairline it sits on rather than
+ * standing off it. It was three, on the argument that an edge mark has to be
+ * read against a 1px border and not against white space; at one it reads as
+ * that border going accent under the active tab, which is quieter and is the
+ * direction the rest of this estate's rules have moved.
+ *
+ * It spans the whole item, padding included: an edge mark measures the tab,
+ * not the word inside it. */
 .nav-item::after {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
   bottom: -1px;
-  height: 3px;
+  height: 1px;
   background: var(--accent);
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform 0.28s var(--ease-swift);
 }
 
+/* Hovering and having-opened are the same state: the reader is pointing at
+   something. Being on the page is a different one, and it is the only one that
+   should look settled rather than responsive. */
 .nav-item:hover,
-.nav-item[data-active="true"],
 .nav-item[data-open="true"] {
   color: var(--ink);
+}
+
+/* The page you are on, in the accent and heavier.
+ *
+ * The edge mark below already says which tab it is, but only once the eye is
+ * on the bar; a reader arriving mid-page and glancing up gets the answer from
+ * the word itself. Weight and color together rather than either alone —
+ * accent at 600 is not far enough from ink-3 at this size and tracking to read
+ * at a glance, and bold in ink would read as a hover that stuck. */
+.nav-item[data-active="true"] {
+  color: var(--accent);
+  font-weight: 800;
 }
 
 .nav-item:hover::after,
@@ -1111,13 +1166,18 @@
   transform: scaleX(1);
 }
 
+/* Smaller and heavier than the 0.875rem regular it was (user decision). A menu
+   row is a label being chosen between, not a line of reading: at the old size
+   and weight the year sat as large as the prose on the page behind it and read
+   as a heading that happened to be in a panel. */
 .nav-menu-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
   padding: 0.7rem 0.85rem;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
   color: var(--ink-2);
   transition:
     background-color 0.16s var(--ease),
@@ -1293,7 +1353,7 @@
 
 .bb-figure {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 900;
   line-height: 0.88;
   letter-spacing: -0.045em;
   font-size: clamp(2.6rem, 6.2vw, 5.25rem);
@@ -1302,7 +1362,7 @@
 
 .bb-figure-sm {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 900;
   line-height: 1;
   letter-spacing: -0.03em;
   font-size: clamp(1.6rem, 3.2vw, 2.4rem);
@@ -1443,7 +1503,7 @@
 }
 
 /* The marker on each event. It sits on the rail, so it needs its own ground
-   colour to punch a hole in the line behind it. */
+   color to punch a hole in the line behind it. */
 .bb-node {
   position: absolute;
   left: 0;
@@ -1488,11 +1548,14 @@
  * is the largest of them: descriptions were being set small to fit, and what
  * that mostly achieved was making the site harder to read.
  *
- * It sets size and leading only. Colour stays a utility at the call site —
+ * It sets size and leading only. Color stays a utility at the call site —
  * these run on paper and over photographs, and there is no one ink for both.
  */
+/* The standfirst under a section head, and body prose generally. Raised a
+   point from 15.5: at that size it sat a shade under the 16px a reader expects
+   of running text, and every section on the estate opens on one of these. */
 .bb-body {
-  font-size: 15.5px;
+  font-size: 16.5px;
   line-height: var(--leading-body);
 }
 

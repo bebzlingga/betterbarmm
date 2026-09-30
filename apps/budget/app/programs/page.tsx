@@ -1,120 +1,50 @@
-import { BudgetFiscalYearTiles } from "../_components/budget-fiscal-year-tiles";
-import { BudgetPageShell } from "../_components/budget-page-shell";
-import { BudgetProgramBrowser } from "../_components/budget-program-browser";
-import { type BudgetSelectGroup } from "../_components/budget-select-field";
-import { titleCase } from "../_components/budget-office-allocation-table";
-import {
-  buildProgramRows,
-  buildYearRows,
-  getBudgetSelection,
-  type BudgetSearchParams,
-  type ProgramRow,
-} from "../_lib/budget-view-model";
+import type { Metadata } from 'next'
+import { budgetFor } from '@betterbarmm/budget-data'
+import { Suspense } from 'react'
+import { Masthead, SourceNote } from '../_components/budget-parts'
+import { ProgramBrowser } from '../_components/program-browser'
 
-function firstParam(value: string | string[] | undefined) {
-  return Array.isArray(value) ? value[0] : value;
+export async function generateMetadata({ searchParams }: { searchParams: Promise<{ fy?: string }> }): Promise<Metadata> {
+	const { budget, programs } = budgetFor((await searchParams).fy)
+	return {
+		title: 'Every program',
+		description: `All ${programs.length} programs and sub-programs in the FY ${budget.fiscalYear} Bangsamoro budget, searchable by sector — scholarships, health facilities, farm-to-market roads.`,
+	}
 }
 
-function officeCategoryLabel(category: string) {
-  return category === "Special Purpose Fund" ? "Special Funds" : category;
-}
+export default async function ProgramsPage({ searchParams }: { searchParams: Promise<{ fy?: string }> }) {
+	const fy = (await searchParams).fy
+	const { budget, programs, sectors } = budgetFor(fy)
 
-function officeCategorySortValue(label: string) {
-  const order = [
-    "Ministry",
-    "Ministry/Executive",
-    "Ministry/Parliament",
-    "Other Executive Office",
-    "Special Funds",
-  ];
-  const index = order.indexOf(label);
+	return (
+		<>
+			<Masthead
+				kicker={`Fiscal year ${budget.fiscalYear}`}
+				title={`${programs.length} programs,`}
+				titleMuted='searchable by sector.'
+			/>
 
-  return index === -1 ? order.length : index;
-}
+			{/* The estate's section rhythm opens a block of reading. What opens here
+			    is a control, and at 9rem of air the search field a reader came for
+			    sits below the fold on a laptop. Held off the masthead, not spaced
+			    away from it. */}
+			<section className='bb-container section-band'>
+				{/* The browser reads `?q=`, which puts it behind a Suspense boundary or
+				    the whole route falls out of prerendering. */}
+				<Suspense
+					fallback={
+						<p className='py-16 text-center font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+							Loading {programs.length} programs…
+						</p>
+					}
+				>
+					{/* Eight chips, not 38. They are a shortcut for the commonest questions,
+					    not the index — that is the sectors page, linked beside them. */}
+					<ProgramBrowser programs={programs} sectors={sectors} />
+				</Suspense>
 
-function uniqueOfficeGroups(programs: ProgramRow[]): BudgetSelectGroup[] {
-  const groups = new Map<string, Map<string, string>>();
-
-  for (const program of programs) {
-    const groupLabel = officeCategoryLabel(program.office_category);
-    const offices = groups.get(groupLabel) ?? new Map<string, string>();
-
-    offices.set(
-      program.agency_id,
-      `${titleCase(program.agency_name)} (${program.agency_id})`,
-    );
-    groups.set(groupLabel, offices);
-  }
-
-  return Array.from(groups.entries())
-    .map(([label, offices]) => ({
-      label,
-      options: Array.from(offices.entries())
-        .map(([value, optionLabel]) => ({
-          value,
-          label: optionLabel,
-        }))
-        .sort((a, b) => a.label.localeCompare(b.label)),
-    }))
-    .sort(
-      (a, b) =>
-        officeCategorySortValue(a.label) - officeCategorySortValue(b.label) ||
-        a.label.localeCompare(b.label),
-    );
-}
-
-function uniqueCategoryOptions(programs: ProgramRow[]) {
-  return Array.from(new Set(programs.map((program) => program.category))).sort(
-    (a, b) => a.localeCompare(b),
-  );
-}
-
-export default async function BudgetProgramsPage({
-  searchParams,
-}: {
-  searchParams: BudgetSearchParams;
-}) {
-  const params = await searchParams;
-  const { budget, toYear, selectedYearLabel } = getBudgetSelection(params);
-  const selectedCategory = firstParam(params.category) ?? "";
-  const selectedAgencyId = firstParam(params.agency) ?? "";
-  const selectedQuery = firstParam(params.q) ?? "";
-  const yearRows = buildYearRows();
-  const programRows = buildProgramRows(budget).sort(
-    (a, b) => b.total - a.total,
-  );
-  const categoryOptions = uniqueCategoryOptions(programRows);
-  const categoryGroups: BudgetSelectGroup[] = [
-    {
-      label: "Section categories",
-      options: categoryOptions.map((category) => ({
-        value: category,
-        label: category,
-      })),
-    },
-  ];
-  const officeGroups = uniqueOfficeGroups(programRows);
-
-  return (
-    <BudgetPageShell activeItem="Programs">
-      <BudgetFiscalYearTiles
-        rows={yearRows}
-        selectedYear={toYear}
-        flushTop
-        hrefBasePath="/programs"
-      />
-
-      <BudgetProgramBrowser
-        programs={programRows}
-        total={budget.total_appropriation}
-        label={selectedYearLabel}
-        year={toYear}
-        categoryGroups={categoryGroups}
-        officeGroups={officeGroups}
-        initialCategory={selectedCategory}
-        initialAgencyId={selectedAgencyId}
-        initialQuery={selectedQuery}
-      />
-    </BudgetPageShell>
-  );
+				<SourceNote what='Every figure on this page' fy={fy} />
+			</section>
+		</>
+	)
 }

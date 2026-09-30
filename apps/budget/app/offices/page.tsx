@@ -1,174 +1,52 @@
-import { Minus, Plus } from 'lucide-react'
-import { AllocationBar, budgetShare, exactTableCurrency, titleCase } from '../_components/budget-office-allocation-table'
-import { AutoScrollDetails } from '../_components/auto-scroll-details'
-import { BudgetFiscalYearTiles } from '../_components/budget-fiscal-year-tiles'
-import { BudgetMetricStrip } from '../_components/budget-metric-strip'
-import { BudgetPageShell } from '../_components/budget-page-shell'
-import {
-	buildAgencyRows,
-	buildOfficeSpecialProvisionRows,
-	buildYearRows,
-	compactCurrency,
-	getBudgetSelection,
-	type AgencyRow,
-	type BudgetSearchParams,
-	type OfficeSpecialProvisionRow,
-} from '../_lib/budget-view-model'
+import type { Metadata } from 'next'
+import { budgetFor } from '@betterbarmm/budget-data'
+import { Masthead } from '../_components/budget-parts'
+import { OfficeList } from '../_components/office-list'
 
-function pluralize(count: number, singular: string, plural = `${singular}s`) {
-	return count === 1 ? singular : plural
+export async function generateMetadata({ searchParams }: { searchParams: Promise<{ fy?: string }> }): Promise<Metadata> {
+	const { budget, offices } = budgetFor((await searchParams).fy)
+	return {
+		title: 'Every office',
+		description: `All ${offices.length} ministries, offices, attached agencies and special purpose funds in the FY ${budget.fiscalYear} Bangsamoro budget, with what each was appropriated.`,
+	}
 }
 
-export default async function BudgetOfficesPage({ searchParams }: { searchParams: BudgetSearchParams }) {
-	const params = await searchParams
-	const { budget, toYear, selectedYearLabel } = getBudgetSelection(params)
-	const yearRows = buildYearRows()
-	const agencyRows = buildAgencyRows(budget)
-	const allocationByAgencyId = new Map(agencyRows.map((agency) => [agency.agency_id, agency]))
-	const officeRows = buildOfficeSpecialProvisionRows(toYear)
-	const officesWithProvisions = officeRows.filter((office) => office.special_provisions.length > 0)
-	const provisionCount = officesWithProvisions.reduce((sum, office) => sum + office.special_provisions.length, 0)
+export default async function OfficesPage({ searchParams }: { searchParams: Promise<{ fy?: string }> }) {
+	const { budget, offices } = budgetFor((await searchParams).fy)
+
+	/* How few offices it takes to reach half the Act. This is why the list is
+	   ordered by size rather than by the Act's own part numbers, so the header
+	   says it instead of announcing the sort order. It is counted rather than
+	   stated: it is four in FY 2026 and two in FY 2021, and a sentence that
+	   named a number would be wrong in most years. */
+	let running = 0
+	let toHalf = 0
+	for (const office of offices) {
+		running += office.totals.total
+		toHalf += 1
+		if (running >= budget.total / 2) break
+	}
 
 	return (
-		<BudgetPageShell activeItem='Special Provisions'>
-			<BudgetFiscalYearTiles
-				rows={yearRows}
-				selectedYear={toYear}
-				flushTop
-				hrefBasePath='/offices'
+		<>
+			{/* The sources page's header, which is the estate's pattern for an index:
+			    a kicker, a claim in two tones, and the figures under it as a row of
+			    counted stats. It was a paragraph of prose carrying six figures inside
+			    it — the same facts, but read as reading rather than as a dashboard,
+			    and none of them findable without finishing the sentence. */}
+			<Masthead
+				kicker={`Fiscal year ${budget.fiscalYear}`}
+				title={`${toHalf} ${toHalf === 1 ? 'office holds' : 'offices hold'} half`}
+				titleMuted='of the whole budget.'
 			/>
 
-			<BudgetMetricStrip
-				metrics={[
-					{
-						label: 'Total appropriation',
-						value: compactCurrency(budget.total_appropriation),
-						detail: budget.act_number,
-					},
-					{
-						label: 'Reporting units',
-						value: officeRows.length,
-						detail: 'Offices in selected GAAB',
-					},
-					{
-						label: 'With provisions',
-						value: officesWithProvisions.length,
-						detail: 'With extracted notes',
-					},
-					{
-						label: 'Provision entries',
-						value: provisionCount,
-						detail: selectedYearLabel,
-					},
-				]}
-			/>
-
-			<OfficeSpecialProvisionList
-				rows={officesWithProvisions}
-				total={budget.total_appropriation}
-				label={selectedYearLabel}
-				allocationByAgencyId={allocationByAgencyId}
-			/>
-		</BudgetPageShell>
-	)
-}
-
-function OfficeSpecialProvisionList({ rows, total, label, allocationByAgencyId }: { rows: OfficeSpecialProvisionRow[]; total: number; label: string; allocationByAgencyId: Map<string, AgencyRow> }) {
-	return (
-		<section className='my-16 mb-12 sm:my-24'>
-			<div className='mb-6! flex flex-wrap items-end justify-between gap-4'>
-				<div>
-					<p className='eyebrow'>Special provisions</p>
-					<h2 className='num mt-2 text-3xl font-extrabold tracking-normal sm:text-5xl'>Special Provisions By Office</h2>
-				</div>
-				<p className='text-[11px] uppercase tracking-[0.12em] text-[var(--ink-3)]'>
-					{rows.length} {pluralize(rows.length, 'office', 'offices')} / {label}
-				</p>
-			</div>
-
-			<div className='overflow-x-auto bg-[var(--paper)]'>
-				<div className='md:min-w-[860px]'>
-					{rows.map((office) => {
-						const allocation = allocationByAgencyId.get(office.agency_id)
-						const personnel = allocation?.personnel ?? 0
-						const mooe = allocation?.mooe ?? 0
-						const capital = allocation?.capital ?? 0
-						const allocationTotal = personnel + mooe + capital || office.total_appropriation
-
-						return (
-							<AutoScrollDetails
-								key={office.agency_id}
-								name='office-special-provisions'
-								className='group border-b border-[var(--rule-soft)] last:border-b-0'
-							>
-								<summary className='grid cursor-pointer list-none gap-1 transition hover:bg-[var(--paper-2)] group-open:bg-[var(--ink)] group-open:text-[var(--paper)] group-open:hover:bg-[var(--ink)] md:grid-cols-[minmax(22rem,1fr)_minmax(18rem,35%)] md:items-center [&::-webkit-details-marker]:hidden'>
-									<div className='flex items-start px-4 py-4 leading-tight sm:px-6 md:items-center md:py-3'>
-										<span className='mr-5 mt-1 grid size-4 md:mt-0 shrink-0 place-items-center border border-[var(--rule)] text-[var(--accent)] group-open:border-[var(--paper-2)] group-open:text-[var(--paper)]'>
-											<Plus
-												className='size-2.5 group-open:hidden'
-												aria-hidden='true'
-											/>
-											<Minus
-												className='hidden size-2.5 group-open:block'
-												aria-hidden='true'
-											/>
-										</span>
-										<div>
-											<p className='text-sm font-semibold text-[var(--ink)] group-open:text-[var(--paper)]'>
-												{titleCase(office.agency_name)} <span className='font-normal uppercase tracking-[0.08em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>({office.agency_id})</span>
-											</p>
-											<p className='mt-1 text-[10px] font-normal uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>
-												{office.category}
-												{office.source_page ? ` / P.${office.source_page}` : ''}
-											</p>
-										</div>
-									</div>
-									<div className='px-4 pb-4 sm:px-6 md:py-3'>
-										<div className='mb-1 flex items-baseline justify-between gap-4'>
-											<p className='num text-left text-sm font-semibold leading-tight text-[var(--ink)] group-open:text-[var(--paper)]'>{exactTableCurrency(office.total_appropriation)}</p>
-											<p className='text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] group-open:text-[var(--paper-2)]'>
-												{budgetShare(office.total_appropriation, total, label)}
-											</p>
-										</div>
-										<AllocationBar
-											personnel={personnel}
-											mooe={mooe}
-											capital={capital}
-											total={allocationTotal}
-											activeOnOpen
-										/>
-									</div>
-								</summary>
-
-								<OfficeSpecialProvisionDetail office={office} />
-							</AutoScrollDetails>
-						)
-					})}
-				</div>
-			</div>
-		</section>
-	)
-}
-
-function OfficeSpecialProvisionDetail({ office }: { office: OfficeSpecialProvisionRow }) {
-	return (
-		<div className='border border-[var(--rule)] bg-[var(--paper-2)] px-4 py-5 sm:px-6 lg:px-12 lg:py-6'>
-			<div className='mt-5 space-y-8'>
-				{office.special_provisions.map((provision, index) => (
-					<section
-						key={`${office.agency_id}-${provision.title}-${index}`}
-						className='border-t border-[var(--rule-soft)] pt-5 first:border-t-0 first:pt-0'
-					>
-						<h3 className='num text-2xl font-extrabold tracking-normal sm:text-3xl'>{provision.title}</h3>
-						<div
-							className='special-provision-body mt-4 text-sm leading-normal text-[var(--ink-2)]'
-							dangerouslySetInnerHTML={{
-								__html: provision.description_html,
-							}}
-						/>
-					</section>
-				))}
-			</div>
-		</div>
+			{/* The estate's section rhythm opens a block of reading. What opens here
+			    is a control, and at 9rem of air the search field a reader came for
+			    sits below the fold on a laptop. Held off the masthead, not spaced
+			    away from it. */}
+			<section className='bb-container section-band'>
+				<OfficeList offices={offices} />
+			</section>
+		</>
 	)
 }

@@ -50,3 +50,7 @@ next-env.d.ts
 
 # Cached Parliament scans — large, and theirs to serve
 datasets/bills/.pdf-cache/
+
+# dataset crawl caches — resume state for datasets/*/scripts, not data
+**/.barangay-officials-cache.jsonl
+**/.openhalalan/

@@ -10,7 +10,7 @@ import type { FilterOption } from '../_lib/legislation-data'
    the tail, and the tail is where half the subjects are.
 
    One hue for every bar. The bars are a single series measuring one thing, so
-   colour carries no information here and giving each subject its own would be
+   color carries no information here and giving each subject its own would be
    sixteen hues saying nothing — several of them indistinguishable under
    deuteranopia. `--funnel-3` is the middle step of the ramp the estate's other
    chart already uses, and it clears 3:1 against the page on both themes.

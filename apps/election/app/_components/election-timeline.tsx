@@ -24,18 +24,18 @@ export type TimelinePhase = {
 const COLUMN = 18 * 16
 
 /**
- * A colour per phase, in the order the phases run.
+ * A color per phase, in the order the phases run.
  *
  * The cards used to open on a two-pixel black rule, which is the heaviest
  * mark on the page and says nothing — every card wore the same one, so twenty
  * of them read as twenty identical objects strung along a line. A short bar in
- * the phase's own colour says which stretch of the road a moment belongs to
+ * the phase's own color says which stretch of the road a moment belongs to
  * without a word, and it is the same bar the band above the axis carries, so a
  * card and its band are visibly one thing.
  *
- * The tokens are the estate's, and they run brass to crimson: the foundations,
+ * The tokens are the estate's, and they run amber to blue: the foundations,
  * then the years the date moved, then the calendar being kept, then the vote.
- * A phase past the fourth wraps rather than inventing a colour.
+ * A phase past the fourth wraps rather than inventing a color.
  */
 const PHASE_COLORS = ['var(--brass)', 'var(--slate)', 'var(--ochre)', 'var(--accent)'] as const
 
@@ -248,11 +248,11 @@ export function ElectionTimeline({ phases }: { phases: TimelinePhase[] }) {
 									    growing it away from the axis with `justify-end` on the ones
 									    above — means the connector always has clear track to cross.
 
-									    The rule over it is a short bar in the phase's own colour now.
+									    The rule over it is a short bar in the phase's own color now.
 									    A full-width two-pixel black line is the heaviest mark on the
 									    page and the same on every card; twenty of them read as twenty
-									    identical objects. Election day keeps the crimson, because that
-									    is the one moment the whole axis is travelling toward. */}
+									    identical objects. Election day keeps the accent, because that
+									    is the one moment the whole axis is traveling toward. */}
 									<div
 										className={`absolute left-4 right-4 flex flex-col ${
 											above

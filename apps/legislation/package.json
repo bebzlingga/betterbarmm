@@ -8,6 +8,7 @@
 		"lint": "eslint ."
 	},
 	"dependencies": {
+		"@betterbarmm/ai": "workspace:*",
 		"@betterbarmm/editorial": "workspace:*",
 		"@betterbarmm/ui": "workspace:*",
 		"@phosphor-icons/react": "^2.1.10",

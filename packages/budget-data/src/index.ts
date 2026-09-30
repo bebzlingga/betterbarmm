@@ -1,1426 +1,1070 @@
-import { type BudgetProgram, type BudgetYear } from "@betterbarmm/schemas";
-import allYearsBudget from "../../../datasets/budget/barmm_fy2020_2026.min.json";
+/* ============================================================
+   The enacted appropriations, as each Act prints them
 
-type Amounts = {
-  ps?: string | number | null;
-  mooe?: string | number | null;
-  co?: string | number | null;
-  total?: string | number | null;
-  personnel_services?: string | number | null;
-  maintenance_and_other_operating_expenses?: string | number | null;
-  capital_outlays?: string | number | null;
-  total_appropriations?: string | number | null;
-  [key: string]: string | number | null | undefined;
-};
+   Two source files per fiscal year: the budget extraction, which
+   carries the shape the Act has — every office with its program
+   table and its object-of-expenditure tree, the special purpose
+   funds, and the infrastructure projects the Ministry of Public
+   Works is funded to build, by province — and the line-item
+   extraction, which carries every row the Act names with a sector
+   tag on it and the special provisions in full.
 
-type SourceFile = {
-  fiscal_year?: number;
-  filename?: string;
-  pages?: number;
-  sha256?: string;
-};
+   This file does four small things to them and nothing else:
 
-type NewDatasetLineItem = {
-  p?: number;
-  page?: number;
-  name?: string;
-  label?: string;
-  amount?: string | number | null;
-  amounts?: {
-    column_guess?: string;
-    amount?: string | number | null;
-    x1?: number;
-  }[];
-  personnel_services?: string | number | null;
-  maintenance_and_other_operating_expenses?: string | number | null;
-  capital_outlays?: string | number | null;
-  total?: string | number | null;
-  is_total_row?: boolean;
-  expense_class?: string;
-  path?: string[];
-  cost_structure?: string | null;
-  raw?: string;
-};
+     · gives every office a slug, so it can have a page
+     · flattens the sub-offices up beside their parents, because a
+       reader looking for the Bangsamoro Information Office does not
+       know it is filed under the Office of the Chief Minister
+     · flattens the projects out from under their provinces
+     · builds one haystack per record, for the finder and the
+       assistant
 
-export type BudgetOfficeSpecialProvisionSource = {
-  title: string;
-  description_html: string;
-};
+   It does NOT re-derive, re-total or reconcile anything. The Act's
+   own figures are reproduced as printed, including the places where
+   they do not sum — several ministries print Personnel Services at
+   the Operations level only, so the program rows under it add up
+   to less than the row above them. That is what the Act says, and a
+   transparency site that quietly fixes its source is no longer one.
 
-type NewDatasetOffice = {
-  code?: string;
-  name?: string;
-  category?: string;
-  classification?: string;
-  sector?: string[];
-  fiscal_year?: number;
-  printed_page_start?: number;
-  printed_page_end?: number;
-  pdf_page_start?: number;
-  pdf_page_end?: number;
-  total_appropriations?: string | number | null;
-  pages?: number[];
-  program_items?: NewDatasetLineItem[];
-  object_items?: NewDatasetLineItem[];
-  performance_pages?: number[];
-  appropriations_by_program?: {
-    items?: NewDatasetLineItem[];
-    totals?: Amounts & {
-      personnel_services?: string | number | null;
-      maintenance_and_other_operating_expenses?: string | number | null;
-      capital_outlays?: string | number | null;
-    };
-  };
-  appropriations_by_object_of_expenditures?: {
-    items?: NewDatasetLineItem[];
-    totals?: Amounts;
-  };
-  special_provisions?: unknown;
-};
+   Two fiscal years, built by the same function from the same shape
+   rather than by two copies of it. `budgetFor` picks one; the bare
+   exports at the foot are the latest year, so a page that has no
+   opinion about which year it is showing gets the current one.
+   ============================================================ */
 
-type NewDatasetYear = {
-  source_file?: string;
-  page_count?: number;
-  pages?: number[];
-  offices?: Record<string, NewDatasetOffice>;
-  special_purpose_funds?: Record<string, NewDatasetOffice>;
-  total_budget?: string | number | null;
-};
+import { FISCAL_YEARS, LATEST_YEAR, isFiscalYear, yearFrom } from './years'
+import raw2026 from '../../../datasets/budget/BAA85_FY2026_budget.json'
+import rawLines2026 from '../../../datasets/budget/BAA85_FY2026_line_items.json'
+import raw2025 from '../../../datasets/budget/BAA65_FY2025_budget.json'
+import rawLines2025 from '../../../datasets/budget/BAA65_FY2025_line_items.json'
+import raw2024 from '../../../datasets/budget/BAA56_FY2024_budget.json'
+import rawLines2024 from '../../../datasets/budget/BAA56_FY2024_line_items.json'
+import raw2023 from '../../../datasets/budget/BAA32_FY2023_budget.json'
+import rawLines2023 from '../../../datasets/budget/BAA32_FY2023_line_items.json'
+import raw2022 from '../../../datasets/budget/BAA23_FY2022_budget.json'
+import rawLines2022 from '../../../datasets/budget/BAA23_FY2022_line_items.json'
+import raw2021 from '../../../datasets/budget/BAA15_FY2021_budget.json'
+import rawLines2021 from '../../../datasets/budget/BAA15_FY2021_line_items.json'
+import raw2020 from '../../../datasets/budget/BAA03_FY2020_budget.json'
+import rawLines2020 from '../../../datasets/budget/BAA03_FY2020_line_items.json'
 
-type YearlySummary = {
-  overall_appropriation?: string | number | null;
-  source_pdf?: string;
-  entity_count_extracted?: number;
-  growth_vs_previous_year_percent?: string | number | null;
-  growth_vs_2020_percent?: string | number | null;
-};
+/* ---- What the Act holds ------------------------------------------------ */
 
-type BudgetEntityRow = {
-  name?: string;
-  program_or_cost_structure_name?: string;
-  row_type?: string;
-  amounts?: Amounts;
-  source_pdf_page?: number;
-  source_pages?: SourcePages;
-  section_category?: string;
-};
-
-type SourcePages =
-  | number[]
-  | {
-      pdf_start_page?: number;
-      pdf_end_page?: number;
-      printed_start_page?: number;
-      printed_end_page?: number;
-    };
-
-type BudgetEntityDetail = {
-  entity_acronym?: string;
-  entity_name?: string;
-  entity_category?: string;
-  section_category?: string;
-  secondary_section_categories?: string[];
-  parent?: string | null;
-  total?: string | number | null;
-  breakdown?: Amounts;
-  amounts?: Amounts;
-  source_pdf_page?: number;
-  source_pages?: SourcePages;
-  rows?: BudgetEntityRow[];
-  object_items?: NewDatasetLineItem[];
-  special_provisions?: BudgetOfficeSpecialProvisionSource[];
-};
-
-type DetailedProgramLine = {
-  amounts?: Amounts;
-  source_pdf_page?: number;
-  source_pages?: SourcePages;
-  section_category?: string;
-};
-
-type DetailedBudgetStructure = {
-  summary?: DetailedProgramLine;
-  programs_or_purposes?: Record<string, DetailedProgramLine>;
-  section_category?: string;
-};
-
-type DetailedBudgetEntity = {
-  budget_structure?: Record<string, DetailedBudgetStructure>;
-  section_category?: string;
-  category?: string;
-};
-
-type DetailedBudget = {
-  by_program_per_year?: Record<string, Record<string, DetailedBudgetEntity>>;
-};
-
-type SectionCategoryDetail = {
-  official_entity_total?: string | number | null;
-  entities?: Record<
-    string,
-    {
-      amount?: string | number | null;
-    }
-  >;
-  program_count?: number;
-};
-
-type RawAllYearsBudget = {
-  metadata?: {
-    dataset_name?: string;
-    currency?: string;
-    note?: string;
-  };
-  years?: Record<string, NewDatasetYear>;
-  schema_version?: string;
-  dataset_name?: string;
-  generated_at?: string;
-  source_files?: SourceFile[];
-  notes?: string[];
-  summary_metrics?: {
-    years_covered?: number[];
-    peak_year?: number;
-    peak_appropriation?: string | number | null;
-    seven_year_growth_percent?: string | number | null;
-  };
-  yearly_summary?: Record<string, YearlySummary>;
-  budget_details_by_year?: Record<
-    string,
-    {
-      entities?: Record<string, BudgetEntityDetail>;
-    }
-  >;
-  category_program_office_details_per_year?: Record<
-    string,
-    {
-      detail_status?: string;
-      section_categories?: Record<string, SectionCategoryDetail>;
-    }
-  >;
-};
-
-export type BudgetProgramFundAmounts = {
-  ps: number;
-  mooe: number;
-  co: number;
-  total: number;
-};
-
-export type BudgetProgramObjectItem = {
-  name: string;
-  amount: number;
-  sourcePage?: number;
-  objectGroup?: string;
-  context?: string[];
-};
-
-export type BudgetProgramObjectDistribution = {
-  key: string;
-  label: string;
-  shortLabel: string;
-  scope?: string;
-  total: number;
-  items: BudgetProgramObjectItem[];
-};
-
-export type BudgetProgramDetail = {
-  program_id: string;
-  agency_id: string;
-  agency_name: string;
-  program_name: string;
-  group: string;
-  source_pages: number[];
-  expense_class_amounts: BudgetProgramFundAmounts;
-  object_distributions: BudgetProgramObjectDistribution[];
-};
-
-export type BudgetAgencyDetailRow = {
-  fiscal_year: number;
-  agency_id: string;
-  name: string;
-  row_type: string;
-  personnel_services: number;
-  mooe: number;
-  capital_outlays: number;
-  total: number;
-  source_page?: number;
-  section_category?: string;
-};
-
-export type BudgetSectionCategoryTotal = {
-  category: string;
-  slug?: string;
-  description?: string;
-  total: number;
-  personnel: number;
-  mooe: number;
-  capital: number;
-  entities: number;
-  basis?: string;
-};
-
-export type BudgetOfficeSpecialProvisionRow = {
-  fiscal_year: number;
-  agency_id: string;
-  agency_name: string;
-  category: string;
-  total_appropriation: number;
-  source_page?: number;
-  special_provisions: BudgetOfficeSpecialProvisionSource[];
-};
-
-export type BudgetOfficeTrendEntity = {
-  fiscal_year: number;
-  agency_id: string;
-  agency_name: string;
-  office_category: string;
-  section_category: string;
-  total_appropriation: number;
-};
-
-export type BudgetYearSelection = BudgetYear & {
-  fiscal_years?: number[];
-};
-
-const rawBudget = allYearsBudget as unknown as RawAllYearsBudget;
-const detailedBudget = allYearsBudget as unknown as DetailedBudget;
-const canonicalDatasetFile = "barmm_fy2020_2026.min.json";
-
-function parseAmount(value: string | number | null | undefined) {
-  if (typeof value === "number") return value;
-  if (!value) return 0;
-  const parsed = Number(value.replace(/[₱,\s]/g, ""));
-
-  return Number.isFinite(parsed) ? parsed : 0;
+/** The three columns every table in the Act carries. */
+export type Totals = {
+	personnel_services: number
+	mooe: number
+	capital_outlays: number
+	total: number
 }
 
-function normalizeTotalBudget(value: string | number | null | undefined) {
-  const total = parseAmount(value);
-
-  return total > 0 && total < 1_000_000 ? total * 1_000_000_000 : total;
+/**
+ * One row of an office's program table.
+ *
+ * `category` is the Act's own distinction: a `cost_structure` row is one of
+ * the three headings every office is budgeted under — General Administration
+ * and Support, Support to Operations, Operations — and a `program` row is
+ * something the office actually does, nested under Operations.
+ */
+export type ProgramLine = Totals & {
+	name: string
+	category: 'cost_structure' | 'program'
+	cost_structure: string | null
+	group_header_only?: boolean
+	children?: ProgramLine[]
 }
 
-function addAmounts(
-  target: BudgetProgramFundAmounts,
-  source: Amounts | undefined,
-) {
-  const normalized = normalizeAmounts(source);
-
-  target.ps += normalized.ps;
-  target.mooe += normalized.mooe;
-  target.co += normalized.co;
-  target.total += normalized.total;
-
-  return target;
+/** One node of the object-of-expenditure tree: what the money is spent on. */
+export type ObjectLine = {
+	name: string
+	expense_class: string | null
+	amount: number | null
+	amount_derived_from_children?: boolean
+	children?: ObjectLine[]
 }
 
-function normalizeAmounts(
-  amounts: Amounts | undefined,
-): BudgetProgramFundAmounts {
-  return {
-    ps: parseAmount(amounts?.ps ?? amounts?.personnel_services),
-    mooe: parseAmount(
-      amounts?.mooe ?? amounts?.maintenance_and_other_operating_expenses,
-    ),
-    co: parseAmount(amounts?.co ?? amounts?.capital_outlays),
-    total: parseAmount(amounts?.total ?? amounts?.total_appropriations),
-  };
+/** One of the 258 line-item projects in the Ministry of Public Works. */
+export type Project = {
+	id: string
+	project: string
+	amount: number
+	source_page?: number
+	/** The province heading the Act lists the project under. */
+	province: string
+	/** What is being built — "Road", "Bridge". A project can be two things. */
+	kinds: string[]
 }
 
-function sourceFileForYear(year: number) {
-  return (
-    rawBudget.years?.[String(year)]?.source_file ??
-    rawBudget.source_files?.find((file) => file.fiscal_year === year)
-      ?.filename ??
-    rawBudget.yearly_summary?.[String(year)]?.source_pdf ??
-    canonicalDatasetFile
-  ).replaceAll("BAA", "GAAB");
+type RawEntity = {
+	code: string
+	name: string
+	name_official: string
+	entity_type: 'agency' | 'special_purpose_fund' | 'sub_office'
+	office_type: string
+	budget_group: string
+	source_pages: number[]
+	appropriation_stated: number
+	totals: Totals
+	appropriations_by_program: ProgramLine[]
+	appropriations_by_object?: ObjectLine[]
+	sub_offices?: RawEntity[]
+	total_including_sub_offices?: number
+	total_current_operating_expenditures?: number
+	infrastructure_projects?: {
+		total: number
+		count: number
+		by_province: { province: string; count: number; total: number; projects: Omit<Project, 'province'>[] }[]
+	}
 }
 
-function sourcePageFor(
-  row:
-    | BudgetEntityRow
-    | BudgetEntityDetail
-    | DetailedProgramLine
-    | NewDatasetLineItem
-    | undefined,
-) {
-  if (row && "p" in row && row.p) return row.p;
-  if (row && "page" in row && row.page) return row.page;
-  if (row && "source_pdf_page" in row && row.source_pdf_page)
-    return row.source_pdf_page;
-  if (row && "source_pages" in row && Array.isArray(row.source_pages))
-    return row.source_pages[0];
-
-  if (
-    row &&
-    "source_pages" in row &&
-    row.source_pages &&
-    !Array.isArray(row.source_pages)
-  ) {
-    return row.source_pages.pdf_start_page;
-  }
-
-  return undefined;
+type RawAct = {
+	metadata: {
+		source_document: string
+		short_title: string
+		enacting_body: string
+		fiscal_year: number
+		period: string
+		currency: string
+		/** Null where the Act states no aggregate: BAA No. 3 (FY 2020) states none. */
+		total_appropriation_per_section_1: number | null
+		total_appropriation_computed: number
+		/** Null where there is no stated figure to reconcile against. */
+		reconciles_with_section_1: boolean | null
+		/** Only where the Act does not add up: what is missing, and whose fault. */
+		reconciliation_note?: string
+		extracted_on: string
+		structure_notes: string[]
+	}
+	summary: {
+		grand_total: Totals
+		by_budget_group: Record<string, Totals>
+		by_agency: (Totals & {
+			code: string
+			agency: string
+			budget_group: string
+			office_type: string
+			total_including_sub_offices: number
+			share_of_total_pct: number
+		})[]
+	}
+	agencies: RawEntity[]
+	special_purpose_funds: RawEntity[]
+	flat_programs: (Totals & {
+		agency_code: string
+		agency: string
+		office_code: string | null
+		office: string | null
+		cost_structure: string | null
+		level: 'program' | 'sub_program'
+		program_path: string
+		program: string
+	})[]
 }
 
-function cleanProgramName(value: string | undefined) {
-  const cleaned = (value ?? "")
-    .replace(/\u2026+/g, " ")
-    .replace(/[.\s]+/g, " ")
-    .trim();
-
-  if (!cleaned) return "";
-  if (/^hereunder$/i.test(cleaned)) return "";
-  if (/^total appropriations$/i.test(cleaned)) return "";
-
-  return cleaned;
+/**
+ * The URL-safe name. Codes in the Act are roman numerals — Part VIII is
+ * education — and `/offices/VIII` tells a reader nothing and survives no
+ * reordering. The name does both.
+ */
+export function slugify(name: string): string {
+	return name
+		.toLowerCase()
+		.normalize('NFKD')
+		.replace(/[^\p{L}\p{N}]+/gu, '-')
+		.replace(/^-+|-+$/g, '')
 }
 
-function escapeHtml(value: string) {
-  return value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
+type RawLineItem = {
+	id: string
+	item_type: 'program' | 'sub_program' | 'infrastructure_project' | 'special_provision' | 'special_provision_sub_item'
+	budget_group: string
+	sector: string
+	agency_code: string
+	agency: string
+	office_code: string | null
+	office: string | null
+	cost_structure: string | null
+	parent_program: string | null
+	program_path: string
+	name: string
+	province?: string
+	infrastructure_type?: string[]
+	provision_text?: string
+	has_stated_amount?: boolean
+	group_header_only?: boolean
+	personnel_services: number | null
+	mooe: number | null
+	capital_outlays: number | null
+	amount: number | null
+	tags: string[]
+	search_text: string
+	source_page: number
 }
 
-function slugFor(value: string) {
-  return value
-    .toUpperCase()
-    .replace(/[^A-Z0-9]+/g, "_")
-    .replace(/^_+|_+$/g, "");
+type RawLineItems = {
+	metadata: { fiscal_year: number; extracted_on: string; counts: Record<string, number> }
+	taxonomy: { tag: string; description: string; keywords: string[] }[]
+	tag_index: Record<
+		string,
+		{
+			count: number
+			total_amount_program_rows: number
+			total_amount_special_provisions: number
+			total_amount_infrastructure_projects: number
+			item_ids: string[]
+		}
+	>
+	line_items: RawLineItem[]
 }
 
-function agencyIdForOfficeName(name: string) {
-  const words = name
-    .replace(/[^A-Za-z0-9\s]/g, " ")
-    .split(/\s+/)
-    .filter(Boolean)
-    .filter((word) => !/^(of|the|and|for|to|in|on)$/i.test(word));
-  const acronym = words.map((word) => word[0]?.toUpperCase()).join("");
+/* ---- The programs ---------------------------------------------------- */
 
-  return acronym || slugFor(name).slice(0, 12) || "OFFICE";
+export type ProgramRow = Totals & {
+	id: string
+	name: string
+	path: string
+	level: 'program' | 'sub_program'
+	costStructure: string | null
+	office: string
+	officeSlug: string
+	/** The one sector this row is filed under. */
+	sector: string
+	sectorSlug: string
+	/** Every sector it touches, the primary one included. */
+	tags: string[]
+	sourcePage: number
+	share: number
+	haystack: string
 }
 
-function normalizeSpecialProvisions(
-  value: unknown,
-): BudgetOfficeSpecialProvisionSource[] {
-  if (!Array.isArray(value)) return [];
+/* ---- The special provisions -------------------------------------------- */
 
-  return value
-    .map<BudgetOfficeSpecialProvisionSource | null>((item, index) => {
-      if (typeof item === "string") {
-        const description = item.trim();
-
-        return description
-          ? {
-              title: `Special Provision ${index + 1}`,
-              description_html: escapeHtml(description),
-            }
-          : null;
-      }
-
-      if (!item || typeof item !== "object") return null;
-
-      const record = item as Record<string, unknown>;
-      const title =
-        typeof record.title === "string" && record.title.trim()
-          ? record.title.trim()
-          : `Special Provision ${index + 1}`;
-      const description =
-        typeof record.description_html === "string"
-          ? record.description_html.trim()
-          : typeof record.description === "string"
-            ? escapeHtml(record.description.trim())
-            : "";
-
-      return description
-        ? {
-            title,
-            description_html: description,
-          }
-        : null;
-    })
-    .filter((item): item is BudgetOfficeSpecialProvisionSource =>
-      Boolean(item),
-    );
+/**
+ * One numbered rule attached to an office's money, with the lettered sub-items
+ * printed under it.
+ *
+ * `amount` is the figure the provision itself states, where it states one —
+ * "the amount of Four Hundred Eighty Million Pesos herein appropriated shall
+ * be used exclusively for…". It is a slice of the office's appropriation
+ * rather than money on top of it, so provisions are never added to a total.
+ */
+export type Provision = {
+	id: string
+	title: string
+	text: string
+	amount: number | null
+	office: string
+	officeSlug: string
+	sector: string
+	sectorSlug: string
+	tags: string[]
+	sourcePage: number
+	items: { id: string; text: string; depth: number; amount: number | null }[]
+	haystack: string
 }
 
-function categoryForOfficeName(name: string) {
-  if (/basic|higher|technical|education|madaris/i.test(name)) {
-    return "Education, Higher Education, Technical Education, and Madaris";
-  }
-  if (/public works|infrastructure|asset/i.test(name)) {
-    return "Infrastructure, Public Works, and Public Assets";
-  }
-  if (/pilgrimage|cultural|heritage|religious/i.test(name)) {
-    return "Culture, Heritage, Religious Affairs, and Bangsamoro Identity";
-  }
-  if (/cooperatives|social enterprise|livelihood/i.test(name)) {
-    return "Cooperatives, Social Enterprise, and Livelihood";
-  }
-  if (/chief minister|governance|planning|budget/i.test(name)) {
-    return "Governance, Legislature, and Public Administration";
-  }
+/**
+ * Sub-items nest more than one level in a few sections — `SP-XVI-1.1.1` sits
+ * under `SP-XVI-1.1`, which is itself a sub-item. They are kept as a flat list
+ * with a depth rather than built into a tree: the depth is what the indent
+ * needs and it is already in the id, and a two-level tree for the fifteen rows
+ * that use it would be a structure the other four hundred do not.
 
-  return "Uncategorized / Requires Review";
+/* ---- The sectors ------------------------------------------------------ */
+
+/**
+ * What the money is for, across every office that spends on it.
+ *
+ * The Act is organized by who spends, which answers the wrong question: a
+ * reader asking what the region spends on water has to know in advance that
+ * the answer is split across public works, health, local government and two
+ * special funds. These are the same rows filed by sector instead, from the
+ * tagging in the extraction.
+ *
+ * A row can carry several sectors and most carry one. The totals below are
+ * therefore overlapping and must never be added together — a program tagged
+ * both Health and Infrastructure is counted in both, which is right for "what
+ * touches health" and wrong for any sum of the whole.
+ */
+export type Sector = {
+	/** What a reader calls it. The taxonomy names one sector with a slash —
+	    "Lump-sum / Special Purpose Fund" — where the half before it is the
+	    filing word and the half after it is the name anybody uses. */
+	name: string
+	/** The taxonomy's own string, which is what program and provision rows are
+	    tagged with. Look rows up by this, never by `name`. */
+	tag: string
+	slug: string
+	description: string
+	count: number
+	/** Program rows only. Provisions and projects are slices of these. */
+	total: number
+	provisionTotal: number
+	projectTotal: number
 }
 
-function isCostStructureName(name: string) {
-  return /general (administration|administrative).*support|support to operations|^operations$/i.test(
-    name,
-  );
+/* ---- The offices ------------------------------------------------------- */
+
+/**
+ * An office, fund or attached agency with a page of its own.
+ *
+ * Sub-offices are entities here rather than rows inside their parent. The
+ * Bangsamoro Information Office has its own appropriation, its own program
+ * table and its own object tree — everything a ministry has — and a reader
+ * looking for it has no reason to know the Act files it under the Office of
+ * the Chief Minister. It keeps `parent` so its page can say where it sits and
+ * the parent's page can list it.
+ */
+export type Office = {
+	slug: string
+	code: string
+	name: string
+	nameOfficial: string
+	kind: 'agency' | 'special_purpose_fund' | 'sub_office'
+	officeType: string
+	budgetGroup: string
+	sourcePages: number[]
+	totals: Totals
+	/** The figure Section 1 of the Act states for this entity. */
+	stated: number
+	/** With attached agencies folded in, where the Act prints such a figure. */
+	totalWithSubOffices: number
+	programs: ProgramLine[]
+	objects: ObjectLine[]
+	projects: Project[]
+	parent: { slug: string; name: string } | null
+	subOffices: { slug: string; name: string; total: number }[]
+	/** Its share of the whole appropriation, as a percentage. */
+	share: number
+	/** Lower-case words this office can be found by. */
+	haystack: string
 }
 
-function isTotalLabel(label: string) {
-  return /^total\b/i.test(label) || /total appropriations/i.test(label);
+
+
+function programWords(lines: ProgramLine[]): string {
+	return lines
+		.map((line) => `${line.name} ${line.children ? programWords(line.children) : ''}`)
+		.join(' ')
 }
 
-function expenseClassMetaForKey(key: string | undefined) {
-  const normalized = (key ?? "").toLowerCase().replace(/[^a-z]+/g, "_");
+/**
+ * One fiscal year, derived from its own two extractions.
+ *
+ * Everything below was module-level state against a single Act. It is a
+ * function now because there are two of them, and two copies of six hundred
+ * lines would drift the first time one was fixed.
+ *
+ * The page offset is not passed in. Each Act's PDF runs some number of pages
+ * ahead of its own printed numbering, because of cover matter, and it is not
+ * the same every year — three for FY 2026, two for FY 2025 and FY 2024. Every
+ * extraction states its own in `structure_notes`, so it is read from there
+ * rather than kept as a list beside the imports, where a year added to the map
+ * could quietly cite the wrong pages of the right Act.
+ */
+function buildYear(act: RawAct, lines: RawLineItems) {
+	/* "source_pages refer to PDF page indices (PDF page = printed page + 3)." */
+	const budgetPageOffset = Number(
+		act.metadata.structure_notes
+			.find((one) => /printed page \+ \d/.test(one))
+			?.match(/printed page \+ (\d+)/)?.[1] ?? 0,
+	)
 
-  if (normalized === "ps" || normalized === "personnel_services") {
-    return {
-      key: "ps",
-      label: "Personnel Services",
-      shortLabel: "PS",
-    };
-  }
+	/* The figure every share on the site is taken against. Section 1 states it
+	   in five of the seven Acts; BAA No. 3 (FY 2020) states no aggregate at all,
+	   so the sum of its own sections stands in — which is the figure that Act's
+	   introduction cites anyway. Falling back rather than carrying a null keeps
+	   every `x / GRAND_TOTAL` on this page a number instead of a NaN. */
+	const statedTotal = act.metadata.total_appropriation_per_section_1
+	const GRAND_TOTAL = statedTotal ?? act.metadata.total_appropriation_computed
 
-  if (
-    normalized === "mooe" ||
-    normalized === "maintenance_and_other_operating_expenses"
-  ) {
-    return {
-      key: "mooe",
-      label: "Maintenance and Other Operating Expenses",
-      shortLabel: "MOOE",
-    };
-  }
+	/* ---- Every line the Act names ------------------------------------------
 
-  if (normalized === "co" || normalized === "capital_outlays") {
-    return {
-      key: "co",
-      label: "Capital Outlays",
-      shortLabel: "CO",
-    };
-  }
+	   A second extraction beside the first: the same 253 program rows and 258
+	   projects, plus the 449 special provisions that were nowhere in the workspace
+	   before, and a sector tag on all of them.
 
-  return undefined;
+	   The provisions are the addition that changes what this site can answer. A
+	   program row says an office was given money; a provision says what the Act
+	   requires it to do with that money — who it must go to, what it may not be
+	   spent on, what has to be reported and to whom. It is the half of an
+	   appropriation that a reader actually wants and the half nobody publishes.
+
+	   Where the two files overlap they agree, and this one is the better copy:
+	   the same amounts to the peso, with three hospital names punctuated properly
+	   and a source page on every row. So programs and projects are read from
+	   here, and `BAA85_FY2026_budget.json` keeps what only it holds — the office
+	   totals, the nested program table, and the object-of-expenditure tree. */
+
+	/**
+ * The province a project's heading names, as a province.
+ *
+ * The Act files construction under the Ministry of Public Works' engineering
+ * districts, not under provinces: "Lanao Del Sur I" and "Lanao Del Sur II" are
+ * two districts of one province, and a page that lists them apart is showing a
+ * reader the ministry's own filing rather than their province. They are merged
+ * (user decision), and the same for Sulu's and Maguindanao's districts.
+ *
+ * What is NOT merged is a province that actually changed. Maguindanao split
+ * into Del Norte and Del Sur in 2022, so the pre-split "Maguindanao" and the
+ * two that replaced it are three different places and stay three lines — the
+ * numerals are districts of one province, the compass points are provinces.
+ *
+ * An explicit table rather than stripping a trailing numeral, because the two
+ * look alike and mean opposite things. Anything unlisted falls through as
+ * printed, and `check.ts` asserts the whole set so a new Act's spelling
+ * surfaces as a failure instead of a quietly separate column.
+ */
+const PROVINCES: Record<string, string> = {
+	'lanao i': 'Lanao del Sur',
+	'lanao ii': 'Lanao del Sur',
+	'lanao del sur i': 'Lanao del Sur',
+	'lanao del sur ii': 'Lanao del Sur',
+	'maguindanao i': 'Maguindanao',
+	'maguindanao ii': 'Maguindanao',
+	'maguindanao del norte': 'Maguindanao del Norte',
+	'maguindanao del sur': 'Maguindanao del Sur',
+	'sulu i': 'Sulu',
+	'sulu ii': 'Sulu',
+	'tawi-tawi': 'Tawi-Tawi',
+	'special geographic area (63 barangays)': 'Special Geographic Area',
 }
 
-function objectExpenseClassFor(label: string, explicitKey?: string) {
-  if (
-    /capital|equipment|buildings?|infrastructure|outlays?|property|plant/i.test(
-      label,
-    )
-  ) {
-    return {
-      key: "co",
-      label: "Capital Outlays",
-      shortLabel: "CO",
-    };
-  }
+const provinceOf = (raw: string): string => PROVINCES[raw.toLowerCase()] ?? raw
 
-  if (
-    /maintenance and other operating|travell?ing|training|scholarship|supplies|utility|communication|survey|research|professional services|consultancy services|general services|repairs|financial assistance|subsidy|taxes|advertising|printing|publication|representation e?expenses|transportation.*e?expenses|delivery e?expenses|rent|lease|subscription|miscellaneous e?expenses|operating e?expenses/i.test(
-      label,
-    )
-  ) {
-    return {
-      key: "mooe",
-      label: "Maintenance and Other Operating Expenses",
-      shortLabel: "MOOE",
-    };
-  }
+/** Where a project sits when the Act names no place for it. */
+const REGION_WIDE = 'Region-wide'
 
-  if (
-    /salary|wages?|allowance|bonus|cash gift|retirement|life insurance|pag-ibig|philhealth|compensation|personnel|permanent positions|hazard pay|benefits/i.test(
-      label,
-    )
-  ) {
-    return {
-      key: "ps",
-      label: "Personnel Services",
-      shortLabel: "PS",
-    };
-  }
+/**
+ * Projects the extraction filed under the province heading above them, where
+ * the Act itself names no place at all.
+ *
+ * FY 2025's "Installation of Solar Street Lights" is ₱520 million — the largest
+ * single project in that Act and a fifth of everything its Cotabato City column
+ * held. The Act does not put it in Cotabato City; the heading it happened to
+ * fall under did, and a reader asking what is being built in their city was
+ * being shown half a billion pesos of somebody else's.
+ *
+ * Corrected by id rather than by a rule. It is the only row in seven Acts that
+ * names nowhere: every other name without a place clause carries its
+ * municipality inside it — "Maluso", "Bongao", "Expansion of Bongao Port Phase
+ * V" — and a heuristic sharp enough to tell those apart would be wrong more
+ * often than this list is long.
+ */
+const UNPLACED = new Set(['2025:INF-0645'])
 
-  return (
-    expenseClassMetaForKey(explicitKey) ?? {
-      key: "mooe",
-      label: "Maintenance and Other Operating Expenses",
-      shortLabel: "MOOE",
-    }
-  );
+/** The office a row belongs to: the attached agency where there is one. */
+	const ownerOf = (row: RawLineItem) => row.office ?? row.agency
+
+	const programs: ProgramRow[] = lines.line_items
+		.filter((row) => row.item_type === 'program' || row.item_type === 'sub_program')
+		// The Act prints seven program rows as headings with no figures against
+		// them; their children carry the amounts. A heading with a blank where the
+		// money should be is not a row a reader can do anything with.
+		.filter((row) => !row.group_header_only && row.amount != null)
+		.map((row) => {
+			const owner = ownerOf(row)
+			const total = row.amount ?? 0
+			return {
+				id: row.id,
+				name: row.name,
+				path: row.program_path,
+				level: row.item_type as 'program' | 'sub_program',
+				costStructure: row.cost_structure,
+				office: owner,
+				officeSlug: slugify(owner),
+				sector: row.sector,
+				sectorSlug: slugify(row.sector),
+				tags: row.tags,
+				sourcePage: row.source_page,
+				personnel_services: row.personnel_services ?? 0,
+				mooe: row.mooe ?? 0,
+				capital_outlays: row.capital_outlays ?? 0,
+				total,
+				share: GRAND_TOTAL > 0 ? (total / GRAND_TOTAL) * 100 : 0,
+				haystack: `${row.search_text} ${owner} ${row.cost_structure ?? ''} ${row.tags.join(' ')}`.toLowerCase(),
+			}
+		})
+		.sort((a, b) => b.total - a.total)
+
+	/* ---- The projects ------------------------------------------------------ */
+
+	/**
+	 * The 258 line-item infrastructure projects, largest first.
+	 *
+	 * These are the most answerable lines in the whole Act — a road with a
+	 * barangay's name on it and a peso figure beside it — and until now they were
+	 * buried fifteen pages into a ministry's table. Each now carries what kind of
+	 * thing it is, so "every bridge in the region" is a question with an answer.
+	 */
+	const projects: Project[] = lines.line_items
+		.filter((row) => row.item_type === 'infrastructure_project')
+		.map((row) => ({
+			id: row.id,
+			project: row.name,
+			amount: row.amount ?? 0,
+			province: UNPLACED.has(`${act.metadata.fiscal_year}:${row.id}`)
+				? REGION_WIDE
+				: provinceOf(row.province ?? 'Unstated'),
+			kinds: row.infrastructure_type ?? [],
+			source_page: row.source_page,
+		}))
+		.sort((a, b) => b.amount - a.amount)
+
+	const projectsByOwner = new Map<string, Project[]>()
+	for (const row of lines.line_items) {
+		if (row.item_type !== 'infrastructure_project') continue
+		const owner = ownerOf(row)
+		const found = projects.find((one) => one.id === row.id)
+		if (found) projectsByOwner.set(owner, [...(projectsByOwner.get(owner) ?? []), found])
+	}
+
+	const projectsByProvince = [
+		...projects.reduce((groups, project) => {
+			const group = groups.get(project.province) ?? { province: project.province, projects: [], total: 0 }
+			group.projects.push(project)
+			group.total += project.amount
+			return groups.set(project.province, group)
+		}, new Map<string, { province: string; projects: Project[]; total: number }>()),
+	]
+		.map(([, group]) => group)
+		.sort((a, b) => b.total - a.total)
+
+	const projectsTotal = projects.reduce((sum, project) => sum + project.amount, 0)
+
+	/** The kinds of thing being built, commonest first — "Road", "Bridge". */
+	const projectKinds = [
+		...projects.reduce((counts, project) => {
+			for (const kind of project.kinds) {
+				const one = counts.get(kind) ?? { kind, count: 0, total: 0 }
+				one.count += 1
+				one.total += project.amount
+				counts.set(kind, one)
+			}
+			return counts
+		}, new Map<string, { kind: string; count: number; total: number }>()),
+	]
+		.map(([, one]) => one)
+		.sort((a, b) => b.count - a.count)
+
+	const provisionItems = new Map<string, Provision['items']>()
+	for (const row of lines.line_items) {
+		if (row.item_type !== 'special_provision_sub_item') continue
+		const base = row.id.split('.')[0]!
+		const list = provisionItems.get(base) ?? []
+		list.push({
+			id: row.id,
+			text: row.provision_text ?? row.name,
+			depth: (row.id.match(/\./g) ?? []).length,
+			amount: row.amount,
+		})
+		provisionItems.set(base, list)
+	}
+
+	const provisions: Provision[] = lines.line_items
+		.filter((row) => row.item_type === 'special_provision')
+		.map((row) => {
+			const owner = ownerOf(row)
+			const items = provisionItems.get(row.id) ?? []
+			return {
+				id: row.id,
+				title: row.name,
+				text: row.provision_text ?? '',
+				amount: row.has_stated_amount ? row.amount : null,
+				office: owner,
+				officeSlug: slugify(owner),
+				sector: row.sector,
+				sectorSlug: slugify(row.sector),
+				tags: row.tags,
+				sourcePage: row.source_page,
+				items,
+				haystack: `${row.search_text} ${owner} ${row.tags.join(' ')} ${items
+					.map((item) => item.text)
+					.join(' ')}`.toLowerCase(),
+			}
+		})
+
+	const provisionsBySlug = new Map<string, Provision[]>()
+	for (const provision of provisions) {
+		provisionsBySlug.set(provision.officeSlug, [
+			...(provisionsBySlug.get(provision.officeSlug) ?? []),
+			provision,
+		])
+	}
+
+	/** The rules attached to one office's money, in the order the Act prints them. */
+	const provisionsFor = (officeSlug: string): Provision[] =>
+		provisionsBySlug.get(officeSlug) ?? []
+
+	const sectors: Sector[] = lines.taxonomy
+		.map((entry) => {
+			const index = lines.tag_index[entry.tag]
+			return {
+				name: entry.tag.replace(/.* \/ /, ''),
+				tag: entry.tag,
+				/* Off the tag, not the shortened name: the slug is the URL, and
+				   renaming a sector for the eye is not a reason to break its page. */
+				slug: slugify(entry.tag),
+				description: entry.description,
+				count: index?.count ?? 0,
+				total: index?.total_amount_program_rows ?? 0,
+				provisionTotal: index?.total_amount_special_provisions ?? 0,
+				projectTotal: index?.total_amount_infrastructure_projects ?? 0,
+			}
+		})
+		.sort((a, b) => b.total - a.total || b.count - a.count)
+
+	const sectorBySlug = new Map(sectors.map((sector) => [sector.slug, sector]))
+
+	const findSector = (slug: string): Sector | undefined => sectorBySlug.get(slug)
+
+	/** Everything filed under one sector, each kind largest first. Takes the
+	    sector's `tag`, which is the string the rows carry, not its display name. */
+	function sectorContents(tag: string) {
+		const tagged = <T extends { tags: string[] }>(rows: T[]) => rows.filter((row) => row.tags.includes(tag))
+		return {
+			programs: tagged(programs),
+			provisions: tagged(provisions),
+			projects: projects.filter(() => tag === 'Infrastructure'),
+		}
+	}
+
+	function toOffice(entity: RawEntity, parent: RawEntity | null): Office {
+		const programs = entity.appropriations_by_program ?? []
+		const built = projectsByOwner.get(entity.name) ?? []
+
+		return {
+			slug: slugify(entity.name),
+			code: entity.code,
+			name: entity.name,
+			nameOfficial: entity.name_official,
+			kind: entity.entity_type,
+			officeType: entity.office_type,
+			budgetGroup: entity.budget_group,
+			sourcePages: entity.source_pages ?? [],
+			totals: entity.totals,
+			stated: entity.appropriation_stated,
+			totalWithSubOffices: entity.total_including_sub_offices ?? entity.totals.total,
+			programs,
+			objects: entity.appropriations_by_object ?? [],
+			projects: built,
+			parent: parent ? { slug: slugify(parent.name), name: parent.name } : null,
+			subOffices: (entity.sub_offices ?? []).map((sub) => ({
+				slug: slugify(sub.name),
+				name: sub.name,
+				total: sub.totals.total,
+			})),
+			share: GRAND_TOTAL > 0 ? (entity.totals.total / GRAND_TOTAL) * 100 : 0,
+			haystack: [
+				entity.name,
+				entity.name_official,
+				entity.office_type,
+				entity.budget_group,
+				parent?.name,
+				programWords(programs),
+				built.map((one) => `${one.province} ${one.kinds.join(' ')}`).join(' '),
+			]
+				.filter(Boolean)
+				.join(' ')
+				.toLowerCase(),
+		}
+	}
+
+	/**
+	 * Every office with a page, parents and their attached agencies alike, ordered
+	 * largest first.
+	 *
+	 * Largest first rather than in the Act's part order: the Act is ordered by
+	 * constitutional precedence, which puts a ₱7B Parliament above a ₱26B
+	 * education ministry, and nobody arrives at a budget looking for precedence.
+	 */
+	const offices: Office[] = [
+		...act.agencies.flatMap((agency) => [
+			toOffice(agency, null),
+			...(agency.sub_offices ?? []).map((sub) => toOffice(sub, agency)),
+		]),
+		...act.special_purpose_funds.map((fund) => toOffice(fund, null)),
+	].sort((a, b) => b.totals.total - a.totals.total)
+
+	const bySlug = new Map(offices.map((office) => [office.slug, office]))
+
+	const findOffice = (slug: string): Office | undefined => bySlug.get(slug)
+
+	/** The three groups Section 1 divides the appropriation into. */
+	const budgetGroups = Object.entries(act.summary.by_budget_group).map(([name, totals]) => ({
+		name,
+		totals,
+		share: GRAND_TOTAL > 0 ? (totals.total / GRAND_TOTAL) * 100 : 0,
+		offices: offices.filter((office) => office.budgetGroup === name && office.kind !== 'sub_office').length,
+	}))
+
+	/* ---- The Act itself ---------------------------------------------------- */
+
+
+
+	/* The FY 2025 extraction's `short_title` reads "BAA No. 85 (FY 2025 GAAB)",
+	   which is the FY 2026 Act's number on the FY 2025 Act. `source_document`
+	   has it right — "Bangsamoro Autonomy Act No. 65" — so the number is taken
+	   from there and the short title rebuilt around it. Not a figure being
+	   corrected: it is the name of the document every figure on the page is
+	   claimed to come from, and a page that cites the wrong Act is worse than a
+	   page that cites none. */
+	const actNumber = act.metadata.source_document.match(/Act No\.\s*(\d+)/i)?.[1]
+
+	const budget = {
+		fiscalYear: act.metadata.fiscal_year,
+		act: actNumber
+			? `BAA No. ${actNumber} (FY ${act.metadata.fiscal_year} GAAB)`
+			: act.metadata.short_title,
+		actLong: act.metadata.source_document,
+		enactedBy: act.metadata.enacting_body,
+		period: act.metadata.period,
+		extractedOn: act.metadata.extracted_on,
+		/* Whether the parts add up to the figure Section 1 states. Five of the
+		   seven Acts they do. FY 2022's printed section totals come to ₱47,870.72
+		   less than its own Section 1, and FY 2020's Section 1 states no figure to
+		   check against — both faults in the Acts as printed rather than in the
+		   extraction, so they are carried rather than corrected and the note
+		   beside them is what the pages say instead of quietly picking a figure.
+		   `=== true` because the field is tri-state: false is "does not add up",
+		   null is "there is nothing to add up to". */
+		reconciles: act.metadata.reconciles_with_section_1 === true,
+		/** Whether Section 1 states an aggregate for this Act at all. */
+		statesTotal: statedTotal !== null,
+		reconciliationNote: act.metadata.reconciliation_note ?? null,
+		notes: act.metadata.structure_notes,
+		total: GRAND_TOTAL,
+		totals: act.summary.grand_total,
+		/** Offices with a page, not counting the attached agencies. */
+		officeCount: offices.filter((office) => office.kind === 'agency').length,
+		fundCount: offices.filter((office) => office.kind === 'special_purpose_fund').length,
+		programCount: programs.length,
+		projectCount: projects.length,
+		provisionCount: provisions.length,
+		/** Including the lettered sub-items printed under them. */
+		provisionItemCount: provisions.reduce((sum, one) => sum + one.items.length, 0),
+		sectorCount: sectors.length,
+		sourcePdf: 'FY-2026-GAAB.pdf',
+		/** PDF page = printed page + 3, per the extraction notes. */
+		pdfPageOffset: budgetPageOffset,
+	}
+
+	/**
+	 * The Act's own page numbers for a record, collapsed into spans: "136–150, 158".
+	 *
+	 * Two things at once, and both belong here rather than in a component. The
+	 * extraction indexes PDF pages and the Act numbers itself three pages behind
+	 * that, so the number a reader holding the document is looking at has to be
+	 * converted; and a record can carry two hundred page numbers, which is a
+	 * paragraph of digits where the span is the fact.
+	 */
+	function printedPages(pdfPages: number[] | undefined): string | null {
+		const printed = [...new Set((pdfPages ?? []).map((page) => page - budgetPageOffset))]
+			.filter((page) => page > 0)
+			.sort((a, b) => a - b)
+		if (printed.length === 0) return null
+
+		const spans: string[] = []
+		for (let at = 0; at < printed.length; at += 1) {
+			const start = printed[at]!
+			let end = start
+			while (printed[at + 1] === end + 1) {
+				end += 1
+				at += 1
+			}
+			spans.push(start === end ? `${start}` : `${start}–${end}`)
+		}
+
+		return spans.join(', ')
+	}
+
+	function searchBudget(query: string, limit = 8): Hit[] {
+		const term = query.trim().toLowerCase()
+		if (term.length < 2) return []
+
+		const hits: Hit[] = []
+		const room = () => hits.length < limit
+
+		// Sectors first, and there are only 38 of them: somebody who typed
+		// "health" wants everything on health before they want any one row of it,
+		// and the sector page is the only thing that can give them that.
+		for (const sector of sectors) {
+			if (!room()) return hits
+			// The tag as well as the shown name: the taxonomy files one sector under
+			// "Lump-sum / Special Purpose Fund" and shows it as the second half, and
+			// somebody who typed "lump" is looking for exactly that row.
+			if (!`${sector.name} ${sector.tag}`.toLowerCase().includes(term)) continue
+			hits.push({
+				type: 'sector',
+				title: sector.name,
+				where: `${sector.count} lines across the Act`,
+				amount: sector.total,
+				href: `/sectors/${sector.slug}`,
+			})
+		}
+
+		for (const office of offices) {
+			if (!room()) return hits
+			if (!office.haystack.includes(term)) continue
+			hits.push({
+				type: 'office',
+				title: office.name,
+				where: office.parent ? `${office.officeType} · under ${office.parent.name}` : office.officeType,
+				amount: office.totals.total,
+				href: `/offices/${office.slug}`,
+			})
+		}
+
+		for (const program of programs) {
+			if (!room()) return hits
+			if (!program.haystack.includes(term)) continue
+			hits.push({
+				type: 'program',
+				title: program.name,
+				where: program.office,
+				amount: program.total,
+				href: `/programs?q=${encodeURIComponent(program.name)}`,
+			})
+		}
+
+		// Provisions below programs: a rule about the money is what a reader
+		// wants second, once they know the money exists.
+		for (const provision of provisions) {
+			if (!room()) return hits
+			if (!provision.haystack.includes(term)) continue
+			hits.push({
+				type: 'provision',
+				title: provision.title,
+				where: `Special provision · ${provision.office}`,
+				amount: provision.amount,
+				href: `/offices/${provision.officeSlug}#${provision.id}`,
+			})
+		}
+
+		for (const project of projects) {
+			if (!room()) return hits
+			if (
+				!project.project.toLowerCase().includes(term) &&
+				!project.province.toLowerCase().includes(term) &&
+				!project.kinds.some((kind) => kind.toLowerCase().includes(term))
+			)
+				continue
+			hits.push({
+				type: 'project',
+				title: project.project,
+				where: `${project.kinds[0] ?? 'Project'} · ${project.province}`,
+				amount: project.amount,
+				href: `/projects?q=${encodeURIComponent(project.province)}`,
+			})
+		}
+
+		return hits
+	}
+
+	return {
+		budget,
+		offices,
+		findOffice,
+		budgetGroups,
+		programs,
+		projects,
+		projectsByProvince,
+		projectsTotal,
+		projectKinds,
+		provisions,
+		provisionsFor,
+		sectors,
+		findSector,
+		sectorContents,
+		printedPages,
+		searchBudget,
+	}
 }
 
-function objectDistributionsFromItems(
-  items: NewDatasetLineItem[] | undefined,
-): BudgetProgramObjectDistribution[] {
-  const distributions = new Map<string, BudgetProgramObjectDistribution>();
+/* ---- Reading the figures ----------------------------------------------- */
 
-  for (const item of items ?? []) {
-    const name = cleanProgramName(item.label ?? item.name);
-    const amount = parseAmount(item.amount ?? item.total);
+/** The full peso amount, for a table cell or a source line. */
+/**
+ * A peso figure, to the centavo.
+ *
+ * Two decimals always, including `.00`. It used to round, which was wrong in
+ * the one place it mattered most: the Act appropriates ₱114,077,644,141.90 in
+ * total and the rounded figure read ₱114,077,644,142 — ten centavos the Act
+ * does not say, printed as the headline of a workspace whose whole claim is
+ * that a figure can be checked against the page it came from.
+ *
+ * Only two amounts in FY 2026 carry centavos, so the cost of this is `.00` on
+ * every other figure. That is the right trade: a trailing `.00` tells a reader
+ * the figure is exact, where a rounded one silently is not.
+ */
+export const peso = (amount: number): string =>
+	`₱${amount.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
 
-    if (!name || amount <= 0 || item.is_total_row || isTotalLabel(name)) {
-      continue;
-    }
-
-    const expenseClass = objectExpenseClassFor(name, item.expense_class);
-    const context = [
-      "Appropriations by object of expenditures",
-      ...(item.path ?? []),
-      item.cost_structure,
-    ].filter((part): part is string => Boolean(part));
-    const distribution = distributions.get(expenseClass.key) ?? {
-      ...expenseClass,
-      total: 0,
-      items: [],
-    };
-
-    distribution.total += amount;
-    distribution.items.push({
-      name,
-      amount,
-      sourcePage: sourcePageFor(item),
-      objectGroup: item.path?.[0] ?? item.cost_structure ?? expenseClass.label,
-      context,
-    });
-    distributions.set(expenseClass.key, distribution);
-  }
-
-  return Array.from(distributions.values()).sort((a, b) => b.total - a.total);
+/**
+ * The amount as somebody would say it out loud — "₱26.5 billion".
+ *
+ * Spelled rather than suffixed: "26.5B" is a spreadsheet's way of putting it,
+ * and the reader this workspace is for has never had to read one.
+ */
+export function pesoShort(amount: number): string {
+	const [figure, unit] = scaled(amount)
+	return unit ? `₱${figure} ${unit}` : peso(amount)
 }
 
-function breakdownFromObjectItems(
-  totals: Amounts | undefined,
-  fallbackTotal: number,
-): BudgetProgramFundAmounts {
-  const normalized = normalizeAmounts(totals);
-
-  return {
-    ...normalized,
-    total: normalized.total || fallbackTotal,
-  };
+/** The same, short enough for an axis or a chip: "₱ 26.5B".
+ *
+ * The space after the sign is a non-breaking one (user decision): it is there
+ * to separate the mark from the figure, and a chart label or a stat tile that
+ * wrapped a lone ₱ onto its own line would be worse than no space at all. */
+export function pesoTight(amount: number): string {
+	const [figure, unit] = scaled(amount)
+	return unit ? `₱ ${figure}${unit[0]!.toUpperCase()}` : `₱ ${Math.round(amount)}`
 }
 
-function amountsFromProgramItem(item: NewDatasetLineItem): Amounts {
-  const amounts: Amounts = {
-    ps: item.personnel_services,
-    mooe: item.maintenance_and_other_operating_expenses,
-    co: item.capital_outlays,
-    total: item.total,
-  };
-
-  for (const column of item.amounts ?? []) {
-    const expenseClass = expenseClassMetaForKey(column.column_guess);
-    const amount = parseAmount(column.amount);
-
-    if (expenseClass?.key === "ps") amounts.ps ??= amount;
-    if (expenseClass?.key === "mooe") amounts.mooe ??= amount;
-    if (expenseClass?.key === "co") amounts.co ??= amount;
-    if (column.column_guess === "total") amounts.total ??= amount;
-  }
-
-  return amounts;
+/**
+ * The figure and the unit to say it in.
+ *
+ * A tenth of a billion is ₱100 million, so billions always keep their decimal
+ * — "₱114.1 billion" and never "₱114 billion". A tenth of a million is ₱100,000
+ * and stops mattering once the figure is in the hundreds, so millions drop it
+ * there: "₱958 million", not "₱958.4 million". Precision follows the unit
+ * rather than the size of the number, which is what stops the same amount
+ * reading two different ways in two places on one page.
+ */
+function scaled(amount: number): [string, '' | 'billion' | 'million' | 'thousand'] {
+	const abs = Math.abs(amount)
+	if (abs >= 1_000_000_000) return [fixed(amount / 1_000_000_000, 1), 'billion']
+	if (abs >= 1_000_000) return [fixed(amount / 1_000_000, abs >= 100_000_000 ? 0 : 1), 'million']
+	if (abs >= 1_000) return [fixed(amount / 1_000, 0), 'thousand']
+	return ['', '']
 }
 
-function rowsFromProgramItems(
-  items: NewDatasetLineItem[] | undefined,
-  fallbackCategory: string,
-  fallbackSourcePage?: number,
-): BudgetEntityRow[] {
-  return (items ?? [])
-    .map<BudgetEntityRow | null>((item) => {
-      const label = cleanProgramName(item.name ?? item.label);
-      const amounts = amountsFromProgramItem(item);
-      const normalizedAmounts = normalizeAmounts(amounts);
-      const total =
-        normalizedAmounts.total ||
-        normalizedAmounts.ps + normalizedAmounts.mooe + normalizedAmounts.co;
-      const sourcePage = sourcePageFor(item) ?? fallbackSourcePage;
-
-      if (!label || total <= 0 || item.is_total_row || isTotalLabel(label)) {
-        return null;
-      }
-
-      return {
-        name: label,
-        row_type: isCostStructureName(label)
-          ? "cost_structure_summary"
-          : "program_or_purpose",
-        amounts: {
-          ...amounts,
-          total,
-        },
-        source_pdf_page: sourcePage,
-        source_pages: sourcePage ? [sourcePage] : undefined,
-        section_category: fallbackCategory,
-      };
-    })
-    .filter((row): row is BudgetEntityRow => row !== null);
-}
-
-function officeTotalFromNewOffice(office: NewDatasetOffice) {
-  const directTotal = parseAmount(office.total_appropriations);
-  if (directTotal > 0) return directTotal;
-
-  const programTotals = normalizeAmounts(
-    office.appropriations_by_program?.totals,
-  );
-  if (programTotals.total > 0) return programTotals.total;
-
-  const objectTotals = normalizeAmounts(
-    office.appropriations_by_object_of_expenditures?.totals,
-  );
-  if (objectTotals.total > 0) return objectTotals.total;
-
-  const programItems =
-    office.appropriations_by_program?.items ?? office.program_items ?? [];
-  const objectItems =
-    office.appropriations_by_object_of_expenditures?.items ??
-    office.object_items ??
-    [];
-  const candidates = [...programItems, ...objectItems]
-    .filter((item) =>
-      /total appropriations/i.test(item.label ?? item.name ?? ""),
-    )
-    .map((item) => parseAmount(item.amount ?? item.total))
-    .filter((amount) => amount > 0);
-  const allAmounts = [...programItems, ...objectItems]
-    .map((item) => parseAmount(item.amount ?? item.total))
-    .filter((amount) => amount > 0);
-
-  return Math.max(0, ...candidates, ...allAmounts);
-}
-
-function entityDetailFromNewOffice(
-  officeKey: string,
-  office: NewDatasetOffice,
-): BudgetEntityDetail {
-  const officeCode = office.code ?? officeKey;
-  const officeName = office.name ?? officeKey;
-  const sectionCategory =
-    office.sector?.join(", ") ??
-    office.category ??
-    categoryForOfficeName(officeName);
-  const total = officeTotalFromNewOffice(office);
-  const programBreakdown = breakdownFromObjectItems(
-    office.appropriations_by_program?.totals,
-    total,
-  );
-  const objectBreakdown = breakdownFromObjectItems(
-    office.appropriations_by_object_of_expenditures?.totals,
-    total,
-  );
-  const breakdown = {
-    ps: programBreakdown.ps || objectBreakdown.ps,
-    mooe: programBreakdown.mooe || objectBreakdown.mooe,
-    co: programBreakdown.co || objectBreakdown.co,
-    total: programBreakdown.total || objectBreakdown.total || total,
-  };
-  const sourcePdfPage = office.pdf_page_start ?? office.pages?.[0];
-  const programItems =
-    office.appropriations_by_program?.items ?? office.program_items;
-  const objectItems =
-    office.appropriations_by_object_of_expenditures?.items ??
-    office.object_items;
-
-  return {
-    entity_acronym: officeCode,
-    entity_name: officeName,
-    entity_category:
-      office.category ?? office.classification ?? sectionCategory,
-    section_category: sectionCategory,
-    secondary_section_categories: office.sector,
-    total,
-    breakdown,
-    source_pdf_page: sourcePdfPage,
-    source_pages: {
-      pdf_start_page: sourcePdfPage,
-      pdf_end_page: office.pdf_page_end,
-      printed_start_page: office.printed_page_start,
-      printed_end_page: office.printed_page_end,
-    },
-    rows: rowsFromProgramItems(programItems, sectionCategory, sourcePdfPage),
-    object_items: objectItems,
-    special_provisions: normalizeSpecialProvisions(office.special_provisions),
-  };
-}
-
-function programIdFor(
-  year: number,
-  agencyId: string,
-  name: string,
-  index: number,
-) {
-  const slug = slugFor(name).slice(0, 48);
-
-  return `${year}-${agencyId}-${slug || index + 1}`;
-}
-
-function entityAmounts(detail: BudgetEntityDetail | undefined) {
-  const directAmounts = detail?.breakdown ?? detail?.amounts;
-
-  if (directAmounts) {
-    return {
-      ps: directAmounts.ps,
-      mooe: directAmounts.mooe,
-      co: directAmounts.co,
-      total: directAmounts.total ?? detail?.total,
-    };
-  }
-
-  const totalRow = detail?.rows?.find((row) => row.row_type === "total");
-
-  if (totalRow?.amounts) {
-    return {
-      ps: totalRow.amounts.ps,
-      mooe: totalRow.amounts.mooe,
-      co: totalRow.amounts.co,
-      total: totalRow.amounts.total ?? detail?.total,
-    };
-  }
-
-  const costStructureAmounts = (detail?.rows ?? [])
-    .filter((row) => row.row_type === "cost_structure_summary")
-    .reduce<BudgetProgramFundAmounts>(
-      (sum, row) => addAmounts(sum, row.amounts),
-      { ps: 0, mooe: 0, co: 0, total: 0 },
-    );
-
-  return {
-    ...costStructureAmounts,
-    total: costStructureAmounts.total || parseAmount(detail?.total),
-  };
-}
-
-function programRowsFor(detail: BudgetEntityDetail | undefined) {
-  const rows = detail?.rows ?? [];
-  const programRows = rows.filter(
-    (row) =>
-      row.row_type === "program_or_purpose" &&
-      cleanProgramName(row.name ?? row.program_or_cost_structure_name),
-  );
-
-  if (programRows.length > 0) return programRows;
-
-  return rows.filter((row) => row.row_type === "cost_structure_summary");
-}
-
-function normalizePrograms(
-  year: number,
-  agencyId: string,
-  agencyName: string,
-  detail: BudgetEntityDetail | undefined,
-  fallbackAmounts: Amounts,
-  sourceFile: string,
-) {
-  const programs: BudgetProgram[] = [];
-  const details: Record<string, BudgetProgramDetail> = {};
-  const rows = programRowsFor(detail);
-  const programIdCounts = new Map<string, number>();
-
-  function addProgram(
-    programName: string,
-    amounts: Amounts | undefined,
-    group: string,
-    sourcePages: number[] = [],
-  ) {
-    const normalizedAmounts = normalizeAmounts(amounts);
-    const programTotal =
-      normalizedAmounts.total ||
-      normalizedAmounts.ps + normalizedAmounts.mooe + normalizedAmounts.co;
-
-    if (programTotal <= 0) return;
-
-    const baseProgramId = programIdFor(
-      year,
-      agencyId,
-      programName,
-      programs.length,
-    );
-    const duplicateCount = (programIdCounts.get(baseProgramId) ?? 0) + 1;
-    programIdCounts.set(baseProgramId, duplicateCount);
-    const programId =
-      duplicateCount === 1
-        ? baseProgramId
-        : `${baseProgramId}-${duplicateCount}`;
-
-    programs.push({
-      program_id: programId,
-      program_name: programName,
-      personnel_services: normalizedAmounts.ps,
-      mooe: normalizedAmounts.mooe,
-      capital_outlays: normalizedAmounts.co,
-      total: programTotal,
-      source_file: sourceFile,
-      source_page: sourcePages[0],
-    });
-
-    details[programId] = {
-      program_id: programId,
-      agency_id: agencyId,
-      agency_name: agencyName,
-      program_name: programName,
-      group,
-      source_pages: sourcePages,
-      expense_class_amounts: {
-        ...normalizedAmounts,
-        total: programTotal,
-      },
-      object_distributions: objectDistributionsFromItems(detail?.object_items),
-    };
-  }
-
-  rows.forEach((row, index) => {
-    const programName =
-      cleanProgramName(row.name ?? row.program_or_cost_structure_name) ||
-      `${agencyName} line ${index + 1}`;
-
-    addProgram(
-      programName,
-      row.amounts,
-      row.row_type === "cost_structure_summary"
-        ? "Cost structure"
-        : "Program or purpose",
-      [sourcePageFor(row)].filter((page): page is number => Boolean(page)),
-    );
-  });
-
-  if (programs.length === 0) {
-    addProgram(
-      `${agencyName} appropriation`,
-      fallbackAmounts,
-      "Agency total",
-      [sourcePageFor(detail)].filter((page): page is number => Boolean(page)),
-    );
-  }
-
-  return { programs, details };
-}
-
-function entitiesForYear(year: number) {
-  const newYear = rawBudget.years?.[String(year)];
-
-  if (newYear?.offices) {
-    return Object.fromEntries(
-      Object.entries(newYear.offices).map(([officeKey, office]) => [
-        office.code ?? officeKey,
-        entityDetailFromNewOffice(officeKey, office),
-      ]),
-    );
-  }
-
-  return rawBudget.budget_details_by_year?.[String(year)]?.entities ?? {};
-}
-
-function trendEntitiesForYear(year: number) {
-  const newYear = rawBudget.years?.[String(year)];
-
-  if (newYear?.offices || newYear?.special_purpose_funds) {
-    return Object.fromEntries(
-      [
-        ...Object.entries(newYear.offices ?? {}),
-        ...Object.entries(newYear.special_purpose_funds ?? {}),
-      ].map(([officeKey, office]) => [
-        office.code ?? officeKey,
-        entityDetailFromNewOffice(officeKey, office),
-      ]),
-    );
-  }
-
-  return entitiesForYear(year);
-}
-
-function totalAppropriationForYear(year: number) {
-  const newYearTotal = normalizeTotalBudget(
-    rawBudget.years?.[String(year)]?.total_budget,
-  );
-
-  if (newYearTotal > 0) return newYearTotal;
-
-  return parseAmount(
-    rawBudget.yearly_summary?.[String(year)]?.overall_appropriation,
-  );
-}
-
-function normalizeBudgetYear(year: number) {
-  const sourceFile = sourceFileForYear(year);
-  const programDetails: Record<string, BudgetProgramDetail> = {};
-  const agencies = Object.entries(entitiesForYear(year)).map(
-    ([agencyId, detail]) => {
-      const amounts = entityAmounts(detail);
-      const normalizedAmounts = normalizeAmounts(amounts);
-      const agencyName = detail.entity_name ?? agencyId;
-      const normalizedPrograms = normalizePrograms(
-        year,
-        agencyId,
-        agencyName,
-        detail,
-        amounts,
-        sourceFile,
-      );
-
-      Object.assign(programDetails, normalizedPrograms.details);
-
-      return {
-        agency_id: agencyId,
-        agency_name: agencyName,
-        category:
-          detail.section_category ??
-          detail.entity_category ??
-          "Uncategorized / Requires Review",
-        office_category:
-          detail.entity_category ??
-          detail.section_category ??
-          "Uncategorized / Requires Review",
-        total_appropriation:
-          normalizedAmounts.total || parseAmount(detail.total),
-        personnel_services: normalizedAmounts.ps,
-        mooe: normalizedAmounts.mooe,
-        capital_outlays: normalizedAmounts.co,
-        source_file: sourceFile,
-        source_page: sourcePageFor(detail),
-        programs: normalizedPrograms.programs,
-      };
-    },
-  );
-
-  return {
-    budget: {
-      fiscal_year: year,
-      act_number: `GAAB FY ${year}`,
-      total_appropriation: totalAppropriationForYear(year),
-      agencies,
-      source_note: rawBudget.notes?.join(" ") ?? rawBudget.metadata?.note,
-      generated_at: rawBudget.generated_at,
-    } satisfies BudgetYear,
-    programDetails,
-  };
-}
-
-function aggregateBudgetYears(years: number[]): BudgetYearSelection {
-  const agencyMap = new Map<string, BudgetYear["agencies"][number]>();
-
-  for (const year of years) {
-    const budget = budgetByYear[year];
-
-    for (const agency of budget.agencies) {
-      const existing = agencyMap.get(agency.agency_id);
-
-      if (!existing) {
-        agencyMap.set(agency.agency_id, {
-          ...agency,
-          programs: [...agency.programs],
-        });
-        continue;
-      }
-
-      existing.total_appropriation += agency.total_appropriation;
-      existing.personnel_services =
-        (existing.personnel_services ?? 0) + (agency.personnel_services ?? 0);
-      existing.mooe = (existing.mooe ?? 0) + (agency.mooe ?? 0);
-      existing.capital_outlays =
-        (existing.capital_outlays ?? 0) + (agency.capital_outlays ?? 0);
-      existing.programs.push(...agency.programs);
-    }
-  }
-
-  return {
-    fiscal_year: years[years.length - 1] ?? latestBudgetYear,
-    fiscal_years: years,
-    act_number:
-      years.length === 1
-        ? `GAAB FY ${years[0]}`
-        : `GAAB FY ${years[0]}-${years[years.length - 1]}`,
-    total_appropriation: years.reduce(
-      (sum, year) => sum + budgetByYear[year].total_appropriation,
-      0,
-    ),
-    agencies: Array.from(agencyMap.values()).sort(
-      (a, b) => b.total_appropriation - a.total_appropriation,
-    ),
-    source_note: rawBudget.notes?.join(" ") ?? rawBudget.metadata?.note,
-    generated_at: rawBudget.generated_at,
-  };
-}
-
-function objectLineItemCount(detail: BudgetEntityDetail | undefined) {
-  if (detail?.object_items) return detail.object_items.length;
-
-  return (detail?.rows ?? []).filter((row) => row.row_type !== "total").length;
-}
-
-function normalizeObjectSummaryYear(year: number) {
-  return Object.fromEntries(
-    Object.entries(entitiesForYear(year)).map(([agencyId, detail]) => [
-      agencyId,
-      {
-        name: detail.entity_name ?? agencyId,
-        entity_code: detail.entity_acronym ?? agencyId,
-        category:
-          detail.section_category ??
-          detail.entity_category ??
-          "Uncategorized / Requires Review",
-        amounts: entityAmounts(detail),
-        line_item_count: objectLineItemCount(detail),
-      },
-    ]),
-  );
-}
-
-function normalizeOfficeSpecialProvisionRowsYear(
-  year: number,
-): BudgetOfficeSpecialProvisionRow[] {
-  return Object.entries(entitiesForYear(year)).map(([agencyId, detail]) => ({
-    fiscal_year: year,
-    agency_id: detail.entity_acronym ?? agencyId,
-    agency_name: detail.entity_name ?? agencyId,
-    category:
-      detail.section_category ??
-      detail.entity_category ??
-      "Uncategorized / Requires Review",
-    total_appropriation: parseAmount(detail.total),
-    source_page: sourcePageFor(detail),
-    special_provisions: detail.special_provisions ?? [],
-  }));
-}
-
-function normalizeOfficeTrendEntitiesYear(
-  year: number,
-): BudgetOfficeTrendEntity[] {
-  return Object.entries(trendEntitiesForYear(year)).map(
-    ([agencyId, detail]) => ({
-      fiscal_year: year,
-      agency_id: detail.entity_acronym ?? agencyId,
-      agency_name: detail.entity_name ?? agencyId,
-      office_category:
-        detail.entity_category ??
-        detail.section_category ??
-        "Uncategorized / Requires Review",
-      section_category:
-        detail.section_category ??
-        detail.entity_category ??
-        "Uncategorized / Requires Review",
-      total_appropriation: parseAmount(detail.total),
-    }),
-  );
-}
-
-function normalizeAgencyDetailRows(
-  year: number,
-  agencyId: string,
-  detail: BudgetEntityDetail | undefined,
-) {
-  const budgetStructureRows = detailRowsFromBudgetStructure(year, agencyId);
-
-  if (budgetStructureRows.length > 0) {
-    return dedupeAgencyDetailRows(budgetStructureRows);
-  }
-
-  return dedupeAgencyDetailRows(
-    (detail?.rows ?? [])
-      .map<BudgetAgencyDetailRow | null>((row, index) => {
-        const amounts = normalizeAmounts(row.amounts);
-        const total = amounts.total || amounts.ps + amounts.mooe + amounts.co;
-        const rowType = row.row_type ?? "source_row";
-
-        if (rowType === "total" || total <= 0) return null;
-
-        const cleanName = cleanProgramName(
-          row.name ?? row.program_or_cost_structure_name,
-        );
-
-        return {
-          fiscal_year: year,
-          agency_id: agencyId,
-          name:
-            cleanName ||
-            `${rowType === "program_or_purpose" ? "Program / purpose" : "Source"} line ${index + 1}`,
-          row_type: rowType,
-          personnel_services: amounts.ps,
-          mooe: amounts.mooe,
-          capital_outlays: amounts.co,
-          total,
-          source_page: sourcePageFor(row),
-          section_category: row.section_category,
-        };
-      })
-      .filter((row): row is BudgetAgencyDetailRow => row !== null),
-  );
-}
-
-function detailRowsFromBudgetStructure(year: number, agencyId: string) {
-  const entity = detailedBudget.by_program_per_year?.[String(year)]?.[agencyId];
-  const budgetStructure = entity?.budget_structure;
-
-  if (!budgetStructure) return [];
-
-  return Object.entries(budgetStructure).flatMap<BudgetAgencyDetailRow>(
-    ([structureName, structure]) => {
-      const rows: BudgetAgencyDetailRow[] = [];
-      const summaryRow = detailRowFromLine({
-        year,
-        agencyId,
-        name: structureName,
-        rowType: "cost_structure_summary",
-        line: structure.summary,
-        fallbackCategory:
-          structure.section_category ??
-          entity.section_category ??
-          entity.category,
-      });
-
-      if (summaryRow) rows.push(summaryRow);
-
-      for (const [programName, programLine] of Object.entries(
-        structure.programs_or_purposes ?? {},
-      )) {
-        const programRow = detailRowFromLine({
-          year,
-          agencyId,
-          name: programName,
-          rowType: "program_or_purpose",
-          line: programLine,
-          fallbackCategory:
-            programLine.section_category ?? structure.section_category,
-        });
-
-        if (programRow) rows.push(programRow);
-      }
-
-      return rows;
-    },
-  );
-}
-
-function detailRowFromLine({
-  year,
-  agencyId,
-  name,
-  rowType,
-  line,
-  fallbackCategory,
-}: {
-  year: number;
-  agencyId: string;
-  name: string;
-  rowType: string;
-  line: DetailedProgramLine | undefined;
-  fallbackCategory?: string;
-}) {
-  const cleanName = cleanProgramName(name);
-  const amounts = normalizeAmounts(line?.amounts);
-  const total = amounts.total || amounts.ps + amounts.mooe + amounts.co;
-
-  if (!cleanName || total <= 0) return null;
-
-  return {
-    fiscal_year: year,
-    agency_id: agencyId,
-    name: cleanName,
-    row_type: rowType,
-    personnel_services: amounts.ps,
-    mooe: amounts.mooe,
-    capital_outlays: amounts.co,
-    total,
-    source_page: sourcePageFor(line),
-    section_category: line?.section_category ?? fallbackCategory,
-  };
-}
-
-function dedupeAgencyDetailRows(rows: BudgetAgencyDetailRow[]) {
-  const seenRows = new Set<string>();
-
-  return rows.filter((row) => {
-    const key = [
-      row.row_type,
-      row.name,
-      row.personnel_services,
-      row.mooe,
-      row.capital_outlays,
-      row.total,
-      row.source_page,
-    ].join("|");
-
-    if (seenRows.has(key)) return false;
-    seenRows.add(key);
-
-    return true;
-  });
-}
-
-function normalizeSectionCategoryTotals(
-  year: number,
-): BudgetSectionCategoryTotal[] {
-  const yearKey = String(year);
-  const entities = entitiesForYear(year);
-  const sectionCategories =
-    rawBudget.category_program_office_details_per_year?.[yearKey]
-      ?.section_categories ?? {};
-  const categoryNames = new Set([
-    ...Object.keys(sectionCategories),
-    ...Object.values(entities)
-      .map((detail) => detail.section_category)
-      .filter((category): category is string => Boolean(category)),
-  ]);
-
-  return Array.from(categoryNames)
-    .map<BudgetSectionCategoryTotal | null>((category) => {
-      const sectionDetail = sectionCategories[category];
-      const entityIds = new Set(Object.keys(sectionDetail?.entities ?? {}));
-      const matchingEntities = Object.entries(entities).filter(
-        ([agencyId, detail]) =>
-          entityIds.has(agencyId) || detail.section_category === category,
-      );
-      const breakdown = matchingEntities.reduce<BudgetProgramFundAmounts>(
-        (sum, [, detail]) => addAmounts(sum, entityAmounts(detail)),
-        { ps: 0, mooe: 0, co: 0, total: 0 },
-      );
-      const total =
-        parseAmount(sectionDetail?.official_entity_total) || breakdown.total;
-
-      if (total <= 0) return null;
-
-      return {
-        category,
-        total,
-        personnel: breakdown.ps,
-        mooe: breakdown.mooe,
-        capital: breakdown.co,
-        entities: matchingEntities.length || entityIds.size,
-        basis: "official_entity_total",
-      };
-    })
-    .filter((row): row is BudgetSectionCategoryTotal => row !== null)
-    .sort((a, b) => b.total - a.total);
-}
-
-function yearsFromDataset() {
-  const coveredYears =
-    Object.keys(rawBudget.years ?? {})
-      .map(Number)
-      .filter((year) => Number.isFinite(year)).length > 0
-      ? Object.keys(rawBudget.years ?? {}).map(Number)
-      : (rawBudget.summary_metrics?.years_covered ??
-        Object.keys(rawBudget.yearly_summary ?? {}).map(Number));
-
-  return coveredYears
-    .filter((year) => Number.isFinite(year))
-    .sort((a, b) => b - a);
-}
-
-export const budgetYears = yearsFromDataset();
-const latestBudgetYear = budgetYears[0] ?? new Date().getFullYear();
-
-const normalizedByYear = Object.fromEntries(
-  budgetYears.map((year) => [year, normalizeBudgetYear(year)]),
-);
-
-export const budgetByYear: Record<number, BudgetYear> = Object.fromEntries(
-  budgetYears.map((year) => [year, normalizedByYear[year].budget]),
-);
-
-export const budgetProgramDetailsByYear: Record<
-  number,
-  Record<string, BudgetProgramDetail>
-> = Object.fromEntries(
-  budgetYears.map((year) => [year, normalizedByYear[year].programDetails]),
-);
-
-export const budgetAgencyDetailRowsByYear: Record<
-  number,
-  Record<string, BudgetAgencyDetailRow[]>
-> = Object.fromEntries(
-  budgetYears.map((year) => [
-    year,
-    Object.fromEntries(
-      Object.entries(entitiesForYear(year)).map(([agencyId, detail]) => [
-        agencyId,
-        normalizeAgencyDetailRows(year, agencyId, detail),
-      ]),
-    ),
-  ]),
-);
-
-export const budgetCategories = Array.from(
-  new Set(
-    budgetYears.flatMap((year) =>
-      Object.values(entitiesForYear(year))
-        .map((detail) => detail.section_category ?? detail.entity_category)
-        .filter((category): category is string => Boolean(category)),
-    ),
-  ),
-).sort();
-
-export const budgetSourceFiles = [
-  canonicalDatasetFile,
-  ...Object.values(rawBudget.years ?? {})
-    .map((year) => year.source_file)
-    .filter((file): file is string => Boolean(file)),
-  ...(rawBudget.source_files ?? [])
-    .map((file) => file.filename)
-    .filter((file): file is string => Boolean(file)),
+const fixed = (value: number, digits: number) => value.toFixed(digits).replace(/\.0$/, '')
+
+/**
+ * A rule's text, split so its amounts can be set apart from its words.
+ *
+ * The Act writes every amount twice — "Four Hundred Eighty Million Pesos
+ * (₱480,000,000.00)" — and a reader scanning a page of provisions is looking
+ * for the second one. Only the numeral is marked: bolding the spelled-out half
+ * as well would leave most of the sentence bold and mark nothing.
+ *
+ * Amounts only (user decision), which is a peso mark and the digits behind it.
+ * A percentage, a deadline in days and a section number are all numbers too,
+ * and marking those put weight on half the sentence and lost the money in it.
+ *
+ * The mark is not always ₱. Across the seven Acts the provisions write it ₱ 709
+ * times, as a bare P 521 times and as PhP 21 — the earlier Acts mostly use the
+ * letter — so matching the sign alone left two fifths of the money unmarked.
+ *
+ * The digits are not always grouped cleanly either: the Act prints figures like
+ * "P 4, 238, 704, 833.54" with a space after each comma, and a pattern that
+ * stopped at the first space bolded "P 4," and left the rest as prose. Groups
+ * may carry that space; a bare P must start at a word boundary, so a code or a
+ * word ending in P is not mistaken for money.
+ */
+const AMOUNT = /((?:₱|\bP(?:[Hh][Pp])?)\s?\d+(?:,\s?\d{3})*(?:\.\d+)?)/
+const AMOUNT_ONLY = new RegExp(`^${AMOUNT.source}$`)
+
+export const splitAmounts = (text: string): { text: string; amount: boolean }[] =>
+	text
+		.split(new RegExp(AMOUNT.source, 'g'))
+		.filter((part) => part !== '')
+		.map((part) => ({ text: part, amount: AMOUNT_ONLY.test(part) }))
+
+export const formatNumber = (value: number): string => value.toLocaleString('en-PH')
+
+/** A share of the whole. One decimal, because a tenth of this budget is ₱114M. */
+export const percent = (value: number, digits = 1): string =>
+	`${value.toFixed(digits).replace(/\.0$/, '')}%`
+
+/** The three expense classes, in the order the Act prints them. */
+export const EXPENSE_CLASSES = [
+	{
+		key: 'personnel_services' as const,
+		short: 'PS',
+		label: 'Personnel Services',
+		plain: 'Salaries and benefits of the people who work for the region.',
+		tone: 'var(--exp-ps)',
+	},
+	{
+		key: 'mooe' as const,
+		short: 'MOOE',
+		label: 'Maintenance and Other Operating Expenses',
+		plain: 'Running everything day to day — supplies, fuel, utilities, training, grants.',
+		tone: 'var(--exp-mooe)',
+	},
+	{
+		key: 'capital_outlays' as const,
+		short: 'CO',
+		label: 'Capital Outlays',
+		plain: 'Things that outlast the year — roads, buildings, equipment, vehicles.',
+		tone: 'var(--exp-co)',
+	},
 ]
-  .map((file) => file.replaceAll("BAA", "GAAB"))
-  .filter((file, index, files) => files.indexOf(file) === index);
 
-export const budgetSourceDocument = {
-  file_name: canonicalDatasetFile,
-  title: rawBudget.dataset_name,
-  act_number: "FY2020-FY2026",
-  act_type: "GAAB",
-};
+/* ---- Finding something ------------------------------------------------- */
 
-export const budgetNotes = rawBudget.notes ?? [];
-export const budgetValidation = {};
-export const budgetGeneratedAt = rawBudget.generated_at;
-export const budgetObjectSummaryByYear = Object.fromEntries(
-  budgetYears.map((year) => [String(year), normalizeObjectSummaryYear(year)]),
-);
-export const budgetOfficeSpecialProvisionRowsByYear: Record<
-  number,
-  BudgetOfficeSpecialProvisionRow[]
-> = Object.fromEntries(
-  budgetYears.map((year) => [
-    year,
-    normalizeOfficeSpecialProvisionRowsYear(year),
-  ]),
-);
-export const budgetOfficeTrendEntitiesByYear: Record<
-  number,
-  BudgetOfficeTrendEntity[]
-> = Object.fromEntries(
-  budgetYears.map((year) => [year, normalizeOfficeTrendEntitiesYear(year)]),
-);
-export const budgetSectionCategoryTotalsByYear: Record<
-  number,
-  BudgetSectionCategoryTotal[]
-> = Object.fromEntries(
-  budgetYears.map((year) => [year, normalizeSectionCategoryTotals(year)]),
-);
-
-export function getBudgetYear(year: number) {
-  return budgetByYear[year] ?? budgetByYear[latestBudgetYear];
+export type Hit = {
+	type: 'office' | 'sector' | 'program' | 'provision' | 'project'
+	title: string
+	where: string
+	/** Null where the record carries no figure of its own — most provisions. */
+	amount: number | null
+	href: string
 }
 
-export function getBudgetYearRange(fromYear?: number, toYear?: number) {
-  const from = fromYear ?? latestBudgetYear;
-  const to = toYear ?? from;
-  const minYear = Math.min(from, to);
-  const maxYear = Math.max(from, to);
-  const selectedYears = budgetYears
-    .filter((year) => year >= minYear && year <= maxYear)
-    .sort((a, b) => a - b);
+/**
+ * Everything a reader might type, searched at once.
+ *
+ * Offices first, then programs, then projects — an office row carries the
+ * total the others are slices of, so somebody who typed "education" wants the
+ * ministry before they want one of its programs. Within each kind it is
+ * largest first, which is already the order the arrays are in.
+ *
+ * A plain substring scan over 44 offices, 253 programs and 258 projects.
+ * That is 555 rows; anything cleverer would take longer to load than it saves.
 
-  if (selectedYears.length <= 1) {
-    return getBudgetYear(selectedYears[0] ?? latestBudgetYear);
-  }
+/** Everything one fiscal year holds. */
+export type BudgetYear = ReturnType<typeof buildYear>
 
-  return aggregateBudgetYears(selectedYears);
+/* Re-exported so a server component needs one import, not two. A client
+   component takes them from `@betterbarmm/budget-data/years` instead, which
+   carries no data with it. */
+export { FISCAL_YEARS, LATEST_YEAR, isFiscalYear, yearFrom }
+
+const YEARS: Record<number, BudgetYear> = {
+	2026: buildYear(raw2026 as unknown as RawAct, rawLines2026 as unknown as RawLineItems),
+	2025: buildYear(raw2025 as unknown as RawAct, rawLines2025 as unknown as RawLineItems),
+	2024: buildYear(raw2024 as unknown as RawAct, rawLines2024 as unknown as RawLineItems),
+	2023: buildYear(raw2023 as unknown as RawAct, rawLines2023 as unknown as RawLineItems),
+	2022: buildYear(raw2022 as unknown as RawAct, rawLines2022 as unknown as RawLineItems),
+	2021: buildYear(raw2021 as unknown as RawAct, rawLines2021 as unknown as RawLineItems),
+	2020: buildYear(raw2020 as unknown as RawAct, rawLines2020 as unknown as RawLineItems),
 }
+
+/** Everything one fiscal year holds, for the year a `?fy=` asks for. */
+export function budgetFor(fy?: string | number | null): BudgetYear {
+	return YEARS[yearFrom(fy)]!
+}
+
+/* The latest year under its own names, so every page that has no year to think
+   about goes on importing exactly what it imported before. */
+export const {
+	budget,
+	offices,
+	findOffice,
+	budgetGroups,
+	programs,
+	projects,
+	projectsByProvince,
+	projectsTotal,
+	projectKinds,
+	provisions,
+	provisionsFor,
+	sectors,
+	findSector,
+	sectorContents,
+	printedPages,
+	searchBudget,
+} = YEARS[LATEST_YEAR]!

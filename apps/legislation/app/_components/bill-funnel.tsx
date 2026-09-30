@@ -6,17 +6,17 @@
    legible as a ring only because there are a handful of segments and two of
    them dominate — for a set of close values this would have to be a bar.
 
-   The colour is a one-hue ramp rather than the status tones the badges use.
+   The color is a one-hue ramp rather than the status tones the badges use.
    Stages are a sequence: swapping "first reading" and "approved" would change
    what the picture says, which makes this ordinal, and ordinal data takes
-   lightness steps so the order is visible in the colour itself. The badge
+   lightness steps so the order is visible in the color itself. The badge
    tones are also measurably unsafe at this size — the committee and early
    hues sit ΔE 3.7 apart under deuteranopia, which is no distance at all. See
    `--funnel-1..4` in the stylesheet.
 
    The legend splits and flanks the ring, reading outward from it: earlier
    stages left, later stages right. Several slices are slivers under two
-   percent, and an arc that thin cannot be labelled or hovered reliably — so
+   percent, and an arc that thin cannot be labeled or hovered reliably — so
    the flanking rows are not decoration around the chart, they are where those
    slices are actually read.
    ============================================================ */
@@ -76,11 +76,11 @@ function LegendRow({
 						{slice.count.toLocaleString()}
 					</span>
 					<span className='item-title text-[var(--ink)]'>{slice.label}</span>
-					{/* The share as a tinted pill, tied to its own arc by colour — the
+					{/* The share as a tinted pill, tied to its own arc by color — the
 					    same soft-fill badge the status pills use, a size down.
 
-					    The text is a darkened step of the slice colour rather than the
-					    slice colour itself: `--funnel-1` reaches only 2.2:1 on paper,
+					    The text is a darkened step of the slice color rather than the
+					    slice color itself: `--funnel-1` reaches only 2.2:1 on paper,
 					    which is fine for a 21px-wide arc and unreadable as type. Mixing
 					    toward `--ink` keeps the hue and gets the contrast, and because
 					    `--ink` flips with the theme it darkens on paper and lightens on
@@ -124,7 +124,7 @@ export function BillFunnel({
 	/* Each arc's length and where it starts, worked out before anything is
 	   drawn.
 	 *
-	 * It used to run a `travelled` counter and add to it inside the map that
+	 * It used to run a `traveled` counter and add to it inside the map that
 	 * builds the circles. That is a mutation during render — React is free to
 	 * call a render closure more than once or out of order, and a running total
 	 * only gives the right answer if it is called exactly once, in order. Two

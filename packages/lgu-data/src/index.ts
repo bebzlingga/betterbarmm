@@ -19,3 +19,4 @@
 export * from './dataset'
 export * from './guide'
 export * from './reference'
+export * from './spending'

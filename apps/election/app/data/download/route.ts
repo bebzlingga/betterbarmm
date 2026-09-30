@@ -7,6 +7,7 @@ const datasetRoot = join(process.cwd(), "..", "..", "datasets", "election");
 // Allowlist — never serve an arbitrary path from a query param.
 const downloadableFiles = new Set([
   "election.min.json",
+  "election-results.json",
   "barmm_2026_developing_stories.json",
   "election-supplement.json",
 ]);

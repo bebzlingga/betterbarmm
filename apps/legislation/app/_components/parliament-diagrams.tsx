@@ -12,7 +12,7 @@
    underneath as a caption of itself.
 
    CSS grid rather than SVG: both are tables of cells, they have to reflow on
-   a phone, and every colour has to come from a token so the dark theme and
+   a phone, and every color has to come from a token so the dark theme and
    the brand band get them for free. An SVG would have fixed all three.
    ============================================================ */
 

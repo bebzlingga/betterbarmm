@@ -14,7 +14,7 @@ import { displayName } from '../_lib/names'
 export const metadata: Metadata = {
 	title: 'Candidates & parties — BetterBARMM Election',
 	description:
-		'Everyone running in the 2026 Bangsamoro Parliamentary Election: the 13 parties on the regional ballot and every sectoral nominee and district filer on record, searchable by name, party, and place.',
+		'Everyone who stood in the 2026 Bangsamoro Parliamentary Election: the 13 parties on the regional ballot and every sectoral nominee and district filer on record, searchable by name, party, and place.',
 }
 
 /**
@@ -79,8 +79,11 @@ export default function CandidatesPage() {
 
 	return (
 		<ElectionShell>
-			{/* An invitation rather than a description, which is what a page a
-			    reader arrives at to look someone up should open with.
+			{/* It used to open with an invitation — "Explore the people on the
+			    ballot." — which was right while the ballot was still ahead. It is
+			    behind now, and a page that still says explore is a page that has
+			    not noticed. What it holds is the field that stood; who won is one
+			    line further down, on the page that carries the count.
 
 			    "On the ballot" is doing colloquial work here: the eight reserved
 			    seats are filled from a certified list and never printed on the
@@ -90,10 +93,10 @@ export default function CandidatesPage() {
 			    be the plain phrase people actually use for this. */}
 			<Masthead
 				label='Candidates & parties'
-				lines={['Explore the people', 'on the ballot.']}
+				lines={['Everyone who stood', 'on the ballot.']}
 				muted={[1]}
 				size='lg'
-				standfirst={`The ${stats.regionalParties} parties every voter in the region chooses from, and every sectoral nominee and district filer this workspace holds a record for — searchable by name, by party, and by the place they are running in.`}
+				standfirst={`The ${stats.regionalParties} parties every voter in the region chose from, and every sectoral nominee and district filer this workspace holds a record for — searchable by name, by party, and by the place they stood in. Who actually won is on the result page.`}
 				/* The registry's own masthead shape: each figure says what it counts
 				   and where it came from, because the three routes onto this page are
 				   not equally solid and a reader should be able to see that before
@@ -127,13 +130,13 @@ export default function CandidatesPage() {
 			/>
 
 			{/* ---- The parties ---- */}
-			<section id='parties' className='bb-container bb-section scroll-mt-24'>
+			<section id='parties' className='bb-container section-band scroll-mt-24'>
 				<SectionHead
 					index='01'
 					eyebrow={`The party vote · ${stats.regionalParties} entries`}
 					title={`${partyCountWord} entries,`}
 					titleMuted={`${blocCountWord} blocs.`}
-					lead={`One of these takes your party vote, and the ${stats.partyRepresentativeSeats} party-representative seats are shared out in proportion to how the region votes. Open any entry for its background, its chief-minister nominee, and the candidates running under it.`}
+					lead={`One of these took your party vote, and the ${stats.partyRepresentativeSeats} party-representative seats were shared out in proportion to how the region voted. Open any entry for how it did in the count, its background, its chief-minister nominee, and the candidates who stood under it.`}
 				/>
 
 				<div className='mt-12'>
@@ -174,11 +177,7 @@ export default function CandidatesPage() {
 			</section>
 
 			{/* ---- Everyone running ---- */}
-			{/* Closer to the parties above it. The okir rule that used to mark the
-			    join is gone, and with a full section step on both sides of where it
-			    was the two blocks read as two pages rather than as a list of parties
-			    and then a search across everyone in them. */}
-			<section id='candidates' className='bb-container bb-section-bottom scroll-mt-24 pt-8 lg:pt-12'>
+			<section id='candidates' className='bb-container section-band scroll-mt-24'>
 				<SectionHead
 					index='02'
 					eyebrow='Candidate finder'

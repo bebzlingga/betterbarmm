@@ -39,7 +39,7 @@ type Fact = {
    label above it already says.
 
    The house rule from the estate's other line art holds here — brass is the
-   furniture and the crimson appears exactly once in each mark, on the part
+   furniture and the accent appears exactly once in each mark, on the part
    that is the fact. Everything is stroked rather than filled, at one weight,
    so six of them in a row read as one set.
 
@@ -178,7 +178,7 @@ const FACTS: Fact[] = [
 		sector: 'Youth',
 		headline: 'Youth means 15 to 40 here',
 		detail:
-			'Wider than almost anywhere else, which decides who qualifies for youth programmes and scholarships. The commission that runs them seats a commissioner in every province.',
+			'Wider than almost anywhere else, which decides who qualifies for youth programs and scholarships. The commission that runs them seats a commissioner in every province.',
 		act: { number: 10, label: 'Bangsamoro Youth Commission Act of 2020' },
 		mark: 'span',
 	},

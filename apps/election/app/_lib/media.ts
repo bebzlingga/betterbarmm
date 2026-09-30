@@ -36,7 +36,7 @@ export type { PersonPhoto }
  * Party emblems, once there are any to print.
  *
  * Deliberately empty. A party's emblem is its own mark, and none of the
- * thirteen on this ballot publishes one under a licence that lets a third
+ * thirteen on this ballot publishes one under a license that lets a third
  * party reproduce it — so every entry carries a lettered plate built from its
  * ballot name instead. When a party releases its emblem, or COMELEC publishes
  * the ballot faces, a file dropped in `_images/parties/` and a line here is

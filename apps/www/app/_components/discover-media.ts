@@ -46,11 +46,11 @@ import yakanWeaving from '../_images/discover/yakan-weaving.jpg'
  *
  * These are not decoration. A reader who has never been to the region needs to
  * see it, and the same standard applies to a picture as to a figure elsewhere
- * on the site: it names what it shows, who made it, under what licence, and
+ * on the site: it names what it shows, who made it, under what license, and
  * where the original lives. `caption` is the line printed under the image;
  * `alt` is what a screen reader hears, so the two say different things.
  *
- * Everything here is public domain, CC0, or a CC licence that permits reuse
+ * Everything here is public domain, CC0, or a CC license that permits reuse
  * with attribution — mostly from Wikimedia Commons, plus official releases from
  * the Bangsamoro Government's own information offices. `credit` and `source`
  * are what satisfy the attribution terms, so neither is optional.
@@ -63,7 +63,7 @@ export type DiscoverPhoto = {
 	place?: string
 	credit: string
 	license: string
-	/** The Commons file page — the licence's "link to the source" requirement. */
+	/** The Commons file page — the license's "link to the source" requirement. */
 	source: string
 }
 
@@ -205,7 +205,7 @@ export const discoverPhotos = {
 	},
 	governmentCenter: {
 		src: governmentCenter,
-		alt: 'The arcade of the Bangsamoro Government Center at night, lit in bands of coloured light.',
+		alt: 'The arcade of the Bangsamoro Government Center at night, lit in bands of colored light.',
 		caption: 'The Bangsamoro Government Center lit for Eid al-Fitr.',
 		place: 'Cotabato City',
 		credit: 'BARMM Bureau of Public Information',
@@ -242,7 +242,7 @@ export const discoverPhotos = {
 	chiefMinisterOffice: {
 		src: chiefMinisterOffice,
 		alt: 'The Office of the Chief Minister building at the Bangsamoro Government Center.',
-		caption: 'The Office of the Chief Minister — the executive centre of the regional government.',
+		caption: 'The Office of the Chief Minister — the executive center of the regional government.',
 		place: 'Cotabato City',
 		credit: 'Marwan Khan',
 		license: 'CC BY-SA 3.0',
@@ -270,7 +270,7 @@ export const discoverPhotos = {
 	tausugAttire: {
 		src: tausugAttire,
 		alt: 'A group in bright red, yellow, blue and pink Tausug dress standing on white sand before outrigger boats.',
-		caption: 'Tausug traditional dress — every Bangsamoro group carries its own colour, cut and weave.',
+		caption: 'Tausug traditional dress — every Bangsamoro group carries its own color, cut and weave.',
 		credit: 'Heigen18',
 		license: 'CC BY-SA 4.0',
 		source: 'https://commons.wikimedia.org/wiki/File:TausugTribeOutfit.jpg',
@@ -368,7 +368,7 @@ export const discoverPhotos = {
 	marawiIslamicCenter: {
 		src: marawiIslamicCenter,
 		alt: 'A broad cream mosque with a central dome and flanking minarets on a Marawi street corner.',
-		caption: 'A mosque in Marawi — the city that gives Lanao del Sur its civic and religious centre.',
+		caption: 'A mosque in Marawi — the city that gives Lanao del Sur its civic and religious center.',
 		place: 'Marawi, Lanao del Sur',
 		credit: 'Bjeweld',
 		license: 'CC BY-SA 4.0',
@@ -424,7 +424,7 @@ export const discoverPhotos = {
 		src: tiyulaItum,
 		alt: 'A bowl of near-black beef soup beside a red onion and dried chillies.',
 		caption:
-			'Tiyula itum — the Tausug black soup, its colour from burnt coconut meat ground into the broth.',
+			'Tiyula itum — the Tausug black soup, its color from burnt coconut meat ground into the broth.',
 		credit: 'Nurfadzrie Abubakar',
 		license: 'CC BY 3.0',
 		source:

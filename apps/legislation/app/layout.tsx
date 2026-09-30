@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { DM_Sans, Outfit } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { AskDock } from '@betterbarmm/ai/dock'
 import { MotionProvider } from '@betterbarmm/editorial'
 import { Shell } from './_components/shell'
 import { themeInitScript } from './_components/theme-toggle'
@@ -95,6 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					<Shell>{children}</Shell>
 				</MotionProvider>
 				<Analytics />
+				<AskDock />
 			</body>
 		</html>
 	)

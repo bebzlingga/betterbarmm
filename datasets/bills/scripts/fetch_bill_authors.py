@@ -115,7 +115,7 @@ def repeater(page: str, field: str) -> list[str]:
     ]
 
 
-def labelled(page: str, label: str) -> str:
+def labeled(page: str, label: str) -> str:
     """The run of text after a bolded "Label:" up to the next bolded label."""
     match = re.search(
         rf"(?is)<strong>\s*{re.escape(label)}\s*:?\s*</strong>(.*?)(?=<strong>|</div>)", page
@@ -142,13 +142,13 @@ def parse_bill(row: dict, page: str) -> dict:
         **row,
         # The detail page restates status and date; prefer it, since the
         # listing is a cached view of the same fields.
-        "status": labelled(page, "Bill Status") or row["status"],
-        "as_of": labelled(page, "As of") or row["as_of"],
+        "status": labeled(page, "Bill Status") or row["status"],
+        "as_of": labeled(page, "As of") or row["as_of"],
         "principal_authors": repeater(page, "principal_author_bill"),
         "co_authors": repeater(page, "co_authors_bill"),
         "history": history(page),
-        "committee_referrals": labelled(page, "Committee Referral(s)"),
-        "became_act": labelled(page, "Bangsamoro Autonomy Act"),
+        "committee_referrals": labeled(page, "Committee Referral(s)"),
+        "became_act": labeled(page, "Bangsamoro Autonomy Act"),
     }
 
 

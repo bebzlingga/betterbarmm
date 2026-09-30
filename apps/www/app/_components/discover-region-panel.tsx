@@ -1,8 +1,8 @@
 import { ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
-import { bangsamoroDistrictSeats, bangsamoroParliament } from './discover-barmm-data'
+import { bangsamoroDistrictSeats, bangsamoroParliament } from '@betterbarmm/primer-data'
 import { PhotoFrame } from './discover-figure'
 import { photo } from './discover-media'
-import { BarSegment, Counter, LineReveal, OkirBloom, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { BarSegment, Counter, LineReveal, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
 
 /**
  * The six accent steps the seat bar is built from.
@@ -10,7 +10,7 @@ import { BarSegment, Counter, LineReveal, OkirBloom, Rise, Stagger, StaggerItem 
  * A categorical palette would be wrong here: the constituencies are not
  * unrelated categories, they are shares of one 32-seat total. So the bar steps
  * one hue by lightness, largest share darkest — which stays readable under any
- * colour vision, because lightness is the channel that survives. The seventh
+ * color vision, because lightness is the channel that survives. The seventh
  * and smallest block falls back to the last step.
  */
 const SEAT_TONES = [
@@ -81,7 +81,6 @@ export function DiscoverRegionPanel({
 		// being dark; in dark mode it sits a few points off the page and needs an
 		// edge, or the section transition reads as a rendering artefact.
 		<section className='bb-ground bb-grain bb-lattice relative isolate overflow-hidden border-y border-[var(--rule)]'>
-			<OkirBloom className='absolute -right-[16%] -top-[34%] size-[min(40rem,84vw)] opacity-[0.15]' />
 
 			<div className='bb-container relative z-2 bb-section'>
 				<Rise distance={14}>

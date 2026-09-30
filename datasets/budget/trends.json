@@ -1,0 +1,2832 @@
+{
+	"meta": {
+		"generated_on": "2026-09-25",
+		"years": [
+			2020,
+			2021,
+			2022,
+			2023,
+			2024,
+			2025,
+			2026
+		],
+		"source": "The seven enacted Acts, FY 2020 to FY 2026, as extracted for this workspace.",
+		"notes": [
+			"A missing year is a missing point, never a zero: the office or sector did not exist in that Act.",
+			"offices[] is a partition: one year of office lines sums to that year of the Act. Attached agencies are separate lines, because a parent ministry's printed total excludes them.",
+			"A line may hold a single point, where the Act prints that office in one year only. It is kept so the partition holds; a chart should skip it rather than draw one column.",
+			"sectors[] overlaps by design: a row tagged two sectors is counted under both, so these must never be summed across sectors.",
+			"areas[] covers the itemised infrastructure projects only, not whole budgets.",
+			"Area names are the ones each Act prints. The region was redrawn inside this span — Maguindanao I and II become Del Norte and Del Sur, Sulu stops appearing after FY 2022 — so a renamed area is two series rather than one continuous line.",
+			"Amounts are as printed in each Act, to the centavo, with nothing reconciled between years."
+		]
+	},
+	"region": [
+		[
+			2020,
+			65916467688.46
+		],
+		[
+			2021,
+			75628681748.26
+		],
+		[
+			2022,
+			79862015000
+		],
+		[
+			2023,
+			85359315687
+		],
+		[
+			2024,
+			98467200000
+		],
+		[
+			2025,
+			94411666856.24
+		],
+		[
+			2026,
+			114077644141.9
+		]
+	],
+	"offices": [
+		{
+			"slug": "ministry-of-basic-higher-and-technical-education",
+			"name": "Ministry of Basic, Higher and Technical Education",
+			"series": [
+				[
+					2020,
+					19056935766.67
+				],
+				[
+					2021,
+					23521710468.87
+				],
+				[
+					2022,
+					24712744096.16
+				],
+				[
+					2023,
+					27273090333
+				],
+				[
+					2024,
+					30251210027
+				],
+				[
+					2025,
+					32140385397
+				],
+				[
+					2026,
+					26491916338
+				]
+			]
+		},
+		{
+			"slug": "infrastructure-modernization-and-public-asset-construction-and-transformation",
+			"name": "Infrastructure Modernization and Public Asset Construction and Transformation",
+			"series": [
+				[
+					2026,
+					17500000000
+				]
+			]
+		},
+		{
+			"slug": "contingent-fund",
+			"name": "Contingent Fund",
+			"series": [
+				[
+					2020,
+					13201891779.81
+				],
+				[
+					2021,
+					5444274837.06
+				],
+				[
+					2022,
+					5465688924.88
+				],
+				[
+					2023,
+					5029839521
+				],
+				[
+					2024,
+					3775038731
+				],
+				[
+					2025,
+					666798436.24
+				],
+				[
+					2026,
+					11345317076.9
+				]
+			]
+		},
+		{
+			"slug": "local-government-support-fund",
+			"name": "Local Government Support Fund",
+			"series": [
+				[
+					2022,
+					1394016000
+				],
+				[
+					2023,
+					2297491000
+				],
+				[
+					2024,
+					6536000000
+				],
+				[
+					2025,
+					10153071200
+				]
+			]
+		},
+		{
+			"slug": "miscellaneous-and-personnel-benefit-fund",
+			"name": "Miscellaneous and Personnel Benefit Fund",
+			"series": [
+				[
+					2020,
+					9280558584.58
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-health",
+			"name": "Ministry of Health",
+			"series": [
+				[
+					2020,
+					3069533195.95
+				],
+				[
+					2021,
+					5120445263.26
+				],
+				[
+					2022,
+					4680225310.31
+				],
+				[
+					2023,
+					5893945419
+				],
+				[
+					2024,
+					6657091430
+				],
+				[
+					2025,
+					7439674817
+				],
+				[
+					2026,
+					8615776937
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-transition-authority",
+			"name": "Bangsamoro Transition Authority",
+			"series": [
+				[
+					2020,
+					2591131798.6
+				],
+				[
+					2021,
+					3707969000
+				],
+				[
+					2022,
+					3558163162
+				],
+				[
+					2023,
+					3939145853
+				],
+				[
+					2024,
+					4831206302
+				],
+				[
+					2025,
+					5330726658
+				],
+				[
+					2026,
+					7257475847
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-public-works",
+			"name": "Ministry of Public Works",
+			"series": [
+				[
+					2020,
+					4089426542.06
+				],
+				[
+					2021,
+					15793522929.66
+				],
+				[
+					2022,
+					16379335557.39
+				],
+				[
+					2023,
+					16479584419
+				],
+				[
+					2024,
+					17774054140
+				],
+				[
+					2025,
+					11434777677
+				],
+				[
+					2026,
+					5770613407
+				]
+			]
+		},
+		{
+			"slug": "sustainable-assistance-mechanism-for-local-moral-governance",
+			"name": "Sustainable Assistance Mechanism for Local Moral Governance",
+			"series": [
+				[
+					2026,
+					5206146100
+				]
+			]
+		},
+		{
+			"slug": "special-development-fund",
+			"name": "Special Development Fund",
+			"series": [
+				[
+					2022,
+					5000000000
+				],
+				[
+					2023,
+					5000000000
+				],
+				[
+					2024,
+					5000000000
+				],
+				[
+					2025,
+					5000000000
+				],
+				[
+					2026,
+					5000000000
+				]
+			]
+		},
+		{
+			"slug": "office-of-the-chief-minister",
+			"name": "Office of the Chief Minister",
+			"series": [
+				[
+					2020,
+					7922849141.76
+				],
+				[
+					2021,
+					10292444735.25
+				],
+				[
+					2022,
+					8082220607.92
+				],
+				[
+					2023,
+					5753179697
+				],
+				[
+					2024,
+					3884118344
+				],
+				[
+					2025,
+					3884629370
+				],
+				[
+					2026,
+					4960489111
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-social-services-and-development",
+			"name": "Ministry of Social Services and Development",
+			"series": [
+				[
+					2021,
+					3320606376.05
+				],
+				[
+					2022,
+					2699819361.91
+				],
+				[
+					2023,
+					3070979617
+				],
+				[
+					2024,
+					3702389285
+				],
+				[
+					2025,
+					3843950756
+				],
+				[
+					2026,
+					3961199135
+				]
+			]
+		},
+		{
+			"slug": "miscellaneous-personnel-benefits-fund",
+			"name": "Miscellaneous Personnel Benefits Fund",
+			"series": [
+				[
+					2026,
+					2715331650
+				]
+			]
+		},
+		{
+			"slug": "miscellaneous-personnel-benefit-fund",
+			"name": "Miscellaneous Personnel Benefit Fund",
+			"series": [
+				[
+					2021,
+					1777977996.03
+				],
+				[
+					2022,
+					663300922.35
+				],
+				[
+					2023,
+					2615269253
+				],
+				[
+					2024,
+					3408608644
+				],
+				[
+					2025,
+					2164833311
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-the-interior-and-local-government",
+			"name": "Ministry of the Interior and Local Government",
+			"series": [
+				[
+					2023,
+					2049385820
+				],
+				[
+					2024,
+					2359893235
+				],
+				[
+					2025,
+					1922456471
+				],
+				[
+					2026,
+					2037769002
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-social-services",
+			"name": "Ministry of Social Services",
+			"series": [
+				[
+					2020,
+					2033934622.42
+				]
+			]
+		},
+		{
+			"slug": "share-of-the-constituent-local-government-units-in-taxes-within-the-bangsamoro-autonomous-region",
+			"name": "Share of the Constituent Local Government Units in Taxes Within the Bangsamoro Autonomous Region",
+			"series": [
+				[
+					2024,
+					2033183600
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-agriculture-fisheries-and-agrarian-reform",
+			"name": "Ministry of Agriculture, Fisheries and Agrarian Reform",
+			"series": [
+				[
+					2020,
+					986810707.87
+				],
+				[
+					2021,
+					1530859966.65
+				],
+				[
+					2022,
+					1504743147.06
+				],
+				[
+					2023,
+					1518736942
+				],
+				[
+					2024,
+					1913541274
+				],
+				[
+					2025,
+					2086299667
+				],
+				[
+					2026,
+					1852657348
+				]
+			]
+		},
+		{
+			"slug": "pension-and-gratuity-fund",
+			"name": "Pension and Gratuity Fund",
+			"series": [
+				[
+					2020,
+					252519710.63
+				],
+				[
+					2021,
+					271664163.87
+				],
+				[
+					2022,
+					319405191.02
+				],
+				[
+					2023,
+					300627840
+				],
+				[
+					2024,
+					416115167
+				],
+				[
+					2025,
+					1720911583
+				],
+				[
+					2026,
+					1753525425
+				]
+			]
+		},
+		{
+			"slug": "quick-response-fund",
+			"name": "Quick Response Fund",
+			"series": [
+				[
+					2026,
+					1712000000
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-interior-and-local-government",
+			"name": "Ministry of Interior and Local Government",
+			"series": [
+				[
+					2020,
+					1354637972.84
+				],
+				[
+					2022,
+					1273910996.6
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-interior-local-government",
+			"name": "Ministry of Interior Local Government",
+			"series": [
+				[
+					2021,
+					1055588519.6
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-human-settlements-and-development",
+			"name": "Ministry of Human Settlements and Development",
+			"series": [
+				[
+					2020,
+					94935427.5
+				],
+				[
+					2021,
+					811012237.93
+				],
+				[
+					2022,
+					814359767.65
+				],
+				[
+					2023,
+					214280347
+				],
+				[
+					2024,
+					1132845944
+				],
+				[
+					2025,
+					624540155
+				],
+				[
+					2026,
+					968101193
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-environment-natural-resources-and-energy",
+			"name": "Ministry of Environment, Natural Resources and Energy",
+			"series": [
+				[
+					2020,
+					460483910.78
+				],
+				[
+					2021,
+					553798941.86
+				],
+				[
+					2022,
+					642896982.26
+				],
+				[
+					2023,
+					666210332
+				],
+				[
+					2024,
+					834206301
+				],
+				[
+					2025,
+					877395482
+				],
+				[
+					2026,
+					923166296
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-trade-investments-and-tourism",
+			"name": "Ministry of Trade, Investments and Tourism",
+			"series": [
+				[
+					2020,
+					279828949.72
+				],
+				[
+					2021,
+					323537406.68
+				],
+				[
+					2022,
+					368862862.29
+				],
+				[
+					2023,
+					476743722
+				],
+				[
+					2024,
+					514565958
+				],
+				[
+					2025,
+					576508811
+				],
+				[
+					2026,
+					864842002
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-transportation-and-communications",
+			"name": "Ministry of Transportation and Communications",
+			"series": [
+				[
+					2020,
+					214911562.4
+				],
+				[
+					2021,
+					623200803.21
+				],
+				[
+					2022,
+					375147877.59
+				],
+				[
+					2023,
+					539125642
+				],
+				[
+					2024,
+					632734333
+				],
+				[
+					2025,
+					801294812
+				],
+				[
+					2026,
+					689866178
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-science-and-technology",
+			"name": "Ministry of Science and Technology",
+			"series": [
+				[
+					2020,
+					164560997.76
+				],
+				[
+					2021,
+					197227565.61
+				],
+				[
+					2022,
+					235463163.63
+				],
+				[
+					2023,
+					296548669
+				],
+				[
+					2024,
+					387611133
+				],
+				[
+					2025,
+					486666697
+				],
+				[
+					2026,
+					629850887
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-finance-and-budget-and-management",
+			"name": "Ministry of Finance, and Budget and Management",
+			"series": [
+				[
+					2020,
+					454049670.5
+				],
+				[
+					2021,
+					389622624.49
+				],
+				[
+					2022,
+					470151428.59
+				],
+				[
+					2023,
+					358293385
+				],
+				[
+					2024,
+					435307075
+				],
+				[
+					2025,
+					451701836
+				],
+				[
+					2026,
+					534357211
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-labor-and-employment",
+			"name": "Ministry of Labor and Employment",
+			"series": [
+				[
+					2020,
+					193213547.26
+				],
+				[
+					2021,
+					274104652.74
+				],
+				[
+					2022,
+					286753268.07
+				],
+				[
+					2023,
+					296494581
+				],
+				[
+					2024,
+					321558775
+				],
+				[
+					2025,
+					373858306
+				],
+				[
+					2026,
+					503731763
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-under-special-circumstances-support-fund",
+			"name": "Bangsamoro Under Special Circumstances Support Fund",
+			"series": [
+				[
+					2025,
+					500000000
+				]
+			]
+		},
+		{
+			"slug": "special-geographic-area-development-authority",
+			"name": "Special Geographic Area Development Authority",
+			"series": [
+				[
+					2026,
+					365738943
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-pilgrimage-authority",
+			"name": "Bangsamoro Pilgrimage Authority",
+			"series": [
+				[
+					2022,
+					36544868.33
+				],
+				[
+					2023,
+					90398180
+				],
+				[
+					2024,
+					172859511
+				],
+				[
+					2025,
+					136825508
+				],
+				[
+					2026,
+					278837239
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-darul-ifta",
+			"name": "Bangsamoro Darul-ifta'",
+			"series": [
+				[
+					2023,
+					46402272
+				],
+				[
+					2024,
+					52890794
+				],
+				[
+					2025,
+					180384270
+				],
+				[
+					2026,
+					269903643
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-public-order-and-safety",
+			"name": "Ministry of Public Order and Safety",
+			"series": [
+				[
+					2020,
+					86808855.58
+				],
+				[
+					2021,
+					108821965.09
+				],
+				[
+					2022,
+					130435306.18
+				],
+				[
+					2023,
+					135813144
+				],
+				[
+					2024,
+					175165494
+				],
+				[
+					2025,
+					204635299
+				],
+				[
+					2026,
+					254307586
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-human-rights-commission",
+			"name": "Bangsamoro Human Rights Commission",
+			"series": [
+				[
+					2021,
+					97456528.9
+				],
+				[
+					2022,
+					97456528.9
+				],
+				[
+					2023,
+					114645095
+				],
+				[
+					2024,
+					124030990
+				],
+				[
+					2025,
+					141414917
+				],
+				[
+					2026,
+					170288917
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-planning-and-development-authority",
+			"name": "Bangsamoro Planning and Development Authority",
+			"series": [
+				[
+					2021,
+					85087444.3
+				],
+				[
+					2022,
+					93795478.64
+				],
+				[
+					2023,
+					113152383
+				],
+				[
+					2024,
+					206057777
+				],
+				[
+					2025,
+					175636532
+				],
+				[
+					2026,
+					168417631
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-indigenous-peoples-affairs",
+			"name": "Ministry of Indigenous Peoples' Affairs",
+			"series": [
+				[
+					2020,
+					99635217.7
+				],
+				[
+					2022,
+					110898768.73
+				],
+				[
+					2023,
+					108922862
+				],
+				[
+					2024,
+					135078187
+				],
+				[
+					2025,
+					142937209
+				],
+				[
+					2026,
+					141352468
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-commission-for-the-preservation-of-cultural-heritage",
+			"name": "Bangsamoro Commission for the Preservation of Cultural Heritage",
+			"series": [
+				[
+					2022,
+					65254000.8
+				],
+				[
+					2023,
+					92369802
+				],
+				[
+					2024,
+					118001439
+				],
+				[
+					2025,
+					128073541
+				],
+				[
+					2026,
+					134575177
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-women-commission",
+			"name": "Bangsamoro Women Commission",
+			"series": [
+				[
+					2021,
+					71644105.9
+				],
+				[
+					2022,
+					76296963.46
+				],
+				[
+					2023,
+					81166604
+				],
+				[
+					2024,
+					93987265
+				],
+				[
+					2025,
+					106607032
+				],
+				[
+					2026,
+					122104239
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-youth-commission",
+			"name": "Bangsamoro Youth Commission",
+			"series": [
+				[
+					2021,
+					76750009.35
+				],
+				[
+					2022,
+					78196141.51
+				],
+				[
+					2023,
+					87175402
+				],
+				[
+					2024,
+					97656116
+				],
+				[
+					2025,
+					106067435
+				],
+				[
+					2026,
+					120490172
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-sports-commission",
+			"name": "Bangsamoro Sports Commission",
+			"series": [
+				[
+					2022,
+					63142883.75
+				],
+				[
+					2023,
+					67026627
+				],
+				[
+					2024,
+					75316803
+				],
+				[
+					2025,
+					89641098
+				],
+				[
+					2026,
+					107590885
+				]
+			]
+		},
+		{
+			"slug": "ministry-of-indigenous-people-s-affairs",
+			"name": "Ministry of Indigenous People's Affairs",
+			"series": [
+				[
+					2021,
+					105244913.04
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-attorney-general-s-office",
+			"name": "Bangsamoro Attorney-general's Office",
+			"series": [
+				[
+					2021,
+					41086262.05
+				],
+				[
+					2022,
+					43053631.14
+				],
+				[
+					2023,
+					49089121
+				],
+				[
+					2024,
+					57843120
+				],
+				[
+					2025,
+					76554658
+				],
+				[
+					2026,
+					96394341
+				]
+			]
+		},
+		{
+			"slug": "cooperatives-and-social-enterprise-authority",
+			"name": "Cooperatives and Social Enterprise Authority",
+			"series": [
+				[
+					2022,
+					40663074.64
+				],
+				[
+					2023,
+					43792905
+				],
+				[
+					2024,
+					69513694
+				],
+				[
+					2025,
+					75692596
+				],
+				[
+					2026,
+					85557056
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-information-office",
+			"name": "Bangsamoro Information Office",
+			"series": [
+				[
+					2023,
+					56126942
+				],
+				[
+					2024,
+					67221275
+				],
+				[
+					2025,
+					64589369
+				],
+				[
+					2026,
+					75099266
+				]
+			]
+		},
+		{
+			"slug": "development-academy-of-the-bangsamoro",
+			"name": "Development Academy of the Bangsamoro",
+			"series": [
+				[
+					2022,
+					50451702.88
+				],
+				[
+					2023,
+					57654779
+				],
+				[
+					2024,
+					56831602
+				],
+				[
+					2025,
+					60053745
+				],
+				[
+					2026,
+					71389762
+				]
+			]
+		},
+		{
+			"slug": "office-of-the-wali-of-bangsamoro",
+			"name": "Office of the Wali of Bangsamoro",
+			"series": [
+				[
+					2021,
+					33022030.8
+				],
+				[
+					2022,
+					48569152.64
+				],
+				[
+					2023,
+					43263745
+				],
+				[
+					2024,
+					44214061
+				],
+				[
+					2025,
+					46878551
+				],
+				[
+					2026,
+					59387831
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-information-and-communications-technology-office",
+			"name": "Bangsamoro Information and Communications Technology Office",
+			"series": [
+				[
+					2023,
+					45392620
+				],
+				[
+					2024,
+					39944643
+				],
+				[
+					2025,
+					83815773
+				],
+				[
+					2026,
+					57374973
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-board-of-investments",
+			"name": "Bangsamoro Board of Investments",
+			"series": [
+				[
+					2023,
+					23943305
+				],
+				[
+					2024,
+					37699028
+				],
+				[
+					2025,
+					42749538
+				],
+				[
+					2026,
+					53097058
+				]
+			]
+		},
+		{
+			"slug": "office-for-settler-communities",
+			"name": "Office for Settler Communities",
+			"series": [
+				[
+					2023,
+					34007507
+				],
+				[
+					2024,
+					41608503
+				],
+				[
+					2025,
+					41148343
+				],
+				[
+					2026,
+					46580920
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-science-high-school",
+			"name": "Bangsamoro Science High School",
+			"series": [
+				[
+					2026,
+					44300108
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-agriculture-and-fisheries-training-institute",
+			"name": "Bangsamoro Agriculture and Fisheries Training Institute",
+			"series": [
+				[
+					2026,
+					30363020
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-support-fund-to-judiciary",
+			"name": "Bangsamoro Support Fund to Judiciary",
+			"series": [
+				[
+					2026,
+					30360000
+				]
+			]
+		},
+		{
+			"slug": "office-of-the-wali",
+			"name": "Office of the Wali",
+			"series": [
+				[
+					2020,
+					27809726.07
+				]
+			]
+		},
+		{
+			"slug": "bangsamoro-shari-ah-court-support-fund",
+			"name": "Bangsamoro Shari'ah Court Support Fund",
+			"series": [
+				[
+					2025,
+					27480000
+				]
+			]
+		}
+	],
+	"sectors": [
+		{
+			"slug": "education",
+			"name": "Education",
+			"series": [
+				[
+					2020,
+					35393606646.15
+				],
+				[
+					2021,
+					44822874122.08
+				],
+				[
+					2022,
+					46708853039.88
+				],
+				[
+					2023,
+					49950334836
+				],
+				[
+					2024,
+					53309068499
+				],
+				[
+					2025,
+					57839990900
+				],
+				[
+					2026,
+					49115060866
+				]
+			]
+		},
+		{
+			"slug": "lump-sum-special-purpose-fund",
+			"name": "Special Purpose Fund",
+			"series": [
+				[
+					2020,
+					15054411490.44
+				],
+				[
+					2021,
+					6740939000.93
+				],
+				[
+					2022,
+					11883094115.9
+				],
+				[
+					2023,
+					11513467361
+				],
+				[
+					2024,
+					10369153898
+				],
+				[
+					2025,
+					8538710019.24
+				],
+				[
+					2026,
+					45262680251.9
+				]
+			]
+		},
+		{
+			"slug": "infrastructure",
+			"name": "Infrastructure",
+			"series": [
+				[
+					2020,
+					4543488892.3
+				],
+				[
+					2021,
+					30944403561.11
+				],
+				[
+					2022,
+					32908592665.47
+				],
+				[
+					2023,
+					32213009384
+				],
+				[
+					2024,
+					35832450819
+				],
+				[
+					2025,
+					21708296039
+				],
+				[
+					2026,
+					28109163374
+				]
+			]
+		},
+		{
+			"slug": "health",
+			"name": "Health",
+			"series": [
+				[
+					2020,
+					3504676674.38
+				],
+				[
+					2021,
+					9777419643.26
+				],
+				[
+					2022,
+					8776449171.86
+				],
+				[
+					2023,
+					11312394423
+				],
+				[
+					2024,
+					12924257440
+				],
+				[
+					2025,
+					14480499966
+				],
+				[
+					2026,
+					16902704738
+				]
+			]
+		},
+		{
+			"slug": "social-protection-welfare",
+			"name": "Social Protection & Welfare",
+			"series": [
+				[
+					2020,
+					3844060156.95
+				],
+				[
+					2021,
+					5277972683.19
+				],
+				[
+					2022,
+					4423130193.81
+				],
+				[
+					2023,
+					4524025871
+				],
+				[
+					2024,
+					5384094527
+				],
+				[
+					2025,
+					6324114743
+				],
+				[
+					2026,
+					12173332171
+				]
+			]
+		},
+		{
+			"slug": "governance-public-administration",
+			"name": "Governance & Public Administration",
+			"series": [
+				[
+					2020,
+					11242620164.83
+				],
+				[
+					2021,
+					16479605514.09
+				],
+				[
+					2022,
+					10072426575.88
+				],
+				[
+					2023,
+					7183823345
+				],
+				[
+					2024,
+					5473710969
+				],
+				[
+					2025,
+					5094469707
+				],
+				[
+					2026,
+					11966686084
+				]
+			]
+		},
+		{
+			"slug": "local-government-support",
+			"name": "Local Government Support",
+			"series": [
+				[
+					2020,
+					1885295272.67
+				],
+				[
+					2021,
+					3222231932.98
+				],
+				[
+					2022,
+					5017693335.41
+				],
+				[
+					2023,
+					4654260065
+				],
+				[
+					2024,
+					11485723146
+				],
+				[
+					2025,
+					12378786620
+				],
+				[
+					2026,
+					7731979546
+				]
+			]
+		},
+		{
+			"slug": "disaster-risk-reduction-emergency-response",
+			"name": "Disaster Risk Reduction & Emergency Response",
+			"series": [
+				[
+					2020,
+					2575315000
+				],
+				[
+					2021,
+					3159327396
+				],
+				[
+					2022,
+					2932366040.88
+				],
+				[
+					2023,
+					3165423972
+				],
+				[
+					2024,
+					3194472805
+				],
+				[
+					2025,
+					4955264631
+				],
+				[
+					2026,
+					4719990368
+				]
+			]
+		},
+		{
+			"slug": "legislation-parliament",
+			"name": "Legislation & Parliament",
+			"series": [
+				[
+					2020,
+					2514980742.44
+				],
+				[
+					2021,
+					3025827931
+				],
+				[
+					2022,
+					1869838773.28
+				],
+				[
+					2023,
+					1933840000
+				],
+				[
+					2024,
+					3598777140
+				],
+				[
+					2025,
+					3953301039
+				],
+				[
+					2026,
+					4597786130
+				]
+			]
+		},
+		{
+			"slug": "personnel-pensions-benefits",
+			"name": "Personnel, Pensions & Benefits",
+			"series": [
+				[
+					2020,
+					9586644795.21
+				],
+				[
+					2021,
+					2060841404.35
+				],
+				[
+					2022,
+					1003490086.21
+				],
+				[
+					2023,
+					2915897093
+				],
+				[
+					2024,
+					3824723811
+				],
+				[
+					2025,
+					3885744894
+				],
+				[
+					2026,
+					4468857075
+				]
+			]
+		},
+		{
+			"slug": "islamic-affairs-religious-services",
+			"name": "Islamic Affairs & Religious Services",
+			"series": [
+				[
+					2020,
+					454951400
+				],
+				[
+					2021,
+					2360495099.04
+				],
+				[
+					2022,
+					2440768294.21
+				],
+				[
+					2023,
+					2533363358
+				],
+				[
+					2024,
+					3366874764
+				],
+				[
+					2025,
+					4021112661
+				],
+				[
+					2026,
+					4157614014
+				]
+			]
+		},
+		{
+			"slug": "senior-citizens-pwds",
+			"name": "Senior Citizens & PWDs",
+			"series": [
+				[
+					2020,
+					199104640
+				],
+				[
+					2021,
+					215460650
+				],
+				[
+					2022,
+					248570357.36
+				],
+				[
+					2023,
+					267594302
+				],
+				[
+					2024,
+					344925376
+				],
+				[
+					2025,
+					340209420
+				],
+				[
+					2026,
+					1475707086
+				]
+			]
+		},
+		{
+			"slug": "children-family",
+			"name": "Children & Family",
+			"series": [
+				[
+					2020,
+					1032227424.84
+				],
+				[
+					2021,
+					1211009319.74
+				],
+				[
+					2022,
+					1357512972.2
+				],
+				[
+					2023,
+					1584800224
+				],
+				[
+					2024,
+					1469905263
+				],
+				[
+					2025,
+					1628050786
+				],
+				[
+					2026,
+					1393411422
+				]
+			]
+		},
+		{
+			"slug": "peace-security-conflict-resolution",
+			"name": "Peace, Security & Conflict Resolution",
+			"series": [
+				[
+					2020,
+					2903329547.2
+				],
+				[
+					2021,
+					5136553071.04
+				],
+				[
+					2022,
+					2612076876.9
+				],
+				[
+					2023,
+					169090676
+				],
+				[
+					2024,
+					254879167
+				],
+				[
+					2025,
+					373520196
+				],
+				[
+					2026,
+					1352222170
+				]
+			]
+		},
+		{
+			"slug": "livelihood-employment",
+			"name": "Livelihood & Employment",
+			"series": [
+				[
+					2020,
+					225122321.64
+				],
+				[
+					2021,
+					446873717.86
+				],
+				[
+					2022,
+					367808723.03
+				],
+				[
+					2023,
+					388038729
+				],
+				[
+					2024,
+					663044001
+				],
+				[
+					2025,
+					760865999
+				],
+				[
+					2026,
+					1160970376
+				]
+			]
+		},
+		{
+			"slug": "agriculture-fisheries-agrarian-reform",
+			"name": "Agriculture, Fisheries & Agrarian Reform",
+			"series": [
+				[
+					2020,
+					1068360382.52
+				],
+				[
+					2021,
+					1864104035.5
+				],
+				[
+					2022,
+					1643783944.19
+				],
+				[
+					2023,
+					1420598242
+				],
+				[
+					2024,
+					1184237101
+				],
+				[
+					2025,
+					1265370300
+				],
+				[
+					2026,
+					1075089855
+				]
+			]
+		},
+		{
+			"slug": "scholarships-grants",
+			"name": "Scholarships & Grants",
+			"series": [
+				[
+					2020,
+					341024202.21
+				],
+				[
+					2021,
+					205606350
+				],
+				[
+					2022,
+					258452790
+				],
+				[
+					2023,
+					343653290
+				],
+				[
+					2024,
+					456791250
+				],
+				[
+					2025,
+					576851500
+				],
+				[
+					2026,
+					884789395
+				]
+			]
+		},
+		{
+			"slug": "housing-human-settlements",
+			"name": "Housing & Human Settlements",
+			"series": [
+				[
+					2020,
+					94355427.5
+				],
+				[
+					2021,
+					873700591.25
+				],
+				[
+					2022,
+					814359767.65
+				],
+				[
+					2023,
+					111318255
+				],
+				[
+					2024,
+					1012461103
+				],
+				[
+					2025,
+					476556076
+				],
+				[
+					2026,
+					807805905
+				]
+			]
+		},
+		{
+			"slug": "capacity-building-training",
+			"name": "Capacity Building & Training",
+			"series": [
+				[
+					2020,
+					4600000
+				],
+				[
+					2021,
+					151854036.55
+				],
+				[
+					2022,
+					264496163.56
+				],
+				[
+					2023,
+					601596515
+				],
+				[
+					2024,
+					728534863
+				],
+				[
+					2025,
+					617159566
+				],
+				[
+					2026,
+					807382701
+				]
+			]
+		},
+		{
+			"slug": "trade-investment-tourism",
+			"name": "Trade, Investment & Tourism",
+			"series": [
+				[
+					2020,
+					382702746.81
+				],
+				[
+					2021,
+					546004976.97
+				],
+				[
+					2022,
+					452316263.63
+				],
+				[
+					2023,
+					432179013
+				],
+				[
+					2024,
+					487452316
+				],
+				[
+					2025,
+					549303343
+				],
+				[
+					2026,
+					694319476
+				]
+			]
+		},
+		{
+			"slug": "science-technology-innovation",
+			"name": "Science, Technology & Innovation",
+			"series": [
+				[
+					2020,
+					161403970.26
+				],
+				[
+					2021,
+					255973982.44
+				],
+				[
+					2022,
+					126029769.68
+				],
+				[
+					2023,
+					222880041
+				],
+				[
+					2024,
+					294843251
+				],
+				[
+					2025,
+					363237901
+				],
+				[
+					2026,
+					538174220
+				]
+			]
+		},
+		{
+			"slug": "youth",
+			"name": "Youth",
+			"series": [
+				[
+					2020,
+					242962172.96
+				],
+				[
+					2021,
+					243488359.5
+				],
+				[
+					2022,
+					180818143.91
+				],
+				[
+					2023,
+					202377857
+				],
+				[
+					2024,
+					405891600
+				],
+				[
+					2025,
+					457358376
+				],
+				[
+					2026,
+					534722920
+				]
+			]
+		},
+		{
+			"slug": "transportation",
+			"name": "Transportation",
+			"series": [
+				[
+					2020,
+					196017083.4
+				],
+				[
+					2021,
+					1037452738.32
+				],
+				[
+					2022,
+					331836585.75
+				],
+				[
+					2023,
+					350097566
+				],
+				[
+					2024,
+					444825457
+				],
+				[
+					2025,
+					560249220
+				],
+				[
+					2026,
+					382927270
+				]
+			]
+		},
+		{
+			"slug": "marawi-rehabilitation",
+			"name": "Marawi Rehabilitation",
+			"series": [
+				[
+					2020,
+					500000000
+				],
+				[
+					2021,
+					517322748
+				],
+				[
+					2022,
+					518151342
+				],
+				[
+					2023,
+					520455782
+				],
+				[
+					2024,
+					541007995
+				],
+				[
+					2025,
+					300195314
+				],
+				[
+					2026,
+					305088800
+				]
+			]
+		},
+		{
+			"slug": "environment-natural-resources-energy",
+			"name": "Environment, Natural Resources & Energy",
+			"series": [
+				[
+					2020,
+					154740480.16
+				],
+				[
+					2021,
+					675153248.51
+				],
+				[
+					2022,
+					308740177.06
+				],
+				[
+					2023,
+					176639459
+				],
+				[
+					2024,
+					253445637
+				],
+				[
+					2025,
+					305414410
+				],
+				[
+					2026,
+					301728670
+				]
+			]
+		},
+		{
+			"slug": "public-financial-management-revenue",
+			"name": "Public Financial Management & Revenue",
+			"series": [
+				[
+					2020,
+					565326069.82
+				],
+				[
+					2021,
+					532358627.49
+				],
+				[
+					2022,
+					532293304.25
+				],
+				[
+					2023,
+					199547109
+				],
+				[
+					2024,
+					228814989
+				],
+				[
+					2025,
+					238420117
+				],
+				[
+					2026,
+					250630984
+				]
+			]
+		},
+		{
+			"slug": "planning-research-m-e",
+			"name": "Planning, Research & M&E",
+			"series": [
+				[
+					2020,
+					598725916.02
+				],
+				[
+					2021,
+					260905540.12
+				],
+				[
+					2022,
+					204898372.8
+				],
+				[
+					2023,
+					193183592
+				],
+				[
+					2024,
+					275060821
+				],
+				[
+					2025,
+					261183618
+				],
+				[
+					2026,
+					249715025
+				]
+			]
+		},
+		{
+			"slug": "legal-justice-shari-ah",
+			"name": "Legal, Justice & Shari'ah",
+			"series": [
+				[
+					2020,
+					63530597.36
+				],
+				[
+					2021,
+					238496378.83
+				],
+				[
+					2022,
+					297557562.68
+				],
+				[
+					2023,
+					87173443
+				],
+				[
+					2024,
+					163582753
+				],
+				[
+					2025,
+					208830160
+				],
+				[
+					2026,
+					245415178
+				]
+			]
+		},
+		{
+			"slug": "digitalization-ict",
+			"name": "Digitalization & ICT",
+			"series": [
+				[
+					2020,
+					69142021.52
+				],
+				[
+					2021,
+					138559209.04
+				],
+				[
+					2022,
+					106570978.48
+				],
+				[
+					2023,
+					173175088
+				],
+				[
+					2024,
+					252520165
+				],
+				[
+					2025,
+					263514738
+				],
+				[
+					2026,
+					233931756
+				]
+			]
+		},
+		{
+			"slug": "nutrition-feeding",
+			"name": "Nutrition & Feeding",
+			"series": [
+				[
+					2020,
+					336000000
+				],
+				[
+					2021,
+					23045727.76
+				],
+				[
+					2022,
+					27771911.76
+				],
+				[
+					2023,
+					26854204
+				],
+				[
+					2024,
+					158610199
+				],
+				[
+					2025,
+					141269358
+				],
+				[
+					2026,
+					200567138
+				]
+			]
+		},
+		{
+			"slug": "women-gender",
+			"name": "Women & Gender",
+			"series": [
+				[
+					2020,
+					127131672.96
+				],
+				[
+					2021,
+					205319732.5
+				],
+				[
+					2022,
+					95444019.38
+				],
+				[
+					2023,
+					60974449
+				],
+				[
+					2024,
+					135137301
+				],
+				[
+					2025,
+					104267780
+				],
+				[
+					2026,
+					179792501
+				]
+			]
+		},
+		{
+			"slug": "culture-heritage-history",
+			"name": "Culture, Heritage & History",
+			"series": [
+				[
+					2020,
+					166205489.73
+				],
+				[
+					2021,
+					67258300.4
+				],
+				[
+					2022,
+					504895561
+				],
+				[
+					2023,
+					107725199
+				],
+				[
+					2024,
+					127642545
+				],
+				[
+					2025,
+					127785883
+				],
+				[
+					2026,
+					128170680
+				]
+			]
+		},
+		{
+			"slug": "sports",
+			"name": "Sports",
+			"series": [
+				[
+					2020,
+					85123805.74
+				],
+				[
+					2021,
+					37850000
+				],
+				[
+					2022,
+					74698007.59
+				],
+				[
+					2023,
+					58325050
+				],
+				[
+					2024,
+					68376850
+				],
+				[
+					2025,
+					93827012
+				],
+				[
+					2026,
+					121546647
+				]
+			]
+		},
+		{
+			"slug": "water-sanitation-hygiene",
+			"name": "Water, Sanitation & Hygiene",
+			"series": [
+				[
+					2020,
+					2787000
+				],
+				[
+					2021,
+					538018916.02
+				],
+				[
+					2022,
+					738101400
+				],
+				[
+					2023,
+					158894000
+				],
+				[
+					2024,
+					360054250
+				],
+				[
+					2025,
+					427519400
+				],
+				[
+					2026,
+					121280000
+				]
+			]
+		},
+		{
+			"slug": "internally-displaced-persons-settlers",
+			"name": "Internally Displaced Persons & Settlers",
+			"series": [
+				[
+					2023,
+					16425252
+				],
+				[
+					2024,
+					17118680
+				],
+				[
+					2025,
+					52606349
+				],
+				[
+					2026,
+					76749188
+				]
+			]
+		},
+		{
+			"slug": "communications-media-public-information",
+			"name": "Communications, Media & Public Information",
+			"series": [
+				[
+					2020,
+					2040000
+				],
+				[
+					2021,
+					44782758.15
+				],
+				[
+					2022,
+					66208277.08
+				],
+				[
+					2023,
+					61879135
+				],
+				[
+					2024,
+					79592418
+				],
+				[
+					2025,
+					72778451
+				],
+				[
+					2026,
+					74225362
+				]
+			]
+		},
+		{
+			"slug": "indigenous-peoples",
+			"name": "Indigenous Peoples",
+			"series": [
+				[
+					2020,
+					111990199.78
+				],
+				[
+					2021,
+					149085494.09
+				],
+				[
+					2022,
+					93548732.89
+				],
+				[
+					2023,
+					31328735
+				],
+				[
+					2024,
+					49013363
+				],
+				[
+					2025,
+					43013998
+				],
+				[
+					2026,
+					36293594
+				]
+			]
+		}
+	],
+	"areas": [
+		{
+			"slug": "maguindanao",
+			"name": "Maguindanao",
+			"series": [
+				[
+					2020,
+					735120000
+				],
+				[
+					2021,
+					4334610000
+				],
+				[
+					2022,
+					4270970000
+				]
+			]
+		},
+		{
+			"slug": "sulu",
+			"name": "Sulu",
+			"series": [
+				[
+					2020,
+					488500000
+				],
+				[
+					2021,
+					2673100000
+				],
+				[
+					2022,
+					2751050000
+				]
+			]
+		},
+		{
+			"slug": "lanao-del-sur",
+			"name": "Lanao del Sur",
+			"series": [
+				[
+					2020,
+					1599000000
+				],
+				[
+					2021,
+					3805717000
+				],
+				[
+					2022,
+					4017890000
+				],
+				[
+					2024,
+					4444700000
+				],
+				[
+					2025,
+					2639160000
+				],
+				[
+					2026,
+					1404010000
+				]
+			]
+		},
+		{
+			"slug": "maguindanao-del-sur",
+			"name": "Maguindanao del Sur",
+			"series": [
+				[
+					2024,
+					2902400000
+				],
+				[
+					2025,
+					1266280000
+				],
+				[
+					2026,
+					760390000
+				]
+			]
+		},
+		{
+			"slug": "maguindanao-del-norte",
+			"name": "Maguindanao del Norte",
+			"series": [
+				[
+					2024,
+					2019070000
+				],
+				[
+					2025,
+					1221240000
+				],
+				[
+					2026,
+					652520000
+				]
+			]
+		},
+		{
+			"slug": "tawi-tawi",
+			"name": "Tawi-Tawi",
+			"series": [
+				[
+					2020,
+					306500000
+				],
+				[
+					2021,
+					1522000000
+				],
+				[
+					2022,
+					1784210000
+				],
+				[
+					2023,
+					10806355000
+				],
+				[
+					2024,
+					1247800000
+				],
+				[
+					2025,
+					848270000
+				],
+				[
+					2026,
+					648680000
+				]
+			]
+		},
+		{
+			"slug": "basilan",
+			"name": "Basilan",
+			"series": [
+				[
+					2020,
+					260000000
+				],
+				[
+					2021,
+					1189400000
+				],
+				[
+					2022,
+					1390680000
+				],
+				[
+					2023,
+					3785160000
+				],
+				[
+					2024,
+					4102100000
+				],
+				[
+					2025,
+					2120990000
+				],
+				[
+					2026,
+					627650000
+				]
+			]
+		},
+		{
+			"slug": "region-wide",
+			"name": "Region-wide",
+			"series": [
+				[
+					2025,
+					520000000
+				]
+			]
+		},
+		{
+			"slug": "special-geographic-area",
+			"name": "Special Geographic Area",
+			"series": [
+				[
+					2021,
+					1480160000
+				],
+				[
+					2022,
+					1005900000
+				],
+				[
+					2024,
+					1136070000
+				],
+				[
+					2025,
+					840510000
+				],
+				[
+					2026,
+					469100000
+				]
+			]
+		},
+		{
+			"slug": "cotabato-city",
+			"name": "Cotabato City",
+			"series": [
+				[
+					2022,
+					338100000
+				],
+				[
+					2023,
+					475000000
+				],
+				[
+					2024,
+					434950000
+				],
+				[
+					2025,
+					740250000
+				],
+				[
+					2026,
+					205510000
+				]
+			]
+		}
+	]
+}

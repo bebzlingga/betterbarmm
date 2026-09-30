@@ -22,7 +22,7 @@ import { EASE } from '@betterbarmm/editorial'
  * the near-and-far.
  *
  * `alt=""` throughout. The photographs are decorative here; every one of them
- * appears again inside Discover with its caption, its credit, and its licence.
+ * appears again inside Discover with its caption, its credit, and its license.
  */
 export function PhotoCluster({
   photos,

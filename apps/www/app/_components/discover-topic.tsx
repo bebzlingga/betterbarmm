@@ -4,7 +4,7 @@ import {
 	type DiscoverBarmmPeopleGroup,
 	type DiscoverBarmmTimelineEvent,
 	type DiscoverBarmmTopic,
-} from './discover-barmm-data'
+} from '@betterbarmm/primer-data'
 import { PhotoFigure, PhotoFrame } from './discover-figure'
 import { COL_SPAN, packRows } from './discover-grid'
 import { DiscoverLguGuide } from './discover-lgu-guide'
@@ -340,7 +340,7 @@ export function DiscoverTopicBody({
  *
  * The cards with pictures lead — a reader arriving at a wall of twenty
  * institutions needs somewhere for the eye to land first, and a building they
- * can recognise does that better than the first alphabetical entry. The rest
+ * can recognize does that better than the first alphabetical entry. The rest
  * follow as a dense text grid, which is the right form for a directory.
  */
 function DetailCards({
@@ -499,7 +499,7 @@ function PeopleGroups({
 
 								<Rise delay={0.08} distance={14}>
 									{/* The count leads and the number closes the row, ranged right against
-									    the column's own edge. `.bb-kicker` colours its first child brass —
+									    the column's own edge. `.bb-kicker` colors its first child brass —
 									    that is the number wherever this appears — so the order in the
 									    markup stays as it was and the two are placed by the flex rules
 									    instead. */}

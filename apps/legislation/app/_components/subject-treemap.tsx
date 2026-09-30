@@ -20,10 +20,10 @@ import type { FilterOption } from '../_lib/legislation-data'
    better on a square than on a splinter, and an unsquarified treemap is a row
    of slivers a reader cannot compare at all.
 
-   Colour is four shades of the register's own crimson, mixed from the accent
+   Color is four shades of the register's own blue, mixed from the accent
    into the page's ground and stepped by rank rather than given a hue per
    subject. Fifteen hues is three times what any palette can keep apart under
-   normal vision, let alone deuteranopia; one colour, deeper for larger, says
+   normal vision, let alone deuteranopia; one color, deeper for larger, says
    the same thing and stays legible. Area is still the measurement — the shades
    only agree with it.
 
@@ -148,7 +148,7 @@ export function SubjectTreemap({ items }: { items: FilterOption[] }) {
 		<div>
 			<dl className='tm relative aspect-[8/5] w-full'>
 				{tiles.map((tile) => {
-					const labelled = fitsLabel(tile)
+					const labeled = fitsLabel(tile)
 
 					return (
 						<div
@@ -166,8 +166,8 @@ export function SubjectTreemap({ items }: { items: FilterOption[] }) {
 							    ground rather than by drawing a border — a stroke would add ink
 							    that is not data. */}
 							<div className={`tm-tile tm-${tile.step} absolute inset-px flex flex-col p-2.5`}>
-								<dt className={labelled ? 'tm-label' : 'sr-only'}>{tile.label}</dt>
-								<dd className={labelled ? 'tm-value num mt-auto' : 'sr-only'}>{tile.value}</dd>
+								<dt className={labeled ? 'tm-label' : 'sr-only'}>{tile.label}</dt>
+								<dd className={labeled ? 'tm-value num mt-auto' : 'sr-only'}>{tile.value}</dd>
 							</div>
 						</div>
 					)
@@ -176,7 +176,7 @@ export function SubjectTreemap({ items }: { items: FilterOption[] }) {
 
 			{/* The tail, in words. A tile too small for its own name is still a
 			    subject somebody legislated on, and leaving it as an unnamed chip of
-			    colour would be the treemap keeping a secret. */}
+			    color would be the treemap keeping a secret. */}
 			{unlabelled.length > 0 ? (
 				<p aria-hidden='true' className='mt-5 bb-body text-[var(--ink-3)]'>
 					<span className='font-semibold text-[var(--ink-2)]'>Smallest first:</span>{' '}

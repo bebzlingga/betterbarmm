@@ -5,7 +5,7 @@ import { CtaAction, CtaPanel, LineReveal, Rise } from '@betterbarmm/editorial'
 import {
 	discoverBarmmTopics,
 	type DiscoverBarmmTopic,
-} from '../_components/discover-barmm-data'
+} from '@betterbarmm/primer-data'
 import { PhotoFrame } from '../_components/discover-figure'
 import { DiscoverGallery } from '../_components/discover-gallery'
 import { DiscoverHero } from '../_components/discover-hero'

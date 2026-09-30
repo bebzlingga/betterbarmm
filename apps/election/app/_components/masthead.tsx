@@ -1,4 +1,4 @@
-import { Counter, LineReveal, OkirBloom, Rise } from '@betterbarmm/editorial'
+import { Counter, LineReveal, Rise } from '@betterbarmm/editorial'
 
 export type MastheadFact = {
 	value: number | string
@@ -40,12 +40,12 @@ type MastheadProps = {
 /**
  * The head of every page in this workspace.
  *
- * It used to be a crimson band with a hand-set type scale that ran to 8rem,
- * which is a size the rest of the estate does not have and a colour it spends
+ * It used to be a brand band with a hand-set type scale that ran to 8rem,
+ * which is a size the rest of the estate does not have and a color it spends
  * once, at the foot of the page, on the one ask. This is the same masthead the
- * landing site and the other workspaces open with: paper ground, okir bloom
- * behind it, the headline on the shared display scale, and the figures on a
- * brass rule rather than in six bordered boxes.
+ * landing site and the other workspaces open with: paper ground, the headline
+ * on the shared display scale, and the figures on a brass rule rather than in
+ * six bordered boxes.
  */
 export function Masthead({
 	label,
@@ -57,14 +57,15 @@ export function Masthead({
 	children,
 }: MastheadProps) {
 	return (
-		<section className='bb-lattice relative overflow-hidden'>
-			<OkirBloom
-				variant='tally'
-				className='absolute -right-[14%] -top-[38%] size-[min(44rem,86vw)] opacity-[0.15]'
-			/>
+		/* Every page in the workspace opens on the brand crimson (user decision).
+		   `bb-crimson` re-points every token this component reads — ink, brass,
+		   rules, the accent — so the label, the display lines, the standfirst and
+		   the figures on their rule all restyle themselves without one inverted
+		   variant written here. */
+		<section className='bb-crimson bb-lattice relative overflow-hidden'>
 			<span aria-hidden='true' className='bb-glow absolute -right-[10%] -top-[20%] size-[34rem]' />
 
-			<div className='bb-container relative pb-16 pt-16 lg:pb-24 lg:pt-24'>
+			<div className='bb-container masthead-band relative'>
 				<Rise distance={14}>
 					<p className='bb-label'>{label}</p>
 				</Rise>
@@ -97,7 +98,7 @@ export function Masthead({
 				    something stranded below it. Ranged right of the same line, the
 				    reader takes in what there is and what to do with it together.
 
-				    Centred against the figures rather than sat on their baseline. A
+				    Centerd against the figures rather than sat on their baseline. A
 				    figure is a tall block — a label, a numeral and a caption — and a
 				    button aligned to the bottom of one hangs off the end of the row
 				    instead of belonging to it.
@@ -111,7 +112,7 @@ export function Masthead({
 							className={`mt-20 flex flex-wrap justify-between gap-x-12 gap-y-8 border-t border-[var(--brass-line)] pt-9 ${
 								// Figures with captions are tall blocks of uneven height, so the
 								// row aligns them at the top; a plain run of three numerals has
-								// nothing to rag and centres against the actions beside it.
+								// nothing to rag and centers against the actions beside it.
 								facts?.some((fact) => fact.detail) ? 'items-start' : 'items-center'
 							}`}
 						>
@@ -119,7 +120,9 @@ export function Masthead({
 								<dl
 									className={
 										facts.some((fact) => fact.detail)
-											? 'grid flex-1 gap-x-10 gap-y-8 min-[380px]:grid-cols-2 lg:grid-cols-4'
+											? `grid flex-1 gap-x-10 gap-y-8 min-[380px]:grid-cols-2 ${
+													facts.length > 3 ? 'lg:grid-cols-4' : 'lg:grid-cols-3'
+												}`
 											: 'flex flex-wrap gap-x-10 gap-y-6'
 									}
 								>
@@ -145,8 +148,14 @@ export function Masthead({
 											    account for. */}
 											<dt className='mt-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 												{fact.label}
+												{/* Wider than it was. At 16rem a caption like "Of the 13 on
+												    the regional ballot…" broke into six short lines under a
+												    two-word label, which reads as a column of fragments
+												    rather than a sentence — and the row has the width to
+												    spare now that a three-fact head takes three columns
+												    rather than three of four. */}
 												{fact.detail ? (
-													<span className='mt-2 block max-w-[16rem] font-sans text-[13px] font-normal normal-case leading-[1.5] tracking-normal text-[var(--ink-3)]'>
+													<span className='mt-2 block max-w-[22rem] font-sans text-[13px] font-normal normal-case leading-[1.5] tracking-normal text-[var(--ink-3)]'>
 														{fact.detail}
 													</span>
 												) : null}

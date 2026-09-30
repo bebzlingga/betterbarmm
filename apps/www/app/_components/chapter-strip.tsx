@@ -136,7 +136,7 @@ export function ChapterStrip({
       // exactly as the section leaves.
       style={active ? { height: `calc(100svh + ${overflow}px)` } : undefined}
       // The section rhythm belongs to the swipeable cut only. Pinned, the sticky
-      // child is a full viewport with its contents centred in it, so there is
+      // child is a full viewport with its contents centerd in it, so there is
       // already better than a hundred pixels of slack above and below the cards
       // before the section even ends — adding the standard padding on top of
       // that put four hundred pixels between the last card and the next

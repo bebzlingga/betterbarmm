@@ -17,13 +17,13 @@ import { EASE } from '@betterbarmm/editorial'
  *   · behind, a fan of loose sheets — the record as it is published, across
  *     six archives, in no order
  *   · in the middle, one document, ruled and headed, with a single line picked
- *     out in crimson — the record found
+ *     out in the accent — the record found
  *   · in front, a small plate of figures rising off it — the record made
  *     usable, which is the sentence beside it
  *
  * Line art rather than a photograph of paper: this is a diagram of what the
  * site does, and a diagram that photographs itself is just a picture of a desk.
- * The brass is the ornament and the furniture; the crimson appears exactly
+ * The amber is the ornament and the furniture; the accent appears exactly
  * twice, on the line that has been found and the bar it becomes.
  *
  * `aria-hidden` throughout. The headline beside it already says all of this.
@@ -67,9 +67,15 @@ export function HeroGraphic({ className = '' }: { className?: string }) {
 
   // Unequal on purpose. Matched speeds read as one flat plane sliding; it is
   // the difference between them that reads as depth.
-  const sheets = useTransform(scrollYProgress, [0, 1], [26, -26])
-  const doc = useTransform(scrollYProgress, [0, 1], [-34, 34])
-  const plate = useTransform(scrollYProgress, [0, 1], [58, -58])
+  //
+  // The ratios are the old ones, the distances about two thirds of them. The
+  // masthead sits on the section rhythm now and is a good deal shorter than it
+  // was, so the same travel is covered in less scroll — and a plate crossing
+  // 116px inside a band this tall stops reading as depth and starts reading as
+  // a layer coming loose.
+  const sheets = useTransform(scrollYProgress, [0, 1], [18, -18])
+  const doc = useTransform(scrollYProgress, [0, 1], [-24, 24])
+  const plate = useTransform(scrollYProgress, [0, 1], [40, -40])
 
   /** A stroke that travels rather than appears. */
   const draw = (delay: number, duration = 0.7) => ({
@@ -82,7 +88,7 @@ export function HeroGraphic({ className = '' }: { className?: string }) {
   })
 
   return (
-    <div ref={ref} aria-hidden='true' className={`relative aspect-[5/6] w-full ${className}`}>
+    <div ref={ref} aria-hidden='true' className={`hero-graphic relative aspect-[5/6] w-full ${className}`}>
       {/* The viewBox is shifted, not the geometry. Content spans x 40–536 of a
           600-wide box, so a plain `0 0 600 720` left a hundred pixels of dead
           air down the right-hand edge and the whole composition read as
@@ -100,12 +106,12 @@ export function HeroGraphic({ className = '' }: { className?: string }) {
               transform={`translate(${sheet.x} ${sheet.y}) rotate(${sheet.rotate} 117 190)`}
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9, delay: 0.15 + index * 0.12, ease: EASE }}
+              transition={{ duration: 0.7, delay: 0.08 + index * 0.09, ease: EASE }}
             >
               <path
                 d='M0 0 H234 V380 H0 Z'
-                fill='var(--paper-2)'
-                stroke='var(--rule)'
+                fill='var(--hg-panel)'
+                stroke='var(--hg-edge)'
                 strokeWidth={1.5}
               />
               <g stroke='var(--ink-3)' strokeOpacity={0.3} strokeWidth={1.5} strokeLinecap='round'>
@@ -121,13 +127,13 @@ export function HeroGraphic({ className = '' }: { className?: string }) {
         <motion.g style={reduced ? undefined : { y: doc }}>
           <motion.path
             d='M150 110 H470 V560 H150 Z'
-            fill='var(--paper)'
-            stroke='var(--ink)'
-            strokeOpacity={0.55}
+            fill='var(--hg-doc)'
+            stroke='var(--hg-edge)'
+            strokeOpacity={1}
             strokeWidth={1.8}
             initial={{ opacity: 0, clipPath: 'inset(100% 0 0 0)' }}
             animate={{ opacity: 1, clipPath: 'inset(0% 0 0 0)' }}
-            transition={{ duration: 0.9, delay: 0.4, ease: EASE }}
+            transition={{ duration: 0.7, delay: 0.26, ease: EASE }}
           />
 
           <g fill='none' strokeLinecap='round'>
@@ -137,14 +143,14 @@ export function HeroGraphic({ className = '' }: { className?: string }) {
               d='M184 150 H436'
               stroke='var(--brass)'
               strokeWidth={2.5}
-              {...draw(0.62, 0.8)}
+              {...draw(0.44, 0.55)}
             />
             <motion.path
               d='M184 182 H436'
               stroke='var(--brass)'
               strokeOpacity={0.5}
               strokeWidth={1.2}
-              {...draw(0.72, 0.8)}
+              {...draw(0.52, 0.55)}
             />
 
             <g stroke='var(--ink-3)' strokeOpacity={0.38} strokeWidth={2}>
@@ -152,7 +158,7 @@ export function HeroGraphic({ className = '' }: { className?: string }) {
                 <motion.path
                   key={y}
                   d={`M${from} ${y} H${to}`}
-                  {...draw(0.85 + index * 0.055, 0.5)}
+                  {...draw(0.58 + index * 0.035, 0.4)}
                 />
               ))}
             </g>
@@ -161,12 +167,12 @@ export function HeroGraphic({ className = '' }: { className?: string }) {
                 picture that is filled rather than drawn — found, not read. */}
             <motion.path
               d='M184 285 H372 V301 H184 Z'
-              fill='var(--accent)'
+              fill='var(--hg-mark)'
               stroke='none'
               initial={{ scaleX: 0, opacity: 0 }}
               animate={{ scaleX: 1, opacity: 1 }}
               style={{ transformBox: 'fill-box', transformOrigin: 'left center' }}
-              transition={{ duration: 0.7, delay: 1.25, ease: EASE }}
+              transition={{ duration: 0.55, delay: 0.98, ease: EASE }}
             />
 
             <motion.path
@@ -174,7 +180,7 @@ export function HeroGraphic({ className = '' }: { className?: string }) {
               stroke='var(--brass)'
               strokeOpacity={0.5}
               strokeWidth={1.2}
-              {...draw(1.4, 0.6)}
+              {...draw(0.86, 0.45)}
             />
             <motion.path
               d='M192 528 L204 540 L192 552 L180 540 Z'
@@ -183,14 +189,14 @@ export function HeroGraphic({ className = '' }: { className?: string }) {
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
-              transition={{ duration: 0.5, delay: 1.5, ease: EASE }}
+              transition={{ duration: 0.4, delay: 0.94, ease: EASE }}
             />
             <motion.path
               d='M220 540 H320'
               stroke='var(--brass)'
               strokeOpacity={0.6}
               strokeWidth={2}
-              {...draw(1.55, 0.5)}
+              {...draw(0.99, 0.4)}
             />
           </g>
         </motion.g>
@@ -200,25 +206,25 @@ export function HeroGraphic({ className = '' }: { className?: string }) {
           <motion.g
             initial={{ opacity: 0, y: 26 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 1.05, ease: EASE }}
+            transition={{ duration: 0.7, delay: 0.7, ease: EASE }}
           >
-            <path d='M40 466 H288 V672 H40 Z' fill='var(--paper-2)' stroke='none' />
+            <path d='M40 466 H288 V672 H40 Z' fill='var(--hg-panel)' stroke='none' />
             <path d='M40 466 H288' stroke='var(--brass)' strokeWidth={2} />
 
             <g fill='none' stroke='var(--brass)' strokeOpacity={0.55} strokeWidth={2}>
-              <motion.path d='M64 498 H136' {...draw(1.3, 0.45)} />
+              <motion.path d='M64 498 H136' {...draw(0.84, 0.35)} />
             </g>
 
             {BARS.map(([x, top], index) => (
               <motion.path
                 key={x}
                 d={`M${x} ${top} H${x + 30} V${BASELINE} H${x} Z`}
-                fill={index === BARS.length - 1 ? 'var(--accent)' : 'var(--brass)'}
+                fill={index === BARS.length - 1 ? 'var(--hg-mark)' : 'var(--brass)'}
                 fillOpacity={index === BARS.length - 1 ? 1 : 0.42}
                 initial={{ scaleY: 0 }}
                 animate={{ scaleY: 1 }}
                 style={{ transformBox: 'fill-box', transformOrigin: 'bottom center' }}
-                transition={{ duration: 0.7, delay: 1.35 + index * 0.1, ease: EASE }}
+                transition={{ duration: 0.55, delay: 1.06 + index * 0.07, ease: EASE }}
               />
             ))}
 
@@ -228,7 +234,7 @@ export function HeroGraphic({ className = '' }: { className?: string }) {
               stroke='var(--ink)'
               strokeOpacity={0.5}
               strokeWidth={2}
-              {...draw(1.3, 0.6)}
+              {...draw(0.84, 0.45)}
             />
           </motion.g>
         </motion.g>

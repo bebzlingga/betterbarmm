@@ -47,7 +47,7 @@ function Select({
       {/* The registry's own caret, drawn rather than typed. The ▼ this
           replaces is a text glyph: it lands at a different size and weight in
           every font a browser might fall back to, and on several platforms it
-          arrives as a colour emoji. */}
+          arrives as a color emoji. */}
       <svg
         className="pointer-events-none absolute right-3 top-1/2 size-3.5 -translate-y-1/2 text-[var(--ink-mute)]"
         viewBox="0 0 24 24"

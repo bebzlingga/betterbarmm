@@ -9,7 +9,7 @@
    illustration:
 
      · pako rabong — the growing fern, a symmetrical frond rising from
-       a base, the motif that anchors the centre of a panel
+       a base, the motif that anchors the center of a panel
      · todi — the leaf that hangs off a stem, drawn here as the small
        curve under each scroll
      · obid-obid — the running scroll, the S-curve with a spiral
@@ -25,10 +25,10 @@
    ============================================================ */
 
 /**
- * One half of the running rule, authored left of centre.
+ * One half of the running rule, authored left of center.
  *
  * The mirrored half is the same array under a `scale(-1, 1)`, which is how the
- * real thing is carved — a panolong is symmetrical about its own centre line,
+ * real thing is carved — a panolong is symmetrical about its own center line,
  * and drawing the right half by hand would guarantee the two never quite
  * matched.
  *
@@ -36,7 +36,7 @@
  * the full width of the page and stretched a 1200-unit box across it with
  * `preserveAspectRatio: none`, which squashed the fern to half its height and
  * turned a carving into a smear. The motif is now drawn at its own proportions
- * and centred, with a plain hairline carrying it out to the page edges — which
+ * and centerd, with a plain hairline carrying it out to the page edges — which
  * is how the ornament sits on an actual beam anyway.
  */
 export const OKIR_RULE_LEFT = [
@@ -50,7 +50,7 @@ export const OKIR_RULE_LEFT = [
   'M118 28 C132 30 140 38 152 38',
 ] as const
 
-/** The pako rabong at the centre: a frond and the base it rises from. */
+/** The pako rabong at the center: a frond and the base it rises from. */
 export const OKIR_RULE_CENTRE = [
   // The stem.
   'M180 46 V22',
@@ -71,7 +71,7 @@ export const OKIR_RULE_VIEWBOX = '0 0 360 64'
    happening in it without ever competing with the type on top.
 
    The first cut of this repeated a pako rabong — a stem whose tip
-   splits into two mirrored curls — six times around the centre. On its
+   splits into two mirrored curls — six times around the center. On its
    own that is the correct motif. At masthead scale, cropped by the
    edge of a section so that one arm is most of what you see, a pair of
    large mirrored lobes joined at a point reads as something else
@@ -88,7 +88,7 @@ export const OKIR_RULE_VIEWBOX = '0 0 360 64'
    ------------------------------------------------------------ */
 
 /**
- * One petal, pointing up from the centre.
+ * One petal, pointing up from the center.
  *
  * A lancet: two arcs meeting at a point at each end, so the silhouette is a
  * leaf rather than a lobe. It spans the gap between the middle and outer
@@ -104,7 +104,7 @@ export const OKIR_BLOOM_PETAL = [
 /** A stud on the inner band — the step-diamond of a woven pis siyabit. */
 export const OKIR_BLOOM_STUD = 'M200 108 L207 115 L200 122 L193 115 Z'
 
-/** The centre: a diamond with short spokes radiating off it. */
+/** The center: a diamond with short spokes radiating off it. */
 export const OKIR_BLOOM_CORE = ['M200 190 L210 200 L200 210 L190 200 Z', 'M200 182 V156'] as const
 
 export const OKIR_BLOOM_RINGS = [52, 118, 178] as const
@@ -117,7 +117,7 @@ export const OKIR_BLOOM_VIEWBOX = '0 0 400 400'
  * The medallion in each workspace's own hand.
  *
  * Same carving throughout — three rings, a repeated figure between the middle
- * and outer one, a band of studs, a spoked centre — and a different figure in
+ * and outer one, a band of studs, a spoked center — and a different figure in
  * each room. The construction, the stroke, the drawing-on and the slow turn
  * are the estate's; only what is repeated round the circle changes, which is
  * enough for two mastheads to be plainly the same workshop and plainly not the

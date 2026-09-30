@@ -180,7 +180,7 @@ def repeater(page: str, field: str) -> list[str]:
     ]
 
 
-def labelled(page: str, label: str) -> str:
+def labeled(page: str, label: str) -> str:
     """The text after a bolded "Label:" up to the next bolded label."""
     if not label:
         return ""
@@ -214,14 +214,14 @@ def parse_measure(row: dict, page: str, config: dict) -> dict:
 
     record = {
         **row,
-        "status": labelled(page, config["status_label"]) or row["status"],
+        "status": labeled(page, config["status_label"]) or row["status"],
         "principal_authors": repeater(page, config["principal_field"]),
         "co_authors": repeater(page, config["co_field"]),
         "history": history(page, config["history_label"]),
     }
 
     for key, label in config["extra_labels"].items():
-        record[key] = labelled(page, label)
+        record[key] = labeled(page, label)
 
     return record
 

@@ -46,14 +46,14 @@ export const MEMBER_PAY_FIGURES: MemberPayFigure[] = [
 /**
  * The three figures, hairline-separated.
  *
- * `centred` is for the hub, where the surrounding block runs down the middle;
+ * `centerd` is for the hub, where the surrounding block runs down the middle;
  * ranged left is the reading default everywhere else.
  */
-export function MemberPayFigures({ centred = false }: { centred?: boolean }) {
+export function MemberPayFigures({ centerd = false }: { centerd?: boolean }) {
 	return (
 		<dl
 			className={
-				centred
+				centerd
 					? 'mx-auto grid max-w-4xl gap-x-10 gap-y-8 text-left sm:grid-cols-3'
 					: 'grid gap-x-10 gap-y-8 sm:grid-cols-3'
 			}

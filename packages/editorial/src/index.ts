@@ -14,6 +14,7 @@
    ============================================================ */
 
 export * from './cta-panel'
+export * from './lang'
 export * from './motion'
 export * from './motion-provider'
 export * from './okir'
@@ -21,3 +22,4 @@ export * from './okir-paths'
 export * from './section-head'
 export * from './site-footer'
 export * from './subscribe-form'
+export * from './table-of-contents'

@@ -11,7 +11,7 @@ import { MemberAvatar } from './member-avatar'
    ============================================================ */
 
 /**
- * One labelled cell in the fact list. Several values stack as lines.
+ * One labeled cell in the fact list. Several values stack as lines.
  *
  * The label takes full ink — `label-strong` — because in this column it is a
  * heading standing on its own rather than a caption annotating a number, and

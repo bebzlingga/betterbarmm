@@ -3,7 +3,7 @@ import { SiteNav } from './site-nav'
 
 /**
  * Every page in the workspace opens and closes the same way: the estate's bar
- * at the top, the project's one ask on the crimson band at the foot, then the
+ * at the top, the project's one ask on the brand band at the foot, then the
  * footer on the dark ground. All three come from `@betterbarmm/editorial` or
  * follow it, so this workspace begins and ends exactly as the landing site and
  * the other three do — which is the point of them being shared rather than
@@ -15,7 +15,11 @@ export function ElectionShell({ children }: { children: React.ReactNode }) {
 			<SiteNav />
 			<main>{children}</main>
 
-			<CtaPanel />
+			{/* `cta-tight`: the panel pads itself with the estate's own section
+			    rhythm; this puts it on the workspace's. */}
+			<div className='cta-tight'>
+				<CtaPanel />
+			</div>
 
 			<SiteFooter
 				base='https://betterbarmm.com'
@@ -24,6 +28,7 @@ export function ElectionShell({ children }: { children: React.ReactNode }) {
 						title: 'This workspace',
 						links: [
 							{ href: 'https://election.betterbarmm.com/', label: 'The election' },
+							{ href: 'https://election.betterbarmm.com/results', label: 'The result' },
 							{ href: 'https://election.betterbarmm.com/candidates', label: 'Candidates' },
 							{ href: 'https://election.betterbarmm.com/parties/UBJP', label: 'The parties' },
 						],
@@ -46,9 +51,9 @@ export function ElectionShell({ children }: { children: React.ReactNode }) {
 						],
 					},
 				]}
-				blurb='The first regular election of the Bangsamoro Parliament, as a public record: the parties on the regional ballot, the candidates who filed in each district, the reserved seats, the dates the vote moved through — and the source behind every line of it.'
+				blurb='The first regular election of the Bangsamoro Parliament, as a public record: the parties on the regional ballot, the candidates who filed in each district, the reserved seats, the count that filled all eighty of them — and the source behind every line of it.'
 				note='The 2026 Bangsamoro Parliamentary Election'
-				bottomRight='Dataset: datasets/election/election.min.json'
+				bottomRight='Datasets: datasets/election/election.min.json, election-results.json'
 			/>
 		</div>
 	)

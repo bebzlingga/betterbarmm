@@ -25,8 +25,8 @@
 
    A tally rather than a textile: four uprights and the fifth stroke laid
    across them, tiled. It is the mark every counting in the world makes,
-   and this workspace is about a count that has not happened yet — the
-   ground says what the room is for before a word of it is read.
+   and this workspace is about a count — the ground says what the room is
+   for before a word of it is read.
 
    Everything except the tile is the estate's: the 64px scale, the
    hairline, the brass, the opacity, the mask that fades it out under the
@@ -41,4 +41,70 @@
 .bb-ground,
 .bb-crimson {
   --bb-lattice-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23d3a95f' stroke-width='1' stroke-opacity='0.34' stroke-linecap='round'%3E%3Cpath d='M8 8 V28 M16 8 V28 M24 8 V28 M32 8 V28 M4 26 L36 10'/%3E%3Cpath d='M40 36 V56 M48 36 V56 M56 36 V56'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ---- Section rhythm ------------------------------------------------------
+
+   One value for the whole workspace, ported from the budget workspace so the
+   two read as one estate rather than as two ideas of how far apart two blocks
+   should sit.
+
+   It is not `bb-section`. That clamp is applied to both edges, so between two
+   siblings it doubles — 9rem under one and 9rem over the next is 18rem of
+   white — and every seam on these pages was either that double gap or a
+   hand-set `pt-8 lg:pt-12` patched over it one section at a time. The pair of
+   rules below make the gap between two sections exactly one band, everywhere,
+   without a page having to know which of its neighbours carries what.
+
+   The divider utilities budget puts on the section alongside these are
+   deliberately not brought over: this workspace does not rule its sections
+   (user decision). */
+:root {
+  --bb-rhythm: clamp(3.75rem, 7vw, 6.5rem);
+}
+
+.section-band,
+.section-band-top,
+.section-band-bottom {
+  --band: var(--bb-rhythm);
+}
+
+/* Two sections on the same ground meet foot to head, so the rhythm arrives
+   twice. The second drops its head and the first one's foot is the whole gap.
+
+   Only between siblings that both carry a band. A section on a tinted ground
+   wraps its band on an inner div, so it never matches this and keeps the full
+   measure on both edges — which is what a change of ground wants. */
+:is(.section-band, .section-band-top, .section-band-bottom)
+	+ :is(.section-band, .section-band-top) {
+  padding-block-start: 0;
+}
+
+/* The masthead pads itself with the same value, head and foot. */
+.masthead-band {
+  padding-block: var(--bb-rhythm);
+}
+
+.section-band,
+.section-band-bottom {
+  padding-block-end: var(--band);
+}
+
+/* `.section-band` takes the rhythm on both edges. `.section-band-bottom` is
+   the foot without the head, for a section that opens flush against what
+   precedes it; `.section-band-top` is the head without the foot, for one that
+   closes tighter than the rhythm. All three read the one variable above, so
+   they cannot drift apart. */
+.section-band,
+.section-band-top {
+  padding-block-start: var(--band);
+}
+
+/* The closing panel on the workspace's own rhythm.
+
+   `CtaPanel` takes no className and pads itself with `.bb-section`, the
+   estate's 4.5–9rem. Scoped by descendant so only this workspace moves; the
+   class is on a wrapper in `election-shell.tsx`. */
+.cta-tight .bb-section {
+  padding-block: var(--bb-rhythm);
 }

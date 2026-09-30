@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { DM_Sans, Outfit } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { AskDock } from '@betterbarmm/ai/dock'
 import { MotionProvider, SiteFooter } from '@betterbarmm/editorial'
 import { themeInitScript } from './_components/theme-toggle'
 import './globals.css'
@@ -21,7 +22,7 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: 'BetterBARMM | Better Transparency. Better Governance.',
   description:
-    'A public transparency project for the Bangsamoro. Public records — elections, laws, budgets — organised into workspaces you can read, question, and trace back to the source.',
+    'A public transparency project for the Bangsamoro. Public records — elections, laws, budgets — organized into workspaces you can read, question, and trace back to the source.',
 	/* Absolute, because everything below it is relative. Without a
 	   `metadataBase` the generated card resolves to a path rather than a URL,
 	   and a platform scraping the page has nothing to fetch — which is why a
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
 		url: 'https://betterbarmm.com',
 		title: 'BetterBARMM | Better Transparency. Better Governance.',
 		description:
-			'A public transparency project for the Bangsamoro. Public records — elections, laws, budgets — organised into workspaces you can read, question, and trace back to the source.',
+			'A public transparency project for the Bangsamoro. Public records — elections, laws, budgets — organized into workspaces you can read, question, and trace back to the source.',
 	},
 
 	/* The canonical address, and permission to index it.
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
 		card: 'summary_large_image',
 		title: 'BetterBARMM | Better Transparency. Better Governance.',
 		description:
-			'A public transparency project for the Bangsamoro. Public records — elections, laws, budgets — organised into workspaces you can read, question, and trace back to the source.',
+			'A public transparency project for the Bangsamoro. Public records — elections, laws, budgets — organized into workspaces you can read, question, and trace back to the source.',
 	},
 }
 
@@ -98,6 +99,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <SiteFooter />
         </MotionProvider>
         <Analytics />
+        <AskDock />
       </body>
     </html>
   )

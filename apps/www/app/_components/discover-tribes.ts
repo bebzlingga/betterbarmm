@@ -11,7 +11,7 @@ import type { DiscoverPhotoKey } from './discover-media'
    Piaparan is Meranao. They are not variants of one dish — they belong
    to different peoples with different homelands, looms, and gongs.
 
-   So the section is organised the way the region actually is: by
+   So the section is organized the way the region actually is: by
    people. Each entry below carries what that group puts on the table,
    what it makes with its hands, and what it plays or tells — and the
    official source for each.
@@ -96,11 +96,11 @@ export const bangsamoroTribes: BangsamoroTribe[] = [
 		meaning: '“People of the Lake”',
 		homeland: 'Lanao del Sur, around Lake Lanao',
 		intro:
-			'BCPCH takes the name from the lake itself — the Meranao are the people of the 135-square-mile lake basin at the centre of Mindanao, 2,300 feet above sea level. Communities cluster around two buildings: a mosque, and a torogan, the royal house of the leading household. Their cloth is read the way a uniform is read; the intricacy of the motif and the richness of the colour state the rank of whoever is wearing it.',
+			'BCPCH takes the name from the lake itself — the Meranao are the people of the 135-square-mile lake basin at the center of Mindanao, 2,300 feet above sea level. Communities cluster around two buildings: a mosque, and a torogan, the royal house of the leading household. Their cloth is read the way a uniform is read; the intricacy of the motif and the richness of the color state the rank of whoever is wearing it.',
 		food: [
 			{
 				name: 'Randang',
-				note: 'Slow-cooked in coconut milk with spices until the meat is tender and has taken the flavour all the way through. A centrepiece of Eid’l Fitr in Lanao del Sur.',
+				note: 'Slow-cooked in coconut milk with spices until the meat is tender and has taken the flavour all the way through. A centerpiece of Eid’l Fitr in Lanao del Sur.',
 			},
 			{
 				name: 'Piaparan',
@@ -178,7 +178,7 @@ export const bangsamoroTribes: BangsamoroTribe[] = [
 			},
 			{
 				name: 'Clan patterns',
-				note: 'Plaid has become the favourite among the old patterns, and some designs are woven exclusively for particular clans. Weavers learn by watching their elders, not from a book.',
+				note: 'Plaid has become the favorite among the old patterns, and some designs are woven exclusively for particular clans. Weavers learn by watching their elders, not from a book.',
 			},
 			{
 				name: 'Riyal — pusaka a malong',
@@ -222,7 +222,7 @@ export const bangsamoroTribes: BangsamoroTribe[] = [
 		food: [
 			{
 				name: 'Tiyula itum',
-				note: 'The black soup, and the dish the whole table is built around. Its colour comes from burnt coconut meat ground into a broth of beef, ginger, turmeric, onions and lemongrass. Served on special occasions rather than on an ordinary night.',
+				note: 'The black soup, and the dish the whole table is built around. Its color comes from burnt coconut meat ground into a broth of beef, ginger, turmeric, onions and lemongrass. Served on special occasions rather than on an ordinary night.',
 			},
 			{
 				name: 'Piyanggang manok',
@@ -257,7 +257,7 @@ export const bangsamoroTribes: BangsamoroTribe[] = [
 			name: 'Darhata Sawabi',
 			title: 'Textile Weaver',
 			place: 'Parang, Jolo, Sulu',
-			note: 'Recognised by her own community of weavers for bold contrasting colours, the evenness of her weave, and her faithfulness to traditional designs — which let her price her work above the going rate.',
+			note: 'Recognized by her own community of weavers for bold contrasting colors, the evenness of her weave, and her faithfulness to traditional designs — which let her price her work above the going rate.',
 			href: 'https://bcpch.bangsamoro.gov.ph/darhata-sawabi/',
 		},
 		photos: { food: 'tiyulaItum', craft: 'pisSiyabit' },
@@ -270,7 +270,7 @@ export const bangsamoroTribes: BangsamoroTribe[] = [
 		meaning: '“Dayak origin”',
 		homeland: 'Basilan — Lamitan, Tipo-Tipo, Sumisip and Tuburan',
 		intro:
-			'BCPCH traces the Yakan to the Orang Dyaks of eastern Indonesia, and notes that they speak a dialect of the Sama language while carrying Tausug cultural influence. They farm upland rice and, unusually, do not live in compact villages — houses sit on their own plots, just out of sight of the nearest neighbour. BCPCH sums them up in one line: famous for their beautiful weaving and their colourful traditional clothes and customs.',
+			'BCPCH traces the Yakan to the Orang Dyaks of eastern Indonesia, and notes that they speak a dialect of the Sama language while carrying Tausug cultural influence. They farm upland rice and, unusually, do not live in compact villages — houses sit on their own plots, just out of sight of the nearest neighbour. BCPCH sums them up in one line: famous for their beautiful weaving and their colorful traditional clothes and customs.',
 		food: [
 			{
 				name: 'Lokot-lokot',
@@ -284,7 +284,7 @@ export const bangsamoroTribes: BangsamoroTribe[] = [
 		craft: [
 			{
 				name: 'Tennun',
-				note: 'Yakan weaving — tiny motifs, dense colour, and techniques only a seasoned weaver can attempt, with some designs restricted to a single category of cloth.',
+				note: 'Yakan weaving — tiny motifs, dense color, and techniques only a seasoned weaver can attempt, with some designs restricted to a single category of cloth.',
 			},
 			{
 				name: 'Suwah bekkat and suwah pendan',
@@ -350,7 +350,7 @@ export const bangsamoroTribes: BangsamoroTribe[] = [
 			},
 			{
 				name: 'Bawlu, panggih and mandi',
-				note: 'A fluffy golden cake for after the fast, and two more of the coloured sweets that fill a Tawi-Tawi market through Ramadhan.',
+				note: 'A fluffy golden cake for after the fast, and two more of the colored sweets that fill a Tawi-Tawi market through Ramadhan.',
 			},
 		],
 		craft: [
@@ -363,7 +363,7 @@ export const bangsamoroTribes: BangsamoroTribe[] = [
 				note: 'Mat weaving passes down the mother’s line and men in Sama culture do not take it up. Every stage, from harvesting the leaves to executing the design, belongs to women.',
 			},
 			{
-				name: 'Colour by choice',
+				name: 'Color by choice',
 				note: 'The forebears’ mats were plain white. Haja Amina Appi took up commercial anjibi dye and built the complex geometric patterns the Sama mat is now known for, backed by a plain white outer mat.',
 			},
 		],
@@ -372,7 +372,7 @@ export const bangsamoroTribes: BangsamoroTribe[] = [
 			name: 'Haja Amina Appi',
 			title: 'Mat Weaver',
 			place: 'Ungos Matata, Tandubas, Tawi-Tawi',
-			note: 'Master mat weaver of her community, recognised for a precise sense of design, proportion and symmetry, and for an unerring instinct for colour — mats that read as applied mathematics as much as craft.',
+			note: 'Master mat weaver of her community, recognized for a precise sense of design, proportion and symmetry, and for an unerring instinct for color — mats that read as applied mathematics as much as craft.',
 			href: 'https://bcpch.bangsamoro.gov.ph/haja-amina-appi/',
 		},
 		photos: { food: 'panampangan', craft: 'tepoMat' },

@@ -8,8 +8,10 @@
 		"lint": "eslint ."
 	},
 	"dependencies": {
+		"@betterbarmm/ai": "workspace:*",
 		"@betterbarmm/editorial": "workspace:*",
 		"@betterbarmm/lgu-data": "workspace:*",
+		"@betterbarmm/primer-data": "workspace:*",
 		"@betterbarmm/ui": "workspace:*",
 		"@phosphor-icons/react": "^2.1.10",
 		"@vercel/analytics": "^2.0.1",

@@ -9,7 +9,7 @@ import { EASE, Magnetic, ScrollProgress } from '@betterbarmm/editorial'
 import { ThemeToggle } from './theme-toggle'
 
 type SiteHeaderProps = {
-	activeItem?: 'discover' | 'about' | 'contribute'
+	activeItem?: 'discover' | 'jo' | 'about' | 'contribute'
 	/**
 	 * Sit over the page rather than on top of it.
 	 *
@@ -36,7 +36,7 @@ const discoverSections = [
 const workspaces = [
 	{ label: 'Election', href: 'https://election.betterbarmm.com', open: true },
 	{ label: 'Legislation', href: 'https://legislation.betterbarmm.com', open: true },
-	{ label: 'Budget', href: '/soon', open: false },
+	{ label: 'Budget', href: 'https://budget.betterbarmm.com', open: true },
 	{ label: 'Local government', href: '/soon', open: false },
 ] as const
 
@@ -200,7 +200,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 			    are not all dark: Culture & Places opens on a pale sandbar and the
 			    Discover index on the same picture, where a dimmed white lands within
 			    a few points of the sky behind it. The shadow is what makes one set
-			    of colours work over every crop — it costs nothing on a dark
+			    of colors work over every crop — it costs nothing on a dark
 			    photograph and is the whole difference on a bright one. */}
 			<div
 				className={
@@ -210,10 +210,10 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 				}
 			>
 				<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
-					{/* Three tracks so the links sit on the true centre of the header
+					{/* Three tracks so the links sit on the true center of the header
 					    rather than wherever the mark and controls leave room.
 
-					    Two on a phone, where the centre track holds a nav that is not
+					    Two on a phone, where the center track holds a nav that is not
 					    rendered at all. Three equal-ish tracks with nothing in the middle
 					    one gave the mark half the row and the controls the other half,
 					    and the mark is a fixed-width image: the moment its share fell

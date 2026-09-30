@@ -1,6 +1,7 @@
 import workspaceJson from "../../../../datasets/election/election.min.json";
 import supplementJson from "../../../../datasets/election/election-supplement.json";
 import { type Confidence, confidenceMeta } from "./confidence";
+import { getResultTimelineEvents } from "./election-results";
 
 export { type Confidence, confidenceMeta };
 
@@ -547,12 +548,19 @@ const phaseByEventType: Record<string, string> = {
   campaign_period: "Road to Election Day",
   milestone: "Road to Election Day",
   election_day: "Road to Election Day",
+  // Before the vote, not after it: the reserved indigenous seats were settled
+  // in August. Filed under the later phase it dragged Election Day itself into
+  // "the count and after", because the axis is not allowed to run backwards.
+  sectoral_selection: "Road to Election Day",
+  proclamation: "The count and after",
+  first_session: "The count and after",
 };
 
 const phaseOrder = [
   "Foundations",
   "Postponements & resets",
   "Road to Election Day",
+  "The count and after",
 ];
 
 function eventPhase(event: TimelineEvent): string {
@@ -587,9 +595,15 @@ function timeValue(value: string): number {
 }
 
 function fullTimeline(): TimelineEvent[] {
-  return [...workspace.timeline, ...supplement.timeline_additions].sort(
-    (a, b) => timeValue(a.date) - timeValue(b.date),
-  );
+  // Three sources, one axis: the workspace's own record of how the date moved,
+  // the researched supplement, and the count itself. The last of these lives in
+  // its own dataset — a pre-election file should not grow post-election events
+  // — but a reader following the story down the page needs it on the same line.
+  return [
+    ...workspace.timeline,
+    ...supplement.timeline_additions,
+    ...getResultTimelineEvents(),
+  ].sort((a, b) => timeValue(a.date) - timeValue(b.date));
 }
 
 export function getTimelineViewModel() {

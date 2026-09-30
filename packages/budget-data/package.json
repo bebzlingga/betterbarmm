@@ -4,9 +4,8 @@
 	"private": true,
 	"type": "module",
 	"exports": {
-		".": "./src/index.ts"
-	},
-	"dependencies": {
-		"@betterbarmm/schemas": "workspace:*"
+		".": "./src/index.ts",
+		"./years": "./src/years.ts",
+		"./trends": "./src/trends.ts"
 	}
 }

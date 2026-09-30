@@ -49,7 +49,7 @@ export default function SoonPage() {
 				label='Not open yet'
 				lines={['This workspace is', 'still being compiled.']}
 				muted={[1]}
-				standfirst='The records behind it are being read, checked and organised, and it opens when they are ready rather than when a date arrives. Nothing here is hidden — it is unfinished, which is a different thing, and this page exists to say which.'
+				standfirst='The records behind it are being read, checked and organized, and it opens when they are ready rather than when a date arrives. Nothing here is hidden — it is unfinished, which is a different thing, and this page exists to say which.'
 			>
 				<Link href='/discover' className='bb-btn bb-btn-solid'>
 					Discover BARMM

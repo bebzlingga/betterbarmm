@@ -198,7 +198,7 @@ export function LineReveal({
   gap?: number
   className?: string
   /**
-   * Applied to each line — for a per-line colour, or an outlined second line.
+   * Applied to each line — for a per-line color, or an outlined second line.
    *
    * A string covers every line; an array addresses them one at a time, with a
    * hole where a line takes nothing. It is deliberately not a callback: this is
@@ -305,7 +305,7 @@ export function WordReveal({
  *
  * `offset: ['start end', 'end start']` measures the whole time the element is
  * anywhere in the viewport, so the drift is spread over the full pass rather
- * than crammed into the moment it is centred.
+ * than crammed into the moment it is centerd.
  *
  * The travel is deliberately small. Parallax reads as depth up to about 15% of
  * an element's height and as a bug past it — a photograph that visibly slides
@@ -317,7 +317,7 @@ export function Parallax({
   className,
 }: {
   children: ReactNode
-  /** Total px travelled across the full pass. Negative reverses the direction. */
+  /** Total px traveled across the full pass. Negative reverses the direction. */
   distance?: number
   className?: string
 }) {
@@ -423,7 +423,7 @@ export function Magnetic({
   className,
 }: {
   children: ReactNode
-  /** Fraction of the pointer's offset from centre that the element follows. */
+  /** Fraction of the pointer's offset from center that the element follows. */
   strength?: number
   className?: string
 }) {

@@ -45,9 +45,9 @@ export function PersonAvatar({
 	 * Whose plate this is, where the person is running under a party.
 	 *
 	 * Without a portrait the plate used to take one of four house tints off a
-	 * hash of the name, which is a colour that means nothing — two people from
-	 * the same party could sit in the same list wearing different colours. The
-	 * party's own colour puts them together, and a candidate with no party
+	 * hash of the name, which is a color that means nothing — two people from
+	 * the same party could sit in the same list wearing different colors. The
+	 * party's own color puts them together, and a candidate with no party
 	 * falls back to the house tints, which is itself the fact.
 	 */
 	partyId?: string | null
@@ -74,11 +74,11 @@ export function PersonAvatar({
 		)
 	}
 
-	/* Their party's colour, or a quiet neutral where there is no party.
+	/* Their party's color, or a quiet neutral where there is no party.
 	 *
 	 * The fallback used to be one of four house tints hashed off the name —
 	 * `--slate` and `--positive` among them, which are a near-black navy and a
-	 * dark olive. Beside the party colours they read as somebody's colour rather
+	 * dark olive. Beside the party colors they read as somebody's color rather
 	 * than as nobody's, and they were the darkest thing on a page of hairlines.
 	 * An unpainted plate says the true thing: this person is running without a
 	 * party behind them, or under one this workspace has not linked yet. */
@@ -107,14 +107,14 @@ export function PersonAvatar({
  * A party, as an emblem where one is publishable and a lettered plate where
  * it is not.
  *
- * The plate is one letter on the party's own colour. It carried the whole
+ * The plate is one letter on the party's own color. It carried the whole
  * ballot name, which for the longer entries meant six or seven characters
  * stepped down to nine points inside a square — small type in a box, read as
  * neither a mark nor a name. A single letter at plate size is a mark, and the
- * colour under it is what actually identifies the party: the same colour the
+ * color under it is what actually identifies the party: the same color the
  * card, the party's page and its candidates' plates all carry.
  *
- * Two parties can share a first letter; they never share a colour, and the
+ * Two parties can share a first letter; they never share a color, and the
  * ballot name is set beside the plate in every place this appears.
  */
 export function PartyMark({

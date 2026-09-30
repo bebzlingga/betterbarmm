@@ -99,7 +99,7 @@ export function WorkspaceIndex({ workspaces }: { workspaces: Workspace[] }) {
 							</span>
 
 							<span
-								className={`mt-9 block text-[2rem] font-extrabold leading-none tracking-[-0.035em] transition duration-500 lg:text-[2.25rem] ${
+								className={`mt-9 block text-[2rem] font-extrabold leading-none tracking-[-0.035em] transition duration-200 lg:text-[2.25rem] ${
 									workspace.href
 										? 'text-[var(--ink)] group-hover:text-[var(--accent)]'
 										: 'text-[var(--ink-display)]'
@@ -122,7 +122,7 @@ export function WorkspaceIndex({ workspaces }: { workspaces: Workspace[] }) {
 
 								{workspace.href ? (
 									<ArrowUpRightIcon
-										className='size-4 shrink-0 text-[var(--ink-3)] transition duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--accent)]'
+										className='size-4 shrink-0 text-[var(--ink-3)] transition duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--accent)]'
 										aria-hidden='true'
 									/>
 								) : null}
@@ -130,8 +130,16 @@ export function WorkspaceIndex({ workspaces }: { workspaces: Workspace[] }) {
 						</>
 					)
 
-					const className =
-						'group flex h-full flex-col border-l border-t border-[var(--rule)] p-7 transition hover:bg-[var(--paper-2)] lg:p-8'
+					/* `duration-200` on the ground and the rule, not the 500 that was
+					   here: a hover is an answer, and half a second of easing on one
+					   reads as the page thinking about it. The top edge takes the accent
+					   so the crimson that opens the page comes back down it — before
+					   this it was the masthead's color and nothing else's. */
+					const className = `group flex h-full flex-col border-l border-t border-[var(--rule)] p-7 transition duration-200 lg:p-8 ${
+						workspace.href
+							? 'hover:border-t-[var(--accent)] hover:bg-[var(--paper-2)]'
+							: ''
+					}`
 
 					return (
 						<StaggerItem key={workspace.label} distance={14} className='min-w-0'>

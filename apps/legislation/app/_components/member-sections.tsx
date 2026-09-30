@@ -159,7 +159,7 @@ export function MemberSections() {
 				Personnel for all 1,750 posts is ₱1,931,805,242 of it. The rest is the chamber&rsquo;s
 				operating budget: a Representation Program of ₱1,966,656,000, a Legislation Program of
 				₱1,706,586,130, a Constituency Servicing Program of ₱480,000,000, oversight at
-				₱384,544,000, and ₱60,000,000 across a learning programme and a forum with the
+				₱384,544,000, and ₱60,000,000 across a learning program and a forum with the
 				Philippine Congress.{' '}
 				<Link href='/acts/85' className='rule-link'>
 					The full budget record is here
@@ -240,12 +240,12 @@ export function MemberSections() {
 			>
 				A member may not be appointed to an office created &mdash; or whose emoluments were
 				increased &mdash; during their term. If a law or resolution they authored particularly
-				favours a business they hold an interest in, keeping that interest more than 30 days
+				favors a business they hold an interest in, keeping that interest more than 30 days
 				after it passes is unlawful.
 			</Point>
 			<Point title='The Parliament disciplines its own' cite='Rules, Rule XXVIII, Section 1'>
 				A majority can reprimand or censure a member, or have them removed from the plenary. For
-				grave disorderly behaviour, two thirds of all members can suspend one for up to 30 days.
+				grave disorderly behavior, two thirds of all members can suspend one for up to 30 days.
 				No court or outside body is involved.
 			</Point>
 		</Block>

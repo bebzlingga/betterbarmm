@@ -123,7 +123,7 @@ export default function HomePage() {
 			/>
 
 			{/* ---- Where the bills are ----
-			     The claim centred over the picture, the legend wrapped around it, and
+			     The claim centerd over the picture, the legend wrapped around it, and
 			     the ways out underneath — so the section reads top to bottom as one
 			     statement rather than a column of text beside a chart. */}
 			<section className='bb-container bb-section'>
@@ -152,7 +152,7 @@ export default function HomePage() {
 
 				<Reveal delay={160}>
 					{/* On the same axis as the claim and the chart above them. Ranged
-					    left under a centred section, the two ways out read as the start
+					    left under a centerd section, the two ways out read as the start
 					    of the next block rather than the end of this one. */}
 					<div className='mt-14 flex flex-wrap justify-center gap-3'>
 						<Link href='/bills' className='bb-btn bb-btn-solid'>

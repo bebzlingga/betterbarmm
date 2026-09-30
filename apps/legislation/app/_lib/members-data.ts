@@ -328,7 +328,7 @@ const toSlug = (rosterName: string) =>
 
 /**
  * Names are matched on a normalised key, not verbatim: the roster and the
- * older act catalogue disagree on diacritics for the same person ("MUÑOZ,
+ * older act catalog disagree on diacritics for the same person ("MUÑOZ,
  * HUSSEIN P." against "MUNOZ, HUSSEIN P."), which would otherwise silently
  * drop that member's credits. Accents are folded and spacing collapsed so
  * both spellings land on one entry.
@@ -761,7 +761,7 @@ export function getMembersDataset(): MembersDataset {
 		coverageNote: `The roster is complete, and so is the link between a member and the bills they filed: Parliament's own bills index names an author on all ${official.byCategory.bills ?? 0} of them, and this reads it. Acts and resolutions are the partial part — ${creditedIds.size} of ${measuresTotal} captured measures name their authors here.`,
 		knownGaps: [
 			`Bill authorship comes from Parliament's bills index, which names an author on all ${official.byCategory.bills ?? 0} bills it lists. Only ${creditedBills} of those bills have a captured record here, so the rest appear on a profile with a status and a link to the official page, and nothing else.`,
-			`Authorship inside the registry's own records covers ${creditedIds.size} of ${measuresTotal} captured measures — ${creditedActs} autonomy acts and ${creditedBills} bills. Author credits for acts come from the hand-compiled catalogue of BAA 1–89; acts outside that range carry no author list.`,
+			`Authorship inside the registry's own records covers ${creditedIds.size} of ${measuresTotal} captured measures — ${creditedActs} autonomy acts and ${creditedBills} bills. Author credits for acts come from the hand-compiled catalog of BAA 1–89; acts outside that range carry no author list.`,
 			'Measures Parliament credits to the “Government of the Day” are listed under that name rather than dropped, since they belong to no member. A measure credited to a committee still appears on no profile.',
 			`Parliament publishes a biography for ${allMembers.filter((member) => member.bio.length > 0).length} of the ${allMembers.length} members; the rest have an empty profile tab on their own official page. Nothing here is written about a member that they did not publish about themselves.`,
 			'Attendance and voting records come from the session journals, which have not been captured. Committee seats now come from the committee pages, and reflect current membership only.',

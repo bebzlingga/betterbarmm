@@ -1,0 +1,17 @@
+{
+	"name": "@betterbarmm/ai",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"exports": {
+		"./dock": "./src/dock.tsx",
+		"./route": "./src/route.ts"
+	},
+	"dependencies": {
+		"@anthropic-ai/sdk": "^0.128.0",
+		"@betterbarmm/budget-data": "workspace:*",
+		"@betterbarmm/lgu-data": "workspace:*",
+		"@betterbarmm/primer-data": "workspace:*",
+		"@betterbarmm/travel-data": "workspace:*"
+	}
+}

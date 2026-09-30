@@ -21,6 +21,14 @@ import { Drawn, Node, Stroke } from './diagram-kit'
 
    All three are `aria-hidden`. The heading and the paragraph beside
    them carry the meaning; these carry the emphasis.
+
+   The delays are the original sequence at seven tenths. A diagram
+   that starts drawing when it scrolls into view has about a second
+   before the reader has finished the paragraph next to it and moved
+   on; at full length the last stroke of each one was landing after
+   they had gone, which is an animation nobody sees paid for by
+   everybody's battery. The order and the overlaps are unchanged —
+   only the distance between them.
    ============================================================ */
 
 /**
@@ -38,23 +46,23 @@ export function SourceDiagram() {
         <>
           {/* Three sheets, stacked back to front. */}
           <Stroke d='M14 26 H54 V78 H14 Z' drawn={drawn} delay={0} color='var(--rule)' />
-          <Stroke d='M20 20 H60 V72 H20 Z' drawn={drawn} delay={0.1} color='var(--ink-3)' />
-          <Stroke d='M26 14 H66 V66 H26 Z' drawn={drawn} delay={0.2} color='var(--ink)' />
+          <Stroke d='M20 20 H60 V72 H20 Z' drawn={drawn} delay={0.07} color='var(--ink-3)' />
+          <Stroke d='M26 14 H66 V66 H26 Z' drawn={drawn} delay={0.14} color='var(--ink)' />
 
           {/* Ruled lines on the front sheet — a page, not a box. */}
-          <Stroke d='M34 28 H58' drawn={drawn} delay={0.4} duration={0.35} color='var(--brass)' width={1.2} />
-          <Stroke d='M34 38 H58' drawn={drawn} delay={0.47} duration={0.35} color='var(--rule)' width={1.2} />
-          <Stroke d='M34 48 H50' drawn={drawn} delay={0.54} duration={0.35} color='var(--rule)' width={1.2} />
+          <Stroke d='M34 28 H58' drawn={drawn} delay={0.28} duration={0.35} color='var(--brass)' width={1.2} />
+          <Stroke d='M34 38 H58' drawn={drawn} delay={0.33} duration={0.35} color='var(--rule)' width={1.2} />
+          <Stroke d='M34 48 H50' drawn={drawn} delay={0.38} duration={0.35} color='var(--rule)' width={1.2} />
 
           {/* The rail out to the record. */}
-          <Stroke d='M66 40 H118' drawn={drawn} delay={0.6} color='var(--brass)' width={1.4} />
-          <Node x={130} y={40} drawn={drawn} delay={1.1} size={16} />
+          <Stroke d='M66 40 H118' drawn={drawn} delay={0.42} color='var(--brass)' width={1.4} />
+          <Node x={130} y={40} drawn={drawn} delay={0.77} size={16} />
 
           {/* And the trail back, dashed — the source stays openable. */}
           <Stroke
             d='M130 56 V92 H46 V72'
             drawn={drawn}
-            delay={1.25}
+            delay={0.88}
             duration={0.8}
             color='var(--brass)'
             width={1.2}
@@ -69,7 +77,7 @@ export function SourceDiagram() {
 /**
  * Context — one record picking up what it needs to be read.
  *
- * The mark is at the centre and the annotations arrive around it: the date, the
+ * The mark is at the center and the annotations arrive around it: the date, the
  * label, the note, the source. Each one is a rule that ends in a small tick, so
  * the diagram reads as a record being annotated rather than as a hub and
  * spokes.
@@ -82,17 +90,17 @@ export function ContextDiagram() {
           <Node x={80} y={58} drawn={drawn} delay={0} size={18} />
 
           {/* Four annotations, drawn in reading order rather than clockwise. */}
-          <Stroke d='M80 44 V22 H30' drawn={drawn} delay={0.35} color='var(--ink-3)' width={1.2} />
-          <Stroke d='M24 22 H14' drawn={drawn} delay={0.7} duration={0.3} color='var(--brass)' width={2} />
+          <Stroke d='M80 44 V22 H30' drawn={drawn} delay={0.24} color='var(--ink-3)' width={1.2} />
+          <Stroke d='M24 22 H14' drawn={drawn} delay={0.49} duration={0.3} color='var(--brass)' width={2} />
 
-          <Stroke d='M94 58 H140' drawn={drawn} delay={0.5} color='var(--ink-3)' width={1.2} />
-          <Stroke d='M140 50 V66' drawn={drawn} delay={0.85} duration={0.3} color='var(--brass)' width={2} />
+          <Stroke d='M94 58 H140' drawn={drawn} delay={0.35} color='var(--ink-3)' width={1.2} />
+          <Stroke d='M140 50 V66' drawn={drawn} delay={0.59} duration={0.3} color='var(--brass)' width={2} />
 
-          <Stroke d='M80 72 V94 H34' drawn={drawn} delay={0.65} color='var(--ink-3)' width={1.2} />
-          <Stroke d='M28 94 H14' drawn={drawn} delay={1} duration={0.3} color='var(--brass)' width={2} />
+          <Stroke d='M80 72 V94 H34' drawn={drawn} delay={0.45} color='var(--ink-3)' width={1.2} />
+          <Stroke d='M28 94 H14' drawn={drawn} delay={0.7} duration={0.3} color='var(--brass)' width={2} />
 
-          <Stroke d='M66 58 H30 V38' drawn={drawn} delay={0.8} color='var(--ink-3)' width={1.2} />
-          <Node x={30} y={30} drawn={drawn} delay={1.15} size={7} filled={false} color='var(--brass)' />
+          <Stroke d='M66 58 H30 V38' drawn={drawn} delay={0.56} color='var(--ink-3)' width={1.2} />
+          <Node x={30} y={30} drawn={drawn} delay={0.8} size={7} filled={false} color='var(--brass)' />
         </>
       )}
     </Drawn>
@@ -125,12 +133,12 @@ export function LivingDiagram() {
           />
 
           {/* The arrowhead, at the top of the ring, pointing clockwise. */}
-          <Stroke d='M70 8 L80 14 L70 20' drawn={drawn} delay={1} duration={0.35} color='var(--brass)' width={1.8} />
+          <Stroke d='M70 8 L80 14 L70 20' drawn={drawn} delay={0.7} duration={0.35} color='var(--brass)' width={1.8} />
 
           {/* Three checkpoints on the circuit — filed, checked, revised. */}
-          <Node x={124} y={58} drawn={drawn} delay={1.15} size={8} filled={false} color='var(--brass)' />
-          <Node x={80} y={102} drawn={drawn} delay={1.25} size={8} filled={false} color='var(--brass)' />
-          <Node x={36} y={58} drawn={drawn} delay={1.35} size={8} filled={false} color='var(--brass)' />
+          <Node x={124} y={58} drawn={drawn} delay={0.8} size={8} filled={false} color='var(--brass)' />
+          <Node x={80} y={102} drawn={drawn} delay={0.88} size={8} filled={false} color='var(--brass)' />
+          <Node x={36} y={58} drawn={drawn} delay={0.94} size={8} filled={false} color='var(--brass)' />
 
           {/* The record itself, going round. It keeps going after the drawing
               has finished, which is the whole claim. */}

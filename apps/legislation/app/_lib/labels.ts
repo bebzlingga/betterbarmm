@@ -383,7 +383,7 @@ export function classifyTag(value: string): TagKind {
  * -> `passed` (third reading) -> `enacted`. `archived` is the exit at any
  * point, and `neutral` covers a source that recorded no stage at all.
  *
- * Every surface colours from this one list, so a stage is the same colour on a
+ * Every surface colors from this one list, so a stage is the same color on a
  * row badge as it is on a rung of a timeline.
  */
 export type StatusTone =
@@ -397,7 +397,7 @@ export type StatusTone =
 	| 'neutral'
 
 /**
- * Maps a raw status string to a tone the UI can colour by, a plain-language
+ * Maps a raw status string to a tone the UI can color by, a plain-language
  * explanation of what that stage means, and a short label.
  *
  * The registry publishes status in its own voice — "ENACTED - IN FORCE",
@@ -437,7 +437,7 @@ export function describeStatus(status: string): {
 			short: value.includes('committee') ? 'In committee' : 'Second reading',
 			// The committee stage and the floor stage are both second reading,
 			// but they are where a measure spends most of its life and where the
-			// two halves of that life differ, so they are told apart by colour.
+			// two halves of that life differ, so they are told apart by color.
 			tone: value.includes('committee') ? 'committee' : 'advancing',
 			meaning:
 				'Under committee study or floor debate. Amendments are still possible, and this is the stage where public input carries the most weight.',

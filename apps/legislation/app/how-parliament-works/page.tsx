@@ -7,7 +7,7 @@ import { MemberSections } from '../_components/member-sections'
 import { ProcessSections } from '../_components/process-sections'
 import { ReadingColumn } from '../_components/reading-column'
 import { Reveal } from '../_components/reveal'
-import type { TocItem } from '../_components/table-of-contents'
+import type { TocItem } from '@betterbarmm/editorial'
 
 export const metadata: Metadata = {
 	title: 'How Parliament works',
@@ -360,7 +360,7 @@ export default function HowParliamentWorksPage() {
 						cite='Rules, Rule XXVIII, Section 1'
 					>
 						A majority can formally reprimand or censure a member, or have them removed from the
-						room. For serious misbehaviour, two thirds of all members can suspend one for up to 30
+						room. For serious misbehavior, two thirds of all members can suspend one for up to 30
 						days. No court or outside body is involved.
 					</Point>
 				</Block>

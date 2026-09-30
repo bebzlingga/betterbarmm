@@ -8,65 +8,510 @@
    classes are never generated. */
 @source "../../../packages/editorial/src";
 
-@layer base {
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.9rem;
-  }
+/* ============================================================
+   Budget workspace
 
-  table thead {
-    font-weight: 600;
-  }
+   Two layers underneath this file: `@betterbarmm/ui` is the base the
+   whole estate draws from, and `@betterbarmm/editorial` is the
+   public-facing layer on top of it — the warm paper, the brass, the
+   okir, the display type, the motion.
 
-  table th,
-  table td {
-    padding: 0.75rem 1rem;
-    text-align: left;
-    border-bottom: 1px solid var(--rule-soft);
-  }
+   What belongs here is what only a budget needs: the three expense
+   classes' colors, the bar they are drawn in, the finder that opens
+   over any page, and the figure-and-label pair the stat rows are built
+   from. Everything else is borrowed from the two layers below.
+   ============================================================ */
 
-  table tr:hover {
-    background: var(--paper-2);
-  }
+/* ---- The three expense classes -------------------------------------------
+
+   Every peso in the Act is one of three things — a salary, a running cost, or
+   something built — and those three are what nearly every figure on this site
+   is split into. So they get real colors rather than tints of the accent:
+   they are an identity, not a rank, and they turn up in a fixed order in every
+   bar, legend and table on the workspace.
+
+   Crimson is the house accent and takes Personnel Services, which the Act
+   prints first. The blue and the gold are far enough from it, and from each
+   other, to survive being stacked adjacent: worst adjacent pair ΔE 17.5 under
+   tritanopia and 22.3 under protanopia, against a floor of 8. The dark steps
+   are chosen for the dark page rather than flipped from these — an inverted
+   light palette lands outside the lightness band the dark surface needs and
+   reads as three pastels. Both sets clear 3:1 against their own ground.
+
+   Identity is never carried by color alone: every bar segment is labeled and
+   every table repeats the figures in text. */
+:root {
+  --exp-ps: #bf4327;
+  --exp-mooe: #1b6fbd;
+  --exp-co: #9a7a10;
+
+  /* A year read against the year before it: up in the estate's own green, down
+     in a red that is not the brand crimson — the accent is the workspace's
+     voice and a fall is not the site speaking. Both are stepped to clear 6:1
+     on the paper, and the sign is always printed beside them, so the color is
+     never the only thing saying which way a year went. */
+  --step-up: var(--positive);
+  --step-down: #a32d1e;
 }
 
-.special-provision-body ol {
-  margin: 0;
-  padding-left: 1.35rem;
-  list-style: decimal;
+:root[data-theme="dark"] {
+  --exp-ps: #db6d55;
+  --exp-mooe: #4d97da;
+  --exp-co: #b78d28;
+
+  /* Lifted off the dark ground, for the reason the chart colors are. */
+  --step-up: #93b071;
+  --step-down: #e8836f;
 }
 
-.special-provision-body ol ol {
-  margin-top: 0.25rem;
-  list-style: lower-alpha;
+/* The stacked share bar. One rule rather than a component's worth of utility
+   classes, because it is drawn on the home page, on all 44 office pages, and
+   in both browsers, and they must not drift. The 2px gap between segments is
+   the surface showing through — without it two adjacent fills read as one.
+
+   At 0.6rem it was a rule under the heading rather than a quantity; three
+   shares are hard to compare across a 9px band, and the percentages printed
+   under it were doing all the work. 1.25rem is enough to read as an area. */
+.split-bar {
+  display: flex;
+  width: 100%;
+  height: 1.25rem;
+  gap: 2px;
+  overflow: hidden;
+  background: var(--paper);
 }
 
-.special-provision-body li {
-  margin-top: 0.45rem;
-  padding-left: 0.15rem;
+/* The shorter cut, for the inline layout — a row in a list, where the bar is
+   one cell among several rather than the subject of its own section. At the
+   full 1.25rem it outweighed the office name beside it. The block layout keeps
+   the taller band, because there the bar IS the section.
+
+   Full width of its cell (user decision). It was capped at 30rem and centerd,
+   which left the bar narrower than the legend printed under it — and a bar
+   that stops short of its own key reads as a measure of something smaller
+   than what the key describes. */
+.split-bar-sm {
+  height: 0.9rem;
 }
 
-.special-provision-body li:first-child {
-  margin-top: 0;
+/* The thinnest cut, where the bar is standing in for a rule — the year tiles
+   on the front page draw their Act's own split instead of a hairline, so the
+   divider above each figure is carrying a fact. */
+.split-bar-xs {
+  height: 0.3rem;
 }
 
-.special-provision-body strong {
+.split-bar-seg {
+  min-width: 2px;
+  transition: opacity 0.2s var(--ease);
+}
+
+/* Hovering one segment quiets the others. CSS rather than state: there is
+   nothing to remember between frames, and the legend under the bar already
+   carries every figure, so this is emphasis and not the only way to read it. */
+.split-bar:hover .split-bar-seg {
+  opacity: 0.4;
+}
+
+.split-bar .split-bar-seg:hover {
+  opacity: 1;
+}
+
+/* ---- Section rhythm ------------------------------------------------------
+
+   Every content section on a budget page runs on one value, so a reader
+   scrolling a long office page gets a beat rather than a set of guesses.
+
+   It is not `bb-section`: that clamp is applied to both edges, so between two
+   siblings it doubles — 9rem under one and 9rem over the next is 18rem of
+   white, which is what made the office page's later sections drift twice as
+   far apart as its first two. One value here reads the same above and below
+   the rule that divides them.
+
+   The rule itself is a utility on the section rather than part of this, because
+   the first section on a page does not want one: it opens against the crimson
+   masthead, which already divides it from what came before. */
+/* One rhythm for the whole workspace (user decision).
+
+   The masthead's head and foot, the band between every section, and the
+   closing panel all read this. They had drifted to four different values —
+   the estate's 5.5–8rem band, a tighter one for the office pages, a hand-set
+   pair of Tailwind steps on the masthead, and the panel's own 4.5–9rem — so a
+   reader scrolling one page met four different ideas of how far apart two
+   blocks should sit. */
+:root {
+  --bb-rhythm: clamp(3.75rem, 7vw, 6.5rem);
+}
+
+.section-band,
+.section-band-top,
+.section-band-bottom {
+  --band: var(--bb-rhythm);
+}
+
+/* Two sections on the same ground meet foot to head, so the rhythm arrives
+   twice — one band under the first and another over the second is double the
+   distance either of them asked for. The second drops its head and the first
+   one's foot is the whole gap.
+
+   Only between siblings that both carry a band. A section on a tinted ground
+   wraps its band on an inner div, so it never matches this and keeps the full
+   measure on both edges — which is what a change of ground wants. */
+:is(.section-band, .section-band-top, .section-band-bottom)
+	+ :is(.section-band, .section-band-top) {
+  padding-block-start: 0;
+}
+
+/* The masthead pads itself with the same value, top and foot. */
+.masthead-band {
+  padding-block: var(--bb-rhythm);
+}
+
+.section-band,
+.section-band-bottom {
+  padding-block-end: var(--band);
+}
+
+/* `.section-band` takes the rhythm on both edges. `.section-band-bottom` is the
+   foot without the head, for a section that opens flush against what precedes
+   it; `.section-band-top` is the head without the foot, for one that closes
+   tighter than the rhythm — a block whose last row is already its own bottom
+   edge, like a chart standing on its axis labels. All three read the one
+   variable above, so they cannot drift apart. */
+.section-band,
+.section-band-top {
+  padding-block-start: var(--band);
+}
+
+/* The closing panel on the workspace's own rhythm.
+
+   `CtaPanel` takes no className and pads itself with `.bb-section`, the
+   estate's 4.5–9rem. Scoped by descendant so only this workspace moves; the
+   class is on a wrapper in `shell.tsx`. */
+.cta-tight .bb-section {
+  padding-block: var(--bb-rhythm);
+}
+
+/* A bar drawn along a row in a ranked list — the office list, the project
+   list. Anchored to the row's start so the lengths compare down the column. */
+/* The track the bar is drawn in, and the bar itself.
+
+   The track is the addition that makes the bar mean something. Without it a
+   short bar is a mark floating in white and the reader has no sense of what it
+   is short *of* — Cotabato City's ₱52M read as a small dash rather than as a
+   seventh of Lanao del Sur. With the unfilled length shown, every row carries
+   the same scale and the fill is visibly a proportion of it.
+
+   `--paper-3` rather than a tint of the accent: the empty part of a bar is not
+   a quantity and should not look like one. It was briefly tinted, because at
+   6px this grey was too faint to see on white — but the sector list reads the
+   bar at `.rank-track-lg`'s height, and at that weight plain paper-3 carries
+   the scale on its own. The height was the problem, not the color. */
+/* Square ends, no radius (user decision). A rounded cap shortens the mark it
+   caps — the fill stops a radius short of the length it stands for — and this
+   estate is square everywhere else: the fields, the buttons, the chips, the
+   rules. */
+.rank-track {
+  height: 6px;
+  background: var(--paper-3);
+  overflow: hidden;
+}
+
+.rank-bar {
+  height: 100%;
+  background: var(--accent);
+  opacity: 0.85;
+}
+
+/* The thicker cut, for a short list where the bar is carrying the comparison
+   rather than decorating it. Seven provinces down a page is few enough rows
+   that a thin thread reads as a rule between them; at this height it reads as
+   a quantity — without going so heavy that the bar outweighs the name beside
+   it, which is what 14px did. */
+.rank-track-lg {
+  height: 12px;
+}
+
+/* The headline figure on the front page.
+
+   ₱114,077,644,141.90 is twenty glyphs, and `.bb-display` is sized for the
+   five-or-six-word lines the rest of the estate opens with. At a phone's width
+   it asked for 385px inside a 342px mask, and `.bb-line-mask` clips rather than
+   wraps — so the most important number on the site lost its last digits on the
+   device most readers hold. Set by how many characters have to fit rather than
+   by how much of the viewport the line may occupy.
+
+   It was seventeen glyphs until `peso()` started printing centavos, which is
+   three more to fit: the slope and the ceiling below are the old ones scaled by
+   17/20, so twenty characters now have the headroom seventeen had. Anything
+   that lengthens this figure again has to come back here. */
+.hero-figure {
+  font-size: clamp(1.45rem, 5.6vw, 5.3rem);
+  letter-spacing: -0.05em;
+  font-weight: 900;
+}
+
+/* ---- The way in ----------------------------------------------------------
+
+   Drawn as a field rather than a button on the home page, because it is a
+   field a keystroke later and a control that changes shape on click reads as
+   two different things. Lifted from the local government workspace, which
+   asks the same question of its reader: which of these hundreds is yours. */
+.finder-field {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  padding: 0.95rem 1.1rem;
+  cursor: text;
+  transition:
+    border-color 0.2s var(--ease),
+    background-color 0.2s var(--ease);
+}
+
+.finder-field:hover,
+.finder-field:focus-visible {
+  border-color: var(--ink);
+  background: var(--paper-2);
+}
+
+/* A filter trigger built to the search field's box, so the two sit level on one
+   row. `.chip` is a 0.375rem-tall control made for a row of tags and looked
+   like a mistake beside a 0.95rem field — the padding, the border, the font
+   size and the hover here are the field's own, and only the cursor and the
+   weight differ, because this one is a button. */
+.filter-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  padding: 0.95rem 1.1rem;
+  color: var(--ink-2);
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  transition:
+    border-color 0.2s var(--ease),
+    background-color 0.2s var(--ease),
+    color 0.2s var(--ease);
+}
+
+.filter-trigger:hover,
+.filter-trigger:focus-visible {
+  border-color: var(--ink);
+  background: var(--paper-2);
   color: var(--ink);
+}
+
+.filter-trigger[aria-pressed='true'] {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+/* The office filters, built to the search field's own box so the row reads as
+   one bar of controls rather than as a field with tags loose beneath it.
+   `.chip` is a 0.375rem-tall control made for a run of tags beside body text,
+   and at that height next to a 0.95rem field it looked like a mistake.
+
+   The padding is the field's. The line-height is set rather than inherited
+   because the label is 11px and the field's is 14.5px: without it the box
+   would come out seven pixels short of the thing it is meant to sit level
+   with.
+
+   Uppercase and tracked (user decision), which is the voice every other label
+   on this estate uses for the name of a set rather than words in a sentence. */
+.chip-field {
+  padding: 0.95rem 1.1rem;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.125rem;
+  text-transform: uppercase;
+}
+
+.finder-hit {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid var(--rule-soft);
+  padding: 0.8rem 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.12s var(--ease);
+}
+
+/* Keyboard and pointer land on the same state. Two different highlights — one
+   for hover, one for the cursor — put two rows in play at once and neither
+   reads as the one Enter would open. */
+.finder-hit[data-active="true"] {
+  background: var(--paper-2);
+  box-shadow: inset 2px 0 0 var(--accent);
+}
+
+.finder-hit:last-child {
+  border-bottom: 0;
+}
+
+/* ---- Figures -------------------------------------------------------------
+
+   A peso amount and the words under it. Used in every stat row on the
+   workspace, so the figures line up across pages rather than each page
+   choosing its own size. */
+.money-stat {
+  border-top: 1px solid var(--brass-line);
+  padding-top: 0.85rem;
+}
+
+.money-stat-value {
+  font-family: var(--font-display);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+
+.money-stat-label {
+  margin-top: 0.6rem;
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+/* ---- The tables ----------------------------------------------------------
+
+   Appropriations are money, and money is read by lining the digits up. Every
+   figure on the workspace is tabular, including the ones in prose, and every
+   one of them is set black — the number is the thing being said, and it should
+   be the heaviest thing in its row rather than matching the label beside it.
+
+   The weight rides on this class rather than on a utility at each call site,
+   because these rules are unlayered and therefore beat Tailwind: a `.money`
+   span keeps its black whatever `font-semibold` the markup around it asks
+   for. */
+.money {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+  font-weight: 900;
+}
+
+/* The same figure a weight down, for the places that ask for it — the year
+   tiles and the figures inside the commentary beside them. After `.money` and
+   `.money-stat-value` in the file on purpose: all three are single classes, so
+   source order is what decides, and a `font-bold` utility would lose to every
+   one of them. */
+.money-bold {
   font-weight: 700;
 }
 
-.special-provision-body li > strong:first-child {
-  display: block;
-  margin-bottom: 0.35rem;
+/* A row of the program tree and the object-of-expenditure tree. Indented by
+   depth rather than nested in markup, so the figures stay in one column no
+   matter how deep the row sits. */
+/* A name, a run of dots, then the figure — rather than a rule across the whole
+   row (user decision). A row of a tree is a name and its amount, and a leader
+   is what ties the two together; a full-width border says instead that the row
+   is divided from the one above it, which on a nested tree is the less useful
+   statement.
+
+   Flex, not the grid it was: the leader has to take whatever space the name
+   leaves, which is what `flex: 1` does and a `1fr` track cannot, since the
+   track would size to the row rather than to the name inside it.
+
+   No rules at all now, at any depth. The depth-0 row is told apart by its
+   weight and its size instead, which is what a heading does; a rule above it
+   was a second way of saying the same thing. */
+.tree-row {
+  display: flex;
+  align-items: baseline;
+  /* The row holds exactly three things — name, leader, figure — so this gap is
+     the air on either side of the dots, and nothing else. */
+  gap: 1.15rem;
+  /* The side padding is pulled back out by the same margin, so the text still
+     starts on the column's own edge while the hover highlight carries a little
+     past it. A highlight flush to the glyphs reads as a box around the words
+     rather than as the row being pointed at. */
+  margin-inline: -0.85rem;
+  padding: 0.55rem 0.85rem;
+  transition: background-color 0.16s var(--ease);
 }
 
-.special-provision-body br {
-  display: block;
-  margin-top: 0.15rem;
-  content: "";
+/* Which row the eye is on, in a table where every line looks like its
+   neighbour and the figure it belongs to is the width of the page away. The
+   trees sit on paper, so `--paper-2` is the one step available. */
+.tree-row:hover {
+  background: var(--paper-2);
 }
 
-.special-provision-body br + br {
+/* The name may wrap; without this it refuses to and pushes the figure out. */
+.tree-row > :first-child {
+  min-width: 0;
+}
+
+.tree-row[data-depth="0"] {
+  font-weight: 600;
+}
+
+/* Empty, so in a baseline-aligned row its bottom margin edge is what lands on
+   the baseline — which puts the dots just under the text, where a leader
+   belongs, with nothing to nudge. */
+.tree-leader {
+  flex: 1 1 auto;
+  min-width: 1.5rem;
+  border-bottom: 1px dotted var(--rule);
+}
+
+/* Details/summary as a disclosure without the browser's marker, used for the
+   object tree, the source notes and the program rows.
+
+   An open row takes the second paper (user decision), which is what says it is
+   open — the mark beside it stays a plus. The negative inline margin lets that
+   tint bleed past the text without the row shifting sideways as it opens. */
+.disclose > summary {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.disclose > summary::-webkit-details-marker {
   display: none;
 }
+
+.disclose > summary .disclose-caret {
+  display: inline-block;
+  transition: transform 0.25s var(--ease);
+}
+
+.disclose[open] > summary .disclose-caret {
+  transform: rotate(90deg);
+}
+
+.disclose {
+  padding-inline: 1rem;
+  margin-inline: -1rem;
+}
+
+.disclose[open] {
+  background: var(--paper-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .split-bar-seg,
+  .finder-field,
+  .finder-hit,
+  .disclose > summary .disclose-caret {
+    transition: none;
+  }
+}
+

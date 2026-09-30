@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { OkirBloom, Rise, SectionHead } from '@betterbarmm/editorial'
+import { Rise, SectionHead } from '@betterbarmm/editorial'
 import { ConfidenceBadge } from '../../_components/confidence-badge'
 import { PartyMark, PersonAvatar } from '../../_components/marks'
 import { ElectionShell } from '../../_components/election-shell'
@@ -12,6 +12,7 @@ import {
 	getPartyIds,
 	groupDistrictCandidates,
 } from '../../_lib/election-data'
+import { getPartyResult } from '../../_lib/election-results'
 import { displayName } from '../../_lib/names'
 
 export function generateStaticParams() {
@@ -45,15 +46,17 @@ export default async function PartyDetailPage({
 	}
 
 	const districtGroups = groupDistrictCandidates(party.district)
+	const result = getPartyResult(party.party_id)
+	const decimal = new Intl.NumberFormat('en')
 
 	return (
 		<ElectionShell>
 			{/* ---- The entry ---- */}
-			<section className='bb-lattice relative overflow-hidden'>
-				<OkirBloom
-					variant='tally'
-					className='absolute -right-[14%] -top-[38%] size-[min(44rem,86vw)] opacity-[0.15]'
-				/>
+			{/* The party's own head, hand-set rather than the workspace `Masthead`
+			    — it opens on a mark and a name at display size rather than on a
+			    label and a standfirst. It takes the same brand ground, so every
+			    page in the workspace opens the same way. */}
+			<section className='bb-crimson bb-lattice relative overflow-hidden'>
 
 				<div className='bb-container relative pb-16 pt-14 lg:pb-24 lg:pt-20'>
 					<Rise distance={12}>
@@ -113,9 +116,92 @@ export default async function PartyDetailPage({
 				<div className='bb-weave' aria-hidden='true' />
 			</section>
 
+			{/* ---- How it did ---- */}
+			{/* First thing under the name, because it is the first thing anyone
+			    now wants from a party's page — and a band rather than a section,
+			    because the count has a page of its own and this is a pointer to it
+			    with the one figure that matters printed on the pointer. */}
+			<section className='bb-container section-band'>
+				<Rise distance={14}>
+					<div className='border-t border-[var(--brass-line)] pt-7'>
+						<div className='flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between'>
+							<div>
+								<p className='bb-label'>In the count</p>
+								<p className='mt-4 max-w-[34em] text-[16px] leading-[1.5] text-[var(--ink-2)]'>
+									{result.disqualified
+										? 'Disqualified before the count. The party vote it drew was set aside as invalid, and it holds no seat in the elected Parliament.'
+										: result.totalSeats > 0
+											? `${party.ballot_name} holds ${result.totalSeats} of the ${result.chamberSeats} seats in the elected Parliament — ${
+													result.totalSeats >= result.majorityThreshold
+														? 'a majority in its own right'
+														: `${result.majorityThreshold - result.totalSeats} short of a majority on its own`
+												}.`
+											: `${party.ballot_name} won no seat. It stood on the regional ballot and in ${
+													party.computedStats.districtCocFilers === 1 ? 'one district' : `${party.computedStats.districtCocFilers} districts`
+												}, and the count returned none of them.`}
+								</p>
+								{result.componentParties.length ? (
+									<p className='mt-3 font-mono text-[9px] font-semibold uppercase leading-5 tracking-[0.14em] text-[var(--ink-3)]'>
+										District seats contested through SIAP, Al Ittihad-UKB and BPP
+									</p>
+								) : null}
+							</div>
+
+							<dl className='grid grid-cols-3 gap-7 lg:shrink-0 lg:text-right'>
+								{[
+									{ value: result.totalSeats, label: 'Seats held' },
+									{
+										value: result.partyVoteVotes === null ? '—' : decimal.format(result.partyVoteVotes),
+										label: 'Party votes',
+									},
+									{
+										value:
+											result.partyVoteShare === null ? '—' : `${result.partyVoteShare.toFixed(1)}%`,
+										label: 'Of the party vote',
+									},
+								].map((fact) => (
+									<div key={fact.label} className='flex flex-col-reverse'>
+										<dt className='mt-2.5 font-mono text-[9px] font-semibold uppercase leading-tight tracking-[0.14em] text-[var(--ink-3)]'>
+											{fact.label}
+										</dt>
+										<dd className='num text-2xl font-extrabold leading-none text-[var(--ink)]'>
+											{fact.value}
+										</dd>
+									</div>
+								))}
+							</dl>
+						</div>
+
+						{/* Where the seats came from, not who is sitting in them. Thirty-one
+						    names run out as a paragraph is a wall nobody reads, and every one
+						    of them is on the result page with what they polled beside it —
+						    which is a better answer to "who" than a list with no numbers. */}
+						{result.seatsByTrack.length ? (
+							<div className='mt-8 border-t border-[var(--rule)] pt-5'>
+								<p className='font-mono text-[9px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+									Where the seats came from
+								</p>
+								<p className='mt-3 text-[14px] leading-[1.6] text-[var(--ink-2)]'>
+									{result.seatsByTrack
+										.map((track) => `${track.seats} ${track.label}`)
+										.join(' · ')}
+								</p>
+							</div>
+						) : null}
+
+						<Link
+							href='/results'
+							className='mt-7 inline-block font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)] transition hover:text-[var(--accent-deep)]'
+						>
+							The full result →
+						</Link>
+					</div>
+				</Rise>
+			</section>
+
 			{/* ---- Background ---- */}
 			{party.background ? (
-				<section className='bb-container bb-section'>
+				<section className='bb-container section-band'>
 					{/* The party's own account, under a label rather than a headline.
 					    "Where this entry comes from." was a display line about the
 					    record's provenance standing over the one paragraph anybody came
@@ -167,7 +253,7 @@ export default async function PartyDetailPage({
 			{/* On the page's own paper. It sat on the dark band, which is the
 			    treatment this estate keeps for a single figure or a closing ask —
 			    a hundred names, two grids and a set of plates on it made the page's
-			    longest section its heaviest, and the party colours had to fight the
+			    longest section its heaviest, and the party colors had to fight the
 			    ground to be read. */}
 			{/* Closer to the background above it than a full section step. The two
 			    are one account of the same party — what it is, then who is standing
@@ -175,7 +261,7 @@ export default async function PartyDetailPage({
 			    is short enough that a full rhythm between them read as a gap where
 			    something had been removed. */}
 			{party.sectoral.length > 0 || party.district.length > 0 ? (
-				<section className='bb-container bb-section-bottom scroll-mt-24 pt-8 lg:pt-12'>
+				<section className='bb-container section-band scroll-mt-24'>
 					<div>
 						<SectionHead
 							index='02'

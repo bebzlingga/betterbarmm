@@ -14,7 +14,7 @@ import { ImageResponse } from 'next/og'
    a single filled diamond survives, and it is the one shape this design system
    uses everywhere already.
 
-   The colour is what separates the workspaces. Same mark, the election room's slate —
+   The color is what separates the workspaces. Same mark, the election room's slate —
    enough to pick this tab out of a row of them without reading a word.
    ============================================================ */
 

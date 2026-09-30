@@ -10,7 +10,7 @@ import type { StatusTone } from '../_lib/labels'
 
    The dots take the tones the registry gives a bill's status, so a step here
    and a measure sitting at that step elsewhere on the site are the same
-   colour.
+   color.
    ============================================================ */
 
 export const TONE_FILL: Record<StatusTone, string> = {

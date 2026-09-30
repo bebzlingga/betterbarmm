@@ -215,7 +215,7 @@ export default function AboutPage() {
 			    three headings inside one — so the page keeps the rhythm every other
 			    page on the estate is set to, with the okir rule marking the joins.
 			    The heads are the shared `SectionHead`: the brass kicker and its
-			    numeral, the two-tone display line, centred as this page's heads
+			    numeral, the two-tone display line, centerd as this page's heads
 			    already were.
 
 			    What is indexed used to open the page as a lattice of six cards, one
@@ -235,11 +235,11 @@ export default function AboutPage() {
 
 				{/* A timeline rather than a list: the steps happen in order, so the
 				    numbered nodes and the rule joining them carry that sequence.
-				    Each node sits centred over its own column with the connector
+				    Each node sits centerd over its own column with the connector
 				    running out either side, bleeding past the column by the width of
 				    the grid gap so the line reads as continuous across the row. The
 				    first and last connectors are held in place but hidden, which
-				    keeps every numeral on the same centre line. */}
+				    keeps every numeral on the same center line. */}
 				<div className='grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4'>
 					{steps.map((item, index) => (
 						<Reveal key={item.step} delay={index * 50}>
@@ -248,7 +248,7 @@ export default function AboutPage() {
 								    anywhere the grid wraps, the line at a row's edge runs out
 								    into nothing, and stacked on a phone every numeral wears a
 								    pair of stray hairlines. So they wait for `lg`, and the row
-								    centres its numeral itself until then. */}
+								    centers its numeral itself until then. */}
 								<div className='flex w-full items-center justify-center gap-3'>
 									<span
 										aria-hidden='true'
@@ -363,7 +363,7 @@ export default function AboutPage() {
 										>
 											<div className='flex h-full flex-col p-6'>
 													{/* Brass at a single weight, not a duotone in the accent.
-												    The crimson is the loudest ink the estate has and it is
+												    The blue is the loudest ink the estate has and it is
 												    spent on one thing at a time; sixteen of them down a
 												    lattice made the glyphs the subject and the definitions
 												    the caption. */}

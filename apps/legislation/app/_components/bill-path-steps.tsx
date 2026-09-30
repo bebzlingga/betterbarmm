@@ -26,7 +26,7 @@ export type BillStep = {
 	summary: string
 	/**
 	 * The whole stage in one paragraph: who is acting, what can still change,
-	 * what the clock is, and how it ends. This was four labelled parts once,
+	 * what the clock is, and how it ends. This was four labeled parts once,
 	 * and reading it back the labels were doing the work of full stops —
 	 * chopping one continuous account of a stage into headings a reader had to
 	 * reassemble.

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { lguData } from '@betterbarmm/lgu-data'
-import { BarSegment, Counter, LineReveal, OkirBloom, Rise } from '@betterbarmm/editorial'
+import { BarSegment, Counter, LineReveal, Rise } from '@betterbarmm/editorial'
 
 /** The trail back up the hierarchy, printed as a line rather than a widget. */
 export function LguBreadcrumb({
@@ -79,8 +79,8 @@ export function LguStat({
 /**
  * The masthead of a directory page.
  *
- * The same warm ground and turning medallion the rest of the site opens on, cut
- * down: a directory page is somewhere a reader arrives with a question, not
+ * The same warm ground the rest of the site opens on, cut down: a directory
+ * page is somewhere a reader arrives with a question, not
  * somewhere they are being persuaded of anything, so the type is one step
  * smaller and there is no photograph.
  */
@@ -90,6 +90,7 @@ export function LguMasthead({
 	kicker,
 	name,
 	note,
+	brand = false,
 	children,
 }: {
 	breadcrumb: React.ReactNode
@@ -98,12 +99,25 @@ export function LguMasthead({
 	kicker: string
 	name: string
 	note?: string
+	/**
+	 * Paint the masthead in the brand crimson.
+	 *
+	 * The province pages take it and the towns under them do not, which is the
+	 * point of it: a reader moving down the directory should be able to tell
+	 * which rung they are on before reading a word, and there are five provinces
+	 * against a hundred and three towns. A ground the whole directory shared
+	 * would say nothing.
+	 *
+	 * `.brand-bg` re-points the tokens rather than restyling the parts, so the
+	 * breadcrumb, the badges, the figures, the share bar and the weave at the
+	 * foot all invert together.
+	 */
+	brand?: boolean
 	/** The figures row, and anything else that belongs above the fold. */
 	children?: React.ReactNode
 }) {
 	return (
-		<section className='bb-lattice relative overflow-hidden'>
-			<OkirBloom className='absolute -right-[12%] -top-[46%] size-[min(34rem,80vw)] opacity-[0.13]' />
+		<section className={`bb-lattice relative overflow-hidden ${brand ? 'brand-bg' : ''}`}>
 
 			<div className='bb-container relative pb-14 pt-12 lg:pb-16 lg:pt-16'>
 				{breadcrumb}
@@ -138,7 +152,7 @@ export function LguMasthead({
  * kinds of place, and "31%" in a table does not say so nearly as fast as a bar
  * that is a third full. The remainder is drawn too rather than left as empty
  * track — the point is the comparison, and a bar with nothing beside it is just
- * a coloured rectangle.
+ * a colored rectangle.
  */
 export function ShareBar({
 	share,
@@ -197,52 +211,59 @@ export function ShareBar({
 export function LguSourceNote({ className = '' }: { className?: string }) {
 	return (
 		<Rise className={className} distance={12}>
-			<div className='border-t border-[var(--brass-line)] pt-5'>
+			<div className='grid gap-x-12 gap-y-4 border-t border-[var(--brass-line)] pt-5 lg:grid-cols-[minmax(0,14rem)_minmax(0,1fr)]'>
 				<p className='bb-label'>About these figures</p>
-				<p className='mt-4 max-w-3xl text-[12.5px] leading-6 text-[var(--ink-3)]'>
-					Structure from the{' '}
-					<a
-						href={lguData.sources.structure.href}
-						target='_blank'
-						rel='noreferrer'
-						className='rule-link'
-					>
-						Philippine Standard Geographic Code
-					</a>
-					; population and land area from{' '}
-					<a
-						href={lguData.sources.demographics.href}
-						target='_blank'
-						rel='noreferrer'
-						className='rule-link'
-					>
-						Wikidata
-					</a>
-					, which carries PSA&rsquo;s census figures with their census dates. Population is the{' '}
-					<a
-						href={lguData.sources.census.href}
-						target='_blank'
-						rel='noreferrer'
-						className='rule-link'
-					>
-						2024 Census of Population
-					</a>
-					. Elected officials are the winners in COMELEC&rsquo;s{' '}
-					<a
-						href={
-							lguData.officials?.terms.find((t) => t.status === 'current')?.source.href ??
-							'https://2025electionresults.comelec.gov.ph/'
-						}
-						target='_blank'
-						rel='noreferrer'
-						className='rule-link'
-					>
-						2025 Certificates of Canvass
-					</a>
-					, holding office to June 30, 2028. {lguData.note} A dash means the record has no figure —
-					not a zero. Boundaries and office-holders change; where this differs from an official
-					page, the official page is right.
-				</p>
+				<div className='max-w-3xl space-y-3 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+					<p>
+						Structure from the{' '}
+						<a
+							href={lguData.sources.structure.href}
+							target='_blank'
+							rel='noreferrer'
+							className='rule-link'
+						>
+							Philippine Standard Geographic Code
+						</a>
+						; population and land area from{' '}
+						<a
+							href={lguData.sources.demographics.href}
+							target='_blank'
+							rel='noreferrer'
+							className='rule-link'
+						>
+							Wikidata
+						</a>
+						, which carries PSA&rsquo;s census figures with their census dates. Population is the{' '}
+						<a
+							href={lguData.sources.census.href}
+							target='_blank'
+							rel='noreferrer'
+							className='rule-link'
+						>
+							2024 Census of Population
+						</a>
+						. Elected officials are the winners in COMELEC&rsquo;s{' '}
+						<a
+							href={
+								lguData.officials?.terms.find((t) => t.status === 'current')?.source.href ??
+								'https://2025electionresults.comelec.gov.ph/'
+							}
+							target='_blank'
+							rel='noreferrer'
+							className='rule-link'
+						>
+							2025 Certificates of Canvass
+						</a>
+						, holding office to June 30, 2028.
+					</p>
+
+					<p>{lguData.note}</p>
+
+					<p>
+						A dash means the record has no figure — not a zero. Boundaries and office-holders
+						change; where this differs from an official page, the official page is right.
+					</p>
+				</div>
 			</div>
 		</Rise>
 	)

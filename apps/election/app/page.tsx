@@ -1,4 +1,4 @@
-import { OkirRule, Rise, SectionHead, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { Rise, SectionHead, Stagger, StaggerItem } from '@betterbarmm/editorial'
 import Link from 'next/link'
 import { BallotDiagram } from './_components/ballot-diagram'
 import { ElectionShell } from './_components/election-shell'
@@ -11,6 +11,7 @@ import {
 	getTimelineViewModel,
 	labelize,
 } from './_lib/election-data'
+import { getResultsViewModel } from './_lib/election-results'
 
 /**
  * One of the three ways into the Parliament.
@@ -78,6 +79,8 @@ function Track({
 export default function Page() {
 	const { election, metadata, parties, stats } = getElectionViewModel()
 	const { phases } = getTimelineViewModel()
+	const { outcome, shortfall, turnout } = getResultsViewModel()
+	const resultDay = formatDate('2026-09-14')
 
 	const timelinePhases: TimelinePhase[] = phases.map((group) => ({
 		phase: group.phase,
@@ -118,23 +121,72 @@ export default function Page() {
 				label='The 2026 Bangsamoro election'
 				lines={['The first regular', 'parliamentary election.']}
 				muted={[1]}
-				standfirst={`On ${metadata.electionDay} the Bangsamoro elects its own Parliament for the first time — ${stats.totalSeats} members, filled three different ways, after seven years of transition and three postponed dates. This is what is on the ballot, who is on it, and where every record here came from.`}
+				standfirst={`On ${metadata.electionDay} the Bangsamoro elected its own Parliament for the first time — ${stats.totalSeats} members, filled three different ways, after seven years of transition and three postponed dates. No party won the ${stats.majorityThreshold} seats a government needs. This page is how those seats are filled and who was on the ballot; the count itself is on the result page.`}
 				facts={[
 					{ value: stats.totalSeats, label: 'Seats in Parliament', count: true },
 					{ value: stats.majorityThreshold, label: 'Seats for a majority', count: true },
 					{ value: stats.regionalParties, label: 'Parties on the ballot', count: true },
 				]}
 			>
-				<Link href='/candidates' className='bb-btn bb-btn-solid'>
-					Parties and candidates
+				{/* Brass, not the solid ink button. On the crimson band `bb-btn-solid`
+				    is cream with crimson type and fills gold on hover, which puts
+				    white type on gold; brass is the cut the estate already uses for
+				    the one action on a brand band. */}
+				<Link href='/results' className='bb-btn bb-btn-brass'>
+					See the result
 				</Link>
-				<a href='/data/download?file=election.min.json' className='bb-btn'>
-					Download the data
-				</a>
 			</Masthead>
 
+			{/* ---- What happened ---- */}
+			{/* The one band on this page written in the past tense, and it comes
+			    first because it is the thing a reader arriving today wants.
+
+			    It is deliberately three figures and a sentence rather than a second
+			    results page: the count has a page of its own, and a summary that
+			    grows here is a second account of the same numbers, drifting apart
+			    from the first the moment either is edited. */}
+			<section className='bb-container section-band'>
+				<Rise distance={14}>
+					<div>
+						<p className='bb-label'>The count · {resultDay}</p>
+
+						<div className='mt-7 grid gap-x-10 gap-y-8 lg:grid-cols-[1.1fr_1fr] lg:items-end'>
+							{/* A step under `bb-lede`. The band sits directly beneath a display
+							    masthead and its standfirst; at the lede's two rems it was a third
+							    voice at nearly headline size, and the three figures beside it
+							    were the quiet half of a row they are the point of. */}
+							<p className='max-w-[34em] text-[17px] leading-[1.55] text-pretty text-[var(--ink)]'>
+								{outcome.summary}
+							</p>
+
+							<dl className='grid grid-cols-3 gap-6'>
+								{[
+									{ value: `${turnout.turnout_percent}%`, label: 'Turnout' },
+									{ value: outcome.largest_party_seats, label: 'BFP, largest bloc' },
+									{ value: shortfall, label: 'Short of a majority' },
+								].map((fact) => (
+									<div key={fact.label} className='flex flex-col-reverse'>
+										<dt className='mt-2.5 font-mono text-[9px] font-semibold uppercase leading-tight tracking-[0.14em] text-[var(--ink-3)]'>
+											{fact.label}
+										</dt>
+										<dd className='bb-figure-sm leading-none text-[var(--ink)]'>{fact.value}</dd>
+									</div>
+								))}
+							</dl>
+						</div>
+
+						<Link
+							href='/results'
+							className='mt-8 inline-block font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)] transition hover:text-[var(--accent-deep)]'
+						>
+							Every seat, district and reserved seat →
+						</Link>
+					</div>
+				</Rise>
+			</section>
+
 			{/* ---- How the seats are filled ---- */}
-			<section className='bb-container bb-section'>
+			<section className='bb-container section-band'>
 				<SectionHead
 					index='01'
 					eyebrow='How it works'
@@ -246,16 +298,14 @@ export default function Page() {
 				</Rise>
 			</section>
 
-			<OkirRule className='mx-auto max-w-[88rem] opacity-70' />
-
 			{/* ---- Government formation ---- */}
-			<section className='bb-container bb-section'>
+			<section className='bb-container section-band'>
 				<SectionHead
 					index='02'
 					eyebrow='After the count'
 					title='The chamber elects'
 					titleMuted='its own Chief Minister.'
-					lead='Nobody votes for a chief minister on the ballot. The eighty members elected on all three tracks do that themselves, on the first day of session.'
+					lead={`Nobody votes for a chief minister on the ballot. The ${stats.totalSeats} members elected on all three tracks do that themselves, on the first day of session — and on ${formatDate(outcome.first_session)} they will be doing it without a party holding a majority.`}
 				/>
 
 				<div className='mt-12 grid gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-16'>
@@ -266,6 +316,15 @@ export default function Page() {
 								majority of all members, not of those present. If no one reaches it, Parliament
 								holds a runoff between the top two. That is why the party vote and the district
 								vote end up being the same question: which bloc can get to {stats.majorityThreshold}.
+							</p>
+							<p className='mt-5 bb-body text-[var(--ink-2)]'>
+								The count answered it with a chamber where nobody can. The largest bloc holds{' '}
+								{outcome.largest_party_seats}, {shortfall} short, which puts the office in the
+								hands of whoever agrees with whom —{' '}
+								<Link href='/results' className='rule-link text-[var(--ink)]'>
+									the seats, bloc by bloc
+								</Link>
+								.
 							</p>
 							<p className='mt-6 font-mono text-[10px] font-semibold uppercase leading-6 tracking-[0.16em] text-[var(--ink-3)]'>
 								Source:{' '}
@@ -288,25 +347,28 @@ export default function Page() {
 			</section>
 
 			{/* ---- The timeline ---- */}
-			{/* The estate's own rhythm, like every other section on the page. It
-			    carried a hand-set `py-16 lg:py-24` — 64 and 96 points against the
-			    `bb-section` clamp's 72 to 144 — so the one full-bleed band on the
-			    page was also the one block breathing differently from its
-			    neighbours. `bb-section` sets padding only, which a tinted band takes
-			    as happily as a plain container. */}
-			<section className='bb-lattice-soft relative isolate overflow-hidden border-y border-[var(--rule)] bg-[var(--paper-2)] bb-section'>
-				<div className='bb-container'>
-					<SectionHead
-						index='03'
-						eyebrow='The road to the vote'
-						title='Set for 2022.'
-						titleMuted='Held in 2026.'
-						lead='The law that created the Parliament was signed in 2018. Everything between then and September 2026 is the story of a date being moved — by a pandemic, by Congress, and by the Supreme Court.'
-					/>
-				</div>
+			{/* The band sits on an inner div, not on the section.
+			    
+			    A change of ground wants the full rhythm on both edges, and the
+			    collapse rule would take the head off this one because the section
+			    above it carries a band too. Held one level in, it never matches
+			    that rule — and the timeline below still runs full-bleed, because
+			    the wrapper pads rather than measures. */}
+			<section className='bb-lattice-soft relative isolate overflow-hidden bg-[var(--paper-2)]'>
+				<div className='section-band'>
+					<div className='bb-container'>
+						<SectionHead
+							index='03'
+							eyebrow='The road to the vote'
+							title='Set for 2022.'
+							titleMuted='Held in 2026.'
+							lead='The law that created the Parliament was signed in 2018. Everything between then and September 2026 is the story of a date being moved — by a pandemic, by Congress, and by the Supreme Court — and then of the date arriving.'
+						/>
+					</div>
 
-				<div className='mt-14'>
-					<ElectionTimeline phases={timelinePhases} />
+					<div className='mt-14'>
+						<ElectionTimeline phases={timelinePhases} />
+					</div>
 				</div>
 			</section>
 

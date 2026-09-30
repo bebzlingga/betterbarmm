@@ -9,7 +9,7 @@ import { useEffect } from 'react'
  * The router does this itself, but not reliably once a page is long: a
  * navigation that begins deep in the roster can land part-way down a shorter
  * page, which reads as a blank screen rather than as a scroll position. This
- * pins the behaviour instead of leaving it to a race — and skips the reset
+ * pins the behavior instead of leaving it to a race — and skips the reset
  * when the URL carries a hash, since that asks for a particular place.
  */
 export function ScrollToTop() {

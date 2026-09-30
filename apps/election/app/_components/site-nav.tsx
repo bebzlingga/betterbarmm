@@ -11,6 +11,10 @@ import { ThemeToggle } from './theme-toggle'
 
 const pages = [
 	{ href: '/', label: 'The election' },
+	/* Second, not last. The count is what most people arrive for now, and a
+	   workspace that puts its result behind the candidate list is answering a
+	   question nobody is asking first. */
+	{ href: '/results', label: 'The result' },
 	{ href: '/candidates', label: 'Candidates' },
 	/* What the seat actually is. The workspace could say who is standing and how
 	   the seats are filled, and a reader could still leave without knowing what
@@ -22,7 +26,7 @@ const pages = [
 /**
  * The workspace bar.
  *
- * It used to be a crimson band with the wordmark reversed out of it, which
+ * It used to be a brand band with the wordmark reversed out of it, which
  * made this workspace look like a different site that happened to share a
  * name. The estate's bar is paper with a brass hairline under it, and the
  * accent is spent on one thing — the rule that draws itself under whichever
@@ -41,7 +45,7 @@ export function SiteNav() {
 			<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
 				{/* Two tracks on a phone, three from `md` up.
 				 *
-				 * The centre track holds a nav that is not rendered below `md`, so
+				 * The center track holds a nav that is not rendered below `md`, so
 				 * three equal-ish tracks gave the wordmark half the row and the
 				 * controls the other half. The mark is a fixed-height image: the
 				 * moment its share fell under its natural width, `max-width: 100%`

@@ -12,8 +12,8 @@ import { TONE_FILL, TONE_HALO } from './timeline'
 
    It moves, and the movement carries the one idea the row exists for. A
    stage that has not been reached is grey; the head runs the line and each
-   stage takes its own colour as the head arrives. So the row is not seven
-   labelled dots, it is a bill travelling — which is the thing the process
+   stage takes its own color as the head arrives. So the row is not seven
+   labeled dots, it is a bill traveling — which is the thing the process
    page then explains.
 
    The reveal is generated per step rather than written once in the shared
@@ -30,7 +30,7 @@ import { TONE_FILL, TONE_HALO } from './timeline'
    ============================================================ */
 
 /**
- * One pass, and how much of it the head spends travelling.
+ * One pass, and how much of it the head spends traveling.
  *
  * Slow on purpose. The row is ambient — it sits under a headline nobody came
  * to watch — and at a brisk pace seven flares in sequence read as a loading
@@ -101,7 +101,7 @@ export function BillPathPreview() {
 				className='absolute left-[7.143%] right-[7.143%] top-[7px] hidden h-px bg-[var(--rule)] lg:block'
 			/>
 
-			{/* The travelled part of the line, drawn over the hairline in the accent
+			{/* The traveled part of the line, drawn over the hairline in the accent
 			    and grown from the left. */}
 			<span
 				aria-hidden='true'

@@ -26,9 +26,9 @@ export function ShowAll({ children, initial = 8, noun, as: Wrapper = 'div' }: Sh
 	return (
 		<>
 			<Wrapper>{rows.slice(0, initial)}</Wrapper>
-			{/* A flex column so the button can centre itself with `self-center`.
+			{/* A flex column so the button can center itself with `self-center`.
 			    `.btn` sits outside Tailwind's layers, so a utility cannot override
-			    its `inline-flex` — and `mx-auto` does not centre an inline box. */}
+			    its `inline-flex` — and `mx-auto` does not center an inline box. */}
 			<details className='group flex flex-col'>
 				{/* `.btn` alone, without `btn-quiet`: its border is already
 				    transparent, so the control reads as text with a hit area. */}

@@ -32,7 +32,7 @@
    rather than for a utility.
 
    Wider than the chapters on the landing site, and deliberately. A
-   chapter is continuous prose; a record is a stack of short labelled
+   chapter is continuous prose; a record is a stack of short labeled
    answers — what it does, who runs it, what it costs — where each one
    is a paragraph or two under its own heading. At 34em those broke into
    narrow ragged blocks with a third of the column standing empty beside
@@ -132,7 +132,7 @@
    badge tones in the shared layer are all stages: a green "done" beside
    "Verbatim" would read as somewhere a measure had got to.
 
-   So it takes the brass, which is the estate's furniture colour and carries
+   So it takes the brass, which is the estate's furniture color and carries
    no legislative meaning at all. Both tokens flip with the theme, so the tint
    and the ink stay legible on either ground. */
 
@@ -165,13 +165,13 @@
 /* ============================================================
    The subject treemap
 
-   Four shades of the register's own crimson, stepped by rank so larger areas
+   Four shades of the register's own blue, stepped by rank so larger areas
    sit deeper in it. They are mixed from `--accent` into the page's own ground
    rather than written out as four hex values, which is what makes the set a
-   ramp of one colour instead of four colours that happen to be related — and
+   ramp of one color instead of four colors that happen to be related — and
    what lets it flip with the theme on its own. On paper the mix runs from a
    pale tint to the accent at full strength; on the dark ground the same
-   percentages run from a near-black wash up to the lifted crimson, so the
+   percentages run from a near-black wash up to the lifted blue, so the
    order holds without a second set of values.
 
    What cannot follow the mix is the ink on top of it, because which end of the
@@ -180,7 +180,7 @@
    the two pale steps take the page's ink and the two deep ones take white; on
    the dark theme only the last step is light enough to need dark ink.
 
-   Colour agrees with the area rather than adding to it: the measurement is the
+   Color agrees with the area rather than adding to it: the measurement is the
    tile's size, and every tile carries its own name and count as text.
    ============================================================ */
 
@@ -250,22 +250,22 @@
 
    The capitals over "Authors", "Appropriation", "Who would implement it" and
    the rest of a record's blocks. They were `.label-strong`, which is the page's
-   own ink — the same weight of colour as the answer under it — so a record read
+   own ink — the same weight of color as the answer under it — so a record read
    as a column of questions with answers between them rather than the other way
    round.
 
    Brass rather than the page's ink, and heavier than the primitive sets. The
    pair is what makes small capitals read as furniture rather than as a first
-   line of the block underneath: a colour that is nowhere else in the reading
+   line of the block underneath: a color that is nowhere else in the reading
    column marks them as the page's own structure, and the weight lets them
-   carry that colour at nine points without going faint.
+   carry that color at nine points without going faint.
 
-   The brass and not the crimson, though both are the estate's own. Crimson is
+   The amber and not the blue, though both are the estate's own. The blue is
    spent once per screen on the thing being asked of the reader; a record page
-   carries a dozen of these headings, and a dozen crimson capitals down one
+   carries a dozen of these headings, and a dozen blue capitals down one
    column would leave nothing for the one place it is meant to land.
 
-   Set here because `.label` is unlayered: a Tailwind colour or weight at the
+   Set here because `.label` is unlayered: a Tailwind color or weight at the
    call site would lose to the primitive. */
 
 .label-section {

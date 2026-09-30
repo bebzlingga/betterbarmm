@@ -1,0 +1,1097 @@
+{
+	"name": "Implementing Rules and Regulations of the Bangsamoro Local Governance Code of 2023",
+	"act": 49,
+	"promulgated": "2025-09-30",
+	"source": {
+		"label": "Implementing Rules and Regulations of the BLGC of 2023 (Bangsamoro Autonomy Act 49)",
+		"href": "https://parliament.bangsamoro.gov.ph/bta-acts/an-act-providing-for-the-bangsamoro-local-governance-code/"
+	},
+	"note": "The operative articles of the IRR of the Bangsamoro Local Governance Code, written out with their figures. It is 696 Articles promulgated on 30 September 2025; these are the ones that add a procedure, a deadline or a table to what the Code itself says. Article numbering is the IRR’s own and does not correspond to the Code’s section numbering. Where an article and the Code disagree, the Code prevails.",
+	"articles": [
+		{
+			"n": "1",
+			"heading": "Title and authority of these Rules",
+			"ruleNo": "I",
+			"rule": "These are the Implementing Rules and Regulations of the Bangsamoro Local Governance Code of 2023. They were promulgated on 30 September 2025 by the Ministry of the Interior and Local Government and run to 696 Articles. They implement Bangsamoro Autonomy Act 49; they do not amend it, and where an article and the Code disagree the Code prevails.",
+			"terms": "irr implementing rules regulations what is the irr when promulgated 2025 milg"
+		},
+		{
+			"n": "2",
+			"heading": "Purpose of these Rules",
+			"ruleNo": "I",
+			"rule": "The Rules are issued to carry out the Bangsamoro Local Governance Code of 2023 — to guide local government units, their officials and the ministries in applying it, and to supply the procedures, forms and standards the Code leaves to implementation.",
+			"terms": "purpose why an irr exists what is it for"
+		},
+		{
+			"n": "4",
+			"heading": "Scope of these Rules",
+			"ruleNo": "I",
+			"rule": "The Rules apply to all provinces, cities, municipalities and barangays of the Bangsamoro Autonomous Region, to the Special Geographic Area, and to every Bangsamoro ministry, office and agency dealing with them.",
+			"terms": "who does the irr cover apply scope special geographic area"
+		},
+		{
+			"n": "5",
+			"heading": "Rules of interpretation",
+			"ruleNo": "I",
+			"rule": "Doubt about a power of a local government unit is resolved in its favor, and in favor of the lower unit. A tax ordinance is construed strictly against the unit that enacted it and liberally in favor of the taxpayer. Where neither the Code nor these Rules nor jurisprudence applies, the customs and traditions of the place may be resorted to.",
+			"terms": "how to read interpret doubt ambiguous favor taxpayer customs traditions"
+		},
+		{
+			"n": "16",
+			"heading": "Requirements for creating a barangay",
+			"ruleNo": "III",
+			"rule": "A barangay may be created where the territory has at least 2,000 inhabitants certified by the Philippine Statistics Authority, a contiguous territory certified by the provincial or city assessor, and a donated lot of at least 1,500 square meters for the barangay hall, health station and multi-purpose court, covered by a deed of donation and a certificate of title. The 2,000 requirement does not apply to a barangay created in an indigenous cultural community or in a geographically isolated area.",
+			"terms": "how to create make a new barangay requirements population 2000 lot size split"
+		},
+		{
+			"n": "17",
+			"heading": "Who may petition to create a barangay",
+			"ruleNo": "III",
+			"rule": "The petition is filed by at least 50 registered voters of the territory, or by the sangguniang bayan or sangguniang panlungsod concerned, with the sangguniang panlalawigan and a copy to the Ministry of the Interior and Local Government. It is filed in one original and four certified true copies.",
+			"terms": "who files petition create barangay 50 voters where to file"
+		},
+		{
+			"n": "18",
+			"heading": "Contents of the petition",
+			"ruleNo": "III",
+			"rule": "The petition states the name proposed, the barangays or portions affected, the technical description of the boundaries, and attaches the certifications on population, territory, income and the donated lot, a map, and the resolutions of the sanggunians concerned.",
+			"terms": "what goes in a petition contents requirements documents attachments"
+		},
+		{
+			"n": "19",
+			"heading": "Plebiscite on the creation of a barangay",
+			"ruleNo": "III",
+			"rule": "No barangay is created, divided, merged, abolished or has its boundary substantially altered except by a vote of a majority in a plebiscite called for the purpose in the political units directly affected. The plebiscite is conducted by the Commission on Elections within 120 days of the effectivity of the law or ordinance, unless that law or ordinance fixes another date.",
+			"terms": "plebiscite vote referendum how long 120 days comelec merge abolish"
+		},
+		{
+			"n": "20",
+			"heading": "Return of the plebiscite",
+			"ruleNo": "III",
+			"rule": "The board of canvassers submits the certificate of canvass and the proclamation to the sanggunian concerned and to the Ministry of the Interior and Local Government within seven days of the plebiscite.",
+			"terms": "result canvass return seven days after plebiscite"
+		},
+		{
+			"n": "22",
+			"heading": "Beginning of corporate existence",
+			"ruleNo": "III",
+			"rule": "A newly created local government unit begins its corporate existence on the election and qualification of its chief executive and a majority of its sanggunian, unless another time is fixed by the law or ordinance creating it.",
+			"terms": "when does a new lgu start exist begin corporate existence"
+		},
+		{
+			"n": "24",
+			"heading": "Barangays in indigenous cultural communities",
+			"ruleNo": "III",
+			"rule": "A barangay in an indigenous cultural community or an area of a tribal people may be created without meeting the 2,000-inhabitant requirement, on the endorsement of the tribal or traditional leaders concerned, provided the other requirements are met.",
+			"terms": "tribal barangay indigenous ip icc smaller population exemption"
+		},
+		{
+			"n": "27",
+			"heading": "Powers and functions of a barangay",
+			"ruleNo": "IV",
+			"rule": "A barangay delivers agricultural support including the distribution of planting materials and the operation of farm produce collection and buying stations; health and social welfare services including maintenance of a barangay health center and a day care center; services and facilities for agriculture and fishery; maintenance of barangay roads, bridges and water supply systems; an infrastructure of a multi-purpose hall, a multi-purpose pavement, a plaza, a sports center and other facilities; information and reading center; and the satellite or public market where viable.",
+			"terms": "what does a barangay do services functions responsibilities duties"
+		},
+		{
+			"n": "31",
+			"heading": "The officials of a barangay",
+			"ruleNo": "V",
+			"rule": "A barangay has a punong barangay, seven sangguniang barangay members, a sangguniang kabataan chairperson, a barangay secretary and a barangay treasurer, all constituting the barangay government. The punong barangay and the seven members are elected at large by the qualified voters; the SK chairperson sits as an ex officio member of the sangguniang barangay.",
+			"terms": "kagawad how many barangay captain officials council members composition"
+		},
+		{
+			"n": "36",
+			"heading": "The sangguniang barangay",
+			"ruleNo": "V",
+			"rule": "The sangguniang barangay is the legislative body of the barangay. It is composed of the punong barangay as presiding officer, the seven elected sangguniang barangay members, and the sangguniang kabataan chairperson. A majority of all its members is a quorum, and it acts by ordinance or resolution.",
+			"terms": "kagawad sangguniang barangay council quorum who presides ordinance resolution"
+		},
+		{
+			"n": "45",
+			"heading": "Compensation and benefits of barangay officials",
+			"ruleNo": "V",
+			"rule": "The punong barangay receives an honorarium of not less than ₱5,000 a month and not more than the first step of Salary Grade 14. Each sangguniang barangay member, the barangay secretary, the barangay treasurer and the sangguniang kabataan chairperson receives not less than ₱3,000 a month and not more than the first step of Salary Grade 10. Barangay tanods, members of the barangay peacekeeping action team, purok leaders, day care teachers of the child development center and barangay health workers receive not less than ₱1,000 a month. Members of the lupong tagapamayapa receive an aggregate of not more than ₱2,000 a month. Every one of them receives a year-end bonus of at least ₱1,000. The rates are chargeable to the barangay funds and are subject to the personal services limitation.",
+			"terms": "salary sahod honorarium pay allowance how much does a barangay captain kagawad tanod bhw day care teacher earn bonus"
+		},
+		{
+			"n": "46",
+			"heading": "Number of barangay tanods",
+			"ruleNo": "V",
+			"rule": "A barangay may have one barangay tanod for every 200 inhabitants, but not more than 30 tanods in all, appointed by the punong barangay with the concurrence of the majority of the sangguniang barangay.",
+			"terms": "how many tanod bantay limit maximum appointed"
+		},
+		{
+			"n": "47",
+			"heading": "Other benefits of barangay officials",
+			"ruleNo": "V",
+			"rule": "Barangay officials, including barangay tanods and members of the lupong tagapamayapa, are entitled to insurance coverage, free medical care in government hospitals and clinics, and a preference in the grant of scholarships for themselves or a dependent, in addition to their honoraria.",
+			"terms": "benefits insurance philhealth free hospital scholarship for barangay officials"
+		},
+		{
+			"n": "48",
+			"heading": "Term of barangay officials",
+			"ruleNo": "V",
+			"rule": "Barangay officials serve a term of three years, and no barangay official may serve for more than three consecutive terms in the same position. Voluntary renunciation of the office for any length of time is not an interruption of the continuity of service for the full term for which the official was elected.",
+			"terms": "how long term limit three terms reelection barangay captain kagawad"
+		},
+		{
+			"n": "50",
+			"heading": "The lupong tagapamayapa in every barangay",
+			"ruleNo": "VI",
+			"rule": "Every barangay has a lupong tagapamayapa, composed of the punong barangay as chairperson and not less than 10 and not more than 20 members. The lupon is constituted every three years. This is the katarungang pambarangay — the barangay justice system that settles disputes between neighbours without going to court.",
+			"terms": "katarungang pambarangay lupon barangay justice settle dispute reklamo away how many members"
+		},
+		{
+			"n": "51",
+			"heading": "Who may be a member of the lupon",
+			"ruleNo": "VI",
+			"rule": "Any person who actually resides or works in the barangay, is not expressly disqualified by law, and is of good standing — known for integrity, impartiality, independence of mind, a sense of fairness and a reputation for probity — may be appointed a member of the lupon.",
+			"terms": "who can be a lupon member qualifications residence requirement"
+		},
+		{
+			"n": "52",
+			"heading": "How the lupon is constituted",
+			"ruleNo": "VI",
+			"rule": "The punong barangay prepares a notice naming the proposed members and posts it in three conspicuous places in the barangay for at least three weeks. After the posting and after considering any opposition or recommendation, the punong barangay appoints the members with the concurrence of the majority of the sangguniang barangay, and the appointees take their oath. The list of members is posted in the barangay hall.",
+			"terms": "how is the lupon formed appointed posting three weeks notice oath"
+		},
+		{
+			"n": "53",
+			"heading": "Term of lupon members",
+			"ruleNo": "VI",
+			"rule": "A lupon member holds office for three years from the taking of the oath, or until a successor is appointed and qualified.",
+			"terms": "how long lupon member term three years"
+		},
+		{
+			"n": "56",
+			"heading": "The pangkat ng tagapagkasundo",
+			"ruleNo": "VI",
+			"rule": "Where mediation by the punong barangay fails, a conciliation panel called the pangkat ng tagapagkasundo is constituted from the lupon. It has three members chosen by the parties from the lupon; if the parties cannot agree, the punong barangay draws them by lot. The pangkat elects its own chairperson and secretary.",
+			"terms": "pangkat conciliation panel three members how chosen lot"
+		},
+		{
+			"n": "60",
+			"heading": "Subject matter for settlement",
+			"ruleNo": "VI",
+			"rule": "All disputes between persons actually residing in the same city or municipality must first be brought for amicable settlement before the lupon, and no complaint involving such a dispute may be filed or accepted directly in court or any government office without a certification that the settlement has been attempted and has failed.",
+			"terms": "do i need to go to the barangay first before filing a case court certificate to file action"
+		},
+		{
+			"n": "61",
+			"heading": "Disputes the lupon may not settle",
+			"ruleNo": "VI",
+			"rule": "The lupon has no authority over: a dispute where one party is the government or a public officer sued in that capacity; an offence punishable by imprisonment of more than one year or a fine of more than ₱5,000; an offence with no private offended party; a dispute where the parties reside in different cities or municipalities, unless they agree to submit to the lupon; real property located in different cities or municipalities; a labour dispute; a dispute arising from the Comprehensive Agrarian Reform Law; and a case where urgent legal action is needed to prevent injustice, such as an application for a temporary restraining order or support pendente lite. Any party may go directly to court in these cases.",
+			"terms": "exceptions when can i go straight to court skip the barangay not covered"
+		},
+		{
+			"n": "62",
+			"heading": "Where the dispute is brought",
+			"ruleNo": "VI",
+			"rule": "A dispute between residents of the same barangay is brought before the lupon of that barangay. A dispute between residents of different barangays in the same city or municipality is brought before the lupon of the barangay where the respondent, or any of the respondents, actually resides, at the complainant’s election. A dispute over real property is brought before the lupon of the barangay where the property is located. A dispute arising at a workplace or an institution is brought before the lupon of the barangay where it is located.",
+			"terms": "which barangay do i file in venue where to complain different barangay"
+		},
+		{
+			"n": "63",
+			"heading": "How a complaint is brought",
+			"ruleNo": "VI",
+			"rule": "The complaint is made orally or in writing to the lupon chairperson, who within the next working day summons the respondent and the complainant, with their witnesses, to appear before him for mediation.",
+			"terms": "how to file a complaint reklamo summon next working day"
+		},
+		{
+			"n": "64",
+			"heading": "Mediation by the punong barangay",
+			"ruleNo": "VI",
+			"rule": "The punong barangay has 15 days from the first meeting of the parties to bring about a settlement. If mediation fails within that period, the pangkat ng tagapagkasundo is constituted.",
+			"terms": "how long does mediation take 15 days punong barangay fails"
+		},
+		{
+			"n": "65",
+			"heading": "Conciliation by the pangkat",
+			"ruleNo": "VI",
+			"rule": "The pangkat convenes not later than three days after its constitution, on the day agreed on by the parties. It has 15 days from that first meeting to arrive at a settlement, extendible for another 15 days for a clear and compelling reason, and no further.",
+			"terms": "how long pangkat 15 days extension conciliation hearing"
+		},
+		{
+			"n": "66",
+			"heading": "Appearance of parties in person",
+			"ruleNo": "VI",
+			"rule": "In all katarungang pambarangay proceedings the parties must appear in person without the assistance of counsel or representative, except for a minor or an incompetent, who may be assisted by a next of kin who is not a lawyer.",
+			"terms": "can i bring a lawyer abogado attorney representative barangay hearing"
+		},
+		{
+			"n": "69",
+			"heading": "Form of the settlement or award",
+			"ruleNo": "VI",
+			"rule": "The amicable settlement or the arbitration award is in writing, in a language or dialect known to the parties, signed by them and attested by the lupon chairperson or the pangkat chairperson.",
+			"terms": "kasunduan written agreement settlement signed language"
+		},
+		{
+			"n": "70",
+			"heading": "Effect of an amicable settlement",
+			"ruleNo": "VI",
+			"rule": "An amicable settlement or an arbitration award has, after the 10 days for repudiation, the force and effect of a final judgment of a court, unless it is repudiated or a petition to nullify it is filed.",
+			"terms": "is the kasunduan binding final can it be enforced like a court decision"
+		},
+		{
+			"n": "71",
+			"heading": "Repudiation of a settlement",
+			"ruleNo": "VI",
+			"rule": "A party may repudiate a settlement within 10 days of it, by a sworn statement filed with the lupon chairperson stating that consent was vitiated by fraud, violence or intimidation. Repudiation is sufficient basis for the issuance of a certification to file an action.",
+			"terms": "cancel back out of a kasunduan 10 days repudiate fraud forced signed"
+		},
+		{
+			"n": "72",
+			"heading": "Execution of a settlement",
+			"ruleNo": "VI",
+			"rule": "The settlement or award may be enforced by execution by the lupon within six months of the date of the settlement. After that period it is enforced by filing an action in the appropriate city or municipal trial court.",
+			"terms": "enforce implement the kasunduan not followed six months execution court"
+		},
+		{
+			"n": "74",
+			"heading": "Suspension of the running of prescription",
+			"ruleNo": "VI",
+			"rule": "While a dispute is before the lupon, the prescriptive periods for offences and causes of action are interrupted from the filing of the complaint with the punong barangay, and resume on receipt of the certificate of repudiation or the certification to file an action — but the interruption may not exceed 60 days from the filing.",
+			"terms": "prescription deadline to file case interrupted 60 days time limit expired"
+		},
+		{
+			"n": "76",
+			"heading": "Legal advice and the barangay legal aid",
+			"ruleNo": "VI",
+			"rule": "No lupon or pangkat member may appear as counsel for a party in any proceeding before the lupon, or in a case arising from a dispute he handled. The Ministry of the Interior and Local Government and the Integrated Bar may provide the lupon with legal advice and training.",
+			"terms": "conflict of interest lupon member lawyer training legal advice"
+		},
+		{
+			"n": "78",
+			"heading": "Legal fees and the katarungang pambarangay fund",
+			"ruleNo": "VI",
+			"rule": "Katarungang pambarangay proceedings are free — no filing fee is charged for a complaint. The sangguniang barangay appropriates funds for the operation of the lupon, including the honoraria of its members and the supplies and forms it uses.",
+			"terms": "how much does it cost to file at the barangay free bayad fee"
+		},
+		{
+			"n": "80",
+			"heading": "The katipunan ng kabataan",
+			"ruleNo": "VII",
+			"rule": "The katipunan ng kabataan is composed of all citizens of the Philippines actually residing in the barangay for at least six months who are 15 to 30 years old and are registered in the list kept by the Commission on Elections or in the katipunan ng kabataan book of members.",
+			"terms": "kk youth who is a member age 15 to 30 sk"
+		},
+		{
+			"n": "81",
+			"heading": "The sangguniang kabataan",
+			"ruleNo": "VII",
+			"rule": "The sangguniang kabataan is composed of an SK chairperson and seven SK members elected by the katipunan ng kabataan. It has an SK secretary and an SK treasurer appointed by the chairperson with the concurrence of a majority of the SK members.",
+			"terms": "sk composition how many members seven chairman youth council"
+		},
+		{
+			"n": "83",
+			"heading": "Qualifications of an SK official",
+			"ruleNo": "VII",
+			"rule": "An elective SK official must be a Filipino citizen, a qualified voter of the katipunan ng kabataan, a resident of the barangay for at least one year immediately before the election, at least 18 and not more than 24 years old on election day, able to read and write, not related within the second civil degree of consanguinity or affinity to any incumbent elected national, regional or local official, and must not have been convicted by final judgment of an offence involving moral turpitude.",
+			"terms": "sk chairman chairperson age requirement qualifications who can run 18 24 relative"
+		},
+		{
+			"n": "86",
+			"heading": "Term of SK officials",
+			"ruleNo": "VII",
+			"rule": "SK officials serve a term of three years and may not serve for more than three consecutive terms in the same position.",
+			"terms": "sk term how long three years limit"
+		},
+		{
+			"n": "92",
+			"heading": "Powers and functions of the sangguniang kabataan",
+			"ruleNo": "VII",
+			"rule": "The sangguniang kabataan promulgates resolutions necessary to carry out the purposes of the katipunan ng kabataan, initiates programs for the youth of the barangay, holds fund-raising activities whose proceeds accrue to the SK general fund, creates bodies as the youth development plan requires, and submits an annual report to the sangguniang barangay.",
+			"terms": "what does the sk do functions powers youth programs"
+		},
+		{
+			"n": "96",
+			"heading": "Funds of the sangguniang kabataan",
+			"ruleNo": "VII",
+			"rule": "Ten per cent of the general fund of the barangay is set aside for the sangguniang kabataan. Not more than 25 per cent of the SK funds may go to honoraria and other personnel benefits, and not more than 15 per cent to capacity-building and training. The funds are disbursed on an approved annual barangay youth investment program.",
+			"terms": "sk budget pondo how much 10 percent of the barangay funds honoraria limit"
+		},
+		{
+			"n": "99",
+			"heading": "Mandatory training of SK officials",
+			"ruleNo": "VII",
+			"rule": "Every SK official must complete an eight-hour onboarding orientation within three months of assuming office, and at least 32 hours of continuing training on local governance, financial management and youth development over the term. Failure without justifiable cause is a ground for administrative action.",
+			"terms": "sk training required mandatory orientation hours 8 32"
+		},
+		{
+			"n": "104",
+			"heading": "The pederasyon ng mga sangguniang kabataan",
+			"ruleNo": "VII",
+			"rule": "The SK chairpersons of a municipality or city form a pederasyon presided over by an elected president, who sits as an ex officio member of the sangguniang bayan or sangguniang panlungsod. The presidents in a province form the provincial pederasyon, whose president sits as an ex officio member of the sangguniang panlalawigan.",
+			"terms": "sk federation pederasyon president ex officio member sanggunian"
+		},
+		{
+			"n": "109",
+			"heading": "Requirements for creating a municipality",
+			"ruleNo": "VIII",
+			"rule": "A municipality may be created where the territory has an average annual income of at least ₱2,500,000 for the last two consecutive years certified by the Ministry of Finance, Budget and Management, a population of at least 25,000 certified by the Philippine Statistics Authority, and a contiguous territory of at least 50 square kilometers certified by the Land Management Bureau. The income requirement must be based on constant prices of the preceding two years.",
+			"terms": "how to create a new municipality town requirements income population land area"
+		},
+		{
+			"n": "110",
+			"heading": "Site requirement for a new municipality",
+			"ruleNo": "VIII",
+			"rule": "The creation of a municipality requires a donated site of at least 15,000 square meters for the municipal hall and its public facilities, including at least 5,000 square meters each for a public market, a public plaza, a school site and a public cemetery, covered by a deed of donation and a certificate of title.",
+			"terms": "land needed for a new town site municipal hall market plaza cemetery square meters"
+		},
+		{
+			"n": "111",
+			"heading": "Municipalities in indigenous and tribal areas",
+			"ruleNo": "VIII",
+			"rule": "A municipality in an area of indigenous cultural communities or tribal peoples may be created on a population of at least 20,000, instead of the 25,000 otherwise required.",
+			"terms": "tribal municipality indigenous smaller population 20000 exemption"
+		},
+		{
+			"n": "112",
+			"heading": "Procedure for creating a municipality",
+			"ruleNo": "VIII",
+			"rule": "The petition is filed with the Bangsamoro Parliament through the Ministry of the Interior and Local Government, with the certifications on income, population and territory attached. A municipality is created only by an Act of the Bangsamoro Parliament and only after a majority vote in a plebiscite in the political units directly affected.",
+			"terms": "who creates a municipality parliament act petition plebiscite process"
+		},
+		{
+			"n": "118",
+			"heading": "Powers and functions of a municipality",
+			"ruleNo": "IX",
+			"rule": "A municipality delivers extension and on-site research services for agriculture and fishery; a municipal health office and primary health care, maternal and child care, and the purchase of medicines and medical supplies; social welfare services including programs for children, the elderly and persons with disability; information services; solid waste disposal and environmental management; municipal buildings, roads and bridges, school buildings, health centers, water supply systems, communal irrigation, artesian wells, the public market, a slaughterhouse and a public cemetery; public parks and a sports center; tourism facilities; and sites for police and fire stations and a municipal jail.",
+			"terms": "what does a municipality town do services functions responsibilities mayor"
+		},
+		{
+			"n": "125",
+			"heading": "Requirements for converting into a city",
+			"ruleNo": "X",
+			"rule": "A municipality or a cluster of barangays may be converted into a component city where it has an average annual income of at least ₱100,000,000 for the last two consecutive years based on constant prices, and either a contiguous territory of at least 100 square kilometers or a population of at least 150,000, certified by the ministries and agencies concerned. The territorial requirement need not be contiguous where it comprises two or more islands.",
+			"terms": "how to become a city conversion requirements income population cityhood"
+		},
+		{
+			"n": "134",
+			"heading": "Requirements for creating a province",
+			"ruleNo": "XII",
+			"rule": "A province may be created where it has an average annual income of at least ₱200,000,000 for the last two consecutive years based on constant prices, and either a contiguous territory of at least 2,000 square kilometers or a population of at least 250,000. The territory need not be contiguous where it comprises two or more islands or is separated by a chartered city.",
+			"terms": "how to create a new province requirements income land area population"
+		},
+		{
+			"n": "143",
+			"heading": "Powers and functions of a province",
+			"ruleNo": "XIII",
+			"rule": "A province delivers agricultural extension and on-site research; industrial research and development; enforcement of forestry laws limited to community-based forestry projects, pollution control and small-scale mining; provincial health services including hospitals and tertiary health services; social welfare services including rebel returnee and evacuee relief; provincial buildings, roads and bridges, inter-municipal waterworks, drainage and flood control; programs and projects for low-cost housing; investment support; upgrading and modernisation of tax information and collection; tourism development; and the dispersal of livestock and poultry.",
+			"terms": "what does a province do governor services functions responsibilities"
+		},
+		{
+			"n": "182",
+			"heading": "Qualifications of an elective local official",
+			"ruleNo": "XXIII",
+			"rule": "An elective local official must be a citizen of the Philippines, a registered voter in the barangay, municipality, city or province where he intends to be elected, a resident there for at least one year immediately before the election, and able to read and write Filipino, Arabic, English or any local language or dialect. A candidate for governor, vice governor or member of the sangguniang panlalawigan, or for mayor, vice mayor or member of the sangguniang panlungsod of a highly urbanised city, must be at least 23 years old on election day; for mayor or vice mayor of an independent component city, component city or municipality, at least 21; for member of the sangguniang panlungsod or sangguniang bayan, at least 18; for punong barangay or sangguniang barangay member, at least 18.",
+			"terms": "who can run for mayor governor kagawad age requirement qualifications candidate residency"
+		},
+		{
+			"n": "183",
+			"heading": "Disqualifications from running for local office",
+			"ruleNo": "XXIII",
+			"rule": "The following are disqualified from running for any elective local position: a person sentenced by final judgment for an offence involving moral turpitude or for an offence punishable by one year or more of imprisonment, within two years after serving sentence; a person removed from office as a result of an administrative case; a person convicted by final judgment for violating the oath of allegiance to the Republic; a dual citizen; a fugitive from justice in criminal or non-political cases here or abroad; a permanent resident of a foreign country or one who has acquired the right to reside abroad and continues to avail of it; and the insane or feeble-minded.",
+			"terms": "who cannot run disqualified banned convicted removed dual citizen green card"
+		},
+		{
+			"n": "184",
+			"heading": "Relatives within the second civil degree",
+			"ruleNo": "XXIII",
+			"rule": "No person related within the second civil degree of consanguinity or affinity to an incumbent elective official of the same local government unit may run for an elective position in that unit in the same election. A candidate declares in the certificate of candidacy that he is not so related, and a false declaration is a ground for the denial or cancellation of the certificate.",
+			"terms": "political dynasty relative running same family second degree brother wife son certificate of candidacy"
+		},
+		{
+			"n": "185",
+			"heading": "Term of office of local officials",
+			"ruleNo": "XXIII",
+			"rule": "Elective local officials serve a term of three years starting at noon on the 30th day of June following the election, and no such official may serve for more than three consecutive terms in the same position. Voluntary renunciation of the office for any length of time is not an interruption of the continuity of service for the full term for which the official was elected.",
+			"terms": "how long is a term three years term limit reelection mayor governor when do they assume office june 30"
+		},
+		{
+			"n": "187",
+			"heading": "Salaries of local officials",
+			"ruleNo": "XXIII",
+			"rule": "The salary of a local official is fixed by ordinance of the sanggunian concerned, within the limits of the Salary Standardization Law and the personal services limitation. A provincial governor is at Salary Grade 30, a city mayor of a highly urbanised city at Salary Grade 30, a vice governor and a city vice mayor at Salary Grade 28, a municipal mayor at Salary Grade 27 and a municipal vice mayor at Salary Grade 25. The punong barangay and the other barangay officials receive honoraria at the rates fixed in these Rules and not salaries.",
+			"terms": "sahod salary of a mayor governor vice mayor how much do they earn salary grade"
+		},
+		{
+			"n": "189",
+			"heading": "Practice of profession by a local official",
+			"ruleNo": "XXIII",
+			"rule": "A governor, city mayor, municipal mayor, punong barangay, vice governor and vice mayor may not practice their profession or engage in any occupation other than the exercise of their functions. A sanggunian member may practice a profession or engage in an occupation except during session hours, but a sanggunian member who is also a lawyer may not appear as counsel in a civil case where the local government unit is the adverse party, in a criminal case where an officer of the government is accused of an offence committed in office, or in an administrative proceeding before a government office; nor may a doctor of medicine be so restricted from rendering free medical service to the public.",
+			"terms": "can a mayor practice law private practice business sideline lawyer doctor sanggunian member"
+		},
+		{
+			"n": "191",
+			"heading": "Permanent vacancy in the office of the local chief executive",
+			"ruleNo": "XXIV",
+			"rule": "If a governor, city or municipal mayor becomes permanently vacant, the vice governor or vice mayor concerned becomes the governor or mayor. If the vice governor or vice mayor also becomes permanently vacant, the highest-ranking sanggunian member becomes the vice governor or vice mayor, and the second highest-ranking member succeeds to the office vacated. Ranking is determined by the proportion of votes obtained by each winning candidate to the total number of registered voters in each district in the immediately preceding election.",
+			"terms": "succession who takes over if the mayor dies resigns vacancy ranking"
+		},
+		{
+			"n": "192",
+			"heading": "Permanent vacancy in the sanggunian",
+			"ruleNo": "XXIV",
+			"rule": "A permanent vacancy in the sangguniang panlalawigan, panlungsod or bayan is filled by appointment by the Chief Minister for the sangguniang panlalawigan and the sangguniang panlungsod of a highly urbanised or independent component city, and by the governor for the sangguniang panlungsod of a component city and the sangguniang bayan. The appointee comes from the political party of the sanggunian member who caused the vacancy, on the nomination of that party. A permanent vacancy in the sangguniang barangay is filled by appointment by the city or municipal mayor on the recommendation of the sangguniang barangay.",
+			"terms": "replacement appointed to fill a vacant council seat kagawad died resigned party nomination"
+		},
+		{
+			"n": "193",
+			"heading": "Temporary vacancy in the office of the local chief executive",
+			"ruleNo": "XXIV",
+			"rule": "When a local chief executive is temporarily incapacitated — by leave of absence, travel abroad or suspension from office — the vice governor or vice mayor exercises the powers of the office, except the power to appoint, suspend or dismiss employees, which may be exercised only if the incapacity exceeds 30 working days.",
+			"terms": "acting mayor officer in charge oic when the mayor is away on leave suspended 30 days"
+		},
+		{
+			"n": "195",
+			"heading": "Grounds for disciplinary action",
+			"ruleNo": "XXV",
+			"rule": "An elective local official may be disciplined, suspended or removed for disloyalty to the Republic; culpable violation of the Constitution or the Bangsamoro Organic Law; dishonesty, oppression, misconduct in office, gross negligence or dereliction of duty; commission of an offence involving moral turpitude or punishable by at least prision mayor; abuse of authority; unauthorised absence for 15 consecutive working days, except in the case of a sanggunian member; acquisition of foreign citizenship or residence or the status of an immigrant of another country; and any other ground provided by law.",
+			"terms": "how to remove a mayor complaint case against official grounds misconduct absent abuse"
+		},
+		{
+			"n": "196",
+			"heading": "Where a complaint is filed",
+			"ruleNo": "XXV",
+			"rule": "A verified complaint against an elective provincial, highly urbanised city or independent component city official is filed with the Office of the Chief Minister; against an elective municipal official, with the sangguniang panlalawigan; and against an elective barangay official, with the sangguniang panlungsod or sangguniang bayan concerned, whose decision is final and executory.",
+			"terms": "where do i file a complaint against a mayor barangay captain governor which office"
+		},
+		{
+			"n": "198",
+			"heading": "Preventive suspension",
+			"ruleNo": "XXV",
+			"rule": "Preventive suspension may be imposed after the issues are joined, when the evidence of guilt is strong and there is great probability that continuance in office would influence the witnesses or pose a threat to the records. A single preventive suspension may not exceed 60 days, and where several administrative cases are filed against an official he may not be preventively suspended for more than 90 days within a single year on the same ground existing and known at the time of the first suspension. The official is reinstated automatically at the expiry of the period.",
+			"terms": "preventive suspension how long 60 days 90 days suspended mayor reinstated"
+		},
+		{
+			"n": "199",
+			"heading": "Salary during suspension",
+			"ruleNo": "XXV",
+			"rule": "An official preventively suspended receives no salary or compensation during the suspension, but on exoneration and reinstatement is paid the full amount of the salary and emoluments not received during the suspension.",
+			"terms": "is a suspended official paid back pay salary during suspension cleared"
+		},
+		{
+			"n": "200",
+			"heading": "Time limit on the investigation",
+			"ruleNo": "XXV",
+			"rule": "The investigation of an administrative complaint must be terminated within 90 days of its start, and the office or body conducting it renders a decision in writing within 30 days after the end of the investigation.",
+			"terms": "how long does an administrative case take 90 days decision 30 days"
+		},
+		{
+			"n": "201",
+			"heading": "Penalties in administrative cases",
+			"ruleNo": "XXV",
+			"rule": "The penalty of suspension may not exceed the unexpired term of the official, and in no case may it exceed six months for a single offence. The penalty of removal is a bar to the candidacy of the official for any elective position. An elective official may be removed from office only by order of a proper court.",
+			"terms": "penalty for a mayor found guilty suspension six months removal banned from running"
+		},
+		{
+			"n": "204",
+			"heading": "Appeal from a decision",
+			"ruleNo": "XXV",
+			"rule": "A decision in an administrative case may be appealed within 30 days of receipt — to the sangguniang panlalawigan where the decision was rendered by a sangguniang panlungsod or bayan over a barangay official, and to the Office of the Chief Minister where it was rendered by a sangguniang panlalawigan or a sangguniang panlungsod of a highly urbanised or independent component city. The decision of the Office of the Chief Minister is final and executory.",
+			"terms": "appeal an administrative decision 30 days where to appeal chief minister"
+		},
+		{
+			"n": "206",
+			"heading": "Appeal fee and form",
+			"ruleNo": "XXV",
+			"rule": "The appeal is filed in three legible copies with proof of service on the adverse party, accompanied by an appeal fee of ₱3,000 and a memorandum of appeal stating the grounds relied on. A decision becomes final and executory 15 days after receipt if no appeal is taken.",
+			"terms": "appeal fee how much 3000 copies memorandum final 15 days"
+		},
+		{
+			"n": "223",
+			"heading": "Recall of a local official",
+			"ruleNo": "XXVI",
+			"rule": "An elective local official may be removed from office on the ground of loss of confidence, by a recall election initiated by the registered voters of the local government unit concerned. Recall is exercised only once during the term of office of the official, and no recall may take place within one year of the official assuming office or within one year immediately preceding a regular local election.",
+			"terms": "recall remove an official loss of confidence how often once per term one year"
+		},
+		{
+			"n": "224",
+			"heading": "Petition for recall and the number of signatures required",
+			"ruleNo": "XXVI",
+			"rule": "The recall petition must be signed by at least 25 per cent of the registered voters where the unit has up to 20,000 voters; at least 20 per cent where it has more than 20,000 but not more than 75,000, and in no case fewer than 5,000; at least 15 per cent where it has more than 75,000 but not more than 300,000, and in no case fewer than 15,000; and at least 10 per cent where it has more than 300,000, and in no case fewer than 45,000.",
+			"terms": "how many signatures to recall a mayor percentage requirement petition voters"
+		},
+		{
+			"n": "226",
+			"heading": "The recall election",
+			"ruleNo": "XXVI",
+			"rule": "The Commission on Elections sets the recall election within 30 days of the certification of the sufficiency of the petition in the case of a barangay, city or municipal official, and within 45 days in the case of a provincial official. The official sought to be recalled is automatically a candidate, and continues in office until a successor is elected and qualified.",
+			"terms": "when is the recall election held 30 days 45 days is the official a candidate"
+		},
+		{
+			"n": "228",
+			"heading": "Expenses of a recall election",
+			"ruleNo": "XXVI",
+			"rule": "All expenses of the recall election are borne by the Commission on Elections and are included in its annual budget; no part of them is charged to the local government unit concerned.",
+			"terms": "who pays for a recall election cost comelec budget"
+		},
+		{
+			"n": "229",
+			"heading": "Mandatory appointive officials of a province",
+			"ruleNo": "XXVII",
+			"rule": "A province must have a secretary to the sanggunian, a treasurer, an assessor, an accountant, an engineer, a budget officer, a planning and development coordinator, a legal officer, an administrator, a health officer, a social welfare and development officer, a general services officer, an agriculturist and a veterinarian.",
+			"terms": "what offices must a province have required officials positions department heads"
+		},
+		{
+			"n": "230",
+			"heading": "Mandatory appointive officials of a city",
+			"ruleNo": "XXVII",
+			"rule": "A city must have a secretary to the sanggunian, a treasurer, an assessor, an accountant, an engineer, a budget officer, a planning and development coordinator, a legal officer, an administrator, a health officer, a social welfare and development officer, a general services officer, a veterinarian and an architect.",
+			"terms": "what offices must a city have required officials positions department heads"
+		},
+		{
+			"n": "231",
+			"heading": "Mandatory appointive officials of a municipality",
+			"ruleNo": "XXVII",
+			"rule": "A municipality must have a secretary to the sanggunian, a treasurer, an assessor, an accountant, a budget officer, a planning and development coordinator, an engineer, a health officer and a civil registrar. A municipal administrator, a legal officer, an agriculturist, an environment and natural resources officer, a social welfare and development officer, an architect and an information officer are optional and may be appointed as the sanggunian provides.",
+			"terms": "what offices must a municipality have required optional officials department heads town hall"
+		},
+		{
+			"n": "233",
+			"heading": "Appointment of department heads",
+			"ruleNo": "XXVII",
+			"rule": "Heads of departments and offices are appointed by the local chief executive with the concurrence of the majority of all the sanggunian members, subject to civil service law, rules and regulations. The sanggunian acts on the appointment within 15 days of its submission, otherwise the appointment is deemed confirmed.",
+			"terms": "who appoints department heads confirmation sanggunian 15 days deemed confirmed"
+		},
+		{
+			"n": "236",
+			"heading": "The local administrator",
+			"ruleNo": "XXVII",
+			"rule": "The local administrator develops plans and strategies for the management of the unit, assists in the coordination of the work of all officials, and recommends measures on personnel administration. The position is mandatory for a province and a city and optional for a municipality.",
+			"terms": "what does an administrator do duties mandatory optional"
+		},
+		{
+			"n": "240",
+			"heading": "The local treasurer",
+			"ruleNo": "XXVII",
+			"rule": "The treasurer takes custody of and is accountable for all local government funds, takes charge of the disbursement of all funds and such other funds as may be entrusted by law or ordinance, inspects the books of persons subject to local taxes, maintains and updates the tax information system, and certifies to the availability of funds whenever necessary. The treasurer is appointed by the Minister of Finance, Budget and Management from a list of at least three ranking eligible recommendees of the local chief executive.",
+			"terms": "what does the treasurer do duties who appoints the treasurer"
+		},
+		{
+			"n": "243",
+			"heading": "The local assessor",
+			"ruleNo": "XXVII",
+			"rule": "The assessor ensures that all laws and policies on the appraisal and assessment of real property are properly executed, installs and maintains a real property identification and accounting system, prepares and submits an assessment roll of all real property, and conducts frequent physical surveys to verify and determine whether all real property is properly listed in the assessment rolls.",
+			"terms": "what does the assessor do duties property valuation tax declaration"
+		},
+		{
+			"n": "248",
+			"heading": "The local health officer",
+			"ruleNo": "XXVII",
+			"rule": "The health officer takes charge of the office on health services, supervises the personnel and staff of that office, formulates measures and provides technical assistance on health, and is the local government unit’s health and sanitation authority. The position is mandatory for a province, a city and a municipality.",
+			"terms": "what does the health officer do municipal doctor duties mandatory"
+		},
+		{
+			"n": "256",
+			"heading": "Qualifications and civil service coverage",
+			"ruleNo": "XXVII",
+			"rule": "Appointive local officials and employees are covered by civil service law, rules and regulations, and must possess the qualification standards for the position, including the education, experience, training and eligibility the Civil Service Commission prescribes.",
+			"terms": "civil service eligibility requirements for local government job qualification standards"
+		},
+		{
+			"n": "399",
+			"heading": "Appointments, nepotism and temporary employment",
+			"ruleNo": "XLII",
+			"rule": "No person may be appointed in the local government service if he is related within the fourth civil degree of consanguinity or affinity to the appointing or recommending authority. A temporary appointment to a career position may not exceed 12 months, and a casual appointment may not exceed six months. All appointments are submitted to the Civil Service Commission for attestation within 30 days of issuance, and an appointment not so submitted is ineffective.",
+			"terms": "nepotism relative hiring fourth degree temporary casual appointment how long civil service attestation"
+		},
+		{
+			"n": "406",
+			"heading": "Leave of absence of local officials and employees",
+			"ruleNo": "XLII",
+			"rule": "Local officials and employees are entitled to 15 days of vacation leave and 15 days of sick leave with full pay for every year of service, cumulative and commutable. A female employee is entitled to 105 days of maternity leave with full pay, and a male employee to seven days of paternity leave for the first four deliveries of his legitimate spouse. Leave of the local chief executive is approved by the Chief Minister through the Ministry of the Interior and Local Government.",
+			"terms": "vacation sick leave how many days maternity paternity who approves the mayor leave"
+		},
+		{
+			"n": "407",
+			"heading": "Prohibited business and pecuniary interest",
+			"ruleNo": "XLIII",
+			"rule": "A local official or employee may not engage in any business transaction with the local government unit he serves, or with any of its offices, in which he is pecuniarily interested; hold an interest in any cockpit or other game licensed by the unit; purchase any real estate or other property forfeited in favor of the unit for unpaid taxes at the public auction; be a surety for any person contracting or doing business with the unit for which a surety is required; or possess or use any public property for private purposes.",
+			"terms": "conflict of interest can a mayor do business with the town cockpit auction surety corruption prohibited"
+		},
+		{
+			"n": "411",
+			"heading": "Penalty for prohibited business and pecuniary interest",
+			"ruleNo": "XLIII",
+			"rule": "This article sets the penalty for a violation of the prohibition on business and pecuniary interest at imprisonment of six months and one day to six years, or a fine of not less than ₱3,000 and not more than ₱10,000, or both at the discretion of the court. Section 574 of the Code itself sets the fine for the same violation at not less than ₱40,000 and not more than ₱1,200,000. The two do not agree, and the Code prevails over its implementing rules, so the ₱40,000 to ₱1,200,000 range is the one in force.",
+			"terms": "penalty fine jail for conflict of interest prohibited business how much multa parusa"
+		},
+		{
+			"n": "415",
+			"heading": "Penalty for other violations of the Code",
+			"ruleNo": "XLIII",
+			"rule": "Unless otherwise provided, a person who violates a provision of the Code for which no penalty is specifically fixed is punished by imprisonment of not less than one month and not more than six months, or a fine of not less than ₱40,000 and not more than ₱1,200,000, or both at the discretion of the court. Where the offender is a local official or employee, the penalty includes dismissal from the service with disqualification from holding public office and forfeiture of retirement benefits.",
+			"terms": "penalty fine for violating the code how much jail time general penalty multa"
+		},
+		{
+			"n": "404",
+			"heading": "Honoraria in the provisions carried over from national law",
+			"ruleNo": "XLII",
+			"rule": "This article carries an older schedule of barangay honoraria — not less than ₱1,000 a month for the punong barangay and ₱600 a month for a sangguniang barangay member. Article 45 of these same Rules, and Section 424 of the Code, fix the floors at ₱5,000 for the punong barangay and ₱3,000 for the other officials. The published IRR contradicts itself here; the Article 45 figures are the ones consistent with the Code and control.",
+			"terms": "barangay honorarium conflicting rates 1000 600 which is correct contradiction"
+		},
+		{
+			"n": "268",
+			"heading": "The local development council",
+			"ruleNo": "XXX",
+			"rule": "Every province, city, municipality and barangay has a local development council that assists the sanggunian in setting the direction of economic and social development and coordinates development efforts within its territory. The council is headed by the local chief executive and meets at least once every six months.",
+			"terms": "local development council ldc what is it who heads it meetings"
+		},
+		{
+			"n": "269",
+			"heading": "Composition of the local development council",
+			"ruleNo": "XXX",
+			"rule": "A city or municipal development council is composed of the mayor as chairperson, all punong barangay of the unit, the chairperson of the sanggunian committee on appropriations, the member of the House of Representatives or a representative, and representatives of non-governmental organizations operating in the unit who constitute not less than one fourth of the members of the fully organized council.",
+			"terms": "who sits on the development council ngo representation one fourth composition"
+		},
+		{
+			"n": "271",
+			"heading": "Women in local special bodies",
+			"ruleNo": "XXX",
+			"rule": "At least 40 per cent of the members of every local special body — the development council, the school board, the health board, the peace and order council and the disaster risk reduction and management council — must be women, and the local chief executive ensures the representation of indigenous peoples, youth and persons with disability in them.",
+			"terms": "women representation quota 40 percent gender in councils boards"
+		},
+		{
+			"n": "280",
+			"heading": "The local school board",
+			"ruleNo": "XXX",
+			"rule": "A provincial, city or municipal school board is co-chaired by the local chief executive and the schools division superintendent, with the chairperson of the sanggunian committee on education, the treasurer, the representative of the pederasyon ng mga sangguniang kabataan, the duly elected president of the federation of parent-teacher associations, the duly elected representative of the teachers’ organizations and the duly elected representative of the non-academic personnel as members.",
+			"terms": "school board composition who sits deped superintendent pta teachers"
+		},
+		{
+			"n": "282",
+			"heading": "The special education fund",
+			"ruleNo": "XXX",
+			"rule": "The local school board determines the annual supplementary budget for the operation and maintenance of public schools out of the proceeds of the additional one per cent tax on real property constituting the Special Education Fund. The fund may be spent on the construction and repair of school buildings, educational research, the purchase of books and periodicals and sports development.",
+			"terms": "sef special education fund what can it be spent on 1 percent real property tax"
+		},
+		{
+			"n": "286",
+			"heading": "The local health board",
+			"ruleNo": "XXX",
+			"rule": "A provincial, city or municipal health board is chaired by the local chief executive with the health officer as vice chairperson, and includes the chairperson of the sanggunian committee on health, a representative of the Ministry of Health and a representative of a non-governmental organization involved in health services. It proposes the annual budgetary allocations for the operation and maintenance of health facilities and services.",
+			"terms": "health board composition who sits budget for health facilities"
+		},
+		{
+			"n": "292",
+			"heading": "The local peace and order council",
+			"ruleNo": "XXX",
+			"rule": "Every province, city and municipality has a peace and order council chaired by the local chief executive, which formulates plans and recommends measures to improve or enhance peace and order and public safety, monitors the implementation of peace and order programs, and makes periodic assessments of the prevailing peace and order situation.",
+			"terms": "peace and order council popc what does it do composition"
+		},
+		{
+			"n": "298",
+			"heading": "The local disaster risk reduction and management council",
+			"ruleNo": "XXX",
+			"rule": "Every province, city and municipality has a disaster risk reduction and management council chaired by the local chief executive, and every barangay has a barangay disaster risk reduction and management committee chaired by the punong barangay. The council approves the local disaster risk reduction and management plan and administers the local disaster risk reduction and management fund.",
+			"terms": "ldrrmc bdrrmc disaster council calamity who chairs plan fund"
+		},
+		{
+			"n": "305",
+			"heading": "People’s and non-governmental organizations",
+			"ruleNo": "XXX",
+			"rule": "Local government units promote the establishment and operation of people’s organizations, non-governmental organizations and the private sector, and may enter into joint ventures and cooperative arrangements with them to deliver basic services, build capacity and improve the delivery of local facilities. A local government unit may extend financial or other forms of assistance to such organizations for economic, socially oriented and environmental projects.",
+			"terms": "ngo po civil society partnership joint venture assistance accreditation"
+		},
+		{
+			"n": "363",
+			"heading": "Naming of local government units and public places",
+			"ruleNo": "XXXVIII",
+			"rule": "The sanggunian may change the name of a barangay, a public place, a street, a structure or a local institution, subject to a plebiscite where a local government unit is renamed. No change of name may be made more than once every 10 years, and no public place, street or structure may be named after a living person.",
+			"terms": "rename a barangay street can you name something after a living person how often 10 years"
+		},
+		{
+			"n": "367",
+			"heading": "Devolution of basic services",
+			"ruleNo": "XXXIX",
+			"rule": "The Bangsamoro Government devolves to local government units the responsibility for the delivery of the basic services and facilities enumerated in these Rules, together with the personnel, assets, equipment and records pertaining to them, over a transition period of five years.",
+			"terms": "devolution transfer of services how long five years personnel assets"
+		},
+		{
+			"n": "372",
+			"heading": "Full devolution status",
+			"ruleNo": "XXXIX",
+			"rule": "The Islamic City of Marawi, the City of Cotabato and the Province of Basilan are recognized as having attained full devolution status, and the Ministry of the Interior and Local Government monitors and certifies the devolution status of the other local government units.",
+			"terms": "which lgus are fully devolved marawi cotabato city basilan status"
+		},
+		{
+			"n": "378",
+			"heading": "Eminent domain by a local government unit",
+			"ruleNo": "XL",
+			"rule": "A local government unit may, through its chief executive and acting under an ordinance, exercise the power of eminent domain for a public use, purpose or welfare, particularly for the benefit of the poor and the landless, on payment of just compensation, and only after a valid and definite offer has been made to the owner and was not accepted. The unit may immediately take possession of the property on the filing of the expropriation proceedings and on making a deposit with the proper court of at least 15 per cent of the fair market value of the property based on the current tax declaration.",
+			"terms": "expropriation can the government take my land eminent domain deposit 15 percent just compensation"
+		},
+		{
+			"n": "384",
+			"heading": "Reclassification of agricultural land",
+			"ruleNo": "XL",
+			"rule": "A city or municipality may, through an ordinance passed after public hearings, reclassify agricultural land not devoted to or no longer economically feasible for agricultural purposes, or where the land will have a greater economic value for a residential, commercial or industrial purpose. The reclassification may not exceed 15 per cent of the total agricultural land area at the time of the passage of the ordinance for a highly urbanised or independent component city, 10 per cent for a component city or a first to third class municipality, and 5 per cent for a fourth to sixth class municipality.",
+			"terms": "reclassify farm land to residential commercial conversion limit percentage ordinance"
+		},
+		{
+			"n": "386",
+			"heading": "Land reclassified from agricultural use is not exempt from CARP",
+			"ruleNo": "XL",
+			"rule": "Reclassification of agricultural land does not exempt it from the coverage of the Comprehensive Agrarian Reform Program, and land already distributed to agrarian reform beneficiaries may not be reclassified.",
+			"terms": "carp agrarian reform can reclassified land be exempt beneficiaries"
+		},
+		{
+			"n": "389",
+			"heading": "Closure and opening of roads",
+			"ruleNo": "XL",
+			"rule": "A local government unit may permanently or temporarily close or open any local road, alley, park or square within its jurisdiction by an ordinance approved by at least two thirds of all the members of the sanggunian, and after the adequate provision of a substitute for the road being closed. A permanent closure requires that notice be posted for at least three weeks and, where the closure is for a purpose other than the public interest, a public hearing.",
+			"terms": "close a road street permanently two thirds vote posting three weeks"
+		},
+		{
+			"n": "390",
+			"heading": "Temporary closure for a fiesta or an activity",
+			"ruleNo": "XL",
+			"rule": "A local road may be temporarily closed for an actual emergency, a fiesta celebration, a public rally, an agricultural or industrial fair or an undertaking of a national or local public works project. A closure for a fiesta celebration may not exceed nine days, and no national or local road may be temporarily closed for an athletic, cultural or civic activity that is not officially sponsored, recognized or approved by the local government unit.",
+			"terms": "close the street for a fiesta how many days nine basketball court activity"
+		},
+		{
+			"n": "392",
+			"heading": "Settlement of boundary disputes",
+			"ruleNo": "XLI",
+			"rule": "A boundary dispute between two or more barangays in the same city or municipality is referred for settlement to the sangguniang panlungsod or bayan concerned; between two or more municipalities in the same province, to the sangguniang panlalawigan; between municipalities or component cities of different provinces, jointly to the sanggunians of the provinces concerned; and between a component city or municipality and a highly urbanised city, or between two highly urbanised cities, jointly to the respective sanggunians.",
+			"terms": "boundary dispute between barangays towns who settles it jurisdiction"
+		},
+		{
+			"n": "393",
+			"heading": "Time to settle a boundary dispute and to appeal",
+			"ruleNo": "XLI",
+			"rule": "The sanggunian concerned settles the boundary dispute amicably within 60 days of the referral. Where it fails, the dispute is formally tried by the sanggunian, which issues a decision within 60 days of the trial. An aggrieved party may appeal the decision to the proper Regional Trial Court within one year of the decision becoming final and executory.",
+			"terms": "how long to settle a boundary dispute 60 days appeal court one year"
+		},
+		{
+			"n": "430",
+			"heading": "Fundamental principles of local taxation",
+			"ruleNo": "XLVI",
+			"rule": "Local taxation is uniform in each local government unit; is equitable and based as far as practicable on the taxpayer’s ability to pay; is levied and collected only for a public purpose; is not unjust, excessive, oppressive or confiscatory; is not contrary to law, public policy, national economic policy or in restraint of trade; and the revenue collected accrues solely to the local government unit levying the tax.",
+			"terms": "principles of local tax rules fair uniform ability to pay"
+		},
+		{
+			"n": "432",
+			"heading": "Procedure for enacting a tax ordinance",
+			"ruleNo": "XLVI",
+			"rule": "No tax ordinance or revenue measure may be enacted without a prior public hearing conducted for the purpose. Within 10 days of approval, the ordinance is published in full for three consecutive days in a newspaper of local circulation, or, where there is none, posted in at least two conspicuous and publicly accessible places.",
+			"terms": "public hearing required tax ordinance publication posting 10 days three days"
+		},
+		{
+			"n": "434",
+			"heading": "Authority to adjust tax rates",
+			"ruleNo": "XLVI",
+			"rule": "A local government unit may adjust its tax rates as prescribed in these Rules, but the adjustment may not be oftener than once every five years and in no case may the adjustment exceed 10 per cent of the rates fixed.",
+			"terms": "can the town raise taxes how often five years 10 percent increase limit"
+		},
+		{
+			"n": "437",
+			"heading": "Provincial tax on the transfer of real property",
+			"ruleNo": "XLVII",
+			"rule": "A province may levy a tax on the sale, donation, barter or any other mode of transferring ownership or title to real property at not more than one half of one per cent of the total consideration or of the fair market value, whichever is higher. The seller or transferor pays it within 60 days of the execution of the deed or of the death of the decedent.",
+			"terms": "transfer tax on selling land how much half of one percent 60 days who pays"
+		},
+		{
+			"n": "439",
+			"heading": "Municipal tax on businesses",
+			"ruleNo": "XLVIII",
+			"rule": "A municipality may impose a graduated tax on businesses. On manufacturers, assemblers and processors the tax runs from ₱165 a year on gross sales of less than ₱10,000 up to ₱24,375 on gross sales of ₱5,000,000 to ₱6,499,999, and on ₱6,500,000 or more a rate of not exceeding 37½ per cent of one per cent. On retailers the rate is two per cent on gross sales of ₱400,000 or less and one per cent on the excess above ₱400,000; where a barangay already levies the tax on a retailer with gross sales of ₱50,000 or less, the municipality may not. On contractors the tax runs from ₱27.50 a year up to a rate of not exceeding 50 per cent of one per cent on gross receipts of ₱2,000,000 or more. On banks and other financial institutions the rate is not exceeding 50 per cent of one per cent of gross receipts.",
+			"terms": "business tax how much does a store pay permit retailer manufacturer contractor gross sales rate"
+		},
+		{
+			"n": "441",
+			"heading": "Situs of the tax on business",
+			"ruleNo": "XLVIII",
+			"rule": "Where a business maintains a branch or sales outlet, the tax is paid to the municipality where the branch or outlet is located. Where there is no branch or outlet, the sale is recorded in the principal office and the tax accrues there. Where a manufacturer has a factory, project office, plant or plantation in another locality, 30 per cent of all sales recorded in the principal office is taxable where the principal office is located and 70 per cent where the factory, plant or plantation is located.",
+			"terms": "which town do i pay business tax to branch factory 30 70 split situs"
+		},
+		{
+			"n": "444",
+			"heading": "Payment of business taxes",
+			"ruleNo": "XLVIII",
+			"rule": "Business taxes are payable for every separate or distinct establishment or place where the business is conducted, and one line of business does not become exempt by being conducted with some other business for which the tax has been paid. The tax is payable within the first 20 days of January or of each subsequent quarter, and the sanggunian may grant a surcharge-free extension of not more than six months for a justifiable reason.",
+			"terms": "when to pay business tax deadline january 20 quarterly extension"
+		},
+		{
+			"n": "447",
+			"heading": "The professional tax",
+			"ruleNo": "XLVIII",
+			"rule": "A province may levy an annual professional tax on each person engaged in the exercise of a profession requiring government examination at a rate the sanggunian determines, not exceeding ₱1,300. The tax is payable on or before the 31st of January, or before beginning to practice, to the province where the professional practices or maintains a principal office. A professional who has paid it is entitled to practice anywhere in the country without being subject to any other national or local tax for that practice.",
+			"terms": "professional tax ptr how much lawyer doctor engineer nurse 1300 when to pay"
+		},
+		{
+			"n": "448",
+			"heading": "The amusement tax",
+			"ruleNo": "XLVIII",
+			"rule": "A province may levy an amusement tax on the proprietors, lessees or operators of theatres, cinemas, concert halls, circuses, boxing stadia and other places of amusement at a rate of not more than 10 per cent of the gross receipts from admission fees. The tax is shared equally by the province and the municipality where the place of amusement is located. Holding of operas, concerts, dramas, recitals, painting and art exhibitions, flower shows, musical programs and literary and oratorical presentations is exempt.",
+			"terms": "amusement tax cinema movie theatre boxing how much 10 percent exempt"
+		},
+		{
+			"n": "449",
+			"heading": "Annual fixed tax on delivery trucks and vans",
+			"ruleNo": "XLVIII",
+			"rule": "A province may levy an annual fixed tax of not more than ₱2,200 on every truck, van or vehicle used by a manufacturer, producer, wholesaler, dealer or retailer in the delivery or distribution of distilled spirits, fermented liquors, soft drinks, cigars and cigarettes and other products to sales outlets or consumers within the province. A municipality may levy the same tax at not more than ₱6,600 where the province does not.",
+			"terms": "delivery truck van tax how much 2200 6600 distributor"
+		},
+		{
+			"n": "452",
+			"heading": "The community tax",
+			"ruleNo": "XLIX",
+			"rule": "A city or municipality may levy a community tax. An individual 18 years or over who is regularly employed on a wage or salary basis for at least 30 consecutive working days during any calendar year, or who is engaged in business or occupation, or who owns real property with an aggregate assessed value of ₱1,000 or more, or who is required by law to file an income tax return, pays an annual community tax of ₱20 plus ₱1 for every ₱1,000 of income regardless of whether from business, exercise of profession or property, but the additional tax may not exceed ₱5,000. A corporation pays ₱1,000 plus an additional tax not exceeding ₱10,000 computed on its assessed property and gross receipts.",
+			"terms": "cedula community tax certificate how much does it cost 20 pesos where to get sedula"
+		},
+		{
+			"n": "454",
+			"heading": "When the community tax is paid",
+			"ruleNo": "XLIX",
+			"rule": "The community tax accrues on the first day of January of each year and is paid not later than the last day of February. A person who reaches 18 or otherwise becomes liable on or before the last day of June pays it within 20 days of that date; a person who becomes liable after the 30th of June is not liable for that year. An unpaid community tax bears interest of 24 per cent a year from the due date until it is paid.",
+			"terms": "cedula deadline when to pay community tax february interest penalty late"
+		},
+		{
+			"n": "455",
+			"heading": "Exemption from the community tax",
+			"ruleNo": "XLIX",
+			"rule": "Diplomatic and consular representatives, and transient visitors whose stay in the Philippines does not exceed three months, are exempt from the community tax.",
+			"terms": "who is exempt from cedula community tax diplomat tourist"
+		},
+		{
+			"n": "457",
+			"heading": "Barangay taxes and fees",
+			"ruleNo": "XLIX",
+			"rule": "A barangay may levy a tax on stores or retailers with fixed business establishments whose gross sales for the preceding calendar year do not exceed ₱50,000 in a city or ₱30,000 in a municipality, at a rate of not more than one per cent of gross sales; service fees or charges for the use of barangay-owned properties or service facilities; a barangay clearance fee; and reasonable fees on commercial breeding of fighting cocks, cockfights and cockpits, places of recreation charging admission fees, and billboards and other outdoor advertisements.",
+			"terms": "what taxes can a barangay collect sari sari store tax barangay clearance fee how much"
+		},
+		{
+			"n": "459",
+			"heading": "Surcharge and interest on unpaid local taxes",
+			"ruleNo": "XLIX",
+			"rule": "The sanggunian may impose a surcharge of not more than 25 per cent of the amount of a tax, fee or charge not paid on time, plus interest of not more than two per cent a month on the unpaid amount including the surcharge, until it is fully paid — but in no case may the total interest exceed 36 months.",
+			"terms": "penalty for late payment of local tax surcharge interest 25 percent how much maximum"
+		},
+		{
+			"n": "505",
+			"heading": "Declaration of real property by the owner",
+			"ruleNo": "LIII",
+			"rule": "A person acquiring real property, or making an improvement on it, files with the assessor a sworn statement declaring its true value within 60 days of the acquisition or of the completion or occupancy of the improvement. Every owner also files a sworn statement of the value of the property once every three years, during the period from the first day of January to the 30th of June.",
+			"terms": "tax declaration how to declare property 60 days sworn statement every three years"
+		},
+		{
+			"n": "512",
+			"heading": "Classes of real property for assessment",
+			"ruleNo": "LIII",
+			"rule": "Real property is classified for assessment purposes as residential, agricultural, commercial, industrial, mineral, timberland or special. Special classes are lands, buildings and other improvements actually, directly and exclusively used for hospitals, cultural or scientific purposes, and those owned and used by local water districts and government-owned or controlled corporations rendering essential public services in the supply and distribution of water and generation and transmission of electric power.",
+			"terms": "classification of land residential agricultural commercial industrial special class"
+		},
+		{
+			"n": "515",
+			"heading": "Assessment levels",
+			"ruleNo": "LIII",
+			"rule": "The assessment level is fixed by ordinance and may not exceed: for land, 20 per cent residential, 40 per cent agricultural, 50 per cent commercial, industrial and mineral, and 20 per cent timberland. For a residential building the level runs from nil where the fair market value does not exceed ₱175,000 up to 60 per cent where it exceeds ₱10,000,000; for an agricultural building from 25 to 50 per cent; and for a commercial or industrial building from 30 to 80 per cent. Machinery is assessed at 50 per cent for residential, 40 per cent for agricultural and 80 per cent for commercial and industrial use. Special classes are assessed at 15 per cent for cultural, scientific and hospital property and 10 per cent for local water districts and government-owned corporations supplying water and power.",
+			"terms": "assessment level how is my property assessed percentage residential agricultural commercial machinery"
+		},
+		{
+			"n": "517",
+			"heading": "General revision of assessments",
+			"ruleNo": "LIII",
+			"rule": "The assessor undertakes a general revision of real property assessments and property classification once every three years, and the schedule of fair market values is prepared by the assessor and enacted by ordinance of the sanggunian before the general revision takes effect.",
+			"terms": "revaluation reassessment how often three years schedule of market values"
+		},
+		{
+			"n": "530",
+			"heading": "Rates of the basic real property tax",
+			"ruleNo": "LIV",
+			"rule": "A province may levy an annual ad valorem tax on real property at a rate not exceeding one per cent of the assessed value, and a city or a municipality within the Metropolitan Manila Area at a rate not exceeding two per cent.",
+			"terms": "amilyar real property tax rate how much 1 percent 2 percent province city"
+		},
+		{
+			"n": "531",
+			"heading": "The additional levy for the Special Education Fund",
+			"ruleNo": "LIV",
+			"rule": "A province, city or municipality may levy an additional one per cent on the assessed value of real property, the proceeds of which accrue exclusively to the Special Education Fund.",
+			"terms": "sef additional 1 percent real property tax education fund amilyar"
+		},
+		{
+			"n": "532",
+			"heading": "The additional ad valorem tax on idle lands",
+			"ruleNo": "LIV",
+			"rule": "A province, city or municipality may levy an annual tax on idle lands at a rate not exceeding five per cent of the assessed value, in addition to the basic real property tax.",
+			"terms": "idle land tax vacant lot unused 5 percent"
+		},
+		{
+			"n": "533",
+			"heading": "What counts as idle land",
+			"ruleNo": "LIV",
+			"rule": "Agricultural land of more than one hectare, half of which remains uncultivated or unimproved, is idle land; land planted to permanent or perennial crops with at least 50 trees to a hectare, and land actually used for grazing, are not. Land other than agricultural of more than 1,000 square meters, half of which remains unutilized or unimproved, is idle land, as is a residential lot in a subdivision regardless of area.",
+			"terms": "what is idle land definition hectare 1000 square meters subdivision lot"
+		},
+		{
+			"n": "535",
+			"heading": "The special levy on lands benefited by a public work",
+			"ruleNo": "LIV",
+			"rule": "A local government unit may impose a special levy on the lands specially benefited by a public works project or improvement it funded, at not more than 60 per cent of the actual cost of the project including the cost of acquiring the land. The levy does not apply to lands exempt from the basic real property tax or to the remainder of land portions of which were donated to the unit for the project.",
+			"terms": "special assessment levy road drainage project who pays 60 percent benefited"
+		},
+		{
+			"n": "540",
+			"heading": "When the real property tax accrues and how it is paid",
+			"ruleNo": "LIV",
+			"rule": "The real property tax accrues on the first day of January of each year and from that date constitutes a lien on the property superior to any other lien or encumbrance. It may be paid in full on or before the 31st of March, or in four equal instalments due on or before the 31st of March, the 30th of June, the 30th of September and the 31st of December.",
+			"terms": "amilyar deadline when to pay real property tax installment quarterly march 31"
+		},
+		{
+			"n": "541",
+			"heading": "Discount for advance and prompt payment",
+			"ruleNo": "LIV",
+			"rule": "The sanggunian may grant a discount of not more than 20 per cent of the annual tax due where the basic real property tax and the additional Special Education Fund tax are paid in advance or promptly in accordance with the schedule it prescribes.",
+			"terms": "discount for early payment of amilyar how much 20 percent advance"
+		},
+		{
+			"n": "543",
+			"heading": "Interest on unpaid real property tax",
+			"ruleNo": "LIV",
+			"rule": "Failure to pay the real property tax or any other tax on real property on time subjects the taxpayer to interest of two per cent a month on the unpaid amount until it is paid, but the total interest may not exceed 36 months.",
+			"terms": "penalty for late amilyar interest 2 percent per month maximum 36 months"
+		},
+		{
+			"n": "546",
+			"heading": "Distribution of the proceeds of the basic real property tax",
+			"ruleNo": "LIV",
+			"rule": "The proceeds of the basic real property tax collected by a province are shared 35 per cent to the province, 40 per cent to the municipality where the property is located and 25 per cent to the barangay where it is located. Where a city collects, the share is 70 per cent to the city and 30 per cent divided among the component barangays, of which the barangay where the property is located gets one half and the rest is shared equally by all the other barangays.",
+			"terms": "where does amilyar go how is real property tax shared barangay share percentage"
+		},
+		{
+			"n": "549",
+			"heading": "Exemptions from the real property tax",
+			"ruleNo": "LIV",
+			"rule": "Real property owned by the Republic of the Philippines or any of its political subdivisions, except where the beneficial use has been granted to a taxable person; charitable institutions, churches, parsonages or convents, mosques, non-profit or religious cemeteries and all lands, buildings and improvements actually, directly and exclusively used for religious, charitable or educational purposes; machinery and equipment actually, directly and exclusively used by local water districts and government-owned corporations supplying water and electric power; real property owned by a duly registered cooperative; and machinery and equipment used for pollution control and environmental protection, are exempt from the real property tax.",
+			"terms": "who does not pay amilyar exempt church mosque school cooperative government property"
+		},
+		{
+			"n": "610",
+			"heading": "The local budget calendar",
+			"ruleNo": "LX",
+			"rule": "On or before the 15th of July of each year, the local treasurer submits to the local chief executive a certified statement covering the income and expenditures of the preceding fiscal year, the actual income and expenditures of the first two quarters of the current year, and the estimated income and expenditures for the last two quarters. Heads of departments and offices submit their budget proposals by the same date. The local chief executive submits the executive budget to the sanggunian on or before the 16th of October.",
+			"terms": "budget calendar deadlines july 15 october 16 when is the budget prepared"
+		},
+		{
+			"n": "613",
+			"heading": "Enactment of the annual budget",
+			"ruleNo": "LX",
+			"rule": "The sanggunian enacts the annual appropriations ordinance on or before the end of the fiscal year. Where it fails to do so, the ordinance of the preceding year is deemed reenacted and remains in force until the new one is passed, but only the annual appropriations for salaries and wages, statutory and contractual obligations and essential operating expenses are deemed reenacted; no new appropriation for capital outlay or for a new project may be made under a reenacted budget.",
+			"terms": "reenacted budget what happens if the budget is not passed on time deadline"
+		},
+		{
+			"n": "617",
+			"heading": "Review of the annual budget",
+			"ruleNo": "LX",
+			"rule": "The annual and supplemental appropriation ordinances of a province, a highly urbanised city and an independent component city are reviewed by the Ministry of Finance, Budget and Management; those of a component city and a municipality, by the sangguniang panlalawigan; and those of a barangay, by the sangguniang panlungsod or bayan concerned. The reviewing body acts within 90 days of receipt, and if it fails to act within that period the ordinance is deemed to have been reviewed in accordance with law and is therefore valid.",
+			"terms": "who reviews the budget how long 90 days deemed approved barangay budget review"
+		},
+		{
+			"n": "619",
+			"heading": "The development fund from the National Tax Allotment",
+			"ruleNo": "LX",
+			"rule": "Each local government unit appropriates in its annual budget no less than 20 per cent of its annual share from the National Tax Allotment for development projects, which are embodied in the local development plan and the annual investment program.",
+			"terms": "20 percent development fund nta ira how much must be spent on projects"
+		},
+		{
+			"n": "620",
+			"heading": "The local disaster risk reduction and management fund",
+			"ruleNo": "LX",
+			"rule": "Not less than five per cent of the estimated revenue from regular sources is set aside as the local disaster risk reduction and management fund, of which 30 per cent is allocated as a quick response fund or stand-by fund for relief and recovery. The unexpended balance accrues to a special trust fund solely for disaster risk reduction and management activities within the next five years, after which it reverts to the general fund.",
+			"terms": "calamity fund 5 percent quick response 30 percent disaster budget unexpended"
+		},
+		{
+			"n": "621",
+			"heading": "Gender and development and other mandatory allocations",
+			"ruleNo": "LX",
+			"rule": "Each local government unit allocates at least five per cent of its total annual budget for gender and development programs; at least one per cent each for programs for senior citizens and persons with disability, for the protection of children, and for the construction and maintenance of local roads; and financial aid of at least ₱1,000 a year to each barangay within its jurisdiction.",
+			"terms": "gad budget 5 percent senior citizen pwd children 1 percent mandatory allocations aid to barangay"
+		},
+		{
+			"n": "622",
+			"heading": "Limitation on personal services",
+			"ruleNo": "LX",
+			"rule": "The total appropriations for personal services of a local government unit for one fiscal year may not exceed 45 per cent of the total annual income from regular sources realized in the preceding fiscal year for a first to third class province, city or municipality, and 55 per cent for a fourth class or lower unit. The appropriation for the salary of a newly created position is included in the computation.",
+			"terms": "personal services cap limit 45 percent 55 percent salaries budget ceiling"
+		},
+		{
+			"n": "623",
+			"heading": "Limitation on debt service and on discretionary funds",
+			"ruleNo": "LX",
+			"rule": "The appropriation for debt service may not exceed 20 per cent of the regular income of the local government unit. A discretionary fund may be appropriated for the local chief executive at not more than two per cent of the actual receipts from the basic real property tax in the next preceding calendar year, and is disbursed only for public purposes supported by appropriate vouchers.",
+			"terms": "debt service limit 20 percent discretionary fund intelligence fund mayor 2 percent"
+		},
+		{
+			"n": "624",
+			"heading": "The barangay budget",
+			"ruleNo": "LX",
+			"rule": "The barangay treasurer submits to the punong barangay a statement of income and expenditures on or before the 15th of September, and the punong barangay submits the barangay budget to the sangguniang barangay on or before the 16th of September. Not less than 10 per cent of the general fund of the barangay is set aside for the sangguniang kabataan, and the appropriation for personal services may not exceed 55 per cent of the total annual income actually realized from local sources in the preceding fiscal year.",
+			"terms": "barangay budget deadline september 10 percent sk personal services 55 percent"
+		},
+		{
+			"n": "627",
+			"heading": "Barangay funds and the treasurer’s direct purchase",
+			"ruleNo": "LX",
+			"rule": "The barangay treasurer may make direct purchases amounting to not more than ₱1,000 at any one time for the ordinary and essential needs of the barangay. The petty cash fund may not exceed 20 per cent of the funds available and to the credit of the barangay treasury.",
+			"terms": "barangay treasurer purchase limit 1000 petty cash 20 percent buying supplies"
+		},
+		{
+			"n": "649",
+			"heading": "Procurement by a local government unit",
+			"ruleNo": "LXI",
+			"rule": "All procurement by a local government unit is governed by the Government Procurement Reform Act and its implementing rules. Each unit constitutes a Bids and Awards Committee, and no local chief executive, sanggunian member, or official with approving authority over the procurement may sit on it.",
+			"terms": "bidding procurement bac who can sit rules ra 9184 purchase"
+		},
+		{
+			"n": "664",
+			"heading": "Disposal of unserviceable property",
+			"ruleNo": "LXI",
+			"rule": "Property that has become unserviceable or is no longer needed is disposed of by the local chief executive with the approval of the sanggunian, at a public auction after due notice. Where the acquisition cost or book value does not exceed ₱50,000 for a municipality or ₱100,000 for a province or a city, the property may be disposed of by negotiated sale or by destruction where it has no commercial value.",
+			"terms": "dispose sell old equipment vehicle unserviceable auction threshold 50000 100000"
+		},
+		{
+			"n": "684",
+			"heading": "The Devolution Committee",
+			"ruleNo": "LXIII",
+			"rule": "A Devolution Committee is constituted to oversee the transfer of services, personnel, assets and records from the Bangsamoro Government to the local government units, chaired by the Minister of the Interior and Local Government. An initial amount of ₱10,000,000 is appropriated for its operation, chargeable to the annual appropriations of the Ministry.",
+			"terms": "devolution committee who oversees transfer budget 10 million"
+		},
+		{
+			"n": "690",
+			"heading": "Rules that start only with the May 2028 elections",
+			"ruleNo": "LXIII",
+			"rule": "The prohibition on political dynasties and the requirement of mandatory training for elective local officials take effect beginning with the local elections of May 2028. They do not apply to officials elected before that date, and an official in office when these Rules took effect serves out the term for which he was elected.",
+			"terms": "anti dynasty when does it start is it in effect yet 2028 mandatory training political dynasty"
+		},
+		{
+			"n": "691",
+			"heading": "The barangays of the Special Geographic Area",
+			"ruleNo": "LXIII",
+			"rule": "The Special Geographic Area comprises the 63 barangays in the municipalities of Pikit, Pigkawayan, Carmen, Kabacan, Midsayap and Aleosan in the province of North Cotabato that voted to join the Bangsamoro Autonomous Region in the plebiscite of 2019. They remain part of the Bangsamoro Autonomous Region and are governed by the Code and these Rules.",
+			"terms": "sga special geographic area how many barangays 63 north cotabato which towns pikit"
+		},
+		{
+			"n": "692",
+			"heading": "The eight municipalities of the Special Geographic Area",
+			"ruleNo": "LXIII",
+			"rule": "The 63 barangays of the Special Geographic Area have been constituted into eight municipalities created by Bangsamoro Autonomy Acts 41 to 48. They are administered through the Special Geographic Area Development Authority under the Office of the Chief Minister until they are fully organized.",
+			"terms": "sga municipalities how many eight new towns baa 41 48 sgada"
+		},
+		{
+			"n": "693",
+			"heading": "Taxation in the Special Geographic Area",
+			"ruleNo": "LXIII",
+			"rule": "Until a province is created for the Special Geographic Area, the real property tax and the professional tax within it are levied and collected by the municipalities concerned, and the proceeds accrue to them and to the barangays in the shares these Rules prescribe.",
+			"terms": "sga taxes who collects real property professional tax no province yet"
+		},
+		{
+			"n": "696",
+			"heading": "Effectivity of these Rules",
+			"ruleNo": "LXIII",
+			"rule": "These Rules take effect 15 days after their publication in the Bangsamoro Gazette or in a newspaper of general circulation in the Bangsamoro Autonomous Region. They were promulgated on 30 September 2025.",
+			"terms": "when did the irr take effect effectivity date published gazette 15 days"
+		}
+	]
+}

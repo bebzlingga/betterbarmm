@@ -1,19 +1,20 @@
 import { LineReveal, Magnetic, Rise } from './motion'
-import { OkirBloom, OkirFrame } from './okir'
+import { OkirFrame } from './okir'
 
 /**
  * The one loud block per page.
  *
- * No margin above it. It is a full-bleed band in a different colour, and the
- * colour change is what separates it from the section before — a margin as
+ * No margin above it. It is a full-bleed band in a different color, and the
+ * color change is what separates it from the section before — a margin as
  * well only doubled the gap, so the panel's own padding then read as a third
  * one and the ask ended up four hundred pixels below the thing it follows.
  *
  * Every page on the site ends on the same ask — send a correction, send a
  * source — and it is the only moment the crimson is used as a ground rather
  * than as an accent. That is what makes it work: on a page of warm paper and
- * hairlines, a full-bleed crimson band with a brass medallion turning behind it
- * is unmissable precisely because nothing else on the page is trying to be.
+ * hairlines, a full-bleed crimson band is unmissable precisely because nothing
+ * else on the page is trying to be. The medallion that used to turn behind it
+ * is gone (user decision); the glow and the grain carry the depth it gave.
  *
  * The okir corners frame it instead of a border. A border would say "panel";
  * the corners say "this one is carved", which is nearer what is meant.
@@ -36,8 +37,8 @@ export function CtaPanel({
   standfirst?: string
   children?: React.ReactNode
   /**
-   * The crimson is the site's closing statement. The dark cut is for a page
-   * that has already used the crimson higher up, so the foot does not repeat
+   * The blue is the site's closing statement. The dark cut is for a page
+   * that has already used the blue higher up, so the foot does not repeat
    * a note the reader has just heard.
    */
   tone?: 'crimson' | 'dark'
@@ -48,17 +49,13 @@ export function CtaPanel({
         tone === 'crimson' ? 'bb-crimson' : 'bb-ground'
       } bb-grain bb-lattice relative isolate overflow-hidden`}
     >
-      <OkirBloom
-        className='absolute -bottom-[46%] -left-[12%] size-[min(36rem,76vw)] opacity-[0.18]'
-        spin
-      />
       <span
         aria-hidden='true'
         className='bb-glow bb-glow-crimson absolute left-1/2 top-[-34%] size-[36rem] -translate-x-1/2 opacity-40'
       />
 
-      {/* Centred on the axis. This is the one block on a page that is asking
-          rather than telling, and a centred column reads as an address to the
+      {/* Centerd on the axis. This is the one block on a page that is asking
+          rather than telling, and a centerd column reads as an address to the
           reader where a left-ranged one reads as another section of the
           document. It is also the only block here with nothing beneath it to
           share an edge with, so there is no column for it to line up against. */}

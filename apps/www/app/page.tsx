@@ -1,12 +1,11 @@
 import { ArrowRightIcon, ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { ChapterStrip, type StripCard } from './_components/chapter-strip'
-import { Counter, CtaAction, CtaPanel, LineReveal, Magnetic, OkirBloom, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
-import { bangsamoroParliament, discoverBarmmTopics } from './_components/discover-barmm-data'
+import { Counter, CtaAction, CtaPanel, LineReveal, Magnetic, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { bangsamoroParliament, discoverBarmmTopics } from '@betterbarmm/primer-data'
 import { DiscoverMarquee } from './_components/discover-marquee'
 import { photo } from './_components/discover-media'
-import { lguCounts } from '@betterbarmm/lgu-data'
-import { lguData } from '@betterbarmm/lgu-data'
+import { lguCounts, lguData, lguProvinces } from '@betterbarmm/lgu-data'
 import { SectionHead } from './_components/masthead'
 import { ContextDiagram, LivingDiagram, SourceDiagram } from './_components/method-diagram'
 import { HeroGraphic } from './_components/hero-graphic'
@@ -47,10 +46,11 @@ const workspaces: Workspace[] = [
 	},
 	{
 		label: 'Budget',
-		href: '/soon',
-		blurb: 'Appropriations by agency and programme, traced to the General Appropriations Act.',
+		href: 'https://budget.betterbarmm.com',
+		blurb:
+			'Every enacted appropriation by sector, office, program and project, traced to the page of the Act it was printed on.',
 		measure: 'GAAB FY 2020–2026',
-		state: 'soon',
+		state: 'live',
 	},
 	{
 		label: 'Public works',
@@ -68,6 +68,17 @@ const workspaces: Workspace[] = [
 		// still pointed at the holding page, which is the one inconsistency an
 		// index like this cannot afford: a reader who trusts the badge clicks it
 		// and lands on "not yet".
+		state: 'soon',
+	},
+	{
+		label: 'Travel',
+		href: '/soon',
+		blurb:
+			'A written guide to the seven areas — what there is to see, what to eat, where lodging actually exists, and an honest account of the security picture in each.',
+		measure: 'Seven areas',
+		// The only workspace here that is written rather than captured, and the
+		// blurb says so: everything else on this index promises a record traced
+		// to the body that published it, and this one cannot make that promise.
 		state: 'soon',
 	},
 	{
@@ -185,11 +196,15 @@ export default function HomePage() {
 			    whole argument for the split: every other page on this estate opens on
 			    a paragraph, and a paragraph is not what makes someone who has never
 			    heard of the Bangsamoro read the next screen. */}
-			<section className='bb-lattice relative overflow-hidden'>
-				<OkirBloom className='absolute -left-[16%] -top-[30%] size-[min(50rem,92vw)] opacity-[0.14]' />
+			{/* The masthead is the one band on the front page painted in the brand
+			    crimson. `.brand-bg` re-points the tokens rather than restyling the
+			    parts, so the headline, the standfirst, the three figures, the two
+			    buttons and the artwork all invert together — and anything added
+			    here later inverts with them. */}
+			<section className='brand-bg bb-lattice relative overflow-hidden'>
 				<span aria-hidden='true' className='bb-glow absolute -left-[6%] -top-[14%] size-[34rem]' />
 
-				<div className='bb-container relative pb-24 pt-14 lg:pb-32 lg:pt-20'>
+				<div className='bb-container masthead-band relative'>
 					{/* The left column is given the room the headline actually needs. At an
 					    even split "Public records," wrapped at every desktop width, and a
 					    two-word line broken across two rows is not a masthead. */}
@@ -291,7 +306,6 @@ export default function HomePage() {
 			    workspaces above raise and never state: how big is the thing all
 			    this is about. */}
 			<section className='bb-ground bb-grain bb-lattice relative isolate overflow-hidden border-y border-[var(--rule)]'>
-				<OkirBloom className='absolute -right-[14%] top-[-40%] size-[min(38rem,84vw)] opacity-[0.16]' />
 
 				<div className='bb-container relative z-2 bb-section'>
 					<Rise distance={14}>
@@ -304,7 +318,7 @@ export default function HomePage() {
 					<div className='mt-10 grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end lg:gap-16'>
 						<LineReveal
 							as='h2'
-							lines={['One region.', 'Five provinces and a city.']}
+							lines={['One region.', 'Five provinces, a city, and a special area.']}
 							className='bb-display-md text-[var(--ink)]'
 							lineClassName={[undefined, 'bb-mute']}
 						/>
@@ -328,22 +342,31 @@ export default function HomePage() {
 								note: `${bangsamoroParliament.partyRepresentativeSeats} by party, ${bangsamoroParliament.districtSeats} by district, ${bangsamoroParliament.reservedSeats} reserved.`,
 							},
 							{
-								value: lguData.totals.provinces + 1,
-								label: 'Provinces and cities',
-								note: 'Five provinces plus Cotabato City. Sulu was excluded by the Supreme Court.',
+								value: lguProvinces.length,
+								label: 'Areas of the region',
+								note: 'Five provinces, Cotabato City, and the Special Geographic Area. Sulu was excluded by the Supreme Court.',
 							},
 							{
-								value: lguCounts.barangays,
+								value: lguData.totals.barangays,
 								label: 'Barangays',
 								group: true,
 								note: 'The rung of government nearest the household, and the one most often elected.',
 							},
 							{
-								value: 5.69,
+								/* Millions, to two places, rather than all seven digits. At
+								   display size 4,330,783 is a wall of numerals that nobody reads
+								   as a quantity — the eye counts the commas instead. The exact
+								   figure is not lost: it is what the note underneath compares
+								   against PSA's own, which is the one place on the page a reader
+								   wants it to the person. */
+								value: lguData.totals.population / 1e6,
 								decimals: 2,
-								suffix: 'M',
+								suffix: ' M',
 								label: 'People',
-								note: `Regional population as of ${lguCounts.populationAsOf}, excluding Sulu.`,
+								// PSA's own BARMM total is 5,691,583 and counts both Sulu, which the
+								// Supreme Court removed from the region, and the Special Geographic
+								// Area, whose municipalities have no census figures of their own yet.
+								note: `At the ${lguCounts.populationAsOf} census, excluding Sulu and the Special Geographic Area. PSA counts both, and puts the region at ${lguCounts.population}.`,
 							},
 						].map((stat) => (
 							<StaggerItem key={stat.label}>
@@ -351,9 +374,9 @@ export default function HomePage() {
 									<p className='bb-figure text-[var(--ink)]'>
 										<Counter
 											value={stat.value}
+											group={stat.group ?? false}
 											decimals={stat.decimals ?? 0}
 											suffix={stat.suffix ?? ''}
-											group={stat.group ?? false}
 										/>
 									</p>
 									<p className='mt-4 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--brass)]'>
@@ -376,7 +399,7 @@ export default function HomePage() {
 			    part for someone who does not yet know what the Bangsamoro is.
 
 			    The head is handed to the strip rather than set above it, so it
-			    stays on screen for as long as the cards are travelling. */}
+			    stays on screen for as long as the cards are traveling. */}
 			{/* Half the section rhythm above, not the full step. The band overhead is
 			    dark and full-bleed, and a dark edge already reads as a division — the
 			    usual distance on top of it left the head floating away from both. */}

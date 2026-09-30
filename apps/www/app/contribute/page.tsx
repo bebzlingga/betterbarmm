@@ -31,7 +31,7 @@ const contributionPaths = [
 		label: 'Public context',
 		title: 'Explain what records mean',
 		description:
-			'Plain-language notes that help people understand programmes, places, institutions, and public decisions.',
+			'Plain-language notes that help people understand programs, places, institutions, and public decisions.',
 	},
 	{
 		label: 'Build support',
@@ -164,7 +164,7 @@ export default function ContributePage() {
 					eyebrow='Contributor roll'
 					title='Names will'
 					titleMuted='live here.'
-					lead='As verified contributions are accepted, this page will recognise the people and groups who helped improve the public record.'
+					lead='As verified contributions are accepted, this page will recognize the people and groups who helped improve the public record.'
 				/>
 
 				<Rise delay={0.1} distance={18}>

@@ -1,18 +1,25 @@
 import { CtaPanel, SiteFooter } from '@betterbarmm/editorial'
-import { lguProvinces } from '@betterbarmm/lgu-data'
+import { areaHref, lguProvinces } from '@betterbarmm/lgu-data'
 import { SiteNav } from './site-nav'
+import { UnitFinder } from './unit-finder'
 
 /**
  * Every page in the workspace closes the same way: the project's ask on the
- * crimson band, then the estate footer on the dark ground. Both come from
+ * brand band, then the estate footer on the dark ground. Both come from
  * `@betterbarmm/editorial`, so this workspace ends exactly as the landing site
  * and the other three do.
+ *
+ * The finder wraps everything rather than sitting in the header, so "/" reaches
+ * it from any page and the overlay is mounted once for the whole workspace
+ * rather than once per route.
  */
 export function Shell({ children }: { children: React.ReactNode }) {
 	return (
 		<div className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
-			<SiteNav />
-			<main>{children}</main>
+			<UnitFinder>
+				<SiteNav />
+				<main>{children}</main>
+			</UnitFinder>
 
 			<CtaPanel />
 
@@ -22,7 +29,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
 					{
 						title: 'Provinces',
 						links: lguProvinces.map((province) => ({
-							href: `https://lgu.betterbarmm.com/${province.slug}`,
+							href: `https://lgu.betterbarmm.com${areaHref(province)}`,
 							label: province.name,
 						})),
 					},
@@ -30,9 +37,15 @@ export function Shell({ children }: { children: React.ReactNode }) {
 						title: 'Workspaces',
 						links: [
 							{ href: 'https://election.betterbarmm.com', label: 'Election' },
-							{ href: 'https://legislation.betterbarmm.com', label: 'Legislation' },
+							{
+								href: 'https://legislation.betterbarmm.com',
+								label: 'Legislation',
+							},
 							{ href: 'https://budget.betterbarmm.com', label: 'Budget' },
-							{ href: 'https://betterbarmm.com/discover', label: 'Discover BARMM' },
+							{
+								href: 'https://betterbarmm.com/discover',
+								label: 'Discover BARMM',
+							},
 						],
 					},
 					{

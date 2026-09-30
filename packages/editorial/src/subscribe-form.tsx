@@ -109,7 +109,7 @@ export function SubscribeForm({ className = '' }: { className?: string }) {
 						className='flex w-full items-stretch gap-2'
 					>
 						{/* The field says it has the cursor with a brass rule that runs
-						    out from the left edge, rather than by changing colour under
+						    out from the left edge, rather than by changing color under
 						    the type. A fill that darkens on focus was doing the job of a
 						    focus ring with the one property a reader is least likely to
 						    notice — and it painted a ground under a control that the rest

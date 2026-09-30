@@ -1,458 +1,517 @@
-import { BudgetPageShell } from './_components/budget-page-shell'
-import { BudgetQuerySelect } from './_components/budget-query-select'
+import type { Metadata } from 'next'
+import Link from 'next/link'
 import {
-	buildOfficeTrendRows,
-	buildOfficeTrendSelectGroups,
-	buildYearRows,
-	getLatestBudgetSelection,
-	officeTrendLabelForValue,
-	resolveOfficeTrendValue,
-	type BudgetSearchParams,
-} from './_lib/budget-view-model'
+	EXPENSE_CLASSES,
+	FISCAL_YEARS,
+	budgetFor,
+	percent,
+	peso,
+	pesoTight,
+} from '@betterbarmm/budget-data'
+import { SectionHead } from '@betterbarmm/editorial'
+import { Masthead } from './_components/budget-parts'
+import { BudgetTabs } from './_components/budget-tabs'
+import {
+	joinRenames,
+	officeLines,
+	areaLines,
+	sectorLines,
+	trendYears,
+} from './_components/budget-trend'
 
-type TotalChartRow = {
-	total: number
+export const metadata: Metadata = {
+	description:
+		'Every enacted Bangsamoro budget beside each other, FY 2020 to FY 2026: what each Act is made of, the money held outside any ministry, and the same span across every sector, office and area.',
 }
 
-type ChartScale = {
-	divisor: number
-	max: number
-	suffix: 'B' | 'M'
-	unitLabel: 'Billions' | 'Millions'
-}
+/* ============================================================
+   Every Act against the others
 
-type OfficeTrendRow = ReturnType<typeof buildOfficeTrendRows>[number]
-type YearRow = ReturnType<typeof buildYearRows>[number]
+   This is the page that is all of them, which is the only place
+   a figure can be called large or small: ₱114 billion means
+   nothing until it sits beside the ₱65.9 billion the region
+   started with.
 
-function trimNumber(value: number, digits = 1) {
-	return value.toFixed(digits).replace(/\.0$/, '')
-}
+   It carries no `?fy=`. The year switch says which Act a page is
+   reading, and this page reads them all — a year parameter here
+   would answer a question the page does not ask.
 
-function formatBillions(value: number, digits = 1) {
-	return `${trimNumber(value / 1_000_000_000, digits)}B`
-}
+   Three tables, one question: what kind of money is this.
 
-function formatPesoBillions(value: number, digits = 2) {
-	return `₱${trimNumber(value / 1_000_000_000, digits)}B`
-}
+   They are deliberately not the same table three times. Each
+   grouping carries a different breakdown and only a different
+   breakdown, and forcing all three onto personnel/MOOE/capital
+   would have meant inventing two of them:
 
-function formatPercent(value: number) {
-	return `${value >= 0 ? '+' : ''}${trimNumber(value, 1)}%`
-}
+     the Acts    carry all three classes exactly, every year
+     the sectors carry none of them — a sector's total is
+                 assembled from program rows, provisions and
+                 projects, which overlap, so it is shown across the
+                 years instead and never split by class
 
-function firstParam(value: string | string[] | undefined) {
-	return Array.isArray(value) ? value[0] : value
-}
+   A sector's program rows were tried as a proxy and come to
+   ₱3.33B against a sector total of ₱12.17B for social protection
+   alone. A table built that way would have been wrong by a factor
+   of four and looked authoritative.
+   ============================================================ */
 
-function chartMaxFor(rows: TotalChartRow[]) {
-	const maxBillions = Math.max(...rows.map((row) => row.total / 1_000_000_000), 0)
-
-	if (maxBillions <= 1) return 1
-	if (maxBillions <= 5) return 5
-	if (maxBillions <= 20) return 20
-	if (maxBillions <= 50) return 50
-	if (maxBillions <= 120) return 120
-
-	return Math.ceil(maxBillions / 50) * 50
-}
-
-function millionChartMaxFor(maxMillions: number) {
-	if (maxMillions <= 100) return 100
-	if (maxMillions <= 250) return 250
-	if (maxMillions <= 500) return 500
-	if (maxMillions <= 1000) return 1000
-
-	return Math.ceil(maxMillions / 500) * 500
-}
-
-function chartScaleFor(rows: TotalChartRow[]): ChartScale {
-	const maxAmount = Math.max(...rows.map((row) => row.total), 0)
-
-	if (maxAmount > 0 && maxAmount < 1_000_000_000) {
-		return {
-			divisor: 1_000_000,
-			max: millionChartMaxFor(maxAmount / 1_000_000),
-			suffix: 'M',
-			unitLabel: 'Millions',
-		}
-	}
-
+const YEARS = [...FISCAL_YEARS].reverse()
+const ACTS = YEARS.map((fy) => {
+	const { budget, budgetGroups } = budgetFor(fy)
+	/* The Act's own Section 1 group, not this workspace's reading of it: money
+	   appropriated without naming a ministry, released through them later. */
+	const funds = budgetGroups.find((group) => group.name === 'Special Purpose Fund')
 	return {
-		divisor: 1_000_000_000,
-		max: chartMaxFor(rows),
-		suffix: 'B',
-		unitLabel: 'Billions',
+		year: fy,
+		totals: budget.totals,
+		total: budget.total,
+		funds: funds?.totals.total ?? 0,
 	}
-}
+})
 
-function formatScaledAmount(value: number, scale: ChartScale) {
-	const scaledValue = value / scale.divisor
-	const digits = scale.suffix === 'M' && scaledValue >= 10 ? 0 : 1
+const SPAN = ACTS.reduce((sum, act) => sum + act.total, 0)
+const MOST_FUNDS = Math.max(...ACTS.map((act) => act.funds))
+const TALLEST = Math.max(...ACTS.map((act) => act.total))
+/* The tallest bar, in pixels. A height in pixels rather than a percentage of
+   the row: a percentage height only means anything when the parent's height is
+   definite, and in a flex column whose own height is its content — which is
+   what a row of bars sitting on a baseline is — it resolves to `auto`, which
+   is nothing. The bars were in the markup with the right ratios and drew zero
+   pixels tall. */
+const BAR_H = 160
+/* The offices tab: every place someone works, and nothing else.
 
-	return `${trimNumber(scaledValue, value === 0 ? 0 : digits)}${scale.suffix}`
-}
+   The trend file is every line the Acts print, which is two different kinds of
+   thing in one list. Most are offices — the ministries, the Chief Minister and
+   the offices under him, and the commissions, authorities and the Wali filed
+   under Other Executive Offices. Eight are special purpose funds, which are not
+   places anyone works at all: money appropriated without naming who spends it,
+   released through the ministries later. Read down one column those eight sit
+   among the ministries as though they were peers.
 
-function formatScaledTick(value: number, scale: ChartScale) {
-	if (scale.suffix === 'B') return `${value.toFixed(1)}B`
+   So the funds come out and everything else stays. They are not lost — they are
+   the strip in the header, which is the one place they can be shown as what
+   they are.
 
-	const digits = value < 10 && value > 0 ? 1 : 0
-	return `${trimNumber(value, digits)}M`
-}
+   Built from the Acts across every year rather than the latest: a fund that
+   stopped appearing after FY 2022 still has a line, and matching only against
+   this year's Act would leave it in.
 
-export default async function BudgetOverviewPage({ searchParams }: { searchParams: BudgetSearchParams }) {
-	const params = await searchParams
-	const latestSelection = getLatestBudgetSelection()
-	const yearRows = buildYearRows()
-	const trendGroups = buildOfficeTrendSelectGroups()
-	const selectedTrend = resolveOfficeTrendValue(firstParam(params.trend))
-	const trendRows = buildOfficeTrendRows(selectedTrend)
-	const trendLabel = officeTrendLabelForValue(selectedTrend)
-	const latestYear = yearRows[yearRows.length - 1]
-	const previousYear = yearRows[yearRows.length - 2]
-	const earliestYear = yearRows[0]
-	const peakYear = [...yearRows].sort((a, b) => b.total - a.total)[0]
-	const latestGrowth = previousYear && previousYear.total > 0 ? ((latestYear.total - previousYear.total) / previousYear.total) * 100 : 0
-	const sevenYearGrowth = earliestYear.total > 0 ? ((latestYear.total - earliestYear.total) / earliestYear.total) * 100 : 0
+   This makes the column a selection and no longer a partition — it no longer
+   sums to the Act — which is what the note under the table says. */
+const FUNDS = new Set(
+	FISCAL_YEARS.flatMap((fy) => budgetFor(fy).offices)
+		.filter((office) => office.kind === 'special_purpose_fund')
+		.map((office) => office.slug),
+)
 
+/* `pesoTight` is the workspace's own short form — "₱ 26.5B", "₱ 958M" — with
+   the precision rule that keeps a tenth of a billion visible and drops a tenth
+   of a million once the figure is in the hundreds. A zero is a dash: a column
+   of ₱ 0.00B says nothing was appropriated, which is not the same as nothing
+   being recorded. */
+const short = (amount: number) => (amount > 0 ? pesoTight(amount) : '—')
+
+/**
+ * One grouping down the side, the years across the top.
+ *
+ * Written once because the page draws it four times and a table copied four
+ * ways drifts by the second edit. A row carries its own series rather than a
+ * value per column, because a line that only exists in three of the seven Acts
+ * has three points and five blanks — not four zeroes.
+ */
+function YearTable({
+	caption,
+	head,
+	rows,
+	wide,
+	foot,
+}: {
+	caption: string
+	head: string
+	rows: { key: string; label: string; href?: string; at: (year: number) => number; total: number }[]
+	wide?: boolean
+	/** Said under the table where a column needs qualifying. */
+	foot?: string
+}) {
 	return (
-		<BudgetPageShell activeItem='Overview'>
-			<div className='pt-6! pb-16 sm:pt-12! sm:pb-24'>
-				{/* <BudgetOverviewHero
-					fromYear={earliestYear.year}
-					toYear={latestYear.year}
-				/> */}
-
-				<section className='mb-8! grid border-y border-[var(--ink)] sm:mb-12! sm:grid-cols-2 lg:grid-cols-4'>
-					<OverviewMetric
-						label={`FY ${latestYear.year} appropriation`}
-						value={formatPesoBillions(latestYear.total)}
-						detail={`${formatPercent(latestGrowth)} vs. ${previousYear?.year ?? 'prior year'}`}
-						tone='positive'
-					/>
-					<OverviewMetric
-						label='7-year growth'
-						value={formatPercent(sevenYearGrowth)}
-						detail={`${formatPesoBillions(earliestYear.total, 2)} -> ${formatPesoBillions(latestYear.total, 2)}`}
-					/>
-					<OverviewMetric
-						label='Peak year'
-						value={`FY ${peakYear.year}`}
-						detail={formatPesoBillions(peakYear.total, 2)}
-					/>
-					<OverviewMetric
-						label='Reporting units'
-						value={latestSelection.budget.agencies.length}
-						detail='Ministries, Offices and Agencies'
-					/>
-				</section>
-
-				<AnnualAppropriationChart rows={yearRows} />
-
-				<OfficeAppropriationTrendChart
-					rows={trendRows}
-					selectGroups={trendGroups}
-					selectedValue={selectedTrend}
-					selectedLabel={trendLabel}
-				/>
-			</div>
-		</BudgetPageShell>
-	)
-}
-
-function BudgetOverviewHero({ fromYear, toYear }: { fromYear: number; toYear: number }) {
-	return (
-		<section className='mb-10 pt-24!'>
-			<div>
-				<h1 className='num max-w-5xl text-5xl! font-extrabold leading-[0.88] tracking-normal sm:text-[6.5rem]! lg:text-[8.5rem]! xl:text-[9.5rem]!'>Make public money readable.</h1>
-				<p className='mt-8! max-w-3xl text-lg leading-7! text-[var(--ink-2)] sm:text-xl sm:leading-9'>
-					The BARMM budget portal turns appropriations, offices, programs, and source documents into a traceable public ledger for fiscal years {fromYear}-{toYear}.
-				</p>
-			</div>
-		</section>
-	)
-}
-
-function OverviewMetric({ label, value, detail, tone }: { label: string; value: string | number; detail: string; tone?: 'positive' }) {
-	return (
-		<div className='border-b border-[var(--rule)] p-5 sm:border-r sm:p-6 sm:[&:nth-child(2n)]:border-r-0 lg:border-b-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(4n)]:border-r-0'>
-			<p className='inline-block max-w-full break-words bg-[var(--accent)] px-1 pl-2 text-[9px] font-medium uppercase leading-4 tracking-[0.24em] text-white sm:tracking-[0.28em]'>{label}</p>
-			<p className='num mt-5 text-3xl font-semibold uppercase leading-none sm:text-4xl'>{value}</p>
-			<p className={`mt-3 text-[11px] font-medium uppercase tracking-[0.12em] ${tone === 'positive' ? 'text-[var(--positive)]' : 'text-[var(--ink-3)]'}`}>{detail}</p>
+		<div className='-mx-6 overflow-x-auto px-6 lg:-mx-8 lg:px-8'>
+			<table className={`w-full border-collapse text-[14.5px] ${wide ? 'min-w-[58rem]' : 'min-w-[54rem]'}`}>
+				<caption className='sr-only'>{caption}</caption>
+				<thead>
+					<tr className='border-b border-[var(--ink)]'>
+						<th scope='col' className='bb-label py-4 pr-4 text-left'>
+							{head}
+						</th>
+						{trendYears.map((year) => (
+							<th
+								key={year}
+								scope='col'
+								className='num py-4 pl-5 text-right font-mono text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
+							>
+								FY {year}
+							</th>
+						))}
+						<th
+							scope='col'
+							className='num py-4 pl-5 text-right font-mono text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
+						>
+							Total
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					{rows.map((row) => (
+						<tr key={row.key} className='border-b border-[var(--rule-soft)] transition-colors duration-150 hover:bg-[var(--paper-2)]'>
+							<th scope='row' className='max-w-[20rem] py-5 pr-4 text-left font-normal'>
+								{row.href ? (
+									<Link
+										href={row.href}
+										className='text-[15px] font-semibold leading-snug text-[var(--ink)] hover:text-[var(--accent)]'
+									>
+										{row.label}
+									</Link>
+								) : (
+									<span className='block text-[15px] font-semibold leading-snug text-[var(--ink)]'>
+										{row.label}
+									</span>
+								)}
+							</th>
+							{trendYears.map((year) => (
+								<td
+									key={year}
+									className='num py-5 pl-5 text-right text-[13px] tabular-nums text-[var(--ink-2)]'
+									title={row.at(year) > 0 ? peso(row.at(year)) : 'Not in this Act'}
+								>
+									{short(row.at(year))}
+								</td>
+							))}
+							<td className='num py-5 pl-5 text-right text-[13px] font-semibold tabular-nums text-[var(--ink)]'>
+								{short(row.total)}
+							</td>
+						</tr>
+					))}
+				</tbody>
+			</table>
+			{foot ? (
+				<p className='mt-5 text-[12px] leading-6 text-[var(--ink-3)]'>{foot}</p>
+			) : null}
 		</div>
 	)
 }
 
-function AnnualAppropriationChart({ rows }: { rows: YearRow[] }) {
-	const chartMax = chartMaxFor(rows)
-	const width = 1120
-	const height = 330
-	const left = 66
-	const right = 28
-	const top = 58
-	const bottom = 44
-	const plotWidth = width - left - right
-	const plotHeight = height - top - bottom
-	const barWidth = 70
-	const bandWidth = plotWidth / rows.length
-	const ticks = [chartMax, chartMax * 0.75, chartMax * 0.5, chartMax * 0.25, 0]
-	const points = rows.map((row, index) => {
-		const x = left + bandWidth * (index + 0.5)
-		const value = row.total / 1_000_000_000
-		const y = top + ((chartMax - value) / chartMax) * plotHeight
+/* The chart under the claim, full width (user decision).
 
-		return { ...row, x, y, value }
-	})
 
+   Drawn the way `BudgetTrend` draws its line: a soft wash for the body, a
+   solid edge on top. That is the estate's one chart idiom, and two charts
+   on one site should look like the same hand made them. It also lets the
+   okir lattice this band is woven with show through — seven solid blocks
+   covered it and read as a slab laid over the masthead rather than part of
+   it. The edge is what is read, so it carries the weight.
+
+   One color, not three stacked by expense class: those tones are chosen
+   against paper and land between 3.0 and 3.3:1 on this crimson, too thin
+   for marks whose whole job is being told apart. `--accent` re-points to
+   the warm gold here.
+
+   Plain elements rather than an SVG — seven rectangles whose heights are a
+   ratio is a thing CSS already does, and it stays a server component. */
+function ActBars() {
 	return (
-		<section className='mt-6 border border-[var(--ink)] bg-[var(--paper)] px-4 py-6 sm:px-8 sm:py-8 lg:px-12 lg:py-10'>
-			<div className='flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-baseline sm:justify-between'>
-				<h2 className='num text-xl font-extrabold tracking-normal'>
-					BARMM total appropriation, FY {rows[0]?.year} - {rows[rows.length - 1]?.year}
-				</h2>
-				<p className='text-[10px] font-medium uppercase tracking-[0.18em] text-[var(--ink-3)]'>Source: General Appropriations Act of the Bangsamoro · ₱ Billions</p>
+		<figure
+			className='m-0 mt-14'
+			role='img'
+			aria-label={`What each Act appropriated: ${ACTS.map((act) => `FY ${act.year}, ${peso(act.total)}`).join('; ')}.`}
+		>
+			<div className='flex items-end gap-3 border-b border-[var(--brass-line)] sm:gap-6'>
+				{ACTS.map((act) => (
+					<div key={act.year} className='flex min-w-0 flex-1 flex-col items-stretch gap-2.5'>
+						<p className='num text-center font-mono text-[10.5px] font-semibold tabular-nums text-[var(--ink-2)]'>
+							{short(act.total)}
+						</p>
+						{/* Capped and centerd in its track. Across the full container a
+						    seventh of the width is a 180px slab, and seven of those is a
+						    fence rather than a chart. */}
+						<div
+							title={peso(act.total)}
+							className='mx-auto w-full max-w-[3.5rem] border-t-2 border-[var(--accent)] bg-gradient-to-b from-[var(--accent-soft)] to-transparent'
+							style={{ height: `${Math.round((act.total / TALLEST) * BAR_H)}px` }}
+						/>
+					</div>
+				))}
 			</div>
 
-			<div className='overflow-x-auto'>
-				<svg
-					viewBox={`0 0 ${width} ${height}`}
-					role='img'
-					aria-label={`BARMM total appropriation from fiscal year ${rows[0]?.year} to fiscal year ${rows[rows.length - 1]?.year}`}
-					className='h-auto min-w-[680px] max-w-none sm:min-w-[860px]'
-				>
-					{ticks.map((tick) => {
-						const y = top + ((chartMax - tick) / chartMax) * plotHeight
-
-						return (
-							<g key={tick}>
-								<line
-									x1={left}
-									x2={width - right}
-									y1={y}
-									y2={y}
-									stroke='var(--rule-soft)'
-									strokeWidth='1'
-								/>
-								<text
-									x={left - 10}
-									y={y + 5}
-									textAnchor='end'
-									fill='var(--ink-3)'
-									fontFamily='var(--font-body)'
-									fontSize='10'
-									fontWeight='500'
-								>
-									{tick.toFixed(1)}B
-								</text>
-							</g>
-						)
-					})}
-
-					{points.map((point) => {
-						const barTop = point.y
-
-						return (
-							<rect
-								key={`bar-${point.year}`}
-								x={point.x - barWidth / 2}
-								y={barTop}
-								width={barWidth}
-								height={top + plotHeight - barTop}
-								fill='var(--accent-soft)'
-								opacity='0.82'
-							/>
-						)
-					})}
-
-					<polyline
-						points={points.map((point) => `${point.x},${point.y}`).join(' ')}
-						fill='none'
-						stroke='var(--accent)'
-						strokeWidth='3'
-						strokeLinejoin='round'
-						strokeLinecap='round'
-					/>
-
-					{points.map((point) => (
-						<g key={point.year}>
-							<circle
-								cx={point.x}
-								cy={point.y}
-								r='6'
-								fill='var(--accent)'
-							/>
-							<text
-								x={point.x}
-								y={point.y - 16}
-								textAnchor='middle'
-								fill='var(--ink)'
-								fontFamily='var(--font-body)'
-								fontSize='13'
-								fontWeight='800'
-							>
-								{formatBillions(point.total, 1)}
-							</text>
-							<text
-								x={point.x}
-								y={height - 14}
-								textAnchor='middle'
-								fill='var(--ink-3)'
-								fontFamily='var(--font-body)'
-								fontSize='11'
-								fontWeight='500'
-							>
-								{point.year}
-							</text>
-						</g>
-					))}
-				</svg>
+			<div className='mt-3 flex gap-3 sm:gap-6'>
+				{ACTS.map((act) => (
+					<p
+						key={act.year}
+						className='num min-w-0 flex-1 text-center font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
+					>
+						FY {act.year}
+					</p>
+				))}
 			</div>
-		</section>
+		</figure>
 	)
 }
 
-function OfficeAppropriationTrendChart({
-	rows,
-	selectGroups,
-	selectedValue,
-	selectedLabel,
-}: {
-	rows: OfficeTrendRow[]
-	selectGroups: ReturnType<typeof buildOfficeTrendSelectGroups>
-	selectedValue: string
-	selectedLabel: string
-}) {
-	const chartScale = chartScaleFor(rows)
-	const chartMax = chartScale.max
-	const width = 1120
-	const height = 330
-	const left = 66
-	const right = 28
-	const top = 58
-	const bottom = 44
-	const plotWidth = width - left - right
-	const plotHeight = height - top - bottom
-	const barWidth = 70
-	const bandWidth = plotWidth / rows.length
-	const ticks = [chartMax, chartMax * 0.75, chartMax * 0.5, chartMax * 0.25, 0]
-	const points = rows.map((row, index) => {
-		const x = left + bandWidth * (index + 0.5)
-		const value = row.total / chartScale.divisor
-		const y = top + ((chartMax - value) / chartMax) * plotHeight
-
-		return { ...row, x, y, value }
-	})
-
+export default function CompositionPage() {
 	return (
-		<section className='mt-6 border border-[var(--ink)] bg-[var(--paper)] px-4 py-6 sm:px-8 sm:py-8 lg:px-12 lg:py-10'>
-			<div className='flex flex-col gap-5 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between'>
-				<div className='w-full max-w-xl'>
-					<BudgetQuerySelect
-						id='overview-trend-select'
-						name='trend'
-						label='Compare office or category budget trend'
-						value={selectedValue}
-						groups={selectGroups}
-					/>
-				</div>
-				<p className='pt-2 text-left text-[10px] font-medium uppercase tracking-[0.18em] text-[var(--ink-3)] sm:text-right'>
-					Source: General Appropriations Act of the Bangsamoro · ₱ {chartScale.unitLabel}
-				</p>
-			</div>
+		<>
+			{/* What the workspace is, before what it says (user decision).
 
-			<div className='overflow-x-auto'>
-				<svg
-					viewBox={`0 0 ${width} ${height}`}
-					role='img'
-					aria-label={`${selectedLabel} appropriation from fiscal year ${rows[0]?.year} to fiscal year ${rows[rows.length - 1]?.year}`}
-					className='h-auto min-w-[680px] max-w-none sm:min-w-[860px]'
-				>
-					{ticks.map((tick) => {
-						const y = top + ((chartMax - tick) / chartMax) * plotHeight
+			    "Every budget the region has ever passed" is checkable and checked:
+			    Bangsamoro Autonomy Act 1 adopted the flag, Act 2 the emblem, and Act
+			    3 is the FY 2020 appropriations act. There is no earlier one.
 
-						return (
-							<g key={tick}>
-								<line
-									x1={left}
-									x2={width - right}
-									y1={y}
-									y2={y}
-									stroke='var(--rule-soft)'
-									strokeWidth='1'
-								/>
-								<text
-									x={left - 10}
-									y={y + 5}
-									textAnchor='end'
-									fill='var(--ink-3)'
-									fontFamily='var(--font-body)'
-									fontSize='10'
-									fontWeight='500'
+			    The three counts are the newest Act's, and are said to be — `offices`,
+			    `programs` and `projects` off this package are FY 2026, not the span.
+			    Printed against the seven-year total they would read as the span's,
+			    and the span has 55 distinct offices rather than 44.
+
+			    The provenance line names offices, programs and provisions and stops
+			    there. All 44, all 246 and all 207 of those carry a source page; none
+			    of the 258 projects does, so "every figure" would have been a claim
+			    the data does not support. */}
+			<Masthead
+				kicker={`${YEARS.length} Acts · FY ${YEARS[0]} to FY ${YEARS[YEARS.length - 1]}`}
+				title='Every budget the region'
+				titleMuted='has ever passed.'
+			>
+				<ActBars />
+			</Masthead>
+
+			{/* Out of the header and onto the paper above the funds strip (user
+			    decision). The header keeps the claim and the chart — one picture of
+			    seven years — and the detail behind it starts the page proper.
+
+			    The strip below is a tinted band, and that change of ground is the
+			    separator: a rule as well read as a third line in a row of them. */}
+			<section className='bb-container section-band-top pb-20'>
+				<SectionHead
+					size='sm'
+					eyebrow='Each Act by expense class'
+					title='Wages, running costs,'
+					titleMuted='and things you can point at.'
+					lead='Three buckets, and every peso in the Act sits in one of them. The first pays the people. The second keeps the lights on and the fuel in the trucks. The third buys what is still there next year — a road, a health center, an ambulance.'
+				/>
+
+				<div className='-mx-6 overflow-x-auto px-6 lg:-mx-8 lg:px-8'>
+					<table className='w-full min-w-[54rem] border-collapse text-[14.5px]'>
+						<caption className='sr-only'>
+							Each Bangsamoro Act by expense class
+						</caption>
+						<thead>
+							<tr className='border-b border-[var(--ink)]'>
+								<th scope='col' className='py-4 pr-4 text-left'>
+									<span className='sr-only'>Class</span>
+								</th>
+								{ACTS.map((act) => (
+									<th
+										key={act.year}
+										scope='col'
+										className='num py-4 pl-5 text-right font-mono text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
+									>
+										FY {act.year}
+									</th>
+								))}
+								<th
+									scope='col'
+									className='num py-4 pl-5 text-right font-mono text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
 								>
-									{formatScaledTick(tick, chartScale)}
-								</text>
-							</g>
-						)
-					})}
+									Total
+								</th>
+							</tr>
+						</thead>
 
-					{points.map((point) => {
-						const barTop = point.y
+						<tbody>
+							{EXPENSE_CLASSES.map((one) => {
+								const across = ACTS.reduce((sum, act) => sum + act.totals[one.key], 0)
+								return (
+									<tr key={one.key} className='border-b border-[var(--rule-soft)] transition-colors duration-150 hover:bg-[var(--paper-2)]'>
+										<th scope='row' className='py-5 pr-4 text-left font-normal'>
+											<span className='flex items-center gap-2.5'>
+												<span
+													aria-hidden='true'
+													className='size-2.5 shrink-0'
+													style={{ background: one.tone }}
+												/>
+												<span className='text-[15px] font-semibold text-[var(--ink)]'>
+													{one.label}
+												</span>
+											</span>
+										</th>
+										{ACTS.map((act) => (
+											<td
+												key={act.year}
+												className='num py-5 pl-5 text-right text-[13px] tabular-nums text-[var(--ink-2)]'
+												title={`${peso(act.totals[one.key])} — ${percent((act.totals[one.key] / act.total) * 100, 1)} of FY ${act.year}`}
+											>
+												{short(act.totals[one.key])}
+											</td>
+										))}
+										<td className='num py-5 pl-5 text-right text-[13px] font-semibold tabular-nums text-[var(--ink)]'>
+											{short(across)}
+										</td>
+									</tr>
+								)
+							})}
+						</tbody>
 
-						return (
-							<rect
-								key={`bar-${point.year}`}
-								x={point.x - barWidth / 2}
-								y={barTop}
-								width={barWidth}
-								height={top + plotHeight - barTop}
-								fill='var(--accent-soft)'
-								opacity='0.82'
-							/>
-						)
-					})}
+						<tfoot>
+							<tr className='border-t-2 border-[var(--brass)]'>
+								<th scope='row' className='py-5 pr-4 text-left'>
+									<span className='sr-only'>The Act</span>
+								</th>
+								{ACTS.map((act) => (
+									<td
+										key={act.year}
+										className='num py-5 pl-5 text-right text-[13px] font-semibold tabular-nums text-[var(--ink)]'
+									>
+										{short(act.total)}
+									</td>
+								))}
+								<td className='num py-5 pl-5 text-right text-[13px] font-semibold tabular-nums text-[var(--accent)]'>
+									{short(SPAN)}
+								</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</section>
 
-					<polyline
-						points={points.map((point) => `${point.x},${point.y}`).join(' ')}
-						fill='none'
-						stroke='var(--accent)'
-						strokeWidth='3'
-						strokeLinejoin='round'
-						strokeLinecap='round'
+			{/* A fifth of an Act sitting outside every ministry qualifies every
+			    table below it, so a reader meets it before the first column of
+			    ministries rather than after. */}
+			<section className='bg-[var(--paper-2)]'>
+				<div className='bb-container section-band'>
+					<SectionHead
+						size='sm'
+						eyebrow='Held in a special purpose fund'
+						title='Money without'
+						titleMuted='a ministry.'
+						lead='Money kept aside for what nobody can put in a calendar — a typhoon, an outbreak, a bill that lands on every ministry at once. No office is given it to spend until the thing actually happens.'
 					/>
+					<dl className='mt-20 grid gap-x-8 gap-y-8 sm:grid-cols-4 lg:grid-cols-7'>
+						{ACTS.map((act) => (
+							<div key={act.year}>
+								<div
+									className='split-bar split-bar-xs'
+									role='img'
+									aria-label={`FY ${act.year}: ${percent((act.funds / act.total) * 100, 0)} in special purpose funds`}
+								>
+									<div
+										className='split-bar-seg'
+										style={{ width: `${(act.funds / act.total) * 100}%`, background: 'var(--accent)' }}
+									/>
+									<div
+										className='split-bar-seg'
+										style={{
+											width: `${100 - (act.funds / act.total) * 100}%`,
+											background: 'var(--rule)',
+										}}
+									/>
+								</div>
+								<dt className='money mt-3 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+									FY {act.year}
+								</dt>
+								<dd
+									className={`money money-stat-value mt-1.5 ${act.funds === MOST_FUNDS ? 'text-[var(--accent)]' : ''}`}
+									title={peso(act.funds)}
+								>
+									{short(act.funds)}
+								</dd>
+								<dd className='money mt-1 font-mono text-[10.5px] font-semibold tracking-[0.08em] text-[var(--accent)]'>
+									{percent((act.funds / act.total) * 100, 0)} of the Act
+								</dd>
+							</div>
+						))}
+					</dl>
+				</div>
+			</section>
 
-					{points.map((point) => (
-						<g key={point.year}>
-							<circle
-								cx={point.x}
-								cy={point.y}
-								r='6'
-								fill='var(--accent)'
-							/>
-							<text
-								x={point.x}
-								y={point.y - 16}
-								textAnchor='middle'
-								fill='var(--ink)'
-								fontFamily='var(--font-body)'
-								fontSize='13'
-								fontWeight='800'
-							>
-								{formatScaledAmount(point.total, chartScale)}
-							</text>
-							<text
-								x={point.x}
-								y={height - 14}
-								textAnchor='middle'
-								fill='var(--ink-3)'
-								fontFamily='var(--font-body)'
-								fontSize='11'
-								fontWeight='500'
-							>
-								{point.year}
-							</text>
-						</g>
-					))}
-				</svg>
-			</div>
-		</section>
+			{/* ---- The two cuts ---- */}
+			{/* No head on this one. It was announcing a choice the tabs make
+			    plainly by existing, and a heading, a standfirst and two labels all
+			    saying "sector or office" is three of them too many. The strip pins
+			    under the nav once the reader is inside it. */}
+			{/* The rule belongs to the tab strip, not to this section. On the section
+			    it is drawn across the container's padding as well as its content, so
+			    it started a gutter's width left of the first tab and read as a line
+			    that had failed to line up with anything. */}
+			<section className='bb-container section-band'>
+				<BudgetTabs
+					label='The same span, cut three ways'
+					tabs={[
+						{
+							id: 'offices',
+							label: 'Offices',
+							badge: joinRenames(officeLines.filter((line) => !FUNDS.has(line.slug))).length,
+							panel: (
+								<YearTable
+									wide
+									caption='Every ministry, office and commission by fiscal year'
+									head='Office'
+									rows={joinRenames(officeLines.filter((line) => !FUNDS.has(line.slug)))
+										.map((line) => ({
+											key: line.slug,
+											label: line.name,
+											at: (year: number) =>
+												line.series.find(([one]) => one === year)?.[1] ?? 0,
+											total: line.series.reduce((sum, [, amount]) => sum + amount, 0),
+										}))
+										.sort((one, other) => other.total - one.total)}
+									foot='Every place someone works: the ministries, the Chief Minister and the offices under him, and the commissions, authorities and the Wali filed under Other Executive Offices. The eight special purpose funds are left out — they are money without a ministry, and they are the strip in the header — so this column does not sum to the Act.'
+								/>
+							),
+						},
+						{
+							id: 'sectors',
+							label: 'Sectors',
+							badge: sectorLines.length,
+							panel: (
+								<YearTable
+									caption='Each sector of the budget by fiscal year'
+									head='Sector'
+									rows={[...sectorLines]
+										.map((line) => ({
+											key: line.slug,
+											label: line.name,
+											href: `/sectors/${line.slug}`,
+											at: (year: number) =>
+												line.series.find(([one]) => one === year)?.[1] ?? 0,
+											total: line.series.reduce((sum, [, amount]) => sum + amount, 0),
+										}))
+										.sort((one, other) => other.total - one.total)}
+								/>
+							),
+						},
+						{
+							id: 'areas',
+							label: 'Areas',
+							badge: areaLines.length,
+							panel: (
+								<YearTable
+									caption='Itemised construction by the area each Act names, by fiscal year'
+									head='Area'
+									rows={[...areaLines]
+										.map((line) => ({
+											key: line.slug,
+											label: line.name,
+											at: (year: number) =>
+												line.series.find(([one]) => one === year)?.[1] ?? 0,
+											total: line.series.reduce((sum, [, amount]) => sum + amount, 0),
+										}))
+										.sort((one, other) => other.total - one.total)}
+									foot='The itemised construction projects only — the one part of a budget that carries a place at all, so this column is far smaller than the Act. The region was also redrawn inside the span: Maguindanao I and II become Del Norte and Del Sur, Sulu stops appearing after FY 2022, and a renamed area is two rows rather than one.'
+								/>
+							),
+						},
+					]}
+				/>
+			</section>
+
+		</>
 	)
 }

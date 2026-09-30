@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  transpilePackages: ["@betterbarmm/ui", "@betterbarmm/editorial"],
+  transpilePackages: [
+		'@betterbarmm/ui',
+		'@betterbarmm/editorial',
+		'@betterbarmm/ai',
+		'@betterbarmm/lgu-data',
+		'@betterbarmm/travel-data',
+		'@betterbarmm/budget-data',
+		'@betterbarmm/schemas',
+	],
   experimental: {
     externalDir: true,
   },

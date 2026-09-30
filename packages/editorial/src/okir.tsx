@@ -65,7 +65,7 @@ function useDrawn() {
 }
 
 /**
- * The running rule — a beam with a fern at its centre and a scroll running out
+ * The running rule — a beam with a fern at its center and a scroll running out
  * to each edge.
  *
  * It replaces a 1px divider at the seam between two sections that both matter.
@@ -90,9 +90,9 @@ export function OkirRule({ duration = 1.6, delay = 0, className = '' }: Drawable
   ))
 
   return (
-    // A hairline out to both page edges with the carving centred on it. The
+    // A hairline out to both page edges with the carving centerd on it. The
     // rules draw outward from the middle and the motif follows them, so the
-    // whole thing reads as one cut travelling along a beam rather than as three
+    // whole thing reads as one cut traveling along a beam rather than as three
     // elements appearing together.
     <div className={`flex items-center ${className}`} aria-hidden='true'>
       <motion.span
@@ -111,7 +111,7 @@ export function OkirRule({ duration = 1.6, delay = 0, className = '' }: Drawable
       >
         <g stroke='currentColor' strokeWidth={1.4} strokeOpacity={0.8}>
           {half}
-          {/* The right half is the left one mirrored about the centre line. */}
+          {/* The right half is the left one mirrored about the center line. */}
           <g transform='translate(360 0) scale(-1 1)'>{half}</g>
 
           {OKIR_RULE_CENTRE.map((d, index) => (
@@ -146,7 +146,7 @@ export function OkirRule({ duration = 1.6, delay = 0, className = '' }: Drawable
 
 /**
  * The medallion: three rings, a ring of lancet petals, a band of studs, and a
- * diamond at the centre.
+ * diamond at the center.
  *
  * Positioned absolutely by the caller and held at very low opacity. It exists
  * to give a large empty masthead something happening in it; the moment it is
@@ -220,7 +220,7 @@ export function OkirBloom({
           )),
         )}
 
-        {/* The woven band, and the centre. */}
+        {/* The woven band, and the center. */}
         <motion.g
           initial={{ opacity: 0, scale: 0.94 }}
           animate={drawn ? { opacity: 1, scale: 1 } : undefined}
@@ -237,7 +237,7 @@ export function OkirBloom({
 
           {Array.from({ length: cut.spokes }, (_, spoke) =>
             OKIR_BLOOM_CORE.map((d, index) => (
-              // The centre diamond is drawn once; only the spoke repeats.
+              // The center diamond is drawn once; only the spoke repeats.
               index === 0 && spoke > 0 ? null : (
                 <path
                   key={`${spoke}-${index}`}

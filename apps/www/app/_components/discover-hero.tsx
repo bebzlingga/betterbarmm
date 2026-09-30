@@ -7,7 +7,7 @@ import Link from 'next/link'
 import { useRef } from 'react'
 import { PhotoCredit } from './discover-figure'
 import type { DiscoverPhoto } from './discover-media'
-import { LineReveal, OkirBloom, Rise } from '@betterbarmm/editorial'
+import { LineReveal, Rise } from '@betterbarmm/editorial'
 
 /**
  * The opening frame of Discover and of every chapter in it: one photograph the
@@ -93,13 +93,6 @@ export function DiscoverHero({
 				/>
 			</motion.div>
 
-			{/* The medallion over the picture rather than behind it — it is the one
-			    mark that says which site this photograph is on. Held low enough that
-			    it never competes with whatever the image is doing. */}
-			<OkirBloom
-				className='absolute -bottom-[32%] -right-[8%] size-[min(34rem,72vw)] text-white opacity-[0.13]'
-				delay={0.6}
-			/>
 
 			<motion.div
 				className='absolute inset-0 z-2 flex flex-col justify-end'

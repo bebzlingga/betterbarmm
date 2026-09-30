@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { DM_Sans, Outfit } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { AskDock } from '@betterbarmm/ai/dock'
 import { MotionProvider } from '@betterbarmm/editorial'
 import { themeInitScript } from './_components/theme-toggle'
 import './globals.css'
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
 		template: '%s / BetterBARMM Election',
 	},
 	description:
-		'The 2026 Bangsamoro Parliamentary Election as a public record: the parties on the regional ballot, the candidates who filed in each district, the reserved seats, the dates the vote moved through, and the source behind every line.',
+		'The 2026 Bangsamoro Parliamentary Election as a public record: the count that filled all 80 seats, the parties on the regional ballot, the candidates who filed in each district, the reserved seats, and the source behind every line.',
 	/* Absolute, because everything below it is relative. Without a
 	   `metadataBase` the generated card resolves to a path rather than a URL,
 	   and a platform scraping the page has nothing to fetch — which is why a
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
 		url: 'https://election.betterbarmm.com',
 		title: 'BetterBARMM Election',
 		description:
-			'The 2026 Bangsamoro Parliamentary Election as a public record: the parties on the regional ballot, the candidates who filed in each district, the reserved seats, the dates the vote moved through, and the source behind every line.',
+			'The 2026 Bangsamoro Parliamentary Election as a public record: the count that filled all 80 seats, the parties on the regional ballot, the candidates who filed in each district, the reserved seats, and the source behind every line.',
 	},
 
 	/* The canonical address, and permission to index it.
@@ -56,7 +57,7 @@ export const metadata: Metadata = {
 		card: 'summary_large_image',
 		title: 'BetterBARMM Election',
 		description:
-			'The 2026 Bangsamoro Parliamentary Election as a public record: the parties on the regional ballot, the candidates who filed in each district, the reserved seats, the dates the vote moved through, and the source behind every line.',
+			'The 2026 Bangsamoro Parliamentary Election as a public record: the count that filled all 80 seats, the parties on the regional ballot, the candidates who filed in each district, the reserved seats, and the source behind every line.',
 	},
 }
 
@@ -84,6 +85,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className='min-h-full bg-[var(--paper)] antialiased'>
 				<MotionProvider>{children}</MotionProvider>
 				<Analytics />
+				<AskDock />
 			</body>
 		</html>
 	)

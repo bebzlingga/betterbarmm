@@ -14,7 +14,7 @@
 
    SVG for the chamber, because its geometry is arcs and nothing about it
    reflows; CSS grid for the threshold, because that one is a row of cells
-   that has to wrap on a phone. Every colour is a token, so the dark theme
+   that has to wrap on a phone. Every color is a token, so the dark theme
    gets both for free.
    ============================================================ */
 
@@ -156,21 +156,29 @@ export function SeatMap({
 				</div>
 			</div>
 
-			{/* The legend takes the chamber's own colours rather than pointing at
+			{/* The legend takes the chamber's own colors rather than pointing at
 			    them — but as a bar across the head of each cell, not as a ground
 			    under its type.
 
-			    A dot beside a figure is a key: it asks the reader to carry a colour
-			    from here up to the arc and match it. A bar is the colour at a size
+			    A dot beside a figure is a key: it asks the reader to carry a color
+			    from here up to the arc and match it. A bar is the color at a size
 			    the eye can hold, and it leaves the paper under the figures alone,
-			    so the three colours can be their exact selves rather than a tint
+			    so the three colors can be their exact selves rather than a tint
 			    mixed weak enough for type to sit on. Nothing is set on them. */}
-			{/* No frame and no dividers — the colour bar is the whole of the cell's
+			{/* No frame and no dividers — the color bar is the whole of the cell's
 			    furniture. Boxed, three figures read as three panels to be inspected
 			    one after another; on the open page with a bar over each they read as
 			    one row of three, which is what they are. The gap between them is
 			    what separates them now, the way it separates everything else. */}
-			<figcaption className='mt-10 grid gap-x-10 gap-y-9 sm:grid-cols-3'>
+			{/* Three tracks on the home page, four blocs on the results page. The
+			    count is the data's, so the row is told how many columns to take
+			    rather than being set to three and letting a fourth cell drop
+			    underneath the first one, alone on a line. */}
+			<figcaption
+				className={`mt-10 grid gap-x-10 gap-y-9 ${
+					tracks.length === 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2 lg:grid-cols-4'
+				}`}
+			>
 				{tracks.map((track) => (
 					<div key={track.key} className='text-center'>
 						<span
@@ -293,6 +301,97 @@ export function DistrictSeatBars({
 			<p className='mt-4 border-t border-[var(--brass-line)] pt-4 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 				{total} district seats in all
 			</p>
+		</figure>
+	)
+}
+
+/**
+ * The count against the line it had to cross.
+ *
+ * `MajorityBar` above draws the threshold in the abstract — forty-one of
+ * eighty cells, before anyone has voted. This is the same line with the result
+ * laid across it: one bar of eighty seats divided between the blocs that won
+ * them, and the rule standing where a government becomes possible.
+ *
+ * The whole story of this election is the distance between the tallest segment
+ * and that rule, so the bar is the figure and the shortfall is printed on it
+ * rather than left for the reader to subtract.
+ */
+export function OutcomeBar({
+	blocs,
+	total,
+	majority,
+}: {
+	blocs: SeatTrack[]
+	total: number
+	majority: number
+}) {
+	const leader = blocs[0]
+
+	return (
+		<figure>
+			<div className='relative'>
+				<div
+					className='flex h-14 w-full overflow-hidden'
+					role='img'
+					aria-label={`${total} seats: ${blocs
+						.map((bloc) => `${bloc.label} ${bloc.seats}`)
+						.join(', ')}. ${majority} are needed for a majority.`}
+				>
+					{blocs.map((bloc) => (
+						<span
+							key={bloc.key}
+							className='bb-bar-seg block h-full'
+							style={{ width: `${(bloc.seats / total) * 100}%`, background: bloc.color }}
+							title={`${bloc.label} — ${bloc.seats} seats`}
+						/>
+					))}
+				</div>
+
+				{/* The rule sits over the bar rather than under it. A threshold drawn
+				    below reads as an axis tick about the picture; drawn through it,
+				    it is the line the blocs did or did not reach. */}
+				<span
+					aria-hidden='true'
+					className='absolute -top-2 bottom-[-0.5rem] w-px bg-[var(--ink)]'
+					style={{ left: `${(majority / total) * 100}%` }}
+				/>
+			</div>
+
+			<figcaption className='mt-5'>
+				<p
+					className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-2)]'
+					style={{ marginLeft: `min(${(majority / total) * 100}%, 100% - 12rem)` }}
+				>
+					{majority} — a majority
+				</p>
+
+				<div className='mt-5 flex flex-wrap gap-x-7 gap-y-3 border-t border-[var(--rule)] pt-5'>
+					{blocs.map((bloc) => (
+						<span key={bloc.key} className='flex items-baseline gap-2.5'>
+							<span
+								aria-hidden='true'
+								className='size-2.5 shrink-0 translate-y-[1px]'
+								style={{ background: bloc.color }}
+							/>
+							<span className='num text-[15px] font-bold leading-none text-[var(--ink)]'>
+								{bloc.seats}
+							</span>
+							<span className='text-[13px] font-semibold leading-none text-[var(--ink-2)]'>
+								{bloc.label}
+							</span>
+						</span>
+					))}
+				</div>
+
+				{leader && leader.seats < majority ? (
+					<p className='mt-5 bb-body text-[var(--ink-2)]'>
+						{leader.label} finished first on {leader.seats} seats — {majority - leader.seats}{' '}
+						short of the {majority} a Chief Minister needs. The chamber is settled by coalition,
+						not by the count.
+					</p>
+				) : null}
+			</figcaption>
 		</figure>
 	)
 }

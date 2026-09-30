@@ -1,4 +1,4 @@
-import { TableOfContents, type TocItem } from './table-of-contents'
+import { TableOfContents, type TocItem } from '@betterbarmm/editorial'
 
 /**
  * The shape the three "How Parliament works" pages share: one reading column

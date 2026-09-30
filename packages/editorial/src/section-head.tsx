@@ -11,7 +11,7 @@ import { LineReveal, Rise } from './motion'
  * of text — a claim over a chart, with the ways out under it. The two-column
  * split is the wrong shape there: it sets the qualifier beside the claim, and
  * the reader takes them as two things when the second is finishing the first.
- * Centred, the block reads straight down — rule, kicker, claim, qualifier —
+ * Centerd, the block reads straight down — rule, kicker, claim, qualifier —
  * and the picture underneath it inherits an axis to sit on.
  */
 export function SectionHead({
@@ -25,9 +25,11 @@ export function SectionHead({
   size = 'md',
   className = '',
 }: {
-  /** The counter down the page's spine — "01", "02". */
-  index: string
-  eyebrow: string
+  /** The counter down the page's spine — "01", "02". Left off where a page
+      has one section, since a lone "01" promises an "02" that never comes. */
+  index?: string
+  /** Left off where the claim under it already names the section. */
+  eyebrow?: string
   title: string
   /** The second half of a two-tone heading, set in the muted grey. */
   titleMuted?: string
@@ -45,20 +47,20 @@ export function SectionHead({
   size?: 'md' | 'sm'
   className?: string
 }) {
-  const centred = align === 'center'
+  const centerd = align === 'center'
 
   return (
-    <div className={`bb-head-gap ${centred ? 'text-center' : ''} ${className}`}>
+    <div className={`bb-head-gap ${centerd ? 'text-center' : ''} ${className}`}>
       <Rise distance={14}>
         <div className='flex items-baseline justify-between gap-6'>
-          {/* Centred, the kicker loses its rule as well as its ranging. The
+          {/* Centerd, the kicker loses its rule as well as its ranging. The
               brass line hangs a section off the left edge of the grid; over
-              centred type it is a full-width bar with two words floating under
+              centerd type it is a full-width bar with two words floating under
               the middle of it, saying the block starts at a corner the type has
               already left. */}
-          <div className={`bb-kicker flex-1 ${centred ? 'bb-kicker-plain justify-center' : ''}`}>
-            <span>{index}</span>
-            <span>{eyebrow}</span>
+          <div className={`bb-kicker flex-1 ${centerd ? 'bb-kicker-plain justify-center' : ''}`}>
+            {index ? <span>{index}</span> : null}
+            {eyebrow ? <span>{eyebrow}</span> : null}
           </div>
           {aside ? <div className='shrink-0 pt-3'>{aside}</div> : null}
         </div>
@@ -70,7 +72,7 @@ export function SectionHead({
           nothing. */}
       <div
         className={`mt-9 grid gap-7 ${
-          lead && !centred ? 'lg:grid-cols-[1.35fr_1fr] lg:items-end lg:gap-16' : ''
+          lead && !centerd ? 'lg:grid-cols-[1.35fr_1fr] lg:items-end lg:gap-16' : ''
         }`}
       >
         <LineReveal
@@ -84,7 +86,7 @@ export function SectionHead({
           <Rise delay={0.2} distance={14}>
             <p
               className={`bb-measure bb-body text-[var(--ink-2)] ${
-                centred ? 'mx-auto' : 'lg:pb-2'
+                centerd ? 'mx-auto' : 'lg:pb-2'
               }`}
             >
               {lead}

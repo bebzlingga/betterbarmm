@@ -91,11 +91,11 @@ export function SiteNav() {
 		// rather than as legible text.
 		<header className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'>
 			<div className='bb-container'>
-				{/* Three tracks so the links sit on the true centre of the header
+				{/* Three tracks so the links sit on the true center of the header
 				    rather than wherever the mark and controls leave room. */}
 				{/* Two tracks on a phone, three from `md` up.
 				 *
-				 * The centre track holds a nav that is not rendered below `md`, so
+				 * The center track holds a nav that is not rendered below `md`, so
 				 * three equal-ish tracks gave the wordmark half the row and the
 				 * controls the other half. The mark is a fixed-height image: the
 				 * moment its share fell under its natural width, `max-width: 100%`

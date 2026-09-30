@@ -4,6 +4,8 @@
 	"private": true,
 	"type": "module",
 	"exports": {
-		".": "./src/index.ts"
+		".": "./src/index.ts",
+		"./history": "./src/officials-history.ts",
+		"./barangay-officials": "./src/barangay-officials.ts"
 	}
 }

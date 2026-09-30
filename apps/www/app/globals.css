@@ -22,6 +22,96 @@
    ============================================================ */
 
 /* ============================================================
+   The masthead artwork's palette
+
+   The drawing is three planes stacked back to front — loose sheets,
+   one document, a plate of figures — and it only reads as three if
+   each sits on a different value from the one behind it. On paper the
+   estate's own tokens did that for free: --paper-2 against --paper,
+   ink against both, the accent for the single mark that matters.
+
+   On the brand ground they collapse. --paper IS the crimson, so the
+   document became a crimson rectangle on a crimson field; --paper-2 is
+   four points off it; and --accent re-points to white, which is also
+   --ink, so the one line the picture is about stopped being a
+   highlight and became another white line among white lines.
+
+   So the surfaces come off four variables of their own. On paper they
+   resolve to what they always were. On crimson they become lifts —
+   white at low alpha, which reads as a panel catching light rather
+   than as a different color — and the mark takes the gold, the one
+   hue on this ground that is neither the paper nor the ink.
+   ============================================================ */
+
+.hero-graphic {
+  --hg-panel: var(--paper-2);
+  --hg-doc: var(--paper);
+  --hg-edge: var(--rule);
+  --hg-mark: var(--accent);
+}
+
+.brand-bg .hero-graphic {
+  /* Each one a step further from the ground than the last, so the stack
+     still reads back to front: sheets barely lifted, the document clearly
+     proud of them, the plate between the two. */
+  --hg-panel: rgba(255, 255, 255, 0.05);
+  --hg-doc: rgba(255, 255, 255, 0.11);
+  --hg-edge: rgba(255, 255, 255, 0.3);
+  --hg-mark: #f0c98a;
+}
+
+/* ============================================================
+   Section rhythm
+
+   One value for the distance between two blocks, as the budget
+   workspace sets it. This app opened on the editorial default of
+   clamp(4.5rem, 9.5vw, 9rem), which is half a band taller at every
+   width than the rest of the estate now runs, and the masthead on top
+   of that was a hand-set pair of Tailwind steps — so a reader moving
+   from a workspace to the front page met a looser page for no reason
+   anyone chose.
+
+   Mapped onto `.bb-section*`, the names this app already uses, rather
+   than renaming twenty-three call sites to `.section-band`. The
+   editorial sheet is imported above, so these override it on order at
+   equal specificity.
+   ============================================================ */
+
+:root {
+  --bb-rhythm: clamp(3.75rem, 7vw, 6.5rem);
+}
+
+.bb-section {
+  padding-block: var(--bb-rhythm);
+}
+
+.bb-section-top {
+  padding-block-start: var(--bb-rhythm);
+}
+
+.bb-section-bottom {
+  padding-block-end: var(--bb-rhythm);
+}
+
+/* Two sections on the same ground meet foot to head, so the rhythm arrives
+   twice — one band under the first and another over the second is double the
+   distance either asked for. The second drops its head and the first one's foot
+   is the whole gap.
+
+   Only between siblings that both carry a band: a full-bleed strip between them
+   — the marquee, a quote band — breaks the adjacency and both keep their own
+   measure, which is what a change of ground wants. */
+:is(.bb-section, .bb-section-top, .bb-section-bottom)
+	+ :is(.bb-section, .bb-section-top) {
+  padding-block-start: 0;
+}
+
+/* The masthead pads itself with the same value, top and foot. */
+.masthead-band {
+  padding-block: var(--bb-rhythm);
+}
+
+/* ============================================================
    The marquee
 
    Two identical tracks side by side, the pair translated by exactly
@@ -93,11 +183,11 @@
   font-size: clamp(1.5rem, 3.2vw, 2.6rem);
 }
 
-/* The diamond has to sit on the optical centre of the capitals beside it, and
- * `align-items: center` cannot put it there: it centres against the line box,
+/* The diamond has to sit on the optical center of the capitals beside it, and
+ * `align-items: center` cannot put it there: it centers against the line box,
  * which carries the descender space under the baseline and whatever the font's
  * default line-height adds above the ascender. Every name in this band is set
- * in capitals, so that centre is always low, and low by an amount that moves
+ * in capitals, so that center is always low, and low by an amount that moves
  * with the line-height rather than with the type.
  *
  * Aligning on the baseline instead makes it arithmetic — both marks are
@@ -109,11 +199,11 @@
   gap: 0.9em;
 }
 
-/* Black weight, held back in colour. The two pull against each other on
+/* Black weight, held back in color. The two pull against each other on
    purpose: 900 gives the band the presence of a masthead, and taking the ink
    right down stops it becoming the darkest thing on the page and pulling the
    eye off whatever sits above. Weight carries the letterforms,
-   colour decides how loudly they speak — the band is meant to be read in
+   color decides how loudly they speak — the band is meant to be read in
    passing, not competing with the title. `--ink-display` is the lightest step
    the ink scale has, and it is a step meant for large type — which is what this
    is. Below it the scale is rules and hairlines, not text. */
@@ -130,7 +220,7 @@
    rhythm instead of reading as one continuous wall of black. The stroke follows
    the solids to `--ink-display` — left any darker it would be the heavier of
    the two and the alternation would read backwards. It is held at a full pixel
-   rather than scaled down with the colour: a hairline this pale is the first
+   rather than scaled down with the color: a hairline this pale is the first
    thing to disappear, and the outline is carrying a name, not an ornament. */
 .dsc-marquee-item[data-quiet="true"] {
   color: transparent;
@@ -140,7 +230,7 @@
 
 /* An empty box has no baseline of its own, so flexbox synthesises one from the
    bottom of its border box — the mark lands sitting on the baseline, its own
-   centre 0.13em above it. Outfit's cap height is 676/1000 of the em, read off
+   center 0.13em above it. Outfit's cap height is 676/1000 of the em, read off
    the file the site actually serves, which puts the middle of a capital at
    0.338em. The lift is the difference between the two. Every number here is a
    font metric rather than a nudge by eye, which is why it holds at both ends of
@@ -219,7 +309,7 @@
    the pointer crossed it on the way to something else, which read as the
    animation breaking rather than as a control; and a reader who wants to look
    at one photograph can open it. Focus is a different case — a tab landing on
-   a tile that is still travelling is unusable — so that one still stops. */
+   a tile that is still traveling is unusable — so that one still stops. */
 .dsc-wall:focus-within .dsc-wall-mover {
   animation-play-state: paused;
 }
@@ -388,10 +478,10 @@
 /* The controls, floated off the top edge.
  *
  * Out of the flow on purpose: in it, the bar was a row of the layout and the
- * photograph centred itself in what was left, which is not the middle of the
+ * photograph centerd itself in what was left, which is not the middle of the
  * screen. The picture is the thing being looked at and it should sit on the
- * centre; the controls are furniture and belong at an edge. An absolutely
- * positioned grid child takes no track, so the figure is centred against the
+ * center; the controls are furniture and belong at an edge. An absolutely
+ * positioned grid child takes no track, so the figure is centerd against the
  * full height as though the bar were not there.
  *
  * An absolute child is placed against the padding box, so `top: 0` is the top
@@ -518,9 +608,9 @@
   --ink-display: #6b6353;
   --accent: #e8796a;
   --brass: #d3a95f;
-  --brass-line: rgba(211, 169, 95, 0.36);
-  --rule: rgba(247, 244, 236, 0.14);
-  --rule-soft: rgba(247, 244, 236, 0.08);
+  --brass-line: rgba(141, 189, 255, 0.28);
+  --rule: rgba(248, 249, 250, 0.14);
+  --rule-soft: rgba(248, 249, 250, 0.08);
   background: var(--paper);
   color: var(--ink);
 }
@@ -541,7 +631,7 @@
    rather than first. No specificity in an unlayered rule can beat an
    important one inside a layer.
 
-   The colour is settled that way. The shadow under it is not, and it
+   The color is settled that way. The shadow under it is not, and it
    is a different problem: `:not()` only stops the declaration being
    applied to the panel, and `text-shadow` inherits. So the panel took
    the picture's scrim down from the nav item above it — every row in
@@ -552,7 +642,7 @@
    scrim off them too.
 
    What is left here is the one thing the panel needs that the shared
-   styles do not give it: a colour for a workspace that has no page
+   styles do not give it: a color for a workspace that has no page
    yet, which is a row rather than a link.
    ============================================================ */
 

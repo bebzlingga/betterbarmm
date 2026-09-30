@@ -2,7 +2,7 @@
 // using it too. It is re-exported here so no call site had to change.
 export { SectionHead } from '@betterbarmm/editorial'
 
-import { LineReveal, OkirBloom, Rise } from '@betterbarmm/editorial'
+import { LineReveal, Rise } from '@betterbarmm/editorial'
 import { ScrollCue } from './scroll-cue'
 
 type MastheadProps = {
@@ -42,15 +42,14 @@ type MastheadProps = {
 /**
  * The top of every page that is not a chapter.
  *
- * It is a masthead rather than a header: a large empty warm ground, one
- * medallion turning behind it at an opacity you have to look for, and the
+ * It is a masthead rather than a header: a large empty warm ground and the
  * headline arriving line by line out of its own baseline. The rest of the
  * estate opens on a paragraph of 13px grey, which is correct for a filing
  * system and hopeless for a front door.
  *
- * The bloom sits top-right and bleeds off both edges on purpose. A decorative
- * motif fully contained inside the viewport reads as a logo; one that runs off
- * the page reads as a ground the page is printed on.
+ * The okir medallion that used to turn behind it is gone (user decision): on
+ * a ground this open it read as a logo the page did not have, and the glow
+ * alone carries the warmth it was there for.
  */
 export function Masthead({
   label,
@@ -69,7 +68,6 @@ export function Masthead({
        than `vh` so a phone's collapsing address bar cannot change the height
        mid-scroll. */
     <section className='bb-lattice relative flex min-h-[80svh] items-center overflow-hidden'>
-      <OkirBloom className='absolute -right-[14%] -top-[38%] size-[min(46rem,86vw)] opacity-[0.16]' />
       <span
         aria-hidden='true'
         className='bb-glow absolute -right-[10%] -top-[20%] size-[36rem]'

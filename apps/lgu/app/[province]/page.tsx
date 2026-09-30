@@ -1,7 +1,7 @@
-import { ArrowLeftIcon, ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
+import { ArrowLeftIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import {
 	LguBreadcrumb,
 	LguMasthead,
@@ -15,17 +15,35 @@ import {
 	formatArea,
 	formatNumber,
 	growth,
+	areaHref,
+	isSingleUnitArea,
 	largestUnits,
 	lguData,
 	lguProvinces,
 	officialsTerms,
+	unaccounted,
+	type LguProvince,
 	type LguUnit,
 } from '@betterbarmm/lgu-data'
-import { MultiSeat, NoCanvass, SingleSeat } from '../_components/lgu-officials'
+import {
+	MultiSeat,
+	NoCanvass,
+	OfficeLineage,
+	ProvinceRollPanel,
+	Reconstructed,
+	SingleSeat,
+} from '../_components/lgu-officials'
+import { provinceHistory, tookOffice } from '@betterbarmm/lgu-data/history'
 import { LguTermPicker } from '../_components/lgu-term-picker'
-import { LineReveal, OkirRule, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { UnitGrid, type UnitCard } from '../_components/unit-grid'
+import { LineReveal, OkirRule, Rise } from '@betterbarmm/editorial'
+
 export function generateStaticParams() {
-	return lguProvinces.map((province) => ({ province: province.slug }))
+	// Cotabato City's area page is a list of one thing named after the thing.
+	// It is not prerendered; the route below redirects anyone who reaches it.
+	return lguProvinces
+		.filter((province) => !isSingleUnitArea(province))
+		.map((province) => ({ province: province.slug }))
 }
 
 export async function generateMetadata({
@@ -52,70 +70,85 @@ function currentMayor(unit: LguUnit): string | null {
 	return mayor?.ranked[0]?.name ?? null
 }
 
-export default async function ProvincePage({
-	params,
-}: {
-	params: Promise<{ province: string }>
-}) {
+/** A unit flattened to what the browser-side grid needs. */
+function toCard(province: LguProvince, unit: LguUnit): UnitCard {
+	return {
+		name: unit.name,
+		href: `/${province.slug}/${unit.slug}`,
+		isCity: unit.isCity,
+		isCapital: unit.isCapital,
+		cityClass: unit.cityClass,
+		formedFrom: unit.formedFrom,
+		mayor: currentMayor(unit),
+		population: unit.population,
+		barangays: unit.barangays.length,
+	}
+}
+
+export default async function ProvincePage({ params }: { params: Promise<{ province: string }> }) {
 	const { province: slug } = await params
 	const province = findProvince(slug)
 	if (!province) notFound()
+	if (isSingleUnitArea(province)) redirect(areaHref(province))
+
+	// The terms before 2025, which are winners only — see the history package.
+	const history = provinceHistory(province.slug)
 
 	const cities = province.municipalities.filter((unit) => unit.isCity)
 	const municipalities = province.municipalities.filter((unit) => !unit.isCity)
 	const biggest = largestUnits(province)
 	const change = growth(province)
+	const gap = unaccounted(province)
 
 	// This province against the region it sits in. The dataset's regional total
-	// is summed from the same municipalities, so the two figures are measured the
-	// same way and the share is a real comparison rather than two vintages
-	// divided by each other.
+	// is summed from the same areas, so the two figures are measured the same way
+	// and the share is a real comparison rather than two vintages divided by each
+	// other.
 	const regionShare =
 		province.population != null && lguData.totals.population
 			? Math.round((province.population / lguData.totals.population) * 1000) / 10
 			: null
 
+	const groups = [
+		{
+			title: cities.length === 1 ? 'City' : 'Cities',
+			units: cities,
+			label: 'cities',
+		},
+		{ title: 'Municipalities', units: municipalities, label: 'municipalities' },
+	].filter((group) => group.units.length > 0)
+
 	return (
 		<>
-
 			<LguMasthead
-				breadcrumb={
-					<LguBreadcrumb trail={[]}>
-						{province.name}
-					</LguBreadcrumb>
-				}
+				brand
+				breadcrumb={<LguBreadcrumb trail={[]}>{province.name}</LguBreadcrumb>}
 				kicker={`${province.kind} · Bangsamoro`}
 				name={province.name}
 				note={province.note}
 			>
 				{/* ---- The province in figures ---- */}
-				<Stagger gap={0.07} className='mt-14 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4'>
-					<StaggerItem>
+				<Rise delay={0.3} distance={14}>
+					<div className='mt-14 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4'>
 						<LguStat
 							value={formatNumber(province.population)}
 							count={province.population}
 							label='Population (2024)'
 						/>
-					</StaggerItem>
-					<StaggerItem>
 						<LguStat
 							value={String(province.municipalities.length)}
 							count={province.municipalities.length}
 							group={false}
 							label={cities.length > 0 ? 'Cities and municipalities' : 'Municipalities'}
 						/>
-					</StaggerItem>
-					<StaggerItem>
 						<LguStat
 							value={formatNumber(province.barangayCount)}
 							count={province.barangayCount}
 							label='Barangays'
 						/>
-					</StaggerItem>
-					<StaggerItem>
 						<LguStat value={formatArea(province.areaKm2)} label='Land area' />
-					</StaggerItem>
-				</Stagger>
+					</div>
+				</Rise>
 
 				<div className='mt-12 grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:gap-16'>
 					{regionShare != null ? (
@@ -147,7 +180,7 @@ export default async function ProvincePage({
 									since the 2020 census
 								</p>
 							) : null}
-							{biggest.length > 0 ? (
+							{biggest.length > 0 && province.municipalities.length > 1 ? (
 								<p>
 									Largest:{' '}
 									<span className='font-semibold text-[var(--ink)]'>
@@ -155,15 +188,43 @@ export default async function ProvincePage({
 									</span>
 								</p>
 							) : null}
-							{/* A province total that had to be added up from its towns is a
-							    weaker figure than one the census published for the province,
-							    so the page says which one it is showing. */}
-							{province.populationSource === 'summed from municipalities' ? (
-								<p className='text-[var(--ink-mute)]'>Population summed from its municipalities</p>
-							) : null}
 						</div>
 					</Rise>
 				</div>
+
+				{/* Where the province figure and its own municipalities disagree, the
+				    page says so and by how much. A total that silently fails to match
+				    the list under it is the kind of thing a reader notices second and
+				    stops trusting the page over. */}
+				{province.populationNote || gap ? (
+					<Rise delay={0.2} distance={12}>
+						<div className='mt-10 border-l-2 border-[var(--brass)] bg-[var(--paper-2)] px-5 py-4'>
+							<p className='bb-label'>About this figure</p>
+							<div className='bb-measure mt-3 space-y-2 text-[12.5px] leading-6 text-[var(--ink-2)]'>
+								{province.populationNote ? <p>{province.populationNote}</p> : null}
+								{gap ? (
+									<p>
+										The cities and municipalities below add up to{' '}
+										<span className='num font-semibold text-[var(--ink)]'>
+											{formatNumber((province.population ?? 0) - gap.people)}
+										</span>
+										, which is {formatNumber(Math.abs(gap.people))}{' '}
+										{gap.people > 0 ? 'short of' : 'more than'} the provincial figure.
+										{gap.missingUnits > 0
+											? ` ${gap.missingUnits === 1 ? 'One unit has' : `${gap.missingUnits} units have`} no 2024 count in the record, and ${gap.missingUnits === 1 ? 'accounts' : 'account'} for the difference.`
+											: ' The source record does not explain the difference, so neither does this page.'}
+									</p>
+								) : null}
+								{province.populationSource === 'summed from municipalities' ? (
+									<p className='text-[var(--ink-mute)]'>
+										This province has no published census figure of its own here, so the total is
+										summed from its municipalities.
+									</p>
+								) : null}
+							</div>
+						</div>
+					</Rise>
+				) : null}
 			</LguMasthead>
 
 			{/* ---- Who runs it ---- */}
@@ -182,17 +243,59 @@ export default async function ProvincePage({
 						className='bb-display-sm mt-8 text-[var(--ink)]'
 					/>
 
+					{/* Who has governed the province since 2001, before the term-by-term
+					    detail — one term answers who the governor is, the run answers
+					    who the province has been governed by. */}
 					<div className='mt-12'>
+						<OfficeLineage
+							terms={officialsTerms}
+							holders={Object.fromEntries(
+								officialsTerms.map((term) => [
+									term.id,
+									province.officials?.[term.id]?.governor?.ranked[0] ??
+										tookOffice(history[term.id], 'governor'),
+								]),
+							)}
+						/>
+					</div>
+
+					<div className='mt-14'>
 						<LguTermPicker
 							panels={officialsTerms
 								.map((term) => {
-									const officials = province.officials?.[term.id]
-									if (!officials) return null
+									const record = history[term.id]
+									// COMELEC's own canvass, or a reconstructed one — the same
+									// shape either way, so the same components draw it.
+									const officials =
+										province.officials?.[term.id] ??
+										(record?.kind === 'canvass' ? record : undefined)
+
+									if (!officials) {
+										if (
+											record?.kind !== 'roll' ||
+											(!record.governor && !record.viceGovernor && !record.board?.length)
+										) {
+											return null
+										}
+										return {
+											id: term.id,
+											node: <ProvinceRollPanel roll={record} note={term.note} />,
+										}
+									}
 
 									return {
 										id: term.id,
 										node: (
 											<div>
+												{term.status === 'canvass' ? <Reconstructed note={term.note} /> : null}
+												{record?.kind === 'canvass' && record.undivided ? (
+													<p className='mb-8 max-w-2xl border border-[var(--rule)] bg-[var(--paper-2)] p-4 text-[13px] leading-6 text-[var(--ink-2)]'>
+														{record.undivided} was still one province in this term. This is its
+														canvass — the governor, vice-governor and board elected by what is now
+														both Maguindanao del Norte and Maguindanao del Sur. Neither half
+														elected its own until 2025.
+													</p>
+												) : null}
 												<div className='grid gap-10 lg:grid-cols-2 lg:gap-16'>
 													{officials.governor ? (
 														<SingleSeat title='Provincial Governor' contest={officials.governor} />
@@ -207,7 +310,10 @@ export default async function ProvincePage({
 
 												{officials.board ? (
 													<div className='mt-12'>
-														<MultiSeat title='Sangguniang Panlalawigan' contests={officials.board} />
+														<MultiSeat
+															title='Sangguniang Panlalawigan'
+															contests={officials.board}
+														/>
 													</div>
 												) : null}
 											</div>
@@ -225,90 +331,31 @@ export default async function ProvincePage({
 
 			{/* ---- The units ---- */}
 			<section className='bb-container bb-section-bottom'>
-				{[
-					{ title: cities.length === 1 ? 'City' : 'Cities', units: cities },
-					{ title: 'Municipalities', units: municipalities },
-				]
-					.filter((group) => group.units.length > 0)
-					.map((group, groupIndex) => (
-						<div key={group.title} className='mt-16 first:mt-16'>
-							<Rise distance={12}>
-								<div className='bb-kicker'>
-									<span>{String(groupIndex + 2).padStart(2, '0')}</span>
-									<span>{group.title}</span>
-								</div>
-								<div className='mt-6 flex items-baseline justify-between gap-4 border-b border-[var(--rule)] pb-3'>
-									<h2 className='text-[1.4rem] font-extrabold tracking-[-0.03em] text-[var(--ink)]'>
-										Every {group.title.toLowerCase().replace(/s$/, '')} in {province.name}
-									</h2>
-									<p className='num text-[13px] font-semibold text-[var(--brass)]'>
-										{group.units.length}
-									</p>
-								</div>
-							</Rise>
+				{groups.map((group, groupIndex) => (
+					<div key={group.title} className='mt-16'>
+						<Rise distance={12}>
+							<div className='bb-kicker'>
+								<span>{String(groupIndex + (province.officials ? 2 : 1)).padStart(2, '0')}</span>
+								<span>{group.title}</span>
+							</div>
+							<div className='mt-6 flex items-baseline justify-between gap-4 border-b border-[var(--ink)] pb-3'>
+								<h2 className='text-[1.4rem] font-extrabold tracking-[-0.03em] text-[var(--ink)]'>
+									Every {group.title.toLowerCase().replace(/ies$/, 'y').replace(/s$/, '')} in{' '}
+									{province.name}
+								</h2>
+								<p className='num text-[13px] font-semibold text-[var(--brass)]'>
+									{group.units.length}
+								</p>
+							</div>
+						</Rise>
 
-							<Stagger gap={0.03} className='grid sm:grid-cols-2 lg:grid-cols-3'>
-								{group.units.map((unit) => (
-									<StaggerItem key={unit.slug} distance={12}>
-										<Link
-											href={`/${province.slug}/${unit.slug}`}
-											className='group flex h-full flex-col border-b border-[var(--rule)] py-5 transition hover:bg-[var(--paper-2)] sm:border-r sm:px-5 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(3n)]:border-r-0'
-										>
-											<div className='flex items-start justify-between gap-3'>
-												<h3 className='text-[16px] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
-													{unit.name}
-												</h3>
-												<ArrowUpRightIcon
-													className='mt-1 size-3.5 shrink-0 text-[var(--ink-3)] transition duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--accent)]'
-													aria-hidden='true'
-												/>
-											</div>
-
-											<div className='mt-2 flex flex-wrap items-center gap-x-3 gap-y-1'>
-												{unit.isCapital ? (
-													<span className='badge badge-plain badge-early'>Capital</span>
-												) : null}
-												{unit.isCity ? (
-													<span className='badge badge-plain badge-committee'>City</span>
-												) : null}
-												{unit.formedFrom ? (
-													<span className='meta-sm'>from {unit.formedFrom}</span>
-												) : null}
-											</div>
-
-											{currentMayor(unit) ? (
-												<p className='mt-3 text-[13px] leading-5 text-[var(--ink-2)]'>
-													<span className='font-mono text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
-														Mayor{' '}
-													</span>
-													<span className='font-semibold text-[var(--ink)]'>
-														{currentMayor(unit)}
-													</span>
-												</p>
-											) : null}
-
-											<dl className='mt-4 flex flex-wrap gap-x-6 gap-y-1 text-[12.5px] text-[var(--ink-3)]'>
-												<div className='flex gap-1.5'>
-													<dt className='sr-only'>Population</dt>
-													<dd className='num font-semibold text-[var(--ink)]'>
-														{formatNumber(unit.population)}
-													</dd>
-													<span aria-hidden='true'>people</span>
-												</div>
-												<div className='flex gap-1.5'>
-													<dt className='sr-only'>Barangays</dt>
-													<dd className='num font-semibold text-[var(--ink)]'>
-														{unit.barangays.length}
-													</dd>
-													<span aria-hidden='true'>barangays</span>
-												</div>
-											</dl>
-										</Link>
-									</StaggerItem>
-								))}
-							</Stagger>
-						</div>
-					))}
+						<UnitGrid
+							units={group.units.map((unit) => toCard(province, unit))}
+							label={group.label}
+							searchable={group.units.length > 12}
+						/>
+					</div>
+				))}
 
 				<LguSourceNote className='mt-16' />
 

@@ -3,12 +3,22 @@
 import { CaretDownIcon, HandHeartIcon } from '@phosphor-icons/react'
 import { EASE, Magnetic, ScrollProgress } from '@betterbarmm/editorial'
 import { AnimatePresence, motion } from 'motion/react'
-import { lguProvinces } from '@betterbarmm/lgu-data'
+import { areaHref, lguProvinces } from '@betterbarmm/lgu-data'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
+import { FinderTrigger } from './unit-finder'
 import { ThemeToggle } from './theme-toggle'
+
+/* The two explainers. Kept a pair rather than two top-level items: one is what
+   the rungs do and the other is which code says so, and a reader who wants
+   either usually wants both. */
+const guides = [
+	{ href: '/how-it-works', label: 'What each rung does' },
+	{ href: '/spending', label: 'What the region spends where' },
+	{ href: '/two-codes', label: 'The two codes' },
+] as const
 
 const workspaces = [
 	{ href: 'https://election.betterbarmm.com', label: 'Election' },
@@ -86,7 +96,7 @@ function Menu({
 						exit={{ opacity: 0, y: -6, scaleY: 0.96 }}
 						transition={{ duration: 0.24, ease: EASE }}
 						style={{ originY: 0 }}
-						className={`absolute left-1/2 top-full z-40 mt-3 -translate-x-1/2 border border-[var(--ink)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] ${width}`}
+						className={`absolute left-1/2 top-full z-40 mt-3 -translate-x-1/2 border border-[var(--rule)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] ${width}`}
 					>
 						<span aria-hidden='true' className='absolute inset-x-0 top-0 h-px bg-[var(--brass)]' />
 						{children(() => setOpen(false))}
@@ -103,6 +113,7 @@ export function SiteNav() {
 	const closeMenu = () => setIsMenuOpen(false)
 
 	const isProvinceActive = lguProvinces.some((province) => pathname.startsWith(`/${province.slug}`))
+	const isGuideActive = guides.some((guide) => pathname.startsWith(guide.href))
 
 	return (
 		<header className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'>
@@ -146,7 +157,7 @@ export function SiteNav() {
 								lguProvinces.map((province) => (
 									<Link
 										key={province.slug}
-										href={`/${province.slug}`}
+										href={areaHref(province)}
 										onClick={close}
 										className='nav-menu-item'
 									>
@@ -154,6 +165,25 @@ export function SiteNav() {
 										<span className='num text-[10.5px] text-[var(--ink-mute)]'>
 											{province.municipalities.length}
 										</span>
+									</Link>
+								))
+							}
+						</Menu>
+
+						{/* The guides, ahead of the workspaces. The directory answers which
+						    unit you are in; these answer what it is for and which law it runs
+						    on, which is the question a reader who is not already a local
+						    government officer arrives with. */}
+						<Menu label='How it works' active={isGuideActive} width='w-[17rem]'>
+							{(close) =>
+								guides.map((item) => (
+									<Link
+										key={item.href}
+										href={item.href}
+										onClick={close}
+										className='nav-menu-item'
+									>
+										<span className='whitespace-nowrap'>{item.label}</span>
 									</Link>
 								))
 							}
@@ -171,6 +201,7 @@ export function SiteNav() {
 					</nav>
 
 					<div className='flex items-center justify-end gap-1.5'>
+						<FinderTrigger />
 						<ThemeToggle />
 						<span className='w-1.5' aria-hidden='true' />
 
@@ -236,7 +267,7 @@ export function SiteNav() {
 								{lguProvinces.map((province) => (
 									<Link
 										key={province.slug}
-										href={`/${province.slug}`}
+										href={areaHref(province)}
 										onClick={closeMenu}
 										className='flex items-center justify-between gap-3 border-b border-[var(--rule-soft)] py-2.5'
 									>
@@ -244,6 +275,20 @@ export function SiteNav() {
 										<span className='num text-[11px] text-[var(--ink-mute)]'>
 											{province.municipalities.length}
 										</span>
+									</Link>
+								))}
+							</div>
+
+							<p className='bb-label mt-7'>How it works</p>
+							<div className='mt-3 grid'>
+								{guides.map((item) => (
+									<Link
+										key={item.href}
+										href={item.href}
+										onClick={closeMenu}
+										className='border-b border-[var(--rule-soft)] py-2.5'
+									>
+										{item.label}
 									</Link>
 								))}
 							</div>

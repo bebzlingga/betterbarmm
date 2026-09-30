@@ -10,8 +10,8 @@ import { EASE, IN_VIEW } from '@betterbarmm/editorial'
  *
  * Collapsed to a circled "i" until the frame is hovered or the link is focused,
  * then the credit line slides out beside it. Every picture on this site is used
- * under a licence that requires the photographer's name and a link back to the
- * original, and a licence condition is not something to bury in a colophon — so
+ * under a license that requires the photographer's name and a link back to the
+ * original, and a license condition is not something to bury in a colophon — so
  * it travels with the image instead.
  */
 export function PhotoCredit({ photo }: { photo: DiscoverPhoto }) {

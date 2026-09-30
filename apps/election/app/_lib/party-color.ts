@@ -1,22 +1,22 @@
 /* ============================================================
-   A colour per party
+   A color per party
 
-   These are the parties' own colours, as they use them — not a palette this
+   These are the parties' own colors, as they use them — not a palette this
    workspace invented. That is the whole point of them: a reader who has seen a
-   tarpaulin or a ballot mock-up recognises BFP's navy or ISAMA's yellow before
-   they read the letters on the plate, and the same colour then carries them
+   tarpaulin or a ballot mock-up recognizes BFP's navy or ISAMA's yellow before
+   they read the letters on the plate, and the same color then carries them
    through the card, the party's page, and every candidate running under it.
 
-   Two of the thirteen have no colour recorded here yet. They take the
+   Two of the thirteen have no color recorded here yet. They take the
    unpainted plate rather than a stand-in, for the same reason an uncaptured
-   dataset shows a zero rather than a guess — a colour invented for Mushawara
+   dataset shows a zero rather than a guess — a color invented for Mushawara
    would be indistinguishable, to a reader, from one Mushawara chose.
 
    It is identity, not measurement: nothing here encodes a quantity, and the
-   colour never appears without the name written beside it.
+   color never appears without the name written beside it.
    ============================================================ */
 
-/** Party id, as the dataset writes it, to the colour that party uses. */
+/** Party id, as the dataset writes it, to the color that party uses. */
 const PARTY_COLORS: Record<string, string> = {
 	ABOT: '#c48c58',
 	BAPA: '#bf0405',
@@ -29,10 +29,10 @@ const PARTY_COLORS: Record<string, string> = {
 	PRO_BANGSAMORO: '#2b3291',
 	RAAYAT: '#e99e17',
 	UBJP: '#20630f',
-	// Mushawara and PBB: no published colour on file.
+	// Mushawara and PBB: no published color on file.
 }
 
-/** The colour a party uses, or `null` where none is recorded. */
+/** The color a party uses, or `null` where none is recorded. */
 export function partyColor(partyId: string | null | undefined): string | null {
 	if (!partyId) return null
 
@@ -42,7 +42,7 @@ export function partyColor(partyId: string | null | undefined): string | null {
 /**
  * Which ink a plate's letters take.
  *
- * Measured off the colour rather than written down beside it. These run from
+ * Measured off the color rather than written down beside it. These run from
  * ISAMA's near-fluorescent yellow to BGC's midnight blue, and white type
  * clears 1.1:1 on the first and 11.8:1 on the last — a single choice for all
  * of them would leave a third of the plates unreadable. Computing it means a

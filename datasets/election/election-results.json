@@ -1,0 +1,1959 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_name": "barmm_2026_parliamentary_election_results",
+  "generated_at": "2026-09-26T00:00:00+08:00",
+  "election_id": "barmm-parliamentary-election-2026",
+  "election_day": "2026-09-14",
+  "status": "proclaimed",
+  "confidence": "working",
+  "note": "Results of the 14 September 2026 Bangsamoro parliamentary election. The vote figures are the COMELEC certificate-of-canvass returns as published on barmmpelectionresults.comelec.gov.ph, transcribed here from the compiled tabulation rather than read off the COMELEC files one by one; the seat counts are as proclaimed by the COMELEC Regional Board of Canvassers on 16 September 2026. Re-check every figure against the COMELEC canvass before publishing any of it as final.",
+  "turnout": {
+    "registered_voters": 2393202,
+    "votes_cast": 2018478,
+    "turnout_percent": 84.34,
+    "source_id": "pna_turnout_2026"
+  },
+  "outcome": {
+    "majority_threshold": 41,
+    "largest_party_id": "BFP",
+    "largest_party_seats": 31,
+    "hung_parliament": true,
+    "chief_minister": null,
+    "first_session": "2026-10-30",
+    "summary": "No party reached the 41 seats a Chief Minister needs. BFP finished first on 31 seats and UBJP second on 30, leaving the chamber to be settled by coalition rather than by the count.",
+    "source_ids": [
+      "afp_hung_parliament",
+      "bio_proclaimed"
+    ]
+  },
+  "party_totals": [
+    {
+      "party_id": "BFP",
+      "label": "BFP",
+      "party_representative_votes": 678328,
+      "party_representative_seats": 16,
+      "district_votes": 624188,
+      "district_seats": 15,
+      "sectoral_votes": 2011045,
+      "sectoral_seats": 0,
+      "total_seats": 31,
+      "district_component_parties": []
+    },
+    {
+      "party_id": "UBJP",
+      "label": "UBJP",
+      "party_representative_votes": 613663,
+      "party_representative_seats": 15,
+      "district_votes": 580227,
+      "district_seats": 9,
+      "sectoral_votes": 4222422,
+      "sectoral_seats": 6,
+      "total_seats": 30,
+      "district_component_parties": []
+    },
+    {
+      "party_id": "BGC",
+      "label": "BGC",
+      "party_representative_votes": 391266,
+      "party_representative_seats": 8,
+      "district_votes": 491161,
+      "district_seats": 7,
+      "sectoral_votes": 2725724,
+      "sectoral_seats": 0,
+      "total_seats": 15,
+      "district_component_parties": [
+        "BGC_AFFILIATE_AL_ITTIHAD",
+        "BGC_AFFILIATE_BPP",
+        "BGC_AFFILIATE_SIAP"
+      ]
+    },
+    {
+      "party_id": "RAAYAT",
+      "label": "Raayat Democratic Party",
+      "party_representative_votes": 68839,
+      "party_representative_seats": 1,
+      "district_votes": 0,
+      "district_seats": 0,
+      "sectoral_votes": null,
+      "sectoral_seats": 0,
+      "total_seats": 1,
+      "district_component_parties": []
+    },
+    {
+      "party_id": "PRO_BANGSAMORO",
+      "label": "Pro Bangsamoro Party",
+      "party_representative_votes": 36672,
+      "party_representative_seats": 0,
+      "district_votes": 41428,
+      "district_seats": 1,
+      "sectoral_votes": null,
+      "sectoral_seats": 0,
+      "total_seats": 1,
+      "district_component_parties": []
+    },
+    {
+      "party_id": null,
+      "label": "Non-Moro Indigenous Peoples",
+      "party_representative_votes": 0,
+      "party_representative_seats": 0,
+      "district_votes": 0,
+      "district_seats": 0,
+      "sectoral_votes": null,
+      "sectoral_seats": 2,
+      "total_seats": 2,
+      "district_component_parties": [],
+      "note": "Selected by the Regional Inter-Tribal Convention, not by ballot."
+    }
+  ],
+  "proportional_representation": {
+    "seats": 40,
+    "invalid_votes": 126819,
+    "invalid_note": "Includes 16,752 votes for Moro Ako, which was disqualified.",
+    "parties": [
+      {
+        "party_id": "BFP",
+        "label": "BFP",
+        "votes": 678328,
+        "seats": 16
+      },
+      {
+        "party_id": "UBJP",
+        "label": "UBJP",
+        "votes": 613663,
+        "seats": 15
+      },
+      {
+        "party_id": "BGC",
+        "label": "BGC",
+        "votes": 391266,
+        "seats": 8
+      },
+      {
+        "party_id": "RAAYAT",
+        "label": "Raayat Democratic Party",
+        "votes": 68839,
+        "seats": 1
+      },
+      {
+        "party_id": "PRO_BANGSAMORO",
+        "label": "Pro Bangsamoro Party",
+        "votes": 36672,
+        "seats": 0
+      },
+      {
+        "party_id": "BAPA",
+        "label": "BAPA",
+        "votes": 35777,
+        "seats": 0
+      },
+      {
+        "party_id": "BEST",
+        "label": "BEST Party",
+        "votes": 26926,
+        "seats": 0
+      },
+      {
+        "party_id": "MAHARDIKA",
+        "label": "Mahardika",
+        "votes": 14800,
+        "seats": 0
+      },
+      {
+        "party_id": "ABOT",
+        "label": "ABOT",
+        "votes": 11428,
+        "seats": 0
+      },
+      {
+        "party_id": "MUSHAWARA",
+        "label": "Mushawara",
+        "votes": 8054,
+        "seats": 0
+      },
+      {
+        "party_id": "ISAMA",
+        "label": "ISAMA",
+        "votes": 3312,
+        "seats": 0
+      },
+      {
+        "party_id": "PBB",
+        "label": "PBB",
+        "votes": 2594,
+        "seats": 0
+      }
+    ],
+    "elected_nominees": [
+      {
+        "name": "Suwaib Oranon",
+        "party_id": "BFP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Abdulwahid Halil",
+        "party_id": "BFP",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Akmad Brahim",
+        "party_id": "BFP",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Dan Asnawie",
+        "party_id": "BFP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Abunawas Maslamama",
+        "party_id": "BFP",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Johari Abu",
+        "party_id": "BFP",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Camid Gandamra Jr.",
+        "party_id": "BFP",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Karwin Hamjani",
+        "party_id": "BFP",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Kitem Kadatuan Jr.",
+        "party_id": "BFP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Michael Midtimbang",
+        "party_id": "BFP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Suraija Reina Hataman",
+        "party_id": "BFP",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Ma-arouph Candao",
+        "party_id": "BFP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Alindatu Pagayao",
+        "party_id": "BFP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Zulfikar-Ali Bayam",
+        "party_id": "BFP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Jaafar Apollo Mikhail Matalam",
+        "party_id": "BFP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Junalyn Sumlay",
+        "party_id": "BFP",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Murad Ebrahim",
+        "party_id": "UBJP",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Mohagher Iqbal",
+        "party_id": "UBJP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Ali Solaiman",
+        "party_id": "UBJP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Eduard Guerra",
+        "party_id": "UBJP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Ibrahim Ali",
+        "party_id": "UBJP",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Said Salendab",
+        "party_id": "UBJP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Mohammad Yacob",
+        "party_id": "UBJP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Amir Balindong",
+        "party_id": "UBJP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "John Anthony Lim",
+        "party_id": "UBJP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Haber Asarul",
+        "party_id": "UBJP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Sha Elijah Dumama-Alba",
+        "party_id": "UBJP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Nordjiana Dipatuan-Ducol",
+        "party_id": "UBJP",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Raissa Jajurie",
+        "party_id": "UBJP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Said Shiek",
+        "party_id": "UBJP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Ali Salik",
+        "party_id": "UBJP",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Mamintal Adiong III",
+        "party_id": "BGC",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Amer Zaakaria Rakim",
+        "party_id": "BGC",
+        "bta_incumbent": true
+      },
+      {
+        "name": "Abdulrahman Mangudadatu",
+        "party_id": "BGC",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Datu Bimbo Sinsuat",
+        "party_id": "BGC",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Hanie Bud",
+        "party_id": "BGC",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Abdel Razi Amin",
+        "party_id": "BGC",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Sittie Aisah Pansar",
+        "party_id": "BGC",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Amil Bahar Mawallil",
+        "party_id": "BGC",
+        "bta_incumbent": false
+      },
+      {
+        "name": "Jose Lorena",
+        "party_id": "RAAYAT",
+        "bta_incumbent": true
+      }
+    ],
+    "source_ids": [
+      "comelec_coc_results",
+      "gma_winners_list"
+    ]
+  },
+  "district_representation": {
+    "seats": 32,
+    "invalid_votes": 126718,
+    "parties": [
+      {
+        "party_id": "BFP",
+        "label": "BFP",
+        "votes": 624188,
+        "seats": 15
+      },
+      {
+        "party_id": "UBJP",
+        "label": "UBJP",
+        "votes": 580227,
+        "seats": 9
+      },
+      {
+        "party_id": "BGC_AFFILIATE_SIAP",
+        "label": "SIAP Party",
+        "votes": 345506,
+        "seats": 6
+      },
+      {
+        "party_id": "BGC_AFFILIATE_AL_ITTIHAD",
+        "label": "Al Ittihad-UKB",
+        "votes": 74584,
+        "seats": 1
+      },
+      {
+        "party_id": "BGC_AFFILIATE_BPP",
+        "label": "Bangsamoro Peoples Party",
+        "votes": 48132,
+        "seats": 0
+      },
+      {
+        "party_id": "BGC",
+        "label": "BGC",
+        "votes": 22939,
+        "seats": 0
+      },
+      {
+        "party_id": "BAPA",
+        "label": "BAPA",
+        "votes": 53618,
+        "seats": 0
+      },
+      {
+        "party_id": "PRO_BANGSAMORO",
+        "label": "Pro Bangsamoro Party",
+        "votes": 41428,
+        "seats": 1
+      },
+      {
+        "party_id": "MAHARDIKA",
+        "label": "Mahardika",
+        "votes": 8676,
+        "seats": 0
+      },
+      {
+        "party_id": "BEST",
+        "label": "BEST Party",
+        "votes": 2704,
+        "seats": 0
+      },
+      {
+        "party_id": null,
+        "label": "Independent",
+        "votes": 89758,
+        "seats": 0
+      }
+    ],
+    "districts": [
+      {
+        "area": "Basilan",
+        "district": "1st",
+        "label": "Basilan's 1st district",
+        "total_votes": 41871,
+        "candidates": [
+          {
+            "name": "Rima Hassan",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 21933,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Hegem Furigay",
+            "party_id": "BGC_AFFILIATE_BPP",
+            "party_label": "Bangsamoro Peoples Party",
+            "votes": 14733,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Rajan Abdurahman",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 4491,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Abubakar Cutal",
+            "party_id": "BAPA",
+            "party_label": "Bangsamoro Party",
+            "votes": 714,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Basilan",
+        "district": "2nd",
+        "label": "Basilan's 2nd district",
+        "total_votes": 58032,
+        "candidates": [
+          {
+            "name": "Pai Sali",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 27954,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Abdulsamie Kallahal",
+            "party_id": "BGC_AFFILIATE_BPP",
+            "party_label": "Bangsamoro Peoples Party",
+            "votes": 25035,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Abbas Salung",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 4961,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Abath Kinjing",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 37,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Khalid Hassan",
+            "party_id": "BAPA",
+            "party_label": "Bangsamoro Party",
+            "votes": 30,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Altun Angeles",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 15,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Basilan",
+        "district": "3rd",
+        "label": "Basilan's 3rd district",
+        "total_votes": 49750,
+        "candidates": [
+          {
+            "name": "Abrar Hataman",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 45094,
+            "won": true,
+            "interim_mp": true
+          },
+          {
+            "name": "Khan Hasalal",
+            "party_id": "BAPA",
+            "party_label": "Bangsamoro Party",
+            "votes": 4656,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Basilan",
+        "district": "4th",
+        "label": "Basilan's 4th district",
+        "total_votes": 51126,
+        "candidates": [
+          {
+            "name": "Jay Hataman Salliman",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 41675,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Alzad Sattar",
+            "party_id": "BGC_AFFILIATE_BPP",
+            "party_label": "Bangsamoro Peoples Party",
+            "votes": 8364,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Monar Ibno",
+            "party_id": "BAPA",
+            "party_label": "Bangsamoro Party",
+            "votes": 562,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Omar Muallam",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 424,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Pendatun Mohamad",
+            "party_id": "BEST",
+            "party_label": "BEST Party",
+            "votes": 101,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Cotabato City",
+        "district": "1st",
+        "label": "Cotabato City's 1st district",
+        "total_votes": 21356,
+        "candidates": [
+          {
+            "name": "Sheriff Abas",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 12334,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Romeo Sema",
+            "party_id": "MAHARDIKA",
+            "party_label": "Mahardika Party",
+            "votes": 8676,
+            "won": false,
+            "interim_mp": true
+          },
+          {
+            "name": "Danilo Liggayo",
+            "party_id": "BEST",
+            "party_label": "BEST Party",
+            "votes": 346,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Cotabato City",
+        "district": "2nd",
+        "label": "Cotabato City's 2nd district",
+        "total_votes": 39938,
+        "candidates": [
+          {
+            "name": "Naguib Sinarimbo",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 31114,
+            "won": true,
+            "interim_mp": true
+          },
+          {
+            "name": "Teng Midtimbang",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 8411,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Dick Datumanong",
+            "party_id": "BAPA",
+            "party_label": "Bangsamoro Party",
+            "votes": 246,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Enggay Chua",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 167,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Cotabato City",
+        "district": "3rd",
+        "label": "Cotabato City's 3rd district",
+        "total_votes": 18476,
+        "candidates": [
+          {
+            "name": "Tomanda Antok",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 9223,
+            "won": true,
+            "interim_mp": true
+          },
+          {
+            "name": "Hashim Manticayan",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 8970,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Reynaldo Canen",
+            "party_id": "BEST",
+            "party_label": "BEST Party",
+            "votes": 283,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Lanao del Sur",
+        "district": "1st",
+        "label": "Lanao del Sur's 1st district",
+        "total_votes": 75356,
+        "candidates": [
+          {
+            "name": "Pala Gandamra",
+            "party_id": "BGC_AFFILIATE_SIAP",
+            "party_label": "Serbisyong Inklusibo–Alyansang Progresibo",
+            "votes": 63832,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Abdulrahman Taher",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 8325,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Rudy Dianalan",
+            "party_id": "PRO_BANGSAMORO",
+            "party_label": "Progresibong Bangsamoro Party",
+            "votes": 2762,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Rolly Tomawis",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 168,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Abdul Aziz Macalangun Jr.",
+            "party_id": "BAPA",
+            "party_label": "Bangsamoro Party",
+            "votes": 148,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Almen Pangandaman",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 121,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Lanao del Sur",
+        "district": "2nd",
+        "label": "Lanao del Sur's 2nd district",
+        "total_votes": 78241,
+        "candidates": [
+          {
+            "name": "Hamza Gauraki",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 41393,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Boyet Alonto",
+            "party_id": "BGC_AFFILIATE_SIAP",
+            "party_label": "Serbisyong Inklusibo–Alyansang Progresibo",
+            "votes": 36477,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Salahuden Edres",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 305,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Samanudin Bazer",
+            "party_id": "PRO_BANGSAMORO",
+            "party_label": "Progresibong Bangsamoro Party",
+            "votes": 66,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Lanao del Sur",
+        "district": "3rd",
+        "label": "Lanao del Sur's 3rd district",
+        "total_votes": 83625,
+        "candidates": [
+          {
+            "name": "Rauf Adiong",
+            "party_id": "BGC_AFFILIATE_SIAP",
+            "party_label": "Serbisyong Inklusibo–Alyansang Progresibo",
+            "votes": 55714,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Edrieza Rimbang",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 19996,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "James Macaraya",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 7628,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Saleha Mangurun",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 287,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Lanao del Sur",
+        "district": "4th",
+        "label": "Lanao del Sur's 4th district",
+        "total_votes": 76275,
+        "candidates": [
+          {
+            "name": "Lampa Pandi",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 38505,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Odin Sumagayan",
+            "party_id": "BGC_AFFILIATE_SIAP",
+            "party_label": "Serbisyong Inklusibo–Alyansang Progresibo",
+            "votes": 37707,
+            "won": false,
+            "interim_mp": true
+          },
+          {
+            "name": "Camal Abdul",
+            "party_id": "PRO_BANGSAMORO",
+            "party_label": "Progresibong Bangsamoro Party",
+            "votes": 55,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Johari Comadug",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 8,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Lanao del Sur",
+        "district": "5th",
+        "label": "Lanao del Sur's 5th district",
+        "total_votes": 75133,
+        "candidates": [
+          {
+            "name": "Arimao Asum",
+            "party_id": "BGC_AFFILIATE_SIAP",
+            "party_label": "Serbisyong Inklusibo–Alyansang Progresibo",
+            "votes": 43761,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Khaledyassin Papandayan",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 30128,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Udtog Tago",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 1244,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Lanao del Sur",
+        "district": "6th",
+        "label": "Lanao del Sur's 6th district",
+        "total_votes": 61056,
+        "candidates": [
+          {
+            "name": "Hosni Macapodi",
+            "party_id": "BGC_AFFILIATE_SIAP",
+            "party_label": "Serbisyong Inklusibo–Alyansang Progresibo",
+            "votes": 33983,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Jimmy Balt",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 27073,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Lanao del Sur",
+        "district": "7th",
+        "label": "Lanao del Sur's 7th district",
+        "total_votes": 60771,
+        "candidates": [
+          {
+            "name": "Rayyan Mindalano",
+            "party_id": "BGC_AFFILIATE_SIAP",
+            "party_label": "Serbisyong Inklusibo–Alyansang Progresibo",
+            "votes": 38670,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Nora Dipatuan",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 21996,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Palao Sarangani",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 74,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Cardawi Macasilang",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 31,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Lanao del Sur",
+        "district": "8th",
+        "label": "Lanao del Sur's 8th district",
+        "total_votes": 74193,
+        "candidates": [
+          {
+            "name": "Arrie Balindong",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 74193,
+            "won": true,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Lanao del Sur",
+        "district": "9th",
+        "label": "Lanao del Sur's 9th district",
+        "total_votes": 45994,
+        "candidates": [
+          {
+            "name": "Rashdi Adiong",
+            "party_id": "BGC_AFFILIATE_SIAP",
+            "party_label": "Serbisyong Inklusibo–Alyansang Progresibo",
+            "votes": 35362,
+            "won": true,
+            "interim_mp": true
+          },
+          {
+            "name": "Anwar Galo-Lamping",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 6432,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Jalal Bayabao",
+            "party_id": "BAPA",
+            "party_label": "Bangsamoro Party",
+            "votes": 4200,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Maguindanao del Norte",
+        "district": "1st",
+        "label": "Maguindanao del Norte's 1st district",
+        "total_votes": 58828,
+        "candidates": [
+          {
+            "name": "Prince Khalid Tomawis",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 41137,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Jimmy Balitok",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 17691,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Maguindanao del Norte",
+        "district": "2nd",
+        "label": "Maguindanao del Norte's 2nd district",
+        "total_votes": 43737,
+        "candidates": [
+          {
+            "name": "Ibrahim Ibay",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 43737,
+            "won": true,
+            "interim_mp": true
+          }
+        ]
+      },
+      {
+        "area": "Maguindanao del Norte",
+        "district": "3rd",
+        "label": "Maguindanao del Norte's 3rd district",
+        "total_votes": 47284,
+        "candidates": [
+          {
+            "name": "Abdulraof Macacua",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 37483,
+            "won": true,
+            "interim_mp": true
+          },
+          {
+            "name": "Badrudin Mamad",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 9801,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Maguindanao del Norte",
+        "district": "4th",
+        "label": "Maguindanao del Norte's 4th district",
+        "total_votes": 87513,
+        "candidates": [
+          {
+            "name": "Abdulnasser Abas",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 49965,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Bai Sandra Sema",
+            "party_id": "BAPA",
+            "party_label": "Bangsamoro Party",
+            "votes": 35603,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Alexander Agustin",
+            "party_id": "BEST",
+            "party_label": "BEST Party",
+            "votes": 1578,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Jashriya Dilangalen",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 367,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Maguindanao del Norte",
+        "district": "5th",
+        "label": "Maguindanao del Norte's 5th district",
+        "total_votes": 35963,
+        "candidates": [
+          {
+            "name": "Ishak Mastura",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 35963,
+            "won": true,
+            "interim_mp": true
+          }
+        ]
+      },
+      {
+        "area": "Maguindanao del Sur",
+        "district": "1st",
+        "label": "Maguindanao del Sur's 1st district",
+        "total_votes": 72828,
+        "candidates": [
+          {
+            "name": "Tawakal Midtimbang",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 62302,
+            "won": true,
+            "interim_mp": true
+          },
+          {
+            "name": "Bobby Midtimbang",
+            "party_id": "BGC_AFFILIATE_AL_ITTIHAD",
+            "party_label": "Al Ittihad–UKB Party",
+            "votes": 9697,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Edres Kasim",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 433,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Mohammad Hassan Usop",
+            "party_id": "BEST",
+            "party_label": "BEST Party",
+            "votes": 396,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Maguindanao del Sur",
+        "district": "2nd",
+        "label": "Maguindanao del Sur's 2nd district",
+        "total_votes": 65211,
+        "candidates": [
+          {
+            "name": "Sajid Andre Ampatuan",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 41253,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Saad Sindatok",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 23958,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Maguindanao del Sur",
+        "district": "3rd",
+        "label": "Maguindanao del Sur's 3rd district",
+        "total_votes": 83006,
+        "candidates": [
+          {
+            "name": "Ali Sangki",
+            "party_id": "BGC_AFFILIATE_AL_ITTIHAD",
+            "party_label": "Al Ittihad–UKB Party",
+            "votes": 64887,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Basco Camendan",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 11432,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Daud Upam",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 3948,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Tasmi Datumanong",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 1896,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Datu Edo Upam",
+            "party_id": "BAPA",
+            "party_label": "Bangsamoro Party",
+            "votes": 843,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Maguindanao del Sur",
+        "district": "4th",
+        "label": "Maguindanao del Sur's 4th district",
+        "total_votes": 67968,
+        "candidates": [
+          {
+            "name": "DJ Parok Mangudadatu",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 64054,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Aladen Delna",
+            "party_id": "BAPA",
+            "party_label": "Bangsamoro Party",
+            "votes": 3914,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Maguindanao del Sur",
+        "district": "5th",
+        "label": "Maguindanao del Sur's 5th district",
+        "total_votes": 105278,
+        "candidates": [
+          {
+            "name": "Rafsanjani Ali",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 66477,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Anwar Alamada",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 38459,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Nasser Dalgan",
+            "party_id": "BAPA",
+            "party_label": "Bangsamoro Party",
+            "votes": 342,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Special Geographic Area",
+        "district": "1st",
+        "label": "Special Geographic Area's 1st district",
+        "total_votes": 46447,
+        "candidates": [
+          {
+            "name": "Mansor Ebrahim",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 29061,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Butch Malang",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 17386,
+            "won": false,
+            "interim_mp": true
+          }
+        ]
+      },
+      {
+        "area": "Special Geographic Area",
+        "district": "2nd",
+        "label": "Special Geographic Area's 2nd district",
+        "total_votes": 56584,
+        "candidates": [
+          {
+            "name": "Elaysa Enalang",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 20954,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Kadil Sinolinding Jr.",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 20199,
+            "won": false,
+            "interim_mp": true
+          },
+          {
+            "name": "Dulia Sultan",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 13662,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Allanuddin Hassan",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 1749,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Kenindia Sinagandal",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 20,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Tawi-Tawi",
+        "district": "1st",
+        "label": "Tawi-Tawi's 1st district",
+        "total_votes": 57183,
+        "candidates": [
+          {
+            "name": "Julbert Que",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 54496,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Indah Sabal",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 2687,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Tawi-Tawi",
+        "district": "2nd",
+        "label": "Tawi-Tawi's 2nd district",
+        "total_votes": 55532,
+        "candidates": [
+          {
+            "name": "Hadjimar Matba",
+            "party_id": "PRO_BANGSAMORO",
+            "party_label": "Progresibong Bangsamoro Party",
+            "votes": 38545,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Gamal Hayudini",
+            "party_id": "BGC",
+            "party_label": "BARMM Grand Coalition",
+            "votes": 14255,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Aziz Halun",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 2732,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Tawi-Tawi",
+        "district": "3rd",
+        "label": "Tawi-Tawi's 3rd district",
+        "total_votes": 44245,
+        "candidates": [
+          {
+            "name": "Tina Matolo",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 31418,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Mali Albrinji",
+            "party_id": "BGC",
+            "party_label": "BARMM Grand Coalition",
+            "votes": 8684,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Alnahada Dalagan",
+            "party_id": "BAPA",
+            "party_label": "Bangsamoro Party",
+            "votes": 2360,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Dayang Amilbangsa",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 1783,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "area": "Tawi-Tawi",
+        "district": "4th",
+        "label": "Tawi-Tawi's 4th district",
+        "total_votes": 52960,
+        "candidates": [
+          {
+            "name": "Nur-Mahadil Ahaja",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 19174,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Michail Ahaja",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 16796,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Sanya Jamalul",
+            "party_id": null,
+            "party_label": "Independent",
+            "votes": 16044,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Dhan Kasim",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 946,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      }
+    ],
+    "source_ids": [
+      "comelec_coc_results",
+      "pna_turnout_2026"
+    ]
+  },
+  "sectoral_representation": {
+    "seats": 8,
+    "votes_note": "Each sector is its own region-wide race, so a party total here is the sum of five separate ballots and not a single vote count.",
+    "parties": [
+      {
+        "party_id": "UBJP",
+        "label": "UBJP",
+        "votes": 4222422,
+        "seats": 6
+      },
+      {
+        "party_id": "BGC",
+        "label": "BGC",
+        "votes": 2725724,
+        "seats": 0
+      },
+      {
+        "party_id": "BFP",
+        "label": "BFP",
+        "votes": 2011045,
+        "seats": 0
+      },
+      {
+        "party_id": "BAPA",
+        "label": "BAPA",
+        "votes": 22919,
+        "seats": 0
+      }
+    ],
+    "races": [
+      {
+        "sector": "Settler communities",
+        "seats": 2,
+        "invalid_votes": null,
+        "candidates": [
+          {
+            "name": "Yul Adelfo Olaya",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 752919,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Mary Ann Arnado",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 692771,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Ongpin Yu Ekey",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 406444,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Susana Anayatin",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 397839,
+            "won": false,
+            "interim_mp": true
+          },
+          {
+            "name": "Alex Abujen Jr.",
+            "party_id": "BGC",
+            "party_label": "BARMM Grand Coalition",
+            "votes": 348428,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Arnold Padayahag",
+            "party_id": "BGC",
+            "party_label": "BARMM Grand Coalition",
+            "votes": 270278,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Edgardo Ramirez",
+            "party_id": null,
+            "party_label": "Christians Settler for Peace",
+            "votes": 88319,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Percival Lagman",
+            "party_id": null,
+            "party_label": "Christians Settler for Peace",
+            "votes": 25044,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "sector": "Traditional leaders",
+        "seats": 1,
+        "invalid_votes": 275155,
+        "candidates": [
+          {
+            "name": "Marjanie Macasalong",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 718004,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Pax Mangudadatu",
+            "party_id": "BGC",
+            "party_label": "BARMM Grand Coalition",
+            "votes": 439066,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Panga Ibay",
+            "party_id": null,
+            "party_label": "Iranun Sultanate's League of the Philippines",
+            "votes": 224459,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Datuteng Gumbila",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 154782,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Abdul Hamidullah Atar",
+            "party_id": null,
+            "party_label": "Royal House of the Sultanate of Marawi",
+            "votes": 94125,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Nursharif Maulana",
+            "party_id": null,
+            "party_label": "Dungon Traditional Leaders Organization",
+            "votes": 58878,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Sailaney Benito",
+            "party_id": null,
+            "party_label": "Royal House of the Sultanate of Pagayawan",
+            "votes": 29041,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Tharhata Ampatuan",
+            "party_id": null,
+            "party_label": "Datu sa Kabuntalan (Matampay) sa Magindanaw Royal Descendants Association",
+            "votes": 11045,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Jehad Hadji Nor",
+            "party_id": null,
+            "party_label": "Royal Sultanate of Langkong",
+            "votes": 7082,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Mangontawar Amatonding",
+            "party_id": null,
+            "party_label": "Royal Sultanate of Eastern Unayan",
+            "votes": 6841,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "sector": "Women",
+        "seats": 1,
+        "invalid_votes": 324332,
+        "candidates": [
+          {
+            "name": "Aida Silongan",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 727554,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Ruby Sahali",
+            "party_id": "BGC",
+            "party_label": "BARMM Grand Coalition",
+            "votes": 515270,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Jehan Usop",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 313012,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Dayangcarlsum Jumaide",
+            "party_id": null,
+            "party_label": "Tawi-Tawi Provincial Women's Council",
+            "votes": 106142,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Pombaen Kader",
+            "party_id": "BAPA",
+            "party_label": "Bangsamoro Party",
+            "votes": 22919,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Mariam Kadatuan",
+            "party_id": null,
+            "party_label": "League of Bangsamoro Islamic Advocate Associate",
+            "votes": 9249,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "sector": "Ulama",
+        "seats": 1,
+        "invalid_votes": 401378,
+        "candidates": [
+          {
+            "name": "Muhammad Nadzir Ebil",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 679905,
+            "won": true,
+            "interim_mp": true
+          },
+          {
+            "name": "Alibasher Abdullatif",
+            "party_id": "BGC",
+            "party_label": "BARMM Grand Coalition",
+            "votes": 551525,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Marhan Borhan",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 385670,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      },
+      {
+        "sector": "Youth",
+        "seats": 1,
+        "invalid_votes": 412754,
+        "candidates": [
+          {
+            "name": "Sulfry Abbas",
+            "party_id": "UBJP",
+            "party_label": "United Bangsamoro Justice Party",
+            "votes": 651269,
+            "won": true,
+            "interim_mp": false
+          },
+          {
+            "name": "Jeff Adiong",
+            "party_id": "BGC",
+            "party_label": "BARMM Grand Coalition",
+            "votes": 601157,
+            "won": false,
+            "interim_mp": false
+          },
+          {
+            "name": "Nur-Jamil Ibrahim",
+            "party_id": "BFP",
+            "party_label": "Bangsamoro Federalist Party",
+            "votes": 353298,
+            "won": false,
+            "interim_mp": false
+          }
+        ]
+      }
+    ],
+    "non_moro_indigenous_peoples": {
+      "seats": 2,
+      "method": "Chosen at the Regional Inter-Tribal Convention in Cotabato City on 26 August 2026, by traditional process rather than by ballot.",
+      "elected": [
+        {
+          "name": "Leticio Datuwata",
+          "group": "Lambiangan"
+        },
+        {
+          "name": "Joe Ganna Jover",
+          "group": "Teduray"
+        }
+      ],
+      "rotation": [
+        "Lambiangan and Teduray",
+        "Erumanen ne Menuvu and Dulangan Manobo",
+        "Blaan and Higaonon"
+      ],
+      "source_ids": [
+        "mindanews_nmip",
+        "inquirer_nmip"
+      ]
+    },
+    "source_ids": [
+      "comelec_coc_results",
+      "gma_winners_list"
+    ]
+  },
+  "sources": [
+    {
+      "id": "comelec_coc_results",
+      "title": "COC Results — 2026 Bangsamoro Parliamentary Election",
+      "publisher": "Commission on Elections",
+      "type": "official_results",
+      "url": "https://barmmpelectionresults.comelec.gov.ph/coc-result",
+      "date": "2026-09-16"
+    },
+    {
+      "id": "gma_winners_list",
+      "title": "LIST: Party, sectoral representatives who won seats in the BARMM Parliament",
+      "publisher": "GMA News",
+      "type": "news",
+      "url": "https://www.gmanetwork.com/news/topstories/regions/1002520/list-representatives-who-won-seats-in-the-barmm-parliament/story/",
+      "date": "2026-09-16"
+    },
+    {
+      "id": "pna_turnout_2026",
+      "title": "84.34% BPE voter turnout highest ever — Comelec",
+      "publisher": "Philippine News Agency",
+      "type": "news",
+      "url": "https://www.pna.gov.ph/articles/1284199",
+      "date": "2026-09-16"
+    },
+    {
+      "id": "bio_proclaimed",
+      "title": "BARMM's first elected parliament proclaimed, to assume office Oct. 30",
+      "publisher": "Bangsamoro Information Office",
+      "type": "government_release",
+      "url": "https://bangsamoro.gov.ph/news/latest-news/barmms-first-elected-parliament-proclaimed-to-assume-office-oct-30/",
+      "date": "2026-09-16"
+    },
+    {
+      "id": "afp_hung_parliament",
+      "title": "After landmark polls, BARMM facing hung parliament",
+      "publisher": "Agence France-Presse via ABS-CBN News",
+      "type": "news",
+      "url": "https://www.abs-cbn.com/news/regions/2026/9/15/after-landmark-polls-barmm-facing-hung-parliament-2151",
+      "date": "2026-09-15"
+    },
+    {
+      "id": "mindanews_nmip",
+      "title": "First non-Moro Indigenous Peoples' representatives selected for BARMM Parliament",
+      "publisher": "MindaNews",
+      "type": "news",
+      "url": "https://mindanews.com/top-stories/2026/08/first-non-moro-indigenous-peoples-representatives-selected-for-barmm-parliament/",
+      "date": "2026-08-27"
+    },
+    {
+      "id": "inquirer_nmip",
+      "title": "Non-Moro IPs elect 2 BARMM parliament reps through traditional process",
+      "publisher": "Philippine Daily Inquirer",
+      "type": "news",
+      "url": "https://www.inquirer.net/486376/non-moro-ips-elect-2-barmm-parliament-reps-through-traditional-process/",
+      "date": "2026-08-27"
+    },
+    {
+      "id": "mindanews_returning_mps",
+      "title": "38 of 80 elected MPs are former or incumbent MPs; oldest MP is 79, youngest is 26",
+      "publisher": "MindaNews",
+      "type": "news",
+      "url": "https://mindanews.com/peace-process/2026/09/38-of-80-elected-mps-are-former-or-incumbent-mps-oldest-mp-is-79-youngest-is-26/",
+      "date": "2026-09-24"
+    }
+  ]
+}

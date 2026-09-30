@@ -713,7 +713,7 @@ const withSearchText = (record: Omit<LegislationRecord, 'searchText'>): Legislat
 })
 
 /* ============================================================
-   Prose enrichment from the older hand-compiled BAA catalogue
+   Prose enrichment from the older hand-compiled BAA catalog
 
    `baa.min.json` covers BAA 1-89 with written summaries, key effects,
    and source links that the structured registry doesn't carry. The
@@ -753,7 +753,7 @@ const legacyActs = (() => {
 /* ============================================================
    Readings
 
-   Written analyses live in their own file rather than in the registry
+   Written analyzes live in their own file rather than in the registry
    capture, because they are a different kind of thing: the registry is
    Parliament's data normalised, and a reading is what the measure's own
    documents say once someone has read them. Keeping them apart means a
@@ -822,7 +822,7 @@ function loadActs(): LegislationRecord[] {
 			// author field at all. (It is still read here: if the index ever
 			// grows one, this picks it up without a change.)
 			//
-			// So the hand-compiled catalogue answers for the acts it covers —
+			// So the hand-compiled catalog answers for the acts it covers —
 			// BAA 1-89, and only 48 of those actually carry authors — and after
 			// it, the bill the act was. The bills index names every principal and
 			// co-author for all 477 of them, and the bill that became an act is
@@ -893,7 +893,7 @@ function loadActs(): LegislationRecord[] {
 				amendsBaa: parseMeasureNumbers(relations?.amends),
 				amendedByBaa: parseMeasureNumbers(relations?.amended_by),
 				repeals: clean(relations?.repeals) || undefined,
-				// The hand-written catalogue reads better than the generated
+				// The hand-written catalog reads better than the generated
 				// summary, so it wins where it exists.
 				gist:
 					clean(legacy?.analysis?.comprehensive_gist) ||
@@ -1399,7 +1399,7 @@ const RESOLUTION_GAPS = [
 const DATASET_GAPS: Record<CategorySlug, string[]> = {
 	resolutions: RESOLUTION_GAPS,
 	acts: [
-		'Author metadata is available only for acts covered by the earlier hand-compiled catalogue (BAA 1–89).',
+		'Author metadata is available only for acts covered by the earlier hand-compiled catalog (BAA 1–89).',
 		'BAA 94 appears to duplicate BAA 93 on the official index and is flagged for verification.',
 	],
 	bills: [

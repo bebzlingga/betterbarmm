@@ -1,0 +1,402 @@
+@import "tailwindcss";
+@import "@betterbarmm/ui/styles.css";
+@import "@betterbarmm/editorial/styles.css";
+
+/* Tailwind v4 finds its classes by walking out from this file, which stops at
+   the app. The editorial package sits outside it and its components carry
+   utility classes of their own, so it has to be pointed at explicitly or those
+   classes are never generated. */
+@source "../../../packages/editorial/src";
+
+/* ============================================================
+   Travel workspace
+
+   Two layers underneath this file: `@betterbarmm/ui` is the base the
+   whole estate draws from, and `@betterbarmm/editorial` is the
+   public-facing layer on top of it — the warm paper, the brass, the
+   okir, the display type, the motion.
+
+   What belongs here is what only a guide needs. Almost all of it is
+   one idea: this workspace makes claims of a different kind from the
+   rest of the estate, and the reader has to be able to see that at a
+   glance rather than by reading a disclaimer at the bottom.
+
+   Hence the two devices below. The footing badge states, per area,
+   how settled travel actually is there. The caution block is the
+   ground the security and lodging notes sit on. Neither exists
+   anywhere else on the estate, because nowhere else is writing
+   rather than reporting.
+   ============================================================ */
+
+/* ---- The footing badge ---------------------------------------------------
+
+   Four states, ordered: straightforward, thin, arrange first, nothing built.
+   They are drawn as a filled chip rather than colored text because this is
+   the one label on an area page that must survive being skimmed past.
+
+   Color alone never carries it — each state's meaning is in its own words,
+   and the palette is a single warm ramp from the estate's sage through brass
+   to crimson rather than a red/amber/green traffic light, which would read as
+   a danger rating rather than as a description of infrastructure. Every step
+   clears 4.5:1 against its own ground in both themes. */
+:root {
+  --footing-1-bg: #e8efe4;
+  --footing-1-ink: #34502a;
+  --footing-2-bg: #f3ecdc;
+  --footing-2-ink: #6b5220;
+  --footing-3-bg: #f6e4d8;
+  --footing-3-ink: #8a4420;
+  --footing-4-bg: #f2e2e0;
+  --footing-4-ink: #7a2016;
+}
+
+:root[data-theme="dark"] {
+  --footing-1-bg: #23301f;
+  --footing-1-ink: #a9cf9c;
+  --footing-2-bg: #322a18;
+  --footing-2-ink: #d9bd7c;
+  --footing-3-bg: #38251a;
+  --footing-3-ink: #e5a077;
+  --footing-4-bg: #35201d;
+  --footing-4-ink: #e29086;
+}
+
+.footing {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.32rem 0.6rem;
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.footing::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: currentColor;
+  transform: rotate(45deg);
+}
+
+.footing[data-footing="established"] {
+  background: var(--footing-1-bg);
+  color: var(--footing-1-ink);
+}
+.footing[data-footing="emerging"] {
+  background: var(--footing-2-bg);
+  color: var(--footing-2-ink);
+}
+.footing[data-footing="coordinate-first"] {
+  background: var(--footing-3-bg);
+  color: var(--footing-3-ink);
+}
+.footing[data-footing="no-visitor-infrastructure"] {
+  background: var(--footing-4-bg);
+  color: var(--footing-4-ink);
+}
+
+/* ---- The caution block ---------------------------------------------------
+
+   Where the security note and the lodging caveat live. A left rule rather than
+   a filled panel: a filled warning box gets read as boilerplate and skipped,
+   and this is the text on the page most worth reading. */
+.caution {
+  border-left: 2px solid var(--footing-3-ink);
+  background: var(--paper-2);
+  padding: 1rem 1.15rem;
+}
+
+.caution-label {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--footing-3-ink);
+}
+
+/* ---- Place and dish cards ------------------------------------------------ */
+
+.tv-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  padding: 1.35rem 1.4rem;
+  transition:
+    border-color 0.2s var(--ease),
+    background-color 0.2s var(--ease),
+    transform 0.2s var(--ease);
+}
+
+a.tv-card:hover {
+  border-color: var(--ink);
+  background: var(--paper-2);
+  transform: translateY(-2px);
+}
+
+.tv-kind {
+  font-family: var(--font-display);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+
+/* The "before you go" list. Ticks would imply these are optional
+   conveniences; they are the conditions the visit happens under. */
+.tv-gate {
+  position: relative;
+  padding-left: 1.1rem;
+}
+
+.tv-gate::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 5px;
+  height: 5px;
+  background: var(--brass);
+  transform: rotate(45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a.tv-card:hover {
+    transform: none;
+  }
+  .tv-card {
+    transition: none;
+  }
+}
+
+/* ---- Photographs ---------------------------------------------------------
+
+   The credit line is license compliance, not styling, so it is set quieter
+   than the caption but never smaller than is comfortably readable, and it
+   never disappears behind a hover. */
+.tv-figure {
+  margin: 0;
+}
+
+.tv-figure-frame {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  background: var(--paper-2);
+  aspect-ratio: 4 / 3;
+}
+
+.tv-figure-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* The locator, over the frame. A photograph of somewhere unfamiliar is much
+   less use when the reader cannot place it. */
+.tv-figure-place {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0.42rem 0.7rem;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-display);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.tv-figure-caption {
+  margin-top: 0.85rem;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+
+.tv-figure-credit {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 11px;
+  letter-spacing: 0.01em;
+  color: var(--ink-mute);
+}
+
+/* ---- Locator maps --------------------------------------------------------
+
+   Everything is drawn in projected units and colored from the theme tokens,
+   so the same SVG reads correctly on the warm paper and on the dark ground.
+   Nothing here uses a raster tile — see travel-map.tsx for why. */
+.tv-map {
+  margin: 0;
+  border: 1px solid var(--rule);
+  background: var(--paper-2);
+  padding: 1.1rem 1.15rem 0.9rem;
+}
+
+.tv-map-caption {
+  margin-top: 0.9rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--rule-soft);
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--ink-3);
+}
+
+/* The graticule sits far enough back to be read as ground rather than as
+   content — it is the frame the points are measured against, not a feature. */
+.map-grid line {
+  stroke: var(--rule);
+  opacity: 0.6;
+}
+
+.map-node {
+  fill: var(--paper);
+  stroke: var(--ink);
+}
+
+/* Gateways carry the brass the rest of the estate uses for a way through, so
+   "this is how you get in" reads before the key is consulted. */
+.map-node-gateway {
+  fill: var(--brass);
+  stroke: var(--brass);
+}
+
+.map-node-focus {
+  fill: var(--accent);
+  stroke: var(--accent);
+}
+
+.map-num {
+  fill: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Over a filled node the number needs the paper color, not the ink one. */
+.map-num-over {
+  fill: var(--paper);
+}
+
+/* The hairline back to a displaced node's true position, and the tick that
+   marks it. Quiet enough not to compete with the node, present enough that the
+   reader can see the symbol has been moved. */
+.map-leader {
+  stroke: var(--ink-3);
+  opacity: 0.8;
+}
+
+.map-truth {
+  fill: var(--ink-3);
+}
+
+.map-scale line {
+  stroke: var(--ink-3);
+}
+
+.map-scale-text {
+  fill: var(--ink-3);
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+/* The key. Two or three columns depending on room — it is read by looking up a
+   number, so column order does not matter, only that every name fits whole. */
+.tv-map-key {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+.tv-map-key li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.tv-map-key-num {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-size: 9.5px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+
+.tv-map-key li[data-gateway="true"] .tv-map-key-num {
+  background: var(--brass);
+  border-color: var(--brass);
+  color: var(--paper);
+}
+
+.tv-map-key li[data-focus="true"] {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.tv-map-key li[data-focus="true"] .tv-map-key-num {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* ---- Itinerary days ------------------------------------------------------
+
+   A numbered rail down the left, because a route is read in order and a plain
+   list of headings does not say so. */
+.tv-day {
+  position: relative;
+  padding-left: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.tv-day::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 0.55em;
+  width: 7px;
+  height: 7px;
+  background: var(--brass);
+  transform: rotate(45deg);
+}
+
+.tv-day::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 1.5em;
+  bottom: 0;
+  width: 1px;
+  background: var(--rule);
+}
+
+.tv-day:last-child {
+  padding-bottom: 0;
+}
+
+.tv-day:last-child::after {
+  display: none;
+}

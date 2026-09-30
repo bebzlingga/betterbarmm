@@ -4,7 +4,7 @@ import { type Confidence, confidenceMeta } from '../_lib/confidence'
  * How far a record is to be trusted, said in one mark.
  *
  * A dot in the tone, the word beside it, and a hairline around both. The
- * badges used to be solid blocks of colour — four of them in a row read as a
+ * badges used to be solid blocks of color — four of them in a row read as a
  * chart of something, and on a card they shouted over the name they were
  * qualifying. The record is the loud thing here; this is a footnote to it.
  */

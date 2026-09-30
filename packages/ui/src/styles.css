@@ -66,7 +66,7 @@
 
      One tone per stage of a measure's passage, in the order it travels
      them: filed, first reading, committee, floor, third reading, law.
-     They read as a progression rather than a set of unrelated colours,
+     They read as a progression rather than a set of unrelated colors,
      and because a badge and a rung on a timeline draw from the same pair,
      "first reading" is the same blue wherever it appears. */
   --tone-file-bg: #f6f1ec;
@@ -92,7 +92,7 @@
      tones the badges use — those are tuned to sit quietly behind text and
      measure out at ΔE 3.7 between the committee and early hues under
      deuteranopia, which is invisible. Stepping the accent instead puts the
-     order into the colour and stays safe under any colour vision, because
+     order into the color and stays safe under any color vision, because
      lightness is the channel that survives.
 
      Later stage = more prominent against the surface, so the anchor flips in
@@ -105,7 +105,7 @@
   --funnel-out: #9a9a92;
 
   /* Kept from the earlier palette: the budget and election explorers chart
-     with these, and a chart colour is not a UI surface. */
+     with these, and a chart color is not a UI surface. */
   --slate: #2d3e4f;
   --positive: #4a5a3a;
   --ochre: #9a7530;
@@ -177,7 +177,7 @@
   --accent-deep: #f0907f;
   --accent-soft: #2b1a16;
 
-  /* The chart colours lift with the accent, and for the same reason.
+  /* The chart colors lift with the accent, and for the same reason.
      `--slate` at #2d3e4f reaches 1.76:1 on this ground — the election's seat
      map paints its thirty-two district seats with it, and on the dark theme
      the largest bloc in the chamber was navy dots on near-black, which is a
@@ -187,7 +187,7 @@
 
      Both are stepped to land beside the accent's own 6.8:1, and the three
      hold ΔE 11 under protanopia and 17 under normal vision at these values.
-     `--positive` is a status colour rather than a chart one and keeps its
+     `--positive` is a status color rather than a chart one and keeps its
      own treatment. */
   --slate: #7e9cb8;
   --ochre: #c19a45;
@@ -217,7 +217,7 @@
 }
 
 /* The wordmark ships in two cuts: the black "BARMM" glyphs are invisible
-   on a dark ground, so the dark cut recolours them and leaves the red
+   on a dark ground, so the dark cut recolors them and leaves the red
    block alone. Swapped here rather than in the component so the markup
    stays a plain pair of images. */
 .logo-dark {
@@ -332,7 +332,7 @@ figcaption {
 
 /* A label standing on its own as a column head, rather than annotating a
    value beneath it. Declared after `.label` so it wins on source order; a
-   Tailwind colour utility could not, because these primitives sit outside
+   Tailwind color utility could not, because these primitives sit outside
    Tailwind's layers. */
 .label-strong {
   color: var(--ink);
@@ -383,11 +383,11 @@ figcaption {
    drifted to four different section headings and three different item
    headings, which read as four different sites.
 
-   Size, weight, and leading only. Colour stays a utility on the element: a
+   Size, weight, and leading only. Color stays a utility on the element: a
    lead is quieter than the copy under it, a heading on a dark panel is
    lighter than one on paper, and those are decisions per element rather than
    per step of the scale. (It could not live here anyway — these primitives
-   sit outside Tailwind's layers, so a colour set here would beat any utility
+   sit outside Tailwind's layers, so a color set here would beat any utility
    trying to override it.) */
 
 /* A section's claim, under its eyebrow. Display face throughout: a heading is
@@ -463,7 +463,7 @@ figcaption {
 
 /* The sentence under a section's claim, and the copy under an item heading —
    one size, so a page holds a single reading measure from top to bottom. The
-   lead reads quieter than the copy through colour alone.
+   lead reads quieter than the copy through color alone.
 
    Set at 16px on a 1.75 leading. The record dialog had drifted: its opening
    "what this measure does" ran at that size while every section under it sat
@@ -523,7 +523,7 @@ figcaption {
 
 /* A list of links rather than a link inside a sentence — a roll of forty
    authors, each on its own line, reads as forty ruled boxes. The rule goes;
-   the colour on hover still says the name is a link. */
+   the color on hover still says the name is a link. */
 .rule-link-quiet {
   border-bottom-color: transparent;
 }
@@ -724,7 +724,7 @@ figcaption {
 
    Focus is carried by the border and the ring alone, which is why the
    background comes out of the transition as well: there is no longer a
-   colour there to cross-fade. */
+   color there to cross-fade. */
 .field {
   height: 2.75rem;
   width: 100%;
@@ -930,7 +930,7 @@ figcaption {
   transition: transform 0.22s var(--ease);
 }
 
-/* Hover only — the active entry is marked by colour alone, so the header
+/* Hover only — the active entry is marked by color alone, so the header
    doesn't carry a permanent underline under whichever tab you're on. */
 .nav-link:hover::after {
   transform: scaleX(1);
@@ -964,35 +964,34 @@ figcaption {
   background: var(--accent);
 }
 
-/* The same path named and dated — one rail read left to right. The whole
-   path fits the width it is given: the stages divide it evenly and their
-   names wrap, because a bill's route is short enough to show at once and
-   scrolling half of it out of view defeats the point of drawing it.
-
-   That holds while there is width to divide. Seven stages on a phone leave
-   each name about thirty pixels, which is not a column of text but a column
-   of broken syllables — so below `md` the rail stands up and runs down the
-   page instead, one stage per line. Same rungs, same tones, same order; only
-   the axis changes, and the markup follows with `md:` variants. */
+/* The same path named and dated — one rail read left to right. It keeps a
+   real stage width even on small screens, so a seven-step act can be panned
+   horizontally instead of being squeezed into broken syllables. */
 .timeline {
-  display: grid;
+  display: flex;
+  min-width: max(100%, 66.5rem);
+}
+
+/* Every stage takes an equal share, with enough floor width for the longer
+   rungs such as "Second Reading — Committee". */
+.timeline-stage {
+  flex: 1 0 9.5rem;
+  min-width: 9.5rem;
 }
 
 @media (min-width: 48rem) {
   .timeline {
-    display: flex;
+    min-width: 0;
+  }
+
+  .timeline-stage {
+    flex: 1 1 0;
+    min-width: 0;
   }
 }
 
-/* Every stage takes an equal share, however many there are. Inert while the
-   rail is stacked, since a grid item ignores `flex`. */
-.timeline-stage {
-  flex: 1 1 0;
-  min-width: 0;
-}
-
 /* "Now" on the rail — smaller and harder than a badge elsewhere, because it
-   marks a point on a path rather than labelling a record. */
+   marks a point on a path rather than labeling a record. */
 .timeline-now {
   padding: 0.1875rem 0.5rem;
   font-size: 0.5625rem;
@@ -1315,7 +1314,7 @@ figcaption {
 
    It re-points the tokens the way .dark-bg does instead of restyling
    the header's parts: the eyebrow pill takes its border from --rule
-   and its colour from --ink-3 or --accent depending on the cut, the
+   and its color from --ink-3 or --accent depending on the cut, the
    headline from --ink, its muted half from --ink-display, the
    description from --ink-2. Re-pointing means all of them adapt at
    once, and anything added to a header later adapts with them.
@@ -1347,6 +1346,12 @@ figcaption {
   --accent-soft: rgba(255, 255, 255, 0.14);
   --rule: rgba(255, 255, 255, 0.28);
   --rule-soft: rgba(255, 255, 255, 0.16);
+  /* Brass stays brass — gold on crimson is the pair the estate already uses on
+     its darkest grounds — but it takes the light cut. The 0.42-alpha gold the
+     paper ground uses sinks into this one and reads as a muddier red, which
+     turns every hairline and every ornament drawn in it into a smudge. */
+  --brass: #f0c98a;
+  --brass-line: rgba(240, 201, 138, 0.42);
   background: var(--paper);
   color: var(--ink);
 }
@@ -1381,7 +1386,7 @@ figcaption {
    which is the one thing about the process a reader should leave the hub
    knowing.
 
-   A travelling head runs the line, the fill follows it, and each dot flares as
+   A traveling head runs the line, the fill follows it, and each dot flares as
    the head reaches it. The whole thing is one cycle: the dots' delays are
    spaced across the same span the head takes to cross, so a flare always lands
    on the dot the head is passing rather than merely near it. Every element

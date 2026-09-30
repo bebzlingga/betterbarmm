@@ -16,11 +16,93 @@
    public-facing layer on top of it — the warm paper, the brass, the
    okir, the display type, the motion.
 
-   What belongs here is what only a directory needs: the tab strip on a
-   unit page, the term picker, and the figure-and-label pair the stat
-   rows are built from. All three are controls rather than content, and
-   none of them means anything anywhere else on the estate.
+   What belongs here is what only a directory needs: the finder that
+   opens over any page, the tab strip on a unit page, the term picker,
+   and the figure-and-label pair the stat rows are built from. All of
+   them are controls rather than content, and none means anything
+   anywhere else on the estate.
    ============================================================ */
+
+/* ---- The distribution rings ----------------------------------------------
+
+   A single ramp, crimson through brass to a pale sage, ordered largest slice
+   first.
+   Seven categorical hues would be the obvious choice and the wrong one: no
+   seven-hue set clears the color-blind separation floors when every pair can
+   end up adjacent, which is exactly what a ring does. A sequential ramp asks
+   something easier of the reader — it encodes *rank* as lightness, which is
+   the order the slices are already in, and identity is carried by the legend
+   beside it rather than by the color.
+
+   Every step is monotonic in lightness and clears 3:1 against its own ground:
+   light runs 13.1:1 down to 3.0:1 on white, dark runs 4.2:1 up to 11.2:1 on
+   the dark page. The dark steps are stepped for that surface rather than
+   flipped, which is why they are not the light ones inverted. */
+:root {
+  --lgu-slice-1: #5e1710;
+  --lgu-slice-2: #7a2016;
+  --lgu-slice-3: #8f3a1d;
+  --lgu-slice-4: #9a5726;
+  --lgu-slice-5: #9f7033;
+  --lgu-slice-6: #a08544;
+  --lgu-slice-7: #9e9662;
+}
+
+:root[data-theme="dark"] {
+  --lgu-slice-1: #c2564a;
+  --lgu-slice-2: #d2705b;
+  --lgu-slice-3: #dd8b62;
+  --lgu-slice-4: #dda765;
+  --lgu-slice-5: #d3bb76;
+  --lgu-slice-6: #cbc78f;
+  --lgu-slice-7: #c6cbaa;
+}
+
+/* The way into 108 units. Drawn as a field rather than a button on the home
+   page, because it is a field a keystroke later and a control that changes
+   shape on click reads as two different things. */
+.finder-field {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  padding: 0.95rem 1.1rem;
+  cursor: text;
+  transition:
+    border-color 0.2s var(--ease),
+    background-color 0.2s var(--ease);
+}
+
+.finder-field:hover,
+.finder-field:focus-visible {
+  border-color: var(--ink);
+  background: var(--paper-2);
+}
+
+.finder-hit {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid var(--rule-soft);
+  padding: 0.8rem 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.12s var(--ease);
+}
+
+/* Keyboard and pointer land on the same state. Two different highlights — one
+   for hover, one for the cursor — put two rows in play at once and neither
+   reads as the one Enter would open. */
+.finder-hit[data-active="true"] {
+  background: var(--paper-2);
+  box-shadow: inset 2px 0 0 var(--accent);
+}
+
+.finder-hit:last-child {
+  border-bottom: 0;
+}
 
 .lgu-tab {
   position: relative;
@@ -130,7 +212,7 @@
 
 .lgu-stat-value {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 900;
   line-height: 1;
   letter-spacing: -0.03em;
   font-size: clamp(1.6rem, 3.2vw, 2.35rem);

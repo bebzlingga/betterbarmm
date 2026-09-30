@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { PageHeader } from '../_components/page-header'
 import { ReadingColumn } from '../_components/reading-column'
 import { Reveal } from '../_components/reveal'
-import type { TocItem } from '../_components/table-of-contents'
+import type { TocItem } from '@betterbarmm/editorial'
 
 export const metadata: Metadata = {
 	title: 'Common questions',
@@ -180,7 +180,7 @@ export default function QuestionsPage() {
 					<Question ask='What happens if the Chief Minister refuses to sign a bill?'>
 						Refusing changes nothing on its own. Thirty days after a passed bill reaches the Chief
 						Minister it becomes law whether or not anyone signed it — the deadline works in the
-						bill&rsquo;s favour. <Full href='/how-parliament-works#limits'>What holds it back</Full>
+						bill&rsquo;s favor. <Full href='/how-parliament-works#limits'>What holds it back</Full>
 						.
 					</Question>
 					<Question ask='When does a new law actually start to apply to me?'>
@@ -291,7 +291,7 @@ export default function QuestionsPage() {
 						<Full href='/how-parliament-works#committees'>Committees</Full>.
 					</Question>
 					<Question ask='And what if I ignore it?'>
-						Parliament and its committees can hold a person in contempt — defined as behaviour
+						Parliament and its committees can hold a person in contempt — defined as behavior
 						defying their authority and dignity, or getting in the way of their work.{' '}
 						<Full href='/how-parliament-works#committees'>Committees</Full>.
 					</Question>

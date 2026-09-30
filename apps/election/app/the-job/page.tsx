@@ -110,7 +110,7 @@ export default function TheJobPage() {
 			    distance the page read as four pages a reader had to keep starting
 			    again. The rhythm stays where it belongs: above the first and below
 			    the last. */}
-			<section className='bb-container bb-section-top pb-0'>
+			<section className='bb-container section-band-top'>
 				<SectionHead
 					index='01'
 					eyebrow='The work'
@@ -224,7 +224,7 @@ export default function TheJobPage() {
 						title='They must carry your demands into the chamber'
 						cite='Rules, Rule II, Section 2(e)'
 						href={`${REGISTRY}/how-parliament-works#duties`}
-						means='You can put a demand to your member and ask them to carry it, and point at the rule when you do. It is their job, not a favour.'
+						means='You can put a demand to your member and ask them to carry it, and point at the rule when you do. It is their job, not a favor.'
 					>
 						A member has to put forward the demands and interests of the people they represent — and
 						of anyone else a bill in front of them affects. It is a duty of the office rather than a
@@ -285,7 +285,7 @@ export default function TheJobPage() {
 						title='They can still be arrested'
 						cite='Rules, Rule II, Section 3'
 						href={`${REGISTRY}/how-parliament-works#members`}
-						means='A seat is not a defence against a case. Nothing about winning one settles a charge that predates it.'
+						means='A seat is not a defense against a case. Nothing about winning one settles a charge that predates it.'
 					>
 						The immunity a member carries is narrower than the word suggests. It does not put them
 						beyond the reach of the law.
@@ -304,7 +304,7 @@ export default function TheJobPage() {
 			</section>
 
 			{/* ---- The closing note, on the section above ---- */}
-			<section className='bb-container bb-section-bottom pt-20 lg:pt-32'>
+			<section className='bb-container section-band-bottom pt-20 lg:pt-32'>
 				<Rise delay={0.1} distance={12}>
 					{/* The note on one side of the rule, the ways on at the other. They
 					    answer different questions — where this came from, and where to go

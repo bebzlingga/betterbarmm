@@ -1,0 +1,336 @@
+{
+	"name": "Bangsamoro construction appropriated into each area, FY 2020 to FY 2026",
+	"generatedAt": "2026-09-27",
+	"note": "The itemised infrastructure projects of the seven enacted Bangsamoro Acts, summed by the area each one names. This is regional money spent in a place, not that place’s own budget — a local government unit’s appropriation is in its own ordinance and is not published centrally by anyone. Areas are reconciled to their present names; every spelling the Acts used is kept.",
+	"years": [
+		2020,
+		2021,
+		2022,
+		2023,
+		2024,
+		2025,
+		2026
+	],
+	"areasTaggedPerYear": {
+		"2020": 6,
+		"2021": 7,
+		"2022": 8,
+		"2023": 3,
+		"2024": 7,
+		"2025": 7,
+		"2026": 7
+	},
+	"areas": [
+		{
+			"name": "Lanao del Sur",
+			"printedAs": [
+				"Lanao Del Sur I",
+				"Lanao Del Sur Ii",
+				"Lanao I",
+				"Lanao Ii"
+			],
+			"note": null,
+			"total": 17910477000.0,
+			"years": {
+				"2020": {
+					"amount": 1599000000.0,
+					"projects": 108
+				},
+				"2021": {
+					"amount": 3805717000.0,
+					"projects": 208
+				},
+				"2022": {
+					"amount": 4017890000.0,
+					"projects": 250
+				},
+				"2023": {
+					"amount": 0.0,
+					"projects": 0
+				},
+				"2024": {
+					"amount": 4444700000.0,
+					"projects": 274
+				},
+				"2025": {
+					"amount": 2639160000.0,
+					"projects": 197
+				},
+				"2026": {
+					"amount": 1404010000.0,
+					"projects": 86
+				}
+			}
+		},
+		{
+			"name": "Tawi-Tawi",
+			"printedAs": [
+				"Tawi-tawi"
+			],
+			"note": null,
+			"total": 17163815000.0,
+			"years": {
+				"2020": {
+					"amount": 306500000.0,
+					"projects": 25
+				},
+				"2021": {
+					"amount": 1522000000.0,
+					"projects": 85
+				},
+				"2022": {
+					"amount": 1784210000.0,
+					"projects": 90
+				},
+				"2023": {
+					"amount": 10806355000.0,
+					"projects": 522
+				},
+				"2024": {
+					"amount": 1247800000.0,
+					"projects": 74
+				},
+				"2025": {
+					"amount": 848270000.0,
+					"projects": 57
+				},
+				"2026": {
+					"amount": 648680000.0,
+					"projects": 36
+				}
+			}
+		},
+		{
+			"name": "Basilan",
+			"printedAs": [
+				"Basilan"
+			],
+			"note": null,
+			"total": 13475980000.0,
+			"years": {
+				"2020": {
+					"amount": 260000000.0,
+					"projects": 28
+				},
+				"2021": {
+					"amount": 1189400000.0,
+					"projects": 95
+				},
+				"2022": {
+					"amount": 1390680000.0,
+					"projects": 96
+				},
+				"2023": {
+					"amount": 3785160000.0,
+					"projects": 189
+				},
+				"2024": {
+					"amount": 4102100000.0,
+					"projects": 203
+				},
+				"2025": {
+					"amount": 2120990000.0,
+					"projects": 130
+				},
+				"2026": {
+					"amount": 627650000.0,
+					"projects": 37
+				}
+			}
+		},
+		{
+			"name": "Maguindanao del Sur",
+			"printedAs": [
+				"Maguindanao Del Sur",
+				"Maguindanao Ii"
+			],
+			"note": null,
+			"total": 9936320000.0,
+			"years": {
+				"2020": {
+					"amount": 365120000.0,
+					"projects": 21
+				},
+				"2021": {
+					"amount": 2246700000.0,
+					"projects": 107
+				},
+				"2022": {
+					"amount": 2395430000.0,
+					"projects": 115
+				},
+				"2023": {
+					"amount": 0.0,
+					"projects": 0
+				},
+				"2024": {
+					"amount": 2902400000.0,
+					"projects": 145
+				},
+				"2025": {
+					"amount": 1266280000.0,
+					"projects": 72
+				},
+				"2026": {
+					"amount": 760390000.0,
+					"projects": 36
+				}
+			}
+		},
+		{
+			"name": "Maguindanao del Norte",
+			"printedAs": [
+				"Maguindanao Del Norte",
+				"Maguindanao I"
+			],
+			"note": null,
+			"total": 8226280000.0,
+			"years": {
+				"2020": {
+					"amount": 370000000.0,
+					"projects": 21
+				},
+				"2021": {
+					"amount": 2087910000.0,
+					"projects": 72
+				},
+				"2022": {
+					"amount": 1875540000.0,
+					"projects": 86
+				},
+				"2023": {
+					"amount": 0.0,
+					"projects": 0
+				},
+				"2024": {
+					"amount": 2019070000.0,
+					"projects": 107
+				},
+				"2025": {
+					"amount": 1221240000.0,
+					"projects": 68
+				},
+				"2026": {
+					"amount": 652520000.0,
+					"projects": 29
+				}
+			}
+		},
+		{
+			"name": "Sulu",
+			"printedAs": [
+				"Sulu I",
+				"Sulu Ii"
+			],
+			"note": "Removed from BARMM by the Supreme Court; last appears in the FY 2022 Act.",
+			"total": 5912650000.0,
+			"years": {
+				"2020": {
+					"amount": 488500000.0,
+					"projects": 38
+				},
+				"2021": {
+					"amount": 2673100000.0,
+					"projects": 139
+				},
+				"2022": {
+					"amount": 2751050000.0,
+					"projects": 135
+				},
+				"2023": {
+					"amount": 0.0,
+					"projects": 0
+				},
+				"2024": {
+					"amount": 0.0,
+					"projects": 0
+				},
+				"2025": {
+					"amount": 0.0,
+					"projects": 0
+				},
+				"2026": {
+					"amount": 0.0,
+					"projects": 0
+				}
+			}
+		},
+		{
+			"name": "Special Geographic Area",
+			"printedAs": [
+				"Special Geographic Area",
+				"Special Geographic Area (63 Barangays)"
+			],
+			"note": null,
+			"total": 4931740000.0,
+			"years": {
+				"2020": {
+					"amount": 0.0,
+					"projects": 0
+				},
+				"2021": {
+					"amount": 1480160000.0,
+					"projects": 67
+				},
+				"2022": {
+					"amount": 1005900000.0,
+					"projects": 82
+				},
+				"2023": {
+					"amount": 0.0,
+					"projects": 0
+				},
+				"2024": {
+					"amount": 1136070000.0,
+					"projects": 48
+				},
+				"2025": {
+					"amount": 840510000.0,
+					"projects": 46
+				},
+				"2026": {
+					"amount": 469100000.0,
+					"projects": 18
+				}
+			}
+		},
+		{
+			"name": "Cotabato City",
+			"printedAs": [
+				"Cotabato City"
+			],
+			"note": null,
+			"total": 2713810000.0,
+			"years": {
+				"2020": {
+					"amount": 0.0,
+					"projects": 0
+				},
+				"2021": {
+					"amount": 0.0,
+					"projects": 0
+				},
+				"2022": {
+					"amount": 338100000.0,
+					"projects": 35
+				},
+				"2023": {
+					"amount": 475000000.0,
+					"projects": 4
+				},
+				"2024": {
+					"amount": 434950000.0,
+					"projects": 54
+				},
+				"2025": {
+					"amount": 1260250000.0,
+					"projects": 75
+				},
+				"2026": {
+					"amount": 205510000.0,
+					"projects": 16
+				}
+			}
+		}
+	]
+}

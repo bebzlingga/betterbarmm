@@ -1,4 +1,4 @@
-import { LineReveal, OkirBloom, Rise } from '@betterbarmm/editorial'
+import { LineReveal, Rise } from '@betterbarmm/editorial'
 import { StatFigures, type Stat } from './stat-band'
 
 type PageHeaderProps = {
@@ -22,7 +22,7 @@ type PageHeaderProps = {
 	/**
 	 * `brand` is for the standing pages — the hub, Data & Methodology — where
 	 * the heading is the page's whole point rather than a label over a list of
-	 * records. It runs large, with the medallion behind it.
+	 * records. It runs large.
 	 */
 	emphasis?: 'default' | 'brand'
 	/**
@@ -44,11 +44,11 @@ type PageHeaderProps = {
 /**
  * The top of every page in the registry.
  *
- * It used to sit on the crimson band. That band is now spent once per page, at
+ * It used to sit on the brand band. That band is now spent once per page, at
  * the foot, on the one thing the page is asking for — and a masthead on it
  * meant every page opened and closed on the same shout. So the header takes the
  * warm paper instead, with the woven lattice behind it and one okir medallion
- * turning off the top-right corner: quieter than the crimson, and the same
+ * turning off the top-right corner: quieter than the accent, and the same
  * masthead the landing site uses, which is the point. A reader crossing from
  * betterbarmm.com to the registry should not feel they have changed sites.
  *
@@ -70,13 +70,13 @@ export function PageHeader({
 	const isBrand = emphasis === 'brand'
 
 	if (isBrand) {
-		const centred = align === 'center'
-		const column = centred ? 'mx-auto ' : ''
-		// A centred header needs a measure, or the lines run too long to track
+		const centerd = align === 'center'
+		const column = centerd ? 'mx-auto ' : ''
+		// A centerd header needs a measure, or the lines run too long to track
 		// back to. Ranged left it shares the page's edges with the content under
 		// it, so it takes the full width.
-		const titleWidth = centred ? 'max-w-5xl ' : size === 'compact' ? 'lg:max-w-[75%] ' : ''
-		const proseWidth = centred ? 'max-w-3xl ' : size === 'compact' ? 'lg:max-w-[75%] ' : 'max-w-2xl '
+		const titleWidth = centerd ? 'max-w-5xl ' : size === 'compact' ? 'lg:max-w-[75%] ' : ''
+		const proseWidth = centerd ? 'max-w-3xl ' : size === 'compact' ? 'lg:max-w-[75%] ' : 'max-w-2xl '
 		const titleClass =
 			// Each cut one step up from where it started, to sit with the landing
 			// site's mastheads: `hero` on the largest display cut, `compact` — the
@@ -100,7 +100,7 @@ export function PageHeader({
 			   from there to the registry should not feel they have changed sites. The
 			   other cuts stay in the flow: a masthead that size over a page of four
 			   hundred rows is furniture in the way of what they came for. */
-			// A column rather than a centred row on the hero cut. `items-center`
+			// A column rather than a centerd row on the hero cut. `items-center`
 			// made every child a flex item on one line, and the seam at the foot of
 			// this section is a child: a 7px strip with no width of its own, it was
 			// laid beside the masthead instead of under it and measured zero. The
@@ -111,10 +111,6 @@ export function PageHeader({
 					size === 'hero' ? ' flex min-h-[80svh] flex-col' : ''
 				}`}
 			>
-				<OkirBloom
-					variant='weave'
-					className='absolute -right-[14%] -top-[38%] size-[min(44rem,86vw)] opacity-[0.15]'
-				/>
 				<span aria-hidden='true' className='bb-glow absolute -right-[10%] -top-[20%] size-[34rem]' />
 
 				{/* More air than the panel used to give it. At 16/24 the masthead was
@@ -126,12 +122,12 @@ export function PageHeader({
 				<div
 					className={`bb-container relative w-full pb-20 pt-20 lg:pb-32 lg:pt-32${
 						size === 'hero' ? ' my-auto' : ''
-					}${centred ? ' text-center' : ''}`}
+					}${centerd ? ' text-center' : ''}`}
 				>
 					<Rise distance={14}>
 						{/* The kicker states the size or the subject of the thing rather
 						    than naming the page — the headline already says what it is. */}
-						<p className={`bb-label${centred ? ' justify-center' : ''}`}>{eyebrow}</p>
+						<p className={`bb-label${centerd ? ' justify-center' : ''}`}>{eyebrow}</p>
 					</Rise>
 
 					<LineReveal

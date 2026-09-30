@@ -10,11 +10,16 @@
    different ballots, different years.
 
    So this file carries three things: the ladder of units and what is
-   elected at each rung, the units BARMM currently contains, and where
-   a reader can look their own officials up today. The last part
-   matters — the named directory is a workspace we have not built, and
-   the honest thing is to say so and point at the offices that already
-   publish it rather than leave a dead end.
+   elected at each rung, the areas BARMM currently contains with the
+   share of Parliament each one elects, and where a reader can look up
+   the parts of the record this directory does not hold — barangay
+   officials, and any name that changed after the 2025 canvass.
+
+   The figures here are PSA's, quoted as PSA reports them. The
+   directory's own figures live in `dataset.ts` and are measured
+   differently in one place: PSA files Cotabato City inside Maguindanao
+   del Norte and this directory lists it separately. Where that matters
+   the note on the area says so.
    ============================================================ */
 
 export type LguRung = {
@@ -46,11 +51,11 @@ export const lguLadder: LguRung[] = [
 		level: 'The province',
 		what: 'Basilan, Lanao del Sur, Maguindanao del Norte, Maguindanao del Sur, Tawi-Tawi — plus the Special Geographic Area.',
 		elects: ['Governor', 'Vice-Governor', 'Sangguniang Panlalawigan members'],
-		note: 'The provincial board is the Sangguniang Panlalawigan. Its members are elected by district, which is why a province with more districts sends more board members.',
+		note: 'The provincial board is the Sangguniang Panlalawigan. Its members are elected by district, which is why a province with more districts sends more board members. Cotabato City elects none of them: it is an independent component city and answers to no province.',
 	},
 	{
 		level: 'The city or municipality',
-		what: 'The town or city hall — 3 component cities and 105 municipalities across the region, Sulu excluded.',
+		what: 'The town or city hall — 3 cities and 105 municipalities across the region, Sulu excluded.',
 		elects: ['Mayor', 'Vice-Mayor', 'Sangguniang Panlungsod or Sangguniang Bayan members'],
 		note: 'This is the rung most public services are actually delivered from, and the one most people mean when they say “the LGU”.',
 	},
@@ -68,6 +73,8 @@ export const lguLadder: LguRung[] = [
 
 export type LguArea = {
 	name: string
+	/** Matches the directory's own province slug, so the two can be joined. */
+	slug: string
 	/** Single-member district seats in the Bangsamoro Parliament. */
 	seats: number
 	/** 2024 POPCEN population, as PSA reports it. */
@@ -86,6 +93,7 @@ export type LguArea = {
 export const lguAreas: LguArea[] = [
 	{
 		name: 'Lanao del Sur',
+		slug: 'lanao-del-sur',
 		seats: 9,
 		population: '1.37 million',
 		kind: 'Province',
@@ -93,20 +101,23 @@ export const lguAreas: LguArea[] = [
 	},
 	{
 		name: 'Maguindanao del Norte',
+		slug: 'maguindanao-del-norte',
 		seats: 5,
 		population: '1.12 million',
 		kind: 'Province',
-		note: 'Created when Maguindanao was divided in two, ratified by plebiscite in 2022. Twelve municipalities.',
+		note: 'Created when Maguindanao was divided in two, ratified by plebiscite in 2022. Twelve municipalities, and its capital is Datu Odin Sinsuat. PSA’s figure counts Cotabato City inside it; the province page in this directory does not, and shows 741,428.',
 	},
 	{
 		name: 'Maguindanao del Sur',
+		slug: 'maguindanao-del-sur',
 		seats: 5,
 		population: '813,000',
 		kind: 'Province',
-		note: 'The southern half of the former Maguindanao, along the upper Pulangi valley.',
+		note: 'The southern half of the former Maguindanao, along the upper Pulangi valley. Buluan is its capital — Shariff Aguak, the old capital, sits in this half but no longer holds the seat.',
 	},
 	{
 		name: 'Basilan',
+		slug: 'basilan',
 		seats: 4,
 		population: '542,000',
 		kind: 'Province',
@@ -114,6 +125,7 @@ export const lguAreas: LguArea[] = [
 	},
 	{
 		name: 'Tawi-Tawi',
+		slug: 'tawi-tawi',
 		seats: 4,
 		population: '483,000',
 		kind: 'Province',
@@ -121,13 +133,15 @@ export const lguAreas: LguArea[] = [
 	},
 	{
 		name: 'Cotabato City',
+		slug: 'cotabato-city',
 		seats: 3,
 		population: '383,383',
 		kind: 'City',
-		note: 'The largest single population of any city or municipality in the region. It voted to join BARMM in the 2019 plebiscite and is the seat of the Bangsamoro Government, though it sits geographically within Maguindanao.',
+		note: 'The largest single population of any city or municipality in the region, and an independent component city — its voters elect no provincial officials. It voted to join BARMM in the 2019 plebiscite and is the seat of the Bangsamoro Government. PSA and COMELEC both file it inside Maguindanao del Norte.',
 	},
 	{
 		name: 'Special Geographic Area',
+		slug: 'special-geographic-area',
 		seats: 2,
 		population: '215,000',
 		kind: 'Special area',
@@ -136,13 +150,17 @@ export const lguAreas: LguArea[] = [
 ]
 
 /**
- * Region-wide totals, with the caveat that makes them readable.
+ * Region-wide totals, with the caveats that make them readable.
  *
  * PSA counts Sulu inside BARMM: its 2024 census composition predates the
  * Supreme Court decision taking effect, and the statistical series has not been
  * restated. A reader who looks up "how many municipalities in BARMM" will find
  * conflicting numbers everywhere for exactly this reason, so the page says which
  * number counts what rather than picking one and hoping.
+ *
+ * `sulnote` is the short version for a masthead. `reconcileNote` is the long
+ * one, for the page that shows the directory's own total beside PSA's and has
+ * to account for the whole difference between them.
  */
 export const lguCounts = {
 	population: '5,691,583',
@@ -151,7 +169,9 @@ export const lguCounts = {
 	componentCities: 3,
 	barangays: 2595,
 	sulnote:
-		'These totals are BARMM without Sulu — 108 units rather than the 127 PSA counts, because PSA’s 2024 census composition still includes Sulu and the Supreme Court has since excluded it. A figure you find elsewhere for “BARMM” will usually be the larger one. Population here is summed from the municipalities in this directory, so it excludes Sulu and the Special Geographic Area, whose 8 new municipalities have no census figures of their own yet.',
+		'These totals are BARMM without Sulu — 108 units rather than the 127 PSA counts, because PSA’s 2024 census composition still includes Sulu and the Supreme Court has since excluded it. A figure you find elsewhere for “BARMM” will usually be the larger one.',
+	reconcileNote:
+		'PSA puts BARMM at 5,691,583 people on July 1, 2024. This directory shows 4,330,783, and the whole of the difference is accounted for: Sulu, which the Supreme Court removed from the region, is roughly 1.15 million, and the Special Geographic Area — whose 8 municipalities were ratified in 2024 and have no census figures of their own yet — is roughly 215,000. Cotabato City is counted once here, not twice: PSA files it inside Maguindanao del Norte, so the provincial figure on that page has the city taken out of it.',
 }
 
 export type LguLookup = {
@@ -163,9 +183,12 @@ export type LguLookup = {
 /**
  * Where to find a named official today.
  *
- * The Local Government workspace — a directory down to barangay level — is
- * planned and not built. Until it is, this is the honest answer: the offices
- * that already hold the record.
+ * This directory holds the governors, mayors, vice-mayors and councillors of
+ * the 2025 canvass, the winners of every cycle back to 2001, and the barangay
+ * officials DILG has on file. What it cannot hold is a name that changed after
+ * the record it came from: a canvass is a fact about an election day, not
+ * about today, and roughly a quarter of the region's barangays have no entry
+ * in DILG's directory at all. These are the offices that know.
  */
 export const lguLookups: LguLookup[] = [
 	{
@@ -185,7 +208,7 @@ export const lguLookups: LguLookup[] = [
 	},
 	{
 		office: 'Bangsamoro Official Gazette',
-		what: 'Where Bangsamoro Autonomy Acts are published, including the Local Governance Code and any law creating or reorganising a local unit.',
+		what: 'Where Bangsamoro Autonomy Acts are published, including the Local Governance Code and any law creating or reorganizing a local unit.',
 		href: 'https://officialgazette.bangsamoro.gov.ph/',
 	},
 ]
@@ -194,10 +217,16 @@ export const lguReferences = {
 	localGovernanceCode: {
 		label: 'Bangsamoro Autonomy Act No. 49 — Bangsamoro Local Governance Code',
 		enacted: 'September 28, 2023',
-		href: 'https://legislation.betterbarmm.com',
+		href: 'https://legislation.betterbarmm.com/acts/49',
+	},
+	implementingRules: {
+		label: 'Implementing Rules and Regulations of the Bangsamoro Local Governance Code',
+		promulgated: 'September 30, 2025',
+		href: 'https://legislation.betterbarmm.com/acts/49',
 	},
 	nationalCode: {
 		label: 'Republic Act 7160 — Local Government Code of 1991',
+		note: 'The national code. Inside BARMM it applies only where the Bangsamoro one is silent.',
 		href: 'https://www.officialgazette.gov.ph/1991/10/10/republic-act-no-7160/',
 	},
 	psaHighlights: {

@@ -2,7 +2,7 @@
 
 import { motion } from 'motion/react'
 import { useRef } from 'react'
-import type { DiscoverBarmmTimelineEvent } from './discover-barmm-data'
+import type { DiscoverBarmmTimelineEvent } from '@betterbarmm/primer-data'
 import { PhotoFrame } from './discover-figure'
 import { discoverPhotos, type DiscoverPhotoKey } from './discover-media'
 import { EASE, Rise, TimelineRail } from '@betterbarmm/editorial'
@@ -10,14 +10,14 @@ import { EASE, Rise, TimelineRail } from '@betterbarmm/editorial'
 /**
  * The timeline, as a rail with the events hanging off it.
  *
- * The fill down the rail tracks the scroll, so how far the accent has travelled
+ * The fill down the rail tracks the scroll, so how far the accent has traveled
  * is how far through six centuries the reader has got. It is driven from the
  * list's own scroll progress rather than by a scroll-driven CSS animation,
  * because the markers beside it have to agree with the fill and a CSS timeline
  * cannot tell them anything.
  *
  * Each marker fills as its own event arrives, which is the part that makes the
- * rail read as being travelled rather than as being coloured in. Nearly every
+ * rail read as being traveled rather than as being colored in. Nearly every
  * era carries a photograph in its own column; the few with none leave that
  * column empty rather than reflowing, so the paragraph beside the rail keeps
  * one measure the whole way down and the timeline reads as a single column of
@@ -58,7 +58,7 @@ export function Timeline({
                   animates gets `transform` written inline, and an inline
                   transform replaces the property whole. With them in CSS the
                   marker lost both the moment it moved: a square, sitting to the
-                  right of the rail instead of a diamond centred on it. */}
+                  right of the rail instead of a diamond centerd on it. */}
               <motion.span
                 aria-hidden='true'
                 className='bb-node'

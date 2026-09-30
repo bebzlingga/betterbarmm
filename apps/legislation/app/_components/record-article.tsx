@@ -17,7 +17,7 @@ type RecordArticleProps = {
  * subject.
  *
  * The label is the quiet half. It was set in the page's own ink at
- * `.label-strong`, which put "Sector" at the same weight of colour as the
+ * `.label-strong`, which put "Sector" at the same weight of color as the
  * sector itself; in a column of six of these the eye landed on the questions
  * rather than the answers. Plain `.label` is the muted step, and the value
  * under it keeps the ink.
@@ -34,7 +34,7 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
 function Section({ label, children }: { label: string; children: React.ReactNode }) {
 	return (
 		<section>
-			{/* The heading is furniture: quiet in colour, heavy in weight, and held
+			{/* The heading is furniture: quiet in color, heavy in weight, and held
 			    well off what it introduces. At `mt-3` in the page's own ink it sat
 			    on top of its own block like a first line of it. */}
 			<p className='label label-section'>{label}</p>
@@ -231,21 +231,10 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 
 	return (
 		<article>
-			{/* Where it stands, before anything else on the page.
-			    
-			    It sat under the title, on the argument that a dated rail beneath a
-			    measure's name says what it is. Directly under the site's own bar it
-			    does a different job: a reader arriving at a measure wants to know
-			    whether it is law before they read a word of it, and the rail answers
-			    that in one glance without them scrolling to find it. The trade is
-			    that the rail now arrives before the name it belongs to — which the
-			    number and status directly beneath it settle immediately.
-
-			    A tinted band rather than a second pair of rules, since the rail is
-			    already a set of lines. The band runs the full width of the page; the
-			    rail inside it keeps the site's column. */}
+			{/* Desktop keeps the original top band. Mobile gets the same journey below
+			    the description, where it can scroll without pushing the header away. */}
 			{record.journey.length > 0 ? (
-				<div className='bg-[var(--paper-2)]'>
+				<div className='hidden bg-[var(--paper-2)] md:block'>
 					<div className='bb-container pb-12 pt-12'>
 						<JourneyList stages={record.journey} />
 					</div>
@@ -253,7 +242,7 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 			) : null}
 
 			{/* Ranged left, sharing an edge with the detail underneath: the head and
-			    the body are one read down the same column, and a centred head over a
+			    the body are one read down the same column, and a centerd head over a
 			    left-ranged body put a seam across the page. */}
 			<div className='bb-container pt-12 lg:pt-16'>
 				{/* Badges never break, so on a phone the row wraps rather than running
@@ -288,6 +277,14 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 
 				{lead ? (
 					<p className='mt-5 max-w-4xl copy text-[var(--ink-2)]'>{lead}</p>
+				) : null}
+
+				{/* Where it stands, kept with the measure description it follows. The
+				    rail scrolls horizontally on narrow screens inside `JourneyList`. */}
+				{record.journey.length > 0 ? (
+					<div className='-mx-6 mt-8 border-y border-[var(--rule-soft)] bg-[var(--paper-2)] pb-5 pt-8 md:hidden'>
+						<JourneyList stages={record.journey} />
+					</div>
 				) : null}
 			</div>
 
