@@ -273,7 +273,7 @@ export default function AboutPage() {
 								    tones are reserved for stages. */}
 								<span className='badge badge-plain badge-treatment mt-3'>{item.status}</span>
 
-								<p className='mt-3 bb-body text-[var(--ink-2)]'>{item.rule}</p>
+								<p className='mt-3 text-[15px] leading-[1.7] text-[var(--ink-2)]'>{item.rule}</p>
 							</div>
 						</Reveal>
 					))}
@@ -315,13 +315,13 @@ export default function AboutPage() {
 										{dataset.metadata.knownGaps.length > 0 ? (
 											<ul className='grid gap-2'>
 												{dataset.metadata.knownGaps.map((gap, gapIndex) => (
-													<li key={gapIndex} className='bb-body text-[var(--ink-2)]'>
+													<li key={gapIndex} className='text-[15px] leading-[1.7] text-[var(--ink-2)]'>
 														{gap}
 													</li>
 												))}
 											</ul>
 										) : (
-											<p className='bb-body text-[var(--ink-3)]'>
+											<p className='text-[15px] leading-[1.7] text-[var(--ink-3)]'>
 												No gaps recorded for this dataset.
 											</p>
 										)}
@@ -380,7 +380,7 @@ export default function AboutPage() {
 														{count.toLocaleString()}
 													</span>
 												</div>
-												<p className='mt-3 bb-body text-[var(--ink-3)]'>
+												<p className='mt-3 text-[15px] leading-[1.7] text-[var(--ink-3)]'>
 													{sectorDefinitions[value] ??
 														'A grouping label applied during classification. Check the official title for the exact scope.'}
 												</p>

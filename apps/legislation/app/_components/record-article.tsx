@@ -43,6 +43,24 @@ function Section({ label, children }: { label: string; children: React.ReactNode
 	)
 }
 
+/**
+ * A written passage of a reading, kept as the paragraphs it was written in.
+ *
+ * A reading is prose, and its blank lines carry the argument — `\n\n` in the
+ * source is a paragraph break, not whitespace. Rendered into a single `<p>`
+ * it collapses into one wall, which is what happened to every insight on the
+ * site until this existed.
+ */
+function Prose({ text }: { text: string }) {
+	return (
+		<div className='space-y-4 copy text-[var(--ink-2)]'>
+			{text.split('\n\n').map((paragraph, index) => (
+				<p key={index}>{paragraph}</p>
+			))}
+		</div>
+	)
+}
+
 /** A list under a label, for the parts of a reading that are lists. */
 function ReadingList({ label, items }: { label: string; items: string[] }) {
 	if (items.length === 0) return null
@@ -76,16 +94,12 @@ function Reading({ reading }: { reading: MeasureReading }) {
 	return (
 		<div className='space-y-9'>
 			<Section label='What this measure does'>
-				<div className='space-y-4 copy text-[var(--ink-2)]'>
-					{reading.whatItDoes.split('\n\n').map((paragraph, index) => (
-						<p key={index}>{paragraph}</p>
-					))}
-				</div>
+				<Prose text={reading.whatItDoes} />
 			</Section>
 
 			{reading.whyProposed ? (
 				<Section label='Why it was proposed'>
-					<p className='copy text-[var(--ink-2)]'>{reading.whyProposed}</p>
+					<Prose text={reading.whyProposed} />
 				</Section>
 			) : null}
 
@@ -130,7 +144,7 @@ function Reading({ reading }: { reading: MeasureReading }) {
 
 			{reading.insight ? (
 				<Section label='What to notice'>
-					<p className='copy text-[var(--ink-2)]'>{reading.insight}</p>
+					<Prose text={reading.insight} />
 				</Section>
 			) : null}
 

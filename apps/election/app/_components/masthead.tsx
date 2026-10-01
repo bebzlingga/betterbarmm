@@ -24,7 +24,9 @@ type MastheadProps = {
 	lines: string[]
 	/** Indices of `lines` set in the muted grey — the qualifier, not the claim. */
 	muted?: number[]
-	standfirst: string
+	/** Optional: a head can be a claim on its own, and the results page is
+	    one — the figures under it say what the sentence was saying. */
+	standfirst?: string
 	/**
 	 * `lg` is the largest display cut, for a page that opens on its headline
 	 * and nothing else. The default is the middle one, which is right where a
@@ -77,20 +79,22 @@ export function Masthead({
 					lineClassName={lines.map((_, index) => (muted.includes(index) ? 'bb-mute' : undefined))}
 				/>
 
-				<Rise delay={0.35} distance={16}>
-					{/* Wider than the estate's reading measure. `bb-measure` caps at 34em,
-					    which is right for a column of prose a reader settles into; a
-					    standfirst is one sentence read once, under a headline that runs
-					    the page, and at 34em it stacked into five short lines and left
-					    the masthead looking like a narrow column pushed to the left. */}
-					{/* Tighter than the reading leading. A standfirst is one sentence
-					    taken in at a glance under a headline, not a column somebody
-					    settles into — set at the body's own 1.88 it stacked into loose,
-					    widely separated lines that read as four short paragraphs. */}
-					<p className='mt-9 max-w-[46rem] text-[16px] leading-[1.5] text-[var(--ink-2)]'>
-						{standfirst}
-					</p>
-				</Rise>
+				{standfirst ? (
+					<Rise delay={0.35} distance={16}>
+						{/* Wider than the estate's reading measure. `bb-measure` caps at 34em,
+						    which is right for a column of prose a reader settles into; a
+						    standfirst is one sentence read once, under a headline that runs
+						    the page, and at 34em it stacked into five short lines and left
+						    the masthead looking like a narrow column pushed to the left.
+
+						    Tighter than the reading leading too: set at the body's own 1.88
+						    it stacked into loose, widely separated lines that read as four
+						    short paragraphs. */}
+						<p className='mt-9 max-w-[46rem] text-[16px] leading-[1.5] text-[var(--ink-2)]'>
+							{standfirst}
+						</p>
+					</Rise>
+				) : null}
 
 				{/* The figures and the actions share one rule. Stacked, the buttons sat
 				    a third block down from a headline that had already said its piece,

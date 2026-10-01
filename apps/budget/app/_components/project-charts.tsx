@@ -88,11 +88,16 @@ function Chart({
 								</div>
 
 								<div
-									className='w-full bg-[var(--accent)]'
-									style={{
-										height: `${Math.max(FLOOR, (row.total / tallest) * HEIGHT)}px`,
-										opacity: shade,
-									}}
+									className='bar-rise w-full bg-[var(--accent)]'
+									style={
+										{
+											height: `${Math.max(FLOOR, (row.total / tallest) * HEIGHT)}px`,
+											opacity: shade,
+											// Walks the rise across the ranking rather than lifting
+											// every column at once. Capped in the stylesheet.
+											'--bar-index': index,
+										} as React.CSSProperties
+									}
 								/>
 
 								{/* Truncated to one line: "Flood Control / Drainage" over a

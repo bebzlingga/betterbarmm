@@ -79,6 +79,22 @@
   gap: 2px;
   overflow: hidden;
   background: var(--paper);
+  /* Wiped in from the left on load. A clip rather than a scaleX: scaling the
+     band squeezes every segment narrow and widens them together, so for the
+     length of the animation the shares are wrong. A clip holds each segment at
+     its true width and only uncovers them, which is the one thing a chart
+     cannot be allowed to lie about even in passing. On the base class, not a
+     modifier, because every `.split-bar` in this workspace is a chart. */
+  animation: split-bar-wipe 0.55s var(--ease) backwards;
+}
+
+@keyframes split-bar-wipe {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
 }
 
 /* The shorter cut, for the inline layout — a row in a list, where the bar is
@@ -115,6 +131,38 @@
 
 .split-bar .split-bar-seg:hover {
   opacity: 1;
+}
+
+/* ---- Columns on load -----------------------------------------------------
+
+   A column chart reads as a set of lengths, and the lengths are the claim. So
+   the columns grow out of the axis they are measured from rather than fading
+   in: a bar that arrives at full height with no travel has not shown you it is
+   a measurement, and one that fades in reads as a thing appearing rather than
+   a quantity being drawn.
+
+   `backwards` for the reason the shared stylesheet gives for `.row-in`: it
+   holds the opening frame through the delay, then hands the element back to
+   its own styles rather than leaving an identity transform on every column for
+   the compositor to carry.
+
+   Staggered left to right so the eye is walked across the ranking in the order
+   the chart is sorted in, and capped at 24 so a thirty-column chart still
+   finishes settling promptly. */
+
+@keyframes bar-rise {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.bar-rise {
+  transform-origin: bottom;
+  animation: bar-rise 0.5s var(--ease) backwards;
+  animation-delay: calc(min(var(--bar-index, 0), 24) * 18ms);
 }
 
 /* ---- Section rhythm ------------------------------------------------------
@@ -507,6 +555,14 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  /* The charts arrive drawn. `animation: none` is enough for both: neither
+     holds a final frame, so each falls back to its own styles — full height for
+     a column, unclipped for a band. */
+  .bar-rise,
+  .split-bar {
+    animation: none;
+  }
+
   .split-bar-seg,
   .finder-field,
   .finder-hit,

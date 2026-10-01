@@ -109,11 +109,16 @@ export function SectorChart({ sectors }: { sectors: Sector[] }) {
                 </div>
 
                 <div
-                  className="w-full bg-[var(--accent)]"
-                  style={{
-                    height: `${Math.max(FLOOR, (share / 100) * 176)}px`,
-                    opacity: shade,
-                  }}
+                  className="bar-rise w-full bg-[var(--accent)]"
+                  style={
+                    {
+                      height: `${Math.max(FLOOR, (share / 100) * 176)}px`,
+                      opacity: shade,
+                      // Walks the rise across the ranking rather than lifting
+                      // thirty columns at once. Capped in the stylesheet.
+                      "--bar-index": index,
+                    } as React.CSSProperties
+                  }
                 />
 
                 <SectorIcon

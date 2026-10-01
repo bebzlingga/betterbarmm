@@ -44,13 +44,20 @@ type PageHeaderProps = {
 /**
  * The top of every page in the registry.
  *
- * It used to sit on the brand band. That band is now spent once per page, at
- * the foot, on the one thing the page is asking for — and a masthead on it
- * meant every page opened and closed on the same shout. So the header takes the
- * warm paper instead, with the woven lattice behind it and one okir medallion
- * turning off the top-right corner: quieter than the accent, and the same
- * masthead the landing site uses, which is the point. A reader crossing from
- * betterbarmm.com to the registry should not feel they have changed sites.
+ * On the brand crimson (user decision), which is what the budget workspace
+ * does and what the landing site does. A reader crossing between the six
+ * should not feel they have changed sites, and for a while this was the only
+ * one opening on paper.
+ *
+ * `bb-crimson` re-points every token — ink, brass, rules, the accent — so the
+ * eyebrow, the headline, the description and the figures under it all restyle
+ * themselves without one inverted variant written here.
+ *
+ * It was moved off the crimson once before, on the argument that the band is
+ * spent at the foot on the closing panel and a masthead on it meant every page
+ * opening and closing on the same shout. That is still true, and it is the
+ * thing to watch if the pages start to feel loud: the answer then is a quieter
+ * closing panel, not a paper masthead.
  *
  * The headline arrives a line at a time. Where it breaks is given rather than
  * measured — at these sizes a wrap decided by the container puts a two-letter
@@ -107,7 +114,7 @@ export function PageHeader({
 			// column stacks them again, and the content takes `my-auto` below to
 			// hold the middle of the screen the way the row was holding it.
 			<section
-				className={`bb-lattice relative overflow-hidden${
+				className={`bb-crimson bb-lattice relative isolate overflow-hidden${
 					size === 'hero' ? ' flex min-h-[80svh] flex-col' : ''
 				}`}
 			>
@@ -139,7 +146,7 @@ export function PageHeader({
 
 					<Rise delay={0.32} distance={16}>
 						<p
-							className={`${column}${proseWidth}bb-body mt-8 text-[var(--ink-2)]`}
+							className={`${column}${proseWidth}mt-8 text-[15px] leading-[1.7] text-[var(--ink-2)]`}
 						>
 							{description}
 						</p>
@@ -174,7 +181,7 @@ export function PageHeader({
 	// the medallion goes. A masthead this size on a page of four hundred rows is
 	// furniture in the way of the thing the reader came for.
 	return (
-		<section className='bb-lattice relative overflow-hidden'>
+		<section className='bb-crimson bb-lattice relative isolate overflow-hidden'>
 			<div className='bb-container relative pb-12 pt-12 lg:pb-16 lg:pt-20'>
 				<Rise distance={12}>
 					<p className='bb-label'>{eyebrow}</p>
@@ -187,7 +194,7 @@ export function PageHeader({
 				/>
 
 				<Rise delay={0.25} distance={14}>
-					<p className='bb-body mt-6 max-w-2xl text-[var(--ink-2)]'>
+					<p className='mt-6 max-w-2xl text-[15px] leading-[1.7] text-[var(--ink-2)]'>
 						{description}
 					</p>
 					{meta ? <p className='meta-sm mt-6'>{meta}</p> : null}

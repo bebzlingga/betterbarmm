@@ -238,11 +238,6 @@ export default function ResultsPage() {
 				label='The result · 14 September 2026'
 				lines={['Eighty members.', 'No majority.']}
 				muted={[1]}
-				standfirst={`The Bangsamoro elected its first Parliament on ${formatDate(
-					'2026-09-14',
-				)} and the Commission on Elections proclaimed all ${totalSeats} members two days later. ${
-					outcome.summary
-				} Every figure below is on this page because it is on the record — with the source that carries it.`}
 				facts={[
 					{
 						value: percent(turnout.turnout_percent, 2),
