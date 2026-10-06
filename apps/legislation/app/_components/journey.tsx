@@ -98,6 +98,9 @@ export function StageLadder({
  * Left to right rather than top to bottom: a bill's path is a sequence, and
  * a horizontal rail says "distance traveled" in a way a stacked list can't.
  * The row scrolls when the stages outrun the width.
+ *
+ * Centred (user decision): each dot sits mid-column with its name and date
+ * centred beneath, the rail split into an arriving and a leaving half.
  */
 export function JourneyList({ stages }: { stages: JourneyStage[] }) {
   if (stages.length === 0) return null;
@@ -126,14 +129,12 @@ export function JourneyList({ stages }: { stages: JourneyStage[] }) {
               key={`${stage.label}-${index}`}
               className="timeline-stage block"
             >
-              {/* The rail. Across a row of columns the dot sits at the center of
-						    its own, with the connector split into the half that arrives and
-						    the half that leaves — so the dot lands over the middle of the
-						    stage name rather than at its left edge, and the line still runs
-						    unbroken from one dot to the next. The first stage's arriving
-						    half and the last stage's leaving half are drawn transparent
-						    rather than dropped, so every dot is centerd on the same amount
-						    of rail.
+              {/* The rail. The dot sits at the center of its column, with the
+						    connector split into the half that arrives and the half that
+						    leaves, so the line still runs unbroken from one dot to the
+						    next. The first stage's arriving half and the last stage's
+						    leaving half are transparent rather than dropped, so every dot
+						    is centred on the same amount of rail.
 
 						    A segment is traveled once the stage at its far end is
 						    reached, and takes that stage's color with it. Each rung is
@@ -142,7 +143,7 @@ export function JourneyList({ stages }: { stages: JourneyStage[] }) {
 						    and the current one is picked out by a halo. */}
               <div className="flex items-center" aria-hidden="true">
                 <span
-                  className={`block h-px flex-1 ${
+                  className={`h-px flex-1 ${
                     index === 0
                       ? "bg-transparent"
                       : stage.reached
@@ -157,23 +158,20 @@ export function JourneyList({ stages }: { stages: JourneyStage[] }) {
                       : "border border-[var(--rule)] bg-[var(--tone-idle-bg)]"
                   }`}
                 />
-                {!isLast && next ? (
-                  <span
-                    className={`h-px flex-1 ${
-                      next.reached
+                <span
+                  className={`h-px flex-1 ${
+                    isLast || !next
+                      ? "bg-transparent"
+                      : next.reached
                         ? TONE_FILL[stageTone(next.label)]
                         : "bg-[var(--rule)]"
-                    }`}
-                  />
-                ) : (
-                  <span className="block h-px flex-1 bg-transparent" />
-                )}
+                  }`}
+                />
               </div>
 
-              {/* Each name centers under its own dot and is allowed to break
-						    mid-word, so a long stage never pushes into the one beside it.
-						    The padding is symmetric for the same reason the text is:
-						    a centerd name needs equal room on both sides. */}
+              {/* Each name sits centred under its own dot and is allowed to
+						    break mid-word, so a long stage never pushes into the one
+						    beside it. */}
               <div className="mt-3 min-w-0 px-2 pb-0 text-center">
                 {/* "Now" rides at the end of the stage name, so it reads as part
 							    of the line rather than as a second row over the rail. */}

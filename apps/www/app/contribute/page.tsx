@@ -1,7 +1,7 @@
 import { ArrowRightIcon, EnvelopeSimpleIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { CtaAction, CtaPanel, Magnetic, OkirCorner, OkirRule, Rise, Stagger, StaggerItem, Tilt } from '@betterbarmm/editorial'
+import { CtaAction, CtaPanel, Magnetic, OkirCorner, Rise, Stagger, StaggerItem, Tilt } from '@betterbarmm/editorial'
 import { photo } from '../_components/discover-media'
 import { Masthead, SectionHead } from '../_components/masthead'
 import { QuoteBand } from '../_components/quote-band'
@@ -78,6 +78,7 @@ export default function ContributePage() {
 			<SiteHeader activeItem='contribute' />
 
 			<Masthead
+				brand
 				label='Contribute to BetterBARMM'
 				lines={['Help make public', 'records usable.']}
 				muted={[1]}
@@ -149,13 +150,12 @@ export default function ContributePage() {
 					eyebrow='What happens next'
 					title='Four steps,'
 					titleMuted='and none of them hidden.'
-					lead='Asking for corrections without saying where they go is a poor trade to offer anyone. This is the whole of the process.'
 				/>
 
-				<StepList steps={whatHappens} />
+				<div className='pt-6 lg:pt-10'>
+					<StepList steps={whatHappens} layout='row' />
+				</div>
 			</section>
-
-			<OkirRule className='mx-auto max-w-[88rem] opacity-70' />
 
 			{/* ---- Contributor roll ---- */}
 			<section className='bb-container bb-section'>

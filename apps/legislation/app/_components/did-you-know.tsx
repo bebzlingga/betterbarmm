@@ -186,7 +186,7 @@ const FACTS: Fact[] = [
 
 export function DidYouKnow() {
 	return (
-		<section className='bb-container pb-16 lg:pb-24'>
+		<section className='bb-container pb-[clamp(3.75rem,7vw,6.5rem)]'>
 			<div className='border-t border-[var(--rule)] pt-14 lg:pt-20'>
 				<p className='eyebrow'>Did you know</p>
 				<h2 className='section-title mt-3 max-w-3xl'>

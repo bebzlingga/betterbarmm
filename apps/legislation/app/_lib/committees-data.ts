@@ -42,6 +42,20 @@ export type CommitteeReport = {
 export type Committee = {
 	slug: string
 	name: string
+	/**
+	 * Whether the Rules of the Parliament name this committee themselves.
+	 *
+	 * Seventeen do. They are the permanent subject committees — health,
+	 * education, public works — and between them they cover the matters the
+	 * Parliament can legislate on, which is why almost every bill lands in one
+	 * of them. The other seven run the Parliament rather than a subject: its
+	 * rules, its accounts, its ethics, its own revenue measures, and the one
+	 * standing committee created for Marawi.
+	 *
+	 * The distinction is not in the registry this is built from, so it is
+	 * applied here from the Parliament's own published list.
+	 */
+	statutory: boolean
 	/** "Committee on Health" -> "Health", for anywhere the prefix is redundant. */
 	shortName: string
 	url: string
@@ -59,6 +73,34 @@ export type Committee = {
 	searchText: string
 }
 
+/**
+ * The seventeen committees the Rules name, by their slug in the registry.
+ *
+ * Written out rather than inferred. There is nothing in a committee's record
+ * that marks it, and the obvious guess — that the subject committees are the
+ * ones with a subject in the name — puts Ways and Means among them, which runs
+ * the Parliament's revenue measures and is not one of the seventeen.
+ */
+const STATUTORY = new Set([
+	'committee-on-finance-budget-and-management',
+	'committee-on-basic-higher-and-technical-education',
+	'committee-on-environmental-natural-resources-and-energy',
+	'committee-on-agriculture-fisheries-and-agrarian-reform',
+	'committee-on-local-government',
+	'committee-on-health',
+	'committee-on-social-services',
+	'committee-on-labor-and-employment',
+	'committee-on-trade-investment-and-tourism',
+	'committee-on-transportation-and-communication',
+	'committee-on-public-works-and-highways',
+	'committee-on-human-settlements-and-developments',
+	'committee-on-public-order-and-safety',
+	'committee-on-indigenous-peoples-and-affairs',
+	'committee-on-science-and-technology',
+	'bangsamoro-justice-system',
+	'committee-on-women-youth-children-and-persons-with-disabilities',
+])
+
 export type CommitteesDataset = {
 	committees: Committee[]
 	generatedAt: string
@@ -66,6 +108,8 @@ export type CommitteesDataset = {
 	reportsSource: string
 	stats: {
 		total: number
+		/** How many of them the Rules name themselves. Seventeen. */
+		statutory: number
 		seated: number
 		/** Roster members holding at least one committee seat. */
 		membersSeated: number
@@ -272,6 +316,7 @@ const committees: Committee[] = (file?.committees ?? [])
 		return {
 			slug,
 			name,
+			statutory: STATUTORY.has(slug),
 			shortName: name.replace(/^(Special )?Committee on (the )?/i, '').trim() || name,
 			url: toStringValue(raw.url),
 			jurisdiction: toStringValue(raw.jurisdiction),
@@ -316,6 +361,8 @@ export function getCommitteesDataset(): CommitteesDataset {
 			'https://parliament.bangsamoro.gov.ph/committee-reports/',
 		stats: {
 			total: committees.length,
+			/** The seventeen the Rules name. Asserted, not counted off a guess. */
+			statutory: committees.filter((committee) => committee.statutory).length,
 			seated: committees.reduce((total, committee) => total + committee.memberCount, 0),
 			membersSeated: seatedMembers.size,
 			referrals,

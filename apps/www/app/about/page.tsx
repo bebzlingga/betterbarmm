@@ -2,6 +2,7 @@ import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CtaAction, CtaPanel, Stagger, StaggerItem } from '@betterbarmm/editorial'
+// import { BarmmMap } from '../_components/barmm-map'
 import { Masthead, SectionHead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
 
@@ -12,7 +13,14 @@ export const metadata: Metadata = {
 }
 
 /**
- * Why the project exists. That is the whole page (user decision).
+ * Why the project exists, and what the region it is about actually is.
+ *
+ * The first was the whole page for a while, and the reasoning below still
+ * holds for everything that was taken out of it. The region itself is the one
+ * thing that earned its way back: a reader who has got as far as asking what
+ * this project is for does not necessarily know how big BARMM is, how many
+ * towns are in it, or that it is seven areas rather than five provinces. That
+ * is not a prospectus for the workspaces — it is the subject.
  *
  * It ran to four sections — the method in three diagrams, the workspaces as
  * cards, the audiences as four more diagrams — which is a prospectus rather
@@ -50,15 +58,13 @@ export default function AboutPage() {
 				label='About BetterBARMM'
 				lines={['Public records,', 'made readable.']}
 				muted={[1]}
+				size='display'
 				scrollTo='#why'
 				scrollLabel='Why it exists'
 				standfirst='BetterBARMM is an independent transparency project for the Bangsamoro. Nothing on it is new information — it is the region’s own public record, collected in one place, explained in plain language, and kept one click from the document it came from.'
 			/>
 
-			{/* No top padding: it opens straight off the masthead, which already ends
-			    in its own. A full step of section rhythm on top of that left the
-			    first heading a screen below the cue pointing at it. */}
-			<section id='why' className='bb-container scroll-mt-24 bb-section-bottom'>
+			<section id='why' className='bb-container scroll-mt-24 bb-section'>
 				<SectionHead
 					eyebrow='Why it exists'
 					title='What stands between a record'
@@ -97,6 +103,22 @@ export default function AboutPage() {
 					record in its own words, the original is still what settles the question — which is
 					why the original is always linked.
 				</p>
+			</section>
+
+			{/* ---- The region ---- */}
+			{/* Figures and outlines both come off the local government directory,
+			    which is the estate's only count of the region's own units. Nothing
+			    on this page restates a number it holds. */}
+			<section id='region' className='bb-container scroll-mt-24 bb-section-bottom'>
+				<SectionHead
+					eyebrow='The region'
+					title='Seven areas,'
+					titleMuted='one government.'
+					lead='The Bangsamoro Autonomous Region in Muslim Mindanao is five provinces, a city, and a Special Geographic Area of 63 barangays that voted to join it. They do not sit together: the region runs from the Lanao highlands to islands closer to Borneo than to Cotabato, and nearly a third of its people live in one province.'
+				/>
+
+				{/* Map hidden for now — restore with the import above.
+				<BarmmMap /> */}
 			</section>
 
 			<CtaPanel

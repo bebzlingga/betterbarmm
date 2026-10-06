@@ -23,7 +23,7 @@ import {
 } from '../../_components/lgu-parts'
 import { LEGAL_BASIS, LOCAL_CHARGES, SERVICES } from '@betterbarmm/lgu-data'
 import { provinceHistory, tookOffice, unitHistory } from '@betterbarmm/lgu-data/history'
-import { barangayOfficials, unitRosters } from '@betterbarmm/lgu-data/barangay-officials'
+import { barangayOfficials, rosterCoverage, unitRosters } from '@betterbarmm/lgu-data/barangay-officials'
 import { BarangayList } from '../../_components/barangay-list'
 import {
 	HeldOffice,
@@ -92,6 +92,7 @@ function opening(unit: LguUnit, province: LguProvince): string {
 
 function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) {
 	const change = growth(unit)
+	const roster = rosterCoverage([unit])
 
 	// Naming the area is only worth a row when it is a different place from the
 	// unit — Cotabato City is its own area, and "Area: Cotabato City" says
@@ -106,6 +107,7 @@ function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) 
 		['Classification', unitClass(unit)],
 		...(unit.alsoKnownAs ? ([['Also known as', unit.alsoKnownAs]] as [string, string][]) : []),
 		['Barangays', String(unit.barangays.length)],
+		['Captains in DILG’s directory', `${roster.listed} of ${roster.total}`],
 		['PSGC code', unit.psgc ?? 'Not yet assigned'],
 	]
 
@@ -457,11 +459,11 @@ function Officials({ unit, province }: { unit: LguUnit; province: LguProvince })
 			/>
 
 			{/* Which posts exist at each rung is set by law, not by the town, so it
-			    reads the same on all 108 of these pages. It lives on the workspace
-			    home now; what belongs here is the canvass above, and a way through
+			    reads the same on all 108 of these pages. It lives on How it works
+			    now; what belongs here is the canvass above, and a way through
 			    to the general answer. */}
 			<div className='mt-14 grid gap-6 border-t border-[var(--brass-line)] pt-6 sm:grid-cols-2 sm:gap-10'>
-				<Link href='/#offices' className='group flex items-start justify-between gap-4'>
+				<Link href='/how-it-works#offices' className='group flex items-start justify-between gap-4'>
 					<span>
 						<span className='block text-[15px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
 							The offices, and who fills them
@@ -478,7 +480,7 @@ function Officials({ unit, province }: { unit: LguUnit; province: LguProvince })
 					/>
 				</Link>
 
-				<Link href='/#where-to-look' className='group flex items-start justify-between gap-4'>
+				<Link href='/how-it-works#where-to-look' className='group flex items-start justify-between gap-4'>
 					<span>
 						<span className='block text-[15px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
 							Where to find the current names

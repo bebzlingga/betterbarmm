@@ -189,7 +189,7 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 	return (
 		// Less air above the search than below it — see the note on the same
 		// section in `record-browser`.
-		<section className='bb-container pb-12 pt-6 sm:pt-12'>
+		<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 			{/* Laid out like the registry, and for the same reasons — see the notes
 			    on the same grid in `record-browser`. The facets stand open in a
 			    column of their own, the roster reads beside them, and the button by

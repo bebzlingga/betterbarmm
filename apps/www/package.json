@@ -12,6 +12,7 @@
 		"@betterbarmm/editorial": "workspace:*",
 		"@betterbarmm/lgu-data": "workspace:*",
 		"@betterbarmm/primer-data": "workspace:*",
+		"@betterbarmm/travel-data": "workspace:*",
 		"@betterbarmm/ui": "workspace:*",
 		"@phosphor-icons/react": "^2.1.10",
 		"@vercel/analytics": "^2.0.1",
@@ -19,6 +20,10 @@
 		"motion": "^13.1.1",
 		"next": "16.2.6",
 		"react": "19.2.4",
-		"react-dom": "19.2.4"
+		"react-dom": "19.2.4",
+		"three": "^0.186.1"
+	},
+	"devDependencies": {
+		"@types/three": "^0.186.0"
 	}
 }

@@ -84,7 +84,7 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 	const exOfficio = committee.seats.filter((seat) => seat.role === 'Ex-officio')
 
 	return (
-		<section className='bb-container bb-section'>
+		<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 			{/* Two columns: what it is on the left, what it holds on the right. */}
 			{/* The single column is stated, not implicit — an implicit `auto` track
 			    sizes to its contents' min-content and cannot shrink to a phone. See
@@ -99,6 +99,11 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 						</h1>
 
 						<div className='mt-5 flex flex-wrap gap-1.5'>
+							{/* Same mark the index carries, so the two pages agree about what
+							    kind of committee this is. */}
+							{committee.statutory ? (
+								<span className='badge badge-plain badge-committee'>Statutory</span>
+							) : null}
 							<span className='badge badge-plain badge-idle'>{committee.memberCount} seated</span>
 							{committee.reports.length > 0 ? (
 								<span className='badge badge-plain badge-done'>
@@ -115,6 +120,16 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 								<p className='mt-3 bb-body text-[var(--ink-2)]'>
 									{committee.jurisdiction}
 								</p>
+								{/* What the badge above means, said once, where the thing it
+								    qualifies is on screen. A reader who has not seen the index
+								    has no other way to find out. */}
+								{committee.statutory ? (
+									<p className='mt-3 text-xs leading-5 text-[var(--ink-mute)]'>
+										One of the 17 statutory committees — the permanent committees the
+										Rules of the Parliament name themselves. What a measure is about
+										decides which of them it goes to.
+									</p>
+								) : null}
 							</div>
 						) : null}
 

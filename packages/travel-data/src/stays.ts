@@ -100,7 +100,7 @@ export const areaLodging: AreaLodging[] = [
 				note: 'One of the city’s longest-running hotels, built around a garden. The mid-range standby for visiting delegations, and the name most often given when you ask a resident where to put someone up.',
 			},
 			{
-				name: 'Em Manuel Suites',
+				name: 'EM Manor Hotel and Convention Center',
 				town: 'Cotabato City',
 				kind: 'hotel',
 				note: 'An established business hotel in the city, serving the government and contractor traffic the seat of the regional administration generates.',

@@ -1,242 +1,261 @@
 'use client'
 
-import { motion, useReducedMotion, useScroll, useTransform } from 'motion/react'
-import { useRef } from 'react'
+import { motion, useReducedMotion } from 'motion/react'
 import { EASE } from '@betterbarmm/editorial'
 
 /**
- * The masthead artwork: scattered sheets, one record, and the figures it turns
- * into.
+ * The masthead background: scattered public data flowing into one record.
  *
- * It replaces three photographs. The photographs were saying "this is the
- * place", which is the right thing for Discover to say and the wrong thing at
- * the front of a records project — a mosque and a sandbar promise a travel
- * guide. This draws what the headline claims instead, in three layers that read
- * left to right and back to front:
+ * Round the band, kinds of source — a table, a chart, a map, a database, a
+ * ballot, a budget — drawn as bare line glyphs, not cards: they are what the
+ * record is made of, not more records. From each a faint line curves in to the
+ * hub, and small marks travel along it without stopping. The hub is the site:
+ * the one place they all land.
  *
- *   · behind, a fan of loose sheets — the record as it is published, across
- *     six archives, in no order
- *   · in the middle, one document, ruled and headed, with a single line picked
- *     out in the accent — the record found
- *   · in front, a small plate of figures rising off it — the record made
- *     usable, which is the sentence beside it
+ * It is the band's background rather than a column, so it runs nearly edge to
+ * edge. The hub sits right of the headline; the sources that fall behind the
+ * type are drawn dimmer so the words stay on top. The 3% inset keeps it off
+ * the band's edges, and the hub carries a glow instead of a border.
  *
- * Line art rather than a photograph of paper: this is a diagram of what the
- * site does, and a diagram that photographs itself is just a picture of a desk.
- * The amber is the ornament and the furniture; the accent appears exactly
- * twice, on the line that has been found and the bar it becomes.
+ * The travel is SMIL (`animateMotion`) rather than JS: it rides the paths
+ * themselves, costs nothing per frame, and keeps going without a render loop.
+ * Under reduced motion the lines stay and nothing travels on them.
  *
- * `aria-hidden` throughout. The headline beside it already says all of this.
+ * `aria-hidden` throughout. The headline already says all of this.
  */
 
-/** Ruled lines on a sheet: [y, from, to]. */
-const SHEET_RULES: [number, number, number][] = [
-  [64, 34, 200],
-  [88, 34, 176],
-  [112, 34, 200],
-  [136, 34, 152],
+const W = 1400
+const H = 620
+const CX = 1040
+const CY = 310
+/** Where a line meets the hub. */
+const HUB_R = 84
+
+/** Line glyphs, each drawn in a 48-unit box centred on the origin. */
+const GLYPHS = {
+  table: (
+    <>
+      <rect x={-20} y={-16} width={40} height={32} rx={3} />
+      <path d='M-20 -5 H20 M-20 6 H20 M-6 -16 V16' />
+    </>
+  ),
+  chart: (
+    <>
+      <path d='M-20 18 H20' />
+      <path d='M-13 18 V4 M-3 18 V-6 M7 18 V-1 M17 18 V-14' strokeWidth={4} />
+    </>
+  ),
+  map: (
+    <>
+      <path d='M0 20 C-12 6 -14 -2 -14 -6 A14 14 0 0 1 14 -6 C14 -2 12 6 0 20 Z' />
+      <circle cx={0} cy={-6} r={5} />
+    </>
+  ),
+  database: (
+    <>
+      <ellipse cx={0} cy={-13} rx={16} ry={6} />
+      <path d='M-16 -13 V13 A16 6 0 0 0 16 13 V-13 M-16 0 A16 6 0 0 0 16 0' />
+    </>
+  ),
+  ballot: (
+    <>
+      <rect x={-16} y={-18} width={32} height={36} rx={3} />
+      <path d='M-8 0 L-2 6 L9 -7' />
+    </>
+  ),
+  budget: (
+    <>
+      <circle r={18} />
+      <path d='M-5 10 V-9 H2 A5 5 0 0 1 2 1 H-5 M-9 -6 H9 M-9 -2 H9' />
+    </>
+  ),
+} as const
+
+/** Each source: its glyph, where it sits, and whether it falls behind the type. */
+const SOURCES: { glyph: keyof typeof GLYPHS; x: number; y: number; dim?: boolean }[] = [
+  { glyph: 'database', x: 90, y: 60, dim: true },
+  { glyph: 'chart', x: 70, y: 570, dim: true },
+  { glyph: 'map', x: 760, y: 80 },
+  { glyph: 'ballot', x: 780, y: 545 },
+  { glyph: 'chart', x: 1330, y: 75 },
+  { glyph: 'table', x: 1355, y: 320 },
+  { glyph: 'budget', x: 1320, y: 555 },
 ]
 
-/** The body of the record: [y, from, to]. */
-const DOC_RULES: [number, number, number][] = [
-  [214, 184, 436],
-  [240, 184, 418],
-  [266, 184, 436],
-  [318, 184, 436],
-  [344, 184, 424],
-  [370, 184, 352],
-  [428, 184, 436],
-  [454, 184, 406],
-  [480, 184, 330],
-]
+/** One decimal: server and browser disagree in the last digits of trig. */
+const r = (n: number) => Math.round(n * 10) / 10
 
-/** The figures: [x, top]. Each bar is 30 wide and stands on the baseline. */
-const BARS: [number, number][] = [
-  [76, 598],
-  [118, 570],
-  [160, 542],
-  [202, 508],
-]
+/** A curve from a source to the hub's rim, bowing so the lines don't read as spokes. */
+const route = (sx: number, sy: number, i: number) => {
+  const a = Math.atan2(sy - CY, sx - CX)
+  const tx = CX + Math.cos(a) * HUB_R
+  const ty = CY + Math.sin(a) * HUB_R
+  const bow = i % 2 ? 60 : -60
+  const mx = (sx + tx) / 2 - Math.sin(a) * bow
+  const my = (sy + ty) / 2 + Math.cos(a) * bow
+  return `M${sx} ${sy} Q${r(mx)} ${r(my)} ${r(tx)} ${r(ty)}`
+}
 
-const BASELINE = 632
+/** Seconds a mark takes from its source to the hub, before distance is counted. */
+const TRAVEL = 3.6
+/** Marks in flight on each line at once. */
+const PER_LINE = 3
 
 export function HeroGraphic({ className = '' }: { className?: string }) {
-  const ref = useRef<HTMLDivElement>(null)
   const reduced = useReducedMotion()
-  const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] })
-
-  // Unequal on purpose. Matched speeds read as one flat plane sliding; it is
-  // the difference between them that reads as depth.
-  //
-  // The ratios are the old ones, the distances about two thirds of them. The
-  // masthead sits on the section rhythm now and is a good deal shorter than it
-  // was, so the same travel is covered in less scroll — and a plate crossing
-  // 116px inside a band this tall stops reading as depth and starts reading as
-  // a layer coming loose.
-  const sheets = useTransform(scrollYProgress, [0, 1], [18, -18])
-  const doc = useTransform(scrollYProgress, [0, 1], [-24, 24])
-  const plate = useTransform(scrollYProgress, [0, 1], [40, -40])
-
-  /** A stroke that travels rather than appears. */
-  const draw = (delay: number, duration = 0.7) => ({
-    initial: { pathLength: 0, opacity: 0 },
-    animate: { pathLength: 1, opacity: 1 },
-    transition: {
-      pathLength: { duration, delay, ease: EASE },
-      opacity: { duration: 0.2, delay },
-    },
-  })
 
   return (
-    <div ref={ref} aria-hidden='true' className={`hero-graphic relative aspect-[5/6] w-full ${className}`}>
-      {/* The viewBox is shifted, not the geometry. Content spans x 40–536 of a
-          600-wide box, so a plain `0 0 600 720` left a hundred pixels of dead
-          air down the right-hand edge and the whole composition read as
-          drifting away from the page edge it should be anchored to. Moving the
-          window instead keeps every coordinate below readable as itself. */}
-      <svg viewBox='-64 0 600 720' className='size-full overflow-visible'>
-        {/* ---- The record as published: loose, and more than one ---- */}
-        <motion.g style={reduced ? undefined : { y: sheets }}>
-          {[
-            { x: 196, y: 22, rotate: -8 },
-            { x: 302, y: 54, rotate: 5 },
-          ].map((sheet, index) => (
-            <motion.g
-              key={index}
-              transform={`translate(${sheet.x} ${sheet.y}) rotate(${sheet.rotate} 117 190)`}
-              initial={{ opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.08 + index * 0.09, ease: EASE }}
-            >
-              <path
-                d='M0 0 H234 V380 H0 Z'
-                fill='var(--hg-panel)'
-                stroke='var(--hg-edge)'
-                strokeWidth={1.5}
-              />
-              <g stroke='var(--ink-3)' strokeOpacity={0.3} strokeWidth={1.5} strokeLinecap='round'>
-                {SHEET_RULES.map(([y, from, to]) => (
-                  <path key={y} d={`M${from} ${y} H${to}`} />
-                ))}
-              </g>
-            </motion.g>
-          ))}
-        </motion.g>
+    <div
+      aria-hidden='true'
+      className={`hero-graphic pointer-events-none ${className}`}
+    >
+      <svg viewBox={`0 0 ${W} ${H}`} className='size-full overflow-visible'>
+        <defs>
+          <radialGradient id='hg-glow'>
+            <stop offset='0%' stopColor='var(--brass)' stopOpacity={0.26} />
+            <stop offset='100%' stopColor='var(--brass)' stopOpacity={0} />
+          </radialGradient>
+        </defs>
 
-        {/* ---- The record found ---- */}
-        <motion.g style={reduced ? undefined : { y: doc }}>
-          <motion.path
-            d='M150 110 H470 V560 H150 Z'
+        {/* ---- The glow the hub sits in ---- */}
+        <circle cx={CX} cy={CY} r={300} fill='url(#hg-glow)' />
+
+        {/* ---- The lines in ---- */}
+        <g fill='none' stroke='var(--brass)' strokeWidth={1.4} strokeDasharray='2 8' strokeLinecap='round'>
+          {SOURCES.map((s, i) => (
+            <motion.path
+              key={i}
+              id={`hg-route-${i}`}
+              d={route(s.x, s.y, i)}
+              strokeOpacity={s.dim ? 0.18 : 0.35}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.3 + i * 0.06, ease: EASE }}
+            />
+          ))}
+        </g>
+
+        {/* ---- The sources ---- */}
+        {SOURCES.map((s, i) => (
+          <motion.g
+            key={i}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.08 + i * 0.06, ease: EASE }}
+          >
+            <g
+              transform={`translate(${s.x} ${s.y}) scale(1.6)`}
+              fill='none'
+              stroke='var(--ink-3)'
+              strokeOpacity={s.dim ? 0.3 : 0.75}
+              strokeWidth={1.6}
+              strokeLinecap='round'
+              strokeLinejoin='round'
+            >
+              {GLYPHS[s.glyph]}
+            </g>
+          </motion.g>
+        ))}
+
+        {/* ---- Marks in flight ---- */}
+        {reduced
+          ? null
+          : SOURCES.flatMap((s, i) =>
+              Array.from({ length: PER_LINE }, (_, k) => {
+                // Longer lines take longer, so the marks keep one pace.
+                const dur = r(TRAVEL * (Math.hypot(s.x - CX, s.y - CY) / 420))
+                const begin = `${r(1.2 + i * 0.4 + (k * dur) / PER_LINE)}s`
+                // Mixed shapes: what arrives is not all one kind of thing.
+                const mark =
+                  (i + k) % 3 === 0 ? (
+                    <circle r={5} />
+                  ) : (i + k) % 3 === 1 ? (
+                    <rect x={-4.5} y={-4.5} width={9} height={9} rx={1.5} />
+                  ) : (
+                    <path d='M0 -6 L6 0 L0 6 L-6 0 Z' />
+                  )
+                const peak = s.dim ? 0.45 : 0.9
+                return (
+                  <g key={`${i}-${k}`} opacity={0} fill='var(--brass)'>
+                    {mark}
+                    <animateMotion
+                      dur={`${dur}s`}
+                      begin={begin}
+                      repeatCount='indefinite'
+                      calcMode='spline'
+                      keyTimes='0;1'
+                      keyPoints='0;1'
+                      keySplines='0.45 0 0.55 1'
+                    >
+                      <mpath href={`#hg-route-${i}`} />
+                    </animateMotion>
+                    <animate
+                      attributeName='opacity'
+                      dur={`${dur}s`}
+                      begin={begin}
+                      repeatCount='indefinite'
+                      values={`0;${peak};${peak};0`}
+                      keyTimes='0;0.12;0.88;1'
+                    />
+                  </g>
+                )
+              }),
+            )}
+
+        {/* ---- The hub they land in ---- */}
+        <motion.g
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={{ opacity: 1, scale: 1 }}
+          style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
+          transition={{ duration: 0.7, delay: 0.2, ease: EASE }}
+        >
+          {/* A slow ring off the hub: something is always arriving. */}
+          {reduced ? null : (
+            <motion.circle
+              cx={CX}
+              cy={CY}
+              r={HUB_R}
+              fill='none'
+              stroke='var(--brass)'
+              strokeWidth={1.2}
+              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
+              initial={{ scale: 1, opacity: 0.45 }}
+              animate={{ scale: 1.7, opacity: 0 }}
+              transition={{ duration: 2.8, repeat: Infinity, ease: 'easeOut', delay: 1.4 }}
+            />
+          )}
+
+          <circle
+            cx={CX}
+            cy={CY}
+            r={HUB_R}
             fill='var(--hg-doc)'
-            stroke='var(--hg-edge)'
-            strokeOpacity={1}
-            strokeWidth={1.8}
-            initial={{ opacity: 0, clipPath: 'inset(100% 0 0 0)' }}
-            animate={{ opacity: 1, clipPath: 'inset(0% 0 0 0)' }}
-            transition={{ duration: 0.7, delay: 0.26, ease: EASE }}
+            fillOpacity={0.7}
+            stroke='var(--brass)'
+            strokeOpacity={0.45}
+            strokeWidth={1.2}
           />
 
-          <g fill='none' strokeLinecap='round'>
-            {/* The letterhead: a brass rule the width of the page, and the
-                site's own diamond where a seal would sit. */}
-            <motion.path
-              d='M184 150 H436'
-              stroke='var(--brass)'
-              strokeWidth={2.5}
-              {...draw(0.44, 0.55)}
-            />
-            <motion.path
-              d='M184 182 H436'
-              stroke='var(--brass)'
-              strokeOpacity={0.5}
-              strokeWidth={1.2}
-              {...draw(0.52, 0.55)}
-            />
-
-            <g stroke='var(--ink-3)' strokeOpacity={0.38} strokeWidth={2}>
-              {DOC_RULES.map(([y, from, to], index) => (
-                <motion.path
-                  key={y}
-                  d={`M${from} ${y} H${to}`}
-                  {...draw(0.58 + index * 0.035, 0.4)}
-                />
-              ))}
+          {/* The record: a few ruled lines, one of them found. */}
+          <g transform={`translate(${CX} ${CY}) scale(1.4)`}>
+            <g fill='none' strokeLinecap='round' strokeWidth={2}>
+              <path d='M-24 -18 H24' stroke='var(--brass)' strokeWidth={2.5} />
+              <path d='M-24 -6 H18' stroke='var(--ink-3)' strokeOpacity={0.4} />
+              <path d='M-24 18 H12' stroke='var(--ink-3)' strokeOpacity={0.4} />
             </g>
-
-            {/* The line that was being looked for. It is the only thing in the
-                picture that is filled rather than drawn — found, not read. */}
-            <motion.path
-              d='M184 285 H372 V301 H184 Z'
+            <motion.rect
+              x={-24}
+              y={2}
+              width={40}
+              height={9}
+              rx={1.5}
               fill='var(--hg-mark)'
-              stroke='none'
-              initial={{ scaleX: 0, opacity: 0 }}
-              animate={{ scaleX: 1, opacity: 1 }}
+              initial={{ scaleX: 0 }}
+              animate={{ scaleX: 1 }}
               style={{ transformBox: 'fill-box', transformOrigin: 'left center' }}
-              transition={{ duration: 0.55, delay: 0.98, ease: EASE }}
-            />
-
-            <motion.path
-              d='M184 512 H436'
-              stroke='var(--brass)'
-              strokeOpacity={0.5}
-              strokeWidth={1.2}
-              {...draw(0.86, 0.45)}
-            />
-            <motion.path
-              d='M192 528 L204 540 L192 552 L180 540 Z'
-              fill='var(--brass)'
-              stroke='none'
-              initial={{ scale: 0, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              style={{ transformBox: 'fill-box', transformOrigin: 'center' }}
-              transition={{ duration: 0.4, delay: 0.94, ease: EASE }}
-            />
-            <motion.path
-              d='M220 540 H320'
-              stroke='var(--brass)'
-              strokeOpacity={0.6}
-              strokeWidth={2}
-              {...draw(0.99, 0.4)}
+              transition={{ duration: 0.55, delay: 0.9, ease: EASE }}
             />
           </g>
-        </motion.g>
-
-        {/* ---- The record made usable ---- */}
-        <motion.g style={reduced ? undefined : { y: plate }}>
-          <motion.g
-            initial={{ opacity: 0, y: 26 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.7, ease: EASE }}
-          >
-            <path d='M40 466 H288 V672 H40 Z' fill='var(--hg-panel)' stroke='none' />
-            <path d='M40 466 H288' stroke='var(--brass)' strokeWidth={2} />
-
-            <g fill='none' stroke='var(--brass)' strokeOpacity={0.55} strokeWidth={2}>
-              <motion.path d='M64 498 H136' {...draw(0.84, 0.35)} />
-            </g>
-
-            {BARS.map(([x, top], index) => (
-              <motion.path
-                key={x}
-                d={`M${x} ${top} H${x + 30} V${BASELINE} H${x} Z`}
-                fill={index === BARS.length - 1 ? 'var(--hg-mark)' : 'var(--brass)'}
-                fillOpacity={index === BARS.length - 1 ? 1 : 0.42}
-                initial={{ scaleY: 0 }}
-                animate={{ scaleY: 1 }}
-                style={{ transformBox: 'fill-box', transformOrigin: 'bottom center' }}
-                transition={{ duration: 0.55, delay: 1.06 + index * 0.07, ease: EASE }}
-              />
-            ))}
-
-            <motion.path
-              d={`M56 ${BASELINE} H272`}
-              fill='none'
-              stroke='var(--ink)'
-              strokeOpacity={0.5}
-              strokeWidth={2}
-              {...draw(0.84, 0.45)}
-            />
-          </motion.g>
         </motion.g>
       </svg>
     </div>

@@ -10,7 +10,7 @@ are Parliament's to serve, not ours to vendor); the OCR text is written to
 whatever --out names, and is working material, not a dataset. Nothing here
 writes to readings.json — a reading is written by hand from this text.
 
-    python3 datasets/bills/scripts/ocr_measure.py --numbers 32,98 --out DIR [--jobs 4]
+    python3 datasets/bills/scripts/ocr_measure.py --numbers 32,98 --out DIR [--jobs 4] [--kind resolutions]
 """
 from __future__ import annotations
 import argparse, json, subprocess, sys, tempfile, urllib.error, urllib.parse, urllib.request
@@ -18,7 +18,12 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CACHE = ROOT / ".pdf-cache" / "bills"
+# Adopted resolutions are filed the same way; their manifest is built by
+# fetch_measure_pdfs.py --kind resolutions.
+KINDS = {
+    "bills": ("bills", "bills", "BILL"),
+    "resolutions": ("resolutions/adopted", "resolutions", "RESOLUTION"),
+}
 HEADERS = {"User-Agent": "BetterBARMM-registry/1.0 (+https://betterbarmm.com) python-urllib"}
 
 
@@ -48,7 +53,14 @@ def download(url: str, dest: Path, tries: int = 3) -> bool:
 
 
 def ocr(pdf: Path) -> str:
-    """Rasterise at 300dpi greyscale, then read each page with tesseract."""
+    """Rasterise at 300dpi greyscale, then read each page with tesseract.
+
+    A PDF that does carry a text layer is read from it instead: it is exact,
+    and OCR can only be worse."""
+    layer = subprocess.run(["pdftotext", "-layout", str(pdf), "-"], capture_output=True, text=True).stdout
+    if len(layer.strip()) > 500:
+        pages = layer.split("\f")
+        return "\n".join(f"\n===== PAGE {i} =====\n{t.strip()}" for i, t in enumerate(pages, 1) if t.strip())
     out: list[str] = []
     with tempfile.TemporaryDirectory() as tmp:
         subprocess.run(
@@ -69,19 +81,27 @@ def main() -> int:
     ap.add_argument("--numbers", required=True, help="comma-separated bill numbers")
     ap.add_argument("--out", required=True, type=Path)
     ap.add_argument("--jobs", type=int, default=4)
+    ap.add_argument("--kind", choices=list(KINDS), default="bills")
     args = ap.parse_args()
+    registry_dir, cache_dir, label = KINDS[args.kind]
+    CACHE = ROOT / ".pdf-cache" / cache_dir
 
-    subjects = {
-        int(b["number"]): b
-        for b in json.loads((ROOT / "bill-subjects.json").read_text())["bills"]
-    }
+    # The PDF manifest covers every measure whose page has been walked;
+    # bill-subjects.json only the bills already classified. Either gives a URL.
+    manifest = json.loads((ROOT / "bangsamoro_registry" / registry_dir / "pdf_manifest.json").read_text())
+    subjects = {int(n): m for n, m in manifest["measures"].items() if m.get("pdf")}
+    if args.kind == "bills":
+        subjects.update({
+            int(b["number"]): b
+            for b in json.loads((ROOT / "bill-subjects.json").read_text())["bills"]
+        })
     args.out.mkdir(parents=True, exist_ok=True)
     CACHE.mkdir(parents=True, exist_ok=True)
 
     def one(number: int) -> str:
         entry = subjects.get(number)
         if not entry:
-            return f"{number}: not in bill-subjects.json"
+            return f"{number}: no PDF in the manifest"
         target = args.out / f"{number}.txt"
         if target.exists() and target.stat().st_size > 500:
             return f"{number}: already read"
@@ -92,8 +112,8 @@ def main() -> int:
             text = ocr(pdf)
         except subprocess.CalledProcessError as exc:
             return f"{number}: rasterise failed ({exc})"
-        target.write_text(f"BILL {number}\nSOURCE {entry['pdf']}\n{text}\n")
-        return f"{number}: {len(text):,} chars from {entry['pages']} pages"
+        target.write_text(f"{label} {number}\nSOURCE {entry['pdf']}\n{text}\n")
+        return f"{number}: {len(text):,} chars from {entry.get('pages', '?')} pages"
 
     numbers = [int(n) for n in args.numbers.split(",") if n.strip()]
     with ThreadPoolExecutor(max_workers=args.jobs) as pool:

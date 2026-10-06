@@ -10,7 +10,10 @@ type PageHeaderProps = {
 	 * on what matters before reading the rest.
 	 */
 	titleMuted?: string
-	description: string
+	/** Left off where the headline already says it. The paragraph and the space
+	    it sits in both go, rather than the header keeping a gap where a
+	    description used to be. */
+	description?: string
 	/**
 	 * Headline figures, set inside the masthead under the sentence that
 	 * introduces them rather than in a band of their own below it. A page whose
@@ -97,7 +100,7 @@ export function PageHeader({
 			size === 'compact'
 				? 'bb-display-md'
 				: size === 'hero'
-					? 'bb-display-lg reg-hero-title'
+					? 'bb-display reg-hero-title'
 					: 'bb-display'
 
 		return (
@@ -127,7 +130,7 @@ export function PageHeader({
 				    on the pages that carry them — the block is taller, and a taller
 				    block in the same margins is tighter, not roomier. */}
 				<div
-					className={`bb-container relative w-full pb-20 pt-20 lg:pb-32 lg:pt-32${
+					className={`bb-container relative w-full py-[clamp(3.75rem,7vw,6.5rem)]${
 						size === 'hero' ? ' my-auto' : ''
 					}${centerd ? ' text-center' : ''}`}
 				>
@@ -144,13 +147,15 @@ export function PageHeader({
 						lineClassName={[undefined, 'bb-mute']}
 					/>
 
-					<Rise delay={0.32} distance={16}>
-						<p
-							className={`${column}${proseWidth}mt-8 text-[15px] leading-[1.7] text-[var(--ink-2)]`}
-						>
-							{description}
-						</p>
-					</Rise>
+					{description ? (
+						<Rise delay={0.32} distance={16}>
+							<p
+								className={`${column}${proseWidth}mt-8 text-[15px] leading-[1.7] text-[var(--ink-2)]`}
+							>
+								{description}
+							</p>
+						</Rise>
+					) : null}
 
 					{/* On the brass rule the masthead already ends on, rather than in
 					    a band under the panel. The figures are the page's opening claim
@@ -182,7 +187,7 @@ export function PageHeader({
 	// furniture in the way of the thing the reader came for.
 	return (
 		<section className='bb-crimson bb-lattice relative isolate overflow-hidden'>
-			<div className='bb-container relative pb-12 pt-12 lg:pb-16 lg:pt-20'>
+			<div className='bb-container relative py-[clamp(3.75rem,7vw,6.5rem)]'>
 				<Rise distance={12}>
 					<p className='bb-label'>{eyebrow}</p>
 				</Rise>
@@ -194,9 +199,11 @@ export function PageHeader({
 				/>
 
 				<Rise delay={0.25} distance={14}>
-					<p className='mt-6 max-w-2xl text-[15px] leading-[1.7] text-[var(--ink-2)]'>
-						{description}
-					</p>
+					{description ? (
+						<p className='mt-6 max-w-2xl text-[15px] leading-[1.7] text-[var(--ink-2)]'>
+							{description}
+						</p>
+					) : null}
 					{meta ? <p className='meta-sm mt-6'>{meta}</p> : null}
 				</Rise>
 			</div>

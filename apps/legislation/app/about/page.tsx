@@ -224,7 +224,7 @@ export default function AboutPage() {
 			    belong under the sentence that claims it. What the cards carried
 			    besides the number, the inventory below already carried better: each
 			    archive with its coverage, its known gaps and its total. */}
-			<section className='bb-container bb-section'>
+			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 				<SectionHead
 					index='01'
 					eyebrow='Process'
@@ -283,7 +283,7 @@ export default function AboutPage() {
 
 			<OkirRule className='mx-auto max-w-[88rem] opacity-70' />
 
-			<section className='bb-container bb-section'>
+			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 				<SectionHead
 					index='02'
 					eyebrow='Inventory'
@@ -338,7 +338,7 @@ export default function AboutPage() {
 
 			<OkirRule className='mx-auto max-w-[88rem] opacity-70' />
 
-			<section className='bb-container bb-section'>
+			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 				<SectionHead
 					index='03'
 					eyebrow='Sector glossary'

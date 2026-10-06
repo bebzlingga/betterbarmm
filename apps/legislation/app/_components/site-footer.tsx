@@ -38,23 +38,12 @@ export function SiteFooter() {
 							label: 'How a bill becomes law',
 						},
 						{ href: 'https://legislation.betterbarmm.com/about', label: 'Data' },
-					],
-				},
-				{
-					title: 'Sources',
-					links: [
 						{ href: 'https://parliament.bangsamoro.gov.ph/', label: 'Bangsamoro Parliament' },
 						{ href: 'https://officialgazette.bangsamoro.gov.ph/', label: 'BARMM Official Gazette' },
 					],
 				},
 			]}
-			blurb={
-				<>
-					<span className='font-semibold text-[var(--ink)]'>AI-assisted analysis.</span> Summaries,
-					classifications, and interface copy may be assisted by AI with human review. Verify legal
-					details against the official Parliament or Gazette source before citation.
-				</>
-			}
+			blurb='The bills and resolutions before the Bangsamoro Parliament, where each one stands, and the members and committees behind it. Summaries are AI-assisted with human review, so verify against the official text before citing.'
 			note='A public record of the Bangsamoro Parliament'
 		/>
 	)

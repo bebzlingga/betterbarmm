@@ -1,4 +1,4 @@
-import { CtaPanel, SiteFooter } from '@betterbarmm/editorial'
+import { CtaPanel, SiteFooter, UtilityBar } from '@betterbarmm/editorial'
 import { Suspense } from 'react'
 import { FISCAL_YEARS, LATEST_YEAR, budgetFor, sectors } from '@betterbarmm/budget-data'
 import { FooterYear } from './footer-year'
@@ -37,6 +37,13 @@ export function Shell({ children }: { children: React.ReactNode }) {
 				    `null` rather than a barless copy of the nav: the fallback is only
 				    ever seen on that one prerendered page, and a nav that renders twice
 				    in two shapes is worse than one that arrives a frame late. */}
+				{/* Above the boundary, not inside it. The strip reads no query
+				    string, so there is no reason for it to wait on the one thing
+				    here that does — inside the `Suspense` it prerendered as nothing
+				    and arrived a frame late with the nav, which on this workspace
+				    alone left the top of the page empty on first paint. */}
+				<UtilityBar base='https://betterbarmm.com' current='budget' />
+
 				<Suspense fallback={null}>
 					<SiteNav />
 				</Suspense>
@@ -69,17 +76,8 @@ export function Shell({ children }: { children: React.ReactNode }) {
 							label: sector.name,
 						})),
 					},
-					{
-						title: 'Workspaces',
-						links: [
-							{ href: 'https://election.betterbarmm.com', label: 'Election' },
-							{ href: 'https://legislation.betterbarmm.com', label: 'Legislation' },
-							{ href: 'https://lgu.betterbarmm.com', label: 'Local government' },
-							{ href: 'https://betterbarmm.com/discover', label: 'Discover BARMM' },
-						],
-					},
 				]}
-				blurb='BetterBARMM is an independent effort to put the Bangsamoro public record where anyone can read it — the measures Parliament passes, the seats it was elected to, the towns the region is made of, and this: what each ministry was given, what it is meant to do with it, and what is being built. Read it, question it, and trace it back to the Act it came from.'
+				blurb='The enacted Bangsamoro budget, ministry by ministry: what each office was given, what it is meant to do with it, and what is being built. Trace every figure back to the Act it came from.'
 				/* Both years' titles go down, and the footer picks the one the URL is
 				   showing. The fallback is the latest year, which is what a page with
 				   no `?fy=` is showing anyway. */

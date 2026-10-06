@@ -98,9 +98,9 @@ export default function TheJobPage() {
 		<ElectionShell>
 			<Masthead
 				label='What the job is'
-				lines={['You are electing', 'a legislator.']}
+				lines={['You elected', 'a legislator.']}
 				muted={[1]}
-				standfirst={`On ${meta.electionDay} the region fills ${stats.totalSeats} seats. This is the job in one of them: the work itself, where the work happens, what a member owes the people who elected them, and what the office does not carry — each point as Parliament's own rulebook and the Organic Law put it.`}
+				standfirst={`On ${meta.electionDay} the region filled ${stats.totalSeats} seats. This is the job in one of them: the work itself, where the work happens, what a member owes the people who elected them, and what the office does not carry — each point as Parliament's own rulebook and the Organic Law put it.`}
 			/>
 
 			{/* ---- The work ---- */}
@@ -161,7 +161,7 @@ export default function TheJobPage() {
 			</section>
 
 			{/* ---- Where the work happens ---- */}
-			<section className='bb-container pt-20 lg:pt-32'>
+			<section className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
 				<SectionHead
 					index='02'
 					eyebrow='Where the work happens'
@@ -209,7 +209,7 @@ export default function TheJobPage() {
 			</section>
 
 			{/* ---- What they owe you ---- */}
-			<section className='bb-container pt-20 lg:pt-32'>
+			<section className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
 				<SectionHead
 					index='03'
 					eyebrow='What they owe you'
@@ -259,7 +259,7 @@ export default function TheJobPage() {
 			</section>
 
 			{/* ---- What they may not do ---- */}
-			<section className='bb-container pt-20 lg:pt-32'>
+			<section className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
 				<SectionHead
 					index='04'
 					eyebrow='What the seat does not carry'
@@ -304,7 +304,7 @@ export default function TheJobPage() {
 			</section>
 
 			{/* ---- The closing note, on the section above ---- */}
-			<section className='bb-container section-band-bottom pt-20 lg:pt-32'>
+			<section className='bb-container section-band-bottom pt-[clamp(3.75rem,7vw,6.5rem)]'>
 				<Rise delay={0.1} distance={12}>
 					{/* The note on one side of the rule, the ways on at the other. They
 					    answer different questions — where this came from, and where to go

@@ -20,7 +20,7 @@ export default function RoutesPage() {
 				breadcrumb={<TravelBreadcrumb>Routes</TravelBreadcrumb>}
 				kicker={`${itineraries.length} trips`}
 				name='Routes'
-				note='Given a week, where do you go? Each of these is built from the transport that exists rather than from what would be nice — which is also why there is no single route covering the whole region. Tawi-Tawi and Lanao del Sur are reached through different cities on different islands; stringing them together buys you three flights and two days of transit.'
+				note='Given a week, where do you go? Each route uses transport that actually exists, so none covers the whole region: Tawi-Tawi and Lanao del Sur are reached through different cities on different islands.'
 			/>
 
 			{itineraries.map((route, index) => {

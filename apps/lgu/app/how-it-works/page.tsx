@@ -4,6 +4,7 @@ import { OkirRule, Rise, SectionHead } from '@betterbarmm/editorial'
 import { SERVICES, formatNumber, lguData, lguReferences } from '@betterbarmm/lgu-data'
 import { LguBreadcrumb, LguMasthead } from '../_components/lgu-parts'
 import { LguTabs } from '../_components/lgu-tabs'
+import { Ladder, Lookups, Offices, TwoBallots } from '../_components/offices-guide'
 
 export const metadata: Metadata = {
 	title: 'How local government works',
@@ -306,7 +307,7 @@ export default function HowItWorksPage() {
 				breadcrumb={<LguBreadcrumb trail={[]}>How it works</LguBreadcrumb>}
 				kicker='The guide · Bangsamoro'
 				name='Where the money starts, and what is left to decide.'
-				note='National taxes to BARMM to your barangay, in three steps — then the calendar the budget has to clear, and how much of it the law has already spent.'
+				note='National taxes to BARMM to your barangay, in three steps — the calendar the budget has to clear, how much of it the law has already spent, and then who you elect at each rung and every post a unit has.'
 			/>
 
 			{/* ---- The chain ---- */}
@@ -473,6 +474,51 @@ export default function HowItWorksPage() {
 							))}
 						</div>
 					))}
+				</div>
+			</section>
+
+			{/* ---- The ladder ---- */}
+			<section id='ladder' className='bb-container bb-section scroll-mt-24'>
+				<SectionHead
+					index='05'
+					eyebrow='The ladder'
+					size='sm'
+					title='Every rung,'
+					titleMuted='and who you elect to it.'
+					lead='From the region down to the barangay. These are different offices on different schedules, and the Bangsamoro Parliament does not replace any of them.'
+				/>
+
+				<Ladder />
+				<TwoBallots />
+			</section>
+
+			{/* ---- The offices ---- */}
+			<section id='offices' className='bb-container bb-section scroll-mt-24'>
+				<SectionHead
+					index='06'
+					eyebrow='The offices'
+					size='sm'
+					title='Every post,'
+					titleMuted='elected and appointed.'
+					lead='Which offices a unit has is set by the Bangsamoro Local Governance Code rather than by the unit, so the ladder is the same in all 108 of them — though a municipality may do without several of the appointed posts a province and a city must fill.'
+				/>
+
+				<Offices />
+			</section>
+
+			{/* ---- Where to look ---- */}
+			<section id='where-to-look' className='bb-container bb-section scroll-mt-24'>
+				<SectionHead
+					index='07'
+					eyebrow='Where to look'
+					size='sm'
+					title='The names this directory'
+					titleMuted='does not hold.'
+					lead='Anyone who took office after the 2025 canvass, and the barangays DILG has no roster for, are kept by these offices.'
+				/>
+
+				<div className='mt-12'>
+					<Lookups />
 				</div>
 			</section>
 

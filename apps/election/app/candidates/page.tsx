@@ -95,7 +95,6 @@ export default function CandidatesPage() {
 				label='Candidates & parties'
 				lines={['Everyone who stood', 'on the ballot.']}
 				muted={[1]}
-				size='lg'
 				standfirst={`The ${stats.regionalParties} parties every voter in the region chose from, and every sectoral nominee and district filer this workspace holds a record for — searchable by name, by party, and by the place they stood in. Who actually won is on the result page.`}
 				/* The registry's own masthead shape: each figure says what it counts
 				   and where it came from, because the three routes onto this page are

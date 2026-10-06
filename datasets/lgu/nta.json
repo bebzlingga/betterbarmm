@@ -1,0 +1,764 @@
+{
+	"name": "National Tax Allotment of BARMM local governments",
+	"generatedAt": "2026-10-02",
+	"source": [
+		{
+			"label": "BLGF — Statement of Receipts and Expenditures by LGU, FY 2023 (Final)",
+			"href": "https://blgf.gov.ph/wp-content/uploads/2024/09/By-LGU-SRE-2023.xlsx",
+			"fiscalYear": 2023
+		},
+		{
+			"label": "BLGF — Statement of Receipts and Expenditures by LGU, FY 2024 (Final)",
+			"href": "https://blgf.gov.ph/wp-content/uploads/2026/01/By-LGU-SRE-2024.xlsx",
+			"fiscalYear": 2024
+		},
+		{
+			"label": "BLGF — Statement of Receipts and Expenditures by LGU, FY 2025 (Preliminary)",
+			"href": "https://blgf.gov.ph/wp-content/uploads/2026/05/By-LGU-SRE-2025.xlsx",
+			"fiscalYear": 2025
+		},
+		{
+			"label": "DBM — Local Budget Memorandum No. 90-A, Final FY 2025 NTA Shares of LGUs (Annex A, by region only)",
+			"href": "https://www.dbm.gov.ph/wp-content/uploads/Issuances/2024/Local-Budget-Memorandum/LOCAL-BUDGET-MEMORANDUM-NO.-90A.pdf",
+			"fiscalYear": 2025
+		}
+	],
+	"note": "The NTA each LGU reported receiving, in pesos, from the Bureau of Local Government Finance’s Statement of Receipts and Expenditures (line “National Tax Allotment”) — a DOF figure, not a DBM one. DBM sets each share but publishes only BARMM-wide totals by level; BLGF is the only published per-LGU source. It is the LGU’s own share: barangay NTA is paid to the barangays and is not included, so there is no barangay figure. Cross-check: for FY 2025 the five provinces and three cities here sum to DBM’s BARMM provincial and city totals in LBM 90-A to the peso. FY 2025 is BLGF’s preliminary release; a few towns reported part-year receipts (Datu Hoffer Ampatuan’s FY 2025 is about a fifth of its FY 2024). A town that reported zero did not file — that year is left out, not written as 0. The eight Special Geographic Area towns, created in 2024, have no SRE rows yet. No per-LGU figure for FY 2026 is published by anyone yet.",
+	"years": [
+		2023,
+		2024,
+		2025
+	],
+	"units": {
+		"basilan": {
+			"province": {
+				"2023": 1508808585.96,
+				"2024": 1602813830.04,
+				"2025": 1903059663.0
+			}
+		},
+		"basilan/akbar": {
+			"lgu": {
+				"2023": 108672324.0,
+				"2024": 115473893.04,
+				"2025": 136947020.0
+			}
+		},
+		"basilan/al-barka": {
+			"lgu": {
+				"2023": 111385554.96,
+				"2024": 118356486.0,
+				"2025": 140371581.0
+			}
+		},
+		"basilan/hadji-mohammad-ajul": {
+			"lgu": {
+				"2023": 113553734.04,
+				"2024": 120661334.04,
+				"2025": 143109772.0
+			}
+		},
+		"basilan/hadji-muhtamad": {
+			"lgu": {
+				"2025": 149961667.0
+			}
+		},
+		"basilan/lamitan": {
+			"lgu": {
+				"2023": 837512295.0,
+				"2024": 887590287.96,
+				"2025": 1052960647.0
+			}
+		},
+		"basilan/lantawan": {
+			"lgu": {
+				"2023": 171218376.0,
+				"2024": 181900415.04,
+				"2025": 215862654.0
+			}
+		},
+		"basilan/maluso": {
+			"lgu": {
+				"2023": 170098907.04,
+				"2024": 180763473.0,
+				"2025": 214511951.0
+			}
+		},
+		"basilan/sumisip": {
+			"lgu": {
+				"2023": 268476291.0,
+				"2024": 285206249.04,
+				"2025": 338591424.0
+			}
+		},
+		"basilan/tabuan-lasa": {
+			"lgu": {
+				"2023": 123283229.04,
+				"2024": 131006613.96,
+				"2025": 155400109.0
+			}
+		},
+		"basilan/tipo-tipo": {
+			"lgu": {
+				"2023": 123150671.04,
+				"2024": 130852587.0,
+				"2025": 155217123.0
+			}
+		},
+		"basilan/tuburan": {
+			"lgu": {
+				"2023": 197777823.0,
+				"2024": 210073769.04,
+				"2025": 249332990.0
+			}
+		},
+		"basilan/ungkaya-pukan": {
+			"lgu": {
+				"2023": 119258514.96,
+				"2024": 126715377.0,
+				"2025": 150302060.0
+			}
+		},
+		"cotabato-city/cotabato-city": {
+			"lgu": {
+				"2023": 1218161708.04,
+				"2024": 1291339598.04,
+				"2025": 1531934044.0
+			}
+		},
+		"lanao-del-sur": {
+			"province": {
+				"2023": 3644708141.04,
+				"2024": 3871789083.96,
+				"2025": 4597068913.0
+			}
+		},
+		"lanao-del-sur/amai-manabilang": {
+			"lgu": {
+				"2023": 199650029.04,
+				"2024": 212017076.04,
+				"2025": 251641666.0
+			}
+		},
+		"lanao-del-sur/bacolod-kalawi": {
+			"lgu": {
+				"2023": 211272485.04,
+				"2024": 224394006.0,
+				"2025": 266345631.0
+			}
+		},
+		"lanao-del-sur/balabagan": {
+			"lgu": {
+				"2023": 165003609.96,
+				"2024": 175298715.0,
+				"2025": 208019742.0
+			}
+		},
+		"lanao-del-sur/balindong": {
+			"lgu": {
+				"2023": 184835582.04,
+				"2024": 196361771.04,
+				"2025": 233042946.0
+			}
+		},
+		"lanao-del-sur/bayang": {
+			"lgu": {
+				"2023": 132493860.0,
+				"2024": 140780019.96,
+				"2025": 167011052.0
+			}
+		},
+		"lanao-del-sur/binidayan": {
+			"lgu": {
+				"2023": 147148614.0,
+				"2024": 156330248.04,
+				"2025": 185484939.0
+			}
+		},
+		"lanao-del-sur/buadiposo-buntong": {
+			"lgu": {
+				"2023": 135909585.96,
+				"2024": 144371178.96,
+				"2025": 128458048.0
+			}
+		},
+		"lanao-del-sur/bubong": {
+			"lgu": {
+				"2023": 290020175.04,
+				"2024": 308004165.0,
+				"2025": 365675665.0
+			}
+		},
+		"lanao-del-sur/butig": {
+			"lgu": {
+				"2023": 173244498.0,
+				"2024": 184022351.04,
+				"2025": 218383543.0
+			}
+		},
+		"lanao-del-sur/calanogas": {
+			"lgu": {
+				"2023": 101938578.0,
+				"2024": 108296937.0,
+				"2025": 128420697.0
+			}
+		},
+		"lanao-del-sur/ditsaan-ramain": {
+			"lgu": {
+				"2023": 187033368.96,
+				"2024": 198666312.0,
+				"2025": 235780773.0
+			}
+		},
+		"lanao-del-sur/ganassi": {
+			"lgu": {
+				"2023": 173087565.96,
+				"2024": 183883908.0,
+				"2025": 218219071.0
+			}
+		},
+		"lanao-del-sur/kapai": {
+			"lgu": {
+				"2023": 184097124.0,
+				"2024": 195535799.04,
+				"2025": 232061680.0
+			}
+		},
+		"lanao-del-sur/kapatagan": {
+			"lgu": {
+				"2023": 158237505.0,
+				"2024": 168083019.0,
+				"2025": 199447395.0
+			}
+		},
+		"lanao-del-sur/lumba-bayabao": {
+			"lgu": {
+				"2023": 295309521.96,
+				"2024": 313687290.0,
+				"2025": 372427296.0
+			}
+		},
+		"lanao-del-sur/lumbaca-unayan": {
+			"lgu": {
+				"2023": 74239935.0,
+				"2024": 78868125.96,
+				"2025": 93458859.0
+			}
+		},
+		"lanao-del-sur/lumbatan": {
+			"lgu": {
+				"2023": 124970544.0,
+				"2024": 132774917.04,
+				"2025": 157500878.0
+			}
+		},
+		"lanao-del-sur/lumbayanague": {
+			"lgu": {
+				"2023": 158457960.96,
+				"2024": 168312123.96,
+				"2025": 199719575.0
+			}
+		},
+		"lanao-del-sur/madalum": {
+			"lgu": {
+				"2023": 220113269.04,
+				"2024": 233791089.96,
+				"2025": 277509498.0
+			}
+		},
+		"lanao-del-sur/madamba": {
+			"lgu": {
+				"2023": 146911779.96,
+				"2024": 156065105.04,
+				"2025": 185169945.0
+			}
+		},
+		"lanao-del-sur/maguing": {
+			"lgu": {
+				"2023": 255832370.04,
+				"2024": 271724244.96,
+				"2025": 322574615.0
+			}
+		},
+		"lanao-del-sur/malabang": {
+			"lgu": {
+				"2023": 199236377.04,
+				"2024": 211707486.0,
+				"2025": 251273869.0
+			}
+		},
+		"lanao-del-sur/marantao": {
+			"lgu": {
+				"2023": 256574978.04,
+				"2024": 272538273.0,
+				"2025": 323541691.0
+			}
+		},
+		"lanao-del-sur/marawi": {
+			"lgu": {
+				"2023": 862468062.96,
+				"2024": 913782783.0,
+				"2025": 1084033166.0
+			}
+		},
+		"lanao-del-sur/marogong": {
+			"lgu": {
+				"2023": 163434170.04,
+				"2024": 173633496.0,
+				"2025": 206041439.0
+			}
+		},
+		"lanao-del-sur/masiu": {
+			"lgu": {
+				"2023": 132593628.0,
+				"2024": 140905407.96,
+				"2025": 167160015.0
+			}
+		},
+		"lanao-del-sur/mulondo": {
+			"lgu": {
+				"2023": 196690682.04,
+				"2024": 208902806.04,
+				"2025": 247941870.0
+			}
+		},
+		"lanao-del-sur/pagayawan": {
+			"lgu": {
+				"2023": 130131309.96,
+				"2024": 138226503.96,
+				"2025": 163977439.0
+			}
+		},
+		"lanao-del-sur/piagapo": {
+			"lgu": {
+				"2023": 172582839.0,
+				"2024": 183345744.0,
+				"2025": 217579724.0
+			}
+		},
+		"lanao-del-sur/picong": {
+			"lgu": {
+				"2023": 152330952.96,
+				"2024": 161807067.0,
+				"2025": 191991476.0
+			}
+		},
+		"lanao-del-sur/poona-bayabao": {
+			"lgu": {
+				"2023": 179406159.0,
+				"2024": 190592894.04,
+				"2025": 226189439.0
+			}
+		},
+		"lanao-del-sur/pualas": {
+			"lgu": {
+				"2023": 134643975.0,
+				"2024": 143015274.0,
+				"2025": 169666564.0
+			}
+		},
+		"lanao-del-sur/saguiaran": {
+			"lgu": {
+				"2023": 147215235.0,
+				"2024": 156403590.96,
+				"2025": 185572071.0
+			}
+		},
+		"lanao-del-sur/sultan-dumalondong": {
+			"lgu": {
+				"2023": 85816593.0,
+				"2024": 91173180.96,
+				"2025": 108077436.0
+			}
+		},
+		"lanao-del-sur/tagoloan-ii": {
+			"lgu": {
+				"2023": 158397951.96,
+				"2024": 168225677.04,
+				"2025": 199616875.0
+			}
+		},
+		"lanao-del-sur/tamparan": {
+			"lgu": {
+				"2023": 155834001.96,
+				"2024": 165572037.0,
+				"2025": 196464313.0
+			}
+		},
+		"lanao-del-sur/taraka": {
+			"lgu": {
+				"2023": 175485899.04,
+				"2024": 186417291.0,
+				"2025": 221228765.0
+			}
+		},
+		"lanao-del-sur/tubaran": {
+			"lgu": {
+				"2023": 184605263.04,
+				"2024": 196062323.04,
+				"2025": 232687198.0
+			}
+		},
+		"lanao-del-sur/tugaya": {
+			"lgu": {
+				"2023": 136558926.96,
+				"2024": 145084109.04,
+				"2025": 172124370.0
+			}
+		},
+		"lanao-del-sur/wao": {
+			"lgu": {
+				"2023": 268814277.96,
+				"2024": 285575642.04,
+				"2025": 339030268.0
+			}
+		},
+		"maguindanao-del-norte": {
+			"province": {
+				"2023": 1802390888.04,
+				"2024": 1914687567.0,
+				"2025": 2273354902.0
+			}
+		},
+		"maguindanao-del-norte/barira": {
+			"lgu": {
+				"2023": 181325787.0,
+				"2024": 192648294.96,
+				"2025": 228631284.0
+			}
+		},
+		"maguindanao-del-norte/buldon": {
+			"lgu": {
+				"2023": 232677225.0,
+				"2024": 247175228.04,
+				"2025": 293410040.0
+			}
+		},
+		"maguindanao-del-norte/datu-blah-t-sinsuat": {
+			"lgu": {
+				"2023": 142286640.96,
+				"2024": 151176774.96,
+				"2025": 179362542.0
+			}
+		},
+		"maguindanao-del-norte/datu-odin-sinsuat": {
+			"lgu": {
+				"2023": 407234159.04,
+				"2024": 432754457.04,
+				"2025": 513880749.0
+			}
+		},
+		"maguindanao-del-norte/kabuntalan": {
+			"lgu": {
+				"2023": 126769448.04,
+				"2024": 134693946.96,
+				"2025": 159780712.0
+			}
+		},
+		"maguindanao-del-norte/matanog": {
+			"lgu": {
+				"2023": 158946417.0,
+				"2024": 168890045.04,
+				"2025": 200406153.0
+			}
+		},
+		"maguindanao-del-norte/northern-kabuntalan": {
+			"lgu": {
+				"2023": 127586994.0,
+				"2024": 135564788.04,
+				"2025": 160815283.0
+			}
+		},
+		"maguindanao-del-norte/parang": {
+			"lgu": {
+				"2023": 439897887.96,
+				"2024": 467381615.04,
+				"2025": 555018295.0
+			}
+		},
+		"maguindanao-del-norte/sultan-kudarat": {
+			"lgu": {
+				"2023": 383771469.96,
+				"2024": 407805723.0
+			}
+		},
+		"maguindanao-del-norte/sultan-mastura": {
+			"lgu": {
+				"2023": 134730078.96,
+				"2024": 143144549.04,
+				"2025": 169820145.0
+			}
+		},
+		"maguindanao-del-norte/talitay": {
+			"lgu": {
+				"2023": 95562498.0,
+				"2024": 101536796.04,
+				"2025": 120389555.0
+			}
+		},
+		"maguindanao-del-norte/upi": {
+			"lgu": {
+				"2023": 347491664.04,
+				"2024": 369129576.96,
+				"2025": 438293506.0
+			}
+		},
+		"maguindanao-del-sur": {
+			"province": {
+				"2023": 1906505162.04,
+				"2024": 2025288606.0,
+				"2025": 2404674193.0
+			}
+		},
+		"maguindanao-del-sur/ampatuan": {
+			"lgu": {
+				"2023": 163543374.0,
+				"2024": 173745302.04,
+				"2025": 206174266.0
+			}
+		},
+		"maguindanao-del-sur/buluan": {
+			"lgu": {
+				"2023": 215388378.0,
+				"2024": 228883550.04,
+				"2025": 271679272.0
+			}
+		},
+		"maguindanao-del-sur/datu-abdullah-sangki": {
+			"lgu": {
+				"2023": 163227254.04,
+				"2024": 173413830.96,
+				"2025": 205780474.0
+			}
+		},
+		"maguindanao-del-sur/datu-anggal-midtimbang": {
+			"lgu": {
+				"2023": 120916619.04,
+				"2024": 128490362.04,
+				"2025": 152410767.0
+			}
+		},
+		"maguindanao-del-sur/datu-hoffer-ampatuan": {
+			"lgu": {
+				"2023": 121718274.96,
+				"2024": 129335916.96,
+				"2025": 38353824.0
+			}
+		},
+		"maguindanao-del-sur/datu-paglas": {
+			"lgu": {
+				"2023": 150499875.0,
+				"2024": 159914979.96,
+				"2025": 189743651.0
+			}
+		},
+		"maguindanao-del-sur/datu-piang": {
+			"lgu": {
+				"2023": 163467933.96,
+				"2024": 173663249.04,
+				"2025": 206076786.0
+			}
+		},
+		"maguindanao-del-sur/datu-salibo": {
+			"lgu": {
+				"2023": 97731927.96,
+				"2024": 103844523.96,
+				"2025": 123131168.0
+			}
+		},
+		"maguindanao-del-sur/datu-saudi-ampatuan": {
+			"lgu": {
+				"2023": 119667147.96,
+				"2024": 127173867.0,
+				"2025": 150846752.0
+			}
+		},
+		"maguindanao-del-sur/datu-unsay": {
+			"lgu": {
+				"2023": 95158715.04,
+				"2024": 101092115.04,
+				"2025": 119861268.0
+			}
+		},
+		"maguindanao-del-sur/gen-s-k-pendatun": {
+			"lgu": {
+				"2023": 158583618.96,
+				"2024": 168488180.04,
+				"2025": 199928732.0
+			}
+		},
+		"maguindanao-del-sur/guindulungan": {
+			"lgu": {
+				"2023": 127564701.0,
+				"2024": 135536411.04,
+				"2025": 160781572.0
+			}
+		},
+		"maguindanao-del-sur/mamasapano": {
+			"lgu": {
+				"2023": 119161530.0,
+				"2024": 126625704.0,
+				"2025": 150195527.0
+			}
+		},
+		"maguindanao-del-sur/mangudadatu": {
+			"lgu": {
+				"2023": 129001833.96,
+				"2024": 137066517.0,
+				"2025": 162599359.0
+			}
+		},
+		"maguindanao-del-sur/pagagawan": {
+			"lgu": {
+				"2023": 135018597.96,
+				"2024": 143492835.0,
+				"2025": 170233913.0
+			}
+		},
+		"maguindanao-del-sur/pagalungan": {
+			"lgu": {
+				"2023": 356168291.04,
+				"2024": 378296054.04,
+				"2025": 449183409.0
+			}
+		},
+		"maguindanao-del-sur/paglat": {
+			"lgu": {
+				"2023": 105399975.96,
+				"2024": 111984660.0,
+				"2025": 132801763.0
+			}
+		},
+		"maguindanao-del-sur/pandag": {
+			"lgu": {
+				"2023": 114102765.0
+			}
+		},
+		"maguindanao-del-sur/rajah-buayan": {
+			"lgu": {
+				"2023": 123836522.04,
+				"2024": 131588748.96,
+				"2025": 156091694.0
+			}
+		},
+		"maguindanao-del-sur/shariff-aguak": {
+			"lgu": {
+				"2023": 175161425.04,
+				"2024": 186096654.96,
+				"2025": 220847846.0
+			}
+		},
+		"maguindanao-del-sur/shariff-saydona-mustapha": {
+			"lgu": {
+				"2023": 124686321.0,
+				"2024": 132481248.0,
+				"2025": 157151995.0
+			}
+		},
+		"maguindanao-del-sur/south-upi": {
+			"lgu": {
+				"2023": 183377796.0,
+				"2024": 194851422.96,
+				"2025": 231248631.0
+			}
+		},
+		"maguindanao-del-sur/sultan-sa-barongis": {
+			"lgu": {
+				"2023": 150846644.04,
+				"2024": 160250847.0,
+				"2025": 190142666.0
+			}
+		},
+		"maguindanao-del-sur/talayan": {
+			"lgu": {
+				"2023": 132731814.96,
+				"2024": 141054126.0,
+				"2025": 167336694.0
+			}
+		},
+		"tawi-tawi": {
+			"province": {
+				"2023": 1554599295.96,
+				"2024": 1651457498.04,
+				"2025": 1960815467.0
+			}
+		},
+		"tawi-tawi/bongao": {
+			"lgu": {
+				"2023": 336990395.04,
+				"2024": 358181622.96,
+				"2025": 425287184.0
+			}
+		},
+		"tawi-tawi/languyan": {
+			"lgu": {
+				"2023": 262389087.0,
+				"2024": 278708175.0,
+				"2025": 330871621.0
+			}
+		},
+		"tawi-tawi/mapun": {
+			"lgu": {
+				"2023": 154049430.0,
+				"2024": 163670406.0,
+				"2025": 194205149.0
+			}
+		},
+		"tawi-tawi/panglima-sugala": {
+			"lgu": {
+				"2023": 247850513.04,
+				"2024": 263312478.0,
+				"2025": 312581318.0
+			}
+		},
+		"tawi-tawi/sapa-sapa": {
+			"lgu": {
+				"2023": 174362538.0,
+				"2024": 185247149.04,
+				"2025": 219838620.0
+			}
+		},
+		"tawi-tawi/sibutu": {
+			"lgu": {
+				"2023": 134134856.04,
+				"2024": 142543895.04,
+				"2025": 169106559.0
+			}
+		},
+		"tawi-tawi/simunul": {
+			"lgu": {
+				"2023": 159898080.0,
+				"2024": 169894056.96,
+				"2025": 201598934.0
+			}
+		},
+		"tawi-tawi/sitangkai": {
+			"lgu": {
+				"2023": 298763928.96,
+				"2024": 317324373.0,
+				"2025": 376748201.0
+			}
+		},
+		"tawi-tawi/south-ubian": {
+			"lgu": {
+				"2023": 174178377.0,
+				"2024": 185037636.96,
+				"2025": 219589717.0
+			}
+		},
+		"tawi-tawi/tandubas": {
+			"lgu": {
+				"2023": 249583313.04,
+				"2024": 265103862.96,
+				"2025": 314709509.0
+			}
+		},
+		"tawi-tawi/turtle-islands": {
+			"lgu": {
+				"2023": 73640423.04,
+				"2024": 78223107.0,
+				"2025": 92692568.0
+			}
+		}
+	}
+}

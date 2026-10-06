@@ -50,7 +50,7 @@ export default async function MemberProfilePage({ params }: { params: Promise<{ 
 	}))
 
 	return (
-		<section className='bb-container bb-section'>
+		<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 			{/* Two columns: the person, then the record. Held well apart — the
 			    left column runs biography and the right runs a list of measures,
 			    and at a narrow gutter the two read as one column of text.

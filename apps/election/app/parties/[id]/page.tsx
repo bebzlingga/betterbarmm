@@ -89,7 +89,7 @@ export default async function PartyDetailPage({
 					<Rise delay={0.12} distance={16}>
 						<div className='mt-7 flex flex-wrap items-center gap-5'>
 							<PartyMark partyId={party.party_id} ballotName={party.ballot_name} size={144} />
-							<h1 className='bb-display text-[var(--ink)]'>{party.ballot_name}</h1>
+							<h1 className='bb-display-md text-[var(--ink)]'>{party.ballot_name}</h1>
 						</div>
 					</Rise>
 

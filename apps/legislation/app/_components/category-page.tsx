@@ -52,24 +52,7 @@ export function CategoryPage({ slug }: { slug: CategorySlug }) {
 			/>
 
 			{isLive ? (
-				<>
-					<RecordBrowser dataset={dataset} />
-
-					{metadata.knownGaps.length > 0 ? (
-						<section className='bb-container pb-16'>
-							<div className='border-t border-[var(--rule)] pt-6'>
-								<p className='label label-strong'>Known gaps in this dataset</p>
-								<ul className='mt-4 grid gap-2.5 sm:grid-cols-2 sm:gap-x-10'>
-									{metadata.knownGaps.map((gap, index) => (
-										<li key={index} className='bb-body text-[var(--ink-3)]'>
-											{gap}
-										</li>
-									))}
-								</ul>
-							</div>
-						</section>
-					) : null}
-				</>
+				<RecordBrowser dataset={dataset} />
 			) : (
 				<AwaitingData category={category} gaps={metadata.knownGaps} />
 			)}

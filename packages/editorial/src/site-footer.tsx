@@ -1,19 +1,25 @@
-import Image from 'next/image'
 import Link from 'next/link'
+import { BrandLogo } from './brand-logo'
 import { LineReveal, Rise, Stagger, StaggerItem } from './motion'
 
 export type FooterLink = { href: string; label: string }
-export type FooterColumn = { title: string; links: FooterLink[] }
 
 /**
- * The estate's own sitemap, for the columns an app does not override.
- *
- * Links are relative, and `base` is prefixed to the internal ones — so the
- * landing site gets `/discover/history` and a workspace on its own subdomain
- * gets `https://betterbarmm.com/discover/history` from the same list. Absolute
- * URLs are left alone, because a workspace link is already absolute wherever it
- * is read from.
+ * The last column of every footer on the estate, the same on all of them, so a
+ * reader at the foot of any page can cross to any other workspace.
  */
+const WORKSPACES: FooterLink[] = [
+	{ href: 'https://election.betterbarmm.com', label: 'Election' },
+	{ href: 'https://legislation.betterbarmm.com', label: 'Legislation' },
+	{ href: 'https://budget.betterbarmm.com', label: 'Budget' },
+	// LGU hidden for now.
+	// { href: 'https://lgu.betterbarmm.com', label: 'Local government' },
+	{ href: 'https://betterbarmm.com/discover', label: 'Discover BARMM' },
+]
+
+export type FooterColumn = { title: string; links: FooterLink[] }
+
+/** The landing site's own two columns, for an app that passes none. */
 const ESTATE_COLUMNS: FooterColumn[] = [
 	{
 		title: 'Discover',
@@ -26,21 +32,11 @@ const ESTATE_COLUMNS: FooterColumn[] = [
 		],
 	},
 	{
-		title: 'Workspaces',
-		links: [
-			{ href: 'https://betterbarmm.com/soon', label: 'Election' },
-			{ href: 'https://legislation.betterbarmm.com', label: 'Legislation' },
-			{ href: 'https://betterbarmm.com/soon', label: 'Budget' },
-			{ href: 'https://betterbarmm.com/soon', label: 'Local government' },
-		],
-	},
-	{
 		title: 'Project',
 		links: [
 			{ href: '/about', label: 'About' },
 			{ href: '/contribute', label: 'Contribute' },
 			{ href: 'mailto:support@betterbarmm.com', label: 'Email us' },
-			{ href: 'https://www.facebook.com/betterbarmm', label: 'Facebook' },
 		],
 	},
 ]
@@ -126,9 +122,10 @@ function FooterRow({ href, label, index }: FooterLink & { index: number }) {
 export function SiteFooter({
 	/** Prefixed to internal hrefs, for an app that is not on betterbarmm.com. */
 	base = '',
+	/** This site's own two columns. The third is always Workspaces. */
 	columns = ESTATE_COLUMNS,
 	/** The paragraph under the wordmark — what this site is, in two sentences. */
-	blurb = 'A public transparency project for the Bangsamoro. We organize public records into workspaces you can read, question, and trace back to the source.',
+	blurb = 'BetterBARMM is an independent effort to put the Bangsamoro public record where anyone can read it — the measures Parliament passes, the seats it was elected to, the money each ministry is given, and the towns the region is made of. Read it, question it, and trace every line of it back to the source it came from.',
 	/** The small capitals under the blurb — a place, or a dataset. */
 	note = 'Cotabato City · Bangsamoro Autonomous Region in Muslim Mindanao',
 	/** The line ranged right on the bottom rule. */
@@ -148,8 +145,13 @@ export function SiteFooter({
 	const resolve = (href: string) => (isAbsolute(href) ? href : `${base}${href}`)
 	const home = base || '/'
 
+	// The lattice at half its soft weight (user decision): behind the sitemap it
+	// competed with the links. Set on the element itself because the shared
+	// `.bb-ground .bb-lattice-soft` rule is written for a lattice inside a dark
+	// band, and the footer is both at once. Important because those rules are
+	// unlayered and would otherwise win over a utility.
 	return (
-		<footer className='bb-ground bb-lattice bb-lattice-soft relative isolate overflow-hidden'>
+		<footer className='bb-ground bb-lattice bb-lattice-soft relative isolate overflow-hidden before:opacity-[0.12]!'>
 			{/* ---- The one ask ----
 			    Follow rather than subscribe (user decision). An inbox is a promise to
 			    send something on a schedule nobody here has committed to; a page you
@@ -216,17 +218,9 @@ export function SiteFooter({
 				    separates the mark from the lists under it. */}
 				<div className='grid gap-20 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-32'>
 					<div className='lg:max-w-xl'>
-						{/* Always the light-ink cut: the ground under it is dark in both
-						    themes, so the theme-switching pair would put the dark mark on a
-						    dark panel half the time. */}
+						{/* White name: the ground under it is dark in both themes. */}
 						<a href={home} className='inline-block'>
-							<Image
-								src='/logo-dark.png'
-								alt='BetterBARMM'
-								width={168}
-								height={31}
-								style={{ height: 30, width: 'auto' }}
-							/>
+							<BrandLogo className='text-white' mark='#FFFFFF' />
 						</a>
 
 						<Rise delay={0.08} distance={14}>
@@ -247,20 +241,12 @@ export function SiteFooter({
 						</Rise>
 					</div>
 
-					{/* The track these sit in is `auto`, which is max-content: whatever the
-					    longest label asks for, the column takes. Unbounded, one
-					    seventy-character link ("Infrastructure Modernization and Public
-					    Asset Construction and Transformation") claimed the whole row and
-					    squeezed the blurb beside it to one word per line. The cap makes a
-					    long label wrap inside its own column instead, which is the only
-					    thing it can do that does not deform the page. */}
+					{/* Standard on every site: three columns, three headings — this
+					    site's own two, then the workspaces. Each is capped so a long label
+					    wraps inside it rather than claiming the row and squeezing the blurb. */}
 					<Stagger gap={0.08} className='grid gap-x-8 gap-y-10 sm:grid-cols-3 sm:gap-x-10'>
-						{columns.map((column) => (
-							<StaggerItem
-								key={column.title}
-								className='min-w-[10rem] max-w-[15rem]'
-								distance={12}
-							>
+						{[...columns, { title: 'Workspaces', links: WORKSPACES }].map((column) => (
+							<StaggerItem key={column.title} className='min-w-[10rem] max-w-[15rem]' distance={12}>
 								<p className='border-b border-[var(--brass-line)] pb-2.5 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--ink)]'>
 									{column.title}
 								</p>

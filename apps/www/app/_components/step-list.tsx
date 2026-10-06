@@ -36,8 +36,11 @@ export function StepList({
    * one after another. The numbers still carry the order; the rail is what
    * insists on it, and down a full-width column of four it also spent a screen
    * and a half saying so.
+   *
+   * `row` runs the steps left to right along one line, a marker on it for each.
+   * Below `lg` four columns do not fit, so they stack under a rule each.
    */
-  layout?: 'rail' | 'grid'
+  layout?: 'rail' | 'grid' | 'row'
 }) {
   const ref = useRef<HTMLOListElement>(null)
 
@@ -58,6 +61,30 @@ export function StepList({
                 {String(index + 1).padStart(2, '0')}
               </p>
 
+              <h3 className='mt-4 text-[1.15rem] font-extrabold leading-snug tracking-[-0.025em] text-[var(--ink)] sm:text-[1.3rem]'>
+                {step.title}
+              </h3>
+              <p className='mt-3 bb-body text-[var(--ink-2)]'>{step.description}</p>
+            </Rise>
+          </li>
+        ))}
+      </ol>
+    )
+  }
+
+  if (layout === 'row') {
+    return (
+      <ol className='grid gap-y-10 lg:grid-cols-4 lg:gap-x-10 lg:border-t lg:border-[var(--rule)]'>
+        {steps.map((step, index) => (
+          <li
+            key={step.title}
+            className='bb-event relative border-t border-[var(--rule)] pt-7 lg:border-t-0 lg:pt-10'
+          >
+            <span className='bb-node !top-[-0.5px] hidden -translate-y-1/2 lg:block' aria-hidden='true' />
+            <Rise delay={index * 0.05} distance={16}>
+              <p className='num text-[13px] font-semibold text-[var(--brass)]'>
+                {String(index + 1).padStart(2, '0')}
+              </p>
               <h3 className='mt-4 text-[1.15rem] font-extrabold leading-snug tracking-[-0.025em] text-[var(--ink)] sm:text-[1.3rem]'>
                 {step.title}
               </h3>

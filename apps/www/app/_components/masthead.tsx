@@ -37,6 +37,10 @@ type MastheadProps = {
    */
   scrollTo?: string
   scrollLabel?: string
+  /** The headline's type step. `display` is the front page's size. */
+  size?: 'display-md' | 'display'
+  /** Paint the band in the brand crimson, as the front page's masthead is. */
+  brand?: boolean
 }
 
 /**
@@ -60,6 +64,8 @@ export function Masthead({
   facts,
   scrollTo,
   scrollLabel = 'Read on',
+  size = 'display-md',
+  brand = false,
 }: MastheadProps) {
   return (
     /* Four fifths of the screen: enough that the headline opens on nothing but
@@ -67,13 +73,13 @@ export function Masthead({
        scrolling — which is what tells a reader the page continues. `svh` rather
        than `vh` so a phone's collapsing address bar cannot change the height
        mid-scroll. */
-    <section className='bb-lattice relative flex min-h-[80svh] items-center overflow-hidden'>
+    <section className={`${brand ? 'brand-bg ' : ''}bb-lattice relative overflow-hidden`}>
       <span
         aria-hidden='true'
         className='bb-glow absolute -right-[10%] -top-[20%] size-[36rem]'
       />
 
-      <div className='bb-container relative w-full pb-16 pt-16 lg:pb-24 lg:pt-24'>
+      <div className='bb-container relative w-full py-[clamp(3.75rem,7vw,6.5rem)]'>
         <Rise distance={14}>
           <p className='bb-label'>{label}</p>
         </Rise>
@@ -81,13 +87,13 @@ export function Masthead({
         <LineReveal
           lines={lines}
           delay={0.08}
-          className='bb-display-lg mt-8 text-[var(--ink)]'
+          className={`bb-${size} mt-6 text-[var(--ink)]`}
           lineClassName={lines.map((_, index) => (muted.includes(index) ? 'bb-mute' : undefined))}
         />
 
         {standfirst ? (
           <Rise delay={0.35} distance={16}>
-            <p className='mt-9 max-w-2xl text-[16px] leading-[var(--leading-body)] text-[var(--ink-2)] sm:text-lg'>
+            <p className='mt-7 text-[15px] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>
               {standfirst}
             </p>
           </Rise>

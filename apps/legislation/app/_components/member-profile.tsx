@@ -308,9 +308,28 @@ export function MemberIdentity({ member, titleId }: { member: Member; titleId?: 
 				<Biography member={member} />
 			) : member.isInstitution ? null : (
 				<p className='mt-7 bb-body text-[var(--ink-3)]'>
-					Parliament has not published a biography for this member.
+					{member.elected
+						? 'Nothing about this Member could be found and cited beyond the ballot.'
+						: 'Parliament has not published a biography for this member.'}
 				</p>
 			)}
+
+			{/* A new Member's background is not Parliament's biosketch — it was
+			    gathered from news and official sources, so it says where from. */}
+			{member.elected && member.phases.length === 1 && member.elected.sources.length > 0 ? (
+				<p className='mt-3 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+					Background compiled from{' '}
+					{member.elected.sources.map((source, index) => (
+						<span key={source.url}>
+							{index > 0 ? (index === member.elected!.sources.length - 1 ? ' and ' : ', ') : ''}
+							<a href={source.url} target='_blank' rel='noreferrer' className='rule-link'>
+								{source.label}
+							</a>
+						</span>
+					))}
+					.
+				</p>
+			) : null}
 
 			{member.notes ? (
 				<p className='mt-4 bb-body text-[var(--ink-2)]'>{member.notes}</p>
@@ -320,13 +339,30 @@ export function MemberIdentity({ member, titleId }: { member: Member; titleId?: 
 			    separator here only cuts the person in half. Space does the work. */}
 			{member.isInstitution ? null : (
 				<div className='mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-1'>
+					{member.elected ? (
+						<Fact
+							label='Elected 14 September 2026'
+							value={[
+								[member.elected.seat, member.elected.where].filter(Boolean).join(' · '),
+								[
+									member.elected.party,
+									member.elected.votes != null ? `${member.elected.votes.toLocaleString('en-PH')} votes` : null,
+								]
+									.filter(Boolean)
+									.join(' · '),
+								`Term: ${member.elected.term}`,
+							].filter(Boolean)}
+						/>
+					) : null}
 					<Fact label='Term of office' value={member.termOfOffice} />
 					{/* One sitting per line — three date ranges run together read as
 				    one long date rather than three terms. */}
+					{member.elected && member.phases.length === 1 ? null : (
 					<Fact
 						label='Parliaments'
 						value={member.parliamentsServed.length > 0 ? member.parliamentsServed : 'Not recorded'}
 					/>
+					)}
 					<Fact label='Represents' value={member.representation ?? 'Not recorded'} />
 					<Fact label='Position' value={member.position ?? 'BTA Member'} />
 					{member.officeAddress ? <Fact label='Office' value={member.officeAddress} /> : null}

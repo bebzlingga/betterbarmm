@@ -1,10 +1,33 @@
 'use client'
 
-import { ArrowUpRightIcon } from '@phosphor-icons/react'
+import {
+  ArrowUpRightIcon,
+  BuildingsIcon,
+  CheckSquareOffsetIcon,
+  CoinsIcon,
+  CompassIcon,
+  DatabaseIcon,
+  GavelIcon,
+  HardHatIcon,
+  LifebuoyIcon,
+  type Icon,
+} from '@phosphor-icons/react'
 import { motion } from 'motion/react'
 import { Stagger, StaggerItem } from '@betterbarmm/editorial'
 
 export type WorkspaceState = 'live' | 'soon' | 'planned'
+
+/** One glyph per workspace, keyed by its label. */
+const ICONS: Record<string, Icon> = {
+  Election: CheckSquareOffsetIcon,
+  Legislation: GavelIcon,
+  Budget: CoinsIcon,
+  'Public works': HardHatIcon,
+  'Local government': BuildingsIcon,
+  Travel: CompassIcon,
+  'Public services': LifebuoyIcon,
+  'Source layer': DatabaseIcon,
+}
 
 export type Workspace = {
   label: string
@@ -89,6 +112,7 @@ export function WorkspaceIndex({ workspaces }: { workspaces: Workspace[] }) {
 				className='-ml-px -mt-px grid sm:grid-cols-2 lg:grid-cols-3'
 			>
 				{workspaces.map((workspace, index) => {
+					const Glyph = ICONS[workspace.label]
 					const body = (
 						<>
 							<span className='flex items-center justify-between gap-3'>
@@ -98,17 +122,28 @@ export function WorkspaceIndex({ workspaces }: { workspaces: Workspace[] }) {
 								<span className='bb-chip'>{workspace.measure}</span>
 							</span>
 
+							{Glyph ? (
+								<Glyph
+									size={32}
+									weight='duotone'
+									aria-hidden='true'
+									className={`mt-8 ${workspace.state === 'live' ? 'text-[var(--accent)]' : 'text-[var(--ink-display)]'}`}
+								/>
+							) : null}
+
 							<span
-								className={`mt-9 block text-[2rem] font-extrabold leading-none tracking-[-0.035em] transition duration-200 lg:text-[2.25rem] ${
-									workspace.href
-										? 'text-[var(--ink)] group-hover:text-[var(--accent)]'
-										: 'text-[var(--ink-display)]'
+								className={`mt-5 block text-[1.5rem] font-extrabold leading-none tracking-[-0.03em] transition duration-200 lg:text-[1.65rem] ${
+									workspace.state === 'soon'
+										? 'text-[var(--ink-display)] group-hover:text-[var(--accent)]'
+										: workspace.href
+											? 'text-[var(--ink)] group-hover:text-[var(--accent)]'
+											: 'text-[var(--ink-display)]'
 								}`}
 							>
 								{workspace.label}
 							</span>
 
-							<span className='mt-3 block flex-1 bb-body text-[var(--ink-2)]'>
+							<span className={`mt-3 block flex-1 bb-body ${workspace.state === 'soon' ? 'text-[var(--ink-mute)]' : 'text-[var(--ink-2)]'}`}>
 								{workspace.blurb}
 							</span>
 

@@ -16,7 +16,7 @@ export function ReadingColumn({
 	children: React.ReactNode
 }) {
 	return (
-		<div className='bb-container pb-20'>
+		<div className='bb-container'>
 			<div className='gap-x-16 lg:grid lg:grid-cols-[minmax(0,1fr)_13rem] xl:gap-x-24'>
 				{/* Hairlines between the sections. Ranged left the headings no longer
 				    have space either side to separate them, so the rules do it. */}
@@ -24,7 +24,7 @@ export function ReadingColumn({
 
 				{/* The same top padding a section carries, so the index label sits on
 				    the first kicker's line. */}
-				<aside className='hidden lg:block lg:pt-14'>
+				<aside className='hidden lg:block lg:pt-[clamp(3.75rem,7vw,6.5rem)]'>
 					<TableOfContents items={sections} />
 				</aside>
 			</div>

@@ -56,12 +56,12 @@ export function SectorBars({ items }: { items: FilterOption[] }) {
 
 						<dd
 							aria-hidden='true'
-							className='order-last col-span-2 sm:order-none sm:col-span-1'
+							// The full track in a very light ink, so the unfilled part of each
+							// bar still reads as the scale the filled part is measured against.
+							className='order-last col-span-2 self-center bg-[color-mix(in_srgb,var(--ink)_5%,transparent)] sm:order-none sm:col-span-1'
 						>
-							{/* Square where it leaves the baseline, rounded at the end it
-							    reached — the shape says which end is the measurement. */}
 							<span
-								className='block h-2.5 rounded-r-[4px] bg-[var(--funnel-3)]'
+								className='block h-1.5 bg-[var(--funnel-3)]'
 								style={{ width: `${width}%` }}
 							/>
 						</dd>

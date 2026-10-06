@@ -16,6 +16,7 @@
    a figure changed.
    ============================================================ */
 
+export * from './boundaries'
 export * from './dataset'
 export * from './guide'
 export * from './reference'

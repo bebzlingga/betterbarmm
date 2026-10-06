@@ -17,12 +17,18 @@ import {
 	PLACE_KIND_LABEL,
 	pointForArea,
 	pointsInArea,
+	townShapes,
+	townsInArea,
 	travelAreas,
 } from '@betterbarmm/travel-data'
 import { Caution, Footing, GateList, TravelBreadcrumb, TravelMasthead } from '../_components/travel-parts'
 import { TravelMap } from '../_components/travel-map'
+import { TownMap } from '../_components/town-map'
 import { PhotoFigure, PhotoStrip } from '../_components/photo-figure'
 import { photoForPlace, photosForArea } from '../_lib/media'
+
+// The LGU workspace is hidden for now; flip to restore its directory link.
+const SHOW_LGU: boolean = false
 
 /**
  * Static routes win over this one, so `/places`, `/food`, `/stays` and `/plan`
@@ -61,6 +67,7 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 	const photos = photosForArea(area.slug)
 	const [lead, ...gallery] = photos
 	const routes = itinerariesForArea(area.slug)
+	const towns = townsInArea(area.slug)
 
 	// The area's own places, plus its dot on the region map, so the locator
 	// shows where in the Bangsamoro this is as well as what is in it.
@@ -100,7 +107,7 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 						{/* The census figures are the directory's, not this guide's, and the
 						    link says so — a traveler who wants to know how big a place is
 						    should end up on the record rather than on a number retyped here. */}
-						{province && directoryProvince ? (
+						{SHOW_LGU && province && directoryProvince ? (
 							<div>
 								<p className='bb-label'>In the directory</p>
 								<p className='mt-2.5 text-[13.5px] leading-6 text-[var(--ink-2)]'>
@@ -236,12 +243,40 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 				</section>
 			)}
 
+			{/* ---- Town by town ---------------------------------------------- */}
+			<section className='bb-section'>
+				<div className='bb-container'>
+					<SectionHead
+						index='02'
+						eyebrow='Town by town'
+						title={`${towns.length} ${towns.length === 1 ? 'city or municipality' : 'cities and municipalities'}`}
+						titleMuted='and what each one has.'
+						size='sm'
+					/>
+					<div className={`mt-10 grid gap-10 lg:gap-14 ${townShapes(area.slug) ? 'lg:grid-cols-[1fr_1.2fr]' : ''}`}>
+						<TownMap area={area.slug} />
+						<ul className='grid content-start gap-x-8 sm:grid-cols-2'>
+							{towns.map(({ unit, town }) => (
+								<li key={unit.slug} className='border-b border-[var(--rule-soft)]'>
+									<Link href={`/${area.slug}/${unit.slug}`} className='group flex items-baseline justify-between gap-4 py-3'>
+										<span className='item-title transition group-hover:text-[var(--brass)]'>{unit.name}</span>
+										<span className='font-mono text-[9.5px] uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+											{!town ? 'Not yet researched' : town.coverage === 'none' ? 'Little found online' : `${town.whereToGo.length} ${town.whereToGo.length === 1 ? 'place' : 'places'} · ${town.stay.length} ${town.stay.length === 1 ? 'stay' : 'stays'}`}
+										</span>
+									</Link>
+								</li>
+							))}
+						</ul>
+					</div>
+				</div>
+			</section>
+
 			{/* ---- Places ---------------------------------------------------- */}
 			{areaPlaces.length ? (
 				<section className='bb-section'>
 					<div className='bb-container'>
 						<SectionHead
-							index='02'
+							index='03'
 							eyebrow='What there is to see'
 							title={`${areaPlaces.length} ${areaPlaces.length === 1 ? 'place' : 'places'}`}
 							titleMuted='in this area.'
@@ -304,7 +339,7 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 				<section className='bb-section bb-section-top'>
 					<div className='bb-container'>
 						<SectionHead
-							index={areaPlaces.length ? '03' : '02'}
+							index={areaPlaces.length ? '04' : '03'}
 							eyebrow='Where to sleep'
 							title='What actually exists'
 							titleMuted='and how it is booked.'
@@ -383,7 +418,7 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 				<section className='bb-section'>
 					<div className='bb-container'>
 						<SectionHead
-							index='04'
+							index='05'
 							eyebrow='Putting it together'
 							title={routes.length === 1 ? 'A route through here' : 'Routes through here'}
 							aside={

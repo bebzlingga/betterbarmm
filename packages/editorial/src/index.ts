@@ -13,7 +13,9 @@
    boundary lands where it should without the caller thinking about it.
    ============================================================ */
 
+export * from './brand-logo'
 export * from './cta-panel'
+export * from './header-scroll'
 export * from './lang'
 export * from './motion'
 export * from './motion-provider'
@@ -23,3 +25,4 @@ export * from './section-head'
 export * from './site-footer'
 export * from './subscribe-form'
 export * from './table-of-contents'
+export * from './utility-bar'

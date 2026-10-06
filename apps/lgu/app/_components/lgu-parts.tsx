@@ -119,7 +119,7 @@ export function LguMasthead({
 	return (
 		<section className={`bb-lattice relative overflow-hidden ${brand ? 'brand-bg' : ''}`}>
 
-			<div className='bb-container relative pb-14 pt-12 lg:pb-16 lg:pt-16'>
+			<div className='bb-container relative py-[clamp(3.75rem,7vw,6.5rem)]'>
 				{breadcrumb}
 
 				<Rise distance={12}>
@@ -133,7 +133,7 @@ export function LguMasthead({
 
 				{note ? (
 					<Rise delay={0.25} distance={14}>
-						<p className='mt-7 max-w-3xl text-[15.5px] leading-8 text-[var(--ink-2)]'>{note}</p>
+						<p className='mt-7 text-[15px] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>{note}</p>
 					</Rise>
 				) : null}
 

@@ -91,7 +91,21 @@ export type Member = {
 	 * a term, a province, a biography.
 	 */
 	isInstitution?: boolean
+	/** The seat won on 14 September 2026, for a Member of the first elected Parliament. */
+	elected?: ElectedSeat
 	searchText: string
+}
+
+export type ElectedSeat = {
+	/** "District representative", "Party representative", … */
+	seat: string
+	/** The district, sector or indigenous group, where the seat has one. */
+	where?: string
+	party?: string
+	votes?: number
+	term: string
+	notes?: string
+	sources: { label: string; url: string }[]
 }
 
 export type MemberFilterOption = { value: string; label: string; count: number }
@@ -117,6 +131,7 @@ const PARLIAMENTS: Array<Omit<Parliament, 'count'>> = [
 	{ key: 'BTA1', label: parliamentLabel('BTA1'), description: 'First transition parliament' },
 	{ key: 'BTA2', label: parliamentLabel('BTA2'), description: 'Second transition parliament' },
 	{ key: 'BTA3', label: parliamentLabel('BTA3'), description: 'Third transition parliament' },
+	{ key: 'PARL1', label: parliamentLabel('PARL1'), description: 'First elected Parliament' },
 ]
 
 const PARLIAMENT_ORDER = new Map(PARLIAMENTS.map((entry, index) => [entry.key, index]))
@@ -588,6 +603,99 @@ const allMembers: Member[] = (rosterFile?.members ?? [])
 	})
 	.filter((member): member is Member => member !== null)
 	.sort((left, right) => left.rosterName.localeCompare(right.rosterName))
+
+/* ============================================================
+   The first elected Parliament
+
+   The 80 Members elected on 14 September 2026, from the registry's own
+   compilation of the result (members/parliament-2026.json). A Member who
+   sat in the Transition Authority keeps their record — every measure, the
+   biosketch — and gains the new Parliament as their latest; everyone else
+   joins the roster with what could be found and cited about them.
+   ============================================================ */
+
+type RawElected = {
+	ballotName: string
+	fullName: string
+	rosterName: string
+	btaMember: string | null
+	seatLabel: string
+	district?: string | null
+	sector?: string | null
+	group?: string | null
+	partyLabel?: string | null
+	votes?: number | null
+	sex?: string | null
+	background?: string[]
+	notes?: string | null
+	sources?: { label: string; url: string }[]
+}
+
+const electedFile = readJson<{ meta?: { term?: { text?: string } }; members?: RawElected[] }>(
+	path.join(DATASET_ROOT, 'bangsamoro_registry/members/parliament-2026.json'),
+)
+
+const ELECTED_TERM = parliamentLabel('PARL1')
+
+for (const raw of electedFile?.members ?? []) {
+	const elected: ElectedSeat = {
+		seat: raw.seatLabel,
+		where: raw.district ?? raw.sector ?? raw.group ?? undefined,
+		party: raw.partyLabel ?? undefined,
+		votes: raw.votes ?? undefined,
+		term: ELECTED_TERM,
+		notes: raw.notes ?? undefined,
+		sources: raw.sources ?? [],
+	}
+	const existing = raw.btaMember ? allMembers.find((member) => member.rosterName === raw.btaMember) : undefined
+
+	if (existing) {
+		existing.phases = [...existing.phases, 'PARL1']
+		existing.parliamentKey = 'PARL1'
+		existing.parliamentsServed = [ELECTED_TERM, ...existing.parliamentsServed]
+		existing.isIncumbent = true
+		existing.elected = elected
+		// Listed under the new Parliament, a Member is what they were elected as.
+		// Positions held in the Transition Authority — Deputy Minister, Floor
+		// Leader — are not offices in this Parliament, which has not sat yet, so
+		// they stay on the record of the Parliaments they belong to and off the
+		// card. The seat won replaces the old representation the same way.
+		existing.position = `Member of Parliament · ${elected.seat}`
+		existing.roleTitle = undefined
+		existing.representation = elected.where ?? existing.representation
+		existing.searchText += ` ${[raw.ballotName, elected.seat, elected.where, elected.party].filter(Boolean).join(' ').toLowerCase()}`
+		continue
+	}
+
+	const displayName = raw.fullName || raw.ballotName
+	const background = raw.background ?? []
+	allMembers.push({
+		slug: toSlug(raw.rosterName),
+		rosterName: raw.rosterName,
+		displayName,
+		initials: toInitials(raw.rosterName),
+		termOfOffice: ELECTED_TERM,
+		isIncumbent: true,
+		phases: ['PARL1'],
+		parliamentsServed: [ELECTED_TERM],
+		parliamentKey: 'PARL1',
+		position: `Member of Parliament · ${elected.seat}`,
+		roleTitle: undefined,
+		representation: elected.where,
+		gender: raw.sex ?? undefined,
+		notes: undefined,
+		measures: [],
+		principalCount: 0,
+		coAuthorCount: 0,
+		bio: background,
+		elected,
+		searchText: [displayName, raw.ballotName, raw.rosterName, elected.seat, elected.where, elected.party, ...background]
+			.filter(Boolean)
+			.join(' ')
+			.toLowerCase(),
+	})
+}
+allMembers.sort((left, right) => left.rosterName.localeCompare(right.rosterName))
 
 /* ============================================================
    Authors who are not people

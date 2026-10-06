@@ -18,6 +18,7 @@ import {
 	getOfficialMeasure,
 	getOfficialMeasuresByCategory,
 } from './official-measures'
+import { getJournals } from './journal-data'
 
 /* ============================================================
    Shared record shape
@@ -1382,17 +1383,17 @@ function buildOptions(
 
 const DATASET_COVERAGE: Record<CategorySlug, string> = {
 	acts: 'BAA 1–94 (2019–2026), complete',
-	bills: 'Bills 1–475 (2019 – Jul 2026), from Parliament’s index; 192 read in full',
+	bills: 'Bills 1–475 (2019 – Jul 2026), from Parliament’s index; 350 read in full',
 	resolutions: 'Every resolution Parliament lists — 578 adopted and 819 proposed',
-	'adopted-resolutions': 'Resolutions 1–578 from Parliament’s index; 194 read in full',
+	'adopted-resolutions': 'Resolutions 1–578 from Parliament’s index; 575 read in full',
 	'proposed-resolutions': 'Resolutions 1–825 (Jun 2022 – Jul 2026), from Parliament’s index',
-	journal: 'Not yet captured',
+	journal: 'All 52 published journals (Mar 2019 – Mar 2023), read in full',
 	irr: 'Not yet captured',
 }
 
 const RESOLUTION_GAPS = [
 	'The two lists are read together here, so a resolution that was filed and later adopted appears twice — once on each roll, as Parliament lists it. The adopted/proposed filter separates them.',
-	'Every resolution Parliament lists is here, but only 194 of the 578 adopted ones have been read as documents, and none of the proposed ones. The rest carry what the index publishes — number, title, status, authors, sitting, history — and no summary, provisions, or sector tags.',
+	'Every resolution Parliament lists is here. 575 of the 578 adopted ones have been read as documents — No. 230’s posted PDF stops before its resolving clauses, and Nos. 265 and 550 have no PDF. None of the proposed ones has been read; they carry what the index publishes.',
 	'The proposed index lists 819 resolutions numbered up to 825; the numbers in between are not published on it.',
 ]
 
@@ -1403,11 +1404,11 @@ const DATASET_GAPS: Record<CategorySlug, string[]> = {
 		'BAA 94 appears to duplicate BAA 93 on the official index and is flagged for verification.',
 	],
 	bills: [
-		'Every bill Parliament lists is here, but only 192 of the 475 have been read as documents. The rest carry what the index publishes — number, title, status, authors, sitting, and history — and no summary, provisions, or sector tags.',
+		'Every bill Parliament lists is here, and 350 have been read as documents. Six — Nos. 307, 311, 313, 317, 318 and 361 — have no PDF on Parliament’s site. The rest carry what the index publishes — number, title, status, authors, sitting, and history.',
 		'Parliament’s index lists two bills twice under the same number with different titles; where that happens the entry with the fuller history is the one shown.',
 	],
 	'adopted-resolutions': [
-		'Every adopted resolution Parliament lists is here, but only 194 of the 578 have been read as documents. The rest carry what the index publishes and no summary, provisions, or sector tags.',
+		'575 of the 578 adopted resolutions have been read as documents. No. 230’s posted PDF stops before its resolving clauses; Nos. 265 and 550 have no PDF.',
 	],
 	'proposed-resolutions': [
 		'These come from Parliament’s proposed-resolutions index, not from reading each resolution. Every record carries its number, title, status, authors, sitting, and history — and none carries a summary, provisions, or sector tags, because no resolution page has been read yet.',
@@ -1415,7 +1416,7 @@ const DATASET_GAPS: Record<CategorySlug, string[]> = {
 		'A resolution that has since been adopted appears here as filed and again under Adopted Resolutions, which is how Parliament lists them.',
 	],
 	journal: [
-		'Session journals are published as PDF archives split across two Parliament pages and have not been captured.',
+		'Parliament has published no journal since Journal No. 22 of March 2023, and the published series has gaps within each Parliament.',
 	],
 	irr: ['Implementing rules for enacted acts have not been captured.'],
 }
@@ -1485,7 +1486,7 @@ export function getCategoryCounts(): Record<CategorySlug, number> {
 		resolutions: allRecords.resolutions.length,
 		'adopted-resolutions': allRecords['adopted-resolutions'].length,
 		'proposed-resolutions': allRecords['proposed-resolutions'].length,
-		journal: 0,
+		journal: getJournals().length,
 		irr: 0,
 	}
 }

@@ -298,3 +298,33 @@
 .bb-crimson {
   --bb-lattice-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23d3a95f' stroke-width='1' stroke-opacity='0.34'%3E%3Cpath d='M0 16 H64 M0 48 H64'/%3E%3Cpath d='M16 0 V64 M48 0 V64'/%3E%3Cpath d='M16 16 L32 32 L16 48 M48 16 L32 32 L48 48'/%3E%3C/g%3E%3C/svg%3E");
 }
+
+/* ============================================================
+   The journey rail on the brand ground
+
+   `.brand-bg` re-points paper, ink and rule for crimson, but not the
+   stage tones — those are mixed for a white page. At
+   --tone-early-fg #3b5573 a reached first reading is a navy dot on
+   crimson and reads as a hole in the rail rather than a step on it.
+   The dark-mode set is the same hues lifted for a dark ground, which
+   is what crimson is, so the rail keeps its meaning: one colour per
+   stage, the same colour that stage carries everywhere else.
+
+   Only the dot colours move. The "Now" chip keeps its own light tint
+   and dark text, which on crimson reads as a label pinned to the rail
+   — the one thing on the band that is supposed to look applied rather
+   than drawn.
+   ============================================================ */
+
+.journey-band {
+  --tone-file-fg: #c9b39a;
+  --tone-early-fg: #9ab8de;
+  --tone-committee-fg: #b3a2e2;
+  --tone-move-fg: #e5ac70;
+  --tone-pass-fg: #7fc4cf;
+  --tone-done-fg: #87caa0;
+  --tone-idle-fg: #a3a39a;
+  /* The unreached dot. Not the dark-mode #242421, which on crimson is a
+     dark bruise; a low white reads as an empty socket waiting to be filled. */
+  --tone-idle-bg: rgba(255, 255, 255, 0.14);
+}

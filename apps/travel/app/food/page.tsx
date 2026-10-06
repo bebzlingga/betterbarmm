@@ -34,7 +34,7 @@ export default function FoodPage() {
 				breadcrumb={<TravelBreadcrumb>Food</TravelBreadcrumb>}
 				kicker={`${dishes.length} things to eat`}
 				name='Food'
-				note='The best argument for coming here, and the least written-about food in the Philippines. It is halal, it is heavy on coconut and turmeric and chilli, and its nearest relatives are in Sabah and Sulawesi rather than in Luzon. There is no single Bangsamoro cuisine — each entry names whose it is.'
+				note='The best reason to come, and the least written-about food in the Philippines: halal, rich in coconut, turmeric and chilli, closer to Sabah and Sulawesi than to Luzon. There is no single Bangsamoro cuisine — each dish names whose it is.'
 			/>
 
 			{/* ---- How eating works ------------------------------------------ */}

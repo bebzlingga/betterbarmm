@@ -48,6 +48,8 @@
   --hg-doc: var(--paper);
   --hg-edge: var(--rule);
   --hg-mark: var(--accent);
+  /* Dimmer on the left, where it sits behind the headline. */
+  mask-image: linear-gradient(to right, rgb(0 0 0 / 0.25), rgb(0 0 0 / 0.25) 25%, #000 60%);
 }
 
 .brand-bg .hero-graphic {
@@ -328,6 +330,74 @@
      the row has a rhythm rather than a repeat. */
   width: auto;
   aspect-ratio: var(--dsc-ratio, 4 / 3);
+}
+
+/* ============================================================
+   The region map
+
+   Local to this site: the only map on the estate that draws a
+   boundary, so there is nothing in the shared sheet to put it in.
+
+   The shade arrives as `--area-shade` rather than as an inline
+   `opacity`, because an inline opacity beats any rule and hover
+   has to be able to take an area back to full. The outline is
+   never stroked — a hairline between two provinces at this
+   simplification would be drawing a border the data cannot
+   locate to within a kilometre.
+   ============================================================ */
+
+.barmm-map-land {
+  /* Mindanao, the archipelago, the tip of Palawan: present, and plainly not
+     the region. A shade off the rule grey, because a hairline is a line and
+     this is a continent's worth of fill — at --rule's weight the sea and the
+     land stopped being different things. */
+  fill: var(--paper-3);
+}
+
+.barmm-map-land-side {
+  /* The land's own edge, in shadow. Mixed down from the face rather than set
+     to a grey of its own: a side that is in shadow is in shadow on a dark page
+     too, and a fixed light grey would have been a lit edge there. */
+  fill: color-mix(in srgb, var(--paper-3) 86%, #000);
+}
+
+.barmm-map-area {
+  fill: var(--accent);
+  opacity: var(--area-shade, 1);
+  /* The hairline between two provinces. It is drawn in the paper rather than
+     in ink, so it reads as the gap between two raised blocks and not as a
+     surveyed border — which these outlines are in no position to draw. It is
+     also the only thing separating one area from the next now that they are
+     all the one crimson. */
+  stroke: var(--paper);
+  stroke-width: 1.4;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  transition:
+    fill 180ms var(--ease),
+    opacity 180ms var(--ease);
+}
+
+.barmm-map-side {
+  /* The region's own edge, in shadow, for the reason above. Not
+     --accent-deep: it is the darker crimson on paper and the *lighter* one in
+     dark mode, where it would have lit the underside of every province and
+     stood the whole region on its head. */
+  fill: color-mix(in srgb, var(--accent) 66%, #000);
+}
+
+/* Hover lifts the area out of the ramp entirely rather than darkening it a
+   step: a step along a sequential ramp is a change of value, which on this
+   map means a change of population. Ink is not on the ramp and cannot be
+   misread as one. */
+@keyframes map-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.barmm-map-area:hover {
+  fill: var(--ink);
+  opacity: 1;
 }
 
 /* ============================================================
@@ -726,6 +796,12 @@
    ============================================================ */
 
 @media (prefers-reduced-motion: reduce) {
+  /* The map's hover is a color change and nothing moves, but it is still a
+     transition, and the setting asks for none. */
+  .barmm-map-area {
+    transition: none;
+  }
+
   .dsc-kenburns img,
   .dsc-marquee-mover,
   .dsc-wall-mover,

@@ -34,6 +34,7 @@ import {
 	SingleSeat,
 } from '../_components/lgu-officials'
 import { provinceHistory, tookOffice } from '@betterbarmm/lgu-data/history'
+import { rosterCoverage } from '@betterbarmm/lgu-data/barangay-officials'
 import { LguTermPicker } from '../_components/lgu-term-picker'
 import { UnitGrid, type UnitCard } from '../_components/unit-grid'
 import { LineReveal, OkirRule, Rise } from '@betterbarmm/editorial'
@@ -99,6 +100,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 	const biggest = largestUnits(province)
 	const change = growth(province)
 	const gap = unaccounted(province)
+	const roster = rosterCoverage(province.municipalities)
 
 	// This province against the region it sits in. The dataset's regional total
 	// is summed from the same areas, so the two figures are measured the same way
@@ -180,6 +182,12 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 									since the 2020 census
 								</p>
 							) : null}
+							<p>
+								<span className='num font-semibold text-[var(--ink)]'>
+									{formatNumber(roster.listed)} of {formatNumber(roster.total)}
+								</span>{' '}
+								barangay captains in DILG&rsquo;s directory
+							</p>
 							{biggest.length > 0 && province.municipalities.length > 1 ? (
 								<p>
 									Largest:{' '}
@@ -229,7 +237,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 
 			{/* ---- Who runs it ---- */}
 			{province.officials ? (
-				<section id='officials' className='bb-container scroll-mt-24 pt-16 lg:pt-20'>
+				<section id='officials' className='bb-container scroll-mt-24 pt-[clamp(3.75rem,7vw,6.5rem)]'>
 					<Rise distance={12}>
 						<div className='bb-kicker'>
 							<span>01</span>

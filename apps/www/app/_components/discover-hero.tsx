@@ -122,7 +122,7 @@ export function DiscoverHero({
 						lines={lines}
 						delay={0.14}
 						className={`${
-							size === 'index' ? 'bb-display-lg mt-10' : 'bb-display-md mt-6'
+							size === 'index' ? 'bb-display mt-10' : 'bb-display-md mt-6'
 						} bb-over max-w-[18ch] text-white`}
 						lineClassName={lines.map((_, index) => (outline.includes(index) ? 'bb-outline-over' : undefined))}
 					/>

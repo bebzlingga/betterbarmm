@@ -1,0 +1,553 @@
+{
+	"source": {
+		"label": "Bangsamoro Autonomy Act No. 86, Section 4",
+		"href": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/02/BAA-86.pdf"
+	},
+	"note": "Which parliamentary district each city and municipality votes in, from the act's Section 4 tables. Basilan, Lanao del Sur and Tawi-Tawi were checked by summing each district's towns against the act's totals; Maguindanao del Norte and del Sur were read off the page images. Sultan Kudarat is split: 5 of its barangays vote in Maguindanao del Norte's 3rd district. Cotabato City is split across its 3 districts barangay by barangay.",
+	"towns": {
+		"basilan/lamitan": {
+			"districts": [
+				"1st"
+			]
+		},
+		"basilan/tuburan": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"basilan/hadji-mohammad-ajul": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"basilan/akbar": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"basilan/al-barka": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"basilan/tipo-tipo": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"basilan/ungkaya-pukan": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"basilan/sumisip": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"basilan/tabuan-lasa": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"basilan/maluso": {
+			"districts": [
+				"4th"
+			]
+		},
+		"basilan/lantawan": {
+			"districts": [
+				"4th"
+			]
+		},
+		"basilan/hadji-muhtamad": {
+			"districts": [
+				"4th"
+			]
+		},
+		"lanao-del-sur/marawi": {
+			"districts": [
+				"1st"
+			]
+		},
+		"lanao-del-sur/saguiaran": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"lanao-del-sur/piagapo": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"lanao-del-sur/marantao": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"lanao-del-sur/kapai": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"lanao-del-sur/ditsaan-ramain": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"lanao-del-sur/bubong": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"lanao-del-sur/buadiposo-buntong": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"lanao-del-sur/maguing": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"lanao-del-sur/tagoloan-ii": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"lanao-del-sur/masiu": {
+			"districts": [
+				"4th"
+			]
+		},
+		"lanao-del-sur/poona-bayabao": {
+			"districts": [
+				"4th"
+			]
+		},
+		"lanao-del-sur/tamparan": {
+			"districts": [
+				"4th"
+			]
+		},
+		"lanao-del-sur/taraka": {
+			"districts": [
+				"4th"
+			]
+		},
+		"lanao-del-sur/mulondo": {
+			"districts": [
+				"4th"
+			]
+		},
+		"lanao-del-sur/butig": {
+			"districts": [
+				"5th"
+			]
+		},
+		"lanao-del-sur/lumbayanague": {
+			"districts": [
+				"5th"
+			]
+		},
+		"lanao-del-sur/lumbatan": {
+			"districts": [
+				"5th"
+			]
+		},
+		"lanao-del-sur/sultan-dumalondong": {
+			"districts": [
+				"5th"
+			]
+		},
+		"lanao-del-sur/lumbaca-unayan": {
+			"districts": [
+				"5th"
+			]
+		},
+		"lanao-del-sur/marogong": {
+			"districts": [
+				"5th"
+			]
+		},
+		"lanao-del-sur/tubaran": {
+			"districts": [
+				"5th"
+			]
+		},
+		"lanao-del-sur/pagayawan": {
+			"districts": [
+				"6th"
+			]
+		},
+		"lanao-del-sur/ganassi": {
+			"districts": [
+				"6th"
+			]
+		},
+		"lanao-del-sur/binidayan": {
+			"districts": [
+				"6th"
+			]
+		},
+		"lanao-del-sur/bayang": {
+			"districts": [
+				"6th"
+			]
+		},
+		"lanao-del-sur/pualas": {
+			"districts": [
+				"6th"
+			]
+		},
+		"lanao-del-sur/madamba": {
+			"districts": [
+				"7th"
+			]
+		},
+		"lanao-del-sur/madalum": {
+			"districts": [
+				"7th"
+			]
+		},
+		"lanao-del-sur/bacolod-kalawi": {
+			"districts": [
+				"7th"
+			]
+		},
+		"lanao-del-sur/tugaya": {
+			"districts": [
+				"7th"
+			]
+		},
+		"lanao-del-sur/balindong": {
+			"districts": [
+				"7th"
+			]
+		},
+		"lanao-del-sur/calanogas": {
+			"districts": [
+				"8th"
+			]
+		},
+		"lanao-del-sur/malabang": {
+			"districts": [
+				"8th"
+			]
+		},
+		"lanao-del-sur/picong": {
+			"districts": [
+				"8th"
+			]
+		},
+		"lanao-del-sur/balabagan": {
+			"districts": [
+				"8th"
+			]
+		},
+		"lanao-del-sur/kapatagan": {
+			"districts": [
+				"8th"
+			]
+		},
+		"lanao-del-sur/wao": {
+			"districts": [
+				"9th"
+			]
+		},
+		"lanao-del-sur/amai-manabilang": {
+			"districts": [
+				"9th"
+			]
+		},
+		"lanao-del-sur/lumba-bayabao": {
+			"districts": [
+				"9th"
+			]
+		},
+		"maguindanao-del-norte/matanog": {
+			"districts": [
+				"1st"
+			]
+		},
+		"maguindanao-del-norte/barira": {
+			"districts": [
+				"1st"
+			]
+		},
+		"maguindanao-del-norte/buldon": {
+			"districts": [
+				"1st"
+			]
+		},
+		"maguindanao-del-norte/parang": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"maguindanao-del-norte/northern-kabuntalan": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"maguindanao-del-norte/kabuntalan": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"maguindanao-del-norte/talitay": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"maguindanao-del-norte/datu-odin-sinsuat": {
+			"districts": [
+				"4th"
+			]
+		},
+		"maguindanao-del-norte/datu-blah-t-sinsuat": {
+			"districts": [
+				"4th"
+			]
+		},
+		"maguindanao-del-norte/upi": {
+			"districts": [
+				"4th"
+			]
+		},
+		"maguindanao-del-norte/sultan-kudarat": {
+			"districts": [
+				"5th"
+			],
+			"note": "5 of its barangays vote in the 3rd district."
+		},
+		"maguindanao-del-norte/sultan-mastura": {
+			"districts": [
+				"5th"
+			]
+		},
+		"maguindanao-del-sur/datu-anggal-midtimbang": {
+			"districts": [
+				"1st"
+			]
+		},
+		"maguindanao-del-sur/talayan": {
+			"districts": [
+				"1st"
+			]
+		},
+		"maguindanao-del-sur/guindulungan": {
+			"districts": [
+				"1st"
+			]
+		},
+		"maguindanao-del-sur/datu-hoffer-ampatuan": {
+			"districts": [
+				"1st"
+			]
+		},
+		"maguindanao-del-sur/south-upi": {
+			"districts": [
+				"1st"
+			]
+		},
+		"maguindanao-del-sur/datu-piang": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"maguindanao-del-sur/datu-salibo": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"maguindanao-del-sur/datu-saudi-ampatuan": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"maguindanao-del-sur/datu-unsay": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"maguindanao-del-sur/shariff-saydona-mustapha": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"maguindanao-del-sur/ampatuan": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"maguindanao-del-sur/datu-abdullah-sangki": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"maguindanao-del-sur/mamasapano": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"maguindanao-del-sur/shariff-aguak": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"maguindanao-del-sur/buluan": {
+			"districts": [
+				"4th"
+			]
+		},
+		"maguindanao-del-sur/datu-paglas": {
+			"districts": [
+				"4th"
+			]
+		},
+		"maguindanao-del-sur/mangudadatu": {
+			"districts": [
+				"4th"
+			]
+		},
+		"maguindanao-del-sur/pandag": {
+			"districts": [
+				"4th"
+			]
+		},
+		"maguindanao-del-sur/pagagawan": {
+			"districts": [
+				"5th"
+			]
+		},
+		"maguindanao-del-sur/gen-s-k-pendatun": {
+			"districts": [
+				"5th"
+			]
+		},
+		"maguindanao-del-sur/pagalungan": {
+			"districts": [
+				"5th"
+			]
+		},
+		"maguindanao-del-sur/rajah-buayan": {
+			"districts": [
+				"5th"
+			]
+		},
+		"maguindanao-del-sur/sultan-sa-barongis": {
+			"districts": [
+				"5th"
+			]
+		},
+		"maguindanao-del-sur/paglat": {
+			"districts": [
+				"5th"
+			]
+		},
+		"tawi-tawi/bongao": {
+			"districts": [
+				"1st"
+			]
+		},
+		"tawi-tawi/languyan": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"tawi-tawi/south-ubian": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"tawi-tawi/panglima-sugala": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"tawi-tawi/tandubas": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"tawi-tawi/sapa-sapa": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"tawi-tawi/simunul": {
+			"districts": [
+				"3rd"
+			]
+		},
+		"tawi-tawi/mapun": {
+			"districts": [
+				"4th"
+			]
+		},
+		"tawi-tawi/sitangkai": {
+			"districts": [
+				"4th"
+			]
+		},
+		"tawi-tawi/sibutu": {
+			"districts": [
+				"4th"
+			]
+		},
+		"tawi-tawi/turtle-islands": {
+			"districts": [
+				"4th"
+			]
+		},
+		"cotabato-city/cotabato-city": {
+			"districts": [
+				"1st",
+				"2nd",
+				"3rd"
+			],
+			"note": "The city is split into 3 districts, barangay by barangay."
+		},
+		"special-geographic-area/kadayangan": {
+			"districts": [
+				"1st"
+			]
+		},
+		"special-geographic-area/nabalawag": {
+			"districts": [
+				"1st"
+			]
+		},
+		"special-geographic-area/pahamuddin": {
+			"districts": [
+				"1st"
+			]
+		},
+		"special-geographic-area/tugunan": {
+			"districts": [
+				"1st"
+			]
+		},
+		"special-geographic-area/malidegao": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"special-geographic-area/ligawasan": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"special-geographic-area/old-kaabakan": {
+			"districts": [
+				"2nd"
+			]
+		},
+		"special-geographic-area/kapalawan": {
+			"districts": [
+				"2nd"
+			]
+		}
+	}
+}

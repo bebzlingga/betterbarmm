@@ -98,7 +98,29 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 	// Closed by default: the list is what a reader came for, and it gets the
 	// full width until they ask to narrow it. The button says what is behind it.
 	const [filtersOpen, setFiltersOpen] = useState(false)
-	const [pageCount, setPageCount] = useState(1)
+	// The page lives in the URL (?page=3), so a page of the list can be linked
+	// to and the back button walks through pages. Read after mount rather than
+	// through useSearchParams, which would make this static page dynamic.
+	const [page, setPage] = useState(1)
+
+	useEffect(() => {
+		const read = () => {
+			const value = Number(new URLSearchParams(window.location.search).get('page'))
+			setPage(Number.isInteger(value) && value > 1 ? value : 1)
+		}
+		read()
+		window.addEventListener('popstate', read)
+		return () => window.removeEventListener('popstate', read)
+	}, [])
+
+	const goToPage = useCallback((next: number) => {
+		setPage(next)
+		const url = new URL(window.location.href)
+		if (next > 1) url.searchParams.set('page', String(next))
+		else url.searchParams.delete('page')
+		window.history.pushState(null, '', url)
+		document.getElementById('record-list')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+	}, [])
 
 	// Deferring the query keeps typing responsive while the list re-filters.
 	const deferredQuery = useDeferredValue(query)
@@ -183,11 +205,19 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 		lastView.sort !== sort
 	) {
 		setLastView({ query: deferredQuery, filters, sort })
-		setPageCount(1)
+		if (page !== 1) {
+			setPage(1)
+			const url = new URL(window.location.href)
+			url.searchParams.delete('page')
+			window.history.replaceState(null, '', url)
+		}
 	}
 
-	const shown = Math.min(pageCount * PAGE_SIZE, visibleRecords.length)
-	const remaining = visibleRecords.length - shown
+	const pageTotal = Math.max(1, Math.ceil(visibleRecords.length / PAGE_SIZE))
+	// A ?page past the end (a stale link, a narrower view) shows the last page.
+	const current = Math.min(page, pageTotal)
+	const start = (current - 1) * PAGE_SIZE
+	const pageRecords = visibleRecords.slice(start, start + PAGE_SIZE)
 	const isStale = query !== deferredQuery
 
 	return (
@@ -195,7 +225,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 			{/* Less air above the search than below it: the masthead already closes
 			    with its own bottom padding, and stacked the two ran to nearly a
 			    hundred pixels of nothing between the description and the field. */}
-			<section className='bb-container pb-12 pt-6 sm:pt-12'>
+			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 				{/* The facets live in a column of their own, opened from the button
 				    beside the search: on a registry they are half the point, and the
 				    column sticks while the list scrolls past it.
@@ -421,10 +451,10 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 									{visibleRecords.length.toLocaleString()}
 								</span>{' '}
 								of {records.length.toLocaleString()} {category.label.toLowerCase()}
-								{remaining > 0 ? (
+								{pageTotal > 1 ? (
 									<span className='text-[var(--ink-mute)]'>
 										{' '}
-										· showing <span className='num'>{shown.toLocaleString()}</span>
+										· page <span className='num'>{current}</span> of <span className='num'>{pageTotal}</span>
 									</span>
 								) : null}
 							</p>
@@ -447,8 +477,8 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 						    Laid out like the rows on a member's profile: what it is and
 						    where it stands on one line, the name under it, the date down
 						    the right edge so a list reads as a chronology. */}
-						<div>
-							{visibleRecords.slice(0, shown).map((record, index) => (
+						<div id='record-list' className='scroll-mt-32'>
+							{pageRecords.map((record, index) => (
 								<Link
 									key={record.id}
 									href={recordHref(record) ?? '#'}
@@ -534,33 +564,15 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 								</Link>
 							))}
 
-							{remaining > 0 ? (
-								<div className='flex flex-col items-center gap-2 pt-8'>
-									<button
-										type='button'
-										onClick={() => setPageCount((current) => current + 1)}
-										className='bb-btn bb-btn-ghost'
-									>
-										Show {Math.min(PAGE_SIZE, remaining)} more
-										<svg
-											className='size-3.5'
-											viewBox='0 0 24 24'
-											fill='none'
-											stroke='currentColor'
-											strokeWidth='2'
-											strokeLinecap='round'
-											strokeLinejoin='round'
-											aria-hidden='true'
-										>
-											<path d='m6 9 6 6 6-6' />
-										</svg>
-									</button>
-									{/* What is left says whether narrowing is worth it — "812 more"
-									    is an argument for using the filters. */}
-									<p className='meta-sm'>
-										<span className='num'>{remaining.toLocaleString()}</span> more below
-									</p>
-								</div>
+							{pageTotal > 1 ? (
+								<Pagination
+									current={current}
+									total={pageTotal}
+									from={start + 1}
+									to={start + pageRecords.length}
+									count={visibleRecords.length}
+									onGo={goToPage}
+								/>
 							) : null}
 
 							{visibleRecords.length === 0 ? (
@@ -583,5 +595,81 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 				</div>
 			</section>
 		</>
+	)
+}
+
+/**
+ * Numbered pages with the first and last always in reach, two either side of
+ * the current one, and a gap marked where pages are skipped. Each is a real
+ * link to ?page=N — crawlable, and openable in a new tab — with the click
+ * handled in place so the list does not reload.
+ */
+function Pagination({
+	current,
+	total,
+	from,
+	to,
+	count,
+	onGo,
+}: {
+	current: number
+	total: number
+	from: number
+	to: number
+	count: number
+	onGo: (page: number) => void
+}) {
+	const pages: (number | 'gap')[] = []
+	for (let n = 1; n <= total; n++) {
+		if (n === 1 || n === total || Math.abs(n - current) <= 2) pages.push(n)
+		else if (pages[pages.length - 1] !== 'gap') pages.push('gap')
+	}
+
+	const link = (n: number, label: React.ReactNode, aria?: string) => (
+		<a
+			key={`${aria ?? n}`}
+			href={n > 1 ? `?page=${n}` : '?'}
+			aria-label={aria ?? `Page ${n}`}
+			aria-current={n === current && !aria ? 'page' : undefined}
+			onClick={(event) => {
+				if (event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) return
+				event.preventDefault()
+				onGo(n)
+			}}
+			className={`num inline-flex h-9 min-w-9 items-center justify-center border px-2.5 text-[13px] transition ${
+				n === current && !aria
+					? 'border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)]'
+					: 'border-[var(--rule)] text-[var(--ink-2)] hover:border-[var(--ink)] hover:text-[var(--ink)]'
+			}`}
+		>
+			{label}
+		</a>
+	)
+
+	return (
+		// The count on the left, the pages on the right, one row — stacking on a
+		// phone, where the row would not fit.
+		<nav
+			aria-label='Pages'
+			className='flex flex-col items-start gap-4 pt-10 sm:flex-row sm:items-center sm:justify-between'
+		>
+			<p className='meta-sm'>
+				<span className='num'>{from.toLocaleString()}</span>–<span className='num'>{to.toLocaleString()}</span> of{' '}
+				<span className='num'>{count.toLocaleString()}</span>
+			</p>
+			<div className='flex flex-wrap items-center gap-1.5'>
+				{current > 1 ? link(current - 1, '←', 'Previous page') : null}
+				{pages.map((n, index) =>
+					n === 'gap' ? (
+						<span key={`gap-${index}`} className='px-1 text-[var(--ink-mute)]'>
+							…
+						</span>
+					) : (
+						link(n, n)
+					),
+				)}
+				{current < total ? link(current + 1, '→', 'Next page') : null}
+			</div>
+		</nav>
 	)
 }

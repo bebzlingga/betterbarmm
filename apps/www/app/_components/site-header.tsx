@@ -1,11 +1,12 @@
 'use client'
 
 import { CaretDownIcon, HandHeartIcon } from '@phosphor-icons/react'
-import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'motion/react'
-import Image from 'next/image'
+// import { MapTrifoldIcon } from '@phosphor-icons/react'
+import { AnimatePresence, motion } from 'motion/react'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
-import { EASE, Magnetic, ScrollProgress } from '@betterbarmm/editorial'
+import { EASE, Magnetic, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo } from '@betterbarmm/editorial'
+// import { MapDialog } from './map-dialog'
 import { ThemeToggle } from './theme-toggle'
 
 type SiteHeaderProps = {
@@ -37,7 +38,8 @@ const workspaces = [
 	{ label: 'Election', href: 'https://election.betterbarmm.com', open: true },
 	{ label: 'Legislation', href: 'https://legislation.betterbarmm.com', open: true },
 	{ label: 'Budget', href: 'https://budget.betterbarmm.com', open: true },
-	{ label: 'Local government', href: '/soon', open: false },
+	// LGU hidden for now.
+	// { label: 'Local government', href: 'https://lgu.betterbarmm.com', open: true },
 ] as const
 
 const secondaryLinks = [{ key: 'about', href: '/about', label: 'About' }] as const
@@ -139,41 +141,25 @@ const menuItemClass = 'nav-menu-item'
 
 export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
-	// `past` is "the reader has left the top of the page", which is what decides
-	// whether an overlay bar has earned a background yet.
-	const [past, setPast] = useState(false)
-	const [hidden, setHidden] = useState(false)
 	const closeMenu = () => setIsMenuOpen(false)
 
-	const { scrollY } = useScroll()
-	const lastY = useRef(0)
-
-	useMotionValueEvent(scrollY, 'change', (y) => {
-		setPast(y > 24)
-
-		// Hide going down, reveal coming up. The threshold is what stops a
-		// trackpad's one-pixel jitter from flickering the bar, and the bar never
-		// hides near the top of the document — there is nothing to reclaim there,
-		// and a masthead that ducks away on the first scroll reads as a fault.
-		const delta = y - lastY.current
-		if (Math.abs(delta) > 6) {
-			setHidden(delta > 0 && y > 260 && !isMenuOpen)
-			lastY.current = y
-		}
-	})
-
-	// Anything that sticks under this bar has to know where its underside is, and
-	// the bar moves: it ducks away going down and comes back coming up. The state
-	// is published on the document element so a sticky element can offset itself
-	// in CSS — `--sticky-top` below — rather than every one of them subscribing to
-	// the same scroll handler.
-	useEffect(() => {
-		document.documentElement.dataset.headerHidden = hidden ? 'true' : 'false'
-	}, [hidden])
+	// `past` is "the reader has left the top of the page", which is what decides
+	// whether an overlay bar has earned a background yet. Both it and the ducking
+	// live in the shared hook now, because five other workspaces want the same
+	// bar and were each going without.
+	const { past, hidden } = useHeaderScroll(isMenuOpen)
 
 	const solid = !overlay || past
 
 	return (
+		<>
+			{/* Not on the overlay pages. The strip has a ground of its own, and the
+			    whole point of the overlay cut is that nothing opaque sits between
+			    the top of the document and the photograph — a 34px band above a
+			    full-bleed hero crops the sky exactly as a solid bar would. The two
+			    Discover pages carry these links in the menu and the footer. */}
+			{overlay ? null : <UtilityBar current='home' />}
+
 		<motion.header
 			animate={{ y: hidden ? '-100%' : '0%' }}
 			transition={{ duration: 0.42, ease: EASE }}
@@ -224,48 +210,9 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 					<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[auto_1fr] items-center gap-4 md:grid-cols-[1fr_auto_1fr]'>
 						<div className='flex items-center gap-3'>
 							<Link href='/' onClick={closeMenu} className='w-fit shrink-0'>
-								{/* The mark ships in two cuts: the dark-ink one for a light
-								    ground, the light-ink one for a dark ground. Normally the
-								    theme picks between them. Over a photograph the ground is
-								    dark whatever the theme is, so that page takes the light-ink
-								    cut outright and the pair is not rendered at all.
-
-								    `priority` because the mark sits at the top of every page;
-								    lazy-loading it leaves a gap on first paint. The explicit
-								    style is what stops Next warning that one dimension was
-								    overridden and the other left to the intrinsic size. */}
-								{overlay && !solid ? (
-									<Image
-										src='/logo-dark.png'
-										alt='BetterBARMM'
-										width={142}
-										height={26}
-										priority
-										className='max-w-none'
-										style={{ height: 26, width: 'auto' }}
-									/>
-								) : (
-									<>
-										<Image
-											src='/logo.png'
-											alt='BetterBARMM'
-											width={142}
-											height={26}
-											priority
-											className='logo-light max-w-none'
-											style={{ height: 26, width: 'auto' }}
-										/>
-										<Image
-											src='/logo-dark.png'
-											alt='BetterBARMM'
-											width={142}
-											height={26}
-											priority
-											className='logo-dark max-w-none'
-											style={{ height: 26, width: 'auto' }}
-										/>
-									</>
-								)}
+								{/* Over a photograph the ground is dark whatever the theme is,
+								    so the name goes white there; otherwise it follows the ink. */}
+								<BrandLogo className={overlay && !solid ? 'text-white' : 'text-[var(--ink)]'} />
 							</Link>
 						</div>
 
@@ -323,6 +270,12 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 								<ThemeToggle />
 								<span className='w-1.5' aria-hidden='true' />
 							</div>
+
+							{/* Map hidden for now — restore with the imports above.
+							<MapDialog className='bb-btn bb-btn-ghost hidden cursor-pointer !px-4 !py-2.5 !text-[10px] md:inline-flex'>
+								<MapTrifoldIcon size={15} weight='bold' aria-hidden='true' />
+								Map
+							</MapDialog> */}
 
 							<Magnetic strength={0.22} className='hidden sm:inline-flex'>
 								<Link
@@ -434,6 +387,12 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 										{item.label}
 									</Link>
 								))}
+								{/* Map hidden for now.
+								<MapDialog
+									className='cursor-pointer border-b border-[var(--rule-soft)] py-2.5 text-left'
+								>
+									Interactive map
+								</MapDialog> */}
 								<Link
 									href='/contribute'
 									onClick={closeMenu}
@@ -467,5 +426,6 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 			    with nothing behind it reads as a stray rule. */}
 			{solid ? <ScrollProgress /> : null}
 		</motion.header>
+		</>
 	)
 }

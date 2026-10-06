@@ -91,8 +91,8 @@ export default function HomePage() {
 				emphasis='brand'
 				size='hero'
 				eyebrow='Bangsamoro Legislative Registry'
-				title='Every law, from filing to page one.'
-				titleMuted='In plain language.'
+				title='Every law the region has made,'
+				titleMuted='in words you already know.'
 				description='The Bangsamoro Parliament publishes its record across six separate archives. This puts them in one place — searchable, filterable, and written in language you do not need a law degree to read.'
 				meta={`${totalRecords.toLocaleString()} records / registry generated ${registryGeneratedAt}`}
 			/>
@@ -126,7 +126,7 @@ export default function HomePage() {
 			     The claim centerd over the picture, the legend wrapped around it, and
 			     the ways out underneath — so the section reads top to bottom as one
 			     statement rather than a column of text beside a chart. */}
-			<section className='bb-container bb-section'>
+			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 				<SectionHead
 					index='01'
 					eyebrow='Where the bills are'
@@ -177,7 +177,7 @@ export default function HomePage() {
 			     A pointer rather than the walkthrough: the process page carries all
 			     seven stages open, and running an abbreviated copy of it here only
 			     gave a reader two versions of the same thing to reconcile. */}
-			<section className='bb-container bb-section'>
+			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 				<SectionHead
 					index='02'
 					eyebrow='The process, simplified'
@@ -215,7 +215,7 @@ export default function HomePage() {
 			     the live record, and putting it back is one word here rather than
 			     a diff to reconstruct. */}
 			{SHOW_SEAT_COST ? (
-			<section className='bb-container bb-section-bottom'>
+			<section className='bb-container pb-[clamp(3.75rem,7vw,6.5rem)]'>
 				<SectionHead
 					index='03'
 					eyebrow='What a seat costs'

@@ -107,7 +107,7 @@ export default function HowParliamentWorksPage() {
 				eyebrow='Powers, limits, and the rulebook'
 				title='What this Parliament can actually do.'
 				titleMuted='And the rules it does it by.'
-				description='Nobody has voted for the people in it yet. It writes the region&rsquo;s laws and runs the region at the same time. And it follows a rulebook it wrote for itself &mdash; 34 rules, public, and very hard to read. Everything about the chamber is on this one page: what it can do, how a measure moves through it, what a seat costs, and where you fit. Ordinary words throughout, with the rule or the section named on every point so you can check it.'
+				description='It writes the region&rsquo;s laws and runs the region at the same time, by a 34-rule book it wrote for itself. Here is what it can do, how a measure moves, what a seat costs and where you fit &mdash; each point tied to the rule behind it.'
 			/>
 
 			<ReadingColumn sections={SECTIONS}>
@@ -413,7 +413,7 @@ export default function HowParliamentWorksPage() {
 					{/* The vocabulary a reader has to carry through the page. Every term
 					    here is also explained where it first appears — this is the place
 					    to look it up again, not the place it is first met. */}
-					<section id='glossary' className='scroll-mt-32 py-14 font-sans lg:py-20'>
+					<section id='glossary' className='scroll-mt-32 py-[clamp(3.75rem,7vw,6.5rem)] font-sans'>
 						<p className='eyebrow'>The words they use</p>
 						<h2 className='section-title mt-4 max-w-3xl'>What the words mean</h2>
 						<p className='section-lead mt-4 max-w-2xl text-[var(--ink-3)]'>
@@ -487,7 +487,7 @@ export default function HowParliamentWorksPage() {
 				<Reveal>
 					{/* The last entry in the index, so the sources are reachable from the
 					    top of the page rather than only by scrolling to the end. */}
-					<section id='sources' className='scroll-mt-32 py-14 lg:py-20'>
+					<section id='sources' className='scroll-mt-32 py-[clamp(3.75rem,7vw,6.5rem)]'>
 						<p className='label label-strong'>Read the originals</p>
 						<div className='mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm'>
 							<Source href={SOURCES.rules}>

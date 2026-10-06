@@ -32,7 +32,7 @@ type MastheadProps = {
 	 * and nothing else. The default is the middle one, which is right where a
 	 * masthead also carries figures and actions.
 	 */
-	size?: 'display' | 'lg'
+	size?: 'page' | 'home'
 	/** The figures on the brass rule under the standfirst. Three at most; six is a table. */
 	facts?: MastheadFact[]
 	/** Ranged right on the same rule as the facts — the page's actions, or a note on the record. */
@@ -54,7 +54,7 @@ export function Masthead({
 	lines,
 	muted = [],
 	standfirst,
-	size = 'display',
+	size = 'page',
 	facts,
 	children,
 }: MastheadProps) {
@@ -75,7 +75,7 @@ export function Masthead({
 				<LineReveal
 					lines={lines}
 					delay={0.08}
-					className={`${size === 'lg' ? 'bb-display-lg' : 'bb-display'} mt-7 text-[var(--ink)]`}
+					className={`${size === 'home' ? 'bb-display' : 'bb-display-md'} mt-7 text-[var(--ink)]`}
 					lineClassName={lines.map((_, index) => (muted.includes(index) ? 'bb-mute' : undefined))}
 				/>
 
@@ -90,7 +90,7 @@ export function Masthead({
 						    Tighter than the reading leading too: set at the body's own 1.88
 						    it stacked into loose, widely separated lines that read as four
 						    short paragraphs. */}
-						<p className='mt-9 max-w-[46rem] text-[16px] leading-[1.5] text-[var(--ink-2)]'>
+						<p className='mt-7 text-[15px] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>
 							{standfirst}
 						</p>
 					</Rise>

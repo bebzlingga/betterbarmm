@@ -121,6 +121,7 @@ export default function Page() {
 				label='The 2026 Bangsamoro election'
 				lines={['The first regular', 'parliamentary election.']}
 				muted={[1]}
+				size='home'
 				standfirst={`On ${metadata.electionDay} the Bangsamoro elected its own Parliament for the first time — ${stats.totalSeats} members, filled three different ways, after seven years of transition and three postponed dates. No party won the ${stats.majorityThreshold} seats a government needs. This page is how those seats are filled and who was on the ballot; the count itself is on the result page.`}
 				facts={[
 					{ value: stats.totalSeats, label: 'Seats in Parliament', count: true },

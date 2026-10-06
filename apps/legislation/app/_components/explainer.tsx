@@ -71,7 +71,7 @@ export function Block({
 			    keeps Outfit: `.eyebrow` sets its own family. */}
 			{/* `scroll-mt` clears the sticky header, so a jump from the index lands
 			    on the kicker rather than behind the bar. */}
-			<section id={id} className='scroll-mt-32 py-14 font-sans lg:py-20'>
+			<section id={id} className='scroll-mt-32 py-[clamp(3.75rem,7vw,6.5rem)] font-sans'>
 				<p className='eyebrow'>{label}</p>
 				{/* The claim keeps the display face: it is a heading to look at, not
 				    reading matter, so DM Sans stops at the text beneath it. */}

@@ -344,10 +344,13 @@ export const typeLabel = (value: string) => TYPE_LABELS[value] ?? humanizeSnake(
 const PARLIAMENT_TERMS: Record<string, string> = {
 	BTA1: 'February 2019 – August 2022',
 	BTA2: 'September 2022 – February 2025',
-	BTA3: 'March 2025 – Present',
+	BTA3: 'March 2025 – October 2026',
+	// The first elected Parliament. RA 12317, s. 6: noon of 30 October 2026 to
+	// noon of 30 June 2031; regular 3-year terms begin after it.
+	PARL1: 'October 2026 – June 2031',
 }
 
-/** "BTA3" -> "March 2025 – Present". An unknown tag is left as it was written. */
+/** "BTA3" -> "March 2025 – October 2026". An unknown tag is left as it was written. */
 export function parliamentLabel(value: string): string {
 	const raw = value.trim()
 	if (!raw) return ''

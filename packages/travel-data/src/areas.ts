@@ -168,7 +168,7 @@ export const travelAreas: TravelArea[] = [
 		footing: 'emerging',
 		intro: [
 			'Maguindanao del Norte wraps around Cotabato City and runs north and west to the Illana Bay coast. Most visitors pass through it — the region’s airport is here, at Awang — without registering that they have left the city, which is a shame, because the province holds the most varied landscape on the BARMM mainland.',
-			'Upi and South Upi climb into cool uplands settled by Teduray communities, one of the region’s non-Muslim indigenous peoples, whose Meguyaya Festival is among the more distinctive things in the BARMM calendar. Down on the coast, Parang and Barira face Illana Bay with beaches and small islands, and Polloc port in Parang is the region’s deepwater harbour and its freeport.',
+			'Upi climbs into cool uplands settled by Teduray communities, one of the region’s non-Muslim indigenous peoples, whose Meguyaya Festival is among the more distinctive things in the BARMM calendar. Down on the coast, Parang and Barira face Illana Bay with beaches and small islands, and Polloc port in Parang is the region’s deepwater harbour and its freeport.',
 			'The province was created in 2022 when Maguindanao divided in two, which is recent enough that maps, signage and search results have not all caught up. Anything published before then describing "Maguindanao" is describing both halves.',
 		],
 		gettingThere: [
@@ -178,12 +178,12 @@ export const travelAreas: TravelArea[] = [
 		],
 		gettingAround: [
 			'Vans and jeepneys between towns; tricycles and habal-habal within them.',
-			'Upi and South Upi are uphill and the last stretches can be rough after rain.',
+			'Upi is uphill and the last stretches can be rough after rain.',
 		],
 		languages: ['Maguindanaon', 'Iranun', 'Teduray'],
 		knownFor: [
 			'Illana Bay coast at Parang and Barira',
-			'The Teduray uplands at Upi and South Upi',
+			'The Teduray uplands at Upi',
 			'Polloc port and freeport',
 			'Meguyaya Festival in Upi',
 		],

@@ -9,7 +9,7 @@ import { Reveal } from './reveal'
  */
 export function AwaitingData({ category, gaps }: { category: CategoryDefinition; gaps: string[] }) {
 	return (
-		<section className='bb-container py-12'>
+		<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 			<Reveal>
 				<div className='card grid gap-10 p-6 sm:p-10 lg:grid-cols-[minmax(0,1fr)_minmax(16rem,0.75fr)] lg:gap-14'>
 					<div>

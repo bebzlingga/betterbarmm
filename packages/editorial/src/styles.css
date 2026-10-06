@@ -274,8 +274,12 @@
    breakpoint.
    ============================================================ */
 
+/* Brought to the workspaces' own rhythm (user decision): the budget and
+   legislation pages had each overridden this to 3.75–6.5rem, and the estate
+   read as two different beats depending on which site a reader was on. One
+   value now, set here. */
 .bb-section {
-  padding-block: clamp(4.5rem, 9.5vw, 9rem);
+  padding-block: clamp(3.75rem, 7vw, 6.5rem);
 }
 
 /* For a section that opens or closes against something full-bleed — a
@@ -283,17 +287,17 @@
    only. Used sparingly; a section reaching for these usually wants
    `.bb-section` and does not know it yet. */
 .bb-section-top {
-  padding-block-start: clamp(4.5rem, 9.5vw, 9rem);
+  padding-block-start: clamp(3.75rem, 7vw, 6.5rem);
 }
 
 .bb-section-bottom {
-  padding-block-end: clamp(4.5rem, 9.5vw, 9rem);
+  padding-block-end: clamp(3.75rem, 7vw, 6.5rem);
 }
 
 /* The same distance as a margin, for a full-bleed band that carries its
    own padding inside and only needs holding off the section above it. */
 .bb-section-gap {
-  margin-block-start: clamp(4.5rem, 9.5vw, 9rem);
+  margin-block-start: clamp(3.75rem, 7vw, 6.5rem);
 }
 
 /* The distance from a section head to the block it introduces.
@@ -318,7 +322,7 @@
    sibling it cannot put a margin under — the registry's explainer sections,
    where the heading and its points sit in one block. */
 .bb-head-gap-top {
-  margin-top: clamp(3.5rem, 5.5vw, 6rem);
+  margin-top: clamp(2.5rem, 3.5vw, 3.75rem);
 }
 
 /* One step further, for a head set in two columns. A split head is a heading
@@ -1554,8 +1558,10 @@
 /* The standfirst under a section head, and body prose generally. Raised a
    point from 15.5: at that size it sat a shade under the 16px a reader expects
    of running text, and every section on the estate opens on one of these. */
+/* 15px, the size every workspace's descriptions settled on (user decision). It
+   was 16.5px, a step larger than the budget pages that set their own. */
 .bb-body {
-  font-size: 16.5px;
+  font-size: 15px;
   line-height: var(--leading-body);
 }
 
@@ -1617,4 +1623,55 @@
   .bb-btn::before {
     display: none;
   }
+}
+
+/* ============================================================
+   The strip above the masthead
+
+   A utility row, not a navigation bar: it is set a step below the
+   bar under it in both size and weight, so the eye lands on the
+   masthead first and finds this only when it is looking for it.
+
+   A rule under it and no ground of its own (user decision). It was
+   briefly tinted, which separated the two bars but at the cost of
+   putting a band of a third colour across the top of every page —
+   the row is quiet enough that a hairline is all the separation it
+   needs, and on the paper it now shares with the header the type
+   does the dividing instead of the fill.
+   ============================================================ */
+
+.utility-bar {
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--font-display);
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.utility-bar-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4375rem;
+  padding-block: 0.6875rem;
+  color: var(--ink-3);
+  transition: color 180ms var(--ease);
+}
+
+.utility-bar-link:hover {
+  color: var(--accent);
+}
+
+/* The workspace you are in. */
+.utility-bar-link[aria-current="page"] {
+  color: var(--accent);
+}
+
+.utility-bar-switch summary::-webkit-details-marker {
+  display: none;
+}
+
+.utility-bar-switch[open] .utility-bar-caret {
+  transform: rotate(180deg);
 }

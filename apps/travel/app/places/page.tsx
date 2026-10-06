@@ -41,7 +41,7 @@ export default function PlacesPage() {
 				breadcrumb={<TravelBreadcrumb>Places</TravelBreadcrumb>}
 				kicker={`${places.length} places · ${byArea.length} areas`}
 				name='Places'
-				note='Grouped by area, because that is how a trip is actually made. Each entry says what is there and what has to be arranged, permitted or dressed for before you go — and nothing here carries an opening time or a fee, because those are the fields a guide gets wrong first.'
+				note='Grouped by area, because that is how a trip is made. Each entry says what is there and what to arrange, get permitted or dress for — with no opening times or fees, the details guides get wrong first.'
 			>
 				<div className='mt-10 flex flex-wrap gap-2 border-t border-[var(--brass-line)] pt-8'>
 					{kinds.map((kind) => (

@@ -66,7 +66,7 @@ export default function DataPage() {
 				eyebrow='The registry, counted'
 				title='What Parliament works on.'
 				titleMuted='Counted by subject.'
-				description={`Parliament publishes its measures one at a time and never in aggregate, so what the chamber actually spends its time on is a question nobody can answer from its own site. These are the registry's own subject tags, tallied — ${billsCounted} bills and ${actsCounted} autonomy acts read in full, each counted under every subject it touches.`}
+				description={`Parliament publishes its measures one at a time, never in aggregate. These are the registry’s subject tags, tallied across the ${billsCounted} bills and ${actsCounted} acts read in full.`}
 				figures={[
 					{
 						label: 'Bills counted',
@@ -111,7 +111,7 @@ export default function DataPage() {
 			    carries no padding under it — it hands that distance to whatever
 			    follows — so a section set to `bb-section-bottom` left the head
 			    sitting straight under the figures with nothing between them. */}
-			<section className='bb-container bb-section'>
+			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 				<SectionHead
 					index='01'
 					eyebrow='Subjects'
@@ -120,8 +120,8 @@ export default function DataPage() {
 					size='sm'
 					lead={
 						health
-							? `Health is the largest single subject in the bills read so far — ${health.count} of the ${subjectTags} tags applied across ${billsCounted} bills — ahead of education and of social welfare. Among the acts already in force the order is different: governance and the budget lead. A measure carries every subject it touches, so each column adds to more than the number of measures in it.`
-							: 'A measure carries every subject it touches, so each column adds to more than the number of measures in it.'
+							? `Health leads the bills, ${health.count} of ${subjectTags} subject tags; among acts in force, governance and the budget lead. A measure can carry several subjects.`
+							: 'A measure can carry several subjects.'
 					}
 				/>
 
@@ -196,7 +196,7 @@ export default function DataPage() {
 			     Two columns at width, because they are two separate cautions and
 			     stacking them makes the second read as a continuation of the
 			     first. */}
-			<section className='bb-container bb-section-bottom'>
+			<section className='bb-container pb-[clamp(3.75rem,7vw,6.5rem)]'>
 				<Reveal delay={80}>
 					<div className='relative border border-[var(--rule)] p-7 lg:p-10'>
 						<span

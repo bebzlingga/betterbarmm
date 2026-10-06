@@ -1,10 +1,9 @@
 'use client'
 
 import { CaretDownIcon, HandHeartIcon } from '@phosphor-icons/react'
-import { EASE, Magnetic, ScrollProgress } from '@betterbarmm/editorial'
+import { EASE, Magnetic, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo } from '@betterbarmm/editorial'
 import { AnimatePresence, motion } from 'motion/react'
 import { travelAreas } from '@betterbarmm/travel-data'
-import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
@@ -19,7 +18,8 @@ const guide = [
 ] as const
 
 const workspaces = [
-	{ href: 'https://lgu.betterbarmm.com', label: 'Local government' },
+	// LGU hidden for now.
+	// { href: 'https://lgu.betterbarmm.com', label: 'Local government' },
 	{ href: 'https://election.betterbarmm.com', label: 'Election' },
 	{ href: 'https://legislation.betterbarmm.com', label: 'Legislation' },
 	{ href: 'https://budget.betterbarmm.com', label: 'Budget' },
@@ -109,42 +109,44 @@ function Menu({
 export function SiteNav() {
 	const pathname = usePathname()
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
+	const { past, hidden } = useHeaderScroll(isMenuOpen)
 	const closeMenu = () => setIsMenuOpen(false)
 
 	const isAreaActive = travelAreas.some((area) => pathname.startsWith(`/${area.slug}`))
 	const isGuideActive = guide.some((item) => pathname.startsWith(item.href))
 
 	return (
-		<header className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'>
+		<>
+			{/* The estate's strip, above the workspace's own bar. Not sticky:
+			    it belongs to the top of the document, and the navigation a
+			    reader actually needs mid-page is the bar under it. */}
+			<UtilityBar base='https://betterbarmm.com' />
+
+			{/* The estate's masthead behaviour, the same on every workspace: it
+			    takes a ground once the reader has left the top, and ducks out of the
+			    way when they are reading down. `useHeaderScroll` also publishes the
+			    flag the shared stylesheet reads to drop `--sticky-top`, so anything
+			    sticking under this bar follows it up instead of leaving a band of
+			    empty page. */}
+		<motion.header
+			animate={{ y: hidden ? '-100%' : '0%' }}
+			transition={{ duration: 0.42, ease: EASE }}
+			data-solid={past}
+			className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'
+		>
 			<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
 				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[1fr_auto_1fr] items-center gap-4'>
 					<div className='flex min-w-0 items-center gap-3'>
 						<a href='https://betterbarmm.com' onClick={closeMenu} className='w-fit shrink-0'>
-							<Image
-								src='/logo.png'
-								alt='BetterBARMM'
-								width={142}
-								height={26}
-								priority
-								className='logo-light'
-								style={{ height: 26, width: 'auto' }}
-							/>
-							<Image
-								src='/logo-dark.png'
-								alt='BetterBARMM'
-								width={142}
-								height={26}
-								priority
-								className='logo-dark'
-								style={{ height: 26, width: 'auto' }}
-							/>
+							<BrandLogo className='text-[var(--ink)]' />
 						</a>
+						<span aria-hidden='true' className='hidden h-5 w-px bg-[var(--rule)] sm:block' />
 						{/* The wordmark says BetterBARMM; this says which of its
 						    workspaces you are in. */}
 						<Link
 							href='/'
 							onClick={closeMenu}
-							className='hidden font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
+							className='hidden font-mono text-[12px] font-semibold uppercase leading-none tracking-[0.18em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
 						>
 							Travel
 						</Link>
@@ -297,6 +299,7 @@ export function SiteNav() {
 			</AnimatePresence>
 
 			<ScrollProgress />
-		</header>
+		</motion.header>
+		</>
 	)
 }

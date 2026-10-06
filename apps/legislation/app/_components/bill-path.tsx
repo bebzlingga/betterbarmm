@@ -16,7 +16,7 @@ export function BillPath({ id }: { id: string }) {
 		<Reveal>
 			{/* `scroll-mt` clears the sticky header, so a jump from the index lands
 			    on the kicker rather than behind the bar. */}
-			<section id={id} className='scroll-mt-32 py-12 font-sans lg:py-14'>
+			<section id={id} className='scroll-mt-32 py-[clamp(3.75rem,7vw,6.5rem)] font-sans'>
 				<p className='eyebrow'>The process, simplified</p>
 				<h2 className='section-title mt-4 max-w-3xl'>Seven steps, and one of them is yours.</h2>
 				<p className='section-lead mt-4 max-w-2xl text-[var(--ink-3)]'>

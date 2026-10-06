@@ -1,10 +1,9 @@
 'use client'
 
 import { CaretDownIcon } from '@phosphor-icons/react'
-import { EASE } from '@betterbarmm/editorial'
+import { EASE, ScrollProgress, useHeaderScroll, BrandLogo } from '@betterbarmm/editorial'
 import { AnimatePresence, motion } from 'motion/react'
 import { FISCAL_YEARS, LATEST_YEAR, yearFrom } from '@betterbarmm/budget-data/years'
-import Image from 'next/image'
 import Link from 'next/link'
 import { YearLink } from './year-link'
 import { usePathname, useSearchParams } from 'next/navigation'
@@ -134,33 +133,37 @@ export function SiteNav() {
 	   learn its number would put both Acts in the browser bundle. */
 	const fiscalYear = yearFrom(useSearchParams().get('fy'))
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
+	const { past, hidden } = useHeaderScroll(isMenuOpen)
 	const closeMenu = () => setIsMenuOpen(false)
 
 	return (
-		<header className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'>
+		<>
+			{/* The estate's masthead behaviour, the same on every workspace: it
+			    takes a ground once the reader has left the top, and ducks out of the
+			    way when they are reading down. `useHeaderScroll` also publishes the
+			    flag the shared stylesheet reads to drop `--sticky-top`, so anything
+			    sticking under this bar follows it up instead of leaving a band of
+			    empty page. */}
+		<motion.header
+			animate={{ y: hidden ? '-100%' : '0%' }}
+			transition={{ duration: 0.42, ease: EASE }}
+			data-solid={past}
+			className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'
+		>
 			<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
 				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[1fr_auto_1fr] items-center gap-4'>
 					<div className='flex min-w-0 items-center gap-3'>
 						<a href='https://betterbarmm.com' onClick={closeMenu} className='w-fit shrink-0'>
-							<Image
-								src='/logo.png'
-								alt='BetterBARMM'
-								width={142}
-								height={26}
-								priority
-								className='logo-light'
-								style={{ height: 26, width: 'auto' }}
-							/>
-							<Image
-								src='/logo-dark.png'
-								alt='BetterBARMM'
-								width={142}
-								height={26}
-								priority
-								className='logo-dark'
-								style={{ height: 26, width: 'auto' }}
-							/>
+							<BrandLogo className='text-[var(--ink)]' />
 						</a>
+						<span aria-hidden='true' className='hidden h-5 w-px bg-[var(--rule)] sm:block' />
+						<Link
+							href='/'
+							onClick={closeMenu}
+							className='hidden font-mono text-[12px] font-semibold uppercase leading-none tracking-[0.18em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
+						>
+							Budget
+						</Link>
 					</div>
 
 					<nav className='hidden items-center gap-1 md:flex'>
@@ -346,6 +349,13 @@ export function SiteNav() {
 					</motion.div>
 				) : null}
 			</AnimatePresence>
-		</header>
+
+			{/* How far down the document the reader is. The budget pages run to
+			    several screens of appropriation, and a reader is entitled to know
+			    how much of one they are in. The other five workspaces have carried
+			    this hairline all along; this one was the odd bar out. */}
+			<ScrollProgress />
+		</motion.header>
+		</>
 	)
 }

@@ -34,15 +34,6 @@ export function ElectionShell({ children }: { children: React.ReactNode }) {
 						],
 					},
 					{
-						title: 'Workspaces',
-						links: [
-							{ href: 'https://legislation.betterbarmm.com', label: 'Legislation' },
-							{ href: 'https://budget.betterbarmm.com', label: 'Budget' },
-							{ href: 'https://lgu.betterbarmm.com', label: 'Local government' },
-							{ href: 'https://betterbarmm.com/discover', label: 'Discover BARMM' },
-						],
-					},
-					{
 						title: 'Project',
 						links: [
 							{ href: 'https://betterbarmm.com/about', label: 'About' },
@@ -51,7 +42,7 @@ export function ElectionShell({ children }: { children: React.ReactNode }) {
 						],
 					},
 				]}
-				blurb='The first regular election of the Bangsamoro Parliament, as a public record: the parties on the regional ballot, the candidates who filed in each district, the reserved seats, the count that filled all eighty of them — and the source behind every line of it.'
+				blurb='The 2026 Bangsamoro Parliamentary Election as a public record: the parties and candidates on the ballot, the reserved seats, and the count that filled all 80. Trace every line back to the record it came from.'
 				note='The 2026 Bangsamoro Parliamentary Election'
 				bottomRight='Datasets: datasets/election/election.min.json, election-results.json'
 			/>

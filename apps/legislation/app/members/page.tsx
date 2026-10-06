@@ -22,10 +22,10 @@ export default function MembersPage() {
 			<PageHeader
 				emphasis='brand'
 				align='left'
+				size='compact'
 				eyebrow={`${stats.total.toLocaleString()} members on record`}
 				title='The people who write'
 				titleMuted='the region’s laws.'
-				description={`The Bangsamoro Parliament is an appointed body: ${stats.total} people have held a seat across the three transition parliaments. This is the full roster — who served when, what role they held, and which measures carry their name.`}
 			/>
 
 			<MemberBrowser dataset={dataset} />
@@ -34,7 +34,7 @@ export default function MembersPage() {
 			    on the left, the caveats enumerated on the right — so the gaps read
 			    as a numbered list of specific limits rather than a wall of small
 			    grey text at the foot of the page. */}
-			<section className='bb-container bb-section'>
+			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 				<Reveal>
 					<div className='grid gap-8 border-t border-[var(--rule)] pt-12 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:gap-12'>
 						{/* Two fifths of the measure, and the text stops short of even that —

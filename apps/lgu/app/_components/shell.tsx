@@ -34,30 +34,15 @@ export function Shell({ children }: { children: React.ReactNode }) {
 						})),
 					},
 					{
-						title: 'Workspaces',
-						links: [
-							{ href: 'https://election.betterbarmm.com', label: 'Election' },
-							{
-								href: 'https://legislation.betterbarmm.com',
-								label: 'Legislation',
-							},
-							{ href: 'https://budget.betterbarmm.com', label: 'Budget' },
-							{
-								href: 'https://betterbarmm.com/discover',
-								label: 'Discover BARMM',
-							},
-						],
-					},
-					{
 						title: 'Project',
 						links: [
-							{ href: '/about', label: 'About' },
-							{ href: '/contribute', label: 'Contribute' },
+							{ href: 'https://betterbarmm.com/about', label: 'About' },
+							{ href: 'https://betterbarmm.com/contribute', label: 'Contribute' },
 							{ href: 'mailto:support@betterbarmm.com', label: 'Email us' },
 						],
 					},
 				]}
-				blurb='Every province, city, municipality and barangay in the Bangsamoro, with the population and land area on record for each, the officials COMELEC canvassed into office, and the services each rung is responsible for.'
+				blurb='Every province, city, municipality and barangay in the Bangsamoro, with its population, land area, and the officials elected to run it. Trace it back to the census it came from.'
 				note='Local government in the Bangsamoro'
 				bottomRight='Structure from PSA · figures from the 2024 census'
 			/>

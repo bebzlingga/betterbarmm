@@ -97,7 +97,7 @@ function Block({
 		<Reveal>
 			{/* DM Sans below the masthead, and `scroll-mt` to clear the sticky
 			    header — see the notes on the same section in `how-parliament-works`. */}
-			<section id={id} className='scroll-mt-32 py-14 font-sans lg:py-20'>
+			<section id={id} className='scroll-mt-32 py-[clamp(3.75rem,7vw,6.5rem)] font-sans'>
 				<p className='eyebrow'>{label}</p>
 				<h2 className='section-title mt-4 max-w-3xl'>{title}</h2>
 				{lead ? <p className='section-lead mt-4 max-w-2xl text-[var(--ink-3)]'>{lead}</p> : null}
@@ -313,7 +313,7 @@ export default function QuestionsPage() {
 				</Block>
 
 				<Reveal>
-					<section className='py-14 lg:py-20'>
+					<section className='py-[clamp(3.75rem,7vw,6.5rem)]'>
 						<p className='label label-strong'>Where the full answers are</p>
 						<div className='mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm'>
 							<Link href='/how-parliament-works' className='rule-link'>

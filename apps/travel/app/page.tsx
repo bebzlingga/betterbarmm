@@ -34,7 +34,7 @@ export default function TravelHome() {
 			{/* ---- Masthead ------------------------------------------------- */}
 			<section className='bb-lattice relative overflow-hidden'>
 
-				<div className='bb-container relative pb-20 pt-16 lg:pb-24 lg:pt-20'>
+				<div className='bb-container relative py-[clamp(3.75rem,7vw,6.5rem)]'>
 					<Rise distance={12}>
 						<span className='bb-label'>The Bangsamoro, for visitors</span>
 					</Rise>
@@ -46,12 +46,10 @@ export default function TravelHome() {
 					/>
 
 					<Rise delay={0.25} distance={14}>
-						<p className='bb-lede mt-8 max-w-3xl'>
-							The oldest mosque in the country, a sandbar that runs for kilometers, a lake old enough
-							to have evolved its own fish, and the best food in the Philippines that nobody writes
-							about. BARMM is also the part of the country most often described from a distance and
-							least often described accurately — so this guide states what it knows, names what it
-							does not, and never averages the region into a single answer.
+						<p className='mt-8 text-[15px] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>
+							The oldest mosque in the country, kilometres of sandbar, a lake with its own fish, and the
+							least written-about food in the Philippines. This guide says what it knows, names what it
+							does not, and never averages the region into one answer.
 						</p>
 					</Rise>
 
@@ -111,11 +109,7 @@ export default function TravelHome() {
 								</p>
 								<p>
 									The geography underneath it is not invented. Every place names the municipality it
-									sits in, and those come from the same local government dataset the{' '}
-									<a href='https://lgu.betterbarmm.com' className='rule-link'>
-										directory
-									</a>{' '}
-									is built on.
+									sits in, and those come from the region's local government dataset.
 								</p>
 							</div>
 						</div>

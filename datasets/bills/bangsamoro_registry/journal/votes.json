@@ -6,7 +6,9 @@
   "known_gaps": [
    "Journals stop at No. 22 (March 2023) for BTA2 and none are published for BTA3, so no measure after March 2023 can have a vote here.",
    "Every roll call found is on a BTA-era bill numbered below 286, which is outside the range Parliament\u2019s bills index publishes \u2014 so each is linked to the act it became, by title, rather than to a captured bill record.",
-   "Journal No. 12 of December 2022 prints 54 names in favor of Bill 127 but states a tally of 53. The roll is carried as published and flagged; neither number is corrected here."
+   "Journal No. 12 of December 2022 prints 54 names in favor of Bill 127 but states a tally of 53. The roll is carried as published and flagged; neither number is corrected here.",
+   "Dates corrected 2 October 2026 from the journals' own timestamps: Bill 29 was voted on 8 March 2023, and Bills 127 and 128 on 22 December 2022 \u2014 each after a sitting that began the day before was suspended overnight and resumed.",
+   "Journal No. 54 of BTA1 (24 February 2021) records an eighth roll call \u2014 the Bangsamoro Civil Service Code, Cabinet Bill No. 59, approved on third reading 65 in favor, 0 against, 0 abstentions \u2014 which is not yet carried here by name. It is in journal/sessions.json."
   ],
   "count": 7
  },
@@ -100,7 +102,7 @@
     "link_confidence": 0.69
    },
    "vote": {
-    "date": "2022-12-21",
+    "date": "2022-12-22",
     "kind": "nominal voting (roll call)",
     "stage": "Third and Final Reading",
     "result": "approved",
@@ -187,7 +189,7 @@
     "link_confidence": 0.6
    },
    "vote": {
-    "date": "2022-12-21",
+    "date": "2022-12-22",
     "kind": "nominal voting (roll call)",
     "stage": "Third and Final Reading",
     "result": "approved",
@@ -364,7 +366,7 @@
     "link_confidence": 1.0
    },
    "vote": {
-    "date": "2023-03-07",
+    "date": "2023-03-08",
     "kind": "nominal voting (roll call)",
     "stage": "Third and Final Reading",
     "result": "approved",

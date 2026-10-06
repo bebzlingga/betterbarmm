@@ -40,17 +40,8 @@ export function Shell({ children }: { children: React.ReactNode }) {
 							{ href: 'https://travel.betterbarmm.com/plan', label: 'Plan a trip' },
 						],
 					},
-					{
-						title: 'Workspaces',
-						links: [
-							{ href: 'https://lgu.betterbarmm.com', label: 'Local government' },
-							{ href: 'https://election.betterbarmm.com', label: 'Election' },
-							{ href: 'https://legislation.betterbarmm.com', label: 'Legislation' },
-							{ href: 'https://budget.betterbarmm.com', label: 'Budget' },
-						],
-					},
 				]}
-				blurb='Seven areas, from the seat of government at Cotabato City to the sandbars of Tawi-Tawi — what there is to see, what to eat, where lodging actually exists, and an honest account of the security picture in each.'
+				blurb='A written guide to the seven areas of the Bangsamoro: what to see, what to eat, where lodging actually exists, and an honest account of security in each. Verify it before you travel.'
 				note='Traveling the Bangsamoro'
 				bottomRight='Written, not captured · verify before you travel'
 			/>

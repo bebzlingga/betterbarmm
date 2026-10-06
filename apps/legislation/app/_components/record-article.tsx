@@ -245,39 +245,30 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 
 	return (
 		<article>
-			{/* Desktop keeps the original top band. Mobile gets the same journey below
-			    the description, where it can scroll without pushing the header away. */}
-			{record.journey.length > 0 ? (
-				<div className='hidden bg-[var(--paper-2)] md:block'>
-					<div className='bb-container pb-12 pt-12'>
-						<JourneyList stages={record.journey} />
-					</div>
-				</div>
-			) : null}
+			{/* The head on the brand ground: badges, the official title and the
+			    summary. `.brand-bg` re-points the ink tokens, so the parts below
+			    invert without restyling. */}
+			<div className='brand-bg'>
+				<div className='bb-container py-16 lg:py-24'>
+					{/* Badges never break, so on a phone the row wraps rather than running
+					    off the edge — a measure can carry a status and a Cabinet mark at
+					    once. */}
+					<div className='flex flex-wrap items-center gap-x-3 gap-y-1.5'>
+						<p className='num shrink-0 text-[13px] font-medium text-[var(--ink-3)]'>
+							{record.display}
+						</p>
+						{/* The one place the status is stated — it rides above the title
+						    rather than repeating under it. */}
+						<span className={statusToneClass[record.statusTone]}>{record.statusShort}</span>
 
-			{/* Ranged left, sharing an edge with the detail underneath: the head and
-			    the body are one read down the same column, and a centerd head over a
-			    left-ranged body put a seam across the page. */}
-			<div className='bb-container pt-12 lg:pt-16'>
-				{/* Badges never break, so on a phone the row wraps rather than running
-				    off the edge — a measure can carry a status and a Cabinet mark at
-				    once. */}
-				<div className='flex flex-wrap items-center gap-x-3 gap-y-1.5'>
-					<p className='num shrink-0 text-[13px] font-medium text-[var(--ink-3)]'>
-						{record.display}
-					</p>
-					{/* The one place the status is stated — it rides above the title
-					    rather than repeating under it. */}
-					<span className={statusToneClass[record.statusTone]}>{record.statusShort}</span>
-
-					{/* Filed by the Government of the Day rather than by a member: a
-					    cabinet measure arrives with the executive behind it, which is
-					    worth knowing before reading a word of it. It takes the office
-					    tone, because it says who filed this rather than where it
-					    stands. */}
-					{record.isCabinetMeasure ? (
-						<span className='badge badge-plain badge-role shrink-0'>Cabinet measure</span>
-					) : null}
+						{/* Filed by the Government of the Day rather than by a member: a
+						    cabinet measure arrives with the executive behind it, which is
+						    worth knowing before reading a word of it. It takes the office
+						    tone, because it says who filed this rather than where it
+						    stands. */}
+						{record.isCabinetMeasure ? (
+							<span className='badge badge-plain badge-role shrink-0'>Cabinet measure</span>
+						) : null}
 				</div>
 
 				{/* The full official name alone. The registry's condensed name for a
@@ -292,15 +283,18 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 				{lead ? (
 					<p className='mt-5 max-w-4xl copy text-[var(--ink-2)]'>{lead}</p>
 				) : null}
+				</div>
+			</div>
 
-				{/* Where it stands, kept with the measure description it follows. The
-				    rail scrolls horizontally on narrow screens inside `JourneyList`. */}
-				{record.journey.length > 0 ? (
-					<div className='-mx-6 mt-8 border-y border-[var(--rule-soft)] bg-[var(--paper-2)] pb-5 pt-8 md:hidden'>
+			{/* Where it stands, under the head on the paper ground. The rail
+			    scrolls horizontally on narrow screens inside `JourneyList`. */}
+			{record.journey.length > 0 ? (
+				<div className='border-b border-[var(--rule)] bg-[var(--paper)]'>
+					<div className='bb-container pb-8 pt-10'>
 						<JourneyList stages={record.journey} />
 					</div>
-				) : null}
-			</div>
+				</div>
+			) : null}
 
 			<div className='bb-container pb-24 pt-12 lg:pb-32'>
 				<div className='grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(14.5rem,18.7rem)] lg:gap-32 xl:gap-40'>

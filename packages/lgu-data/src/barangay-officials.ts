@@ -75,3 +75,24 @@ export const barangayOfficials = rosters as BarangayOfficialsFile
 export function unitRosters(slug: string): Record<string, BarangayRoster | undefined> {
 	return barangayOfficials.units[slug] ?? {}
 }
+
+/**
+ * How many of these units' barangays have a punong barangay in DILG's
+ * directory. The captain is the count because a roster without one is the
+ * partial kind the note above describes, and "listed" should mean the office
+ * a resident would ask for is named.
+ */
+export function rosterCoverage(
+	units: { slug: string; barangays: { psgc: string | null; name: string }[] }[],
+): { listed: number; total: number } {
+	let listed = 0
+	let total = 0
+	for (const unit of units) {
+		const rosters = unitRosters(unit.slug)
+		for (const barangay of unit.barangays) {
+			total++
+			if (rosters[barangay.psgc ?? barangay.name]?.punongBarangay) listed++
+		}
+	}
+	return { listed, total }
+}

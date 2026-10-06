@@ -85,6 +85,24 @@ function NoMeasures({
 	credited: number
 	total: number
 }) {
+	// A Member first elected in 2026 has filed nothing because they have not
+	// sat yet — not because the registry is missing their record.
+	if (member.elected && member.phases.length === 1) {
+		return (
+			<div className='card p-6 sm:p-10'>
+				<span className='badge badge-plain badge-idle'>Takes office 30 October 2026</span>
+				<h3 className='mt-4 max-w-2xl text-xl font-semibold leading-snug sm:text-2xl'>
+					Nothing filed yet — this Parliament has not sat.
+				</h3>
+				<p className='mt-4 max-w-2xl bb-body text-[var(--ink-2)]'>
+					{member.displayName} was elected on 14 September 2026 to the first Bangsamoro Parliament,
+					whose term begins at noon on 30 October 2026. Bills and resolutions they file will appear
+					here once Parliament publishes them.
+				</p>
+			</div>
+		)
+	}
+
 	return (
 		<div className='card p-6 sm:p-10'>
 			<span className='badge badge-plain badge-idle'>No measures linked yet</span>

@@ -2,12 +2,11 @@ import { ArrowRightIcon, ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { ChapterStrip, type StripCard } from './_components/chapter-strip'
 import { Counter, CtaAction, CtaPanel, LineReveal, Magnetic, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
-import { bangsamoroParliament, discoverBarmmTopics } from '@betterbarmm/primer-data'
+import { bangsamoroParliament } from '@betterbarmm/primer-data'
 import { DiscoverMarquee } from './_components/discover-marquee'
 import { photo } from './_components/discover-media'
 import { lguCounts, lguData, lguProvinces } from '@betterbarmm/lgu-data'
 import { SectionHead } from './_components/masthead'
-import { ContextDiagram, LivingDiagram, SourceDiagram } from './_components/method-diagram'
 import { HeroGraphic } from './_components/hero-graphic'
 import { SiteHeader } from './_components/site-header'
 import { WorkspaceIndex, type Workspace } from './_components/workspace-index'
@@ -58,18 +57,16 @@ const workspaces: Workspace[] = [
 		measure: 'Infrastructure',
 		state: 'planned',
 	},
+	/* LGU hidden for now.
 	{
 		label: 'Local government',
-		href: '/soon',
+		href: 'https://lgu.betterbarmm.com',
 		blurb:
 			'Every province, city, municipality and barangay in the region — population, land area, and the officials elected to each.',
 		measure: 'LGU directory',
-		// Marked by where it actually goes. It was flagged live while its link
-		// still pointed at the holding page, which is the one inconsistency an
-		// index like this cannot afford: a reader who trusts the badge clicks it
-		// and lands on "not yet".
-		state: 'soon',
+		state: 'live',
 	},
+	*/
 	{
 		label: 'Travel',
 		href: '/soon',
@@ -134,30 +131,6 @@ const chapters: StripCard[] = [
 	},
 ]
 
-const principles = [
-	{
-		label: 'Source-first',
-		title: 'Start with the record.',
-		description:
-			'Every workspace is built on a visible source trail — official PDFs, datasets, and public records you can open yourself.',
-		diagram: SourceDiagram,
-	},
-	{
-		label: 'Context',
-		title: 'Explain what it means.',
-		description:
-			'Records come with dates, labels, plain-language notes, and enough background to know why they matter.',
-		diagram: ContextDiagram,
-	},
-	{
-		label: 'Living data',
-		title: 'Keep it honest.',
-		description:
-			'Names, figures, and statuses change. Warnings and verification notes stay right beside the data.',
-		diagram: LivingDiagram,
-	},
-]
-
 /**
  * The band under the masthead names the offices of the Bangsamoro Government.
  *
@@ -173,18 +146,6 @@ const principles = [
 
 export default function HomePage() {
 	const live = workspaces.filter((workspace) => workspace.state === 'live').length
-
-	// The primer's own size, counted from its data the way the Discover index
-	// counts it. A chapter added or a date added to a timeline moves these
-	// figures without anyone remembering to come back here.
-	const chapterCount = discoverBarmmTopics.length
-	const peopleCount = discoverBarmmTopics
-		.flatMap((topic) => topic.peopleGroups ?? [])
-		.reduce((sum, group) => sum + group.people.length, 0)
-	const momentCount = discoverBarmmTopics.reduce(
-		(sum, topic) => sum + (topic.timeline?.length ?? 0),
-		0,
-	)
 
 	return (
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
@@ -204,11 +165,16 @@ export default function HomePage() {
 			<section className='brand-bg bb-lattice relative overflow-hidden'>
 				<span aria-hidden='true' className='bb-glow absolute -left-[6%] -top-[14%] size-[34rem]' />
 
+				{/* The artwork is the band's background, not a column: it runs nearly
+				    edge to edge behind the type and fades out before it reaches the
+				    headline. Desktop only — on a phone it would sit under the words. */}
+				<HeroGraphic className='absolute inset-[3%] hidden opacity-50 lg:block' />
+
 				<div className='bb-container masthead-band relative'>
-					{/* The left column is given the room the headline actually needs. At an
-					    even split "Public records," wrapped at every desktop width, and a
-					    two-word line broken across two rows is not a masthead. */}
-					<div className='grid items-center gap-20 lg:grid-cols-[1.25fr_0.75fr] lg:gap-16'>
+					{/* The headline keeps the room it actually needs. Any narrower and
+					    "Public records," wraps, and a two-word line broken across two rows
+					    is not a masthead. */}
+					<div className='lg:max-w-[62%]'>
 						<div>
 							<Rise distance={14}>
 								<p className='bb-label'>Public transparency for the Bangsamoro</p>
@@ -222,7 +188,7 @@ export default function HomePage() {
 							/>
 
 							<Rise delay={0.35} distance={16}>
-								<p className='mt-9 max-w-2xl text-[16px] leading-[var(--leading-body)] text-[var(--ink-2)]'>
+								<p className='mt-9 max-w-2xl text-[15px] leading-8 text-[var(--ink-2)]'>
 									BetterBARMM turns scattered Bangsamoro public records into workspaces you can read,
 									question, and trace back to the source — the bills before Parliament, the budgets
 									behind them, and every local government in the region.
@@ -232,8 +198,8 @@ export default function HomePage() {
 							<Rise delay={0.45} distance={14}>
 								<div className='mt-11 flex flex-wrap items-center gap-3'>
 									<Magnetic strength={0.24}>
-										<Link href='https://election.betterbarmm.com' className='bb-btn bb-btn-solid'>
-											Open the Election workspace
+										<Link href='https://budget.betterbarmm.com' className='bb-btn bb-btn-solid'>
+											Open the Budget workspace
 											<ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
 										</Link>
 									</Magnetic>
@@ -244,40 +210,7 @@ export default function HomePage() {
 									</Magnetic>
 								</div>
 							</Rise>
-
-							{/* Three measurements on a brass rule. They used to count the
-							    workspaces and the seats, which is the registry describing
-							    itself to someone who already knows what a registry is for.
-							    A reader arriving cold needs the region first, so the figures
-							    are the primer's: what there is to read, and how much of the
-							    Bangsamoro is in it. */}
-							<Rise delay={0.6} distance={14}>
-								<dl className='mt-14 flex flex-wrap gap-x-10 gap-y-6 border-t border-[var(--brass-line)] pt-6'>
-									{[
-										{ value: `${chapterCount}`, label: 'Chapters to read' },
-										{ value: `${peopleCount}`, label: 'Peoples and communities' },
-										{ value: `${momentCount}`, label: 'Moments on the timeline' },
-									].map((fact) => (
-										<div key={fact.label}>
-											<dt className='sr-only'>{fact.label}</dt>
-											<dd className='bb-figure-sm text-[var(--ink)]'>{fact.value}</dd>
-											<p className='mt-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
-												{fact.label}
-											</p>
-										</div>
-									))}
-								</dl>
-							</Rise>
 						</div>
-
-						{/* The artwork is the right-hand column of the split, and nothing
-						    else. Below the breakpoint there is no right-hand column: it
-						    stacked under the headline as a tall diagram of a document
-						    standing between the reader and the first workspace, on the one
-						    screen size where the scroll to get past it costs the most. The
-						    headline beside it already says what it draws, which is why it
-						    can go without leaving a hole. */}
-						<HeroGraphic className='hidden lg:block' />
 					</div>
 				</div>
 			</section>
@@ -403,7 +336,7 @@ export default function HomePage() {
 			{/* Half the section rhythm above, not the full step. The band overhead is
 			    dark and full-bleed, and a dark edge already reads as a division — the
 			    usual distance on top of it left the head floating away from both. */}
-			<div id='discover' className='bb-container scroll-mt-20 pt-[clamp(2.25rem,4.75vw,4.5rem)]'>
+			<div id='discover' className='bb-container scroll-mt-20 py-[clamp(2.25rem,4.75vw,4.5rem)]'>
 				<ChapterStrip
 					cards={chapters}
 					heading={
@@ -416,37 +349,6 @@ export default function HomePage() {
 					}
 				/>
 			</div>
-
-			{/* ---- Method ---- */}
-			<section className='bb-container bb-section'>
-				<SectionHead
-					index='04'
-					eyebrow='How it works'
-					title='Built to'
-					titleMuted='be checked.'
-				/>
-
-				<Stagger gap={0.12} className='grid gap-14 sm:grid-cols-3 sm:gap-10'>
-					{principles.map((principle) => {
-						const Diagram = principle.diagram
-
-						return (
-							<StaggerItem key={principle.label}>
-								<div className='flex h-full flex-col'>
-									<Diagram />
-									<p className='bb-label mt-9'>{principle.label}</p>
-									<h3 className='mt-4 text-[1.35rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>
-										{principle.title}
-									</h3>
-									<p className='mt-3 bb-body text-[var(--ink-2)]'>
-										{principle.description}
-									</p>
-								</div>
-							</StaggerItem>
-						)
-					})}
-				</Stagger>
-			</section>
 
 			<CtaPanel
 				label='Get involved'

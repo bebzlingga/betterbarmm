@@ -1,8 +1,8 @@
 'use client'
 
 import { CaretDownIcon, HandHeartIcon } from '@phosphor-icons/react'
-import { Magnetic, ScrollProgress } from '@betterbarmm/editorial'
-import Image from 'next/image'
+import { EASE, Magnetic, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo } from '@betterbarmm/editorial'
+import { motion } from 'motion/react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
@@ -36,6 +36,7 @@ function SoonBadge() {
 export function SiteNav() {
 	const pathname = usePathname()
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
+	const { past, hidden } = useHeaderScroll(isMenuOpen)
 	const [isRegistryOpen, setIsRegistryOpen] = useState(false)
 	const [isPeopleOpen, setIsPeopleOpen] = useState(false)
 	const registryRef = useRef<HTMLDivElement>(null)
@@ -89,7 +90,24 @@ export function SiteNav() {
 		// stayed dark enough to read straight through the nav links. The tint
 		// gives it a ground, and the blur keeps what passes behind it as motion
 		// rather than as legible text.
-		<header className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'>
+		<>
+			{/* The estate's strip, above the workspace's own bar. Not sticky:
+			    it belongs to the top of the document, and the navigation a
+			    reader actually needs mid-page is the bar under it. */}
+			<UtilityBar base='https://betterbarmm.com' current='legislation' />
+
+			{/* The estate's masthead behaviour, the same on every workspace: it
+			    takes a ground once the reader has left the top, and ducks out of the
+			    way when they are reading down. `useHeaderScroll` also publishes the
+			    flag the shared stylesheet reads to drop `--sticky-top`, so anything
+			    sticking under this bar follows it up instead of leaving a band of
+			    empty page. */}
+		<motion.header
+			animate={{ y: hidden ? '-100%' : '0%' }}
+			transition={{ duration: 0.42, ease: EASE }}
+			data-solid={past}
+			className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'
+		>
 			<div className='bb-container'>
 				{/* Three tracks so the links sit on the true center of the header
 				    rather than wherever the mark and controls leave room. */}
@@ -107,32 +125,16 @@ export function SiteNav() {
 						<a href='https://betterbarmm.com' onClick={closeMenu} className='w-fit shrink-0'>
 							{/* `priority` because the mark sits at the top of every page —
 							    lazy-loading it would leave a gap on first paint. */}
-							<Image
-								src='/logo.png'
-								alt='BetterBARMM'
-								width={142}
-								height={26}
-								priority
-								className='logo-light max-w-none'
-								style={{ height: 26, width: 'auto' }}
-							/>
-							<Image
-								src='/logo-dark.png'
-								alt='BetterBARMM'
-								width={142}
-								height={26}
-								priority
-								className='logo-dark max-w-none'
-								style={{ height: 26, width: 'auto' }}
-							/>
+							<BrandLogo className='text-[var(--ink)]' />
 						</a>
+						<span aria-hidden='true' className='hidden h-5 w-px bg-[var(--rule)] sm:block' />
 						{/* The wordmark says BetterBARMM; this says which of its
 						    workspaces you are in. Set as a label rather than as a link's
 						    worth of body copy, so it reads as part of the mark. */}
 						<Link
 							href='/'
 							onClick={closeMenu}
-							className='hidden font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
+							className='hidden font-mono text-[12px] font-semibold uppercase leading-none tracking-[0.18em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
 						>
 							Legislation
 						</Link>
@@ -426,6 +428,7 @@ export function SiteNav() {
 			    several screens of statute, and a reader is entitled to know how
 			    much of one they are in. */}
 			<ScrollProgress />
-		</header>
+		</motion.header>
+		</>
 	)
 }

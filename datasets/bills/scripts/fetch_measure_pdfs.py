@@ -9,7 +9,7 @@ into a local cache so it can be read page by page.
 The manifest is committed; the PDFs are not. They run ~2 MB each and well over
 a gigabyte in total, and they are Parliament's to serve, not ours to vendor.
 
-    python3 datasets/bills/scripts/fetch_measure_pdfs.py --kind bills [--download] [--limit N]
+    python3 datasets/bills/scripts/fetch_measure_pdfs.py --kind bills|acts|resolutions [--download] [--limit N]
 """
 from __future__ import annotations
 import argparse, json, re, sys, time, urllib.error, urllib.parse, urllib.request
@@ -60,6 +60,11 @@ def sources(kind: str):
         for row in idx["bills"]:
             if row.get("url"):
                 yield row["number"], row["url"]
+    elif kind == "resolutions":
+        idx = json.loads((REGISTRY / "resolutions" / "adopted_official_index.json").read_text())
+        for row in idx["measures"]:
+            if row.get("url"):
+                yield row["number"], row["url"]
     else:
         idx = json.loads((REGISTRY / "baa" / "official_index.json").read_text())
         for row in idx["acts"]:
@@ -68,13 +73,13 @@ def sources(kind: str):
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--kind", choices=["bills", "acts"], default="bills")
+    ap.add_argument("--kind", choices=["bills", "acts", "resolutions"], default="bills")
     ap.add_argument("--download", action="store_true")
     ap.add_argument("--limit", type=int)
     ap.add_argument("--delay", type=float, default=0.6)
     args = ap.parse_args()
 
-    out = REGISTRY / args.kind.replace("acts", "baa") / "pdf_manifest.json"
+    out = REGISTRY / {"bills": "bills", "acts": "baa", "resolutions": "resolutions/adopted"}[args.kind] / "pdf_manifest.json"
     manifest = json.loads(out.read_text())["measures"] if out.exists() else {}
 
     rows = list(sources(args.kind))
@@ -89,7 +94,7 @@ def main() -> int:
                 continue
             found = PDF_RE.findall(html.decode("utf-8", "replace"))
             # The measure's own scan, not a seal or an unrelated attachment.
-            pdf = next((u for u in found if re.search(r"/(Bill|BAA|Act)[-_. ]", u, re.I)), None) or (found[0] if found else None)
+            pdf = next((u for u in found if re.search(r"/(Bill|BAA|Act|Res(olution)?)[-_. ]", u, re.I)), None) or (found[0] if found else None)
             manifest[key] = {"page": page_url, "pdf": pdf}
             print(f"[{i}/{len(rows)}] {args.kind} {number}: {'ok' if pdf else 'NO PDF'}")
             time.sleep(args.delay)
