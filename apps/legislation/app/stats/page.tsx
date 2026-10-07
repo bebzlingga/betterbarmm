@@ -47,7 +47,10 @@ export default function DataPage() {
 	// index. Counted from the records themselves so it cannot drift from them.
 	const billsCounted = bills.records.filter((record) => record.sectors.length > 0).length
 	const actsCounted = acts.records.filter((record) => record.sectors.length > 0).length
-	const billsShare = Math.round((billsCounted / bills.records.length) * 100)
+	// Every bill in the index is accounted for: read in full, or named in the
+	// bills page's known gaps as having no readable document on Parliament's site.
+	const billsRead = bills.records.filter((record) => record.reading).length
+	const billsUnreadable = bills.records.length - billsRead
 
 	// The whole the treemap tiles. Not the bill count: a measure carries every
 	// subject it touches, so the tags outnumber the measures and a chart that
@@ -71,7 +74,7 @@ export default function DataPage() {
 					{
 						label: 'Bills counted',
 						value: billsCounted.toLocaleString(),
-						detail: `Read in full and tagged — ${billsShare}% of the ${bills.records.length.toLocaleString()} in Parliament's index.`,
+						detail: `All ${bills.records.length.toLocaleString()} in Parliament's index accounted for: ${billsRead.toLocaleString()} read in full, ${billsUnreadable} with no readable document on Parliament's site.`,
 					},
 					{
 						label: 'Acts counted',

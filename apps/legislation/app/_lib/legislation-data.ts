@@ -945,7 +945,11 @@ function loadBills(actsByOriginBill: Map<number, number>): LegislationRecord[] {
 			const shortTitle = clean(basic.short_title)
 			const officialTitle = officialTitleFor('bills', number, clean(basic.official_title))
 			const status = describeStatus(clean(basic.current_status))
-			const { sectors, types } = splitTags(raw.impact?.impact_tags)
+			const split = splitTags(raw.impact?.impact_tags)
+			const { types } = split
+			// A captured file with no subject tags of its own takes the ones read
+			// off the bill's scan, the same source the indexed bills use.
+			const sectors = split.sectors.length ? split.sectors : (billSubjects.get(number) ?? [])
 
 			// Most captured bill files carry no authors — Parliament publishes
 			// them on the bill's own page, not in the index this registry read.
@@ -1383,36 +1387,36 @@ function buildOptions(
 
 const DATASET_COVERAGE: Record<CategorySlug, string> = {
 	acts: 'BAA 1–94 (2019–2026), complete',
-	bills: 'Bills 1–475 (2019 – Jul 2026), from Parliament’s index; 350 read in full',
-	resolutions: 'Every resolution Parliament lists — 578 adopted and 819 proposed',
-	'adopted-resolutions': 'Resolutions 1–578 from Parliament’s index; 575 read in full',
-	'proposed-resolutions': 'Resolutions 1–825 (Jun 2022 – Jul 2026), from Parliament’s index',
+	bills: 'Bills 1–475 (2019 – Jul 2026), all accounted for: 464 read in full, 11 with no readable document',
+	resolutions: 'Every resolution Parliament lists — 578 adopted and 822 proposed',
+	'adopted-resolutions': 'Resolutions 1–578, all accounted for: 576 read in full, 2 with no PDF',
+	'proposed-resolutions': 'All 822 proposed resolutions Parliament lists, numbered up to 829 (Jun 2022 – Oct 2026)',
 	journal: 'All 52 published journals (Mar 2019 – Mar 2023), read in full',
 	irr: 'Not yet captured',
 }
 
 const RESOLUTION_GAPS = [
 	'The two lists are read together here, so a resolution that was filed and later adopted appears twice — once on each roll, as Parliament lists it. The adopted/proposed filter separates them.',
-	'Every resolution Parliament lists is here. 575 of the 578 adopted ones have been read as documents — No. 230’s posted PDF stops before its resolving clauses, and Nos. 265 and 550 have no PDF. None of the proposed ones has been read; they carry what the index publishes.',
-	'The proposed index lists 819 resolutions numbered up to 825; the numbers in between are not published on it.',
+	'Every resolution Parliament lists is here. 576 of the 578 adopted ones have been read as documents; Nos. 265 and 550 have no PDF on Parliament’s site. No. 230’s posted PDF stops before its resolving clauses, and its reading says so. None of the proposed ones has been read; they carry what the index publishes.',
+	'The proposed index lists 822 resolutions numbered up to 829. Nos. 781–784, 792, 793 and 826 are not published anywhere on Parliament’s site. Parliament’s homepage counter says 825; its own list has 822.',
 ]
 
 const DATASET_GAPS: Record<CategorySlug, string[]> = {
 	resolutions: RESOLUTION_GAPS,
 	acts: [
 		'Author metadata is available only for acts covered by the earlier hand-compiled catalog (BAA 1–89).',
-		'BAA 94 appears to duplicate BAA 93 on the official index and is flagged for verification.',
+		'Parliament’s acts index repeats BAA 93’s title under BAA 94. The enacted text shows BAA 94 is the Pilgrimage Leave Act of 2026, and that is what is shown here.',
 	],
 	bills: [
-		'Every bill Parliament lists is here, and 350 have been read as documents. Six — Nos. 307, 311, 313, 317, 318 and 361 — have no PDF on Parliament’s site. The rest carry what the index publishes — number, title, status, authors, sitting, and history.',
-		'Parliament’s index lists two bills twice under the same number with different titles; where that happens the entry with the fuller history is the one shown.',
+		'Every bill Parliament lists is here — all 475 — and 464 have been read as documents. The other 11 have no readable document: Nos. 113, 125, 212, 307, 311, 313, 317, 318 and 361 have no PDF on Parliament’s site, and the pages for Nos. 115 and 154 link another measure’s PDF. Those 11 carry what the index publishes — number, title, status, authors, sitting, and history.',
+		'Parliament’s index lists Nos. 323 and 474 twice. No. 323’s second row is a stale copy of its own page; No. 474’s is an old page for the halal bill refiled as No. 475. The first row, the live one, is shown, and each bill is counted once.',
 	],
 	'adopted-resolutions': [
-		'575 of the 578 adopted resolutions have been read as documents. No. 230’s posted PDF stops before its resolving clauses; Nos. 265 and 550 have no PDF.',
+		'576 of the 578 adopted resolutions have been read as documents. Nos. 265 and 550 have no PDF on Parliament’s site. No. 230’s posted PDF stops before its resolving clauses, and its reading says so.',
 	],
 	'proposed-resolutions': [
 		'These come from Parliament’s proposed-resolutions index, not from reading each resolution. Every record carries its number, title, status, authors, sitting, and history — and none carries a summary, provisions, or sector tags, because no resolution page has been read yet.',
-		'The index lists 819 resolutions numbered up to 825; the numbers in between are not published on it.',
+		'The index lists 822 resolutions numbered up to 829. Nos. 781–784, 792, 793 and 826 are not published anywhere on Parliament’s site, which is why its homepage counter (825) and its list (822) disagree.',
 		'A resolution that has since been adopted appears here as filed and again under Adopted Resolutions, which is how Parliament lists them.',
 	],
 	journal: [

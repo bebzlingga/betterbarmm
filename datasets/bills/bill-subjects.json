@@ -5,9 +5,59 @@
 		"method": "Parliament publishes each filed bill as a scan with no text layer. The PDF linked from the bill's own page was rasterised and put through OCR, and the subject was read from what the bill says about itself — its explanatory note and its sections — rather than inferred from the words in its title.",
 		"vocabulary": "The registry's own sector tags, as used by the captured records.",
 		"note": "Subjects only. Nothing else here is derived from the scans, and none of it is presented as something Parliament published in this form.",
-		"count": 272
+		"count": 284
 	},
 	"bills": [
+		{
+			"number": 453,
+			"sectors": [
+				"environment_agriculture_fisheries",
+				"local_government"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/04/Bill-No.-453-MP-Sha-Elijah-Dumama-Alba.pdf",
+			"pages": 5
+		},
+		{
+			"number": 394,
+			"sectors": [
+				"women_children_social_welfare",
+				"infrastructure_transport"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/09/Bill-No.-394-MP-Hussein-P.-Munoz.pdf",
+			"pages": 7
+		},
+		{
+			"number": 355,
+			"sectors": [
+				"local_government",
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/04/Bill-No.-355-MP-Naguib-G.-Sinarimbo-SEAL-Act-of-2025.pdf"
+		},
+		{
+			"number": 340,
+			"sectors": [
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/10/Bill-No.-340-MP-Suharto-S.-Esmael-HANDHELD-BIDET-IN-RESTROOM.pdf",
+			"pages": 2
+		},
+		{
+			"number": 295,
+			"sectors": [
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/04/Bill-No.-295-–-MP-Amilbahar-S.-Mawallil-TO-ENHANCE-DEVELOPMENT-PROJECT-PLANNING-AND-IMPLEMENTATION.pdf",
+			"pages": 6
+		},
+		{
+			"number": 288,
+			"sectors": [
+				"education"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/03/Bill-No.-288-–-MP-Don-Mustapha-A.-Loong-INCENTIVES-TO-BANGSAMORO-AUTHORS-WHO-HAVE-WRITTEN-AND-PUBLISHED-BOOKS-OF-EXCELLENCE.pdf",
+			"pages": 9
+		},
 		{
 			"number": 285,
 			"sectors": [
@@ -1093,15 +1143,6 @@
 			"pages": 11
 		},
 		{
-			"number": 154,
-			"sectors": [
-				"women_children_social_welfare",
-				"peace_security_justice"
-			],
-			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/03/Bill-No.-54-Government-of-the-Day-BUDGET-EXPENDITURE-PROGRAM.pdf",
-			"pages": 14
-		},
-		{
 			"number": 153,
 			"sectors": [
 				"education",
@@ -1401,15 +1442,6 @@
 			],
 			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/11/Bill-No.-116-MP-Amilbahar-Mawallil-Digital-Frontline-Services-Act.pdf",
 			"pages": 6
-		},
-		{
-			"number": 115,
-			"sectors": [
-				"islamic_culture_heritage",
-				"peace_security_justice"
-			],
-			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/11/Bill-No.-115-MP-Amilbahar-Mawallil-TO-STUDY-THE-NECESSITY-OF-.pdf",
-			"pages": 5
 		},
 		{
 			"number": 114,
@@ -1888,6 +1920,14 @@
 			"pages": 8
 		},
 		{
+			"number": 56,
+			"sectors": [
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/BI33571.pdf",
+			"pages": 3
+		},
+		{
 			"number": 55,
 			"sectors": [
 				"health",
@@ -1912,6 +1952,14 @@
 			],
 			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-53-MP-Susana-Anayatin-CREATING-THE-BANGSAMORO-MEDICAL-SCHOOL-IN-COTABATO-CITY.pdf",
 			"pages": 11
+		},
+		{
+			"number": 52,
+			"sectors": [
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/BIBE411.pdf",
+			"pages": 8
 		},
 		{
 			"number": 51,
@@ -2029,6 +2077,15 @@
 			"pages": 3
 		},
 		{
+			"number": 38,
+			"sectors": [
+				"local_government",
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-38-Government-of-the-day-CREATING-OFFICES-FOR-SPECIAL-GEOGRAPHIC-AREAS-SGA-1.pdf",
+			"pages": 4
+		},
+		{
 			"number": 37,
 			"sectors": [
 				"education"
@@ -2114,6 +2171,15 @@
 			],
 			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-28-MP-Laisa-Alamia-INCENTIVIZING-HIGHER-EDUCATION-INSTITUTIONS-WITH.pdf",
 			"pages": 8
+		},
+		{
+			"number": 27,
+			"sectors": [
+				"education",
+				"environment_agriculture_fisheries"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/BIE4581.pdf",
+			"pages": 11
 		},
 		{
 			"number": 26,
@@ -2273,6 +2339,24 @@
 			"pages": 9
 		},
 		{
+			"number": 8,
+			"sectors": [
+				"environment_agriculture_fisheries",
+				"infrastructure_transport"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/BI9EE61-1.pdf",
+			"pages": 7
+		},
+		{
+			"number": 7,
+			"sectors": [
+				"disaster_resilience",
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/BI4AA01-1.pdf",
+			"pages": 37
+		},
+		{
 			"number": 6,
 			"sectors": [
 				"elections_districting"
@@ -2299,11 +2383,28 @@
 			"pages": 9
 		},
 		{
+			"number": 3,
+			"sectors": [
+				"education",
+				"health"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/BIECC61-1.pdf",
+			"pages": 5
+		},
+		{
 			"number": 2,
 			"sectors": [
 				"governance_civil_service"
 			],
 			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-02-MP-Baintan-Ampatuan-CONSTITUTING-THE-BANGSAMORO-PARLIAMENTS-COUNCIL-BPC.pdf",
+			"pages": 5
+		},
+		{
+			"number": 1,
+			"sectors": [
+				"governance_civil_service"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/BIEEC81-2.pdf",
 			"pages": 5
 		}
 	]

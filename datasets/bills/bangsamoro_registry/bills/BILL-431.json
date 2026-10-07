@@ -7,7 +7,7 @@
   "type": "Parliament Bill",
   "session": "4th Regular Session (2025-)",
   "date_filed": "2026-01-19",
-  "current_status": "Enacted — indexed as both BAA 93 and BAA 94",
+  "current_status": "Approved",
   "status_as_of": "2026-07-16",
   "date_approved": "2026-07-16",
   "parliament": "Third Parliament (BTA3)",
@@ -27,7 +27,7 @@
   ],
   "when_will_it_take_effect": "Fifteen (15) days after the law is published in full in at least two (2) newspapers of regional circulation. Passage alone does not start it.",
   "what_this_means_for_you": {
-   "in_short": "NOW LAW — ratified 16 July 2026. (Parliament's index lists the enactment twice, as BAA 93 and BAA 94; the number is unsettled, the law is not.) If you live in one of the eight Special Geographic Area municipalities, one regional authority is now responsible for the big things your town cannot do alone — flood control, drainage, land use, health and sanitation, disaster response — and it has guaranteed money to do them. Your mayor and council still run purely local matters.",
+   "in_short": "NOW LAW as BAA 93 — ratified 16 July 2026. If you live in one of the eight Special Geographic Area municipalities, one regional authority is now responsible for the big things your town cannot do alone — flood control, drainage, land use, health and sanitation, disaster response — and it has guaranteed money to do them. Your mayor and council still run purely local matters.",
    "in_practice": [
     "Area-wide problems get one accountable office instead of eight separate town plans",
     "A master plan for the SGA that Bangsamoro ministries and the eight town development plans must line up with",
@@ -271,7 +271,7 @@
  "related_documents": {
   "original_bill_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/Bill-No.-431-MP-Butch-P.-Malang-4.pdf",
   "committee_report": "pending_capture: available on the measure's official page / full text, not yet scraped",
-  "approved_version": "Not published. Parliament's pages for BAA 93 and BAA 94 carry no attachment as of this capture.",
+  "approved_version": "Published in August 2026 as BAA 93: https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/08/BAA-93.pdf",
   "irr": null,
   "official_page": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-expanding-the-scope-of-authority-and-services-of-special-geographic-area-development-authority-amending-bangsamoro-autonomy-act-no-13-otherwise-known-as-the-bangsamoro-administrative/"
  },
@@ -286,7 +286,7 @@
   ],
   "repeals": "All other laws, decrees, executive orders, rules and regulations inconsistent with this Act, to the extent of the inconsistency (Section 12)",
   "related_bills": [],
-  "enacted_as": "BAA 93 (the index also lists a duplicate BAA 94)",
+  "enacted_as": "BAA 93",
   "enacted_as_note": "Parliament's index carries the enactment twice — as Bangsamoro Autonomy Act No. 93 and again as No. 94, same title and same ratification date of 16 July 2026, both naming Bill 431 as origin. The bill's own legislative history on the index closes with 'BAA No. 93', which points to 93 as the operative number and 94 as an indexing artefact — but the registry records both rather than quietly deleting one.",
   "enacted_as_index": "BAA No. 93"
  },
@@ -294,7 +294,7 @@
   "law_enacted": true,
   "see": "baa/BAA-93.json and baa/BAA-94.json",
   "budget_appropriated": "₱500,000,000 initial, plus 5% of annual Bangsamoro revenue collection",
-  "note": "This record reads the bill as filed on 19 January 2026. Parliament has not published the signed text of this enactment. Its act pages carry no attachment, and the same is true of the two other acts ratified alongside it (BAA 92 and 94) — the three most recent acts on the index are all text-less as of this capture. So the filed bill is currently the only readable version of this law. Parliament may have amended the measure in committee or on the floor — Committee Report No. 223 was adopted the same day it passed second and third reading — so where the enacted text differs, it governs. Parliament's index also carries the enactment twice, as BAA 93 and BAA 94, with the same title and ratification date; the bill's own history line closes with 'BAA No. 93', which points to 93 as the operative number."
+  "note": "This record reads the bill as filed on 19 January 2026. The enacted text was published in August 2026 as BAA 93, and it differs from this bill: the Authority's share of regional revenue falls from 5% plus ₱500,000,000 to 2.5%, reviewed every 3 years, and the Executive Director and 3 deputies become a Chairperson and an Administrator. Where the two differ, the enacted text in BAA 93 governs. Parliament's acts index repeats this act's title under BAA 94, but BAA 94 is a different law, the Pilgrimage Leave Act of 2026."
  },
  "citizen_questions": [
   {

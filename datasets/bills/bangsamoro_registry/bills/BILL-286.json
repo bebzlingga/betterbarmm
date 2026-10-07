@@ -7,7 +7,7 @@
   "type": "Parliament Bill",
   "session": "3rd Regular Session (2024-2025)",
   "date_filed": "2024-02-28",
-  "current_status": "(status not captured)",
+  "current_status": "Second Reading (Consideration and Deliberation Stage)",
   "status_as_of": "2024",
   "date_approved": null
  },
@@ -47,7 +47,7 @@
     "Committee stage": "A committee studies the bill, holds hearings, and can rewrite it before plenary debate.",
     "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws."
    },
-   "status_note": "Bill status: (status not captured) (as of 2024).",
+   "status_note": "Bill status: Second Reading (Consideration and Deliberation Stage). Committee Report No. 175 was adopted on 29 October 2025; the bill has been deferred 27 times since, most recently on 16 July 2026.",
    "benefits": {
     "headline": "IF ENACTED: fiscal self-reliance - the region funding its own future.",
     "direct_benefits": [
@@ -167,7 +167,7 @@
  "citizen_questions": [
   {
    "q": "Is this already a law?",
-   "a": "Not yet - it is at the '(status not captured)' stage (as of 2024)."
+   "a": "Not yet. It is at second reading: Committee Report No. 175 was adopted on 29 October 2025, and the bill has been deferred 27 times since, most recently on 16 July 2026."
   },
   {
    "q": "How can I support or oppose this bill?",
