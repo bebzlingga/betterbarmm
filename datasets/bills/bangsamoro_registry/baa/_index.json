@@ -24,13 +24,13 @@
           "BTA3": 22
         },
         "by_type": {
-          "budget_finance": 20,
+          "budget_finance": 21,
           "hospital_health": 18,
-          "institution_commission": 16,
+          "institution_commission": 15,
           "municipality_lgu": 15,
           "symbols_identity": 12,
-          "labor_social": 9,
-          "priority_code": 7,
+          "labor_social": 11,
+          "priority_code": 5,
           "elections_districting": 6,
           "governance_other": 1
         }
@@ -58,7 +58,7 @@
         }
       ],
       "priority_codes": {
-        "mandated_by": "Bangsamoro Organic Law (RA 11054) requires the BTA to enact seven priority codes during transition.",
+        "mandated_by": "Parliament's own site counts 5 priority codes, all enacted: the Administrative, Civil Service, Education, Electoral and Local Governance Codes.",
         "codes": [
           {
             "code": "Education Code",
@@ -89,20 +89,9 @@
             "baa": 49,
             "date": "2023-09-28",
             "status": "Enacted"
-          },
-          {
-            "code": "Labor and Employment Code",
-            "baa": 82,
-            "date": "2025-11-12",
-            "status": "Enacted"
-          },
-          {
-            "code": "Revenue Code",
-            "baa": null,
-            "date": null,
-            "status": "PENDING - Bill 286 filed 2024, still unenacted as of Aug 2026; the last unfinished priority code"
           }
-        ]
+        ],
+        "note": "The Organic Law also calls for a Revenue Code, which Parliament does not count among its priority codes. Bill 286, filed in 2024, was still unenacted as of August 2026."
       },
       "amendment_graph": {
         "14": [
@@ -986,7 +975,7 @@
       "date_ratified": "2025-11-12",
       "status": "IN FORCE",
       "tags": [
-        "priority_code"
+        "labor_social"
       ]
     },
     {
@@ -1007,7 +996,7 @@
       "date_ratified": "2025-12-09",
       "status": "IN FORCE",
       "tags": [
-        "priority_code"
+        "budget_finance"
       ]
     },
     {
@@ -1082,8 +1071,8 @@
     },
     {
       "baa_number": 92,
-      "short_title": "Provides for a Charter for a DA'WAH Center",
-      "one_liner": "Provides for a Charter for a DA'WAH Center in BARMM.",
+      "short_title": "Bangsamoro Da’wah Center Act of 2026",
+      "one_liner": "Creates a Da’wah Center and Council to train Da’wah workers and manage endowments, with no government funds allowed.",
       "date_ratified": "2026-07-15",
       "status": "IN FORCE",
       "tags": [
@@ -1092,8 +1081,8 @@
     },
     {
       "baa_number": 93,
-      "short_title": "Expands the Scope of Authority and Services of",
-      "one_liner": "Expands the Scope of Authority and Services of the SGA Development Authority (amending Baa 13 and Baa 49).",
+      "short_title": "Expanded Special Geographic Area Development Authority",
+      "one_liner": "Makes the SGA Development Authority permanent, with a Board, area-wide services and a fixed 2.5% of all regional revenue every year.",
       "date_ratified": "2026-07-16",
       "status": "IN FORCE",
       "tags": [
@@ -1102,12 +1091,12 @@
     },
     {
       "baa_number": 94,
-      "short_title": "Expands the Scope of Authority and Services of",
-      "one_liner": "Expands the Scope of Authority and Services of the SGA Development Authority (amending Baa 13 and Baa 49) [listed Twice on the Official Index Alongside Baa 9...",
+      "short_title": "Pilgrimage Leave Act of 2026",
+      "one_liner": "Grants BARMM government workers with 3 years of service up to 22 paid working days for a pilgrimage, once in a lifetime.",
       "date_ratified": "2026-07-16",
       "status": "IN FORCE",
       "tags": [
-        "institution_commission"
+        "labor_social"
       ]
     }
   ]

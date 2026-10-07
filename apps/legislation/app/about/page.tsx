@@ -163,9 +163,14 @@ export default function AboutPage() {
 	const archives = [
 		{
 			label: 'Records indexed',
-			value: Object.values(counts)
-				.reduce((sum, count) => sum + count, 0)
-				.toLocaleString(),
+			// `resolutions` is adopted and proposed together, and journals are
+			// not measures, so summing every count would add both in twice over.
+			value: (
+				counts.acts +
+				counts.bills +
+				counts['adopted-resolutions'] +
+				counts['proposed-resolutions']
+			).toLocaleString(),
 			detail: 'Every measure this registry has captured, across all five archives.',
 		},
 		...categories.map((category) => ({

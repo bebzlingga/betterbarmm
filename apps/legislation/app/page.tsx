@@ -19,7 +19,13 @@ export default function HomePage() {
 	const counts = getCategoryCounts()
 	const bills = getDataset('bills')
 
-	const totalRecords = Object.values(counts).reduce((sum, count) => sum + count, 0)
+	// The four measure indexes Parliament counts. `resolutions` is adopted and
+	// proposed together, and journals are not measures, so neither is added in.
+	const totalRecords =
+		counts.acts + counts.bills + counts['adopted-resolutions'] + counts['proposed-resolutions']
+	const priorityCodes = getDataset('acts').records.filter((record) =>
+		record.types.some((type) => type.value === 'priority_code'),
+	).length
 
 	const countBillsWhere = (predicate: (status: string) => boolean) =>
 		bills.records.filter((record) => predicate(record.status.toLowerCase())).length
@@ -98,26 +104,33 @@ export default function HomePage() {
 			/>
 
 			<StatBand
+				// The same five figures, in the same order, as Parliament's own
+				// homepage, so the two can be read against each other.
 				stats={[
 					{
-						label: 'Records indexed',
-						value: totalRecords.toLocaleString(),
-						detail: 'Across acts, bills, and adopted resolutions.',
-					},
-					{
-						label: 'Laws in force',
+						label: 'Bangsamoro Autonomy Acts',
 						value: counts.acts.toLocaleString(),
-						detail: 'Bangsamoro Autonomy Acts ratified since 2019.',
+						detail: 'Regional laws ratified since 2019.',
 					},
 					{
-						label: 'Bills tracked',
+						label: 'Priority codes',
+						value: priorityCodes.toLocaleString(),
+						detail: 'Administrative, Civil Service, Education, Electoral and Local Governance.',
+					},
+					{
+						label: 'Bills',
 						value: counts.bills.toLocaleString(),
-						detail: 'Proposals moving through Parliament right now.',
+						detail: 'Every bill filed in the current Parliament.',
 					},
 					{
-						label: 'Resolutions',
+						label: 'Adopted resolutions',
 						value: counts['adopted-resolutions'].toLocaleString(),
 						detail: 'Positions Parliament has formally adopted.',
+					},
+					{
+						label: 'Proposed resolutions',
+						value: counts['proposed-resolutions'].toLocaleString(),
+						detail: 'Every resolution filed, adopted or not.',
 					},
 				]}
 			/>

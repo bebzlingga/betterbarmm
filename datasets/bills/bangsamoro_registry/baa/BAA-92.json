@@ -2,85 +2,153 @@
  "record_type": "bangsamoro_autonomy_act",
  "basic_information": {
   "baa_number": 92,
-  "short_title": "Provides for a Charter for a DA'WAH Center",
-  "official_title": "AN ACT PROVIDING FOR A CHARTER FOR A DA'WAH CENTER IN BARMM",
+  "short_title": "Bangsamoro Da’wah Center Act of 2026",
+  "official_title": "AN ACT PROVIDING FOR A CHARTER FOR A DA’WAH CENTER IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO",
   "type": "Bangsamoro Autonomy Act (regional law)",
   "enacting_parliament": "BTA3",
   "date_ratified": "2026-07-15",
-  "current_status": "ENACTED - IN FORCE"
+  "current_status": "ENACTED - IN FORCE",
+  "session": "Fourth Regular Session, begun 15 September 2022",
+  "date_passed": "2026-07-15",
+  "date_passed_hijri": "Safar 01, 1447 (as printed; the acts passed the next day print Safar 02, 1448)",
+  "date_approved_by_chief_minister": null,
+  "approved_by": "Not shown. The approval block of the published copy reads “Xxx”.",
+  "signed_by": [
+   "Mohammad S. Yacob, Speaker",
+   "Prof. Raby B. Angkal, Secretary-General"
+  ],
+  "origin_bills": "Parliament Bill No. 463",
+  "effectivity": "15 days after publication in the Bangsamoro Gazette or in 1 newspaper of regional circulation in the Bangsamoro Autonomous Region"
  },
  "citizen_summary": {
-  "what_is_this_about": "Provides for a Charter for a DA'WAH Center in BARMM.",
-  "why_was_it_proposed": "pending_capture: available on the measure's official page / full text, not yet scraped (explanatory note)",
-  "what_will_change": "Provides for a Charter for a DA'WAH Center in BARMM.",
+  "what_is_this_about": "Creates a Bangsamoro Da’wah Center to train Da’wah workers, research Da’wah programmes and manage endowments (waqf) for community welfare, governed by a Bangsamoro Da’wah Council. Section 12 bars the use of any government funds, and Section 11 says its employees are not government employees.",
+  "why_was_it_proposed": "Section 2 grounds it in Section 20, Article X of the 1987 Constitution and the Organic Law: promoting the moral, cultural and social development of the Bangsamoro people. It names 2 aims — competent and well-equipped Da’wah workers, and transparent, accountable management of endowments meant for Bangsamoro communities.",
+  "what_will_change": "A Center headed by an Executive Director, with Training, Research and Policy Development, Endowment, and Administrative and Finance units, receives and distributes endowments and certifies trained Da’wah workers. A 9-member Council of the Darul-Ifta’, ulama associations, the leadership institute and Parliament makes its policy and by-laws. Participation is voluntary, and the act states it favours or establishes no religion.",
   "who_will_be_affected": [
-   "Du'at & asatidz",
-   "Communities",
-   "Non-Muslims"
+   "Da’wah workers, who gain a training programme and certificates",
+   "Ulama associations in the 5 provinces and the Special Geographic Area, which each send 1 representative to the Council",
+   "Donors of endowments, and the communities that benefit from them",
+   "The Bangsamoro Darul-Ifta’, which sits on the Council and convenes the first election of its Chairperson"
   ],
-  "when_will_it_take_effect": "Ratified 2026-07-15; effectivity per the Act's final section (typically 15 days after Official Gazette publication).",
+  "when_will_it_take_effect": "15 days after publication in the Bangsamoro Gazette or in 1 newspaper of regional circulation. Passed 15 July 2026; the published copy shows no Chief Minister approval date. The Council's by-laws are due within 90 days of effectivity.",
   "what_this_means_for_you": {
-   "in_short": "Charters an official Da'wah Center for BARMM - an institution for Islamic propagation, education, and guidance. For Muslim communities it formalizes state support for da'wah work; for asatidz and du'at it creates an institutional home and standards.",
+   "in_short": "PASSED 15 JULY 2026. A Da’wah Center and Council are created in regional law to train Da’wah workers and manage endowments for community welfare — but the act forbids any government money for it, and its staff are not government employees.",
    "in_practice": [
-    "A chartered body to coordinate da'wah programs, training, and materials",
-    "Complements the Darul-Ifta' (fatwa body) and the Kulliyyah for Islamic Studies (BAA 50)"
+    "A Bangsamoro Da’wah Center: training, research, endowment management, and secretariat to the Council",
+    "Headed by an Executive Director appointed by the Council for a 5-year term",
+    "A Bangsamoro Da’wah Council of 9 members, chaired by a Chairperson the members elect",
+    "4 units: Training; Research and Policy Development; Endowment; Administrative and Finance",
+    "The Training Unit issues certificates to trained Da’wah workers",
+    "Trainers need a 4-year degree in Kulliyatud Da’wah or a related field",
+    "The Council may accept endowments, donations, grants and gifts from domestic or foreign sources",
+    "No government funds may be used, and employees are not public servants for the purposes of the act",
+    "An overall assessment of the Center 2 years after the first Center is established",
+    "Participation is voluntary"
    ],
    "for_specific_groups": {
-    "Du'at & asatidz": "Training, accreditation, and program support",
-    "Communities": "Organized, moderate religious guidance with government backing",
-    "Non-Muslims": "No obligations imposed; this concerns Islamic institutional life"
+    "Da’wah workers": "Capacity-building in communication, community engagement and cultural discourse, with certificates from the Training Unit. Nothing in the act makes training or certification a condition for doing Da’wah work.",
+    "Ulama associations": "Each duly accredited association from the 5 provinces and the Special Geographic Area sends 1 representative to the Council. The act does not say who accredits them.",
+    "Donors": "Endowments, in cash or in kind, go to the Center's Endowment Unit, which determines qualified beneficiaries and distributes them under applicable guidelines.",
+    "Communities": "The intended beneficiaries of endowments. The act does not set how beneficiaries are chosen beyond the Endowment Unit's function of determining them.",
+    "Non-Muslims": "No obligation is imposed. Section 2 states that nothing in the act diminishes anyone's religious beliefs or practices or favours or establishes any religion."
    },
-   "where_this_applies": "All of BARMM unless the title names a specific place",
-   "when_you_will_feel_it": "Laws take effect shortly after publication, but felt impact follows budgets, IRRs, and agency rollout - typically months, not days",
+   "where_this_applies": "The whole BARMM. Council representation is drawn from the 5 provinces and the Special Geographic Area; Cotabato City is not named.",
+   "when_you_will_feel_it": "Once the Council is constituted and adopts its by-laws, due within 90 days of effectivity. The first Chairperson is elected at a general assembly called by the Bangsamoro Darul-Ifta’.",
    "what_you_can_do": [
-    "Ask your municipal/barangay office or the implementing ministry how and when it will roll out where you live",
-    "Read the full text (PDF) on the Parliament's website or the Official Gazette of the Bangsamoro - the final sections say when it takes effect and who must act",
-    "If it isn't being implemented, raise it with your Member of Parliament or through the ministry's public assistance desk"
+    "If you belong to an accredited ulama association, ask how your province's representative to the Council will be chosen",
+    "If you give an endowment, ask the Endowment Unit how it is recorded and to whom it is distributed",
+    "If you are a Da’wah worker, watch for the Training Unit's programmes and its technical standards"
    ],
-   "watch_out_for": [],
+   "watch_out_for": [
+    "Section 12: “No funds from the government shall be used for the implementation of this Act.” The Center runs on endowments, donations and grants alone.",
+    "Section 11: the Center's employees are not public servants or government employees for the purposes of the act.",
+    "The act does not say whether the Center is a government body or what its legal personality is, and it does not mention the Commission on Audit.",
+    "Transparency in managing endowments is a stated duty of the Endowment Unit, but no report or published account is required.",
+    "The approval block on the published copy reads “Xxx”: no Chief Minister signature or date appears.",
+    "The Hijri date of passage is printed as Safar 01, 1447; the acts passed the next day print 1448."
+   ],
    "key_terms_explained": {
-    "BAA": "Bangsamoro Autonomy Act - a regional law passed by the Bangsamoro Parliament, applying inside BARMM alongside national laws.",
-    "IRR": "Implementing Rules and Regulations - the ministry-issued 'how-to' that turns a law's text into procedures; many laws only bite once the IRR is out.",
-    "GAA": "General Appropriations Act - the annual budget law deciding how much each ministry and program gets."
+    "Da’wah": "As defined in Section 3: activities aimed at promoting ethical communication, cultural awareness and values-based education consistent with the Bangsamoro identity.",
+    "Endowment (Waqf)": "Voluntary contributions, in cash or in kind, dedicated to charitable, social welfare or community development purposes.",
+    "Kulliyatud Da’wah": "The College of Preaching — an academic faculty that trains people in the methodology of propagation, theology, comparative religion and oration.",
+    "Bangsamoro Darul-Ifta’ (BDI)": "The region's religious advisory body. Its Executive Director sits on the Council and it calls the assembly that elects the first Chairperson.",
+    "BLMI": "Bangsamoro Leadership and Management Institute, which sends 1 representative to the Council."
    },
+   "status_note": "Passed Safar 01, 1447 (as printed) / 15 July 2026. The published copy bears the signatures of the Speaker and the Secretary-General; the approval block reads “Xxx”.",
    "benefits": {
-    "headline": "Organized, supported da'wah with an institutional home.",
+    "headline": "A training home for Da’wah workers and rules for community endowments.",
     "direct_benefits": [
      {
-      "benefit": "Training, accreditation, and program support for du'at and asatidz",
-      "who_gets_it": "Islamic propagation workers",
-      "how_to_access": "Through the chartered Da'wah Center"
+      "benefit": "Capacity-building and a certificate for Da’wah workers",
+      "who_gets_it": "Da’wah workers",
+      "how_to_access": "Through the Center's Training Unit"
      },
      {
-      "benefit": "Coordinated, moderate religious guidance for communities",
-      "who_gets_it": "Muslim residents",
-      "how_to_access": "Center programs, mosques, media"
+      "benefit": "Distribution of endowments to qualified beneficiaries",
+      "who_gets_it": "Bangsamoro communities determined by the Endowment Unit",
+      "how_to_access": "Under guidelines the Council and the Center issue"
      }
     ],
     "indirect_benefits": [
-     "A counterweight to extremist messaging"
+     "Research and interfaith dialogue programmes named among the act's objectives"
     ],
     "limitations": [
-     "No obligations on non-Muslims; benefits are within Islamic institutional life"
+     "No government funds may be used; the Center depends entirely on gifts.",
+     "No public reporting of endowments is required.",
+     "Participation is voluntary."
     ]
-   }
+   },
+   "your_responsibilities": {
+    "for_citizens": [
+     "None. Participation in the act's programmes, activities and services is voluntary."
+    ]
+   },
+   "what_is_prohibited": [
+    "The use of government funds to implement the act.",
+    "The act defines no offence for individuals."
+   ],
+   "penalties": {
+    "for_citizens": "None. The act creates no offence, fine or imprisonment."
+   },
+   "where_to_complain": {
+    "first_stop": "The Bangsamoro Da’wah Council, the Center's policy-making body",
+    "note": "The act creates no complaints procedure of its own."
+   },
+   "everyday_scenarios": [
+    "A family gives a parcel of land as waqf for a community madrasah. Under the act the Endowment Unit receives it and distributes or applies it to qualified beneficiaries under applicable guidelines; the act does not require the transaction to be published.",
+    "An ustadz completes a Training Unit programme and receives a certificate. Nothing in the act stops someone without a certificate from preaching."
+   ]
   }
  },
  "key_provisions": [
-  "Full section-by-section provisions: pending_capture: available on the measure's official page / full text, not yet scraped"
+  "Section 1 — Short title: the “Bangsamoro Da’wah Center Act of 2026”.",
+  "Section 2 — Policy, citing Section 20, Article X of the 1987 Constitution and RA 11054: promote the moral, cultural and social development of the Bangsamoro people; institutionalise capacity-building for Da’wah workers; ensure transparency and accountability in endowments. Participation is voluntary, and nothing in the act diminishes anyone's religious beliefs or favours or establishes any religion.",
+  "Section 3 — Defines Council, Da’wah, Da’wah workers, Endowment (Waqf) and Kulliyatud Da’wah.",
+  "Section 4 — 4 objectives: Da’wah worker competencies; research and development of Da’wah programmes; a transparent and accountable endowment system; and interfaith dialogue.",
+  "Section 5 — Creates the Bangsamoro Da’wah Center as implementing agency: receiving, managing and distributing endowments; training Da’wah workers; research; and secretariat to the Council. It is headed by an Executive Director appointed by the Council for 5 years, who reports directly to the Council.",
+  "Section 6 — An overall assessment of operations and programmes 2 years after the first Center is established.",
+  "Section 7 — Creates the Bangsamoro Da’wah Council (BDC) as policy-making and advisory body: the Executive Director of the Bangsamoro Darul-Ifta’; 1 representative each from duly accredited ulama associations of the 5 provinces and the Special Geographic Area; a BLMI representative; and a representative of Parliament. Members elect the Chairperson; the first is elected at a general assembly called by the Darul-Ifta’.",
+  "Section 8 — Council powers: by-laws, policies and guidelines; oversight of Da’wah activities; standards; accepting endowments, donations, grants and gifts from domestic or foreign sources subject to Bangsamoro Government policies.",
+  "Section 9 — 4 units: Training (programmes, standards, certificates); Research and Policy Development; Endowment (determining qualified beneficiaries, receiving and distributing endowments, transparency); Administrative and Finance.",
+  "Section 10 — Trainers must hold a 4-year degree in Kulliyatud Da’wah or a related field and have adequate knowledge, competence and experience.",
+  "Section 11 — Center employees are not public servants or government employees for the purposes of the act.",
+  "Section 12 — No government funds may be used to implement the act.",
+  "Section 13 — The Council promulgates by-laws within 90 days of effectivity.",
+  "Sections 14–16 — Separability, repealing clause, and effectivity 15 days after publication in the Bangsamoro Gazette or 1 newspaper of regional circulation."
  ],
  "impact": {
   "who_benefits": [
-   "Muslim communities",
-   "Religious institutions"
+   "Da’wah workers",
+   "Communities receiving endowments",
+   "Ulama associations represented on the Council"
   ],
   "impact_tags": [
-   "institution_commission",
-   "islamic_culture_heritage"
+   "islamic_culture_heritage",
+   "institution_commission"
   ],
   "estimated_beneficiaries": null,
-  "allocated_budget": null,
-  "figures_note": "Shown only when stated in official documents; none captured for this record."
+  "allocated_budget": "None. Section 12 bars the use of government funds; the Center is funded by endowments, donations, grants and gifts.",
+  "figures_note": "The act states no amount."
  },
  "legislative_journey": [
   {
@@ -108,67 +176,70 @@
   "principal_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
   "co_authors": "pending_capture: available on the measure's official page / full text, not yet scraped",
   "committee": "pending_capture: available on the measure's official page / full text, not yet scraped",
-  "note": "Authors are recorded on the origin bill's page."
+  "note": "Authors are recorded on the origin bill's page. Origin: Bill 463."
  },
  "related_documents": {
-  "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
-  "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
+  "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/08/BAA-92.pdf",
+  "irr": null
  },
  "related_legislation": {
   "amends": [],
   "amended_by": [],
   "repeals": null,
-  "origin_bill": null
+  "origin_bill": "Bill 463",
+  "related_note": "Enacted from Bill 463, filed as the “Bangsamoro Da’wah Activities Act of 2026” with a Section 12 appropriating funds; the enacted Section 12 forbids government funds instead. The Bangsamoro Darul-Ifta’, which sits on the Council, is an office under BAA 13, the Bangsamoro Administrative Code."
  },
  "implementation_status": {
   "law_enacted": true,
   "in_force": true,
-  "legal_challenge_note": null,
-  "irr_issued": "unknown - IRR registry pending capture",
+  "budget_appropriated": null,
+  "irr_status": "None required. The Council promulgates by-laws within 90 days of effectivity; not yet captured.",
   "implementing_agency": {
-   "agency": "The created body itself",
-   "inferred": true
+   "agency": "Bangsamoro Da’wah Center, under the Bangsamoro Da’wah Council",
+   "inferred": false
   },
-  "budget_appropriated": "Not stated in title",
-  "full_text_note": "No PDF of the enacted text has been published on Parliament's acts index as of 19 August 2026. The measure page exists but carries no document link, so this record has not been read from the enacted text. Fields below are derived from the official title only."
+  "note": "Read from the enacted text as published, all 5 pages. The approval block reads “Xxx”, so no Chief Minister approval date is recorded, and the Hijri date of passage is printed as Safar 01, 1447 where the acts passed the next day print 1448. Whether the Council has been constituted is not recorded here."
  },
  "citizen_questions": [
   {
-   "q": "Is this law in force?",
-   "a": "Yes - ratified 2026-07-15 and in force unless amended (see related legislation)."
+   "q": "Is the government paying for this?",
+   "a": "No. Section 12 says no government funds shall be used to implement the act. The Center relies on endowments, donations, grants and gifts the Council accepts."
   },
   {
-   "q": "Who implements it?",
-   "a": "The created body itself (inferred from the law's subject; the Act itself designates the lead)."
+   "q": "Are the Center's staff government employees?",
+   "a": "No. Section 11 says they are not public servants or government employees for the purposes of the act."
   },
   {
-   "q": "Does it have implementing rules (IRR)?",
-   "a": "IRRs are published at the Parliament's IRR page - not yet linked in this registry (pending capture)."
+   "q": "Who runs it?",
+   "a": "An Executive Director appointed by the Council for 5 years. The Council itself has 9 members: the Darul-Ifta’'s Executive Director, 6 ulama representatives from the 5 provinces and the Special Geographic Area, a BLMI representative and a representative of Parliament."
   },
   {
-   "q": "Where do I read the full text?",
-   "a": "PDF on the Bangsamoro Autonomy Acts index at parliament.bangsamoro.gov.ph and the Official Gazette of the Bangsamoro."
+   "q": "Do I have to take part?",
+   "a": "No. Participation in its programmes, activities and services is voluntary, and the act states it neither diminishes anyone's religious practice nor favours or establishes any religion."
+  },
+  {
+   "q": "Will endowment accounts be public?",
+   "a": "The act tells the Endowment Unit to ensure transparency and accountability, but it requires no report, audit or publication."
   }
  ],
  "display_header": {
   "line1": "Bangsamoro Autonomy Act No. 92",
-  "line2": "Provides for a Charter for a DA'WAH Center",
+  "line2": "Bangsamoro Da’wah Center Act of 2026",
   "badges": [
    "ENACTED",
-   "Institution Commission",
+   "Culture & Heritage",
    "2026"
   ],
-  "what_this_does": "Provides for a Charter for a DA'WAH Center in BARMM.",
-  "who_it_affects": "Muslim communities · Religious institutions",
-  "effective": "2026-07-15"
+  "what_this_does": "Creates a Da’wah Center and Council to train Da’wah workers and manage endowments, with no government funds allowed.",
+  "who_it_affects": "Da’wah workers · ulama associations · endowment donors and beneficiaries"
  },
  "views": {
-  "simple": "Provides for a Charter for a DA'WAH Center in BARMM.",
-  "official": "AN ACT PROVIDING FOR A CHARTER FOR A DA'WAH CENTER IN BARMM"
+  "simple": "Creates a Bangsamoro Da’wah Center, governed by a Bangsamoro Da’wah Council, to train and certify Da’wah workers, research Da’wah programmes and manage endowments for community welfare. No government funds may be used, and its employees are not government employees.",
+  "official": "AN ACT PROVIDING FOR A CHARTER FOR A DA’WAH CENTER IN THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO"
  },
  "provenance": {
-  "source": "parliament.bangsamoro.gov.ph (indexes + rosters), fetched 2026-08-14",
-  "generation": "Plain-language fields are rule-based transformations of official titles by Claude; anything marked 'inferred' is an educated mapping, and 'pending_capture' means the official record has it but it wasn't scraped yet. Verify against full text before citing.",
-  "reading_status": "not read - enacted text not published by source"
+  "source": "Bangsamoro Autonomy Act No. 92, enacted text as published (Parliament's acts index), all 5 pages. Bill-level facts from Parliament's bills index entry for Bill 463.",
+  "generation": "Plain-language fields written from the enacted text on 7 October 2026. Section references are quoted from that document. Verify against the official copy before citing.",
+  "reading_status": "read"
  }
 }

@@ -51,6 +51,8 @@ type RawMeasure = {
 	url?: unknown
 	status?: unknown
 	as_of?: unknown
+	/** The acts index dates by ratification, already ISO. */
+	date_ratified?: unknown
 	session?: unknown
 	principal_authors?: unknown
 	co_authors?: unknown
@@ -130,14 +132,37 @@ function formatDate(isoValue: string): string {
 
 const files = SOURCES.map((source) => ({
 	source,
-	data: readJson<{ generated?: string; source?: string; measures?: RawMeasure[]; bills?: RawMeasure[] }>(
-		path.join(DATASET_ROOT, source.file),
-	),
+	data: readJson<{
+		generated?: string
+		source?: string
+		measures?: RawMeasure[]
+		bills?: RawMeasure[]
+		acts?: RawMeasure[]
+	}>(path.join(DATASET_ROOT, source.file)),
 }))
+
+/**
+ * Parliament's indexes list some measures twice. Bill 474's number also
+ * carries a superseded page for the halal bill refiled as 475, and Bill 323
+ * has a stale "Filed" page beside its current one; in both the first entry is
+ * the live one. The acts index gives BAA 94 the title of BAA 93 — the enacted
+ * text is the Pilgrimage Leave Act — so an act repeating an earlier act's
+ * title and ratification date is dropped and the captured title stands in.
+ * (The title alone repeats legitimately: BAA 63, 75 and 91 are all
+ * supplemental appropriations acts.)
+ */
+const seen = new Set<string>()
+const firstListing = (measure: OfficialMeasure) => {
+	const keys = [`${measure.category}-${measure.number}`]
+	if (measure.category === 'acts') keys.push(`acts-${measure.title}-${measure.dateIso}`)
+	if (keys.some((key) => seen.has(key))) return false
+	for (const key of keys) seen.add(key)
+	return true
+}
 
 const measures: OfficialMeasure[] = files.flatMap(({ source, data }) =>
 	// `bills` was the key the first capture wrote; `measures` is the shared one.
-	(data?.measures ?? data?.bills ?? [])
+	(data?.measures ?? data?.bills ?? data?.acts ?? [])
 		.map((raw): OfficialMeasure | null => {
 			const number = typeof raw.number === 'number' ? raw.number : Number(toStringValue(raw.number))
 			const title = toStringValue(raw.title)
@@ -145,7 +170,7 @@ const measures: OfficialMeasure[] = files.flatMap(({ source, data }) =>
 
 			const status = toStringValue(raw.status) || 'Status not recorded'
 			const described = describeStatus(status)
-			const dateIso = toIsoDate(toStringValue(raw.as_of))
+			const dateIso = toIsoDate(toStringValue(raw.as_of)) || toStringValue(raw.date_ratified)
 
 			return {
 				category: source.category,
@@ -166,7 +191,8 @@ const measures: OfficialMeasure[] = files.flatMap(({ source, data }) =>
 				becameAct: toStringValue(raw.became_act),
 			}
 		})
-		.filter((measure): measure is OfficialMeasure => measure !== null),
+		.filter((measure): measure is OfficialMeasure => measure !== null)
+		.filter(firstListing),
 )
 
 const byKey = new Map<string, OfficialMeasure>()
