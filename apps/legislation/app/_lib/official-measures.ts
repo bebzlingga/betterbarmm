@@ -142,10 +142,10 @@ const files = SOURCES.map((source) => ({
 }))
 
 /**
- * Parliament's indexes list some measures twice. Bill 474's number also
- * carries a superseded page for the halal bill refiled as 475, and Bill 323
- * has a stale "Filed" page beside its current one; in both the first entry is
- * the live one. The acts index gives BAA 94 the title of BAA 93 — the enacted
+ * Parliament's indexes list some measures twice. Bill 323 has a stale
+ * "Filed" page beside its current one, and until October 2026 Bill 474's
+ * number also carried a superseded page for the halal bill refiled as 475; in
+ * both the first entry is the live one. The acts index gives BAA 94 the title of BAA 93 — the enacted
  * text is the Pilgrimage Leave Act — so an act repeating an earlier act's
  * title and ratification date is dropped and the captured title stands in.
  * (The title alone repeats legitimately: BAA 63, 75 and 91 are all

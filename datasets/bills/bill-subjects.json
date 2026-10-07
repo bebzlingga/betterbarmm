@@ -5,9 +5,18 @@
 		"method": "Parliament publishes each filed bill as a scan with no text layer. The PDF linked from the bill's own page was rasterised and put through OCR, and the subject was read from what the bill says about itself — its explanatory note and its sections — rather than inferred from the words in its title.",
 		"vocabulary": "The registry's own sector tags, as used by the captured records.",
 		"note": "Subjects only. Nothing else here is derived from the scans, and none of it is presented as something Parliament published in this form.",
-		"count": 284
+		"count": 285
 	},
 	"bills": [
+		{
+			"number": 476,
+			"sectors": [
+				"budget_appropriations",
+				"infrastructure_transport"
+			],
+			"pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Bill-No.-476-MP-Baintan-A.-Ampatuan.pdf",
+			"pages": 7
+		},
 		{
 			"number": 453,
 			"sectors": [

@@ -1,13 +1,59 @@
 {
  "source": "https://parliament.bangsamoro.gov.ph/bills/",
- "generated": "2026-08-15",
+ "generated": "2026-10-07",
  "bills": [
+  {
+   "number": 476,
+   "title": "AN ACT AMENDING SECTION 53 OF BANGSAMORO AUTONOMY ACT (BAA) NO. 65, OTHERWISE KNOWN AS THE FY 2025 GENERAL APPROPRIATIONS ACT OF THE BANGSAMORO, TO EXTEND THE VALIDITY OF FY 2025 INFRASTRUCTURE APPROPRIATIONS AND TO ALLOW THE PAYMENT OF VALIDLY INCURRED OBLIGATIONS",
+   "url": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-amending-section-53-of-bangsamoro-autonomy-act-baa-no-65-otherwise-known-as-the-fy-2025-general-appropriations-act-of-the-bangsamoro-to-extend-the-validity-of-fy-2025-infrastructure-approp/",
+   "status": "Second Reading (Committee Stage)",
+   "as_of": "10/06/2026",
+   "session": "fourth-regular-session-2025",
+   "principal_authors": [
+    "AMPATUAN, BAINTAN A.",
+    "UY-OYOD, SITTIE FAHANIE S.",
+    "HADJI ABDULLAH, KHALID M.",
+    "LORENA, JOSE I."
+   ],
+   "co_authors": [
+    "TAN, NABIL A.",
+    "ALAMIA, LAISA M.",
+    "LOONG, DON MUSTAPHA A.",
+    "ESMAEL, SUHARTO S.",
+    "YACOB, MOHAMMAD S.",
+    "PACASEM, UBAIDA C.",
+    "LIM, JOHN ANTHONY L.",
+    "ANAYATIN, SUSANA S.",
+    "SALIK, ALI O.",
+    "ORANON, SUWAIB L.",
+    "SEMA, ROMEO K.",
+    "HASSAN, HATIMIL E.",
+    "BALINDONG, AHMAD AMIR A.",
+    "SEMA, OMAR YASSER C.",
+    "ALAUDDIN, MOSBER E.",
+    "CANDAO, MA-AROUPH B.",
+    "ANTAO, MOHAMMAD KELIE U.",
+    "BENITO, ABDULBASIT R.",
+    "KARON, BAI ALI S.",
+    "ABU, MUDJIB C.",
+    "ASNAWIE, DAN S.",
+    "ISMAEL, RASUL E.",
+    "BAYAM, ZULFIKAR-ALI S."
+   ],
+   "history": [
+    "Filed – 10/5/2026",
+    "First Reading – 10/5/2026",
+    "Referred to the Committee on Finance, Budget and Management – 10/6/2026 (Resumption)"
+   ],
+   "committee_referrals": "Committee on Finance, Budget, and Management",
+   "became_act": ""
+  },
   {
    "number": 474,
    "title": "AN ACT AMENDING SECTION 3, CHAPTER 1, TITLE XVI OF BANGSAMORO AUTONOMY ACT NO. 13, OTHERWISE KNOWN AS THE BARMM ADMINISTRATIVE CODE OF 2023, RELATIVE TO THE COMPOSITION OF THE BANGSAMORO WOMEN COMMISSION, AND FOR OTHER PURPOSES",
    "url": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-amending-section-3-chapter-1-title-xvi-of-bangsamoro-autonomy-act-no-13-otherwise-known-as-the-barmm-administrative-code-of-2023-relative-to-the-composition-of-the-bangsamoro-women-commiss/",
-   "status": "First Reading",
-   "as_of": "07/16/2026",
+   "status": "Second Reading (Committee Stage)",
+   "as_of": "10/05/2026",
    "session": "fourth-regular-session-2025",
    "principal_authors": [
     "ANAYATIN, SUSANA S.",
@@ -22,21 +68,24 @@
     "ALAUDDIN, MOSBER E.",
     "ANTOK, TOMANDA D.",
     "DILANGALEN, HASHEMI N.",
-    "KARON, FAIZAL G."
+    "KARON, FAIZAL G.",
+    "SINOLINDING, KADIL M., JR.",
+    "BAYAM, ZULFIKAR-ALI S."
    ],
    "history": [
     "Filed – 7/15/2026",
-    "First Reading – 7/16/2026 (Resumption)"
+    "First Reading – 7/16/2026 (Resumption)",
+    "Referred to the Committee on Amendments, Revision, and Codification of Laws – 10/5/2026"
    ],
-   "committee_referrals": "",
+   "committee_referrals": "Committee on Amendments, Revision and Codification of Laws",
    "became_act": ""
   },
   {
    "number": 475,
    "title": "AN ACT CREATING THE BANGSAMORO HALAL DEVELOPMENT AUTHORITY, DEFINING ITS POWERS AND FUNCTIONS ON HALAL CERTIFICATION AND ENFORCEMENT, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
    "url": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-the-bangsamoro-halal-development-authority-defining-its-powers-and-functions-on-halal-certification-and-enforcement-appropriating-funds-therefor-and-for-other-purposes-2/",
-   "status": "First Reading",
-   "as_of": "07/16/2026",
+   "status": "Second Reading (Committee Stage)",
+   "as_of": "10/05/2026",
    "session": "fourth-regular-session-2025",
    "principal_authors": [
     "LIM, JOHN ANTHONY L.",
@@ -53,44 +102,18 @@
     "ANAYATIN, SUSANA S.",
     "DILANGALEN, HASHEMI N.",
     "KARON, FAIZAL G.",
-    "BAYAM, ZULFIKAR-ALI S."
+    "BAYAM, ZULFIKAR-ALI S.",
+    "SINOLINDING, KADIL M., JR.",
+    "PARCASIO, RANDOLPH C.",
+    "CANDAO, MA-AROUPH B."
    ],
    "history": [
     "Filed – 7/16/2026",
-    "First Reading – 7/16/2026 (Resumption)"
+    "First Reading – 7/16/2026 (Resumption)",
+    "Referred to the Committee on Trade, Investment and Tourism",
+    "Committee on Science and Technology – 10/5/2026"
    ],
-   "committee_referrals": "",
-   "became_act": ""
-  },
-  {
-   "number": 474,
-   "title": "AN ACT CREATING THE BANGSAMORO HALAL DEVELOPMENT AUTHORITY, DEFINING ITS POWERS AND FUNCTIONS ON HALAL CERTIFICATION AND ENFORCEMENT, APPROPRIATING FUNDS THEREFOR, AND FOR OTHER PURPOSES",
-   "url": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-creating-the-bangsamoro-halal-development-authority-defining-its-powers-and-functions-on-halal-certification-and-enforcement-appropriating-funds-therefor-and-for-other-purposes/",
-   "status": "First Reading",
-   "as_of": "07/16/2026",
-   "session": "fourth-regular-session-2025",
-   "principal_authors": [
-    "LIM, JOHN ANTHONY L.",
-    "YACOB, MOHAMMAD S."
-   ],
-   "co_authors": [
-    "ASNAWIE, DAN S.",
-    "ABAS, AKMAD I.",
-    "PIANG, RAMON A., SR.",
-    "MISUARI, ABDULKARIM T.",
-    "PAGAYAO, ALINDATU K.",
-    "ALAUDDIN, MOSBER E.",
-    "ANTOK, TOMANDA D.",
-    "ANAYATIN, SUSANA S.",
-    "DILANGALEN, HASHEMI N.",
-    "KARON, FAIZAL G.",
-    "BAYAM, ZULFIKAR-ALI S."
-   ],
-   "history": [
-    "Filed – 7/16/2026",
-    "First Reading – 7/16/2026 (Resumption)"
-   ],
-   "committee_referrals": "",
+   "committee_referrals": "Committee on Trade, Investment, and TourismCommittee on Science and Technology",
    "became_act": ""
   },
   {
@@ -6585,8 +6608,8 @@
    "number": 320,
    "title": "AN ACT INSTITUTIONALIZING PUBLIC PETITIONS IN THE BANGSAMORO PARLIAMENT AND FOR OTHER PURPOSES",
    "url": "https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-institutionalizing-public-petitions-in-the-bangsamoro-parliament-and-for-other-purposes/",
-   "status": "Second Reading (Committee Stage)",
-   "as_of": "08/20/2024",
+   "status": "Second Reading (Consideration and Deliberation Stage)",
+   "as_of": "10/05/2026",
    "session": "third-regular-session-2024-2025",
    "principal_authors": [
     "SEMA, OMAR YASSER C."
@@ -6622,7 +6645,8 @@
    "history": [
     "Filed – 7/11/2024",
     "First Reading – 7/23/2024",
-    "Referred to the Committee on Rules – 8/20/2024 (Resumption)"
+    "Referred to the Committee on Rules – 8/20/2024 (Resumption)",
+    "Deferred – 10/5/2026"
    ],
    "committee_referrals": "Committee on Rules",
    "became_act": ""
@@ -10010,13 +10034,15 @@
     "AMBOLODTO, SUHARTO M.",
     "DILANGALEN, HASHEMI N.",
     "IBAY, IBRAHIM P.",
-    "ISMAEL, RASUL E."
+    "ISMAEL, RASUL E.",
+    "MIDTIMBANG, MICHAEL E.",
+    "UY-OYOD, SITTIE FAHANIE S.",
+    "LOONG, DON MUSTAPHA A."
    ],
    "co_authors": [
     "MAWALLIL, AMILBAHAR S.",
     "LOONG, DON MUSTAPHA A.",
     "MIDTIMBANG, TAWAKAL B.",
-    "MIDTIMBANG, MICHAEL E.",
     "UY-OYOD, SITTIE FAHANIE S.",
     "UTTO, BASSIR D.",
     "CANDAO, BAI MALEIHA B.",

@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 KINDS = {
     "bills": ("bills", "bills", "BILL"),
     "resolutions": ("resolutions/adopted", "resolutions", "RESOLUTION"),
+    "proposed-resolutions": ("resolutions/proposed", "proposed-resolutions", "PROPOSED RESOLUTION"),
 }
 HEADERS = {"User-Agent": "BetterBARMM-registry/1.0 (+https://betterbarmm.com) python-urllib"}
 

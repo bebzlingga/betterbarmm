@@ -253,7 +253,9 @@ def capture(name: str, limit: int = 0) -> None:
     payload = {
         "source": config["index"],
         "generated": dt.date.today().isoformat(),
-        "measures": measures,
+        # The bills capture has always been read under `bills` — by the www
+        # map, the AI corpus and fetch_measure_pdfs.py — so it keeps that key.
+        ("bills" if name == "bills" else "measures"): measures,
     }
 
     out: Path = config["out"]

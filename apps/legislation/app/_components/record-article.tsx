@@ -150,7 +150,7 @@ function Reading({ reading }: { reading: MeasureReading }) {
 
 			{reading.readFrom.length > 0 ? (
 				<p className='meta-sm border-t border-[var(--rule-soft)] pt-4'>
-					Read from{' '}
+					{reading.basis === 'title' ? 'Drawn from' : 'Read from'}{' '}
 					{reading.readFrom.map((doc, index) => (
 						<span key={doc.label}>
 							{index > 0 ? ', ' : ''}
@@ -163,8 +163,12 @@ function Reading({ reading }: { reading: MeasureReading }) {
 							)}
 						</span>
 					))}
-					{reading.readOn ? ` \u00b7 read ${reading.readOn}` : ''}. This section is our reading of
-					those documents, not Parliament&rsquo;s words.
+					{reading.readOn
+						? ` \u00b7 ${reading.basis === 'title' ? 'written' : 'read'} ${reading.readOn}`
+						: ''}.{' '}
+					{reading.basis === 'title'
+						? 'Parliament has published no readable text of this measure, so this section works from its title and index record alone.'
+						: 'This section is our reading of those documents, not Parliament\u2019s words.'}
 				</p>
 			) : null}
 		</div>
