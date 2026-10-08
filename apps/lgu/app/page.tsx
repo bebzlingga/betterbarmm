@@ -13,7 +13,6 @@ import {
 import { barangayOfficials, rosterCoverage } from '@betterbarmm/lgu-data/barangay-officials'
 import Link from 'next/link'
 import { RegionMap } from './_components/region-map'
-import { FinderTrigger } from './_components/unit-finder'
 
 /** District seats in the Bangsamoro Parliament, joined on by slug. */
 function seatsFor(province: LguProvince): number | null {
@@ -150,23 +149,6 @@ export default function LguHomePage() {
 						className='bb-display mt-7 text-[var(--ink)]'
 						lineClassName={[undefined, undefined, 'bb-mute']}
 					/>
-
-					<Rise delay={0.35} distance={16}>
-						<p className='bb-measure mt-9 text-[15px] leading-8 text-[var(--ink-2)]'>
-							The region down to the barangay: what each unit is, how many people live in it, which
-							posts are on its ballot, and the governors, mayors and councillors COMELEC canvassed
-							into office in 2025.
-						</p>
-					</Rise>
-
-					{/* The front door proper. A province menu asks the reader to know
-					    which province they live in, which is the easy half of the
-					    question and not the half anyone arrives with. */}
-					<Rise delay={0.45} distance={14}>
-						<div className='mt-9 max-w-xl'>
-							<FinderTrigger variant='field' />
-						</div>
-					</Rise>
 
 					<Rise delay={0.55} distance={14}>
 						<dl className='mt-14 flex flex-wrap gap-x-8 gap-y-6 border-t border-[var(--brass-line)] pt-6'>
