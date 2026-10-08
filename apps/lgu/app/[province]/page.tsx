@@ -36,7 +36,7 @@ import { rosterCoverage } from '@betterbarmm/lgu-data/barangay-officials'
 import { LguTermPicker } from '../_components/lgu-term-picker'
 import { LguFinances } from '../_components/lgu-finances'
 import { UnitGrid, type UnitCard } from '../_components/unit-grid'
-import { LineReveal, OkirRule, Rise } from '@betterbarmm/editorial'
+import { LineReveal, Rise } from '@betterbarmm/editorial'
 
 export function generateStaticParams() {
 	// Cotabato City's area page is a list of one thing named after the thing.
@@ -354,8 +354,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 					</div>
 				</section>
 			) : null}
-
-			<OkirRule className='mx-auto mt-16 max-w-[88rem] opacity-70 lg:mt-20' />
 
 			{/* ---- The units ---- */}
 			<section className='bb-container bb-section-bottom'>

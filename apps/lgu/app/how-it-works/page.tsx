@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { OkirRule, Rise, SectionHead } from '@betterbarmm/editorial'
+import { Rise, SectionHead } from '@betterbarmm/editorial'
 import { SERVICES, formatNumber, lguData, lguReferences } from '@betterbarmm/lgu-data'
 import { LguBreadcrumb, LguMasthead } from '../_components/lgu-parts'
 import { LguTabs } from '../_components/lgu-tabs'
@@ -364,8 +364,6 @@ export default function HowItWorksPage() {
 					))}
 				</ol>
 			</section>
-
-			<OkirRule />
 
 			{/* ---- The calendar ---- */}
 			<section className='bb-container bb-section'>

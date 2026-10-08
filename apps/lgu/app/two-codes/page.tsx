@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { OkirRule, Rise, SectionHead } from '@betterbarmm/editorial'
+import { Rise, SectionHead } from '@betterbarmm/editorial'
 import { lguReferences } from '@betterbarmm/lgu-data'
 import { LguMasthead, LguBreadcrumb } from '../_components/lgu-parts'
 
@@ -169,8 +169,6 @@ export default function TwoCodesPage() {
 					</div>
 				</div>
 			</section>
-
-			<OkirRule />
 
 			{/* ---- Where they part ---- */}
 			<section className='bb-container bb-section'>
