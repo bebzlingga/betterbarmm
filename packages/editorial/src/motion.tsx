@@ -451,7 +451,10 @@ export function Magnetic({
   return (
     <motion.div
       ref={ref}
-      className={`inline-flex ${className ?? ''}`}
+      /* The caller's display wins when it sets one. Prefixing `inline-flex`
+         unconditionally beat a caller's `hidden sm:inline-flex` in the
+         cascade, so every header's Contribute button showed on phones. */
+      className={className ?? 'inline-flex'}
       style={{ x, y }}
       onPointerMove={onMove}
       onPointerLeave={reset}

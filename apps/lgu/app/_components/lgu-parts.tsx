@@ -79,7 +79,12 @@ export function LguStat({
 /**
  * The masthead of a directory page.
  *
- * The same warm ground the rest of the site opens on, cut down: a directory
+ * Every page opens on the brand crimson (user decision). `.brand-bg`
+ * re-points the tokens rather than restyling the parts, so the breadcrumb, the
+ * badges, the figures, the share bar and the weave at the foot all invert
+ * together.
+ *
+ * Cut down from the front page's masthead: a directory
  * page is somewhere a reader arrives with a question, not
  * somewhere they are being persuaded of anything, so the type is one step
  * smaller and there is no photograph.
@@ -90,7 +95,6 @@ export function LguMasthead({
 	kicker,
 	name,
 	note,
-	brand = false,
 	children,
 }: {
 	breadcrumb: React.ReactNode
@@ -99,25 +103,11 @@ export function LguMasthead({
 	kicker: string
 	name: string
 	note?: string
-	/**
-	 * Paint the masthead in the brand crimson.
-	 *
-	 * The province pages take it and the towns under them do not, which is the
-	 * point of it: a reader moving down the directory should be able to tell
-	 * which rung they are on before reading a word, and there are five provinces
-	 * against a hundred and three towns. A ground the whole directory shared
-	 * would say nothing.
-	 *
-	 * `.brand-bg` re-points the tokens rather than restyling the parts, so the
-	 * breadcrumb, the badges, the figures, the share bar and the weave at the
-	 * foot all invert together.
-	 */
-	brand?: boolean
 	/** The figures row, and anything else that belongs above the fold. */
 	children?: React.ReactNode
 }) {
 	return (
-		<section className={`bb-lattice relative overflow-hidden ${brand ? 'brand-bg' : ''}`}>
+		<section className='bb-lattice brand-bg relative overflow-hidden'>
 
 			<div className='bb-container relative py-[clamp(3.75rem,7vw,6.5rem)]'>
 				{breadcrumb}

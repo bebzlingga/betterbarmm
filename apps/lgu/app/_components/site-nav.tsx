@@ -7,7 +7,6 @@ import { areaHref, lguProvinces } from '@betterbarmm/lgu-data'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
-import { FinderTrigger } from './unit-finder'
 import { ThemeToggle } from './theme-toggle'
 
 /* The two explainers. Kept a pair rather than two top-level items: one is what
@@ -17,13 +16,6 @@ const guides = [
 	{ href: '/how-it-works', label: 'What each rung does' },
 	{ href: '/spending', label: 'What the region spends where' },
 	{ href: '/two-codes', label: 'The two codes' },
-] as const
-
-const workspaces = [
-	{ href: 'https://election.betterbarmm.com', label: 'Election' },
-	{ href: 'https://legislation.betterbarmm.com', label: 'Legislation' },
-	{ href: 'https://budget.betterbarmm.com', label: 'Budget' },
-	{ href: 'https://betterbarmm.com/discover', label: 'Discover BARMM' },
 ] as const
 
 /**
@@ -135,7 +127,7 @@ export function SiteNav() {
 			className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'
 		>
 			<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
-				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[1fr_auto_1fr] items-center gap-4'>
+				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 md:grid-cols-[1fr_auto_1fr]'>
 					<div className='flex min-w-0 items-center gap-3'>
 						<a href='https://betterbarmm.com' onClick={closeMenu} className='w-fit shrink-0'>
 							<BrandLogo className='text-[var(--ink)]' />
@@ -146,7 +138,7 @@ export function SiteNav() {
 						<Link
 							href='/'
 							onClick={closeMenu}
-							className='hidden font-mono text-[12px] font-semibold uppercase leading-none tracking-[0.18em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
+							className='hidden font-[family-name:var(--font-display)] text-[11.5px] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
 						>
 							Local government
 						</Link>
@@ -171,10 +163,9 @@ export function SiteNav() {
 							}
 						</Menu>
 
-						{/* The guides, ahead of the workspaces. The directory answers which
-						    unit you are in; these answer what it is for and which law it runs
-						    on, which is the question a reader who is not already a local
-						    government officer arrives with. */}
+						{/* The directory answers which unit you are in; the guides answer
+						    what it is for and which law it runs on, which is the question a
+						    reader who is not already a local government officer arrives with. */}
 						<Menu label='How it works' active={isGuideActive} width='w-[17rem]'>
 							{(close) =>
 								guides.map((item) => (
@@ -190,19 +181,9 @@ export function SiteNav() {
 							}
 						</Menu>
 
-						<Menu label='Workspaces' width='w-[17rem]'>
-							{(close) =>
-								workspaces.map((item) => (
-									<a key={item.href} href={item.href} onClick={close} className='nav-menu-item'>
-										{item.label}
-									</a>
-								))
-							}
-						</Menu>
 					</nav>
 
 					<div className='flex items-center justify-end gap-1.5'>
-						<FinderTrigger />
 						<ThemeToggle />
 						<span className='w-1.5' aria-hidden='true' />
 
@@ -291,20 +272,6 @@ export function SiteNav() {
 									>
 										{item.label}
 									</Link>
-								))}
-							</div>
-
-							<p className='bb-label mt-7'>Workspaces</p>
-							<div className='mt-3 grid'>
-								{workspaces.map((item) => (
-									<a
-										key={item.href}
-										href={item.href}
-										onClick={closeMenu}
-										className='border-b border-[var(--rule-soft)] py-2.5'
-									>
-										{item.label}
-									</a>
 								))}
 							</div>
 						</nav>

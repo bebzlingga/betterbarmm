@@ -303,7 +303,6 @@ export default function HowItWorksPage() {
 	return (
 		<>
 			<LguMasthead
-				brand
 				breadcrumb={<LguBreadcrumb trail={[]}>How it works</LguBreadcrumb>}
 				kicker='The guide · Bangsamoro'
 				name='Where the money starts, and what is left to decide.'

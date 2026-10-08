@@ -100,7 +100,7 @@ function Areas() {
 									<span aria-hidden='true'>barangays</span>
 								</div>
 								<div className='flex gap-1.5'>
-									<dt className='sr-only'>Barangay captains in DILG's directory</dt>
+									<dt className='sr-only'>Barangay captains in DILG&rsquo;s directory</dt>
 									<dd className='num text-[var(--ink)]'>
 										{formatNumber(roster.listed)}/{formatNumber(roster.total)}
 									</dd>
@@ -132,7 +132,7 @@ export default function LguHomePage() {
 	return (
 		<>
 			{/* ---- Masthead ---- */}
-			<section className='bb-lattice relative overflow-hidden'>
+			<section className='bb-lattice brand-bg relative overflow-hidden'>
 				<span
 					aria-hidden='true'
 					className='bb-glow absolute -right-[10%] -top-[20%] size-[34rem]'

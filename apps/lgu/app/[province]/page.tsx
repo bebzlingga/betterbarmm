@@ -124,7 +124,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 	return (
 		<>
 			<LguMasthead
-				brand
 				breadcrumb={<LguBreadcrumb trail={[]}>{province.name}</LguBreadcrumb>}
 				kicker={`${province.kind} · Bangsamoro`}
 				name={province.name}

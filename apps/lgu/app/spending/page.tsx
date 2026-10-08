@@ -34,7 +34,6 @@ export default function SpendingPage() {
 	return (
 		<>
 			<LguMasthead
-				brand
 				breadcrumb={<LguBreadcrumb trail={[]}>Spending</LguBreadcrumb>}
 				kicker='The money · Bangsamoro'
 				name='What the region builds, and where.'

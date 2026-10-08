@@ -121,7 +121,6 @@ export default function TwoCodesPage() {
 	return (
 		<>
 			<LguMasthead
-				brand
 				breadcrumb={<LguBreadcrumb trail={[]}>The two codes</LguBreadcrumb>}
 				kicker='The law · Bangsamoro'
 				name='Which code these units actually run on.'
