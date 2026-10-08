@@ -149,9 +149,15 @@ export default function LguHomePage() {
 						className='bb-display mt-7 text-[var(--ink)]'
 						lineClassName={[undefined, undefined, 'bb-mute']}
 					/>
+					</div>
 
-					<Rise delay={0.55} distance={14}>
-						<dl className='mt-14 flex flex-wrap gap-x-8 gap-y-6 border-t border-[var(--brass-line)] pt-6'>
+					{/* Every drawn area is a link to its page. */}
+					<Rise delay={0.3} distance={14} className='hidden lg:block'>
+						<RegionMap />
+					</Rise>
+
+					<Rise delay={0.55} distance={14} className='mt-6 lg:col-span-2 lg:mt-12'>
+						<dl className='grid grid-cols-2 gap-x-8 gap-y-6 lg:grid-cols-4'>
 							{/* Every figure here is the directory's own, summed from the units
 							    it can actually open. PSA's regional totals are larger and
 							    count different things; the note under the areas below says
@@ -179,7 +185,7 @@ export default function LguHomePage() {
 									group: true,
 								},
 							].map((fact) => (
-								<div key={fact.label}>
+								<div key={fact.label} className='border-t border-[var(--brass-line)] pt-6'>
 									<dt className='sr-only'>{fact.label}</dt>
 									<dd className='bb-figure-sm text-[var(--ink)]'>
 										<Counter value={fact.value} group={fact.group} />
@@ -190,12 +196,6 @@ export default function LguHomePage() {
 								</div>
 							))}
 						</dl>
-					</Rise>
-					</div>
-
-					{/* Every drawn area is a link to its page. */}
-					<Rise delay={0.3} distance={14} className='hidden lg:block'>
-						<RegionMap />
 					</Rise>
 				</div>
 			</section>
