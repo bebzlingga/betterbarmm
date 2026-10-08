@@ -151,7 +151,7 @@ export function SiteNav() {
 			className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'
 		>
 			<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
-				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[1fr_auto_1fr] items-center gap-4'>
+				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 md:grid-cols-[1fr_auto_1fr]'>
 					<div className='flex min-w-0 items-center gap-3'>
 						<a href='https://betterbarmm.com' onClick={closeMenu} className='w-fit shrink-0'>
 							<BrandLogo className='text-[var(--ink)]' />

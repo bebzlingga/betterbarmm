@@ -58,7 +58,32 @@ function Chart({
 			    with no caption is announced as an unnamed group of numbers. */}
 			<figcaption className='sr-only'>{label}</figcaption>
 
-			<div className='overflow-x-auto lg:overflow-x-visible'>
+			{/* On a phone, rows rather than columns. Seven or eight columns in 340px
+			    left each name four letters ("Maguin…"), and the full name lived only
+			    in a hover panel a touch screen never opens. A row has the width for
+			    the name, the bar and the figure; same data, same ramp. */}
+			<ul className='space-y-3 sm:hidden'>
+				{rows.map((row, index) => (
+					<li key={row.key} className='grid grid-cols-[minmax(0,7.5rem)_minmax(0,1fr)_auto] items-center gap-3'>
+						<span className='text-[12px] font-semibold leading-tight text-[var(--ink-2)]'>{row.name}</span>
+						<span className='h-3'>
+							<span
+								className='block h-full rounded-r-[4px] bg-[var(--accent)]'
+								style={{
+									width: `${Math.max(1, (row.total / tallest) * 100)}%`,
+									opacity: 1 - (index / Math.max(1, rows.length - 1)) * 0.6,
+								}}
+							/>
+						</span>
+						<span className='money text-right font-mono text-[10.5px] font-semibold text-[var(--ink-2)]'>
+							{pesoShort(row.total)}
+							<span className='block text-[9.5px] text-[var(--ink-mute)]'>{formatNumber(row.count)}</span>
+						</span>
+					</li>
+				))}
+			</ul>
+
+			<div className='hidden overflow-x-auto sm:block lg:overflow-x-visible'>
 				<div className='flex min-w-[20rem] items-end gap-1.5 sm:gap-2'>
 					{rows.map((row, index) => {
 						/* One hue stepped down by rank — a sequential ramp, which is what
@@ -183,7 +208,7 @@ export function ProjectCharts({ fy }: { fy?: string }) {
 	   chart, what it means, chart, what it means — where laying the two charts
 	   out first would have put both readings below both charts on a phone. */
 	return (
-		<div className='grid gap-x-16 gap-y-10 lg:grid-cols-2'>
+		<div className='grid grid-cols-[minmax(0,1fr)] gap-x-16 gap-y-10 lg:grid-cols-2'>
 			<Chart
 				label='Where it is being built'
 				rows={areas}

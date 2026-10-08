@@ -135,12 +135,18 @@ function YearTable({
 	foot?: string
 }) {
 	return (
-		<div className='-mx-6 overflow-x-auto px-6 lg:-mx-8 lg:px-8'>
-			<table className={`w-full border-collapse text-[14.5px] ${wide ? 'min-w-[58rem]' : 'min-w-[54rem]'}`}>
+		<div>
+			{/* On a phone the years scroll and the names stay: the name column is
+			    pinned, so a swipe to FY 2026 still says whose row it is. */}
+			<p aria-hidden='true' className='mb-3 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] lg:hidden'>
+				Swipe for every year &rarr;
+			</p>
+			<div className='overflow-x-auto lg:-mx-8 lg:px-8'>
+			<table className={`w-full border-collapse text-[14.5px] ${wide ? 'min-w-[50rem] lg:min-w-[58rem]' : 'min-w-[46rem] lg:min-w-[54rem]'}`}>
 				<caption className='sr-only'>{caption}</caption>
 				<thead>
 					<tr className='border-b border-[var(--ink)]'>
-						<th scope='col' className='bb-label py-4 pr-4 text-left'>
+						<th scope='col' className='bb-label sticky left-0 z-[1] bg-[var(--paper)] py-4 pr-4 text-left'>
 							{head}
 						</th>
 						{trendYears.map((year) => (
@@ -162,17 +168,17 @@ function YearTable({
 				</thead>
 				<tbody>
 					{rows.map((row) => (
-						<tr key={row.key} className='border-b border-[var(--rule-soft)] transition-colors duration-150 hover:bg-[var(--paper-2)]'>
-							<th scope='row' className='max-w-[20rem] py-5 pr-4 text-left font-normal'>
+						<tr key={row.key} className='group border-b border-[var(--rule-soft)] transition-colors duration-150 hover:bg-[var(--paper-2)]'>
+							<th scope='row' className='w-[10.5rem] min-w-[10.5rem] py-5 pr-4 text-left font-normal sm:w-auto sm:max-w-[20rem] sticky left-0 z-[1] bg-[var(--paper)] transition-colors duration-150 group-hover:bg-[var(--paper-2)]'>
 								{row.href ? (
 									<Link
 										href={row.href}
-										className='text-[15px] font-semibold leading-snug text-[var(--ink)] hover:text-[var(--accent)]'
+										className='text-[13.5px] font-semibold leading-snug text-[var(--ink)] hover:text-[var(--accent)] sm:text-[15px]'
 									>
 										{row.label}
 									</Link>
 								) : (
-									<span className='block text-[15px] font-semibold leading-snug text-[var(--ink)]'>
+									<span className='block text-[13.5px] font-semibold leading-snug text-[var(--ink)] sm:text-[15px]'>
 										{row.label}
 									</span>
 								)}
@@ -193,6 +199,7 @@ function YearTable({
 					))}
 				</tbody>
 			</table>
+			</div>
 			{foot ? (
 				<p className='mt-5 text-[12px] leading-6 text-[var(--ink-3)]'>{foot}</p>
 			) : null}
@@ -297,14 +304,17 @@ export default function CompositionPage() {
 					lead='Three buckets, and every peso in the Act sits in one of them. The first pays the people. The second keeps the lights on and the fuel in the trucks. The third buys what is still there next year — a road, a health center, an ambulance.'
 				/>
 
-				<div className='-mx-6 overflow-x-auto px-6 lg:-mx-8 lg:px-8'>
-					<table className='w-full min-w-[54rem] border-collapse text-[14.5px]'>
+				<p aria-hidden='true' className='mb-3 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] lg:hidden'>
+					Swipe for every year &rarr;
+				</p>
+				<div className='overflow-x-auto lg:-mx-8 lg:px-8'>
+					<table className='w-full min-w-[46rem] border-collapse text-[14.5px] lg:min-w-[54rem]'>
 						<caption className='sr-only'>
 							Each Bangsamoro Act by expense class
 						</caption>
 						<thead>
 							<tr className='border-b border-[var(--ink)]'>
-								<th scope='col' className='py-4 pr-4 text-left'>
+								<th scope='col' className='sticky left-0 z-[1] bg-[var(--paper)] py-4 pr-4 text-left'>
 									<span className='sr-only'>Class</span>
 								</th>
 								{ACTS.map((act) => (
@@ -329,15 +339,15 @@ export default function CompositionPage() {
 							{EXPENSE_CLASSES.map((one) => {
 								const across = ACTS.reduce((sum, act) => sum + act.totals[one.key], 0)
 								return (
-									<tr key={one.key} className='border-b border-[var(--rule-soft)] transition-colors duration-150 hover:bg-[var(--paper-2)]'>
-										<th scope='row' className='py-5 pr-4 text-left font-normal'>
+									<tr key={one.key} className='group border-b border-[var(--rule-soft)] transition-colors duration-150 hover:bg-[var(--paper-2)]'>
+										<th scope='row' className='w-[10.5rem] min-w-[10.5rem] py-5 pr-4 text-left font-normal sm:w-auto sticky left-0 z-[1] bg-[var(--paper)] transition-colors duration-150 group-hover:bg-[var(--paper-2)]'>
 											<span className='flex items-center gap-2.5'>
 												<span
 													aria-hidden='true'
 													className='size-2.5 shrink-0'
 													style={{ background: one.tone }}
 												/>
-												<span className='text-[15px] font-semibold text-[var(--ink)]'>
+												<span className='text-[13.5px] font-semibold leading-snug text-[var(--ink)] sm:text-[15px]'>
 													{one.label}
 												</span>
 											</span>
@@ -361,7 +371,7 @@ export default function CompositionPage() {
 
 						<tfoot>
 							<tr className='border-t-2 border-[var(--brass)]'>
-								<th scope='row' className='py-5 pr-4 text-left'>
+								<th scope='row' className='sticky left-0 z-[1] bg-[var(--paper)] py-5 pr-4 text-left'>
 									<span className='sr-only'>The Act</span>
 								</th>
 								{ACTS.map((act) => (
@@ -393,7 +403,7 @@ export default function CompositionPage() {
 						titleMuted='a ministry.'
 						lead='Money kept aside for what nobody can put in a calendar — a typhoon, an outbreak, a bill that lands on every ministry at once. No office is given it to spend until the thing actually happens.'
 					/>
-					<dl className='mt-20 grid gap-x-8 gap-y-8 sm:grid-cols-4 lg:grid-cols-7'>
+					<dl className='mt-12 grid grid-cols-2 gap-x-6 gap-y-8 sm:mt-20 sm:grid-cols-4 sm:gap-x-8 lg:grid-cols-7'>
 						{ACTS.map((act) => (
 							<div key={act.year}>
 								<div

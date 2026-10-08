@@ -88,7 +88,7 @@ export function BudgetTabs({ tabs, label }: { tabs: BudgetTab[]; label?: string 
 			    under the nav would cover an extra band of whatever is scrolling
 			    beneath it. */}
 			<div className='sticky top-[var(--sticky-top)] z-20 -mx-6 bg-[var(--paper)]/92 px-6 backdrop-blur-md lg:-mx-8 lg:px-8'>
-				<div className='flex items-center gap-6 border-b border-t border-[var(--rule)] py-3'>
+				<div className='flex flex-col items-start gap-2 border-b border-t border-[var(--rule)] py-3 sm:flex-row sm:items-center sm:gap-6'>
 					{label ? (
 						<p id='budget-tabs-label' className='bb-label shrink-0'>
 							{label}
@@ -98,7 +98,7 @@ export function BudgetTabs({ tabs, label }: { tabs: BudgetTab[]; label?: string 
 						role='tablist'
 						aria-label={label ? undefined : 'How to cut the budget'}
 						aria-labelledby={label ? 'budget-tabs-label' : undefined}
-						className='ml-auto flex gap-1.5 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden'
+						className='flex w-full gap-1.5 overflow-x-auto [scrollbar-width:none] sm:ml-auto sm:w-auto [&::-webkit-scrollbar]:hidden'
 					>
 						{tabs.map((tab) => (
 							<button
