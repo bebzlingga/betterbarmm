@@ -201,9 +201,9 @@ export function ShareBar({
 export function LguSourceNote({ className = '' }: { className?: string }) {
 	return (
 		<Rise className={className} distance={12}>
-			<div className='grid gap-x-12 gap-y-4 border-t border-[var(--brass-line)] pt-5 lg:grid-cols-[minmax(0,14rem)_minmax(0,1fr)]'>
+			<div className='border-t border-[var(--brass-line)] pt-5'>
 				<p className='bb-label'>About these figures</p>
-				<div className='max-w-3xl space-y-3 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+				<div className='mt-4 space-y-3 text-[12.5px] leading-6 text-[var(--ink-3)]'>
 					<p>
 						Structure from the{' '}
 						<a

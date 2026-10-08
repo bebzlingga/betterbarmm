@@ -783,15 +783,14 @@ export default async function UnitPage({
 					) : null}
 				</div>
 
-				<Rise distance={12}>
-					<Link
-						href={siblings.length === 1 ? '/' : `/${province.slug}`}
-						className='bb-btn bb-btn-ghost mt-10'
-					>
-						<ArrowLeftIcon className='size-3.5' aria-hidden='true' />
-						{siblings.length === 1 ? 'All of local government' : `All of ${province.name}`}
-					</Link>
-				</Rise>
+				{siblings.length > 1 ? (
+					<Rise distance={12}>
+						<Link href={`/${province.slug}`} className='bb-btn bb-btn-ghost mt-10'>
+							<ArrowLeftIcon className='size-3.5' aria-hidden='true' />
+							All of {province.name}
+						</Link>
+					</Rise>
+				) : null}
 			</section>
 		</>
 	)

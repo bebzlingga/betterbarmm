@@ -1,6 +1,4 @@
-import { ArrowLeftIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import { notFound, redirect } from 'next/navigation'
 import {
 	LguBreadcrumb,
@@ -388,13 +386,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				))}
 
 				<LguSourceNote className='mt-16' />
-
-				<Rise distance={12}>
-					<Link href='/' className='bb-btn bb-btn-ghost mt-10'>
-						<ArrowLeftIcon className='size-3.5' aria-hidden='true' />
-						All of local government
-					</Link>
-				</Rise>
 			</section>
 		</>
 	)
