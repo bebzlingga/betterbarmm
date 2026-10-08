@@ -26,8 +26,8 @@ A zero in the SRE is a town that did not report, not one that received
 nothing — the NTA is never zero — so zeros are dropped, not written. FY 2025
 is BLGF's "Preliminary" release and a few rows are plainly part-year.
 
-Sources (blgf.gov.ph/lgu-fiscal-data/ — the site sits behind a WAF that
-refuses scripted downloads, so fetch them in a browser):
+Sources (blgf.gov.ph/lgu-fiscal-data/ — behind a WAF; sre.py has the curl
+line that gets through):
 
     https://blgf.gov.ph/wp-content/uploads/2024/09/By-LGU-SRE-2023.xlsx
     https://blgf.gov.ph/wp-content/uploads/2026/01/By-LGU-SRE-2024.xlsx
@@ -37,13 +37,10 @@ refuses scripted downloads, so fetch them in a browser):
 
 The directory defaults to $TMPDIR/blgf-sre. The workbooks are not committed.
 """
-import json, os, pathlib, re, sys, tempfile, unicodedata, zipfile
-import xml.etree.ElementTree as ET
+import json, sys
+from sre import ROOT, SRC, first_sheet, norm, provinces, towns
 
-ROOT = pathlib.Path(__file__).resolve().parents[3]
 OUT = ROOT / 'datasets/lgu/nta.json'
-DIRECTORY = ROOT / 'datasets/lgu/barmm-lgu.json'
-SRC = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else os.path.join(tempfile.gettempdir(), 'blgf-sre'))
 
 FILES = {
     2023: ('2024/09', 'FY 2023 (Final)'),
@@ -51,46 +48,6 @@ FILES = {
     2025: ('2026/05', 'FY 2025 (Preliminary)'),
 }
 NTA_COLUMN = 17  # "EXTERNAL SOURCES › National Tax Allotment", same in all three
-# PSGC 153822000: BLGF still files it under the name it had, the directory under the one it has.
-ALIASES = {'datu montawal': 'pagagawan'}
-
-NS = '{http://schemas.openxmlformats.org/spreadsheetml/2006/main}'
-
-
-def first_sheet(path):
-    """Rows of the workbook's first sheet. The stdlib reads xlsx well enough."""
-    z = zipfile.ZipFile(path)
-    shared = [''.join(t.text or '' for t in si.iter(NS + 't'))
-              for si in ET.fromstring(z.read('xl/sharedStrings.xml')).findall(NS + 'si')]
-    sheet = sorted(n for n in z.namelist() if re.fullmatch(r'xl/worksheets/sheet\d+\.xml', n))[0]
-    for r in ET.fromstring(z.read(sheet)).iter(NS + 'row'):
-        row = {}
-        for c in r.findall(NS + 'c'):
-            v = c.find(NS + 'v')
-            if v is None:
-                continue
-            col = 0
-            for ch in re.match(r'[A-Z]+', c.get('r')).group():
-                col = col * 26 + ord(ch) - 64
-            row[col - 1] = shared[int(v.text)] if c.get('t') == 's' else (v.text if c.get('t') else float(v.text))
-        yield [row.get(i) for i in range(max(row, default=-1) + 1)]
-
-
-def norm(name):
-    s = unicodedata.normalize('NFKD', name).encode('ascii', 'ignore').decode().lower()
-    s = re.sub(r'\bcity of\b|\bcity\b', '', s)
-    s = re.sub(r'[^a-z0-9]+', ' ', s).strip()
-    return ALIASES.get(s, s)
-
-
-directory = json.load(open(DIRECTORY))
-provinces = {norm(p['name']): p['slug'] for p in directory['provinces'] if p['kind'] == 'Province'}
-towns = {}
-for p in directory['provinces']:
-    for m in p['municipalities']:
-        key = norm(m['name'])
-        assert key not in towns, f'two directory towns normalise to {key!r}'
-        towns[key] = f"{p['slug']}/{m['slug']}"
 
 units, unmatched, dropped = {}, [], []
 for year, (folder, label) in FILES.items():

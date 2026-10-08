@@ -31,6 +31,7 @@ import {
 	sectors,
 } from '@betterbarmm/budget-data'
 import { areaHref, lguIndex, lguProvinces } from '@betterbarmm/lgu-data'
+import { awards, coaAudits, finances, funds, incomeClass, latestYear, procurement, row, sglg } from '@betterbarmm/lgu-data/fiscal'
 import { discoverBarmmTopics } from '@betterbarmm/primer-data'
 import { dishes, itineraries, places, travelAreas } from '@betterbarmm/travel-data'
 import actIndex from '../../../datasets/bills/bangsamoro_registry/baa/official_index.json'
@@ -927,7 +928,72 @@ function local(): Entry[] {
 		text: 'how many provinces cities municipalities barangays are there in barmm bangsamoro region total number count areas local government units',
 	}
 
-	return [region, ...units, ...provinces]
+	/* What each LGU collected, spent, borrowed and won — one row per LGU beside
+	   its directory row, so "how much NTA does Marawi get" lands on figures
+	   rather than on a barangay count. Latest year BLGF has for it; every
+	   figure in the note is copied from a dataset, so `grounded` can find it. */
+	const money = (key: string, name: string, href: string): Entry | null => {
+		const year = latestYear(finances, key)
+		if (year === null) return null
+		const f = row(finances, key, year)!
+		const n = (value: unknown) => peso(Number(value))
+		const dependency = row(funds.dependency, key, year)?.ntaDependency
+		const drrm = row(funds.disasterFund, key, year)
+		const seals = Object.keys(sglg.units[key] ?? {})
+		const won = awards.units[key] ?? []
+		const audit = Object.entries(coaAudits.units[key] ?? {}).at(-1)
+		const awarded = procurement.units[key]?.[String(year)]?.awarded
+		const loans = (funds.borrowing.units[key] ?? []).length
+		const parts = [
+			`FY ${year}, as reported to BLGF: operating income ${n(f.operatingIncome)}, of which NTA ${n(f.nta)} and local taxes and fees ${n(f.localSources)}`,
+			`operating spending ${n(f.operatingExpenditures)}, capital outlay ${n(f.capitalOutlay)}`,
+			Number(f.borrowings) ? `borrowed ${n(f.borrowings)}` : 'no borrowing',
+			Number(f.debtPrincipal) || Number(f.debtInterest)
+				? `debt service ${n(Number(f.debtPrincipal) + Number(f.debtInterest))}`
+				: null,
+			typeof dependency === 'number' ? `NTA was ${Math.round(dependency * 100)}% of regular income` : null,
+			drrm ? `disaster fund ${n(drrm.appropriated)} appropriated, ${n(drrm.spent)} spent` : null,
+			incomeClass.units[key]?.['2024'] ? `${incomeClass.units[key]['2024'].class} class (2024 reclassification)` : null,
+			seals.length ? `Seal of Good Local Governance ${seals.join(', ')}` : null,
+			won.length ? `${won.length} other national or regional award${won.length === 1 ? '' : 's'}` : null,
+			awarded ? `PhilGEPS contracts awarded FY ${year} ${n(awarded)}` : null,
+			loans ? `${loans} DOF borrowing certificate${loans === 1 ? '' : 's'} since 2022` : null,
+			audit ? `COA opinion FY ${audit[0]}: ${audit[1].opinion}` : null,
+		]
+		return {
+			space: 'lgu',
+			kind: 'LGU finances',
+			title: `${name}: income, spending and debt`,
+			note: parts.filter(Boolean).join('; ').concat('. Reported actuals, not the budget the council passed.'),
+			href,
+			text: `${name} finances`.toLowerCase(),
+		}
+	}
+	const ledgers = [
+		...lguProvinces
+			.filter((province) => province.kind === 'Province')
+			.map((province) => money(province.slug, province.name, `${SITE.lgu}${areaHref(province)}`)),
+		...lguIndex.map((entry) => money(entry.href.slice(1), entry.name, `${SITE.lgu}${entry.href}`)),
+	].filter((entry): entry is Entry => entry !== null)
+
+	/* The sum of those rows, for "how much NTA do BARMM's LGUs get" — the same
+	   reason the region row above exists. Only LGUs that filed are in a year. */
+	const sums = finances.years.map((year) => {
+		const rows = Object.keys(finances.units).map((key) => row(finances, key, year)).filter((one) => one !== null)
+		const total = (field: string) => rows.reduce((sum, one) => sum + Number(one[field] ?? 0), 0)
+		return `FY ${year}: ${rows.length} LGUs reported operating income ${peso(total('operatingIncome'))}, NTA ${peso(total('nta'))}, local taxes and fees ${peso(total('localSources'))}, operating spending ${peso(total('operatingExpenditures'))}, borrowing ${peso(total('borrowings'))}`
+	})
+	const ledger: Entry = {
+		space: 'lgu',
+		kind: 'LGU finances',
+		rollup: true,
+		title: `BARMM local governments combined: income, NTA, spending and debt, FY ${finances.years[0]}–${finances.years.at(-1)}`,
+		note: `${sums.join('. ')}. Reported to BLGF by each treasurer; barangays and the Special Geographic Area are not included.`,
+		href: `${SITE.lgu}/`,
+		text: 'total all lgus barmm region local governments finances combined every year how much nta income spending',
+	}
+
+	return [region, ...units, ...provinces, ledger, ...ledgers]
 }
 
 /*
@@ -972,6 +1038,8 @@ const ASKED_FOR: Record<string, string> = {
 	Municipality: 'municipality town barangay barangays population local government unit lgu',
 	Province: 'province barangay barangays municipalities population local government',
 	'Special area': 'special area barangay barangays population local government',
+	'LGU finances':
+		'budget income revenue spending expenditure money nta ira tax taxes collection debt loan loans borrowing finances funds dependency income class audit coa seal sglg award awards procurement contracts disaster fund lgu',
 }
 
 let built: Entry[] | null = null

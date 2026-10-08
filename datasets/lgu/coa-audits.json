@@ -1,0 +1,100 @@
+{
+ "name": "COA audit opinions on BARMM local governments",
+ "generatedAt": "2026-10-08",
+ "source": [
+  {
+   "label": "Commission on Audit — Annual Audit Reports, Local Government Units",
+   "href": "https://www.coa.gov.ph/reports/annual-audit-reports/aar-local-government-units/",
+   "access": "Behind a Cloudflare human check; reports here were read from Wayback Machine captures."
+  },
+  {
+   "label": "Internet Archive — Wayback Machine captures of coa.gov.ph/download/",
+   "href": "https://web.archive.org/cdx/search/cdx?url=coa.gov.ph/download/*"
+  }
+ ],
+ "note": "What the Commission on Audit’s auditor said about each LGU’s financial statements, from its Annual Audit Report’s Executive Summary: the opinion, total liabilities at year-end in pesos, and the number of audit observations the summary lists. Only 8 LGU-years are here, all FY 2020 and 2021, all towns: coa.gov.ph blocks automated access with a Cloudflare human check, and these are the only BARMM LGU reports for FY 2020 onward that the Internet Archive saved. Every other province, city, town and year is missing because it could not be read, not because COA did not audit it. All 8 opinions are modified — 7 qualified and 1 (Marogong 2020) that says only \"modified\" without naming the type. Loans payable is given only where the full Statement of Financial Position is in the PDF; an Executive Summary does not break liabilities down. Observation counts are the summary’s numbered list; the full report can hold more. Each record links the COA URL (href) and the archived copy it was read from. Maguindanao towns before the 2022 split sit under the province they are in now. Sulu is left out.",
+ "years": [
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "units": {
+  "basilan/hadji-mohammad-ajul": {
+   "2020": {
+    "opinion": "qualified",
+    "liabilities": 1456319.24,
+    "observations": 11,
+    "href": "https://www.coa.gov.ph/download/3475/basilan/50127/hadji-mohammad-ajul-executive-summary-2020.pdf",
+    "archived": "https://web.archive.org/web/20220813030341/https://www.coa.gov.ph/download/3475/basilan/50127/hadji-mohammad-ajul-executive-summary-2020.pdf"
+   }
+  },
+  "lanao-del-sur/bubong": {
+   "2020": {
+    "opinion": "qualified",
+    "liabilities": 348093.12,
+    "observations": 11,
+    "href": "https://www.coa.gov.ph/download/1950/lanao-del-sur/26832/bubong-executive-summary-2020.pdf",
+    "archived": "https://web.archive.org/web/20240226204655/https://www.coa.gov.ph/download/1950/lanao-del-sur/26832/bubong-executive-summary-2020.pdf"
+   }
+  },
+  "lanao-del-sur/lumbaca-unayan": {
+   "2020": {
+    "opinion": "qualified",
+    "liabilities": 3681340.73,
+    "observations": 5,
+    "href": "https://www.coa.gov.ph/download/1950/lanao-del-sur/29084/lumbaca-unayan-executive-summary-2020.pdf",
+    "archived": "https://web.archive.org/web/20240617231353/https://www.coa.gov.ph/download/1950/lanao-del-sur/29084/lumbaca-unayan-executive-summary-2020.pdf"
+   }
+  },
+  "lanao-del-sur/madalum": {
+   "2021": {
+    "opinion": "qualified",
+    "liabilities": 2619497.04,
+    "observations": 5,
+    "href": "https://www.coa.gov.ph/download/5360/lanao-del-sur/70247/madalum-executive-summary-2021.pdf",
+    "archived": "https://web.archive.org/web/20230411142730/https://www.coa.gov.ph/download/5360/lanao-del-sur/70247/madalum-executive-summary-2021.pdf",
+    "liabilitiesNote": "As printed; the same table gives total assets equal to total equity (₱116,346,044.28), so one of its lines is wrong."
+   }
+  },
+  "lanao-del-sur/marogong": {
+   "2020": {
+    "opinion": "modified",
+    "liabilities": 68636060.3,
+    "observations": 4,
+    "href": "https://www.coa.gov.ph/download/1950/lanao-del-sur/28844/marogong-executive-summary-2020.pdf",
+    "archived": "https://web.archive.org/web/20240617190017/https://www.coa.gov.ph/download/1950/lanao-del-sur/28844/marogong-executive-summary-2020.pdf"
+   }
+  },
+  "lanao-del-sur/tugaya": {
+   "2020": {
+    "opinion": "qualified",
+    "observations": 5,
+    "href": "https://www.coa.gov.ph/download/1950/lanao-del-sur/29086/tugaya-executive-summary-2020.pdf",
+    "archived": "https://web.archive.org/web/20231204094032/https://www.coa.gov.ph/download/1950/lanao-del-sur/29086/tugaya-executive-summary-2020.pdf"
+   }
+  },
+  "maguindanao-del-sur/datu-piang": {
+   "2020": {
+    "opinion": "qualified",
+    "liabilities": 14954000,
+    "observations": 7,
+    "href": "https://www.coa.gov.ph/download/1974/maguindanao/27399/datu-piang-executive-summary-2020.pdf",
+    "archived": "https://web.archive.org/web/20240808085109/https://www.coa.gov.ph/download/1974/maguindanao/27399/datu-piang-executive-summary-2020.pdf",
+    "liabilitiesNote": "Stated in thousands of pesos."
+   }
+  },
+  "maguindanao-del-sur/mamasapano": {
+   "2020": {
+    "opinion": "qualified",
+    "liabilities": 13419311.36,
+    "observations": 8,
+    "href": "https://www.coa.gov.ph/download/1974/maguindanao/27396/mamasapano-executive-summary-2020.pdf",
+    "archived": "https://web.archive.org/web/20240809011825/https://www.coa.gov.ph/download/1974/maguindanao/27396/mamasapano-executive-summary-2020.pdf"
+   }
+  }
+ },
+ "former": {}
+}

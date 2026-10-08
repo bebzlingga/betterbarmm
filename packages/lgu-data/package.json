@@ -8,6 +8,7 @@
 		"./history": "./src/officials-history.ts",
 		"./barangay-officials": "./src/barangay-officials.ts",
 		"./barangay-shapes": "./src/barangay-shapes.ts",
-		"./nta": "./src/nta.ts"
+		"./nta": "./src/nta.ts",
+		"./fiscal": "./src/fiscal.ts"
 	}
 }

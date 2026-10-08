@@ -39,7 +39,7 @@ spent is not published by anyone, and is not here. See [Gaps](#what-is-not-here)
 | The two Codes | `datasets/bills/blgc*.json` | 262 KB | Local Governance Code + its IRR |
 | Budget | `datasets/budget/` | 86 MB, 25 files | Seven enacted GAABs, FY 2020–2026 |
 | Election | `datasets/election/` | 432 KB, 5 files | September 2026 parliamentary result |
-| Local government | `datasets/lgu/` | 78 MB, 10 files | Provinces, towns, barangays, officials |
+| Local government | `datasets/lgu/` | 79 MB, 16 files | Provinces, towns, barangays, officials |
 | Travel guide | `packages/travel-data/` | — | **Written**, not captured |
 | Region primer | `packages/primer-data/` | — | **Written**, not captured |
 
@@ -167,8 +167,52 @@ in a search result reports a party's seats as however many happened to match.
 - **`officials-history.json`** (2.1 MB) — elected history for 100 units.
 - **`area-spending.json`** — itemised construction tagged to 8 areas across 7
   years. This is the *budget's* geography, not LGU spending.
+- **`nta.json`** — each province, city and town's National Tax Allotment,
+  FY 2023–2025, from BLGF's SRE.
+- **`finances.json`** (270 KB) — every line of BLGF's Statement of Receipts
+  and Expenditures for 105 provinces, cities and towns, FY 2020–2025: local
+  taxes, NTA, spending by sector, capital outlay, borrowing, interest and
+  principal repaid, cash balances. What treasurers **reported spending**, not
+  what councils appropriated. Pre-split Maguindanao's province rows sit under
+  `former`; Sulu is left out; the 8 Special Geographic Area towns have no rows.
+- **`funds.json`** (205 KB) — the rest of BLGF's per-LGU publications, one
+  section each: **dependency** (Annual Regular Income and BLGF's NTA-dependency
+  ratios, FY 2020–2025 — the median town draws 99.5% of its regular income from
+  the NTA); **disasterFund** (the LDRRMF, **appropriated beside spent**, FY 2020
+  and 2022–2025 — BLGF's FY 2021 file lists no BARMM LGU); **educationFund**
+  (SEF collections and spending by purpose, FY 2020–2025); **propertyRoll**
+  (taxable property and RPT collectible, FY 2022 only); **borrowing** (56 DOF
+  borrowing certificates to 49 BARMM LGUs, 2022–August 2026 — permission to
+  borrow, not loans).
+- **`income-class.json`** — each LGU's income class under DOF DO 074-2024
+  (effective 2025, RA 11964's five classes) and DO 23-08 (2008). Most BARMM
+  LGUs moved up sharply; two kept a higher old class by law (`retained`).
+- **`fund-releases.json`** — the few national releases DBM's SARO/NCA registers
+  name a BARMM LGU in, FY 2020–2026: mostly Marawi recovery (₱50M–₱730.7M) and
+  a handful of LGSF grants. **Thin by necessity:** DBM releases LGSF money to the
+  Treasury "per attached Schedule A", and Schedule A is not published.
+- **`procurement.json`** — PhilGEPS bids posted and contracts awarded per year,
+  FY 2020–2025, for the 57 LGUs registered on PhilGEPS. Totals only; awards are
+  contracts, not payments. 2025 looks partial.
+- **`coa-audits.json`** — COA audit opinions and total liabilities for **8**
+  town-years (FY 2020–2021), all modified opinions. coa.gov.ph sits behind a
+  Cloudflare human check; these are Wayback copies. Coverage needs reports
+  saved by hand.
+- **`sglg.json`** — Seal of Good Local Governance passers, 2022–2024 (14, 27,
+  29; checked against DILG's BARMM counts), why 2020, 2021 and 2025 have none,
+  incentive amounts, and MILG's Salamat Excellence Award for Leadership under
+  `bangsamoroSeal`.
+- **`cmci.json`** — DTI competitiveness index scores, ranks and pillars,
+  2020–2024 editions (2020 ranks only BARMM's 3 cities).
+- **`awards.json`** — 97 other national and regional awards for 39 LGUs:
+  Gawad KALASAG, BLGF top performers, LTIA, Galing Pook, Red Orchid, PRIME-HRM
+  and MILG's regional awards (`scope: "regional"`). Winner lists only — absence
+  is not failure — and `notFound` lists the awards with no BARMM list
+  published.
 
-**Not here:** the budgets of the LGUs themselves. See [Gaps](#what-is-not-here).
+**Not here:** the LGUs' appropriation ordinances, any outstanding-debt figure
+per LGU, most COA audits, LGSF releases per LGU, and anything at all for
+barangays. See [Gaps](#what-is-not-here).
 
 ---
 
@@ -221,7 +265,7 @@ chapter, one per timeline event, one per detail card, one per people group.
 | legislation | 2,447 | 819 proposed resolutions, 578 resolutions, 477 bills, 324 Code sections, 155 Code rules, 94 acts |
 | budget | 801 | 258 projects, 246 programs, 207 rules, 44 offices, 38 sectors, 8 yearly totals |
 | election | 132 | 80 members, 32 districts, 13 parties, 6 reserved seats, 1 election |
-| lgu | 116 | 105 municipalities, 6 provinces, 4 cities, 1 special area |
+| lgu | 222 | 105 municipalities, 6 provinces, 4 cities, 1 special area; 105 finance rows (one per province, city and town that files with BLGF) and their regional sum |
 | primer | 63 | Background — chapters, timeline events, detail cards, people groups |
 | travel | 51 | 21 places, 19 foods, 7 areas, 4 routes |
 
@@ -259,9 +303,11 @@ Stated plainly, because the gaps matter more than the holdings.
    audits each office and Parliament sees the findings, but there is no public,
    office-by-office record of what was spent against what was given. This single
    gap is why every figure here is a promise and not a receipt.
-2. **No per-LGU budgets.** The budgets of individual municipalities are not in
-   this repository. The real source is BLGF's Statement of Receipts and
-   Expenditures (1992–2024); the ingestion pipeline has not been built.
+2. **No per-LGU budgets, and nothing for barangays.** `finances.json` holds
+   what each province, city and town reported spending (BLGF's SRE), not the
+   budget its council passed; those ordinances are not published together.
+   Barangays file no SRE, and DBM publishes barangay NTA only as a BARMM
+   total. BLGF reports outstanding LGU debt only nationally, by lender.
 3. **The tribe profiles are not in the corpus.** The 5 profiles in
    `apps/www/app/_components/discover-tribes.ts` are good material on the
    Meranao, Maguindanaon, Tausug, Yakan and Sama, and Jo cannot cite them. They

@@ -1,0 +1,383 @@
+{
+ "name": "National fund releases named to BARMM local governments",
+ "generatedAt": "2026-10-08",
+ "source": [
+  {
+   "label": "DBM — SARO listing, FY 2020",
+   "href": "https://www.dbm.gov.ph/wp-content/uploads/SARO/2020/SARO-2020.pdf",
+   "fiscalYear": 2020,
+   "kind": "SARO",
+   "records": 22607
+  },
+  {
+   "label": "DBM — SARO listing, FY 2021",
+   "href": "https://www.dbm.gov.ph/wp-content/uploads/SARO/2021/SARO-Releases-FY-2021.pdf",
+   "fiscalYear": 2021,
+   "kind": "SARO",
+   "records": 16012
+  },
+  {
+   "label": "DBM — SARO listing, FY 2022",
+   "href": "https://www.dbm.gov.ph/wp-content/uploads/SARO/2022/UPDATED_SARO_2022.pdf",
+   "fiscalYear": 2022,
+   "kind": "SARO",
+   "records": 13267
+  },
+  {
+   "label": "DBM — SARO listing, FY 2023",
+   "href": "https://www.dbm.gov.ph/wp-content/uploads/SARO/2023/UPDATED_SARO_2023.pdf",
+   "fiscalYear": 2023,
+   "kind": "SARO",
+   "records": 15011
+  },
+  {
+   "label": "DBM — SARO listing, FY 2024",
+   "href": "https://www.dbm.gov.ph/wp-content/uploads/SARO/2024/SARO_2024.pdf",
+   "fiscalYear": 2024,
+   "kind": "SARO",
+   "records": 20130
+  },
+  {
+   "label": "DBM — SARO listing, FY 2025",
+   "href": "https://www.dbm.gov.ph/wp-content/uploads/SARO/2025/SARO_2025.pdf",
+   "fiscalYear": 2025,
+   "kind": "SARO",
+   "records": 19490
+  },
+  {
+   "label": "DBM — SARO listing, FY 2026 (to date)",
+   "href": "https://www.dbm.gov.ph/wp-content/uploads/SARO/UPDATED_SARO.PDF",
+   "fiscalYear": 2026,
+   "kind": "SARO",
+   "records": 11895
+  },
+  {
+   "label": "DBM — NCA listing, FY 2020",
+   "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2020/NCA-2020.pdf",
+   "fiscalYear": 2020,
+   "kind": "NCA",
+   "records": 16864
+  },
+  {
+   "label": "DBM — NCA listing, FY 2021",
+   "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2021/NCA-Releases-FY-2021.pdf",
+   "fiscalYear": 2021,
+   "kind": "NCA",
+   "records": 33225
+  },
+  {
+   "label": "DBM — NCA listing, FY 2022",
+   "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2022/NCA-Releases-FY-2022.pdf",
+   "fiscalYear": 2022,
+   "kind": "NCA",
+   "records": 17498
+  },
+  {
+   "label": "DBM — NCA listing, FY 2023",
+   "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2023/NCA-Releases-FY-2023.pdf",
+   "fiscalYear": 2023,
+   "kind": "NCA",
+   "records": 20018
+  },
+  {
+   "label": "DBM — NCA listing, FY 2024",
+   "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2024/NCA_2024.pdf",
+   "fiscalYear": 2024,
+   "kind": "NCA",
+   "records": 18730
+  },
+  {
+   "label": "DBM — NCA listing, FY 2025",
+   "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2025/NCA_2025.pdf",
+   "fiscalYear": 2025,
+   "kind": "NCA",
+   "records": 18097
+  },
+  {
+   "label": "DBM — NCA listing, FY 2026 (to date)",
+   "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/UPDATED_NCA.PDF",
+   "fiscalYear": 2026,
+   "kind": "NCA",
+   "records": 13425
+  }
+ ],
+ "note": "Releases DBM's SARO and NCA listings name as going to one BARMM province, city or municipality, in pesos. A SARO is an allotment (authority to obligate) and an NCA is cash (authority to pay): a release is not spending, and a SARO and its NCA are the same money, so never add the two kinds. Only releases issued to the Bureau of the Treasury or DBM whose purpose writes the LGU's name are here; a negative amount is a withdrawal. This is NOT the LGUs' full Local Government Support Fund take: nearly every LGSF release (Financial Assistance to LGUs, SGLG Incentive Fund, Growth Equity Fund, Support to Barangay Development Program) is listed as \"for the recipient LGU per attached Schedule A\", and DBM does not publish Schedule A. The per-LGU LGSF releases are only in DBM's Power BI dashboard, which offers no export and could not be read. Releases to the Bangsamoro Government itself (Allocations to LGUs — BARMM) are regional, not local, and are left out, as is money national agencies spend in a place (a DPWH district office, a DepEd division, a hospital in Marawi). The NTA is in nta.json. Sulu is left out; pre-split Maguindanao is under \"former\". A release that names several LGUs for one amount is under \"shared\", not split. \"fund\" is what the purpose says it is chargeable against, null where it says nothing; \"barangay\" is set where the purpose names one. DBM's FY 2023 NCA listing is a scan: its records were read by OCR, are flagged \"ocr\", and were checked by eye against the page. Listings that could not be read are named in \"missing\".",
+ "missing": [],
+ "years": [
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025,
+  2026
+ ],
+ "units": {
+  "lanao-del-sur/kapai": {
+   "2026": [
+    {
+     "kind": "NCA",
+     "number": "NCA-LGRCB-26-0005138",
+     "fund": "Local Government Support Fund-Financial Assistance to LGUs",
+     "purpose": "To cover the funding requirements for the implementation of priority projects of the Municipality of Kapai, Lanao del Sur per attached Schedule A, chargeable against the Local Government Support Fund-Financial Assistance to LGUs, FY 2026 General Appropriations Act, Republic Act No. 12314.",
+     "amount": 5000000.0,
+     "date": "2026-05-04",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/UPDATED_NCA.PDF"
+    }
+   ]
+  },
+  "lanao-del-sur/madalum": {
+   "2024": [
+    {
+     "kind": "NCA",
+     "number": "NCA-LGRCB-24-0009005",
+     "fund": "Local Government Support Fund-Financial Assistance to LGUs",
+     "purpose": "To cover the funding requirements for the implementation of priority program of the Municipality of Madalum, in the Province of Lanao del Sur per attached Schedule A, chargeable against the Local Government Support Fund-Financial Assistance to LGUs, FY 2024 General Appropriations Act, Republic Act No. 11975.",
+     "amount": 1000000.0,
+     "date": "2024-07-08",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2024/NCA_2024.pdf"
+    }
+   ],
+   "2025": [
+    {
+     "kind": "NCA",
+     "number": "NCA-LGRCB-25-0014527",
+     "fund": "Local Government Support Fund-Financial Assistance to LGUs",
+     "purpose": "To cover the funding requirements for the implementation of priority project of the Municipality of Madalum in the Province of Lanao del Sur per attached Schedule A, chargeable against the Local Government Support Fund-Financial Assistance to LGUs, FY 2025 General Appropriations Act, Republic Act No. 12116.",
+     "amount": 20000000.0,
+     "date": "2025-10-30",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2025/NCA_2025.pdf"
+    }
+   ]
+  },
+  "lanao-del-sur/marawi": {
+   "2020": [
+    {
+     "kind": "NCA",
+     "number": "NCA-LGRCB-20-0004931",
+     "fund": "National Disaster Risk Reduction and Management Fund",
+     "purpose": "To cover the Programs/Projects/Activities of the City Government of Marawi per attached Annex A, in connection with the FY 2019 Marawi Recovery, Rehabilitation and Reconstruction Program, chargeable against the National Disaster Risk Reduction and Management Fund under the FY 2019 General Appropriations Act, Republic Act (RA) No. 11260, as amended by RA No. 11464 in accordance with the Office of the President’s approval dated March 24, 2020, pursuant to Section 22 of RA No. 10121.",
+     "amount": 558191000.0,
+     "date": "2020-04-14",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2020/NCA-2020.pdf"
+    },
+    {
+     "kind": "SARO",
+     "number": "SARO-LGRCB-20-0006646",
+     "fund": null,
+     "purpose": "Release of allotment to cover Programs/Projects/Activities of the City Government of Marawi in connection with the FY 2019 Marawi Recovery, Rehabilitation and Reconstruction Program per attached Annex A, in accordance with the Office of the President’s approval dated March 24, 2020, pursuant to Section 22 of Republic Act No. 10121.",
+     "amount": 558191000.0,
+     "date": "2020-04-15",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/SARO/2020/SARO-2020.pdf"
+    }
+   ],
+   "2021": [
+    {
+     "kind": "NCA",
+     "number": "NCA-LGRCB-21-0005134",
+     "fund": "National Disaster Risk Reduction and Management Fund",
+     "purpose": "To cover the Programs/Projects/Activities of the City Government of Marawi per attached Annex A, in connection with the FY 2021 Marawi Recovery, Rehabilitation and Reconstruction Program, chargeable against the National Disaster Risk Reduction and Management Fund under the FY 2021 General Appropriations Act, Republic Act (RA) No. 11518 in accordance with the Office of the President’s approval dated April 23, 2021, pursuant to Section 22 of RA No. 10121.",
+     "amount": 730692283.0,
+     "date": "2021-05-07",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2021/NCA-Releases-FY-2021.pdf"
+    },
+    {
+     "kind": "SARO",
+     "number": "SARO-LGRCB-21-0002108",
+     "fund": null,
+     "purpose": "Release of allotment to cover Programs/Projects/Activities of the City Government of Marawi in connection with the FY 2021 Marawi Recovery, Rehabilitation and Reconstruction Program per attached Annex A, in accordance with the Office of the President’s approval dated April 23, 2021, pursuant to Section 22 of Republic Act No. 10121.",
+     "amount": 730692283.0,
+     "date": "2021-05-07",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/SARO/2021/SARO-Releases-FY-2021.pdf"
+    },
+    {
+     "kind": "NCA",
+     "number": "NCA-LGRCB-21-0005885",
+     "fund": "National Disaster Risk Reduction and Management Fund",
+     "purpose": "To cover the construction of the Lake Lanao Promenade of the City Government of Marawi per attached Annex A, in connection with the FY 2021 Marawi Recovery, Rehabilitation and Reconstruction Program, chargeable against the National Disaster Risk Reduction and Management Fund under the FY 2021 General Appropriations Act, Republic Act (RA) No. 11518 in accordance with the Office of the President’s approval dated May 24, 2021, pursuant to Section 22 of RA No. 10121.",
+     "amount": 380000000.0,
+     "date": "2021-06-02",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2021/NCA-Releases-FY-2021.pdf"
+    },
+    {
+     "kind": "SARO",
+     "number": "SARO-LGRCB-21-0002677",
+     "fund": null,
+     "purpose": "Release of allotment to cover the construction of the Lake Lanao Promenade of the City Government of Marawi in connection with the FY 2021 Marawi Recovery, Rehabilitation and Reconstruction Program per attached Annex A, in accordance with the Office of the President’s approval dated May 24, 2021, pursuant to Section 22 of Republic Act No. 10121.",
+     "amount": 380000000.0,
+     "date": "2021-06-03",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/SARO/2021/SARO-Releases-FY-2021.pdf"
+    },
+    {
+     "kind": "NCA",
+     "number": "NCA-LGRCB-21-0006921",
+     "fund": "National Disaster Risk Reduction and Management Fund",
+     "purpose": "To cover the Programs/Projects/Activities of the City Government of Marawi per attached Annex A, in connection with the FY 2021 Marawi Recovery, Rehabilitation and Reconstruction Program, chargeable against the National Disaster Risk Reduction and Management Fund under the FY 2021 General Appropriations Act, Republic Act (RA) No. 11518 in accordance with the Office of the President’s approval dated June 9, 2021, pursuant to Section 22 of RA No. 10121.",
+     "amount": 100000000.0,
+     "date": "2021-06-23",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2021/NCA-Releases-FY-2021.pdf"
+    },
+    {
+     "kind": "SARO",
+     "number": "SARO-LGRCB-21-0003894",
+     "fund": null,
+     "purpose": "Release of allotment to cover Programs/Projects/Activities of the City Government of Marawi in connection with the FY 2021 Marawi Recovery, Rehabilitation and Reconstruction Program per attached Annex A, in accordance with the Office of the President’s approval dated June 9, 2021, pursuant to Section 22 of Republic Act No. 10121.",
+     "amount": 100000000.0,
+     "date": "2021-06-23",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/SARO/2021/SARO-Releases-FY-2021.pdf"
+    },
+    {
+     "kind": "SARO",
+     "number": "SARO-LGRCB-21-0012860",
+     "fund": null,
+     "purpose": "Release of allotment to cover Program/Project/Activity of the City Government of Marawi in connection with the FY 2021 Marawi Recovery, Rehabilitation and Reconstruction Program per attached Annex A, in accordance with the Office of the President’s approval dated November 3, 2021, pursuant to Section 22 of Republic Act No. 10121.",
+     "amount": 50000000.0,
+     "date": "2021-11-24",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/SARO/2021/SARO-Releases-FY-2021.pdf"
+    },
+    {
+     "kind": "NCA",
+     "number": "NCA-LGRCB-21-0015948",
+     "fund": "National Disaster Risk Reduction and Management Fund",
+     "purpose": "To cover the Program/Project/Activity of the City Government of Marawi per attached Annex A, in connection with the FY 2021 Marawi Recovery, Rehabilitation and Reconstruction Program, chargeable against the National Disaster Risk Reduction and Management Fund under the FY 2021 General Appropriations Act, Republic Act (RA) No. 11518 in accordance with the Office of the President’s approval dated November 3, 2021, pursuant to Section 22 of RA No. 10121.",
+     "amount": 50000000.0,
+     "date": "2021-11-26",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2021/NCA-Releases-FY-2021.pdf"
+    }
+   ],
+   "2022": [
+    {
+     "kind": "SARO",
+     "number": "SARO-LGRCB-22-0003973",
+     "fund": null,
+     "purpose": "Release of allotment to cover Programs/Projects/Activities of the City Government of Marawi in connection with the FY 2022 Marawi Recovery, Rehabilitation and Reconstruction Program per attached Annex A, in accordance with the Office of the President’s approval dated March 21, 2022, pursuant to Section 22 of Republic Act No. 10121.",
+     "amount": 84000000.0,
+     "date": "2022-05-12",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/SARO/2022/UPDATED_SARO_2022.pdf"
+    },
+    {
+     "kind": "NCA",
+     "number": "NCA-LGRCB-22-0005354",
+     "fund": "National Disaster Risk Reduction and Management Fund",
+     "purpose": "To cover the Programs/Projects/Activities of the City Government of Marawi per attached Annex A, in connection with the FY 2022 Marawi Recovery, Rehabilitation and Reconstruction Program, chargeable against the National Disaster Risk Reduction and Management Fund under the FY 2022 General Appropriations Act, Republic Act (RA) No. 11639 in accordance with the Office of the President’s approval dated March 21, 2022, pursuant to Section 22 of RA No. 10121.",
+     "amount": 84000000.0,
+     "date": "2022-05-13",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2022/NCA-Releases-FY-2022.pdf"
+    }
+   ],
+   "2025": [
+    {
+     "kind": "NCA",
+     "number": "NCA-LGRCB-25-0014983",
+     "fund": "Local Government Support Fund-Green Green Green Program",
+     "purpose": "To cover the funding requirements for the implementation of the identified project of the City of Marawi, Province of Lanao del Sur per attached Schedule A, chargeable against the Local Government Support Fund-Green Green Green Program, FY 2024 General Appropriations Act, Republic Act No. 11975, Continuing Appropriations.",
+     "amount": 10824591.0,
+     "date": "2025-11-11",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2025/NCA_2025.pdf"
+    }
+   ]
+  },
+  "lanao-del-sur/mulondo": {
+   "2024": [
+    {
+     "kind": "NCA",
+     "number": "NCA-LGRCB-24-0017630",
+     "fund": null,
+     "purpose": "To cover the release of the FY 2024 National Tax Allotment share of Barangay Pindolonan in the Municipality of Mulondo, Lanao del Sur for the month of September.",
+     "amount": 244834.0,
+     "date": "2024-12-13",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2024/NCA_2024.pdf",
+     "barangay": "Pindolonan"
+    }
+   ]
+  },
+  "lanao-del-sur/tamparan": {
+   "2026": [
+    {
+     "kind": "NCA",
+     "number": "NCA-LGRCB-26-0008878",
+     "fund": "Local Government Support Fund-Financial Assistance to LGUs",
+     "purpose": "To cover the funding requirements for the implementation of the priority project of the Municipality of Tamparan, Lanao del Sur per attached Schedule A, chargeable against the Local Government Support Fund-Financial Assistance to LGUs, FY 2026 General Appropriations Act, Republic Act No. 12314.",
+     "amount": 5000000.0,
+     "date": "2026-07-29",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/UPDATED_NCA.PDF"
+    }
+   ]
+  },
+  "maguindanao-del-norte/kabuntalan": {
+   "2025": [
+    {
+     "kind": "NCA",
+     "number": "NCA-LGRCB-25-0014725",
+     "fund": "Local Government Support Fund-Financial Assistance to LGUs",
+     "purpose": "To cover the funding requirements for the implementation of priority programs and projects of the Municipality of Kabuntalan in the Province of Maguindanao del Norte per attached Schedule A, chargeable against the Local Government Support Fund-Financial Assistance to LGUs, FY 2025 General Appropriations Act, Republic Act No. 12116.",
+     "amount": 9000000.0,
+     "date": "2025-11-05",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2025/NCA_2025.pdf"
+    },
+    {
+     "kind": "SARO",
+     "number": "SARO-LGRCB-25-0016317",
+     "fund": null,
+     "purpose": "To cover the funding requirements for the implementation of priority programs and projects of the Municipality of Kabuntalan, in the Province of Maguindanao del Norte per attached Schedule A.",
+     "amount": 9000000.0,
+     "date": "2025-11-05",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/SARO/2025/SARO_2025.pdf"
+    }
+   ]
+  },
+  "tawi-tawi/sitangkai": {
+   "2023": [
+    {
+     "kind": "NCA",
+     "number": "NCA-LGRCB-23-0011640",
+     "fund": null,
+     "purpose": "National Government Share in the payment of the Terminal Leave Benefits of Mr. Barlie S. Sapal, devolved Department of Budget and Management personnel to the Municipality of Sitangkai in the Province of Tawi-Tawi per attached Schedule A.",
+     "amount": 994907.0,
+     "date": "2023-09-07",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2023/NCA-Releases-FY-2023.pdf",
+     "ocr": true
+    },
+    {
+     "kind": "SARO",
+     "number": "SARO-LGRCB-23-0023280",
+     "fund": null,
+     "purpose": "To cover the payment of the Terminal Leave Benefits of Mr. Barlie S. Sapal, devolved Department of Budget and Management personnel to the Municipality of Sitangkai in the Province of Tawi-Tawi per attached Schedule A.",
+     "amount": 994907.0,
+     "date": "2023-09-07",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/SARO/2023/UPDATED_SARO_2023.pdf"
+    }
+   ]
+  }
+ },
+ "former": {
+  "maguindanao": {
+   "2020": [
+    {
+     "kind": "NCA",
+     "number": "NCA-ROXII-20-0015462",
+     "fund": null,
+     "purpose": "To cover funding requirements for the share of the Province of Maguindanao from the CY 2012 and CY 2013 Collections of Burley and Native Tobacco excise tax.",
+     "amount": 681046.0,
+     "date": "2020-12-10",
+     "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2020/NCA-2020.pdf"
+    }
+   ]
+  }
+ },
+ "shared": [
+  {
+   "kind": "NCA",
+   "number": "NCA-OSEC-20-0001727",
+   "fund": "FY 2019 Local Government Support Fund-Conditional Matching Grant to Provinces for Road and Bridge Repair, Rehabilitation and Improvement (LGSF-CMGP)",
+   "purpose": "To cover the funding requirements for the implementation of priority programs and projects of the Provinces of Lanao del Sur and Maguindanao per attached Schedule A, chargeable against the FY 2019 Local Government Support Fund-Conditional Matching Grant to Provinces for Road and Bridge Repair, Rehabilitation and Improvement (LGSF-CMGP), FY 2019 General Appropriations Act, Republic Act No. 11260.",
+   "amount": 170322071.0,
+   "date": "2020-02-11",
+   "href": "https://www.dbm.gov.ph/wp-content/uploads/NCA/2020/NCA-2020.pdf",
+   "units": [
+    "lanao-del-sur",
+    "maguindanao"
+   ]
+  }
+ ]
+}

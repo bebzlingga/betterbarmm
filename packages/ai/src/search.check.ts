@@ -486,3 +486,16 @@ assert.ok(
 // A sentence the token ceiling cut in half does not reach a reader.
 assert.equal(grounded('Health is the largest of them. It also covers the provincial offices and', towns), 'Health is the largest of them.', 'a truncated tail survived')
 assert.equal(grounded('Marawi has 96 barangays', towns), 'Marawi has 96 barangays', 'a lone sentence was dropped for want of a full stop')
+
+// LGU money: a town's finances row answers for its NTA, the region's sum answers
+// for all of them, and neither takes "how many provinces" from the region row.
+const { finances, row } = await import('@betterbarmm/lgu-data/fiscal')
+// BLGF's SRE, FY 2023: Lanao del Sur borrowed ₱580,983,940.12. If this moves, the
+// builder has stopped reproducing the workbook.
+assert.equal(row(finances, 'lanao-del-sur', 2023)?.borrowings, 580983940.12, 'finances.json no longer reproduces the FY 2023 SRE')
+const marawiMoney = search('how much NTA does Marawi get', 'lgu', 3)
+assert.equal(marawiMoney[0]?.title, 'Marawi: income, spending and debt', `Marawi's NTA reached ${marawiMoney[0]?.title}`)
+const ntaFigure = marawiMoney[0]!.note.match(/NTA (₱[\d,]+)/)![1]
+assert.equal(grounded(`Marawi received ${ntaFigure} in NTA.`, marawiMoney), `Marawi received ${ntaFigure} in NTA.`, 'a figure from the finances row was dropped')
+const allMoney = forTest.gather([{ query: 'how much NTA do all BARMM local governments get' }])[0]!
+assert.ok(allMoney.title.startsWith('BARMM local governments combined'), `the region's NTA total reached ${allMoney.title}`)
