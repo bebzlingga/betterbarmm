@@ -11,6 +11,7 @@ import {
 	type LguProvince,
 } from '@betterbarmm/lgu-data'
 import { barangayOfficials, rosterCoverage } from '@betterbarmm/lgu-data/barangay-officials'
+import { finances, row } from '@betterbarmm/lgu-data/fiscal'
 import Link from 'next/link'
 import { RegionMap } from './_components/region-map'
 
@@ -123,6 +124,13 @@ function Areas() {
 
 export default function LguHomePage() {
 	const regionRoster = rosterCoverage(lguProvinces.flatMap((province) => province.municipalities))
+	// The NTA the provinces, cities and towns themselves reported receiving in
+	// BLGF's latest year; barangays' shares are paid to them and are not in it.
+	const ntaYear = finances.years.at(-1)!
+	const ntaTotal = Object.keys(finances.units).reduce(
+		(sum, key) => sum + Number(row(finances, key, ntaYear)?.nta ?? 0),
+		0,
+	)
 	const cities = lguProvinces.reduce(
 		(count, province) => count + province.municipalities.filter((unit) => unit.isCity).length,
 		0,
@@ -157,7 +165,7 @@ export default function LguHomePage() {
 					</Rise>
 
 					<Rise delay={0.55} distance={14} className='mt-6 lg:col-span-2 lg:mt-12'>
-						<dl className='grid grid-cols-2 gap-x-8 gap-y-6 lg:grid-cols-4'>
+						<dl className='grid grid-cols-2 gap-x-8 gap-y-6 sm:grid-cols-3 lg:grid-cols-6'>
 							{/* Every figure here is the directory's own, summed from the units
 							    it can actually open. PSA's regional totals are larger and
 							    count different things; the note under the areas below says
@@ -180,15 +188,28 @@ export default function LguHomePage() {
 									group: true,
 								},
 								{
+									value: regionRoster.listed,
+									label: 'Barangay captains on record',
+									group: true,
+								},
+								{
 									value: lguData.totals.population,
 									label: 'People, 2024 census',
 									group: true,
+								},
+								{
+									value: Math.round(ntaTotal / 1e8) / 10,
+									label: `NTA to its LGUs, FY ${ntaYear}`,
+									group: false,
+									prefix: '₱',
+									suffix: 'B',
+									decimals: 1,
 								},
 							].map((fact) => (
 								<div key={fact.label} className='border-t border-[var(--brass-line)] pt-6'>
 									<dt className='sr-only'>{fact.label}</dt>
 									<dd className='bb-figure-sm text-[var(--ink)]'>
-										<Counter value={fact.value} group={fact.group} />
+										<Counter value={fact.value} group={fact.group} prefix={fact.prefix} suffix={fact.suffix} decimals={fact.decimals} />
 									</dd>
 									<p className='mt-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 										{fact.label}
