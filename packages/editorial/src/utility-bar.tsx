@@ -36,6 +36,7 @@ const WORKSPACES = [
 	{ key: 'election', href: 'https://election.betterbarmm.com', label: 'Election' },
 	{ key: 'legislation', href: 'https://legislation.betterbarmm.com', label: 'Legislation' },
 	{ key: 'budget', href: 'https://budget.betterbarmm.com', label: 'Budget' },
+	{ key: 'lgu', href: 'https://lgu.betterbarmm.com', label: 'Local government' },
 ] as const
 
 export type WorkspaceKey = (typeof WORKSPACES)[number]['key']

@@ -18,8 +18,7 @@ const guide = [
 ] as const
 
 const workspaces = [
-	// LGU hidden for now.
-	// { href: 'https://lgu.betterbarmm.com', label: 'Local government' },
+	{ href: 'https://lgu.betterbarmm.com', label: 'Local government' },
 	{ href: 'https://election.betterbarmm.com', label: 'Election' },
 	{ href: 'https://legislation.betterbarmm.com', label: 'Legislation' },
 	{ href: 'https://budget.betterbarmm.com', label: 'Budget' },

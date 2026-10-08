@@ -12,8 +12,7 @@ const WORKSPACES: FooterLink[] = [
 	{ href: 'https://election.betterbarmm.com', label: 'Election' },
 	{ href: 'https://legislation.betterbarmm.com', label: 'Legislation' },
 	{ href: 'https://budget.betterbarmm.com', label: 'Budget' },
-	// LGU hidden for now.
-	// { href: 'https://lgu.betterbarmm.com', label: 'Local government' },
+	{ href: 'https://lgu.betterbarmm.com', label: 'Local government' },
 	{ href: 'https://betterbarmm.com/discover', label: 'Discover BARMM' },
 ]
 

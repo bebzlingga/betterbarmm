@@ -27,9 +27,6 @@ import { TownMap } from '../_components/town-map'
 import { PhotoFigure, PhotoStrip } from '../_components/photo-figure'
 import { photoForPlace, photosForArea } from '../_lib/media'
 
-// The LGU workspace is hidden for now; flip to restore its directory link.
-const SHOW_LGU: boolean = false
-
 /**
  * Static routes win over this one, so `/places`, `/food`, `/stays` and `/plan`
  * are never matched here. Only the seven area slugs are prerendered; anything
@@ -107,7 +104,7 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 						{/* The census figures are the directory's, not this guide's, and the
 						    link says so — a traveler who wants to know how big a place is
 						    should end up on the record rather than on a number retyped here. */}
-						{SHOW_LGU && province && directoryProvince ? (
+						{province && directoryProvince ? (
 							<div>
 								<p className='bb-label'>In the directory</p>
 								<p className='mt-2.5 text-[13.5px] leading-6 text-[var(--ink-2)]'>

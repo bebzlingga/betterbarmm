@@ -120,7 +120,7 @@ export function SiteNav() {
 			{/* The estate's strip, above the workspace's own bar. Not sticky:
 			    it belongs to the top of the document, and the navigation a
 			    reader actually needs mid-page is the bar under it. */}
-			<UtilityBar base='https://betterbarmm.com' />
+			<UtilityBar base='https://betterbarmm.com' current='lgu' />
 
 			{/* The estate's masthead behaviour, the same on every workspace: it
 			    takes a ground once the reader has left the top, and ducks out of the

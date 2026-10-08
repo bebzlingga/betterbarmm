@@ -57,7 +57,6 @@ const workspaces: Workspace[] = [
 		measure: 'Infrastructure',
 		state: 'planned',
 	},
-	/* LGU hidden for now.
 	{
 		label: 'Local government',
 		href: 'https://lgu.betterbarmm.com',
@@ -66,7 +65,6 @@ const workspaces: Workspace[] = [
 		measure: 'LGU directory',
 		state: 'live',
 	},
-	*/
 	{
 		label: 'Travel',
 		href: '/soon',
