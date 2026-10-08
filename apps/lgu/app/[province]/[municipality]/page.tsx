@@ -35,6 +35,7 @@ import {
 	UnitRollPanel,
 } from '../../_components/lgu-officials'
 import { LguTabs } from '../../_components/lgu-tabs'
+import { LguFinances } from '../../_components/lgu-finances'
 import { LguTermPicker } from '../../_components/lgu-term-picker'
 import { Rise } from '@betterbarmm/editorial'
 export function generateStaticParams() {
@@ -719,6 +720,11 @@ export default async function UnitPage({
 							id: 'officials',
 							label: 'Officials',
 							panel: <Officials unit={unit} province={province} />,
+						},
+						{
+							id: 'finances',
+							label: 'Finances',
+							panel: <LguFinances unitKey={`${province.slug}/${unit.slug}`} name={unit.name} />,
 						},
 						{
 							id: 'services',

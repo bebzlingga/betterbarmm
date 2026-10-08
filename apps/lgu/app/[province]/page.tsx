@@ -36,6 +36,7 @@ import {
 import { provinceHistory, tookOffice } from '@betterbarmm/lgu-data/history'
 import { rosterCoverage } from '@betterbarmm/lgu-data/barangay-officials'
 import { LguTermPicker } from '../_components/lgu-term-picker'
+import { LguFinances } from '../_components/lgu-finances'
 import { UnitGrid, type UnitCard } from '../_components/unit-grid'
 import { LineReveal, OkirRule, Rise } from '@betterbarmm/editorial'
 
@@ -335,6 +336,28 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				</section>
 			) : null}
 
+			{/* ---- The money ---- */}
+			{province.kind === 'Province' ? (
+				<section id='finances' className='bb-container scroll-mt-24 pt-[clamp(3.75rem,7vw,6.5rem)]'>
+					<Rise distance={12}>
+						<div className='bb-kicker'>
+							<span>{province.officials ? '02' : '01'}</span>
+							<span>The money</span>
+						</div>
+					</Rise>
+
+					<LineReveal
+						as='h2'
+						lines={[`What ${province.name} collects and spends.`]}
+						className='bb-display-sm mt-8 text-[var(--ink)]'
+					/>
+
+					<div className='mt-12'>
+						<LguFinances unitKey={province.slug} name={`the provincial government of ${province.name}`} />
+					</div>
+				</section>
+			) : null}
+
 			<OkirRule className='mx-auto mt-16 max-w-[88rem] opacity-70 lg:mt-20' />
 
 			{/* ---- The units ---- */}
@@ -343,7 +366,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 					<div key={group.title} className='mt-16'>
 						<Rise distance={12}>
 							<div className='bb-kicker'>
-								<span>{String(groupIndex + (province.officials ? 2 : 1)).padStart(2, '0')}</span>
+								<span>{String(groupIndex + 1 + (province.officials ? 1 : 0) + (province.kind === 'Province' ? 1 : 0)).padStart(2, '0')}</span>
 								<span>{group.title}</span>
 							</div>
 							<div className='mt-6 flex items-baseline justify-between gap-4 border-b border-[var(--ink)] pb-3'>
