@@ -60,11 +60,17 @@ function Source({ href, children }: { href: string; children: React.ReactNode })
 /** Lines down, years across: the shape of the statement itself. */
 function YearTable({ years, lines }: { years: string[]; lines: [string, (year: string) => string, boolean?][] }) {
 	return (
-		<div className='mt-4 overflow-x-auto'>
+		<div className='mt-4'>
+			{years.length > 3 ? (
+				<p aria-hidden='true' className='mb-2 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] sm:hidden'>
+					Swipe for every year &rarr;
+				</p>
+			) : null}
+			<div className='overflow-x-auto'>
 			<table className='w-full min-w-[36rem] border-collapse text-[13px]'>
 				<thead>
 					<tr>
-						<th className='py-2 pr-4 text-left font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+						<th className='sticky left-0 z-[1] bg-[var(--paper)] py-2 pr-4 text-left font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 							FY
 						</th>
 						{years.map((year) => (
@@ -82,7 +88,7 @@ function YearTable({ years, lines }: { years: string[]; lines: [string, (year: s
 						<tr key={label} className='border-t border-[var(--rule-soft)]'>
 							<th
 								scope='row'
-								className={`py-2.5 pr-4 text-left font-normal ${strong ? 'font-semibold text-[var(--ink)]' : 'text-[var(--ink-2)]'}`}
+								className={`sticky left-0 z-[1] w-[9rem] min-w-[9rem] bg-[var(--paper)] py-2.5 pr-4 text-left font-normal leading-snug sm:w-auto ${strong ? 'font-semibold text-[var(--ink)]' : 'text-[var(--ink-2)]'}`}
 							>
 								{label}
 							</th>
@@ -98,6 +104,7 @@ function YearTable({ years, lines }: { years: string[]; lines: [string, (year: s
 					))}
 				</tbody>
 			</table>
+			</div>
 		</div>
 	)
 }
@@ -174,7 +181,7 @@ export function LguFinances({ unitKey, name }: { unitKey: string; name: string }
 
 			{f && latest ? (
 				<>
-					<div className='mt-10 grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-4'>
+					<div className='mt-10 grid grid-cols-2 gap-x-6 gap-y-8 sm:gap-x-8 lg:grid-cols-4'>
 						<LguStat value={peso(f.operatingIncome)} label={`Operating income, FY ${latest}`} />
 						<LguStat value={peso(f.nta)} label='Of which, National Tax Allotment' />
 						<LguStat value={peso(f.operatingExpenditures)} label='Operating spending' />
@@ -418,9 +425,9 @@ export function LguFinances({ unitKey, name }: { unitKey: string; name: string }
 
 function Fact({ label, href, children }: { label: string; href?: string; children: React.ReactNode }) {
 	return (
-		<div className='flex items-baseline justify-between gap-4 border-b border-[var(--rule-soft)] py-2.5'>
+		<div className='flex flex-col gap-1 border-b border-[var(--rule-soft)] py-2.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4'>
 			<dt className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>{label}</dt>
-			<dd className='text-right text-[13.5px] font-medium text-[var(--ink)]'>
+			<dd className='text-[13.5px] font-medium text-[var(--ink)] sm:text-right'>
 				{href ? (
 					<a href={href} target='_blank' rel='noreferrer' className='inline-flex items-center gap-1 hover:text-[var(--accent)]'>
 						{children}

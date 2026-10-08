@@ -129,7 +129,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 			>
 				{/* ---- The province in figures ---- */}
 				<Rise delay={0.3} distance={14}>
-					<div className='mt-14 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4'>
+					<div className='mt-14 grid grid-cols-2 gap-x-6 gap-y-8 sm:gap-x-8 sm:gap-y-10 lg:grid-cols-4'>
 						<LguStat
 							value={formatNumber(province.population)}
 							count={province.population}

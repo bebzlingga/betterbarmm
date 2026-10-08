@@ -35,6 +35,14 @@ export function LguTabs({ tabs }: { tabs: LguTab[] }) {
 		return () => window.removeEventListener('hashchange', fromHash)
 	}, [tabs])
 
+	// The strip scrolls sideways on a phone; a tab opened from a link or a tap
+	// near the edge is brought into view rather than left behind the fade.
+	useEffect(() => {
+		// Scrolls the strip only — `scrollIntoView` would move the page too.
+		const tab = document.getElementById(`tab-${active}`)
+		tab?.parentElement?.scrollTo({ left: Math.max(0, tab.offsetLeft - 24), behavior: 'smooth' })
+	}, [active])
+
 	const select = (id: string) => {
 		setActive(id)
 		// `replaceState` rather than assigning to `location.hash`, which would
@@ -47,7 +55,7 @@ export function LguTabs({ tabs }: { tabs: LguTab[] }) {
 			<div
 				role='tablist'
 				aria-label='Sections'
-				className='sticky top-[var(--site-header-h)] z-20 -mx-6 flex gap-1 overflow-x-auto border-b border-[var(--ink)] bg-[var(--paper)]/92 px-6 backdrop-blur-md [scrollbar-width:none] lg:-mx-8 lg:px-8 [&::-webkit-scrollbar]:hidden'
+				className='sticky top-[var(--site-header-h)] z-20 -mx-6 flex gap-1 overflow-x-auto border-b border-[var(--ink)] bg-[var(--paper)]/92 px-6 backdrop-blur-md [mask-image:linear-gradient(to_right,#000_82%,transparent)] [scrollbar-width:none] md:[mask-image:none] lg:-mx-8 lg:px-8 [&::-webkit-scrollbar]:hidden'
 			>
 				{tabs.map((tab) => (
 					<button

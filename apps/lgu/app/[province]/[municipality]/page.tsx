@@ -157,7 +157,7 @@ function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) 
 			</div>
 
 			<div>
-				<div className='grid gap-x-8 gap-y-8 sm:grid-cols-2'>
+				<div className='grid grid-cols-2 gap-x-6 gap-y-8 sm:gap-x-8'>
 					<LguStat
 						value={formatNumber(unit.population)}
 						count={unit.population}
@@ -547,7 +547,7 @@ function Services({ unit }: { unit: LguUnit }) {
 				</h3>
 				<p className='mt-4 text-[14.5px] leading-7 text-[var(--ink-2)]'>
 					These services are devolved to this level by the Bangsamoro Local Governance Code, so they
-					describe what {unit.name} is mandated to provide — not an inventory of what its offices
+					describe what {unit.name}{' '}is mandated to provide — not an inventory of what its offices
 					currently run. For opening hours and requirements, the unit&rsquo;s own hall is the source.
 				</p>
 			</div>

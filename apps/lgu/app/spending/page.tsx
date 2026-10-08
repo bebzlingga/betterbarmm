@@ -50,15 +50,20 @@ export default function SpendingPage() {
 					lead='Amounts as each Act appropriated them. Areas are reconciled to their present names — the region was redrawn inside this span, and every spelling the Acts used is kept under the row.'
 				/>
 
-				<div className='mt-12 -mx-6 overflow-x-auto px-6 lg:-mx-8 lg:px-8'>
-					<table className='w-full min-w-[54rem] border-collapse text-[14.5px]'>
+				<p aria-hidden='true' className='mb-3 mt-12 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] lg:hidden'>
+					Swipe for every year &rarr;
+				</p>
+				{/* The area column is pinned on a phone, so a swipe to FY 2026 still
+				    says whose row it is. */}
+				<div className='overflow-x-auto lg:-mx-8 lg:mt-12 lg:px-8'>
+					<table className='w-full min-w-[46rem] border-collapse text-[14.5px] lg:min-w-[54rem]'>
 						<caption className='sr-only'>
 							Bangsamoro construction appropriated into each area, in billions of pesos, by
 							fiscal year
 						</caption>
 						<thead>
 							<tr className='border-b border-[var(--ink)]'>
-								<th scope='col' className='bb-label py-4 pr-4 text-left align-bottom'>
+								<th scope='col' className='bb-label sticky left-0 z-[1] bg-[var(--paper)] py-4 pr-4 text-left align-bottom'>
 									Area
 								</th>
 								{YEARS.map((year) => (
@@ -90,9 +95,9 @@ export default function SpendingPage() {
 
 						<tbody>
 							{areaSpending.areas.map((area) => (
-								<tr key={area.name} className='border-b border-[var(--rule-soft)] transition-colors duration-150 hover:bg-[var(--paper-2)]'>
-									<th scope='row' className='py-5 pr-4 text-left font-normal'>
-										<span className='block text-[15px] font-semibold text-[var(--ink)]'>
+								<tr key={area.name} className='group border-b border-[var(--rule-soft)] transition-colors duration-150 hover:bg-[var(--paper-2)]'>
+									<th scope='row' className='w-[10.5rem] min-w-[10.5rem] py-5 pr-4 text-left font-normal sm:w-auto sticky left-0 z-[1] bg-[var(--paper)] transition-colors duration-150 group-hover:bg-[var(--paper-2)]'>
+										<span className='block text-[13.5px] font-semibold leading-snug text-[var(--ink)] sm:text-[15px]'>
 											{area.name}
 										</span>
 										{area.note ? (
@@ -132,7 +137,7 @@ export default function SpendingPage() {
 
 						<tfoot>
 							<tr className='border-t-2 border-[var(--brass)]'>
-								<th scope='row' className='py-5 pr-4 text-left'>
+								<th scope='row' className='sticky left-0 z-[1] bg-[var(--paper)] py-5 pr-4 text-left'>
 									<span className='bb-label'>All areas</span>
 								</th>
 								{YEARS.map((year) => (
