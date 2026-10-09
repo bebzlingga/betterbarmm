@@ -75,12 +75,9 @@ export default function SourcesPage() {
           statement about the page rather than as more of the page. */}
       <section className="bg-[var(--paper-2)]">
         <div className="bb-container section-band">
-          {/* Two cells rather than `columns-2`: flowed columns would split the
-					    disclaimer across the gutter mid-sentence and strand its bolded
-					    opening wherever the break landed. Split by argument instead — how
-					    the figures were got on the left, how they could still be wrong on
-					    the right. */}
-          <div className="grid gap-x-16 gap-y-8 text-[15px] leading-8 text-[var(--ink-2)] lg:grid-cols-2">
+          {/* One column at full width (user decision): how the figures were got,
+					    then, under a rule, how they could still be wrong. */}
+          <div className="grid gap-y-8 text-[15px] leading-8 text-[var(--ink-2)]">
             <div>
               {/* Where the document itself comes from, before anything about how
                   it was read. The Ministry publishes the Acts; this workspace only
@@ -119,7 +116,7 @@ export default function SourcesPage() {
 
 						    The rule divides them only when they are stacked; side by side the
 						    gutter already does it. */}
-            <p className="border-t border-[var(--rule)] pt-5 text-[var(--ink-3)] lg:border-t-0 lg:pt-0">
+            <p className="border-t border-[var(--rule)] pt-5 text-[var(--ink-3)]">
               <strong className="font-semibold text-[var(--ink)]">
                 These figures are machine-read, and some of them will be wrong.
               </strong>{" "}
