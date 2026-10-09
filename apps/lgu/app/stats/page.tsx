@@ -22,7 +22,7 @@ export default function StatsPage() {
 						name: province.name,
 						href: `/${province.slug}#finances`,
 						level: 'province' as const,
-						meta: 'Provincial government',
+						meta: 'Province',
 						population: province.population,
 					},
 				]

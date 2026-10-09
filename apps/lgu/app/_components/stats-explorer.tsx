@@ -1,5 +1,6 @@
 'use client'
 
+import { MagnifyingGlassIcon } from '@phosphor-icons/react'
 import { useMemo, useState } from 'react'
 import { DataTable, type DataColumn, type DataRow } from './data-table'
 
@@ -80,12 +81,12 @@ export function StatsExplorer({
 	data: StatsData
 }) {
 	const [year, setYear] = useState(String(years.at(-1)))
-	const [level, setLevel] = useState<'town' | 'province'>('town')
+	const [query, setQuery] = useState('')
 
 	const rows = useMemo<DataRow[]>(
 		() =>
 			units
-				.filter((unit) => unit.level === level && data[unit.key]?.[year])
+				.filter((unit) => data[unit.key]?.[year])
 				.map((unit) => {
 					const values = data[unit.key]![year]!
 					const field = Object.fromEntries(fields.map((name, i) => [name, values[i] ?? null]))
@@ -101,23 +102,27 @@ export function StatsExplorer({
 						},
 					}
 				}),
-		[units, fields, data, year, level],
+		[units, fields, data, year],
 	)
 
-	const total = units.filter((unit) => unit.level === level).length
+	const total = units.length
 
 	return (
 		<div>
 			<div className='flex flex-col gap-3 border-y border-[var(--rule)] py-4 lg:flex-row lg:items-center lg:justify-between'>
-				<Choice
-					label='Level'
-					value={level}
-					options={[
-						['town', 'Cities and municipalities'],
-						['province', 'Provinces'],
-					]}
-					onChange={setLevel}
-				/>
+				<label className='flex w-full max-w-md items-center gap-3 border-b border-[var(--rule)] py-2'>
+					<MagnifyingGlassIcon className='size-4 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
+					<span className='sr-only'>Filter provinces, cities and municipalities</span>
+					<input
+						value={query}
+						onChange={(event) => setQuery(event.target.value)}
+						type='search'
+						autoComplete='off'
+						spellCheck={false}
+						placeholder='Filter by name or province'
+						className='min-w-0 flex-1 bg-transparent text-[14px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+					/>
+				</label>
 				<Choice label='Fiscal year' value={year} options={years.map((y) => [String(y), String(y)])} onChange={setYear} />
 			</div>
 
@@ -129,11 +134,11 @@ export function StatsExplorer({
 
 			<div className='mt-6'>
 				<DataTable
-					// Remount on a new level or year so the ranking reopens on its measure.
-					key={`${level}-${year}`}
-					caption={`${level === 'town' ? 'Cities and municipalities' : 'Provinces'} ranked by their finances, FY ${year}`}
-					nameLabel={level === 'town' ? 'City or municipality' : 'Province'}
-					filterLabel={level === 'town' ? 'cities and municipalities' : undefined}
+					// Remount on a new year so the ranking reopens on its measure.
+					key={year}
+					caption={`Provinces, cities and municipalities ranked by their finances, FY ${year}`}
+					nameLabel='Province, city or municipality'
+					query={query}
 					columns={COLUMNS}
 					rows={rows}
 					initialSort={{ key: 'localSources', down: true }}

@@ -1,6 +1,6 @@
 'use client'
 
-import { CaretDownIcon, CaretUpIcon, MagnifyingGlassIcon } from '@phosphor-icons/react'
+import { ArrowDownIcon, ArrowUpIcon, MagnifyingGlassIcon } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
 
@@ -61,6 +61,7 @@ export function DataTable({
 	caption,
 	initialSort = { key: 'name', down: false },
 	ranked = false,
+	query: outsideQuery,
 }: {
 	columns: DataColumn[]
 	rows: DataRow[]
@@ -73,9 +74,12 @@ export function DataTable({
 	initialSort?: { key: string; down: boolean }
 	/** Number the rows in their current order, for a table that is a ranking. */
 	ranked?: boolean
+	/** A filter typed somewhere else on the page; the table's own field is then not drawn. */
+	query?: string
 }) {
 	const [sort, setSort] = useState<{ key: string; down: boolean }>(initialSort)
-	const [query, setQuery] = useState('')
+	const [ownQuery, setQuery] = useState('')
+	const query = outsideQuery ?? ownQuery
 
 	const shown = useMemo(() => {
 		const q = query.trim().toLowerCase()
@@ -104,7 +108,7 @@ export function DataTable({
 
 	const head = (key: string, label: string, numeric: boolean, className = '') => {
 		const active = sort.key === key
-		const Icon = active && sort.down ? CaretDownIcon : CaretUpIcon
+		const Icon = active && sort.down ? ArrowDownIcon : ArrowUpIcon
 		return (
 			<th
 				key={key}
@@ -115,14 +119,15 @@ export function DataTable({
 				<button
 					type='button'
 					onClick={() => by(key, numeric)}
-					// The caret sits on the inner side, so a figure column's label ends
-					// flush with the figures under it.
+					// The arrow always holds its place right of the label, so a heading
+					// does not shift when it is sorted; figure cells are inset by the same
+					// width (`pr-4`) so a label still ends over its numbers.
 					className={`inline-flex cursor-pointer items-center gap-1 text-[12px] font-semibold transition hover:text-[var(--ink)] ${
-						numeric ? 'flex-row-reverse' : ''
+						numeric ? 'text-right' : 'text-left'
 					} ${active ? 'text-[var(--ink)]' : 'text-[var(--ink-3)]'}`}
 				>
 					{label}
-					<Icon size={11} weight='bold' className={active ? 'opacity-100' : 'opacity-0'} aria-hidden='true' />
+					<Icon size={12} weight='bold' className={`shrink-0 ${active ? 'opacity-100' : 'opacity-0'}`} aria-hidden='true' />
 				</button>
 			</th>
 		)
@@ -130,7 +135,7 @@ export function DataTable({
 
 	return (
 		<div>
-			{filterLabel ? (
+			{filterLabel && outsideQuery === undefined ? (
 				<label className='mb-1 flex max-w-md items-center gap-3 border-b border-[var(--rule)] py-3'>
 					<MagnifyingGlassIcon className='size-4 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
 					<span className='sr-only'>Filter {filterLabel}</span>
@@ -155,6 +160,11 @@ export function DataTable({
 				<caption className='sr-only'>{caption}</caption>
 				<thead>
 					<tr className='border-b border-[var(--ink)]'>
+						{ranked ? (
+							<th scope='col' className='w-10 py-3 pr-3 text-left text-[12px] font-semibold text-[var(--ink-3)]'>
+								#
+							</th>
+						) : null}
 						{head('name', nameLabel, false)}
 						{columns.map((column) =>
 							head(column.key, column.label, column.format !== 'text', column.hideBelow ? HIDE[column.hideBelow] : ''),
@@ -163,11 +173,11 @@ export function DataTable({
 				</thead>
 				<tbody>
 					{shown.map((row, index) => (
-						<tr key={row.key} className='border-b border-[var(--rule-soft)] align-top transition-colors hover:bg-[var(--paper-2)]'>
+						<tr key={row.key} className='border-b border-[var(--rule-soft)] align-middle transition-colors hover:bg-[var(--paper-2)]'>
+							{ranked ? (
+								<td className='num w-10 py-3.5 pr-3 text-[13px] text-[var(--ink-3)]'>{index + 1}</td>
+							) : null}
 							<th scope='row' className='py-3.5 pr-4 text-left font-normal'>
-								{ranked ? (
-									<span className='num mr-3 inline-block w-6 text-right text-[12.5px] text-[var(--ink-3)]'>{index + 1}</span>
-								) : null}
 								<Link
 									href={row.href}
 									className='text-[15px] font-semibold leading-snug text-[var(--ink)] underline-offset-4 hover:text-[var(--accent)] hover:underline'
@@ -186,7 +196,7 @@ export function DataTable({
 									className={`py-3.5 ${
 										column.format === 'text'
 											? 'pr-4 text-left text-[14px] text-[var(--ink-2)]'
-											: 'num pl-4 text-right text-[14px] tabular-nums text-[var(--ink)]'
+											: 'num pl-4 pr-4 text-right text-[14px] tabular-nums text-[var(--ink)]'
 									} ${column.hideBelow ? HIDE[column.hideBelow] : ''}`}
 								>
 									{display(row.values[column.key] ?? null, column.format)}
