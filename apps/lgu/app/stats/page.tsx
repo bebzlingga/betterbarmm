@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { lguProvinces, unitClass } from '@betterbarmm/lgu-data'
 import { finances, funds, row } from '@betterbarmm/lgu-data/fiscal'
-import { LguBreadcrumb, LguMasthead, LguSourceNote } from '../_components/lgu-parts'
+import { LguBreadcrumb, LguMasthead } from '../_components/lgu-parts'
 import { StatsExplorer, type StatsData, type StatsUnit } from '../_components/stats-explorer'
 
 export const metadata: Metadata = {
@@ -81,8 +81,6 @@ export default function StatsPage() {
 						towns, created in 2024, have no rows yet.
 					</p>
 				</div>
-
-				<LguSourceNote className='mt-14' />
 			</section>
 		</>
 	)
