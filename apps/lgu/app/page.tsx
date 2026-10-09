@@ -179,26 +179,14 @@ export default function LguHomePage() {
 				<Areas />
 
 				{/* The numbers here and PSA's do not agree, and saying which is which
-				    is the whole job. Folded away rather than set as a warning banner:
-				    it is an answer to a question the reader has not asked yet, and it
-				    was pushing the directory itself below the fold. */}
-				<Rise delay={0.1} distance={14}>
-					<details className='group mt-10 border-t border-[var(--brass-line)] pt-5'>
-						<summary className='flex cursor-pointer list-none items-center gap-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'>
-							Why this total is smaller than PSA&rsquo;s
-							<span
-								aria-hidden='true'
-								className='inline-block transition-transform duration-300 group-open:rotate-90'
-							>
-								&rsaquo;
-							</span>
-						</summary>
-						<div className='bb-measure mt-4 space-y-3 text-[13px] leading-7 text-[var(--ink-2)]'>
-							<p>{lguCounts.sulnote}</p>
-							<p>{lguCounts.reconcileNote}</p>
-						</div>
-					</details>
-				</Rise>
+				    is the whole job — so it is shown, not folded away (user decision). */}
+				<aside className='mt-10 bg-[var(--paper-2)] px-6 py-6 sm:px-8'>
+					<h3 className='text-[15px] font-semibold text-[var(--ink)]'>Why this total is smaller than PSA&rsquo;s</h3>
+					<div className='mt-3 space-y-3 text-[14px] leading-7 text-[var(--ink-2)]'>
+						<p>{lguCounts.sulnote}</p>
+						<p>{lguCounts.reconcileNote}</p>
+					</div>
+				</aside>
 			</section>
 
 		</>
