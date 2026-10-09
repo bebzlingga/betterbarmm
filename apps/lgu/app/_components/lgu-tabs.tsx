@@ -52,10 +52,16 @@ export function LguTabs({ tabs }: { tabs: LguTab[] }) {
 
 	return (
 		<div>
+			{/* Two layers. The outer one sticks and carries the ground, at
+			    `--sticky-top` so it follows the site header up when that ducks out of
+			    the way (pinned at the header's height it left a band of page showing
+			    above it). The inner one scrolls and fades, so the fade thins the
+			    tabs, not the ground under them. */}
+			<div className='sticky top-[var(--sticky-top)] z-20 -mx-6 border-b border-[var(--ink)] bg-[var(--paper)] px-6 transition-[top] duration-300 lg:-mx-8 lg:px-8'>
 			<div
 				role='tablist'
 				aria-label='Sections'
-				className='sticky top-[var(--site-header-h)] z-20 -mx-6 flex gap-1 overflow-x-auto border-b border-[var(--ink)] bg-[var(--paper)]/92 px-6 backdrop-blur-md [mask-image:linear-gradient(to_right,#000_82%,transparent)] [scrollbar-width:none] md:[mask-image:none] lg:-mx-8 lg:px-8 [&::-webkit-scrollbar]:hidden'
+				className='flex gap-1 overflow-x-auto [mask-image:linear-gradient(to_right,#000_82%,transparent)] [scrollbar-width:none] md:[mask-image:none] [&::-webkit-scrollbar]:hidden'
 			>
 				{tabs.map((tab) => (
 					<button
@@ -72,6 +78,7 @@ export function LguTabs({ tabs }: { tabs: LguTab[] }) {
 						{tab.badge != null ? <span className='lgu-tab-badge'>{tab.badge}</span> : null}
 					</button>
 				))}
+			</div>
 			</div>
 
 			{tabs.map((tab) => (
