@@ -1,6 +1,6 @@
 'use client'
 
-import { MagnifyingGlassIcon } from '@phosphor-icons/react'
+import { CaretDownIcon, MagnifyingGlassIcon } from '@phosphor-icons/react'
 import { useCallback, useMemo, useState } from 'react'
 import { DataTable, type DataColumn, type DataRow } from './data-table'
 
@@ -55,17 +55,27 @@ function Select({
 	return (
 		<label className='flex min-w-0 flex-col gap-1'>
 			<span className='text-[12px] text-[var(--ink-3)]'>{label}</span>
-			<select
-				value={value}
-				onChange={(event) => onChange(event.target.value)}
-				className='h-10 min-w-0 cursor-pointer border border-[var(--rule)] bg-[var(--paper)] px-3 text-[14px] text-[var(--ink)] outline-none transition hover:border-[var(--ink)] focus:border-[var(--ink)]'
-			>
-				{options.map(([key, text]) => (
-					<option key={key} value={key}>
-						{text}
-					</option>
-				))}
-			</select>
+			{/* The browser's own arrow sits against the edge and differs per
+			    browser; this one is the site's, inset like the search icon. */}
+			<span className='relative'>
+				<select
+					value={value}
+					onChange={(event) => onChange(event.target.value)}
+					className='h-10 w-full min-w-0 cursor-pointer appearance-none truncate border border-[var(--rule)] bg-[var(--paper)] pl-3 pr-9 text-[14px] text-[var(--ink)] outline-none transition hover:border-[var(--ink)] focus:border-[var(--ink)]'
+				>
+					{options.map(([key, text]) => (
+						<option key={key} value={key}>
+							{text}
+						</option>
+					))}
+				</select>
+				<CaretDownIcon
+					size={14}
+					weight='bold'
+					aria-hidden='true'
+					className='pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[var(--ink-3)]'
+				/>
+			</span>
 		</label>
 	)
 }
