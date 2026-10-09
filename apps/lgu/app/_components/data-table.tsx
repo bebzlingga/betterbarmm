@@ -198,7 +198,7 @@ export function DataTable({
 									className={`py-3.5 ${
 										column.format === 'text'
 											? 'pr-4 text-left text-[14px] text-[var(--ink-2)]'
-											: 'num pl-4 pr-4 text-right text-[14px] tabular-nums text-[var(--ink)]'
+											: 'num pl-4 pr-4 text-right text-[13px] tabular-nums text-[var(--ink)]'
 									} ${column.hideBelow ? HIDE[column.hideBelow] : ''}`}
 								>
 									{display(row.values[column.key] ?? null, column.format)}
