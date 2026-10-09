@@ -97,7 +97,7 @@ export function LguMasthead({
 	note,
 	children,
 }: {
-	breadcrumb: React.ReactNode
+	breadcrumb?: React.ReactNode
 	/** Status pills — "Component city", "Capital". */
 	badges?: React.ReactNode
 	kicker: string
@@ -113,7 +113,7 @@ export function LguMasthead({
 				{breadcrumb}
 
 				<Rise distance={12}>
-					<div className='mt-8 flex flex-wrap items-center gap-2.5'>
+					<div className={`${breadcrumb ? 'mt-8' : ''} flex flex-wrap items-center gap-2.5`}>
 						{badges}
 						<span className='bb-label'>{kicker}</span>
 					</div>

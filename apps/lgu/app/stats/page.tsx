@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { lguProvinces, unitClass } from '@betterbarmm/lgu-data'
 import { finances, funds, incomeClass, row } from '@betterbarmm/lgu-data/fiscal'
-import { LguBreadcrumb, LguMasthead } from '../_components/lgu-parts'
+import { LguMasthead } from '../_components/lgu-parts'
 import { StatsExplorer, type StatsData, type StatsUnit } from '../_components/stats-explorer'
 
 export const metadata: Metadata = {
@@ -58,7 +58,6 @@ export default function StatsPage() {
 	return (
 		<>
 			<LguMasthead
-				breadcrumb={<LguBreadcrumb trail={[]}>Stats</LguBreadcrumb>}
 				kicker='The money · Bangsamoro'
 				name='Who collects, who spends.'
 				note='Every province, city and municipality on the same measures, from what each treasurer reported to the Bureau of Local Government Finance. Sort any column. These are actuals, not budgets: what a council appropriated is in its own ordinance, which nobody publishes together.'
