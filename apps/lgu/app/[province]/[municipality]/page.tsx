@@ -21,7 +21,8 @@ import {
 	LguStat,
 	ShareBar,
 } from '../../_components/lgu-parts'
-import { LEGAL_BASIS, LOCAL_CHARGES, SERVICES } from '@betterbarmm/lgu-data'
+import { LOCAL_CHARGES, SERVICES, lguData, personName } from '@betterbarmm/lgu-data'
+import { finances, incomeClass, row, sglg } from '@betterbarmm/lgu-data/fiscal'
 import { provinceHistory, tookOffice, unitHistory } from '@betterbarmm/lgu-data/history'
 import { barangayOfficials, rosterCoverage, unitRosters } from '@betterbarmm/lgu-data/barangay-officials'
 import { BarangayList } from '../../_components/barangay-list'
@@ -91,6 +92,49 @@ function opening(unit: LguUnit, province: LguProvince): string {
 	return `${unit.name} is ${where}.`
 }
 
+/**
+ * The answers most visitors came for, from the tabs that hold them in full:
+ * who is in office, how the town is classed, what it receives, and whether it
+ * has passed the Seal of Good Local Governance. Each row opens its tab.
+ */
+function AtAGlance({ unit, province }: { unit: LguUnit; province: LguProvince }) {
+	const key = `${province.slug}/${unit.slug}`
+	const term = lguData.officials?.currentTermId
+	const canvass = term ? unit.officials?.[term] : undefined
+	const mayor = canvass?.mayor?.ranked[0]?.name
+	const vice = canvass?.viceMayor?.ranked[0]?.name
+	const ntaYear = finances.years.at(-1)!
+	const nta = row(finances, key, ntaYear)?.nta as number | null | undefined
+	const klass = incomeClass.units[key]?.['2024']?.class
+	const seals = Object.keys(sglg.units[key] ?? {})
+
+	const rows: [string, string, string][] = [
+		['Mayor', mayor ? personName(mayor) : 'No canvass on record', '#officials'],
+		['Vice-mayor', vice ? personName(vice) : '—', '#officials'],
+		['Income class', klass ? `${klass} (2024 reclassification)` : '—', '#finances'],
+		[`NTA, FY ${ntaYear}`, nta ? (nta >= 1e9 ? `₱${(nta / 1e9).toFixed(2)} billion` : `₱${(nta / 1e6).toFixed(1)} million`) : '—', '#finances'],
+		['Seal of Good Local Governance', seals.length ? seals.join(', ') : 'Not on the 2022–2024 lists', '#finances'],
+	]
+
+	return (
+		<div className='mt-10 border-t border-[var(--ink)]'>
+			<h3 className='pt-4 text-[14px] font-semibold text-[var(--ink)]'>At a glance</h3>
+			<dl className='mt-2'>
+				{rows.map(([label, value, href]) => (
+					<a
+						key={label}
+						href={href}
+						className='flex items-baseline justify-between gap-6 border-b border-[var(--rule-soft)] py-3 transition hover:bg-[var(--paper-2)]'
+					>
+						<dt className='text-[13px] text-[var(--ink-3)]'>{label}</dt>
+						<dd className='text-right text-[14px] font-medium text-[var(--ink)]'>{value}</dd>
+					</a>
+				))}
+			</dl>
+		</div>
+	)
+}
+
 function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) {
 	const change = growth(unit)
 	const roster = rosterCoverage([unit])
@@ -99,15 +143,7 @@ function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) 
 	// unit — Cotabato City is its own area, and "Area: Cotabato City" says
 	// nothing on Cotabato City's page.
 	const facts: [string, string][] = [
-		...(province.name === unit.name
-			? []
-			: ([[province.kind === 'Province' ? 'Province' : 'Area', province.name]] as [
-					string,
-					string,
-				][])),
-		['Classification', unitClass(unit)],
 		...(unit.alsoKnownAs ? ([['Also known as', unit.alsoKnownAs]] as [string, string][]) : []),
-		['Barangays', String(unit.barangays.length)],
 		['Captains in DILG’s directory', `${roster.listed} of ${roster.total}`],
 		['PSGC code', unit.psgc ?? 'Not yet assigned'],
 	]
@@ -141,19 +177,7 @@ function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) 
 					</p>
 				) : null}
 
-				<dl className='mt-8 grid gap-x-8 gap-y-3 sm:grid-cols-2'>
-					{facts.map(([label, value]) => (
-						<div
-							key={label}
-							className='flex items-baseline justify-between gap-4 border-b border-[var(--rule-soft)] py-2.5'
-						>
-							<dt className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
-								{label}
-							</dt>
-							<dd className='text-right text-[13.5px] font-medium text-[var(--ink)]'>{value}</dd>
-						</div>
-					))}
-				</dl>
+				<AtAGlance unit={unit} province={province} />
 			</div>
 
 			<div>
@@ -175,37 +199,19 @@ function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) 
 					/>
 				</div>
 
-				<div className='bb-plate mt-10 p-6'>
-					<p className='bb-label'>Governed under</p>
-					<ul className='mt-3'>
-						{LEGAL_BASIS.map((law) => (
-							<li
-								key={law.href}
-								className='border-t border-[var(--rule-soft)] py-3 first:border-t-0'
-							>
-								<a
-									href={law.href}
-									target='_blank'
-									rel='noreferrer'
-									className='group flex items-start justify-between gap-3'
-								>
-									<span>
-										<span className='block text-[13.5px] font-medium leading-5 text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
-											{law.label}
-										</span>
-										<span className='mt-1 block text-[12px] leading-5 text-[var(--ink-3)]'>
-											{law.note}
-										</span>
-									</span>
-									<ArrowUpRightIcon
-										className='mt-0.5 size-3.5 shrink-0 text-[var(--ink-3)]'
-										aria-hidden='true'
-									/>
-								</a>
-							</li>
-						))}
-					</ul>
-				</div>
+				<dl className='mt-10'>
+					{facts.map(([label, value]) => (
+						<div
+							key={label}
+							className='flex items-baseline justify-between gap-4 border-b border-[var(--rule-soft)] py-2.5'
+						>
+							<dt className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+								{label}
+							</dt>
+							<dd className='text-right text-[13.5px] font-medium text-[var(--ink)]'>{value}</dd>
+						</div>
+					))}
+				</dl>
 			</div>
 		</div>
 	)
@@ -678,15 +684,13 @@ export default async function UnitPage({
 		<>
 			<LguMasthead
 				breadcrumb={<LguBreadcrumb trail={trail}>{unit.name}</LguBreadcrumb>}
-				badges={
-					<>
-						<span className='badge badge-plain badge-committee'>{unitClass(unit)}</span>
-						{unit.isCapital && province.kind === 'Province' ? (
-							<span className='badge badge-plain badge-early'>Provincial capital</span>
-						) : null}
-					</>
-				}
-				kicker={province.name === unit.name ? 'Bangsamoro' : province.name}
+				kicker={[
+					unitClass(unit),
+					unit.isCapital && province.kind === 'Province' ? 'provincial capital' : null,
+					province.name === unit.name ? 'Bangsamoro' : province.name,
+				]
+					.filter(Boolean)
+					.join(' · ')}
 				name={unit.name}
 			/>
 

@@ -18,6 +18,7 @@ import {
 	largestUnits,
 	lguData,
 	lguProvinces,
+	personName,
 	officialsTerms,
 	unaccounted,
 	type LguProvince,
@@ -35,8 +36,9 @@ import { provinceHistory, tookOffice } from '@betterbarmm/lgu-data/history'
 import { rosterCoverage } from '@betterbarmm/lgu-data/barangay-officials'
 import { LguTermPicker } from '../_components/lgu-term-picker'
 import { LguFinances } from '../_components/lgu-finances'
-import { UnitGrid, type UnitCard } from '../_components/unit-grid'
-import { LineReveal, Rise } from '@betterbarmm/editorial'
+import { DataTable, type DataRow } from '../_components/data-table'
+import { finances, row } from '@betterbarmm/lgu-data/fiscal'
+import { Rise } from '@betterbarmm/editorial'
 
 export function generateStaticParams() {
 	// Cotabato City's area page is a list of one thing named after the thing.
@@ -63,25 +65,32 @@ export async function generateMetadata({
 	}
 }
 
-/** The mayor of the term now in office, for the card grid. */
+/** The mayor of the term now in office. */
 function currentMayor(unit: LguUnit): string | null {
 	const termId = lguData.officials?.currentTermId
 	const mayor = termId ? unit.officials?.[termId]?.mayor : undefined
 	return mayor?.ranked[0]?.name ?? null
 }
 
-/** A unit flattened to what the browser-side grid needs. */
-function toCard(province: LguProvince, unit: LguUnit): UnitCard {
+/** A unit as one row of the province's table. */
+function toRow(province: LguProvince, unit: LguUnit, ntaYear: number): DataRow {
+	const mayor = currentMayor(unit)
 	return {
-		name: unit.name,
+		key: unit.slug,
 		href: `/${province.slug}/${unit.slug}`,
-		isCity: unit.isCity,
-		isCapital: unit.isCapital,
-		cityClass: unit.cityClass,
-		formedFrom: unit.formedFrom,
-		mayor: currentMayor(unit),
-		population: unit.population,
-		barangays: unit.barangays.length,
+		name: unit.name,
+		meta:
+			[unit.isCapital ? 'Capital' : null, unit.isCity ? (unit.cityClass ?? 'City') : null, unit.formedFrom ? `from ${unit.formedFrom}` : null]
+				.filter(Boolean)
+				.join(' · ') || undefined,
+		mobile: mayor ? `Mayor ${personName(mayor)}` : undefined,
+		values: {
+			mayor: mayor ? personName(mayor) : null,
+			population: unit.population,
+			barangays: unit.barangays.length,
+			area: unit.areaKm2,
+			nta: (row(finances, `${province.slug}/${unit.slug}`, ntaYear)?.nta as number | null) ?? null,
+		},
 	}
 }
 
@@ -110,14 +119,11 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 			? Math.round((province.population / lguData.totals.population) * 1000) / 10
 			: null
 
-	const groups = [
-		{
-			title: cities.length === 1 ? 'City' : 'Cities',
-			units: cities,
-			label: 'cities',
-		},
-		{ title: 'Municipalities', units: municipalities, label: 'municipalities' },
-	].filter((group) => group.units.length > 0)
+	const ntaYear = finances.years.at(-1)!
+	const unitsTitle =
+		cities.length === 0
+			? `${municipalities.length} municipalities`
+			: `${cities.length} ${cities.length === 1 ? 'city' : 'cities'} and ${municipalities.length} municipalities`
 
 	return (
 		<>
@@ -233,21 +239,32 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				) : null}
 			</LguMasthead>
 
+			{/* ---- The units ---- */}
+			{/* First, because finding your own town is why most people open a
+			    province page; the officials and the money follow. */}
+			<section id='units' className='bb-container scroll-mt-24 pt-[clamp(3.75rem,7vw,6.5rem)]'>
+				<h2 className='bb-display-sm text-[var(--ink)]'>{unitsTitle}</h2>
+				<div className='mt-8'>
+					<DataTable
+						caption={`Cities and municipalities of ${province.name}`}
+						nameLabel='City or municipality'
+						filterLabel={province.municipalities.length > 12 ? 'cities and municipalities' : undefined}
+						columns={[
+							{ key: 'mayor', label: 'Mayor', format: 'text', hideBelow: 'md' },
+							{ key: 'population', label: 'Population', format: 'int' },
+							{ key: 'barangays', label: 'Barangays', format: 'int' },
+							{ key: 'area', label: 'Land area, km²', format: 'area', hideBelow: 'lg' },
+							{ key: 'nta', label: `NTA, FY ${ntaYear}`, format: 'peso', hideBelow: 'sm' },
+						]}
+						rows={province.municipalities.map((unit) => toRow(province, unit, ntaYear))}
+					/>
+				</div>
+			</section>
+
 			{/* ---- Who runs it ---- */}
 			{province.officials ? (
 				<section id='officials' className='bb-container scroll-mt-24 pt-[clamp(3.75rem,7vw,6.5rem)]'>
-					<Rise distance={12}>
-						<div className='bb-kicker'>
-							<span>01</span>
-							<span>Who runs it</span>
-						</div>
-					</Rise>
-
-					<LineReveal
-						as='h2'
-						lines={[`Who runs ${province.name}.`]}
-						className='bb-display-sm mt-8 text-[var(--ink)]'
-					/>
+					<h2 className='bb-display-sm text-[var(--ink)]'>Who runs {province.name}</h2>
 
 					{/* Who has governed the province since 2001, before the term-by-term
 					    detail — one term answers who the governor is, the run answers
@@ -336,18 +353,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 			{/* ---- The money ---- */}
 			{province.kind === 'Province' ? (
 				<section id='finances' className='bb-container scroll-mt-24 pt-[clamp(3.75rem,7vw,6.5rem)]'>
-					<Rise distance={12}>
-						<div className='bb-kicker'>
-							<span>{province.officials ? '02' : '01'}</span>
-							<span>The money</span>
-						</div>
-					</Rise>
-
-					<LineReveal
-						as='h2'
-						lines={[`What ${province.name} collects and spends.`]}
-						className='bb-display-sm mt-8 text-[var(--ink)]'
-					/>
+					<h2 className='bb-display-sm text-[var(--ink)]'>What {province.name} collects and spends</h2>
 
 					<div className='mt-12'>
 						<LguFinances unitKey={province.slug} name={`the provincial government of ${province.name}`} />
@@ -355,35 +361,8 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				</section>
 			) : null}
 
-			{/* ---- The units ---- */}
-			<section className='bb-container bb-section-bottom'>
-				{groups.map((group, groupIndex) => (
-					<div key={group.title} className='mt-16'>
-						<Rise distance={12}>
-							<div className='bb-kicker'>
-								<span>{String(groupIndex + 1 + (province.officials ? 1 : 0) + (province.kind === 'Province' ? 1 : 0)).padStart(2, '0')}</span>
-								<span>{group.title}</span>
-							</div>
-							<div className='mt-6 flex items-baseline justify-between gap-4 border-b border-[var(--ink)] pb-3'>
-								<h2 className='text-[1.4rem] font-extrabold tracking-[-0.03em] text-[var(--ink)]'>
-									Every {group.title.toLowerCase().replace(/ies$/, 'y').replace(/s$/, '')} in{' '}
-									{province.name}
-								</h2>
-								<p className='num text-[13px] font-semibold text-[var(--brass)]'>
-									{group.units.length}
-								</p>
-							</div>
-						</Rise>
-
-						<UnitGrid
-							units={group.units.map((unit) => toCard(province, unit))}
-							label={group.label}
-							searchable={group.units.length > 12}
-						/>
-					</div>
-				))}
-
-				<LguSourceNote className='mt-16' />
+			<section className='bb-container bb-section-bottom pt-[clamp(3.75rem,7vw,6.5rem)]'>
+				<LguSourceNote />
 			</section>
 		</>
 	)

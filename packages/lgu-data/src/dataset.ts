@@ -238,6 +238,24 @@ export function formatNumber(value: number | null | undefined): string {
 	return value == null ? '—' : NUMBER.format(value)
 }
 
+const SUFFIX = /^(JR\.?|SR\.?|II|III|IV|V)$/i
+
+/**
+ * COMELEC's "ADIONG, MAMINTAL JR." as a reader says it: "Mamintal Adiong Jr.".
+ * A table of names in capitals, surname first, reads as a printout.
+ */
+export function personName(raw: string): string {
+	const [last, rest = ''] = raw.split(/,\s*/, 2)
+	const words = rest.split(/\s+/).filter(Boolean)
+	const suffix = words.filter((word) => SUFFIX.test(word))
+	const given = words.filter((word) => !SUFFIX.test(word))
+	const title = (word: string) =>
+		/^(II|III|IV|V)$/i.test(word)
+			? word.toUpperCase()
+			: word.toLowerCase().replace(/(^|[-'.\s])(\p{L})/gu, (match, lead, letter) => lead + letter.toUpperCase())
+	return [...given, last ?? '', ...suffix].filter(Boolean).map(title).join(' ')
+}
+
 export function formatArea(value: number | null | undefined): string {
 	return value == null ? '—' : `${NUMBER.format(Math.round(value * 100) / 100)} km²`
 }

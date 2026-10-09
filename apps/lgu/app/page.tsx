@@ -1,5 +1,4 @@
-import { ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
-import { Counter, LineReveal, Rise, SectionHead, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { Counter, LineReveal, Rise } from '@betterbarmm/editorial'
 import {
 	formatDate,
 	formatNumber,
@@ -12,8 +11,8 @@ import {
 } from '@betterbarmm/lgu-data'
 import { barangayOfficials, rosterCoverage } from '@betterbarmm/lgu-data/barangay-officials'
 import { finances, row } from '@betterbarmm/lgu-data/fiscal'
-import Link from 'next/link'
 import { RegionMap } from './_components/region-map'
+import { DataTable } from './_components/data-table'
 
 /** District seats in the Bangsamoro Parliament, joined on by slug. */
 function seatsFor(province: LguProvince): number | null {
@@ -25,100 +24,43 @@ function capitalOf(province: LguProvince): string | null {
 }
 
 /**
- * The seven areas BARMM contains, as a table of contents.
- *
- * Rows rather than cards. A reader on this page is choosing where to go next,
- * and a row can hold the three things that decide it — what the area is, how
- * big it is, and how much of Parliament it elects — on one line each, where a
- * card of the same width has to stack them and loses the comparison down the
- * column.
+ * The seven areas BARMM contains, as a table: the same measures for each,
+ * read down a column to compare.
  */
 function Areas() {
 	return (
-		<Stagger gap={0.05} className='mt-12'>
-			{lguProvinces.map((province, index) => {
-				const seats = seatsFor(province)
-				const capital = capitalOf(province)
-				const cities = province.municipalities.filter((unit) => unit.isCity).length
-				const roster = rosterCoverage(province.municipalities)
-
-				return (
-					<StaggerItem key={province.slug} distance={12}>
-						<Link
-							href={areaHref(province)}
-							className='group grid gap-x-10 gap-y-5 border-t border-[var(--brass-line)] py-7 transition hover:bg-[var(--paper-2)] lg:grid-cols-[minmax(0,19rem)_minmax(0,1fr)_minmax(0,15rem)] lg:py-8'
-						>
-							<div className='min-w-0'>
-								<div className='flex items-baseline gap-3'>
-									<span className='num text-[11px] font-semibold text-[var(--brass)]'>
-										{String(index + 1).padStart(2, '0')}
-									</span>
-									<span className='bb-label'>{province.kind}</span>
-								</div>
-
-								<h3 className='mt-3 flex items-baseline gap-2 text-[1.6rem] font-extrabold leading-none tracking-[-0.035em] text-[var(--ink)] transition duration-500 group-hover:text-[var(--accent)]'>
-									{province.name}
-									<ArrowUpRightIcon
-										className='size-4 shrink-0 text-[var(--ink-3)] transition duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--accent)]'
-										aria-hidden='true'
-									/>
-								</h3>
-
-								{capital && capital !== province.name ? (
-									<p className='mt-3 text-[12.5px] text-[var(--ink-3)]'>
-										Capital <span className='font-semibold text-[var(--ink-2)]'>{capital}</span>
-									</p>
-								) : null}
-							</div>
-
-							<p className='bb-measure text-[13.5px] leading-7 text-[var(--ink-2)]'>
-								{province.note}
-							</p>
-
-							<dl className='flex flex-wrap gap-x-6 gap-y-2 font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] lg:flex-col lg:gap-y-2.5'>
-								<div className='flex gap-1.5'>
-									<dt className='sr-only'>Population</dt>
-									<dd className='num text-[var(--ink)]'>{formatNumber(province.population)}</dd>
-									<span aria-hidden='true'>people</span>
-								</div>
-								<div className='flex gap-1.5'>
-									<dt className='sr-only'>Cities and municipalities</dt>
-									<dd className='num text-[var(--ink)]'>{province.municipalities.length}</dd>
-									<span aria-hidden='true'>
-										{province.municipalities.length === 1
-											? cities === 1
-												? 'city'
-												: 'municipality'
-											: cities > 0
-												? 'units, one a city'
-												: 'municipalities'}
-									</span>
-								</div>
-								<div className='flex gap-1.5'>
-									<dt className='sr-only'>Barangays</dt>
-									<dd className='num text-[var(--ink)]'>{formatNumber(province.barangayCount)}</dd>
-									<span aria-hidden='true'>barangays</span>
-								</div>
-								<div className='flex gap-1.5'>
-									<dt className='sr-only'>Barangay captains in DILG&rsquo;s directory</dt>
-									<dd className='num text-[var(--ink)]'>
-										{formatNumber(roster.listed)}/{formatNumber(roster.total)}
-									</dd>
-									<span aria-hidden='true'>captains listed</span>
-								</div>
-								{seats != null ? (
-									<div className='flex gap-1.5'>
-										<dt className='sr-only'>Bangsamoro Parliament district seats</dt>
-										<dd className='num text-[var(--brass)]'>{seats}</dd>
-										<span aria-hidden='true'>seats in Parliament</span>
-									</div>
-								) : null}
-							</dl>
-						</Link>
-					</StaggerItem>
-				)
-			})}
-		</Stagger>
+		<div className='mt-12'>
+			<DataTable
+				caption='The seven areas of the Bangsamoro region'
+				nameLabel='Area'
+				columns={[
+					{ key: 'units', label: 'Cities and municipalities', format: 'int', hideBelow: 'sm' },
+					{ key: 'barangays', label: 'Barangays', format: 'int' },
+					{ key: 'captains', label: 'Captains on record', format: 'int', hideBelow: 'lg' },
+					{ key: 'population', label: 'Population', format: 'int' },
+					{ key: 'seats', label: 'Parliament seats', format: 'int', hideBelow: 'md' },
+				]}
+				rows={lguProvinces.map((province) => {
+					const capital = capitalOf(province)
+					return {
+						key: province.slug,
+						href: areaHref(province),
+						name: province.name,
+						meta: [province.kind, capital && capital !== province.name ? `capital ${capital}` : null]
+							.filter(Boolean)
+							.join(' · '),
+						detail: province.note ?? undefined,
+						values: {
+							units: province.municipalities.length,
+							barangays: province.barangayCount,
+							captains: rosterCoverage(province.municipalities).listed,
+							population: province.population,
+							seats: seatsFor(province),
+						},
+					}
+				})}
+			/>
+		</div>
 	)
 }
 
@@ -155,7 +97,6 @@ export default function LguHomePage() {
 						lines={['Every province,', 'every town,', 'and who runs it.']}
 						delay={0.08}
 						className='bb-display mt-7 text-[var(--ink)]'
-						lineClassName={[undefined, undefined, 'bb-mute']}
 					/>
 					</div>
 
@@ -223,21 +164,17 @@ export default function LguHomePage() {
 
 			{/* ---- The areas ---- */}
 			<section className='bb-container bb-section'>
-				<SectionHead
-					index='01'
-					eyebrow='Where to start'
-					title={`${lguData.totals.provinces} provinces, a city,`}
-					titleMuted='and a special area.'
-					lead={`Each one opens onto its cities and municipalities, and each of those onto its barangays and their officials. ${cities} of the ${lguData.totals.lgus} units are cities. DILG's barangay directory names a captain for ${formatNumber(regionRoster.listed)} of the ${formatNumber(regionRoster.total)} barangays, as of ${formatDate(barangayOfficials.capturedAt)}.`}
-					aside={
-						<p className='num text-[12px] text-[var(--ink-3)]'>
-							<span className='font-semibold text-[var(--brass)]'>
-								{formatNumber(lguData.totals.population)}
-							</span>{' '}
-							people
-						</p>
-					}
-				/>
+				<div className='grid gap-6 lg:grid-cols-[1.35fr_1fr] lg:items-end lg:gap-16'>
+					<h2 className='bb-display-sm text-[var(--ink)]'>
+						{lguData.totals.provinces} provinces, a city and a special area
+					</h2>
+					<p className='text-[15px] leading-7 text-[var(--ink-2)]'>
+						Each opens onto its cities and municipalities, and each of those onto its barangays and their
+						officials. {cities} of the {lguData.totals.lgus} units are cities. DILG&rsquo;s barangay directory
+						names a captain for {formatNumber(regionRoster.listed)} of the {formatNumber(regionRoster.total)}{' '}
+						barangays, as of {formatDate(barangayOfficials.capturedAt)}.
+					</p>
+				</div>
 
 				<Areas />
 
