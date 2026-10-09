@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Rise, SectionHead } from '@betterbarmm/editorial'
-import { SERVICES, formatNumber, lguData, lguReferences } from '@betterbarmm/lgu-data'
+import { LOCAL_CHARGES, SERVICES, formatNumber, lguData, lguReferences } from '@betterbarmm/lgu-data'
 import { LguBreadcrumb, LguMasthead } from '../_components/lgu-parts'
 import { LguTabs } from '../_components/lgu-tabs'
 import { Ladder, Lookups, Offices, TwoBallots } from '../_components/offices-guide'
@@ -431,8 +431,8 @@ export default function HowItWorksPage() {
 				</div>
 			</section>
 
-			{/* ---- What each rung owes you ---- */}
-			<section className='bb-container bb-section'>
+			{/* ---- What each level owes you ---- */}
+			<section id='services' className='bb-container bb-section scroll-mt-24'>
 				<SectionHead
 					index='04'
 					eyebrow='What it buys'
@@ -471,6 +471,35 @@ export default function HowItWorksPage() {
 							))}
 						</div>
 					))}
+				</div>
+
+				{/* What a resident pays, moved here from the 108 town pages that each
+				    repeated it: the Code sets ceilings, not a town's bill. */}
+				<div className='mt-16 border-t border-[var(--rule)] pt-8'>
+					<h3 className='text-[1.4rem] font-extrabold tracking-[-0.03em] text-[var(--ink)]'>And what you pay it</h3>
+					<p className='mt-3 text-[14.5px] leading-7 text-[var(--ink-2)]'>
+						The ceilings the Bangsamoro Local Governance Code and its implementing rules set on what a city
+						or municipality and its barangays may charge, with the deadlines that go with them. Each sets its
+						own rates by ordinance and may charge less, so these are the most a charge can be, not the bill —
+						the hall has the ordinance.
+					</p>
+					<ul className='mt-6'>
+						{LOCAL_CHARGES.map((charge) => (
+							<li
+								key={charge.what}
+								className='grid gap-x-8 gap-y-1 border-b border-[var(--rule-soft)] py-4 md:grid-cols-[minmax(0,15rem)_minmax(0,1fr)]'
+							>
+								<div>
+									<p className='text-[14px] font-semibold leading-snug text-[var(--ink)]'>{charge.what}</p>
+									<p className='mt-1 text-[12px] text-[var(--ink-3)]'>{charge.basis}</p>
+								</div>
+								<div>
+									<p className='text-[13.5px] leading-6 text-[var(--ink-2)]'>{charge.rate}</p>
+									<p className='mt-1 text-[12.5px] leading-6 text-[var(--ink-3)]'>{charge.when}</p>
+								</div>
+							</li>
+						))}
+					</ul>
 				</div>
 			</section>
 

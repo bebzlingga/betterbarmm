@@ -19,9 +19,8 @@ import {
 	LguMasthead,
 	LguSourceNote,
 	LguStat,
-	ShareBar,
 } from '../../_components/lgu-parts'
-import { LOCAL_CHARGES, SERVICES, lguData, personName } from '@betterbarmm/lgu-data'
+import { lguData, personName } from '@betterbarmm/lgu-data'
 import { finances, incomeClass, row, sglg } from '@betterbarmm/lgu-data/fiscal'
 import { provinceHistory, tookOffice, unitHistory } from '@betterbarmm/lgu-data/history'
 import { barangayOfficials, rosterCoverage, unitRosters } from '@betterbarmm/lgu-data/barangay-officials'
@@ -142,8 +141,15 @@ function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) 
 	// Naming the area is only worth a row when it is a different place from the
 	// unit — Cotabato City is its own area, and "Area: Cotabato City" says
 	// nothing on Cotabato City's page.
+	// A share needs something to be a share of: Cotabato City is its whole area.
+	const share =
+		province.municipalities.length > 1 && unit.population != null && province.population
+			? Math.round((unit.population / province.population) * 1000) / 10
+			: null
 	const facts: [string, string][] = [
 		...(unit.alsoKnownAs ? ([['Also known as', unit.alsoKnownAs]] as [string, string][]) : []),
+		['Population, 2020 census', formatNumber(unit.population2020)],
+		...(share != null ? ([[`Share of ${province.name}’s people`, `${share}%`]] as [string, string][]) : []),
 		['Captains in DILG’s directory', `${roster.listed} of ${roster.total}`],
 		['PSGC code', unit.psgc ?? 'Not yet assigned'],
 	]
@@ -205,106 +211,21 @@ function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) 
 							key={label}
 							className='flex items-baseline justify-between gap-4 border-b border-[var(--rule-soft)] py-2.5'
 						>
-							<dt className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
-								{label}
-							</dt>
-							<dd className='text-right text-[13.5px] font-medium text-[var(--ink)]'>{value}</dd>
+							<dt className='text-[13px] text-[var(--ink-3)]'>{label}</dt>
+							<dd className='text-right text-[14px] font-medium text-[var(--ink)]'>{value}</dd>
 						</div>
 					))}
 				</dl>
-			</div>
-		</div>
-	)
-}
 
-function Demographics({ unit, province }: { unit: LguUnit; province: LguProvince }) {
-	const change = growth(unit)
-
-	// A share is a comparison, and a unit that is the whole of its area has
-	// nothing to compare itself with — Cotabato City was reading "Cotabato
-	// City's share of Cotabato City: 100%".
-	const alone = province.municipalities.length === 1
-	const share =
-		!alone && unit.population != null && province.population
-			? Math.round((unit.population / province.population) * 1000) / 10
-			: null
-
-	const rows: [string, string][] = [
-		['Population, 2024 census', formatNumber(unit.population)],
-		['Population, 2020 census', formatNumber(unit.population2020)],
-		[
-			'Change, 2020 to 2024',
-			change == null
-				? '—'
-				: `${change > 0 ? '+' : ''}${change}% (${formatNumber(
-						unit.population != null && unit.population2020 != null
-							? unit.population - unit.population2020
-							: null,
-					)} people)`,
-		],
-		['Land area', formatArea(unit.areaKm2)],
-		['Population density', density(unit) == null ? '—' : `${formatNumber(density(unit))} per km²`],
-		['Barangays', String(unit.barangays.length)],
-		[
-			'Average barangay population',
-			unit.population == null
-				? '—'
-				: formatNumber(Math.round(unit.population / unit.barangays.length)),
-		],
-	]
-
-	if (!alone) rows.push([`Share of ${province.name}`, share == null ? '—' : `${share}%`])
-
-	return (
-		<div className='grid gap-12 lg:grid-cols-[1fr_0.8fr] lg:gap-16'>
-			<div>
-				{/* The one figure in the table that is a comparison rather than a
-				    measurement, drawn rather than printed. A town that is a third of
-				    its province and one that is a thirtieth are different kinds of
-				    place, and "31%" in a column of rows does not say so nearly as
-				    fast as a bar that is a third full. */}
-				{share != null ? (
-					<div className='mb-10'>
-						<ShareBar
-							share={share}
-							label={`${unit.name}'s share of ${province.name}`}
-							ofLabel={`The rest of ${province.name}`}
-						/>
-					</div>
-				) : null}
-
-				<h3 className='bb-label'>The record</h3>
-				<dl className='mt-4'>
-					{rows.map(([label, value]) => (
-						<div
-							key={label}
-							className='flex items-baseline justify-between gap-6 border-b border-[var(--rule-soft)] py-3'
-						>
-							<dt className='text-[13.5px] text-[var(--ink-2)]'>{label}</dt>
-							<dd className='num text-right text-[14px] font-medium text-[var(--ink)]'>{value}</dd>
-						</div>
-					))}
-				</dl>
-			</div>
-
-			<div>
-				<h3 className='bb-label'>Reading it</h3>
-				<div className='mt-5 space-y-4 text-[13.5px] leading-7 text-[var(--ink-2)]'>
-					<p>
-						Population is the count as of July 1, 2024, the reference date of the 2024 Census of
-						Population. The 2020 figure is from the census before it, so the change covers 4 years
-						rather than a single year.
-					</p>
-					<p>
-						Density is the census population over the land area on record. It is a flat average: a
-						coastal town whose people all live along one road will read the same as one spread
-						evenly across its hills.
-					</p>
-					<p>
-						Average barangay population divides the total across every barangay equally, which no
-						municipality actually does — it is useful for comparing units, not for describing one.
-					</p>
-				</div>
+				{/* Services and charges are set by the Code and read the same on all
+				    108 pages, so they live once, on How it works. */}
+				<a
+					href='/how-it-works#services'
+					className='mt-8 block border-t border-[var(--rule)] pt-4 text-[14px] leading-6 text-[var(--ink-2)] hover:text-[var(--accent)]'
+				>
+					What a {unitKind(unit)} must provide, and the most it may charge you, is set by the Bangsamoro
+					Local Governance Code — the same for every {unitKind(unit)}. <span className='font-semibold text-[var(--ink)] underline underline-offset-4'>See How it works</span>
+				</a>
 			</div>
 		</div>
 	)
@@ -544,122 +465,6 @@ function SeatsAbove({
 	)
 }
 
-function Services({ unit }: { unit: LguUnit }) {
-	return (
-		<div>
-			<div className='max-w-3xl'>
-				<h3 className='bb-display-sm text-[var(--ink)]'>
-					What a {unit.isCity ? 'city' : 'municipality'} is responsible for.
-				</h3>
-				<p className='mt-4 text-[14.5px] leading-7 text-[var(--ink-2)]'>
-					These services are devolved to this level by the Bangsamoro Local Governance Code, so they
-					describe what {unit.name}{' '}is mandated to provide — not an inventory of what its offices
-					currently run. For opening hours and requirements, the unit&rsquo;s own hall is the source.
-				</p>
-			</div>
-
-			<div className='mt-10 grid gap-x-10 gap-y-10 md:grid-cols-2 lg:grid-cols-3'>
-				{SERVICES.cityMunicipality.map((group, index) => (
-					<div key={group.title}>
-						<div className='flex items-baseline justify-between gap-3 border-t border-[var(--brass-line)] pt-3'>
-							<h4 className='bb-label'>{group.title}</h4>
-							<span className='num text-[11px] font-semibold text-[var(--brass)]'>
-								{String(index + 1).padStart(2, '0')}
-							</span>
-						</div>
-						<ul className='mt-3'>
-							{group.items.map((item) => (
-								<li
-									key={item}
-									className='flex items-baseline gap-2.5 border-b border-[var(--rule-soft)] py-2.5 text-[13.5px] leading-6 text-[var(--ink-2)]'
-								>
-									<span
-										aria-hidden='true'
-										className='mt-1.5 size-1.5 shrink-0 rotate-45 bg-[var(--brass)]'
-									/>
-									{item}
-								</li>
-							))}
-						</ul>
-					</div>
-				))}
-			</div>
-
-			<div className='mt-12'>
-				<h3 className='bb-label block w-full border-b border-[var(--brass-line)] pb-3'>
-					And at the barangay
-				</h3>
-				<div className='mt-4 grid gap-x-10 gap-y-8 sm:grid-cols-2'>
-					{SERVICES.barangay.map((group) => (
-						<div key={group.title}>
-							<h4 className='text-[14px] font-semibold text-[var(--ink)]'>{group.title}</h4>
-							<ul className='mt-2'>
-								{group.items.map((item) => (
-									<li
-										key={item}
-										className='border-b border-[var(--rule-soft)] py-2.5 text-[13px] leading-6 text-[var(--ink-2)]'
-									>
-										{item}
-									</li>
-								))}
-							</ul>
-						</div>
-					))}
-				</div>
-			</div>
-
-			<Charges name={unit.name} isCity={unit.isCity} />
-		</div>
-	)
-}
-
-/**
- * What a resident pays the unit, and by when.
- *
- * The rest of this tab answers what the town owes you; this answers what you
- * owe the town, which is the other half of the question and the one people
- * arrive with. Every figure is the ceiling the Code and its IRR set — a
- * sanggunian may levy less and many do — so the rates read "up to" and the
- * page says plainly that the hall has the ordinance.
- */
-function Charges({ name, isCity }: { name: string; isCity: boolean }) {
-	return (
-		<div className='mt-14 border-t border-[var(--brass-line)] pt-8'>
-			<div className='max-w-3xl'>
-				<h3 className='bb-display-sm text-[var(--ink)]'>And what you pay it.</h3>
-				<p className='mt-4 text-[14.5px] leading-7 text-[var(--ink-2)]'>
-					These are the ceilings the Bangsamoro Local Governance Code and its implementing rules
-					set on what a {isCity ? 'city' : 'municipality'} and its barangays may charge, with the
-					deadlines that go with them. {name} sets its own rates by ordinance and may charge less,
-					so treat these as the most it can be rather than the bill — the hall has the ordinance.
-				</p>
-			</div>
-
-			<ul className='mt-8'>
-				{LOCAL_CHARGES.map((charge) => (
-					<li
-						key={charge.what}
-						className='grid gap-x-8 gap-y-1 border-b border-[var(--rule-soft)] py-4 md:grid-cols-[minmax(0,15rem)_minmax(0,1fr)]'
-					>
-						<div>
-							<p className='text-[14px] font-semibold leading-snug text-[var(--ink)]'>
-								{charge.what}
-							</p>
-							<p className='mt-1 font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
-								{charge.basis}
-							</p>
-						</div>
-						<div>
-							<p className='text-[13.5px] leading-6 text-[var(--ink-2)]'>{charge.rate}</p>
-							<p className='mt-1 text-[12.5px] leading-6 text-[var(--ink-3)]'>{charge.when}</p>
-						</div>
-					</li>
-				))}
-			</ul>
-		</div>
-	)
-}
-
 export default async function UnitPage({
 	params,
 }: {
@@ -703,11 +508,6 @@ export default async function UnitPage({
 							panel: <Overview unit={unit} province={province} />,
 						},
 						{
-							id: 'demographics',
-							label: 'Demographics',
-							panel: <Demographics unit={unit} province={province} />,
-						},
-						{
 							id: 'barangays',
 							label: 'Barangays',
 							badge: unit.barangays.length,
@@ -729,11 +529,6 @@ export default async function UnitPage({
 							id: 'finances',
 							label: 'Finances',
 							panel: <LguFinances unitKey={`${province.slug}/${unit.slug}`} name={unit.name} />,
-						},
-						{
-							id: 'services',
-							label: 'Services',
-							panel: <Services unit={unit} />,
 						},
 					]}
 				/>

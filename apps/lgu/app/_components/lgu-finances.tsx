@@ -246,6 +246,9 @@ export function LguFinances({ unitKey, name }: { unitKey: string; name: string }
 				</>
 			) : null}
 
+			{/* The smaller records, two to a row on a wide screen rather than one
+			    long column under the main table. */}
+			<div className='mt-14 grid gap-x-12 gap-y-14 lg:grid-cols-2 [&>*]:!mt-0 [&>*]:min-w-0'>
 			{drrmYears.length ? (
 				<Block
 					title='Disaster fund: budgeted against spent'
@@ -356,7 +359,7 @@ export function LguFinances({ unitKey, name }: { unitKey: string; name: string }
 					title='Classification, audits and recognition'
 					note='Seal and award lists name winners only: an LGU missing from one was not necessarily assessed, and did not necessarily fail.'
 				>
-					<dl className='mt-2 grid gap-x-8 sm:grid-cols-2'>
+					<dl className='mt-2'>
 						{classes?.['2024'] ? (
 							<Fact label='Income class (2024 reclassification)' href={classes['2024'].href}>
 								{classes['2024'].class}
@@ -419,6 +422,7 @@ export function LguFinances({ unitKey, name }: { unitKey: string; name: string }
 					) : null}
 				</Block>
 			) : null}
+			</div>
 		</div>
 	)
 }
@@ -426,7 +430,7 @@ export function LguFinances({ unitKey, name }: { unitKey: string; name: string }
 function Fact({ label, href, children }: { label: string; href?: string; children: React.ReactNode }) {
 	return (
 		<div className='flex flex-col gap-1 border-b border-[var(--rule-soft)] py-2.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4'>
-			<dt className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>{label}</dt>
+			<dt className='text-[13px] text-[var(--ink-3)]'>{label}</dt>
 			<dd className='text-[13.5px] font-medium text-[var(--ink)] sm:text-right'>
 				{href ? (
 					<a href={href} target='_blank' rel='noreferrer' className='inline-flex items-center gap-1 hover:text-[var(--accent)]'>

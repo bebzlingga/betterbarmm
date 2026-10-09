@@ -36,6 +36,7 @@ import { provinceHistory, tookOffice } from '@betterbarmm/lgu-data/history'
 import { rosterCoverage } from '@betterbarmm/lgu-data/barangay-officials'
 import { LguTermPicker } from '../_components/lgu-term-picker'
 import { LguFinances } from '../_components/lgu-finances'
+import { LguTabs } from '../_components/lgu-tabs'
 import { DataTable, type DataRow } from '../_components/data-table'
 import { finances, row } from '@betterbarmm/lgu-data/fiscal'
 import { Rise } from '@betterbarmm/editorial'
@@ -104,7 +105,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 	const history = provinceHistory(province.slug)
 
 	const cities = province.municipalities.filter((unit) => unit.isCity)
-	const municipalities = province.municipalities.filter((unit) => !unit.isCity)
 	const biggest = largestUnits(province)
 	const change = growth(province)
 	const gap = unaccounted(province)
@@ -120,10 +120,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 			: null
 
 	const ntaYear = finances.years.at(-1)!
-	const unitsTitle =
-		cities.length === 0
-			? `${municipalities.length} municipalities`
-			: `${cities.length} ${cities.length === 1 ? 'city' : 'cities'} and ${municipalities.length} municipalities`
 
 	return (
 		<>
@@ -239,32 +235,41 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				) : null}
 			</LguMasthead>
 
-			{/* ---- The units ---- */}
-			{/* First, because finding your own town is why most people open a
-			    province page; the officials and the money follow. */}
-			<section id='units' className='bb-container scroll-mt-24 pt-[clamp(3.75rem,7vw,6.5rem)]'>
-				<h2 className='bb-display-sm text-[var(--ink)]'>{unitsTitle}</h2>
-				<div className='mt-8'>
-					<DataTable
-						caption={`Cities and municipalities of ${province.name}`}
-						nameLabel='City or municipality'
-						filterLabel={province.municipalities.length > 12 ? 'cities and municipalities' : undefined}
-						columns={[
-							{ key: 'mayor', label: 'Mayor', format: 'text', hideBelow: 'md' },
-							{ key: 'population', label: 'Population', format: 'int' },
-							{ key: 'barangays', label: 'Barangays', format: 'int' },
-							{ key: 'area', label: 'Land area, km²', format: 'area', hideBelow: 'lg' },
-							{ key: 'nta', label: `NTA, FY ${ntaYear}`, format: 'peso', hideBelow: 'sm' },
-						]}
-						rows={province.municipalities.map((unit) => toRow(province, unit, ntaYear))}
-					/>
-				</div>
-			</section>
-
-			{/* ---- Who runs it ---- */}
-			{province.officials ? (
-				<section id='officials' className='bb-container scroll-mt-24 pt-[clamp(3.75rem,7vw,6.5rem)]'>
-					<h2 className='bb-display-sm text-[var(--ink)]'>Who runs {province.name}</h2>
+			{/* The towns first, because finding your own is why most people open a
+			    province page; the officials and the money are a tab away rather than
+			    a long scroll below. */}
+			<section className='bb-container bb-section-bottom pt-12'>
+				<LguTabs
+					tabs={[
+						{
+							id: 'units',
+							label: 'Cities and municipalities',
+							badge: province.municipalities.length,
+							panel: (
+								<div>
+									<DataTable
+										caption={`Cities and municipalities of ${province.name}`}
+										nameLabel='City or municipality'
+										filterLabel={province.municipalities.length > 12 ? 'cities and municipalities' : undefined}
+										columns={[
+											{ key: 'mayor', label: 'Mayor', format: 'text', hideBelow: 'md' },
+											{ key: 'population', label: 'Population', format: 'int' },
+											{ key: 'barangays', label: 'Barangays', format: 'int' },
+											{ key: 'area', label: 'Land area, km²', format: 'area', hideBelow: 'lg' },
+											{ key: 'nta', label: `NTA, FY ${ntaYear}`, format: 'peso', hideBelow: 'sm' },
+										]}
+										rows={province.municipalities.map((unit) => toRow(province, unit, ntaYear))}
+									/>
+								</div>
+							),
+						},
+						...(province.officials
+							? [
+									{
+										id: 'officials',
+										label: 'Officials',
+										panel: (
+											<div>
 
 					{/* Who has governed the province since 2001, before the term-by-term
 					    detail — one term answers who the governor is, the run answers
@@ -347,22 +352,29 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 							empty={<NoCanvass name={province.name} />}
 						/>
 					</div>
-				</section>
-			) : null}
+											</div>
+										),
+									},
+								]
+							: []),
+						...(province.kind === 'Province'
+							? [
+									{
+										id: 'finances',
+										label: 'Finances',
+										panel: (
+											<LguFinances
+												unitKey={province.slug}
+												name={`the provincial government of ${province.name}`}
+											/>
+										),
+									},
+								]
+							: []),
+					]}
+				/>
 
-			{/* ---- The money ---- */}
-			{province.kind === 'Province' ? (
-				<section id='finances' className='bb-container scroll-mt-24 pt-[clamp(3.75rem,7vw,6.5rem)]'>
-					<h2 className='bb-display-sm text-[var(--ink)]'>What {province.name} collects and spends</h2>
-
-					<div className='mt-12'>
-						<LguFinances unitKey={province.slug} name={`the provincial government of ${province.name}`} />
-					</div>
-				</section>
-			) : null}
-
-			<section className='bb-container bb-section-bottom pt-[clamp(3.75rem,7vw,6.5rem)]'>
-				<LguSourceNote />
+				<LguSourceNote className='mt-14' />
 			</section>
 		</>
 	)
