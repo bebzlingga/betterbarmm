@@ -20,7 +20,7 @@ import { useMemo, useState } from 'react'
 export type DataColumn = {
 	key: string
 	label: string
-	format: 'int' | 'peso' | 'area' | 'text'
+	format: 'int' | 'peso' | 'area' | 'pct' | 'text'
 	/** Hidden below this width; the row's `mobile` line carries what matters of it. */
 	hideBelow?: 'sm' | 'md' | 'lg'
 }
@@ -49,6 +49,7 @@ function display(value: number | string | null, format: DataColumn['format']): s
 		return `₱${Math.round(value).toLocaleString('en-PH')}`
 	}
 	if (format === 'area') return Math.round(value).toLocaleString('en-PH')
+	if (format === 'pct') return `${(value * 100).toFixed(1)}%`
 	return value.toLocaleString('en-PH')
 }
 
@@ -58,6 +59,8 @@ export function DataTable({
 	nameLabel,
 	filterLabel,
 	caption,
+	initialSort = { key: 'name', down: false },
+	ranked = false,
 }: {
 	columns: DataColumn[]
 	rows: DataRow[]
@@ -66,8 +69,12 @@ export function DataTable({
 	/** Set to offer a filter field — "towns in Lanao del Sur". */
 	filterLabel?: string
 	caption: string
+	/** The column the table opens sorted on — a ranking opens on its measure. */
+	initialSort?: { key: string; down: boolean }
+	/** Number the rows in their current order, for a table that is a ranking. */
+	ranked?: boolean
 }) {
-	const [sort, setSort] = useState<{ key: string; down: boolean }>({ key: 'name', down: false })
+	const [sort, setSort] = useState<{ key: string; down: boolean }>(initialSort)
 	const [query, setQuery] = useState('')
 
 	const shown = useMemo(() => {
@@ -155,9 +162,12 @@ export function DataTable({
 					</tr>
 				</thead>
 				<tbody>
-					{shown.map((row) => (
+					{shown.map((row, index) => (
 						<tr key={row.key} className='border-b border-[var(--rule-soft)] align-top transition-colors hover:bg-[var(--paper-2)]'>
 							<th scope='row' className='py-3.5 pr-4 text-left font-normal'>
+								{ranked ? (
+									<span className='num mr-3 inline-block w-6 text-right text-[12.5px] text-[var(--ink-3)]'>{index + 1}</span>
+								) : null}
 								<Link
 									href={row.href}
 									className='text-[15px] font-semibold leading-snug text-[var(--ink)] underline-offset-4 hover:text-[var(--accent)] hover:underline'

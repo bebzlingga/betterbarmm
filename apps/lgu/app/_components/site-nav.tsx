@@ -104,7 +104,8 @@ export function SiteNav() {
 	const { past, hidden } = useHeaderScroll(isMenuOpen)
 	const closeMenu = () => setIsMenuOpen(false)
 
-	const isProvinceActive = lguProvinces.some((province) => pathname.startsWith(`/${province.slug}`))
+	const isProvinceActive =
+		pathname === '/' || lguProvinces.some((province) => pathname.startsWith(`/${province.slug}`))
 	const isGuideActive = guides.some((guide) => pathname.startsWith(guide.href))
 
 	return (
@@ -145,9 +146,14 @@ export function SiteNav() {
 					</div>
 
 					<nav className='hidden items-center gap-1 md:flex'>
-						<Menu label='Provinces' active={isProvinceActive} width='w-[17rem]'>
-							{(close) =>
-								lguProvinces.map((province) => (
+						{/* Three doors: the profiles of the places, how the system works, and
+						    the places side by side. */}
+						<Menu label='LGU profiles' active={isProvinceActive} width='w-[17rem]'>
+							{(close) => [
+								<Link key='all' href='/' onClick={close} className='nav-menu-item'>
+									<span className='font-semibold'>All provinces and areas</span>
+								</Link>,
+								...lguProvinces.map((province) => (
 									<Link
 										key={province.slug}
 										href={areaHref(province)}
@@ -159,8 +165,8 @@ export function SiteNav() {
 											{province.municipalities.length}
 										</span>
 									</Link>
-								))
-							}
+								)),
+							]}
 						</Menu>
 
 						{/* The directory answers which unit you are in; the guides answer
@@ -181,6 +187,9 @@ export function SiteNav() {
 							}
 						</Menu>
 
+						<Link href='/stats' data-active={pathname.startsWith('/stats')} className='nav-item'>
+							Stats
+						</Link>
 					</nav>
 
 					<div className='flex items-center justify-end gap-1.5'>
@@ -244,8 +253,11 @@ export function SiteNav() {
 							aria-label='Mobile navigation'
 							className='mx-auto max-w-[88rem] px-6 py-6 text-sm text-[var(--ink-2)] lg:px-8'
 						>
-							<p className='bb-label'>Provinces</p>
+							<p className='bb-label'>LGU profiles</p>
 							<div className='mt-3 grid'>
+								<Link href='/' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 font-semibold'>
+									All provinces and areas
+								</Link>
 								{lguProvinces.map((province) => (
 									<Link
 										key={province.slug}
@@ -273,6 +285,13 @@ export function SiteNav() {
 										{item.label}
 									</Link>
 								))}
+							</div>
+
+							<p className='bb-label mt-7'>Stats</p>
+							<div className='mt-3 grid'>
+								<Link href='/stats' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5'>
+									Every LGU ranked by its finances
+								</Link>
 							</div>
 						</nav>
 					</motion.div>
