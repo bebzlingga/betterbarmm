@@ -101,7 +101,7 @@ export default function LguHomePage() {
 					</div>
 
 					{/* Every drawn area is a link to its page. */}
-					<Rise delay={0.3} distance={14} className='hidden lg:block'>
+					<Rise delay={0.3} distance={14} className='hidden lg:block lg:pt-12'>
 						<RegionMap />
 					</Rise>
 
