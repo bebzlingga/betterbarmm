@@ -478,7 +478,7 @@ function Officials({ unit, province }: { unit: LguUnit; province: LguProvince })
 						<span className='mt-1.5 block text-[12.5px] leading-6 text-[var(--ink-3)]'>
 							Every elected and appointed post a {unitKind(unit)} has, and the barangay posts
 							underneath it, with what each is paid. Set by the Bangsamoro Local Governance
-							Code, so the ladder is the same everywhere.
+							Code, so the structure is the same everywhere.
 						</span>
 					</span>
 					<ArrowUpRightIcon

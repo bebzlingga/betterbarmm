@@ -57,7 +57,7 @@ export const lguLadder: LguRung[] = [
 		level: 'The city or municipality',
 		what: 'The town or city hall — 3 cities and 105 municipalities across the region, Sulu excluded.',
 		elects: ['Mayor', 'Vice-Mayor', 'Sangguniang Panlungsod or Sangguniang Bayan members'],
-		note: 'This is the rung most public services are actually delivered from, and the one most people mean when they say “the LGU”.',
+		note: 'This is the level most public services are actually delivered from, and the one most people mean when they say “the LGU”.',
 	},
 	{
 		level: 'The barangay',

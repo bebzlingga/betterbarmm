@@ -13,7 +13,7 @@ import { ThemeToggle } from './theme-toggle'
    the rungs do and the other is which code says so, and a reader who wants
    either usually wants both. */
 const guides = [
-	{ href: '/how-it-works', label: 'What each rung does' },
+	{ href: '/how-it-works', label: 'What each level does' },
 	{ href: '/spending', label: 'What the region spends where' },
 	{ href: '/two-codes', label: 'The two codes' },
 ] as const

@@ -306,7 +306,7 @@ export default function HowItWorksPage() {
 				breadcrumb={<LguBreadcrumb trail={[]}>How it works</LguBreadcrumb>}
 				kicker='The guide · Bangsamoro'
 				name='Where the money starts, and what is left to decide.'
-				note='National taxes to BARMM to your barangay, in three steps — the calendar the budget has to clear, how much of it the law has already spent, and then who you elect at each rung and every post a unit has.'
+				note='National taxes to BARMM to your barangay, in three steps — the calendar the budget has to clear, how much of it the law has already spent, and then who you elect at each level and every post a unit has.'
 			/>
 
 			{/* ---- The chain ---- */}
@@ -415,7 +415,7 @@ export default function HowItWorksPage() {
 					index='03'
 					eyebrow='The distribution'
 					size='sm'
-					title='What each rung takes in,'
+					title='What each level takes in,'
 					titleMuted='and what is already spent.'
 					lead='Pick a level. Bars are a share of their own base, named under each — they are not slices of one pie and must not be added up.'
 				/>
@@ -437,7 +437,7 @@ export default function HowItWorksPage() {
 					index='04'
 					eyebrow='What it buys'
 					size='sm'
-					title='Which rung'
+					title='Which level'
 					titleMuted='owes you what.'
 					lead='Almost every wasted trip to a hall is somebody at the wrong one.'
 				/>
@@ -478,9 +478,9 @@ export default function HowItWorksPage() {
 			<section id='ladder' className='bb-container bb-section scroll-mt-24'>
 				<SectionHead
 					index='05'
-					eyebrow='The ladder'
+					eyebrow='The levels'
 					size='sm'
-					title='Every rung,'
+					title='Every level,'
 					titleMuted='and who you elect to it.'
 					lead='From the region down to the barangay. These are different offices on different schedules, and the Bangsamoro Parliament does not replace any of them.'
 				/>
@@ -497,7 +497,7 @@ export default function HowItWorksPage() {
 					size='sm'
 					title='Every post,'
 					titleMuted='elected and appointed.'
-					lead='Which offices a unit has is set by the Bangsamoro Local Governance Code rather than by the unit, so the ladder is the same in all 108 of them — though a municipality may do without several of the appointed posts a province and a city must fill.'
+					lead='Which offices a unit has is set by the Bangsamoro Local Governance Code rather than by the unit, so the structure is the same in all 108 of them — though a municipality may do without several of the appointed posts a province and a city must fill.'
 				/>
 
 				<Offices />

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 		template: '%s / BetterBARMM Local Government',
 	},
 	description:
-		'Every province, city, municipality and barangay in the Bangsamoro — population, land area, the officials elected to each, and the services each rung is responsible for.',
+		'Every province, city, municipality and barangay in the Bangsamoro — population, land area, the officials elected to each, and the services each level is responsible for.',
 	/* Absolute, because everything below it is relative. Without a
 	   `metadataBase` the generated card resolves to a path rather than a URL,
 	   and a platform scraping the page has nothing to fetch — which is why a
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 		url: 'https://lgu.betterbarmm.com',
 		title: 'BetterBARMM Local Government',
 		description:
-			'Every province, city, municipality and barangay in the Bangsamoro — population, land area, the officials elected to each, and the services each rung is responsible for.',
+			'Every province, city, municipality and barangay in the Bangsamoro — population, land area, the officials elected to each, and the services each level is responsible for.',
 	},
 
 	/* The canonical address, and permission to index it.
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 		card: 'summary_large_image',
 		title: 'BetterBARMM Local Government',
 		description:
-			'Every province, city, municipality and barangay in the Bangsamoro — population, land area, the officials elected to each, and the services each rung is responsible for.',
+			'Every province, city, municipality and barangay in the Bangsamoro — population, land area, the officials elected to each, and the services each level is responsible for.',
 	},
 }
 

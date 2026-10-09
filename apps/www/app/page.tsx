@@ -281,7 +281,7 @@ export default function HomePage() {
 								value: lguData.totals.barangays,
 								label: 'Barangays',
 								group: true,
-								note: 'The rung of government nearest the household, and the one most often elected.',
+								note: 'The level of government nearest the household, and the one most often elected.',
 							},
 							{
 								/* Millions, to two places, rather than all seven digits. At

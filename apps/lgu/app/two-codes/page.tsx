@@ -109,7 +109,7 @@ const DIFFERENCES: Difference[] = [
 /** What did not change, which is most of it. */
 const SAME = [
 	'A three-year term and a three-term limit, at every level including the barangay.',
-	'The ladder itself — province, city or municipality, barangay — and which services sit on which rung.',
+	'The levels themselves — province, city or municipality, barangay — and which services sit at which level.',
 	'The rule that doubt about a power is resolved in favor of the unit, and a tax ordinance against the unit that wrote it.',
 	'Automatic succession: the vice takes over, then the highest-ranking council member.',
 	'Recall on loss of confidence, on the same signature thresholds and the same once-per-term limit.',
@@ -274,7 +274,7 @@ export default function TwoCodesPage() {
 						>
 							{lguReferences.nationalCode.label}
 						</a>
-						. What each rung of government does with these powers is on{' '}
+						. What each level of government does with these powers is on{' '}
 						<Link href='/how-it-works' className='rule-link'>
 							How it works
 						</Link>

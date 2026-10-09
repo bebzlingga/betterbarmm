@@ -782,7 +782,7 @@ export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
 		navTitle: 'Local Government',
 		title: 'Who runs your province, town, and barangay',
 		description:
-			'The ladder of local government units inside BARMM, what is elected at each rung, and where to look up the officials.',
+			'The levels of local government inside BARMM, what is elected at each level, and where to look up the officials.',
 		sections: [
 			'BARMM is an autonomous regional government sitting over provinces, cities, municipalities, and barangays that keep their own elected officials. The Bangsamoro Parliament does not replace a governor, a mayor, or a barangay captain — it is a different office on a different ballot, and confusing the two is the single most common mistake readers arrive with.',
 			'The Bangsamoro Local Governance Code, enacted in 2023, sets out how local units inside the region are governed. The national Local Government Code of 1991 still defines the offices themselves: the governor and provincial board, the mayor and the council, the punong barangay and the sangguniang barangay.',
