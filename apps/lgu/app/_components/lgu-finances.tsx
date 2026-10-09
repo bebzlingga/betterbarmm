@@ -44,7 +44,7 @@ function Block({ title, note, children }: { title: string; note?: React.ReactNod
 		<div className='mt-14 first:mt-0'>
 			<h3 className='bb-label block w-full border-b border-[var(--brass-line)] pb-3'>{title}</h3>
 			{children}
-			{note ? <p className='mt-4 max-w-3xl text-[12.5px] leading-6 text-[var(--ink-3)]'>{note}</p> : null}
+			{note ? <p className='mt-4 text-[12.5px] leading-6 text-[var(--ink-3)]'>{note}</p> : null}
 		</div>
 	)
 }
@@ -159,7 +159,7 @@ export function LguFinances({ unitKey, name }: { unitKey: string; name: string }
 
 	if (!f && !classes && !Object.keys(seals).length && !won.length) {
 		return (
-			<p className='max-w-2xl text-[14.5px] leading-7 text-[var(--ink-2)]'>
+			<p className='text-[14.5px] leading-7 text-[var(--ink-2)]'>
 				No fiscal record names {name} yet. The towns of the Special Geographic Area were created in 2024 and
 				have not filed a Statement of Receipts and Expenditures with the Bureau of Local Government Finance,
 				nor been classified, ranked or awarded under their own names.
@@ -172,7 +172,7 @@ export function LguFinances({ unitKey, name }: { unitKey: string; name: string }
 
 	return (
 		<div>
-			<p className='max-w-3xl text-[14.5px] leading-7 text-[var(--ink-2)]'>
+			<p className='text-[14.5px] leading-7 text-[var(--ink-2)]'>
 				What {name}&rsquo;s treasurer reported collecting and spending to the Bureau of Local Government
 				Finance, year by year. These are <strong className='text-[var(--ink)]'>actuals, not the budget</strong>{' '}
 				the sanggunian passed — that is in its own appropriation ordinance, which nobody publishes together.
