@@ -309,14 +309,34 @@ export default function HowItWorksPage() {
 				note='National taxes to BARMM to your barangay, in three steps — the calendar the budget has to clear, how much of it the law has already spent, and then who you elect at each level and every post a unit has.'
 			/>
 
+			{/* A page of seven long sections needs a way to jump between them. */}
+			<nav
+				aria-label='On this page'
+				className='sticky top-[var(--sticky-top)] z-20 border-b border-[var(--ink)] bg-[var(--paper)] transition-[top] duration-300'
+			>
+				<div className='bb-container flex gap-1 overflow-x-auto [mask-image:linear-gradient(to_right,#000_85%,transparent)] [scrollbar-width:none] lg:[mask-image:none] [&::-webkit-scrollbar]:hidden'>
+					{[
+						['#money', 'Where the money comes from'],
+						['#calendar', 'The budget calendar'],
+						['#distribution', 'What each level takes in'],
+						['#services', 'Services and charges'],
+						['#ladder', 'Who you elect'],
+						['#offices', 'Every post'],
+						['#where-to-look', 'Where to look'],
+					].map(([href, label]) => (
+						<a key={href} href={href} className='lgu-tab whitespace-nowrap'>
+							{label}
+						</a>
+					))}
+				</div>
+			</nav>
+
 			{/* ---- The chain ---- */}
-			<section className='bb-container bb-section'>
+			<section id='money' className='bb-container bb-section scroll-mt-32'>
 				<SectionHead
-					index='01'
 					eyebrow='The chain'
 					size='sm'
-					title='Three governments,'
-					titleMuted='one flow of money.'
+					title='Three governments, one flow of money'
 					lead='None of them reports to the one above it. What passes downward is money, not orders.'
 				/>
 
@@ -366,13 +386,11 @@ export default function HowItWorksPage() {
 			</section>
 
 			{/* ---- The calendar ---- */}
-			<section className='bb-container bb-section'>
+			<section id='calendar' className='bb-container bb-section scroll-mt-32'>
 				<SectionHead
-					index='02'
 					eyebrow='How it is approved'
 					size='sm'
-					title='Five dates,'
-					titleMuted='and one penalty for missing them.'
+					title='Five dates, and one penalty for missing them'
 					lead='The same calendar at every level. A council that misses the last one stops doing anything else.'
 				/>
 
@@ -410,18 +428,17 @@ export default function HowItWorksPage() {
 			{/* ---- Where it must go ---- */}
 			{/* Three panels rather than one list. The rungs do not carry the same
 			    requirements, and the flat version quietly implied they did. */}
-			<section className='bb-container border-t border-[var(--rule)] bb-section'>
+			<section id='distribution' className='bb-container border-t border-[var(--rule)] bb-section scroll-mt-32'>
 				<SectionHead
-					index='03'
 					eyebrow='The distribution'
 					size='sm'
-					title='What each level takes in,'
-					titleMuted='and what is already spent.'
+					title='What each level takes in, and what is already spent'
 					lead='Pick a level. Bars are a share of their own base, named under each — they are not slices of one pie and must not be added up.'
 				/>
 
 				<div className='mt-12'>
 					<LguTabs
+						sticky={false}
 						tabs={LEVELS.map((level) => ({
 							id: level.id,
 							label: level.tab,
@@ -432,13 +449,11 @@ export default function HowItWorksPage() {
 			</section>
 
 			{/* ---- What each level owes you ---- */}
-			<section id='services' className='bb-container bb-section scroll-mt-24'>
+			<section id='services' className='bb-container bb-section scroll-mt-32'>
 				<SectionHead
-					index='04'
 					eyebrow='What it buys'
 					size='sm'
-					title='Which level'
-					titleMuted='owes you what.'
+					title='Which level owes you what'
 					lead='Almost every wasted trip to a hall is somebody at the wrong one.'
 				/>
 
@@ -504,13 +519,11 @@ export default function HowItWorksPage() {
 			</section>
 
 			{/* ---- The ladder ---- */}
-			<section id='ladder' className='bb-container bb-section scroll-mt-24'>
+			<section id='ladder' className='bb-container bb-section scroll-mt-32'>
 				<SectionHead
-					index='05'
 					eyebrow='The levels'
 					size='sm'
-					title='Every level,'
-					titleMuted='and who you elect to it.'
+					title='Every level, and who you elect to it'
 					lead='From the region down to the barangay. These are different offices on different schedules, and the Bangsamoro Parliament does not replace any of them.'
 				/>
 
@@ -519,13 +532,11 @@ export default function HowItWorksPage() {
 			</section>
 
 			{/* ---- The offices ---- */}
-			<section id='offices' className='bb-container bb-section scroll-mt-24'>
+			<section id='offices' className='bb-container bb-section scroll-mt-32'>
 				<SectionHead
-					index='06'
 					eyebrow='The offices'
 					size='sm'
-					title='Every post,'
-					titleMuted='elected and appointed.'
+					title='Every post, elected and appointed'
 					lead='Which offices a unit has is set by the Bangsamoro Local Governance Code rather than by the unit, so the structure is the same in all 108 of them — though a municipality may do without several of the appointed posts a province and a city must fill.'
 				/>
 
@@ -533,13 +544,11 @@ export default function HowItWorksPage() {
 			</section>
 
 			{/* ---- Where to look ---- */}
-			<section id='where-to-look' className='bb-container bb-section scroll-mt-24'>
+			<section id='where-to-look' className='bb-container bb-section scroll-mt-32'>
 				<SectionHead
-					index='07'
 					eyebrow='Where to look'
 					size='sm'
-					title='The names this directory'
-					titleMuted='does not hold.'
+					title='The names this directory does not hold'
 					lead='Anyone who took office after the 2025 canvass, and the barangays DILG has no roster for, are kept by these offices.'
 				/>
 

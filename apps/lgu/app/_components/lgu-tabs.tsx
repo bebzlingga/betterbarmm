@@ -22,7 +22,14 @@ export type LguTab = {
  * The active tab is mirrored into the URL hash, so a link to a particular tab
  * survives being shared — and a reader arriving on `#services` lands on it.
  */
-export function LguTabs({ tabs }: { tabs: LguTab[] }) {
+export function LguTabs({
+	tabs,
+	sticky = true,
+}: {
+	tabs: LguTab[]
+	/** Off for a set of tabs inside a page that already has a sticky bar. */
+	sticky?: boolean
+}) {
 	const [active, setActive] = useState(tabs[0]?.id)
 
 	useEffect(() => {
@@ -57,7 +64,11 @@ export function LguTabs({ tabs }: { tabs: LguTab[] }) {
 			    the way (pinned at the header's height it left a band of page showing
 			    above it). The inner one scrolls and fades, so the fade thins the
 			    tabs, not the ground under them. */}
-			<div className='sticky top-[var(--sticky-top)] z-20 -mx-6 border-b border-[var(--ink)] bg-[var(--paper)] px-6 transition-[top] duration-300 lg:-mx-8 lg:px-8'>
+			<div
+				className={`-mx-6 border-b border-[var(--ink)] bg-[var(--paper)] px-6 lg:-mx-8 lg:px-8 ${
+					sticky ? 'sticky top-[var(--sticky-top)] z-20 transition-[top] duration-300' : ''
+				}`}
+			>
 			<div
 				role='tablist'
 				aria-label='Sections'

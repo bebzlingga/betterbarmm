@@ -130,11 +130,9 @@ export default function TwoCodesPage() {
 			{/* ---- Which one applies ---- */}
 			<section className='bb-container bb-section'>
 				<SectionHead
-					index='01'
 					eyebrow='Which one applies'
 					size='sm'
-					title='Not a replacement,'
-					titleMuted='and not a supplement either.'
+					title='Not a replacement, and not a supplement either'
 					lead='A regional law cannot repeal a national one, and BAA 49 does not try. What it repealed is Muslim Mindanao Autonomy Act 25 — the ARMM local government code it succeeded. RA 7160 remains on the books and remains the law inside BARMM for anything the Bangsamoro code does not reach.'
 				/>
 
@@ -173,11 +171,9 @@ export default function TwoCodesPage() {
 			{/* ---- Where they part ---- */}
 			<section className='bb-container bb-section'>
 				<SectionHead
-					index='02'
 					eyebrow='Where they part'
 					size='sm'
-					title='Nine places'
-					titleMuted='the answer is different.'
+					title='Nine places the answer is different'
 					lead='Each row is the same question put to both codes. The Bangsamoro answer is cited to the section that carries it, so any of these can be checked against the text rather than taken on trust.'
 				/>
 
@@ -222,11 +218,9 @@ export default function TwoCodesPage() {
 			{/* ---- What did not change ---- */}
 			<section className='bb-container border-t border-[var(--rule)] bb-section-bottom'>
 				<SectionHead
-					index='03'
 					eyebrow='What did not change'
 					size='sm'
-					title='Most of it'
-					titleMuted='is the same law.'
+					title='Most of it is the same law'
 					lead='The differences above are the interesting part and not the bulk of it. BAA 49 was drafted from RA 7160 and keeps its structure almost entirely, which is why a treasurer or an assessor moving into the region finds the job recognizable.'
 				/>
 

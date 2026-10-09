@@ -42,11 +42,9 @@ export default function SpendingPage() {
 
 			<section className='bb-container bb-section'>
 				<SectionHead
-					index='01'
 					eyebrow={`FY ${YEARS[0]} to FY ${YEARS[YEARS.length - 1]}`}
 					size='sm'
-					title={`${pesoCell(grand)},`}
-					titleMuted='across eight areas.'
+					title={`${pesoCell(grand)}, across eight areas`}
 					lead='Amounts as each Act appropriated them. Areas are reconciled to their present names — the region was redrawn inside this span, and every spelling the Acts used is kept under the row.'
 				/>
 
