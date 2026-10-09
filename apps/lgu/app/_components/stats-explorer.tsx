@@ -18,7 +18,6 @@ export type StatsUnit = {
 	href: string
 	level: 'province' | 'town'
 	meta: string
-	population: number | null
 	/** The province or area it sits in (a province is its own). */
 	area: string
 	type: 'Province' | 'City' | 'Municipality'
@@ -30,8 +29,7 @@ export type StatsUnit = {
 export type StatsData = Record<string, Record<string, (number | null)[]>>
 
 const COLUMNS: DataColumn[] = [
-	{ key: 'localSources', label: 'Local taxes and fees', format: 'peso' },
-	{ key: 'perPerson', label: 'Local revenue per person', format: 'peso', hideBelow: 'sm' },
+	{ key: 'localSources', label: 'Local taxes and fees', format: 'pesoFull' },
 	{ key: 'nta', label: 'NTA', format: 'peso', hideBelow: 'md' },
 	{ key: 'ntaDependency', label: 'NTA share of income', format: 'pct', hideBelow: 'lg' },
 	{ key: 'operatingIncome', label: 'Total income', format: 'peso', hideBelow: 'md' },
@@ -111,16 +109,12 @@ export function StatsExplorer({
 				.map((unit) => {
 					const values = data[unit.key]![year]!
 					const field = Object.fromEntries(fields.map((name, i) => [name, values[i] ?? null]))
-					const local = field.localSources
 					return {
 						key: unit.key,
 						href: unit.href,
 						name: unit.name,
 						meta: unit.meta,
-						values: {
-							...field,
-							perPerson: local != null && unit.population ? local / unit.population : null,
-						},
+						values: field,
 					}
 				}),
 		[units, fields, data, year, matches],

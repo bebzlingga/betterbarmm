@@ -20,7 +20,7 @@ import { useMemo, useState } from 'react'
 export type DataColumn = {
 	key: string
 	label: string
-	format: 'int' | 'peso' | 'area' | 'pct' | 'text'
+	format: 'int' | 'peso' | 'pesoFull' | 'area' | 'pct' | 'text'
 	/** Hidden below this width; the row's `mobile` line carries what matters of it. */
 	hideBelow?: 'sm' | 'md' | 'lg'
 }
@@ -43,6 +43,8 @@ const HIDE = { sm: 'hidden sm:table-cell', md: 'hidden md:table-cell', lg: 'hidd
 function display(value: number | string | null, format: DataColumn['format']): string {
 	if (value == null || value === '') return '—'
 	if (typeof value === 'string') return value
+	if (format === 'pesoFull')
+		return `₱${value.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
 	if (format === 'peso') {
 		if (value >= 1e9) return `₱${(value / 1e9).toFixed(2)}B`
 		if (value >= 1e6) return `₱${(value / 1e6).toFixed(1)}M`

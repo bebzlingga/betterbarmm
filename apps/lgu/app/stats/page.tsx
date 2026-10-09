@@ -23,7 +23,6 @@ export default function StatsPage() {
 						href: `/${province.slug}#finances`,
 						level: 'province' as const,
 						meta: 'Province',
-						population: province.population,
 						area: province.name,
 						type: 'Province' as const,
 						klass: incomeClass.units[province.slug]?.['2024']?.class ?? null,
@@ -36,7 +35,6 @@ export default function StatsPage() {
 			href: `/${province.slug}/${unit.slug}#finances`,
 			level: 'town' as const,
 			meta: province.name === unit.name ? unitClass(unit) : `${unitClass(unit)} · ${province.name}`,
-			population: unit.population,
 			area: province.name,
 			type: unit.isCity ? ('City' as const) : ('Municipality' as const),
 			klass: incomeClass.units[`${province.slug}/${unit.slug}`]?.['2024']?.class ?? null,
@@ -73,8 +71,6 @@ export default function StatsPage() {
 					<p>
 						<strong className='font-semibold text-[var(--ink-2)]'>Local taxes and fees</strong> are what the
 						unit raises itself: real property tax, business tax, fees and charges.{' '}
-						<strong className='font-semibold text-[var(--ink-2)]'>Per person</strong> divides that by the 2024
-						census population for every year.{' '}
 						<strong className='font-semibold text-[var(--ink-2)]'>NTA share of income</strong> is BLGF&rsquo;s
 						own ratio of the National Tax Allotment to regular income.
 					</p>
