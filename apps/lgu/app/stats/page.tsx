@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { lguProvinces, unitClass } from '@betterbarmm/lgu-data'
-import { finances, funds, row } from '@betterbarmm/lgu-data/fiscal'
+import { finances, funds, incomeClass, row } from '@betterbarmm/lgu-data/fiscal'
 import { LguBreadcrumb, LguMasthead } from '../_components/lgu-parts'
 import { StatsExplorer, type StatsData, type StatsUnit } from '../_components/stats-explorer'
 
@@ -24,6 +24,9 @@ export default function StatsPage() {
 						level: 'province' as const,
 						meta: 'Province',
 						population: province.population,
+						area: province.name,
+						type: 'Province' as const,
+						klass: incomeClass.units[province.slug]?.['2024']?.class ?? null,
 					},
 				]
 			: []),
@@ -34,6 +37,9 @@ export default function StatsPage() {
 			level: 'town' as const,
 			meta: province.name === unit.name ? unitClass(unit) : `${unitClass(unit)} · ${province.name}`,
 			population: unit.population,
+			area: province.name,
+			type: unit.isCity ? ('City' as const) : ('Municipality' as const),
+			klass: incomeClass.units[`${province.slug}/${unit.slug}`]?.['2024']?.class ?? null,
 		})),
 	])
 

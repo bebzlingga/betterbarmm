@@ -1,7 +1,7 @@
 'use client'
 
 import { MagnifyingGlassIcon } from '@phosphor-icons/react'
-import { useMemo, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
 import { DataTable, type DataColumn, type DataRow } from './data-table'
 
 /* ============================================================
@@ -19,6 +19,11 @@ export type StatsUnit = {
 	level: 'province' | 'town'
 	meta: string
 	population: number | null
+	/** The province or area it sits in (a province is its own). */
+	area: string
+	type: 'Province' | 'City' | 'Municipality'
+	/** Income class, 2024 reclassification. */
+	klass: string | null
 }
 
 /** Values per unit per year, in the order of `fields`. A year the unit did not report is absent. */
@@ -35,37 +40,33 @@ const COLUMNS: DataColumn[] = [
 	{ key: 'borrowings', label: 'Borrowed', format: 'peso', hideBelow: 'lg' },
 ]
 
-function Choice<T extends string>({
+/** A labelled native select: keyboard, screen readers and phones handle it for free. */
+function Select({
 	label,
 	value,
 	options,
 	onChange,
 }: {
 	label: string
-	value: T
-	options: [T, string][]
-	onChange: (value: T) => void
+	value: string
+	options: [string, string][]
+	onChange: (value: string) => void
 }) {
 	return (
-		<div role='radiogroup' aria-label={label} className='flex flex-wrap items-center gap-1.5'>
-			<span className='mr-2 text-[13px] text-[var(--ink-3)]'>{label}</span>
-			{options.map(([key, text]) => (
-				<button
-					key={key}
-					type='button'
-					role='radio'
-					aria-checked={value === key}
-					onClick={() => onChange(key)}
-					className={`cursor-pointer border px-3 py-1.5 text-[13px] font-medium transition ${
-						value === key
-							? 'border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)]'
-							: 'border-[var(--rule)] text-[var(--ink-2)] hover:border-[var(--ink)]'
-					}`}
-				>
-					{text}
-				</button>
-			))}
-		</div>
+		<label className='flex min-w-0 flex-col gap-1'>
+			<span className='text-[12px] text-[var(--ink-3)]'>{label}</span>
+			<select
+				value={value}
+				onChange={(event) => onChange(event.target.value)}
+				className='h-10 min-w-0 cursor-pointer border border-[var(--rule)] bg-[var(--paper)] px-3 text-[14px] text-[var(--ink)] outline-none transition hover:border-[var(--ink)] focus:border-[var(--ink)]'
+			>
+				{options.map(([key, text]) => (
+					<option key={key} value={key}>
+						{text}
+					</option>
+				))}
+			</select>
+		</label>
 	)
 }
 
@@ -82,11 +83,21 @@ export function StatsExplorer({
 }) {
 	const [year, setYear] = useState(String(years.at(-1)))
 	const [query, setQuery] = useState('')
+	const [area, setArea] = useState('')
+	const [klass, setKlass] = useState('')
+	const [type, setType] = useState('')
+
+	const areas = [...new Set(units.map((unit) => unit.area))].sort()
+	const classes = [...new Set(units.map((unit) => unit.klass).filter((k): k is string => !!k))].sort()
+	const matches = useCallback(
+		(unit: StatsUnit) => (!area || unit.area === area) && (!klass || unit.klass === klass) && (!type || unit.type === type),
+		[area, klass, type],
+	)
 
 	const rows = useMemo<DataRow[]>(
 		() =>
 			units
-				.filter((unit) => data[unit.key]?.[year])
+				.filter((unit) => matches(unit) && data[unit.key]?.[year])
 				.map((unit) => {
 					const values = data[unit.key]![year]!
 					const field = Object.fromEntries(fields.map((name, i) => [name, values[i] ?? null]))
@@ -102,35 +113,39 @@ export function StatsExplorer({
 						},
 					}
 				}),
-		[units, fields, data, year],
+		[units, fields, data, year, matches],
 	)
 
-	const total = units.length
 
 	return (
 		<div>
-			<div className='flex flex-col gap-3 border-y border-[var(--rule)] py-4 lg:flex-row lg:items-center lg:justify-between'>
-				<label className='flex w-full max-w-md items-center gap-3 border-b border-[var(--rule)] py-2'>
-					<MagnifyingGlassIcon className='size-4 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
-					<span className='sr-only'>Filter provinces, cities and municipalities</span>
-					<input
-						value={query}
-						onChange={(event) => setQuery(event.target.value)}
-						type='search'
-						autoComplete='off'
-						spellCheck={false}
-						placeholder='Filter by name or province'
-						className='min-w-0 flex-1 bg-transparent text-[14px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
-					/>
+			<div className='grid grid-cols-2 gap-3 lg:grid-cols-[minmax(0,2fr)_repeat(4,minmax(0,1fr))] lg:items-end lg:gap-4'>
+				<label className='col-span-2 flex min-w-0 flex-col gap-1 lg:col-span-1'>
+					<span className='text-[12px] text-[var(--ink-3)]'>Search</span>
+					<span className='flex h-10 items-center gap-3 border border-[var(--rule)] px-3 focus-within:border-[var(--ink)]'>
+						<MagnifyingGlassIcon className='size-4 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
+						<input
+							value={query}
+							onChange={(event) => setQuery(event.target.value)}
+							type='search'
+							autoComplete='off'
+							spellCheck={false}
+							placeholder='Name of a province, city or town'
+							className='min-w-0 flex-1 bg-transparent text-[14px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+						/>
+					</span>
 				</label>
-				<Choice label='Fiscal year' value={year} options={years.map((y) => [String(y), String(y)])} onChange={setYear} />
+				<Select label='Province' value={area} onChange={setArea} options={[['', 'All provinces and areas'], ...areas.map((a): [string, string] => [a, a])]} />
+				<Select
+					label='Type'
+					value={type}
+					onChange={setType}
+					options={[['', 'All types'], ['Province', 'Province'], ['City', 'City'], ['Municipality', 'Municipality']]}
+				/>
+				<Select label='Income class' value={klass} onChange={setKlass} options={[['', 'All classes'], ...classes.map((k): [string, string] => [k, `${k} class`])]} />
+				<Select label='Fiscal year' value={year} onChange={setYear} options={[...years].reverse().map((y): [string, string] => [String(y), `FY ${y}`])} />
 			</div>
 
-			<p className='mt-4 text-[13px] text-[var(--ink-3)]'>
-				{rows.length} of {total} reported for FY {year}
-				{rows.length < total ? '; the rest filed nothing that year and are left out' : ''}.
-				{year === String(years.at(-1)) ? ' This year is BLGF’s preliminary release.' : ''}
-			</p>
 
 			<div className='mt-6'>
 				<DataTable
