@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { lguReferences } from '@betterbarmm/lgu-data'
 import { LguMasthead } from '../_components/lgu-parts'
-import { DocToc, type TocItem } from '../_components/doc-toc'
+import { DocLayout } from '../_components/doc-layout'
+import type { TocItem } from '../_components/doc-toc'
 
 export const metadata: Metadata = {
 	title: 'The Bangsamoro Local Governance Code',
@@ -364,29 +365,11 @@ export default function GovernanceCodePage() {
 				name='The Bangsamoro Local Governance Code'
 			/>
 
-			{/* Read like documentation: one column of text, and "On this page"
-			    beside it on a wide screen, folded above it on a phone. */}
-			<div className='bb-container bb-section grid gap-12 lg:grid-cols-[minmax(0,1fr)_17rem] lg:gap-16'>
-				<p className='bg-[var(--paper-2)] px-6 py-5 text-[15px] leading-7 text-[var(--ink-2)] sm:px-8 sm:py-6 lg:col-span-2'>
-					Bangsamoro Autonomy Act 49, enacted in September 2023, is the code every province, city, municipality and
-					barangay in BARMM runs on. It creates their offices, fixes their terms and pay, sets how they raise and share
-					money, and devolves the region’s powers to them. The national Local Government Code applies only where it is
-					silent.
-				</p>
-				<details className='border border-[var(--rule)] bg-[var(--paper-2)] px-5 py-4 lg:hidden'>
-					<summary className='cursor-pointer text-[14px] font-semibold text-[var(--ink)]'>On this page</summary>
-					<ol className='mt-3'>
-						{TOC.map((item) => (
-							<li key={item.id}>
-								<a href={`#${item.id}`} className={`block py-1 text-[13.5px] text-[var(--ink-2)] ${item.depth === 2 ? 'pl-4' : 'font-medium'}`}>
-									{item.label}
-								</a>
-							</li>
-						))}
-					</ol>
-				</details>
-
-				<article className='min-w-0 max-w-[48rem]'>
+			<DocLayout
+				toc={TOC}
+				narrow
+				summary='Bangsamoro Autonomy Act 49, enacted in September 2023, is the code every province, city, municipality and barangay in BARMM runs on. It creates their offices, fixes their terms and pay, sets how they raise and share money, and devolves the region’s powers to them. The national Local Government Code applies only where it is silent.'
+			>
 					<Section id='introduction'>
 						<p className={`mt-5 ${P}`}>
 							Every province, city, municipality and barangay in the Philippines is governed by a local government
@@ -439,6 +422,13 @@ export default function GovernanceCodePage() {
 
 					<Section id='devolution'>
 						<Points points={DEVOLUTION} />
+						<p className={`mt-8 ${P}`}>
+							How a power moves, and what each level and office ends up doing, is set out on{' '}
+							<Link href='/devolution' className='rule-link'>
+								How devolution works
+							</Link>
+							.
+						</p>
 					</Section>
 
 					<Section id='officials'>
@@ -562,14 +552,7 @@ export default function GovernanceCodePage() {
 							.
 						</p>
 					</Section>
-				</article>
-
-				<aside className='hidden lg:block'>
-					<div className='sticky top-[calc(var(--sticky-top)+2rem)] max-h-[calc(100vh-var(--sticky-top)-4rem)] overflow-y-auto transition-[top] duration-300'>
-						<DocToc items={TOC} />
-					</div>
-				</aside>
-			</div>
+			</DocLayout>
 		</>
 	)
 }

@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { Rise } from '@betterbarmm/editorial'
 import { LOCAL_CHARGES, SERVICES, formatNumber, lguData } from '@betterbarmm/lgu-data'
-import { DocToc, type TocItem } from '../_components/doc-toc'
+import { DocLayout } from '../_components/doc-layout'
+import type { TocItem } from '../_components/doc-toc'
 import { LguBreadcrumb, LguMasthead } from '../_components/lgu-parts'
 import { LguTabs } from '../_components/lgu-tabs'
 import { Ladder, Lookups, Offices, TwoBallots } from '../_components/offices-guide'
@@ -334,27 +335,10 @@ export default function HowItWorksPage() {
 				name='Where the money starts, and what is left to decide.'
 			/>
 
-			{/* Read like documentation: one column, and "On this page" beside it
-			    on a wide screen, folded above it on a phone. */}
-			<div className='bb-container bb-section grid gap-12 lg:grid-cols-[minmax(0,1fr)_17rem] lg:gap-16'>
-				<p className='bg-[var(--paper-2)] px-6 py-5 text-[15px] leading-7 text-[var(--ink-2)] sm:px-8 sm:py-6 lg:col-span-2'>
-					National taxes to BARMM to your barangay, in three steps — the calendar the budget has to clear, how much of
-					it the law has already spent, and then who you elect at each level and every post a unit has.
-				</p>
-				<details className='border border-[var(--rule)] bg-[var(--paper-2)] px-5 py-4 lg:hidden'>
-					<summary className='cursor-pointer text-[14px] font-semibold text-[var(--ink)]'>On this page</summary>
-					<ol className='mt-3'>
-						{TOC.map((item) => (
-							<li key={item.id}>
-								<a href={`#${item.id}`} className={`block py-1 text-[13.5px] text-[var(--ink-2)] ${item.depth === 2 ? 'pl-4' : 'font-medium'}`}>
-									{item.label}
-								</a>
-							</li>
-						))}
-					</ol>
-				</details>
-
-				<article className='min-w-0'>
+			<DocLayout
+				toc={TOC}
+				summary='National taxes to BARMM to your barangay, in three steps — the calendar the budget has to clear, how much of it the law has already spent, and then who you elect at each level and every post a unit has.'
+			>
 			{/* ---- The chain ---- */}
 			<Section id='money' lead='None of them reports to the one above it. What passes downward is money, not orders.'>
 
@@ -538,14 +522,7 @@ export default function HowItWorksPage() {
 					<Lookups />
 				</div>
 			</Section>
-				</article>
-
-				<aside className='hidden lg:block'>
-					<div className='sticky top-[calc(var(--sticky-top)+2rem)] max-h-[calc(100vh-var(--sticky-top)-4rem)] overflow-y-auto transition-[top] duration-300'>
-						<DocToc items={TOC} />
-					</div>
-				</aside>
-			</div>
+			</DocLayout>
 		</>
 	)
 }
