@@ -1,7 +1,7 @@
 'use client'
 
 import { CaretDownIcon, HandHeartIcon } from '@phosphor-icons/react'
-import { EASE, Magnetic, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo } from '@betterbarmm/editorial'
+import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo } from '@betterbarmm/editorial'
 import { AnimatePresence, motion } from 'motion/react'
 import { areaHref, lguProvinces } from '@betterbarmm/lgu-data'
 import Link from 'next/link'
@@ -119,7 +119,29 @@ export function SiteNav() {
 			{/* The estate's strip, above the workspace's own bar. Not sticky:
 			    it belongs to the top of the document, and the navigation a
 			    reader actually needs mid-page is the bar under it. */}
-			<UtilityBar base='https://betterbarmm.com' current='lgu' className='bg-[var(--paper-2)]' />
+			<UtilityBar
+				base='https://betterbarmm.com'
+				current='lgu'
+				className='lgu-strip bg-[var(--paper-2)]'
+				end={
+					<>
+						<ThemeToggle size='size-7' />
+						{/* Phones have no room for it in the strip; the wrapper hides it,
+						    since the button's own display would beat `hidden`. */}
+						<span className='hidden self-stretch sm:flex'>
+							<a
+								href='https://betterbarmm.com/contribute'
+								target='_blank'
+								rel='noreferrer'
+								className='bb-btn bb-btn-accent !px-4 !py-0 !text-[9.5px]'
+							>
+								<HandHeartIcon size={13} weight='fill' aria-hidden='true' />
+								Contribute
+							</a>
+						</span>
+					</>
+				}
+			/>
 
 			{/* The estate's masthead behaviour, the same on every workspace: it
 			    takes a ground once the reader has left the top, and ducks out of the
@@ -206,21 +228,6 @@ export function SiteNav() {
 					</nav>
 
 					<div className='flex items-center justify-end gap-1.5'>
-						<ThemeToggle />
-						<span className='w-1.5' aria-hidden='true' />
-
-						<Magnetic strength={0.22} className='hidden sm:inline-flex'>
-							<a
-								href='https://betterbarmm.com/contribute'
-								target='_blank'
-								rel='noreferrer'
-								className='bb-btn bb-btn-accent !px-4 !py-2.5 !text-[10px]'
-							>
-								<HandHeartIcon size={15} weight='fill' aria-hidden='true' />
-								Contribute
-							</a>
-						</Magnetic>
-
 						<button
 							type='button'
 							aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}

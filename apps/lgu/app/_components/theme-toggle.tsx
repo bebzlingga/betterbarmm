@@ -46,7 +46,7 @@ const getSnapshot = (): Theme =>
 
 const getServerSnapshot = (): Theme => 'light'
 
-export function ThemeToggle() {
+export function ThemeToggle({ size = 'size-9' }: { size?: string }) {
 	const theme = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
 	const next: Theme = theme === 'dark' ? 'light' : 'dark'
 
@@ -67,7 +67,7 @@ export function ThemeToggle() {
 			onClick={toggle}
 			title={`Switch to ${next} theme`}
 			aria-label={`Switch to ${next} theme`}
-			className='inline-flex size-9 cursor-pointer items-center justify-center rounded-full text-[var(--ink-3)] transition hover:bg-[var(--paper-2)] hover:text-[var(--ink)]'
+			className={`inline-flex ${size} cursor-pointer items-center justify-center rounded-full text-[var(--ink-3)] transition hover:bg-[var(--paper-2)] hover:text-[var(--ink)]`}
 		>
 			{theme === 'dark' ? (
 				<svg

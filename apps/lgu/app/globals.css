@@ -264,3 +264,25 @@
     padding-inline: 2rem;
   }
 }
+
+/* The estate strip carries the theme switch and Contribute here. It is a
+   touch taller, and its rows stretch so the button runs its full height
+   with no gap above or below; the links and the switch stay centred. */
+.lgu-strip > div {
+  min-height: 2.5rem;
+  align-items: stretch;
+}
+
+.lgu-strip nav {
+  align-items: stretch;
+}
+
+.lgu-strip details,
+.lgu-strip nav > button {
+  align-self: center;
+}
+
+.lgu-strip nav > button svg {
+  width: 15px;
+  height: 15px;
+}

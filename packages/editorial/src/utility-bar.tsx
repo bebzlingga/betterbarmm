@@ -48,12 +48,15 @@ export function UtilityBar({
 	current,
 	links = ESTATE_LINKS,
 	className = '',
+	end,
 }: {
 	base?: string
 	current?: WorkspaceKey
 	links?: UtilityLink[]
 	/** A ground for the strip, e.g. `bb-ground` for the near-black band. */
 	className?: string
+	/** Controls ranged after the links — a theme switch, a call to action. */
+	end?: React.ReactNode
 }) {
 	return (
 		<div className={`utility-bar ${className}`}>
@@ -107,6 +110,7 @@ export function UtilityBar({
 							</a>
 						)
 					})}
+					{end}
 				</nav>
 			</div>
 		</div>
