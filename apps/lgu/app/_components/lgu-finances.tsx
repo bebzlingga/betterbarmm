@@ -88,14 +88,14 @@ function YearTable({ years, lines }: { years: string[]; lines: [string, (year: s
 						<tr key={label} className='group/row border-t border-[var(--rule-soft)] transition-colors hover:bg-[var(--paper-2)]'>
 							<th
 								scope='row'
-								className={`sticky left-0 z-[1] w-[9rem] min-w-[9rem] bg-[var(--paper)] py-2.5 transition-colors group-hover/row:bg-[var(--paper-2)] pr-4 text-left font-normal leading-snug sm:w-auto ${strong ? 'font-semibold text-[var(--ink)]' : 'text-[var(--ink-2)]'}`}
+								className={`sticky left-0 z-[1] w-[9rem] min-w-[9rem] bg-[var(--paper)] py-3.5 transition-colors group-hover/row:bg-[var(--paper-2)] pr-4 text-left font-normal leading-snug sm:w-auto ${strong ? 'font-semibold text-[var(--ink)]' : 'text-[var(--ink-2)]'}`}
 							>
 								{label}
 							</th>
 							{years.map((year) => (
 								<td
 									key={year}
-									className={`num py-2.5 pl-3 text-right ${strong ? 'font-semibold text-[var(--ink)]' : 'text-[var(--ink-2)]'}`}
+									className={`num py-3.5 pl-3 text-right ${strong ? 'font-semibold text-[var(--ink)]' : 'text-[var(--ink-2)]'}`}
 								>
 									{cell(year)}
 								</td>
@@ -313,7 +313,7 @@ export function LguFinances({
 					{certificates.length ? (
 						<ul className='mt-4'>
 							{certificates.map((c) => (
-								<li key={c.control} className='grid gap-x-6 border-b border-[var(--rule-soft)] py-3 transition-colors hover:bg-[var(--paper-2)] md:grid-cols-[9rem_minmax(0,1fr)_8rem] md:items-baseline'>
+								<li key={c.control} className='grid gap-x-6 border-b border-[var(--rule-soft)] py-4 transition-colors hover:bg-[var(--paper-2)] md:grid-cols-[9rem_minmax(0,1fr)_8rem] md:items-baseline'>
 									<span className='num text-[12.5px] text-[var(--ink-3)]'>{c.date ?? '—'}</span>
 									<span className='text-[13px] leading-6 text-[var(--ink-2)]'>
 										<span className='font-semibold text-[var(--ink)]'>Cleared to borrow{c.barangay ? ` (Barangay ${c.barangay})` : ''}.</span>{' '}
@@ -340,7 +340,7 @@ export function LguFinances({
 					{releases.length ? (
 						<ul className='mt-4'>
 							{releases.map((release) => (
-								<li key={release.number} className='grid gap-x-6 border-b border-[var(--rule-soft)] py-3 transition-colors hover:bg-[var(--paper-2)] md:grid-cols-[9rem_minmax(0,1fr)_8rem] md:items-baseline'>
+								<li key={release.number} className='grid gap-x-6 border-b border-[var(--rule-soft)] py-4 transition-colors hover:bg-[var(--paper-2)] md:grid-cols-[9rem_minmax(0,1fr)_8rem] md:items-baseline'>
 									<span className='num text-[12.5px] text-[var(--ink-3)]'>
 										{release.kind} · {release.date}
 									</span>
