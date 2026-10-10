@@ -37,7 +37,7 @@ export default function SpendingPage() {
 				breadcrumb={<LguBreadcrumb trail={[]}>Spending</LguBreadcrumb>}
 				kicker={`FY ${YEARS[0]} to FY ${YEARS[YEARS.length - 1]}`}
 				name={`${pesoCell(grand)}, across eight areas`}
-				note='Amounts as each Act appropriated them. Areas are reconciled to their present names — the region was redrawn inside this span, and every spelling the Acts used is kept under the row.'
+				note='How much each year’s Bangsamoro budget set aside for construction in each area. This is the region’s money, not the area’s own budget. Some provinces were split or renamed in these years, so each row uses today’s name, with the older names listed under it.'
 			/>
 
 			<section className='bb-container bb-section'>
