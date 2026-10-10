@@ -5,7 +5,7 @@ import { LguMasthead } from '../_components/lgu-parts'
 import { StatsExplorer, type StatsData, type StatsUnit } from '../_components/stats-explorer'
 
 export const metadata: Metadata = {
-	title: 'LGU stats — Local government directory',
+	title: 'LGU finances — Local government directory',
 	description:
 		'Every BARMM province, city and municipality ranked on what it collects and spends: local taxes, revenue per person, the NTA and how much of its income it is, spending, capital outlay and borrowing, FY 2016 to 2025.',
 }

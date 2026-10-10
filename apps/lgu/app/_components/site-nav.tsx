@@ -9,13 +9,17 @@ import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import { ThemeToggle } from './theme-toggle'
 
-/* The two explainers. Kept a pair rather than two top-level items: one is what
-   the rungs do and the other is which code says so, and a reader who wants
-   either usually wants both. */
+/* The explainers: what each level does, and how the region hands its powers
+   down to them. */
 const guides = [
 	{ href: '/how-it-works', label: 'What each level does' },
 	{ href: '/devolution', label: 'Devolution' },
-	{ href: '/spending', label: 'What the region spends where' },
+] as const
+
+/* The money: each unit's own books, and what the region's budget puts where. */
+const finances = [
+	{ href: '/stats', label: 'LGU finances' },
+	{ href: '/spending', label: 'Regional budget' },
 ] as const
 
 /**
@@ -107,6 +111,7 @@ export function SiteNav() {
 	const isProvinceActive =
 		pathname === '/' || lguProvinces.some((province) => pathname.startsWith(`/${province.slug}`))
 	const isGuideActive = guides.some((guide) => pathname.startsWith(guide.href))
+	const isFinanceActive = finances.some((item) => pathname.startsWith(item.href))
 
 	return (
 		<>
@@ -188,9 +193,15 @@ export function SiteNav() {
 							}
 						</Menu>
 
-						<Link href='/stats' data-active={pathname.startsWith('/stats')} className='nav-item'>
-							Finances
-						</Link>
+						<Menu label='Finances' active={isFinanceActive} width='w-[15rem]'>
+							{(close) =>
+								finances.map((item) => (
+									<Link key={item.href} href={item.href} onClick={close} className='nav-menu-item'>
+										<span className='whitespace-nowrap'>{item.label}</span>
+									</Link>
+								))
+							}
+						</Menu>
 
 						<Link href='/governance-code' data-active={pathname.startsWith('/governance-code')} className='nav-item'>
 							Governance Code
@@ -294,9 +305,16 @@ export function SiteNav() {
 
 							<p className='bb-label mt-7'>Finances</p>
 							<div className='mt-3 grid'>
-								<Link href='/stats' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5'>
-									Every LGU ranked by its finances
-								</Link>
+								{finances.map((item) => (
+									<Link
+										key={item.href}
+										href={item.href}
+										onClick={closeMenu}
+										className='border-b border-[var(--rule-soft)] py-2.5'
+									>
+										{item.label}
+									</Link>
+								))}
 							</div>
 
 							<p className='bb-label mt-7'>Governance Code</p>
