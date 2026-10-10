@@ -68,7 +68,7 @@ function Select({
 					))}
 				</select>
 				<CaretDownIcon
-					size={14}
+					size={11}
 					weight='bold'
 					aria-hidden='true'
 					className='pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[var(--ink-3)]'
