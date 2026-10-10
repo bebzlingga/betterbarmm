@@ -1,7 +1,5 @@
 import { Counter, LineReveal, Rise } from '@betterbarmm/editorial'
 import {
-	formatDate,
-	formatNumber,
 	lguAreas,
 	lguCounts,
 	lguData,
@@ -9,7 +7,7 @@ import {
 	areaHref,
 	type LguProvince,
 } from '@betterbarmm/lgu-data'
-import { barangayOfficials, rosterCoverage } from '@betterbarmm/lgu-data/barangay-officials'
+import { rosterCoverage } from '@betterbarmm/lgu-data/barangay-officials'
 import { finances, row } from '@betterbarmm/lgu-data/fiscal'
 import { RegionMap } from './_components/region-map'
 import { DataTable } from './_components/data-table'
@@ -71,10 +69,6 @@ export default function LguHomePage() {
 	const ntaYear = finances.years.at(-1)!
 	const ntaTotal = Object.keys(finances.units).reduce(
 		(sum, key) => sum + Number(row(finances, key, ntaYear)?.nta ?? 0),
-		0,
-	)
-	const cities = lguProvinces.reduce(
-		(count, province) => count + province.municipalities.filter((unit) => unit.isCity).length,
 		0,
 	)
 
@@ -169,10 +163,7 @@ export default function LguHomePage() {
 						{lguData.totals.provinces} provinces, a city and a special area
 					</h2>
 					<p className='text-[15px] leading-7 text-[var(--ink-2)]'>
-						Each opens onto its cities and municipalities, and each of those onto its barangays and their
-						officials. {cities} of the {lguData.totals.lgus} units are cities. DILG&rsquo;s barangay directory
-						names a captain for {formatNumber(regionRoster.listed)} of the {formatNumber(regionRoster.total)}{' '}
-						barangays, as of {formatDate(barangayOfficials.capturedAt)}.
+						Open an area to see its cities, municipalities, barangays and officials.
 					</p>
 				</div>
 
