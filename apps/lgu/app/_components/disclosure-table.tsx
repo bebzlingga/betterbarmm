@@ -128,7 +128,10 @@ export function DisclosureTable({
 													</span>
 												</a>
 											) : (
-												<span className='text-[var(--ink-display)]' aria-label='Not on the portal'>
+												<span
+													className='inline-flex size-7 items-center justify-center text-[var(--ink-display)]'
+													aria-label='Not on the portal'
+												>
 													—
 												</span>
 											)}
