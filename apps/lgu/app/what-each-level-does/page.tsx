@@ -334,7 +334,7 @@ export default function HowItWorksPage() {
 				name='What each level of government does, and how it is paid for.'
 			/>
 
-			<DocLayout toc={TOC}>
+			<DocLayout>
 			{/* ---- The chain ---- */}
 			<Section id='money' lead='None of them reports to the one above it. What passes downward is money, not orders.'>
 
