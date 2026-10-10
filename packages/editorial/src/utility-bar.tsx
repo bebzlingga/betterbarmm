@@ -47,13 +47,16 @@ export function UtilityBar({
 	/** Which workspace this is, so the switch can mark it. */
 	current,
 	links = ESTATE_LINKS,
+	className = '',
 }: {
 	base?: string
 	current?: WorkspaceKey
 	links?: UtilityLink[]
+	/** A ground for the strip, e.g. `bb-ground` for the near-black band. */
+	className?: string
 }) {
 	return (
-		<div className='utility-bar'>
+		<div className={`utility-bar ${className}`}>
 			<div className='mx-auto flex max-w-[88rem] items-center justify-between gap-4 px-6 lg:px-8'>
 				{/* A dropdown rather than a row: it stays one control however many
 				    workspaces there are. Native `<details>`, so it opens without
