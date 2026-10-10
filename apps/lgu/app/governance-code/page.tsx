@@ -524,7 +524,7 @@ export default function GovernanceCodePage() {
 										<span className='text-[13px]'>RA 7160 · </span>
 										{row.national}
 									</p>
-									<p className='mt-2 border-l-2 border-[var(--accent)] pl-4'>
+									<p className='mt-3 border-l-2 border-[var(--accent)] bg-[var(--paper-2)] px-5 py-4'>
 										<span className='text-[13px] text-[var(--accent)]'>BAA 49 · </span>
 										{row.bangsamoro}
 										<span className='mt-1 block text-[13px] text-[var(--ink-3)]'>{row.basis}</span>
