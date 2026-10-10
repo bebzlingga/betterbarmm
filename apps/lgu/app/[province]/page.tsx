@@ -151,7 +151,11 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 					</div>
 				</Rise>
 
-				<div className='mt-12 grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:gap-16'>
+			</LguMasthead>
+
+			{/* The province against the region, on a light band under the masthead. */}
+			<div className='bg-[var(--paper-2)]'>
+				<div className='bb-container grid gap-8 py-8 lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-16'>
 					{regionShare != null ? (
 						<Rise delay={0.1} distance={14}>
 							<ShareBar
@@ -198,7 +202,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 						</div>
 					</Rise>
 				</div>
-			</LguMasthead>
+			</div>
 
 			{/* The towns first, because finding your own is why most people open a
 			    province page; the officials and the money are a tab away rather than
