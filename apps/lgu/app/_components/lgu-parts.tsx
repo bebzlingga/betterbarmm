@@ -127,7 +127,7 @@ export function LguMasthead({
 
 					{note ? (
 						<Rise delay={0.25} distance={14}>
-							<p className={`mt-7 text-[15px] leading-8 text-[var(--ink-2)] ${noteBeside ? 'lg:mt-0 lg:text-right' : 'lg:max-w-[75%]'}`}>
+							<p className={`mt-7 text-[15px] leading-8 text-[var(--ink-2)] ${noteBeside ? 'lg:mt-0 lg:text-right lg:leading-6' : 'lg:max-w-[75%]'}`}>
 								{note}
 							</p>
 						</Rise>
