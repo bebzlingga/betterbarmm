@@ -1,9 +1,9 @@
 import { DocToc, type TocItem } from './doc-toc'
 
 /**
- * A page read like documentation: its summary in a light panel across the
- * top, then one column of text with "On this page" beside it on a wide
- * screen, folded above it on a phone.
+ * A page read like documentation: its summary, if it has one, in a light
+ * panel across the top, then one column of text with "On this page" beside
+ * it on a wide screen, folded above it on a phone.
  */
 export function DocLayout({
 	toc,
@@ -12,16 +12,18 @@ export function DocLayout({
 	children,
 }: {
 	toc: TocItem[]
-	summary: React.ReactNode
+	summary?: React.ReactNode
 	/** Hold the text to a reading measure; leave it off where figures need the width. */
 	narrow?: boolean
 	children: React.ReactNode
 }) {
 	return (
 		<div className='bb-container bb-section grid gap-12 lg:grid-cols-[minmax(0,1fr)_17rem] lg:gap-16'>
-			<p className='bg-[var(--paper-2)] px-6 py-5 text-[15px] leading-7 text-[var(--ink-2)] sm:px-8 sm:py-6 lg:col-span-2'>
-				{summary}
-			</p>
+			{summary ? (
+				<p className='bg-[var(--paper-2)] px-6 py-5 text-[15px] leading-7 text-[var(--ink-2)] sm:px-8 sm:py-6 lg:col-span-2'>
+					{summary}
+				</p>
+			) : null}
 
 			<details className='border border-[var(--rule)] bg-[var(--paper-2)] px-5 py-4 lg:hidden'>
 				<summary className='cursor-pointer text-[14px] font-semibold text-[var(--ink)]'>On this page</summary>

@@ -335,10 +335,7 @@ export default function HowItWorksPage() {
 				name='Where the money starts, and what is left to decide.'
 			/>
 
-			<DocLayout
-				toc={TOC}
-				summary='National taxes to BARMM to your barangay, in three steps — the calendar the budget has to clear, how much of it the law has already spent, and then who you elect at each level and every post a unit has.'
-			>
+			<DocLayout toc={TOC}>
 			{/* ---- The chain ---- */}
 			<Section id='money' lead='None of them reports to the one above it. What passes downward is money, not orders.'>
 
