@@ -367,9 +367,9 @@ export default function DevolutionPage() {
 							<thead>
 								<tr className='border-b border-[var(--ink)] text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
 									<th className='py-3 pr-4 font-semibold'>Office</th>
-									<th className='px-3 py-3 font-semibold'>Province</th>
-									<th className='px-3 py-3 font-semibold'>City</th>
-									<th className='px-3 py-3 font-semibold'>Municipality</th>
+									<th className='px-3 py-3 text-center font-semibold'>Province</th>
+									<th className='px-3 py-3 text-center font-semibold'>City</th>
+									<th className='px-3 py-3 text-center font-semibold'>Municipality</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -385,7 +385,7 @@ export default function DevolutionPage() {
 										{([row.province, row.city, row.municipality] as Need[]).map((need, i) => (
 											<td
 												key={i}
-												className={`px-3 py-3 ${need === 'R' ? 'text-[var(--ink)]' : 'text-[var(--ink-3)]'}`}
+												className={`px-3 py-3 text-center ${need === 'R' ? 'text-[var(--ink)]' : 'text-[var(--ink-3)]'}`}
 											>
 												{NEED[need]}
 											</td>
