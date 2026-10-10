@@ -138,7 +138,16 @@ function yearsOf(table: Table, key: string): string[] {
 	return Object.keys(table.units[key] ?? {}).sort()
 }
 
-export function LguFinances({ unitKey, name }: { unitKey: string; name: string }) {
+export function LguFinances({
+	unitKey,
+	name,
+	recognition = true,
+}: {
+	unitKey: string
+	name: string
+	/** Off where the page shows `LguRecognition` elsewhere — a town's Overview. */
+	recognition?: boolean
+}) {
 	const years = yearsOf(finances, unitKey)
 	const latest = years.at(-1)
 	const f = latest ? row(finances, unitKey, latest)! : null
@@ -147,15 +156,12 @@ export function LguFinances({ unitKey, name }: { unitKey: string; name: string }
 	const sefYears = yearsOf(funds.educationFund, unitKey)
 	const classes = incomeClass.units[unitKey]
 	const seals = sglg.units[unitKey] ?? {}
-	const ranks = cmci.units[unitKey] ?? {}
 	const won = awards.units[unitKey] ?? []
 	const certificates = funds.borrowing.units[unitKey] ?? []
 	const bids = procurement.units[unitKey] ?? {}
 	const releases = Object.entries(fundReleases.units[unitKey] ?? {}).flatMap(([year, list]) =>
 		list.map((release) => ({ year, ...release })),
 	)
-	const audits = coaAudits.units[unitKey] ?? {}
-	const awardName = (id: string) => awards.awards.find((award) => award.id === id)
 
 	if (!f && !classes && !Object.keys(seals).length && !won.length) {
 		return (
@@ -168,7 +174,6 @@ export function LguFinances({ unitKey, name }: { unitKey: string; name: string }
 	}
 
 	const r = (year: string) => row(finances, unitKey, year)!
-	const latestCmci = Object.keys(ranks).sort().at(-1)
 
 	return (
 		<div>
@@ -353,76 +358,95 @@ export function LguFinances({ unitKey, name }: { unitKey: string; name: string }
 				</Block>
 			) : null}
 
-			{classes || Object.keys(seals).length || latestCmci || won.length || Object.keys(audits).length ? (
-				<Block
-					title='Classification, audits and recognition'
-					note='Seal and award lists name winners only: an LGU missing from one was not necessarily assessed, and did not necessarily fail.'
-				>
-					<dl className='mt-2'>
-						{classes?.['2024'] ? (
-							<Fact label='Income class (2024 reclassification)' href={classes['2024'].href}>
-								{classes['2024'].class}
-								{classes['2008'] ? <span className='text-[var(--ink-3)]'> · was {classes['2008'].class}</span> : null}
-							</Fact>
-						) : null}
-						<Fact label='Seal of Good Local Governance' href={Object.values(seals)[0]?.href}>
-							{Object.keys(seals).length ? Object.keys(seals).join(', ') : 'Not on the 2022–2024 passer lists'}
-						</Fact>
-						{latestCmci ? (
-							<Fact label={`DTI competitiveness index, ${latestCmci}`} href={ranks[latestCmci]!.href}>
-								{ranks[latestCmci]!.overall.toFixed(2)}
-								{ranks[latestCmci]!.rank ? (
-									<span className='text-[var(--ink-3)]'>
-										{' '}
-										· #{ranks[latestCmci]!.rank} of {ranks[latestCmci]!.rankCategory?.toLowerCase()}
-									</span>
-								) : null}
-							</Fact>
-						) : null}
-						{Object.entries(audits).map(([year, audit]) => (
-							<Fact key={year} label={`COA audit opinion, FY ${year}`} href={audit.href}>
-								{audit.opinion[0]!.toUpperCase() + audit.opinion.slice(1)}
-								<span className='text-[var(--ink-3)]'> · {audit.observations} observations</span>
-							</Fact>
-						))}
-					</dl>
-
-					{won.length ? (
-						<ul className='mt-6'>
-							{won
-								.slice()
-								.sort((a, b) => b.year - a.year)
-								.map((award, i) => {
-									const meta = awardName(award.award)
-									return (
-										<li key={i} className='flex items-start justify-between gap-4 border-b border-[var(--rule-soft)] py-3'>
-											<a href={award.href} target='_blank' rel='noreferrer' className='group min-w-0'>
-												<span className='block text-[13.5px] font-medium text-[var(--ink)] group-hover:text-[var(--accent)]'>
-													{meta?.name ?? award.award}
-												</span>
-												<span className='mt-0.5 block text-[12px] leading-5 text-[var(--ink-3)]'>
-													{[
-														meta?.agency,
-														meta?.scope === 'regional' ? 'regional' : null,
-														award.barangay ? `Barangay ${award.barangay}` : null,
-														award.level,
-														award.category,
-														award.rank ? `rank ${award.rank}` : null,
-													]
-														.filter(Boolean)
-														.join(' · ')}
-												</span>
-											</a>
-											<span className='num shrink-0 text-[12.5px] font-semibold text-[var(--brass)]'>{award.year}</span>
-										</li>
-									)
-								})}
-						</ul>
-					) : null}
-				</Block>
-			) : null}
+			{recognition ? <LguRecognition unitKey={unitKey} /> : null}
 			</div>
 		</div>
+	)
+}
+
+/**
+ * How a unit is classed, audited and recognised: income class, the SGLG,
+ * DTI's competitiveness index, COA opinions and other awards. About the unit
+ * rather than its money, so a town shows it on its Overview.
+ */
+export function LguRecognition({ unitKey }: { unitKey: string }) {
+	const classes = incomeClass.units[unitKey]
+	const seals = sglg.units[unitKey] ?? {}
+	const ranks = cmci.units[unitKey] ?? {}
+	const won = awards.units[unitKey] ?? []
+	const audits = coaAudits.units[unitKey] ?? {}
+	const awardName = (id: string) => awards.awards.find((award) => award.id === id)
+	const latestCmci = Object.keys(ranks).sort().at(-1)
+
+	if (!classes && !Object.keys(seals).length && !latestCmci && !won.length && !Object.keys(audits).length) return null
+
+	return (
+		<Block
+			title='Classification, audits and recognition'
+			note='Seal and award lists name winners only: an LGU missing from one was not necessarily assessed, and did not necessarily fail.'
+		>
+			<dl className='mt-2'>
+				{classes?.['2024'] ? (
+					<Fact label='Income class (2024 reclassification)' href={classes['2024'].href}>
+						{classes['2024'].class}
+						{classes['2008'] ? <span className='text-[var(--ink-3)]'> · was {classes['2008'].class}</span> : null}
+					</Fact>
+				) : null}
+				<Fact label='Seal of Good Local Governance' href={Object.values(seals)[0]?.href}>
+					{Object.keys(seals).length ? Object.keys(seals).join(', ') : 'Not on the 2022–2024 passer lists'}
+				</Fact>
+				{latestCmci ? (
+					<Fact label={`DTI competitiveness index, ${latestCmci}`} href={ranks[latestCmci]!.href}>
+						{ranks[latestCmci]!.overall.toFixed(2)}
+						{ranks[latestCmci]!.rank ? (
+							<span className='text-[var(--ink-3)]'>
+								{' '}
+								· #{ranks[latestCmci]!.rank} of {ranks[latestCmci]!.rankCategory?.toLowerCase()}
+							</span>
+						) : null}
+					</Fact>
+				) : null}
+				{Object.entries(audits).map(([year, audit]) => (
+					<Fact key={year} label={`COA audit opinion, FY ${year}`} href={audit.href}>
+						{audit.opinion[0]!.toUpperCase() + audit.opinion.slice(1)}
+						<span className='text-[var(--ink-3)]'> · {audit.observations} observations</span>
+					</Fact>
+				))}
+			</dl>
+
+			{won.length ? (
+				<ul className='mt-6'>
+					{won
+						.slice()
+						.sort((a, b) => b.year - a.year)
+						.map((award, i) => {
+							const meta = awardName(award.award)
+							return (
+								<li key={i} className='flex items-start justify-between gap-4 border-b border-[var(--rule-soft)] py-3'>
+									<a href={award.href} target='_blank' rel='noreferrer' className='group min-w-0'>
+										<span className='block text-[13.5px] font-medium text-[var(--ink)] group-hover:text-[var(--accent)]'>
+											{meta?.name ?? award.award}
+										</span>
+										<span className='mt-0.5 block text-[12px] leading-5 text-[var(--ink-3)]'>
+											{[
+												meta?.agency,
+												meta?.scope === 'regional' ? 'regional' : null,
+												award.barangay ? `Barangay ${award.barangay}` : null,
+												award.level,
+												award.category,
+												award.rank ? `rank ${award.rank}` : null,
+											]
+												.filter(Boolean)
+												.join(' · ')}
+										</span>
+									</a>
+									<span className='num shrink-0 text-[12.5px] font-semibold text-[var(--brass)]'>{award.year}</span>
+								</li>
+							)
+						})}
+				</ul>
+			) : null}
+		</Block>
 	)
 }
 

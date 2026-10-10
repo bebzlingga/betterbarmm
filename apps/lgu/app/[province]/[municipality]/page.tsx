@@ -21,7 +21,7 @@ import {
 	LguStat,
 } from '../../_components/lgu-parts'
 import { lguData, personName } from '@betterbarmm/lgu-data'
-import { finances, incomeClass, row, sglg } from '@betterbarmm/lgu-data/fiscal'
+import { finances, row } from '@betterbarmm/lgu-data/fiscal'
 import { provinceHistory, tookOffice, unitHistory } from '@betterbarmm/lgu-data/history'
 import { barangayOfficials, rosterCoverage, unitRosters } from '@betterbarmm/lgu-data/barangay-officials'
 import { BarangayList } from '../../_components/barangay-list'
@@ -35,7 +35,7 @@ import {
 	UnitRollPanel,
 } from '../../_components/lgu-officials'
 import { LguTabs } from '../../_components/lgu-tabs'
-import { LguFinances } from '../../_components/lgu-finances'
+import { LguFinances, LguRecognition } from '../../_components/lgu-finances'
 import { LguTermPicker } from '../../_components/lgu-term-picker'
 export function generateStaticParams() {
 	return allUnitParams()
@@ -103,15 +103,11 @@ function AtAGlance({ unit, province }: { unit: LguUnit; province: LguProvince })
 	const vice = canvass?.viceMayor?.ranked[0]?.name
 	const ntaYear = finances.years.at(-1)!
 	const nta = row(finances, key, ntaYear)?.nta as number | null | undefined
-	const klass = incomeClass.units[key]?.['2024']?.class
-	const seals = Object.keys(sglg.units[key] ?? {})
 
 	const rows: [string, string, string][] = [
 		['Mayor', mayor ? personName(mayor) : 'No canvass on record', '#officials'],
 		['Vice-mayor', vice ? personName(vice) : '—', '#officials'],
-		['Income class', klass ? `${klass} (2024 reclassification)` : '—', '#finances'],
 		[`NTA, FY ${ntaYear}`, nta ? (nta >= 1e9 ? `₱${(nta / 1e9).toFixed(2)} billion` : `₱${(nta / 1e6).toFixed(1)} million`) : '—', '#finances'],
-		['Seal of Good Local Governance', seals.length ? seals.join(', ') : 'Not on the 2022–2024 lists', '#finances'],
 	]
 
 	return (
@@ -154,6 +150,7 @@ function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) 
 	]
 
 	return (
+		<div>
 		<div className='grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16'>
 			<div>
 				<p className='text-[1.15rem] font-medium leading-[1.55] tracking-[-0.01em] text-[var(--ink)] sm:text-[1.35rem]'>
@@ -226,6 +223,13 @@ function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) 
 					Local Governance Code — the same for every {unitKind(unit)}. <span className='font-semibold text-[var(--ink)] underline underline-offset-4'>See How it works</span>
 				</a>
 			</div>
+		</div>
+
+		{/* How the town is classed, audited and recognised — about the unit, not
+		    its money, so here rather than under Finances (user decision). */}
+		<div className='mt-14'>
+			<LguRecognition unitKey={`${province.slug}/${unit.slug}`} />
+		</div>
 		</div>
 	)
 }
@@ -527,7 +531,7 @@ export default async function UnitPage({
 						{
 							id: 'finances',
 							label: 'Finances',
-							panel: <LguFinances unitKey={`${province.slug}/${unit.slug}`} name={unit.name} />,
+							panel: <LguFinances unitKey={`${province.slug}/${unit.slug}`} name={unit.name} recognition={false} />,
 						},
 					]}
 				/>
