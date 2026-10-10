@@ -127,7 +127,7 @@ export function SiteNav() {
 			data-solid={past}
 			className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'
 		>
-			<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
+			<div className='mx-auto max-w-[88rem] px-8 sm:px-6 lg:px-8'>
 				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 xl:grid-cols-[auto_minmax(0,1fr)_auto] xl:gap-8'>
 					<div className='flex min-w-0 items-center gap-3'>
 						<a href='https://betterbarmm.com' onClick={closeMenu} className='w-fit shrink-0'>
@@ -256,7 +256,7 @@ export function SiteNav() {
 						<nav
 							id='lgu-mobile-menu'
 							aria-label='Mobile navigation'
-							className='mx-auto max-w-[88rem] px-6 py-6 text-sm text-[var(--ink-2)] lg:px-8'
+							className='mx-auto max-w-[88rem] px-8 py-6 sm:px-6 text-sm text-[var(--ink-2)] lg:px-8'
 						>
 							<p className='bb-label'>LGU profiles</p>
 							<div className='mt-3 grid'>
