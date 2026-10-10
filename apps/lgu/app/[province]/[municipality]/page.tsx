@@ -145,14 +145,14 @@ function NtaChart({ unitKey }: { unitKey: string }) {
 		value >= 1e9 ? `₱${(value / 1e9).toFixed(2)}B` : `₱${(value / 1e6).toFixed(1)}M`
 
 	return (
-		<figure className='m-0 mt-14 border-t border-[var(--ink)] pt-4'>
+		<figure className='m-0 mt-10 border-t border-[var(--rule)] pt-4'>
 			<figcaption className='flex flex-wrap items-baseline justify-between gap-2'>
 				<span className='text-[14px] font-semibold text-[var(--ink)]'>National Tax Allotment, by year</span>
 				<span className='text-[12.5px] text-[var(--ink-3)]'>
 					Reported to BLGF. FY {finances.years.at(-1)} is preliminary.
 				</span>
 			</figcaption>
-			<div className='mt-8 grid h-56 grid-cols-6 items-end gap-2 sm:gap-4'>
+			<div className='mt-6 grid h-44 grid-cols-6 items-end gap-2 sm:gap-4'>
 				{years.map(({ year, nta }) => (
 					// The label rides on top of its bar; the bar's height is a share of
 					// the track under the label row, so the tallest one never overruns.
@@ -280,8 +280,6 @@ function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) 
 				</a>
 			</div>
 		</div>
-
-		<NtaChart unitKey={`${province.slug}/${unit.slug}`} />
 
 		{/* How the town is classed, audited and recognised — about the unit, not
 		    its money, so here rather than under Finances (user decision). */}
@@ -558,7 +556,9 @@ export default async function UnitPage({
 					.filter(Boolean)
 					.join(' · ')}
 				name={unit.name}
-			/>
+			>
+				<NtaChart unitKey={`${province.slug}/${unit.slug}`} />
+			</LguMasthead>
 
 			<section className='bb-container bb-section-bottom pt-12'>
 				<LguTabs
