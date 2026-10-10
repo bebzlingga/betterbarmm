@@ -89,7 +89,7 @@ export function DisclosureTable({
 							<tr key={doc.id} className='border-t border-[var(--rule-soft)]'>
 								<th
 									scope='row'
-									className='sticky left-0 z-[1] bg-[var(--paper)] py-2.5 pr-4 text-left font-normal leading-6 text-[var(--ink)]'
+									className='sticky left-0 z-[1] bg-[var(--paper)] py-3.5 pr-4 text-left font-normal leading-6 text-[var(--ink)]'
 								>
 									{portal ? (
 										<a
@@ -113,7 +113,7 @@ export function DisclosureTable({
 									const cell = cells[`${doc.id}:${c.key}`]
 									if (!cell && !applies(doc.id, c.key)) return <td key={c.key} />
 									return (
-										<td key={c.key} className='py-2.5 text-center'>
+										<td key={c.key} className='py-3.5 text-center'>
 											{cell ? (
 												<a
 													href={cell.href}
