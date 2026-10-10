@@ -367,6 +367,12 @@ export default function GovernanceCodePage() {
 			{/* Read like documentation: one column of text, and "On this page"
 			    beside it on a wide screen, folded above it on a phone. */}
 			<div className='bb-container bb-section grid gap-12 lg:grid-cols-[minmax(0,1fr)_17rem] lg:gap-16'>
+				<p className='bg-[var(--paper-2)] px-6 py-5 text-[15px] leading-7 text-[var(--ink-2)] sm:px-8 sm:py-6 lg:col-span-2'>
+					Bangsamoro Autonomy Act 49, enacted in September 2023, is the code every province, city, municipality and
+					barangay in BARMM runs on. It creates their offices, fixes their terms and pay, sets how they raise and share
+					money, and devolves the region’s powers to them. The national Local Government Code applies only where it is
+					silent.
+				</p>
 				<details className='border border-[var(--rule)] bg-[var(--paper-2)] px-5 py-4 lg:hidden'>
 					<summary className='cursor-pointer text-[14px] font-semibold text-[var(--ink)]'>On this page</summary>
 					<ol className='mt-3'>
@@ -382,13 +388,7 @@ export default function GovernanceCodePage() {
 
 				<article className='min-w-0 max-w-[48rem]'>
 					<Section id='introduction'>
-						<p className='mt-6 bg-[var(--paper-2)] px-6 py-5 text-[15px] leading-7 text-[var(--ink-2)] sm:px-8 sm:py-6'>
-							Bangsamoro Autonomy Act 49, enacted in September 2023, is the code every province, city, municipality and
-							barangay in BARMM runs on. It creates their offices, fixes their terms and pay, sets how they raise and share
-							money, and devolves the region’s powers to them. The national Local Government Code applies only where it is
-							silent.
-						</p>
-						<p className={`mt-6 ${P}`}>
+						<p className={`mt-5 ${P}`}>
 							Every province, city, municipality and barangay in the Philippines is governed by a local government
 							code: the law that creates its offices, sets who may hold them and for how long, decides what it may tax
 							and what it must spend on, and spells out what it owes the people who live there. For the rest of the

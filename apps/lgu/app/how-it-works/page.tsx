@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
-import { Rise, SectionHead } from '@betterbarmm/editorial'
+import { Rise } from '@betterbarmm/editorial'
 import { LOCAL_CHARGES, SERVICES, formatNumber, lguData } from '@betterbarmm/lgu-data'
+import { DocToc, type TocItem } from '../_components/doc-toc'
 import { LguBreadcrumb, LguMasthead } from '../_components/lgu-parts'
 import { LguTabs } from '../_components/lgu-tabs'
 import { Ladder, Lookups, Offices, TwoBallots } from '../_components/offices-guide'
@@ -298,6 +299,32 @@ function LevelPanel({ level }: { level: Level }) {
 	)
 }
 
+/** The page's sections, top to bottom — the headings and "On this page". */
+const TOC: TocItem[] = [
+	{ id: 'money', label: 'Where the money comes from', depth: 1 },
+	{ id: 'calendar', label: 'The budget calendar', depth: 1 },
+	{ id: 'distribution', label: 'What each level takes in', depth: 1 },
+	{ id: 'services', label: 'Services and charges', depth: 1 },
+	{ id: 'charges', label: 'And what you pay it', depth: 2 },
+	{ id: 'ladder', label: 'Who you elect', depth: 1 },
+	{ id: 'offices', label: 'Every post', depth: 1 },
+	{ id: 'where-to-look', label: 'Where to look', depth: 1 },
+]
+
+const H2 = 'scroll-mt-32 border-t border-[var(--rule)] pt-12 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
+
+function Section({ id, lead, children }: { id: string; lead: string; children: React.ReactNode }) {
+	return (
+		<section className='mt-16 first:mt-0 [&:first-child>h2]:border-t-0 [&:first-child>h2]:pt-0'>
+			<h2 id={id} className={H2}>
+				{TOC.find((item) => item.id === id)!.label}
+			</h2>
+			<p className='mt-5 text-[15.5px] leading-8 text-[var(--ink-2)]'>{lead}</p>
+			{children}
+		</section>
+	)
+}
+
 export default function HowItWorksPage() {
 	return (
 		<>
@@ -305,44 +332,36 @@ export default function HowItWorksPage() {
 				breadcrumb={<LguBreadcrumb trail={[]}>How it works</LguBreadcrumb>}
 				kicker='The guide · Bangsamoro'
 				name='Where the money starts, and what is left to decide.'
-				note='National taxes to BARMM to your barangay, in three steps — the calendar the budget has to clear, how much of it the law has already spent, and then who you elect at each level and every post a unit has.'
 			/>
 
-			{/* A page of seven long sections needs a way to jump between them. */}
-			<nav
-				aria-label='On this page'
-				className='sticky top-[var(--sticky-top)] z-20 border-b border-[var(--ink)] bg-[var(--paper)] transition-[top] duration-300'
-			>
-				<div className='bb-container flex gap-1 overflow-x-auto [mask-image:linear-gradient(to_right,#000_85%,transparent)] [scrollbar-width:none] lg:[mask-image:none] [&::-webkit-scrollbar]:hidden'>
-					{[
-						['#money', 'Where the money comes from'],
-						['#calendar', 'The budget calendar'],
-						['#distribution', 'What each level takes in'],
-						['#services', 'Services and charges'],
-						['#ladder', 'Who you elect'],
-						['#offices', 'Every post'],
-						['#where-to-look', 'Where to look'],
-					].map(([href, label]) => (
-						<a key={href} href={href} className='lgu-tab whitespace-nowrap'>
-							{label}
-						</a>
-					))}
-				</div>
-			</nav>
+			{/* Read like documentation: one column, and "On this page" beside it
+			    on a wide screen, folded above it on a phone. */}
+			<div className='bb-container bb-section grid gap-12 lg:grid-cols-[minmax(0,1fr)_17rem] lg:gap-16'>
+				<p className='bg-[var(--paper-2)] px-6 py-5 text-[15px] leading-7 text-[var(--ink-2)] sm:px-8 sm:py-6 lg:col-span-2'>
+					National taxes to BARMM to your barangay, in three steps — the calendar the budget has to clear, how much of
+					it the law has already spent, and then who you elect at each level and every post a unit has.
+				</p>
+				<details className='border border-[var(--rule)] bg-[var(--paper-2)] px-5 py-4 lg:hidden'>
+					<summary className='cursor-pointer text-[14px] font-semibold text-[var(--ink)]'>On this page</summary>
+					<ol className='mt-3'>
+						{TOC.map((item) => (
+							<li key={item.id}>
+								<a href={`#${item.id}`} className={`block py-1 text-[13.5px] text-[var(--ink-2)] ${item.depth === 2 ? 'pl-4' : 'font-medium'}`}>
+									{item.label}
+								</a>
+							</li>
+						))}
+					</ol>
+				</details>
 
+				<article className='min-w-0'>
 			{/* ---- The chain ---- */}
-			<section id='money' className='bb-container bb-section scroll-mt-32'>
-				<SectionHead
-					eyebrow='The chain'
-					size='sm'
-					title='Three governments, one flow of money'
-					lead='None of them reports to the one above it. What passes downward is money, not orders.'
-				/>
+			<Section id='money' lead='None of them reports to the one above it. What passes downward is money, not orders.'>
 
 				<ol className='mt-12'>
 					{CHAIN.map((stage, index) => (
 						<li key={stage.tier} className='relative'>
-							<div className='grid gap-x-10 gap-y-4 border-t border-[var(--brass-line)] pt-6 lg:grid-cols-[minmax(0,13rem)_minmax(0,11rem)_minmax(0,1fr)]'>
+							<div className='grid gap-x-10 gap-y-4 border-t border-[var(--brass-line)] pt-6 xl:grid-cols-[minmax(0,13rem)_minmax(0,11rem)_minmax(0,1fr)]'>
 								<div>
 									<p className='num font-mono text-[11px] font-semibold text-[var(--brass)]'>
 										{String(index + 1).padStart(2, '0')}
@@ -382,18 +401,12 @@ export default function HowItWorksPage() {
 						</li>
 					))}
 				</ol>
-			</section>
+			</Section>
 
 			{/* ---- The calendar ---- */}
-			<section id='calendar' className='bb-container bb-section scroll-mt-32'>
-				<SectionHead
-					eyebrow='How it is approved'
-					size='sm'
-					title='Five dates, and one penalty for missing them'
-					lead='The same calendar at every level. A council that misses the last one stops doing anything else.'
-				/>
+			<Section id='calendar' lead='The same calendar at every level. A council that misses the last one stops doing anything else.'>
 
-				<ol className='mt-12 grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-5'>
+				<ol className='mt-12 grid gap-x-8 gap-y-8 sm:grid-cols-2 xl:grid-cols-5'>
 					{CALENDAR.map((step, index) => (
 						<li key={step.when} className='border-t-2 border-[var(--accent)] pt-4'>
 							<p className='num font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-mute)]'>
@@ -422,18 +435,12 @@ export default function HowItWorksPage() {
 						</span>
 					</p>
 				</Rise>
-			</section>
+			</Section>
 
 			{/* ---- Where it must go ---- */}
 			{/* Three panels rather than one list. The rungs do not carry the same
 			    requirements, and the flat version quietly implied they did. */}
-			<section id='distribution' className='bb-container border-t border-[var(--rule)] bb-section scroll-mt-32'>
-				<SectionHead
-					eyebrow='The distribution'
-					size='sm'
-					title='What each level takes in, and what is already spent'
-					lead='Pick a level. Bars are a share of their own base, named under each — they are not slices of one pie and must not be added up.'
-				/>
+			<Section id='distribution' lead='Pick a level. Bars are a share of their own base, named under each — they are not slices of one pie and must not be added up.'>
 
 				<div className='mt-12'>
 					<LguTabs
@@ -445,16 +452,10 @@ export default function HowItWorksPage() {
 						}))}
 					/>
 				</div>
-			</section>
+			</Section>
 
 			{/* ---- What each level owes you ---- */}
-			<section id='services' className='bb-container bb-section scroll-mt-32'>
-				<SectionHead
-					eyebrow='What it buys'
-					size='sm'
-					title='Which level owes you what'
-					lead='Almost every wasted trip to a hall is somebody at the wrong one.'
-				/>
+			<Section id='services' lead='Almost every wasted trip to a hall is somebody at the wrong one.'>
 
 				<div className='mt-12 grid gap-x-10 gap-y-12 lg:grid-cols-3'>
 					{RUNGS.map((rung) => (
@@ -490,7 +491,7 @@ export default function HowItWorksPage() {
 				{/* What a resident pays, moved here from the 108 town pages that each
 				    repeated it: the Code sets ceilings, not a town's bill. */}
 				<div className='mt-16 border-t border-[var(--rule)] pt-8'>
-					<h3 className='text-[1.4rem] font-extrabold tracking-[-0.03em] text-[var(--ink)]'>And what you pay it</h3>
+					<h3 id='charges' className='scroll-mt-32 text-[1.4rem] font-extrabold tracking-[-0.03em] text-[var(--ink)]'>And what you pay it</h3>
 					<p className='mt-3 text-[14.5px] leading-7 text-[var(--ink-2)]'>
 						The ceilings the Bangsamoro Local Governance Code and its implementing rules set on what a city
 						or municipality and its barangays may charge, with the deadlines that go with them. Each sets its
@@ -515,47 +516,36 @@ export default function HowItWorksPage() {
 						))}
 					</ul>
 				</div>
-			</section>
+			</Section>
 
 			{/* ---- The ladder ---- */}
-			<section id='ladder' className='bb-container bb-section scroll-mt-32'>
-				<SectionHead
-					eyebrow='The levels'
-					size='sm'
-					title='Every level, and who you elect to it'
-					lead='From the region down to the barangay. These are different offices on different schedules, and the Bangsamoro Parliament does not replace any of them.'
-				/>
+			<Section id='ladder' lead='From the region down to the barangay. These are different offices on different schedules, and the Bangsamoro Parliament does not replace any of them.'>
 
 				<Ladder />
 				<TwoBallots />
-			</section>
+			</Section>
 
 			{/* ---- The offices ---- */}
-			<section id='offices' className='bb-container bb-section scroll-mt-32'>
-				<SectionHead
-					eyebrow='The offices'
-					size='sm'
-					title='Every post, elected and appointed'
-					lead='Which offices a unit has is set by the Bangsamoro Local Governance Code rather than by the unit, so the structure is the same in all 108 of them — though a municipality may do without several of the appointed posts a province and a city must fill.'
-				/>
+			<Section id='offices' lead='Which offices a unit has is set by the Bangsamoro Local Governance Code rather than by the unit, so the structure is the same in all 108 of them — though a municipality may do without several of the appointed posts a province and a city must fill.'>
 
 				<Offices />
-			</section>
+			</Section>
 
 			{/* ---- Where to look ---- */}
-			<section id='where-to-look' className='bb-container bb-section scroll-mt-32'>
-				<SectionHead
-					eyebrow='Where to look'
-					size='sm'
-					title='The names this directory does not hold'
-					lead='Anyone who took office after the 2025 canvass, and the barangays DILG has no roster for, are kept by these offices.'
-				/>
+			<Section id='where-to-look' lead='Anyone who took office after the 2025 canvass, and the barangays DILG has no roster for, are kept by these offices.'>
 
 				<div className='mt-12'>
 					<Lookups />
 				</div>
-			</section>
+			</Section>
+				</article>
 
+				<aside className='hidden lg:block'>
+					<div className='sticky top-[calc(var(--sticky-top)+2rem)] max-h-[calc(100vh-var(--sticky-top)-4rem)] overflow-y-auto transition-[top] duration-300'>
+						<DocToc items={TOC} />
+					</div>
+				</aside>
+			</div>
 		</>
 	)
 }
