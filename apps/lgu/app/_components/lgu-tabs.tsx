@@ -65,7 +65,7 @@ export function LguTabs({
 			    above it). The inner one scrolls and fades, so the fade thins the
 			    tabs, not the ground under them. */}
 			<div
-				className={`-mx-6 border-b border-[var(--ink)] bg-[var(--paper)] px-6 lg:-mx-8 lg:px-8 ${
+				className={`border-b border-[var(--ink)] bg-[var(--paper)] ${
 					sticky ? 'sticky top-[var(--sticky-top)] z-20 transition-[top] duration-300' : ''
 				}`}
 			>

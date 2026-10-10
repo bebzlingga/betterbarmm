@@ -119,13 +119,13 @@
   white-space: nowrap;
   color: var(--ink-3);
   cursor: pointer;
-  transition: color 0.18s var(--ease);
+  transition: color 0.18s var(--ease), background-color 0.18s var(--ease);
 }
 
 .lgu-tab::after {
   content: "";
   position: absolute;
-  inset-inline: 0.5rem;
+  inset-inline: 0;
   bottom: -1px;
   height: 2px;
   background: var(--accent);
@@ -141,6 +141,12 @@
 
 .lgu-tab[aria-selected="true"]::after {
   transform: scaleX(1);
+}
+
+/* The open tab sits on a light ground as well as its rule, so it reads as
+   selected at a glance rather than by a 2px line alone. */
+.lgu-tab[aria-selected="true"] {
+  background: var(--paper-2);
 }
 
 .lgu-tab-badge {
