@@ -15,6 +15,7 @@ import { FinderTrigger } from './unit-finder'
 const guides = [
 	{ href: '/what-each-level-does', label: 'What each level does' },
 	{ href: '/devolution', label: 'Devolution' },
+	{ href: '/salaries', label: 'Salaries and benefits' },
 	{ href: '/governance-code', label: 'Governance Code' },
 ] as const
 
