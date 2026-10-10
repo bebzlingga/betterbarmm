@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Rise } from '@betterbarmm/editorial'
 import { LOCAL_CHARGES, SERVICES, formatNumber, lguData } from '@betterbarmm/lgu-data'
+import { finances, row } from '@betterbarmm/lgu-data/fiscal'
 import { DocLayout } from '../_components/doc-layout'
 import type { TocItem } from '../_components/doc-toc'
 import { LguMasthead } from '../_components/lgu-parts'
@@ -178,6 +179,93 @@ const RUNGS = [
 	{ level: 'Province', count: lguData.totals.provinces, groups: SERVICES.province },
 ] as const
 
+/* ------------------------------------------------------------
+   Where an LGU's money actually came from
+
+   Every province, city and municipality's reported income for the
+   latest fiscal year, summed by source from BLGF's Statements of
+   Receipts and Expenditures. Three slices because the chain above
+   names three sources; the National Tax Allotment is nearly all of it,
+   and the chart is there to make that impossible to miss.
+   ------------------------------------------------------------ */
+
+const PIE_YEAR = finances.years.at(-1)!
+
+const SOURCES = (() => {
+	const sum = (keys: string[]) =>
+		Object.keys(finances.units).reduce((total, unit) => {
+			const r = row(finances, unit, PIE_YEAR)
+			return total + keys.reduce((t, k) => t + (Number(r?.[k]) || 0), 0)
+		}, 0)
+	return [
+		{ label: 'National Tax Allotment', value: sum(['nta']), color: 'var(--accent)' },
+		{ label: 'Own taxes, fees and charges', value: sum(['localSources']), color: 'var(--brass)' },
+		{
+			label: 'Other national shares, transfers and grants',
+			value: sum(['otherNationalShares', 'interLocalTransfers', 'grants']),
+			color: 'var(--ink-mute)',
+		},
+	]
+})()
+
+const PIE_TOTAL = SOURCES.reduce((t, s) => t + s.value, 0)
+
+/* Slices as arcs of a circle of radius 1, from twelve o'clock clockwise. */
+const SLICES = SOURCES.map((source, i) => {
+	const before = SOURCES.slice(0, i).reduce((t, s) => t + s.value, 0)
+	const start = (before / PIE_TOTAL) * Math.PI * 2 - Math.PI / 2
+	const sweep = (source.value / PIE_TOTAL) * Math.PI * 2
+	const end = start + sweep
+	const d = `M0 0 L${Math.cos(start)} ${Math.sin(start)} A1 1 0 ${sweep > Math.PI ? 1 : 0} 1 ${Math.cos(end)} ${Math.sin(end)} Z`
+	return { ...source, d, share: (source.value / PIE_TOTAL) * 100 }
+})
+
+function SourcesPie() {
+	const total = PIE_TOTAL
+	const slices = SLICES
+	if (!total) return null
+	const billions = (v: number) => `₱${(v / 1e9).toFixed(1)}B`
+
+	return (
+		<figure className='m-0 mt-14 grid items-center gap-10 border-t border-[var(--brass-line)] pt-10 sm:grid-cols-[14rem_minmax(0,1fr)] sm:gap-14'>
+			<svg
+				viewBox='-1.02 -1.02 2.04 2.04'
+				className='mx-auto size-56 sm:mx-0'
+				role='img'
+				aria-label={slices.map((s) => `${s.label} ${s.share.toFixed(1)}%`).join(', ')}
+			>
+				{slices.map((s) => (
+					<path key={s.label} d={s.d} fill={s.color} stroke='var(--paper)' strokeWidth='0.02'>
+						<title>{`${s.label}: ${billions(s.value)} (${s.share.toFixed(1)}%)`}</title>
+					</path>
+				))}
+			</svg>
+			<div>
+				<figcaption className='text-[15px] font-semibold text-[var(--ink)]'>
+					Where BARMM’s local governments’ money came from, FY {PIE_YEAR}
+				</figcaption>
+				<p className='mt-2 text-[13px] leading-6 text-[var(--ink-3)]'>
+					Every province, city and municipality together: {billions(total)} in reported income.
+				</p>
+				<ul className='mt-5'>
+					{slices.map((s) => (
+						<li key={s.label} className='flex items-baseline gap-3 border-b border-[var(--rule-soft)] py-3'>
+							<span aria-hidden='true' className='size-2.5 shrink-0 translate-y-[1px]' style={{ background: s.color }} />
+							<span className='flex-1 text-[14px] text-[var(--ink-2)]'>{s.label}</span>
+							<span className='num text-[14px] font-semibold text-[var(--ink)]'>{s.share.toFixed(1)}%</span>
+							<span className='num w-16 text-right text-[13px] text-[var(--ink-3)]'>{billions(s.value)}</span>
+						</li>
+					))}
+				</ul>
+				<p className='mt-4 text-[12px] leading-5 text-[var(--ink-3)]'>
+					From BLGF’s Statements of Receipts and Expenditures. FY {PIE_YEAR} is preliminary; a unit that did not
+					report is not in the total.
+				</p>
+			</div>
+		</figure>
+	)
+}
+
 /** A labeled proportion bar. The width is the figure. */
 function ShareRow({
 	share,
@@ -336,51 +424,32 @@ export default function HowItWorksPage() {
 
 			<DocLayout>
 			{/* ---- The chain ---- */}
-			<Section id='money' lead='None of them reports to the one above it. What passes downward is money, not orders.'>
-
-				<ol className='mt-12'>
+			<Section
+				id='money'
+				lead='Money flows down: from the national government, to the Bangsamoro Government, to your province, city or municipality and barangay. Each level decides how to spend its own share.'
+			>
+				<ol className='mt-12 grid gap-x-10 gap-y-10 lg:grid-cols-3'>
 					{CHAIN.map((stage, index) => (
-						<li key={stage.tier} className='relative'>
-							<div className='grid gap-x-10 gap-y-4 border-t border-[var(--brass-line)] pt-6 xl:grid-cols-[minmax(0,13rem)_minmax(0,11rem)_minmax(0,1fr)]'>
-								<div>
-									<p className='num font-mono text-[11px] font-semibold text-[var(--brass)]'>
-										{String(index + 1).padStart(2, '0')}
-									</p>
-									<h3 className='mt-2 text-[15.5px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
-										{stage.tier}
-									</h3>
-								</div>
-
-								<div>
-									<p className='money num text-[2rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--accent)]'>
-										{stage.amount}
-									</p>
-									<p className='mt-2 text-[11.5px] leading-5 text-[var(--ink-3)]'>
-										{stage.amountNote}
-									</p>
-								</div>
-
-								<div>
-									<p className='text-[13.5px] leading-7 text-[var(--ink-2)]'>{stage.what}</p>
-									<p className='mt-2 font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
-										{stage.basis}
-									</p>
-								</div>
-							</div>
-
-							{index < CHAIN.length - 1 ? (
-								<div aria-hidden='true' className='flex items-center gap-3 py-6 pl-1'>
-									<span className='h-10 w-px bg-[var(--brass-line)]' />
-									<span className='font-mono text-[9px] uppercase tracking-[0.16em] text-[var(--ink-mute)]'>
-										passes down
-									</span>
-								</div>
-							) : (
-								<div className='h-10' />
-							)}
+						<li key={stage.tier} className='border-t border-[var(--brass-line)] pt-6'>
+							<p className='num font-mono text-[11px] font-semibold text-[var(--brass)]'>
+								{String(index + 1).padStart(2, '0')}
+							</p>
+							<h3 className='mt-2 text-[15.5px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+								{stage.tier}
+							</h3>
+							<p className='money num mt-5 text-[2rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--accent)]'>
+								{stage.amount}
+							</p>
+							<p className='mt-2 text-[11.5px] leading-5 text-[var(--ink-3)]'>{stage.amountNote}</p>
+							<p className='mt-4 text-[13.5px] leading-7 text-[var(--ink-2)]'>{stage.what}</p>
+							<p className='mt-2 font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+								{stage.basis}
+							</p>
 						</li>
 					))}
 				</ol>
+
+				<SourcesPie />
 			</Section>
 
 			{/* ---- The calendar ---- */}
