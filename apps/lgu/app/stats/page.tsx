@@ -61,7 +61,7 @@ export default function StatsPage() {
 				kicker='The money · Bangsamoro'
 				name='What each LGU earns and spends'
 				noteBeside
-				note='Every province, city and municipality on the same measures, from what each treasurer reported to the Bureau of Local Government Finance. Sort any column. These are actuals, not budgets: what a council appropriated is in its own ordinance, which nobody publishes together.'
+				note='What each treasurer reported to BLGF: actual income and spending, not budgets. Sort any column.'
 			/>
 
 			<section className='bb-container bb-section'>
