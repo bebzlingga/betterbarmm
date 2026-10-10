@@ -243,3 +243,9 @@
     transition: none;
   }
 }
+
+/* A taller top bar than the rest of the estate. Set on the variable rather
+   than as padding so everything sticking beneath it moves down with it. */
+:root {
+  --site-header-h: 5rem;
+}
