@@ -216,7 +216,7 @@ export default function TwoCodesPage() {
 			</section>
 
 			{/* ---- What did not change ---- */}
-			<section className='bb-container border-t border-[var(--rule)] bb-section-bottom'>
+			<section className='bb-container border-t border-[var(--rule)] bb-section'>
 				<SectionHead
 					eyebrow='What did not change'
 					size='sm'

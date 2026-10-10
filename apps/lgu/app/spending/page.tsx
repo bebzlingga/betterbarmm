@@ -161,7 +161,7 @@ export default function SpendingPage() {
 			</section>
 
 			{/* ---- What this is not ---- */}
-			<section className='bb-container border-t border-[var(--rule)] bb-section-bottom'>
+			<section className='bb-container border-t border-[var(--rule)] bb-section'>
 				<Rise distance={14}>
 					<div className='grid gap-x-14 gap-y-8 lg:grid-cols-2'>
 						<div>

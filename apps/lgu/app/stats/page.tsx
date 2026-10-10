@@ -64,7 +64,7 @@ export default function StatsPage() {
 				note='Every province, city and municipality on the same measures, from what each treasurer reported to the Bureau of Local Government Finance. Sort any column. These are actuals, not budgets: what a council appropriated is in its own ordinance, which nobody publishes together.'
 			/>
 
-			<section className='bb-container bb-section-bottom pt-12'>
+			<section className='bb-container bb-section'>
 				<StatsExplorer years={finances.years} fields={FIELDS} units={units} data={data} />
 
 				<div className='mt-10 space-y-2 text-[13px] leading-6 text-[var(--ink-3)]'>
