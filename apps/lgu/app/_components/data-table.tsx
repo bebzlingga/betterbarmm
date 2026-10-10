@@ -124,7 +124,7 @@ export function DataTable({
 					// The arrow always holds its place right of the label, so a heading
 					// does not shift when it is sorted; figure cells are inset by the same
 					// width (`pr-4`) so a label still ends over its numbers.
-					className={`inline-flex cursor-pointer items-center gap-1 text-[12px] font-semibold transition hover:text-[var(--ink)] ${
+					className={`inline-flex cursor-pointer items-center gap-1 text-[10.5px] font-semibold uppercase tracking-[0.1em] transition hover:text-[var(--ink)] ${
 						numeric ? 'text-right' : 'text-left'
 					} ${active ? 'text-[var(--ink)]' : 'text-[var(--ink-3)]'}`}
 				>
@@ -163,7 +163,7 @@ export function DataTable({
 				<thead>
 					<tr className='border-b border-[var(--ink)]'>
 						{ranked ? (
-							<th scope='col' className='w-10 py-3 pr-3 text-left text-[12px] font-semibold text-[var(--ink-3)]'>
+							<th scope='col' className='w-10 py-3 pr-3 text-left text-[10.5px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)]'>
 								#
 							</th>
 						) : null}
