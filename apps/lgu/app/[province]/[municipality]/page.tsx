@@ -556,7 +556,8 @@ export default async function UnitPage({
 	return (
 		<>
 			<LguMasthead
-				breadcrumb={<LguBreadcrumb trail={trail}>{unit.name}</LguBreadcrumb>}
+				// Nothing above Cotabato City but the directory itself, so no trail there.
+				breadcrumb={trail.length ? <LguBreadcrumb trail={trail}>{unit.name}</LguBreadcrumb> : undefined}
 				kicker={[
 					unitClass(unit),
 					unit.isCapital && province.kind === 'Province' ? 'provincial capital' : null,
