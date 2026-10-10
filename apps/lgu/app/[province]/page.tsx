@@ -34,6 +34,7 @@ import { provinceHistory, tookOffice } from '@betterbarmm/lgu-data/history'
 import { LguTermPicker } from '../_components/lgu-term-picker'
 import { LguFinances } from '../_components/lgu-finances'
 import { LguDisclosure } from '../_components/lgu-disclosure'
+import { NtaChart } from '../_components/nta-chart'
 import { LguTabs } from '../_components/lgu-tabs'
 import { DataTable, type DataRow } from '../_components/data-table'
 import { finances, row } from '@betterbarmm/lgu-data/fiscal'
@@ -158,6 +159,8 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 						]}
 					/>
 				</Rise>
+
+				<NtaChart unitKey={province.slug} />
 			</LguMasthead>
 
 			{/* The province against the region, on a light band under the masthead. */}
