@@ -15,7 +15,6 @@ import { ThemeToggle } from './theme-toggle'
 const guides = [
 	{ href: '/how-it-works', label: 'What each level does' },
 	{ href: '/spending', label: 'What the region spends where' },
-	{ href: '/two-codes', label: 'The two codes' },
 ] as const
 
 /**
@@ -128,7 +127,7 @@ export function SiteNav() {
 			className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'
 		>
 			<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
-				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 md:grid-cols-[1fr_auto_1fr]'>
+				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 xl:grid-cols-[auto_minmax(0,1fr)_auto] xl:gap-8'>
 					<div className='flex min-w-0 items-center gap-3'>
 						<a href='https://betterbarmm.com' onClick={closeMenu} className='w-fit shrink-0'>
 							<BrandLogo className='text-[var(--ink)]' />
@@ -139,13 +138,14 @@ export function SiteNav() {
 						<Link
 							href='/'
 							onClick={closeMenu}
-							className='hidden font-[family-name:var(--font-display)] text-[10.5px] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
+							className='hidden whitespace-nowrap font-[family-name:var(--font-display)] text-[10.5px] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
 						>
 							Local government
 						</Link>
 					</div>
 
-					<nav className='hidden items-center gap-1 md:flex'>
+					{/* Four menus fit on one line from 1280px; below that the menu button carries them. */}
+					<nav className='hidden items-center justify-center gap-1 whitespace-nowrap xl:flex'>
 						{/* Three doors: the profiles of the places, how the system works, and
 						    the places side by side. */}
 						<Menu label='LGU profiles' active={isProvinceActive} width='w-[17rem]'>
@@ -188,7 +188,11 @@ export function SiteNav() {
 						</Menu>
 
 						<Link href='/stats' data-active={pathname.startsWith('/stats')} className='nav-item'>
-							Stats
+							Finances
+						</Link>
+
+						<Link href='/governance-code' data-active={pathname.startsWith('/governance-code')} className='nav-item'>
+							Governance Code
 						</Link>
 					</nav>
 
@@ -214,7 +218,7 @@ export function SiteNav() {
 							aria-expanded={isMenuOpen}
 							aria-controls='lgu-mobile-menu'
 							onClick={() => setIsMenuOpen((current) => !current)}
-							className='inline-flex size-9 cursor-pointer items-center justify-center border border-[var(--ink)] text-[var(--ink)] transition hover:bg-[var(--ink)] hover:text-[var(--paper)] md:hidden'
+							className='inline-flex size-9 cursor-pointer items-center justify-center border border-[var(--ink)] text-[var(--ink)] transition hover:bg-[var(--ink)] hover:text-[var(--paper)] xl:hidden'
 						>
 							<span className='sr-only'>{isMenuOpen ? 'Close menu' : 'Open menu'}</span>
 							<span aria-hidden='true' className='flex h-2.5 w-4 flex-col justify-between'>
@@ -246,7 +250,7 @@ export function SiteNav() {
 						animate={{ height: 'auto', opacity: 1 }}
 						exit={{ height: 0, opacity: 0 }}
 						transition={{ duration: 0.34, ease: EASE }}
-						className='overflow-hidden border-t border-[var(--rule)] bg-[var(--paper)] md:hidden'
+						className='overflow-hidden border-t border-[var(--rule)] bg-[var(--paper)] xl:hidden'
 					>
 						<nav
 							id='lgu-mobile-menu'
@@ -287,10 +291,17 @@ export function SiteNav() {
 								))}
 							</div>
 
-							<p className='bb-label mt-7'>Stats</p>
+							<p className='bb-label mt-7'>Finances</p>
 							<div className='mt-3 grid'>
 								<Link href='/stats' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5'>
 									Every LGU ranked by its finances
+								</Link>
+							</div>
+
+							<p className='bb-label mt-7'>Governance Code</p>
+							<div className='mt-3 grid'>
+								<Link href='/governance-code' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5'>
+									The Bangsamoro Local Governance Code
 								</Link>
 							</div>
 						</nav>
