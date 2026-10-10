@@ -6,13 +6,13 @@ import { DocLayout } from '../_components/doc-layout'
 import type { TocItem } from '../_components/doc-toc'
 
 export const metadata: Metadata = {
-	title: 'The Bangsamoro Local Governance Code',
+	title: 'Bangsamoro Local Governance Code',
 	description:
 		'A reader’s guide to Bangsamoro Autonomy Act 49, the local government code of BARMM: what it devolves, who may run for office, how local money is raised and shared, what each level must have, and where it differs from the national Local Government Code of 1991.',
 }
 
 /* ============================================================
-   The Bangsamoro Local Governance Code
+   Bangsamoro Local Governance Code
 
    One page for understanding BAA 49, the code these provinces,
    cities, municipalities and barangays actually run on. It
@@ -362,7 +362,7 @@ export default function GovernanceCodePage() {
 		<>
 			<LguMasthead
 				kicker='The law · Bangsamoro'
-				name='The Bangsamoro Local Governance Code'
+				name='Bangsamoro Local Governance Code'
 			/>
 
 			<DocLayout
