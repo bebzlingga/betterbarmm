@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { SectionHead } from '@betterbarmm/editorial'
 import { lguReferences } from '@betterbarmm/lgu-data'
 import { LguMasthead } from '../_components/lgu-parts'
+import { DocToc, type TocItem } from '../_components/doc-toc'
 
 export const metadata: Metadata = {
 	title: 'The Bangsamoro Local Governance Code',
@@ -26,16 +26,6 @@ export const metadata: Metadata = {
 
 type Point = { title: string; body: string; cite?: string }
 
-const SECTIONS: { id: string; label: string }[] = [
-	{ id: 'overview', label: 'What it is' },
-	{ id: 'devolution', label: 'Devolution' },
-	{ id: 'officials', label: 'Officials' },
-	{ id: 'councils', label: 'Ordinances and councils' },
-	{ id: 'money', label: 'Local money' },
-	{ id: 'levels', label: 'Each level' },
-	{ id: 'implementation', label: 'Putting it in force' },
-	{ id: 'differences', label: 'Versus RA 7160' },
-]
 
 const BOOKS = [
 	{ book: 'Book I', title: 'General provisions', sections: 'Secs. 1–146' },
@@ -297,26 +287,70 @@ const SAME = [
 	'Civil service coverage for appointive staff, and the Commission on Audit over the money.',
 ]
 
-function Points({ points }: { points: Point[] }) {
+/** A heading's anchor: lowercase words joined by hyphens. */
+const slug = (text: string) =>
+	text
+		.toLowerCase()
+		.replace(/[’'“”"()]/g, '')
+		.replace(/[^a-z0-9]+/g, '-')
+		.replace(/^-|-$/g, '')
+
+/* What each section is called, what it says first, and the topics under it —
+   one list feeds both the headings and "On this page", so the two cannot drift. */
+const OUTLINE: { id: string; title: string; topics: string[] }[] = [
+	{ id: 'introduction', title: 'Introduction', topics: [] },
+	{ id: 'history', title: 'How it came to be', topics: [] },
+	{ id: 'structure', title: 'How the Code is organised', topics: [] },
+	{ id: 'devolution', title: 'Devolution', topics: DEVOLUTION.map((p) => p.title) },
+	{ id: 'officials', title: 'Officials', topics: OFFICIALS.map((p) => p.title) },
+	{ id: 'councils', title: 'Ordinances and councils', topics: COUNCILS.map((p) => p.title) },
+	{
+		id: 'money',
+		title: 'Local money',
+		topics: [...MONEY.map((p) => p.title), 'Amounts brought up to date', ...SHARES.map((s) => s.title), 'What every local budget must carry'],
+	},
+	{ id: 'levels', title: 'Each level', topics: LEVELS.map((l) => l.level) },
+	{ id: 'implementation', title: 'Putting it in force', topics: IMPLEMENTATION.map((p) => p.title) },
+	{ id: 'differences', title: 'Versus RA 7160', topics: ['Where it differs', 'What stayed the same'] },
+]
+
+const TOC: TocItem[] = OUTLINE.flatMap((section) => [
+	{ id: section.id, label: section.title, depth: 1 as const },
+	...section.topics.map((topic) => ({ id: slug(topic), label: topic, depth: 2 as const })),
+])
+
+const H2 = 'scroll-mt-32 border-t border-[var(--rule)] pt-12 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)] first:border-t-0 first:pt-0'
+const H3 = 'scroll-mt-32 text-[1.1rem] font-semibold tracking-[-0.01em] text-[var(--ink)]'
+const P = 'text-[15.5px] leading-8 text-[var(--ink-2)]'
+
+function Topic({ title, cite, children }: { title: string; cite?: string; children: React.ReactNode }) {
 	return (
-		<dl className='mt-10 grid gap-x-12 gap-y-8 md:grid-cols-2'>
-			{points.map((point) => (
-				<div key={point.title} className='border-t border-[var(--rule)] pt-4'>
-					<dt className='flex items-baseline justify-between gap-4'>
-						<span className='text-[15px] font-semibold text-[var(--ink)]'>{point.title}</span>
-						{point.cite ? <span className='shrink-0 text-[12px] text-[var(--ink-3)]'>{point.cite}</span> : null}
-					</dt>
-					<dd className='mt-2 text-[14px] leading-7 text-[var(--ink-2)]'>{point.body}</dd>
-				</div>
-			))}
-		</dl>
+		<div className='mt-10'>
+			<h3 id={slug(title)} className={H3}>
+				{title}
+				{cite ? <span className='ml-3 text-[13px] font-normal text-[var(--ink-3)]'>{cite}</span> : null}
+			</h3>
+			<div className={`mt-3 ${P}`}>{children}</div>
+		</div>
 	)
 }
 
-function Section({ id, eyebrow, title, lead, children }: { id: string; eyebrow: string; title: string; lead?: string; children: React.ReactNode }) {
+function Points({ points }: { points: Point[] }) {
+	return points.map((point) => (
+		<Topic key={point.title} title={point.title} cite={point.cite}>
+			<p>{point.body}</p>
+		</Topic>
+	))
+}
+
+function Section({ id, lead, children }: { id: string; lead?: string; children: React.ReactNode }) {
+	const title = OUTLINE.find((section) => section.id === id)!.title
 	return (
-		<section id={id} className='bb-container bb-section scroll-mt-32'>
-			<SectionHead eyebrow={eyebrow} size='sm' title={title} lead={lead} />
+		<section className='mt-16 first:mt-0'>
+			<h2 id={id} className={H2}>
+				{title}
+			</h2>
+			{lead ? <p className={`mt-5 ${P}`}>{lead}</p> : null}
 			{children}
 		</section>
 	)
@@ -332,200 +366,206 @@ export default function GovernanceCodePage() {
 				note='Bangsamoro Autonomy Act 49, enacted in September 2023, is the code every province, city, municipality and barangay in BARMM runs on. It creates their offices, fixes their terms and pay, sets how they raise and share money, and devolves the region’s powers to them. The national Local Government Code applies only where it is silent.'
 			/>
 
-			{/* A long page needs a way to jump between its parts. */}
-			<nav
-				aria-label='On this page'
-				className='sticky top-[var(--sticky-top)] z-20 border-b border-[var(--ink)] bg-[var(--paper)] transition-[top] duration-300'
-			>
-				<div className='bb-container flex gap-1 overflow-x-auto [mask-image:linear-gradient(to_right,#000_85%,transparent)] [scrollbar-width:none] lg:[mask-image:none] [&::-webkit-scrollbar]:hidden'>
-					{SECTIONS.map((section) => (
-						<a key={section.id} href={`#${section.id}`} className='lgu-tab whitespace-nowrap'>
-							{section.label}
-						</a>
-					))}
-				</div>
-			</nav>
+			{/* Read like documentation: one column of text, and "On this page"
+			    beside it on a wide screen, folded above it on a phone. */}
+			<div className='bb-container bb-section grid gap-12 lg:grid-cols-[minmax(0,1fr)_17rem] lg:gap-16'>
+				<details className='border border-[var(--rule)] bg-[var(--paper-2)] px-5 py-4 lg:hidden'>
+					<summary className='cursor-pointer text-[14px] font-semibold text-[var(--ink)]'>On this page</summary>
+					<ol className='mt-3'>
+						{TOC.map((item) => (
+							<li key={item.id}>
+								<a href={`#${item.id}`} className={`block py-1 text-[13.5px] text-[var(--ink-2)] ${item.depth === 2 ? 'pl-4' : 'font-medium'}`}>
+									{item.label}
+								</a>
+							</li>
+						))}
+					</ol>
+				</details>
 
-			<Section
-				id='overview'
-				eyebrow='What it is'
-				title='A regional code, under the Organic Law'
-				lead='The Bangsamoro Organic Law guarantees the regional government’s authority to regulate its local governments “in accordance with this Organic Law and a Bangsamoro local government code”, without diminishing what they already enjoy under RA 7160. BAA 49 is that code. It repealed Muslim Mindanao Autonomy Act 25, the ARMM local government code of 1994, and amends the Bangsamoro Administrative Code where the two conflict.'
-			>
-				<div className='mt-10 grid gap-x-12 gap-y-10 lg:grid-cols-2'>
-					<div>
-						<h3 className='text-[15px] font-semibold text-[var(--ink)]'>Four books, 605 sections</h3>
-						<ul className='mt-3'>
-							{BOOKS.map((book) => (
-								<li key={book.book} className='grid grid-cols-[5rem_minmax(0,1fr)_auto] gap-4 border-b border-[var(--rule-soft)] py-3 text-[14px]'>
-									<span className='font-semibold text-[var(--ink)]'>{book.book}</span>
-									<span className='text-[var(--ink-2)]'>{book.title}</span>
-									<span className='num text-[12.5px] text-[var(--ink-3)]'>{book.sections}</span>
-								</li>
-							))}
-						</ul>
-					</div>
-					<div>
-						<h3 className='text-[15px] font-semibold text-[var(--ink)]'>How it was enacted</h3>
-						<ol className='mt-3'>
+				<article className='min-w-0 max-w-[48rem]'>
+					<Section id='introduction'>
+						<p className={`mt-5 ${P}`}>
+							Every province, city, municipality and barangay in the Philippines is governed by a local government
+							code: the law that creates its offices, sets who may hold them and for how long, decides what it may tax
+							and what it must spend on, and spells out what it owes the people who live there. For the rest of the
+							country that law is the Local Government Code of 1991, Republic Act 7160.
+						</p>
+						<p className={`mt-5 ${P}`}>
+							The Bangsamoro is different. When the Organic Law created the region in 2019, it gave the Bangsamoro
+							Government the authority to regulate its own local governments, “in accordance with this Organic Law and a
+							Bangsamoro local government code to be enacted by the Parliament”, on one condition: nothing the local
+							governments already enjoyed under RA 7160 could be taken away (BOL Art. VI, Sec. 10).
+						</p>
+						<p className={`mt-5 ${P}`}>
+							The Bangsamoro Local Governance Code, Bangsamoro Autonomy Act 49, is that law. It replaced the ARMM’s
+							local government code of 1994, Muslim Mindanao Autonomy Act 25, and overrides the Bangsamoro
+							Administrative Code where the two disagree. RA 7160 still applies inside the region, but only where the
+							Bangsamoro code is silent.
+						</p>
+						<p className={`mt-5 ${P}`}>
+							Its promise is in its second section: “genuine and meaningful local autonomy”, pursued under the principle
+							of moral governance, by handing local governments “more powers, authority, responsibilities, and
+							resources in a gradual and systematic approach”, from the region down (Sec. 2). The rest of this page
+							follows how the Code keeps that promise.
+						</p>
+					</Section>
+
+					<Section id='history' lead='It took two Parliaments.'>
+						<ol className='mt-6'>
 							{TIMELINE.map((step) => (
-								<li key={step.when} className='grid gap-x-4 border-b border-[var(--rule-soft)] py-3 text-[14px] sm:grid-cols-[9rem_minmax(0,1fr)]'>
+								<li key={step.when} className='grid gap-x-4 border-b border-[var(--rule-soft)] py-3 text-[15px] leading-7 text-[var(--ink-2)] sm:grid-cols-[10rem_minmax(0,1fr)]'>
 									<span className='font-semibold text-[var(--ink)]'>{step.when}</span>
-									<span className='leading-6 text-[var(--ink-2)]'>{step.what}</span>
+									<span>{step.what}</span>
 								</li>
 							))}
 						</ol>
-					</div>
-				</div>
-				<p className='mt-10 text-[14px] leading-7 text-[var(--ink-2)]'>
-					Its declared policy is “genuine and meaningful local autonomy”: under the principle of moral governance, a
-					more responsive and accountable local government built through decentralisation, with constituent units
-					given more powers, authority, responsibilities and resources “in a gradual and systematic approach”
-					(Sec. 2).
-				</p>
-			</Section>
+					</Section>
 
-			<Section id='devolution' eyebrow='Devolution' title='What moves from the region to the towns'>
-				<Points points={DEVOLUTION} />
-			</Section>
-
-			<Section id='officials' eyebrow='Officials' title='Who may run, and what binds them once elected'>
-				<Points points={OFFICIALS} />
-			</Section>
-
-			<Section id='councils' eyebrow='Ordinances and councils' title='Local laws in the open, and more voices at the table'>
-				<Points points={COUNCILS} />
-			</Section>
-
-			<Section
-				id='money'
-				eyebrow='Local money'
-				title='How local governments raise, share and budget'
-				lead='Book II. Local taxes stay local; the region’s shares of natural resources and national taxes are passed down by formula; and every local budget carries minimum allocations.'
-			>
-				<Points points={MONEY} />
-
-				<div className='mt-12'>
-					<h3 className='text-[15px] font-semibold text-[var(--ink)]'>Amounts brought up to date</h3>
-					<table className='mt-3 w-full border-collapse text-[14px]'>
-						<thead>
-							<tr className='border-b border-[var(--ink)] text-left text-[10.5px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)]'>
-								<th className='py-3 pr-4 font-semibold'>Tax</th>
-								<th className='py-3 pr-4 text-right font-semibold'>MMAA 25 / RA 7160</th>
-								<th className='py-3 text-right font-semibold'>BAA 49</th>
-							</tr>
-						</thead>
-						<tbody>
-							{UPDATED_AMOUNTS.map((row) => (
-								<tr key={row.tax} className='border-b border-[var(--rule-soft)]'>
-									<td className='py-3 pr-4 text-[var(--ink-2)]'>{row.tax}</td>
-									<td className='num py-3 pr-4 text-right text-[var(--ink-3)]'>{row.before}</td>
-									<td className='num py-3 text-right font-semibold text-[var(--ink)]'>{row.now}</td>
-								</tr>
+					<Section id='structure' lead='605 sections in four books, read in order: the rules that apply to every local government, then how they are funded, then what each level is and must do, then how the Code is put into force.'>
+						<ul className='mt-6'>
+							{BOOKS.map((book) => (
+								<li key={book.book} className='grid grid-cols-[5rem_minmax(0,1fr)_auto] gap-4 border-b border-[var(--rule-soft)] py-3 text-[15px] text-[var(--ink-2)]'>
+									<span className='font-semibold text-[var(--ink)]'>{book.book}</span>
+									<span>{book.title}</span>
+									<span className='num text-[13px] text-[var(--ink-3)]'>{book.sections}</span>
+								</li>
 							))}
-						</tbody>
-					</table>
-				</div>
+						</ul>
+					</Section>
 
-				<div className='mt-12 grid gap-x-12 gap-y-10 lg:grid-cols-2'>
-					{SHARES.map((share) => (
-						<div key={share.title}>
-							<h3 className='text-[15px] font-semibold text-[var(--ink)]'>{share.title}</h3>
-							<p className='mt-2 text-[14px] leading-7 text-[var(--ink-2)]'>{share.lead}</p>
-							<dl className='mt-3'>
-								{share.rows.map(([label, split]) => (
-									<div key={label} className='border-b border-[var(--rule-soft)] py-3'>
-										<dt className='text-[12.5px] text-[var(--ink-3)]'>{label}</dt>
-										<dd className='mt-1 text-[14px] text-[var(--ink)]'>{split}</dd>
-									</div>
-								))}
-							</dl>
-						</div>
-					))}
-				</div>
+					<Section id='devolution'>
+						<Points points={DEVOLUTION} />
+					</Section>
 
-				<div className='mt-12'>
-					<h3 className='flex items-baseline justify-between gap-4 text-[15px] font-semibold text-[var(--ink)]'>
-						What every local budget must carry
-						<span className='text-[12px] font-normal text-[var(--ink-3)]'>Sec. 348</span>
-					</h3>
-					<ul className='mt-3'>
-						{BUDGET_RULES.map((rule) => (
-							<li key={rule} className='border-b border-[var(--rule-soft)] py-3 text-[14px] leading-7 text-[var(--ink-2)]'>
-								{rule}
-							</li>
+					<Section id='officials'>
+						<Points points={OFFICIALS} />
+					</Section>
+
+					<Section id='councils'>
+						<Points points={COUNCILS} />
+					</Section>
+
+					<Section id='money' lead='Book II. Local taxes stay local; the region’s shares of natural resources and national taxes are passed down by formula; and every local budget carries minimum allocations.'>
+						<Points points={MONEY} />
+						<Topic title='Amounts brought up to date'>
+							<table className='w-full border-collapse text-[15px]'>
+								<thead>
+									<tr className='border-b border-[var(--ink)] text-left text-[10.5px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)]'>
+										<th className='py-2.5 pr-4 font-semibold'>Tax</th>
+										<th className='py-2.5 pr-4 text-right font-semibold'>MMAA 25 / RA 7160</th>
+										<th className='py-2.5 text-right font-semibold'>BAA 49</th>
+									</tr>
+								</thead>
+								<tbody>
+									{UPDATED_AMOUNTS.map((row) => (
+										<tr key={row.tax} className='border-b border-[var(--rule-soft)]'>
+											<td className='py-2.5 pr-4'>{row.tax}</td>
+											<td className='num py-2.5 pr-4 text-right text-[var(--ink-3)]'>{row.before}</td>
+											<td className='num py-2.5 text-right font-semibold text-[var(--ink)]'>{row.now}</td>
+										</tr>
+									))}
+								</tbody>
+							</table>
+						</Topic>
+						{SHARES.map((share) => (
+							<Topic key={share.title} title={share.title}>
+								<p>{share.lead}</p>
+								<dl className='mt-3'>
+									{share.rows.map(([label, split]) => (
+										<div key={label} className='border-b border-[var(--rule-soft)] py-2.5'>
+											<dt className='text-[13px] text-[var(--ink-3)]'>{label}</dt>
+											<dd className='text-[15px] text-[var(--ink)]'>{split}</dd>
+										</div>
+									))}
+								</dl>
+							</Topic>
 						))}
-					</ul>
-				</div>
-			</Section>
+						<Topic title='What every local budget must carry' cite='Sec. 348'>
+							<ul className='list-disc space-y-2 pl-5'>
+								{BUDGET_RULES.map((rule) => (
+									<li key={rule}>{rule}</li>
+								))}
+							</ul>
+						</Topic>
+					</Section>
 
-			<Section id='levels' eyebrow='Each level' title='The barangay, the municipality, the city and the province'>
-				{LEVELS.map((level) => (
-					<div key={level.level} className='mt-12 first-of-type:mt-10'>
-						<h3 className='text-[1.2rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>{level.level}</h3>
-						<Points points={level.points} />
+					<Section id='levels'>
+						{LEVELS.map((level) => (
+							<Topic key={level.level} title={level.level}>
+								<dl className='space-y-5'>
+									{level.points.map((point) => (
+										<div key={point.title}>
+											<dt className='font-semibold text-[var(--ink)]'>
+												{point.title}
+												{point.cite ? <span className='ml-2 text-[13px] font-normal text-[var(--ink-3)]'>{point.cite}</span> : null}
+											</dt>
+											<dd className='mt-1'>{point.body}</dd>
+										</div>
+									))}
+								</dl>
+							</Topic>
+						))}
+					</Section>
+
+					<Section id='implementation'>
+						<Points points={IMPLEMENTATION} />
+					</Section>
+
+					<Section id='differences' lead='Each row is the same question put to both codes, with the Bangsamoro answer cited to its section and implementing rule.'>
+						<Topic title='Where it differs'>
+							{DIFFERENCES.map((row) => (
+								<div key={row.subject} className='border-t border-[var(--rule)] py-5'>
+									<p className='font-semibold text-[var(--ink)]'>{row.subject}</p>
+									<p className='mt-2 text-[var(--ink-3)]'>
+										<span className='text-[13px]'>RA 7160 · </span>
+										{row.national}
+									</p>
+									<p className='mt-2 border-l-2 border-[var(--accent)] pl-4'>
+										<span className='text-[13px] text-[var(--accent)]'>BAA 49 · </span>
+										{row.bangsamoro}
+										<span className='mt-1 block text-[13px] text-[var(--ink-3)]'>{row.basis}</span>
+									</p>
+								</div>
+							))}
+						</Topic>
+						<Topic title='What stayed the same'>
+							<ul className='list-disc space-y-2 pl-5'>
+								{SAME.map((item) => (
+									<li key={item}>{item}</li>
+								))}
+							</ul>
+						</Topic>
+
+						<p className='mt-14 border-t border-[var(--rule)] pt-6 text-[13px] leading-6 text-[var(--ink-3)]'>
+							The topics above summarise the Code’s salient features and cite its sections as a briefing on the Code
+							does; the comparison is read from the Code, its implementing rules and RA 7160. Where this page and the
+							Act differ, the Act is right. Read{' '}
+							<a href={lguReferences.localGovernanceCode.href} target='_blank' rel='noreferrer' className='rule-link'>
+								{lguReferences.localGovernanceCode.label}
+							</a>
+							, its{' '}
+							<a href={lguReferences.implementingRules.href} target='_blank' rel='noreferrer' className='rule-link'>
+								implementing rules
+							</a>{' '}
+							and{' '}
+							<a href={lguReferences.nationalCode.href} target='_blank' rel='noreferrer' className='rule-link'>
+								{lguReferences.nationalCode.label}
+							</a>
+							. What each level does day to day is on{' '}
+							<Link href='/how-it-works' className='rule-link'>
+								How it works
+							</Link>
+							.
+						</p>
+					</Section>
+				</article>
+
+				<aside className='hidden lg:block'>
+					<div className='sticky top-[calc(var(--sticky-top)+2rem)] max-h-[calc(100vh-var(--sticky-top)-4rem)] overflow-y-auto transition-[top] duration-300'>
+						<DocToc items={TOC} />
 					</div>
-				))}
-			</Section>
-
-			<Section id='implementation' eyebrow='Putting it in force' title='Penalties, review, and the hand-over'>
-				<Points points={IMPLEMENTATION} />
-			</Section>
-
-			<Section
-				id='differences'
-				eyebrow='Versus RA 7160'
-				title='Where it differs from the national code'
-				lead='Each row is the same question put to both codes, with the Bangsamoro answer cited to its section and implementing rule.'
-			>
-				<div className='mt-10'>
-					{DIFFERENCES.map((row) => (
-						<div key={row.subject} className='grid gap-x-12 gap-y-3 border-t border-[var(--rule)] py-6 lg:grid-cols-[14rem_minmax(0,1fr)_minmax(0,1fr)]'>
-							<h3 className='text-[15px] font-semibold text-[var(--ink)]'>{row.subject}</h3>
-							<div>
-								<p className='text-[12px] text-[var(--ink-3)]'>Nationally · RA 7160</p>
-								<p className='mt-1 text-[14px] leading-7 text-[var(--ink-3)]'>{row.national}</p>
-							</div>
-							<div className='border-l-2 border-[var(--accent)] pl-5'>
-								<p className='text-[12px] text-[var(--accent)]'>In BARMM · BAA 49</p>
-								<p className='mt-1 text-[14px] leading-7 text-[var(--ink-2)]'>{row.bangsamoro}</p>
-								<p className='mt-1 text-[12px] text-[var(--ink-3)]'>{row.basis}</p>
-							</div>
-						</div>
-					))}
-				</div>
-
-				<h3 className='mt-14 text-[15px] font-semibold text-[var(--ink)]'>And most of it is the same law</h3>
-				<ul className='mt-3 grid gap-x-12 sm:grid-cols-2'>
-					{SAME.map((item) => (
-						<li key={item} className='border-b border-[var(--rule-soft)] py-3 text-[14px] leading-7 text-[var(--ink-2)]'>
-							{item}
-						</li>
-					))}
-				</ul>
-
-				<p className='mt-14 border-t border-[var(--rule)] pt-6 text-[13px] leading-6 text-[var(--ink-3)]'>
-					The topics above summarise the Code’s salient features and cite its sections as a briefing on the Code
-					does; the comparison is read from the Code, its implementing rules and RA 7160. Where this page and the
-					Act differ, the Act is right. Read{' '}
-					<a href={lguReferences.localGovernanceCode.href} target='_blank' rel='noreferrer' className='rule-link'>
-						{lguReferences.localGovernanceCode.label}
-					</a>
-					, its{' '}
-					<a href={lguReferences.implementingRules.href} target='_blank' rel='noreferrer' className='rule-link'>
-						implementing rules
-					</a>{' '}
-					and{' '}
-					<a href={lguReferences.nationalCode.href} target='_blank' rel='noreferrer' className='rule-link'>
-						{lguReferences.nationalCode.label}
-					</a>
-					. What each level does day to day is on{' '}
-					<Link href='/how-it-works' className='rule-link'>
-						How it works
-					</Link>
-					.
-				</p>
-			</Section>
+				</aside>
+			</div>
 		</>
 	)
 }
