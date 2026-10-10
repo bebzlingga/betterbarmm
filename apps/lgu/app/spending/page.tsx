@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Rise } from '@betterbarmm/editorial'
 import { areaSpending, pesoCell, spentIn, thinlyTagged } from '@betterbarmm/lgu-data'
-import { LguBreadcrumb, LguMasthead } from '../_components/lgu-parts'
+import { LguMasthead } from '../_components/lgu-parts'
 
 export const metadata: Metadata = {
 	title: 'What the region spends where',
@@ -34,7 +34,6 @@ export default function SpendingPage() {
 	return (
 		<>
 			<LguMasthead
-				breadcrumb={<LguBreadcrumb trail={[]}>Spending</LguBreadcrumb>}
 				kicker={`FY ${YEARS[0]} to FY ${YEARS[YEARS.length - 1]}`}
 				name={`${pesoCell(grand)}, across eight areas`}
 				note='How much each year’s Bangsamoro budget set aside for construction in each area. This is the region’s money, not the area’s own budget. Some provinces were split or renamed in these years, so each row uses today’s name, with the older names listed under it.'
