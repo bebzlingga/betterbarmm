@@ -362,8 +362,6 @@ export default function GovernanceCodePage() {
 			<LguMasthead
 				kicker='The law · Bangsamoro'
 				name='The Bangsamoro Local Governance Code'
-				noteBeside
-				note='Bangsamoro Autonomy Act 49, enacted in September 2023, is the code every province, city, municipality and barangay in BARMM runs on. It creates their offices, fixes their terms and pay, sets how they raise and share money, and devolves the region’s powers to them. The national Local Government Code applies only where it is silent.'
 			/>
 
 			{/* Read like documentation: one column of text, and "On this page"
