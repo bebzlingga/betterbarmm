@@ -37,7 +37,6 @@ import {
 import { LguTabs } from '../../_components/lgu-tabs'
 import { LguFinances } from '../../_components/lgu-finances'
 import { LguTermPicker } from '../../_components/lgu-term-picker'
-import { Rise } from '@betterbarmm/editorial'
 export function generateStaticParams() {
 	return allUnitParams()
 }
@@ -536,11 +535,11 @@ export default async function UnitPage({
 				<LguSourceNote className='mt-14' />
 
 				{/* ---- Move along the province ---- */}
-				<div className='mt-10 grid gap-4 sm:grid-cols-2'>
+				<div className='mt-10 grid bg-[var(--paper-2)] sm:grid-cols-2'>
 					{previous ? (
 						<Link
 							href={`/${province.slug}/${previous.slug}`}
-							className='group flex items-center gap-3 border-t border-[var(--brass-line)] py-5 transition hover:bg-[var(--paper-2)]'
+							className='group flex items-center gap-3 px-6 py-6 transition hover:bg-[var(--paper-3)]'
 						>
 							<ArrowLeftIcon
 								className='size-4 shrink-0 text-[var(--ink-3)] transition duration-500 group-hover:-translate-x-1 group-hover:text-[var(--accent)]'
@@ -562,7 +561,7 @@ export default async function UnitPage({
 					{next ? (
 						<Link
 							href={`/${province.slug}/${next.slug}`}
-							className='group flex items-center justify-end gap-3 border-t border-[var(--brass-line)] py-5 text-right transition hover:bg-[var(--paper-2)]'
+							className='group flex items-center justify-end gap-3 px-6 py-6 text-right transition hover:bg-[var(--paper-3)] sm:col-start-2'
 						>
 							<span className='min-w-0'>
 								<span className='block font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
@@ -582,14 +581,6 @@ export default async function UnitPage({
 					) : null}
 				</div>
 
-				{siblings.length > 1 ? (
-					<Rise distance={12}>
-						<Link href={`/${province.slug}`} className='bb-btn bb-btn-ghost mt-10'>
-							<ArrowLeftIcon className='size-3.5' aria-hidden='true' />
-							All of {province.name}
-						</Link>
-					</Rise>
-				) : null}
 			</section>
 		</>
 	)
