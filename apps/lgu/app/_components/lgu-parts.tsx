@@ -97,6 +97,7 @@ export function LguMasthead({
 	note,
 	noteBeside = false,
 	noteEnd = false,
+	center = false,
 	children,
 }: {
 	breadcrumb?: React.ReactNode
@@ -109,17 +110,19 @@ export function LguMasthead({
 	noteBeside?: boolean
 	/** Right-align the note beside the name (Stats). */
 	noteEnd?: boolean
+	/** Centre the kicker and the name (Governance Code). */
+	center?: boolean
 	/** The figures row, and anything else that belongs above the fold. */
 	children?: React.ReactNode
 }) {
 	return (
 		<section className='bb-lattice brand-bg relative overflow-hidden'>
 
-			<div className='bb-container relative py-[clamp(3.75rem,7vw,6.5rem)]'>
+			<div className={`bb-container relative py-[clamp(3.75rem,7vw,6.5rem)] ${center ? 'text-center' : ''}`}>
 				{breadcrumb}
 
 				<Rise distance={12}>
-					<div className={`${breadcrumb ? 'mt-8' : ''} flex flex-wrap items-center gap-2.5`}>
+					<div className={`${breadcrumb ? 'mt-8' : ''} flex flex-wrap items-center gap-2.5 ${center ? 'justify-center' : ''}`}>
 						{badges}
 						<span className='bb-label'>{kicker}</span>
 					</div>
