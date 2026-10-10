@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { lguData } from '@betterbarmm/lgu-data'
-import { BarSegment, Counter, LineReveal, Rise } from '@betterbarmm/editorial'
+import { BarSegment, Counter, LineReveal, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
 
 /** The trail back up the hierarchy, printed as a line rather than a widget. */
 export function LguBreadcrumb({
@@ -72,6 +72,41 @@ export function LguStat({
 			</p>
 			<p className='lgu-stat-label'>{label}</p>
 			{note ? <p className='mt-2 text-[12px] leading-5 text-[var(--ink-3)]'>{note}</p> : null}
+		</div>
+	)
+}
+
+export type LguFigure = {
+	label: string
+	value: string
+	/** Counted up to on arrival; leave off for a value that is not a plain count. */
+	count?: number | null
+	/** Group thousands while counting — right for a population, wrong for a year. */
+	group?: boolean
+	detail?: React.ReactNode
+}
+
+/**
+ * A masthead's headline figures, the way the legislation registry sets
+ * them: on a brass rule, each a label, the number, and a line under it
+ * that says what the number means.
+ */
+export function LguFigures({ figures }: { figures: LguFigure[] }) {
+	return (
+		<div className='mt-12 border-t border-[var(--brass-line)] pt-9'>
+			<Stagger gap={0.08} className='grid gap-x-8 gap-y-9 min-[380px]:grid-cols-2 sm:gap-x-12 sm:gap-y-10 lg:grid-cols-4 lg:gap-x-20'>
+				{figures.map((figure) => (
+					<StaggerItem key={figure.label}>
+						<p className='bb-label'>{figure.label}</p>
+						<p className='bb-figure-sm mt-4 text-[var(--ink)]'>
+							{figure.count == null ? figure.value : <Counter value={figure.count} group={figure.group ?? true} />}
+						</p>
+						{figure.detail ? (
+							<p className='mt-3 max-w-[16rem] text-[13px] leading-[1.55] text-[var(--ink-3)]'>{figure.detail}</p>
+						) : null}
+					</StaggerItem>
+				))}
+			</Stagger>
 		</div>
 	)
 }

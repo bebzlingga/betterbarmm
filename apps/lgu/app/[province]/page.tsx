@@ -3,7 +3,7 @@ import { notFound, redirect } from 'next/navigation'
 import {
 	LguMasthead,
 	LguSourceNote,
-	LguStat,
+	LguFigures,
 	ShareBar,
 } from '../_components/lgu-parts'
 import {
@@ -126,32 +126,51 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 			>
 				{/* ---- The province in figures ---- */}
 				<Rise delay={0.3} distance={14}>
-					<div className='mt-14 grid grid-cols-2 gap-x-6 gap-y-8 sm:gap-x-8 sm:gap-y-10 lg:grid-cols-4'>
-						<LguStat
-							value={formatNumber(province.population)}
-							count={province.population}
-							label='Population (2024)'
-						/>
-						<LguStat
-							value={String(province.municipalities.length)}
-							count={province.municipalities.length}
-							group={false}
-							label={cities.length > 0 ? 'Cities and municipalities' : 'Municipalities'}
-						/>
-						<LguStat
-							value={formatNumber(province.barangayCount)}
-							count={province.barangayCount}
-							label='Barangays'
-						/>
-						<LguStat value={formatArea(province.areaKm2)} label='Land area' />
-					</div>
+					<LguFigures
+						figures={[
+							{
+								label: 'Population (2024)',
+								value: formatNumber(province.population),
+								count: province.population,
+								detail: change != null ? `${change > 0 ? '+' : ''}${change}% since the 2020 census.` : undefined,
+							},
+							{
+								label: cities.length > 0 ? 'Cities and municipalities' : 'Municipalities',
+								value: String(province.municipalities.length),
+								count: province.municipalities.length,
+								group: false,
+								detail:
+									biggest.length > 0 && province.municipalities.length > 1
+										? `Largest: ${biggest.map((unit) => unit.name).join(', ')}.`
+										: undefined,
+							},
+							{
+								label: 'Barangays',
+								value: formatNumber(province.barangayCount),
+								count: province.barangayCount,
+							},
+							{
+								label: 'Land area',
+								value: formatArea(province.areaKm2),
+								detail:
+									density(province) != null ? `${formatNumber(density(province))} people per km².` : undefined,
+							},
+						]}
+					/>
 				</Rise>
-
 			</LguMasthead>
 
 			{/* The province against the region, on a light band under the masthead. */}
 			<div className='bg-[var(--paper-2)]'>
-				<div className='bb-container grid gap-8 py-10 lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-16 lg:py-12'>
+				<div className='bb-container grid gap-8 py-10 lg:grid-cols-2 lg:items-center lg:gap-16 lg:py-12'>
+					{regionShare != null ? (
+						<p className='max-w-[34rem] text-[15px] leading-7 text-[var(--ink-2)]'>
+							{province.name} is home to{' '}
+							<span className='num font-semibold text-[var(--ink)]'>{regionShare}%</span> of the people of
+							BARMM: {formatNumber(province.population)} of the region&rsquo;s{' '}
+							{formatNumber(lguData.totals.population)} at the 2024 census.
+						</p>
+					) : null}
 					{regionShare != null ? (
 						<Rise delay={0.1} distance={14}>
 							<ShareBar
@@ -163,35 +182,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 						</Rise>
 					) : null}
 
-					<Rise delay={0.15} distance={14}>
-						<div className='flex flex-wrap gap-x-8 gap-y-2.5 text-[13px] text-[var(--ink-3)] lg:justify-end'>
-							{density(province) != null ? (
-								<p>
-									<span className='num font-semibold text-[var(--ink)]'>
-										{formatNumber(density(province))}
-									</span>{' '}
-									people per km²
-								</p>
-							) : null}
-							{change != null ? (
-								<p>
-									<span className='num font-semibold text-[var(--ink)]'>
-										{change > 0 ? '+' : ''}
-										{change}%
-									</span>{' '}
-									since the 2020 census
-								</p>
-							) : null}
-							{biggest.length > 0 && province.municipalities.length > 1 ? (
-								<p>
-									Largest:{' '}
-									<span className='font-semibold text-[var(--ink)]'>
-										{biggest.map((unit) => unit.name).join(', ')}
-									</span>
-								</p>
-							) : null}
-						</div>
-					</Rise>
 				</div>
 			</div>
 
