@@ -9,11 +9,12 @@ import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import { ThemeToggle } from './theme-toggle'
 
-/* The explainers: what each level does, and how the region hands its powers
-   down to them. */
+/* The explainers: what each level does, how the region hands its powers down
+   to them, and the code all of it rests on. */
 const guides = [
 	{ href: '/how-it-works', label: 'What each level does' },
 	{ href: '/devolution', label: 'Devolution' },
+	{ href: '/governance-code', label: 'Governance Code' },
 ] as const
 
 /* The money: each unit's own books, and what the region's budget puts where. */
@@ -150,10 +151,10 @@ export function SiteNav() {
 						</Link>
 					</div>
 
-					{/* Four menus fit on one line from 1280px; below that the menu button carries them. */}
+					{/* The menus sit on one line from 1280px; below that the menu button carries them. */}
 					<nav className='hidden items-center justify-center gap-1 whitespace-nowrap xl:flex'>
-						{/* Three doors: the profiles of the places, how the system works, and
-						    the places side by side. */}
+						{/* Three doors: the profiles of the places, how the system and its law
+						    work, and the money. */}
 						<Menu label='LGU profiles' active={isProvinceActive} width='w-[17rem]'>
 							{(close) => [
 								<Link key='all' href='/' onClick={close} className='nav-menu-item'>
@@ -178,7 +179,7 @@ export function SiteNav() {
 						{/* The directory answers which unit you are in; the guides answer
 						    what it is for and which law it runs on, which is the question a
 						    reader who is not already a local government officer arrives with. */}
-						<Menu label='How it works' active={isGuideActive} width='w-[17rem]'>
+						<Menu label='Learn' active={isGuideActive} width='w-[17rem]'>
 							{(close) =>
 								guides.map((item) => (
 									<Link
@@ -202,10 +203,6 @@ export function SiteNav() {
 								))
 							}
 						</Menu>
-
-						<Link href='/governance-code' data-active={pathname.startsWith('/governance-code')} className='nav-item'>
-							Governance Code
-						</Link>
 					</nav>
 
 					<div className='flex items-center justify-end gap-1.5'>
@@ -289,7 +286,7 @@ export function SiteNav() {
 								))}
 							</div>
 
-							<p className='bb-label mt-7'>How it works</p>
+							<p className='bb-label mt-7'>Learn</p>
 							<div className='mt-3 grid'>
 								{guides.map((item) => (
 									<Link
@@ -315,13 +312,6 @@ export function SiteNav() {
 										{item.label}
 									</Link>
 								))}
-							</div>
-
-							<p className='bb-label mt-7'>Governance Code</p>
-							<div className='mt-3 grid'>
-								<Link href='/governance-code' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5'>
-									The Bangsamoro Local Governance Code
-								</Link>
 							</div>
 						</nav>
 					</motion.div>
