@@ -160,8 +160,13 @@ function NtaChart({ unitKey }: { unitKey: string }) {
 							</span>
 							{nta ? (
 								<div
-									className='w-full max-w-16 bg-[var(--accent)]'
-									style={{ height: `calc(${(nta / top) * 100}% - 1.5rem)`, minHeight: '2px' }}
+									className='w-full max-w-16'
+									style={{
+										height: `calc(${(nta / top) * 100}% - 1.5rem)`,
+										minHeight: '2px',
+										// One hue, solid at the top and fading to the baseline.
+										background: 'linear-gradient(to top, color-mix(in oklab, var(--accent) 40%, transparent), var(--accent))',
+									}}
 									title={`FY ${year}: ₱${nta.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}
 								/>
 							) : (
