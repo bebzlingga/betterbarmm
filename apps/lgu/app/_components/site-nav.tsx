@@ -20,8 +20,8 @@ const guides = [
 
 /* The money: each unit's own books, and what the region's budget puts where. */
 const finances = [
-	{ href: '/stats', label: 'LGU finances' },
-	{ href: '/spending', label: 'Regional budget' },
+	{ href: '/finances', label: 'LGU finances' },
+	{ href: '/regional-budget', label: 'Regional budget' },
 ] as const
 
 /**

@@ -216,7 +216,7 @@ export default function DevolutionPage() {
 					<p className={`mt-5 ${P}`}>
 						What it devolves is paid for mainly from each unit’s share of national taxes and its own revenues (Sec.
 						18), which is why the{' '}
-						<Link href='/stats' className='rule-link'>
+						<Link href='/finances' className='rule-link'>
 							finances
 						</Link>{' '}
 						of a town say so much about what it can actually deliver.

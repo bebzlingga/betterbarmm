@@ -13,9 +13,14 @@ const nextConfig: NextConfig = {
 	experimental: {
 		externalDir: true,
 	},
-	// "The two codes" became the Governance Code page, which keeps its comparison.
+	// Old addresses of renamed pages: "The two codes" became the Governance
+	// Code page, and the URLs now say what is on them.
 	async redirects() {
-		return [{ source: '/two-codes', destination: '/governance-code', permanent: true }]
+		return [
+			{ source: '/two-codes', destination: '/governance-code', permanent: true },
+			{ source: '/stats', destination: '/finances', permanent: true },
+			{ source: '/spending', destination: '/regional-budget', permanent: true },
+		]
 	},
 }
 
