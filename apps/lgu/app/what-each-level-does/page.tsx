@@ -447,23 +447,45 @@ export default function HowItWorksPage() {
 			</Section>
 
 			{/* ---- The calendar ---- */}
-			<Section id='calendar' lead='The same calendar at every level. A council that misses the last one stops doing anything else.'>
-
-				<ol className='mt-12 grid gap-x-8 gap-y-8 sm:grid-cols-2 xl:grid-cols-5'>
-					{CALENDAR.map((step, index) => (
-						<li key={step.when} className='border-t-2 border-[var(--accent)] pt-4'>
-							<p className='num font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-mute)]'>
-								Step {index + 1}
-							</p>
-							<p className='money num mt-2 text-[1.35rem] font-extrabold leading-none tracking-[-0.02em] text-[var(--ink)]'>
-								{step.when}
-							</p>
-							<p className='mt-3 text-[12.5px] leading-6 text-[var(--ink-2)]'>{step.what}</p>
-							<p className='mt-2 font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
-								{step.basis}
-							</p>
-						</li>
-					))}
+			<Section
+				id='calendar'
+				lead='Every province, city, municipality and barangay passes its budget on the same dates. If the council misses the last one, it can do nothing else until the budget is passed.'
+			>
+				{/* A timeline: across on a wide screen, down on a phone. The open dot,
+				    on a dashed line, is what happens only if the deadline slips. */}
+				<ol className='mt-12 xl:grid xl:grid-cols-5 xl:gap-x-8'>
+					{CALENDAR.map((step, index) => {
+						const late = step.when.startsWith('+')
+						const number = CALENDAR.slice(0, index + 1).filter((s) => !s.when.startsWith('+')).length
+						return (
+							<li key={step.when} className='relative pb-10 pl-10 last:pb-0 xl:pb-0 xl:pl-0 xl:pt-12'>
+								{index < CALENDAR.length - 1 ? (
+									<span
+										aria-hidden='true'
+										className={`absolute bottom-0 left-[7px] top-5 w-0.5 xl:-right-8 xl:bottom-auto xl:left-4 xl:top-[7px] xl:h-0.5 xl:w-auto ${
+											index === 2 || late ? 'bg-[repeating-linear-gradient(to_bottom,var(--accent)_0_6px,transparent_6px_12px)] xl:bg-[repeating-linear-gradient(to_right,var(--accent)_0_6px,transparent_6px_12px)]' : 'bg-[var(--accent)]'
+										}`}
+									/>
+								) : null}
+								<span
+									aria-hidden='true'
+									className={`absolute left-0 top-1 size-4 rounded-full border-2 border-[var(--accent)] xl:top-0 ${
+										late ? 'bg-[var(--paper)]' : 'bg-[var(--accent)]'
+									}`}
+								/>
+								<p className='num font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-mute)]'>
+									{late ? 'If late' : `Step ${number}`}
+								</p>
+								<p className='money num mt-2 text-[1.35rem] font-extrabold leading-none tracking-[-0.02em] text-[var(--ink)]'>
+									{step.when}
+								</p>
+								<p className='mt-3 text-[13px] leading-6 text-[var(--ink-2)]'>{step.what}</p>
+								<p className='mt-2 font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+									{step.basis}
+								</p>
+							</li>
+						)
+					})}
 				</ol>
 
 				<Rise distance={12}>
