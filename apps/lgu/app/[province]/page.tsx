@@ -20,7 +20,6 @@ import {
 	lguProvinces,
 	personName,
 	officialsTerms,
-	unaccounted,
 	type LguProvince,
 	type LguUnit,
 } from '@betterbarmm/lgu-data'
@@ -107,7 +106,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 	const cities = province.municipalities.filter((unit) => unit.isCity)
 	const biggest = largestUnits(province)
 	const change = growth(province)
-	const gap = unaccounted(province)
 	const roster = rosterCoverage(province.municipalities)
 
 	// This province against the region it sits in. The dataset's regional total
@@ -199,40 +197,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 						</div>
 					</Rise>
 				</div>
-
-				{/* Where the province figure and its own municipalities disagree, the
-				    page says so and by how much. A total that silently fails to match
-				    the list under it is the kind of thing a reader notices second and
-				    stops trusting the page over. */}
-				{province.populationNote || gap ? (
-					<Rise delay={0.2} distance={12}>
-						<div className='mt-10 border-l-2 border-[var(--brass)] bg-[var(--paper-2)] px-5 py-4'>
-							<p className='bb-label'>About this figure</p>
-							<div className='bb-measure mt-3 space-y-2 text-[12.5px] leading-6 text-[var(--ink-2)]'>
-								{province.populationNote ? <p>{province.populationNote}</p> : null}
-								{gap ? (
-									<p>
-										The cities and municipalities below add up to{' '}
-										<span className='num font-semibold text-[var(--ink)]'>
-											{formatNumber((province.population ?? 0) - gap.people)}
-										</span>
-										, which is {formatNumber(Math.abs(gap.people))}{' '}
-										{gap.people > 0 ? 'short of' : 'more than'} the provincial figure.
-										{gap.missingUnits > 0
-											? ` ${gap.missingUnits === 1 ? 'One unit has' : `${gap.missingUnits} units have`} no 2024 count in the record, and ${gap.missingUnits === 1 ? 'accounts' : 'account'} for the difference.`
-											: ' The source record does not explain the difference, so neither does this page.'}
-									</p>
-								) : null}
-								{province.populationSource === 'summed from municipalities' ? (
-									<p className='text-[var(--ink-mute)]'>
-										This province has no published census figure of its own here, so the total is
-										summed from its municipalities.
-									</p>
-								) : null}
-							</div>
-						</div>
-					</Rise>
-				) : null}
 			</LguMasthead>
 
 			{/* The towns first, because finding your own is why most people open a
