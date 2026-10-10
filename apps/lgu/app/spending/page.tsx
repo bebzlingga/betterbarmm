@@ -155,7 +155,7 @@ export default function SpendingPage() {
 			{/* ---- What this is not ---- */}
 			<section className='bb-container border-t border-[var(--rule)] bb-section'>
 				<Rise distance={14}>
-					<div className='grid gap-x-14 gap-y-8 lg:grid-cols-2'>
+					<div className='grid gap-y-12'>
 						<div>
 							<h2 className='bb-display-sm text-[var(--ink)]'>This is not a town’s budget.</h2>
 							<p className='mt-5 text-[13.5px] leading-7 text-[var(--ink-2)]'>
