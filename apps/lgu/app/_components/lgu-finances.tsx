@@ -246,9 +246,8 @@ export function LguFinances({ unitKey, name }: { unitKey: string; name: string }
 				</>
 			) : null}
 
-			{/* The smaller records, two to a row on a wide screen rather than one
-			    long column under the main table. */}
-			<div className='mt-14 grid gap-x-12 gap-y-14 lg:grid-cols-2 [&>*]:!mt-0 [&>*]:min-w-0'>
+			{/* The smaller records, each on its own full-width row (user decision). */}
+			<div className='mt-14 grid gap-y-14 [&>*]:!mt-0 [&>*]:min-w-0'>
 			{drrmYears.length ? (
 				<Block
 					title='Disaster fund: budgeted against spent'
