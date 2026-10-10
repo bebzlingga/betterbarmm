@@ -290,7 +290,7 @@ export function FinderTrigger({
 			type='button'
 			onClick={open}
 			aria-label='Find a city or municipality'
-			className={`inline-flex size-9 cursor-pointer items-center justify-center border border-[var(--rule)] text-[var(--ink-3)] transition hover:border-[var(--ink)] hover:text-[var(--ink)] ${className}`}
+			className={`inline-flex size-9 cursor-pointer items-center justify-center text-[var(--ink-3)] transition hover:text-[var(--ink)] ${className}`}
 		>
 			<MagnifyingGlassIcon className='size-4' aria-hidden='true' />
 		</button>
