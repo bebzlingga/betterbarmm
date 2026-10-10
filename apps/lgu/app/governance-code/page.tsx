@@ -425,7 +425,7 @@ export default function GovernanceCodePage() {
 						<p className={`mt-8 ${P}`}>
 							How a power moves, and what each level and office ends up doing, is set out on{' '}
 							<Link href='/devolution' className='rule-link'>
-								How devolution works
+								Devolution
 							</Link>
 							.
 						</p>

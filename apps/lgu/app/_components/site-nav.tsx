@@ -14,7 +14,7 @@ import { ThemeToggle } from './theme-toggle'
    either usually wants both. */
 const guides = [
 	{ href: '/how-it-works', label: 'What each level does' },
-	{ href: '/devolution', label: 'How devolution works' },
+	{ href: '/devolution', label: 'Devolution' },
 	{ href: '/spending', label: 'What the region spends where' },
 ] as const
 
