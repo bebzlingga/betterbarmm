@@ -313,7 +313,7 @@ export function LguFinances({
 					{certificates.length ? (
 						<ul className='mt-4'>
 							{certificates.map((c) => (
-								<li key={c.control} className='grid gap-x-6 border-b border-[var(--rule-soft)] py-3 md:grid-cols-[9rem_minmax(0,1fr)_8rem]'>
+								<li key={c.control} className='grid gap-x-6 border-b border-[var(--rule-soft)] py-3 md:grid-cols-[9rem_minmax(0,1fr)_8rem] md:items-baseline'>
 									<span className='num text-[12.5px] text-[var(--ink-3)]'>{c.date ?? '—'}</span>
 									<span className='text-[13px] leading-6 text-[var(--ink-2)]'>
 										<span className='font-semibold text-[var(--ink)]'>Cleared to borrow{c.barangay ? ` (Barangay ${c.barangay})` : ''}.</span>{' '}
@@ -340,7 +340,7 @@ export function LguFinances({
 					{releases.length ? (
 						<ul className='mt-4'>
 							{releases.map((release) => (
-								<li key={release.number} className='grid gap-x-6 border-b border-[var(--rule-soft)] py-3 md:grid-cols-[9rem_minmax(0,1fr)_8rem]'>
+								<li key={release.number} className='grid gap-x-6 border-b border-[var(--rule-soft)] py-3 md:grid-cols-[9rem_minmax(0,1fr)_8rem] md:items-baseline'>
 									<span className='num text-[12.5px] text-[var(--ink-3)]'>
 										{release.kind} · {release.date}
 									</span>
