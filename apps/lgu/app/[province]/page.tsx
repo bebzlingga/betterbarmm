@@ -175,8 +175,8 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 						<Rise delay={0.1} distance={14}>
 							<ShareBar
 								share={regionShare}
-								label={`${province.name}'s share of BARMM`}
-								ofLabel='The rest of the region'
+								label='Share of BARMM’s people'
+								ofLabel='The rest of BARMM’s people'
 								caption={false}
 							/>
 						</Rise>
