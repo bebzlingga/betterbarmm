@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Write datasets/lgu/finances.json — every line of BLGF's Statement of
 Receipts and Expenditures (SRE) for each BARMM province, city and
-municipality, FY 2020 to FY 2025: local taxes and fees, the NTA and other
+municipality, FY 2016 to FY 2025: local taxes and fees, the NTA and other
 transfers, spending by sector, capital outlay, borrowing, debt service and
 cash balances.
 
@@ -19,7 +19,7 @@ Rows are matched to the directory by name. Three things the directory does
 not hold:
   - Sulu (in BARMM until the Supreme Court's 2024 ruling) — left out, as in
     every other dataset here.
-  - Maguindanao before its 2022 split — its province rows for FY 2020–2022
+  - Maguindanao before its 2022 split — its province rows for FY 2016–2022
     go under "former", since neither successor province can claim them. Its
     towns match the successor they sit in now.
   - The eight Special Geographic Area towns (created 2024) — no SRE rows yet.
@@ -32,6 +32,10 @@ LBM 90-A totals to the peso).
 
 Sources (blgf.gov.ph/lgu-fiscal-data/ — sre.py has the curl line):
 
+    https://blgf.gov.ph/wp-content/uploads/2024/09/By-LGU-SRE-2016.xlsx
+    https://blgf.gov.ph/wp-content/uploads/2024/09/By-LGU-SRE-2017.xlsx
+    https://blgf.gov.ph/wp-content/uploads/2024/09/By-LGU-SRE-2018.xlsx
+    https://blgf.gov.ph/wp-content/uploads/2025/02/By-LGU-SRE-2019.xlsx
     https://blgf.gov.ph/wp-content/uploads/2024/09/By-LGU-SRE-2020.xlsx
     https://blgf.gov.ph/wp-content/uploads/2024/09/By-LGU-SRE-2021.xlsx
     https://blgf.gov.ph/wp-content/uploads/2024/09/By-LGU-SRE-2022.xlsx
@@ -49,6 +53,10 @@ from sre import BLGF, ROOT, SRC, first_sheet, norm, provinces, towns
 OUT = ROOT / 'datasets/lgu/finances.json'
 
 FILES = {
+    2016: ('2024/09', 'FY 2016'),
+    2017: ('2024/09', 'FY 2017'),
+    2018: ('2024/09', 'FY 2018'),
+    2019: ('2025/02', 'FY 2019'),
     2020: ('2024/09', 'FY 2020'),
     2021: ('2024/09', 'FY 2021'),
     2022: ('2024/09', 'FY 2022'),
@@ -137,9 +145,16 @@ for year, (folder, _) in FILES.items():
     head = next(i for i, r in enumerate(rows) if len(r) > 4 and r[4] in ('Province', 'City', 'Municipality'))
     for key, _, check in FIELDS:
         text = ' '.join(str(rows[i][COL[key]]) for i in range(head) if len(rows[i]) > COL[key] and rows[i][COL[key]])
-        assert check.lower() in text.lower(), f'{path.name}: column {COL[key]} is {text!r}, expected {key}'
+        # Spacing in the labels varies by year ("CAPITAL/ INVESTMENT"), so compare without it.
+        squash = lambda t: ''.join(t.lower().split())
+        assert squash(check) in squash(text), f'{path.name}: column {COL[key]} is {text!r}, expected {key}'
     for r in rows[head:]:
-        if len(r) <= FIRST or r[1] != 'BARMM' or norm(r[2]) == 'sulu':
+        # Before 2019 the region was ARMM, and Cotabato City sat in Region XII; it
+        # joined in the 2019 plebiscite, and the directory holds it throughout.
+        if len(r) <= FIRST:
+            continue
+        in_region = r[1] in ('BARMM', 'ARMM') or str(r[3]).strip().lower() == 'cotabato city'
+        if not in_region or norm(r[2]) == 'sulu':
             continue
         name, kind = r[3], r[4]
         target = units
@@ -185,7 +200,7 @@ data = {
         'row of numbers in the order of "fields". Debt is the flow in a year: loans and bonds taken, interest paid, '
         'principal repaid; no public source gives a per-LGU outstanding balance. A year left out is a year the LGU did '
         'not file (zero operating income); inside a filed year a zero is a zero. FY 2025 is BLGF’s preliminary release '
-        'and some rows are part-year. Barangays have no SRE: their money is not here. Sulu, in BARMM until 2024, is '
+        'and some rows are part-year. FY 2016–2018 are ARMM, before the Bangsamoro region existed; Cotabato City was then in Region XII. Barangays have no SRE: their money is not here. Sulu, in BARMM until 2024, is '
         'left out. Maguindanao’s province rows before its 2022 split are under "former"; its towns sit under the '
         'province they are in now. The eight Special Geographic Area towns, created in 2024, have no SRE rows yet. '
         'No per-LGU figure for FY 2026 is published yet.'

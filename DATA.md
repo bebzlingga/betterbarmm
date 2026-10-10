@@ -170,7 +170,7 @@ in a search result reports a party's seats as however many happened to match.
 - **`nta.json`** — each province, city and town's National Tax Allotment,
   FY 2023–2025, from BLGF's SRE.
 - **`finances.json`** (270 KB) — every line of BLGF's Statement of Receipts
-  and Expenditures for 105 provinces, cities and towns, FY 2020–2025: local
+  and Expenditures for 105 provinces, cities and towns, FY 2016–2025: local
   taxes, NTA, spending by sector, capital outlay, borrowing, interest and
   principal repaid, cash balances. What treasurers **reported spending**, not
   what councils appropriated. Pre-split Maguindanao's province rows sit under

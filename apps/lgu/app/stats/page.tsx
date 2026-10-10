@@ -7,7 +7,7 @@ import { StatsExplorer, type StatsData, type StatsUnit } from '../_components/st
 export const metadata: Metadata = {
 	title: 'LGU stats — Local government directory',
 	description:
-		'Every BARMM province, city and municipality ranked on what it collects and spends: local taxes, revenue per person, the NTA and how much of its income it is, spending, capital outlay and borrowing, FY 2020 to 2025.',
+		'Every BARMM province, city and municipality ranked on what it collects and spends: local taxes, revenue per person, the NTA and how much of its income it is, spending, capital outlay and borrowing, FY 2016 to 2025.',
 }
 
 /* The SRE lines the ranking reads, and the order they travel in. */
@@ -79,7 +79,7 @@ export default function StatsPage() {
 						<a href='https://blgf.gov.ph/lgu-fiscal-data/' target='_blank' rel='noreferrer' className='rule-link'>
 							BLGF Statement of Receipts and Expenditures by LGU
 						</a>
-						, FY 2020–2025. Barangays file none, so they are not here; the eight Special Geographic Area
+						, FY 2016–2025. Barangays file none, so they are not here; the eight Special Geographic Area
 						towns, created in 2024, have no rows yet.
 					</p>
 				</div>
