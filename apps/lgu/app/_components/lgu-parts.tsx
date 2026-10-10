@@ -161,11 +161,14 @@ export function ShareBar({
 	share,
 	label,
 	ofLabel,
+	caption = true,
 }: {
 	/** 0–100. */
 	share: number
 	label: string
 	ofLabel: string
+	/** Print `ofLabel` under the bar; off, it is only the remainder's tooltip. */
+	caption?: boolean
 }) {
 	const rest = Math.max(0, 100 - share)
 
@@ -196,9 +199,11 @@ export function ShareBar({
 				/>
 			</div>
 
-			<p className='mt-3 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
-				{ofLabel}
-			</p>
+			{caption ? (
+				<p className='mt-3 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+					{ofLabel}
+				</p>
+			) : null}
 		</div>
 	)
 }

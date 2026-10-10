@@ -153,13 +153,14 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 
 			{/* The province against the region, on a light band under the masthead. */}
 			<div className='bg-[var(--paper-2)]'>
-				<div className='bb-container grid gap-8 py-8 lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-16'>
+				<div className='bb-container grid gap-8 py-10 lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-16 lg:py-12'>
 					{regionShare != null ? (
 						<Rise delay={0.1} distance={14}>
 							<ShareBar
 								share={regionShare}
 								label={`${province.name}'s share of BARMM`}
 								ofLabel='The rest of the region'
+								caption={false}
 							/>
 						</Rise>
 					) : null}
