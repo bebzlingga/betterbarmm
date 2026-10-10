@@ -123,7 +123,7 @@ export function StatsExplorer({
 
 	return (
 		<div>
-			<div className='py-6 lg:py-10 grid grid-cols-2 gap-3 lg:grid-cols-[minmax(0,2fr)_repeat(4,minmax(0,1fr))] lg:items-end lg:gap-4'>
+			<div className='pb-6 lg:pb-10 grid grid-cols-2 gap-3 lg:grid-cols-[minmax(0,2fr)_repeat(4,minmax(0,1fr))] lg:items-end lg:gap-4'>
 				<label className='col-span-2 flex min-w-0 flex-col gap-1 lg:col-span-1'>
 					<span className='text-[12px] text-[var(--ink-3)]'>Search</span>
 					<span className='flex h-10 items-center gap-3 border border-[var(--rule)] px-3 focus-within:border-[var(--ink)]'>
