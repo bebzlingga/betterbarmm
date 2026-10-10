@@ -50,7 +50,7 @@ function display(value: number | string | null, format: DataColumn['format']): s
 		if (value >= 1e6) return `₱${(value / 1e6).toFixed(1)}M`
 		return `₱${Math.round(value).toLocaleString('en-PH')}`
 	}
-	if (format === 'area') return Math.round(value).toLocaleString('en-PH')
+	if (format === 'area') return `${Math.round(value).toLocaleString('en-PH')} km²`
 	if (format === 'pct') return `${(value * 100).toFixed(1)}%`
 	return value.toLocaleString('en-PH')
 }
@@ -108,6 +108,9 @@ export function DataTable({
 	const by = (key: string, numeric: boolean) =>
 		setSort((now) => (now.key === key ? { key, down: !now.down } : { key, down: numeric }))
 
+	// Figure columns take only the width their figures need (`w-px` with
+	// no wrap), with a fixed gap between them; the name and text columns
+	// take what is left.
 	const head = (key: string, label: string, numeric: boolean, className = '') => {
 		const active = sort.key === key
 		const Icon = active && sort.down ? ArrowDownIcon : ArrowUpIcon
@@ -116,7 +119,7 @@ export function DataTable({
 				key={key}
 				scope='col'
 				aria-sort={active ? (sort.down ? 'descending' : 'ascending') : 'none'}
-				className={`py-3 font-normal ${numeric ? 'pl-4 text-right' : 'pr-4 text-left'} ${className}`}
+				className={`py-3 font-normal ${numeric ? 'w-px whitespace-nowrap pl-4 text-right sm:pl-8 lg:pl-10' : 'pr-4 text-left'} ${className}`}
 			>
 				<button
 					type='button'
@@ -198,7 +201,7 @@ export function DataTable({
 									className={`py-3.5 ${
 										column.format === 'text'
 											? 'pr-4 text-left text-[14px] text-[var(--ink-2)]'
-											: 'num pl-4 pr-4 text-right text-[13px] tabular-nums text-[var(--ink)]'
+											: 'num whitespace-nowrap pl-4 pr-4 text-right text-[13px] tabular-nums text-[var(--ink)] sm:pl-8 lg:pl-10'
 									} ${column.hideBelow ? HIDE[column.hideBelow] : ''}`}
 									// A rounded amount shows its exact figure on hover.
 									title={

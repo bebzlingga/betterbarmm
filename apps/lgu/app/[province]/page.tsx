@@ -200,12 +200,11 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 									<DataTable
 										caption={`Cities and municipalities of ${province.name}`}
 										nameLabel='City or municipality'
-										filterLabel={province.municipalities.length > 12 ? 'cities and municipalities' : undefined}
 										columns={[
 											{ key: 'mayor', label: 'Mayor', format: 'text', hideBelow: 'md' },
 											{ key: 'population', label: 'Population', format: 'int' },
 											{ key: 'barangays', label: 'Barangays', format: 'int' },
-											{ key: 'area', label: 'Land area, km²', format: 'area', hideBelow: 'lg' },
+											{ key: 'area', label: 'Land area', format: 'area', hideBelow: 'lg' },
 											{ key: 'nta', label: `NTA, FY ${ntaYear}`, format: 'peso', hideBelow: 'sm' },
 										]}
 										rows={province.municipalities.map((unit) => toRow(province, unit, ntaYear))}
