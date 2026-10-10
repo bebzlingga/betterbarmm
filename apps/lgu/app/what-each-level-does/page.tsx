@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Rise } from '@betterbarmm/editorial'
 import { LOCAL_CHARGES, SERVICES, formatNumber, lguData } from '@betterbarmm/lgu-data'
-import { finances, row } from '@betterbarmm/lgu-data/fiscal'
 import { DocLayout } from '../_components/doc-layout'
 import type { TocItem } from '../_components/doc-toc'
 import { LguMasthead } from '../_components/lgu-parts'
@@ -178,87 +177,6 @@ const RUNGS = [
 	{ level: 'City or municipality', count: lguData.totals.lgus, groups: SERVICES.cityMunicipality },
 	{ level: 'Province', count: lguData.totals.provinces, groups: SERVICES.province },
 ] as const
-
-/* ------------------------------------------------------------
-   Where an LGU's money actually came from
-
-   Every province, city and municipality's reported income for the
-   latest fiscal year, summed by source from BLGF's Statements of
-   Receipts and Expenditures. Three slices because the chain above
-   names three sources; the National Tax Allotment is nearly all of it,
-   and the chart is there to make that impossible to miss.
-   ------------------------------------------------------------ */
-
-const PIE_YEAR = finances.years.at(-1)!
-
-const SOURCES = (() => {
-	const sum = (keys: string[]) =>
-		Object.keys(finances.units).reduce((total, unit) => {
-			const r = row(finances, unit, PIE_YEAR)
-			return total + keys.reduce((t, k) => t + (Number(r?.[k]) || 0), 0)
-		}, 0)
-	return [
-		{ label: 'National Tax Allotment', value: sum(['nta']), color: 'var(--accent)' },
-		{ label: 'Own taxes, fees and charges', value: sum(['localSources']), color: 'var(--brass)' },
-		{
-			label: 'Other national shares, transfers and grants',
-			value: sum(['otherNationalShares', 'interLocalTransfers', 'grants']),
-			color: 'var(--ink-mute)',
-		},
-	]
-})()
-
-const PIE_TOTAL = SOURCES.reduce((t, s) => t + s.value, 0)
-
-/* Slices as arcs of a circle of radius 1, from twelve o'clock clockwise. */
-const SLICES = SOURCES.map((source, i) => {
-	const before = SOURCES.slice(0, i).reduce((t, s) => t + s.value, 0)
-	const start = (before / PIE_TOTAL) * Math.PI * 2 - Math.PI / 2
-	const sweep = (source.value / PIE_TOTAL) * Math.PI * 2
-	const end = start + sweep
-	const d = `M0 0 L${Math.cos(start)} ${Math.sin(start)} A1 1 0 ${sweep > Math.PI ? 1 : 0} 1 ${Math.cos(end)} ${Math.sin(end)} Z`
-	return { ...source, d, share: (source.value / PIE_TOTAL) * 100 }
-})
-
-function SourcesPie() {
-	const total = PIE_TOTAL
-	const slices = SLICES
-	if (!total) return null
-	const billions = (v: number) => `₱${(v / 1e9).toFixed(1)}B`
-
-	return (
-		<figure className='m-0 mt-14 grid items-center gap-10 border-t border-[var(--brass-line)] pt-10 sm:grid-cols-[14rem_minmax(0,1fr)] sm:gap-14'>
-			<svg
-				viewBox='-1.02 -1.02 2.04 2.04'
-				className='mx-auto size-56 sm:mx-0'
-				role='img'
-				aria-label={slices.map((s) => `${s.label} ${s.share.toFixed(1)}%`).join(', ')}
-			>
-				{slices.map((s) => (
-					<path key={s.label} d={s.d} fill={s.color} stroke='var(--paper)' strokeWidth='0.02'>
-						<title>{`${s.label}: ${billions(s.value)} (${s.share.toFixed(1)}%)`}</title>
-					</path>
-				))}
-			</svg>
-			<div>
-				<ul>
-					{slices.map((s) => (
-						<li key={s.label} className='flex items-baseline gap-3 border-b border-[var(--rule-soft)] py-3'>
-							<span aria-hidden='true' className='size-2.5 shrink-0 translate-y-[1px]' style={{ background: s.color }} />
-							<span className='flex-1 text-[14px] text-[var(--ink-2)]'>{s.label}</span>
-							<span className='num text-[14px] font-semibold text-[var(--ink)]'>{s.share.toFixed(1)}%</span>
-							<span className='num w-16 text-right text-[13px] text-[var(--ink-3)]'>{billions(s.value)}</span>
-						</li>
-					))}
-				</ul>
-				<p className='mt-4 text-[12px] leading-5 text-[var(--ink-3)]'>
-					From BLGF’s Statements of Receipts and Expenditures. FY {PIE_YEAR} is preliminary; a unit that did not
-					report is not in the total.
-				</p>
-			</div>
-		</figure>
-	)
-}
 
 /** A labeled proportion bar. The width is the figure. */
 function ShareRow({
@@ -442,8 +360,6 @@ export default function HowItWorksPage() {
 						</li>
 					))}
 				</ol>
-
-				<SourcesPie />
 			</Section>
 
 			{/* ---- The calendar ---- */}
