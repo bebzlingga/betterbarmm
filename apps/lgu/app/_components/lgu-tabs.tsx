@@ -99,7 +99,7 @@ export function LguTabs({
 					id={`panel-${tab.id}`}
 					aria-labelledby={`tab-${tab.id}`}
 					hidden={active !== tab.id}
-					className='pt-14'
+					className='pt-8'
 				>
 					{tab.panel}
 				</div>
