@@ -241,13 +241,7 @@ function SourcesPie() {
 				))}
 			</svg>
 			<div>
-				<figcaption className='text-[15px] font-semibold text-[var(--ink)]'>
-					Where BARMM’s local governments’ money came from, FY {PIE_YEAR}
-				</figcaption>
-				<p className='mt-2 text-[13px] leading-6 text-[var(--ink-3)]'>
-					Every province, city and municipality together: {billions(total)} in reported income.
-				</p>
-				<ul className='mt-5'>
+				<ul>
 					{slices.map((s) => (
 						<li key={s.label} className='flex items-baseline gap-3 border-b border-[var(--rule-soft)] py-3'>
 							<span aria-hidden='true' className='size-2.5 shrink-0 translate-y-[1px]' style={{ background: s.color }} />
