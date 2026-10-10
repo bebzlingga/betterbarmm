@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Rise, SectionHead } from '@betterbarmm/editorial'
+import { Rise } from '@betterbarmm/editorial'
 import { areaSpending, pesoCell, spentIn, thinlyTagged } from '@betterbarmm/lgu-data'
 import { LguBreadcrumb, LguMasthead } from '../_components/lgu-parts'
 
@@ -35,25 +35,18 @@ export default function SpendingPage() {
 		<>
 			<LguMasthead
 				breadcrumb={<LguBreadcrumb trail={[]}>Spending</LguBreadcrumb>}
-				kicker='The money · Bangsamoro'
-				name='What the region builds, and where.'
-				note='Every itemised construction project in the seven enacted Bangsamoro Acts, summed by the area it names. This is regional money landing in a place — not that place’s own budget.'
+				kicker={`FY ${YEARS[0]} to FY ${YEARS[YEARS.length - 1]}`}
+				name={`${pesoCell(grand)}, across eight areas`}
+				note='Amounts as each Act appropriated them. Areas are reconciled to their present names — the region was redrawn inside this span, and every spelling the Acts used is kept under the row.'
 			/>
 
 			<section className='bb-container bb-section'>
-				<SectionHead
-					eyebrow={`FY ${YEARS[0]} to FY ${YEARS[YEARS.length - 1]}`}
-					size='sm'
-					title={`${pesoCell(grand)}, across eight areas`}
-					lead='Amounts as each Act appropriated them. Areas are reconciled to their present names — the region was redrawn inside this span, and every spelling the Acts used is kept under the row.'
-				/>
-
-				<p aria-hidden='true' className='mb-3 mt-12 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] lg:hidden'>
+				<p aria-hidden='true' className='mb-3 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] lg:hidden'>
 					Swipe for every year &rarr;
 				</p>
 				{/* The area column is pinned on a phone, so a swipe to FY 2026 still
 				    says whose row it is. */}
-				<div className='overflow-x-auto lg:-mx-8 lg:mt-12 lg:px-8'>
+				<div className='overflow-x-auto lg:-mx-8 lg:px-8'>
 					<table className='w-full min-w-[46rem] border-collapse text-[14.5px] lg:min-w-[54rem]'>
 						<caption className='sr-only'>
 							Bangsamoro construction appropriated into each area, in billions of pesos, by
