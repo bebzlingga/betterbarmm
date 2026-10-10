@@ -8,6 +8,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import { ThemeToggle } from './theme-toggle'
+import { FinderTrigger } from './unit-finder'
 
 /* The explainers: what each level does, how the region hands its powers down
    to them, and the code all of it rests on. */
@@ -92,7 +93,7 @@ function Menu({
 						exit={{ opacity: 0, y: -6, scaleY: 0.96 }}
 						transition={{ duration: 0.24, ease: EASE }}
 						style={{ originY: 0 }}
-						className={`absolute left-1/2 top-full z-40 mt-3 -translate-x-1/2 border border-[var(--rule)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] ${width}`}
+						className={`absolute right-0 top-full z-40 mt-3 border border-[var(--rule)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] ${width}`}
 					>
 						<span aria-hidden='true' className='absolute inset-x-0 top-0 h-px bg-[var(--brass)]' />
 						{children(() => setOpen(false))}
@@ -175,7 +176,7 @@ export function SiteNav() {
 					</div>
 
 					{/* The menus sit on one line from 1280px; below that the menu button carries them. */}
-					<nav className='hidden items-center justify-center gap-1 whitespace-nowrap xl:flex'>
+					<nav className='hidden items-center justify-end gap-1 whitespace-nowrap xl:flex'>
 						{/* Three doors: the profiles of the places, how the system and its law
 						    work, and the money. */}
 						<Menu label='LGU profiles' active={isProvinceActive} width='w-[17rem]'>
@@ -229,6 +230,7 @@ export function SiteNav() {
 					</nav>
 
 					<div className='flex items-center justify-end gap-1.5'>
+						<FinderTrigger />
 						<button
 							type='button'
 							aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
