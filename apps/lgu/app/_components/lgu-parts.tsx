@@ -91,9 +91,16 @@ export type LguFigure = {
  * them: on a brass rule, each a label, the number, and a line under it
  * that says what the number means.
  */
-export function LguFigures({ figures }: { figures: LguFigure[] }) {
+export function LguFigures({
+	figures,
+	className = 'mt-12 border-t border-[var(--brass-line)] pt-9',
+}: {
+	figures: LguFigure[]
+	/** The rule and space above; the masthead's by default. */
+	className?: string
+}) {
 	return (
-		<div className='mt-12 border-t border-[var(--brass-line)] pt-9'>
+		<div className={className}>
 			<Stagger gap={0.08} className='grid gap-x-8 gap-y-9 min-[380px]:grid-cols-2 sm:gap-x-12 sm:gap-y-10 lg:grid-cols-4 lg:gap-x-20'>
 				{figures.map((figure) => (
 					<StaggerItem key={figure.label}>
