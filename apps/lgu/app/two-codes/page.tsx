@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Rise, SectionHead } from '@betterbarmm/editorial'
 import { lguReferences } from '@betterbarmm/lgu-data'
-import { LguMasthead, LguBreadcrumb } from '../_components/lgu-parts'
+import { LguMasthead } from '../_components/lgu-parts'
 
 export const metadata: Metadata = {
 	title: 'The two codes',
@@ -123,6 +123,7 @@ export default function TwoCodesPage() {
 			<LguMasthead
 				kicker='The law · Bangsamoro'
 				name='Which code these units actually run on.'
+				noteBeside
 				note='Local government in the Philippines runs on the Local Government Code of 1991. Inside BARMM it does not — or not first. The Bangsamoro Local Governance Code of 2023 is the code that creates these offices, fixes their terms and their pay, and devolves the services, and the national one applies only where the Bangsamoro one is silent. Most of it is the same. This is the part that is not.'
 			/>
 

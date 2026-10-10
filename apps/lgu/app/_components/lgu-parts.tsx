@@ -96,6 +96,7 @@ export function LguMasthead({
 	name,
 	note,
 	noteBeside = false,
+	noteEnd = false,
 	children,
 }: {
 	breadcrumb?: React.ReactNode
@@ -106,6 +107,8 @@ export function LguMasthead({
 	note?: string
 	/** Set the note to the right of the name on a wide screen, not under it. */
 	noteBeside?: boolean
+	/** Right-align the note beside the name (Stats). */
+	noteEnd?: boolean
 	/** The figures row, and anything else that belongs above the fold. */
 	children?: React.ReactNode
 }) {
@@ -127,7 +130,7 @@ export function LguMasthead({
 
 					{note ? (
 						<Rise delay={0.25} distance={14}>
-							<p className={`mt-7 text-[15px] leading-8 text-[var(--ink-2)] ${noteBeside ? 'lg:mt-0 lg:text-right lg:leading-6' : 'lg:max-w-[75%]'}`}>
+							<p className={`mt-7 text-[15px] leading-8 text-[var(--ink-2)] ${noteBeside ? 'lg:mt-0' : 'lg:max-w-[75%]'} ${noteEnd ? 'lg:text-right lg:leading-6' : ''}`}>
 								{note}
 							</p>
 						</Rise>
