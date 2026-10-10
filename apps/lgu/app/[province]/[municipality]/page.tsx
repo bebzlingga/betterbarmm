@@ -129,6 +129,62 @@ function AtAGlance({ unit, province }: { unit: LguUnit; province: LguProvince })
 	)
 }
 
+/**
+ * The town's National Tax Allotment year by year: one series, so one hue and
+ * no legend, the figure printed over each column and the exact one on hover.
+ * A year with no report is drawn as a gap with a dash, never as zero.
+ */
+function NtaChart({ unitKey }: { unitKey: string }) {
+	const years = finances.years.map((year) => ({
+		year,
+		nta: (row(finances, unitKey, year)?.nta as number | null | undefined) ?? null,
+	}))
+	if (!years.some((one) => one.nta)) return null
+	const top = Math.max(...years.map((one) => one.nta ?? 0))
+	const short = (value: number) =>
+		value >= 1e9 ? `₱${(value / 1e9).toFixed(2)}B` : `₱${(value / 1e6).toFixed(1)}M`
+
+	return (
+		<figure className='m-0 mt-14 border-t border-[var(--ink)] pt-4'>
+			<figcaption className='flex flex-wrap items-baseline justify-between gap-2'>
+				<span className='text-[14px] font-semibold text-[var(--ink)]'>National Tax Allotment, by year</span>
+				<span className='text-[12.5px] text-[var(--ink-3)]'>
+					Reported to BLGF. FY {finances.years.at(-1)} is preliminary.
+				</span>
+			</figcaption>
+			<div className='mt-8 grid h-56 grid-cols-6 items-end gap-2 sm:gap-4'>
+				{years.map(({ year, nta }) => (
+					// The label rides on top of its bar; the bar's height is a share of
+					// the track under the label row, so the tallest one never overruns.
+					<div key={year} className='flex h-full flex-col items-center justify-end pt-6'>
+						<div className='flex w-full flex-1 flex-col items-center justify-end'>
+							<span className='num mb-1.5 whitespace-nowrap text-[10.5px] text-[var(--ink-2)] sm:text-[12.5px]'>
+								{nta ? short(nta) : '—'}
+							</span>
+							{nta ? (
+								<div
+									className='w-full max-w-16 bg-[var(--accent)]'
+									style={{ height: `calc(${(nta / top) * 100}% - 1.5rem)`, minHeight: '2px' }}
+									title={`FY ${year}: ₱${nta.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}
+								/>
+							) : (
+								<div className='h-px w-full max-w-16 bg-[var(--rule)]' aria-hidden='true' />
+							)}
+						</div>
+					</div>
+				))}
+			</div>
+			<div className='grid grid-cols-6 gap-2 border-t border-[var(--rule)] pt-2 sm:gap-4'>
+				{years.map(({ year }) => (
+					<span key={year} className='num text-center text-[12px] text-[var(--ink-3)]'>
+						{year}
+					</span>
+				))}
+			</div>
+		</figure>
+	)
+}
+
 function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) {
 	const change = growth(unit)
 	const roster = rosterCoverage([unit])
@@ -224,6 +280,8 @@ function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) 
 				</a>
 			</div>
 		</div>
+
+		<NtaChart unitKey={`${province.slug}/${unit.slug}`} />
 
 		{/* How the town is classed, audited and recognised — about the unit, not
 		    its money, so here rather than under Finances (user decision). */}
