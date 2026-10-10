@@ -123,8 +123,8 @@ export function StatsExplorer({
 
 	return (
 		<div>
-			<div className='pb-6 lg:pb-10 grid grid-cols-2 gap-3 lg:grid-cols-[minmax(0,2fr)_repeat(2,minmax(0,1fr))_9rem_8rem] lg:items-end lg:gap-4'>
-				<label className='col-span-2 flex min-w-0 flex-col gap-1 lg:col-span-1'>
+			<div className='pb-6 lg:pb-10 grid grid-cols-2 gap-3 lg:grid-cols-[minmax(0,1fr)_15rem_9rem_9rem_8rem] lg:items-end lg:gap-4'>
+				<label className='col-span-2 flex w-full min-w-0 max-w-[26rem] flex-col gap-1 lg:col-span-1'>
 					<span className='text-[12px] text-[var(--ink-3)]'>Search</span>
 					<span className='flex h-10 items-center gap-3 border border-[var(--rule)] bg-[var(--paper-2)] px-3 focus-within:border-[var(--ink)]'>
 						<MagnifyingGlassIcon className='size-4 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
