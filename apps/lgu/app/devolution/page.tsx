@@ -6,13 +6,13 @@ import type { TocItem } from '../_components/doc-toc'
 import { LguMasthead } from '../_components/lgu-parts'
 
 export const metadata: Metadata = {
-	title: 'Devolution',
+	title: 'How devolution works',
 	description:
 		'What the Bangsamoro Local Governance Code hands down from the region to its provinces, cities, municipalities and barangays: how a power moves, who already has it, the services each level owes, and the offices that deliver them.',
 }
 
 /* ============================================================
-   Devolution
+   How devolution works
 
    Read from the operative sections of the Code (datasets/bills/
    blgc.json) and its implementing rules (blgc-irr.json), each
@@ -187,7 +187,7 @@ function Fields({ fields }: { fields: Field[] }) {
 export default function DevolutionPage() {
 	return (
 		<>
-			<LguMasthead kicker='The guide · Bangsamoro' name='Devolution' />
+			<LguMasthead kicker='The guide · Bangsamoro' name='How devolution works' />
 
 			<DocLayout
 				toc={TOC}
