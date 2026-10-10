@@ -145,14 +145,8 @@ function NtaChart({ unitKey }: { unitKey: string }) {
 		value >= 1e9 ? `₱${(value / 1e9).toFixed(2)}B` : `₱${(value / 1e6).toFixed(1)}M`
 
 	return (
-		<figure className='m-0 mt-10 border-t border-[var(--rule)] pt-4'>
-			<figcaption className='flex flex-wrap items-baseline justify-between gap-2'>
-				<span className='text-[14px] font-semibold text-[var(--ink)]'>National Tax Allotment, by year</span>
-				<span className='text-[12.5px] text-[var(--ink-3)]'>
-					Reported to BLGF. FY {finances.years.at(-1)} is preliminary.
-				</span>
-			</figcaption>
-			<div className='mt-6 grid h-44 grid-cols-6 items-end gap-2 sm:gap-4'>
+		<figure className='m-0 mt-10'>
+			<div className='grid h-44 grid-cols-6 items-end gap-2 sm:gap-4'>
 				{years.map(({ year, nta }) => (
 					// The label rides on top of its bar; the bar's height is a share of
 					// the track under the label row, so the tallest one never overruns.
@@ -181,6 +175,12 @@ function NtaChart({ unitKey }: { unitKey: string }) {
 					</span>
 				))}
 			</div>
+			<figcaption className='mt-4 flex flex-wrap items-baseline justify-between gap-2'>
+				<span className='text-[14px] font-semibold text-[var(--ink)]'>National Tax Allotment, by year</span>
+				<span className='text-[12.5px] text-[var(--ink-3)]'>
+					Reported to BLGF. FY {finances.years.at(-1)} is preliminary.
+				</span>
+			</figcaption>
 		</figure>
 	)
 }
