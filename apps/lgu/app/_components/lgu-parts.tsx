@@ -95,6 +95,7 @@ export function LguMasthead({
 	kicker,
 	name,
 	note,
+	noteBeside = false,
 	children,
 }: {
 	breadcrumb?: React.ReactNode
@@ -103,6 +104,8 @@ export function LguMasthead({
 	kicker: string
 	name: string
 	note?: string
+	/** Set the note to the right of the name on a wide screen, not under it. */
+	noteBeside?: boolean
 	/** The figures row, and anything else that belongs above the fold. */
 	children?: React.ReactNode
 }) {
@@ -119,13 +122,17 @@ export function LguMasthead({
 					</div>
 				</Rise>
 
-				<LineReveal lines={[name]} delay={0.06} className='bb-display-md mt-5 text-[var(--ink)]' />
+				<div className={noteBeside ? 'lg:grid lg:grid-cols-[1.1fr_1fr] lg:items-end lg:gap-16' : ''}>
+					<LineReveal lines={[name]} delay={0.06} className='bb-display-md mt-5 text-[var(--ink)]' />
 
-				{note ? (
-					<Rise delay={0.25} distance={14}>
-						<p className='mt-7 text-[15px] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>{note}</p>
-					</Rise>
-				) : null}
+					{note ? (
+						<Rise delay={0.25} distance={14}>
+							<p className={`mt-7 text-[15px] leading-8 text-[var(--ink-2)] ${noteBeside ? 'lg:mt-0' : 'lg:max-w-[75%]'}`}>
+								{note}
+							</p>
+						</Rise>
+					) : null}
+				</div>
 
 				{children}
 			</div>
