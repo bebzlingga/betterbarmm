@@ -185,8 +185,8 @@ function NtaChart({ unitKey }: { unitKey: string }) {
 				))}
 			</div>
 			<figcaption className='mt-4 flex flex-wrap items-baseline justify-between gap-2'>
-				<span className='text-[14px] font-semibold text-[var(--ink)]'>National Tax Allotment, by year</span>
-				<span className='text-[12.5px] text-[var(--ink-3)]'>
+				<span className='text-[12.5px] font-semibold text-[var(--ink)]'>National Tax Allotment, by year</span>
+				<span className='text-[11px] text-[var(--ink-3)]'>
 					Reported to BLGF. FY {finances.years.at(-1)} is preliminary.
 				</span>
 			</figcaption>
