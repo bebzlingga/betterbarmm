@@ -39,6 +39,10 @@ export function DisclosureTable({
 	return (
 		<div className='mt-12'>
 			<div className='flex flex-wrap items-center justify-between gap-x-6 gap-y-3 border-b border-[var(--brass-line)] pb-3'>
+				<p className='text-[12.5px] text-[var(--ink-3)]'>
+					<span className='num font-semibold text-[var(--ink)]'>{posted}</span> of {documents.length} documents
+					posted for {year}
+				</p>
 				<div role='group' aria-label='Year' className='flex flex-wrap gap-1'>
 					{years.map((y) => (
 						<button
@@ -56,10 +60,6 @@ export function DisclosureTable({
 						</button>
 					))}
 				</div>
-				<p className='text-[12.5px] text-[var(--ink-3)]'>
-					<span className='num font-semibold text-[var(--ink)]'>{posted}</span> of {documents.length} documents
-					posted for {year}
-				</p>
 			</div>
 
 			<p aria-hidden='true' className='mt-4 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] sm:hidden'>
