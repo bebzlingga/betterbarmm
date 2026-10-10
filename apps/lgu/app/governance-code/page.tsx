@@ -401,7 +401,7 @@ export default function GovernanceCodePage() {
 					<Section id='history' lead='It took two Parliaments.'>
 						<ol className='mt-6'>
 							{TIMELINE.map((step) => (
-								<li key={step.when} className='grid gap-x-4 border-b border-[var(--rule-soft)] py-3 text-[15px] leading-7 text-[var(--ink-2)] sm:grid-cols-[10rem_minmax(0,1fr)]'>
+								<li key={step.when} className='grid gap-x-4 border-b border-[var(--rule-soft)] py-3 text-[15px] leading-8 text-[var(--ink-2)] sm:grid-cols-[10rem_minmax(0,1fr)]'>
 									<span className='font-semibold text-[var(--ink)]'>{step.when}</span>
 									<span>{step.what}</span>
 								</li>

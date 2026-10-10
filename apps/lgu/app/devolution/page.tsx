@@ -174,7 +174,7 @@ function Fields({ fields }: { fields: Field[] }) {
 			{fields.map((row) => (
 				<li
 					key={row.field}
-					className='grid gap-x-6 border-b border-[var(--rule-soft)] py-3 text-[15px] leading-7 sm:grid-cols-[12rem_minmax(0,1fr)]'
+					className='grid gap-x-6 border-b border-[var(--rule-soft)] py-3 text-[15px] leading-8 sm:grid-cols-[12rem_minmax(0,1fr)]'
 				>
 					<span className='font-semibold text-[var(--ink)]'>{row.field}</span>
 					<span className='text-[var(--ink-2)]'>{row.what}</span>
