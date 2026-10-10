@@ -138,7 +138,7 @@ const TOC: TocItem[] = [
 	{ id: 'appointed-offices', label: 'In a province, city or municipality', depth: 2 },
 ]
 
-const H2 = 'scroll-mt-32 border-t border-[var(--rule)] pt-12 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
+const H2 = 'scroll-mt-32 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
 const H3 = 'scroll-mt-32 text-[1.1rem] font-semibold tracking-[-0.01em] text-[var(--ink)]'
 const P = 'text-[15.5px] leading-8 text-[var(--ink-2)]'
 const CITE = 'ml-3 text-[13px] font-normal text-[var(--ink-3)]'
@@ -147,7 +147,7 @@ const label = (id: string) => TOC.find((item) => item.id === id)!.label
 
 function Section({ id, children }: { id: string; children: React.ReactNode }) {
 	return (
-		<section className='mt-16 first:mt-0 [&:first-child>h2]:border-t-0 [&:first-child>h2]:pt-0'>
+		<section className='mt-20 first:mt-0'>
 			<h2 id={id} className={H2}>
 				{label(id)}
 			</h2>
