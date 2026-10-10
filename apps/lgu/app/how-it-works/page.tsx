@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import { Rise, SectionHead } from '@betterbarmm/editorial'
-import { LOCAL_CHARGES, SERVICES, formatNumber, lguData, lguReferences } from '@betterbarmm/lgu-data'
+import { LOCAL_CHARGES, SERVICES, formatNumber, lguData } from '@betterbarmm/lgu-data'
 import { LguBreadcrumb, LguMasthead } from '../_components/lgu-parts'
 import { LguTabs } from '../_components/lgu-tabs'
 import { Ladder, Lookups, Offices, TwoBallots } from '../_components/offices-guide'
@@ -557,59 +556,6 @@ export default function HowItWorksPage() {
 				</div>
 			</section>
 
-			{/* ---- The gap ---- */}
-			<section className='bb-container bb-section-bottom'>
-				<Rise distance={14}>
-					<div className='border-t border-[var(--brass-line)] pt-8'>
-						<h2 className='bb-display-sm max-w-3xl text-[var(--ink)]'>
-							What a particular town was given is not published anywhere.
-						</h2>
-						<p className='mt-5 max-w-3xl text-[13.5px] leading-7 text-[var(--ink-2)]'>
-							Not by MILG, and not in the Bangsamoro budget, which funds local government as one
-							regional total. It sits in each unit’s own appropriations ordinance. Three places
-							hold pieces of it.
-						</p>
-
-						<div className='mt-7 flex flex-wrap gap-x-8 gap-y-3 text-[13px]'>
-							<a href='https://blgf.gov.ph/' target='_blank' rel='noreferrer' className='rule-link'>
-								BLGF — income and expenditure
-							</a>
-							<a href='https://www.dbm.gov.ph/' target='_blank' rel='noreferrer' className='rule-link'>
-								DBM — National Tax Allotment
-							</a>
-							<a href='https://budget.betterbarmm.com' target='_blank' rel='noreferrer' className='rule-link'>
-								The regional budget, year by year
-							</a>
-						</div>
-
-						<p className='mt-8 text-[12.5px] leading-6 text-[var(--ink-3)]'>
-							Every figure here is from{' '}
-							<a
-								href={lguReferences.localGovernanceCode.href}
-								target='_blank'
-								rel='noreferrer'
-								className='rule-link'
-							>
-								{lguReferences.localGovernanceCode.label}
-							</a>{' '}
-							and its{' '}
-							<a
-								href={lguReferences.implementingRules.href}
-								target='_blank'
-								rel='noreferrer'
-								className='rule-link'
-							>
-								implementing rules
-							</a>
-							, cited section by section. How this code differs from the national one is{' '}
-							<Link href='/two-codes' className='rule-link'>
-								its own page
-							</Link>
-							.
-						</p>
-					</div>
-				</Rise>
-			</section>
 		</>
 	)
 }
