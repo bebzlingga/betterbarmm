@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import { Rise } from '@betterbarmm/editorial'
 import { areaSpending, pesoCell, spentIn, thinlyTagged } from '@betterbarmm/lgu-data'
 import { LguMasthead } from '../_components/lgu-parts'
@@ -152,28 +151,10 @@ export default function SpendingPage() {
 				</p>
 			</section>
 
-			{/* ---- What this is not ---- */}
+			{/* ---- How to read the table ---- */}
 			<section className='bb-container border-t border-[var(--rule)] bb-section'>
 				<Rise distance={14}>
 					<div className='grid gap-y-12'>
-						<div>
-							<h2 className='bb-display-sm text-[var(--ink)]'>This is not a town’s budget.</h2>
-							<p className='mt-5 text-[13.5px] leading-7 text-[var(--ink-2)]'>
-								It is the Bangsamoro Government appropriating construction into a place. A local
-								government unit’s own budget — its National Tax Allotment, its local taxes, what
-								its council actually voted — sits in its own appropriations ordinance, and
-								nothing publishes those together: not MILG, not the region, not DBM. Until
-								something does, no honest table of them can be drawn here.
-							</p>
-							<p className='mt-4 text-[13.5px] leading-7 text-[var(--ink-2)]'>
-								Where that money is supposed to go once it arrives —{' '}
-								<Link href='/how-it-works' className='rule-link'>
-									the floors and ceilings the Code sets
-								</Link>{' '}
-								— is on its own page.
-							</p>
-						</div>
-
 						<div>
 							<h3 className='bb-label'>Two things to read the table with</h3>
 							<ul className='mt-5'>
