@@ -40,6 +40,17 @@ export function LguDisclosure({ unitKey, name }: { unitKey: string; name: string
 				procurement plans, its quarterly statements and how it used its development and disaster funds, in three
 				conspicuous places and on DILG’s portal. This is what {name} has put on the portal since 2023.
 			</p>
+			{/* The portal filters by its own province and town ids, which it hands out
+			    only to signed-in users, so the closest public link is the region. */}
+			<a
+				href={`${fdpp.source[0].href}/index?region_filter=19`}
+				target='_blank'
+				rel='noreferrer'
+				className='mt-5 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[var(--ink)] underline decoration-[var(--rule)] underline-offset-4 transition hover:text-[var(--accent)]'
+			>
+				All BARMM postings on DILG’s portal
+				<ArrowUpRightIcon size={13} aria-hidden='true' />
+			</a>
 
 			{years.length === 0 ? (
 				<p className='mt-10 bg-[var(--paper-2)] px-6 py-5 text-[15px] leading-7 text-[var(--ink-2)]'>
