@@ -71,7 +71,7 @@ export default function StatsPage() {
 					<p>
 						<strong className='font-semibold text-[var(--ink-2)]'>Local taxes and fees</strong> are what the
 						unit raises itself: real property tax, business tax, fees and charges.{' '}
-						<strong className='font-semibold text-[var(--ink-2)]'>NTA share of income</strong> is BLGF&rsquo;s
+						<strong className='font-semibold text-[var(--ink-2)]'>NTA share</strong> is BLGF&rsquo;s
 						own ratio of the National Tax Allotment to regular income.
 					</p>
 					<p>
