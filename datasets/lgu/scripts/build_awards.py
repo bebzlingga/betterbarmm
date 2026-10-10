@@ -122,7 +122,7 @@ add('gawad-kalasag', 2024, 'gk24lds', 'Lanao del Sur', [None, 'Marawi City', 'Ba
 
 add('ltia', 2022, 'ltia22', 'Maguindanao', [('Ampatuan', {'barangay': 'Kauran'})],
     category='4th to 6th class municipalities', level='National 1st runner-up', conferred='2022-12')
-add('scflg', 2026, 'milg26', 'Cotabato City', ['Cotabato City'], conferred='2026-01-20')
+add('scflg', 2025, 'milg26', 'Cotabato City', ['Cotabato City'], conferred='2026-01-20')
 add('galing-pook', 2022, 'gp22', 'Basilan', [None], level='Winner',
     category='Advancing and Sustaining Good Governance and Community Actions towards Resiliency and Empowerment')
 add('galing-pook', 2022, 'gp22f', 'Maguindanao', ['Paglat'], level='Finalist',
@@ -168,15 +168,17 @@ add('milg-ltia', 2023, 'milg23', 'Basilan', [('Lamitan City', {'barangay': 'Mali
 add('milg-lgaip', 2023, 'milg23', 'Maguindanao', ['Paglat', 'Upi'], **M23)
 add('milg-logfa', 2023, 'lds', 'Lanao del Sur', [None], level='Ideal functionality')
 
+# The 6th Pagkilala, held 20 January 2026, honoured the 2025 cycle (user, 2026-10-10); the
+# BIO release names only the ceremony date, which `conferred` keeps.
 M26 = dict(conferred='2026-01-20')
-add('milg-lgaip', 2026, 'milg26', 'Basilan', ['Lamitan City'], **M26)
-add('milg-lgaip', 2026, 'milg26', 'Maguindanao del Norte', ['Parang'], **M26)
-add('milg-lla', 2026, 'milg26', 'Cotabato City', ['Cotabato City'], category='Independent component city', **M26)
-add('milg-lla', 2026, 'milg26', 'Basilan', ['Lamitan City'], category='Component city', **M26)
-add('milg-lla', 2026, 'milg26', 'Lanao del Sur', ['Marawi City'], category='Component city', **M26)
-add('milg-lla', 2026, 'milg26', 'Maguindanao del Norte', ['Sultan Kudarat'], category='Municipality', **M26)
-add('milg-lla', 2026, 'milg26', 'Maguindanao del Sur', ['Datu Piang', 'Datu Abdullah Sangki'], category='Municipality', **M26)
-add('milg-smb', 2026, 'milg26', 'Maguindanao del Sur', [('Ampatuan', {'barangay': 'Kauran'})], **M26)
+add('milg-lgaip', 2025, 'milg26', 'Basilan', ['Lamitan City'], **M26)
+add('milg-lgaip', 2025, 'milg26', 'Maguindanao del Norte', ['Parang'], **M26)
+add('milg-lla', 2025, 'milg26', 'Cotabato City', ['Cotabato City'], category='Independent component city', **M26)
+add('milg-lla', 2025, 'milg26', 'Basilan', ['Lamitan City'], category='Component city', **M26)
+add('milg-lla', 2025, 'milg26', 'Lanao del Sur', ['Marawi City'], category='Component city', **M26)
+add('milg-lla', 2025, 'milg26', 'Maguindanao del Norte', ['Sultan Kudarat'], category='Municipality', **M26)
+add('milg-lla', 2025, 'milg26', 'Maguindanao del Sur', ['Datu Piang', 'Datu Abdullah Sangki'], category='Municipality', **M26)
+add('milg-smb', 2025, 'milg26', 'Maguindanao del Sur', [('Ampatuan', {'barangay': 'Kauran'})], **M26)
 
 # What was looked for and not found, or found and left out. Missing is not failed.
 CHECKED = [

@@ -364,12 +364,18 @@ export function LguFinances({
 	)
 }
 
+/** Flip back on once the records below have been cross-checked. */
+const SHOW_RECOGNITION: boolean = false
+
 /**
  * How a unit is classed, audited and recognised: income class, the SGLG,
  * DTI's competitiveness index, COA opinions and other awards. About the unit
  * rather than its money, so a town shows it on its Overview.
  */
 export function LguRecognition({ unitKey }: { unitKey: string }) {
+	// Hidden until the class, seal and award records are cross-checked (user, 2026-10-10).
+	if (!SHOW_RECOGNITION) return null
+
 	const classes = incomeClass.units[unitKey]
 	const seals = sglg.units[unitKey] ?? {}
 	const ranks = cmci.units[unitKey] ?? {}
@@ -435,6 +441,10 @@ export function LguRecognition({ unitKey }: { unitKey: string }) {
 												award.level,
 												award.category,
 												award.rank ? `rank ${award.rank}` : null,
+												// A cycle awarded the next year says when it was handed out.
+												award.conferred && !award.conferred.startsWith(String(award.year))
+													? `awarded ${new Date(award.conferred).toLocaleDateString('en-PH', { month: 'long', year: 'numeric' })}`
+													: null,
 											]
 												.filter(Boolean)
 												.join(' · ')}

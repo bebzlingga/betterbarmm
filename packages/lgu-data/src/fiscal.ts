@@ -83,7 +83,7 @@ export const cmci = cmciFile as unknown as Dataset<
 export type Award = { id: string; name: string; agency: string; scope: 'national' | 'regional'; recognises: string }
 
 export const awards = awardsFile as unknown as Dataset<
-	{ award: string; year: number; level?: string; category?: string; rank?: number; barangay?: string; href: string }[]
+	{ award: string; year: number; conferred?: string; level?: string; category?: string; rank?: number; barangay?: string; href: string }[]
 > & { awards: Award[] }
 
 export const procurement = procurementFile as unknown as Dataset<
