@@ -118,9 +118,9 @@ function Bars({ items }: { items: { label: string; value: number }[] }) {
 			{items.map((item) => (
 				<li key={item.label} className='grid grid-cols-[minmax(0,11rem)_minmax(0,1fr)_auto] items-center gap-3'>
 					<span className='truncate text-[13px] text-[var(--ink-2)]'>{item.label}</span>
-					<span className='h-2.5 rounded-r-[4px] bg-[color-mix(in_oklab,var(--brass)_18%,transparent)]'>
+					<span className='h-2.5 bg-[color-mix(in_oklab,var(--brass)_18%,transparent)]'>
 						<span
-							className='block h-full rounded-r-[4px] bg-[var(--accent)]'
+							className='block h-full bg-[var(--accent)]'
 							style={{ width: `${(item.value / top) * 100}%` }}
 							title={`${item.label}: ${peso(item.value)} (${Math.round((item.value / total) * 100)}%)`}
 						/>
