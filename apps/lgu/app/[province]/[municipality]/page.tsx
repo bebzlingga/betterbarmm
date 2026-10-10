@@ -218,7 +218,7 @@ function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) 
 		<div>
 		<div className='grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16'>
 			<div>
-				<p className='text-[1.15rem] font-medium leading-[1.55] tracking-[-0.01em] text-[var(--ink)] sm:text-[1.35rem]'>
+				<p className='text-[15px] leading-8 text-[var(--ink-2)]'>
 					{opening(unit, province)} It is divided into {unit.barangays.length}{' '}
 					{unit.barangays.length === 1 ? 'barangay' : 'barangays'}
 					{unit.population != null
