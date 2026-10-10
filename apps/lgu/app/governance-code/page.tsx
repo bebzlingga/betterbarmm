@@ -322,7 +322,7 @@ const TOC: TocItem[] = OUTLINE.flatMap((section) => [
 
 const H2 = 'scroll-mt-32 border-t border-[var(--rule)] pt-12 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)] first:border-t-0 first:pt-0'
 const H3 = 'scroll-mt-32 text-[1.1rem] font-semibold tracking-[-0.01em] text-[var(--ink)]'
-const P = 'text-[15px] leading-8 text-[var(--ink-2)]'
+const P = 'text-[15px] leading-7 text-[var(--ink-2)]'
 
 function Topic({ title, cite, children }: { title: string; cite?: string; children: React.ReactNode }) {
 	return (
@@ -400,7 +400,7 @@ export default function GovernanceCodePage() {
 					<Section id='history' lead='It took two Parliaments.'>
 						<ol className='mt-6'>
 							{TIMELINE.map((step) => (
-								<li key={step.when} className='grid gap-x-4 border-b border-[var(--rule-soft)] py-3 text-[15px] leading-8 text-[var(--ink-2)] sm:grid-cols-[10rem_minmax(0,1fr)]'>
+								<li key={step.when} className='grid gap-x-4 border-b border-[var(--rule-soft)] py-3 text-[15px] leading-7 text-[var(--ink-2)] sm:grid-cols-[10rem_minmax(0,1fr)]'>
 									<span className='font-semibold text-[var(--ink)]'>{step.when}</span>
 									<span>{step.what}</span>
 								</li>

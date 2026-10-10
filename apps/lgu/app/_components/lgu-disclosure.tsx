@@ -40,7 +40,7 @@ export function LguDisclosure({ unitKey, name }: { unitKey: string; name: string
 
 	return (
 		<div>
-			<p className='max-w-[48rem] text-[15px] leading-8 text-[var(--ink-2)]'>
+			<p className='max-w-[48rem] text-[15px] leading-7 text-[var(--ink-2)]'>
 				Under DILG’s Full Disclosure Policy, every province, city and municipality must post its budget, its
 				procurement plans, its quarterly statements and how it used its development and disaster funds, in three
 				conspicuous places and on DILG’s portal. This is what {name} has put on the portal since 2023.

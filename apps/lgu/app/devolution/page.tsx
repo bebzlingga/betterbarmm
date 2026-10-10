@@ -140,7 +140,7 @@ const TOC: TocItem[] = [
 
 const H2 = 'scroll-mt-32 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
 const H3 = 'scroll-mt-32 text-[1.1rem] font-semibold tracking-[-0.01em] text-[var(--ink)]'
-const P = 'text-[15px] leading-8 text-[var(--ink-2)]'
+const P = 'text-[15px] leading-7 text-[var(--ink-2)]'
 const CITE = 'ml-3 text-[13px] font-normal text-[var(--ink-3)]'
 
 const label = (id: string) => TOC.find((item) => item.id === id)!.label
@@ -174,7 +174,7 @@ function Fields({ fields }: { fields: Field[] }) {
 			{fields.map((row) => (
 				<li
 					key={row.field}
-					className='grid gap-x-6 border-b border-[var(--rule-soft)] py-3 text-[15px] leading-8 sm:grid-cols-[12rem_minmax(0,1fr)]'
+					className='grid gap-x-6 border-b border-[var(--rule-soft)] py-3 text-[15px] leading-7 sm:grid-cols-[12rem_minmax(0,1fr)]'
 				>
 					<span className='font-semibold text-[var(--ink)]'>{row.field}</span>
 					<span className='text-[var(--ink-2)]'>{row.what}</span>

@@ -320,7 +320,7 @@ function Section({ id, lead, children }: { id: string; lead: string; children: R
 			<h2 id={id} className={H2}>
 				{TOC.find((item) => item.id === id)!.label}
 			</h2>
-			<p className='mt-5 text-[15px] leading-8 text-[var(--ink-2)]'>{lead}</p>
+			<p className='mt-5 text-[15px] leading-7 text-[var(--ink-2)]'>{lead}</p>
 			{children}
 		</section>
 	)
