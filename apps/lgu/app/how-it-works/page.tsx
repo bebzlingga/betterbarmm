@@ -3,7 +3,7 @@ import { Rise } from '@betterbarmm/editorial'
 import { LOCAL_CHARGES, SERVICES, formatNumber, lguData } from '@betterbarmm/lgu-data'
 import { DocLayout } from '../_components/doc-layout'
 import type { TocItem } from '../_components/doc-toc'
-import { LguBreadcrumb, LguMasthead } from '../_components/lgu-parts'
+import { LguMasthead } from '../_components/lgu-parts'
 import { LguTabs } from '../_components/lgu-tabs'
 import { Ladder, Lookups, Offices, TwoBallots } from '../_components/offices-guide'
 
@@ -330,7 +330,6 @@ export default function HowItWorksPage() {
 	return (
 		<>
 			<LguMasthead
-				breadcrumb={<LguBreadcrumb trail={[]}>How it works</LguBreadcrumb>}
 				kicker='The guide · Bangsamoro'
 				name='Where the money starts, and what is left to decide.'
 			/>
