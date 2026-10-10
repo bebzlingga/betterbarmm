@@ -35,6 +35,7 @@ import { provinceHistory, tookOffice } from '@betterbarmm/lgu-data/history'
 import { rosterCoverage } from '@betterbarmm/lgu-data/barangay-officials'
 import { LguTermPicker } from '../_components/lgu-term-picker'
 import { LguFinances } from '../_components/lgu-finances'
+import { LguDisclosure } from '../_components/lgu-disclosure'
 import { LguTabs } from '../_components/lgu-tabs'
 import { DataTable, type DataRow } from '../_components/data-table'
 import { finances, row } from '@betterbarmm/lgu-data/fiscal'
@@ -328,6 +329,16 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 										label: 'Finances',
 										panel: (
 											<LguFinances
+												unitKey={province.slug}
+												name={`the provincial government of ${province.name}`}
+											/>
+										),
+									},
+									{
+										id: 'disclosure',
+										label: 'Full disclosure',
+										panel: (
+											<LguDisclosure
 												unitKey={province.slug}
 												name={`the provincial government of ${province.name}`}
 											/>

@@ -36,6 +36,7 @@ import {
 } from '../../_components/lgu-officials'
 import { LguTabs } from '../../_components/lgu-tabs'
 import { LguFinances, LguRecognition } from '../../_components/lgu-finances'
+import { LguDisclosure } from '../../_components/lgu-disclosure'
 import { LguTermPicker } from '../../_components/lgu-term-picker'
 export function generateStaticParams() {
 	return allUnitParams()
@@ -600,6 +601,11 @@ export default async function UnitPage({
 							id: 'finances',
 							label: 'Finances',
 							panel: <LguFinances unitKey={`${province.slug}/${unit.slug}`} name={unit.name} recognition={false} />,
+						},
+						{
+							id: 'disclosure',
+							label: 'Full disclosure',
+							panel: <LguDisclosure unitKey={`${province.slug}/${unit.slug}`} name={unit.name} />,
 						},
 					]}
 				/>
