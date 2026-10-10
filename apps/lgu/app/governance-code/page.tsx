@@ -363,7 +363,6 @@ export default function GovernanceCodePage() {
 			<LguMasthead
 				kicker='BAA 49 · Bangsamoro Autonomy Act No. 49'
 				name='Bangsamoro Local Governance Code'
-				center
 			/>
 
 			<DocLayout
