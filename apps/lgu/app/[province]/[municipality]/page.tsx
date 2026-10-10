@@ -165,7 +165,7 @@ function NtaChart({ unitKey }: { unitKey: string }) {
 										height: `calc(${(nta / top) * 100}% - 1.5rem)`,
 										minHeight: '2px',
 										// One hue, solid at the top and fading to the baseline.
-										background: 'linear-gradient(to top, color-mix(in oklab, var(--accent) 75%, transparent), var(--accent))',
+										background: 'linear-gradient(to top, color-mix(in oklab, var(--accent) 20%, transparent), var(--accent))',
 									}}
 									title={`FY ${year}: ₱${nta.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}
 								/>
