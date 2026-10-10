@@ -8,7 +8,7 @@ import { LguTabs } from '../_components/lgu-tabs'
 import { Ladder, Lookups, Offices, TwoBallots } from '../_components/offices-guide'
 
 export const metadata: Metadata = {
-	title: 'How local government works',
+	title: 'What each level does',
 	description:
 		'Where the money starts, how it reaches a barangay, who approves the budget and by when, and how much of it is spoken for before anyone votes — the chain from national taxes to BARMM to your town, in figures.',
 }
@@ -331,7 +331,7 @@ export default function HowItWorksPage() {
 		<>
 			<LguMasthead
 				kicker='The guide · Bangsamoro'
-				name='Where the money starts, and what is left to decide.'
+				name='What each level of government does, and how it is paid for.'
 			/>
 
 			<DocLayout toc={TOC}>

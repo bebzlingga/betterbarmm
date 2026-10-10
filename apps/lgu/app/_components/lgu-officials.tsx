@@ -196,7 +196,7 @@ export function NoCanvass({ name }: { name: string }) {
 				COMELEC&rsquo;s results for this term carry no Certificate of Canvass for {name}. That
 				usually means the contest was postponed, or a failure of elections was declared and a
 				special election followed later. Rather than guess, this page shows nothing —{' '}
-				<a href='/how-it-works#where-to-look' className='rule-link'>
+				<a href='/what-each-level-does#where-to-look' className='rule-link'>
 					these offices
 				</a>{' '}
 				hold the current office-holders.

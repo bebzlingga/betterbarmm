@@ -20,6 +20,7 @@ const nextConfig: NextConfig = {
 			{ source: '/two-codes', destination: '/governance-code', permanent: true },
 			{ source: '/stats', destination: '/finances', permanent: true },
 			{ source: '/spending', destination: '/regional-budget', permanent: true },
+			{ source: '/how-it-works', destination: '/what-each-level-does', permanent: true },
 		]
 	},
 }

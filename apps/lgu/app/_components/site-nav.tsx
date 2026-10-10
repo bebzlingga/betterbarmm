@@ -13,7 +13,7 @@ import { FinderTrigger } from './unit-finder'
 /* The explainers: what each level does, how the region hands its powers down
    to them, and the code all of it rests on. */
 const guides = [
-	{ href: '/how-it-works', label: 'What each level does' },
+	{ href: '/what-each-level-does', label: 'What each level does' },
 	{ href: '/devolution', label: 'Devolution' },
 	{ href: '/governance-code', label: 'Governance Code' },
 ] as const

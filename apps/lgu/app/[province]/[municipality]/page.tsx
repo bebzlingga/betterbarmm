@@ -216,13 +216,13 @@ function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) 
 				</dl>
 
 				{/* Services and charges are set by the Code and read the same on all
-				    108 pages, so they live once, on How it works. */}
+				    108 pages, so they live once, on What each level does. */}
 				<a
-					href='/how-it-works#services'
+					href='/what-each-level-does#services'
 					className='mt-8 block border-t border-[var(--rule)] pt-4 text-[14px] leading-6 text-[var(--ink-2)] hover:text-[var(--accent)]'
 				>
 					What a {unitKind(unit)} must provide, and the most it may charge you, is set by the Bangsamoro
-					Local Governance Code — the same for every {unitKind(unit)}. <span className='font-semibold text-[var(--ink)] underline underline-offset-4'>See How it works</span>
+					Local Governance Code — the same for every {unitKind(unit)}. <span className='font-semibold text-[var(--ink)] underline underline-offset-4'>See what each level does</span>
 				</a>
 			</div>
 		</div>
@@ -392,11 +392,11 @@ function Officials({ unit, province }: { unit: LguUnit; province: LguProvince })
 			/>
 
 			{/* Which posts exist at each rung is set by law, not by the town, so it
-			    reads the same on all 108 of these pages. It lives on How it works
+			    reads the same on all 108 of these pages. It lives on What each level does
 			    now; what belongs here is the canvass above, and a way through
 			    to the general answer. */}
 			<div className='mt-14 grid gap-6 border-t border-[var(--brass-line)] pt-6 sm:grid-cols-2 sm:gap-10'>
-				<Link href='/how-it-works#offices' className='group flex items-start justify-between gap-4'>
+				<Link href='/what-each-level-does#offices' className='group flex items-start justify-between gap-4'>
 					<span>
 						<span className='block text-[15px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
 							The offices, and who fills them
@@ -413,7 +413,7 @@ function Officials({ unit, province }: { unit: LguUnit; province: LguProvince })
 					/>
 				</Link>
 
-				<Link href='/how-it-works#where-to-look' className='group flex items-start justify-between gap-4'>
+				<Link href='/what-each-level-does#where-to-look' className='group flex items-start justify-between gap-4'>
 					<span>
 						<span className='block text-[15px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
 							Where to find the current names

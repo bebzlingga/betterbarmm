@@ -546,8 +546,8 @@ export default function GovernanceCodePage() {
 								{lguReferences.nationalCode.label}
 							</a>
 							. What each level does day to day is on{' '}
-							<Link href='/how-it-works' className='rule-link'>
-								How it works
+							<Link href='/what-each-level-does' className='rule-link'>
+								What each level does
 							</Link>
 							.
 						</p>

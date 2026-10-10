@@ -4,7 +4,7 @@ import { APPOINTED_OFFICES, ELECTED_POSTS, lguLadder, lguLookups, lguReferences 
 
 /* The reference half of the workspace: who you elect at each rung, every post
    a unit has, and where the names this directory does not hold are kept. It
-   reads the same for every unit, so it lives once, on How it works. */
+   reads the same for every unit, so it lives once, on What each level does. */
 
 /**
  * The ladder of units, largest first.
