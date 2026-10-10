@@ -1,6 +1,6 @@
 'use client'
 
-import { CaretDownIcon, HandHeartIcon } from '@phosphor-icons/react'
+import { CaretDownIcon, HandHeartIcon, SquaresFourIcon } from '@phosphor-icons/react'
 import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo } from '@betterbarmm/editorial'
 import { AnimatePresence, motion } from 'motion/react'
 import { areaHref, lguProvinces } from '@betterbarmm/lgu-data'
@@ -123,6 +123,7 @@ export function SiteNav() {
 				base='https://betterbarmm.com'
 				current='lgu'
 				className='lgu-strip bg-[var(--paper-2)]'
+				switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
 				end={
 					<>
 						<ThemeToggle size='size-7' />

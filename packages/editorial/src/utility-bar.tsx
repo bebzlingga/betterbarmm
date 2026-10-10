@@ -49,6 +49,7 @@ export function UtilityBar({
 	links = ESTATE_LINKS,
 	className = '',
 	end,
+	switchIcon,
 }: {
 	base?: string
 	current?: WorkspaceKey
@@ -57,6 +58,8 @@ export function UtilityBar({
 	className?: string
 	/** Controls ranged after the links — a theme switch, a call to action. */
 	end?: React.ReactNode
+	/** An icon before "Workspace:" in the switch. */
+	switchIcon?: React.ReactNode
 }) {
 	return (
 		<div className={`utility-bar ${className}`}>
@@ -66,6 +69,7 @@ export function UtilityBar({
 				    script. Gone below `sm`; the main menu still reaches everything. */}
 				<details className='utility-bar-switch relative hidden sm:block'>
 					<summary className='utility-bar-link cursor-pointer list-none'>
+						{switchIcon}
 						<span className='font-bold'>Workspace:</span>
 						<span className='text-[var(--ink)]'>
 							{WORKSPACES.find((workspace) => workspace.key === current)?.label ?? 'BetterBARMM'}

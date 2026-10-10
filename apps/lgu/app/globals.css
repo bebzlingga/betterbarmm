@@ -269,8 +269,16 @@
    touch taller, and its rows stretch so the button runs its full height
    with no gap above or below; the links and the switch stay centred. */
 .lgu-strip > div {
-  min-height: 2.5rem;
+  min-height: 2.25rem;
   align-items: stretch;
+}
+
+.lgu-strip .utility-bar-link {
+  color: var(--ink-mute);
+}
+
+.lgu-strip .utility-bar-link:hover {
+  color: var(--accent);
 }
 
 .lgu-strip nav {
