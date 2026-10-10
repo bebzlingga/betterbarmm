@@ -195,7 +195,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 			{/* The towns first, because finding your own is why most people open a
 			    province page; the officials and the money are a tab away rather than
 			    a long scroll below. */}
-			<section className='bb-container bb-section'>
+			<section className='bb-container bb-section-bottom pt-6'>
 				<LguTabs
 					tabs={[
 						{

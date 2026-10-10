@@ -507,7 +507,7 @@ export default async function UnitPage({
 				<NtaChart unitKey={`${province.slug}/${unit.slug}`} />
 			</LguMasthead>
 
-			<section className='bb-container bb-section'>
+			<section className='bb-container bb-section-bottom pt-6'>
 				<LguTabs
 					tabs={[
 						{
