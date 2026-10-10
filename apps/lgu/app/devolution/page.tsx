@@ -385,7 +385,7 @@ export default function DevolutionPage() {
 										{([row.province, row.city, row.municipality] as Need[]).map((need, i) => (
 											<td
 												key={i}
-												className={`px-3 py-3 text-right ${need === 'R' ? 'text-[var(--ink)]' : 'text-[var(--ink-3)]'}`}
+												className={`px-3 py-3 text-right ${need === 'R' ? 'font-semibold text-[var(--accent)]' : 'text-[var(--ink-3)]'}`}
 											>
 												{NEED[need]}
 											</td>
