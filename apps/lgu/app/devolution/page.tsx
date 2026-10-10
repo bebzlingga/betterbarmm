@@ -374,7 +374,7 @@ export default function DevolutionPage() {
 							</thead>
 							<tbody>
 								{OFFICES.map((row) => (
-									<tr key={row.office} className='border-b border-[var(--rule-soft)] align-top'>
+									<tr key={row.office} className='border-b border-[var(--rule-soft)] align-middle'>
 										<td className='py-3 pr-4'>
 											<span className='font-semibold text-[var(--ink)]'>{row.office}</span>
 											<span className='block text-[12.5px] text-[var(--ink-3)]'>
