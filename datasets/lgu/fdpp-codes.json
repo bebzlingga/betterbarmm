@@ -1,0 +1,451 @@
+{
+ "base": "https://fdpp.dilg.gov.ph/fdpp/report/index?region_filter=19",
+ "units": {
+  "basilan": {
+   "province": "007"
+  },
+  "basilan/akbar": {
+   "province": "007",
+   "lgu": "08"
+  },
+  "basilan/al-barka": {
+   "province": "007",
+   "lgu": "09"
+  },
+  "basilan/hadji-mohammad-ajul": {
+   "province": "007",
+   "lgu": "10"
+  },
+  "basilan/hadji-muhtamad": {
+   "province": "007",
+   "lgu": "12"
+  },
+  "basilan/lamitan": {
+   "province": "007",
+   "lgu": "02"
+  },
+  "basilan/lantawan": {
+   "province": "007",
+   "lgu": "03"
+  },
+  "basilan/maluso": {
+   "province": "007",
+   "lgu": "04"
+  },
+  "basilan/sumisip": {
+   "province": "007",
+   "lgu": "05"
+  },
+  "basilan/tabuan-lasa": {
+   "province": "007",
+   "lgu": "13"
+  },
+  "basilan/tipo-tipo": {
+   "province": "007",
+   "lgu": "06"
+  },
+  "basilan/tuburan": {
+   "province": "007",
+   "lgu": "07"
+  },
+  "basilan/ungkaya-pukan": {
+   "province": "007",
+   "lgu": "11"
+  },
+  "cotabato-city/cotabato-city": {
+   "province": "087",
+   "lgu": "03"
+  },
+  "lanao-del-sur": {
+   "province": "036"
+  },
+  "lanao-del-sur/amai-manabilang": {
+   "province": "036",
+   "lgu": "37"
+  },
+  "lanao-del-sur/bacolod-kalawi": {
+   "province": "036",
+   "lgu": "01"
+  },
+  "lanao-del-sur/balabagan": {
+   "province": "036",
+   "lgu": "02"
+  },
+  "lanao-del-sur/balindong": {
+   "province": "036",
+   "lgu": "03"
+  },
+  "lanao-del-sur/bayang": {
+   "province": "036",
+   "lgu": "04"
+  },
+  "lanao-del-sur/binidayan": {
+   "province": "036",
+   "lgu": "05"
+  },
+  "lanao-del-sur/buadiposo-buntong": {
+   "province": "036",
+   "lgu": "33"
+  },
+  "lanao-del-sur/bubong": {
+   "province": "036",
+   "lgu": "06"
+  },
+  "lanao-del-sur/butig": {
+   "province": "036",
+   "lgu": "07"
+  },
+  "lanao-del-sur/calanogas": {
+   "province": "036",
+   "lgu": "32"
+  },
+  "lanao-del-sur/ditsaan-ramain": {
+   "province": "036",
+   "lgu": "24"
+  },
+  "lanao-del-sur/ganassi": {
+   "province": "036",
+   "lgu": "09"
+  },
+  "lanao-del-sur/kapai": {
+   "province": "036",
+   "lgu": "10"
+  },
+  "lanao-del-sur/kapatagan": {
+   "province": "036",
+   "lgu": "39"
+  },
+  "lanao-del-sur/lumba-bayabao": {
+   "province": "036",
+   "lgu": "11"
+  },
+  "lanao-del-sur/lumbaca-unayan": {
+   "province": "036",
+   "lgu": "41"
+  },
+  "lanao-del-sur/lumbatan": {
+   "province": "036",
+   "lgu": "12"
+  },
+  "lanao-del-sur/lumbayanague": {
+   "province": "036",
+   "lgu": "36"
+  },
+  "lanao-del-sur/madalum": {
+   "province": "036",
+   "lgu": "13"
+  },
+  "lanao-del-sur/madamba": {
+   "province": "036",
+   "lgu": "14"
+  },
+  "lanao-del-sur/maguing": {
+   "province": "036",
+   "lgu": "34"
+  },
+  "lanao-del-sur/malabang": {
+   "province": "036",
+   "lgu": "15"
+  },
+  "lanao-del-sur/marantao": {
+   "province": "036",
+   "lgu": "16"
+  },
+  "lanao-del-sur/marawi": {
+   "province": "036",
+   "lgu": "17"
+  },
+  "lanao-del-sur/marogong": {
+   "province": "036",
+   "lgu": "31"
+  },
+  "lanao-del-sur/masiu": {
+   "province": "036",
+   "lgu": "18"
+  },
+  "lanao-del-sur/mulondo": {
+   "province": "036",
+   "lgu": "19"
+  },
+  "lanao-del-sur/pagayawan": {
+   "province": "036",
+   "lgu": "20"
+  },
+  "lanao-del-sur/piagapo": {
+   "province": "036",
+   "lgu": "21"
+  },
+  "lanao-del-sur/picong": {
+   "province": "036",
+   "lgu": "35"
+  },
+  "lanao-del-sur/poona-bayabao": {
+   "province": "036",
+   "lgu": "22"
+  },
+  "lanao-del-sur/pualas": {
+   "province": "036",
+   "lgu": "23"
+  },
+  "lanao-del-sur/saguiaran": {
+   "province": "036",
+   "lgu": "25"
+  },
+  "lanao-del-sur/sultan-dumalondong": {
+   "province": "036",
+   "lgu": "40"
+  },
+  "lanao-del-sur/tagoloan-ii": {
+   "province": "036",
+   "lgu": "38"
+  },
+  "lanao-del-sur/tamparan": {
+   "province": "036",
+   "lgu": "26"
+  },
+  "lanao-del-sur/taraka": {
+   "province": "036",
+   "lgu": "27"
+  },
+  "lanao-del-sur/tubaran": {
+   "province": "036",
+   "lgu": "28"
+  },
+  "lanao-del-sur/tugaya": {
+   "province": "036",
+   "lgu": "29"
+  },
+  "lanao-del-sur/wao": {
+   "province": "036",
+   "lgu": "30"
+  },
+  "maguindanao-del-norte": {
+   "province": "087"
+  },
+  "maguindanao-del-norte/barira": {
+   "province": "087",
+   "lgu": "01"
+  },
+  "maguindanao-del-norte/buldon": {
+   "province": "087",
+   "lgu": "02"
+  },
+  "maguindanao-del-norte/datu-blah-t-sinsuat": {
+   "province": "087",
+   "lgu": "04"
+  },
+  "maguindanao-del-norte/datu-odin-sinsuat": {
+   "province": "087",
+   "lgu": "05"
+  },
+  "maguindanao-del-norte/kabuntalan": {
+   "province": "087",
+   "lgu": "06"
+  },
+  "maguindanao-del-norte/matanog": {
+   "province": "087",
+   "lgu": "07"
+  },
+  "maguindanao-del-norte/northern-kabuntalan": {
+   "province": "087",
+   "lgu": "08"
+  },
+  "maguindanao-del-norte/parang": {
+   "province": "087",
+   "lgu": "09"
+  },
+  "maguindanao-del-norte/sultan-kudarat": {
+   "province": "087",
+   "lgu": "10"
+  },
+  "maguindanao-del-norte/sultan-mastura": {
+   "province": "087",
+   "lgu": "11"
+  },
+  "maguindanao-del-norte/talitay": {
+   "province": "087",
+   "lgu": "12"
+  },
+  "maguindanao-del-norte/upi": {
+   "province": "087",
+   "lgu": "13"
+  },
+  "maguindanao-del-sur": {
+   "province": "088"
+  },
+  "maguindanao-del-sur/ampatuan": {
+   "province": "088",
+   "lgu": "01"
+  },
+  "maguindanao-del-sur/buluan": {
+   "province": "088",
+   "lgu": "02"
+  },
+  "maguindanao-del-sur/datu-abdullah-sangki": {
+   "province": "088",
+   "lgu": "03"
+  },
+  "maguindanao-del-sur/datu-anggal-midtimbang": {
+   "province": "088",
+   "lgu": "04"
+  },
+  "maguindanao-del-sur/datu-hoffer-ampatuan": {
+   "province": "088",
+   "lgu": "05"
+  },
+  "maguindanao-del-sur/datu-paglas": {
+   "province": "088",
+   "lgu": "06"
+  },
+  "maguindanao-del-sur/datu-piang": {
+   "province": "088",
+   "lgu": "07"
+  },
+  "maguindanao-del-sur/datu-salibo": {
+   "province": "088",
+   "lgu": "08"
+  },
+  "maguindanao-del-sur/datu-saudi-ampatuan": {
+   "province": "088",
+   "lgu": "09"
+  },
+  "maguindanao-del-sur/datu-unsay": {
+   "province": "088",
+   "lgu": "10"
+  },
+  "maguindanao-del-sur/gen-s-k-pendatun": {
+   "province": "088",
+   "lgu": "11"
+  },
+  "maguindanao-del-sur/guindulungan": {
+   "province": "088",
+   "lgu": "12"
+  },
+  "maguindanao-del-sur/mamasapano": {
+   "province": "088",
+   "lgu": "13"
+  },
+  "maguindanao-del-sur/mangudadatu": {
+   "province": "088",
+   "lgu": "14"
+  },
+  "maguindanao-del-sur/pagagawan": {
+   "province": "088",
+   "lgu": "15"
+  },
+  "maguindanao-del-sur/pagalungan": {
+   "province": "088",
+   "lgu": "16"
+  },
+  "maguindanao-del-sur/paglat": {
+   "province": "088",
+   "lgu": "17"
+  },
+  "maguindanao-del-sur/pandag": {
+   "province": "088",
+   "lgu": "18"
+  },
+  "maguindanao-del-sur/rajah-buayan": {
+   "province": "088",
+   "lgu": "19"
+  },
+  "maguindanao-del-sur/shariff-aguak": {
+   "province": "088",
+   "lgu": "20"
+  },
+  "maguindanao-del-sur/shariff-saydona-mustapha": {
+   "province": "088",
+   "lgu": "21"
+  },
+  "maguindanao-del-sur/south-upi": {
+   "province": "088",
+   "lgu": "22"
+  },
+  "maguindanao-del-sur/sultan-sa-barongis": {
+   "province": "088",
+   "lgu": "23"
+  },
+  "maguindanao-del-sur/talayan": {
+   "province": "088",
+   "lgu": "24"
+  },
+  "special-geographic-area": {
+   "province": "999"
+  },
+  "special-geographic-area/kadayangan": {
+   "province": "999",
+   "lgu": "03"
+  },
+  "special-geographic-area/kapalawan": {
+   "province": "999",
+   "lgu": "01"
+  },
+  "special-geographic-area/ligawasan": {
+   "province": "999",
+   "lgu": "07"
+  },
+  "special-geographic-area/malidegao": {
+   "province": "999",
+   "lgu": "06"
+  },
+  "special-geographic-area/nabalawag": {
+   "province": "999",
+   "lgu": "04"
+  },
+  "special-geographic-area/pahamuddin": {
+   "province": "999",
+   "lgu": "05"
+  },
+  "special-geographic-area/tugunan": {
+   "province": "999",
+   "lgu": "08"
+  },
+  "tawi-tawi": {
+   "province": "070"
+  },
+  "tawi-tawi/bongao": {
+   "province": "070",
+   "lgu": "02"
+  },
+  "tawi-tawi/languyan": {
+   "province": "070",
+   "lgu": "09"
+  },
+  "tawi-tawi/mapun": {
+   "province": "070",
+   "lgu": "03"
+  },
+  "tawi-tawi/panglima-sugala": {
+   "province": "070",
+   "lgu": "01"
+  },
+  "tawi-tawi/sapa-sapa": {
+   "province": "070",
+   "lgu": "10"
+  },
+  "tawi-tawi/sibutu": {
+   "province": "070",
+   "lgu": "11"
+  },
+  "tawi-tawi/simunul": {
+   "province": "070",
+   "lgu": "04"
+  },
+  "tawi-tawi/sitangkai": {
+   "province": "070",
+   "lgu": "05"
+  },
+  "tawi-tawi/south-ubian": {
+   "province": "070",
+   "lgu": "06"
+  },
+  "tawi-tawi/tandubas": {
+   "province": "070",
+   "lgu": "07"
+  },
+  "tawi-tawi/turtle-islands": {
+   "province": "070",
+   "lgu": "08"
+  }
+ }
+}

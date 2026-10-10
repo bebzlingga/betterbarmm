@@ -16,6 +16,7 @@
    ============================================================ */
 
 import file from '../../../datasets/lgu/fdpp.json'
+import codesFile from '../../../datasets/lgu/fdpp-codes.json'
 
 export type FdppPeriod = { year?: number; quarter?: number; label?: string }
 
@@ -36,4 +37,25 @@ export const fdpp = file as unknown as {
 	download: string
 	documents: { id: number; label: string }[]
 	units: Record<string, FdppPosting[]>
+}
+
+
+/**
+ * The portal's own filter for a unit: its province code, and for a city or
+ * municipality its two-digit code under it. Found by datasets/lgu/scripts/
+ * fdpp_codes.py, since the portal lists them only to signed-in users.
+ */
+const codes = codesFile as unknown as { base: string; units: Record<string, { province: string; lgu?: string }> }
+
+/**
+ * DILG's report filtered to one unit, or null. A province's filter takes in
+ * its towns as well — the portal has no way to ask for the province alone.
+ */
+export function fdppPortal(unitKey: string): { href: string; town: boolean } | null {
+	const code = codes.units[unitKey]
+	if (!code) return null
+	return {
+		href: `${codes.base}&province_filter=${code.province}${code.lgu ? `&lgu_filter=${code.lgu}` : ''}`,
+		town: Boolean(code.lgu),
+	}
 }

@@ -1,5 +1,5 @@
 import { ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
-import { fdpp, type FdppPeriod, type FdppPosting } from '@betterbarmm/lgu-data/fdpp'
+import { fdpp, fdppPortal, type FdppPeriod, type FdppPosting } from '@betterbarmm/lgu-data/fdpp'
 import { DisclosureTable, type DisclosureCell } from './disclosure-table'
 
 /* ============================================================
@@ -36,6 +36,7 @@ export function LguDisclosure({ unitKey, name }: { unitKey: string; name: string
 		cells[`${posting.document}:${column(posting)}`] ??= { href: `${fdpp.download}${posting.id}`, posted: when(posting.posted) }
 	}
 	const years = Object.keys(byYear).map(Number).sort((a, b) => b - a)
+	const portal = fdppPortal(unitKey)
 
 	return (
 		<div>
@@ -44,15 +45,17 @@ export function LguDisclosure({ unitKey, name }: { unitKey: string; name: string
 				procurement plans, its quarterly statements and how it used its development and disaster funds, in three
 				conspicuous places and on DILG’s portal. This is what {name} has put on the portal since 2023.
 			</p>
-			{/* The portal filters by its own province and town ids, which it hands out
-			    only to signed-in users, so the closest public link is the region. */}
 			<a
-				href={`${fdpp.source[0].href}/index?region_filter=19`}
+				href={portal?.href ?? `${fdpp.source[0].href}/index?region_filter=19`}
 				target='_blank'
 				rel='noreferrer'
 				className='mt-5 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[var(--ink)] underline decoration-[var(--rule)] underline-offset-4 transition hover:text-[var(--accent)]'
 			>
-				All BARMM postings on DILG’s portal
+				{portal?.town
+					? `All of ${name}’s postings on DILG’s portal`
+					: portal
+						? 'The province’s postings on DILG’s portal, its towns’ included'
+						: 'All BARMM postings on DILG’s portal'}
 				<ArrowUpRightIcon size={13} aria-hidden='true' />
 			</a>
 
@@ -61,7 +64,13 @@ export function LguDisclosure({ unitKey, name }: { unitKey: string; name: string
 					Nothing from {name} has been put on the portal since 2023.
 				</p>
 			) : (
-				<DisclosureTable years={years} documents={fdpp.documents} quarterly={QUARTERLY} byYear={byYear} />
+				<DisclosureTable
+					years={years}
+					documents={fdpp.documents}
+					quarterly={QUARTERLY}
+					byYear={byYear}
+					portal={portal?.town ? portal.href : undefined}
+				/>
 			)}
 
 			<p className='mt-10 text-[12.5px] leading-6 text-[var(--ink-3)]'>

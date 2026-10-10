@@ -1,6 +1,6 @@
 'use client'
 
-import { CheckIcon } from '@phosphor-icons/react'
+import { ArrowUpRightIcon, CheckIcon } from '@phosphor-icons/react'
 import { useState } from 'react'
 
 export type DisclosureCell = { href: string; posted: string }
@@ -19,6 +19,7 @@ export function DisclosureTable({
 	documents,
 	quarterly,
 	byYear,
+	portal,
 }: {
 	/** Newest first. */
 	years: number[]
@@ -27,6 +28,8 @@ export function DisclosureTable({
 	quarterly: number[]
 	/** `${document}:${column}` -> the posting, for each year. */
 	byYear: Record<number, Record<string, DisclosureCell>>
+	/** The town's filtered report on DILG's portal; each document name links into it. */
+	portal?: string
 }) {
 	const [year, setYear] = useState(years[0])
 	const cells = byYear[year] ?? {}
@@ -88,7 +91,23 @@ export function DisclosureTable({
 									scope='row'
 									className='sticky left-0 z-[1] bg-[var(--paper)] py-2.5 pr-4 text-left font-normal leading-6 text-[var(--ink)]'
 								>
-									{doc.label}
+									{portal ? (
+										<a
+											href={`${portal}&document_filter=${doc.id}&docperiod_filter=on&year_filter=${year}&quarter_filter=0`}
+											target='_blank'
+											rel='noreferrer'
+											className='group inline-flex items-baseline gap-1 transition hover:text-[var(--accent)]'
+										>
+											{doc.label}
+											<ArrowUpRightIcon
+												size={11}
+												className='shrink-0 text-[var(--ink-mute)] group-hover:text-[var(--accent)]'
+												aria-hidden='true'
+											/>
+										</a>
+									) : (
+										doc.label
+									)}
 								</th>
 								{COLUMNS.map((c) => {
 									const cell = cells[`${doc.id}:${c.key}`]
