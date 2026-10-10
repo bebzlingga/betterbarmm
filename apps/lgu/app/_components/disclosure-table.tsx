@@ -86,10 +86,10 @@ export function DisclosureTable({
 					</thead>
 					<tbody>
 						{documents.map((doc) => (
-							<tr key={doc.id} className='border-t border-[var(--rule-soft)]'>
+							<tr key={doc.id} className='group/row border-t border-[var(--rule-soft)] transition-colors hover:bg-[var(--paper-2)]'>
 								<th
 									scope='row'
-									className='sticky left-0 z-[1] bg-[var(--paper)] py-3.5 pr-4 text-left font-normal leading-6 text-[var(--ink)]'
+									className='sticky left-0 z-[1] bg-[var(--paper)] py-3.5 pr-4 text-left font-normal transition-colors group-hover/row:bg-[var(--paper-2)] leading-6 text-[var(--ink)]'
 								>
 									{portal ? (
 										<a
@@ -120,7 +120,7 @@ export function DisclosureTable({
 													target='_blank'
 													rel='noreferrer'
 													title={cell.posted ? `Posted ${cell.posted}` : 'Posted'}
-													className='inline-flex size-7 items-center justify-center text-[var(--accent)] transition hover:bg-[var(--paper-2)]'
+													className='inline-flex size-7 items-center justify-center text-[var(--accent)] transition hover:bg-[var(--paper-3)]'
 												>
 													<CheckIcon size={15} weight='bold' aria-hidden='true' />
 													<span className='sr-only'>
