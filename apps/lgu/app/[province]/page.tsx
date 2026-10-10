@@ -32,7 +32,6 @@ import {
 	SingleSeat,
 } from '../_components/lgu-officials'
 import { provinceHistory, tookOffice } from '@betterbarmm/lgu-data/history'
-import { rosterCoverage } from '@betterbarmm/lgu-data/barangay-officials'
 import { LguTermPicker } from '../_components/lgu-term-picker'
 import { LguFinances } from '../_components/lgu-finances'
 import { LguDisclosure } from '../_components/lgu-disclosure'
@@ -107,7 +106,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 	const cities = province.municipalities.filter((unit) => unit.isCity)
 	const biggest = largestUnits(province)
 	const change = growth(province)
-	const roster = rosterCoverage(province.municipalities)
 
 	// This province against the region it sits in. The dataset's regional total
 	// is summed from the same areas, so the two figures are measured the same way
@@ -185,12 +183,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 									since the 2020 census
 								</p>
 							) : null}
-							<p>
-								<span className='num font-semibold text-[var(--ink)]'>
-									{formatNumber(roster.listed)} of {formatNumber(roster.total)}
-								</span>{' '}
-								barangay captains in DILG&rsquo;s directory
-							</p>
 							{biggest.length > 0 && province.municipalities.length > 1 ? (
 								<p>
 									Largest:{' '}
