@@ -29,7 +29,7 @@ export type StatsUnit = {
 export type StatsData = Record<string, Record<string, (number | null)[]>>
 
 const COLUMNS: DataColumn[] = [
-	{ key: 'localSources', label: 'Local taxes and fees', format: 'pesoFull' },
+	{ key: 'localSources', label: 'Local taxes and fees', format: 'peso' },
 	{ key: 'nta', label: 'NTA', format: 'peso', hideBelow: 'md' },
 	{ key: 'ntaDependency', label: 'NTA share of income', format: 'pct', hideBelow: 'lg' },
 	{ key: 'operatingIncome', label: 'Total income', format: 'peso', hideBelow: 'md' },

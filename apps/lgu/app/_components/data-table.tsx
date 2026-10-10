@@ -200,6 +200,12 @@ export function DataTable({
 											? 'pr-4 text-left text-[14px] text-[var(--ink-2)]'
 											: 'num pl-4 pr-4 text-right text-[13px] tabular-nums text-[var(--ink)]'
 									} ${column.hideBelow ? HIDE[column.hideBelow] : ''}`}
+									// A rounded amount shows its exact figure on hover.
+									title={
+										column.format === 'peso' && typeof row.values[column.key] === 'number'
+											? display(row.values[column.key] ?? null, 'pesoFull')
+											: undefined
+									}
 								>
 									{display(row.values[column.key] ?? null, column.format)}
 								</td>
