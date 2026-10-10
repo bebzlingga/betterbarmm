@@ -53,7 +53,7 @@ export function DocToc({ items }: { items: TocItem[] }) {
 									item.depth === 1 ? 'pl-4' : 'pl-7'
 								} ${
 									on
-										? 'border-[var(--accent)] text-[var(--ink)]'
+										? 'border-[var(--accent)] font-semibold text-[var(--ink)]'
 										: 'border-transparent text-[var(--ink-3)] hover:text-[var(--ink)]'
 								}`}
 							>
