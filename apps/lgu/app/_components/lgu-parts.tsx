@@ -83,6 +83,8 @@ export type LguFigure = {
 	count?: number | null
 	/** Group thousands while counting — right for a population, wrong for a year. */
 	group?: boolean
+	/** Set before a counted value, e.g. ₱. */
+	prefix?: string
 	detail?: React.ReactNode
 }
 
@@ -106,7 +108,14 @@ export function LguFigures({
 					<StaggerItem key={figure.label}>
 						<p className='bb-label'>{figure.label}</p>
 						<p className='bb-figure-sm mt-4 text-[var(--ink)]'>
-							{figure.count == null ? figure.value : <Counter value={figure.count} group={figure.group ?? true} />}
+							{figure.count == null ? (
+								figure.value
+							) : (
+								<>
+									{figure.prefix}
+									<Counter value={figure.count} group={figure.group ?? true} />
+								</>
+							)}
 						</p>
 						{figure.detail ? (
 							<p className='mt-3 max-w-[16rem] text-[13px] leading-[1.55] text-[var(--ink-3)]'>{figure.detail}</p>

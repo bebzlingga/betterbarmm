@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { lguReferences } from '@betterbarmm/lgu-data'
 import { DocLayout } from '../_components/doc-layout'
 import type { TocItem } from '../_components/doc-toc'
-import { LguMasthead } from '../_components/lgu-parts'
+import { LguFigures, LguMasthead } from '../_components/lgu-parts'
 
 export const metadata: Metadata = {
 	title: 'Salaries and benefits',
@@ -104,6 +104,20 @@ const CLASSES = [
 	{ cls: '5th class', pc: '80%', mun: '70%' },
 ]
 
+/** The posts the masthead leads with, by their row in ELECTED. */
+const HEADLINE = [
+	['Governor', 'Governor'],
+	['Vice-Governor', 'Vice-Governor'],
+	['Sangguniang Panlalawigan member', 'Provincial board member'],
+	['City Mayor', 'City Mayor'],
+	['City Vice-Mayor', 'City Vice-Mayor'],
+	['Municipal Mayor', 'Municipal Mayor'],
+	['Municipal Vice-Mayor', 'Municipal Vice-Mayor'],
+	['Sangguniang Bayan member', 'Sangguniang Bayan member'],
+] as const
+
+const millions = (value: number) => `₱${(value / 1e6).toFixed(2)}M`
+
 const BARANGAY: { position: string; pay: string }[] = [
 	{ position: 'Punong Barangay', pay: 'At least ₱5,000 a month, and up to ₱38,764 (the first step of SG 14 in 2026)' },
 	{
@@ -187,7 +201,26 @@ function List({ items }: { items: string[] }) {
 export default function SalariesPage() {
 	return (
 		<>
-			<LguMasthead kicker='The guide · Bangsamoro' name='Salaries and benefits' />
+			<LguMasthead kicker='The guide · Bangsamoro' name='Salaries and benefits'>
+				<LguFigures
+					figures={HEADLINE.map(([position, label]) => {
+						const row = ELECTED.find((one) => one.position === position)!
+						return {
+							label,
+							value: peso(SG_2026[row.grade]),
+							count: SG_2026[row.grade],
+							prefix: '₱',
+							detail: (
+								<>
+									A month at SG {row.grade}.{' '}
+									<span className='font-semibold text-[var(--ink)]'>{millions(yearly(row))} a year</span> at most, with
+									allowances and bonuses.
+								</>
+							),
+						}
+					})}
+				/>
+			</LguMasthead>
 
 			<DocLayout
 				toc={TOC}
