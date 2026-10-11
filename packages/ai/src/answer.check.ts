@@ -49,7 +49,7 @@ const CASES: [question: string, wants: RegExp][] = [
 	['how many signatures are needed to recall a mayor?', /25\s?(per cent|%)/i],
 	['how long does barangay mediation take?', /15\s?days/i],
 	['how much does a barangay captain get paid?', /5,000/],
-	['how many barangays are in marawi?', /\b96\b/],
+	['how many barangays are in marawi?', /\b101\b/],
 	['how many tanods can a barangay have?', /\b30\b/],
 	['when is the deadline to pay real property tax?', /march|31/i],
 	['what is the term of a mayor?', /three|3\b/i],
