@@ -131,7 +131,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 			{/* The province in figures, and against the region, on a light band
 			    under the masthead. */}
 			<div className='bg-[var(--paper-2)]'>
-				<div className='bb-container py-10 lg:py-12'>
+				<div className='bb-container py-14 lg:py-18'>
 				{/* ---- The province in figures ---- */}
 				<Rise delay={0.3} distance={14}>
 					<LguFigures
@@ -169,7 +169,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				</Rise>
 				</div>
 				<div className='bb-container'>
-					<div className='grid gap-8 border-t border-[var(--brass-line)] py-10 lg:grid-cols-2 lg:items-center lg:gap-16 lg:py-12'>
+					<div className='grid gap-8 border-t border-[var(--brass-line)] py-14 lg:grid-cols-2 lg:items-center lg:gap-16 lg:py-18'>
 					{regionShare != null ? (
 						<p className='max-w-[34rem] text-[15px] leading-7 text-[var(--ink-2)]'>
 							{province.name} is home to{' '}
