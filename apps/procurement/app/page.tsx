@@ -20,7 +20,7 @@ export default function ProcurementHome() {
 				kicker='Procurement · Bangsamoro'
 				name='Who buys what'
 				chart
-				note='Every bid notice a BARMM government office has posted on PhilGEPS since 2015: what it set out to buy, its approved budget, and, where PhilGEPS records one, who won the contract and for how much.'
+				note='Every bid notice a BARMM government office has posted on PhilGEPS since 2019, when BARMM began: what it set out to buy, its approved budget, and, where PhilGEPS records one, who won the contract and for how much.'
 			>
 				<Figures
 					items={[

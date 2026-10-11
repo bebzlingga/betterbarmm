@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Write datasets/procurement/philgeps.json — every bid notice a BARMM
-procuring entity posted on PhilGEPS, and the awards made on them.
+procuring entity posted on PhilGEPS since 2019, the year BARMM began, and the
+awards made on them.
 
 Source: philgeps.gov.ph/CmsHomePages/open-data. Its dashboards are public
 Power BI reports, and the query endpoint behind them answers a plain POST
@@ -19,7 +20,8 @@ are read:
 
 Region is PhilGEPS's: an entity registered under BARMM. Sulu's province and
 towns, out of BARMM since 2024, and Isabela City, which PhilGEPS files under
-BARMM but is in Region IX, are left out, as everywhere on the site. Local
+BARMM but is in Region IX, are left out, as everywhere on the site, as are
+offices filed under the old ARMM and every notice before 2019. Local
 governments are matched to the LGU directory by name.
 
     python3 datasets/procurement/scripts/fetch_philgeps.py
@@ -124,7 +126,14 @@ def lgu_key(name, kind):
     return None
 
 
+ARMM = re.compile(r'\bARMM\b|AUTONOMOUS REGION IN MUSLIM MINDANAO', re.I)
+SINCE = '2019-01-01'  # BARMM was ratified in January 2019; ARMM's years before it are left out.
+
+
 def left_out(name, kind):
+    # Offices filed under the old ARMM, the region BARMM replaced.
+    if ARMM.search(name) and 'bangsamoro' not in name.lower():
+        return True
     s = name.lower()
     if kind in LGU_TYPES and ('sulu' in s or any(re.search(rf'\b{t}\b', s) for t in SULU_TOWNS)):
         return True
@@ -165,6 +174,8 @@ def main():
         if left_out(name, kind):
             dropped.add(name)
             continue
+        if not n['PublishDate'] or day(n['PublishDate']) < SINCE:
+            continue
         t = tenders.get(ref, {}) if system == 'legacy' else {}
         notices.append({
             'ref': ref, 'system': system, 'date': day(n['PublishDate']), 'entity': entity(name, kind),
@@ -192,7 +203,7 @@ def main():
         'name': 'PhilGEPS bid notices and awards of BARMM procuring entities',
         'generatedAt': date.today().isoformat(),
         'source': [{'label': 'PhilGEPS Open Data — Bids and Awards, and Merchants dashboards', 'href': 'https://philgeps.gov.ph/CmsHomePages/open-data'}],
-        'note': 'Every bid notice a procuring entity PhilGEPS files under BARMM posted, 2015 to date, in pesos. "abc" is the approved budget for the contract; "awards" are the contracts PhilGEPS records on the notice (awardee, contract amount, award date, contract number), several for a notice in lots. A notice is an intention to buy, an award a contract signed; neither is a payment. Titles, procurement mode and status are only published for notices that reached an award or were posted on the modernized system since 2024. Sulu\'s province and towns and Isabela City are left out. "unit" links a local government to the LGU directory.',
+        'note': 'Every bid notice a procuring entity PhilGEPS files under BARMM posted from 2019, when BARMM began, to date, in pesos. "abc" is the approved budget for the contract; "awards" are the contracts PhilGEPS records on the notice (awardee, contract amount, award date, contract number), several for a notice in lots. A notice is an intention to buy, an award a contract signed; neither is a payment. Titles, procurement mode and status are only published for notices that reached an award or were posted on the modernized system since 2024. Sulu\'s province and towns, Isabela City, offices named for the old ARMM (national agencies\' regional offices still filed as ARMM among them) and notices before 2019 are left out. "unit" links a local government to the LGU directory.',
         'columns': ['ref', 'modern', 'date', 'entity', 'category', 'abc', 'title', 'mode', 'class', 'status', 'awards'],
         'awardColumns': ['awardee', 'amount', 'date', 'contractNo'],
         'entities': entities,

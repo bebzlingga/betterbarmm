@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 	description: 'Every supplier PhilGEPS records winning a contract from a BARMM government office, ranked by the amount awarded.',
 }
 
-/* The rest win little: the largest 1,000 hold 98% of the awarded amount. */
+/* The rest win little: the largest 1,000 hold 99% of the awarded amount. */
 const SHOWN = 1000
 
 const COLUMNS: DataColumn[] = [

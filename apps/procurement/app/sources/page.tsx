@@ -49,6 +49,11 @@ export default function SourcesPage() {
 						Sulu&rsquo;s province and towns, out of BARMM since 2024, are left out, as is Isabela City, which PhilGEPS
 						files under BARMM but is part of Region IX. Offices of the region&rsquo;s ministries in Sulu remain.
 					</p>
+					<p className={P}>
+						It starts in 2019, when BARMM began; earlier notices belong to the ARMM it replaced. Offices PhilGEPS still
+						files under the ARMM name are left out too, including the regional offices of national agencies such as
+						the Civil Service Commission, PhilHealth and the Commission on Audit, which kept the old name.
+					</p>
 				</section>
 			</div>
 		</>

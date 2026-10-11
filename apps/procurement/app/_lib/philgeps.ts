@@ -5,7 +5,7 @@ import path from 'node:path'
    PhilGEPS, for BARMM
 
    Every bid notice a procuring entity PhilGEPS files under BARMM
-   posted since 2015, and the contracts awarded on them. Written by
+   posted since 2019, and the contracts awarded on them. Written by
    datasets/procurement/scripts/fetch_philgeps.py.
 
    Read from disk once per server, not bundled: 127,000 notices are

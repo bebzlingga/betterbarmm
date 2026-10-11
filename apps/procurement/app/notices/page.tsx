@@ -5,7 +5,7 @@ import { years } from '../_lib/philgeps'
 
 export const metadata: Metadata = {
 	title: 'Bid notices',
-	description: 'Every bid notice a BARMM government office has posted on PhilGEPS since 2015, searchable by title, reference, category and supplier.',
+	description: 'Every bid notice a BARMM government office has posted on PhilGEPS since 2019, searchable by title, reference, category and supplier.',
 }
 
 export default async function NoticesPage({ searchParams }: { searchParams: Promise<{ supplier?: string }> }) {

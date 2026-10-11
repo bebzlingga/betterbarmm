@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 		template: '%s / BetterBARMM Procurement',
 	},
 	description:
-		'Every bid notice a BARMM government office has posted on PhilGEPS since 2015, what it set out to buy and for how much, and who won the contract. Traced to PhilGEPS’s own open data.',
+		'Every bid notice a BARMM government office has posted on PhilGEPS since 2019, what it set out to buy and for how much, and who won the contract. Traced to PhilGEPS’s own open data.',
 	/* Absolute, because everything below it is relative. Without a
 	   `metadataBase` the generated card resolves to a path rather than a URL,
 	   and a platform scraping the page has nothing to fetch — which is why a
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 		url: 'https://procurement.betterbarmm.com',
 		title: 'BetterBARMM Procurement',
 		description:
-			'Every bid notice a BARMM government office has posted on PhilGEPS since 2015, what it set out to buy and for how much, and who won the contract. Traced to PhilGEPS’s own open data.',
+			'Every bid notice a BARMM government office has posted on PhilGEPS since 2019, what it set out to buy and for how much, and who won the contract. Traced to PhilGEPS’s own open data.',
 	},
 
 	/* The canonical address, and permission to index it.
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 		card: 'summary_large_image',
 		title: 'BetterBARMM Procurement',
 		description:
-			'Every bid notice a BARMM government office has posted on PhilGEPS since 2015, what it set out to buy and for how much, and who won the contract. Traced to PhilGEPS’s own open data.',
+			'Every bid notice a BARMM government office has posted on PhilGEPS since 2019, what it set out to buy and for how much, and who won the contract. Traced to PhilGEPS’s own open data.',
 	},
 }
 
