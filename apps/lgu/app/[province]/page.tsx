@@ -16,6 +16,7 @@ import {
 	isSingleUnitArea,
 	largestUnits,
 	lguData,
+	lguAreas,
 	lguProvinces,
 	personName,
 } from '@betterbarmm/lgu-data'
@@ -71,6 +72,28 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 			? Math.round((province.population / lguData.totals.population) * 1000) / 10
 			: null
 
+	// The opening paragraph, as an encyclopedia would begin: what the place is,
+	// then its people, land and units, every figure the directory's own.
+	const capital = province.municipalities.find((unit) => unit.isCapital)
+	const area = lguAreas.find((one) => one.slug === province.slug)
+	const towns = province.municipalities.length - cities.length
+	const units = [
+		cities.length ? `${cities.length} ${cities.length === 1 ? 'city' : 'cities'}` : null,
+		towns ? `${towns} ${towns === 1 ? 'municipality' : 'municipalities'}` : null,
+	]
+		.filter(Boolean)
+		.join(' and ')
+	const lead = [
+		`${province.name} is a ${province.kind === 'Province' ? 'province' : 'part'} of the Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)${capital ? `, with its capital at ${capital.name}` : ''}.`,
+		province.population != null
+			? `It had ${formatNumber(province.population)} people at the 2024 census${regionShare != null ? `, ${regionShare}% of the region’s` : ''}${change != null ? `, ${change > 0 ? 'up' : 'down'} ${Math.abs(change)}% since 2020` : ''}.`
+			: null,
+		`It has ${units}, with ${formatNumber(province.barangayCount)} barangays between them${province.areaKm2 ? `, across ${formatArea(province.areaKm2)}` : ''}.`,
+		area ? `Its voters elect ${area.seats} of the 80 members of the Bangsamoro Parliament.` : null,
+	]
+		.filter(Boolean)
+		.join(' ')
+
 	// Who governs it now: the top of the current term's canvass for each
 	// single-seat office. The board's seat counts are not on record, so its
 	// winners cannot be told from the rest and it is left to Local officials.
@@ -92,17 +115,29 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 			<LguMasthead
 				kicker={`${province.kind} · Bangsamoro`}
 				name={province.name}
-				note={province.note}
 			>
 				<NtaChart unitKey={province.slug} />
 			</LguMasthead>
 
-			<div className='bb-container bb-section grid gap-14 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-24'>
+			{/* ---- What the province is, before its parts ---- */}
+			<div className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
+				<div className='max-w-[58rem] space-y-4 text-[17px] leading-8 text-[var(--ink-2)]'>
+					<p>
+						<strong className='font-semibold text-[var(--ink)]'>{province.name}</strong>
+						{lead.slice(province.name.length)}
+					</p>
+					{/* The directory's own note on the province; the region guide's where it has none. */}
+					{province.note || area?.note ? <p>{province.note || area?.note}</p> : null}
+				</div>
+			</div>
+
+			<div className='bb-container bb-section-bottom grid gap-14 pt-14 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-24'>
 				{/* ---- The province, read down: its towns, then its own records ---- */}
 				<div className='min-w-0'>
 					<section>
 						<h2 id='units' className={H2}>
-							<span className='num text-[var(--ink-3)]'>{province.municipalities.length}</span> Cities and Municipalities
+							<span className='num text-[var(--ink-3)]'>{province.municipalities.length}</span>{' '}
+							{cities.length > 0 ? 'Cities and Municipalities' : 'Municipalities'}
 						</h2>
 						<ul className='mt-6 columns-2 gap-x-8 sm:columns-3 lg:columns-4'>
 							{[...province.municipalities]
