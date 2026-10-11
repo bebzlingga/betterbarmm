@@ -86,7 +86,7 @@ export default function LgsfPage() {
 			</LguMasthead>
 
 			<section className='bg-[var(--paper-2)]'>
-				<div className='bb-container grid gap-8 py-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-20'>
+				<div className='bb-container grid gap-8 py-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-center lg:gap-20'>
 					<div>
 						<h2 className='text-[1.25rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>BARMM has a support fund of its own</h2>
 						<p className='mt-3 text-[15px] leading-7 text-[var(--ink-2)]'>
