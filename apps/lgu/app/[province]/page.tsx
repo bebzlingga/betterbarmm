@@ -148,17 +148,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 								</p>
 							))}
 						</div>
-						<p className='mt-6 text-[12px] leading-5 text-[var(--ink-3)]'>
-							Sources:{' '}
-							{history.sources.map((source, i) => (
-								<span key={source.href}>
-									{i > 0 ? ' · ' : ''}
-									<a href={source.href} target='_blank' rel='noreferrer' className='underline decoration-[var(--rule)] underline-offset-2 hover:text-[var(--ink)]'>
-										{source.label}
-									</a>
-								</span>
-							))}
-						</p>
 					</div>
 				) : (
 					<p className='mt-7 max-w-[58rem] text-[15px] leading-7 text-[var(--ink-2)]'>{lead}</p>
@@ -317,6 +306,19 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 			</div>
 
 			<div className='bb-container bb-section-bottom'>
+				{history ? (
+					<p className='mb-8 text-[12.5px] leading-6 text-[var(--ink-mute)] transition-colors hover:text-[var(--ink-3)]'>
+						<span className='font-semibold text-[var(--ink-3)]'>History sources:</span>{' '}
+						{history.sources.map((source, i) => (
+							<span key={source.href}>
+								{i > 0 ? ' · ' : ''}
+								<a href={source.href} target='_blank' rel='noreferrer' className='underline decoration-[var(--rule)] underline-offset-2 hover:text-[var(--ink)]'>
+									{source.label}
+								</a>
+							</span>
+						))}
+					</p>
+				) : null}
 				<LguSourceNote />
 			</div>
 		</>
