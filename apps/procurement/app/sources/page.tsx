@@ -38,6 +38,14 @@ export default function SourcesPage() {
 					</p>
 				</section>
 				<section>
+					<h2 className={H2}>How notices are grouped</h2>
+					<p className={P}>
+						PhilGEPS files each notice under one of about 200 business categories. To make them searchable we gather
+						those into ten broad groups, such as construction and infrastructure, health and medicine, and food and
+						catering. The grouping is ours, not PhilGEPS&rsquo;s; each notice still shows its own category.
+					</p>
+				</section>
+				<section>
 					<h2 className={H2}>What it cannot tell you</h2>
 					<p className={P}>
 						PhilGEPS holds only what an office posts; a purchase never posted is not here. Titles and procurement

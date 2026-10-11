@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { NoticesExplorer } from '../_components/notices-explorer'
 import { Figures, Masthead, YearBars, peso } from '../_components/parts'
-import { entities, entityBySlug, entityTotals, notices, years } from '../_lib/philgeps'
+import { entities, entityBySlug, entityTotals, groups, notices, years } from '../_lib/philgeps'
 
 export function generateStaticParams() {
 	return entities.map((e) => ({ entity: e.slug }))
@@ -63,7 +63,7 @@ export default async function EntityPage({ params }: { params: Promise<{ entity:
 				<section className='min-w-0'>
 					<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Bid notices</h2>
 					<div className='mt-6'>
-						<NoticesExplorer entity={entity.slug} years={span.length ? span : years} />
+						<NoticesExplorer entity={entity.slug} years={span.length ? span : years} groups={groups} />
 					</div>
 				</section>
 

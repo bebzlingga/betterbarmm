@@ -27,6 +27,45 @@ type Raw = {
 	notices: [string, 0 | 1, string | null, number, number | null, number | null, string | null, number | null, number | null, number | null, [number, number | null, string | null, string | null][]][]
 }
 
+/* ---- Broad groups ---------------------------------------------------------
+   PhilGEPS files a notice under one of about 200 business categories. These
+   ten groups gather them so a reader can filter by what kind of thing was
+   bought. Rules run in order; the first match wins. A few categories whose
+   words mislead are placed by hand. */
+
+const GROUP_RULES: [string, RegExp][] = [
+	['Health and medicine', /medic|drug|hospital|laborator|diagnostic|radiolog|dental|health|personal care/i],
+	['Food and catering', /food|grocer|cater|rice|dairy|restaurant|kitchen|beverage/i],
+	['Agriculture and fisheries', /agricult|fertili|seed|live animal|animal feed|veterinar|pest control prod|fish/i],
+	['IT and communications', /information tech|computer|internet|telecom|communication|systems integration|electronic|broadcast|audio and visual|automation|cabling/i],
+	['Vehicles, fuel and transport', /vehicle|motor|transport|aviation|marine|cargo|fuel|traffic|maritime|navigation/i],
+	['Construction and infrastructure', /construct|hardware|concrete|road|building|contractor|engineering|survey|well drill|transmission|water service|water and waste|metal fab|architect|lifting|landscap|fixtures|plumb|pipe|paint|drilling/i],
+	['Travel, lodging and events', /hotel|lodging|travel|event/i],
+	['Office and school supplies', /office|printing supplies|paper|book|education|signage|furniture|token|giveaway|flag|newspaper|arts and crafts|photograph|microfilm|textile|garment|bedcloth|bag/i],
+	['Services', /service|consult|lease|rental|advertis|repair|maintenance|laundry|public relations|reproduction|waste/i],
+	['Equipment and machinery', /machin|equipment|tool|appliance|aircondition|electrical|power gen|pump|fire fight|safety|lamp|instrument|security/i],
+]
+
+const GROUP_OVERRIDES: Record<string, string> = {
+	'Lease and Rental of Property or Building': 'Services',
+	'Sale of Property or Building': 'Services',
+	'Transportation and Communications Services': 'Vehicles, fuel and transport',
+	'Travel, Food, Lodging and Entertainment Services': 'Travel, lodging and events',
+	'Print and Broadcast and Aerial Advertising': 'Services',
+	'Education and Training Services': 'Services',
+	'Photography Services': 'Services',
+	'Environmental Health/Safety Equipment': 'Equipment and machinery',
+	'Engineering and Laboratory Testing Equipment': 'Equipment and machinery',
+}
+
+export const OTHER = 'General merchandise and other'
+export const groups = [...GROUP_RULES.map(([name]) => name), OTHER]
+
+export function groupOf(category: string | null): string {
+	if (!category || category === 'None') return OTHER
+	return GROUP_OVERRIDES[category] ?? GROUP_RULES.find(([, rule]) => rule.test(category))?.[0] ?? OTHER
+}
+
 export type Award = { awardee: string; amount: number | null; date: string | null; contractNo: string | null }
 
 export type Notice = {
@@ -35,6 +74,8 @@ export type Notice = {
 	year: number | null
 	entity: number
 	category: string | null
+	/** One of `groups`, from the category. */
+	group: string
 	abc: number | null
 	title: string | null
 	mode: string | null
@@ -91,6 +132,7 @@ export const notices: Notice[] = raw.notices.map(([ref, , date, entity, category
 	year: date ? Number(date.slice(0, 4)) : null,
 	entity,
 	category: category == null ? null : raw.categorys[category],
+	group: groupOf(category == null ? null : raw.categorys[category]),
 	abc,
 	title,
 	mode: mode == null ? null : raw.modes[mode],
@@ -154,6 +196,7 @@ export type NoticeQuery = {
 	entity?: number
 	q?: string
 	year?: number
+	group?: string
 	supplier?: string
 	awarded?: boolean
 	page?: number
@@ -162,12 +205,13 @@ export type NoticeQuery = {
 export const PAGE = 50
 
 /** One page of notices, newest first, with the totals of everything matched. */
-export function searchNotices({ entity, q, year, supplier, awarded, page = 1 }: NoticeQuery) {
+export function searchNotices({ entity, q, year, group, supplier, awarded, page = 1 }: NoticeQuery) {
 	const words = (q ?? '').toLowerCase().split(/\s+/).filter(Boolean)
 	const who = supplier?.toLowerCase()
 	const matched = notices.filter((n) => {
 		if (entity != null && n.entity !== entity) return false
 		if (year != null && n.year !== year) return false
+		if (group && n.group !== group) return false
 		if (awarded && !n.awards.length) return false
 		if (who && !n.awards.some((a) => a.awardee.toLowerCase() === who)) return false
 		if (words.length) {

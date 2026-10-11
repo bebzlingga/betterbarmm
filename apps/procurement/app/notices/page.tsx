@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { NoticesExplorer } from '../_components/notices-explorer'
 import { Masthead } from '../_components/parts'
-import { years } from '../_lib/philgeps'
+import { groups, years } from '../_lib/philgeps'
 
 export const metadata: Metadata = {
 	title: 'Bid notices',
@@ -18,7 +18,7 @@ export default async function NoticesPage({ searchParams }: { searchParams: Prom
 				note='Every notice, newest first. A notice is an office saying what it means to buy and how much it has set aside; where PhilGEPS records the contract, the winner and the amount are under it.'
 			/>
 			<section className='bb-container bb-section'>
-				<NoticesExplorer key={supplier ?? ''} supplier={supplier} years={years} />
+				<NoticesExplorer key={supplier ?? ''} supplier={supplier} years={years} groups={groups} />
 			</section>
 		</>
 	)

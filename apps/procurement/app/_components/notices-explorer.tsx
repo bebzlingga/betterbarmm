@@ -14,10 +14,22 @@ type Page = { totals: Totals; page: number; pages: number; rows: NoticeRow[] }
 const peso = (n: number) =>
 	n >= 1e9 ? `₱${(n / 1e9).toFixed(2)}B` : n >= 1e6 ? `₱${(n / 1e6).toFixed(1)}M` : `₱${Math.round(n).toLocaleString('en-PH')}`
 
-export function NoticesExplorer({ entity, supplier: initialSupplier = '', years }: { entity?: string; supplier?: string; years: number[] }) {
+export function NoticesExplorer({
+	entity,
+	supplier: initialSupplier = '',
+	years,
+	groups,
+}: {
+	entity?: string
+	supplier?: string
+	years: number[]
+	/** The broad groups notices are sorted into, for the Category filter. */
+	groups: string[]
+}) {
 	const [query, setQuery] = useState('')
 	const [typed, setTyped] = useState('')
 	const [year, setYear] = useState('')
+	const [group, setGroup] = useState('')
 	const [awarded, setAwarded] = useState('')
 	const [supplier, setSupplier] = useState(initialSupplier)
 	const [page, setPage] = useState(1)
@@ -37,6 +49,7 @@ export function NoticesExplorer({ entity, supplier: initialSupplier = '', years 
 		if (entity) params.set('entity', entity)
 		if (query) params.set('q', query)
 		if (year) params.set('year', year)
+		if (group) params.set('group', group)
 		if (awarded) params.set('awarded', '1')
 		if (supplier) params.set('supplier', supplier)
 		params.set('page', String(page))
@@ -46,7 +59,7 @@ export function NoticesExplorer({ entity, supplier: initialSupplier = '', years 
 			.then(setData)
 			.catch(() => {})
 		return () => controller.abort()
-	}, [entity, query, year, awarded, supplier, page])
+	}, [entity, query, year, group, awarded, supplier, page])
 
 	const reset = (fn: () => void) => {
 		fn()
@@ -55,11 +68,12 @@ export function NoticesExplorer({ entity, supplier: initialSupplier = '', years 
 
 	return (
 		<div>
-			<div className='grid grid-cols-2 gap-3 pb-6 lg:grid-cols-[minmax(0,26rem)_1fr_10rem_14rem] lg:items-end lg:gap-4 lg:pb-8'>
+			<div className='grid grid-cols-2 gap-3 pb-6 lg:grid-cols-[minmax(0,24rem)_1fr_16rem_9rem_11rem] lg:items-end lg:gap-4 lg:pb-8'>
 				<div className='col-span-2 lg:col-span-1'>
 					<SearchField value={typed} onChange={setTyped} placeholder='Title, reference, category or supplier' />
 				</div>
 				<span className='hidden lg:block' />
+				<Select label='Category' value={group} onChange={(v) => reset(() => setGroup(v))} options={[['', 'All categories'], ...groups.map((g): [string, string] => [g, g])]} />
 				<Select label='Year' value={year} onChange={(v) => reset(() => setYear(v))} options={[['', 'All years'], ...[...years].reverse().map((y): [string, string] => [String(y), String(y)])]} />
 				<Select label='Show' value={awarded} onChange={(v) => reset(() => setAwarded(v))} options={[['', 'All notices'], ['1', 'Awarded only']]} />
 			</div>
@@ -92,7 +106,8 @@ export function NoticesExplorer({ entity, supplier: initialSupplier = '', years 
 				{data?.rows.map((n) => (
 					<li key={`${n.ref}-${n.date}`} className='grid gap-x-8 gap-y-2 border-b border-[var(--rule)] py-4 sm:grid-cols-[minmax(0,1fr)_auto]'>
 						<div className='min-w-0'>
-							<p className='text-[14.5px] font-semibold leading-6 text-[var(--ink)]'>{n.title ?? n.category ?? 'Untitled notice'}</p>
+							<p className='font-[family-name:var(--font-display)] text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>{n.group}</p>
+							<p className='mt-1 text-[14.5px] font-semibold leading-6 text-[var(--ink)]'>{n.title ?? n.category ?? 'Untitled notice'}</p>
 							<p className='mt-1 text-[12px] leading-5 text-[var(--ink-3)]'>
 								{[n.date && longDate(n.date), `Ref. ${n.ref}`, n.title && n.category, n.mode].filter(Boolean).join(' · ')}
 								{entity ? null : (

@@ -13,6 +13,7 @@ export function GET(request: NextRequest) {
 			entity,
 			q: p.get('q')?.slice(0, 200) ?? undefined,
 			year,
+			group: p.get('group') ?? undefined,
 			supplier: p.get('supplier') ?? undefined,
 			awarded: p.get('awarded') === '1',
 			page: Math.max(1, Number(p.get('page')) || 1),
