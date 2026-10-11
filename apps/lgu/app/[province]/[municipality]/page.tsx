@@ -8,7 +8,7 @@ import {
 	findUnit,
 	formatArea,
 	formatNumber,
-	areaHistory,
+	townHistory,
 	growth,
 	unitClass,
 	winners,
@@ -25,6 +25,7 @@ import { barangayOfficials, unitRosters } from '@betterbarmm/lgu-data/barangay-o
 import { LguFinances } from '../../_components/lgu-finances'
 import { LguDisclosure } from '../../_components/lgu-disclosure'
 import { NtaChart } from '../../_components/nta-chart'
+import { LocatorMap } from '../../_components/locator-map'
 import { Official } from '../../_components/official'
 export function generateStaticParams() {
 	return allUnitParams()
@@ -98,7 +99,7 @@ export default async function UnitPage({
 
 	const key = `${province.slug}/${unit.slug}`
 	const rosters = unitRosters(unit.slug)
-	const history = areaHistory(unit.slug)
+	const history = townHistory(province.slug, unit.slug)
 	const change = growth(unit)
 	const lead = `${opening(unit, province)} It is divided into ${unit.barangays.length} ${unit.barangays.length === 1 ? 'barangay' : 'barangays'}${unit.population != null ? `, and had ${formatNumber(unit.population)} residents at the 2024 census` : ''}.`
 
@@ -237,6 +238,9 @@ export default async function UnitPage({
 
 				{/* ---- Beside it: the town in figures, then who governs it ---- */}
 				<aside className='order-first lg:order-none'>
+					<div className='mb-8'>
+						<LocatorMap areaSlug={province.slug} unit={{ psgc: unit.psgc ?? null, name: unit.name }} label={unit.name} />
+					</div>
 					<dl>
 						{stats.map((stat) => (
 							<div key={stat.label} className='border-b border-[var(--rule)] py-5 first:pt-0'>

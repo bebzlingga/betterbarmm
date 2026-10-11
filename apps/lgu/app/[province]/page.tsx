@@ -26,6 +26,7 @@ import {
 import { LguFinances } from '../_components/lgu-finances'
 import { LguDisclosure } from '../_components/lgu-disclosure'
 import { NtaChart } from '../_components/nta-chart'
+import { LocatorMap } from '../_components/locator-map'
 import { Official } from '../_components/official'
 import { finances, row } from '@betterbarmm/lgu-data/fiscal'
 
@@ -205,6 +206,9 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 
 				{/* ---- Beside it: the province in figures, then who governs it ---- */}
 				<aside className='order-first lg:order-none'>
+					<div className='mb-8'>
+						<LocatorMap areaSlug={province.slug} label={province.name} />
+					</div>
 					<dl>
 						{[
 							{
