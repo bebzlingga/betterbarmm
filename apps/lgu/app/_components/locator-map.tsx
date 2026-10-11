@@ -41,7 +41,13 @@ export function LocatorMap({
 	// Frame the place with room around it: a town shows its neighbours, a
 	// province the coast it sits on. Never tighter than a fixed minimum, or a
 	// small island town fills the frame and says nothing about where it is.
-	const box = bounds(target)
+	// Frame on the largest piece: a scattered island province (Tawi-Tawi, which
+	// reaches Mapun and the Turtle Islands) would otherwise frame the open sea.
+	const pieces = target.split(/(?=M)/).map(bounds)
+	const area = (b: ReturnType<typeof bounds>) => (b.x1 - b.x0) * (b.y1 - b.y0)
+	const main = pieces.reduce((a, b) => (area(b) > area(a) ? b : a))
+	const whole = bounds(target)
+	const box = area(whole) > area(main) * 12 ? main : whole
 	const size = Math.max(box.x1 - box.x0, (box.y1 - box.y0) * 1.25, unit ? 55 : 100)
 	const width = size * 2
 	const height = width * 0.8
