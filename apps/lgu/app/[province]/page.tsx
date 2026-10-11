@@ -1,10 +1,9 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { notFound, redirect } from 'next/navigation'
 import {
 	LguMasthead,
 	LguSourceNote,
-	LguFigures,
-	ShareBar,
 } from '../_components/lgu-parts'
 import {
 	density,
@@ -18,16 +17,10 @@ import {
 	lguData,
 	lguProvinces,
 	personName,
-	type LguProvince,
-	type LguUnit,
 } from '@betterbarmm/lgu-data'
 import { LguFinances } from '../_components/lgu-finances'
 import { LguDisclosure } from '../_components/lgu-disclosure'
 import { NtaChart } from '../_components/nta-chart'
-import { LguTabs } from '../_components/lgu-tabs'
-import { DataTable, type DataRow } from '../_components/data-table'
-import { finances, row } from '@betterbarmm/lgu-data/fiscal'
-import { Rise } from '@betterbarmm/editorial'
 
 export function generateStaticParams() {
 	// Cotabato City's area page is a list of one thing named after the thing.
@@ -54,34 +47,7 @@ export async function generateMetadata({
 	}
 }
 
-/** The mayor of the term now in office. */
-function currentMayor(unit: LguUnit): string | null {
-	const termId = lguData.officials?.currentTermId
-	const mayor = termId ? unit.officials?.[termId]?.mayor : undefined
-	return mayor?.ranked[0]?.name ?? null
-}
-
-/** A unit as one row of the province's table. */
-function toRow(province: LguProvince, unit: LguUnit, ntaYear: number): DataRow {
-	const mayor = currentMayor(unit)
-	return {
-		key: unit.slug,
-		href: `/${province.slug}/${unit.slug}`,
-		name: unit.name,
-		meta:
-			[unit.isCapital ? 'Capital' : null, unit.isCity ? (unit.cityClass ?? 'City') : null, unit.formedFrom ? `from ${unit.formedFrom}` : null]
-				.filter(Boolean)
-				.join(' · ') || undefined,
-		mobile: mayor ? `Mayor ${personName(mayor)}` : undefined,
-		values: {
-			mayor: mayor ? personName(mayor) : null,
-			population: unit.population,
-			barangays: unit.barangays.length,
-			area: unit.areaKm2,
-			nta: (row(finances, `${province.slug}/${unit.slug}`, ntaYear)?.nta as number | null) ?? null,
-		},
-	}
-}
+const H2 = 'scroll-mt-32 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
 
 export default async function ProvincePage({ params }: { params: Promise<{ province: string }> }) {
 	const { province: slug } = await params
@@ -104,7 +70,21 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 			? Math.round((province.population / lguData.totals.population) * 1000) / 10
 			: null
 
-	const ntaYear = finances.years.at(-1)!
+	// Who governs it now: the top of the current term's canvass for each
+	// single-seat office. The board's seat counts are not on record, so its
+	// winners cannot be told from the rest and it is left to Local officials.
+	const termId = lguData.officials?.currentTermId
+	const current = termId ? province.officials?.[termId] : undefined
+	const termLabel = termId ? `${termId.replace('-', '–')} term` : ''
+	const officials = (
+		[
+			['Governor', current?.governor],
+			['Vice-Governor', current?.viceGovernor],
+		] as const
+	).flatMap(([position, contest]) => {
+		const top = contest?.ranked[0]
+		return top ? [{ position, name: personName(top.name), party: top.party ?? null }] : []
+	})
 
 	return (
 		<>
@@ -116,126 +96,119 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				<NtaChart unitKey={province.slug} />
 			</LguMasthead>
 
-			{/* The province in figures, and against the region, on a light band
-			    under the masthead. */}
-			<div className='bg-[var(--paper-2)]'>
-				<div className='bb-container py-14 lg:py-18'>
-				{/* ---- The province in figures ---- */}
-				<Rise delay={0.3} distance={14}>
-					<LguFigures
-						className=''
-						figures={[
+			<div className='bb-container bb-section grid gap-14 lg:grid-cols-[minmax(0,1fr)_18rem] lg:gap-16'>
+				{/* ---- The province, read down: its towns, then its own records ---- */}
+				<div className='min-w-0'>
+					<section>
+						<h2 id='units' className={H2}>
+							Cities and municipalities{' '}
+							<span className='num text-[var(--ink-3)]'>{province.municipalities.length}</span>
+						</h2>
+						<ul className='mt-6 columns-2 gap-x-8 sm:columns-3'>
+							{[...province.municipalities]
+								.sort((x, y) => x.name.localeCompare(y.name))
+								.map((unit) => (
+									<li key={unit.slug} className='break-inside-avoid border-b border-[var(--rule-soft)]'>
+										<Link
+											href={`/${province.slug}/${unit.slug}`}
+											className='block py-2.5 text-[15px] text-[var(--ink)] transition hover:text-[var(--accent)]'
+										>
+											{unit.name}
+											{unit.isCapital ? <span className='ml-2 text-[12px] text-[var(--ink-3)]'>Capital</span> : null}
+										</Link>
+									</li>
+								))}
+						</ul>
+					</section>
+
+					{province.kind === 'Province' ? (
+						<>
+							<section className='mt-20'>
+								<h2 id='disclosure' className={H2}>
+									Full disclosure
+								</h2>
+								<div className='mt-6'>
+									<LguDisclosure unitKey={province.slug} name={`the provincial government of ${province.name}`} />
+								</div>
+							</section>
+
+							<section className='mt-20'>
+								<h2 id='finances' className={H2}>
+									Finances
+								</h2>
+								<div className='mt-6'>
+									<LguFinances unitKey={province.slug} name={`the provincial government of ${province.name}`} />
+								</div>
+							</section>
+						</>
+					) : null}
+
+					<LguSourceNote className='mt-20' />
+				</div>
+
+				{/* ---- Beside it: the province in figures, then who governs it ---- */}
+				<aside className='order-first lg:order-none'>
+					<dl>
+						{[
 							{
 								label: 'Population (2024)',
 								value: formatNumber(province.population),
-								count: province.population,
-								detail: change != null ? `${change > 0 ? '+' : ''}${change}% since the 2020 census.` : undefined,
+								detail: change != null ? `${change > 0 ? '+' : ''}${change}% since the 2020 census` : null,
 							},
 							{
 								label: cities.length > 0 ? 'Cities and municipalities' : 'Municipalities',
 								value: String(province.municipalities.length),
-								count: province.municipalities.length,
-								group: false,
 								detail:
 									biggest.length > 0 && province.municipalities.length > 1
-										? `Largest: ${biggest.map((unit) => unit.name).join(', ')}.`
-										: undefined,
+										? `Largest: ${biggest.map((unit) => unit.name).join(', ')}`
+										: null,
 							},
-							{
-								label: 'Barangays',
-								value: formatNumber(province.barangayCount),
-								count: province.barangayCount,
-							},
+							{ label: 'Barangays', value: formatNumber(province.barangayCount), detail: null },
 							{
 								label: 'Land area',
 								value: formatArea(province.areaKm2),
-								detail:
-									density(province) != null ? `${formatNumber(density(province))} people per km².` : undefined,
+								detail: density(province) != null ? `${formatNumber(density(province))} people per km²` : null,
 							},
-						]}
-					/>
-				</Rise>
-				</div>
-				<div className='bb-container'>
-					<div className='grid gap-8 border-t border-[var(--brass-line)] py-14 lg:grid-cols-2 lg:items-center lg:gap-16 lg:py-18'>
-					{regionShare != null ? (
-						<p className='max-w-[34rem] text-[15px] leading-7 text-[var(--ink-2)]'>
-							{province.name} is home to{' '}
-							<span className='num font-semibold text-[var(--ink)]'>{regionShare}%</span> of the people of
-							BARMM: {formatNumber(province.population)} of the region&rsquo;s{' '}
-							{formatNumber(lguData.totals.population)} at the 2024 census.
-						</p>
+							...(regionShare != null
+								? [
+										{
+											label: 'Share of BARMM’s people',
+											value: `${regionShare}%`,
+											detail: `${formatNumber(province.population)} of the region’s ${formatNumber(lguData.totals.population)}`,
+										},
+									]
+								: []),
+						].map((stat) => (
+							<div key={stat.label} className='border-b border-[var(--rule)] py-5 first:pt-0'>
+								<dt className='bb-label'>{stat.label}</dt>
+								<dd className='num mt-2 text-[1.6rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
+									{stat.value}
+								</dd>
+								{stat.detail ? <dd className='mt-1.5 text-[12.5px] leading-5 text-[var(--ink-3)]'>{stat.detail}</dd> : null}
+							</div>
+						))}
+					</dl>
+
+					{officials.length > 0 ? (
+						<div className='mt-10'>
+							<h2 className='text-[15px] font-semibold text-[var(--ink)]'>Current officials</h2>
+							<p className='mt-1 text-[12.5px] text-[var(--ink-3)]'>{termLabel}</p>
+							<dl className='mt-4'>
+								{officials.map((official) => (
+									<div key={official.position} className='border-b border-[var(--rule)] py-4'>
+										<dt className='bb-label'>{official.position}</dt>
+										<dd className='mt-1.5 text-[15px] font-semibold text-[var(--ink)]'>{official.name}</dd>
+										{official.party ? <dd className='mt-0.5 text-[12.5px] text-[var(--ink-3)]'>{official.party}</dd> : null}
+									</div>
+								))}
+							</dl>
+							<Link href='/officials' className='rule-link mt-4 inline-block text-[13px]'>
+								Every official, every term
+							</Link>
+						</div>
 					) : null}
-					{regionShare != null ? (
-						<Rise delay={0.1} distance={14}>
-							<ShareBar
-								share={regionShare}
-								label='Share of BARMM’s people'
-								ofLabel='The rest of BARMM’s people'
-								caption={false}
-							/>
-						</Rise>
-					) : null}
-					</div>
-				</div>
+				</aside>
 			</div>
-
-			{/* The towns first, because finding your own is why most people open a
-			    province page; the officials and the money are a tab away rather than
-			    a long scroll below. */}
-			<section className='bb-container bb-section-bottom'>
-				<LguTabs
-					tabs={[
-						{
-							id: 'units',
-							label: 'Cities and municipalities',
-							badge: province.municipalities.length,
-							panel: (
-								<div>
-									<DataTable
-										caption={`Cities and municipalities of ${province.name}`}
-										nameLabel='City or municipality'
-										columns={[
-											{ key: 'mayor', label: 'Mayor', format: 'text', hideBelow: 'md' },
-											{ key: 'population', label: 'Population', format: 'int' },
-											{ key: 'barangays', label: 'Barangays', format: 'int' },
-											{ key: 'area', label: 'Land area', format: 'area', hideBelow: 'lg' },
-											{ key: 'nta', label: `NTA, FY ${ntaYear}`, format: 'peso', hideBelow: 'sm' },
-										]}
-										rows={province.municipalities.map((unit) => toRow(province, unit, ntaYear))}
-									/>
-								</div>
-							),
-						},
-						...(province.kind === 'Province'
-							? [
-									{
-										id: 'finances',
-										label: 'Finances',
-										panel: (
-											<LguFinances
-												unitKey={province.slug}
-												name={`the provincial government of ${province.name}`}
-											/>
-										),
-									},
-									{
-										id: 'disclosure',
-										label: 'Full disclosure',
-										panel: (
-											<LguDisclosure
-												unitKey={province.slug}
-												name={`the provincial government of ${province.name}`}
-											/>
-										),
-									},
-								]
-							: []),
-					]}
-				/>
-
-				<LguSourceNote className='mt-14' />
-			</section>
 		</>
 	)
 }
