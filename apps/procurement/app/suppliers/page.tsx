@@ -14,7 +14,7 @@ const SHOWN = 1000
 const COLUMNS: DataColumn[] = [
 	{ key: 'awards', label: 'Awards', format: 'int', hideBelow: 'md' },
 	{ key: 'offices', label: 'Offices', format: 'int', hideBelow: 'lg' },
-	{ key: 'last', label: 'Latest award', format: 'text', hideBelow: 'lg' },
+	{ key: 'last', label: 'Latest award', format: 'date', hideBelow: 'lg' },
 	{ key: 'amount', label: 'Awarded', format: 'peso' },
 ]
 

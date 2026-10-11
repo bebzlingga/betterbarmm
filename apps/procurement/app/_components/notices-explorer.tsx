@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import type { NoticeRow, Totals } from '../_lib/philgeps'
 import { SearchField, Select } from './controls'
+import { longDate } from './parts'
 
 /* Bid notices, newest first, fetched a page at a time from /api/notices. */
 
@@ -93,7 +94,7 @@ export function NoticesExplorer({ entity, supplier: initialSupplier = '', years 
 						<div className='min-w-0'>
 							<p className='text-[14.5px] font-semibold leading-6 text-[var(--ink)]'>{n.title ?? n.category ?? 'Untitled notice'}</p>
 							<p className='mt-1 text-[12px] leading-5 text-[var(--ink-3)]'>
-								{[n.date, `Ref. ${n.ref}`, n.title && n.category, n.mode].filter(Boolean).join(' · ')}
+								{[n.date && longDate(n.date), `Ref. ${n.ref}`, n.title && n.category, n.mode].filter(Boolean).join(' · ')}
 								{entity ? null : (
 									<>
 										{' · '}
@@ -110,7 +111,7 @@ export function NoticesExplorer({ entity, supplier: initialSupplier = '', years 
 										{a.awardee}
 									</button>
 									{a.amount != null ? <span className='num'> · {peso(a.amount)}</span> : null}
-									{a.date ? <span className='text-[var(--ink-3)]'> · {a.date}</span> : null}
+									{a.date ? <span className='text-[var(--ink-3)]'> · {longDate(a.date)}</span> : null}
 								</p>
 							))}
 						</div>

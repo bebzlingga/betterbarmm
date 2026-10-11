@@ -38,6 +38,10 @@ export function Masthead({
 	)
 }
 
+/** "2026-07-24" as "July 24, 2026". */
+export const longDate = (iso: string) =>
+	new Date(`${iso}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
+
 export const peso = (n: number) =>
 	n >= 1e9 ? `₱${(n / 1e9).toFixed(2)}B` : n >= 1e6 ? `₱${(n / 1e6).toFixed(1)}M` : `₱${Math.round(n).toLocaleString('en-PH')}`
 

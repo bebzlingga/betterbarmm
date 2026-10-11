@@ -3,6 +3,7 @@
 import { ArrowDownIcon, ArrowUpIcon, MagnifyingGlassIcon } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
+import { longDate } from './parts'
 
 /* ============================================================
    A list of places as a table
@@ -20,7 +21,7 @@ import { useMemo, useState } from 'react'
 export type DataColumn = {
 	key: string
 	label: string
-	format: 'int' | 'peso' | 'pesoFull' | 'area' | 'pct' | 'text'
+	format: 'int' | 'peso' | 'pesoFull' | 'area' | 'pct' | 'text' | 'date'
 	/** Hidden below this width; the row's `mobile` line carries what matters of it. */
 	hideBelow?: 'sm' | 'md' | 'lg'
 }
@@ -42,6 +43,8 @@ const HIDE = { sm: 'hidden sm:table-cell', md: 'hidden md:table-cell', lg: 'hidd
 
 function display(value: number | string | null, format: DataColumn['format']): string {
 	if (value == null || value === '') return '—'
+	// Kept as "2026-07-24" so it sorts; read as "July 24, 2026".
+	if (format === 'date' && typeof value === 'string') return longDate(value)
 	if (typeof value === 'string') return value
 	if (format === 'pesoFull')
 		return `₱${value.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
