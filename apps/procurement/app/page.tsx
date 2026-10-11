@@ -30,6 +30,8 @@ export default function ProcurementHome() {
 			</Masthead>
 
 			<Figures
+				title='Since 2019'
+				note='What BARMM offices have put out to bid on PhilGEPS, and what has been awarded so far. An approved budget is the most an office may pay; an award is the contract it signed.'
 				items={[
 					{ value: regionTotals.notices.toLocaleString('en-PH'), label: 'Bid notices posted' },
 					{ value: peso(regionTotals.abc), label: 'Approved budget' },

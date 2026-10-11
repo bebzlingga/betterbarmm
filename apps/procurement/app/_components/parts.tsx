@@ -77,11 +77,17 @@ export function YearBars({ bars, caption, note }: { bars: { year: number; value:
 	)
 }
 
-/** A row of headline figures. */
-export function Figures({ items }: { items: { value: string; label: string }[] }) {
+/** A row of headline figures, under a heading with its note to the right. */
+export function Figures({ title, note, items }: { title: string; note: string; items: { value: string; label: string }[] }) {
 	return (
 		<section className='bg-[var(--paper-2)]'>
-			<dl className='bb-container grid grid-cols-2 gap-x-8 gap-y-6 py-10 lg:grid-cols-4'>
+			<div className='bb-container pt-12'>
+				<div className='flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-16'>
+					<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{title}</h2>
+					<p className='max-w-[38rem] text-[14px] leading-6 text-[var(--ink-3)] lg:text-right'>{note}</p>
+				</div>
+			</div>
+			<dl className='bb-container grid grid-cols-2 gap-x-8 gap-y-6 pb-12 pt-8 lg:grid-cols-4'>
 				{items.map((item) => (
 					<div key={item.label} className='border-t border-[var(--rule)] pt-3'>
 						<dd className='num font-[family-name:var(--font-display)] text-[clamp(1.6rem,3.2vw,2.35rem)] font-black leading-none tracking-[-0.03em] text-[var(--ink)]'>

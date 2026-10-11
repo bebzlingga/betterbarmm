@@ -49,6 +49,8 @@ export default async function EntityPage({ params }: { params: Promise<{ entity:
 			</Masthead>
 
 			<Figures
+				title='Since 2019'
+				note='What this office has put out to bid on PhilGEPS, and what has been awarded so far. An approved budget is the most it may pay; an award is the contract it signed.'
 				items={[
 					{ value: totals.all.notices.toLocaleString('en-PH'), label: 'Bid notices posted' },
 					{ value: peso(totals.all.abc), label: 'Approved budget' },
