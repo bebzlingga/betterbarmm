@@ -462,25 +462,25 @@ export default function LocalBudgetsPage() {
 				id='calendar'
 				lead='Every province, city, municipality and barangay passes its budget on the same dates. If the council misses the last one, it can do nothing else until the budget is passed.'
 			>
-				{/* A timeline, top to bottom. The open dot, on a dashed line, is what
-				    happens only if the deadline slips. */}
-				<ol className='mt-12 max-w-2xl'>
+				{/* A timeline: across on a wide screen, down on a phone. The open dot,
+				    on a dashed line, is what happens only if the deadline slips. */}
+				<ol className='mt-12 xl:grid xl:grid-cols-5 xl:gap-x-8'>
 					{CALENDAR.map((step, index) => {
 						const late = step.when.startsWith('+')
 						const number = CALENDAR.slice(0, index + 1).filter((s) => !s.when.startsWith('+')).length
 						return (
-							<li key={step.when} className='relative pb-10 pl-10 last:pb-0'>
+							<li key={step.when} className='relative pb-10 pl-10 last:pb-0 xl:pb-0 xl:pl-0 xl:pt-12'>
 								{index < CALENDAR.length - 1 ? (
 									<span
 										aria-hidden='true'
-										className={`absolute bottom-0 left-[7px] top-5 w-0.5 ${
-											index === 2 || late ? 'bg-[repeating-linear-gradient(to_bottom,var(--accent)_0_6px,transparent_6px_12px)]' : 'bg-[var(--accent)]'
+										className={`absolute bottom-0 left-[7px] top-5 w-0.5 xl:-right-8 xl:bottom-auto xl:left-4 xl:top-[7px] xl:h-0.5 xl:w-auto ${
+											index === 2 || late ? 'bg-[repeating-linear-gradient(to_bottom,var(--accent)_0_6px,transparent_6px_12px)] xl:bg-[repeating-linear-gradient(to_right,var(--accent)_0_6px,transparent_6px_12px)]' : 'bg-[var(--accent)]'
 										}`}
 									/>
 								) : null}
 								<span
 									aria-hidden='true'
-									className={`absolute left-0 top-1 size-4 rounded-full border-2 border-[var(--accent)] ${
+									className={`absolute left-0 top-1 size-4 rounded-full border-2 border-[var(--accent)] xl:top-0 ${
 										late ? 'bg-[var(--paper)]' : 'bg-[var(--accent)]'
 									}`}
 								/>
