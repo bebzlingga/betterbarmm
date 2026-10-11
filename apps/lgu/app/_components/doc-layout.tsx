@@ -9,6 +9,7 @@ export function DocLayout({
 	toc,
 	summary,
 	narrow = false,
+	measure = '',
 	children,
 }: {
 	/** "On this page"; leave it off and the text takes the full width. */
@@ -16,6 +17,8 @@ export function DocLayout({
 	summary?: React.ReactNode
 	/** Hold the text to a reading measure; leave it off where figures need the width. */
 	narrow?: boolean
+	/** A width of its own for the text column, e.g. `max-w-[54rem]`. */
+	measure?: string
 	children: React.ReactNode
 }) {
 	return (
@@ -41,7 +44,7 @@ export function DocLayout({
 			</details>
 			) : null}
 
-			<article className={`min-w-0 ${narrow ? 'max-w-[48rem]' : ''}`}>{children}</article>
+			<article className={`min-w-0 ${narrow ? 'max-w-[48rem]' : measure}`}>{children}</article>
 
 			{toc ? (
 			<aside className='hidden lg:block'>

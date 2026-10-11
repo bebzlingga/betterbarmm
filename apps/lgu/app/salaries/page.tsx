@@ -191,7 +191,7 @@ export default function SalariesPage() {
 
 			<DocLayout
 				toc={TOC}
-				narrow
+				measure='max-w-[58rem]'
 				summary='The Bangsamoro Local Governance Code sets the salary grade of every elected local official and the least a barangay official must be paid. The peso amount follows the national salary schedule: in 2026 a governor or city mayor may be paid up to ₱210,718 a month, a municipal mayor up to ₱148,940. Each local government fixes its own rates by ordinance, within a cap on how much of its income may go to salaries.'
 			>
 				<Section id='introduction'>
