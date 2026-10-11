@@ -39,6 +39,8 @@ type MastheadProps = {
   scrollLabel?: string
   /** The headline's type step. `display` is the front page's size. */
   size?: 'display-md' | 'display'
+  /** Extra classes on the headline, for a step between the two sizes. */
+  headlineClassName?: string
   /** Paint the band in the brand crimson, as the front page's masthead is. */
   brand?: boolean
 }
@@ -65,6 +67,7 @@ export function Masthead({
   scrollTo,
   scrollLabel = 'Read on',
   size = 'display-md',
+  headlineClassName = '',
   brand = false,
 }: MastheadProps) {
   return (
@@ -87,7 +90,7 @@ export function Masthead({
         <LineReveal
           lines={lines}
           delay={0.08}
-          className={`bb-${size} mt-6 text-[var(--ink)]`}
+          className={`bb-${size} mt-6 text-[var(--ink)] ${headlineClassName}`}
           lineClassName={lines.map((_, index) => (muted.includes(index) ? 'bb-mute' : undefined))}
         />
 
