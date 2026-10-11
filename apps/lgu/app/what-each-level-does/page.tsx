@@ -178,6 +178,8 @@ const TABLE = 'w-full min-w-[34rem] border-collapse text-left text-[14px]'
 const HEAD = 'border-b border-[var(--ink)] text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
 const TH = 'py-3 pr-4 font-semibold'
 const ROW = 'border-b border-[var(--rule-soft)] align-top transition-colors hover:bg-[var(--paper-2)]'
+/* Rows under a merged Level cell take no hover: the shade would cover one row and the merged cell. */
+const ROW_GROUPED = 'border-b border-[var(--rule-soft)] align-top'
 const TD = 'py-3.5 pr-4 leading-6 text-[var(--ink-2)]'
 const H3 = 'mt-12 text-[1.1rem] font-semibold tracking-[-0.01em] text-[var(--ink)]'
 
@@ -419,7 +421,7 @@ export default function HowItWorksPage() {
 						<tbody>
 							{RUNGS.flatMap((rung) =>
 								rung.groups.map((group, index) => (
-									<tr key={`${rung.level}-${group.title}`} className={ROW}>
+									<tr key={`${rung.level}-${group.title}`} className={ROW_GROUPED}>
 										{index === 0 ? (
 											<td rowSpan={rung.groups.length} className={`${TD} font-semibold text-[var(--ink)]`}>
 												{rung.level}
@@ -459,7 +461,7 @@ export default function HowItWorksPage() {
 						<tbody>
 							{ELECTED.flatMap(({ level, posts }) =>
 								posts.map((post, index) => (
-									<tr key={`${level}-${post.title}`} className={ROW}>
+									<tr key={`${level}-${post.title}`} className={ROW_GROUPED}>
 										{index === 0 ? (
 											<td rowSpan={posts.length} className={`${TD} font-semibold text-[var(--ink)]`}>
 												{level}
