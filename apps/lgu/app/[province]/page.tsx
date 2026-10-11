@@ -3,6 +3,7 @@ import { notFound, redirect } from 'next/navigation'
 import {
 	LguMasthead,
 	LguSourceNote,
+	LguFigures,
 	ShareBar,
 } from '../_components/lgu-parts'
 import {
@@ -37,6 +38,7 @@ import { NtaChart } from '../_components/nta-chart'
 import { LguTabs } from '../_components/lgu-tabs'
 import { DataTable, type DataRow } from '../_components/data-table'
 import { finances, row } from '@betterbarmm/lgu-data/fiscal'
+import { Rise } from '@betterbarmm/editorial'
 
 export function generateStaticParams() {
 	// Cotabato City's area page is a list of one thing named after the thing.
@@ -126,11 +128,74 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				<NtaChart unitKey={province.slug} />
 			</LguMasthead>
 
+			{/* The province in figures, and against the region, on a light band
+			    under the masthead. */}
+			<div className='bg-[var(--paper-2)]'>
+				<div className='bb-container py-14 lg:py-18'>
+				{/* ---- The province in figures ---- */}
+				<Rise delay={0.3} distance={14}>
+					<LguFigures
+						className=''
+						figures={[
+							{
+								label: 'Population (2024)',
+								value: formatNumber(province.population),
+								count: province.population,
+								detail: change != null ? `${change > 0 ? '+' : ''}${change}% since the 2020 census.` : undefined,
+							},
+							{
+								label: cities.length > 0 ? 'Cities and municipalities' : 'Municipalities',
+								value: String(province.municipalities.length),
+								count: province.municipalities.length,
+								group: false,
+								detail:
+									biggest.length > 0 && province.municipalities.length > 1
+										? `Largest: ${biggest.map((unit) => unit.name).join(', ')}.`
+										: undefined,
+							},
+							{
+								label: 'Barangays',
+								value: formatNumber(province.barangayCount),
+								count: province.barangayCount,
+							},
+							{
+								label: 'Land area',
+								value: formatArea(province.areaKm2),
+								detail:
+									density(province) != null ? `${formatNumber(density(province))} people per km².` : undefined,
+							},
+						]}
+					/>
+				</Rise>
+				</div>
+				<div className='bb-container'>
+					<div className='grid gap-8 border-t border-[var(--brass-line)] py-14 lg:grid-cols-2 lg:items-center lg:gap-16 lg:py-18'>
+					{regionShare != null ? (
+						<p className='max-w-[34rem] text-[15px] leading-7 text-[var(--ink-2)]'>
+							{province.name} is home to{' '}
+							<span className='num font-semibold text-[var(--ink)]'>{regionShare}%</span> of the people of
+							BARMM: {formatNumber(province.population)} of the region&rsquo;s{' '}
+							{formatNumber(lguData.totals.population)} at the 2024 census.
+						</p>
+					) : null}
+					{regionShare != null ? (
+						<Rise delay={0.1} distance={14}>
+							<ShareBar
+								share={regionShare}
+								label='Share of BARMM’s people'
+								ofLabel='The rest of BARMM’s people'
+								caption={false}
+							/>
+						</Rise>
+					) : null}
+					</div>
+				</div>
+			</div>
+
 			{/* The towns first, because finding your own is why most people open a
 			    province page; the officials and the money are a tab away rather than
 			    a long scroll below. */}
-			<section className='bb-container bb-section-bottom grid gap-10 lg:grid-cols-[minmax(0,1fr)_18rem] lg:gap-12'>
-				<div className='min-w-0'>
+			<section className='bb-container bb-section-bottom'>
 				<LguTabs
 					tabs={[
 						{
@@ -276,60 +341,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				/>
 
 				<LguSourceNote className='mt-14' />
-				</div>
-
-				{/* The province in figures, beside the tabs on a wide screen (pinned
-				    while the tab scrolls) and above them on a phone. */}
-				<aside className='order-first lg:order-none lg:sticky lg:top-[calc(var(--sticky-top)+1.5rem)] lg:self-start'>
-					<div className='bg-[var(--paper-2)] p-6'>
-						<dl className='grid gap-6 min-[380px]:grid-cols-2 lg:grid-cols-1'>
-							{[
-								{
-									label: 'Population (2024)',
-									value: formatNumber(province.population),
-									detail: change != null ? `${change > 0 ? '+' : ''}${change}% since 2020` : null,
-								},
-								{
-									label: cities.length > 0 ? 'Cities and municipalities' : 'Municipalities',
-									value: String(province.municipalities.length),
-									detail:
-										biggest.length > 0 && province.municipalities.length > 1
-											? `Largest: ${biggest.map((unit) => unit.name).join(', ')}`
-											: null,
-								},
-								{ label: 'Barangays', value: formatNumber(province.barangayCount), detail: null },
-								{
-									label: 'Land area',
-									value: formatArea(province.areaKm2),
-									detail: density(province) != null ? `${formatNumber(density(province))} people per km²` : null,
-								},
-							].map((stat) => (
-								<div key={stat.label}>
-									<dt className='bb-label'>{stat.label}</dt>
-									<dd className='num mt-2 text-[1.6rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
-										{stat.value}
-									</dd>
-									{stat.detail ? <dd className='mt-1.5 text-[12.5px] leading-5 text-[var(--ink-3)]'>{stat.detail}</dd> : null}
-								</div>
-							))}
-						</dl>
-						{regionShare != null ? (
-							<div className='mt-7 border-t border-[var(--brass-line)] pt-6'>
-								<ShareBar
-									share={regionShare}
-									label='Share of BARMM’s people'
-									ofLabel='The rest of BARMM’s people'
-									caption={false}
-									still
-								/>
-								<p className='mt-3 text-[12.5px] leading-5 text-[var(--ink-3)]'>
-									{formatNumber(province.population)} of the region&rsquo;s {formatNumber(lguData.totals.population)}{' '}
-									at the 2024 census.
-								</p>
-							</div>
-						) : null}
-					</div>
-				</aside>
 			</section>
 		</>
 	)

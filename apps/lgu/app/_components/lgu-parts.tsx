@@ -208,17 +208,11 @@ export function LguMasthead({
  * track — the point is the comparison, and a bar with nothing beside it is just
  * a colored rectangle.
  */
-/** A bar segment with no entrance, for a bar that should simply be there. */
-function StillSegment({ className, style, title }: { index?: number; className?: string; style?: React.CSSProperties; title?: string }) {
-	return <div className={className} style={style} title={title} />
-}
-
 export function ShareBar({
 	share,
 	label,
 	ofLabel,
 	caption = true,
-	still = false,
 }: {
 	/** 0–100. */
 	share: number
@@ -226,11 +220,8 @@ export function ShareBar({
 	ofLabel: string
 	/** Print `ofLabel` under the bar; off, it is only the remainder's tooltip. */
 	caption?: boolean
-	/** Draw the bar at once rather than growing it in as it scrolls into view. */
-	still?: boolean
 }) {
 	const rest = Math.max(0, 100 - share)
-	const Segment = still ? StillSegment : BarSegment
 
 	return (
 		<div>
@@ -242,13 +233,13 @@ export function ShareBar({
 			</div>
 
 			<div className='bb-bar mt-3'>
-				<Segment
+				<BarSegment
 					index={0}
 					className='h-full origin-left'
 					style={{ width: `${share}%`, background: 'var(--accent)' }}
 					title={`${label}: ${share}%`}
 				/>
-				<Segment
+				<BarSegment
 					index={1}
 					className='h-full origin-left'
 					style={{
