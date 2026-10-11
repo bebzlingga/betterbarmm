@@ -42,8 +42,8 @@ export function LocatorMap({
 	// province the coast it sits on. Never tighter than a fixed minimum, or a
 	// small island town fills the frame and says nothing about where it is.
 	const box = bounds(target)
-	const size = Math.max(box.x1 - box.x0, (box.y1 - box.y0) * 1.25, unit ? 70 : 120)
-	const width = size * 2.6
+	const size = Math.max(box.x1 - box.x0, (box.y1 - box.y0) * 1.25, unit ? 55 : 100)
+	const width = size * 2
 	const height = width * 0.8
 	const cx = (box.x0 + box.x1) / 2
 	const cy = (box.y0 + box.y1) / 2
