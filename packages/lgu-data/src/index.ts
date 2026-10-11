@@ -19,6 +19,7 @@
 export * from './boundaries'
 export * from './dataset'
 export * from './board-seats'
+export * from './histories'
 export * from './guide'
 export * from './reference'
 export * from './spending'

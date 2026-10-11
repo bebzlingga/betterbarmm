@@ -16,6 +16,7 @@ import {
 	isSingleUnitArea,
 	largestUnits,
 	lguData,
+	areaHistory,
 	boardSeatsSource,
 	boardWinners,
 	lguAreas,
@@ -121,6 +122,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 	const current = termId ? province.officials?.[termId] : undefined
 	const termLabel = termId ? `${termId.replace('-', '–')} term` : ''
 	const board = boardWinners(province.slug, current?.board)
+	const history = areaHistory(province.slug)
 	const officials = (
 		[
 			['Governor', current?.governor],
@@ -137,11 +139,30 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				kicker={`${province.kind} · Bangsamoro`}
 				name={province.name}
 			>
-				<div className='mt-7 max-w-[58rem] space-y-4 text-[15px] leading-7 text-[var(--ink-2)]'>
-					<p>{lead}</p>
-					{/* The directory's own note on the province; the region guide's where it has none. */}
-					{province.note || area?.note ? <p>{province.note || area?.note}</p> : null}
-				</div>
+				{history ? (
+					<div className='mt-8'>
+						<div className='gap-12 text-[15px] leading-7 text-[var(--ink-2)] lg:columns-2 [&>p+p]:mt-4'>
+							{history.paragraphs.map((paragraph) => (
+								<p key={paragraph.slice(0, 40)} className='break-inside-avoid-column'>
+									{paragraph}
+								</p>
+							))}
+						</div>
+						<p className='mt-6 text-[12px] leading-5 text-[var(--ink-3)]'>
+							Sources:{' '}
+							{history.sources.map((source, i) => (
+								<span key={source.href}>
+									{i > 0 ? ' · ' : ''}
+									<a href={source.href} target='_blank' rel='noreferrer' className='underline decoration-[var(--rule)] underline-offset-2 hover:text-[var(--ink)]'>
+										{source.label}
+									</a>
+								</span>
+							))}
+						</p>
+					</div>
+				) : (
+					<p className='mt-7 max-w-[58rem] text-[15px] leading-7 text-[var(--ink-2)]'>{lead}</p>
+				)}
 			</LguMasthead>
 
 			<div className='bb-container bb-section grid gap-14 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-28'>
