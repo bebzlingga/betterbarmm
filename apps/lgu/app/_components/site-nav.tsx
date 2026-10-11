@@ -184,6 +184,10 @@ export function SiteNav() {
 							Officials
 						</Link>
 
+						<Link href='/ordinances' data-active={pathname.startsWith('/ordinances')} className='nav-item'>
+							Ordinances
+						</Link>
+
 						<Menu label='LGU profiles' active={isProvinceActive} width='w-[17rem]'>
 							{(close) => [
 								<Link key='all' href='/' onClick={close} className='nav-menu-item'>
@@ -285,6 +289,9 @@ export function SiteNav() {
 							<div className='mt-3 grid'>
 								<Link href='/officials' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5'>
 									Local officials
+								</Link>
+								<Link href='/ordinances' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5'>
+									Ordinances <span className='text-[12px] text-[var(--ink-3)]'>· Soon</span>
 								</Link>
 							</div>
 
