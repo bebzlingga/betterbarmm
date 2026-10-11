@@ -40,24 +40,24 @@ export function LguDisclosure({ unitKey, name }: { unitKey: string; name: string
 
 	return (
 		<div>
-			<p className='max-w-[48rem] text-[15px] leading-7 text-[var(--ink-2)]'>
+			<p className='text-[15px] leading-7 text-[var(--ink-2)]'>
 				Under DILG’s Full Disclosure Policy, every province, city and municipality must post its budget, its
 				procurement plans, its quarterly statements and how it used its development and disaster funds, in three
-				conspicuous places and on DILG’s portal. This is what {name} has put on the portal since 2023.
+				conspicuous places and on DILG’s portal. This is what {name} has put on the portal since 2023.{' '}
+				<a
+					href={portal?.href ?? `${fdpp.source[0].href}/index?region_filter=19`}
+					target='_blank'
+					rel='noreferrer'
+					className='font-semibold text-[var(--ink)] underline decoration-[var(--rule)] underline-offset-4 transition hover:text-[var(--accent)]'
+				>
+					{portal?.town
+						? `All of ${name}’s postings on DILG’s portal`
+						: portal
+							? 'The province’s postings on DILG’s portal, its towns’ included'
+							: 'All BARMM postings on DILG’s portal'}
+					<ArrowUpRightIcon size={13} className='ml-1 inline' aria-hidden='true' />
+				</a>
 			</p>
-			<a
-				href={portal?.href ?? `${fdpp.source[0].href}/index?region_filter=19`}
-				target='_blank'
-				rel='noreferrer'
-				className='mt-5 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[var(--ink)] underline decoration-[var(--rule)] underline-offset-4 transition hover:text-[var(--accent)]'
-			>
-				{portal?.town
-					? `All of ${name}’s postings on DILG’s portal`
-					: portal
-						? 'The province’s postings on DILG’s portal, its towns’ included'
-						: 'All BARMM postings on DILG’s portal'}
-				<ArrowUpRightIcon size={13} aria-hidden='true' />
-			</a>
 
 			{years.length === 0 ? (
 				<p className='mt-10 bg-[var(--paper-2)] px-6 py-5 text-[15px] leading-7 text-[var(--ink-2)]'>
