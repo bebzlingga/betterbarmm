@@ -140,7 +140,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				name={province.name}
 			>
 				{history ? (
-					<div className='mt-8'>
+					<div className='mt-12'>
 						<div className='gap-12 text-[15px] leading-7 text-[var(--ink-2)] lg:columns-2 [&>p+p]:mt-4'>
 							{history.paragraphs.map((paragraph) => (
 								<p key={paragraph.slice(0, 40)} className='break-inside-avoid-column'>
@@ -150,7 +150,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 						</div>
 					</div>
 				) : (
-					<p className='mt-7 max-w-[58rem] text-[15px] leading-7 text-[var(--ink-2)]'>{lead}</p>
+					<p className='mt-12 max-w-[58rem] text-[15px] leading-7 text-[var(--ink-2)]'>{lead}</p>
 				)}
 			</LguMasthead>
 
