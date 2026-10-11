@@ -121,7 +121,7 @@ export default async function ExplainersPage({
 function Empty() {
 	return (
 		<section className='bb-container bb-section'>
-			<div className='mx-auto max-w-[36rem] py-10 text-center'>
+			<div className='mx-auto max-w-[36rem] py-16 text-center lg:py-28'>
 				<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>Soon</p>
 				<h2 className='mt-4 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>
 					The first explainers are on their way.
