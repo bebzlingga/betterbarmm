@@ -42,14 +42,27 @@ const TERMS = [
 type Office = Contest | Contest[] | OfficeHolder | OfficeHolder[] | undefined
 
 /** The people one office's record names as elected, with their tally where there is one. */
-type Person = { name: string; party: string | null; votes: number | null; pct: number | null }
+type Person = { name: string; party: string | null; votes: number | null; pct: number | null; district?: string }
+
+/** "... - FIRST PROVDIST" -> "1st district"; null where the contest names none. */
+function districtOf(contestName: string): string | null {
+	const match = contestName.toUpperCase().match(/(FIRST|SECOND|THIRD|FOURTH|LONE) PROVDIST/)
+	if (!match || match[1] === 'LONE') return null
+	return `${{ FIRST: '1st', SECOND: '2nd', THIRD: '3rd', FOURTH: '4th' }[match[1]]} district`
+}
 
 function elected(office: Office): Person[] {
 	if (!office) return []
 	const list = Array.isArray(office) ? office : [office]
 	return list.flatMap((item): Person[] =>
 		'ranked' in item
-			? winners(item).map((c) => ({ name: c.name, party: c.party ?? null, votes: c.votes ?? null, pct: c.percentage ?? null }))
+			? winners(item).map((c) => ({
+					name: c.name,
+					party: c.party ?? null,
+					votes: c.votes ?? null,
+					pct: c.percentage ?? null,
+					district: districtOf(item.contestName) ?? undefined,
+				}))
 			: [{ name: item.name, party: item.party ?? null, votes: null, pct: null }],
 	)
 }
@@ -66,7 +79,7 @@ function officialsFor(term: string): OfficialRow[] {
 				key: `${unit.key}:${position}:${i}`,
 				name: personName(person.name),
 				position,
-				lgu: unit.lgu,
+				lgu: person.district ? `${unit.lgu} · ${person.district}` : unit.lgu,
 				href: unit.href,
 				area: unit.area,
 				level: unit.level,
@@ -100,7 +113,7 @@ function officialsFor(term: string): OfficialRow[] {
 								key: `${unit.key}:board:${district}:${i}`,
 								name: personName(member.name),
 								position: 'Provincial board member',
-								lgu: unit.lgu,
+								lgu: `${unit.lgu} · ${district}`,
 								href: unit.href,
 								area: unit.area,
 								level: 'Province',
