@@ -128,13 +128,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				</div>
 			</LguMasthead>
 
-			{/* The provincial government's NTA, year by year, on a light band under the masthead. */}
-			<div className='bg-[var(--paper-2)]'>
-				<div className='bb-container pb-10 pt-2'>
-					<NtaChart unitKey={province.slug} />
-				</div>
-			</div>
-
 			<div className='bb-container bb-section grid gap-14 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-24'>
 				{/* ---- The province, read down: its towns, then its own records ---- */}
 				<div className='min-w-0'>
@@ -165,6 +158,11 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 									</li>
 								))}
 						</ul>
+					</section>
+
+					{/* The provincial government's own NTA, year by year. */}
+					<section className='mt-20'>
+						<NtaChart unitKey={province.slug} />
 					</section>
 
 					{province.kind === 'Province' ? (
