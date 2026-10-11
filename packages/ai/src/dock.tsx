@@ -690,7 +690,7 @@ const CSS = `
 /* The window, not a box in the middle of it. A dialog still, so the browser
    keeps the focus trap and Escape; only its size and edges are taken off. */
 .ask-screen {
-	width: min(480px, 100vw); height: 100dvh; max-width: none; max-height: none;
+	width: min(600px, 100vw); height: 100dvh; max-width: none; max-height: none;
 	margin: 0 0 0 auto; padding: 0; border: 0; border-radius: 0;
 	background: var(--paper, #fff); color: var(--ink, #171715); font: inherit;
 	box-shadow: -24px 0 60px -30px rgba(0, 0, 0, 0.5);
@@ -747,7 +747,7 @@ const CSS = `
 }
 
 /* One reading column down the middle, which every part lines up on. */
-.ask-column { width: 100%; margin: 0 auto; padding: 0 22px; }
+.ask-column { width: 100%; margin: 0 auto; padding: 0 32px; }
 
 .ask-head { flex: none; padding: 16px 0; border-bottom: 1px solid var(--rule-soft, #f1f1ee); background: var(--paper-2, #fbfbfa); }
 .ask-bar { display: flex; align-items: center; gap: 12px; }
