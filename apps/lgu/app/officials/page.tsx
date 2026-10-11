@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { lguData, lguProvinces, personName, winners, type Contest } from '@betterbarmm/lgu-data'
+import { boardWinners, lguData, lguProvinces, personName, winners, type Contest } from '@betterbarmm/lgu-data'
 import { officialsHistory, type OfficeHolder } from '@betterbarmm/lgu-data/history'
 import { LguMasthead } from '../_components/lgu-parts'
 import { OfficialsExplorer, type OfficialRow } from '../_components/officials-explorer'
@@ -91,7 +91,26 @@ function officialsFor(term: string): OfficialRow[] {
 				const unit = { key: province.slug, lgu: once ?? province.name, href: `/${province.slug}`, area: province.name, level: 'Province' as const }
 				add(record.governor, 'Governor', unit)
 				add(record.viceGovernor, 'Vice-Governor', unit)
-				add(record.board, 'Provincial board member', unit)
+				// The 2025 record has no seat counts; COMELEC's per district fill them in.
+				const board = term === CURRENT ? boardWinners(province.slug, record.board as Contest[] | undefined) : null
+				if (board) {
+					board.districts.forEach(({ district, members }) =>
+						members.forEach((member, i) =>
+							rows.push({
+								key: `${unit.key}:board:${district}:${i}`,
+								name: personName(member.name),
+								position: 'Provincial board member',
+								lgu: unit.lgu,
+								href: unit.href,
+								area: unit.area,
+								level: 'Province',
+								party: member.party ?? null,
+								votes: member.votes ?? null,
+								pct: member.percentage ?? null,
+							}),
+						),
+					)
+				} else add(record.board, 'Provincial board member', unit)
 			}
 		}
 		for (const town of province.municipalities) {
@@ -139,9 +158,8 @@ export default async function OfficialsPage({ searchParams }: { searchParams: Pr
 						<a href={officialsHistory.source.href} target='_blank' rel='noreferrer' className='rule-link'>
 							{officialsHistory.source.label}
 						</a>
-						; for some of them only the winners survive, so there are no votes. Where the record does not say how
-						many seats a council had, as for the 2025 provincial boards, its members are not listed here; the
-						full tally is on each province&rsquo;s page.
+						; for some of them only the winners survive, so there are no votes. The 2025 provincial boards are filled at COMELEC&rsquo;s seats per district (Resolutions 11050 and 11085);
+						where an older record does not say how many seats a council had, its members are not listed.
 					</p>
 					<p>
 						Barangay officials are elected separately and are not here. Office-holders change after an election;
