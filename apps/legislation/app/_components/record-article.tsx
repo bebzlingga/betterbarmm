@@ -280,7 +280,7 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 				    above the title read as a false start. Held to a measure rather than
 				    run across the page column: an official title is a sentence, and a
 				    sentence forty words long is unreadable at 88rem. */}
-				<h1 className='mt-4 text-[1.85rem] font-bold leading-[1.18] tracking-[-0.02em] text-[var(--ink)] sm:text-[2.5rem] lg:text-[2.75rem]'>
+				<h1 className='mt-4 text-[1.7rem] font-bold leading-[1.2] tracking-[-0.02em] text-[var(--ink)] sm:text-[2.25rem] lg:text-[2.4rem]'>
 					{record.title}
 				</h1>
 
