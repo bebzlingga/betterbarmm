@@ -1,5 +1,6 @@
 import { CtaPanel } from '@betterbarmm/editorial'
 import { SiteFooter } from './site-footer'
+import { RegistryFinder } from './registry-finder'
 import { SiteNav } from './site-nav'
 
 /**
@@ -14,6 +15,7 @@ import { SiteNav } from './site-nav'
  */
 export function Shell({ children }: { children: React.ReactNode }) {
 	return (
+		<RegistryFinder>
 		<div className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteNav />
 			{/* Descriptions at the budget workspace's size. The shared `.bb-body`
@@ -37,5 +39,6 @@ export function Shell({ children }: { children: React.ReactNode }) {
 
 			<SiteFooter />
 		</div>
+		</RegistryFinder>
 	)
 }

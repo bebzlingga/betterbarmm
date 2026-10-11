@@ -328,3 +328,24 @@
      dark bruise; a low white reads as an empty socket waiting to be filled. */
   --tone-idle-bg: rgba(255, 255, 255, 0.14);
 }
+
+/* The registry finder's rows, as in the Local Government workspace. */
+.finder-hit {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid var(--rule-soft);
+  padding: 0.8rem 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.12s var(--ease);
+}
+
+.finder-hit[data-active="true"] {
+  background: var(--paper-2);
+  box-shadow: inset 2px 0 0 var(--accent);
+}
+
+.finder-hit:last-child {
+  border-bottom: 0;
+}

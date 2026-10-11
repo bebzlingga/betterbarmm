@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import { categories } from '../_lib/categories'
+import { FinderTrigger } from './registry-finder'
 import { ThemeToggle } from './theme-toggle'
 
 /**
@@ -281,6 +282,7 @@ export function SiteNav() {
 					</nav>
 
 					<div className='flex items-center justify-end gap-2 md:gap-1.5'>
+						<FinderTrigger />
 						<button
 							type='button'
 							aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
