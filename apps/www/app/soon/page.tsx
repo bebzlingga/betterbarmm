@@ -63,15 +63,6 @@ export default function SoonPage() {
 				<WorkspaceIndex workspaces={workspaces.filter((w) => w.state === 'live')} />
 			</section>
 
-			<section className='bb-container bb-section-bottom'>
-				<SectionHead
-					index='02'
-					eyebrow='Coming later'
-					title='Still being built.'
-					titleMuted='Each opens once its records can be traced.'
-				/>
-				<WorkspaceIndex workspaces={workspaces.filter((w) => w.state !== 'live')} />
-			</section>
 
 			{/* ---- Hear when it opens ---- */}
 			<section className='bb-container bb-section'>
