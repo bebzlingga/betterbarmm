@@ -81,7 +81,7 @@ function Years({ series }: { series: Series }) {
 			{series.map((one) => (
 				<div key={one.year} className='ask-year'>
 					<span className='ask-year-fig'>{(one.total / 1e9).toFixed(1)}</span>
-					<span className='ask-year-bar' style={{ height: `${(one.total / most) * 100}%` }} />
+					<span className='ask-year-bar' style={{ height: `calc((100% - 2.4rem) * ${one.total / most})` }} />
 					<span className='ask-year-tag'>&rsquo;{String(one.year).slice(2)}</span>
 				</div>
 			))}
@@ -381,7 +381,7 @@ export function AskDock() {
 				onClick={() => setOpen(true)}
 			>
 				<Spark size={19} />
-				<span>Ask</span>
+				<span>Ask Jo</span>
 			</button>
 
 			<dialog ref={panel} className='ask-screen' aria-label='Ask Jo' onClose={() => setOpen(false)}>
@@ -673,24 +673,31 @@ const CSS = `
 .ask-launcher {
 	position: fixed; right: 24px; bottom: 24px; z-index: 60;
 	display: inline-flex; align-items: center; gap: 9px;
-	padding: 15px 24px; border: 0; border-radius: 999px;
+	padding: 8px 20px 8px 8px; border: 0; border-radius: 999px;
 	background: var(--accent, #8a2418); color: #fff;
-	font: inherit; font-size: 16px; font-weight: 600; line-height: 1; cursor: pointer;
-	box-shadow: 0 8px 28px rgba(0, 0, 0, 0.24);
+	font: inherit; font-size: 15.5px; font-weight: 600; line-height: 1; cursor: pointer;
+	box-shadow: 0 14px 34px -10px rgba(0, 0, 0, 0.45);
+	transition: transform 200ms ease, filter 200ms ease;
 }
+.ask-launcher svg {
+	box-sizing: content-box; padding: 9px; border-radius: 999px;
+	background: #fff; color: var(--accent, #8a2418);
+}
+.ask-launcher:hover { transform: translateY(-1px); }
 .ask-launcher:hover { filter: brightness(1.08); }
 .ask-launcher[hidden] { display: none; }
 
 /* The window, not a box in the middle of it. A dialog still, so the browser
    keeps the focus trap and Escape; only its size and edges are taken off. */
 .ask-screen {
-	width: 100vw; height: 100dvh; max-width: none; max-height: none;
-	margin: 0; padding: 0; border: 0; border-radius: 0;
-	background: var(--paper-2, #fbfbfa); color: var(--ink, #171715); font: inherit;
+	width: min(480px, 100vw); height: 100dvh; max-width: none; max-height: none;
+	margin: 0 0 0 auto; padding: 0; border: 0; border-radius: 0;
+	background: var(--paper, #fff); color: var(--ink, #171715); font: inherit;
+	box-shadow: -24px 0 60px -30px rgba(0, 0, 0, 0.5);
 }
 .ask-screen:not([open]) { display: none; }
 .ask-screen[open] { display: flex; flex-direction: column; }
-.ask-screen::backdrop { background: var(--paper-2, #fbfbfa); }
+.ask-screen::backdrop { background: rgba(12, 12, 11, 0.42); backdrop-filter: blur(3px); }
 
 /* Arriving.
 
@@ -713,7 +720,7 @@ const CSS = `
    felt as the page being slow rather than as the screen being smooth. */
 .ask-screen {
 	opacity: 0;
-	transform: translateY(10px) scale(0.994);
+	transform: translateX(28px);
 	transition:
 		opacity 240ms cubic-bezier(0.22, 1, 0.36, 1),
 		transform 240ms cubic-bezier(0.22, 1, 0.36, 1),
@@ -722,7 +729,7 @@ const CSS = `
 }
 .ask-screen[open] { opacity: 1; transform: none; }
 @starting-style {
-	.ask-screen[open] { opacity: 0; transform: translateY(10px) scale(0.994); }
+	.ask-screen[open] { opacity: 0; transform: translateX(28px); }
 }
 
 /* The ground behind it fades on its own clock — a shade quicker in, so the
@@ -740,13 +747,13 @@ const CSS = `
 }
 
 /* One reading column down the middle, which every part lines up on. */
-.ask-column { width: 100%; max-width: 780px; margin: 0 auto; padding: 0 20px; }
+.ask-column { width: 100%; margin: 0 auto; padding: 0 22px; }
 
-.ask-head { flex: none; padding: 14px 0; border-bottom: 1px solid var(--rule-soft, #f1f1ee); }
+.ask-head { flex: none; padding: 16px 0; border-bottom: 1px solid var(--rule-soft, #f1f1ee); background: var(--paper-2, #fbfbfa); }
 .ask-bar { display: flex; align-items: center; gap: 12px; }
 .ask-mark {
 	display: inline-flex; align-items: center; justify-content: center;
-	width: 42px; height: 42px; flex: none; border-radius: 13px;
+	width: 44px; height: 44px; flex: none; border-radius: 999px;
 	background: var(--accent, #8a2418); color: #fff;
 }
 .ask-titles { display: flex; flex-direction: column; min-width: 0; flex: 1; }
@@ -772,21 +779,24 @@ const CSS = `
 
 .ask-opening { display: flex; flex-direction: column; gap: 13px; }
 .ask-opening p { margin: 0; font-size: 15px; line-height: 1.65; text-wrap: pretty; color: var(--ink-3, #5a5a53); }
-.ask-hello {
-	font-size: 26px; line-height: 1.15; font-weight: 600; letter-spacing: -0.025em;
+.ask-opening .ask-hello {
+	font-size: 28px; line-height: 1.15; font-weight: 600; letter-spacing: -0.025em;
 	color: var(--ink, #171715);
 }
-.ask-try { margin-top: 12px; }
-.ask-whois { margin-top: 4px; font-size: 13px; }
+.ask-opening .ask-try { margin-top: 14px; font-size: 10.5px; line-height: 1.4; color: var(--ink-mute, #76766e); }
+.ask-opening .ask-whois { margin-top: 6px; font-size: 13px; }
+.ask-whois a { color: var(--accent, #8a2418); font-weight: 600; text-decoration: none; }
+.ask-whois a:hover { text-decoration: underline; }
 
-.ask-openers { list-style: none; display: flex; flex-direction: column; margin: 0; padding: 0; }
-.ask-openers li { border-top: 1px solid var(--rule-soft, #f1f1ee); }
-.ask-openers li:last-child { border-bottom: 1px solid var(--rule-soft, #f1f1ee); }
+.ask-openers { list-style: none; display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 0; }
 .ask-opener {
 	display: flex; align-items: center; justify-content: space-between; gap: 20px;
-	width: 100%; padding: 14px 2px; border: 0; background: transparent;
-	color: var(--ink-2, #3b3b36); font: inherit; font-size: 15px; text-align: left; cursor: pointer;
+	width: 100%; padding: 13px 16px; border: 1px solid var(--rule, #e7e7e3); border-radius: 14px;
+	background: var(--paper-2, #fbfbfa);
+	color: var(--ink-2, #3b3b36); font: inherit; font-size: 14.5px; text-align: left; cursor: pointer;
+	transition: border-color 160ms ease, background 160ms ease;
 }
+.ask-opener:hover { border-color: var(--accent, #8a2418); background: var(--paper, #fff); }
 .ask-opener:hover { color: var(--accent, #8a2418); }
 .ask-opener:hover .ask-go { color: var(--accent, #8a2418); transform: translateX(2px); }
 
@@ -838,8 +848,8 @@ const CSS = `
 /* What was asked: a pill on the right, as every chat writes it. */
 .ask-mine {
 	align-self: flex-end; max-width: 80%; margin: 0;
-	padding: 11px 16px; border-radius: 18px;
-	background: var(--paper-3, #efefed); color: var(--ink, #171715);
+	padding: 11px 16px; border-radius: 18px 18px 4px 18px;
+	background: var(--accent, #8a2418); color: #fff;
 	font-size: 14.5px; line-height: 1.55; white-space: pre-wrap;
 }
 
@@ -913,12 +923,12 @@ const CSS = `
 /* The seven-year chart. A grid so the bars share one baseline and the
    figures above them stay on one row however tall each column is. */
 .ask-years {
-	display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px;
-	align-items: end; margin: 18px 0 0; padding: 0; height: 132px;
+	display: grid; grid-template-columns: repeat(7, 1fr); grid-template-rows: 132px auto; gap: 6px;
+	align-items: stretch; margin: 18px 0 0; padding: 0;
 }
 .ask-year { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; gap: 5px; }
 .ask-year-fig { font-size: 10.5px; font-weight: 600; color: var(--ink-3, #5a5a53); font-variant-numeric: tabular-nums; }
-.ask-year-bar { width: 100%; min-height: 2px; background: var(--accent, #8a2418); border-radius: 2px 2px 0 0; }
+.ask-year-bar { width: 100%; min-height: 2px; background: var(--accent, #8a2418); border-radius: 4px 4px 0 0; }
 .ask-year-tag { font-size: 10px; color: var(--ink-mute, #76766e); font-variant-numeric: tabular-nums; }
 .ask-years-cap {
 	grid-column: 1 / -1; margin: 8px 0 0; font-size: 11px; color: var(--ink-mute, #76766e);
@@ -1003,12 +1013,13 @@ const CSS = `
 .ask-time-row:nth-child(5) { animation-delay: 220ms; }
 .ask-time-row:nth-child(n + 6) { animation-delay: 260ms; }
 
-.ask-sources { list-style: none; display: flex; flex-direction: column; margin: 0; padding: 0; }
-.ask-sources li { border-top: 1px solid var(--rule-soft, #f1f1ee); }
+.ask-sources { list-style: none; display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 0; }
 .ask-sources a {
-	display: flex; align-items: center; gap: 28px; padding: 12px 2px;
-	text-decoration: none; color: inherit;
+	display: flex; align-items: center; gap: 14px; padding: 10px 12px;
+	border: 1px solid var(--rule, #e7e7e3); border-radius: 12px;
+	text-decoration: none; color: inherit; transition: border-color 160ms ease;
 }
+.ask-sources a:hover { border-color: var(--accent, #8a2418); }
 .ask-sources a:hover .ask-name { color: var(--accent, #8a2418); }
 .ask-sources a:hover .ask-go { color: var(--accent, #8a2418); }
 .ask-shot {
@@ -1020,7 +1031,7 @@ const CSS = `
 .ask-note { font-size: 12.5px; line-height: 1.45; color: var(--ink-mute, #76766e); }
 .ask-go { flex: none; color: var(--ink-mute, #76766e); transition: transform 200ms ease, color 200ms ease; }
 
-.ask-foot { flex: none; display: flex; flex-direction: column; gap: 8px; padding: 12px 0 24px; }
+.ask-foot { flex: none; display: flex; flex-direction: column; gap: 8px; padding: 12px 0 18px; border-top: 1px solid var(--rule-soft, #f1f1ee); }
 .ask-error { margin: 0 0 8px; font-size: 12.5px; color: var(--accent, #8a2418); }
 
 /* One pill, and the arrow sits inside it: the button is taken out of the flow
@@ -1028,9 +1039,8 @@ const CSS = `
    keeping the text from ever running under it. */
 .ask-compose {
 	position: relative;
-	border: 1px solid var(--rule, #e7e7e3); border-radius: 999px;
-	background: var(--paper, #fff);
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+	border: 1px solid var(--rule, #e7e7e3); border-radius: 18px;
+	background: var(--paper-2, #fbfbfa);
 }
 .ask-compose:focus-within { border-color: var(--ink-mute, #76766e); }
 .ask-compose textarea {
@@ -1047,9 +1057,9 @@ const CSS = `
 	position: absolute; right: 9px; bottom: 9px;
 	display: inline-flex; align-items: center; justify-content: center;
 	width: 36px; height: 36px; padding: 0; border: 0; border-radius: 999px;
-	background: transparent; color: var(--ink-3, #5a5a53); cursor: pointer;
+	background: var(--accent, #8a2418); color: #fff; cursor: pointer;
 }
-.ask-send:hover:not(:disabled) { background: var(--paper-3, #efefed); color: var(--ink, #171715); }
+.ask-send:hover:not(:disabled) { filter: brightness(1.1); }
 .ask-send:disabled { opacity: 0.4; cursor: default; }
 /* Disabled while it works, but not dimmed: the spinner is the one thing on
    the screen saying anything is happening. */
