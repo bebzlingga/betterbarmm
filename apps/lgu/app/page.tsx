@@ -8,7 +8,7 @@ import {
 	type LguProvince,
 } from '@betterbarmm/lgu-data'
 import { rosterCoverage } from '@betterbarmm/lgu-data/barangay-officials'
-import { finances, row } from '@betterbarmm/lgu-data/fiscal'
+import { ntaShares } from '@betterbarmm/lgu-data/nta'
 import { RegionMap } from './_components/region-map'
 import { DataTable } from './_components/data-table'
 
@@ -64,13 +64,9 @@ function Areas() {
 
 export default function LguHomePage() {
 	const regionRoster = rosterCoverage(lguProvinces.flatMap((province) => province.municipalities))
-	// The NTA the provinces, cities and towns themselves reported receiving in
-	// BLGF's latest year; barangays' shares are paid to them and are not in it.
-	const ntaYear = finances.years.at(-1)!
-	const ntaTotal = Object.keys(finances.units).reduce(
-		(sum, key) => sum + Number(row(finances, key, ntaYear)?.nta ?? 0),
-		0,
-	)
+	// DBM's NTA allocation to all of BARMM's local governments, barangays included.
+	const ntaYear = ntaShares.years[0]!
+	const ntaTotal = ntaShares.region[ntaYear]!
 
 	return (
 		<>

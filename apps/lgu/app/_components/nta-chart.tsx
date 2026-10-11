@@ -1,4 +1,8 @@
 import { finances, row } from '@betterbarmm/lgu-data/fiscal'
+import { ntaShare } from '@betterbarmm/lgu-data/nta'
+
+/* DBM's allocation, for the year after BLGF's latest. */
+const ALLOCATED = 2026
 
 /**
  * A province's or town's own National Tax Allotment, year by year: one series, so one hue and
@@ -6,10 +10,14 @@ import { finances, row } from '@betterbarmm/lgu-data/fiscal'
  * A year with no report is drawn as a gap with a dash, never as zero.
  */
 export function NtaChart({ unitKey }: { unitKey: string }) {
-	const years = finances.years.map((year) => ({
-		year,
-		nta: (row(finances, unitKey, year)?.nta as number | null | undefined) ?? null,
-	}))
+	const years = [
+		...finances.years.map((year) => ({
+			year,
+			nta: (row(finances, unitKey, year)?.nta as number | null | undefined) ?? null,
+			allocated: false,
+		})),
+		{ year: ALLOCATED, nta: ntaShare(unitKey, ALLOCATED), allocated: true },
+	]
 	if (!years.some((one) => one.nta)) return null
 	const top = Math.max(...years.map((one) => one.nta ?? 0))
 	const short = (value: number) =>
@@ -22,11 +30,11 @@ export function NtaChart({ unitKey }: { unitKey: string }) {
 			<figcaption className='mb-8 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
 				<h2 className='font-[family-name:var(--font-display)] text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>National Tax Allotment, by year</h2>
 				<span className='text-[12.5px] text-[var(--ink-3)]'>
-					Reported to BLGF. FY {finances.years.at(-1)} is preliminary.
+					Received, as reported to BLGF; FY {finances.years.at(-1)} is preliminary. FY {ALLOCATED}, lighter, is DBM&rsquo;s allocation.
 				</span>
 			</figcaption>
 			<div className='grid h-44 items-end gap-1.5 sm:gap-4' style={{ gridTemplateColumns: `repeat(${years.length}, minmax(0, 1fr))` }}>
-				{years.map(({ year, nta }) => (
+				{years.map(({ year, nta, allocated }) => (
 					// The label rides on top of its bar; the bar's height is a share of
 					// the track under the label row, so the tallest one never overruns.
 					<div key={year} className='flex h-full flex-col items-center justify-end pt-6'>
@@ -42,6 +50,7 @@ export function NtaChart({ unitKey }: { unitKey: string }) {
 										height: `calc(${(nta / top) * 100}% - 1.5rem)`,
 										minHeight: '2px',
 										background: 'var(--accent)',
+										opacity: allocated ? 0.45 : 1,
 									}}
 									title={`FY ${year}: ₱${nta.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}
 								/>

@@ -45,3 +45,27 @@ export const nta = file as {
 export function ntaFor(provinceSlug: string, unitSlug?: string): NtaUnit | null {
 	return nta.units[unitSlug ? `${provinceSlug}/${unitSlug}` : provinceSlug] ?? null
 }
+
+import sharesFile from '../../../datasets/lgu/nta-shares.json'
+
+/**
+ * DBM's NTA allocation by LGU, from its COMPASS portal: FY 2026 and the
+ * FY 2027 figure. An allocation, not a receipt — the BLGF figures in
+ * `finances` are what treasurers reported receiving.
+ */
+export const ntaShares = sharesFile as {
+	name: string
+	generatedAt: string
+	source: { label: string; href: string }[]
+	note: string
+	years: number[]
+	/** DBM's BARMM total, barangays included. */
+	region: Record<string, number>
+	units: Record<string, NtaUnit>
+}
+
+/** The unit's own allocation for a year: a province's, or a city's or town's. */
+export function ntaShare(unitKey: string, year: number): number | null {
+	const unit = ntaShares.units[unitKey]
+	return (unitKey.includes('/') ? unit?.lgu : unit?.province)?.[String(year)] ?? null
+}
