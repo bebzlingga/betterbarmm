@@ -161,56 +161,6 @@
   color: var(--accent);
 }
 
-/* Term chips. A term with no canvass on record is shown struck through and
-   disabled rather than hidden — the gap in the record is itself information,
-   and a picker offering only the current term would imply there was never
-   anything before it. */
-.lgu-term {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.45rem;
-  border: 1px solid var(--rule);
-  padding: 0.4rem 0.7rem;
-  font-family: var(--font-display);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  color: var(--ink-3);
-  cursor: pointer;
-  transition:
-    border-color 0.18s var(--ease),
-    background-color 0.18s var(--ease),
-    color 0.18s var(--ease);
-}
-
-.lgu-term:hover:not(:disabled) {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
-.lgu-term[aria-pressed="true"] {
-  border-color: var(--accent);
-  background: var(--accent);
-  color: #fff;
-}
-
-.lgu-term:disabled {
-  cursor: not-allowed;
-  color: var(--ink-mute);
-  border-style: dashed;
-  text-decoration: line-through;
-  text-decoration-color: var(--rule);
-}
-
-.lgu-term-flag {
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--ink-mute);
-  text-decoration: none;
-}
-
 .lgu-stat {
   border-top: 1px solid var(--brass-line);
   padding-top: 0.85rem;

@@ -18,20 +18,9 @@ import {
 	lguData,
 	lguProvinces,
 	personName,
-	officialsTerms,
 	type LguProvince,
 	type LguUnit,
 } from '@betterbarmm/lgu-data'
-import {
-	MultiSeat,
-	NoCanvass,
-	OfficeLineage,
-	ProvinceRollPanel,
-	Reconstructed,
-	SingleSeat,
-} from '../_components/lgu-officials'
-import { provinceHistory, tookOffice } from '@betterbarmm/lgu-data/history'
-import { LguTermPicker } from '../_components/lgu-term-picker'
 import { LguFinances } from '../_components/lgu-finances'
 import { LguDisclosure } from '../_components/lgu-disclosure'
 import { NtaChart } from '../_components/nta-chart'
@@ -101,7 +90,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 	if (isSingleUnitArea(province)) redirect(areaHref(province))
 
 	// The terms before 2025, which are winners only — see the history package.
-	const history = provinceHistory(province.slug)
 
 	const cities = province.municipalities.filter((unit) => unit.isCity)
 	const biggest = largestUnits(province)
@@ -219,100 +207,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 								</div>
 							),
 						},
-						...(province.officials
-							? [
-									{
-										id: 'officials',
-										label: 'Officials',
-										panel: (
-											<div>
-
-					{/* Who has governed the province since 2001, before the term-by-term
-					    detail — one term answers who the governor is, the run answers
-					    who the province has been governed by. */}
-					<div className='mt-12'>
-						<OfficeLineage
-							terms={officialsTerms}
-							holders={Object.fromEntries(
-								officialsTerms.map((term) => [
-									term.id,
-									province.officials?.[term.id]?.governor?.ranked[0] ??
-										tookOffice(history[term.id], 'governor'),
-								]),
-							)}
-						/>
-					</div>
-
-					<div className='mt-14'>
-						<LguTermPicker
-							panels={officialsTerms
-								.map((term) => {
-									const record = history[term.id]
-									// COMELEC's own canvass, or a reconstructed one — the same
-									// shape either way, so the same components draw it.
-									const officials =
-										province.officials?.[term.id] ??
-										(record?.kind === 'canvass' ? record : undefined)
-
-									if (!officials) {
-										if (
-											record?.kind !== 'roll' ||
-											(!record.governor && !record.viceGovernor && !record.board?.length)
-										) {
-											return null
-										}
-										return {
-											id: term.id,
-											node: <ProvinceRollPanel roll={record} note={term.note} />,
-										}
-									}
-
-									return {
-										id: term.id,
-										node: (
-											<div>
-												{term.status === 'canvass' ? <Reconstructed note={term.note} /> : null}
-												{record?.kind === 'canvass' && record.undivided ? (
-													<p className='mb-8 max-w-2xl border border-[var(--rule)] bg-[var(--paper-2)] p-4 text-[13px] leading-6 text-[var(--ink-2)]'>
-														{record.undivided} was still one province in this term. This is its
-														canvass — the governor, vice-governor and board elected by what is now
-														both Maguindanao del Norte and Maguindanao del Sur. Neither half
-														elected its own until 2025.
-													</p>
-												) : null}
-												<div className='grid gap-10 lg:grid-cols-2 lg:gap-16'>
-													{officials.governor ? (
-														<SingleSeat title='Provincial Governor' contest={officials.governor} />
-													) : null}
-													{officials.viceGovernor ? (
-														<SingleSeat
-															title='Provincial Vice-Governor'
-															contest={officials.viceGovernor}
-														/>
-													) : null}
-												</div>
-
-												{officials.board ? (
-													<div className='mt-12'>
-														<MultiSeat
-															title='Sangguniang Panlalawigan'
-															contests={officials.board}
-														/>
-													</div>
-												) : null}
-											</div>
-										),
-									}
-								})
-								.filter((panel) => panel !== null)}
-							empty={<NoCanvass name={province.name} />}
-						/>
-					</div>
-											</div>
-										),
-									},
-								]
-							: []),
 						...(province.kind === 'Province'
 							? [
 									{

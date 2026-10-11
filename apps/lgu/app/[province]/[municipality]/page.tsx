@@ -1,4 +1,4 @@
-import { ArrowLeftIcon, ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
+import { ArrowLeftIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -9,7 +9,6 @@ import {
 	formatArea,
 	formatNumber,
 	growth,
-	officialsTerms,
 	unitClass,
 	type LguProvince,
 	type LguUnit,
@@ -22,23 +21,12 @@ import {
 } from '../../_components/lgu-parts'
 import { lguData, personName } from '@betterbarmm/lgu-data'
 import { finances, row } from '@betterbarmm/lgu-data/fiscal'
-import { provinceHistory, tookOffice, unitHistory } from '@betterbarmm/lgu-data/history'
 import { barangayOfficials, rosterCoverage, unitRosters } from '@betterbarmm/lgu-data/barangay-officials'
 import { BarangayList } from '../../_components/barangay-list'
-import {
-	HeldOffice,
-	MultiSeat,
-	NoCanvass,
-	OfficeLineage,
-	Reconstructed,
-	SingleSeat,
-	UnitRollPanel,
-} from '../../_components/lgu-officials'
 import { LguTabs } from '../../_components/lgu-tabs'
 import { LguFinances, LguRecognition } from '../../_components/lgu-finances'
 import { LguDisclosure } from '../../_components/lgu-disclosure'
 import { NtaChart } from '../../_components/nta-chart'
-import { LguTermPicker } from '../../_components/lgu-term-picker'
 export function generateStaticParams() {
 	return allUnitParams()
 }
@@ -107,8 +95,8 @@ function AtAGlance({ unit, province }: { unit: LguUnit; province: LguProvince })
 	const nta = row(finances, key, ntaYear)?.nta as number | null | undefined
 
 	const rows: [string, string, string][] = [
-		['Mayor', mayor ? personName(mayor) : 'No canvass on record', '#officials'],
-		['Vice-mayor', vice ? personName(vice) : '—', '#officials'],
+		['Mayor', mayor ? personName(mayor) : 'No canvass on record', '/officials'],
+		['Vice-mayor', vice ? personName(vice) : '—', '/officials'],
 		[`NTA, FY ${ntaYear}`, nta ? (nta >= 1e9 ? `₱${(nta / 1e9).toFixed(2)} billion` : `₱${(nta / 1e6).toFixed(1)} million`) : '—', '#finances'],
 	]
 
@@ -236,224 +224,6 @@ function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) 
 	)
 }
 
-function Officials({ unit, province }: { unit: LguUnit; province: LguProvince }) {
-	// Three records, in descending order of what they can tell you. `officials`
-	// is COMELEC's own 2025 canvass. `history` is OpenHalalan: a reconstructed
-	// canvass where the vote counts survive, a roll of winners where they do
-	// not. Each term draws from the best it has, and the panels differ so a
-	// reader can see which they are looking at.
-	const history = unitHistory(unit.slug)
-	const provincialHistory = provinceHistory(province.slug)
-
-	return (
-		<div>
-			{/* The whole run of the office, before the term-by-term detail — the
-			    question most readers arrive with is who has run this town, and
-			    that is not answerable from any single term. */}
-			<div className='mb-14'>
-				<OfficeLineage
-					terms={officialsTerms}
-					holders={Object.fromEntries(
-						officialsTerms.map((term) => [
-							term.id,
-							unit.officials?.[term.id]?.mayor?.ranked[0] ??
-								tookOffice(history[term.id], 'mayor'),
-						]),
-					)}
-				/>
-			</div>
-
-			<LguTermPicker
-				panels={officialsTerms
-					.map((term) => {
-						const record = history[term.id]
-						const provincial = province.officials?.[term.id]
-						const provincialRecord = provincialHistory[term.id]
-
-						// The 2025 canvass, or a reconstructed one — the same shape
-						// either way, so the same components draw it.
-						const canvass =
-							unit.officials?.[term.id] ??
-							(record?.kind === 'canvass' ? record : undefined)
-
-						const above =
-							provincial?.governor || provincial?.viceGovernor ? (
-								<>
-									<SeatsAbove
-										label={`And for ${province.name} as a whole`}
-										governor={
-											provincial.governor ? (
-												<SingleSeat title='Provincial Governor' contest={provincial.governor} />
-											) : null
-										}
-										viceGovernor={
-											provincial.viceGovernor ? (
-												<SingleSeat
-													title='Provincial Vice-Governor'
-													contest={provincial.viceGovernor}
-												/>
-											) : null
-										}
-										href={`/${province.slug}#officials`}
-									/>
-								</>
-							) : provincialRecord?.governor || provincialRecord?.viceGovernor ? (
-								<SeatsAbove
-									label={`And for ${provincialRecord.undivided ?? province.name} as a whole`}
-									governor={
-										provincialRecord.kind === 'canvass' ? (
-											provincialRecord.governor ? (
-												<SingleSeat
-													title='Provincial Governor'
-													contest={provincialRecord.governor}
-												/>
-											) : null
-										) : provincialRecord.governor ? (
-											<HeldOffice title='Provincial Governor' holder={provincialRecord.governor} />
-										) : null
-									}
-									viceGovernor={
-										provincialRecord.kind === 'canvass' ? (
-											provincialRecord.viceGovernor ? (
-												<SingleSeat
-													title='Provincial Vice-Governor'
-													contest={provincialRecord.viceGovernor}
-												/>
-											) : null
-										) : provincialRecord.viceGovernor ? (
-											<HeldOffice
-												title='Provincial Vice-Governor'
-												holder={provincialRecord.viceGovernor}
-											/>
-										) : null
-									}
-									href={`/${province.slug}#officials`}
-								/>
-							) : (
-								/* No provincial row is not an omission here. Cotabato City's
-								   charter bars it from the provincial ballot, and the Special
-								   Geographic Area has no provincial government of its own —
-								   both are facts about the ballot, and a page that just showed
-								   nothing would read as a gap in the record. */
-								<div className='mt-12 border-t border-[var(--rule)] pt-8'>
-									<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--ink-3)]'>
-										And above the {unitKind(unit)}
-									</p>
-									<p className='mt-4 max-w-2xl text-[13.5px] leading-7 text-[var(--ink-2)]'>
-										{province.kind === 'City'
-											? `${unit.name} is an independent component city. Its charter bars its voters from electing a governor, a vice-governor or a provincial board, so its ballot ends at the city — the next office above it is the Bangsamoro Parliament.`
-											: `The Special Geographic Area is not a province and elects no governor, vice-governor or provincial board. ${unit.name} votes for its own officials and, separately, for the Bangsamoro Parliament.`}
-									</p>
-								</div>
-							)
-
-						if (canvass?.mayor || canvass?.viceMayor || canvass?.council) {
-							return {
-								id: term.id,
-								node: (
-									<div>
-										{term.status === 'canvass' ? <Reconstructed note={term.note} /> : null}
-										<div className='grid gap-10 lg:grid-cols-2 lg:gap-16'>
-											{canvass.mayor ? <SingleSeat title='Mayor' contest={canvass.mayor} /> : null}
-											{canvass.viceMayor ? (
-												<SingleSeat title='Vice-Mayor' contest={canvass.viceMayor} />
-											) : null}
-										</div>
-										{canvass.council ? (
-											<div className='mt-12'>
-												<MultiSeat
-													title={unit.isCity ? 'Sangguniang Panlungsod' : 'Sangguniang Bayan'}
-													contests={canvass.council}
-												/>
-											</div>
-										) : null}
-										{above}
-									</div>
-								),
-							}
-						}
-
-						if (record?.kind === 'roll' && (record.mayor || record.viceMayor || record.council)) {
-							return {
-								id: term.id,
-								node: (
-									<div>
-										<UnitRollPanel roll={record} isCity={unit.isCity} note={term.note} />
-										{above}
-									</div>
-								),
-							}
-						}
-
-						return null
-					})
-					.filter((panel) => panel !== null)}
-				empty={<NoCanvass name={unit.name} />}
-			/>
-
-			{/* Which posts exist at each rung is set by law, not by the town, so it
-			    reads the same on all 108 of these pages. It lives on What each level does
-			    now; what belongs here is the canvass above, and a way through
-			    to the general answer. */}
-			<div className='mt-14 border-t border-[var(--brass-line)] pt-6'>
-				<Link href='/what-each-level-does#offices' className='group flex items-start justify-between gap-4'>
-					<span>
-						<span className='block text-[15px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
-							The offices, and who fills them
-						</span>
-						<span className='mt-1.5 block text-[12.5px] leading-6 text-[var(--ink-3)]'>
-							Every elected and appointed post a {unitKind(unit)} has, and the barangay posts
-							underneath it, with what each is paid. Set by the Bangsamoro Local Governance
-							Code, so the structure is the same everywhere.
-						</span>
-					</span>
-					<ArrowUpRightIcon
-						className='mt-0.5 size-3.5 shrink-0 text-[var(--ink-3)] transition duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--accent)]'
-						aria-hidden='true'
-					/>
-				</Link>
-			</div>
-		</div>
-	)
-}
-
-/**
- * The provincial offices, named on a town's page.
- *
- * A reader on a town page should not have to climb a level to find out who
- * the governor was in the term they are looking at.
- */
-function SeatsAbove({
-	label,
-	governor,
-	viceGovernor,
-	href,
-}: {
-	label: string
-	governor: React.ReactNode
-	viceGovernor: React.ReactNode
-	href: string
-}) {
-	return (
-		<div className='mt-12 border-t border-[var(--rule)] pt-8'>
-			<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--ink-3)]'>
-				{label}
-			</p>
-			<div className='mt-5 grid gap-10 lg:grid-cols-2 lg:gap-16'>
-				{governor}
-				{viceGovernor}
-			</div>
-			<Link
-				href={href}
-				className='mt-6 inline-flex items-center gap-2 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
-			>
-				Provincial board and the full provincial canvass
-				<span aria-hidden='true'>&rarr;</span>
-			</Link>
-		</div>
-	)
-}
-
 export default async function UnitPage({
 	params,
 }: {
@@ -511,11 +281,6 @@ export default async function UnitPage({
 									sourceHref={barangayOfficials.source.href}
 								/>
 							),
-						},
-						{
-							id: 'officials',
-							label: 'Officials',
-							panel: <Officials unit={unit} province={province} />,
 						},
 						{
 							id: 'finances',

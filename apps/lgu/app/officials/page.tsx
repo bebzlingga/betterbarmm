@@ -88,7 +88,7 @@ function officialsFor(term: string): OfficialRow[] {
 			const once = (record as { undivided?: string } | undefined)?.undivided
 			if (record && !(once && undivided.has(once))) {
 				if (once) undivided.add(once)
-				const unit = { key: province.slug, lgu: once ?? province.name, href: `/${province.slug}#officials`, area: province.name, level: 'Province' as const }
+				const unit = { key: province.slug, lgu: once ?? province.name, href: `/${province.slug}`, area: province.name, level: 'Province' as const }
 				add(record.governor, 'Governor', unit)
 				add(record.viceGovernor, 'Vice-Governor', unit)
 				add(record.board, 'Provincial board member', unit)
@@ -103,7 +103,7 @@ function officialsFor(term: string): OfficialRow[] {
 			const unit = {
 				key: `${province.slug}/${town.slug}`,
 				lgu: province.name === town.name ? town.name : `${town.name}, ${province.name}`,
-				href: `/${province.slug}/${town.slug}#officials`,
+				href: `/${province.slug}/${town.slug}`,
 				area: province.name,
 				level: town.isCity ? ('City' as const) : ('Municipality' as const),
 			}
