@@ -1,17 +1,16 @@
 import type { Metadata } from 'next'
-import { Rise } from '@betterbarmm/editorial'
+import Link from 'next/link'
 import { ELECTED_POSTS, LOCAL_CHARGES, SERVICES, formatNumber, lguData, lguLadder } from '@betterbarmm/lgu-data'
 import { DocLayout } from '../_components/doc-layout'
 import type { TocItem } from '../_components/doc-toc'
 import { LguMasthead } from '../_components/lgu-parts'
-import { LguTabs } from '../_components/lgu-tabs'
 import { AppointedOffices } from '../_components/appointed-offices'
 import { Lookups } from '../_components/offices-guide'
 
 export const metadata: Metadata = {
 	title: 'What each level does',
 	description:
-		'Where the money starts, how it reaches a barangay, who approves the budget and by when, and how much of it is spoken for before anyone votes — the chain from national taxes to BARMM to your town, in figures.',
+		'The levels of local government in BARMM, who you elect at each, what each one does for you, who runs it day to day, what it may charge you and where to look things up.',
 }
 
 /* ============================================================
@@ -26,152 +25,6 @@ export const metadata: Metadata = {
    calendar, the set-asides, the service split. The prose is the
    label on the drawing.
    ============================================================ */
-
-/** The chain, top to bottom. Each stage says what it is and what it holds. */
-const CHAIN = [
-	{
-		tier: 'National government',
-		amount: '5%',
-		amountNote: 'of net national internal revenue',
-		what: 'A block grant to BARMM, set by formula rather than negotiated. The National Tax Allotment straight to every LGU — automatic, and with no conditions on it.',
-		basis: 'Bangsamoro Organic Law, art. XII',
-	},
-	{
-		tier: 'Bangsamoro Government',
-		amount: '₱114.08B',
-		amountNote: 'the enacted FY 2026 budget',
-		what: 'Runs its own ministries, and passes 40% of its share of national taxes collected inside BARMM down to the units — on top of what it appropriates for local government support.',
-		basis: 'Code s. 313',
-	},
-	{
-		tier: 'Province · city · municipality · barangay',
-		amount: '3',
-		amountNote: 'sources, in order of size',
-		what: 'The National Tax Allotment, which is most of it. Bangsamoro transfers. And its own taxes and fees — the only source it actually decides.',
-		basis: 'Code s. 21',
-	},
-] as const
-
-/** The budget year, as the Code dates it. */
-const CALENDAR = [
-	{ when: '15 July', what: 'Every department head files a budget proposal with the chief executive.', basis: 'Code s. 341' },
-	{ when: '16 October', what: 'The chief executive submits the executive budget to the sanggunian.', basis: 'IRR art. 610' },
-	{ when: '31 December', what: 'The sanggunian must enact it by ordinance, on the Annual Investment Plan.', basis: 'Code s. 343' },
-	{ when: '+90 days', what: 'Missed? The council sits on nothing else, unpaid, until it passes. At 90 days last year’s budget is reenacted — salaries and fixed costs only, no new project.', basis: 'Code s. 347' },
-	{ when: 'Then review', what: 'A barangay budget goes up to the town, a town’s to the province. Ninety days to act, or it stands.', basis: 'IRR art. 617' },
-] as const
-
-/* ------------------------------------------------------------
-   The distribution of funds, level by level
-
-   The requirements are not the same on every rung, and a single
-   list of them was quietly wrong: a barangay has no component
-   barangay to send ₱1,000 to, does not set a discretionary fund,
-   and carries a salary ceiling computed on a different base from
-   the one above it. Split three ways, each rung shows what it
-   takes in, what it may charge, and what the Code has already
-   spent before its council sits.
-
-   `of` is carried on every floor and ceiling because the bases
-   differ — 20% of the National Tax Allotment, 5% of estimated
-   regular income, 5% of the whole budget — and a reader who reads
-   them as parts of one pie has been misled by the layout.
-   ------------------------------------------------------------ */
-
-type Money = { share: number; label: string; of: string; basis: string }
-
-type Level = {
-	id: string
-	tab: string
-	/** What arrives without the unit doing anything. */
-	receives: { what: string; detail: string; basis: string }[]
-	/** What it may charge, and the most it may charge.  */
-	levies: { what: string; detail: string; basis: string }[]
-	floors: Money[]
-	ceilings: Money[]
-}
-
-const LEVELS: Level[] = [
-	{
-		id: 'province',
-		tab: 'Province',
-		receives: [
-			{ what: '35%', detail: 'of the basic real property tax it collects. The municipality takes 40% and the barangay 25%.', basis: 'IRR art. 546' },
-			{ what: 'NTA', detail: 'Its National Tax Allotment share, released automatically and without condition.', basis: 'Code s. 21' },
-			{ what: '40%', detail: 'of the Bangsamoro share of national taxes collected in BARMM, split with the other units.', basis: 'Code s. 313' },
-		],
-		levies: [
-			{ what: '1%', detail: 'Real property tax, on assessed value — plus 1% more for the Special Education Fund.', basis: 'IRR arts. 530, 531' },
-			{ what: '₱1,300', detail: 'Professional tax, a year, and it covers practice anywhere in the country.', basis: 'IRR art. 447' },
-			{ what: '0.5%', detail: 'Transfer tax on the sale of land, of the price or fair market value, whichever is higher.', basis: 'IRR art. 437' },
-			{ what: '10%', detail: 'Amusement tax on admission receipts, shared equally with the municipality.', basis: 'IRR art. 448' },
-		],
-		floors: [
-			{ share: 20, label: 'Development projects', of: 'of the National Tax Allotment', basis: 'Code s. 348' },
-			{ share: 5, label: 'Disaster risk reduction', of: 'of estimated regular income · 30% of it a quick response fund', basis: 'IRR art. 620' },
-			{ share: 5, label: 'Gender and development', of: 'of the annual budget', basis: 'Code s. 348' },
-			{ share: 1, label: 'Senior citizens and PWDs', of: 'of the annual budget', basis: 'Code s. 348' },
-			{ share: 1, label: 'Protection of children', of: 'of the annual budget', basis: 'Code s. 348' },
-			{ share: 1, label: 'Local road maintenance', of: 'of the annual budget', basis: 'Code s. 348' },
-		],
-		ceilings: [
-			{ share: 45, label: 'Salaries', of: 'first to third class — 55% at fourth and below', basis: 'Code s. 349' },
-			{ share: 20, label: 'Debt service', of: 'of regular income', basis: 'Code s. 348' },
-			{ share: 2, label: 'The governor’s discretionary fund', of: 'of last year’s real property tax receipts', basis: 'Code s. 349' },
-		],
-	},
-	{
-		id: 'municipality',
-		tab: 'City or municipality',
-		receives: [
-			{ what: '40%', detail: 'of the basic real property tax collected on property in it. A city keeps 70% and shares 30% with its barangays.', basis: 'IRR art. 546' },
-			{ what: 'NTA', detail: 'Its National Tax Allotment share, released automatically and without condition.', basis: 'Code s. 21' },
-			{ what: 'SEF', detail: 'The additional 1% on real property, which may be spent only on public schools.', basis: 'Code s. 333 · IRR art. 282' },
-		],
-		levies: [
-			{ what: '2%', detail: 'Business tax on a retailer’s first ₱400,000 of gross sales, 1% above it. Manufacturers and contractors on their own graduated tables.', basis: 'IRR art. 439' },
-			{ what: '₱20', detail: 'Community tax — the cedula — plus ₱1 per ₱1,000 of income, capped at ₱5,000.', basis: 'IRR art. 452' },
-			{ what: '2%', detail: 'Real property tax, if it is a city. A municipality does not levy it; its province does.', basis: 'IRR art. 530' },
-			{ what: '25%', detail: 'Surcharge on any local tax paid late, plus 2% a month, capped at 36 months.', basis: 'IRR art. 459' },
-		],
-		floors: [
-			{ share: 20, label: 'Development projects', of: 'of the National Tax Allotment', basis: 'Code s. 348' },
-			{ share: 5, label: 'Disaster risk reduction', of: 'of estimated regular income · 30% of it a quick response fund', basis: 'IRR art. 620' },
-			{ share: 5, label: 'Gender and development', of: 'of the annual budget', basis: 'Code s. 348' },
-			{ share: 1, label: 'Senior citizens and PWDs', of: 'of the annual budget', basis: 'Code s. 348' },
-			{ share: 1, label: 'Protection of children', of: 'of the annual budget', basis: 'Code s. 348' },
-			{ share: 1, label: 'Local road maintenance', of: 'of the annual budget', basis: 'Code s. 348' },
-		],
-		ceilings: [
-			{ share: 45, label: 'Salaries', of: 'first to third class — 55% at fourth and below', basis: 'Code s. 349' },
-			{ share: 20, label: 'Debt service', of: 'of regular income', basis: 'Code s. 348' },
-			{ share: 2, label: 'The mayor’s discretionary fund', of: 'of last year’s real property tax receipts', basis: 'Code s. 349' },
-		],
-	},
-	{
-		id: 'barangay',
-		tab: 'Barangay',
-		receives: [
-			{ what: '25%', detail: 'of the basic real property tax collected on property in it. In a city it shares the 30% — half to the barangay the property sits in, the rest split equally.', basis: 'IRR art. 546' },
-			{ what: 'NTA', detail: 'Its National Tax Allotment share — but only once MILG has revalidated it against the standards.', basis: 'Code ss. 21, 403' },
-			{ what: '₱1,000', detail: 'A year, at least, in aid from its city or municipality.', basis: 'Code s. 348' },
-		],
-		levies: [
-			{ what: '1%', detail: 'On stores with gross sales under ₱50,000 in a city or ₱30,000 in a municipality.', basis: 'IRR art. 457' },
-			{ what: 'Fee', detail: 'The barangay clearance, and reasonable charges on cockpits, places of recreation and billboards.', basis: 'IRR art. 457' },
-			{ what: 'Free', detail: 'Filing a dispute at the katarungang pambarangay costs nothing.', basis: 'IRR art. 78' },
-		],
-		floors: [
-			{ share: 10, label: 'The Sangguniang Kabataan', of: 'of the barangay general fund', basis: 'Code s. 353' },
-			{ share: 20, label: 'Development projects', of: 'of the National Tax Allotment', basis: 'Code s. 348' },
-			{ share: 5, label: 'Disaster risk reduction', of: 'of estimated regular income', basis: 'IRR art. 620' },
-		],
-		ceilings: [
-			{ share: 55, label: 'Salaries', of: 'of income actually realized from local sources last year', basis: 'Code s. 355' },
-			{ share: 20, label: 'Petty cash', of: 'of the funds in the barangay treasury', basis: 'IRR art. 627' },
-		],
-	},
-]
 
 /* One plain table style for the whole page. */
 const TABLE = 'w-full min-w-[34rem] border-collapse text-left text-[14px]'
@@ -196,137 +49,12 @@ const RUNGS = [
 	{ level: 'Province', count: lguData.totals.provinces, groups: SERVICES.province },
 ] as const
 
-/** A labeled proportion bar. The width is the figure. */
-function ShareRow({
-	share,
-	label,
-	of,
-	basis,
-	tone,
-}: {
-	share: number
-	label: string
-	of: string
-	basis: string
-	tone: string
-}) {
-	return (
-		<li className='border-b border-[var(--rule-soft)] py-3.5'>
-			<div className='flex items-baseline justify-between gap-4'>
-				<p className='text-[13.5px] font-semibold leading-snug text-[var(--ink)]'>{label}</p>
-				<p className='num shrink-0 text-[15px] font-bold leading-none' style={{ color: tone }}>
-					{share}%
-				</p>
-			</div>
-			<div
-				className='mt-2 h-1.5 w-full bg-[var(--rule-soft)]'
-				role='img'
-				aria-label={`${share} per cent ${of}`}
-			>
-				<div className='h-full' style={{ width: `${share}%`, background: tone }} />
-			</div>
-			<p className='mt-1.5 text-[11.5px] leading-5 text-[var(--ink-3)]'>
-				{of} · {basis}
-			</p>
-		</li>
-	)
-}
-
-/** One rung: what arrives, what it may charge, and what is committed. */
-function LevelPanel({ level }: { level: Level }) {
-	return (
-		<div className='pt-10'>
-			<div className='grid gap-x-12 gap-y-10 lg:grid-cols-2'>
-				<div>
-					<h3 className='bb-label'>What it takes in</h3>
-					<ul className='mt-5'>
-						{level.receives.map((row) => (
-							<li key={row.detail} className='flex items-baseline gap-5 border-b border-[var(--rule-soft)] py-3.5'>
-								<span className='money num w-20 shrink-0 text-[15px] font-bold leading-none text-[var(--accent)]'>
-									{row.what}
-								</span>
-								<span className='min-w-0 flex-1'>
-									<span className='block text-[13px] leading-6 text-[var(--ink-2)]'>
-										{row.detail}
-									</span>
-									<span className='mt-1 block font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
-										{row.basis}
-									</span>
-								</span>
-							</li>
-						))}
-					</ul>
-				</div>
-
-				<div>
-					<h3 className='bb-label'>What it may charge</h3>
-					<ul className='mt-5'>
-						{level.levies.map((row) => (
-							<li key={row.detail} className='flex items-baseline gap-5 border-b border-[var(--rule-soft)] py-3.5'>
-								<span className='money num w-20 shrink-0 text-[15px] font-bold leading-none text-[var(--brass)]'>
-									{row.what}
-								</span>
-								<span className='min-w-0 flex-1'>
-									<span className='block text-[13px] leading-6 text-[var(--ink-2)]'>
-										{row.detail}
-									</span>
-									<span className='mt-1 block font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
-										{row.basis}
-									</span>
-								</span>
-							</li>
-						))}
-					</ul>
-				</div>
-			</div>
-
-			<div className='mt-12 grid gap-x-12 gap-y-10 border-t border-[var(--brass-line)] pt-8 lg:grid-cols-2'>
-				<div>
-					<h3 className='bb-label'>Floors — at least this much</h3>
-					<ul className='mt-5'>
-						{level.floors.map((row) => (
-							<ShareRow key={row.label} {...row} tone='var(--accent)' />
-						))}
-					</ul>
-				</div>
-
-				<div>
-					<h3 className='bb-label'>Ceilings — no more than this</h3>
-					<ul className='mt-5'>
-						{level.ceilings.map((row) => (
-							<ShareRow key={row.label} {...row} tone='var(--brass)' />
-						))}
-					</ul>
-					{level.id === 'barangay' ? (
-						<p className='mt-4 text-[12.5px] leading-6 text-[var(--ink-3)]'>
-							The treasurer may also buy directly only up to ₱1,000 at a time.{' '}
-							<span className='font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
-								IRR art. 627
-							</span>
-						</p>
-					) : (
-						<p className='mt-4 text-[12.5px] leading-6 text-[var(--ink-3)]'>
-							Plus at least ₱1,000 a year in aid to every component barangay.{' '}
-							<span className='font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
-								Code s. 348
-							</span>
-						</p>
-					)}
-				</div>
-			</div>
-		</div>
-	)
-}
-
 /** The page's sections, top to bottom — the headings and "On this page". */
 const TOC: TocItem[] = [
 	{ id: 'introduction', label: 'What local government is', depth: 1 },
 	{ id: 'ladder', label: 'The levels, and who you elect', depth: 1 },
 	{ id: 'services', label: 'What each level does for you', depth: 1 },
 	{ id: 'offices', label: 'Who runs it day to day', depth: 1 },
-	{ id: 'money', label: 'Where the money comes from', depth: 1 },
-	{ id: 'distribution', label: 'What each level takes in and must spend', depth: 1 },
-	{ id: 'calendar', label: 'How the budget is passed', depth: 1 },
 	{ id: 'charges', label: 'What you pay', depth: 1 },
 	{ id: 'where-to-look', label: 'Where to look', depth: 1 },
 ]
@@ -350,7 +78,7 @@ export default function HowItWorksPage() {
 		<>
 			<LguMasthead
 				kicker='The guide · Bangsamoro'
-				name='What each level of government does, and how it is paid for.'
+				name='What each level of government does, and who runs it.'
 			/>
 
 			<DocLayout toc={TOC}>
@@ -366,8 +94,12 @@ export default function HowItWorksPage() {
 					and each level checks that the one below it stays within its powers.
 				</p>
 				<p className='mt-5 text-[15px] leading-7 text-[var(--ink-2)]'>
-					This page follows that story: who you elect at each level, what each one does for you, where its
-					money comes from and what it must spend it on, how its budget is passed, and what it may charge you.
+					This page follows that story: who you elect at each level, what each one does for you, who runs it,
+					and what it may charge you. Where its money comes from and how its budget is made are on{' '}
+					<Link href='/local-budgets' className='rule-link'>
+						Local budgets
+					</Link>
+					.
 				</p>
 			</Section>
 
@@ -488,106 +220,6 @@ export default function HowItWorksPage() {
 					disputes, barangay health workers, purok leaders and tanods: 1 for every 200 residents, never more
 					than 30 (Code ss. 413, 414).
 				</p>
-			</Section>
-
-			{/* ---- The chain ---- */}
-			<Section
-				id='money'
-				lead='Money flows down: from the national government, to the Bangsamoro Government, to your province, city or municipality and barangay. Each level decides how to spend its own share.'
-			>
-				<ol className='mt-12 grid gap-x-10 gap-y-10 lg:grid-cols-3'>
-					{CHAIN.map((stage, index) => (
-						<li key={stage.tier} className='border-t border-[var(--brass-line)] pt-6'>
-							<p className='num font-mono text-[11px] font-semibold text-[var(--brass)]'>
-								{String(index + 1).padStart(2, '0')}
-							</p>
-							<h3 className='mt-2 text-[15.5px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
-								{stage.tier}
-							</h3>
-							<p className='money num mt-5 text-[2rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--accent)]'>
-								{stage.amount}
-							</p>
-							<p className='mt-2 text-[11.5px] leading-5 text-[var(--ink-3)]'>{stage.amountNote}</p>
-							<p className='mt-4 text-[13.5px] leading-7 text-[var(--ink-2)]'>{stage.what}</p>
-							<p className='mt-2 font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
-								{stage.basis}
-							</p>
-						</li>
-					))}
-				</ol>
-			</Section>
-
-			{/* ---- Where it must go ---- */}
-			{/* Three panels rather than one list. The rungs do not carry the same
-			    requirements, and the flat version quietly implied they did. */}
-			<Section id='distribution' lead='Pick a level. Bars are a share of their own base, named under each — they are not slices of one pie and must not be added up.'>
-
-				<div className='mt-12'>
-					<LguTabs
-						sticky={false}
-						tabs={LEVELS.map((level) => ({
-							id: level.id,
-							label: level.tab,
-							panel: <LevelPanel level={level} />,
-						}))}
-					/>
-				</div>
-			</Section>
-
-			{/* ---- The calendar ---- */}
-			<Section
-				id='calendar'
-				lead='Every province, city, municipality and barangay passes its budget on the same dates. If the council misses the last one, it can do nothing else until the budget is passed.'
-			>
-				{/* A timeline: across on a wide screen, down on a phone. The open dot,
-				    on a dashed line, is what happens only if the deadline slips. */}
-				<ol className='mt-12 xl:grid xl:grid-cols-5 xl:gap-x-8'>
-					{CALENDAR.map((step, index) => {
-						const late = step.when.startsWith('+')
-						const number = CALENDAR.slice(0, index + 1).filter((s) => !s.when.startsWith('+')).length
-						return (
-							<li key={step.when} className='relative pb-10 pl-10 last:pb-0 xl:pb-0 xl:pl-0 xl:pt-12'>
-								{index < CALENDAR.length - 1 ? (
-									<span
-										aria-hidden='true'
-										className={`absolute bottom-0 left-[7px] top-5 w-0.5 xl:-right-8 xl:bottom-auto xl:left-4 xl:top-[7px] xl:h-0.5 xl:w-auto ${
-											index === 2 || late ? 'bg-[repeating-linear-gradient(to_bottom,var(--accent)_0_6px,transparent_6px_12px)] xl:bg-[repeating-linear-gradient(to_right,var(--accent)_0_6px,transparent_6px_12px)]' : 'bg-[var(--accent)]'
-										}`}
-									/>
-								) : null}
-								<span
-									aria-hidden='true'
-									className={`absolute left-0 top-1 size-4 rounded-full border-2 border-[var(--accent)] xl:top-0 ${
-										late ? 'bg-[var(--paper)]' : 'bg-[var(--accent)]'
-									}`}
-								/>
-								<p className='num font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-mute)]'>
-									{late ? 'If late' : `Step ${number}`}
-								</p>
-								<p className='money num mt-2 text-[1.35rem] font-extrabold leading-none tracking-[-0.02em] text-[var(--ink)]'>
-									{step.when}
-								</p>
-								<p className='mt-3 text-[13px] leading-6 text-[var(--ink-2)]'>{step.what}</p>
-								<p className='mt-2 font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
-									{step.basis}
-								</p>
-							</li>
-						)
-					})}
-				</ol>
-
-				<Rise distance={12}>
-					<p className='mt-12 border-t border-[var(--rule)] pt-5 text-[13px] leading-7 text-[var(--ink-2)]'>
-						<span className='font-semibold text-[var(--ink)]'>The development plan is the thing being funded.</span>{' '}
-						A local development council — the chief executive, every punong barangay, and at
-						least a quarter of its seats held by NGOs — writes the multi-year plan. The Annual
-						Investment Plan comes off it, and the budget is enacted on that plan rather than
-						beside it. The 20% below is what pays for it.{' '}
-						<span className='font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
-							Code s. 343 · IRR arts. 268, 269, 271
-						</span>
-					</p>
-				</Rise>
 			</Section>
 
 			{/* ---- What you pay ---- */}
