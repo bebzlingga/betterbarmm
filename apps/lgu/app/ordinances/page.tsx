@@ -40,29 +40,6 @@ const STEPS = [
 	},
 ]
 
-const KINDS = [
-	{
-		kind: 'The annual budget',
-		what: 'The appropriations ordinance: what the unit will spend next year, passed by the end of the current one.',
-		cite: 'Code s. 343',
-	},
-	{
-		kind: 'Taxes and fees',
-		what: 'The revenue code and tax ordinances. They need public hearings first and take effect 15 days after publication.',
-		cite: 'Code ss. 212, 213',
-	},
-	{
-		kind: 'Penal ordinances',
-		what: 'Rules with fines or penalties, posted for 6 weeks and sent to the Bangsamoro Gazette within 12 days.',
-		cite: 'Code s. 571',
-	},
-	{
-		kind: 'Development plans',
-		what: 'Resolutions adopting the unit’s development plan, which the budget is meant to fund.',
-		cite: 'Code ss. 63, 64',
-	},
-]
-
 const H2 = 'text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
 const CITE = 'mt-2 font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'
 
@@ -74,10 +51,10 @@ export default function OrdinancesPage() {
 				name='Ordinances'
 				noteBeside
 				noteEnd
-				note='The local laws your province, city, municipality and barangay pass. We are gathering them into one place you can search. Until then, here is how they work and where they should already be.'
+				note='The local laws your province, city, municipality and barangay pass. We are gathering them into one place you can search. Until then, here is how they work.'
 			/>
 
-			<div className='bb-container bb-section max-w-[72rem]'>
+			<div className='bb-container bb-section '>
 				<section>
 					<h2 className={H2}>What an ordinance is</h2>
 					<div className='mt-5 max-w-[48rem] space-y-4 text-[15px] leading-7 text-[var(--ink-2)]'>
@@ -118,51 +95,23 @@ export default function OrdinancesPage() {
 					</ol>
 				</section>
 
-				<section className='mt-20'>
-					<h2 className={H2}>What we will collect</h2>
-					<ul className='mt-8 grid gap-x-10 sm:grid-cols-2'>
-						{KINDS.map((k) => (
-							<li key={k.kind} className='border-t border-[var(--rule)] py-5'>
-								<h3 className='text-[16px] font-semibold text-[var(--ink)]'>{k.kind}</h3>
-								<p className='mt-2 text-[14px] leading-6 text-[var(--ink-2)]'>{k.what}</p>
-								<p className={CITE}>{k.cite}</p>
-							</li>
-						))}
-					</ul>
-				</section>
 
-				<section className='mt-20 grid gap-10 lg:grid-cols-2 lg:gap-16'>
-					<div>
-						<h2 className={H2}>Where they should already be</h2>
-						<p className='mt-5 text-[15px] leading-7 text-[var(--ink-2)]'>
-							The Code asks every local government to post its approved ordinances online, on its website or social
-							media, as far as practicable (s. 68). It also has the Ministry of the Interior and Local Government keep
-							a <strong className='font-semibold text-[var(--ink)]'>Bangsamoro Register of Ordinances</strong>: a
-							digital, public record of every ordinance a council files (s. 69). Few are easy to find yet, which is why
-							we are collecting them.
-						</p>
-					</div>
-
-					<div className='bg-[var(--paper-2)] p-8'>
+				<section className='mt-20 flex flex-col gap-6 bg-[var(--paper-2)] p-8 lg:flex-row lg:items-center lg:justify-between lg:gap-12'>
+					<div className='max-w-[44rem]'>
 						<h2 className='text-[1.25rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Have an ordinance?</h2>
 						<p className='mt-3 text-[15px] leading-7 text-[var(--ink-2)]'>
 							If you have a copy of an ordinance from your town or province, a council secretary&rsquo;s file, a
 							posted notice or a link, send it to us and it will be among the first we publish.
 						</p>
-						<div className='mt-6 flex flex-wrap gap-3'>
-							<a
-								href='https://betterbarmm.com/contribute'
-								target='_blank'
-								rel='noreferrer'
-								className='bb-btn bb-btn-accent'
-							>
-								Contribute an ordinance
-								<ArrowUpRightIcon size={14} aria-hidden='true' />
-							</a>
-							<Link href='/officials' className='bb-btn bb-btn-ghost'>
-								See your council
-							</Link>
-						</div>
+					</div>
+					<div className='flex shrink-0 flex-wrap gap-3'>
+						<a href='https://betterbarmm.com/contribute' target='_blank' rel='noreferrer' className='bb-btn bb-btn-accent'>
+							Contribute an ordinance
+							<ArrowUpRightIcon size={14} aria-hidden='true' />
+						</a>
+						<Link href='/officials' className='bb-btn bb-btn-ghost'>
+							See your council
+						</Link>
 					</div>
 				</section>
 			</div>
