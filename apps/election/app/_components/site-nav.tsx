@@ -1,7 +1,7 @@
 'use client'
 
-import { HandHeartIcon } from '@phosphor-icons/react'
-import { EASE, Magnetic, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo } from '@betterbarmm/editorial'
+import { HandHeartIcon, SquaresFourIcon } from '@phosphor-icons/react'
+import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo } from '@betterbarmm/editorial'
 import { AnimatePresence, motion } from 'motion/react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -45,7 +45,29 @@ export function SiteNav() {
 			{/* The estate's strip, above the workspace's own bar. Not sticky:
 			    it belongs to the top of the document, and the navigation a
 			    reader actually needs mid-page is the bar under it. */}
-			<UtilityBar base='https://betterbarmm.com' current='election' />
+			<UtilityBar
+				base='https://betterbarmm.com'
+				current='election'
+				className='bb-strip bg-[var(--paper-2)]'
+				switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
+				end={
+					<>
+						<ThemeToggle />
+						{/* Phones have no room for it in the strip; the wrapper hides it. */}
+						<span className='hidden self-stretch sm:flex'>
+							<a
+								href='https://betterbarmm.com/contribute'
+								target='_blank'
+								rel='noreferrer'
+								className='bb-btn bb-btn-accent !px-4 !py-0 !text-[9.5px]'
+							>
+								<HandHeartIcon size={13} weight='fill' aria-hidden='true' />
+								Contribute
+							</a>
+						</span>
+					</>
+				}
+			/>
 
 			{/* The estate's masthead behaviour, the same on every workspace: it
 			    takes a ground once the reader has left the top, and ducks out of the
@@ -69,7 +91,7 @@ export function SiteNav() {
 				 * squeezed it narrower while the inline height held, which is a
 				 * wordmark rendered out of proportion. An `auto` track gives it
 				 * exactly what it measures. */}
-				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[auto_1fr] items-center gap-4 md:grid-cols-[1fr_auto_1fr]'>
+				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[auto_1fr] items-center gap-4 md:grid-cols-[auto_minmax(0,1fr)_auto] md:gap-2'>
 					<div className='flex items-center gap-3'>
 						<a href='https://betterbarmm.com' onClick={closeMenu} className='w-fit shrink-0'>
 							<BrandLogo className='text-[var(--ink)]' />
@@ -86,7 +108,7 @@ export function SiteNav() {
 						</Link>
 					</div>
 
-					<nav className='hidden items-center gap-1 md:flex'>
+					<nav className='hidden items-center justify-end gap-1 md:flex'>
 						{pages.map((page) => (
 							<Link
 								key={page.href}
@@ -100,28 +122,6 @@ export function SiteNav() {
 					</nav>
 
 					<div className='flex items-center justify-end gap-2 md:gap-1.5'>
-						{/* The theme switch is a desktop control here. On a phone the row
-						    is a mark, a call to action and a way into the workspace, and a
-						    fourth icon between them read as clutter — it is a setting,
-						    which is what the menu panel is for. It moves there rather than
-						    being duplicated, so there is only ever one of it. */}
-						<div className='hidden items-center md:flex'>
-							<ThemeToggle />
-							<span className='w-1.5' aria-hidden='true' />
-						</div>
-
-						<Magnetic strength={0.22} className='hidden sm:inline-flex'>
-							<a
-								href='https://betterbarmm.com/contribute'
-								target='_blank'
-								rel='noreferrer'
-								className='bb-btn bb-btn-accent !px-4 !py-2.5 !text-[10px]'
-							>
-								<HandHeartIcon size={15} weight='fill' aria-hidden='true' />
-								Contribute
-							</a>
-						</Magnetic>
-
 						<button
 							type='button'
 							aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}

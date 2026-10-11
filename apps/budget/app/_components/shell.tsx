@@ -1,9 +1,11 @@
+import { HandHeartIcon, SquaresFourIcon } from '@phosphor-icons/react/ssr'
 import { CtaPanel, SiteFooter, UtilityBar } from '@betterbarmm/editorial'
 import { Suspense } from 'react'
 import { FISCAL_YEARS, LATEST_YEAR, budgetFor, sectors } from '@betterbarmm/budget-data'
 import { FooterYear } from './footer-year'
 import { BudgetFinder } from './budget-finder'
 import { SiteNav } from './site-nav'
+import { ThemeToggle } from './theme-toggle'
 
 /**
  * Every page in the workspace closes the same way: the project's ask on the
@@ -42,7 +44,29 @@ export function Shell({ children }: { children: React.ReactNode }) {
 				    here that does — inside the `Suspense` it prerendered as nothing
 				    and arrived a frame late with the nav, which on this workspace
 				    alone left the top of the page empty on first paint. */}
-				<UtilityBar base='https://betterbarmm.com' current='budget' />
+				<UtilityBar
+					base='https://betterbarmm.com'
+					current='budget'
+					className='bb-strip bg-[var(--paper-2)]'
+					switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
+					end={
+						<>
+							<ThemeToggle />
+							{/* Phones have no room for it in the strip; the wrapper hides it. */}
+							<span className='hidden self-stretch sm:flex'>
+								<a
+									href='https://betterbarmm.com/contribute'
+									target='_blank'
+									rel='noreferrer'
+									className='bb-btn bb-btn-accent !px-4 !py-0 !text-[9.5px]'
+								>
+									<HandHeartIcon size={13} weight='fill' aria-hidden='true' />
+									Contribute
+								</a>
+							</span>
+						</>
+					}
+				/>
 
 				<Suspense fallback={null}>
 					<SiteNav />

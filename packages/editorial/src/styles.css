@@ -63,7 +63,7 @@
      Places sits directly beneath it, and a guessed offset put it 12px behind
      the bar. The value is the whole bar including its bottom hairline, which
      is what a sticky child has to clear. */
-  --site-header-h: 4.375rem;
+  --site-header-h: 5rem;
 
   /* Where the underside of the bar is, right now. The bar hides on the way down
      and returns on the way up, so anything sticking beneath it cannot use a
@@ -1674,4 +1674,49 @@
 
 .utility-bar-switch[open] .utility-bar-caret {
   transform: rotate(180deg);
+}
+
+/* The strip as the workspaces set it: on the light panel, a touch taller,
+   carrying the theme switch and Contribute at its right end. Its rows
+   stretch so Contribute runs the full height; the links and the switch stay
+   centred. Unlayered, so it outranks the switch's own size utility. */
+.bb-strip > div {
+  min-height: 2.25rem;
+  align-items: stretch;
+}
+
+.bb-strip .utility-bar-link {
+  color: var(--ink-mute);
+  white-space: nowrap;
+}
+
+/* A phone fits About, Contact, Facebook and the switch on one line only
+   with the gaps between them closed up a little. */
+@media (max-width: 639px) {
+  .bb-strip nav {
+    gap: 0.85rem;
+  }
+}
+
+.bb-strip .utility-bar-link:hover {
+  color: var(--accent);
+}
+
+.bb-strip nav {
+  align-items: stretch;
+}
+
+.bb-strip details,
+.bb-strip nav > button {
+  align-self: center;
+}
+
+.bb-strip nav > button {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.bb-strip nav > button svg {
+  width: 15px;
+  height: 15px;
 }

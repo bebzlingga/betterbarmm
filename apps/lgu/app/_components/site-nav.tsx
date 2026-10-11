@@ -124,7 +124,7 @@ export function SiteNav() {
 			<UtilityBar
 				base='https://betterbarmm.com'
 				current='lgu'
-				className='lgu-strip bg-[var(--paper-2)]'
+				className='bb-strip bg-[var(--paper-2)]'
 				switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
 				end={
 					<>

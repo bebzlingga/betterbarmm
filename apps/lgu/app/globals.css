@@ -193,12 +193,6 @@
   }
 }
 
-/* A taller top bar than the rest of the estate. Set on the variable rather
-   than as padding so everything sticking beneath it moves down with it. */
-:root {
-  --site-header-h: 5rem;
-}
-
 /* Phones: everything a step smaller, and a wider margin either side.
    Most type here is set in px, so a smaller root size would shrink only
    part of the page; `zoom` scales the whole of it evenly. The header's
@@ -212,34 +206,4 @@
   .utility-bar > div {
     padding-inline: 2rem;
   }
-}
-
-/* The estate strip carries the theme switch and Contribute here. It is a
-   touch taller, and its rows stretch so the button runs its full height
-   with no gap above or below; the links and the switch stay centred. */
-.lgu-strip > div {
-  min-height: 2.25rem;
-  align-items: stretch;
-}
-
-.lgu-strip .utility-bar-link {
-  color: var(--ink-mute);
-}
-
-.lgu-strip .utility-bar-link:hover {
-  color: var(--accent);
-}
-
-.lgu-strip nav {
-  align-items: stretch;
-}
-
-.lgu-strip details,
-.lgu-strip nav > button {
-  align-self: center;
-}
-
-.lgu-strip nav > button svg {
-  width: 15px;
-  height: 15px;
 }

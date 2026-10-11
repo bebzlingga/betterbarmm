@@ -1,7 +1,7 @@
 'use client'
 
-import { CaretDownIcon, HandHeartIcon } from '@phosphor-icons/react'
-import { EASE, Magnetic, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo } from '@betterbarmm/editorial'
+import { CaretDownIcon, HandHeartIcon, SquaresFourIcon } from '@phosphor-icons/react'
+import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo } from '@betterbarmm/editorial'
 import { AnimatePresence, motion } from 'motion/react'
 import { travelAreas } from '@betterbarmm/travel-data'
 import Link from 'next/link'
@@ -94,9 +94,8 @@ function Menu({
 						exit={{ opacity: 0, y: -6, scaleY: 0.96 }}
 						transition={{ duration: 0.24, ease: EASE }}
 						style={{ originY: 0 }}
-						className={`absolute left-1/2 top-full z-40 mt-3 -translate-x-1/2 border border-[var(--ink)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] ${width}`}
+						className={`absolute right-0 top-full z-40 mt-1  border border-[var(--ink)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] ${width}`}
 					>
-						<span aria-hidden='true' className='absolute inset-x-0 top-0 h-px bg-[var(--brass)]' />
 						{children(() => setOpen(false))}
 					</motion.div>
 				) : null}
@@ -119,7 +118,28 @@ export function SiteNav() {
 			{/* The estate's strip, above the workspace's own bar. Not sticky:
 			    it belongs to the top of the document, and the navigation a
 			    reader actually needs mid-page is the bar under it. */}
-			<UtilityBar base='https://betterbarmm.com' />
+			<UtilityBar
+				base='https://betterbarmm.com'
+				className='bb-strip bg-[var(--paper-2)]'
+				switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
+				end={
+					<>
+						<ThemeToggle />
+						{/* Phones have no room for it in the strip; the wrapper hides it. */}
+						<span className='hidden self-stretch sm:flex'>
+							<a
+								href='https://betterbarmm.com/contribute'
+								target='_blank'
+								rel='noreferrer'
+								className='bb-btn bb-btn-accent !px-4 !py-0 !text-[9.5px]'
+							>
+								<HandHeartIcon size={13} weight='fill' aria-hidden='true' />
+								Contribute
+							</a>
+						</span>
+					</>
+				}
+			/>
 
 			{/* The estate's masthead behaviour, the same on every workspace: it
 			    takes a ground once the reader has left the top, and ducks out of the
@@ -134,7 +154,7 @@ export function SiteNav() {
 			className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'
 		>
 			<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
-				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[1fr_auto_1fr] items-center gap-4'>
+				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2'>
 					<div className='flex min-w-0 items-center gap-3'>
 						<a href='https://betterbarmm.com' onClick={closeMenu} className='w-fit shrink-0'>
 							<BrandLogo className='text-[var(--ink)]' />
@@ -151,7 +171,7 @@ export function SiteNav() {
 						</Link>
 					</div>
 
-					<nav className='hidden items-center gap-1 md:flex'>
+					<nav className='hidden items-center justify-end gap-1 md:flex'>
 						<Menu label='Areas' active={isAreaActive} width='w-[19rem]'>
 							{(close) =>
 								travelAreas.map((area) => (
@@ -190,20 +210,6 @@ export function SiteNav() {
 					</nav>
 
 					<div className='flex items-center justify-end gap-1.5'>
-						<ThemeToggle />
-						<span className='w-1.5' aria-hidden='true' />
-
-						<Magnetic strength={0.22} className='hidden sm:inline-flex'>
-							<a
-								href='https://betterbarmm.com/contribute'
-								target='_blank'
-								rel='noreferrer'
-								className='bb-btn bb-btn-accent !px-4 !py-2.5 !text-[10px]'
-							>
-								<HandHeartIcon size={15} weight='fill' aria-hidden='true' />
-								Contribute
-							</a>
-						</Magnetic>
 
 						<button
 							type='button'
