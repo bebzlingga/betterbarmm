@@ -58,6 +58,13 @@ export function LgsfReceived({ unitKey, name }: { unitKey: string; name: string 
 					DBM lists no Local Government Support Fund project for {name} from FY 2022 to 2026.
 				</p>
 			)}
+			<p className='mt-4 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+				These are DBM&rsquo;s. The Bangsamoro budget has a support fund for local governments too, but who
+				receives it has not been published yet.{' '}
+				<Link href='/lgsf' className='rule-link'>
+					More
+				</Link>
+			</p>
 		</>
 	)
 }

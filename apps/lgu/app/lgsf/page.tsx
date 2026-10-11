@@ -10,6 +10,16 @@ export const metadata: Metadata = {
 		'Every Local Government Support Fund project DBM lists for a BARMM province, city or municipality: what it is for, how much was allotted and how much cash has been released, FY 2023 to 2026.',
 }
 
+/* The Bangsamoro Government's own fund for its LGUs, from each year's
+   appropriations act: the program total, in pesos. FY 2026 renamed it. */
+const BARMM_FUND = [
+	{ year: 2022, amount: 1_394_016_000, act: 23 },
+	{ year: 2023, amount: 2_297_491_000, act: 32 },
+	{ year: 2024, amount: 6_536_000_000, act: 56 },
+	{ year: 2025, amount: 10_153_071_200, act: 65 },
+	{ year: 2026, amount: 5_206_146_100, act: 85 },
+]
+
 /* Directory names by key, so a row reads the way the rest of the site does. */
 const NAMES = new Map(
 	lguProvinces.flatMap((province) => [
@@ -69,10 +79,38 @@ export default function LgsfPage() {
 						))}
 					</div>
 					<figcaption className='mt-4 text-[12.5px] font-semibold text-[var(--ink)]'>
-						Support fund allotted to BARMM&rsquo;s local governments, by year
+						DBM&rsquo;s support fund allotted to BARMM&rsquo;s local governments, by year
 					</figcaption>
 				</figure>
 			</LguMasthead>
+
+			<section className='bg-[var(--paper-2)]'>
+				<div className='bb-container grid gap-8 py-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-20'>
+					<div>
+						<h2 className='text-[1.25rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>BARMM has a support fund of its own</h2>
+						<p className='mt-3 text-[15px] leading-7 text-[var(--ink-2)]'>
+							Besides DBM&rsquo;s, the Bangsamoro budget sets aside a Local Government Support Fund for the
+							region&rsquo;s provinces, cities, towns and barangays, renamed in FY 2026 the Sustainable Assistance
+							Mechanism for Local Moral Governance. Which local governments receive it, and for what, has not been
+							published yet, so none of it is in the list below. Each must report its use every quarter to MILG
+							and MFBM and post it under Full Disclosure; we will add it here once the recipients are out.
+						</p>
+					</div>
+					<dl className='grid content-start'>
+						{BARMM_FUND.map((f) => (
+							<div key={f.year} className='flex items-baseline justify-between gap-4 border-b border-[var(--rule)] py-2.5'>
+								<dt className='text-[13.5px] text-[var(--ink-3)]'>
+									FY {f.year}{' '}
+									<a href={`https://legislation.betterbarmm.com/acts/${f.act}`} className='rule-link text-[12px]'>
+										BAA {f.act}
+									</a>
+								</dt>
+								<dd className='num text-[15px] font-semibold text-[var(--ink)]'>₱{(f.amount / 1e9).toFixed(2)}B</dd>
+							</div>
+						))}
+					</dl>
+				</div>
+			</section>
 
 			<section className='bb-container bb-section'>
 				<LgsfExplorer rows={rows} years={years} programs={lgsf.programs.filter((p) => rows.some((r) => r.program === p.code))} />
