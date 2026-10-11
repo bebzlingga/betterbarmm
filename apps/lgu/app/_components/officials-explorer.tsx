@@ -28,9 +28,9 @@ export type OfficialRow = {
 }
 
 const COLUMNS: DataColumn[] = [
-	{ key: 'position', label: 'Position', format: 'text' },
+	{ key: 'position', label: 'Position', format: 'text', hideBelow: 'md' },
 	{ key: 'lgu', label: 'Local government', format: 'text', hideBelow: 'md' },
-	{ key: 'party', label: 'Party', format: 'text', hideBelow: 'sm' },
+	{ key: 'party', label: 'Party', format: 'text' },
 	{ key: 'votes', label: 'Votes', format: 'int', hideBelow: 'md' },
 	{ key: 'share', label: 'Share', format: 'pct', hideBelow: 'lg' },
 ]
