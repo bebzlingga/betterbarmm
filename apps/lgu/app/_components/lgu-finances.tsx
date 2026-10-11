@@ -12,7 +12,7 @@ import {
 	sglg,
 	type Table,
 } from '@betterbarmm/lgu-data/fiscal'
-import { LguStat, ShareBar } from './lgu-parts'
+import { LguStat } from './lgu-parts'
 
 /* ============================================================
    The money tab
@@ -151,7 +151,6 @@ export function LguFinances({
 	const years = yearsOf(finances, unitKey)
 	const latest = years.at(-1)
 	const f = latest ? row(finances, unitKey, latest)! : null
-	const dependency = latest ? n(row(funds.dependency, unitKey, latest)?.ntaDependency) : null
 	const drrmYears = yearsOf(funds.disasterFund, unitKey)
 	const sefYears = yearsOf(funds.educationFund, unitKey)
 	const classes = incomeClass.units[unitKey]
@@ -193,15 +192,6 @@ export function LguFinances({
 						<LguStat value={peso(f.cashEnd)} label='Cash at year end' />
 					</div>
 
-					{dependency != null ? (
-						<div className='mt-10 max-w-2xl'>
-							<ShareBar
-								share={Math.round(dependency * 1000) / 10}
-								label={`NTA's share of regular income, FY ${latest}`}
-								ofLabel='Local taxes, fees and other income'
-							/>
-						</div>
-					) : null}
 
 					<Block
 						title='Income and spending by year'
