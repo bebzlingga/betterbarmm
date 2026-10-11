@@ -5,6 +5,16 @@ import { EXPLAINER_CATEGORIES, categoryLabel, listPublishedExplainers } from '@b
 import { Masthead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
 
+/* What each topic's explainers will cover, for the page before any is
+   published. */
+const PLANNED: Record<string, string> = {
+	legislation: 'How a bill becomes a Bangsamoro law, what an autonomy act can and cannot do, and how to read one.',
+	budget: 'Where the region’s money comes from, how the annual budget is passed, and how to follow a peso to a project.',
+	election: 'How the parliament is elected: party seats, district seats, reserved seats, and what a vote counts for.',
+	lgu: 'What provinces, cities, towns and barangays each do, and how they are funded.',
+	travel: 'Visiting the region: what to know before you go, and how to be a good guest.',
+}
+
 export const metadata: Metadata = {
 	title: 'Explainers — BetterBARMM',
 	description:
@@ -42,16 +52,21 @@ export default async function ExplainersPage({
 
 			<Masthead
 				brand
-				label='Explainers'
+				label={all.length ? 'Explainers' : 'Explainers · Coming soon'}
 				lines={['How the Bangsamoro', 'works, explained.']}
 				muted={[1]}
 				standfirst='Short, sourced explanations of the region’s laws, budget, elections and local governments — written for someone who has never read a bill.'
-				facts={[
-					{ value: String(all.length), label: all.length === 1 ? 'Explainer' : 'Explainers' },
-					{ value: String(categories.length), label: categories.length === 1 ? 'Topic' : 'Topics' },
-				]}
+				facts={
+					all.length
+						? [
+								{ value: String(all.length), label: all.length === 1 ? 'Explainer' : 'Explainers' },
+								{ value: String(categories.length), label: categories.length === 1 ? 'Topic' : 'Topics' },
+							]
+						: undefined
+				}
 			/>
 
+			{all.length ? (
 			<section className='bb-container bb-section'>
 				<nav aria-label='Filter explainers' className='space-y-4'>
 					<div className='flex flex-wrap gap-2'>
@@ -110,12 +125,47 @@ export default async function ExplainersPage({
 						))}
 					</div>
 				) : (
-					<p className='mt-12 bb-body text-[var(--ink-3)]'>
-						{all.length ? 'No explainers match this filter yet.' : 'The first explainers are being written.'}
-					</p>
+					<p className='mt-12 bb-body text-[var(--ink-3)]'>No explainers match this filter yet.</p>
 				)}
 			</section>
+			) : (
+				<Empty />
+			)}
 		</main>
+	)
+}
+
+/** Before the first explainer is published: what is coming, and an ask. */
+function Empty() {
+	return (
+		<section className='bb-container bb-section'>
+			<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>What is coming</h2>
+			<p className='mt-3 max-w-[46rem] bb-body text-[var(--ink-3)]'>
+				The first explainers are being written. Each will take one question about how the region works and answer it in plain
+				language, with the sources linked.
+			</p>
+			<div className='mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3'>
+				{EXPLAINER_CATEGORIES.filter((c) => PLANNED[c.value]).map((c) => (
+					<div key={c.value} className='flex flex-col bg-[var(--paper-2)] p-7'>
+						<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>Coming soon</span>
+						<h3 className='mt-4 text-[1.2rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)]'>{c.label}</h3>
+						<p className='mt-3 bb-body text-[var(--ink-2)]'>{PLANNED[c.value]}</p>
+					</div>
+				))}
+			</div>
+
+			<div className='mt-16 flex flex-col gap-6 bg-[var(--paper-2)] p-8 lg:flex-row lg:items-center lg:justify-between lg:gap-12'>
+				<div className='max-w-[44rem]'>
+					<h2 className='text-[1.25rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Have a question we should answer?</h2>
+					<p className='mt-3 bb-body text-[var(--ink-2)]'>
+						Tell us what about the Bangsamoro you would like explained, or offer to write one.
+					</p>
+				</div>
+				<Link href='/contribute' className='bb-btn bb-btn-accent shrink-0'>
+					Suggest a topic
+				</Link>
+			</div>
+		</section>
 	)
 }
 
