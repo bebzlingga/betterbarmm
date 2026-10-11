@@ -101,14 +101,8 @@ export default async function UnitPage({
 	const rosters = unitRosters(unit.slug)
 	const history = townHistory(province.slug, unit.slug)
 	const change = growth(unit)
-	const lead = [
-		`${opening(unit, province)} It is divided into ${unit.barangays.length} ${unit.barangays.length === 1 ? 'barangay' : 'barangays'}${unit.areaKm2 ? ` across ${formatArea(unit.areaKm2)}` : ''}.`,
-		unit.population != null
-			? `It had ${formatNumber(unit.population)} residents at the 2024 census${growth(unit) != null ? `, ${growth(unit)! > 0 ? 'up' : 'down'} ${Math.abs(growth(unit)!)}% since 2020` : ''}.`
-			: null,
-	]
-		.filter(Boolean)
-		.join(' ')
+	// Two sentences of the directory's own facts; the figures sit just below.
+	const lead = `${opening(unit, province)} It has ${unit.barangays.length} ${unit.barangays.length === 1 ? 'barangay' : 'barangays'}${unit.population != null ? ` and had ${formatNumber(unit.population)} residents at the 2024 census` : ''}.`
 
 	// A share needs something to be a share of: Cotabato City is its whole area.
 	const share =
@@ -166,7 +160,7 @@ export default async function UnitPage({
 			>
 				{history ? (
 					<div className='mt-12 grid gap-6 text-[15px] leading-7 text-[var(--ink-2)] lg:grid-cols-2 lg:gap-20'>
-						<p>{history.paragraphs.join(' ')}</p>
+						<p>{history.summary ?? history.paragraphs.join(' ')}</p>
 						<p>{lead}</p>
 					</div>
 				) : (

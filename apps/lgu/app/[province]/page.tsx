@@ -88,16 +88,13 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 	]
 		.filter(Boolean)
 		.join(' and ')
+	// Two sentences of the directory's own facts; the figures sit just below.
 	const lead = [
-		`${province.name} is a ${province.kind === 'Province' ? 'province' : 'part'} of the Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)${capital ? `, with its capital at ${capital.name}` : ''}.`,
+		`${province.name} is a ${province.kind === 'Province' ? 'province' : 'part'} of BARMM${capital ? ` with its capital at ${capital.name}` : ''}, and elects ${area?.seats ?? '—'} of the 80 members of the Bangsamoro Parliament.`,
 		province.population != null
-			? `It had ${formatNumber(province.population)} people at the 2024 census${regionShare != null ? `, ${regionShare}% of the region’s` : ''}${change != null ? `, ${change > 0 ? 'up' : 'down'} ${Math.abs(change)}% since 2020` : ''}.`
-			: null,
-		`It has ${units}, with ${formatNumber(province.barangayCount)} barangays between them${province.areaKm2 ? `, across ${formatArea(province.areaKm2)}` : ''}.`,
-		area ? `Its voters elect ${area.seats} of the 80 members of the Bangsamoro Parliament.` : null,
-	]
-		.filter(Boolean)
-		.join(' ')
+			? `It had ${formatNumber(province.population)} people at the 2024 census, in ${units} and ${formatNumber(province.barangayCount)} barangays.`
+			: `It has ${units} and ${formatNumber(province.barangayCount)} barangays.`,
+	].join(' ')
 
 	// Who governs it now: the top of the current term's canvass for each
 	// single-seat office. The board's seat counts are not on record, so its
@@ -126,7 +123,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				{history ? (
 					<div className='mt-12'>
 						<div className='grid gap-6 text-[15px] leading-7 text-[var(--ink-2)] lg:grid-cols-2 lg:gap-20'>
-							<p>{history.paragraphs.join(' ')}</p>
+							<p>{history.summary ?? history.paragraphs.join(' ')}</p>
 							<p>{lead}</p>
 						</div>
 					</div>

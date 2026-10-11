@@ -9,7 +9,12 @@
 
 import file from '../../../datasets/lgu/histories.json'
 
-export type AreaHistory = { paragraphs: string[]; sources: { label: string; href: string }[] }
+export type AreaHistory = {
+	paragraphs: string[]
+	/** About 50 words, condensed from the paragraphs alone, for a page's masthead. */
+	summary?: string
+	sources: { label: string; href: string }[]
+}
 
 const histories = file as unknown as { areas: Record<string, AreaHistory>; units?: Record<string, AreaHistory> }
 
