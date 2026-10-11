@@ -16,6 +16,8 @@ import {
 	isSingleUnitArea,
 	largestUnits,
 	lguData,
+	boardSeatsSource,
+	boardWinners,
 	lguAreas,
 	lguProvinces,
 	personName,
@@ -48,6 +50,19 @@ export async function generateMetadata({
 			province.barangayCount,
 		)} barangays. Population, land area, officials and services for ${province.name} in BARMM.`,
 	}
+}
+
+/** One office-holder: name and role on the left, party on the right. */
+function Official({ name, party, role }: { name: string; party: string | null; role: string }) {
+	return (
+		<li className='flex items-baseline justify-between gap-4 border-b border-[var(--rule)] py-3'>
+			<span className='min-w-0'>
+				<span className='block text-[14.5px] font-semibold leading-snug text-[var(--ink)]'>{name}</span>
+				<span className='mt-0.5 block text-[12px] text-[var(--ink-3)]'>{role}</span>
+			</span>
+			{party ? <span className='shrink-0 text-[12px] font-medium text-[var(--ink-2)]'>{party}</span> : null}
+		</li>
+	)
 }
 
 const H2 = 'scroll-mt-32 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
@@ -105,6 +120,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 	const termId = lguData.officials?.currentTermId
 	const current = termId ? province.officials?.[termId] : undefined
 	const termLabel = termId ? `${termId.replace('-', '–')} term` : ''
+	const board = boardWinners(province.slug, current?.board)
 	const officials = (
 		[
 			['Governor', current?.governor],
@@ -236,16 +252,42 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 						<div className='mt-10'>
 							<h2 className='text-[15px] font-semibold text-[var(--ink)]'>Current officials</h2>
 							<p className='mt-1 text-[12.5px] text-[var(--ink-3)]'>{termLabel}</p>
-							<dl className='mt-4'>
+							<ul className='mt-4'>
 								{officials.map((official) => (
-									<div key={official.position} className='border-b border-[var(--rule)] py-4'>
-										<dt className='bb-label'>{official.position}</dt>
-										<dd className='mt-1.5 text-[15px] font-semibold text-[var(--ink)]'>{official.name}</dd>
-										{official.party ? <dd className='mt-0.5 text-[12.5px] text-[var(--ink-3)]'>{official.party}</dd> : null}
-									</div>
+									<Official key={official.position} name={official.name} party={official.party} role={official.position} />
 								))}
-							</dl>
-							<Link href='/officials' className='rule-link mt-4 inline-block text-[13px]'>
+							</ul>
+
+							{board ? (
+								<div className='mt-8'>
+									<h3 className='text-[14px] font-semibold text-[var(--ink)]'>Sangguniang Panlalawigan</h3>
+									{board.districts.map(({ district, members }) => (
+										<div key={district} className='mt-4'>
+											<p className='bb-label'>{district}</p>
+											<ul className='mt-1'>
+												{members.map((member) => (
+													<Official
+														key={member.name}
+														name={personName(member.name)}
+														party={member.party ?? null}
+														role='Board member'
+													/>
+												))}
+											</ul>
+										</div>
+									))}
+									{board.note ? <p className='mt-4 text-[12px] leading-5 text-[var(--ink-3)]'>{board.note}</p> : null}
+									<p className='mt-3 text-[12px] leading-5 text-[var(--ink-3)]'>
+										Seats per district from{' '}
+										<a href={boardSeatsSource.href} target='_blank' rel='noreferrer' className='rule-link'>
+											{boardSeatsSource.label}
+										</a>
+										.
+									</p>
+								</div>
+							) : null}
+
+							<Link href='/officials' className='rule-link mt-6 inline-block text-[13px]'>
 								Every official, every term
 							</Link>
 						</div>

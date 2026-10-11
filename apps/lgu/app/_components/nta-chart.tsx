@@ -20,7 +20,7 @@ export function NtaChart({ unitKey }: { unitKey: string }) {
 	return (
 		<figure className='m-0 mt-10'>
 			<figcaption className='mb-8 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
-				<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>National Tax Allotment, by year</h2>
+				<h2 className='font-[family-name:var(--font-display)] text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>National Tax Allotment, by year</h2>
 				<span className='text-[12.5px] text-[var(--ink-3)]'>
 					Reported to BLGF. FY {finances.years.at(-1)} is preliminary.
 				</span>
