@@ -367,7 +367,6 @@ export default function GovernanceCodePage() {
 
 			<DocLayout
 				toc={TOC}
-				narrow
 				summary='Bangsamoro Autonomy Act 49, enacted in September 2023, is the code every province, city, municipality and barangay in BARMM runs on. It creates their offices, fixes their terms and pay, sets how they raise and share money, and devolves the region’s powers to them. The national Local Government Code applies only where it is silent.'
 			>
 					<Section id='introduction'>

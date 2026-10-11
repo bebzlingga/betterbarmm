@@ -8,17 +8,11 @@ import { DocToc, type TocItem } from './doc-toc'
 export function DocLayout({
 	toc,
 	summary,
-	narrow = false,
-	measure = '',
 	children,
 }: {
 	/** "On this page"; leave it off and the text takes the full width. */
 	toc?: TocItem[]
 	summary?: React.ReactNode
-	/** Hold the text to a reading measure; leave it off where figures need the width. */
-	narrow?: boolean
-	/** A width of its own for the text column, e.g. `max-w-[54rem]`. */
-	measure?: string
 	children: React.ReactNode
 }) {
 	return (
@@ -44,7 +38,8 @@ export function DocLayout({
 			</details>
 			) : null}
 
-			<article className={`min-w-0 ${narrow ? 'max-w-[48rem]' : measure}`}>{children}</article>
+			{/* One text width for every Learn page: wide enough for its tables. */}
+			<article className='min-w-0 max-w-[58rem]'>{children}</article>
 
 			{toc ? (
 			<aside className='hidden lg:block'>

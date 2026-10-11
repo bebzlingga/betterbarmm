@@ -162,7 +162,6 @@ export default function DevolutionPage() {
 
 			<DocLayout
 				toc={TOC}
-				narrow
 				summary='Devolution moves a power, and the staff, assets and money that go with it, from the Bangsamoro Government down to its provinces, cities, municipalities and barangays. The Code gives the region’s ministries 5 years to finish it, after assessing what each unit can carry. Basilan, Marawi and Cotabato City already have it in full.'
 			>
 				<Section id='introduction'>
