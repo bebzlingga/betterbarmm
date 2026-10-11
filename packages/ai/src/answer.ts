@@ -162,6 +162,13 @@ const WANTS_LIST =
 
 const SHOWING_LIST = `One thing changes for this question, and it overrides the rule against lists above. The reader asked for several things, so answer with a list. Open with one plain sentence saying what the list is. Then put each item on its own line starting with "- ", the name or number in **bold**, a dash, and a few words on what it is, taken from its record: for example "- **Bill 88** — dialysis units and free dialysis services". Up to twelve items, the ones the records match best, in a sensible order. Use only items in the records, and never cut an item off halfway.`
 
+/* A question about several things at once — "the job of mayor, vice mayor,
+   councilor", "the difference between a bill and an act". One paragraph
+   blurs them together; one line each keeps them apart. */
+const WANTS_PARTS = /,|\beach\b|\bdifferen(?:ce|t)\b|\bcompare\b|\bcomparison\b|\bvs\.?\b|\bversus\b|\bboth\b|\broles?\b.*\band\b|\bjobs?\b.*\band\b|\bduties\b.*\band\b/i
+
+const SHOWING_PARTS = `One thing changes for this question, and it overrides the rule against lists above. The reader asked about more than one thing at once, so keep them apart. If the answer covers two or more distinct things — offices, roles, measures, places, sides of a comparison — open with one short sentence, then give each its own line starting with "- ", its name in **bold**, a dash, and one or two sentences about it from the records: for example "- **Mayor** — the chief executive, who enforces laws and runs the town's services." If the answer is really about only one thing, ignore this and answer as usual.`
+
 const SHOWING_ROSTER = `Every member is being listed under your answer, by name, with the party they sit for and the seat they hold. Your job for this question is the one sentence that frames that list: which parties it covers and how many seats each of them won, taken from the party rows. One sentence is required. Name nobody — every name you write will appear again directly beneath it — and never count the member rows, because the party's own row carries its real total and they are not always the same number.`
 
 const SHOWING_TIMELINE = `One thing changes for this question, and it overrides what was said above about nothing being printed under your answer. This time a dated timeline is: every era in order, each with its own paragraph. So if the reader asked for the history date by date, the timeline is that answer, it is not a list you have to write, and the rule against lists does not apply to it.
@@ -301,6 +308,7 @@ export async function answer(turns: Turn[]): Promise<Answer> {
 				timeline?.length ? SHOWING_TIMELINE : '',
 				roster?.length ? SHOWING_ROSTER : '',
 				!roster?.length && !timeline?.length && WANTS_LIST.test(asked) ? SHOWING_LIST : '',
+				!roster?.length && !timeline?.length && !WANTS_LIST.test(asked) && WANTS_PARTS.test(asked) ? SHOWING_PARTS : '',
 			]
 				.filter(Boolean)
 				.join('\n\n'),
