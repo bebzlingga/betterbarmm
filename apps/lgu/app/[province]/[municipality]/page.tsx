@@ -25,6 +25,7 @@ import { barangayOfficials, unitRosters } from '@betterbarmm/lgu-data/barangay-o
 import { LguFinances } from '../../_components/lgu-finances'
 import { LguDisclosure } from '../../_components/lgu-disclosure'
 import { NtaChart } from '../../_components/nta-chart'
+import { LgsfReceived } from '../../_components/lgsf-received'
 import { LocatorMap } from '../../_components/locator-map'
 import { Official } from '../../_components/official'
 export function generateStaticParams() {
@@ -213,6 +214,10 @@ export default async function UnitPage({
 					{/* The town's own NTA, year by year. */}
 					<section className='mt-20'>
 						<NtaChart unitKey={key} />
+					</section>
+
+					<section className='mt-20'>
+						<LgsfReceived unitKey={key} name={unit.name} />
 					</section>
 
 					<section className='mt-20'>

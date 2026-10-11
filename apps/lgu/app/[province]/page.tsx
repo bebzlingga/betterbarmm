@@ -26,6 +26,7 @@ import {
 import { LguFinances } from '../_components/lgu-finances'
 import { LguDisclosure } from '../_components/lgu-disclosure'
 import { NtaChart } from '../_components/nta-chart'
+import { LgsfReceived } from '../_components/lgsf-received'
 import { LocatorMap } from '../_components/locator-map'
 import { Official } from '../_components/official'
 
@@ -167,6 +168,10 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 					{/* The provincial government's own NTA, year by year. */}
 					<section className='mt-20'>
 						<NtaChart unitKey={province.slug} />
+					</section>
+
+					<section className='mt-20'>
+						<LgsfReceived unitKey={province.slug} name={`the provincial government of ${province.name}`} />
 					</section>
 
 					{province.kind === 'Province' ? (
