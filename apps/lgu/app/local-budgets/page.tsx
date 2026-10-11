@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { ArrowDownIcon, ArrowRightIcon } from '@phosphor-icons/react/ssr'
 import { Rise } from '@betterbarmm/editorial'
 import { finances, row } from '@betterbarmm/lgu-data/fiscal'
 import { DocLayout } from '../_components/doc-layout'
@@ -23,30 +22,6 @@ export const metadata: Metadata = {
    rule is cited to the Code or its IRR; the income bar is BLGF's.
    ============================================================ */
 
-/** Who sends money to whom. Each card says what it gives and who gets it. */
-const CHAIN = [
-	{
-		tier: 'National government',
-		amount: '5%',
-		amountNote: 'of national tax collections, each year, to the Bangsamoro Government',
-		what: 'This block grant goes to the region. Separately, every province, city, municipality and barangay gets its own National Tax Allotment straight from the national government — it does not pass through the region.',
-		basis: 'Bangsamoro Organic Law, art. XII',
-	},
-	{
-		tier: 'Bangsamoro Government',
-		amount: '₱114.08B',
-		amountNote: 'its budget for FY 2026',
-		what: 'Mostly spent on its own ministries. It also passes some down: 40% of the national taxes collected inside BARMM goes to the local governments, on top of other support for them.',
-		basis: 'Code s. 313',
-	},
-	{
-		tier: 'Your province, city, municipality or barangay',
-		amount: '3',
-		amountNote: 'sources of money',
-		what: 'Its own National Tax Allotment, which is nearly all of it. Some help from the Bangsamoro Government. And the taxes and fees it collects itself — the only part it decides.',
-		basis: 'Code s. 21',
-	},
-] as const
 
 /** The budget year, as the Code dates it. */
 const CALENDAR = [
@@ -198,45 +173,130 @@ const INCOME = (() => {
 
 const billions = (value: number) => `₱${(value / 1e9).toFixed(1)}B`
 
-/** One bar, the whole of the units' income, split by where it came from. */
-function IncomeBar() {
+/* The three sources as 100 squares: shares rounded by largest remainder so
+   the grid always holds exactly 100. */
+const SQUARES = (() => {
+	const raw = INCOME.parts.map((p) => p.share)
+	const counts = raw.map(Math.floor)
+	const order = raw.map((v, i) => [v - Math.floor(v), i] as const).sort((x, y) => y[0] - x[0])
+	for (let k = 0; k < 100 - counts.reduce((t, c) => t + c, 0); k++) counts[order[k][1]]++
+	return INCOME.parts.flatMap((p, i) => Array.from({ length: counts[i] }, () => p.color))
+})()
+
+/** Where each ₱100 came from: a 10 by 10 grid, one square a peso in a hundred. */
+function PerHundred() {
 	if (!INCOME.total) return null
+	return (
+		<figure className='m-0 mt-10 grid items-center gap-10 sm:grid-cols-[16rem_minmax(0,1fr)] sm:gap-14'>
+			<div
+				className='grid aspect-square w-full max-w-[16rem] grid-cols-10 gap-1'
+				role='img'
+				aria-label={INCOME.parts.map((p) => `${p.label} ₱${p.share.toFixed(2)} of every ₱100`).join(', ')}
+			>
+				{SQUARES.map((color, i) => (
+					<span key={i} style={{ background: color }} />
+				))}
+			</div>
+			<div>
+				<figcaption className='text-[15px] font-semibold text-[var(--ink)]'>
+					For every ₱100 a BARMM local government received in FY {INCOME_YEAR}
+				</figcaption>
+				<ul className='mt-4'>
+					{INCOME.parts.map((p) => (
+						<li key={p.label} className='flex items-baseline gap-3 border-b border-[var(--rule-soft)] py-3'>
+							<span aria-hidden='true' className='size-3 shrink-0 translate-y-[1px]' style={{ background: p.color }} />
+							<span className='num w-20 shrink-0 text-[1.25rem] font-extrabold leading-none text-[var(--ink)]'>
+								₱{p.share.toFixed(2)}
+							</span>
+							<span className='text-[14px] text-[var(--ink-2)]'>{p.label}</span>
+						</li>
+					))}
+				</ul>
+				<p className='mt-3 text-[12px] leading-5 text-[var(--ink-3)]'>
+					All BARMM provinces, cities and municipalities together: {billions(INCOME.total)}. From BLGF’s
+					Statements of Receipts and Expenditures; FY {INCOME_YEAR} is preliminary.
+				</p>
+			</div>
+		</figure>
+	)
+}
+
+/** The three sources, in plain words. */
+const SOURCES = [
+	{
+		name: 'National Tax Allotment',
+		from: 'The national government, straight to each province, city, municipality and barangay',
+		what: 'Its share of national taxes, set by formula and paid automatically, without passing through the region. At least 20% of it must go to development projects.',
+		basis: 'Code ss. 21, 348',
+	},
+	{
+		name: 'Help from the Bangsamoro Government',
+		from: 'The region',
+		what: 'The region receives its own block grant of 5% of national tax collections, and passes part of its money down: 40% of the national taxes collected inside BARMM, and programs and subsidies on top.',
+		basis: 'Organic Law art. XII · Code s. 313',
+	},
+	{
+		name: 'Its own taxes, fees and charges',
+		from: 'The people and businesses in the unit',
+		what: 'Real property tax, business taxes, permits, fees and market rentals. The only money a local government raises itself.',
+		basis: 'Code s. 148',
+	},
+]
+
+/* What all of BARMM's local governments reported receiving as NTA, year by
+   year. The old Maguindanao province, filed apart before its 2022 split, is
+   added in; the count of units reporting each year is printed with it. */
+const NTA_TREND = finances.years.map((year) => {
+	let total = 0
+	let units = 0
+	for (const table of [finances.units, finances.former]) {
+		for (const key of Object.keys(table)) {
+			const nta = Number(row({ ...finances, units: table }, key, year)?.nta) || 0
+			if (nta) {
+				total += nta
+				units += 1
+			}
+		}
+	}
+	return { year, total, units }
+})
+
+function NtaTrend() {
+	const top = Math.max(...NTA_TREND.map((y) => y.total))
 	return (
 		<figure className='m-0 mt-14'>
 			<figcaption className='text-[15px] font-semibold text-[var(--ink)]'>
-				What BARMM’s local governments received, FY {INCOME_YEAR}
+				National Tax Allotment received by BARMM’s local governments, by year
 			</figcaption>
-			<p className='mt-1 text-[13px] text-[var(--ink-3)]'>
-				Every province, city and municipality together: {billions(INCOME.total)}.
-			</p>
-			<div
-				className='mt-5 flex h-12 w-full overflow-hidden'
-				role='img'
-				aria-label={INCOME.parts.map((p) => `${p.label} ${p.share.toFixed(1)}%`).join(', ')}
-			>
-				{INCOME.parts.map((p) => (
-					<div
-						key={p.label}
-						className='h-full border-r-2 border-[var(--paper)] last:border-r-0'
-						style={{ width: `${p.share}%`, minWidth: '3px', background: p.color }}
-						title={`${p.label}: ${billions(p.value)} (${p.share.toFixed(1)}%)`}
-					/>
+			<div className='mt-6 grid h-52 items-end gap-1.5 sm:gap-3' style={{ gridTemplateColumns: `repeat(${NTA_TREND.length}, minmax(0, 1fr))` }}>
+				{NTA_TREND.map(({ year, total }) => (
+					<div key={year} className='flex h-full flex-col items-center justify-end'>
+						<span className='num mb-1.5 whitespace-nowrap text-[9.5px] text-[var(--ink-2)] sm:text-[12px]'>
+							{(total / 1e9).toFixed(1)}B
+						</span>
+						<div
+							className='w-full max-w-14'
+							style={{
+								height: `calc(${(total / top) * 100}% - 1.5rem)`,
+								background: 'linear-gradient(to top, color-mix(in oklab, var(--accent) 35%, transparent), var(--accent))',
+							}}
+							title={`FY ${year}: ₱${total.toLocaleString('en-PH', { maximumFractionDigits: 0 })}`}
+						/>
+					</div>
 				))}
 			</div>
-			<ul className='mt-5 grid gap-4 sm:grid-cols-3'>
-				{INCOME.parts.map((p) => (
-					<li key={p.label} className='border-t-2 pt-3' style={{ borderColor: p.color }}>
-						<p className='num text-[1.6rem] font-extrabold leading-none tracking-[-0.02em] text-[var(--ink)]'>
-							{p.share.toFixed(1)}%
-						</p>
-						<p className='mt-2 text-[13.5px] text-[var(--ink-2)]'>{p.label}</p>
-						<p className='num mt-0.5 text-[12.5px] text-[var(--ink-3)]'>{billions(p.value)}</p>
-					</li>
+			<div className='grid gap-1.5 border-t border-[var(--rule)] pt-2 sm:gap-3' style={{ gridTemplateColumns: `repeat(${NTA_TREND.length}, minmax(0, 1fr))` }}>
+				{NTA_TREND.map(({ year }) => (
+					<span key={year} className='num text-center text-[10.5px] text-[var(--ink-3)] sm:text-[12px]'>
+						<span className='sm:hidden'>’{String(year).slice(2)}</span>
+						<span className='hidden sm:inline'>{year}</span>
+					</span>
 				))}
-			</ul>
+			</div>
 			<p className='mt-4 text-[12px] leading-5 text-[var(--ink-3)]'>
-				From BLGF’s Statements of Receipts and Expenditures. FY {INCOME_YEAR} is preliminary; a unit that did not
-				report is not in the total.
+				In billions of pesos, as each unit reported it to BLGF; between {Math.min(...NTA_TREND.map((y) => y.units))} and{' '}
+				{Math.max(...NTA_TREND.map((y) => y.units))} units reported in a year. The jump in 2022 is the Mandanas
+				ruling, which widened the national taxes the allotment is cut from. FY {INCOME_YEAR} is preliminary.
 			</p>
 		</figure>
 	)
@@ -402,39 +462,27 @@ export default function LocalBudgetsPage() {
 			{/* ---- Where the money comes from ---- */}
 			<Section
 				id='money'
-				lead='A local government gets most of its money straight from the national government. The Bangsamoro Government adds some, and the local government raises the rest itself. Each one decides how to spend what it gets.'
+				lead='A local government has three sources of money. Nearly all of it comes from one: its share of national taxes, paid straight to it by the national government.'
 			>
-				{/* The flow as connected cards: across on a wide screen, down on a phone. */}
-				<ol className='mt-10 grid gap-3 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)_auto_minmax(0,1fr)] lg:items-stretch'>
-					{CHAIN.map((stage, index) => (
-						<li key={stage.tier} className='contents'>
-							<div className='bg-[var(--paper-2)] p-6'>
-								<p className='num font-mono text-[11px] font-semibold text-[var(--brass)]'>
-									{String(index + 1).padStart(2, '0')}
-								</p>
-								<h3 className='mt-2 text-[15.5px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
-									{stage.tier}
-								</h3>
-								<p className='money num mt-5 text-[2rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--accent)]'>
-									{stage.amount}
-								</p>
-								<p className='mt-2 text-[11.5px] leading-5 text-[var(--ink-3)]'>{stage.amountNote}</p>
-								<p className='mt-4 text-[13.5px] leading-6 text-[var(--ink-2)]'>{stage.what}</p>
-								<p className='mt-2 font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
-									{stage.basis}
-								</p>
+				<PerHundred />
+
+				<ol className='mt-12'>
+					{SOURCES.map((source, index) => (
+						<li key={source.name} className='grid gap-x-8 gap-y-2 border-t border-[var(--rule)] py-6 md:grid-cols-[14rem_minmax(0,1fr)]'>
+							<div>
+								<p className='num font-mono text-[11px] font-semibold text-[var(--brass)]'>{String(index + 1).padStart(2, '0')}</p>
+								<h3 className='mt-1 text-[16px] font-extrabold leading-snug tracking-[-0.01em] text-[var(--ink)]'>{source.name}</h3>
+								<p className='mt-1 text-[12.5px] leading-5 text-[var(--ink-3)]'>From {source.from.charAt(0).toLowerCase() + source.from.slice(1)}</p>
 							</div>
-							{index < CHAIN.length - 1 ? (
-								<div aria-hidden='true' className='flex items-center justify-center text-[var(--accent)]'>
-									<ArrowDownIcon size={22} weight='bold' className='lg:hidden' />
-									<ArrowRightIcon size={22} weight='bold' className='hidden lg:block' />
-								</div>
-							) : null}
+							<div>
+								<p className='text-[15px] leading-7 text-[var(--ink-2)]'>{source.what}</p>
+								<p className='mt-1 font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>{source.basis}</p>
+							</div>
 						</li>
 					))}
 				</ol>
 
-				<IncomeBar />
+				<NtaTrend />
 			</Section>
 
 			{/* ---- Where it must go ---- */}
@@ -487,7 +535,7 @@ export default function LocalBudgetsPage() {
 								<p className='num font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-mute)]'>
 									{late ? 'If late' : `Step ${number}`}
 								</p>
-								<p className='money num mt-2 text-[1.35rem] font-extrabold leading-none tracking-[-0.02em] text-[var(--ink)]'>
+								<p className='money num mt-2 text-[1.05rem] font-extrabold leading-none tracking-[-0.02em] text-[var(--ink)]'>
 									{step.when}
 								</p>
 								<p className='mt-3 text-[13px] leading-6 text-[var(--ink-2)]'>{step.what}</p>
