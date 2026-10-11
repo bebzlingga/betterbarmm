@@ -283,7 +283,7 @@ const OPENERS = [
  * component that returns early before calling them is a component that breaks
  * the moment this flips back to true.
  */
-export const JO = false
+export const JO = true
 
 export function AskDock() {
 	const [open, setOpen] = useState(false)
@@ -309,6 +309,19 @@ export function AskDock() {
 	useEffect(() => {
 		if (open) foot.current?.scrollIntoView({ block: 'end' })
 	}, [turns, asking, open])
+
+	// Any page can hand Jo a question: dispatch "betterbarmm:ask" with the
+	// question as its detail, and the dock opens and asks it.
+	const askRef = useRef<(text: string) => void>(() => {})
+	useEffect(() => {
+		const onAsk = (event: Event) => {
+			const question = (event as CustomEvent<string>).detail
+			setOpen(true)
+			if (typeof question === 'string' && question.trim()) askRef.current(question)
+		}
+		window.addEventListener('betterbarmm:ask', onAsk)
+		return () => window.removeEventListener('betterbarmm:ask', onAsk)
+	}, [])
 
 	async function ask(text: string) {
 		const question = text.trim()
@@ -353,6 +366,8 @@ export function AskDock() {
 
 	// After every hook, never before one.
 	if (!JO) return null
+
+	askRef.current = ask
 
 	return (
 		<>
