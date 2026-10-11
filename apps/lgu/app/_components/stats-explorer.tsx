@@ -39,7 +39,7 @@ const COLUMNS: DataColumn[] = [
 ]
 
 /** A labelled native select: keyboard, screen readers and phones handle it for free. */
-function Select({
+export function Select({
 	label,
 	value,
 	options,

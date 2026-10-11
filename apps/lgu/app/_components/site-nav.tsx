@@ -180,6 +180,10 @@ export function SiteNav() {
 					<nav className='hidden items-center justify-end gap-1 whitespace-nowrap xl:flex'>
 						{/* Three doors: the profiles of the places, how the system and its law
 						    work, and the money. */}
+						<Link href='/officials' data-active={pathname.startsWith('/officials')} className='nav-item'>
+							Officials
+						</Link>
+
 						<Menu label='LGU profiles' active={isProvinceActive} width='w-[17rem]'>
 							{(close) => [
 								<Link key='all' href='/' onClick={close} className='nav-menu-item'>
@@ -277,7 +281,14 @@ export function SiteNav() {
 							aria-label='Mobile navigation'
 							className='mx-auto max-w-[88rem] px-8 py-6 sm:px-6 text-sm text-[var(--ink-2)] lg:px-8'
 						>
-							<p className='bb-label'>LGU profiles</p>
+							<p className='bb-label'>Officials</p>
+							<div className='mt-3 grid'>
+								<Link href='/officials' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5'>
+									Local officials
+								</Link>
+							</div>
+
+							<p className='bb-label mt-7'>LGU profiles</p>
 							<div className='mt-3 grid'>
 								<Link href='/' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 font-semibold'>
 									All provinces and areas
