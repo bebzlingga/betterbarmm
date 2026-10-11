@@ -219,7 +219,9 @@ export function DataTable({
 			</table>
 
 			{shown.length === 0 ? (
-				<p className='py-10 text-center text-[13.5px] text-[var(--ink-3)]'>Nothing here matches “{query.trim()}”.</p>
+				<p className='py-10 text-center text-[13.5px] text-[var(--ink-3)]'>
+					{query.trim() ? `Nothing here matches “${query.trim()}”.` : 'Nothing here matches these filters.'}
+				</p>
 			) : null}
 		</div>
 	)
