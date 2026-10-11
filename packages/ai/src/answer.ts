@@ -142,6 +142,9 @@ You are writing the answer now. What the search found is below. It is what you h
 const RIGHT_NOW =
 	/\b(current|currently|now|nowadays|today|latest|newest|incumbent|so far|these days|at present|right now|this year|as of)\b/i
 
+/* Records that hold how things stand in the present term or year. */
+const CURRENT_KINDS = new Set(['Officials', 'Barangay captains', 'NTA allocation'])
+
 /* The shape of Jo saying she has nothing — her own words for it, from the
    brief, plus the couple of ways a model reaches for the same thing. */
 const EMPTY_HANDED =
@@ -321,7 +324,11 @@ export async function answer(turns: Turn[]): Promise<Answer> {
 	
 	   Never when something is being drawn: a roster or a timeline is an answer
 	   whatever the sentence above it says. */
-	if (!timeline?.length && !roster?.length && (EMPTY_HANDED.test(say) || RIGHT_NOW.test(asked))) {
+	/* "Now" sends a question to the web, unless a record of how things stand
+	   now answered it: the officials in office this term, this year's NTA.
+	   Those are the records, and the web would only be an older copy. */
+	const current = rows.some((row) => CURRENT_KINDS.has(row.kind))
+	if (!timeline?.length && !roster?.length && (EMPTY_HANDED.test(say) || (RIGHT_NOW.test(asked) && !current))) {
 		const web = await askWeb(asked)
 		if (web.ok) return { ok: true, say: web.text, sources: [], web: web.links }
 	}

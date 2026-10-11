@@ -494,8 +494,10 @@ const { finances, row } = await import('@betterbarmm/lgu-data/fiscal')
 // builder has stopped reproducing the workbook.
 assert.equal(row(finances, 'lanao-del-sur', 2023)?.borrowings, 580983940.12, 'finances.json no longer reproduces the FY 2023 SRE')
 const marawiMoney = search('how much NTA does Marawi get', 'lgu', 3)
-assert.equal(marawiMoney[0]?.title, 'Marawi: income, spending and debt', `Marawi's NTA reached ${marawiMoney[0]?.title}`)
-const ntaFigure = marawiMoney[0]!.note.match(/NTA (₱[\d,]+)/)![1]
+// DBM's FY 2026 allocation answers first; the BLGF ledger, a year older, stays in reach.
+assert.equal(marawiMoney[0]?.title, 'Marawi NTA, FY 2026–2027', `Marawi's NTA reached ${marawiMoney[0]?.title}`)
+assert.ok(marawiMoney.some((one) => one.title === 'Marawi: income, spending and debt'), "Marawi's finances row fell out of the top three")
+const ntaFigure = marawiMoney.find((one) => one.title === 'Marawi: income, spending and debt')!.note.match(/NTA (₱[\d,]+)/)![1]
 assert.equal(grounded(`Marawi received ${ntaFigure} in NTA.`, marawiMoney), `Marawi received ${ntaFigure} in NTA.`, 'a figure from the finances row was dropped')
 const allMoney = forTest.gather([{ query: 'how much NTA do all BARMM local governments get' }])[0]!
 assert.ok(allMoney.title.startsWith('BARMM local governments combined'), `the region's NTA total reached ${allMoney.title}`)

@@ -45,6 +45,7 @@ import blgcIrrFile from '../../../datasets/bills/blgc-irr.json'
 import readingsFile from '../../../datasets/bills/readings.json'
 import ballotFile from '../../../datasets/election/election.min.json'
 import resultsFile from '../../../datasets/election/election-results.json'
+import { more, MORE_ASKED } from './more'
 
 export type Space = 'legislation' | 'budget' | 'election' | 'travel' | 'lgu' | 'primer'
 
@@ -1166,11 +1167,12 @@ export function corpus(): Entry[] {
 			...travel(),
 			...local(),
 			...primer(),
+			...more(),
 		]
 		// Hung on the row rather than written into each builder: it is one rule
 		// about how questions are worded, not a fact about any of the four
 		// datasets. Kept apart from `text` so it can be scored apart from it.
-		for (const row of built) row.asked = ASKED_FOR[row.kind]
+		for (const row of built) row.asked = ASKED_FOR[row.kind] ?? MORE_ASKED[row.kind]
 	}
 	return built
 }
@@ -1314,8 +1316,11 @@ export function search(query: string, space?: Space, limit = 8): Entry[] {
 		const chapter = entry.kind === 'Background'
 		const lifted = whole && entry.rollup && (counting ? !chapter : subject && chapter)
 		const seated = who && whole && WHOLE_SEATS.has(entry.kind)
+		/* A question that is only a name wants the thing so named, not its
+		   history, its officials or its NTA, which all carry the name too. */
+		const exact = title === asked.trim().replace(/[?.!]+$/, '')
 		if (score > 0)
-			scored.push({ entry, score: score + (whole ? 3 : 0) + (lifted ? 4 : 0) + (seated ? 4 : 0) })
+			scored.push({ entry, score: score + (whole ? 3 : 0) + (lifted ? 4 : 0) + (seated ? 4 : 0) + (exact ? 2 : 0) })
 	}
 
 	return scored
