@@ -579,7 +579,7 @@ function grouped(sources: Source[]): [string, Source[]][] {
 	return [...kinds]
 }
 
-const BULLET = /^\s*[-*\u2022]\s+/
+const BULLET = /^\s*(?:[-*\u2022]|\d+[.)])\s+/
 
 /** Amounts, shares and counts in the thousands: the figures a reader scans for. */
 const FIGURE = /(₱\s?[\d,]+(?:\.\d+)?(?:\s(?:million|billion|trillion))?|\b\d+(?:\.\d+)?%|\b\d{1,3}(?:,\d{3})+(?:\.\d+)?\b)/g
@@ -615,7 +615,13 @@ function marked(line: string) {
  */
 export function Prose({ text }: { text: string }) {
 	const blocks: { list: boolean; lines: string[] }[] = []
-	for (const raw of text.replace(/\s+[-*\u2022]\s+(?=\*\*)/g, '\n- ').split('\n')) {
+	const tidy = text
+		// Rules ("---") the web model draws between parts: a line break, nothing more.
+		.replace(/\s*(?:-{3,}|\*{3,}|_{3,})\s*/g, '\n')
+		// Numbered items run into the line before them.
+		.replace(/\s+(\d+[.)])\s+(?=\*\*)/g, '\n$1 ')
+		.replace(/\s+[-*\u2022]\s+(?=\*\*)/g, '\n- ')
+	for (const raw of tidy.split('\n')) {
 		const line = raw.trim()
 		if (!line) continue
 		const list = BULLET.test(line)
@@ -957,14 +963,14 @@ const CSS = `
    about the thing, not the thing" mark, and it is the one block here that is
    not the project's own record. */
 .ask-web {
-	margin-top: 18px; padding: 12px 14px;
-	border-left: 2px solid var(--brass, #b08d3f);
-	background: var(--paper-3, #efefed);
+	margin-top: 16px; padding-top: 10px;
+	border-top: 1px solid var(--rule, #e7e7e3);
 }
+.ask-web .ask-kind { font-size: 10px; color: var(--ink-mute, #76766e); }
 .ask-web-list { list-style: none; margin: 6px 0 0; padding: 0; }
 .ask-web-list a {
 	display: flex; align-items: center; justify-content: space-between; gap: 14px;
-	padding: 6px 0; text-decoration: none; color: inherit; font-size: 13.5px;
+	padding: 4px 0; text-decoration: none; color: var(--ink-mute, #76766e); font-size: 12.5px;
 }
 .ask-web-list a:hover .ask-web-name { color: var(--accent, #8a2418); }
 .ask-web-list a:hover .ask-go { color: var(--accent, #8a2418); }

@@ -48,7 +48,9 @@ Jo is a voice drawn from the everyday strength of Bangsamoro women — a daughte
 
 This question is one the project's own records do not cover, so you are answering from the web. Two sentences at most. Say what you found, plainly, and say in a clause that it is from the web rather than from the records this site holds.
 
-Never state a Bangsamoro appropriation, a share of a budget, a seat count, a vote total, or the number, title or date of a Bangsamoro measure. Those live in this project's own records, they are checked there, and a page on the internet is not where they are read from. If that is what was asked, say it is not something you found here and stop.`
+Never state a Bangsamoro appropriation, a share of a budget, a seat count, a vote total, or the number, title or date of a Bangsamoro measure. Those live in this project's own records, they are checked there, and a page on the internet is not where they are read from. If that is what was asked, say it is not something you found here and stop.
+
+Never offer to do more afterwards (no "if you like, I can…"): you can only answer, not send files or draw charts. Where the answer has several parts, put each on its own line starting with "- "; no horizontal rules and no headings.`
 
 /**
  * Whatever the web says, with the pages it says it from.
