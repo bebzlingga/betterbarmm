@@ -22,20 +22,21 @@ export default function ProcurementHome() {
 				chart
 				note='Every bid notice a BARMM government office has posted on PhilGEPS since 2019, when BARMM began: what it set out to buy, its approved budget, and, where PhilGEPS records one, who won the contract and for how much.'
 			>
-				<Figures
-					items={[
-						{ value: regionTotals.notices.toLocaleString('en-PH'), label: 'Bid notices posted' },
-						{ value: peso(regionTotals.abc), label: 'Approved budget' },
-						{ value: regionTotals.awards.toLocaleString('en-PH'), label: 'Contracts awarded' },
-						{ value: peso(regionTotals.contracts), label: 'Awarded amount' },
-					]}
-				/>
 				<YearBars
 					bars={years.map((year) => ({ year, value: regionByYear[year]?.abc ?? 0 }))}
 					caption='Approved budget of the notices BARMM offices posted, by year'
 					note={`${years.at(-1)} is the year so far.`}
 				/>
 			</Masthead>
+
+			<Figures
+				items={[
+					{ value: regionTotals.notices.toLocaleString('en-PH'), label: 'Bid notices posted' },
+					{ value: peso(regionTotals.abc), label: 'Approved budget' },
+					{ value: regionTotals.awards.toLocaleString('en-PH'), label: 'Contracts awarded' },
+					{ value: peso(regionTotals.contracts), label: 'Awarded amount' },
+				]}
+			/>
 
 			<section className='bb-container bb-section'>
 				<EntityExplorer rows={rows} years={years} />

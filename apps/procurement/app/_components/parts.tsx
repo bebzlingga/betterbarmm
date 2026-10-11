@@ -80,15 +80,17 @@ export function YearBars({ bars, caption, note }: { bars: { year: number; value:
 /** A row of headline figures. */
 export function Figures({ items }: { items: { value: string; label: string }[] }) {
 	return (
-		<dl className='mt-12 grid grid-cols-2 gap-x-8 gap-y-6 lg:grid-cols-4'>
-			{items.map((item) => (
-				<div key={item.label} className='border-t border-[var(--rule)] pt-3'>
-					<dd className='num font-[family-name:var(--font-display)] text-[clamp(1.6rem,3.2vw,2.35rem)] font-black leading-none tracking-[-0.03em] text-[var(--ink)]'>
-						{item.value}
-					</dd>
-					<dt className='mt-2 text-[12.5px] text-[var(--ink-3)]'>{item.label}</dt>
-				</div>
-			))}
-		</dl>
+		<section className='bg-[var(--paper-2)]'>
+			<dl className='bb-container grid grid-cols-2 gap-x-8 gap-y-6 py-10 lg:grid-cols-4'>
+				{items.map((item) => (
+					<div key={item.label} className='border-t border-[var(--rule)] pt-3'>
+						<dd className='num font-[family-name:var(--font-display)] text-[clamp(1.6rem,3.2vw,2.35rem)] font-black leading-none tracking-[-0.03em] text-[var(--ink)]'>
+							{item.value}
+						</dd>
+						<dt className='mt-2 text-[12.5px] text-[var(--ink-3)]'>{item.label}</dt>
+					</div>
+				))}
+			</dl>
+		</section>
 	)
 }

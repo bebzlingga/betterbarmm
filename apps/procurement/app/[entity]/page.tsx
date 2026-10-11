@@ -43,18 +43,19 @@ export default async function EntityPage({ params }: { params: Promise<{ entity:
 						: undefined
 				}
 			>
-				<Figures
-					items={[
-						{ value: totals.all.notices.toLocaleString('en-PH'), label: 'Bid notices posted' },
-						{ value: peso(totals.all.abc), label: 'Approved budget' },
-						{ value: totals.all.awards.toLocaleString('en-PH'), label: 'Contracts awarded' },
-						{ value: peso(totals.all.contracts), label: 'Awarded amount' },
-					]}
-				/>
 				{span.length > 1 ? (
 					<YearBars bars={years.map((year) => ({ year, value: totals.byYear[year]?.abc ?? 0 }))} caption='Approved budget of its notices, by year' />
 				) : null}
 			</Masthead>
+
+			<Figures
+				items={[
+					{ value: totals.all.notices.toLocaleString('en-PH'), label: 'Bid notices posted' },
+					{ value: peso(totals.all.abc), label: 'Approved budget' },
+					{ value: totals.all.awards.toLocaleString('en-PH'), label: 'Contracts awarded' },
+					{ value: peso(totals.all.contracts), label: 'Awarded amount' },
+				]}
+			/>
 
 			<div className='bb-container bb-section grid gap-16 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-24'>
 				<section className='min-w-0'>
