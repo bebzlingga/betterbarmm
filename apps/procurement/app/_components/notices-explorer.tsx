@@ -1,0 +1,140 @@
+'use client'
+
+import { CaretLeftIcon, CaretRightIcon, XIcon } from '@phosphor-icons/react'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import type { NoticeRow, Totals } from '../_lib/philgeps'
+import { SearchField, Select } from './controls'
+
+/* Bid notices, newest first, fetched a page at a time from /api/notices. */
+
+type Page = { totals: Totals; page: number; pages: number; rows: NoticeRow[] }
+
+const peso = (n: number) =>
+	n >= 1e9 ? `₱${(n / 1e9).toFixed(2)}B` : n >= 1e6 ? `₱${(n / 1e6).toFixed(1)}M` : `₱${Math.round(n).toLocaleString('en-PH')}`
+
+export function NoticesExplorer({ entity, supplier: initialSupplier = '', years }: { entity?: string; supplier?: string; years: number[] }) {
+	const [query, setQuery] = useState('')
+	const [typed, setTyped] = useState('')
+	const [year, setYear] = useState('')
+	const [awarded, setAwarded] = useState('')
+	const [supplier, setSupplier] = useState(initialSupplier)
+	const [page, setPage] = useState(1)
+	const [data, setData] = useState<Page | null>(null)
+
+	// A short pause before searching, so each keystroke is not a request.
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			setQuery(typed)
+			setPage(1)
+		}, 250)
+		return () => clearTimeout(timer)
+	}, [typed])
+
+	useEffect(() => {
+		const params = new URLSearchParams()
+		if (entity) params.set('entity', entity)
+		if (query) params.set('q', query)
+		if (year) params.set('year', year)
+		if (awarded) params.set('awarded', '1')
+		if (supplier) params.set('supplier', supplier)
+		params.set('page', String(page))
+		const controller = new AbortController()
+		fetch(`/api/notices?${params}`, { signal: controller.signal })
+			.then((r) => r.json())
+			.then(setData)
+			.catch(() => {})
+		return () => controller.abort()
+	}, [entity, query, year, awarded, supplier, page])
+
+	const reset = (fn: () => void) => {
+		fn()
+		setPage(1)
+	}
+
+	return (
+		<div>
+			<div className='grid grid-cols-2 gap-3 pb-6 lg:grid-cols-[minmax(0,26rem)_1fr_10rem_14rem] lg:items-end lg:gap-4 lg:pb-8'>
+				<div className='col-span-2 lg:col-span-1'>
+					<SearchField value={typed} onChange={setTyped} placeholder='Title, reference, category or supplier' />
+				</div>
+				<span className='hidden lg:block' />
+				<Select label='Year' value={year} onChange={(v) => reset(() => setYear(v))} options={[['', 'All years'], ...[...years].reverse().map((y): [string, string] => [String(y), String(y)])]} />
+				<Select label='Show' value={awarded} onChange={(v) => reset(() => setAwarded(v))} options={[['', 'All notices'], ['1', 'Awarded only']]} />
+			</div>
+
+			{supplier ? (
+				<button
+					type='button'
+					onClick={() => reset(() => setSupplier(''))}
+					className='mb-4 inline-flex cursor-pointer items-center gap-2 bg-[var(--paper-2)] px-3 py-1.5 text-[13px] text-[var(--ink)]'
+				>
+					Won by {supplier}
+					<XIcon size={12} weight='bold' aria-label='Clear' />
+				</button>
+			) : null}
+
+			<p className='mb-2 border-y border-[var(--rule-soft)] py-3 text-right text-[13px] text-[var(--ink-3)]'>
+				{data ? (
+					<>
+						<span className='num font-semibold text-[var(--ink)]'>{data.totals.notices.toLocaleString('en-PH')}</span> notices ·{' '}
+						<span className='num font-semibold text-[var(--ink)]'>{peso(data.totals.abc)}</span> approved budget ·{' '}
+						<span className='num font-semibold text-[var(--ink)]'>{data.totals.awards.toLocaleString('en-PH')}</span> awards,{' '}
+						<span className='num font-semibold text-[var(--ink)]'>{peso(data.totals.contracts)}</span>
+					</>
+				) : (
+					'Loading…'
+				)}
+			</p>
+
+			<ul className={data ? '' : 'opacity-50'}>
+				{data?.rows.map((n) => (
+					<li key={`${n.ref}-${n.date}`} className='grid gap-x-8 gap-y-2 border-b border-[var(--rule)] py-4 sm:grid-cols-[minmax(0,1fr)_auto]'>
+						<div className='min-w-0'>
+							<p className='text-[14.5px] font-semibold leading-6 text-[var(--ink)]'>{n.title ?? n.category ?? 'Untitled notice'}</p>
+							<p className='mt-1 text-[12px] leading-5 text-[var(--ink-3)]'>
+								{[n.date, `Ref. ${n.ref}`, n.title && n.category, n.mode].filter(Boolean).join(' · ')}
+								{entity ? null : (
+									<>
+										{' · '}
+										<Link href={`/${n.entitySlug}`} className='rule-link'>
+											{n.entityName}
+										</Link>
+									</>
+								)}
+							</p>
+							{n.awards.map((a, i) => (
+								<p key={i} className='mt-2 text-[13px] leading-5 text-[var(--ink-2)]'>
+									Awarded to{' '}
+									<button type='button' onClick={() => reset(() => setSupplier(a.awardee))} className='rule-link cursor-pointer font-semibold'>
+										{a.awardee}
+									</button>
+									{a.amount != null ? <span className='num'> · {peso(a.amount)}</span> : null}
+									{a.date ? <span className='text-[var(--ink-3)]'> · {a.date}</span> : null}
+								</p>
+							))}
+						</div>
+						<div className='sm:text-right'>
+							<p className='num text-[14.5px] text-[var(--ink)]'>{n.abc == null ? '—' : peso(n.abc)}</p>
+							<p className='mt-1 text-[11.5px] text-[var(--ink-3)]'>{n.status ?? 'Approved budget'}</p>
+						</div>
+					</li>
+				))}
+			</ul>
+
+			{data && data.pages > 1 ? (
+				<div className='mt-6 flex items-center justify-end gap-3 text-[13px] text-[var(--ink-3)]'>
+					<button type='button' disabled={page <= 1} onClick={() => setPage((p) => p - 1)} className='inline-flex size-9 cursor-pointer items-center justify-center border border-[var(--rule)] disabled:cursor-default disabled:opacity-40' aria-label='Previous page'>
+						<CaretLeftIcon size={14} />
+					</button>
+					<span className='num'>
+						Page {data.page.toLocaleString('en-PH')} of {data.pages.toLocaleString('en-PH')}
+					</span>
+					<button type='button' disabled={page >= data.pages} onClick={() => setPage((p) => p + 1)} className='inline-flex size-9 cursor-pointer items-center justify-center border border-[var(--rule)] disabled:cursor-default disabled:opacity-40' aria-label='Next page'>
+						<CaretRightIcon size={14} />
+					</button>
+				</div>
+			) : null}
+		</div>
+	)
+}
