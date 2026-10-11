@@ -91,7 +91,7 @@ export function Figures({ title, note, items }: { title: string; note: string; i
 					<p className='max-w-[38rem] text-[14px] leading-6 text-[var(--ink-3)] lg:text-right'>{note}</p>
 				</div>
 			</div>
-			<dl className='bb-container grid grid-cols-2 gap-x-8 gap-y-6 pb-12 pt-8 lg:grid-cols-4'>
+			<dl className='bb-container grid grid-cols-2 gap-x-8 gap-y-6 pb-12 pt-10 lg:grid-cols-4 lg:pt-14'>
 				{items.map((item) => (
 					<div key={item.label} className='border-t border-[var(--rule)] pt-3'>
 						<dd className='num font-[family-name:var(--font-display)] text-[clamp(1.6rem,3.2vw,2.35rem)] font-black leading-none tracking-[-0.03em] text-[var(--ink)]'>
