@@ -310,6 +310,15 @@ export function AskDock() {
 		if (open) foot.current?.scrollIntoView({ block: 'end' })
 	}, [turns, asking, open])
 
+	// The page under the sheet holds still while Jo is open.
+	useEffect(() => {
+		if (!open) return
+		const locked = [document.documentElement, document.body]
+		const before = locked.map((el) => el.style.overflow)
+		for (const el of locked) el.style.overflow = 'hidden'
+		return () => locked.forEach((el, i) => (el.style.overflow = before[i]!))
+	}, [open])
+
 	// Any page can hand Jo a question: dispatch "betterbarmm:ask" with the
 	// question as its detail, and the dock opens and asks it.
 	const askRef = useRef<(text: string) => void>(() => {})
@@ -572,12 +581,21 @@ function grouped(sources: Source[]): [string, Source[]][] {
 
 const BULLET = /^\s*[-*\u2022]\s+/
 
-/** `**bold**`, with whatever else the model fenced or hashed taken off. */
+/** Amounts, shares and counts in the thousands: the figures a reader scans for. */
+const FIGURE = /(₱\s?[\d,]+(?:\.\d+)?(?:\s(?:million|billion|trillion))?|\b\d+(?:\.\d+)?%|\b\d{1,3}(?:,\d{3})+(?:\.\d+)?\b)/g
+
+/** Figures set semibold wherever they fall in a run of plain text. */
+function figures(text: string, key: number) {
+	return text.split(FIGURE).map((part, at) => (at % 2 ? <strong key={`${key}-${at}`}>{part}</strong> : part))
+}
+
+/** `**bold**`, with whatever else the model fenced or hashed taken off, and
+    the figures in the rest set semibold too. */
 function marked(line: string) {
 	return line
 		.replace(/^#{1,6}\s+/, '')
 		.split(/\*\*(.+?)\*\*/g)
-		.map((part, at) => (at % 2 ? <strong key={at}>{part}</strong> : part))
+		.flatMap((part, at) => (at % 2 ? [<strong key={at}>{part}</strong>] : figures(part, at)))
 }
 
 /**
@@ -773,7 +791,7 @@ const CSS = `
    head with a screen of nothing under it. Auto block margins rather than
    justify-content: center — centred content taller than the box is clipped at
    the top with no way to scroll back to it, and this block is tall on a phone. */
-.ask-scroll { flex: 1; min-height: 0; overflow-y: auto; padding: 28px 0 8px; display: flex; flex-direction: column; }
+.ask-scroll { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 28px 0 8px; display: flex; flex-direction: column; }
 .ask-scroll[data-empty='true'] > .ask-thread { margin-block: auto; }
 .ask-thread { display: flex; flex-direction: column; gap: 26px; }
 
@@ -1031,7 +1049,7 @@ const CSS = `
 .ask-note { font-size: 12.5px; line-height: 1.45; color: var(--ink-mute, #76766e); }
 .ask-go { flex: none; color: var(--ink-mute, #76766e); transition: transform 200ms ease, color 200ms ease; }
 
-.ask-foot { flex: none; display: flex; flex-direction: column; gap: 8px; padding: 12px 0 18px; border-top: 1px solid var(--rule-soft, #f1f1ee); }
+.ask-foot { flex: none; display: flex; flex-direction: column; gap: 8px; padding: 12px 0 18px; }
 .ask-error { margin: 0 0 8px; font-size: 12.5px; color: var(--accent, #8a2418); }
 
 /* One pill, and the arrow sits inside it: the button is taken out of the flow
@@ -1057,9 +1075,9 @@ const CSS = `
 	position: absolute; right: 9px; bottom: 9px;
 	display: inline-flex; align-items: center; justify-content: center;
 	width: 36px; height: 36px; padding: 0; border: 0; border-radius: 999px;
-	background: var(--accent, #8a2418); color: #fff; cursor: pointer;
+	background: transparent; color: var(--accent, #8a2418); cursor: pointer;
 }
-.ask-send:hover:not(:disabled) { filter: brightness(1.1); }
+.ask-send:hover:not(:disabled) { color: var(--ink, #171715); }
 .ask-send:disabled { opacity: 0.4; cursor: default; }
 /* Disabled while it works, but not dimmed: the spinner is the one thing on
    the screen saying anything is happening. */
