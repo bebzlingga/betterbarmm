@@ -28,7 +28,6 @@ import { LguDisclosure } from '../_components/lgu-disclosure'
 import { NtaChart } from '../_components/nta-chart'
 import { LocatorMap } from '../_components/locator-map'
 import { Official } from '../_components/official'
-import { finances, row } from '@betterbarmm/lgu-data/fiscal'
 
 export function generateStaticParams() {
 	// Cotabato City's area page is a list of one thing named after the thing.
@@ -81,8 +80,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 	// The opening paragraph, as an encyclopedia would begin: what the place is,
 	// then its people, land and units, every figure the directory's own.
 	const capital = province.municipalities.find((unit) => unit.isCapital)
-	const ntaYear = finances.years.at(-1)!
-	const nta = (row(finances, province.slug, ntaYear)?.nta as number | null | undefined) ?? null
 	const area = lguAreas.find((one) => one.slug === province.slug)
 	const towns = province.municipalities.length - cities.length
 	const units = [
@@ -98,8 +95,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 			: null,
 		`It has ${units}, with ${formatNumber(province.barangayCount)} barangays between them${province.areaKm2 ? `, across ${formatArea(province.areaKm2)}` : ''}.`,
 		area ? `Its voters elect ${area.seats} of the 80 members of the Bangsamoro Parliament.` : null,
-		biggest.length > 1 ? `Its most populous are ${biggest.slice(0, -1).map((unit) => unit.name).join(', ')} and ${biggest.at(-1)!.name}.` : null,
-		nta ? `In FY ${ntaYear} the provincial government received ${nta >= 1e9 ? `₱${(nta / 1e9).toFixed(2)} billion` : `₱${(nta / 1e6).toFixed(1)} million`} in National Tax Allotment, as it reported to BLGF.` : null,
 	]
 		.filter(Boolean)
 		.join(' ')
@@ -130,10 +125,8 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 			>
 				{history ? (
 					<div className='mt-12'>
-						<div className='gap-20 text-[15px] leading-7 text-[var(--ink-2)] lg:columns-2 [&>p+p]:mt-4'>
-							{history.paragraphs.map((paragraph) => (
-								<p key={paragraph.slice(0, 40)}>{paragraph}</p>
-							))}
+						<div className='grid gap-6 text-[15px] leading-7 text-[var(--ink-2)] lg:grid-cols-2 lg:gap-20'>
+							<p>{history.paragraphs.join(' ')}</p>
 							<p>{lead}</p>
 						</div>
 					</div>
