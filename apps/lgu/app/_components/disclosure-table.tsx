@@ -52,7 +52,7 @@ export function DisclosureTable({
 							onClick={() => setYear(y)}
 							className={`num cursor-pointer px-3 py-1.5 font-mono text-[11px] font-semibold tracking-[0.1em] transition ${
 								y === year
-									? 'bg-[var(--paper-2)] text-[var(--ink)]'
+									? 'bg-[var(--accent)] text-white'
 									: 'text-[var(--ink-3)] hover:text-[var(--ink)]'
 							}`}
 						>
