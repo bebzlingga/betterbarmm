@@ -38,8 +38,7 @@ const workspaces = [
 	{ label: 'Election', href: 'https://election.betterbarmm.com', open: true },
 	{ label: 'Legislation', href: 'https://legislation.betterbarmm.com', open: true },
 	{ label: 'Budget', href: 'https://budget.betterbarmm.com', open: true },
-	// LGU hidden for now.
-	// { label: 'Local government', href: 'https://lgu.betterbarmm.com', open: true },
+	{ label: 'Local government', href: 'https://lgu.betterbarmm.com', open: true },
 ] as const
 
 const secondaryLinks = [{ key: 'about', href: '/about', label: 'About' }] as const
