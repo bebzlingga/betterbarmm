@@ -13,6 +13,7 @@ import {
 } from '@betterbarmm/travel-data'
 import { Caution, GateList, TravelMasthead, SectionHead } from '../../_components/travel-parts'
 import { TownMap } from '../../_components/town-map'
+import { LocatorMap } from '../../_components/locator-map'
 
 /** Every directory unit gets a page, researched or not — an empty page says so. */
 export function generateStaticParams() {
@@ -122,11 +123,14 @@ export default async function TownPage({ params }: { params: Promise<{ area: str
 				</Rise>
 			</TravelMasthead>
 
+			<div className='bb-container bb-section grid gap-16 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-24'>
+				<div className='min-w-0'>
+
 			{town ? (
 				<>
 					{/* ---- Where to go, what to do -------------------------------- */}
-					<section className='bb-section'>
-						<div className='bb-container'>
+					<section className='mt-20 first:mt-0'>
+						<div>
 							<SectionHead
 								index='01'
 								eyebrow='Where to go'
@@ -135,7 +139,7 @@ export default async function TownPage({ params }: { params: Promise<{ area: str
 								size='sm'
 							/>
 
-							<div className='mt-10 grid gap-10 lg:grid-cols-[1.35fr_1fr] lg:gap-14'>
+							<div className='mt-10'>
 								<div className='grid content-start gap-5 md:grid-cols-2'>
 									{town.whereToGo.map((spot) => (
 										<article key={spot.name} className='tv-card'>
@@ -152,24 +156,17 @@ export default async function TownPage({ params }: { params: Promise<{ area: str
 									) : null}
 								</div>
 
-								<div className='grid content-start gap-8'>
-									<GateList label='What to do' items={town.whatToDo} />
-									<div>
-										<p className='bb-label'>Getting there</p>
-										<p className='mt-3 text-[14px] leading-7 text-[var(--ink-2)]'>{town.gettingThere}</p>
-									</div>
-									{town.caution ? <Caution label='Before you go'>{town.caution}</Caution> : null}
-								</div>
+
 							</div>
 						</div>
 					</section>
 
 					{/* ---- Food, eating, sleeping ---------------------------------- */}
-					<section className='bb-section bb-section-top'>
-						<div className='bb-container'>
+					<section className='mt-20 first:mt-0'>
+						<div>
 							<SectionHead index='02' eyebrow='Food and lodging' title='What to eat,' titleMuted='and where to sleep.' size='sm' />
 
-							<div className='mt-10 grid gap-10 lg:grid-cols-3 lg:gap-14'>
+							<div className='mt-10 grid gap-10 md:grid-cols-2 xl:grid-cols-3 xl:gap-12'>
 								<div>
 									<p className='bb-label'>Local food</p>
 									{town.food.length ? (
@@ -226,8 +223,8 @@ export default async function TownPage({ params }: { params: Promise<{ area: str
 			) : null}
 
 			{/* ---- The neighbours --------------------------------------------- */}
-			<section className='bb-section'>
-				<div className='bb-container'>
+			<section className='mt-20 first:mt-0'>
+				<div>
 					<SectionHead
 						index={town ? '03' : '01'}
 						eyebrow={area.name}
@@ -240,8 +237,10 @@ export default async function TownPage({ params }: { params: Promise<{ area: str
 						}
 						size='sm'
 					/>
-					<div className='mt-10 grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-14'>
-						<TownMap area={area.slug} focus={unit.slug} />
+					<div className='mt-10 grid gap-10'>
+						<div className='max-w-[30rem]'>
+							<TownMap area={area.slug} focus={unit.slug} />
+						</div>
 						<div className='flex flex-wrap content-start gap-2.5'>
 							{siblings.map(({ unit: other }) => (
 								<Link key={other.slug} href={`/${area.slug}/${other.slug}`} className='bb-btn bb-btn-ghost'>
@@ -252,6 +251,22 @@ export default async function TownPage({ params }: { params: Promise<{ area: str
 					</div>
 				</div>
 			</section>
+				</div>
+
+				<aside className='order-first grid content-start gap-8 lg:order-none'>
+					<LocatorMap areaSlug={area.slug} unit={{ psgc: unit.psgc, name: unit.name }} label={unit.name} />
+					{town ? (
+						<>
+									<GateList label='What to do' items={town.whatToDo} />
+									<div>
+										<p className='bb-label'>Getting there</p>
+										<p className='mt-3 text-[14px] leading-7 text-[var(--ink-2)]'>{town.gettingThere}</p>
+									</div>
+									{town.caution ? <Caution label='Before you go'>{town.caution}</Caution> : null}
+						</>
+					) : null}
+				</aside>
+			</div>
 		</>
 	)
 }

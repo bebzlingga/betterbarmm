@@ -17,13 +17,13 @@ import {
 	PLACE_KIND_LABEL,
 	pointForArea,
 	pointsInArea,
-	townShapes,
 	townsInArea,
 	travelAreas,
 } from '@betterbarmm/travel-data'
 import { Caution, Footing, GateList, TravelMasthead, SectionHead } from '../_components/travel-parts'
 import { TravelMap } from '../_components/travel-map'
 import { TownMap } from '../_components/town-map'
+import { LocatorMap } from '../_components/locator-map'
 import { PhotoFigure, PhotoStrip } from '../_components/photo-figure'
 import { photoForPlace, photosForArea } from '../_lib/media'
 
@@ -123,10 +123,13 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 				</Rise>
 			</TravelMasthead>
 
+			<div className='bb-container bb-section grid gap-16 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-24'>
+				<div className='min-w-0'>
+
 			{/* ---- What the place is ---------------------------------------- */}
-			<section className='bb-section'>
-				<div className='bb-container'>
-					<div className='grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-16'>
+			<section>
+				<div>
+					<div>
 						<div className='bb-prose max-w-2xl'>
 							{area.intro.map((paragraph, index) => (
 								<p key={paragraph.slice(0, 40)} className={index === 0 ? 'bb-dropcap' : undefined}>
@@ -135,37 +138,14 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 							))}
 						</div>
 
-						<div className='grid content-start gap-5'>
-							{lead ? <PhotoFigure photo={lead} priority size='inset' /> : null}
 
-							<Caution label='Security in this area'>{area.safety}</Caution>
-
-							{areaFestivals.length ? (
-								<div className='border border-[var(--rule)] p-5'>
-									<p className='bb-label'>What is on</p>
-									<div className='mt-4 grid gap-4'>
-										{areaFestivals.map((festival) => (
-											<div key={festival.name}>
-												<p className='item-title'>{festival.name}</p>
-												<p className='mt-1 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
-													{festival.when}
-												</p>
-												<p className='mt-2 text-[13.5px] leading-6 text-[var(--ink-3)]'>
-													{festival.what}
-												</p>
-											</div>
-										))}
-									</div>
-								</div>
-							) : null}
-						</div>
 					</div>
 				</div>
 			</section>
 
 			{/* ---- Getting there and around --------------------------------- */}
-			<section className='bb-section bb-section-top'>
-				<div className='bb-container'>
+			<section className='mt-20'>
+				<div>
 					<SectionHead
 						index='01'
 						eyebrow='The journey'
@@ -215,8 +195,8 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 
 			{/* ---- The gallery ---------------------------------------------- */}
 			{gallery.length ? (
-				<section className='bb-section'>
-					<div className='bb-container'>
+				<section className='mt-20'>
+					<div>
 						<p className='bb-label'>{area.name}, photographed</p>
 						<div className='mt-8'>
 							<PhotoStrip photos={gallery} />
@@ -224,8 +204,8 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 					</div>
 				</section>
 			) : (
-				<section className='bb-section'>
-					<div className='bb-container'>
+				<section className='mt-20'>
+					<div>
 						<Caution label='No photographs of this area'>
 							This guide holds no freely licensed photograph of {area.name} that it could use and
 							credit properly, so it shows none rather than borrowing a picture of somewhere else.
@@ -240,8 +220,8 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 			)}
 
 			{/* ---- Town by town ---------------------------------------------- */}
-			<section className='bb-section'>
-				<div className='bb-container'>
+			<section className='mt-20'>
+				<div>
 					<SectionHead
 						index='02'
 						eyebrow='Town by town'
@@ -249,14 +229,16 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 						titleMuted='and what each one has.'
 						size='sm'
 					/>
-					<div className={`mt-10 grid gap-10 lg:gap-14 ${townShapes(area.slug) ? 'lg:grid-cols-[1fr_1.2fr]' : ''}`}>
-						<TownMap area={area.slug} />
-						<ul className='grid content-start gap-x-8 sm:grid-cols-2'>
+					<div className='mt-10 grid gap-10'>
+						<div className='max-w-[30rem]'>
+							<TownMap area={area.slug} />
+						</div>
+						<ul className='grid content-start gap-x-8 sm:grid-cols-2 xl:grid-cols-3'>
 							{towns.map(({ unit, town }) => (
 								<li key={unit.slug} className='border-b border-[var(--rule-soft)]'>
-									<Link href={`/${area.slug}/${unit.slug}`} className='group flex items-baseline justify-between gap-4 py-3'>
-										<span className='item-title transition group-hover:text-[var(--brass)]'>{unit.name}</span>
-										<span className='font-mono text-[9.5px] uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+									<Link href={`/${area.slug}/${unit.slug}`} className='group block py-3'>
+										<span className='block font-semibold text-[var(--ink)] transition group-hover:text-[var(--accent)]'>{unit.name}</span>
+										<span className='mt-0.5 block font-mono text-[9.5px] uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 											{!town ? 'Not yet researched' : town.coverage === 'none' ? 'Little found online' : `${town.whereToGo.length} ${town.whereToGo.length === 1 ? 'place' : 'places'} · ${town.stay.length} ${town.stay.length === 1 ? 'stay' : 'stays'}`}
 										</span>
 									</Link>
@@ -269,8 +251,8 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 
 			{/* ---- Places ---------------------------------------------------- */}
 			{areaPlaces.length ? (
-				<section className='bb-section'>
-					<div className='bb-container'>
+				<section className='mt-20'>
+					<div>
 						<SectionHead
 							index='03'
 							eyebrow='What there is to see'
@@ -332,8 +314,8 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 
 			{/* ---- Where to sleep -------------------------------------------- */}
 			{lodging ? (
-				<section className='bb-section bb-section-top'>
-					<div className='bb-container'>
+				<section className='mt-20'>
+					<div>
 						<SectionHead
 							index={areaPlaces.length ? '04' : '03'}
 							eyebrow='Where to sleep'
@@ -411,8 +393,8 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 
 			{/* ---- Routes ---------------------------------------------------- */}
 			{routes.length ? (
-				<section className='bb-section'>
-					<div className='bb-container'>
+				<section className='mt-20'>
+					<div>
 						<SectionHead
 							index='05'
 							eyebrow='Putting it together'
@@ -443,8 +425,8 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 			) : null}
 
 			{/* ---- Onward ---------------------------------------------------- */}
-			<section className='bb-section'>
-				<div className='bb-container'>
+			<section className='mt-20'>
+				<div>
 					<OkirRule />
 					<div className='mt-10'>
 						<p className='bb-label'>The other areas</p>
@@ -464,6 +446,34 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 					</div>
 				</div>
 			</section>
+				</div>
+
+				<aside className='order-first grid content-start gap-6 lg:order-none'>
+					<LocatorMap areaSlug={area.slug} label={area.name} />
+							{lead ? <PhotoFigure photo={lead} priority size='inset' /> : null}
+
+							<Caution label='Security in this area'>{area.safety}</Caution>
+
+							{areaFestivals.length ? (
+								<div className='border border-[var(--rule)] p-5'>
+									<p className='bb-label'>What is on</p>
+									<div className='mt-4 grid gap-4'>
+										{areaFestivals.map((festival) => (
+											<div key={festival.name}>
+												<p className='item-title'>{festival.name}</p>
+												<p className='mt-1 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
+													{festival.when}
+												</p>
+												<p className='mt-2 text-[13.5px] leading-6 text-[var(--ink-3)]'>
+													{festival.what}
+												</p>
+											</div>
+										))}
+									</div>
+								</div>
+							) : null}
+				</aside>
+			</div>
 		</>
 	)
 }
