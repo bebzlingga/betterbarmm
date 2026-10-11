@@ -215,7 +215,8 @@ export function LguFinances({
 						}
 					>
 						<YearTable
-							years={years}
+							// The latest five years; the full run is on LGU finances.
+							years={years.slice(-5)}
 							lines={[
 								['Local taxes and fees', (y) => peso(r(y).localSources)],
 								['National Tax Allotment', (y) => peso(r(y).nta)],
