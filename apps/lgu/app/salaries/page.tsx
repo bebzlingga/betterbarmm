@@ -21,25 +21,94 @@ export const metadata: Metadata = {
    the unit's own ordinance within the cap on personal services.
    ============================================================ */
 
-type Pay = { position: string; level: string; grade: string; cite: string; note?: string }
+/* Step 1 of the 2026 salary schedule, EO 64 s. 2024, third tranche (also
+   DBM NBC 601 and Annex A-1 of LBC 172): the most an LGU may pay in 2026. */
+const SG_2026: Record<number, number> = {
+	10: 26_917,
+	14: 38_764,
+	24: 102_603,
+	25: 116_643,
+	26: 131_807,
+	27: 148_940,
+	28: 167_129,
+	30: 210_718,
+}
+
+type Pay = {
+	position: string
+	level: string
+	grade: number
+	atLeast?: boolean
+	/** Representation allowance a month; the transportation allowance is the same again. LBC 157, 1st class. */
+	ra: number
+	cite: string
+	note?: string
+}
 
 const ELECTED: Pay[] = [
-	{ level: 'Province', position: 'Governor', grade: 'At least SG 30', cite: 's. 517' },
-	{ level: 'Province', position: 'Vice-Governor', grade: 'SG 28', cite: 's. 519' },
-	{ level: 'Province', position: 'Sangguniang Panlalawigan member', grade: 'At least SG 27', cite: 's. 522' },
-	{ level: 'City', position: 'City Mayor', grade: 'At least SG 30', cite: 's. 505' },
-	{ level: 'City', position: 'City Vice-Mayor', grade: 'SG 26', cite: 's. 507', note: 'SG 28 in a highly urbanised city' },
-	{ level: 'City', position: 'Sangguniang Panlungsod member', grade: 'SG 25', cite: 's. 510', note: 'SG 27 in a highly urbanised city' },
-	{ level: 'Municipality', position: 'Municipal Mayor', grade: 'At least SG 27', cite: 's. 485' },
-	{ level: 'Municipality', position: 'Municipal Vice-Mayor', grade: 'SG 25', cite: 's. 487' },
-	{ level: 'Municipality', position: 'Sangguniang Bayan member', grade: 'At least SG 24', cite: 's. 490' },
+	{ level: 'Province', position: 'Governor', grade: 30, atLeast: true, ra: 12_500, cite: 's. 517' },
+	{ level: 'Province', position: 'Vice-Governor', grade: 28, ra: 11_500, cite: 's. 519' },
+	{ level: 'Province', position: 'Sangguniang Panlalawigan member', grade: 27, atLeast: true, ra: 9_500, cite: 's. 522' },
+	{ level: 'City', position: 'City Mayor', grade: 30, atLeast: true, ra: 11_500, cite: 's. 505' },
+	{ level: 'City', position: 'City Vice-Mayor', grade: 26, ra: 10_000, cite: 's. 507', note: 'SG 28 in a highly urbanised city' },
+	{ level: 'City', position: 'Sangguniang Panlungsod member', grade: 25, ra: 8_500, cite: 's. 510', note: 'SG 27 in a highly urbanised city' },
+	{ level: 'Municipality', position: 'Municipal Mayor', grade: 27, atLeast: true, ra: 9_000, cite: 's. 485' },
+	{ level: 'Municipality', position: 'Municipal Vice-Mayor', grade: 25, ra: 8_550, cite: 's. 487' },
+	{ level: 'Municipality', position: 'Sangguniang Bayan member', grade: 24, atLeast: true, ra: 7_650, cite: 's. 490' },
+]
+
+/* What every salaried official may also receive, at the ceiling DBM sets; the
+   sanggunian decides whether, and may pay less, uniformly. */
+const PERA = 2_000
+const CASH_GIFT = 5_000
+const PEI = 5_000
+const MEDICAL = 7_000
+
+/** Salary for 12 months and the two bonuses, RATA and PERA for 12, and the yearly grants. */
+const yearly = (row: Pay) => SG_2026[row.grade] * 14 + row.ra * 2 * 12 + PERA * 12 + CASH_GIFT + PEI + MEDICAL
+
+const peso = (value: number) => `₱${value.toLocaleString('en-PH')}`
+
+const BENEFITS: { benefit: string; amount: string; source: string }[] = [
+	{ benefit: 'Personnel Economic Relief Allowance (PERA)', amount: '₱2,000 a month', source: 'DBM Budget Circular 2009-3' },
+	{
+		benefit: 'Representation and transportation allowance (RATA)',
+		amount: 'Up to the rate for the post and the unit’s class, each allowance; representation only if given a government vehicle',
+		source: 'DBM Local Budget Circular 157 (2024)',
+	},
+	{ benefit: 'Mid-year bonus', amount: 'One month’s basic pay, from 15 May', source: 'DBM Budget Circular 2017-2' },
+	{ benefit: 'Year-end bonus', amount: 'One month’s basic pay, with the November payroll', source: 'DBM Budget Circulars 2016-4 and 2024-3' },
+	{ benefit: 'Cash gift', amount: '₱5,000, with the year-end bonus', source: 'DBM Budget Circular 2016-4' },
+	{ benefit: 'Productivity Enhancement Incentive (PEI)', amount: 'Up to ₱5,000 (FY 2025)', source: 'DBM Circular Letter 2025-13; Budget Circular 2017-4' },
+	{ benefit: 'Medical allowance', amount: 'Up to ₱7,000 a year', source: 'EO 64 s. 2024; DBM Budget Circular 2024-6' },
+	{
+		benefit: 'Uniform or clothing allowance',
+		amount: 'Up to ₱7,000 a year in FY 2024; later years follow each year’s budget act',
+		source: 'DBM Budget Circular 2024-1',
+	},
+	{
+		benefit: 'Performance-Based Bonus',
+		amount: 'Up to 65% of a month’s pay, only if the unit enrols and qualifies (a Seal of Good Local Governance is required)',
+		source: 'DILG-DBM JMC 2025-001',
+	},
+]
+
+/* Highest share of the national schedule a unit may pay by default, by income
+   class (EO 64 s. 4; LBC 160, 165, 172). Any unit may instead adopt the full
+   schedule, if it applies it to every post and stays within its payroll cap. */
+const CLASSES = [
+	{ cls: '1st class', pc: '100%', mun: '90%' },
+	{ cls: '2nd class', pc: '95%', mun: '85%' },
+	{ cls: '3rd class', pc: '90%', mun: '80%' },
+	{ cls: '4th class', pc: '85%', mun: '75%' },
+	{ cls: '5th class', pc: '80%', mun: '70%' },
 ]
 
 const BARANGAY: { position: string; pay: string }[] = [
-	{ position: 'Punong Barangay', pay: 'At least ₱5,000 a month, up to the first step of SG 14' },
+	{ position: 'Punong Barangay', pay: 'At least ₱5,000 a month, and up to ₱38,764 (the first step of SG 14 in 2026)' },
 	{
 		position: 'Sangguniang Barangay members, the secretary, the treasurer and the SK chairperson',
-		pay: 'At least ₱3,000 a month, up to the first step of SG 10',
+		pay: 'At least ₱3,000 a month, and up to ₱26,917 (the first step of SG 10 in 2026)',
 	},
 	{ position: 'Barangay tanods and purok leaders', pay: 'At least ₱1,000 a month' },
 	{
@@ -47,7 +116,10 @@ const BARANGAY: { position: string; pay: string }[] = [
 		pay: 'At least ₱1,000 a month',
 	},
 	{ position: 'Lupon tagapamayapa members', pay: 'An honorarium per hearing, no more than ₱2,000 a month in all' },
-	{ position: 'All of the above', pay: 'A year-end bonus of at least ₱1,000' },
+	{
+		position: 'All of the above',
+		pay: 'A year-end bonus of at least ₱1,000. The barangay council may instead grant one month’s honorarium and the ₱5,000 cash gift',
+	},
 ]
 
 const BARANGAY_BENEFITS = [
@@ -69,6 +141,8 @@ const SK_BENEFITS = [
 const TOC: TocItem[] = [
 	{ id: 'introduction', label: 'How local officials are paid', depth: 1 },
 	{ id: 'elected', label: 'Elected officials', depth: 1 },
+	{ id: 'allowances', label: 'Allowances and bonuses', depth: 1 },
+	{ id: 'class', label: 'Why one town pays less than another', depth: 1 },
 	{ id: 'barangay', label: 'Barangay officials and workers', depth: 1 },
 	{ id: 'limits', label: 'What limits the payroll', depth: 1 },
 	{ id: 'benefits', label: 'Benefits', depth: 1 },
@@ -118,7 +192,7 @@ export default function SalariesPage() {
 			<DocLayout
 				toc={TOC}
 				narrow
-				summary='The Bangsamoro Local Governance Code sets the salary grade of every elected local official and the least a barangay official must be paid. The peso amount follows the national salary schedule, and each local government fixes it by ordinance, within a cap on how much of its income may go to salaries.'
+				summary='The Bangsamoro Local Governance Code sets the salary grade of every elected local official and the least a barangay official must be paid. The peso amount follows the national salary schedule: in 2026 a governor or city mayor may be paid up to ₱210,718 a month, a municipal mayor up to ₱148,940. Each local government fixes its own rates by ordinance, within a cap on how much of its income may go to salaries.'
 			>
 				<Section id='introduction'>
 					<p className={P}>
@@ -137,16 +211,19 @@ export default function SalariesPage() {
 
 				<Section id='elected'>
 					<p className={P}>
-						The salary grade each elected post is paid at. “At least” means the Code sets a floor and the unit may
-						pay more.
+						The most each elected post may be paid in 2026: its salary grade on the national schedule, and its
+						representation and transportation allowance (RATA) at the rate for a first class unit. The yearly
+						figure adds the two bonuses, PERA and the other yearly grants below, each at its ceiling.
 					</p>
 					<div className='mt-6 overflow-x-auto'>
-						<table className={TABLE}>
+						<table className='w-full min-w-[44rem] border-collapse text-left text-[14px]'>
 							<thead>
 								<tr className={HEAD}>
 									<th className={TH}>Position</th>
-									<th className={TH}>Level</th>
 									<th className={`${TH} text-right`}>Salary grade</th>
+									<th className={`${TH} text-right`}>Salary a month</th>
+									<th className={`${TH} text-right`}>RATA a month</th>
+									<th className={`${TH} text-right`}>A year, at most</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -155,16 +232,97 @@ export default function SalariesPage() {
 										<td className={`${TD} font-medium text-[var(--ink)]`}>
 											{row.position}
 											<span className='block text-[12.5px] font-normal text-[var(--ink-3)]'>
-												{row.note ? `${row.note} · ` : ''}Code {row.cite}
+												{row.level} · {row.note ? `${row.note} · ` : ''}Code {row.cite}
 											</span>
 										</td>
-										<td className={TD}>{row.level}</td>
-										<td className={`${TD} whitespace-nowrap text-right font-semibold text-[var(--ink)]`}>{row.grade}</td>
+										<td className={`${TD} whitespace-nowrap text-right`}>
+											{row.atLeast ? 'At least ' : ''}SG {row.grade}
+										</td>
+										<td className={`${TD} num whitespace-nowrap text-right font-semibold text-[var(--ink)]`}>
+											{peso(SG_2026[row.grade])}
+										</td>
+										<td className={`${TD} num whitespace-nowrap text-right`}>{peso(row.ra * 2)}</td>
+										<td className={`${TD} num whitespace-nowrap text-right font-semibold text-[var(--accent)]`}>
+											{peso(yearly(row))}
+										</td>
 									</tr>
 								))}
 							</tbody>
 						</table>
 					</div>
+					<p className='mt-4 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+						Salary is step 1 of the 2026 schedule (Executive Order 64, s. 2024, third tranche); a unit may move to it
+						only after a year on the 2025 rates, so many still pay less. RATA is the representation and the
+						transportation allowance together, at the first class rate (DBM LBC 157); a city counts as a component
+						city. A year, at most, is 14 months’ salary, 12 of RATA and PERA, the ₱5,000 cash gift, a ₱5,000 PEI and
+						the ₱7,000 medical allowance; it leaves out the clothing allowance and any Performance-Based Bonus.
+					</p>
+				</Section>
+
+				<Section id='allowances'>
+					<p className={P}>
+						On top of the salary, the national rules let a local government pay its officials and employees the
+						allowances and bonuses below. Each is a ceiling: the sanggunian decides whether to pay it, from the
+						unit’s own funds and within its payroll cap, and may pay less if it pays everyone the same rate.
+					</p>
+					<div className='mt-6 overflow-x-auto'>
+						<table className={TABLE}>
+							<thead>
+								<tr className={HEAD}>
+									<th className={TH}>Benefit</th>
+									<th className={TH}>Amount</th>
+									<th className={TH}>Set by</th>
+								</tr>
+							</thead>
+							<tbody>
+								{BENEFITS.map((row) => (
+									<tr key={row.benefit} className={ROW}>
+										<td className={`${TD} font-medium text-[var(--ink)]`}>{row.benefit}</td>
+										<td className={TD}>{row.amount}</td>
+										<td className={`${TD} text-[13px] text-[var(--ink-3)]`}>{row.source}</td>
+									</tr>
+								))}
+							</tbody>
+						</table>
+					</div>
+				</Section>
+
+				<Section id='class'>
+					<p className={P}>
+						The national schedule is the most a local government may pay, not what it must. By default it pays a
+						share of the schedule set by its income class, lower for a smaller unit and lower again for a
+						municipality. It may instead adopt the full schedule, as long as it pays every post on it and stays
+						within its payroll cap, or a lower uniform rate if it cannot afford its own.
+					</p>
+					<div className='mt-6 overflow-x-auto'>
+						<table className='w-full max-w-xl border-collapse text-left text-[14px]'>
+							<thead>
+								<tr className={HEAD}>
+									<th className={TH}>Income class</th>
+									<th className={`${TH} text-right`}>Province or city</th>
+									<th className={`${TH} text-right`}>Municipality</th>
+								</tr>
+							</thead>
+							<tbody>
+								{CLASSES.map((row) => (
+									<tr key={row.cls} className={ROW}>
+										<td className={`${TD} font-medium text-[var(--ink)]`}>{row.cls}</td>
+										<td className={`${TD} num text-right`}>{row.pc}</td>
+										<td className={`${TD} num text-right`}>{row.mun}</td>
+									</tr>
+								))}
+							</tbody>
+						</table>
+					</div>
+					<p className='mt-4 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+						Share of the national salary schedule, from EO 64 s. 2024 sec. 4 and DBM Local Budget Circulars 160, 165
+						and 172. A special city pays the full schedule. RATA steps down by class the same way (LBC 157). Each
+						unit’s class is on its{' '}
+						<Link href='/finances' className='rule-link'>
+							finances
+						</Link>
+						.
+					</p>
 				</Section>
 
 				<Section id='barangay'>
