@@ -158,11 +158,11 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 									<li key={unit.slug} className='break-inside-avoid border-b border-[var(--rule-soft)]'>
 										<Link
 											href={`/${province.slug}/${unit.slug}`}
-											className='group flex items-center justify-between gap-2 py-2.5 text-[15px] text-[var(--ink)] transition hover:text-[var(--accent)]'
+											className='group flex items-center justify-between gap-2 py-2.5 text-[15px] font-semibold text-[var(--ink)] transition hover:text-[var(--accent)]'
 										>
 											<span className='min-w-0'>
 												{unit.name}
-												{unit.isCapital ? <span className='ml-2 text-[12px] text-[var(--ink-3)]'>Capital</span> : null}
+												{unit.isCapital ? <span className='ml-2 text-[12px] font-normal text-[var(--ink-3)]'>Capital</span> : null}
 											</span>
 											<ArrowRightIcon
 												size={13}

@@ -196,7 +196,7 @@ export default async function UnitPage({
 									const captain = rosters[barangay.psgc ?? barangay.name]?.punongBarangay?.name
 									return (
 										<li key={barangay.psgc ?? barangay.name} className='break-inside-avoid border-b border-[var(--rule-soft)] py-2.5'>
-											<span className='block text-[15px] text-[var(--ink)]'>{barangay.name}</span>
+											<span className='block text-[15px] font-semibold text-[var(--ink)]'>{barangay.name}</span>
 											{captain ? (
 												<span className='mt-0.5 block text-[12px] text-[var(--ink-3)]'>{personName(captain)}</span>
 											) : null}
