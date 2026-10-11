@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
+import { pageMeta } from '../_lib/seo'
 import Link from 'next/link'
 import { CtaAction, CtaPanel, LineReveal, Rise } from '@betterbarmm/editorial'
 import {
@@ -21,11 +22,12 @@ import { lguData } from '@betterbarmm/lgu-data'
 import { SectionHead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
 
-export const metadata: Metadata = {
-	title: 'Discover BARMM — a guide to the Bangsamoro',
+export const metadata: Metadata = pageMeta({
+	title: 'Discover BARMM: a guide to the Bangsamoro',
 	description:
-		'A source-backed public guide to the Bangsamoro Autonomous Region in Muslim Mindanao: its history, its government, its local government units, its peoples, and the places that hold them.',
-}
+		'A source-backed public guide to the Bangsamoro Autonomous Region in Muslim Mindanao: its history, its government, its local governments, its peoples, and the places that hold them.',
+	path: '/discover',
+})
 
 /**
  * What each chapter actually contains, in the reader's terms.

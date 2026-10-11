@@ -5,7 +5,8 @@ import { Masthead } from './_components/masthead'
 import { SiteHeader } from './_components/site-header'
 
 export const metadata: Metadata = {
-	title: 'Page not found — BetterBARMM',
+	title: 'Page not found',
+	robots: { index: false, follow: true },
 	description: 'That address does not exist here. Where to go instead.',
 }
 

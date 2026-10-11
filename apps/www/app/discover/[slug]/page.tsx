@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
+import { pageMeta } from '../../_lib/seo'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { CtaAction, CtaPanel, Rise } from '@betterbarmm/editorial'
@@ -23,13 +24,14 @@ export async function generateMetadata({
 	const topic = discoverBarmmTopics.find((item) => item.slug === slug)
 
 	if (!topic) {
-		return { title: 'Discover BARMM' }
+		return { title: 'Discover BARMM', robots: { index: false, follow: true } }
 	}
 
-	return {
+	return pageMeta({
 		title: `${topic.navTitle ?? topic.label} — Discover BARMM`,
 		description: topicMedia(slug)?.standfirst ?? topic.description,
-	}
+		path: `/discover/${slug}`,
+	})
 }
 
 /** The photograph that stands in for a chapter when it is linked from another. */

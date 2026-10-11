@@ -1,15 +1,17 @@
 import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
+import { pageMeta } from '../_lib/seo'
 import Link from 'next/link'
 import { CtaAction, CtaPanel, Stagger, StaggerItem } from '@betterbarmm/editorial'
 import { Masthead, SectionHead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
 
-export const metadata: Metadata = {
-	title: 'Who is Jo — BetterBARMM',
+export const metadata: Metadata = pageMeta({
+	title: 'Who is Jo',
 	description:
-		'Jo is the voice that answers questions on BetterBARMM — a digital voice drawn from the everyday strength of Bangsamoro women, and an assistant that answers only from the public record.',
-}
+		'Jo is the voice that answers questions on BetterBARMM: a digital voice drawn from the everyday strength of Bangsamoro women, and an assistant that answers only from the public record.',
+	path: '/jo',
+})
 
 /**
  * Who Jo is.

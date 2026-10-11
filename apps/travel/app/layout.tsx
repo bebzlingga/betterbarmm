@@ -35,12 +35,13 @@ export const metadata: Metadata = {
 		type: 'website',
 		siteName: 'BetterBARMM',
 		locale: 'en_PH',
-		url: 'https://travel.betterbarmm.com',
 		title: 'BetterBARMM Travel',
 		description: DESCRIPTION,
 	},
 
-	alternates: { canonical: 'https://travel.betterbarmm.com' },
+	/* No canonical address here: anything the layout sets is inherited by
+	   every page under it, which would tell search engines every page is
+	   the home page. Each page is its own address. */
 	robots: { index: true, follow: true },
 	authors: [{ name: 'BetterBARMM', url: 'https://betterbarmm.com' }],
 	creator: 'BetterBARMM',

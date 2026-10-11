@@ -34,18 +34,14 @@ export const metadata: Metadata = {
 		type: 'website',
 		siteName: 'BetterBARMM',
 		locale: 'en_PH',
-		url: 'https://procurement.betterbarmm.com',
 		title: 'BetterBARMM Procurement',
 		description:
 			'Every bid notice a BARMM government office has posted on PhilGEPS since 2019, what it set out to buy and for how much, and who won the contract. Traced to PhilGEPS’s own open data.',
 	},
 
-	/* The canonical address, and permission to index it.
-	   Four apps on four subdomains serve overlapping subjects — an act appears
-	   on the registry and is linked from the election workspace — so each page
-	   naming its own address is what stops a crawler treating a link as a
-	   duplicate of the page it points at. */
-	alternates: { canonical: 'https://procurement.betterbarmm.com' },
+	/* No canonical address here: anything the layout sets is inherited by
+	   every page under it, which would tell search engines every page is
+	   the home page. Each page is its own address. */
 	robots: { index: true, follow: true },
 	authors: [{ name: 'BetterBARMM', url: 'https://betterbarmm.com' }],
 	creator: 'BetterBARMM',

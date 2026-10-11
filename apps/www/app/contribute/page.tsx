@@ -1,5 +1,6 @@
 import { ArrowRightIcon, EnvelopeSimpleIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
+import { pageMeta } from '../_lib/seo'
 import Link from 'next/link'
 import { CtaAction, CtaPanel, Magnetic, OkirCorner, Rise, Stagger, StaggerItem, Tilt } from '@betterbarmm/editorial'
 import { photo } from '../_components/discover-media'
@@ -8,11 +9,12 @@ import { QuoteBand } from '../_components/quote-band'
 import { SiteHeader } from '../_components/site-header'
 import { StepList } from '../_components/step-list'
 
-export const metadata: Metadata = {
-	title: 'Contribute — BetterBARMM',
+export const metadata: Metadata = pageMeta({
+	title: 'Contribute',
 	description:
 		'Send source documents, corrections, local context, research notes, or skills that make Bangsamoro public information clearer.',
-}
+	path: '/contribute',
+})
 
 const contributionPaths = [
 	{

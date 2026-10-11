@@ -1,3 +1,5 @@
+import type { Metadata } from 'next'
+import { CARD } from './_lib/seo'
 import { ArrowRightIcon, ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { ChapterStrip, type StripCard } from './_components/chapter-strip'
@@ -10,6 +12,20 @@ import { SectionHead } from './_components/masthead'
 import { HeroGraphic } from './_components/hero-graphic'
 import { SiteHeader } from './_components/site-header'
 import { WorkspaceIndex, type Workspace } from './_components/workspace-index'
+
+export const metadata: Metadata = {
+	alternates: { canonical: '/' },
+	openGraph: {
+		type: 'website',
+		siteName: 'BetterBARMM',
+		locale: 'en_PH',
+		url: '/',
+		title: 'BetterBARMM — Bangsamoro public records, made readable',
+		description:
+			'A public transparency project for the Bangsamoro. Public records — elections, laws, budgets, local governments — organized so you can read, question, and trace them back to the source.',
+		images: [CARD],
+	},
+}
 
 /**
  * The band under the hero.

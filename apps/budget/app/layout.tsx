@@ -40,17 +40,13 @@ export const metadata: Metadata = {
 		type: 'website',
 		siteName: 'BetterBARMM',
 		locale: 'en_PH',
-		url: 'https://budget.betterbarmm.com',
 		title: 'BetterBARMM Budget',
 		description: DESCRIPTION,
 	},
 
-	/* The canonical address, and permission to index it. Several apps on
-	   several subdomains serve overlapping subjects — an appropriations act
-	   appears on the registry and is spent on this workspace — so each page
-	   naming its own address is what stops a crawler treating a link as a
-	   duplicate of the page it points at. */
-	alternates: { canonical: 'https://budget.betterbarmm.com' },
+	/* No canonical address here: anything the layout sets is inherited by
+	   every page under it, which would tell search engines every page is
+	   the home page. Each page is its own address. */
 	robots: { index: true, follow: true },
 	authors: [{ name: 'BetterBARMM', url: 'https://betterbarmm.com' }],
 	creator: 'BetterBARMM',

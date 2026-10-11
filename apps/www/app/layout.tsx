@@ -20,7 +20,10 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: 'BetterBARMM | Better Transparency. Better Governance.',
+  title: {
+    default: 'BetterBARMM — Bangsamoro public records, made readable',
+    template: '%s — BetterBARMM',
+  },
   description:
     'A public transparency project for the Bangsamoro. Public records — elections, laws, budgets — organized into workspaces you can read, question, and trace back to the source.',
 	/* Absolute, because everything below it is relative. Without a
@@ -38,18 +41,13 @@ export const metadata: Metadata = {
 		type: 'website',
 		siteName: 'BetterBARMM',
 		locale: 'en_PH',
-		url: 'https://betterbarmm.com',
-		title: 'BetterBARMM | Better Transparency. Better Governance.',
+		title: 'BetterBARMM — Bangsamoro public records, made readable',
 		description:
 			'A public transparency project for the Bangsamoro. Public records — elections, laws, budgets — organized into workspaces you can read, question, and trace back to the source.',
 	},
 
-	/* The canonical address, and permission to index it.
-	   Four apps on four subdomains serve overlapping subjects — an act appears
-	   on the registry and is linked from the election workspace — so each page
-	   naming its own address is what stops a crawler treating a link as a
-	   duplicate of the page it points at. */
-	alternates: { canonical: 'https://betterbarmm.com' },
+	/* No canonical address here: whatever the layout sets, every page under it
+	   inherits, and each page names its own through `pageMeta` instead. */
 	robots: { index: true, follow: true },
 	authors: [{ name: 'BetterBARMM', url: 'https://betterbarmm.com' }],
 	creator: 'BetterBARMM',
@@ -57,10 +55,12 @@ export const metadata: Metadata = {
 	/* A page of act numbers, seat counts and dates is full of strings a phone
 	   will turn into telephone links if it is not told otherwise. */
 	formatDetection: { telephone: false, date: false, address: false, email: false },
+	keywords: ['BARMM', 'Bangsamoro', 'transparency', 'public records', 'Bangsamoro Parliament', 'budget', 'election', 'local government', 'Mindanao'],
+	category: 'government',
 
 	twitter: {
 		card: 'summary_large_image',
-		title: 'BetterBARMM | Better Transparency. Better Governance.',
+		title: 'BetterBARMM — Bangsamoro public records, made readable',
 		description:
 			'A public transparency project for the Bangsamoro. Public records — elections, laws, budgets — organized into workspaces you can read, question, and trace back to the source.',
 	},
@@ -76,6 +76,34 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${dmSans.variable} ${outfit.variable} h-full bg-[var(--paper)] text-[var(--ink)]`}
     >
       <head>
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'Organization',
+                  '@id': 'https://betterbarmm.com/#organization',
+                  name: 'BetterBARMM',
+                  url: 'https://betterbarmm.com',
+                  logo: 'https://betterbarmm.com/icon.svg',
+                  email: 'support@betterbarmm.com',
+                  sameAs: ['https://www.facebook.com/betterbarmm'],
+                  description: 'An independent transparency project for the Bangsamoro Autonomous Region in Muslim Mindanao.',
+                },
+                {
+                  '@type': 'WebSite',
+                  '@id': 'https://betterbarmm.com/#website',
+                  name: 'BetterBARMM',
+                  url: 'https://betterbarmm.com',
+                  inLanguage: 'en-PH',
+                  publisher: { '@id': 'https://betterbarmm.com/#organization' },
+                },
+              ],
+            }),
+          }}
+        />
         {/* Resolves the theme before first paint, so a dark-mode reader never
             gets a white flash on load or navigation. */}
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />

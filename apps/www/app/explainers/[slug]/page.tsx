@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { pageMeta } from '../../_lib/seo'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { categoryLabel, getPublishedExplainer } from '@betterbarmm/db'
@@ -11,8 +12,8 @@ type Props = { params: Promise<{ slug: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const explainer = await getPublishedExplainer((await params).slug)
-	if (!explainer) return { title: 'Explainer not found — BetterBARMM' }
-	return { title: `${explainer.title} — BetterBARMM`, description: explainer.summary || undefined }
+	if (!explainer) return { title: 'Explainer not found', robots: { index: false, follow: true } }
+	return pageMeta({ title: explainer.title, description: explainer.summary || 'A plain-language explainer from BetterBARMM.', path: `/explainers/${explainer.slug}` })
 }
 
 export default async function ExplainerPage({ params }: Props) {

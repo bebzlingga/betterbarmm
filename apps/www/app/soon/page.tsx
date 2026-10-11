@@ -1,15 +1,18 @@
 import { ArrowRightIcon, ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
+import { pageMeta } from '../_lib/seo'
 import Link from 'next/link'
 import { Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
 import { Masthead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
 
-export const metadata: Metadata = {
-	title: 'Not open yet — BetterBARMM',
+export const metadata: Metadata = pageMeta({
+	title: 'Not open yet',
 	description:
 		'This workspace is still being compiled. What is already open, and where to look in the meantime.',
-}
+	path: '/soon',
+	index: false,
+})
 
 /* ============================================================
    Not open yet

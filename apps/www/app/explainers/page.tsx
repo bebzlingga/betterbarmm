@@ -1,15 +1,17 @@
 import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
+import { pageMeta } from '../_lib/seo'
 import Link from 'next/link'
 import { EXPLAINER_CATEGORIES, categoryLabel, listPublishedExplainers } from '@betterbarmm/db'
 import { Masthead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
 
-export const metadata: Metadata = {
-	title: 'Explainers — BetterBARMM',
+export const metadata: Metadata = pageMeta({
+	title: 'Explainers',
 	description:
 		'Plain-language explainers on how the Bangsamoro works: its laws, its budget, its elections, and its local governments.',
-}
+	path: '/explainers',
+})
 
 // New and edited explainers appear within a minute of being published in the admin.
 export const revalidate = 60

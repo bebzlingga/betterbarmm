@@ -1,15 +1,17 @@
 import { ArrowRightIcon, ArrowUpRightIcon, BuildingsIcon, GraduationCapIcon, NewspaperIcon, UsersThreeIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
+import { pageMeta } from '../_lib/seo'
 import Link from 'next/link'
 import { CtaAction, CtaPanel } from '@betterbarmm/editorial'
 import { Masthead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
 
-export const metadata: Metadata = {
-	title: 'About — BetterBARMM',
+export const metadata: Metadata = pageMeta({
+	title: 'About',
 	description:
-		'BetterBARMM collects what the Bangsamoro government already publishes and puts it where a person can actually read it: organized, explained in plain words, and one click from the source.',
-}
+		'BetterBARMM collects what the Bangsamoro government already publishes and puts it where a person can read it: organized, explained in plain words, and one click from the source.',
+	path: '/about',
+})
 
 /* ============================================================
    About
