@@ -143,7 +143,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 						</>
 					) : null}
 
-					<LguSourceNote className='mt-20' />
 				</div>
 
 				{/* ---- Beside it: the province in figures, then who governs it ---- */}
@@ -208,6 +207,10 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 						</div>
 					) : null}
 				</aside>
+			</div>
+
+			<div className='bb-container bb-section-bottom'>
+				<LguSourceNote />
 			</div>
 		</>
 	)
