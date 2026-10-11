@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { lguProvinces, unitClass } from '@betterbarmm/lgu-data'
 import { finances, funds, incomeClass, row } from '@betterbarmm/lgu-data/fiscal'
 import { LguMasthead } from '../_components/lgu-parts'
+import { RegionNtaTrend } from '../_components/region-nta-trend'
 import { StatsExplorer, type StatsData, type StatsUnit } from '../_components/stats-explorer'
 
 export const metadata: Metadata = {
@@ -63,7 +64,9 @@ export default function StatsPage() {
 				noteBeside
 				noteEnd
 				note='Every province, city and municipality, ranked on what its treasurer reported to the Bureau of Local Government Finance. These are actual income and spending, not budgets. Filter, then sort any column.'
-			/>
+			>
+				<RegionNtaTrend />
+			</LguMasthead>
 
 			<section className='bb-container bb-section'>
 				<StatsExplorer years={finances.years} fields={FIELDS} units={units} data={data} />
