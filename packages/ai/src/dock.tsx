@@ -691,15 +691,11 @@ const CSS = `
 .ask-launcher {
 	position: fixed; right: 24px; bottom: 24px; z-index: 60;
 	display: inline-flex; align-items: center; gap: 9px;
-	padding: 8px 20px 8px 8px; border: 0; border-radius: 999px;
+	padding: 15px 22px 15px 18px; border: 0; border-radius: 999px;
 	background: var(--accent, #8a2418); color: #fff;
 	font: inherit; font-size: 15.5px; font-weight: 600; line-height: 1; cursor: pointer;
 	box-shadow: 0 14px 34px -10px rgba(0, 0, 0, 0.45);
 	transition: transform 200ms ease, filter 200ms ease;
-}
-.ask-launcher svg {
-	box-sizing: content-box; padding: 9px; border-radius: 999px;
-	background: #fff; color: var(--accent, #8a2418);
 }
 .ask-launcher:hover { transform: translateY(-1px); }
 .ask-launcher:hover { filter: brightness(1.08); }
