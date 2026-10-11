@@ -188,8 +188,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .lgu-tab,
-  .lgu-tab::after,
-  .lgu-term {
+  .lgu-tab::after {
     transition: none;
   }
 }
