@@ -165,7 +165,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				)}
 			</LguMasthead>
 
-			<div className='bb-container bb-section grid gap-14 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-28'>
+			<div className='bb-container bb-section grid gap-14 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-28'>
 				{/* ---- The province, read down: its towns, then its own records ---- */}
 				<div className='min-w-0'>
 					<section>
