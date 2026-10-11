@@ -320,7 +320,7 @@ const TOC: TocItem[] = OUTLINE.flatMap((section) => [
 	...section.topics.map((topic) => ({ id: slug(topic), label: topic, depth: 2 as const })),
 ])
 
-const H2 = 'scroll-mt-32 border-t border-[var(--rule)] pt-12 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)] first:border-t-0 first:pt-0'
+const H2 = 'scroll-mt-32 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
 const H3 = 'scroll-mt-32 text-[1.1rem] font-semibold tracking-[-0.01em] text-[var(--ink)]'
 const P = 'text-[15px] leading-7 text-[var(--ink-2)]'
 
@@ -347,7 +347,7 @@ function Points({ points }: { points: Point[] }) {
 function Section({ id, lead, children }: { id: string; lead?: string; children: React.ReactNode }) {
 	const title = OUTLINE.find((section) => section.id === id)!.title
 	return (
-		<section className='mt-16 first:mt-0'>
+		<section className='mt-20 first:mt-0'>
 			<h2 id={id} className={H2}>
 				{title}
 			</h2>

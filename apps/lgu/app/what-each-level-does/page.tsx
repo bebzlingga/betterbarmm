@@ -329,11 +329,11 @@ const TOC: TocItem[] = [
 	{ id: 'where-to-look', label: 'Where to look', depth: 1 },
 ]
 
-const H2 = 'scroll-mt-32 border-t border-[var(--rule)] pt-12 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
+const H2 = 'scroll-mt-32 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
 
 function Section({ id, lead, children }: { id: string; lead: string; children: React.ReactNode }) {
 	return (
-		<section className='mt-16 first:mt-0 [&:first-child>h2]:border-t-0 [&:first-child>h2]:pt-0'>
+		<section className='mt-20 first:mt-0'>
 			<h2 id={id} className={H2}>
 				{TOC.find((item) => item.id === id)!.label}
 			</h2>
