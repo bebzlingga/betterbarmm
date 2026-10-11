@@ -10,6 +10,7 @@
 		"./barangay-shapes": "./src/barangay-shapes.ts",
 		"./nta": "./src/nta.ts",
 		"./fiscal": "./src/fiscal.ts",
-		"./fdpp": "./src/fdpp.ts"
+		"./fdpp": "./src/fdpp.ts",
+		"./lgsf": "./src/lgsf.ts"
 	}
 }
