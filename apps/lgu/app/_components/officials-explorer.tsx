@@ -116,10 +116,6 @@ export function OfficialsExplorer({
 				<Select label='Party' value={party} onChange={setParty} options={[['', 'All parties'], ...parties.map((p): [string, string] => [p, p])]} />
 			</div>
 
-			<p className='mt-2 text-[13px] text-[var(--ink-3)]'>
-				<span className='num font-semibold text-[var(--ink)]'>{rows.length.toLocaleString('en-PH')}</span> officials
-			</p>
-
 			<div className='mt-4'>
 				<DataTable
 					key={term}
