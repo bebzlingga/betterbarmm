@@ -3,7 +3,7 @@ import { Rise } from '@betterbarmm/editorial'
 import { finances, row } from '@betterbarmm/lgu-data/fiscal'
 import { DocLayout } from '../_components/doc-layout'
 import type { TocItem } from '../_components/doc-toc'
-import { LguFigures, LguMasthead } from '../_components/lgu-parts'
+import { LguMasthead } from '../_components/lgu-parts'
 import { LguTabs } from '../_components/lgu-tabs'
 
 export const metadata: Metadata = {
@@ -263,29 +263,28 @@ const NTA_TREND = finances.years.map((year) => {
 
 function NtaTrend() {
 	const top = Math.max(...NTA_TREND.map((y) => y.total))
+	const cols = { gridTemplateColumns: `repeat(${NTA_TREND.length}, minmax(0, 1fr))` }
 	return (
-		<figure className='m-0 mt-14'>
-			<figcaption className='text-[15px] font-semibold text-[var(--ink)]'>
-				National Tax Allotment received by BARMM’s local governments, by year
-			</figcaption>
-			<div className='mt-6 grid h-52 items-end gap-1.5 sm:gap-3' style={{ gridTemplateColumns: `repeat(${NTA_TREND.length}, minmax(0, 1fr))` }}>
+		<figure className='m-0 mt-10'>
+			<div className='grid h-48 items-end gap-1.5 sm:gap-4' style={cols}>
 				{NTA_TREND.map(({ year, total }) => (
 					<div key={year} className='flex h-full flex-col items-center justify-end'>
-						<span className='num mb-1.5 whitespace-nowrap text-[9.5px] text-[var(--ink-2)] sm:text-[12px]'>
-							{(total / 1e9).toFixed(1)}B
+						<span className='num mb-1.5 whitespace-nowrap text-[9.5px] text-[var(--ink-2)] sm:text-[12.5px]'>
+							<span className='sm:hidden'>{(total / 1e9).toFixed(1)}B</span>
+							<span className='hidden sm:inline'>₱{(total / 1e9).toFixed(1)}B</span>
 						</span>
 						<div
-							className='w-full max-w-14'
+							className='w-full max-w-16'
 							style={{
 								height: `calc(${(total / top) * 100}% - 1.5rem)`,
-								background: 'linear-gradient(to top, color-mix(in oklab, var(--accent) 35%, transparent), var(--accent))',
+								background: 'linear-gradient(to top, transparent, var(--accent))',
 							}}
 							title={`FY ${year}: ₱${total.toLocaleString('en-PH', { maximumFractionDigits: 0 })}`}
 						/>
 					</div>
 				))}
 			</div>
-			<div className='grid gap-1.5 border-t border-[var(--rule)] pt-2 sm:gap-3' style={{ gridTemplateColumns: `repeat(${NTA_TREND.length}, minmax(0, 1fr))` }}>
+			<div className='grid gap-1.5 border-t border-[var(--rule)] pt-2 sm:gap-4' style={cols}>
 				{NTA_TREND.map(({ year }) => (
 					<span key={year} className='num text-center text-[10.5px] text-[var(--ink-3)] sm:text-[12px]'>
 						<span className='sm:hidden'>’{String(year).slice(2)}</span>
@@ -293,11 +292,15 @@ function NtaTrend() {
 					</span>
 				))}
 			</div>
-			<p className='mt-4 text-[12px] leading-5 text-[var(--ink-3)]'>
-				In billions of pesos, as each unit reported it to BLGF; between {Math.min(...NTA_TREND.map((y) => y.units))} and{' '}
-				{Math.max(...NTA_TREND.map((y) => y.units))} units reported in a year. The jump in 2022 is the Mandanas
-				ruling, which widened the national taxes the allotment is cut from. FY {INCOME_YEAR} is preliminary.
-			</p>
+			<figcaption className='mt-4 flex flex-wrap items-baseline justify-between gap-2'>
+				<span className='text-[12.5px] font-semibold text-[var(--ink)]'>
+					National Tax Allotment received by BARMM’s local governments, by year
+				</span>
+				<span className='text-[11px] text-[var(--ink-3)]'>
+					Reported to BLGF by {Math.min(...NTA_TREND.map((y) => y.units))}–{Math.max(...NTA_TREND.map((y) => y.units))}{' '}
+					units a year. The 2022 jump is the Mandanas ruling. FY {INCOME_YEAR} is preliminary.
+				</span>
+			</figcaption>
 		</figure>
 	)
 }
@@ -448,14 +451,7 @@ export default function LocalBudgetsPage() {
 	return (
 		<>
 			<LguMasthead kicker='The guide · Bangsamoro' name='Local budgets'>
-				<LguFigures
-					figures={[
-						{ label: 'Development fund', value: '20%', detail: 'Of the National Tax Allotment, set aside for development projects. Code s. 348.' },
-						{ label: 'Disaster fund', value: '5%', detail: 'Of estimated regular income, for disaster risk reduction. IRR art. 620.' },
-						{ label: 'Salary cap', value: '45–55%', detail: 'The most of last year’s regular income that may go to personnel. Code s. 349.' },
-						{ label: 'Deadline', value: '31 Dec', detail: 'The council must pass next year’s budget by then. Code s. 343.' },
-					]}
-				/>
+				<NtaTrend />
 			</LguMasthead>
 
 			<DocLayout toc={TOC}>
@@ -482,7 +478,6 @@ export default function LocalBudgetsPage() {
 					))}
 				</ol>
 
-				<NtaTrend />
 			</Section>
 
 			{/* ---- Where it must go ---- */}
