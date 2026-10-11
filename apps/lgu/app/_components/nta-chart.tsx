@@ -19,6 +19,12 @@ export function NtaChart({ unitKey }: { unitKey: string }) {
 
 	return (
 		<figure className='m-0 mt-10'>
+			<figcaption className='mb-8 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
+				<span className='text-[1.25rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>National Tax Allotment, by year</span>
+				<span className='text-[12.5px] text-[var(--ink-3)]'>
+					Reported to BLGF. FY {finances.years.at(-1)} is preliminary.
+				</span>
+			</figcaption>
 			<div className='grid h-44 items-end gap-1.5 sm:gap-4' style={{ gridTemplateColumns: `repeat(${years.length}, minmax(0, 1fr))` }}>
 				{years.map(({ year, nta }) => (
 					// The label rides on top of its bar; the bar's height is a share of
@@ -35,8 +41,7 @@ export function NtaChart({ unitKey }: { unitKey: string }) {
 									style={{
 										height: `calc(${(nta / top) * 100}% - 1.5rem)`,
 										minHeight: '2px',
-										// One hue, solid at the top and fading to the baseline.
-										background: 'linear-gradient(to top, transparent, var(--accent))',
+										background: 'var(--accent)',
 									}}
 									title={`FY ${year}: ₱${nta.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}
 								/>
@@ -55,12 +60,6 @@ export function NtaChart({ unitKey }: { unitKey: string }) {
 					</span>
 				))}
 			</div>
-			<figcaption className='mt-4 flex flex-wrap items-baseline justify-between gap-2'>
-				<span className='text-[12.5px] font-semibold text-[var(--ink)]'>National Tax Allotment, by year</span>
-				<span className='text-[11px] text-[var(--ink-3)]'>
-					Reported to BLGF. FY {finances.years.at(-1)} is preliminary.
-				</span>
-			</figcaption>
 		</figure>
 	)
 }

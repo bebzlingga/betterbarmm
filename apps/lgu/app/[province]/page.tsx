@@ -23,6 +23,7 @@ import {
 import { LguFinances } from '../_components/lgu-finances'
 import { LguDisclosure } from '../_components/lgu-disclosure'
 import { NtaChart } from '../_components/nta-chart'
+import { finances, row } from '@betterbarmm/lgu-data/fiscal'
 
 export function generateStaticParams() {
 	// Cotabato City's area page is a list of one thing named after the thing.
@@ -75,6 +76,8 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 	// The opening paragraph, as an encyclopedia would begin: what the place is,
 	// then its people, land and units, every figure the directory's own.
 	const capital = province.municipalities.find((unit) => unit.isCapital)
+	const ntaYear = finances.years.at(-1)!
+	const nta = (row(finances, province.slug, ntaYear)?.nta as number | null | undefined) ?? null
 	const area = lguAreas.find((one) => one.slug === province.slug)
 	const towns = province.municipalities.length - cities.length
 	const units = [
@@ -90,6 +93,8 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 			: null,
 		`It has ${units}, with ${formatNumber(province.barangayCount)} barangays between them${province.areaKm2 ? `, across ${formatArea(province.areaKm2)}` : ''}.`,
 		area ? `Its voters elect ${area.seats} of the 80 members of the Bangsamoro Parliament.` : null,
+		biggest.length > 1 ? `Its most populous are ${biggest.slice(0, -1).map((unit) => unit.name).join(', ')} and ${biggest.at(-1)!.name}.` : null,
+		nta ? `In FY ${ntaYear} the provincial government received ${nta >= 1e9 ? `₱${(nta / 1e9).toFixed(2)} billion` : `₱${(nta / 1e6).toFixed(1)} million`} in National Tax Allotment, as it reported to BLGF.` : null,
 	]
 		.filter(Boolean)
 		.join(' ')
@@ -116,22 +121,21 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				kicker={`${province.kind} · Bangsamoro`}
 				name={province.name}
 			>
-				<NtaChart unitKey={province.slug} />
-			</LguMasthead>
-
-			{/* ---- What the province is, before its parts ---- */}
-			<div className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
-				<div className='max-w-[58rem] space-y-4 text-[17px] leading-8 text-[var(--ink-2)]'>
-					<p>
-						<strong className='font-semibold text-[var(--ink)]'>{province.name}</strong>
-						{lead.slice(province.name.length)}
-					</p>
+				<div className='mt-7 max-w-[58rem] space-y-4 text-[15px] leading-7 text-[var(--ink-2)]'>
+					<p>{lead}</p>
 					{/* The directory's own note on the province; the region guide's where it has none. */}
 					{province.note || area?.note ? <p>{province.note || area?.note}</p> : null}
 				</div>
+			</LguMasthead>
+
+			{/* The provincial government's NTA, year by year, on a light band under the masthead. */}
+			<div className='bg-[var(--paper-2)]'>
+				<div className='bb-container pb-10 pt-2'>
+					<NtaChart unitKey={province.slug} />
+				</div>
 			</div>
 
-			<div className='bb-container bb-section-bottom grid gap-14 pt-14 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-24'>
+			<div className='bb-container bb-section grid gap-14 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-24'>
 				{/* ---- The province, read down: its towns, then its own records ---- */}
 				<div className='min-w-0'>
 					<section>
