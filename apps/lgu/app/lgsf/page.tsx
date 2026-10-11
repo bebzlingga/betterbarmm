@@ -19,6 +19,7 @@ const BARMM_FUND = [
 	{ year: 2025, amount: 10_153_071_200, act: 65 },
 	{ year: 2026, amount: 5_206_146_100, act: 85 },
 ]
+const FUND_TOP = Math.max(...BARMM_FUND.map((f) => f.amount))
 
 /* Directory names by key, so a row reads the way the rest of the site does. */
 const NAMES = new Map(
@@ -96,19 +97,33 @@ export default function LgsfPage() {
 							and MFBM and post it under Full Disclosure; we will add it here once the recipients are out.
 						</p>
 					</div>
-					<dl className='grid content-start'>
-						{BARMM_FUND.map((f) => (
-							<div key={f.year} className='flex items-baseline justify-between gap-4 border-b border-[var(--rule)] py-2.5'>
-								<dt className='text-[13.5px] text-[var(--ink-3)]'>
-									FY {f.year}{' '}
-									<a href={`https://legislation.betterbarmm.com/acts/${f.act}`} className='rule-link text-[12px]'>
+					<figure className='m-0'>
+						<div className='grid h-48 grid-cols-5 items-end gap-3 sm:gap-5'>
+							{BARMM_FUND.map((f) => (
+								<div key={f.year} className='flex h-full flex-col items-center justify-end'>
+									<span className='num mb-1.5 text-[11px] text-[var(--ink-2)] sm:text-[12.5px]'>₱{(f.amount / 1e9).toFixed(2)}B</span>
+									<div
+										className='w-full max-w-14'
+										style={{ height: `calc(${(f.amount / FUND_TOP) * 100}% - 1.5rem)`, background: 'var(--accent)' }}
+										title={`FY ${f.year}: ₱${f.amount.toLocaleString('en-PH')}`}
+									/>
+								</div>
+							))}
+						</div>
+						<div className='grid grid-cols-5 gap-3 border-t border-[var(--rule)] pt-2 sm:gap-5'>
+							{BARMM_FUND.map((f) => (
+								<span key={f.year} className='text-center'>
+									<span className='num block text-[12px] text-[var(--ink-3)]'>{f.year}</span>
+									<a href={`https://legislation.betterbarmm.com/acts/${f.act}`} className='rule-link text-[11px]'>
 										BAA {f.act}
 									</a>
-								</dt>
-								<dd className='num text-[15px] font-semibold text-[var(--ink)]'>₱{(f.amount / 1e9).toFixed(2)}B</dd>
-							</div>
-						))}
-					</dl>
+								</span>
+							))}
+						</div>
+						<figcaption className='mt-4 text-[12.5px] font-semibold text-[var(--ink)]'>
+							Bangsamoro budget for local government support, by year
+						</figcaption>
+					</figure>
 				</div>
 			</section>
 
