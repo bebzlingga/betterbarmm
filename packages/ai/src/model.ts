@@ -48,7 +48,7 @@ const OPENAI = 'https://api.openai.com/v1'
  * generated past the point a reader stops caring is time they spent watching a
  * spinner. `grounded` drops a sentence the ceiling cut in half.
  */
-const MOST_WORDS = 120
+const MOST_WORDS = 4096
 
 /** What a host has told us it will not take, and the one thing it insists on. */
 type Drop = {
@@ -115,13 +115,7 @@ export async function askModel(messages: ModelMessage[], tools: ModelTool[] = []
 			signal: AbortSignal.timeout(120_000),
 			body: JSON.stringify({
 				model,
-				// Two or three sentences is the whole brief. Without a ceiling a
-				// small model writes ten lines, nine of which are struck before
-				// anybody sees them — paid for in the time somebody spent
-				// waiting.
-				...(drop.maxTokens
-					? { max_completion_tokens: MOST_WORDS }
-					: { max_tokens: MOST_WORDS }),
+				// No ceiling on length (user decision): a list of measures runs as long as it runs.
 				// Ollama unloads a model after five idle minutes, and the next
 				// question then waits for it to load again.
 				//
@@ -263,6 +257,7 @@ async function askClaude(messages: ModelMessage[], tools: ModelTool[], key: stri
 	try {
 		reply = await client.beta.messages.create({
 			model,
+			// Claude requires a ceiling; this one is only a backstop.
 			max_tokens: MOST_WORDS,
 			betas: ['server-side-fallback-2026-07-01'],
 			fallbacks: 'default',

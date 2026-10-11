@@ -889,8 +889,13 @@ const CSS = `
 /* No markers and no indent: a bullet's worth of padding put the list on a
    different left edge from the paragraph above it, and these items carry a
    name and a sentence each — they read as lines, not as ticks. */
+.ask-list li { position: relative; padding-left: 18px; }
+.ask-list li::before {
+	content: ""; position: absolute; left: 3px; top: 0.62em;
+	width: 6px; height: 6px; border-radius: 999px; background: var(--accent, #8a2418);
+}
 .ask-list {
-	margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px;
+	margin: 6px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px;
 	font-size: 14.5px; line-height: 1.6; text-wrap: pretty; color: var(--ink-2, #3b3b36);
 }
 /* The one line somebody sits in front of. Centerd on its mark rather than

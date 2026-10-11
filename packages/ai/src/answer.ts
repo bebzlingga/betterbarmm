@@ -154,6 +154,14 @@ const EMPTY_HANDED =
 const WANTS_NAMES =
 	/\brepresentatives?\b|\bmembers?\b|\bnominees?\b|\bwho are\b|\bwho won\b|\bwho was elected\b|\bmps?\b|\bwho sits\b|\blist\b/i
 
+/* A question that asks for several things by name: bills on a subject, hotels
+   in a city, programs of an office. Written as one sentence they run on into
+   a wall of commas, so these are answered as a list. */
+const WANTS_LIST =
+	/\blist\b|\bwhat are (?:the|some)\b|\bwhich (?:bills?|acts?|laws?|resolutions?|measures?|projects?|programs?|offices?|hotels?|places?|restaurants?|towns?|municipalities)\b|\b(?:bills?|acts?|laws?|resolutions?|measures?|projects?|programs?|hotels?|restaurants?)\b.*\b(?:related to|about|on|for|in)\b|\bexamples?\b|\ball (?:the )?(?:bills?|acts?|projects?|hotels?)\b/i
+
+const SHOWING_LIST = `One thing changes for this question, and it overrides the rule against lists above. The reader asked for several things, so answer with a list. Open with one plain sentence saying what the list is. Then put each item on its own line starting with "- ", the name or number in **bold**, a dash, and a few words on what it is, taken from its record: for example "- **Bill 88** — dialysis units and free dialysis services". Up to twelve items, the ones the records match best, in a sensible order. Use only items in the records, and never cut an item off halfway.`
+
 const SHOWING_ROSTER = `Every member is being listed under your answer, by name, with the party they sit for and the seat they hold. Your job for this question is the one sentence that frames that list: which parties it covers and how many seats each of them won, taken from the party rows. One sentence is required. Name nobody — every name you write will appear again directly beneath it — and never count the member rows, because the party's own row carries its real total and they are not always the same number.`
 
 const SHOWING_TIMELINE = `One thing changes for this question, and it overrides what was said above about nothing being printed under your answer. This time a dated timeline is: every era in order, each with its own paragraph. So if the reader asked for the history date by date, the timeline is that answer, it is not a list you have to write, and the rule against lists does not apply to it.
@@ -292,6 +300,7 @@ export async function answer(turns: Turn[]): Promise<Answer> {
 				// Last, so they are the most recent thing said about rules they undo.
 				timeline?.length ? SHOWING_TIMELINE : '',
 				roster?.length ? SHOWING_ROSTER : '',
+				!roster?.length && !timeline?.length && WANTS_LIST.test(asked) ? SHOWING_LIST : '',
 			]
 				.filter(Boolean)
 				.join('\n\n'),
