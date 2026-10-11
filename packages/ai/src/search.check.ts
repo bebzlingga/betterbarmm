@@ -441,7 +441,7 @@ assert.equal(
 	`Health gets ${real} for the year.`,
 	'an invented total survived',
 )
-assert.equal(grounded('Marawi has 96 barangays.', search('Marawi', 'lgu', 3)), 'Marawi has 96 barangays.', 'a figure that is in the record was dropped')
+assert.equal(grounded('Marawi has 98 barangays.', search('Marawi', 'lgu', 3)), 'Marawi has 98 barangays.', 'a figure that is in the record was dropped')
 assert.equal(grounded('There is nothing to count here.', rows), 'There is nothing to count here.')
 
 // What a model writes is rendered, not printed at the reader.
@@ -465,7 +465,7 @@ assert.equal(trimmed(`Health is the largest of them.\n${echo}`, spent), 'Health 
 assert.equal(trimmed(`1. [${spent[0]!.kind}] ${echo}`, spent), '', 'a numbered, labeled restatement survived')
 
 const towns = search('Marawi', 'lgu', 3)
-assert.equal(trimmed('Marawi has 96 barangays.', towns), 'Marawi has 96 barangays.', 'a real sentence was struck as an echo')
+assert.equal(trimmed('Marawi has 98 barangays.', towns), 'Marawi has 98 barangays.', 'a real sentence was struck as an echo')
 
 // The hand-off counts what was found, since the model may not.
 
@@ -485,7 +485,7 @@ assert.ok(
 
 // A sentence the token ceiling cut in half does not reach a reader.
 assert.equal(grounded('Health is the largest of them. It also covers the provincial offices and', towns), 'Health is the largest of them.', 'a truncated tail survived')
-assert.equal(grounded('Marawi has 96 barangays', towns), 'Marawi has 96 barangays', 'a lone sentence was dropped for want of a full stop')
+assert.equal(grounded('Marawi has 98 barangays', towns), 'Marawi has 98 barangays', 'a lone sentence was dropped for want of a full stop')
 
 // LGU money: a town's finances row answers for its NTA, the region's sum answers
 // for all of them, and neither takes "how many provinces" from the region row.

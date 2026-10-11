@@ -6,7 +6,7 @@ import rosters from '../../../datasets/lgu/barangay-officials.json'
    A barangay is the unit of government a reader actually lives in,
    and until now it was the one rung of the ladder this directory
    could only count. The names come from DILG's own public directory:
-   2,180 barangays, one request each.
+   2,182 barangays, one request each.
 
    Three things to know before reading a name off a page.
 
