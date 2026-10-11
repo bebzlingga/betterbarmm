@@ -91,7 +91,7 @@ export function LgsfExplorer({
 				<Select label='Province' value={area} onChange={setArea} options={[['', 'All provinces and areas'], ...areas.map((a): [string, string] => [a, a])]} />
 			</div>
 
-			<p className='mb-4 text-[13px] text-[var(--ink-3)]'>
+			<p className='mb-4 border-y border-[var(--rule-soft)] py-3 text-right text-[13px] text-[var(--ink-3)]'>
 				<span className='num font-semibold text-[var(--ink)]'>{kept.length}</span> projects ·{' '}
 				<span className='num font-semibold text-[var(--ink)]'>{peso(allotted)}</span> allotted ·{' '}
 				<span className='num font-semibold text-[var(--ink)]'>{peso(released)}</span> released
