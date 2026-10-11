@@ -27,6 +27,7 @@ import { LguDisclosure } from '../../_components/lgu-disclosure'
 import { NtaChart } from '../../_components/nta-chart'
 import { LocatorMap } from '../../_components/locator-map'
 import { Official } from '../../_components/official'
+import { finances, row } from '@betterbarmm/lgu-data/fiscal'
 export function generateStaticParams() {
 	return allUnitParams()
 }
@@ -101,7 +102,23 @@ export default async function UnitPage({
 	const rosters = unitRosters(unit.slug)
 	const history = townHistory(province.slug, unit.slug)
 	const change = growth(unit)
-	const lead = `${opening(unit, province)} It is divided into ${unit.barangays.length} ${unit.barangays.length === 1 ? 'barangay' : 'barangays'}${unit.population != null ? `, and had ${formatNumber(unit.population)} residents at the 2024 census` : ''}.`
+	const ntaYear = finances.years.at(-1)!
+	const nta = (row(finances, key, ntaYear)?.nta as number | null | undefined) ?? null
+	const mayorNow = (() => {
+		const term = lguData.officials?.currentTermId
+		const top = term ? unit.officials?.[term]?.mayor?.ranked[0] : undefined
+		return top ? `${personName(top.name)}${top.party ? ` (${top.party})` : ''}` : null
+	})()
+	const lead = [
+		`${opening(unit, province)} It is divided into ${unit.barangays.length} ${unit.barangays.length === 1 ? 'barangay' : 'barangays'}${unit.areaKm2 ? ` across ${formatArea(unit.areaKm2)}` : ''}.`,
+		unit.population != null
+			? `It had ${formatNumber(unit.population)} residents at the 2024 census${growth(unit) != null ? `, ${growth(unit)! > 0 ? 'up' : 'down'} ${Math.abs(growth(unit)!)}% since 2020` : ''}.`
+			: null,
+		mayorNow ? `Its mayor for the ${lguData.officials!.currentTermId.replace('-', '–')} term is ${mayorNow}.` : null,
+		nta ? `In FY ${ntaYear} it received ${nta >= 1e9 ? `₱${(nta / 1e9).toFixed(2)} billion` : `₱${(nta / 1e6).toFixed(1)} million`} in National Tax Allotment, as reported to BLGF.` : null,
+	]
+		.filter(Boolean)
+		.join(' ')
 
 	// A share needs something to be a share of: Cotabato City is its whole area.
 	const share =
@@ -160,10 +177,9 @@ export default async function UnitPage({
 				{history ? (
 					<div className='mt-12 gap-20 text-[15px] leading-7 text-[var(--ink-2)] lg:columns-2 [&>p+p]:mt-4'>
 						{history.paragraphs.map((paragraph) => (
-							<p key={paragraph.slice(0, 40)} className='break-inside-avoid-column'>
-								{paragraph}
-							</p>
+							<p key={paragraph.slice(0, 40)}>{paragraph}</p>
 						))}
+						<p>{lead}</p>
 					</div>
 				) : (
 					<div className='mt-12 max-w-[58rem] space-y-4 text-[15px] leading-7 text-[var(--ink-2)]'>
