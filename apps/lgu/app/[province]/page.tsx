@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
 import { notFound, redirect } from 'next/navigation'
 import {
 	LguMasthead,
@@ -96,25 +97,31 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				<NtaChart unitKey={province.slug} />
 			</LguMasthead>
 
-			<div className='bb-container bb-section grid gap-14 lg:grid-cols-[minmax(0,1fr)_18rem] lg:gap-16'>
+			<div className='bb-container bb-section grid gap-14 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-24'>
 				{/* ---- The province, read down: its towns, then its own records ---- */}
 				<div className='min-w-0'>
 					<section>
 						<h2 id='units' className={H2}>
-							Cities and municipalities{' '}
-							<span className='num text-[var(--ink-3)]'>{province.municipalities.length}</span>
+							<span className='num text-[var(--ink-3)]'>{province.municipalities.length}</span> Cities and Municipalities
 						</h2>
-						<ul className='mt-6 columns-2 gap-x-8 sm:columns-3'>
+						<ul className='mt-6 columns-2 gap-x-8 sm:columns-3 lg:columns-4'>
 							{[...province.municipalities]
 								.sort((x, y) => x.name.localeCompare(y.name))
 								.map((unit) => (
 									<li key={unit.slug} className='break-inside-avoid border-b border-[var(--rule-soft)]'>
 										<Link
 											href={`/${province.slug}/${unit.slug}`}
-											className='block py-2.5 text-[15px] text-[var(--ink)] transition hover:text-[var(--accent)]'
+											className='group flex items-center justify-between gap-2 py-2.5 text-[15px] text-[var(--ink)] transition hover:text-[var(--accent)]'
 										>
-											{unit.name}
-											{unit.isCapital ? <span className='ml-2 text-[12px] text-[var(--ink-3)]'>Capital</span> : null}
+											<span className='min-w-0'>
+												{unit.name}
+												{unit.isCapital ? <span className='ml-2 text-[12px] text-[var(--ink-3)]'>Capital</span> : null}
+											</span>
+											<ArrowRightIcon
+												size={13}
+												className='shrink-0 text-[var(--ink-mute)] transition group-hover:translate-x-0.5 group-hover:text-[var(--accent)]'
+												aria-hidden='true'
+											/>
 										</Link>
 									</li>
 								))}
