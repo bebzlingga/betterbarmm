@@ -17,14 +17,6 @@ const guide = [
 	{ href: '/plan', label: 'Plan a trip' },
 ] as const
 
-const workspaces = [
-	{ href: 'https://lgu.betterbarmm.com', label: 'Local government' },
-	{ href: 'https://election.betterbarmm.com', label: 'Election' },
-	{ href: 'https://legislation.betterbarmm.com', label: 'Legislation' },
-	{ href: 'https://budget.betterbarmm.com', label: 'Budget' },
-	{ href: 'https://betterbarmm.com/discover', label: 'Discover BARMM' },
-] as const
-
 /**
  * A menu that opens on click and closes on Escape or any pointer landing
  * outside it. A dropdown that only closes by clicking its own trigger feels
@@ -197,16 +189,6 @@ export function SiteNav() {
 								))
 							}
 						</Menu>
-
-						<Menu label='Workspaces' width='w-[17rem]'>
-							{(close) =>
-								workspaces.map((item) => (
-									<a key={item.href} href={item.href} onClick={close} className='nav-menu-item'>
-										{item.label}
-									</a>
-								))
-							}
-						</Menu>
 					</nav>
 
 					<div className='flex items-center justify-end gap-1.5'>
@@ -285,19 +267,6 @@ export function SiteNav() {
 								))}
 							</div>
 
-							<p className='bb-label mt-7'>Workspaces</p>
-							<div className='mt-3 grid'>
-								{workspaces.map((item) => (
-									<a
-										key={item.href}
-										href={item.href}
-										onClick={closeMenu}
-										className='border-b border-[var(--rule-soft)] py-2.5'
-									>
-										{item.label}
-									</a>
-								))}
-							</div>
 							<UtilityMenuLinks base='https://betterbarmm.com' onNavigate={closeMenu} />
 						</nav>
 					</motion.div>

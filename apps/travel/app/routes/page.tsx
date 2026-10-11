@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { SectionHead } from '@betterbarmm/editorial'
+
 import { itineraries, placePoints, pointForArea, travelAreas } from '@betterbarmm/travel-data'
-import { Caution, TravelBreadcrumb, TravelMasthead } from '../_components/travel-parts'
+import { Caution, TravelMasthead, SectionHead } from '../_components/travel-parts'
 import { TravelMap } from '../_components/travel-map'
 
 export const metadata: Metadata = {
@@ -17,7 +17,6 @@ export default function RoutesPage() {
 	return (
 		<>
 			<TravelMasthead
-				breadcrumb={<TravelBreadcrumb>Routes</TravelBreadcrumb>}
 				kicker={`${itineraries.length} trips`}
 				name='Routes'
 				note='Given a week, where do you go? Each route uses transport that actually exists, so none covers the whole region: Tawi-Tawi and Lanao del Sur are reached through different cities on different islands.'

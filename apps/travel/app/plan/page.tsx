@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { OkirRule, SectionHead } from '@betterbarmm/editorial'
+import { OkirRule } from '@betterbarmm/editorial'
 import { areaPoints, festivals, gatewayPoints, legs, planSections, travelAreas } from '@betterbarmm/travel-data'
 import { TravelMap } from '../_components/travel-map'
-import { Caution, Footing, GateList, TravelBreadcrumb, TravelMasthead } from '../_components/travel-parts'
+import { Caution, Footing, GateList, TravelMasthead, SectionHead } from '../_components/travel-parts'
 
 export const metadata: Metadata = {
 	title: 'Plan a trip',
@@ -15,12 +15,11 @@ export default function PlanPage() {
 	return (
 		<>
 			<TravelMasthead
-				breadcrumb={<TravelBreadcrumb>Plan a trip</TravelBreadcrumb>}
 				kicker={`${planSections.length} things to settle first`}
 				name='Plan a trip'
 				note='The practical half of the guide, and the answers to the questions a first-time visitor actually asks — several of which nobody publishes a straight answer to.'
 			>
-				<div className='mt-10 flex flex-wrap gap-2 border-t border-[var(--brass-line)] pt-8'>
+				<div className='flex flex-wrap gap-2'>
 					{planSections.map((section) => (
 						<a key={section.slug} href={`#${section.slug}`} className='bb-chip'>
 							{section.title}

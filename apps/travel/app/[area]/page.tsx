@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { LineReveal, OkirRule, Rise, SectionHead, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { LineReveal, OkirRule, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
 import { areaHref, findProvince } from '@betterbarmm/lgu-data'
 import {
 	festivalsForArea,
@@ -21,7 +21,7 @@ import {
 	townsInArea,
 	travelAreas,
 } from '@betterbarmm/travel-data'
-import { Caution, Footing, GateList, TravelBreadcrumb, TravelMasthead } from '../_components/travel-parts'
+import { Caution, Footing, GateList, TravelMasthead, SectionHead } from '../_components/travel-parts'
 import { TravelMap } from '../_components/travel-map'
 import { TownMap } from '../_components/town-map'
 import { PhotoFigure, PhotoStrip } from '../_components/photo-figure'
@@ -76,14 +76,13 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 	return (
 		<>
 			<TravelMasthead
-				breadcrumb={<TravelBreadcrumb>{area.name}</TravelBreadcrumb>}
 				badges={<Footing footing={area.footing} />}
 				kicker={`Base · ${area.base}`}
 				name={area.name}
 				note={area.tagline}
 			>
 				<Rise delay={0.35} distance={14}>
-					<div className='mt-10 grid gap-x-10 gap-y-6 border-t border-[var(--brass-line)] pt-8 sm:grid-cols-2 lg:grid-cols-4'>
+					<div className='grid gap-x-10 gap-y-6 sm:grid-cols-2 lg:grid-cols-4'>
 						<div>
 							<p className='bb-label'>When to go</p>
 							<p className='mt-2.5 text-[13.5px] leading-6 text-[var(--ink-2)]'>{area.whenToGo}</p>

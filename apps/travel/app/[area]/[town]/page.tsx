@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { Rise, SectionHead } from '@betterbarmm/editorial'
+import { Rise } from '@betterbarmm/editorial'
 import {
 	findTown,
 	findTravelArea,
@@ -11,7 +11,7 @@ import {
 	type Source,
 	type TownListing,
 } from '@betterbarmm/travel-data'
-import { Caution, GateList, TravelBreadcrumb, TravelMasthead } from '../../_components/travel-parts'
+import { Caution, GateList, TravelMasthead, SectionHead } from '../../_components/travel-parts'
 import { TownMap } from '../../_components/town-map'
 
 /** Every directory unit gets a page, researched or not — an empty page says so. */
@@ -103,15 +103,12 @@ export default async function TownPage({ params }: { params: Promise<{ area: str
 	return (
 		<>
 			<TravelMasthead
-				breadcrumb={
-					<TravelBreadcrumb trail={[{ label: area.name, href: `/${area.slug}` }]}>{unit.name}</TravelBreadcrumb>
-				}
 				kicker={area.name}
 				name={unit.name}
 				note={town?.summary ?? 'This town has not been researched for the guide yet.'}
 			>
 				<Rise delay={0.35} distance={14}>
-					<dl className='mt-10 grid gap-x-10 gap-y-6 border-t border-[var(--brass-line)] pt-8 sm:grid-cols-2 lg:grid-cols-4'>
+					<dl className='grid gap-x-10 gap-y-6 sm:grid-cols-2 lg:grid-cols-4'>
 						{facts.map((fact) => (
 							<div key={fact.label}>
 								<dt className='bb-label'>{fact.label}</dt>

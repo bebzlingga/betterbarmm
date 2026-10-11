@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { SectionHead, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { Stagger, StaggerItem } from '@betterbarmm/editorial'
 import {
 	places,
 	PLACE_KIND_LABEL,
@@ -9,7 +9,7 @@ import {
 	travelAreas,
 	type PlaceKind,
 } from '@betterbarmm/travel-data'
-import { Caution, GateList, TravelBreadcrumb, TravelMasthead } from '../_components/travel-parts'
+import { Caution, GateList, TravelMasthead, SectionHead } from '../_components/travel-parts'
 import { TravelMap } from '../_components/travel-map'
 import { PhotoFigure } from '../_components/photo-figure'
 import { photoForPlace } from '../_lib/media'
@@ -38,12 +38,11 @@ export default function PlacesPage() {
 	return (
 		<>
 			<TravelMasthead
-				breadcrumb={<TravelBreadcrumb>Places</TravelBreadcrumb>}
 				kicker={`${places.length} places · ${byArea.length} areas`}
 				name='Places'
 				note='Grouped by area, because that is how a trip is made. Each entry says what is there and what to arrange, get permitted or dress for — with no opening times or fees, the details guides get wrong first.'
 			>
-				<div className='mt-10 flex flex-wrap gap-2 border-t border-[var(--brass-line)] pt-8'>
+				<div className='flex flex-wrap gap-2'>
 					{kinds.map((kind) => (
 						<span key={kind} className='bb-chip'>
 							{PLACE_KIND_LABEL[kind]}

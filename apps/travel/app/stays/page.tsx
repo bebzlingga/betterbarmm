@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { SectionHead } from '@betterbarmm/editorial'
+
 import {
 	areaLodging,
 	LODGING_KIND_LABEL,
@@ -8,7 +8,7 @@ import {
 	NOTABLE_STAYS_CAVEAT,
 	travelAreas,
 } from '@betterbarmm/travel-data'
-import { Caution, GateList, TravelBreadcrumb, TravelMasthead } from '../_components/travel-parts'
+import { Caution, GateList, TravelMasthead, SectionHead } from '../_components/travel-parts'
 
 export const metadata: Metadata = {
 	title: 'Where to sleep',
@@ -22,12 +22,11 @@ export default function StaysPage() {
 	return (
 		<>
 			<TravelMasthead
-				breadcrumb={<TravelBreadcrumb>Where to sleep</TravelBreadcrumb>}
 				kicker='Lodging across the seven areas'
 				name='Where to sleep'
 				note='Built the opposite way round from the usual: this describes how lodging works in each area rather than listing establishments with rates and phone numbers that would be stale within a season. Outside Cotabato City the booking sites barely cover this region, and a property’s absence from them says nothing about whether it exists or is any good.'
 			>
-				<div className='mt-10 border-t border-[var(--brass-line)] pt-8'>
+				<div>
 					<Caution label='Verify before you travel'>{lodgingCaveat}</Caution>
 				</div>
 			</TravelMasthead>

@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { LineReveal, Rise } from '@betterbarmm/editorial'
 import { FOOTING_LABEL, PLACE_KIND_LABEL, type Place, type TravelFooting } from '@betterbarmm/travel-data'
 
@@ -11,40 +10,6 @@ import { FOOTING_LABEL, PLACE_KIND_LABEL, type Place, type TravelFooting } from 
    they are looking at, which is a problem the record-keeping
    workspaces do not have and this one has on every page.
    ============================================================ */
-
-/** The trail back up, printed as a line rather than a widget. */
-export function TravelBreadcrumb({
-	trail,
-	children,
-}: {
-	trail?: { label: string; href: string }[]
-	children: React.ReactNode
-}) {
-	return (
-		<nav
-			aria-label='Breadcrumb'
-			className='flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'
-		>
-			<Link href='/' className='transition hover:text-[var(--brass)]'>
-				Travel
-			</Link>
-			{(trail ?? []).map((step) => (
-				<span key={step.href} className='flex items-center gap-2'>
-					<span aria-hidden='true' className='text-[var(--brass)]'>
-						/
-					</span>
-					<Link href={step.href} className='transition hover:text-[var(--brass)]'>
-						{step.label}
-					</Link>
-				</span>
-			))}
-			<span aria-hidden='true' className='text-[var(--brass)]'>
-				/
-			</span>
-			<span className='text-[var(--ink)]'>{children}</span>
-		</nav>
-	)
-}
 
 /**
  * How settled travel is in an area, as a chip.
@@ -78,21 +43,18 @@ export function Caution({ label, children }: { label: string; children: React.Re
 }
 
 /**
- * The masthead of a guide page.
- *
- * The same warm ground and okir bloom the estate opens on, cut down one step —
- * a reader arrives at a guide page with a question rather than to be
- * persuaded of anything.
+ * The masthead of a guide page, in the Local Government workspace's style:
+ * the brand ground, the name to the left and its note to the right. What a
+ * page passes as children (its facts, its chips) sits in a light band under
+ * it rather than inside it.
  */
 export function TravelMasthead({
-	breadcrumb,
 	badges,
 	kicker,
 	name,
 	note,
 	children,
 }: {
-	breadcrumb: React.ReactNode
 	badges?: React.ReactNode
 	kicker: string
 	name: string
@@ -100,31 +62,69 @@ export function TravelMasthead({
 	children?: React.ReactNode
 }) {
 	return (
-		<section className='bb-lattice relative overflow-hidden'>
-
-			<div className='bb-container relative py-[clamp(3.75rem,7vw,6.5rem)]'>
-				{breadcrumb}
-
-				<Rise distance={12}>
-					<div className='mt-8 flex flex-wrap items-center gap-2.5'>
-						{badges}
-						<span className='bb-label'>{kicker}</span>
-					</div>
-				</Rise>
-
-				<LineReveal lines={[name]} delay={0.06} className='bb-display-md mt-5 text-[var(--ink)]' />
-
-				{note ? (
-					<Rise delay={0.25} distance={14}>
-						<p className='mt-7 text-[15px] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>{note}</p>
+		<>
+			<section className='bb-lattice brand-bg relative overflow-hidden'>
+				<div className='bb-container relative py-[clamp(3.75rem,7vw,6.5rem)]'>
+					<Rise distance={12}>
+						<div className='flex flex-wrap items-center gap-2.5'>
+							{badges}
+							<span className='bb-label'>{kicker}</span>
+						</div>
 					</Rise>
-				) : null}
 
-				{children}
+					<div className='lg:grid lg:grid-cols-[1.1fr_1fr] lg:items-end lg:gap-16'>
+						<LineReveal lines={[name]} delay={0.06} className='bb-display-md mt-5 text-[var(--ink)]' />
+						{note ? (
+							<Rise delay={0.25} distance={14}>
+								<p className='mt-7 text-[15px] leading-7 text-[var(--ink-2)] lg:mt-0 lg:text-right lg:leading-6'>{note}</p>
+							</Rise>
+						) : null}
+					</div>
+				</div>
+
+				<div className='bb-weave' aria-hidden='true' />
+			</section>
+
+			{children ? (
+				<section className='bg-[var(--paper-2)]'>
+					<div className='bb-container py-10'>{children}</div>
+				</section>
+			) : null}
+		</>
+	)
+}
+
+/**
+ * A section heading in the Local Government workspace's style: one plain
+ * title, the note under it. Takes the estate SectionHead's props so a page
+ * swaps one import; the counter and kicker are no longer drawn.
+ */
+export function SectionHead({
+	title,
+	titleMuted,
+	lead,
+	aside,
+	className = '',
+}: {
+	index?: string
+	eyebrow?: string
+	title: string
+	titleMuted?: string
+	lead?: string
+	aside?: React.ReactNode
+	size?: 'md' | 'sm'
+	className?: string
+}) {
+	return (
+		<div className={className}>
+			<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2'>
+				<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>
+					{titleMuted ? `${title} ${titleMuted}` : title}
+				</h2>
+				{aside}
 			</div>
-
-			<div className='bb-weave' aria-hidden='true' />
-		</section>
+			{lead ? <p className='mt-3 max-w-[48rem] text-[15px] leading-7 text-[var(--ink-3)]'>{lead}</p> : null}
+		</div>
 	)
 }
 

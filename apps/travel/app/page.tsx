@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { LineReveal, OkirRule, Rise, SectionHead, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { LineReveal, OkirRule, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
 import {
 	areaPoints,
 	dishes,
@@ -12,7 +12,7 @@ import {
 	signaturePlaces,
 	travelAreas,
 } from '@betterbarmm/travel-data'
-import { Caution, Footing, PlaceCard } from './_components/travel-parts'
+import { Caution, Footing, PlaceCard, SectionHead } from './_components/travel-parts'
 import { TravelMap } from './_components/travel-map'
 import { PhotoFigure } from './_components/photo-figure'
 import { photo, photoForDish, photoForPlace } from './_lib/media'

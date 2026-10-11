@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
-import { OkirRule, SectionHead, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { OkirRule, Stagger, StaggerItem } from '@betterbarmm/editorial'
 import { dishes, foodNotes, type FoodTradition } from '@betterbarmm/travel-data'
-import { TravelBreadcrumb, TravelMasthead } from '../_components/travel-parts'
+import { TravelMasthead, SectionHead } from '../_components/travel-parts'
 import { PhotoFigure } from '../_components/photo-figure'
 import { photoForDish } from '../_lib/media'
 
@@ -31,7 +31,6 @@ export default function FoodPage() {
 	return (
 		<>
 			<TravelMasthead
-				breadcrumb={<TravelBreadcrumb>Food</TravelBreadcrumb>}
 				kicker={`${dishes.length} things to eat`}
 				name='Food'
 				note='The best reason to come, and the least written-about food in the Philippines: halal, rich in coconut, turmeric and chilli, closer to Sabah and Sulawesi than to Luzon. There is no single Bangsamoro cuisine — each dish names whose it is.'
