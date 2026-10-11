@@ -96,7 +96,7 @@ export default function AboutPage() {
 							So that anyone can check what their government does.
 						</h2>
 					</div>
-					<div className='space-y-5 text-[16px] leading-8 text-[var(--ink-2)]'>
+					<div className='space-y-5 text-[16px] leading-8 text-[var(--ink-2)] lg:pt-9'>
 						<p>
 							What the Bangsamoro government decides, spends and promises is public in principle. In practice it
 							arrives as scanned PDFs spread across many agency websites, each with its own idea of an index. A record
