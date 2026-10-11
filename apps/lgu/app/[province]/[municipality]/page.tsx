@@ -8,8 +8,10 @@ import {
 	findUnit,
 	formatArea,
 	formatNumber,
+	areaHistory,
 	growth,
 	unitClass,
+	winners,
 	type LguProvince,
 	type LguUnit,
 } from '@betterbarmm/lgu-data'
@@ -17,16 +19,13 @@ import {
 	LguBreadcrumb,
 	LguMasthead,
 	LguSourceNote,
-	LguStat,
 } from '../../_components/lgu-parts'
 import { lguData, personName } from '@betterbarmm/lgu-data'
-import { finances, row } from '@betterbarmm/lgu-data/fiscal'
-import { barangayOfficials, rosterCoverage, unitRosters } from '@betterbarmm/lgu-data/barangay-officials'
-import { BarangayList } from '../../_components/barangay-list'
-import { LguTabs } from '../../_components/lgu-tabs'
-import { LguFinances, LguRecognition } from '../../_components/lgu-finances'
+import { barangayOfficials, unitRosters } from '@betterbarmm/lgu-data/barangay-officials'
+import { LguFinances } from '../../_components/lgu-finances'
 import { LguDisclosure } from '../../_components/lgu-disclosure'
 import { NtaChart } from '../../_components/nta-chart'
+import { Official } from '../../_components/official'
 export function generateStaticParams() {
 	return allUnitParams()
 }
@@ -48,11 +47,6 @@ export async function generateMetadata({
 		title: `${found.unit.name}, ${where} — Local government directory`,
 		description: `${unitClass(found.unit)} in ${where}. Population, land area, ${found.unit.barangays.length} barangays, elected offices, and devolved services.`,
 	}
-}
-
-/** The label a unit answers to — used in headings and prose alike. */
-function unitKind(unit: LguUnit): 'province' | 'city' | 'municipality' {
-	return unit.isCity ? 'city' : 'municipality'
 }
 
 /**
@@ -80,149 +74,7 @@ function opening(unit: LguUnit, province: LguProvince): string {
 	return `${unit.name} is ${where}.`
 }
 
-/**
- * The answers most visitors came for, from the tabs that hold them in full:
- * who is in office, how the town is classed, what it receives, and whether it
- * has passed the Seal of Good Local Governance. Each row opens its tab.
- */
-function AtAGlance({ unit, province }: { unit: LguUnit; province: LguProvince }) {
-	const key = `${province.slug}/${unit.slug}`
-	const term = lguData.officials?.currentTermId
-	const canvass = term ? unit.officials?.[term] : undefined
-	const mayor = canvass?.mayor?.ranked[0]?.name
-	const vice = canvass?.viceMayor?.ranked[0]?.name
-	const ntaYear = finances.years.at(-1)!
-	const nta = row(finances, key, ntaYear)?.nta as number | null | undefined
-
-	const rows: [string, string, string][] = [
-		['Mayor', mayor ? personName(mayor) : 'No canvass on record', '/officials'],
-		['Vice-mayor', vice ? personName(vice) : '—', '/officials'],
-		[`NTA, FY ${ntaYear}`, nta ? (nta >= 1e9 ? `₱${(nta / 1e9).toFixed(2)} billion` : `₱${(nta / 1e6).toFixed(1)} million`) : '—', '#finances'],
-	]
-
-	return (
-		<div className='mt-10 border-t border-[var(--ink)]'>
-			<h3 className='pt-4 text-[14px] font-semibold text-[var(--ink)]'>At a glance</h3>
-			<dl className='mt-2'>
-				{rows.map(([label, value, href]) => (
-					<a
-						key={label}
-						href={href}
-						className='flex items-baseline justify-between gap-6 border-b border-[var(--rule-soft)] py-3 transition hover:bg-[var(--paper-2)]'
-					>
-						<dt className='text-[13px] text-[var(--ink-3)]'>{label}</dt>
-						<dd className='text-right text-[14px] font-medium text-[var(--ink)]'>{value}</dd>
-					</a>
-				))}
-			</dl>
-		</div>
-	)
-}
-
-function Overview({ unit, province }: { unit: LguUnit; province: LguProvince }) {
-	const change = growth(unit)
-	const roster = rosterCoverage([unit])
-
-	// Naming the area is only worth a row when it is a different place from the
-	// unit — Cotabato City is its own area, and "Area: Cotabato City" says
-	// nothing on Cotabato City's page.
-	// A share needs something to be a share of: Cotabato City is its whole area.
-	const share =
-		province.municipalities.length > 1 && unit.population != null && province.population
-			? Math.round((unit.population / province.population) * 1000) / 10
-			: null
-	const facts: [string, string][] = [
-		...(unit.alsoKnownAs ? ([['Also known as', unit.alsoKnownAs]] as [string, string][]) : []),
-		['Population, 2020 census', formatNumber(unit.population2020)],
-		...(share != null ? ([[`Share of ${province.name}’s people`, `${share}%`]] as [string, string][]) : []),
-		['Captains in DILG’s directory', `${roster.listed} of ${roster.total}`],
-		['PSGC code', unit.psgc ?? 'Not yet assigned'],
-	]
-
-	return (
-		<div>
-		<div className='grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16'>
-			<div>
-				<p className='text-[15px] leading-7 text-[var(--ink-2)]'>
-					{opening(unit, province)} It is divided into {unit.barangays.length}{' '}
-					{unit.barangays.length === 1 ? 'barangay' : 'barangays'}
-					{unit.population != null
-						? `, and had ${formatNumber(unit.population)} residents at the 2024 census.`
-						: '.'}
-				</p>
-
-				{[unit.nameNote, unit.populationNote].filter(Boolean).map((note) => (
-					<p
-						key={note}
-						className='mt-6 max-w-2xl border-l-2 border-[var(--brass)] pl-4 text-[13px] leading-6 text-[var(--ink-2)]'
-					>
-						{note}
-					</p>
-				))}
-
-				{unit.formedFrom ? (
-					<p className='mt-6 max-w-2xl text-[14.5px] leading-7 text-[var(--ink-2)]'>
-						It was constituted from barangays of {unit.formedFrom} in North Cotabato, which voted to
-						join BARMM in the 2019 plebiscite. The municipality was created by Bangsamoro Autonomy
-						Act and ratified by plebiscite on April 13, 2024 — recent enough that national
-						statistics for it are not yet published separately.
-					</p>
-				) : null}
-
-				<AtAGlance unit={unit} province={province} />
-			</div>
-
-			<div>
-				<div className='grid grid-cols-2 gap-x-6 gap-y-8 sm:gap-x-8'>
-					<LguStat
-						value={formatNumber(unit.population)}
-						count={unit.population}
-						label='Population (2024)'
-					/>
-					<LguStat value={formatArea(unit.areaKm2)} label='Land area' />
-					<LguStat
-						value={density(unit) == null ? '—' : formatNumber(density(unit))}
-						count={density(unit)}
-						label='People per km²'
-					/>
-					<LguStat
-						value={change == null ? '—' : `${change > 0 ? '+' : ''}${change}%`}
-						label='Change since 2020'
-					/>
-				</div>
-
-				<dl className='mt-10'>
-					{facts.map(([label, value]) => (
-						<div
-							key={label}
-							className='flex items-baseline justify-between gap-4 border-b border-[var(--rule-soft)] py-2.5'
-						>
-							<dt className='text-[13px] text-[var(--ink-3)]'>{label}</dt>
-							<dd className='text-right text-[14px] font-medium text-[var(--ink)]'>{value}</dd>
-						</div>
-					))}
-				</dl>
-
-				{/* Services and charges are set by the Code and read the same on all
-				    108 pages, so they live once, on What each level does. */}
-				<a
-					href='/what-each-level-does#services'
-					className='mt-8 block border-t border-[var(--rule)] pt-4 text-[14px] leading-6 text-[var(--ink-2)] hover:text-[var(--accent)]'
-				>
-					What a {unitKind(unit)} must provide, and the most it may charge you, is set by the Bangsamoro
-					Local Governance Code — the same for every {unitKind(unit)}. <span className='font-semibold text-[var(--ink)] underline underline-offset-4'>See what each level does</span>
-				</a>
-			</div>
-		</div>
-
-		{/* How the town is classed, audited and recognised — about the unit, not
-		    its money, so here rather than under Finances (user decision). */}
-		<div className='mt-14'>
-			<LguRecognition unitKey={`${province.slug}/${unit.slug}`} />
-		</div>
-		</div>
-	)
-}
+const H2 = 'scroll-mt-32 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
 
 export default async function UnitPage({
 	params,
@@ -244,6 +96,52 @@ export default async function UnitPage({
 	const trail =
 		province.name === unit.name ? [] : [{ label: province.name, href: `/${province.slug}` }]
 
+	const key = `${province.slug}/${unit.slug}`
+	const rosters = unitRosters(unit.slug)
+	const history = areaHistory(unit.slug)
+	const change = growth(unit)
+	const lead = `${opening(unit, province)} It is divided into ${unit.barangays.length} ${unit.barangays.length === 1 ? 'barangay' : 'barangays'}${unit.population != null ? `, and had ${formatNumber(unit.population)} residents at the 2024 census` : ''}.`
+
+	// A share needs something to be a share of: Cotabato City is its whole area.
+	const share =
+		province.municipalities.length > 1 && unit.population != null && province.population
+			? Math.round((unit.population / province.population) * 1000) / 10
+			: null
+	const stats = [
+		{
+			label: 'Population (2024)',
+			value: formatNumber(unit.population),
+			detail: change != null ? `${change > 0 ? '+' : ''}${change}% since the 2020 census` : null,
+		},
+		{ label: 'Barangays', value: String(unit.barangays.length), detail: null },
+		{
+			label: 'Land area',
+			value: formatArea(unit.areaKm2),
+			detail: density(unit) != null ? `${formatNumber(density(unit))} people per km²` : null,
+		},
+		...(share != null
+			? [{ label: `Share of ${province.name}’s people`, value: `${share}%`, detail: null }]
+			: []),
+		{ label: 'PSGC code', value: unit.psgc ?? 'Not yet assigned', detail: null },
+	]
+
+	// Who governs it now: the top of the current canvass for mayor and vice-mayor,
+	// and the council's winners at its seats.
+	const termId = lguData.officials?.currentTermId
+	const current = termId ? unit.officials?.[termId] : undefined
+	const termLabel = termId ? `${termId.replace('-', '–')} term` : ''
+	const officials = (
+		[
+			['Mayor', current?.mayor],
+			['Vice-Mayor', current?.viceMayor],
+		] as const
+	).flatMap(([position, contest]) => {
+		const top = contest?.ranked[0]
+		return top ? [{ position, name: personName(top.name), party: top.party ?? null }] : []
+	})
+	const council = (current?.council ?? []).flatMap((contest) => winners(contest))
+	const councilName = unit.isCity ? 'Sangguniang Panlungsod' : 'Sangguniang Bayan'
+
 	return (
 		<>
 			<LguMasthead
@@ -258,44 +156,141 @@ export default async function UnitPage({
 					.join(' · ')}
 				name={unit.name}
 			>
-				<NtaChart unitKey={`${province.slug}/${unit.slug}`} />
+				{history ? (
+					<div className='mt-12 gap-20 text-[15px] leading-7 text-[var(--ink-2)] lg:columns-2 [&>p+p]:mt-4'>
+						{history.paragraphs.map((paragraph) => (
+							<p key={paragraph.slice(0, 40)} className='break-inside-avoid-column'>
+								{paragraph}
+							</p>
+						))}
+					</div>
+				) : (
+					<div className='mt-12 max-w-[58rem] space-y-4 text-[15px] leading-7 text-[var(--ink-2)]'>
+						<p>{lead}</p>
+						{[unit.nameNote, unit.populationNote].filter(Boolean).map((note) => (
+							<p key={note}>{note}</p>
+						))}
+						{unit.formedFrom ? (
+							<p>
+								It was constituted from barangays of {unit.formedFrom} in North Cotabato, which voted to join BARMM in
+								the 2019 plebiscite, and ratified as a municipality by plebiscite on April 13, 2024.
+							</p>
+						) : null}
+					</div>
+				)}
 			</LguMasthead>
 
-			<section className='bb-container bb-section-bottom'>
-				<LguTabs
-					tabs={[
-						{
-							id: 'overview',
-							label: 'Overview',
-							panel: <Overview unit={unit} province={province} />,
-						},
-						{
-							id: 'barangays',
-							label: 'Barangays',
-							badge: unit.barangays.length,
-							panel: (
-								<BarangayList
-									barangays={unit.barangays}
-									rosters={unitRosters(unit.slug)}
-									capturedAt={barangayOfficials.capturedAt}
-									sourceHref={barangayOfficials.source.href}
-								/>
-							),
-						},
-						{
-							id: 'finances',
-							label: 'Finances',
-							panel: <LguFinances unitKey={`${province.slug}/${unit.slug}`} name={unit.name} recognition={false} />,
-						},
-						{
-							id: 'disclosure',
-							label: 'Full disclosure',
-							panel: <LguDisclosure unitKey={`${province.slug}/${unit.slug}`} name={unit.name} />,
-						},
-					]}
-				/>
+			<div className='bb-container bb-section grid gap-14 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-28'>
+				{/* ---- The town, read down: its barangays, then its own records ---- */}
+				<div className='min-w-0'>
+					<section>
+						<h2 id='barangays' className={H2}>
+							<span className='num text-[var(--ink-3)]'>{unit.barangays.length}</span>{' '}
+							{unit.barangays.length === 1 ? 'Barangay' : 'Barangays'}
+						</h2>
+						<ul className='mt-6 columns-2 gap-x-8 sm:columns-3 lg:columns-4'>
+							{[...unit.barangays]
+								.sort((x, y) => x.name.localeCompare(y.name))
+								.map((barangay) => {
+									const captain = rosters[barangay.psgc ?? barangay.name]?.punongBarangay?.name
+									return (
+										<li key={barangay.psgc ?? barangay.name} className='break-inside-avoid border-b border-[var(--rule-soft)] py-2.5'>
+											<span className='block text-[15px] text-[var(--ink)]'>{barangay.name}</span>
+											{captain ? (
+												<span className='mt-0.5 block text-[12px] text-[var(--ink-3)]'>{personName(captain)}</span>
+											) : null}
+										</li>
+									)
+								})}
+						</ul>
+						<p className='mt-4 text-[12.5px] leading-6 text-[var(--ink-mute)] transition-colors hover:text-[var(--ink-3)]'>
+							Punong barangay from DILG&rsquo;s directory, read {barangayOfficials.capturedAt}, where it lists one.{' '}
+							<a href={barangayOfficials.source.href} target='_blank' rel='noreferrer' className='rule-link'>
+								Source
+							</a>
+						</p>
+					</section>
 
-				<LguSourceNote className='mt-14' />
+					{/* The town's own NTA, year by year. */}
+					<section className='mt-20'>
+						<NtaChart unitKey={key} />
+					</section>
+
+					<section className='mt-20'>
+						<h2 id='disclosure' className={H2}>
+							Full disclosure
+						</h2>
+						<div className='mt-6'>
+							<LguDisclosure unitKey={key} name={unit.name} />
+						</div>
+					</section>
+
+					<section className='mt-20'>
+						<h2 id='finances' className={H2}>
+							Finances
+						</h2>
+						<div className='mt-6'>
+							<LguFinances unitKey={key} name={unit.name} recognition={false} />
+						</div>
+					</section>
+				</div>
+
+				{/* ---- Beside it: the town in figures, then who governs it ---- */}
+				<aside className='order-first lg:order-none'>
+					<dl>
+						{stats.map((stat) => (
+							<div key={stat.label} className='border-b border-[var(--rule)] py-5 first:pt-0'>
+								<dt className='bb-label'>{stat.label}</dt>
+								<dd className='num mt-2 text-[1.6rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
+									{stat.value}
+								</dd>
+								{stat.detail ? <dd className='mt-1.5 text-[12.5px] leading-5 text-[var(--ink-3)]'>{stat.detail}</dd> : null}
+							</div>
+						))}
+					</dl>
+
+					{officials.length > 0 || council.length > 0 ? (
+						<div className='mt-10'>
+							<h2 className='text-[15px] font-semibold text-[var(--ink)]'>Current officials</h2>
+							<p className='mt-1 text-[12.5px] text-[var(--ink-3)]'>{termLabel}</p>
+							<ul className='mt-4'>
+								{officials.map((official) => (
+									<Official key={official.position} name={official.name} party={official.party} role={official.position} />
+								))}
+							</ul>
+							{council.length > 0 ? (
+								<div className='mt-8'>
+									<h3 className='text-[14px] font-semibold text-[var(--ink)]'>{councilName}</h3>
+									<ul className='mt-1'>
+										{council.map((member) => (
+											<Official key={member.name} name={personName(member.name)} party={member.party ?? null} role='Council member' />
+										))}
+									</ul>
+								</div>
+							) : null}
+							<Link href='/officials' className='rule-link mt-6 inline-block text-[13px]'>
+								Every official, every term
+							</Link>
+						</div>
+					) : null}
+				</aside>
+			</div>
+
+			<section className='bb-container bb-section-bottom'>
+				{history ? (
+					<p className='mb-8 text-[12.5px] leading-6 text-[var(--ink-mute)] transition-colors hover:text-[var(--ink-3)]'>
+						<span className='font-semibold text-[var(--ink-3)]'>History sources:</span>{' '}
+						{history.sources.map((source, i) => (
+							<span key={source.href}>
+								{i > 0 ? ' · ' : ''}
+								<a href={source.href} target='_blank' rel='noreferrer' className='underline decoration-[var(--rule)] underline-offset-2 hover:text-[var(--ink)]'>
+									{source.label}
+								</a>
+							</span>
+						))}
+					</p>
+				) : null}
+				<LguSourceNote />
 
 				{/* ---- Move along the province ---- */}
 				<div className='mt-10 grid bg-[var(--paper-2)] sm:grid-cols-2'>

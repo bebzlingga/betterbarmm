@@ -26,6 +26,7 @@ import {
 import { LguFinances } from '../_components/lgu-finances'
 import { LguDisclosure } from '../_components/lgu-disclosure'
 import { NtaChart } from '../_components/nta-chart'
+import { Official } from '../_components/official'
 import { finances, row } from '@betterbarmm/lgu-data/fiscal'
 
 export function generateStaticParams() {
@@ -51,19 +52,6 @@ export async function generateMetadata({
 			province.barangayCount,
 		)} barangays. Population, land area, officials and services for ${province.name} in BARMM.`,
 	}
-}
-
-/** One office-holder: name and role on the left, party on the right. */
-function Official({ name, party, role }: { name: string; party: string | null; role: string }) {
-	return (
-		<li className='flex items-baseline justify-between gap-4 border-b border-[var(--rule)] py-3'>
-			<span className='min-w-0'>
-				<span className='block text-[14.5px] font-semibold leading-snug text-[var(--ink)]'>{name}</span>
-				<span className='mt-0.5 block text-[12px] text-[var(--ink-3)]'>{role}</span>
-			</span>
-			{party ? <span className='shrink-0 text-[12px] font-medium text-[var(--ink-2)]'>{party}</span> : null}
-		</li>
-	)
 }
 
 const H2 = 'scroll-mt-32 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
@@ -141,7 +129,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 			>
 				{history ? (
 					<div className='mt-12'>
-						<div className='gap-12 text-[15px] leading-7 text-[var(--ink-2)] lg:columns-2 [&>p+p]:mt-4'>
+						<div className='gap-20 text-[15px] leading-7 text-[var(--ink-2)] lg:columns-2 [&>p+p]:mt-4'>
 							{history.paragraphs.map((paragraph) => (
 								<p key={paragraph.slice(0, 40)} className='break-inside-avoid-column'>
 									{paragraph}
