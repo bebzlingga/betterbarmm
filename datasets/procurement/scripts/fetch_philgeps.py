@@ -70,14 +70,19 @@ def query(report, entity, cols, where, count, restart=None):
 
 def decode(res, width):
     """Power BI's compressed rows: each row carries only the values that
-    changed ("R" marks repeats, "Ø" nulls); strings may index ValueDicts."""
+    changed, in "C" or under the column's own name ("R" marks repeats, "Ø"
+    nulls); strings may index ValueDicts."""
     ds = res['results'][0]['result']['data']['dsr']['DS'][0]
     dicts, rows, prev, schema = ds.get('ValueDicts', {}), [], [None] * width, None
     for r in ds['PH'][0]['DM0']:
         schema = r.get('S', schema)
         values, row, ci = r.get('C', []), [], 0
         for i, s in enumerate(schema):
-            if r.get('R', 0) >> i & 1:
+            if s['N'] in r:  # a value can also come under its column's name
+                v = r[s['N']]
+                if 'DN' in s and isinstance(v, int):
+                    v = dicts[s['DN']][v]
+            elif r.get('R', 0) >> i & 1:
                 v = prev[i]
             elif r.get('Ø', 0) >> i & 1:
                 v = None

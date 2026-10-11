@@ -191,3 +191,15 @@ export function searchNotices({ entity, q, year, supplier, awarded, page = 1 }: 
 }
 
 export type NoticeRow = ReturnType<typeof searchNotices>['rows'][number]
+
+/** The largest values of a tally, as label and value, largest first. */
+function top(tally: Map<string, number>, count = 10) {
+	return [...tally.entries()].sort((a, b) => b[1] - a[1]).slice(0, count).map(([label, value]) => ({ label, value }))
+}
+
+/** What BARMM offices buy most, by approved budget. */
+export const topCategories = (() => {
+	const tally = new Map<string, number>()
+	for (const n of notices) if (n.category) tally.set(n.category, (tally.get(n.category) ?? 0) + (n.abc ?? 0))
+	return top(tally)
+})()
