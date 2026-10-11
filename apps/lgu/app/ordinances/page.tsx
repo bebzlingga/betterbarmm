@@ -80,11 +80,28 @@ export default function OrdinancesPage() {
 			<div className='bb-container bb-section max-w-[72rem]'>
 				<section>
 					<h2 className={H2}>What an ordinance is</h2>
-					<p className='mt-5 max-w-[48rem] text-[15px] leading-7 text-[var(--ink-2)]'>
-						An ordinance is a local law. Each level of local government has a council that makes them, presided over
-						by the vice-governor, the vice-mayor or the punong barangay. It sets the budget, the local taxes and fees,
-						and the rules people and businesses in the area must follow.
-					</p>
+					<div className='mt-5 max-w-[48rem] space-y-4 text-[15px] leading-7 text-[var(--ink-2)]'>
+						<p>
+							An ordinance is a local law. Each level of local government has a council that makes them: the
+							Sangguniang Panlalawigan for a province, the Sangguniang Panlungsod for a city, the Sangguniang Bayan
+							for a municipality and the Sangguniang Barangay for a barangay (s. 56). The vice-governor, the
+							vice-mayor or the punong barangay presides, and votes only to break a tie (s. 57).
+						</p>
+						<p>
+							Ordinances set the unit&rsquo;s budget for the year, the local taxes, fees and charges it collects, and
+							the rules people and businesses in the area must follow, from market and traffic rules to the uses
+							land may be put to. Breaking one can carry a fine and even jail: for a tax ordinance, a fine of up to
+							₱1,200,000 and up to 6 months&rsquo; imprisonment set by a province, city or municipality, and up to
+							₱10,000 set by a barangay (s. 576).
+						</p>
+						<p>
+							A council&rsquo;s power has limits. A governor or mayor may veto an ordinance only if it goes beyond
+							the council&rsquo;s powers or harms the public welfare (s. 63), and the province can strike down a
+							town&rsquo;s ordinance for exceeding its powers (s. 64). A tax ordinance can be appealed to the
+							Secretary of Justice within 30 days of taking effect, and then to the courts (s. 212). Every
+							ordinance must also be made available in the language most people in the area understand (s. 67).
+						</p>
+					</div>
 				</section>
 
 				<section className='mt-20'>
