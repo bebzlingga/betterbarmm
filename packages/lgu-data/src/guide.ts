@@ -61,7 +61,7 @@ export const lguLadder: LguRung[] = [
 	},
 	{
 		level: 'The barangay',
-		what: 'The basic political unit — 2,182 of them across the units in this directory.',
+		what: 'The basic political unit — 2,185 of them across the units in this directory.',
 		elects: [
 			'Punong Barangay',
 			'7 Sangguniang Barangay members',
