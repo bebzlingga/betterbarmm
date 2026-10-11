@@ -23,27 +23,27 @@ export const metadata: Metadata = {
    rule is cited to the Code or its IRR; the income bar is BLGF's.
    ============================================================ */
 
-/** The chain, top to bottom. Each stage says what it is and what it holds. */
+/** Who sends money to whom. Each card says what it gives and who gets it. */
 const CHAIN = [
 	{
 		tier: 'National government',
 		amount: '5%',
-		amountNote: 'of net national internal revenue',
-		what: 'A block grant to BARMM, set by formula rather than negotiated. The National Tax Allotment straight to every LGU — automatic, and with no conditions on it.',
+		amountNote: 'of national tax collections, each year, to the Bangsamoro Government',
+		what: 'This block grant goes to the region. Separately, every province, city, municipality and barangay gets its own National Tax Allotment straight from the national government — it does not pass through the region.',
 		basis: 'Bangsamoro Organic Law, art. XII',
 	},
 	{
 		tier: 'Bangsamoro Government',
 		amount: '₱114.08B',
-		amountNote: 'the enacted FY 2026 budget',
-		what: 'Runs its own ministries, and passes 40% of its share of national taxes collected inside BARMM down to the units — on top of what it appropriates for local government support.',
+		amountNote: 'its budget for FY 2026',
+		what: 'Mostly spent on its own ministries. It also passes some down: 40% of the national taxes collected inside BARMM goes to the local governments, on top of other support for them.',
 		basis: 'Code s. 313',
 	},
 	{
-		tier: 'Province · city · municipality · barangay',
+		tier: 'Your province, city, municipality or barangay',
 		amount: '3',
-		amountNote: 'sources, in order of size',
-		what: 'The National Tax Allotment, which is most of it. Bangsamoro transfers. And its own taxes and fees — the only source it actually decides.',
+		amountNote: 'sources of money',
+		what: 'Its own National Tax Allotment, which is nearly all of it. Some help from the Bangsamoro Government. And the taxes and fees it collects itself — the only part it decides.',
 		basis: 'Code s. 21',
 	},
 ] as const
@@ -402,7 +402,7 @@ export default function LocalBudgetsPage() {
 			{/* ---- Where the money comes from ---- */}
 			<Section
 				id='money'
-				lead='Money flows down: from the national government, to the Bangsamoro Government, to your province, city or municipality and barangay. Each level decides how to spend its own share.'
+				lead='A local government gets most of its money straight from the national government. The Bangsamoro Government adds some, and the local government raises the rest itself. Each one decides how to spend what it gets.'
 			>
 				{/* The flow as connected cards: across on a wide screen, down on a phone. */}
 				<ol className='mt-10 grid gap-3 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)_auto_minmax(0,1fr)] lg:items-stretch'>
