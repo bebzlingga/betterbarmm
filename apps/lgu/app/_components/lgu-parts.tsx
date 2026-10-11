@@ -149,6 +149,7 @@ export function LguMasthead({
 	noteBeside = false,
 	noteEnd = false,
 	center = false,
+	chart = false,
 	children,
 }: {
 	breadcrumb?: React.ReactNode
@@ -163,13 +164,15 @@ export function LguMasthead({
 	noteEnd?: boolean
 	/** Centre the kicker and the name (Governance Code). */
 	center?: boolean
+	/** A chart closes the masthead: less room under it. */
+	chart?: boolean
 	/** The figures row, and anything else that belongs above the fold. */
 	children?: React.ReactNode
 }) {
 	return (
 		<section className='bb-lattice brand-bg relative overflow-hidden'>
 
-			<div className={`bb-container relative py-[clamp(3.75rem,7vw,6.5rem)] ${center ? 'text-center' : ''}`}>
+			<div className={`bb-container relative pt-[clamp(3.75rem,7vw,6.5rem)] ${chart ? 'pb-[clamp(2rem,4vw,3rem)]' : 'pb-[clamp(3.75rem,7vw,6.5rem)]'} ${center ? 'text-center' : ''}`}>
 				{breadcrumb}
 
 				<Rise distance={12}>

@@ -47,16 +47,17 @@ export default function LgsfPage() {
 				name='Support fund'
 				noteBeside
 				noteEnd
+				chart
 				note='On top of its NTA, a town or province can be given money from the national Local Government Support Fund for a named project: a rescue vehicle, a day care centre, food packs. This is every one DBM lists for BARMM. Allotted is what was approved; released is the cash sent so far.'
 			>
-				<figure className='m-0 mt-10'>
+				<figure className='m-0 mt-16 lg:mt-20'>
 					<div className='grid h-40 items-end gap-3 sm:gap-6' style={cols}>
 						{byYear.map(({ year, total }) => (
 							<div key={year} className='flex h-full flex-col items-center justify-end'>
 								<span className='num mb-1.5 text-[11px] text-[var(--ink-2)] sm:text-[12.5px]'>
 									₱{total >= 1e9 ? `${(total / 1e9).toFixed(2)}B` : `${Math.round(total / 1e6)}M`}
 								</span>
-								<div className='w-full max-w-16 bg-[var(--accent)]' style={{ height: `calc(${(total / top) * 100}% - 1.5rem)` }} />
+								<div className='w-full max-w-16' style={{ height: `calc(${(total / top) * 100}% - 1.5rem)`, background: 'linear-gradient(to top, transparent, var(--accent))' }} />
 							</div>
 						))}
 					</div>

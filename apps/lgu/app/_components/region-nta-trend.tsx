@@ -22,7 +22,7 @@ export function RegionNtaTrend() {
 	const top = Math.max(...NTA_TREND.map((y) => y.total))
 	const cols = { gridTemplateColumns: `repeat(${NTA_TREND.length}, minmax(0, 1fr))` }
 	return (
-		<figure className='m-0 mt-10'>
+		<figure className='m-0 mt-16 lg:mt-20'>
 			<div className='grid h-48 items-end gap-1.5 sm:gap-4' style={cols}>
 				{NTA_TREND.map(({ year, total }) => (
 					<div key={year} className='flex h-full flex-col items-center justify-end'>
