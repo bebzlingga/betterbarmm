@@ -65,14 +65,15 @@ const workspaces: Workspace[] = [
 		measure: 'LGU directory',
 		state: 'live',
 	},
-	{
-		label: 'Procurement',
-		href: 'https://procurement.betterbarmm.com',
-		blurb:
-			'Every bid notice a BARMM government office has posted on PhilGEPS since 2019, its approved budget, and who won the contract.',
-		measure: 'PhilGEPS 2019–2026',
-		state: 'live',
-	},
+	// Procurement hidden for now.
+	// {
+	// 	label: 'Procurement',
+	// 	href: 'https://procurement.betterbarmm.com',
+	// 	blurb:
+	// 		'Every bid notice a BARMM government office has posted on PhilGEPS since 2019, its approved budget, and who won the contract.',
+	// 	measure: 'PhilGEPS 2019–2026',
+	// 	state: 'live',
+	// },
 	{
 		label: 'Travel',
 		href: '/soon',
