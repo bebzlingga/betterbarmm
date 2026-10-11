@@ -295,7 +295,7 @@ export default function SalariesPage() {
 						within its payroll cap, or a lower uniform rate if it cannot afford its own.
 					</p>
 					<div className='mt-6 overflow-x-auto'>
-						<table className='w-full max-w-xl border-collapse text-left text-[14px]'>
+						<table className='w-full border-collapse text-left text-[14px]'>
 							<thead>
 								<tr className={HEAD}>
 									<th className={TH}>Income class</th>
