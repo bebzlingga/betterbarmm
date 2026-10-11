@@ -284,7 +284,7 @@ export function SiteNav() {
 						<nav
 							id='lgu-mobile-menu'
 							aria-label='Mobile navigation'
-							className='mx-auto max-w-[88rem] px-8 py-6 sm:px-6 text-sm text-[var(--ink-2)] lg:px-8'
+							className='mx-auto max-w-[88rem] px-8 py-6 sm:px-6 text-sm text-[var(--ink-2)] lg:px-8 max-h-[calc(100dvh-7.5rem)] overflow-y-auto overscroll-contain'
 						>
 							<p className='bb-label'>Officials</p>
 							<div className='mt-3 grid'>

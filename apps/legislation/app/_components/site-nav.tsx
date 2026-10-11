@@ -338,7 +338,7 @@ export function SiteNav() {
 					<div
 						className={`min-h-0 ${
 							isMenuOpen
-								? 'max-h-[calc(100dvh-6rem)] overflow-y-auto overscroll-contain'
+								? 'max-h-[calc(100dvh-7.5rem)] overflow-y-auto overscroll-contain'
 								: 'overflow-hidden'
 						}`}
 					>
