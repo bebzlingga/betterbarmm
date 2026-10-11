@@ -1,6 +1,6 @@
 'use client'
 
-import { CaretDownIcon, HandHeartIcon } from '@phosphor-icons/react'
+import { CaretDownIcon, HandHeartIcon, SquaresFourIcon } from '@phosphor-icons/react'
 // import { MapTrifoldIcon } from '@phosphor-icons/react'
 import { AnimatePresence, motion } from 'motion/react'
 import Link from 'next/link'
@@ -120,15 +120,11 @@ function Menu({
 						exit={{ opacity: 0, y: -6, scaleY: 0.96 }}
 						transition={{ duration: 0.24, ease: EASE }}
 						style={{ originY: 0 }}
-						className={`nav-menu absolute left-1/2 top-full z-40 mt-3 -translate-x-1/2 border border-[var(--ink)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] ${width}`}
+						className={`nav-menu absolute right-0 top-full z-40 mt-1 border border-[var(--ink)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] ${width}`}
 					>
 						{/* The brass hairline at the head of the panel is the same mark the
 						    section kickers use, so a dropdown reads as part of the page's
 						    own vocabulary rather than as a browser widget. */}
-						<span
-							aria-hidden='true'
-							className='absolute inset-x-0 top-0 h-px bg-[var(--brass)]'
-						/>
 						{children(() => setOpen(false))}
 					</motion.div>
 				) : null}
@@ -158,7 +154,25 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 			    the top of the document and the photograph — a 34px band above a
 			    full-bleed hero crops the sky exactly as a solid bar would. The two
 			    Discover pages carry these links in the menu and the footer. */}
-			{overlay ? null : <UtilityBar current='home' />}
+			{overlay ? null : (
+				<UtilityBar
+					current='home'
+					className='bb-strip bg-[var(--paper-2)]'
+					switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
+					end={
+						<>
+							<ThemeToggle />
+							{/* Phones have no room for it in the strip; the wrapper hides it. */}
+							<span className='hidden self-stretch sm:flex'>
+								<Link href='/contribute' className='bb-btn bb-btn-accent !px-4 !py-0 !text-[9.5px]'>
+									<HandHeartIcon size={13} weight='fill' aria-hidden='true' />
+									Contribute
+								</Link>
+							</span>
+						</>
+					}
+				/>
+			)}
 
 		<motion.header
 			animate={{ y: hidden ? '-100%' : '0%' }}
@@ -207,7 +221,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 					    stayed put, which is a wordmark rendered out of proportion. An
 					    `auto` track gives it exactly what it measures and hands the rest
 					    to the controls. */}
-					<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[auto_1fr] items-center gap-4 md:grid-cols-[1fr_auto_1fr]'>
+					<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[auto_1fr] items-center gap-4 md:grid-cols-[auto_minmax(0,1fr)_auto] md:gap-2'>
 						<div className='flex items-center gap-3'>
 							<Link href='/' onClick={closeMenu} className='w-fit shrink-0'>
 								{/* Over a photograph the ground is dark whatever the theme is,
@@ -217,7 +231,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 						</div>
 
 						{/* No frame or fill — the links are grouped by proximity alone. */}
-						<nav className='hidden items-center gap-1 md:flex'>
+						<nav className='hidden items-center justify-end gap-1 md:flex'>
 							<Menu label='Discover BARMM' active={activeItem === 'discover'} width='w-[15rem]'>
 								{(close) =>
 									discoverSections.map((item) => (
@@ -261,15 +275,14 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 						</nav>
 
 						<div className='flex items-center justify-end gap-2 md:gap-1.5'>
-							{/* The theme switch is a desktop control here. On a phone the row
-							    is a mark, a call to action and a way into the site, and a fourth
-							    icon between them read as clutter — it is a setting, which is
-							    what the menu panel is for. It moves there rather than being
-							    duplicated, so there is only ever one of it. */}
-							<div className='hidden items-center md:flex'>
-								<ThemeToggle />
-								<span className='w-1.5' aria-hidden='true' />
-							</div>
+							{/* The theme switch and Contribute live in the strip; on the overlay
+							    pages, which have no strip, they stay in the bar. */}
+							{overlay ? (
+								<div className='hidden items-center md:flex'>
+									<ThemeToggle />
+									<span className='w-1.5' aria-hidden='true' />
+								</div>
+							) : null}
 
 							{/* Map hidden for now — restore with the imports above.
 							<MapDialog className='bb-btn bb-btn-ghost hidden cursor-pointer !px-4 !py-2.5 !text-[10px] md:inline-flex'>
@@ -277,15 +290,17 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 								Map
 							</MapDialog> */}
 
-							<Magnetic strength={0.22} className='hidden sm:inline-flex'>
-								<Link
-									href='/contribute'
-									className='bb-btn bb-btn-accent !px-4 !py-2.5 !text-[10px]'
-								>
-									<HandHeartIcon size={15} weight='fill' aria-hidden='true' />
-									Contribute
-								</Link>
-							</Magnetic>
+							{overlay ? (
+								<Magnetic strength={0.22} className='hidden sm:inline-flex'>
+									<Link
+										href='/contribute'
+										className='bb-btn bb-btn-accent !px-4 !py-2.5 !text-[10px]'
+									>
+										<HandHeartIcon size={15} weight='fill' aria-hidden='true' />
+										Contribute
+									</Link>
+								</Magnetic>
+							) : null}
 
 							<button
 								type='button'
