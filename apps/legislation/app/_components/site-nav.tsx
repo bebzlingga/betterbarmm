@@ -1,7 +1,7 @@
 'use client'
 
 import { CaretDownIcon, HandHeartIcon, SquaresFourIcon } from '@phosphor-icons/react'
-import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo } from '@betterbarmm/editorial'
+import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo, UtilityMenuLinks } from '@betterbarmm/editorial'
 import { motion } from 'motion/react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -399,6 +399,8 @@ export function SiteNav() {
 								</Link>
 							))}
 						</div>
+
+						<UtilityMenuLinks base='https://betterbarmm.com' onNavigate={closeMenu} />
 
 						{/* Last of the links: the one row here that changes the page rather
 						    than leaving it. */}

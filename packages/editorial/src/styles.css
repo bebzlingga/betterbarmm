@@ -1690,11 +1690,11 @@
   white-space: nowrap;
 }
 
-/* A phone fits About, Contact, Facebook and the switch on one line only
-   with the gaps between them closed up a little. */
+/* A phone has room for the workspace switch and the theme only; the
+   project links move into the phone menu (`UtilityMenuLinks`). */
 @media (max-width: 639px) {
-  .bb-strip nav {
-    gap: 0.85rem;
+  .utility-bar nav > a.utility-bar-link {
+    display: none;
   }
 }
 

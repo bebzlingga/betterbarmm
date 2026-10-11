@@ -1,7 +1,7 @@
 'use client'
 
 import { HandHeartIcon, SquaresFourIcon } from '@phosphor-icons/react'
-import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo } from '@betterbarmm/editorial'
+import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo, UtilityMenuLinks } from '@betterbarmm/editorial'
 import { AnimatePresence, motion } from 'motion/react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -183,6 +183,8 @@ export function SiteNav() {
 
 							{/* Last, under the links: the one row here that changes the page
 							    rather than leaving it. */}
+							<UtilityMenuLinks base='https://betterbarmm.com' onNavigate={closeMenu} />
+
 							<p className='bb-label mt-7'>Appearance</p>
 							<div className='mt-3 flex items-center justify-between gap-3 py-1'>
 								Theme

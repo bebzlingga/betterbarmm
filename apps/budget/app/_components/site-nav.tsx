@@ -1,7 +1,7 @@
 'use client'
 
 import { CaretDownIcon } from '@phosphor-icons/react'
-import { EASE, ScrollProgress, useHeaderScroll, BrandLogo } from '@betterbarmm/editorial'
+import { EASE, ScrollProgress, useHeaderScroll, BrandLogo, UtilityMenuLinks } from '@betterbarmm/editorial'
 import { AnimatePresence, motion } from 'motion/react'
 import { FISCAL_YEARS, LATEST_YEAR, yearFrom } from '@betterbarmm/budget-data/years'
 import Link from 'next/link'
@@ -339,6 +339,7 @@ export function SiteNav() {
 									),
 								)}
 							</div>
+							<UtilityMenuLinks base='https://betterbarmm.com' onNavigate={closeMenu} />
 						</nav>
 					</motion.div>
 				) : null}

@@ -1,7 +1,7 @@
 'use client'
 
 import { CaretDownIcon, HandHeartIcon, SquaresFourIcon } from '@phosphor-icons/react'
-import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo } from '@betterbarmm/editorial'
+import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo, UtilityMenuLinks } from '@betterbarmm/editorial'
 import { AnimatePresence, motion } from 'motion/react'
 import { travelAreas } from '@betterbarmm/travel-data'
 import Link from 'next/link'
@@ -298,6 +298,7 @@ export function SiteNav() {
 									</a>
 								))}
 							</div>
+							<UtilityMenuLinks base='https://betterbarmm.com' onNavigate={closeMenu} />
 						</nav>
 					</motion.div>
 				) : null}

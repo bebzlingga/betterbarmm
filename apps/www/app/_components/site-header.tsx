@@ -5,7 +5,7 @@ import { CaretDownIcon, HandHeartIcon, SquaresFourIcon } from '@phosphor-icons/r
 import { AnimatePresence, motion } from 'motion/react'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
-import { EASE, Magnetic, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo } from '@betterbarmm/editorial'
+import { EASE, Magnetic, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo, UtilityMenuLinks, ESTATE_LINKS } from '@betterbarmm/editorial'
 // import { MapDialog } from './map-dialog'
 import { ThemeToggle } from './theme-toggle'
 
@@ -416,6 +416,8 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 									Contribute
 								</Link>
 							</div>
+
+							<UtilityMenuLinks links={ESTATE_LINKS.filter((link) => link.href !== '/about')} onNavigate={closeMenu} />
 
 							{/* Last, under the links: the one row here that changes the page
 							    rather than leaving it. The button carries the icon and the

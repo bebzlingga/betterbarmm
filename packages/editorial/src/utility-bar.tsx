@@ -24,7 +24,7 @@ const isAbsolute = (href: string) => href.startsWith('http') || href.startsWith(
 export type UtilityLink = { href: string; label: string }
 
 /** The estate's own row, for an app that does not override it. */
-const ESTATE_LINKS: UtilityLink[] = [
+export const ESTATE_LINKS: UtilityLink[] = [
 	{ href: '/about', label: 'About' },
 	{ href: '/contact', label: 'Contact us' },
 	{ href: 'https://www.facebook.com/betterbarmm', label: 'Follow us on Facebook' },
@@ -66,8 +66,8 @@ export function UtilityBar({
 			<div className='mx-auto flex max-w-[88rem] items-center justify-between gap-4 px-6 lg:px-8'>
 				{/* A dropdown rather than a row: it stays one control however many
 				    workspaces there are. Native `<details>`, so it opens without
-				    script. Gone below `sm`; the main menu still reaches everything. */}
-				<details className='utility-bar-switch relative hidden sm:block'>
+				    script. */}
+				<details className='utility-bar-switch relative'>
 					<summary className='utility-bar-link cursor-pointer list-none'>
 						{switchIcon}
 						<span className='font-bold'>Workspace:</span>
@@ -93,11 +93,6 @@ export function UtilityBar({
 					</ul>
 				</details>
 
-				{/* Ranged right on every width. On a phone the switch is gone and
-				    `justify-between` would strand the links on the left, so the row
-				    pushes them over with a spacer rather than switching alignment. */}
-				<span className='flex-1 sm:hidden' aria-hidden='true' />
-
 				<nav aria-label='Project links' className='flex items-center gap-4 sm:gap-5'>
 					{links.map((link) => {
 						const external = isAbsolute(link.href)
@@ -118,5 +113,41 @@ export function UtilityBar({
 				</nav>
 			</div>
 		</div>
+	)
+}
+
+/**
+ * The strip's links for a phone's menu, where the strip has room only for
+ * the workspace switch and the theme.
+ */
+export function UtilityMenuLinks({
+	base = '',
+	links = ESTATE_LINKS,
+	onNavigate,
+}: {
+	base?: string
+	links?: UtilityLink[]
+	onNavigate?: () => void
+}) {
+	return (
+		<>
+			<p className='bb-label mt-7'>BetterBARMM</p>
+			<div className='mt-3 grid'>
+				{links.map((link) => {
+					const external = isAbsolute(link.href)
+					return (
+						<a
+							key={link.href}
+							href={external ? link.href : `${base}${link.href}`}
+							{...(external && link.href.startsWith('http') ? { target: '_blank', rel: 'noreferrer' } : {})}
+							onClick={onNavigate}
+							className='border-b border-[var(--rule-soft)] py-2.5 last:border-b-0'
+						>
+							{link.label}
+						</a>
+					)
+				})}
+			</div>
+		</>
 	)
 }
