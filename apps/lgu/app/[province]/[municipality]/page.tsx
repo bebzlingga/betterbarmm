@@ -395,7 +395,7 @@ function Officials({ unit, province }: { unit: LguUnit; province: LguProvince })
 			    reads the same on all 108 of these pages. It lives on What each level does
 			    now; what belongs here is the canvass above, and a way through
 			    to the general answer. */}
-			<div className='mt-14 grid gap-6 border-t border-[var(--brass-line)] pt-6 sm:grid-cols-2 sm:gap-10'>
+			<div className='mt-14 border-t border-[var(--brass-line)] pt-6'>
 				<Link href='/what-each-level-does#offices' className='group flex items-start justify-between gap-4'>
 					<span>
 						<span className='block text-[15px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
@@ -405,22 +405,6 @@ function Officials({ unit, province }: { unit: LguUnit; province: LguProvince })
 							Every elected and appointed post a {unitKind(unit)} has, and the barangay posts
 							underneath it, with what each is paid. Set by the Bangsamoro Local Governance
 							Code, so the structure is the same everywhere.
-						</span>
-					</span>
-					<ArrowUpRightIcon
-						className='mt-0.5 size-3.5 shrink-0 text-[var(--ink-3)] transition duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--accent)]'
-						aria-hidden='true'
-					/>
-				</Link>
-
-				<Link href='/what-each-level-does#where-to-look' className='group flex items-start justify-between gap-4'>
-					<span>
-						<span className='block text-[15px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
-							Where to find the current names
-						</span>
-						<span className='mt-1.5 block text-[12.5px] leading-6 text-[var(--ink-3)]'>
-							Anyone who took office after the 2025 canvass, and the barangays DILG has no
-							roster for, are held by the offices that publish them.
 						</span>
 					</span>
 					<ArrowUpRightIcon

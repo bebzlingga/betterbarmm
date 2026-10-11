@@ -5,7 +5,6 @@ import { DocLayout } from '../_components/doc-layout'
 import type { TocItem } from '../_components/doc-toc'
 import { LguMasthead } from '../_components/lgu-parts'
 import { AppointedOffices } from '../_components/appointed-offices'
-import { Lookups } from '../_components/offices-guide'
 
 export const metadata: Metadata = {
 	title: 'What each level does',
@@ -56,7 +55,6 @@ const TOC: TocItem[] = [
 	{ id: 'services', label: 'What each level does for you', depth: 1 },
 	{ id: 'offices', label: 'Who runs it day to day', depth: 1 },
 	{ id: 'charges', label: 'What you pay', depth: 1 },
-	{ id: 'where-to-look', label: 'Where to look', depth: 1 },
 ]
 
 const H2 = 'scroll-mt-32 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
@@ -251,14 +249,6 @@ export default function HowItWorksPage() {
 							))}
 						</tbody>
 					</table>
-				</div>
-			</Section>
-
-			{/* ---- Where to look ---- */}
-			<Section id='where-to-look' lead='Anyone who took office after the 2025 canvass, and the barangays DILG has no roster for, are kept by these offices.'>
-
-				<div className='mt-12'>
-					<Lookups />
 				</div>
 			</Section>
 			</DocLayout>
