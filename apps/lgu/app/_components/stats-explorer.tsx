@@ -83,13 +83,17 @@ export function StatsExplorer({
 	fields,
 	units,
 	data,
+	ntaOnly = [],
 }: {
 	years: number[]
 	fields: string[]
 	units: StatsUnit[]
 	data: StatsData
+	/** Years with only DBM's NTA allocation out, no income or spending yet. */
+	ntaOnly?: number[]
 }) {
-	const [year, setYear] = useState(String(years.at(-1)))
+	const [year, setYear] = useState(String(years.filter((y) => !ntaOnly.includes(y)).at(-1)))
+	const partial = ntaOnly.includes(Number(year))
 	const [query, setQuery] = useState('')
 	const [area, setArea] = useState('')
 	const [klass, setKlass] = useState('')
@@ -123,7 +127,7 @@ export function StatsExplorer({
 
 	return (
 		<div>
-			<div className='pb-6 lg:pb-10 grid grid-cols-2 gap-3 lg:grid-cols-[minmax(0,1fr)_15rem_9rem_9rem_8rem] lg:items-end lg:gap-4'>
+			<div className='pb-6 lg:pb-10 grid grid-cols-2 gap-3 lg:grid-cols-[minmax(0,1fr)_15rem_9rem_9rem_11rem] lg:items-end lg:gap-4'>
 				<label className='col-span-2 flex w-full min-w-0 max-w-[26rem] flex-col gap-1 lg:col-span-1'>
 					<span className='text-[12px] text-[var(--ink-3)]'>Search</span>
 					<span className='flex h-10 items-center gap-3 border border-[var(--rule)] bg-[var(--paper-2)] px-3 focus-within:border-[var(--ink)]'>
@@ -147,8 +151,15 @@ export function StatsExplorer({
 					options={[['', 'All types'], ['Province', 'Province'], ['City', 'City'], ['Municipality', 'Municipality']]}
 				/>
 				<Select label='Income class' value={klass} onChange={setKlass} options={[['', 'All classes'], ...classes.map((k): [string, string] => [k, `${k} class`])]} />
-				<Select label='Fiscal year' value={year} onChange={setYear} options={[...years].reverse().map((y): [string, string] => [String(y), `FY ${y}`])} />
+				<Select label='Fiscal year' value={year} onChange={setYear} options={[...years].reverse().map((y): [string, string] => [String(y), ntaOnly.includes(y) ? `FY ${y} · NTA only` : `FY ${y}`])} />
 			</div>
+
+			{partial ? (
+				<p className='mb-4 text-[13px] leading-6 text-[var(--ink-3)]'>
+					For FY {year}, only DBM&rsquo;s NTA allocation is out. Income and spending come with BLGF&rsquo;s report
+					after the year ends.
+				</p>
+			) : null}
 
 
 			<div className='mt-4'>
@@ -160,7 +171,7 @@ export function StatsExplorer({
 					query={query}
 					columns={COLUMNS}
 					rows={rows}
-					initialSort={{ key: 'localSources', down: true }}
+					initialSort={{ key: partial ? 'nta' : 'localSources', down: true }}
 					ranked
 				/>
 			</div>

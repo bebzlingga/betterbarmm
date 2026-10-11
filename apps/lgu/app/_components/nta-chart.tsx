@@ -1,8 +1,5 @@
 import { finances, row } from '@betterbarmm/lgu-data/fiscal'
-import { ntaShare } from '@betterbarmm/lgu-data/nta'
-
-/* DBM's allocation, for the year after BLGF's latest. */
-const ALLOCATED = 2026
+import { ntaShare, ntaShares } from '@betterbarmm/lgu-data/nta'
 
 /**
  * A province's or town's own National Tax Allotment, year by year: one series, so one hue and
@@ -16,7 +13,7 @@ export function NtaChart({ unitKey }: { unitKey: string }) {
 			nta: (row(finances, unitKey, year)?.nta as number | null | undefined) ?? null,
 			allocated: false,
 		})),
-		{ year: ALLOCATED, nta: ntaShare(unitKey, ALLOCATED), allocated: true },
+		...ntaShares.years.map((year) => ({ year, nta: ntaShare(unitKey, year), allocated: true })),
 	]
 	if (!years.some((one) => one.nta)) return null
 	const top = Math.max(...years.map((one) => one.nta ?? 0))
@@ -30,7 +27,7 @@ export function NtaChart({ unitKey }: { unitKey: string }) {
 			<figcaption className='mb-8 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
 				<h2 className='font-[family-name:var(--font-display)] text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>National Tax Allotment, by year</h2>
 				<span className='text-[12.5px] text-[var(--ink-3)]'>
-					Received, as reported to BLGF; FY {finances.years.at(-1)} is preliminary. FY {ALLOCATED}, lighter, is DBM&rsquo;s allocation.
+					Received, as reported to BLGF; FY {finances.years.at(-1)} is preliminary. FY {ntaShares.years.join(' and ')}, lighter, are DBM&rsquo;s allocation.
 				</span>
 			</figcaption>
 			<div className='grid h-44 items-end gap-1.5 sm:gap-4' style={{ gridTemplateColumns: `repeat(${years.length}, minmax(0, 1fr))` }}>

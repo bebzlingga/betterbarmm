@@ -19,14 +19,15 @@ const NTA_TREND = finances.years.map((year) => {
 	return { year, total, units, allocated: false }
 })
 
-// DBM's FY 2026 allocation to the same units: provinces, cities and towns, barangays left out.
-const ALLOCATED = 2026
-NTA_TREND.push({
-	year: ALLOCATED,
-	total: Object.values(ntaShares.units).reduce((t, u) => t + (u.province?.[ALLOCATED] ?? 0) + (u.lgu?.[ALLOCATED] ?? 0), 0),
-	units: Object.keys(ntaShares.units).length,
-	allocated: true,
-})
+// DBM's allocation to the same units: provinces, cities and towns, barangays left out.
+for (const year of ntaShares.years) {
+	NTA_TREND.push({
+		year,
+		total: Object.values(ntaShares.units).reduce((t, u) => t + (u.province?.[year] ?? 0) + (u.lgu?.[year] ?? 0), 0),
+		units: Object.keys(ntaShares.units).length,
+		allocated: true,
+	})
+}
 
 export function RegionNtaTrend() {
 	const top = Math.max(...NTA_TREND.map((y) => y.total))
@@ -66,7 +67,7 @@ export function RegionNtaTrend() {
 				</span>
 				<span className='text-[11px] text-[var(--ink-3)]'>
 					Reported to BLGF by {Math.min(...NTA_TREND.map((y) => y.units))}–{Math.max(...NTA_TREND.filter((y) => !y.allocated).map((y) => y.units))}{' '}
-					units a year; FY {finances.years.at(-1)} is preliminary. FY {ALLOCATED}, lighter, is DBM&rsquo;s allocation to all {NTA_TREND.at(-1)!.units}. The 2022 jump is the Mandanas ruling.
+					units a year; FY {finances.years.at(-1)} is preliminary. FY {ntaShares.years.join(' and ')}, lighter, are DBM&rsquo;s allocation to all {NTA_TREND.at(-1)!.units}. The 2022 jump is the Mandanas ruling.
 				</span>
 			</figcaption>
 		</figure>

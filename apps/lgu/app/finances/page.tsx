@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { lguProvinces, unitClass } from '@betterbarmm/lgu-data'
 import { finances, funds, incomeClass, row } from '@betterbarmm/lgu-data/fiscal'
+import { ntaShare, ntaShares } from '@betterbarmm/lgu-data/nta'
 import { LguMasthead } from '../_components/lgu-parts'
 import { RegionNtaTrend } from '../_components/region-nta-trend'
 import { StatsExplorer, type StatsData, type StatsUnit } from '../_components/stats-explorer'
@@ -54,6 +55,13 @@ export default function StatsPage() {
 				field === 'ntaDependency' ? (typeof dependency === 'number' ? dependency : null) : (sre[field] as number | null),
 			)
 		}
+		// DBM's NTA allocation for the years BLGF has not reported yet.
+		for (const year of ntaShares.years) {
+			const nta = ntaShare(unit.key, year)
+			if (nta == null) continue
+			data[unit.key] ??= {}
+			data[unit.key]![year] = FIELDS.map((field) => (field === 'nta' ? nta : null))
+		}
 	}
 
 	return (
@@ -70,7 +78,7 @@ export default function StatsPage() {
 			</LguMasthead>
 
 			<section className='bb-container bb-section'>
-				<StatsExplorer years={finances.years} fields={FIELDS} units={units} data={data} />
+				<StatsExplorer years={[...finances.years, ...ntaShares.years]} ntaOnly={ntaShares.years} fields={FIELDS} units={units} data={data} />
 
 				<div className='mt-10 space-y-2 text-[13px] leading-6 text-[var(--ink-3)]'>
 					<p>
@@ -84,7 +92,11 @@ export default function StatsPage() {
 						<a href='https://blgf.gov.ph/lgu-fiscal-data/' target='_blank' rel='noreferrer' className='rule-link'>
 							BLGF Statement of Receipts and Expenditures by LGU
 						</a>
-						, FY 2016–2025. Barangays file none, so they are not here; the eight Special Geographic Area
+						, FY 2016–2025, and for FY {ntaShares.years.join(' and ')}, the NTA allocation on{' '}
+						<a href='https://compass.dbm.gov.ph/nta' target='_blank' rel='noreferrer' className='rule-link'>
+							DBM&rsquo;s COMPASS portal
+						</a>
+						. Barangays file none, so they are not here; the eight Special Geographic Area
 						towns, created in 2024, have no rows yet.
 					</p>
 				</div>
