@@ -24,8 +24,11 @@ import { Caution, Footing, GateList, TravelMasthead, SectionHead } from '../_com
 import { TravelMap } from '../_components/travel-map'
 import { TownMap } from '../_components/town-map'
 import { LocatorMap } from '../_components/locator-map'
+import { CityGuideView } from '../_components/city-guide'
+import { cityGuide } from '@betterbarmm/travel-data/cities'
+import { cotabatoPhotos } from '../_lib/city-photos'
 import { PhotoFigure, PhotoStrip } from '../_components/photo-figure'
-import { photoForPlace, photosForArea } from '../_lib/media'
+import { photo, photoForPlace, photosForArea } from '../_lib/media'
 
 /**
  * Static routes win over this one, so `/places`, `/food`, `/stays` and `/plan`
@@ -55,6 +58,27 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 	const { area: slug } = await params
 	const area = findTravelArea(slug)
 	if (!area) notFound()
+
+	// A city with a full guide gets the travel-app view.
+	const guide = cityGuide(area.slug)
+	if (guide) {
+		const p = cotabatoPhotos
+		return (
+			<CityGuideView
+				guide={guide}
+				intro={area.intro}
+				safety={area.safety}
+				hero={p.drone!}
+				facts={[
+					{ label: 'When to go', value: area.whenToGo },
+					{ label: 'Languages', value: `${area.languages.join(', ')}; Filipino and English widely understood` },
+					{ label: 'Known for', value: area.knownFor.join(' · ') },
+				]}
+				photos={p}
+				dishPhotos={{ pastil: photo('pastil'), tiyula: photo('tiyulaItum') }}
+			/>
+		)
+	}
 
 	const areaPlaces = placesInArea(area.slug)
 	const lodging = lodgingForArea(area.slug)

@@ -1,0 +1,640 @@
+[
+  {
+    "name": "Alnor Hotel and Convention Center",
+    "kind": "hotel",
+    "area": "Sinsuat Avenue, Rosary Heights 9 (Alnor Compound)",
+    "note": "Hotel and convention centre in the Alnor complex with several function halls; it hosted the 18th Regional Travel Fair in August 2026 and is a regular venue for Bangsamoro government events.",
+    "website": "https://www.facebook.com/alnorhotelandconventioncenter/",
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "BARMM Official Website, travel fair at Alnor Hotel (2026)",
+        "url": "https://bangsamoro.gov.ph/news/latest-news/travel-fair-opens-new-business-opportunities-for-barmm-tourism-players/"
+      },
+      {
+        "label": "Alnor Hotel and Convention Center (Facebook page)",
+        "url": "https://www.facebook.com/alnorhotelandconventioncenter/"
+      },
+      {
+        "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+        "url": "https://www.lakwatsero.com/?p=18818"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "name": "Alnor Suites",
+    "kind": "hotel",
+    "area": "Sinsuat Avenue, Rosary Heights 9, in front of the Mall of Alnor",
+    "note": "Hotel in the Alnor complex facing the Mall of Alnor, listed with a pool and conference room; Bangsamoro Parliament meetings use its 8th-floor Haraya Function Hall (named there as Alnor Suite 2 Hotel).",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Wikivoyage, Cotabato City",
+        "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+      },
+      {
+        "label": "Bangsamoro Parliament venue, Haraya Function Hall, Alnor Suite 2 Hotel",
+        "url": "https://parliament.bangsamoro.gov.ph/venue/haraya-function-hall-8th-floor-alnor-suite-2-hotel-brgy-rh-ix-cotabato-city/"
+      },
+      {
+        "label": "OpenStreetMap, Alnor Suites",
+        "url": "https://www.openstreetmap.org/way/335518681"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "name": "EM Manor Hotel and Convention Center",
+    "kind": "hotel",
+    "area": "Sinsuat Avenue, Rosary Heights 9, near the new Cotabato City Hall",
+    "note": "Hotel and convention centre on the national highway near the new City Hall, with breakfast included and an Ebrahim Hall used for Bangsamoro Parliament meetings; a 2025 event notice names Ebrahim Hall at \"KDT Manor Hotel\", so it may now go by that name.",
+    "website": "https://www.facebook.com/emmanorhotel/",
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Wikivoyage, Cotabato City",
+        "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+      },
+      {
+        "label": "Bangsamoro Parliament venue, Ebrahim Hall, Em-Manor Hotel",
+        "url": "https://parliament.bangsamoro.gov.ph/venue/ebrahim-hall-em-manor-hotel-and-convention-sinsuat-avenue-cotabato-city/"
+      },
+      {
+        "label": "EM Manor Hotel and Convention Center (Facebook page)",
+        "url": "https://www.facebook.com/emmanorhotel/"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "name": "Rockfort Hotel",
+    "kind": "hotel",
+    "area": "San Isidro Avenue (Lot 2, Block 2)",
+    "note": "Newer hotel off Sinsuat Avenue with a garden, free parking and halal breakfast, about 6 km from Awang Airport.",
+    "website": "https://www.facebook.com/rockforthotel/",
+    "onBookingSites": true,
+    "sources": [
+      {
+        "label": "Booking.com, Cotabato city page",
+        "url": "https://www.booking.com/city/ph/cotabato.html"
+      },
+      {
+        "label": "Destinia, Hotel Rockfort",
+        "url": "https://destinia.com/en/hotels/asia/philippines/mindanao/cotabato/rockfort/ho-4648307"
+      },
+      {
+        "label": "Rockfort Hotel (Facebook page)",
+        "url": "https://www.facebook.com/rockforthotel/"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "name": "Jeamco Royal Hotel-Cotabato",
+    "kind": "hotel",
+    "area": "94 Don Rufino Alonzo Street, near the City Plaza",
+    "note": "Downtown hotel with 29 rooms, a 3-minute walk from the South Seas Complex and 7 minutes from the City Plaza; some booking sites wrongly file it under Sultan Kudarat.",
+    "website": null,
+    "onBookingSites": true,
+    "sources": [
+      {
+        "label": "Booking.com, Cotabato city page",
+        "url": "https://www.booking.com/city/ph/cotabato.html"
+      },
+      {
+        "label": "Trip.com, Jeamco Royal Hotel-Cotabato",
+        "url": "https://nz.trip.com/hotels/cotabato-1-hotel-detail-21853976/jeamco-royal-hotel-cotabato"
+      },
+      {
+        "label": "Kayak, Cotabato City hotels",
+        "url": "https://www.kayak.com.ph/Cotabato-City-Hotels.52320.hotel.ksp"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "name": "The Paragon Hotel & Restaurant",
+    "kind": "hotel",
+    "area": "65 Don Teodoro V. Juliano Avenue",
+    "note": "Small hotel (17 rooms, opened 2019) with its own restaurant and free parking, a short walk from Kutawato Cave.",
+    "website": "https://www.facebook.com/TheParagonHotelandRestaurant/",
+    "onBookingSites": true,
+    "sources": [
+      {
+        "label": "Trip.com, The Paragon Hotel and Restaurant",
+        "url": "https://ph.trip.com/hotels/cotabato-1-hotel-detail-126046931/the-paragon-hotel-and-restaurant-cotabato-city"
+      },
+      {
+        "label": "The Paragon Hotel & Restaurant (Facebook page)",
+        "url": "https://www.facebook.com/TheParagonHotelandRestaurant/"
+      },
+      {
+        "label": "Trip.com, Cotabato hotel list",
+        "url": "https://us.trip.com/hotels/cotabato-1-hotels-list-5020/"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "name": "Primera Hotel",
+    "kind": "hotel",
+    "area": "Corner L.R. Sebastian and Andres Alonzo Streets, Rosary Heights 11",
+    "note": "Hotel in Rosary Heights with a garden, family rooms and breakfast available.",
+    "website": "https://www.facebook.com/p/Primera-Hotel-100075914618588/",
+    "onBookingSites": true,
+    "sources": [
+      {
+        "label": "Booking.com, Primera Hotel Cotabato",
+        "url": "https://www.booking.com/hotel/ph/primera-cotabato-city.en-gb.html"
+      },
+      {
+        "label": "Primera Hotel (Facebook page)",
+        "url": "https://www.facebook.com/p/Primera-Hotel-100075914618588/"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "name": "Cotabato Diamond Hotel",
+    "kind": "hotel",
+    "area": "Corner Makakua and Jose Lim Sr. Streets, downtown",
+    "note": "Budget hotel in the old downtown near the City Plaza, with private bathrooms in its rooms.",
+    "website": "https://www.facebook.com/p/Cotabato-Diamond-Hotel-100087459216830/",
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Cotabato Diamond Hotel (Facebook page)",
+        "url": "https://www.facebook.com/p/Cotabato-Diamond-Hotel-100087459216830/"
+      },
+      {
+        "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+        "url": "https://www.lakwatsero.com/?p=18818"
+      },
+      {
+        "label": "OpenStreetMap, Cotabato Diamond Hotel",
+        "url": "https://www.openstreetmap.org/node/1417076174"
+      }
+    ],
+    "status": "unclear"
+  },
+  {
+    "name": "El Manuel Hotel",
+    "kind": "hotel",
+    "area": "111 Quezon Avenue",
+    "note": "Hotel on Quezon Avenue with air-conditioned rooms and function rooms; its Facebook pages use the name El Manuel Hotel and Convention Center.",
+    "website": "https://www.facebook.com/p/El-Manuel-Hotel-and-Convention-Center-100069321854559/",
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+        "url": "https://www.lakwatsero.com/?p=18818"
+      },
+      {
+        "label": "El Manuel Hotel and Convention Center (Facebook page)",
+        "url": "https://www.facebook.com/p/El-Manuel-Hotel-and-Convention-Center-100069321854559/"
+      }
+    ],
+    "status": "unclear"
+  },
+  {
+    "name": "Estosan Garden Hotel",
+    "kind": "hotel",
+    "area": "Governor Gutierrez Avenue",
+    "note": "Garden hotel on Gov. Gutierrez Avenue with swimming pools and function rooms.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+        "url": "https://www.lakwatsero.com/?p=18818"
+      },
+      {
+        "label": "OpenStreetMap, Estosan Garden Hotel",
+        "url": "https://www.openstreetmap.org/node/1417971139"
+      }
+    ],
+    "status": "unclear"
+  },
+  {
+    "name": "Hotel Filipino",
+    "kind": "hotel",
+    "area": "Sinsuat Avenue",
+    "note": "Older budget-to-mid-range hotel with fan and air-conditioned rooms and its own restaurant and coffee shop.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+        "url": "https://www.lakwatsero.com/?p=18818"
+      },
+      {
+        "label": "OpenStreetMap, Hotel Filipino",
+        "url": "https://www.openstreetmap.org/node/1417219515"
+      }
+    ],
+    "status": "unclear"
+  },
+  {
+    "name": "Gran Rio Hotel",
+    "kind": "hotel",
+    "area": "80 Don Rufino Alonzo Avenue",
+    "note": "Downtown hotel with a restaurant and function hall (also written Grand Rio Hotel).",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+        "url": "https://www.lakwatsero.com/?p=18818"
+      },
+      {
+        "label": "OpenStreetMap, Gran Rio Hotel",
+        "url": "https://www.openstreetmap.org/node/3427908203"
+      }
+    ],
+    "status": "unclear"
+  },
+  {
+    "name": "Citi Plaza Hotel",
+    "kind": "hotel",
+    "area": "Makakua Street, facing the City Plaza",
+    "note": "Basic downtown hotel overlooking the City Plaza, with a choice of shared or private bathrooms.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+        "url": "https://www.lakwatsero.com/?p=18818"
+      },
+      {
+        "label": "Wikivoyage, Cotabato City",
+        "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+      },
+      {
+        "label": "OpenStreetMap, Citi Plaza Hotel",
+        "url": "https://www.openstreetmap.org/node/3426310823"
+      }
+    ],
+    "status": "unclear"
+  },
+  {
+    "name": "Hotel Cirilo",
+    "kind": "hotel",
+    "area": "Makakua Street",
+    "note": "Budget downtown hotel with fan and air-conditioned single, double, triple and family rooms.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+        "url": "https://www.lakwatsero.com/?p=18818"
+      },
+      {
+        "label": "OpenStreetMap, Hotel Cirilo",
+        "url": "https://www.openstreetmap.org/node/1418098673"
+      }
+    ],
+    "status": "unclear"
+  },
+  {
+    "name": "Fiesta Cotabato",
+    "kind": "hotel",
+    "area": "Dr. Rabago Street",
+    "note": "Budget hotel with fan and air-conditioned rooms, a restaurant and a convention hall.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+        "url": "https://www.lakwatsero.com/?p=18818"
+      }
+    ],
+    "status": "unclear"
+  },
+  {
+    "name": "Pacific Heights Hotel / The Marqueza",
+    "kind": "hotel",
+    "area": "66 Don T.V. Juliano Avenue",
+    "note": "Older hotel on Juliano Avenue with function space, listed under both names.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+        "url": "https://www.lakwatsero.com/?p=18818"
+      }
+    ],
+    "status": "unclear"
+  },
+  {
+    "name": "Sardonyx Pension House",
+    "kind": "pension",
+    "area": "Governor Gutierrez Avenue",
+    "note": "Pension house with all air-conditioned rooms and a convention hall.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+        "url": "https://www.lakwatsero.com/?p=18818"
+      }
+    ],
+    "status": "unclear"
+  },
+  {
+    "name": "Azaleas Pension House",
+    "kind": "pension",
+    "area": "Sinsuat Avenue",
+    "note": "Budget pension house with fan and air-conditioned single, twin and triple rooms.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+        "url": "https://www.lakwatsero.com/?p=18818"
+      },
+      {
+        "label": "OpenStreetMap, Azaleas Pension House",
+        "url": "https://www.openstreetmap.org/node/3428092001"
+      }
+    ],
+    "status": "unclear"
+  },
+  {
+    "name": "Pension Rafael",
+    "kind": "pension",
+    "area": "San Isidro Street",
+    "note": "Small budget pension house with double, triple and family rooms.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+        "url": "https://www.lakwatsero.com/?p=18818"
+      }
+    ],
+    "status": "unclear"
+  },
+  {
+    "name": "Vision Inn",
+    "kind": "inn",
+    "area": "Notre Dame Avenue",
+    "note": "Budget inn with fan and air-conditioned double rooms and a coffee shop.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+        "url": "https://www.lakwatsero.com/?p=18818"
+      },
+      {
+        "label": "OpenStreetMap, Vision Inn",
+        "url": "https://www.openstreetmap.org/node/1418020824"
+      }
+    ],
+    "status": "unclear"
+  },
+  {
+    "name": "Maha Travellers INN",
+    "kind": "inn",
+    "area": "Maha Commercial Building (2nd floor), Don T.V. Juliano Avenue, Rosary Heights",
+    "note": "Inn on the second floor of a commercial building on Juliano Avenue that describes itself as the city's newest hotel.",
+    "website": "https://www.facebook.com/p/Maha-Travellers-INN-100080822103656/",
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Maha Travellers INN (Facebook page)",
+        "url": "https://www.facebook.com/p/Maha-Travellers-INN-100080822103656/"
+      }
+    ],
+    "status": "unclear"
+  },
+  {
+    "name": "AGONG LODGE",
+    "kind": "inn",
+    "area": "Don Rufino Alonzo Street, in front of the City Plaza",
+    "note": "Small lodge facing the City Plaza in the old downtown.",
+    "website": "https://www.facebook.com/Agong02",
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "AGONG LODGE (Facebook page)",
+        "url": "https://www.facebook.com/Agong02"
+      }
+    ],
+    "status": "unclear"
+  },
+  {
+    "name": "Bubong Travellers INN",
+    "kind": "inn",
+    "area": null,
+    "note": "Small inn in Cotabato City that takes bookings through its Facebook page.",
+    "website": "https://www.facebook.com/p/Bubong-Travellers-INN-100078785234936/",
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Bubong Travellers INN (Facebook page)",
+        "url": "https://www.facebook.com/p/Bubong-Travellers-INN-100078785234936/"
+      }
+    ],
+    "status": "unclear"
+  },
+  {
+    "name": "Balai Asul Inn",
+    "kind": "inn",
+    "area": null,
+    "note": "Small inn in Cotabato City that takes enquiries by private message on its Facebook page.",
+    "website": "https://www.facebook.com/balaiasulinncotabato/",
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Balai Asul Inn - Cotabato City (Facebook page)",
+        "url": "https://www.facebook.com/balaiasulinncotabato/"
+      }
+    ],
+    "status": "unclear"
+  },
+  {
+    "name": "Casa Martina",
+    "kind": "guesthouse",
+    "area": "13 Makakua Street",
+    "note": "2-room guesthouse on Makakua Street downtown with a family room and a deluxe room.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Trip.com, Casa Martina",
+        "url": "https://nz.trip.com/hotels/cotabato-1-hotel-detail-129513240"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "name": "LALEAH Transient House",
+    "kind": "guesthouse",
+    "area": null,
+    "note": "Whole-house transient rental for families and groups, with a kitchen and private parking, about 6 km from Awang Airport.",
+    "website": null,
+    "onBookingSites": true,
+    "sources": [
+      {
+        "label": "Booking.com, hotels near Awang Airport",
+        "url": "https://www.booking.com/airport/ph/cbo.en-gb.html"
+      },
+      {
+        "label": "cozycozy, Cotabato City lodging",
+        "url": "https://www.cozycozy.com/us/cotabato-city-lodging"
+      },
+      {
+        "label": "Airbnb, Cotabato City stays",
+        "url": "https://www.airbnb.com/cotabato-city-philippines/stays"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "name": "Luxury Home",
+    "kind": "apartment",
+    "area": "Happy Home Subdivision, Rosales Heights Street, Rosary Heights 10",
+    "note": "2-bedroom holiday home in a Rosary Heights subdivision with a full kitchen, washing machine and free parking.",
+    "website": null,
+    "onBookingSites": true,
+    "sources": [
+      {
+        "label": "Booking.com, Cotabato city page",
+        "url": "https://www.booking.com/city/ph/cotabato.html"
+      },
+      {
+        "label": "Trip.com, Cotabato hotel list",
+        "url": "https://us.trip.com/hotels/cotabato-1-hotels-list-5020/"
+      },
+      {
+        "label": "Airbnb, Cotabato City stays",
+        "url": "https://www.airbnb.com/cotabato-city-philippines/stays"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "name": "Cozy Studio Type unit w/ TV, Wifi, hotshower & ref",
+    "kind": "apartment",
+    "area": "Sunga Compound, San Pablo Village",
+    "note": "Studio rental unit in San Pablo Village, near the ICRC office.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Trip.com, Cotabato hotel list",
+        "url": "https://us.trip.com/hotels/cotabato-1-hotels-list-5020/"
+      },
+      {
+        "label": "cozycozy, Cotabato City lodging",
+        "url": "https://www.cozycozy.com/us/cotabato-city-lodging"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "name": "Jack's Suites",
+    "kind": "apartment",
+    "area": "near the Bangsamoro Government Center",
+    "note": "3-bedroom rental home for up to 12 guests in a quiet neighbourhood near the Bangsamoro Government Center, with a kitchen and parking.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Airbnb, Cotabato City stays",
+        "url": "https://www.airbnb.com/cotabato-city-philippines/stays"
+      },
+      {
+        "label": "cozycozy, Cotabato City lodging",
+        "url": "https://www.cozycozy.com/us/cotabato-city-lodging"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "name": "Almaz Suites",
+    "kind": "apartment",
+    "area": "near the Bangsamoro Government Center",
+    "note": "Private-room rental marketed to visitors to the Bangsamoro Government Center.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Airbnb, Cotabato City stays",
+        "url": "https://www.airbnb.com/cotabato-city-philippines/stays"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "name": "Fouriu Inn Cotabato City",
+    "kind": "apartment",
+    "area": null,
+    "note": "Rooms and apartment units listed on Airbnb, about 1 mile from KCC Mall of Cotabato.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Airbnb, Cotabato City stays",
+        "url": "https://www.airbnb.com/cotabato-city-philippines/stays"
+      },
+      {
+        "label": "cozycozy, Cotabato City lodging",
+        "url": "https://www.cozycozy.com/us/cotabato-city-lodging"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "name": "Residenza Cotabato",
+    "kind": "apartment",
+    "area": null,
+    "note": "Apartment rental in a quiet residential area of the city, listed on Airbnb.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Airbnb, Cotabato City stays",
+        "url": "https://www.airbnb.com/cotabato-city-philippines/stays"
+      },
+      {
+        "label": "cozycozy, Cotabato City lodging",
+        "url": "https://www.cozycozy.com/us/cotabato-city-lodging"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "name": "Cotabato KN Apartelle",
+    "kind": "apartment",
+    "area": null,
+    "note": "Apartelle units listed for short stays on Airbnb.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Airbnb, Cotabato City stays",
+        "url": "https://www.airbnb.com/cotabato-city-philippines/stays"
+      }
+    ],
+    "status": "open"
+  },
+  {
+    "name": "M&S Private Residence",
+    "kind": "apartment",
+    "area": null,
+    "note": "Private residence with its own pickleball court, rented as whole house or 1-bedroom units on Airbnb.",
+    "website": null,
+    "onBookingSites": false,
+    "sources": [
+      {
+        "label": "Airbnb, Cotabato City stays",
+        "url": "https://www.airbnb.com/cotabato-city-philippines/stays"
+      }
+    ],
+    "status": "open"
+  }
+]

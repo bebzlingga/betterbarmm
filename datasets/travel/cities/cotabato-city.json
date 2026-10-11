@@ -1,0 +1,3462 @@
+{
+ "slug": "cotabato-city",
+ "name": "Cotabato City",
+ "generatedAt": "2026-10-11",
+ "note": "Listings from booking sites, Wikivoyage, news, blogs and the places’ own pages, each with the pages that name it; map positions and the essentials from OpenStreetMap (© OpenStreetMap contributors, ODbL). Entries marked \"unclear\" are on OpenStreetMap but no other source this guide found describes them. No rates, phone numbers or ratings: they change faster than a guide can follow.",
+ "stay": [
+  {
+   "id": "alnor-hotel-and-convention-center",
+   "name": "Alnor Hotel and Convention Center",
+   "kind": "hotel",
+   "area": "Sinsuat Avenue, Rosary Heights 9 (Alnor Compound)",
+   "note": "Hotel and convention centre in the Alnor complex with several function halls; it hosted the 18th Regional Travel Fair in August 2026 and is a regular venue for Bangsamoro government events.",
+   "lat": null,
+   "lon": null,
+   "website": "https://www.facebook.com/alnorhotelandconventioncenter/",
+   "sources": [
+    {
+     "label": "BARMM Official Website, travel fair at Alnor Hotel (2026)",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/travel-fair-opens-new-business-opportunities-for-barmm-tourism-players/"
+    },
+    {
+     "label": "Alnor Hotel and Convention Center (Facebook page)",
+     "url": "https://www.facebook.com/alnorhotelandconventioncenter/"
+    },
+    {
+     "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    }
+   ],
+   "status": "open",
+   "onBookingSites": false
+  },
+  {
+   "id": "alnor-suites",
+   "name": "Alnor Suites",
+   "kind": "hotel",
+   "area": "Sinsuat Avenue, Rosary Heights 9, in front of the Mall of Alnor",
+   "note": "Hotel in the Alnor complex facing the Mall of Alnor, listed with a pool and conference room; Bangsamoro Parliament meetings use its 8th-floor Haraya Function Hall (named there as Alnor Suite 2 Hotel).",
+   "lat": 7.1991596,
+   "lon": 124.2383016,
+   "website": null,
+   "sources": [
+    {
+     "label": "Wikivoyage, Cotabato City",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Bangsamoro Parliament venue, Haraya Function Hall, Alnor Suite 2 Hotel",
+     "url": "https://parliament.bangsamoro.gov.ph/venue/haraya-function-hall-8th-floor-alnor-suite-2-hotel-brgy-rh-ix-cotabato-city/"
+    },
+    {
+     "label": "OpenStreetMap, Alnor Suites",
+     "url": "https://www.openstreetmap.org/way/335518681"
+    }
+   ],
+   "status": "open",
+   "onBookingSites": false
+  },
+  {
+   "id": "em-manor-hotel-and-convention-center",
+   "name": "EM Manor Hotel and Convention Center",
+   "kind": "hotel",
+   "area": "Sinsuat Avenue, Rosary Heights 9, near the new Cotabato City Hall",
+   "note": "Hotel and convention centre on the national highway near the new City Hall, with breakfast included and an Ebrahim Hall used for Bangsamoro Parliament meetings; a 2025 event notice names Ebrahim Hall at \"KDT Manor Hotel\", so it may now go by that name.",
+   "lat": 7.1947217,
+   "lon": 124.2361792,
+   "website": "https://www.facebook.com/emmanorhotel/",
+   "sources": [
+    {
+     "label": "Wikivoyage, Cotabato City",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Bangsamoro Parliament venue, Ebrahim Hall, Em-Manor Hotel",
+     "url": "https://parliament.bangsamoro.gov.ph/venue/ebrahim-hall-em-manor-hotel-and-convention-sinsuat-avenue-cotabato-city/"
+    },
+    {
+     "label": "EM Manor Hotel and Convention Center (Facebook page)",
+     "url": "https://www.facebook.com/emmanorhotel/"
+    }
+   ],
+   "status": "open",
+   "onBookingSites": false
+  },
+  {
+   "id": "rockfort-hotel",
+   "name": "Rockfort Hotel",
+   "kind": "hotel",
+   "area": "San Isidro Avenue (Lot 2, Block 2)",
+   "note": "Newer hotel off Sinsuat Avenue with a garden, free parking and halal breakfast, about 6 km from Awang Airport.",
+   "lat": 7.2045613,
+   "lon": 124.2397307,
+   "website": "https://www.facebook.com/rockforthotel/",
+   "sources": [
+    {
+     "label": "Booking.com, Cotabato city page",
+     "url": "https://www.booking.com/city/ph/cotabato.html"
+    },
+    {
+     "label": "Destinia, Hotel Rockfort",
+     "url": "https://destinia.com/en/hotels/asia/philippines/mindanao/cotabato/rockfort/ho-4648307"
+    },
+    {
+     "label": "Rockfort Hotel (Facebook page)",
+     "url": "https://www.facebook.com/rockforthotel/"
+    }
+   ],
+   "status": "open",
+   "onBookingSites": true
+  },
+  {
+   "id": "jeamco-royal-hotel-cotabato",
+   "name": "Jeamco Royal Hotel-Cotabato",
+   "kind": "hotel",
+   "area": "94 Don Rufino Alonzo Street, near the City Plaza",
+   "note": "Downtown hotel with 29 rooms, a 3-minute walk from the South Seas Complex and 7 minutes from the City Plaza; some booking sites wrongly file it under Sultan Kudarat.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Booking.com, Cotabato city page",
+     "url": "https://www.booking.com/city/ph/cotabato.html"
+    },
+    {
+     "label": "Trip.com, Jeamco Royal Hotel-Cotabato",
+     "url": "https://nz.trip.com/hotels/cotabato-1-hotel-detail-21853976/jeamco-royal-hotel-cotabato"
+    },
+    {
+     "label": "Kayak, Cotabato City hotels",
+     "url": "https://www.kayak.com.ph/Cotabato-City-Hotels.52320.hotel.ksp"
+    }
+   ],
+   "status": "open",
+   "onBookingSites": true
+  },
+  {
+   "id": "the-paragon-hotel-restaurant",
+   "name": "The Paragon Hotel & Restaurant",
+   "kind": "hotel",
+   "area": "65 Don Teodoro V. Juliano Avenue",
+   "note": "Small hotel (17 rooms, opened 2019) with its own restaurant and free parking, a short walk from Kutawato Cave.",
+   "lat": null,
+   "lon": null,
+   "website": "https://www.facebook.com/TheParagonHotelandRestaurant/",
+   "sources": [
+    {
+     "label": "Trip.com, The Paragon Hotel and Restaurant",
+     "url": "https://ph.trip.com/hotels/cotabato-1-hotel-detail-126046931/the-paragon-hotel-and-restaurant-cotabato-city"
+    },
+    {
+     "label": "The Paragon Hotel & Restaurant (Facebook page)",
+     "url": "https://www.facebook.com/TheParagonHotelandRestaurant/"
+    },
+    {
+     "label": "Trip.com, Cotabato hotel list",
+     "url": "https://us.trip.com/hotels/cotabato-1-hotels-list-5020/"
+    }
+   ],
+   "status": "open",
+   "onBookingSites": true
+  },
+  {
+   "id": "primera-hotel",
+   "name": "Primera Hotel",
+   "kind": "hotel",
+   "area": "Corner L.R. Sebastian and Andres Alonzo Streets, Rosary Heights 11",
+   "note": "Hotel in Rosary Heights with a garden, family rooms and breakfast available.",
+   "lat": null,
+   "lon": null,
+   "website": "https://www.facebook.com/p/Primera-Hotel-100075914618588/",
+   "sources": [
+    {
+     "label": "Booking.com, Primera Hotel Cotabato",
+     "url": "https://www.booking.com/hotel/ph/primera-cotabato-city.en-gb.html"
+    },
+    {
+     "label": "Primera Hotel (Facebook page)",
+     "url": "https://www.facebook.com/p/Primera-Hotel-100075914618588/"
+    }
+   ],
+   "status": "open",
+   "onBookingSites": true
+  },
+  {
+   "id": "cotabato-diamond-hotel",
+   "name": "Cotabato Diamond Hotel",
+   "kind": "hotel",
+   "area": "Corner Makakua and Jose Lim Sr. Streets, downtown",
+   "note": "Budget hotel in the old downtown near the City Plaza, with private bathrooms in its rooms.",
+   "lat": 7.224955,
+   "lon": 124.2476925,
+   "website": "https://www.facebook.com/p/Cotabato-Diamond-Hotel-100087459216830/",
+   "sources": [
+    {
+     "label": "Cotabato Diamond Hotel (Facebook page)",
+     "url": "https://www.facebook.com/p/Cotabato-Diamond-Hotel-100087459216830/"
+    },
+    {
+     "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    },
+    {
+     "label": "OpenStreetMap, Cotabato Diamond Hotel",
+     "url": "https://www.openstreetmap.org/node/1417076174"
+    }
+   ],
+   "status": "unclear",
+   "onBookingSites": false
+  },
+  {
+   "id": "el-manuel-hotel",
+   "name": "El Manuel Hotel",
+   "kind": "hotel",
+   "area": "111 Quezon Avenue",
+   "note": "Hotel on Quezon Avenue with air-conditioned rooms and function rooms; its Facebook pages use the name El Manuel Hotel and Convention Center.",
+   "lat": null,
+   "lon": null,
+   "website": "https://www.facebook.com/p/El-Manuel-Hotel-and-Convention-Center-100069321854559/",
+   "sources": [
+    {
+     "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    },
+    {
+     "label": "El Manuel Hotel and Convention Center (Facebook page)",
+     "url": "https://www.facebook.com/p/El-Manuel-Hotel-and-Convention-Center-100069321854559/"
+    }
+   ],
+   "status": "unclear",
+   "onBookingSites": false
+  },
+  {
+   "id": "estosan-garden-hotel",
+   "name": "Estosan Garden Hotel",
+   "kind": "hotel",
+   "area": "Governor Gutierrez Avenue",
+   "note": "Garden hotel on Gov. Gutierrez Avenue with swimming pools and function rooms.",
+   "lat": 7.1986468,
+   "lon": 124.2435184,
+   "website": null,
+   "sources": [
+    {
+     "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    },
+    {
+     "label": "OpenStreetMap, Estosan Garden Hotel",
+     "url": "https://www.openstreetmap.org/node/1417971139"
+    }
+   ],
+   "status": "unclear",
+   "onBookingSites": false
+  },
+  {
+   "id": "hotel-filipino",
+   "name": "Hotel Filipino",
+   "kind": "hotel",
+   "area": "Sinsuat Avenue",
+   "note": "Older budget-to-mid-range hotel with fan and air-conditioned rooms and its own restaurant and coffee shop.",
+   "lat": 7.2230665,
+   "lon": 124.2470818,
+   "website": null,
+   "sources": [
+    {
+     "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    },
+    {
+     "label": "OpenStreetMap, Hotel Filipino",
+     "url": "https://www.openstreetmap.org/node/1417219515"
+    }
+   ],
+   "status": "unclear",
+   "onBookingSites": false
+  },
+  {
+   "id": "gran-rio-hotel",
+   "name": "Gran Rio Hotel",
+   "kind": "hotel",
+   "area": "80 Don Rufino Alonzo Avenue",
+   "note": "Downtown hotel with a restaurant and function hall (also written Grand Rio Hotel).",
+   "lat": 7.222643,
+   "lon": 124.2509256,
+   "website": null,
+   "sources": [
+    {
+     "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    },
+    {
+     "label": "OpenStreetMap, Gran Rio Hotel",
+     "url": "https://www.openstreetmap.org/node/3427908203"
+    }
+   ],
+   "status": "unclear",
+   "onBookingSites": false
+  },
+  {
+   "id": "citi-plaza-hotel",
+   "name": "Citi Plaza Hotel",
+   "kind": "hotel",
+   "area": "Makakua Street, facing the City Plaza",
+   "note": "Basic downtown hotel overlooking the City Plaza, with a choice of shared or private bathrooms.",
+   "lat": 7.2233533,
+   "lon": 124.2475062,
+   "website": null,
+   "sources": [
+    {
+     "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    },
+    {
+     "label": "Wikivoyage, Cotabato City",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "OpenStreetMap, Citi Plaza Hotel",
+     "url": "https://www.openstreetmap.org/node/3426310823"
+    }
+   ],
+   "status": "unclear",
+   "onBookingSites": false
+  },
+  {
+   "id": "hotel-cirilo",
+   "name": "Hotel Cirilo",
+   "kind": "hotel",
+   "area": "Makakua Street",
+   "note": "Budget downtown hotel with fan and air-conditioned single, double, triple and family rooms.",
+   "lat": 7.2225583,
+   "lon": 124.2470193,
+   "website": null,
+   "sources": [
+    {
+     "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    },
+    {
+     "label": "OpenStreetMap, Hotel Cirilo",
+     "url": "https://www.openstreetmap.org/node/1418098673"
+    }
+   ],
+   "status": "unclear",
+   "onBookingSites": false
+  },
+  {
+   "id": "fiesta-cotabato",
+   "name": "Fiesta Cotabato",
+   "kind": "hotel",
+   "area": "Dr. Rabago Street",
+   "note": "Budget hotel with fan and air-conditioned rooms, a restaurant and a convention hall.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    }
+   ],
+   "status": "unclear",
+   "onBookingSites": false
+  },
+  {
+   "id": "pacific-heights-hotel-the-marqueza",
+   "name": "Pacific Heights Hotel / The Marqueza",
+   "kind": "hotel",
+   "area": "66 Don T.V. Juliano Avenue",
+   "note": "Older hotel on Juliano Avenue with function space, listed under both names.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    }
+   ],
+   "status": "unclear",
+   "onBookingSites": false
+  },
+  {
+   "id": "sardonyx-pension-house",
+   "name": "Sardonyx Pension House",
+   "kind": "pension",
+   "area": "Governor Gutierrez Avenue",
+   "note": "Pension house with all air-conditioned rooms and a convention hall.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    }
+   ],
+   "status": "unclear",
+   "onBookingSites": false
+  },
+  {
+   "id": "azaleas-pension-house",
+   "name": "Azaleas Pension House",
+   "kind": "pension",
+   "area": "Sinsuat Avenue",
+   "note": "Budget pension house with fan and air-conditioned single, twin and triple rooms.",
+   "lat": 7.2082533,
+   "lon": 124.2431004,
+   "website": null,
+   "sources": [
+    {
+     "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    },
+    {
+     "label": "OpenStreetMap, Azaleas Pension House",
+     "url": "https://www.openstreetmap.org/node/3428092001"
+    }
+   ],
+   "status": "unclear",
+   "onBookingSites": false
+  },
+  {
+   "id": "pension-rafael",
+   "name": "Pension Rafael",
+   "kind": "pension",
+   "area": "San Isidro Street",
+   "note": "Small budget pension house with double, triple and family rooms.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    }
+   ],
+   "status": "unclear",
+   "onBookingSites": false
+  },
+  {
+   "id": "vision-inn",
+   "name": "Vision Inn",
+   "kind": "inn",
+   "area": "Notre Dame Avenue",
+   "note": "Budget inn with fan and air-conditioned double rooms and a coffee shop.",
+   "lat": 7.2178169,
+   "lon": 124.2502418,
+   "website": null,
+   "sources": [
+    {
+     "label": "Lakwatsero, Cotabato City travel guide (updated 2020)",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    },
+    {
+     "label": "OpenStreetMap, Vision Inn",
+     "url": "https://www.openstreetmap.org/node/1418020824"
+    }
+   ],
+   "status": "unclear",
+   "onBookingSites": false
+  },
+  {
+   "id": "maha-travellers-inn",
+   "name": "Maha Travellers INN",
+   "kind": "inn",
+   "area": "Maha Commercial Building (2nd floor), Don T.V. Juliano Avenue, Rosary Heights",
+   "note": "Inn on the second floor of a commercial building on Juliano Avenue that describes itself as the city's newest hotel.",
+   "lat": null,
+   "lon": null,
+   "website": "https://www.facebook.com/p/Maha-Travellers-INN-100080822103656/",
+   "sources": [
+    {
+     "label": "Maha Travellers INN (Facebook page)",
+     "url": "https://www.facebook.com/p/Maha-Travellers-INN-100080822103656/"
+    }
+   ],
+   "status": "unclear",
+   "onBookingSites": false
+  },
+  {
+   "id": "agong-lodge",
+   "name": "AGONG LODGE",
+   "kind": "inn",
+   "area": "Don Rufino Alonzo Street, in front of the City Plaza",
+   "note": "Small lodge facing the City Plaza in the old downtown.",
+   "lat": null,
+   "lon": null,
+   "website": "https://www.facebook.com/Agong02",
+   "sources": [
+    {
+     "label": "AGONG LODGE (Facebook page)",
+     "url": "https://www.facebook.com/Agong02"
+    }
+   ],
+   "status": "unclear",
+   "onBookingSites": false
+  },
+  {
+   "id": "bubong-travellers-inn",
+   "name": "Bubong Travellers INN",
+   "kind": "inn",
+   "area": null,
+   "note": "Small inn in Cotabato City that takes bookings through its Facebook page.",
+   "lat": null,
+   "lon": null,
+   "website": "https://www.facebook.com/p/Bubong-Travellers-INN-100078785234936/",
+   "sources": [
+    {
+     "label": "Bubong Travellers INN (Facebook page)",
+     "url": "https://www.facebook.com/p/Bubong-Travellers-INN-100078785234936/"
+    }
+   ],
+   "status": "unclear",
+   "onBookingSites": false
+  },
+  {
+   "id": "balai-asul-inn",
+   "name": "Balai Asul Inn",
+   "kind": "inn",
+   "area": null,
+   "note": "Small inn in Cotabato City that takes enquiries by private message on its Facebook page.",
+   "lat": null,
+   "lon": null,
+   "website": "https://www.facebook.com/balaiasulinncotabato/",
+   "sources": [
+    {
+     "label": "Balai Asul Inn - Cotabato City (Facebook page)",
+     "url": "https://www.facebook.com/balaiasulinncotabato/"
+    }
+   ],
+   "status": "unclear",
+   "onBookingSites": false
+  },
+  {
+   "id": "casa-martina",
+   "name": "Casa Martina",
+   "kind": "guesthouse",
+   "area": "13 Makakua Street",
+   "note": "2-room guesthouse on Makakua Street downtown with a family room and a deluxe room.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Trip.com, Casa Martina",
+     "url": "https://nz.trip.com/hotels/cotabato-1-hotel-detail-129513240"
+    }
+   ],
+   "status": "open",
+   "onBookingSites": false
+  },
+  {
+   "id": "laleah-transient-house",
+   "name": "LALEAH Transient House",
+   "kind": "guesthouse",
+   "area": null,
+   "note": "Whole-house transient rental for families and groups, with a kitchen and private parking, about 6 km from Awang Airport.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Booking.com, hotels near Awang Airport",
+     "url": "https://www.booking.com/airport/ph/cbo.en-gb.html"
+    },
+    {
+     "label": "cozycozy, Cotabato City lodging",
+     "url": "https://www.cozycozy.com/us/cotabato-city-lodging"
+    },
+    {
+     "label": "Airbnb, Cotabato City stays",
+     "url": "https://www.airbnb.com/cotabato-city-philippines/stays"
+    }
+   ],
+   "status": "open",
+   "onBookingSites": true
+  },
+  {
+   "id": "luxury-home",
+   "name": "Luxury Home",
+   "kind": "apartment",
+   "area": "Happy Home Subdivision, Rosales Heights Street, Rosary Heights 10",
+   "note": "2-bedroom holiday home in a Rosary Heights subdivision with a full kitchen, washing machine and free parking.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Booking.com, Cotabato city page",
+     "url": "https://www.booking.com/city/ph/cotabato.html"
+    },
+    {
+     "label": "Trip.com, Cotabato hotel list",
+     "url": "https://us.trip.com/hotels/cotabato-1-hotels-list-5020/"
+    },
+    {
+     "label": "Airbnb, Cotabato City stays",
+     "url": "https://www.airbnb.com/cotabato-city-philippines/stays"
+    }
+   ],
+   "status": "open",
+   "onBookingSites": true
+  },
+  {
+   "id": "cozy-studio-type-unit-w-tv-wifi-hotshower-ref",
+   "name": "Cozy Studio Type unit w/ TV, Wifi, hotshower & ref",
+   "kind": "apartment",
+   "area": "Sunga Compound, San Pablo Village",
+   "note": "Studio rental unit in San Pablo Village, near the ICRC office.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Trip.com, Cotabato hotel list",
+     "url": "https://us.trip.com/hotels/cotabato-1-hotels-list-5020/"
+    },
+    {
+     "label": "cozycozy, Cotabato City lodging",
+     "url": "https://www.cozycozy.com/us/cotabato-city-lodging"
+    }
+   ],
+   "status": "open",
+   "onBookingSites": false
+  },
+  {
+   "id": "jack-s-suites",
+   "name": "Jack's Suites",
+   "kind": "apartment",
+   "area": "near the Bangsamoro Government Center",
+   "note": "3-bedroom rental home for up to 12 guests in a quiet neighbourhood near the Bangsamoro Government Center, with a kitchen and parking.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Airbnb, Cotabato City stays",
+     "url": "https://www.airbnb.com/cotabato-city-philippines/stays"
+    },
+    {
+     "label": "cozycozy, Cotabato City lodging",
+     "url": "https://www.cozycozy.com/us/cotabato-city-lodging"
+    }
+   ],
+   "status": "open",
+   "onBookingSites": false
+  },
+  {
+   "id": "almaz-suites",
+   "name": "Almaz Suites",
+   "kind": "apartment",
+   "area": "near the Bangsamoro Government Center",
+   "note": "Private-room rental marketed to visitors to the Bangsamoro Government Center.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Airbnb, Cotabato City stays",
+     "url": "https://www.airbnb.com/cotabato-city-philippines/stays"
+    }
+   ],
+   "status": "open",
+   "onBookingSites": false
+  },
+  {
+   "id": "fouriu-inn-cotabato-city",
+   "name": "Fouriu Inn Cotabato City",
+   "kind": "apartment",
+   "area": null,
+   "note": "Rooms and apartment units listed on Airbnb, about 1 mile from KCC Mall of Cotabato.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Airbnb, Cotabato City stays",
+     "url": "https://www.airbnb.com/cotabato-city-philippines/stays"
+    },
+    {
+     "label": "cozycozy, Cotabato City lodging",
+     "url": "https://www.cozycozy.com/us/cotabato-city-lodging"
+    }
+   ],
+   "status": "open",
+   "onBookingSites": false
+  },
+  {
+   "id": "residenza-cotabato",
+   "name": "Residenza Cotabato",
+   "kind": "apartment",
+   "area": null,
+   "note": "Apartment rental in a quiet residential area of the city, listed on Airbnb.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Airbnb, Cotabato City stays",
+     "url": "https://www.airbnb.com/cotabato-city-philippines/stays"
+    },
+    {
+     "label": "cozycozy, Cotabato City lodging",
+     "url": "https://www.cozycozy.com/us/cotabato-city-lodging"
+    }
+   ],
+   "status": "open",
+   "onBookingSites": false
+  },
+  {
+   "id": "cotabato-kn-apartelle",
+   "name": "Cotabato KN Apartelle",
+   "kind": "apartment",
+   "area": null,
+   "note": "Apartelle units listed for short stays on Airbnb.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Airbnb, Cotabato City stays",
+     "url": "https://www.airbnb.com/cotabato-city-philippines/stays"
+    }
+   ],
+   "status": "open",
+   "onBookingSites": false
+  },
+  {
+   "id": "m-s-private-residence",
+   "name": "M&S Private Residence",
+   "kind": "apartment",
+   "area": null,
+   "note": "Private residence with its own pickleball court, rented as whole house or 1-bedroom units on Airbnb.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Airbnb, Cotabato City stays",
+     "url": "https://www.airbnb.com/cotabato-city-philippines/stays"
+    }
+   ],
+   "status": "open",
+   "onBookingSites": false
+  }
+ ],
+ "eat": [
+  {
+   "id": "pagana-kutawato-native-restaurant",
+   "name": "Pagana Kutawato Native Restaurant",
+   "kind": "restaurant",
+   "area": "Rufo Mañara Street, Rosary Heights 11",
+   "note": "Native restaurant with a pork-free menu of local dishes and fresh seafood such as tuna, crabs and shrimp.",
+   "lat": 7.2037006,
+   "lon": 124.2345384,
+   "website": null,
+   "sources": [
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "Wikivoyage: Cotabato City (Eat)",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Trip.com: Pagana Kutawato",
+     "url": "https://au.trip.com/travel-guide/foods/Cotabato-14689-restaurant/Pagana%20Kutawato-23879121"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "hala-bira-halal-food",
+   "name": "Hala Bira Halal Food",
+   "kind": "restaurant",
+   "area": "Jose Lim Street",
+   "note": "Halal eatery known for papaitan and bulalo.",
+   "lat": 7.2246905,
+   "lon": 124.2480733,
+   "website": null,
+   "sources": [
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    }
+   ],
+   "status": "unclear",
+   "halal": true
+  },
+  {
+   "id": "mama-ping",
+   "name": "Mama Ping",
+   "kind": "restaurant",
+   "area": "Doña Pilar Street",
+   "note": "Muslim restaurant serving Maguindanaon dishes such as linigid chicken.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "PNA: Halal tourism, a glimpse into Mindanao food, heritage (2021)",
+     "url": "https://www.pna.gov.ph/articles/1147711"
+    },
+    {
+     "label": "Out of Town Blog: DOT launches Halal Food Tourism (2021)",
+     "url": "https://outoftownblog.com/department-of-tourism-launches-halal-food-tourism/"
+    },
+    {
+     "label": "Restaurant Guru: Mama Ping",
+     "url": "https://restaurantguru.com/Mama-Ping-Cotabato-City"
+    }
+   ],
+   "status": "open",
+   "halal": true
+  },
+  {
+   "id": "hashy-s-cuisine",
+   "name": "Hashy's Cuisine",
+   "kind": "restaurant",
+   "area": null,
+   "note": "Halal-certified restaurant known for sinina kambing, a Maguindanaon goat stew.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "PNA: Halal tourism, a glimpse into Mindanao food, heritage (2021)",
+     "url": "https://www.pna.gov.ph/articles/1147711"
+    },
+    {
+     "label": "Out of Town Blog: DOT launches Halal Food Tourism (2021)",
+     "url": "https://outoftownblog.com/department-of-tourism-launches-halal-food-tourism/"
+    }
+   ],
+   "status": "unclear",
+   "halal": true
+  },
+  {
+   "id": "babo-katips",
+   "name": "Babo Katips",
+   "kind": "restaurant",
+   "area": "Tamontaka",
+   "note": "Eatery known for fried hito (catfish).",
+   "lat": 7.1863212,
+   "lon": 124.2263238,
+   "website": null,
+   "sources": [
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "Restaurant Guru: fish restaurants in Cotabato City",
+     "url": "https://restaurantguru.com/fish-Cotabato-City-m102"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "jetoy-s-hitoan",
+   "name": "JETOY's Hitoan",
+   "kind": "restaurant",
+   "area": "Sinsuat Avenue",
+   "note": "Hito house serving deep-fried catfish with Filipino home-style dishes and sauces.",
+   "lat": 7.2140882,
+   "lon": 124.2457287,
+   "website": null,
+   "sources": [
+    {
+     "label": "Wanderlog: JETOY's Hitoan",
+     "url": "https://wanderlog.com/place/details/3697583/jetoys-hitoan"
+    },
+    {
+     "label": "Restaurant Guru: fish restaurants in Cotabato City",
+     "url": "https://restaurantguru.com/fish-Cotabato-City-m102"
+    }
+   ],
+   "status": "open",
+   "halal": null
+  },
+  {
+   "id": "el-hitoan",
+   "name": "El Hitoan",
+   "kind": "restaurant",
+   "area": null,
+   "note": "Hito house serving deep-fried catfish and other fresh fish dishes.",
+   "lat": 7.2116516,
+   "lon": 124.241763,
+   "website": "https://www.facebook.com/profile.php?id=100057289455990",
+   "sources": [
+    {
+     "label": "Restaurant Guru: El Hitoan",
+     "url": "https://restaurantguru.com/El-Hitoan-Cotabato-City-2"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "jamaica-le-cafe",
+   "name": "Jamaica Le Café",
+   "kind": "restaurant",
+   "area": "Alnor Commercial Compound, Sinsuat Avenue",
+   "note": "Halal-certified Asian restaurant known for crab rice, fried hito and beef rendang.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Edge Davao: Cotabato eats, Jamaica Le Café (2019)",
+     "url": "https://edgedavao.net/indulge-lifestyle/2019/01/cotabato-eats-jamaica-le-cafes-familiar-new-taste"
+    },
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ],
+   "status": "unclear",
+   "halal": true
+  },
+  {
+   "id": "cafe-le-sorelle",
+   "name": "Cafe Le Sorelle",
+   "kind": "cafe",
+   "area": "Sema Building, Sinsuat Avenue corner Macapagal Street",
+   "note": "Café serving pasta, chicken lasagna, cheesecake and halo-halo.",
+   "lat": 7.2013005,
+   "lon": 124.2399479,
+   "website": "https://www.facebook.com/cafelesorelle",
+   "sources": [
+    {
+     "label": "Lakwatsero: Cotabato City travel guide",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    },
+    {
+     "label": "Wikivoyage: Cotabato City (Eat)",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "sugar-pappi",
+   "name": "Sugar Pappi",
+   "kind": "restaurant",
+   "area": null,
+   "note": "Local restaurant serving pansit guisado, pasta, ribs, chocolate cake and chocolate yema.",
+   "lat": 7.2058508,
+   "lon": 124.2422963,
+   "website": null,
+   "sources": [
+    {
+     "label": "Lakwatsero: Cotabato City travel guide",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    },
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "moro-cafe",
+   "name": "Moro Cafe",
+   "kind": "cafe",
+   "area": "BARMM compound (former ORC compound), Governor Gutierrez Avenue",
+   "note": "Café serving Sulu and Tausug coffee, juices, pastries and rice meals such as rendang; some listings call it Bangsamoro Cafe.",
+   "lat": 7.1964946,
+   "lon": 124.2462956,
+   "website": null,
+   "sources": [
+    {
+     "label": "Philippine Coffee Board: Coffee the Moro way (2019)",
+     "url": "https://philcoffeeboard.com/coffee-the-moro-way/"
+    },
+    {
+     "label": "Wikivoyage: Cotabato City (Eat)",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Wanderlog: Bangsamoro Cafe",
+     "url": "https://wanderlog.com/place/details/3253680"
+    }
+   ],
+   "status": "open",
+   "halal": null
+  },
+  {
+   "id": "cafe-mindanaw",
+   "name": "Café Mindanaw",
+   "kind": "cafe",
+   "area": null,
+   "note": "Coffee shop and bookshop serving Maguindanaon coffee, with books on Mindanao history and Moro culture.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Philippine Coffee Board: Coffee the Moro way (2019)",
+     "url": "https://philcoffeeboard.com/coffee-the-moro-way/"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "rizal-park-grill-stalls",
+   "name": "Rizal Park grill stalls",
+   "kind": "other",
+   "area": "near Rizal Park, Sinsuat Avenue",
+   "note": "Roadside stalls grilling barbecue meats, busiest at night.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "cotabato-city-mega-market",
+   "name": "Cotabato City Mega Market",
+   "kind": "market",
+   "area": null,
+   "note": "The city's main wet market, with eateries inside selling pastil for breakfast.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "PNA: Pastil, Maguindanaon food on Christmas (2017)",
+     "url": "https://www.pna.gov.ph/articles/1019321"
+    },
+    {
+     "label": "Wikipedia: Cotabato City",
+     "url": "https://en.wikipedia.org/wiki/Cotabato_City"
+    }
+   ],
+   "status": "open",
+   "halal": null
+  },
+  {
+   "id": "samra-maguindanao-delicacies",
+   "name": "Samra Maguindanao Delicacies",
+   "kind": "other",
+   "area": null,
+   "note": "Maker of Maguindanaon sweets such as dudul, tinadtag, putri mandi and panganan sising, shown as Cotabato City's One Town One Product.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Pinas Muna: Ramadan 2013 celebration in ARMM (Cotabato City fair)",
+     "url": "https://www.pinasmuna.com/2013/07/ramadan-2013-celebration-in-armm.html"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "pacific-heights-7188",
+   "name": "Pacific Heights",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2159997,
+   "lon": 124.2399191,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/1417267188"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "avenue-grill-4976",
+   "name": "Avenue Grill",
+   "kind": "restaurant",
+   "area": "Sinsuat Avenue",
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2047856,
+   "lon": 124.241183,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/1417984976"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "las-hermanas-4990",
+   "name": "Las Hermanas",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.201841,
+   "lon": 124.2393417,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/1417984990"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "manong-s-fruity-food-4992",
+   "name": "Manong's Fruity Food",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2020395,
+   "lon": 124.2394855,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/1417984992"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "connie-s-bakeshop-0618",
+   "name": "Connie's Bakeshop",
+   "kind": "bakery",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2233275,
+   "lon": 124.2495754,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/1418000618"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "cotabato-oriental-restaurant-0622",
+   "name": "Cotabato Oriental Restaurant",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2244217,
+   "lon": 124.2456052,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/1418000622"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "mami-king-0638",
+   "name": "Mami King",
+   "kind": "restaurant",
+   "area": "Don Rufino Alonzo Street",
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2246146,
+   "lon": 124.2456169,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/1418000638"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "mardoney-s-0641",
+   "name": "Mardoney's",
+   "kind": "restaurant",
+   "area": "Don Rufino Alonzo Street",
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2246471,
+   "lon": 124.2455432,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/1418000641"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "circuit-resto-0808",
+   "name": "Circuit Resto",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2115657,
+   "lon": 124.242444,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/1418020808"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "fiesta-cotabato-native-restaurant-0813",
+   "name": "Fiesta Cotabato Native Restaurant",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.21163,
+   "lon": 124.2416959,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/1418020813"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "ping-s-muslim-restaurant-0821",
+   "name": "Ping's Muslim Restaurant",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2101129,
+   "lon": 124.2476384,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/1418020821"
+    }
+   ],
+   "status": "unclear",
+   "halal": true
+  },
+  {
+   "id": "mang-gorio-7247",
+   "name": "Mang Gorio",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2236967,
+   "lon": 124.2479236,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/1418037247"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "smiley-s-7260",
+   "name": "Smiley's",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2220183,
+   "lon": 124.2465068,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/1418037260"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "pritong-manok-1795",
+   "name": "Pritong Manok",
+   "kind": "restaurant",
+   "area": "S.K. Pendatun Avenue",
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2229884,
+   "lon": 124.2475055,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/1418821795"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "datu-s-brew-coffee-shop-6260",
+   "name": "Datu's Brew Coffee Shop",
+   "kind": "cafe",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.200698,
+   "lon": 124.2402347,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/2417006260"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "tam-s-bakery-8678",
+   "name": "Tam's Bakery",
+   "kind": "bakery",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2246142,
+   "lon": 124.2479301,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/2417098678"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "bettle-burger-2389",
+   "name": "Bettle Burger",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves burger.",
+   "lat": 7.2028033,
+   "lon": 124.2399768,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3426302389"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "dela-fuente-hito-an-2390",
+   "name": "Dela Fuente Hito-an",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves asian.",
+   "lat": 7.1977136,
+   "lon": 124.2373065,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3426302390"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "reese-0791",
+   "name": "Reese",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves asian.",
+   "lat": 7.2209747,
+   "lon": 124.2505445,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3426350791"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "badens-bistro-9427",
+   "name": "Badens Bistro",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves asian.",
+   "lat": 7.2060052,
+   "lon": 124.2415433,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3426399427"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "golden-lace-fine-dining-9431",
+   "name": "Golden Lace Fine Dining",
+   "kind": "restaurant",
+   "area": "Macapagal Street",
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves asian.",
+   "lat": 7.2069027,
+   "lon": 124.2417442,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3426399431"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "kai-s-lounge-9432",
+   "name": "Kai's Lounge",
+   "kind": "restaurant",
+   "area": "Pansacala Street",
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves asian.",
+   "lat": 7.205949,
+   "lon": 124.2416813,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3426399432"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "j3-cuisine-8819",
+   "name": "J3 Cuisine",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves asian.",
+   "lat": 7.2166904,
+   "lon": 124.2419548,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3427898819"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "kitoks-litson-manok-2316",
+   "name": "Kitoks Litson Manok",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves asian.",
+   "lat": 7.2021316,
+   "lon": 124.2395417,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3427942316"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "irysh-binalot-republik-7955",
+   "name": "Irysh Binalot Republik",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves asian.",
+   "lat": 7.2179672,
+   "lon": 124.2414181,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3428087955"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "jean-s-bbq-7956",
+   "name": "Jean's BBQ",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2178317,
+   "lon": 124.2413683,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3428087956"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "mama-mia-s-chicken-inasal-7957",
+   "name": "Mama Mia's Chicken Inasal",
+   "kind": "restaurant",
+   "area": "T.V. Juliano Avenue",
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2176018,
+   "lon": 124.2409319,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3428087957"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "raff-s-garden-2004",
+   "name": "Raff's Garden",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2054258,
+   "lon": 124.2392199,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3428092004"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "dexter-s-pizza-5557",
+   "name": "Dexter's Pizza",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves italian.",
+   "lat": 7.1979097,
+   "lon": 124.2436613,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3428135557"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "aleng-precy-2367",
+   "name": "Aleng Precy",
+   "kind": "restaurant",
+   "area": "Sinsuat Avenue",
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves regional.",
+   "lat": 7.2041413,
+   "lon": 124.2408044,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3428152367"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "cora-bless-eatery-2370",
+   "name": "Cora Bless Eatery",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves filipino.",
+   "lat": 7.203162,
+   "lon": 124.2402037,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3428152370"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "picante-pizza-2374",
+   "name": "Picante Pizza",
+   "kind": "restaurant",
+   "area": "Sinsuat Avenue",
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves pizza.",
+   "lat": 7.2033479,
+   "lon": 124.2403065,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/3428152374"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "kuya-lito-s-kainan-0390",
+   "name": "Kuya Lito's Kainan",
+   "kind": "restaurant",
+   "area": "Sinsuat Avenue",
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2037049,
+   "lon": 124.2406126,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/4201900390"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "choko-moist-1486",
+   "name": "Choko moist",
+   "kind": "bakery",
+   "area": "San Miguel Street",
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2151952,
+   "lon": 124.2409851,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/7614291486"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "angkol-dodong-s-lutong-bahay-0917",
+   "name": "Angkol Dodong's Lutong Bahay",
+   "kind": "restaurant",
+   "area": "Rufo Mañara Street",
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves asian.",
+   "lat": 7.2031303,
+   "lon": 124.2353127,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/8604640917"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "teacup-time-cotabato-ciy-2017",
+   "name": "teacup time cotabato ciy",
+   "kind": "cafe",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2155754,
+   "lon": 124.2535339,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/9895272017"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "d-lara-kainan-3017",
+   "name": "D' Lara Kainan",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.1977413,
+   "lon": 124.2369679,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/10017623017"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "dimple-carinderia-3117",
+   "name": "Dimple Carinderia",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves filipino.",
+   "lat": 7.2241727,
+   "lon": 124.2477333,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/10017623117"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "shakirah-halal-foods-7517",
+   "name": "Shakirah Halal Foods",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2243614,
+   "lon": 124.2477797,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/10019757517"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "7-24-bulalo-atbp-7617",
+   "name": "7/24 Bulalo, Atbp.",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2136409,
+   "lon": 124.2409661,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/10019757617"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "robaina-carinderia-0617",
+   "name": "Robaina Carinderia",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves filipino.",
+   "lat": 7.2268374,
+   "lon": 124.2417972,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/10019850617"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "timako-food-park-5042",
+   "name": "Timako Food Park",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2118421,
+   "lon": 124.1769107,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/10578015042"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "bebz-food-park-0941",
+   "name": "Bebz Food Park",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2115886,
+   "lon": 124.1797112,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/10578020941"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "almadin-snack-hauz-0341",
+   "name": "Almadin Snack Hauz",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.1993995,
+   "lon": 124.1769495,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/10578070341"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "unnie-cafe-7105",
+   "name": "Unnie Cafe",
+   "kind": "cafe",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.1883458,
+   "lon": 124.2228794,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/10585457105"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "hamid-bakeshop-8905",
+   "name": "Hamid Bakeshop",
+   "kind": "bakery",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.1856148,
+   "lon": 124.2261037,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/10605008905"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "samiras-5466",
+   "name": "Samiras",
+   "kind": "restaurant",
+   "area": "Governor Gutierrez Avenue",
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves arab.",
+   "lat": 7.1989911,
+   "lon": 124.2430646,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/13438405466"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "kopi-lah-roti-5467",
+   "name": "Kopi Lah Roti",
+   "kind": "cafe",
+   "area": "Governor Gutierrez Avenue",
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.1989527,
+   "lon": 124.243115,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/13438405467"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "yarra-5468",
+   "name": "Yarra",
+   "kind": "restaurant",
+   "area": "Governor Gutierrez Avenue",
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves japanese.",
+   "lat": 7.1989135,
+   "lon": 124.2431664,
+   "website": "@YarraCafeResto",
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/13438405468"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "clintoy-fried-kitchen-5680",
+   "name": "Clintoy Fried Kitchen",
+   "kind": "restaurant",
+   "area": "Andres Alonzo Street",
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves chicken.",
+   "lat": 7.2057453,
+   "lon": 124.2348211,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/13438405680"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "kok-s-fried-chicken-house-5794",
+   "name": "Kok's Fried Chicken House",
+   "kind": "restaurant",
+   "area": "Andres Alonzo Street",
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves chicken.",
+   "lat": 7.2054681,
+   "lon": 124.2343903,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/13438405794"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "24-chicken-sinsuat-avenue-4099",
+   "name": "24 Chicken Sinsuat Avenue",
+   "kind": "restaurant",
+   "area": "Sinsuat Avenue",
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves chicken.",
+   "lat": 7.2078912,
+   "lon": 124.2431475,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/node/13564304099"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "cafe-florencio-7775",
+   "name": "Cafe Florencio",
+   "kind": "cafe",
+   "area": "Sinsuat Avenue",
+   "note": "On OpenStreetMap; not yet described by a source this guide found.",
+   "lat": 7.2032547,
+   "lon": 124.2405853,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/289517775"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "el-comedor-9260",
+   "name": "El Comedor",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves asian.",
+   "lat": 7.204609,
+   "lon": 124.2410848,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/335159260"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "isangs-inasal-8683",
+   "name": "Isangs Inasal",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves asian.",
+   "lat": 7.2045531,
+   "lon": 124.2408333,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/335518683"
+    }
+   ],
+   "status": "unclear",
+   "halal": null
+  },
+  {
+   "id": "moro-grounds-resto-6014",
+   "name": "Moro Grounds Resto",
+   "kind": "restaurant",
+   "area": null,
+   "note": "On OpenStreetMap; not yet described by a source this guide found. Serves filipino, seafood.",
+   "lat": 7.2027314,
+   "lon": 124.166165,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/1513356014"
+    }
+   ],
+   "status": "unclear",
+   "halal": true
+  }
+ ],
+ "see": [
+  {
+   "id": "sultan-haji-hassanal-bolkiah-masjid-grand-mosque",
+   "name": "Sultan Haji Hassanal Bolkiah Masjid (Grand Mosque)",
+   "kind": "sacred",
+   "area": "Barangay Kalanganan II, by the Tamontaka River",
+   "note": "Completed in 2011 with 4 minarets 43 m tall and room for about 15,000 worshippers, it is run by the Bangsamoro Government. Dress modestly: women cover hair, arms and legs; men wear long trousers and sleeved shirts. Visitor guides report daily visiting hours of 7:00 to 19:00 and no entrance fee.",
+   "lat": 7.2023667,
+   "lon": 124.1652155,
+   "website": null,
+   "sources": [
+    {
+     "label": "Wikipedia: Sultan Haji Hassanal Bolkiah Masjid",
+     "url": "https://en.wikipedia.org/wiki/Sultan_Haji_Hassanal_Bolkiah_Masjid"
+    },
+    {
+     "label": "The Bisaya Traveler (2024)",
+     "url": "https://bisayatraveler.com/2024/09/08/the-grand-mosque-of-cotabato/"
+    },
+    {
+     "label": "VisMin.ph (2025)",
+     "url": "https://vismin.ph/2025/explore-the-grand-mosque-of-cotabato/"
+    }
+   ],
+   "status": "open",
+   "photo": null
+  },
+  {
+   "id": "pedro-colina-hill-pc-hill-and-its-painted-houses",
+   "name": "Pedro Colina Hill (PC Hill) and its painted houses",
+   "kind": "heritage",
+   "area": "Sinsuat Avenue side of the hill, city centre",
+   "note": "The low hill, also called Tantawan, is where the city's story begins: it sits over the Kutawato Caves, and in 2018 the houses on its slope were painted in bright patterns of guinakit boats, gongs and crabs. The hill is also a police and military reservation housing several law-enforcement offices, so ask before photographing people or buildings.",
+   "lat": 7.2198436,
+   "lon": 124.2443235,
+   "website": null,
+   "sources": [
+    {
+     "label": "Wikipedia: Pedro Colina Hill",
+     "url": "https://en.wikipedia.org/wiki/Pedro_Colina_Hill"
+    },
+    {
+     "label": "Langyaw (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ],
+   "status": "open",
+   "photo": "pc-hill"
+  },
+  {
+   "id": "kutawato-caves",
+   "name": "Kutawato Caves",
+   "kind": "nature",
+   "area": "Foot of Pedro Colina Hill, Barangay Rosary Heights 1",
+   "note": "This limestone cave system sits in the city centre, and its name, meaning 'stone fort', gave Cotabato its name; it sheltered locals in Spanish times and WWII guerrillas. The city repaired it from January 2026 and formally reopened it in June 2026 during the 67th Araw ng Cotabato. Floors can be wet.",
+   "lat": 7.2199135,
+   "lon": 124.2419304,
+   "website": null,
+   "sources": [
+    {
+     "label": "City of Cotabato: Kutawato Cave reopens (June 2026)",
+     "url": "https://cityofcotabato.com/utawato-cave-reopens-as-cotabato-city-celebrates-67th-araw-ng-cotabato/"
+    },
+    {
+     "label": "Star FM Cotabato: rehabilitation begins (January 2026)",
+     "url": "https://cotabato.bomboradyo.com/kutawato-cave-sinimulan-nang-ayusin/"
+    },
+    {
+     "label": "Wikipedia: Kutawato Caves",
+     "url": "https://en.wikipedia.org/wiki/Kutawato_Caves"
+    }
+   ],
+   "status": "open",
+   "photo": "kutawato-cave"
+  },
+  {
+   "id": "tamontaka-church-church-of-the-immaculate-conception",
+   "name": "Tamontaka Church (Church of the Immaculate Conception)",
+   "kind": "sacred",
+   "area": "Tamontaka, along the Tamontaka River",
+   "note": "Jesuits founded this church in 1872, and it has stood on its present site since 1879. It was rebuilt after a 1976 earthquake and a 1994 fire, and was declared a National Historic Landmark in 2004. It is a working Catholic parish, so visit outside Mass or sit in quietly.",
+   "lat": 7.1836134,
+   "lon": 124.222166,
+   "website": null,
+   "sources": [
+    {
+     "label": "Wikipedia: Tamontaka Church",
+     "url": "https://en.wikipedia.org/wiki/Tamontaka_Church"
+    },
+    {
+     "label": "Langyaw (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ],
+   "status": "open",
+   "photo": "tamontaka"
+  },
+  {
+   "id": "old-cotabato-city-hall",
+   "name": "Old Cotabato City Hall",
+   "kind": "heritage",
+   "area": "Don Roman Vilo Street, fronting Rizal Park Plaza",
+   "note": "Juan Arellano designed this 1936 town hall in a Maguindanaon-influenced neo-vernacular style. It was renovated in 2016 and later used as a small city museum and visitor information centre. Local radio reported in January 2026 that a new rehabilitation was done, and the city plans the building as its museum and library, so check whether exhibits are open before going.",
+   "lat": 7.2239468,
+   "lon": 124.2461883,
+   "website": null,
+   "sources": [
+    {
+     "label": "Wikipedia: Old Cotabato City Hall Museum",
+     "url": "https://en.wikipedia.org/wiki/Old_Cotabato_City_Hall_Museum"
+    },
+    {
+     "label": "Star FM Cotabato (January 2026)",
+     "url": "https://cotabato.bomboradyo.com/kutawato-cave-sinimulan-nang-ayusin/"
+    },
+    {
+     "label": "Langyaw (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ],
+   "status": "unclear",
+   "photo": "old-city-hall"
+  },
+  {
+   "id": "bangsamoro-museum-shariff-kabunsuan-cultural-complex",
+   "name": "Bangsamoro Museum, Shariff Kabunsuan Cultural Complex",
+   "kind": "museum",
+   "area": "Bangsamoro Government Center, Rosary Heights VII",
+   "note": "Opened in 2019, the museum is run by the Bangsamoro cultural heritage commission. Its collection includes burial jars 2,000 to 2,500 years old, Moro textiles and brassware, objects from the Marawi siege and records of the peace process.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Wikipedia: Shariff Kabunsuan Cultural Complex",
+     "url": "https://en.wikipedia.org/wiki/Shariff_Kabunsuan_Cultural_Complex"
+    },
+    {
+     "label": "Nomadic Experiences (2023)",
+     "url": "https://www.nomadicexperiences.com/2023/02/cotabato-citys-bangsamoro-museum.html"
+    },
+    {
+     "label": "Wikipedia: Bangsamoro Government Center",
+     "url": "https://en.wikipedia.org/wiki/Bangsamoro_Government_Center"
+    }
+   ],
+   "status": "open",
+   "photo": null
+  },
+  {
+   "id": "bangsamoro-government-center",
+   "name": "Bangsamoro Government Center",
+   "kind": "heritage",
+   "area": "Rosary Heights VII",
+   "note": "Built in 1976 and once nicknamed the 'Little Malacañan of the South', the complex holds the executive and parliament buildings and the cultural complex, and hosts Ramadan light displays and festival events. A 2023 regional law moves the seat of government to Parang, Maguindanao del Norte.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Wikipedia: Bangsamoro Government Center",
+     "url": "https://en.wikipedia.org/wiki/Bangsamoro_Government_Center"
+    },
+    {
+     "label": "Arab News Pakistan (2024)",
+     "url": "https://www.arabnews.pk/node/2476066/world"
+    }
+   ],
+   "status": "open",
+   "photo": null
+  },
+  {
+   "id": "tantawan-park",
+   "name": "Tantawan Park",
+   "kind": "park",
+   "area": "Corner of Quezon Avenue and Sinsuat Avenue, foot of PC Hill",
+   "note": "This small historical park has a monument to Sultan Muhammad Kudarat of Maguindanao. It stands where a Maguindanao watchtower guarded the sultanate against Spanish attacks in 1635 to 1645.",
+   "lat": 7.2214408,
+   "lon": 124.245963,
+   "website": null,
+   "sources": [
+    {
+     "label": "Wikipedia: Tantawan Park",
+     "url": "https://en.wikipedia.org/wiki/Tantawan_Park"
+    },
+    {
+     "label": "Langyaw (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ],
+   "status": "open",
+   "photo": "sultan-kudarat"
+  },
+  {
+   "id": "bai-walk-tamontaka-riverside-promenade",
+   "name": "Bai Walk (Tamontaka riverside promenade)",
+   "kind": "nature",
+   "area": "Tamontaka River bank near the Grand Mosque, Kalanganan II",
+   "note": "This riverside walk near the Grand Mosque is the city's spot for sunsets. Its name joins 'bai', a Maguindanaon title for royal women, with 'baywalk'. It is also the finish of the Guinakit boat parade in December.",
+   "lat": 7.196739,
+   "lon": 124.1824771,
+   "website": null,
+   "sources": [
+    {
+     "label": "Langyaw (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "Nomadic Experiences: 2022 Shariff Kabunsuan Festival",
+     "url": "https://www.nomadicexperiences.com/2022/12/2022-shariff-kabunsuan-festival.html"
+    },
+    {
+     "label": "Wikivoyage: Cotabato City",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    }
+   ],
+   "status": "open",
+   "photo": "baywalk"
+  },
+  {
+   "id": "timako-hill",
+   "name": "Timako Hill",
+   "kind": "viewpoint",
+   "area": "Kalanganan II, on the coast facing the Grand Mosque",
+   "note": "This forested coastal hill, one of only 2 high points in the city, has a bridge with wide views over the river mouth and bay. A seaport was being developed at its foot as of 2018, and we found no recent source on trails or access, so ask locally before going.",
+   "lat": 7.2111536,
+   "lon": 124.1806984,
+   "website": null,
+   "sources": [
+    {
+     "label": "Langyaw (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ],
+   "status": "unclear",
+   "photo": null
+  },
+  {
+   "id": "people-s-palace-cotabato-city-hall",
+   "name": "People's Palace (Cotabato City Hall)",
+   "kind": "heritage",
+   "area": "Malagapas, Rosary Heights X",
+   "note": "The working city hall mixes neo-classical and Muslim architecture, and the city features it in its tourism promotion. It is a government office, so visit during office hours and stick to the public areas.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "City of Cotabato: Philippine Travel Mart 2026",
+     "url": "https://cityofcotabato.com/cotabato-city-shines-at-philippine-travel-mart-2026/"
+    },
+    {
+     "label": "Langyaw (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "City of Cotabato: office address",
+     "url": "https://cityofcotabato.com/emergency-hotlines/"
+    }
+   ],
+   "status": "open",
+   "photo": null
+  },
+  {
+   "id": "metropolitan-cathedral-of-the-immaculate-conception",
+   "name": "Metropolitan Cathedral of the Immaculate Conception",
+   "kind": "sacred",
+   "area": "Quezon Avenue, beside Tantawan Park",
+   "note": "This is the seat of the Catholic Archdiocese of Cotabato, a short walk from Tantawan Park and PC Hill. Its feast, the Immaculate Conception, is one of the city's main Catholic celebrations.",
+   "lat": 7.2209646,
+   "lon": 124.2466327,
+   "website": null,
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/139509588"
+    },
+    {
+     "label": "Wikipedia: Tantawan Park",
+     "url": "https://en.wikipedia.org/wiki/Tantawan_Park"
+    },
+    {
+     "label": "Wikipedia: Cotabato City",
+     "url": "https://en.wikipedia.org/wiki/Cotabato_City"
+    }
+   ],
+   "status": "open",
+   "photo": null
+  },
+  {
+   "id": "rio-grande-de-mindanao-riverfront-and-river-boats",
+   "name": "Rio Grande de Mindanao riverfront and river boats",
+   "kind": "activity",
+   "area": "Cotabato City wharf",
+   "note": "Mindanao's longest river splits into the Cotabato and Tamontaka channels in the city before reaching Illana Bay. Motorised boats run from the city wharf to Sultan Kudarat across the river. Fluvial parades and boat races are held on the rivers during festivals.",
+   "lat": null,
+   "lon": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Wikipedia: Rio Grande de Mindanao",
+     "url": "https://en.wikipedia.org/wiki/Rio_Grande_de_Mindanao"
+    },
+    {
+     "label": "Wikivoyage: Cotabato City",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    }
+   ],
+   "status": "open",
+   "photo": "rio-grande"
+  },
+  {
+   "id": "kcc-mall-of-cotabato",
+   "name": "KCC Mall of Cotabato",
+   "kind": "shopping",
+   "area": "Quezon Avenue / Sinsuat Avenue, Rosary Heights 2",
+   "note": "Opened on 1 April 2025, it is among Mindanao's largest malls, with over 500 shops, 8 cinemas and the city's biggest convention hall. It is useful for air-conditioned meals, supplies and banking.",
+   "lat": 7.2197798,
+   "lon": 124.2489485,
+   "website": null,
+   "sources": [
+    {
+     "label": "Wikipedia: KCC Mall of Cotabato",
+     "url": "https://en.wikipedia.org/wiki/KCC_Mall_of_Cotabato"
+    }
+   ],
+   "status": "open",
+   "photo": null
+  }
+ ],
+ "dishes": [
+  {
+   "name": "Pastil",
+   "note": "Steamed rice topped with kagikit (shredded chicken, beef or fish) and wrapped in banana leaf, eaten mostly at breakfast with egg and coffee.",
+   "whereToTry": [
+    "Cotabato City Mega Market"
+   ],
+   "sources": [
+    {
+     "label": "PNA: Pastil, Maguindanaon food on Christmas (2017)",
+     "url": "https://www.pna.gov.ph/articles/1019321"
+    },
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ]
+  },
+  {
+   "name": "Kalintubo",
+   "note": "Rice with marinated chicken cutlets or chicken liver, wrapped in a cone of banana leaf with the meat showing.",
+   "whereToTry": [],
+   "sources": [
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ]
+  },
+  {
+   "name": "Sinina",
+   "note": "Beef or goat stew cooked in coconut milk and served with palapa.",
+   "whereToTry": [
+    "Hashy's Cuisine"
+   ],
+   "sources": [
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "PNA: Halal tourism, a glimpse into Mindanao food, heritage (2021)",
+     "url": "https://www.pna.gov.ph/articles/1147711"
+    },
+    {
+     "label": "Pinas Muna: Ramadan 2013 celebration in ARMM (Cotabato City fair)",
+     "url": "https://www.pinasmuna.com/2013/07/ramadan-2013-celebration-in-armm.html"
+    }
+   ]
+  },
+  {
+   "name": "Palapa",
+   "note": "Maguindanaon condiment of scallions, chili and ginger or shredded young coconut, served with stews and rice.",
+   "whereToTry": [],
+   "sources": [
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "Edge Davao: Royal chef of Maguindanao (2018)",
+     "url": "https://edgedavao.net/indulge-lifestyle/2018/02/royal-chef-maguindanao-taste-culture-tradition"
+    }
+   ]
+  },
+  {
+   "name": "Tinapayan",
+   "note": "Fermented freshwater fish that is fried and served as an appetizer.",
+   "whereToTry": [],
+   "sources": [
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "Edge Davao: Royal chef of Maguindanao (2018)",
+     "url": "https://edgedavao.net/indulge-lifestyle/2018/02/royal-chef-maguindanao-taste-culture-tradition"
+    }
+   ]
+  },
+  {
+   "name": "Fried hito",
+   "note": "Deep-fried catfish, a staple of the city's hito houses.",
+   "whereToTry": [
+    "Babo Katips",
+    "JETOY's Hitoan",
+    "El Hitoan",
+    "Jamaica Le Café"
+   ],
+   "sources": [
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "Restaurant Guru: fish restaurants in Cotabato City",
+     "url": "https://restaurantguru.com/fish-Cotabato-City-m102"
+    }
+   ]
+  },
+  {
+   "name": "Linigid na manok",
+   "note": "Chicken dish named among Mama Ping's Maguindanaon specialties.",
+   "whereToTry": [
+    "Mama Ping"
+   ],
+   "sources": [
+    {
+     "label": "Restaurant Guru: Mama Ping",
+     "url": "https://restaurantguru.com/Mama-Ping-Cotabato-City"
+    }
+   ]
+  },
+  {
+   "name": "Dodol (dudul)",
+   "note": "Sticky sweet of coconut milk, sugar and rice flour cooked for hours, served to end a meal.",
+   "whereToTry": [
+    "Samra Maguindanao Delicacies"
+   ],
+   "sources": [
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "Pinas Muna: Ramadan 2013 celebration in ARMM (Cotabato City fair)",
+     "url": "https://www.pinasmuna.com/2013/07/ramadan-2013-celebration-in-armm.html"
+    }
+   ]
+  },
+  {
+   "name": "Tinagtag",
+   "note": "Lacy rice-flour fritter drizzled through a coconut-shell strainer into hot oil and folded, often eaten with coffee.",
+   "whereToTry": [
+    "Samra Maguindanao Delicacies"
+   ],
+   "sources": [
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "MindaNews: Tinagtag, a Maguindanaon delicacy (2010)",
+     "url": "https://mindanews.com/picture-stories/2010/06/tinagtag-a-maguindanaon-delicacy-best-eaten-with-coffee-and-coco-milk/"
+    },
+    {
+     "label": "Pinas Muna: Ramadan 2013 celebration in ARMM (Cotabato City fair)",
+     "url": "https://www.pinasmuna.com/2013/07/ramadan-2013-celebration-in-armm.html"
+    }
+   ]
+  },
+  {
+   "name": "Kumukunsi",
+   "note": "Spiral-shaped fritter of rice flour, duck eggs and sugar, deep-fried until golden.",
+   "whereToTry": [],
+   "sources": [
+    {
+     "label": "Pinas Muna: Ramadan 2013 celebration in ARMM (Cotabato City fair)",
+     "url": "https://www.pinasmuna.com/2013/07/ramadan-2013-celebration-in-armm.html"
+    },
+    {
+     "label": "MindaNews: Tinagtag, a Maguindanaon delicacy (2010)",
+     "url": "https://mindanews.com/picture-stories/2010/06/tinagtag-a-maguindanaon-delicacy-best-eaten-with-coffee-and-coco-milk/"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "name": "Shariff Kabunsuan Festival",
+   "when": "December (15 to 19 December per city sources; parade day reported as 19 December in 2024)",
+   "note": "The festival marks the early-16th-century arrival of Shariff Kabunsuan, who brought Islam to mainland Mindanao. Its highlight is the Guinakit fluvial parade of decorated royal boats on the Tamontaka River at Kalanganan II, with street dancing, an Inaul fashion show and food showcases.",
+   "sources": [
+    {
+     "label": "Daily Tribune (December 2024)",
+     "url": "https://tribune.net.ph/2024/12/20/shariff-kabunsuan-festival-draws-crowd"
+    },
+    {
+     "label": "The Manila Times (December 2021)",
+     "url": "https://manilatimes.net/2021/12/26/news/regions/guinakit-fluvial-parade-tops-festival/1827225/amp"
+    },
+    {
+     "label": "Wikipedia: Cotabato City",
+     "url": "https://en.wikipedia.org/wiki/Cotabato_City"
+    }
+   ]
+  },
+  {
+   "name": "Araw ng Cotabato (City Charter Day)",
+   "when": "June, building up to the 20 June charter anniversary (the 67th was in 2026)",
+   "note": "This week-long city founding celebration is the city's biggest, with kite flying, fluvial parades, boat races and sports. 20 June is a special non-working day in the city, and the 2026 edition reopened the Kutawato Caves.",
+   "sources": [
+    {
+     "label": "Tourism Promotions Board: Araw ng Cotabato",
+     "url": "https://tpb.gov.ph/?p=4716"
+    },
+    {
+     "label": "Proclamation No. 1043, s. 2015",
+     "url": "https://lawphil.net/executive/proc/proc2015/proc_1043_2015.html"
+    },
+    {
+     "label": "City of Cotabato (June 2026)",
+     "url": "https://cityofcotabato.com/utawato-cave-reopens-as-cotabato-city-celebrates-67th-araw-ng-cotabato/"
+    }
+   ]
+  },
+  {
+   "name": "Ramadan lights and night markets",
+   "when": "Ramadan (month moves each year with the Islamic calendar)",
+   "note": "Since 2019 the Bangsamoro Government Center has been lit up for Ramadan, with halal food fairs and night markets from iftar into the evening. Muslims and non-Muslims are welcome.",
+   "sources": [
+    {
+     "label": "Arab News Pakistan (2024)",
+     "url": "https://www.arabnews.pk/node/2476066/world"
+    }
+   ]
+  },
+  {
+   "name": "Feast of the Immaculate Conception",
+   "when": "December",
+   "note": "The city's main Catholic feast, tied to the cathedral and to Tamontaka Church, both dedicated to the Immaculate Conception.",
+   "sources": [
+    {
+     "label": "Wikipedia: Cotabato City",
+     "url": "https://en.wikipedia.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Wikipedia: Tamontaka Church",
+     "url": "https://en.wikipedia.org/wiki/Tamontaka_Church"
+    }
+   ]
+  },
+  {
+   "name": "Layagan Festival",
+   "when": "December",
+   "note": "A festival for the city's crab industry, listed among the city's celebrations. We found no recent coverage.",
+   "sources": [
+    {
+     "label": "Wikipedia: Cotabato City",
+     "url": "https://en.wikipedia.org/wiki/Cotabato_City"
+    }
+   ]
+  }
+ ],
+ "practical": [
+  {
+   "topic": "Arriving by air",
+   "text": "Cotabato Airport (Awang, CBO) is not in the city but in Barangay Awang, Datu Odin Sinsuat, Maguindanao del Norte, with a single 1,900 m runway. Current listings show Philippine Airlines (PAL Express) to Manila, Cebu and Tawi-Tawi, plus small-plane Bangsamoro Airways flights to Jolo and Zamboanga; Cebu Pacific's Cotabato service is listed as terminated. The airport was closed for runway repairs from 22 June to 1 October 2023, so check schedules before booking.",
+   "sources": [
+    {
+     "label": "Wikipedia: Cotabato Airport",
+     "url": "https://en.wikipedia.org/wiki/Cotabato_Airport"
+    },
+    {
+     "label": "Philippine Airlines: flights from Cotabato City",
+     "url": "https://flights.philippineairlines.com/en/flights-from-cotabato-city"
+    },
+    {
+     "label": "Bangsamoro Parliament: airport bill (December 2025)",
+     "url": "https://parliament.bangsamoro.gov.ph/2025/12/10/bill-seeks-full-modernization-of-cotabato-airport/"
+    }
+   ]
+  },
+  {
+   "topic": "Arriving by road",
+   "text": "Mindanao Star runs buses from Davao City's Ecoland terminal, a trip of about 5 to 6 hours, and Husky Lines and UV Express vans serve Koronadal and General Santos. Rural Transit runs daily buses to Cagayan de Oro, Pagadian and Dipolog. Each operator uses its own terminal in town, and the city government also runs the Cotabato City Integrated Public Terminal on Bubong Road.",
+   "sources": [
+    {
+     "label": "Wikivoyage: Cotabato City",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Pamasahe: Davao to Cotabato, Mindanao Star",
+     "url": "https://pamasahe.com/routes/davao-cotabato-mindanao-star-schedule-fares"
+    },
+    {
+     "label": "OpenStreetMap: Integrated Public Terminal",
+     "url": "https://www.openstreetmap.org/way/1513356000"
+    }
+   ]
+  },
+  {
+   "topic": "Getting around",
+   "text": "Tricycles and multicabs or jeepneys are the usual way around the city. For outlying spots like the Grand Mosque, one guide suggests a jeepney to the Kalanganan junction and then a habal-habal (motorcycle taxi).",
+   "sources": [
+    {
+     "label": "Wikivoyage: Cotabato City",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Lakwatsero",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    },
+    {
+     "label": "VisMin.ph (2025)",
+     "url": "https://vismin.ph/2025/explore-the-grand-mosque-of-cotabato/"
+    }
+   ]
+  },
+  {
+   "topic": "Money",
+   "text": "Major Philippine banks have branches downtown, including BDO (with ATM), Landbank, PNB, Metrobank, China Bank, RCBC, EastWest and DBP, and BPI opened a new branch in Poblacion 5 in May 2026.",
+   "sources": [
+    {
+     "label": "City of Cotabato: BPI branch opening (May 2026)",
+     "url": "https://cityofcotabato.com/ribbon-cutting-ceremony-of-the-bank-of-the-philippine-islands-bpi/"
+    },
+    {
+     "label": "OpenStreetMap: BDO branch",
+     "url": "https://www.openstreetmap.org/node/1418098664"
+    }
+   ]
+  },
+  {
+   "topic": "Connectivity",
+   "text": "Globe, Smart and DITO all have coverage maps for the city. DITO switched on 5G at the Bangsamoro Government Center in June 2022.",
+   "sources": [
+    {
+     "label": "Bangsamoro MOTC: DITO 5G (June 2022)",
+     "url": "https://motc.bangsamoro.gov.ph/dito-5g-now-in-bangsamoro-government-center/"
+    },
+    {
+     "label": "nPerf coverage map, Cotabato City",
+     "url": "https://www.nperf.com/en/map/PH/1716771.Cotabato/7534.Globe-Telecom/signal"
+    }
+   ]
+  },
+  {
+   "topic": "Dress and conduct",
+   "text": "Most residents are Muslim, and dress is more conservative than elsewhere in the Philippines; cover shoulders and knees, and women cover their hair inside mosques. During Ramadan, many eateries stay closed until the fast breaks at dusk, and visitors should avoid eating or drinking in public in daytime.",
+   "sources": [
+    {
+     "label": "Wikivoyage: Bangsamoro",
+     "url": "https://en.wikivoyage.org/wiki/Bangsamoro"
+    },
+    {
+     "label": "The Bisaya Traveler (2024)",
+     "url": "https://bisayatraveler.com/2024/09/08/the-grand-mosque-of-cotabato/"
+    },
+    {
+     "label": "Wikipedia: Cotabato City",
+     "url": "https://en.wikipedia.org/wiki/Cotabato_City"
+    }
+   ]
+  },
+  {
+   "topic": "Safety and checkpoints",
+   "text": "Expect routine police and military checkpoints on highways into the region. PC Hill is a police and military reservation, so ask before photographing there. Several governments' travel advisories cover central Mindanao; the UK, for example, advises against all travel to western and central Mindanao, which can affect travel insurance.",
+   "sources": [
+    {
+     "label": "GOV.UK: Philippines safety and security",
+     "url": "https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security"
+    },
+    {
+     "label": "Wikivoyage: Bangsamoro",
+     "url": "https://en.wikivoyage.org/wiki/Bangsamoro"
+    },
+    {
+     "label": "Wikipedia: Pedro Colina Hill",
+     "url": "https://en.wikipedia.org/wiki/Pedro_Colina_Hill"
+    }
+   ]
+  },
+  {
+   "topic": "Emergency and hospitals",
+   "text": "Cotabato Regional and Medical Center on Sinsuat Avenue is the main government hospital, with 600 authorised beds, and several private hospitals are in the city centre. The Cotabato City Police Office and its stations are on and around PC Hill.",
+   "sources": [
+    {
+     "label": "Wikipedia: Cotabato City",
+     "url": "https://en.wikipedia.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Wikivoyage: Cotabato City",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Wikipedia: Pedro Colina Hill",
+     "url": "https://en.wikipedia.org/wiki/Pedro_Colina_Hill"
+    }
+   ]
+  }
+ ],
+ "essentials": [
+  {
+   "id": "node-1417064422",
+   "name": "Kutoco Terminal",
+   "kind": "Terminal",
+   "lat": 7.224419,
+   "lon": 124.2491186
+  },
+  {
+   "id": "node-1417076183",
+   "name": "Police Station 4",
+   "kind": "Police",
+   "lat": 7.226535,
+   "lon": 124.2425394
+  },
+  {
+   "id": "node-1417219507",
+   "name": "China Bank",
+   "kind": "Bank",
+   "lat": 7.222791,
+   "lon": 124.2479531
+  },
+  {
+   "id": "node-1417219514",
+   "name": "Cotabato City Police Office Station 1",
+   "kind": "Police",
+   "lat": 7.223673,
+   "lon": 124.2461118
+  },
+  {
+   "id": "node-1417219517",
+   "name": "Insular Life",
+   "kind": "Bank",
+   "lat": 7.222122,
+   "lon": 124.2507185
+  },
+  {
+   "id": "node-1417219534",
+   "name": "Women & Child Protection Unit",
+   "kind": "Police",
+   "lat": 7.2236012,
+   "lon": 124.2462973
+  },
+  {
+   "id": "node-1417241030",
+   "name": "RCBC",
+   "kind": "Bank",
+   "lat": 7.2211424,
+   "lon": 124.2494766
+  },
+  {
+   "id": "node-1417971146",
+   "name": "National Bureau of Investigation",
+   "kind": "Police",
+   "lat": 7.1982223,
+   "lon": 124.2454096
+  },
+  {
+   "id": "node-1417984993",
+   "name": "Mercury Drug",
+   "kind": "Pharmacy",
+   "lat": 7.201847,
+   "lon": 124.239716
+  },
+  {
+   "id": "node-1417984998",
+   "name": "Police Station no. 2",
+   "kind": "Police",
+   "lat": 7.2105181,
+   "lon": 124.2444282
+  },
+  {
+   "id": "node-1417984999",
+   "name": "Rose Pharmacy",
+   "kind": "Pharmacy",
+   "lat": 7.2015766,
+   "lon": 124.2395546
+  },
+  {
+   "id": "node-1418000614",
+   "name": "Bank of the Philippine Islands",
+   "kind": "Bank",
+   "lat": 7.2237737,
+   "lon": 124.2476384
+  },
+  {
+   "id": "node-1418000621",
+   "name": "Cotabato Centerpoint",
+   "kind": "Mall",
+   "lat": 7.2240262,
+   "lon": 124.2474963
+  },
+  {
+   "id": "node-1418000627",
+   "name": "Development Bank of the Philippines",
+   "kind": "Bank",
+   "lat": 7.2242033,
+   "lon": 124.2470164
+  },
+  {
+   "id": "node-1418000635",
+   "name": "Landbank",
+   "kind": "Bank",
+   "lat": 7.2231556,
+   "lon": 124.2494633
+  },
+  {
+   "id": "node-1418000644",
+   "name": "Mercury Drug",
+   "kind": "Pharmacy",
+   "lat": 7.2245821,
+   "lon": 124.2458026
+  },
+  {
+   "id": "node-1418000655",
+   "name": "Rose Pharmacy",
+   "kind": "Pharmacy",
+   "lat": 7.2246011,
+   "lon": 124.2456688
+  },
+  {
+   "id": "node-1418000658",
+   "name": "Southseas Complex",
+   "kind": "Mall",
+   "lat": 7.2228325,
+   "lon": 124.2490727
+  },
+  {
+   "id": "node-1418000661",
+   "name": "Ucpb",
+   "kind": "Bank",
+   "lat": 7.2238013,
+   "lon": 124.2483276
+  },
+  {
+   "id": "node-1418000664",
+   "name": "Mindanao Bus Transport Express",
+   "kind": "Terminal",
+   "lat": 7.2228052,
+   "lon": 124.2512798
+  },
+  {
+   "id": "node-1418037242",
+   "name": "Farmacia De Belinda",
+   "kind": "Pharmacy",
+   "lat": 7.2236126,
+   "lon": 124.2488702
+  },
+  {
+   "id": "node-1418037254",
+   "name": "Mercury Drug",
+   "kind": "Pharmacy",
+   "lat": 7.2229306,
+   "lon": 124.2468059
+  },
+  {
+   "id": "node-1418098664",
+   "name": "BDO",
+   "kind": "Bank",
+   "lat": 7.2220857,
+   "lon": 124.246877
+  },
+  {
+   "id": "node-1418098667",
+   "name": "Cotabato City Police Office",
+   "kind": "Police",
+   "lat": 7.2201853,
+   "lon": 124.2448716
+  },
+  {
+   "id": "node-1418098670",
+   "name": "Highway Patrol Group",
+   "kind": "Police",
+   "lat": 7.2192503,
+   "lon": 124.2448469
+  },
+  {
+   "id": "node-1418098677",
+   "name": "Metrobank",
+   "kind": "Bank",
+   "lat": 7.22179,
+   "lon": 124.246954
+  },
+  {
+   "id": "node-1418098678",
+   "name": "PNB",
+   "kind": "Bank",
+   "lat": 7.2219845,
+   "lon": 124.2470152
+  },
+  {
+   "id": "node-1418108195",
+   "name": "PNB",
+   "kind": "Bank",
+   "lat": 7.225079,
+   "lon": 124.2467165
+  },
+  {
+   "id": "node-1418823058",
+   "name": "TGP",
+   "kind": "Pharmacy",
+   "lat": 7.2219297,
+   "lon": 124.2524071
+  },
+  {
+   "id": "node-3426302392",
+   "name": "Landbank City Hall Branch",
+   "kind": "Bank",
+   "lat": 7.1975442,
+   "lon": 124.2349076
+  },
+  {
+   "id": "node-3426302495",
+   "name": "Landbank",
+   "kind": "ATM",
+   "lat": 7.1965934,
+   "lon": 124.2361392
+  },
+  {
+   "id": "node-3426312159",
+   "name": "Rose Pharmacy",
+   "kind": "Pharmacy",
+   "lat": 7.223169,
+   "lon": 124.2476556
+  },
+  {
+   "id": "node-3426315381",
+   "name": "Mercury Drug",
+   "kind": "Pharmacy",
+   "lat": 7.2230338,
+   "lon": 124.2479797
+  },
+  {
+   "id": "node-3426322089",
+   "name": "Philippines National Bank",
+   "kind": "Bank",
+   "lat": 7.2220937,
+   "lon": 124.2471602
+  },
+  {
+   "id": "node-3426332498",
+   "name": "A2Z Utilitity Van Terminal",
+   "kind": "Terminal",
+   "lat": 7.2240686,
+   "lon": 124.2493186
+  },
+  {
+   "id": "node-3426333651",
+   "name": "TGP",
+   "kind": "Pharmacy",
+   "lat": 7.2235328,
+   "lon": 124.24839
+  },
+  {
+   "id": "node-3426333652",
+   "name": "TGP",
+   "kind": "Pharmacy",
+   "lat": 7.2243611,
+   "lon": 124.2460129
+  },
+  {
+   "id": "node-3426339555",
+   "name": "EastWest Bank",
+   "kind": "Bank",
+   "lat": 7.2212318,
+   "lon": 124.2488477
+  },
+  {
+   "id": "node-3426388008",
+   "name": "Special Forces",
+   "kind": "Police",
+   "lat": 7.196972,
+   "lon": 124.2463842
+  },
+  {
+   "id": "node-3426415234",
+   "name": "Superama",
+   "kind": "Supermarket",
+   "lat": 7.2005509,
+   "lon": 124.2379511
+  },
+  {
+   "id": "node-3427904935",
+   "name": "PNB",
+   "kind": "Bank",
+   "lat": 7.2217831,
+   "lon": 124.2517951
+  },
+  {
+   "id": "node-3427908204",
+   "name": "Novo",
+   "kind": "Mall",
+   "lat": 7.2223562,
+   "lon": 124.2517592
+  },
+  {
+   "id": "node-3428064506",
+   "name": "PNP RSPB 12",
+   "kind": "Police",
+   "lat": 7.1817264,
+   "lon": 124.2225341
+  },
+  {
+   "id": "node-3428152371",
+   "name": "Farmacia De Belinda",
+   "kind": "Pharmacy",
+   "lat": 7.2016597,
+   "lon": 124.2395992
+  },
+  {
+   "id": "node-3442148113",
+   "name": "Puregold",
+   "kind": "Supermarket",
+   "lat": 7.2220542,
+   "lon": 124.2492338
+  },
+  {
+   "id": "node-4201833395",
+   "name": "Police Outpost",
+   "kind": "Police",
+   "lat": 7.2252035,
+   "lon": 124.2581724
+  },
+  {
+   "id": "node-4201900290",
+   "name": "Pansacala Food Terminal",
+   "kind": "Market",
+   "lat": 7.2080482,
+   "lon": 124.2359957
+  },
+  {
+   "id": "node-4270177793",
+   "name": "Metrobank",
+   "kind": "Bank",
+   "lat": 7.2212322,
+   "lon": 124.2517785
+  },
+  {
+   "id": "node-4576608295",
+   "name": "Superama Super Store",
+   "kind": "Supermarket",
+   "lat": 7.2208268,
+   "lon": 124.2533954
+  },
+  {
+   "id": "node-4613333495",
+   "name": "Puregold",
+   "kind": "Supermarket",
+   "lat": 7.1980446,
+   "lon": 124.2368378
+  },
+  {
+   "id": "node-4700615911",
+   "name": "HUSKY Tours - Cotabato Terminal",
+   "kind": "Terminal",
+   "lat": 7.1911629,
+   "lon": 124.2341013
+  },
+  {
+   "id": "node-6581661504",
+   "name": "United Doctors Hospital",
+   "kind": "Hospital",
+   "lat": 7.2189957,
+   "lon": 124.2485179
+  },
+  {
+   "id": "node-8213085918",
+   "name": "404SAC",
+   "kind": "Police",
+   "lat": 7.2196692,
+   "lon": 124.2445972
+  },
+  {
+   "id": "node-8238974517",
+   "name": "Anti-Kidnapping Group Mindanao Field Unit",
+   "kind": "Police",
+   "lat": 7.2192634,
+   "lon": 124.2446537
+  },
+  {
+   "id": "node-8238983217",
+   "name": "City Mobile Force Company",
+   "kind": "Police",
+   "lat": 7.2194263,
+   "lon": 124.2442468
+  },
+  {
+   "id": "node-8239158517",
+   "name": "Regional Crime Laboratory Office BAR",
+   "kind": "Police",
+   "lat": 7.2195966,
+   "lon": 124.2443727
+  },
+  {
+   "id": "node-8239163717",
+   "name": "Criminal Investigation and Detection Group Regional Field Unit BAR",
+   "kind": "Police",
+   "lat": 7.2196891,
+   "lon": 124.2443921
+  },
+  {
+   "id": "node-8676023351",
+   "name": "DC Shopping Center",
+   "kind": "Mall",
+   "lat": 7.2244826,
+   "lon": 124.2489924
+  },
+  {
+   "id": "node-8848532117",
+   "name": "AFPSLAI",
+   "kind": "Bank",
+   "lat": 7.2134,
+   "lon": 124.2449119
+  },
+  {
+   "id": "way-139509319",
+   "name": "Tanmiah Hospital",
+   "kind": "Hospital",
+   "lat": 7.2269324,
+   "lon": 124.2420705
+  },
+  {
+   "id": "way-139509437",
+   "name": "Cotabato Puericulture Center & General Hospital",
+   "kind": "Hospital",
+   "lat": 7.2243486,
+   "lon": 124.2468061
+  },
+  {
+   "id": "way-139509683",
+   "name": "Cotabato Medical Specialist Hospital",
+   "kind": "Hospital",
+   "lat": 7.2206624,
+   "lon": 124.2504273
+  },
+  {
+   "id": "way-139509881",
+   "name": "Cotabato Regional & Medical Center",
+   "kind": "Hospital",
+   "lat": 7.1998854,
+   "lon": 124.2367912
+  },
+  {
+   "id": "way-139509883",
+   "name": "Notre Dame Hospital",
+   "kind": "Hospital",
+   "lat": 7.198091,
+   "lon": 124.2378257
+  },
+  {
+   "id": "way-157054130",
+   "name": "Sugni Superstore",
+   "kind": "Supermarket",
+   "lat": 7.225153,
+   "lon": 124.245377
+  },
+  {
+   "id": "way-160554129",
+   "name": "Southseas Mall",
+   "kind": "Mall",
+   "lat": 7.2230247,
+   "lon": 124.2488565
+  },
+  {
+   "id": "way-160554185",
+   "name": "Public Market",
+   "kind": "Market",
+   "lat": 7.2216853,
+   "lon": 124.2538269
+  },
+  {
+   "id": "way-289408001",
+   "name": "Tanmiah Hospital",
+   "kind": "Hospital",
+   "lat": 7.2269208,
+   "lon": 124.2423067
+  },
+  {
+   "id": "way-289410576",
+   "name": "City Central Arcade",
+   "kind": "Market",
+   "lat": 7.2245489,
+   "lon": 124.2444516
+  },
+  {
+   "id": "way-289570346",
+   "name": "Police Precinct No. 3",
+   "kind": "Police",
+   "lat": 7.1808172,
+   "lon": 124.223074
+  },
+  {
+   "id": "way-315836857",
+   "name": "Maguindanao Polyclinic",
+   "kind": "Hospital",
+   "lat": 7.1999658,
+   "lon": 124.238303
+  },
+  {
+   "id": "way-334984490",
+   "name": "RS Cortez",
+   "kind": "Supermarket",
+   "lat": 7.2173932,
+   "lon": 124.241147
+  },
+  {
+   "id": "way-335160107",
+   "name": "National Police Commission",
+   "kind": "Police",
+   "lat": 7.1980471,
+   "lon": 124.2470484
+  },
+  {
+   "id": "way-335519118",
+   "name": "Mercury Drug",
+   "kind": "Pharmacy",
+   "lat": 7.2080656,
+   "lon": 124.2435802
+  },
+  {
+   "id": "way-335527246",
+   "name": "Landbank",
+   "kind": "Bank",
+   "lat": 7.1986494,
+   "lon": 124.2433836
+  },
+  {
+   "id": "way-335528694",
+   "name": "Landbank ATM",
+   "kind": "ATM",
+   "lat": 7.1969555,
+   "lon": 124.2449469
+  },
+  {
+   "id": "way-335540964",
+   "name": "Region 12 Public Safety Batallion",
+   "kind": "Police",
+   "lat": 7.2019375,
+   "lon": 124.2440375
+  },
+  {
+   "id": "way-335713357",
+   "name": "CityMall Cotabato",
+   "kind": "Mall",
+   "lat": 7.2012134,
+   "lon": 124.2410575
+  },
+  {
+   "id": "way-376320224",
+   "name": "Rosary Heights 8 Barangay Health Station",
+   "kind": "Clinic",
+   "lat": 7.189997,
+   "lon": 124.2431879
+  },
+  {
+   "id": "way-401513660",
+   "name": "Village Market",
+   "kind": "Market",
+   "lat": 7.1898801,
+   "lon": 124.2431033
+  },
+  {
+   "id": "way-471666989",
+   "name": "Esteros Detachment",
+   "kind": "Police",
+   "lat": 7.1901699,
+   "lon": 124.2337282
+  },
+  {
+   "id": "way-471667155",
+   "name": "Tamontaka BeMONC",
+   "kind": "Hospital",
+   "lat": 7.1807806,
+   "lon": 124.2229114
+  },
+  {
+   "id": "way-471667240",
+   "name": "Health Center",
+   "kind": "Clinic",
+   "lat": 7.1809481,
+   "lon": 124.2229383
+  },
+  {
+   "id": "way-826331213",
+   "name": "Mercury Drug",
+   "kind": "Pharmacy",
+   "lat": 7.2223596,
+   "lon": 124.2527208
+  },
+  {
+   "id": "way-988568777",
+   "name": "KCC Mall of Cotabato",
+   "kind": "Mall",
+   "lat": 7.2197798,
+   "lon": 124.2489485
+  },
+  {
+   "id": "way-1478578420",
+   "name": "Superama Express III",
+   "kind": "Supermarket",
+   "lat": 7.2068223,
+   "lon": 124.2425277
+  },
+  {
+   "id": "way-1478578433",
+   "name": "Landbank",
+   "kind": "Bank",
+   "lat": 7.1960135,
+   "lon": 124.2356936
+  },
+  {
+   "id": "way-1513356000",
+   "name": "Cotabato City Integrated Public Terminal",
+   "kind": "Terminal",
+   "lat": 7.1923702,
+   "lon": 124.2202017
+  }
+ ],
+ "chains": [
+  "Jollibee",
+  "McDonald's",
+  "Chowking",
+  "Mang Inasal",
+  "Greenwich",
+  "Minute Burger",
+  "Potato Corner",
+  "Dunkin' Donuts",
+  "Goldilocks",
+  "Red Ribbon",
+  "Chooks to Go",
+  "Razon's",
+  "Choobi Choobi",
+  "Infinitea"
+ ]
+}

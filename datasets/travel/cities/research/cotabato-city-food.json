@@ -1,0 +1,500 @@
+{
+ "eat": [
+  {
+   "name": "Pagana Kutawato Native Restaurant",
+   "kind": "restaurant",
+   "area": "Rufo Mañara Street, Rosary Heights 11",
+   "note": "Native restaurant with a pork-free menu of local dishes and fresh seafood such as tuna, crabs and shrimp.",
+   "halal": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "Wikivoyage: Cotabato City (Eat)",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Trip.com: Pagana Kutawato",
+     "url": "https://au.trip.com/travel-guide/foods/Cotabato-14689-restaurant/Pagana%20Kutawato-23879121"
+    }
+   ],
+   "status": "unclear"
+  },
+  {
+   "name": "Hala Bira Halal Food",
+   "kind": "restaurant",
+   "area": "Jose Lim Street",
+   "note": "Halal eatery known for papaitan and bulalo.",
+   "halal": true,
+   "website": null,
+   "sources": [
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    }
+   ],
+   "status": "unclear"
+  },
+  {
+   "name": "Mama Ping",
+   "kind": "restaurant",
+   "area": "Doña Pilar Street",
+   "note": "Muslim restaurant serving Maguindanaon dishes such as linigid chicken.",
+   "halal": true,
+   "website": null,
+   "sources": [
+    {
+     "label": "PNA: Halal tourism, a glimpse into Mindanao food, heritage (2021)",
+     "url": "https://www.pna.gov.ph/articles/1147711"
+    },
+    {
+     "label": "Out of Town Blog: DOT launches Halal Food Tourism (2021)",
+     "url": "https://outoftownblog.com/department-of-tourism-launches-halal-food-tourism/"
+    },
+    {
+     "label": "Restaurant Guru: Mama Ping",
+     "url": "https://restaurantguru.com/Mama-Ping-Cotabato-City"
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "name": "Hashy's Cuisine",
+   "kind": "restaurant",
+   "area": null,
+   "note": "Halal-certified restaurant known for sinina kambing, a Maguindanaon goat stew.",
+   "halal": true,
+   "website": null,
+   "sources": [
+    {
+     "label": "PNA: Halal tourism, a glimpse into Mindanao food, heritage (2021)",
+     "url": "https://www.pna.gov.ph/articles/1147711"
+    },
+    {
+     "label": "Out of Town Blog: DOT launches Halal Food Tourism (2021)",
+     "url": "https://outoftownblog.com/department-of-tourism-launches-halal-food-tourism/"
+    }
+   ],
+   "status": "unclear"
+  },
+  {
+   "name": "Babo Katips",
+   "kind": "restaurant",
+   "area": "Tamontaka",
+   "note": "Eatery known for fried hito (catfish).",
+   "halal": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "Restaurant Guru: fish restaurants in Cotabato City",
+     "url": "https://restaurantguru.com/fish-Cotabato-City-m102"
+    }
+   ],
+   "status": "unclear"
+  },
+  {
+   "name": "JETOY's Hitoan",
+   "kind": "restaurant",
+   "area": "Sinsuat Avenue",
+   "note": "Hito house serving deep-fried catfish with Filipino home-style dishes and sauces.",
+   "halal": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Wanderlog: JETOY's Hitoan",
+     "url": "https://wanderlog.com/place/details/3697583/jetoys-hitoan"
+    },
+    {
+     "label": "Restaurant Guru: fish restaurants in Cotabato City",
+     "url": "https://restaurantguru.com/fish-Cotabato-City-m102"
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "name": "El Hitoan",
+   "kind": "restaurant",
+   "area": null,
+   "note": "Hito house serving deep-fried catfish and other fresh fish dishes.",
+   "halal": null,
+   "website": "https://www.facebook.com/profile.php?id=100057289455990",
+   "sources": [
+    {
+     "label": "Restaurant Guru: El Hitoan",
+     "url": "https://restaurantguru.com/El-Hitoan-Cotabato-City-2"
+    }
+   ],
+   "status": "unclear"
+  },
+  {
+   "name": "Jamaica Le Café",
+   "kind": "restaurant",
+   "area": "Alnor Commercial Compound, Sinsuat Avenue",
+   "note": "Halal-certified Asian restaurant known for crab rice, fried hito and beef rendang.",
+   "halal": true,
+   "website": null,
+   "sources": [
+    {
+     "label": "Edge Davao: Cotabato eats, Jamaica Le Café (2019)",
+     "url": "https://edgedavao.net/indulge-lifestyle/2019/01/cotabato-eats-jamaica-le-cafes-familiar-new-taste"
+    },
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ],
+   "status": "unclear"
+  },
+  {
+   "name": "Cafe Le Sorelle",
+   "kind": "cafe",
+   "area": "Sema Building, Sinsuat Avenue corner Macapagal Street",
+   "note": "Café serving pasta, chicken lasagna, cheesecake and halo-halo.",
+   "halal": null,
+   "website": "https://www.facebook.com/cafelesorelle",
+   "sources": [
+    {
+     "label": "Lakwatsero: Cotabato City travel guide",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    },
+    {
+     "label": "Wikivoyage: Cotabato City (Eat)",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    }
+   ],
+   "status": "unclear"
+  },
+  {
+   "name": "Sugar Pappi",
+   "kind": "restaurant",
+   "area": null,
+   "note": "Local restaurant serving pansit guisado, pasta, ribs, chocolate cake and chocolate yema.",
+   "halal": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Lakwatsero: Cotabato City travel guide",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    },
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ],
+   "status": "unclear"
+  },
+  {
+   "name": "Moro Cafe",
+   "kind": "cafe",
+   "area": "BARMM compound (former ORC compound), Governor Gutierrez Avenue",
+   "note": "Café serving Sulu and Tausug coffee, juices, pastries and rice meals such as rendang; some listings call it Bangsamoro Cafe.",
+   "halal": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Philippine Coffee Board: Coffee the Moro way (2019)",
+     "url": "https://philcoffeeboard.com/coffee-the-moro-way/"
+    },
+    {
+     "label": "Wikivoyage: Cotabato City (Eat)",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Wanderlog: Bangsamoro Cafe",
+     "url": "https://wanderlog.com/place/details/3253680"
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "name": "Café Mindanaw",
+   "kind": "cafe",
+   "area": null,
+   "note": "Coffee shop and bookshop serving Maguindanaon coffee, with books on Mindanao history and Moro culture.",
+   "halal": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Philippine Coffee Board: Coffee the Moro way (2019)",
+     "url": "https://philcoffeeboard.com/coffee-the-moro-way/"
+    }
+   ],
+   "status": "unclear"
+  },
+  {
+   "name": "Rizal Park grill stalls",
+   "kind": "other",
+   "area": "near Rizal Park, Sinsuat Avenue",
+   "note": "Roadside stalls grilling barbecue meats, busiest at night.",
+   "halal": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    }
+   ],
+   "status": "unclear"
+  },
+  {
+   "name": "Cotabato City Mega Market",
+   "kind": "market",
+   "area": null,
+   "note": "The city's main wet market, with eateries inside selling pastil for breakfast.",
+   "halal": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "PNA: Pastil, Maguindanaon food on Christmas (2017)",
+     "url": "https://www.pna.gov.ph/articles/1019321"
+    },
+    {
+     "label": "Wikipedia: Cotabato City",
+     "url": "https://en.wikipedia.org/wiki/Cotabato_City"
+    }
+   ],
+   "status": "open"
+  },
+  {
+   "name": "Samra Maguindanao Delicacies",
+   "kind": "other",
+   "area": null,
+   "note": "Maker of Maguindanaon sweets such as dudul, tinadtag, putri mandi and panganan sising, shown as Cotabato City's One Town One Product.",
+   "halal": null,
+   "website": null,
+   "sources": [
+    {
+     "label": "Pinas Muna: Ramadan 2013 celebration in ARMM (Cotabato City fair)",
+     "url": "https://www.pinasmuna.com/2013/07/ramadan-2013-celebration-in-armm.html"
+    }
+   ],
+   "status": "unclear"
+  }
+ ],
+ "dishes": [
+  {
+   "name": "Pastil",
+   "note": "Steamed rice topped with kagikit (shredded chicken, beef or fish) and wrapped in banana leaf, eaten mostly at breakfast with egg and coffee.",
+   "whereToTry": [
+    "Cotabato City Mega Market"
+   ],
+   "sources": [
+    {
+     "label": "PNA: Pastil, Maguindanaon food on Christmas (2017)",
+     "url": "https://www.pna.gov.ph/articles/1019321"
+    },
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ]
+  },
+  {
+   "name": "Kalintubo",
+   "note": "Rice with marinated chicken cutlets or chicken liver, wrapped in a cone of banana leaf with the meat showing.",
+   "whereToTry": [],
+   "sources": [
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ]
+  },
+  {
+   "name": "Sinina",
+   "note": "Beef or goat stew cooked in coconut milk and served with palapa.",
+   "whereToTry": [
+    "Hashy's Cuisine"
+   ],
+   "sources": [
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "PNA: Halal tourism, a glimpse into Mindanao food, heritage (2021)",
+     "url": "https://www.pna.gov.ph/articles/1147711"
+    },
+    {
+     "label": "Pinas Muna: Ramadan 2013 celebration in ARMM (Cotabato City fair)",
+     "url": "https://www.pinasmuna.com/2013/07/ramadan-2013-celebration-in-armm.html"
+    }
+   ]
+  },
+  {
+   "name": "Palapa",
+   "note": "Maguindanaon condiment of scallions, chili and ginger or shredded young coconut, served with stews and rice.",
+   "whereToTry": [],
+   "sources": [
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "Edge Davao: Royal chef of Maguindanao (2018)",
+     "url": "https://edgedavao.net/indulge-lifestyle/2018/02/royal-chef-maguindanao-taste-culture-tradition"
+    }
+   ]
+  },
+  {
+   "name": "Tinapayan",
+   "note": "Fermented freshwater fish that is fried and served as an appetizer.",
+   "whereToTry": [],
+   "sources": [
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "Edge Davao: Royal chef of Maguindanao (2018)",
+     "url": "https://edgedavao.net/indulge-lifestyle/2018/02/royal-chef-maguindanao-taste-culture-tradition"
+    }
+   ]
+  },
+  {
+   "name": "Fried hito",
+   "note": "Deep-fried catfish, a staple of the city's hito houses.",
+   "whereToTry": [
+    "Babo Katips",
+    "JETOY's Hitoan",
+    "El Hitoan",
+    "Jamaica Le Café"
+   ],
+   "sources": [
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "Restaurant Guru: fish restaurants in Cotabato City",
+     "url": "https://restaurantguru.com/fish-Cotabato-City-m102"
+    }
+   ]
+  },
+  {
+   "name": "Linigid na manok",
+   "note": "Chicken dish named among Mama Ping's Maguindanaon specialties.",
+   "whereToTry": [
+    "Mama Ping"
+   ],
+   "sources": [
+    {
+     "label": "Restaurant Guru: Mama Ping",
+     "url": "https://restaurantguru.com/Mama-Ping-Cotabato-City"
+    }
+   ]
+  },
+  {
+   "name": "Dodol (dudul)",
+   "note": "Sticky sweet of coconut milk, sugar and rice flour cooked for hours, served to end a meal.",
+   "whereToTry": [
+    "Samra Maguindanao Delicacies"
+   ],
+   "sources": [
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "Langyaw: Things to do in Cotabato City, a revisit (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "Pinas Muna: Ramadan 2013 celebration in ARMM (Cotabato City fair)",
+     "url": "https://www.pinasmuna.com/2013/07/ramadan-2013-celebration-in-armm.html"
+    }
+   ]
+  },
+  {
+   "name": "Tinagtag",
+   "note": "Lacy rice-flour fritter drizzled through a coconut-shell strainer into hot oil and folded, often eaten with coffee.",
+   "whereToTry": [
+    "Samra Maguindanao Delicacies"
+   ],
+   "sources": [
+    {
+     "label": "Inquirer Lifestyle: Cotabato City's kaleidoscope houses, grand mosque, and 'Bai Walk' (2019)",
+     "url": "https://lifestyle.inquirer.net/321555/cotabato-citys-kaleidoscope-houses-grand-mosque-and-bai-walk/"
+    },
+    {
+     "label": "MindaNews: Tinagtag, a Maguindanaon delicacy (2010)",
+     "url": "https://mindanews.com/picture-stories/2010/06/tinagtag-a-maguindanaon-delicacy-best-eaten-with-coffee-and-coco-milk/"
+    },
+    {
+     "label": "Pinas Muna: Ramadan 2013 celebration in ARMM (Cotabato City fair)",
+     "url": "https://www.pinasmuna.com/2013/07/ramadan-2013-celebration-in-armm.html"
+    }
+   ]
+  },
+  {
+   "name": "Kumukunsi",
+   "note": "Spiral-shaped fritter of rice flour, duck eggs and sugar, deep-fried until golden.",
+   "whereToTry": [],
+   "sources": [
+    {
+     "label": "Pinas Muna: Ramadan 2013 celebration in ARMM (Cotabato City fair)",
+     "url": "https://www.pinasmuna.com/2013/07/ramadan-2013-celebration-in-armm.html"
+    },
+    {
+     "label": "MindaNews: Tinagtag, a Maguindanaon delicacy (2010)",
+     "url": "https://mindanews.com/picture-stories/2010/06/tinagtag-a-maguindanaon-delicacy-best-eaten-with-coffee-and-coco-milk/"
+    }
+   ]
+  }
+ ],
+ "chains": [
+  "Jollibee",
+  "McDonald's",
+  "Chowking",
+  "Mang Inasal",
+  "Greenwich",
+  "Minute Burger",
+  "Potato Corner",
+  "Dunkin' Donuts",
+  "Goldilocks",
+  "Red Ribbon",
+  "Chooks to Go",
+  "Razon's",
+  "Choobi Choobi",
+  "Infinitea"
+ ]
+}

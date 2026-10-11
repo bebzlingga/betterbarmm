@@ -1,0 +1,502 @@
+{
+ "asOf": "2026-10-11",
+ "see": [
+  {
+   "name": "Sultan Haji Hassanal Bolkiah Masjid (Grand Mosque)",
+   "kind": "sacred",
+   "area": "Barangay Kalanganan II, by the Tamontaka River",
+   "note": "Completed in 2011 with 4 minarets 43 m tall and room for about 15,000 worshippers, it is run by the Bangsamoro Government. Dress modestly: women cover hair, arms and legs; men wear long trousers and sleeved shirts. Visitor guides report daily visiting hours of 7:00 to 19:00 and no entrance fee.",
+   "sources": [
+    {
+     "label": "Wikipedia: Sultan Haji Hassanal Bolkiah Masjid",
+     "url": "https://en.wikipedia.org/wiki/Sultan_Haji_Hassanal_Bolkiah_Masjid"
+    },
+    {
+     "label": "The Bisaya Traveler (2024)",
+     "url": "https://bisayatraveler.com/2024/09/08/the-grand-mosque-of-cotabato/"
+    },
+    {
+     "label": "VisMin.ph (2025)",
+     "url": "https://vismin.ph/2025/explore-the-grand-mosque-of-cotabato/"
+    }
+   ],
+   "status": "open",
+   "photo": null
+  },
+  {
+   "name": "Pedro Colina Hill (PC Hill) and its painted houses",
+   "kind": "heritage",
+   "area": "Sinsuat Avenue side of the hill, city centre",
+   "note": "The low hill, also called Tantawan, is where the city's story begins: it sits over the Kutawato Caves, and in 2018 the houses on its slope were painted in bright patterns of guinakit boats, gongs and crabs. The hill is also a police and military reservation housing several law-enforcement offices, so ask before photographing people or buildings.",
+   "sources": [
+    {
+     "label": "Wikipedia: Pedro Colina Hill",
+     "url": "https://en.wikipedia.org/wiki/Pedro_Colina_Hill"
+    },
+    {
+     "label": "Langyaw (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ],
+   "status": "open",
+   "lat": 7.2198436,
+   "lon": 124.2443235,
+   "photo": "pc-hill"
+  },
+  {
+   "name": "Kutawato Caves",
+   "kind": "nature",
+   "area": "Foot of Pedro Colina Hill, Barangay Rosary Heights 1",
+   "note": "This limestone cave system sits in the city centre, and its name, meaning 'stone fort', gave Cotabato its name; it sheltered locals in Spanish times and WWII guerrillas. The city repaired it from January 2026 and formally reopened it in June 2026 during the 67th Araw ng Cotabato. Floors can be wet.",
+   "sources": [
+    {
+     "label": "City of Cotabato: Kutawato Cave reopens (June 2026)",
+     "url": "https://cityofcotabato.com/utawato-cave-reopens-as-cotabato-city-celebrates-67th-araw-ng-cotabato/"
+    },
+    {
+     "label": "Star FM Cotabato: rehabilitation begins (January 2026)",
+     "url": "https://cotabato.bomboradyo.com/kutawato-cave-sinimulan-nang-ayusin/"
+    },
+    {
+     "label": "Wikipedia: Kutawato Caves",
+     "url": "https://en.wikipedia.org/wiki/Kutawato_Caves"
+    }
+   ],
+   "status": "open",
+   "lat": 7.2199135,
+   "lon": 124.2419304,
+   "photo": "kutawato-cave"
+  },
+  {
+   "name": "Tamontaka Church (Church of the Immaculate Conception)",
+   "kind": "sacred",
+   "area": "Tamontaka, along the Tamontaka River",
+   "note": "Jesuits founded this church in 1872, and it has stood on its present site since 1879. It was rebuilt after a 1976 earthquake and a 1994 fire, and was declared a National Historic Landmark in 2004. It is a working Catholic parish, so visit outside Mass or sit in quietly.",
+   "sources": [
+    {
+     "label": "Wikipedia: Tamontaka Church",
+     "url": "https://en.wikipedia.org/wiki/Tamontaka_Church"
+    },
+    {
+     "label": "Langyaw (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ],
+   "status": "open",
+   "photo": "tamontaka"
+  },
+  {
+   "name": "Old Cotabato City Hall",
+   "kind": "heritage",
+   "area": "Don Roman Vilo Street, fronting Rizal Park Plaza",
+   "note": "Juan Arellano designed this 1936 town hall in a Maguindanaon-influenced neo-vernacular style. It was renovated in 2016 and later used as a small city museum and visitor information centre. Local radio reported in January 2026 that a new rehabilitation was done, and the city plans the building as its museum and library, so check whether exhibits are open before going.",
+   "sources": [
+    {
+     "label": "Wikipedia: Old Cotabato City Hall Museum",
+     "url": "https://en.wikipedia.org/wiki/Old_Cotabato_City_Hall_Museum"
+    },
+    {
+     "label": "Star FM Cotabato (January 2026)",
+     "url": "https://cotabato.bomboradyo.com/kutawato-cave-sinimulan-nang-ayusin/"
+    },
+    {
+     "label": "Langyaw (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ],
+   "status": "unclear",
+   "lat": 7.2239468,
+   "lon": 124.2461883,
+   "photo": "old-city-hall"
+  },
+  {
+   "name": "Bangsamoro Museum, Shariff Kabunsuan Cultural Complex",
+   "kind": "museum",
+   "area": "Bangsamoro Government Center, Rosary Heights VII",
+   "note": "Opened in 2019, the museum is run by the Bangsamoro cultural heritage commission. Its collection includes burial jars 2,000 to 2,500 years old, Moro textiles and brassware, objects from the Marawi siege and records of the peace process.",
+   "sources": [
+    {
+     "label": "Wikipedia: Shariff Kabunsuan Cultural Complex",
+     "url": "https://en.wikipedia.org/wiki/Shariff_Kabunsuan_Cultural_Complex"
+    },
+    {
+     "label": "Nomadic Experiences (2023)",
+     "url": "https://www.nomadicexperiences.com/2023/02/cotabato-citys-bangsamoro-museum.html"
+    },
+    {
+     "label": "Wikipedia: Bangsamoro Government Center",
+     "url": "https://en.wikipedia.org/wiki/Bangsamoro_Government_Center"
+    }
+   ],
+   "status": "open",
+   "photo": null
+  },
+  {
+   "name": "Bangsamoro Government Center",
+   "kind": "heritage",
+   "area": "Rosary Heights VII",
+   "note": "Built in 1976 and once nicknamed the 'Little Malacañan of the South', the complex holds the executive and parliament buildings and the cultural complex, and hosts Ramadan light displays and festival events. A 2023 regional law moves the seat of government to Parang, Maguindanao del Norte.",
+   "sources": [
+    {
+     "label": "Wikipedia: Bangsamoro Government Center",
+     "url": "https://en.wikipedia.org/wiki/Bangsamoro_Government_Center"
+    },
+    {
+     "label": "Arab News Pakistan (2024)",
+     "url": "https://www.arabnews.pk/node/2476066/world"
+    }
+   ],
+   "status": "open",
+   "photo": null
+  },
+  {
+   "name": "Tantawan Park",
+   "kind": "park",
+   "area": "Corner of Quezon Avenue and Sinsuat Avenue, foot of PC Hill",
+   "note": "This small historical park has a monument to Sultan Muhammad Kudarat of Maguindanao. It stands where a Maguindanao watchtower guarded the sultanate against Spanish attacks in 1635 to 1645.",
+   "sources": [
+    {
+     "label": "Wikipedia: Tantawan Park",
+     "url": "https://en.wikipedia.org/wiki/Tantawan_Park"
+    },
+    {
+     "label": "Langyaw (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ],
+   "status": "open",
+   "photo": "sultan-kudarat"
+  },
+  {
+   "name": "Bai Walk (Tamontaka riverside promenade)",
+   "kind": "nature",
+   "area": "Tamontaka River bank near the Grand Mosque, Kalanganan II",
+   "note": "This riverside walk near the Grand Mosque is the city's spot for sunsets. Its name joins 'bai', a Maguindanaon title for royal women, with 'baywalk'. It is also the finish of the Guinakit boat parade in December.",
+   "sources": [
+    {
+     "label": "Langyaw (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "Nomadic Experiences: 2022 Shariff Kabunsuan Festival",
+     "url": "https://www.nomadicexperiences.com/2022/12/2022-shariff-kabunsuan-festival.html"
+    },
+    {
+     "label": "Wikivoyage: Cotabato City",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    }
+   ],
+   "status": "open",
+   "lat": 7.196739,
+   "lon": 124.1824771,
+   "photo": "baywalk"
+  },
+  {
+   "name": "Timako Hill",
+   "kind": "viewpoint",
+   "area": "Kalanganan II, on the coast facing the Grand Mosque",
+   "note": "This forested coastal hill, one of only 2 high points in the city, has a bridge with wide views over the river mouth and bay. A seaport was being developed at its foot as of 2018, and we found no recent source on trails or access, so ask locally before going.",
+   "sources": [
+    {
+     "label": "Langyaw (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ],
+   "status": "unclear",
+   "lat": 7.2111536,
+   "lon": 124.1806984,
+   "photo": null
+  },
+  {
+   "name": "People's Palace (Cotabato City Hall)",
+   "kind": "heritage",
+   "area": "Malagapas, Rosary Heights X",
+   "note": "The working city hall mixes neo-classical and Muslim architecture, and the city features it in its tourism promotion. It is a government office, so visit during office hours and stick to the public areas.",
+   "sources": [
+    {
+     "label": "City of Cotabato: Philippine Travel Mart 2026",
+     "url": "https://cityofcotabato.com/cotabato-city-shines-at-philippine-travel-mart-2026/"
+    },
+    {
+     "label": "Langyaw (2018)",
+     "url": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "label": "City of Cotabato: office address",
+     "url": "https://cityofcotabato.com/emergency-hotlines/"
+    }
+   ],
+   "status": "open",
+   "photo": null
+  },
+  {
+   "name": "Metropolitan Cathedral of the Immaculate Conception",
+   "kind": "sacred",
+   "area": "Quezon Avenue, beside Tantawan Park",
+   "note": "This is the seat of the Catholic Archdiocese of Cotabato, a short walk from Tantawan Park and PC Hill. Its feast, the Immaculate Conception, is one of the city's main Catholic celebrations.",
+   "sources": [
+    {
+     "label": "OpenStreetMap",
+     "url": "https://www.openstreetmap.org/way/139509588"
+    },
+    {
+     "label": "Wikipedia: Tantawan Park",
+     "url": "https://en.wikipedia.org/wiki/Tantawan_Park"
+    },
+    {
+     "label": "Wikipedia: Cotabato City",
+     "url": "https://en.wikipedia.org/wiki/Cotabato_City"
+    }
+   ],
+   "status": "open",
+   "photo": null
+  },
+  {
+   "name": "Rio Grande de Mindanao riverfront and river boats",
+   "kind": "activity",
+   "area": "Cotabato City wharf",
+   "note": "Mindanao's longest river splits into the Cotabato and Tamontaka channels in the city before reaching Illana Bay. Motorised boats run from the city wharf to Sultan Kudarat across the river. Fluvial parades and boat races are held on the rivers during festivals.",
+   "sources": [
+    {
+     "label": "Wikipedia: Rio Grande de Mindanao",
+     "url": "https://en.wikipedia.org/wiki/Rio_Grande_de_Mindanao"
+    },
+    {
+     "label": "Wikivoyage: Cotabato City",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    }
+   ],
+   "status": "open",
+   "photo": "rio-grande"
+  },
+  {
+   "name": "KCC Mall of Cotabato",
+   "kind": "shopping",
+   "area": "Quezon Avenue / Sinsuat Avenue, Rosary Heights 2",
+   "note": "Opened on 1 April 2025, it is among Mindanao's largest malls, with over 500 shops, 8 cinemas and the city's biggest convention hall. It is useful for air-conditioned meals, supplies and banking.",
+   "sources": [
+    {
+     "label": "Wikipedia: KCC Mall of Cotabato",
+     "url": "https://en.wikipedia.org/wiki/KCC_Mall_of_Cotabato"
+    }
+   ],
+   "status": "open",
+   "photo": null
+  }
+ ],
+ "events": [
+  {
+   "name": "Shariff Kabunsuan Festival",
+   "when": "December (15 to 19 December per city sources; parade day reported as 19 December in 2024)",
+   "note": "The festival marks the early-16th-century arrival of Shariff Kabunsuan, who brought Islam to mainland Mindanao. Its highlight is the Guinakit fluvial parade of decorated royal boats on the Tamontaka River at Kalanganan II, with street dancing, an Inaul fashion show and food showcases.",
+   "sources": [
+    {
+     "label": "Daily Tribune (December 2024)",
+     "url": "https://tribune.net.ph/2024/12/20/shariff-kabunsuan-festival-draws-crowd"
+    },
+    {
+     "label": "The Manila Times (December 2021)",
+     "url": "https://manilatimes.net/2021/12/26/news/regions/guinakit-fluvial-parade-tops-festival/1827225/amp"
+    },
+    {
+     "label": "Wikipedia: Cotabato City",
+     "url": "https://en.wikipedia.org/wiki/Cotabato_City"
+    }
+   ]
+  },
+  {
+   "name": "Araw ng Cotabato (City Charter Day)",
+   "when": "June, building up to the 20 June charter anniversary (the 67th was in 2026)",
+   "note": "This week-long city founding celebration is the city's biggest, with kite flying, fluvial parades, boat races and sports. 20 June is a special non-working day in the city, and the 2026 edition reopened the Kutawato Caves.",
+   "sources": [
+    {
+     "label": "Tourism Promotions Board: Araw ng Cotabato",
+     "url": "https://tpb.gov.ph/?p=4716"
+    },
+    {
+     "label": "Proclamation No. 1043, s. 2015",
+     "url": "https://lawphil.net/executive/proc/proc2015/proc_1043_2015.html"
+    },
+    {
+     "label": "City of Cotabato (June 2026)",
+     "url": "https://cityofcotabato.com/utawato-cave-reopens-as-cotabato-city-celebrates-67th-araw-ng-cotabato/"
+    }
+   ]
+  },
+  {
+   "name": "Ramadan lights and night markets",
+   "when": "Ramadan (month moves each year with the Islamic calendar)",
+   "note": "Since 2019 the Bangsamoro Government Center has been lit up for Ramadan, with halal food fairs and night markets from iftar into the evening. Muslims and non-Muslims are welcome.",
+   "sources": [
+    {
+     "label": "Arab News Pakistan (2024)",
+     "url": "https://www.arabnews.pk/node/2476066/world"
+    }
+   ]
+  },
+  {
+   "name": "Feast of the Immaculate Conception",
+   "when": "December",
+   "note": "The city's main Catholic feast, tied to the cathedral and to Tamontaka Church, both dedicated to the Immaculate Conception.",
+   "sources": [
+    {
+     "label": "Wikipedia: Cotabato City",
+     "url": "https://en.wikipedia.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Wikipedia: Tamontaka Church",
+     "url": "https://en.wikipedia.org/wiki/Tamontaka_Church"
+    }
+   ]
+  },
+  {
+   "name": "Layagan Festival",
+   "when": "December",
+   "note": "A festival for the city's crab industry, listed among the city's celebrations. We found no recent coverage.",
+   "sources": [
+    {
+     "label": "Wikipedia: Cotabato City",
+     "url": "https://en.wikipedia.org/wiki/Cotabato_City"
+    }
+   ]
+  }
+ ],
+ "practical": [
+  {
+   "topic": "Arriving by air",
+   "text": "Cotabato Airport (Awang, CBO) is not in the city but in Barangay Awang, Datu Odin Sinsuat, Maguindanao del Norte, with a single 1,900 m runway. Current listings show Philippine Airlines (PAL Express) to Manila, Cebu and Tawi-Tawi, plus small-plane Bangsamoro Airways flights to Jolo and Zamboanga; Cebu Pacific's Cotabato service is listed as terminated. The airport was closed for runway repairs from 22 June to 1 October 2023, so check schedules before booking.",
+   "sources": [
+    {
+     "label": "Wikipedia: Cotabato Airport",
+     "url": "https://en.wikipedia.org/wiki/Cotabato_Airport"
+    },
+    {
+     "label": "Philippine Airlines: flights from Cotabato City",
+     "url": "https://flights.philippineairlines.com/en/flights-from-cotabato-city"
+    },
+    {
+     "label": "Bangsamoro Parliament: airport bill (December 2025)",
+     "url": "https://parliament.bangsamoro.gov.ph/2025/12/10/bill-seeks-full-modernization-of-cotabato-airport/"
+    }
+   ]
+  },
+  {
+   "topic": "Arriving by road",
+   "text": "Mindanao Star runs buses from Davao City's Ecoland terminal, a trip of about 5 to 6 hours, and Husky Lines and UV Express vans serve Koronadal and General Santos. Rural Transit runs daily buses to Cagayan de Oro, Pagadian and Dipolog. Each operator uses its own terminal in town, and the city government also runs the Cotabato City Integrated Public Terminal on Bubong Road.",
+   "sources": [
+    {
+     "label": "Wikivoyage: Cotabato City",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Pamasahe: Davao to Cotabato, Mindanao Star",
+     "url": "https://pamasahe.com/routes/davao-cotabato-mindanao-star-schedule-fares"
+    },
+    {
+     "label": "OpenStreetMap: Integrated Public Terminal",
+     "url": "https://www.openstreetmap.org/way/1513356000"
+    }
+   ]
+  },
+  {
+   "topic": "Getting around",
+   "text": "Tricycles and multicabs or jeepneys are the usual way around the city. For outlying spots like the Grand Mosque, one guide suggests a jeepney to the Kalanganan junction and then a habal-habal (motorcycle taxi).",
+   "sources": [
+    {
+     "label": "Wikivoyage: Cotabato City",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Lakwatsero",
+     "url": "https://www.lakwatsero.com/?p=18818"
+    },
+    {
+     "label": "VisMin.ph (2025)",
+     "url": "https://vismin.ph/2025/explore-the-grand-mosque-of-cotabato/"
+    }
+   ]
+  },
+  {
+   "topic": "Money",
+   "text": "Major Philippine banks have branches downtown, including BDO (with ATM), Landbank, PNB, Metrobank, China Bank, RCBC, EastWest and DBP, and BPI opened a new branch in Poblacion 5 in May 2026.",
+   "sources": [
+    {
+     "label": "City of Cotabato: BPI branch opening (May 2026)",
+     "url": "https://cityofcotabato.com/ribbon-cutting-ceremony-of-the-bank-of-the-philippine-islands-bpi/"
+    },
+    {
+     "label": "OpenStreetMap: BDO branch",
+     "url": "https://www.openstreetmap.org/node/1418098664"
+    }
+   ]
+  },
+  {
+   "topic": "Connectivity",
+   "text": "Globe, Smart and DITO all have coverage maps for the city. DITO switched on 5G at the Bangsamoro Government Center in June 2022.",
+   "sources": [
+    {
+     "label": "Bangsamoro MOTC: DITO 5G (June 2022)",
+     "url": "https://motc.bangsamoro.gov.ph/dito-5g-now-in-bangsamoro-government-center/"
+    },
+    {
+     "label": "nPerf coverage map, Cotabato City",
+     "url": "https://www.nperf.com/en/map/PH/1716771.Cotabato/7534.Globe-Telecom/signal"
+    }
+   ]
+  },
+  {
+   "topic": "Dress and conduct",
+   "text": "Most residents are Muslim, and dress is more conservative than elsewhere in the Philippines; cover shoulders and knees, and women cover their hair inside mosques. During Ramadan, many eateries stay closed until the fast breaks at dusk, and visitors should avoid eating or drinking in public in daytime.",
+   "sources": [
+    {
+     "label": "Wikivoyage: Bangsamoro",
+     "url": "https://en.wikivoyage.org/wiki/Bangsamoro"
+    },
+    {
+     "label": "The Bisaya Traveler (2024)",
+     "url": "https://bisayatraveler.com/2024/09/08/the-grand-mosque-of-cotabato/"
+    },
+    {
+     "label": "Wikipedia: Cotabato City",
+     "url": "https://en.wikipedia.org/wiki/Cotabato_City"
+    }
+   ]
+  },
+  {
+   "topic": "Safety and checkpoints",
+   "text": "Expect routine police and military checkpoints on highways into the region. PC Hill is a police and military reservation, so ask before photographing there. Several governments' travel advisories cover central Mindanao; the UK, for example, advises against all travel to western and central Mindanao, which can affect travel insurance.",
+   "sources": [
+    {
+     "label": "GOV.UK: Philippines safety and security",
+     "url": "https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security"
+    },
+    {
+     "label": "Wikivoyage: Bangsamoro",
+     "url": "https://en.wikivoyage.org/wiki/Bangsamoro"
+    },
+    {
+     "label": "Wikipedia: Pedro Colina Hill",
+     "url": "https://en.wikipedia.org/wiki/Pedro_Colina_Hill"
+    }
+   ]
+  },
+  {
+   "topic": "Emergency and hospitals",
+   "text": "Cotabato Regional and Medical Center on Sinsuat Avenue is the main government hospital, with 600 authorised beds, and several private hospitals are in the city centre. The Cotabato City Police Office and its stations are on and around PC Hill.",
+   "sources": [
+    {
+     "label": "Wikipedia: Cotabato City",
+     "url": "https://en.wikipedia.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Wikivoyage: Cotabato City",
+     "url": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    },
+    {
+     "label": "Wikipedia: Pedro Colina Hill",
+     "url": "https://en.wikipedia.org/wiki/Pedro_Colina_Hill"
+    }
+   ]
+  }
+ ]
+}
