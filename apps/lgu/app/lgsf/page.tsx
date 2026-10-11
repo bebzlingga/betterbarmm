@@ -120,9 +120,6 @@ export default function LgsfPage() {
 								</span>
 							))}
 						</div>
-						<figcaption className='mt-4 text-[12.5px] font-semibold text-[var(--ink)]'>
-							Bangsamoro budget for local government support, by year
-						</figcaption>
 					</figure>
 				</div>
 			</section>
