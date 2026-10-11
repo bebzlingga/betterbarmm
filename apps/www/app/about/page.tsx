@@ -168,9 +168,11 @@ export default function AboutPage() {
 
 			{/* ---- What it is not ---- */}
 			<section className='bg-[var(--paper-2)]'>
-				<div className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
-					<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>What it is not</h2>
-					<p className='mt-3 max-w-[52rem] text-[15px] leading-7 text-[var(--ink-2)]'>
+				<div className='bb-container grid gap-6 py-[clamp(3.75rem,7vw,6.5rem)] lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)] lg:gap-20'>
+					<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)] lg:text-[2.25rem]'>
+						Independent, not an official source.
+					</h2>
+					<p className='text-[16px] leading-8 text-[var(--ink-2)]'>
 						BetterBARMM is not an official authority and does not speak for the Bangsamoro Government. Where it summarises
 						a document, reorganises a table or explains a record in its own words, the original is still what settles the
 						question, which is why the original is always linked.
