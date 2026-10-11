@@ -46,13 +46,16 @@ export function LocatorMap({
 	const pieces = target.split(/(?=M)/).map(bounds)
 	const area = (b: ReturnType<typeof bounds>) => (b.x1 - b.x0) * (b.y1 - b.y0)
 	const main = pieces.reduce((a, b) => (area(b) > area(a) ? b : a))
-	const whole = bounds(target)
-	const box = area(whole) > area(main) * 12 ? main : whole
+	// Sized on the main piece; centred on the middle of the whole place,
+	// each piece weighted by its size, so the main land sits dead centre and
+	// stray islets pull it only a little.
+	const box = main
 	const size = Math.max(box.x1 - box.x0, (box.y1 - box.y0) * 1.25, unit ? 55 : 100)
 	const width = size * 2
 	const height = width * 0.8
-	const cx = (box.x0 + box.x1) / 2
-	const cy = (box.y0 + box.y1) / 2
+	const weight = pieces.reduce((t, b) => t + area(b), 0) || 1
+	const cx = pieces.reduce((t, b) => t + ((b.x0 + b.x1) / 2) * area(b), 0) / weight
+	const cy = pieces.reduce((t, b) => t + ((b.y0 + b.y1) / 2) * area(b), 0) / weight
 	const viewBox = `${cx - width / 2} ${cy - height / 2} ${width} ${height}`
 	const depth = width * 0.018
 	const stroke = width * 0.0025
@@ -64,7 +67,7 @@ export function LocatorMap({
 		<figure className='m-0 overflow-hidden bg-[var(--paper-2)]'>
 			<svg
 				viewBox={viewBox}
-				className='block h-auto w-full [transform:perspective(900px)_rotateX(38deg)_scale(1.18)] [transform-origin:50%_60%]'
+				className='block h-auto w-full [transform:perspective(900px)_rotateX(38deg)_scale(1.18)] [transform-origin:50%_50%]'
 				role='img'
 				aria-label={`Map showing where ${label} is`}
 			>
