@@ -44,7 +44,7 @@ function Block({ title, note, children }: { title: string; note?: React.ReactNod
 		<div className='mt-14 first:mt-0'>
 			<h3 className='bb-label block w-full border-b border-[var(--brass-line)] pb-3'>{title}</h3>
 			{children}
-			{note ? <p className='mt-4 text-[12.5px] leading-6 text-[var(--ink-3)]'>{note}</p> : null}
+			{note ? <p className='mt-4 text-[12.5px] leading-6 text-[var(--ink-mute)] transition-colors hover:text-[var(--ink-3)]'>{note}</p> : null}
 		</div>
 	)
 }

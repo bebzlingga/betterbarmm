@@ -73,7 +73,7 @@ export function LguDisclosure({ unitKey, name }: { unitKey: string; name: string
 				/>
 			)}
 
-			<p className='mt-10 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+			<p className='mt-10 text-[12.5px] leading-6 text-[var(--ink-mute)] transition-colors hover:text-[var(--ink-3)]'>
 				A tick opens the file DILG holds; a dash means nothing is on the portal for that period, not that the
 				document was never produced. Annual documents sit under Year, quarterly ones under their quarter. From{' '}
 				<a href={fdpp.source[0].href} target='_blank' rel='noreferrer' className='rule-link'>
