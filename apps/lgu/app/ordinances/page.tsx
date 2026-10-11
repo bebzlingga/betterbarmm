@@ -57,7 +57,7 @@ export default function OrdinancesPage() {
 			<div className='bb-container bb-section '>
 				<section>
 					<h2 className={H2}>What an ordinance is</h2>
-					<div className='mt-5 max-w-[48rem] space-y-4 text-[15px] leading-7 text-[var(--ink-2)]'>
+					<div className='mt-5 gap-20 text-[15px] leading-7 text-[var(--ink-2)] lg:columns-2 [&>p+p]:mt-4'>
 						<p>
 							An ordinance is a local law. Each level of local government has a council that makes them: the
 							Sangguniang Panlalawigan for a province, the Sangguniang Panlungsod for a city, the Sangguniang Bayan
