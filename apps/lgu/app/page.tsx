@@ -104,8 +104,9 @@ export default function LguHomePage() {
 							    one and hoping. */}
 							{[
 								{
-									value: lguProvinces.length,
-									label: 'Provinces, city and special area',
+									// Cotabato City is counted with the cities, not here.
+									value: lguProvinces.filter((area) => area.kind !== 'City').length,
+									label: 'Provinces and special area',
 									group: false,
 								},
 								{
