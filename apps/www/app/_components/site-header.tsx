@@ -39,8 +39,7 @@ const workspaces = [
 	{ label: 'Legislation', href: 'https://legislation.betterbarmm.com', open: true },
 	{ label: 'Budget', href: 'https://budget.betterbarmm.com', open: true },
 	{ label: 'Local government', href: 'https://lgu.betterbarmm.com', open: true },
-	// Procurement hidden for now.
-	// { label: 'Procurement', href: 'https://procurement.betterbarmm.com', open: true },
+	{ label: 'Procurement', href: 'https://procurement.betterbarmm.com', open: true },
 ] as const
 
 const secondaryLinks = [

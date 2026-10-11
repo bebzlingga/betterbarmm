@@ -44,11 +44,19 @@ const principlesBand = ['Better Transparency', 'Better Governance']
 
 const workspaces: Workspace[] = [
 	{
-		label: 'Election',
-		href: 'https://election.betterbarmm.com',
+		label: 'Budget',
+		href: 'https://budget.betterbarmm.com',
 		blurb:
-			'Parties, candidates, districts, and sectoral seats for the 2026 Parliamentary Elections, with the source record behind each one.',
-		measure: '2026 Parliament',
+			'Every enacted appropriation by sector, office, program and project, traced to the page of the Act it was printed on.',
+		measure: 'GAAB FY 2020–2026',
+		state: 'live',
+	},
+	{
+		label: 'Local government',
+		href: 'https://lgu.betterbarmm.com',
+		blurb:
+			'Every province, city, municipality and barangay in the region — population, land area, and the officials elected to each.',
+		measure: 'LGU directory',
 		state: 'live',
 	},
 	{
@@ -60,11 +68,11 @@ const workspaces: Workspace[] = [
 		state: 'live',
 	},
 	{
-		label: 'Budget',
-		href: 'https://budget.betterbarmm.com',
+		label: 'Election',
+		href: 'https://election.betterbarmm.com',
 		blurb:
-			'Every enacted appropriation by sector, office, program and project, traced to the page of the Act it was printed on.',
-		measure: 'GAAB FY 2020–2026',
+			'Parties, candidates, districts, and sectoral seats for the 2026 Parliamentary Elections, with the source record behind each one.',
+		measure: '2026 Parliament',
 		state: 'live',
 	},
 	{
@@ -74,22 +82,19 @@ const workspaces: Workspace[] = [
 		state: 'planned',
 	},
 	{
-		label: 'Local government',
-		href: 'https://lgu.betterbarmm.com',
+		label: 'Procurement',
+		href: 'https://procurement.betterbarmm.com',
 		blurb:
-			'Every province, city, municipality and barangay in the region — population, land area, and the officials elected to each.',
-		measure: 'LGU directory',
+			'Every bid notice a BARMM government office has posted on PhilGEPS since 2019, its approved budget, and who won the contract.',
+		measure: 'PhilGEPS 2019–2026',
 		state: 'live',
 	},
-	// Procurement hidden for now.
-	// {
-	// 	label: 'Procurement',
-	// 	href: 'https://procurement.betterbarmm.com',
-	// 	blurb:
-	// 		'Every bid notice a BARMM government office has posted on PhilGEPS since 2019, its approved budget, and who won the contract.',
-	// 	measure: 'PhilGEPS 2019–2026',
-	// 	state: 'live',
-	// },
+	{
+		label: 'Public services',
+		blurb: 'Which office handles what, what it costs, and what you need to bring.',
+		measure: 'Service finder',
+		state: 'planned',
+	},
 	{
 		label: 'Travel',
 		href: '/soon',
@@ -100,12 +105,6 @@ const workspaces: Workspace[] = [
 		// blurb says so: everything else on this index promises a record traced
 		// to the body that published it, and this one cannot make that promise.
 		state: 'soon',
-	},
-	{
-		label: 'Public services',
-		blurb: 'Which office handles what, what it costs, and what you need to bring.',
-		measure: 'Service finder',
-		state: 'planned',
 	},
 	{
 		label: 'Source layer',

@@ -33,6 +33,7 @@ export function SiteNav() {
 			    reader actually needs mid-page is the bar under it. */}
 			<UtilityBar
 				base='https://betterbarmm.com'
+				current='procurement'
 				className='bb-strip bg-[var(--paper-2)]'
 				switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
 				end={
