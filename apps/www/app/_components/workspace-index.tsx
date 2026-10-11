@@ -3,6 +3,7 @@
 import {
   ArrowUpRightIcon,
   BuildingsIcon,
+  ReceiptIcon,
   CheckSquareOffsetIcon,
   CoinsIcon,
   CompassIcon,
@@ -24,6 +25,7 @@ const ICONS: Record<string, Icon> = {
   Budget: CoinsIcon,
   'Public works': HardHatIcon,
   'Local government': BuildingsIcon,
+  Procurement: ReceiptIcon,
   Travel: CompassIcon,
   'Public services': LifebuoyIcon,
   'Source layer': DatabaseIcon,

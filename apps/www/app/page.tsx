@@ -66,6 +66,14 @@ const workspaces: Workspace[] = [
 		state: 'live',
 	},
 	{
+		label: 'Procurement',
+		href: 'https://procurement.betterbarmm.com',
+		blurb:
+			'Every bid notice a BARMM government office has posted on PhilGEPS since 2015, its approved budget, and who won the contract.',
+		measure: 'PhilGEPS 2015–2026',
+		state: 'live',
+	},
+	{
 		label: 'Travel',
 		href: '/soon',
 		blurb:
