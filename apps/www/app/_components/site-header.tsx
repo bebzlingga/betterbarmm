@@ -10,7 +10,7 @@ import { EASE, Magnetic, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo,
 import { ThemeToggle } from './theme-toggle'
 
 type SiteHeaderProps = {
-	activeItem?: 'discover' | 'jo' | 'about' | 'contribute'
+	activeItem?: 'discover' | 'explainers' | 'jo' | 'about' | 'contribute'
 	/**
 	 * Sit over the page rather than on top of it.
 	 *
@@ -41,7 +41,10 @@ const workspaces = [
 	{ label: 'Local government', href: 'https://lgu.betterbarmm.com', open: true },
 ] as const
 
-const secondaryLinks = [{ key: 'about', href: '/about', label: 'About' }] as const
+const secondaryLinks = [
+	{ key: 'explainers', href: '/explainers', label: 'Explainers' },
+	{ key: 'about', href: '/about', label: 'About' },
+] as const
 
 /** Marks a workspace whose site exists but whose data isn't published yet. */
 function SoonBadge() {

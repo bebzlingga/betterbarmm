@@ -74,3 +74,144 @@ body {
   background: var(--accent-soft);
   color: var(--ink);
 }
+
+/* ---- Dashboard primitives ----
+   Plain classes rather than components: forms here are mostly server-rendered
+   HTML, and a class is the smallest thing that keeps forty inputs consistent. */
+@layer components {
+  .eyebrow {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .field-label {
+    display: block;
+    margin-bottom: 0.375rem;
+    font-family: var(--font-display);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--ink-2);
+  }
+  .field {
+    width: 100%;
+    border: 1px solid var(--rule);
+    border-radius: 0.375rem;
+    background: #fff;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    color: var(--ink);
+  }
+  .field:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+    border-color: transparent;
+  }
+  textarea.field {
+    line-height: 1.5;
+  }
+  .field-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.8125rem;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+    border-radius: 0.375rem;
+    padding: 0.5rem 0.875rem;
+    font-family: var(--font-display);
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: 1px solid transparent;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .btn:disabled {
+    opacity: 0.6;
+    cursor: wait;
+  }
+  .btn-primary {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .btn-primary:hover {
+    background: var(--ink-2);
+  }
+  .btn-secondary {
+    background: #fff;
+    border-color: var(--rule);
+    color: var(--ink);
+  }
+  .btn-secondary:hover {
+    background: var(--paper-2);
+  }
+  .btn-danger {
+    background: #fff;
+    border-color: var(--accent-soft);
+    color: var(--accent);
+  }
+  .btn-danger:hover {
+    background: #fbefeb;
+  }
+  .panel {
+    border: 1px solid var(--rule-soft);
+    border-radius: 0.5rem;
+    background: #fff;
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+  }
+  .table th {
+    text-align: left;
+    padding: 0.625rem 1rem;
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-3);
+    border-bottom: 1px solid var(--rule-soft);
+    background: var(--paper);
+  }
+  .table td {
+    padding: 0.625rem 1rem;
+    border-bottom: 1px solid var(--rule-soft);
+    vertical-align: top;
+  }
+  .table tr:last-child td {
+    border-bottom: 0;
+  }
+  .table tbody tr:hover {
+    background: var(--paper);
+  }
+  .pill {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 0.0625rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: var(--paper-2);
+    color: var(--ink-2);
+  }
+  .pill-live {
+    background: #e6efdc;
+    color: var(--positive);
+  }
+}
+
+/* Markdown preview in the explainer editor. */
+.prose-admin h2 { margin: 1.5rem 0 0.5rem; font-size: 1.375rem; font-weight: 700; }
+.prose-admin h3 { margin: 1.25rem 0 0.5rem; font-size: 1.125rem; font-weight: 700; }
+.prose-admin h4 { margin: 1rem 0 0.5rem; font-weight: 700; }
+.prose-admin p, .prose-admin ul, .prose-admin ol, .prose-admin blockquote { margin: 0 0 0.875rem; line-height: 1.65; }
+.prose-admin ul { list-style: disc; padding-left: 1.25rem; }
+.prose-admin ol { list-style: decimal; padding-left: 1.25rem; }
+.prose-admin blockquote { border-left: 3px solid var(--rule); padding-left: 1rem; color: var(--ink-2); }
+.prose-admin a { color: var(--accent); text-decoration: underline; }
+.prose-admin code { background: var(--paper-2); padding: 0 0.25rem; border-radius: 0.25rem; }

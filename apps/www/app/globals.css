@@ -833,3 +833,61 @@
     mask-image: none;
   }
 }
+
+/* ---- Explainer article body ----
+   `.bb-prose` sets the measure and paragraph rhythm; explainers also carry
+   headings, lists and quotes written in the admin's Markdown. */
+.bb-article h2 {
+  margin: 2.6rem 0 0.9rem;
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+}
+.bb-article h3,
+.bb-article h4 {
+  margin: 2rem 0 0.6rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+.bb-article ul,
+.bb-article ol,
+.bb-article blockquote {
+  margin: 1.35rem 0;
+}
+.bb-article p + ul,
+.bb-article p + ol {
+  margin-top: 0.75rem;
+}
+.bb-article ul {
+  list-style: disc;
+  padding-left: 1.3rem;
+}
+.bb-article ol {
+  list-style: decimal;
+  padding-left: 1.3rem;
+}
+.bb-article li + li {
+  margin-top: 0.4rem;
+}
+.bb-article blockquote {
+  border-left: 2px solid var(--brass);
+  padding-left: 1.25rem;
+  color: var(--ink);
+}
+.bb-article a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--brass);
+  text-underline-offset: 0.2em;
+}
+.bb-article code {
+  font-size: 0.9em;
+  background: var(--paper-2, rgba(0, 0, 0, 0.05));
+  padding: 0 0.3em;
+  border-radius: 0.25rem;
+}

@@ -8,9 +8,12 @@
 		"lint": "eslint ."
 	},
 	"dependencies": {
+		"@betterbarmm/db": "workspace:*",
+		"@betterbarmm/ui": "workspace:*",
+		"@supabase/ssr": "^0.12.7",
+		"@supabase/supabase-js": "^2.117.3",
 		"next": "16.2.6",
 		"react": "19.2.4",
-		"react-dom": "19.2.4",
-		"@betterbarmm/ui": "workspace:*"
+		"react-dom": "19.2.4"
 	}
 }

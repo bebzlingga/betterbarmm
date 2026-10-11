@@ -9,6 +9,7 @@
 	},
 	"dependencies": {
 		"@betterbarmm/ai": "workspace:*",
+		"@betterbarmm/db": "workspace:*",
 		"@betterbarmm/editorial": "workspace:*",
 		"@betterbarmm/lgu-data": "workspace:*",
 		"@betterbarmm/primer-data": "workspace:*",

@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
 		'@betterbarmm/schemas',
 		'@betterbarmm/ai',
 		'@betterbarmm/travel-data',
+		'@betterbarmm/db',
 	],
 	experimental: {
 		externalDir: true,
