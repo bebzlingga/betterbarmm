@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Masthead, longDate, peso } from '../_components/parts'
-import { SVP_CEILING, bunching, dominantSuppliers, overBudget, sameDayClusters } from '../_lib/philgeps'
+import { SVP_CEILING, blacklistedSuppliers, bunching, dominantSuppliers, overBudget, sameDayClusters, supplierHref } from '../_lib/philgeps'
 
 export const metadata: Metadata = {
 	title: 'Patterns',
 	description:
-		'Four patterns in BARMM procurement worth a second look: budgets bunched under the bidding threshold, same-day purchases that add up past it, one supplier winning most of an office’s contracts, and awards above budget.',
+		'Five patterns in BARMM procurement worth a second look: budgets bunched under the bidding threshold, same-day purchases that add up past it, one supplier winning most of an office’s contracts, and awards above budget.',
 }
 
 /* ============================================================
@@ -61,7 +61,7 @@ export default function PatternsPage() {
 			<Masthead
 				kicker='Procurement · Bangsamoro'
 				name='Patterns'
-				note='Four patterns in the record worth a second look. None is proof of wrongdoing: each has innocent explanations, given below. They are where a reader, an auditor or a journalist might start.'
+				note='Five patterns in the record worth a second look. None is proof of wrongdoing: each has innocent explanations, given below. They are where a reader, an auditor or a journalist might start.'
 			/>
 
 			<div className='bb-container bb-section [&>section+section]:mt-24'>
@@ -174,7 +174,7 @@ export default function PatternsPage() {
 											</Link>
 										</td>
 										<td className={TD}>
-											<Link href={`/notices?supplier=${encodeURIComponent(d.supplier)}`} className='rule-link text-[var(--ink-2)]'>
+											<Link href={supplierHref(d.supplier)} className='rule-link text-[var(--ink-2)]'>
 												{d.supplier}
 											</Link>
 										</td>
@@ -225,6 +225,28 @@ export default function PatternsPage() {
 							</tbody>
 						</table>
 					</div>
+				</section>
+
+				<section>
+					<p className='bb-label'>05</p>
+					<h2 className={`${H2} mt-3`}>Suppliers sharing a name with the blacklist</h2>
+					<p className={P}>
+						The Government Procurement Policy Board keeps a public list of suppliers barred from government contracts for a period. {blacklistedSuppliers.length}{' '}
+						suppliers that won BARMM contracts share a name with an entity on it. A name is not proof it is the same business, and most of these
+						orders came from offices elsewhere in the country; each supplier&rsquo;s page shows the orders and whether any BARMM contract fell inside one.
+					</p>
+					<ul className='mt-6 grid gap-x-10 sm:grid-cols-2'>
+						{blacklistedSuppliers.map(({ supplier, entry }) => (
+							<li key={supplier.name} className='flex items-baseline justify-between gap-4 border-t border-[var(--rule)] py-3'>
+								<Link href={supplierHref(supplier.name)} className='rule-link text-[14px] font-semibold text-[var(--ink)]'>
+									{supplier.name}
+								</Link>
+								<span className='num shrink-0 text-[12.5px] text-[var(--ink-3)]'>
+									{new Date(`${entry.min_date}T00:00:00Z`).getUTCFullYear()}–{new Date(`${entry.max_date}T00:00:00Z`).getUTCFullYear()}
+								</span>
+							</li>
+						))}
+					</ul>
 				</section>
 
 				<section>

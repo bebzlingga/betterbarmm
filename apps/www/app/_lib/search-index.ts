@@ -85,7 +85,8 @@ function procurement(): Entry[] {
 		used.add(slug)
 		return entry('Procuring office', name, `${e.type} · bids on PhilGEPS`, `${PROC}/${slug}`)
 	})
-	const suppliers = raw.awardees.map((s) => entry('Supplier', s, 'Won contracts from BARMM offices', `${PROC}/notices?supplier=${encodeURIComponent(s)}`))
+	// The procurement workspace's supplier pages, slugged the same way.
+	const suppliers = raw.awardees.map((s) => entry('Supplier', s, 'Won contracts from BARMM offices', `${PROC}/suppliers/${slugify(s) || 'supplier'}`))
 	return [...offices, ...suppliers]
 }
 

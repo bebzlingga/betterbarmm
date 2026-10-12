@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { SupplierExplorer, type SupplierRow } from '../_components/supplier-explorer'
 import { Masthead } from '../_components/parts'
-import { groups, suppliers } from '../_lib/philgeps'
+import { groups, supplierSlug, suppliers } from '../_lib/philgeps'
 
 export const metadata: Metadata = {
 	title: 'Suppliers',
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export default function SuppliersPage() {
 	const rows: SupplierRow[] = suppliers.map((s) => ({
 		name: s.name,
+		slug: supplierSlug(s.name),
 		group: s.group,
 		awards: s.awards,
 		offices: s.entities.size,

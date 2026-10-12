@@ -52,6 +52,7 @@ jobs:
           python3 -c "import json; d=json.load(open('datasets/procurement/philgeps.json')); print('\n'.join(r[0] for r in d['notices'] if r[1] == 1))" \
             | xargs python3 datasets/procurement/scripts/fetch_mphilgeps.py
           python3 datasets/procurement/scripts/fetch_philgeps.py
+          python3 datasets/procurement/scripts/fetch_gppb_blacklist.py
       - name: Propose PhilGEPS changes
         if: steps.philgeps.outcome == 'success'
         run: |
@@ -60,4 +61,7 @@ jobs:
           else
             summary=$(python3 datasets/procurement/scripts/summarize_update.py "$RUNNER_TEMP/philgeps.before.json" datasets/procurement/philgeps.json)
             bun db:propose "$RUN_ID" --file procurement/philgeps.json --summary "$summary"
+          fi
+          if ! git diff --quiet -- datasets/procurement/gppb-blacklist.json; then
+            bun db:propose "$RUN_ID" --file procurement/gppb-blacklist.json --summary "GPPB blacklist refreshed"
           fi

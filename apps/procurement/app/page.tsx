@@ -2,7 +2,7 @@ import { EntityExplorer, type EntityRow } from './_components/entity-explorer'
 import Link from 'next/link'
 import { Figures, Masthead, YearBars, longDate, peso } from './_components/parts'
 import { TopChart } from './_components/top-chart'
-import { entities, entityTotals, openNotices, regionByYear, regionTotals, suppliers, topCategories, years } from './_lib/philgeps'
+import { entities, entityTotals, openNotices, supplierHref, regionByYear, regionTotals, suppliers, topCategories, years } from './_lib/philgeps'
 
 const figures = (t: { notices: number; abc: number; awards: number; contracts: number }) =>
 	[t.notices, Math.round(t.abc), t.awards, Math.round(t.contracts)] as [number, number, number, number]
@@ -90,7 +90,7 @@ export default function ProcurementHome() {
 							tab: 'Suppliers',
 							note: 'Suppliers by the amount of contracts awarded to them.',
 							format: 'peso',
-							items: suppliers.slice(0, 15).map((s) => ({ label: s.name, value: s.amount, href: `/notices?supplier=${encodeURIComponent(s.name)}` })),
+							items: suppliers.slice(0, 15).map((s) => ({ label: s.name, value: s.amount, href: supplierHref(s.name) })),
 						},
 						{
 							key: 'offices',
@@ -111,7 +111,7 @@ export default function ProcurementHome() {
 							items: [...suppliers]
 								.sort((a, b) => b.awards - a.awards)
 								.slice(0, 15)
-								.map((s) => ({ label: s.name, value: s.awards, href: `/notices?supplier=${encodeURIComponent(s.name)}` })),
+								.map((s) => ({ label: s.name, value: s.awards, href: supplierHref(s.name) })),
 						},
 					]}
 				/>

@@ -401,3 +401,81 @@ export const overBudget = notices
 	.map((n) => ({ notice: n, entity: entities[n.entity]!, awarded: n.awards.reduce((s, a) => s + (a.amount ?? 0), 0) }))
 	.filter((x) => x.notice.abc && x.awarded > x.notice.abc * 1.0001)
 	.sort((a, b) => b.awarded - b.notice.abc! - (a.awarded - a.notice.abc!))
+
+/* ---- Supplier profiles ---------------------------------------------------- */
+
+/** A supplier's page address, the same slugging as offices. */
+export const supplierSlug = (name: string) => slugify(name) || 'supplier'
+export const supplierHref = (name: string) => `/suppliers/${supplierSlug(name)}`
+
+export const supplierBySlug = (() => {
+	const map = new Map<string, (typeof suppliers)[number]>()
+	for (const s of suppliers) if (!map.has(supplierSlug(s.name))) map.set(supplierSlug(s.name), s)
+	return map
+})()
+
+/** A name with punctuation and legal suffixes taken off, for matching across lists. */
+const nameKey = (s: string) =>
+	s
+		.toLowerCase()
+		.replace(/&/g, ' and ')
+		.replace(/[^a-z0-9 ]/g, ' ')
+		.split(/\s+/)
+		.filter((w) => w && !['inc', 'incorporated', 'corp', 'corporation', 'co', 'company', 'ltd', 'opc', 'the'].includes(w))
+		.join(' ')
+
+type BlacklistEntity = { blacklisted_entity: string; min_date: string; max_date: string; orders: { procuring_entity: string; start_date: string; end_date: string; project: string }[] }
+
+/** The procurement policy board's blacklist, keyed by name. */
+const blacklist: Map<string, BlacklistEntity> = (() => {
+	const roots = [process.cwd(), path.join(process.cwd(), '..'), path.join(process.cwd(), '../..')]
+	const file = roots.map((r) => path.join(r, 'datasets/procurement/gppb-blacklist.json')).find((f) => fs.existsSync(f))
+	if (!file) return new Map()
+	const { entities: list } = JSON.parse(fs.readFileSync(file, 'utf8')) as { entities: BlacklistEntity[] }
+	return new Map(list.map((e) => [nameKey(e.blacklisted_entity), e]))
+})()
+
+export const blacklistFor = (name: string) => blacklist.get(nameKey(name)) ?? null
+
+/** Suppliers that share a name with a blacklisted entity, and how many of their BARMM awards fell inside an order. */
+export const blacklistedSuppliers = suppliers
+	.map((s) => ({ supplier: s, entry: blacklistFor(s.name) }))
+	.filter((x): x is { supplier: (typeof suppliers)[number]; entry: BlacklistEntity } => Boolean(x.entry))
+
+/** Everything a supplier won, by office and by year, with the contracts themselves. */
+export function supplierProfile(slug: string) {
+	const s = supplierBySlug.get(slug)
+	if (!s) return null
+	const contracts: { notice: Notice; amount: number | null; date: string | null; contractNo: string | null }[] = []
+	for (const n of notices) for (const a of n.awards) if (a.awardee === s.name) contracts.push({ notice: n, amount: a.amount, date: a.date, contractNo: a.contractNo })
+	contracts.sort((a, b) => (b.date ?? '').localeCompare(a.date ?? ''))
+
+	const byOffice = new Map<number, { awards: number; amount: number }>()
+	for (const c of contracts) {
+		const o = byOffice.get(c.notice.entity) ?? { awards: 0, amount: 0 }
+		o.awards += 1
+		o.amount += c.amount ?? 0
+		byOffice.set(c.notice.entity, o)
+	}
+	const offices = [...byOffice.entries()]
+		.map(([entity, o]) => ({ entity: entities[entity]!, ...o, share: o.awards / Math.max(1, entityTotals[entity]!.all.awards) }))
+		.sort((a, b) => b.amount - a.amount)
+
+	const byYear = new Map<number, number>()
+	for (const c of contracts) if (c.date) byYear.set(Number(c.date.slice(0, 4)), (byYear.get(Number(c.date.slice(0, 4))) ?? 0) + (c.amount ?? 0))
+
+	const entry = blacklistFor(s.name)
+	const duringBlacklist = entry
+		? contracts.filter((c) => c.date && entry.orders.some((o) => c.date! >= o.start_date && c.date! <= o.end_date))
+		: []
+
+	// Other suppliers whose name starts the same way: possibly related, possibly not.
+	const first = nameKey(s.name).split(' ')[0] ?? ''
+	const GENERIC = new Set(['a', 'j', 'm', 'r', 'st', 'and', 'new', 'golden', 'royal', 'great', 'first', 'general', 'united', 'grand', 'mindanao', 'cotabato', 'lanao', 'maguindanao', 'bangsamoro', 'barmm'])
+	const similar =
+		first.length >= 3 && !GENERIC.has(first)
+			? suppliers.filter((o) => o.name !== s.name && nameKey(o.name).split(' ')[0] === first).slice(0, 8)
+			: []
+
+	return { supplier: s, contracts, offices, byYear: [...byYear.entries()].sort((a, b) => a[0] - b[0]), entry, duringBlacklist, similar }
+}

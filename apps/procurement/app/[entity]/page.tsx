@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { NoticesExplorer } from '../_components/notices-explorer'
 import { Figures, Masthead, YearBars, peso } from '../_components/parts'
-import { entities, entityBySlug, entityTotals, funds, groups, modeGroups, notices, years } from '../_lib/philgeps'
+import { entities, entityBySlug, entityTotals, funds, groups, modeGroups, notices, years, supplierHref } from '../_lib/philgeps'
 
 export function generateStaticParams() {
 	return entities.map((e) => ({ entity: e.slug }))
@@ -75,7 +75,7 @@ export default async function EntityPage({ params }: { params: Promise<{ entity:
 						<ol className='mt-4'>
 							{top.map(([name, s]) => (
 								<li key={name} className='flex items-baseline justify-between gap-4 border-b border-[var(--rule)] py-3'>
-									<a href={`/notices?supplier=${encodeURIComponent(name)}`} className='min-w-0 text-[13.5px] font-semibold leading-5 text-[var(--ink)] hover:text-[var(--accent)]'>
+									<a href={supplierHref(name)} className='min-w-0 text-[13.5px] font-semibold leading-5 text-[var(--ink)] hover:text-[var(--accent)]'>
 										{name}
 									</a>
 									<span className='num shrink-0 text-right text-[13px] text-[var(--ink-2)]'>

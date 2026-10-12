@@ -6,7 +6,7 @@ import { SearchField, Select } from './controls'
 
 /* Every supplier, filtered here: 1,850 small rows are cheap to ship. */
 
-export type SupplierRow = { name: string; group: string; awards: number; offices: number; last: string | null; amount: number }
+export type SupplierRow = { name: string; slug: string; group: string; awards: number; offices: number; last: string | null; amount: number }
 
 const COLUMNS: DataColumn[] = [
 	{ key: 'group', label: 'Category', format: 'text', hideBelow: 'lg' },
@@ -42,7 +42,7 @@ export function SupplierExplorer({ rows, groups }: { rows: SupplierRow[]; groups
 				.filter((r) => (!group || r.group === group) && (!year || r.last?.startsWith(year)) && fits(r.awards))
 				.map((r) => ({
 					key: r.name,
-					href: `/notices?supplier=${encodeURIComponent(r.name)}`,
+					href: `/suppliers/${r.slug}`,
 					name: r.name,
 					mobile: `${r.group} · ${r.awards} award${r.awards === 1 ? '' : 's'}`,
 					values: { group: r.group, awards: r.awards, offices: r.offices, last: r.last, amount: Math.round(r.amount) },
