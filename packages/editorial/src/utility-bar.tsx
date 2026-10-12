@@ -125,11 +125,11 @@ export function UtilityBar({
 											className={`group flex items-center gap-3 px-2 py-2 transition ${on ? 'bg-[var(--paper-2)]' : 'hover:bg-[var(--paper-2)]'}`}
 										>
 											<span
-												className={`grid size-8 shrink-0 place-items-center transition ${
-													on ? 'bg-[var(--accent)] text-white' : 'bg-[var(--paper-2)] text-[var(--ink-2)] group-hover:bg-[var(--accent)] group-hover:text-white'
+												className={`grid size-6 shrink-0 place-items-center transition ${
+													on ? 'text-[var(--accent)]' : 'text-[var(--ink-3)] group-hover:text-[var(--accent)]'
 												}`}
 											>
-												<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth={1.6} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' className='size-[18px]'>
+												<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth={1.6} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' className='size-5'>
 													{ICONS[workspace.key]}
 												</svg>
 											</span>
