@@ -1,39 +1,88 @@
 @import "tailwindcss";
 
+/* ============================================================
+   BetterBARMM Admin
+
+   A working tool, not a reading surface: neutral surfaces, one accent
+   (the estate's crimson) for what is actionable or current, and colour
+   kept for status. Everything is a token, so the dark theme is the
+   same page with different values.
+   ============================================================ */
+
 :root {
   color-scheme: light;
-  --paper: #f7f5f0;
-  --paper-2: #efece4;
-  --paper-3: #e6e0cd;
-  --rule: #cbc1a8;
-  --rule-soft: #e2dcc8;
-  --ink: #16140f;
-  --ink-2: #3a352a;
-  --ink-3: #6b6452;
-  --ink-mute: #968d75;
-  --accent: #8a2418;
-  --accent-deep: #5e1810;
-  --accent-soft: #d8b8a8;
-  --slate: #2d3e4f;
-  --positive: #4a5a3a;
-  --ochre: #9a7530;
-  /* DM Sans for reading copy, Outfit for headings, buttons and labels — the
-     layout loads both with next/font and defines the two variables below. */
+  --canvas: #f6f6f3;
+  --surface: #ffffff;
+  --surface-2: #f2f1ed;
+  --surface-3: #e9e7e1;
+  --rule: #e4e1d9;
+  --rule-strong: #d3cfc4;
+  --ink: #18170f;
+  --ink-2: #45423a;
+  --ink-3: #75716a;
+  --ink-mute: #a29e94;
+  --accent: #9b2a1c;
+  --accent-hover: #7f2216;
+  --accent-soft: #f6e6e2;
+  --accent-ink: #ffffff;
+  --good: #2f6b3a;
+  --good-soft: #e5f1e4;
+  --warn: #8a5a10;
+  --warn-soft: #f8eed8;
+  --info: #2c5282;
+  --info-soft: #e5edf7;
+  --shadow-sm: 0 1px 2px rgb(24 23 15 / 0.05);
+  --shadow-md: 0 8px 24px -12px rgb(24 23 15 / 0.18);
+  --ring: 0 0 0 3px rgb(155 42 28 / 0.18);
+
+  /* Kept for pages that still name the old tokens. */
+  --paper: var(--canvas);
+  --paper-2: var(--surface-2);
+  --rule-soft: var(--rule);
+  --positive: var(--good);
+  --ochre: var(--warn);
+
   --font-body:
     var(--font-dm-sans), -apple-system, BlinkMacSystemFont, "Helvetica Neue",
     Arial, sans-serif;
   --font-display:
     var(--font-outfit), -apple-system, BlinkMacSystemFont, "Helvetica Neue",
     Arial, sans-serif;
-  --font-mono-ui:
-    var(--font-outfit), -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-    Arial, sans-serif;
-  background: var(--paper);
+  --font-code: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --canvas: #121210;
+    --surface: #1a1a17;
+    --surface-2: #22221e;
+    --surface-3: #2c2b26;
+    --rule: #2e2d28;
+    --rule-strong: #3d3b35;
+    --ink: #f1efe8;
+    --ink-2: #cfcbc0;
+    --ink-3: #9a968b;
+    --ink-mute: #6f6c64;
+    --accent: #e0705c;
+    --accent-hover: #ec8673;
+    --accent-soft: #3a1d17;
+    --accent-ink: #1a0f0c;
+    --good: #8cc792;
+    --good-soft: #1c2d1e;
+    --warn: #e2b866;
+    --warn-soft: #33290f;
+    --info: #8db4e8;
+    --info-soft: #172438;
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+    --shadow-md: 0 12px 28px -12px rgb(0 0 0 / 0.6);
+    --ring: 0 0 0 3px rgb(224 112 92 / 0.25);
+  }
 }
 
 @theme inline {
   --font-sans: var(--font-body);
-  --font-mono: var(--font-mono-ui);
+  --font-mono: var(--font-code);
 }
 
 html {
@@ -43,7 +92,7 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background: var(--paper);
+  background: var(--canvas);
   color: var(--ink);
   font-family: var(--font-body);
   font-feature-settings: "tnum";
@@ -51,42 +100,38 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Kept in `base` so a `font-sans` utility on a heading still wins. */
 @layer base {
   h1,
   h2,
   h3,
   h4,
-  h5,
-  h6,
   button,
   input[type="button"],
   input[type="submit"] {
     font-family: var(--font-display);
   }
+  * {
+    box-sizing: border-box;
+  }
+  ::selection {
+    background: var(--accent-soft);
+    color: var(--ink);
+  }
 }
 
-* {
-  box-sizing: border-box;
-}
-
-::selection {
-  background: var(--accent-soft);
-  color: var(--ink);
-}
-
-/* ---- Dashboard primitives ----
-   Plain classes rather than components: forms here are mostly server-rendered
-   HTML, and a class is the smallest thing that keeps forty inputs consistent. */
+/* ---- Primitives ----
+   Plain classes: forms here are mostly server-rendered HTML, and a class is
+   the smallest thing that keeps forty inputs consistent. */
 @layer components {
   .eyebrow {
     font-family: var(--font-display);
     font-size: 11px;
     font-weight: 600;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--accent);
+    color: var(--ink-3);
   }
+
   .field-label {
     display: block;
     margin-bottom: 0.375rem;
@@ -97,71 +142,118 @@ body {
   }
   .field {
     width: 100%;
-    border: 1px solid var(--rule);
-    border-radius: 0.375rem;
-    background: #fff;
+    min-height: 2.375rem;
+    border: 1px solid var(--rule-strong);
+    border-radius: 0.625rem;
+    background: var(--surface);
     padding: 0.5rem 0.75rem;
     font-size: 0.875rem;
     color: var(--ink);
+    box-shadow: var(--shadow-sm);
+    transition: border-color 150ms, box-shadow 150ms;
+  }
+  .field::placeholder {
+    color: var(--ink-mute);
   }
   .field:focus {
-    outline: 2px solid var(--accent);
-    outline-offset: 1px;
-    border-color: transparent;
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: var(--ring);
   }
   textarea.field {
-    line-height: 1.5;
+    line-height: 1.55;
   }
   .field-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-family: var(--font-code);
     font-size: 0.8125rem;
   }
+
   .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.375rem;
-    border-radius: 0.375rem;
-    padding: 0.5rem 0.875rem;
+    gap: 0.4rem;
+    min-height: 2.375rem;
+    border-radius: 0.625rem;
+    padding: 0.45rem 0.9rem;
     font-family: var(--font-display);
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     font-weight: 600;
     border: 1px solid transparent;
     cursor: pointer;
     white-space: nowrap;
+    transition: background 150ms, border-color 150ms, color 150ms, box-shadow 150ms;
+  }
+  .btn:focus-visible {
+    outline: none;
+    box-shadow: var(--ring);
   }
   .btn:disabled {
-    opacity: 0.6;
-    cursor: wait;
+    opacity: 0.55;
+    cursor: not-allowed;
   }
   .btn-primary {
-    background: var(--ink);
-    color: var(--paper);
+    background: var(--accent);
+    color: var(--accent-ink);
+    box-shadow: var(--shadow-sm);
   }
-  .btn-primary:hover {
-    background: var(--ink-2);
+  .btn-primary:hover:not(:disabled) {
+    background: var(--accent-hover);
   }
   .btn-secondary {
-    background: #fff;
-    border-color: var(--rule);
+    background: var(--surface);
+    border-color: var(--rule-strong);
+    color: var(--ink);
+    box-shadow: var(--shadow-sm);
+  }
+  .btn-secondary:hover:not(:disabled) {
+    background: var(--surface-2);
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--ink-2);
+  }
+  .btn-ghost:hover:not(:disabled) {
+    background: var(--surface-2);
     color: var(--ink);
   }
-  .btn-secondary:hover {
-    background: var(--paper-2);
-  }
   .btn-danger {
-    background: #fff;
-    border-color: var(--accent-soft);
+    background: var(--surface);
+    border-color: var(--rule-strong);
     color: var(--accent);
   }
-  .btn-danger:hover {
-    background: #fbefeb;
+  .btn-danger:hover:not(:disabled) {
+    background: var(--accent-soft);
+    border-color: var(--accent);
   }
-  .panel {
-    border: 1px solid var(--rule-soft);
+  .btn-sm {
+    min-height: 2rem;
+    padding: 0.3rem 0.65rem;
+    font-size: 0.75rem;
     border-radius: 0.5rem;
-    background: #fff;
   }
+
+  .panel {
+    border: 1px solid var(--rule);
+    border-radius: 0.875rem;
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+  }
+  .panel-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.875rem 1.125rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .panel-title {
+    font-family: var(--font-display);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
   .table {
     width: 100%;
     border-collapse: collapse;
@@ -169,39 +261,95 @@ body {
   }
   .table th {
     text-align: left;
-    padding: 0.625rem 1rem;
+    padding: 0.625rem 1.125rem;
     font-family: var(--font-display);
-    font-size: 0.75rem;
+    font-size: 0.6875rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.08em;
     color: var(--ink-3);
-    border-bottom: 1px solid var(--rule-soft);
-    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    background: var(--surface-2);
   }
   .table td {
-    padding: 0.625rem 1rem;
-    border-bottom: 1px solid var(--rule-soft);
-    vertical-align: top;
+    padding: 0.75rem 1.125rem;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: middle;
   }
   .table tr:last-child td {
     border-bottom: 0;
   }
+  .table tbody tr {
+    transition: background 120ms;
+  }
   .table tbody tr:hover {
-    background: var(--paper);
+    background: var(--surface-2);
   }
+
   .pill {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
     border-radius: 999px;
-    padding: 0.0625rem 0.5rem;
-    font-size: 0.75rem;
+    padding: 0.125rem 0.55rem;
+    font-family: var(--font-display);
+    font-size: 0.6875rem;
     font-weight: 600;
-    background: var(--paper-2);
+    line-height: 1.4;
+    background: var(--surface-3);
     color: var(--ink-2);
+    white-space: nowrap;
   }
-  .pill-live {
-    background: #e6efdc;
-    color: var(--positive);
+  .pill-live,
+  .pill-good {
+    background: var(--good-soft);
+    color: var(--good);
+  }
+  .pill-warn {
+    background: var(--warn-soft);
+    color: var(--warn);
+  }
+  .pill-info {
+    background: var(--info-soft);
+    color: var(--info);
+  }
+  .pill-accent {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  .kbd {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--rule-strong);
+    border-bottom-width: 2px;
+    border-radius: 0.375rem;
+    padding: 0 0.35rem;
+    font-family: var(--font-code);
+    font-size: 0.6875rem;
+    color: var(--ink-3);
+    background: var(--surface);
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.625rem;
+    font-size: 0.8125rem;
+    color: var(--ink-2);
+    transition: background 120ms, color 120ms;
+  }
+  .nav-link:hover {
+    background: var(--surface-3);
+    color: var(--ink);
+  }
+  .nav-link[aria-current="page"] {
+    background: var(--surface);
+    color: var(--ink);
+    font-weight: 600;
+    box-shadow: var(--shadow-sm), inset 0 0 0 1px var(--rule);
   }
 }
 
@@ -212,6 +360,6 @@ body {
 .prose-admin p, .prose-admin ul, .prose-admin ol, .prose-admin blockquote { margin: 0 0 0.875rem; line-height: 1.65; }
 .prose-admin ul { list-style: disc; padding-left: 1.25rem; }
 .prose-admin ol { list-style: decimal; padding-left: 1.25rem; }
-.prose-admin blockquote { border-left: 3px solid var(--rule); padding-left: 1rem; color: var(--ink-2); }
+.prose-admin blockquote { border-left: 3px solid var(--rule-strong); padding-left: 1rem; color: var(--ink-2); }
 .prose-admin a { color: var(--accent); text-decoration: underline; }
-.prose-admin code { background: var(--paper-2); padding: 0 0.25rem; border-radius: 0.25rem; }
+.prose-admin code { background: var(--surface-2); padding: 0 0.25rem; border-radius: 0.25rem; }

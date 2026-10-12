@@ -1,18 +1,36 @@
-import { COLLECTIONS, WORKSPACES, type Revision } from "@betterbarmm/db";
+import { COLLECTIONS, WORKSPACES, findCollection, workspaceLabel, type Revision } from "@betterbarmm/db";
+import {
+  ArrowRightIcon,
+  ArrowsClockwiseIcon,
+  ArticleIcon,
+  BuildingsIcon,
+  CheckCircleIcon,
+  CheckSquareOffsetIcon,
+  ClockCounterClockwiseIcon,
+  CloudArrowUpIcon,
+  CoinsIcon,
+  DatabaseIcon,
+  MapTrifoldIcon,
+  ScrollIcon,
+} from "@phosphor-icons/react/ssr";
 import Link from "next/link";
-import { describeChange, when } from "../_components/history-panel";
+import { describeChange } from "../_components/history-panel";
+import { EmptyState, PageHeader, StatCard, ago, initials } from "../_components/ui";
 import { requireEditor } from "../_lib/auth";
 import { revisionHref, revisionPlace } from "../_lib/revisions";
 
+const WORKSPACE_ICONS = { legislation: ScrollIcon, budget: CoinsIcon, election: CheckSquareOffsetIcon, lgu: BuildingsIcon, travel: MapTrifoldIcon } as const;
+
 export default async function OverviewPage() {
-  const { supabase } = await requireEditor();
+  const { supabase, profile } = await requireEditor();
 
   const count = async (query: PromiseLike<{ count: number | null }>) => (await query).count ?? 0;
   const records = () => supabase.from("records").select("*", { count: "exact", head: true });
 
-  const [{ data: syncRows }, { data: recent }] = await Promise.all([
+  const [{ data: syncRows }, { data: recent }, { data: waiting }] = await Promise.all([
     supabase.from("sync_state").select("name, at"),
-    supabase.from("revisions").select("*").order("changed_at", { ascending: false }).limit(10),
+    supabase.from("revisions").select("*").order("changed_at", { ascending: false }).limit(8),
+    supabase.from("proposals").select("kind, workspace, collection, file_path, status").in("status", ["pending", "approved"]).limit(5000),
   ]);
   const syncedAt = new Map((syncRows ?? []).map((row) => [row.name as string, row.at as string]));
 
@@ -27,109 +45,149 @@ export default async function OverviewPage() {
     }),
   ]);
   const stats = new Map(
-    COLLECTIONS.map((c, i) => [`${c.workspace}/${c.collection}`, { total: perCollection[2 * i], unpulled: perCollection[2 * i + 1] }]),
+    COLLECTIONS.map((c, i) => [`${c.workspace}/${c.collection}`, { total: perCollection[2 * i]!, unpublished: perCollection[2 * i + 1]! }]),
   );
   const totalRecords = [...stats.values()].reduce((sum, s) => sum + s.total, 0);
-  const totalUnpulled = [...stats.values()].reduce((sum, s) => sum + s.unpulled, 0);
+  const editsWaiting = [...stats.values()].reduce((sum, s) => sum + s.unpublished, 0);
+
+  // What the nightly fetch has filed, by where it goes.
+  const pending = (waiting ?? []).filter((p) => p.status === "pending");
+  const approved = (waiting ?? []).filter((p) => p.status === "approved").length;
+  const byGroup = new Map<string, number>();
+  for (const p of pending) {
+    const g = p.kind === "file" ? (p.file_path as string) : `${p.workspace}/${p.collection}`;
+    byGroup.set(g, (byGroup.get(g) ?? 0) + 1);
+  }
+  const groupLabel = (g: string) => {
+    if (!g.includes("/") || g.endsWith(".json")) return g;
+    const [w, c] = g.split("/");
+    return `${workspaceLabel(w!)} · ${findCollection(w!, c!)?.label ?? c}`;
+  };
+
+  const hour = Number(new Date().toLocaleString("en-US", { hour: "numeric", hour12: false, timeZone: "Asia/Manila" }));
+  const greeting = hour < 12 ? "Good morning" : hour < 18 ? "Good afternoon" : "Good evening";
+  const firstName = (profile.name || profile.email.split("@")[0]!).split(/[\s.]/)[0];
 
   return (
-    <div className="space-y-10">
-      <header>
-        <p className="eyebrow">Overview</p>
-        <h1 className="mt-2 text-3xl font-bold tracking-tight">Content and data</h1>
-      </header>
+    <div>
+      <PageHeader
+        title={`${greeting}, ${firstName!.charAt(0).toUpperCase()}${firstName!.slice(1)}`}
+        description="What the sources changed overnight, what is waiting to go live, and what editors did last."
+      />
 
-      {totalUnpulled > 0 ? (
-        <div className="panel border-[var(--ochre)] bg-[#fbf5e6] p-4 text-sm">
-          <strong>{totalUnpulled.toLocaleString()} record{totalUnpulled === 1 ? "" : "s"} edited since the last pull.</strong>{" "}
-          The workspace sites still show the old version. Run <code>bun db:pull</code>, then commit and deploy.
-        </div>
-      ) : null}
-
-      <section className="grid gap-4 sm:grid-cols-3">
-        <Stat label="Published explainers" value={published} href="/explainers?status=published" />
-        <Stat label="Draft explainers" value={drafts} href="/explainers?status=draft" />
-        <Stat label="Records" value={totalRecords} />
+      <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <StatCard icon={ArrowsClockwiseIcon} tone={pending.length ? "accent" : "good"} label="Updates waiting" value={pending.length.toLocaleString()} hint={pending.length ? "Found by the nightly fetch" : "Sources and site agree"} href="/updates" />
+        <StatCard icon={CloudArrowUpIcon} tone={approved + editsWaiting ? "warn" : "good"} label="Waiting to go live" value={(approved + editsWaiting).toLocaleString()} hint="Published at the next hourly run" href="/updates?status=approved" />
+        <StatCard icon={DatabaseIcon} tone="info" label="Records" value={totalRecords.toLocaleString()} hint={`In ${COLLECTIONS.length} collections`} />
+        <StatCard icon={ArticleIcon} label="Explainers" value={published.toLocaleString()} hint={`${drafts} draft${drafts === 1 ? "" : "s"}`} href="/explainers" />
       </section>
 
-      <section className="panel">
-        <div className="flex items-center justify-between border-b border-[var(--rule-soft)] px-4 py-3">
-          <h2 className="font-semibold">Recent changes</h2>
-          <Link href="/activity" className="text-sm text-[var(--accent)] hover:underline">
-            All activity →
-          </Link>
-        </div>
-        <ul className="divide-y divide-[var(--rule-soft)] text-sm">
-          {((recent ?? []) as Revision[]).map((r) => (
-            <li key={r.id} className="flex flex-wrap items-baseline justify-between gap-2 px-4 py-2.5">
-              <span>
-                {r.action === "delete" ? (
-                  r.title || r.key
-                ) : (
-                  <Link href={revisionHref(r)} className="hover:underline">
-                    {r.title || r.key}
-                  </Link>
-                )}
-                <span className="text-[var(--ink-3)]"> · {describeChange(r)}</span>
-              </span>
-              <span className="text-xs text-[var(--ink-3)]">
-                {revisionPlace(r)} · {r.changed_by_email} · {when(r.changed_at)}
-              </span>
-            </li>
-          ))}
-          {!recent?.length ? <li className="px-4 py-4 text-[var(--ink-3)]">No edits yet.</li> : null}
-        </ul>
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-2">
-        {WORKSPACES.map((workspace) => (
-          <div key={workspace.value} className="panel">
-            <h2 className="border-b border-[var(--rule-soft)] px-4 py-3 font-semibold">{workspace.label}</h2>
-            <table className="table">
-              <tbody>
-                {COLLECTIONS.filter((c) => c.workspace === workspace.value).map((c) => {
-                  const s = stats.get(`${c.workspace}/${c.collection}`) ?? { total: 0, unpulled: 0 };
-                  return (
-                    <tr key={c.collection}>
-                      <td>
-                        <Link href={`/data/${c.workspace}/${c.collection}`} className="hover:underline">
-                          {c.label}
-                        </Link>
-                      </td>
-                      <td className="text-right">
-                        {s.unpulled ? (
-                          <span className="pill mr-2 bg-[#fbf5e6] text-[var(--ochre)]">{s.unpulled} unpulled</span>
-                        ) : null}
-                        <span className="tabular-nums text-[var(--ink-3)]">{s.total.toLocaleString()}</span>
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+      <section className="mt-6 grid gap-6 xl:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
+        <div className="panel">
+          <div className="panel-head">
+            <h2 className="panel-title">Needs review</h2>
+            <Link href="/updates" className="btn btn-ghost btn-sm">
+              All updates <ArrowRightIcon size={12} weight="bold" aria-hidden="true" />
+            </Link>
           </div>
-        ))}
+          {byGroup.size ? (
+            <ul className="divide-y divide-[var(--rule)]">
+              {[...byGroup].sort((a, b) => b[1] - a[1]).map(([g, n]) => (
+                <li key={g} className="flex items-center justify-between gap-3 px-[1.125rem] py-3">
+                  <div className="min-w-0">
+                    <p className="truncate text-sm font-medium">{groupLabel(g)}</p>
+                    <p className="text-xs text-[var(--ink-3)]">{n.toLocaleString()} change{n === 1 ? "" : "s"} found at the source</p>
+                  </div>
+                  <Link href="/updates" className="btn btn-secondary btn-sm">Review</Link>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <EmptyState icon={CheckCircleIcon} title="All caught up">
+              Nothing from the sources is waiting. The nightly fetch runs at 2:00 in the morning.
+            </EmptyState>
+          )}
+        </div>
+
+        <div className="panel">
+          <div className="panel-head">
+            <h2 className="panel-title">Recent activity</h2>
+            <Link href="/activity" className="btn btn-ghost btn-sm">
+              All activity <ArrowRightIcon size={12} weight="bold" aria-hidden="true" />
+            </Link>
+          </div>
+          {recent?.length ? (
+            <ol className="divide-y divide-[var(--rule)]">
+              {(recent as Revision[]).map((r) => (
+                <li key={r.id} className="flex items-start gap-3 px-[1.125rem] py-3">
+                  <span className="mt-0.5 grid size-7 shrink-0 place-items-center rounded-full bg-[var(--surface-3)] font-[family-name:var(--font-display)] text-[10px] font-semibold text-[var(--ink-2)]">
+                    {initials(r.changed_by_email || "?")}
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-sm">
+                      {r.action === "delete" ? (
+                        <span className="font-medium">{r.title || r.key}</span>
+                      ) : (
+                        <Link href={revisionHref(r)} className="font-medium hover:text-[var(--accent)]">
+                          {r.title || r.key}
+                        </Link>
+                      )}
+                    </p>
+                    <p className="truncate text-xs text-[var(--ink-3)]">
+                      {describeChange(r)} · {revisionPlace(r)}
+                    </p>
+                  </div>
+                  <span className="shrink-0 text-xs text-[var(--ink-mute)]">{ago(r.changed_at)}</span>
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <EmptyState icon={ClockCounterClockwiseIcon} title="No edits yet">
+              Changes made in the admin are logged here.
+            </EmptyState>
+          )}
+        </div>
       </section>
 
-      <p className="text-sm text-[var(--ink-3)]">
-        A collection showing 0 has not been seeded yet: run <code>bun db:seed</code> from the repo root.
-      </p>
+      <section className="mt-10">
+        <h2 className="panel-title mb-4">Workspaces</h2>
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {WORKSPACES.map((w) => {
+            const Glyph = WORKSPACE_ICONS[w.value as keyof typeof WORKSPACE_ICONS] ?? DatabaseIcon;
+            const cols = COLLECTIONS.filter((c) => c.workspace === w.value);
+            const total = cols.reduce((s, c) => s + (stats.get(`${c.workspace}/${c.collection}`)?.total ?? 0), 0);
+            return (
+              <div key={w.value} className="panel p-5">
+                <div className="flex items-center gap-3">
+                  <span className="grid size-9 place-items-center rounded-lg bg-[var(--accent-soft)] text-[var(--accent)]">
+                    <Glyph size={18} weight="fill" aria-hidden="true" />
+                  </span>
+                  <div>
+                    <p className="font-[family-name:var(--font-display)] text-[15px] font-semibold">{w.label}</p>
+                    <p className="text-xs text-[var(--ink-3)]">{total.toLocaleString()} records</p>
+                  </div>
+                </div>
+                <ul className="mt-4 space-y-0.5">
+                  {cols.map((c) => {
+                    const s = stats.get(`${c.workspace}/${c.collection}`) ?? { total: 0, unpublished: 0 };
+                    return (
+                      <li key={c.collection}>
+                        <Link href={`/data/${c.workspace}/${c.collection}`} className="flex items-center justify-between gap-3 rounded-md px-2 py-1.5 text-[13px] hover:bg-[var(--surface-2)]">
+                          <span className="truncate text-[var(--ink-2)]">{c.label}</span>
+                          <span className="flex shrink-0 items-center gap-2">
+                            {s.unpublished ? <span className="pill pill-warn">{s.unpublished} unpublished</span> : null}
+                            <span className="tabular-nums text-[var(--ink-3)]">{s.total ? s.total.toLocaleString() : <span className="text-[var(--ink-mute)]">not seeded</span>}</span>
+                          </span>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      </section>
     </div>
-  );
-}
-
-function Stat({ label, value, href }: { label: string; value: number; href?: string }) {
-  const body = (
-    <>
-      <p className="text-sm text-[var(--ink-3)]">{label}</p>
-      <p className="mt-1 text-3xl font-bold tabular-nums">{value.toLocaleString()}</p>
-    </>
-  );
-  return href ? (
-    <Link href={href} className="panel block p-5 hover:border-[var(--rule)]">
-      {body}
-    </Link>
-  ) : (
-    <div className="panel p-5">{body}</div>
   );
 }

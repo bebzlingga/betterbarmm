@@ -23,11 +23,11 @@ export function LoginForm({ notice }: { notice?: string }) {
         />
       </label>
       {error || notice ? (
-        <p role="alert" className="text-sm text-[var(--accent)]">
+        <p role="alert" className="rounded-lg bg-[var(--accent-soft)] px-3 py-2 text-sm text-[var(--accent)]">
           {error ?? notice}
         </p>
       ) : null}
-      <button type="submit" disabled={pending} className="btn btn-primary w-full">
+      <button type="submit" disabled={pending} className="btn btn-primary !min-h-11 w-full">
         {pending ? "Signing in…" : "Sign in"}
       </button>
     </form>

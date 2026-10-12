@@ -1,5 +1,6 @@
 "use client";
 
+import { BracketsCurlyIcon, ListBulletsIcon, PlusIcon, XIcon } from "@phosphor-icons/react";
 import { useActionState, useState } from "react";
 import { saveRecord } from "./actions";
 
@@ -56,23 +57,23 @@ export function RecordForm({
   const payload = raw ?? JSON.stringify(data);
 
   return (
-    <form action={action} className="space-y-6">
+    <form action={action} className="panel overflow-hidden">
       <input type="hidden" name="data" value={payload} />
 
-      <div className="flex flex-wrap items-center justify-between gap-3">
+      <div className="panel-head bg-[var(--surface-2)]">
         {recordKey === null ? (
           <label className="block">
             <span className="field-label">Key</span>
             <input name="key" required className="field field-mono w-72" placeholder="unique id" />
           </label>
         ) : (
-          <p className="text-sm text-[var(--ink-3)]">
-            Key <code className="pill">{recordKey}</code>
+          <p className="flex min-w-0 items-center gap-2 text-[13px] text-[var(--ink-3)]">
+            Key <code className="field-mono truncate rounded-md bg-[var(--surface)] px-2 py-0.5 text-[var(--ink-2)] shadow-[var(--shadow-sm)]">{recordKey}</code>
           </p>
         )}
         <button
           type="button"
-          className="btn btn-secondary"
+          className="btn btn-secondary btn-sm"
           onClick={() => {
             if (raw === null) setRaw(JSON.stringify(data, null, 2));
             else if (!rawError) {
@@ -84,12 +85,13 @@ export function RecordForm({
           }}
           disabled={raw !== null && Boolean(rawError)}
         >
+          {raw === null ? <BracketsCurlyIcon size={14} aria-hidden="true" /> : <ListBulletsIcon size={14} aria-hidden="true" />}
           {raw === null ? "Edit as JSON" : "Back to fields"}
         </button>
       </div>
 
       {raw !== null ? (
-        <div>
+        <div className="p-4">
           <textarea
             rows={30}
             value={raw}
@@ -100,7 +102,7 @@ export function RecordForm({
           {rawError ? <p className="mt-1 text-sm text-[var(--accent)]">{rawError}</p> : null}
         </div>
       ) : (
-        <div className="panel divide-y divide-[var(--rule-soft)]">
+        <div className="divide-y divide-[var(--rule)]">
           {Object.entries(data).map(([name, value]) => (
             <Field
               key={`${name}-${version}`}
@@ -116,7 +118,7 @@ export function RecordForm({
               }}
             />
           ))}
-          <div className="flex flex-wrap items-end gap-3 p-4">
+          <div className="flex flex-wrap items-end gap-3 bg-[var(--surface-2)] p-4">
             <label className="block">
               <span className="field-label">New field</span>
               <input value={newName} onChange={(e) => setNewName(e.target.value)} className="field w-56" placeholder="name" />
@@ -132,32 +134,27 @@ export function RecordForm({
               type="button"
               className="btn btn-secondary"
               disabled={!newName.trim() || newName.trim() in data}
+              aria-label="Add field"
               onClick={() => {
                 set(newName.trim(), blank[newKind]);
                 setNewName("");
               }}
             >
-              Add field
+              <PlusIcon size={14} weight="bold" aria-hidden="true" /> Add field
             </button>
           </div>
         </div>
       )}
 
-      {state.error ? (
-        <p role="alert" className="text-sm text-[var(--accent)]">
-          {state.error}
-        </p>
-      ) : null}
-      {invalid.length ? (
-        <p className="text-sm text-[var(--accent)]">Fix the JSON in: {invalid.join(", ")}</p>
-      ) : null}
-      <button
-        type="submit"
-        disabled={pending || invalid.length > 0 || Boolean(rawError)}
-        className="btn btn-primary"
-      >
-        {pending ? "Saving…" : "Save record"}
-      </button>
+      {/* Stays in reach however long the record is. */}
+      <div className="sticky bottom-0 flex flex-wrap items-center justify-between gap-3 border-t border-[var(--rule)] bg-[color-mix(in_srgb,var(--surface)_92%,transparent)] px-4 py-3 backdrop-blur">
+        <div className="text-sm text-[var(--accent)]" role="alert">
+          {state.error ?? (invalid.length ? `Fix the JSON in: ${invalid.join(", ")}` : null)}
+        </div>
+        <button type="submit" disabled={pending || invalid.length > 0 || Boolean(rawError)} className="btn btn-primary">
+          {pending ? "Saving…" : "Save record"}
+        </button>
+      </div>
     </form>
   );
 }
@@ -247,18 +244,21 @@ function Field({
   }
 
   return (
-    <div className="grid gap-2 p-4 md:grid-cols-[12rem_1fr]">
-      <div>
-        <p className="field-mono break-all text-[var(--ink-2)]">{name}</p>
-        <p className="text-xs text-[var(--ink-mute)]">
-          {kind === "list" ? "one per line" : kind}
-          {" · "}
-          <button type="button" onClick={onRemove} className="text-[var(--accent)] hover:underline">
-            remove
-          </button>
-        </p>
+    <div className="group grid gap-2 px-4 py-3.5 md:grid-cols-[13rem_minmax(0,1fr)_auto] md:items-start">
+      <div className="pt-1.5">
+        <p className="field-mono break-all text-[12.5px] font-medium text-[var(--ink)]">{name}</p>
+        <p className="mt-0.5 text-[11px] text-[var(--ink-mute)]">{kind === "list" ? "list · one per line" : kind}</p>
       </div>
       <div>{input}</div>
+      <button
+        type="button"
+        onClick={onRemove}
+        className="btn btn-ghost btn-sm !px-2 text-[var(--ink-mute)] opacity-60 group-hover:opacity-100"
+        aria-label={`Remove ${name}`}
+        title="Remove field"
+      >
+        <XIcon size={14} aria-hidden="true" />
+      </button>
     </div>
   );
 }

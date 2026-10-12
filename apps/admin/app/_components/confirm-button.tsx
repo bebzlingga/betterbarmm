@@ -13,7 +13,7 @@ export function ConfirmButton({
   return (
     <button
       type="submit"
-      className={`btn ${variant === "danger" ? "btn-danger" : "btn-secondary"}`}
+      className={`btn ${variant === "danger" ? "btn-danger" : "btn-secondary btn-sm"}`}
       onClick={(event) => {
         if (!window.confirm(message)) event.preventDefault();
       }}

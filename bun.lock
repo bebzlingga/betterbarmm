@@ -32,6 +32,7 @@
       "dependencies": {
         "@betterbarmm/db": "workspace:*",
         "@betterbarmm/ui": "workspace:*",
+        "@phosphor-icons/react": "^2.1.10",
         "@supabase/ssr": "^0.12.7",
         "@supabase/supabase-js": "^2.117.3",
         "next": "16.2.6",

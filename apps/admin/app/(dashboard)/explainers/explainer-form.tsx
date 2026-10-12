@@ -15,8 +15,8 @@ export function ExplainerForm({ explainer }: { explainer?: Explainer }) {
   const [preview, setPreview] = useState(false);
 
   return (
-    <form action={action} className="grid gap-6 xl:grid-cols-[1fr_18rem]">
-      <div className="space-y-5">
+    <form action={action} className="grid items-start gap-6 xl:grid-cols-[minmax(0,1fr)_19rem]">
+      <div className="panel space-y-5 p-5">
         <label className="block">
           <span className="field-label">Title</span>
           <input
@@ -24,7 +24,7 @@ export function ExplainerForm({ explainer }: { explainer?: Explainer }) {
             required
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className="field text-base"
+            className="field !text-[1.05rem] font-medium"
           />
         </label>
         <label className="block">
@@ -47,9 +47,14 @@ export function ExplainerForm({ explainer }: { explainer?: Explainer }) {
         <div>
           <div className="mb-1.5 flex items-center justify-between">
             <span className="field-label mb-0">Body (Markdown)</span>
-            <button type="button" onClick={() => setPreview(!preview)} className="text-xs font-semibold text-[var(--accent)]">
-              {preview ? "Edit" : "Preview"}
-            </button>
+            <div className="inline-flex rounded-lg bg-[var(--surface-2)] p-0.5 text-xs font-medium">
+              <button type="button" onClick={() => setPreview(false)} className={`rounded-md px-2.5 py-1 ${!preview ? "bg-[var(--surface)] shadow-[var(--shadow-sm)]" : "text-[var(--ink-3)]"}`}>
+                Write
+              </button>
+              <button type="button" onClick={() => setPreview(true)} className={`rounded-md px-2.5 py-1 ${preview ? "bg-[var(--surface)] shadow-[var(--shadow-sm)]" : "text-[var(--ink-3)]"}`}>
+                Preview
+              </button>
+            </div>
           </div>
           {/* The textarea stays mounted while previewing, so the form still submits its value. */}
           <textarea
@@ -59,15 +64,16 @@ export function ExplainerForm({ explainer }: { explainer?: Explainer }) {
             onChange={(e) => setBody(e.target.value)}
             className={`field field-mono ${preview ? "hidden" : ""}`}
           />
-          {preview ? <Markdown source={body} className="prose-admin panel min-h-64 p-5" /> : null}
+          {preview ? <Markdown source={body} className="prose-admin min-h-64 rounded-[0.625rem] border border-[var(--rule-strong)] p-5" /> : null}
           <p className="mt-1 text-xs text-[var(--ink-3)]">
             ## heading, ### subheading, **bold**, *italic*, - list, 1. list, &gt; quote, [link](https://…)
           </p>
         </div>
       </div>
 
-      <aside className="space-y-5">
-        <div className="panel space-y-4 p-4">
+      <aside className="space-y-5 xl:sticky xl:top-24">
+        <div className="panel space-y-4 p-5">
+          <p className="panel-title">Publishing</p>
           <label className="block">
             <span className="field-label">Status</span>
             <select name="status" defaultValue={explainer?.status ?? "draft"} className="field">

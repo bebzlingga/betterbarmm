@@ -1,5 +1,7 @@
 import { EXPLAINER_CATEGORIES, categoryLabel, type Explainer } from "@betterbarmm/db";
+import { ArticleIcon, PlusIcon } from "@phosphor-icons/react/ssr";
 import Link from "next/link";
+import { EmptyState, PageHeader, ago } from "../../_components/ui";
 import { requireEditor } from "../../_lib/auth";
 
 export default async function ExplainersPage({
@@ -18,81 +20,103 @@ export default async function ExplainersPage({
   if (error) throw new Error(error.message);
   const explainers = (data ?? []) as Explainer[];
 
+  const tab = (value: string | undefined, label: string) => {
+    const params = new URLSearchParams(Object.entries({ status: value, category, tag }).filter((e): e is [string, string] => Boolean(e[1])));
+    const on = (status ?? undefined) === value;
+    return (
+      <Link
+        key={label}
+        href={params.size ? `/explainers?${params}` : "/explainers"}
+        aria-current={on ? "page" : undefined}
+        className={`rounded-md px-3 py-1.5 text-[13px] font-medium transition ${on ? "bg-[var(--surface)] text-[var(--ink)] shadow-[var(--shadow-sm)]" : "text-[var(--ink-3)] hover:text-[var(--ink)]"}`}
+      >
+        {label}
+      </Link>
+    );
+  };
+
   return (
-    <div className="space-y-6">
-      <header className="flex flex-wrap items-end justify-between gap-4">
-        <div>
-          <p className="eyebrow">Content</p>
-          <h1 className="mt-2 text-3xl font-bold tracking-tight">Explainers</h1>
+    <div>
+      <PageHeader
+        title="Explainers"
+        description="Short articles on www, written in the admin. Published ones appear on the site within a minute."
+        actions={
+          <Link href="/explainers/new" className="btn btn-primary">
+            <PlusIcon size={15} weight="bold" aria-hidden="true" /> New explainer
+          </Link>
+        }
+      />
+
+      <div className="panel overflow-hidden">
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--rule)] p-3">
+          <div className="inline-flex rounded-lg bg-[var(--surface-2)] p-1">
+            {tab(undefined, "All")}
+            {tab("published", "Published")}
+            {tab("draft", "Drafts")}
+          </div>
+          <form className="flex flex-wrap gap-2">
+            {status ? <input type="hidden" name="status" value={status} /> : null}
+            <select name="category" defaultValue={category ?? ""} className="field !w-auto">
+              <option value="">Any category</option>
+              {EXPLAINER_CATEGORIES.map((c) => (
+                <option key={c.value} value={c.value}>
+                  {c.label}
+                </option>
+              ))}
+            </select>
+            <input name="tag" defaultValue={tag} placeholder="Tag" className="field !w-36" />
+            <button type="submit" className="btn btn-secondary">Filter</button>
+          </form>
         </div>
-        <Link href="/explainers/new" className="btn btn-primary">
-          New explainer
-        </Link>
-      </header>
 
-      <form className="flex flex-wrap gap-3">
-        <select name="status" defaultValue={status ?? ""} className="field w-auto">
-          <option value="">Any status</option>
-          <option value="published">Published</option>
-          <option value="draft">Draft</option>
-        </select>
-        <select name="category" defaultValue={category ?? ""} className="field w-auto">
-          <option value="">Any category</option>
-          {EXPLAINER_CATEGORIES.map((c) => (
-            <option key={c.value} value={c.value}>
-              {c.label}
-            </option>
-          ))}
-        </select>
-        <input name="tag" defaultValue={tag} placeholder="Tag" className="field w-40" />
-        <button type="submit" className="btn btn-secondary">
-          Filter
-        </button>
-      </form>
-
-      <div className="panel overflow-x-auto">
-        <table className="table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Category</th>
-              <th>Tags</th>
-              <th>Status</th>
-              <th>Updated</th>
-            </tr>
-          </thead>
-          <tbody>
-            {explainers.map((e) => (
-              <tr key={e.id}>
-                <td>
-                  <Link href={`/explainers/${e.id}`} className="font-semibold hover:underline">
-                    {e.title}
-                  </Link>
-                  <div className="text-xs text-[var(--ink-3)]">/{e.slug}</div>
-                </td>
-                <td>{categoryLabel(e.category)}</td>
-                <td className="space-x-1">
-                  {e.tags.map((t) => (
-                    <Link key={t} href={`/explainers?tag=${encodeURIComponent(t)}`} className="pill">
-                      {t}
-                    </Link>
-                  ))}
-                </td>
-                <td>
-                  <span className={`pill ${e.status === "published" ? "pill-live" : ""}`}>{e.status}</span>
-                </td>
-                <td className="whitespace-nowrap text-[var(--ink-3)]">{new Date(e.updated_at).toLocaleDateString()}</td>
-              </tr>
-            ))}
-            {explainers.length === 0 ? (
-              <tr>
-                <td colSpan={5} className="py-10 text-center text-[var(--ink-3)]">
-                  No explainers{status || category || tag ? " match these filters" : " yet"}.
-                </td>
-              </tr>
-            ) : null}
-          </tbody>
-        </table>
+        {explainers.length ? (
+          <div className="overflow-x-auto">
+            <table className="table">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Category</th>
+                  <th>Tags</th>
+                  <th>Status</th>
+                  <th className="text-right">Updated</th>
+                </tr>
+              </thead>
+              <tbody>
+                {explainers.map((e) => (
+                  <tr key={e.id}>
+                    <td>
+                      <Link href={`/explainers/${e.id}`} className="font-medium hover:text-[var(--accent)]">
+                        {e.title}
+                      </Link>
+                      <div className="field-mono mt-0.5 text-[11.5px] text-[var(--ink-mute)]">/explainers/{e.slug}</div>
+                    </td>
+                    <td className="text-[var(--ink-2)]">{categoryLabel(e.category)}</td>
+                    <td>
+                      <div className="flex flex-wrap gap-1">
+                        {e.tags.map((t) => (
+                          <Link key={t} href={`/explainers?tag=${encodeURIComponent(t)}`} className="pill hover:text-[var(--ink)]">
+                            #{t}
+                          </Link>
+                        ))}
+                      </div>
+                    </td>
+                    <td>
+                      <span className={`pill ${e.status === "published" ? "pill-good" : "pill-warn"}`}>
+                        <span className="size-1.5 rounded-full bg-current" aria-hidden="true" />
+                        {e.status === "published" ? "Published" : "Draft"}
+                      </span>
+                    </td>
+                    <td className="whitespace-nowrap text-right text-[var(--ink-3)]">{ago(e.updated_at)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : (
+          <EmptyState icon={ArticleIcon} title={status || category || tag ? "No explainers match" : "No explainers yet"}>
+            {status || category || tag ? "Clear a filter to see more." : "Write the first one: it appears on betterbarmm.com/explainers once published."}
+          </EmptyState>
+        )}
       </div>
     </div>
   );

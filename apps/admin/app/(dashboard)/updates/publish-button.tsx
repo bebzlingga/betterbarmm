@@ -1,5 +1,6 @@
 "use client";
 
+import { RocketLaunchIcon } from "@phosphor-icons/react";
 import { useActionState } from "react";
 import { publishNow, type PublishState } from "./actions";
 
@@ -9,6 +10,7 @@ export function PublishButton() {
   return (
     <form action={action} className="flex flex-col items-end gap-1">
       <button type="submit" className="btn btn-secondary" disabled={pending}>
+        <RocketLaunchIcon size={15} aria-hidden="true" />
         {pending ? "Starting…" : "Publish approved now"}
       </button>
       {state.message ? (

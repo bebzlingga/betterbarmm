@@ -33,35 +33,37 @@ export const when = (iso: string) =>
 export function HistoryPanel({ revisions }: { revisions: Revision[] }) {
   return (
     <section className="panel">
-      <h2 className="border-b border-[var(--rule-soft)] px-4 py-3 font-semibold">History</h2>
+      <div className="panel-head">
+        <h2 className="panel-title">History</h2>
+        <span className="pill">{revisions.length}</span>
+      </div>
       {revisions.length ? (
-        <ol className="divide-y divide-[var(--rule-soft)] text-sm">
+        <ol className="relative px-4 py-3 text-sm">
           {revisions.map((revision, i) => (
-            <li key={revision.id} className="flex flex-wrap items-center justify-between gap-3 px-4 py-3">
-              <div>
-                <p className="font-medium">{describeChange(revision)}</p>
-                <p className="text-xs text-[var(--ink-3)]">
-                  {when(revision.changed_at)} · {revision.changed_by_email || "unknown editor"}
-                </p>
-              </div>
+            <li key={revision.id} className="relative border-l border-[var(--rule)] pb-4 pl-5 last:pb-1">
+              <span
+                className={`absolute -left-[5px] top-1.5 size-[9px] rounded-full border-2 border-[var(--surface)] ${i === 0 ? "bg-[var(--accent)]" : "bg-[var(--rule-strong)]"}`}
+                aria-hidden="true"
+              />
+              <p className="font-medium">{describeChange(revision)}</p>
+              <p className="mt-0.5 text-xs text-[var(--ink-3)]">
+                {when(revision.changed_at)} · {revision.changed_by_email || "unknown editor"}
+              </p>
               {i > 0 ? (
-                <form action={restoreRevision.bind(null, revision.id)}>
-                  <ConfirmButton
-                    message="Restore this version? The current version stays in the history."
-                    variant="secondary"
-                  >
+                <form action={restoreRevision.bind(null, revision.id)} className="mt-2">
+                  <ConfirmButton message="Restore this version? The current version stays in the history." variant="secondary">
                     {revision.action === "delete" ? "Restore before deletion" : "Restore this version"}
                   </ConfirmButton>
                 </form>
               ) : (
-                <span className="pill">current</span>
+                <span className="pill pill-good mt-2">Current</span>
               )}
             </li>
           ))}
         </ol>
       ) : (
-        <p className="px-4 py-6 text-sm text-[var(--ink-3)]">
-          No edits yet. Changes made here are recorded from now on; data loaded by <code>bun db:seed</code> is not.
+        <p className="px-4 py-6 text-sm leading-6 text-[var(--ink-3)]">
+          No edits yet. Changes made here are recorded from now on; data loaded by <code className="field-mono">bun db:seed</code> is not.
         </p>
       )}
     </section>

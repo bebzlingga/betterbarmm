@@ -1,8 +1,9 @@
 import { findCollection, workspaceLabel, type Revision } from "@betterbarmm/db";
-import Link from "next/link";
+import { CheckCircleIcon, TrashIcon } from "@phosphor-icons/react/ssr";
 import { notFound } from "next/navigation";
 import { ConfirmButton } from "../../../../../_components/confirm-button";
 import { HistoryPanel } from "../../../../../_components/history-panel";
+import { PageHeader } from "../../../../../_components/ui";
 import { requireEditor } from "../../../../../_lib/auth";
 import { deleteRecord } from "../../../actions";
 import { RecordForm } from "../../../record-form";
@@ -70,29 +71,40 @@ export default async function EditRecordPage({
 
   const base = `/data/${workspace}/${collection}`;
   return (
-    <div className="space-y-6">
-      <header className="flex flex-wrap items-end justify-between gap-4">
-        <div>
-          <Link href={base} className="text-sm text-[var(--ink-3)] hover:underline">
-            ← {workspaceLabel(workspace)} / {def.label}
-          </Link>
-          <h1 className="mt-2 max-w-4xl text-2xl font-bold tracking-tight">{title}</h1>
-          {saved ? <p className="mt-1 text-sm text-[var(--positive)]">Saved.</p> : null}
-        </div>
-        {key ? (
-          <form action={deleteRecord.bind(null, workspace, collection, key)}>
-            <ConfirmButton message={`Delete "${title}"? You can restore it later from Activity.`}>Delete</ConfirmButton>
-          </form>
+    <div>
+      <PageHeader
+        crumbs={[{ label: "Data" }, { label: workspaceLabel(workspace) }, { label: def.label, href: base }]}
+        title={<span className="block max-w-4xl">{title}</span>}
+        actions={
+          key ? (
+            <form action={deleteRecord.bind(null, workspace, collection, key)}>
+              <ConfirmButton message={`Delete "${title}"? You can restore it later from Activity.`}>
+                <TrashIcon size={15} aria-hidden="true" /> Delete
+              </ConfirmButton>
+            </form>
+          ) : null
+        }
+      >
+        {saved ? (
+          <p className="mt-4 inline-flex items-center gap-2 rounded-lg bg-[var(--good-soft)] px-3 py-2 text-sm text-[var(--good)]">
+            <CheckCircleIcon size={16} weight="fill" aria-hidden="true" /> Saved. It goes live at the next hourly publish.
+          </p>
         ) : null}
-      </header>
-      <RecordForm
-        key={updatedAt}
-        workspace={workspace}
-        collection={collection}
-        recordKey={key ?? null}
-        initial={initial}
-      />
-      {key ? <HistoryPanel revisions={revisions} /> : null}
+      </PageHeader>
+      <div className={key ? "grid items-start gap-6 xl:grid-cols-[minmax(0,1fr)_20rem]" : ""}>
+        <RecordForm
+          key={updatedAt}
+          workspace={workspace}
+          collection={collection}
+          recordKey={key ?? null}
+          initial={initial}
+        />
+        {key ? (
+          <div className="xl:sticky xl:top-24">
+            <HistoryPanel revisions={revisions} />
+          </div>
+        ) : null}
+      </div>
     </div>
   );
 }
