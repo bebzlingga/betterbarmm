@@ -18,6 +18,9 @@ const nextConfig: NextConfig = {
 	// My Area reads the procurement file from disk on the server.
 	outputFileTracingIncludes: {
 		'/my-area/**': ['../../datasets/procurement/philgeps.json'],
+		'/this-week/**': ['../../datasets/procurement/philgeps.json'],
+		'/this-week': ['../../datasets/procurement/philgeps.json'],
+		'/api/search': ['../../datasets/procurement/philgeps.json'],
 	},
 }
 

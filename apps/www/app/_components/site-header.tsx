@@ -10,7 +10,7 @@ import { EASE, Magnetic, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo,
 import { ThemeToggle } from './theme-toggle'
 
 type SiteHeaderProps = {
-	activeItem?: 'discover' | 'my-area' | 'explainers' | 'jo' | 'about' | 'contribute'
+	activeItem?: 'discover' | 'this-week' | 'my-area' | 'explainers' | 'jo' | 'about' | 'contribute'
 	/**
 	 * Sit over the page rather than on top of it.
 	 *
@@ -43,6 +43,7 @@ const workspaces = [
 ] as const
 
 const secondaryLinks = [
+	{ key: 'this-week', href: '/this-week', label: 'This week' },
 	{ key: 'my-area', href: '/my-area', label: 'My area' },
 	{ key: 'explainers', href: '/explainers', label: 'Explainers' },
 	{ key: 'about', href: '/about', label: 'About' },
