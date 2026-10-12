@@ -3,6 +3,8 @@ import { BrandLogo } from './brand-logo'
 import { LineReveal, Rise, Stagger, StaggerItem } from './motion'
 import { ReportErrorLink } from './report-error'
 
+const SHOW_REPORT_ERROR = false
+
 export type FooterLink = { href: string; label: string }
 
 /**
@@ -265,12 +267,15 @@ export function SiteFooter({
 					</Stagger>
 				</div>
 
-				{/* Every page on the estate can be corrected by the people reading it. */}
-				<div className='mt-16 lg:mt-20'>
-					<ReportErrorLink className='text-[14px] font-semibold text-[var(--ink)] transition hover:text-[var(--brass)]' />
-				</div>
+				{/* Every page on the estate can be corrected by the people reading it.
+				    Hidden for now; flip SHOW_REPORT_ERROR to bring it back. */}
+				{SHOW_REPORT_ERROR ? (
+					<div className='mt-16 lg:mt-20'>
+						<ReportErrorLink className='text-[14px] font-semibold text-[var(--ink)] transition hover:text-[var(--brass)]' />
+					</div>
+				) : null}
 
-				<div className='mt-8 flex flex-col justify-between gap-2 border-t border-[var(--rule)] pt-6 font-mono text-[10.5px] uppercase tracking-[0.12em] text-[var(--ink-mute)] sm:flex-row sm:items-center'>
+				<div className={`${SHOW_REPORT_ERROR ? 'mt-8' : 'mt-16 lg:mt-20'} flex flex-col justify-between gap-2 border-t border-[var(--rule)] pt-6 font-mono text-[10.5px] uppercase tracking-[0.12em] text-[var(--ink-mute)] sm:flex-row sm:items-center`}>
 					<p>2026 betterbarmm.com — public domain unless otherwise specified</p>
 					<p>
 						{bottomRight ?? (
