@@ -78,6 +78,12 @@ export default async function MemberProfilePage({ params }: { params: Promise<{ 
 					/>
 				</Reveal>
 			</div>
+			<div className='mt-12 text-[13px] text-[var(--ink-3)]'>
+				<a href={`/members/${slug}/feed.xml`} className='rule-link font-semibold text-[var(--ink)]'>
+					Follow {member.displayName}&rsquo;s measures by RSS
+				</a>{' '}
+				· each time a bill or resolution they filed moves.
+			</div>
 		</section>
 	)
 }

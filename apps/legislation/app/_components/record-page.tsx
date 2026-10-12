@@ -47,6 +47,18 @@ export function recordMetadata(category: CategorySlug, raw: string): Metadata {
  * resolution indexes — because the page is the same page each time: look the
  * measure up, 404 if the number names nothing, and hand it to the article.
  */
+/** A feed link, for a reader who wants to hear when this moves. */
+export function FollowFeed({ href, what }: { href: string; what: string }) {
+	return (
+		<div className='bb-container pb-16 text-[13px] text-[var(--ink-3)]'>
+			<a href={href} className='rule-link font-semibold text-[var(--ink)]'>
+				Follow {what} by RSS
+			</a>{' '}
+			· each time Parliament records a new stage. Paste the link into a feed reader, or an RSS-to-email service for alerts by email.
+		</div>
+	)
+}
+
 export function RecordPage({ category, number }: { category: CategorySlug; number: string }) {
 	const record = getRecord(category, parseRecordNumber(number))
 
@@ -58,5 +70,10 @@ export function RecordPage({ category, number }: { category: CategorySlug; numbe
 		getMembersDataset().members.map((member) => [member.rosterName.toUpperCase(), member.slug]),
 	)
 
-	return <RecordArticle record={record} memberSlugs={memberSlugs} />
+	return (
+		<>
+			<RecordArticle record={record} memberSlugs={memberSlugs} />
+			{category === 'bills' ? <FollowFeed href={`/bills/${record.number}/feed.xml`} what='this bill' /> : null}
+		</>
+	)
 }

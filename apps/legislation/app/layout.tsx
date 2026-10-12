@@ -28,6 +28,8 @@ export const metadata: Metadata = {
 	},
 	description: DESCRIPTION,
 	applicationName: 'BetterBARMM Legislation',
+	// Every bill and resolution as it moves; per-bill and per-member feeds hang off their pages.
+	alternates: { types: { 'application/rss+xml': '/feed.xml' } },
 
 	/* The estate is one site across four addresses, so every card names the
 	   estate and then the workspace. `openGraph.images` is left unset: the
