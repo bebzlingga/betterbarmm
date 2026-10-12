@@ -180,7 +180,7 @@ export function RankBars({
 								</span>
 								<span className='num shrink-0 text-[var(--ink-2)]'>{show(item.value)}</span>
 							</div>
-							<div className='mt-1 h-2 bg-[var(--paper-2)]'>
+							<div className='mt-1 h-2 bg-[var(--paper)]'>
 								<div className='h-full bg-[var(--accent)]' style={{ width: `${(item.value / max) * 100}%` }} />
 							</div>
 						</li>

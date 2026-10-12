@@ -43,7 +43,7 @@ export default function ProcurementHome() {
 			/>
 
 			{openNotices.length ? (
-				<section className='bb-container bb-section !pb-0'>
+				<section className='bb-container bb-section'>
 					<div className='flex flex-wrap items-end justify-between gap-x-10 gap-y-3'>
 						<div>
 							<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Open for bids</h2>
@@ -77,7 +77,8 @@ export default function ProcurementHome() {
 				</section>
 			) : null}
 
-			<section className='bb-container bb-section grid gap-x-20 gap-y-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]'>
+			<section className='bg-[var(--paper-2)]'>
+			<div className='bb-container bb-section grid gap-x-20 gap-y-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]'>
 				<RankBars
 					title='Top 10 suppliers'
 					note='By the amount of contracts awarded to them.'
@@ -103,10 +104,11 @@ export default function ProcurementHome() {
 						.slice(0, 10)
 						.map((s) => ({ label: s.name, value: s.awards, href: `/notices?supplier=${encodeURIComponent(s.name)}` }))}
 				/>
+			</div>
 			</section>
 
 			<section className='bb-container pb-[clamp(3.75rem,7vw,6.5rem)]'>
-				<h2 className='mb-8 border-t border-[var(--rule)] pt-12 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Every office</h2>
+				<h2 className='mb-8 pt-[clamp(3.75rem,7vw,6.5rem)] text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Every office</h2>
 				<EntityExplorer rows={rows} years={years} />
 				<p className='mt-10 text-[13px] leading-6 text-[var(--ink-3)]'>
 					An approved budget is what an office set aside for a purchase, not what it paid. Awards are only those PhilGEPS
