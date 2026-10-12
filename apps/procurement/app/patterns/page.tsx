@@ -18,7 +18,7 @@ export const metadata: Metadata = {
    ============================================================ */
 
 const H2 = 'text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
-const LEAD = 'text-[15px] leading-7 text-[var(--ink-2)] lg:pt-7'
+const LEAD = 'text-[14px] leading-[1.7] text-[var(--ink-2)] lg:pt-7'
 const P = 'mt-4 max-w-[46rem] text-[15px] leading-7 text-[var(--ink-2)]'
 const TH = 'py-2.5 pr-6 text-[11.5px] font-semibold uppercase tracking-[0.06em] text-[var(--ink-3)] last:pr-0'
 const TD = 'py-3 pr-6 align-top last:pr-0'
