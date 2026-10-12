@@ -40,14 +40,12 @@ function Pattern({
 	tint,
 	lead,
 	also,
-	caption,
 	children,
 }: {
 	i: number
 	tint?: boolean
 	lead: React.ReactNode
 	also: React.ReactNode
-	caption?: string
 	children: React.ReactNode
 }) {
 	const p = PATTERNS[i]!
@@ -71,7 +69,6 @@ function Pattern({
 					</div>
 				</header>
 				<div className='mt-12'>
-					{caption ? <p className='mb-3 text-[12.5px] font-semibold text-[var(--ink)]'>{caption}</p> : null}
 					{children}
 				</div>
 			</div>
@@ -172,8 +169,7 @@ export default function PatternsPage() {
 				also='An office may simply budget up to the most it can spend without bidding, and many goods are bought in standard lots. The worry is the other reason, a larger need cut to fit under the line.'
 			>
 				<Bunching />
-				<p className='mb-3 mt-14 text-[12.5px] font-semibold text-[var(--ink)]'>The offices with the most notices in that last ₱10,000</p>
-				<div className='overflow-x-auto'>
+				<div className='mt-14 overflow-x-auto'>
 					<table className='w-full min-w-[34rem] border-collapse text-left text-[14px]'>
 						<thead>
 							<tr className='border-b border-[var(--rule)]'>
@@ -214,7 +210,6 @@ export default function PatternsPage() {
 					</>
 				}
 				also='Many will be separate needs, such as catering for different events on the same day, which is why each has to be read.'
-				caption='The 20 largest'
 			>
 				<div className='overflow-x-auto'>
 					<table className='w-full min-w-[44rem] border-collapse text-left text-[14px]'>
