@@ -104,7 +104,7 @@ export function NoticesExplorer({
 
 			<ul className={data ? '' : 'opacity-50'}>
 				{data?.rows.map((n) => (
-					<li key={`${n.ref}-${n.date}`} className='grid gap-x-16 gap-y-2 border-b border-[var(--rule)] py-4 sm:grid-cols-[minmax(0,1fr)_auto]'>
+					<li key={`${n.ref}-${n.date}`} className='grid gap-x-28 gap-y-2 border-b border-[var(--rule)] py-4 sm:grid-cols-[minmax(0,1fr)_auto]'>
 						<div className='min-w-0'>
 							<p className='font-[family-name:var(--font-display)] text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>{n.group}</p>
 							<p className='mt-1 text-[14.5px] font-semibold leading-6 text-[var(--ink)]'>{n.title ?? n.category ?? 'Untitled notice'}</p>
