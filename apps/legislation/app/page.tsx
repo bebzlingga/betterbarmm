@@ -8,6 +8,7 @@ import { PageHeader } from './_components/page-header'
 import { Reveal } from './_components/reveal'
 import { StatBand } from './_components/stat-band'
 import { getCategoryCounts, getDataset, registryGeneratedAt } from './_lib/legislation-data'
+import { getOfficialMeasuresByCategory, type OfficialMeasure } from './_lib/official-measures'
 
 /** The seat-cost section, held back until it is ready to run again. */
 const SHOW_SEAT_COST = false
@@ -23,9 +24,28 @@ export default function HomePage() {
 	// proposed together, and journals are not measures, so neither is added in.
 	const totalRecords =
 		counts.acts + counts.bills + counts['adopted-resolutions'] + counts['proposed-resolutions']
-	const priorityCodes = getDataset('acts').records.filter((record) =>
-		record.types.some((type) => type.value === 'priority_code'),
-	).length
+	const codes = getDataset('acts').records.filter((record) => record.types.some((type) => type.value === 'priority_code'))
+	const priorityCodes = codes.length
+	// "Bangsamoro Civil Service Code of 2021" → "Civil Service", oldest first.
+	const codeNames = [...codes]
+		.sort((a, b) => a.number - b.number)
+		.map((r) => (r.shortTitle || r.title).replace(/^Bangsamoro\s+/i, '').replace(/\s+Code\b.*$/i, ''))
+
+	/* Each kind of measure by the year it was filed (or, for acts and adopted
+	   resolutions, ratified or adopted), 2019 to now. */
+	const yearOf = (m: OfficialMeasure) => {
+		const filed = m.history.map((h) => h.match(/^filed\s*[–—-]\s*\d{1,2}\/\d{1,2}\/(\d{4})/i)?.[1]).find(Boolean)
+		return Number(filed ?? m.dateIso.slice(0, 4)) || null
+	}
+	const thisYear = new Date().getFullYear()
+	const byYear = (category: Parameters<typeof getOfficialMeasuresByCategory>[0]) => {
+		const counts = new Map<number, number>()
+		for (const m of getOfficialMeasuresByCategory(category)) {
+			const y = yearOf(m)
+			if (y && y >= 2019 && y <= thisYear) counts.set(y, (counts.get(y) ?? 0) + 1)
+		}
+		return Array.from({ length: thisYear - 2018 }, (_, i) => ({ year: 2019 + i, value: counts.get(2019 + i) ?? 0 }))
+	}
 
 	const countBillsWhere = (predicate: (status: string) => boolean) =>
 		bills.records.filter((record) => predicate(record.status.toLowerCase())).length
@@ -111,26 +131,31 @@ export default function HomePage() {
 						label: 'Bangsamoro Autonomy Acts',
 						value: counts.acts.toLocaleString(),
 						detail: 'Regional laws ratified since 2019.',
+						series: byYear('acts'),
 					},
 					{
 						label: 'Priority codes',
 						value: priorityCodes.toLocaleString(),
-						detail: 'Administrative, Civil Service, Education, Electoral and Local Governance.',
+						detail: 'The five codes the organic law asked Parliament to pass first.',
+						marks: codeNames,
 					},
 					{
 						label: 'Bills',
 						value: counts.bills.toLocaleString(),
 						detail: 'Every bill filed in the current Parliament.',
+						series: byYear('bills'),
 					},
 					{
 						label: 'Adopted resolutions',
 						value: counts['adopted-resolutions'].toLocaleString(),
 						detail: 'Positions Parliament has formally adopted.',
+						series: byYear('adopted-resolutions'),
 					},
 					{
 						label: 'Proposed resolutions',
 						value: counts['proposed-resolutions'].toLocaleString(),
 						detail: 'Every resolution filed, adopted or not.',
+						series: byYear('proposed-resolutions'),
 					},
 				]}
 			/>

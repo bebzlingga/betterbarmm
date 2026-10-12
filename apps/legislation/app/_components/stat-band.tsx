@@ -4,6 +4,47 @@ export type Stat = {
 	label: string
 	value: string | number
 	detail: string
+	/** Counts by year, drawn as small bars under the figure. */
+	series?: { year: number; value: number }[]
+	/** Or one mark per item, named on hover — for a count of a few named things. */
+	marks?: string[]
+}
+
+/** How many a year: one bar a year, the latest lighter when the year is not over. */
+function Spark({ series }: { series: { year: number; value: number }[] }) {
+	const top = Math.max(...series.map((s) => s.value), 1)
+	const current = new Date().getFullYear()
+	return (
+		<div className='mt-5 max-w-[16rem]' aria-hidden='true'>
+			<div className='flex h-10 items-end gap-[5px]'>
+				{series.map((s) => (
+					<span
+						key={s.year}
+						title={`${s.year}: ${s.value.toLocaleString()}`}
+						className={`flex-1 rounded-t-[2px] bg-[var(--accent)] ${s.year === current ? 'opacity-45' : ''}`}
+						style={{ height: `${Math.max((s.value / top) * 100, 4)}%` }}
+					/>
+				))}
+			</div>
+			<div className='mt-1 flex justify-between text-[10.5px] text-[var(--ink-mute)]'>
+				<span>{series[0]?.year}</span>
+				<span>{series.at(-1)?.year}</span>
+			</div>
+		</div>
+	)
+}
+
+/** One mark per thing counted, each named. */
+function Marks({ marks }: { marks: string[] }) {
+	return (
+		<ul className='mt-5 flex max-w-[16rem] flex-wrap gap-1.5'>
+			{marks.map((m) => (
+				<li key={m} title={m} className='rounded-[3px] bg-[var(--accent)] px-2 py-1 text-[10.5px] font-semibold leading-none text-white'>
+					{m}
+				</li>
+			))}
+		</ul>
+	)
 }
 
 /**
@@ -74,6 +115,7 @@ export function StatFigures({ stats }: { stats: Stat[] }) {
 					<p className='bb-figure-sm mt-4 text-[var(--ink)]'>
 						<Figure value={stat.value} />
 					</p>
+					{stat.series?.length ? <Spark series={stat.series} /> : stat.marks?.length ? <Marks marks={stat.marks} /> : null}
 					{/* A step under the reading size, and held to a measure of its
 					    own. The detail is a caption for the figure above it rather
 					    than prose — at body size in a five-track row it runs to four
