@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "@betterbarmm/ui/styles.css";
+@import "@betterbarmm/editorial/styles.css";
+
+/* The editorial package's components carry utility classes of their own;
+   Tailwind walks out only from this app, so it is pointed there too. */
+@source "../../../packages/editorial/src";
+
+/* ============================================================
+   Procurement workspace
+
+   Nothing of its own beyond the estate's layers: tables, filters
+   and figures, all built from the shared rules.
+   ============================================================ */
+
+/* Phones: everything a step smaller, and a wider margin either side, as
+   in the Local Government workspace. */
+@media (max-width: 639px) {
+  body {
+    zoom: 0.9;
+  }
+
+  .bb-container,
+  .utility-bar > div {
+    padding-inline: 2rem;
+  }
+}

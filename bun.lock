@@ -116,6 +116,22 @@
         "react-dom": "19.2.4",
       },
     },
+    "apps/public-works": {
+      "name": "@betterbarmm/public-works",
+      "version": "0.0.1",
+      "dependencies": {
+        "@betterbarmm/ai": "workspace:*",
+        "@betterbarmm/editorial": "workspace:*",
+        "@betterbarmm/lgu-data": "workspace:*",
+        "@betterbarmm/ui": "workspace:*",
+        "@phosphor-icons/react": "^2.1.10",
+        "@vercel/analytics": "^2.0.1",
+        "motion": "^13.1.1",
+        "next": "16.2.6",
+        "react": "19.2.4",
+        "react-dom": "19.2.4",
+      },
+    },
     "apps/travel": {
       "name": "@betterbarmm/travel",
       "version": "0.0.1",
@@ -308,6 +324,8 @@
     "@betterbarmm/primer-data": ["@betterbarmm/primer-data@workspace:packages/primer-data"],
 
     "@betterbarmm/procurement": ["@betterbarmm/procurement@workspace:apps/procurement"],
+
+    "@betterbarmm/public-works": ["@betterbarmm/public-works@workspace:apps/public-works"],
 
     "@betterbarmm/schemas": ["@betterbarmm/schemas@workspace:packages/schemas"],
 
