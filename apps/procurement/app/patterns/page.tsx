@@ -18,6 +18,7 @@ export const metadata: Metadata = {
    ============================================================ */
 
 const H2 = 'text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
+const LEAD = 'text-[15px] leading-7 text-[var(--ink-2)] lg:pt-7'
 const P = 'mt-4 max-w-[46rem] text-[15px] leading-7 text-[var(--ink-2)]'
 const TH = 'py-2.5 pr-6 text-[11.5px] font-semibold uppercase tracking-[0.06em] text-[var(--ink-3)] last:pr-0'
 const TD = 'py-3 pr-6 align-top last:pr-0'
@@ -66,15 +67,20 @@ export default function PatternsPage() {
 
 			<div className='bb-container bb-section [&>section+section]:mt-24'>
 				<section>
-					<p className='bb-label'>01</p>
-					<h2 className={`${H2} mt-3`}>Budgets bunched under the bidding threshold</h2>
-					<p className={P}>
-						Under the old procurement law most offices here could skip public bidding for a purchase of up to{' '}
-						<strong>₱1,000,000</strong> (small value procurement). If budgets were set by need alone, about as many
-						would fall just above that line as just below it. Instead <strong>{n(bunching.justBelow)}</strong> notices
-						sit in the ₱100,000 below it and <strong>{n(bunching.justAbove)}</strong> in the ₱100,000 above, and{' '}
-						<strong>{n(bunching.lastPercent)}</strong> fall between ₱990,000 and ₱999,999.
-					</p>
+					{/* The claim left, what it rests on right. */}
+					<header className='grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]'>
+						<div>
+							<p className='bb-label'>01</p>
+							<h2 className={`${H2} mt-3`}>Budgets bunched under the bidding threshold</h2>
+						</div>
+						<p className={LEAD}>
+							Under the old procurement law most offices here could skip public bidding for a purchase of up to{' '}
+							<strong>₱1,000,000</strong> (small value procurement). If budgets were set by need alone, about as many
+							would fall just above that line as just below it. Instead <strong>{n(bunching.justBelow)}</strong> notices
+							sit in the ₱100,000 below it and <strong>{n(bunching.justAbove)}</strong> in the ₱100,000 above, and{' '}
+							<strong>{n(bunching.lastPercent)}</strong> fall between ₱990,000 and ₱999,999.
+						</p>
+					</header>
 					<Bunching />
 					<p className={P}>
 						Innocent reasons: an office may simply budget up to the most it can spend without bidding, and many goods
@@ -108,15 +114,20 @@ export default function PatternsPage() {
 				</section>
 
 				<section>
-					<p className='bb-label'>02</p>
-					<h2 className={`${H2} mt-3`}>Same office, same item, same day</h2>
-					<p className={P}>
-						Splitting one purchase into several smaller ones to stay under a threshold is prohibited (RA 12009 IRR
-						Sec. 39, as it was under RA 9184). One sign of it is an office posting several notices in the same category
-						on the same day, each under ₱1,000,000, that together pass it. That happens{' '}
-						<strong>{n(sameDayClusters.length)}</strong> times in this record. Many will be separate needs, such as
-						catering for different events, which is why each has to be read. The largest:
-					</p>
+					{/* The claim left, what it rests on right. */}
+					<header className='grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]'>
+						<div>
+							<p className='bb-label'>02</p>
+							<h2 className={`${H2} mt-3`}>Same office, same item, same day</h2>
+						</div>
+						<p className={LEAD}>
+							Splitting one purchase into several smaller ones to stay under a threshold is prohibited (RA 12009 IRR
+							Sec. 39, as it was under RA 9184). One sign of it is an office posting several notices in the same category
+							on the same day, each under ₱1,000,000, that together pass it. That happens{' '}
+							<strong>{n(sameDayClusters.length)}</strong> times in this record. Many will be separate needs, such as
+							catering for different events, which is why each has to be read. The largest:
+						</p>
+					</header>
 					<div className='mt-6 overflow-x-auto'>
 						<table className='w-full min-w-[40rem] border-collapse text-left text-[14px]'>
 							<thead>
@@ -148,13 +159,18 @@ export default function PatternsPage() {
 				</section>
 
 				<section>
-					<p className='bb-label'>03</p>
-					<h2 className={`${H2} mt-3`}>One supplier, most of an office&rsquo;s contracts</h2>
-					<p className={P}>
-						Competitive bidding should spread contracts across suppliers over time. Below are the offices with at least
-						10 recorded awards where a single supplier won half or more of them. A specialised need, a remote town
-						with one supplier, or a framework contract can all explain it; so can bidding that is not open.
-					</p>
+					{/* The claim left, what it rests on right. */}
+					<header className='grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]'>
+						<div>
+							<p className='bb-label'>03</p>
+							<h2 className={`${H2} mt-3`}>One supplier, most of an office&rsquo;s contracts</h2>
+						</div>
+						<p className={LEAD}>
+							Competitive bidding should spread contracts across suppliers over time. Below are the offices with at least
+							10 recorded awards where a single supplier won half or more of them. A specialised need, a remote town
+							with one supplier, or a framework contract can all explain it; so can bidding that is not open.
+						</p>
+					</header>
 					<div className='mt-6 overflow-x-auto'>
 						<table className='w-full min-w-[40rem] border-collapse text-left text-[14px]'>
 							<thead>
@@ -190,12 +206,17 @@ export default function PatternsPage() {
 				</section>
 
 				<section>
-					<p className='bb-label'>04</p>
-					<h2 className={`${H2} mt-3`}>Awards above the approved budget</h2>
-					<p className={P}>
-						{`The approved budget is a ceiling: a bid above it is disqualified. Yet ${overBudget.length} notices here carry awards that add up to more. `}Several are close to double their budget, which looks like an amount entered
-						twice at the source rather than an overpayment, but only the office&rsquo;s own records can say.
-					</p>
+					{/* The claim left, what it rests on right. */}
+					<header className='grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]'>
+						<div>
+							<p className='bb-label'>04</p>
+							<h2 className={`${H2} mt-3`}>Awards above the approved budget</h2>
+						</div>
+						<p className={LEAD}>
+							{`The approved budget is a ceiling: a bid above it is disqualified. Yet ${overBudget.length} notices here carry awards that add up to more. `}Several are close to double their budget, which looks like an amount entered
+							twice at the source rather than an overpayment, but only the office&rsquo;s own records can say.
+						</p>
+					</header>
 					<div className='mt-6 overflow-x-auto'>
 						<table className='w-full min-w-[40rem] border-collapse text-left text-[14px]'>
 							<thead>
@@ -228,13 +249,18 @@ export default function PatternsPage() {
 				</section>
 
 				<section>
-					<p className='bb-label'>05</p>
-					<h2 className={`${H2} mt-3`}>Suppliers sharing a name with the blacklist</h2>
-					<p className={P}>
-						The Government Procurement Policy Board keeps a public list of suppliers barred from government contracts for a period. {blacklistedSuppliers.length}{' '}
-						suppliers that won BARMM contracts share a name with an entity on it. A name is not proof it is the same business, and most of these
-						orders came from offices elsewhere in the country; each supplier&rsquo;s page shows the orders and whether any BARMM contract fell inside one.
-					</p>
+					{/* The claim left, what it rests on right. */}
+					<header className='grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]'>
+						<div>
+							<p className='bb-label'>05</p>
+							<h2 className={`${H2} mt-3`}>Suppliers sharing a name with the blacklist</h2>
+						</div>
+						<p className={LEAD}>
+							The Government Procurement Policy Board keeps a public list of suppliers barred from government contracts for a period. {blacklistedSuppliers.length}{' '}
+							suppliers that won BARMM contracts share a name with an entity on it. A name is not proof it is the same business, and most of these
+							orders came from offices elsewhere in the country; each supplier&rsquo;s page shows the orders and whether any BARMM contract fell inside one.
+						</p>
+					</header>
 					<ul className='mt-6 grid gap-x-10 sm:grid-cols-2'>
 						{blacklistedSuppliers.map(({ supplier, entry }) => (
 							<li key={supplier.name} className='flex items-baseline justify-between gap-4 border-t border-[var(--rule)] py-3'>
