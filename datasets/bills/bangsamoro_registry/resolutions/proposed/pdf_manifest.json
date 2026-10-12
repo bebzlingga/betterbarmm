@@ -2,6 +2,10 @@
  "source": "parliament.bangsamoro.gov.ph measure pages",
  "note": "PDF links only. The files are scans with no text layer and are not vendored into this repo.",
  "measures": {
+  "830": {
+   "page": "https://parliament.bangsamoro.gov.ph/proposes-reso-22/resolution-supporting-the-continuing-implementation-of-all-the-signed-peace-agreements-between-the-republic-of-the-philippines-and-the-moro-national-liberation-front/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/PR-830.pdf"
+  },
   "829": {
    "page": "https://parliament.bangsamoro.gov.ph/proposes-reso-22/a-resolution-urging-chief-minister-abdulraof-a-macacua-of-the-bangsamoro-autonomous-region-in-muslim-mindanao-to-undertake-immediate-fuel-supply-and-consumer-relief-measures-to-mitigate-the-impact-of/",
    "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/PR-829.pdf"
@@ -13,6 +17,10 @@
   "827": {
    "page": "https://parliament.bangsamoro.gov.ph/proposes-reso-22/a-resolution-respectfully-urging-the-congress-of-the-philippines-to-review-the-statutory-limits-on-election-expenditures-under-section-13-of-republic-act-no-7166-and-to-consider-appropriate-legislati/",
    "pdf": null
+  },
+  "826": {
+   "page": "https://parliament.bangsamoro.gov.ph/proposes-reso-22/resolution-urging-the-bangsamoro-government-to-facilitate-and-support-the-establishment-of-a-local-health-insurance-office-lhio-in-the-special-geographic-area-sga-under-the-supervision-of-the-phi/",
+   "pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/PR-826.pdf"
   },
   "825": {
    "page": "https://parliament.bangsamoro.gov.ph/proposes-reso-22/a-resolution-urging-all-political-parties-candidates-party-list-groups-and-their-supporters-to-conduct-their-campaigns-for-the-first-regular-bangsamoro-parliamentary-elections-in-a-peaceful-respec/",
