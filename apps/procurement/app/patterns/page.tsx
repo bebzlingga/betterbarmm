@@ -193,7 +193,7 @@ export default function PatternsPage() {
 					<p className='bb-label'>04</p>
 					<h2 className={`${H2} mt-3`}>Awards above the approved budget</h2>
 					<p className={P}>
-						The approved budget is a ceiling: a bid above it is disqualified. Yet {overBudget.length} notices here carry awards
+						The approved budget is a ceiling: a bid above it is disqualified. Yet {`${overBudget.length} notices`} here carry awards
 						that add up to more. Several are close to double their budget, which looks like an amount entered
 						twice at the source rather than an overpayment, but only the office&rsquo;s own records can say.
 					</p>
