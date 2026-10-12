@@ -68,7 +68,7 @@ export default function PatternsPage() {
 			<div className='bb-container bb-section [&>section+section]:mt-24'>
 				<section>
 					{/* The claim left, what it rests on right. */}
-					<header className='grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]'>
+					<header className='mb-12 grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)]'>
 						<div>
 							<p className='bb-label'>01</p>
 							<h2 className={`${H2} mt-3`}>Budgets bunched under the bidding threshold</h2>
@@ -115,7 +115,7 @@ export default function PatternsPage() {
 
 				<section>
 					{/* The claim left, what it rests on right. */}
-					<header className='grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]'>
+					<header className='mb-12 grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)]'>
 						<div>
 							<p className='bb-label'>02</p>
 							<h2 className={`${H2} mt-3`}>Same office, same item, same day</h2>
@@ -160,7 +160,7 @@ export default function PatternsPage() {
 
 				<section>
 					{/* The claim left, what it rests on right. */}
-					<header className='grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]'>
+					<header className='mb-12 grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)]'>
 						<div>
 							<p className='bb-label'>03</p>
 							<h2 className={`${H2} mt-3`}>One supplier, most of an office&rsquo;s contracts</h2>
@@ -207,7 +207,7 @@ export default function PatternsPage() {
 
 				<section>
 					{/* The claim left, what it rests on right. */}
-					<header className='grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]'>
+					<header className='mb-12 grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)]'>
 						<div>
 							<p className='bb-label'>04</p>
 							<h2 className={`${H2} mt-3`}>Awards above the approved budget</h2>
@@ -250,7 +250,7 @@ export default function PatternsPage() {
 
 				<section>
 					{/* The claim left, what it rests on right. */}
-					<header className='grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]'>
+					<header className='mb-12 grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)]'>
 						<div>
 							<p className='bb-label'>05</p>
 							<h2 className={`${H2} mt-3`}>Suppliers sharing a name with the blacklist</h2>
