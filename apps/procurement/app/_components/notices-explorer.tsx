@@ -125,13 +125,13 @@ export function NoticesExplorer({
 									<button type='button' onClick={() => reset(() => setSupplier(a.awardee))} className='rule-link cursor-pointer font-semibold'>
 										{a.awardee}
 									</button>
-									{a.amount != null ? <span className='num'> · {peso(a.amount)}</span> : null}
+									{a.amount != null ? <span className='num font-semibold text-[var(--ink)]'> · {peso(a.amount)}</span> : null}
 									{a.date ? <span className='text-[var(--ink-3)]'> · {longDate(a.date)}</span> : null}
 								</p>
 							))}
 						</div>
 						<div className='sm:text-right'>
-							<p className='num text-[14.5px] text-[var(--ink)]'>{n.abc == null ? '—' : peso(n.abc)}</p>
+							<p className='num text-[14.5px] font-semibold text-[var(--ink)]'>{n.abc == null ? '—' : peso(n.abc)}</p>
 							<p className='mt-1 text-[11.5px] text-[var(--ink-3)]'>{n.status ?? 'Approved budget'}</p>
 						</div>
 					</li>
