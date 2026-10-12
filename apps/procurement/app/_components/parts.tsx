@@ -86,7 +86,7 @@ export function YearBars({ bars, caption, note }: { bars: { year: number; value:
 function Spark({ series, years }: { series: number[]; years: number[] }) {
 	const top = Math.max(...series, 1)
 	return (
-		<div className='mt-4'>
+		<div className='mt-8'>
 			<div className='flex h-12 items-end gap-[3px]' aria-hidden='true'>
 				{series.map((v, i) => (
 					<span
