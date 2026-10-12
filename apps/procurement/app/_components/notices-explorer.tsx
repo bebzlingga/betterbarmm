@@ -149,6 +149,13 @@ export function NoticesExplorer({
 									</button>
 									{a.amount != null ? <span className='num font-semibold text-[var(--ink)]'> · {peso(a.amount)}</span> : null}
 									{a.date ? <span className='text-[var(--ink-3)]'> · {longDate(a.date)}</span> : null}
+									{/* The older PhilGEPS dates a notice by its last update, which can fall after the award. */}
+									{a.date && n.date && a.date < n.date ? (
+										<span className='text-[var(--ink-mute)]' title='The older PhilGEPS dates a notice by when it was last updated, not first posted, so the award can appear to come first.'>
+											{' '}
+											· before the notice&rsquo;s date (last updated)
+										</span>
+									) : null}
 								</p>
 							))}
 						</div>
