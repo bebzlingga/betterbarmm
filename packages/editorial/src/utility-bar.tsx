@@ -28,6 +28,7 @@ export type UtilityLink = { href: string; label: string }
 
 /** The estate's own row, for an app that does not override it. */
 export const ESTATE_LINKS: UtilityLink[] = [
+	{ href: '/search', label: 'Search' },
 	{ href: '/about', label: 'About' },
 	{ href: '/contact', label: 'Contact us' },
 	{ href: 'https://www.facebook.com/betterbarmm', label: 'Follow us on Facebook' },
