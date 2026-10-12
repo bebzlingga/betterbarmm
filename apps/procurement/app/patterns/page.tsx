@@ -58,9 +58,9 @@ function Pattern({
 					<div>
 						<p className='bb-label'>{String(i + 1).padStart(2, '0')}</p>
 						<h2 className='mt-3 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{p.title}</h2>
-						<p className='mt-6 flex items-baseline gap-3'>
-							<span className='num text-[2.75rem] font-extrabold leading-none tracking-[-0.04em] text-[var(--accent)]'>{p.stat}</span>
-							<span className='max-w-[12rem] text-[12.5px] leading-snug text-[var(--ink-3)]'>{p.label}</span>
+						<p className='mt-6'>
+							<span className='num block text-[1.75rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--accent)]'>{p.stat}</span>
+							<span className='mt-1.5 block text-[12.5px] leading-snug text-[var(--ink-3)]'>{p.label}</span>
 						</p>
 					</div>
 					<div className='lg:pt-7'>
@@ -146,10 +146,10 @@ export default function PatternsPage() {
 			/>
 
 			{/* The five at a glance, each a way down to its section. */}
-			<nav aria-label='The five patterns' className='border-b border-[var(--rule)]'>
-				<ol className='bb-container grid grid-cols-2 lg:grid-cols-5'>
-					{PATTERNS.map((p, i) => (
-						<li key={p.id} className='border-[var(--rule)] max-lg:border-b max-lg:odd:border-r max-lg:last:col-span-2 max-lg:last:border-b-0 lg:border-r lg:first:border-l'>
+			<nav aria-label='The patterns' className='border-b border-[var(--rule)]'>
+				<ol className='bb-container grid grid-cols-2 lg:grid-cols-4'>
+					{PATTERNS.slice(0, 4).map((p, i) => (
+						<li key={p.id} className='border-[var(--rule)] max-lg:border-b max-lg:odd:border-r lg:border-r lg:first:border-l'>
 							<a href={`#${p.id}`} className='group flex h-full flex-col px-4 py-5 transition sm:px-5 sm:py-7 hover:bg-[var(--paper-2)]'>
 								<span className='bb-label'>{String(i + 1).padStart(2, '0')}</span>
 								<span className='mt-3 min-h-[2.75em] text-[13px] sm:text-[14px] font-bold leading-snug text-[var(--ink)] group-hover:text-[var(--accent)]'>{p.title}</span>
