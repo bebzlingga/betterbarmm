@@ -179,17 +179,24 @@ export const regionTotals: Totals = (() => {
 
 /** Suppliers by contracts won, largest first. */
 export const suppliers = (() => {
-	const by = new Map<string, { name: string; awards: number; amount: number; entities: Set<number>; last: string | null }>()
+	const by = new Map<
+		string,
+		{ name: string; awards: number; amount: number; entities: Set<number>; last: string | null; byGroup: Map<string, number> }
+	>()
 	for (const n of notices)
 		for (const a of n.awards) {
-			const s = by.get(a.awardee) ?? { name: a.awardee, awards: 0, amount: 0, entities: new Set<number>(), last: null }
+			const s = by.get(a.awardee) ?? { name: a.awardee, awards: 0, amount: 0, entities: new Set<number>(), last: null, byGroup: new Map() }
 			s.awards += 1
 			s.amount += a.amount ?? 0
 			s.entities.add(n.entity)
+			s.byGroup.set(n.group, (s.byGroup.get(n.group) ?? 0) + (a.amount ?? 0) + 1)
 			if (a.date && (!s.last || a.date > s.last)) s.last = a.date
 			by.set(a.awardee, s)
 		}
-	return [...by.values()].sort((x, y) => y.amount - x.amount)
+	// A supplier's category is the group it won the most money in.
+	return [...by.values()]
+		.map(({ byGroup, ...s }) => ({ ...s, group: [...byGroup.entries()].sort((x, y) => y[1] - x[1])[0]?.[0] ?? OTHER }))
+		.sort((x, y) => y.amount - x.amount)
 })()
 
 export type NoticeQuery = {
