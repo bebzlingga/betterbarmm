@@ -78,7 +78,7 @@ export default async function EntityPage({ params }: { params: Promise<{ entity:
 										{name}
 									</a>
 									<span className='num shrink-0 text-right text-[13px] text-[var(--ink-2)]'>
-										{peso(s.amount)}
+										<span className='font-semibold text-[var(--ink)]'>{peso(s.amount)}</span>
 										<span className='block text-[11px] text-[var(--ink-3)]'>{s.awards} {s.awards === 1 ? 'award' : 'awards'}</span>
 									</span>
 								</li>
