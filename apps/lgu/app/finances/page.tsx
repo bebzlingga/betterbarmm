@@ -82,6 +82,11 @@ export default function StatsPage() {
 
 				<div className='mt-10 space-y-2 text-[13px] leading-6 text-[var(--ink-3)]'>
 					<p>
+						<a href='/csv/lgus' className='rule-link font-semibold text-[var(--ink)]' download>
+							Download every unit&rsquo;s figures, every year, as CSV
+						</a>
+					</p>
+					<p>
 						<strong className='font-semibold text-[var(--ink-2)]'>Local taxes and fees</strong> are what the
 						unit raises itself: real property tax, business tax, fees and charges.{' '}
 						<strong className='font-semibold text-[var(--ink-2)]'>NTA share</strong> is BLGF&rsquo;s
