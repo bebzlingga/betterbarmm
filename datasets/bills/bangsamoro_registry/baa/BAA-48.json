@@ -130,7 +130,7 @@
     "note": "Authors are recorded on the origin bill's page. Origin: Bill 136."
   },
   "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
+    "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-48-Mun.-of-Ligawasan-with-metes-and-bounds.pdf",
     "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
   },
   "related_legislation": {

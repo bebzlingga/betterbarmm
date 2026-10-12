@@ -115,7 +115,7 @@
     "note": "Authors are recorded on the origin bill's page."
   },
   "related_documents": {
-    "signed_law_pdf": "Linked on the BAA index / Official Gazette of the Bangsamoro",
+    "signed_law_pdf": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/BAA-35-Bangsamoro-Electoral-Code.pdf",
     "irr": "pending_capture: available on the measure's official page / full text, not yet scraped"
   },
   "related_legislation": {
