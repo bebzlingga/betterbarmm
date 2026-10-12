@@ -9,6 +9,14 @@ import { longDate } from './parts'
 
 /* Bid notices, newest first, fetched a page at a time from /api/notices. */
 
+const STAGES: [string, string][] = [
+	['', 'All notices'],
+	['Open for bids', 'Open for bids'],
+	['Awarded', 'Awarded'],
+	['Failed', 'Failed'],
+	['No award recorded', 'No award recorded'],
+]
+
 type Page = { totals: Totals; page: number; pages: number; rows: NoticeRow[] }
 
 const peso = (n: number) =>
@@ -17,20 +25,30 @@ const peso = (n: number) =>
 export function NoticesExplorer({
 	entity,
 	supplier: initialSupplier = '',
+	stage: initialStage = '',
 	years,
 	groups,
+	modes,
+	funds,
 }: {
 	entity?: string
 	supplier?: string
+	stage?: string
 	years: number[]
 	/** The broad groups notices are sorted into, for the Category filter. */
 	groups: string[]
+	/** Families of procurement mode, for the Mode filter. */
+	modes: string[]
+	/** Sources of funds, for the Fund filter. */
+	funds: string[]
 }) {
 	const [query, setQuery] = useState('')
 	const [typed, setTyped] = useState('')
 	const [year, setYear] = useState('')
 	const [group, setGroup] = useState('')
-	const [awarded, setAwarded] = useState('')
+	const [stage, setStage] = useState(initialStage)
+	const [mode, setMode] = useState('')
+	const [fund, setFund] = useState('')
 	const [supplier, setSupplier] = useState(initialSupplier)
 	const [page, setPage] = useState(1)
 	const [data, setData] = useState<Page | null>(null)
@@ -50,7 +68,9 @@ export function NoticesExplorer({
 		if (query) params.set('q', query)
 		if (year) params.set('year', year)
 		if (group) params.set('group', group)
-		if (awarded) params.set('awarded', '1')
+		if (stage) params.set('stage', stage)
+		if (mode) params.set('mode', mode)
+		if (fund) params.set('fund', fund)
 		if (supplier) params.set('supplier', supplier)
 		params.set('page', String(page))
 		const controller = new AbortController()
@@ -59,7 +79,7 @@ export function NoticesExplorer({
 			.then(setData)
 			.catch(() => {})
 		return () => controller.abort()
-	}, [entity, query, year, group, awarded, supplier, page])
+	}, [entity, query, year, group, stage, mode, fund, supplier, page])
 
 	const reset = (fn: () => void) => {
 		fn()
@@ -68,14 +88,30 @@ export function NoticesExplorer({
 
 	return (
 		<div>
-			<div className='grid grid-cols-2 gap-3 pb-6 lg:grid-cols-[minmax(0,24rem)_1fr_16rem_9rem_11rem] lg:items-end lg:gap-4 lg:pb-8'>
+			{/* Where a notice stands: still taking bids, awarded, or neither. */}
+			<div role='tablist' aria-label='Stage' className='-mx-4 mb-6 flex gap-1 overflow-x-auto border-b border-[var(--rule)] px-4 lg:mx-0 lg:mb-8 lg:px-0'>
+				{STAGES.map(([value, label]) => (
+					<button
+						key={label}
+						type='button'
+						role='tab'
+						aria-selected={stage === value}
+						onClick={() => reset(() => setStage(value))}
+						className={`-mb-px shrink-0 cursor-pointer border-b-2 px-3 pb-3 text-[14px] font-semibold transition ${stage === value ? 'border-[var(--accent)] text-[var(--ink)]' : 'border-transparent text-[var(--ink-3)] hover:text-[var(--ink)]'}`}
+					>
+						{label}
+					</button>
+				))}
+			</div>
+
+			<div className='grid grid-cols-2 gap-3 pb-6 lg:grid-cols-[minmax(0,22rem)_repeat(4,minmax(0,1fr))] lg:items-end lg:gap-4 lg:pb-8'>
 				<div className='col-span-2 lg:col-span-1'>
 					<SearchField value={typed} onChange={setTyped} placeholder='Title, reference, category or supplier' />
 				</div>
-				<span className='hidden lg:block' />
 				<Select label='Category' value={group} onChange={(v) => reset(() => setGroup(v))} options={[['', 'All categories'], ...groups.map((g): [string, string] => [g, g])]} />
+				<Select label='Mode' value={mode} onChange={(v) => reset(() => setMode(v))} options={[['', 'All modes'], ...modes.map((m): [string, string] => [m, m])]} />
+				<Select label='Source of funds' value={fund} onChange={(v) => reset(() => setFund(v))} options={[['', 'All sources'], ...funds.map((f): [string, string] => [f, f])]} />
 				<Select label='Year' value={year} onChange={(v) => reset(() => setYear(v))} options={[['', 'All years'], ...[...years].reverse().map((y): [string, string] => [String(y), String(y)])]} />
-				<Select label='Show' value={awarded} onChange={(v) => reset(() => setAwarded(v))} options={[['', 'All notices'], ['1', 'Awarded only']]} />
 			</div>
 
 			{supplier ? (
@@ -109,7 +145,7 @@ export function NoticesExplorer({
 							<p className='font-[family-name:var(--font-display)] text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>{n.group}</p>
 							<p className='mt-1 text-[14.5px] font-semibold leading-6 text-[var(--ink)]'>{n.title ?? n.category ?? 'Untitled notice'}</p>
 							<p className='mt-1 text-[12px] leading-5 text-[var(--ink-3)]'>
-								{[n.date && longDate(n.date), `Ref. ${n.ref}`, n.title && n.category, n.mode].filter(Boolean).join(' · ')}
+								{[n.date && longDate(n.date), `Ref. ${n.ref}`, n.title && n.category, n.mode, n.fund !== 'Not published' && n.fund].filter(Boolean).join(' · ')}
 								{entity ? null : (
 									<>
 										{' · '}
@@ -132,7 +168,9 @@ export function NoticesExplorer({
 						</div>
 						<div className='sm:self-center sm:text-right'>
 							<p className='num text-[16px] font-semibold text-[var(--ink)]'>{n.abc == null ? '—' : peso(n.abc)}</p>
-							<p className='mt-1 text-[11.5px] text-[var(--ink-3)]'>{n.status ?? 'Approved budget'}</p>
+							<p className={`mt-1 text-[11.5px] ${n.stage === 'Open for bids' ? 'font-semibold text-[var(--accent)]' : 'text-[var(--ink-3)]'}`}>
+								{n.stage === 'Open for bids' && n.closing ? `Closes ${longDate(n.closing)}` : n.stage}
+							</p>
 						</div>
 					</li>
 				))}

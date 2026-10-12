@@ -1,6 +1,7 @@
 import { EntityExplorer, type EntityRow } from './_components/entity-explorer'
-import { Figures, Masthead, RankBars, YearBars, peso } from './_components/parts'
-import { entities, entityTotals, regionByYear, regionTotals, suppliers, topCategories, years } from './_lib/philgeps'
+import Link from 'next/link'
+import { Figures, Masthead, RankBars, YearBars, longDate, peso } from './_components/parts'
+import { entities, entityTotals, openNotices, regionByYear, regionTotals, suppliers, topCategories, years } from './_lib/philgeps'
 
 const figures = (t: { notices: number; abc: number; awards: number; contracts: number }) =>
 	[t.notices, Math.round(t.abc), t.awards, Math.round(t.contracts)] as [number, number, number, number]
@@ -41,6 +42,41 @@ export default function ProcurementHome() {
 				]}
 			/>
 
+			{openNotices.length ? (
+				<section className='bb-container bb-section !pb-0'>
+					<div className='flex flex-wrap items-end justify-between gap-x-10 gap-y-3'>
+						<div>
+							<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Open for bids</h2>
+							<p className='mt-2 text-[14px] leading-6 text-[var(--ink-3)]'>
+								{openNotices.length} notices still taking bids, closing soonest first.
+							</p>
+						</div>
+						<Link href='/notices?stage=Open+for+bids' className='rule-link text-[14px] font-semibold text-[var(--ink)]'>
+							See all {openNotices.length}
+						</Link>
+					</div>
+					<ul className='mt-8 grid gap-x-12 border-t border-[var(--rule)] lg:grid-cols-2'>
+						{openNotices.slice(0, 6).map((n) => (
+							<li key={n.ref} className='grid grid-cols-[minmax(0,1fr)_auto] gap-x-8 border-b border-[var(--rule)] py-4'>
+								<div className='min-w-0'>
+									<p className='line-clamp-2 text-[14.5px] font-semibold leading-6 text-[var(--ink)]'>{n.title ?? n.category}</p>
+									<p className='mt-1 truncate text-[12px] text-[var(--ink-3)]'>
+										<Link href={`/${entities[n.entity]!.slug}`} className='rule-link'>
+											{entities[n.entity]!.name}
+										</Link>
+										{n.mode ? ` · ${n.mode}` : null}
+									</p>
+								</div>
+								<div className='text-right'>
+									<p className='num text-[15px] font-semibold text-[var(--ink)]'>{n.abc == null ? '—' : peso(n.abc)}</p>
+									{n.closing ? <p className='mt-1 text-[11.5px] font-semibold text-[var(--accent)]'>Closes {longDate(n.closing)}</p> : null}
+								</div>
+							</li>
+						))}
+					</ul>
+				</section>
+			) : null}
+
 			<section className='bb-container bb-section grid gap-x-20 gap-y-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]'>
 				<RankBars
 					title='Top 10 suppliers'
@@ -74,7 +110,8 @@ export default function ProcurementHome() {
 				<EntityExplorer rows={rows} years={years} />
 				<p className='mt-10 text-[13px] leading-6 text-[var(--ink-3)]'>
 					An approved budget is what an office set aside for a purchase, not what it paid. Awards are only those PhilGEPS
-					records on the legacy system; the modernized system&rsquo;s awards are not published by agency.
+					records on the legacy system; the modernized system&rsquo;s awards are not published by agency. Open notices,
+					sources of funds and closing dates are read from the modernized system&rsquo;s own notice pages.
 				</p>
 			</section>
 		</>

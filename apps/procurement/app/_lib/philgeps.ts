@@ -23,8 +23,9 @@ type Raw = {
 	classes: string[]
 	statuss: string[]
 	awardees: string[]
-	/** ref, modern, date, entity, category, abc, title, mode, class, status, awards */
-	notices: [string, 0 | 1, string | null, number, number | null, number | null, string | null, number | null, number | null, number | null, [number, number | null, string | null, string | null][]][]
+	funds: string[]
+	/** ref, modern, date, entity, category, abc, title, mode, class, status, awards, fund, closing, open */
+	notices: [string, 0 | 1, string | null, number, number | null, number | null, string | null, number | null, number | null, number | null, [number, number | null, string | null, string | null][], number | null, string | null, 0 | 1][]
 }
 
 /* ---- Broad groups ---------------------------------------------------------
@@ -66,6 +67,36 @@ export function groupOf(category: string | null): string {
 	return GROUP_OVERRIDES[category] ?? GROUP_RULES.find(([, rule]) => rule.test(category))?.[0] ?? OTHER
 }
 
+/* ---- How it was bought ---------------------------------------------------
+   PhilGEPS writes each mode several ways, old law and new; these gather them
+   into the families the law names. Most older notices carry no mode at all. */
+
+const MODE_RULES: [string, RegExp][] = [
+	['Public bidding', /public bidding|competitive bidding/i],
+	['Small value procurement', /small value/i],
+	['Shopping', /shopping/i],
+	['Direct contracting', /direct contracting/i],
+	['Direct acquisition', /direct acquisition/i],
+	['Negotiated: emergency', /emergency/i],
+	['Negotiated: lease of property', /lease/i],
+	['Negotiated: agency to agency', /agency to agency/i],
+	['Negotiated: two failed biddings', /two failed/i],
+	['Negotiated: community participation', /community participation|sagip saka/i],
+	['Negotiated: other', /negotiated|^NP\b/i],
+	['Limited source bidding', /limited source/i],
+	['Repeat order', /repeat order/i],
+]
+export const NOT_PUBLISHED = 'Not published'
+export const modeGroups = [...MODE_RULES.map(([name]) => name), 'Other', NOT_PUBLISHED]
+const modeOf = (mode: string | null) => (mode ? (MODE_RULES.find(([, r]) => r.test(mode))?.[0] ?? 'Other') : NOT_PUBLISHED)
+
+/** "Regular Agency Fund (01000000)" as "Regular Agency Fund". */
+const fundOf = (fund: string | null) => (fund ? fund.replace(/\s*\(\d+\)\s*$/, '') : NOT_PUBLISHED)
+
+/* ---- Where a notice stands ------------------------------------------------ */
+export const stages = ['Open for bids', 'Awarded', 'Failed', 'No award recorded'] as const
+export type Stage = (typeof stages)[number]
+
 export type Award = { awardee: string; amount: number | null; date: string | null; contractNo: string | null }
 
 export type Notice = {
@@ -82,6 +113,13 @@ export type Notice = {
 	classification: string | null
 	status: string | null
 	awards: Award[]
+	/** One of `modeGroups`. */
+	modeGroup: string
+	/** Source of funds, modernized PhilGEPS only; otherwise NOT_PUBLISHED. */
+	fund: string
+	/** Last day to bid, modernized PhilGEPS only. */
+	closing: string | null
+	stage: Stage
 }
 
 export type Entity = {
@@ -126,7 +164,9 @@ export const entities: Entity[] = (() => {
 
 export const entityBySlug = new Map(entities.map((e) => [e.slug, e]))
 
-export const notices: Notice[] = raw.notices.map(([ref, , date, entity, category, abc, title, mode, cls, status, awards]) => ({
+const today = new Date().toISOString().slice(0, 10)
+
+export const notices: Notice[] = raw.notices.map(([ref, , date, entity, category, abc, title, mode, cls, status, awards, fund, closing, open]) => ({
 	ref,
 	date,
 	year: date ? Number(date.slice(0, 4)) : null,
@@ -139,7 +179,27 @@ export const notices: Notice[] = raw.notices.map(([ref, , date, entity, category
 	classification: cls == null ? null : raw.classes[cls],
 	status: status == null ? null : raw.statuss[status],
 	awards: awards.map(([awardee, amount, awardDate, contractNo]) => ({ awardee: raw.awardees[awardee], amount, date: awardDate, contractNo })),
+	modeGroup: modeOf(mode == null ? null : raw.modes[mode]),
+	fund: fundOf(fund == null ? null : raw.funds[fund]),
+	closing: closing ?? null,
+	stage: awards.length || (status != null && raw.statuss[status] === 'Awarded')
+		? 'Awarded'
+		: open && (!closing || closing >= today)
+			? 'Open for bids'
+			: status != null && /fail/i.test(raw.statuss[status]!)
+				? 'Failed'
+				: 'No award recorded',
 }))
+
+/** The sources of funds that appear, most used first, NOT_PUBLISHED last. */
+export const funds = (() => {
+	const tally = new Map<string, number>()
+	for (const n of notices) if (n.fund !== NOT_PUBLISHED) tally.set(n.fund, (tally.get(n.fund) ?? 0) + 1)
+	return [...[...tally.entries()].sort((a, b) => b[1] - a[1]).map(([f]) => f), NOT_PUBLISHED]
+})()
+
+/** Notices still taking bids, soonest closing first. */
+export const openNotices = notices.filter((n) => n.stage === 'Open for bids').sort((a, b) => (a.closing ?? '').localeCompare(b.closing ?? ''))
 
 export const years = [...new Set(notices.map((n) => n.year).filter((y): y is number => y != null))].sort()
 
@@ -205,21 +265,25 @@ export type NoticeQuery = {
 	year?: number
 	group?: string
 	supplier?: string
-	awarded?: boolean
+	stage?: string
+	mode?: string
+	fund?: string
 	page?: number
 }
 
 export const PAGE = 50
 
 /** One page of notices, newest first, with the totals of everything matched. */
-export function searchNotices({ entity, q, year, group, supplier, awarded, page = 1 }: NoticeQuery) {
+export function searchNotices({ entity, q, year, group, supplier, stage, mode, fund, page = 1 }: NoticeQuery) {
 	const words = (q ?? '').toLowerCase().split(/\s+/).filter(Boolean)
 	const who = supplier?.toLowerCase()
 	const matched = notices.filter((n) => {
 		if (entity != null && n.entity !== entity) return false
 		if (year != null && n.year !== year) return false
 		if (group && n.group !== group) return false
-		if (awarded && !n.awards.length) return false
+		if (stage && n.stage !== stage) return false
+		if (mode && n.modeGroup !== mode) return false
+		if (fund && n.fund !== fund) return false
 		if (who && !n.awards.some((a) => a.awardee.toLowerCase() === who)) return false
 		if (words.length) {
 			const text = `${n.ref} ${n.title ?? ''} ${n.category ?? ''} ${entities[n.entity]!.name} ${n.awards.map((a) => a.awardee).join(' ')}`.toLowerCase()

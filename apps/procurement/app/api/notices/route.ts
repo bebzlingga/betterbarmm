@@ -15,7 +15,9 @@ export function GET(request: NextRequest) {
 			year,
 			group: p.get('group') ?? undefined,
 			supplier: p.get('supplier') ?? undefined,
-			awarded: p.get('awarded') === '1',
+			stage: p.get('stage') ?? undefined,
+			mode: p.get('mode') ?? undefined,
+			fund: p.get('fund') ?? undefined,
 			page: Math.max(1, Number(p.get('page')) || 1),
 		}),
 	)

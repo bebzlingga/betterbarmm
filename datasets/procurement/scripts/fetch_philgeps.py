@@ -222,9 +222,44 @@ def main():
             'title': n.get('Notice Title') or t.get('title'), 'mode': n.get('ProcurementMode') or t.get('mode'),
             'class': t.get('class'), 'status': n.get('Bid Notice Status') or t.get('status'), 'awards': t.get('awards', []),
         })
+    # The modernized system's own pages (fetch_mphilgeps.py): source of funds,
+    # closing date and whether still open for the notices above, and the
+    # notices the dashboards have not caught up with.
+    MP = OUT.parent / 'mphilgeps.json'
+    mp = {n['ref']: n for n in json.loads(MP.read_text())['notices']} if MP.exists() else {}
+    # The new system spells some offices differently from the old.
+    MP_ALIASES = {
+        'MPW BASILAN DISTRICT ENGINEERING OFFICE': 'MINISTRY OF PUBLIC WORKS - BARMM, BASILAN DEO',
+        'MINISTRY OF PUBLIC WORKS - BARMM COTABATO CITY (DEO)': 'MINISTRY OF PUBLIC WORKS - BARMM, COTABATO CITY (DEO)',
+        'MINISTRY OF PUBLIC WORKS - BARMM LANAO DEL SUR 2ND DEO': 'MINISTRY OF PUBLIC WORKS - BARMM LANAO DEL SUR 2ND DISTRICT ENGINEERING OFFICE',
+        'MINISTRY OF THE INTERIOR AND LOCAL GOVERNMENT - BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO': 'MINISTRY OF THE INTERIOR AND LOCAL GOVERNMENT - BARMM',
+        'PUBLIC ATTORNEYS OFFICE - MARAWI CITY': "PUBLIC ATTORNEY'S OFFICE - BARMM REGIONAL OFFICE, MARAWI CITY",
+    }
+    squash = lambda s: re.sub(r'\s+', ' ', s).strip().upper()
+    names = {squash(e['name']): e['name'] for e in entities}
+    for n in notices:
+        m = mp.pop(n['ref'], None) if n['system'] == 'modern' else None
+        if m:
+            n.update({k: m[k] or n[k] for k in ('title', 'mode', 'class', 'status', 'category')})
+            n.update({'fund': m['fund'], 'closing': m['closing'], 'open': m['open']})
+    for m in mp.values():
+        if not m['agency'] or not m['published'] or m['published'] < SINCE:
+            continue
+        key = squash(MP_ALIASES.get(squash(m['agency']), m['agency']))
+        name = names.get(key, m['agency'])
+        kind = entities[index[name]]['type'] if name in index else (
+            'Municipal Government' if key.startswith('MUNICIPALITY OF') else
+            'City Government' if key.startswith('CITY OF') else
+            'Provincial Government' if key.startswith('PROVINCE OF') else
+            'Barangay' if key.startswith('BARANGAY') else 'Department')
+        if left_out(name, kind):
+            continue
+        notices.append({'ref': m['ref'], 'system': 'modern', 'date': m['published'], 'entity': entity(name, kind),
+                        'category': m['category'], 'abc': m['abc'], 'title': m['title'], 'mode': m['mode'], 'class': m['class'],
+                        'status': m['status'], 'awards': [], 'fund': m['fund'], 'closing': m['closing'], 'open': m['open']})
     notices.sort(key=lambda n: (n['date'] or '', n['ref']), reverse=True)
 
-    lookups = {k: [] for k in ('category', 'mode', 'class', 'status', 'awardee')}
+    lookups = {k: [] for k in ('category', 'mode', 'class', 'status', 'awardee', 'fund')}
     positions = {k: {} for k in lookups}
     def look(kind, value):
         if value is None:
@@ -235,15 +270,16 @@ def main():
         return positions[kind][value]
     rows = [[n['ref'], 1 if n['system'] == 'modern' else 0, n['date'], n['entity'], look('category', n['category']), n['abc'],
              n['title'], look('mode', n['mode']), look('class', n['class']), look('status', n['status']),
-             [[look('awardee', a[0]), a[1], a[2], a[3]] for a in n['awards']]] for n in notices]
+             [[look('awardee', a[0]), a[1], a[2], a[3]] for a in n['awards']],
+             look('fund', n.get('fund')), n.get('closing'), 1 if n.get('open') else 0] for n in notices]
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({
         'name': 'PhilGEPS bid notices and awards of BARMM procuring entities',
         'generatedAt': date.today().isoformat(),
         'source': [{'label': 'PhilGEPS Open Data — Bids and Awards, and Merchants dashboards', 'href': 'https://philgeps.gov.ph/CmsHomePages/open-data'}],
-        'note': 'Every bid notice a procuring entity PhilGEPS files under BARMM posted from 2019, when BARMM began, to date, in pesos. "abc" is the approved budget for the contract; "awards" are the contracts PhilGEPS records on the notice (awardee, contract amount, award date, contract number), several for a notice in lots. A notice is an intention to buy, an award a contract signed; neither is a payment. Titles, procurement mode and status are only published for notices that reached an award or were posted on the modernized system since 2024. Sulu\'s province and towns, Isabela City, offices named for the old ARMM (national agencies\' regional offices still filed as ARMM among them) and notices before 2019 are left out. "unit" links a local government to the LGU directory.',
-        'columns': ['ref', 'modern', 'date', 'entity', 'category', 'abc', 'title', 'mode', 'class', 'status', 'awards'],
+        'note': 'Every bid notice a procuring entity PhilGEPS files under BARMM posted from 2019, when BARMM began, to date, in pesos. "abc" is the approved budget for the contract; "awards" are the contracts PhilGEPS records on the notice (awardee, contract amount, award date, contract number), several for a notice in lots. A notice is an intention to buy, an award a contract signed; neither is a payment. Titles, procurement mode and status are only published for notices that reached an award or were posted on the modernized system since 2024; source of funds, closing date and "open" (still taking bids when read) only for the modernized system, read from its own notice pages. Sulu\'s province and towns, Isabela City, offices named for the old ARMM (national agencies\' regional offices still filed as ARMM among them) and notices before 2019 are left out. "unit" links a local government to the LGU directory.',
+        'columns': ['ref', 'modern', 'date', 'entity', 'category', 'abc', 'title', 'mode', 'class', 'status', 'awards', 'fund', 'closing', 'open'],
         'awardColumns': ['awardee', 'amount', 'date', 'contractNo'],
         'entities': entities,
         **{f'{k}s' if k != 'class' else 'classes': v for k, v in lookups.items()},
