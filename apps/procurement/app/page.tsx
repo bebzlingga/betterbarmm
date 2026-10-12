@@ -1,5 +1,4 @@
-import { type EntityRow } from './_components/entity-explorer'
-import { OfficeGrid } from './_components/office-grid'
+import { EntityExplorer, type EntityRow } from './_components/entity-explorer'
 import { Figures, Masthead, RankBars, YearBars, peso } from './_components/parts'
 import { entities, entityTotals, regionByYear, regionTotals, suppliers, topCategories, years } from './_lib/philgeps'
 
@@ -71,12 +70,8 @@ export default function ProcurementHome() {
 			</section>
 
 			<section className='bb-container pb-[clamp(3.75rem,7vw,6.5rem)]'>
-				<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Every office</h2>
-				<p className='mb-8 mt-2 text-[15px] leading-7 text-[var(--ink-3)]'>
-					Each BARMM office on PhilGEPS, from the ministries, the Chief Minister&rsquo;s office and Parliament to hospitals,
-					schools, provinces and towns.
-				</p>
-				<OfficeGrid rows={rows} years={years} />
+				<h2 className='mb-8 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Every office</h2>
+				<EntityExplorer rows={rows} years={years} />
 				<p className='mt-10 text-[13px] leading-6 text-[var(--ink-3)]'>
 					An approved budget is what an office set aside for a purchase, not what it paid. Awards are only those PhilGEPS
 					records on the legacy system; the modernized system&rsquo;s awards are not published by agency.
