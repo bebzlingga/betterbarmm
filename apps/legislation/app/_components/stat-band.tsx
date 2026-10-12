@@ -152,7 +152,7 @@ export function StatBand({ stats }: { stats: Stat[] }) {
 		// have sat on the descenders. It is a step short of the rhythm above so
 		// the band still reads as one block with its heading rather than as two
 		// evenly spaced rows.
-		<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)] border-b border-[var(--rule)]'>
+		<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 			<StatFigures stats={stats} />
 		</section>
 	)

@@ -164,7 +164,8 @@ export default function HomePage() {
 			     The claim centerd over the picture, the legend wrapped around it, and
 			     the ways out underneath — so the section reads top to bottom as one
 			     statement rather than a column of text beside a chart. */}
-			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
+			<section className='bg-[var(--paper-2)]'>
+			<div className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 				<SectionHead
 					index='01'
 					eyebrow='Where the bills are'
@@ -201,6 +202,7 @@ export default function HomePage() {
 						</Link>
 					</div>
 				</Reveal>
+			</div>
 			</section>
 
 			{SHOW_DID_YOU_KNOW ? <DidYouKnow /> : null}
