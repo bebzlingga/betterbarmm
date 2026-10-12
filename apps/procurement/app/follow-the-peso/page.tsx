@@ -23,7 +23,7 @@ export default function FollowThePesoPage() {
 			<section className='bb-container bb-section'>
 				<PesoTable rows={pesoRows} years={pesoYears} />
 
-				<div className='mt-14 border-t border-[var(--rule)] pt-10'>
+				<div className='mt-14'>
 					<h2 className='text-[1.5rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Reading it</h2>
 					<p className={P}>
 						<strong>Budget to buy with</strong>{' '}is the office&rsquo;s maintenance and other operating expenses plus its
