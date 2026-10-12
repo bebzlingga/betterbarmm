@@ -47,11 +47,11 @@ const ICONS = {
 
 /** The live workspaces, in the order the front page lists them. */
 const WORKSPACES = [
-	{ key: 'home', href: 'https://betterbarmm.com', label: 'BetterBARMM' },
+	{ key: 'home', href: 'https://betterbarmm.com', label: 'Discover BARMM' },
 	{ key: 'election', href: 'https://election.betterbarmm.com', label: 'Election' },
 	{ key: 'legislation', href: 'https://legislation.betterbarmm.com', label: 'Legislation' },
 	{ key: 'budget', href: 'https://budget.betterbarmm.com', label: 'Budget' },
-	{ key: 'lgu', href: 'https://lgu.betterbarmm.com', label: 'Local government' },
+	{ key: 'lgu', href: 'https://lgu.betterbarmm.com', label: 'Local Government' },
 	{ key: 'procurement', href: 'https://procurement.betterbarmm.com', label: 'Procurement' },
 ] as const
 
@@ -88,7 +88,7 @@ export function UtilityBar({
 						{switchIcon}
 						<span className='font-bold'>Workspace:</span>
 						<span className='text-[var(--ink)]'>
-							{WORKSPACES.find((workspace) => workspace.key === current)?.label ?? 'BetterBARMM'}
+							{WORKSPACES.find((workspace) => workspace.key === current)?.label ?? 'Discover BARMM'}
 						</span>
 						<svg viewBox='0 0 10 6' aria-hidden='true' className='utility-bar-caret size-2.5'>
 							<path d='M1 1l4 4 4-4' fill='none' stroke='currentColor' strokeWidth='1.5' />

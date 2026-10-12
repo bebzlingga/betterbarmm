@@ -22,8 +22,8 @@ export function PesoTable({ rows, years }: { rows: PesoRow[]; years: number[] })
 
 	return (
 		<div>
-			<div className='flex flex-wrap items-end justify-between gap-4 pb-6'>
-				<div className='flex flex-wrap gap-x-6 gap-y-2 text-[12.5px] text-[var(--ink-2)]'>
+			<div className='flex flex-wrap items-end justify-between gap-4 pb-10'>
+				<div className='flex min-h-10 flex-wrap items-center gap-x-6 gap-y-2 text-[12.5px] text-[var(--ink-2)]'>
 					<span className='inline-flex items-center gap-2'>
 						<span className='h-2.5 w-4 bg-[var(--ink-mute)] opacity-50' aria-hidden='true' /> Budget to buy with
 					</span>
