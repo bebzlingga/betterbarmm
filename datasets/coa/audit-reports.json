@@ -1,0 +1,2950 @@
+{
+ "name": "COA Annual Audit Report findings for BARMM entities",
+ "generatedAt": "2026-10-12",
+ "source": [
+  {
+   "label": "Commission on Audit — Annual Audit Reports",
+   "href": "https://www.coa.gov.ph/reports/annual-audit-reports/"
+  },
+  {
+   "label": "COA — AAR, Local Government Units (current site)",
+   "href": "https://www.coa.gov.ph/reports/annual-audit-reports/aar-local-government-units/"
+  },
+  {
+   "label": "COA — LGU AARs 2020, BARMM (old site, archived)",
+   "href": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm"
+  },
+  {
+   "label": "Internet Archive Wayback Machine — where each PDF was read from",
+   "href": "https://web.archive.org/cdx/search/cdx?url=coa.gov.ph/phocadownloadpap/&matchType=prefix"
+  }
+ ],
+ "note": "Headline facts from the Executive Summary of each COA Annual Audit Report (AAR) on a BARMM entity. coa.gov.ph answers every automated request with a Cloudflare 403, so every PDF here was read from the Internet Archive copy of its own coa.gov.ph URL: `pdf` is the COA URL, `archived` the copy actually opened. That limits coverage to what the Archive saved: 55 municipalities and Marawi City for FY 2020 (old COA site) and Madalum for FY 2021. No regional/ministry, province or Cotabato City report could be read for any year — see `gaps`. Sulu towns are FY 2020, when Sulu was part of BARMM. Fields: opinion is the auditor's word (unmodified covers \"unqualified\"; \"modified\" where the report names no type). disallowances and suspensions are year-end outstanding Notices of Disallowance / Suspension balances; 0 only where the report says none or prints 0.00/\"-\", null where it does not say (several reports say only that none were issued during the year). unliquidatedCashAdvances is null almost everywhere because Executive Summaries rarely state the balance. observations counts the numbered deficiencies in the summary (favourable observations left out); recommendations counts each lettered or separate recommendation under them, which is a judgment call where they nest. priorRecommendations is as printed for prior years' recommendations (erratum pages win); a part the report does not state is null even when the others imply it. findings are plain-English restatements of the summary's most significant observations; page is the PDF page (Executive Summaries number pages in roman numerals). Every peso figure and quoted sentence was checked against the PDF text by the build script. The full AAR (Part II) often holds more observations than the summary. Left out on purpose: water districts and Marawi Resort Hotel (national GOCCs that COA files under its BARMM office) and Isabela City (Basilan, but Region IX).",
+ "reports": [
+  {
+   "entity": "Municipality of Al-Barka",
+   "entityAsPrinted": "Municipality of Al-Barka",
+   "entityType": "municipality",
+   "area": "basilan",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 10,
+   "recommendations": 14,
+   "priorRecommendations": {
+    "total": 6,
+    "implemented": 1,
+    "partial": 4,
+    "notImplemented": 1
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment of ₱108 million is doubtful because no annual physical inventory was done and property records were inadequate.",
+     "amount": 108061814.27,
+     "page": 2
+    },
+    {
+     "text": "Construction in Progress in the Trust Fund of ₱75.4 million is unreliable because its ending balance is unsupported.",
+     "amount": 75411796.03,
+     "page": 2
+    },
+    {
+     "text": "Spending and liquidation of funds transferred from national government agencies lacked copies of the Memorandum of Agreement.",
+     "amount": 75470950.81,
+     "page": 3
+    },
+    {
+     "text": "No separate account was kept for the Bayanihan COVID-19 grant, making its use hard to track.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Monthly bank reconciliations were not submitted and many disbursements lacked complete or signed supporting documents.",
+     "amount": null,
+     "page": 3
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Basilan/Al-Barka_Basilan_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20220104024027/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Basilan/Al-Barka_Basilan_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Suspensions/disallowances not addressed in the summary."
+  },
+  {
+   "entity": "Municipality of Hadji Mohammad Ajul",
+   "entityAsPrinted": "Municipality of Hadji Mohammad Ajul",
+   "entityType": "municipality",
+   "area": "basilan",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 11,
+   "recommendations": 11,
+   "priorRecommendations": {
+    "total": 6,
+    "implemented": null,
+    "partial": 2,
+    "notImplemented": 4
+   },
+   "findings": [
+    {
+     "text": "Fund transfers from national government agencies were spent or liquidated without copies of the Memorandum of Agreement, so proper use of the funds could not be checked.",
+     "amount": 75470950.81,
+     "page": 3
+    },
+    {
+     "text": "The Trust Fund's Construction in Progress balance was unsupported and could not be relied upon.",
+     "amount": 75411796.03,
+     "page": 2
+    },
+    {
+     "text": "Cash in bank was unreliable because bank reconciliation statements were not prepared or submitted.",
+     "amount": 2427296.52,
+     "page": 2
+    },
+    {
+     "text": "Property, plant and equipment balance was doubtful because no annual physical inventory was done and property records were inadequate.",
+     "amount": 810687.5,
+     "page": 2
+    },
+    {
+     "text": "No special account was kept for the Bayanihan Grant, making it hard to track how the grant was used.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Disbursements had incomplete supporting documents and unsigned documents, casting doubt on the claims.",
+     "amount": null,
+     "page": 3
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/download/3475/basilan/50127/hadji-mohammad-ajul-executive-summary-2020.pdf",
+   "archived": "https://web.archive.org/web/20220813030341/https://www.coa.gov.ph/download/3475/basilan/50127/hadji-mohammad-ajul-executive-summary-2020.pdf",
+   "listing": "https://www.coa.gov.ph/reports/annual-audit-reports/aar-local-government-units/",
+   "note": "Prior status from the Erratum (PDF p5), which corrects the original '1 implemented, 1 partial, 4 unimplemented'; corrected text states no implemented count. Observation 7 oddly refers to 'the Municipality of Al-Barka' (likely copy error in report). Disallowances/suspensions not addressed."
+  },
+  {
+   "entity": "Municipality of Hadji Muhtamad",
+   "entityAsPrinted": "Municipality of Hji. Muhtamad",
+   "entityType": "municipality",
+   "area": "basilan",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 4,
+   "recommendations": 9,
+   "priorRecommendations": {
+    "total": 7,
+    "implemented": null,
+    "partial": 2,
+    "notImplemented": 5
+   },
+   "findings": [
+    {
+     "text": "Trust Fund property, plant and equipment for completed projects was not transferred to the General Fund.",
+     "amount": 67543031.76,
+     "page": 3
+    },
+    {
+     "text": "Property, plant and equipment had no physical count report and no ledger or property cards, so its accuracy could not be confirmed.",
+     "amount": 10142045.96,
+     "page": 2
+    },
+    {
+     "text": "The accountable officer kept no official cashbook, so cash transactions were unrecorded and the balance of accountability could not be established.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Less than the required 5% of the budget was set aside for Gender and Development, and only 25% of planned activities were submitted for audit.",
+     "amount": null,
+     "page": 3
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Basilan/HadjiMuhtamad_Basilan_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20220104024032/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Basilan/HadjiMuhtamad_Basilan_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "OCR lost observation numbering after item 1; 4 observations counted by content. Recommendations: 1+3+3+2; an extra general recommendation on internal control (p4) not counted. Income/expense figures in table have OCR spaces. Implemented count not stated. Disallowances/suspensions not addressed."
+  },
+  {
+   "entity": "Municipality of Lantawan",
+   "entityAsPrinted": "Lantawan Municipality",
+   "entityType": "municipality",
+   "area": "basilan",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 11,
+   "priorRecommendations": {
+    "total": 12,
+    "implemented": 7,
+    "partial": 5,
+    "notImplemented": null
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment balances, 45% of total assets, are unreliable: no inventory count in 2020, inadequate records and wrong valuation.",
+     "amount": 98603477.05,
+     "page": 2
+    },
+    {
+     "text": "Construction in progress and property balances could not be verified because records of completed projects were inadequate.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "No special account was kept for the Bayanihan Grant, casting doubt on the accuracy of its ending balance.",
+     "amount": null,
+     "page": 1
+    },
+    {
+     "text": "Required ledgers and bank reconciliation statements for all funds were not submitted to support the financial statements.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Monthly fuel consumption reports were not submitted, so the auditor could not check whether fuel use was reasonable.",
+     "amount": 2664540.77,
+     "page": 3
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Basilan/Lantawan_Basilan_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20220104024035/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Basilan/Lantawan_Basilan_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Suspensions/disallowances section absent from the summary. Not-implemented count not stated (7+5 = 12). Report names the entity 'Lantawan Municipality'."
+  },
+  {
+   "entity": "Municipality of Sumisip",
+   "entityAsPrinted": "Municipality of Sumisip",
+   "entityType": "municipality",
+   "area": "basilan",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 5,
+   "recommendations": 8,
+   "priorRecommendations": {
+    "total": 18,
+    "implemented": 8,
+    "partial": 9,
+    "notImplemented": 1
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment, 46% of total assets, is unreliable: no 2020 inventory count, inadequate ledger cards, and wrong valuation.",
+     "amount": 260587034.2,
+     "page": 1
+    },
+    {
+     "text": "Construction in progress and property balances could not be verified; finished projects were never moved into the proper asset accounts.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "The current portion of domestic loans payable was not shown separately as a current liability, misstating the loans in the financial statements.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "No separate bank account was opened for the disaster risk reduction fund, and its annual investment plan was not submitted.",
+     "amount": null,
+     "page": 2
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Basilan/Sumisip_Basilan_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20220104024038/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Basilan/Sumisip_Basilan_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Summary has no suspensions/disallowances section and no financial highlights. Recommendation for observation 2 is addressed to a 'General Manager' and 'Senior Corporate Budget Analyst', apparently copied from another report."
+  },
+  {
+   "entity": "Municipality of Tipo-Tipo",
+   "entityAsPrinted": "Municipality of Tipo-Tipo",
+   "entityType": "municipality",
+   "area": "basilan",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 4,
+   "recommendations": 8,
+   "priorRecommendations": {
+    "total": 10,
+    "implemented": 6,
+    "partial": 4,
+    "notImplemented": null
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment of ₱96.5 million (32% of assets) is unreliable: no inventory count, poor property records and wrong valuation.",
+     "amount": 96521402.81,
+     "page": 1
+    },
+    {
+     "text": "Construction in Progress was not reclassified to completed assets because records could not confirm which projects were finished.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "Subsidiary and general ledgers, property ledger cards and bank reconciliation statements were not submitted to support the financial statements.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "The town did not publicise its programs and projects or submit monthly monitoring reports on ongoing infrastructure.",
+     "amount": null,
+     "page": 3
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Basilan/Tipo-Tipo_Basilan_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20220104031045/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Basilan/Tipo-Tipo_Basilan_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Not-implemented count not stated (6+4=10). Suspensions/disallowances not addressed. Recommendation text mentions 'General Manager' and 'Province', apparently copied boilerplate."
+  },
+  {
+   "entity": "City of Marawi",
+   "entityAsPrinted": "Islamic City of Marawi",
+   "entityType": "city",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 17992515.0,
+   "unliquidatedCashAdvances": null,
+   "observations": 9,
+   "recommendations": 12,
+   "priorRecommendations": {
+    "total": 9,
+    "implemented": 8,
+    "partial": 1,
+    "notImplemented": null
+   },
+   "findings": [
+    {
+     "text": "The road network balance cannot be verified because the city has no road network report, physical count, or ledger cards.",
+     "amount": 363138358.58,
+     "page": 2
+    },
+    {
+     "text": "Property and equipment were not depreciated, understating depreciation and overstating equity.",
+     "amount": 270459200.02,
+     "page": 2
+    },
+    {
+     "text": "Unspent funds from programs funded by other agencies were not returned to those agencies, leaving the money at risk.",
+     "amount": 18754283.28,
+     "page": 2
+    },
+    {
+     "text": "Fuel, oil and lubricant spending could not be verified because drivers did not submit monthly fuel consumption reports.",
+     "amount": 16204651.44,
+     "page": 3
+    },
+    {
+     "text": "Purchases of goods are of doubtful validity because purchase orders were incomplete and not in the prescribed form.",
+     "amount": 11734884.46,
+     "page": 3
+    },
+    {
+     "text": "Long-overdue receivables are still carried in the books without analysis or write-off.",
+     "amount": 3734651.04,
+     "page": 3
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Cities/Lanao-del-Sur/MarawiCity_LDS_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20220104024023/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Cities/Lanao-del-Sur/MarawiCity_LDS_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Observation 1 has recommendation b split into sub-items i and ii; counted a and b as 2. Prior notImplemented not stated (implicitly 0). No cash advance figure in summary."
+  },
+  {
+   "entity": "Municipality of Amai Manabilang",
+   "entityAsPrinted": "Municipality of Amai Manabilang",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": 1370722.61,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 21,
+   "priorRecommendations": {
+    "total": 32,
+    "implemented": 17,
+    "partial": 9,
+    "notImplemented": 6
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment was in substantial doubt because ledger cards and property cards were not kept and disclosures were missing.",
+     "amount": 121142267.45,
+     "page": 3
+    },
+    {
+     "text": "Liability accounts were doubtful because accounting ledgers were not properly kept, including for the outstanding loan and remittances to GSIS, Pag-IBIG, PhilHealth and BIR.",
+     "amount": 61406303.18,
+     "page": 4
+    },
+    {
+     "text": "Supplies bought during the year were expensed outright and distributed without passing through inventory accounts.",
+     "amount": 29047679.25,
+     "page": 4
+    },
+    {
+     "text": "Road network assets remained unreliable because no proper inventory was done.",
+     "amount": 12797400.0,
+     "page": 2
+    },
+    {
+     "text": "Seven Notices of Suspension were issued during the year; suspensions outstanding at year-end.",
+     "amount": 1370722.61,
+     "page": 5
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/AmaiManabilang_LDS_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211114123356/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/AmaiManabilang_LDS_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Executive Summary says only some observations are listed; rest in Part II. Disallowance balance not stated (only suspensions). Suspensions: 688,533.00 issued in 2020."
+  },
+  {
+   "entity": "Municipality of Bacolod-Kalawi",
+   "entityAsPrinted": "Municipality of Bacolod Kalawi",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 1901186.47,
+   "suspensions": 373812.26,
+   "unliquidatedCashAdvances": null,
+   "observations": 4,
+   "recommendations": 11,
+   "priorRecommendations": {
+    "total": 34,
+    "implemented": 2,
+    "partial": 15,
+    "notImplemented": 17
+   },
+   "findings": [
+    {
+     "text": "The required physical count and one-time cleanup of property, plant and equipment balances was not done, making those balances unreliable.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "Infrastructure assets such as roads were not recorded for 2016 to 2019, understating property and equity.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "Accounts and financial reports were submitted late, hindering timely audit.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Premiums were remitted to GSIS, Pag-IBIG, PhilHealth and BIR, but ledgers and reconciliation of previous years' accounts were not done.",
+     "amount": 3414944.93,
+     "page": 4
+    },
+    {
+     "text": "Notices of Disallowance remained outstanding at year-end.",
+     "amount": 1901186.47,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Bacolod-Kalawi_LDS_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211121195436/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Bacolod-Kalawi_LDS_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Recommendation 2 has sub-items i–iv under (c); counted a–c only. Remittance finding amount is the GSIS figure; others ₱47,800.00 Pag-IBIG, ₱378,701.25 PhilHealth, ₱1,915,033.56 BIR. Highlights table shows equity equal to assets despite ₱62.2M liabilities, as printed."
+  },
+  {
+   "entity": "Municipality of Balindong",
+   "entityAsPrinted": "Municipality of Balindong",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 466527.15,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 11,
+   "priorRecommendations": {
+    "total": 7,
+    "implemented": 3,
+    "partial": 2,
+    "notImplemented": 2
+   },
+   "findings": [
+    {
+     "text": "Local road networks are recorded as property without any inventory of the roads behind the figure.",
+     "amount": 42652571.37,
+     "page": 2
+    },
+    {
+     "text": "No special account was created for the Bayanihan Grant (COVID-19 grant to towns), making its receipt and use hard to track.",
+     "amount": 12028020.0,
+     "page": 2
+    },
+    {
+     "text": "No monthly or quarterly reports were prepared on how the Bayanihan Grant was received and spent.",
+     "amount": 12028020.0,
+     "page": 2
+    },
+    {
+     "text": "Contracts and purchase orders were not sent to the auditor on time for review.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Cash disbursement reports and vouchers were submitted late, hampering audit of the year's statements.",
+     "amount": null,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Balindong_LDS_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211125154203/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Balindong_LDS_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Executive summary text is nearly identical to Kapai's (same template)."
+  },
+  {
+   "entity": "Municipality of Bayang",
+   "entityAsPrinted": "Municipality of Bayang",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 11,
+   "priorRecommendations": {
+    "total": 10,
+    "implemented": 5,
+    "partial": 4,
+    "notImplemented": 1
+   },
+   "findings": [
+    {
+     "text": "Road networks worth ₱7.45 million could not be verified because there was no road inventory, physical count report or ledger cards.",
+     "amount": 7450376.65,
+     "page": 3
+    },
+    {
+     "text": "Relief goods bought with the Bayanihan COVID-19 grant were recorded as issued without issuance reports or requisition slips.",
+     "amount": 7626147.0,
+     "page": 4
+    },
+    {
+     "text": "Monthly reports on the disaster risk reduction fund were not submitted, preventing timely review of its use.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "No separate trial balance was kept for special accounts, so use of the 20% Development Fund could not be verified.",
+     "amount": null,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Bayang_LDS_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211121195439/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Bayang_LDS_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Road network amount is ₱7,450,376.55 in opinion paragraph but ₱7,450,376.65 in finding 1. Report says no suspension/disallowance/charge issued in CY 2020; no year-end balance stated, so null. Finding 3 has two recommendation paragraphs (counted 2); 1c sub-items counted once."
+  },
+  {
+   "entity": "Municipality of Binidayan",
+   "entityAsPrinted": "Municipality of Binidayan",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "unmodified",
+   "disallowances": 0,
+   "suspensions": 748291.65,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 13,
+   "priorRecommendations": {
+    "total": 13,
+    "implemented": 3,
+    "partial": 3,
+    "notImplemented": 7
+   },
+   "findings": [
+    {
+     "text": "Supporting documents for 66 cash advances drawn January to June 2020 were not submitted for audit, so their validity could not be checked.",
+     "amount": 10624798.89,
+     "page": 3
+    },
+    {
+     "text": "Road networks could not be verified: no road network report, physical count or ledger cards, and no disclosure in the notes.",
+     "amount": 23735744.38,
+     "page": 2
+    },
+    {
+     "text": "Supporting documents for 4 payrolls were not submitted for audit.",
+     "amount": 2224170.87,
+     "page": 3
+    },
+    {
+     "text": "Supporting documents for 10 disbursement vouchers were not submitted for audit.",
+     "amount": 2035180.0,
+     "page": 3
+    },
+    {
+     "text": "Collections were reported and deposited late, exposing funds to misuse, and the collecting officer was not bonded.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Suspensions issued in 2020 remained unsettled at year-end.",
+     "amount": 748291.65,
+     "page": 5
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Binidayan_LDS_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211125151152/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Binidayan_LDS_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "CONFLICT: opinion paragraph says 'unqualified' but then gives a qualification basis ('due to' unverifiable road networks), which reads like a qualified opinion; check the Independent Auditor's Report. Recommendations: obs1 counted as a, b, c (c has sub-items i-iii); obs4 has 2 recommendation paragraphs. The 10,624,798.89 is unliquidated-document backlog, not a stated year-end unliquidated cash advance balance."
+  },
+  {
+   "entity": "Municipality of Buadiposo-Buntong",
+   "entityAsPrinted": "Municipality of Buadipuso Buntong",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0.0,
+   "suspensions": 641000.0,
+   "unliquidatedCashAdvances": null,
+   "observations": 5,
+   "recommendations": 10,
+   "priorRecommendations": {
+    "total": 13,
+    "implemented": 4,
+    "partial": 6,
+    "notImplemented": 3
+   },
+   "findings": [
+    {
+     "text": "Expenses equal to 18.73% of the year's total could not be verified because July–August 2020 check reports, vouchers and supporting documents were not submitted.",
+     "amount": 16689423.09,
+     "page": 3
+    },
+    {
+     "text": "Property, plant and equipment could not be confirmed because no annual physical count was done or reported.",
+     "amount": 108608123.53,
+     "page": 3
+    },
+    {
+     "text": "Domestic loans payable could not be verified: no reconciliation was prepared and no general or subsidiary ledgers were kept.",
+     "amount": 63734216.17,
+     "page": 4
+    },
+    {
+     "text": "Office supplies and inventories were charged directly to expenses instead of being tracked as inventory.",
+     "amount": null,
+     "page": 4
+    },
+    {
+     "text": "Use of the gender and development budget could not be assessed because no accomplishment report was submitted.",
+     "amount": 5362268.31,
+     "page": 5
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/BuadipusoBuntong_LDS_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211114123354/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/BuadipusoBuntong_LDS_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Recommendation count includes 'further recommended' paragraph under observation 3 as a separate item."
+  },
+  {
+   "entity": "Municipality of Bubong",
+   "entityAsPrinted": "Municipality of Bubong",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": 181104.76,
+   "unliquidatedCashAdvances": null,
+   "observations": 11,
+   "recommendations": 19,
+   "priorRecommendations": {
+    "total": 32,
+    "implemented": 24,
+    "partial": 4,
+    "notImplemented": 4
+   },
+   "findings": [
+    {
+     "text": "PPE ledger cards and property cards were not kept and the year-end physical count report was not submitted, casting substantial doubt on whether the recorded property exists.",
+     "amount": 149309632.92,
+     "page": 3
+    },
+    {
+     "text": "Supplies bought during the year were handed straight to end-users and booked as expenses without passing through inventory accounts or stock records.",
+     "amount": 33670909.0,
+     "page": 4
+    },
+    {
+     "text": "76% of the infrastructure account is a local road network balance with no road inventory behind it, so the figure is unsupported; this drove the qualified opinion.",
+     "amount": 31428754.64,
+     "page": 2
+    },
+    {
+     "text": "Infrastructure assets were never depreciated, so their book value is unreliable.",
+     "amount": 41323411.04,
+     "page": 2
+    },
+    {
+     "text": "Hazard pay and special risk allowance paid to frontline health workers (₱1.5 million and ₱500,000) lacked complete documents, leaving the amounts paid to each worker in doubt.",
+     "amount": 500000.0,
+     "page": 4
+    },
+    {
+     "text": "The Treasurer kept receiving new cash advances even though earlier ones were liquidated late and incompletely.",
+     "amount": null,
+     "page": 5
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/download/1950/lanao-del-sur/26832/bubong-executive-summary-2020.pdf",
+   "archived": "https://web.archive.org/web/20240226204655/https://www.coa.gov.ph/download/1950/lanao-del-sur/26832/bubong-executive-summary-2020.pdf",
+   "alsoAt": [
+    "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Bubong_LDS_ES2020.pdf"
+   ],
+   "listing": "https://www.coa.gov.ph/reports/annual-audit-reports/aar-local-government-units/",
+   "note": "Disallowances not addressed; only suspensions reported (₱181,104.76 balance at Dec 31, 2020). Hazard pay printed as '₱1.5Million', so amount uses the ₱500,000.00 risk allowance figure only. No cash advance balance stated."
+  },
+  {
+   "entity": "Municipality of Butig",
+   "entityAsPrinted": "Municipality of Butig",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 0,
+   "unliquidatedCashAdvances": null,
+   "observations": 5,
+   "recommendations": 6,
+   "priorRecommendations": {
+    "total": 5,
+    "implemented": 3,
+    "partial": null,
+    "notImplemented": 2
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment could not be verified because no annual physical count was done and no ledger or property cards were kept.",
+     "amount": 61753034.0,
+     "page": 2
+    },
+    {
+     "text": "Cash balances for the General and Trust Funds cannot be confirmed because monthly bank reconciliations were not prepared.",
+     "amount": 15503424.05,
+     "page": 2
+    },
+    {
+     "text": "Relief goods bought with the Bayanihan Grant were recorded as issued without issue reports or requisition slips to support them.",
+     "amount": 11149271.0,
+     "page": 2
+    },
+    {
+     "text": "No separate trial balance was kept for special accounts, so use of the 20% Development Fund could not be verified.",
+     "amount": null,
+     "page": 3
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Butig_LDS_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211125152656/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Butig_LDS_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Prior status printed 'four (2) remained unimplemented'; 2 used (3+2=5). A separate CY 2018 set is also stated: 6 recommendations, 4 implemented, 2 unimplemented; only CY 2019 set recorded. Total Equity increase in highlights is garbled ('45,5115,050.11')."
+  },
+  {
+   "entity": "Municipality of Calanogas",
+   "entityAsPrinted": "Municipality of Calanogas",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 2954458.35,
+   "unliquidatedCashAdvances": null,
+   "observations": 9,
+   "recommendations": 9,
+   "priorRecommendations": {
+    "total": 22,
+    "implemented": 9,
+    "partial": null,
+    "notImplemented": 13
+   },
+   "findings": [
+    {
+     "text": "No physical count was done of property, plant and equipment worth ₱74.4 million, making those accounts unreliable.",
+     "amount": 74372089.09,
+     "page": 2
+    },
+    {
+     "text": "Monthly reports on use of the Bayanihan COVID-19 grant were not prepared, and no separate account was created for it.",
+     "amount": 6699263.0,
+     "page": 3
+    },
+    {
+     "text": "Operating expenses in the budget-versus-actual statement differ from the financial performance statement, casting doubt on reliability.",
+     "amount": 2680297.61,
+     "page": 4
+    },
+    {
+     "text": "Other Receivables with no stated nature has sat unchanged for years, casting doubt on its validity.",
+     "amount": 671393.25,
+     "page": 4
+    },
+    {
+     "text": "Disaster fund reported as fully spent, yet ₱360,000 was shown transferred to the disaster trust fund, suggesting misclassification.",
+     "amount": 360000.0,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Calanogas_LDS_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211121195457/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Calanogas_LDS_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Partially implemented not stated (9+13=22). Suspensions all issued in 2020."
+  },
+  {
+   "entity": "Municipality of Ditsaan-Ramain",
+   "entityAsPrinted": "Municipality of Ditsa-an Ramain",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 4233984.08,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 11,
+   "priorRecommendations": {
+    "total": 11,
+    "implemented": 4,
+    "partial": 5,
+    "notImplemented": 2
+   },
+   "findings": [
+    {
+     "text": "No special account was created for the Bayanihan Grant, so receipt and use of the fund could not be easily tracked.",
+     "amount": 12286073.0,
+     "page": 2
+    },
+    {
+     "text": "No monthly or quarterly reports were prepared on use of the Bayanihan Grant, risking misclassified assets and expenses.",
+     "amount": 12286073.0,
+     "page": 3
+    },
+    {
+     "text": "The municipality did not recognise its local road network in its accounts.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "Reports of checks issued and disbursements were submitted late, hampering audit of the financial statements.",
+     "amount": null,
+     "page": 4
+    },
+    {
+     "text": "Notices of Suspension issued in 2020 remained unsettled at year-end.",
+     "amount": 4233984.08,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Ditsa-anRamain_LDS_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211125152659/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Ditsa-anRamain_LDS_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": null
+  },
+  {
+   "entity": "Municipality of Ganassi",
+   "entityAsPrinted": "Municipality of Ganassi",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 1363811.69,
+   "unliquidatedCashAdvances": null,
+   "observations": 5,
+   "recommendations": 11,
+   "priorRecommendations": {
+    "total": 32,
+    "implemented": 11,
+    "partial": 8,
+    "notImplemented": 13
+   },
+   "findings": [
+    {
+     "text": "Buildings and other structures balance is unreliable because no physical count was done and property records were not maintained.",
+     "amount": 33560000,
+     "page": 2
+    },
+    {
+     "text": "Weak controls over cash advances: new advances granted before old ones were liquidated, incomplete cashbooks, no monthly bank reconciliations.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Disaster risk reduction fund use did not follow accounting and reporting rules, affecting accuracy of expense accounts.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "Bayanihan Grant fund accounting, budgeting and reporting rules were inadequately followed.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Disbursement vouchers for 2020 were not submitted on time, raising doubts on the regularity of transactions.",
+     "amount": null,
+     "page": 3
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Ganassi_LDS_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211114123352/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Ganassi_LDS_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Buildings amount printed as ₱33.56 Million (entered as 33560000). Report says no outstanding Notice of Disallowance, hence 0."
+  },
+  {
+   "entity": "Municipality of Kapai",
+   "entityAsPrinted": "Municipality of Kapai",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 3869144.99,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 11,
+   "priorRecommendations": {
+    "total": 8,
+    "implemented": 3,
+    "partial": 3,
+    "notImplemented": 2
+   },
+   "findings": [
+    {
+     "text": "The town did not record its local road network as an asset at all; this drove the qualified opinion.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "No special account was created for the Bayanihan Grant (COVID-19 grant to towns), making its receipt and use hard to track.",
+     "amount": 12116901.0,
+     "page": 2
+    },
+    {
+     "text": "No monthly reports were prepared on how the Bayanihan Grant was received and spent.",
+     "amount": 12116901.0,
+     "page": 3
+    },
+    {
+     "text": "Contracts and purchase orders were not sent to the auditor on time for review.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Cash disbursement reports and vouchers were submitted late, hampering audit of the year's statements.",
+     "amount": null,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Kapai_LDS_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211123035826/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Kapai_LDS_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Executive summary text is nearly identical to Balindong's (same template)."
+  },
+  {
+   "entity": "Municipality of Lumba-Bayabao",
+   "entityAsPrinted": "Municipality of Lumba-Bayabao",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "unmodified",
+   "disallowances": 0,
+   "suspensions": 15020699.58,
+   "unliquidatedCashAdvances": null,
+   "observations": 2,
+   "recommendations": 2,
+   "priorRecommendations": {
+    "total": 3,
+    "implemented": 1,
+    "partial": null,
+    "notImplemented": 2
+   },
+   "findings": [
+    {
+     "text": "Audit suspensions of ₱15 million carried from prior years remained entirely unsettled at year-end.",
+     "amount": 15020699.58,
+     "page": 2
+    },
+    {
+     "text": "Contracts and purchase orders for infrastructure and supplies were submitted to auditors after the five-working-day deadline.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "The list of ongoing and planned projects for 2020 was submitted late to auditors.",
+     "amount": null,
+     "page": 2
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Lumba-Bayabao_LDS_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211121195426/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Lumba-Bayabao_LDS_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Recommendation 2 lists items a-i as required contents of one list; counted as one recommendation. Partially implemented not stated. Only 2 findings in the summary; suspension balance added as a third."
+  },
+  {
+   "entity": "Municipality of Lumbaca-Unayan",
+   "entityAsPrinted": "Municipality of Lumbaca-Unayan",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 0,
+   "unliquidatedCashAdvances": null,
+   "observations": 5,
+   "recommendations": 6,
+   "priorRecommendations": {
+    "total": 5,
+    "implemented": 3,
+    "partial": null,
+    "notImplemented": 2
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment could not be verified because no annual physical count was done and no property ledger cards or property cards were kept.",
+     "amount": 14549548.78,
+     "page": 2
+    },
+    {
+     "text": "Fund transfers from the Department of Labor and Employment for emergency employment in 9 barangays were not recorded in the books, misstating cash in bank.",
+     "amount": 5506800.0,
+     "page": 3
+    },
+    {
+     "text": "Relief goods bought with the Bayanihan Grant were recorded as issued without the required issue reports and requisition slips.",
+     "amount": 4853800.0,
+     "page": 2
+    },
+    {
+     "text": "No separate trial balance was kept for special accounts, so use of the 20% Development Fund could not be verified.",
+     "amount": null,
+     "page": 2
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/download/1950/lanao-del-sur/29084/lumbaca-unayan-executive-summary-2020.pdf",
+   "archived": "https://web.archive.org/web/20240617231353/https://www.coa.gov.ph/download/1950/lanao-del-sur/29084/lumbaca-unayan-executive-summary-2020.pdf",
+   "alsoAt": [
+    "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Lumbaca-Unayan_LDS_ES2020.pdf"
+   ],
+   "listing": "https://www.coa.gov.ph/reports/annual-audit-reports/aar-local-government-units/",
+   "note": "Prior status uses CY 2019 figures; partial not stated. Report also states for CY 2018: 'eight (9)' recommendations, 5 fully implemented, 4 unimplemented (count garbled as printed). Suspensions of 2,633,141.19 were all settled; year-end balance 0.00. Unliquidated cash advances not addressed."
+  },
+  {
+   "entity": "Municipality of Lumbatan",
+   "entityAsPrinted": "Municipality of Lumbatan",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 0,
+   "unliquidatedCashAdvances": null,
+   "observations": 6,
+   "recommendations": 7,
+   "priorRecommendations": {
+    "total": 15,
+    "implemented": 10,
+    "partial": null,
+    "notImplemented": 5
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment could not be verified because no annual physical count was done and no ledger or property cards were kept.",
+     "amount": 81186570.12,
+     "page": 2
+    },
+    {
+     "text": "Relief goods bought with the Bayanihan Grant were recorded as issued without the required issue reports and requisition slips.",
+     "amount": 7927357.0,
+     "page": 2
+    },
+    {
+     "text": "Cash balances could not be confirmed because monthly bank reconciliation statements were not prepared or submitted.",
+     "amount": 62273.86,
+     "page": 3
+    },
+    {
+     "text": "No separate trial balance was kept for special accounts, so use of the 20% Development Fund could not be verified.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "The municipality did not submit its action plan on prior audit recommendations.",
+     "amount": null,
+     "page": 3
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Lumbatan_LDS_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211119053059/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Lumbatan_LDS_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Prior status from the OCR Erratum (PDF p5), which replaces the original separate 2019 (7: 5 implemented, 2 not) and 2018 (8: 5 implemented, 3 not) figures. Suspensions of 3,735,669.29 all settled; year-end 0.00."
+  },
+  {
+   "entity": "Municipality of Lumbayanague",
+   "entityAsPrinted": "Municipality of Lumbayanague",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 11,
+   "priorRecommendations": {
+    "total": 10,
+    "implemented": 5,
+    "partial": 4,
+    "notImplemented": 1
+   },
+   "findings": [
+    {
+     "text": "Local road networks could not be verified because there was no road inventory, physical count report, ledger cards or disclosure.",
+     "amount": 43851822.11,
+     "page": 3
+    },
+    {
+     "text": "Release of relief goods bought with the Bayanihan Grant was recorded without issuance reports or requisition slips to support it.",
+     "amount": 7838287.0,
+     "page": 4
+    },
+    {
+     "text": "No separate trial balance was kept for special accounts, so use of the 20% Development Fund could not be verified.",
+     "amount": null,
+     "page": 4
+    },
+    {
+     "text": "Monthly disaster risk reduction fund reports and quarterly financial reports were not submitted on time.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "No gender and development accomplishment report was prepared.",
+     "amount": null,
+     "page": 5
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Lumbayanague_LDS_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211119053056/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Lumbayanague_LDS_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Report says no suspension/disallowance/charge was issued in CY 2020 but gives no year-end outstanding balance, so left null."
+  },
+  {
+   "entity": "Municipality of Madalum",
+   "entityAsPrinted": "Municipality of Madalum",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "disclaimer",
+   "disallowances": 0,
+   "suspensions": 1970417.58,
+   "unliquidatedCashAdvances": null,
+   "observations": 8,
+   "recommendations": 16,
+   "priorRecommendations": {
+    "total": 42,
+    "implemented": 5,
+    "partial": 11,
+    "notImplemented": 26
+   },
+   "findings": [
+    {
+     "text": "Financial reports for July to December 2020 were never submitted to the auditor, blocking audit of half the year; a reason for the disclaimer.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "The required physical count and clean-up of property balances was not done, so property figures are unreliable.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "Disbursement vouchers for the Bayanihan Grant were not submitted, and no special account or monthly reports were set up for it.",
+     "amount": 14302465.0,
+     "page": 3
+    },
+    {
+     "text": "Local road network assets were not properly accounted for or reported.",
+     "amount": 13304901.12,
+     "page": 4
+    },
+    {
+     "text": "Construction in progress balance is doubtful because no ledger cards were kept.",
+     "amount": 8733954.89,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Madalum_LDS_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211109185755/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Madalum_LDS_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Disallowances: 'no unsettled balance of disallowances and charges'; report adds that balances exclude CY 2020 transactions not yet audited. Highlights show Total Equity equal to Total Assets despite liabilities of ₱2,410,954.84 (as printed)."
+  },
+  {
+   "entity": "Municipality of Malabang",
+   "entityAsPrinted": "Municipality of Malabang",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 1711700.0,
+   "unliquidatedCashAdvances": null,
+   "observations": 5,
+   "recommendations": 10,
+   "priorRecommendations": {
+    "total": 17,
+    "implemented": 6,
+    "partial": 4,
+    "notImplemented": 7
+   },
+   "findings": [
+    {
+     "text": "Existence of all property, plant and equipment (net ₱78.718 million) is doubtful because only part of it, ₱69.967 million, was physically counted.",
+     "amount": 78718000,
+     "page": 3
+    },
+    {
+     "text": "Depreciation of ₱967,280.65 was not recorded on some assets, overstating assets and understating expenses.",
+     "amount": 967280.65,
+     "page": 4
+    },
+    {
+     "text": "No separate account or separate reports were kept for the ₱12.9 million Bayanihan COVID-19 grant, so its use is hard to track.",
+     "amount": 12883906.0,
+     "page": 4
+    },
+    {
+     "text": "Audit suspensions of ₱1.7 million remained unsettled by the responsible persons.",
+     "amount": 1711700.0,
+     "page": 5
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Malabang_LDS_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211125154206/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Lanao-del-Sur/Malabang_LDS_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "PPE net book value printed as '₱78.718 million' (no exact figure in summary); amount 78718000 is that figure expanded. Financial highlights are charts only."
+  },
+  {
+   "entity": "Municipality of Marogong",
+   "entityAsPrinted": "Municipality of Marogong",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "modified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 4,
+   "recommendations": 8,
+   "priorRecommendations": {
+    "total": 11,
+    "implemented": 3,
+    "partial": 4,
+    "notImplemented": 4
+   },
+   "findings": [
+    {
+     "text": "Road networks worth ₱35 million could not be verified because there was no road inventory, physical count report or ledger cards, so their existence is unproven.",
+     "amount": 35025467.62,
+     "page": 2
+    },
+    {
+     "text": "The Municipal Treasurer did not record cancelled checks in the cash book and kept no check register, weakening control over payments.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Collections were reported and deposited late, exposing funds to misuse and depriving the town of their immediate use.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "The Treasurer's cash advance liquidations lacked Reports of Disbursements tying them to specific payrolls and vouchers.",
+     "amount": null,
+     "page": 3
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/download/1950/lanao-del-sur/28844/marogong-executive-summary-2020.pdf",
+   "archived": "https://web.archive.org/web/20240617190017/https://www.coa.gov.ph/download/1950/lanao-del-sur/28844/marogong-executive-summary-2020.pdf",
+   "listing": "https://www.coa.gov.ph/reports/annual-audit-reports/aar-local-government-units/",
+   "note": "Opinion stated only as 'modified' with no type. Report says no suspension, disallowance or charge was issued in CY 2020 but gives no year-end balance, so both left null. Recommendation 1c has sub-items i-iii, counted as one."
+  },
+  {
+   "entity": "Municipality of Tugaya",
+   "entityAsPrinted": "Municipality of Tugaya",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 36036.0,
+   "suspensions": 0.0,
+   "unliquidatedCashAdvances": null,
+   "observations": 5,
+   "recommendations": 10,
+   "priorRecommendations": {
+    "total": 18,
+    "implemented": 6,
+    "partial": 4,
+    "notImplemented": 8
+   },
+   "findings": [
+    {
+     "text": "Existence and condition of all property, plant and equipment could not be confirmed because the inventory committee counted only part of the properties.",
+     "amount": 36630000,
+     "page": 3
+    },
+    {
+     "text": "Depreciation was not recorded for some property and equipment, overstating assets and understating expenses.",
+     "amount": 1233239.54,
+     "page": 4
+    },
+    {
+     "text": "No separate special account was created for the Bayanihan Grant to Cities and Municipalities, making receipt and use of the fund hard to track.",
+     "amount": 9130065.0,
+     "page": 4
+    },
+    {
+     "text": "No monthly reports or separate year-end trial balance and financial statements were prepared for the Bayanihan Grant fund.",
+     "amount": 9130065.0,
+     "page": 4
+    },
+    {
+     "text": "Disallowed amounts remained unsettled by the persons held liable.",
+     "amount": 36036.0,
+     "page": 5
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/download/1950/lanao-del-sur/29086/tugaya-executive-summary-2020.pdf",
+   "archived": "https://web.archive.org/web/20231204094032/https://www.coa.gov.ph/download/1950/lanao-del-sur/29086/tugaya-executive-summary-2020.pdf",
+   "listing": "https://www.coa.gov.ph/reports/annual-audit-reports/aar-local-government-units/",
+   "note": "Property, plant and equipment amount printed as ₱36.630 million (entered as 36630000). Charges ₱0.00."
+  },
+  {
+   "entity": "Municipality of Barira",
+   "entityAsPrinted": "Municipality of Barira, Maguindanao",
+   "entityType": "municipality",
+   "area": "maguindanao-del-norte",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": 534200.0,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 17,
+   "priorRecommendations": {
+    "total": 9,
+    "implemented": 5,
+    "partial": 4,
+    "notImplemented": null
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment could not be verified because no physical inventory was done or reported.",
+     "amount": 552158028.33,
+     "page": 4
+    },
+    {
+     "text": "Real property tax receivable was not recorded for three years, 2018 to 2020.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Amounts owed to other government agencies remained unpaid in the Trust Fund out of the inter-agency payables.",
+     "amount": 2045096.03,
+     "page": 5
+    },
+    {
+     "text": "A cash advance was liquidated without purchase requests, purchase orders and inspection reports.",
+     "amount": 534200.0,
+     "page": 5
+    },
+    {
+     "text": "Payments lacked supporting documents such as payrolls, certificates of appearance and official receipts.",
+     "amount": null,
+     "page": 5
+    },
+    {
+     "text": "Part of the Notices of Suspension issued remained unsettled at year-end.",
+     "amount": 534200.0,
+     "page": 6
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/Barira_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211128192303/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/Barira_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Observation 7 is about unimplemented prior-year recommendations; counted as an observation. Recommendations counted at numbered sub-item level (1.1.1–1.1.3, 1.2, 3.1–3.4, 4.1–4.2, 5.1–5.4). Not-implemented count not stated. Sub-item '48.2.2' appears garbled (should be 1.2.x)."
+  },
+  {
+   "entity": "Municipality of Buldon",
+   "entityAsPrinted": "Municipality of Buldon",
+   "entityType": "municipality",
+   "area": "maguindanao-del-norte",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": 448575.0,
+   "unliquidatedCashAdvances": null,
+   "observations": 8,
+   "recommendations": 12,
+   "priorRecommendations": {
+    "total": 11,
+    "implemented": 9,
+    "partial": 2,
+    "notImplemented": null
+   },
+   "findings": [
+    {
+     "text": "Real property tax, education tax and amounts due from other towns were left uncollected or untransferred, overstating receivables and understating income.",
+     "amount": 112997030.31,
+     "page": 4
+    },
+    {
+     "text": "Property, plant and equipment could not be verified because no physical inventory was done.",
+     "amount": 38452899.71,
+     "page": 5
+    },
+    {
+     "text": "The Bayanihan Grant (COVID-19 grant) could not be verified: no monthly utilization reports and insufficient supporting documents.",
+     "amount": 15108166.0,
+     "page": 7
+    },
+    {
+     "text": "Supplies inventory exceeded two months' needs and no physical count report was submitted.",
+     "amount": 8279976.93,
+     "page": 5
+    },
+    {
+     "text": "All maintenance spending was lumped into 'other operating expenses' instead of specific accounts.",
+     "amount": 3015000.0,
+     "page": 6
+    }
+   ],
+   "document": "Executive Summary with full AAR",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/Buldon_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211111205151/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/Buldon_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Full AAR bundle; Executive Summary on PDF pages 1-8. Suspensions/disallowances section mentions only the ₱448,575.00 suspension; disallowances not stated. Observation 3's recommendation is deeply nested (committee membership list); counted 2 (create committee; submit count report). Observation 8 is the unsettled suspension itself."
+  },
+  {
+   "entity": "Municipality of Datu Blah T. Sinsuat",
+   "entityAsPrinted": "Municipality of Datu Blah T. Sinsuat",
+   "entityType": "municipality",
+   "area": "maguindanao-del-norte",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 5,
+   "recommendations": 8,
+   "priorRecommendations": {
+    "total": 3,
+    "implemented": null,
+    "partial": null,
+    "notImplemented": 3
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment is unreliable: no physical count, no subsidiary ledger entries, and no property records kept.",
+     "amount": 39802662.74,
+     "page": 3
+    },
+    {
+     "text": "Supplies bought during the year were booked straight to expense instead of through inventory accounts.",
+     "amount": 22652068.26,
+     "page": 3
+    },
+    {
+     "text": "Bayanihan Grant (COVID-19 grant) monthly utilization reports and disbursement vouchers were not prepared or submitted, nor posted online.",
+     "amount": 9198228.0,
+     "page": 3
+    },
+    {
+     "text": "Cash in bank cannot be verified because no monthly bank reconciliations were prepared for 2020.",
+     "amount": 2769094.8,
+     "page": 2
+    },
+    {
+     "text": "Accounts and financial reports were submitted late, preventing timely audit.",
+     "amount": null,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuBlahSinsuat_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211111205235/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuBlahSinsuat_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Summary says the auditor 'does not issued Notice of Suspension due non submission of the needed documents', so suspensions/disallowances left null rather than 0. Highlights show garbled increase figures ('136,702.688.43') and odd percentages."
+  },
+  {
+   "entity": "Municipality of Datu Odin Sinsuat",
+   "entityAsPrinted": "Municipality of Datu Odin Sinsuat, Maguindanao",
+   "entityType": "municipality",
+   "area": "maguindanao-del-norte",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": 0,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 14,
+   "priorRecommendations": {
+    "total": 6,
+    "implemented": 4,
+    "partial": 2,
+    "notImplemented": null
+   },
+   "findings": [
+    {
+     "text": "Inventories bought during the year were charged straight to expenses instead of being recorded as inventory.",
+     "amount": 113526515.1,
+     "page": 4
+    },
+    {
+     "text": "Property, plant and equipment existence and accuracy could not be confirmed: no physical inventory, no subsidiary ledger, no property records.",
+     "amount": 74655233.97,
+     "page": 5
+    },
+    {
+     "text": "Domestic loans payable are unreliable because loan records from the bank, GSIS and the municipality were missing.",
+     "amount": 32073359.0,
+     "page": 6
+    },
+    {
+     "text": "Real property taxes from delinquent taxpayers were not collected and legal remedies were not used.",
+     "amount": 7905708.26,
+     "page": 5
+    },
+    {
+     "text": "Bayanihan Grant fund utilization reports and disbursement vouchers were not prepared, submitted or posted online.",
+     "amount": 25421708.0,
+     "page": 7
+    },
+    {
+     "text": "Projects under the 20% Development Fund could not be confirmed to exist because the engineer issued no completion inspection reports.",
+     "amount": 17015000.0,
+     "page": 8
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuOdinSinsuat_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211120102111/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuOdinSinsuat_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Five 'favorable observations' (commendations) excluded from the count; only the 7 deficiency observations counted. Loan recommendations counted as 3 (4.5.1–4.5.3), not their sub-items. PPE figure conflicts: ₱174,655,233.97 in opinion vs ₱74,655,233.97 in observation 3 (total assets only ₱164.7M, so 174M likely a typo). Suspensions issued ₱12,065,053.57 (vs ₱2,066,053.57 in favorable observation 2) stated as settled at year-end, entered as 0. Prior-year total refers to 'observations'."
+  },
+  {
+   "entity": "Municipality of Kabuntalan",
+   "entityAsPrinted": "Municipality of Kabuntalan",
+   "entityType": "municipality",
+   "area": "maguindanao-del-norte",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 5,
+   "recommendations": 6,
+   "priorRecommendations": {
+    "total": 4,
+    "implemented": 3,
+    "partial": null,
+    "notImplemented": 1
+   },
+   "findings": [
+    {
+     "text": "The amount Due to GSIS could not be verified for lack of documents and remained unremitted.",
+     "amount": 26770870.79,
+     "page": 4
+    },
+    {
+     "text": "Dormant receivables in the General and Trust Funds were carried in the books for years, making the year-end balance unreliable.",
+     "amount": 5247951.56,
+     "page": 3
+    },
+    {
+     "text": "Real property tax receivable was not adjusted for set-up or collections, making it doubtful.",
+     "amount": 2630000.22,
+     "page": 3
+    },
+    {
+     "text": "Special education tax receivable was not adjusted for set-up or collections, making it doubtful.",
+     "amount": 1575561.61,
+     "page": 3
+    },
+    {
+     "text": "Notices of Suspension issued in 2020 remained unsettled at year-end.",
+     "amount": 273744.0,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/Kabuntalan_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211123182652/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/Kabuntalan_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "CONFLICT on suspensions: observation 5 says 273,744.00 remained unsettled at Dec 31, 2020, but the summary (p4) says it was all settled; suspensions left null. Disallowances not addressed."
+  },
+  {
+   "entity": "Municipality of Ampatuan",
+   "entityAsPrinted": "Municipality of Ampatuan",
+   "entityType": "municipality",
+   "area": "maguindanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 0,
+   "unliquidatedCashAdvances": null,
+   "observations": 6,
+   "recommendations": 7,
+   "priorRecommendations": {
+    "total": 4,
+    "implemented": 2,
+    "partial": null,
+    "notImplemented": null
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment could not be verified because no year-end inventory report was submitted.",
+     "amount": 114227594.23,
+     "page": 3
+    },
+    {
+     "text": "Local road networks were recorded as assets without any inventory of local roads to support them.",
+     "amount": 21982326.58,
+     "page": 3
+    },
+    {
+     "text": "Trial balances, journal entry vouchers and budget reports were submitted late, delaying audit.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Obligation requests lacked the program or project details needed to show where spending was charged.",
+     "amount": null,
+     "page": 4
+    },
+    {
+     "text": "No reports of accountability for accountable forms were submitted, preventing timely audit of accountabilities.",
+     "amount": null,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/Ampatuan_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211130005100/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/Ampatuan_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Disallowance row shows '-' (taken as 0). Suspension settled amount is OCR/print-garbled ('989,3836.84'); ending balance 0.00. Prior: 'the other were partially implemented' gives no number, so partial left null (implies 2). Obs 2 has 2 recommendation paragraphs."
+  },
+  {
+   "entity": "Municipality of Buluan",
+   "entityAsPrinted": "Municipality of Buluan",
+   "entityType": "municipality",
+   "area": "maguindanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": 0,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 7,
+   "priorRecommendations": {
+    "total": 9,
+    "implemented": 6,
+    "partial": null,
+    "notImplemented": 3
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment of ₱127 million could not be verified because the annual physical inventory was again not conducted.",
+     "amount": 127280565.59,
+     "page": 4
+    },
+    {
+     "text": "Equipment values differ by ₱31.7 million between the Statement of Financial Position and the notes, so valuation is uncertain.",
+     "amount": 31677792.87,
+     "page": 5
+    },
+    {
+     "text": "Other Payables of ₱15 million could not be verified because management did not submit the list of creditors.",
+     "amount": 14989614.5,
+     "page": 5
+    },
+    {
+     "text": "Disbursement vouchers and supporting documents for May to December 2020 were not submitted to auditors.",
+     "amount": null,
+     "page": 5
+    },
+    {
+     "text": "Reports on projects under the 20% development fund and the Annual Investment Plan were not submitted.",
+     "amount": null,
+     "page": 6
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/Buluan_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211123182701/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/Buluan_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Opinion paragraph says 'as of December 31, 2019' though rest refers to 2020 (likely typo). Suspensions of ₱3,998,455.47 issued, 'All were settled at year end', so 0. Disallowances not stated. Partially implemented not stated."
+  },
+  {
+   "entity": "Municipality of Datu Abdullah Sangki",
+   "entityAsPrinted": "Municipality of Datu Abdullah Sangki",
+   "entityType": "municipality",
+   "area": "maguindanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 9783577.61,
+   "suspensions": 0,
+   "unliquidatedCashAdvances": null,
+   "observations": 6,
+   "recommendations": 9,
+   "priorRecommendations": {
+    "total": 8,
+    "implemented": 4,
+    "partial": 3,
+    "notImplemented": 1
+   },
+   "findings": [
+    {
+     "text": "Disallowances remained outstanding at year-end; the disallowance is under appeal with the Commission.",
+     "amount": 9783577.61,
+     "page": 6
+    },
+    {
+     "text": "Cash balance was doubtful because bank reconciliation statements were not regularly prepared or submitted.",
+     "amount": 26898227.51,
+     "page": 3
+    },
+    {
+     "text": "Loans payable were not disclosed in the notes and the current portion was not shown as a current liability.",
+     "amount": 4613125.02,
+     "page": 3
+    },
+    {
+     "text": "Payments were made by bank fund transfer form instead of by check or cash, against accounting rules.",
+     "amount": 4090232.91,
+     "page": 5
+    },
+    {
+     "text": "Fuel and oil spending was not effectively controlled or accounted for.",
+     "amount": 897500.0,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuAbdullahSangki_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211112104300/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuAbdullahSangki_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Errata (PDF p7) corrects 'Two (3)' to 'Three (3)' partially implemented. Suspension row shows '-' (taken as 0)."
+  },
+  {
+   "entity": "Municipality of Datu Anggal Midtimbang",
+   "entityAsPrinted": "Municipality of Datu Anggal Midtimbang",
+   "entityType": "municipality",
+   "area": "maguindanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 11,
+   "priorRecommendations": {
+    "total": 9,
+    "implemented": 1,
+    "partial": 4,
+    "notImplemented": 4
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment, 91% of total assets, could not be validated because management repeatedly failed to do a physical count.",
+     "amount": 37629027.79,
+     "page": 4
+    },
+    {
+     "text": "Local road networks were recorded as assets without any road inventory to support them.",
+     "amount": 26575887.89,
+     "page": 3
+    },
+    {
+     "text": "Purchases were made without canvass documents, so it is unclear the best offer was obtained.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Final and creditable taxes were not withheld on government payments, understating taxes remitted to the Bureau of Internal Revenue.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Paid disbursement vouchers, check reports and disbursement reports for 2020 were not submitted or were delayed.",
+     "amount": null,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuAnggalMidtimbang_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211112111306/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuAnggalMidtimbang_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Prior-year figures and quote from the errata (PDF page 6); original printing omitted the 4 not implemented. Suspensions/disallowances not addressed."
+  },
+  {
+   "entity": "Municipality of Datu Hoffer Ampatuan",
+   "entityAsPrinted": "Municipality of Datu Hoffer Ampatuan",
+   "entityType": "municipality",
+   "area": "maguindanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 883105.91,
+   "unliquidatedCashAdvances": null,
+   "observations": 9,
+   "recommendations": 12,
+   "priorRecommendations": {
+    "total": 6,
+    "implemented": 3,
+    "partial": 0,
+    "notImplemented": 3
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment of ₱71.2 million is misstated because depreciation on Trust Fund assets was not recorded.",
+     "amount": 71175386.66,
+     "page": 4
+    },
+    {
+     "text": "Cash of ₱18 million is doubtful because bank reconciliation statements were not regularly prepared.",
+     "amount": 17970938.12,
+     "page": 4
+    },
+    {
+     "text": "A ₱10 million Trust Fund contract and its documents were not submitted to auditors within five days.",
+     "amount": 10000000.0,
+     "page": 3
+    },
+    {
+     "text": "Projects reported completed under the 20% development fund had not been inspected to confirm they exist.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Audit suspensions of ₱883,105.91 remained unsettled at year-end.",
+     "amount": 883105.91,
+     "page": 5
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuHofferAmpatuan_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211120102104/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuHofferAmpatuan_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Prior-year counts from table (no sentence); partially implemented shown as '-', recorded as 0. Disallowance row '-'."
+  },
+  {
+   "entity": "Municipality of Datu Paglas",
+   "entityAsPrinted": "Municipality of Datu Paglas",
+   "entityType": "municipality",
+   "area": "maguindanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 6,
+   "recommendations": 7,
+   "priorRecommendations": {
+    "total": 6,
+    "implemented": 3,
+    "partial": 0,
+    "notImplemented": 3
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment across all funds could not be verified because the physical count report was not submitted.",
+     "amount": 199261159.99,
+     "page": 4
+    },
+    {
+     "text": "Cash in bank cannot be verified because bank reconciliations were not regularly prepared; this drove the qualified opinion.",
+     "amount": 10517959.96,
+     "page": 3
+    },
+    {
+     "text": "Emergency COVID-19 purchases lacked the required documents, putting the validity of payments in question.",
+     "amount": null,
+     "page": 4
+    },
+    {
+     "text": "Infrastructure contract documents were not sent to the auditor within five working days.",
+     "amount": null,
+     "page": 3
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuPaglas_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211130005057/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuPaglas_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Prior status given only as a table (6/3/0/3). Cash in bank printed ₱10,517,956.96 in the opinion but P10,517,959.96 in finding 3. Financial highlights table looks garbled (assets 13,367 vs equity 198,586, in thousands). No suspensions/disallowances section."
+  },
+  {
+   "entity": "Municipality of Datu Piang",
+   "entityAsPrinted": "Municipality of Datu Piang",
+   "entityType": "municipality",
+   "area": "maguindanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 9,
+   "priorRecommendations": {
+    "total": 3,
+    "implemented": 1,
+    "partial": 1,
+    "notImplemented": 1
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment worth ₱38.4 million (65.70% of assets) is unreliable because no physical inventory was conducted.",
+     "amount": 38377091.74,
+     "page": 3
+    },
+    {
+     "text": "Extraordinary and miscellaneous expenses paid exceeded the limit set by the Local Government Code.",
+     "amount": 7173876.5,
+     "page": 4
+    },
+    {
+     "text": "Spending on gender, disaster risk, senior citizen, disability and child protection programs lacked complete supporting documents.",
+     "amount": 1398875.0,
+     "page": 3
+    },
+    {
+     "text": "Government equity entries in the General and Trust Funds changed accounting policy without justification, casting doubt on the balance.",
+     "amount": 3126418.9,
+     "page": 5
+    },
+    {
+     "text": "Common-use supplies were bought locally instead of from the government's central procurement service, and contracts were not submitted to auditors.",
+     "amount": null,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/download/1974/maguindanao/27399/datu-piang-executive-summary-2020.pdf",
+   "archived": "https://web.archive.org/web/20240808085109/https://www.coa.gov.ph/download/1974/maguindanao/27399/datu-piang-executive-summary-2020.pdf",
+   "alsoAt": [
+    "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuPiang_Maguindanao_ES2020.pdf"
+   ],
+   "listing": "https://www.coa.gov.ph/reports/annual-audit-reports/aar-local-government-units/",
+   "note": "A favorable observation (Bayanihan Grant reporting) is numbered 1 separately before the 7 deficiencies; excluded from count. Section F on suspensions/disallowances gives no figures. Prior-year counts from table (no sentence). Government equity: General Fund (3,131,418.90), Trust Fund 3,126,418.90."
+  },
+  {
+   "entity": "Municipality of Datu Salibo",
+   "entityAsPrinted": "Municipality of Datu Salibo",
+   "entityType": "municipality",
+   "area": "maguindanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 3,
+   "recommendations": 5,
+   "priorRecommendations": {
+    "total": 4,
+    "implemented": 2,
+    "partial": 1,
+    "notImplemented": 1
+   },
+   "findings": [
+    {
+     "text": "As in previous years, property, plant and equipment of ₱37.9 million remained doubtful because no physical inventory was taken.",
+     "amount": 37924795.13,
+     "page": 3
+    },
+    {
+     "text": "Common-use supplies were bought locally instead of from the government's central procurement service.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Government contracts were not submitted to auditors, delaying review and correction of deficiencies.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Paid disbursement vouchers for the fourth quarter of 2020 and their supporting documents were not submitted.",
+     "amount": null,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuSalibo_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211130005102/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuSalibo_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Favorable observation (LDRRM fund) numbered separately; excluded. 'Substantially implemented' recorded as implemented (table shows 'Fully Implemented 2'). Suspension/disallowance section gives no figures."
+  },
+  {
+   "entity": "Municipality of Datu Saudi-Ampatuan",
+   "entityAsPrinted": "Municipality of Datu Saudi Ampatuan",
+   "entityType": "municipality",
+   "area": "maguindanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 0,
+   "unliquidatedCashAdvances": null,
+   "observations": 4,
+   "recommendations": 6,
+   "priorRecommendations": {
+    "total": null,
+    "implemented": 2,
+    "partial": 0,
+    "notImplemented": 1
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment was unreliable because no physical count was done and no count report submitted.",
+     "amount": 90951224.94,
+     "page": 3
+    },
+    {
+     "text": "Gender and Development funds were underused, at 15.13% of the GAD budget of 5,176,205.40.",
+     "amount": 783205.4,
+     "page": 3
+    },
+    {
+     "text": "Real property tax and special education tax receivables were not set up at the start of the year, understating those accounts.",
+     "amount": null,
+     "page": 4
+    },
+    {
+     "text": "Common-use supplies were bought locally instead of from the Procurement Service of the Department of Budget and Management.",
+     "amount": null,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuSaudiAmpatuan_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20210924163420/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuSaudiAmpatuan_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "4 numbered favorable observations excluded; 4 deficiency observations counted. Prior status from a table with no stated total. Suspensions (693,000.00) and disallowances (19,700.00) were all settled; year-end 0.00."
+  },
+  {
+   "entity": "Municipality of Datu Unsay",
+   "entityAsPrinted": "Municipality of Datu Unsay, Maguindanao",
+   "entityType": "municipality",
+   "area": "maguindanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": 1219130.74,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 9,
+   "priorRecommendations": {
+    "total": 8,
+    "implemented": 4,
+    "partial": null,
+    "notImplemented": 4
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment balance was not supported by a complete inventory report or ledger cards, so its existence could not be established.",
+     "amount": 333788427.91,
+     "page": 3
+    },
+    {
+     "text": "Cash in bank could not be verified because no monthly bank reconciliation statements were prepared.",
+     "amount": 7136785.97,
+     "page": 2
+    },
+    {
+     "text": "Depreciation was not recorded on property and equipment, understating expenses and overstating assets and income.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Unspent Quick Response Fund balance was not transferred to the Special Trust Fund as required.",
+     "amount": 1625425.52,
+     "page": 4
+    },
+    {
+     "text": "Notices of Suspension issued during the year remained unsettled at year-end.",
+     "amount": 1219130.74,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuUnsay_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211112114313/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuUnsay_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Observation 5 (gender budget) is mostly a commendation but notes underuse of ₱209,702.40; counted. Partially-implemented count not stated."
+  },
+  {
+   "entity": "Municipality of Gen. S. K. Pendatun",
+   "entityAsPrinted": "Municipality of Gen. Salipada K. Pendatun",
+   "entityType": "municipality",
+   "area": "maguindanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 0,
+   "unliquidatedCashAdvances": null,
+   "observations": 5,
+   "recommendations": 5,
+   "priorRecommendations": {
+    "total": 6,
+    "implemented": 4,
+    "partial": 2,
+    "notImplemented": null
+   },
+   "findings": [
+    {
+     "text": "Property worth this amount is doubtful because no physical inventory was done or reconciled with records; this drove the qualified opinion.",
+     "amount": 54765075.61,
+     "page": 4
+    },
+    {
+     "text": "Bank reconciliations were not updated monthly and treasury and accounting records not reconciled, so cash balances cannot be confirmed.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "No waste material reports were prepared for spare parts bought for vehicle and equipment repairs, casting doubt on those transactions.",
+     "amount": null,
+     "page": 4
+    },
+    {
+     "text": "Copies of contracts and purchase orders were not furnished to the auditor, delaying review.",
+     "amount": null,
+     "page": 5
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/GSKPendatun_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211112114315/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/GSKPendatun_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Suspensions: 'All Suspensions are already settled prior to year-end'; disallowances: 'No Disallowances issued for the CY 2020' (0 means none issued in 2020). Cash figure in finding 1 is garbled ('₱1641, 270.56'), so amount left null."
+  },
+  {
+   "entity": "Municipality of Guindulungan",
+   "entityAsPrinted": "Municipality of Guindulungan",
+   "entityType": "municipality",
+   "area": "maguindanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 10148738.79,
+   "unliquidatedCashAdvances": null,
+   "observations": 9,
+   "recommendations": 14,
+   "priorRecommendations": {
+    "total": 11,
+    "implemented": 4,
+    "partial": 1,
+    "notImplemented": 6
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment of ₱125 million could not be verified because no complete physical count or proper ledger cards existed.",
+     "amount": 124988745.97,
+     "page": 4
+    },
+    {
+     "text": "Road networks of ₱38.4 million were recorded without any road inventory.",
+     "amount": 38381183.75,
+     "page": 3
+    },
+    {
+     "text": "Depreciation was not recorded on infrastructure assets of ₱41 million, distorting asset, income and equity balances.",
+     "amount": 40985828.75,
+     "page": 5
+    },
+    {
+     "text": "Audit suspensions grew to ₱10.1 million at year-end, including ₱5.8 million from 2018 still unsettled.",
+     "amount": 10148738.79,
+     "page": 6
+    },
+    {
+     "text": "Proper final and creditable taxes were not withheld on payments, understating taxes remitted to the Bureau of Internal Revenue.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Negotiated purchases skipped canvassing, so the town could not show it got the best offer.",
+     "amount": null,
+     "page": 3
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/Guindulungan_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211120102107/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/Guindulungan_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Item 9 in the numbered list is the suspension/disallowance summary table; excluded, so 9 observations. Item 10 has two recommendation paragraphs (counted 2). 2019 expenses printed '85,4801' (OCR garble, unused)."
+  },
+  {
+   "entity": "Municipality of Mamasapano",
+   "entityAsPrinted": "Municipality of Mamasapano",
+   "entityType": "municipality",
+   "area": "maguindanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 1727206.7,
+   "unliquidatedCashAdvances": null,
+   "observations": 8,
+   "recommendations": 12,
+   "priorRecommendations": {
+    "total": 6,
+    "implemented": 3,
+    "partial": null,
+    "notImplemented": 3
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment, 84.66% of total assets, is unreliable because the town never submitted a physical count report and kept no ledger cards; this drove the qualified opinion.",
+     "amount": 79545190.63,
+     "page": 3
+    },
+    {
+     "text": "Equipment and other property were not depreciated for 2020, overstating assets and understating expenses.",
+     "amount": 19367742.01,
+     "page": 2
+    },
+    {
+     "text": "The local road network balance has no inventory report identifying the roads or their cost.",
+     "amount": 18838235.0,
+     "page": 2
+    },
+    {
+     "text": "Extraordinary and miscellaneous expenses exceeded the legal cap because unrelated spending was charged to that account.",
+     "amount": 3894545.42,
+     "page": 3
+    },
+    {
+     "text": "Infrastructure projects funded by the 20% Development Fund were not submitted to auditors for contract review and inspection.",
+     "amount": null,
+     "page": 3
+    }
+   ],
+   "document": "Executive Summary with full AAR",
+   "pdf": "https://www.coa.gov.ph/download/1974/maguindanao/27396/mamasapano-executive-summary-2020.pdf",
+   "archived": "https://web.archive.org/web/20240809011825/https://www.coa.gov.ph/download/1974/maguindanao/27396/mamasapano-executive-summary-2020.pdf",
+   "alsoAt": [
+    "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/Mamasapano_Maguindanao_ES2020.pdf"
+   ],
+   "listing": "https://www.coa.gov.ph/reports/annual-audit-reports/aar-local-government-units/",
+   "note": "Full AAR bundle; Executive Summary on PDF pages 1-5. Prior status printed 'two (3) were not implemented'; 3 used since 3+3=6, partial not stated. Notes to FS (Part I) show 'Receivables – Disallowances/ Charges 5,720,266.14' (OCR, totals do not add up) despite ND row 0.00 in the summary table; disallowances taken from the summary table."
+  },
+  {
+   "entity": "Municipality of Mangudadatu",
+   "entityAsPrinted": "Municipality of Mangudadatu, Maguindanao",
+   "entityType": "municipality",
+   "area": "maguindanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": 0,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 8,
+   "priorRecommendations": {
+    "total": 9,
+    "implemented": 5,
+    "partial": 1,
+    "notImplemented": 3
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment could not be verified because no annual physical inventory was done or reported.",
+     "amount": 31820277.71,
+     "page": 5
+    },
+    {
+     "text": "Cash balance could not be verified because the cashbook, journal entry vouchers and subsidiary ledgers were not submitted.",
+     "amount": 2635913.89,
+     "page": 5
+    },
+    {
+     "text": "Amounts payable to GSIS, Pag-IBIG and PhilHealth were not remitted.",
+     "amount": 1950148.13,
+     "page": 3
+    },
+    {
+     "text": "Disbursement vouchers and check and disbursement reports for October–December 2020 were not submitted.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Notes to the financial statements omitted the amounts of assets, liabilities and equity.",
+     "amount": null,
+     "page": 3
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/Mangudadatu_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211128192309/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/Mangudadatu_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "PDF pages out of order: observations 3–5 on PDF page 3, 1–2 on page 5, 6–7 on page 6. Recommendation 1 counted as 2 (1.1 Treasurer, 1.2 Accountant). Suspensions issued ₱8,581,190.40 'All were settled at year-end', entered as 0. Asset increase printed '4,4460' (garbled; table shows 4,460)."
+  },
+  {
+   "entity": "Municipality of Pagagawan (then Datu Montawal)",
+   "entityAsPrinted": "Municipality of Datu Montawal",
+   "entityType": "municipality",
+   "area": "maguindanao-del-sur",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 8,
+   "priorRecommendations": {
+    "total": 7,
+    "implemented": 5,
+    "partial": 0,
+    "notImplemented": 2
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment was uncertain and unreliable: no physical inventory, no count report and no subsidiary ledgers or cards.",
+     "amount": 121032031.89,
+     "page": 2
+    },
+    {
+     "text": "Rice and other goods bought for distribution had no list of beneficiaries, making the transactions doubtful.",
+     "amount": null,
+     "page": 4
+    },
+    {
+     "text": "Bank reconciliation statements were not regularly prepared, casting doubt on the cash balance.",
+     "amount": 3241531.68,
+     "page": 3
+    },
+    {
+     "text": "No reports of collections and deposits were submitted for audit in 2020.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Infrastructure contract documents were not given to the auditor within 5 working days, delaying review.",
+     "amount": null,
+     "page": 3
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuMontawal_Maguindanao_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211123182451/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Maguindanao/DatuMontawal_Maguindanao_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Prior status from the OCR Errata (PDF p5), correcting the table's 4 implemented/3 not to 5/2; partial 0 from original table. PPE printed as 121,082,031.89 in the opinion but 121,032,031.89 in the finding. Intro wrongly says CY 2019 audit. Financial highlights table figures look garbled. Disallowances/suspensions not addressed."
+  },
+  {
+   "entity": "Municipality of Banguingui",
+   "entityAsPrinted": "Municipality of Banguingui (Tongkil), Sulu",
+   "entityType": "municipality",
+   "area": "sulu",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 8,
+   "recommendations": 17,
+   "priorRecommendations": {
+    "total": 26,
+    "implemented": 1,
+    "partial": 20,
+    "notImplemented": 5
+   },
+   "findings": [
+    {
+     "text": "COVID-19 funds were spent so quickly that claims lacked proper supporting documents, and the documents were not fully submitted for audit.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "No supply or property records and no physical count for COVID-19 purchases, inventories or property, so the zero inventory balance and property balances are unreliable.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Documents for the 20% Development Fund, disaster fund, gender fund and other special funds were not submitted, so their proper use could not be established.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Required taxes on goods and services were neither deducted nor withheld.",
+     "amount": null,
+     "page": 4
+    },
+    {
+     "text": "Suspended transactions stayed unsettled beyond the 90-day limit, risking disallowance.",
+     "amount": null,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Sulu/Banguingui_Sulu_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211208080246/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Sulu/Banguingui_Sulu_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Executive summary gives no peso amounts for findings and no suspension/disallowance balances. Prior status counts are in a list under the quoted sentence (Fully 1, Partially 20, Not 5)."
+  },
+  {
+   "entity": "Municipality of Kalingalan Caluang",
+   "entityAsPrinted": "Municipality of Kalingalan Caluang",
+   "entityType": "municipality",
+   "area": "sulu",
+   "year": 2020,
+   "opinion": "disclaimer",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 16,
+   "priorRecommendations": {
+    "total": 24,
+    "implemented": 5,
+    "partial": 12,
+    "notImplemented": 7
+   },
+   "findings": [
+    {
+     "text": "All transaction documents for July to December 2020 were not submitted, which led auditors to disclaim an opinion.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "COVID-19 funds were spent so fast that claims were not properly documented, and the documents were not submitted for audit.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "No property records or physical counts were kept for COVID-19 inventories and equipment, making those balances unreliable.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Large audit suspensions remained unsettled past the 90-day period, which could lead to disallowances.",
+     "amount": null,
+     "page": 4
+    },
+    {
+     "text": "Spending under the 20% development fund, gender fund and other special funds lacked documents, so its propriety cannot be established.",
+     "amount": null,
+     "page": 4
+    },
+    {
+     "text": "Paid vouchers were not stamped 'PAID', risking reuse of the same documents.",
+     "amount": null,
+     "page": 5
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Sulu/Kalingalan_Sulu_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20220105123533/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Sulu/Kalingalan_Sulu_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Summary gives no peso figures for suspensions, disallowances or any finding. Prior-year counts from a list, not a sentence."
+  },
+  {
+   "entity": "Municipality of Luuk",
+   "entityAsPrinted": "Municipality of Luuk",
+   "entityType": "municipality",
+   "area": "sulu",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": 0,
+   "observations": 11,
+   "recommendations": 18,
+   "priorRecommendations": {
+    "total": 9,
+    "implemented": 0,
+    "partial": 8,
+    "notImplemented": 1
+   },
+   "findings": [
+    {
+     "text": "COVID-19 emergency purchases of medical supplies and equipment lacked enough supporting documents to justify the claims.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "No inventory committee was created, so property was not fully counted and several year-end balances were wrong.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Cash advances granted in 2020 were all liquidated by year-end, but liquidations were not promptly submitted to the auditor.",
+     "amount": 2773057.0,
+     "page": 3
+    },
+    {
+     "text": "Real property tax and special education tax receivables were not set up, making receivable balances unreliable.",
+     "amount": null,
+     "page": 4
+    },
+    {
+     "text": "Supplies were charged straight to expense instead of through inventory, and stock cards were not kept.",
+     "amount": null,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Sulu/Luuk_Sulu_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211208080249/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Sulu/Luuk_Sulu_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "unliquidatedCashAdvances 0 because the report says all 2020 cash advances were liquidated as at year end. Prior counts from a short list under the quoted sentence. Disallowances/suspensions not addressed."
+  },
+  {
+   "entity": "Municipality of Panglima Estino",
+   "entityAsPrinted": "Municipality of Panglima Estino",
+   "entityType": "municipality",
+   "area": "sulu",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 7,
+   "recommendations": 7,
+   "priorRecommendations": {
+    "total": 10,
+    "implemented": 1,
+    "partial": 3,
+    "notImplemented": 6
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment balance is of doubtful validity because no inventory report was prepared or submitted.",
+     "amount": 53242988.95,
+     "page": 3
+    },
+    {
+     "text": "COVID-19 emergency purchases of medical goods lacked enough supporting documents to substantiate the claims.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "Cash advances for projects and expenses were given to the Municipal Treasurer without a specific legal purpose.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Internal controls over requisition, delivery and issuance of supplies weakened during the pandemic, risking wasteful use.",
+     "amount": null,
+     "page": 3
+    },
+    {
+     "text": "Deliveries of office supplies were not presented to the audit team for inspection.",
+     "amount": null,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Sulu/PanglimaEstino_Sulu_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211209070452/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Sulu/PanglimaEstino_Sulu_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Prior-year status given only as a table (1 fully, 3 partially, 6 not implemented); total 10 counted from it. Suspensions/disallowances not addressed."
+  },
+  {
+   "entity": "Municipality of Pangutaran",
+   "entityAsPrinted": "Municipality of Pangutaran",
+   "entityType": "municipality",
+   "area": "sulu",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": null,
+   "unliquidatedCashAdvances": null,
+   "observations": 3,
+   "recommendations": 3,
+   "priorRecommendations": {
+    "total": 8,
+    "implemented": 0,
+    "partial": 1,
+    "notImplemented": 7
+   },
+   "findings": [
+    {
+     "text": "The property inventory report is still incomplete, leaving the property balance of doubtful validity.",
+     "amount": 222765034.56,
+     "page": 2
+    },
+    {
+     "text": "Infrastructure projects under the 20% Local Development Fund have yet to be inspected by COA engineers to confirm they exist.",
+     "amount": 26791516.0,
+     "page": 2
+    },
+    {
+     "text": "Emergency COVID-19 purchases of medical supplies and equipment lacked enough supporting documents, leading to audit delays and suspensions.",
+     "amount": null,
+     "page": 2
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Sulu/Pangutaran_Sulu_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20211208080252/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Sulu/Pangutaran_Sulu_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "No suspensions/disallowances section. Prior status counts are in a list under the quoted sentence (Implemented 0, Partial 1, Not 7)."
+  },
+  {
+   "entity": "Municipality of Languyan",
+   "entityAsPrinted": "Municipality of Languyan",
+   "entityType": "municipality",
+   "area": "tawi-tawi",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 0,
+   "unliquidatedCashAdvances": null,
+   "observations": 5,
+   "recommendations": 10,
+   "priorRecommendations": {
+    "total": 5,
+    "implemented": null,
+    "partial": 4,
+    "notImplemented": 1
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment of ₱157 million could not be verified because the physical inventory was not updated.",
+     "amount": 157282980.94,
+     "page": 4
+    },
+    {
+     "text": "Prior-year payables to the Government Service Insurance System of ₱2.4 million remained unreconciled and unremitted.",
+     "amount": 2411108.65,
+     "page": 4
+    },
+    {
+     "text": "Real property tax collection was only 0.49%: ₱30,450 out of ₱6.2 million due.",
+     "amount": 30450.0,
+     "page": 3
+    },
+    {
+     "text": "Financial reports and paid vouchers were submitted late, delaying the audit.",
+     "amount": null,
+     "page": 4
+    },
+    {
+     "text": "Insurable assets were not insured with the government insurance fund, risking uncompensated losses.",
+     "amount": null,
+     "page": 5
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Tawi-Tawi/Languyan_TawiTawi_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20220104031046/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Tawi-Tawi/Languyan_TawiTawi_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Finding 1 has a lead recommendation paragraph plus a-c (counted 4). Implemented count not stated. Suspension table header says 'issued for CY 2019' but ending balance is as of Dec 31, 2020 (0.00); disallowance row '-'."
+  },
+  {
+   "entity": "Municipality of Panglima Sugala",
+   "entityAsPrinted": "Municipality of Panglima Sugala",
+   "entityType": "municipality",
+   "area": "tawi-tawi",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 0,
+   "unliquidatedCashAdvances": null,
+   "observations": 4,
+   "recommendations": 9,
+   "priorRecommendations": {
+    "total": 4,
+    "implemented": null,
+    "partial": 3,
+    "notImplemented": 1
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment could not be verified because the physical inventory was not updated.",
+     "amount": 450305707.98,
+     "page": 4
+    },
+    {
+     "text": "Real property tax collection was only 9.66% of the amount due, losing income for development projects.",
+     "amount": 76848.75,
+     "page": 3
+    },
+    {
+     "text": "Financial reports and paid vouchers were submitted late, delaying the audit.",
+     "amount": null,
+     "page": 4
+    },
+    {
+     "text": "Insurable assets were not insured with the GSIS General Insurance Fund, risking uncompensated loss.",
+     "amount": null,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Tawi-Tawi/PanglimaSugala_TawiTawi_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20220105123552/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Tawi-Tawi/PanglimaSugala_TawiTawi_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "PPE net book value conflicts: 204,423,345.50 in opinion vs 450,305,707.98 in observation 2. Disallowance row '-' (taken as 0); suspensions all settled, year-end 0.00. Obs 1 recommendations counted as 1 paragraph + a-c (4); recommendations appear copied from a provincial template."
+  },
+  {
+   "entity": "Municipality of Tandubas",
+   "entityAsPrinted": "Municipality of Tandubas",
+   "entityType": "municipality",
+   "area": "tawi-tawi",
+   "year": 2020,
+   "opinion": "qualified",
+   "disallowances": 0,
+   "suspensions": 0.0,
+   "unliquidatedCashAdvances": null,
+   "observations": 4,
+   "recommendations": 9,
+   "priorRecommendations": {
+    "total": 3,
+    "implemented": null,
+    "partial": 2,
+    "notImplemented": 1
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment could not be verified because the municipality did not update its physical inventory.",
+     "amount": 298018565.75,
+     "page": 3
+    },
+    {
+     "text": "Real property tax collection was low, at 47.17% of the amount due.",
+     "amount": 108599.15,
+     "page": 3
+    },
+    {
+     "text": "Financial reports and paid vouchers were not submitted on time, delaying the audit.",
+     "amount": null,
+     "page": 4
+    },
+    {
+     "text": "Insurable assets were not insured with the GSIS General Insurance Fund, risking uncompensated loss.",
+     "amount": null,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Tawi-Tawi/Tandubas_TawiTawi_ES2020.pdf",
+   "archived": "https://web.archive.org/web/20220105123558/https://www.coa.gov.ph/phocadownloadpap/userupload/annual_audit_report/LGUs/2020/BARMM/Municipalities/Tawi-Tawi/Tandubas_TawiTawi_ES2020.pdf",
+   "listing": "https://www.coa.gov.ph/index.php/local-government-units/2020/category/9260-bangsamoro-autonomous-region-in-muslim-mindanao-barmm",
+   "note": "Observations misnumbered 1,1,2,3; counted 4. Observation 1 recommendation counted as lead paragraph plus a–c (4). Opinion cites PPE value 'for CY 2019'. Disallowance row shows '-'; suspensions ending balance 0.00. Fully-implemented count not stated."
+  },
+  {
+   "entity": "Municipality of Madalum",
+   "entityAsPrinted": "Municipality of Madalum",
+   "entityType": "municipality",
+   "area": "lanao-del-sur",
+   "year": 2021,
+   "opinion": "qualified",
+   "disallowances": null,
+   "suspensions": 7189005.84,
+   "unliquidatedCashAdvances": null,
+   "observations": 5,
+   "recommendations": 14,
+   "priorRecommendations": {
+    "total": 48,
+    "implemented": 13,
+    "partial": 11,
+    "notImplemented": 24
+   },
+   "findings": [
+    {
+     "text": "Property, plant and equipment could not be relied on because no physical count was done and no count report was submitted.",
+     "amount": 113912532.88,
+     "page": 2
+    },
+    {
+     "text": "Cash advances for salaries and operating expenses, poorly supported, were given to personnel who were not bonded or formally designated, risking loss or misuse.",
+     "amount": 52087814.27,
+     "page": 3
+    },
+    {
+     "text": "Welfare goods, medicines and supplies were recorded and issued without proper inventory controls, risking loss, waste or misappropriation.",
+     "amount": null,
+     "page": 2
+    },
+    {
+     "text": "Remittances of GSIS, Pag-IBIG, PhilHealth and BIR deductions were made late.",
+     "amount": null,
+     "page": 4
+    },
+    {
+     "text": "Notices of Suspension remained outstanding at year-end.",
+     "amount": 7189005.84,
+     "page": 4
+    }
+   ],
+   "document": "Executive Summary",
+   "pdf": "https://www.coa.gov.ph/download/5360/lanao-del-sur/70247/madalum-executive-summary-2021.pdf",
+   "archived": "https://web.archive.org/web/20230411142730/https://www.coa.gov.ph/download/5360/lanao-del-sur/70247/madalum-executive-summary-2021.pdf",
+   "listing": "https://www.coa.gov.ph/reports/annual-audit-reports/aar-local-government-units/",
+   "note": "Prior-year figures taken from the erratum on PDF page 5 (as originally published: 38 total, 10 fully, 12 partially, 16 not implemented). Disallowances not addressed; only suspensions stated."
+  }
+ ],
+ "gaps": [
+  {
+   "entity": "City of Marawi",
+   "entityType": "city",
+   "area": "lanao-del-sur",
+   "year": 2019,
+   "pdf": "https://www.coa.gov.ph/download/476/lanao-del-sur/6712/marawi-city-executive-summary-2019.pdf",
+   "archived": "https://web.archive.org/web/20240205011743/https://www.coa.gov.ph/download/476/lanao-del-sur/6712/marawi-city-executive-summary-2019.pdf",
+   "reason": "The only Wayback capture is a 403 Cloudflare page; the PDF itself was never archived."
+  },
+  {
+   "entity": "City of Marawi",
+   "entityType": "city",
+   "area": "lanao-del-sur",
+   "year": 2021,
+   "pdf": "https://www.coa.gov.ph/download/5383/lanao-del-sur/70430/marawi-city-executive-summary-2021.pdf",
+   "archived": "https://web.archive.org/web/20240329104127/https://www.coa.gov.ph/download/5383/lanao-del-sur/70430/marawi-city-executive-summary-2021.pdf",
+   "reason": "The only Wayback capture is a 403 Cloudflare page; the PDF itself was never archived."
+  },
+  {
+   "entity": "Bangsamoro Autonomous Region in Muslim Mindanao (consolidated regional AAR) and each ministry, office and attached agency",
+   "entityType": "regional",
+   "years": "2019-2024",
+   "reason": "coa.gov.ph returns a Cloudflare 403 to every automated request (checked 2026-10-12), and the Internet Archive holds no copy of this report. The Wayback CDX for coa.gov.ph/download/, /phocadownloadpap/ and /phocadownload/ has no BARMM National Government Sector report for any year."
+  },
+  {
+   "entity": "Provinces of Basilan, Lanao del Sur, Maguindanao (to 2022), Maguindanao del Norte, Maguindanao del Sur, Tawi-Tawi and Sulu (to 2023)",
+   "entityType": "province",
+   "years": "2019-2024",
+   "reason": "coa.gov.ph returns a Cloudflare 403 to every automated request (checked 2026-10-12), and the Internet Archive holds no copy of this report."
+  },
+  {
+   "entity": "Cotabato City",
+   "entityType": "city",
+   "area": "cotabato-city",
+   "years": "2019-2024",
+   "reason": "coa.gov.ph returns a Cloudflare 403 to every automated request (checked 2026-10-12), and the Internet Archive holds no copy of this report."
+  },
+  {
+   "entity": "Every municipality and city, FY 2019 and FY 2021-2024 (except Madalum 2021)",
+   "entityType": "municipality",
+   "years": "2019, 2021-2024",
+   "reason": "coa.gov.ph returns a Cloudflare 403 to every automated request (checked 2026-10-12), and the Internet Archive holds no copy of this report. The old COA site (archived to early 2022) carried FY 2020 reports; the current site's per-LGU downloads were almost never archived."
+  },
+  {
+   "entity": "49 BARMM municipalities with no report at all for any year",
+   "entityType": "municipality",
+   "list": [
+    "Akbar (basilan)",
+    "Lamitan (basilan)",
+    "Maluso (basilan)",
+    "Tabuan-Lasa (basilan)",
+    "Tuburan (basilan)",
+    "Ungkaya Pukan (basilan)",
+    "Balabagan (lanao-del-sur)",
+    "Kapatagan (lanao-del-sur)",
+    "Madamba (lanao-del-sur)",
+    "Maguing (lanao-del-sur)",
+    "Marantao (lanao-del-sur)",
+    "Masiu (lanao-del-sur)",
+    "Mulondo (lanao-del-sur)",
+    "Pagayawan (lanao-del-sur)",
+    "Piagapo (lanao-del-sur)",
+    "Picong (lanao-del-sur)",
+    "Poona Bayabao (lanao-del-sur)",
+    "Pualas (lanao-del-sur)",
+    "Saguiaran (lanao-del-sur)",
+    "Sultan Dumalondong (lanao-del-sur)",
+    "Tagoloan II (lanao-del-sur)",
+    "Tamparan (lanao-del-sur)",
+    "Taraka (lanao-del-sur)",
+    "Tubaran (lanao-del-sur)",
+    "Wao (lanao-del-sur)",
+    "Matanog (maguindanao-del-norte)",
+    "Northern Kabuntalan (maguindanao-del-norte)",
+    "Parang (maguindanao-del-norte)",
+    "Sultan Kudarat (maguindanao-del-norte)",
+    "Sultan Mastura (maguindanao-del-norte)",
+    "Talitay (maguindanao-del-norte)",
+    "Upi (maguindanao-del-norte)",
+    "Pagalungan (maguindanao-del-sur)",
+    "Paglat (maguindanao-del-sur)",
+    "Pandag (maguindanao-del-sur)",
+    "Rajah Buayan (maguindanao-del-sur)",
+    "Shariff Aguak (maguindanao-del-sur)",
+    "Shariff Saydona Mustapha (maguindanao-del-sur)",
+    "South Upi (maguindanao-del-sur)",
+    "Sultan Sa Barongis (maguindanao-del-sur)",
+    "Talayan (maguindanao-del-sur)",
+    "Bongao (tawi-tawi)",
+    "Mapun (tawi-tawi)",
+    "Sapa-Sapa (tawi-tawi)",
+    "Sibutu (tawi-tawi)",
+    "Simunul (tawi-tawi)",
+    "Sitangkai (tawi-tawi)",
+    "South Ubian (tawi-tawi)",
+    "Turtle Islands (tawi-tawi)"
+   ],
+   "reason": "coa.gov.ph returns a Cloudflare 403 to every automated request (checked 2026-10-12), and the Internet Archive holds no copy of this report."
+  },
+  {
+   "entity": "Special Geographic Area municipalities (8)",
+   "entityType": "municipality",
+   "area": "special-geographic-area",
+   "reason": "Created in 2024; no COA report yet for any year that could be read."
+  }
+ ]
+}

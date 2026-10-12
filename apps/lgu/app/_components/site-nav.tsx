@@ -24,6 +24,7 @@ const guides = [
 const finances = [
 	{ href: '/finances', label: 'LGU finances' },
 	{ href: '/lgsf', label: 'Support fund (LGSF)' },
+	{ href: '/audits', label: 'COA audits' },
 	{ href: '/regional-budget', label: 'Regional budget' },
 ] as const
 

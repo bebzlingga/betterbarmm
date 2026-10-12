@@ -23,6 +23,8 @@ import {
 import { lguData, personName } from '@betterbarmm/lgu-data'
 import { barangayOfficials, unitRosters } from '@betterbarmm/lgu-data/barangay-officials'
 import { LguFinances } from '../../_components/lgu-finances'
+import { AuditFindings } from '../../_components/audit-findings'
+import { auditsFor } from '@betterbarmm/lgu-data/coa'
 import { LguDisclosure } from '../../_components/lgu-disclosure'
 import { NtaChart } from '../../_components/nta-chart'
 import { LgsfReceived } from '../../_components/lgsf-received'
@@ -235,6 +237,18 @@ export default async function UnitPage({
 						</h2>
 						<div className='mt-6'>
 							<LguFinances unitKey={key} name={unit.name} recognition={false} />
+						</div>
+					</section>
+
+					<section className='mt-20'>
+						<h2 id='audits' className={H2}>
+							What the auditor found
+						</h2>
+						<p className='mt-3 max-w-[46rem] text-[14px] leading-6 text-[var(--ink-3)]'>
+							The Commission on Audit&rsquo;s yearly report on {unit.name}&rsquo;s books, in plain words.
+						</p>
+						<div className='mt-6'>
+							<AuditFindings reports={auditsFor(key)} name={unit.name} />
 						</div>
 					</section>
 				</div>
