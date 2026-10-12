@@ -125,7 +125,7 @@ export function NoticesExplorer({
 
 			<ul className={data ? '' : 'opacity-50'}>
 				{data?.rows.map((n) => (
-					<li key={`${n.ref}-${n.date}`} className='grid gap-x-28 gap-y-2 border-b border-[var(--rule)] py-4 sm:grid-cols-[minmax(0,1fr)_auto]'>
+					<li key={`${n.ref}-${n.date}`} className='grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-5 border-b border-[var(--rule)] py-4 sm:gap-x-28'>
 						<div className='min-w-0'>
 							<p className='font-[family-name:var(--font-display)] text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>{n.group}</p>
 							<p className='mt-1 text-[14.5px] font-semibold leading-6 text-[var(--ink)]'>{n.title ?? n.category ?? 'Untitled notice'}</p>
@@ -151,10 +151,17 @@ export function NoticesExplorer({
 								</p>
 							))}
 						</div>
-						<div className='sm:self-center sm:text-right'>
+						<div className='text-right sm:self-center'>
 							<p className='num text-[16px] font-semibold text-[var(--ink)]'>{n.abc == null ? '—' : peso(n.abc)}</p>
 							<p className={`mt-1 text-[11.5px] ${n.stage === 'Open for bids' ? 'font-semibold text-[var(--accent)]' : 'text-[var(--ink-3)]'}`}>
-								{n.stage === 'Open for bids' && n.closing ? `Closes ${longDate(n.closing)}` : n.stage}
+								{n.stage === 'Open for bids' && n.closing ? (
+									<>
+										Closes <br className='sm:hidden' />
+										{longDate(n.closing)}
+									</>
+								) : (
+									n.stage
+								)}
 							</p>
 						</div>
 					</li>
