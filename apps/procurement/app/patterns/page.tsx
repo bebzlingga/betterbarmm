@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
    An index of the five up top, each with its one figure; then each in a
    band of its own: the claim and its figure left, what it rests on and
-   what else could explain it right, and the evidence under both.
+   what else could explain it right, in one paragraph, and the evidence under both.
    ============================================================ */
 
 const TH = 'py-2.5 pr-6 text-[11px] font-semibold uppercase tracking-[0.08em] text-[var(--ink-3)] last:pr-0'
@@ -64,12 +64,10 @@ function Pattern({
 						</p>
 					</div>
 					<div className='lg:pt-7'>
-						<p className='text-[14px] leading-[1.7] text-[var(--ink-2)]'>{lead}</p>
-						{/* The innocent reasons, set apart so they are read, not skimmed past. */}
-						<div className={`mt-5 border-l-2 border-[var(--brass)] px-4 py-3 ${tint ? 'bg-[var(--paper)]' : 'bg-[var(--paper-2)]'}`}>
-							<p className='text-[10.5px] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>Could also be</p>
-							<p className='mt-1.5 text-[13.5px] leading-[1.65] text-[var(--ink-2)]'>{also}</p>
-						</div>
+						{/* What the pattern is, then the innocent reasons that also produce it. */}
+						<p className='text-[14px] leading-[1.7] text-[var(--ink-2)]'>
+							{lead} {also}
+						</p>
 					</div>
 				</header>
 				<div className='mt-12'>
