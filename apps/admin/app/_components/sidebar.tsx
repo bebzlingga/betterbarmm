@@ -8,6 +8,7 @@ import {
   CheckSquareOffsetIcon,
   ClockCounterClockwiseIcon,
   CoinsIcon,
+  FlagIcon,
   MagnifyingGlassIcon,
   MapTrifoldIcon,
   MegaphoneIcon,
@@ -32,6 +33,7 @@ const WORKSPACE_ICONS: Record<string, Icon> = {
 export function Sidebar({
   pending,
   reviewPosts,
+  newReports,
   workspaces,
   isAdmin,
   footer,
@@ -40,6 +42,8 @@ export function Sidebar({
   pending: number;
   /** Social posts waiting for an approver. */
   reviewPosts: number;
+  /** Reader error reports not yet closed. */
+  newReports: number;
   workspaces: NavWorkspace[];
   isAdmin: boolean;
   /** The signed-in account and its sign-out, rendered on the server. */
@@ -64,6 +68,7 @@ export function Sidebar({
           {item("/", "Overview", SquaresFourIcon)}
           {item("/updates", "Updates", ArrowsClockwiseIcon, pending)}
           {item("/social", "Social", MegaphoneIcon, reviewPosts)}
+          {item("/reports", "Reports", FlagIcon, newReports)}
           {item("/explainers", "Explainers", ArticleIcon)}
           {item("/activity", "Activity", ClockCounterClockwiseIcon)}
           {item("/search", "Search", MagnifyingGlassIcon)}

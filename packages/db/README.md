@@ -26,7 +26,7 @@ cannot write anything.
 ## Setup (once)
 
 1. Create a Supabase project.
-2. In the SQL editor, run `migrations/0001_cms.sql`, `0002_history.sql`, `0003_updates.sql` and `0004_social.sql`, in that order.
+2. In the SQL editor, run `migrations/0001_cms.sql`, `0002_history.sql`, `0003_updates.sql`, `0004_social.sql` and `0005_reports.sql`, in that order.
 3. Authentication → Sign In / Providers: turn **off** "Allow new users to sign up".
    Editors are invited instead (Authentication → Users → Invite).
 4. Copy `.env.example` at the repo root to `.env`, and add the same two
@@ -117,3 +117,11 @@ Setup, once:
    `FACEBOOK_PAGE_ACCESS_TOKEN` (server-only — never `NEXT_PUBLIC_`) and,
    optionally, `FACEBOOK_PAGE_NAME` for the preview. The Social page shows
    "Facebook connected" once they are set.
+
+## Reader error reports
+
+Every page on the estate ends with "Spotted an error on this page? Tell us",
+which opens betterbarmm.com/report with the page's address filled in. Reports
+go into the `reports` table (`0005_reports.sql`): anyone may file one with the
+public key, only editors can read them. The admin's **Reports** page lists new
+ones; close each as **Fixed** (say what changed) or **Not an error** (say why).

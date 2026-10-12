@@ -69,6 +69,18 @@ export type Profile = {
 	created_at: string
 }
 
+export type Report = {
+	id: string
+	page_url: string
+	message: string
+	contact: string | null
+	status: 'new' | 'fixed' | 'dismissed'
+	resolution: string
+	resolved_by_email: string
+	resolved_at: string | null
+	created_at: string
+}
+
 export type SocialStatus = 'draft' | 'in_review' | 'scheduled' | 'posted' | 'failed'
 
 export type SocialPost = {

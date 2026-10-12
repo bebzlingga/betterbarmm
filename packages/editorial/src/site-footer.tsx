@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { BrandLogo } from './brand-logo'
 import { LineReveal, Rise, Stagger, StaggerItem } from './motion'
+import { ReportErrorLink } from './report-error'
 
 export type FooterLink = { href: string; label: string }
 
@@ -264,7 +265,12 @@ export function SiteFooter({
 					</Stagger>
 				</div>
 
-				<div className='mt-16 flex flex-col justify-between gap-2 border-t border-[var(--rule)] pt-6 font-mono text-[10.5px] uppercase tracking-[0.12em] text-[var(--ink-mute)] sm:flex-row sm:items-center lg:mt-20'>
+				{/* Every page on the estate can be corrected by the people reading it. */}
+				<div className='mt-16 lg:mt-20'>
+					<ReportErrorLink className='text-[14px] font-semibold text-[var(--ink)] transition hover:text-[var(--brass)]' />
+				</div>
+
+				<div className='mt-8 flex flex-col justify-between gap-2 border-t border-[var(--rule)] pt-6 font-mono text-[10.5px] uppercase tracking-[0.12em] text-[var(--ink-mute)] sm:flex-row sm:items-center'>
 					<p>2026 betterbarmm.com — public domain unless otherwise specified</p>
 					<p>
 						{bottomRight ?? (
