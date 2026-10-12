@@ -1,4 +1,5 @@
 import { BuildingsIcon, CheckSquareOffsetIcon, CoinsIcon, HouseIcon, ScrollIcon, ShoppingCartIcon } from '@phosphor-icons/react/ssr'
+import { GlobalSearch } from './global-search'
 import { SwitchCloser } from './switch-closer'
 
 /* ============================================================
@@ -129,7 +130,9 @@ export function UtilityBar({
 				<SwitchCloser />
 
 				<nav aria-label='Project links' className='flex items-center gap-4 sm:gap-5'>
-					{links.map((link) => {
+					{/* Search opens in place rather than leaving for the /search page. */}
+					{links.some((link) => link.href === '/search') ? <GlobalSearch base={base} /> : null}
+					{links.filter((link) => link.href !== '/search').map((link) => {
 						const external = isAbsolute(link.href)
 						return (
 							<a

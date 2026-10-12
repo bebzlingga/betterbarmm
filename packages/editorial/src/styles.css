@@ -1711,12 +1711,13 @@
   align-self: center;
 }
 
-.bb-strip nav > button {
+/* The theme switch; not the search, which is a link-shaped button. */
+.bb-strip nav > button:not(.utility-bar-link) {
   width: 1.75rem;
   height: 1.75rem;
 }
 
-.bb-strip nav > button svg {
+.bb-strip nav > button:not(.utility-bar-link) svg {
   width: 15px;
   height: 15px;
 }
