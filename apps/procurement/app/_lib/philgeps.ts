@@ -318,3 +318,79 @@ export const topCategories = (() => {
 	for (const n of notices) if (n.category) tally.set(n.category, (tally.get(n.category) ?? 0) + (n.abc ?? 0))
 	return top(tally, 15)
 })()
+
+/* ---- Patterns worth a second look -----------------------------------------
+   Each is a signal for a reader to check, not a finding: a budget can sit at
+   a ceiling because that is what the item costs, and an office can post many
+   small notices in a day for many small events. The page says so. */
+
+/** RA 9184's small-value ceiling for national and regional offices, the one most notices here fell under. */
+export const SVP_CEILING = 1_000_000
+
+/** Notices' approved budgets around the ceiling, in ₱10,000 steps from ₱700,000 to ₱1.3M. */
+export const bunching = (() => {
+	const step = 10_000
+	const from = 700_000
+	const bins = Array.from({ length: 60 }, (_, i) => ({ from: from + i * step, count: 0 }))
+	for (const n of notices) {
+		if (n.abc == null || n.abc < from || n.abc >= from + 60 * step) continue
+		bins[Math.floor((n.abc - from) / step)]!.count += 1
+	}
+	const within = (lo: number, hi: number) => notices.filter((n) => n.abc != null && n.abc >= lo && n.abc < hi).length
+	const byOffice = new Map<number, number>()
+	for (const n of notices) if (n.abc != null && n.abc >= 0.99 * SVP_CEILING && n.abc < SVP_CEILING) byOffice.set(n.entity, (byOffice.get(n.entity) ?? 0) + 1)
+	return {
+		bins,
+		step,
+		justBelow: within(0.9 * SVP_CEILING, SVP_CEILING),
+		justAbove: within(SVP_CEILING, 1.1 * SVP_CEILING),
+		lastPercent: within(0.99 * SVP_CEILING, SVP_CEILING),
+		offices: [...byOffice.entries()]
+			.map(([entity, count]) => ({ entity: entities[entity]!, count, total: entityTotals[entity]!.all.notices }))
+			.sort((a, b) => b.count - a.count)
+			.slice(0, 15),
+	}
+})()
+
+/**
+ * One office, one category, one day: several notices each under the ceiling
+ * that together pass it. Splitting a purchase to stay under a threshold is
+ * prohibited; these are where to look for it.
+ */
+export const sameDayClusters = (() => {
+	const groups = new Map<string, Notice[]>()
+	for (const n of notices) {
+		if (!n.date || !n.category || n.abc == null) continue
+		const k = `${n.entity}|${n.category}|${n.date}`
+		groups.set(k, [...(groups.get(k) ?? []), n])
+	}
+	return [...groups.values()]
+		.filter((g) => g.length >= 2 && g.every((n) => n.abc! < SVP_CEILING) && g.reduce((s, n) => s + n.abc!, 0) >= SVP_CEILING)
+		.map((g) => ({ entity: entities[g[0]!.entity]!, category: g[0]!.category!, date: g[0]!.date!, count: g.length, total: g.reduce((s, n) => s + n.abc!, 0) }))
+		.sort((a, b) => b.total - a.total)
+})()
+
+/** Offices where one supplier won half or more of the awards (of at least 10). */
+export const dominantSuppliers = (() => {
+	const pairs = new Map<string, { entity: number; supplier: string; awards: number; amount: number }>()
+	const perOffice = new Map<number, number>()
+	for (const n of notices)
+		for (const a of n.awards) {
+			const k = `${n.entity}|${a.awardee}`
+			const p = pairs.get(k) ?? { entity: n.entity, supplier: a.awardee, awards: 0, amount: 0 }
+			p.awards += 1
+			p.amount += a.amount ?? 0
+			pairs.set(k, p)
+			perOffice.set(n.entity, (perOffice.get(n.entity) ?? 0) + 1)
+		}
+	return [...pairs.values()]
+		.map((p) => ({ ...p, entity: entities[p.entity]!, of: perOffice.get(p.entity)! }))
+		.filter((p) => p.of >= 10 && p.awards / p.of >= 0.5)
+		.sort((a, b) => b.awards / b.of - a.awards / a.of)
+})()
+
+/** Notices whose awards add up to more than the approved budget, which the law does not allow. */
+export const overBudget = notices
+	.map((n) => ({ notice: n, entity: entities[n.entity]!, awarded: n.awards.reduce((s, a) => s + (a.amount ?? 0), 0) }))
+	.filter((x) => x.notice.abc && x.awarded > x.notice.abc * 1.0001)
+	.sort((a, b) => b.awarded - b.notice.abc! - (a.awarded - a.notice.abc!))
