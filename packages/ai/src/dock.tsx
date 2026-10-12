@@ -283,7 +283,7 @@ const OPENERS = [
  * component that returns early before calling them is a component that breaks
  * the moment this flips back to true.
  */
-export const JO = true
+export const JO = false
 
 export function AskDock() {
 	const [open, setOpen] = useState(false)
