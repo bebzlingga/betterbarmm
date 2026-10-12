@@ -245,7 +245,7 @@ export function SiteFooter({
 					    wraps inside it rather than claiming the row and squeezing the blurb. */}
 					<Stagger gap={0.08} className='grid gap-x-8 gap-y-10 sm:grid-cols-3 sm:gap-x-10'>
 						{[...columns, { title: 'Workspaces', links: WORKSPACES }].map((column) => (
-							<StaggerItem key={column.title} className='min-w-[10rem] max-w-[15rem]' distance={12}>
+							<StaggerItem key={column.title} className='sm:min-w-[10rem] sm:max-w-[15rem]' distance={12}>
 								<p className='border-b border-[var(--brass-line)] pb-2.5 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--ink)]'>
 									{column.title}
 								</p>
