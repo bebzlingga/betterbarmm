@@ -316,5 +316,5 @@ function top(tally: Map<string, number>, count = 10) {
 export const topCategories = (() => {
 	const tally = new Map<string, number>()
 	for (const n of notices) if (n.category) tally.set(n.category, (tally.get(n.category) ?? 0) + (n.abc ?? 0))
-	return top(tally)
+	return top(tally, 15)
 })()
