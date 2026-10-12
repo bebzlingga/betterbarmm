@@ -1,0 +1,46 @@
+# Hourly, or on demand from the admin's "Publish approved now": write
+# approved updates and admin edits into datasets/, commit to main, and let
+# the sites redeploy.
+#
+# Secrets: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY.
+
+name: Publish updates
+
+on:
+  schedule:
+    - cron: '15 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: publish-updates
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+      - run: bun db:publish
+      - name: Commit
+        run: |
+          if git diff --quiet -- datasets; then
+            echo "Nothing changed in datasets/"
+          else
+            git config user.name "BetterBARMM updates"
+            git config user.email "support@betterbarmm.com"
+            git add datasets
+            git commit -m "data: publish approved updates"
+            git push
+          fi
+      # Only once the commit is pushed, so a failed push leaves them approved
+      # for the next run to try again.
+      - run: bun db:publish --mark

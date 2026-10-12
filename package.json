@@ -15,7 +15,9 @@
 		"format": "bun run prettier --write .",
 		"all": "bun run turbo lint build",
 		"db:seed": "bun packages/db/scripts/seed.ts",
-		"db:pull": "bun packages/db/scripts/pull.ts"
+		"db:pull": "bun packages/db/scripts/pull.ts",
+		"db:propose": "bun packages/db/scripts/propose.ts",
+		"db:publish": "bun packages/db/scripts/publish.ts"
 	},
 	"dependencies": {
 		"next": "16.2.6",

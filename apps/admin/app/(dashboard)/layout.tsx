@@ -5,13 +5,19 @@ import { requireEditor } from "../_lib/auth";
 import { signOut } from "../login/actions";
 
 export default async function DashboardLayout({ children }: { children: React.ReactNode }) {
-  const { profile } = await requireEditor();
+  const { supabase, profile } = await requireEditor();
+  // What the nightly fetch found and nobody has looked at yet.
+  const { count: pending } = await supabase
+    .from("proposals")
+    .select("id", { count: "exact", head: true })
+    .eq("status", "pending");
 
   const groups: NavGroup[] = [
     {
       label: "Content",
       items: [
         { href: "/", label: "Overview" },
+        { href: "/updates", label: pending ? `Updates (${pending})` : "Updates" },
         { href: "/explainers", label: "Explainers" },
         { href: "/activity", label: "Activity" },
       ],

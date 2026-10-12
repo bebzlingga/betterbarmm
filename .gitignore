@@ -56,3 +56,4 @@ datasets/bills/.pdf-cache/
 **/.barangay-officials-cache.jsonl
 **/.openhalalan/
 __pycache__/
+.publish.json

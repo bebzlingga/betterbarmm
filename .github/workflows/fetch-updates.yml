@@ -1,0 +1,63 @@
+# Nightly: re-read the sources and file what changed as proposals in the
+# admin's Updates page. This job never commits — an editor approves first,
+# and publish-updates.yml writes approved work to the site.
+#
+# Secrets: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY.
+
+name: Fetch updates
+
+on:
+  schedule:
+    - cron: '0 18 * * *' # 02:00 in Manila
+  workflow_dispatch:
+
+concurrency:
+  group: fetch-updates
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      RUN_ID: ${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: bun install --frozen-lockfile
+
+      # ---- Parliament: acts, bills and resolutions, with authors and status ----
+      - name: Read Parliament
+        id: parliament
+        continue-on-error: true
+        run: python3 datasets/bills/scripts/fetch_measure_authors.py --all
+      - name: Propose Parliament changes
+        if: steps.parliament.outcome == 'success'
+        run: >
+          bun db:propose "$RUN_ID"
+          legislation/acts-index legislation/bills-index
+          legislation/proposed-index legislation/adopted-index
+
+      # ---- PhilGEPS: one dataset, reviewed whole ----
+      - name: Read PhilGEPS
+        id: philgeps
+        continue-on-error: true
+        run: |
+          cp datasets/procurement/philgeps.json "$RUNNER_TEMP/philgeps.before.json"
+          python3 -c "import json; d=json.load(open('datasets/procurement/philgeps.json')); print('\n'.join(r[0] for r in d['notices'] if r[1] == 1))" \
+            | xargs python3 datasets/procurement/scripts/fetch_mphilgeps.py
+          python3 datasets/procurement/scripts/fetch_philgeps.py
+      - name: Propose PhilGEPS changes
+        if: steps.philgeps.outcome == 'success'
+        run: |
+          if git diff --quiet -- datasets/procurement/philgeps.json; then
+            echo "PhilGEPS: no changes"
+          else
+            summary=$(python3 datasets/procurement/scripts/summarize_update.py "$RUNNER_TEMP/philgeps.before.json" datasets/procurement/philgeps.json)
+            bun db:propose "$RUN_ID" --file procurement/philgeps.json --summary "$summary"
+          fi

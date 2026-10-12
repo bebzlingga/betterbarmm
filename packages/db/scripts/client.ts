@@ -1,5 +1,6 @@
 import { createClient, type SupabaseClient } from '@supabase/supabase-js'
 import { COLLECTIONS, type CollectionDef } from '../src/collections'
+import type { Row } from './files'
 
 /** A service-role client: scripts run on a trusted machine and bypass row-level security. */
 export function serviceClient() {
@@ -31,4 +32,30 @@ export async function markSynced(db: SupabaseClient, def: CollectionDef) {
 		.from('sync_state')
 		.upsert({ name: `${def.workspace}/${def.collection}`, at: new Date().toISOString() })
 	if (error) throw new Error(`sync_state: ${error.message}`)
+}
+
+/** Every record the database holds for a collection, in file order. */
+export async function fetchRecords(db: SupabaseClient, def: CollectionDef): Promise<Row[]> {
+	const PAGE = 1000
+	const rows: Row[] = []
+	for (let from = 0; ; from += PAGE) {
+		const { data, error } = await db
+			.from('records')
+			.select('key, data, position')
+			.eq('workspace', def.workspace)
+			.eq('collection', def.collection)
+			.order('position')
+			.order('key')
+			.range(from, from + PAGE - 1)
+		if (error) throw new Error(`${def.workspace}/${def.collection}: ${error.message}`)
+		rows.push(...(data as Row[]))
+		if (!data || data.length < PAGE) break
+	}
+	return rows
+}
+
+/** `legislation` or `legislation/readings` → the collections it names. */
+export function collectionsMatching(spec: string): CollectionDef[] {
+	const [workspace, collection] = spec.split('/')
+	return COLLECTIONS.filter((c) => c.workspace === workspace && (!collection || c.collection === collection))
 }

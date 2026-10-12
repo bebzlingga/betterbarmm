@@ -1,6 +1,7 @@
 import { createClient } from '@supabase/supabase-js'
 
 export * from './collections'
+export * from './updates'
 
 /** The workspaces an explainer can belong to — the same ones the site is split into. */
 export const EXPLAINER_CATEGORIES = [
