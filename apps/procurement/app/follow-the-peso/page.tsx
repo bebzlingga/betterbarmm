@@ -22,8 +22,11 @@ export default function FollowThePesoPage() {
 			/>
 			<section className='bb-container bb-section'>
 				<PesoTable rows={pesoRows} years={pesoYears} />
+			</section>
 
-				<div className='mt-14'>
+			{/* The notes on a light band of their own, under the table. */}
+			<section className='bg-[var(--paper-2)]'>
+				<div className='bb-container bb-section'>
 					<h2 className='text-[1.5rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Reading it</h2>
 					<p className={P}>
 						<strong>Budget to buy with</strong>{' '}is the office&rsquo;s maintenance and other operating expenses plus its
