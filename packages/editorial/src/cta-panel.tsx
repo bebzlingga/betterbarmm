@@ -73,7 +73,7 @@ export function CtaPanel({
           />
 
           <Rise delay={0.3} distance={14}>
-            <p className='mx-auto mt-8 max-w-[42em] bb-body text-[var(--ink-2)]'>
+            <p className='bb-measure mx-auto mt-8 bb-body text-[var(--ink-2)]'>
               {standfirst}
             </p>
           </Rise>
