@@ -87,9 +87,10 @@ export function NoticesExplorer({
 	}
 
 	return (
-		<div>
-			<div className='grid grid-cols-2 gap-3 pb-6 lg:grid-cols-[minmax(0,1fr)_repeat(5,10.5rem)] lg:items-end lg:gap-4 lg:pb-8'>
-				<div className='col-span-2 lg:col-span-1'>
+		<div className='@container'>
+			{/* Sized to its own width, not the screen's: an office page gives it less room. */}
+			<div className='grid grid-cols-2 items-end gap-3 pb-6 @2xl:grid-cols-5 @2xl:gap-4 @5xl:grid-cols-[minmax(0,1fr)_repeat(5,10.5rem)] lg:pb-8'>
+				<div className='col-span-full @5xl:col-span-1'>
 					<SearchField value={typed} onChange={setTyped} placeholder='Title, reference, category or supplier' />
 				</div>
 				<Select label='Notices' value={stage} onChange={(v) => reset(() => setStage(v))} options={STAGES} />

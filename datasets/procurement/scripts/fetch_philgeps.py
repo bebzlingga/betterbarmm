@@ -26,7 +26,7 @@ governments are matched to the LGU directory by name.
 
     python3 datasets/procurement/scripts/fetch_philgeps.py
 """
-import json, pathlib, re, sys, urllib.request, uuid
+import html, json, pathlib, re, sys, urllib.request, uuid
 from collections import Counter
 from datetime import date, datetime, timezone
 
@@ -188,7 +188,8 @@ def main():
     spellings = {}
     for a in awards:
         if a['Awardee']:
-            name = a['Awardee'].strip()
+            # Some arrive HTML-escaped ("&AMP;" for "&").
+            a['Awardee'] = name = html.unescape(re.sub(r'&(\w+);', lambda m: f'&{m.group(1).lower()};', a['Awardee'])).strip()
             spellings.setdefault(supplier_key(name), Counter())[name] += 1
     canonical = {k: c.most_common(1)[0][0] for k, c in spellings.items()}
     for a in awards:
