@@ -69,12 +69,7 @@ export default async function EntityPage({ params }: { params: Promise<{ entity:
 				</section>
 
 				<aside className='order-first lg:order-none'>
-					{entity.unit ? (
-						<a href={`https://lgu.betterbarmm.com/${entity.unit}`} className='rule-link text-[13px]'>
-							Its profile in the Local Government workspace
-						</a>
-					) : null}
-					<h2 className='mt-8 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Top suppliers</h2>
+					<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Top suppliers</h2>
 					{top.length ? (
 						<ol className='mt-4'>
 							{top.map(([name, s]) => (
@@ -92,6 +87,11 @@ export default async function EntityPage({ params }: { params: Promise<{ entity:
 					) : (
 						<p className='mt-3 text-[13px] leading-6 text-[var(--ink-3)]'>PhilGEPS records no award on this office&rsquo;s notices.</p>
 					)}
+					{entity.unit ? (
+						<a href={`https://lgu.betterbarmm.com/${entity.unit}`} className='rule-link mt-8 inline-block text-[13px]'>
+							Its profile in the Local Government workspace
+						</a>
+					) : null}
 				</aside>
 			</div>
 		</>
