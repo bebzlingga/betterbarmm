@@ -9,10 +9,10 @@ import { signOut } from "../login/actions";
 export default async function DashboardLayout({ children }: { children: React.ReactNode }) {
   const { supabase, profile } = await requireEditor();
   // What the nightly fetch found and nobody has looked at yet.
-  const { count: pending } = await supabase
-    .from("proposals")
-    .select("id", { count: "exact", head: true })
-    .eq("status", "pending");
+  const [{ count: pending }, { count: reviewPosts }] = await Promise.all([
+    supabase.from("proposals").select("id", { count: "exact", head: true }).eq("status", "pending"),
+    supabase.from("social_posts").select("id", { count: "exact", head: true }).eq("status", "in_review"),
+  ]);
 
   const workspaces: NavWorkspace[] = WORKSPACES.map((w) => ({
     value: w.value,
@@ -46,7 +46,7 @@ export default async function DashboardLayout({ children }: { children: React.Re
     </Link>
   );
 
-  const nav = <Sidebar pending={pending ?? 0} workspaces={workspaces} isAdmin={profile.role === "admin"} footer={account} />;
+  const nav = <Sidebar pending={pending ?? 0} reviewPosts={reviewPosts ?? 0} workspaces={workspaces} isAdmin={profile.role === "admin"} footer={account} />;
 
   return (
     <div className="min-h-screen lg:grid lg:grid-cols-[16rem_minmax(0,1fr)]">

@@ -7,13 +7,13 @@ export function ConfirmButton({
   children,
 }: {
   message: string;
-  variant?: "danger" | "secondary";
+  variant?: "danger" | "secondary" | "primary";
   children: React.ReactNode;
 }) {
   return (
     <button
       type="submit"
-      className={`btn ${variant === "danger" ? "btn-danger" : "btn-secondary btn-sm"}`}
+      className={`btn ${variant === "danger" ? "btn-danger" : variant === "primary" ? "btn-primary" : "btn-secondary btn-sm"}`}
       onClick={(event) => {
         if (!window.confirm(message)) event.preventDefault();
       }}

@@ -10,7 +10,10 @@ async function setRole(id: string, formData: FormData) {
   if (!["admin", "editor", "viewer"].includes(role)) throw new Error("Unknown role.");
   // Demoting yourself could leave the CMS with no admin at all.
   if (id === user.id) throw new Error("You cannot change your own role.");
-  const { error } = await supabase.from("profiles").update({ role }).eq("id", id);
+  const { error } = await supabase
+    .from("profiles")
+    .update({ role, can_approve_posts: formData.get("can_approve_posts") === "on" })
+    .eq("id", id);
   if (error) throw new Error(error.message);
   revalidatePath("/editors");
 }
@@ -21,7 +24,7 @@ export default async function EditorsPage() {
   if (error) throw new Error(error.message);
   const profiles = (data ?? []) as Profile[];
 
-  const roleNote = { admin: "Manages editors", editor: "Edits and approves", viewer: "Cannot sign in to the dashboard" } as const;
+  const roleNote = { admin: "Manages editors; approves posts", editor: "Edits records and updates", viewer: "Cannot sign in to the dashboard" } as const;
 
   return (
     <div>
@@ -31,7 +34,7 @@ export default async function EditorsPage() {
         description={
           <>
             Add people in Supabase → Authentication → Users → <strong className="font-medium text-[var(--ink-2)]">Create new user</strong>, with a
-            password. They appear here as viewers; make them editors to write and approve updates, or admins to manage editors too.
+            password. They appear here as viewers; make them editors to write and approve updates, or admins to manage editors too. Tick “Approves posts” for anyone who may send social posts out.
           </>
         }
       />
@@ -58,7 +61,11 @@ export default async function EditorsPage() {
                   <span className="mt-1 block">{roleNote[p.role]}</span>
                 </span>
               ) : (
-                <form action={setRole.bind(null, p.id)} className="flex items-center gap-2">
+                <form action={setRole.bind(null, p.id)} className="flex flex-wrap items-center gap-3">
+                  <label className="flex items-center gap-2 text-[13px] text-[var(--ink-2)]" title="May approve social posts before they go to Facebook">
+                    <input type="checkbox" name="can_approve_posts" defaultChecked={Boolean(p.can_approve_posts)} className="size-4 accent-[var(--accent)]" />
+                    Approves posts
+                  </label>
                   <select name="role" defaultValue={p.role} className="field !w-auto">
                     <option value="viewer">Viewer</option>
                     <option value="editor">Editor</option>

@@ -26,7 +26,7 @@ cannot write anything.
 ## Setup (once)
 
 1. Create a Supabase project.
-2. In the SQL editor, run `migrations/0001_cms.sql`, `0002_history.sql` and `0003_updates.sql`, in that order.
+2. In the SQL editor, run `migrations/0001_cms.sql`, `0002_history.sql`, `0003_updates.sql` and `0004_social.sql`, in that order.
 3. Authentication → Sign In / Providers: turn **off** "Allow new users to sign up".
    Editors are invited instead (Authentication → Users → Invite).
 4. Copy `.env.example` at the repo root to `.env`, and add the same two
@@ -89,3 +89,31 @@ Setup, once:
 
 By hand: `bun db:propose <run-id> legislation/proposed-index` files proposals
 from the files on disk; `bun db:publish` then `bun db:publish --mark` publishes.
+
+## Social posts
+
+The admin's **Social** page writes posts for BetterBARMM's Facebook Page.
+
+1. Anyone signed in writes a post (text, an optional link and image, an
+   optional time) and **submits it for review**.
+2. An **approver** — an admin, or an editor an admin has ticked "Approves
+   posts" for on the Editors page — approves it or sends it back with a note.
+   Nobody approves their own post unless they are an admin.
+3. Approving sends it to the Page: at once, or to Facebook's own scheduler for
+   the time set (at least 15 minutes ahead). The post's page then links to it.
+
+Setup, once:
+
+1. Run `migrations/0004_social.sql`. It adds the `social_posts` table, the
+   approver flag, and a public `social` storage bucket for images (Facebook
+   fetches a photo by its URL).
+2. Get a Page access token: in Meta for Developers, create an app (type
+   Business), add **Facebook Login for Business**, then in the Graph API
+   Explorer pick the app, add the permissions `pages_manage_posts`,
+   `pages_read_engagement` and `pages_show_list`, generate a user token, and
+   exchange it for a long-lived one. `GET /me/accounts` with that token lists
+   your Pages with their `id` and a Page `access_token` that does not expire.
+3. On the admin's Vercel project, add `FACEBOOK_PAGE_ID`,
+   `FACEBOOK_PAGE_ACCESS_TOKEN` (server-only — never `NEXT_PUBLIC_`) and,
+   optionally, `FACEBOOK_PAGE_NAME` for the preview. The Social page shows
+   "Facebook connected" once they are set.

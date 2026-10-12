@@ -64,7 +64,32 @@ export type Profile = {
 	email: string
 	name: string
 	role: 'admin' | 'editor' | 'viewer'
+	/** May approve social posts (admins always may). */
+	can_approve_posts?: boolean
 	created_at: string
+}
+
+export type SocialStatus = 'draft' | 'in_review' | 'scheduled' | 'posted' | 'failed'
+
+export type SocialPost = {
+	id: string
+	body: string
+	link: string | null
+	image_path: string | null
+	platforms: string[]
+	status: SocialStatus
+	scheduled_at: string | null
+	author_id: string | null
+	author_email: string
+	reviewer_id: string | null
+	reviewer_email: string
+	review_note: string
+	results: Record<string, { id?: string; url?: string; error?: string }>
+	submitted_at: string | null
+	decided_at: string | null
+	posted_at: string | null
+	created_at: string
+	updated_at: string
 }
 
 /** Lowercase, hyphenated, ASCII — what the explainers table accepts as a slug. */

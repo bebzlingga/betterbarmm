@@ -10,6 +10,7 @@ import {
   CoinsIcon,
   MagnifyingGlassIcon,
   MapTrifoldIcon,
+  MegaphoneIcon,
   ScrollIcon,
   SquaresFourIcon,
   UsersIcon,
@@ -30,12 +31,15 @@ const WORKSPACE_ICONS: Record<string, Icon> = {
 
 export function Sidebar({
   pending,
+  reviewPosts,
   workspaces,
   isAdmin,
   footer,
 }: {
   /** Updates waiting for a decision. */
   pending: number;
+  /** Social posts waiting for an approver. */
+  reviewPosts: number;
   workspaces: NavWorkspace[];
   isAdmin: boolean;
   /** The signed-in account and its sign-out, rendered on the server. */
@@ -59,6 +63,7 @@ export function Sidebar({
         <div className="space-y-0.5">
           {item("/", "Overview", SquaresFourIcon)}
           {item("/updates", "Updates", ArrowsClockwiseIcon, pending)}
+          {item("/social", "Social", MegaphoneIcon, reviewPosts)}
           {item("/explainers", "Explainers", ArticleIcon)}
           {item("/activity", "Activity", ClockCounterClockwiseIcon)}
           {item("/search", "Search", MagnifyingGlassIcon)}
