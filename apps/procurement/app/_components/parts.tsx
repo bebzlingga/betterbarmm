@@ -89,7 +89,7 @@ export function YearBars({ bars, caption, note }: { bars: { year: number; value:
 function Spark({ series, years }: { series: number[]; years: number[] }) {
 	const top = Math.max(...series, 1)
 	return (
-		<div className='mt-8'>
+		<div className='mb-6 mt-2'>
 			<div className='flex h-12 items-end gap-[6px]' aria-hidden='true'>
 				{series.map((v, i) => (
 					<span
@@ -131,11 +131,11 @@ export function Figures({
 			<dl className='bb-container grid grid-cols-2 gap-x-10 gap-y-10 pb-16 pt-10 lg:grid-cols-4 lg:gap-x-16 lg:pb-20 lg:pt-14'>
 				{items.map((item) => (
 					<div key={item.label} className='border-t border-[var(--rule)] pt-3'>
+						{item.series && years ? <Spark series={item.series} years={years} /> : null}
 						<dd className='num font-[family-name:var(--font-display)] text-[clamp(1.6rem,3.2vw,2.35rem)] font-black leading-none tracking-[-0.03em] text-[var(--ink)]'>
 							{item.value}
 						</dd>
 						<dt className='mt-2 text-[12.5px] text-[var(--ink-3)]'>{item.label}</dt>
-						{item.series && years ? <Spark series={item.series} years={years} /> : null}
 					</div>
 				))}
 			</dl>
