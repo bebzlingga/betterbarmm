@@ -67,7 +67,9 @@ export default function SourcesPage() {
 					<p className={P}>
 						PhilGEPS holds only what an office posts; a purchase never posted is not here. Titles and procurement
 						modes are published only for notices that reached an award, or were posted on the modernized PhilGEPS
-						since 2024; the rest show only their category. Awards on the modernized system are not yet published by
+						since 2024; the rest show only their category. Source of funds, closing dates and which notices are still open
+						come from the modernized system&rsquo;s own notice pages, so they exist only for notices posted there; the
+						older system&rsquo;s notice pages are no longer online. Awards on the modernized system are not yet published by
 						office. A few offices are filed under the wrong type, and names are as PhilGEPS writes them.
 					</p>
 					<p className={P}>
