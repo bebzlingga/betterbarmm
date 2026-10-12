@@ -90,11 +90,9 @@ export default function LgsfPage() {
 					<div>
 						<h2 className='text-[1.25rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>BARMM has a support fund of its own</h2>
 						<p className='mt-3 text-[15px] leading-7 text-[var(--ink-2)]'>
-							Besides DBM&rsquo;s, the Bangsamoro budget sets aside a Local Government Support Fund for the
-							region&rsquo;s provinces, cities, towns and barangays, renamed in FY 2026 the Sustainable Assistance
-							Mechanism for Local Moral Governance. Which local governments receive it, and for what, has not been
-							published yet, so none of it is in the list below. Each must report its use every quarter to MILG
-							and MFBM and post it under Full Disclosure; we will add it here once the recipients are out.
+							The Bangsamoro budget has its own support fund for local governments, renamed in FY 2026 the Sustainable
+							Assistance Mechanism for Local Moral Governance. Who receives it, and for what, is not yet published, so
+							it is not in the list below. We will add it once the recipients are out.
 						</p>
 					</div>
 					<figure className='m-0'>
