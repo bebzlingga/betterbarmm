@@ -1,24 +1,105 @@
 'use client'
 
-import { HandHeartIcon, SquaresFourIcon } from '@phosphor-icons/react'
+import { CaretDownIcon, HandHeartIcon, SquaresFourIcon } from '@phosphor-icons/react'
 import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo, UtilityMenuLinks } from '@betterbarmm/editorial'
 import { AnimatePresence, motion } from 'motion/react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { ThemeToggle } from './theme-toggle'
 
-/* The workspace's doors: who buys, what they put out, who wins, and where it
-   all comes from. */
-const pages = [
-	{ href: '/', label: 'Entities' },
-	{ href: '/notices', label: 'Bid notices' },
-	{ href: '/suppliers', label: 'Suppliers' },
-	{ href: '/patterns', label: 'Patterns' },
-	{ href: '/follow-the-peso', label: 'Follow the peso' },
-	{ href: '/how-it-works', label: 'How it works' },
-	{ href: '/sources', label: 'Sources' },
-] as const
+/* The workspace's doors, in three groups: the records themselves, what can be
+   read off them, and how to read them. */
+const groups = [
+	{
+		label: 'Records',
+		pages: [
+			{ href: '/', label: 'Entities', note: 'The offices that buy' },
+			{ href: '/notices', label: 'Bid notices', note: 'What they put out to bid' },
+			{ href: '/suppliers', label: 'Suppliers', note: 'Who wins the contracts' },
+		],
+	},
+	{
+		label: 'Analysis',
+		pages: [
+			{ href: '/patterns', label: 'Patterns', note: 'Signals worth a second look' },
+			{ href: '/follow-the-peso', label: 'Follow the peso', note: 'Budget, bid out, awarded' },
+		],
+	},
+	{
+		label: 'Guide',
+		pages: [
+			{ href: '/how-it-works', label: 'How it works', note: 'Bidding, thresholds and modes' },
+			{ href: '/sources', label: 'Sources', note: 'Where the figures come from' },
+		],
+	},
+]
+
+const pages = groups.flatMap((g) => g.pages)
+
+const MENU_NAME = 'text-[13.5px] font-bold tracking-[-0.02em] text-[var(--ink)]'
+const MENU_NOTE = 'text-[11px] font-semibold text-[var(--ink-mute)]'
+
+/** Opens on click; closes on Escape or a pointer landing outside it. The same
+ *  menu as the budget workspace's bar. */
+function Menu({ label, active, children }: { label: string; active: boolean; children: (close: () => void) => React.ReactNode }) {
+	const [open, setOpen] = useState(false)
+	const ref = useRef<HTMLDivElement>(null)
+
+	useEffect(() => {
+		if (!open) return
+		const onPointerDown = (event: PointerEvent) => {
+			if (!ref.current?.contains(event.target as Node)) setOpen(false)
+		}
+		const onKeyDown = (event: KeyboardEvent) => {
+			if (event.key === 'Escape') setOpen(false)
+		}
+		document.addEventListener('pointerdown', onPointerDown)
+		document.addEventListener('keydown', onKeyDown)
+		return () => {
+			document.removeEventListener('pointerdown', onPointerDown)
+			document.removeEventListener('keydown', onKeyDown)
+		}
+	}, [open])
+
+	return (
+		<div ref={ref} className='relative'>
+			<button
+				type='button'
+				aria-expanded={open}
+				aria-haspopup='menu'
+				onClick={() => setOpen((current) => !current)}
+				data-active={active}
+				data-open={open}
+				className='nav-item flex cursor-pointer items-center gap-1.5'
+			>
+				{label}
+				<motion.span
+					animate={{ rotate: open ? 180 : 0 }}
+					transition={{ duration: 0.3, ease: EASE }}
+					className='text-[var(--ink-mute)]'
+				>
+					<CaretDownIcon size={13} weight='bold' aria-hidden='true' />
+				</motion.span>
+			</button>
+
+			<AnimatePresence>
+				{open ? (
+					<motion.div
+						initial={{ opacity: 0, y: -6, scaleY: 0.96 }}
+						animate={{ opacity: 1, y: 0, scaleY: 1 }}
+						exit={{ opacity: 0, y: -6, scaleY: 0.96 }}
+						transition={{ duration: 0.24, ease: EASE }}
+						style={{ originY: 0 }}
+						className='absolute right-0 top-full z-40 mt-1 w-[17rem] border border-[var(--ink)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)]'
+					>
+						{children(() => setOpen(false))}
+					</motion.div>
+				) : null}
+			</AnimatePresence>
+		</div>
+	)
+}
 
 export function SiteNav() {
 	const pathname = usePathname()
@@ -91,10 +172,23 @@ export function SiteNav() {
 
 					{/* The menus sit on one line from 1280px; below that the menu button carries them. */}
 					<nav className='hidden items-center justify-end gap-1 whitespace-nowrap md:flex'>
-						{pages.map((page) => (
-							<Link key={page.href} href={page.href} data-active={isActive(page.href)} className='nav-item'>
-								{page.label}
-							</Link>
+						{groups.map((group) => (
+							<Menu key={group.label} label={group.label} active={group.pages.some((p) => isActive(p.href))}>
+								{(close) =>
+									group.pages.map((page) => (
+										<Link
+											key={page.href}
+											href={page.href}
+											onClick={close}
+											aria-current={isActive(page.href) ? 'page' : undefined}
+											className='nav-menu-item'
+										>
+											<span className={MENU_NAME}>{page.label}</span>
+											<span className={MENU_NOTE}>{page.note}</span>
+										</Link>
+									))
+								}
+							</Menu>
 						))}
 					</nav>
 
@@ -144,20 +238,24 @@ export function SiteNav() {
 							aria-label='Mobile navigation'
 							className='mx-auto max-w-[88rem] px-8 py-6 sm:px-6 text-sm text-[var(--ink-2)] lg:px-8 max-h-[calc(100dvh-7.5rem)] overflow-y-auto overscroll-contain'
 						>
-							<p className='bb-label'>Procurement</p>
-							<div className='mt-3 grid'>
-								{pages.map((page) => (
-									<Link
-										key={page.href}
-										href={page.href}
-										onClick={closeMenu}
-										data-active={isActive(page.href)}
-										className='border-b border-[var(--rule-soft)] py-2.5 data-[active=true]:font-semibold data-[active=true]:text-[var(--accent)]'
-									>
-										{page.label}
-									</Link>
-								))}
-							</div>
+							{groups.map((group, i) => (
+								<div key={group.label} className={i ? 'mt-6' : ''}>
+									<p className='bb-label'>{group.label}</p>
+									<div className='mt-3 grid'>
+										{group.pages.map((page) => (
+											<Link
+												key={page.href}
+												href={page.href}
+												onClick={closeMenu}
+												data-active={isActive(page.href)}
+												className='border-b border-[var(--rule-soft)] py-2.5 data-[active=true]:font-semibold data-[active=true]:text-[var(--accent)]'
+											>
+												{page.label}
+											</Link>
+										))}
+									</div>
+								</div>
+							))}
 
 							<UtilityMenuLinks base='https://betterbarmm.com' onNavigate={closeMenu} />
 						</nav>
