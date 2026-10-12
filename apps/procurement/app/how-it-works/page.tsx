@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import { DocLayout } from '../_components/doc-layout'
+import type { TocItem } from '../_components/doc-toc'
 import { Masthead } from '../_components/parts'
 
 export const metadata: Metadata = {
@@ -28,18 +30,18 @@ const BAA_85 = 'https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/12/
 const BAA_84 = 'https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/12/BAA-No.-84.pdf'
 const BAA_13 = 'https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.13-Bangsamoro-Administrative-Code-Proofread-04052021-3-33pm.pdf'
 
-const contents = [
-	{ id: 'law', label: 'The law' },
-	{ id: 'people', label: 'Who decides' },
-	{ id: 'plan', label: 'Planning and the budget' },
-	{ id: 'bidding', label: 'Public bidding, step by step' },
-	{ id: 'modes', label: 'Other ways to buy' },
-	{ id: 'amounts', label: 'The amounts that matter' },
-	{ id: 'security', label: 'Guarantees and penalties' },
-	{ id: 'checks', label: 'Protests and sanctions' },
-	{ id: 'barmm', label: 'In the Bangsamoro' },
-	{ id: 'reading', label: 'Reading this workspace' },
-	{ id: 'sources', label: 'Sources' },
+const contents: TocItem[] = [
+	{ id: 'law', label: 'The law', depth: 1 },
+	{ id: 'people', label: 'Who decides', depth: 1 },
+	{ id: 'plan', label: 'Planning and the budget', depth: 1 },
+	{ id: 'bidding', label: 'Public bidding, step by step', depth: 1 },
+	{ id: 'modes', label: 'Other ways to buy', depth: 1 },
+	{ id: 'amounts', label: 'The amounts that matter', depth: 1 },
+	{ id: 'security', label: 'Guarantees and penalties', depth: 1 },
+	{ id: 'checks', label: 'Protests and sanctions', depth: 1 },
+	{ id: 'barmm', label: 'In the Bangsamoro', depth: 1 },
+	{ id: 'reading', label: 'Reading this workspace', depth: 1 },
+	{ id: 'sources', label: 'Sources', depth: 1 },
 ]
 
 const steps = [
@@ -220,23 +222,8 @@ export default function HowItWorksPage() {
 				note='How a government office buys, from the plan to the contract: the law it follows, who decides, the steps of a public bidding, the other ways to buy, and the amounts that trigger each rule.'
 			/>
 
-			<div className='bb-container bb-section lg:grid lg:grid-cols-[14rem_minmax(0,1fr)] lg:gap-20'>
-				<nav aria-label='On this page' className='hidden lg:block'>
-					<div className='sticky top-28'>
-						<p className='bb-label'>On this page</p>
-						<ol className='mt-5 space-y-2.5 text-[14px] leading-5'>
-							{contents.map((c) => (
-								<li key={c.id}>
-									<a href={`#${c.id}`} className='text-[var(--ink-3)] transition hover:text-[var(--ink)]'>
-										{c.label}
-									</a>
-								</li>
-							))}
-						</ol>
-					</div>
-				</nav>
-
-				<article className='max-w-[48rem] [&>section+section]:mt-20 [&>section]:scroll-mt-28'>
+			<DocLayout toc={contents}>
+				<div className='[&>section+section]:mt-20 [&>section]:scroll-mt-28'>
 					<section id='law'>
 						<h2 className={H2}>The law</h2>
 						<p className={P}>
@@ -507,8 +494,8 @@ export default function HowItWorksPage() {
 							))}
 						</ol>
 					</section>
-				</article>
-			</div>
+				</div>
+			</DocLayout>
 		</>
 	)
 }
