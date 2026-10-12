@@ -1,3 +1,5 @@
+import { BuildingsIcon, CheckSquareOffsetIcon, CoinsIcon, HouseIcon, ScrollIcon, ShoppingCartIcon } from '@phosphor-icons/react/ssr'
+
 /* ============================================================
    The strip above the masthead
 
@@ -30,36 +32,14 @@ export const ESTATE_LINKS: UtilityLink[] = [
 	{ href: 'https://www.facebook.com/betterbarmm', label: 'Follow us on Facebook' },
 ]
 
-/* Each workspace's icon, drawn here rather than imported: the package keeps
-   no icon library (see subscribe-form.tsx). 24-unit outlines, stroked. */
+/** Each workspace's icon. */
 const ICONS = {
-	home: <path d='M4 10.5 12 4l8 6.5V20h-5.5v-6h-5v6H4z' />,
-	election: (
-		<>
-			<rect x='4' y='10' width='16' height='10' rx='1' />
-			<path d='M8 10V5h8v5M10 7.5l1.5 1.5L14 6.5' />
-		</>
-	),
-	legislation: (
-		<>
-			<path d='M7 3h8l4 4v14H7z' />
-			<path d='M15 3v4h4M10 12h6M10 16h6' />
-		</>
-	),
-	budget: (
-		<>
-			<ellipse cx='12' cy='6.5' rx='7' ry='2.5' />
-			<path d='M5 6.5v5c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-5M5 11.5v5c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-5' />
-		</>
-	),
-	lgu: <path d='M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6M9 11h.01M15 11h.01' />,
-	procurement: (
-		<>
-			<path d='M3 4h2.5l2.2 11h10.6L20 7.5H6.4' />
-			<circle cx='9' cy='19.5' r='1.3' />
-			<circle cx='17' cy='19.5' r='1.3' />
-		</>
-	),
+	home: HouseIcon,
+	election: CheckSquareOffsetIcon,
+	legislation: ScrollIcon,
+	budget: CoinsIcon,
+	lgu: BuildingsIcon,
+	procurement: ShoppingCartIcon,
 } as const
 
 /** The live workspaces, in the order the front page lists them. */
@@ -125,13 +105,14 @@ export function UtilityBar({
 											className={`group flex items-center gap-3 px-2 py-2 transition ${on ? 'bg-[var(--paper-2)]' : 'hover:bg-[var(--paper-2)]'}`}
 										>
 											<span
-												className={`grid size-6 shrink-0 place-items-center transition ${
+												className={`grid size-5 shrink-0 place-items-center transition ${
 													on ? 'text-[var(--accent)]' : 'text-[var(--ink-3)] group-hover:text-[var(--accent)]'
 												}`}
 											>
-												<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth={1.6} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' className='size-5'>
-													{ICONS[workspace.key]}
-												</svg>
+												{(() => {
+													const Icon = ICONS[workspace.key]
+													return <Icon size={16} weight={on ? 'fill' : 'regular'} aria-hidden='true' />
+												})()}
 											</span>
 											<span className={`text-[13.5px] font-semibold leading-tight ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)]'}`}>
 												{workspace.label}
