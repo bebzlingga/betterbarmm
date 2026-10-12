@@ -150,7 +150,7 @@ export default function PatternsPage() {
 				<ol className='bb-container grid grid-cols-2 lg:grid-cols-4'>
 					{PATTERNS.slice(0, 4).map((p, i) => (
 						<li key={p.id} className='border-[var(--rule)] max-lg:border-b max-lg:odd:border-r lg:border-r lg:first:border-l'>
-							<a href={`#${p.id}`} className='group flex h-full flex-col px-4 py-5 transition sm:px-5 sm:py-7 hover:bg-[var(--paper-2)]'>
+							<a href={`#${p.id}`} className='group flex h-full flex-col px-5 py-5 transition sm:px-8 sm:py-7 hover:bg-[var(--paper-2)]'>
 								<span className='bb-label'>{String(i + 1).padStart(2, '0')}</span>
 								<span className='mt-3 min-h-[2.75em] text-[13px] sm:text-[14px] font-bold leading-snug text-[var(--ink)] group-hover:text-[var(--accent)]'>{p.title}</span>
 								<span className='num pt-5 text-[1.75rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--accent)]'>{p.stat}</span>
