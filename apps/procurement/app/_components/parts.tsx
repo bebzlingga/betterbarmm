@@ -87,13 +87,13 @@ function Spark({ series, years }: { series: number[]; years: number[] }) {
 	const top = Math.max(...series, 1)
 	return (
 		<div className='mt-8'>
-			<div className='flex h-12 items-end gap-[3px]' aria-hidden='true'>
+			<div className='flex h-12 items-end gap-[6px]' aria-hidden='true'>
 				{series.map((v, i) => (
 					<span
 						key={i}
 						title={`${years[i]}: ${v.toLocaleString('en-PH', { maximumFractionDigits: 0 })}`}
-						className={`flex-1 rounded-t-[2px] ${i === series.length - 1 ? 'bg-[color-mix(in_srgb,var(--accent)_45%,transparent)]' : 'bg-[var(--accent)]'}`}
-						style={{ height: `${Math.max((v / top) * 100, 3)}%` }}
+						className={`flex-1 rounded-t-[2px] ${i === series.length - 1 ? 'opacity-45' : ''}`}
+						style={{ height: `${Math.max((v / top) * 100, 3)}%`, background: 'linear-gradient(to top, color-mix(in srgb, var(--accent) 20%, transparent), var(--accent))' }}
 					/>
 				))}
 			</div>
