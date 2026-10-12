@@ -1,4 +1,5 @@
 import { BuildingsIcon, CheckSquareOffsetIcon, CoinsIcon, HouseIcon, ScrollIcon, ShoppingCartIcon } from '@phosphor-icons/react/ssr'
+import { SwitchCloser } from './switch-closer'
 
 /* ============================================================
    The strip above the masthead
@@ -124,6 +125,7 @@ export function UtilityBar({
 						</ul>
 					</div>
 				</details>
+				<SwitchCloser />
 
 				<nav aria-label='Project links' className='flex items-center gap-4 sm:gap-5'>
 					{links.map((link) => {
