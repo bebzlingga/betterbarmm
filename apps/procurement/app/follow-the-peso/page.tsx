@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 		'Each Bangsamoro ministry and office: what the budget gave it to buy with, what it put out to bid on PhilGEPS, and what PhilGEPS records as awarded.',
 }
 
-const P = 'mt-4 max-w-[46rem] text-[15px] leading-7 text-[var(--ink-2)]'
+const P = 'mt-4 text-[15px] leading-7 text-[var(--ink-2)]'
 
 export default function FollowThePesoPage() {
 	return (
@@ -26,7 +26,7 @@ export default function FollowThePesoPage() {
 				<div className='mt-14 border-t border-[var(--rule)] pt-10'>
 					<h2 className='text-[1.5rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Reading it</h2>
 					<p className={P}>
-						<strong>Budget to buy with</strong> is the office&rsquo;s maintenance and other operating expenses plus its
+						<strong>Budget to buy with</strong>{' '}is the office&rsquo;s maintenance and other operating expenses plus its
 						capital outlay in that year&rsquo;s General Appropriations Act. Salaries are left out: they are not bought
 						through bidding. <strong>Put out to bid</strong> is the approved budget of every notice its offices posted that
 						year; <strong>awarded</strong> is the contracts PhilGEPS records on them.
