@@ -51,11 +51,12 @@ export default async function EntityPage({ params }: { params: Promise<{ entity:
 			<Figures
 				title='Since 2019'
 				note='What this office has put out to bid on PhilGEPS, and what has been awarded so far. An approved budget is the most it may pay; an award is the contract it signed.'
+				years={years}
 				items={[
-					{ value: totals.all.notices.toLocaleString('en-PH'), label: 'Bid notices posted' },
-					{ value: peso(totals.all.abc), label: 'Approved budget' },
-					{ value: totals.all.awards.toLocaleString('en-PH'), label: 'Contracts awarded' },
-					{ value: peso(totals.all.contracts), label: 'Awarded amount' },
+					{ value: totals.all.notices.toLocaleString('en-PH'), label: 'Bid notices posted', series: years.map((y) => totals.byYear[y]?.notices ?? 0) },
+					{ value: peso(totals.all.abc), label: 'Approved budget', series: years.map((y) => totals.byYear[y]?.abc ?? 0) },
+					{ value: totals.all.awards.toLocaleString('en-PH'), label: 'Contracts awarded', series: years.map((y) => totals.byYear[y]?.awards ?? 0) },
+					{ value: peso(totals.all.contracts), label: 'Awarded amount', series: years.map((y) => totals.byYear[y]?.contracts ?? 0) },
 				]}
 			/>
 
