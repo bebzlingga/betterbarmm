@@ -32,7 +32,6 @@ export function Shell({ children }: { children: React.ReactNode }) {
 				]}
 				blurb='Every road, bridge, water system and building the Bangsamoro budget has funded since FY 2020, where it is, what it cost, and the bid notice behind it.'
 				note='Public works in the Bangsamoro'
-				bottomRight='Projects from the enacted Acts; notices from PhilGEPS'
 			/>
 		</div>
 	)

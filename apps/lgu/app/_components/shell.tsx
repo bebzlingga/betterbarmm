@@ -44,7 +44,6 @@ export function Shell({ children }: { children: React.ReactNode }) {
 				]}
 				blurb='Every province, city, municipality and barangay in the Bangsamoro, with its population, land area, and the officials elected to run it. Trace it back to the census it came from.'
 				note='Local government in the Bangsamoro'
-				bottomRight='Structure from PSA · figures from the 2024 census'
 			/>
 		</div>
 	)

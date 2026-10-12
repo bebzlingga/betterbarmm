@@ -44,7 +44,6 @@ export function ElectionShell({ children }: { children: React.ReactNode }) {
 				]}
 				blurb='The 2026 Bangsamoro Parliamentary Election as a public record: the parties and candidates on the ballot, the reserved seats, and the count that filled all 80. Trace every line back to the record it came from.'
 				note='The 2026 Bangsamoro Parliamentary Election'
-				bottomRight='Datasets: datasets/election/election.min.json, election-results.json'
 			/>
 		</div>
 	)

@@ -110,11 +110,6 @@ export function Shell({ children }: { children: React.ReactNode }) {
 						<FooterYear acts={acts} />
 					</Suspense>
 				}
-				bottomRight={
-					<Suspense fallback={`Compiled from ${acts[String(LATEST_YEAR)]}`}>
-						<FooterYear acts={acts} prefix='Compiled from ' />
-					</Suspense>
-				}
 			/>
 		</div>
 	)

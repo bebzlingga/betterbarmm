@@ -43,7 +43,6 @@ export function Shell({ children }: { children: React.ReactNode }) {
 				]}
 				blurb='A written guide to the seven areas of the Bangsamoro: what to see, what to eat, where lodging actually exists, and an honest account of security in each. Verify it before you travel.'
 				note='Traveling the Bangsamoro'
-				bottomRight='Written, not captured · verify before you travel'
 			/>
 		</div>
 	)
