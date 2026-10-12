@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
 	// The notices are read from disk on the server rather than bundled, so the
 	// file has to be traced into the deployment by hand.
 	outputFileTracingIncludes: {
-		'/**': ['../../datasets/procurement/philgeps.json'],
+		'/**': ['../../datasets/procurement/philgeps.json', '../../datasets/budget/BAA*_budget.json'],
 	},
 }
 

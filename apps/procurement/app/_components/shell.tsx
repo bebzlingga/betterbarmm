@@ -20,6 +20,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
 							{ href: '/notices', label: 'Bid notices' },
 							{ href: '/suppliers', label: 'Suppliers' },
 							{ href: '/patterns', label: 'Patterns' },
+							{ href: '/follow-the-peso', label: 'Follow the peso' },
 							{ href: '/how-it-works', label: 'How it works' },
 							{ href: '/sources', label: 'Sources' },
 						],
