@@ -88,26 +88,11 @@ export function NoticesExplorer({
 
 	return (
 		<div>
-			{/* Where a notice stands: still taking bids, awarded, or neither. */}
-			<div role='tablist' aria-label='Stage' className='-mx-4 mb-6 flex gap-1 overflow-x-auto border-b border-[var(--rule)] px-4 lg:mx-0 lg:mb-8 lg:px-0'>
-				{STAGES.map(([value, label]) => (
-					<button
-						key={label}
-						type='button'
-						role='tab'
-						aria-selected={stage === value}
-						onClick={() => reset(() => setStage(value))}
-						className={`-mb-px shrink-0 cursor-pointer border-b-2 px-3 pb-3 text-[14px] font-semibold transition ${stage === value ? 'border-[var(--accent)] text-[var(--ink)]' : 'border-transparent text-[var(--ink-3)] hover:text-[var(--ink)]'}`}
-					>
-						{label}
-					</button>
-				))}
-			</div>
-
-			<div className='grid grid-cols-2 gap-3 pb-6 lg:grid-cols-[minmax(0,22rem)_repeat(4,minmax(0,1fr))] lg:items-end lg:gap-4 lg:pb-8'>
+			<div className='grid grid-cols-2 gap-3 pb-6 lg:grid-cols-[minmax(0,1fr)_repeat(5,10.5rem)] lg:items-end lg:gap-4 lg:pb-8'>
 				<div className='col-span-2 lg:col-span-1'>
 					<SearchField value={typed} onChange={setTyped} placeholder='Title, reference, category or supplier' />
 				</div>
+				<Select label='Notices' value={stage} onChange={(v) => reset(() => setStage(v))} options={STAGES} />
 				<Select label='Category' value={group} onChange={(v) => reset(() => setGroup(v))} options={[['', 'All categories'], ...groups.map((g): [string, string] => [g, g])]} />
 				<Select label='Mode' value={mode} onChange={(v) => reset(() => setMode(v))} options={[['', 'All modes'], ...modes.map((m): [string, string] => [m, m])]} />
 				<Select label='Source of funds' value={fund} onChange={(v) => reset(() => setFund(v))} options={[['', 'All sources'], ...funds.map((f): [string, string] => [f, f])]} />
