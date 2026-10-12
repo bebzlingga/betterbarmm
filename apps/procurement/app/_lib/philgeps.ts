@@ -273,8 +273,8 @@ export type NoticeQuery = {
 
 export const PAGE = 50
 
-/** One page of notices, newest first, with the totals of everything matched. */
-export function searchNotices({ entity, q, year, group, supplier, stage, mode, fund, page = 1 }: NoticeQuery) {
+/** Every notice the query matches, newest first. */
+export function matchNotices({ entity, q, year, group, supplier, stage, mode, fund }: NoticeQuery) {
 	const words = (q ?? '').toLowerCase().split(/\s+/).filter(Boolean)
 	const who = supplier?.toLowerCase()
 	const matched = notices.filter((n) => {
@@ -291,6 +291,13 @@ export function searchNotices({ entity, q, year, group, supplier, stage, mode, f
 		}
 		return true
 	})
+	return matched
+}
+
+/** One page of notices, newest first, with the totals of everything matched. */
+export function searchNotices(query: NoticeQuery) {
+	const { page = 1 } = query
+	const matched = matchNotices(query)
 	const totals = blank()
 	for (const n of matched) add(totals, n)
 	return {

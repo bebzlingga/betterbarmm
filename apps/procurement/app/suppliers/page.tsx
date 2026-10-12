@@ -26,7 +26,12 @@ export default function SuppliersPage() {
 			/>
 			<section className='bb-container bb-section'>
 				<SupplierExplorer rows={rows} groups={groups} />
-				<p className='mt-8 text-[13px] leading-6 text-[var(--ink-3)]'>
+				<p className='mt-8 text-[13px] leading-6'>
+					<a href='/api/suppliers/csv' className='rule-link font-semibold text-[var(--ink)]' download>
+						Download every supplier as CSV
+					</a>
+				</p>
+				<p className='mt-4 text-[13px] leading-6 text-[var(--ink-3)]'>
 					A supplier&rsquo;s category is the kind of notice it won the most money on. A supplier spelled two ways on
 					PhilGEPS appears twice.
 				</p>

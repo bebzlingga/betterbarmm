@@ -81,6 +81,11 @@ export function NoticesExplorer({
 		return () => controller.abort()
 	}, [entity, query, year, group, stage, mode, fund, supplier, page])
 
+	// The download carries the same filters as the list, every page of it.
+	const csvParams = new URLSearchParams(
+		Object.entries({ entity, q: query, year, group, stage, mode, fund, supplier }).filter((e): e is [string, string] => Boolean(e[1])),
+	).toString()
+
 	const reset = (fn: () => void) => {
 		fn()
 		setPage(1)
@@ -111,7 +116,11 @@ export function NoticesExplorer({
 				</button>
 			) : null}
 
-			<p className='mb-2 border-y border-[var(--rule-soft)] py-3 text-right text-[13px] text-[var(--ink-3)]'>
+			<div className='mb-2 flex flex-wrap items-center justify-between gap-x-6 gap-y-2 border-y border-[var(--rule-soft)] py-3 text-[13px] text-[var(--ink-3)]'>
+				<a href={`/api/notices/csv?${csvParams}`} className='rule-link font-semibold text-[var(--ink)]' download>
+					Download CSV
+				</a>
+			<p className='text-right'>
 				{data ? (
 					<>
 						<span className='num font-semibold text-[var(--ink)]'>{data.totals.notices.toLocaleString('en-PH')}</span> notices ·{' '}
@@ -123,6 +132,7 @@ export function NoticesExplorer({
 					'Loading…'
 				)}
 			</p>
+			</div>
 
 			<ul className={data ? '' : 'opacity-50'}>
 				{data?.rows.map((n) => (
