@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { EXPLAINER_CATEGORIES, categoryLabel, listPublishedExplainers } from '@betterbarmm/db'
 import { Masthead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
+import { GUIDES } from './guides'
 
 export const metadata: Metadata = pageMeta({
 	title: 'Explainers',
@@ -44,11 +45,13 @@ export default async function ExplainersPage({
 
 			<Masthead
 				brand
-				label={all.length ? 'Explainers' : 'Explainers · Coming soon'}
+				label='Explainers'
 				lines={['How the Bangsamoro', 'works, explained.']}
 				muted={[1]}
 				standfirst='Short, sourced explanations of the region’s laws, budget, elections and local governments — written for someone who has never read a bill.'
 			/>
+
+			<Guides />
 
 			{all.length ? (
 			<section className='bb-container bb-section'>
@@ -112,25 +115,37 @@ export default async function ExplainersPage({
 					<p className='mt-12 bb-body text-[var(--ink-3)]'>No explainers match this filter yet.</p>
 				)}
 			</section>
-			) : (
-				<Empty />
-			)}
+			) : null}
 		</main>
 	)
 }
 
-/** Before the first explainer is published. */
-function Empty() {
+/** The guides each workspace carries, grouped by workspace. */
+function Guides() {
+	const workspaces = [...new Set(GUIDES.map((g) => g.workspace))]
 	return (
 		<section className='bb-container bb-section'>
-			<div className='mx-auto max-w-[36rem] py-16 text-center lg:py-28'>
-				<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>Soon</p>
-				<h2 className='mt-4 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>
-					The first explainers are on their way.
-				</h2>
-				<p className='mt-4 bb-body text-[var(--ink-3)]'>
-					Plain-language answers to how the Bangsamoro works, each with its sources linked. Check back soon.
-				</p>
+			<div className='grid gap-x-16 gap-y-14 lg:grid-cols-2'>
+				{workspaces.map((w) => (
+					<div key={w}>
+						<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>{w}</p>
+						<ul className='mt-4'>
+							{GUIDES.filter((g) => g.workspace === w).map((g) => (
+								<li key={g.href} className='border-t border-[var(--rule)]'>
+									<a href={g.href} className='group block py-5'>
+										<span className='flex items-baseline justify-between gap-4'>
+											<span className='text-[1.15rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
+												{g.title}
+											</span>
+											<ArrowRightIcon className='size-3.5 shrink-0 transition group-hover:translate-x-0.5' weight='bold' aria-hidden='true' />
+										</span>
+										<span className='mt-2 block text-[14px] leading-6 text-[var(--ink-2)]'>{g.summary}</span>
+									</a>
+								</li>
+							))}
+						</ul>
+					</div>
+				))}
 			</div>
 		</section>
 	)
