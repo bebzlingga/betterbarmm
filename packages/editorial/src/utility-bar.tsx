@@ -111,10 +111,10 @@ export function UtilityBar({
 							<path d='M1 1l4 4 4-4' fill='none' stroke='currentColor' strokeWidth='1.5' />
 						</svg>
 					</summary>
-					{/* An app picker: every workspace a tile, icon over name. */}
-					<div className='absolute left-0 top-full z-50 mt-1 w-[21rem] max-w-[calc(100vw-2rem)] border border-[var(--rule)] bg-[var(--paper)] p-3 normal-case tracking-normal shadow-lg'>
+					{/* Every workspace a row, its icon beside its name. */}
+					<div className='absolute left-0 top-full z-50 mt-1 w-[16rem] max-w-[calc(100vw-2rem)] border border-[var(--rule)] bg-[var(--paper)] p-2 normal-case tracking-normal shadow-lg'>
 						<p className='px-2 pb-2 pt-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>Workspaces</p>
-						<ul className='grid grid-cols-3 gap-1'>
+						<ul className='grid'>
 							{WORKSPACES.map((workspace) => {
 								const on = workspace.key === current
 								return (
@@ -122,18 +122,18 @@ export function UtilityBar({
 										<a
 											href={workspace.href}
 											aria-current={on ? 'page' : undefined}
-											className={`group flex h-full flex-col items-center gap-2.5 px-1.5 py-3.5 text-center transition ${on ? 'bg-[var(--paper-2)]' : 'hover:bg-[var(--paper-2)]'}`}
+											className={`group flex items-center gap-3 px-2 py-2 transition ${on ? 'bg-[var(--paper-2)]' : 'hover:bg-[var(--paper-2)]'}`}
 										>
 											<span
-												className={`grid size-11 place-items-center transition ${
+												className={`grid size-8 shrink-0 place-items-center transition ${
 													on ? 'bg-[var(--accent)] text-white' : 'bg-[var(--paper-2)] text-[var(--ink-2)] group-hover:bg-[var(--accent)] group-hover:text-white'
 												}`}
 											>
-												<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth={1.6} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' className='size-[22px]'>
+												<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth={1.6} strokeLinecap='round' strokeLinejoin='round' aria-hidden='true' className='size-[18px]'>
 													{ICONS[workspace.key]}
 												</svg>
 											</span>
-											<span className={`text-[12px] font-semibold leading-tight ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)]'}`}>
+											<span className={`text-[13.5px] font-semibold leading-tight ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)]'}`}>
 												{workspace.label}
 											</span>
 										</a>
