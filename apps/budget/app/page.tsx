@@ -242,7 +242,7 @@ function ActBars() {
 						    fence rather than a chart. */}
 						<div
 							title={peso(act.total)}
-							className='mx-auto w-full max-w-[3.5rem] border-t-2 border-[var(--accent)] bg-gradient-to-b from-[var(--accent-soft)] to-transparent'
+							className='mx-auto w-full max-w-[6rem] border-t-2 border-[var(--accent)] bg-gradient-to-b from-[var(--accent-soft)] to-transparent'
 							style={{ height: `${Math.round((act.total / TALLEST) * BAR_H)}px` }}
 						/>
 					</div>
