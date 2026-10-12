@@ -8,6 +8,7 @@ export function Masthead({
 	name,
 	note,
 	chart = false,
+	stacked = false,
 	children,
 }: {
 	kicker: string
@@ -15,6 +16,8 @@ export function Masthead({
 	note?: string
 	/** A chart closes the masthead: less room under it. */
 	chart?: boolean
+	/** The name across the full width with the note under it: for long names. */
+	stacked?: boolean
 	children?: React.ReactNode
 }) {
 	return (
@@ -23,11 +26,11 @@ export function Masthead({
 				<Rise distance={12}>
 					<span className='bb-label'>{kicker}</span>
 				</Rise>
-				<div className='lg:grid lg:grid-cols-[1.1fr_1fr] lg:items-end lg:gap-16'>
-					<LineReveal lines={[name]} delay={0.06} className='bb-display-md mt-5 text-[var(--ink)]' />
+				<div className={stacked ? '' : 'lg:grid lg:grid-cols-[1.1fr_1fr] lg:items-end lg:gap-16'}>
+					<LineReveal lines={[name]} delay={0.06} className={`bb-display-md mt-5 text-[var(--ink)] ${stacked ? 'max-w-[62rem]' : ''}`} />
 					{note ? (
 						<Rise delay={0.25} distance={14}>
-							<p className='mt-7 text-[15px] leading-7 text-[var(--ink-2)] lg:mt-0 lg:text-right lg:leading-6'>{note}</p>
+							<p className={`mt-7 text-[15px] leading-7 text-[var(--ink-2)] ${stacked ? 'max-w-[44rem]' : 'lg:mt-0 lg:text-right lg:leading-6'}`}>{note}</p>
 						</Rise>
 					) : null}
 				</div>

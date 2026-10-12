@@ -36,6 +36,7 @@ export default async function EntityPage({ params }: { params: Promise<{ entity:
 			<Masthead
 				kicker={`${entity.type} · on PhilGEPS`}
 				name={entity.name}
+				stacked
 				chart={span.length > 1}
 				note={
 					span.length
