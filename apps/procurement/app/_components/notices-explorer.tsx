@@ -130,8 +130,8 @@ export function NoticesExplorer({
 								</p>
 							))}
 						</div>
-						<div className='sm:self-center sm:text-center'>
-							<p className='num text-[14.5px] font-semibold text-[var(--ink)]'>{n.abc == null ? '—' : peso(n.abc)}</p>
+						<div className='sm:self-center sm:text-right'>
+							<p className='num text-[18px] font-semibold text-[var(--ink)]'>{n.abc == null ? '—' : peso(n.abc)}</p>
 							<p className='mt-1 text-[11.5px] text-[var(--ink-3)]'>{n.status ?? 'Approved budget'}</p>
 						</div>
 					</li>
