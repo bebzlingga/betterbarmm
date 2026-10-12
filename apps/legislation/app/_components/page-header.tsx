@@ -118,7 +118,7 @@ export function PageHeader({
 			// hold the middle of the screen the way the row was holding it.
 			<section
 				className={`bb-crimson bb-lattice relative isolate overflow-hidden${
-					size === 'hero' ? ' flex min-h-[80svh] flex-col' : ''
+					size === 'hero' ? ' flex flex-col' : ''
 				}`}
 			>
 				<span aria-hidden='true' className='bb-glow absolute -right-[10%] -top-[20%] size-[34rem]' />

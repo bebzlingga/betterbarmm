@@ -10,25 +10,34 @@ export type Stat = {
 	marks?: string[]
 }
 
-/** How many a year: one bar a year, the latest lighter when the year is not over. */
+/** How many a year, as a line: the latest year dashed while it is not over. */
 function Spark({ series }: { series: { year: number; value: number }[] }) {
 	const top = Math.max(...series.map((s) => s.value), 1)
 	const current = new Date().getFullYear()
+	const W = 100
+	const H = 40
+	const x = (i: number) => (series.length > 1 ? (i / (series.length - 1)) * W : W / 2)
+	const y = (v: number) => H - 3 - (v / top) * (H - 6)
+	const pts = series.map((s, i) => `${x(i).toFixed(2)},${y(s.value).toFixed(2)}`)
+	const open = series.at(-1)?.year === current && series.length > 1
+	const solid = open ? pts.slice(0, -1) : pts
+	const last = series.length - 1
 	return (
 		<div className='mt-5 max-w-[16rem]' aria-hidden='true'>
-			<div className='flex h-10 items-end gap-[5px]'>
-				{series.map((s) => (
-					<span
-						key={s.year}
-						title={`${s.year}: ${s.value.toLocaleString()}`}
-						className={`flex-1 rounded-t-[2px] bg-[var(--accent)] ${s.year === current ? 'opacity-45' : ''}`}
-						style={{ height: `${Math.max((s.value / top) * 100, 4)}%` }}
-					/>
+			<svg viewBox={`0 0 ${W} ${H}`} preserveAspectRatio='none' className='h-10 w-full overflow-visible'>
+				<polyline points={solid.join(' ')} fill='none' stroke='var(--accent)' strokeWidth='2' strokeLinejoin='round' strokeLinecap='round' vectorEffect='non-scaling-stroke' />
+				{open ? (
+					<polyline points={pts.slice(-2).join(' ')} fill='none' stroke='var(--accent)' strokeWidth='2' strokeDasharray='3 3' strokeLinecap='round' vectorEffect='non-scaling-stroke' opacity='0.6' />
+				) : null}
+				{series.map((s, i) => (
+					<circle key={s.year} cx={x(i)} cy={y(s.value)} r='5' fill='transparent' vectorEffect='non-scaling-stroke'>
+						<title>{`${s.year}: ${s.value.toLocaleString()}`}</title>
+					</circle>
 				))}
-			</div>
+			</svg>
 			<div className='mt-1 flex justify-between text-[10.5px] text-[var(--ink-mute)]'>
 				<span>{series[0]?.year}</span>
-				<span>{series.at(-1)?.year}</span>
+				<span>{series[last]?.year}</span>
 			</div>
 		</div>
 	)

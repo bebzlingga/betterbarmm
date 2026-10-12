@@ -1,4 +1,4 @@
-import { OkirCorner, OkirRule, SectionHead } from '@betterbarmm/editorial'
+import { OkirCorner, SectionHead } from '@betterbarmm/editorial'
 import Link from 'next/link'
 import { BillFunnel, type FunnelSlice } from './_components/bill-funnel'
 import { BillPathPreview } from './_components/bill-path-preview'
@@ -209,8 +209,6 @@ export default function HomePage() {
 			     A pointer rather than the walkthrough: the process page carries all
 			     seven stages open, and running an abbreviated copy of it here only
 			     gave a reader two versions of the same thing to reconcile. */}
-			<OkirRule className='mx-auto max-w-[88rem] opacity-70' />
-
 			{/* ---- The path itself ----
 			     A pointer rather than the walkthrough: the process page carries all
 			     seven stages open, and running an abbreviated copy of it here only
