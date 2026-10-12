@@ -15,6 +15,10 @@ const nextConfig: NextConfig = {
 	experimental: {
 		externalDir: true,
 	},
+	// My Area reads the procurement file from disk on the server.
+	outputFileTracingIncludes: {
+		'/my-area/**': ['../../datasets/procurement/philgeps.json'],
+	},
 }
 
 export default nextConfig
