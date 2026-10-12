@@ -36,7 +36,6 @@ export function Shell({ children }: { children: React.ReactNode }) {
 				]}
 				blurb='Every bid notice a BARMM government office has posted on PhilGEPS, what it set out to buy and for how much, and who won the contract.'
 				note='Government procurement in the Bangsamoro'
-				bottomRight='Notices and awards from PhilGEPS open data'
 			/>
 		</div>
 	)
