@@ -1,4 +1,5 @@
-import { EntityExplorer, type EntityRow } from './_components/entity-explorer'
+import { type EntityRow } from './_components/entity-explorer'
+import { OfficeGrid } from './_components/office-grid'
 import { Figures, Masthead, RankBars, YearBars, peso } from './_components/parts'
 import { entities, entityTotals, regionByYear, regionTotals, suppliers, topCategories, years } from './_lib/philgeps'
 
@@ -32,11 +33,12 @@ export default function ProcurementHome() {
 			<Figures
 				title='Since 2019'
 				note='What BARMM offices have put out to bid on PhilGEPS, and what has been awarded so far. An approved budget is the most an office may pay; an award is the contract it signed.'
+				years={years}
 				items={[
-					{ value: regionTotals.notices.toLocaleString('en-PH'), label: 'Bid notices posted' },
-					{ value: peso(regionTotals.abc), label: 'Approved budget' },
-					{ value: regionTotals.awards.toLocaleString('en-PH'), label: 'Contracts awarded' },
-					{ value: peso(regionTotals.contracts), label: 'Awarded amount' },
+					{ value: regionTotals.notices.toLocaleString('en-PH'), label: 'Bid notices posted', series: years.map((y) => regionByYear[y]?.notices ?? 0) },
+					{ value: peso(regionTotals.abc), label: 'Approved budget', series: years.map((y) => regionByYear[y]?.abc ?? 0) },
+					{ value: regionTotals.awards.toLocaleString('en-PH'), label: 'Contracts awarded', series: years.map((y) => regionByYear[y]?.awards ?? 0) },
+					{ value: peso(regionTotals.contracts), label: 'Awarded amount', series: years.map((y) => regionByYear[y]?.contracts ?? 0) },
 				]}
 			/>
 
@@ -69,8 +71,12 @@ export default function ProcurementHome() {
 			</section>
 
 			<section className='bb-container pb-[clamp(3.75rem,7vw,6.5rem)]'>
-				<h2 className='mb-8 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Every office</h2>
-				<EntityExplorer rows={rows} years={years} />
+				<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Every office</h2>
+				<p className='mb-8 mt-2 text-[15px] leading-7 text-[var(--ink-3)]'>
+					Each BARMM office on PhilGEPS, from the ministries, the Chief Minister&rsquo;s office and Parliament to hospitals,
+					schools, provinces and towns.
+				</p>
+				<OfficeGrid rows={rows} years={years} />
 				<p className='mt-10 text-[13px] leading-6 text-[var(--ink-3)]'>
 					An approved budget is what an office set aside for a purchase, not what it paid. Awards are only those PhilGEPS
 					records on the legacy system; the modernized system&rsquo;s awards are not published by agency.

@@ -82,7 +82,41 @@ export function YearBars({ bars, caption, note }: { bars: { year: number; value:
 }
 
 /** A row of headline figures, under a heading with its note to the right. */
-export function Figures({ title, note, items }: { title: string; note: string; items: { value: string; label: string }[] }) {
+/** A row of small bars, one a year, for under a figure. */
+function Spark({ series, years }: { series: number[]; years: number[] }) {
+	const top = Math.max(...series, 1)
+	return (
+		<div className='mt-4'>
+			<div className='flex h-12 items-end gap-[3px]' aria-hidden='true'>
+				{series.map((v, i) => (
+					<span
+						key={i}
+						title={`${years[i]}: ${v.toLocaleString('en-PH', { maximumFractionDigits: 0 })}`}
+						className={`flex-1 rounded-t-[2px] ${i === series.length - 1 ? 'bg-[color-mix(in_srgb,var(--accent)_45%,transparent)]' : 'bg-[var(--accent)]'}`}
+						style={{ height: `${Math.max((v / top) * 100, 3)}%` }}
+					/>
+				))}
+			</div>
+			<div className='mt-1 flex justify-between text-[10.5px] text-[var(--ink-mute)]'>
+				<span>{years[0]}</span>
+				<span>{years.at(-1)}</span>
+			</div>
+		</div>
+	)
+}
+
+export function Figures({
+	title,
+	note,
+	items,
+	years,
+}: {
+	title: string
+	note: string
+	items: { value: string; label: string; series?: number[] }[]
+	/** The years a figure's series runs over; the last is drawn lighter, as the year so far. */
+	years?: number[]
+}) {
 	return (
 		<section className='bg-[var(--paper-2)]'>
 			<div className='bb-container pt-12'>
@@ -98,6 +132,7 @@ export function Figures({ title, note, items }: { title: string; note: string; i
 							{item.value}
 						</dd>
 						<dt className='mt-2 text-[12.5px] text-[var(--ink-3)]'>{item.label}</dt>
+						{item.series && years ? <Spark series={item.series} years={years} /> : null}
 					</div>
 				))}
 			</dl>

@@ -46,6 +46,23 @@ export default function SourcesPage() {
 					</p>
 				</section>
 				<section>
+					<h2 className={H2}>How it was checked</h2>
+					<p className={P}>
+						Every notice appears once, every date falls between 2019 and today, and no amount is negative. A supplier
+						PhilGEPS spells several ways (&ldquo;D&amp;M&rdquo; and &ldquo;D &amp; M&rdquo;, with and without
+						&ldquo;Inc.&rdquo;) is counted as one, under its most common spelling. Three regional bodies PhilGEPS files as
+						local governments, the Office of the Chief Minister, the Bangsamoro Transition Authority and a Ministry of
+						Public Works district office, are counted as regional offices. National offices for Region XII that sit in
+						Cotabato City, and so are filed under BARMM by address, are left out: they serve SOCCSKSARGEN, not the region.
+					</p>
+					<p className={P}>
+						Two things are left as PhilGEPS published them. One award is far larger than its notice&rsquo;s approved
+						budget (₱10,132,897 against ₱420,038, Ministry of Public Works, Lanao del Sur, reference 8602960), which looks
+						like an entry error at the source. And about 730 awards carry a date earlier than their notice&rsquo;s, because
+						the older system records when a notice was last updated rather than first posted.
+					</p>
+				</section>
+				<section>
 					<h2 className={H2}>What it cannot tell you</h2>
 					<p className={P}>
 						PhilGEPS holds only what an office posts; a purchase never posted is not here. Titles and procurement

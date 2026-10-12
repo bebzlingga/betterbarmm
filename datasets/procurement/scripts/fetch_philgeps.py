@@ -27,6 +27,7 @@ governments are matched to the LGU directory by name.
     python3 datasets/procurement/scripts/fetch_philgeps.py
 """
 import json, pathlib, re, sys, urllib.request, uuid
+from collections import Counter
 from datetime import date, datetime, timezone
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
@@ -109,6 +110,23 @@ def day(ms):
     return datetime.fromtimestamp(ms / 1000, timezone.utc).date().isoformat() if isinstance(ms, (int, float)) else None
 
 
+# PhilGEPS files these regional bodies as local governments; they are not.
+TYPE_FIXES = {
+    'OFFICE OF THE CHIEF MINISTER  - BARMM': 'Department',
+    'BANGSMORO TRANSITION AUTHORITY - BARMM': 'Department',
+    'MINISTRY OF PUBLIC WORKS - BARMM MAGUINDANAO DEL NORTE DEO': 'Department',
+}
+
+
+def supplier_key(name):
+    """One supplier however PhilGEPS spelled it: punctuation, '&' and the
+    legal suffix (Inc., Corp., Co.) do not make a different firm."""
+    s = name.lower().replace('&', ' and ').replace('phil.', 'phil ')
+    s = re.sub(r'[^a-z0-9 ]', ' ', s)
+    s = re.sub(r'\b(inc|incorporated|corp|corporation|co|ltd|opc|the)\b', ' ', s)
+    return ' '.join(s.split())
+
+
 def lgu_key(name, kind):
     """The directory key of a province, city or town, or None. Only a name
     that reads as a local government counts (PhilGEPS files some regional
@@ -139,6 +157,10 @@ def left_out(name, kind):
     # Offices filed under the old ARMM, the region BARMM replaced.
     if ARMM.search(name) and 'bangsamoro' not in name.lower():
         return True
+    # National offices for Region XII that sit in Cotabato City and are filed
+    # under BARMM by address; they serve SOCCSKSARGEN, not the region.
+    if re.search(r'\bREGION\s*XII\b', name, re.I):
+        return True
     s = name.lower()
     if kind in LGU_TYPES and ('sulu' in s or any(re.search(rf'\b{t}\b', s) for t in SULU_TOWNS)):
         return True
@@ -162,6 +184,17 @@ def main():
             entities.append({'name': name, 'type': kind, 'unit': lgu_key(name, kind) if kind in LGU_TYPES else None})
         return index[name]
 
+    # Each supplier under the spelling it is awarded under most often.
+    spellings = {}
+    for a in awards:
+        if a['Awardee']:
+            name = a['Awardee'].strip()
+            spellings.setdefault(supplier_key(name), Counter())[name] += 1
+    canonical = {k: c.most_common(1)[0][0] for k, c in spellings.items()}
+    for a in awards:
+        if a['Awardee']:
+            a['Awardee'] = canonical[supplier_key(a['Awardee'].strip())]
+
     tenders = {}
     for a in awards:
         t = tenders.setdefault(a['RefID'], {'title': a['TenderTitle'], 'mode': a['ProcurementMode'], 'class': a['Classification'],
@@ -173,6 +206,7 @@ def main():
     for n, system in [(r, 'legacy') for r in legacy] + [(r, 'modern') for r in modern]:
         ref = n.get('RefID') or n.get('Bid Reference No.')
         name, kind = n['ProcuringEntity'], n['AgencyType']
+        kind = TYPE_FIXES.get(name, kind)
         if not name or (system, ref) in seen:
             continue
         seen.add((system, ref))
