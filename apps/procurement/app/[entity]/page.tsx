@@ -74,7 +74,7 @@ export default async function EntityPage({ params }: { params: Promise<{ entity:
 							Its profile in the Local Government workspace
 						</a>
 					) : null}
-					<h2 className='mt-8 text-[1.1rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Top suppliers</h2>
+					<h2 className='mt-8 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Top suppliers</h2>
 					{top.length ? (
 						<ol className='mt-4'>
 							{top.map(([name, s]) => (
