@@ -22,7 +22,7 @@ export type DownloadFile = {
 	file: string
 	relativePath: string
 	year: string
-	kind: 'Extracted data' | 'The Act'
+	kind: 'Extracted data' | 'Spreadsheet' | 'The Act'
 	role: string
 	contentType: string
 }
@@ -73,6 +73,16 @@ const extracted = FISCAL_YEARS.flatMap((fy): DownloadFile[] => {
 				'named project',
 			)}, each tagged to one of ${budget.sectorCount} sectors, with the source page on each.`,
 			contentType: JSON_TYPE,
+		},
+		{
+			/* Built from the line-item file on request: the same rows, flat, for a
+			   spreadsheet. Not a file on disk, so the route makes it. */
+			file: `${prefix}_line_items.csv`,
+			relativePath: `${prefix}_line_items.json`,
+			year: String(fy),
+			kind: 'Spreadsheet',
+			role: `FY ${fy} line by line as a CSV for a spreadsheet: every program, project and provision with its office, sector, Personnel Services, MOOE, Capital Outlays, total and source page.`,
+			contentType: 'text/csv; charset=utf-8',
 		},
 		{
 			file: pdf,
