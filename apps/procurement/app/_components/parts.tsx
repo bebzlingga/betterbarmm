@@ -113,15 +113,18 @@ export function Figures({
 	note,
 	items,
 	years,
+	plain = false,
 }: {
 	title: string
 	note: string
+	/** On the page's own white rather than the light band. */
+	plain?: boolean
 	items: { value: string; label: string; series?: number[] }[]
 	/** The years a figure's series runs over; the last is drawn lighter, as the year so far. */
 	years?: number[]
 }) {
 	return (
-		<section className='bg-[var(--paper-2)]'>
+		<section className={plain ? '' : 'bg-[var(--paper-2)]'}>
 			<div className='bb-container pt-16 lg:pt-20'>
 				<div className='flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-16'>
 					<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{title}</h2>
@@ -180,7 +183,7 @@ export function RankBars({
 								</span>
 								<span className='num shrink-0 text-[var(--ink-2)]'>{show(item.value)}</span>
 							</div>
-							<div className='mt-1 h-2 bg-[var(--paper)]'>
+							<div className='mt-1 h-2 bg-[var(--paper-2)]'>
 								<div className='h-full bg-[var(--accent)]' style={{ width: `${(item.value / max) * 100}%` }} />
 							</div>
 						</li>

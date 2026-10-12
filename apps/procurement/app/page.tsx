@@ -31,6 +31,7 @@ export default function ProcurementHome() {
 			</Masthead>
 
 			<Figures
+				plain
 				title='Since 2019'
 				note='What BARMM offices have put out to bid on PhilGEPS, and what has been awarded so far. An approved budget is the most an office may pay; an award is the contract it signed.'
 				years={years}
@@ -43,7 +44,8 @@ export default function ProcurementHome() {
 			/>
 
 			{openNotices.length ? (
-				<section className='bb-container bb-section'>
+				<section className='bg-[var(--paper-2)]'>
+					<div className='bb-container bb-section'>
 					<div className='flex flex-wrap items-end justify-between gap-x-10 gap-y-3'>
 						<div>
 							<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Open for bids</h2>
@@ -74,10 +76,11 @@ export default function ProcurementHome() {
 							</li>
 						))}
 					</ul>
+					</div>
 				</section>
 			) : null}
 
-			<section className='bg-[var(--paper-2)]'>
+			<section>
 			<div className='bb-container bb-section grid gap-x-20 gap-y-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]'>
 				<RankBars
 					title='Top 10 suppliers'
@@ -108,7 +111,7 @@ export default function ProcurementHome() {
 			</section>
 
 			<section className='bb-container pb-[clamp(3.75rem,7vw,6.5rem)]'>
-				<h2 className='mb-8 pt-[clamp(3.75rem,7vw,6.5rem)] text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Every office</h2>
+				<h2 className='mb-8 border-t border-[var(--rule)] pt-12 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Every office</h2>
 				<EntityExplorer rows={rows} years={years} />
 				<p className='mt-10 text-[13px] leading-6 text-[var(--ink-3)]'>
 					An approved budget is what an office set aside for a purchase, not what it paid. Awards are only those PhilGEPS
