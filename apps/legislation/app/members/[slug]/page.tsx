@@ -4,6 +4,8 @@ import { MemberIdentity } from '../../_components/member-profile'
 import { MemberRecord } from '../../_components/member-record'
 import { getCommitteesForMember } from '../../_lib/committees-data'
 import { Reveal } from '../../_components/reveal'
+import { MemberChamber } from '../../_components/member-chamber'
+import { chamberRecord } from '../../_lib/member-chamber'
 import { getMember, getMemberSlugs, getMembersDataset } from '../../_lib/members-data'
 
 export function generateStaticParams() {
@@ -49,6 +51,8 @@ export default async function MemberProfilePage({ params }: { params: Promise<{ 
 		jurisdiction: committee.jurisdiction,
 	}))
 
+	const chamber = chamberRecord(member)
+
 	return (
 		<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 			{/* Two columns: the person, then the record. Held well apart — the
@@ -78,6 +82,7 @@ export default async function MemberProfilePage({ params }: { params: Promise<{ 
 					/>
 				</Reveal>
 			</div>
+			{chamber ? <MemberChamber record={chamber} name={member.displayName} /> : null}
 			<div className='mt-12 text-[13px] text-[var(--ink-3)]'>
 				<a href={`/members/${slug}/feed.xml`} className='rule-link font-semibold text-[var(--ink)]'>
 					Follow {member.displayName}&rsquo;s measures by RSS
