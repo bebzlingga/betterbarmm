@@ -32,6 +32,20 @@ const SEATS = [
 /** "Basilan's 1st district" → "Basilan". */
 const province = (where?: string) => where?.split("'s ")[0] ?? 'Other'
 
+/** A kind of seat's Members as the page lists them: districts by province,
+ *  party seats by party, the rest as one group. */
+function groupsFor(id: string, seated: Elected[]): [string, Elected[]][] {
+	if (!seated.length) return []
+	if (id === 'district')
+		return groupBy([...seated].sort((a, b) => (a.elected.where ?? '').localeCompare(b.elected.where ?? '')), (m) => province(m.elected.where))
+	if (id === 'party')
+		return groupBy(
+			[...seated].sort((a, b) => (a.elected.party ?? '').localeCompare(b.elected.party ?? '') || a.displayName.localeCompare(b.displayName)),
+			(m) => m.elected.party ?? 'Independent',
+		)
+	return [['', seated]]
+}
+
 function groupBy(members: Elected[], key: (m: Elected) => string) {
 	const groups = new Map<string, Elected[]>()
 	for (const m of members) groups.set(key(m), [...(groups.get(key(m)) ?? []), m])
@@ -95,7 +109,7 @@ function Profile({ member }: { member: Elected }) {
 		.slice(0, 6)
 	return (
 		// Each column scrolls on its own, so the picture and the close button stay put.
-		<div className='grid h-full overflow-y-auto overscroll-contain md:grid-cols-[22rem_minmax(0,1fr)] md:overflow-hidden'>
+		<div className='grid h-full min-h-0 overflow-y-auto overscroll-contain md:grid-cols-[22rem_minmax(0,1fr)] md:overflow-hidden'>
 			<div className='bg-[var(--paper-2)] p-6 md:overflow-y-auto md:overscroll-contain md:p-8'>
 				{member.photoUrl ? (
 					// eslint-disable-next-line @next/next/no-img-element -- local portrait, unsized
@@ -281,9 +295,11 @@ function Profile({ member }: { member: Elected }) {
 	)
 }
 
-function Card({ member }: { member: Elected }) {
+type Neighbour = { id: string; name: string; photo?: string }
+
+function Card({ member, prev, next }: { member: Elected; prev?: Neighbour; next?: Neighbour }) {
 	return (
-		<ProfileDialog label={`Profile of ${member.displayName}`} card={<CardFace member={member} />}>
+		<ProfileDialog id={member.slug} label={`Profile of ${member.displayName}`} card={<CardFace member={member} />} prev={prev} next={next}>
 			<Profile member={member} />
 		</ProfileDialog>
 	)
@@ -291,6 +307,10 @@ function Card({ member }: { member: Elected }) {
 
 export default function ElectedPage() {
 	const members = getElectedMembers()
+	const sections = SEATS.map((s) => groupsFor(s.id, members.filter((m) => m.elected.seat === s.seat)))
+	// The page's own order, so Previous and Next walk it as a reader would.
+	const order = sections.flatMap((groups) => groups.flatMap(([, list]) => list))
+	const neighbour = (m?: Elected) => (m ? { id: m.slug, name: m.displayName, photo: m.photoUrl } : undefined)
 	const withFamily = members.filter((m) => m.elected.family.length).length
 	const veterans = members.filter((m) => m.phases.length > 1).length
 
@@ -335,14 +355,8 @@ export default function ElectedPage() {
 			</div>
 
 			{SEATS.map((s, i) => {
-				const seated = members.filter((m) => m.elected.seat === s.seat)
-				if (!seated.length) return null
-				const groups =
-					s.id === 'district'
-						? groupBy([...seated].sort((a, b) => (a.elected.where ?? '').localeCompare(b.elected.where ?? '')), (m) => province(m.elected.where))
-						: s.id === 'party'
-							? groupBy([...seated].sort((a, b) => (a.elected.party ?? '').localeCompare(b.elected.party ?? '') || a.displayName.localeCompare(b.displayName)), (m) => m.elected.party ?? 'Independent')
-							: [['', seated] as [string, Elected[]]]
+				const groups = sections[i]!
+				if (!groups.length) return null
 				return (
 					<section key={s.id} id={s.id} className={`scroll-mt-24 ${i % 2 ? 'bg-[var(--paper-2)]' : ''}`}>
 						<div className='bb-container bb-section'>
@@ -358,7 +372,12 @@ export default function ElectedPage() {
 									) : null}
 									<div className='grid gap-4 sm:grid-cols-2 xl:grid-cols-3'>
 										{list.map((m) => (
-											<Card key={m.slug} member={m} />
+											<Card
+												key={m.slug}
+												member={m}
+												prev={neighbour(order[order.indexOf(m) - 1])}
+												next={neighbour(order[order.indexOf(m) + 1])}
+											/>
 										))}
 									</div>
 								</div>
