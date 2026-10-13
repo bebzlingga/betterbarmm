@@ -112,6 +112,8 @@ export type ElectedSeat = {
 	education: string[]
 	/** Relatives in public life, each from a source that states the relationship. */
 	family: ElectedRelative[]
+	/** Where the portrait was published, when it came from outside Parliament's roster. */
+	photoSource?: { label: string; url: string }
 	sources: { label: string; url: string }[]
 }
 
@@ -648,6 +650,8 @@ type RawElected = {
 	birthplace?: string | null
 	education?: string[]
 	family?: { name: string; relation: string; role?: string | null; source?: number | null }[]
+	/** A portrait from an official government page, saved under public/images/members/elected. */
+	photo?: { file: string; source: { label: string; url: string } } | null
 	sources?: { label: string; url: string }[]
 }
 
@@ -656,6 +660,14 @@ const electedFile = readJson<{ meta?: { term?: { text?: string } }; members?: Ra
 )
 
 const ELECTED_TERM = parliamentLabel('PARL1')
+
+const electedPortraits = (() => {
+	try {
+		return new Set(fs.readdirSync(path.join(PORTRAIT_DIR, 'elected')))
+	} catch {
+		return new Set<string>()
+	}
+})()
 
 for (const raw of electedFile?.members ?? []) {
 	const elected: ElectedSeat = {
@@ -675,8 +687,11 @@ for (const raw of electedFile?.members ?? []) {
 			role: relative.role ?? undefined,
 			source: relative.source != null ? raw.sources?.[relative.source] : undefined,
 		})),
+		photoSource: raw.photo ? raw.photo.source : undefined,
 		sources: raw.sources ?? [],
 	}
+	const photo = raw.photo && electedPortraits.has(raw.photo.file) ? `/images/members/elected/${raw.photo.file}` : undefined
+	if (!photo) elected.photoSource = undefined
 	const existing = raw.btaMember ? allMembers.find((member) => member.rosterName === raw.btaMember) : undefined
 
 	if (existing) {
@@ -685,6 +700,8 @@ for (const raw of electedFile?.members ?? []) {
 		existing.parliamentsServed = [ELECTED_TERM, ...existing.parliamentsServed]
 		existing.isIncumbent = true
 		existing.elected = elected
+		if (!existing.photoUrl && photo) existing.photoUrl = photo
+		else if (existing.photoUrl) elected.photoSource = undefined
 		// Listed under the new Parliament, a Member is what they were elected as.
 		// Positions held in the Transition Authority — Deputy Minister, Floor
 		// Leader — are not offices in this Parliament, which has not sat yet, so
@@ -718,6 +735,7 @@ for (const raw of electedFile?.members ?? []) {
 		principalCount: 0,
 		coAuthorCount: 0,
 		bio: background,
+		photoUrl: photo,
 		elected,
 		searchText: [displayName, raw.ballotName, raw.rosterName, elected.seat, elected.where, elected.party, ...background]
 			.filter(Boolean)

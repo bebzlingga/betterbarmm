@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { MemberAvatar } from '../../_components/member-avatar'
 import { PageHeader } from '../../_components/page-header'
+import { ProfileDialog } from '../../_components/profile-dialog'
 import { getElectedMembers, type ElectedSeat, type Member } from '../../_lib/members-data'
 
 export const metadata: Metadata = {
@@ -37,96 +38,193 @@ function groupBy(members: Elected[], key: (m: Elected) => string) {
 	return [...groups]
 }
 
-function Card({ member }: { member: Elected }) {
-	const { elected } = member
-	// Cited lines first; a Transition Authority veteran without them falls
-	// back on Parliament's own biosketch. A line naming a relative the family
-	// list already carries is left to that list, so the tie is said once.
-	const background = elected.background.filter(
+const sentenceCase = (s: string) => s[0]!.toUpperCase() + s.slice(1)
+
+const LABEL = 'text-[10.5px] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
+
+/** The lines to show: cited ones, less any naming a relative the family list
+ *  already carries, so a tie is said once. */
+function backgroundOf({ elected }: Elected) {
+	return elected.background.filter(
 		(line) => !elected.family.some((relative) => line.includes(relative.name.replace(/\s*'[^']*'\s*/g, ' ').trim())),
 	)
+}
+
+/** The card: who, where, and a taste of the rest. */
+function CardFace({ member }: { member: Elected }) {
+	const { elected } = member
+	const background = backgroundOf(member)
 	return (
-		<article className='flex flex-col border border-[var(--rule)] bg-[var(--paper)] p-5'>
+		<>
 			<div className='flex items-start gap-4'>
 				<MemberAvatar name={member.displayName} src={member.photoUrl} />
 				<div className='min-w-0'>
-					<h3 className='text-[16px] font-bold leading-snug tracking-[-0.01em] text-[var(--ink)]'>
-						<Link href={`/members/${member.slug}`} className='hover:text-[var(--accent)]'>
-							{member.displayName}
-						</Link>
-					</h3>
-					<p className='mt-1 text-[12.5px] leading-snug text-[var(--ink-3)]'>
-						{[elected.where, elected.party].filter(Boolean).join(' · ')}
-					</p>
-					{elected.votes != null ? (
-						<p className='num mt-1 text-[12px] text-[var(--ink-mute)]'>{elected.votes.toLocaleString('en-PH')} votes</p>
-					) : null}
+					<h3 className='text-[16px] font-bold leading-snug tracking-[-0.01em] text-[var(--ink)]'>{member.displayName}</h3>
+					<p className='mt-1 text-[12.5px] leading-snug text-[var(--ink-3)]'>{[elected.where, elected.party].filter(Boolean).join(' · ')}</p>
+					{elected.votes != null ? <p className='num mt-1 text-[12px] text-[var(--ink-mute)]'>{elected.votes.toLocaleString('en-PH')} votes</p> : null}
 				</div>
 			</div>
-
-			{member.phases.length > 1 ? (
-				<p className='mt-4 self-start bg-[var(--paper-2)] px-2 py-0.5 text-[11px] font-semibold text-[var(--ink-2)]'>
-					Sat in the Transition Authority
-					{member.principalCount ? ` · ${member.principalCount} measures as principal` : ''}
-				</p>
-			) : null}
-
-			{elected.born || elected.education.length ? (
-				<dl className='mt-4 grid gap-1.5 text-[12.5px]'>
-					{elected.born ? (
-						<div className='flex gap-2'>
-							<dt className='w-16 shrink-0 text-[var(--ink-mute)]'>Born</dt>
-							<dd className='text-[var(--ink-2)]'>{[elected.born, elected.birthplace].filter(Boolean).join(', ')}</dd>
-						</div>
-					) : null}
-					{elected.education.length ? (
-						<div className='flex gap-2'>
-							<dt className='w-16 shrink-0 text-[var(--ink-mute)]'>Studied</dt>
-							<dd className='text-[var(--ink-2)]'>{elected.education.join('; ')}</dd>
-						</div>
-					) : null}
-				</dl>
-			) : null}
-
-			{background.length ? (
-				<ul className='mt-4 grid gap-2 text-[13px] leading-[1.6] text-[var(--ink-2)]'>
-					{background.slice(0, 3).map((line) => (
-						<li key={line} className='relative pl-3.5 before:absolute before:left-0 before:top-[0.6em] before:size-1 before:bg-[var(--brass)]'>
-							{line}
-						</li>
-					))}
-				</ul>
-			) : member.bio.length ? (
-				// Parliament's own biosketch, opened; the rest is on their page.
-				<p className='mt-4 line-clamp-4 text-[13px] leading-[1.6] text-[var(--ink-2)]'>{member.bio[0]}</p>
+			{background.length || member.bio.length ? (
+				<p className='mt-4 line-clamp-3 text-[13px] leading-[1.6] text-[var(--ink-2)]'>{background[0] ?? member.bio[0]}</p>
 			) : (
 				<p className='mt-4 text-[13px] text-[var(--ink-mute)]'>Nothing found and cited beyond the ballot yet.</p>
 			)}
+			<div className='mt-auto flex flex-wrap items-center gap-x-3 gap-y-1.5 pt-5 text-[11.5px]'>
+				{member.phases.length > 1 ? <span className='bg-[var(--paper-2)] px-2 py-0.5 font-semibold text-[var(--ink-2)]'>Transition Authority</span> : null}
+				{elected.family.length ? (
+					<span className='bg-[var(--paper-2)] px-2 py-0.5 font-semibold text-[var(--ink-2)]'>
+						{elected.family.length} {elected.family.length === 1 ? 'relative' : 'relatives'} in public life
+					</span>
+				) : null}
+				<span className='ml-auto font-semibold text-[var(--accent)]'>View profile</span>
+			</div>
+		</>
+	)
+}
 
-			{elected.family.length ? (
-				<div className='mt-5 border-t border-[var(--rule)] pt-4'>
-					<p className='text-[10.5px] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>Family in public life</p>
-					<ul className='mt-2 grid gap-1.5 text-[13px] leading-snug'>
-						{elected.family.map((relative) => (
-							<li key={relative.name + relative.relation}>
-								<span className='text-[var(--ink-3)]'>{relative.relation[0]!.toUpperCase() + relative.relation.slice(1)} </span>
-								<span className='font-semibold text-[var(--ink)]'>{relative.name}</span>
-								{relative.role ? <span className='text-[var(--ink-3)]'>, {relative.role}</span> : null}
-								{relative.source ? (
-									<a href={relative.source.url} target='_blank' rel='noreferrer' title={relative.source.label} className='ml-1 text-[11px] text-[var(--ink-mute)] hover:text-[var(--accent)]'>
-										[source]
+/** The profile: the picture left, everything known right. */
+function Profile({ member }: { member: Elected }) {
+	const { elected } = member
+	const background = backgroundOf(member)
+	const lines = background.length ? background : member.bio
+	return (
+		<div className='grid md:grid-cols-[17rem_minmax(0,1fr)]'>
+			<div className='bg-[var(--paper-2)] p-6 md:p-7'>
+				{member.photoUrl ? (
+					// eslint-disable-next-line @next/next/no-img-element -- local portrait, unsized
+					<img src={member.photoUrl} alt={member.displayName} className='aspect-[4/5] w-full border border-[var(--rule)] object-cover' />
+				) : (
+					<div className='grid aspect-[4/5] w-full place-items-center border border-[var(--rule)] bg-[var(--paper)] p-10' title={`No official photograph found for ${member.displayName}`}>
+						{/* eslint-disable-next-line @next/next/no-img-element -- the seal, sized by its frame */}
+						<img src='/images/members/BTA-logo.png' alt='' aria-hidden='true' className='w-2/3 opacity-60' />
+					</div>
+				)}
+				{elected.photoSource ? (
+					<p className='mt-2 text-[11px] text-[var(--ink-mute)]'>
+						Photo:{' '}
+						<a href={elected.photoSource.url} target='_blank' rel='noreferrer' className='rule-link'>
+							{elected.photoSource.label}
+						</a>
+					</p>
+				) : null}
+				<dl className='mt-6 grid gap-4 text-[13px]'>
+					<div>
+						<dt className={LABEL}>Seat</dt>
+						<dd className='mt-1 text-[var(--ink)]'>{[elected.seat, elected.where].filter(Boolean).join(' · ')}</dd>
+					</div>
+					{elected.party ? (
+						<div>
+							<dt className={LABEL}>Party</dt>
+							<dd className='mt-1 text-[var(--ink)]'>{elected.party}</dd>
+						</div>
+					) : null}
+					{elected.votes != null ? (
+						<div>
+							<dt className={LABEL}>Votes</dt>
+							<dd className='num mt-1 text-[var(--ink)]'>{elected.votes.toLocaleString('en-PH')}</dd>
+						</div>
+					) : null}
+					<div>
+						<dt className={LABEL}>Term</dt>
+						<dd className='mt-1 text-[var(--ink)]'>{elected.term}</dd>
+					</div>
+				</dl>
+			</div>
+
+			<div className='p-6 md:p-8'>
+				<h2 className='pr-8 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{member.displayName}</h2>
+				{member.phases.length > 1 ? (
+					<p className='mt-2 text-[13px] text-[var(--ink-3)]'>
+						Sat in the Transition Authority{member.principalCount ? ` · ${member.principalCount} measures as principal` : ''}
+					</p>
+				) : null}
+
+				{elected.born || elected.education.length ? (
+					<dl className='mt-6 grid gap-3 text-[13.5px] sm:grid-cols-[6rem_minmax(0,1fr)]'>
+						{elected.born ? (
+							<>
+								<dt className='text-[var(--ink-mute)]'>Born</dt>
+								<dd className='text-[var(--ink-2)]'>{[elected.born, elected.birthplace].filter(Boolean).join(', ')}</dd>
+							</>
+						) : null}
+						{elected.education.length ? (
+							<>
+								<dt className='text-[var(--ink-mute)]'>Education</dt>
+								<dd>
+									<ul className='grid gap-1 text-[var(--ink-2)]'>
+										{elected.education.map((line) => (
+											<li key={line}>{line}</li>
+										))}
+									</ul>
+								</dd>
+							</>
+						) : null}
+					</dl>
+				) : null}
+
+				<section className='mt-7'>
+					<h3 className={LABEL}>Background</h3>
+					{lines.length ? (
+						<ul className='mt-3 grid gap-2.5 text-[14px] leading-[1.65] text-[var(--ink-2)]'>
+							{lines.map((line) => (
+								<li key={line} className='relative pl-3.5 before:absolute before:left-0 before:top-[0.65em] before:size-1 before:bg-[var(--brass)]'>
+									{line}
+								</li>
+							))}
+						</ul>
+					) : (
+						<p className='mt-3 text-[13.5px] text-[var(--ink-mute)]'>Nothing found and cited beyond the ballot yet.</p>
+					)}
+				</section>
+
+				{elected.family.length ? (
+					<section className='mt-7'>
+						<h3 className={LABEL}>Family in public life</h3>
+						<ul className='mt-3 grid gap-2 text-[14px] leading-snug'>
+							{elected.family.map((relative) => (
+								<li key={relative.name + relative.relation}>
+									<span className='text-[var(--ink-3)]'>{sentenceCase(relative.relation)} </span>
+									<span className='font-semibold text-[var(--ink)]'>{relative.name}</span>
+									{relative.role ? <span className='text-[var(--ink-3)]'>, {relative.role}</span> : null}
+									{relative.source ? (
+										<a href={relative.source.url} target='_blank' rel='noreferrer' title={relative.source.label} className='ml-1.5 text-[11.5px] text-[var(--ink-mute)] hover:text-[var(--accent)]'>
+											source
+										</a>
+									) : null}
+								</li>
+							))}
+						</ul>
+					</section>
+				) : null}
+
+				{elected.sources.length ? (
+					<section className='mt-7 border-t border-[var(--rule)] pt-5'>
+						<h3 className={LABEL}>Sources</h3>
+						<ul className='mt-2 grid gap-1 text-[12px] leading-snug'>
+							{elected.sources.map((source) => (
+								<li key={source.url}>
+									<a href={source.url} target='_blank' rel='noreferrer' className='text-[var(--ink-3)] hover:text-[var(--accent)]'>
+										{source.label}
 									</a>
-								) : null}
-							</li>
-						))}
-					</ul>
-				</div>
-			) : null}
+								</li>
+							))}
+						</ul>
+					</section>
+				) : null}
 
-			<Link href={`/members/${member.slug}`} className='mt-auto pt-5 text-[12.5px] font-semibold text-[var(--accent)]'>
-				Full profile →
-			</Link>
-		</article>
+				<Link href={`/members/${member.slug}`} className='bb-btn bb-btn-solid mt-8'>
+					Full record
+				</Link>
+			</div>
+		</div>
+	)
+}
+
+function Card({ member }: { member: Elected }) {
+	return (
+		<ProfileDialog label={`Profile of ${member.displayName}`} card={<CardFace member={member} />}>
+			<Profile member={member} />
+		</ProfileDialog>
 	)
 }
 
