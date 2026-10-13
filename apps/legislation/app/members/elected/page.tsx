@@ -246,7 +246,7 @@ function Profile({ member }: { member: Elected }) {
 							{principal.map((measure) => (
 								<li key={measure.id} className='border-b border-[var(--rule)] pb-2'>
 									<Link href={measure.href} className='line-clamp-2 text-[var(--ink)] hover:text-[var(--accent)]'>
-										<span className='num mr-2 text-[var(--ink-3)]'>{measure.numberLabel}</span>
+										<span className='num mr-2 font-semibold text-[var(--ink)]'>{measure.numberLabel}</span>
 										{measure.title}
 									</Link>
 									<span className='mt-0.5 block text-[12px] text-[var(--ink-mute)]'>
