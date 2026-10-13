@@ -62,6 +62,34 @@
     {
      "label": "Bangsamoro Parliament, member profile",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/oranon-suwaib-l/"
+    },
+    {
+     "label": "Bangsamoro Parliament, BTA members and terms of service",
+     "url": "https://parliament.bangsamoro.gov.ph/bta-19-22/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived Feb 2023)",
+     "url": "https://web.archive.org/web/20230205230943/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived Dec 2024)",
+     "url": "https://web.archive.org/web/20241217183049/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Bangsamoro Parliament, BTA Parliament officers",
+     "url": "https://parliament.bangsamoro.gov.ph/parliament-officers/"
+    },
+    {
+     "label": "COMELEC, UBJP list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/UNITED_BANGSAMORO_JUSTICE_PARTY.pdf"
+    },
+    {
+     "label": "Bangsamoro Federalist Party, minutes of the 2 April 2026 general assembly (Bangsamoro Gazette)",
+     "url": "https://officialgazette.bangsamoro.gov.ph/wp-content/uploads/2026/04/04-MoM.pdf"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "born": "13 January 1953",
@@ -74,16 +102,29 @@
     }
    },
    "career": [
+    "2023–2025 · Chair, BTA Committee on Public Order and Safety",
+    "2019–2026 · Member, BTA (March 2019 to 2026, all 3 terms)",
     "1988– · Member, MILF; Central Mindanao Front commander",
     "1973 · Joined the MNLF",
     "1969 · Joined Ansarul Islam",
     "Member, Bangsamoro Transition Authority",
     "Chairman, Complex Resolution Management, a clan-feud settlement body",
-    "Former chairman, UBJP organizing team, Cotabato City"
+    "Former chairman, UBJP organizing team, Cotabato City",
+    "Deputy Speaker, BTA Parliament (as listed in 2026)"
    ],
    "accomplishments": [
     "One of the 'Top 300' trained in Malaysia",
     "Has settled many family feuds in Bangsamoro territory"
+   ],
+   "affiliations": [
+    "2026– · Bangsamoro Federalist Party; vice president for internal affairs",
+    "2024 · UBJP; 17th nominee for the postponed 2025 parliamentary polls",
+    "1988– · Moro Islamic Liberation Front (MILF)",
+    "1973 · Moro National Liberation Front (MNLF)",
+    "1969 · Ansarul Islam"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BFP 1st nominee"
    ]
   },
   {
@@ -111,6 +152,12 @@
      "label": "Bombo Radyo Cotabato (unverified, page unreachable)",
      "url": "https://cotabato.bomboradyo.com/2-base-command-ng-milf-biaf-pormal-na-umanib-sa-bfp/"
     }
+   ],
+   "affiliations": [
+    "2026– · Bangsamoro Federalist Party; 2nd nominee"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BFP 2nd nominee"
    ]
   },
   {
@@ -140,12 +187,20 @@
     {
      "label": "Rappler profile: Akmad 'Toks' Brahim",
      "url": "https://www.rappler.com/people/p83183663-akmad-toks-brahim/"
+    },
+    {
+     "label": "Rappler, No single party gets majority of first-ever elected Bangsamoro Parliament (Sep 2026)",
+     "url": "https://www.rappler.com/philippines/elections/parties-most-parliament-seats-results-barmm-2026/"
+    },
+    {
+     "label": "Independent Decommissioning Body, simulation exercises for Phase 3 decommissioning (20 Oct 2021)",
+     "url": "https://idb.ph/2021/10/20/idb-intensifies-preparations-for-phase-3-decommissioning-through-series-of-simulation-exercises/"
     }
    ],
    "career": [
     "2022– · BARMM Minister of Environment, Natural Resources and Energy",
-    "2019–2022 · Deputy minister, Environment, Natural Resources and Energy",
-    "Chair, MILF Joint Normalization Committee"
+    "2021 · Head, MILF secretariat, Joint Normalization Committee",
+    "2019–2022 · Deputy minister, Environment, Natural Resources and Energy"
    ],
    "photo": {
     "file": "brahim-akmad.jpg",
@@ -153,7 +208,15 @@
      "label": "Ministry of Environment, Natural Resources and Energy (BARMM), Minister's Corner; background added by BetterBARMM",
      "url": "https://menre.bangsamoro.gov.ph/?page_id=6728"
     }
-   }
+   },
+   "affiliations": [
+    "2026– · Bangsamoro Federalist Party; MILF central committee then removed him from BIAF posts",
+    "Moro Islamic Liberation Front (MILF); Bangsamoro Islamic Armed Forces",
+    "–2026 · United Bangsamoro Justice Party (UBJP)"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BFP 3rd nominee"
+   ]
   },
   {
    "ballotName": "Dan Asnawie",
@@ -183,6 +246,18 @@
     {
      "label": "PCIJ, 17 Mar 2025 (new BTA members list)",
      "url": "https://pcij.org/2025/03/17/list-new-members-of-the-bangsamoro-transition-authority/"
+    },
+    {
+     "label": "Bangsamoro Federalist Party, minutes of the 2 April 2026 general assembly (Bangsamoro Gazette)",
+     "url": "https://officialgazette.bangsamoro.gov.ph/wp-content/uploads/2026/04/04-MoM.pdf"
+    },
+    {
+     "label": "Bangsamoro Parliament, BTA members and terms of service",
+     "url": "https://parliament.bangsamoro.gov.ph/bta-19-22/"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "photo": {
@@ -194,8 +269,17 @@
    },
    "career": [
     "2026 · BFP 4th nominee, after leaving the UBJP",
+    "2026 · President, BFP Basilan provincial chapter",
     "2022–2026 · Member, BTA; reappointed as MILF nominee in 2025",
     "Commander, MILF-BIAF 114th Base Command, Basilan"
+   ],
+   "affiliations": [
+    "2026– · Bangsamoro Federalist Party; Basilan chapter president",
+    "Moro Islamic Liberation Front (MILF); 114th Base Command, Basilan",
+    "–2026 · United Bangsamoro Justice Party (UBJP)"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BFP 4th nominee"
    ]
   },
   {
@@ -228,6 +312,14 @@
     {
      "label": "Rappler profile: Abunawas 'Von Al-Haq' Maslamama",
      "url": "https://www.rappler.com/people/p59490946-abunawas-von-al-haq-maslamama/"
+    },
+    {
+     "label": "Philippine News Agency, Ex-MILF military spox named BARMM senior minister (18 Apr 2023)",
+     "url": "https://www.pna.gov.ph/articles/1199597"
+    },
+    {
+     "label": "Rappler, No single party gets majority of first-ever elected Bangsamoro Parliament (Sep 2026)",
+     "url": "https://www.rappler.com/philippines/elections/parties-most-parliament-seats-results-barmm-2026/"
     }
    ],
    "education": [
@@ -249,7 +341,16 @@
     "2017– · Co-chair, GRP-MILF Joint Peace and Security Committee",
     "2014 · Commissioner, GRP-MILF Independent Commission on Policing",
     "2005–2008 · Coordinating Committee on the Cessation of Hostilities",
-    "Project Salam, MILF reintegration and peace education programme"
+    "Project Salam, MILF reintegration and peace education programme",
+    "Spokesperson, Bangsamoro Islamic Armed Forces (MILF)"
+   ],
+   "affiliations": [
+    "2026– · Bangsamoro Federalist Party; MILF central committee then removed him from BIAF posts",
+    "Moro Islamic Liberation Front (MILF); Bangsamoro Islamic Armed Forces",
+    "–2026 · United Bangsamoro Justice Party (UBJP)"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BFP 5th nominee"
    ]
   },
   {
@@ -285,6 +386,14 @@
     {
      "label": "Wikipedia: 2025 Cotabato City local elections (cites Rappler results)",
      "url": "https://en.wikipedia.org/wiki/2025_Cotabato_City_local_elections"
+    },
+    {
+     "label": "Rappler, Johari Abu candidate profile (2022)",
+     "url": "https://phvote2022.rappler.com/elections/2022/candidates/johari-compania-abu"
+    },
+    {
+     "label": "Wikipedia, 2022 Cotabato City local elections",
+     "url": "https://en.wikipedia.org/wiki/2022_Cotabato_City_local_elections"
     }
    ],
    "family": [
@@ -299,6 +408,17 @@
     "2025 · Ran for Cotabato City mayor under Lakas-CMD; lost",
     "2024 · Joined PFP, then left the UBJP for SIAP",
     "2022–2025 · Vice mayor, Cotabato City (UBJP)"
+   ],
+   "affiliations": [
+    "2026– · Bangsamoro Federalist Party; 6th nominee",
+    "2025 · Ran for Cotabato City mayor under Lakas-CMD",
+    "2024 · Partido Federal ng Pilipinas (PFP), then SIAP Party",
+    "2022–2024 · United Bangsamoro Justice Party (UBJP)"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BFP 6th nominee",
+    "2025 · Lost Cotabato City mayor race to Bruce Matabalao",
+    "2022 · Won Cotabato City vice mayor (UBJP), as Bruce Matabalao's running mate"
    ]
   },
   {
@@ -327,10 +447,21 @@
     {
      "label": "Bangsamoro Federalist Party officers (Bangsamoro Gazette, Apr 2026)",
      "url": "https://officialgazette.bangsamoro.gov.ph/wp-content/uploads/2026/04/04-MoM.pdf"
+    },
+    {
+     "label": "COMELEC, BARMM Grand Coalition list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/BARMM_GRAND_COALITION.pdf"
     }
    ],
    "career": [
     "2026 · BFP chapter president, Marawi City"
+   ],
+   "affiliations": [
+    "2026– · Bangsamoro Federalist Party; Marawi City chapter president",
+    "2024 · BARMM Grand Coalition; 28th nominee for the postponed 2025 polls"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BFP 7th nominee"
    ]
   },
   {
@@ -371,6 +502,12 @@
    ],
    "career": [
     "2026 · BFP provincial chapter president, Tawi-Tawi"
+   ],
+   "affiliations": [
+    "2026– · Bangsamoro Federalist Party; Tawi-Tawi provincial chapter president"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BFP 8th nominee"
    ]
   },
   {
@@ -395,6 +532,26 @@
     {
      "label": "PCIJ, 17 Mar 2025 (new BTA members list)",
      "url": "https://pcij.org/2025/03/17/list-new-members-of-the-bangsamoro-transition-authority/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived June 2025)",
+     "url": "https://web.archive.org/web/20250605033116/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (2026)",
+     "url": "https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Bangsamoro Federalist Party, minutes of the 2 April 2026 general assembly (Bangsamoro Gazette)",
+     "url": "https://officialgazette.bangsamoro.gov.ph/wp-content/uploads/2026/04/04-MoM.pdf"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
+    },
+    {
+     "label": "The Manila Times, BTA panels to split 3 ministries into 9 (20 Dec 2025)",
+     "url": "https://www.manilatimes.net/2025/12/20/regions/bta-panels-to-split-3-ministries-into-9-for-efficient-service-in-barmm/2247052/amp"
     }
    ],
    "photo": {
@@ -405,7 +562,14 @@
     }
    },
    "career": [
-    "2025 · Appointed BTA member"
+    "2025 · Appointed BTA member",
+    "2025–2026 · Chair, BTA Committee on Finance, Budget and Management"
+   ],
+   "affiliations": [
+    "2026– · Bangsamoro Federalist Party; treasurer and finance committee chair"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BFP 9th nominee"
    ]
   },
   {
@@ -432,6 +596,14 @@
     {
      "label": "Bangsamoro Parliament, member profile",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/midtimbang-michael-e/"
+    },
+    {
+     "label": "Bangsamoro Federalist Party, minutes of the 2 April 2026 general assembly (Bangsamoro Gazette)",
+     "url": "https://officialgazette.bangsamoro.gov.ph/wp-content/uploads/2026/04/04-MoM.pdf"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "born": "1 April 1962",
@@ -448,6 +620,7 @@
     }
    },
    "career": [
+    "2026 · President, BFP Maguindanao del Sur provincial chapter",
     "2022– · Member, Bangsamoro Transition Authority",
     "2019–2022 · Maguindanao provincial peace mediation body",
     "2007–2016 · Maguindanao provincial board member (3 terms)",
@@ -458,6 +631,12 @@
     "Brokered reconciliation of Mayors Toco Mastura and Ombra Sinsuat (2018–2019)",
     "Sponsored 2010 provincial resolution backing resumption of GPH-MILF peace talks",
     "Authored 2014 and 2015 provincial resolutions urging passage of the Bangsamoro Basic Law"
+   ],
+   "affiliations": [
+    "2026– · Bangsamoro Federalist Party; Maguindanao del Sur chapter president"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BFP 10th nominee"
    ]
   },
   {
@@ -484,7 +663,18 @@
     {
      "label": "Philstar, 6 Aug 2026",
      "url": "https://www.philstar.com/nation/2026/08/06/2547454/basilan-officials-support-comelecs-barmm-election-security-thrusts"
+    },
+    {
+     "label": "COMELEC, certified list of candidates, Basilan, May 2019 elections",
+     "url": "https://comelec.gov.ph/php-tpls-attachments/2019NLE/ListsOfCandidates/TentativeListsofCandidates/LOCAL/ARMM/BASILAN.pdf"
     }
+   ],
+   "affiliations": [
+    "2026– · Bangsamoro Federalist Party; 11th nominee",
+    "2019 · Lakas–CMD; filed for the ARMM Regional Legislative Assembly, Basilan"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BFP 11th nominee"
    ]
   },
   {
@@ -509,6 +699,30 @@
     {
      "label": "PCIJ, 17 Mar 2025 (new BTA members list)",
      "url": "https://pcij.org/2025/03/17/list-new-members-of-the-bangsamoro-transition-authority/"
+    },
+    {
+     "label": "PCIJ, Political clans gain, women lose seats in new BARMM interim government (30 Mar 2025)",
+     "url": "https://pcij.org/2025/03/30/political-clans-gain-women-lose-seats-in-new-barmm-interim-government/"
+    },
+    {
+     "label": "Bangsamoro Parliament, BTA members and terms of service",
+     "url": "https://parliament.bangsamoro.gov.ph/bta-19-22/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived June 2025)",
+     "url": "https://web.archive.org/web/20250605033116/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (2026)",
+     "url": "https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Bangsamoro Federalist Party, minutes of the 2 April 2026 general assembly (Bangsamoro Gazette)",
+     "url": "https://officialgazette.bangsamoro.gov.ph/wp-content/uploads/2026/04/04-MoM.pdf"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "photo": {
@@ -519,7 +733,28 @@
     }
    },
    "career": [
-    "2025 · Appointed BTA member"
+    "2025 · Appointed BTA member",
+    "2025–2026 · Chair, BTA Committee on Agriculture, Fisheries and Agrarian Reform"
+   ],
+   "affiliations": [
+    "2026– · Bangsamoro Federalist Party; arbitral committee chair"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BFP 12th nominee"
+   ],
+   "family": [
+    {
+     "name": "Zacaria Candao",
+     "relation": "son of",
+     "role": "Former Maguindanao governor; first ARMM regional governor",
+     "source": 1
+    },
+    {
+     "name": "Bai Maleiha Candao",
+     "relation": "brother of",
+     "role": "BTA member, 2019–2025",
+     "source": 1
+    }
    ]
   },
   {
@@ -547,6 +782,14 @@
     {
      "label": "Bangsamoro Parliament, member profile",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/pagayao-alindatu-k/"
+    },
+    {
+     "label": "Bangsamoro Federalist Party, minutes of the 2 April 2026 general assembly (Bangsamoro Gazette)",
+     "url": "https://officialgazette.bangsamoro.gov.ph/wp-content/uploads/2026/04/04-MoM.pdf"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "born": "29 February 1960",
@@ -578,6 +821,12 @@
    "accomplishments": [
     "Led passage of the Bangsamoro Labor and Employment Code (2025) as committee chair",
     "Delegate, BIMP-EAGA Strategic Planning Meeting, Brunei (2018)"
+   ],
+   "affiliations": [
+    "2026– · Bangsamoro Federalist Party; nomination committee chair"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BFP 13th nominee"
    ]
   },
   {
@@ -602,6 +851,22 @@
     {
      "label": "PCIJ, 17 Mar 2025 (new BTA members list)",
      "url": "https://pcij.org/2025/03/17/list-new-members-of-the-bangsamoro-transition-authority/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived June 2025)",
+     "url": "https://web.archive.org/web/20250605033116/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (2026)",
+     "url": "https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
+    },
+    {
+     "label": "Rappler, Zulfikar-Ali 'Sol' Bayam profile",
+     "url": "https://www.rappler.com/people/p44654430-zulfikar-ali-sol-bayam/"
     }
    ],
    "photo": {
@@ -612,7 +877,14 @@
     }
    },
    "career": [
-    "2025 · Appointed BTA member, national government nominee"
+    "2025 · Appointed BTA member, national government nominee",
+    "2025–2026 · Chair, BTA Committee on Transportation and Communications"
+   ],
+   "affiliations": [
+    "2026– · Bangsamoro Federalist Party; 14th nominee"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BFP 14th nominee"
    ]
   },
   {
@@ -637,6 +909,26 @@
     {
      "label": "PCIJ, 17 Mar 2025 (new BTA members list)",
      "url": "https://pcij.org/2025/03/17/list-new-members-of-the-bangsamoro-transition-authority/"
+    },
+    {
+     "label": "Bangsamoro Parliament, BTA members and terms of service",
+     "url": "https://parliament.bangsamoro.gov.ph/bta-19-22/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived June 2025)",
+     "url": "https://web.archive.org/web/20250605033116/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (2026)",
+     "url": "https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
+    },
+    {
+     "label": "Rappler, Jaafar 'Jambo' Matalam profile",
+     "url": "https://www.rappler.com/people/p90196604-jaafar-jambo-matalam/"
     }
    ],
    "photo": {
@@ -647,7 +939,15 @@
     }
    },
    "career": [
-    "2025 · Reappointed BTA member, national government nominee"
+    "2025 · Reappointed BTA member, national government nominee",
+    "2025–2026 · Chair, BTA Committee on Public Works",
+    "2022 · Appointed BTA member (September)"
+   ],
+   "affiliations": [
+    "2026– · Bangsamoro Federalist Party; 15th nominee"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BFP 15th nominee"
    ]
   },
   {
@@ -681,6 +981,10 @@
     {
      "label": "Luwaran, 24 May 2023",
      "url": "https://www.luwaran.com/news/article/2577/peace-stakeholders-help-settle-land-conflict-in-midsayap--cotabato"
+    },
+    {
+     "label": "COMELEC, BARMM Grand Coalition list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/BARMM_GRAND_COALITION.pdf"
     }
    ],
    "career": [
@@ -688,6 +992,13 @@
    ],
    "accomplishments": [
     "Presented a land-conflict settlement in Midsayap, Cotabato (2023)"
+   ],
+   "affiliations": [
+    "2026– · Bangsamoro Federalist Party; 16th nominee",
+    "2024 · BARMM Grand Coalition; 31st nominee for the postponed 2025 polls"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BFP 16th nominee"
    ]
   },
   {
@@ -734,6 +1045,30 @@
     {
      "label": "Bangsamoro Government, 28 Jan 2020, MSU-Marawi confers honorary degree on Chief Minister Ebrahim",
      "url": "https://bangsamoro.gov.ph/news/latest-news/msu-marawi-confers-honorary-degree-on-chief-minister-ebrahim/"
+    },
+    {
+     "label": "Rappler, Murad's son beats ex-MILF commander for SGA 1st District seat (15 Sep 2026)",
+     "url": "https://www.rappler.com/philippines/elections/mansor-ebrahim-results-first-district-special-geographic-area-barmm-2026/"
+    },
+    {
+     "label": "BARMM, Chief Minister's profile (archived 2020)",
+     "url": "https://web.archive.org/web/2020/https://bangsamoro.gov.ph/officials/chief-minister/"
+    },
+    {
+     "label": "Inquirer, Murad Ebrahim: From guerrilla commander to government official (23 Feb 2019)",
+     "url": "https://newsinfo.inquirer.net/1089081/murad-ebrahim-from-guerrilla-commander-to-government-official"
+    },
+    {
+     "label": "Wikipedia, Murad Ebrahim",
+     "url": "https://en.wikipedia.org/wiki/Murad_Ebrahim"
+    },
+    {
+     "label": "COMELEC, UBJP list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/UNITED_BANGSAMORO_JUSTICE_PARTY.pdf"
+    },
+    {
+     "label": "Rappler, IN NUMBERS: BARMM's first elected parliament (Sep 2026)",
+     "url": "https://www.rappler.com/philippines/elections/in-numbers-barmm-2026-first-elected-parliament/"
     }
    ],
    "education": [
@@ -743,9 +1078,12 @@
    ],
    "career": [
     "2019–2025 · Interim Chief Minister of BARMM and BTA member",
+    "2019 · Concurrent BARMM Minister of Public Works (February–November)",
+    "2003– · MILF chairman, succeeding Salamat Hashim",
     "2001–2003 · Chair, MILF peace panel",
+    "1982 · MILF vice chairman for military affairs; BIAF chief of staff",
+    "1978 · MNLF chairman, Kutawato region",
     "Chairman, Moro Islamic Liberation Front; head of the UBJP",
-    "MILF vice chairman for military affairs",
     "Chief of staff, Bangsamoro Islamic Armed Forces",
     "Chairman, MILF Ad Hoc Coordinating Committee",
     "MNLF military chairman, Kutawato region; MNLF zone commander",
@@ -760,7 +1098,36 @@
      "label": "Bangsamoro Parliament, Member profile",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ebrahim-ahod-balawag/"
     }
-   }
+   },
+   "affiliations": [
+    "2024 · UBJP 1st nominee for the postponed 2025 polls",
+    "1982– · Moro Islamic Liberation Front (MILF); chairman from 2003",
+    "1968–1982 · Moro National Liberation Front (MNLF)",
+    "United Bangsamoro Justice Party (UBJP); party president"
+   ],
+   "elections": [
+    "2026 · Won a party seat as UBJP 1st nominee"
+   ],
+   "family": [
+    {
+     "name": "Mansor Blah Ebrahim",
+     "relation": "father of",
+     "role": "MP-elect, Special Geographic Area 1st District (UBJP), 2026",
+     "source": 5
+    },
+    {
+     "name": "Hadja Lupia Ebrahim",
+     "relation": "husband of",
+     "role": null,
+     "source": 7
+    },
+    {
+     "name": null,
+     "relation": "parent of",
+     "role": "2 children",
+     "source": 7
+    }
+   ]
   },
   {
    "ballotName": "Mohagher Iqbal",
@@ -800,6 +1167,22 @@
     {
      "label": "Daily Tribune, 1 Jun 2026",
      "url": "https://tribune.net.ph/2026/06/01/barmm-orders-iqbal-to-vacate-education-post"
+    },
+    {
+     "label": "Rappler, Mohagher Iqbal profile",
+     "url": "https://www.rappler.com/people/p65688940-mohagher-iqbal/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived May 2022)",
+     "url": "https://web.archive.org/web/20220519220410/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "COMELEC, UBJP list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/UNITED_BANGSAMORO_JUSTICE_PARTY.pdf"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "birthplace": "Cotabato City",
@@ -810,11 +1193,15 @@
    "career": [
     "2019–2026 · BARMM Minister of Basic, Higher and Technical Education; removed May 2026",
     "2019– · Member, Bangsamoro Transition Authority",
+    "2016–2019 · Member, Bangsamoro Transition Commission",
     "2013–2016 · Chair, Bangsamoro Transition Commission",
     "2003– · Chair, MILF peace panel",
     "1979– · Chair, MILF Committee on Information",
     "1977 · Joined the MILF",
-    "1972 · Joined the MNLF"
+    "1977 · Member, MILF Central Committee",
+    "1977 · Propaganda chair, MNLF Kutawato Revolutionary Committee",
+    "1972 · Joined the MNLF",
+    "Chair, BTA Committee on Basic, Higher and Technical Education (first BTA)"
    ],
    "accomplishments": [
     "Signed the 2012 Framework Agreement and 2014 Comprehensive Agreement on the Bangsamoro",
@@ -826,7 +1213,15 @@
      "label": "Bangsamoro Parliament, Member profile",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/iqbal-mohagher-m/"
     }
-   }
+   },
+   "affiliations": [
+    "1977– · Moro Islamic Liberation Front (MILF)",
+    "1972 · Moro National Liberation Front (MNLF)",
+    "United Bangsamoro Justice Party (UBJP); 2nd nominee in 2024 and 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as UBJP 2nd nominee"
+   ]
   },
   {
    "ballotName": "Ali Solaiman",
@@ -858,6 +1253,26 @@
     {
      "label": "Bangsamoro Government, Key Officials",
      "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    },
+    {
+     "label": "Rappler, Aleem 'Pangalian Ali' Solaiman profile",
+     "url": "https://www.rappler.com/people/p84184975-aleem-pangalian-ali-solaiman/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived May 2022)",
+     "url": "https://web.archive.org/web/20220519220410/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived Dec 2024)",
+     "url": "https://web.archive.org/web/20241217183049/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "COMELEC, UBJP list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/UNITED_BANGSAMORO_JUSTICE_PARTY.pdf"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "born": "3 February 1949",
@@ -877,19 +1292,35 @@
     }
    },
    "career": [
+    "1979 · Joined the MILF",
+    "1974 · Teacher, Maahad Mindanao Al-Arabie, Marawi",
     "Deputy Chief Minister for the Mainland Provinces; BTA member",
     "2nd vice chairman, MILF Central Committee",
     "Deputy Chief of Staff for Military Affairs, MILF-BIAF",
     "Commander, MILF 103rd Base Command, then 3rd Field Division",
     "Director, Hashim Salamat Memorial Academy, Butig (4 years)",
-    "1979 · Joined the MILF",
-    "1974 · Teacher, Maahad Mindanao Al-Arabie, Marawi",
-    "President, Alliance of Ulama in the Philippines"
+    "President, Alliance of Ulama in the Philippines",
+    "Chair, BTA Special Committee on Marawi (to at least December 2024)"
    ],
    "accomplishments": [
     "Founding member of the MILF in the Ranaw region (1979)",
     "Founded the Arabic institute Maahad Lumbayanague Al-Islamie",
     "Organised madrasah heads of 4 towns into Rabitatul Madaris Al-Arabie wa Islamie; its president"
+   ],
+   "affiliations": [
+    "1979– · Moro Islamic Liberation Front (MILF); 2nd vice chairman",
+    "United Bangsamoro Justice Party (UBJP); 3rd nominee in 2024 and 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as UBJP 3rd nominee"
+   ],
+   "family": [
+    {
+     "name": "Hadja Inshirah Grande Ditucalan",
+     "relation": "husband of",
+     "role": null,
+     "source": 2
+    }
    ]
   },
   {
@@ -918,6 +1349,18 @@
     {
      "label": "Bangsamoro Parliament, member profile",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/archt-guerra-eduard-u/"
+    },
+    {
+     "label": "Rappler, Eduard Guerra profile",
+     "url": "https://www.rappler.com/people/p58506236-eduard-guerra/"
+    },
+    {
+     "label": "COMELEC, UBJP list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/UNITED_BANGSAMORO_JUSTICE_PARTY.pdf"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "education": [
@@ -949,7 +1392,14 @@
      "label": "Bangsamoro Parliament, Members of the Parliament",
      "url": "https://parliament.bangsamoro.gov.ph/members/"
     }
-   }
+   },
+   "affiliations": [
+    "Moro Islamic Liberation Front (MILF); chair of foreign affairs from 2003",
+    "United Bangsamoro Justice Party (UBJP); chief finance officer; 4th nominee in 2024 and 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as UBJP 4th nominee"
+   ]
   },
   {
    "ballotName": "Ibrahim Ali",
@@ -976,6 +1426,18 @@
     {
      "label": "Bangsamoro Parliament, member profile",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ali-ibrahim-d/"
+    },
+    {
+     "label": "BARMM, CM Macacua installs new BARMM execs (May 2026)",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-installs-new-barmm-execs-pushes-accountability-agenda/"
+    },
+    {
+     "label": "COMELEC, UBJP list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/UNITED_BANGSAMORO_JUSTICE_PARTY.pdf"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "born": "20 January 1959",
@@ -992,6 +1454,7 @@
     }
    },
    "career": [
+    "2026 · Executive director, Bangsamoro Pilgrimage Authority (sworn 18 May)",
     "2019–2025 · Member, Bangsamoro Transition Authority",
     "2018– · Board of directors, Bangsamoro-Turkish Educational Academy",
     "2017– · Board member, Jamiat Cotabato",
@@ -1002,6 +1465,13 @@
     "1995–1998 · Vice chair, MILF Committee on Da'wah and Masajid Affairs; later chair",
     "1992–2015 · Member, MILF Darul Ifta",
     "1987–1989 · Faculty, Kutawato Islamic Institute; later its director"
+   ],
+   "affiliations": [
+    "Moro Islamic Liberation Front (MILF); Darul Ifta member 1992–2015",
+    "United Bangsamoro Justice Party (UBJP); 5th nominee in 2024 and 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as UBJP 5th nominee"
    ]
   },
   {
@@ -1031,6 +1501,22 @@
     {
      "label": "Bangsamoro Government, Key Officials",
      "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    },
+    {
+     "label": "BARMM, CM Macacua installs new BARMM execs (May 2026)",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-installs-new-barmm-execs-pushes-accountability-agenda/"
+    },
+    {
+     "label": "Bangsamoro Parliament, BTA members and terms of service",
+     "url": "https://parliament.bangsamoro.gov.ph/bta-19-22/"
+    },
+    {
+     "label": "COMELEC, UBJP list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/UNITED_BANGSAMORO_JUSTICE_PARTY.pdf"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "photo": {
@@ -1042,7 +1528,16 @@
    },
    "career": [
     "2026 · Senior Minister, Office of the Chief Minister",
-    "2025 · Reappointed BTA member, MILF nominee"
+    "2025 · Reappointed BTA member, MILF nominee",
+    "2019 · Appointed BTA member (March); served to 2026",
+    "Head, Bangsamoro Treasury Office",
+    "Executive director, Bangsamoro Pilgrimage Authority, before May 2026"
+   ],
+   "affiliations": [
+    "United Bangsamoro Justice Party (UBJP); 6th nominee in 2024 and 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as UBJP 6th nominee"
    ]
   },
   {
@@ -1068,6 +1563,34 @@
     {
      "label": "Bangsamoro Parliament, member profile",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/yacob-mohammad-s-ph-d/"
+    },
+    {
+     "label": "MindaNews, BARMM Parliament elects new speaker (21 Oct 2025)",
+     "url": "https://mindanews.com/top-stories/2025/10/barmm-parliament-elects-new-speaker/"
+    },
+    {
+     "label": "MindaNews, BARMM has new set of Parliament leaders (22 Oct 2025)",
+     "url": "https://mindanews.com/top-stories/2025/10/barmm-has-new-set-of-parliament-leaders/"
+    },
+    {
+     "label": "Wikipedia, Mohammad Yacob",
+     "url": "https://en.wikipedia.org/wiki/Mohammad_Yacob"
+    },
+    {
+     "label": "Bangsamoro Parliament, BTA members and terms of service",
+     "url": "https://parliament.bangsamoro.gov.ph/bta-19-22/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived May 2022)",
+     "url": "https://web.archive.org/web/20220519220410/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "SDN Chronicle, Speaker Yacob names UBJP's 40 nominees (4 Apr 2026)",
+     "url": "https://scitechanddigital.news/2026/04/04/speaker-yacob-announces-40-nominees-for-1st-bangsamoro-parliamentary-elections-scheduled-on-sept-14-2026-ebrahim-says-manifestation-intention-to-participate-now-with-comelec/"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "education": [
@@ -1082,12 +1605,21 @@
     }
    },
    "career": [
+    "2025–2026 · Speaker, BTA Parliament (elected 21 October 2025)",
+    "2025 · Senior Minister, Office of the Chief Minister (from April)",
+    "2025 · Reappointed BTA member",
     "2022 · Reappointed BTA member",
     "2019 · Appointed BTA member",
-    "Minister of Agriculture, Fisheries and Agrarian Reform, BARMM",
-    "Speaker, BTA Parliament",
+    "2019–2025 · BARMM Minister of Agriculture, Fisheries and Agrarian Reform",
     "Executive director, Bangsamoro Development Agency (9 years)",
-    "Farmer"
+    "Farmer",
+    "Chair, BTA Committee on Agriculture, Fisheries and Agrarian Reform (first BTA)"
+   ],
+   "affiliations": [
+    "United Bangsamoro Justice Party (UBJP); 7th nominee in 2026; announced the party's nominees"
+   ],
+   "elections": [
+    "2026 · Won a party seat as UBJP 7th nominee"
    ]
   },
   {
@@ -1110,6 +1642,48 @@
     {
      "label": "Daily Tribune, 16 Sep 2026 (20 BTA members secure party seats)",
      "url": "https://tribune.net.ph/2026/09/16/20-bta-members-secure-party-seats-in-barmm-parliament"
+    },
+    {
+     "label": "Rappler, Amir Balindong candidate profile (2025)",
+     "url": "https://www.rappler.com/people/p24375179-amir-balindong/"
+    },
+    {
+     "label": "Wikipedia, Candidates in the 2025 Bangsamoro Parliament election (COMELEC certificates of candidacy)",
+     "url": "https://en.wikipedia.org/wiki/Candidates_in_the_2026_Bangsamoro_Parliament_election"
+    },
+    {
+     "label": "COMELEC, UBJP list of nominees for the 2026 BARMM parliamentary elections",
+     "url": "https://comelec.gov.ph/php-tpls-attachments/2025BARMMPE/260522_REDACTED_LISTNOM/REDACTED_RPPP/UNITED_BANGSAMORO_JUSTICE_PARTY.pdf"
+    },
+    {
+     "label": "SDN Chronicle, Speaker Yacob names UBJP's 40 nominees (4 Apr 2026)",
+     "url": "https://scitechanddigital.news/2026/04/04/speaker-yacob-announces-40-nominees-for-1st-bangsamoro-parliamentary-elections-scheduled-on-sept-14-2026-ebrahim-says-manifestation-intention-to-participate-now-with-comelec/"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
+    },
+    {
+     "label": "Rappler, Unopposed Lanao del Sur 8th District bet takes BARMM seat (Sep 2026)",
+     "url": "https://www.rappler.com/philippines/elections/ahmad-balindong-results-eighth-district-lanao-del-sur-barmm-2026/"
+    }
+   ],
+   "career": [
+    "Chief, political affairs, BTA-BARMM (as of 2025)"
+   ],
+   "affiliations": [
+    "United Bangsamoro Justice Party (UBJP); 8th nominee in 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as UBJP 8th nominee",
+    "2025 · Filed as UBJP candidate for Lanao del Sur 8th district; polls postponed"
+   ],
+   "family": [
+    {
+     "name": "Raquela D. Santican",
+     "relation": "husband of",
+     "role": null,
+     "source": 1
     }
    ]
   },
@@ -1137,6 +1711,46 @@
     {
      "label": "Bangsamoro Parliament, member profile",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/lim-john-anthony-l/"
+    },
+    {
+     "label": "Rappler, John Anthony 'Jet' Lim profile",
+     "url": "https://www.rappler.com/people/p10624209-john-anthony-jet-lim/"
+    },
+    {
+     "label": "MindaNews, BARMM has new set of Parliament leaders (22 Oct 2025)",
+     "url": "https://mindanews.com/top-stories/2025/10/barmm-has-new-set-of-parliament-leaders/"
+    },
+    {
+     "label": "Bangsamoro Parliament, BTA Parliament officers",
+     "url": "https://parliament.bangsamoro.gov.ph/parliament-officers/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived Apr 2026)",
+     "url": "https://web.archive.org/web/20260427105406/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "The Manila Times, BTA panels to split 3 ministries into 9 (20 Dec 2025)",
+     "url": "https://www.manilatimes.net/2025/12/20/regions/bta-panels-to-split-3-ministries-into-9-for-efficient-service-in-barmm/2247052/amp"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived Feb 2023)",
+     "url": "https://web.archive.org/web/20230205230943/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived Dec 2024)",
+     "url": "https://web.archive.org/web/20241217183049/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Bangsamoro Parliament, BTA members and terms of service",
+     "url": "https://parliament.bangsamoro.gov.ph/bta-19-22/"
+    },
+    {
+     "label": "COMELEC, UBJP list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/UNITED_BANGSAMORO_JUSTICE_PARTY.pdf"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "birthplace": "Jolo, Sulu",
@@ -1153,6 +1767,11 @@
     }
    },
    "career": [
+    "2026 · Chair, BTA Committee on Rules",
+    "2025–2026 · BTA Floor Leader (elected 21 October 2025)",
+    "2025 · BTA spokesperson",
+    "2023–2025 · Chair, BTA Committee on Labor and Employment",
+    "2022 · Appointed BTA member (September)",
     "Member, Bangsamoro Transition Authority",
     "Member, Tawi-Tawi Sangguniang Panlalawigan",
     "Lawyer, National Housing Authority and PNP Internal Affairs Service",
@@ -1161,6 +1780,20 @@
    "accomplishments": [
     "Helped establish the Malasakit Center in Bongao, the first in BARMM",
     "Helped return locally stranded individuals and students to Tawi-Tawi during COVID-19"
+   ],
+   "affiliations": [
+    "United Bangsamoro Justice Party (UBJP); 9th nominee in 2024 and 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as UBJP 9th nominee"
+   ],
+   "family": [
+    {
+     "name": "Maria Cinderella M. Lim",
+     "relation": "husband of",
+     "role": null,
+     "source": 1
+    }
    ]
   },
   {
@@ -1195,6 +1828,22 @@
     {
      "label": "PCIJ, 17 Mar 2025 (new BTA members list)",
      "url": "https://pcij.org/2025/03/17/list-new-members-of-the-bangsamoro-transition-authority/"
+    },
+    {
+     "label": "Bangsamoro Parliament, BTA members and terms of service",
+     "url": "https://parliament.bangsamoro.gov.ph/bta-19-22/"
+    },
+    {
+     "label": "Rappler, Haber Amin Asarul profile",
+     "url": "https://www.rappler.com/people/p64463286-haber-amin-asarul/"
+    },
+    {
+     "label": "COMELEC, UBJP list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/UNITED_BANGSAMORO_JUSTICE_PARTY.pdf"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "photo": {
@@ -1207,7 +1856,17 @@
    "career": [
     "2025 · Appointed BTA member, national government nominee",
     "2022 · Ran for mayor of Sumisip under the UBJP",
+    "2019 · BTA member (March–June 2019)",
     "2010–2013 · Mayor, Sumisip, Basilan"
+   ],
+   "affiliations": [
+    "United Bangsamoro Justice Party (UBJP); 2022 Sumisip mayoral candidate",
+    "UBJP 10th nominee in 2024 and 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as UBJP 10th nominee",
+    "2022 · Ran for Sumisip mayor (UBJP) against Jul-Adnan Hataman",
+    "2010 · Won Sumisip mayor"
    ]
   },
   {
@@ -1235,6 +1894,22 @@
     {
      "label": "Bangsamoro Parliament, member profile",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/dumama-alba-sha-elijah-b/"
+    },
+    {
+     "label": "MindaNews, BARMM has new set of Parliament leaders (22 Oct 2025)",
+     "url": "https://mindanews.com/top-stories/2025/10/barmm-has-new-set-of-parliament-leaders/"
+    },
+    {
+     "label": "Rappler, Sha Elijah 'Lai' Dumama-Alba profile",
+     "url": "https://www.rappler.com/people/p29797767-sha-elijah-lai-dumama-alba/"
+    },
+    {
+     "label": "COMELEC, UBJP list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/UNITED_BANGSAMORO_JUSTICE_PARTY.pdf"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "education": [
@@ -1250,11 +1925,15 @@
     }
    },
    "career": [
-    "2022– · BTA member and Floor Leader; chair, Committee on Rules",
+    "2025–2026 · Deputy Speaker, BTA Parliament (elected 21 October 2025)",
+    "2025 · Replaced as BTA Floor Leader by John Anthony Lim (21 October)",
+    "2022–2025 · BTA Floor Leader; chair, Committee on Rules",
     "2019– · Bangsamoro Attorney General",
     "2018–2019 · MILF member, Coordinating Team for Transition",
     "Deputy executive director, Bangsamoro Transition Commission",
-    "Attorney VI, Civil Service Commission-ARMM"
+    "Attorney VI, Civil Service Commission-ARMM",
+    "Vice chair, BTA Committee on Bangsamoro Justice System",
+    "Secretariat, Intergovernmental Relations Body"
    ],
    "accomplishments": [
     "Placed 3rd in the 2018 Special Shari'ah Bar Examinations",
@@ -1263,6 +1942,12 @@
     "2019 Obama Leaders Asia; Tatler Asia Gen.T List 2020",
     "Asia Peace Innovators Fellow 2020; US International Visitor Leadership Program grantee 2021",
     "Asia Foundation Development Fellow alumna"
+   ],
+   "affiliations": [
+    "United Bangsamoro Justice Party (UBJP); 7th nominee in 2024, 11th in 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as UBJP 11th nominee"
    ]
   },
   {
@@ -1292,11 +1977,38 @@
     {
      "label": "Rappler profile: Nordjiana Ducol",
      "url": "https://www.rappler.com/people/p31558365-nordjiana-ducol/"
+    },
+    {
+     "label": "COMELEC, certified list of candidates, Pualas, May 2022",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2022NLE/TentativeListsofCandidates/BARMM/LANAO_DEL_SUR/PUALAS.pdf"
+    },
+    {
+     "label": "Wikipedia, Candidates in the 2025 Bangsamoro Parliament election (COMELEC certificates of candidacy)",
+     "url": "https://en.wikipedia.org/wiki/Candidates_in_the_2026_Bangsamoro_Parliament_election"
+    },
+    {
+     "label": "SDN Chronicle, Speaker Yacob names UBJP's 40 nominees (4 Apr 2026)",
+     "url": "https://scitechanddigital.news/2026/04/04/speaker-yacob-announces-40-nominees-for-1st-bangsamoro-parliamentary-elections-scheduled-on-sept-14-2026-ebrahim-says-manifestation-intention-to-participate-now-with-comelec/"
     }
    ],
    "career": [
     "2025 · Ran for the Lanao del Sur 7th parliamentary district",
     "Former mayor, Pualas, Lanao del Sur"
+   ],
+   "affiliations": [
+    "United Bangsamoro Justice Party (UBJP); 2025 district candidate; 12th party nominee in 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as UBJP 12th nominee",
+    "2025 · Filed as UBJP candidate for Lanao del Sur 7th district; polls postponed"
+   ],
+   "family": [
+    {
+     "name": "Amanoden Tomalondog Ducol",
+     "relation": "wife of",
+     "role": "Pualas mayoral candidate, 2022 (People's Reform Party)",
+     "source": 1
+    }
    ]
   },
   {
@@ -1323,6 +2035,14 @@
     {
      "label": "Bangsamoro Parliament, member profile",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/atty-jajurie-raissa-h/"
+    },
+    {
+     "label": "COMELEC, UBJP list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/UNITED_BANGSAMORO_JUSTICE_PARTY.pdf"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "birthplace": "Jolo, Sulu",
@@ -1339,11 +2059,11 @@
    },
    "career": [
     "2019– · BTA member and Deputy Floor Leader",
-    "Minister of Social Services and Development; chair, BEDC Social Development Committee",
     "2019– · Chair, BTA committees on social services and on local government",
     "2017 · Member, second Bangsamoro Transition Commission",
     "2013 · Member, Bangsamoro Transition Commission; chair, Committee on Fiscal Autonomy",
     "2011 · Joined the MILF peace negotiating delegation",
+    "Minister of Social Services and Development; chair, BEDC Social Development Committee",
     "Alternate member, MILF Peace Implementing Panel",
     "Over 20 years with alternative law group SALIGAN"
    ],
@@ -1356,7 +2076,14 @@
     "Chaired small groups on the Bangsamoro Electoral Code and Local Governance Code",
     "2024 Government Service Award, Ateneo de Manila University",
     "2024 Inquirer Women of Power, Philippine Daily Inquirer"
-   ]
+   ],
+   "affiliations": [
+    "United Bangsamoro Justice Party (UBJP); 11th nominee in 2024, 13th in 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as UBJP 13th nominee"
+   ],
+   "family": []
   },
   {
    "ballotName": "Said Shiek",
@@ -1383,6 +2110,22 @@
     {
      "label": "Bangsamoro Parliament, member profile",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/shiek-said-m/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived June 2025)",
+     "url": "https://web.archive.org/web/20250605033116/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (2026)",
+     "url": "https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "COMELEC, UBJP list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/UNITED_BANGSAMORO_JUSTICE_PARTY.pdf"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "born": "24 August 1957",
@@ -1398,6 +2141,7 @@
     }
    },
    "career": [
+    "2025–2026 · Chair, BTA Special Committee on Marawi Recovery, Reconstruction and Rehabilitation",
     "2020–2022 · Deputy Minister of Science and Technology, BARMM",
     "2020– · Head, UBJP provincial organizing task force, Lanao del Norte",
     "2019– · Member, Bangsamoro Transition Authority",
@@ -1410,6 +2154,13 @@
    ],
    "accomplishments": [
     "Member of the Transition Commission that crafted the Bangsamoro Basic Law"
+   ],
+   "affiliations": [
+    "Moro Islamic Liberation Front (MILF); Central Committee member",
+    "United Bangsamoro Justice Party (UBJP); 12th nominee in 2024, 14th in 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as UBJP 14th nominee"
    ]
   },
   {
@@ -1440,6 +2191,14 @@
     {
      "label": "Bangsamoro Parliament, member profile",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/salik-ali-o/"
+    },
+    {
+     "label": "COMELEC, UBJP list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/UNITED_BANGSAMORO_JUSTICE_PARTY.pdf"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "photo": {
@@ -1459,6 +2218,13 @@
     "1976 · Ceasefire committee, North Cotabato, under the Tripoli Agreement",
     "Co-coordinator, MILF side, Joint Task Force on Camps Transformation",
     "Public school teacher, Pagalungan and Cotabato City"
+   ],
+   "affiliations": [
+    "Moro Islamic Liberation Front (MILF); Central Committee member from 2004",
+    "United Bangsamoro Justice Party (UBJP); 14th nominee in 2024, 15th in 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as UBJP 15th nominee"
    ]
   },
   {
@@ -1496,6 +2262,22 @@
     {
      "label": "SunStar Davao, 15 Sep 2025",
      "url": "https://www.sunstar.com.ph/davao/feature/miko-adiong-finds-his-calling-in-public-service"
+    },
+    {
+     "label": "Wikipedia, Mamintal Adiong Jr. (family section)",
+     "url": "https://en.wikipedia.org/wiki/Mamintal_Adiong_Jr."
+    },
+    {
+     "label": "Rappler, Mohammad Khalid Adiong profile",
+     "url": "https://www.rappler.com/people/p47398572-mohammad-khalid-raki-in-adiong/"
+    },
+    {
+     "label": "COMELEC, BARMM Grand Coalition list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/BARMM_GRAND_COALITION.pdf"
+    },
+    {
+     "label": "Rappler, IN NUMBERS: BARMM's first elected parliament (Sep 2026)",
+     "url": "https://www.rappler.com/philippines/elections/in-numbers-barmm-2026-first-elected-parliament/"
     }
    ],
    "family": [
@@ -1504,6 +2286,12 @@
      "relation": "son of",
      "role": "Governor of Lanao del Sur",
      "source": 1
+    },
+    {
+     "name": "Mohammad Khalid 'Mujam' Raki-in Adiong",
+     "relation": "brother of",
+     "role": "Vice Governor of Lanao del Sur; SIAP Party president",
+     "source": 3
     }
    ],
    "education": [
@@ -1511,6 +2299,7 @@
     "Master's in Local Governance, Liceo de Cagayan University (in progress, 2025)"
    ],
    "career": [
+    "2007–2010 · Provincial president, Sangguniang Kabataan, Lanao del Sur",
     "Lanao del Sur provincial disaster office; led operations during COVID-19",
     "Supervised infrastructure projects in Lanao del Sur",
     "Chair, Marawi Connect internet-infrastructure initiative"
@@ -1518,6 +2307,12 @@
    "accomplishments": [
     "Co-founded a volunteer rescue group during the 2017 Marawi siege",
     "Chairs Marawi Connect, bringing internet infrastructure to Marawi and Lanao del Sur"
+   ],
+   "affiliations": [
+    "BARMM Grand Coalition; 1st nominee in 2024 and 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BGC 1st nominee"
    ]
   },
   {
@@ -1551,6 +2346,26 @@
     {
      "label": "Daily Tribune, 16 Sep 2026 (20 BTA members secure party seats)",
      "url": "https://tribune.net.ph/2026/09/16/20-bta-members-secure-party-seats-in-barmm-parliament"
+    },
+    {
+     "label": "MindaNews, BARMM has new set of Parliament leaders (22 Oct 2025)",
+     "url": "https://mindanews.com/top-stories/2025/10/barmm-has-new-set-of-parliament-leaders/"
+    },
+    {
+     "label": "Bangsamoro Parliament, BTA Parliament officers",
+     "url": "https://parliament.bangsamoro.gov.ph/parliament-officers/"
+    },
+    {
+     "label": "COMELEC, BARMM Grand Coalition list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/BARMM_GRAND_COALITION.pdf"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
+    },
+    {
+     "label": "PCIJ, Political clans gain, women lose seats in new BARMM interim government (30 Mar 2025)",
+     "url": "https://pcij.org/2025/03/30/political-clans-gain-women-lose-seats-in-new-barmm-interim-government/"
     }
    ],
    "photo": {
@@ -1562,7 +2377,14 @@
    },
    "career": [
     "2026 · 2nd nominee, BARMM Grand Coalition",
-    "2025 · Appointed BTA member, national government nominee; Deputy Floor Leader"
+    "2025 · Appointed BTA member, national government nominee; Deputy Floor Leader",
+    "2025 · Re-elected BTA Deputy Floor Leader (21 October)"
+   ],
+   "affiliations": [
+    "BARMM Grand Coalition; 2nd nominee in 2024 and 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BGC 2nd nominee"
    ]
   },
   {
@@ -1605,6 +2427,18 @@
     {
      "label": "GMA News, 14 Sep 2026 (leading parties in the 2026 BARMM elections)",
      "url": "https://www.gmanetwork.com/news/topstories/regions/1002378/who-are-the-leading-parties-in-the-2026-barmm-elections/story"
+    },
+    {
+     "label": "Rappler, IN NUMBERS: BARMM's first elected parliament (Sep 2026)",
+     "url": "https://www.rappler.com/philippines/elections/in-numbers-barmm-2026-first-elected-parliament/"
+    },
+    {
+     "label": "Rappler, Party leaders to negotiate coalition in BARMM Parliament (16 Sep 2026)",
+     "url": "https://www.rappler.com/philippines/elections/coalition-talks-unavoidable-barmm-hung-parliament/"
+    },
+    {
+     "label": "COMELEC, BARMM Grand Coalition list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/BARMM_GRAND_COALITION.pdf"
     }
    ],
    "family": [
@@ -1613,11 +2447,23 @@
      "relation": "son of",
      "role": "Governor of Maguindanao del Sur",
      "source": 1
+    },
+    {
+     "name": "Pax Ali Mangudadatu",
+     "relation": "brother of",
+     "role": "Governor of Sultan Kudarat",
+     "source": 5
     }
    ],
    "career": [
     "2026 · 3rd nominee, BARMM Grand Coalition",
     "President, BARMM Grand Coalition"
+   ],
+   "affiliations": [
+    "BARMM Grand Coalition; 3rd nominee in 2024 and 2026; leads the coalition"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BGC 3rd nominee"
    ]
   },
   {
@@ -1640,7 +2486,23 @@
     {
      "label": "Rappler, 15 Sep 2026 (winning nominees list)",
      "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
+    },
+    {
+     "label": "COMELEC, certified list of candidates, Maguindanao, May 2019 elections",
+     "url": "https://comelec.gov.ph/php-tpls-attachments/2019NLE/ListsOfCandidates/TentativeListsofCandidates/LOCAL/ARMM/MAGUINDANAO.pdf"
+    },
+    {
+     "label": "COMELEC, BARMM Grand Coalition list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/BARMM_GRAND_COALITION.pdf"
     }
+   ],
+   "affiliations": [
+    "2019 · PDP–Laban; filed for Maguindanao provincial board, 1st district",
+    "BARMM Grand Coalition; 4th nominee in 2024 and 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BGC 4th nominee",
+    "2019 · Ran for Maguindanao provincial board, 1st district (PDP–Laban)"
    ]
   },
   {
@@ -1691,6 +2553,10 @@
     {
      "label": "Daily Tribune, 4 Dec 2023 (Small town takes big strides in Basilan)",
      "url": "https://tribune.net.ph/2023/12/04/small-town-takes-big-strides-in-basilan"
+    },
+    {
+     "label": "COMELEC, certified list of candidates, Basilan, May 2019 elections",
+     "url": "https://comelec.gov.ph/php-tpls-attachments/2019NLE/ListsOfCandidates/TentativeListsofCandidates/LOCAL/ARMM/BASILAN.pdf"
     }
    ],
    "education": [
@@ -1706,6 +2572,15 @@
    "accomplishments": [
     "Maluso repeatedly won the DILG Seal of Good Local Governance under his terms",
     "Created a Council of Elders in Maluso to settle clan disputes"
+   ],
+   "affiliations": [
+    "2026– · BARMM Grand Coalition; 5th nominee",
+    "2025 · Liberal Party, for the Basilan House race",
+    "2019 · PDP–Laban (Maluso mayor)"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BGC 5th nominee",
+    "2019 · Re-elected Maluso mayor (PDP–Laban)"
    ]
   },
   {
@@ -1728,7 +2603,17 @@
     {
      "label": "Rappler, 15 Sep 2026 (winning nominees list)",
      "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
+    },
+    {
+     "label": "COMELEC, BARMM Grand Coalition list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/BARMM_GRAND_COALITION.pdf"
     }
+   ],
+   "affiliations": [
+    "BARMM Grand Coalition; 6th nominee in 2024 and 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BGC 6th nominee"
    ]
   },
   {
@@ -1762,11 +2647,25 @@
     {
      "label": "UNDP Philippines, VSAT facilities at LeAPS pilot sites",
      "url": "https://www.undp.org/philippines/press-releases/vsat-facilities-leaps-pilot-sites-boost-e-governance-barmm"
+    },
+    {
+     "label": "COMELEC, BARMM Grand Coalition list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/BARMM_GRAND_COALITION.pdf"
+    },
+    {
+     "label": "La Salle Academy (LEAD), Lead Story 369 (2021)",
+     "url": "https://www.lasalle-lead.org/lead-stories/lead-story-369"
     }
    ],
    "career": [
     "2026 · 7th nominee, BARMM Grand Coalition",
     "2019–2022 · Vice mayor, Butig, Lanao del Sur"
+   ],
+   "affiliations": [
+    "BARMM Grand Coalition; 7th nominee in 2024 and 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BGC 7th nominee"
    ]
   },
   {
@@ -1802,6 +2701,18 @@
     {
      "label": "Rappler, LIST: Winning parties and their nominees in the 2026 BARMM elections",
      "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
+    },
+    {
+     "label": "Rappler, Political parties must embody Bangsamoro people's aspirations (op-ed author note, 21 Mar 2024)",
+     "url": "https://www.rappler.com/voices/imho/opinion-political-parties-must-embody-bangsamoro-aspirations/"
+    },
+    {
+     "label": "Rappler, Party leaders to negotiate coalition in BARMM Parliament (16 Sep 2026)",
+     "url": "https://www.rappler.com/philippines/elections/coalition-talks-unavoidable-barmm-hung-parliament/"
+    },
+    {
+     "label": "COMELEC, BARMM Grand Coalition list of nominees for the 2025 BARMM parliamentary elections (Sep 2024)",
+     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/COC_BARMM_RPPs/BARMM_GRAND_COALITION.pdf"
     }
    ],
    "education": [
@@ -1827,13 +2738,21 @@
     "2010 · Intern, House of Representatives",
     "Head, ARMM Office on Bangsamoro Youth Affairs",
     "Columnist, ABS-CBN News online",
-    "Lecturer in history and public policy, Ateneo de Zamboanga University"
+    "Lecturer in history and public policy, Ateneo de Zamboanga University",
+    "President, Bangsamoro Peoples Party (as of 2024)"
    ],
    "accomplishments": [
     "One of 25 young Muslim leaders chosen for a 2010 House internship",
     "Drafted close to 100 legislative measures in the BTA",
     "Author of 'A Constant Retelling: Exploring the Bangsamoro Narratives'",
     "Studies on maternal healthcare in Sulu and BARMM COVID-19 vaccination"
+   ],
+   "affiliations": [
+    "Bangsamoro Peoples Party; president (BGC member party)",
+    "BARMM Grand Coalition; 5th nominee in 2024, 8th in 2026"
+   ],
+   "elections": [
+    "2026 · Won a party seat as BGC 8th nominee"
    ]
   },
   {
@@ -1863,6 +2782,38 @@
     {
      "label": "Bangsamoro Parliament, member profile",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/atty-lorena-jose-i/"
+    },
+    {
+     "label": "Bangsamoro Parliament, BTA members and terms of service",
+     "url": "https://parliament.bangsamoro.gov.ph/bta-19-22/"
+    },
+    {
+     "label": "MindaNews, BARMM has new set of Parliament leaders (22 Oct 2025)",
+     "url": "https://mindanews.com/top-stories/2025/10/barmm-has-new-set-of-parliament-leaders/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived May 2022)",
+     "url": "https://web.archive.org/web/20220519220410/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived Feb 2023)",
+     "url": "https://web.archive.org/web/20230205230943/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived Dec 2024)",
+     "url": "https://web.archive.org/web/20241217183049/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Bangsamoro Parliament, Committees (archived June 2025)",
+     "url": "https://web.archive.org/web/20250605033116/https://parliament.bangsamoro.gov.ph/committees/"
+    },
+    {
+     "label": "Rappler, Bangsamoro Peoples Democratic Party profile",
+     "url": "https://www.rappler.com/philippines/g12172580-bangsamoro-peoples-raayat-democratic-party/"
+    },
+    {
+     "label": "Rappler, winning parties and their nominees in the 2026 BARMM elections",
+     "url": "https://www.rappler.com/philippines/elections/results-winning-regional-political-parties-barmm-2026/"
     }
    ],
    "photo": {
@@ -1873,17 +2824,29 @@
     }
    },
    "career": [
-    "BTA member and Deputy Minister of Human Settlements and Development",
+    "2025–2026 · Deputy Speaker, BTA Parliament (elected 21 October 2025)",
+    "2025 · Chair, BTA Committee on Ways and Means",
+    "2023–2025 · Chair, BTA Committee on Bangsamoro Justice System",
+    "2019–2026 · Member, BTA (all 3 terms)",
     "2010–2012 · Consultant, Office of the Executive Secretary",
+    "BTA member and Deputy Minister of Human Settlements and Development",
     "OPAPP Undersecretary for Bangsamoro Projects",
     "ARMM Attorney-General and ARMM Secretary of Labor",
     "Member, Power Sharing Committee, GPH-MILF peace talks",
     "DILG Chief Local Government Officer; head, Local Government Supervision",
     "Regional officer, Housing and Land Use Regulatory Board",
-    "Convener, Philippine Center for Islam and Democracy"
+    "Convener, Philippine Center for Islam and Democracy",
+    "Chair, BTA Committee on Amendments (first BTA)"
    ],
    "accomplishments": [
     "Negotiated the natural resources part of the 1996 MNLF Final Peace Agreement"
+   ],
+   "affiliations": [
+    "Moro National Liberation Front (MNLF); peace panel member, 1996 Final Peace Agreement",
+    "Bangsamoro Peoples' Democratic Party (Raayat); party president"
+   ],
+   "elections": [
+    "2026 · Won the Raayat Democratic Party's only party seat as 1st nominee"
    ]
   },
   {
@@ -1955,6 +2918,15 @@
    "accomplishments": [
     "Founded the Mindanao Autonomous College Foundation, Lamitan",
     "Topped the 2016 Lamitan City council race"
+   ],
+   "affiliations": [
+    "2026 · Bangsamoro Federalist Party (BFP)",
+    "2019 · Ran under PDP–Laban for Lamitan City council",
+    "2016 · Ran under the Liberal Party for Lamitan City council"
+   ],
+   "elections": [
+    "2019 · Re-elected Lamitan City councillor (PDP–Laban)",
+    "2016 · Won Lamitan City council, topping the race (Liberal Party)"
    ]
   },
   {
@@ -1994,6 +2966,10 @@
     {
      "label": "Rappler, People: Paisal Sali",
      "url": "https://www.rappler.com/people/p09984314-paisal-sali/"
+    },
+    {
+     "label": "Rappler PHVote 2022, candidate profile: Paisal Sali",
+     "url": "https://phvote2022.rappler.com/elections/2022/candidates/paisal-awal-sali"
     }
    ],
    "born": "4 January 1967",
@@ -2009,6 +2985,12 @@
      "relation": "relative of",
      "role": "Vice Mayor of Akbar, Basilan",
      "source": 2
+    },
+    {
+     "name": "Maymuna U. Sali",
+     "relation": "husband of",
+     "role": null,
+     "source": 3
     }
    ],
    "career": [
@@ -2019,6 +3001,15 @@
    ],
    "accomplishments": [
     "Topped the 2019 Basilan provincial board race, 2nd district"
+   ],
+   "affiliations": [
+    "2022– · United Bangsamoro Justice Party (UBJP); ran for Basilan vice governor",
+    "2010 · Ran under Lakas–CMD for Akbar vice mayor"
+   ],
+   "elections": [
+    "2025 · Filed for Basilan 1st parliamentary district; polls reset to 2026",
+    "2022 · Lost Basilan vice governor race to Yusop Alano (UBJP)",
+    "2010 · Won Akbar vice mayor (Lakas–CMD)"
    ]
   },
   {
@@ -2068,6 +3059,12 @@
      "relation": "nephew of",
      "role": "Vice Governor of Basilan; former governor",
      "source": 1
+    },
+    {
+     "name": "Juhan Hataman",
+     "relation": "son of",
+     "role": null,
+     "source": 1
     }
    ],
    "photo": {
@@ -2079,10 +3076,15 @@
    },
    "career": [
     "2025 · Appointed BTA member",
-    "Entrepreneur; youth advocate and community development leader"
+    "Entrepreneur; youth advocate and community development leader",
+    "Former president, Metronoia Corporation",
+    "Former chief operating officer, Coffee Hour"
    ],
    "accomplishments": [
     "Won Basilan's 3rd district with 45,094 votes (90.64%) for the BFP"
+   ],
+   "affiliations": [
+    "2026 · Bangsamoro Federalist Party (BFP)"
    ]
   },
   {
@@ -2102,7 +3104,7 @@
    "background": [
     "Lawyer.",
     "Member of the Basilan Provincial Board for the 2nd district, 2022–2025; topped the board race in 2022.",
-    "Ran for governor of Basilan in 2025 and lost to his uncle Mujiv Hataman, 118,554 votes to 121,829.",
+    "Ran for governor of Basilan in 2025 and lost to his uncle Mujiv Hataman, 117,840 votes to 121,480.",
     "Son of Basilan Vice Governor Jim Hataman Salliman.",
     "29 years old at the 2026 election; won the 4th district with 41,675 votes (81.51%)."
    ],
@@ -2123,6 +3125,26 @@
     {
      "label": "Rappler, BARMM polls: Hatamans seek 2 of Basilan's 4 parliament seats",
      "url": "https://www.rappler.com/philippines/elections/barmm-polls-2026-electoral-races-basilan/"
+    },
+    {
+     "label": "PNA via web.archive.org, 4 Oct 2024, Salliman, sons file COCs in Basilan for 2025 polls",
+     "url": "https://web.archive.org/web/2024/https://www.pna.gov.ph/articles/1234822"
+    },
+    {
+     "label": "Inquirer (PNA), 8 Oct 2024, Hataman clan members vie for Basilan gubernatorial, mayoral posts",
+     "url": "https://newsinfo.inquirer.net/1990792/hataman-clan-members-vie-for-basilan-gubernatorial-mayoral-posts"
+    },
+    {
+     "label": "Rappler PHVote 2022, candidate profile: Jimael Salam Salliman",
+     "url": "https://phvote2022.rappler.com/elections/2022/candidates/jimael-salam-datumanong-salliman"
+    },
+    {
+     "label": "PCIJ, 14 May 2025, MILF-backed clans defeat Mangudadatu clan members in Maguindanao",
+     "url": "https://pcij.org/2025/05/14/milf-backed-clans-defeat-mangudadatu-clan-members-in-maguindanao-as-dynasties-persist-in-barmm/"
+    },
+    {
+     "label": "Daily Tribune, 14 May 2025, Hataman couple wins in Basilan province",
+     "url": "https://tribune.net.ph/2025/05/14/hataman-couple-wins-in-basilan-province"
     }
    ],
    "family": [
@@ -2137,16 +3159,32 @@
      "relation": "nephew of",
      "role": "Governor of Basilan (2025–); former ARMM governor and Basilan representative",
      "source": 1
+    },
+    {
+     "name": "Kifli Hataman-Salliman",
+     "relation": "brother of",
+     "role": "Isabela City vice mayor (2024); ran for mayor in 2025",
+     "source": 4
     }
    ],
    "career": [
-    "2025 · Ran for Basilan governor; lost 118,554 to 121,829",
+    "2025 · Ran for Basilan governor; lost 117,840 to 121,480",
     "2022–2025 · Basilan provincial board member, 2nd district",
     "Lawyer"
    ],
    "accomplishments": [
     "Topped the 2022 Basilan provincial board race, 2nd district",
     "Won the 4th district with 41,675 votes (81.51%)"
+   ],
+   "affiliations": [
+    "2026 · Bangsamoro Federalist Party (BFP)",
+    "2025 · Backed by the MILF for Basilan governor",
+    "2024–2025 · Partido Federal ng Pilipinas (PFP); ran for Basilan governor",
+    "2022 · Ran under PDP–Laban for Basilan provincial board"
+   ],
+   "elections": [
+    "2025 · Lost Basilan governor race to uncle Mujiv Hataman",
+    "2022 · Won Basilan provincial board, 2nd district (topped)"
    ]
   },
   {
@@ -2199,6 +3237,10 @@
     {
      "label": "Rappler, People: Sheriff Abas",
      "url": "https://www.rappler.com/people/p34657866-sheriff-abas/"
+    },
+    {
+     "label": "GMA Regional TV One Mindanao, 6 Nov 2024, Ex-Comelec chair files COC for BARMM polls",
+     "url": "https://gmanetwork.com/regionaltv/news/104932/excomelec-chair-files-coc-for-barmm-polls/story"
     }
    ],
    "born": "5 May 1979",
@@ -2212,6 +3254,12 @@
      "relation": "nephew of",
      "role": "MILF chief peace negotiator; later BARMM Minister of Basic, Higher and Technical Education",
      "source": 3
+    },
+    {
+     "name": "Jasmairah Irene M. Alang",
+     "relation": "husband of",
+     "role": null,
+     "source": 6
     }
    ],
    "career": [
@@ -2222,6 +3270,12 @@
    "accomplishments": [
     "First Mindanaoan and first Muslim to chair the Commission on Elections",
     "Youngest COMELEC chairman, confirmed at 38"
+   ],
+   "affiliations": [
+    "2026 · United Bangsamoro Justice Party (UBJP)"
+   ],
+   "elections": [
+    "2024 · Filed for Cotabato City 1st parliamentary district; 2025 polls reset to 2026"
    ]
   },
   {
@@ -2271,6 +3325,26 @@
     {
      "label": "Bangsamoro Parliament, member profile: Sinarimbo, Naguib G.",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/sinarimbo-naguib-g/"
+    },
+    {
+     "label": "Rappler, BARMM polls: Who are competing in Cotabato, the regional center?",
+     "url": "https://www.rappler.com/philippines/mindanao/barmm-polls-2026-electoral-races-cotabato-city/"
+    },
+    {
+     "label": "Rappler, 15 Sep 2026, BFP spox keeps BARMM Parliament seat, wins in Cotabato's 2nd District",
+     "url": "https://www.rappler.com/philippines/elections/naguib-sinarimbo-results-second-district-cotabato-city-barmm-2026/"
+    },
+    {
+     "label": "Rappler, Mar 2025, Once an MILF ally, ex-BARMM minister returns with Malacañang's backing",
+     "url": "https://www.rappler.com/philippines/mindanao/ex-barmm-minister-naguib-sinarimbo-returns-malacanang-backing-before-polls/"
+    },
+    {
+     "label": "Inquirer, Party switching reshapes Bangsamoro political landscape",
+     "url": "https://www.inquirer.net/481050/party-switching-reshapes-bangsamoro-political-landscape/"
+    },
+    {
+     "label": "GMA News, Who are the leading parties in the 2026 BARMM elections?",
+     "url": "https://gmanetwork.com/news/topstories/regions/1002378/who-are-the-leading-parties-in-the-2026-barmm-elections/story"
     }
    ],
    "born": "31 January 1972",
@@ -2290,18 +3364,30 @@
     }
    },
    "career": [
+    "2026 · Spokesperson, Bangsamoro Federalist Party",
     "2025– · Member, BTA; Deputy Floor Leader",
     "2024 · Joined SIAP as Cotabato City president, after leaving the UBJP",
     "2019–2023 · Minister of the Interior and Local Government, BARMM",
+    "2009–2011 · Executive Secretary, ARMM",
     "Spokesperson, Bangsamoro Government",
     "International peace consultant, UNDP",
-    "2009–2011 · Executive Secretary, ARMM",
     "MILF Technical Working Group and peace panel legal team",
-    "Lawyer"
+    "Lawyer",
+    "Legal team of Senator Juan Miguel Zubiri on the Bangsamoro Organic Law",
+    "Member, high-level panel reviewing the 1996 Peace Agreement's implementation",
+    "Helped negotiate the Comprehensive Agreement on the Bangsamoro (2014)"
    ],
    "accomplishments": [
     "First Bangsamoro Minister of the Interior and Local Government",
     "Helped draft the UBJP platform and register it with COMELEC (2014)"
+   ],
+   "affiliations": [
+    "2026 · Bangsamoro Federalist Party (BFP); spokesperson and Cotabato City chapter head",
+    "2024–2026 · SIAP Party, allied with the BARMM Grand Coalition",
+    "2014–2024 · United Bangsamoro Justice Party (UBJP); co-founder"
+   ],
+   "elections": [
+    "2024 · Filed for Cotabato City 2nd parliamentary district; 2025 polls reset to 2026"
    ]
   },
   {
@@ -2341,6 +3427,14 @@
     {
      "label": "PCIJ, 17 Mar 2025, List: New members of the Bangsamoro Transition Authority",
      "url": "https://pcij.org/2025/03/17/list-new-members-of-the-bangsamoro-transition-authority/"
+    },
+    {
+     "label": "Rappler, People: Tomanda Antok",
+     "url": "https://www.rappler.com/people/p97461360-tomanda-antok/"
+    },
+    {
+     "label": "GMA News, Who are the leading parties in the 2026 BARMM elections?",
+     "url": "https://gmanetwork.com/news/topstories/regions/1002378/who-are-the-leading-parties-in-the-2026-barmm-elections/story"
     }
    ],
    "photo": {
@@ -2361,6 +3455,11 @@
    "accomplishments": [
     "Founded the Bangsamoro Federalist Party on 2 March 2026",
     "Won Cotabato City's 3rd district with 9,223 votes (49.92%), by 253 votes"
+   ],
+   "affiliations": [
+    "2026– · Bangsamoro Federalist Party (BFP); founding chairman",
+    "Until 2026 · United Bangsamoro Justice Party (UBJP); left over leadership disagreements",
+    "MILF; Bangsamoro Islamic Armed Forces general staff until removed in 2026"
    ]
   },
   {
@@ -2427,6 +3526,13 @@
    ],
    "accomplishments": [
     "Topped the 2022 Marawi City council race"
+   ],
+   "affiliations": [
+    "2026 · SIAP Party, part of the BARMM Grand Coalition",
+    "2022 · Ran under PDP–Laban for Marawi City council"
+   ],
+   "elections": [
+    "2022 · Won Marawi City council, topping the race (PDP–Laban)"
    ]
   },
   {
@@ -2465,6 +3571,10 @@
     {
      "label": "Rappler, BARMM polls: Who are the bets for Lanao del Sur's 9 seats?",
      "url": "https://www.rappler.com/philippines/elections/barmm-polls-2026-electoral-races-lanao-del-sur/"
+    },
+    {
+     "label": "Rappler, Hamza Gauraki results, Lanao del Sur 2nd district",
+     "url": "https://www.rappler.com/philippines/elections/hamza-gauraki-results-second-district-lanao-del-sur-barmm-2026/"
     }
    ],
    "born": "20 September 1985",
@@ -2479,6 +3589,16 @@
    "career": [
     "2022–2025 · Vice mayor, Kapai, Lanao del Sur",
     "2016–2019 · Mayor, Kapai"
+   ],
+   "affiliations": [
+    "2026 · United Bangsamoro Justice Party (UBJP)",
+    "2022 · Ran under Lakas–CMD for Kapai vice mayor",
+    "2016 · Ran under the Liberal Party for Kapai mayor"
+   ],
+   "elections": [
+    "2025 · Filed for Lanao del Sur 2nd parliamentary district; polls reset to 2026",
+    "2022 · Won Kapai vice mayor, unopposed (Lakas–CMD)",
+    "2016 · Won Kapai mayor (Liberal Party)"
    ]
   },
   {
@@ -2533,10 +3653,22 @@
      "relation": "grandson of",
      "role": "Former Governor of Lanao del Sur (deceased)",
      "source": 2
+    },
+    {
+     "name": "Almeerah Aquina G. Sumagayan",
+     "relation": "husband of",
+     "role": null,
+     "source": 1
     }
    ],
    "career": [
     "Businessman"
+   ],
+   "affiliations": [
+    "2026 · SIAP Party, led by his uncle Governor Mamintal Adiong Jr."
+   ],
+   "elections": [
+    "2025 · Filed for Lanao del Sur 3rd parliamentary district; polls reset to 2026"
    ]
   },
   {
@@ -2578,6 +3710,10 @@
     {
      "label": "Supreme Court, G.R. No. 116850, 11 April 2002, Dr. Lampa I. Pandi et al. v. Court of Appeals et al.",
      "url": "https://chanrobles.com/cralaw/2002aprildecisions.php?id=388"
+    },
+    {
+     "label": "COMELEC, certificate of candidacy for the 2025 Bangsamoro polls, Pandi, Lampa I.",
+     "url": "https://comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/BPE_COCCONA/LDS/DR_D4_PANDI_LAMPA_I.pdf"
     }
    ],
    "career": [
@@ -2589,6 +3725,18 @@
    ],
    "accomplishments": [
     "Won the 4th district in 2026, defeating BTA Deputy Speaker Amenodin Sumagayan"
+   ],
+   "affiliations": [
+    "2024– · United Bangsamoro Justice Party (UBJP)",
+    "2019–2022 · Lakas–CMD, Poona Bayabao mayor races",
+    "2013–2016 · Liberal Party",
+    "2010 · Lakas–Kampi–CMD",
+    "2007 · Kabalikat ng Malayang Pilipino (KAMPI), Poona Bayabao mayor race"
+   ],
+   "elections": [
+    "2022 · Lost Poona Bayabao mayor race to Pandi Jan Derogongan",
+    "2019 · Lost Poona Bayabao mayor race to Sadat Pandi",
+    "2016 · Won Poona Bayabao vice mayor (Liberal Party)"
    ]
   },
   {
@@ -2627,6 +3775,10 @@
     {
      "label": "Rappler, People: Arimao Asum",
      "url": "https://www.rappler.com/people/p717686161-arimao-asum/"
+    },
+    {
+     "label": "COMELEC, certificate of candidacy for the 2025 Bangsamoro polls, Asum, Arimao S.",
+     "url": "https://comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/BPE_COCCONA/LDS/DR_D5_ASUM_ARIMAO_S.pdf"
     }
    ],
    "born": "6 July 1953",
@@ -2646,6 +3798,17 @@
    ],
    "career": [
     "2019–2025 · Vice mayor, Lumbayanague, Lanao del Sur (2 terms)"
+   ],
+   "affiliations": [
+    "2024– · SIAP Party (Serbisyong Inklusibo–Alyansang Progresibo)",
+    "2019–2022 · Lakas–CMD",
+    "2016 · United Nationalist Alliance (UNA), Lumbayanague vice mayor race"
+   ],
+   "elections": [
+    "2026 · Won Lanao del Sur 5th district, defeating Khaledyassin Papandayan",
+    "2022 · Re-elected Lumbayanague vice mayor, unopposed",
+    "2019 · Won Lumbayanague vice mayor (Lakas–CMD)",
+    "2016 · Lost Lumbayanague vice mayor race"
    ]
   },
   {
@@ -2680,6 +3843,10 @@
     {
      "label": "Rappler, People: Hosni Macapodi",
      "url": "https://www.rappler.com/people/p535765245-hosni-macapodi/"
+    },
+    {
+     "label": "COMELEC, certificate of candidacy for the 2025 Bangsamoro polls, Macapodi, Hosni B.",
+     "url": "https://comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/BPE_COCCONA/LDS/DR_D6_MACAPODI_HOSNI_B.pdf"
     }
    ],
    "born": "9 December 1981",
@@ -2687,6 +3854,15 @@
     "2019–2025 · Mayor, Ganassi, Lanao del Sur (2 terms)",
     "2013–2016 · Member, ARMM Regional Legislative Assembly, Lanao del Sur 2nd district",
     "2005–2008 · Member, ARMM Regional Legislative Assembly, Lanao del Sur 2nd district"
+   ],
+   "affiliations": [
+    "2024– · SIAP Party (Serbisyong Inklusibo–Alyansang Progresibo)",
+    "2019–2022 · Lakas–CMD, Ganassi mayor races"
+   ],
+   "elections": [
+    "2026 · Won Lanao del Sur 6th district, defeating Jamael Balt (UBJP)",
+    "2022 · Re-elected Ganassi mayor (Lakas–CMD)",
+    "2019 · Won Ganassi mayor (Lakas–CMD)"
    ]
   },
   {
@@ -2720,10 +3896,20 @@
     {
      "label": "Rappler, BARMM polls: Who are the bets for Lanao del Sur's 9 seats?",
      "url": "https://www.rappler.com/philippines/elections/barmm-polls-2026-electoral-races-lanao-del-sur/"
+    },
+    {
+     "label": "COMELEC, certificate of candidacy for the 2025 Bangsamoro polls, Mindalano, Ali-Usman S.",
+     "url": "https://comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/BPE_COCCONA/LDS/DR_D7_MINDALANO_ALI_USMAN_S.pdf"
     }
    ],
    "career": [
     "Former Sangguniang Kabataan chairman, Madamba, Lanao del Sur"
+   ],
+   "affiliations": [
+    "2024– · SIAP Party (Serbisyong Inklusibo–Alyansang Progresibo)"
+   ],
+   "elections": [
+    "2026 · Won Lanao del Sur 7th district, defeating Nora Dipatuan (UBJP)"
    ]
   },
   {
@@ -2777,6 +3963,9 @@
    ],
    "accomplishments": [
     "Ran unopposed for the Lanao del Sur 8th district seat"
+   ],
+   "affiliations": [
+    "2026 · UBJP candidate, Lanao del Sur 8th district"
    ]
   },
   {
@@ -2823,6 +4012,9 @@
    ],
    "accomplishments": [
     "Won Lanao del Sur's 9th district with 35,362 votes (76.88%) for SIAP"
+   ],
+   "affiliations": [
+    "2026 · SIAP Party candidate, Lanao del Sur 9th district"
    ]
   },
   {
@@ -2856,6 +4048,10 @@
     {
      "label": "Rappler, BARMM polls: Maguindanao del Norte a key regional battleground",
      "url": "https://www.rappler.com/philippines/elections/barmm-polls-2026-electoral-races-maguindanao-del-norte/"
+    },
+    {
+     "label": "COMELEC, certificate of candidacy for the 2025 Bangsamoro polls, Tomawis, Prince Khalid P.",
+     "url": "https://comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/BPE_COCCONA/MDN/DR_D1_TOMAWIS_PRINCE_KHALID_P.pdf"
     }
    ],
    "born": "9 June 1997",
@@ -2875,6 +4071,10 @@
    ],
    "career": [
     "Businessman"
+   ],
+   "affiliations": [
+    "2026 · Bangsamoro Federalist Party (BFP)",
+    "2024 · Independent, filed for the postponed 2025 Bangsamoro polls"
    ]
   },
   {
@@ -2921,6 +4121,18 @@
     {
      "label": "Wikipedia, Shariff Kabunsuan (infobox)",
      "url": "https://en.wikipedia.org/wiki/Shariff_Kabunsuan"
+    },
+    {
+     "label": "COMELEC canvass, via OpenHalalan (BetterBARMM LGU directory)",
+     "url": "https://robertrleung.github.io/OpenHalalan/"
+    },
+    {
+     "label": "Philstar, 24 Jan 2013, Maguindanao town mayor gets Comelec order to keep post",
+     "url": "https://www.philstar.com/nation/2013/01/24/900626/nation"
+    },
+    {
+     "label": "COMELEC, certificate of candidacy for the 2025 Bangsamoro polls, Ibay, Ibrahim P.",
+     "url": "https://comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/BPE_COCCONA/MDN/DR_D2_IBAY_IBRAHIM_P.pdf"
     }
    ],
    "photo": {
@@ -2933,11 +4145,23 @@
    "career": [
     "2025 · Appointed BTA member",
     "2023 · BARMM Deputy Minister of the Interior and Local Government",
+    "2010–2019 · Mayor, Parang, Maguindanao (3 terms)",
     "2007–2008 · Acting governor, Shariff Kabunsuan, until the province was dissolved",
-    "Mayor of Parang, Maguindanao, for several years"
+    "Member, ARMM Regional Legislative Assembly (3 terms, 9 years, before 2010)"
    ],
    "accomplishments": [
     "Won Maguindanao del Norte's 2nd district unopposed, with 43,737 votes"
+   ],
+   "affiliations": [
+    "2026 · Bangsamoro Federalist Party (BFP)",
+    "2024 · UBJP, filed for the postponed 2025 Bangsamoro polls",
+    "2013–2016 · Liberal Party",
+    "2010 · Aksyon Demokratiko, Parang mayor race"
+   ],
+   "elections": [
+    "2016 · Re-elected Parang mayor (Liberal Party)",
+    "2013 · Re-elected Parang mayor (Liberal Party)",
+    "2010 · Won Parang mayor over Talib Abo Sr.; result upheld pending protest"
    ]
   },
   {
@@ -2988,6 +4212,30 @@
     {
      "label": "Luwaran, 13 Nov 2019, Macacua is BARMM's new Executive Secretary",
      "url": "https://www.luwaran.com/news/article/1939/macacua_is_barmm___s_new_executive_secretary"
+    },
+    {
+     "label": "MindaNews, 12 Feb 2024, Maguindanao del Norte governor's son appointed to Bangsamoro parliament",
+     "url": "https://mindanews.com/top-stories/2024/02/maguindanao-del-norte-governors-son-appointed-to-bangsamoro-parliament/"
+    },
+    {
+     "label": "Bangsamoro MENRE, Profile of Minister Abdulraof A. Macacua (archived April 2023)",
+     "url": "http://web.archive.org/web/20230415014934/https://menre.bangsamoro.gov.ph/minister-profile/"
+    },
+    {
+     "label": "COMELEC, certificate of candidacy for the 2025 Bangsamoro polls, Macacua, Abdulraof A.",
+     "url": "https://comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/BPE_COCCONA/MDN/DR_D3_MACACUA_ABDULRAOF_A.pdf"
+    },
+    {
+     "label": "Wikipedia, Abdulraof Macacua (citing Inquirer, 23 Jul 2025, BARMM chief takes on interior minister post on concurrent capacity)",
+     "url": "https://en.wikipedia.org/wiki/Abdulraof_Macacua"
+    },
+    {
+     "label": "Bangsamoro Government, 6 Apr 2026, CM Macacua names Bayam as BARMM interior minister",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-names-bayam-as-barmm-interior-minister/"
+    },
+    {
+     "label": "Philstar, 5 Sep 2026, Maguindanao del Norte solon vouches for BARMM chief minister",
+     "url": "https://www.philstar.com/nation/2026/09/05/2554223/maguindanao-del-norte-solon-vouches-barmm-chief-minister"
     }
    ],
    "born": "13 September 1957",
@@ -3005,9 +4253,11 @@
    "career": [
     "2026 · BFP party president",
     "2025– · Interim Chief Minister of BARMM",
+    "2025–2026 · Concurrent BARMM Minister of the Interior and Local Government",
     "2023–2025 · Governor, Maguindanao del Norte",
     "2019–2022 · BARMM Minister of Environment, Natural Resources and Energy",
     "2019 · Executive Secretary of the Bangsamoro Government",
+    "2019–2023 · BTA member (MILF nominee) and Senior Minister",
     "1971 · Joined the Moro armed struggle",
     "Senior Minister, Bangsamoro Government",
     "Chief of Staff, Bangsamoro Islamic Armed Forces (MILF)",
@@ -3023,6 +4273,39 @@
     "Led a memorandum of agreement with Maguindanao del Norte's 12 municipalities",
     "Maguindanao del Norte ranked 3rd-highest LGU withholding taxpayer (February 2025)",
     "Maguindanao del Norte earned the 24th Gawad Kalasag Seal under his governorship"
+   ],
+   "affiliations": [
+    "2026 · Filed candidacy as an independent (May)",
+    "2026 · Removed as BIAF chief of staff by MILF Central Committee (3 Sep)",
+    "2026– · Bangsamoro Federalist Party president (from August)",
+    "2024 · UBJP, filed for the postponed 2025 Bangsamoro polls",
+    "1971– · Moro armed struggle; later MILF, rising to BIAF chief of staff"
+   ],
+   "family": [
+    {
+     "name": "Jamel Balang Macacua",
+     "relation": "father of",
+     "role": "BTA Member of Parliament (appointed January 2024); former MENRE official",
+     "source": 5
+    },
+    {
+     "name": "Macacua W. Tubo-Tubo",
+     "relation": "son of",
+     "role": null,
+     "source": 6
+    },
+    {
+     "name": "Salma B. Macacua",
+     "relation": "son of",
+     "role": null,
+     "source": 6
+    },
+    {
+     "name": null,
+     "relation": "parent of",
+     "role": "7 children",
+     "source": 6
+    }
    ]
   },
   {
@@ -3070,6 +4353,12 @@
    ],
    "accomplishments": [
     "One of the first provincial board members of newly created Maguindanao del Norte (2023)"
+   ],
+   "affiliations": [
+    "2026 · United Bangsamoro Justice Party (UBJP) candidate"
+   ],
+   "elections": [
+    "2026 · Won Maguindanao del Norte 4th district, defeating ex-Rep. Bai Sandra Sema"
    ]
   },
   {
@@ -3116,6 +4405,14 @@
     {
      "label": "Rappler, IN NUMBERS: BARMM's first elected parliament",
      "url": "https://www.rappler.com/philippines/elections/in-numbers-barmm-2026-first-elected-parliament/"
+    },
+    {
+     "label": "COMELEC, certificate of candidacy (filed Oct–Nov 2024 for the cancelled 2025 polls): Mastura, Ishak V.",
+     "url": "https://comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/BPE_COCCONA/MDN/DR_D3_MASTURA_ISHAK_V.pdf"
+    },
+    {
+     "label": "Bangsamoro Information Office, 12 Aug 2022, Pres. Marcos Jr. appoints new BTA members",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/pres-marcos-jr-appoints-new-bta-members-consistent-with-bangsamoro-peace-agreement"
     }
    ],
    "education": [
@@ -3146,6 +4443,7 @@
    },
    "career": [
     "2025 · Reappointed BTA member",
+    "2022 · Appointed BTA member as a national government nominee",
     "2009–2018 · Chair and managing head, ARMM Regional Board of Investments",
     "2002–2008 · Regional Secretary, ARMM Department of Trade and Industry",
     "Head, ARMM cabinet economic cluster",
@@ -3161,6 +4459,11 @@
     "Drove and drafted the ARMM Regional Economic Zone Authority (REZA) law",
     "Co-authored 'Organic Law for the BARMM: Framework and Annotations' (2022)",
     "Australia Awards Fellowship (2015); US International Visitor Leadership Program (2006)"
+   ],
+   "affiliations": [
+    "2026 · Bangsamoro Federalist Party (BFP)",
+    "2024–2025 · Progresibong Bangsamoro Party nominee, Maguindanao del Norte 3rd district",
+    "2022–2026 · National government nominee to the BTA (reappointed 2025)"
    ]
   },
   {
@@ -3198,6 +4501,18 @@
     {
      "label": "PCIJ, 17 Mar 2025, List: New members of the Bangsamoro Transition Authority",
      "url": "https://pcij.org/2025/03/17/list-new-members-of-the-bangsamoro-transition-authority/"
+    },
+    {
+     "label": "Rappler, BARMM MP Tawakal Midtimbang captures Maguindanao del Sur 1st District seat",
+     "url": "https://www.rappler.com/philippines/elections/tawakal-midtimbang-results-first-district-maguindanao-del-sur-barmm-2026/"
+    },
+    {
+     "label": "COMELEC, certificate of candidacy (filed Oct–Nov 2024 for the cancelled 2025 polls): Midtimbang, Tawakal B.",
+     "url": "https://comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/BPE_COCCONA/MDS/DR_D1_MIDTIMBANG_TAWAKAL_B.pdf"
+    },
+    {
+     "label": "Bangsamoro Information Office, 12 Aug 2022, Pres. Marcos Jr. appoints new BTA members",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/pres-marcos-jr-appoints-new-bta-members-consistent-with-bangsamoro-peace-agreement"
     }
    ],
    "family": [
@@ -3225,7 +4540,19 @@
     "2022– · BTA member; chair, Committee on Environment, Natural Resources and Energy",
     "2019–2022 · Vice mayor, Guindulungan",
     "2014–2019 · Municipal administrator, Guindulungan",
-    "2004–2007 · Sangguniang Kabataan federation president, Guindulungan"
+    "2004–2007 · Sangguniang Kabataan federation president, Guindulungan",
+    "Member, Bangsamoro Communication Network (BCN)",
+    "Member, UNYPAD Cotabato City",
+    "Member, Guindulungan Municipality Ustadzes Association"
+   ],
+   "affiliations": [
+    "2026 · United Bangsamoro Justice Party (UBJP)",
+    "2024–2025 · UBJP nominee, Maguindanao del Sur 1st district",
+    "2022–2026 · MILF nominee to the BTA (reappointed 2025)",
+    "Member, UBJP Guindulungan chapter"
+   ],
+   "elections": [
+    "2019 · Won Guindulungan vice mayor"
    ]
   },
   {
@@ -3265,6 +4592,18 @@
     {
      "label": "Rappler, IN NUMBERS: BARMM's first elected parliament",
      "url": "https://www.rappler.com/philippines/elections/in-numbers-barmm-2026-first-elected-parliament/"
+    },
+    {
+     "label": "MindaNews, 15 May 2022, 12 years after the Ampatuan Massacre, Ampatuans still in power in Maguindanao (archived)",
+     "url": "https://web.archive.org/web/2023/https://mindanews.com/top-stories/2022/05/12-years-after-the-ampatuan-massacre-ampatuans-still-in-power-in-maguindanao/"
+    },
+    {
+     "label": "Rappler, 2022 candidate profile: Sajid Andre Sinsuat Ampatuan",
+     "url": "https://phvote2022.rappler.com/elections/2022/candidates/sajid-andre-sinsuat-ampatuan"
+    },
+    {
+     "label": "Rappler, 2025 local results: Shariff Saydona Mustapha",
+     "url": "https://ph.rappler.com/elections/2025/local-race/embed/maguindanao-del-sur/shariff-saydona-mustapha"
     }
    ],
    "family": [
@@ -3273,14 +4612,34 @@
      "relation": "son of",
      "role": "Former Governor of Maguindanao",
      "source": 1
+    },
+    {
+     "name": "Zandria Sinsuat",
+     "relation": "son of",
+     "role": null,
+     "source": 4
+    },
+    {
+     "name": "Datu Andal Sajid Ampatuan VI",
+     "relation": "brother of",
+     "role": "Shariff Saydona Mustapha council candidate (2022)",
+     "source": 4
     }
    ],
    "career": [
-    "2025 · Elected mayor, Shariff Saydona Mustapha, Maguindanao del Sur"
+    "2022– · Mayor, Shariff Saydona Mustapha (re-elected 2025)"
    ],
    "accomplishments": [
     "Elected for the BFP with 63.26% of the district vote",
     "Among the youngest MPs, 26 at the 2026 election"
+   ],
+   "affiliations": [
+    "2026 · Bangsamoro Federalist Party (BFP)",
+    "2022–2025 · Nacionalista Party (NP), both mayoral races"
+   ],
+   "elections": [
+    "2025 · Re-elected Shariff Saydona Mustapha mayor (Nacionalista)",
+    "2022 · Won Shariff Saydona Mustapha mayor (Nacionalista)"
    ]
   },
   {
@@ -3324,6 +4683,18 @@
     {
      "label": "Inquirer, Jan 2020, Duterte appoints ex-director of OMA as new BTA member",
      "url": "https://newsinfo.inquirer.net/1212519/duterte-appoints-ex-director-of-oma-as-new-bta-member"
+    },
+    {
+     "label": "Bangsamoro Information Office, 12 Aug 2022, Pres. Marcos Jr. appoints new BTA members",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/pres-marcos-jr-appoints-new-bta-members-consistent-with-bangsamoro-peace-agreement"
+    },
+    {
+     "label": "COMELEC, certificate of candidacy (filed Oct–Nov 2024 for the cancelled 2025 polls): Sangki, Ali B.",
+     "url": "https://comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/BPE_COCCONA/MDS/DR_D3_SANGKI_ALI_B.pdf"
+    },
+    {
+     "label": "Rappler, BARMM polls: Tawi-Tawi electoral races",
+     "url": "https://www.rappler.com/philippines/elections/barmm-polls-2026-electoral-races-tawi-tawi/"
     }
    ],
    "family": [
@@ -3342,6 +4713,7 @@
     }
    },
    "career": [
+    "2022 · Reappointed BTA member as a national government nominee",
     "2020–2025 · Member, BTA (79th member, appointed by President Duterte)",
     "2007–2010 · Undersecretary and executive director, Office on Muslim Affairs",
     "2005–2007 · CEO, Al-Amanah Investment Islamic Bank of the Philippines",
@@ -3351,6 +4723,11 @@
    ],
    "accomplishments": [
     "Won Maguindanao del Sur's 3rd district with 64,887 votes (78.17%)"
+   ],
+   "affiliations": [
+    "2026 · Al Ittihad-UKB, a BARMM Grand Coalition member party",
+    "2024–2025 · BARMM Grand Coalition (BGC) nominee, Maguindanao del Sur 3rd district",
+    "2020–2025 · National government appointee to the BTA"
    ]
   },
   {
@@ -3381,6 +4758,14 @@
     {
      "label": "Rappler, 6 Sep 2026",
      "url": "https://www.rappler.com/philippines/elections/barmm-polls-2026-electoral-races-maguindanao-del-sur/"
+    },
+    {
+     "label": "Rappler, 2022 candidate profile: DJ Parok Dingcong Mangudadatu",
+     "url": "https://phvote2022.rappler.com/elections/2022/candidates/dj-parok-dingcong-mangudadatu"
+    },
+    {
+     "label": "COMELEC, certificate of candidacy (filed Oct–Nov 2024 for the cancelled 2025 polls): Mangudadatu, DJ Parok D.",
+     "url": "https://comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/BPE_COCCONA/MDS/DR_D4_MANGUDADATU_DJ_PAROK_D.pdf"
     }
    ],
    "family": [
@@ -3408,6 +4793,11 @@
    ],
    "accomplishments": [
     "Elected for the BFP with 94.24% of the district vote"
+   ],
+   "affiliations": [
+    "2026 · Bangsamoro Federalist Party (BFP)",
+    "2024–2025 · UBJP nominee, Maguindanao del Sur 4th district",
+    "2022 · Ran under UBJP for Maguindanao 2nd district provincial board"
    ]
   },
   {
@@ -3442,6 +4832,10 @@
     {
      "label": "COMELEC canvass, via the BetterBARMM LGU directory (Gen. S. K. Pendatun, 2025–2028)",
      "url": ""
+    },
+    {
+     "label": "Rappler, 2022 candidate profile: Rafsanjani Ali",
+     "url": "https://phvote2022.rappler.com/elections/2022/candidates/rafsanjani-pendatun-ali"
     }
    ],
    "family": [
@@ -3457,6 +4851,10 @@
    ],
    "accomplishments": [
     "Elected for the BFP after his 2 opponents withdrew or were disqualified"
+   ],
+   "affiliations": [
+    "2026 · Bangsamoro Federalist Party (BFP)",
+    "2022 · Ran under Nacionalista for Gen. S. K. Pendatun mayor, as 'Bimbo' Ali"
    ]
   },
   {
@@ -3507,6 +4905,9 @@
    ],
    "accomplishments": [
     "Elected for the UBJP, defeating BTA member Butch Malang of the BFP"
+   ],
+   "affiliations": [
+    "2026 · United Bangsamoro Justice Party (UBJP), led by his father"
    ]
   },
   {
@@ -3553,6 +4954,9 @@
    ],
    "accomplishments": [
     "Elected for the UBJP by 755 votes over Health Minister Kadil Sinolinding Jr."
+   ],
+   "affiliations": [
+    "2026 · United Bangsamoro Justice Party (UBJP)"
    ]
   },
   {
@@ -3588,6 +4992,10 @@
     {
      "label": "Rappler, People: Julbert Que",
      "url": "https://www.rappler.com/people/p11684483-julbert-que/"
+    },
+    {
+     "label": "COMELEC, certificate of candidacy (filed Oct–Nov 2024 for the cancelled 2025 polls): Que, Julbert S.",
+     "url": "https://comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/BPE_COCCONA/TAWITAWI/DR_D1_QUE_JULBERT_S.pdf"
     }
    ],
    "born": "6 February 1987",
@@ -3603,6 +5011,12 @@
      "relation": "brother of",
      "role": "Vice Mayor of Bongao, Tawi-Tawi",
      "source": 1
+    },
+    {
+     "name": "Fordalyn Pakki Que",
+     "relation": "husband of",
+     "role": null,
+     "source": 2
     }
    ],
    "career": [
@@ -3611,6 +5025,10 @@
    ],
    "accomplishments": [
     "Elected for the BFP with 95.3% of the district vote"
+   ],
+   "affiliations": [
+    "2026 · Bangsamoro Federalist Party (BFP)",
+    "2024–2025 · UBJP nominee, Tawi-Tawi 1st district"
    ]
   },
   {
@@ -3646,6 +5064,10 @@
     {
      "label": "Rappler, People: Hadjimar Matba",
      "url": "https://www.rappler.com/people/p48416500-hadjimar-matba/"
+    },
+    {
+     "label": "COMELEC, certificate of candidacy (filed Oct–Nov 2024 for the cancelled 2025 polls): Matba, Hadjimar S.",
+     "url": "https://comelec.gov.ph/php-tpls-attachments/2025NLE/COC_2025NLE/BPE_COCCONA/TAWITAWI/DR_D2_MATBA_HADJIMAR_S.pdf"
     }
    ],
    "born": "14 December 1988",
@@ -3655,12 +5077,22 @@
      "relation": "relative of",
      "role": "Mayor of South Ubian, Tawi-Tawi",
      "source": 1
+    },
+    {
+     "name": "Radjendra H. Matba",
+     "relation": "husband of",
+     "role": null,
+     "source": 2
     }
    ],
    "career": [
     "2019–2024 · Tawi-Tawi provincial disaster risk reduction and management officer",
     "2019 · Provincial administrator, Tawi-Tawi",
     "Former vice mayor, Languyan, Tawi-Tawi"
+   ],
+   "affiliations": [
+    "2026 · Progresibong Bangsamoro Party (PRO BM), MP Don Mustapha Loong's party",
+    "2024–2025 · UBJP nominee, Tawi-Tawi 2nd district"
    ]
   },
   {
@@ -3719,6 +5151,12 @@
    ],
    "accomplishments": [
     "Elected for the BFP with 71.01% of the district vote"
+   ],
+   "affiliations": [
+    "2026 · Bangsamoro Federalist Party (BFP) candidate, Tawi-Tawi 3rd district"
+   ],
+   "elections": [
+    "2026 · Won Tawi-Tawi 3rd district seat, defeating 3 rivals"
    ]
   },
   {
@@ -3749,6 +5187,10 @@
     {
      "label": "Rappler, BARMM polls: Over half of Tawi-Tawi bets have ties to political families",
      "url": "https://www.rappler.com/philippines/elections/barmm-polls-2026-electoral-races-tawi-tawi/"
+    },
+    {
+     "label": "Bangsamoro Parliament, member profile: Ahaja, Nur-Mahadil K. (BTA 2019–2022)",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ahaja-nur-mahadil-k/"
     }
    ],
    "family": [
@@ -3764,6 +5206,12 @@
    ],
    "accomplishments": [
     "Won Tawi-Tawi's 4th district with 19,174 votes (36.2%) for the BFP"
+   ],
+   "affiliations": [
+    "2026 · Bangsamoro Federalist Party (BFP) candidate, Tawi-Tawi 4th district"
+   ],
+   "elections": [
+    "2026 · Won Tawi-Tawi 4th district, beating relative and board member Michail Ahaja"
    ]
   },
   {
@@ -3800,6 +5248,9 @@
     "2026 · Nominee, UBJP Settler Communities Sectoral Wing",
     "2024 · Chief of Curriculum and Instruction, Ministry of Basic, Higher and Technical Education",
     "Gurong Pahinungod volunteer teacher, University of the Philippines"
+   ],
+   "affiliations": [
+    "2026 · United Bangsamoro Justice Party (UBJP), settler communities sectoral seat"
    ]
   },
   {
@@ -3833,6 +5284,30 @@
     {
      "label": "PeaceBuilders Community, Feb 2024, 22nd founding anniversary of the Mindanao Peoples' Caucus",
      "url": "https://peacebuilderscommunity.org/2024/02/we-celebrated-the-22nd-founding-anniversary-of-the-mindanao-peoples-caucus/"
+    },
+    {
+     "label": "Bangsamoro Parliament, 12 Aug 2022, Marcos names new 80 BTA members",
+     "url": "https://parliament.bangsamoro.gov.ph/2022/08/12/marcos-names-new-80-bta-members/"
+    },
+    {
+     "label": "Bangsamoro Parliament, 20 Sep 2022, Parliament elects officers, committee chairmanships",
+     "url": "https://parliament.bangsamoro.gov.ph/2022/09/20/bangsamoro-parliament-elects-officers-committee-chairmanships/"
+    },
+    {
+     "label": "PCIJ, 17 Mar 2025, List: New members of the Bangsamoro Transition Authority",
+     "url": "https://pcij.org/2025/03/17/list-new-members-of-the-bangsamoro-transition-authority/"
+    },
+    {
+     "label": "Bangsamoro Parliament, 20 Aug 2025, hospital bills for Basilan and Lanao del Sur (lists 'former MPs')",
+     "url": "https://parliament.bangsamoro.gov.ph/2025/08/20/bangsamoro-parliament-passes-hospital-bills-for-basilan-and-lanao-del-sur/"
+    },
+    {
+     "label": "SunStar, 16 Sep 2026, Comelec names eight BARMM sectoral representatives",
+     "url": "https://www.sunstar.com.ph/manila/comelec-names-eight-barmm-sectoral-representatives"
+    },
+    {
+     "label": "MindaNews, 3 Feb 2009, Mindanawon peace advocate is Ninoy Aquino Fellow for Public Service (archived)",
+     "url": "https://web.archive.org/web/2020/https://mindanews.com/c19-peace-process/2009/02/mindanawon-peace-advocate-is-ninoy-aquino-fellow-for-public-service/"
     }
    ],
    "education": [
@@ -3846,6 +5321,9 @@
     }
    },
    "career": [
+    "2022–2025 · Member, Bangsamoro Transition Authority",
+    "2022 · Deputy floor leader, Bangsamoro Transition Authority",
+    "2022 · Chair, BTA Committee on Amendments, Revision and Codification of Laws",
     "Secretary-general, Mindanao Peoples Caucus",
     "Adviser on ancestral domain, government panel in GPH-MILF talks",
     "Deputy director, Initiatives for International Dialogue; ran its Mindanao peacebuilding programme",
@@ -3856,6 +5334,9 @@
     "Organised the Bantay Ceasefire monitoring team",
     "Led formation of the women's contingent, International Monitoring Team civilian protection (around 2010)",
     "Woman PeaceMaker fellow, Kroc Institute for Peace and Justice, University of San Diego"
+   ],
+   "affiliations": [
+    "2026 · United Bangsamoro Justice Party (UBJP), settler communities sectoral seat"
    ]
   },
   {
@@ -3884,6 +5365,26 @@
     {
      "label": "Bangsamoro Parliament, member profile: Macasalong, Marjanie S.",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/macasalong-marjanie-s/"
+    },
+    {
+     "label": "Bangsamoro Youth Commission, The Chairperson Corner: profile of MP Marjanie S. Mimbantas Macasalong",
+     "url": "https://byc.bangsamoro.gov.ph/?p=546"
+    },
+    {
+     "label": "Bangsamoro Parliament, 12 Aug 2022, Marcos names new 80 BTA members",
+     "url": "https://parliament.bangsamoro.gov.ph/2022/08/12/marcos-names-new-80-bta-members/"
+    },
+    {
+     "label": "PCIJ, 17 Mar 2025, List: New members of the Bangsamoro Transition Authority",
+     "url": "https://pcij.org/2025/03/17/list-new-members-of-the-bangsamoro-transition-authority/"
+    },
+    {
+     "label": "Bangsamoro Parliament, 20 Aug 2025, hospital bills for Basilan and Lanao del Sur (lists 'former MPs')",
+     "url": "https://parliament.bangsamoro.gov.ph/2025/08/20/bangsamoro-parliament-passes-hospital-bills-for-basilan-and-lanao-del-sur/"
+    },
+    {
+     "label": "SunStar, 16 Sep 2026, Comelec names eight BARMM sectoral representatives",
+     "url": "https://www.sunstar.com.ph/manila/comelec-names-eight-barmm-sectoral-representatives"
     }
    ],
    "education": [
@@ -3897,6 +5398,24 @@
      "relation": "son of",
      "role": "MILF Vice Chairman (deceased)",
      "source": 0
+    },
+    {
+     "name": "Azizah Salic",
+     "relation": "son of",
+     "role": null,
+     "source": 1
+    },
+    {
+     "name": "Ni'mah Ummu Hani Barra",
+     "relation": "husband of",
+     "role": null,
+     "source": 1
+    },
+    {
+     "name": null,
+     "relation": "parent of",
+     "role": "4 children",
+     "source": 1
     }
    ],
    "photo": {
@@ -3907,14 +5426,22 @@
     }
    },
    "career": [
-    "2019– · Member, Bangsamoro Transition Authority",
-    "Chair, Bangsamoro Youth Commission",
+    "2022 · Reappointed BTA member, MILF nominee",
+    "2019–2025 · Member, Bangsamoro Transition Authority",
     "2019 · Executive Director, Office on Bangsamoro Youth Affairs",
+    "Chair, Bangsamoro Youth Commission",
     "Chair, BTA Committee on Trade, Investment and Tourism",
-    "Lecturer, International Islamic University Malaysia"
+    "Lecturer, International Islamic University Malaysia",
+    "Member, MILF Peace Implementing Panel",
+    "President, Coalition of Moro Youth Movement; started its Moro Youth Peace Camp"
    ],
    "accomplishments": [
     "Alumnus, Nelson Mandela Leadership Programme"
+   ],
+   "affiliations": [
+    "2026 · UBJP, traditional leaders sectoral seat",
+    "2019–2025 · MILF nominee to the Bangsamoro Transition Authority",
+    "United Bangsamoro Justice Party (UBJP); Deputy President for Youth"
    ]
   },
   {
@@ -3944,6 +5471,30 @@
     {
      "label": "Bangsamoro Parliament, member profile: Engr. Silongan, Aida M.",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/engr-silongan-aida-m/"
+    },
+    {
+     "label": "MindaNews, 23 May 2025, Open letter calls on Marcos to appoint MILF women nominees (archived)",
+     "url": "https://web.archive.org/web/2025/https://mindanews.com/top-stories/2025/05/open-letter-calls-on-marcos-to-appoint-milf-women-nominees-in-bangsamoro-parliament/"
+    },
+    {
+     "label": "GMA News, Sep 2022, New, re-appointed Bangsamoro cabinet members take oaths",
+     "url": "https://gmanetwork.com/news/topstories/regions/845927/new-re-appointed-bangsamoro-cabinet-members-take-their-oaths-of-office/story"
+    },
+    {
+     "label": "Bangsamoro Parliament, 20 Sep 2022, Parliament elects officers, committee chairmanships",
+     "url": "https://parliament.bangsamoro.gov.ph/2022/09/20/bangsamoro-parliament-elects-officers-committee-chairmanships/"
+    },
+    {
+     "label": "Bangsamoro Government, National Women's Month: meet the women members of the Bangsamoro cabinet",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/national-womens-month-meet-the-women-members-of-the-bangsamoro-cabinet"
+    },
+    {
+     "label": "ASEAN-IPR Women in Peace Processes, Engr. Aida Macalimpas Silongan",
+     "url": "https://womeninpeace.asean-aipr.org/communities/individual/engr-aida-macalimpas-silongan"
+    },
+    {
+     "label": "SunStar, 16 Sep 2026, Comelec names eight BARMM sectoral representatives",
+     "url": "https://www.sunstar.com.ph/manila/comelec-names-eight-barmm-sectoral-representatives"
     }
    ],
    "education": [
@@ -3957,17 +5508,25 @@
     }
    },
    "career": [
-    "BARMM Minister of Science and Technology; BTA member",
+    "2022 · Reappointed Minister of Science and Technology",
+    "2022 · Chair, BTA Committee on Social Services",
+    "2019–2025 · BTA member, MILF nominee; reappointed 2022",
     "CEO, Al-Amanah Humanitarian Development Services Inc.",
     "Programme management officer, JICA-backed CD-CAAM",
     "Programme manager, Mindanao Trust Fund-Reconstruction and Development Program",
     "Executive Secretary, MILF Social Welfare Committee",
-    "Engineering contractor"
+    "Engineering contractor",
+    "Chair, BTA Committee on Science and Technology",
+    "Co-founder, Al-Amanah Humanitarian Development Services Inc."
    ],
    "accomplishments": [
     "First woman on the Bangsamoro Development Agency board",
     "Organised 9 sub-committees of the MILF Social Welfare Committee",
     "Lead convenor, Women's Organization Movement of Bangsamoro (30 women's groups)"
+   ],
+   "affiliations": [
+    "2026 · United Bangsamoro Justice Party (UBJP), women sectoral seat",
+    "MILF; women's sector (Social Welfare Committee)"
    ]
   },
   {
@@ -4007,6 +5566,10 @@
     {
      "label": "PCIJ, 17 Mar 2025, List: New members of the Bangsamoro Transition Authority",
      "url": "https://pcij.org/2025/03/17/list-new-members-of-the-bangsamoro-transition-authority/"
+    },
+    {
+     "label": "SunStar, 16 Sep 2026, Comelec names eight BARMM sectoral representatives",
+     "url": "https://www.sunstar.com.ph/manila/comelec-names-eight-barmm-sectoral-representatives"
     }
    ],
    "photo": {
@@ -4018,11 +5581,16 @@
    },
    "career": [
     "2025 · Appointed BTA member, national government nominee",
+    "2025–2026 · Member, Bangsamoro Transition Authority",
     "Member, Bangsamoro Darul Ifta'",
     "Islamic scholar"
    ],
    "accomplishments": [
     "Co-convenor of MiRLeC, the Mindanao religious leaders' group, for the Muslim community"
+   ],
+   "affiliations": [
+    "2026 · United Bangsamoro Justice Party (UBJP), ulama sectoral seat",
+    "2025 · National government nominee to the BTA"
    ]
   },
   {
@@ -4063,6 +5631,9 @@
    ],
    "accomplishments": [
     "Youngest of the 80 elected Members of Parliament, at 26"
+   ],
+   "affiliations": [
+    "2026 · United Bangsamoro Justice Party (UBJP), youth sectoral seat"
    ]
   },
   {
