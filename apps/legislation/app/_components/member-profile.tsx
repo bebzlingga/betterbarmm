@@ -361,10 +361,10 @@ export function MemberIdentity({ member, titleId }: { member: Member; titleId?: 
 					{/* Only relationships a cited source states outright. */}
 					{member.elected?.family.length ? (
 						<Fact
-							label='Family in public life'
+							label='Family'
 							value={member.elected.family.map(
 								(relative) =>
-									`${relative.relation[0]!.toUpperCase()}${relative.relation.slice(1)} ${relative.name}${relative.role ? `, ${relative.role}` : ''}`,
+									`${relative.relation[0]!.toUpperCase()}${relative.relation.slice(1)} ${relative.name ? `${relative.name}${relative.role ? `, ${relative.role}` : ''}` : (relative.role ?? '')}`,
 							)}
 						/>
 					) : null}

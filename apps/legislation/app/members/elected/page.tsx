@@ -58,11 +58,36 @@ const BULLET = 'relative pl-3.5 before:absolute before:left-0 before:top-[0.6em]
 
 const LABEL = 'text-[10.5px] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
 
+/** Relatives named with a public role. */
+const publicRelatives = (elected: ElectedSeat) => elected.family.filter((relative) => relative.name && relative.role)
+
+/** Dated lines, "2019–2023 · Role", as a timeline: the years in their own column. */
+function Timeline({ title, lines }: { title: string; lines: string[] }) {
+	if (!lines.length) return null
+	return (
+		<section className='mt-7'>
+			<h3 className={LABEL}>{title}</h3>
+			<ol className='mt-3 grid gap-2.5 text-[14px] leading-[1.5]'>
+				{lines.map((line) => {
+					const cut = line.indexOf(' · ')
+					const [when, what] = cut >= 0 ? [line.slice(0, cut), line.slice(cut + 3)] : ['', line]
+					return (
+						<li key={line} className='grid grid-cols-[6.5rem_minmax(0,1fr)] gap-3'>
+							<span className='num text-[12.5px] font-semibold text-[var(--ink-3)]'>{when || '—'}</span>
+							<span className='text-[var(--ink-2)]'>{what}</span>
+						</li>
+					)
+				})}
+			</ol>
+		</section>
+	)
+}
+
 /** The lines to show: cited ones, less any naming a relative the family list
  *  already carries, so a tie is said once. */
 function backgroundOf({ elected }: Elected) {
 	return elected.background.filter(
-		(line) => !elected.family.some((relative) => line.includes(relative.name.replace(/\s*'[^']*'\s*/g, ' ').trim())),
+		(line) => !elected.family.some((relative) => relative.name != null && line.includes(relative.name.replace(/\s*'[^']*'\s*/g, ' ').trim())),
 	)
 }
 
@@ -87,9 +112,9 @@ function CardFace({ member }: { member: Elected }) {
 			)}
 			<div className='mt-auto flex flex-wrap items-center gap-x-3 gap-y-1.5 pt-5 text-[11.5px]'>
 				{member.phases.length > 1 ? <span className='bg-[var(--paper-2)] px-2 py-0.5 font-semibold text-[var(--ink-2)]'>Transition Authority</span> : null}
-				{elected.family.length ? (
+				{publicRelatives(elected).length ? (
 					<span className='bg-[var(--paper-2)] px-2 py-0.5 font-semibold text-[var(--ink-2)]'>
-						{elected.family.length} {elected.family.length === 1 ? 'relative' : 'relatives'} in public life
+						{publicRelatives(elected).length} {publicRelatives(elected).length === 1 ? 'relative' : 'relatives'} in public life
 					</span>
 				) : null}
 				<span className='ml-auto font-semibold text-[var(--accent)]'>View profile</span>
@@ -179,23 +204,9 @@ function Profile({ member }: { member: Elected }) {
 					</section>
 				) : null}
 
-				{elected.career.length ? (
-					<section className='mt-7'>
-						<h3 className={LABEL}>Career</h3>
-						{/* A timeline: the years in their own column, the role beside them. */}
-						<ol className='mt-3 grid gap-2.5 text-[14px] leading-[1.5]'>
-							{elected.career.map((line) => {
-								const [when, what] = line.includes(' · ') ? [line.slice(0, line.indexOf(' · ')), line.slice(line.indexOf(' · ') + 3)] : ['', line]
-								return (
-									<li key={line} className='grid grid-cols-[6.5rem_minmax(0,1fr)] gap-3'>
-										<span className='num text-[12.5px] font-semibold text-[var(--ink-3)]'>{when || '—'}</span>
-										<span className='text-[var(--ink-2)]'>{what}</span>
-									</li>
-								)
-							})}
-						</ol>
-					</section>
-				) : null}
+				<Timeline title='Career' lines={elected.career} />
+				<Timeline title='Political affiliation' lines={elected.affiliations} />
+				<Timeline title='Elections' lines={elected.elections} />
 
 				{elected.accomplishments.length ? (
 					<section className='mt-7'>
@@ -254,13 +265,20 @@ function Profile({ member }: { member: Elected }) {
 
 				{elected.family.length ? (
 					<section className='mt-7'>
-						<h3 className={LABEL}>Family in public life</h3>
+						<h3 className={LABEL}>Family</h3>
 						<ul className='mt-3 grid gap-2 text-[14px] leading-snug'>
 							{elected.family.map((relative) => (
-								<li key={relative.name + relative.relation}>
+								<li key={`${relative.name}${relative.relation}${relative.role}`}>
 									<span className='text-[var(--ink-3)]'>{sentenceCase(relative.relation)} </span>
-									<span className='font-semibold text-[var(--ink)]'>{relative.name}</span>
-									{relative.role ? <span className='text-[var(--ink-3)]'>, {relative.role}</span> : null}
+									{/* A private relative, such as children, is a count, not a name. */}
+									{relative.name ? (
+										<>
+											<span className='font-semibold text-[var(--ink)]'>{relative.name}</span>
+											{relative.role ? <span className='text-[var(--ink-3)]'>, {relative.role}</span> : null}
+										</>
+									) : (
+										<span className='text-[var(--ink-2)]'>{relative.role}</span>
+									)}
 									{relative.source ? (
 										<a href={relative.source.url} target='_blank' rel='noreferrer' title={relative.source.label} className='ml-1.5 text-[11.5px] text-[var(--ink-mute)] hover:text-[var(--accent)]'>
 											source
@@ -311,7 +329,7 @@ export default function ElectedPage() {
 	// The page's own order, so Previous and Next walk it as a reader would.
 	const order = sections.flatMap((groups) => groups.flatMap(([, list]) => list))
 	const neighbour = (m?: Elected) => (m ? { id: m.slug, name: m.displayName, photo: m.photoUrl } : undefined)
-	const withFamily = members.filter((m) => m.elected.family.length).length
+	const withFamily = members.filter((m) => publicRelatives(m.elected).length).length
 	const veterans = members.filter((m) => m.phases.length > 1).length
 
 	return (
