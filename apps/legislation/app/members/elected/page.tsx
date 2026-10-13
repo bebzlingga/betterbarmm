@@ -40,8 +40,11 @@ function groupBy(members: Elected[], key: (m: Elected) => string) {
 function Card({ member }: { member: Elected }) {
 	const { elected } = member
 	// Cited lines first; a Transition Authority veteran without them falls
-	// back on Parliament's own biosketch.
-	const background = elected.background
+	// back on Parliament's own biosketch. A line naming a relative the family
+	// list already carries is left to that list, so the tie is said once.
+	const background = elected.background.filter(
+		(line) => !elected.family.some((relative) => line.includes(relative.name.replace(/\s*'[^']*'\s*/g, ' ').trim())),
+	)
 	return (
 		<article className='flex flex-col border border-[var(--rule)] bg-[var(--paper)] p-5'>
 			<div className='flex items-start gap-4'>
