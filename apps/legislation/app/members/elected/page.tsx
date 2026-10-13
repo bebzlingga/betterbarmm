@@ -361,17 +361,6 @@ export default function ElectedPage() {
 				</ol>
 			</nav>
 
-			<div className='bb-container pt-10'>
-				<p className='max-w-[52rem] text-[13.5px] leading-[1.7] text-[var(--ink-3)]'>
-					{veterans} of the {members.length} sat in the Transition Authority; their full record is on their page. {withFamily} have a relative in public life
-					that a source names. A relationship is listed only where a source states it, never from a shared surname. Something wrong or missing?{' '}
-					<a href='https://betterbarmm.com/contact' className='rule-link'>
-						Tell us
-					</a>
-					.
-				</p>
-			</div>
-
 			{SEATS.map((s, i) => {
 				const groups = sections[i]!
 				if (!groups.length) return null
@@ -404,6 +393,20 @@ export default function ElectedPage() {
 					</section>
 				)
 			})}
+
+			{/* How the page was put together, after the Members themselves. */}
+			<section className='border-t border-[var(--rule)] bg-[var(--paper-2)]'>
+				<div className='bb-container py-12'>
+				<p className='max-w-[52rem] text-[13.5px] leading-[1.7] text-[var(--ink-3)]'>
+					{veterans} of the {members.length} sat in the Transition Authority; their full record is on their page. {withFamily} have a relative in public life
+					that a source names. A relationship is listed only where a source states it, never from a shared surname. Something wrong or missing?{' '}
+					<a href='https://betterbarmm.com/contact' className='rule-link'>
+						Tell us
+					</a>
+					.
+				</p>
+				</div>
+			</section>
 		</>
 	)
 }
