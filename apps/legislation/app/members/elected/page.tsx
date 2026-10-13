@@ -86,10 +86,17 @@ function CardFace({ member }: { member: Elected }) {
 function Profile({ member }: { member: Elected }) {
 	const { elected } = member
 	const background = backgroundOf(member)
+	// Parliament's biosketch gets its own section when cited lines lead.
 	const lines = background.length ? background : member.bio
+	const biography = background.length ? member.bio : []
+	const principal = member.measures
+		.filter((measure) => measure.role === 'Principal Author')
+		.sort((a, b) => b.dateIso.localeCompare(a.dateIso))
+		.slice(0, 6)
 	return (
-		<div className='grid md:grid-cols-[17rem_minmax(0,1fr)]'>
-			<div className='bg-[var(--paper-2)] p-6 md:p-7'>
+		// Each column scrolls on its own, so the picture and the close button stay put.
+		<div className='grid h-full overflow-y-auto overscroll-contain md:grid-cols-[22rem_minmax(0,1fr)] md:overflow-hidden'>
+			<div className='bg-[var(--paper-2)] p-6 md:overflow-y-auto md:overscroll-contain md:p-8'>
 				{member.photoUrl ? (
 					// eslint-disable-next-line @next/next/no-img-element -- local portrait, unsized
 					<img src={member.photoUrl} alt={member.displayName} className='aspect-[4/5] w-full border border-[var(--rule)] object-cover' />
@@ -131,7 +138,7 @@ function Profile({ member }: { member: Elected }) {
 				</dl>
 			</div>
 
-			<div className='p-6 md:p-8'>
+			<div className='p-6 md:overflow-y-auto md:overscroll-contain md:p-10'>
 				<h2 className='pr-8 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{member.displayName}</h2>
 				{member.phases.length > 1 ? (
 					<p className='mt-2 text-[13px] text-[var(--ink-3)]'>
@@ -176,6 +183,41 @@ function Profile({ member }: { member: Elected }) {
 						<p className='mt-3 text-[13.5px] text-[var(--ink-mute)]'>Nothing found and cited beyond the ballot yet.</p>
 					)}
 				</section>
+
+				{biography.length ? (
+					<section className='mt-7'>
+						<h3 className={LABEL}>In Parliament&rsquo;s own profile</h3>
+						<div className='mt-3 grid gap-3 text-[14px] leading-[1.7] text-[var(--ink-2)]'>
+							{biography.map((paragraph) => (
+								<p key={paragraph}>{paragraph}</p>
+							))}
+						</div>
+					</section>
+				) : null}
+
+				{principal.length ? (
+					<section className='mt-7'>
+						<h3 className={LABEL}>Recent measures as principal author</h3>
+						<ul className='mt-3 grid gap-2 text-[13.5px] leading-snug'>
+							{principal.map((measure) => (
+								<li key={measure.id} className='border-b border-[var(--rule)] pb-2'>
+									<Link href={measure.href} className='text-[var(--ink)] hover:text-[var(--accent)]'>
+										<span className='num mr-2 text-[var(--ink-3)]'>{measure.numberLabel}</span>
+										{measure.title}
+									</Link>
+									<span className='mt-0.5 block text-[12px] text-[var(--ink-mute)]'>
+										{[measure.status, measure.dateDisplay].filter(Boolean).join(' · ')}
+									</span>
+								</li>
+							))}
+						</ul>
+						{member.principalCount > principal.length ? (
+							<p className='mt-2 text-[12.5px] text-[var(--ink-3)]'>
+								And {member.principalCount - principal.length} more on their full record.
+							</p>
+						) : null}
+					</section>
+				) : null}
 
 				{elected.family.length ? (
 					<section className='mt-7'>
