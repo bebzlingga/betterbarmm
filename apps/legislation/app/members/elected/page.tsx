@@ -40,6 +40,8 @@ function groupBy(members: Elected[], key: (m: Elected) => string) {
 
 const sentenceCase = (s: string) => s[0]!.toUpperCase() + s.slice(1)
 
+const BULLET = 'relative pl-3.5 before:absolute before:left-0 before:top-[0.6em] before:size-1 before:bg-[var(--brass)]'
+
 const LABEL = 'text-[10.5px] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
 
 /** The lines to show: cited ones, less any naming a relative the family list
@@ -64,8 +66,8 @@ function CardFace({ member }: { member: Elected }) {
 					{elected.votes != null ? <p className='num mt-1 text-[12px] text-[var(--ink-mute)]'>{elected.votes.toLocaleString('en-PH')} votes</p> : null}
 				</div>
 			</div>
-			{background.length || member.bio.length ? (
-				<p className='mt-4 line-clamp-3 text-[13px] leading-[1.6] text-[var(--ink-2)]'>{background.find((line) => !/^(full name|also known)/i.test(line)) ?? background[0] ?? member.bio[0]}</p>
+			{elected.career.length || background.length || member.bio.length ? (
+				<p className='mt-4 line-clamp-3 text-[13px] leading-[1.6] text-[var(--ink-2)]'>{elected.career[0]?.replace(/^.*? · /, '') ?? background.find((line) => !/^(full name|also known)/i.test(line)) ?? background[0] ?? member.bio[0]}</p>
 			) : (
 				<p className='mt-4 text-[13px] text-[var(--ink-mute)]'>Nothing found and cited beyond the ballot yet.</p>
 			)}
@@ -86,9 +88,7 @@ function CardFace({ member }: { member: Elected }) {
 function Profile({ member }: { member: Elected }) {
 	const { elected } = member
 	const background = backgroundOf(member)
-	// Parliament's biosketch gets its own section when cited lines lead.
 	const lines = background.length ? background : member.bio
-	const biography = background.length ? member.bio : []
 	const principal = member.measures
 		.filter((measure) => measure.role === 'Principal Author')
 		.sort((a, b) => b.dateIso.localeCompare(a.dateIso))
@@ -146,52 +146,71 @@ function Profile({ member }: { member: Elected }) {
 					</p>
 				) : null}
 
-				{elected.born || elected.education.length ? (
-					<dl className='mt-6 grid gap-3 text-[13.5px] sm:grid-cols-[6rem_minmax(0,1fr)]'>
-						{elected.born ? (
-							<>
-								<dt className='text-[var(--ink-mute)]'>Born</dt>
-								<dd className='text-[var(--ink-2)]'>{[elected.born, elected.birthplace].filter(Boolean).join(', ')}</dd>
-							</>
-						) : null}
-						{elected.education.length ? (
-							<>
-								<dt className='text-[var(--ink-mute)]'>Education</dt>
-								<dd>
-									<ul className='grid gap-1 text-[var(--ink-2)]'>
-										{elected.education.map((line) => (
-											<li key={line}>{line}</li>
-										))}
-									</ul>
-								</dd>
-							</>
-						) : null}
-					</dl>
+				{elected.born ? (
+					<p className='mt-4 text-[13.5px] text-[var(--ink-3)]'>
+						Born {[elected.born, elected.birthplace].filter(Boolean).join(', ')}
+					</p>
 				) : null}
 
-				<section className='mt-7'>
-					<h3 className={LABEL}>Background</h3>
-					{lines.length ? (
-						<ul className='mt-3 grid gap-2.5 text-[14px] leading-[1.65] text-[var(--ink-2)]'>
-							{lines.map((line) => (
-								<li key={line} className='relative pl-3.5 before:absolute before:left-0 before:top-[0.65em] before:size-1 before:bg-[var(--brass)]'>
+				{elected.education.length ? (
+					<section className='mt-7'>
+						<h3 className={LABEL}>Education</h3>
+						<ul className='mt-3 grid gap-2 text-[14px] leading-[1.55] text-[var(--ink-2)]'>
+							{elected.education.map((line) => (
+								<li key={line} className={BULLET}>
 									{line}
 								</li>
 							))}
 						</ul>
-					) : (
-						<p className='mt-3 text-[13.5px] text-[var(--ink-mute)]'>Nothing found and cited beyond the ballot yet.</p>
-					)}
-				</section>
+					</section>
+				) : null}
 
-				{biography.length ? (
+				{elected.career.length ? (
 					<section className='mt-7'>
-						<h3 className={LABEL}>In Parliament&rsquo;s own profile</h3>
-						<div className='mt-3 grid gap-3 text-[14px] leading-[1.7] text-[var(--ink-2)]'>
-							{biography.map((paragraph) => (
-								<p key={paragraph}>{paragraph}</p>
+						<h3 className={LABEL}>Career</h3>
+						{/* A timeline: the years in their own column, the role beside them. */}
+						<ol className='mt-3 grid gap-2.5 text-[14px] leading-[1.5]'>
+							{elected.career.map((line) => {
+								const [when, what] = line.includes(' · ') ? [line.slice(0, line.indexOf(' · ')), line.slice(line.indexOf(' · ') + 3)] : ['', line]
+								return (
+									<li key={line} className='grid grid-cols-[6.5rem_minmax(0,1fr)] gap-3'>
+										<span className='num text-[12.5px] font-semibold text-[var(--ink-3)]'>{when || '—'}</span>
+										<span className='text-[var(--ink-2)]'>{what}</span>
+									</li>
+								)
+							})}
+						</ol>
+					</section>
+				) : null}
+
+				{elected.accomplishments.length ? (
+					<section className='mt-7'>
+						<h3 className={LABEL}>Accomplishments</h3>
+						<ul className='mt-3 grid gap-2 text-[14px] leading-[1.55] text-[var(--ink-2)]'>
+							{elected.accomplishments.map((line) => (
+								<li key={line} className={BULLET}>
+									{line}
+								</li>
 							))}
-						</div>
+						</ul>
+					</section>
+				) : null}
+
+				{/* Before a profile is restructured, the cited lines as they are. */}
+				{!elected.career.length && !elected.accomplishments.length ? (
+					<section className='mt-7'>
+						<h3 className={LABEL}>Background</h3>
+						{lines.length ? (
+							<ul className='mt-3 grid gap-2 text-[14px] leading-[1.55] text-[var(--ink-2)]'>
+								{lines.map((line) => (
+									<li key={line} className={BULLET}>
+										{line}
+									</li>
+								))}
+							</ul>
+						) : (
+							<p className='mt-3 text-[13.5px] text-[var(--ink-mute)]'>Nothing found and cited beyond the ballot yet.</p>
+						)}
 					</section>
 				) : null}
 
@@ -201,7 +220,7 @@ function Profile({ member }: { member: Elected }) {
 						<ul className='mt-3 grid gap-2 text-[13.5px] leading-snug'>
 							{principal.map((measure) => (
 								<li key={measure.id} className='border-b border-[var(--rule)] pb-2'>
-									<Link href={measure.href} className='text-[var(--ink)] hover:text-[var(--accent)]'>
+									<Link href={measure.href} className='line-clamp-2 text-[var(--ink)] hover:text-[var(--accent)]'>
 										<span className='num mr-2 text-[var(--ink-3)]'>{measure.numberLabel}</span>
 										{measure.title}
 									</Link>

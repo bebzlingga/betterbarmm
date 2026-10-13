@@ -110,6 +110,9 @@ export type ElectedSeat = {
 	born?: string
 	birthplace?: string
 	education: string[]
+	/** Their history as short dated lines, newest first: "2019–2023 · Minister of …". */
+	career: string[]
+	accomplishments: string[]
 	/** Relatives in public life, each from a source that states the relationship. */
 	family: ElectedRelative[]
 	/** Where the portrait was published, when it came from outside Parliament's roster. */
@@ -649,6 +652,8 @@ type RawElected = {
 	born?: string | null
 	birthplace?: string | null
 	education?: string[]
+	career?: string[]
+	accomplishments?: string[]
 	family?: { name: string; relation: string; role?: string | null; source?: number | null }[]
 	/** A portrait from an official government page, saved under public/images/members/elected. */
 	photo?: { file: string; source: { label: string; url: string } } | null
@@ -681,6 +686,8 @@ for (const raw of electedFile?.members ?? []) {
 		born: raw.born ?? undefined,
 		birthplace: raw.birthplace ?? undefined,
 		education: raw.education ?? [],
+		career: raw.career ?? [],
+		accomplishments: raw.accomplishments ?? [],
 		family: (raw.family ?? []).map((relative) => ({
 			name: relative.name,
 			relation: relative.relation,
