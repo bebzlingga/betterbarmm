@@ -65,7 +65,7 @@ function CardFace({ member }: { member: Elected }) {
 				</div>
 			</div>
 			{background.length || member.bio.length ? (
-				<p className='mt-4 line-clamp-3 text-[13px] leading-[1.6] text-[var(--ink-2)]'>{background[0] ?? member.bio[0]}</p>
+				<p className='mt-4 line-clamp-3 text-[13px] leading-[1.6] text-[var(--ink-2)]'>{background.find((line) => !/^(full name|also known)/i.test(line)) ?? background[0] ?? member.bio[0]}</p>
 			) : (
 				<p className='mt-4 text-[13px] text-[var(--ink-mute)]'>Nothing found and cited beyond the ballot yet.</p>
 			)}
