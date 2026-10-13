@@ -19,6 +19,7 @@ import { ThemeToggle } from './theme-toggle'
  * separate top-level links.
  */
 const peopleLinks = [
+	{ href: '/members/elected', label: 'Elected 2026' },
 	{ href: '/members', label: 'Members' },
 	{ href: '/committees', label: 'Committees' },
 ]
@@ -45,8 +46,11 @@ export function SiteNav() {
 
 	// `/resolutions/adopted` should light up its own entry, not `/`, so match the
 	// longest href rather than any prefix.
-	const isActive = (href: string) =>
+	const matches = (href: string) =>
 		href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(`${href}/`)
+	const isActive = (href: string) =>
+		matches(href) &&
+		![...categories, ...peopleLinks].some((link) => link.href.length > href.length && link.href.startsWith(href) && matches(link.href))
 
 	const isRegistryActive = categories.some((category) => isActive(category.href))
 	const isPeopleActive = peopleLinks.some((item) => isActive(item.href))

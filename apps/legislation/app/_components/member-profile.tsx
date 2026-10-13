@@ -354,6 +354,20 @@ export function MemberIdentity({ member, titleId }: { member: Member; titleId?: 
 							].filter(Boolean)}
 						/>
 					) : null}
+					{member.elected?.born ? (
+						<Fact label='Born' value={[member.elected.born, member.elected.birthplace].filter(Boolean).join(', ')} />
+					) : null}
+					{member.elected?.education.length ? <Fact label='Education' value={member.elected.education} /> : null}
+					{/* Only relationships a cited source states outright. */}
+					{member.elected?.family.length ? (
+						<Fact
+							label='Family in public life'
+							value={member.elected.family.map(
+								(relative) =>
+									`${relative.relation[0]!.toUpperCase()}${relative.relation.slice(1)} ${relative.name}${relative.role ? `, ${relative.role}` : ''}`,
+							)}
+						/>
+					) : null}
 					<Fact label='Term of office' value={member.termOfOffice} />
 					{/* One sitting per line — three date ranges run together read as
 				    one long date rather than three terms. */}

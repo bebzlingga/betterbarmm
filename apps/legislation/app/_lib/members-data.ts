@@ -105,7 +105,23 @@ export type ElectedSeat = {
 	votes?: number
 	term: string
 	notes?: string
+	/** What could be found and cited about them, as short sentences. */
+	background: string[]
+	born?: string
+	birthplace?: string
+	education: string[]
+	/** Relatives in public life, each from a source that states the relationship. */
+	family: ElectedRelative[]
 	sources: { label: string; url: string }[]
+}
+
+export type ElectedRelative = {
+	name: string
+	/** From the Member's side: "son of", "wife of". */
+	relation: string
+	role?: string
+	/** The source that states the relationship. */
+	source?: { label: string; url: string }
 }
 
 export type MemberFilterOption = { value: string; label: string; count: number }
@@ -628,6 +644,10 @@ type RawElected = {
 	sex?: string | null
 	background?: string[]
 	notes?: string | null
+	born?: string | null
+	birthplace?: string | null
+	education?: string[]
+	family?: { name: string; relation: string; role?: string | null; source?: number | null }[]
 	sources?: { label: string; url: string }[]
 }
 
@@ -645,6 +665,16 @@ for (const raw of electedFile?.members ?? []) {
 		votes: raw.votes ?? undefined,
 		term: ELECTED_TERM,
 		notes: raw.notes ?? undefined,
+		background: raw.background ?? [],
+		born: raw.born ?? undefined,
+		birthplace: raw.birthplace ?? undefined,
+		education: raw.education ?? [],
+		family: (raw.family ?? []).map((relative) => ({
+			name: relative.name,
+			relation: relative.relation,
+			role: relative.role ?? undefined,
+			source: relative.source != null ? raw.sources?.[relative.source] : undefined,
+		})),
 		sources: raw.sources ?? [],
 	}
 	const existing = raw.btaMember ? allMembers.find((member) => member.rosterName === raw.btaMember) : undefined
@@ -875,6 +905,11 @@ export function getMembersDataset(): MembersDataset {
 			'Attendance and voting records come from the session journals, which have not been captured. Committee seats now come from the committee pages, and reflect current membership only.',
 		],
 	}
+}
+
+/** The 80 Members of the first elected Parliament. */
+export function getElectedMembers(): Array<Member & { elected: ElectedSeat }> {
+	return allMembers.filter((member): member is Member & { elected: ElectedSeat } => Boolean(member.elected))
 }
 
 export function getMember(slug: string): Member | undefined {
