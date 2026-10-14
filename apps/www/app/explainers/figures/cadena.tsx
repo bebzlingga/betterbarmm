@@ -216,7 +216,7 @@ export function Deadlines() {
 			<p className={KICKER}>The clock on each record</p>
 			<p className='mt-2 text-[15px] font-bold leading-snug text-[var(--ink)]'>Working days after a document is approved or issued.</p>
 			<div className='relative mt-10 h-24'>
-				<div className='absolute inset-x-0 top-6 h-2 overflow-hidden rounded-full bg-[var(--rule)]'>
+				<div className='absolute inset-x-0 top-6 h-2 overflow-hidden bg-[var(--rule)]'>
 					<span className='absolute inset-y-0 left-0 bg-[var(--accent)]/25' style={{ width: mark(7) }} />
 					<span className='absolute inset-y-0 bg-[var(--accent)]/60' style={{ left: mark(7), width: `calc(${mark(30)} - ${mark(7)})` }} />
 					<span className='absolute inset-y-0 right-0 bg-[var(--accent)]' style={{ left: mark(30) }} />
