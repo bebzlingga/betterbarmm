@@ -54,7 +54,8 @@ export default async function ExplainersPage({
 
 			{all.length ? (
 			<section className='bb-container bb-section'>
-				<nav aria-label='Filter explainers' className='space-y-4'>
+				{/* Topics left, tags right; stacked on a phone. */}
+				<nav aria-label='Filter explainers' className='flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between'>
 					<div className='flex flex-wrap gap-2'>
 						<FilterLink href={href({ tag })} active={!category}>
 							All topics
@@ -66,7 +67,7 @@ export default async function ExplainersPage({
 						))}
 					</div>
 					{tags.length ? (
-						<div className='flex flex-wrap items-center gap-2'>
+						<div className='flex flex-wrap items-center gap-2 lg:justify-end'>
 							<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 								Tags
 							</span>
