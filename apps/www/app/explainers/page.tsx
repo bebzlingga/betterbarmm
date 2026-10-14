@@ -108,7 +108,7 @@ export default async function ExplainersPage({
 								<h2 className='mt-4 pr-6 text-[1.2rem] font-extrabold leading-snug tracking-[-0.02em] transition-colors duration-300 group-hover:text-[var(--accent)]'>
 									{e.title}
 								</h2>
-								{e.summary ? <p className='mt-3 flex-1 bb-body text-[var(--ink-2)]'>{e.summary}</p> : null}
+								{e.summary ? <p className='mt-3 flex-1 bb-body !leading-[1.7] text-[var(--ink-2)]'>{e.summary}</p> : null}
 								{e.published_at ? (
 									<p className='mt-5 text-[12.5px] text-[var(--ink-3)]'>
 										{[longDate(e.published_at), e.author ? `@${e.author}` : null].filter(Boolean).join(' · ')}
@@ -118,7 +118,7 @@ export default async function ExplainersPage({
 						))}
 					</div>
 				) : (
-					<p className='mt-12 bb-body text-[var(--ink-3)]'>No explainers match this filter yet.</p>
+					<p className='mt-12 bb-body !leading-[1.7] text-[var(--ink-3)]'>No explainers match this filter yet.</p>
 				)}
 			</section>
 			) : null}
@@ -191,7 +191,7 @@ function Guides() {
 								<span className='mt-4 text-[1.1rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
 									{g.title}
 								</span>
-								<span className='mt-2 flex-1 text-[13.5px] leading-[1.6] text-[var(--ink-2)]'>{g.summary}</span>
+								<span className='mt-2 flex-1 text-[13.5px] leading-[1.7] text-[var(--ink-2)]'>{g.summary}</span>
 								<span className='mt-5 inline-flex items-center gap-1.5 text-[12.5px] font-semibold text-[var(--ink-3)] group-hover:text-[var(--ink)]'>
 									Open in {g.workspace}
 									<ArrowUpRightIcon className='size-3.5 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5' weight='bold' aria-hidden='true' />

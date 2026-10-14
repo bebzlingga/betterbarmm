@@ -45,7 +45,7 @@ export default async function ExplainerPage({ params }: Props) {
 						{explainer.title}
 					</h1>
 					{explainer.summary ? (
-						<p className='mx-auto mt-6 max-w-[40em] text-[1.15rem] leading-relaxed text-[var(--ink-2)]'>{explainer.summary}</p>
+						<p className='mx-auto mt-6 max-w-[40em] text-[1.15rem] leading-[1.7] text-[var(--ink-2)]'>{explainer.summary}</p>
 					) : null}
 					{explainer.published_at ? (
 						<p className='mt-6 text-[13px] text-[var(--ink-3)]'>
@@ -58,7 +58,7 @@ export default async function ExplainerPage({ params }: Props) {
 
 			<article className='bb-container bb-section !pt-[clamp(2.5rem,5vw,4rem)]'>
 				{/* Wider than prose's usual measure: the graphics and tables need the room. */}
-				<Markdown source={explainer.body} figures={FIGURES[explainer.slug]} className='bb-prose bb-article mx-auto !max-w-[54rem]' />
+				<Markdown source={explainer.body} figures={FIGURES[explainer.slug]} className='bb-prose bb-article mx-auto !max-w-[54rem] !leading-[1.7]' />
 
 				<footer className='mx-auto mt-14 max-w-[54rem] border-t border-[var(--rule)] pt-6'>
 					{explainer.tags.length ? (

@@ -8,8 +8,8 @@ import { CheckIcon, ClockIcon, LinkIcon, MinusIcon } from '@phosphor-icons/react
    icon and a word beside it.
    ============================================================ */
 
-const FIG = 'bb-graphic my-10 border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-7'
-const CAPTION = 'mt-5 text-[12.5px] leading-[1.6] text-[var(--ink-3)]'
+const FIG = 'bb-graphic my-10 leading-[1.7] border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-7'
+const CAPTION = 'mt-5 text-[12.5px] leading-[1.7] text-[var(--ink-3)]'
 const KICKER = 'text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'
 
 /* ---- 0. Three records, chained ---- */
@@ -36,7 +36,7 @@ export function Blocks() {
 						: []),
 					<li key={block.what} className='flex flex-col border border-[var(--rule)] bg-[var(--paper-2)] p-4'>
 						<span className='text-[13.5px] font-bold text-[var(--ink)]'>{block.what}</span>
-						<span className='mt-0.5 text-[12px] leading-snug text-[var(--ink-3)]'>{block.detail}</span>
+						<span className='mt-0.5 text-[12px] leading-[1.7] text-[var(--ink-3)]'>{block.detail}</span>
 						<span className='mt-4 grid gap-1 font-mono text-[11px]'>
 							<span className='flex justify-between gap-2'>
 								<span className='text-[var(--ink-mute)]'>previous</span>
@@ -88,7 +88,7 @@ export function PesoTrail() {
 						</span>
 						<span className='min-w-0'>
 							<span className='block text-[13.5px] font-bold text-[var(--ink)]'>{step.stage}</span>
-							<span className='block text-[12.5px] leading-snug text-[var(--ink-2)]'>{step.doc}</span>
+							<span className='block text-[12.5px] leading-[1.7] text-[var(--ink-2)]'>{step.doc}</span>
 							<span className='mt-0.5 block text-[11.5px] text-[var(--ink-mute)]'>{step.who}</span>
 						</span>
 					</li>
@@ -140,7 +140,7 @@ export function Coverage() {
 							<tr key={row.who} className={`border-t ${r === 2 ? 'border-t-2 border-dashed border-[var(--ink)]' : 'border-[var(--rule)]'}`}>
 								<td className='py-3 pr-3 align-top'>
 									<span className='block text-[13.5px] font-bold text-[var(--ink)]'>{row.who}</span>
-									<span className='block text-[11.5px] leading-snug text-[var(--ink-3)]'>{row.note}</span>
+									<span className='block text-[11.5px] leading-[1.7] text-[var(--ink-3)]'>{row.note}</span>
 								</td>
 								{row.cells.map((cell, c) => (
 									<td key={c} className='py-3 text-center align-middle'>
@@ -229,7 +229,7 @@ export function Deadlines() {
 					<div key={m.day} className='absolute top-0 -translate-x-[1px]' style={{ left: mark(m.day) }}>
 						<span className='num block text-[11.5px] font-bold text-[var(--ink)]'>{m.top}</span>
 						<span aria-hidden='true' className='mt-1 block h-6 w-px bg-[var(--ink)]' />
-						<span className={`mt-1 block max-w-[10rem] text-[11.5px] leading-snug text-[var(--ink-2)] ${m.day === 30 ? '-translate-x-full text-right' : ''}`}>{m.label}</span>
+						<span className={`mt-1 block max-w-[10rem] text-[11.5px] leading-[1.7] text-[var(--ink-2)] ${m.day === 30 ? '-translate-x-full text-right' : ''}`}>{m.label}</span>
 					</div>
 				))}
 			</div>
@@ -241,7 +241,7 @@ export function Deadlines() {
 				].map(([when, what]) => (
 					<div key={when}>
 						<span className='num block text-[1.25rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>{when}</span>
-						<span className='block text-[12.5px] leading-snug text-[var(--ink-3)]'>{what}</span>
+						<span className='block text-[12.5px] leading-[1.7] text-[var(--ink-3)]'>{what}</span>
 					</div>
 				))}
 			</div>
@@ -269,7 +269,7 @@ export function Compare() {
 			<p className={KICKER}>Side by side</p>
 			<p className='mt-2 text-[15px] font-bold leading-snug text-[var(--ink)]'>The national bill and the Bangsamoro&rsquo;s own.</p>
 			<div className='mt-6 overflow-x-auto'>
-				<table className='w-full min-w-[36rem] border-collapse text-left text-[13px] leading-snug'>
+				<table className='w-full min-w-[36rem] border-collapse text-left text-[13px] leading-[1.7]'>
 					<thead>
 						<tr className='border-b border-[var(--ink)]'>
 							<th className='w-[26%] pb-2.5 pr-4' />
