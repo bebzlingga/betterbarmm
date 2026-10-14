@@ -12,6 +12,51 @@ const FIG = 'bb-graphic my-10 border border-[var(--rule)] bg-[var(--paper)] p-5 
 const CAPTION = 'mt-5 text-[12.5px] leading-[1.6] text-[var(--ink-3)]'
 const KICKER = 'text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'
 
+/* ---- 0. Three records, chained ---- */
+
+const BLOCKS = [
+	{ what: 'Release order', detail: 'SARO for road works', hash: '4b1a', prev: '—' },
+	{ what: 'Contract', detail: 'Awarded to the winning bidder', hash: '7c2e', prev: '4b1a' },
+	{ what: 'Payment', detail: 'First progress billing', hash: '9d05', prev: '7c2e' },
+]
+
+export function Blocks() {
+	return (
+		<figure className={FIG}>
+			<p className={KICKER}>How the chain holds</p>
+			<p className='mt-2 text-[15px] font-bold leading-snug text-[var(--ink)]'>Each record carries the fingerprint of the one before it.</p>
+			<ol className='!mt-6 grid !list-none items-stretch gap-3 !pl-0 sm:grid-cols-[1fr_auto_1fr_auto_1fr] [&>li+li]:!mt-0'>
+				{BLOCKS.flatMap((block, i) => [
+					...(i
+						? [
+								<li key={`link-${i}`} aria-hidden='true' className='hidden items-center justify-center text-[var(--accent)] sm:flex'>
+									<LinkIcon size={18} weight='bold' />
+								</li>,
+							]
+						: []),
+					<li key={block.what} className='flex flex-col border border-[var(--rule)] bg-[var(--paper-2)] p-4'>
+						<span className='text-[13.5px] font-bold text-[var(--ink)]'>{block.what}</span>
+						<span className='mt-0.5 text-[12px] leading-snug text-[var(--ink-3)]'>{block.detail}</span>
+						<span className='mt-4 grid gap-1 font-mono text-[11px]'>
+							<span className='flex justify-between gap-2'>
+								<span className='text-[var(--ink-mute)]'>previous</span>
+								<span className={block.prev === '—' ? 'text-[var(--ink-mute)]' : 'font-semibold text-[var(--brass)]'}>{block.prev}</span>
+							</span>
+							<span className='flex justify-between gap-2'>
+								<span className='text-[var(--ink-mute)]'>fingerprint</span>
+								<span className='font-semibold text-[var(--accent)]'>{block.hash}</span>
+							</span>
+						</span>
+					</li>,
+				])}
+			</ol>
+			<figcaption className={CAPTION}>
+				Change the contract after it is posted and its fingerprint changes too, so it no longer matches the one the payment points back to. Fingerprints shortened for the picture.
+			</figcaption>
+		</figure>
+	)
+}
+
 /* ---- 1. Following one peso ---- */
 
 const TRAIL = [
@@ -206,6 +251,7 @@ export function Deadlines() {
 }
 
 export const CADENA_FIGURES = {
+	blocks: <Blocks />,
 	'peso-trail': <PesoTrail />,
 	coverage: <Coverage />,
 	'bill-path': <BillPath />,

@@ -16,6 +16,22 @@ It began life as Senator Bam Aquino's "Blockchain the Budget" bill and was renam
 
 {{figure:peso-trail}}
 
+## What "blockchain" means here
+
+A blockchain is a record kept in many copies at once, where every new entry is sealed with a fingerprint of the entry before it. The fingerprint, called a hash, is a short code worked out from the entry's contents: change a single figure and the code comes out different. Because each entry carries the fingerprint of the one before, altering an old entry breaks the link to everything after it, and every copy can see the break.
+
+Nothing is erased. A correction is a new entry that points back to the one it corrects, so the original stays visible beside it.
+
+{{figure:blocks}}
+
+For a budget portal, that brings three things:
+
+- **Records that cannot be quietly changed.** Once a release order or a contract is posted, editing it afterwards shows up as a broken link, not a silent fix.
+- **A history anyone can read.** A reader sees what was first posted, what was corrected, and when, because corrections are added rather than written over.
+- **Copies outside one office.** Accredited mirrors run by universities, media and civil society can check, entry by entry, that they hold the same record as the government.
+
+What it cannot do is make a record true. A blockchain proves an entry has not changed since it was posted; it says nothing about whether it was right when it was posted. A padded contract posted on time is still padded. That is why the bill pairs the portal with posting deadlines, penalties for false entries, and the Commission on Audit.
+
 ## How it got here
 
 The Senate passed it 17 to 0 on 15 December 2025. The House has not passed it ten months later.
