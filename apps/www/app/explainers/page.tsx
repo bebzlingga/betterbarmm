@@ -11,7 +11,7 @@ import { GUIDES } from './guides'
 export const metadata: Metadata = pageMeta({
 	title: 'Explainers',
 	description:
-		'Plain-language explainers on how the Bangsamoro works: its laws, its budget, its elections, and its local governments.',
+		'Plain-language explainers on how government works, in the Bangsamoro and beyond: laws, budgets, elections, procurement and local government.',
 	path: '/explainers',
 })
 
@@ -47,9 +47,9 @@ export default async function ExplainersPage({
 			<Masthead
 				brand
 				label='Explainers'
-				lines={['The Bangsamoro,', 'in plain words.']}
+				lines={['How government works,', 'in plain words.']}
 				muted={[1]}
-				standfirst='Short, sourced explanations of the region’s laws, budget, elections and local governments — written for someone who has never read a bill.'
+				standfirst='Short, sourced explanations of laws, budgets, elections and the way public money moves — in the Bangsamoro and beyond, written for someone who has never read a bill.'
 			/>
 
 			{all.length ? (
