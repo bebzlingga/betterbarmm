@@ -33,20 +33,17 @@ export default async function ExplainerPage({ params }: Props) {
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader activeItem='explainers' />
 
-			{/* The head on a light band: what this is, what it says, who wrote it and when. */}
-			<header className='border-b border-[var(--rule)] bg-[var(--paper-2)]'>
-				<div className='bb-container py-[clamp(3rem,6vw,5rem)]'>
-					<Link
-						href={`/explainers?category=${explainer.category}`}
-						className='font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)] hover:underline'
-					>
+			{/* The head on the brand ground, centred, as the site's mastheads are. */}
+			<header className='brand-bg bb-lattice relative overflow-hidden'>
+				<div className='bb-container relative py-[clamp(3.75rem,7vw,6.5rem)] text-center'>
+					<Link href={`/explainers?category=${explainer.category}`} className='bb-label justify-center hover:underline'>
 						Explainer · {categoryLabel(explainer.category)}
 					</Link>
-					<h1 className='mt-5 max-w-[24ch] text-[clamp(2.2rem,5vw,3.6rem)] font-extrabold leading-[1.02] tracking-[-0.04em]'>
+					<h1 className='mx-auto mt-6 max-w-[24ch] text-[clamp(2.2rem,5vw,3.6rem)] font-extrabold leading-[1.02] tracking-[-0.04em] text-[var(--ink)]'>
 						{explainer.title}
 					</h1>
 					{explainer.summary ? (
-						<p className='mt-6 max-w-[40em] text-[1.15rem] leading-relaxed text-[var(--ink-2)]'>{explainer.summary}</p>
+						<p className='mx-auto mt-6 max-w-[40em] text-[1.15rem] leading-relaxed text-[var(--ink-2)]'>{explainer.summary}</p>
 					) : null}
 					{explainer.published_at ? (
 						<p className='mt-6 text-[13px] text-[var(--ink-3)]'>
@@ -54,13 +51,14 @@ export default async function ExplainerPage({ params }: Props) {
 						</p>
 					) : null}
 				</div>
+				<div className='bb-weave' aria-hidden='true' />
 			</header>
 
 			<article className='bb-container bb-section'>
 				{/* Wider than prose's usual measure: the graphics and tables need the room. */}
-				<Markdown source={explainer.body} figures={FIGURES[explainer.slug]} className='bb-prose bb-article !max-w-[46rem]' />
+				<Markdown source={explainer.body} figures={FIGURES[explainer.slug]} className='bb-prose bb-article mx-auto !max-w-[46rem]' />
 
-				<footer className='mt-14 max-w-[46rem] border-t border-[var(--rule)] pt-6'>
+				<footer className='mx-auto mt-14 max-w-[46rem] border-t border-[var(--rule)] pt-6'>
 					{explainer.tags.length ? (
 						<div className='flex flex-wrap gap-2'>
 							{explainer.tags.map((t) => (
