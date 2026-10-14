@@ -72,9 +72,6 @@ export default async function ExplainerPage({ params }: Props) {
 							))}
 						</div>
 					) : null}
-					<Link href='/explainers' className='bb-btn bb-btn-ghost mt-6'>
-						All explainers
-					</Link>
 				</footer>
 			</article>
 		</main>
