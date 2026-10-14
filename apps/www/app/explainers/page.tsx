@@ -47,7 +47,7 @@ export default async function ExplainersPage({
 			<Masthead
 				brand
 				label='Explainers'
-				lines={['How the Bangsamoro', 'works, explained.']}
+				lines={['The Bangsamoro,', 'in plain words.']}
 				muted={[1]}
 				standfirst='Short, sourced explanations of the region’s laws, budget, elections and local governments — written for someone who has never read a bill.'
 			/>
