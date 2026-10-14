@@ -4,7 +4,7 @@ summary: A national bill would put every budget record online within seven days,
 category: budget
 tags: transparency, cadena, budget, procurement
 date: 2026-10-14
-author: Bebz
+author: betterbarmm
 ---
 
 ## What it is
