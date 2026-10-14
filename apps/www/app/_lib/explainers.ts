@@ -1,5 +1,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
+import type { Motif } from '../explainers/guides'
 import { type Explainer, type ExplainerCategory, getPublishedExplainer, listPublishedExplainers } from '@betterbarmm/db'
 
 /* ============================================================
@@ -14,7 +15,7 @@ import { type Explainer, type ExplainerCategory, getPublishedExplainer, listPubl
    separated), date (YYYY-MM-DD) and author.
    ============================================================ */
 
-export type Article = Explainer & { author?: string }
+export type Article = Explainer & { author?: string; motif?: Motif }
 
 const DIR = path.join(process.cwd(), 'app/explainers/articles')
 
@@ -43,6 +44,7 @@ function parse(file: string): Article {
 		created_at: date,
 		updated_at: date,
 		author: meta.author,
+		motif: meta.motif as Motif | undefined,
 	}
 }
 

@@ -3,7 +3,7 @@
    short explainers from the admin sit beside them as they are published. */
 
 /** The small picture on a guide's card: what kind of thing it explains. */
-export type Motif = 'steps' | 'bars' | 'peso' | 'levels' | 'flow' | 'questions'
+export type Motif = 'chamber' | 'questions' | 'cycle' | 'stack' | 'levels' | 'flow' | 'document' | 'ring' | 'ladder' | 'steps' | 'peso' | 'chain'
 
 export type Guide = { workspace: string; category: string; title: string; summary: string; href: string; motif: Motif }
 
@@ -17,7 +17,7 @@ export const GUIDES: Guide[] = [
 		workspace: 'Legislation',
 		category: 'legislation',
 		title: 'How Parliament works',
-		motif: 'steps',
+		motif: 'chamber',
 		summary: 'What the Bangsamoro Parliament can and cannot do, how a bill becomes law, how it votes and where an ordinary person can take part.',
 		href: `${LEG}/how-parliament-works`,
 	},
@@ -33,7 +33,7 @@ export const GUIDES: Guide[] = [
 		workspace: 'Budget',
 		category: 'budget',
 		title: 'The budget process',
-		motif: 'steps',
+		motif: 'cycle',
 		summary: 'How a Bangsamoro budget is prepared, enacted, released and audited, as a sequence you can follow.',
 		href: `${BUDGET}/process`,
 	},
@@ -41,7 +41,7 @@ export const GUIDES: Guide[] = [
 		workspace: 'Budget',
 		category: 'budget',
 		title: 'Budget words, explained',
-		motif: 'bars',
+		motif: 'stack',
 		summary: 'What Personnel Services, MOOE and capital outlay pay for, what a GAAB is, and what a special purpose fund does.',
 		href: `${BUDGET}/faq`,
 	},
@@ -65,7 +65,7 @@ export const GUIDES: Guide[] = [
 		workspace: 'Local government',
 		category: 'lgu',
 		title: 'The Bangsamoro Local Governance Code',
-		motif: 'levels',
+		motif: 'document',
 		summary: 'A reader’s guide to Autonomy Act 49: who may run, how local money is raised and shared, and where it differs from the national code.',
 		href: `${LGU}/governance-code`,
 	},
@@ -73,7 +73,7 @@ export const GUIDES: Guide[] = [
 		workspace: 'Local government',
 		category: 'lgu',
 		title: 'Local budgets',
-		motif: 'bars',
+		motif: 'ring',
 		summary: 'Where a local government’s money comes from, what the law makes it spend first, and the dates its budget must clear.',
 		href: `${LGU}/local-budgets`,
 	},
@@ -81,7 +81,7 @@ export const GUIDES: Guide[] = [
 		workspace: 'Local government',
 		category: 'lgu',
 		title: 'Salaries and benefits',
-		motif: 'bars',
+		motif: 'ladder',
 		summary: 'What the code pays a governor, a mayor, a council member and a barangay captain, and what limits a local payroll.',
 		href: `${LGU}/salaries`,
 	},

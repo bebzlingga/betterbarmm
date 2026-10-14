@@ -1,5 +1,6 @@
 import { ArrowRightIcon, ArrowUpRightIcon, BuildingsIcon, CoinsIcon, ScrollIcon, ShoppingCartIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
+import { CtaAction, CtaPanel } from '@betterbarmm/editorial'
 import { pageMeta } from '../_lib/seo'
 import Link from 'next/link'
 import { EXPLAINER_CATEGORIES, categoryLabel } from '@betterbarmm/db'
@@ -50,7 +51,7 @@ export default async function ExplainersPage({
 				label='Explainers'
 				lines={['How government works,', 'in plain words.']}
 				muted={[1]}
-				standfirst='Short, sourced explanations of laws, budgets, elections and the way public money moves — in the Bangsamoro and beyond, written for someone who has never read a bill.'
+				standfirst='Laws, budgets, elections and public spending, taken apart in short, sourced pieces anyone can follow. No law degree needed.'
 			/>
 
 			{all.length ? (
@@ -94,6 +95,11 @@ export default async function ExplainersPage({
 								href={`/explainers/${e.slug}`}
 								className='bb-plate group flex h-full flex-col p-7 transition hover:-translate-y-0.5'
 							>
+								{e.motif ? (
+									<span className='-mx-7 -mt-7 mb-6 block border-b border-[var(--rule)] bg-[var(--paper)] px-7 py-4'>
+										<GuideMotif motif={e.motif} />
+									</span>
+								) : null}
 								<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
 									{categoryLabel(e.category)}
 								</span>
@@ -124,6 +130,24 @@ export default async function ExplainersPage({
 			) : null}
 
 			<Guides />
+
+			<CtaPanel
+				label='Get involved'
+				lines={['Know something', 'we should explain?']}
+				standfirst='Spotted an error, or a law, budget or process that deserves a plain-language guide? Tell us — every correction and every suggestion makes these better.'
+			>
+				<CtaAction>
+					<Link href='/contribute' className='bb-btn bb-btn-brass'>
+						Contribute
+						<ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
+					</Link>
+				</CtaAction>
+				<CtaAction>
+					<Link href='/contact' className='bb-btn bb-btn-ghost'>
+						Suggest a topic
+					</Link>
+				</CtaAction>
+			</CtaPanel>
 		</main>
 	)
 }

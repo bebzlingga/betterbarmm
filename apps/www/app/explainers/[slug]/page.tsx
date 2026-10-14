@@ -1,3 +1,5 @@
+import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
+import { CtaAction, CtaPanel } from '@betterbarmm/editorial'
 import type { Metadata } from 'next'
 import { pageMeta } from '../../_lib/seo'
 import Link from 'next/link'
@@ -74,6 +76,24 @@ export default async function ExplainerPage({ params }: Props) {
 					) : null}
 				</footer>
 			</article>
+
+			<CtaPanel
+				label='Get involved'
+				lines={['Know something', 'we should explain?']}
+				standfirst='Spotted an error, or a law, budget or process that deserves a plain-language guide? Tell us — every correction and every suggestion makes these better.'
+			>
+				<CtaAction>
+					<Link href='/contribute' className='bb-btn bb-btn-brass'>
+						Contribute
+						<ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
+					</Link>
+				</CtaAction>
+				<CtaAction>
+					<Link href='/contact' className='bb-btn bb-btn-ghost'>
+						Suggest a topic
+					</Link>
+				</CtaAction>
+			</CtaPanel>
 		</main>
 	)
 }

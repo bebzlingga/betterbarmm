@@ -5,6 +5,7 @@ category: budget
 tags: transparency, cadena, budget, procurement
 date: 2026-10-14
 author: betterbarmm
+motif: chain
 ---
 
 ## What it is
