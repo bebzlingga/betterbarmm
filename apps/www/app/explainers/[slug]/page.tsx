@@ -54,11 +54,11 @@ export default async function ExplainerPage({ params }: Props) {
 				<div className='bb-weave' aria-hidden='true' />
 			</header>
 
-			<article className='bb-container bb-section'>
+			<article className='bb-container bb-section !pt-[clamp(2.5rem,5vw,4rem)]'>
 				{/* Wider than prose's usual measure: the graphics and tables need the room. */}
-				<Markdown source={explainer.body} figures={FIGURES[explainer.slug]} className='bb-prose bb-article mx-auto !max-w-[46rem]' />
+				<Markdown source={explainer.body} figures={FIGURES[explainer.slug]} className='bb-prose bb-article mx-auto !max-w-[54rem]' />
 
-				<footer className='mx-auto mt-14 max-w-[46rem] border-t border-[var(--rule)] pt-6'>
+				<footer className='mx-auto mt-14 max-w-[54rem] border-t border-[var(--rule)] pt-6'>
 					{explainer.tags.length ? (
 						<div className='flex flex-wrap gap-2'>
 							{explainer.tags.map((t) => (
