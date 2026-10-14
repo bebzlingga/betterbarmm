@@ -21,6 +21,9 @@ const nextConfig: NextConfig = {
 		'/this-week/**': ['../../datasets/procurement/philgeps.json'],
 		'/this-week': ['../../datasets/procurement/philgeps.json'],
 		'/api/search': ['../../datasets/procurement/philgeps.json'],
+		// Explainers written as Markdown in the repo, read from disk.
+		'/explainers': ['./app/explainers/articles/**'],
+		'/explainers/**': ['./app/explainers/articles/**'],
 	},
 }
 

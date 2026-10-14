@@ -891,3 +891,51 @@
   padding: 0 0.3em;
   border-radius: 0.25rem;
 }
+
+/* Tables in an explainer: ruled rows, a small caps head, and a sideways
+   scroll of their own on a phone rather than a page that scrolls. */
+.bb-article .md-table {
+  margin: 1.6rem 0;
+  overflow-x: auto;
+}
+.bb-article .md-table table {
+  width: 100%;
+  min-width: 32rem;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.bb-article .md-table th {
+  padding: 0.6rem 1rem 0.6rem 0;
+  border-bottom: 1px solid var(--ink);
+  text-align: left;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.bb-article .md-table td {
+  padding: 0.7rem 1rem 0.7rem 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+  color: var(--ink-2);
+}
+.bb-article .md-table td:first-child {
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+/* A graphic inside an explainer sets its own lists and spacing; the
+   article's list markers and paragraph rhythm stop at its edge. */
+.bb-article .bb-graphic ol,
+.bb-article .bb-graphic ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.bb-article .bb-graphic li + li,
+.bb-article .bb-graphic p + p {
+  margin-top: 0;
+}

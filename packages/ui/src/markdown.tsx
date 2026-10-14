@@ -5,11 +5,20 @@ import { Fragment, type ReactNode } from 'react'
  *
  * Covers what an explainer needs: `##`/`###` headings, paragraphs, `-` and
  * `1.` lists, `>` quotes, `**bold**`, `*italic*`, `` `code` `` and
- * `[links](https://…)`. Builds elements rather than HTML strings, so nothing
- * an editor types can inject markup. ponytail: no tables or images; swap in a
- * full Markdown library if explainers need them.
+ * `[links](https://…)` and pipe tables. Builds elements rather than HTML
+ * strings, so nothing an editor types can inject markup. ponytail: no images
+ * or nested lists; swap in a full Markdown library if explainers need them.
  */
-export function Markdown({ source, className }: { source: string; className?: string }) {
+export function Markdown({
+	source,
+	className,
+	figures = {},
+}: {
+	source: string
+	className?: string
+	/** Rendered in place of a line reading `{{figure:name}}`, for graphics an article carries. */
+	figures?: Record<string, ReactNode>
+}) {
 	return <div className={className}>{blocks(source)}</div>
 
 	function blocks(text: string): ReactNode[] {
@@ -19,6 +28,12 @@ export function Markdown({ source, className }: { source: string; className?: st
 		while (i < lines.length) {
 			const line = lines[i]
 			if (!line.trim()) {
+				i++
+				continue
+			}
+			const figure = line.trim().match(/^\{\{figure:([\w-]+)\}\}$/)
+			if (figure) {
+				out.push(<Fragment key={`f${i}`}>{figures[figure[1]] ?? null}</Fragment>)
 				i++
 				continue
 			}
@@ -41,6 +56,29 @@ export function Markdown({ source, className }: { source: string; className?: st
 				out.push(<List key={`l${i}`}>{items}</List>)
 				continue
 			}
+			// A pipe table: header row, a `| --- |` rule, then body rows.
+			if (line.trim().startsWith('|') && /^\s*\|[\s:|-]+\|\s*$/.test(lines[i + 1] ?? '')) {
+				const cells = (row: string) => row.trim().replace(/^\||\|$/g, '').split('|').map((cell) => cell.trim())
+				const head = cells(line)
+				const body: string[][] = []
+				i += 2
+				while (i < lines.length && lines[i].trim().startsWith('|')) body.push(cells(lines[i++]))
+				out.push(
+					<div key={`t${i}`} className='md-table'>
+						<table>
+							<thead>
+								<tr>{head.map((cell, c) => <th key={c}>{inline(cell)}</th>)}</tr>
+							</thead>
+							<tbody>
+								{body.map((row, r) => (
+									<tr key={r}>{row.map((cell, c) => <td key={c}>{inline(cell)}</td>)}</tr>
+								))}
+							</tbody>
+						</table>
+					</div>,
+				)
+				continue
+			}
 			if (line.startsWith('>')) {
 				const quote: string[] = []
 				while (i < lines.length && lines[i].startsWith('>')) quote.push(lines[i++].replace(/^>\s?/, ''))
@@ -48,7 +86,7 @@ export function Markdown({ source, className }: { source: string; className?: st
 				continue
 			}
 			const para: string[] = []
-			while (i < lines.length && lines[i].trim() && !/^(#{2,4}\s|\s*[-*]\s|\s*\d+\.\s|>)/.test(lines[i])) {
+			while (i < lines.length && lines[i].trim() && !/^(#{2,4}\s|\s*[-*]\s|\s*\d+\.\s|>|\s*\||\{\{figure:)/.test(lines[i])) {
 				para.push(lines[i++])
 			}
 			out.push(<p key={`p${i}`}>{inline(para.join(' '))}</p>)

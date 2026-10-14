@@ -2,7 +2,8 @@ import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import { pageMeta } from '../_lib/seo'
 import Link from 'next/link'
-import { EXPLAINER_CATEGORIES, categoryLabel, listPublishedExplainers } from '@betterbarmm/db'
+import { EXPLAINER_CATEGORIES, categoryLabel } from '@betterbarmm/db'
+import { listExplainers } from '../_lib/explainers'
 import { Masthead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
 import { GUIDES } from './guides'
@@ -23,7 +24,7 @@ export default async function ExplainersPage({
 	searchParams: Promise<{ category?: string; tag?: string }>
 }) {
 	const { category, tag } = await searchParams
-	const all = await listPublishedExplainers()
+	const all = await listExplainers()
 	const shown = all.filter(
 		(e) => (!category || e.category === category) && (!tag || e.tags.includes(tag)),
 	)
@@ -50,8 +51,6 @@ export default async function ExplainersPage({
 				muted={[1]}
 				standfirst='Short, sourced explanations of the region’s laws, budget, elections and local governments — written for someone who has never read a bill.'
 			/>
-
-			<Guides />
 
 			{all.length ? (
 			<section className='bb-container bb-section'>
@@ -100,7 +99,12 @@ export default async function ExplainersPage({
 									{e.title}
 								</h2>
 								{e.summary ? <p className='mt-3 flex-1 bb-body text-[var(--ink-2)]'>{e.summary}</p> : null}
-								<span className='mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--ink)]'>
+								{e.published_at ? (
+									<p className='mt-5 text-[12.5px] text-[var(--ink-3)]'>
+										{[longDate(e.published_at), e.author ? `@${e.author}` : null].filter(Boolean).join(' · ')}
+									</p>
+								) : null}
+								<span className='mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--ink)]'>
 									Read
 									<ArrowRightIcon
 										className='size-3.5 transition group-hover:translate-x-0.5'
@@ -116,16 +120,23 @@ export default async function ExplainersPage({
 				)}
 			</section>
 			) : null}
+
+			<Guides />
 		</main>
 	)
 }
+
+const longDate = (iso: string) => new Date(iso).toLocaleDateString('en-PH', { day: 'numeric', month: 'long', year: 'numeric' })
 
 /** The guides each workspace carries, grouped by workspace. */
 function Guides() {
 	const workspaces = [...new Set(GUIDES.map((g) => g.workspace))]
 	return (
-		<section className='bb-container bb-section'>
-			<div className='grid gap-x-16 gap-y-14 lg:grid-cols-2'>
+		<section className='border-t border-[var(--rule)] bg-[var(--paper-2)]'>
+			<div className='bb-container bb-section'>
+			<p className='bb-label'>In each workspace</p>
+			<h2 className='mt-3 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>The longer guides</h2>
+			<div className='mt-10 grid gap-x-16 gap-y-14 lg:grid-cols-2'>
 				{workspaces.map((w) => (
 					<div key={w}>
 						<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>{w}</p>
@@ -146,6 +157,7 @@ function Guides() {
 						</ul>
 					</div>
 				))}
+			</div>
 			</div>
 		</section>
 	)

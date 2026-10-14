@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
-import { listPublishedExplainers } from '@betterbarmm/db'
+import { listExplainers } from './_lib/explainers'
 import { discoverBarmmTopics } from '@betterbarmm/primer-data'
 import { SITE } from './_lib/seo'
 
@@ -15,7 +15,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 		changeFrequency,
 		priority,
 	})
-	const explainers = await listPublishedExplainers().catch(() => [])
+	const explainers = await listExplainers().catch(() => [])
 	return [
 		page('', 1, 'daily'),
 		page('/discover', 0.9),

@@ -2,45 +2,65 @@ import type { Metadata } from 'next'
 import { pageMeta } from '../../_lib/seo'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { categoryLabel, getPublishedExplainer } from '@betterbarmm/db'
+import { categoryLabel } from '@betterbarmm/db'
 import { Markdown } from '@betterbarmm/ui'
 import { SiteHeader } from '../../_components/site-header'
+import { getExplainer } from '../../_lib/explainers'
+import { CADENA_FIGURES } from '../figures/cadena'
 
 export const revalidate = 60
 
 type Props = { params: Promise<{ slug: string }> }
 
+/** Graphics an article places with `{{figure:name}}`, by slug. */
+const FIGURES: Record<string, Record<string, React.ReactNode>> = {
+	'cadena-act': CADENA_FIGURES,
+}
+
+const longDate = (iso: string) => new Date(iso).toLocaleDateString('en-PH', { day: 'numeric', month: 'long', year: 'numeric' })
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-	const explainer = await getPublishedExplainer((await params).slug)
+	const explainer = await getExplainer((await params).slug)
 	if (!explainer) return { title: 'Explainer not found', robots: { index: false, follow: true } }
 	return pageMeta({ title: explainer.title, description: explainer.summary || 'A plain-language explainer from BetterBARMM.', path: `/explainers/${explainer.slug}` })
 }
 
 export default async function ExplainerPage({ params }: Props) {
-	const explainer = await getPublishedExplainer((await params).slug)
+	const explainer = await getExplainer((await params).slug)
 	if (!explainer) notFound()
 
 	return (
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader activeItem='explainers' />
 
+			{/* The head on a light band: what this is, what it says, who wrote it and when. */}
+			<header className='border-b border-[var(--rule)] bg-[var(--paper-2)]'>
+				<div className='bb-container py-[clamp(3rem,6vw,5rem)]'>
+					<Link
+						href={`/explainers?category=${explainer.category}`}
+						className='font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)] hover:underline'
+					>
+						Explainer · {categoryLabel(explainer.category)}
+					</Link>
+					<h1 className='mt-5 max-w-[24ch] text-[clamp(2.2rem,5vw,3.6rem)] font-extrabold leading-[1.02] tracking-[-0.04em]'>
+						{explainer.title}
+					</h1>
+					{explainer.summary ? (
+						<p className='mt-6 max-w-[40em] text-[1.15rem] leading-relaxed text-[var(--ink-2)]'>{explainer.summary}</p>
+					) : null}
+					{explainer.published_at ? (
+						<p className='mt-6 text-[13px] text-[var(--ink-3)]'>
+							{[longDate(explainer.published_at), explainer.author ? `@${explainer.author}` : null].filter(Boolean).join(' · ')}
+						</p>
+					) : null}
+				</div>
+			</header>
+
 			<article className='bb-container bb-section'>
-				<Link
-					href={`/explainers?category=${explainer.category}`}
-					className='font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)] hover:underline'
-				>
-					{categoryLabel(explainer.category)}
-				</Link>
-				<h1 className='mt-5 max-w-[22ch] text-[clamp(2.2rem,5vw,3.6rem)] font-extrabold leading-[1.02] tracking-[-0.04em]'>
-					{explainer.title}
-				</h1>
-				{explainer.summary ? (
-					<p className='mt-6 max-w-[40em] text-[1.2rem] leading-relaxed text-[var(--ink-2)]'>{explainer.summary}</p>
-				) : null}
+				{/* Wider than prose's usual measure: the graphics and tables need the room. */}
+				<Markdown source={explainer.body} figures={FIGURES[explainer.slug]} className='bb-prose bb-article !max-w-[46rem]' />
 
-				<Markdown source={explainer.body} className='bb-prose bb-article mt-12' />
-
-				<footer className='mt-14 max-w-[34em] border-t border-[var(--rule)] pt-6'>
+				<footer className='mt-14 max-w-[46rem] border-t border-[var(--rule)] pt-6'>
 					{explainer.tags.length ? (
 						<div className='flex flex-wrap gap-2'>
 							{explainer.tags.map((t) => (
@@ -53,16 +73,6 @@ export default async function ExplainerPage({ params }: Props) {
 								</Link>
 							))}
 						</div>
-					) : null}
-					{explainer.published_at ? (
-						<p className='mt-4 text-sm text-[var(--ink-3)]'>
-							Published{' '}
-							{new Date(explainer.published_at).toLocaleDateString('en-PH', {
-								day: 'numeric',
-								month: 'long',
-								year: 'numeric',
-							})}
-						</p>
 					) : null}
 					<Link href='/explainers' className='bb-btn bb-btn-ghost mt-6'>
 						All explainers
