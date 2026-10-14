@@ -136,14 +136,6 @@ const DRAW: Record<Motif, React.ReactNode> = {
 		</g>
 	),
 	// Budget, bid out, awarded: three amounts for one office, as the page sets them.
-	// CADENA, "chain": records linked one to the next.
-	chain: (
-		<g fill='none' strokeWidth='6'>
-			{[0, 1, 2, 3].map((i) => (
-				<rect key={i} x={36 + i * 40} y={i % 2 ? 38 : 32} width='48' height={i % 2 ? 20 : 32} rx={i % 2 ? 10 : 16} stroke={i === 1 ? A : i === 3 ? B : I} opacity={i === 3 ? 1 : 0.85} />
-			))}
-		</g>
-	),
 	peso: (
 		<g>
 			<rect x='40' y='20' width='160' height='12' fill={R} />

@@ -3,7 +3,7 @@
    short explainers from the admin sit beside them as they are published. */
 
 /** The small picture on a guide's card: what kind of thing it explains. */
-export type Motif = 'chamber' | 'questions' | 'cycle' | 'stack' | 'levels' | 'flow' | 'document' | 'ring' | 'ladder' | 'steps' | 'peso' | 'chain'
+export type Motif = 'chamber' | 'questions' | 'cycle' | 'stack' | 'levels' | 'flow' | 'document' | 'ring' | 'ladder' | 'steps' | 'peso'
 
 export type Guide = { workspace: string; category: string; title: string; summary: string; href: string; motif: Motif }
 

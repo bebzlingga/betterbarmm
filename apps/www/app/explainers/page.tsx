@@ -95,11 +95,6 @@ export default async function ExplainersPage({
 								href={`/explainers/${e.slug}`}
 								className='bb-plate group flex h-full flex-col p-7 transition hover:-translate-y-0.5'
 							>
-								{e.motif ? (
-									<span className='-mx-7 -mt-7 mb-6 block border-b border-[var(--rule)] bg-[var(--paper)] px-7 py-4'>
-										<GuideMotif motif={e.motif} />
-									</span>
-								) : null}
 								<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
 									{categoryLabel(e.category)}
 								</span>
