@@ -93,12 +93,19 @@ export default async function ExplainersPage({
 							<Link
 								key={e.id}
 								href={`/explainers/${e.slug}`}
-								className='bb-plate group flex h-full flex-col p-7 transition hover:-translate-y-0.5'
+								className='bb-plate group relative flex h-full flex-col overflow-hidden p-7 transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.45)]'
 							>
+								{/* On hover: an arrow slides in, the title takes the accent, a rule draws along the foot. */}
+								<ArrowRightIcon
+									className='absolute right-6 top-6 size-4 -translate-x-2 text-[var(--accent)] opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100'
+									weight='bold'
+									aria-hidden='true'
+								/>
+								<span aria-hidden='true' className='absolute inset-x-0 bottom-0 h-[3px] origin-left scale-x-0 bg-[var(--accent)] transition-transform duration-500 group-hover:scale-x-100' />
 								<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
 									{categoryLabel(e.category)}
 								</span>
-								<h2 className='mt-4 text-[1.2rem] font-extrabold leading-snug tracking-[-0.02em]'>
+								<h2 className='mt-4 pr-6 text-[1.2rem] font-extrabold leading-snug tracking-[-0.02em] transition-colors duration-300 group-hover:text-[var(--accent)]'>
 									{e.title}
 								</h2>
 								{e.summary ? <p className='mt-3 flex-1 bb-body text-[var(--ink-2)]'>{e.summary}</p> : null}
@@ -107,14 +114,6 @@ export default async function ExplainersPage({
 										{[longDate(e.published_at), e.author ? `@${e.author}` : null].filter(Boolean).join(' · ')}
 									</p>
 								) : null}
-								<span className='mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--ink)]'>
-									Read
-									<ArrowRightIcon
-										className='size-3.5 transition group-hover:translate-x-0.5'
-										weight='bold'
-										aria-hidden='true'
-									/>
-								</span>
 							</Link>
 						))}
 					</div>
