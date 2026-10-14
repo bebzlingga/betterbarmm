@@ -244,7 +244,13 @@ def capture(name: str, limit: int = 0) -> None:
         if position == 1 or position % 50 == 0:
             print(f"  [{position}/{len(rows)}] {name[:-1]} {row['number']}")
 
-        measures.append(parse_measure(row, fetch(row["url"]), config))
+        measure = parse_measure(row, fetch(row["url"]), config)
+        # The site reads an act's ratification date as `date_ratified` (ISO);
+        # the listing's date column arrives as MM/DD/YYYY in `as_of`.
+        if name == "acts" and measure.get("as_of"):
+            month, day, year = measure["as_of"].split("/")
+            measure["date_ratified"] = f"{year}-{int(month):02d}-{int(day):02d}"
+        measures.append(measure)
         time.sleep(0.35)  # a courtesy gap; this is someone's public server
 
     credited = sum(1 for m in measures if m["principal_authors"] or m["co_authors"])
@@ -253,9 +259,10 @@ def capture(name: str, limit: int = 0) -> None:
     payload = {
         "source": config["index"],
         "generated": dt.date.today().isoformat(),
-        # The bills capture has always been read under `bills` — by the www
-        # map, the AI corpus and fetch_measure_pdfs.py — so it keeps that key.
-        ("bills" if name == "bills" else "measures"): measures,
+        # Bills and acts have always been read under their own key — `bills`
+        # by the www map, the AI corpus and fetch_measure_pdfs.py; `acts` by
+        # every workspace — so they keep it. Resolutions use `measures`.
+        (name if name in ("bills", "acts") else "measures"): measures,
     }
 
     out: Path = config["out"]

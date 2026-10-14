@@ -1,6 +1,6 @@
 {
  "source": "https://parliament.bangsamoro.gov.ph/bills/",
- "generated": "2026-10-07",
+ "generated": "2026-10-14",
  "bills": [
   {
    "number": 476,
@@ -38,7 +38,8 @@
     "ABU, MUDJIB C.",
     "ASNAWIE, DAN S.",
     "ISMAEL, RASUL E.",
-    "BAYAM, ZULFIKAR-ALI S."
+    "BAYAM, ZULFIKAR-ALI S.",
+    "MISUARI, ABDULKARIM T."
    ],
    "history": [
     "Filed – 10/5/2026",
@@ -1338,7 +1339,10 @@
    "history": [
     "Filed – 3/30/2026",
     "First Reading – 4/22/2026 (Resumption)",
-    "Referred to the Committee on Women, Youth, Children, and Persons with Disability – 4/28/2026 (Resumption)"
+    "Referred to the Committee on Women, Youth, Children, and Persons with Disabilities – 4/28/2026 (Resumption)",
+    "Deferred – 10/7/2026 (Resumption)",
+    "Deferred – 10/8/2026 (Resumption)",
+    "Deferred – 10/12/2026 (Resumption)"
    ],
    "committee_referrals": "Committee on Women, Youth, Children, and Persons with Disabilities",
    "became_act": ""
@@ -10041,9 +10045,7 @@
    ],
    "co_authors": [
     "MAWALLIL, AMILBAHAR S.",
-    "LOONG, DON MUSTAPHA A.",
     "MIDTIMBANG, TAWAKAL B.",
-    "UY-OYOD, SITTIE FAHANIE S.",
     "UTTO, BASSIR D.",
     "CANDAO, BAI MALEIHA B.",
     "JAKILAN, MUSLIMIN A.",
@@ -17735,7 +17737,9 @@
     "SALIK, ALI O.",
     "LORENA, JOSE I.",
     "SUMAGAYAN, AMENODIN U.",
-    "BAYAM, ZULFIKAR-ALI S."
+    "BAYAM, ZULFIKAR-ALI S.",
+    "ASARUL, HABER A.",
+    "UY-OYOD, SITTIE FAHANIE S."
    ],
    "co_authors": [
     "ALAMIA, LAISA M.",
@@ -17745,7 +17749,6 @@
     "ISMAEL, RASUL E.",
     "LOONG, DON MUSTAPHA A.",
     "ALI, IBRAHIM D.",
-    "UY-OYOD, SITTIE FAHANIE S.",
     "ABAS, AKMAD I.",
     "DILANGALEN, HASHEMI N.",
     "BABAO, ALI MONTAHA D.",
