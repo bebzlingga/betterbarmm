@@ -130,8 +130,6 @@ export function UtilityBar({
 				<SwitchCloser />
 
 				<nav aria-label='Project links' className='flex items-center gap-4 sm:gap-5'>
-					{/* Search opens in place rather than leaving for the /search page. */}
-					{links.some((link) => link.href === '/search') ? <GlobalSearch base={base} /> : null}
 					{links.filter((link) => link.href !== '/search').map((link) => {
 						const external = isAbsolute(link.href)
 						return (
@@ -147,6 +145,9 @@ export function UtilityBar({
 							</a>
 						)
 					})}
+					{/* Search last among the links, after Follow us on Facebook; it opens
+					    in place rather than leaving for the /search page. */}
+					{links.some((link) => link.href === '/search') ? <GlobalSearch base={base} /> : null}
 					{end}
 				</nav>
 			</div>
