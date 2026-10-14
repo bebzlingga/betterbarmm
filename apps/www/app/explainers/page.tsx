@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
+import { ArrowRightIcon, ArrowUpRightIcon, BuildingsIcon, CoinsIcon, ScrollIcon, ShoppingCartIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import { pageMeta } from '../_lib/seo'
 import Link from 'next/link'
@@ -7,6 +7,7 @@ import { listExplainers } from '../_lib/explainers'
 import { Masthead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
 import { GUIDES } from './guides'
+import { GuideMotif } from './motif'
 
 export const metadata: Metadata = pageMeta({
 	title: 'Explainers',
@@ -129,36 +130,59 @@ export default async function ExplainersPage({
 
 const longDate = (iso: string) => new Date(iso).toLocaleDateString('en-PH', { day: 'numeric', month: 'long', year: 'numeric' })
 
-/** The guides each workspace carries, grouped by workspace. */
+/** Each workspace's mark, as the workspace switch shows it. */
+const WORKSPACE_ICON: Record<string, React.ComponentType<{ size?: number; weight?: 'regular' | 'fill'; className?: string }>> = {
+	Legislation: ScrollIcon,
+	Budget: CoinsIcon,
+	'Local government': BuildingsIcon,
+	Procurement: ShoppingCartIcon,
+}
+
+/** The longer guides each workspace carries, as cards that say where they open. */
 function Guides() {
-	const workspaces = [...new Set(GUIDES.map((g) => g.workspace))]
 	return (
 		<section className='border-t border-[var(--rule)] bg-[var(--paper-2)]'>
 			<div className='bb-container bb-section'>
-			<p className='bb-label'>In each workspace</p>
-			<h2 className='mt-3 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>The longer guides</h2>
-			<div className='mt-10 grid gap-x-16 gap-y-14 lg:grid-cols-2'>
-				{workspaces.map((w) => (
-					<div key={w}>
-						<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>{w}</p>
-						<ul className='mt-4'>
-							{GUIDES.filter((g) => g.workspace === w).map((g) => (
-								<li key={g.href} className='border-t border-[var(--rule)]'>
-									<a href={g.href} className='group block py-5'>
-										<span className='flex items-baseline justify-between gap-4'>
-											<span className='text-[1.15rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
-												{g.title}
-											</span>
-											<ArrowRightIcon className='size-3.5 shrink-0 transition group-hover:translate-x-0.5' weight='bold' aria-hidden='true' />
-										</span>
-										<span className='mt-2 block text-[14px] leading-6 text-[var(--ink-2)]'>{g.summary}</span>
-									</a>
-								</li>
-							))}
-						</ul>
+				<div className='grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:items-end'>
+					<div>
+						<p className='bb-label'>From the workspaces</p>
+						<h2 className='mt-3 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Go deeper</h2>
 					</div>
-				))}
-			</div>
+					<p className='text-[14px] leading-[1.7] text-[var(--ink-2)]'>
+						Each workspace carries its own long-form guides, written beside the records they explain: how Parliament makes a
+						law, how a budget moves, what each level of local government does, how public bidding works.
+					</p>
+				</div>
+				<div className='mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
+					{GUIDES.map((g) => {
+						const Icon = WORKSPACE_ICON[g.workspace] ?? ScrollIcon
+						return (
+							<a
+								key={g.href}
+								href={g.href}
+								className='group flex flex-col border border-[var(--rule)] bg-[var(--paper)] transition hover:border-[var(--ink)]'
+							>
+								<span className='block border-b border-[var(--rule)] bg-[var(--paper-2)] px-6 py-4 transition group-hover:bg-[var(--paper)]'>
+									<GuideMotif motif={g.motif} />
+								</span>
+								<span className='flex flex-1 flex-col p-6'>
+								<span className='flex items-center gap-2 text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
+									<Icon size={15} weight='fill' aria-hidden='true' className='shrink-0' />
+									{g.workspace}
+								</span>
+								<span className='mt-4 text-[1.1rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
+									{g.title}
+								</span>
+								<span className='mt-2 flex-1 text-[13.5px] leading-[1.6] text-[var(--ink-2)]'>{g.summary}</span>
+								<span className='mt-5 inline-flex items-center gap-1.5 text-[12.5px] font-semibold text-[var(--ink-3)] group-hover:text-[var(--ink)]'>
+									Open in {g.workspace}
+									<ArrowUpRightIcon className='size-3.5 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5' weight='bold' aria-hidden='true' />
+								</span>
+								</span>
+							</a>
+						)
+					})}
+				</div>
 			</div>
 		</section>
 	)
