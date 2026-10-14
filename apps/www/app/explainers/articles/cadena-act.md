@@ -1,6 +1,6 @@
 ---
 title: The CADENA Act, and whether the Bangsamoro can have its own
-summary: A national bill would put every budget record online within seven days, from budget call to audit. It stops at the regional border. Here is what it covers, where it stands, and why the Bangsamoro Parliament could pass its own.
+summary: A national bill would put every budget record online within seven days, from budget call to audit. It stops at the regional border. Here is what it covers, where it stands, and the Bangsamoro's own bill, A-Chain, filed in January.
 category: budget
 tags: transparency, cadena, budget, procurement
 date: 2026-10-14
@@ -83,7 +83,7 @@ This is the author's reading of the bill text; the IRR or a House amendment coul
 
 ## Can the Bangsamoro adopt the same?
 
-Yes. Nothing stops the Bangsamoro Parliament from enacting a regional CADENA, and in one respect it could go further than the national bill.
+Yes, and a bill to do it is already before the Parliament (see the next section). Nothing stops the Bangsamoro Parliament from enacting a regional CADENA, and in one respect it could go further than the national bill.
 
 The Bangsamoro Organic Law gives the Parliament legislative power over the region's own budgeting and administrative organisation, and gives the Bangsamoro Government supervision over its constituent provinces, cities and municipalities. A disclosure law is squarely within that. The Parliament already legislates the Bangsamoro Appropriations Act every year and has passed its own Administrative Code and Local Governance Code; a transparency act that tells ministries and offices what to post, where, and by when is the same kind of law. The national bill itself anticipates this: Section 13 lets the DICT, DBM and DILG lend hosting, training and technical help to governments that voluntarily adopt CADENA or build something like it.
 
@@ -101,7 +101,35 @@ The gap in the national bill is where the regional one could be stronger. CADENA
 
 Three things a Bangsamoro act could not change. COA remains the auditor; a regional law can require audit reports to be posted but cannot alter the audit. Procurement in the region still runs under the national procurement law and PhilGEPS; a regional act layers disclosure on top of those rules rather than replacing them. And the national block grant is released by the DBM, so the upstream release documents would live on the national portal, not the regional one. The two systems would need to link rather than duplicate, which is exactly what the interoperability clauses in CADENA are written for.
 
-The harder question is political will, not legal power. The national bill moved only after a scandal made inaction costly. Whether the Parliament takes this up before or after Congress does is a choice its members get to make, and one the public can press them on.
+The harder question is political will, not legal power. The national bill moved only after a scandal made inaction costly.
+
+## The Bangsamoro's own bill: A-Chain
+
+The Parliament already has one in front of it. [Proposed Parliament Bill No. 427](https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/Bill-No.-427-MP-Jaafar-Apollo-Mikhail-L.-Matalam.pdf), the Amanah Chain Act or "A-Chain Act", would set up a blockchain ledger for the region's own money. Its author is MP Jaafar Apollo Mikhail L. Matalam; 7 MPs co-authored it on filing and 21 are listed now. The name comes from *Amanah*, which the bill describes as "the trust placed upon public officials to manage resources on behalf of the people."
+
+Its explanatory note says it "is not a copy of any national proposal" and was written "for the political, cultural, and administrative realities of the Bangsamoro." Its stated aim is the same as CADENA's: to "track every peso from appropriation to audit."
+
+| Date | What happened |
+| --- | --- |
+| 21 Apr 2026 | Referred to the Committee on Ways and Means, where it sits |
+| 19 Jan 2026 | First reading |
+| 9 Jan 2026 | Filed as Proposed Parliament Bill No. 427 |
+
+**What it would do**
+
+- **One ledger for the region.** A-Chain would record budget allocations, releases, procurement, project milestones and disbursements, as the official public ledger of BARMM (Sections 2 and 4).
+- **Ministries and local governments alike.** Every ministry, office and agency, and every province, city, municipality and barangay, would have to connect its budget, release, disbursement, procurement, milestone and audit records (Section 5). That is the gap the national bill leaves open.
+- **Checked by more than the government.** The ledger would be verified by "validator nodes": the Bangsamoro Treasury Office, COA-BARMM, and accredited universities and civil society groups (Section 3).
+- **Releases that follow the rules automatically.** "Smart Amanah Contracts" would trigger a fund release or procurement step once set requirements are met (Section 3).
+- **A public portal.** An A-Chain Transparency Portal would publish budget use, procurement information, project locations and citizen monitoring reports in real time (Sections 4 and 8).
+- **Who runs it.** The Ministry of Finance, Budget and Management leads; the Bangsamoro ICT Office builds and maintains it; COA-BARMM uses it for audit trails (Sections 7 and 8).
+- **A pilot first.** It would start in one infrastructure ministry, one social service ministry, one province, and one city or municipality (Section 9), paid for from the Bangsamoro Appropriations Act, the block grant and the Special Development Fund (Section 10).
+
+{{figure:compare}}
+
+**What the text leaves to the rules.** The bill is 13 sections long, and several things CADENA spells out are left to the implementing rules, due within 90 days of the Act taking effect. It sets no deadline for posting a record, lists record types rather than named documents, does not define what counts as "non-confidential", and makes a missed upload an administrative liability without a criminal penalty of its own. It does not say which requirements a Smart Amanah Contract would check. None of this is unusual for a bill at committee stage; it is where public comment and the committee hearings can add detail.
+
+The Transition Authority sits until 30 October 2026, when the first elected Parliament takes office. Whether A-Chain moves is a choice its members get to make, and one the public can press them on.
 
 ## What this means for BetterBARMM
 
@@ -109,7 +137,7 @@ BetterBARMM already does, by hand and after the fact, a small part of what a Ban
 
 That caveat is the point. A portal built by a citizen can only show what the government has chosen to publish, in whatever format it chose. A disclosure law flips the default: the record is posted within seven days or someone is liable, and it arrives in a structured format that a site like this one can pull through an open API instead of scraping and retyping. CADENA even provides for accredited mirror sites run by universities, media and civil society, so that the official record does not sit on a single government server.
 
-Until either Congress or the Parliament acts, this portal will keep doing the slower version. If a Bangsamoro CADENA is ever filed, the records already gathered here are a fair preview of what it should require.
+Until either Congress or the Parliament acts, this portal will keep doing the slower version. A-Chain is filed and waiting in committee; the records already gathered here are a fair preview of what it would put online, and of what it should require.
 
 ## Sources
 
@@ -118,4 +146,5 @@ Until either Congress or the Parliament acts, this portal will keep doing the sl
 - [Coalition presses House to act on the CADENA Act](https://www.gadgetpilipinas.net/2026/10/cadena-act-coalition-letter-house/), Gadget Pilipinas, 5 October 2026
 - [Rep. De Lima files House bill adopting Senate's CADENA Act](https://bitpinas.com/regulation/de-lima-blockchain/), BitPinas, updated 22 April 2026
 - [Bam Aquino: CADENA Act, or Blockchain the Budget](https://legacy.senate.gov.ph/press_release/2025/1104_aquino1.asp), Senate press release, 4 November 2025
+- [Proposed Parliament Bill No. 427, the Amanah Chain (A-Chain) Act](https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/01/Bill-No.-427-MP-Jaafar-Apollo-Mikhail-L.-Matalam.pdf), full text; its [record on the Parliament site](https://parliament.bangsamoro.gov.ph/bta-bills-22/an-act-establishing-the-amanah-chain-a-chain-system-a-blockchain-based-platform-for-transparent-accountable-and-trustworthy-public-financial-governance-in-the-bangsamoro-autonomous-regio/), and [on BetterBARMM Legislation](https://legislation.betterbarmm.com/bills/427)
 - [Republic Act No. 11054, Bangsamoro Organic Law](https://lawphil.net/statutes/repacts/ra2018/ra_11054_2018.html)

@@ -250,8 +250,52 @@ export function Deadlines() {
 	)
 }
 
+/* ---- 5. The national bill beside the regional one ---- */
+
+const COMPARE: { row: string; national: string; regional: string }[] = [
+	{ row: 'Whose money', national: 'National agencies, GOCCs, national projects', regional: 'Bangsamoro ministries, offices and agencies' },
+	{ row: 'Local governments', national: 'Left out; only encouraged', regional: 'Provinces, cities, towns and barangays must join' },
+	{ row: 'Deadline to post', national: '7 working days', regional: 'Not set; left to the rules' },
+	{ row: 'If a record is missing', national: 'Administrative, then criminal: 6–15 years', regional: 'Administrative liability' },
+	{ row: 'Who checks the record', national: 'Accredited mirror sites', regional: 'Validator nodes: Treasury, COA-BARMM, universities, civil society' },
+	{ row: 'Who runs it', national: 'A council co-chaired by DICT and DBM', regional: 'MFBM leads; the Bangsamoro ICT Office builds it' },
+	{ row: 'How it starts', national: 'All agencies within 3 years', regional: 'A pilot: 2 ministries, 1 province, 1 town' },
+	{ row: 'Where it stands', national: 'Passed the Senate; in a House committee', regional: 'Filed Jan 2026; in Ways and Means' },
+]
+
+export function Compare() {
+	return (
+		<figure className={FIG}>
+			<p className={KICKER}>Side by side</p>
+			<p className='mt-2 text-[15px] font-bold leading-snug text-[var(--ink)]'>The national bill and the Bangsamoro&rsquo;s own.</p>
+			<div className='mt-6 overflow-x-auto'>
+				<table className='w-full min-w-[36rem] border-collapse text-left text-[13px] leading-snug'>
+					<thead>
+						<tr className='border-b border-[var(--ink)]'>
+							<th className='w-[26%] pb-2.5 pr-4' />
+							<th className='pb-2.5 pr-4 text-[11px] font-bold uppercase tracking-[0.08em] text-[var(--ink-3)]'>CADENA · national</th>
+							<th className='pb-2.5 text-[11px] font-bold uppercase tracking-[0.08em] text-[var(--accent)]'>A-Chain · Bangsamoro</th>
+						</tr>
+					</thead>
+					<tbody>
+						{COMPARE.map((c) => (
+							<tr key={c.row} className='border-b border-[var(--rule)]'>
+								<td className='py-2.5 pr-4 align-top font-semibold text-[var(--ink)]'>{c.row}</td>
+								<td className='py-2.5 pr-4 align-top text-[var(--ink-2)]'>{c.national}</td>
+								<td className='bg-[var(--paper-2)] px-3 py-2.5 align-top text-[var(--ink)]'>{c.regional}</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</div>
+			<figcaption className={CAPTION}>From HB 7712 and Proposed Parliament Bill No. 427 as filed; either could change in committee.</figcaption>
+		</figure>
+	)
+}
+
 export const CADENA_FIGURES = {
 	blocks: <Blocks />,
+	compare: <Compare />,
 	'peso-trail': <PesoTrail />,
 	coverage: <Coverage />,
 	'bill-path': <BillPath />,
