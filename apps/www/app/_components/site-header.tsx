@@ -10,7 +10,7 @@ import { EASE, Magnetic, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo,
 import { ThemeToggle } from './theme-toggle'
 
 type SiteHeaderProps = {
-	activeItem?: 'discover' | 'this-week' | 'my-area' | 'explainers' | 'jo' | 'about' | 'contribute'
+	activeItem?: 'discover' | 'this-week' | 'explainers' | 'jo' | 'about' | 'contribute'
 	/**
 	 * Sit over the page rather than on top of it.
 	 *
@@ -34,25 +34,11 @@ const discoverSections = [
 	{ label: 'Culture & Places', href: '/discover/culture-places' },
 ] as const
 
-const workspaces = [
-	{ label: 'Election', href: 'https://election.betterbarmm.com', open: true },
-	{ label: 'Legislation', href: 'https://legislation.betterbarmm.com', open: true },
-	{ label: 'Budget', href: 'https://budget.betterbarmm.com', open: true },
-	{ label: 'Local government', href: 'https://lgu.betterbarmm.com', open: true },
-	{ label: 'Procurement', href: 'https://procurement.betterbarmm.com', open: true },
-] as const
-
 const secondaryLinks = [
 	{ key: 'this-week', href: '/this-week', label: 'This week' },
-	{ key: 'my-area', href: '/my-area', label: 'My area' },
 	{ key: 'explainers', href: '/explainers', label: 'Explainers' },
 	{ key: 'about', href: '/about', label: 'About' },
 ] as const
-
-/** Marks a workspace whose site exists but whose data isn't published yet. */
-function SoonBadge() {
-	return <span className='badge badge-plain badge-idle shrink-0'>Soon</span>
-}
 
 /**
  * A menu that opens on click and closes on Escape or any pointer landing
@@ -247,26 +233,6 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 								}
 							</Menu>
 
-							<Menu label='Workspaces' width='w-[17rem]'>
-								{(close) =>
-									workspaces.map((item) =>
-										item.open ? (
-											<a key={item.href} href={item.href} onClick={close} className={menuItemClass}>
-												{item.label}
-											</a>
-										) : (
-											<span
-												key={item.href}
-												className={`${menuItemClass} nav-menu-item-idle`}
-											>
-												{item.label}
-												<SoonBadge />
-											</span>
-										),
-									)
-								}
-							</Menu>
-
 							{secondaryLinks.map((item) => (
 								<Link
 									key={item.href}
@@ -368,30 +334,6 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 										{item.label}
 									</Link>
 								))}
-							</div>
-
-							<p className='bb-label mt-7'>Workspaces</p>
-							<div className='mt-3 grid'>
-								{workspaces.map((item) =>
-									item.open ? (
-										<a
-											key={item.href}
-											href={item.href}
-											onClick={closeMenu}
-											className='border-b border-[var(--rule-soft)] py-2.5'
-										>
-											{item.label}
-										</a>
-									) : (
-										<span
-											key={item.href}
-											className='flex items-center justify-between gap-3 border-b border-[var(--rule-soft)] py-2.5 text-[var(--ink-mute)]'
-										>
-											{item.label}
-											<SoonBadge />
-										</span>
-									),
-								)}
 							</div>
 
 							<p className='bb-label mt-7'>Project</p>

@@ -13,7 +13,7 @@ const peso = (n: number) => (n >= 1e9 ? `₱${(n / 1e9).toFixed(2)}B` : n >= 1e6
 const longDate = (iso: string) => new Date(`${iso}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
 
 const PROC = 'https://procurement.betterbarmm.com'
-const WWW = 'https://betterbarmm.com'
+const LGU = 'https://lgu.betterbarmm.com'
 
 export function WorksExplorer({
 	years,
@@ -104,7 +104,7 @@ export function WorksExplorer({
 							<p className='mt-1 text-[12px] leading-5 text-[var(--ink-3)]'>
 								{`FY ${w.year} · `}
 								{w.town && w.area ? (
-									<a href={`${WWW}/my-area/${w.area}/${w.town.slug}`} className='rule-link'>
+									<a href={`${LGU}/${w.area}/${w.town.slug}`} className='rule-link'>
 										{w.town.name}, {w.areaName}
 									</a>
 								) : (

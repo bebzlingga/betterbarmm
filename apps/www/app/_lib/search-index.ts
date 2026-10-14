@@ -98,9 +98,9 @@ type Measure = { number: number; title: string; status?: string }
 
 const index: Entry[] = [
 	...lguProvinces.flatMap((p) => [
-		entry('Province', p.name, p.kind === 'Province' ? 'Province' : p.kind, `/my-area`, ''),
+		entry('Province', p.name, p.kind === 'Province' ? 'Province' : p.kind, `${LGU}/${p.slug}`, ''),
 		...p.municipalities.map((m) =>
-			entry('Town', m.name, `${m.isCity ? 'City' : 'Municipality'} · ${p.name}`, `/my-area/${p.slug}/${m.slug}`, m.alsoKnownAs ?? ''),
+			entry('Town', m.name, `${m.isCity ? 'City' : 'Municipality'} · ${p.name}`, `${LGU}/${p.slug}/${m.slug}`, m.alsoKnownAs ?? ''),
 		),
 		...p.municipalities.flatMap((m) =>
 			m.barangays.map((b) => entry('Barangay', b.name, `Barangay · ${m.name}, ${p.name}`, `${LGU}/${p.slug}/${m.slug}`)),
