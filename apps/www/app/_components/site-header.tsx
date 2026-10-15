@@ -37,8 +37,7 @@ const discoverSections = [
 const secondaryLinks = [
 	// This week is hidden for now; the page still builds at /this-week.
 	// { key: 'this-week', href: '/this-week', label: 'This week' },
-	// Latest news is built and hidden for now; the page still builds at /news.
-	// { key: 'news', href: '/news', label: 'Latest news' },
+	{ key: 'news', href: '/news', label: 'Latest news' },
 	{ key: 'explainers', href: '/explainers', label: 'Explainers' },
 	{ key: 'about', href: '/about', label: 'About' },
 ] as const
