@@ -45,6 +45,11 @@ const workspaces = [
 		href: 'https://lgu.betterbarmm.com',
 		body: 'Every province, city, town and barangay: who was elected, the money each receives, and what each has disclosed.',
 	},
+	{
+		name: 'Procurement',
+		href: 'https://procurement.betterbarmm.com',
+		body: 'Every bid notice a Bangsamoro office has posted on PhilGEPS, what it set out to buy and for how much, and who won the contract.',
+	},
 ]
 
 const principles = [
@@ -117,8 +122,8 @@ export default function AboutPage() {
 			<section className='bg-[var(--paper-2)]'>
 				<div className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 					<h2 className={H2}>What it covers</h2>
-					<p className={LEAD}>Four workspaces, each built around one part of the public record.</p>
-					<div className='mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4'>
+					<p className={LEAD}>Five workspaces, each built around one part of the public record.</p>
+					<div className='mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5'>
 						{workspaces.map((w) => (
 							<a
 								key={w.name}
