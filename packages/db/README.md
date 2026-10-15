@@ -125,3 +125,13 @@ which opens betterbarmm.com/report with the page's address filled in. Reports
 go into the `reports` table (`0005_reports.sql`): anyone may file one with the
 public key, only editors can read them. The admin's **Reports** page lists new
 ones; close each as **Fixed** (say what changed) or **Not an error** (say why).
+
+## Latest news
+
+`migrations/0006_news.sql` adds `news_items` and `news_runs`. Run it after `0005_reports.sql`.
+
+- **Schedule:** `.github/workflows/fetch-news.yml` runs `bun db:news` at 5am, 9am, 12nn, 3pm and 9pm Manila time. It uses the same `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` secrets as the updates workflows, and commits nothing.
+- **By hand:** `bun db:news manual` from a machine with the service key in `.env`, or **Run now** on the admin's News page.
+- **What is kept:** only what a feed publishes to be shared — headline, outlet, date, link and the outlet's own teaser (cut at 240 characters). Feeds are listed in `src/news.ts`; a national outlet's item is kept only when it names the region.
+- **Editors** can hide an off-topic item from the admin's News page; hidden items stay out of the public page.
+- The public page is `/news` on the www site. It is left out of the navigation for now (see `site-header.tsx`).

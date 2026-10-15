@@ -12,6 +12,7 @@ import {
   MagnifyingGlassIcon,
   MapTrifoldIcon,
   MegaphoneIcon,
+  NewspaperIcon,
   ScrollIcon,
   SquaresFourIcon,
   UsersIcon,
@@ -69,6 +70,7 @@ export function Sidebar({
           {item("/updates", "Updates", ArrowsClockwiseIcon, pending)}
           {item("/social", "Social", MegaphoneIcon, reviewPosts)}
           {item("/reports", "Reports", FlagIcon, newReports)}
+          {item("/news", "News", NewspaperIcon)}
           {item("/explainers", "Explainers", ArticleIcon)}
           {item("/activity", "Activity", ClockCounterClockwiseIcon)}
           {item("/search", "Search", MagnifyingGlassIcon)}

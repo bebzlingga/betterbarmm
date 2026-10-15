@@ -10,7 +10,7 @@ import { EASE, Magnetic, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo,
 import { ThemeToggle } from './theme-toggle'
 
 type SiteHeaderProps = {
-	activeItem?: 'discover' | 'this-week' | 'explainers' | 'jo' | 'about' | 'contribute'
+	activeItem?: 'discover' | 'this-week' | 'news' | 'explainers' | 'jo' | 'about' | 'contribute'
 	/**
 	 * Sit over the page rather than on top of it.
 	 *
@@ -37,6 +37,8 @@ const discoverSections = [
 const secondaryLinks = [
 	// This week is hidden for now; the page still builds at /this-week.
 	// { key: 'this-week', href: '/this-week', label: 'This week' },
+	// Latest news is built and hidden for now; the page still builds at /news.
+	// { key: 'news', href: '/news', label: 'Latest news' },
 	{ key: 'explainers', href: '/explainers', label: 'Explainers' },
 	{ key: 'about', href: '/about', label: 'About' },
 ] as const

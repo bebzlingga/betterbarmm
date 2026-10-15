@@ -154,3 +154,19 @@ export async function getPublishedExplainer(slug: string): Promise<Explainer | n
 	if (error) throw new Error(`Could not load explainer: ${error.message}`)
 	return (data as Explainer | null) ?? null
 }
+
+export { NEWS_FEEDS, runNewsFetch, type NewsItem, type NewsRun } from './news'
+
+/** The latest news shown on the public site, newest first. */
+export async function listNews(limit = 200): Promise<import('./news').NewsItem[]> {
+	const db = createPublicClient()
+	if (!db) return []
+	const { data, error } = await db
+		.from('news_items')
+		.select('*')
+		.eq('hidden', false)
+		.order('published_at', { ascending: false, nullsFirst: false })
+		.limit(limit)
+	if (error) throw new Error(`Could not load news: ${error.message}`)
+	return (data ?? []) as import('./news').NewsItem[]
+}
