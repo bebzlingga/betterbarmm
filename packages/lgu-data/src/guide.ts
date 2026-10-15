@@ -171,7 +171,7 @@ export const lguCounts = {
 	sulnote:
 		'These totals are BARMM without Sulu — 108 units rather than the 127 PSA counts, because PSA’s 2024 census composition still includes Sulu and the Supreme Court has since excluded it. A figure you find elsewhere for “BARMM” will usually be the larger one.',
 	reconcileNote:
-		'PSA puts BARMM at 5,691,583 people on July 1, 2024. This directory shows 4,330,783, and the whole of the difference is accounted for: Sulu, which the Supreme Court removed from the region, is roughly 1.15 million, and the Special Geographic Area — whose 8 municipalities were ratified in 2024 and have no census figures of their own yet — is roughly 215,000. Cotabato City is counted once here, not twice: PSA files it inside Maguindanao del Norte, so the provincial figure on that page has the city taken out of it.',
+		'PSA puts BARMM at 5,691,583 people on July 1, 2024. This directory shows 4,545,486, and the difference is Sulu, which the Supreme Court removed from the region: roughly 1.15 million people. The Special Geographic Area is counted here; its 8 municipalities had 214,703. Cotabato City is counted once here, not twice: PSA files it inside Maguindanao del Norte, so the provincial figure on that page has the city taken out of it.',
 }
 
 export type LguLookup = {

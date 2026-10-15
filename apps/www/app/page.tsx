@@ -239,7 +239,7 @@ export default function HomePage() {
 							},
 							{
 								/* Millions, to two places, rather than all seven digits. At
-								   display size 4,330,783 is a wall of numerals that nobody reads
+								   display size 4,545,486 is a wall of numerals that nobody reads
 								   as a quantity — the eye counts the commas instead. The exact
 								   figure is not lost: it is what the note underneath compares
 								   against PSA's own, which is the one place on the page a reader
@@ -248,10 +248,9 @@ export default function HomePage() {
 								decimals: 2,
 								suffix: ' M',
 								label: 'People',
-								// PSA's own BARMM total is 5,691,583 and counts both Sulu, which the
-								// Supreme Court removed from the region, and the Special Geographic
-								// Area, whose municipalities have no census figures of their own yet.
-								note: `At the ${lguCounts.populationAsOf} census, excluding Sulu and the Special Geographic Area. PSA counts both, and puts the region at ${lguCounts.population}.`,
+								// PSA's own BARMM total is 5,691,583 and counts Sulu, which the
+								// Supreme Court removed from the region.
+								note: `At the ${lguCounts.populationAsOf} census, excluding Sulu, which the Supreme Court removed from the region. PSA counts it, and puts the region at ${lguCounts.population}.`,
 							},
 						].map((stat) => (
 							<StaggerItem key={stat.label}>

@@ -28,8 +28,9 @@ import dataset from '../../../datasets/lgu/barmm-lgu.json'
 
    · The Special Geographic Area's 8 municipalities were ratified in
      April 2024 and are newer than the PSGC edition underneath this,
-     so they are transcribed from the Parliament and PSA announcements
-     and carry no census figures of their own yet.
+     so they are transcribed from the Parliament and PSA announcements.
+     Their 2024 census figures (214,703 in all) are PSA's, as republished
+     by citypopulation.de, which lists the area municipality by municipality.
 
    · Province land area is the province's own published figure and is
      never summed from its municipalities. Philippine municipal areas
