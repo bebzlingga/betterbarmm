@@ -37,16 +37,57 @@ export type NewsRun = {
 
 type Feed = { name: string; url: string; source?: string; regional?: boolean }
 
+const google = (query: string, edition: 'PH' | 'US' = 'PH') =>
+	`https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=en-${edition}&gl=${edition}&ceid=${edition}:en`
+
+const ABOUT = '(BARMM OR Bangsamoro OR Cotabato OR Maguindanao OR Marawi OR Basilan OR Tawi-Tawi)'
+
 export const NEWS_FEEDS: Feed[] = [
+	// The region's own offices: everything they post is about the region.
 	{ name: 'Bangsamoro Government', url: 'https://bangsamoro.gov.ph/feed/', source: 'Bangsamoro Government', regional: true },
 	{ name: 'Bangsamoro Parliament', url: 'https://parliament.bangsamoro.gov.ph/feed/', source: 'Bangsamoro Parliament', regional: true },
+	// Philippine outlets with feeds of their own.
 	{ name: 'Rappler', url: 'https://www.rappler.com/feed/', source: 'Rappler' },
 	{ name: 'Inquirer', url: 'https://newsinfo.inquirer.net/feed', source: 'Inquirer' },
+	{ name: 'Inquirer Regions', url: 'https://newsinfo.inquirer.net/category/inquirer-headlines/regions/feed', source: 'Inquirer' },
 	{ name: 'Philstar', url: 'https://www.philstar.com/rss/nation', source: 'Philstar' },
+	{ name: 'Philstar Headlines', url: 'https://www.philstar.com/rss/headlines', source: 'Philstar' },
 	{ name: 'GMA Regions', url: 'https://data.gmanetwork.com/gno/rss/news/regions/feed.xml', source: 'GMA News' },
-	// Picks up outlets without a feed of their own (PNA, MindaNews, SunStar…), each item naming its outlet.
-	{ name: 'Google News', url: 'https://news.google.com/rss/search?q=BARMM+OR+Bangsamoro&hl=en-PH&gl=PH&ceid=PH:en' },
+	{ name: 'Manila Times', url: 'https://www.manilatimes.net/news/regions/feed', source: 'The Manila Times' },
+	{ name: 'BusinessWorld', url: 'https://www.bworldonline.com/feed/', source: 'BusinessWorld' },
+	// Outlets that turn away feed readers (ABS-CBN, Manila Bulletin, PNA, MindaNews,
+	// SunStar, BusinessMirror, Daily Tribune), read through Google News's index of them.
+	{
+		name: 'Google News (PH outlets)',
+		url: google(
+			`${ABOUT} (site:news.abs-cbn.com OR site:mb.com.ph OR site:pna.gov.ph OR site:mindanews.com OR site:sunstar.com.ph OR site:businessmirror.com.ph OR site:tribune.net.ph OR site:pia.gov.ph OR site:ptvnews.ph)`,
+		),
+	},
+	{ name: 'Google News', url: google('BARMM OR Bangsamoro') },
+	// International coverage.
+	{ name: 'Al Jazeera', url: 'https://www.aljazeera.com/xml/rss/all.xml', source: 'Al Jazeera' },
+	{ name: 'BBC Asia', url: 'https://feeds.bbci.co.uk/news/world/asia/rss.xml', source: 'BBC News' },
+	{ name: 'The Diplomat', url: 'https://thediplomat.com/feed/', source: 'The Diplomat' },
+	{ name: 'UCA News', url: 'https://www.ucanews.com/rss/news', source: 'UCA News' },
+	{ name: 'Google News (international)', url: google('Bangsamoro OR BARMM OR "Mindanao autonomy"', 'US') },
 ]
+
+/** Not news outlets: posts and reposts that Google News sometimes lists. */
+const NOT_OUTLETS = /^(facebook|youtube|x|twitter|instagram|tiktok|linkedin|pressreader|msn|yahoo|scribd)\b/i
+
+/** Outlet names as readers know them. */
+const OUTLET_NAMES: Record<string, string> = {
+	'SunStar Publishing Inc.': 'SunStar',
+	'Inquirer.net': 'Inquirer',
+	'Philstar.com': 'Philstar',
+	'GMA Network': 'GMA News',
+	'ABS-CBN News': 'ABS-CBN',
+	'BARMM Official Website': 'Bangsamoro Government',
+	'ptvnews.ph': 'PTV News',
+	'Philippine News Agency': 'PNA',
+	'BusinessWorld Online': 'BusinessWorld',
+	'The Diplomat – Asia-Pacific Current Affairs Magazine': 'The Diplomat',
+}
 
 /** The region named in a headline or teaser. Sulu left the region in 2024 and is not on the list. */
 const ABOUT_THE_REGION =
@@ -87,9 +128,10 @@ export async function readFeed(feed: Feed): Promise<FetchedItem[]> {
 		if (!title || !/^https?:\/\//.test(url)) continue
 		// Google News names the outlet in <source> and appends it to the headline.
 		const named = text(tag(item, 'source'))
-		const source = feed.source ?? (named || feed.name)
+		if (named && NOT_OUTLETS.test(named)) continue
+		const source = feed.source ?? (OUTLET_NAMES[named] ?? (named || feed.name))
 		if (named && title.endsWith(` - ${named}`)) title = title.slice(0, -(named.length + 3))
-		const summary = feed.name === 'Google News' ? '' : teaser(text(tag(item, 'description')))
+		const summary = feed.name.startsWith('Google News') ? '' : teaser(text(tag(item, 'description')))
 		if (!feed.regional && !ABOUT_THE_REGION.test(`${title} ${summary}`)) continue
 		const date = new Date(text(tag(item, 'pubDate')) || text(tag(item, 'dc:date')))
 		out.push({ url, title, source, summary, feed: feed.name, published_at: Number.isNaN(date.getTime()) ? null : date.toISOString() })

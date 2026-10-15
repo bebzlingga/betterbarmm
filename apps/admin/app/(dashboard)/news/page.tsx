@@ -22,7 +22,7 @@ export default async function NewsPage() {
     <div>
       <PageHeader
         title="News"
-        description={`Headlines about the Bangsamoro from ${NEWS_FEEDS.length} feeds, read ${SCHEDULE}. Only the headline, outlet, date, link and the outlet's own teaser are kept. Hide anything off-topic.`}
+        description={`Headlines about the Bangsamoro from ${NEWS_FEEDS.length} feeds, Philippine and international, read ${SCHEDULE}. Only the headline, outlet, date, link and the outlet's own teaser are kept. Hide anything off-topic.`}
       />
 
       <section className="panel mb-6">
