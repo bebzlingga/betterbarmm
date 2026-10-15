@@ -146,7 +146,7 @@ export default function AboutPage() {
 			<section className='bb-container bb-section'>
 				<h2 className={H2}>How it works</h2>
 				<p className={LEAD}>Four rules every page is held to.</p>
-				<div className='mt-10 grid gap-x-16 gap-y-10 sm:grid-cols-2'>
+				<div className='mt-10 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-4'>
 					{principles.map((p, i) => (
 						<div key={p.title} className='border-t border-[var(--rule)] pt-6'>
 							<p className='num text-[13px] font-semibold text-[var(--brass)]'>{String(i + 1).padStart(2, '0')}</p>
