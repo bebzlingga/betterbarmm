@@ -123,7 +123,7 @@ export default function AboutPage() {
 				<div className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 					<h2 className={H2}>What it covers</h2>
 					<p className={LEAD}>Five workspaces, each built around one part of the public record.</p>
-					<div className='mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5'>
+					<div className='mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4'>
 						{workspaces.map((w) => (
 							<a
 								key={w.name}
