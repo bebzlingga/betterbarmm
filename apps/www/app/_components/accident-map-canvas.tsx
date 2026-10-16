@@ -112,10 +112,13 @@ function Layers({
 		if (!map || !isLoaded) return
 		const dark = resolvedTheme === 'dark'
 		if (!map.getSource(REGION)) map.addSource(REGION, { type: 'geojson', data: outline as never })
+		// The wash goes in under the basemap's roads and place names — it is part of the ground, not a sheet over it —
+		// while the heat and the dots, added after, sit on top of everything.
+		const ground = map.getStyle().layers?.find((layer) => layer.type === 'symbol' || layer.type === 'line')?.id
 		if (!map.getLayer(REGION_FILL))
-			map.addLayer({ id: REGION_FILL, type: 'fill', source: REGION, paint: { 'fill-color': dark ? '#e0604c' : '#8b1e1a', 'fill-opacity': dark ? 0.06 : 0.035 } })
+			map.addLayer({ id: REGION_FILL, type: 'fill', source: REGION, paint: { 'fill-color': dark ? '#e0604c' : '#8b1e1a', 'fill-opacity': dark ? 0.06 : 0.035 } }, ground)
 		if (!map.getLayer(REGION_LINE))
-			map.addLayer({ id: REGION_LINE, type: 'line', source: REGION, paint: { 'line-color': dark ? '#e0604c' : '#8b1e1a', 'line-opacity': 0.55, 'line-width': ['interpolate', ['linear'], ['zoom'], 5, 0.6, 10, 1.4] } })
+			map.addLayer({ id: REGION_LINE, type: 'line', source: REGION, paint: { 'line-color': dark ? '#e0604c' : '#8b1e1a', 'line-opacity': 0.55, 'line-width': ['interpolate', ['linear'], ['zoom'], 5, 0.6, 10, 1.4] } }, ground)
 		if (!map.getSource(SRC)) map.addSource(SRC, { type: 'geojson', data: latest.current })
 		if (!map.getLayer(HEAT))
 			map.addLayer({
