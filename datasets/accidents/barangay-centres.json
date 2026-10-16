@@ -111,6 +111,54 @@
    "matched": "Magaslong, Datu Piang, Maguindanao del Sur, Bangsamoro, 9607, Philippines"
   },
   "Poblacion|Shariff Aguak|Maguindanao del Sur": null,
-  "Mother Poblacion|Shariff Aguak|Maguindanao del Sur": null
+  "Mother Poblacion|Shariff Aguak|Maguindanao del Sur": null,
+  "Awang|Datu Odin Sinsuat|Maguindanao del Norte": {
+   "lat": 7.1591,
+   "lon": 124.2221,
+   "matched": "Awang, Maguindanao del Norte, Bangsamoro, 9601, Philippines"
+  },
+  "Makir|Datu Odin Sinsuat|Maguindanao del Norte": null,
+  "Dugaa|Tuburan|Basilan": {
+   "lat": 6.6141,
+   "lon": 122.2026,
+   "matched": "Duga-a, Tuburan, Basilan, Bangsamoro, Philippines"
+  },
+  "Sangbay Big Island|Hadji Muhtamad|Basilan": null,
+  "Romongaob|South Upi|Maguindanao del Sur": null,
+  "Narra|Balabagan|Lanao del Sur": null,
+  "Nalinan|Sultan Kudarat|Maguindanao del Norte": {
+   "lat": 7.1982,
+   "lon": 124.293,
+   "matched": "Nalinan, Sultan Kudarat, Maguindanao del Norte, Bangsamoro, 9605, Philippines"
+  },
+  "Malinis|Lamitan|Basilan": null,
+  "Tuka|Mamasapano|Maguindanao del Sur": {
+   "lat": 6.9096,
+   "lon": 124.5323,
+   "matched": "Tuka, Mamasapano, Maguindanao del Sur, Bangsamoro, 9608, Philippines"
+  },
+  "Sabala Manao Proper|Marawi|Lanao del Sur": null,
+  "Kapinpilan|Ampatuan|Maguindanao del Sur": null,
+  "Meta|Datu Unsay|Maguindanao del Sur": null,
+  "Kabengi|Shariff Aguak|Maguindanao del Sur": null,
+  "Kabengi|Datu Saudi-Ampatuan|Maguindanao del Sur": null,
+  "Pagagawan|Pagagawan|Maguindanao del Sur": {
+   "lat": 7.1019,
+   "lon": 124.7643,
+   "matched": "Pagagawan, Datu Montawal, Maguindanao del Sur, Bangsamoro, 9631, Philippines"
+  },
+  "Malangit|Pandag|Maguindanao del Sur": null,
+  "Paglamatan|Saguiaran|Lanao del Sur": null,
+  "17 nautical miles southeast of the Turtle Islands|Turtle Islands|Tawi-Tawi": null,
+  "waters off Maluso|Maluso|Basilan": null,
+  "between Mantabuan and Latuan islands|Sapa-Sapa|Tawi-Tawi": null,
+  "Rosary Heights IV|Cotabato City|Cotabato City": {
+   "lat": 7.2134,
+   "lon": 124.2474,
+   "matched": "Rosary Heights 4, Poblacion, Kabuntalan, Cotabato City, Bangsamoro, 9600, Philippines"
+  },
+  "about 46 nautical miles east of Taganak Island|Turtle Islands|Tawi-Tawi": null,
+  "sea border of Simunul and Bongao|Simunul|Tawi-Tawi": null,
+  "Panoroganan|Marawi|Lanao del Sur": null
  }
 }

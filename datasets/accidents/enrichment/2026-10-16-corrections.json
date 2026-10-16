@@ -1,0 +1,117 @@
+[
+ {
+  "id": "2025-01-al-barka-shooting",
+  "municipality": "Sumisip",
+  "note": "Rappler and Inquirer place the 22 January 2025 ambush in Sumisip, not Al-Barka."
+ },
+ {
+  "id": "2025-04-buluan-shooting",
+  "municipality": "Datu Anggal Midtimbang",
+  "deaths": 0,
+  "note": "SunStar and Manila Bulletin place the ambush in Datu Anggal Midtimbang; Buluan was the town placed under Comelec control. Nobody died."
+ },
+ {
+  "id": "2025-11-sultan-kudarat-shooting",
+  "drop": true,
+  "note": "GMA places the ambush in Tacurong City, Sultan Kudarat province, outside the region."
+ },
+ {
+  "id": "2025-12-maguindanao-del-sur-shooting",
+  "injured": 1,
+  "note": "Manila Bulletin: one councilor wounded, not two."
+ },
+ {
+  "id": "2026-01-shariff-aguak-shooting",
+  "drop": true,
+  "note": "The same 25 January 2026 convoy ambush as 2026-01-25-shariff-aguak-shooting."
+ },
+ {
+  "id": "2026-03-shariff-aguak-shooting",
+  "drop": true,
+  "note": "The DZRH article is dated 26 January 2026 and describes the 25 January ambush; Google News misdated it."
+ },
+ {
+  "id": "2026-01-25-shariff-aguak-shooting",
+  "injured": 2,
+  "sources": [
+   {
+    "outlet": "GMA Network",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWE1HZ1ZkUGJoUXFYX3lRSXZzVFlXc19OM3NsandkclVONkFKYUZGenRSUXdhaTNDbzN3Qmg3clBIbXpjYnVZQ3ZmVWs4aU1Pb1hyX3dUcnUtdm5CejdZSDZlWFQ4cU9tWV9reFpEVWxKakNhbHp3LVoyUmx1T3hUZnlBT2J3N1VkUEMyZHZRa1ZhcmkyNTlaSlJhbnNBdjFWRmE3bkZEVnhJdlM3TVVzTmZ3V0xsSzNCajl5Y2plSEtnS3c4d3ktdFhtVdIB0AFBVV95cUxPMVkwYlRYbHlWaHpBV25IR3ZCWnBudEZpbUtfeGNPTFo4R1BQWW5qNVlrcW13TXMxSWhNWjhKWDF0VVljb3FtR3FYdldsMERZa2lDRVBqRzVIS1IyUWlSVnRWUXVBRm9CVUhaZVFZUlVWWXBTQzdNT3F4WldkOEU2NlllaWhaSV9fTUZUTW9wSmJDbWMxVWh6OHExeGpEaG1zOEo3TkpmMWtNR3ItWXg4VWp2ZUJFeXE5bXY2S3pGT1Y5X1BqV2ltQ19id29rMDhi?oc=5",
+    "title": "Sara Duterte calls for deeper probe into Shariff Aguak mayor ambush",
+    "date": "2026-01-27"
+   },
+   {
+    "outlet": "GMA Network",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOOGxqTmNQMGJvWUNiTkdUN2JicFZ2TDh4bHU0N2JBMXNwbGZRa2xaWEotZ1BSLTlhVklZVTE3QXFhZElQUFJCX0hFdnVDUWZkTmJCdlhsa3NzYWkzc0FwNDFlMTdRUGhMTkhUSTVUM0xOZ1Jzcm96eHQ1RDlNUExzeGxDenFvRXRraTk5dTdwTFlLa2JrVGl2cVdGOGFHYVpqTGp2a0VOb2F1ekM0Q1d5dGlPaDZTOExNR2c?oc=5",
+    "title": "Shariff Aguak mayor says powerful people may be behind ambush",
+    "date": "2026-01-27"
+   },
+   {
+    "outlet": "Inquirer",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNHVMa29ObnNaQV9wY0lwSGVfcVRTX3JZd0xWdGd3QXNJcGt0NnlkdEdNVGFPQmdIZFRCOG5yT09XNXN1QzdEMVBuU2ZxY0x0eUVNei1FTHVtMmFrbXgtYVpBS2FvMFRNZ2VnR1lRbnIyN3VkNm1sWEU4a0xYMXYyU212SGh6VE4zWm9XS2ZQTUdtc3JRYUZzZk9R0gGfAUFVX3lxTE1YcEJWak1JNXotLW1ubkNXeEJ5WVlxVl9JNXZKcE8wbEVBUXVEMjRJZGlfTXRrSFU2YkkxQUdHT0xsODQ1ZE1NTW1mYTNOc1BjVVRnLS1TaDNoSkNoY1FGVWdxRXpoR1R2bGlzeXZNNVNJSEFKNXUyTWo2QWp0RURDY2RVU3NXMnNJUXpkWnBKaG42UEVVSDIzZk1NZ3NZbw?oc=5",
+    "title": "Cops probe political tension amid Maguindanao mayor ambush",
+    "date": "2026-01-28"
+   },
+   {
+    "outlet": "Philstar",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZHZCVW05eXRwV0thUm9uRGt2bkt5S0tGR0VRejRLV3hrRU00RDBHZHJ5V0FPMlB6WlJfU2stZWhRZFhZc0ItSkllWl84TFd6aGdFNjJVdzFtVkNITTUzM0JFTGJIOUJNMWRRTVZQcmxTSlZ0bFdZT3NvN0hDd3MwTHFuQ3Bsc29BVlgwNFdxQXI5c3pjMzBWdFdObllJYnA2aUHSAagBQVVfeXFMUHBkMllFT3k1MXNqSzR6MHNUUW9TbGo4ejNzVE9GekdUU3VubTgxWm53TDdGU0hpaTk3Zl9zQloyRnJwT3haX2xqaTVPM2o3QmVmU2xZUm8ydTRrU2l5dzYwY29kQ3JZNFlNckx6Vzhua2J6WG40UElZcURzc2YtZHQyX0RJazctRm5OekZ2ZHVBajBYQTFSa3ZydDVsN1FBS0hmdnVoMWIw?oc=5",
+    "title": "Politics, revenge eyed in Shariff Aguak mayor’s ambush",
+    "date": "2026-01-28"
+   },
+   {
+    "outlet": "Philstar",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbUlpNGJyZWRmZm90R0tfeEVjTWE5YUo5ekVZYWpGMWlkbFc0NFJ4ZE8zT19vU1E3dGNRY3RpczJkV0RZYUtpZXR2SHQzbzJacTg4dTZueGttZThFc1RjZU1ibnlOZUpxaVVWcExQRjVHWXJ1RWJsRFFDeHhQNkhFSmNwUG5taWvSAY4BQVVfeXFMTm83VmdyY1d4Uldzd3lmSnZGSTZHdVFoU3l0Zkp3SWpGQWxfZi1JQmxjcE1vR0xJblplUUNxUWpwQXR1SjZYWVJFSGVyZFdOajI3LW1qSHBSeGZNSWlJaVRDWHBkbDZSUWNtWV9pM25YMDJTQlpTT1diZnltLTVmSGRLcWI3S1plU2JPZWtEQQ?oc=5",
+    "title": "EDITORIAL - Ambush in Maguindanao",
+    "date": "2026-01-28"
+   },
+   {
+    "outlet": "Inquirer",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZ0Z5ZXoxajB4bVJtM0VwNlF0NXNyeDdneHotOUNIcEZsMlc1LXNoaEd0X1NERGdBbi1ZS3NnNXR0Sk5zQWVXZVNNeTRCVXdGZVZ5alhQejU2NEREaDU2TW00VTA0d29KdUpnZUhhcExzdV94TXAwVDJwWTRicFB6eHBTeFRrcXlmdHItTkNDQTBtdkV0RGROczktNkotWlZGOGtydFllQ3hyQdIBrwFBVV95cUxOYTVfWmVRcFNGNHhVODdsQmZFSmFOTFNWMzBzT2RRUXJDVk5odmFQWi1qT0RfRHBzdksyWC15RXpuN1J4YlVDQ3F5dTNpcTYzNEQzTmZWdFZrdkhVT2lvRnhISE5vUEpIWXVfRmU5NVlmTE5RdUJFVW1pZnNQVVZjS2J4dVVhcDNqTFdfY1JoclNNOUs5M2ItR0VmbXNhQVl0M0U1MEp4b0FBMElSU0JZ?oc=5",
+    "title": "In Maguindanao, families flee as Army hunts suspects in mayor’s ambush",
+    "date": "2026-01-29"
+   },
+   {
+    "outlet": "Facebook",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQLXcxUkt5Ymxjd0VnNzJqa0l1MTRZWEVJQzd0dE9Ob2sxTktPZGsxOFRNMFExZFhZWC1CeTFaZTY4aUUzQjFaMDRZbE53eTY5N29oaE5aS1JFZ29DX1pzWVhYQ0VFVTc0cU03bnhQc2NsWk51ckZ5ODF2RkJ1eWYtSVFNbndIWHRTLXRON19GYm5fZEptVW9EcTdtSlViaGZOR0MwTGNzWUhOLUdtVVAxcmdVUkJXQWY3RGZpXzRnWEZuSTlxSDNrTUVzc1R0RUdPSkw0?oc=5",
+    "title": "An individual who acted as a lookout and allegedly knows the mastermind behind the ambush of the mayor of Shariff Aguak has surrendered and is now under the custody of the National Bureau of Investigation, an official said on Monday. Jeremy Lotoc, NBI re",
+    "date": "2026-03-16"
+   },
+   {
+    "outlet": "GMA Network",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOQ2dQZGx1WnZzT2Foak1aUFktVFVJZWJxZVlfRUFWdUJvTUtEbmpLd2xpN3JBdWp1cEI4cEI2cVk1R3hxT3lITjA1WEdsTjZQOFFHaXYwWnQ3RU1JWjEzZmhiY2ZBQ29TOXZ3OGhNQ2hMUWNuWVRsVU53alVIU3hlYVlJV2tocmJqN252eThvaHotM0R1SUlEamZDSVE3VmV2WFVFNktQR3A1cy1TakpSd25QdjBKTm9OWnF6OWdhNEtreVJoV09SRnhzSEY4emREZmdlNktnY3fSAd4BQVVfeXFMTmZoLVRrUzJ5ZkQxX01DZ0Z4aTBXa2lRTlNHajVxLUR3V3ZnRkJZUDl4UGd1UlNOc3ZpTmVfellpNGZnOVlpRmd5WDQyVFBDek9INEF6cy1JcGNTcU9TWVNNNk4zMTZUeVE1ZE5WclRuZVdubmVEc0FVeUFzS2o3aF9LVkV1WDFySUpqTGNZUjAyLUh3WXY0VDVPMUFpRWJYallraU1MQk9FZG1VSUhRUktXWk1jRWtyTnpDaUZHdFV5T3FTSVNVcTYyOGFvOUkyeHBmQnVYX1BCWkRjZ2dB?oc=5",
+    "title": "Shariff Aguak mayor hopes for speedy, favorable ruling on RPG ambush complaint",
+    "date": "2026-05-18"
+   },
+   {
+    "outlet": "ABS-CBN",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaV9oRG1JMFpHZlRkS0YtOUp4bzFBUHFhb0s5V3dCZ0pZOFZEZmdkV1plcl84bGNzWl9NM0NCMGo2VVgxWHpiMkFwei05ZFhzc3ZteWtBRjZfXzIwRl9VWEZ2ejFpcmtQRHhjNmp4ejRpNGxBN1hyVGU3dEJUWW1TZGFJeE9MZ2xfTFRDVlFxN3VQczBFdXlucUlkM05MTF9zcDFJNUhjMUgyQlpyZWZ2eHhiMkw2WnNvWjJ3bHB5VGRfT01Xd05wcjJ3?oc=5",
+    "title": "Police present RPG as evidence in DOJ probe into ambush of Shariff Aguak mayor",
+    "date": "2026-05-26"
+   },
+   {
+    "outlet": "DZRH",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSHFYYXF6aTZvN1JMcDhRZzRGcG52TFhhXzRDanp2N2daWTZXTU1LaHlNdzkxcFY0VVVXVEZaZ3dmVGVlLWNkck4zMEFLdUFJVVJxdTB4Wm93WVA3LTlfajhWLWtEcmJNOXdhanVINlgxYkZ6MmJDSGcxb1hIemh2dWpac0dzdGtnQmp2Q3RxVjdDLTg?oc=5",
+    "title": "Bangsamoro Government condemns ambush on Shariff Aguak Mayor",
+    "date": "2026-03-22"
+   },
+   {
+    "outlet": "DZRH",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMWhUcHhoa3dVTVkwUFhMSVBENEhpV1ZWc2pQN1Q4Z2U3TUJoN2VfQjM5MlpLelJQUjVFYzVOTFJUZDExX09HS2NyVXpSOFhfOWEtcjVDZ0tmUV9WdWRBeFZWSE9KcTVxX2ZSMTRtLVU4S192US1oNlBPbzlIQnhicE5yTEtad2hEVnFzUXhsVUNaZF9TNENaakhfUlF2Wk5VSFZvM04tMDZXOW96MThfWXBrcXZGbmZCd3IwbGFXWUMzMWUyZXQwTlg4ODk?oc=5",
+    "title": "PNP forms special task force after ambush on Shariff Aguak mayor; ‘No wild west in Maguindanao,’ says chief",
+    "date": "2026-03-26"
+   },
+   {
+    "outlet": "DZRH",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQaXN5S0p4WGtvQzJwd3k1XzNKUkxaTy0tcjlqSjNma3A0YTc3SF9nMnZUYUdmeWRIUmczaXpUUC1UZHo5R05Vek9PTF9BWGo1Z2taamdVTGRRSDNsWmlMZ0VaXzB0bm9JZFpfOTU1a1A0c1RlblBKeEVBQTBlanVZWTJ5eGFHUzBQWG5tSUtYaURtZ2tsSF9Z?oc=5",
+    "title": "Marcos condemns ambush on Maguindanao del Sur town mayor — Palace",
+    "date": "2026-03-27"
+   }
+  ],
+  "note": "Two escorts wounded; the sources of the two duplicate records folded in."
+ },
+ {
+  "id": "2026-02-17-shariff-aguak-shooting",
+  "municipality": "Datu Saudi-Ampatuan",
+  "note": "GMA, Manila Bulletin and Inquirer place the ambush in Datu Saudi Ampatuan, not Shariff Aguak."
+ }
+]

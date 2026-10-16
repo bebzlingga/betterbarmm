@@ -1,0 +1,362 @@
+[
+ {
+  "id": "2025-01-al-barka-shooting",
+  "date": "2025-01-22",
+  "deaths": 2,
+  "injured": 12,
+  "vehicles": ["military truck"],
+  "summary": "Two Army intelligence officers were killed and 12 soldiers wounded when armed men, allegedly backed by MILF fighters, ambushed Army troops on their way to escort a UNDP team in Sumisip, Basilan, on January 22, 2025; a KM450 military truck was burned. Early reports put the dead at four. The MILF and the military gave conflicting accounts and the MILF opened a probe into a possible breach of the peace deal.",
+  "sources": [
+   {"outlet": "Rappler", "url": "https://www.rappler.com/philippines/mindanao/basilan-ambush-troops-securing-un-mission-january-22-2025/", "title": "At least 4 dead, 12 hurt in Basilan ambush vs troops securing UN mission", "date": "2025-01-22"},
+   {"outlet": "Inquirer", "url": "https://newsinfo.inquirer.net/2027677/in-basilan-2-dead-as-milf-fighters-ambush-soldiers", "title": "In Basilan, 2 dead as MILF fighters ambush soldiers", "date": "2025-01-24"}
+  ],
+  "note": "Rappler and Inquirer place the ambush in Sumisip, not Al-Barka.",
+  "confidence": "likely"
+ },
+ {
+  "id": "2025-02-24-datu-piang-shooting",
+  "summary": "Reelectionist Datu Piang Vice Mayor Mohammad Omar Samama was shot in the abdomen by an unidentified gunman while speaking at a medical mission at an evacuation site in Barangay Magaslong, Datu Piang, Maguindanao del Sur, on the morning of Monday, February 24, 2025. He was taken to a hospital in Cotabato City; police said the attack was possibly election-related and later identified a person of interest.",
+  "sources": [
+   {"outlet": "Inquirer", "url": "https://newsinfo.inquirer.net/?p=2037676", "title": "Maguindanao del Sur vice mayor survives slay try", "date": "2025-02-24"}
+  ],
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-03-maguindanao-del-norte-shooting",
+  "date": "2025-03-17",
+  "municipality": "Datu Odin Sinsuat",
+  "barangay": "Awang",
+  "deaths": 1,
+  "injured": 1,
+  "vehicles": ["motorcycle"],
+  "summary": "Junisa Kimamao, 27, a certified public accountant and lawyer, was killed and her fiance Ibrahim Pendatu, a lawyer, was critically wounded when two gunmen on a motorcycle fired on their vehicle on the highway in Barangay Awang, Datu Odin Sinsuat, Maguindanao del Norte, at about 3:15 p.m. on Monday, March 17, 2025. Kimamao was declared dead on arrival at the hospital; the couple were to wed in April. The IBP Cotabato chapter condemned the attack.",
+  "sources": [
+   {"outlet": "Davao Today", "url": "https://davaotoday.com/human-rights/lawyer-killed-fiance-wounded-in-maguindanao-del-norte/", "title": "Ambush that killed lawyer and wounded fiancé in Maguindanao del Norte condemned", "date": "2025-03-19"}
+  ],
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-03-maguindanao-del-sur-shooting",
+  "municipality": "Buluan",
+  "vehicles": ["pickup truck", "motorcycle"],
+  "summary": "A manager of an agri-machinery company was killed and his wife wounded when suspects on motorcycles fired on their pickup truck along the national highway in Buluan, Maguindanao del Sur, in March 2025. The husband was declared dead on arrival at the hospital and the wife was under observation; both were residents of Mlang, Cotabato. The motive was under investigation.",
+  "sources": [
+   {"outlet": "GMA Regional TV", "url": "https://www.gmanetwork.com/regionaltv/news/107259/company-exec-killed-wife-hurt-in-maguindanao-del-sur-shooting/story", "title": "Company exec killed, wife hurt in Maguindanao del Sur shooting", "date": "2025-03-25"}
+  ],
+  "image": {"url": "https://images.gmanews.tv/regionaltv2023/content_images/article/ambush-for-site_2025_03_25_09_31_12.jpeg", "outlet": "GMA Regional TV", "href": "https://www.gmanetwork.com/regionaltv/news/107259/company-exec-killed-wife-hurt-in-maguindanao-del-sur-shooting/story"},
+  "confidence": "likely"
+ },
+ {
+  "id": "2025-03-datu-odin-sinsuat-shooting",
+  "date": "2025-03-26",
+  "barangay": "Makir",
+  "deaths": 2,
+  "injured": 0,
+  "summary": "Datu Odin Sinsuat election officer Atty. Bai Maceda Lidasan Abo and her husband Jojo Abo, who was driving, were shot by unidentified gunmen on the Cotabato-Shariff Aguak road in Barangay Makir, Datu Odin Sinsuat, Maguindanao del Norte, at about 8:20 a.m. on Wednesday, March 26, 2025. Jojo was dead on arrival at the Datu Odin Sinsuat District Hospital; Abo died later at the Cotabato Regional Medical Center. Police recovered ten 5.56 mm cartridge cases, and the Comelec later placed the town under its control.",
+  "sources": [
+   {"outlet": "GMA Network", "url": "https://www.gmanetwork.com/news/topstories/regions/940577/husband-of-election-officer-killed-in-maguindanao-del-norte-town-ambush/story", "title": "Husband of election officer killed in Maguindanao del Norte town ambush", "date": "2025-03-26"}
+  ],
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-04-basilan-shooting",
+  "date": "2025-04-12",
+  "municipality": "Tuburan",
+  "barangay": "Dugaa",
+  "deaths": 2,
+  "injured": 1,
+  "vehicles": ["motorcycle"],
+  "summary": "Sgt. Reymark Bation and Cpl. Jordan Daquipel of the Army's 18th Infantry Battalion were shot dead and Cpl. Richivie Flores wounded when unidentified gunmen attacked them as they rode separate motorcycles in Barangay Dugaa, Tuburan, Basilan, past 4 p.m. on April 12, 2025. The attackers took the soldiers' firearms and fled on motorcycles; Flores was treated in Lamitan City and airlifted to Zamboanga City.",
+  "sources": [
+   {"outlet": "Philstar", "url": "https://www.philstar.com/nation/2025/04/13/2435560/2-army-intel-officers-slain-basilan-ambush", "title": "2 Army Intel officers slain in Basilan ambush", "date": "2025-04-13"},
+   {"outlet": "Manila Bulletin", "url": "https://mb.com.ph/2025/4/12/2-soldiers-killed-in-basilan-ambush", "title": "2 soldiers killed in Basilan ambush", "date": "2025-04-12"}
+  ],
+  "image": {"url": "https://media.philstar.com/photos/2025/04/12/2_2025-04-12_20-52-04.jpg", "outlet": "Philstar", "href": "https://www.philstar.com/nation/2025/04/13/2435560/2-army-intel-officers-slain-basilan-ambush"},
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-04-buluan-shooting",
+  "date": "2025-04-13",
+  "deaths": 0,
+  "injured": 2,
+  "summary": "Muhammad Utti Omar, alias Datu Baba, a candidate for board member of Maguindanao del Sur's first district, was bruised and his driver seriously wounded when unidentified gunmen fired on their vehicle in Datu Anggal Midtimbang, Maguindanao del Sur, on Sunday, April 13, 2025; the wounded driver kept driving to a checkpoint. No one was killed. The Comelec placed nearby Buluan under its control on April 15 amid election-related violence, and the candidate said the attack was politically motivated.",
+  "sources": [
+   {"outlet": "SunStar", "url": "https://www.sunstar.com.ph/manila/buluan-maguindanao-del-sur-placed-under-comelec-control", "title": "Buluan, Maguindanao del Sur placed under Comelec control", "date": "2025-04-15"},
+   {"outlet": "Manila Bulletin", "url": "https://mb.com.ph/2025/4/14/provincial-board-candidate-driver-hurt-in-maguindanao-del-sur-ambush", "title": "Provincial board candidate, driver hurt in Maguindanao del Sur ambush", "date": "2025-04-14"}
+  ],
+  "note": "SunStar and Manila Bulletin place the ambush in Datu Anggal Midtimbang, not Buluan; Buluan is the town placed under Comelec control.",
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-05-basilan-shooting",
+  "date": "2025-05-12",
+  "municipality": "Hadji Muhtamad",
+  "barangay": "Sangbay Big Island",
+  "deaths": 3,
+  "injured": 4,
+  "vehicles": ["motorboat"],
+  "summary": "Three people, a poll watcher and two supporters travelling by motorboat in the convoy of mayoral candidate Jamar Mansul from Zamboanga City to Hadji Muhtamad, Basilan, were killed and others wounded when armed men fired on them near Sangbay Big Island at about 1:45 a.m. on May 12, 2025, the eve of the elections. Police said a seaborne patrol had tried to stop a group of eight armed men who opened fire; Mansul was unharmed. The Daily Tribune counted four injured, PNA two.",
+  "sources": [
+   {"outlet": "Daily Tribune", "url": "https://tribune.net.ph/2025/05/12/basilan-sea-ambush-3-dead-4-injured", "title": "Basilan sea ambush: 3 dead, 4 injured", "date": "2025-05-12"},
+   {"outlet": "Manila Bulletin", "url": "https://mb.com.ph/2025/05/12/3-dead-2-hurt-in-basilan-election-day-clash", "title": "3 dead, 2 hurt in Basilan election-day clash", "date": "2025-05-12"}
+  ],
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-07-maguindanao-del-sur-shooting",
+  "date": "2025-07-25",
+  "municipality": "South Upi",
+  "barangay": "Romongaob",
+  "deaths": 1,
+  "injured": 1,
+  "vehicles": ["multicab", "motorcycle"],
+  "summary": "Teduray chieftain Nicasio Mindo, a former councilman of Barangay Pilar, was killed and his wife Jennelyn, a teacher, was wounded when armed men fired on their red multicab on a secluded stretch of highway in Sitio Lenan, Barangay Romongaob, South Upi, Maguindanao del Sur, on Friday, July 25, 2025, as they drove home to Barangay Pilar. The gunmen fled on motorcycles; South Upi and provincial police were working to identify them.",
+  "sources": [
+   {"outlet": "Philstar", "url": "https://www.philstar.com/nation/2025/07/27/2461116/extensive-probe-underway-ambush-teduray-chieftain", "title": "Extensive probe underway on ambush of Teduray chieftain", "date": "2025-07-27"},
+   {"outlet": "Inquirer", "url": "https://newsinfo.inquirer.net/1984575/teduray-leader-slain-in-maguindanao-del-sur", "title": "Teduray leader slain in Maguindanao del Sur", "date": "2025-07-26"}
+  ],
+  "image": {"url": "https://media.philstar.com/photos/2025/07/27/wounded-wife-slain-teduray-chieftain_2025-07-27_16-45-43.jpg", "outlet": "Philstar", "href": "https://www.philstar.com/nation/2025/07/27/2461116/extensive-probe-underway-ambush-teduray-chieftain"},
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-08-balabagan-shooting",
+  "date": "2025-08-04",
+  "barangay": "Narra",
+  "deaths": 1,
+  "injured": 0,
+  "summary": "Teacher Danilo Barba was shot dead with a .45-caliber pistol at about 8 a.m. on August 4, 2025, as he walked to Balabagan Trade School in Barangay Narra, Balabagan, Lanao del Sur. Police identified the gunman as a 20-year-old Grade 11 student, alias Kaizer, angered over a failing or incomplete grade; he fled and was later surrendered by his brother, a police officer. Police and soldiers were posted at the school, and teachers' groups called for stronger school security.",
+  "sources": [
+   {"outlet": "Manila Bulletin", "url": "https://mb.com.ph/2025/08/04/teacher-gunned-down-in-lanao-del-sur", "title": "Teacher gunned down in Lanao del Sur", "date": "2025-08-04"},
+   {"outlet": "GMA Regional TV", "url": "https://www.gmanetwork.com/regionaltv/news/109513/teacher-shot-dead-in-lanao-del-sur/story/", "title": "Teacher shot dead in Lanao del Sur", "date": "2025-08-05"},
+   {"outlet": "DZRH", "url": "https://www.dzrh.com.ph/post/teacher-shot-dead-by-student-in-lanao-del-sur-due-to-failing-grade", "title": "Teacher shot dead by student in Lanao del Sur due to failing grade", "date": "2025-08-12"}
+  ],
+  "image": {"url": "https://images.gmanews.tv/regionaltv2023/content_images/article/shooting-for-site_2025_08_05_15_24_10.jpeg", "outlet": "GMA Regional TV", "href": "https://www.gmanetwork.com/regionaltv/news/109513/teacher-shot-dead-in-lanao-del-sur/story/"},
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-09-maguindanao-del-norte-shooting",
+  "date": "2025-09-01",
+  "municipality": "Sultan Kudarat",
+  "barangay": "Nalinan",
+  "deaths": 3,
+  "injured": 1,
+  "vehicles": ["tricycle", "motorcycle"],
+  "summary": "A father, his wife and their daughter were shot dead and their 11-year-old son wounded when two men on a motorcycle fired on the family's tricycle in Barangay Nalinan, Sultan Kudarat, Maguindanao del Norte, at about 3 p.m. on Monday, September 1, 2025. Police were hunting the two gunmen; the motive was undetermined.",
+  "sources": [
+   {"outlet": "Manila Bulletin", "url": "https://mb.com.ph/2025/09/02/family-of-3-shot-dead-in-ambush-police", "title": "Family of 3 shot dead in ambush – police", "date": "2025-09-02"}
+  ],
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-10-maguindanao-del-sur-shooting",
+  "date": "2025-10-13",
+  "municipality": "Ampatuan",
+  "deaths": 2,
+  "summary": "Barangay councilor Abusama Agao, identified by police as an MNLF field commander, and his son Norodin, a barangay tanod, were shot dead by gunmen in Ampatuan, Maguindanao del Sur, on Monday, October 13, 2025. Police said the motive and the attackers' identities were unknown and sought the military's help in tracking them down.",
+  "sources": [
+   {"outlet": "Manila Bulletin", "url": "https://mb.com.ph/2025/10/13/maguindanao-del-sur-village-dad-son-gunned-down", "title": "Maguindanao del Sur village dad, son gunned down", "date": "2025-10-13"}
+  ],
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-10-basilan-shooting",
+  "municipality": "Lamitan City",
+  "barangay": "Malinis",
+  "deaths": 1,
+  "injured": 0,
+  "vehicles": ["motorcycle"],
+  "summary": "Nadzri Tarahin, 41, an Islamic teacher and councilor of Barangay Baguindan, Tipo-Tipo, was shot at a bus terminal in Barangay Malinis, Lamitan City, Basilan, at about 10:32 a.m. while waiting for his daughter at a nearby ATM, and was declared dead at the hospital. Minutes later police arrested two of three suspects, Toh Lalung Acalul, 41, and Delpi Suratan, 32, of Ungkaya Pukan, recovering their getaway motorcycle, two .45-caliber pistols and 28 sachets of suspected shabu; a third suspect was at large. Police called it a revenge killing.",
+  "sources": [
+   {"outlet": "Manila Bulletin", "url": "https://mb.com.ph/2025/10/21/basilan-barangay-councilor-shot-dead", "title": "Basilan barangay councilor shot dead", "date": "2025-10-21"}
+  ],
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-11-sultan-kudarat-shooting",
+  "date": "2025-11-10",
+  "vehicles": ["SUV"],
+  "summary": "Former Maguindanao del Sur board member Taharuddin Mlok survived when unidentified gunmen fired on the bulletproof SUV he was driving in Tacurong City, Sultan Kudarat, on Monday, November 10, 2025; bullet marks were left on the windshield, driver's window and door, and the gunmen fled. Police were investigating and Mlok had yet to give a statement.",
+  "sources": [
+   {"outlet": "GMA Network", "url": "https://www.gmanetwork.com/news/balitambayan/promdi/965588/ex-board-member-niratrat-sa-loob-ng-suv-pero-nakaligtas-dahil-bulletproof-ang-sasakyan/story/", "title": "Ex-board member, niratrat sa loob ng SUV pero nakaligtas dahil bulletproof ang sasakyan", "date": "2025-11-10"}
+  ],
+  "note": "GMA places the ambush in Tacurong City, Sultan Kudarat province, not Sultan Kudarat town in Maguindanao del Norte, and calls the victim a former Maguindanao del Sur board member.",
+  "confidence": "likely"
+ },
+ {
+  "id": "2025-12-maguindanao-del-sur-shooting",
+  "date": "2025-12-04",
+  "municipality": "Mamasapano",
+  "barangay": "Tuka",
+  "deaths": 1,
+  "injured": 1,
+  "summary": "Samsudin Manib, 25, aide of Sultan sa Barongis councilor Montasir Dimalido, was killed and Dimalido wounded when gunmen fired on their vehicle in front of the barangay hall of Barangay Tuka, Mamasapano, Maguindanao del Sur, at 3:45 p.m. on Thursday, December 4, 2025, as Dimalido drove home from Cotabato City. A second councilor, Abdulmanap Biang, was unhurt. The investigation was ongoing.",
+  "sources": [
+   {"outlet": "Manila Bulletin", "url": "https://mb.com.ph/2025/12/05/4-injured-in-maguindanao-del-sur-grenade-blast", "title": "4 injured in Maguindanao del Sur grenade blast", "date": "2025-12-05"}
+  ],
+  "note": "Manila Bulletin says only one councilor was wounded, not two.",
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-12-marawi-shooting",
+  "date": "2025-12-21",
+  "barangay": "Sabala Manao Proper",
+  "deaths": 1,
+  "injured": 1,
+  "summary": "A 28-year-old man who seized a six-year-old girl at knifepoint in Barangay Sabala Manao Proper, Marawi City, Lanao del Sur, early on Sunday, December 21, 2025, was shot dead by Marawi City police after he turned aggressive and began harming the child during negotiations. He died before reaching hospital; the girl was treated at Amai Pakpak Medical Center for facial and arm injuries and was stable. Police suspected the man was under the influence of drugs and were still identifying him.",
+  "sources": [
+   {"outlet": "DZRH", "url": "https://www.dzrh.com.ph/post/man-killed-after-taking-6-year-old-girl-hostage-in-marawi-city", "title": "Man killed after taking 6-year-old girl hostage in Marawi City", "date": "2025-12-21"},
+   {"outlet": "GMA Regional TV", "url": "https://www.gmanetwork.com/regionaltv/news/112051/girl-rescued-hostage-taker-killed-in-marawi-city/story/", "title": "Girl rescued, hostage-taker killed in Marawi City", "date": "2025-12-21"}
+  ],
+  "image": {"url": "https://dzrh-bucket.s3.ap-southeast-1.amazonaws.com/featuredimage/2025/12/wfYhVUDhMY-DfdiN64_bW.jpeg", "outlet": "DZRH", "href": "https://www.dzrh.com.ph/post/man-killed-after-taking-6-year-old-girl-hostage-in-marawi-city"},
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-01-maguindanao-del-sur-shooting",
+  "date": "2026-01-12",
+  "municipality": "Ampatuan",
+  "barangay": "Kapinpilan",
+  "deaths": 2,
+  "injured": 0,
+  "vehicles": ["minivan"],
+  "summary": "Hamza Sangki Kindo, 46, a senior official of the MILF's 118th Base Command, and his companion Mohammad Kader Acob, 44, also an MILF member, were killed when men with assault rifles positioned along the route fired on their white minivan in Barangay Kapinpilan, Ampatuan, Maguindanao del Sur, late on Monday night, January 12, 2026. Both were dead on arrival at hospital; the gunmen escaped before barangay officials arrived, and police and the Army's 601st Infantry Brigade launched a manhunt.",
+  "sources": [
+   {"outlet": "Philstar", "url": "https://www.philstar.com/nation/2026/01/13/2500735/ranking-milf-official-companion-killed-ambush", "title": "Ranking MILF official, companion killed in ambush", "date": "2026-01-13"},
+   {"outlet": "Manila Bulletin", "url": "https://mb.com.ph/2026/01/13/milf-commander-killed-in-ambush", "title": "MILF commander killed in ambush", "date": "2026-01-13"}
+  ],
+  "image": {"url": "https://media.philstar.com/photos/2026/01/13/kindo-ambush-story-photo-2_2026-01-13_19-32-45.jpg", "outlet": "Philstar", "href": "https://www.philstar.com/nation/2026/01/13/2500735/ranking-milf-official-companion-killed-ambush"},
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-01-shariff-aguak-shooting",
+  "date": "2026-01-25",
+  "barangay": "Poblacion",
+  "deaths": 0,
+  "injured": 2,
+  "summary": "The convoy of Shariff Aguak Mayor Akmad Mitra Ampatuan was fired upon in Barangay Poblacion, Shariff Aguak, Maguindanao del Sur, on the morning of January 25, 2026; the mayor was unharmed and two of his security escorts were wounded and taken to a medical facility. The Bangsamoro Government condemned the attack, police probed political tension and revenge as motives, a lookout surrendered to the NBI in March, and the mayor's complaint went to DOJ preliminary investigation in May.",
+  "sources": [
+   {"outlet": "DZRH", "url": "https://www.dzrh.com.ph/post/bangsamoro-government-condemns-ambush-on-shariff-aguak-mayor", "title": "Bangsamoro Government condemns ambush on Shariff Aguak Mayor", "date": "2026-01-26"}
+  ],
+  "note": "Same event as 2026-01-25-shariff-aguak-shooting.",
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-01-basilan-shooting",
+  "date": "2026-01-26",
+  "municipality": "Tipo-Tipo",
+  "deaths": 0,
+  "injured": 2,
+  "summary": "PFC Mark Anthony Libo-on, 23, and PFC Jomare Sadjail of the Army's 45th Infantry Battalion were wounded when a lone gunman shot them at a community store about 200 meters from their camp in Tipo-Tipo, Basilan, at 5:28 p.m. on Monday, January 26, 2026. Two .45-caliber shells were recovered; Tipo-Tipo police mounted dragnet operations, the 45IB pursued the gunman into the mountains, and the PNP mobilized forces on January 28 to join the manhunt.",
+  "sources": [
+   {"outlet": "SunStar", "url": "https://www.sunstar.com.ph/zamboanga/gunman-shoots-2-soldiers-in-basilan", "title": "Gunman shoots 2 soldiers in Basilan", "date": "2026-01-27"},
+   {"outlet": "Daily Tribune", "url": "https://tribune.net.ph/2026/01/28/pnp-joins-military-manhunt-after-basilan-gun-attack", "title": "PNP joins military manhunt after Basilan gun attack", "date": "2026-01-28"}
+  ],
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-01-25-shariff-aguak-shooting",
+  "injured": 2,
+  "vehicles": ["minivan"],
+  "summary": "Gunmen fired a rocket-propelled grenade and rifles at the two-vehicle convoy of Shariff Aguak Mayor Akmad 'Mitra' Ampatuan Sr., a Maguindanao massacre witness, in Barangay Poblacion, Shariff Aguak, Maguindanao del Sur, at about 6:30 a.m. on Sunday, January 25, 2026; the mayor was unharmed and two of his security escorts were wounded. The attackers fled in a minivan and three of them were killed by pursuing forces in Barangay Meta, Datu Unsay, the same day. President Marcos condemned the attack and the PNP formed a task group, eyeing hired gunmen, local politics and revenge as motives.",
+  "sources": [
+   {"outlet": "DZRH", "url": "https://www.dzrh.com.ph/post/bangsamoro-government-condemns-ambush-on-shariff-aguak-mayor", "title": "Bangsamoro Government condemns ambush on Shariff Aguak Mayor", "date": "2026-01-26"},
+   {"outlet": "SunStar", "url": "https://www.sunstar.com.ph/manila/shariff-aguak-mayor-survives-ambush-gunmen-killed", "title": "Shariff Aguak mayor survives ambush, gunmen killed", "date": "2026-01-26"}
+  ],
+  "image": {"url": "https://dzrh-bucket.s3.ap-southeast-1.amazonaws.com/featuredimage/2026/1/vhP_P7LA0mNcyXIxM3dXq.jpeg", "outlet": "DZRH", "href": "https://www.dzrh.com.ph/post/bangsamoro-government-condemns-ambush-on-shariff-aguak-mayor"},
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-01-25-datu-unsay-shooting",
+  "barangay": "Meta",
+  "deaths": 3,
+  "vehicles": ["minivan"],
+  "summary": "Three men who had ambushed Shariff Aguak Mayor Akmad Ampatuan's convoy hours earlier were killed in a gunfight with pursuing police, soldiers and community watch forces in Barangay Meta, Datu Unsay, Maguindanao del Sur, on Sunday, January 25, 2026; they were found dead in their minivan and identified as local residents, among them Budtong Pendatun and Teks Pendatun. Police said the slain gunmen were wanted for multiple serious cases; GMA and the Daily Tribune reported four attackers killed.",
+  "sources": [
+   {"outlet": "SunStar", "url": "https://www.sunstar.com.ph/manila/shariff-aguak-mayor-survives-ambush-gunmen-killed", "title": "Shariff Aguak mayor survives ambush, gunmen killed", "date": "2026-01-26"},
+   {"outlet": "Inquirer", "url": "https://newsinfo.inquirer.net/?p=2173207", "title": "Maguindanao del Sur gov alarmed over brazenness of ambush vs town mayor", "date": "2026-01-26"}
+  ],
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-02-17-shariff-aguak-shooting",
+  "barangay": "Kabengi",
+  "deaths": 1,
+  "injured": 2,
+  "vehicles": ["car", "minivan"],
+  "summary": "Datu Morsid, a nephew of Shariff Aguak Mayor Akmad Mitra Ampatuan Sr., was killed and the mayor's brother Yasser Ampatuan, 49, and Lemon Bangen, 36, were wounded when gunmen in a white minivan tailed their black Nissan Livina and opened fire with assault rifles on the national highway between Sitio Panang, Barangay Kabengi, and Barangay Salbu in Datu Saudi Ampatuan, Maguindanao del Sur, at about 11 a.m. on Tuesday, February 17, 2026. Morsid was dead on arrival at hospital; the wounded were treated at the Bangsamoro Regional Medical Center. The PNP linked the attack to the January 25 ambush of the mayor.",
+  "sources": [
+   {"outlet": "GMA Network", "url": "https://www.gmanetwork.com/news/topstories/regions/976858/maguindanao-ambush-shariff-aguak/story/", "title": "Shariff Aguak mayor's nephew killed, 2 others hurt in Maguindanao del Sur ambush", "date": "2026-02-17"},
+   {"outlet": "Manila Bulletin", "url": "https://mb.com.ph/2026/02/17/maguindanao-del-sur-mayors-nephew-killed-in-ambush", "title": "Maguindanao del Sur mayor's nephew killed in ambush", "date": "2026-02-17"},
+   {"outlet": "Inquirer", "url": "https://newsinfo.inquirer.net/2183741/pnp-sees-link-to-january-attack-vs-mayor", "title": "PNP: Ambush of Shariff Aguak mayor's kin linked to January attack", "date": "2026-02-18"}
+  ],
+  "image": {"url": "https://images.gmanews.tv/webpics/2026/02/maguindanao_ambush_021726_2026_02_17_16_29_00.jpg", "outlet": "GMA Network", "href": "https://www.gmanetwork.com/news/topstories/regions/976858/maguindanao-ambush-shariff-aguak/story/"},
+  "note": "GMA, Manila Bulletin and Inquirer place the ambush in Datu Saudi Ampatuan, not Shariff Aguak.",
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-03-shariff-aguak-shooting",
+  "date": "2026-01-25",
+  "barangay": "Poblacion",
+  "deaths": 0,
+  "injured": 2,
+  "summary": "The convoy of Shariff Aguak Mayor Akmad Mitra Ampatuan was fired upon in Barangay Poblacion, Shariff Aguak, Maguindanao del Sur, on the morning of January 25, 2026; the mayor was unharmed and two security escorts were wounded. Bangsamoro Chief Minister Abdulraof Macacua condemned the attack and ordered an investigation, Malacanang condemned it and the PNP formed a special task force.",
+  "sources": [
+   {"outlet": "DZRH", "url": "https://www.dzrh.com.ph/post/bangsamoro-government-condemns-ambush-on-shariff-aguak-mayor", "title": "Bangsamoro Government condemns ambush on Shariff Aguak Mayor", "date": "2026-01-26"}
+  ],
+  "note": "The DZRH article is dated January 26, 2026 and describes the January 25 ambush; Google News misdated it. This record duplicates 2026-01-25-shariff-aguak-shooting.",
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-03-maguindanao-del-sur-shooting",
+  "date": "2026-03-03",
+  "municipality": "Datu Montawal",
+  "barangay": "Pagagawan",
+  "deaths": 2,
+  "injured": 0,
+  "vehicles": ["minivan"],
+  "summary": "Retired police officer Elias Dandan, a former police chief of Pikit and Matalam known for anti-drug operations, and his companion Raymund Bioy were shot dead when a gunman aboard a minivan fired on their vehicle in Barangay Pagagawan, Datu Montawal, Maguindanao del Sur, at about 2:30 p.m. on Tuesday, March 3, 2026, as they travelled toward Pikit, Cotabato. Both died of multiple gunshot wounds before reaching hospital; police were investigating the motive.",
+  "sources": [
+   {"outlet": "GMA Regional TV", "url": "https://www.gmanetwork.com/regionaltv/news/113178/3-killed-in-shooting-incidents-in-barmm/story", "title": "3 killed in shooting incidents in BARMM", "date": "2026-03-04"},
+   {"outlet": "Manila Bulletin", "url": "https://mb.com.ph/2026/03/04/retired-cop-killed-in-maguindanao-del-sur-ambush", "title": "Retired cop killed in Maguindanao del Sur ambush", "date": "2026-03-04"}
+  ],
+  "image": {"url": "https://images.gmanews.tv/regionaltv2023/content_images/article/shooting_2026_03_04_18_50_46.jpeg", "outlet": "GMA Regional TV", "href": "https://www.gmanetwork.com/regionaltv/news/113178/3-killed-in-shooting-incidents-in-barmm/story"},
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-03-maguindanao-del-sur-shooting-3",
+  "date": "2026-03-30",
+  "municipality": "Pandag",
+  "barangay": "Malangit",
+  "deaths": 0,
+  "injured": 2,
+  "vehicles": ["Toyota Innova", "motorcycle"],
+  "summary": "Hadji Mansor Mangelen, chairman of Barangay Damalusay in Paglat, and his driver Arafa Abpet were wounded when two motorcycle-riding gunmen tailed their Toyota Innova and fired at the driver's side in Sitio Bagyang, Barangay Malangit, Pandag, Maguindanao del Sur, at about 8:30 a.m. on Monday, March 30, 2026, as they came from Buluan. Mangelen had minor injuries and the driver was in critical condition at Buluan District Hospital; the motive was unknown.",
+  "sources": [
+   {"outlet": "GMA Network", "url": "https://www.gmanetwork.com/news/balitambayan/promdi/982157/barangay-chairman-at-kaniyang-driver-sugatan-sa-ambush-sa-maguindanao/story/", "title": "Barangay chairman at kaniyang driver, sugatan sa ambush sa Maguindanao", "date": "2026-03-31"},
+   {"outlet": "Manila Bulletin", "url": "https://mb.com.ph/2026/03/30/village-chief-driver-hurt-in-maguindanao-del-sur-ambush", "title": "Village chief, driver hurt in Maguindanao del Sur ambush", "date": "2026-03-30"}
+  ],
+  "image": {"url": "https://images.gmanews.tv/webpics/2026/03/Untitled8_2026_03_31_23_26_00.jpg", "outlet": "GMA Network", "href": "https://www.gmanetwork.com/news/balitambayan/promdi/982157/barangay-chairman-at-kaniyang-driver-sugatan-sa-ambush-sa-maguindanao/story/"},
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-03-28-shariff-aguak-shooting",
+  "summary": "Five police officers of the 2nd Provincial Mobile Force Company were killed and three wounded when gunmen set off a blast and opened fire on them along Maguindanao Street in Barangay Mother Poblacion, Shariff Aguak, Maguindanao del Sur, at about 9:10 p.m. on Saturday, March 28, 2026, as they returned to Camp Akilan. The PNP blamed the Daulah Islamiya and eyed retaliation as the motive; charges were filed in April, three suspects were killed in Army operations in late April and others were arrested in June and July.",
+  "sources": [
+   {"outlet": "Philstar", "url": "https://www.philstar.com/nation/2026/03/29/2517674/5-cops-killed-3-wounded-maguindanao-del-sur-ambush", "title": "5 cops killed, 3 wounded in Maguindanao del Sur ambush", "date": "2026-03-29"},
+   {"outlet": "Philstar", "url": "https://www.philstar.com/nation/2026/03/30/2517814/5-cops-killed-3-wounded-maguindanao-sur-ambush", "title": "5 cops killed, 3 wounded in Maguindanao Sur ambush", "date": "2026-03-30"}
+  ],
+  "image": {"url": "https://media.philstar.com/photos/2026/03/29/maguindanao-del-sur-cops_2026-03-29_11-35-18.jpg", "outlet": "Philstar", "href": "https://www.philstar.com/nation/2026/03/29/2517674/5-cops-killed-3-wounded-maguindanao-del-sur-ambush"},
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-03-28-lanao-del-sur-shooting",
+  "municipality": "Saguiaran",
+  "barangay": "Paglamatan",
+  "deaths": 2,
+  "vehicles": ["Toyota Innova"],
+  "summary": "Police Cpl. Walid Buleg Sangcopan of the PRO-BAR and a civilian companion were killed when gunmen attacked their gray Toyota Innova on a secluded highway in Barangay Paglamatan, Saguiaran, Lanao del Sur, before dawn on Saturday, March 28, 2026, hours before the ambush that killed five police officers in Shariff Aguak. PNP chief Jose Melencio Nartatez Jr. ordered PRO-BAR commanders to identify and arrest the gunmen, and a manhunt was launched.",
+  "sources": [
+   {"outlet": "Manila Bulletin", "url": "https://mb.com.ph/2026/03/31/manhunt-underway-after-cop-civilian-killed-in-lanao-del-sur-ambush", "title": "Manhunt underway after cop, civilian killed in Lanao del Sur ambush", "date": "2026-03-31"}
+  ],
+  "confidence": "confirmed"
+ }
+]

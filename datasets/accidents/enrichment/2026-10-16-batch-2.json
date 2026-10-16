@@ -1,0 +1,608 @@
+[
+ {
+  "id": "2025-01-24-cotabato-fire-2",
+  "summary": "About five hours after the Poblacion 7 fire on Friday, 24 January 2025, a separate fire razed three houses in the neighbouring Barangay Rosary Heights 10, Cotabato City. Philstar, citing the BFP and the city disaster office, reported the two fires gutted 103 houses in all; no casualties, cause or family count were given, and the city social welfare office distributed relief to victims at evacuation sites.",
+  "sources": [
+   {
+    "outlet": "Philstar",
+    "url": "https://philstar.com/nation/2025/01/27/2417065/103-houses-razed-cotabato",
+    "title": "103 houses razed in Cotabato",
+    "date": "2025-01-27"
+   }
+  ],
+  "image": {
+   "url": "https://media.philstar.com/photos/2025/01/26/11-4_2025-01-26_20-27-33.jpg",
+   "outlet": "Philstar",
+   "href": "https://philstar.com/nation/2025/01/27/2417065/103-houses-razed-cotabato"
+  },
+  "confidence": "confirmed",
+  "note": "Philstar says the second fire came five hours after the first, not about 10 hours as the record said."
+ },
+ {
+  "id": "2025-02-06-ampatuan-other",
+  "vehicles": [
+   "aircraft"
+  ],
+  "summary": "A US military-contracted Beechcraft King Air 300 (N349CA), flying from Cebu toward Cotabato City on an aerial survey, was seen flying low before it nose-dived into an open rice field in Barangay Malatimon, Ampatuan, Maguindanao del Sur at about 2 p.m. on Thursday, 6 February 2025. All 4 aboard, a US Marine and 3 defence contractors, were killed; Maguindanao del Sur police recovered the bodies from the wreckage and the CAAP opened an investigation.",
+  "sources": [
+   {
+    "outlet": "DZRH",
+    "url": "https://www.dzrh.com.ph/post/us-military-contracted-aircraft-crashes-in-maguindanao-del-sur-killing-4-passengers",
+    "title": "US military contracted aircraft crashes in Maguindanao del Sur, killing 4 passengers",
+    "date": "2025-02-06"
+   }
+  ],
+  "image": {
+   "url": "https://dzrh-bucket.s3.ap-southeast-1.amazonaws.com/featuredimage/us-military-contracted-aircraft-crashes-in-maguindanao-del-sur-killing-4-passengers/4d319375-8ad4-416a-b941-63f495b3ccef.jpeg",
+   "outlet": "DZRH",
+   "href": "https://www.dzrh.com.ph/post/us-military-contracted-aircraft-crashes-in-maguindanao-del-sur-killing-4-passengers"
+  },
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-03-16-turtle-islands-water",
+  "barangay": "17 nautical miles southeast of the Turtle Islands",
+  "vehicles": [
+   "motor launch"
+  ],
+  "summary": "The wooden-hulled M/L Bangsata left Turtle Islands at about 1:45 a.m. on Sunday, 16 March 2025 bound for South Ubian, Tawi-Tawi with 32 people aboard, met rough seas and sank at about 6 a.m. The Singaporean-flagged tanker Eonia spotted the survivors and alerted authorities; the Navy's BRP Jose Loor Sr. (PC-390) picked up 26 of them some 17 nautical miles southeast of the Turtle Islands at about 10:05 p.m. and a Malaysian vessel rescued the other 6. No one died or went missing, and the survivors were turned over to the MDRRMO at Taganak Pier.",
+  "sources": [
+   {
+    "outlet": "SunStar Zamboanga",
+    "url": "https://www.sunstar.com.ph/zamboanga/wooden-hulled-vessel-sinks-in-tawi-tawi-26-rescued",
+    "title": "Wooden-hulled vessel sinks in Tawi-Tawi, 26 rescued",
+    "date": "2025-03-17"
+   }
+  ],
+  "image": {
+   "url": "https://cf-images.assettype.com/sunstar%2F2025-03-17%2Fx61gveba%2Frescue-3-1.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+   "outlet": "SunStar Zamboanga",
+   "href": "https://www.sunstar.com.ph/zamboanga/wooden-hulled-vessel-sinks-in-tawi-tawi-26-rescued"
+  },
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-03-19-marantao-fire",
+  "sources": [
+   {
+    "outlet": "MSSD BARMM",
+    "url": "https://mssd.barmm.gov.ph/fire-affected-families-in-marantao-lanao-del-sur-receive-welfare-goods/",
+    "title": "Fire-affected families in Marantao, Lanao del Sur receive welfare goods",
+    "date": "2025-03-25"
+   }
+  ],
+  "image": {
+   "url": "https://mssd.barmm.gov.ph/wp-content/uploads/2025/04/486649462_959852366314640_6525546110270563765_n.jpg",
+   "outlet": "MSSD BARMM",
+   "href": "https://mssd.barmm.gov.ph/fire-affected-families-in-marantao-lanao-del-sur-receive-welfare-goods/"
+  },
+  "confidence": "likely"
+ },
+ {
+  "id": "2025-07-malabang-fire",
+  "sources": [
+   {
+    "outlet": "MSSD BARMM",
+    "url": "https://mssd.barmm.gov.ph/more-than-200-fire-affected-families-in-malabang-lanao-del-sur-receive-welfare-assistance/",
+    "title": "More than 200 fire-affected families in Malabang, Lanao del Sur receive welfare assistance",
+    "date": "2025-07-16"
+   }
+  ],
+  "image": {
+   "url": "https://mssd.barmm.gov.ph/wp-content/uploads/2025/07/517936501_1923139488500906_1074567734565125636_n.png",
+   "outlet": "MSSD BARMM",
+   "href": "https://mssd.barmm.gov.ph/more-than-200-fire-affected-families-in-malabang-lanao-del-sur-receive-welfare-assistance/"
+  },
+  "confidence": "likely"
+ },
+ {
+  "id": "2025-07-12-maluso-water",
+  "barangay": "waters off Maluso",
+  "vehicles": [
+   "motorboat"
+  ],
+  "sources": [
+   {
+    "outlet": "SunStar Zamboanga",
+    "url": "https://www.sunstar.com.ph/zamboanga/motorboat-capsizes-18-rescued-off-basilan",
+    "title": "Motorboat capsizes; 18 rescued off Basilan",
+    "date": "2025-07-14"
+   }
+  ],
+  "image": {
+   "url": "https://cf-images.assettype.com/sunstar%2F2025-07-14%2F7e5nxudu%2FBoat-capsizing.jpg?rect=0%2C96%2C750%2C394&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+   "outlet": "SunStar Zamboanga",
+   "href": "https://www.sunstar.com.ph/zamboanga/motorboat-capsizes-18-rescued-off-basilan"
+  },
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-08-sapa-sapa-water",
+  "date": "2025-08-22",
+  "barangay": "between Mantabuan and Latuan islands",
+  "injured": 1,
+  "vehicles": [
+   "motorboat"
+  ],
+  "summary": "A motorboat skippered by Alsappa Gayong, carrying 5 people to Poblacion, Sapa-Sapa, Tawi-Tawi for an Islamic ceremony at the MSU covered court, was battered by huge waves from the southwest monsoon and capsized at about 11:11 a.m. on Friday, 22 August 2025 between the islands of Mantabuan and Latuan. All 5 were rescued by about noon, the Sapa-Sapa MDRRMO said; one of them, stung by a stingray, was given first aid and taken to Tuan Ligaddung Lipae Memorial Hospital.",
+  "sources": [
+   {
+    "outlet": "SunStar Zamboanga",
+    "url": "https://www.sunstar.com.ph/zamboanga/motorboat-capsizes-5-rescued-off-sapa-sapa-tawi-tawi",
+    "title": "Motorboat capsizes, 5 rescued off Sapa-Sapa, Tawi-Tawi",
+    "date": "2025-08-22"
+   }
+  ],
+  "image": {
+   "url": "https://cf-images.assettype.com/sunstar%2F2025-04-23%2Fxgurpt3s%2FScreenshot-2025-04-23-170930.jpg?rect=0%2C53%2C850%2C446&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+   "outlet": "SunStar Zamboanga",
+   "href": "https://www.sunstar.com.ph/zamboanga/motorboat-capsizes-5-rescued-off-sapa-sapa-tawi-tawi"
+  },
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-08-kapai-fire",
+  "sources": [
+   {
+    "outlet": "MSSD BARMM",
+    "url": "https://mssd.barmm.gov.ph/fire-affected-families-in-kapai-lanao-del-sur-receive-welfare-goods/",
+    "title": "Fire-affected families in Kapai, Lanao del Sur receive welfare goods",
+    "date": "2025-08-08"
+   }
+  ],
+  "image": {
+   "url": "https://mssd.barmm.gov.ph/wp-content/uploads/2025/08/528575401_1060354366264439_3540388998951049627_n.jpg",
+   "outlet": "MSSD BARMM",
+   "href": "https://mssd.barmm.gov.ph/fire-affected-families-in-kapai-lanao-del-sur-receive-welfare-goods/"
+  },
+  "confidence": "likely"
+ },
+ {
+  "id": "2025-08-18-kapatagan-fire",
+  "sources": [
+   {
+    "outlet": "MSSD BARMM",
+    "url": "https://mssd.barmm.gov.ph/fire-affected-families-in-kapatagan-lanao-del-sur-receive-welfare-goods/",
+    "title": "Fire-affected families in Kapatagan, Lanao del Sur receive welfare goods",
+    "date": "2025-08-22"
+   }
+  ],
+  "image": {
+   "url": "https://mssd.barmm.gov.ph/wp-content/uploads/2025/08/FB_IMG_1755846752079.jpg",
+   "outlet": "MSSD BARMM",
+   "href": "https://mssd.barmm.gov.ph/fire-affected-families-in-kapatagan-lanao-del-sur-receive-welfare-goods/"
+  },
+  "confidence": "likely"
+ },
+ {
+  "id": "2025-09-masiu-fire",
+  "sources": [
+   {
+    "outlet": "MSSD BARMM",
+    "url": "https://mssd.barmm.gov.ph/fire-and-windstorm-affected-families-in-masiu-receive-assistance/",
+    "title": "Fire and windstorm affected families in Masiu receive assistance",
+    "date": "2025-10-22"
+   }
+  ],
+  "image": {
+   "url": "https://mssd.barmm.gov.ph/wp-content/uploads/2025/10/News-Opener-2025-10-22T113345.425.png",
+   "outlet": "MSSD BARMM",
+   "href": "https://mssd.barmm.gov.ph/fire-and-windstorm-affected-families-in-masiu-receive-assistance/"
+  },
+  "confidence": "likely"
+ },
+ {
+  "id": "2025-10-cotabato-fire",
+  "date": "2025-10-21",
+  "barangay": "Rosary Heights IV",
+  "summary": "A fire on 21 October 2025 in Barangay Rosary Heights IV, Cotabato City, totally damaged 3 houses and partially damaged 1, affecting 11 families, the Bangsamoro Information Office reported. MSSD-BARMM delivered rice, food packs and household kits to the families the same day and assessed them for Emergency Shelter Assistance on 22 October; casualties and cause were not reported.",
+  "sources": [
+   {
+    "outlet": "BARMM Official Website",
+    "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-extends-aid-to-11-fire-hit-families-in-cotabato-city/",
+    "title": "BARMM Gov't extends aid to 11 fire-hit families in Cotabato City",
+    "date": "2025-10-27"
+   }
+  ],
+  "image": {
+   "url": "https://bangsamoro.gov.ph/wp-content/uploads/2025/10/photo_2025-10-24_17-22-03.jpg",
+   "outlet": "BARMM Official Website",
+   "href": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-extends-aid-to-11-fire-hit-families-in-cotabato-city/"
+  },
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-10-06-maluso-water",
+  "vehicles": [
+   "fishing boat"
+  ],
+  "sources": [
+   {
+    "outlet": "SunStar Zamboanga",
+    "url": "https://www.sunstar.com.ph/zamboanga/20-fishermen-rescued-off-basilan-sulu",
+    "title": "20 fishermen rescued off Basilan, Sulu",
+    "date": "2025-10-07"
+   }
+  ],
+  "image": {
+   "url": "https://cf-images.assettype.com/sunstar%2F2025-10-07%2Fhn3q3n89%2Ffishermen.jpg?rect=0%2C70%2C960%2C504&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+   "outlet": "SunStar Zamboanga",
+   "href": "https://www.sunstar.com.ph/zamboanga/20-fishermen-rescued-off-basilan-sulu"
+  },
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2025-11-wao-fire",
+  "sources": [
+   {
+    "outlet": "MSSD BARMM",
+    "url": "https://mssd.barmm.gov.ph/mssd-delivers-aid-to-earthquake-and-fire-victims-in-wao/",
+    "title": "MSSD delivers aid to earthquake and fire victims in Wao",
+    "date": "2025-11-19"
+   }
+  ],
+  "image": {
+   "url": "https://mssd.barmm.gov.ph/wp-content/uploads/2025/11/News-Opener-5-3.png",
+   "outlet": "MSSD BARMM",
+   "href": "https://mssd.barmm.gov.ph/mssd-delivers-aid-to-earthquake-and-fire-victims-in-wao/"
+  },
+  "confidence": "likely"
+ },
+ {
+  "id": "2025-11-07-maguing-fire",
+  "sources": [
+   {
+    "outlet": "MSSD BARMM",
+    "url": "https://mssd.barmm.gov.ph/fire-victim-families-in-maguing-receive-immediate-aid-from-mssd/",
+    "title": "Fire victim families in Maguing receive immediate aid from MSSD",
+    "date": "2025-11-11"
+   }
+  ],
+  "image": {
+   "url": "https://mssd.barmm.gov.ph/wp-content/uploads/2025/11/News-Opener-2025-11-11T170456.930-2.png",
+   "outlet": "MSSD BARMM",
+   "href": "https://mssd.barmm.gov.ph/fire-victim-families-in-maguing-receive-immediate-aid-from-mssd/"
+  },
+  "confidence": "likely"
+ },
+ {
+  "id": "2025-12-16-lamitan-fire",
+  "sources": [
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/111962/2-hurt-in-basilan-fire-3-houses-razed/story/",
+    "title": "2 hurt in Basilan fire, 3 houses razed",
+    "date": "2025-12-16"
+   }
+  ],
+  "image": {
+   "url": "https://images.gmanews.tv/regionaltv2023/content_images/article/fire-for-site_2025_12_16_15_30_03.jpeg",
+   "outlet": "GMA Regional TV",
+   "href": "https://www.gmanetwork.com/regionaltv/news/111962/2-hurt-in-basilan-fire-3-houses-razed/story/"
+  },
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-01-06-kapai-fire",
+  "sources": [
+   {
+    "outlet": "MSSD BARMM",
+    "url": "https://mssd.barmm.gov.ph/mssd-provides-emergency-shelter-assistance-to-families-affected-by-disasters-in-lanao-del-sur/",
+    "title": "MSSD provides emergency shelter assistance to families affected by disasters in Lanao del Sur",
+    "date": "2026-01-07"
+   }
+  ],
+  "image": {
+   "url": "https://mssd.barmm.gov.ph/wp-content/uploads/2026/01/News-Opener-2026-01-07T134538.439-1024x662.png",
+   "outlet": "MSSD BARMM",
+   "href": "https://mssd.barmm.gov.ph/mssd-provides-emergency-shelter-assistance-to-families-affected-by-disasters-in-lanao-del-sur/"
+  },
+  "confidence": "likely"
+ },
+ {
+  "id": "2026-01-16-turtle-islands-water",
+  "barangay": "about 46 nautical miles east of Taganak Island",
+  "vehicles": [
+   "motor launch"
+  ],
+  "summary": "The motor launch M/L Nurdia, carrying 30 people (16 men, 9 women and 5 children, among them a pregnant woman and two senior citizens), was found drifting with a rudder damaged in rough seas about 46 nautical miles east of Taganak Island, Turtle Islands, Tawi-Tawi on the evening of Friday, 16 January 2026. A Western Mindanao Naval Command patrol craft on routine patrol spotted its flashing light, took everyone off unharmed and turned them over to the local government at Taganak on Saturday, 17 January, where they were given food, water and medical checks.",
+  "sources": [
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/112467/30-rescued-from-distressed-vessel-off-tawi-tawi/story",
+    "title": "30 rescued from distressed vessel off Tawi-Tawi",
+    "date": "2026-01-17"
+   }
+  ],
+  "image": {
+   "url": "https://images.gmanews.tv/regionaltv2023/content_images/article/vessel_2026_01_17_16_45_26.jpeg",
+   "outlet": "GMA Regional TV",
+   "href": "https://www.gmanetwork.com/regionaltv/news/112467/30-rescued-from-distressed-vessel-off-tawi-tawi/story"
+  },
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-01-19-simunul-water",
+  "barangay": "sea border of Simunul and Bongao",
+  "vehicles": [
+   "motor launch"
+  ],
+  "sources": [
+   {
+    "outlet": "Philstar",
+    "url": "https://www.philstar.com/nation/2026/01/20/2502313/12-rescued-sunken-boat-tawi-tawi",
+    "title": "12 rescued from sunken boat in Tawi-Tawi",
+    "date": "2026-01-20"
+   }
+  ],
+  "image": {
+   "url": "https://media.philstar.com/photos/2026/01/20/simunul-sea-mishap_2026-01-20_18-30-41.jpg",
+   "outlet": "Philstar",
+   "href": "https://www.philstar.com/nation/2026/01/20/2502313/12-rescued-sunken-boat-tawi-tawi"
+  },
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-01-26-hadji-muhtamad-water",
+  "deaths": 66,
+  "vehicles": [
+   "ferry"
+  ],
+  "summary": "The Aleson Shipping ro-pax ferry MV Trisha Kerstin 3, sailing from Zamboanga City to Jolo with more than 340 passengers and crew, took on water, listed and sank about 2.75 nautical miles northeast of Baluk-Baluk Island, Hadji Muhtamad, Basilan at about 1:50 a.m. on Monday, 26 January 2026. The Coast Guard recovered bodies for weeks: by 22 February the toll stood at 65 dead, 293 rescued and 14 missing, and the PCG completed a full underwater search of the wreck on 24 February. By 29 July 2026 the Inquirer put the dead at 66 and reported Aleson still suspended and fined P3 million.",
+  "sources": [
+   {
+    "outlet": "DZRH",
+    "url": "https://www.dzrh.com.ph/post/death-toll-reaches-65-in-mv-trisha-kerstin-3-sinking-in-basilan",
+    "title": "Death toll reaches 65 in M/V Trisha Kerstin 3 sinking in Basilan",
+    "date": "2026-02-22"
+   },
+   {
+    "outlet": "DZRH",
+    "url": "https://www.dzrh.com.ph/post/pcg-completes-full-underwater-search-of-sunken-mv-trisha-kerstin-3",
+    "title": "PCG completes full underwater search of sunken MV Trisha Kerstin 3",
+    "date": "2026-02-24"
+   },
+   {
+    "outlet": "Inquirer",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSDhTdTRoSUF5MVBQMVMwcU5MNlMtQnFBdHpKS2doM3dYMS1sdlczS3FDXy1OeHY0TDBtSWN2dUtUZjV1ZGpaS1ZqbmJJanRraU1sam5qSnluRnJUWndmREV6ZVRwUmJ2dDNDbWNId05ZREx5dGEyeVpRd2k1Q1V6bFQtZXpCTGRITnVnOVlSX0J3M0dwNVhrZkdjWUhfN2wtc0RES2JZM0s4OWc?oc=5",
+    "title": "Basilan ship sinking: Firm still suspended, fined P3M; 66 dead",
+    "date": "2026-07-29"
+   }
+  ],
+  "image": {
+   "url": "https://dzrh-bucket.s3.ap-southeast-1.amazonaws.com/featuredimage/2026/2/eHnNuRR3boItDmJ26-Gp9.jpeg",
+   "outlet": "DZRH",
+   "href": "https://www.dzrh.com.ph/post/death-toll-reaches-65-in-mv-trisha-kerstin-3-sinking-in-basilan"
+  },
+  "confidence": "likely",
+  "note": "Deaths raised from 65 to 66 on the strength of the Inquirer's 29 July 2026 headline only (already in the record's sources; Inquirer refuses fetches). DZRH's last count, 22 February, was 65 dead and 14 missing; no later missing count found."
+ },
+ {
+  "id": "2026-02-lantawan-water",
+  "date": "2026-02-15",
+  "vehicles": [
+   "fishing boat"
+  ],
+  "summary": "Two fisherfolk were rescued on Sunday, 15 February 2026 after their 8-metre fishing boat capsized in rough seas off Lantawan, Basilan. They drifted for about two hours until the passing M/L Sea Dayang spotted them at 11 a.m. and alerted the Coast Guard's BRP Melchora Aquino, whose rigid-hull inflatable boat picked them up; both were in stable condition after first aid and a check with the PDRRMO, and were taken to the PCG Sub-Station Lantawan.",
+  "sources": [
+   {
+    "outlet": "Manila Bulletin",
+    "url": "https://mb.com.ph/2026/02/16/pcg-rescues-2-fisherfolk-from-capsized-boat-in-basilan",
+    "title": "PCG rescues 2 fisherfolk from capsized boat in Basilan",
+    "date": "2026-02-16"
+   }
+  ],
+  "confidence": "likely",
+  "note": "Day and details from the Manila Bulletin search snippet (host refuses fetches). SunStar's '2 fishermen rescued off Basilan' (5 Feb 2026) is a different incident off Baluno, Isabela City on 4 February."
+ },
+ {
+  "id": "2026-02-03-bongao-fire",
+  "deaths": 0,
+  "summary": "A fire broke out at 10:09 p.m. on Tuesday, 3 February 2026 in the coastal village of Lamion, Bongao, Tawi-Tawi and burned for about four hours through around 1,000 stilt houses mostly of light materials, displacing some 5,000 people, before the Bongao Central Fire Station declared it out at about 2 a.m. The MDRRMO reported no deaths; the cause and damage estimate were under investigation. Bongao was placed under a state of calamity, and the Bangsamoro government later gave cash aid to over 900 fire-hit households.",
+  "sources": [
+   {
+    "outlet": "SunStar Zamboanga",
+    "url": "https://www.sunstar.com.ph/zamboanga/fire-destroys-1000-houses-in-bongao-tawi-tawi",
+    "title": "Fire destroys 1,000 houses in Bongao, Tawi-Tawi",
+    "date": "2026-02-04"
+   },
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/112731/fire-razes-at-least-1000-houses-in-tawi-tawi/story",
+    "title": "Fire razes at least 1,000 houses in Tawi-Tawi",
+    "date": "2026-02-04"
+   }
+  ],
+  "image": {
+   "url": "https://cf-images.assettype.com/sunstar%2F2026-02-04%2Ficd2chst%2FTawi-Tawi-fire.jpg?rect=0%2C164%2C750%2C394&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+   "outlet": "SunStar Zamboanga",
+   "href": "https://www.sunstar.com.ph/zamboanga/fire-destroys-1000-houses-in-bongao-tawi-tawi"
+  },
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-02-17-cotabato-fire",
+  "sources": [
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/112964/fire-displaces-20-families-in-cotabato-city/story",
+    "title": "Fire displaces 20 families in Cotabato City",
+    "date": "2026-02-18"
+   }
+  ],
+  "image": {
+   "url": "https://images.gmanews.tv/regionaltv2023/content_images/article/sunog-for-site_2026_02_18_14_20_23.jpeg",
+   "outlet": "GMA Regional TV",
+   "href": "https://www.gmanetwork.com/regionaltv/news/112964/fire-displaces-20-families-in-cotabato-city/story"
+  },
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-03-23-cotabato-road",
+  "vehicles": [
+   "motorcycle",
+   "SUV"
+  ],
+  "sources": [
+   {
+    "outlet": "GMA News (Balitambayan)",
+    "url": "https://www.gmanetwork.com/news/balitambayan/promdi/981223/estudyanteng-tumatawid-sa-pedestrian-lane-tumilapon-nang-masalpok-ng-nag-overtake-na-motorsiklo/story/",
+    "title": "Estudyanteng tumatawid sa pedestrian lane, tumilapon nang masalpok ng nag-overtake na motorsiklo",
+    "date": "2026-03-24"
+   }
+  ],
+  "image": {
+   "url": "https://images.gmanews.tv/webpics/2026/03/Untitled8_2026_03_24_19_21_21.jpg",
+   "outlet": "GMA News",
+   "href": "https://www.gmanetwork.com/news/balitambayan/promdi/981223/estudyanteng-tumatawid-sa-pedestrian-lane-tumilapon-nang-masalpok-ng-nag-overtake-na-motorsiklo/story/"
+  },
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-04-16-marawi-water",
+  "barangay": "Panoroganan",
+  "summary": "Five elementary pupils aged 7 to 11, three boys and two girls, drowned around noon on Thursday, 16 April 2026 while swimming in a pond-like water impounding area at Phase 2 of the permanent shelter in Barangay Panoroganan, Marawi City, far from any houses. Police said they had been floating on a discarded refrigerator that tipped over in the deep part; a playmate aged 8 was rescued and given first aid. All five were declared dead on arrival at a Marawi hospital. The Inquirer placed the site in Barangay Kilala and dated it 15 April.",
+  "sources": [
+   {
+    "outlet": "Philstar",
+    "url": "https://www.philstar.com/probinsiya/2026/04/18/2521735/5-bata-patay-sa-lunod-sa-lawa",
+    "title": "5 bata patay sa lunod sa lawa!",
+    "date": "2026-04-18"
+   }
+  ],
+  "image": {
+   "url": "https://media.philstar.com/photos/2026/04/17/nos_2026-04-17_22-04-01.jpg",
+   "outlet": "Philstar",
+   "href": "https://www.philstar.com/probinsiya/2026/04/18/2521735/5-bata-patay-sa-lunod-sa-lawa"
+  },
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-06-07-malabang-fire",
+  "sources": [
+   {
+    "outlet": "MSSD BARMM",
+    "url": "https://mssd.barmm.gov.ph/relief-and-psychosocial-support-extended-to-fire-victims-in-malabang/",
+    "title": "Relief and psychosocial support extended to fire victims in Malabang",
+    "date": "2026-06-09"
+   }
+  ],
+  "image": {
+   "url": "https://mssd.barmm.gov.ph/wp-content/uploads/2026/06/malabang-fire-1024x1024.png",
+   "outlet": "MSSD BARMM",
+   "href": "https://mssd.barmm.gov.ph/relief-and-psychosocial-support-extended-to-fire-victims-in-malabang/"
+  },
+  "confidence": "likely"
+ },
+ {
+  "id": "2026-07-10-calanogas-other",
+  "sources": [
+   {
+    "outlet": "Politiko Mindanao",
+    "url": "https://mindanao.politiko.com.ph/lanao-del-sur-continues-search-for-missing-persons-in-calanogas-landslide/",
+    "title": "Lanao del Sur continues search for missing persons in Calanogas landslide",
+    "date": "2026-07-12"
+   },
+   {
+    "outlet": "GMA News",
+    "url": "https://www.gmanetwork.com/news/topstories/regions/994429/landslide-calanogas-lanao-del-sur/story/",
+    "title": "5 dead, 6 missing as landslide strikes Calanogas, Lanao del Sur",
+    "date": "2026-07-10"
+   },
+   {
+    "outlet": "Philstar",
+    "url": "https://www.philstar.com/sports/2026/07/10/2541232/5-villagers-dead-landslides-due-lanao-del-sur-heavy-rains",
+    "title": "5 villagers dead in landslides due to Lanao del Sur heavy rains",
+    "date": "2026-07-10"
+   }
+  ],
+  "image": {
+   "url": "https://media.philstar.com/photos/2026/07/10/calanogas-landslide_2026-07-10_16-48-18.jpg",
+   "outlet": "Philstar",
+   "href": "https://www.philstar.com/sports/2026/07/10/2541232/5-villagers-dead-landslides-due-lanao-del-sur-heavy-rains"
+  },
+  "confidence": "confirmed",
+  "note": "Politiko (12 July) confirms 7 dead, 4 missing, with the search still on. Manila Bulletin on 11 July reported 11 bodies retrieved and 3 missing, which conflicts with the police/READi count; no report after 13 July found."
+ },
+ {
+  "id": "2026-07-21-buldon-water",
+  "vehicles": [
+   "boat"
+  ],
+  "sources": [
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/114934/man-drowns-after-boat-capsizes-in-maguindanao-del-norte/story/",
+    "title": "Man drowns after boat capsizes in Maguindanao del Norte",
+    "date": "2026-07-24"
+   }
+  ],
+  "image": {
+   "url": "https://images.gmanews.tv/regionaltv2023/content_images/article/lumos_2026_07_24_10_59_00.jpeg",
+   "outlet": "GMA Regional TV",
+   "href": "https://www.gmanetwork.com/regionaltv/news/114934/man-drowns-after-boat-capsizes-in-maguindanao-del-norte/story/"
+  },
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-07-27-bongao-water",
+  "vehicles": [
+   "motorboat"
+  ],
+  "summary": "A motorboat carrying at least 62 people had engine trouble off the coast of Bongao, Tawi-Tawi on Monday, 27 July 2026. Coast Guard Sub-Station Bongao, Marine Environmental Protection Unit and Special Operations Group personnel set out aboard M/L Piaksah, found the stricken M/L Trisha Mae and towed it to the Port of Bongao, arriving by 10:30 p.m.; no one was reported hurt.",
+  "sources": [
+   {
+    "outlet": "GMA News",
+    "url": "https://www.gmanetwork.com/news/topstories/regions/996508/62-persons-rescued-after-motorboat-encountered-engine-trouble-off-tawi-tawi-says-pcg/story/",
+    "title": "62 persons rescued after motorboat encountered engine trouble off Tawi-Tawi, says PCG",
+    "date": "2026-07-28"
+   }
+  ],
+  "image": {
+   "url": "https://images.gmanews.tv/webpics/2026/07/PCG_rescues_passengers_Tawi-Tawi_2026_07_28_21_58_26.jpg",
+   "outlet": "GMA News",
+   "href": "https://www.gmanetwork.com/news/topstories/regions/996508/62-persons-rescued-after-motorboat-encountered-engine-trouble-off-tawi-tawi-says-pcg/story/"
+  },
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-07-29-datu-blah-t-sinsuat-water",
+  "vehicles": [
+   "motorbanca"
+  ],
+  "sources": [
+   {
+    "outlet": "GMA News",
+    "url": "https://www.gmanetwork.com/news/topstories/regions/996801/6-passengers-of-capsized-motor-banca-rescued-in-maguindanao-del-norte-area-pcg/story",
+    "title": "6 passengers of capsized motor banca rescued in Maguindanao del Norte area - PCG",
+    "date": "2026-07-30"
+   }
+  ],
+  "image": {
+   "url": "https://images.gmanews.tv/webpics/2026/07/PCG_rescued_six_passengers_from_a_capsized_motor_banca_2026_07_30_22_12_11.jpg",
+   "outlet": "GMA News",
+   "href": "https://www.gmanetwork.com/news/topstories/regions/996801/6-passengers-of-capsized-motor-banca-rescued-in-maguindanao-del-norte-area-pcg/story"
+  },
+  "confidence": "confirmed"
+ },
+ {
+  "id": "2026-08-shariff-aguak-fire",
+  "date": "2026-08-19",
+  "barangay": "Poblacion",
+  "summary": "A fire broke out shortly before midnight on Wednesday, 19 August 2026 at the public market in Barangay Poblacion, Shariff Aguak, Maguindanao del Sur, and was put out at about 1:45 a.m. on 20 August. A married couple, believed to have been asleep in their stall, were found dead inside it; 8 to 10 stalls were affected, including some selling LPG, and several cylinders exploded. The BFP's initial assessment pointed to an electrical cause, with the investigation ongoing.",
+  "sources": [
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/115251/couple-dies-in-shariff-aguak-market-fire/story/",
+    "title": "Couple dies in Shariff Aguak market fire",
+    "date": "2026-08-20"
+   }
+  ],
+  "image": {
+   "url": "https://images.gmanews.tv/regionaltv2023/content_images/article/fire-_2026_08_20_18_53_12.jpeg",
+   "outlet": "GMA Regional TV",
+   "href": "https://www.gmanetwork.com/regionaltv/news/115251/couple-dies-in-shariff-aguak-market-fire/story/"
+  },
+  "confidence": "confirmed"
+ }
+]

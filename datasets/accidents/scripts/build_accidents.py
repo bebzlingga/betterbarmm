@@ -177,19 +177,31 @@ assign_ids(merged)
 PATCHES = {}
 for path in sorted(glob.glob(os.path.join(ROOT, 'enrichment', '*.json'))):
     for patch in json.load(open(path)): PATCHES.setdefault(patch['id'], []).append(patch)
-patched = 0
+patched, dropped_by_patch = 0, []
 for r in merged:
     for patch in PATCHES.get(r['id'], []):
         patched += 1
+        # A later report can drop a record (outside the region, or a duplicate of another) or move it to its proper town.
+        if patch.get('drop'): dropped_by_patch.append(r); break
+        if patch.get('municipality'):
+            town = resolve_town(patch['municipality'], patch.get('province') or r['province'])
+            if town:
+                r['municipality'], r['province'] = town
+                centre = CENTRE[town[1], town[0]]
+                r.update(lat=centre[0], lon=centre[1], placed='municipality')
+            else: print('  patch names an unknown town:', patch['municipality'], 'for', r['id'], file=sys.stderr)
         for k in ('date', 'title', 'summary', 'deaths', 'injured', 'missing', 'vehicles', 'image'):
             if patch.get(k) is not None: r[k] = patch[k]
-        if patch.get('barangay') and r['placed'] != 'barangay' and r['municipality']:
-            r['barangay'] = patch['barangay']
-            hit = geocode_barangay(re.sub(r'^(brgy\.?|barangay)\s*', '', patch['barangay'], flags=re.I), r['municipality'], r['province'], CENTRE[(r['province'], r['municipality'])])
+        barangay = patch.get('barangay') or (r['barangay'] if patch.get('municipality') else None)
+        if barangay and r['placed'] != 'barangay' and r['municipality']:
+            r['barangay'] = barangay
+            hit = geocode_barangay(re.sub(r'^(brgy\.?|barangay)\s*', '', barangay, flags=re.I), r['municipality'], r['province'], CENTRE[(r['province'], r['municipality'])])
             if hit: r.update(lat=hit['lat'], lon=hit['lon'], placed='barangay')
         seen = {s['url'] for s in r['sources']}
         r['sources'] += [s for s in patch.get('sources') or [] if s.get('url') and s['url'] not in seen and not seen.add(s['url'])]
     r.pop('_file', None)
+for r in dropped_by_patch:
+    merged.remove(r); dropped.append(('enrichment', r['date'], r['municipality'], 'dropped by patch', r['title']))
 if patched: print(f'{patched} patches applied from enrichment/', file=sys.stderr)
 assign_ids(merged)
 json.dump(CACHE, open(CACHE_PATH, 'w'), indent=1, ensure_ascii=False)
