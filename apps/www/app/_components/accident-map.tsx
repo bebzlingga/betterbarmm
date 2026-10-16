@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowUpRightIcon, BoatIcon, CarProfileIcon, CrosshairIcon, FireIcon, WarningIcon, XIcon, type Icon } from '@phosphor-icons/react'
+import { ArrowUpRightIcon, BoatIcon, CaretLeftIcon, CaretRightIcon, CarProfileIcon, CrosshairIcon, FireIcon, WarningIcon, XIcon, type Icon } from '@phosphor-icons/react'
 import { SearchField, Select } from '@betterbarmm/editorial'
 import dynamic from 'next/dynamic'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
@@ -31,6 +31,9 @@ const Canvas = dynamic(() => import('./accident-map-canvas'), {
 type Show = 'both' | 'heat' | 'points'
 
 const figure = (n: number) => n.toLocaleString('en-PH')
+
+/** Rows of the table a page holds. */
+const PAGE = 20
 
 /** "Kurinte, Datu Odin Sinsuat, Maguindanao del Norte" — a city that is its own province is named once. */
 const place = (a: Accident) => [a.barangay, a.municipality !== a.province ? a.municipality : null, a.province].filter(Boolean).join(', ')
@@ -142,6 +145,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 	// One value each, '' for all. A new year or area in the data arrives in the
 	// dropdown without anyone editing a list.
 	const [query, setQuery] = useState('')
+	const [page, setPage] = useState(1)
 	const [year, setYear] = useState('')
 	const [type, setType] = useState('')
 	const [province, setProvince] = useState('')
@@ -166,6 +170,10 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 		[q, year, type, province, deadlyOnly],
 	)
 	const filtered = useMemo(() => incidents.filter((a) => matches(a)), [incidents, matches])
+	// The page is clamped rather than reset when a filter shortens the list, so no effect has to watch the filters.
+	const pages = Math.max(1, Math.ceil(filtered.length / PAGE))
+	const current = Math.min(page, pages)
+	const shown = filtered.slice((current - 1) * PAGE, current * PAGE)
 
 	const features = useMemo<AccidentFeatures>(
 		() => ({
@@ -294,7 +302,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 
 	return (
 		<div>
-			<div className='border-b border-[var(--rule)] py-6'>{filters(false)}</div>
+			<div className='border-b border-[var(--rule)] pb-6'>{filters(false)}</div>
 
 			{/* The table view: every incident on the map, newest first, with its
 			    sources — drawn the way the registry's tables are drawn. */}
@@ -311,7 +319,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 					</tr>
 				</thead>
 				<tbody>
-					{filtered.map((a) => (
+					{shown.map((a) => (
 						<tr key={a.id} id={a.id} className='border-b border-[var(--rule-soft)] align-top transition-colors hover:bg-[var(--paper-2)]'>
 							<td className='num w-px whitespace-nowrap py-3.5 pr-4 text-[13px] text-[var(--ink-2)]'>{accidentDate(a.date)}</td>
 							<td className='hidden w-px whitespace-nowrap py-3.5 pr-4 text-[13px] text-[var(--ink-2)] md:table-cell'>
@@ -344,6 +352,31 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 				</tbody>
 			</table>
 			{filtered.length === 0 ? <p className='py-10 text-center text-[13.5px] text-[var(--ink-3)]'>Nothing here matches these filters.</p> : null}
+			{pages > 1 ? (
+				<div className='mt-6 flex items-center justify-end gap-3 text-[13px] text-[var(--ink-3)]'>
+					<button
+						type='button'
+						disabled={current <= 1}
+						onClick={() => setPage(current - 1)}
+						className='inline-flex size-9 cursor-pointer items-center justify-center border border-[var(--rule)] disabled:cursor-default disabled:opacity-40'
+						aria-label='Previous page'
+					>
+						<CaretLeftIcon size={14} />
+					</button>
+					<span className='num'>
+						Page {figure(current)} of {figure(pages)}
+					</span>
+					<button
+						type='button'
+						disabled={current >= pages}
+						onClick={() => setPage(current + 1)}
+						className='inline-flex size-9 cursor-pointer items-center justify-center border border-[var(--rule)] disabled:cursor-default disabled:opacity-40'
+						aria-label='Next page'
+					>
+						<CaretRightIcon size={14} />
+					</button>
+				</div>
+			) : null}
 
 			<dialog
 				ref={dialog}
