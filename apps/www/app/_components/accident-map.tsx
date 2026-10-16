@@ -104,7 +104,7 @@ function Sources({ a, sep = ' · ' }: { a: Accident; sep?: string }) {
 function Details({ a, onClose }: { a: Accident; onClose: () => void }) {
 	const t = typeOf(a.type)
 	return (
-		<article className='border border-[var(--ink)] bg-[var(--paper)] p-4'>
+		<article className='bg-[var(--paper)] p-4'>
 			<div className='flex items-start justify-between gap-3'>
 				<p className='flex flex-wrap items-center gap-2 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 					<KindIcon type={a.type} />
