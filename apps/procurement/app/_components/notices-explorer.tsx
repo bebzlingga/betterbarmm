@@ -4,7 +4,7 @@ import { CaretLeftIcon, CaretRightIcon, XIcon } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import type { NoticeRow, Totals } from '../_lib/philgeps'
-import { SearchField, Select } from './controls'
+import { SearchField, Select } from '@betterbarmm/editorial'
 import { longDate } from './parts'
 
 /* Bid notices, newest first, fetched a page at a time from /api/notices. */

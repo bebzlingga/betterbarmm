@@ -38,7 +38,7 @@ const secondaryLinks = [
 	// This week is hidden for now; the page still builds at /this-week.
 	// { key: 'this-week', href: '/this-week', label: 'This week' },
 	{ key: 'news', href: '/news', label: 'Latest news' },
-	{ key: 'accidents', href: '/accidents', label: 'Accidents' },
+	// Accidents is reached through the strip's Projects switch, not the bar; phones get a row in the menu below.
 	{ key: 'explainers', href: '/explainers', label: 'Explainers' },
 	{ key: 'about', href: '/about', label: 'About' },
 ] as const
@@ -342,7 +342,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 
 							<p className='bb-label mt-7'>Project</p>
 							<div className='mt-3 grid'>
-								{secondaryLinks.map((item) => (
+								{[...secondaryLinks, { key: 'accidents', href: '/accidents', label: 'Accident Monitor' } as const].map((item) => (
 									<Link
 										key={item.href}
 										href={item.href}

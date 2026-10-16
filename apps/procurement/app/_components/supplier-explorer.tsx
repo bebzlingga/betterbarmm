@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react'
 import { DataTable, type DataColumn, type DataRow } from './data-table'
-import { SearchField, Select } from './controls'
+import { SearchField, Select } from '@betterbarmm/editorial'
 
 /* Every supplier, filtered here: 1,850 small rows are cheap to ship. */
 

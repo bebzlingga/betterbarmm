@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react'
 import { DataTable, type DataColumn, type DataRow } from './data-table'
-import { SearchField, Select } from './controls'
+import { SearchField, Select } from '@betterbarmm/editorial'
 
 /* Every procuring entity, ranked; the filters run here, since 274 rows of
    yearly totals are small enough to ship whole. */

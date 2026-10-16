@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import type { PesoRow } from '../_lib/peso'
-import { Select } from './controls'
+import { Select } from '@betterbarmm/editorial'
 
 /* Each office's money three ways, for one year or all of them: what the
    budget gave it to buy with, what it put out to bid, what was awarded. */

@@ -1,4 +1,4 @@
-import { BuildingsIcon, CheckSquareOffsetIcon, CoinsIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon } from '@phosphor-icons/react/ssr'
+import { BuildingsIcon, CheckSquareOffsetIcon, CoinsIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon } from '@phosphor-icons/react/ssr'
 import { GlobalSearch } from './global-search'
 import { SwitchCloser } from './switch-closer'
 
@@ -147,7 +147,10 @@ export function UtilityBar({
 	/** An icon before "Workspace:" in the switch. */
 	switchIcon?: React.ReactNode
 }) {
-	const projectLabel = PROJECTS.find((item) => item.key === project)?.label
+	const currentProject = PROJECTS.find((item) => item.key === project)
+	const projectLabel = currentProject?.label
+	// The project's own glyph when one is open, a folder when none is: the switch wears what it holds.
+	const ProjectIcon = currentProject?.icon ?? FolderOpenIcon
 	return (
 		<div className={`utility-bar ${className}`}>
 			<div className='mx-auto flex max-w-[88rem] items-center justify-between gap-4 px-6 lg:px-8'>
@@ -162,6 +165,7 @@ export function UtilityBar({
 					/>
 					{/* Phones have no room for a second switch; their menu lists the projects. */}
 					<Switch
+						icon={<ProjectIcon size={13} weight='bold' aria-hidden='true' />}
 						label={projectLabel ? 'Project:' : 'Projects'}
 						value={projectLabel}
 						heading='Projects'

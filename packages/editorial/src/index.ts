@@ -14,6 +14,7 @@
    ============================================================ */
 
 export * from './brand-logo'
+export * from './controls'
 export * from './cta-panel'
 export * from './header-scroll'
 export * from './lang'

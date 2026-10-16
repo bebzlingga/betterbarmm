@@ -2,6 +2,10 @@
 
 import { CaretDownIcon, MagnifyingGlassIcon } from '@phosphor-icons/react'
 
+/* The estate's filter controls — a labelled select and a search field —
+   so every explorer, in whichever workspace, filters with the same two
+   boxes. Moved here from the procurement app, which drew them first. */
+
 export function Select({
 	label,
 	value,
