@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowUpRightIcon, BoatIcon, CaretLeftIcon, CaretRightIcon, CarProfileIcon, CrosshairIcon, FireIcon, WarningIcon, XIcon, type Icon } from '@phosphor-icons/react'
+import { ArrowUpRightIcon, BoatIcon, CaretLeftIcon, CaretRightIcon, CarProfileIcon, CrosshairIcon, FireIcon, WarningIcon, WavesIcon, XIcon, type Icon } from '@phosphor-icons/react'
 import { SearchField, Select } from '@betterbarmm/editorial'
 import dynamic from 'next/dynamic'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
@@ -39,7 +39,7 @@ const PAGE = 20
 const place = (a: Accident) => [a.barangay, a.municipality !== a.province ? a.municipality : null, a.province].filter(Boolean).join(', ')
 
 /** One glyph per kind, kept here rather than in the lib so the server page never loads the icon set. */
-const ICONS: Record<AccidentType, Icon> = { road: CarProfileIcon, water: BoatIcon, fire: FireIcon, shooting: CrosshairIcon, other: WarningIcon }
+const ICONS: Record<AccidentType, Icon> = { road: CarProfileIcon, water: BoatIcon, flood: WavesIcon, fire: FireIcon, shooting: CrosshairIcon, other: WarningIcon }
 
 /** The kind's glyph in the kind's colour — the swatch, with a shape. */
 function KindIcon({ type, size = 13 }: { type: AccidentType; size?: number }) {

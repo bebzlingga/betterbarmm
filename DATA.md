@@ -239,8 +239,8 @@ under-counted.
 | Later looks at single records — barangay, day, toll, photo — keyed by id | `enrichment/*.json` |
 | Build | `scripts/build_accidents.py` |
 
-Five kinds, one colour each on the map — road; sea, lake and river; fire
-and explosion; shooting; other — with the finer kind kept on the record.
+Six kinds, one colour each on the map — road; sea, lake and river; flood;
+fire and explosion; shooting; other — with the finer kind kept on the record.
 Shootings are the one deliberate kind carried, because they are the
 region's commonest violent death, and a shooting in a clan war or an armed
 clash counts like any other; bombings are crimes of another order and stay

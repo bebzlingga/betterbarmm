@@ -994,11 +994,12 @@
   flex: none;
 }
 
-/* The four kinds' colours, stepped for each ground; the map layer picks the
+/* The kinds' colours, stepped for each ground; the map layer picks the
    same values in code (see `_lib/accidents.ts`), so a chip and its dots match. */
 :root {
   --acc-road: #2a78d6;
   --acc-water: #1baf7a;
+  --acc-flood: #7a52cc;
   --acc-fire: #eb6834;
   --acc-shooting: #d11f2f;
   --acc-other: #8a8578;
@@ -1006,6 +1007,7 @@
 :root[data-theme="dark"] {
   --acc-road: #3987e5;
   --acc-water: #199e70;
+  --acc-flood: #9a7bea;
   --acc-fire: #d95926;
   --acc-shooting: #ef4050;
   --acc-other: #9a9488;

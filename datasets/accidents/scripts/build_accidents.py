@@ -28,7 +28,7 @@ except FileNotFoundError: LINKS = {}
 GEOCODE = '--no-geocode' not in sys.argv
 UA = 'BetterBARMM-map/1.0 (accident map build)'
 
-GROUP = {'road': 'road', 'sea': 'water', 'drowning': 'water', 'fire': 'fire', 'explosion': 'fire', 'shooting': 'shooting'}
+GROUP = {'road': 'road', 'sea': 'water', 'drowning': 'water', 'flood': 'flood', 'fire': 'fire', 'explosion': 'fire', 'shooting': 'shooting'}
 KIND = {'road': 'Road crash', 'sea': 'Boat mishap', 'drowning': 'Drowning', 'fire': 'Fire', 'explosion': 'Explosion', 'electrocution': 'Electrocution',
         'lightning': 'Lightning', 'landslide': 'Landslide', 'flood': 'Flood', 'collapse': 'Collapse', 'workplace': 'Workplace accident',
         'poisoning': 'Food poisoning', 'aviation': 'Aircraft crash', 'shooting': 'Shooting', 'other': 'Other'}

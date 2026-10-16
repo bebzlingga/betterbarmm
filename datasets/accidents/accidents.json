@@ -6515,7 +6515,7 @@
   },
   {
    "date": "2024-07-09",
-   "type": "other",
+   "type": "flood",
    "kind": "Flood",
    "title": "Flash floods in southern Lanao del Sur kill teen, 3 missing",
    "summary": "Heavy rain from the intertropical convergence zone sent flash floods through Malabang, Balabagan, Kapatagan and Marogong on the night of 9 July 2024. A boy of about 14 drowned in Kapatagan, a 15-year-old male was missing there, and a 2-year-old boy and his 3-year-old sister were missing in Balabagan after their house was swept away; 4 people were injured, 4,990 households were evacuated from 82 barangays and 665 houses were damaged.",
@@ -6549,11 +6549,11 @@
      "date": null
     }
    ],
-   "id": "2024-07-09-kapatagan-other"
+   "id": "2024-07-09-kapatagan-flood"
   },
   {
    "date": "2024-07",
-   "type": "other",
+   "type": "flood",
    "kind": "Flood",
    "title": "Flood kills 1 and affects over 3,000 families in Lanao del Sur",
    "summary": "Flooding in Lanao del Sur in July 2024 killed one person and affected more than 3,000 families.",
@@ -6575,7 +6575,7 @@
      "date": "2024-07-11"
     }
    ],
-   "id": "2024-07-lanao-del-sur-other"
+   "id": "2024-07-lanao-del-sur-flood"
   },
   {
    "date": "2024-07",
@@ -6605,7 +6605,7 @@
   },
   {
    "date": "2024-07",
-   "type": "other",
+   "type": "flood",
    "kind": "Flood",
    "title": "Flooding kills 3 in Matanog, Maguindanao del Norte",
    "summary": "Flooding in Matanog, Maguindanao del Norte during the July 2024 southwest monsoon rains killed 3 people as of 12 July 2024, per Office of Civil Defense data.",
@@ -6639,11 +6639,11 @@
      "date": "2024-07-11"
     }
    ],
-   "id": "2024-07-matanog-other"
+   "id": "2024-07-matanog-flood"
   },
   {
    "date": "2024-07",
-   "type": "other",
+   "type": "flood",
    "kind": "Flood",
    "title": "Flooding kills 2 in Kapatagan, Lanao del Sur",
    "summary": "Flash floods in Lanao del Sur around 9-10 July 2024 killed a boy and left 2 toddlers missing, per the Inquirer, which did not name the town. By 12 July 2024, Office of Civil Defense data cited 2 dead in Kapatagan, Lanao del Sur.",
@@ -6683,7 +6683,7 @@
      "date": "2024-07-11"
     }
    ],
-   "id": "2024-07-kapatagan-other"
+   "id": "2024-07-kapatagan-flood"
   },
   {
    "date": "2024-07",
@@ -8924,7 +8924,7 @@
   },
   {
    "date": "2022-10-28",
-   "type": "other",
+   "type": "flood",
    "kind": "Flood",
    "title": "Paeng floods and Kusiong landslide kill dozens in Maguindanao",
    "summary": "Heavy rain from Severe Tropical Storm Paeng caused flash floods across Maguindanao on 27-28 October 2022 and a landslide that buried homes in Barangay Kusiong, Datu Odin Sinsuat. Reports on 28 October put the death toll at at least 31. Teduray residents later asked the Senate to probe their relocation to the landslide area.",
@@ -8958,7 +8958,7 @@
      "date": "2022-11-10"
     }
    ],
-   "id": "2022-10-28-datu-odin-sinsuat-other-2"
+   "id": "2022-10-28-datu-odin-sinsuat-flood"
   },
   {
    "date": "2022-10",

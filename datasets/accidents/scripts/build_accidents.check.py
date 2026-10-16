@@ -15,7 +15,7 @@ assert len(ids) == len(set(ids)), 'ids repeat'
 assert ids == [a['id'] for a in sorted(incidents, key=lambda a: a['date'], reverse=True)], 'not newest first'
 for a in incidents:
     assert re.match(r'^\d{4}-\d{2}(-\d{2})?$', a['date']), a['id']
-    assert a['type'] in ('road', 'water', 'fire', 'shooting', 'other'), a['id']
+    assert a['type'] in ('road', 'water', 'flood', 'fire', 'shooting', 'other'), a['id']
     assert 4.3 <= a['lat'] <= 8.4 and 118.3 <= a['lon'] <= 125.5, f"{a['id']} is outside the region"
     assert a['placed'] in ('barangay', 'municipality', 'province'), a['id']
     assert a['municipality'] or a['placed'] == 'province', a['id']

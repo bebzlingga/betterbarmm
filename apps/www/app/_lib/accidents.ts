@@ -8,16 +8,16 @@ import dataset from '../../../../datasets/accidents/accidents.json'
    comes from an official register — none is published — so the map
    this feeds is a map of what was reported and indexed, and says so.
 
-   Five kinds, one colour each; the glyphs live with the component that
+   Six kinds, one colour each; the glyphs live with the component that
    draws them, so this file stays free of the browser. The finer kind (a
    drowning, a landslide, an LPG blast, an ambush) is kept on the record
-   and named in the details; it is not given a colour of its own because
-   five hues is as many as a dot map can keep apart for every reader.
+   and named in the details; it is not given a colour of its own because six hues
+   is as many as a dot map can keep apart for every reader.
    Shootings are the one deliberate kind carried, a clan war's or an
    armed clash's among them; bombings and the rest of the violence stay out.
    ============================================================ */
 
-export type AccidentType = 'road' | 'water' | 'fire' | 'shooting' | 'other'
+export type AccidentType = 'road' | 'water' | 'flood' | 'fire' | 'shooting' | 'other'
 
 export type Accident = {
 	id: string
@@ -48,6 +48,7 @@ export type Accident = {
 export const ACCIDENT_TYPES: { id: AccidentType; label: string; color: string; colorDark: string }[] = [
 	{ id: 'road', label: 'Road', color: '#2a78d6', colorDark: '#3987e5' },
 	{ id: 'water', label: 'Sea, lake & river', color: '#1baf7a', colorDark: '#199e70' },
+	{ id: 'flood', label: 'Flood', color: '#7a52cc', colorDark: '#9a7bea' },
 	{ id: 'fire', label: 'Fire & explosion', color: '#eb6834', colorDark: '#d95926' },
 	{ id: 'shooting', label: 'Shooting', color: '#d11f2f', colorDark: '#ef4050' },
 	{ id: 'other', label: 'Other', color: '#8a8578', colorDark: '#9a9488' },
