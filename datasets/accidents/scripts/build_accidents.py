@@ -173,37 +173,49 @@ def assign_ids(rows):
         r['id'] = base if counts[base] == 1 else f'{base}-{counts[base]}'
 assign_ids(merged)
 
-# The enrichment: patches keyed by the id the merge just gave, applied on top; a patched barangay is placed like any other.
-PATCHES = {}
-for path in sorted(glob.glob(os.path.join(ROOT, 'enrichment', '*.json'))):
-    for patch in json.load(open(path)): PATCHES.setdefault(patch['id'], []).append(patch)
+# The enrichment: patches keyed by a record's id, applied file by file in name order. An earlier patch can move a
+# record's date or town and so its id, so each record remembers every id it has carried, and a later file's patch
+# keyed by the newer id still finds it.
+for r in merged: r['_ids'] = {r['id']}
 patched, dropped_by_patch = 0, []
-for r in merged:
-    for patch in PATCHES.get(r['id'], []):
-        patched += 1
-        # A later report can drop a record (outside the region, or a duplicate of another) or move it to its proper town.
-        if patch.get('drop'): dropped_by_patch.append(r); break
-        if patch.get('municipality'):
-            town = resolve_town(patch['municipality'], patch.get('province') or r['province'])
-            if town:
-                r['municipality'], r['province'] = town
-                centre = CENTRE[town[1], town[0]]
-                r.update(lat=centre[0], lon=centre[1], placed='municipality')
-            else: print('  patch names an unknown town:', patch['municipality'], 'for', r['id'], file=sys.stderr)
-        for k in ('date', 'title', 'summary', 'deaths', 'injured', 'missing', 'vehicles', 'image'):
-            if patch.get(k) is not None: r[k] = patch[k]
-        barangay = patch.get('barangay') or (r['barangay'] if patch.get('municipality') else None)
-        if barangay and r['placed'] != 'barangay' and r['municipality']:
-            r['barangay'] = barangay
-            hit = geocode_barangay(re.sub(r'^(brgy\.?|barangay)\s*', '', barangay, flags=re.I), r['municipality'], r['province'], CENTRE[(r['province'], r['municipality'])])
-            if hit: r.update(lat=hit['lat'], lon=hit['lon'], placed='barangay')
-        seen = {s['url'] for s in r['sources']}
-        r['sources'] += [s for s in patch.get('sources') or [] if s.get('url') and s['url'] not in seen and not seen.add(s['url'])]
-    r.pop('_file', None)
-for r in dropped_by_patch:
-    merged.remove(r); dropped.append(('enrichment', r['date'], r['municipality'], 'dropped by patch', r['title']))
+def apply(r, patch):
+    if patch.get('municipality'):
+        town = resolve_town(patch['municipality'], patch.get('province') or r['province'])
+        if town:
+            r['municipality'], r['province'] = town
+            centre = CENTRE[town[1], town[0]]
+            r.update(lat=centre[0], lon=centre[1], placed='municipality')
+        else: print('  patch names an unknown town:', patch['municipality'], 'for', r['id'], file=sys.stderr)
+    for k in ('date', 'title', 'summary', 'deaths', 'injured', 'missing', 'vehicles', 'image'):
+        if patch.get(k) is not None: r[k] = patch[k]
+    # A source a later look found to be about a different incident comes off.
+    wrong = set(patch.get('wrong_sources') or [])
+    if wrong: r['sources'] = [s for s in r['sources'] if s['url'] not in wrong]
+    barangay = patch.get('barangay') or (r['barangay'] if patch.get('municipality') else None)
+    if barangay and r['municipality'] and (r['placed'] != 'barangay' or barangay != r['barangay']):
+        r['barangay'] = barangay
+        hit = geocode_barangay(re.sub(r'^(brgy\.?|barangay)\s*', '', barangay, flags=re.I), r['municipality'], r['province'], CENTRE[(r['province'], r['municipality'])])
+        if hit: r.update(lat=hit['lat'], lon=hit['lon'], placed='barangay')
+    seen = {s['url'] for s in r['sources']}
+    r['sources'] += [s for s in patch.get('sources') or [] if s.get('url') and s['url'] not in seen and not seen.add(s['url'])]
+for path in sorted(glob.glob(os.path.join(ROOT, 'enrichment', '*.json'))):
+    patches = {}
+    for patch in json.load(open(path)): patches.setdefault(patch['id'], []).append(patch)
+    for r in list(merged):
+        for pid in [i for i in patches if i in r['_ids']]:
+            for patch in patches.pop(pid):
+                patched += 1
+                # A later report can drop a record — outside the region, a duplicate, not an incident.
+                if patch.get('drop'):
+                    merged.remove(r); dropped.append(('enrichment', r['date'], r['municipality'], 'dropped by patch', r['title'])); break
+                apply(r, patch)
+            else: continue
+            break
+    for pid in patches: print('  patch matches no record:', pid, 'in', os.path.basename(path), file=sys.stderr)
+    assign_ids(merged)
+    for r in merged: r['_ids'].add(r['id'])
+for r in merged: r.pop('_ids', None); r.pop('_file', None)
 if patched: print(f'{patched} patches applied from enrichment/', file=sys.stderr)
-assign_ids(merged)
 json.dump(CACHE, open(CACHE_PATH, 'w'), indent=1, ensure_ascii=False)
 merged.sort(key=lambda r: r['date'], reverse=True)
 
