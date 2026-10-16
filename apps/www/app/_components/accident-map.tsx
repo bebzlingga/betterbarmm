@@ -275,7 +275,14 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 				<div className={plain ? 'w-full @xl:w-52' : 'w-full @xl:w-60'}>
 					<SearchField value={query} onChange={setQuery} placeholder='Title, place or kind' plain={plain} />
 				</div>
-				<div className={plain ? 'flex flex-wrap items-center gap-x-5 gap-y-2' : 'flex w-full flex-wrap gap-3 @xl:w-auto [&>*]:w-[calc(50%-0.375rem)] @xl:[&>*]:w-[8.5rem]'}>
+				{/* In the dialog on a phone the controls keep to one line that scrolls sideways, so the map keeps the screen. */}
+				<div
+					className={
+						plain
+							? 'flex w-full items-center gap-x-5 overflow-x-auto pr-8 [mask-image:linear-gradient(to_right,#000_calc(100%-2.5rem),transparent)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden [&>*]:shrink-0 @xl:w-auto @xl:flex-wrap @xl:gap-y-2 @xl:overflow-visible @xl:pr-0 @xl:[mask-image:none]'
+							: 'flex w-full flex-wrap gap-3 @xl:w-auto [&>*]:w-[calc(50%-0.375rem)] @xl:[&>*]:w-[8.5rem]'
+					}
+				>
 				<Select label='Year' value={year} onChange={setYear} options={[['', 'All years'], ...years.map((y): [string, string] => [y, `${y} (${byYear.get(y) ?? 0})`])]} plain={plain} />
 				<Select label='Kind' value={type} onChange={setType} options={[['', 'All kinds'], ...ACCIDENT_TYPES.map((k): [string, string] => [k.id, `${k.label} (${byType.get(k.id) ?? 0})`])]} plain={plain} />
 				<Select label='Area' value={province} onChange={setProvince} options={[['', 'All areas'], ...provinces.map((p): [string, string] => [p, `${p} (${byProvince.get(p) ?? 0})`])]} plain={plain} />
@@ -322,25 +329,30 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 				<caption className='sr-only'>Every incident on the map, newest first</caption>
 				<thead>
 					<tr className='border-b border-[var(--ink)]'>
-						<Th>Date</Th>
+						<Th className='hidden sm:table-cell'>Date</Th>
 						<Th className='hidden md:table-cell'>Kind</Th>
 						<Th wide>Incident</Th>
-						<Th numeric>Dead</Th>
-						<Th numeric>Injured</Th>
-						<Th numeric>Missing</Th>
+						<Th numeric className='hidden sm:table-cell'>Dead</Th>
+						<Th numeric className='hidden sm:table-cell'>Injured</Th>
+						<Th numeric className='hidden sm:table-cell'>Missing</Th>
 					</tr>
 				</thead>
 				<tbody>
 					{shown.map((a) => (
 						<tr key={a.id} id={a.id} className='border-b border-[var(--rule-soft)] align-top transition-colors hover:bg-[var(--paper-2)]'>
-							<td className='num w-px whitespace-nowrap py-3.5 pr-8 text-[13px] text-[var(--ink-2)]'>{accidentDate(a.date)}</td>
+							<td className='num hidden w-px whitespace-nowrap py-3.5 pr-8 text-[13px] text-[var(--ink-2)] sm:table-cell'>{accidentDate(a.date)}</td>
 							<td className='hidden w-px whitespace-nowrap py-3.5 pr-8 text-[13px] text-[var(--ink-2)] md:table-cell'>
 								<span className='flex items-center gap-1.5'>
 									<KindIcon type={a.type} />
 									{a.kind || typeOf(a.type).label}
 								</span>
 							</td>
-							<th scope='row' className='py-3.5 pr-8 text-left font-normal'>
+							<th scope='row' className='py-3.5 text-left font-normal sm:pr-8'>
+								{/* On a phone the row is one column: the date and kind over the title, the figures under it. */}
+								<p className='num mb-1 flex items-center gap-1.5 text-[12px] text-[var(--ink-3)] sm:hidden'>
+									<KindIcon type={a.type} />
+									{accidentDate(a.date)}
+								</p>
 								<button
 									type='button'
 									onClick={() => goTo(a)}
@@ -349,13 +361,18 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 									{a.title}
 								</button>
 								<p className='mt-0.5 text-[12.5px] text-[var(--ink-3)]'>{place(a)}</p>
+								{a.deaths || a.injured || a.missing ? (
+									<p className='num mt-1 text-[12.5px] font-semibold text-[var(--ink)] sm:hidden'>
+										{[a.deaths && `${figure(a.deaths)} dead`, a.injured && `${figure(a.injured)} injured`, a.missing && `${figure(a.missing)} missing`].filter(Boolean).join(' · ')}
+									</p>
+								) : null}
 								<p className='mt-2 hidden max-w-4xl text-[13px] leading-6 text-[var(--ink-2)] lg:block'>{a.summary}</p>
 								<p className='mt-1.5 text-[12px] leading-[1.7] text-[var(--ink-3)]'>
 									<Sources a={a} />
 								</p>
 							</th>
 							{(['deaths', 'injured', 'missing'] as const).map((key) => (
-								<td key={key} className='num w-px whitespace-nowrap py-3.5 pl-6 text-right text-[13px] tabular-nums text-[var(--ink)] sm:pl-10'>
+								<td key={key} className='num hidden w-px whitespace-nowrap py-3.5 pl-6 text-right text-[13px] tabular-nums text-[var(--ink)] sm:table-cell sm:pl-10'>
 									{a[key] ? figure(a[key] as number) : <span className='text-[var(--ink-mute)]'>–</span>}
 								</td>
 							))}
@@ -400,14 +417,14 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 				aria-label='Interactive map'
 				className='m-0 h-dvh max-h-none w-screen max-w-none overflow-y-auto bg-[var(--paper)] p-0 text-[var(--ink)] backdrop:bg-black/40 open:flex open:flex-col lg:overflow-hidden'
 			>
-				{/* The header is the filters, and the way out. */}
-				<div className='flex shrink-0 items-center justify-between gap-4 border-b border-[var(--rule)] px-4 py-2 lg:px-6'>
+				{/* The header is the filters, and the way out — on the dark ground, so it reads as the frame and the map as the page. */}
+				<div className='bb-ground flex shrink-0 items-start justify-between gap-4 border-b border-[var(--rule)] px-4 py-2 [color-scheme:dark] lg:items-center lg:px-6'>
 					<div className='min-w-0 flex-1'>{filters(true, true)}</div>
 					<button
 						type='button'
 						onClick={() => dialog.current?.close()}
 						aria-label='Close map'
-						className='inline-flex cursor-pointer items-center justify-center text-[var(--ink-3)] transition hover:text-[var(--ink)]'
+						className='inline-flex h-10 cursor-pointer items-center justify-center text-[var(--ink-3)] transition hover:text-[var(--ink)]'
 					>
 						<XIcon size={16} weight='bold' aria-hidden='true' />
 					</button>
