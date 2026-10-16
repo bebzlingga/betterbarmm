@@ -1367,8 +1367,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -5872,6 +5872,84 @@
   },
   {
    "date": "2024-12",
+   "type": "other",
+   "kind": "Food poisoning",
+   "title": "Food poisoning kills 3, hospitalizes 30 in Maguindanao del Norte",
+   "summary": "Three people died and 30 were hospitalized due to food poisoning in Maguindanao del Norte, as reported on 2 December 2024.",
+   "province": "Maguindanao del Norte",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 3,
+   "injured": 30,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.0236,
+   "lon": 124.3157,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNLTE3dWxfdHdlNEVNX3VjT3ZIQzFGV3MwY2xuRmFUXzQwb2dzTFA4ZEFkOWlZamZGNHp5NWJnSV90QVZYeXk1cjI2YVdpZnM0WW5Fc3dsUzJZaVgwVlYwb3R5WlQxZ0hkMDc4UHp0VmN2UzFVczQ4ZURBRWFzMVN6UDhKT2o3TFJ3WngxQjJ6Qk5MMlk0ZHFjYlpLYWNLQzd4bUxqYjY2eFdnbFlFdUppeW1GRlNOOTVyM2MtSjQ3SlNkYVg2SHpWcEFoSmVUOFnSAdQBQVVfeXFMTS1wUk5RQjFJWDUyRWtjcm94VkxWUThmd00yb20xdzNCbnczYXh2UHZsYWVPYnk5M0tZeDJfSzNObVZqY1R2Y3lqYy1mazFLYkMwblJaVlZ6dGZVS21Ta3RTeS1nWl9fcVVaVHduWTAtUzNodzduWm5vejhfUEVEWWszV3JtMFZGQVkyS0U4aEFwRUlBNVVVSkxkUkFNaTRLY1U4eGVlcUpCcFczSkltS2dCb0FzTVJFQnA4S3A0ZVg4VUtBLVdqUUd2eUxvQV91WVZoVUg?oc=5",
+     "title": "3 dead, 30 hospitalized due to food poisoning in Maguindanao del Norte",
+     "date": "2024-12-02"
+    }
+   ],
+   "id": "2024-12-maguindanao-del-norte-other"
+  },
+  {
+   "date": "2024-12",
+   "type": "fire",
+   "kind": "Fire",
+   "title": "Fire razes 10 stores at a public market in Maguindanao del Norte",
+   "summary": "A fire destroyed 10 stores at a public market in Maguindanao del Norte, per a report published December 27, 2024.",
+   "province": "Maguindanao del Norte",
+   "municipality": null,
+   "barangay": null,
+   "deaths": null,
+   "injured": null,
+   "missing": null,
+   "vehicles": [],
+   "lat": 7.0236,
+   "lon": 124.3157,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "GMA Network",
+     "url": "https://www.gmanetwork.com/regionaltv/news/105838/fire-razes-10-stores-at-public-market-in-maguindanao-del-norte/story/",
+     "title": "Fire razes 10 stores at public market in Maguindanao del Norte",
+     "date": "2024-12-27"
+    }
+   ],
+   "id": "2024-12-maguindanao-del-norte-fire"
+  },
+  {
+   "date": "2024-12",
+   "type": "water",
+   "kind": "Boat mishap",
+   "title": "Fisherman stranded at sea for 2 days rescued in Tawi-Tawi",
+   "summary": "A fisherman who had been stranded at sea for 2 days was rescued in Tawi-Tawi, per a report published December 6, 2024.",
+   "province": "Tawi-Tawi",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 0,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 5.029,
+   "lon": 119.7713,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQVNkVHNOVk5rZUlKcjNnRTVWMU01d01xcVQ1cUxVRkRrcDBoeHlIbzBzQnhIZnBNUkhGdkEyNjhwbEpPVm9pT1RBNENQdDJBWWJ3Z096X3FxNjQ2NERjTHdEWmdvaVdTN0hrTHBLRDFxQm9mTHVFbW4wc3p2akkxOVJGSmdGNGhfODlJeDM0N0pjVFNya1Qzb29Jc2hUZDhEeS1zYXBCR0J5SmdzVENpY1RrWDRTSkhJVzBlQ0pDVdIBxAFBVV95cUxOeldzZW9BLXFhaF9jbDllZWFnY1pWdm9ScTUxZklXUllFLWxmeTV0dGNlZnkxODR6SXMydGp5cU9aOUJUMVNRX2NhOW16YXk1SWlEclAyVHZnUEhKbVM0OXlaRGpJWkhRUWhocjM3UG5CQVhoVllCSW5USHJrNXRvby13cXhMMXVOZDBnWW5yVkh0WEl6VWZFbmVObzJ3MFlPWGpHVWI4a1dHRXp4bGl4cGhVN19NRC1kc0RtTG91THF4Zi1v?oc=5",
+     "title": "Fisherman stranded at sea for 2 days rescued in Tawi-Tawi",
+     "date": "2024-12-06"
+    }
+   ],
+   "id": "2024-12-tawi-tawi-water"
+  },
+  {
+   "date": "2024-12",
    "type": "shooting",
    "kind": "Shooting",
    "title": "3 military intelligence agents killed in Lamitan City ambush, Basilan",
@@ -5965,8 +6043,8 @@
    "injured": 1,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
@@ -6017,8 +6095,8 @@
    "injured": 5,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.5479,
-   "lon": 122.0458,
+   "lat": 6.6576,
+   "lon": 122.145,
    "placed": "province",
    "sources": [
     {
@@ -6055,8 +6133,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -6096,6 +6174,32 @@
   },
   {
    "date": "2024-10",
+   "type": "fire",
+   "kind": "Fire",
+   "title": "Fire hits families in Cotabato City",
+   "summary": "A fire in Cotabato City affected several families, who received aid from the BARMM government, per a report published November 1, 2024.",
+   "province": "Cotabato City",
+   "municipality": "Cotabato City",
+   "barangay": null,
+   "deaths": null,
+   "injured": null,
+   "missing": null,
+   "vehicles": [],
+   "lat": 7.2238,
+   "lon": 124.2467,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "BARMM Official Website",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-aids-families-hit-by-cotabato-city-fire/",
+     "title": "BARMM Gov’t aids families hit by Cotabato City fire",
+     "date": "2024-11-01"
+    }
+   ],
+   "id": "2024-10-cotabato-fire"
+  },
+  {
+   "date": "2024-10",
    "type": "shooting",
    "kind": "Shooting",
    "title": "3 rebels killed in Lanao del Sur clash",
@@ -6107,8 +6211,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
@@ -6133,8 +6237,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.2371,
-   "lon": 124.2928,
+   "lat": 7.0236,
+   "lon": 124.3157,
    "placed": "province",
    "sources": [
     {
@@ -6159,8 +6263,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -6185,8 +6289,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.5479,
-   "lon": 122.0458,
+   "lat": 6.6576,
+   "lon": 122.145,
    "placed": "province",
    "sources": [
     {
@@ -6328,6 +6432,34 @@
   },
   {
    "date": "2024-08",
+   "type": "road",
+   "kind": "Road crash",
+   "title": "Army truck and passenger vehicle crash in Maguindanao del Norte; 9 hurt",
+   "summary": "An Army truck and a passenger vehicle collided in Maguindanao del Norte in August 2024, injuring nine people.",
+   "province": "Maguindanao del Norte",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 0,
+   "injured": 9,
+   "missing": 0,
+   "vehicles": [
+    "truck"
+   ],
+   "lat": 7.0236,
+   "lon": 124.3157,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://www.philstar.com/nation/2024/08/09/2376675/9-hurt-after-army-truck-passenger-vehicle-crash-maguindanao-del-norte",
+     "title": "9 hurt after Army truck, passenger vehicle crash in Maguindanao del Norte",
+     "date": "2024-08-09"
+    }
+   ],
+   "id": "2024-08-maguindanao-del-norte-road"
+  },
+  {
+   "date": "2024-08",
    "type": "shooting",
    "kind": "Shooting",
    "title": "Farmer killed in ambush in Maguindanao del Sur",
@@ -6339,8 +6471,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -6385,37 +6517,19 @@
    "date": "2024-07-09",
    "type": "other",
    "kind": "Flood",
-   "title": "Flash floods in Kapatagan, Lanao del Sur kill 2, toddlers missing",
+   "title": "Flash floods in southern Lanao del Sur kill teen, 3 missing",
    "summary": "Heavy rain from the intertropical convergence zone sent flash floods through Malabang, Balabagan, Kapatagan and Marogong on the night of 9 July 2024. A boy of about 14 drowned in Kapatagan, a 15-year-old male was missing there, and a 2-year-old boy and his 3-year-old sister were missing in Balabagan after their house was swept away; 4 people were injured, 4,990 households were evacuated from 82 barangays and 665 houses were damaged.",
    "province": "Lanao del Sur",
    "municipality": "Kapatagan",
    "barangay": null,
-   "deaths": 2,
+   "deaths": 1,
    "injured": 4,
-   "missing": 2,
+   "missing": 3,
    "vehicles": [],
    "lat": 7.5419,
    "lon": 124.2143,
    "placed": "municipality",
    "sources": [
-    {
-     "outlet": "Inquirer.net",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZHN5ajRDbDVEQ3JxWFQwSFd4ZFhLaDU4d3Z0ZGN3LWswM09OSENPVGxTenZSTk1uYzZWWHFOelF4aEMxcWdFalhBbmU5eVNnbzJUZVZ0RzhRS1hFSUJZRDVLcmhtRlA3RGdOUnpoT0R0TTMyeXRfTUZST3o1SXpXeXhQNF9LbzByemhBX0xXTHNJOFNKV0w4eFlFY9IBoAFBVV95cUxPVWZYcHhwWC1YamFjemtLbEhNMklMay1QQ01JZ1R5cTNzU1dKLXJqTm5tb0tJTEo4QVRZNzRvYjdxamNuN01Uek9LRVR4ZkpSNE51WVlQV0t1SEN0TmY2Z0tCZnBrOHJnS0w5aENtYkxtUFNxalJHQXBnTFhFS0RDQk9yRjZRQ255cjFFbHc1cFFlQTVNRXFPWFlxVjJ1OVZT?oc=5",
-     "title": "Boy dead, 2 toddlers missing in Lanao del Sur flash floods",
-     "date": "2024-07-10"
-    },
-    {
-     "outlet": "Inquirer.net",
-     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ibXpIM1VZT3p4MnJHOXJGU2JBRGtYOGxmQUdmN1otYlN3Z3lWUjJCakE5T0VvOFpIWTVnNkMyRWQySEEtY1lpTkljeDYtX0szWDdSRENDaVljaVY3dzdkcGxDeGtNWGdHVXNlaFlfZVhHYUZkRGRrdEo2cHpid9IBgwFBVV95cUxNOUVrNnRVVm02WVNaVkhYWTViX2N0RUVNVExQdVU1UzNrbVJqYlRnNnV4My01YnFSY2k3SzFEOGVTWHRKOXhqLXJUdDZZOHRwTlpqdUc5ZDdqeVZMMDZwamdYTDhZT25tNi1Fb1g3allBNEphbU1Kai1pT3lkSzBQbnpWaw?oc=5",
-     "title": "1 dead, 7 missing in Mindanao floods",
-     "date": "2024-07-11"
-    },
-    {
-     "outlet": "Facebook",
-     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQVG1HVm1rZ2U0SC1ab0EyMU5idEt4d1ROdHRscUF6YVNhOFhmTXZjSXZPM2E0YXJBLXBVbEhER3c5QUYwVXc0LUVuaTQ2Z0tCMnVTV2pKdlFLVVRfZVRIampWVG1fT3RCdExJSVFSVmh5dHUtTkI0NmlUWENteTdJQXlfRWRJWURiTjR1NUZJNUswWE9VQnBab1Jqei1UWDZNNmtBbWFPS3g5ZmNEcHBJcUdrbXlDa3RzY1haY094dG1zWklrUjd1VWJxcS00aEp0YXA4?oc=5",
-     "title": "The massive flooding in the Bangsamoro region has killed at least five people as of Friday, July 12, 2024. Three people died in Matanog, Maguindanao del Norte while two others were reported dead in Kapatagan, Lanao del Sur, based on data from the Office",
-     "date": "2024-07-13"
-    },
     {
      "outlet": "SunStar (PNA)",
      "url": "https://www.sunstar.com.ph/cagayan-de-oro/1-dead-3-missing-in-lanao-floods-road-clearing-ops-up",
@@ -6441,7 +6555,59 @@
    "date": "2024-07",
    "type": "other",
    "kind": "Flood",
-   "title": "Floods kill 3 in Matanog, Maguindanao del Norte",
+   "title": "Flood kills 1 and affects over 3,000 families in Lanao del Sur",
+   "summary": "Flooding in Lanao del Sur in July 2024 killed one person and affected more than 3,000 families.",
+   "province": "Lanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": null,
+   "missing": null,
+   "vehicles": [],
+   "lat": 8.0047,
+   "lon": 124.2854,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdDRRTWV6ZFNELWRJUnl4d2RBM2NBbWRzRHZYRVhXcTlLWWNLZ0dCanR1WGdzTWk4RWR2NFNsUHJfU2ZxYkx1c2ZhLXE3UW9zVjBEdXJaa3BDOVJ4ZG5SWHBFclJpdG91Uk8wRmM0bm8yQW95XzFOekR0aFlCTjU2TWIzSUdVZkdDbEZ5NzlQcFozODA5eEVzalJJWERnNTMzb1l3SmZQN3N6RW1RcEtsUEpPZjNhRzNWUnhV?oc=5",
+     "title": "1 killed, over 3,000 families affected by flood in Lanao del Sur",
+     "date": "2024-07-11"
+    }
+   ],
+   "id": "2024-07-lanao-del-sur-other"
+  },
+  {
+   "date": "2024-07",
+   "type": "water",
+   "kind": "Boat mishap",
+   "title": "4 Russians rescued at sea in Tawi-Tawi",
+   "summary": "Four Russian nationals were rescued at sea in Tawi-Tawi, as reported on 15 July 2024.",
+   "province": "Tawi-Tawi",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 0,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 5.029,
+   "lon": 119.7713,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "The Manila Times",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNcThhUGZKdnliZHRrLTZFc3J0Y1FuaGdrTkhnRUVvbnlyc182SmJyMTBGR2NKU2tQYTR2T2pkdXpQR1BNQkJuSUR2NmYwLUdMSG5JWDN2WTVoa2J0cXVQUnlxNWc3VW5fZzRKUVdGME85Y2pEMV9kRGxodnNma0NBNjhreDdKdnFnTC1vMUtpNFJ2dWpz0gGaAUFVX3lxTE9pN1RRUWJudERHNnJicEJmVG8tbHZxcEJlLVZfY1JnQWlCQXVZT0RVSnNvVFRaWDJlX0tTNW81Z0tXdEo2N3VET01vNEZrWjhHcUVDY3pqR0YtMVc4N1V6SzhCVFRnWmNPaWY2TGZxMFBKS1hzZWpQemNWZW9Kckl1UC1YMEFORXhCOEFzZGpvODBXbFBHZWM0Q2c?oc=5",
+     "title": "4 Russians rescued in Tawi-Tawi sea",
+     "date": "2024-07-15"
+    }
+   ],
+   "id": "2024-07-tawi-tawi-water"
+  },
+  {
+   "date": "2024-07",
+   "type": "other",
+   "kind": "Flood",
+   "title": "Flooding kills 3 in Matanog, Maguindanao del Norte",
    "summary": "Flooding in Matanog, Maguindanao del Norte during the July 2024 southwest monsoon rains killed 3 people as of 12 July 2024, per Office of Civil Defense data.",
    "province": "Maguindanao del Norte",
    "municipality": "Matanog",
@@ -6461,6 +6627,12 @@
      "date": "2024-07-13"
     },
     {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOUGs0Qjd3VzNFa1ljdHpMV2plR2w0ZW1SMWxUalItY3pxa0VOVXoxVnZuMUY5cnp1UXd3NXloR01PTkJIcWNCa0xicGdjbXZONmhKYzU2b0VhZnRCQTkyN0FUeVB4VGtOVXhJTXdXcHAxN2w4X0wxdGxzb1RRdThTcmhYdHh4d0h3a3NKQkVia2FRT0RsWXc3eHVfMTHSAaIBQVVfeXFMTnljU3ljY1ZHajVwOHlXNnI1TUlhMU9ZeTgzaUVDUmRhY21RR0FDMG84anJTeW1qRm1DVVVGa2Rsd0kxRTRfUG1WT0hqUDd1NXM3VC1MZDEwX1Fuei12NEl4VzhHU0s2LWRCTmFIMGhoa1BSdDg1bnBLMFRaODA3XzBpLU9RekQwc3BzTFNpV0hBbGhrQnpWX3BBdnpGM1NZM2Rn?oc=5",
+     "title": "At least 5 dead in BARMM floods",
+     "date": "2024-07-14"
+    },
+    {
      "outlet": "Inquirer.net",
      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ibXpIM1VZT3p4MnJHOXJGU2JBRGtYOGxmQUdmN1otYlN3Z3lWUjJCakE5T0VvOFpIWTVnNkMyRWQySEEtY1lpTkljeDYtX0szWDdSRENDaVljaVY3dzdkcGxDeGtNWGdHVXNlaFlfZVhHYUZkRGRrdEo2cHpid9IBgwFBVV95cUxNOUVrNnRVVm02WVNaVkhYWTViX2N0RUVNVExQdVU1UzNrbVJqYlRnNnV4My01YnFSY2k3SzFEOGVTWHRKOXhqLXJUdDZZOHRwTlpqdUc5ZDdqeVZMMDZwamdYTDhZT25tNi1Fb1g3allBNEphbU1Kai1pT3lkSzBQbnpWaw?oc=5",
      "title": "1 dead, 7 missing in Mindanao floods",
@@ -6468,6 +6640,76 @@
     }
    ],
    "id": "2024-07-matanog-other"
+  },
+  {
+   "date": "2024-07",
+   "type": "other",
+   "kind": "Flood",
+   "title": "Flooding kills 2 in Kapatagan, Lanao del Sur",
+   "summary": "Flash floods in Lanao del Sur around 9-10 July 2024 killed a boy and left 2 toddlers missing, per the Inquirer, which did not name the town. By 12 July 2024, Office of Civil Defense data cited 2 dead in Kapatagan, Lanao del Sur.",
+   "province": "Lanao del Sur",
+   "municipality": "Kapatagan",
+   "barangay": null,
+   "deaths": 2,
+   "injured": null,
+   "missing": 2,
+   "vehicles": [],
+   "lat": 7.5419,
+   "lon": 124.2143,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQVG1HVm1rZ2U0SC1ab0EyMU5idEt4d1ROdHRscUF6YVNhOFhmTXZjSXZPM2E0YXJBLXBVbEhER3c5QUYwVXc0LUVuaTQ2Z0tCMnVTV2pKdlFLVVRfZVRIampWVG1fT3RCdExJSVFSVmh5dHUtTkI0NmlUWENteTdJQXlfRWRJWURiTjR1NUZJNUswWE9VQnBab1Jqei1UWDZNNmtBbWFPS3g5ZmNEcHBJcUdrbXlDa3RzY1haY094dG1zWklrUjd1VWJxcS00aEp0YXA4?oc=5",
+     "title": "The massive flooding in the Bangsamoro region has killed at least five people as of Friday, July 12, 2024. Three people died in Matanog, Maguindanao del Norte while two others were reported dead in Kapatagan, Lanao del Sur, based on data from the Office",
+     "date": "2024-07-13"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOUGs0Qjd3VzNFa1ljdHpMV2plR2w0ZW1SMWxUalItY3pxa0VOVXoxVnZuMUY5cnp1UXd3NXloR01PTkJIcWNCa0xicGdjbXZONmhKYzU2b0VhZnRCQTkyN0FUeVB4VGtOVXhJTXdXcHAxN2w4X0wxdGxzb1RRdThTcmhYdHh4d0h3a3NKQkVia2FRT0RsWXc3eHVfMTHSAaIBQVVfeXFMTnljU3ljY1ZHajVwOHlXNnI1TUlhMU9ZeTgzaUVDUmRhY21RR0FDMG84anJTeW1qRm1DVVVGa2Rsd0kxRTRfUG1WT0hqUDd1NXM3VC1MZDEwX1Fuei12NEl4VzhHU0s2LWRCTmFIMGhoa1BSdDg1bnBLMFRaODA3XzBpLU9RekQwc3BzTFNpV0hBbGhrQnpWX3BBdnpGM1NZM2Rn?oc=5",
+     "title": "At least 5 dead in BARMM floods",
+     "date": "2024-07-14"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZHN5ajRDbDVEQ3JxWFQwSFd4ZFhLaDU4d3Z0ZGN3LWswM09OSENPVGxTenZSTk1uYzZWWHFOelF4aEMxcWdFalhBbmU5eVNnbzJUZVZ0RzhRS1hFSUJZRDVLcmhtRlA3RGdOUnpoT0R0TTMyeXRfTUZST3o1SXpXeXhQNF9LbzByemhBX0xXTHNJOFNKV0w4eFlFY9IBoAFBVV95cUxPVWZYcHhwWC1YamFjemtLbEhNMklMay1QQ01JZ1R5cTNzU1dKLXJqTm5tb0tJTEo4QVRZNzRvYjdxamNuN01Uek9LRVR4ZkpSNE51WVlQV0t1SEN0TmY2Z0tCZnBrOHJnS0w5aENtYkxtUFNxalJHQXBnTFhFS0RDQk9yRjZRQ255cjFFbHc1cFFlQTVNRXFPWFlxVjJ1OVZT?oc=5",
+     "title": "Boy dead, 2 toddlers missing in Lanao del Sur flash floods",
+     "date": "2024-07-10"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ibXpIM1VZT3p4MnJHOXJGU2JBRGtYOGxmQUdmN1otYlN3Z3lWUjJCakE5T0VvOFpIWTVnNkMyRWQySEEtY1lpTkljeDYtX0szWDdSRENDaVljaVY3dzdkcGxDeGtNWGdHVXNlaFlfZVhHYUZkRGRrdEo2cHpid9IBgwFBVV95cUxNOUVrNnRVVm02WVNaVkhYWTViX2N0RUVNVExQdVU1UzNrbVJqYlRnNnV4My01YnFSY2k3SzFEOGVTWHRKOXhqLXJUdDZZOHRwTlpqdUc5ZDdqeVZMMDZwamdYTDhZT25tNi1Fb1g3allBNEphbU1Kai1pT3lkSzBQbnpWaw?oc=5",
+     "title": "1 dead, 7 missing in Mindanao floods",
+     "date": "2024-07-11"
+    }
+   ],
+   "id": "2024-07-kapatagan-other"
+  },
+  {
+   "date": "2024-07",
+   "type": "other",
+   "kind": "Lightning",
+   "title": "Lightning kills woman, injures another in Maguindanao del Sur",
+   "summary": "A lightning strike killed a woman and injured another person in Maguindanao del Sur, per a report published July 29, 2024.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.7166,
+   "lon": 124.7866,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNHNQWkJXWi1NSUJrSzFSS2VuSVB3SE4zOERoZGxfVVNlR2Q1dlo0Vlo4cVViWHlxT0M2N1EwdGczVlBoQmM0ajV6TGl0LUJ0MUNMRmdQRlNUSDNYWHZDZGh3MmpYdkpOWmlCZ2ZfT2wzYlllV1FhZEpLOE96Vno0UWRUdmx0a0FSZVdlb2tlWm0xVnk5TWFjUEotONIBoAFBVV95cUxPOFVidHhKdTFxbkd0MVBvQmRJUkEtYi1wWGswZWNINFpyTUhrWHc0M1ZkUjJjaFNDdjk2OVlVdWtBVXA2dW1PY2NWMzdjdWVPaGdDNmgwSmJyRm9uTmhQcjVzdXkwU3dNTUNHNFFSaC04THR1VWJGS2xEOG9PZE91cUpXZVFDRlZJdldLSnpSU3FIcFBLVEtzMnhUQVJMeVFu?oc=5",
+     "title": "Lightning kills woman, hurt another in Maguindanao del Sur",
+     "date": "2024-07-29"
+    }
+   ],
+   "id": "2024-07-maguindanao-del-sur-other"
   },
   {
    "date": "2024-07",
@@ -6482,8 +6724,8 @@
    "injured": 2,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.2371,
-   "lon": 124.2928,
+   "lat": 7.0236,
+   "lon": 124.3157,
    "placed": "province",
    "sources": [
     {
@@ -6494,6 +6736,32 @@
     }
    ],
    "id": "2024-07-maguindanao-del-norte-shooting"
+  },
+  {
+   "date": "2024-06",
+   "type": "water",
+   "kind": "Boat mishap",
+   "title": "4 soldiers rescued drifting in Basilan Strait",
+   "summary": "Four soldiers were rescued while drifting in the Basilan Strait in June 2024.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": "Basilan Strait",
+   "deaths": 0,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.6576,
+   "lon": 122.145,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "SunStar Publishing Inc.",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPUktHLU9ZSDBJaFRlVURWRm93cWo0Y0Zhc2VKdFBFZnNfZ0NqZjVfUUkwbHltTElrX0djNXBWckcycUhWZENCRm45dUExdmZSRTdNRGRoVS01aDdadUFwMk5yVlQybUl5TUptY29GR3l5QWdOZEJCX0EtcFVXRWtaZFYzb3VJQk4yLUHSAZcBQVVfeXFMUGdYSl91Y0wzejhLeWlsLXhaZW1WMjRCdXRUdFFyZnlTd0tPaEhORll5MTh2MjlpN1N2MEJRS25TcFpTaFo3VlFYNTJlb0dzUXBHeWJsVE04WmRHbDdmTXpIblR2aGxuM3UtaWRNMjBSQndHT2JRMWpILW14ZXg0bnpOMExBdXloUGNvcWY1cDFGelVvOENibw?oc=5",
+     "title": "4 soldiers rescued drifting in Basilan strait",
+     "date": "2024-06-20"
+    }
+   ],
+   "id": "2024-06-basilan-water"
   },
   {
    "date": "2024-06",
@@ -6534,8 +6802,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.5479,
-   "lon": 122.0458,
+   "lat": 6.6576,
+   "lon": 122.145,
    "placed": "province",
    "sources": [
     {
@@ -6592,8 +6860,8 @@
    "injured": 3,
    "missing": 0,
    "vehicles": [],
-   "lat": 5.2937,
-   "lon": 119.6682,
+   "lat": 5.029,
+   "lon": 119.7713,
    "placed": "province",
    "sources": [
     {
@@ -6618,8 +6886,8 @@
    "injured": 3,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
@@ -6644,8 +6912,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.2371,
-   "lon": 124.2928,
+   "lat": 7.0236,
+   "lon": 124.3157,
    "placed": "province",
    "sources": [
     {
@@ -6697,6 +6965,38 @@
   },
   {
    "date": "2024-04",
+   "type": "other",
+   "kind": "Food poisoning",
+   "title": "Suspected food poisoning downs 80 in Maguindanao del Sur",
+   "summary": "About 80 people fell ill from suspected food poisoning in Maguindanao del Sur, per reports published April 26, 2024.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 0,
+   "injured": 80,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.7166,
+   "lon": 124.7866,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQckt0SUdSZW5IS1phaF9RVjVRMFVfQmhnTnFlZkthYmJxcDhjeDJvclMwVC1rVGZxZXNoTGRxRlN2RFVsTGVIOVRNenpjQW5BYW1LMWhuTDhJUlNhd1RqTURVMW83c1VnTGlDb3VmR3lEckJsWDl0VE1QbHBsVmxMQlBXcGg4by1pOGswa0MwVGROUVNHUDZ1YUdn0gGfAUFVX3lxTE1sV25iRnFEbzVPNTFTT3pLcjR0U0lQRGwtVmZ1TEl5R3FENUJqcXc0R0lmWG02Sjh6N1FmWkdMSkNkQnEtNGhSa1lvcFptSmJIUjVLS2hNYXdJZmZFS1ZIeW1tVURYRTFWc0NvZF9qd1NfUE85M00xTERyTTVObHlOTGdfREdPSi1DTTg1SkZLcFhVeGdiNjNIbVlUZng3MA?oc=5",
+     "title": "Suspected food poisoning downs 80 in Maguindanao del Sur",
+     "date": "2024-04-26"
+    },
+    {
+     "outlet": "Manila Bulletin",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOd1I5TFBta2I5dWxlOEdJaXhQTzczc0lQbjV2VW8xVkpPb1hDWElBNlFKU3hSNWo1Mzd0bVVGcU9POVFqbnNKVHZBdFFRUGlMNHFOUlRxem4xRW5EVkp2UzZKdE5PSGpZOFpmWXdITVZTejdlYUVxbnVIVmZCOGhlZENxSDZhS2NXTlZYR0trX1FPTWQ2Rmc?oc=5",
+     "title": "Suspected food poisoning downs 80 people in Maguindanao del Sur",
+     "date": "2024-04-26"
+    }
+   ],
+   "id": "2024-04-maguindanao-del-sur-other"
+  },
+  {
+   "date": "2024-04",
    "type": "shooting",
    "kind": "Shooting",
    "title": "4 drug suspects killed in clash with police in Tawi-Tawi",
@@ -6708,8 +7008,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 5.2937,
-   "lon": 119.6682,
+   "lat": 5.029,
+   "lon": 119.7713,
    "placed": "province",
    "sources": [
     {
@@ -6760,8 +7060,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -6786,8 +7086,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -6829,6 +7129,38 @@
   },
   {
    "date": "2024-03",
+   "type": "fire",
+   "kind": "Fire",
+   "title": "Fire affects 42 families in Lanao del Sur",
+   "summary": "A fire affected 42 families in Lanao del Sur, who received emergency assistance from the BARMM government, per a report published March 8, 2024.",
+   "province": "Lanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": null,
+   "injured": null,
+   "missing": null,
+   "vehicles": [],
+   "lat": 8.0047,
+   "lon": 124.2854,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "BARMM Official Website",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNEpXZVdjdTg4M0NkYTBpNUg1X0VLbzlvRXA4ellGR0hWb3JKVHRsVlBCUGRfU1JweXNHeS1jZFVjdEZwdGhjTXF1TktTbmdDNlBRQ1lIYnhPc0ZXbnJvY3BoZ0NJNjFJRDVYUV9seHlBaEJJOE1pNnJmOERJZ3JvT3BuOW05cEI1NUZuS3FYc2ptWC1CWV9iWUZad01yejVBcllGWHBUV09lVDdiUHY2RjJvdWZnYmx0VzVMcHNhWWpXQQ?oc=5",
+     "title": "BARMM sends emergency assistance to 42 fire-affected families in Lanao del Sur",
+     "date": "2024-03-08"
+    },
+    {
+     "outlet": "BARMM Official Website",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNS0xHbVU1M1ZoVFVSYTVEd05sREs0YVl2clJ4R1ZfWDRVaHlQX04zSTZtM29jeGNTdXU5eVhmMHQwVkJDOUxiQW9xQ2FIU2JBUzAyakpoQ1lLU2tOYmQwODEta2FwX2tfemZfV3FZYkVCVnFRUEpmUElEN0VjN3QyUnUyVjktdmMxekozU0JlOC12QlpkdTMyT0txcjltVGZyUXdUNzlKY3lDQzk2Y3FhT2s1ZFNyOWdvN2dpOXpYUQ?oc=5",
+     "title": "BARMM sends emergency assistance to 42 fire-affected families in Lanao del Sur",
+     "date": "2024-03-08"
+    }
+   ],
+   "id": "2024-03-lanao-del-sur-fire"
+  },
+  {
+   "date": "2024-03",
    "type": "shooting",
    "kind": "Shooting",
    "title": "BIFF member killed in Maguindanao del Sur clash",
@@ -6840,8 +7172,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -6872,8 +7204,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -6978,8 +7310,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -6990,6 +7322,46 @@
     }
    ],
    "id": "2024-03-maguindanao-del-sur-shooting-3"
+  },
+  {
+   "date": "2024-02",
+   "type": "water",
+   "kind": "Boat mishap",
+   "title": "Passenger boat with engine failure drifts off Tawi-Tawi; 85 rescued",
+   "summary": "A passenger boat drifted off Tawi-Tawi after engine failure in February 2024. All 85 people aboard, 78 passengers and 7 crew, were rescued.",
+   "province": "Tawi-Tawi",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 0,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [
+    "boat"
+   ],
+   "lat": 5.029,
+   "lon": 119.7713,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQm1ndnZJdHJ4XzdVWWZkUWgxQ0ZqTXpvUll2T2owTE03WjJyeXFpNElvOHRfZ2lMWUF1SkhqeHVwaUxYZ3ZRX1hNaklVN01FR05nY2VQS3BCRUFzVVgxNWNZS2phSVhvRFlyeTl3Q3FtaEtObUhob0IyM3ZaQnUwTGVkakUwcVREZWIxaEZvRjVWa3J6RWdhRGV2Nmt3R0FUZGpTckF3TUR0U3BM0gGzAUFVX3lxTE43d2p5a3laV01KUzE0UXl1SnBJclZiYVhOcnJIYmtpRS1rX3ctY1Fsd2xWODZwTmZBM1V1Z3o5VUtqOGVQSWJyTFpoR0c5SVREX0hIOTR5cXVPX2dVWk5SVERDd1pQUHZFSUJuT01CMWFTdzRmYmNmZVZFY240WXNueHJPMW1rc3A4SHlpR1lsWVpZMm1pdjE3TVg0TWZrcDBhVGtDbWpwYWpzODZqZWluX2lJ?oc=5",
+     "title": "78 passengers, 7 crewmen of distressed boat in Tawi-Tawi rescued",
+     "date": "2024-02-15"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMlp1a0I0eXU1LVBFTklLUlZBXy1ROFNUckN3OUlhTkstRGg4X0hSTUFQRl9rRDFzOHcyT21ScjJWdFdXZG9venNYVldLR1l2R2JwZlloTDV5SVRjVEowRmhTNHBhMUZBV3BmX1RDdlh2bkM0VDhQNnpmdHRDa0gwS1Z6X2R4WmFLMk9XUEV6QWEtLUlrbnJ3MkFmcVdkR3NuVGVnTVl6aTZwdzZ0UHfSAbMBQVVfeXFMTkNGV2NReXZGUWc2RElqV013Mlo2Yl9KMmlzeXJZaThYZ2JRbDRCUDYzUmtRcjY0X2F4akxXZ29JaERzQlZ2ZTJFbHFuWFpnYUFhUjRaS29mVF81WHhwbVRiTHp0d29LMDkzZUVqU1EwSFAyellxV2lTaUg0V3o0dTl0OGZSRHZpdkwzeEtiZncyNHNxVllhN1dHV0gzM3NJeGJWZTFUYUNnQzFmdXdqUVNsOUk?oc=5",
+     "title": "85 people rescued after passenger boat engine failure off Tawi-Tawi",
+     "date": "2024-02-15"
+    },
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNak5TaUp1ODVMUEwyQ0V1QVZpWWpPTHNfN0wzWVp3MkF4Z092aG1EZnBQTlpXcWhJR1NXQTh4NGpWdHhqcHRab3NFQTFuSWZwMWh0a0JkcTBrUk80YTVuZ0Rkd2lmbG5nRnM0cGxzZ0Rnc0tURHRHR2FsTExCbjZVLUU3OUJqdy1uZklj0gGSAUFVX3lxTE9BLVYtR3hxaE1jY3V1TlloMEVhbEpWa0ZKQjVPcDdqU0xhcFRqLWtpYUNkMURnRXpMQ3RDSEtlRThOTFB6ZzZnc1J1ZGtfWWFXbXFHRExMd1F4bXYxSjQzbE1acnZsdml4aFVXWm5hUjI5dUxFaWF1elRxay1JOVBob3R5TV9IUFhtbE5hTUFhVFdB?oc=5",
+     "title": "85 rescued as boat drifts off Tawi-Tawi",
+     "date": "2024-02-16"
+    }
+   ],
+   "id": "2024-02-tawi-tawi-water"
   },
   {
    "date": "2024-02",
@@ -7004,8 +7376,8 @@
    "injured": 1,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -7071,8 +7443,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
@@ -7097,8 +7469,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -7123,8 +7495,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -7149,8 +7521,8 @@
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.5479,
-   "lon": 122.0458,
+   "lat": 6.6576,
+   "lon": 122.145,
    "placed": "province",
    "sources": [
     {
@@ -7227,8 +7599,8 @@
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
@@ -7282,6 +7654,32 @@
    "date": "2023-09",
    "type": "fire",
    "kind": "Fire",
+   "title": "Fire leaves residents needing Navy relief aid in Tawi-Tawi",
+   "summary": "A fire in Tawi-Tawi left victims who received relief aid from the Philippine Navy, as reported on 13 September 2023. The report headline does not name the town or casualties.",
+   "province": "Tawi-Tawi",
+   "municipality": null,
+   "barangay": null,
+   "deaths": null,
+   "injured": null,
+   "missing": null,
+   "vehicles": [],
+   "lat": 5.029,
+   "lon": 119.7713,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "MindaNews",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA2X1BvMXhPcHI3UnRzdGVERlJzT1ZIV0xyQXZVNG5LNlNFNHBpbnhXelg3dFlTRFZ1S0dMak96RzFSNE4yMGd1cjZTR3Ewek5NTkFIMkRlVUwxTWUtcGZnUjBpYjVRY2g3aG9iSVJUNHNsRGRvVlFsVlh5T2U?oc=5",
+     "title": "Navy brings relief aid for Tawi-Tawi fire victims",
+     "date": "2023-09-13"
+    }
+   ],
+   "id": "2023-09-tawi-tawi-fire"
+  },
+  {
+   "date": "2023-09",
+   "type": "fire",
+   "kind": "Fire",
    "title": "Fire displaces families in Cotabato City",
    "summary": "A fire hit homes in Cotabato City in or shortly before September 2023. The Bangsamoro government reported distributing aid to the affected families on 11 September 2023; the item gives neither the date of the fire nor casualties.",
    "province": "Cotabato City",
@@ -7317,8 +7715,8 @@
    "injured": 3,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -7349,8 +7747,8 @@
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -7375,8 +7773,8 @@
    "injured": 1,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.2371,
-   "lon": 124.2928,
+   "lat": 7.0236,
+   "lon": 124.3157,
    "placed": "province",
    "sources": [
     {
@@ -7427,8 +7825,8 @@
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.5479,
-   "lon": 122.0458,
+   "lat": 6.6576,
+   "lon": 122.145,
    "placed": "province",
    "sources": [
     {
@@ -7465,8 +7863,8 @@
    "injured": 9,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.5479,
-   "lon": 122.0458,
+   "lat": 6.6576,
+   "lon": 122.145,
    "placed": "province",
    "sources": [
     {
@@ -7491,8 +7889,8 @@
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.5479,
-   "lon": 122.0458,
+   "lat": 6.6576,
+   "lon": 122.145,
    "placed": "province",
    "sources": [
     {
@@ -7517,8 +7915,8 @@
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -7575,8 +7973,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
@@ -7633,8 +8031,8 @@
    "injured": 1,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -7665,8 +8063,8 @@
    "injured": 4,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -7697,8 +8095,8 @@
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -7723,8 +8121,8 @@
    "injured": 4,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
@@ -7749,8 +8147,8 @@
    "injured": 1,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.2371,
-   "lon": 124.2928,
+   "lat": 7.0236,
+   "lon": 124.3157,
    "placed": "province",
    "sources": [
     {
@@ -7761,6 +8159,32 @@
     }
    ],
    "id": "2023-05-maguindanao-del-norte-shooting"
+  },
+  {
+   "date": "2023-04",
+   "type": "water",
+   "kind": "Boat mishap",
+   "title": "11 Malaysians rescued in waters off Tawi-Tawi",
+   "summary": "Eleven Malaysians were rescued in waters off Tawi-Tawi, according to a report published on April 4, 2023.",
+   "province": "Tawi-Tawi",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 0,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 5.029,
+   "lon": 119.7713,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdmZ6MWhzSXg5ZDh4MWVsZlM0czRlMHlwWmV3cFlFcE5TdktmaXA1ZHZLem1SQ1R4U3dfLVBOUVp0c0ktWDNDMDF4MlBsOWJReU5zSG1wenBWZm8zZXJvZGFYbjdkcF9TN2JNa0E5ZkRHcVVUeUYyc3ZpOXdPekd1bktkc0E2TTM1bWlR0gGQAUFVX3lxTE1sVmFQRnVEbUFWM2x0VzVrcU5vZG9HZGZVR25pWng0WElVV1BqelVfYW1ENV9za0ktVWRTeGNhMFQyVURlTXd2SkkwRVNFN3A3WV9yT1pOQVh2eXUyWlZMdmptRXJwQ1hqNE5IcTJhbFpRZGhkbWZvRU83bTFzS0VfZ3JTaWpvMWRzOVBsMFh3UQ?oc=5",
+     "title": "11 Malaysians rescued in waters off Tawi-Tawi",
+     "date": "2023-04-04"
+    }
+   ],
+   "id": "2023-04-tawi-tawi-water"
   },
   {
    "date": "2023-04",
@@ -7775,8 +8199,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -7801,8 +8225,8 @@
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -7818,7 +8242,7 @@
    "date": "2023-03-29",
    "type": "water",
    "kind": "Boat mishap",
-   "title": "MV Lady Mary Joy 3 burns off Baluk-Baluk Island; 33 dead",
+   "title": "Passenger ferry catches fire near Baluk-Baluk Island, Hadji Muhtamad, Basilan",
    "summary": "The Jolo-bound Aleson Shipping ferry MV Lady Mary Joy 3, sailing from Zamboanga City with 249 people aboard, caught fire near Baluk-Baluk Island, Hadji Muhtamad, at about 10:40 p.m. on 29 March 2023. Victims burned inside the vessel or drowned after jumping overboard; the final toll was 33 dead after the last missing passenger was recovered, with 14 hospitalized early on. Investigators blamed faulty electrical wiring in an air-conditioned cabin.",
    "province": "Basilan",
    "municipality": "Hadji Muhtamad",
@@ -7833,6 +8257,108 @@
    "lon": 121.7094,
    "placed": "barangay",
    "sources": [
+    {
+     "outlet": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQQmJCaGs3QW5kMnNkbjlhcTJDaGY1X3hQMFVlQVZjcnBrbm9jUWpMTWZGa01GNHNIVTY3U05GWWx2SmcxU1NzYkxXN2pYbTlCZUdiOEpwRkJxVGFwODhTczVzSnhLX1R5NWM2Y01FQUZDbk5WcURxUEc4RHhzaERuZmxzT05Lb29oNVBJYm1JS2xyTTgxLVQ2dWF6UTNtR3lpQ0RMN0N5YWo5V3pObXl0RGlMY3BiTGEzMXJqdC1KZVl2eGdZZnpBQ1RJX3RGQW9zUk1B?oc=5",
+     "title": "BREAKING | Ten people are reported dead after a commercial vessel catches fire near Baluk-Baluk Island, Hadji Muhtamad, Basilan province at around 11 p.m. Wednesday (March 29, 2023), according to the Philippine Coast Guard. The vessel, en route to Jol",
+     "date": "2023-03-30"
+    },
+    {
+     "outlet": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOUFV0TTZuR0Q5dFhnblZUOEdKbHVwbXVCM1NKM2lOdWVDYzJ5dTZ3eVk0c3p1TFRGUEhHbWtwWmE2cGx2THpOanVINjJzclFzaHBvUXdOY2FLSVIxQms3d3RjUEdNSWZOdlRvY09scWRxQklLSGpEOEwzOThaeWExeVlncXh0dlo0Sm1lV05yQkFWTVpiTWE1azh3MGRWeEhqeG9VT3VRZWdEQ003RTRVQU9ZeVIxbDZDVmx2YnNuOVVGeld1dm1JdkdqWnJLNEZXVDlBWDBHNjdBbVZw?oc=5",
+     "title": "A ferry carrying about 250 passengers and crew caught fire off the coast of Basilan past 11 pm on Wednesday, and at least 12 people were killed with seven still missing, a provincial governor said Thursday. Many of those rescued had jumped off the ferry in pa",
+     "date": "2023-03-30"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://www.gmanetwork.com/news/topstories/regions/865489/fire-hits-passenger-vessel-off-basilan/story/",
+     "title": "10 reported dead after fire hit passenger vessel off Basilan —PDRRMO",
+     "date": "2023-03-30"
+    },
+    {
+     "outlet": "International Business Times",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNX2VmVVhHeFg1REZVWjF2ektYYmlkSjJJSVlDUHRMQjlONjMwUW9NN1hCeFdqYVoxTm5pXzdMdnF5YnRFV3lNd055dmcxc2UwUFhNVzVIV3hteTZ3TXo2dnFnZW8tMEYzUDJaMW80U1NHQS1ka1g2VWxVM2FSTHlQaTdjQlhwYld3VWZHSGVpZG1xRDVoekNSQng0cHM5NFpzaktaVjNzbFc?oc=5",
+     "title": "28 Dead, Including Kids After Ship With 200 Passengers Catches Fire In The Philippines",
+     "date": "2023-03-30"
+    },
+    {
+     "outlet": "CNA",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVHprQ195ZmkyaGdFZ0IxT0U4Q0FKRlRiOWp6RmliVDRDYy1iYWZqS3JIekRWNWt3akQ3WWNtSXNIYW1XNHFZX3k1RFRLNm83SGZ0YkJHMzhXZW1JbzZYakNCeF9VVkdXZ2tURUZlUi12UnV1SU93QkQxSDBkNHpWc3lELVpxN3ZTSHdNVkNVOVlqVVZEQ2tpdnJZQlRyX2NVZmZiY1FzNk5VWFk?oc=5",
+     "title": "31 killed after fire rips through Philippine ferry",
+     "date": "2023-03-30"
+    },
+    {
+     "outlet": "Bracknell News",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUnJBaDd1UGMwSGt5LUZPNVl5LVIzMV9zYlYtbC1WZlZCOFM5TWd0WTUyU0ZMcFJ6VUZoVnRETDVwelpNSmo4bTZQNGZJV2Rsc2R2VVREbHY3QkFpQTNHQ3Q0V2t5MlJFUGk4MlZ5S2xkTE9DdDY4NkVxenpRT0ZseThGb19WX3dON3hjRmNIckZNU0Z6cnJ3?oc=5",
+     "title": "At least 31 dead after ferry fire in the Philippines",
+     "date": "2023-03-30"
+    },
+    {
+     "outlet": "Rappler",
+     "url": "https://www.rappler.com/philippines/mindanao/basilan-vessel-fire-march-29-2023/",
+     "title": "Basilan passenger ferry fire death toll climbs to 31",
+     "date": "2023-03-30"
+    },
+    {
+     "outlet": "CNN",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE53UkcyWFpSU2pscVg0bGJ4dWQxdTJkcHpWUWFnTksyeVVfdzZEUXFzNHFVQlAtSHM0Ml85eThIMTJQelU4WHdYQUhpQldiZmhSeWk3XzhSUzNPZ1BPVnQwWHBLSk5rWTkyd1ZMYnNla1lDS2pNemlVNy13SzdOWnc?oc=5",
+     "title": "Deadly fire engulfs Philippine ferry as dozens of passengers jump into sea to escape",
+     "date": "2023-03-30"
+    },
+    {
+     "outlet": "Xinhua",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOc3cycXY2NDViZXN5OFVEODFFMmczUGRkTVc5ajBXYjUzMTB0LWgtSGZCX09uUlRYNG55aEFuclhjUWh2by12eHgtOXZKejV4azhuT0VmYk8wZnE0cHA0NGVURmctTkZkUVFBbWt3d3JDanZ3d3FqVy1UOHZQS2JBNmowdUJtVzZid1JETA?oc=5",
+     "title": "Death toll from Philippine ferry fire rises to 28, over 200 rescued",
+     "date": "2023-03-30"
+    },
+    {
+     "outlet": "Al Jazeera",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZjhNUDRNZklyTTdsWHNNWWdUcWFPNzBBeFJ6ZzZjWWxBWS0tZGJDbm5HUnJfbzh1VmJ2RTNvVmc5SlVQem5heEFtbVJWbkR1UlNMTE9BSGswa1Y1V3JQbVBBdFBiV1UwNmMzSnl5bVdKTlFCbzFqbmtQa1NzX0xmWExLRk1qMm5WVmxndnZkNlZjSGk0V2xxa0pR0gGfAUFVX3lxTE9QNE1jY2VRWU9hbmlHcWIzak1YaWRwWHg5NlRhV0dRSHBUY09YcGFRbk9RTktENmE0dk5POFhwcVhjVGE3cldHaUpQNnZadjNNeGRMcHdkUE5UQjlqUzE3cTM4cHRPZnF1U24wN2ktckJRU1N0ZEh0dXpMR0dyTFVMVDJLSG9ZUXQ2bWw4VC1kQW0xSnlZZlBwMmY4eTlmcw?oc=5",
+     "title": "Death toll from Philippine ferry fire rises to 31",
+     "date": "2023-03-30"
+    },
+    {
+     "outlet": "Times of Oman",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNZ281S3lTUGc1UVRYRDZONzRFMWZ6N1otelptR1NsUGNrdF9ZRk1QR2tLSlhENlg4UmF6MWZWdjQxZEhBTHZ2SGdheV9zdzNxSDlJeXlnbHowdW5jNmlERnFrQUJjeGJUcmRIc3JHR0J4WHhSNGVTTXBOQjM0SEZPN2xWY3dJQi1Mam92RTI3ZmdIM19VdFh0M3FyTkhZM0JZWk9aTDNUaFMtS1Nid0pr?oc=5",
+     "title": "28 killed after inter-island ferry catches fire in southern Philippines",
+     "date": "2023-03-31"
+    },
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNMVdxckdoY0s4RERjY2lkaW5HRlV3am5RQ2JuSm04eVRHOE02SXhuQVpGNTU0OEgzMXV4b3RUZlBtZ3kwMklVMUY3UTF2NDgtcmNXRkNkSFlMQUZqakZ3TzZaSFVKOTViQVhyTGRFSjRWZDVUWXVEeW43N2wwX2VzT2VaVXRMMFNWdFdHeVhnXzZlUdIBmAFBVV95cUxQN2FIeEhUZGN2b216QUFvX3dnQXFRamlzLThCRDl5WE5GdzdPeGNSQTU4NHQ0M2IwRG5IbUttOW0wN3NXMXJLbk9wSV9JcnVBcHl3Mi13T0NwajU5RVloUnRJM1lOV2ZyY2Vsa0lTMDlsV2gwSFhsV25YYnhXQnEtMEVBMEtlcWE1NnlWYlliNlQwNUxNMlMwTw?oc=5",
+     "title": "At least 31 killed in Basilan ferry fire",
+     "date": "2023-03-31"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdmRYQW55SW40OWhXc0hKM1Q1WElDTW92YzhVaTVwMjVJRE9aTmZGYnB4TUlzanN2Y2hqU3o4SkZySVY2ZVVtZkt1QmdfYzFzS3pVYnRkSTdxTE51TWl3NGduZGxKeXZZWHRWNVFBcF9qbEo4VU1MRW9ZdV9qTW1ldnV2SFg2ZkNUNlh4Tk5JLWFYelNzTzFIaXBGSmlRUjVUMkN4WEZUbFplTmR2LWZLLU9ORdIBuAFBVV95cUxOYTd2YkhLNjZNOEJxNXVLMWdZdEcyb2oyb1N5RjNQRFBQbmM3LTBkMFhIa0tjT2QtaVRvdC1jdjA3ZnBnTEhuVmdKN3l3OXBlVnpnaHdkWFcxb3l2enotQ0dsaDFRYUVWUHpPVC13d1d4S1FJY1BJVTh3aEFuNFNHN0VnX3pfNmZMR0NORWVHeHMxTDB2T29XZmZ6cVplVHh6cFREVUNnOWdoQ05IQUlYQ2VOQzlDb1VS?oc=5",
+     "title": "2 soldiers missing in the ill-fated ship that caught fire off Basilan",
+     "date": "2023-04-03"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSGpneEo5WU9pX0NwQWZjMl82OGVDRGI0RVJUNXRSSG1iTkNiTFFkV25nZXl4RmdPdXNOZ21XalgxV2kxZHl4XzhzLS1XNWhFNnFzWnFvQkladDAzdm9Gbi1IUnBLR3QyLWVLY2RPQmx5a2VDRGVzZHFBMlBPY2ktOUxtT0xySVpQTDZWZjJfdE8tMmNnTGdfUjNaWGE5RU5hQkZaZ2pTaHpiTndQ0gGyAUFVX3lxTE9jTlhBNk9TNmloamdINW9WNWRKTmd2S0hDSDl1T3hBVk8xZkp6TUw4OXpUQTNkT1g5cU5FcWFpRVlWMUwyZlhjUGFaeW9SendIYldBaEtQanpwa0NRejY5b2lPUU52YWh3dFdYOUpBa1pBMmh2TnBwZV9VRzQyWS11ZDRwTHlGbTJtcXQ3aEwyWHUyVjY5ZEkzLUxIRW1qRW1raXl5LUtRekxuSDlvNVlpSUE?oc=5",
+     "title": "Death toll in Basilan ferry fire now 31 — PCG",
+     "date": "2023-04-05"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeFZrVEFDaUVERXItaFAtVFhGdFNSRk5Tb3RadTJaSV9TN1RONUVDQmljYmtXUGpBZlZkcTBBQUNNT01xZkxteTFTWGE0UEVva0stRXg4RGxLc3FEMVBBQk0tM1JRaThOMERyeXp1UktteUkwVll4amt1RC1nd0VKVVQ2akE0T1VReGZtVnBrbjVlZWlPRGhENy1MRVBIYXRjWUhmR3VfTURPdHd5Nlk1eS1uYk7SAboBQVVfeXFMTnMyd0liMXF3c2tURGhjX3QxUlVJRTZrcUFqOXZRb0dhNWlhX0NaeWxJcDhTLUZsU1NDQ3RWRFE2WHdPMmQ2ZXVLeFE1Q0UxOGhWS0FzTU1RclhieDhPMTlEdy1ucUVnUFBLSFUxUTViRG1GYlk2Wm1JS2xMNDlURXJ5QVJfb0h6ajRieHNnclI1bEREdGxPeDl4X3Z0QUw5eXl4TFpQTnJpMm1YSzFoYzVQdkdYR1NsRWJR?oc=5",
+     "title": "19 people still missing in Basilan ferry fire —OCD",
+     "date": "2023-04-10"
+    },
+    {
+     "outlet": "Philstar.com",
+     "url": "https://www.philstar.com/headlines/2023/04/10/2257780/death-toll-basilan-ferry-fire-rises-32",
+     "title": "Death toll from Basilan ferry fire rises to 32",
+     "date": "2023-04-10"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNeEZ4dzR1Zmt4V3ZySTNweGNxTW9leFN0UENjVm1pdUtkblpEQWlQN09uNEl6ZjdfNWRBR1ZzUGlqTmZnZlpkX1pJTkQxVFRwWVJsRnlqWTNKWnBfdzZmYXZCR2N5bGJHRFJVczVBZUQ0bGdSc2pXcmZNNXhOUEpxZXdnT2gxWEJVMkUxUmk2NFY0LXN3MFRoZklJLWIwMnk4MXpSaU11SXY4YndlYzVocnBUVlNKSWdJei1tRTd1cTNyRGRxeE1BZjJvcHFTV3RZNjAtRWtKdS1iTFR1eGRjZ2xxTdIB6AFBVV95cUxNbzdrNzIxVW50SGtCeWE1dFBWZ2ZQOTFEb3VHNTBuRGo3d3lZbC1VWU50VVNtdHBoNGZrZS1KWl9sclhVcjBnV1I2aTVmWEdKQ0YwMXdoMlEtbXFETXc3YnRneEprWlhBaElaOXE0cDE4UGU3S3FHVjNwWXA1R19UVnlrTGNma1NpUGlWSlBYVm9HdDFSb2JqVU81aXJSMWFHQlhaeHhDR1M5bmtnTWJRVVByVUZ1OVo5V1ZBbGxOdzRvWTZoZXU3c1owZzUtN0Q1S0hUaHJCY3pSRzJsUzZud0MwYldzMkYy?oc=5",
+     "title": "Body of last missing passenger in Basilan ferry fire recovered, death toll now 33 —PCG",
+     "date": "2023-04-13"
+    },
     {
      "outlet": "DZRH",
      "url": "https://www.dzrh.com.ph/post/vessel-catches-fire-in-basilan",
@@ -7858,10 +8384,22 @@
      "date": "2023-03-30"
     },
     {
-     "outlet": "GMA Network",
-     "url": "https://www.gmanetwork.com/news/topstories/regions/865489/fire-hits-passenger-vessel-off-basilan/story/",
-     "title": "10 reported dead after fire hit passenger vessel off Basilan —PDRRMO",
+     "outlet": "Philstar",
+     "url": "https://www.philstar.com/nation/2023/03/30/2255600/6-reported-dead-boat-fire-basilan",
+     "title": "6 reported dead in boat fire off Basilan",
      "date": "2023-03-30"
+    },
+    {
+     "outlet": "The National News Desk",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNkxtU2RfQ1RsZHUycFZRSUZqdi11OFQ0NV92b2xndDlJZE5JcG94amRGcXZOb0kwRElyM2oyRENvaWM2LVZSWmYwVnNUUzlCdDEweFpPakRfM2hUaWpBX2FoNnJ1NTQ5bk5IY29JbUcyblpuLWhnME55QVNtbmRta2NRUjN5WG44QlFRZlVibG9oSlZxa0RsZl8tRl9BUlBaaDNzY2Nnd0Z6LUpFVGNpOW1KazQ4Ql9EcHp3SGdJbkdxcHFWcENF?oc=5",
+     "title": "Philippine ferry fire kills 31 people; at least 7 missing",
+     "date": "2023-03-30"
+    },
+    {
+     "outlet": "Inquirer",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQR0NseVFCQVhYak5POU1ScVVPYkJiNEo3TjlkNnFaYnlNZTRNb1hJRjJCUjVKRDdzdTlYV3pCaVNTa1dqZm9LQjhEV0FTSVpwVFVnNU1JYzNsb185eUY2QkM1M3NqSDU3TnZ6YU1SR1M3alA1NFUtS0Y1U2wtTy02UHUyMnB1Sm84N0VuU21rLXVKQdIBlwFBVV95cUxOWmFuaGJIcUs5cElQQ1kzWlNweUtGbFc4Wlo3UWZRejY0WWdsaG5Cd3YtNjMzOTdnY1VWTmZxNmppakxrdWVCTmtiTmh0N0VzaUl5YnBRYTg5bXB4LXQwOHZDVmF3dnNsQXdLYy1KTENJSFRraUE2SEVPRncyTTlfYklXeGJ0QXlNa0hvbFRTVW1nbjdjc1FN?oc=5",
+     "title": "Floating inferno: Dozens dead, missing in ferry fire",
+     "date": "2023-03-31"
     },
     {
      "outlet": "Reuters",
@@ -7876,15 +8414,9 @@
      "date": "2023-04-02"
     },
     {
-     "outlet": "Inquirer",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdmRYQW55SW40OWhXc0hKM1Q1WElDTW92YzhVaTVwMjVJRE9aTmZGYnB4TUlzanN2Y2hqU3o4SkZySVY2ZVVtZkt1QmdfYzFzS3pVYnRkSTdxTE51TWl3NGduZGxKeXZZWHRWNVFBcF9qbEo4VU1MRW9ZdV9qTW1ldnV2SFg2ZkNUNlh4Tk5JLWFYelNzTzFIaXBGSmlRUjVUMkN4WEZUbFplTmR2LWZLLU9ORdIBuAFBVV95cUxOYTd2YkhLNjZNOEJxNXVLMWdZdEcyb2oyb1N5RjNQRFBQbmM3LTBkMFhIa0tjT2QtaVRvdC1jdjA3ZnBnTEhuVmdKN3l3OXBlVnpnaHdkWFcxb3l2enotQ0dsaDFRYUVWUHpPVC13d1d4S1FJY1BJVTh3aEFuNFNHN0VnX3pfNmZMR0NORWVHeHMxTDB2T29XZmZ6cVplVHh6cFREVUNnOWdoQ05IQUlYQ2VOQzlDb1VS?oc=5",
-     "title": "2 soldiers missing in the ill-fated ship that caught fire off Basilan",
-     "date": "2023-04-03"
-    },
-    {
-     "outlet": "International Business Times",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNX2VmVVhHeFg1REZVWjF2ektYYmlkSjJJSVlDUHRMQjlONjMwUW9NN1hCeFdqYVoxTm5pXzdMdnF5YnRFV3lNd055dmcxc2UwUFhNVzVIV3hteTZ3TXo2dnFnZW8tMEYzUDJaMW80U1NHQS1ka1g2VWxVM2FSTHlQaTdjQlhwYld3VWZHSGVpZG1xRDVoekNSQng0cHM5NFpzaktaVjNzbFc?oc=5",
-     "title": "28 Dead, Including Kids After Ship With 200 Passengers Catches Fire In The Philippines",
+     "outlet": "CruiseMapper",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTktnTDc5U196Q3ZXaHhzQmFtWVZvejIxVlo0M3VKSUxFOUk4SzB6bEJIWVNVamFFeGJMSmdHNlZVM1BUNTRHeTFkN3EyT3R5dGZmTnhQLXh5V2NNQ3EwUUx6ZTV4LVBJenphR3lhZkdLR2R2akRzWlBPWGc2ODVVMF92Zw?oc=5",
+     "title": "At least 31 people killed after ferry catches fire between Philippine islands",
      "date": "2023-03-30"
     },
     {
@@ -7907,70 +8439,6 @@
     }
    ],
    "id": "2023-03-29-hadji-muhtamad-water"
-  },
-  {
-   "date": "2023-03-29",
-   "type": "water",
-   "kind": "Boat mishap",
-   "title": "Passenger ferry fire off Hadji Muhtamad, Basilan kills 32",
-   "summary": "A passenger ferry carrying about 250 passengers and crew caught fire past 11 pm on Wednesday, 29 March 2023, in waters off Hadji Muhtamad, Basilan. Many passengers jumped overboard; the death toll rose from 12 (with 7 missing) to 31 by 30 March 2023.",
-   "province": "Basilan",
-   "municipality": "Hadji Muhtamad",
-   "barangay": null,
-   "deaths": null,
-   "injured": null,
-   "missing": null,
-   "vehicles": [
-    "ferry"
-   ],
-   "lat": 6.6622,
-   "lon": 121.5864,
-   "placed": "municipality",
-   "sources": [
-    {
-     "outlet": "Philstar",
-     "url": "https://www.philstar.com/nation/2023/03/30/2255600/6-reported-dead-boat-fire-basilan",
-     "title": "6 reported dead in boat fire off Basilan",
-     "date": "2023-03-30"
-    },
-    {
-     "outlet": "The National News Desk",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNkxtU2RfQ1RsZHUycFZRSUZqdi11OFQ0NV92b2xndDlJZE5JcG94amRGcXZOb0kwRElyM2oyRENvaWM2LVZSWmYwVnNUUzlCdDEweFpPakRfM2hUaWpBX2FoNnJ1NTQ5bk5IY29JbUcyblpuLWhnME55QVNtbmRta2NRUjN5WG44QlFRZlVibG9oSlZxa0RsZl8tRl9BUlBaaDNzY2Nnd0Z6LUpFVGNpOW1KazQ4Ql9EcHp3SGdJbkdxcHFWcENF?oc=5",
-     "title": "Philippine ferry fire kills 31 people; at least 7 missing",
-     "date": "2023-03-30"
-    },
-    {
-     "outlet": "Inquirer",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQR0NseVFCQVhYak5POU1ScVVPYkJiNEo3TjlkNnFaYnlNZTRNb1hJRjJCUjVKRDdzdTlYV3pCaVNTa1dqZm9LQjhEV0FTSVpwVFVnNU1JYzNsb185eUY2QkM1M3NqSDU3TnZ6YU1SR1M3alA1NFUtS0Y1U2wtTy02UHUyMnB1Sm84N0VuU21rLXVKQdIBlwFBVV95cUxOWmFuaGJIcUs5cElQQ1kzWlNweUtGbFc4Wlo3UWZRejY0WWdsaG5Cd3YtNjMzOTdnY1VWTmZxNmppakxrdWVCTmtiTmh0N0VzaUl5YnBRYTg5bXB4LXQwOHZDVmF3dnNsQXdLYy1KTENJSFRraUE2SEVPRncyTTlfYklXeGJ0QXlNa0hvbFRTVW1nbjdjc1FN?oc=5",
-     "title": "Floating inferno: Dozens dead, missing in ferry fire",
-     "date": "2023-03-31"
-    },
-    {
-     "outlet": "Philstar",
-     "url": "https://www.philstar.com/headlines/2023/04/10/2257780/death-toll-basilan-ferry-fire-rises-32",
-     "title": "Death toll from Basilan ferry fire rises to 32",
-     "date": "2023-04-10"
-    },
-    {
-     "outlet": "Rappler",
-     "url": "https://www.rappler.com/philippines/mindanao/basilan-vessel-fire-march-29-2023/",
-     "title": "Basilan passenger ferry fire death toll climbs to 31",
-     "date": "2023-03-30"
-    },
-    {
-     "outlet": "Facebook",
-     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOUFV0TTZuR0Q5dFhnblZUOEdKbHVwbXVCM1NKM2lOdWVDYzJ5dTZ3eVk0c3p1TFRGUEhHbWtwWmE2cGx2THpOanVINjJzclFzaHBvUXdOY2FLSVIxQms3d3RjUEdNSWZOdlRvY09scWRxQklLSGpEOEwzOThaeWExeVlncXh0dlo0Sm1lV05yQkFWTVpiTWE1azh3MGRWeEhqeG9VT3VRZWdEQ003RTRVQU9ZeVIxbDZDVmx2YnNuOVVGeld1dm1JdkdqWnJLNEZXVDlBWDBHNjdBbVZw?oc=5",
-     "title": "A ferry carrying about 250 passengers and crew caught fire off the coast of Basilan past 11 pm on Wednesday, and at least 12 people were killed with seven still missing, a provincial governor said Thursday. Many of those rescued had jumped off the ferry in pa",
-     "date": "2023-03-30"
-    },
-    {
-     "outlet": "CruiseMapper",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTktnTDc5U196Q3ZXaHhzQmFtWVZvejIxVlo0M3VKSUxFOUk4SzB6bEJIWVNVamFFeGJMSmdHNlZVM1BUNTRHeTFkN3EyT3R5dGZmTnhQLXh5V2NNQ3EwUUx6ZTV4LVBJenphR3lhZkdLR2R2akRzWlBPWGc2ODVVMF92Zw?oc=5",
-     "title": "At least 31 people killed after ferry catches fire between Philippine islands",
-     "date": "2023-03-30"
-    }
-   ],
-   "id": "2023-03-29-hadji-muhtamad-water-2"
   },
   {
    "date": "2023-03-05",
@@ -8069,8 +8537,8 @@
    "injured": 1,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
@@ -8173,8 +8641,8 @@
    "injured": 3,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
@@ -8199,8 +8667,8 @@
    "injured": 1,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
@@ -8231,8 +8699,8 @@
    "injured": 1,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.5479,
-   "lon": 122.0458,
+   "lat": 6.6576,
+   "lon": 122.145,
    "placed": "province",
    "sources": [
     {
@@ -8335,8 +8803,8 @@
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -8378,12 +8846,12 @@
    "date": "2022-10-28",
    "type": "other",
    "kind": "Landslide",
-   "title": "Paeng landslides and flash floods kill 13 in Maguindanao; Kusiong, Datu Odin Sinsuat hit",
+   "title": "Landslide during Tropical Storm Paeng buries Barangay Kusiong, Datu Odin Sinsuat",
    "summary": "Landslides and flash floods brought by Severe Tropical Storm Paeng struck Maguindanao on 27-28 October 2022; 13 people were reported dead by Friday, 28 October, and residents of Parang were evacuated. BARMM was placed under a state of calamity, and retrieval operations in the landslide-hit town of Datu Odin Sinsuat (Barangay Kusiong) ended by 3 November 2022.",
    "province": "Maguindanao del Norte",
    "municipality": "Datu Odin Sinsuat",
    "barangay": "Kusiong",
-   "deaths": 31,
+   "deaths": 13,
    "injured": null,
    "missing": null,
    "vehicles": [],
@@ -8391,6 +8859,24 @@
    "lon": 124.3157,
    "placed": "municipality",
    "sources": [
+    {
+     "outlet": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQSnhzR1BnYkhEaER2UHE3bW5XZUxEN1Y3TFhtMmttVzVLYUhXSVpYNnBVdUdEQS1zTjdkeTRlRmZCZ1l1QnhXVWMxbk5HNVk1NS1CX2FvTGVZMXBfNmtIME9yQ2RTYXFDT1BSbkIxdFhvbWFzS0lSTWVxTE9BRTVpSjhSbVJQVWNBdVNlLUpmc0JTLVplQlh6RGQzQmhrY1dycGN5ekhNVHRMVUtqQmdHMFlPUUVWRGI0MVpteEl5QWUzc000cXJ5UjNYVW93Q0EtNUVoU21iY1pEU1RRZlZz?oc=5",
+     "title": "LOOK:A landslide occurred in Barangay Kusiong, Datu Odin Sinsuat in Maguindanao del Norte Friday morning, October 28, 2022, due to Tropical Storm Paeng. Barmm Interior and Local Government Minister Naguib Sinarimbo said 13 people were killed. Full",
+     "date": "2022-10-27"
+    },
+    {
+     "outlet": "Rappler",
+     "url": "https://www.rappler.com/philippines/mindanao/deaths-landslides-maguindanao-del-norte-october-28-2022/",
+     "title": "More than 40 dead in Maguindanao del Norte landslides, flooding",
+     "date": "2022-10-28"
+    },
+    {
+     "outlet": "ABS-CBN",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNR0t0bm1lRkVraExnZ3pHQ2dMeFJDb0JjVkQ4Ny0xQkpiTlpGR3d1aU5MRjZMZWdCUUU5VGg5aUI5MlZta180eG5saXRjU0cxZ05URlROYTYzNXBVQUgzX3VfdUtNbHoyOG5EMkFRVTQyWXVCZmVEck5RMktDRkQxRW9TeldqdHl5T0c1Q09jRmZjdExu?oc=5",
+     "title": "Retrieval ops end in landslide-hit Maguindanao del Norte town",
+     "date": "2022-11-03"
+    },
     {
      "outlet": "Facebook",
      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQTlN2a3ZRS2IzQ25Ec0xSbFNndkdBRXJqWWNEM1gyN2lrdElXT3Vob3l3eEN6Q0EtR05JQnlTVjlxUDhYeVZZREVVLWhfTmpPV3dpRzdoWFAtNEZhM1NxN0NpZk1BZXJDekY4LWRlV1JIa1dLYWliaEY0Ym1hWW5FbVF4MXcydFp1anc0VVJGbmlIRW85ZTMwVTl4R1ozY3pGck1JZi1sN2VrOF9IamhuejdIZ1ZXYXdPR2tveENXc0toS2JfZl9ndk05YXFjQnpKSHRUejljMlFSdmw1?oc=5",
@@ -8404,28 +8890,22 @@
      "date": "2022-10-29"
     },
     {
-     "outlet": "ABS-CBN",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNR0t0bm1lRkVraExnZ3pHQ2dMeFJDb0JjVkQ4Ny0xQkpiTlpGR3d1aU5MRjZMZWdCUUU5VGg5aUI5MlZta180eG5saXRjU0cxZ05URlROYTYzNXBVQUgzX3VfdUtNbHoyOG5EMkFRVTQyWXVCZmVEck5RMktDRkQxRW9TeldqdHl5T0c1Q09jRmZjdExu?oc=5",
-     "title": "Retrieval ops end in landslide-hit Maguindanao del Norte town",
-     "date": "2022-11-03"
-    },
-    {
-     "outlet": "NBC Bay Area",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMXN0Uk9uWFVCdnMzYTNUUEg1RGZndHFIdDRsRG1YblpjNjl1amp2SGlrZ1hHZWkzTWYzRTYza2xWQVMtME1FNW1RZE02QmY2MERJXzZiamE2ZkhTR01HSm5YRzZKQzVrbEFzN3BuX1ZiNnRNd1lIME4zek1MelV2cG9Ea3ZDblhTaWZyWXM4cS1jallYaWNBOVJYZ2lVMnNSSElCOGdWeEZiUWpZZEptWlI5ZWF0Y3ZySkFj0gHDAUFVX3lxTE44WjFfY1pnRkgzaTR0Qm9SbXRQNjNXUkVyeGhHU2RmSTgwUDZIdkJKc20yamhNdDU3QVpjSjJ3WGt0elNsLURvUTVjSlJuYkljYkd5SGYyN0dLTUtUQU1GOXppX0lmUExxeHc1d2pCckVub3JJbXpXY2VWYXB4S1RoajJhVHFGZ2hqTFFJQllVR2c1MGtONTVlTlhiZG9yS2wxLXk4aGx6cml2NnpPeHpDVGdnMlQ5Q000NkhJVDIyX0dzSQ?oc=5",
-     "title": "At Least 31 Dead in Flash Flooding in South Philippines",
+     "outlet": "The Peninsula Qatar",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRVZtQ19XdTFhTWRETTVCSU5nRmhaU2tORF9vcGN4eTBlR3d5Z3kyTTVnbEpMYlBfQlVlaHB5VjFCVjNEbk41UDJVcG5YakdacFdVQ3ZGUVlOeGNGUXU4WmQ2SV9pSkp6TjFxUE55RFplVWYxakJIeEJ2Q0UwRjBoN0tMM3dIR0hieVdYZ3JBck9iSnN6Znlib3N5ODhldlpJYjAydEFMMWc1Z00?oc=5",
+     "title": "Philippines floods, landslides leave 42 dead, dozens missing",
      "date": "2022-10-28"
     },
     {
-     "outlet": "Fox 59",
-     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPaUM3T1NCdDVpbFo1aXU5Z2xJa2NYUHF5UzNuSWpVeXpiYUVNWmY1YktwYTYtT21ZdldwdDBxek5nU2NOb01fZGYtVmQ1bHlQNUNRSFNIMXhfOFhnSlFDaDNfQUZ0c3MxSktQS0NzeXQ5V3lrQTlUS1NfcTFYaWlFTFRQS0xPeUpjZldUSFB4U3dwZlc0cTBMV1ln0gGfAUFVX3lxTE1hNlFabWhreGlmU09KS2o2MmpUVlB0cGlBOHZkbXlZRENkZE5jY0lhMW1LSHlOSE1nc1NNeGJfN1BEekdvX3JfaUdkLVFlb3U2c19QYTVSWGdCbFpDTDJJTnhQZzhkWlRtRXVDMy1sbGJlVTlYRjZRZG9RRHUtQ1RqVXp3Wll0emtGY2tkd2RFeEU0XzMxdGE5UVJJUmx5QQ?oc=5",
-     "title": "Dozens killed in floods, landslides in south Philippines",
-     "date": "2022-10-28"
+     "outlet": "CBC",
+     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAtNXBIUDZUbHFNcGtJRU1adXlTUFhSaHBLSDFuYTk1OU8wZUlHVFdIWXFrNHY3WUVzZzlYUFIyY01jT2J1Q3hhcF9vVWRzdXN3UEZlYVZFeW5VNklRcElFQzdTbGZsQ2hacjRrU0tqUzZfZUE?oc=5",
+     "title": "Dozens dead, missing after flash floods, landslides in Philippines",
+     "date": "2022-10-29"
     },
     {
-     "outlet": "MindaNews",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOY1EyVVFfU2lzNE1KWnBLa29jSVl0SGRkaWFkWURGSFctY0NOejdNa3BVbGZoeldaN1psdk5xQl9FaWM5RFpCblpjTG1hamxtbWozbE9zdWlOWXRzX3lJZ0R4SlB2US16WUdPbW1uNzlNUTNaZUFTTW4tLXc1S0ZLM2R1X0dUQkd2Ym9ycmdOVnp3dURLRVJ5Z2h6MUtsaFNTZm1PLQ?oc=5",
-     "title": "Tëdurays welcome Senate probe on ‘forced relocation’ to landslide area in Kusiong",
-     "date": "2022-11-10"
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUm40RW4ya05PTEZlb0dNT2k0T20tb3U1U3BYYk1abk9YRzVsVnRwMGlEd3BIZWZhTFNWdE5TaWc4WXJYM2F1bnFwWjZ0cjlmWWJuaFZEVmlXRWw1NThlUy1oUTR4bFZkWE56ZHVvWll2NHNqUmJqREZlZTdNWUxOLTFnWk1nT3M1QzVrX1FWUzZ2dExoZHhPNk9ZZk94U1RqRVVDMXl3R2ZHZjJaWFdXaVNwZGJZZmRv0gG-AUFVX3lxTE1aU0xucmZWaFdOSUF2dENmS2lUdXVVS3ZxaG1JMTcwUV9xRkdrZ2RkWnp2RXlIUVVRQU56ak9SczU4VUl6NzBXcVRiNzNVckxZVmc2aGZvUS1hXy1HTnN5VkhONWhVT3YwVjJXdHNLbDBHYU12V3l6LXdkaXltNnhwS3NmN1N5bGdYNWZ5RkVVSVlNTWZrUVJTb2U3TGVIN2hkdE9hcTczcUVIUzdPQUwxeHF3Qmh1TGw0cFQ4VkE?oc=5",
+     "title": "Teduray blames NCIP’s inaction on tribe’s ‘forced relocation’ in landslide-hit site",
+     "date": "2022-11-07"
     },
     {
      "outlet": "Manila Bulletin",
@@ -8445,13 +8925,13 @@
   {
    "date": "2022-10-28",
    "type": "other",
-   "kind": "Landslide",
-   "title": "Paeng landslide buries Teduray village of Kusiong, Datu Odin Sinsuat",
-   "summary": "Flash floods and landslides from Severe Tropical Storm Paeng on 27-28 October 2022 killed dozens in Maguindanao; the deadliest site was the Teduray community of Barangay Kusiong, Datu Odin Sinsuat, buried by a landslide. National reports gave 42 dead and dozens missing on 28 October 2022; a Kusiong-specific toll is not given in these items.",
+   "kind": "Flood",
+   "title": "Paeng floods and Kusiong landslide kill dozens in Maguindanao",
+   "summary": "Heavy rain from Severe Tropical Storm Paeng caused flash floods across Maguindanao on 27-28 October 2022 and a landslide that buried homes in Barangay Kusiong, Datu Odin Sinsuat. Reports on 28 October put the death toll at at least 31. Teduray residents later asked the Senate to probe their relocation to the landslide area.",
    "province": "Maguindanao del Norte",
    "municipality": "Datu Odin Sinsuat",
    "barangay": "Kusiong",
-   "deaths": null,
+   "deaths": 31,
    "injured": null,
    "missing": null,
    "vehicles": [],
@@ -8460,22 +8940,22 @@
    "placed": "municipality",
    "sources": [
     {
-     "outlet": "The Peninsula Qatar",
-     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRVZtQ19XdTFhTWRETTVCSU5nRmhaU2tORF9vcGN4eTBlR3d5Z3kyTTVnbEpMYlBfQlVlaHB5VjFCVjNEbk41UDJVcG5YakdacFdVQ3ZGUVlOeGNGUXU4WmQ2SV9pSkp6TjFxUE55RFplVWYxakJIeEJ2Q0UwRjBoN0tMM3dIR0hieVdYZ3JBck9iSnN6Znlib3N5ODhldlpJYjAydEFMMWc1Z00?oc=5",
-     "title": "Philippines floods, landslides leave 42 dead, dozens missing",
+     "outlet": "NBC Bay Area",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMXN0Uk9uWFVCdnMzYTNUUEg1RGZndHFIdDRsRG1YblpjNjl1amp2SGlrZ1hHZWkzTWYzRTYza2xWQVMtME1FNW1RZE02QmY2MERJXzZiamE2ZkhTR01HSm5YRzZKQzVrbEFzN3BuX1ZiNnRNd1lIME4zek1MelV2cG9Ea3ZDblhTaWZyWXM4cS1jallYaWNBOVJYZ2lVMnNSSElCOGdWeEZiUWpZZEptWlI5ZWF0Y3ZySkFj0gHDAUFVX3lxTE44WjFfY1pnRkgzaTR0Qm9SbXRQNjNXUkVyeGhHU2RmSTgwUDZIdkJKc20yamhNdDU3QVpjSjJ3WGt0elNsLURvUTVjSlJuYkljYkd5SGYyN0dLTUtUQU1GOXppX0lmUExxeHc1d2pCckVub3JJbXpXY2VWYXB4S1RoajJhVHFGZ2hqTFFJQllVR2c1MGtONTVlTlhiZG9yS2wxLXk4aGx6cml2NnpPeHpDVGdnMlQ5Q000NkhJVDIyX0dzSQ?oc=5",
+     "title": "At Least 31 Dead in Flash Flooding in South Philippines",
      "date": "2022-10-28"
     },
     {
-     "outlet": "CBC",
-     "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAtNXBIUDZUbHFNcGtJRU1adXlTUFhSaHBLSDFuYTk1OU8wZUlHVFdIWXFrNHY3WUVzZzlYUFIyY01jT2J1Q3hhcF9vVWRzdXN3UEZlYVZFeW5VNklRcElFQzdTbGZsQ2hacjRrU0tqUzZfZUE?oc=5",
-     "title": "Dozens dead, missing after flash floods, landslides in Philippines",
-     "date": "2022-10-29"
+     "outlet": "Fox 59",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPaUM3T1NCdDVpbFo1aXU5Z2xJa2NYUHF5UzNuSWpVeXpiYUVNWmY1YktwYTYtT21ZdldwdDBxek5nU2NOb01fZGYtVmQ1bHlQNUNRSFNIMXhfOFhnSlFDaDNfQUZ0c3MxSktQS0NzeXQ5V3lrQTlUS1NfcTFYaWlFTFRQS0xPeUpjZldUSFB4U3dwZlc0cTBMV1ln0gGfAUFVX3lxTE1hNlFabWhreGlmU09KS2o2MmpUVlB0cGlBOHZkbXlZRENkZE5jY0lhMW1LSHlOSE1nc1NNeGJfN1BEekdvX3JfaUdkLVFlb3U2c19QYTVSWGdCbFpDTDJJTnhQZzhkWlRtRXVDMy1sbGJlVTlYRjZRZG9RRHUtQ1RqVXp3Wll0emtGY2tkd2RFeEU0XzMxdGE5UVJJUmx5QQ?oc=5",
+     "title": "Dozens killed in floods, landslides in south Philippines",
+     "date": "2022-10-28"
     },
     {
-     "outlet": "Inquirer.net",
-     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUm40RW4ya05PTEZlb0dNT2k0T20tb3U1U3BYYk1abk9YRzVsVnRwMGlEd3BIZWZhTFNWdE5TaWc4WXJYM2F1bnFwWjZ0cjlmWWJuaFZEVmlXRWw1NThlUy1oUTR4bFZkWE56ZHVvWll2NHNqUmJqREZlZTdNWUxOLTFnWk1nT3M1QzVrX1FWUzZ2dExoZHhPNk9ZZk94U1RqRVVDMXl3R2ZHZjJaWFdXaVNwZGJZZmRv0gG-AUFVX3lxTE1aU0xucmZWaFdOSUF2dENmS2lUdXVVS3ZxaG1JMTcwUV9xRkdrZ2RkWnp2RXlIUVVRQU56ak9SczU4VUl6NzBXcVRiNzNVckxZVmc2aGZvUS1hXy1HTnN5VkhONWhVT3YwVjJXdHNLbDBHYU12V3l6LXdkaXltNnhwS3NmN1N5bGdYNWZ5RkVVSVlNTWZrUVJTb2U3TGVIN2hkdE9hcTczcUVIUzdPQUwxeHF3Qmh1TGw0cFQ4VkE?oc=5",
-     "title": "Teduray blames NCIP’s inaction on tribe’s ‘forced relocation’ in landslide-hit site",
-     "date": "2022-11-07"
+     "outlet": "MindaNews",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOY1EyVVFfU2lzNE1KWnBLa29jSVl0SGRkaWFkWURGSFctY0NOejdNa3BVbGZoeldaN1psdk5xQl9FaWM5RFpCblpjTG1hamxtbWozbE9zdWlOWXRzX3lJZ0R4SlB2US16WUdPbW1uNzlNUTNaZUFTTW4tLXc1S0ZLM2R1X0dUQkd2Ym9ycmdOVnp3dURLRVJ5Z2h6MUtsaFNTZm1PLQ?oc=5",
+     "title": "Tëdurays welcome Senate probe on ‘forced relocation’ to landslide area in Kusiong",
+     "date": "2022-11-10"
     }
    ],
    "id": "2022-10-28-datu-odin-sinsuat-other-2"
@@ -8493,8 +8973,8 @@
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -8525,8 +9005,8 @@
    "injured": 4,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.5479,
-   "lon": 122.0458,
+   "lat": 6.6576,
+   "lon": 122.145,
    "placed": "province",
    "sources": [
     {
@@ -8551,8 +9031,8 @@
    "injured": 3,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
@@ -8577,8 +9057,8 @@
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.5479,
-   "lon": 122.0458,
+   "lat": 6.6576,
+   "lon": 122.145,
    "placed": "province",
    "sources": [
     {
@@ -8609,8 +9089,8 @@
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -8821,8 +9301,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.5479,
-   "lon": 122.0458,
+   "lat": 6.6576,
+   "lon": 122.145,
    "placed": "province",
    "sources": [
     {
@@ -8847,8 +9327,8 @@
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.5479,
-   "lon": 122.0458,
+   "lat": 6.6576,
+   "lon": 122.145,
    "placed": "province",
    "sources": [
     {
@@ -8873,8 +9353,8 @@
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -8905,8 +9385,8 @@
    "injured": 2,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
@@ -8931,8 +9411,8 @@
    "injured": 8,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
@@ -8957,8 +9437,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -8989,8 +9469,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
@@ -9015,8 +9495,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -9067,8 +9547,8 @@
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -9105,8 +9585,8 @@
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -9157,8 +9637,8 @@
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -9183,8 +9663,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -9209,8 +9689,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -9235,8 +9715,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.5479,
-   "lon": 122.0458,
+   "lat": 6.6576,
+   "lon": 122.145,
    "placed": "province",
    "sources": [
     {
@@ -9286,6 +9766,34 @@
    "date": "2021-04",
    "type": "water",
    "kind": "Boat mishap",
+   "title": "Boat catches fire off Tawi-Tawi, injuring 3",
+   "summary": "A boat caught fire off Tawi-Tawi in April 2021. Three people were injured.",
+   "province": "Tawi-Tawi",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 0,
+   "injured": 3,
+   "missing": 0,
+   "vehicles": [
+    "boat"
+   ],
+   "lat": 5.029,
+   "lon": 119.7713,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://www.philstar.com/nation/2021/04/06/2089175/3-injured-boat-catches-fire-tawi-tawi",
+     "title": "3 injured as boat catches fire off Tawi-Tawi",
+     "date": "2021-04-06"
+    }
+   ],
+   "id": "2021-04-tawi-tawi-water"
+  },
+  {
+   "date": "2021-04",
+   "type": "water",
+   "kind": "Boat mishap",
    "title": "Boat ML Marissa explodes, burns and sinks off Bulu-Bulu Island, Tawi-Tawi; 9 rescued",
    "summary": "The Filipino boat ML Marissa caught fire and sank off Bulu-Bulu Island, Tawi-Tawi, after an explosion while it was loading gasoline from a Malaysian tanker near the Sabah border. Philippine Marines rescued its nine boatmen, three of them injured; reported 7 April 2021.",
    "province": "Tawi-Tawi",
@@ -9324,8 +9832,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -9350,8 +9858,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.5479,
-   "lon": 122.0458,
+   "lat": 6.6576,
+   "lon": 122.145,
    "placed": "province",
    "sources": [
     {
@@ -9420,6 +9928,34 @@
   },
   {
    "date": "2021-01",
+   "type": "water",
+   "kind": "Boat mishap",
+   "title": "Sinking boat off Basilan; 23 passengers and crew rescued",
+   "summary": "A boat sank off Basilan in January 2021. All 23 passengers and crew were rescued.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 0,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [
+    "boat"
+   ],
+   "lat": 6.6576,
+   "lon": 122.145,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "ABS-CBN",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZHY4cWxjZGtuVVNDRWhQTGdTLWxwTzE4UUhZMF9aTjdMalpjODI1VVJVOFBSZzJFVEIwWmtRZDNxR0VJdzg2ZWtfX1lnQ0pPeXl2MVhSS0locFZoaFJOdEdORW5Mek1NT3RKUUNEd2xfWXZ0N3Y1LXN2bWNLRWZmZGg1NFRuRjhZVHR1WmxsbnBKU3FTZUo2ZXNn?oc=5",
+     "title": "23 passengers, crew rescued from sinking boat off Basilan",
+     "date": "2021-01-14"
+    }
+   ],
+   "id": "2021-01-basilan-water"
+  },
+  {
+   "date": "2021-01",
    "type": "shooting",
    "kind": "Shooting",
    "title": "13 killed, 7 hurt in 5-hour shootout during law-enforcement operation in Maguindanao",
@@ -9431,8 +9967,8 @@
    "injured": 7,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -9469,8 +10005,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.5479,
-   "lon": 122.0458,
+   "lat": 6.6576,
+   "lon": 122.145,
    "placed": "province",
    "sources": [
     {
@@ -9523,8 +10059,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -9649,6 +10185,52 @@
    "id": "2020-09-16-tipo-tipo-other"
   },
   {
+   "date": "2020-09",
+   "type": "other",
+   "kind": "Aircraft crash",
+   "title": "Philippine Air Force helicopter crash in Basilan kills 4 airmen",
+   "summary": "A Philippine Air Force helicopter crashed in Basilan in September 2020, killing 4 airmen. The PAF later grounded its Sikorsky rescue helicopters after the crash.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 4,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [
+    "helicopter"
+   ],
+   "lat": 6.6576,
+   "lon": 122.145,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Manila Bulletin",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9BWFpzMTY2U28ydk50SmFxRUFlMC1TX1RBUFZyOTNIRFFsUEdzcXJMa3BtVkgtbncyQXU4V25NZVpWdTdjak14a29teVRZbHBqSVRRZS0wbnEwWHdhb3pHQjJpUVEtZDMxWDZLQVhoSnozUklvUHBxY1N1RmlXRGM?oc=5",
+     "title": "4 PAF airmen killed in Basilan chopper crash",
+     "date": "2020-09-16"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNEJSSlFQdEIxZFpJdmVJaTFLNE9tSy1ZZHZRbzZWZXVqdDRWUVdBcFBZSXVVUzd5Q0psSm5Zb1lPWHo4QnMzRmtVZDQ2RVFkeU94VEx1MmU0TVN0Ump5T0NDa2tsUmhNbjNvcDduQkVseXZyb255UXQ0aTF1Ql90eEk3STZ6cDIyYmczdWotdTd2YjRHbnhreWZua1BDQdIBowFBVV95cUxNR3RqMG9IUUd5bnhXTGE2YWFQY1djU1NNazFhUHRMaTE5RTZvRThNa1Z1dWhqRi1paXN0dXJsSWstdDNFMXk3T3FUS190cmhGdll5RzlhYjExU2lELWZYT2l2UkN1ZHdwUUhVbk9MS1QzMHVFUDVyUXl0a0dIbWNQMWROa3hvN01HY29Lc0NxUUhzSWk0VFZlbUU1aU9GVkpCSnM4?oc=5",
+     "title": "Sikorsky rescue choppers grounded after fatal Basilan crash",
+     "date": "2020-09-16"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcV9xX0ViSEhQaFJNZFRpeDFJamlCT2pIWUJhNmlrbUk0TWFqSURaTW5sY3NzYi1tYzk1V2dpR2VYN3dJclRhM3kySFBuMmVsSGNmX05xZnQtdlFnNm94RElxREZZMFBiNllGUm4yWmxNLTZLTE5wR3ZpQld3MGxCVTJ5bzVsaXdPMFBvbV9MaWdURzDSAZgBQVVfeXFMTWRrVHBVUXZHQ2tzSVE4WEloT3VjMkwtX2JnSUJ1YTdxTUhrdGI1Qng1RVBnbTBEcmtDZ0d4NFhLRHlFTlNLQXJQRG9oTmlwUzFZNE01WjFtSkcyb2pKX3JnbFhmblNqM2ZTTGRsUHpJZUlmMlJVeUlmcXhwVEhabjl5MnVBSVJ6M284Y0FzampoMW9aNjBVSl8?oc=5",
+     "title": "4 airmen killed in Basilan chopper crash identified",
+     "date": "2020-09-17"
+    },
+    {
+     "outlet": "Manila Bulletin",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOangwd0ZBaUdPLUlLcmhzcWZJN1o2aDVmWDF2YVhJQXJjUFg1djZBcFZ4amxQT1NfVU52VEwxNGZVSXF3eWlDbWgtMjBQUjJNQndwYjRncXNaYzI4SUdsYTZyUmt2Wm9CQUs0OW9zU3Q0VHFXVXRMa29kamNUOUpJa0dfTFlZZw?oc=5",
+     "title": "PAF honors fallen 'Angels' in Basilan chopper crash",
+     "date": "2020-09-18"
+    }
+   ],
+   "id": "2020-09-basilan-other"
+  },
+  {
    "date": "2020-07",
    "type": "shooting",
    "kind": "Shooting",
@@ -9661,8 +10243,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -9687,8 +10269,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 5.2937,
-   "lon": 119.6682,
+   "lat": 5.029,
+   "lon": 119.7713,
    "placed": "province",
    "sources": [
     {
@@ -9767,6 +10349,64 @@
    "id": "2020-04-08-sultan-kudarat-road"
   },
   {
+   "date": "2020-04",
+   "type": "road",
+   "kind": "Road crash",
+   "title": "Road accident in Maguindanao kills a Marine and injures 12",
+   "summary": "A road accident in Maguindanao in April 2020 killed a member of the Philippine Marines and injured 12 people. The reports name no town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 12,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.7166,
+   "lon": 124.7866,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://www.philstar.com/nation/2020/04/08/2006321/marine-killed-12-injured-maguindanao-road-accident",
+     "title": "Marine killed, 12 injured in Maguindanao road accident",
+     "date": "2020-04-08"
+    },
+    {
+     "outlet": "ABS-CBN",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUlM2UVNhc0lDa21ZRmJjcy1pektqWWhqN1Y4ajNtZ0pOMWMzcXNtRnZHUDdNOVk2azZYSGlocV92Q1FCTmZwaGQzem8yLVdWZWFsY19TV2VyY09VY2NocmU4MnloVnZPMHpXY1FVQ3F2Ry1aT0Y3TFhFYmpKYmxOZ1VGbVM4aVdncklTcE1YZHduWnowM3c5R090dWZ1S3diczNYMg?oc=5",
+     "title": "Miyembro ng Philippine Marines, patay sa aksidente sa Maguindanao",
+     "date": "2020-04-09"
+    }
+   ],
+   "id": "2020-04-maguindanao-del-sur-road"
+  },
+  {
+   "date": "2020-03",
+   "type": "fire",
+   "kind": "Explosion",
+   "title": "Explosion kills 2 children in Maguindanao",
+   "summary": "An explosion killed 2 children in Maguindanao in early March 2020. The report names no town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 2,
+   "injured": null,
+   "missing": null,
+   "vehicles": [],
+   "lat": 6.7166,
+   "lon": 124.7866,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "PressOnePH",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE83cXN2UEN4M01CcmJJZVNBZ3VBZk0xTHhhV1E5Q1FKemRZYjZTc0IwWHBXdFlvVG44TVdiWVR6bEo1dzZISjg3UFJUd0JLOFJjVno5azNScFZFOV9fNEtkRURkQ2tXNmNUcV9jUTlQcw?oc=5",
+     "title": "Explosion kills 2 children in Maguindanao",
+     "date": "2020-03-02"
+    }
+   ],
+   "id": "2020-03-maguindanao-del-sur-fire"
+  },
+  {
    "date": "2020-03",
    "type": "shooting",
    "kind": "Shooting",
@@ -9779,8 +10419,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -9819,6 +10459,34 @@
    "id": "2020-02-lamitan-fire"
   },
   {
+   "date": "2020-01",
+   "type": "water",
+   "kind": "Boat mishap",
+   "title": "Vietnamese fishers stranded at sea rescued off Tawi-Tawi",
+   "summary": "Philippine Marines and the Coast Guard rescued Vietnamese fishermen stranded at sea off Tawi-Tawi around the start of January 2020. The report names no town.",
+   "province": "Tawi-Tawi",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 0,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [
+    "boat"
+   ],
+   "lat": 5.029,
+   "lon": 119.7713,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://www.philstar.com/nation/2020/01/02/1981499/marines-coast-guard-rescue-vietnamese-fishers-stranded-sea-tawi-tawi",
+     "title": "Marines, Coast Guard rescue Vietnamese fishers stranded at sea off Tawi-Tawi",
+     "date": "2020-01-02"
+    }
+   ],
+   "id": "2020-01-tawi-tawi-water"
+  },
+  {
    "date": "2019-12-24",
    "type": "shooting",
    "kind": "Shooting",
@@ -9831,8 +10499,8 @@
    "injured": 1,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -9907,8 +10575,8 @@
    "injured": 3,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
@@ -9954,6 +10622,32 @@
   },
   {
    "date": "2019-09",
+   "type": "water",
+   "kind": "Boat mishap",
+   "title": "18 fishers survive sea mishap in huge waves off the Maguindanao coast",
+   "summary": "18 fishermen survived a sea mishap caused by huge waves and strong winds off the coast of Maguindanao in September 2019. The report names no town.",
+   "province": "Maguindanao del Norte",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 0,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.0236,
+   "lon": 124.3157,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWi1pVnBhc3lCbU1iYk81Q21ORzVZM0V6NFJTQkhFMTRMbVdZaFJIeDJFOEFoWFhySUFaRldDR0txRFN0S0RENkJnVG8xbFZPRHdRREtDZGJmZmJrOV9aNlFzVGVoTFBpM3R5enlIcnlVUjFwUmVBUmE4TTVLc3U0VjZSV1Y1MURwaXhyZkZSeFppZy1tSWRVazExei1oeTRKSjZLX0N6RlRxZlVBamxheG40N0VaZDk3WThWQdIBwgFBVV95cUxPQ2hYX01NYVhZZnhxYzNLN3J6RjN3YXowSGtreXZES3FveFpjT3NBYUVaNEN3QVQyWEJnVnRwM0tOdFZPaWNnMVByRTRyREpTMG1iZGtoRnFZMk4xdU9wT20zLXFOc09RX0ZOTmgyOVpyajB1OWlYcFAxd2g3VU9LWFFJVGo3UmpzT0FaeWtLdUxRN05BYUttWVR4UnBHMF9scHJ1M3lkejFfQWNlNzloLXJaaDFfQzlHbUhibndrZEVhdw?oc=5",
+     "title": "18 fishers survive sea mishap due to huge waves, strong winds off Maguindanao coast",
+     "date": "2019-09-13"
+    }
+   ],
+   "id": "2019-09-maguindanao-del-norte-water"
+  },
+  {
+   "date": "2019-09",
    "type": "shooting",
    "kind": "Shooting",
    "title": "Police officer and 4 drug suspects killed in Tawi-Tawi shootout",
@@ -9965,8 +10659,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 5.2937,
-   "lon": 119.6682,
+   "lat": 5.029,
+   "lon": 119.7713,
    "placed": "province",
    "sources": [
     {
@@ -9991,8 +10685,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
@@ -10017,8 +10711,8 @@
    "injured": 1,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -10084,6 +10778,34 @@
   },
   {
    "date": "2019-04",
+   "type": "water",
+   "kind": "Boat mishap",
+   "title": "53 rescued from damaged boat off Tawi-Tawi",
+   "summary": "53 people were rescued from a damaged boat off Tawi-Tawi in April 2019. The headline places it 'off Tawi-Tawi in Sulu' and names no town.",
+   "province": "Tawi-Tawi",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 0,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [
+    "boat"
+   ],
+   "lat": 5.029,
+   "lon": 119.7713,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQUxOWERVLU5TaGZmZGtkM2dzY3hMOWVYRjY5SE1kVXV5ZFRmcjItM3hyS29IVUVLdUZpTmpfWVhkN0VZUnBHcV80ek85MEdjRFRNWExQYi1KcjYxMUo4am5LdGJKRjc5YjRwWmwtZzB4enhZWTRlcUhlNzRsMVdCZEt5Tk16LUJrM01OX0RRVXk0QdIBlwFBVV95cUxNNklvWk4xNVBHSDAxMTRzVEE5eGJQc3h1UWNiVmV0Qy1lMTNSOEt1RGZGUEYwMnVXSkpRY014ODlTWkFuVVV6UlZNS3BoNXJEWWpxTHdjN3Z4SXJhU0hPaEpYTDd1a3RWLXRiM0VJTENpNFl3UDZLV2o2bFFtSzBOSDRnU0hvaVVud0FiZS1fTHVMOXQ5OWE0?oc=5",
+     "title": "53 rescued from damaged boat off Tawi-Tawi in Sulu",
+     "date": "2019-04-10"
+    }
+   ],
+   "id": "2019-04-tawi-tawi-water"
+  },
+  {
+   "date": "2019-04",
    "type": "shooting",
    "kind": "Shooting",
    "title": "Man shot dead in Basilan",
@@ -10095,8 +10817,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.5479,
-   "lon": 122.0458,
+   "lat": 6.6576,
+   "lon": 122.145,
    "placed": "province",
    "sources": [
     {
@@ -10121,8 +10843,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
+   "lat": 6.7166,
+   "lon": 124.7866,
    "placed": "province",
    "sources": [
     {
@@ -10147,8 +10869,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
@@ -10164,7 +10886,7 @@
    "date": "2019-02-12",
    "type": "fire",
    "kind": "Fire",
-   "title": "Fire guts more than a dozen homes in Rosary Heights, Cotabato City",
+   "title": "Fire guts several houses in Cotabato City",
    "summary": "A fire on the evening of Tuesday, 12 February 2019 damaged more than a dozen homes of light materials in Purok Sibuyan, Mother Barangay Rosary Heights, Cotabato City. Residents said an explosion was heard before the blaze; no one was reported hurt as of the report.",
    "province": "Cotabato City",
    "municipality": "Cotabato City",
@@ -10199,8 +10921,8 @@
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.8319,
-   "lon": 124.2537,
+   "lat": 8.0047,
+   "lon": 124.2854,
    "placed": "province",
    "sources": [
     {
