@@ -146,9 +146,32 @@ function Details({ a, onClose }: { a: Accident; onClose: () => void }) {
 	)
 }
 
+/** Incidents that share a point — a town's centre, most often — fanned out on a sunflower spiral around it, some
+    800 m apart — a dot's width at the zoom a row's click flies to — so each can be seen and clicked. Worked out over every incident, not the filtered few,
+    so a dot keeps its place whatever the filters say. */
+function spread(incidents: Accident[]) {
+	const groups = new Map<string, Accident[]>()
+	for (const a of incidents) {
+		const key = `${a.lon.toFixed(5)},${a.lat.toFixed(5)}`
+		groups.set(key, [...(groups.get(key) ?? []), a])
+	}
+	const at = new Map<string, [number, number]>()
+	for (const group of groups.values()) {
+		group.sort((a, b) => (a.id < b.id ? -1 : 1))
+		group.forEach((a, i) => {
+			if (group.length === 1) return void at.set(a.id, [a.lon, a.lat])
+			const r = 0.004 * Math.sqrt(i + 0.5)
+			const t = i * 2.39996 // the golden angle
+			at.set(a.id, [a.lon + (r * Math.cos(t)) / Math.cos((a.lat * Math.PI) / 180), a.lat + r * Math.sin(t)])
+		})
+	}
+	return at
+}
+
 export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 	const years = useMemo(() => [...new Set(incidents.map((a) => a.date.slice(0, 4)))].sort(), [incidents])
 	const provinces = useMemo(() => [...new Set(incidents.map((a) => a.province))].sort(), [incidents])
+	const at = useMemo(() => spread(incidents), [incidents])
 
 	// One value each, '' for all. A new year or area in the data arrives in the
 	// dropdown without anyone editing a list.
@@ -189,7 +212,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 			type: 'FeatureCollection',
 			features: filtered.map((a) => ({
 				type: 'Feature',
-				geometry: { type: 'Point', coordinates: [a.lon, a.lat] },
+				geometry: { type: 'Point', coordinates: at.get(a.id) ?? [a.lon, a.lat] },
 				properties: {
 					id: a.id,
 					type: a.type,
@@ -201,7 +224,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 				},
 			})),
 		}),
-		[filtered],
+		[filtered, at],
 	)
 
 	const selected = useMemo(() => incidents.find((a) => a.id === selectedId) ?? null, [incidents, selectedId])
@@ -242,7 +265,8 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 	// A row asked for this incident: choose it, fly there, and open the map if it is shut.
 	const goTo = (a: Accident) => {
 		setSelectedId(a.id)
-		setFocus({ id: a.id, lon: a.lon, lat: a.lat, nonce: ++asks.current })
+		const [lon, lat] = at.get(a.id) ?? [a.lon, a.lat]
+		setFocus({ id: a.id, lon, lat, nonce: ++asks.current })
 		if (!open) openMap()
 	}
 
