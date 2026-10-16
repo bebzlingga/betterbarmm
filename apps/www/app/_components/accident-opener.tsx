@@ -55,9 +55,9 @@ export function AccidentOpener({ incidents }: { incidents: Accident[] }) {
 			<div className='w-56 md:w-auto'>
 				<Preview incidents={incidents} />
 			</div>
-			<div className='max-w-[32rem]'>
+			<div className='max-w-[38rem]'>
 				<p className='bb-label'>Interactive map</p>
-				<h1 className='mt-1 text-[clamp(1.3rem,2.4vw,1.8rem)] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+				<h1 className='mt-2 text-[clamp(1.6rem,3vw,2.4rem)] font-extrabold leading-[1.1] tracking-[-0.025em] text-[var(--ink)]'>
 					Every incident on one map, with the report behind each mark.
 				</h1>
 				<p className='mt-2 text-[13.5px] leading-[1.7] text-[var(--ink-2)]'>
