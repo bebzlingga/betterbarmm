@@ -408,9 +408,9 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 				<div className='grid min-h-0 flex-1 lg:grid-cols-[26rem_minmax(0,1fr)]'>
 					{/* The list on the left; the chosen incident floats over the map's corner. */}
 					<aside className='order-2 min-h-0 overflow-y-auto border-t border-[var(--rule)] p-5 lg:order-1 lg:border-r lg:border-t-0'>
-						<ul className='border-t border-[var(--rule)]'>
+						<ul>
 							{filtered.map((a) => (
-								<li key={a.id} className='border-b border-[var(--rule-soft)]'>
+								<li key={a.id} className='border-b border-[var(--rule-soft)] last:border-b-0'>
 									<button
 										type='button'
 										onClick={() => goTo(a)}
