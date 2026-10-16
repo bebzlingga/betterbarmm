@@ -263,11 +263,11 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 	// header rather than a form.
 	const filters = (withShow: boolean, plain = false) => (
 		<div className='@container'>
-			<div className={`flex flex-wrap items-end gap-3 ${plain ? '' : 'justify-between'}`}>
+			<div className={`flex flex-wrap gap-3 ${plain ? 'items-center gap-x-5' : 'items-end justify-between'}`}>
 				<div className={plain ? 'w-full @xl:w-52' : 'w-full @xl:w-60'}>
 					<SearchField value={query} onChange={setQuery} placeholder='Title, place or kind' plain={plain} />
 				</div>
-				<div className='flex w-full flex-wrap gap-3 @xl:w-auto [&>*]:w-[calc(50%-0.375rem)] @xl:[&>*]:w-[8.5rem]'>
+				<div className={plain ? 'flex flex-wrap items-center gap-x-5 gap-y-2' : 'flex w-full flex-wrap gap-3 @xl:w-auto [&>*]:w-[calc(50%-0.375rem)] @xl:[&>*]:w-[8.5rem]'}>
 				<Select label='Year' value={year} onChange={setYear} options={[['', 'All years'], ...years.map((y): [string, string] => [y, `${y} (${byYear.get(y) ?? 0})`])]} plain={plain} />
 				<Select label='Kind' value={type} onChange={setType} options={[['', 'All kinds'], ...ACCIDENT_TYPES.map((k): [string, string] => [k.id, `${k.label} (${byType.get(k.id) ?? 0})`])]} plain={plain} />
 				<Select label='Area' value={province} onChange={setProvince} options={[['', 'All areas'], ...provinces.map((p): [string, string] => [p, `${p} (${byProvince.get(p) ?? 0})`])]} plain={plain} />
@@ -393,7 +393,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 				className='m-0 h-dvh max-h-none w-screen max-w-none overflow-y-auto bg-[var(--paper)] p-0 text-[var(--ink)] backdrop:bg-black/40 open:flex open:flex-col lg:overflow-hidden'
 			>
 				{/* The header is the filters, and the way out. */}
-				<div className='flex shrink-0 items-end justify-between gap-4 border-b border-[var(--rule)] px-4 py-3 lg:px-6'>
+				<div className='flex shrink-0 items-center justify-between gap-4 border-b border-[var(--rule)] px-4 py-2 lg:px-6'>
 					<div className='min-w-0 flex-1'>{filters(true, true)}</div>
 					<button
 						type='button'

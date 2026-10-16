@@ -21,15 +21,15 @@ export function Select({
 	value: string
 	options: [string, string][]
 	onChange: (value: string) => void
-	/** No border or ground until hovered — for a row of controls in a header rather than a form. */
+	/** No border or ground until hovered, the label beside the box rather than over it — a row of controls in a header rather than a form. */
 	plain?: boolean
 }) {
 	return (
-		<label className='flex min-w-0 flex-col gap-1'>
-			<span className='text-[12px] text-[var(--ink-3)]'>{label}</span>
+		<label className={plain ? 'flex min-w-0 items-center gap-2' : 'flex min-w-0 flex-col gap-1'}>
+			<span className='whitespace-nowrap text-[12px] text-[var(--ink-3)]'>{label}</span>
 			{/* The browser's own arrow sits against the edge and differs per
 			    browser; this one is the site's, inset like the search icon. */}
-			<span className='relative'>
+			<span className='relative min-w-0 flex-1'>
 				<select
 					value={value}
 					onChange={(event) => onChange(event.target.value)}
@@ -66,7 +66,7 @@ export function SearchField({
 }) {
 	return (
 		<label className='flex w-full min-w-0 flex-col gap-1'>
-			<span className='text-[12px] text-[var(--ink-3)]'>Search</span>
+			<span className={plain ? 'sr-only' : 'text-[12px] text-[var(--ink-3)]'}>Search</span>
 			<span className={`flex h-10 items-center gap-3 px-3 focus-within:border-[var(--ink)] ${plain ? 'border border-transparent bg-transparent hover:border-[var(--rule)]' : 'border border-[var(--rule)] bg-[var(--paper-2)]'}`}>
 				<MagnifyingGlassIcon className='size-4 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
 				<input
