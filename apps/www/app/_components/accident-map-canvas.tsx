@@ -113,7 +113,7 @@ function Layers({
 		const dark = resolvedTheme === 'dark'
 		if (!map.getSource(REGION)) map.addSource(REGION, { type: 'geojson', data: outline as never })
 		if (!map.getLayer(REGION_FILL))
-			map.addLayer({ id: REGION_FILL, type: 'fill', source: REGION, paint: { 'fill-color': dark ? '#e0604c' : '#8b1e1a', 'fill-opacity': dark ? 0.14 : 0.09 } })
+			map.addLayer({ id: REGION_FILL, type: 'fill', source: REGION, paint: { 'fill-color': dark ? '#e0604c' : '#8b1e1a', 'fill-opacity': dark ? 0.06 : 0.035 } })
 		if (!map.getLayer(REGION_LINE))
 			map.addLayer({ id: REGION_LINE, type: 'line', source: REGION, paint: { 'line-color': dark ? '#e0604c' : '#8b1e1a', 'line-opacity': 0.55, 'line-width': ['interpolate', ['linear'], ['zoom'], 5, 0.6, 10, 1.4] } })
 		if (!map.getSource(SRC)) map.addSource(SRC, { type: 'geojson', data: latest.current })
