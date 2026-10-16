@@ -296,7 +296,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 				) : null}
 				</div>
 			</div>
-			{anyOff ? (
+			{anyOff && !plain ? (
 				<button type='button' onClick={reset} className='mt-3 cursor-pointer text-[13px] font-semibold text-[var(--ink)] underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
 					Clear filters
 				</button>
