@@ -40,6 +40,7 @@ spent is not published by anyone, and is not here. See [Gaps](#what-is-not-here)
 | Budget | `datasets/budget/` | 86 MB, 25 files | Seven enacted GAABs, FY 2020–2026 |
 | Election | `datasets/election/` | 432 KB, 5 files | September 2026 parliamentary result |
 | Local government | `datasets/lgu/` | 79 MB, 16 files | Provinces, towns, barangays, officials |
+| Accidents | `datasets/accidents/` | small | Accidents and shootings, from news reports; the site shows 2025 on |
 | Travel guide | `packages/travel-data/` | — | **Written**, not captured |
 | Region primer | `packages/primer-data/` | — | **Written**, not captured |
 
@@ -213,6 +214,52 @@ in a search result reports a party's seats as however many happened to match.
 **Not here:** the LGUs' appropriation ordinances, any outstanding-debt figure
 per LGU, most COA audits, LGSF releases per LGU, and anything at all for
 barangays. See [Gaps](#what-is-not-here).
+
+---
+
+## Accidents — `datasets/accidents/`
+
+A record of a different kind. Nobody publishes a register of accidents in
+the region, so `accidents.json` is compiled from **news reports**: one record
+per incident, with the date, the kind, the town and where possible the
+barangay, the dead, injured and missing as last reported, and every report
+it rests on linked. It is a record of what was reported in English or
+Filipino and indexed, and the page that draws it says so. A crash nobody
+wrote up is not here; a town whose news lives only on Facebook is
+under-counted.
+
+| | Path |
+| --- | --- |
+| The incidents | `accidents.json` |
+| The reports they were read from, one file per research pass | `reports/*.json` |
+| Town centres, from OpenStreetMap through Nominatim | `municipality-centres.json` |
+| Barangay look-ups, cached | `barangay-centres.json` |
+| Outlet addresses recovered for Google News links | `links.json` |
+| Build | `scripts/build_accidents.py` |
+
+Five kinds, one colour each on the map — road; sea, lake and river; fire
+and explosion; shooting; other — with the finer kind kept on the record.
+Shootings are the one deliberate kind carried, because they are the
+region's commonest violent death; bombings and clan feuds are crimes of
+another order and stay out. Weather that hurt nobody is out too: a flood that
+displaced families but killed no one is a disaster record, which this is
+not. Sulu is not mapped; it left the region in 2024.
+
+A dot sits on the barangay the report named where Nominatim could find it
+within 25 km of the town, otherwise on the town's centre, or — for a report
+that named only the province, as many shooting headlines do — on the
+province's centre, the mean of its towns'; the record says which (`placed`),
+and the map draws a province-placed dot faint and leaves it out of the heat. Figures are as the last report gave them;
+`null` means no report gave one. Reports from Google News's index keep
+Google's link where the outlet's own address could not be recovered;
+either way the link reaches the article.
+
+To add a research pass, drop its JSON array into `reports/` in the shape
+the existing files use and run the build; it normalises town names
+against the LGU directory, folds the fine kinds into the four groups,
+drops anything it cannot place, merges records that describe one incident
+(same town, same kind, dates within two days or the same month when only
+the month is known, similar headline or the same death toll) and lists what it dropped.
 
 ---
 

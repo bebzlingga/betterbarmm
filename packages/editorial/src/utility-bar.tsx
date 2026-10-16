@@ -1,4 +1,4 @@
-import { BuildingsIcon, CheckSquareOffsetIcon, CoinsIcon, HouseIcon, ScrollIcon, ShoppingCartIcon } from '@phosphor-icons/react/ssr'
+import { BuildingsIcon, CheckSquareOffsetIcon, CoinsIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon } from '@phosphor-icons/react/ssr'
 import { GlobalSearch } from './global-search'
 import { SwitchCloser } from './switch-closer'
 
@@ -35,33 +35,102 @@ export const ESTATE_LINKS: UtilityLink[] = [
 	{ href: 'https://www.facebook.com/betterbarmm', label: 'Follow us on Facebook' },
 ]
 
-/** Each workspace's icon. */
-const ICONS = {
-	home: HouseIcon,
-	election: CheckSquareOffsetIcon,
-	legislation: ScrollIcon,
-	budget: CoinsIcon,
-	lgu: BuildingsIcon,
-	procurement: ShoppingCartIcon,
-} as const
+type SwitchItem = { key: string; href: string; label: string; icon: typeof HouseIcon }
 
 /** The live workspaces, in the order the front page lists them. */
 const WORKSPACES = [
-	{ key: 'home', href: 'https://betterbarmm.com', label: 'Discover BARMM' },
-	{ key: 'election', href: 'https://election.betterbarmm.com', label: 'Election' },
-	{ key: 'legislation', href: 'https://legislation.betterbarmm.com', label: 'Legislation' },
-	{ key: 'budget', href: 'https://budget.betterbarmm.com', label: 'Budget' },
-	{ key: 'lgu', href: 'https://lgu.betterbarmm.com', label: 'Local Government' },
-	{ key: 'procurement', href: 'https://procurement.betterbarmm.com', label: 'Procurement' },
+	{ key: 'home', href: 'https://betterbarmm.com', label: 'Discover BARMM', icon: HouseIcon },
+	{ key: 'election', href: 'https://election.betterbarmm.com', label: 'Election', icon: CheckSquareOffsetIcon },
+	{ key: 'legislation', href: 'https://legislation.betterbarmm.com', label: 'Legislation', icon: ScrollIcon },
+	{ key: 'budget', href: 'https://budget.betterbarmm.com', label: 'Budget', icon: CoinsIcon },
+	{ key: 'lgu', href: 'https://lgu.betterbarmm.com', label: 'Local Government', icon: BuildingsIcon },
+	{ key: 'procurement', href: 'https://procurement.betterbarmm.com', label: 'Procurement', icon: ShoppingCartIcon },
 ] as const
 
 export type WorkspaceKey = (typeof WORKSPACES)[number]['key']
+
+/** The projects: records of a different kind, each a page on the landing
+ *  site rather than a workspace of its own, listed from every workspace. */
+const PROJECTS = [
+	{ key: 'accidents', href: 'https://betterbarmm.com/accidents', label: 'Accident Monitor', icon: SirenIcon },
+] as const
+
+export type ProjectKey = (typeof PROJECTS)[number]['key']
+
+/**
+ * One dropdown of the strip. A dropdown rather than a row: it stays one
+ * control however many entries there are. Native `<details>`, so it opens
+ * without script; `SwitchCloser` shuts it from outside. Drawn twice, for
+ * the workspaces and then the projects, so the two read as one control.
+ */
+function Switch({
+	icon,
+	label,
+	value,
+	heading,
+	items,
+	current,
+	className = '',
+}: {
+	icon?: React.ReactNode
+	label: string
+	value?: string
+	heading: string
+	items: readonly SwitchItem[]
+	current?: string
+	className?: string
+}) {
+	return (
+		<details className={`utility-bar-switch relative ${className}`}>
+			<summary className='utility-bar-link cursor-pointer list-none'>
+				{icon}
+				<span className='font-bold'>{label}</span>
+				{value ? <span className='text-[var(--ink)]'>{value}</span> : null}
+				<svg viewBox='0 0 10 6' aria-hidden='true' className='utility-bar-caret size-2.5'>
+					<path d='M1 1l4 4 4-4' fill='none' stroke='currentColor' strokeWidth='1.5' />
+				</svg>
+			</summary>
+			{/* Every entry a row, its icon beside its name. */}
+			<div className='absolute left-0 top-full z-50 mt-1 w-[16rem] max-w-[calc(100vw-2rem)] border border-[var(--rule)] bg-[var(--paper)] p-2 normal-case tracking-normal shadow-lg'>
+				<p className='px-2 pb-2 pt-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>{heading}</p>
+				<ul className='grid'>
+					{items.map((item) => {
+						const on = item.key === current
+						const Icon = item.icon
+						return (
+							<li key={item.key}>
+								<a
+									href={item.href}
+									aria-current={on ? 'page' : undefined}
+									className={`group flex items-center gap-3 px-2 py-2 transition ${on ? 'bg-[var(--paper-2)]' : 'hover:bg-[var(--paper-2)]'}`}
+								>
+									<span
+										className={`grid size-5 shrink-0 place-items-center transition ${
+											on ? 'text-[var(--accent)]' : 'text-[var(--ink-3)] group-hover:text-[var(--accent)]'
+										}`}
+									>
+										<Icon size={16} weight={on ? 'fill' : 'regular'} aria-hidden='true' />
+									</span>
+									<span className={`text-[13.5px] font-semibold leading-tight ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)]'}`}>
+										{item.label}
+									</span>
+								</a>
+							</li>
+						)
+					})}
+				</ul>
+			</div>
+		</details>
+	)
+}
 
 export function UtilityBar({
 	/** Prefixed to internal hrefs, for an app that is not on betterbarmm.com. */
 	base = '',
 	/** Which workspace this is, so the switch can mark it. */
 	current,
+	/** Which project this page belongs to, if any, so the second switch can mark it. */
+	project,
 	links = ESTATE_LINKS,
 	className = '',
 	end,
@@ -69,6 +138,7 @@ export function UtilityBar({
 }: {
 	base?: string
 	current?: WorkspaceKey
+	project?: ProjectKey
 	links?: UtilityLink[]
 	/** A ground for the strip, e.g. `bb-ground` for the near-black band. */
 	className?: string
@@ -77,57 +147,30 @@ export function UtilityBar({
 	/** An icon before "Workspace:" in the switch. */
 	switchIcon?: React.ReactNode
 }) {
+	const projectLabel = PROJECTS.find((item) => item.key === project)?.label
 	return (
 		<div className={`utility-bar ${className}`}>
 			<div className='mx-auto flex max-w-[88rem] items-center justify-between gap-4 px-6 lg:px-8'>
-				{/* A dropdown rather than a row: it stays one control however many
-				    workspaces there are. Native `<details>`, so it opens without
-				    script. */}
-				<details className='utility-bar-switch relative'>
-					<summary className='utility-bar-link cursor-pointer list-none'>
-						{switchIcon}
-						<span className='font-bold'>Workspace:</span>
-						<span className='text-[var(--ink)]'>
-							{WORKSPACES.find((workspace) => workspace.key === current)?.label ?? 'Discover BARMM'}
-						</span>
-						<svg viewBox='0 0 10 6' aria-hidden='true' className='utility-bar-caret size-2.5'>
-							<path d='M1 1l4 4 4-4' fill='none' stroke='currentColor' strokeWidth='1.5' />
-						</svg>
-					</summary>
-					{/* Every workspace a row, its icon beside its name. */}
-					<div className='absolute left-0 top-full z-50 mt-1 w-[16rem] max-w-[calc(100vw-2rem)] border border-[var(--rule)] bg-[var(--paper)] p-2 normal-case tracking-normal shadow-lg'>
-						<p className='px-2 pb-2 pt-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>Workspaces</p>
-						<ul className='grid'>
-							{WORKSPACES.map((workspace) => {
-								const on = workspace.key === current
-								return (
-									<li key={workspace.key}>
-										<a
-											href={workspace.href}
-											aria-current={on ? 'page' : undefined}
-											className={`group flex items-center gap-3 px-2 py-2 transition ${on ? 'bg-[var(--paper-2)]' : 'hover:bg-[var(--paper-2)]'}`}
-										>
-											<span
-												className={`grid size-5 shrink-0 place-items-center transition ${
-													on ? 'text-[var(--accent)]' : 'text-[var(--ink-3)] group-hover:text-[var(--accent)]'
-												}`}
-											>
-												{(() => {
-													const Icon = ICONS[workspace.key]
-													return <Icon size={16} weight={on ? 'fill' : 'regular'} aria-hidden='true' />
-												})()}
-											</span>
-											<span className={`text-[13.5px] font-semibold leading-tight ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)]'}`}>
-												{workspace.label}
-											</span>
-										</a>
-									</li>
-								)
-							})}
-						</ul>
-					</div>
-				</details>
-				<SwitchCloser />
+				<div className='flex items-center gap-4 sm:gap-5'>
+					<Switch
+						icon={switchIcon}
+						label='Workspace:'
+						value={WORKSPACES.find((workspace) => workspace.key === current)?.label ?? 'Discover BARMM'}
+						heading='Workspaces'
+						items={WORKSPACES}
+						current={current}
+					/>
+					{/* Phones have no room for a second switch; their menu lists the projects. */}
+					<Switch
+						label={projectLabel ? 'Project:' : 'Projects'}
+						value={projectLabel}
+						heading='Projects'
+						items={PROJECTS}
+						current={project}
+						className='hidden sm:block'
+					/>
+					<SwitchCloser />
+				</div>
 
 				<nav aria-label='Project links' className='flex items-center gap-4 sm:gap-5'>
 					{links.filter((link) => link.href !== '/search').map((link) => {

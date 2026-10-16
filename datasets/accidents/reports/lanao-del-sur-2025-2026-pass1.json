@@ -1,0 +1,429 @@
+[
+  {
+    "date": "2026-07-10",
+    "type": "landslide",
+    "title": "Pre-dawn landslide buries homes in Ngingir, Calanogas; 7 dead, 4 missing",
+    "summary": "A rain-induced landslide hit Barangay Ngingir (also spelled Ngirngir), Calanogas, at about 2:30 a.m. on 10 July 2026 after two days of heavy rain linked to Super Typhoon Inday. Police first reported 5 dead, 2 injured and 6 missing; the toll rose to 7 dead and 4 missing after a sixth body was recovered from a river in neighbouring Malabang and a seventh victim was found on 10 July. Calanogas was placed under a state of calamity on 11 July; the 4 missing were still unaccounted for as of 12-13 July.",
+    "province": "Lanao del Sur",
+    "municipality": "Calanogas",
+    "barangay": "Ngingir",
+    "deaths": 7,
+    "injured": 2,
+    "missing": 4,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "Inquirer", "url": "https://newsinfo.inquirer.net/2261504/5-dead-6-missing-2-hurt-in-lanao-del-sur-landslide", "title": "5 dead, 6 missing, 2 hurt in Lanao del Sur landslide", "date": "2026-07-10"},
+      {"outlet": "Inquirer", "url": "https://newsinfo.inquirer.net/2261900/lanao-sur-town-under-state-of-calamity-after-landslides-kill-7", "title": "Lanao del Sur town under state of calamity after landslides kill 7", "date": "2026-07-11"},
+      {"outlet": "Inquirer", "url": "https://newsinfo.inquirer.net/2262350/search-continues-for-4-persons-missing-in-lanao-del-sur-landslide", "title": "Search continues for 4 persons missing in Lanao del Sur landslide", "date": "2026-07-12"},
+      {"outlet": "MindaNews", "url": "https://mindanews.com/top-stories/2026/07/calanogas-lanao-del-sur-landslide-death-toll-rises-to-7-4-remains-missing/", "title": "Calanogas, Lanao del Sur landslide death toll rises to 7; 4 remain missing", "date": "2026-07-10"},
+      {"outlet": "GMA Regional TV", "url": "https://www.gmanetwork.com/regionaltv/news/114759/5-dead-6-missing-in-lanao-del-sur-landslide/story/", "title": "5 dead, 6 missing in Lanao del Sur landslide", "date": "2026-07-10"},
+      {"outlet": "SunStar", "url": "https://www.sunstar.com.ph/zamboanga/landslide-hits-lanao-sur-village-5-killed-2-injured-6-missing", "title": "Landslide hits Lanao Sur village; 5 killed, 2 injured, 6 missing", "date": "2026-07-10"},
+      {"outlet": "Philstar", "url": "https://www.philstar.com/sports/2026/07/10/2541232/5-villagers-dead-landslides-due-lanao-del-sur-heavy-rains", "title": "5 villagers dead in landslides due to Lanao del Sur heavy rains", "date": "2026-07-10"},
+      {"outlet": "Manila Bulletin", "url": "https://mb.com.ph/2026/07/13/search-for-11-missing-in-flood-landslide-continues", "title": "Search for 11 missing in flood, landslide continues", "date": "2026-07-13"},
+      {"outlet": "Politiko Mindanao", "url": "https://mindanao.politiko.com.ph/lanao-del-sur-continues-search-for-missing-persons-in-calanogas-landslide/", "title": "Lanao del Sur continues search for missing persons in Calanogas landslide", "date": "2026-07-12"},
+      {"outlet": "Bombo Radyo", "url": "https://www.bomboradyo.com/bilang-ng-mga-nasawi-sa-landslide-sa-sarangani-at-lanao-del-sur-pumalo-na-sa-15", "title": "Bilang ng mga nasawi sa Landslide sa Sarangani at Lanao del Sur pumalo na sa 15", "date": "2026-07-10"}
+    ]
+  },
+  {
+    "date": "2026-04-16",
+    "type": "drowning",
+    "title": "Five children drown in a pond at Marawi permanent shelter site",
+    "summary": "Five children aged 7 to 11 drowned around 11 a.m. to noon on 16 April 2026 while swimming in a water-impounding pond at Phase 2 of the Permanent Shelter in Barangay Panoroganan, Marawi City; they had been using a discarded refrigerator as a float and went under in the deep part while trying to reach a companion. An 8-year-old girl was rescued. All five were declared dead on arrival at a Marawi hospital. The Inquirer placed the site in Barangay Kilala and dated it 15 April.",
+    "province": "Lanao del Sur",
+    "municipality": "Marawi City",
+    "barangay": "Panoroganan (Permanent Shelter Phase 2)",
+    "deaths": 5,
+    "injured": 0,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "Philstar", "url": "https://www.philstar.com/probinsiya/2026/04/18/2521735/5-bata-patay-sa-lunod-sa-lawa", "title": "5 bata patay sa lunod sa lawa!", "date": "2026-04-18"},
+      {"outlet": "Manila Bulletin", "url": "https://mb.com.ph/2026/04/17/5-kids-die-in-marawi-drowning-incident-appeal-to-parents-up", "title": "5 kids die in Marawi drowning incident; appeal to parents up", "date": "2026-04-17"},
+      {"outlet": "Inquirer", "url": "https://newsinfo.inquirer.net/2213567/5-children-drown-in-water-impounding-area-in-marawi-city", "title": "5 children drown in water impounding area in Marawi City", "date": "2026-04-16"}
+    ]
+  },
+  {
+    "date": "2025-10-25",
+    "type": "fire",
+    "title": "Faulty wiring fire destroys part of 103rd Brigade barracks at Kampo Ranao, Marawi",
+    "summary": "A fire that began about 3 p.m. on 25 October 2025 burned for roughly 45 minutes and destroyed part of the hilltop barracks of the Philippine Army's 103rd Infantry (Haribon) Brigade at Kampo Ranao, Marawi City. The brigade's civil-military operations officer attributed it to faulty electrical wiring. No casualties were mentioned in the report excerpt.",
+    "province": "Lanao del Sur",
+    "municipality": "Marawi City",
+    "barangay": "Kampo Ranao (103rd Infantry Brigade camp)",
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "Inquirer", "url": "https://newsinfo.inquirer.net/2130178/faulty-wiring-sparks-fire-at-army-camp-in-marawi", "title": "Faulty wiring sparks fire at Army camp in Marawi", "date": "2025-10-26"}
+    ]
+  },
+  {
+    "date": "2025-06-26",
+    "type": "fire",
+    "title": "Early-morning fire guts an establishment in Marawi Poblacion",
+    "summary": "A fire broke out at about 5:48 a.m. on 26 June 2025 in Barangay Marawi Poblacion, Marawi City, and was confined to a single establishment. The provincial PDRRMO fire brigade and the BFP declared it out by about 6:45 a.m. No casualties were reported; the cause was under investigation.",
+    "province": "Lanao del Sur",
+    "municipality": "Marawi City",
+    "barangay": "Marawi Poblacion",
+    "deaths": 0,
+    "injured": 0,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "Lanao del Sur Provincial Government", "url": "https://lanaodelsur.gov.ph/quick-response-contained-early-morning-fire-in-marawi-city/", "title": "Quick Response Contained Early Morning Fire in Marawi City", "date": "2025-06-26"}
+    ]
+  },
+  {
+    "date": "2025-03-19",
+    "type": "fire",
+    "title": "Fire displaces 12 families in Barangay Bacong, Marantao",
+    "summary": "A fire on 19 March 2025 in Barangay Bacong, Marantao, affected 12 families, who received relief goods and an Emergency Shelter Assistance assessment from MSSD-BARMM on 20 March. Casualties and cause were not reported.",
+    "province": "Lanao del Sur",
+    "municipality": "Marantao",
+    "barangay": "Bacong",
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/fire-affected-families-in-marantao-lanao-del-sur-receive-welfare-goods/", "title": "Fire-affected families in Marantao, Lanao del Sur receive welfare goods", "date": "2025-03-25"}
+    ]
+  },
+  {
+    "date": "2025-07",
+    "type": "fire",
+    "title": "Fire in Tiongcop and Calumbog, Malabang, hits 33 houses and 227 families",
+    "summary": "A fire in Barangays Tiongcop and Calumbog, Malabang, destroyed 18 houses and partially damaged 15 others, affecting 227 families. MSSD-BARMM distributed relief at Barangay Mable on 8 July 2025; the exact fire date, cause and casualties were not stated in the report.",
+    "province": "Lanao del Sur",
+    "municipality": "Malabang",
+    "barangay": "Tiongcop and Calumbog",
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/more-than-200-fire-affected-families-in-malabang-lanao-del-sur-receive-welfare-assistance/", "title": "More than 200 fire-affected families in Malabang, Lanao del Sur receive welfare assistance", "date": "2025-07-16"}
+    ]
+  },
+  {
+    "date": "2025-07-16",
+    "type": "other",
+    "title": "Trees felled by Tropical Storm Crising damage 4 homes in Malabang",
+    "summary": "Strong winds and rain from Tropical Cyclone Crising on 16 July 2025 toppled trees onto houses in Barangays Madaya, Bunkhouse and JAS, Malabang, damaging the homes of 4 households. MSSD-BARMM gave emergency relief; no injuries were reported.",
+    "province": "Lanao del Sur",
+    "municipality": "Malabang",
+    "barangay": "Madaya, Bunkhouse, JAS",
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/mssd-provides-relief-assistance-to-families-affected-by-fallen-trees-in-malabang/", "title": "MSSD provides relief assistance to families affected by fallen trees in Malabang", "date": "2025-07-18"}
+    ]
+  },
+  {
+    "date": "2025-08",
+    "type": "fire",
+    "title": "Fire damages 3 houses, affects 9 families in Kapai Proper",
+    "summary": "A fire in Barangay Kapai Proper, Kapai, damaged 3 houses and affected 9 families. MSSD-BARMM distributed relief goods on 6 August 2025; the fire date, cause and casualties were not stated.",
+    "province": "Lanao del Sur",
+    "municipality": "Kapai",
+    "barangay": "Kapai Proper",
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/fire-affected-families-in-kapai-lanao-del-sur-receive-welfare-goods/", "title": "Fire-affected families in Kapai, Lanao del Sur receive welfare goods", "date": "2025-08-08"}
+    ]
+  },
+  {
+    "date": "2025-08-18",
+    "type": "fire",
+    "title": "Fire affects 6 families in Barangay Daguan, Kapatagan",
+    "summary": "A fire on 18 August 2025 in Barangay Daguan, Kapatagan, affected 6 families, who received rice, food packs and household kits from MSSD-BARMM. Casualties and cause were not reported.",
+    "province": "Lanao del Sur",
+    "municipality": "Kapatagan",
+    "barangay": "Daguan",
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/fire-affected-families-in-kapatagan-lanao-del-sur-receive-welfare-goods/", "title": "Fire-affected families in Kapatagan, Lanao del Sur receive welfare goods", "date": "2025-08-22"}
+    ]
+  },
+  {
+    "date": "2025-08",
+    "type": "fire",
+    "title": "Cooking fire destroys home in Lumbac Caramian, Masiu; 2 other Masiu homes burned",
+    "summary": "A house in Barangay Lumbac Caramian, Masiu, was accidentally set alight while the occupant was cooking; she received P40,000 shelter aid on 27 August 2025 (fire date not stated). The same report covers two other burned homes in Barangays Langco Dimapatoy and Buadimaloy, Masiu, with the Langco Dimapatoy household head suffering second-degree burns. No deaths were reported.",
+    "province": "Lanao del Sur",
+    "municipality": "Masiu",
+    "barangay": "Lumbac Caramian; Langco Dimapatoy; Buadimaloy",
+    "deaths": 0,
+    "injured": 1,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "Bangsamoro Information Office", "url": "https://bangsamoro.gov.ph/news/latest-news/fire-victims-in-masiu-lanao-del-sur-rebuild-homes-with-mssd-shelter-aid/", "title": "Fire victims in Masiu, Lanao del Sur rebuild homes with MSSD shelter aid", "date": "2025-09-17"}
+    ]
+  },
+  {
+    "date": "2025-09",
+    "type": "fire",
+    "title": "September fires in Masiu leave 8 families homeless; windstorm damages 3 more houses",
+    "summary": "Fires in September 2025 destroyed the homes of 7 families in Barangay Moriatao Bae Labay and 1 family in Barangay Ampuan Lacadun, Masiu. A windstorm the same month damaged 3 houses in Barangay Dalog Balut. MSSD-BARMM distributed relief to the 11 families on 13 October 2025; casualties were not reported.",
+    "province": "Lanao del Sur",
+    "municipality": "Masiu",
+    "barangay": "Moriatao Bae Labay; Ampuan Lacadun; Dalog Balut",
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/fire-and-windstorm-affected-families-in-masiu-receive-assistance/", "title": "Fire and windstorm affected families in Masiu receive assistance", "date": "2025-10-22"}
+    ]
+  },
+  {
+    "date": "2025-10",
+    "type": "flood",
+    "title": "Storm surge wrecks 25 houses in coastal Picong, 45 families affected",
+    "summary": "A storm surge severely damaged 25 houses in Barangays Malade, Uban-Uban, Liangan and Biosong and partially damaged 20 more in Malade, Uban-Uban and Punong, Picong (Sultan Gumander), affecting 45 families. MSSD-BARMM distributed welfare goods on 14 October 2025; the storm and exact date were not named and no casualties were reported.",
+    "province": "Lanao del Sur",
+    "municipality": "Picong (Sultan Gumander)",
+    "barangay": "Malade, Uban-Uban, Liangan, Biosong, Punong",
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/storm-surge-affected-families-in-picong-lanao-del-sur-receive-welfare-goods/", "title": "Storm surge-affected families in Picong, Lanao del Sur receive welfare goods", "date": "2025-10-20"}
+    ]
+  },
+  {
+    "date": "2025-11-07",
+    "type": "fire",
+    "title": "Fire destroys homes of 4 families in Barangay Malungun, Maguing",
+    "summary": "A fire on 7 November 2025 in Barangay Malungun, Maguing, destroyed the homes of 4 families, who received emergency relief packages from MSSD-BARMM. Casualties and cause were not reported.",
+    "province": "Lanao del Sur",
+    "municipality": "Maguing",
+    "barangay": "Malungun",
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/fire-victim-families-in-maguing-receive-immediate-aid-from-mssd/", "title": "Fire victim families in Maguing receive immediate aid from MSSD", "date": "2025-11-11"}
+    ]
+  },
+  {
+    "date": "2025-11",
+    "type": "fire",
+    "title": "Fire affects 5 families in Pilintangan, Amoyong and Gata, Wao",
+    "summary": "A fire in Barangays Pilintangan, Amoyong and Gata (Cebuana Group), Wao, affected 5 families, who received relief from MSSD-BARMM on 13 November 2025 alongside victims of an earlier earthquake. The fire date, cause and casualties were not stated.",
+    "province": "Lanao del Sur",
+    "municipality": "Wao",
+    "barangay": "Pilintangan, Amoyong, Gata",
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/mssd-delivers-aid-to-earthquake-and-fire-victims-in-wao/", "title": "MSSD delivers aid to earthquake and fire victims in Wao", "date": "2025-11-19"}
+    ]
+  },
+  {
+    "date": "2025-11",
+    "type": "flood",
+    "title": "Typhoon Uwan coastal flooding and fallen trees hit 61 fishing families in Malabang",
+    "summary": "Typhoon Uwan brought coastal flooding and wind-felled trees that damaged houses in Barangays Maligaya Beach, Bunkhouse and Sumabagarogong, with a few households hit in Matampay and Cabasaran, Malabang; 61 families, mostly fisherfolk, were affected. MSSD-BARMM delivered relief on 13 November 2025. No casualties were reported.",
+    "province": "Lanao del Sur",
+    "municipality": "Malabang",
+    "barangay": "Maligaya Beach, Bunkhouse, Sumabagarogong, Matampay, Cabasaran",
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/61-typhoon-uwan-affected-families-in-malabang-receive-emergency-relief-assistance-from-mssd/", "title": "61 Typhoon Uwan-affected families in Malabang receive emergency relief assistance from MSSD", "date": "2025-11-17"}
+    ]
+  },
+  {
+    "date": "2025-04-14",
+    "type": "flood",
+    "title": "Night rain floods barangays in Ditsaan-Ramain and Bubong",
+    "summary": "Heavy rain on the night of 14 April 2025 flooded barangays in Ditsaan-Ramain and Bubong. The provincial social welfare office later distributed rice and food packs to affected families; the number of families and any casualties were not reported.",
+    "province": "Lanao del Sur",
+    "municipality": "Ditsaan-Ramain",
+    "barangay": null,
+    "deaths": null,
+    "injured": null,
+    "missing": null,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "Lanao del Sur Provincial Government", "url": "https://lanaodelsur.gov.ph/relief-operation-to-families-affected-by-flash-flood/", "title": "Relief Operation to Families Affected by Flash Flood", "date": "2025-06-20"}
+    ]
+  },
+  {
+    "date": "2025-05",
+    "type": "flood",
+    "title": "Flooding affects 60 households in Barangay Cabasaran, Madalum",
+    "summary": "Flooding in Barangay Cabasaran, Madalum, affected 60 households, who received family food packs from MSSD-BARMM's Madalum office and the municipal disaster office on 23 May 2025. The flood date, cause and any casualties were not stated.",
+    "province": "Lanao del Sur",
+    "municipality": "Madalum",
+    "barangay": "Cabasaran",
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/flood-affected-households-in-madalum-lanao-del-sur-receive-welfare-goods/", "title": "Flood-affected households in Madalum, Lanao del Sur receive welfare goods", "date": "2025-05-23"}
+    ]
+  },
+  {
+    "date": "2026-01-05",
+    "type": "flood",
+    "title": "Easterlies rain floods Taraka, halts resumption of classes",
+    "summary": "Rain brought by the easterlies flooded Taraka town on 5 January 2026, preventing classes from resuming after the Christmas break. The municipal disaster office mobilised personnel; the number of families affected and any casualties were not given in the report excerpt.",
+    "province": "Lanao del Sur",
+    "municipality": "Taraka",
+    "barangay": null,
+    "deaths": null,
+    "injured": null,
+    "missing": null,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "Inquirer", "url": "https://newsinfo.inquirer.net/2163196/floods-hit-lanao-del-sur-town", "title": "Floods hit Lanao del Sur town", "date": "2026-01-05"}
+    ]
+  },
+  {
+    "date": "2026-01-06",
+    "type": "fire",
+    "title": "Fire totally destroys 3 houses in Kapai",
+    "summary": "A fire on 6 January 2026 in Kapai totally destroyed the houses of 3 families, each later granted P40,000 Emergency Shelter Assistance by MSSD-BARMM; 7 other Kapai households with partially damaged houses also received aid. The barangay, cause and casualties were not stated.",
+    "province": "Lanao del Sur",
+    "municipality": "Kapai",
+    "barangay": null,
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/mssd-provides-emergency-shelter-assistance-to-families-affected-by-disasters-in-lanao-del-sur/", "title": "MSSD provides emergency shelter assistance to families affected by disasters in Lanao del Sur", "date": "2026-01-07"}
+    ]
+  },
+  {
+    "date": "2026-01",
+    "type": "other",
+    "title": "Tornado destroys 2 homes and damages 12 in Masiu",
+    "summary": "A tornado on 6 or 7 January 2026 in Masiu totally destroyed 2 homes and partially damaged 12 others, affecting 14 families, who received Emergency Shelter Assistance from MSSD-BARMM. The barangay and any casualties were not reported.",
+    "province": "Lanao del Sur",
+    "municipality": "Masiu",
+    "barangay": null,
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/displaced-families-in-lanao-del-sur-receive-financial-shelter-assistance/", "title": "Displaced families in Lanao del Sur receive financial shelter assistance", "date": "2026-01-08"}
+    ]
+  },
+  {
+    "date": "2026-02-09",
+    "type": "other",
+    "title": "Waterspout tears roofs off 15 houses in Mangayao, Taraka",
+    "summary": "A waterspout struck the lakeside village of Mangayao in Taraka after 3 p.m. on Monday 9 February 2026, blowing roofs off and damaging at least 15 houses, according to the municipal disaster office. No injuries were mentioned in the report excerpt.",
+    "province": "Lanao del Sur",
+    "municipality": "Taraka",
+    "barangay": "Mangayao",
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "Inquirer", "url": "https://newsinfo.inquirer.net/2181082/15-houses-damaged-as-waterspout-hit-village-in-lanao-del-sur", "title": "15 houses damaged as waterspout hit village in Lanao del Sur", "date": "2026-02-12"}
+    ]
+  },
+  {
+    "date": "2026-02-12",
+    "type": "fire",
+    "title": "Fire destroys 2 homes in Dilausan Poblacion and Balintao, Maguing",
+    "summary": "A fire on 12 February 2026 in Barangays Dilausan Poblacion and Balintao, Maguing, destroyed the homes of 2 families, who were among 395 disaster-affected families given MSSD-BARMM relief that week. Casualties and cause were not reported.",
+    "province": "Lanao del Sur",
+    "municipality": "Maguing",
+    "barangay": "Dilausan Poblacion; Balintao",
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/mssd-delivers-emergency-relief-to-395-disaster-affected-families-in-lanao-del-sur/", "title": "MSSD delivers emergency relief to 395 disaster-affected families in Lanao del Sur", "date": "2026-02-19"}
+    ]
+  },
+  {
+    "date": "2026-02-16",
+    "type": "flood",
+    "title": "Flooding displaces 385 families in Buadiposo-Buntong",
+    "summary": "Flooding on 16 February 2026 affected 385 families in Buadiposo-Buntong, who received welfare goods from MSSD-BARMM. Barangays, cause and casualties were not stated.",
+    "province": "Lanao del Sur",
+    "municipality": "Buadiposo-Buntong",
+    "barangay": null,
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/mssd-delivers-emergency-relief-to-395-disaster-affected-families-in-lanao-del-sur/", "title": "MSSD delivers emergency relief to 395 disaster-affected families in Lanao del Sur", "date": "2026-02-19"}
+    ]
+  },
+  {
+    "date": "2026-02-17",
+    "type": "fire",
+    "title": "Fire affects 7 families in Wao",
+    "summary": "A fire on 17 February 2026 in Wao affected 7 families, who received MSSD-BARMM relief goods. The barangay, cause and casualties were not reported.",
+    "province": "Lanao del Sur",
+    "municipality": "Wao",
+    "barangay": null,
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/mssd-delivers-emergency-relief-to-395-disaster-affected-families-in-lanao-del-sur/", "title": "MSSD delivers emergency relief to 395 disaster-affected families in Lanao del Sur", "date": "2026-02-19"}
+    ]
+  },
+  {
+    "date": "2026-02",
+    "type": "flood",
+    "title": "Flooding in six Tamparan barangays affects 498 families",
+    "summary": "Flooding in six barangays of Tamparan affected 498 families, who received food packs, sleeping kits and dignity kits from MSSD-BARMM on 23 and 26 February 2026. The flood date, barangay names, cause and casualties were not stated.",
+    "province": "Lanao del Sur",
+    "municipality": "Tamparan",
+    "barangay": null,
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/498-flood-affected-families-in-tamparan-receive-welfare-goods/", "title": "498 flood-affected families in Tamparan receive welfare goods", "date": "2026-02-27"}
+    ]
+  },
+  {
+    "date": "2026-06-07",
+    "type": "fire",
+    "title": "Fire razes 21 buildings near Matling roundball, Malabang; 38 households hit",
+    "summary": "A fire broke out at about 5 p.m. on 7 June 2026 near the roundball area of Barangay Matling, Malabang, and totally destroyed 21 residential, commercial and mixed-use structures and partially damaged 1 more, affecting 38 households. No casualties were reported; MSSD-BARMM provided relief and psychosocial support.",
+    "province": "Lanao del Sur",
+    "municipality": "Malabang",
+    "barangay": "Matling",
+    "deaths": 0,
+    "injured": 0,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {"outlet": "MSSD BARMM", "url": "https://mssd.barmm.gov.ph/relief-and-psychosocial-support-extended-to-fire-victims-in-malabang/", "title": "Relief and psychosocial support extended to fire victims in Malabang", "date": "2026-06-09"}
+    ]
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "date": "2019-07-17",
+    "type": "electrocution",
+    "title": "Illegal power tapping electrocutes 2 in Tamparan, 1 dead",
+    "summary": "Two people were electrocuted on the afternoon of 17 July 2019 in Barangay Salongabanding, Tamparan, while trying to tap into a Lanao del Sur Electric Cooperative main line. One died and the other was hospitalized with serious burns.",
+    "province": "Lanao del Sur",
+    "municipality": "Tamparan",
+    "barangay": "Salongabanding",
+    "deaths": 1,
+    "injured": 1,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {
+        "outlet": "Inquirer",
+        "url": "https://newsinfo.inquirer.net/1143091/illegal-electric-tapping-kills-1-injures-another-in-lanao-sur",
+        "title": "Illegal electric tapping kills 1, injures another in Lanao Sur",
+        "date": null
+      }
+    ]
+  },
+  {
+    "date": "2019-11",
+    "type": "fire",
+    "title": "Fire guts former mayor's ancestral house in Bubong",
+    "summary": "A fire destroyed the two-storey ancestral house of a former mayor in Barangay Muntian, Bubong, in November 2019; the BFP declared it out at 5:03 pm. No one was hurt, 7 families were displaced and damage was placed at PHP 400,000.",
+    "province": "Lanao del Sur",
+    "municipality": "Bubong",
+    "barangay": "Muntian",
+    "deaths": 0,
+    "injured": 0,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {
+        "outlet": "Inquirer",
+        "url": "https://newsinfo.inquirer.net/1185940/fire-guts-ex-mayors-ancestral-house-in-bubong-lanao-del-sur",
+        "title": "Fire guts ex-mayor's ancestral house in Bubong, Lanao del Sur",
+        "date": null
+      }
+    ]
+  },
+  {
+    "date": "2021-02-18",
+    "type": "fire",
+    "title": "Fire destroys temporary classrooms at Marawi resettlement site",
+    "summary": "A fire that broke out around 6 pm on 18 February 2021 destroyed a temporary school building used by Dansalan National High School at a resettlement site for families displaced by the 2017 Marawi siege. Firefighters from the provincial government and Saguiaran controlled it in about 20 minutes; no one was hurt but books and learning modules were lost.",
+    "province": "Lanao del Sur",
+    "municipality": "Marawi City",
+    "barangay": null,
+    "deaths": 0,
+    "injured": 0,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {
+        "outlet": "Inquirer",
+        "url": "https://newsinfo.inquirer.net/1397810/fire-destroys-temporary-classrooms-books-for-marawi-evacuees-children",
+        "title": "Fire destroys temporary classrooms, books for Marawi evacuees' children",
+        "date": null
+      }
+    ]
+  },
+  {
+    "date": "2022-09-15",
+    "type": "flood",
+    "title": "Lake Lanao swelling floods 11 barangays in Masiu",
+    "summary": "Frequent thunderstorm rain swelled Lake Lanao and flooded 11 barangays of Masiu on 15 September 2022, affecting 759 households (3,795 people) and displacing 127 who stayed with relatives. No deaths, injuries or missing persons were reported.",
+    "province": "Lanao del Sur",
+    "municipality": "Masiu",
+    "barangay": null,
+    "deaths": 0,
+    "injured": 0,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {
+        "outlet": "AHA Centre ADINet",
+        "url": "https://adinet.ahacentre.org/report/philippines-flooding-in-lanao-del-sur-barmm-20220915",
+        "title": "Philippines, Flooding in Lanao del Sur (BARMM)",
+        "date": "2022-09-15"
+      }
+    ]
+  },
+  {
+    "date": "2024-07-09",
+    "type": "flood",
+    "title": "Flash floods in southern Lanao del Sur kill teen, 3 missing",
+    "summary": "Heavy rain from the intertropical convergence zone sent flash floods through Malabang, Balabagan, Kapatagan and Marogong on the night of 9 July 2024. A boy of about 14 drowned in Kapatagan, a 15-year-old male was missing there, and a 2-year-old boy and his 3-year-old sister were missing in Balabagan after their house was swept away; 4 people were injured, 4,990 households were evacuated from 82 barangays and 665 houses were damaged.",
+    "province": "Lanao del Sur",
+    "municipality": "Kapatagan",
+    "barangay": null,
+    "deaths": 1,
+    "injured": 4,
+    "missing": 3,
+    "vehicles": [],
+    "sources": [
+      {
+        "outlet": "SunStar (PNA)",
+        "url": "https://www.sunstar.com.ph/cagayan-de-oro/1-dead-3-missing-in-lanao-floods-road-clearing-ops-up",
+        "title": "1 dead, 3 missing in Lanao floods, road clearing ops up",
+        "date": "2024-07-12"
+      },
+      {
+        "outlet": "GMA Regional TV",
+        "url": "https://www.gmanetwork.com/regionaltv/news/102877/1-killed-over-3000-families-affected-by-flood-in-lanao-del-sur/story",
+        "title": "1 killed, over 3,000 families affected by flood in Lanao del Sur",
+        "date": "2024-07-11"
+      },
+      {
+        "outlet": "Inquirer",
+        "url": "https://newsinfo.inquirer.net/1959837/boy-dead-2-toddlers-missing-in-lanao-del-sur-flash-floods",
+        "title": "Boy dead, 2 toddlers missing in Lanao del Sur flash floods",
+        "date": null
+      }
+    ]
+  },
+  {
+    "date": "2024-09-13",
+    "type": "other",
+    "title": "Uprooted tree falls on tricycle in Malabang, 4 children dead",
+    "summary": "A tree uprooted by severe weather fell on a tricycle in Malabang on Friday, 13 September 2024. Four minors aged 7 to 15 died and three other minors were hospitalized, according to the Bangsamoro Ministry of Social Services and Development.",
+    "province": "Lanao del Sur",
+    "municipality": "Malabang",
+    "barangay": null,
+    "deaths": 4,
+    "injured": 3,
+    "missing": 0,
+    "vehicles": ["tricycle"],
+    "sources": [
+      {
+        "outlet": "GMA News",
+        "url": "https://www.gmanetwork.com/news/topstories/regions/920511/4-dead-3-hurt-after-tree-falls-in-lanao-del-sur/story/",
+        "title": "4 dead, 3 hurt after tree falls in Lanao del Sur",
+        "date": "2024-09-15"
+      },
+      {
+        "outlet": "Manila Bulletin",
+        "url": "https://mb.com.ph/2024/9/15/4-dead-3-hurt-as-fallen-tree-hits-tricycle-in-lanao-del-sur",
+        "title": "4 dead, 3 hurt as fallen tree hits tricycle in Lanao del Sur",
+        "date": "2024-09-15"
+      },
+      {
+        "outlet": "Inquirer",
+        "url": "https://newsinfo.inquirer.net/1983248/4-children-dead-in-lanao-del-sur-amid-heavy-rain-strong-winds",
+        "title": "4 children dead in Lanao del Sur amid heavy rain, strong winds",
+        "date": null
+      }
+    ]
+  },
+  {
+    "date": "2024-10-11",
+    "type": "fire",
+    "title": "Dawn fire destroys 12 houses in Marogong",
+    "summary": "A fire at dawn on 11 October 2024 in Barangay Proper, Marogong, destroyed 12 houses and partially damaged 9 others, displacing at least 20 families. No one was hurt; damage was estimated at about PHP 2 million and the cause was under investigation.",
+    "province": "Lanao del Sur",
+    "municipality": "Marogong",
+    "barangay": "Proper",
+    "deaths": 0,
+    "injured": 0,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {
+        "outlet": "GMA Regional TV",
+        "url": "https://www.gmanetwork.com/regionaltv/news/104477/14-houses-razed-by-fire-in-butuan-city/story",
+        "title": "14 houses razed by fire in Butuan City (includes Marogong fire item)",
+        "date": "2024-10-11"
+      }
+    ]
+  }
+]

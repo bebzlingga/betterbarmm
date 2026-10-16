@@ -1,0 +1,116 @@
+{
+ "name": "Barangay centres looked up for the accident map",
+ "source": {
+  "label": "OpenStreetMap, through Nominatim (ODbL)",
+  "href": "https://nominatim.openstreetmap.org/"
+ },
+ "lookups": {
+  "Malakas|Lamitan|Basilan": null,
+  "Pandak Island|Hadji Muhtamad|Basilan": null,
+  "Baluk-Baluk Island|Hadji Muhtamad|Basilan": {
+   "lat": 6.6684,
+   "lon": 121.7094,
+   "matched": "Balukbaluk Island, Hadji Muhtamad, Basilan, Bangsamoro, Philippines"
+  },
+  "Tamok Island|Maluso|Basilan": null,
+  "Matibay|Lamitan|Basilan": null,
+  "2.75 miles northeast of Baluk-Baluk Island|Hadji Muhtamad|Basilan": null,
+  "Malatimon|Ampatuan|Maguindanao del Sur": null,
+  "Kusiong|Datu Odin Sinsuat|Maguindanao del Norte": null,
+  "Tumahubong|Sumisip|Basilan": {
+   "lat": 6.475,
+   "lon": 122.0389,
+   "matched": "Tumahubong, Sumisip, Basilan, Bangsamoro, Philippines"
+  },
+  "Lamion|Bongao|Tawi-Tawi": {
+   "lat": 5.0272,
+   "lon": 119.7772,
+   "matched": "Lamion, Sitio Kasanyangan, Tongsinah, Bongao, Tawi-Tawi, Bangsamoro, 7500, Philippines"
+  },
+  "Ngingir|Calanogas|Lanao del Sur": {
+   "lat": 7.7061,
+   "lon": 124.0789,
+   "matched": "Ngingir Elementary School, Calanogas, Inoma, Lanao del Sur, Bangsamoro, Philippines"
+  },
+  "Panguan Island|Sitangkai|Tawi-Tawi": null,
+  "Rosary Heights|Cotabato City|Cotabato City": {
+   "lat": 7.2104,
+   "lon": 124.2437,
+   "matched": "Rosary Heights, Cotabato City, Bangsamoro, 9600, Philippines"
+  },
+  "Alamada|Sultan Kudarat|Maguindanao del Norte": {
+   "lat": 7.2688,
+   "lon": 124.3695,
+   "matched": "Alamada, Sultan Kudarat, Maguindanao del Norte, Bangsamoro, 9605, Philippines"
+  },
+  "Baca|Datu Odin Sinsuat|Maguindanao del Norte": null,
+  "Dilausan|Balindong|Lanao del Sur": null,
+  "Kurinte|Datu Odin Sinsuat|Maguindanao del Norte": null,
+  "Poblacion|Bongao|Tawi-Tawi": {
+   "lat": 5.0326,
+   "lon": 119.774,
+   "matched": "Bongao Poblacion, Sitio Kasanyangan, Tongsinah, Bongao, Tawi-Tawi, Bangsamoro, 7500, Philippines"
+  },
+  "Omapoy Island|Sibutu|Tawi-Tawi": null,
+  "Pandan|South Upi|Maguindanao del Sur": {
+   "lat": 6.8457,
+   "lon": 124.2503,
+   "matched": "Pandan, Maguindanao del Sur, Bangsamoro, 9603, Philippines"
+  },
+  "Salongabanding|Tamparan|Lanao del Sur": null,
+  "Muntian|Bubong|Lanao del Sur": null,
+  "Proper|Marogong|Lanao del Sur": null,
+  "Panoroganan (Permanent Shelter Phase 2)|Marawi|Lanao del Sur": null,
+  "Kampo Ranao (103rd Infantry Brigade camp)|Marawi|Lanao del Sur": null,
+  "Marawi Poblacion|Marawi|Lanao del Sur": null,
+  "Bacong|Marantao|Lanao del Sur": {
+   "lat": 7.9906,
+   "lon": 124.2666,
+   "matched": "Bacong, Marantao, Lanao del Sur, Bangsamoro, 9700, Philippines"
+  },
+  "Tiongcop and Calumbog|Malabang|Lanao del Sur": null,
+  "Kapai Proper|Kapai|Lanao del Sur": {
+   "lat": 8.0824,
+   "lon": 124.3984,
+   "matched": "Poblacion, Kapai, Lanao del Sur, Bangsamoro, Philippines"
+  },
+  "Daguan|Kapatagan|Lanao del Sur": null,
+  "Lumbac Caramian; Langco Dimapatoy; Buadimaloy|Masiu|Lanao del Sur": null,
+  "Moriatao Bae Labay; Ampuan Lacadun; Dalog Balut|Masiu|Lanao del Sur": null,
+  "Malungun|Maguing|Lanao del Sur": {
+   "lat": 7.8874,
+   "lon": 124.3754,
+   "matched": "Malungun Pagalongan, Maguing, Lanao del Sur, Bangsamoro, 9712, Philippines"
+  },
+  "Pilintangan, Amoyong, Gata|Wao|Lanao del Sur": null,
+  "Dilausan Poblacion; Balintao|Maguing|Lanao del Sur": null,
+  "Matling|Malabang|Lanao del Sur": {
+   "lat": 7.6345,
+   "lon": 124.0914,
+   "matched": "Matling Airstrip, Malabang-Marogong Road, Romagondong, Lanao del Sur, Bangsamoro, 9300, Philippines"
+  },
+  "Poblacion 7 (Tukananes)|Cotabato City|Cotabato City": null,
+  "Rosary Heights 10|Cotabato City|Cotabato City": {
+   "lat": 7.2059,
+   "lon": 124.2366,
+   "matched": "Rosary Heights 10, Rosary Heights, Cotabato City, Bangsamoro, 9600, Philippines"
+  },
+  "Edcor|Buldon|Maguindanao del Norte": {
+   "lat": 7.4418,
+   "lon": 124.3957,
+   "matched": "Edcor, Buldon, Maguindanao del Norte, Bangsamoro, 9615, Philippines"
+  },
+  "Pura|Datu Blah T. Sinsuat|Maguindanao del Norte": {
+   "lat": 7.067,
+   "lon": 124.0186,
+   "matched": "Pura, Datu Blah T. Sinsuat, Maguindanao del Norte, Bangsamoro, 9623, Philippines"
+  },
+  "Magaslong|Datu Piang|Maguindanao del Sur": {
+   "lat": 7.0197,
+   "lon": 124.4936,
+   "matched": "Magaslong, Datu Piang, Maguindanao del Sur, Bangsamoro, 9607, Philippines"
+  },
+  "Poblacion|Shariff Aguak|Maguindanao del Sur": null,
+  "Mother Poblacion|Shariff Aguak|Maguindanao del Sur": null
+ }
+}

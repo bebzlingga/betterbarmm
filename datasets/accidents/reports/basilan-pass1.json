@@ -1,0 +1,254 @@
+[
+ {
+  "date": "2020-02",
+  "type": "fire",
+  "title": "Fire razes 7 houses and a private school in Barangay Malakas, Lamitan",
+  "summary": "A fire traced to a lit mosquito-repellent coil left in an abandoned house destroyed 7 residential houses and a private school building in Barangay Malakas, Lamitan City, in February 2020. 25 families were displaced and 2 firefighters were hurt by falling debris.",
+  "province": "Basilan",
+  "municipality": "Lamitan City",
+  "barangay": "Malakas",
+  "deaths": 0,
+  "injured": 2,
+  "missing": 0,
+  "vehicles": [],
+  "sources": [
+   {
+    "outlet": "Inquirer",
+    "url": "https://newsinfo.inquirer.net/1232529/25-families-left-homeless-in-basilan-fire-due-to-unattended-mosquito-repellent",
+    "title": "25 families left homeless in Basilan fire due to unattended mosquito repellent",
+    "date": "2020-02-24"
+   }
+  ]
+ },
+ {
+  "date": "2023-02",
+  "type": "sea",
+  "title": "Motorbanca sinks in big waves off Pandak Island, Hadji Muhtamad; 6 rescued",
+  "summary": "A motorbanca sank in big waves near Pandak Island off Hadji Muhtamad, Basilan, in February 2023. All 6 people aboard were rescued.",
+  "province": "Basilan",
+  "municipality": "Hadji Muhtamad",
+  "barangay": "Pandak Island",
+  "deaths": 0,
+  "injured": null,
+  "missing": 0,
+  "vehicles": [
+   "motorbanca"
+  ],
+  "sources": [
+   {
+    "outlet": "Inquirer",
+    "url": "https://newsinfo.inquirer.net/1736973/six-rescued-from-sunken-motor-banca-off-basilan",
+    "title": "Six rescued from sunken motor banca off Basilan",
+    "date": null
+   }
+  ]
+ },
+ {
+  "date": "2023-03-29",
+  "type": "sea",
+  "title": "MV Lady Mary Joy 3 burns off Baluk-Baluk Island; 33 dead",
+  "summary": "The Jolo-bound Aleson Shipping ferry MV Lady Mary Joy 3, sailing from Zamboanga City with 249 people aboard, caught fire near Baluk-Baluk Island, Hadji Muhtamad, at about 10:40 p.m. on 29 March 2023. Victims burned inside the vessel or drowned after jumping overboard; the final toll was 33 dead after the last missing passenger was recovered, with 14 hospitalized early on. Investigators blamed faulty electrical wiring in an air-conditioned cabin.",
+  "province": "Basilan",
+  "municipality": "Hadji Muhtamad",
+  "barangay": "Baluk-Baluk Island",
+  "deaths": 33,
+  "injured": 14,
+  "missing": 0,
+  "vehicles": [
+   "ferry"
+  ],
+  "sources": [
+   {
+    "outlet": "DZRH",
+    "url": "https://www.dzrh.com.ph/post/vessel-catches-fire-in-basilan",
+    "title": "Vessel catches fire in Basilan",
+    "date": "2023-03-30"
+   },
+   {
+    "outlet": "Inquirer",
+    "url": "https://newsinfo.inquirer.net/1755809/pcg-retrieves-last-body-in-basilan-ferry-fire-deaths-now-at-32",
+    "title": "PCG retrieves last body in Basilan ferry fire; deaths now at 33",
+    "date": null
+   },
+   {
+    "outlet": "Malaya",
+    "url": "https://malaya.com.ph/news/pcg-electrical-fault-caused-basilan-boat-fire",
+    "title": "PCG: Electrical fault caused Basilan boat fire",
+    "date": null
+   },
+   {
+    "outlet": "MindaNews",
+    "url": "https://mindanews.com/top-stories/2023/03/at-least-12-dead-after-ship-burns-off-basilan/",
+    "title": "At least 12 dead after ship burns off Basilan",
+    "date": "2023-03-30"
+   }
+  ]
+ },
+ {
+  "date": "2024-01",
+  "type": "road",
+  "title": "Hit-and-run van kills motorcycle rider in Lamitan, injures wife and 2 children",
+  "summary": "A van cut into the lane of a motorcycle carrying a family home in Lamitan City in January 2024, killing rider Dennis Manalo and injuring his wife and two children. The van fled and was later found abandoned in Barangay Kabangalan, Ungkaya Pukan; the driver was not located.",
+  "province": "Basilan",
+  "municipality": "Lamitan City",
+  "barangay": null,
+  "deaths": 1,
+  "injured": 3,
+  "missing": 0,
+  "vehicles": [
+   "motorcycle",
+   "van"
+  ],
+  "sources": [
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/100191/hitandrun-incident-in-basilan-kills-rider-hurts-family/story",
+    "title": "Hit-and-run incident in Basilan kills rider, hurts family",
+    "date": "2024-01-23"
+   }
+  ]
+ },
+ {
+  "date": "2025-07-12",
+  "type": "sea",
+  "title": "Motorboat from Banguingui capsizes in strong winds off Maluso; 18 rescued",
+  "summary": "A motorboat carrying 18 passengers and crew from Tattalan, Banguingui, Sulu, to Maluso, Basilan, capsized in strong winds off Maluso on 12 July 2025. Basilan Maritime Police, the Coast Guard Maluso sub-station and the municipal disaster office rescued all 18 at about 10 a.m.; no one was reported injured or missing.",
+  "province": "Basilan",
+  "municipality": "Maluso",
+  "barangay": null,
+  "deaths": 0,
+  "injured": 0,
+  "missing": 0,
+  "vehicles": [
+   "motorboat"
+  ],
+  "sources": [
+   {
+    "outlet": "SunStar Zamboanga",
+    "url": "https://www.sunstar.com.ph/zamboanga/motorboat-capsizes-18-rescued-off-basilan",
+    "title": "Motorboat capsizes; 18 rescued off Basilan",
+    "date": "2025-07-14"
+   }
+  ]
+ },
+ {
+  "date": "2025-10-06",
+  "type": "sea",
+  "title": "Fishing boat FB Mona sinks in rough seas off Tamok Island, Maluso; 20 crew rescued",
+  "summary": "The fishing boat FB Mona, skippered by Muhammad Javier, sank after being battered by strong winds and big waves while fishing between Tamok Island, Basilan, and Duay Bulod Island, Sulu, at about 7:25 a.m. on 6 October 2025. Coast Guard Maluso sub-station personnel, maritime police and local fishermen rescued all 20 crew unhurt and towed the boat to Teheem Island, Maluso.",
+  "province": "Basilan",
+  "municipality": "Maluso",
+  "barangay": "Tamok Island",
+  "deaths": 0,
+  "injured": 0,
+  "missing": 0,
+  "vehicles": [
+   "fishing boat"
+  ],
+  "sources": [
+   {
+    "outlet": "SunStar Zamboanga",
+    "url": "https://www.sunstar.com.ph/zamboanga/20-fishermen-rescued-off-basilan-sulu",
+    "title": "20 fishermen rescued off Basilan, Sulu",
+    "date": "2025-10-07"
+   }
+  ]
+ },
+ {
+  "date": "2025-12-16",
+  "type": "fire",
+  "title": "Second-alarm fire in Barangay Matibay, Lamitan razes 3 houses; 2 hurt",
+  "summary": "A fire that broke out at about 6 a.m. on 16 December 2025 at the house of a gasoline dealer in Barangay Matibay, Lamitan City, destroyed at least 3 houses and affected 2 others before firefighters put it out after nearly two hours. The 57-year-old house owner and firefighter FO3 Elvin Saldariega were burned; damage was estimated at about P750,000. Investigators suspect faulty wiring, and stored LPG and oxygen tanks worsened the blaze.",
+  "province": "Basilan",
+  "municipality": "Lamitan City",
+  "barangay": "Matibay",
+  "deaths": 0,
+  "injured": 2,
+  "missing": 0,
+  "vehicles": [],
+  "sources": [
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/111962/2-hurt-in-basilan-fire-3-houses-razed/story/",
+    "title": "2 hurt in Basilan fire, 3 houses razed",
+    "date": "2025-12-16"
+   },
+   {
+    "outlet": "SunStar Zamboanga",
+    "url": "https://www.sunstar.com.ph/zamboanga/firefighter-injured-in-lamitan-city-fire",
+    "title": "Firefighter injured in Lamitan City fire",
+    "date": "2025-12-16"
+   }
+  ]
+ },
+ {
+  "date": "2026-01-26",
+  "type": "sea",
+  "title": "Ferry MV Trisha Kerstin 3 sinks off Baluk-Baluk Island; 65 dead, 14 missing by 22 February",
+  "summary": "The Aleson Shipping ro-pax ferry MV Trisha Kerstin 3, sailing from Zamboanga City to Jolo with 344 people aboard, took on water, listed and sank about 2.75 nautical miles northeast of Baluk-Baluk Island, Hadji Muhtamad, at about 1:50 a.m. on 26 January 2026. Survivors were brought to Pilas Island and Isabela City. The Coast Guard count more than three weeks later stood at 64 dead, 15 missing and 293 survivors; the cause remained under investigation. The Coast Guard counted 65 dead and 14 missing by 22 February 2026.",
+  "province": "Basilan",
+  "municipality": "Hadji Muhtamad",
+  "barangay": "Baluk-Baluk Island",
+  "deaths": 65,
+  "injured": null,
+  "missing": 14,
+  "vehicles": [
+   "ferry"
+  ],
+  "sources": [
+   {
+    "outlet": "SunStar",
+    "url": "https://www.sunstar.com.ph/manila/ferry-sinks-off-basilan-15-dead-over-200-rescued",
+    "title": "Ferry sinks off Basilan; 15 dead, over 200 rescued",
+    "date": "2026-01-26"
+   },
+   {
+    "outlet": "Interaksyon/Reuters",
+    "url": "https://interaksyon.philstar.com/?p=308299",
+    "title": "Rescue efforts under way after Philippine ferry sinks, leaving 18 dead",
+    "date": "2026-01-27"
+   },
+   {
+    "outlet": "Baird Maritime",
+    "url": "https://www.bairdmaritime.com/security/emergency-services/search-and-rescue/three-additional-bodies-found-following-philippine-ferry-tragedy",
+    "title": "Three additional bodies found following Philippine ferry tragedy",
+    "date": "2026-01-26"
+   },
+   {
+    "outlet": "DZRH",
+    "url": "https://www.dzrh.com.ph/post/pcg-recovers-2-more-bodies-off-basilan-death-toll-climbs-to-45",
+    "title": "PCG recovers 2 more bodies off Basilan, death toll climbs to 45",
+    "date": "2026-02-04"
+   },
+   {
+    "outlet": "Inquirer",
+    "url": "https://newsinfo.inquirer.net/?p=2183852",
+    "title": "Death toll in Basilan ferry sinking now 64",
+    "date": null
+   }
+  ]
+ },
+ {
+  "date": "2026-02",
+  "type": "sea",
+  "title": "Coast Guard rescues 2 fisherfolk from capsized boat off Lantawan",
+  "summary": "Two fisherfolk were rescued by the Philippine Coast Guard after their boat capsized off Lantawan, Basilan, in February 2026.",
+  "province": "Basilan",
+  "municipality": "Lantawan",
+  "barangay": null,
+  "deaths": 0,
+  "injured": null,
+  "missing": 0,
+  "vehicles": [
+   "fishing boat"
+  ],
+  "sources": [
+   {
+    "outlet": "Manila Bulletin",
+    "url": "https://mb.com.ph/2026/02/16/pcg-rescues-2-fisherfolk-from-capsized-boat-in-basilan",
+    "title": "PCG rescues 2 fisherfolk from capsized boat in Basilan",
+    "date": "2026-02-16"
+   }
+  ]
+ }
+]

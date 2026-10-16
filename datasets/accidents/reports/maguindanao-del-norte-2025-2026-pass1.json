@@ -1,0 +1,146 @@
+[
+  {
+    "date": "2025-01-24",
+    "type": "fire",
+    "title": "Fire razes about 100 houses in Tukananes, Poblacion 7, Cotabato City",
+    "summary": "A fire broke out on Friday afternoon, 24 January 2025, in the Tukananes area of Barangay Poblacion 7, Cotabato City, destroying about 100 houses (GMA initially reported around 180). Residents said it may have started at an electric pole that caught fire; the BFP was still determining the cause and damage cost. Displaced families were moved to evacuation sites.",
+    "province": "Cotabato City",
+    "municipality": "Cotabato City",
+    "barangay": "Poblacion 7 (Tukananes)",
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {
+        "outlet": "GMA Regional TV",
+        "url": "https://www.gmanetwork.com/regionaltv/news/106265/fire-razes-around-180-houses-in-cotabato-city/story",
+        "title": "Fire razes around 180 houses in Cotabato City",
+        "date": "2025-01-24"
+      },
+      {
+        "outlet": "Philstar",
+        "url": "https://philstar.com/nation/2025/01/27/2417065/103-houses-razed-cotabato",
+        "title": "103 houses razed in Cotabato",
+        "date": "2025-01-27"
+      }
+    ]
+  },
+  {
+    "date": "2025-01-24",
+    "type": "fire",
+    "title": "Second fire the same day destroys 3 houses in Rosary Heights 10, Cotabato City",
+    "summary": "About 10 hours after the Poblacion 7 fire on 24 January 2025, a separate fire destroyed three houses in Barangay Rosary Heights 10, Cotabato City. Philstar reported the two fires razed 103 houses in total; no casualties were reported.",
+    "province": "Cotabato City",
+    "municipality": "Cotabato City",
+    "barangay": "Rosary Heights 10",
+    "deaths": null,
+    "injured": null,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {
+        "outlet": "Philstar",
+        "url": "https://philstar.com/nation/2025/01/27/2417065/103-houses-razed-cotabato",
+        "title": "103 houses razed in Cotabato",
+        "date": "2025-01-27"
+      }
+    ]
+  },
+  {
+    "date": "2026-02-17",
+    "type": "fire",
+    "title": "Fire destroys 7 houses, displaces 20 families in Rosary Heights, Cotabato City",
+    "summary": "A fire broke out past 10 p.m. on Tuesday, 17 February 2026, in Barangay Rosary Heights, Cotabato City, razing about seven houses over more than 1,000 square meters and displacing at least 20 families. It was put out after nearly an hour; no one was hurt. The BFP suspects an unattended lit candle, as the area had no power because of damaged NGCP lines.",
+    "province": "Cotabato City",
+    "municipality": "Cotabato City",
+    "barangay": "Rosary Heights",
+    "deaths": 0,
+    "injured": 0,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {
+        "outlet": "GMA Regional TV",
+        "url": "https://www.gmanetwork.com/regionaltv/news/112964/fire-displaces-20-families-in-cotabato-city/story",
+        "title": "Fire displaces 20 families in Cotabato City",
+        "date": "2026-02-18"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-23",
+    "type": "road",
+    "title": "Overtaking motorcycle hits student on pedestrian lane in Cotabato City",
+    "summary": "On Monday, 23 March 2026, a motorcycle overtaking an SUV that had slowed to let pedestrians cross struck a Grade 12 student on a pedestrian lane in Cotabato City, throwing the student onto the road. The student got up afterward; the rider left the scene and reportedly surrendered to authorities the next day. The incident was caught on camera.",
+    "province": "Cotabato City",
+    "municipality": "Cotabato City",
+    "barangay": null,
+    "deaths": 0,
+    "injured": 1,
+    "missing": 0,
+    "vehicles": ["motorcycle"],
+    "sources": [
+      {
+        "outlet": "GMA News (Balitambayan)",
+        "url": "https://www.gmanetwork.com/news/balitambayan/promdi/981223/estudyanteng-tumatawid-sa-pedestrian-lane-tumilapon-nang-masalpok-ng-nag-overtake-na-motorsiklo/story/",
+        "title": "Estudyanteng tumatawid sa pedestrian lane, tumilapon nang masalpok ng nag-overtake na motorsiklo",
+        "date": "2026-03-24"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-21",
+    "type": "sea",
+    "title": "Rope-pulled river boat capsizes in Buldon; one passenger drowns",
+    "summary": "On Tuesday, 21 July 2026, a boat carrying 12 people and being pulled across a river by rope in Barangay Edcor, Buldon, Maguindanao del Norte, capsized when the rope snapped near the far bank and water entered the boat. Eleven passengers swam to shore; one man was later found and declared dead on arrival at a hospital. The incident was caught on video.",
+    "province": "Maguindanao del Norte",
+    "municipality": "Buldon",
+    "barangay": "Edcor",
+    "deaths": 1,
+    "injured": 0,
+    "missing": 0,
+    "vehicles": ["boat"],
+    "sources": [
+      {
+        "outlet": "GMA Regional TV",
+        "url": "https://www.gmanetwork.com/regionaltv/news/114934/man-drowns-after-boat-capsizes-in-maguindanao-del-norte/story/",
+        "title": "Man drowns after boat capsizes in Maguindanao del Norte",
+        "date": "2026-07-24"
+      },
+      {
+        "outlet": "GMA News (Balitambayan)",
+        "url": "https://www.gmanetwork.com/news_duplicate/balitambayan/promdi/995889/lalaking-pasahero-nalunod-nang-tumaob-ang-sinasakyang-bangka-sa-maguindanao-del-norte/story/",
+        "title": "Lalaking pasahero, nalunod nang tumaob ang sinasakyang bangka sa Maguindanao del Norte",
+        "date": "2026-07-23"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-29",
+    "type": "sea",
+    "title": "Motorbanca capsizes off Pura, Datu Blah T. Sinsuat; 6 passengers rescued",
+    "summary": "On Wednesday, 29 July 2026, a motorbanca sailing from Barangay Pura to Barangay Nalkan in Datu Blah T. Sinsuat, Maguindanao del Norte, capsized after strong waves damaged its left outrigger. The Philippine Coast Guard rescued six passengers, who were checked at the rural health unit and discharged in stable condition.",
+    "province": "Maguindanao del Norte",
+    "municipality": "Datu Blah T. Sinsuat",
+    "barangay": "Pura",
+    "deaths": 0,
+    "injured": 0,
+    "missing": 0,
+    "vehicles": ["motorbanca"],
+    "sources": [
+      {
+        "outlet": "GMA News",
+        "url": "https://www.gmanetwork.com/news/topstories/regions/996801/6-passengers-of-capsized-motor-banca-rescued-in-maguindanao-del-norte-area-pcg/story",
+        "title": "6 passengers of capsized motor banca rescued in Maguindanao del Norte area — PCG",
+        "date": "2026-07-30"
+      },
+      {
+        "outlet": "DZRH",
+        "url": "https://www.dzrh.com.ph/post/pcg-rescues-6-passengers-from-capsized-motor-banca-in-maguindanao-del-norte",
+        "title": "PCG rescues 6 passengers from capsized motor banca in Maguindanao del Norte",
+        "date": "2026-07-31"
+      }
+    ]
+  }
+]

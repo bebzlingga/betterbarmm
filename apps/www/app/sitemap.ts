@@ -20,6 +20,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 		page('', 1, 'daily'),
 		page('/discover', 0.9),
 		...discoverBarmmTopics.map((topic) => page(`/discover/${topic.slug}`, 0.8, 'monthly')),
+		page('/accidents', 0.8, 'daily'),
 		page('/explainers', 0.8),
 		...explainers.map((e) => ({ ...page(`/explainers/${e.slug}`, 0.7, 'monthly'), lastModified: new Date(e.updated_at ?? e.published_at ?? now) })),
 		page('/about', 0.6, 'monthly'),

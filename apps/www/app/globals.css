@@ -939,3 +939,138 @@
 .bb-article .bb-graphic p + p {
   margin-top: 0;
 }
+
+/* ============================================================
+   The accident map
+
+   mapcn's components are written against shadcn's colour names. This
+   estate has its own tokens, so the handful mapcn uses are pointed at
+   them here rather than restyling two thousand lines of vendored code.
+   ============================================================ */
+
+@theme inline {
+  --color-background: var(--paper);
+  --color-foreground: var(--ink);
+  --color-muted: var(--paper-2);
+  --color-muted-foreground: var(--ink-3);
+  --color-popover: var(--paper);
+  --color-popover-foreground: var(--ink);
+  --color-border: var(--rule);
+  --color-accent: var(--paper-2);
+  --color-ring: var(--accent);
+}
+
+/* mapcn's own resets for MapLibre's popup and attribution chrome. */
+.maplibregl-popup-content {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+.maplibregl-popup-tip {
+  display: none !important;
+}
+.maplibregl-ctrl-attrib {
+  background: var(--paper) !important;
+  color: var(--ink-3) !important;
+  border: 1px solid var(--rule) !important;
+  font-size: 10px;
+}
+.maplibregl-ctrl-attrib a {
+  color: var(--ink-3) !important;
+}
+.maplibregl-ctrl-attrib a:hover {
+  color: var(--ink) !important;
+}
+.maplibregl-ctrl-attrib-button {
+  background: transparent !important;
+}
+:root[data-theme="dark"] .maplibregl-ctrl-attrib-button {
+  filter: invert(1);
+}
+
+/* The filter chip as a button: square, small capitals, the kind's glyph
+   inside carrying the kind's colour. Pressed takes the ink; the glyph stays. */
+.acc-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid var(--rule);
+  padding: 0.38rem 0.65rem;
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  background: var(--paper);
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    border-color 0.28s var(--ease),
+    color 0.28s var(--ease),
+    background-color 0.28s var(--ease);
+}
+.acc-chip:hover {
+  border-color: var(--brass-line);
+  color: var(--ink);
+}
+.acc-chip[aria-pressed="true"] {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.acc-chip[aria-pressed="false"] .acc-icon {
+  opacity: 0.3;
+}
+.acc-icon {
+  flex: none;
+}
+.acc-count {
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-mute);
+}
+/* The filter dropdown: the chip's square and small capitals on a native select,
+   the browser's own arrow swapped for a hairline caret. */
+.acc-field {
+  display: grid;
+  gap: 0.5rem;
+}
+.acc-select {
+  appearance: none;
+  min-width: 9rem;
+  border: 1px solid var(--rule);
+  padding: 0.42rem 1.9rem 0.42rem 0.65rem;
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--paper)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23888' stroke-width='1.5'/%3E%3C/svg%3E")
+    no-repeat right 0.6rem center / 0.6rem;
+  cursor: pointer;
+  transition: border-color 0.28s var(--ease);
+}
+.acc-select:hover,
+.acc-select:focus-visible {
+  border-color: var(--ink);
+  outline: none;
+}
+
+/* The four kinds' colours, stepped for each ground; the map layer picks the
+   same values in code (see `_lib/accidents.ts`), so a chip and its dots match. */
+:root {
+  --acc-road: #2a78d6;
+  --acc-water: #1baf7a;
+  --acc-fire: #eb6834;
+  --acc-shooting: #8b4fd6;
+  --acc-other: #8a8578;
+}
+:root[data-theme="dark"] {
+  --acc-road: #3987e5;
+  --acc-water: #199e70;
+  --acc-fire: #d95926;
+  --acc-shooting: #9a63e0;
+  --acc-other: #9a9488;
+}

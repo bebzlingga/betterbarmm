@@ -1,0 +1,70 @@
+import dataset from '../../../../datasets/accidents/accidents.json'
+
+/* ============================================================
+   Accidents and shootings in the region, as the press reported them
+
+   One record per incident, compiled from news reports: what happened,
+   where, when, who was hurt, and the reports it rests on. Nothing here
+   comes from an official register — none is published — so the map
+   this feeds is a map of what was reported and indexed, and says so.
+
+   Five kinds, one colour each; the glyphs live with the component that
+   draws them, so this file stays free of the browser. The finer kind (a
+   drowning, a landslide, an LPG blast, an ambush) is kept on the record
+   and named in the details; it is not given a colour of its own because
+   five hues is as many as a dot map can keep apart for every reader.
+   Shootings are the one deliberate kind carried: bombings, clan feuds
+   and the rest of the violence stay out.
+   ============================================================ */
+
+export type AccidentType = 'road' | 'water' | 'fire' | 'shooting' | 'other'
+
+export type Accident = {
+	id: string
+	/** YYYY-MM-DD, or YYYY-MM when the report gives only the month. */
+	date: string
+	type: AccidentType
+	/** The finer kind as the report described it: "drowning", "landslide", "LPG explosion". */
+	kind: string
+	title: string
+	summary: string
+	province: string
+	/** Null when the report named only the province. */
+	municipality: string | null
+	barangay: string | null
+	deaths: number | null
+	injured: number | null
+	missing: number | null
+	vehicles: string[]
+	lat: number
+	lon: number
+	/** Whether the dot sits on the barangay the report named, on the town's centre, or — when the report named no town — on the province's. */
+	placed: 'barangay' | 'municipality' | 'province'
+	sources: { outlet: string; url: string; title: string; date: string | null }[]
+}
+
+export const ACCIDENT_TYPES: { id: AccidentType; label: string; color: string; colorDark: string }[] = [
+	{ id: 'road', label: 'Road', color: '#2a78d6', colorDark: '#3987e5' },
+	{ id: 'water', label: 'Sea, lake & river', color: '#1baf7a', colorDark: '#199e70' },
+	{ id: 'fire', label: 'Fire & explosion', color: '#eb6834', colorDark: '#d95926' },
+	{ id: 'shooting', label: 'Shooting', color: '#8b4fd6', colorDark: '#9a63e0' },
+	{ id: 'other', label: 'Other', color: '#8a8578', colorDark: '#9a9488' },
+]
+
+export const typeOf = (id: AccidentType) => ACCIDENT_TYPES.find((t) => t.id === id) ?? ACCIDENT_TYPES[ACCIDENT_TYPES.length - 1]!
+
+// ponytail: 2025 on for now — the earlier years are a handful of reports each; drop FROM once the sweeps cover them.
+const FROM = '2025'
+
+export const accidents = (dataset.incidents as Accident[]).filter((a) => a.date >= FROM).sort((a, b) => (a.date < b.date ? 1 : -1))
+
+export const accidentsMeta = { generatedAt: dataset.generatedAt as string, note: dataset.note as string, since: FROM }
+
+/** "12 March 2024", or "March 2024" when only the month is known. */
+export function accidentDate(date: string) {
+	const [y, m, d] = date.split('-').map(Number)
+	const dt = new Date(Date.UTC(y!, (m ?? 1) - 1, d ?? 1))
+	return dt.toLocaleDateString('en-PH', d ? { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' } : { month: 'long', year: 'numeric', timeZone: 'UTC' })
+}
+
+export const sum = (list: Accident[], key: 'deaths' | 'injured' | 'missing') => list.reduce((n, a) => n + (a[key] ?? 0), 0)

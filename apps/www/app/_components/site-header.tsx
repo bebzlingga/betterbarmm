@@ -10,7 +10,7 @@ import { EASE, Magnetic, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo,
 import { ThemeToggle } from './theme-toggle'
 
 type SiteHeaderProps = {
-	activeItem?: 'discover' | 'this-week' | 'news' | 'explainers' | 'jo' | 'about' | 'contribute'
+	activeItem?: 'discover' | 'this-week' | 'news' | 'accidents' | 'explainers' | 'jo' | 'about' | 'contribute'
 	/**
 	 * Sit over the page rather than on top of it.
 	 *
@@ -38,6 +38,7 @@ const secondaryLinks = [
 	// This week is hidden for now; the page still builds at /this-week.
 	// { key: 'this-week', href: '/this-week', label: 'This week' },
 	{ key: 'news', href: '/news', label: 'Latest news' },
+	{ key: 'accidents', href: '/accidents', label: 'Accidents' },
 	{ key: 'explainers', href: '/explainers', label: 'Explainers' },
 	{ key: 'about', href: '/about', label: 'About' },
 ] as const
@@ -150,6 +151,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 			{overlay ? null : (
 				<UtilityBar
 					current='home'
+					project={activeItem === 'accidents' ? 'accidents' : undefined}
 					className='bb-strip bg-[var(--paper-2)]'
 					switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
 					end={

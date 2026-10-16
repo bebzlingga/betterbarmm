@@ -1,0 +1,879 @@
+{
+ "name": "BARMM municipality centres",
+ "generatedAt": "2026-10-16",
+ "source": {
+  "label": "OpenStreetMap, through Nominatim (ODbL)",
+  "href": "https://nominatim.openstreetmap.org/"
+ },
+ "note": "Approximate centre of each city and municipality in the LGU directory, to 4 decimals. For placing a report that names a town and nothing closer; not for navigation.",
+ "centres": [
+  {
+   "province": "Basilan",
+   "municipality": "Akbar",
+   "slug": "akbar",
+   "psgc": "150708000",
+   "lat": 6.6653,
+   "lon": 122.1954
+  },
+  {
+   "province": "Basilan",
+   "municipality": "Al-Barka",
+   "slug": "al-barka",
+   "psgc": "150709000",
+   "lat": 6.4176,
+   "lon": 122.2646
+  },
+  {
+   "province": "Basilan",
+   "municipality": "Hadji Mohammad Ajul",
+   "slug": "hadji-mohammad-ajul",
+   "psgc": "150710000",
+   "lat": 6.6428,
+   "lon": 122.2732
+  },
+  {
+   "province": "Basilan",
+   "municipality": "Hadji Muhtamad",
+   "slug": "hadji-muhtamad",
+   "psgc": "150712000",
+   "lat": 6.6622,
+   "lon": 121.5864
+  },
+  {
+   "province": "Basilan",
+   "municipality": "Lamitan",
+   "slug": "lamitan",
+   "psgc": "150702000",
+   "lat": 6.6576,
+   "lon": 122.145
+  },
+  {
+   "province": "Basilan",
+   "municipality": "Lantawan",
+   "slug": "lantawan",
+   "psgc": "150703000",
+   "lat": 6.6387,
+   "lon": 121.8403
+  },
+  {
+   "province": "Basilan",
+   "municipality": "Maluso",
+   "slug": "maluso",
+   "psgc": "150704000",
+   "lat": 6.5462,
+   "lon": 121.8706
+  },
+  {
+   "province": "Basilan",
+   "municipality": "Sumisip",
+   "slug": "sumisip",
+   "psgc": "150705000",
+   "lat": 6.4193,
+   "lon": 122.0341
+  },
+  {
+   "province": "Basilan",
+   "municipality": "Tabuan-Lasa",
+   "slug": "tabuan-lasa",
+   "psgc": "150713000",
+   "lat": 6.3192,
+   "lon": 121.9291
+  },
+  {
+   "province": "Basilan",
+   "municipality": "Tipo-Tipo",
+   "slug": "tipo-tipo",
+   "psgc": "150706000",
+   "lat": 6.5003,
+   "lon": 122.1206
+  },
+  {
+   "province": "Basilan",
+   "municipality": "Tuburan",
+   "slug": "tuburan",
+   "psgc": "150707000",
+   "lat": 6.6102,
+   "lon": 122.1846
+  },
+  {
+   "province": "Basilan",
+   "municipality": "Ungkaya Pukan",
+   "slug": "ungkaya-pukan",
+   "psgc": "150711000",
+   "lat": 6.4951,
+   "lon": 122.1056
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Amai Manabilang",
+   "slug": "amai-manabilang",
+   "psgc": "153637000",
+   "lat": 7.7855,
+   "lon": 124.6822
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Bacolod-Kalawi",
+   "slug": "bacolod-kalawi",
+   "psgc": "153601000",
+   "lat": 7.8577,
+   "lon": 124.1424
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Balabagan",
+   "slug": "balabagan",
+   "psgc": "153602000",
+   "lat": 7.5093,
+   "lon": 124.1278
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Balindong",
+   "slug": "balindong",
+   "psgc": "153603000",
+   "lat": 7.9163,
+   "lon": 124.2055
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Bayang",
+   "slug": "bayang",
+   "psgc": "153604000",
+   "lat": 7.7967,
+   "lon": 124.1962
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Binidayan",
+   "slug": "binidayan",
+   "psgc": "153605000",
+   "lat": 7.7949,
+   "lon": 124.167
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Buadiposo-Buntong",
+   "slug": "buadiposo-buntong",
+   "psgc": "153633000",
+   "lat": 7.9512,
+   "lon": 124.3848
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Bubong",
+   "slug": "bubong",
+   "psgc": "153606000",
+   "lat": 7.9834,
+   "lon": 124.3855
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Butig",
+   "slug": "butig",
+   "psgc": "153607000",
+   "lat": 7.7433,
+   "lon": 124.3101
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Calanogas",
+   "slug": "calanogas",
+   "psgc": "153632000",
+   "lat": 7.7335,
+   "lon": 124.079
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Ditsaan-Ramain",
+   "slug": "ditsaan-ramain",
+   "psgc": "153624000",
+   "lat": 7.9789,
+   "lon": 124.3517
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Ganassi",
+   "slug": "ganassi",
+   "psgc": "153609000",
+   "lat": 7.826,
+   "lon": 124.1019
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Kapai",
+   "slug": "kapai",
+   "psgc": "153610000",
+   "lat": 8.0736,
+   "lon": 124.3638
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Kapatagan",
+   "slug": "kapatagan",
+   "psgc": "153639000",
+   "lat": 7.5419,
+   "lon": 124.2143
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Lumba-Bayabao",
+   "slug": "lumba-bayabao",
+   "psgc": "153611000",
+   "lat": 7.8634,
+   "lon": 124.3705
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Lumbaca-Unayan",
+   "slug": "lumbaca-unayan",
+   "psgc": "153641000",
+   "lat": 7.7496,
+   "lon": 124.2059
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Lumbatan",
+   "slug": "lumbatan",
+   "psgc": "153612000",
+   "lat": 7.7849,
+   "lon": 124.2552
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Lumbayanague",
+   "slug": "lumbayanague",
+   "psgc": "153636000",
+   "lat": 7.7831,
+   "lon": 124.2816
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Madalum",
+   "slug": "madalum",
+   "psgc": "153613000",
+   "lat": 7.854,
+   "lon": 124.114
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Madamba",
+   "slug": "madamba",
+   "psgc": "153614000",
+   "lat": 7.8588,
+   "lon": 124.0507
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Maguing",
+   "slug": "maguing",
+   "psgc": "153634000",
+   "lat": 7.8883,
+   "lon": 124.3719
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Malabang",
+   "slug": "malabang",
+   "psgc": "153615000",
+   "lat": 7.5928,
+   "lon": 124.0686
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Marantao",
+   "slug": "marantao",
+   "psgc": "153616000",
+   "lat": 7.9483,
+   "lon": 124.2316
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Marawi",
+   "slug": "marawi",
+   "psgc": "153617000",
+   "lat": 8.0047,
+   "lon": 124.2854
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Marogong",
+   "slug": "marogong",
+   "psgc": "153631000",
+   "lat": 7.6755,
+   "lon": 124.1533
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Masiu",
+   "slug": "masiu",
+   "psgc": "153618000",
+   "lat": 7.8184,
+   "lon": 124.3308
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Mulondo",
+   "slug": "mulondo",
+   "psgc": "153619000",
+   "lat": 7.9171,
+   "lon": 124.3616
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Pagayawan",
+   "slug": "pagayawan",
+   "psgc": "153620000",
+   "lat": 7.7966,
+   "lon": 124.1002
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Piagapo",
+   "slug": "piagapo",
+   "psgc": "153621000",
+   "lat": 7.9898,
+   "lon": 124.1796
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Picong",
+   "slug": "picong",
+   "psgc": "153635000",
+   "lat": 7.6695,
+   "lon": 123.967
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Poona Bayabao",
+   "slug": "poona-bayabao",
+   "psgc": "153622000",
+   "lat": 7.8531,
+   "lon": 124.3394,
+   "note": "OSM spells it Poon-a-Bayabao"
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Pualas",
+   "slug": "pualas",
+   "psgc": "153623000",
+   "lat": 7.8197,
+   "lon": 124.0795
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Saguiaran",
+   "slug": "saguiaran",
+   "psgc": "153625000",
+   "lat": 8.0341,
+   "lon": 124.2687
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Sultan Dumalondong",
+   "slug": "sultan-dumalondong",
+   "psgc": "153640000",
+   "lat": 7.7575,
+   "lon": 124.2575
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Tagoloan II",
+   "slug": "tagoloan-ii",
+   "psgc": "153638000",
+   "lat": 8.0798,
+   "lon": 124.4157
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Tamparan",
+   "slug": "tamparan",
+   "psgc": "153626000",
+   "lat": 7.8765,
+   "lon": 124.3265
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Taraka",
+   "slug": "taraka",
+   "psgc": "153627000",
+   "lat": 7.8999,
+   "lon": 124.3339
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Tubaran",
+   "slug": "tubaran",
+   "psgc": "153628000",
+   "lat": 7.745,
+   "lon": 124.1842
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Tugaya",
+   "slug": "tugaya",
+   "psgc": "153629000",
+   "lat": 7.8837,
+   "lon": 124.178
+  },
+  {
+   "province": "Lanao del Sur",
+   "municipality": "Wao",
+   "slug": "wao",
+   "psgc": "153630000",
+   "lat": 7.6382,
+   "lon": 124.7242
+  },
+  {
+   "province": "Maguindanao del Norte",
+   "municipality": "Barira",
+   "slug": "barira",
+   "psgc": "153818000",
+   "lat": 7.4706,
+   "lon": 124.3557
+  },
+  {
+   "province": "Maguindanao del Norte",
+   "municipality": "Buldon",
+   "slug": "buldon",
+   "psgc": "153802000",
+   "lat": 7.5144,
+   "lon": 124.3711
+  },
+  {
+   "province": "Maguindanao del Norte",
+   "municipality": "Datu Blah T. Sinsuat",
+   "slug": "datu-blah-t-sinsuat",
+   "psgc": "153830000",
+   "lat": 7.0679,
+   "lon": 124.019
+  },
+  {
+   "province": "Maguindanao del Norte",
+   "municipality": "Datu Odin Sinsuat",
+   "slug": "datu-odin-sinsuat",
+   "psgc": "153807000",
+   "lat": 7.0236,
+   "lon": 124.3157
+  },
+  {
+   "province": "Maguindanao del Norte",
+   "municipality": "Kabuntalan",
+   "slug": "kabuntalan",
+   "psgc": "153814000",
+   "lat": 7.1181,
+   "lon": 124.364
+  },
+  {
+   "province": "Maguindanao del Norte",
+   "municipality": "Matanog",
+   "slug": "matanog",
+   "psgc": "153809000",
+   "lat": 7.4668,
+   "lon": 124.2586
+  },
+  {
+   "province": "Maguindanao del Norte",
+   "municipality": "Northern Kabuntalan",
+   "slug": "northern-kabuntalan",
+   "psgc": "153834000",
+   "lat": 7.1928,
+   "lon": 124.4538
+  },
+  {
+   "province": "Maguindanao del Norte",
+   "municipality": "Parang",
+   "slug": "parang",
+   "psgc": "153811000",
+   "lat": 7.3756,
+   "lon": 124.2675
+  },
+  {
+   "province": "Maguindanao del Norte",
+   "municipality": "Sultan Kudarat",
+   "slug": "sultan-kudarat",
+   "psgc": "153812000",
+   "lat": 7.2711,
+   "lon": 124.2919
+  },
+  {
+   "province": "Maguindanao del Norte",
+   "municipality": "Sultan Mastura",
+   "slug": "sultan-mastura",
+   "psgc": "153824000",
+   "lat": 7.2982,
+   "lon": 124.2852
+  },
+  {
+   "province": "Maguindanao del Norte",
+   "municipality": "Talitay",
+   "slug": "talitay",
+   "psgc": "153821000",
+   "lat": 7.0352,
+   "lon": 124.3745,
+   "note": "OSM files the town under its 2024 name, Sultan Sumagka"
+  },
+  {
+   "province": "Maguindanao del Norte",
+   "municipality": "Upi",
+   "slug": "upi",
+   "psgc": "153815000",
+   "lat": 7.0111,
+   "lon": 124.1565
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Ampatuan",
+   "slug": "ampatuan",
+   "psgc": "153801000",
+   "lat": 6.8322,
+   "lon": 124.4571
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Buluan",
+   "slug": "buluan",
+   "psgc": "153803000",
+   "lat": 6.7166,
+   "lon": 124.7866
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Datu Abdullah Sangki",
+   "slug": "datu-abdullah-sangki",
+   "psgc": "153828000",
+   "lat": 6.7667,
+   "lon": 124.4817
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Datu Anggal Midtimbang",
+   "slug": "datu-anggal-midtimbang",
+   "psgc": "153831000",
+   "lat": 6.9932,
+   "lon": 124.3415
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Datu Hoffer Ampatuan",
+   "slug": "datu-hoffer-ampatuan",
+   "psgc": "153835000",
+   "lat": 6.8581,
+   "lon": 124.425
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Datu Paglas",
+   "slug": "datu-paglas",
+   "psgc": "153805000",
+   "lat": 6.7466,
+   "lon": 124.87
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Datu Piang",
+   "slug": "datu-piang",
+   "psgc": "153806000",
+   "lat": 7.0288,
+   "lon": 124.4995
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Datu Salibo",
+   "slug": "datu-salibo",
+   "psgc": "153836000",
+   "lat": 6.9767,
+   "lon": 124.4824
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Datu Saudi-Ampatuan",
+   "slug": "datu-saudi-ampatuan",
+   "psgc": "153826000",
+   "lat": 6.9261,
+   "lon": 124.4145
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Datu Unsay",
+   "slug": "datu-unsay",
+   "psgc": "153827000",
+   "lat": 6.8813,
+   "lon": 124.4356
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Gen. S. K. Pendatun",
+   "slug": "gen-s-k-pendatun",
+   "psgc": "153819000",
+   "lat": 6.7841,
+   "lon": 124.7469,
+   "note": "school in the town proper (Nominatim had no boundary centroid)"
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Guindulungan",
+   "slug": "guindulungan",
+   "psgc": "153825000",
+   "lat": 6.9767,
+   "lon": 124.3863
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Mamasapano",
+   "slug": "mamasapano",
+   "psgc": "153820000",
+   "lat": 6.8927,
+   "lon": 124.5009
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Mangudadatu",
+   "slug": "mangudadatu",
+   "psgc": "153832000",
+   "lat": 6.6468,
+   "lon": 124.786
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Pagagawan",
+   "slug": "pagagawan",
+   "psgc": "153822000",
+   "lat": 7.077,
+   "lon": 124.7488,
+   "note": "OSM files the town under its former name, Datu Montawal"
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Pagalungan",
+   "slug": "pagalungan",
+   "psgc": "153810000",
+   "lat": 7.0599,
+   "lon": 124.6992
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Paglat",
+   "slug": "paglat",
+   "psgc": "153823000",
+   "lat": 6.7807,
+   "lon": 124.7851
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Pandag",
+   "slug": "pandag",
+   "psgc": "153833000",
+   "lat": 6.7412,
+   "lon": 124.7837
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Rajah Buayan",
+   "slug": "rajah-buayan",
+   "psgc": "153829000",
+   "lat": 6.9077,
+   "lon": 124.5514
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Shariff Aguak",
+   "slug": "shariff-aguak",
+   "psgc": "153808000",
+   "lat": 6.861,
+   "lon": 124.4445
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Shariff Saydona Mustapha",
+   "slug": "shariff-saydona-mustapha",
+   "psgc": "153837000",
+   "lat": 6.8816,
+   "lon": 124.4844
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "South Upi",
+   "slug": "south-upi",
+   "psgc": "153817000",
+   "lat": 6.8549,
+   "lon": 124.144
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Sultan Sa Barongis",
+   "slug": "sultan-sa-barongis",
+   "psgc": "153813000",
+   "lat": 6.8827,
+   "lon": 124.6002
+  },
+  {
+   "province": "Maguindanao del Sur",
+   "municipality": "Talayan",
+   "slug": "talayan",
+   "psgc": "153816000",
+   "lat": 6.9842,
+   "lon": 124.356
+  },
+  {
+   "province": "Tawi-Tawi",
+   "municipality": "Bongao",
+   "slug": "bongao",
+   "psgc": "157002000",
+   "lat": 5.029,
+   "lon": 119.7713
+  },
+  {
+   "province": "Tawi-Tawi",
+   "municipality": "Languyan",
+   "slug": "languyan",
+   "psgc": "157009000",
+   "lat": 5.2676,
+   "lon": 120.0788
+  },
+  {
+   "province": "Tawi-Tawi",
+   "municipality": "Mapun",
+   "slug": "mapun",
+   "psgc": "157003000",
+   "lat": 6.9753,
+   "lon": 118.5139
+  },
+  {
+   "province": "Tawi-Tawi",
+   "municipality": "Panglima Sugala",
+   "slug": "panglima-sugala",
+   "psgc": "157001000",
+   "lat": 5.0722,
+   "lon": 119.8842
+  },
+  {
+   "province": "Tawi-Tawi",
+   "municipality": "Sapa-Sapa",
+   "slug": "sapa-sapa",
+   "psgc": "157010000",
+   "lat": 5.0902,
+   "lon": 120.2733
+  },
+  {
+   "province": "Tawi-Tawi",
+   "municipality": "Sibutu",
+   "slug": "sibutu",
+   "psgc": "157011000",
+   "lat": 4.8408,
+   "lon": 119.459
+  },
+  {
+   "province": "Tawi-Tawi",
+   "municipality": "Simunul",
+   "slug": "simunul",
+   "psgc": "157004000",
+   "lat": 4.898,
+   "lon": 119.8218
+  },
+  {
+   "province": "Tawi-Tawi",
+   "municipality": "Sitangkai",
+   "slug": "sitangkai",
+   "psgc": "157005000",
+   "lat": 4.6625,
+   "lon": 119.3939
+  },
+  {
+   "province": "Tawi-Tawi",
+   "municipality": "South Ubian",
+   "slug": "south-ubian",
+   "psgc": "157006000",
+   "lat": 5.1874,
+   "lon": 120.4955
+  },
+  {
+   "province": "Tawi-Tawi",
+   "municipality": "Tandubas",
+   "slug": "tandubas",
+   "psgc": "157007000",
+   "lat": 5.135,
+   "lon": 120.346
+  },
+  {
+   "province": "Tawi-Tawi",
+   "municipality": "Turtle Islands",
+   "slug": "turtle-islands",
+   "psgc": "157008000",
+   "lat": 6.0732,
+   "lon": 118.3126
+  },
+  {
+   "province": "Cotabato City",
+   "municipality": "Cotabato City",
+   "slug": "cotabato-city",
+   "psgc": "129804000",
+   "lat": 7.2238,
+   "lon": 124.2467
+  },
+  {
+   "province": "Special Geographic Area",
+   "municipality": "Kadayangan",
+   "slug": "kadayangan",
+   "psgc": null,
+   "lat": 7.123,
+   "lon": 124.4766
+  },
+  {
+   "province": "Special Geographic Area",
+   "municipality": "Kapalawan",
+   "slug": "kapalawan",
+   "psgc": null,
+   "lat": 7.2421,
+   "lon": 124.7911
+  },
+  {
+   "province": "Special Geographic Area",
+   "municipality": "Ligawasan",
+   "slug": "ligawasan",
+   "psgc": null,
+   "lat": 6.9941,
+   "lon": 124.704
+  },
+  {
+   "province": "Special Geographic Area",
+   "municipality": "Malidegao",
+   "slug": "malidegao",
+   "psgc": null,
+   "lat": 7.0607,
+   "lon": 124.6774
+  },
+  {
+   "province": "Special Geographic Area",
+   "municipality": "Nabalawag",
+   "slug": "nabalawag",
+   "psgc": null,
+   "lat": 7.1033,
+   "lon": 124.4924
+  },
+  {
+   "province": "Special Geographic Area",
+   "municipality": "Old Kaabakan",
+   "slug": "old-kaabakan",
+   "psgc": null,
+   "lat": 7.2329,
+   "lon": 124.8447
+  },
+  {
+   "province": "Special Geographic Area",
+   "municipality": "Pahamuddin",
+   "slug": "pahamuddin",
+   "psgc": null,
+   "lat": 7.1691,
+   "lon": 124.364
+  },
+  {
+   "province": "Special Geographic Area",
+   "municipality": "Tugunan",
+   "slug": "tugunan",
+   "psgc": null,
+   "lat": 7.0452,
+   "lon": 124.6164
+  }
+ ]
+}
