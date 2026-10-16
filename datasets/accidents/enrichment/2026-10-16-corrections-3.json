@@ -1,0 +1,22 @@
+[
+ {
+  "id": "2026-10-maguindanao-del-norte-shooting",
+  "municipality": "Datu Odin Sinsuat",
+  "barangay": "Poblacion Dalican",
+  "vehicles": [
+   "tricycle",
+   "motorcycle"
+  ],
+  "title": "Village councilor shot dead in broad daylight in Poblacion Dalican, Datu Odin Sinsuat",
+  "summary": "A village councilor named Beno was shot in the back by unidentified gunmen on a motorcycle while riding a payong-payong tricycle along the Bungued-Dalican farm-to-market road near the public market in Barangay Poblacion Dalican, Datu Odin Sinsuat, Maguindanao del Norte, in October 2026. He died at the scene.",
+  "sources": [
+   {
+    "outlet": "Inquirer",
+    "url": "https://newsinfo.inquirer.net/2322150/village-councilor-shot-dead-in-broad-daylight-in-maguindanao-del-norte",
+    "title": "Village councilor shot dead in broad daylight in Maguindanao del Norte",
+    "date": null
+   }
+  ],
+  "note": "Town and barangay from the Inquirer article, checked by hand; the headline named only the province."
+ }
+]

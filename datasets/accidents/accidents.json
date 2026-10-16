@@ -461,27 +461,36 @@
    "date": "2026-10",
    "type": "shooting",
    "kind": "Shooting",
-   "title": "Village councilor shot dead in broad daylight in Maguindanao del Norte",
-   "summary": "A village councilor was shot dead in broad daylight in Maguindanao del Norte in October 2026. The headline does not name the town.",
+   "title": "Village councilor shot dead in broad daylight in Poblacion Dalican, Datu Odin Sinsuat",
+   "summary": "A village councilor named Beno was shot in the back by unidentified gunmen on a motorcycle while riding a payong-payong tricycle along the Bungued-Dalican farm-to-market road near the public market in Barangay Poblacion Dalican, Datu Odin Sinsuat, Maguindanao del Norte, in October 2026. He died at the scene.",
    "province": "Maguindanao del Norte",
-   "municipality": null,
-   "barangay": null,
+   "municipality": "Datu Odin Sinsuat",
+   "barangay": "Poblacion Dalican",
    "deaths": 1,
    "injured": 0,
    "missing": 0,
-   "vehicles": [],
-   "lat": 7.2371,
-   "lon": 124.2928,
-   "placed": "province",
+   "vehicles": [
+    "tricycle",
+    "motorcycle"
+   ],
+   "lat": 7.0248,
+   "lon": 124.3153,
+   "placed": "barangay",
    "sources": [
     {
      "outlet": "Inquirer",
      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMU9VNENudWd5WVhlcFVLZEhrRTZZR3VzaERLdTEyV1h4WE1FNHlKdzB0MEJqUVZMWldrZDFFOTNwNnoxNXFrWTBGWnU3UjJWZjBQX2htX1hkWENIN0xzYmhUUEoyRjNWS2xuYmRCRkU1RkhSc05acnBxWFhRZ29CMm9sdzRxTzZGUWFrclhDUGVaQk5JMk81TTRkem91NWlEaG1iZUNwN3prYXBU0gGyAUFVX3lxTE1GWXQ2eUU2b0JvV0ZpcDRaRnBGemFhVlp6MXdXdm9GdlZFOGdyRDZ1RTdrUTg0YnQ5MVZYTUVmeVVUSUtzWERLQ0s1OWpJeFdtSjVZRFFoQVJRZHFKLTVGeXMxb19ZcHdITU9ZOEg5TTNXeWdEUmFBRDZndTZyUGFWUUdLMWM2WHpTQ3JXaUl4RFFFVDladWlKcnUxdDZBbTlxYXFVbjdnMTNPZkY1N2wybEE?oc=5",
      "title": "Village councilor shot dead in broad daylight in Maguindanao del Norte",
      "date": "2026-10-12"
+    },
+    {
+     "outlet": "Inquirer",
+     "url": "https://newsinfo.inquirer.net/2322150/village-councilor-shot-dead-in-broad-daylight-in-maguindanao-del-norte",
+     "title": "Village councilor shot dead in broad daylight in Maguindanao del Norte",
+     "date": null
     }
    ],
-   "id": "2026-10-maguindanao-del-norte-shooting"
+   "id": "2026-10-datu-odin-sinsuat-shooting"
   },
   {
    "date": "2026-09-23",
