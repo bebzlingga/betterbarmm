@@ -4,7 +4,7 @@ import { ArrowUpRightIcon, BoatIcon, CaretLeftIcon, CaretRightIcon, CarProfileIc
 import { SearchField, Select } from '@betterbarmm/editorial'
 import dynamic from 'next/dynamic'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { ACCIDENT_TYPES, accidentDate, accidentsMeta, typeOf, type Accident, type AccidentType } from '../_lib/accidents'
+import { ACCIDENT_TYPES, accidentDate, typeOf, type Accident, type AccidentType } from '../_lib/accidents'
 import type { AccidentFeatures, Focus } from './accident-map-canvas'
 
 /* ============================================================
@@ -256,23 +256,26 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 		setDeadlyOnly(false)
 	}
 
-	// Drawn twice — on the page and in the dialog — off one state, on the
-	// estate's own controls, each the width of its words and no more. Only
-	// the dialog gets "Show": the page has no heat or dots to switch.
-	const filters = (withShow: boolean) => (
+	// Drawn twice — on the page and in the dialog's header — off one state,
+	// on the estate's own controls, each the width of its words and no more.
+	// Only the dialog gets "Show", since the page has no heat or dots to
+	// switch; and in the dialog the boxes go bare, a row of controls in a
+	// header rather than a form.
+	const filters = (withShow: boolean, plain = false) => (
 		<div className='@container'>
-			<div className='flex flex-wrap items-end justify-between gap-3'>
-				<div className='w-full @xl:w-60'>
-					<SearchField value={query} onChange={setQuery} placeholder='Title, place or kind' />
+			<div className={`flex flex-wrap items-end gap-3 ${plain ? '' : 'justify-between'}`}>
+				<div className={plain ? 'w-full @xl:w-52' : 'w-full @xl:w-60'}>
+					<SearchField value={query} onChange={setQuery} placeholder='Title, place or kind' plain={plain} />
 				</div>
 				<div className='flex w-full flex-wrap gap-3 @xl:w-auto [&>*]:w-[calc(50%-0.375rem)] @xl:[&>*]:w-[8.5rem]'>
-				<Select label='Year' value={year} onChange={setYear} options={[['', 'All years'], ...years.map((y): [string, string] => [y, `${y} (${byYear.get(y) ?? 0})`])]} />
-				<Select label='Kind' value={type} onChange={setType} options={[['', 'All kinds'], ...ACCIDENT_TYPES.map((k): [string, string] => [k.id, `${k.label} (${byType.get(k.id) ?? 0})`])]} />
-				<Select label='Area' value={province} onChange={setProvince} options={[['', 'All areas'], ...provinces.map((p): [string, string] => [p, `${p} (${byProvince.get(p) ?? 0})`])]} />
+				<Select label='Year' value={year} onChange={setYear} options={[['', 'All years'], ...years.map((y): [string, string] => [y, `${y} (${byYear.get(y) ?? 0})`])]} plain={plain} />
+				<Select label='Kind' value={type} onChange={setType} options={[['', 'All kinds'], ...ACCIDENT_TYPES.map((k): [string, string] => [k.id, `${k.label} (${byType.get(k.id) ?? 0})`])]} plain={plain} />
+				<Select label='Area' value={province} onChange={setProvince} options={[['', 'All areas'], ...provinces.map((p): [string, string] => [p, `${p} (${byProvince.get(p) ?? 0})`])]} plain={plain} />
 				<Select
 					label='Casualties'
 					value={deadlyOnly ? 'deadly' : ''}
 					onChange={(v) => setDeadlyOnly(v === 'deadly')}
+						plain={plain}
 					options={[
 						['', 'All incidents'],
 						['deadly', 'With deaths only'],
@@ -283,6 +286,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 						label='Show'
 						value={show}
 						onChange={(v) => setShow(v as Show)}
+						plain={plain}
 						options={[
 							['both', 'Heat and dots'],
 							['heat', 'Heat only'],
@@ -385,16 +389,12 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 					// Clear the hash on close, so the door's next click is a change again.
 					if (window.location.hash === '#map') history.replaceState(null, '', window.location.pathname + window.location.search)
 				}}
-				aria-labelledby='accident-map-title'
+				aria-label='Interactive map'
 				className='m-0 h-dvh max-h-none w-screen max-w-none overflow-y-auto bg-[var(--paper)] p-0 text-[var(--ink)] backdrop:bg-black/40 open:flex open:flex-col lg:overflow-hidden'
 			>
-				<div className='flex h-14 shrink-0 items-center justify-between gap-4 border-b border-[var(--rule)] px-4 lg:px-6'>
-					<div className='flex items-baseline gap-3'>
-						<p className='bb-label !mb-0'>Interactive map</p>
-						<h2 id='accident-map-title' className='text-[15px] font-extrabold tracking-[-0.02em]'>
-							Accidents and shootings, {accidentsMeta.since} on
-						</h2>
-					</div>
+				{/* The header is the filters, and the way out. */}
+				<div className='flex shrink-0 items-end justify-between gap-4 border-b border-[var(--rule)] px-4 py-3 lg:px-6'>
+					<div className='min-w-0 flex-1'>{filters(true, true)}</div>
 					<button
 						type='button'
 						onClick={() => dialog.current?.close()}
@@ -408,10 +408,8 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 				<div className='grid min-h-0 flex-1 lg:grid-cols-[26rem_minmax(0,1fr)]'>
 					{/* Details on the left: filters, figures, the chosen incident, the list. */}
 					<aside className='order-2 min-h-0 overflow-y-auto border-t border-[var(--rule)] p-5 lg:order-1 lg:border-r lg:border-t-0'>
-						{filters(true)}
-						<div className='mt-6' />
 						{selected ? <Details a={selected} onClose={() => setSelectedId(null)} /> : null}
-						<ul className='mt-5 border-t border-[var(--rule)]'>
+						<ul className={`border-t border-[var(--rule)] ${selected ? 'mt-5' : ''}`}>
 							{filtered.map((a) => (
 								<li key={a.id} className='border-b border-[var(--rule-soft)]'>
 									<button
