@@ -40,7 +40,8 @@ spent is not published by anyone, and is not here. See [Gaps](#what-is-not-here)
 | Budget | `datasets/budget/` | 86 MB, 25 files | Seven enacted GAABs, FY 2020–2026 |
 | Election | `datasets/election/` | 432 KB, 5 files | September 2026 parliamentary result |
 | Local government | `datasets/lgu/` | 79 MB, 16 files | Provinces, towns, barangays, officials |
-| Accidents | `datasets/accidents/` | small | Accidents and shootings, from news reports; the site shows 2025 on |
+| Accidents | `datasets/accidents/` | small | Accidents and shootings, from news reports; 2019 on |
+| Programs & services | `datasets/services/` | small | 35 offices' programs and Citizen's Charter services |
 | Travel guide | `packages/travel-data/` | — | **Written**, not captured |
 | Region primer | `packages/primer-data/` | — | **Written**, not captured |
 
@@ -273,6 +274,27 @@ corrected from them (`enrichment/2026-10-16-verify-2019-2024.json`,
 Manila Bulletin, MindaNews, Facebook, PNA links that now return 404 — and
 stand as first written. `links.json` carries the outlet's own address for
 each Google News link the browser resolved.
+
+---
+
+## Programs and services — `datasets/services/`
+
+One record per office of the Bangsamoro Government — the Office of the Chief
+Minister, the 15 ministries and 19 attached offices, authorities and
+commissions, named and slugged as the budget names them, so each links to its
+office on the budget portal. Each holds the office's mandate, its **programs**
+(what it runs, who for, how to get it) and its **services** as its Citizen's
+Charter lists them (requirements, fee, processing time, where), every item
+with the page it was read from. Read on 17 October 2026.
+
+Only 7 offices published a Citizen's Charter that could be read (the Office
+of the Chief Minister with the Attorney-General's Office, MSSD, MAFAR, MHSD,
+MOST, CSEA); the rest show programs from their own sites and the laws that
+created them. Every source link opened when the file was written; three items
+whose only source had gone were left out. Two offices' sites carry injected
+spam links (MHSD, MENRE) and one is gone (MIPA): none is offered as the
+office's website. Audiences are a fixed list of 27 tags, in
+`apps/www/app/_lib/services.ts`.
 
 ---
 

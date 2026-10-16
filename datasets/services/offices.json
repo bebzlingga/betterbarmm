@@ -1,0 +1,4752 @@
+{
+ "name": "Programs and services of the Bangsamoro Government",
+ "generatedAt": "2026-10-17",
+ "note": "Compiled from each office's Citizen's Charter, its website and the laws that created it. Requirements, fees and times are as the office published them; confirm with the office before you go.",
+ "offices": [
+  {
+   "slug": "office-of-the-chief-minister",
+   "name": "Office of the Chief Minister",
+   "kind": "office",
+   "acronym": "OCM",
+   "parent": null,
+   "website": "https://bangsamoro.gov.ph/",
+   "mandate": "Supports the Chief Minister, the head of the Bangsamoro Government, in carrying out the Chief Minister's powers and functions. It also runs special programs for medical aid, relief and the Marawi rehabilitation.",
+   "contact": {
+    "address": "Bangsamoro Government Center, Rosary Heights VII, Cotabato City",
+    "phone": null,
+    "email": "info@bangsamoro.gov.ph"
+   },
+   "programs": [
+    {
+     "name": "Ayudang Medikal mula sa Bangsamoro Government (AMBaG)",
+     "summary": "Helps poor and vulnerable patients pay hospital bills at partner hospitals.",
+     "for": [
+      "patients",
+      "families-in-need",
+      "senior-citizens",
+      "persons-with-disability"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "how": "Bring the hospital papers to the AMBaG Office, 3rd Floor, Alnor Building 2, Sinsuat Avenue, Cotabato City."
+    },
+    {
+     "name": "Tulong Alay sa Bangsamorong Nangangailangan (Project TABANG)",
+     "summary": "Gives relief goods to communities hit by disasters or conflict, and medicines, hygiene kits, food packs and free medical and dental services to isolated areas.",
+     "for": [
+      "families-in-need",
+      "patients",
+      "local-governments"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "how": "Submit a request letter at the Project TABANG office on ND Avenue, Cotabato City."
+    },
+    {
+     "name": "Marawi Rehabilitation Program (MRP)",
+     "summary": "Runs a mobile health clinic for displaced families and their host communities, and a lake ambulance and cadaver transport service in Lanao del Sur.",
+     "for": [
+      "patients",
+      "families-in-need"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "how": "Visit the mobile clinic with an ID, or call the MRP hotline for the lake ambulance."
+    },
+    {
+     "name": "Bangsamoro Library and Archives",
+     "summary": "A public library at the Bangsamoro Government Center with reference materials, book loans, computer and internet use, and printing.",
+     "for": [
+      "students",
+      "teachers",
+      "researchers",
+      "everyone"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "how": "Apply for a borrower's card with a valid ID and a membership form."
+    },
+    {
+     "name": "Bangsamoro Liaison Office in Metro Manila",
+     "summary": "Gives referrals or endorsements for medical aid and 'Balik Probinsiya' help to poor or crisis-hit people from BARMM who are in Metro Manila.",
+     "for": [
+      "families-in-need",
+      "patients",
+      "travellers"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "how": "Submit a request letter and certificate of indigency to the liaison office."
+    },
+    {
+     "name": "Community Monitoring and Actionable Complaints Tracking System (CM-ACTS)",
+     "summary": "Takes complaints from the public about BARMM infrastructure projects.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bangsamoro.gov.ph/contact-us/",
+     "how": "Download the complaint form from the Contact Us page of bangsamoro.gov.ph."
+    }
+   ],
+   "services": [
+    {
+     "name": "Request for Medical Assistance (AMBaG)",
+     "summary": "Cash help toward a hospital bill, paid through an endorsement letter to the hospital.",
+     "for": [
+      "patients",
+      "families-in-need",
+      "senior-citizens",
+      "persons-with-disability",
+      "children",
+      "women"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "requirements": [
+      "Request form (from the AMBaG desk officer)",
+      "Medical abstract (from the partner hospital)",
+      "Final hospital bill or charge slip (from the partner hospital)",
+      "Proof of identity"
+     ],
+     "fee": "None",
+     "time": "17 minutes",
+     "where": "AMBaG Office, 3rd Floor, Door No. 4, Alnor Building 2, Sinsuat Avenue, Cotabato City (0917-803-9295)"
+    },
+    {
+     "name": "Request for Medical Assistance for billing above PhP10,000.00 (AMBaG)",
+     "summary": "Medical help for hospital bills larger than PHP 10,000.",
+     "for": [
+      "patients",
+      "families-in-need",
+      "senior-citizens",
+      "persons-with-disability"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "requirements": [
+      "Request form",
+      "Medical abstract",
+      "Final hospital bill or charge slip",
+      "Letter of request addressed to the Chief Minister",
+      "Proof of identity"
+     ],
+     "fee": "None",
+     "time": "58 minutes",
+     "where": "AMBaG Office, 3rd Floor, Door No. 4, Alnor Building 2, Sinsuat Avenue, Cotabato City"
+    },
+    {
+     "name": "Mobile Health Care Clinic",
+     "summary": "Free check-ups, basic dental and prenatal care, and medicines when available.",
+     "for": [
+      "patients",
+      "families-in-need"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "requirements": [
+      "Government-issued ID or any document showing the patient's name"
+     ],
+     "fee": "None",
+     "time": "1 hour",
+     "where": "Marawi Rehabilitation Program - Program Management Office"
+    },
+    {
+     "name": "Request for Emergency Care thru Lake Ambulance and for Post-Life Care for Deceased Persons thru Lake/Land Cadaver Transport",
+     "summary": "Lake ambulance for patients and lake or land transport for the dead in Lanao del Sur, with priority for displaced persons.",
+     "for": [
+      "patients",
+      "families-in-need"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "requirements": [
+      "Government-issued ID or any document showing the name of the patient or deceased, if available",
+      "Medical history records, if available (lake ambulance)"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "MRP-PMO, 1st Floor, Hanes Building, Panggao Saduc, Marawi City (hotline 0912-441-0991)"
+    },
+    {
+     "name": "Request for Relief Assistance Program / Ayuda aLAy sa Bangsamoro (ALAB)",
+     "summary": "Food packs, hygiene kits, kitchen wares and emergency kits for poor or disaster- and conflict-hit communities not yet helped by other agencies.",
+     "for": [
+      "families-in-need",
+      "local-governments"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "requirements": [
+      "Request letter to the Project Manager stating the type and quantity of help and the number of affected communities, with a contact number",
+      "Photo of the affected area (for emergency requests)",
+      "Photo of the beneficiaries",
+      "Photocopy of the requester's valid ID",
+      "Valid ID of the beneficiary at release"
+     ],
+     "fee": "None",
+     "time": "36 minutes to file; 3 days and 5 minutes for approval",
+     "where": "Project TABANG Humanitarian Services Component, ND Avenue, Cotabato City ((064) 557-3914)"
+    },
+    {
+     "name": "Health Services Assistance and Welfare Maintenance",
+     "summary": "Medicines, hygiene kits, food packs, feeding programs and free medical and dental services for isolated areas named by health units.",
+     "for": [
+      "patients",
+      "local-governments"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "requirements": [
+      "Rural health units: endorsement letter from the Ministry of Health",
+      "Non-health facilities: request letter",
+      "Walk-in clients: prescription",
+      "Approval from the Health Unit Head or Project Manager"
+     ],
+     "fee": "None",
+     "time": "17 minutes",
+     "where": "Project TABANG Health Component, ND Avenue, Poblacion III, Cotabato City"
+    },
+    {
+     "name": "Request for Referral/Endorsement for Medical Assistance/'Balik Probinsiya' Assistance",
+     "summary": "A referral letter for medical aid or help to return home, for poor or crisis-hit people from BARMM who are in Metro Manila.",
+     "for": [
+      "families-in-need",
+      "patients",
+      "travellers"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "requirements": [
+      "Request letter",
+      "Certificate of indigency or social case study report",
+      "Medical or clinical abstract (for medical aid)",
+      "Laboratory request or prescription (for medical aid)"
+     ],
+     "fee": "None",
+     "time": "30 minutes",
+     "where": "Direct Community Service, Bangsamoro Liaison Office in Metro Manila"
+    },
+    {
+     "name": "Application for Borrowers' Card",
+     "summary": "A card that lets you borrow library books and materials.",
+     "for": [
+      "students",
+      "teachers",
+      "researchers",
+      "everyone"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "requirements": [
+      "Any valid ID (student, company, government, or a parent's or guardian's ID for minors)",
+      "Membership form"
+     ],
+     "fee": "None",
+     "time": "17 minutes",
+     "where": "Bangsamoro Library and Archives - Readers' Service"
+    },
+    {
+     "name": "Request for Reservation or Rental of the Shariff Kabunsuan Cultural Complex (SKCC)",
+     "summary": "Rent of the SKCC hall (up to 450 persons) for meetings, trainings, weddings, graduations and similar events.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "requirements": [
+      "Request or endorsement letter (2 original copies)",
+      "Supporting documents, if any"
+     ],
+     "fee": "PHP 3,000, excluding electricity",
+     "time": "1 hour, 15 minutes",
+     "where": "Administrative Management Services - General Services Division"
+    },
+    {
+     "name": "Requests for an appointment or meeting with the Chief Minister",
+     "summary": "Sets up a meeting or courtesy call with the Chief Minister.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "requirements": [
+      "Request letter addressed to the Chief Minister"
+     ],
+     "fee": "None",
+     "time": "4 hours, 10 minutes",
+     "where": "Office of the Chief of Staff - Social Appointment Division"
+    }
+   ],
+   "sources": [
+    {
+     "label": "OCM, Citizen's Charter Handbook, 1st Edition, 2023",
+     "url": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf"
+    },
+    {
+     "label": "BARMM Official Website, Contact Us",
+     "url": "https://bangsamoro.gov.ph/contact-us/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-basic-higher-and-technical-education",
+   "name": "Ministry of Basic, Higher and Technical Education",
+   "kind": "ministry",
+   "acronym": "MBHTE",
+   "parent": null,
+   "website": "https://mbhte.bangsamoro.gov.ph/",
+   "mandate": "The Bangsamoro Government ministry for education: basic education, college, technical-vocational training and the madaris (Islamic schools) system in BARMM.",
+   "contact": null,
+   "programs": [
+    {
+     "name": "Access to Higher and Modern Education Scholarship Program (AHME-SP)",
+     "summary": "College scholarship; for school year 2026-2027 each scholar gets PHP 40,000 per semester (PHP 80,000 a year). It prioritizes former combatants, their children, orphans and surviving spouses.",
+     "for": [
+      "students",
+      "former-combatants"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/over-1600-scholars-to-receive-p80k-cash-stipend-from-barmm-govt/",
+     "how": "Apply online through the AHME portal during the application window (the 7th cohort window, April 13 to May 13, 2026, is closed)."
+    },
+    {
+     "name": "AHME College Assistance Program (AHME-CAP)",
+     "summary": "Yearly grant for college students from low-income families to help with tuition and school costs; 1,540 students were covered for school year 2026-2027.",
+     "for": [
+      "students",
+      "families-in-need"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/more-college-students-from-low-income-families-get-scholarship-grants-from-barmm/",
+     "how": null
+    },
+    {
+     "name": "Bangsamoro Scholarship Program for Technical-Vocational Education and Training (BSP-TVET)",
+     "summary": "Free tech-voc training in courses such as Cookery NC II, Carpentry NC II, Driving NC II and Computer System Servicing NC II, run by MBHTE-TESD.",
+     "for": [
+      "out-of-school-youth",
+      "job-seekers",
+      "youth",
+      "workers"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/over-1100-scholars-begin-training-under-barmm-tech-voc-program/",
+     "how": null
+    },
+    {
+     "name": "Regional Manpower Development Center (RMDC) free skills training",
+     "summary": "Free tech-voc training for people aged 15 and up; trainees get a training certificate, a uniform, a PHP 180 daily allowance and referral to partner companies for on-the-job training.",
+     "for": [
+      "out-of-school-youth",
+      "persons-with-disability",
+      "job-seekers",
+      "workers"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/free-tech-voc-training-empowers-bangsamoro-out-of-school-youth-pwds/",
+     "how": null
+    },
+    {
+     "name": "Abot Kaalaman sa Pamilyang Bangsamoro (AKAP)",
+     "summary": "Learning centers in remote barangays with no school, teaching preschool to Grade 3; run with the Australian Government through the Pathways program.",
+     "for": [
+      "children"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/mbhte-delivers-educational-support-to-barmm-remote-areas/",
+     "how": null
+    }
+   ],
+   "services": [],
+   "sources": [
+    {
+     "label": "MBHTE AHME Portal (requirements and eligibility), 2026",
+     "url": "https://ahme-mbhte.bangsamoro.gov.ph/"
+    },
+    {
+     "label": "BARMM Official Website, AHME-SP 7th cohort article, 2026",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/over-1600-scholars-to-receive-p80k-cash-stipend-from-barmm-govt/"
+    },
+    {
+     "label": "BARMM Official Website, AHME-CAP article, 2026",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/more-college-students-from-low-income-families-get-scholarship-grants-from-barmm/"
+    },
+    {
+     "label": "BARMM Official Website, BSP-TVET article, 2026",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/over-1100-scholars-begin-training-under-barmm-tech-voc-program/"
+    },
+    {
+     "label": "BARMM Official Website, RMDC free tech-voc training article, 2025",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/free-tech-voc-training-empowers-bangsamoro-out-of-school-youth-pwds/"
+    },
+    {
+     "label": "BARMM Official Website, AKAP article, 2025",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/mbhte-delivers-educational-support-to-barmm-remote-areas/"
+    },
+    {
+     "label": "Bangsamoro Education Code (BAA 18)",
+     "url": "https://officialgazette.bangsamoro.gov.ph/wp-content/uploads/2022/02/BA-Act-No.18-Bangsamoro-Education-Code.pdf"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-health",
+   "name": "Ministry of Health",
+   "kind": "ministry",
+   "acronym": "MOH",
+   "parent": null,
+   "website": "https://moh.bangsamoro.gov.ph",
+   "mandate": "Plans, carries out and coordinates health policies and programs in the region, and delivers and regulates health services to protect and restore people's health.",
+   "contact": {
+    "address": "Bangsamoro Government Center, Rosary Heights VII, Cotabato City 9600",
+    "phone": "(064) 552-9221",
+    "email": null
+   },
+   "programs": [
+    {
+     "name": "Bangsamoro Medical Scholarship Program (BMSP-TDIF)",
+     "summary": "Pays for students in medicine and other health courses at partner schools; scholars must return to serve their communities after graduating and passing the board exam.",
+     "for": [
+      "students"
+     ],
+     "source": "https://mcu.edu.ph/news/mcu-and-moh-barmm-forge-scholarship-partnership-to-expand-access-to-healthcare-education/",
+     "how": null
+    },
+    {
+     "name": "PuroKalusugan (PK)",
+     "summary": "Rural health units bring immunization, consultations, medicines and health talks to puroks in the Special Geographic Area, launched May 2026.",
+     "for": [
+      "everyone",
+      "families-in-need"
+     ],
+     "source": "https://www.sunstar.com.ph/zamboanga/barmm-rolls-out-purokalusugan-program",
+     "how": null
+    },
+    {
+     "name": "Bangsamoro Surgical and Medical Outreach Program",
+     "summary": "Medical missions offering consultations, circumcision, minor and major operations, eye surgery and check-ups, and wheelchairs, canes and crutches.",
+     "for": [
+      "patients",
+      "families-in-need",
+      "persons-with-disability"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-celebrates-healthcare-milestones-at-inaugural-kapihan-sa-bagong-pilipinas",
+     "how": null
+    },
+    {
+     "name": "Health facility building and upgrading",
+     "summary": "Builds and equips barangay health stations and rural health units, renovates hospitals, and provides land and sea ambulances.",
+     "for": [
+      "local-governments",
+      "everyone"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-celebrates-healthcare-milestones-at-inaugural-kapihan-sa-bagong-pilipinas",
+     "how": null
+    },
+    {
+     "name": "Health promotion with an Islamic perspective",
+     "summary": "Health education modules on the 7 national priority areas, written with Islamic scholars for Bangsamoro communities.",
+     "for": [
+      "everyone",
+      "ulama"
+     ],
+     "source": "https://moh.bangsamoro.gov.ph/7-priority-area-with-islamic-perspective/",
+     "how": null
+    }
+   ],
+   "services": [],
+   "sources": [
+    {
+     "label": "MOH-BARMM, Citizen's Charter page, 2026",
+     "url": "https://moh.bangsamoro.gov.ph/citizens-charter/"
+    },
+    {
+     "label": "MOH-BARMM, Contact Us",
+     "url": "https://moh.bangsamoro.gov.ph/contact-us/"
+    },
+    {
+     "label": "Bangsamoro Administrative Code (BAA 13), Ministry of Health mandate, 2020",
+     "url": "https://bicto.bangsamoro.gov.ph/files/BAA-13.pdf"
+    },
+    {
+     "label": "BIO, MOH accomplishments at Kapihan sa Bagong Pilipinas, 2024",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-celebrates-healthcare-milestones-at-inaugural-kapihan-sa-bagong-pilipinas"
+    },
+    {
+     "label": "Manila Central University, MCU and MOH BARMM scholarship partnership, 2026",
+     "url": "https://mcu.edu.ph/news/mcu-and-moh-barmm-forge-scholarship-partnership-to-expand-access-to-healthcare-education/"
+    },
+    {
+     "label": "SunStar Zamboanga (private outlet, citing BIO), PuroKalusugan rollout, 2026",
+     "url": "https://www.sunstar.com.ph/zamboanga/barmm-rolls-out-purokalusugan-program"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-social-services-and-development",
+   "name": "Ministry of Social Services and Development",
+   "kind": "ministry",
+   "acronym": "MSSD",
+   "parent": null,
+   "website": "https://mssd.barmm.gov.ph/",
+   "mandate": "Provides social welfare in the region, with focus on poor and vulnerable groups such as women, children, older persons, persons with disabilities, indigenous communities and displaced persons, especially during disasters and conflict.",
+   "contact": {
+    "address": "Bangsamoro Government Center, MSSD-BARMM, Gov. Gutierrez Ave., RH-7, Cotabato City",
+    "phone": "(064) 421-5856",
+    "email": "mssd@bangsamoro.gov.ph"
+   },
+   "programs": [
+    {
+     "name": "Angat Bangsamoro: Kabataan Tungo sa Karunungan (ABaKa)",
+     "summary": "A once-a-year cash grant for students from poor families: PHP 2,000 (elementary), PHP 3,000 (high school), PHP 10,000 (college or vocational). 4Ps students are not eligible.",
+     "for": [
+      "students",
+      "families-in-need"
+     ],
+     "source": "https://mssd.barmm.gov.ph/angat-bangsamoro-kabataan-tungo-sa-karunungan-abaka/",
+     "how": "Apply at an MSSD regional, provincial or municipal office with an ID, proof of enrollment and a barangay certificate of residency or indigency."
+    },
+    {
+     "name": "Unlad Pamilyang Bangsamoro Program",
+     "summary": "Livelihood, skills training and a monthly rice subsidy for poor families, with possible college support and emergency medical aid.",
+     "for": [
+      "families-in-need"
+     ],
+     "source": "https://mssd.barmm.gov.ph/citizens-charter/",
+     "how": null
+    },
+    {
+     "name": "Bangsamoro Sagip Kabuhayan Program (BSK)",
+     "summary": "A one-time PHP 15,000 seed capital grant to start or grow a small business, for low-income and disaster-hit households.",
+     "for": [
+      "families-in-need",
+      "workers"
+     ],
+     "source": "https://mssd.barmm.gov.ph/bangsamoro-sagip-kabuhayan-program-bsk/",
+     "how": "Usually by referral; submit a valid ID, a livelihood project proposal and a General Intake Sheet for assessment by the municipal or city social welfare officer."
+    },
+    {
+     "name": "Dakilang Bangsamoro Program (DAKILA)",
+     "summary": "PHP 1,000 a month plus seminars, mental health support and referrals for poor solo parents.",
+     "for": [
+      "families-in-need",
+      "women"
+     ],
+     "source": "https://mssd.barmm.gov.ph/dakila-program/",
+     "how": "Solo parents are assessed by MSSD social workers."
+    },
+    {
+     "name": "Kalinga Para sa May Kapansanan Program (KALINGA)",
+     "summary": "A PHP 500 monthly stipend for poor persons with severe disabilities.",
+     "for": [
+      "persons-with-disability",
+      "families-in-need"
+     ],
+     "source": "https://mssd.barmm.gov.ph/kalinga-program/",
+     "how": "Applicants are assessed on how much difficulty they have in six areas (seeing, hearing, walking, remembering, self-care, communicating); a PWD ID or medical certificate may be required."
+    },
+    {
+     "name": "Social Pension for Indigent Senior Citizens (SocPen)",
+     "summary": "A PHP 1,000 monthly stipend for poor senior citizens aged 60 and above with no pension and no regular income.",
+     "for": [
+      "senior-citizens",
+      "families-in-need"
+     ],
+     "source": "https://mssd.barmm.gov.ph/social-pension-for-indigent-senior-citizens/",
+     "how": "Submit an application form and a copy of your OSCA ID (or birth certificate or other ID) through your barangay senior citizens association, OSCA, the city/municipal social welfare office or the local MSSD office."
+    },
+    {
+     "name": "Free Birth Registration",
+     "summary": "Free on-site birth registration for poor, unregistered children aged 0 to 12 in covered areas, with priority for Sama-Bajau, Teduray and former combatants' families.",
+     "for": [
+      "children",
+      "families-in-need",
+      "indigenous-peoples",
+      "former-combatants"
+     ],
+     "source": "https://mssd.barmm.gov.ph/free-birth-registration/",
+     "how": null
+    },
+    {
+     "name": "Kupkop Program",
+     "summary": "Food, schooling and monthly cash support for orphaned, homeless and neglected children.",
+     "for": [
+      "children",
+      "families-in-need"
+     ],
+     "source": "https://mssd.barmm.gov.ph/citizens-charter/",
+     "how": null
+    },
+    {
+     "name": "Women Opportunities to Maternal Benefits (WOMB)",
+     "summary": "Support for poor pregnant women for a safe pregnancy, childbirth and newborn care.",
+     "for": [
+      "women",
+      "families-in-need"
+     ],
+     "source": "https://mssd.barmm.gov.ph/citizens-charter/",
+     "how": null
+    },
+    {
+     "name": "Sagip Paningin para kay Lolo at Lola",
+     "summary": "Free customized eyeglasses for poor older persons.",
+     "for": [
+      "senior-citizens",
+      "families-in-need"
+     ],
+     "source": "https://mssd.barmm.gov.ph/citizens-charter/",
+     "how": null
+    },
+    {
+     "name": "Layag Bajau Program",
+     "summary": "Livelihood, education, health, nutrition and resettlement support for Badjau families.",
+     "for": [
+      "families-in-need"
+     ],
+     "source": "https://mssd.barmm.gov.ph/citizens-charter/",
+     "how": null
+    },
+    {
+     "name": "Emergency Relief Assistance (ERA) and Emergency Shelter Assistance (ESA)",
+     "summary": "Food, non-food items and temporary shelter for families displaced by disasters or conflict.",
+     "for": [
+      "families-in-need"
+     ],
+     "source": "https://mssd.barmm.gov.ph/citizens-charter/",
+     "how": null
+    }
+   ],
+   "services": [
+    {
+     "name": "B-CARES Hospitalization Assistance",
+     "summary": "Help with hospital bills for poor or crisis-hit individuals, after assessment by an MSSD social worker; doctors' fees are not covered.",
+     "for": [
+      "patients",
+      "families-in-need"
+     ],
+     "source": "https://mssd.barmm.gov.ph/citizens-charter/",
+     "requirements": [
+      "Medical certificate or abstract",
+      "Statement of account",
+      "Valid ID of the informant and the beneficiary",
+      "Promissory note (for non-partner hospitals)",
+      "Doctor's justification if admitted to a private room"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "MSSD Crisis Intervention Unit, CNX Building 3, RH-8, Cotabato City, or the nearest MSSD provincial office"
+    },
+    {
+     "name": "B-CARES Laboratories and Other Procedures",
+     "summary": "Help with costs of laboratory tests and procedures such as dialysis, chemotherapy, CT scan and MRI.",
+     "for": [
+      "patients",
+      "families-in-need"
+     ],
+     "source": "https://mssd.barmm.gov.ph/citizens-charter/",
+     "requirements": [
+      "Laboratory request with date, doctor's signature and license number",
+      "Valid ID of the informant and the beneficiary",
+      "For other procedures: hospital quotation and medical certificate"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "MSSD Crisis Intervention Unit, CNX Building 3, RH-8, Cotabato City, or the nearest MSSD provincial office"
+    },
+    {
+     "name": "B-CARES Medical Assistive Device",
+     "summary": "Provision of devices such as wheelchairs, prosthetics or hearing aids.",
+     "for": [
+      "persons-with-disability",
+      "patients",
+      "senior-citizens"
+     ],
+     "source": "https://mssd.barmm.gov.ph/citizens-charter/",
+     "requirements": [
+      "Price quotation of the device from a clinic or supplier",
+      "Medical certificate",
+      "Photo of the beneficiary",
+      "Valid ID of the informant and the beneficiary"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "MSSD Crisis Intervention Unit, CNX Building 3, RH-8, Cotabato City, or the nearest MSSD provincial office"
+    },
+    {
+     "name": "B-CARES Burial Assistance",
+     "summary": "Help with funeral costs and transport of remains; must be claimed within 30 days of death.",
+     "for": [
+      "families-in-need"
+     ],
+     "source": "https://mssd.barmm.gov.ph/citizens-charter/",
+     "requirements": [
+      "Death certificate",
+      "Certification from a tribal chieftain or imam (if there is no death certificate)",
+      "Funeral contract (for non-Muslims)",
+      "Valid ID of the informant and the beneficiary"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "MSSD Crisis Intervention Unit, CNX Building 3, RH-8, Cotabato City, or the nearest MSSD provincial office"
+    },
+    {
+     "name": "B-CARES Medicine Assistance",
+     "summary": "Medicines for poor or crisis-hit individuals, released through partner pharmacies.",
+     "for": [
+      "patients",
+      "families-in-need"
+     ],
+     "source": "https://mssd.barmm.gov.ph/citizens-charter/",
+     "requirements": [
+      "Prescription with date, doctor's signature and license number (valid for 2 months)",
+      "Valid ID of the informant and the beneficiary"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "MSSD Crisis Intervention Unit, CNX Building 3, RH-8, Cotabato City, or the nearest MSSD provincial office"
+    }
+   ],
+   "sources": [
+    {
+     "label": "MSSD, Citizen's Charter (frontline services), 2025",
+     "url": "https://mssd.barmm.gov.ph/citizens-charter/"
+    },
+    {
+     "label": "MSSD, Contact Us",
+     "url": "https://mssd.barmm.gov.ph/contact-us/"
+    },
+    {
+     "label": "MSSD, program pages (ABaKa, BSK, DAKILA, KALINGA, Social Pension, Free Birth Registration)",
+     "url": "https://mssd.barmm.gov.ph/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-agriculture-fisheries-and-agrarian-reform",
+   "name": "Ministry of Agriculture, Fisheries and Agrarian Reform",
+   "kind": "ministry",
+   "acronym": "MAFAR",
+   "parent": null,
+   "website": "https://mafar.bangsamoro.gov.ph/",
+   "mandate": "Leads farm and fishery development, land distribution and secure land tenure for farmers and fisherfolk in the Bangsamoro, and works to keep food available and affordable.",
+   "contact": {
+    "address": "BARMM Compound, Gov. Gutierrez Ave., Cotabato City, 9600",
+    "phone": "(064) 552-3166",
+    "email": null
+   },
+   "programs": [
+    {
+     "name": "Basic Integration for Harmonized Intervention (BIHI)",
+     "summary": "A package of farm interventions matched to each location, with checks on who the beneficiaries are, aimed at cutting farmer poverty.",
+     "for": [
+      "farmers"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/basic-integration-for-harmonized-intervention/",
+     "how": null
+    },
+    {
+     "name": "Corn Program",
+     "summary": "Support for corn and cassava farmers: seed production, buffer stocks, organic farming, biological pest control, marketing help, farmer training, irrigation and farm machinery.",
+     "for": [
+      "farmers"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/corn-program/",
+     "how": null
+    },
+    {
+     "name": "High Value Crops Development Program (HVCDP)",
+     "summary": "Promotes growing, processing, marketing and distribution of high value crops under RA 7900.",
+     "for": [
+      "farmers"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/high-value-crops-development-program/",
+     "how": null
+    },
+    {
+     "name": "Organic Agriculture Program",
+     "summary": "Promotes organic farming for better farm income, health and environmental protection.",
+     "for": [
+      "farmers"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/organic-agriculture-program/",
+     "how": null
+    },
+    {
+     "name": "Integrated and Sustainable Development for Aquaculture/Capture",
+     "summary": "Livelihood packages for fisherfolk groups and individuals, such as seaweed inputs, motorized boats with fish aggregating devices, fishing gear and fish cages; post-harvest equipment for women fisherfolk; buying stations, mini ice plants and cold storage.",
+     "for": [
+      "fisherfolk",
+      "women",
+      "cooperatives"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/integrated-and-sustainable-development-for-aquaculture-capture/",
+     "how": null
+    },
+    {
+     "name": "Land Distribution and Development for the Upliftment of Poor ARBs",
+     "summary": "Distributes private and government-owned farm land to qualified farmer beneficiaries, and gives agrarian reform beneficiaries (ARBs) support: organizing, business services, shared facilities, infrastructure and legal help.",
+     "for": [
+      "farmers"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/land-distribution-and-development-for-the-upliftment-of-poor-arbs/",
+     "how": null
+    },
+    {
+     "name": "ARCCESS",
+     "summary": "Grants of shared facilities or farm equipment and machinery to qualified agrarian reform beneficiary organizations, with business coaching.",
+     "for": [
+      "farmers",
+      "cooperatives"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/arccess/",
+     "how": null
+    },
+    {
+     "name": "Special Development Fund (MAFAR-SDF)",
+     "summary": "Farm infrastructure and inputs such as farm-to-market roads, solar-powered irrigation, fish cages and agri-fishery inputs for cooperatives.",
+     "for": [
+      "farmers",
+      "fisherfolk",
+      "cooperatives"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/special-development-fund/",
+     "how": null
+    },
+    {
+     "name": "Philippine Rural Development Project (PRDP)",
+     "summary": "Farm-to-market roads, trading posts, warehouses and processing facilities for farming and fishing communities.",
+     "for": [
+      "farmers",
+      "fisherfolk"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/philippine-rural-development-project/",
+     "how": null
+    },
+    {
+     "name": "Registry System for Basic Sectors in Agriculture (RSBSA)",
+     "summary": "The registry of farmers and fisherfolk; the RSBSA enrollment form is required for many MAFAR services.",
+     "for": [
+      "farmers",
+      "fisherfolk"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/08/new-RSBS-FORMS.pdf",
+     "how": "Download the RSBSA form from the MAFAR website and submit it to MAFAR."
+    }
+   ],
+   "services": [
+    {
+     "name": "Market Development (buyer and seller matching, trade fairs)",
+     "summary": "Helps farmers and fisherfolk find buyers or suppliers and join trade fairs.",
+     "for": [
+      "farmers",
+      "fisherfolk",
+      "businesses"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Buyer or seller matching form (given at the office)"
+     ],
+     "fee": "None",
+     "time": "2 hours",
+     "where": "Agribusiness and Marketing Assistance, Market Development Section"
+    },
+    {
+     "name": "Agribusiness Promotion",
+     "summary": "Advice on starting an agri-business (costs, licensing, credit) and a business plan template.",
+     "for": [
+      "farmers",
+      "fisherfolk"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Inquiry form (given at the office)"
+     ],
+     "fee": "None",
+     "time": "30 minutes",
+     "where": "Agribusiness and Marketing Assistance Division"
+    },
+    {
+     "name": "Request for Shipping Permit of Pet Dogs and Cats",
+     "summary": "Permit to ship a pet dog or cat.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Rabies ID",
+      "Updated rabies vaccination certificate (with photocopy)",
+      "RSBSA Enrollment Form"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "Veterinary Quarantine Service Office"
+    },
+    {
+     "name": "Request for Shipping Permit of Fighting Cocks",
+     "summary": "Permit to ship fighting cocks.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Valid ID",
+      "RSBSA Enrollment Form"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "Veterinary Quarantine Service Office"
+    },
+    {
+     "name": "Request on Animal Vaccination, Deworming and Other Veterinary Drugs",
+     "summary": "Free animal vaccines, dewormers and veterinary drugs.",
+     "for": [
+      "farmers"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Request letter approved by the Minister",
+      "RSBSA Enrollment Form",
+      "For vaccines: ice and an ice box"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "Livestock Division"
+    },
+    {
+     "name": "Request for Training on Fruits, Vegetables and Industrial Crops Production",
+     "summary": "Training on growing fruits, vegetables and industrial crops.",
+     "for": [
+      "farmers"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Project proposal endorsed by the MAFAR municipal officer and provincial head",
+      "Request letter approved by the Minister",
+      "RSBSA Enrollment Form"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": null
+    },
+    {
+     "name": "Request for Seed Buffer-Stocking for Rehabilitation",
+     "summary": "Seeds for farmers whose crops were damaged.",
+     "for": [
+      "farmers"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Crop damage report",
+      "List of affected farmers",
+      "Size of damaged area",
+      "RSBSA Enrollment Form"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": null
+    },
+    {
+     "name": "Request for Technical Assistance",
+     "summary": "Farm technical help from MAFAR staff.",
+     "for": [
+      "farmers"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Request letter approved by the Minister",
+      "RSBSA Enrollment Form",
+      "Geo-tagging of the area"
+     ],
+     "fee": "None",
+     "time": "Depends on staff availability and type of help needed",
+     "where": null
+    },
+    {
+     "name": "Request for Training Center Reservation",
+     "summary": "Booking of MAFAR training center rooms and halls.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Request letter approved by the Minister and endorsed by the Center Manager"
+     ],
+     "fee": "PHP 120 per head (accommodation); PHP 2,500 per training (hall and equipment)",
+     "time": null,
+     "where": "Training center"
+    },
+    {
+     "name": "Distribution of Quality Seeds and Planting Materials",
+     "summary": "Seeds and planting materials, free or for sale.",
+     "for": [
+      "farmers"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Request letter approved by the Minister and released order by the Center Manager"
+     ],
+     "fee": "Free, or a price that depends on the crop if for sale",
+     "time": null,
+     "where": "Research Division"
+    },
+    {
+     "name": "Request for Organic Fertilizer/Vermicast",
+     "summary": "Purchase of organic fertilizer or vermicast.",
+     "for": [
+      "farmers"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Request letter approved by the Minister and endorsed by the Center Manager"
+     ],
+     "fee": "PHP 250 per bag",
+     "time": null,
+     "where": null
+    },
+    {
+     "name": "Request for Soil Laboratory Analysis",
+     "summary": "Lab test of a soil sample.",
+     "for": [
+      "farmers"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Request letter approved by the Minister and endorsed by the Center Manager",
+      "Soil sample"
+     ],
+     "fee": "PHP 300 per sample",
+     "time": null,
+     "where": "Soil laboratory"
+    },
+    {
+     "name": "Request for Trichogramma Cards",
+     "summary": "Purchase of trichogramma cards.",
+     "for": [
+      "farmers"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Request letter approved by the Minister and endorsed by the Center Manager"
+     ],
+     "fee": "PHP 4 per card",
+     "time": null,
+     "where": null
+    },
+    {
+     "name": "Request for Fecalysis Laboratory",
+     "summary": "Lab test of an animal fecal sample.",
+     "for": [
+      "farmers"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Request letter approved by the Minister and endorsed by the Center Manager",
+      "Fecal sample"
+     ],
+     "fee": "PHP 150 per sample",
+     "time": null,
+     "where": null
+    },
+    {
+     "name": "Request for Commercial Fishing Vessel / Gear License (CFVGL) and Gear Registration",
+     "summary": "License for a commercial fishing vessel and its gear.",
+     "for": [
+      "fisherfolk",
+      "businesses"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Regional BFAR application form for fishing vessel license",
+      "Grid map locator of the proposed fishing ground",
+      "Two 8x10 color photos of the vessel (port, starboard, name)",
+      "MARINA documents: Certificate of Vessel Registry, Certificate of Ownership, current Certificate of Inspection",
+      "Articles of incorporation and by-laws, or business name registration",
+      "Record book for catcher vessel"
+     ],
+     "fee": "Depends on vessel gross tonnage (GT), from PHP 200 + PHP 2/GT for small vessels",
+     "time": "3 working days, 4 hours and 30 minutes, plus 1-4 days travel for field inspection depending on the province",
+     "where": "Regional and Provincial Fishery Offices"
+    },
+    {
+     "name": "Request for Fish-workers License",
+     "summary": "License for fish workers.",
+     "for": [
+      "fisherfolk",
+      "workers"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Community Tax Certificate",
+      "2 recent 1x1 ID pictures",
+      "Barangay clearance",
+      "Fish-worker license application form"
+     ],
+     "fee": "PHP 20",
+     "time": "1 working day, 3 hours and 35 minutes",
+     "where": "Regional and Provincial Fishery Offices"
+    },
+    {
+     "name": "Request for Certificate of Clearance to Commercial Fishing Vessels",
+     "summary": "Clearance certificate for commercial fishing vessels.",
+     "for": [
+      "fisherfolk",
+      "businesses"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Fishing log book",
+      "Monthly fish catch report",
+      "Certificate of clearance application form"
+     ],
+     "fee": "PHP 200 (small scale), PHP 400 (medium scale), PHP 600 (large scale)",
+     "time": null,
+     "where": "Regional and Provincial Fishery Offices"
+    },
+    {
+     "name": "Request for Fishpond Lease Agreement (FLA)",
+     "summary": "Lease of public land for a fishpond.",
+     "for": [
+      "fisherfolk",
+      "businesses"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "FLA application form",
+      "Sketch or survey plan (4 copies)",
+      "Proof of available capital",
+      "Registration papers if the applicant is a group or company",
+      "DENR Forest Management Bureau certification that the area is under BFAR",
+      "Final requirements as listed in the charter"
+     ],
+     "fee": "Application fee PHP 2,000; cash bond PHP 100 per hectare; rental fee PHP 100 per hectare",
+     "time": "5 working days, 6 hours and 50 minutes, plus travel time for field inspection",
+     "where": "Fisheries regulatory unit or Provincial Fishery Office"
+    },
+    {
+     "name": "Request for Local Transport Permit (LTP) for In-Country Trans-boundary Movement of Live Aquatic Species, Processed, Frozen, Chilled and Dried Aquatic Products",
+     "summary": "Permit to move fish and aquatic products within the country.",
+     "for": [
+      "fisherfolk",
+      "businesses"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Applicable permits or certificates (such as aquatic wildlife permits, health certificate, vessel license, auxiliary invoice)"
+     ],
+     "fee": "See the relevant Fisheries Administrative Order",
+     "time": null,
+     "where": "Quarantine Officer at the fishport or airport"
+    },
+    {
+     "name": "Request of Issuance of HACCP/SSOP/GMP/GHP Certificates",
+     "summary": "Food safety certificates for fish processing establishments after inspection.",
+     "for": [
+      "businesses"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Sanitary permit and business permit from the LGU",
+      "Written HACCP/SSOP plan",
+      "Medical certificates of staff",
+      "GMP flow chart",
+      "Training certificates of workers"
+     ],
+     "fee": "None",
+     "time": "5 days, 1 hour and 20 minutes",
+     "where": null
+    },
+    {
+     "name": "Request of Health Certificate for In-Country Trans-boundary Movement of Live Shrimps, Live Aquatic Species and Seaweeds for Aquaculture Purposes",
+     "summary": "Health certificate after lab analysis of stock to be transported.",
+     "for": [
+      "fisherfolk",
+      "businesses"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Stock samples to be transported",
+      "Request for Laboratory Analysis form"
+     ],
+     "fee": "None",
+     "time": "3 hours and 20 minutes",
+     "where": null
+    },
+    {
+     "name": "Request for Aquaculture Farm Registration",
+     "summary": "Registration of a fish farm after inspection.",
+     "for": [
+      "fisherfolk",
+      "businesses"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Aquaculture farm registration form"
+     ],
+     "fee": "None",
+     "time": "6 days and 12 hours, plus 9 working days for lab exam and approval at BFAR Central Office and 2-4 days travel",
+     "where": "Provincial Fishery Office or Regional BFAR office"
+    },
+    {
+     "name": "Request for Fish Kill Investigation / Disease Surveillance",
+     "summary": "Investigation and lab testing when fish die in large numbers.",
+     "for": [
+      "fisherfolk"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Water, fish or shrimp samples"
+     ],
+     "fee": "None",
+     "time": "6 hours and 1 minute, plus 1-2 working days travel to the site",
+     "where": "Provincial Fishery Office"
+    },
+    {
+     "name": "Request for Water Parameters Analysis",
+     "summary": "Lab analysis of a water sample.",
+     "for": [
+      "fisherfolk"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Water sample"
+     ],
+     "fee": null,
+     "time": "5 hours and 30 minutes",
+     "where": null
+    },
+    {
+     "name": "Issuance of Certified True Copies of Agrarian Law Implementation case documents",
+     "summary": "Certified copies of case records, decisions, resolutions and orders in agrarian law cases.",
+     "for": [
+      "farmers"
+     ],
+     "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
+     "requirements": [
+      "Valid ID",
+      "Letter of request",
+      "Authorization letter if a representative is requesting"
+     ],
+     "fee": "PHP 50",
+     "time": null,
+     "where": "Legal Division"
+    }
+   ],
+   "sources": [
+    {
+     "label": "MAFAR, Citizen's Charter (posted as 2024 2nd Edition; document says updated as of January 2021)",
+     "url": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf"
+    },
+    {
+     "label": "MAFAR official website, program pages",
+     "url": "https://mafar.bangsamoro.gov.ph/"
+    },
+    {
+     "label": "MAFAR, RSBSA form",
+     "url": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/08/new-RSBS-FORMS.pdf"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-public-works",
+   "name": "Ministry of Public Works",
+   "kind": "ministry",
+   "acronym": "MPW",
+   "parent": null,
+   "website": "https://mpw.bangsamoro.gov.ph",
+   "mandate": "The Bangsamoro Government's engineering and construction arm: plans, designs, builds and maintains roads, bridges, flood control, water supply and other public works in the region.",
+   "contact": {
+    "address": "Bangsamoro Government Center (BGC), RH7, Gov. Gutierrez Avenue, Cotabato City",
+    "phone": "(064) 557-0006",
+    "email": "mpw@bangsamoro.gov.ph"
+   },
+   "programs": [
+    {
+     "name": "Expanded Bangsamoro Advanced Road Mapping and Management (E-BARMM) System",
+     "summary": "Online platform for planning and monitoring public works projects, meant to give the public real-time information on government projects across the region.",
+     "for": [
+      "everyone",
+      "local-governments"
+     ],
+     "source": "https://mpw.bangsamoro.gov.ph/mpw-launches-upgraded-e-barmm-system-for-infrastructure-monitoring/",
+     "how": null
+    },
+    {
+     "name": "Flood mitigation, dredging and river widening",
+     "summary": "Uses ministry equipment to clear silt and debris from rivers and drainage channels in flood-prone towns.",
+     "for": [
+      "everyone",
+      "local-governments"
+     ],
+     "source": "https://mpw.bangsamoro.gov.ph/mpw-continues-river-cleaning-and-widening-operations-in-pandag-and-gskp-maguindanao-del-sur/",
+     "how": null
+    },
+    {
+     "name": "Farm-to-market roads",
+     "summary": "Builds roads linking farms, markets and schools, including Japan-funded roads in South Upi, Maguindanao del Sur.",
+     "for": [
+      "farmers",
+      "local-governments"
+     ],
+     "source": "https://mpw.bangsamoro.gov.ph/mpw-japanese-engineers-review-south-upi-farm-to-market-roads-strengthen-infrastructure-partnership/",
+     "how": null
+    },
+    {
+     "name": "Heavy equipment for barangays",
+     "summary": "District engineering offices hand over equipment such as dump trucks to barangays for road clearing, disaster response and upkeep, funded by Members of Parliament.",
+     "for": [
+      "local-governments"
+     ],
+     "source": "https://mpw.bangsamoro.gov.ph/mpw-lds-1st-deo-turns-over-heavy-equipment-for-brgy-sandor-in-baloi-lanao-del-sur/",
+     "how": null
+    }
+   ],
+   "services": [],
+   "sources": [
+    {
+     "label": "MPW-BARMM, Office Mandate",
+     "url": "https://mpw.bangsamoro.gov.ph/office-mandate/"
+    },
+    {
+     "label": "MPW-BARMM, Transparency Seal",
+     "url": "https://mpw.bangsamoro.gov.ph/transparency/"
+    },
+    {
+     "label": "MPW-BARMM, District Engineers",
+     "url": "https://mpw.bangsamoro.gov.ph/district-engineers/"
+    },
+    {
+     "label": "MPW-BARMM, E-BARMM upgrade launch, 2026",
+     "url": "https://mpw.bangsamoro.gov.ph/mpw-launches-upgraded-e-barmm-system-for-infrastructure-monitoring/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-the-interior-and-local-government",
+   "name": "Ministry of the Interior and Local Government",
+   "kind": "ministry",
+   "acronym": "MILG",
+   "parent": null,
+   "website": "https://www.milgbarmm.com/",
+   "mandate": "Supervises the region's local governments (provinces, cities, municipalities, barangays) and builds their capacity, including in peace and order, public safety and disaster preparedness.",
+   "contact": null,
+   "programs": [
+    {
+     "name": "Support to Local Moral Governance (SLMG)",
+     "summary": "Funds barangay halls, public markets, terminals and other small infrastructure built by local governments, with MILG monitoring.",
+     "for": [
+      "local-governments"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/support-to-local-moral-governance-more-infra-projects-on-the-way-for-barmm-lgus/",
+     "how": "LGUs sign a memorandum of agreement with MILG."
+    },
+    {
+     "name": "Local Government Functional Appraisal Award (LoGFA)",
+     "summary": "Assesses how well LGUs function; top LGUs received PHP 200,000 each in 2020.",
+     "for": [
+      "local-governments"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/milg-grants-incentives-to-performing-lgus-launches-salamat-awards/",
+     "how": null
+    },
+    {
+     "name": "Lupon Tagapamayapa Incentive Award (LTIA)",
+     "summary": "Cash awards for barangays with well-run village justice (Lupon) systems.",
+     "for": [
+      "local-governments"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/milg-grants-incentives-to-performing-lgus-launches-salamat-awards/",
+     "how": null
+    },
+    {
+     "name": "Bangsamoro Barangay Development Plan (BBDP) 2026-2028",
+     "summary": "A common 3-year planning guide and handbook for barangays, first used in 55 pilot barangays.",
+     "for": [
+      "local-governments"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-institutionalizes-unified-barangay-planning-55-blgus-lead-implementation/",
+     "how": null
+    }
+   ],
+   "services": [],
+   "sources": [
+    {
+     "label": "MILG, About",
+     "url": "https://www.milgbarmm.com/about"
+    },
+    {
+     "label": "BARMM Official Website, MILG news, 2020-2026",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/support-to-local-moral-governance-more-infra-projects-on-the-way-for-barmm-lgus/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-human-settlements-and-development",
+   "name": "Ministry of Human Settlements and Development",
+   "kind": "ministry",
+   "acronym": "MHSD",
+   "parent": null,
+   "website": null,
+   "mandate": "The lead agency for housing, human settlements and urban development in the Bangsamoro: it plans, sets policy, regulates and coordinates housing and land use, and works to provide affordable housing.",
+   "contact": {
+    "address": "MHSD-BARMM Regional Office, near COA Office, Bangsamoro Government Center, Rosary Heights VII, Cotabato City",
+    "phone": "(064) 442-5842; mobile 0955 799 4778; housing beneficiary concerns 0956 960 2823 / 0930 391 3023",
+    "email": null
+   },
+   "programs": [
+    {
+     "name": "SALAM Homes (Bangsamoro Affordable Housing Project)",
+     "summary": "House-and-lot units (36 sq m house on a 100 sq m lot) in Barangay Semba, Datu Odin Sinsuat, financed by Pag-IBIG at PHP 850,000, payable up to 30 years, with monthly payments from PHP 5,500.",
+     "for": [
+      "workers"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/salam-homes-mhsd-awards-affordable-housing-to-barmm-employees/",
+     "how": "For BARMM employees who are active Pag-IBIG members, including contractual and job order staff; start with the MHSD preliminary qualification for a Pag-IBIG housing loan."
+    },
+    {
+     "name": "Resettlement Project (free housing units)",
+     "summary": "Free house, lot and land title for families in need; 1,707 units were completed as of September 15, 2025.",
+     "for": [
+      "former-combatants",
+      "families-in-need",
+      "indigenous-peoples"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-builds-1707-free-housing-units-2586-more-underway/",
+     "how": "Beneficiaries (former MILF and MNLF combatants, the poorest of the poor, victims of calamity or conflict, indigenous peoples, displaced persons) are identified and selected with partners such as LGUs."
+    }
+   ],
+   "services": [
+    {
+     "name": "Request for Technical Assistance",
+     "summary": "Expert help on housing, urban development and land use plans (CLUP and zoning ordinance).",
+     "for": [
+      "local-governments"
+     ],
+     "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
+     "requirements": [
+      "Letter stating the request, addressed to MHSD, with supporting documents if needed"
+     ],
+     "fee": "None",
+     "time": "2 days, 4 hours and 25 minutes",
+     "where": "Environment, Land Use and Urban Development Division (ELUUDD); Provincial Offices"
+    },
+    {
+     "name": "Request for Technical Assistance as Resource Person/Facilitator",
+     "summary": "MHSD staff as speakers or facilitators for technical learning activities.",
+     "for": [
+      "local-governments"
+     ],
+     "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
+     "requirements": [
+      "Request letter with a brief description of the activity"
+     ],
+     "fee": "None",
+     "time": "2 days, 5 hours and 45 minutes",
+     "where": "ELUUDD; Monitoring and Evaluation Division; Policy division"
+    },
+    {
+     "name": "Request for Technical Inputs (Technical Assistance on the Review and Approval Process of CLUP/ZO)",
+     "summary": "Technical review of an LGU draft Comprehensive Land Use Plan and Zoning Ordinance.",
+     "for": [
+      "local-governments"
+     ],
+     "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
+     "requirements": [
+      "Request letter for technical inputs"
+     ],
+     "fee": "None",
+     "time": "5 days and 3 hours",
+     "where": "Technical Regulatory Service; ELUUDD; Provincial Offices"
+    },
+    {
+     "name": "Application for Zoning Certification",
+     "summary": "Certifies that a project fits the land zoning, for towns without an approved land use plan or zoning ordinance.",
+     "for": [
+      "businesses",
+      "everyone"
+     ],
+     "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
+     "requirements": [
+      "Notarized application form for zoning certification",
+      "Certification from the Punong Barangay",
+      "Vicinity map to scale with geographic coordinates",
+      "Original and 1 photocopy of TCT/OCT, other proof of ownership, or tax declaration"
+     ],
+     "fee": "PHP 216 (per schedule of fees); PHP 720 per hectare for land conversion",
+     "time": "5 days, 2 hours and 25 minutes",
+     "where": "Technical Regulatory Service; ELUUDD; Provincial Offices"
+    },
+    {
+     "name": "Application for Locational Clearance",
+     "summary": "Clearance needed before a building permit, confirming the project fits the land use plan and zoning.",
+     "for": [
+      "businesses",
+      "everyone"
+     ],
+     "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
+     "requirements": [
+      "Notarized application form",
+      "Photocopy of land title or other proof of ownership",
+      "Certified true copy of latest tax declaration",
+      "Vicinity map of existing land uses",
+      "Site development plan",
+      "Environmental Compliance Certificate or Certificate of Non-Coverage (MENRE)",
+      "Zoning certification",
+      "Added documents for manufacturing projects"
+     ],
+     "fee": "See schedule of fees",
+     "time": "2 days, 2 hours and 35 minutes (excluding delays for nonconforming projects or added inspections)",
+     "where": "Technical Regulatory Service; ELUUDD; Provincial Offices"
+    },
+    {
+     "name": "Application for Preliminary Subdivision Development Plan (PSDP), Development Permit (DP), and Alteration Plan (AP)",
+     "summary": "Permits for planning, developing or altering a subdivision project.",
+     "for": [
+      "businesses"
+     ],
+     "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
+     "requirements": [
+      "Notarized application form",
+      "3 sets of subdivision plan, vicinity map and survey plan",
+      "Certified true copies of TCT, tax declaration and ownership proofs",
+      "Subdivision development plan and civil/sanitary works design signed by licensed professionals",
+      "ECC or CNC (MENRE)",
+      "Zoning certification",
+      "Other documents listed in the charter"
+     ],
+     "fee": null,
+     "time": "18 days, 3 hours and 20 minutes (excluding time for corrections or incomplete documents)",
+     "where": "Policy Development, Coordination and Regulation Division (PDCRD)"
+    },
+    {
+     "name": "Application for Certificate of Registration (CR) and License to Sell (LS)",
+     "summary": "Registration and license needed before selling subdivision lots or condominium units to the public.",
+     "for": [
+      "businesses"
+     ],
+     "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
+     "requirements": [
+      "Sworn registration statement",
+      "Certified true copy of TCT or OCT",
+      "Audited balance sheet",
+      "Articles of incorporation, by-laws and latest SEC report",
+      "Sample contract to sell",
+      "ECC or CNC",
+      "Zoning certification",
+      "MAFAR conversion order or exemption clearance",
+      "Other plans and permits listed in the charter"
+     ],
+     "fee": "CR: PHP 420 (socialized) or PHP 720 (economic); LS: PHP 24 (socialized) or PHP 72 (economic) per saleable lot, plus PHP 3 per sq m of housing area; inspection fee PHP 1,500",
+     "time": "6 days, 16 hours and 10 minutes (excluding delays from incomplete documents)",
+     "where": "PDCRD"
+    },
+    {
+     "name": "Application for Certificate of Completion (COC) of Subdivision Projects",
+     "summary": "Certifies a registered project was finished as approved, before turnover of roads, parks and open spaces.",
+     "for": [
+      "businesses"
+     ],
+     "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
+     "requirements": [
+      "Application letter",
+      "Homeowners association registration (if any)",
+      "Updated sales status report",
+      "Proof of TCTs of open spaces",
+      "Payment of processing fee",
+      "Other documents determined during evaluation"
+     ],
+     "fee": null,
+     "time": "6 days, 17 hours and 55 minutes",
+     "where": "PDCRD"
+    },
+    {
+     "name": "Application for Registration of Real Estate Brokers, Salespersons, Business Firms, and Dealers",
+     "summary": "Registration needed to sell subdivision lots or condominium units.",
+     "for": [
+      "businesses",
+      "workers"
+     ],
+     "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
+     "requirements": [
+      "Two recent 2x2 color photos",
+      "PRC certificate of registration and ID (brokers)",
+      "Cash bond or surety bond",
+      "Official receipt of filing fee",
+      "Specimen signature (new applicants)",
+      "For salespersons: letter of engagement signed by an MHSD-registered dealer or broker"
+     ],
+     "fee": "PHP 720 (broker, dealer, business firm); PHP 288 (salesperson)",
+     "time": "6 days, 12 hours and 45 minutes (excluding applicant delays)",
+     "where": "PDCRD; Administrative and Finance Division"
+    },
+    {
+     "name": "Application for Registration of Homeowners Associations",
+     "summary": "Gives a homeowners or neighborhood association legal personality.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
+     "requirements": [
+      "Notarized articles of incorporation signed by all incorporators",
+      "Notarized by-laws",
+      "Undertaking to change the name if needed",
+      "Certification on other associations",
+      "Authorization for a representative",
+      "Notarized General Information Sheet",
+      "List of members certified by the secretary",
+      "Other documents listed in the charter"
+     ],
+     "fee": "PHP 1,880",
+     "time": "11 days, 4 hours and 15 minutes (excluding applicant delays)",
+     "where": "PDCRD; Provincial Offices"
+    },
+    {
+     "name": "Preliminary Qualification for Application of Housing Loan Through Pag-IBIG",
+     "summary": "First step to apply for the ministry affordable housing program: checks whether you qualify for a Pag-IBIG housing loan.",
+     "for": [
+      "workers",
+      "everyone"
+     ],
+     "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
+     "requirements": [
+      "Application form (Housing Loan Section)",
+      "Certified true copy of proof of income, such as latest payslip",
+      "1 government-issued valid ID",
+      "1 company ID",
+      "Certified true copy of certificate of employment with compensation"
+     ],
+     "fee": "None",
+     "time": "2 hours and 15 minutes",
+     "where": "Housing and Human Settlements Division (HHSD); Provincial Offices"
+    },
+    {
+     "name": "Purchase of Bidding Documents",
+     "summary": "Sale of bidding documents to prospective bidders.",
+     "for": [
+      "businesses"
+     ],
+     "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
+     "requirements": [
+      "Letter of intent",
+      "Proof of authorization (SPA or secretary certificate)",
+      "Valid company or government ID",
+      "Bid documents purchase form",
+      "Order of payment",
+      "Official receipt"
+     ],
+     "fee": "Depends on the approved budget of the contract, up to PHP 75,000",
+     "time": "50 minutes",
+     "where": "Procurement Section"
+    },
+    {
+     "name": "Request for Contract Payment",
+     "summary": "Release of payment to contractors, consultants and suppliers.",
+     "for": [
+      "businesses"
+     ],
+     "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
+     "requirements": [
+      "Obligation request and status",
+      "Disbursement voucher",
+      "Sales invoice",
+      "Valid ID",
+      "Other documents depending on the type of contract"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "Office of the Minister; Planning and Development Division; Provincial Offices"
+    },
+    {
+     "name": "Submission and Request of Human Resource-Related Documents",
+     "summary": "Service records, certificates of employment, payslips and similar documents.",
+     "for": [
+      "workers"
+     ],
+     "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
+     "requirements": [
+      "Request form"
+     ],
+     "fee": "None",
+     "time": "1 day, 4 hours and 40 minutes",
+     "where": "Administrative and Finance Division, Human Resource Management Section"
+    }
+   ],
+   "sources": [
+    {
+     "label": "MHSD, Citizen's Charter Handbook, 1st edition, January 2025",
+     "url": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf"
+    },
+    {
+     "label": "MHSD official website, contact page",
+     "url": "https://mhsd.bangsamoro.gov.ph/contact-us/"
+    },
+    {
+     "label": "BARMM Official Website, SALAM Homes article, 2025",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/salam-homes-mhsd-awards-affordable-housing-to-barmm-employees/"
+    },
+    {
+     "label": "BARMM Official Website, free housing units article, 2025",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-builds-1707-free-housing-units-2586-more-underway/"
+    },
+    {
+     "label": "BARMM Official Website, 257 housing units article",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/257-barmm-funded-housing-units-ready-for-occupancy-ex-combatants-idps-among-target-beneficiaries/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-environment-natural-resources-and-energy",
+   "name": "Ministry of Environment, Natural Resources and Energy",
+   "kind": "ministry",
+   "acronym": "MENRE",
+   "parent": null,
+   "website": null,
+   "mandate": "The main agency for exploring, using, managing, conserving and protecting the region's environment, natural resources and energy sources.",
+   "contact": {
+    "address": "BARMM Compound, Rosary Heights VII, Cotabato City",
+    "phone": "(064) 421-1187",
+    "email": "menre@bangsamoro.gov.ph"
+   },
+   "programs": [
+    {
+     "name": "Integrated Bangsamoro Greening Program (IBGP)",
+     "summary": "Reforestation and rehabilitation program that hires former combatants as forest rangers and supports farming on government-allocated land.",
+     "for": [
+      "former-combatants",
+      "farmers"
+     ],
+     "source": "https://philippines.un.org/en/node/88707",
+     "how": null
+    },
+    {
+     "name": "E-Permitting System",
+     "summary": "Online filing for environmental permits and certificates from the Environment Management Services, with QR codes to verify each permit.",
+     "for": [
+      "businesses"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=5606",
+     "how": "Apply online through the E-Permitting link on the MENRE site or at the EMS office."
+    },
+    {
+     "name": "Bangsamoro Environmental Area Mapping System",
+     "summary": "Web map of environmental data, such as water bodies, for agencies and the public.",
+     "for": [
+      "everyone",
+      "researchers",
+      "local-governments"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=6016",
+     "how": null
+    }
+   ],
+   "services": [
+    {
+     "name": "Application for Environmental Compliance Certificate for Environmentally Critical Project",
+     "summary": "Permit required before starting a project classed as environmentally critical or located in an environmentally critical area.",
+     "for": [
+      "businesses"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/",
+     "requirements": [
+      "Project description and Environmental Impact and Management Plan",
+      "Site development plan or vicinity map signed by a registered professional",
+      "Project or plant layout signed by a registered professional",
+      "Schematic diagram of wastewater treatment facility, if applicable",
+      "Schematic diagram of air pollution control facility, if applicable",
+      "Organizational chart showing staff responsible for environmental concerns",
+      "Proof of authority over the project site (e.g., land title, lease agreement)",
+      "Payment of processing fees"
+     ],
+     "fee": null,
+     "time": "Varies: simple applications a few weeks, major projects several months",
+     "where": "Environment Management Services (EMS)"
+    },
+    {
+     "name": "Application for Environmental Compliance Certificate for Non-Environmentally Critical Project",
+     "summary": null,
+     "for": [
+      "businesses"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=470",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Environment Management Services (EMS)"
+    },
+    {
+     "name": "Application for Certificate of Non-Coverage (CNC)",
+     "summary": "Certifies that a small project, such as some small businesses, is not covered by the environmental impact system.",
+     "for": [
+      "businesses"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=470",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Environment Management Services (EMS)"
+    },
+    {
+     "name": "Application for Authority to Construct/Permit to Operate Air Pollution Source Equipment/Waste Water Discharge",
+     "summary": null,
+     "for": [
+      "businesses"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=470",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Environment Management Services (EMS)"
+    },
+    {
+     "name": "Application for the Issuance of Wood Processing Plant Permits",
+     "summary": null,
+     "for": [
+      "everyone"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=458",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Forest Management Services (FMS)"
+    },
+    {
+     "name": "Application for Community-Based Forest Management Agreement (CBFMA)",
+     "summary": null,
+     "for": [
+      "everyone"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=458",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Forest Management Services (FMS)"
+    },
+    {
+     "name": "Application for Certificate of Tree Plantation Ownership (CTPO)",
+     "summary": null,
+     "for": [
+      "everyone"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=458",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Forest Management Services (FMS)"
+    },
+    {
+     "name": "Application for Private Land Timber Permit (PLTP)",
+     "summary": null,
+     "for": [
+      "everyone"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=458",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Forest Management Services (FMS)"
+    },
+    {
+     "name": "Application for Certificate of Land Status",
+     "summary": null,
+     "for": [
+      "everyone"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=458",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Forest Management Services (FMS)"
+    },
+    {
+     "name": "Application for the Approval of Survey Plan (Isolated)",
+     "summary": null,
+     "for": [
+      "everyone"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=445",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Land Management Services (LMS)"
+    },
+    {
+     "name": "Application for Public Land Titling (Free Patent)",
+     "summary": "Application for a title to public land.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=445",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Land Management Services (LMS)"
+    },
+    {
+     "name": "Request for Certified Copy of Technical Description of Land",
+     "summary": null,
+     "for": [
+      "everyone"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=445",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Land Management Services (LMS)"
+    },
+    {
+     "name": "Request for Certified Copy of Blue Print",
+     "summary": null,
+     "for": [
+      "everyone"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=445",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Land Management Services (LMS)"
+    },
+    {
+     "name": "Application for Ore Transport Permits",
+     "summary": null,
+     "for": [
+      "businesses"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=482",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Mines and Geosciences Services (MGS)"
+    },
+    {
+     "name": "Application for Mineral Production Sharing Agreement (MPSA), Exploration Permit (EP), Small Scale Mining Permit (SSMP)",
+     "summary": null,
+     "for": [
+      "businesses"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=482",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Mines and Geosciences Services (MGS)"
+    },
+    {
+     "name": "Application for Certificate of Wildlife Registration (CWR)",
+     "summary": null,
+     "for": [
+      "everyone"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=2763",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Biodiversity, Ecosystems, Research and Development Services (BERDS)"
+    },
+    {
+     "name": "Application for Wildlife Farm Permit (WFP)",
+     "summary": null,
+     "for": [
+      "everyone"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=2763",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Biodiversity, Ecosystems, Research and Development Services (BERDS)"
+    },
+    {
+     "name": "Application for Local Transport of Wildlife, By-products and Derivatives Permit",
+     "summary": null,
+     "for": [
+      "everyone"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=2763",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Biodiversity, Ecosystems, Research and Development Services (BERDS)"
+    },
+    {
+     "name": "Application for Animal/Plant Exhibit using Wildlife",
+     "summary": null,
+     "for": [
+      "everyone"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=2763",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Biodiversity, Ecosystems, Research and Development Services (BERDS)"
+    },
+    {
+     "name": "Request for Conduct of Seminars/ Trainings on Environmental Protection and Conservation",
+     "summary": null,
+     "for": [
+      "everyone"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=2763",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Biodiversity, Ecosystems, Research and Development Services (BERDS)"
+    },
+    {
+     "name": "Request to Use the Services provided by the Ecosystems Research and Development Services Library (borrow reading materials/ books related Environmental concerns)",
+     "summary": null,
+     "for": [
+      "everyone"
+     ],
+     "source": "https://menre.bangsamoro.gov.ph/?page_id=2763",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Biodiversity, Ecosystems, Research and Development Services (BERDS)"
+    }
+   ],
+   "sources": [
+    {
+     "label": "MENRE, Mandate, Mission and Vision",
+     "url": "https://menre.bangsamoro.gov.ph/?page_id=770"
+    },
+    {
+     "label": "MENRE, Citizen's Charter page ('will be updated soon')",
+     "url": "https://menre.bangsamoro.gov.ph/?page_id=127"
+    },
+    {
+     "label": "MENRE, homepage FAQ on ECC and CNC",
+     "url": "https://menre.bangsamoro.gov.ph/"
+    },
+    {
+     "label": "MENRE, frontline service lists (EMS, FMS, LMS, MGS, BERDS)",
+     "url": "https://menre.bangsamoro.gov.ph/?page_id=470"
+    },
+    {
+     "label": "UN Philippines, WFP and BARMM ministries agreement on IBGP",
+     "url": "https://philippines.un.org/en/node/88707"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-trade-investments-and-tourism",
+   "name": "Ministry of Trade, Investments and Tourism",
+   "kind": "ministry",
+   "acronym": "MTIT",
+   "parent": null,
+   "website": "https://mtit.bangsamoro.gov.ph/",
+   "mandate": "The main regional agency for trade, investments and tourism; it supports private business, enforces fair trade and consumer laws, registers business names, and promotes tourism.",
+   "contact": {
+    "address": "Bangsamoro Government Center, Rosary Heights VII, Cotabato City",
+    "phone": "(064) 557 2819",
+    "email": "mtit@bangsamoro.gov.ph"
+   },
+   "programs": [
+    {
+     "name": "Barangay Micro Business Enterprise (BMBE) registration assistance",
+     "summary": "Orientation and on-site help for micro businesses with assets of up to PHP 3 million to register as BMBEs and get tax and other incentives.",
+     "for": [
+      "businesses"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/mtit-basilan-pushes-business-formalization-through-bmbe-registration/",
+     "how": "Through MTIT provincial offices and Negosyo Centers."
+    },
+    {
+     "name": "Business name registration",
+     "summary": "MTIT's Bureau of Trade and Industry handles business name registration, including through the online BNRS system; free registration has been offered during consumer fairs.",
+     "for": [
+      "businesses"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-msmes-consumers-adopt-digital-transformation-mtit/",
+     "how": null
+    },
+    {
+     "name": "Consumer protection and fair trade",
+     "summary": "Price monitoring, market checks, consumer education and complaint handling; activities include the Diskwento Caravan selling basic goods at suggested retail prices.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://mtit.bangsamoro.gov.ph/kb/how-does-the-bti-promote-fair-trade-practices-and-consumer-protection-in-barmm/",
+     "how": null
+    },
+    {
+     "name": "Trade advisory and business counseling",
+     "summary": "Advice, trainings and one-on-one business counseling for entrepreneurs through BTI regional offices.",
+     "for": [
+      "businesses",
+      "cooperatives"
+     ],
+     "source": "https://mtit.bangsamoro.gov.ph/kb/where-can-businesses-and-entrepreneurs-get-more-information-or-seek-assistance-from-the-bti/",
+     "how": "Visit an MTIT office."
+    },
+    {
+     "name": "Investment project registration and incentives",
+     "summary": "Investors who register projects can get income tax holidays, duty-free import of equipment and supplies, and simpler customs procedures.",
+     "for": [
+      "investors",
+      "businesses"
+     ],
+     "source": "https://mtit.bangsamoro.gov.ph/kb/how-can-businesses-and-investors-avail-of-incentives-and-support-from-the-boi/",
+     "how": "Register the investment project, with a project proposal and feasibility study."
+    },
+    {
+     "name": "Business support kits for delivery riders",
+     "summary": "Insulated bags, flasks and raincoats given to delivery riders in Cotabato City in October 2026.",
+     "for": [
+      "workers"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/over-100-bangsamoro-delivery-riders-receive-essential-business-kits-from-barmm/",
+     "how": null
+    },
+    {
+     "name": "Community-based tourism support",
+     "summary": "Training for community tourism projects and help marketing local crafts and products.",
+     "for": [
+      "businesses",
+      "cooperatives"
+     ],
+     "source": "https://mtit.bangsamoro.gov.ph/kb/how-does-the-bureau-of-tourism-support-local-communities-and-small-businesses-in-barmm/",
+     "how": null
+    }
+   ],
+   "services": [],
+   "sources": [
+    {
+     "label": "MTIT, About Us",
+     "url": "https://mtit.bangsamoro.gov.ph/about-us/"
+    },
+    {
+     "label": "MTIT, Knowledge base pages",
+     "url": "https://mtit.bangsamoro.gov.ph/kbtopic/trade-industry/"
+    },
+    {
+     "label": "BARMM Official Website, MTIT news, 2020-2026",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/mtit-basilan-pushes-business-formalization-through-bmbe-registration/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-transportation-and-communications",
+   "name": "Ministry of Transportation and Communications",
+   "kind": "ministry",
+   "acronym": "MOTC",
+   "parent": null,
+   "website": "https://motc.bangsamoro.gov.ph/",
+   "mandate": "Handles land, sea and air transport and communications in BARMM, through its sectoral offices for land transport, franchising, airports, civil aeronautics, maritime, ports and telecommunications; its mission is the safe, orderly, timely and economical movement of people, goods and information.",
+   "contact": {
+    "address": "BARMM Compound, Rosary Heights 7, Cotabato City",
+    "phone": "(064) 552-1539",
+    "email": null
+   },
+   "programs": [
+    {
+     "name": "BLTO Amnesty Program 2026",
+     "summary": "No penalty for late renewal of expired motor vehicle and motorcycle registration; owners paid only the MVUC, standard fees and other charges. It ran January 21 to 30, 2026 at all BLTO district and extension offices.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://motc.bangsamoro.gov.ph/blto-amnesty-program-2026-ngayong-bangsamoro-foundation-day/",
+     "how": "Owners went to any BLTO district or extension office in BARMM during the amnesty period."
+    },
+    {
+     "name": "QR-coded Official Receipts for vehicle registration",
+     "summary": "New BLTO official receipts carry a QR code that shows the registration record on the LTO-IT OR/CR verification site, since BLTO records are now linked to the national LTO database.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://motc.bangsamoro.gov.ph/magandang-balita-para-sa-mga-motorista-ng-barmm/",
+     "how": null
+    }
+   ],
+   "services": [
+    {
+     "name": "Driver's license, permit and conductor's license",
+     "summary": "Issued by the Bangsamoro Land Transportation Office (BLTO).",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://motc.bangsamoro.gov.ph/blto-barmm/",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Bangsamoro Land Transportation Office (BLTO)"
+    },
+    {
+     "name": "Motor vehicle registration",
+     "summary": "Registration of motor vehicles, including motorcycles and tricycles.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://motc.bangsamoro.gov.ph/blto-barmm/",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Bangsamoro Land Transportation Office (BLTO)"
+    },
+    {
+     "name": "Accreditation of driving schools and motor vehicle manufacturers, assemblers, importers and dealers",
+     "summary": null,
+     "for": [
+      "businesses"
+     ],
+     "source": "https://motc.bangsamoro.gov.ph/blto-barmm/",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Bangsamoro Land Transportation Office (BLTO)"
+    },
+    {
+     "name": "Franchise or provisional permit for public land transport",
+     "summary": "Routes and franchises for public land transport operators in BARMM.",
+     "for": [
+      "businesses"
+     ],
+     "source": "https://motc.bangsamoro.gov.ph/bltfrb-barmm/",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Bangsamoro Land Transportation Franchising and Regulatory Board (BLTFRB)"
+    },
+    {
+     "name": "Certificate of Public Convenience for airlines and air freight and cargo companies",
+     "summary": null,
+     "for": [
+      "businesses"
+     ],
+     "source": "https://motc.bangsamoro.gov.ph/cabb-barmm/",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Civil Aeronautics Board of the Bangsamoro (CABB)"
+    },
+    {
+     "name": "Domestic Seafarer's Identification and Record Book (SIRB)",
+     "summary": null,
+     "for": [
+      "workers"
+     ],
+     "source": "https://motc.bangsamoro.gov.ph/bmarina-barmm/",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Bangsamoro Maritime Industry Authority (BMARINA)"
+    },
+    {
+     "name": "Special Permit for domestic vessels on BIMP-EAGA routes",
+     "summary": "Temporary permit for domestic vessels on Brunei-Indonesia-Malaysia-Philippines routes.",
+     "for": [
+      "businesses"
+     ],
+     "source": "https://motc.bangsamoro.gov.ph/bmarina-barmm/",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Bangsamoro Maritime Industry Authority (BMARINA)"
+    },
+    {
+     "name": "Certificate of Public Convenience for communication utilities and broadcasting",
+     "summary": null,
+     "for": [
+      "businesses"
+     ],
+     "source": "https://motc.bangsamoro.gov.ph/btc-barmm/",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Bangsamoro Telecommunications Commission (BTC)"
+    },
+    {
+     "name": "Radio frequency permit",
+     "summary": "Permit to use radio frequencies, including amateur radio stations, in coordination with the NTC.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "source": "https://motc.bangsamoro.gov.ph/btc-barmm/",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Bangsamoro Telecommunications Commission (BTC)"
+    },
+    {
+     "name": "Radio operator examination and licensing",
+     "summary": null,
+     "for": [
+      "everyone"
+     ],
+     "source": "https://motc.bangsamoro.gov.ph/btc-barmm/",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Bangsamoro Telecommunications Commission (BTC)"
+    }
+   ],
+   "sources": [
+    {
+     "label": "MOTC official website, mandate and sectoral office pages",
+     "url": "https://motc.bangsamoro.gov.ph/sectoral-offices/"
+    },
+    {
+     "label": "MOTC, BLTO Amnesty Program 2026 post",
+     "url": "https://motc.bangsamoro.gov.ph/blto-amnesty-program-2026-ngayong-bangsamoro-foundation-day/"
+    },
+    {
+     "label": "MOTC, BLTO QR-coded OR post, 2026",
+     "url": "https://motc.bangsamoro.gov.ph/magandang-balita-para-sa-mga-motorista-ng-barmm/"
+    },
+    {
+     "label": "MOTC, contact page",
+     "url": "https://motc.bangsamoro.gov.ph/contact-us/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-science-and-technology",
+   "name": "Ministry of Science and Technology",
+   "kind": "ministry",
+   "acronym": "MOST",
+   "parent": null,
+   "website": "https://most.bangsamoro.gov.ph",
+   "mandate": "Sets direction for science, research, inventions and technology education in the region, and brings all sectors into planning and carrying out scientific and technological research.",
+   "contact": {
+    "address": "BARMM Complex, Cotabato City",
+    "phone": "(064) 421 8183",
+    "email": "most@bangsamoro.gov.ph"
+   },
+   "programs": [
+    {
+     "name": "Bangsamoro Assistance for Science Education (BASE) and BASE-Merit",
+     "summary": "College scholarships in science, technology, engineering and math for graduating senior high school students from BARMM.",
+     "for": [
+      "students"
+     ],
+     "source": "https://most.bangsamoro.gov.ph/scholarships-grants-2/",
+     "how": "Pass the MOST scholarship exam, then apply online or at a MOST provincial office."
+    },
+    {
+     "name": "Mujahidin Assistance for Science Education (MASE)",
+     "summary": "Educational grants for children of MILF/MNLF combatants taking science and technology courses, funded by Members of Parliament.",
+     "for": [
+      "students",
+      "former-combatants"
+     ],
+     "source": "https://most.bangsamoro.gov.ph/scholarships-grants-2/",
+     "how": "Submit the MASE form with enrollment, birth, unit-base and indigency certificates."
+    },
+    {
+     "name": "Bangsamoro Special Assistance for Science Education (BSASE)",
+     "summary": "Grants for enrolled college students in MOST priority science courses with at least 80% average, endorsed by a Member of Parliament.",
+     "for": [
+      "students"
+     ],
+     "source": "https://most.bangsamoro.gov.ph/scholarships-grants-2/",
+     "how": "Submit the BSASE form with enrollment, grades, birth, indigency papers and an MP recommendation letter."
+    },
+    {
+     "name": "Professional Assistance for Science Education (PASE)",
+     "summary": "Graduate study grants in science and technology for BARMM professionals up to 50 years old.",
+     "for": [
+      "workers",
+      "students"
+     ],
+     "source": "https://most.bangsamoro.gov.ph/scholarships-grants-2/",
+     "how": null
+    },
+    {
+     "name": "Bangsamoro International Graduate Study for Science and Technology (BIGAST)",
+     "summary": "Grants for Bangsamoro professionals to take graduate studies in advanced sciences abroad.",
+     "for": [
+      "workers"
+     ],
+     "source": "https://most.bangsamoro.gov.ph/scholarships-grants-2/",
+     "how": null
+    },
+    {
+     "name": "Technology Transfer and Commercialization Program (TTCP) and BEST",
+     "summary": "Helps small businesses adopt technology, with training, consultancy, packaging and label design, product testing and equipment help.",
+     "for": [
+      "businesses",
+      "cooperatives"
+     ],
+     "source": "https://most.bangsamoro.gov.ph/sts/",
+     "how": "Request a Technology Needs Assessment at a Provincial Science and Technology Center."
+    },
+    {
+     "name": "Bangsamoro Standards and Halal Testing Laboratories (BSHTL)",
+     "summary": "Paid testing of food and water (chemical, microbiology, halal/porcine DNA) and calibration of road tankers and measures.",
+     "for": [
+      "businesses",
+      "researchers",
+      "local-governments"
+     ],
+     "source": "https://most.bangsamoro.gov.ph/regional-standards-and-halal-testing-laboratory/",
+     "how": null
+    },
+    {
+     "name": "Science education support (STARBOOKS, lab equipment, teacher training)",
+     "summary": "Gives schools STARBOOKS offline digital libraries and lab equipment, trains science and math teachers, and runs the Innovathon and quiz olympiad.",
+     "for": [
+      "students",
+      "teachers"
+     ],
+     "source": "https://most.bangsamoro.gov.ph/science-education/",
+     "how": null
+    },
+    {
+     "name": "Bangsamoro Research and Development Program (BRDP)",
+     "summary": "Funds research through calls for proposals (start-up up to PHP 800,000, regular up to PHP 1.3M, big-ticket up to PHP 3M a year) and builds research networks.",
+     "for": [
+      "researchers"
+     ],
+     "source": "https://most.bangsamoro.gov.ph/research-development-and-innovation/",
+     "how": "Answer a MOST call for proposals."
+    },
+    {
+     "name": "Disaster Prevention and Mitigation Research and Extension Program",
+     "summary": "Deploys early warning stations and does disaster and climate research with local governments.",
+     "for": [
+      "local-governments"
+     ],
+     "source": "https://most.bangsamoro.gov.ph/drrm/",
+     "how": null
+    },
+    {
+     "name": "OneLab",
+     "summary": "DOST network that refers test samples to partner labs nationwide from one point of contact.",
+     "for": [
+      "businesses",
+      "researchers"
+     ],
+     "source": "https://most.bangsamoro.gov.ph/programs-and-services/",
+     "how": null
+    }
+   ],
+   "services": [
+    {
+     "name": "Scholarship and Grants Application",
+     "summary": "Application for the BASE and BASE-Merit college scholarships in science and technology.",
+     "for": [
+      "students"
+     ],
+     "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+     "requirements": [
+      "Scholarship application form (online e-Scholarship Application System or from MOST offices)",
+      "Parent's proof of income: ITR/BIR Form 1701 or 2316, OFW employment contract, BIR certificate of tax exemption, or barangay certificate of indigency",
+      "Form A personal information and Form B household information (online)",
+      "Form C certificate of good moral character from school",
+      "Form D1 STEM strand certification or Form D2 top 5% non-STEM certification from the principal",
+      "Form E statement of no other scholarship",
+      "Form F certificate of residency from the barangay",
+      "Form G statement of no pending immigrant application",
+      "One recent 1x1 ID picture",
+      "Form 138 (photocopy)",
+      "PSA birth certificate (photocopy)"
+     ],
+     "fee": "None",
+     "time": "5 days, 10 minutes",
+     "where": "Provincial Science and Technology Centers; Scholarships, Grants and Awards Section"
+    },
+    {
+     "name": "BASE/BASE-Merit Scholarship Examination",
+     "summary": "Qualifying exam for the BASE scholarships.",
+     "for": [
+      "students"
+     ],
+     "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+     "requirements": [
+      "Examination permit/password (claim at MOST provincial or regional office)",
+      "School ID or other valid document"
+     ],
+     "fee": "None",
+     "time": "3 hours",
+     "where": "Provincial Science and Technology Centers"
+    },
+    {
+     "name": "Awarding of Grants",
+     "summary": "Onboarding of qualified BASE/BASE-Merit grantees.",
+     "for": [
+      "students"
+     ],
+     "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+     "requirements": [
+      "Certificate of enrolment and study load",
+      "Student ID",
+      "Land Bank ATM account"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "Provincial Science and Technology Centers"
+    },
+    {
+     "name": "Issuance of Clearance / Certification",
+     "summary": "Clearance for graduated BASE/BASE-Merit grantees with service obligations.",
+     "for": [
+      "students",
+      "workers"
+     ],
+     "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+     "requirements": [
+      "Letter of request for clearance",
+      "Final clearance: service record or employer certificates equal to years of scholarship",
+      "Temporary clearance: guarantee letter from sponsoring agency, or notarized deed of undertaking with co-maker ITR and ID"
+     ],
+     "fee": null,
+     "time": "6 days",
+     "where": "Science Education, Scholarship, Grants and Awards Division"
+    },
+    {
+     "name": "Teacher Training",
+     "summary": "Training for science and math teachers in priority schools.",
+     "for": [
+      "teachers"
+     ],
+     "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+     "requirements": [
+      "List of schools (MBHTE)",
+      "School recognition or permit to operate from MBHTE",
+      "SF1 School Register",
+      "SF7 Inventory of School Personnel"
+     ],
+     "fee": "None",
+     "time": "10 days",
+     "where": "Concerned Provincial Science and Technology Center"
+    },
+    {
+     "name": "Provision of STARBOOKS (with/without computer provision and kiosk)",
+     "summary": "Installs the STARBOOKS offline science digital library.",
+     "for": [
+      "students",
+      "teachers",
+      "researchers"
+     ],
+     "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+     "requirements": [
+      "Letter of intent (1 original)",
+      "For software-only: computer server, terminal, network hub and cables meeting minimum specifications"
+     ],
+     "fee": "None",
+     "time": "101 days",
+     "where": "Science Education, Scholarship, Grants and Awards Division"
+    },
+    {
+     "name": "Provision of Laboratory Equipment/Apparatus",
+     "summary": "Gives lab equipment to selected schools.",
+     "for": [
+      "students",
+      "teachers"
+     ],
+     "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+     "requirements": [
+      "Letter of intent (1 original)"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "Concerned Provincial Science and Technology Center"
+    },
+    {
+     "name": "Conduct of Technology Needs Assessment (TNA) for MSMEs Upgrading",
+     "summary": "Site assessment of a business's technology needs, the first step for upgrading help.",
+     "for": [
+      "businesses",
+      "cooperatives"
+     ],
+     "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+     "requirements": [
+      "Request letter allowing MOST to assess the business",
+      "Signed TNA Form 1",
+      "Financial statements, business permit, registration (MTIT, MOLE or CSEA) and BIR-registered receipt/invoice"
+     ],
+     "fee": "None",
+     "time": "22 working days",
+     "where": "Provincial Science and Technology Centers"
+    },
+    {
+     "name": "Full-blown MSMEs Upgrading Project Proposal",
+     "summary": "Preparation of a funded technology upgrading proposal after the TNA.",
+     "for": [
+      "businesses",
+      "cooperatives"
+     ],
+     "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+     "requirements": [
+      "Signed technical request form (letter of intent)",
+      "TNA form",
+      "Sworn or audited financial statements, business permit, DTI/SEC/CDA registration and BIR-registered receipt/invoice",
+      "Bio-data and barangay clearance",
+      "Quotations from at least 3 suppliers",
+      "Sworn statement of no relation with the approving authority"
+     ],
+     "fee": "None",
+     "time": "21 working days",
+     "where": "Provincial Science and Technology Centers"
+    },
+    {
+     "name": "Request to Join Promotional Events as Exhibitor",
+     "summary": "Lets people or small businesses with a technology, product or expertise exhibit, present or train at MOST events.",
+     "for": [
+      "businesses",
+      "everyone"
+     ],
+     "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+     "requirements": [
+      "Letter of intent",
+      "Customer information form",
+      "CV, if presenter or trainer",
+      "List of products/services",
+      "Summary of topics, if presenter or trainer",
+      "For MSMEs: financial statements, business permit, DTI registration, BIR-registered receipt/invoice"
+     ],
+     "fee": "None",
+     "time": "3.5 working days",
+     "where": "Science and Technology Services Division, Technology Application and Promotion Section"
+    },
+    {
+     "name": "Laboratory Testing and Calibration Services",
+     "summary": "Testing of food and water samples and calibration at the BSHTL.",
+     "for": [
+      "businesses",
+      "researchers",
+      "local-governments"
+     ],
+     "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+     "requirements": [
+      "Nondisclosure form",
+      "Customer information sheet",
+      "Customer booking schedule",
+      "eULIMS registration",
+      "Calibration and analysis request form",
+      "Order of payment and official receipt"
+     ],
+     "fee": "Varies by test (e.g., PHP 550 per microbiology count, PHP 9,000 for porcine/halal verification)",
+     "time": null,
+     "where": "Integrated Laboratory Division (BSHTL)"
+    },
+    {
+     "name": "Bangsamoro Access to Step-Up Research (BANGSAMORO-AsSURe)",
+     "summary": "Research funding for research institutes, state colleges and higher education institutions.",
+     "for": [
+      "researchers"
+     ],
+     "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+     "requirements": [
+      "MOST R&D Form A detailed research proposal",
+      "MOST R&D Form B line-item budget",
+      "MOST R&D Form C project work plan"
+     ],
+     "fee": "None",
+     "time": "56 days, 20 minutes",
+     "where": "Research Development and Innovation Division"
+    },
+    {
+     "name": "Request for the Deployment of Early Warning Stations",
+     "summary": "Installs early warning stations for local governments and public institutions.",
+     "for": [
+      "local-governments"
+     ],
+     "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+     "requirements": [
+      "Request letter to the Minister",
+      "Hazard map",
+      "Postpaid SIM card",
+      "Security fence",
+      "Signed MOA"
+     ],
+     "fee": "None",
+     "time": "7 days",
+     "where": "Advance Science and Technology Division, DRR-CCA Section"
+    },
+    {
+     "name": "Request for Programs, Projects, and Services Information",
+     "summary": "Gives the public brochures and information on MOST programs and refers them to the right division.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+     "requirements": [
+      "Request form"
+     ],
+     "fee": "None",
+     "time": "4 hours, 10 minutes",
+     "where": "Information and Communication Section"
+    }
+   ],
+   "sources": [
+    {
+     "label": "MOST-BARMM, Citizen's Charter Handbook, 2023 1st Edition",
+     "url": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view"
+    },
+    {
+     "label": "MOST-BARMM, Transparency Seal",
+     "url": "https://most.bangsamoro.gov.ph/transparency"
+    },
+    {
+     "label": "MOST-BARMM, Mandate",
+     "url": "https://most.bangsamoro.gov.ph/mandate/"
+    },
+    {
+     "label": "MOST-BARMM, Scholarships & Grants",
+     "url": "https://most.bangsamoro.gov.ph/scholarships-grants-2/"
+    },
+    {
+     "label": "MOST-BARMM, Programs and Services",
+     "url": "https://most.bangsamoro.gov.ph/programs-and-services/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-finance-and-budget-and-management",
+   "name": "Ministry of Finance, and Budget and Management",
+   "kind": "ministry",
+   "acronym": "MFBM",
+   "parent": null,
+   "website": "https://mfbm.bangsamoro.gov.ph/",
+   "mandate": "Manages the Bangsamoro Government's money: prepares the annual budget, sets fiscal and tax policy, collects regional revenues, and keeps the government's funds.",
+   "contact": {
+    "address": "MFBM-BARMM Building, Bangsamoro Government Center, Gov. Gutierrez St., Cotabato City, 9600",
+    "phone": "(064) 557 2717",
+    "email": "mfbm@bangsamoro.gov.ph"
+   },
+   "programs": [],
+   "services": [
+    {
+     "name": "Release of LGU shares in national taxes, fees and charges",
+     "summary": "The Bangsamoro Treasury Office releases local governments' shares of taxes collected in the region.",
+     "for": [
+      "local-governments"
+     ],
+     "source": "https://mfbm.bangsamoro.gov.ph/bangsamoro-treasury-office-bto/faqs-bto/",
+     "requirements": [
+      "Affidavit (for first release and change of chief executive)",
+      "Approved appropriation ordinance for the shares previously released",
+      "Quarterly or annual report on trust fund use and project status",
+      "Active authorized government depository bank account with LBP, DBP or AIIB"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "Bangsamoro Treasury Office"
+    }
+   ],
+   "sources": [
+    {
+     "label": "MFBM, Mandate, Mission, Vision",
+     "url": "https://mfbm.bangsamoro.gov.ph/mandate-mission-vision/"
+    },
+    {
+     "label": "MFBM, Powers and Functions",
+     "url": "https://mfbm.bangsamoro.gov.ph/powers-and-functions/"
+    },
+    {
+     "label": "MFBM, Bangsamoro Treasury Office FAQs",
+     "url": "https://mfbm.bangsamoro.gov.ph/bangsamoro-treasury-office-bto/faqs-bto/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-labor-and-employment",
+   "name": "Ministry of Labor and Employment",
+   "kind": "ministry",
+   "acronym": "MOLE",
+   "parent": null,
+   "website": "https://mole.bangsamoro.gov.ph/",
+   "mandate": "The Bangsamoro Government agency for labor and employment: it promotes jobs, develops and uses the region's workforce, protects workers' welfare and working conditions, and keeps peace between workers and employers.",
+   "contact": {
+    "address": null,
+    "phone": "(064) 421-3347; +63 997 193 1330",
+    "email": null
+   },
+   "programs": [
+    {
+     "name": "Special Program for the Employment of Students (SPES)",
+     "summary": "Summer jobs for high school students and out-of-school youth; MOLE pays 60% of the minimum wage as a stipend and the partner employer pays 40%.",
+     "for": [
+      "students",
+      "out-of-school-youth"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/mole-presents-2021-priority-programs-to-tawi-tawi-constituents/",
+     "how": null
+    },
+    {
+     "name": "Government Internship Program (GIP)",
+     "summary": "Three months of work in government for fresh college graduates, with a monthly stipend of 75% of the minimum wage from MOLE and 25% from the partner office; there are also Hay-Atul Ulama and Kulliyah GIP versions.",
+     "for": [
+      "youth",
+      "job-seekers",
+      "ulama"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/mole-presents-2021-priority-programs-to-tawi-tawi-constituents/",
+     "how": null
+    },
+    {
+     "name": "Community Emergency Employment Program (CEEP)",
+     "summary": "Short-term paid community work; in a 2021 payout each worker received PHP 4,500 for 15 days of service.",
+     "for": [
+      "workers",
+      "families-in-need"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/tawi-tawi-beneficiaries-of-8-mole-programs-receive-stipends-cash-aids/",
+     "how": null
+    },
+    {
+     "name": "Bangsamoro Rural Employment thru Entrepreneurial Development (BREED)",
+     "summary": "PHP 25,000 starting capital for groups of informal-sector workers (farmers, fisherfolk, women, persons with disability and others), plus orientation on business and money management; MNLF and MILF combatants are encouraged to organize and apply.",
+     "for": [
+      "workers",
+      "farmers",
+      "fisherfolk",
+      "women",
+      "persons-with-disability",
+      "former-combatants"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/mole-presents-2021-priority-programs-to-tawi-tawi-constituents/",
+     "how": "Organize as a rural workers association and apply as a group."
+    },
+    {
+     "name": "Sagip Batang Manggagawa (SBM) / Bangsamoro Child Labor Sagip Program",
+     "summary": "Program against child labor; in a 2021 payout its beneficiaries received PHP 20,000 cash aid each.",
+     "for": [
+      "children",
+      "families-in-need"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/tawi-tawi-beneficiaries-of-8-mole-programs-receive-stipends-cash-aids/",
+     "how": null
+    },
+    {
+     "name": "Assistance Program for Repatriated, Abused and Distressed Overseas Bangsamoro Workers",
+     "summary": "Help for overseas Bangsamoro workers who were sent home, abused or in distress.",
+     "for": [
+      "overseas-workers"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/mole-extends-livelihood-labor-services-to-vendors-during-barmms-7th-anniversary/",
+     "how": "MOLE accepts applications, including at its service caravans."
+    },
+    {
+     "name": "SET-A-KART",
+     "summary": "Self-employment help for vulnerable vendors, such as street food vendors, to raise their income.",
+     "for": [
+      "workers",
+      "families-in-need"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/mole-extends-livelihood-labor-services-to-vendors-during-barmms-7th-anniversary/",
+     "how": null
+    },
+    {
+     "name": "Single-Entry Approach (SEnA)",
+     "summary": "Free legal advice on labor issues.",
+     "for": [
+      "workers"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/mole-extends-livelihood-labor-services-to-vendors-during-barmms-7th-anniversary/",
+     "how": null
+    },
+    {
+     "name": "Job fairs and MOLE job portal",
+     "summary": "Job fairs, special recruitment activities and an online job portal.",
+     "for": [
+      "job-seekers"
+     ],
+     "source": "https://mole.bangsamoro.gov.ph/mole-barmm-job-portal-project/",
+     "how": "Visit the MOLE job portal at moleportal.ph."
+    },
+    {
+     "name": "Minimum wage setting (Bangsamoro Tripartite Wages and Productivity Board)",
+     "summary": "Sets the regional minimum wage; Wage Order No. BARMM-04, signed June 26, 2025, added PHP 50 to the daily minimum wage of private sector workers.",
+     "for": [
+      "workers"
+     ],
+     "source": "https://mole.bangsamoro.gov.ph/",
+     "how": null
+    },
+    {
+     "name": "Pre-Employment Orientation Seminar (PEOS) and Pre-Departure Orientation Seminar (PDOS)",
+     "summary": "Orientation for people planning to work abroad and for those about to leave.",
+     "for": [
+      "overseas-workers"
+     ],
+     "source": "https://mole.bangsamoro.gov.ph/pre-employment-orientation-seminar-and-pre-departure-orientation-seminar-program/",
+     "how": null
+    }
+   ],
+   "services": [
+    {
+     "name": "Accreditation of recruitment agency",
+     "summary": null,
+     "for": [
+      "businesses"
+     ],
+     "source": "https://mole.bangsamoro.gov.ph/downloadable-forms-2/",
+     "requirements": [
+      "Application form for recruitment agency accreditation (downloadable)"
+     ],
+     "fee": null,
+     "time": null,
+     "where": null
+    },
+    {
+     "name": "Job fair permit",
+     "summary": null,
+     "for": [
+      "businesses",
+      "local-governments"
+     ],
+     "source": "https://mole.bangsamoro.gov.ph/downloadable-forms-2/",
+     "requirements": [
+      "Job fair permit application form (downloadable)"
+     ],
+     "fee": null,
+     "time": null,
+     "where": null
+    },
+    {
+     "name": "Evaluation and approval of Construction Safety and Health Program (CSHP)",
+     "summary": null,
+     "for": [
+      "businesses"
+     ],
+     "source": "https://mole.bangsamoro.gov.ph/downloadable-forms-2/",
+     "requirements": [
+      "Revised application form for CSHP evaluation and approval (downloadable)"
+     ],
+     "fee": null,
+     "time": null,
+     "where": null
+    },
+    {
+     "name": "Alien Employment Permit (AEP)",
+     "summary": "Work permit for foreign nationals.",
+     "for": [
+      "businesses",
+      "workers"
+     ],
+     "source": "https://mole.bangsamoro.gov.ph/downloadable-forms-2/",
+     "requirements": [
+      "AEP application form (downloadable)"
+     ],
+     "fee": null,
+     "time": null,
+     "where": null
+    },
+    {
+     "name": "Registration of establishments (Rule 1020) and workers associations",
+     "summary": null,
+     "for": [
+      "businesses",
+      "workers"
+     ],
+     "source": "https://mole.bangsamoro.gov.ph/downloadable-forms-2/",
+     "requirements": [
+      "Registry of establishment form (downloadable)"
+     ],
+     "fee": null,
+     "time": null,
+     "where": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "MOLE official website, mandate and program list",
+     "url": "https://mole.bangsamoro.gov.ph/vision-mission-and-mandate/"
+    },
+    {
+     "label": "MOLE, downloadable forms",
+     "url": "https://mole.bangsamoro.gov.ph/downloadable-forms-2/"
+    },
+    {
+     "label": "BARMM Official Website, MOLE 2021 priority programs article",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/mole-presents-2021-priority-programs-to-tawi-tawi-constituents/"
+    },
+    {
+     "label": "BARMM Official Website, Tawi-Tawi MOLE payout article, 2022",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/tawi-tawi-beneficiaries-of-8-mole-programs-receive-stipends-cash-aids/"
+    },
+    {
+     "label": "BARMM Official Website, MOLE services at BARMM 7th anniversary article",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/mole-extends-livelihood-labor-services-to-vendors-during-barmms-7th-anniversary/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-public-order-and-safety",
+   "name": "Ministry of Public Order and Safety",
+   "kind": "ministry",
+   "acronym": "MPOS",
+   "parent": null,
+   "website": "https://mpos.bangsamoro.gov.ph",
+   "mandate": "Responsible for public safety in the region; coordinates with the police, military and other agencies that keep public order, and works on peace building, reconciliation and unity.",
+   "contact": {
+    "address": "Givfrell building, Gov. Gutierrez Ave., Cotabato City, 9600",
+    "phone": "(064) 425 5514",
+    "email": "mpos@bangsamoro.gov.ph"
+   },
+   "programs": [
+    {
+     "name": "Alternative Dispute Resolution (ADR)",
+     "summary": "Helps local mediators and agencies settle rido (clan feuds), studies rido settlement, and supports the recovery of feud-hit communities.",
+     "for": [
+      "everyone",
+      "local-governments"
+     ],
+     "source": "https://mpos.bangsamoro.gov.ph/alternative-dispute-resolution-adr/",
+     "how": null
+    },
+    {
+     "name": "Peace Building Initiative (PBI)",
+     "summary": "Supports normalization, dialogue sessions, and vulnerable former combatants, widows and orphans; recognizes grassroots peace champions and involves youth in fellowship activities.",
+     "for": [
+      "former-combatants",
+      "youth",
+      "families-in-need"
+     ],
+     "source": "https://mpos.bangsamoro.gov.ph/peace-building-initiative-pbi/",
+     "how": null
+    },
+    {
+     "name": "SAFE BARMM",
+     "summary": "Gathers and analyzes conflict and safety data and trains communities for the early warning and early response network.",
+     "for": [
+      "everyone",
+      "local-governments"
+     ],
+     "source": "https://mpos.bangsamoro.gov.ph/safe-barmm/",
+     "how": null
+    },
+    {
+     "name": "Coordination with Law Enforcement Agencies in the Region (CLEAR)",
+     "summary": "Strengthens coordination between MPOS and law enforcement agencies and assists their peace and order work.",
+     "for": [
+      "local-governments"
+     ],
+     "source": "https://mpos.bangsamoro.gov.ph/coordination-with-law-enforcement-agencies-in-the-region-clear/",
+     "how": null
+    },
+    {
+     "name": "Popularization of Bangsamoro Historical Events (PBHE)",
+     "summary": "Holds commemorations of events in the history of the Bangsamoro struggle, inside and outside the region.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://mpos.bangsamoro.gov.ph/popularization-of-bangsamoro-historical-events-pbhe/",
+     "how": null
+    }
+   ],
+   "services": [],
+   "sources": [
+    {
+     "label": "MPOS-BARMM, Mandate",
+     "url": "https://mpos.bangsamoro.gov.ph/mandate/"
+    },
+    {
+     "label": "MPOS-BARMM, Powers and Functions",
+     "url": "https://mpos.bangsamoro.gov.ph/powers-and-functions/"
+    },
+    {
+     "label": "MPOS-BARMM, Contact Us",
+     "url": "https://mpos.bangsamoro.gov.ph/contact-us/"
+    },
+    {
+     "label": "MPOS-BARMM, Transparency Seal",
+     "url": "https://mpos.bangsamoro.gov.ph/transparency-seal-2/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-indigenous-peoples-affairs",
+   "name": "Ministry of Indigenous Peoples' Affairs",
+   "kind": "ministry",
+   "acronym": "MIPA",
+   "parent": null,
+   "website": null,
+   "mandate": "Protects and promotes the rights and well-being of non-Moro indigenous peoples in BARMM, in line with their beliefs, culture and institutions. It replaced the Office for Southern Cultural Communities.",
+   "contact": null,
+   "programs": [
+    {
+     "name": "Tawid Pangarap Program",
+     "summary": "Education aid of PHP 70,000 a year for indigenous students taking law or medicine.",
+     "for": [
+      "indigenous-peoples",
+      "students"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/20-ip-students-receive-postgrad-education-assistance-from-mipa/",
+     "how": null
+    },
+    {
+     "name": "Indigenous Peoples Victims Assistance Program (IPVAP)",
+     "summary": "Cash help (PHP 20,000 each in May 2026) for IP victims and witnesses to cover transport and other costs of court cases.",
+     "for": [
+      "indigenous-peoples"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/mipa-provides-legal-cash-aid-to-ip-victims-seeking-justice/",
+     "how": null
+    },
+    {
+     "name": "Legal assistance (Special Public Assistance and Legal Aid Division)",
+     "summary": "Free legal help for indigenous peoples in cases such as illegal detention, illegal recruitment, forced displacement and rape.",
+     "for": [
+      "indigenous-peoples"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/mipa-provides-legal-cash-aid-to-ip-victims-seeking-justice/",
+     "how": null
+    },
+    {
+     "name": "Ancestral Domain (Fusaka Inged) program",
+     "summary": "Information campaigns, community working groups and documentation to support IP ancestral domain claims.",
+     "for": [
+      "indigenous-peoples"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/state-of-the-ministrys-address-ulama-highlights-mipas-milestones-in-the-past-3-years/",
+     "how": null
+    },
+    {
+     "name": "Livelihood and Cooperative Development",
+     "summary": "Training and financial support for IP cooperatives (PHP 400,000 each to 8 cooperatives in 2021), and skills training such as coconut production.",
+     "for": [
+      "indigenous-peoples",
+      "cooperatives",
+      "farmers"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/state-of-the-ministrys-address-ulama-highlights-mipas-milestones-in-the-past-3-years/",
+     "how": null
+    },
+    {
+     "name": "IP Development Initiatives",
+     "summary": "Medical outreach, relief aid, disaster preparedness, financial and educational aid, and a basic literacy program for IP adults.",
+     "for": [
+      "indigenous-peoples",
+      "families-in-need"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/state-of-the-ministrys-address-ulama-highlights-mipas-milestones-in-the-past-3-years/",
+     "how": null
+    }
+   ],
+   "services": [
+    {
+     "name": "Accreditation of tribal marriage",
+     "summary": null,
+     "for": [
+      "indigenous-peoples"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/state-of-the-ministrys-address-ulama-highlights-mipas-milestones-in-the-past-3-years/",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": null
+    },
+    {
+     "name": "Certificate of affirmation or recognition",
+     "summary": null,
+     "for": [
+      "indigenous-peoples"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/state-of-the-ministrys-address-ulama-highlights-mipas-milestones-in-the-past-3-years/",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "BARMM Official Website, 'State of the Ministry's Address: Ulama highlights MIPA's milestones', 2022",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/state-of-the-ministrys-address-ulama-highlights-mipas-milestones-in-the-past-3-years/"
+    },
+    {
+     "label": "BARMM Official Website, MIPA news, 2026",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/20-ip-students-receive-postgrad-education-assistance-from-mipa/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-planning-and-development-authority",
+   "name": "Bangsamoro Planning and Development Authority",
+   "kind": "attached",
+   "acronym": "BPDA",
+   "parent": null,
+   "website": "https://bpda.bangsamoro.gov.ph/",
+   "mandate": "Created by BAA No. 6 as the planning and policy coordinating body for the Bangsamoro economy and development: it coordinates and monitors development plans and investment programs, helps ministries and LGUs develop projects, and handles research and statistics.",
+   "contact": {
+    "address": null,
+    "phone": null,
+    "email": "bpda@bangsamoro.gov.ph"
+   },
+   "programs": [
+    {
+     "name": "Bangsamoro Knowledge Portal",
+     "summary": "Free online library of development plans and reports, open data, the Bangsamoro Ecological Profile, statistics, hazard and thematic maps.",
+     "for": [
+      "everyone",
+      "researchers",
+      "local-governments"
+     ],
+     "source": "https://knowledge.bpda.bangsamoro.gov.ph/",
+     "how": "Visit knowledge.bpda.bangsamoro.gov.ph."
+    },
+    {
+     "name": "Bangsamoro Development Plan 2023-2028",
+     "summary": "The region's medium-term development plan; its midterm update is posted on the Knowledge Portal.",
+     "for": [
+      "everyone",
+      "local-governments"
+     ],
+     "source": "https://knowledge.bpda.bangsamoro.gov.ph/",
+     "how": null
+    },
+    {
+     "name": "BEDC Private Sector Organization Accreditation Portal",
+     "summary": "Online portal for accreditation of private sector organizations with the Bangsamoro Economic and Development Council (BEDC).",
+     "for": [
+      "businesses",
+      "cooperatives"
+     ],
+     "source": "https://psobarmm.org/",
+     "how": "Sign in at psobarmm.org."
+    }
+   ],
+   "services": [],
+   "sources": [
+    {
+     "label": "BPDA official website, mandate page",
+     "url": "https://bpda.bangsamoro.gov.ph/about-us/mandate"
+    },
+    {
+     "label": "Bangsamoro Knowledge Portal",
+     "url": "https://knowledge.bpda.bangsamoro.gov.ph/"
+    },
+    {
+     "label": "BEDC Private Sector Organization Accreditation Portal",
+     "url": "https://psobarmm.org/"
+    }
+   ]
+  },
+  {
+   "slug": "special-geographic-area-development-authority",
+   "name": "Special Geographic Area Development Authority",
+   "kind": "attached",
+   "acronym": "SGADA",
+   "parent": "ministry-of-the-interior-and-local-government",
+   "website": null,
+   "mandate": "Manages development in the Special Geographic Area (the 63 barangays in Cotabato province that joined BARMM): plans, carries out and coordinates programs and supervises the barangays, under the Ministry of the Interior and Local Government.",
+   "contact": null,
+   "programs": [
+    {
+     "name": "SGADA sa Barangay",
+     "summary": "Outreach days bringing free medical and dental check-ups, lab tests, circumcision, medicines, farm inputs, food packs and rice to SGA residents, with other BARMM ministries.",
+     "for": [
+      "families-in-need",
+      "farmers",
+      "patients"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/over-1k-residents-benefit-from-barmm-govts-outreach-program-in-sga",
+     "how": null
+    },
+    {
+     "name": "SGADA sa Munisipyo",
+     "summary": "One-day service caravans in SGA towns with medical consultations, eye screening, medicines, seedlings, worker association registration and food packs.",
+     "for": [
+      "everyone",
+      "families-in-need",
+      "workers"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/1043-individuals-benefit-from-one-day-barmm-convergence",
+     "how": null
+    }
+   ],
+   "services": [],
+   "sources": [
+    {
+     "label": "Bangsamoro Administrative Code (BAA 13), Title on MILG, Chapter 6, Sections 14-20, 2020",
+     "url": "https://bicto.bangsamoro.gov.ph/files/BAA-13.pdf"
+    },
+    {
+     "label": "BIO, SGADA sa Barangay outreach in Pikit Cluster 2",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/over-1k-residents-benefit-from-barmm-govts-outreach-program-in-sga"
+    },
+    {
+     "label": "BIO, SGADA sa Munisipyo convergence in Ligawasan",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/1043-individuals-benefit-from-one-day-barmm-convergence"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-pilgrimage-authority",
+   "name": "Bangsamoro Pilgrimage Authority",
+   "kind": "attached",
+   "acronym": "BPA",
+   "parent": "office-of-the-chief-minister",
+   "website": "https://bpa.bangsamoro.gov.ph/",
+   "mandate": "Manages Hajj and Umrah matters for pilgrims from the Bangsamoro and protects their rights while on pilgrimage, working with the National Commission on Muslim Filipinos.",
+   "contact": null,
+   "programs": [
+    {
+     "name": "Manasikul Hajj Program",
+     "summary": "Subsidized or free Hajj pilgrimages to Mecca for constituents, including former combatants (451 in 2026), with orientation and vaccination support.",
+     "for": [
+      "pilgrims",
+      "former-combatants"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/over-400-former-combatants-set-for-barmms-free-pilgrimage-to-mecca-in-may/",
+     "how": null
+    },
+    {
+     "name": "Hajj operations",
+     "summary": "With the NCMF, handles pilgrim registration, documentation, orientation and coordination with religious scholars for each Hajj season.",
+     "for": [
+      "pilgrims"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-ncmf-strengthen-partnership-to-upgrade-hajj-services/",
+     "how": null
+    }
+   ],
+   "services": [],
+   "sources": [
+    {
+     "label": "BARMM Official Website, 'Over 400 former combatants set for BARMM's free pilgrimage to Mecca in May', 2026",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/over-400-former-combatants-set-for-barmms-free-pilgrimage-to-mecca-in-may/"
+    },
+    {
+     "label": "BARMM Official Website, 'BARMM Gov't, NCMF strengthen partnership to upgrade Hajj services', 2026",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-ncmf-strengthen-partnership-to-upgrade-hajj-services/"
+    },
+    {
+     "label": "BARMM Official Website, 'BARMM explores Indonesia's effective pilgrimage practices', 2023",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-explores-indonesias-effective-pilgrimage-practices"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-darul-ifta",
+   "name": "Bangsamoro Darul-Ifta'",
+   "kind": "attached",
+   "acronym": "BDI",
+   "parent": null,
+   "website": "https://bdi.bangsamoro.gov.ph/",
+   "mandate": "The region's highest Islamic advisory body, led by the Bangsamoro Grand Mufti: it issues fatwas (religious rulings) and religious guidelines and gives Islamic guidance and scholarly consultation to the people of the Bangsamoro.",
+   "contact": null,
+   "programs": [
+    {
+     "name": "Fatwas and religious guidelines",
+     "summary": "Religious rulings on public questions, issued through the Fatwa Division; for example, Fatwa No. 5, Series of 2026 rules that a rape survivor cannot be forced to marry her attacker.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-fatwa-rejects-forced-marriage-in-rape-cases/",
+     "how": null
+    },
+    {
+     "name": "Moon sighting for Ramadhan and Eid",
+     "summary": "Monitoring teams look for the crescent moon, and the Grand Mufti announces the start and end of Ramadhan.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-mufti-confirms-march-21-eidl-fitr-in-ph-after-no-moon-sighting/",
+     "how": null
+    },
+    {
+     "name": "Ulama and da'i community peace advocates",
+     "summary": "Mobilizes Islamic scholars and da'is (1,051 so far) to share fatwas and religious guidance and promote peace in their communities.",
+     "for": [
+      "ulama"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-advances-peace-islamic-guidance-through-stronger-grassroots-engagement/",
+     "how": null
+    },
+    {
+     "name": "Zakat governance guidelines",
+     "summary": "Consultations, held in July 2026, to set common Shari'ah-compliant guidelines for collecting and distributing zakat in BARMM.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-govt-advances-standardized-zakat-governance-in-barmm/",
+     "how": null
+    }
+   ],
+   "services": [],
+   "sources": [
+    {
+     "label": "BARMM Official Website, State of the Ulama Address article, 2026",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-advances-peace-islamic-guidance-through-stronger-grassroots-engagement/"
+    },
+    {
+     "label": "BARMM Official Website, Fatwa No. 5 s. 2026 article",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-fatwa-rejects-forced-marriage-in-rape-cases/"
+    },
+    {
+     "label": "BARMM Official Website, Eid'l Fitr moon sighting article, 2026",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-mufti-confirms-march-21-eidl-fitr-in-ph-after-no-moon-sighting/"
+    },
+    {
+     "label": "BARMM Official Website, Zakat governance article, 2026",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-govt-advances-standardized-zakat-governance-in-barmm/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-human-rights-commission",
+   "name": "Bangsamoro Human Rights Commission",
+   "kind": "attached",
+   "acronym": "BHRC",
+   "parent": null,
+   "website": "https://bhrc.bangsamoro.gov.ph",
+   "mandate": "The region's independent human rights institution: promotes and protects human rights and, during armed conflict, upholds international humanitarian law (created under the Bangsamoro Organic Law and BAA 4).",
+   "contact": {
+    "address": "Bangsamoro Compound, Cotabato City",
+    "phone": "(064) 442 5261",
+    "email": "bhrc@bangsamoro.gov.ph"
+   },
+   "programs": [
+    {
+     "name": "Human Rights Cases Investigation",
+     "summary": "Investigates human rights violations and abuses in the region, on complaint or on its own, and some outside the region involving Bangsamoro people.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bhrc.bangsamoro.gov.ph/wp-content/uploads/2026/05/BHRC-ANNUAL-ACCOMPLISHMENT-REPORT-2024.pdf",
+     "how": "File a complaint at the BHRC regional office or a provincial office."
+    },
+    {
+     "name": "Financial and Legal Assistance to Victims",
+     "summary": "Cash aid and free lawyers for indigent victims of human rights violations or their families, with set amounts for injury, death, detention and other cases.",
+     "for": [
+      "families-in-need",
+      "everyone"
+     ],
+     "source": "https://bhrc.bangsamoro.gov.ph/wp-content/uploads/2024/11/Guidelines-on-Financial-and-Legal-Assistance-ADOPTED.pdf",
+     "how": "The provincial office assesses the case and gathers documents, then recommends the amount."
+    },
+    {
+     "name": "Jail and detention facility monitoring",
+     "summary": "Visits police and military camps, jails, youth homes and rehabilitation centers to check how people in custody are treated.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bhrc.bangsamoro.gov.ph/wp-content/uploads/2026/05/BHRC-ANNUAL-ACCOMPLISHMENT-REPORT-2024.pdf",
+     "how": null
+    },
+    {
+     "name": "Human Rights Education",
+     "summary": "Regular trainings that teach people their rights and how to seek redress, including Islamic-perspective muhadara sessions.",
+     "for": [
+      "everyone",
+      "ulama",
+      "youth"
+     ],
+     "source": "https://bhrc.bangsamoro.gov.ph/wp-content/uploads/2026/05/BHRC-ANNUAL-ACCOMPLISHMENT-REPORT-2024.pdf",
+     "how": null
+    },
+    {
+     "name": "Witness Protection Program",
+     "summary": "Gives security, shelter, relocation and financial help to witnesses in BHRC investigations and their families.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bhrc.bangsamoro.gov.ph/wp-content/uploads/2026/05/BHRC-ANNUAL-ACCOMPLISHMENT-REPORT-2024.pdf",
+     "how": null
+    },
+    {
+     "name": "Gender and Development Ombud and Children Ombud",
+     "summary": "Acts as the region's ombud for women's rights and children's rights.",
+     "for": [
+      "women",
+      "children"
+     ],
+     "source": "https://bhrc.bangsamoro.gov.ph/wp-content/uploads/2026/05/BHRC-ANNUAL-ACCOMPLISHMENT-REPORT-2024.pdf",
+     "how": null
+    },
+    {
+     "name": "Protection of Human Rights Defenders",
+     "summary": "Gives services and help to human rights defenders and presses duty bearers to keep them safe.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bhrc.bangsamoro.gov.ph/wp-content/uploads/2026/05/BHRC-ANNUAL-ACCOMPLISHMENT-REPORT-2024.pdf",
+     "how": null
+    }
+   ],
+   "services": [
+    {
+     "name": "Grant of Financial Assistance to Victims of Human Rights Violations",
+     "summary": "Cash aid to a survivor or, if the victim died, is incapacitated or disappeared, to the next of kin; claimant must be indigent.",
+     "for": [
+      "families-in-need"
+     ],
+     "source": "https://bhrc.bangsamoro.gov.ph/wp-content/uploads/2024/11/Guidelines-on-Financial-and-Legal-Assistance-ADOPTED.pdf",
+     "requirements": [
+      "Valid ID, or barangay certificate, or affidavit of 2 disinterested persons on identity",
+      "Proof of death, if the victim died",
+      "Medical certificate, if there are physical injuries",
+      "Proof of relationship (birth or marriage certificate, affidavits) if claimant is a relative",
+      "Investigation report of police or security forces, if any",
+      "Photographs, if any",
+      "Certificate of detention or judgment of acquittal, for unjust imprisonment",
+      "Other documents the case needs"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "BHRC Provincial Offices (Basilan, Lanao del Sur, Maguindanao, SGA and North Cotabato, Sulu, Tawi-Tawi)"
+    },
+    {
+     "name": "Issuance of Human Rights Clearance",
+     "summary": "Certification that a police, military or government employee has no pending human rights case, required for promotion.",
+     "for": [
+      "workers"
+     ],
+     "source": "https://bhrc.bangsamoro.gov.ph/wp-content/uploads/2026/05/BHRC-ANNUAL-ACCOMPLISHMENT-REPORT-2024.pdf",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": null
+    }
+   ],
+   "sources": [
+    {
+     "label": "BHRC, Mandates page",
+     "url": "https://bhrc.bangsamoro.gov.ph/bhrc-mandates/"
+    },
+    {
+     "label": "BHRC, About Us",
+     "url": "https://bhrc.bangsamoro.gov.ph/about-us/"
+    },
+    {
+     "label": "BHRC, Contact Us (regional and provincial offices)",
+     "url": "https://bhrc.bangsamoro.gov.ph/contact-us/"
+    },
+    {
+     "label": "BHRC, Guidelines on the Grant of Financial and Legal Assistance (adopted)",
+     "url": "https://bhrc.bangsamoro.gov.ph/wp-content/uploads/2024/11/Guidelines-on-Financial-and-Legal-Assistance-ADOPTED.pdf"
+    },
+    {
+     "label": "BHRC, Annual Accomplishment Report 2024",
+     "url": "https://bhrc.bangsamoro.gov.ph/wp-content/uploads/2026/05/BHRC-ANNUAL-ACCOMPLISHMENT-REPORT-2024.pdf"
+    },
+    {
+     "label": "BIO, Families of human rights abuse victims get financial support, 2023",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/families-of-human-rights-abuse-victims-get-financial-support-from-barmm/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-commission-for-the-preservation-of-cultural-heritage",
+   "name": "Bangsamoro Commission for the Preservation of Cultural Heritage",
+   "kind": "attached",
+   "acronym": "BCPCH",
+   "parent": null,
+   "website": "https://bcpch.bangsamoro.gov.ph/",
+   "mandate": "Writes the history of the Bangsamoro people and preserves their culture, arts, traditions and heritage, including registering cultural properties, running museums and libraries, and declaring historical sites.",
+   "contact": {
+    "address": "SKCC Building, Bangsamoro Government Center, Cotabato City",
+    "phone": "(064) 421-1470; (064) 552-0028",
+    "email": "bcpch@bangsamoro.gov.ph"
+   },
+   "programs": [
+    {
+     "name": "Bangsamoro Museum and Museum Educational Tour",
+     "summary": "A museum at the SKCC Building with artifacts, musical instruments and crafts from BARMM, open weekdays 9:00-12:00 and 1:00-4:00.",
+     "for": [
+      "everyone",
+      "students",
+      "travellers"
+     ],
+     "source": "https://bcpch.bangsamoro.gov.ph/museum-educational-tour/",
+     "how": "Fill out the Request for Museum Tour Form for group tours."
+    },
+    {
+     "name": "School of Living Traditions",
+     "summary": "Teaches young people traditional arts such as inaul weaving and water hyacinth handicraft from master artisans.",
+     "for": [
+      "youth"
+     ],
+     "source": "https://bcpch.bangsamoro.gov.ph/school-of-living-traditions/",
+     "how": null
+    },
+    {
+     "name": "Lakbay Kultura",
+     "summary": "A cultural education outreach for Grade 3 to 5 pupils on each province's people, customs and arts.",
+     "for": [
+      "children",
+      "students"
+     ],
+     "source": "https://bcpch.bangsamoro.gov.ph/lakbay-kultura/",
+     "how": null
+    },
+    {
+     "name": "Cultural Mapping",
+     "summary": "Workshops that train cultural workers to identify and record the customs of Moro, indigenous and settler communities.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bcpch.bangsamoro.gov.ph/cultural-mapping/",
+     "how": null
+    },
+    {
+     "name": "Cultural Heritage Documentation",
+     "summary": "Site visits to record landmarks, cultural objects and traditions in a database of BARMM cultural properties.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bcpch.bangsamoro.gov.ph/cultural-heritage-documentation/",
+     "how": null
+    },
+    {
+     "name": "Strengthening of Local Culture and Arts Councils (LCAC)",
+     "summary": "Helps LGUs set up culture and arts councils to run local cultural activities.",
+     "for": [
+      "local-governments"
+     ],
+     "source": "https://bcpch.bangsamoro.gov.ph/strengthening-of-lcac/",
+     "how": null
+    }
+   ],
+   "services": [
+    {
+     "name": "Traditional Leaders' Organization Certification",
+     "summary": "Certifies traditional leaders' organizations so they can take part in the election of the traditional leaders' sectoral representative in Parliament.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bcpch.bangsamoro.gov.ph/traditional-leaders-organization-certification/",
+     "requirements": [
+      "Application Form (Form No. TLO-001)",
+      "Other requirements in the BCPCH General Guidelines for traditional leaders"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "BCPCH"
+    },
+    {
+     "name": "Request for Museum Tour",
+     "summary": "Booking of a guided tour of the Bangsamoro Museum.",
+     "for": [
+      "students",
+      "teachers",
+      "everyone"
+     ],
+     "source": "https://bcpch.bangsamoro.gov.ph/forms-and-brochures/",
+     "requirements": [
+      "Request for Museum Tour Form"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "Bangsamoro Museum, SKCC Building, Bangsamoro Government Center, Cotabato City"
+    },
+    {
+     "name": "Registration of cultural property (PRECUP)",
+     "summary": "Listing of cultural properties in the Philippine Registry of Cultural Property.",
+     "for": [
+      "everyone",
+      "local-governments"
+     ],
+     "source": "https://bcpch.bangsamoro.gov.ph/forms-and-brochures/",
+     "requirements": [
+      "PRECUP Form 1 (immovable property), Form 2 (movable property) or Form 3 (intangible heritage), as applicable"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "BCPCH"
+    }
+   ],
+   "sources": [
+    {
+     "label": "BCPCH, Mandate",
+     "url": "https://bcpch.bangsamoro.gov.ph/mandate/"
+    },
+    {
+     "label": "BCPCH, Forms and Brochures",
+     "url": "https://bcpch.bangsamoro.gov.ph/forms-and-brochures/"
+    },
+    {
+     "label": "BCPCH, program pages",
+     "url": "https://bcpch.bangsamoro.gov.ph/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-women-commission",
+   "name": "Bangsamoro Women Commission",
+   "kind": "attached",
+   "acronym": "BWC",
+   "parent": null,
+   "website": "https://bwc.bangsamoro.gov.ph/",
+   "mandate": "Created by BAA No. 8 (2020) as the main policy, coordinating and monitoring body on women, gender and development in BARMM: it promotes and protects women's rights, works to end discrimination against women, and pushes for women's participation in governance.",
+   "contact": {
+    "address": "BWC Building, Bangsamoro Government Center, Rosary Heights VII, Cotabato City, BARMM 9600",
+    "phone": "(064) 421-2562",
+    "email": null
+   },
+   "programs": [
+    {
+     "name": "Kabuhayan ni Kaka Bai",
+     "summary": "Helps women set up and run sari-sari stores, with training in business and financial literacy, especially in remote areas.",
+     "for": [
+      "women"
+     ],
+     "source": "https://bwc.bangsamoro.gov.ph/kabuhayan-ni-kaka-bai/",
+     "how": null
+    },
+    {
+     "name": "Kalinga Alay sa Kababaihan",
+     "summary": "Health and social services (maternal care, family planning), livelihood training, education and leadership training, and advocacy on women's rights.",
+     "for": [
+      "women"
+     ],
+     "source": "https://bwc.bangsamoro.gov.ph/kalinga-alay-sa-kababaihan/",
+     "how": null
+    },
+    {
+     "name": "Barangay VAW Desk",
+     "summary": "Frontline desk in the barangay where women and children facing violence can report it in confidence and get crisis support and referral to police, social workers, health centers and legal aid.",
+     "for": [
+      "women",
+      "children"
+     ],
+     "source": "https://bwc.bangsamoro.gov.ph/barangay-vaw-desk/",
+     "how": "Go to the VAW desk in your barangay."
+    },
+    {
+     "name": "Bangsamoro GAD Resource Pool (BGRP)",
+     "summary": "Experts who give training, coaching and technical help on gender-responsive planning and policy to ministries, LGUs, CSOs and schools.",
+     "for": [
+      "local-governments"
+     ],
+     "source": "https://bwc.bangsamoro.gov.ph/barmm-gender-and-development-gad-resource-pool-bgrp/",
+     "how": null
+    },
+    {
+     "name": "Babae, Usap Tayo!",
+     "summary": "Radio, TV and social media program on women's rights and gender equality.",
+     "for": [
+      "everyone",
+      "women"
+     ],
+     "source": "https://bwc.bangsamoro.gov.ph/babae-usap-tayo/",
+     "how": null
+    },
+    {
+     "name": "18-Day Campaign to End Violence Against Women",
+     "summary": "Yearly campaign from November 25 to December 12 against violence against women.",
+     "for": [
+      "everyone",
+      "women"
+     ],
+     "source": "https://bwc.bangsamoro.gov.ph/18-day-campaign-to-end-violence-against-women/",
+     "how": null
+    }
+   ],
+   "services": [
+    {
+     "name": "Women Associations and Women-Serving Agencies Partnership Accreditation",
+     "summary": "Accreditation of women associations and women-serving agencies as partners of BWC and the Bangsamoro Government.",
+     "for": [
+      "women"
+     ],
+     "source": "https://bwc.bangsamoro.gov.ph/women-association-accreditation/",
+     "requirements": [
+      "Notarized application form for accreditation",
+      "Letter of intent and board resolution",
+      "Certificate of registration with a government registering agency",
+      "Articles of incorporation and by-laws",
+      "Organizational profile",
+      "Vicinity map and recent photo of the main office",
+      "Latest audited financial report",
+      "Previous year accomplishment report with photos",
+      "Endorsement by a BWC Commissioner"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "Bangsamoro Women Commission (in person, by registered mail or courier, or by email; hard copies must follow an email submission)"
+    },
+    {
+     "name": "Women Sectoral Organization Certification",
+     "summary": "Certification of women sectoral organizations, as required by the Bangsamoro Electoral Code (BAA 35).",
+     "for": [
+      "women"
+     ],
+     "source": "https://bwc.bangsamoro.gov.ph/women-sectoral-organization-certification/",
+     "requirements": [
+      "Notarized application form (name, address, contacts, officers, and at least 50 women members)",
+      "Constitution and by-laws",
+      "Organizational structure",
+      "Notarized list of members and their addresses",
+      "Track record of at least 3 verifiable projects for women in BARMM",
+      "Platform of government"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "Bangsamoro Women Commission (copy also sent to the Office of the Chief Minister)"
+    }
+   ],
+   "sources": [
+    {
+     "label": "BWC official website, legal basis and mandate",
+     "url": "https://bwc.bangsamoro.gov.ph/legal-basis-2/"
+    },
+    {
+     "label": "BWC, accreditation guidelines page",
+     "url": "https://bwc.bangsamoro.gov.ph/women-association-accreditation/"
+    },
+    {
+     "label": "BWC, women sectoral organization certification page",
+     "url": "https://bwc.bangsamoro.gov.ph/women-sectoral-organization-certification/"
+    },
+    {
+     "label": "BWC, program pages",
+     "url": "https://bwc.bangsamoro.gov.ph/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-youth-commission",
+   "name": "Bangsamoro Youth Commission",
+   "kind": "attached",
+   "acronym": "BYC",
+   "parent": "office-of-the-chief-minister",
+   "website": "https://byc.bangsamoro.gov.ph",
+   "mandate": "The Bangsamoro Government's main policy-making and coordinating body on youth affairs, covering people aged 15 to 40, and checks that ministries carry out youth programs (BAA 10).",
+   "contact": {
+    "address": "#003 Albert Einstein Road, Rosary Heights 7, Cotabato City, Philippines, 9600",
+    "phone": "(064) 421-7776",
+    "email": "byc@bangsamoro.gov.ph"
+   },
+   "programs": [
+    {
+     "name": "BYC Registration and Accreditation Program (BYC-ReAP)",
+     "summary": "Registers and accredits youth organizations; caravans guide groups through the requirements.",
+     "for": [
+      "youth"
+     ],
+     "source": "https://byc.bangsamoro.gov.ph/byc-media/uploads/2026/08/ANNUAL-ACCOMPLISHMENT-REPORT-CY-2025-1.pdf",
+     "how": "Register the organization through BYC-ReAP (bycreap.barmm.gov.ph); the Commission Proper approves."
+    },
+    {
+     "name": "Support to Accredited Youth Organizations (SAYO)",
+     "summary": "Trainings for youth organizations on leadership, conflict sensitivity and policy advocacy, to prepare them for accreditation.",
+     "for": [
+      "youth"
+     ],
+     "source": "https://byc.bangsamoro.gov.ph/byc-media/uploads/2026/08/ANNUAL-ACCOMPLISHMENT-REPORT-CY-2025-1.pdf",
+     "how": null
+    },
+    {
+     "name": "Bangsamoro Youth Volunteers Program (BYVP)",
+     "summary": "Places out-of-school youth from conflict-affected towns as volunteers in BARMM ministries, with learning sessions and mentoring.",
+     "for": [
+      "out-of-school-youth",
+      "youth"
+     ],
+     "source": "https://byc.bangsamoro.gov.ph/byc-media/uploads/2026/08/ANNUAL-ACCOMPLISHMENT-REPORT-CY-2025-1.pdf",
+     "how": null
+    },
+    {
+     "name": "Ideation Impact Challenge (IIC)",
+     "summary": "Seed grants for youth-led research and project proposals chosen through a call for proposals.",
+     "for": [
+      "youth",
+      "researchers"
+     ],
+     "source": "https://byc.bangsamoro.gov.ph/byc-media/uploads/2026/08/ANNUAL-ACCOMPLISHMENT-REPORT-CY-2025-1.pdf",
+     "how": "Answer the call for proposals when it opens."
+    },
+    {
+     "name": "Youth Leadership Conference (YLC)",
+     "summary": "Provincial conferences on youth leadership, civic engagement and peacebuilding.",
+     "for": [
+      "youth"
+     ],
+     "source": "https://byc.bangsamoro.gov.ph/byc-media/uploads/2026/08/ANNUAL-ACCOMPLISHMENT-REPORT-CY-2025-1.pdf",
+     "how": null
+    },
+    {
+     "name": "Provincial Youth Parliament",
+     "summary": "Parliament simulations where young people draft youth bills and resolutions.",
+     "for": [
+      "youth"
+     ],
+     "source": "https://byc.bangsamoro.gov.ph/byc-media/uploads/2026/08/ANNUAL-ACCOMPLISHMENT-REPORT-CY-2025-1.pdf",
+     "how": null
+    },
+    {
+     "name": "Peace and Environmental Youth Camp",
+     "summary": "Camps with talks on conflict resolution, environment and disaster preparedness, and tree and mangrove planting.",
+     "for": [
+      "youth"
+     ],
+     "source": "https://byc.bangsamoro.gov.ph/byc-media/uploads/2026/08/ANNUAL-ACCOMPLISHMENT-REPORT-CY-2025-1.pdf",
+     "how": null
+    },
+    {
+     "name": "TinDIG SK Capacity Development",
+     "summary": "Capacity building for Sangguniang Kabataan officials.",
+     "for": [
+      "youth",
+      "local-governments"
+     ],
+     "source": "https://byc.bangsamoro.gov.ph/byc-media/uploads/2026/08/ANNUAL-ACCOMPLISHMENT-REPORT-CY-2025-1.pdf",
+     "how": null
+    },
+    {
+     "name": "Bangsamoro Youth Hours (BYH)",
+     "summary": "Weekly one-hour online program every Thursday on BYC social media about active citizenship.",
+     "for": [
+      "youth"
+     ],
+     "source": "https://byc.bangsamoro.gov.ph/byc-media/uploads/2026/08/ANNUAL-ACCOMPLISHMENT-REPORT-CY-2025-1.pdf",
+     "how": null
+    }
+   ],
+   "services": [],
+   "sources": [
+    {
+     "label": "BYC, About Us",
+     "url": "https://byc.bangsamoro.gov.ph/about-us/"
+    },
+    {
+     "label": "BYC, Contact Us",
+     "url": "https://byc.bangsamoro.gov.ph/contact-us/"
+    },
+    {
+     "label": "BYC, Narrative Accomplishment Report CY 2025",
+     "url": "https://byc.bangsamoro.gov.ph/byc-media/uploads/2026/08/ANNUAL-ACCOMPLISHMENT-REPORT-CY-2025-1.pdf"
+    },
+    {
+     "label": "BYC, Transparency page",
+     "url": "https://byc.bangsamoro.gov.ph/transparency/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-sports-commission",
+   "name": "Bangsamoro Sports Commission",
+   "kind": "attached",
+   "acronym": "BSC",
+   "parent": null,
+   "website": "https://bsc.bangsamoro.gov.ph/",
+   "mandate": "Sets policy for and promotes, regulates and runs sports programs in the region, and uses sports as a tool for peace.",
+   "contact": {
+    "address": "Jupiter Street, 2nd Floor Carumba Building, Rosary Heights IX, Cotabato City",
+    "phone": null,
+    "email": "bsc@bangsamoro.gov.ph"
+   },
+   "programs": [
+    {
+     "name": "Grassroots Sports Clinics",
+     "summary": "Free multi-day clinics in sports such as table tennis, pencak silat, arnis, basketball and baseball for young athletes across the provinces.",
+     "for": [
+      "youth",
+      "children"
+     ],
+     "source": "https://bsc.bangsamoro.gov.ph/news/",
+     "how": null
+    },
+    {
+     "name": "Kaalalai sa Sports",
+     "summary": "Sports clinics run with partners, such as a pickleball clinic for madrasah students that gave out paddles and nets.",
+     "for": [
+      "youth",
+      "students"
+     ],
+     "source": "https://bsc.bangsamoro.gov.ph/news/",
+     "how": null
+    },
+    {
+     "name": "Sports Development Support Program",
+     "summary": "Sports equipment for clubs, schools, youth groups and communities, distributed through Members of Parliament.",
+     "for": [
+      "youth",
+      "students",
+      "everyone"
+     ],
+     "source": "https://bsc.bangsamoro.gov.ph/news/",
+     "how": null
+    },
+    {
+     "name": "Cash incentives for medalists",
+     "summary": "Cash rewards for Bangsamoro athletes and coaches who win medals in national competitions such as the Palarong Pambansa.",
+     "for": [
+      "youth",
+      "students"
+     ],
+     "source": "https://bsc.bangsamoro.gov.ph/news/",
+     "how": null
+    },
+    {
+     "name": "Bangsamoro Sports Mapping Action Research Talent Identification (B-SMART ID)",
+     "summary": "Trains local coaches and tests young athletes aged 8 to 12 to spot sports talent.",
+     "for": [
+      "children",
+      "teachers"
+     ],
+     "source": "https://bsc.bangsamoro.gov.ph/news/",
+     "how": null
+    },
+    {
+     "name": "Traditional and Indigenous Games",
+     "summary": "Indigenous Peoples Games, research and competitions to revive traditional Bangsamoro games.",
+     "for": [
+      "indigenous-peoples",
+      "youth"
+     ],
+     "source": "https://bsc.bangsamoro.gov.ph/news/",
+     "how": null
+    },
+    {
+     "name": "Bangsamoro Children's Games",
+     "summary": "Recreational games for children in remote areas during Children's Month.",
+     "for": [
+      "children"
+     ],
+     "source": "https://bsc.bangsamoro.gov.ph/news/",
+     "how": null
+    },
+    {
+     "name": "Bangsamoro Inter-Agency Sports Tournament",
+     "summary": "A yearly tournament for Bangsamoro government employees.",
+     "for": [
+      "workers"
+     ],
+     "source": "https://bsc.bangsamoro.gov.ph/news/",
+     "how": null
+    }
+   ],
+   "services": [],
+   "sources": [
+    {
+     "label": "BSC, Mission and Vision",
+     "url": "https://bsc.bangsamoro.gov.ph/mission-vission/"
+    },
+    {
+     "label": "BSC, News, 2025-2026",
+     "url": "https://bsc.bangsamoro.gov.ph/news/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-attorney-general-s-office",
+   "name": "Bangsamoro Attorney-General's Office",
+   "kind": "attached",
+   "acronym": "BAGO",
+   "parent": "office-of-the-chief-minister",
+   "website": "https://bago.bangsamoro.gov.ph/",
+   "mandate": "The chief legal counsel of the Bangsamoro Government: it gives legal opinions and advice, reviews contracts and official documents, and represents the government in court cases and mediation.",
+   "contact": {
+    "address": "Governor Gutierrez Avenue, Rosary Heights VII, Bangsamoro Government Center, Cotabato City",
+    "phone": "(064) 552-1053",
+    "email": null
+   },
+   "programs": [
+    {
+     "name": "Kape, Pandesal at Usapang Legal",
+     "summary": "Free legal advice and consultation, notarization and Shari'ah consultation offered at public events, such as Labor Day (May 2026) and the Civil Service anniversary (September 2026) in Cotabato City.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bago.bangsamoro.gov.ph/content/news/Kape,%20Pandesal%20at%20Usapang%20Legal%202026/",
+     "how": "Walk in at the event venue when BAGO holds it."
+    }
+   ],
+   "services": [
+    {
+     "name": "Request for Legal Opinion",
+     "summary": "Legal opinion on matters brought by BARMM offices.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "requirements": [
+      "Request letter or endorsement letter",
+      "Case briefer or background",
+      "Other relevant documents, such as the ministry's initial opinion"
+     ],
+     "fee": "None",
+     "time": "15 days and 40 minutes",
+     "where": "Legal Research and Opinion Division; Litigation Division; Intergovernmental Relations Division"
+    },
+    {
+     "name": "Request for Legal Consultation",
+     "summary": "Legal advice on matters involving the interest of the Bangsamoro Government.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "requirements": [
+      "Request letter or endorsement letter",
+      "Case briefer or background",
+      "Other relevant documents"
+     ],
+     "fee": "None",
+     "time": "4 days, 3 hours and 30 minutes",
+     "where": "Legal Research and Opinion Division; Litigation Division; Intergovernmental Relations Division"
+    },
+    {
+     "name": "Request for the Review of Contracts, Agreements and Other Legal Documents of the Chief Minister",
+     "summary": "Review of MOAs, MOUs, executive orders and other documents for the Chief Minister and ministers.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "requirements": [
+      "Request letter or endorsement letter",
+      "Copy of the document to be reviewed",
+      "Other relevant documents"
+     ],
+     "fee": "None",
+     "time": "15 days and 40 minutes",
+     "where": "Legal Research and Opinion Division; Litigation Division; Intergovernmental Relations Division"
+    },
+    {
+     "name": "Regular Judicial and Quasi-Judicial Services",
+     "summary": "Representation of the Bangsamoro Government in court, and mediation of disputes not yet filed in court.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "requirements": [
+      "Request letter or endorsement letter",
+      "Case briefer or background",
+      "Other documents such as court pleadings and orders"
+     ],
+     "fee": "None",
+     "time": "1 hour and 20 minutes",
+     "where": "Litigation Division"
+    },
+    {
+     "name": "Request for Certificate of Tax Withheld (BIR Form 2316)",
+     "summary": "For current, retired and resigned BAGO employees.",
+     "for": [
+      "workers"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "requirements": [
+      "Request form"
+     ],
+     "fee": "None",
+     "time": "40 minutes",
+     "where": "Administrative and Finance Office"
+    },
+    {
+     "name": "Request for Certificate of Last Salary",
+     "summary": "For current, retired and resigned BAGO employees.",
+     "for": [
+      "workers"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "requirements": [
+      "Request form"
+     ],
+     "fee": "None",
+     "time": "50 minutes",
+     "where": "Administrative and Finance Office"
+    },
+    {
+     "name": "Request for Certificate of Employment and Compensation",
+     "summary": "For current, retired and resigned BAGO employees.",
+     "for": [
+      "workers"
+     ],
+     "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
+     "requirements": [
+      "Request form"
+     ],
+     "fee": "None",
+     "time": "40 minutes",
+     "where": "Administrative and Finance Office"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Office of the Chief Minister, Citizen's Charter 1st Edition 2023 (BAGO section)",
+     "url": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf"
+    },
+    {
+     "label": "BAGO official website, Kape, Pandesal at Usapang Legal 2026",
+     "url": "https://bago.bangsamoro.gov.ph/content/news/Kape,%20Pandesal%20at%20Usapang%20Legal%202026/"
+    },
+    {
+     "label": "BAGO official website, contact page",
+     "url": "https://bago.bangsamoro.gov.ph/content/contact/"
+    }
+   ]
+  },
+  {
+   "slug": "cooperatives-and-social-enterprise-authority",
+   "name": "Cooperatives and Social Enterprise Authority",
+   "kind": "attached",
+   "acronym": "CSEA",
+   "parent": "office-of-the-chief-minister",
+   "website": "https://csea.bangsamoro.gov.ph",
+   "mandate": "The only Bangsamoro agency that registers cooperatives and social enterprises; gives them technical guidance, financial help and other services so they grow into viable businesses that reduce poverty.",
+   "contact": {
+    "address": "JICA Building, BCG, Gov. Gutierrez Ave., Brgy. RH XII, Cotabato City 9600",
+    "phone": null,
+    "email": "csea@bangsamoro.gov.ph"
+   },
+   "programs": [
+    {
+     "name": "Social Enterprise Tabang sa Usbong Pagbangon (SET-UP) Cash-for-Work Program",
+     "summary": "Cash aid to sole proprietors, associations and cooperatives whose livelihoods were hit by calamities or other events.",
+     "for": [
+      "businesses",
+      "cooperatives",
+      "families-in-need"
+     ],
+     "source": "https://csea.bangsamoro.gov.ph/csea-barmm-cash-for-work-assistance-under-set-up-program/",
+     "how": null
+    },
+    {
+     "name": "Cooperative pre-registration seminars",
+     "summary": "Teaches groups, such as coconut farmers, about cooperative rules, governance and legal requirements before they register.",
+     "for": [
+      "farmers",
+      "cooperatives"
+     ],
+     "source": "https://csea.bangsamoro.gov.ph/csea-barmm-strengthens-coconut-farming-communities-through-cooperative-pre-registration-seminars/",
+     "how": null
+    },
+    {
+     "name": "E-Coop Registration",
+     "summary": "Online registration for cooperatives.",
+     "for": [
+      "cooperatives"
+     ],
+     "source": "https://csea.bangsamoro.gov.ph/database/reg/index.html",
+     "how": "Use the E-Coop Registration link under Online Services on the CSEA site."
+    }
+   ],
+   "services": [
+    {
+     "name": "Registration of Proposed Cooperative",
+     "summary": null,
+     "for": [
+      "cooperatives"
+     ],
+     "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
+     "requirements": [
+      "Articles of Cooperation",
+      "By-laws of Cooperative with economic survey"
+     ],
+     "fee": "PHP 510",
+     "time": "10 days",
+     "where": "Cooperative Development Specialists; Regional Administrator"
+    },
+    {
+     "name": "Regular Amendments for Capitalization",
+     "summary": "Amendment of articles and by-laws for new capitalization; fee of 1/10 of 1% of the new capitalization.",
+     "for": [
+      "cooperatives"
+     ],
+     "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
+     "requirements": [
+      "General Assembly resolution",
+      "Board of Directors and Secretary certificate",
+      "Copy of Articles of Cooperation and By-laws to be amended"
+     ],
+     "fee": "PHP 300",
+     "time": "10 days",
+     "where": "Cooperative Development Specialists; Regional Administrator"
+    },
+    {
+     "name": "Cooperative Consolidated According to Volume of Business",
+     "summary": null,
+     "for": [
+      "cooperatives"
+     ],
+     "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
+     "requirements": [
+      "Monitoring forms"
+     ],
+     "fee": "None",
+     "time": "5 days",
+     "where": "Cooperative Development Specialists"
+    },
+    {
+     "name": "Cooperative Supervised, Inspected and Monitored",
+     "summary": "Monitoring forms sent to cooperatives and inspection of the board of directors.",
+     "for": [
+      "cooperatives"
+     ],
+     "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
+     "requirements": [
+      "Monitoring forms"
+     ],
+     "fee": "None",
+     "time": "2 days",
+     "where": "Cooperative Development Specialists"
+    },
+    {
+     "name": "Annual Reports and Audited Financial Reports and General Information Sheet",
+     "summary": "Cooperatives file their annual report, audited financial report and list of officers.",
+     "for": [
+      "cooperatives"
+     ],
+     "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
+     "requirements": [
+      "Prescribed CDA form",
+      "Audited financial report",
+      "General information sheet listing officers, committees and management staff"
+     ],
+     "fee": "None",
+     "time": "5 days",
+     "where": "Cooperative Development Specialists"
+    },
+    {
+     "name": "Amount of Fines and Penalties Collected",
+     "summary": null,
+     "for": [
+      "cooperatives"
+     ],
+     "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
+     "requirements": [
+      "Monitoring forms"
+     ],
+     "fee": "None",
+     "time": "5 days",
+     "where": "Cooperative Development Specialists"
+    },
+    {
+     "name": "Issuance of Certificate of Compliance",
+     "summary": null,
+     "for": [
+      "cooperatives"
+     ],
+     "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
+     "requirements": [
+      "Cooperative Annual Performance Report (CAPR)",
+      "BOD resolution",
+      "Audited annual report",
+      "Bond of accountable officers",
+      "Action plan"
+     ],
+     "fee": "PHP 100",
+     "time": "5 days",
+     "where": "Cooperative Development Specialists; Regional Administrator"
+    },
+    {
+     "name": "Mediation and Reconciliation and Conference",
+     "summary": "Mediation of internal disputes in a cooperative or between cooperatives; unresolved cases go to the municipal cooperative council and regional mediation committee.",
+     "for": [
+      "cooperatives"
+     ],
+     "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
+     "requirements": [
+      "Cooperative resolution stating the internal problem"
+     ],
+     "fee": "None",
+     "time": "5 days",
+     "where": "CDS Mediation Team; Regional Administrator"
+    },
+    {
+     "name": "Promotion and Project Development Assistance",
+     "summary": null,
+     "for": [
+      "cooperatives"
+     ],
+     "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
+     "requirements": [
+      "Monitoring forms"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": null
+    },
+    {
+     "name": "Coop Clustered According to Volume of Business Size",
+     "summary": null,
+     "for": [
+      "cooperatives"
+     ],
+     "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
+     "requirements": [
+      "Monitoring forms"
+     ],
+     "fee": "None",
+     "time": "3 days",
+     "where": "Cooperative Development Specialists"
+    }
+   ],
+   "sources": [
+    {
+     "label": "CSEA, Citizen's Charter: List of Frontline Services (image), 2025",
+     "url": "https://csea.bangsamoro.gov.ph/citizens-charter-2/"
+    },
+    {
+     "label": "CSEA, Contacts",
+     "url": "https://csea.bangsamoro.gov.ph/contacts/"
+    },
+    {
+     "label": "Bangsamoro Administrative Code (BAA 13), Sections 57-65",
+     "url": "https://bicto.bangsamoro.gov.ph/files/BAA-13.pdf"
+    },
+    {
+     "label": "CSEA, SET-UP Cash-for-Work payout, 2026",
+     "url": "https://csea.bangsamoro.gov.ph/csea-barmm-cash-for-work-assistance-under-set-up-program/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-information-office",
+   "name": "Bangsamoro Information Office",
+   "kind": "attached",
+   "acronym": "BIO",
+   "parent": "office-of-the-chief-minister",
+   "website": null,
+   "mandate": "The communications arm and information center of the Bangsamoro Government; it promotes transparency and builds a network of information officers across ministries.",
+   "contact": null,
+   "programs": [
+    {
+     "name": "Radyo Bangsamoro",
+     "summary": "An hour-long radio news and discussion program of the Bangsamoro Government, also streamed on Facebook.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bangsamoro.gov.ph/radyo-bangsamoro/watch-radyo-bangsamoro-may-15-2021/",
+     "how": null
+    },
+    {
+     "name": "Usapang Bangsamoro",
+     "summary": "A regular press briefing for national and international media on Bangsamoro Government updates.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-info-office-launches-usapang-bangsamoro-partners-with-cbcs-for-intensified-info-dissemination/",
+     "how": null
+    }
+   ],
+   "services": [],
+   "sources": [
+    {
+     "label": "BARMM Official Website, 'BARMM creates League of Information Officers', 2022",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-creates-league-of-information-officers-to-intensify-info-dissemination/"
+    },
+    {
+     "label": "BARMM Official Website, 'BARMM info office launches Usapang Bangsamoro'",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-info-office-launches-usapang-bangsamoro-partners-with-cbcs-for-intensified-info-dissemination/"
+    }
+   ]
+  },
+  {
+   "slug": "development-academy-of-the-bangsamoro",
+   "name": "Development Academy of the Bangsamoro",
+   "kind": "attached",
+   "acronym": "DAB",
+   "parent": "office-of-the-chief-minister",
+   "website": "https://dab.bangsamoro.gov.ph/",
+   "mandate": "The training and research arm of the Bangsamoro Government for its offices, officials and employees; its Center of Training and Assessment is recognized by the Civil Service Commission as a learning and development institution.",
+   "contact": null,
+   "programs": [
+    {
+     "name": "Mandatory Onboarding Training (MOT)",
+     "summary": "Required onboarding training for new BARMM government employees, covering Bangsamoro history, moral governance, values and basic office skills.",
+     "for": [
+      "workers"
+     ],
+     "source": "https://dab.bangsamoro.gov.ph/6363-2/",
+     "how": null
+    },
+    {
+     "name": "CSC-recognized trainings",
+     "summary": "Trainings run by DAB count toward the training requirements of applicants for government service, under Civil Service Commission rules.",
+     "for": [
+      "workers",
+      "job-seekers"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/csc-recognizes-devt-academy-of-the-bangsamoro-as-ld-institution-in-ph/",
+     "how": null
+    },
+    {
+     "name": "Training of Trainers and Pool of External Experts",
+     "summary": "Calls for experienced trainers to join DAB's pool of experts for the onboarding program; the last call is closed.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://dab.bangsamoro.gov.ph/6441-2/",
+     "how": null
+    }
+   ],
+   "services": [],
+   "sources": [
+    {
+     "label": "DAB official website, DAB in Brief",
+     "url": "https://dab.bangsamoro.gov.ph/dab-in-brief/"
+    },
+    {
+     "label": "DAB, onboarding training post, 2024",
+     "url": "https://dab.bangsamoro.gov.ph/6363-2/"
+    },
+    {
+     "label": "BARMM Official Website, CSC recognizes DAB article",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/csc-recognizes-devt-academy-of-the-bangsamoro-as-ld-institution-in-ph/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-information-and-communications-technology-office",
+   "name": "Bangsamoro Information and Communications Technology Office",
+   "kind": "attached",
+   "acronym": "BICTO",
+   "parent": "office-of-the-chief-minister",
+   "website": "https://bicto.bangsamoro.gov.ph",
+   "mandate": "Leads ICT planning, policy, infrastructure and e-government services for the Bangsamoro Government, and runs its government domain, web hosting and email.",
+   "contact": {
+    "address": "Bangsamoro Government Center, Gov. Gutierrez Ave., Cotabato City",
+    "phone": null,
+    "email": "bicto@bangsamoro.gov.ph"
+   },
+   "programs": [
+    {
+     "name": "BangsaNet Free Wi-Fi Program",
+     "summary": "Free satellite and fiber internet at public places such as schools, rural health units and plazas in underserved communities.",
+     "for": [
+      "everyone",
+      "students",
+      "patients"
+     ],
+     "source": "https://bicto.bangsamoro.gov.ph/pages/free-wifi.html",
+     "how": null
+    },
+    {
+     "name": "Digital Literacy Program",
+     "summary": "ICT trainings for BARMM residents, from basic digital skills to advanced web development.",
+     "for": [
+      "everyone",
+      "youth",
+      "students",
+      "teachers",
+      "job-seekers"
+     ],
+     "source": "https://bicto.bangsamoro.gov.ph/pages/digital-literacy.html",
+     "how": "Watch BICTO announcements, then send your name, affiliation, contact details and chosen training through the Support Portal or by email."
+    },
+    {
+     "name": "BICTO On-Air",
+     "summary": "Public affairs show on Facebook Live about ICT programs and local digital creators.",
+     "for": [
+      "everyone"
+     ],
+     "source": "https://bicto.bangsamoro.gov.ph/pages/bicto-on-air.html",
+     "how": "Follow facebook.com/BangsamoroICTO."
+    },
+    {
+     "name": "Bangsamoro Support Portal (BGOV Support)",
+     "summary": "Help desk where BARMM offices file and track ICT requests for email, hosting, domains, video calls and security.",
+     "for": [
+      "local-governments"
+     ],
+     "source": "https://bicto.bangsamoro.gov.ph/pages/bgov-support.html",
+     "how": "Create a ticket at support.bangsamoro.gov.ph."
+    },
+    {
+     "name": "Cybersecurity Services",
+     "summary": "Web application firewall and incident coordination for official bangsamoro.gov.ph websites.",
+     "for": [
+      "local-governments"
+     ],
+     "source": "https://bicto.bangsamoro.gov.ph/pages/cybersecurity.html",
+     "how": null
+    }
+   ],
+   "services": [],
+   "sources": [
+    {
+     "label": "BICTO, Citizen's Charter page ('To Be Updated'), 2026",
+     "url": "https://bicto.bangsamoro.gov.ph/pages/citizens-charter.html"
+    },
+    {
+     "label": "BICTO, Mandate, Powers and Functions",
+     "url": "https://bicto.bangsamoro.gov.ph/pages/mandate-powers-functions.html"
+    },
+    {
+     "label": "BICTO, Contact Us",
+     "url": "https://bicto.bangsamoro.gov.ph/pages/contact-us.html"
+    },
+    {
+     "label": "Bangsamoro Administrative Code (BAA 13), Sections 66-67",
+     "url": "https://bicto.bangsamoro.gov.ph/files/BAA-13.pdf"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-board-of-investments",
+   "name": "Bangsamoro Board of Investments",
+   "kind": "attached",
+   "acronym": "BBOI",
+   "parent": "office-of-the-chief-minister",
+   "website": "https://bboi.bangsamoro.gov.ph/",
+   "mandate": "Approves and registers investment projects in the region so investors can get incentives, and draws up the region's investment priorities plan.",
+   "contact": {
+    "address": null,
+    "phone": "(064) 421-1591",
+    "email": null
+   },
+   "programs": [
+    {
+     "name": "Investment registration and incentives",
+     "summary": "Registered investors get tax exemptions and promotion of their business; BBOI approved PHP 390 million in new investments in October 2024 alone.",
+     "for": [
+      "investors",
+      "businesses"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-surpasses-annual-target-with-approved-investments-worth-over-p390m/",
+     "how": "Apply to BBOI for registration of the investment project."
+    }
+   ],
+   "services": [],
+   "sources": [
+    {
+     "label": "BARMM Official Website, 'BARMM surpasses annual target with approved investments worth over P390M', 2024",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-surpasses-annual-target-with-approved-investments-worth-over-p390m/"
+    },
+    {
+     "label": "MTIT, Bureau of Investments (refers to the BBOI under the Office of the Chief Minister)",
+     "url": "https://mtit.bangsamoro.gov.ph/bureau-of-investments/"
+    }
+   ]
+  },
+  {
+   "slug": "office-for-settler-communities",
+   "name": "Office for Settler Communities",
+   "kind": "attached",
+   "acronym": "OSC",
+   "parent": "office-of-the-chief-minister",
+   "website": "https://osc.bangsamoro.gov.ph/",
+   "mandate": "Attached to the Office of the Chief Minister, it is the main agency for the welfare and concerns of settlers in BARMM, making sure settlers enjoy the rights given by the Bangsamoro Organic Law, the Constitution and Bangsamoro laws.",
+   "contact": {
+    "address": "Ground Floor, CNX 2 Building, Bishop Mongeau Avenue, Notre Dame Village, Barangay Rosary Heights 8, Cotabato City",
+    "phone": "+63 977 045 5600",
+    "email": null
+   },
+   "programs": [
+    {
+     "name": "OSC Radio: Tinig ng Mamamayang Settlers ng Bangsamoro",
+     "summary": "Radio program every two months, launched in 2025, on the rights, contributions and stories of settler communities; airs on the OSC Facebook page and NDBC Radio Bida 882.",
+     "for": [
+      "settlers"
+     ],
+     "source": "https://osc.bangsamoro.gov.ph/Osc%20Radio.html",
+     "how": null
+    },
+    {
+     "name": "2025 Assembly of Settler Communities Sectoral Organizations and Sectoral Wings",
+     "summary": "Guidelines and nomination forms (certificate of nomination and acceptance, resolutions for delegates and nominees) for the settler communities sectoral election.",
+     "for": [
+      "settlers"
+     ],
+     "source": "https://osc.bangsamoro.gov.ph/Osc%20Radio.html",
+     "how": "Download the guidelines and forms from the OSC website."
+    }
+   ],
+   "services": [
+    {
+     "name": "Certification of a Settler Organization",
+     "summary": "Certifies a settler organization.",
+     "for": [
+      "settlers"
+     ],
+     "source": "https://osc.bangsamoro.gov.ph/Checklist-of-Requirements-for-Certification-of%20Settler%20Organization.pdf",
+     "requirements": [
+      "Notarized petition for certification (name, contact person, areas, number of members, years of operation, addresses, officers, track record, platform, chapters, declaration)",
+      "Constitution and by-laws",
+      "Organizational structure",
+      "Notarized list of at least 50 members certified by the president or secretary",
+      "Track record sheet with at least 3 verifiable projects for settler communities, with proof",
+      "Minutes of constituent meetings",
+      "Platform of government, policies and principles for settler communities",
+      "Certification from the mother organization, if a chapter or council"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "Office for Settler Communities"
+    }
+   ],
+   "sources": [
+    {
+     "label": "OSC official website, About OSC",
+     "url": "https://osc.bangsamoro.gov.ph/aboutOSC.html"
+    },
+    {
+     "label": "OSC, Checklist of Requirements for Certification of a Settler Organization",
+     "url": "https://osc.bangsamoro.gov.ph/Checklist-of-Requirements-for-Certification-of%20Settler%20Organization.pdf"
+    },
+    {
+     "label": "OSC, OSC Radio page",
+     "url": "https://osc.bangsamoro.gov.ph/Osc%20Radio.html"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-science-high-school",
+   "name": "Bangsamoro Science High School",
+   "kind": "attached",
+   "acronym": "BSHS",
+   "parent": "ministry-of-science-and-technology",
+   "website": "https://bshs.bangsamoro.gov.ph",
+   "mandate": "A public science high school, created by BAA 40 in 2023 and supervised by MOST, that gives free science and technology secondary education to gifted students from the region.",
+   "contact": {
+    "address": "BSHS Compound, Cotabato City",
+    "phone": "(064) 429 2659",
+    "email": "bshs@most.bangsamoro.gov.ph"
+   },
+   "programs": [
+    {
+     "name": "Grade 7 admission",
+     "summary": "Free science high school education with science, advanced math, mentored research and humanities including Bangsamoro culture.",
+     "for": [
+      "students",
+      "children"
+     ],
+     "source": "https://bshs.bangsamoro.gov.ph/apply",
+     "how": "Apply online, then take the BSHS Admission Test at a chosen testing center."
+    }
+   ],
+   "services": [
+    {
+     "name": "Application for Admission (Grade 7)",
+     "summary": "Online application and admission test for incoming Grade 7 students.",
+     "for": [
+      "students",
+      "children"
+     ],
+     "source": "https://bshs.bangsamoro.gov.ph/apply",
+     "requirements": [
+      "Grade 6 graduating student at the time of application",
+      "Final grades of 85% or better in Science, Mathematics and English on the Grade 5 report card",
+      "Filipino citizen with no pending or approved immigrant application abroad",
+      "First time to enroll in Grade 7, and no earlier BSHS application",
+      "Recent 1x1 colored ID picture",
+      "Certified true copy of Grade 5 report card",
+      "PSA birth certificate or Certificate of Live Birth (uploads in JPEG, PNG or PDF, max 1 MB each)"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "Testing centers: Cotabato City; Pikit, SGA; Lamitan City, Basilan; Parang, Maguindanao del Norte; Marawi City; Tawi-Tawi; Shariff Aguak, Maguindanao del Sur; Malabang, Lanao del Sur"
+    }
+   ],
+   "sources": [
+    {
+     "label": "BSHS, Apply page and site (app text), 2026",
+     "url": "https://bshs.bangsamoro.gov.ph/apply"
+    },
+    {
+     "label": "BSHS, About History",
+     "url": "https://bshs.bangsamoro.gov.ph/about/history"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-agriculture-and-fisheries-training-institute",
+   "name": "Bangsamoro Agriculture and Fisheries Training Institute",
+   "kind": "attached",
+   "acronym": "BAFTI",
+   "parent": null,
+   "website": null,
+   "mandate": "Planned to give technical training, short courses and extension services in agriculture and fisheries to Bangsamoro farmers and fisherfolk, and to set the region's extension agenda.",
+   "contact": null,
+   "programs": [],
+   "services": [],
+   "sources": [
+    {
+     "label": "BARMM Official Website, 'Bill creating agri-fishery training institute to enhance food sufficiency in BARMM', 2024",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/bill-creating-agri-fishery-training-institute-to-enhance-food-sufficiency-in-barmm"
+    },
+    {
+     "label": "ATI XII, 'MAFAR, BAFTI, and ATI Strengthen Collaboration', 2025",
+     "url": "https://ati2.da.gov.ph/ati-12/content/node/947"
+    }
+   ]
+  },
+  {
+   "slug": "office-of-the-wali-of-bangsamoro",
+   "name": "Office of the Wali of Bangsamoro",
+   "kind": "attached",
+   "acronym": null,
+   "parent": null,
+   "website": "https://wali.bangsamoro.gov.ph/",
+   "mandate": "Supports the Wali, the ceremonial head of the Bangsamoro, who acts as the region's moral guardian, opens Parliament, administers oaths of office, can dissolve Parliament on the Chief Minister's advice, and attends public ceremonies.",
+   "contact": null,
+   "programs": [],
+   "services": [],
+   "sources": [
+    {
+     "label": "Wikipedia, Wa'li of Bangsamoro",
+     "url": "https://en.wikipedia.org/wiki/Wa%27l%C4%AB_of_Bangsamoro"
+    },
+    {
+     "label": "Bangsamoro Parliament, bill creating the Office of the Wali (filed July 8, 2020)",
+     "url": "https://parliament.bangsamoro.gov.ph/bta-bills/an-act-creating-the-office-of-the-wali-of-the-bangsamoro-defining-its-duties-functions-and-responsibilities-and-appropriating-funds-therefor-and-for-other-purposes/"
+    }
+   ]
+  }
+ ]
+}

@@ -10,7 +10,7 @@ import { EASE, Magnetic, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo,
 import { ThemeToggle } from './theme-toggle'
 
 type SiteHeaderProps = {
-	activeItem?: 'discover' | 'this-week' | 'news' | 'accidents' | 'explainers' | 'jo' | 'about' | 'contribute'
+	activeItem?: 'discover' | 'this-week' | 'news' | 'accidents' | 'services' | 'explainers' | 'jo' | 'about' | 'contribute'
 	/**
 	 * Sit over the page rather than on top of it.
 	 *
@@ -40,6 +40,7 @@ const secondaryLinks = [
 	// Latest news is hidden for now; the page still builds at /news.
 	// { key: 'news', href: '/news', label: 'Latest news' },
 	// Accidents is reached through the strip's Projects switch, not the bar; phones get a row in the menu below.
+	{ key: 'services', href: '/services', label: 'Programs & services' },
 	{ key: 'explainers', href: '/explainers', label: 'Explainers' },
 	{ key: 'about', href: '/about', label: 'About' },
 ] as const
