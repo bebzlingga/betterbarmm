@@ -423,7 +423,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 										type='button'
 										onClick={() => goTo(a)}
 										aria-current={a.id === selectedId ? 'true' : undefined}
-										className='grid w-full cursor-pointer grid-cols-[auto_minmax(0,1fr)_auto] items-start gap-3 py-2.5 text-left transition hover:text-[var(--accent)] aria-[current=true]:text-[var(--accent)]'
+										className='grid w-full cursor-pointer grid-cols-[auto_minmax(0,1fr)_auto] items-start gap-x-3 py-2.5 [&>*:last-child]:ml-4 text-left transition hover:text-[var(--accent)] aria-[current=true]:text-[var(--accent)]'
 									>
 										<KindIcon type={a.type} size={20} />
 										<span className='min-w-0'>
