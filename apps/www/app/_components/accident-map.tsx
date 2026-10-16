@@ -418,7 +418,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 										aria-current={a.id === selectedId ? 'true' : undefined}
 										className='grid w-full cursor-pointer grid-cols-[auto_minmax(0,1fr)_auto] items-start gap-3 py-2.5 text-left transition hover:text-[var(--accent)] aria-[current=true]:text-[var(--accent)]'
 									>
-										<KindIcon type={a.type} size={14} />
+										<KindIcon type={a.type} size={20} />
 										<span className='min-w-0'>
 											<span className='block text-[13px] font-bold leading-snug'>{a.title}</span>
 											<span className='num block text-[11px] text-[var(--ink-3)]'>
