@@ -54,7 +54,7 @@ function Th({ children, numeric = false, wide = false, className = '' }: { child
 		<th
 			scope='col'
 			className={`py-3 text-[10.5px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)] ${
-				numeric ? 'w-px whitespace-nowrap pl-4 text-right sm:pl-6' : wide ? 'pr-4 text-left' : 'w-px whitespace-nowrap pr-4 text-left'
+				numeric ? 'w-px whitespace-nowrap pl-6 text-right sm:pl-10' : wide ? 'pr-8 text-left' : 'w-px whitespace-nowrap pr-8 text-left'
 			} ${className}`}
 		>
 			{children}
@@ -333,14 +333,14 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 				<tbody>
 					{shown.map((a) => (
 						<tr key={a.id} id={a.id} className='border-b border-[var(--rule-soft)] align-top transition-colors hover:bg-[var(--paper-2)]'>
-							<td className='num w-px whitespace-nowrap py-3.5 pr-4 text-[13px] text-[var(--ink-2)]'>{accidentDate(a.date)}</td>
-							<td className='hidden w-px whitespace-nowrap py-3.5 pr-4 text-[13px] text-[var(--ink-2)] md:table-cell'>
+							<td className='num w-px whitespace-nowrap py-3.5 pr-8 text-[13px] text-[var(--ink-2)]'>{accidentDate(a.date)}</td>
+							<td className='hidden w-px whitespace-nowrap py-3.5 pr-8 text-[13px] text-[var(--ink-2)] md:table-cell'>
 								<span className='flex items-center gap-1.5'>
 									<KindIcon type={a.type} />
 									{a.kind || typeOf(a.type).label}
 								</span>
 							</td>
-							<th scope='row' className='py-3.5 pr-4 text-left font-normal'>
+							<th scope='row' className='py-3.5 pr-8 text-left font-normal'>
 								<button
 									type='button'
 									onClick={() => goTo(a)}
@@ -355,7 +355,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 								</p>
 							</th>
 							{(['deaths', 'injured', 'missing'] as const).map((key) => (
-								<td key={key} className='num w-px whitespace-nowrap py-3.5 pl-4 text-right text-[13px] tabular-nums text-[var(--ink)] sm:pl-6'>
+								<td key={key} className='num w-px whitespace-nowrap py-3.5 pl-6 text-right text-[13px] tabular-nums text-[var(--ink)] sm:pl-10'>
 									{a[key] ? figure(a[key] as number) : <span className='text-[var(--ink-mute)]'>–</span>}
 								</td>
 							))}
