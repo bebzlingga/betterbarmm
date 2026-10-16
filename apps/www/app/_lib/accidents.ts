@@ -49,7 +49,7 @@ export const ACCIDENT_TYPES: { id: AccidentType; label: string; color: string; c
 	{ id: 'road', label: 'Road', color: '#2a78d6', colorDark: '#3987e5' },
 	{ id: 'water', label: 'Sea, lake & river', color: '#1baf7a', colorDark: '#199e70' },
 	{ id: 'fire', label: 'Fire & explosion', color: '#eb6834', colorDark: '#d95926' },
-	{ id: 'shooting', label: 'Shooting', color: '#8b4fd6', colorDark: '#9a63e0' },
+	{ id: 'shooting', label: 'Shooting', color: '#d11f2f', colorDark: '#ef4050' },
 	{ id: 'other', label: 'Other', color: '#8a8578', colorDark: '#9a9488' },
 ]
 

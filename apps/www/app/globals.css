@@ -1000,13 +1000,13 @@
   --acc-road: #2a78d6;
   --acc-water: #1baf7a;
   --acc-fire: #eb6834;
-  --acc-shooting: #8b4fd6;
+  --acc-shooting: #d11f2f;
   --acc-other: #8a8578;
 }
 :root[data-theme="dark"] {
   --acc-road: #3987e5;
   --acc-water: #199e70;
   --acc-fire: #d95926;
-  --acc-shooting: #9a63e0;
+  --acc-shooting: #ef4050;
   --acc-other: #9a9488;
 }
