@@ -13,8 +13,8 @@ import dataset from '../../../../datasets/accidents/accidents.json'
    drowning, a landslide, an LPG blast, an ambush) is kept on the record
    and named in the details; it is not given a colour of its own because
    five hues is as many as a dot map can keep apart for every reader.
-   Shootings are the one deliberate kind carried: bombings, clan feuds
-   and the rest of the violence stay out.
+   Shootings are the one deliberate kind carried, a clan war's or an
+   armed clash's among them; bombings and the rest of the violence stay out.
    ============================================================ */
 
 export type AccidentType = 'road' | 'water' | 'fire' | 'shooting' | 'other'

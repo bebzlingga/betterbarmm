@@ -242,8 +242,9 @@ under-counted.
 Five kinds, one colour each on the map — road; sea, lake and river; fire
 and explosion; shooting; other — with the finer kind kept on the record.
 Shootings are the one deliberate kind carried, because they are the
-region's commonest violent death; bombings and clan feuds are crimes of
-another order and stay out. Weather that hurt nobody is out too: a flood that
+region's commonest violent death, and a shooting in a clan war or an armed
+clash counts like any other; bombings are crimes of another order and stay
+out. Weather that hurt nobody is out too: a flood that
 displaced families but killed no one is a disaster record, which this is
 not. Sulu is not mapped; it left the region in 2024.
 
