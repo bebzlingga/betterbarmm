@@ -5,6 +5,8 @@ import { SearchField, Select } from '@betterbarmm/editorial'
 import dynamic from 'next/dynamic'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { ACCIDENT_TYPES, accidentDate, typeOf, type Accident, type AccidentType } from '../_lib/accidents'
+import lake from '../../../../datasets/accidents/lake-lanao.json'
+import outline from '../../../../datasets/accidents/barmm-outline.json'
 import type { AccidentFeatures, Focus } from './accident-map-canvas'
 
 /* ============================================================
@@ -146,9 +148,26 @@ function Details({ a, onClose }: { a: Accident; onClose: () => void }) {
 	)
 }
 
+type Ring = number[][]
+const LAND: Ring[][] = outline.features.flatMap((f) => (f.geometry.type === 'MultiPolygon' ? (f.geometry.coordinates as Ring[][]) : [f.geometry.coordinates as Ring[]]))
+const LAKE = lake.geometry.coordinates[0] as Ring
+
+/** Even-odd ray cast: is the point inside the ring? */
+function within([x, y]: [number, number], ring: Ring) {
+	let inside = false
+	for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+		const [xi, yi] = ring[i]!, [xj, yj] = ring[j]!
+		if (yi! > y !== yj! > y && x < ((xj! - xi!) * (y - yi!)) / (yj! - yi!) + xi!) inside = !inside
+	}
+	return inside
+}
+/** On the region's land: inside its outline (which leaves out the sea) and out of Lake Lanao (which it does not). */
+const onLand = (p: [number, number]) => !within(p, LAKE) && LAND.some(([outer, ...holes]) => within(p, outer!) && !holes.some((h) => within(p, h)))
+
 /** Incidents that share a point — a town's centre, most often — fanned out on a sunflower spiral around it, some
-    800 m apart — a dot's width at the zoom a row's click flies to — so each can be seen and clicked. Worked out over every incident, not the filtered few,
-    so a dot keeps its place whatever the filters say. */
+    300 m apart, a dot's width at street zoom, so each can be seen and clicked; a turn of the spiral that would put a
+    dot in the lake or the sea is skipped. Worked out over every incident, not the filtered few, so a dot keeps its
+    place whatever the filters say. */
 function spread(incidents: Accident[]) {
 	const groups = new Map<string, Accident[]>()
 	for (const a of incidents) {
@@ -158,12 +177,27 @@ function spread(incidents: Accident[]) {
 	const at = new Map<string, [number, number]>()
 	for (const group of groups.values()) {
 		group.sort((a, b) => (a.id < b.id ? -1 : 1))
-		group.forEach((a, i) => {
-			if (group.length === 1) return void at.set(a.id, [a.lon, a.lat])
-			const r = 0.004 * Math.sqrt(i + 0.5)
-			const t = i * 2.39996 // the golden angle
-			at.set(a.id, [a.lon + (r * Math.cos(t)) / Math.cos((a.lat * Math.PI) / 180), a.lat + r * Math.sin(t)])
-		})
+		if (group.length === 1) {
+			at.set(group[0]!.id, [group[0]!.lon, group[0]!.lat])
+			continue
+		}
+		let k = 0
+		for (const a of group) {
+			const shrink = Math.cos((a.lat * Math.PI) / 180)
+			let p: [number, number] = [a.lon, a.lat]
+			// ponytail: tries up to 400 turns per dot; a stack ringed by water on every side keeps its centre.
+			for (const stop = k + 400; k < stop; k++) {
+				const r = 0.0016 * Math.sqrt(k + 0.5)
+				const t = k * 2.39996 // the golden angle
+				const q: [number, number] = [a.lon + (r * Math.cos(t)) / shrink, a.lat + r * Math.sin(t)]
+				if (onLand(q)) {
+					p = q
+					k++
+					break
+				}
+			}
+			at.set(a.id, p)
+		}
 	}
 	return at
 }
