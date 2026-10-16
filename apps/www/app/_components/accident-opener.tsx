@@ -28,12 +28,12 @@ function Preview({ incidents }: { incidents: Accident[] }) {
 	const { areas, outside, land } = barmmBoundaries
 	return (
 		<svg viewBox={CROP} className='h-auto w-full' aria-hidden='true'>
-			<path d={land} fillRule='nonzero' className='fill-[var(--ink)] opacity-[0.12]' />
+			<path d={land} fillRule='nonzero' className='fill-[var(--brass)] opacity-25' />
 			{outside.map((area) => (
-				<path key={area.slug} d={area.d} fillRule='nonzero' className='fill-[var(--ink)] opacity-[0.12]' />
+				<path key={area.slug} d={area.d} fillRule='nonzero' className='fill-[var(--brass)] opacity-25' />
 			))}
 			{areas.map((area) => (
-				<path key={area.slug} d={area.d} fillRule='nonzero' className='fill-[var(--ink)] opacity-30' />
+				<path key={area.slug} d={area.d} fillRule='nonzero' className='fill-[var(--brass)] opacity-90' />
 			))}
 			{incidents.map((a) => (
 				<circle
@@ -51,15 +51,15 @@ function Preview({ incidents }: { incidents: Accident[] }) {
 
 export function AccidentOpener({ incidents }: { incidents: Accident[] }) {
 	return (
-		<div className='grid w-full gap-6 md:grid-cols-[14rem_minmax(0,1fr)_auto] md:items-center'>
-			<div className='w-48 md:w-auto'>
+		<div className='grid w-full gap-8 md:grid-cols-[18rem_minmax(0,1fr)_auto] md:items-center'>
+			<div className='w-56 md:w-auto'>
 				<Preview incidents={incidents} />
 			</div>
 			<div>
 				<p className='bb-label'>Interactive map</p>
-				<p className='mt-1 text-[clamp(1.2rem,2.2vw,1.6rem)] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+				<h1 className='mt-1 text-[clamp(1.3rem,2.4vw,1.8rem)] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 					Every incident on one map, with the report behind each mark.
-				</p>
+				</h1>
 				<p className='mt-2 max-w-[40rem] text-[13.5px] leading-[1.7] text-[var(--ink-2)]'>
 					Heat for where it keeps happening; dots coloured by kind and sized by deaths. Filters, details and each report down the left.
 				</p>
