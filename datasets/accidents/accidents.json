@@ -5871,6 +5871,178 @@
    "id": "2024-12-02-sibutu-water"
   },
   {
+   "date": "2024-12",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "3 military intelligence agents killed in Lamitan City ambush, Basilan",
+   "summary": "3 military intelligence personnel were killed in an ambush in Lamitan City, Basilan.",
+   "province": "Basilan",
+   "municipality": "Lamitan",
+   "barangay": null,
+   "deaths": 3,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.6576,
+   "lon": 122.145,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Manila Bulletin",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQamc3VE9sR29iVHZmV1l6ZU51ekQ1SkdtQkNCVEFMVXZqVTJxa3FzVDM2Nk9OZklUQndZYmR3SFA1UF8xTHpOOExtVEhfcmNSS0tLRUFkNlJ6dHNoOEtLNndwNVl6M0JralpoOFRpTEtyM3RoSnMwRWE3cmtlV0lvQ2JUQVFrMGd6U3BCbTZvV3JTWjQ?oc=5",
+     "title": "3 military intelligence agents killed in Lamitan City ambush",
+     "date": "2024-12-23"
+    },
+    {
+     "outlet": "NewsLine Philippines",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBJNGVVc1psbGQwb01VSlAyM085cEZ2VXBha1B3R1FSQldhX1NWcnRJTjB2SFl2bF9hWXVjZmtHZlpaWG5SSWJBNkV6SUlJN2FleXo1MVczTGpob3J6VE54V0FJd21qZHJhLXc3RXotcldyY2ozaUE5REZ4OA?oc=5",
+     "title": "3 intel officers killed in Basilan Ambush",
+     "date": "2024-12-24"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxObzc4NG85cjg5bkp5NFI1eGFnTVBQUkNQUnp2eE1jQm00UFd4YTZ5VlJLc1IybmVmWmhMbUR0TUxyTkZrY1F0dGROdUtEVHdOMWZ4Q0FQcGhXeTJyd3FTbGRpbjR1OGVtcGE0ZExvR2RNaXVRUXA0ZURDN1RXOGxaWTRn0gGHAUFVX3lxTFA2RnBpS21oTjRjVWY5NXJMcUlNXzZJLVVzRW5ZV1pXbTRVN0piZ0RzNlZndTRZZXVob0w4YngxV2xhZ0NfMjR0YjVZaVRxaUFHSjhMblZvM1dyelR4aGRLalFZM3I4N2ZVVFRENmtlVWNDSndWcWdUMi1FRVRtVVBzMmhOVVluQQ?oc=5",
+     "title": "3 soldiers killed in ambush in Basilan",
+     "date": "2024-12-24"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObTFpR21rbmJIYi1WWHhQTlBadTdpeU9hR0JuM2EzWFJkRjMwR0c1aTFFSHZxWC1CVklPVmhERkoyTWpXYjVoSExQRmlhcEZ1cjVoc3pFZkliS01BdmdDeTVVaW1MbnlWMW1uMHFrVjFQWDlza3JTVXZFWWZTSmNXMXZ2YWJKM1dWYUhmRUwwSnQwcU1zNlgwaWlubUFpaWF4bm5jWjRaRm_SAa4BQVVfeXFMT2YxZTAtbmtqeTVxS1VQYjdKVjNzY05GYkhOV240NUxtTEE3RnRJTHhHUWo5SVFlRTdmZ0s2UDd4WjhjZTItRDNEUzR5bmxORVN5UGlCdngtdlJyRDdTOXg1RkluRUlnWDJTUFQ2STJPY2xuN043MHZQZFNacURQNmJXUnZCMV9Sdk0wV2pPOVExOEZuUEhnU3RtVVpnVjhFelViYTVSeEJOLUtOOUFR?oc=5",
+     "title": "3 ISAFP members killed in Basilan ambush",
+     "date": "2024-12-25"
+    },
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdTNqLWc3QVlsRlhtMFZPajg1ek9CU0lHWjY2R3lzWlVGOU9HRnFxV3JXREowMWtpX210OWY0ZmFJMkM1YThuMHZWZzl0Ymtpamc1Z3RXNVpEVUQ5eE5MT2cxLWdiZnZHMV9aOXRQdC1FRzE3TDcwRlpTTGwtUld6OExhRFJDRU00Nld4TXZ0WlZ2eENpSDZXcmV2c1ZJQdIBpAFBVV95cUxNX0ItTmRwRVF0X3dUWndac0RVOVNDLUpXdUpBZ1AxTWVQSElsWWpOTFQySEt0RmV2U3E1MlJKSzF0QXNFR2hvX3dDaE5PSUVhekRHRjBlbnk4eTF4QXp0M2RFZEU5YXh3V1E0YzY2cVdneWlER1NHTzRIZURDUGkzVlpTNTV6OG9TeVRuT0wtWjlnNGhWRUlxVWJRQUw3VzY1N1Zpcw?oc=5",
+     "title": "3 intelligence personnel killed in Basilan ambush",
+     "date": "2024-12-25"
+    }
+   ],
+   "id": "2024-12-lamitan-shooting"
+  },
+  {
+   "date": "2024-12",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Police intelligence officer shot dead at mall parking area in Cotabato City",
+   "summary": "A police intelligence officer was shot dead at a mall parking area in Cotabato City; another person was reported missing.",
+   "province": "Cotabato City",
+   "municipality": "Cotabato City",
+   "barangay": "mall parking area",
+   "deaths": 1,
+   "injured": 0,
+   "missing": 1,
+   "vehicles": [],
+   "lat": 7.2238,
+   "lon": 124.2467,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcTBKeFBLOXQzb0NsdjlncmladFowSkIxak1zSks5V1JNSnlhV05CNm15SXRCTGMwbUk1V0F4azl0N3loRktjN0xfbmh4cXRQa0w4aFJrSlBsemJXekp3Q3htS1R1a1N6WnZYMjZwNERFZVBMVnBpUzFpenNoU2NHeENFV1dKTmZYUS1SQUVYdnNNdC1PYm41R3pzTGw3b3JEQU9ha21ULWTSAa4BQVVfeXFMUDRQbThqY1pYSFdadlF6WmtmTG52TWUtSk9Vb3JDanhFa2Z4Zms0VlBwQlZ4Ri1NS1dfaml4bHRNaHo1VnRHdE5OVW5QbE9DZG1QZzFCSC1MMnh3LTFBdnN2cHYxTkgyeXpwUHZVX291eUhUb0NZLUVXQXBMaXFscElhVVgzY2hQMVlHTHQyZEFpdVJyZXhxRnZtV0FmTzk0RnFUU3FPSGFVdTQwS2FR?oc=5",
+     "title": "Cop intel officer slain in Cotabato City gun attack, another missing",
+     "date": "2024-12-02"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNcVF3SWkzRjBxTGlGa2tIdHhld2FMZWdxS2VGUktXQS1RLTRya2V3M0ZMSzhKRlVQR3ptYjBXUW16MVlyWHphNGhib1NOZ1RmaW15cGI5azlGT09ERjZVMzRmbjVUYTB1S0xuMHhuTlFTNFduU083bG16endjTl85elNCUkFBS2VGallQS2VXV0xfNDVFaE5QQk5Yc1NWcFV1NnVqSWVUYnZ0d1hI?oc=5",
+     "title": "Cop shot dead at mall parking area in Cotabato City",
+     "date": "2024-12-02"
+    }
+   ],
+   "id": "2024-12-cotabato-shooting"
+  },
+  {
+   "date": "2024-12",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Vice mayoral candidate hurt, 2 companions killed in Lanao del Sur ambush",
+   "summary": "A vice mayoral candidate in Lanao del Sur was wounded and two of his companions were killed in an ambush. The report did not name the town.",
+   "province": "Lanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 2,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.8319,
+   "lon": 124.2537,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTUN2VTJaRXhWUHE0ellmUUNBNkdlRmhsaU9YbzlOT0xlMmFrNnhBai1hT24zSFM0RzUyX0lZOXNvaWZaZnJmYThRUXVrTFNySUhGVlI3cVREdnFRa1NHMWlTT0tyVW5kal9OSVlxQVdLLVU1bjVEM1pXMldUS1RqcUpTOU1RbEh2MS1iVG5hdjg1bFB5YktJSWlwY3pQUGxqUUtKMtIBqgFBVV95cUxQREVuS2JoU19HZlBsLV96dHM0MUdmZS15aWpBMHZVcGQwS01qNWVOMVEzMEdsVjEzWDBibHNwOUhZTjh2NVNveGNMR0o1TWxjSjlrdUdiRWxXRGZrVXZPQVlfaWlFTkF0YkUyTDMxWkFVdkNvend1TDdtRGdEbEVaOUQ5dW9CbG5NNWo2bTgwc2JYUzhIVTViTEw4bk0zX0pqWnYwNFd0Skw3dw?oc=5",
+     "title": "Lanao del Sur vice mayoral bet hurt, 2 companions slain in ambush",
+     "date": "2024-12-08"
+    }
+   ],
+   "id": "2024-12-lanao-del-sur-shooting"
+  },
+  {
+   "date": "2024-11",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "2 soldiers wounded in Basilan ambush",
+   "summary": "Five soldiers were wounded in an ambush in Basilan. The report did not name the town.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 0,
+   "injured": 5,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.5479,
+   "lon": 122.0458,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWk1naDZKc3MyUUYtQU56b1R0bDhPeUpFejdDRGc1bm55enBnNlZiN09Hc0ZhcnNsN3VfNGlzclppaGZhcG41U3BYTmNTRnpXOVVBSi1henR2VG9oVm14dElXY3NRUjdxRHB6ekZEY1FPNHF1ZjZCSVZTYXVMVVpBZS12bG1LZFZJMmJrdlRXSVVaVUVL?oc=5",
+     "title": "2 soldiers hurt in Basilan ambush",
+     "date": "2024-11-20"
+    },
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPclFWLXktVkZ5V1NzakY3V0wxeXNhOVJ3NkkzemRyd0pYSHdvYWVHSE91QzMwcDA1WldONU83bV9SZUVRMDN4SnB3Zmx1YzhoZXZKSXFTMjhDTUdVMmNBTVlFQ0RKYVd1LVhpZ0FQb0otQ2FyZWtLSGkyU1lLLTJXUDhRdk92bWdSbmFES9IBkwFBVV95cUxNTDVNbEhPc1VPNG51c2M3ZFRTLVhzTnZpdTNQTmJUUzdLbWM0M1E1MXR6RGgyUldIUXVEQ0FZU1hCSEF0RXVMV0VSM0lvdUJwLTRBeGUxeENUT0NlYTlFVVY3SkFLZmlwZkh0WTlfRjhzRGtQaVZOem5CLVlPcnZNQ0Z4MnJZTXFIQ3hiQ1prMHZ6TlU?oc=5",
+     "title": "2 soldiers wounded in Basilan ambush",
+     "date": "2024-11-20"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE51aWFvMnNWTkxYWkx6UHhldlpGaTFyNWltcEFDUU1LUXVWcFFkdGk2UXU0QVZ4LUtobWdRRVQ2VEVpQjB3RjBjc2h3VFN0YWxCNHVER1Q4QTBKeWRPQ3dQa2xuUVBtbzV4Vk9fVFBIZmJsTmZUNm1SUW9xNNIBgAFBVV95cUxQMFUzUHl2dEliX2RCVTVTRW8zWmIxZ0VjendJc2UtT0E5dC00bElfYWZMbmpSY3R2cDZUZ3NSdFZWajE2WDZXWktqTnV0ZTM3RGZNd1Z4QUpRSnhKdGNoMW9oYWZzOGZhcjFHN0lkRmlnNGd5SDVFRGxXeTNuU285TA?oc=5",
+     "title": "5 soldiers hurt in Basilan ambush",
+     "date": "2024-11-20"
+    }
+   ],
+   "id": "2024-11-basilan-shooting"
+  },
+  {
+   "date": "2024-11",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "2 minor cousins shot dead inside car in Maguindanao del Sur",
+   "summary": "Two minors who were cousins were shot dead inside a car in Maguindanao del Sur. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 2,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOLS1YQmZNLWl2RVZCOW1LNUlYTWI4R2ZVaDFkdU10bVR3U0kxbFVsczZRRkdTNWw5OFluR2IzSkd3bkUtc0hLbnZhM1k3MDQtVnk3b2d5bVVmYjRFRWJkeG85Y2ZjWU1PZ2Z5SVVjS05zQmgtdzRkcDFSQ2c5REFCRkhCNHhISFRoLXVxeW9YbzkydUhyaTR6R0hKVlFXRHFiNlEtMUZpbENjdXd0NmVSOVpuN3c?oc=5",
+     "title": "Minor cousins shot dead inside car in Maguindanao del Sur",
+     "date": "2024-11-15"
+    }
+   ],
+   "id": "2024-11-maguindanao-del-sur-shooting"
+  },
+  {
    "date": "2024-10-11",
    "type": "fire",
    "kind": "Fire",
@@ -5895,6 +6067,32 @@
     }
    ],
    "id": "2024-10-11-marogong-fire"
+  },
+  {
+   "date": "2024-10",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "2 community watchmen killed in Basilan ambush",
+   "summary": "2 community watchmen were killed in an ambush in Basilan. The report did not name the town.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 2,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.5479,
+   "lon": 122.0458,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNR2NyRnd5NEFoS3RuZlZnT055UzZiSWVFdTFpaHMxT1RNWmxXYzJjczJlX2FJMS1MVlpaWlllazFYTDBHaHlOaGliVGNleUc2blJ1OXJDRlhFSXR5Mld2WG13Uk9UUW84LVRJNGhLazBfWUN0bFZEb3RfMHBTNVpsTEJUZnM3UWdqR0NDVzVMZHBkRHdPNFVV0gGeAUFVX3lxTFBDSEJ1aDk2bDdleUpGT284VE1ZV0VXelFaNGVLdHc4aEZOMDlLaDJSQXZGQUZqZnc0cWVmdUlWSmJLRFJBNkEzLVZsV1ZaY2tNdXdFNTF2OUNacjF5VDd2Q19GSjBsOTdwOVpMU2hZYng3all3Mk5UZzBsZkVqRHFpMkc1U0FEWV9JOEZGRWZKWWJ5U1BxdHA1ZkEtR21n?oc=5",
+     "title": "2 community watchmen killed in Basilan ambush",
+     "date": "2024-10-26"
+    }
+   ],
+   "id": "2024-10-basilan-shooting"
   },
   {
    "date": "2024-09-13",
@@ -5935,6 +6133,88 @@
     }
    ],
    "id": "2024-09-13-malabang-other"
+  },
+  {
+   "date": "2024-08-02",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "South Upi vice mayor and bodyguard killed in ambush in Barangay Pandan",
+   "summary": "Armed men ambushed South Upi Vice Mayor Roldan Benito in his vehicle in Barangay Pandan, South Upi, at 4 p.m. on August 2, 2024, killing him and a bodyguard and wounding his wife and child.",
+   "province": "Maguindanao del Sur",
+   "municipality": "South Upi",
+   "barangay": "Pandan",
+   "deaths": 2,
+   "injured": 2,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8457,
+   "lon": 124.2503,
+   "placed": "barangay",
+   "sources": [
+    {
+     "outlet": "Rappler",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcG9MNjZvZjVGS0I3VlNhNkFkckpNOVBHdzNqZXZhZUQzaGZrd2F2bElzWWFGeHFrZmJNOTRxNzZkT3JaUk1NTDZWREdZX3hZdmdObkdLdVNmeUtva2N6ZWFLT1hRNklxMlhSMEptQWhza00zS3VTMnBlTW5mNGpQWmN3U3VtSmZQaXF1cUk0UEVCQ3RFNDBxNXNvZ1FQeE9ucnNpYk5US1hwVnRkNzdvY3hJYkdpR1FrRXF5X3BIY09NcTNqRFBoY0w0TQ?oc=5",
+     "title": "Maguindanao del Sur vice mayor, aide killed in ambush",
+     "date": "2024-08-02"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZS1BQ0cyaWt6ekwtNVdILXFlbU9HQkgybWpWTTBmSUswYzlQLUVxbkpTbU00LW5ZUWZ2TFZtcWI3ZnltOHc3elQ2b1QtNGFONE90b3QtUmZVc01ZU3NQa0dhN2l0OXdiSW8xX1Z5bGxld2E0SVZzYy1UUEVZYm5hdzlObDhQSV9nYlJzbDNJSW1rUnF1TzAxR3p1QjAwZmE0X2h5cjViWEl6T081SEFkb2RxZW1NZ1o5WVNPaWlEWi1sQkw0SFVrSNIBzgFBVV95cUxPMkdZV09DYThYc2tyclZmNDZMSVZBMUs0YW4wVXVuNzRrNGVaM0diVWlVallzNE1fMlRyYTRFRFNZVGo3Ymc1alNzOWpvVDFIRl9UcFRwZnh5S0N3a1E4a2VxcXRQRU1HUnM1cE43bHk2OGdXZlpGVlBGQjJLcWZGVWZVYThCUlFUWFloUmtyOURUSVprNTdtWThSNWJvZ2w0WkhMblpIejF4UC0yQmwzWk9sYnhsOU5nQ0VWbmtfeFY4NG5MX29rRl95ZnZOUQ?oc=5",
+     "title": "Maguindanao del Sur vice mayor, security aide shot dead in ambush",
+     "date": "2024-08-02"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOamVaYU44bGtxYVViSm5TN1VxOEJDLXl4bG9DR3hjNHNaTWhLSjdpRFlXZTk0MWJqZmFrTjFKZzZFc0liaE5KdmJxWTREUFFKMmhSRlNTY3NsNGJCSXc1b3NJdUxwYXVrNWkwWnNHY1FhcE1rVGdIbUxrQnItMktENnNDUHk3WDdXT0FxSHdwTDRGVnh4TFHSAZsBQVVfeXFMUHo0R0Jvakx6LTBMOExNNnVWNVBMT25PRC1kVXFYUnVYQ2RMc252dHAxRzJmTUo0dHdzakZEV3NmNkF2aEVwS2tjbTJ0c2tEU0FTbVlIY2MxUUFzOG1YaE52bjNOOHFIN0ZBbFZLZHljbXgyXzZra3BRLWxRQngwOHh3cXVidjdoZmsxNnNwM2tmcG54UWlGMFoxbG8?oc=5",
+     "title": "Vice mayor, escort, slain in Maguindanao del Sur ambush",
+     "date": "2024-08-02"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNY2pnekRKcU1od1lZVk5HNnl6Tmd4MXpCZ1h4TVZPZWJ5SFJYZzFBN3I0aHBseXA0MjRiRTdvb2hLVXJTWV83OG1aMC14ZmdDWkdUcDlCNjhHUFljUjNEdnItRFo4d3djbHF6VVBhWGNZV29tQlJPYTNDcjdXM3N4WmNKSGJtYUZZd0R3T21GOUxMa0l2NjlXUjlIY3NaLXBMcGZBTHRRQ1ZuM3FBTWJVUDNGc0VCTnppbzFybw?oc=5",
+     "title": "Maguindanao del Sur vice mayor, security escort killed in ambush",
+     "date": "2024-08-03"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVDNEdmFIaG42enoyTTFxNzJEQV9MNFNpYUszcTVtTi1RRXJFUG5mTTdaM05KRllEU2x2ODMyMUdkT3lCdm5XaHpULTZ5cWswSk0xOVRJN3JudUxvR3NWY3RXblI5R21hd1AzcUxEUGxadjNFNVVaekdicm11akNESjY3MDBNWElkaWNCY0pmWmd2WnJhUkg5X2JB0gGfAUFVX3lxTE9KVHRZLVZMSnRhMVM5aVFrcEJpZFBzNjdycHE3Q0NPcEt3U2xPRmZFUkoxUmk1MWFfZ0NBTm9iNm1uVFltSTRxb0tKWmFvWjJ5bWtPZXpMN29GbVZ4TExlbFctcXBRYkZZaFY2MjhHRUZXUGZaaWlYSE5xd0RLclpOVDFZaU5xQlFMYXJQVGRXNGE0QXhENzB6SVRxOUd2SQ?oc=5",
+     "title": "Police eye 3 suspects behind South Upi vice mayor ambush",
+     "date": "2024-08-06"
+    },
+    {
+     "outlet": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQNXFMOE5XazFVeGdSRW4tejBtS2hqY1ZocDFscGNxUEItSDJZOHJCMnEwNFBQc05lZEV6SnFKbk9JekdnbEhYdDZsMDc5cjA3T21aSFc0NDA3NXJHaURGV0pKTXhJck9BdG4yZHA4RW13Tmw4UDZxNVM2dThtdzJiSnE1RzN4Rm9kbGF3cmhrdmw1MkpSaTlSRGJ0RF90NFBVQkNfT3VybjgxS21OUTI2NVBTRC1scXd6SVE4RkliaGhwQUZ3MndnMkNqRlJHWUpXVWln?oc=5",
+     "title": "AMBUSH-SLAY. Armed men ambushed South Upi, Maguindanao del Sur Vice Mayor Roldan Benito on board his vehicle in Barangay Pandan at 4 p.m. Friday (Aug. 2, 2024). Also slain was a bodyguard of the vice mayor. His wife and child were wounded. | E",
+     "date": "2024-08-02"
+    }
+   ],
+   "id": "2024-08-02-south-upi-shooting"
+  },
+  {
+   "date": "2024-08",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Farmer killed in ambush in Maguindanao del Sur",
+   "summary": "A farmer was killed in an ambush in a Maguindanao del Sur town. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNUDdvd1dUaThPVENMd1NzeHFvTFJtOXpfakk4TXhpVzRueGFOc0tfVDl4Y2ZtXzRJTzIwenhVc3hZVW5oNzFkdGM2RkVFVnNzMXlDd0x4NG1tekhYUnFBUWZ2bFo2cG1VNVE2VkNzNmNWbU5nSU5ueks5UFlKX2FPWlNIcjZTNmRnaldtMWdOb2ptWW5lblVxR1F3azlCbkdWTUhYaHVqaHFKTkJwamdVadIBtwFBVV95cUxOOV90N0V5Wk83dC1XUldFRHgzcGJyeHVQb29oWVZZY2dlc3ZxZUV0aDB3d3FKMFFBVV8ydGVUSlFWUHYta3Y3aXFKMWZ2eUlBTTlkanJoZmpmVHhjZ0g1dUYzR0ZKSG9iVVpVWHotaC14Zm5vblR3QmV2dXFFaUVLaE9hby1mUEpleW9KOHVYQUh2VEVnMWFINHV1ZFpLRVNfMXVVQmhVN2dvWWJxeGxGWlY4YmVzSVE?oc=5",
+     "title": "Farmer dead in another ambush in troubled Maguindanao del Sur town",
+     "date": "2024-08-07"
+    }
+   ],
+   "id": "2024-08-maguindanao-del-sur-shooting"
   },
   {
    "date": "2024-07-22",
@@ -6054,6 +6334,142 @@
    "id": "2024-07-matanog-other"
   },
   {
+   "date": "2024-06",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "1 dead, 4 wounded in Cotabato City ambush",
+   "summary": "5 people were wounded in an ambush in Cotabato City, and 1 of them later died.",
+   "province": "Cotabato City",
+   "municipality": "Cotabato City",
+   "barangay": null,
+   "deaths": 1,
+   "injured": 4,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2238,
+   "lon": 124.2467,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTEdmX05OYkYwaG5pTzV0ZW5XRzg4NGp6QXhoOFZHUlRqUmlBWFNjOWdLZ1pTbDJaS1Q5Q21JQUNMU3F6Z2FBVVlxWUhRdFlKamd1cWkzbk92YjFVMnl1YVF6N1dRclZVTzBaRE1uVXh0YndqOTZYM0tXSTJrcUdPMEVxbnExa2NOUkZoekVGONIBlAFBVV95cUxQclVmdlAwWWc1UUFpRnJsOUVMVHBEdmViLTAyQ09LWHVNSER0NVA5blZnenJ3ZGpDd2lzcHVfdlptSnA1NTRxZGJWem1kdlk2cGNXVjllNkd5MEVWZHJ3M245LTRtLWcxdlJTeF9ha2pCWldvNkhqQk9SRzVIM0VzOFZVTGRSQVN0Nk5vcEhsM09fTUFs?oc=5",
+     "title": "1 of 5 persons hurt on Cotabato City ambush dies",
+     "date": "2024-06-10"
+    }
+   ],
+   "id": "2024-06-cotabato-shooting"
+  },
+  {
+   "date": "2024-06",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "16-year-old student shot dead in Basilan",
+   "summary": "A 16-year-old graduating student was shot dead in Basilan. The report did not name the town.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.5479,
+   "lon": 122.0458,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPN1hGZlRnTm9PVVFPNFJMSHNycDVRZERPUTFZQWkzSkZWX2JhY1VqR0hVRWZ2d3hpUHNHRWJoczFGYTdOM1lJWFlQOVBMU0hrY1NJV3R3VktydElYMlZPRE9LN21XSVhkd25qT2wtakY3UnBMcFlCd3NaYmRPN0xIdHBlWThrQUswUUlMOUJGMHhoUUhfa3dmQXQ1bml2VHQ2LXVmSVRGaWE3dUo2cDFWclVIOXMzZzTSAbwBQVVfeXFMUG5sWXFNS0JpcVdObFpGaGRUQ0tmNGV3ZVgzcmFkM05aZXhOVks2VjFZd2NCejU0N25peUcyUXJuVjh6dnhQNVZnWmNlM3YzbkVkSjhuYmsxMTdsd2lmX1ZhdUJjdEFocnB1QmhmQzNXc2doRzJGRG04MUdFRnRGRy1JRHlsUTBUcFJObkZ3elNYcFVhN0ZSSzg4UjJTQmMxMmwzOG1GSDB6SDRPVERfN3VXdG43bUJwNnRadUU?oc=5",
+     "title": "16-year-old graduating student shot dead in Basilan",
+     "date": "2024-06-01"
+    }
+   ],
+   "id": "2024-06-basilan-shooting"
+  },
+  {
+   "date": "2024-06",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Village chief survives ambush, 5 companions hurt in Cotabato City",
+   "summary": "A village chief in Cotabato City survived an ambush; five of his companions were wounded.",
+   "province": "Cotabato City",
+   "municipality": "Cotabato City",
+   "barangay": null,
+   "deaths": 0,
+   "injured": 5,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2238,
+   "lon": 124.2467,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZ01VVUpwbERZTHFFYnNTRVJaVVV5SWZ4cFdCR25vS3BROWJYd25NU3E2M1hFS2hBTUJYWGk1aDdRdXZLLTYyR2xfZEJBNi1TTVFxS3drckJFQ29FWGVBek1OQ1dCeHRHeEhtOUQxai1mUkZJdUVIV0VCN2xMY3BPT2xUUFB3eUN0cTZXMnV1bGtxUlB0YVZOQtIBngFBVV95cUxORjRId2pIZzAwYk13cmhSemJFdjBCQ016OW95NjB6UkxtY3puZEJjT2lzMkozb0dveG5pQWh2N2hPa194NjNXaDJHWWhobHlVTjVmdzR6UnRfMFhlVWZYLWJ6MDVscVpTSGczRlQ4X043U0ZPY3VfWGRIeXNqRV9rSlV6ZXkwQmRVNkRzX181WTJUX0RuQ1lUUXAxdm1idw?oc=5",
+     "title": "Cotabato City village chief survives ambush; 5 pals hurt",
+     "date": "2024-06-08"
+    },
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVzQwNnItVzVHRk96UGx1RUVUUUxkMkRmbFFjYURsb2tGek5TbTRYVEM3bnNmejZOLUFuSEEwUE9TMkVQeE00WDVnTGVvR2xLaDJqWktMc1pWekZvQ3JKTjAyR2VJVVVlODRnYUdtSlNFaTdwY3pzcy1LTVhRRm9KVTVWN0FGdjRk0gGPAUFVX3lxTE5OMno4TTFwSVZmVVl5dEd6ZnFCNlBDNXlXeHZaZmFmZzBWZkJwdWFmMUFYRHVFTnZDa2xKYlF6WUpnN25Vdk9yanlEcXo4a0hWT1NSYXVKTVJVME84cmJNZFduNEg4YjFBYXRyT2hKSzN5am9yMTROVVRtRlNvRWJyN0kzVzgwMEVLcFJaX3Zv?oc=5",
+     "title": "5 wounded in Cotabato City ambush",
+     "date": "2024-06-08"
+    }
+   ],
+   "id": "2024-06-cotabato-shooting-2"
+  },
+  {
+   "date": "2024-05",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "3 CAFGU members killed, 3 wounded in Lanao del Sur ambush",
+   "summary": "3 CAFGU militiamen were killed and 3 were wounded in an ambush in Lanao del Sur. The report did not name the town.",
+   "province": "Lanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 3,
+   "injured": 3,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.8319,
+   "lon": 124.2537,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTHNEcTVQNmZvZDdCVWY1SDVJX09ybUtIVTBRSmMwZE9KTVZCM093UjhDLU43TU1YR29ZWFplb0FCZHZLRlZxWkdFN0NkSjlma1JxRERYVzVWRUtnWTdFQU9DUUFQakQ3VjRVOG5nVks5UVBIdktXbHphZ3dqcnFWVEJoR3pOM21VOWJpWGxSY05xR05TUmlpQWNuV0JIQdIBpAFBVV95cUxPeXhJcWlLYTFTVmFDN2ZaeDdvbWFKZFVTMnQtdFktaXo2SDRDelF2OElhNjdPVEhrSVc3WkVtUFRxdHhWZHB1RGVnZ21WdlN5SnFiTHV3UGNQMWc4WDhGY2d0dDVGUWxZVVl5TndFU3FpbE9sUmlqV3N4bWNvRUF1M21zV292YWNrWEdUMnZheWxTNHhQbE45dUwxb3k3aW5UY01SZQ?oc=5",
+     "title": "3 CAFGUs killed, 3 wounded in Lanao del Sur ambush",
+     "date": "2024-05-01"
+    }
+   ],
+   "id": "2024-05-lanao-del-sur-shooting"
+  },
+  {
+   "date": "2024-05",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Police captain killed in market shooting in Maguindanao del Norte",
+   "summary": "A police captain was shot dead at a market in Maguindanao del Norte. The report did not name the town.",
+   "province": "Maguindanao del Norte",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2371,
+   "lon": 124.2928,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVFRFSTNFOVhVRG5OeldYTHZnSXRUN1YydXg1NzZCbWxZcVBTX3ZoTGNtMm9rS2sxRFdyVU5vc1VrYzdtVzJRdXVBSzdWNk1zOXpibG5FUVJROU9yYVhubGRyVWI4RXJOZWhkNlgtUjhoamx5ZWp1NDV6RjZSTU1jQnJtY3VXZFlQdmZuR01WeU9RMUZHS1NCdWNLaEluR21lRXZN0gGoAUFVX3lxTE8yNlh5V1F3S0RydU00WFZtX2FYY3hPenFxR3NCWjA2cWVaQU9MN014YUlnWUMzUnBLWk9DVkxuaHRqZmw2YTVsM1V5TkpPNmVMZjFTTFYtcGQ1S0NadkI3bVNFc0Z2aE84d0VWR3hQNW1jYVgxMHZ2Q2NLaEFmMzAxeXk3VllmWnhNWXFWYi12LVV2Z1RBS3BBQURYczVhVGNCdHNOZEJoOA?oc=5",
+     "title": "Police captain dies in market shooting in Maguindanao del Norte",
+     "date": "2024-05-02"
+    }
+   ],
+   "id": "2024-05-maguindanao-del-norte-shooting"
+  },
+  {
    "date": "2024-04-25",
    "type": "other",
    "kind": "Food poisoning",
@@ -6092,6 +6508,84 @@
    "id": "2024-04-25-south-upi-other"
   },
   {
+   "date": "2024-04",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "2 wounded in Cotabato City ambush",
+   "summary": "2 people were wounded in an ambush in Cotabato City.",
+   "province": "Cotabato City",
+   "municipality": "Cotabato City",
+   "barangay": null,
+   "deaths": 0,
+   "injured": 2,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2238,
+   "lon": 124.2467,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWFZybWJJamEwdnBhUjdmaksyaFVwQWhIazFxX3poVjB2d2VqM1RoY2tUWS1OY2owY1VfZmUwQmxhYkJrTDgwV0F1TmNxZEIzbWUtdEYyOVgzVWpuNThkQVVuUl9PN2Z0QllRcTlucHhoNGstZEZTR0FJa1Y1XzVJX0Q3LVczM2JD0gGPAUFVX3lxTE5vMlJPMjBrRldkUEhRN0JXUzZNZS1hTTlSV0pmNDZPeUZTU0JVMDdkUGI1WkZ6QXNDd0Y3Ync0dE54UWhJTExSWnBxNEpDcTFNclJ0SEx0LUlHTGZXRy1WelBWdHJ0OEdzc1d5LUcxcGtjSjl3U1FIVEJ0emtrdUkzRzI1OG9MMV9lOUlLdnFB?oc=5",
+     "title": "2 wounded in ambush in Cotabato City",
+     "date": "2024-04-20"
+    }
+   ],
+   "id": "2024-04-cotabato-shooting"
+  },
+  {
+   "date": "2024-04",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "4 MILF members killed in Maguindanao del Sur ambush",
+   "summary": "4 MILF members were killed in an ambush in Maguindanao del Sur. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 4,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPU1ZSaFI5dXBuamxNMFVUb0JRcmNwdDRmY01ERUVCeVBkLXEyU0k1N1JFLWpwekw1b3BkX2FRMm9fZ0lTY1M2S2NSdmVwTHFMcWZ1cURyaUtkZ0FKNHhSTEVIZTlVeDFMZTFqM0dsSW9Od1FnY01qbnNNSDM3U1pHYm9YSHJQRXNnd1VkSXU2dkhLV3PSAZgBQVVfeXFMTXBwTllZN0FmNURKcXhLcDZYRno2Vk90MGRuNmZJbXE0NW42WFpfNU5mQVZmTWFXX2dhVDQ1RGF4cXFqaFMyam03RWs3QVdiWTZSSEdUYVJCZ295aFA3OG9ZSmNGM1ZnYWQtU01KbTlxVFo4bFM2OHE4ZkNHN1lBOTNUSWhuV3JWVVRwQXE0aERTNGRDMVhreUo?oc=5",
+     "title": "4 MILF members killed in Maguindanao del Sur ambush",
+     "date": "2024-04-15"
+    }
+   ],
+   "id": "2024-04-maguindanao-del-sur-shooting"
+  },
+  {
+   "date": "2024-04",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Merchant killed in ambush in Maguindanao del Sur",
+   "summary": "A merchant was killed in an ambush in Maguindanao del Sur. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNbjZLVmtYNERSZ1F6Z0N4ald5ZFNiNm91bjdNZVMyTXBVeUIzOWVKb3RtRVRNdTVFQmZmUWt3YkVtNm1PUnk5ZlRLQU9Rbk9udlltN1B0WW9aUjZnejZHOGZROVNtQmNMQy1DRDNTX3hudFppR05tT1N6bHRnb21UUzBuWEI4TzRMMkQwb2ZxNUh5SVQwb3RTY9IBnwFBVV95cUxNN0NoRU42UXN5dzZ0UnpaYUxJWGFDQzlGRDI2N1otLTRWZDZ3QmlyZ1hER0EzNTh1bzRaanIzQ2x0TXlJeElqMUVzQ3A5RXFMclhvNHU5VElzMFpNbGJJNzlZRWtyMXVNcE1zbjc3a2NRelBmak1Ya3BRUnJDTU5lc3JBYkxtQ1Y1eGNPY1ROcHMxLWFxMy1DSUZXd0pTNVk?oc=5",
+     "title": "Merchant killed in Maguindanao del Sur ambush",
+     "date": "2024-04-02"
+    }
+   ],
+   "id": "2024-04-maguindanao-del-sur-shooting-2"
+  },
+  {
    "date": "2024-03-20",
    "type": "water",
    "kind": "Boat mishap",
@@ -6118,6 +6612,176 @@
     }
    ],
    "id": "2024-03-20-sibutu-water"
+  },
+  {
+   "date": "2024-03",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "4 Army soldiers killed in Maguindanao del Sur ambush",
+   "summary": "Four soldiers were killed in an ambush in Maguindanao del Sur that the Army attributed to Dawlah Islamiyah. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 4,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVVRaUXlQNGdpYXNQaGtNMXV2WTlfVnRYNnN5b2VySnhzQWNHaFRpQmVrRVBTQm9SQ2FhYnJiWEJkcHBEdHZzZ2ZfV1lJWC1WRDRWTFhBMDlkb0NFd3BrLTQta19xd3NZMEFfRG5RSHpYaWMxSE1jUXVrQjB6QU8wa2FTdENSakpOQzJUSnV3aVlSaDVi0gGaAUFVX3lxTE9nMlI2TFBram9wVUh1YXdwSW5hWUJ5Tkk2ZDh0eTNtdTJ4cmF2eVlNRlRyQnFnRXJTS0NDTnhibVE0ZHJwVTl5YVVPOTR2WlNFWWg2VEp3YnQzazQ5Q2ZDWkhBSTk4YmNPTG1ibWRJSnFxYXJSU1g0WWlITmk0SDVXWV9NUUQzWTNvSzRNeGhLOWxIUjZ4ZTliMHc?oc=5",
+     "title": "4 Army troopers killed in Maguindanao del Sur ambush",
+     "date": "2024-03-17"
+    },
+    {
+     "outlet": "Manila Bulletin",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNYXJNc3JaM09BSVlySWI0cU9NcTJIcmZYLV81dXplcUNoTXRIeDRteTI4djBsT1dXUmtLcUZxTkdHaGdWUHl6N0JmMm1hYWVfaHh3N2JKTG9Da0I5YkdtNnE0eUhQWm43Yk1vOUZ6SmpESWF3VGplTlNXXzVQeWRzemQ4U1ZueHJtZlVlM0FiVzktUDFrbGdJdXZxYkJGdVZ3eEE?oc=5",
+     "title": "4 soldiers dead in Dawlah Islamiyah ambush in Maguindanao del Sur -- Army",
+     "date": "2024-03-17"
+    },
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNHFnRTNoQlUweE95SnRoaXNaWjk2V0FPT1NUOUNTQzR1Q1lhaWZkYTE0TlFJaEJRNi0zUS1DNFBZTTFld0lDbjl4Z3pqRVVtajc3cWsxYV9TRXR5WERaT09VLUVpUWFLSFZxLU1fWVFnWWtrWm5SWXdNVlNJWVc4M01pd2x2SzVvN243LXlZRDM4bnY3S1FpVXpWUdIBogFBVV95cUxNRFN6WExYSzVWRnBUR3hNQWlXVzFrc2ZEMV9SeWdBYkg0WEJuRm5oaGMwVGlyNG51Uy1mTWgtM3RkaE5wblY4YnhvMzZiRVRsOW80dFhadkpSTDZWWmRQZ29US0Q4X1NKZG5jUEthOG5FMjBBX0QwSlo1QmxoMFRSQ2FWdFN2OGZqUGEtX2VIVUY2cUJWZmZHTU5LUldWY1N6dEE?oc=5",
+     "title": "4 soldiers killed in Maguindanao del Sur ambush",
+     "date": "2024-03-17"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUUhidXd6NmdEaS0xbzNWSk1KV2U3WHdCTU1hT0NNZjByX0pwTmJ3ZmRONVk5LWQyOVljNU1tbHRnajZKeUtyYmZLcGhvejFYb3dMQWRzUGhVb2k5NjRhQkVLZHBVdTJXejdhdUw5V1hON0JoNmp6NFV1MFM3LXQ4Q19zQ0ZnajNYWVJUc0hYdGtOSF93TU54bU9lNWdxRWhtczVjdXRfREFRamc?oc=5",
+     "title": "4 soldiers killed in alleged ambush in Maguindanao",
+     "date": "2024-03-18"
+    },
+    {
+     "outlet": "Cebu Daily News",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTVZXWVhHVkh3bTFkelo3dFU0NnF0aEd6bXNvX3ZHNGk1dHVoVHRZU0laQzFyMG5ZSkhjbkNKZy1OOVlWM2d6ZEltMUxJQUd6MHUtVFhiTGttZXhyZ00xcnVmOHlEcGpIbm5RemxOLWZSUTVQZUVZTTB1dnh0dkdqREREZlVBLXRLeDNhX0ZYaU83YU0zRzhV0gGXAUFVX3lxTE5NVldZWEdWSHdtMWR6Wjd0VTQ2cXRoR3ptc29fdkc0aTV0dWhUdFlTSVpDMXIwbllKSGNuQ0pnLU45WVYzZ3pkSW0xTElBR3owdS1UWGJMa21leHJnTTFydWY4eURwakhublF6bE4tZlJRNVBlRVlNMHV2eHR2R2pERERmVUEtdEt4M2FfRlhpTzdhTTNHOFU?oc=5",
+     "title": "Maguindanao ambush: 4 soldiers killed in attack",
+     "date": "2024-03-18"
+    },
+    {
+     "outlet": "TV5 Kapatid Network",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTEpjcGJfSlFhNEFnd0JWblAxbS1lTERlYzVISV80Ym5CbFAtTHFiMnY5ZkNOLWN2QjZjSng1Q1AzNWRCX2pickZvT3BJVGhWWDI2UlFZYnRZS3hZOS1rbmlSMWlzUzFhVjBScjVLZzBKQ1hvVG01RlZYdVhFemttd29aODBac0FvMlIyUmM5MWxBbE9GY1FSZk0zUTVqTm1za0lHVXVVY1lJQndpa1ZjQzhkbGJIR3VkLXBVM0hKTQ?oc=5",
+     "title": "‘DESPICABLE’ | Marcos condemns killing of four soldiers in ambush in Maguindanao del Sur",
+     "date": "2024-03-18"
+    },
+    {
+     "outlet": "Panay News",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVThadzBzRVo0bjlSelQzeWlYcWNSNEt3UWJ6R0RHNm5kdFFjZUNlSnk2WmdFUm1wRXFpQ1BxOXVId0NNdHYyTWJSY3FZa2F0Mng5Uk1tWktiMTFhazZwdnotb0ladGk0QjZwNU13ZlJxdFM4X25nY1lIT19PeG9KaXpLUlhuTmx0VlFqNw?oc=5",
+     "title": "BBM vows justice to soldiers killed in Maguindanao ambush",
+     "date": "2024-03-19"
+    },
+    {
+     "outlet": "Rappler",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaDVRdDVIOFdIaDBQdDljbnZ6Vi1UTHo2WXlFME5tMEhQaVJiRWRVazVPTTVXMXFJejk4bXEwMHBleGI5aXdqNkF1QVJEQVUzQUowdU9mTXUteDlqdU1WWWFJMGxIYm02ZUg4WW1NbGtaRW5sZ3Rpbnk2NE5qNF91SUp2MTU1clRaOEF6S3VER0M0QXFEbGROTEFRRkx0dnp4MnRLT01R?oc=5",
+     "title": "BIFF warns of more attacks after Maguindanao del Sur ambush",
+     "date": "2024-03-19"
+    },
+    {
+     "outlet": "Manila Bulletin",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNeXI2ZnE5YUNIajNWX19uVFdzaXhoMnZwZHRTVTZCaWZ5bW96QVZrX0xnSGlJbkJiYmxScUtzc1JOc3kwTnE4WkNidGJRRjBEZlBCSDdSelBRUFlNbGNiV21nUE5XeUhjd1luUV9aWkw3Vng0cGwyN2pEV3VGYWZ0V2FCaDBwWWJGX1hKdmkybVdzZmltNXQ2UXBfdVJXejFPLUZ5UWFabWcxZw?oc=5",
+     "title": "Why AFP thinks Maguindanao del Sur ambush is a retaliation by Dawlah Islamiyah",
+     "date": "2024-03-19"
+    }
+   ],
+   "id": "2024-03-maguindanao-del-sur-shooting"
+  },
+  {
+   "date": "2024-03",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Cotabato City disaster office chief killed in ambush",
+   "summary": "The chief of the Cotabato City disaster response office was killed in an ambush in Cotabato City.",
+   "province": "Cotabato City",
+   "municipality": "Cotabato City",
+   "barangay": null,
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2238,
+   "lon": 124.2467,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQd0Z2MkRBQzBCNldTVDNXLU9ScTd4Y0swWjVmSlViLXVtTUNGTGFieXN6T3R5alRuRTVGcllzazRmT0pMbFh4dDJHcThwUk9mQndQamJrZWdfa2R1akRKdE05SF9FajV2aUd2M1p6TU0tcWVXdlpNeU93dTF5ZUFzWHRFUVVPNk9aTkFZak1sVjE3TGRhbFo5NGtBMi1HZWRiek1VcFV1azlHd3PSAbIBQVVfeXFMTjl4MFB2ZTdYeF9ubWxUOEN2R0pKNEhfZENacktPeDRKX01fdWY5SUIydTlFRlVpbkxnal9QZnFJNURHLXp3RDVCOEhFZlZKaDBWQmlYV3RsWWVyZUtiSFRlOEJQTjJKSzhrdml3UGVvWEZ0MGRyMm1yd1ZxalhtSHpySHR5a1VaUTNWS2UtaUpQU3RZblduNW5ka0VWREFEWWdxTHA3SUVKSkl3b2ZFbnJkZw?oc=5",
+     "title": "Cotabato City LGU disaster response official dies in ambush",
+     "date": "2024-03-02"
+    },
+    {
+     "outlet": "ABS-CBN",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOaWROWW9KS05abjJXak1HMHo1TlA4dy1YM2VRLTl1dDFaTXVNX01VYmZNNUk4c0lXME44VnV6R0owZDl5X3pyOHJYV0RQb0t3RE8yeWFYb2RtdzNFWUcwbE12WGF0M1c2UEt3QnNXM1pZS0dLLThHRlczUVA1ZmxPaGhpYWI0YlZxOGYydDFsOEpfcE56RnFPa2hOaGxEYW9fQWc?oc=5",
+     "title": "Disaster office chief patay sa pamamaril sa Cotabato City",
+     "date": "2024-03-03"
+    }
+   ],
+   "id": "2024-03-cotabato-shooting"
+  },
+  {
+   "date": "2024-03",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "2 men killed in ambush in Maguindanao del Sur",
+   "summary": "Two men were killed in an ambush in Maguindanao del Sur. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 2,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBDcG9VMVJGVHgtb0JwMEdseUc5WThUQXJ4RWNUWUxMVkZiV1JIeXpCWm81eXVLZWR0bHQwbC1GdlZyMkVYRXZKZVh1VzlKRzFU?oc=5",
+     "title": "Hunt on for suspects in ambush-slay of 2 men in Maguindanao Sur",
+     "date": "2024-03-01"
+    }
+   ],
+   "id": "2024-03-maguindanao-del-sur-shooting-2"
+  },
+  {
+   "date": "2024-02",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Government doctor wounded in ambush in Maguindanao del Sur",
+   "summary": "A government doctor survived an ambush in Maguindanao del Sur and drove himself to hospital; two suspects later surrendered. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 0,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Rappler",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQUXQ3MDN3OTVhWWJKZGZRaVdnRUFmSFljX0psSVN1czFBX1JrY3dPMW8wMFRCWTNFUDVHRkVXcDhUbjlGQVdLV0pTNmczeHphMGdIaElfSWZVZm9UbkZsWGtkdXBpMjNfaDNSYzg3VGNIRnp3YTZ4dHh4dl9xNVZVTy1BNHNFT1NvLTVBY2g0emVZQUhTQm5hRnptQU9BMWtpWDNDbVFJTGNDNWotajQxcDNoMWN3UTVIQzBaNFBpdjFwUldP?oc=5",
+     "title": "Doctor survives ambush, rushes self to hospital in Maguindanao del Sur",
+     "date": "2024-02-03"
+    },
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdXJyU19oeHN6UjN4aXRLVk5abkw2UEZjWTdjZkFoeHA3ck92MmNhYVB2VjZpZkVIanA1S091blVVLTRhRGpCNXRYTGNYYnpJcUhHSjM4RXg3LU05d1BOdE5LamNpMDI1RlJUUVp2S2NyS2w5My1SZzFkVUozV193RnJHd0JsQVQxM1owLW9CUGZ1Z0JhekloeUdQeE5QSUNIaVowc9IBqwFBVV95cUxNd2dES2tuTnVBcnlLSWp3Y0IzaEoxTlRia0lCZHJsd0pPOUFhM25GUVRHZ3gxYXF2dUdfTnpHNFRnRWNSMlluNTYwTXFjV2MxTWwxVG9ZV1FHdUNDY3lIc0tXdjEyZnJVQTdoWGZXM3pxR2ZJclpRaDBZWHJDeFBpNUxGUGJwOFFWQVI5XzRNdnFCXy1pX3d4bXJWclVJZl82c1BXNGdaT3lqcVk?oc=5",
+     "title": "Ambush of gov't doctor in Maguindanao del Sur condemned",
+     "date": "2024-02-14"
+    },
+    {
+     "outlet": "Rappler",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPM3NVNDg0UjlfY2FaZXBsU0FoZVMtZEJLUEtrWWRLLWxJSlVuZlUwc0d3eWhwdk81VFF3bFNYVlVkZ0x4WlpnbG9Lel90VmhlV3RXRXZSc29SUUZaTUVpYWYxRlc4MnNVUlVHUlRoM2otMS1CZEFXYXR5MUlkRU81UjN3R2Fod2tVT2cwdjRZb0NJWkY3bnRqSXp1cndPMVA0ekFGUGplZjVXX1ZhcWpyeDFTRlhITmpXNGpyZDFfYy03bWo4eGZwUGdmTTdidTBtWlFHMg?oc=5",
+     "title": "Two suspects in shooting of doctor in Maguindanao del Sur surrender",
+     "date": "2024-02-15"
+    }
+   ],
+   "id": "2024-02-maguindanao-del-sur-shooting"
   },
   {
    "date": "2024-01",
@@ -6147,6 +6811,136 @@
     }
    ],
    "id": "2024-01-lamitan-road"
+  },
+  {
+   "date": "2024-01",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "School official killed in ambush in Maguindanao del Sur",
+   "summary": "A school official was killed in an ambush in Maguindanao del Sur. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOelNHNUQxUURuTFJCT1NleFN2S2I3Wktvc0JXWHdGRjZ2SVlGOW5tS1F0QVhRdFZLSGJFR0FtYlM3MlRPTjY5T2JGaVp1NUc0WlZoQVp1YWxiVmdmOUk5M2lEQmFlcWFJTS1GVWx6TllVSlZkdVpBQ3JXQzNkNGRhSXV2RXQ1LVhmRG5XM1hSaDBlaFZCUTZfQ2YxajFfNjRSMlVhLWhJRWt4UTdU0gGzAUFVX3lxTE91VXJNalEyRTN0NExpRDZCLWlWck8tZzNTUGhSME56STFqYW9qaFVpNTdiQVhxeUp1R2Q4S05NX2FmWGlhbkNyN2tIQUZKQkV3aFlFZkZmXzBBc2FRaENTM09SY2JnanBYLVM2WkpHaUF0RU9JVFJGSEhYMkhNcVNHZlBWVk5TRVFGZHZRdDF6ZXQtd1hYdXdXcEZ1bGQxYnd1SFRtdzJtalRDLUV1cmY3Y01V?oc=5",
+     "title": "Another Maguindanao del Sur school official perish in ambush",
+     "date": "2024-01-23"
+    }
+   ],
+   "id": "2024-01-maguindanao-del-sur-shooting"
+  },
+  {
+   "date": "2023-11",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Basilan provincial board member shot dead",
+   "summary": "A Basilan provincial board member was shot dead in November 2023. The report did not name the town.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.5479,
+   "lon": 122.0458,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Manila Bulletin",
+     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBELVJUTnNXaHQ5OXhxZEtOalBLX2hkQnZiZGF4Ni11Wk1zQ0MxeEtOcnJFOXhKd3dGQmpMdWk3bldiaFBSakxVdlc3YnpBV2l1aTE3U3pBUG5UMEtmbm1hUFF1dkNXbzZ4bTJBcTlxSjN6dV8xWkNmWQ?oc=5",
+     "title": "Basilan provincial board member shot dead",
+     "date": "2023-11-08"
+    }
+   ],
+   "id": "2023-11-basilan-shooting"
+  },
+  {
+   "date": "2023-10-30",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Man shot dead at polling precinct in Butig, Lanao del Sur",
+   "summary": "A shooting at a clustered precinct in Bayabao Elementary School in Butig, Lanao del Sur, killed 1 person on election day, October 30, 2023, and voting there was extended.",
+   "province": "Lanao del Sur",
+   "municipality": "Butig",
+   "barangay": null,
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.7433,
+   "lon": 124.3101,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOV2JNcFVIRUZaNkV3WWwwNE5QcTcyeEhsMUpHakdxTmFMOEZJNWtDUHVfUnJEcW1UYmUtcXZJNXlGZHl5UXRKbkJqZUd6NlFwVTA4eUFxbjNTMldKdU54N0doSi1temwxRU80aG8wRHdwMXczbVRNVDJjTXlGekxrVHZMNWRwMlRKQlJ4VDRfN0p3Wlp2dHNKNEFMckpuX1F2RzE1VVltaVlYSkd0X09UTUoyZzlWZDA0Q1hrTS1ob21NMzB4bTlGRjY5OHlHZjl1dVkybg?oc=5",
+     "title": "Philippine News Agency. . WATCH: The Philippine Army's 51st Infantry Battalion said voting in a clustered precinct in Bayabao Elementary School in Butig, Lanao del Sur will be extended this afternoon until tonight, following a shooting incident that killed Madi",
+     "date": "2023-10-30"
+    }
+   ],
+   "id": "2023-10-30-butig-shooting"
+  },
+  {
+   "date": "2023-10",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "3 dead, 2 hurt in election-related gun attack in Cotabato City",
+   "summary": "Three people were killed and 2 wounded in an election-related gun attack in Cotabato City in October 2023.",
+   "province": "Cotabato City",
+   "municipality": "Cotabato City",
+   "barangay": null,
+   "deaths": 3,
+   "injured": 2,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2238,
+   "lon": 124.2467,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa1BlWVpHcWpiSzdsaURITVJKbWxDSEpKQW5OWEpXUUVLc21LTElQZUxPMUVsaEd1QnJXc1o2NElDNWh5a0gzS3NGVTlMLWo0OEZtc3NtcjZ1ajNXY2RTOExqS0x0SWtaLU9fbm5HM0lQSWpmOU92R0E0UzRsV3c1N3VuRVJFYWs0NzlCeC1sZ3F2VzV1dE93MFNGdFpoZkdFZnpSY3FnSWlJUdIBsAFBVV95cUxPTzNxU2ZxWVh1NEk1dWxJQnFXd2dtdjRjSzh5LVlIRGp2d2Y4ZEZaZTFnRkdyeWZJdWpuX0ZCNXhQT2pnVEdzcl9PU2x6ckgyVVNmZmEtT1dTLS1wakZFeEludjhBdXhoYVltVEVJeEYxUlA5NWNscUFqaE1SanZleVAzOTdtLW4yZENDdzZab1lUaE1GSUF1cDBjUUM4MG5pZmlndmpVZm1UWi13WVg2QQ?oc=5",
+     "title": "3 dead, 2 hurt in Cotabato City election-related gun attack",
+     "date": "2023-10-24"
+    }
+   ],
+   "id": "2023-10-cotabato-shooting"
+  },
+  {
+   "date": "2023-10",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Barangay chairman candidate killed in Lanao del Sur ambush",
+   "summary": "A candidate for barangay chairman was killed in an ambush in Lanao del Sur in October 2023. The report did not name the town.",
+   "province": "Lanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.8319,
+   "lon": 124.2537,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTW1BdFBzSFFKZ0l3b2Z2VHJZRUYxdEcwUDY5X2pzaFZ5WFQ5S1FnOEp0T3dYUE9XS21BUFhSMjhmbEJMZkRnRnpPQ3g3WWk4bU9PYVJ1Slh6YVlGXzlRVS1fbHo1bDRhcExvdjFETHUyRkVJamwtYWxrbHB0My1tcFpGM3k1aGlCdTVWUlh6c2tKNnA4bHE2LTNBVWtzR1NCYUHSAagBQVVfeXFMT21RQURJSjg0Y3BnelpoRGZVLWpoOFZSc2tEUm5DckpLWS1KZ20wdGdSbThCcno1M2JxUHVVaEJrMnZ4a0NpaDRMSHVkQVVMTlBXSVNOZGJ2RHJHV1RFMFdtWHVwYVNad25hcEtrcG5kOUlKRmlrN2JoUm4xWVROV0xBcWN3QTYtbjc5N18wMWxVSGZ1bER5cTlHTGJYaTlTdU1Ubm4tbHVS?oc=5",
+     "title": "Barangay chairman hopeful killed in Lanao Sur ambush",
+     "date": "2023-10-25"
+    }
+   ],
+   "id": "2023-10-lanao-del-sur-shooting"
   },
   {
    "date": "2023-09-07",
@@ -6211,6 +7005,342 @@
     }
    ],
    "id": "2023-09-cotabato-fire"
+  },
+  {
+   "date": "2023-09",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Aspiring village councilor slain in Maguindanao del Sur ambush",
+   "summary": "An aspiring village councilor was killed in an ambush in Maguindanao del Sur in September 2023. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxON3d4MkZPWGRIWEpCcV9lZjM1LUhUcW11VzBJUURfVU5DZE5sUTFNaHkwall5clBxWWkzZm9CcC1DUUowNWtlaUEtZzJRNDA5MXh2ckFoVnlzOHp4Ni1jdkFsWHgwNjhDMExFNzJqckJzbGpmXzZmVW8tWDNNTi1tcm5BbWJPWXBRY0Z2NzByLTA3UDB0RjBIZHJ4SkXSAaIBQVVfeXFMUDh6N0JBWXlTeDI2TTFGTWRubW5wVXBiMGhUOElTV1hSaC1BWnZoc01yaE1TLUpkNndrWEo4dGNkUzNUVlExT0FjdHUzUWt3enhmR3pWaGk0SFc1QkRWT1pETzBFTFVqXy16VThPbG9QOWRBWFd6eDJuLXNqWElhbXdFelpQeVl3Ynl5NjdzUVFOMEtTaExFNmxKQlc5ajF1ZXFB?oc=5",
+     "title": "Aspiring Maguindanao Sur village councilor slain in ambush",
+     "date": "2023-09-13"
+    }
+   ],
+   "id": "2023-09-maguindanao-del-sur-shooting"
+  },
+  {
+   "date": "2023-09",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Soldier killed, companion wounded in Maguindanao del Norte ambush",
+   "summary": "A soldier was killed and a companion was wounded in an ambush in Maguindanao del Norte. The report did not name the town.",
+   "province": "Maguindanao del Norte",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2371,
+   "lon": 124.2928,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVUgtRFA5YS1oUVNyWDhub2l3RDExVmVpeFdpYzVVTTlCaks5NWxTdzJBTkJMT0UyRVRNNnVIQTc5c0Y1VTZ4ZFdBZ2hQLTduQWdvelh1YjE2MzZrZnowb3A4WlQ0NENBNmdkYUkzMlJpYnZBek4xdnV5ZmoyUmNJbU1ZWWhoYnVmYkUwMWVNcmJVRnhpcGdEMGVMZ21YLWNsR1RyRHZxYWNLQdIBsAFBVV95cUxOa2Z1c19NRW54bUpnS0dHNDk4dlk1UWZLTkZ0RERQLUhzckx2Q3lFejZyQnh4ZWR3dGc3OC0zT1Q5a3FfTVpDZHVZajMtQ3ZaSFJFb09tWFoxNDBjOFRfaHZQLV9FVzZSdW40NFNxeC10eVNNXzd4OXZVdEZJNjFkQWNYckhqM2NNZ1ZUanc4R3NNRU45dHk4UFRsZGhvSmhQRndCckdfYk1pY0F5eC00cQ?oc=5",
+     "title": "Soldier dead, companion hurt in Maguindanao Norte ambush",
+     "date": "2023-09-30"
+    }
+   ],
+   "id": "2023-09-maguindanao-del-norte-shooting"
+  },
+  {
+   "date": "2023-08",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "1 dead in gun attack in Cotabato City",
+   "summary": "One person was killed in a gun attack in Cotabato City in August 2023.",
+   "province": "Cotabato City",
+   "municipality": "Cotabato City",
+   "barangay": null,
+   "deaths": 1,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2238,
+   "lon": 124.2467,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcHJram1aRDc0UkNFX0thRmQ1V09Sa2dVNThXUHBBTW80RVJLRmo5SDVDajQtTW1KREwzWUJYbkVqRW1IRkpQZzI2X3o2a2tfT0ppNE9tZEtuRG15Z1ROa0d2c1Myd3RSMVF3OXJ5Ukl0UUF6OHVoOWJjbFJXQUZwWmdpNjhhWFFKb1QzX1pMU25tQ2duenVlSG1rbnhnbC1f0gGmAUFVX3lxTE1mamQwd1hBNm5Ib2cwMTAzUmhvUU1PSTd2RnhQV0J5MzAyMVlVWlBMSmhkWFFBa0NXSjM3eTVyZVR4eDg1OVlra1o5MEZQNGVsUkFVRG1qNURucXB2WHIwNllOemtQYjlBN05wS1djSFlQSXlyODVqSnhMb2pBRHFDQTJiRk5iRHZpWGEwTU1aZG0yVk5YWTUycXQxMmxweVdhMnhfUWc?oc=5",
+     "title": "1 dead in Cotabato City gun attack; bounty up for perpetrators",
+     "date": "2023-08-15"
+    }
+   ],
+   "id": "2023-08-cotabato-shooting"
+  },
+  {
+   "date": "2023-08",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "2 killed in Basilan ambush",
+   "summary": "An ambush in Basilan in August 2023 killed 2 people, the death toll rising to 2 in later reports. The report did not name the town.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 2,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.5479,
+   "lon": 122.0458,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Rappler",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPSXhDanFVc3ZxZ2FCZlhZVU1reGctb0tkek9VYUt4SXVhZkhBQmRLSkNqQzBPX1E1aEFiZ0YzVGowVmI2dWE4QWE2YnhieDdxb2kySW5CS0VZbDhNRlE2TkN3UEZ6RTNudU9rOW1WcXYtLWE4YUp1RjRTVTV2bXdsNXp2UVNzd0xSb3k4Ynd6QQ?oc=5",
+     "title": "MILF to probe if members behind Basilan ambush",
+     "date": "2023-08-12"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5kM0lkWHFQV2Q3UEt1bEl3b19zdmZOeGZQN01UYjhUeU5HOUZ2LWYxOGZIbGxDaS1xOFVfN3F6emo4UkVwM1ROX0J4dDRoWldNUnhXRTlYMjBoRGItMGVwd19DUHNsNWtRcXhXNE5XQkhvNG5KRHphNDBPVFHSAYIBQVVfeXFMT0ZKTjlSV1l1SUNMR2J2SUVRN0V1cXZ2NEFBNFFiT2lxbFRYVE1Xal9fS3ExZWp0THN3MlhaVG5YYnUyY3R1ZklYVHdpY08yb1FFVGlSMllpX0ZvLUFCdzEwVjVPeWgwMkFseUlEZkdZaDlHMW5VVHYwZFRXbzZuZ2xpdw?oc=5",
+     "title": "Death toll in Basilan ambush now 2",
+     "date": "2023-08-15"
+    },
+    {
+     "outlet": "Rappler",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORlRqSkZrOEJJQTBuRDREX285M29GRnFjbExha1pDR04ybV9sYmhGYjNTNkxPSWkzbFBhRThidXBkRGR4dzhHajViZlhQaDdfeU4wV0NWeXNXQ290cmlEckdxaVpTcjhpS1UybXlKYUE1dlNHUXdUakxreEhCSHJJS0pqOTlMQjliNXFkeXVSOFFyZ0dnSFBNSVNBaw?oc=5",
+     "title": "MILF members behind Basilan ambush, military confirms",
+     "date": "2023-08-17"
+    }
+   ],
+   "id": "2023-08-basilan-shooting"
+  },
+  {
+   "date": "2023-08",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Soldier killed, 9 wounded in Basilan ambush",
+   "summary": "A soldier was killed and 9 others were wounded in an ambush in Basilan. The report did not name the town.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 9,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.5479,
+   "lon": 122.0458,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQktRWVREQ2dSODBJNzYwcHg1amhkdUZLaVFiQjRNNUN4VWR4ay1UejdQbE5DNU9iSU9KUnRkVG81WkJHNEdYdlBoR3U0eDZtTU5nRUdNanpXV01JcDJjUkY0a1U0b0gxcjlZbW5xenYyRGpSWF9wd3Y1UWJFVmlISVJmMkHSAYoBQVVfeXFMTUpldW9jLUVLdGNVUzhzZEhOV3RHa3FFaWtwbVV5YVJnME1lT3R4bkladS1RaU9uZ1BxdTZ4R1BCakRLWFZNR0UzNUptLWFwQjF4VmxUdU1NN1RsWlJkWU1sWkJnVnBMTHdFaHBsc2prQkhLc1Q0UFBLTEl6YzY3RVFkR0dTbk1fZlN3?oc=5",
+     "title": "Soldier dead, 9 wounded in Basilan ambush",
+     "date": "2023-08-14"
+    }
+   ],
+   "id": "2023-08-basilan-shooting-2"
+  },
+  {
+   "date": "2023-07",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Basilan town mayor's trustee shot dead",
+   "summary": "A trustee of a Basilan town mayor was shot dead in July 2023. The report did not name the town.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.5479,
+   "lon": 122.0458,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdDZJVEJJVUg0ZDNYVkdqMnRSWll3Yzk5UzdLeHFxWEt6Z0NGX05penhUb2pseUt6Ym9tWVkwUjBQVDh2b21OMHBUQ2dKVmRDR3pNVFlfTGpqVzQ3eHJpSHgzc25RRFhaUTBfZE5pVW1VWnVqTHVBMFlrWVJjU0JTWkwySGkyeDNxZV9sRTRRd2Itd9IBmAFBVV95cUxNRHJOS3BGQUZmNmV3UmpfMTMtbnVqYU5VelBhR2I3Um5XNnl3NF9JTk8wZHMzWi1uZ0JoX25PTzBZZG9NUzVHZDNid01XUXh5YVUxMWxZMXdYYWo1WThxMThzYkV4T1hJSFBTSmRCbldDQTBtNUpwRXhJVmMwc3lEVWhMNzltLVBVeUtfMHRfUWVjcXFLc3NhRw?oc=5",
+     "title": "Basilan town mayor’s trustee shot dead",
+     "date": "2023-07-27"
+    }
+   ],
+   "id": "2023-07-basilan-shooting"
+  },
+  {
+   "date": "2023-07",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Former vice mayor slain in Maguindanao del Sur ambush",
+   "summary": "A former vice mayor in Maguindanao del Sur was killed in an ambush in July 2023. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWTVScG5qcnljazhScldBYXNGeHdwR0dTdUNLZVV5THRfaFE3S0xTUzBjZ3JYV0Z6YTdySjBaTEVpWEdNWUFzalFaUHBrNU96dlhEZlhRNng3NFNsUjZKSjRvaFZfbWcySHkzSU91QXZlbTBCVU42cmNjdllyYWYxdVdlZlJwQ04tRVJSRjhnUWRKTWEt0gGaAUFVX3lxTFA1bU9JQ0FtMUIzckJnenBfTXREN2xEMjU1Tlh1VEM1bTRYTmJSUDNSZERDQ1pFSUdBYzhvaUxaNVZhOHFrbUxpNlZTcXBVbDdPSWFld3kyenZWb2xNX1JzSy1vd0FQaHZGNHNRb3JobEJyLVlYRTFUQzZFY1kxb2RMa3l0RHBFU3FfY3VzUkc3bXlDa1hGSnc3RkE?oc=5",
+     "title": "Ex-vice mayor of Maguindanao del Sur slain in ambush",
+     "date": "2023-07-12"
+    }
+   ],
+   "id": "2023-07-maguindanao-del-sur-shooting"
+  },
+  {
+   "date": "2023-06-14",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "2 police killed, 4 wounded in Shariff Aguak ambush, Maguindanao del Sur",
+   "summary": "2 police officers were killed and 4 were wounded in an ambush in Shariff Aguak, Maguindanao del Sur, on the night of June 14, 2023, according to PNP-BARMM.",
+   "province": "Maguindanao del Sur",
+   "municipality": "Shariff Aguak",
+   "barangay": null,
+   "deaths": 2,
+   "injured": 4,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.861,
+   "lon": 124.4445,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNc1NRUVdfLXEzVTNzWERJZXVVVlZVQWpyeWl4UGpRZEdIVk9vNHkxNTAwRzl6elhZTlBSeUFpaWlLa2lyYXRaQlhWempiOHkyaVlQYlUzd3dKYTQzaWpuZmhaUmIzUzd4VElQeFRmME1SUkdicEFncEZNc1NTdG1DQlZQSWxfbFp4T21LalhTLXpFWXlOcnc3WEU1WWZzSXhRTjR4d1VuTEhOa3ZDbUVoOGVWbkgwNndvV0RqRlVVa2xKNkd5aU1QSkJJQ3I5emc?oc=5",
+     "title": "NEWS UPDATE: 2 cops were killed while 4 were wounded in an ambush incident in Shariff Aguak, Maguindanao del Sur on Wednesday night, June 14, as confirmed by PNP-BARMM Director Police Brig. Gen. Allan Nobleza. | via Patrick de Jesus",
+     "date": "2023-06-14"
+    },
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPb1NzSE9iSW5RSkFPcjBiaWFsY3NoMk9HZWtCeUU3RmJqQ1UzMVRScXd0eGlKTUxCb0djaHBBbkhSODhSNHNzMXY1Z0ItQWJWa2lNekZ6WTdCdnd5Qm1ZQzk1S0ZPbkQ3QkZJR0J4ZFQ1bVlUUzN4b3JDRFJBTkJBbU1MSXNTNUU3dUw5YWs1NUo4d0dOejluUWVCU0dSSFFhMG1ta3k3cDA3VzR5YUdJ0gG2AUFVX3lxTE0xOFdzR1ZDcm80SWNYa3AxWDhqcy11eFlELW41ZzIzUzZQbDloZFhKQjZKSDZMa1lYQTNQRl83STJPY01QYVBtR1RmNXdFSzFobFlGWXBZT2pRRjc1bGN3NTIwVm95TkVyZ1lOOEJNWDFiQzRVZmR1X2NFVXcxbjdLTnY5a0dfalBBOUF1anpJRExlbTZTQkxMQ1FHZUs4SW12aTJMd3BFZC1URzBtUTFTZDFHUkdB?oc=5",
+     "title": "PNP: Ambush on Maguindanao del Sur cops 'will not go unsolved'",
+     "date": "2023-06-15"
+    }
+   ],
+   "id": "2023-06-14-shariff-aguak-shooting"
+  },
+  {
+   "date": "2023-06",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "2 police officers killed, 4 wounded in Maguindanao del Sur ambush",
+   "summary": "Two police officers were killed and 4 wounded in an ambush in Maguindanao del Sur in June 2023. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 2,
+   "injured": 4,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Rappler",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQc1RnWV82b1Bybk8zZTdGSHdaLS05REVxZHhvVjhoVGhPejJYdzR3OGZSamZhUkRrOUZIZzhjUUF3eDhnZkV5S2Y0N042Yml2NnFZbHFkclNQWTkxUzhab2ZvTHhSV2NlaGE4STd4dEJtcU1YZ0FhUVFBQzNsQlNkSV9lSWJjSlhVZkEzMEt4Wk8wWHRsc1VJR01Ud2NNdw?oc=5",
+     "title": "2 cops killed, 4 wounded in Maguindanao del Sur ambush",
+     "date": "2023-06-14"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPX1VPNHFKWkhxNFJvd1YxMDRlTnlhTUNIYzdGakl0YXhrRDdFTGNPUkdlRUIwOENDbnJHb1ZQQ3B6OWpzOHBHZXUxNnVjZDZDdEhDRDhxblFaTGxYQzBoZ1VQTy11VTJnTkVhUUZzaXlrQXNFLUlORUpfVW5pdzQ0cmRCeGVkb014dkV4YkEzeFTSAZYBQVVfeXFMUDBTNlVSV3Z1SjJ6UlpKNkNpbGVQR0hBdWlRakVOaktYaURNTW1LNFdRNnRIZVgtajItblFJa01QaS1OZWpOVlV2eDk4M2kwZTNBeTVmVG9JeXpmaUJmVWYtT2poeERxdFBnNVF2cE12M2tTYzFHRDNHWmNzNnpxMF9vRUpEUGFwbEtsZEVPXzkxaDZ3dkln?oc=5",
+     "title": "2 cops slain, 4 hurt in Maguindanao del Sur ambush",
+     "date": "2023-06-15"
+    }
+   ],
+   "id": "2023-06-maguindanao-del-sur-shooting"
+  },
+  {
+   "date": "2023-06",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "2 fish vendors killed in Maguindanao del Sur ambush",
+   "summary": "Two fish vendors were killed in an ambush in Maguindanao del Sur in June 2023. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 2,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZHFNeUhSb0ZFTXNfbGlLSVBNVUVGVElJb0FlOFFsbHZ4Qms1a3ZyM0RVUXo2Tjl4eXM0WkJYR1lEMUVtMjVyMzcxeHV5Njh1Vm1Mc0lTR0UyaGxBR2FwQ1YtSWl3ckhPdlJIUGlickFJR1BsT0pIaFJ0NnR0QlVzbTFXSEY4SE9SckFRV0M4b1ZwSnBJV2xTQXhYRG05UdIBpAFBVV95cUxQeXp6ZmRYT0ZyelF2OC1sZWJKb05pQy00Q004cmNrYWtkM2wtRThQa3dBUDBxN3NmUEswUGxLYUhlVktTQmhzVTh3RWdOVGJkb3B3NndpLWtwM3FnRXp2dWRFaU9YZDd1QmdyTGhjVE1oY0hmdDBHZ0VZZUxmSTczeXFjbm5wX2tZRlRqeUV2YXR1ZXE5WTV4cXNPQVhzTE9JX1dGcA?oc=5",
+     "title": "2 fish vendors dead in Maguindanao del Sur ambush",
+     "date": "2023-06-26"
+    }
+   ],
+   "id": "2023-06-maguindanao-del-sur-shooting-2"
+  },
+  {
+   "date": "2023-05",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Government nurse slain, husband hurt in Maguindanao del Norte ambush",
+   "summary": "A government nurse was killed and her husband wounded in an ambush in Maguindanao del Norte in May 2023. The report did not name the town.",
+   "province": "Maguindanao del Norte",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2371,
+   "lon": 124.2928,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Cebu Daily News",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcjA2TG54b3lsNGt5djVJcVdvTXJZMFJjWTBWTVluRzlaODBuU0RCREJFOTByUnF6TUlYYTRNaFB4VWVoYl9CbHFiLTJzNmlPVUVPYzZuaE82bk43SnhPV3ZoTmdvSnRtZUZkeHlkemVBejF6WW5PY0lMbGo5dHhOQWdYZUt3UFBGZEFaNGxadGROWlRYYWo4WUtVZm05MzgwMzM00gGoAUFVX3lxTE5lV3ZITlFFWUNybk9WRW8wVkc5d2NxMU91MjJoOHc3YmF4aS1zR1A5clhUYUl0eHU3NEhOQ1RVcjRtSmVRa0RySHhuQkpOODBPenUwakFhRmV2MHNWdGVUTGdOTTFFVVVfSk90NVlOTkJwSlM5UWRFVlZGZzZvYTJjOXlxcDh5ZDYwZDFWSlRNTE5sRTdCbHQzOXdYTnV3dnFVX243VTZOSA?oc=5",
+     "title": "Gov’t nurse slain, hubby hurt in Maguindanao del Norte ambush",
+     "date": "2023-05-29"
+    }
+   ],
+   "id": "2023-05-maguindanao-del-norte-shooting"
+  },
+  {
+   "date": "2023-04",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Maguindanao electric cooperative executive slain in gun attack",
+   "summary": "An executive of a Maguindanao electric cooperative was killed in a gun attack in April 2023. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRnU1VGJLTEdWU1NRdUpfY0pBdnRQVGliTF9VbXRySHpiZzN2ejZlbmE4a0ZWbUdzTlNlenUxNEc2TUN6c3hldEFoLVNhMHRPRGN4dm1jR2syemEtWDRsSllrSEV5MzVfeVlDeDNlS1dtR0ZZb1NsWl9iNlVpTDZick1YTlpXaHNFSkN1MjExWEhOTFXSAZgBQVVfeXFMTmR5Y0E1WE9zUkJ3U2ZCTEJHUnRWNm5WbmZHbHNlaWRnYXVYdFpDcUtLZXRtdUl1WWJPNTNUUHB6Wjh0V0Zzc3VoRmhkS3EzNnJ6YURha21HS2NPeUFfUVVCekVydjlMbWs1RWhYSE0yc2RjM2NJWklPN0lMOEhMYlZRU3ZudkF1dmpGTjgwcnhOQm9aenhUcTY?oc=5",
+     "title": "Maguindanao electric co-op exec slain in gun attack",
+     "date": "2023-04-19"
+    }
+   ],
+   "id": "2023-04-maguindanao-del-sur-shooting"
   },
   {
    "date": "2023-03-29",
@@ -6455,6 +7585,324 @@
    "id": "2023-02-hadji-muhtamad-water"
   },
   {
+   "date": "2023-02",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Lanao del Sur Governor Adiong wounded, 4 killed in ambush",
+   "summary": "Lanao del Sur Governor Adiong was wounded in a late-afternoon ambush and was reported in stable condition; a special task force was formed to investigate. The report did not name the town or give other casualties.",
+   "province": "Lanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 4,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.8319,
+   "lon": 124.2537,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPU3FJeGpLdTdnNWJVWFpHTlZLdXRvZ0ZDZFg0Q0oyekF3VG1PdmFuY2RkWHBLamVrelh1Yk5YekVUTnZCa2FDZEoxeVFnQ3pzYWpMdGIwdi1oSkhWREVrWHFENEZxejNBT3llQnk1X0tnQXJOXzdEX0FMc1c3SXZkWml6UWJjT2MyMnRCbWY4OGpEbjBMNEZvU3VjbHhOLVhpakNTZHQtMGxzYWgtM0xwUl8wT1EtME51M1ktRnZKdHlpXzlM0gHKAUFVX3lxTE9qamIxWldHNFVVYVVuS1VockllRE1YNmJDdzRTdE0xRERnTmZrR1ljZHdYRzQ1SFNyQmlVM1JYLWtIRTZJanQzYkdZME9hS1VsWnV5TW1BUDVCcjRFeGYtOXdjU0VFc2VKZHBnenFDM1lQWkRIeUxrZjFEbklQVS1lZnQxN1E4endfT0hYbG8zd0ZHejFhT3Z0dzk5Sm1kclJHMEl0ZkdvdHZJZ2hrZjVJUXhscFAxcDJ5SDNSQXhTem5EVWNGRWZDbFE?oc=5",
+     "title": "Lanao del Sur Gov. Adiong, staff hurt in ambush; 4 others killed",
+     "date": "2023-02-17"
+    },
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQYTRQbTJIc2o0aWJzc2k0ejBob1UzcGk5LWNQUW04SzdMcF9tVG9vWVZ3VXU4SU04U2lGdkJRRlVES1c3NFdvemVHTUJyWi1TcFVkMnRfWGNlVDhlaFU3RHl1YzN6SXk3Z1BiWlA1aXZfam9SdktPam5CSGtXOU1sVHVyRTlFN2hYdWI1Z05hekNvZ9IBmAFBVV95cUxOUnd0WFFDX2hMdG5tdGd5T2c4UGxDVmc1dWpIUWg4VnhlTFJYVGlsRXdsOW12QUdCVWZDRi1hQzgxODloZmtKcmVqTGxQd2NKQU9ady1JVXhHa2JXX19aNllzMnJQQWM0OHAtdUQzRzR2Skt1SnRYcUR1RG9IMy1ibFlCeHdTSDNlZXBoRVM2UHFvbnBvNDlMZQ?oc=5",
+     "title": "Lanao del Sur governor wounded in ambush",
+     "date": "2023-02-18"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOQWJSNTBZSm9mNU5UWmowdGE3MWY3MU1WLTBTQ3ROYm5QV2VwMXBLbWpLcElmcC1QM1BNWndVY0xxdEhPYnRmX0ZuQVFrdm5kaTYwbXFZUTJ2aVQxSW5hWlpfTkM4X0FRMlBWcjI3aUE5ZmFkNFlaSVdsNnY4RjJQMXRBVm5iQi1sOU8tNFJuTE9NS3FsenZEay1JaHpsd0ZVbUVQRlRhelpQUzVEdkVvTlRWWjJLMlNob3djQWdSSjctVDcyQlQwRTIzRU9EcUlYTzg2empYM1lXOE9BbWVqV9IB5gFBVV95cUxOZTNsbFFvTWZvVDRVZTVVYVU0MDV6Q29Wa3V0OGJ5OWdSOUFtU19id2xTTEVFMkJMa240WG11T0J0TWtnZjRwQlFHa1pQMjIxM2w1Z1U0WDhCVGFZb2swbnV3SWY2a2NIUkdhTVRqczkyREw2RXlTTzNaT2ptM1NyUktnSkQ1dnpPa3dzZ3FTU2FWaVFueVlQWG1Pbk1Mb2wyVXZPd0sweEVnY1ZvNFRsN1BkVFVjWlBIVHp4Wmo1SW5iS0ltNFZVcFM4VEdLaTl4VkNISDE4b2J2NFAxQmhMOVQ0RWd5dw?oc=5",
+     "title": "Lanao del Sur Gov. Adiong's surgery successful after ambush, kin surprised by attack",
+     "date": "2023-02-18"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOXzNCYXdmZG84MUhtdkR0amltV2xFZTFtWHl3bXF0SEtZUVZwZkJ0VmNMdnB5ZEdXc1dyX0xoRmRSVzhtVERnaVdsRHd2Mmw2TnlDN1ozTHYyMzJDOWRENFItZHZFV0FoNHZqb3FBYThoVzlwY1djNUFzMzFaQUowOUZBa2kxT1BKaDhlOEF2eDdoRUwy0gGaAUFVX3lxTE9Fb0toMG1zdWpOSjE2ckRtSTZ0bzFKeE5Pc2JBdVJRZ1lROXNjLXFEaGI3TjFLYy0xZExWMkNnWnVLeERGeExMVFhTMDMxM2VRZkFYQ2pDUW1Hd2JCdWM0SWQtU25QRHZERHVwc2ZKLTVwdWlUSU9vRl9lc2lJSThZaFB0eG04bVpoVEJRa19nXzN3XzFPOWVjVnc?oc=5",
+     "title": "Ambushed Lanao del Sur governor ‘stable’ after surgery",
+     "date": "2023-02-19"
+    },
+    {
+     "outlet": "Manila Bulletin",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbjMwT2VZSjNTbzJQYU91cUxDWTlzYWZJdnJRcENuR0QyWHk3UHlVaEVsYXZGcG9pNGN3T3FhTGtUdnBPNFg4d2Y1blNWWEZUNVJiT0g0R3BtVmFuS0NuZFdSdkFNMEVpQURDeTRpcl9zZzdzNW1XZ2dCQVhRUVpBVmRxZ0ttTl82YTItX2VsWTBwaU9kdy00?oc=5",
+     "title": "EU envoy sends sympathies to Lanao del Sur governor after ambush",
+     "date": "2023-02-18"
+    },
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcHNwOHVUdXdGRW41Rk1HUjlsZzVCNVVOVEFnOFZUaG1oMThlMTJJV0xNYWV3S2hiS3NNd0pyTnJjX0dpRjIzbUsyOXA0RURZQmpncWwtazVnVEdBckppcW56eHBZdGF5OWlFVFhHQ2ZEdi1wWWpfNmZ1Z3JsZHRoNmd3T3V2OUpUTXpBdWVhWXV4Q21LUUhOOXdlSHRtR3hjRWpfWUZveHPSAa8BQVVfeXFMT0s3YTR1cjF0dWVIUGxmRHE2WXRDOFBTQzl4YjNndV9YSlBnQ0JDMjI3YWhpdnJWUVFQVTFUcW1hdGQxWWxHa0ZoMDZGVE82SGtTaXU1NW9EWEMxUXdwX0c3NjZUYWx3OXYxMFNVeFZVZ3liaDdPbUZiNEt0S09DeG5YRzdMdlhWejNuUFQ5QUZKS1dVWmY1RkRCeGpmSzd0WTV3MlBMdFRxdmVaOFB6MA?oc=5",
+     "title": "MILF to help investigate Lanao del Sur governor ambush",
+     "date": "2023-02-18"
+    },
+    {
+     "outlet": "ABS-CBN",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdEJ5cWp4cHNTNVJUU0FzZmZSR0pZakIxZU81bHpLcDY1ZG9vOVJ6QzM1WDBFQ0dsamtWQ0IzbS1ocEVkV2tsa1Z1UFdOLUNCQld3LWFXN0VCaUpzbGMxcU9uUzZhZE8zM2RqTTBodHNkTmRRMFI1S0JwM01ubnJ4RzY4YWdwQnQwVzJJNzVDMVg0MDhJM3ZUU2RhUW10M0VDOVEzTDNxRU01cWlCVUlBXzlXUmx1TmpY?oc=5",
+     "title": "Bangsamoro police identifies groups responsible for ambush of Lanao del Sur gov.",
+     "date": "2023-02-19"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNSjVTbGR2V0NydWpEUTdhRFdySE0wTzAxWkdpWEI4TldfYnpWQ3NVSWlwYVFveXNFd1BBTXljVUtwanZsazlSaWlZWVJWR2YwM0lKOEJudzZEekszZUZmRHUtVjhRdmQ0a2tRR2ZVeE9DVTR3U2ZJbHZBOFVaYUhIZnBEc01JSktYLXZUeTYwWXR1dDBoUWlxbnFqS2FYRy05aFVSa0JpNm1UX0NCUnhYSXIwQmttaHFrVzhiZERPWENvQUZWeVRQZHVERnB2V0FP0gHWAUFVX3lxTE1rMUVtdWhad2h0ek1xUE1tMzV5UlgtUnE1NUhCXzZWLUN2Z3NBYXZtRVR4Rk8wVWNXWkZhWU4zX2drOTNBZzJOaWxscXp4TWNKZFFDSlFaZFRYN1dha1FqLVJHMlVLd1NXR0dKc1oxSXdKeFVWalBsUlpQZm0zRlFIYnNVNi1WVXY5dzZISE9KbHJPaGNQajFKTm94bi1NTnY2bmkyUGdWaWRJU1c2Y1p0QjVReHoxX0N1dkExT0lPeUdmOEFhZFFJU3ExY01weXpobnlXOHc?oc=5",
+     "title": "Complaints filed vs. suspects in Lanao del Sur Gov. Adiong ambush —Azurin",
+     "date": "2023-03-06"
+    },
+    {
+     "outlet": "Davao Today",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaFRRQndLblBTdzVsTVl4TmQxN2lka2xSTllZYjZ2Z09pTDNSVk1oOGd3blpDcHBTZi1raDZVVk10amVkS0M2ZDF2Wmd4dTVLU1hQNDVkRnVtTm52Y01fUDNMLXBOWXZBN3BlVlpzbExDdnFULThhY1prdC03QVB3eVZ5NUJrdnAtdE5nZ3FpQ2lER0htV2lsOEFpSzFPS1JCbUZuYTJfS29ValQwVDdVNjRGSzJ5dw?oc=5",
+     "title": "Lanao Gov ‘not afraid’ after surviving ambush, urges support in fight vs illegal drugs",
+     "date": "2023-02-27"
+    },
+    {
+     "outlet": "Rappler",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQWXA1YUFNVjdVWEJsQVU2bkZSZU9SNmhLY0dldUV2NkgxZmtKMW1jSmFXOGVYT0FWdWZyX09VMXFGWkhqY3owR3dUZGxfN0d6UXJCWXRNNlBjN2VVLVRWNWMzRUMxRU1QVm1hTVZIN2gxV1hqNkZPU2VGOTROYmxFNlVlWlBKVHBRQ0YzV3ZXdHVyclVzbzBsaExab2dwZXFUX010N3JvVDlPQ0VLZzdsS25JMTdScFBmWEhESVc2YWxYLXJkbGI0ZHBuQW5nM1ExQ3MtXw?oc=5",
+     "title": "Ambushed Lanao governor still recovering, may return to work in 2 months – son",
+     "date": "2023-03-17"
+    },
+    {
+     "outlet": "metrocdodev.com",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNUTBsTm1HSG16T0pXNHY0QTlXLVJxdHVOYnZhSjJMM2pocXdrZEFneTVzV3dYdVE2S3lZYnl1ajg1OTBXQnAxaE40ZnFGdE9Fd3l6U1ZFT2JHZmpjMXNMMzlZOTRHTDdFSWo2LW9JdmpDU2kzUkhQWFJZVE01cnA2MklSSGNRZmloYUFjTWVfa0RRTVhYTkNSVzZJZUcwVzR0aDh1R05JVjRWZGU3ek9IWTl4VHJwWHVkb09jT2pWQQ?oc=5",
+     "title": "VIDEO WATCH: Lanao del Sur governor now in stable condition after late afternoon ambush",
+     "date": "2023-02-17"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPb0diMzJMZHVOREdZU3plQTJpbTJFZ2ZHM2VzbWVUbm9Ha0FaRUlXR3d4Ty1uSzdyZ3hFVlBuS3JIXzNZYndYdDJETUxHbXRBbDRzYTh0dFprRzB5UUJmcUxwakhaRlJMcG8tOEt4cEVTOUZtU0lUSEdVSk9uZDMyVGEtQnZUaXgxZFlzbXFiMDNYLXNNaVRDTDRmaWxBWGxFb2dYVXQyZExxN0gyQnNocGg1U0xqOHlBa2RtZHEtemNZOXJFU1ZzOFNmcnVCVGPSAdQBQVVfeXFMT29NMlNTeWlDWVZIbUUxVGRxMDRBcU4xTllGay1DVzhXbGNuWFhjVW1vdjhRQnVvSTdqcjQzME5nRWxVMXZWRjUzaVhFZzNwcU9PZi1rc09ra0ZJUUpOOWczQTFRc0txbFBYWHM2Mzl5aUdNb1NndVVHN2tOdUlKLVNiYk5vNEdqb3ZoRUhsQkxSVEh6c1laSF83b203bVVacHA4MDF5VmpZc096aGVoQldEaXdTYmh2NjNiQnZWcmtUNVBHa3IxMkZCeUpaT3pwaGh1Rkw?oc=5",
+     "title": "Persons of interest in Lanao del Sur Gov. Adiong ambush identified —PNP",
+     "date": "2023-02-20"
+    },
+    {
+     "outlet": "Rappler",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNRTh1YUFjYkc4ZllnTE5rdG53Z2hSdGZRd0J5V1FwcEdZaGVTU0lJaUR5dmc0T1p0c1dGazJULWRuSXAxeXYtU25sUG40U01obVdMWlVLYXpfcVdFSjBrbkp1VXVxRjJvRVZ2OUxHajV1c2NVdllrd1R0OGJVR21kcWVvdTVnZ2NGTi0zOVU1QTlabE9SVHRiTFFDdkxpbzJLa09ZRUltblJTYk5wZGpCcWtJenA0NUh0Q21pMmlNZUhZSFBlZ2c?oc=5",
+     "title": "Special task force formed to investigate ambush of Lanao del Sur governor",
+     "date": "2023-02-20"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOR05wX1dEcWt6UDdqbmFxSjZEdkUya0xBbFVpRF9rRTdaOVNUM0NrbVcwU01BcGd3d21lR3NHMFM3LXJHdXJ2Q0EwSnROZ0lwNE5rWDVTX1U4VHotWnk4ZUR5TEdKdWwzZGxNdTM5SDlfUmRsZERlSG1mYTVqdld0UWh6R0dqam_SAYwBQVVfeXFMTmtFUVNyVWYzMlhmMUE1S2RqcHpBRHU2a1BCc25McS12VkhvREtGVk1FTlBEeVpOU2dhandIVTNSeGFUVGExY3I3WUdWVjBBcEE5dnJTOVNTdFpNbUlmY2xJWkFVVzVaX3NQNGl3MmVSWG5POFFZMnFXeFFmUVRWdmRDODBNTXltc0x3WWw?oc=5",
+     "title": "PNP: Lanao del Sur gov ambush deemed ‘solved’",
+     "date": "2023-03-13"
+    }
+   ],
+   "id": "2023-02-lanao-del-sur-shooting"
+  },
+  {
+   "date": "2023-02",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Marine sergeant killed, 3 wounded in Lanao del Sur ambush",
+   "summary": "A Marine sergeant was killed and 3 others were wounded in an ambush in Lanao del Sur. The report did not name the town.",
+   "province": "Lanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 3,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.8319,
+   "lon": 124.2537,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVjlfOURXWlRKcFRyeGlUaHRSTW9JYmlkVXNEdW4tVHM3bEl4VUVYQjZZNndVSFJMZTZfOHRaem42RG12djFXenc3bU5XUi1Mc04xSmNQYUVqcldnOVVweDBpTkZzbG5udzlldHktenp3d1ZlVi1ETGxzcmJtYWQ3YVZ1UnBOdGh2R0doazRGMndjX0xmZk1jVkVJWGdPM1VKWDZB0gGoAUFVX3lxTFBqOUNyT1M4dlk4TU03WUxIN2JiUlphVEtxOHZRbkNmdzlXd1I2Mk9kM2VBdHlacFJ4YVJwVnRRV0N1X1NrOHpIalpWN2E3TVJFeGhKSzIwRGd3OENRQnJrUWFrVnAzbGQwcWxzQTlIb0gyelRPclZib25vekU2Q1hraExhYmZNQlpwNDMxN09BYzdDMlRFd0l0dy1idHhCZk91OGNidXpZeQ?oc=5",
+     "title": "Marine sergeant killed, 3 others wounded in Lanao del Sur ambush",
+     "date": "2023-02-06"
+    }
+   ],
+   "id": "2023-02-lanao-del-sur-shooting-2"
+  },
+  {
+   "date": "2023-02",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Police sergeant killed, corporal wounded in Lanao del Sur ambush",
+   "summary": "A police sergeant of the 2nd Lanao del Sur Provincial Mobile Force Company died of gunshot wounds in an ambush in Lanao del Sur, and a police corporal was taken to hospital. The report did not name the town.",
+   "province": "Lanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.8319,
+   "lon": 124.2537,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOb0Y0RXYzazdxRTdhMFpueDdWdS1GZ0pDYWxEUFRnTmg4cjFacWQ4TlVhU0JIY3k0a1ZlZTZjODFTTE5tRW9hbGMyNXJnS1JhYUFNRTd0c2pQdTNVU1BwOHhIZEl3Um5CUG90a1VKc2psVmdhRHpCbG80a3VtdmJsWWlYemRZVjdMMUtoVjJ5elpRVUZobzkweWE4UdIBoAFBVV95cUxNcGRWVUhWRFpQbERMWlE5S1BMcXRSaWpERlE2T2pvcTd2b2pYVkRaTXBVMjJxQWhhNXk3MlNabk9Ga0NLVl9PdjVYb1FfM1h6UmpMb3I2UkFHbkxFV0F1SGJHWEFNVDVjeVVHWEdVWUNtMTFBd3JZTGE4eENwbk5LVkVCNmtjV0VQcTlIbE9XOEpEd0RJeW9sUUVFNUg5aGY0?oc=5",
+     "title": "Police sergeant killed in another ambush in Lanao del Sur",
+     "date": "2023-02-13"
+    },
+    {
+     "outlet": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOdlJYazRUOEVTOTl5SWlTLWhGYl9QbkpacFlPZzdoVE9GMXltOUIxLTFpOFRxRzA0Q3dFUlo2aVNJTmJmQTBDTGRMNGdTeUxQb0Z1a041X2FrZl80ZnNDYlMxLVlCaVhtR1dSTUFDZnNZTEpKdG1TME9UdnIyVEt1eFJ1SEE2NkJxTVhDMzdGUVM5Wk1QMy1XeWdZVEExcldvc1RDYlBOam0xTjBDWWlCaFJtTlhkalMxMDNyT1ZvT0dOaTlCR0VkZW9vYmIxRlB4X0lObDd0eXZlZTdP?oc=5",
+     "title": "Sgt. Albert Magdayao of the 2nd Lanao del Sur Provincial Mobile Force Company died instantly from gunshot wounds while Cpl. Sonny Marohom was taken to a hospital for treatment. http://bitly.ws/A9Yt",
+     "date": "2023-02-12"
+    }
+   ],
+   "id": "2023-02-lanao-del-sur-shooting-3"
+  },
+  {
+   "date": "2023-02",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Scout ranger killed, another wounded in Basilan ambush",
+   "summary": "A Scout Ranger soldier was killed and another was wounded in an ambush in Basilan. The report did not name the town.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.5479,
+   "lon": 122.0458,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcHdodFhGMEF0Zms4d1V6SzFweWR0VHp4VDJjN1ZXNGlRY0FTUklEMDZNbnA2YTB4dnNEMDVEVjU0VnBjbjU3RmhiQ0VhOGtRV2NTenlLUm5ROHhnam9pVXZpUVBXZkc3ZmhCTV9UeTYwQ01EYWQ2Y21GMFFrWUZhcUIzbVUwUUdLQXV2Z2I2RFpfa0xUT1HSAZsBQVVfeXFMTW1TelBMaVpIaXVkQ21xcE5XdTZMZ3doUlZ3bnBkQVR3cHhrdVo3ZzI2VVZZYzl6U2VIMVJwTW8zS0RudXNScHU5bEszaW4tZzRFNmRuNm1TdkxTcWxoN0hITnpKeFF0MFAydlkyenVVUmRhaEFHbTZwbnA1UjdJNlZwZ0pTUUVYR2QybzhWNlRLWTg1dzM3cV9QSVU?oc=5",
+     "title": "Scout ranger killed, another wounded in Basilan ambush",
+     "date": "2023-02-22"
+    }
+   ],
+   "id": "2023-02-basilan-shooting"
+  },
+  {
+   "date": "2023-01",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Village councilman shot dead in Cotabato City",
+   "summary": "A village councilman was shot dead in Cotabato City on the eve of his wedding.",
+   "province": "Cotabato City",
+   "municipality": "Cotabato City",
+   "barangay": null,
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2238,
+   "lon": 124.2467,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxORDBMWWx5U29CLW9ZcjZXdmc3bDFyR0txV2liQUI2MHFHSWFTazVTSmd0eFM2aERDbW9GS2FheUF0eWlVelZfLU0xWjRjdzRJNl9pajRtSHlJamhONEIzakcwZ3RHNVk1aE11SUZyTFJGOEtaNnhMckR6VDJDT0w5SzYzeTJyZzduNVhUcl9FTnZ1SXY1TkxNYnRJcUNGVDNIUmU40gGoAUFVX3lxTE1UOEtuVllWZXVJTjJBUHZ0V2JXR0hBQ3JzV3lHaVdFYi1UNzdvc09CZHR1OFU4VW5nS3g2cEVhRzBUNVAwREtLUndabVRUVVZXMl9JVGxvMktBT2lnbEdfcl9tSy13Yjk0R0tiMXBDcEdzUjBVcXlBRkxTV2VHRE9rTThRMzZDWllpVzFkZjlFc1BsMXJzQVNLQjhUY3hNYy1yX05xcXg3bA?oc=5",
+     "title": "Village councilman shot dead in Cotabato City on eve of wedding",
+     "date": "2023-01-21"
+    }
+   ],
+   "id": "2023-01-cotabato-shooting"
+  },
+  {
+   "date": "2022-12",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Marine sergeant killed in gun attack in Cotabato City",
+   "summary": "A Marine sergeant died in a gun attack in Cotabato City, reported in December 2022.",
+   "province": "Cotabato City",
+   "municipality": "Cotabato City",
+   "barangay": null,
+   "deaths": 1,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2238,
+   "lon": 124.2467,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZFRrOUFXdXNTcmtkVkpuSlBQNDU3N1NyWEN1bkhCVm9kSEVvU1FHNEFKSGhMSl93bUZTendsMDhXLUZJdTdZN2tHLXkzRTlyQ3NGWkt5YU1MYWxzenRSOTRpdzlrLXZEdGVTNURueURrNi05MjctaWRxcmlDTWhhSGRxRUk1eG1QaDJkeFU2RdIBlAFBVV95cUxNb0lQVmNIRjA4Y1lwYjN4VGRqTUphaTFVYmt0MTlFbzdlUEJaLU9OSVd3WGs2T1MwYm9RbmJwaGhYQzMzZDNuM1FGczN2ZENhajNEeVlITE1YNkJkYldNSjlvWkg0cHQzVVNtazZWWVJUT3Y1eFRrX0lXb0xlOHFJUjlGZmVRNGd0VFVob3lTT2RZYXBz?oc=5",
+     "title": "Marine sergeant dies in Cotabato City gun attack",
+     "date": "2022-12-18"
+    }
+   ],
+   "id": "2022-12-cotabato-shooting"
+  },
+  {
+   "date": "2022-12",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Son of Sultan Kudarat mayor and an employee slain in gun attack",
+   "summary": "The son of the mayor of Sultan Kudarat and an employee were killed in a gun attack in December 2022. The report did not say where the attack took place.",
+   "province": "Maguindanao del Norte",
+   "municipality": "Sultan Kudarat",
+   "barangay": null,
+   "deaths": 2,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2711,
+   "lon": 124.2919,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbTBIRllfUXlQb0lNN2piNWJxS193aHRUNmE3OWczbWJHRlQzWExTZUduT2g5aW9mSWpxNllFQjNKLTlCX3hzWUl5bTdGcE1qZDRYUm5kZGw2bkdtWWt3NldPRFpMQUNEcUcxcEZLMnJBSFBZQmpEVEh2aTk0YzkzSlBXNDZ6ck40Q0dnV21lMmY0ejU2U1VLVDl30gGfAUFVX3lxTFAwWFBHaXdkSjFiZWdPYUJrNkRoRzBXaEVnVWVsSmdsOVVoaVZyYWJoMHRRbzNVSjZoeVBzMWQzTEFFN2Z0NUVRTnZPdG1rbTlKNTE0VWlsSEtqRkRFdUF0ZkttLTcxcFNfZlVIdnRhR1VxTDA3eHotS1pscmF2Z01mbWFzeXV0d240MDdRWmZVdzRTRFlRNzI1dzEyNjJKTQ?oc=5",
+     "title": "Son of Sultan Kudarat mayor, employee slain in gun attack",
+     "date": "2022-12-14"
+    }
+   ],
+   "id": "2022-12-sultan-kudarat-shooting"
+  },
+  {
+   "date": "2022-11",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "3 CAFGU members guarding bridge repairs shot dead in Maguindanao",
+   "summary": "Gunmen killed 3 CAFGU members guarding bridge repairs in Maguindanao, reported in November 2022. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 3,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTUgtTnpteWFDd3h1amdwVlVXdmREMWJ4dEI4cVFJTWJyVWVCcVlFV2tSbngtNnVIR1dCejN4NDktclRMdlJfOE5wOGNiVDB6cklOMlZKV3oyMHF3N09ucW43ZzBJZG9QejZOTkVobUtkdkVmZFNmdG9EQ1lPZWpmZ21tc0hwSFNqeS1ZOWtBZmt6YWNWemFkMTk5c2t5WVJ0SHViMGx0bFRFa1nSAbIBQVVfeXFMTk05eFJyTjJYS1FSbzg4a2xkSEFiVC02V1ZfNU5QSmhiMmFqUUlRWEd1MmdoektBQmZHRzdTTFVhZlAyeXJFa2dhWE9PV2hiakR5OVk5ajN1TVpNbkQtbmd1YnNpMXBYZThsdUJkcVpVVmNreVZrdHdxdVRiR0diSVhlUkFwNHdvMWpVZnVqWjZpUS1uY18zdTR5RVJQMXhEWEd6bzlwTVloZ0lucW96cDRjdw?oc=5",
+     "title": "Gunmen kill 3 CAFGUs guarding bridge repairs in Maguindanao",
+     "date": "2022-11-28"
+    }
+   ],
+   "id": "2022-11-maguindanao-del-sur-shooting"
+  },
+  {
+   "date": "2022-11",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Army colonel survives ambush in Cotabato City; escort killed",
+   "summary": "An Army colonel survived an ambush in Cotabato City in which his escort was killed, reported in November 2022.",
+   "province": "Cotabato City",
+   "municipality": "Cotabato City",
+   "barangay": null,
+   "deaths": 1,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2238,
+   "lon": 124.2467,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUEl2NEJ4T1ZGeXVKMGhGQlhqYk1RWXBtOFpYelBoS2ttUVFEQnZ6c05nWXJlQ1JhU2k1NjNFLWhVMk5HSGJMXzVGTFNDU25IZHBKNmFuU1FDNTZ4bi1CaXdOM2pvdXp0bHc1ci02aW9XN0xfVkFodzQwMGdyMlV4VTh4YV9fX2NoOEtrOFRCY0NKVC05RXVjSVBuNNIBoAFBVV95cUxOTm1pYkRKTnAxclBHd2xpQVZnc3RnN2xTMEhMbFRFbXo1MXRKNnFnZ0V3T1JaSFpHSi15ZWtQUXdBYTdyeEs0bDh5TlBVUThFQkxIeVZ4ZDd3dHJUdnBOekJhZkZXVllyTUp1OVk0SklvdkEzY2xlQXJ3bGhKS0g4NWNZM2NuNXdwVGlJdzhYbjVDVW5GTV84LVdBeFBFbm8y?oc=5",
+     "title": "In Cotabato City, Army colonel survives ambush; escort dies",
+     "date": "2022-11-14"
+    }
+   ],
+   "id": "2022-11-cotabato-shooting"
+  },
+  {
    "date": "2022-10-28",
    "type": "other",
    "kind": "Landslide",
@@ -6561,6 +8009,540 @@
    "id": "2022-10-28-datu-odin-sinsuat-other-2"
   },
   {
+   "date": "2022-10",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Nurse shot dead inside government hospital in Maguindanao",
+   "summary": "A nurse on duty was shot dead inside a government hospital in Maguindanao in October 2022. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMjVlczBqNFB6UV9iUVFhR2wzN1JKZFdNWGppeE1FdnVyX0ZMOUR1ODVoMk1jQWh0VFZPc3FlaW1sd2x6b2FHbHA5UmRiaHM5SlFfZk5JOUtTYlJoMFJFbnR6d09UYUZWMVFXWVVmRGZmUGhMVFJISTJWTkdMbDFsZkpPaGN2MmZrQlZJNGNlUXJiWHl2WS1xenF1TFVtd9IBowFBVV95cUxQYTRmRkZweVNSbVN4bW5adTBkc1l4NW9ERzhHbGFYVzZIdDhnMHg4blBLYmFlaWVXZ3JaUGdaS0FHSWRxc2NoaEFqQ0otTzlmZFNUYjM2bXg3dDNqVW5kMTBQWkd1YTEtSl9QWnV0dHNKOW5OT21jMlNCdURQLThqR1BXeUxpVFNYcUhOT09kQlVTZTVfa0F1UTRvMG1PcHhVZWxB?oc=5",
+     "title": "Nurse on duty shot dead inside gov’t hospital in Maguindanao",
+     "date": "2022-10-27"
+    },
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQa3ZGVEt2cGNZX3RUT1V4SVRzQzVSQmRJZ0VEa3FCS1NtVkV2aFVFZnAwOE40WXc4eHc3TFVXenp0VU9seDVZZDFYWlNTWUowTGdQeGdYcDl5OHh2S0cyek5aLXltemtIeXJXSWhQc01sR3Zoc0c3dnVYWGhCQ3BfbVc4Q0bSAYsBQVVfeXFMTUhSRG1ReUxUSHBVb0U1eThJZVVJNmpzVnBncGdjbkFLTTFmMnYtRC1uTk5sMFcwLUc5V1RwUFlSYVk3cXQwdXlwQW1YLV9iSmtNdUJkc3M2QkREbWRrTXNYOWNya0VZeEw4LXBGT1FmWWNHdHJDNC0tWnpNUWh0WkFTbXBXZ0tLeUlkYw?oc=5",
+     "title": "Nurse shot dead in Maguindanao",
+     "date": "2022-10-28"
+    }
+   ],
+   "id": "2022-10-maguindanao-del-sur-shooting"
+  },
+  {
+   "date": "2022-09",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "2 dead, 4 children hurt in strafing in Basilan",
+   "summary": "A strafing in Basilan killed 2 people and wounded 4 children, reported in September 2022. The report did not name the town.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 2,
+   "injured": 4,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.5479,
+   "lon": 122.0458,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNV3NuN1lDaFhIWWJtOXdOS3cwVUpPVXVNcDRIb1h2ajdEbzhnaWEwdWcxTmgyX3QtV1F6S2lINjFnOFRLblNlQ0F3LWNOaXRneVFDdUM3QmhZNW91U2ZhcGFReGRLbm9WeFNqOENaclJOQjhSREtselUtLUVUZVpyU1k4LTB1WmtPcmZYU3FDYldJOFFRRTJOc2tkQk7SAaIBQVVfeXFMUEJCTWJGc0tCMlFzUk43dHVDRHA4dTF2RXYxMDVZS0JzMWk5WUVmMmxobVBIMmo0a0VNdDIwS2F0Vm1ranY2NzFUa1lHTXBWajY5QjF6S20zOVhNS0ZPUmZwVnItTi1PUWZZUVFYQW1pSnRJaGZzSE10VTlnY2ZBVHBCWXdZYkJ4SmtyYnF5MG5HMVI1WThiSzBnNGNnSnNkV3Bn?oc=5",
+     "title": "2 persons dead, 4 kids hurt in strafing incident in Basilan",
+     "date": "2022-09-08"
+    }
+   ],
+   "id": "2022-09-basilan-shooting"
+  },
+  {
+   "date": "2022-09",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "3 Marines wounded in ambush in Lanao del Sur",
+   "summary": "3 Marines were wounded in an ambush in Lanao del Sur, reported in September 2022. The report did not name the town.",
+   "province": "Lanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": null,
+   "injured": 3,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.8319,
+   "lon": 124.2537,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNZC1JYjRHblZEaFFZdGRTU0hic1BLWlRwTnZzUmNHTllUdjRLd3FnRUZoYlkxSFFVellfMW1GUkdzcXBUQmo2bDZVOTNZckVvMzZra3ZOdFpiZHBuTlFfWmZtRjNRcVZVRFJPN0Y5T1BxOGlpdGRYbFlJQnVhaVEzM25jWkhMZ9IBiwFBVV95cUxNMHhNOG9waTIyNTR0WFR0MzRXYkFPSDVGVE9KbnpIb3JkNXFjOE5rRDZnV1NfSWVNOWFvbktKNE51M3BuTWc0WjRuRnNZSUtSSjRHMHZOUElwWjc5SzUya2ZvRzE0LVdYZTBUeUxrUkd5LUJaOWo1cHdTTGpQQ1FoVkxlbUJQcmVLV2VR?oc=5",
+     "title": "3 Marines wounded in Lanao del Sur ambush",
+     "date": "2022-09-26"
+    }
+   ],
+   "id": "2022-09-lanao-del-sur-shooting"
+  },
+  {
+   "date": "2022-09",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "3 soldiers killed in ambush in Basilan",
+   "summary": "3 soldiers were killed in an ambush in Basilan, reported in September 2022. The report did not name the town.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 3,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.5479,
+   "lon": 122.0458,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSHd6SzBQR2lYek9MTzV3aHdidGpuQ2VYVlZJYkYtdHl0SjBTZkVGLVhhSzZPTW56NzhsZUk2c1pDVzFGckN3V0xicHVkcFRFcmlDeENFbWJCWnZfcVBZdWVOZ0I2YTAya1BKTG9vWXNWd3R3MXVPZUxZTlZ0STF1RNIBhgFBVV95cUxNUjdZbXdqNG00TmFHdW5DV2JmOVF1LS1XMWQ4QWRaZ2lNVnJtRU9Gc2E0c1lzdVYwTmZadl9MM1FoVmNBbnFleFNWaVRRaEJuaVBIQnFvSGlnalRwU2tYU2duQ2YyQi0xSndWTGdfNWFiYlFiVzJwUHpSdFlHc3ZGTW5DLTN4dw?oc=5",
+     "title": "3 soldiers killed in Basilan ambush",
+     "date": "2022-09-15"
+    },
+    {
+     "outlet": "Rappler",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSmJKdVI3U1JhNzhobW9WMThUZ2JGQnRtS1ZvZEotSElkaXdxZm5Id3VFZFhXdGgzNXdLZTJhN2V6U1hfdDRJbERKcTBHUl9ZSmdHdEhSaVVKZHRYT0s1SkpOTEh4c0pJd3lXQVRtTHVKcEdDUnR6ZUZXTUF2cU9laThOcGR3bVRWdldXSjdrZkRnQVRpMVIxbHpfZw?oc=5",
+     "title": "3 soldiers killed in Abu Sayyaf ambush in Basilan",
+     "date": "2022-09-16"
+    }
+   ],
+   "id": "2022-09-basilan-shooting-2"
+  },
+  {
+   "date": "2022-09",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Defeated mayoral candidate shot dead after noon prayer in Maguindanao",
+   "summary": "A defeated mayoral candidate of a Maguindanao town was shot dead after leaving noon prayer, reported in September 2022. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdUpRcnBNYndYT3VmT0VpUmZfQmp0bDJxcGI5VWRWWF8zX3dud0phS0ktQjVjaDhYb2M5TkVvUHVEOWtkeFJYLU1KdXlCSjY4TWN1OWRETW5xYl9DRV9pcTNfdEs3OGhieGRSXy0zQnlsdHpVY2pEWHJfOHdtek03cFhxNDUzVzRwZjFoc2xlaTdqbmM3R2Uxd3VORDA4dFI2S0U3NmJxUU93N0FjSThaT2tncC1xdGQ0anRzdtIBwgFBVV95cUxOZUxEakZIWHdjdlh5SmZRVDY5blhjRHhmVFItVEtjVENSRnAxeWZTdloydlIxSk1tQmJXLVctRDQ0YmExMktya01vVVdfSHh4aXZNWXZwT1U1Z1ZnOHVsVVJkbEc2LWxyeHJ6MFRaTUhvSVBuLUp0bDBsbUNMVXZSRU9iaFpFRnRrRTZMQUU5SDN3OVpiVThJYmhyXzJMamF5czJxNVNOZlNMOEluRWpyalkwcnJRaldqUUVtUVZ6QVpVdw?oc=5",
+     "title": "Defeated mayoral bet of Maguindanao town shot dead after emerging from noon prayer",
+     "date": "2022-09-30"
+    }
+   ],
+   "id": "2022-09-maguindanao-del-sur-shooting"
+  },
+  {
+   "date": "2022-08-30",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Ampatuan police chief and another officer killed in ambush, Maguindanao",
+   "summary": "The Ampatuan town police chief and 1 other person were killed in an ambush on an arrest team in Ampatuan, Maguindanao, on 30 August 2022.",
+   "province": "Maguindanao del Sur",
+   "municipality": "Ampatuan",
+   "barangay": null,
+   "deaths": 2,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8322,
+   "lon": 124.4571,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "The Manila Times",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQndHdVJUaGwzWWFTMGE1TTVqRGduZFJWaTdfTGFZdVVhckNIQzZQZ2pTY19UMC13cVd1RWo3N0VVUW44ZkxIemllNkdqQkZhMHJsdzRQVmVlWEVFYUhSVm5NaWxWRTRWR2daZk9zZUFEWV9UcEVPVFNZR005QUtaenoyd3JYc1FyUk0ydldIelRTTzVuQWxDbmNxaE3SAaIBQVVfeXFMTlJMV2tySGdtS1J5ZjYwMUljMFd2WjVmWTRhV204Zzl5alZPR1VtZ2haOG0wc0hXZk9fOXFFUXRlVE92Tzk2UXVqb1NhYThoek8tWFJRQTBGajhHd01nc2ZiaXhtZm5Nd2doRzF4WnZpa1FmZXozVFZ1Mnhxa3hvemxhNFFhT2lJNHZGaWtmZ2IzVWhCR2ZHSVV4UXVSNUVKRlpB?oc=5",
+     "title": "Police chief ambushed in Maguindanao",
+     "date": "2022-08-31"
+    },
+    {
+     "outlet": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNY2Y5eC1XaktOOWdsb2pCWEdiblF6cl90OFI1REVmY3FfRTZKbTZGZVkxN0NlUV9CZWI1ckNLWExuRmF6S0pVTldEUTZlRFhGSUpIeVA0VENLMkZweGdvbzh5dl8tdkdwSkdPUnc1UVBZTDZrcDJIWGI0TnhGU3FXSDRIeF9iaU5mZDFzcWVJZ0ZHRnc3azloNUU3NXJpam93TzN4WTRVaXdvMk5SaFRtX2l6RXNZRDFHWXJ1cGhpaGNTU1dhR0otQW5NMnRzbFBHSFVpZlRQZ09zeXBR?oc=5",
+     "title": "Pursuit operations for six persons believed to be behind the ambush that killed the police chief of Ampatuan town in Maguindanao and another police officer are ongoing. https://bit.ly/3cy8CgC",
+     "date": "2022-08-31"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNEkzTHVIMkgwaF9pQktBSDBzam1uWWZrUklyR1dwcGVEbGVianZkWm1TMUczd0ZNUE43Q0RrbjN1bEdVdHh0MmFfOHdXd3dxc1prSVNudnpoalJoRExCTEVXM2RlYzNDMUVsdnlmV1p4UE1zSkt6Yi1pWmYwWmtJLUZjRW9va0tKYVRwbDlEbDhxR1BvdGNoNmE0Y0NZUVVxblk00gGoAUFVX3lxTE9YTjZRb01OMHNGdWYyUE1fSlpnWEdzZ3FnbmJlM2txSWFrUlRaUE4tZjdsQW1QbS05ZDV0bUdPSklvT1BEeWY0QWxVdi1QcFlkTjBwUl9EQmU3MlM0NnJpRkdWSkpFRlAxTnNQdzdBMTQ1ZUVYSUFVcDExNnowTDZFa3hLQ2xSa24zdFBPN283RmRJVVRuVmM5RTViR0FPcGdZQTUwTkMxVg?oc=5",
+     "title": "PNP identifies 6 suspects in ambush-slay of cops in Maguindanao",
+     "date": "2022-08-31"
+    },
+    {
+     "outlet": "ABS-CBN",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZlBHal8xYmpIb2R0RGtnajBjWjFZbnZFRjctdWxKM1FvcEtsWXpoT1Q1V3VEQy0xQ0FlYnNhdXNvSm12Q1l4d1YyeGs2SkF0dlEtdWdEVTN3bVozbHhSY2hhZUdnb0NrNy1hS2ZzcTB0YS1lcTVXaVNBODVCdEdsR19fOU9HTkVnSFRaS0ZWZVNiRWh1UlJ3?oc=5",
+     "title": "Suspects in ambush-slay of Maguindanao cops identified, says PNP",
+     "date": "2022-08-31"
+    },
+    {
+     "outlet": "Rappler",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZ2d5U3F3bDI2ZEtfUmYyblhWMDZHX2VNanJyOUFwd3dwV19EUlk3OF9JRUF1eXlCd1dtYmtsYi1XLTBQbC0wa25VUDJuSEVzd3ZyNUNXU3JIMkZtSllXZ2RIWlNfc19WZkRMSVJSckZhcDlqdVhHZ3BGUnIxOW1hOE91Z0hVWGgyeGFJb1ptUFg1cklxWDc4QVVRdnhFc2FNLWZtS0lUdVVzT0w0eUQxaDYxM2M?oc=5",
+     "title": "PNP sacks Maguindanao police chief after Ampatuan ambush",
+     "date": "2022-08-31"
+    },
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTWZidjVmcGFFUjJ2WUYxVEhHaW40Tk1YcHYtMkdBMGJORWs5UVJpSDlyZnREcnJtcDJ5Qk5fSmM0amZ4X3FETEZSck9weWwxRmJJMjI5bER4S3gwMXhSMWUzRGE3aTJscnU4Nl91bVdrZDV2VkcwZHZyTVhhMmhIOVRaSFhCZHpFcjhiVURhOFZxdVEwcVYxR1k3OFZXMDdkQ1JfY05nVGs0YmwwTXJXY2pBRTFJUDDSAb4BQVVfeXFMUEdGRExsZEZjX09UVmFUMEFodjM2NlpFalN6bW1qZV93OFJpcW4wbWJkWUVEYTUtR3huUmYyVVlUdmVXd3JveUZxR0twa0ZUQUplNzBrc2VWYUU2RXBQekhFTm9kNlZyaFA3ZmdzZVF4WldOWWNWSkxjQW9sNTJuaGc0QVc5QlRCakU1TFNUVUtZY1BVbVYwOU1xZHR0TEJJUXJXcFdPbFlSMk5PY0otNzZJVGxlSW01S1dLVDVnUQ?oc=5",
+     "title": "Ambush on arrest team leaves Maguindanao town cop chief, 1 other dead",
+     "date": "2022-08-30"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbU5Sd1dfUnpTTWcxVXNPcE0yX2xlTFA4S3JXT3doOHJaa0g5NmlEQmRZc0hrS1dUTmVvSkd4Si1XbklNRnZ6cWlfelhwS0NjencyUVd4bDBBOXp5dzlodnc3ZUl5amJOMWFSVDQydWxVTDRENWRlc0M0VFh5bzlEWXFYNGtUcGxuUFY3LTZWLTPSAZYBQVVfeXFMUEhSNUNrOGlBZngwLUp5NFFuOXBkdkVZTGxmc2hfOHlpS2RzWkpYdmgtYVZVMi1GOEJ4M2cwczhpWjV1LTNNMmhzTk8zQjNvZW03SnZIV2hFU0xRQzlwYU9obU1wTEYtSjRjY1BNOV90VDUxWWxyWllmUFZJS1ZRMllySEpQUXhnMU0tamlIYzhWOHJpNkVR?oc=5",
+     "title": "Maguindanao town police chief, pal slain in ambush",
+     "date": "2022-08-30"
+    },
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPekMwOHc1US1QMWRrSUJ4eUZ2LWRhQU5rbUw2SE8ydDdSVThqTUF5U1hBdUJLdkNZVkNaZWphSl9SaVQzOHZPQ1BVY2ZnTHFTV3ZBM2VvWnJpZ0Nvcy0tdXF2NnJSOTZlNk9nUDZoTmE3N3QtTTIzSHE5UlZwN2diclhUZHVzdDZJSTJB0gGSAUFVX3lxTE1ZZHZRMnBnZ2MyczJjTkNoajhBamp3cHBZYTFjUHY4Q3pNR0ZER1AwLUY2ZGZreUl5NzBpdWxLV09RMnBGalZqWjh0eEFMYlVfcjIzTXlqWlYycEV5elJTU0JGYmFFUGxYenMwOTV4U2dYOEVndU56Zjc0RHdLRlVpMzN4eU1saGtqc1RIcGJOM1VB?oc=5",
+     "title": "Ampatuan cop chief killed in ambush",
+     "date": "2022-08-31"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZ3pXMkxobnFseERUNDY2djJabHBXYVhVa1lRWEVPU0RSY1VhRHdMUE5wcTRhYVVMdkhBajlfdF9CSHJET1NnenhwYXM0VEhXNjdINERpeFFqM3RBLWNObFA4cWpVYkIzSFdaVjk1ZS04SUw2eWxyMGllbElIZE4yRDZvbTdJSnRwamJsTDVGSVlSUW93WVlwRGMxU1dseTBxZ2p1VWRETTkwWkZJcDhPN2hHNHdyQkVMS2s3RE05Q0ctNHh4cURvU2ZIOGzSAdIBQVVfeXFMTlhQRmM1S2RHcFctNnF3bXZfY2p2eDJnXzZXeThjdlhSMHd3MVhGRmItNFNYY28yZGN4S3prZkxoV0R3U1M3TU4yWVlEWmJMNFhxRUtoQ1JWdl90LUJwZVU3MVVoYk4za2Y0U3owRXNIaTFkZ2o5d05teEtpQ00tdlRUdWp1SDNHMEJ3ZG85RTN5c1V3V3R6a1NUd0xWSWNwZENEdXRSc1hPa3hvaDJ6SE5DVEY2WVBfLWt3UUNtd1I5UEs0UW9Sd05DeE1OWUVIeUJ3?oc=5",
+     "title": "6 suspects in Maguindanao ambush identified, pursuit ops ongoing — PNP",
+     "date": "2022-08-31"
+    },
+    {
+     "outlet": "Rappler",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNY2d6Wm1jdU05S1NLT3B4a3RoY1RUTVg5Z2h6OExKeWhuWU1Pc0g1ZHdZN3FERG40Q0I5aFdFdHdFdWxQTWppLThnQWJKRk9WbGdBZlVSdVE4a1pyM3lNWnEtVW5zbmZ6akF1TGxQUnNjSzN4bU9KVUxBSlpJUTE5ZHJhV0ItWUhuTkR1MWFWczdBOHlxemM0TEFKRVNHNC11QjNKN0ZnXzMtRWdwV2ZBWllZbWl5QUFrblEw?oc=5",
+     "title": "BIFF group behind Maguindanao ambush – police",
+     "date": "2022-09-01"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQY2dpUm5wZVFlUEhyeW1HbDBTaHhOVGo5azVSanRUY29ZWGRBdzZoUDNoVWdKb0M0eFR3WW1oVHJJMUt1VkRvNGQzdzM5b1hvcEdxNXZoZVFEZnkyTHdtd3A1c093NmN2WmhwN1ZVZGtValBuVE1WbXpuc09SdThrU0pLZHc0bDBjN2d5dGhwME52MGlTZzFlRGlZaHJSN2xoT1NNYlJCa1Z6Q3BGeUHSAbMBQVVfeXFMUHdtbG9JQzVwdGxoTHVpQ1ZCN3Bic0otMWRaNkhKVkdrNl9vaFdzNXdIV0FCanVmeERJWXphVUtYa2NWY0F2Xy1ZdTZEOVdSX25VUDdvTEI1UXUyTlNXTTFYQ0I2NzI3UWlOSkl6SUhuX3R1WnpwM09UbV96ZWFxcUZWVVV2SzlhcFBjMGdRNmVFYXVXRDM2SUZadG80cWQ3NkpkOUF4UUF2d0Y5VHk4dkRLcWM?oc=5",
+     "title": "MILF helps hunt BIFF men behind ambush of Maguindanao town police chief",
+     "date": "2022-09-02"
+    },
+    {
+     "outlet": "Manila Bulletin",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPclNmU3dMY0phMTU3RmZBbXZvT3NkeFZHeEw0dF9yc0lBWkF2S3RRV3oyTG9ZeWFTdk5zZWdoNVlIaWV5SGxpZDNrYTdteHZ5dUttOC1tYXBYYWhJX2JqaFBza3lESU1XWm1wSUVsUnhFQnNJOU5fZ19TdUxGRlJkcXhrX3ZtTzVzeTBjOFQ2U1RJMTIwSHhKZ0JUOA?oc=5",
+     "title": "Muntinlupa mayor condemns ambush of Maguindanao town police chief",
+     "date": "2022-08-30"
+    },
+    {
+     "outlet": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPX1dzeHFJd0dJeHdqdXFZeWIxWk9XWXMzM1dPMkYtMGlIQ0xtRzltMmcxZTlRTWhPSTBpaWVHSTh6MkxQZHE4ZzhrOWF3dy00MWZyMXRvNUczbFVIRnhxU1VlVk1nMmtFMUk2bWpDQzFXWDE0R1kxOV9XVnlmMWpyT18wbW50WUV5ZUpyeER4TUNYdmtKdnBuOTRBRlJ4TnV3X25Sa0hPeXI4VGdwTjZhcnlLNVdmSlJuUVZoaDE0eFAtVHhHUVNKYmFGRnlJd2FvMHNYXzk2dWl3cnNvOWc?oc=5",
+     "title": "LOOK | Mourning over the death of PLt. Reynaldo Samson, police official who died in an ambush in Ampatuan, Maguindanao, Interior Secretary Benjamin Abalos, Jr. personally expressed his condolences to the family of PLt. Samson on Tuesday, 30 August 2",
+     "date": "2022-09-05"
+    }
+   ],
+   "id": "2022-08-30-ampatuan-shooting"
+  },
+  {
+   "date": "2022-08",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Man shot dead in Lamitan City, Basilan",
+   "summary": "A man was shot dead in Lamitan City, Basilan, according to an August 2022 fact check that said he was not a relative of the Ateneo shooting suspect.",
+   "province": "Basilan",
+   "municipality": "Lamitan",
+   "barangay": null,
+   "deaths": 1,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.6576,
+   "lon": 122.145,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "MindaNews",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMHR5cUtFamM3cnVXeTBIRDZpejFSNkpfaEQyTHE1UWI5ZlBlRm1hcUVOaGtvaElDeWFuX3EydXd5REdmUkwwVkc5dEo4LXZxbmxjVTQtSTE3X3F2YkQ3UDA5X3JJYnQ0NXFKYTlhV21kUnpWck5YMEN3ZW1Cd0lvLWZacm05UFNIWmIyYldrQkpCLUpaakpIODVULXhhRm44aElEb0NHMU04ZGFuQ0tqUDlIbw?oc=5",
+     "title": "FACT CHECK: Man shot dead in Lamitan City not Dr. Chao Tiao-Yumol’s uncle",
+     "date": "2022-08-11"
+    }
+   ],
+   "id": "2022-08-lamitan-shooting"
+  },
+  {
+   "date": "2022-07-28",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Father of Ateneo shooting suspect shot dead in Lamitan, Basilan",
+   "summary": "The father of the Ateneo shooting suspect was shot dead outside his home in Lamitan City, Basilan, on the morning of 28 July 2022.",
+   "province": "Basilan",
+   "municipality": "Lamitan",
+   "barangay": null,
+   "deaths": 1,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.6576,
+   "lon": 122.145,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNQUJhVWxkNnhVckI1R1RtcDROZWlRZUNnS2NZMWV2ZGw2aFJ6YzAyNGJRUWo2d0Iyb3NybFprN3pEdHVGbHJMLTZCR0JDV0dBb0R5Y3hOeDhiNmJkN2RTS19YZDJKVVR0d2tsTVJUSUx4YXhyMnYxcWlNS1l0amZHZ2dJM0hfZjcyeDg3bG53UVdBc29aM2ZVSEVxVG9lck9taGlqYzA3eWJTbDF2SEdEZF9mREVGYWlCei1MNzVPRFlOX05qSW1jM3hob2hRMC0zanFvWHZhbE1wQQ?oc=5",
+     "title": "JUST IN: Rolando Yumol, father of ADMU shooting suspect Dr. Chao Tiao Yumol, was shot dead earlier this morning outside his residence in Lamitan City. | via Richard Falcatan READ: https://www.rappler.com/nation/mindanao/father-ateneo-shooting-suspect",
+     "date": "2022-07-28"
+    },
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxObTc5QXJxLXFBRkNKM3Z5QkFMbDVBU2EzaVBWcG9XS0NEX1NEZHhJUzNmeVRYQTVGUWJkUmdMSmJhVzlWVW90QlFNNHE1OUJjSmJuQlZ6T2FKMVhEZXNVYjFyRW9paF85cUxkeGRXZHVUUHBsSkdLZkl1LUc5b29YRjJjeTRudjJCb2x5Z1g0SjDSAZcBQVVfeXFMTkcweTZKRjZaaWQyVXhVMTctYURJME9jY0poWFFhbzVQTTlJT3BFTkx2QkRESGtIMXlGTHBSZ29qOHFSMUFWNDFxRUN4Rmw3aGliV0c5NFgyVGFOMncxbjFjSkp1V1E2ZndVRzU4VGFYWWl2WlBieTZITS1JRmNHNGxwc2ttV3lTSHowTnJzVE9UV3hacjV2TQ?oc=5",
+     "title": "Father of Ateneo gunman shot in Lamitan",
+     "date": "2022-07-29"
+    },
+    {
+     "outlet": "BusinessMirror",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa1pIVDBzbDliS3ViOTRLZU1DQWVKdE9JZDcwM1RGY2l2SW9oQVA0RTk5b3ptWW5fZ291NHdOdXpDc1J5V3dHRlotRkJMdnQ5QWYwMFJUeFdEMGpLUWI5WnhTLVg4bjc1UXRzYk81M1I2a3dJV21CYUlqS1ozMnNGZFV1NEcyVUNXaWxaU1p6RHpMT0dRWkRrWTQwT1U1OUIyeHc?oc=5",
+     "title": "Father of Ateneo shooter Yumol shot dead in Lamitan – police",
+     "date": "2022-07-29"
+    },
+    {
+     "outlet": "Rappler",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWDNCV2hlWVdPbWtiX2R2WU4tNEVrUmZBcVpxMklCRTFDSm1ORlZheWhUQWIxT0NvNlNnSkI4ajY3Y3V5MHZfMVlzc194WDh1ZjRneVZqYXVDTm54RlVPVzlDZFljTHFkekYtVl9ZRUlmOWtreG9ZMzl0VHJ0MlBOajdZc1pWVklURjdvQnZ5MHpwN0R6MjBGWjUxYl9lTXVsZ2pMY2QwOFpWelY3S3lCUUQ0S0JWMFBDX0x0cjB1WFc?oc=5",
+     "title": "Father of Ateneo shooting suspect Yumol shot dead in Basilan",
+     "date": "2022-07-29"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMzZQM25tdW9iMGxOeFFTdUp3MF9udFFfZ0VYU0VvUHZrRGMzdElHbE9YU1lDZ0JBZlJwT2Yybzg4Vy1iZDFLVjc1N1IzMFFSY3BCSnhlcmZCSi1QLUczV3RzVXJkaGN6SEctdGxTbkdXRjlrQWRyWmhQUUc5V180c1pBd3JqZEHSAYwBQVVfeXFMTWs1Z244bGNzNnpMU3NidGVjejQ0M01lbk9mYzJMUnc1Vklmd0FoX3ItLTIzT0c4alItalZ1STJOSGpqZG1Bd0djMGlvV1NIbmFCN0VIQ1AwYXFOc1d5SjJoWkJtQ3R0bWxncTZocHZiU2p5RzluWWpCcmdGYkNWQjdDRWtKVDJudnBiT1k?oc=5",
+     "title": "Father of Ateneo shooting suspect shot dead in Basilan",
+     "date": "2022-07-29"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNeEFwUnlHLUlQTTNvdFpQS05lYUQxamdJX0YwSDlnOWpVX0xOU1VBb3VzOXZCOEtpVDNBeGdhZ3NjcURzNFByNDRnbjFLQWp6bF9QNzB4Sk5COEIwRDdTeDJtMTNOaWhtS3RXOGZESHlBMzRNaXZPakIxYk1jZkZHZW5UdmxWdXlIYlV1b1ZTTDhmNWg1N291dGJsSE9BQTdscXVuT3V2OURSUFVIVWsxczEza2F3U2pSTC000gHAAUFVX3lxTFB1N0l1RFFORm1uWlFrODU0Z2pBcVN2R1BSZ3NVc1Y5RllrQ3hNWEJ5X2d3OEpvUW9INDF1ZDlGMHh4T3ZxMTN0bnN2aTZSNExtckd6cjdNclRpUVZ6Yk04dURZUjR5cFlLQVpCeTFfTE1ZenhyYjlSQlAzT2Fjb3NRVVZkN1UzOGVHc1JtT3Y3NUxsQ1FmdFlaOUhYWnktYUhVS3k1VkRkU2xsRm1zbElxelJSTFFsWHFXZlBoaGx0Mg?oc=5",
+     "title": "Father of Ateneo shooting suspect shot dead in Basilan —police",
+     "date": "2022-07-29"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQUhjWEVNam1EOVppZzN0N25tM3h5QnlXT3U4ckVyY0YwbzVWM05EaUZnRU5zWlJvMUwzZkxfQk1GSUtRbllxZ2dlWjNTbkhCNHY0S1pIYjRpNU9LSmZoeXZmZjVtYUdUZnJvRzJSXzdJM1BrUWxNODlNTzNhN3JBOUZja3JUVkpKazdac1dUdDRUUDZHOGxOdVVYWl9nbmtsN2NRRzVTU3JhMWRQNFdtcXNjX1lNNVFpR0800gHAAUFVX3lxTE1xSzdxb2hPWXQyU0c0VWRvRUxMUUEwNjl0d21PSk9LQ2VIbTVyQjlPZTdfM2xfc1R1TkxENlNyX2dBNWV6ZXhDeHZfdzJmRGhBMmtZeWNydTBmNlI4OERYZ25FRDZGVDcxQ0wzOUZKVlBJZUZTbDRjNTlfdFFEaFg0STR2ekxNODV5ZTZ2aDhxcldTcHZEMFBvR01QM0ZxdXBiRVZlTnBnajB6SWJ0QkYzMXlJdTFGUFFfZXd4QUxnaA?oc=5",
+     "title": "Lamitan City under tight security after murder of Ateneo shooting suspect’s father",
+     "date": "2022-07-30"
+    }
+   ],
+   "id": "2022-07-28-lamitan-shooting"
+  },
+  {
+   "date": "2022-06",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Losing mayoral candidate and son-in-law shot dead in Basilan",
+   "summary": "A losing mayoral candidate and his son-in-law were shot dead in Basilan, reported in June 2022. The report did not name the town.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 2,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.5479,
+   "lon": 122.0458,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Manila Bulletin",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMlliM0cwMUIxX0N2YXY3Umw5dWlzNE4xeFhQSXhBZXNwWGo0RHFDOUR1cU5YQk5YZzFVQ1dJemk5dWJPUTRpZk9ocjN3d2h4ZXB4QnNwS3ZDXzNUcjFubURhX2lVdGxhVnVpZ2FuSEFOSld5N0E4VUdYRllrbGFrdDlkRHM?oc=5",
+     "title": "Losing mayoral bet, son-in-law shot dead in Basilan",
+     "date": "2022-06-10"
+    }
+   ],
+   "id": "2022-06-basilan-shooting"
+  },
+  {
+   "date": "2022-05-09",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "3 village watchmen shot dead at poll site in Maguindanao on Election Day",
+   "summary": "3 barangay tanods helping secure a polling site in Maguindanao were shot dead on Election Day, 9 May 2022. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 3,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPT1I2RTFSUVliUXlrQjJMZG5JRkxVbGEtcEI5STdtb2Jrc3M0NmZva1lZV183azRLLUpSdk5HNlByaXlYcnlJMjNHWlVyOW03WE14Q1RUd2ZYTml4LUtRMXlSbXkwb0wtaUlodFBKRmF6QXFJdGhPdEIzckhic3pTVGMzZlNQX25iNmxMTy1BdkNpYXZQdXEtNGNCU2ZuTldnSEZRcjdPcGZlMnIxYzhjVEt2QktuSUNjdlZQVUpQMDF4RGFOaFlaRNIBzgFBVV95cUxQbEYwLWx2cUhDbWZfZjdQNW56Tzc4ekF1UE02dVNHVllYQjJBLVlKemJ0bm9UMXh1QXB6cm1yeXJRZU03Vm1YMGVaelpQUUFSTld3Y0RtaWhIc0tzcWdrSk1KS2IwMVBVQmNkb3VJaDlNR1B4a1hSZVlwOUJNZ2ZFam8yYlljSEdaVms5cjd2WnpUZGlTSEpIRFg1Qlo1enBqd0xfb0VBendfaW5aczdST3p1MXJ6dVlISTdzT3Vfa0hpZElzV2V0TDJMV2ZHUQ?oc=5",
+     "title": "3 dead in Maguindanao strafing incident on Election Day —military",
+     "date": "2022-05-09"
+    },
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTWd0SU5OaHpjd2RkUjNCUXg5cm9sZDRZT3h2QzhXa3BpQ1RkaW9iR2FXQlhpS0hPVGhhcGt0ZzZER0dSUF9uc29UU0dmR0RHVS1wNzQyNGk2VmIxd0RkZ1k0bENUaF95ck10SVVDaWs0d2hDWUY1OW5kd1BzUzFjMU9iSkw4M3NDOWwwdmtOMGRLOUowa2N0aEg1NlNlOF8wX2hxVVZnUHpud9IBsAFBVV95cUxNZW1WWWFWcUxJd2tRTVZLc2YzVkVrY3VocHl0eDNLXzBkaC05MEJZckRrNTFSdXZrRXBTWU1nNGJDSkZMUkUxQ0dwQWlLVzhjZFB1b2FVMkU3SjdWNndTNWJqZlo2dXE5SWhSbjFoYXkyNWp6YV9mbjBuNUJ0UUJwTmljZkhsRkpfUFBrUG5GMTNGVmhHa1Y3VjBVLVYtMnhpOGlYd0Z1T0VMOVhUVE1MMg?oc=5",
+     "title": "3 tanods helping secure poll site in Maguindanao shot dead",
+     "date": "2022-05-09"
+    }
+   ],
+   "id": "2022-05-09-maguindanao-del-sur-shooting"
+  },
+  {
+   "date": "2022-02",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "9 killed in ambush in Maguindanao",
+   "summary": "9 people were killed in an ambush in Maguindanao, reported in February 2022. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 9,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZXhQSHlEQl82TnBETV9wcnpzR09leWdaYkFKZ3dEbGt4dkNQZ1Q4UTBWcldsSkg1eC02V0o3OXB4MUZjUlhWek1BVFQtX0V3cU01WlZXTWtUYmc1QW5wMmdDWlN6YmIwbkJUbkU2cWJwTDFWY0R3VmpFYXQwaS1uS3FB0gGIAUFVX3lxTE5EM29WdEpaUjFWNnl0WEV5UVNkblpNY092dXMxZVBFWms1VU9pREFwTHBrQzBEMkVwZTlhRjFVVGpwc1d1dU5DellJNi1mTEZSa2FMaXdCbXRTMDhYNUVsSFY4MGxsVWhaVFg2UGFFYkVfU0hMQWFRbEZnTExSVmgyVDdlZnJYOWg?oc=5",
+     "title": "9 dead in Maguindanao ambush",
+     "date": "2022-02-12"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTGFXRlJ5cHkyaXN2Q01GLW04R25oUG9Bb3MwUHFzMUFOZENzMW54UFhaVUV1Rlk3dkxCT2tEYWYwM0t4dVcyWWdtaTA3TFF1NmpKUWRfSWpGTXZ0LThhYzVhVHgwWWtPemlWdHZhX0tldV9sczBfVDZwLXltV3NOeG1jVWYwaE9zemJ5d21iS0Njai1UZXhiUEhoNzLSAaIBQVVfeXFMT2toaWZfMVNwN3hsTGNEVzJGbVlVeEhRUVB6RnJrSGxTdU1rVTJWajBwWDBQbGdpc3RkYjl2QUZWQU9SSWIyRUJ5MzMxVlhIMlp1dTNBX25Kdk44cDZpbjg1YVM1LXc0VzZTaklxeHU0VHhRd1lfYzEyX0dkTmNNREo4aEhuQ0t4VzhjQ2prZUVIVVVWZ0JmbjJ1Tk93d2N5LUtn?oc=5",
+     "title": "9 dead in ambush in Maguindanao",
+     "date": "2022-02-12"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPOHRVMXdrRm1zRDQyaVp4M2tmU3UxU0Iwb0ROUEkzVWNJdGhaelpkRUZ6ZUxYQTR5X3llMjJMUzR1ZHJwRGRTMER2VVhOMnlDb3YyQkFobGNGbVFjeXZteXlYNHhJZWdVYWFXSkdPYXJxNkR3LU9kZnplYWRWUklxZm9Jd3NiVWg3UjVhUElnSmcxSE9CMEd5cHZTVGdid9IBowFBVV95cUxOLTFsdmpZbHlxTS15WHBoUGs0UER0TjN2bktYRGJackFXWGR6MkgyVjk5RlpfNjJpYXpQT2VfV1RoNVdNRjk1MzJsY0doYUtLbjdPNXRXcV9DMV9XaFRJYkh6S0ZNVzAzZEh3YVgtb1YzUHZIWU5rZWwzR0JUVU85RG1ObU56VDhzMVZfMHhnYlBwVjZZd1hoMzFSYW1yUnNzemZJ?oc=5",
+     "title": "MILF ceasefire team probes Maguindanao ambush that killed 9",
+     "date": "2022-02-13"
+    }
+   ],
+   "id": "2022-02-maguindanao-del-sur-shooting"
+  },
+  {
+   "date": "2021-10",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Village councilman and companion killed in ambush in Maguindanao",
+   "summary": "A village councilman and a companion were killed in an ambush in Maguindanao, reported in October 2021. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 2,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philippine News Agency",
+     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBmOERKeHlvUFFjazNWRmZLSVhIRFBKMG15MXFtd3d5UTVXOGFHWmdSbTQ0TnVTUTA3XzBBeURWVkVYaXdLbFBDTEVyTldfbkxt?oc=5",
+     "title": "Maguindanao village councilman, companion slain in ambush",
+     "date": "2021-10-27"
+    }
+   ],
+   "id": "2021-10-maguindanao-del-sur-shooting"
+  },
+  {
+   "date": "2021-09",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "2 MSU students shot dead inside campus in Marawi",
+   "summary": "2 Mindanao State University students were shot dead inside the university campus in Marawi, according to a September 15, 2021 report.",
+   "province": "Lanao del Sur",
+   "municipality": "Marawi",
+   "barangay": null,
+   "deaths": 2,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 8.0047,
+   "lon": 124.2854,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMTdMZGJfUnlZYmR0cTZiVEZHTjROU1BsWFpmTGxwUThPZkZ1MW5PSU1FVTlhNGNKemtOZk0yUV8wZ0JkNVFCc1NjOF9LNm1aaFJGcmwxTnlQMGlua213d3BCaDVHSVVzYjhkUzhFODRNNGc1MVJSUW43S2Q2MXpZN3REMXVJVnFlMjRWWnJKQWJZdE9TLTQwRFl5MXhHZ9IBowFBVV95cUxPWU5ZWngzNFBCZDBmNFo0bWxrU284T0FXMDFVRW1qMmF5TUtwRjBuUkZaeFVrVTFHUjB4VnZnbG1xb29FUXRDNjhHbDRWZTd6WjFPbGF2d2tLaURnUVlPc0RhTm9lTEFZNE0ySVZMaDFiZVEyQWZYZ3FnellkaVZsNXlVQ1JEcjNSRlVCTkNIVVN1TkZyalRPU0pxcmZ6d0JQU3Uw?oc=5",
+     "title": "2 MSU students shot dead inside university campus in Marawi",
+     "date": "2021-09-15"
+    }
+   ],
+   "id": "2021-09-marawi-shooting"
+  },
+  {
+   "date": "2021-09",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Professor ambushed in Maguindanao; 2 attackers killed",
+   "summary": "A professor survived an ambush in Maguindanao and killed 2 of the attackers, reported in September 2021. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 2,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZjBHNGpwMTZJNGVENXZjdHlRMVlzLWpGdWl4M1AyODY5SHZWQ2I3SjZTVjVNVjl0RDZBa0tDcTZIODRpSjJUVXJ2d0pxX1VSRkZvdVlBNjQ1QWVDTWYyY1ZuRWNqWDlHQUxIQmlGUXVodklPaGVEUzNSUTRHVElYYWZLb215Rkk1QU1sQm5Ubmk4ZnZzZ3lPYS05NjZWZ9IBowFBVV95cUxOWlNLenpNQ1dhME1aQy1xcDdvNk1adkFVVVZGQzBlVkxGTlZwOUVOelhFanU1WWlkUWNHRjBsS0lEeFZFU2RTREJ0aDdRRG8wNE4xTnRtNy1ZMjI1VkFlaTlTQVAwSmEyellQeFhicnlFYjBQSFVyekRxb0Z3UUF2ZkRGUFRyc1VWaEh3Qk1IME4wRVIxa2htMER5SHY0c1JHUnVz?oc=5",
+     "title": "Professor survives ambush in Maguindanao, slays 2 attackers",
+     "date": "2021-09-22"
+    }
+   ],
+   "id": "2021-09-maguindanao-del-sur-shooting"
+  },
+  {
+   "date": "2021-05",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Village official shot dead in Basilan",
+   "summary": "A gunman killed a village official in Basilan, according to a May 10, 2021 report. The report did not name the town.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.5479,
+   "lon": 122.0458,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philippine News Agency",
+     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB4UGYxSDNyaUlNb0xTLU1Ya3hoUWtHOTVKS2k0X0ljYnhiMnJmX0hfUzE2V3VuMVlsbWZWd3BrNXY3eFp0VDVxYUhreFVfMFl2?oc=5",
+     "title": "Gunman kills Basilan village exec",
+     "date": "2021-05-10"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQQk90eGtfQVpUNGRJV3BrV2RzaXF3M0xPcTB1QWd5OWtSLXRvN1lqREJIRHBXV0t5MllYVEd6N1lIODByV0V5aThMb094WFhtVXMySDJJVDhCMDExVE1KVV9kWW56WTg5cUhLNTY5T1dYXzBBQ2FNQXlQano3cDFVSdIBhgFBVV95cUxORmFtT1F5cGJGcEs0c2hNTVhzR3hMNU9QLTE5cWhyek1peTdzV3JFNjZfUFJRQy1XNmlLTm1oQlROYlVHbF9EX3BHVThjRktORGVDLU1QekppYXJTS3JTUWhRRWg1R1lYcGtNdjJoSmZsRHJ3YU9fXzA2ekNiLTBjUHA5RF9UUQ?oc=5",
+     "title": "Village official shot dead in Basilan",
+     "date": "2021-05-11"
+    }
+   ],
+   "id": "2021-05-basilan-shooting"
+  },
+  {
    "date": "2021-04-04",
    "type": "water",
    "kind": "Boat mishap",
@@ -6618,6 +8600,32 @@
    "id": "2021-04-sitangkai-water"
   },
   {
+   "date": "2021-03",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "2 CAFGU members shot dead in Basilan",
+   "summary": "2 CAFGU members were killed in a shooting in Basilan, according to a March 8, 2021 report. The report did not name the town.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 2,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.5479,
+   "lon": 122.0458,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "ABS-CBN",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPcXA4MGF2Q2tLTmlWQXJRV2hIa0xOZTZHQzJUSjlxMm1EOWpsTHVnbU1jZXp1U1g2b1gtb2pJYVE2U0tEbGV5WTdaOGxuOUpUdVdCR0M0VkF6QnFzTFNHdTJfZ2xLUGZZYzFranNfei0tdHdJWnFMNXZkZjRvenNYeGtXY3hMbXVKdHBROHZGQk8?oc=5",
+     "title": "2 miyembro ng CAFGU patay sa pamamaril sa Basilan",
+     "date": "2021-03-08"
+    }
+   ],
+   "id": "2021-03-basilan-shooting"
+  },
+  {
    "date": "2021-02-18",
    "type": "fire",
    "kind": "Fire",
@@ -6673,6 +8681,32 @@
    "id": "2021-01-30-datu-odin-sinsuat-road"
   },
   {
+   "date": "2021-01",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Barangay chairman, 3 others killed in Basilan ambush",
+   "summary": "A barangay chairman and 3 others were killed in an ambush in Basilan, according to a January 11, 2021 report. The report did not name the town.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 4,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.5479,
+   "lon": 122.0458,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philstar.com",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbmdNMzFqcHk5cFI5bktSVmNQazMyb2dTdTNja19FRFN2eG1HcFdnUmQtQlNJd25WSnBDM2R6dDVCNXBaRVhQX2hTaDlZUWRkd0pDYUJIRlFlazNEcllUaUFjTHRxSG42eGNnbmpjWTBGWGhDYVl4VXQ2S2x2OE9JNTFFUFNjNE04QU0xNzloMXdsclJuZTZZSklLcWxaTFZu0gGnAUFVX3lxTFBLWnA1WjFlbnpkM1ltTUVoZmlTSWJWWmc2T0l4Sk84clF3VG91MTVtREZSRm5lb2htUDJmN0FJWklwazVveE9KZGZMcU0ybjkxTVB4UGktWkVxSGkzMEJQdHhOT2p5UFIyX1dEZ09IYldiSlU5akpRSzZkbEZQbk1hLWhvUkRwN01QMmd6cnFZQ2FVR09UVVhzQmZaTkVnZEZ5Y1pDVFdV?oc=5",
+     "title": "Barangay chairman, 3 others killed in Basilan ambush",
+     "date": "2021-01-11"
+    }
+   ],
+   "id": "2021-01-basilan-shooting"
+  },
+  {
    "date": "2020-11-26",
    "type": "other",
    "kind": "Aircraft crash",
@@ -6699,6 +8733,44 @@
     }
    ],
    "id": "2020-11-26-madamba-other"
+  },
+  {
+   "date": "2020-11",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Former Jolo police chief shot dead in Maguindanao",
+   "summary": "A dismissed former Jolo police chief was gunned down in Maguindanao, according to November 21, 2020 reports. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Rappler",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcEtCUjBDTjlJTGV4dlFYOTRkOE9PNS13UFJlR1pZd0ZxMjBfOGdyMjlPdThsT0tOelViU3dKZzh3aTJiZGY2S3oyeHhlWG55c2Y0dlpXTkZyZWJSVkxPdkNjQ2hXV2ZiaUI1bi11bV9lWFFCRTFtdUtKQXdRcU1laU9uWDJMMkRFYV9PWUxjODBwamcyd0VXbDB2dDRMaW45RGVCWGZUbw?oc=5",
+     "title": "Dismissed Jolo police chief gunned down in Maguindanao",
+     "date": "2020-11-21"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMHlBR0ROek45bFhVb0w3OVRhNDczenE5S3AyMDhxT0VUMUlfVmNLOXBpSzBJWnotcmJwN3ZheU1LUlhWYjJfckhXU1RUMTE4NE1LRm5qQklXV2U2RVhwRVZSUHVxRlhYLXlDTEZEd0dnUnFEM2pfUFVnc3R1MDA2Q2hoeUlaMjVKd3lKWk5LVnRucHVz0gGaAUFVX3lxTE5mbFdzTFkya1VkdjVDSXgybTRObVZZamxwbHZaZzN0WmJybG0yeTJXM21VSHQ0OG40dkV5NVYxWlE3MEVyaG0yZHdYUFgtV0I4dUVobS1rTXpFd3ZORENxYXdyZ1Z1TC0xM1VyaUdJdzA3VzFodndEYlg3ZHJjQlFkOGc0dzBHWXVET3RzWUFOdi1aVjRZLVVJZmc?oc=5",
+     "title": "Ex-Jolo police chief Annayo shot dead in Maguindanao",
+     "date": "2020-11-21"
+    },
+    {
+     "outlet": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOSm50TG1IaWZ4VUVOaE15QldPSGxIUVNzMFh2TFVfM05TcXJHd2lKSEphd1I1dmpBNi16X28xUThuRWtocmlFR2ltbDZfRGJEeWh2cEdmTUxfNmxjMjJUVld5a1V3ZEo0d2tNM3I2X21ZTHhob0JINEhQVFNmbFlhZ01paHNqOG1xMkdHc2FfcW1maHEyQVFYY0Q2OG9LSGxuMUh6MnFKOGRZcUdCNVNrZlMtYll2U1F5Wm9UZnN4QS1XZUE0ckxELUc4dGVBNkoxVjEzcA?oc=5",
+     "title": "PNP chief Police General Debold Sinas pays his last respect to Police Lt. Col. Walter Annayo, former chief of Jolo police, who was gunned down in Maguindanao over the weekend. Annayo was the Jolo chief of police when the shooting incident between the p",
+     "date": "2020-11-23"
+    }
+   ],
+   "id": "2020-11-maguindanao-del-sur-shooting"
   },
   {
    "date": "2020-09-27",
@@ -6801,6 +8873,32 @@
    "id": "2020-09-16-tipo-tipo-other"
   },
   {
+   "date": "2020-05",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Cotabato City mayor's secretary shot dead",
+   "summary": "The secretary of the Cotabato City mayor was shot dead, according to a May 25, 2020 report.",
+   "province": "Cotabato City",
+   "municipality": "Cotabato City",
+   "barangay": null,
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2238,
+   "lon": 124.2467,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "ABS-CBN",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPd1FQWC1FWkREMFYtMW0xeVY0YTNpY0I4UllXaDNIX0lKNDJYdlFWd1hOTkEyeE41d3NfS01XQXprbWZfMEsycGJPZU03X0YweU1QZjVOM1VvVDdWb1hlSTZqVG4tbTYxMm1FTUd4aG5walhRbnM3Zl92ZmZ4b2ZrYlc4SE0?oc=5",
+     "title": "Cotabato City mayor's secretary shot dead",
+     "date": "2020-05-25"
+    }
+   ],
+   "id": "2020-05-cotabato-shooting"
+  },
+  {
    "date": "2020-04-08",
    "type": "road",
    "kind": "Road crash",
@@ -6867,6 +8965,56 @@
    "id": "2020-02-lamitan-fire"
   },
   {
+   "date": "2019-12-24",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Vice mayor Akmad Mitra Ampatuan ambushed in Maguindanao",
+   "summary": "Vice mayor Akmad Mitra Ampatuan, a witness in the Maguindanao massacre case, was ambushed in Maguindanao on December 24, 2019, on his way home and was critically hurt. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 0,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVkNFSWJEbzRxbERpVUZkajdkWUxMdmFNOFVXX2NGS2R0RlRPUEYybS0xLTFOZ0prZzhBd0Q0UVVyNFlGM29KUEtLNWpYYWRDVGhWZmRoUzF1RTB3ekx2cGIzWnFGMEFLTXJxZzZLbHNNU3l0RzBfMmZQSkQ4d0stOGxNXzFvTVlqLThrSDhGZ21uNTMxVE94SlpUWGwzTEl6ZmlrcGQxbjJidXM3dFZxaGllTE1tZ1pTaEtTVzlidS16bTBnUWpncTFEamt0R0hpaG4zVUJtMjJjalcy?oc=5",
+     "title": "Akmad Mitra Ampatuan, a vice mayor who testified against his own relatives in the Maguindanao massacre case, was ambushed on Christmas Eve. #AmpatuanMassacre READ: https://www.rappler.com/nation/247903-vice-mayor-testified-ampatuan-massacre",
+     "date": "2019-12-24"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPLVh1eTNXRGk1NVpGYWUwdGdCTmFib1hVd2ZYbXA0M0EwSllPUXhHMEdNTmsyeEpxRWtFMkNjQUxVaDlfa0ZpQ0w5Ymk2UjVfQVlScEtGcjZRdzN6Q0dobTl6SUE2STk5V3k3SUtiWUluVTR4d2ZsMC1zOFJ3amZFeV9JazUxdWpTeHJLUksxakpqdGROZEJoZnhTWU9pR1F4ZnM4VEpHN3VnVG9nQ3B2UnotR3N5RHl3UUVseThFRVJuMHlOdE5Fakh30gHPAUFVX3lxTE1wdi11aEhVRUExMUpjQ3ZfQ0s5UGYxbm1YelRqamFGaGtRUzFId0ItaUxCTXRwYTFGaFktT2NqLVl4bGtyeFlzbjhGUjNxaXpsLVFsXzR0TFFWWkJmbmg4bnRpbGNFS3lEM1VqSGdlNGthSEp3MDA3VGJnOGR0LXhxZzBpZFlldlRQNDNzQUQ3cW1CcHRZUFhCUUgtWDkxNmlhOWVEaHRqajBjRE9hYlBXMVdxWFdrZEh2bFJVV01yeFFodmZjNHNkakFBUGI4VQ?oc=5",
+     "title": "Ampatuan who helped convict relative in massacre case survives ambush",
+     "date": "2019-12-26"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPZVNYZWZ3MXNyU0U1akc4M0kwallhM3B3U2dya0J3eTdaY1hTc19TUnRROHRMVnRzY19XR0drSUxtZDRxT2RuZXV6Y1p4OXZ2ZWhydENLaVhwQXZuOFlfUTE2TmJHbVc5SHdLc2Q3U0RBN2pya2NrRVcxSXQ3SVVrb0pObGNXaUFqdE1IMDFiMVlBUTRu0gGaAUFVX3lxTFBNSTJNSDRGQWhFNmdacG9UY1czRlBnZnY4YzRzNVdlN1BMZGhvRFFzcVpldzRLVUFrb2FFTngxejhYZzhxeEh5YjlYT0dmRGZNV05uOHNoTXNqRXJBeVRBdVZBUkhFc0tmVEFsUDlUTlpSblJiQTM5amFTcEFGZHltbllpdEVxU0lKc21JdmV5TjlWd05WNmNucnc?oc=5",
+     "title": "Maguindanao town vice mayor ambushed, critically hurt",
+     "date": "2019-12-24"
+    },
+    {
+     "outlet": "Facebook",
+     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNWFVYMEMzVFNldm1zb0k3MEJLSFNJX2owV3RhcVJ5NGdqREo1ZWxMRi0zemE5bjVhUndXaXpQUF9PcHQxRlZFWU5hLUJxZlhPX1JpcHpLU1dlRldoYnViUUlTVGEtLWlIODk1V1h5OXhNUzhVU0tjVUFUX281a0Z3UE5SR0tpVXloOGw0ejJSVDZOWS1tR2YzT05mdUFWSEc2NzlkUWk2X0pYdm9aVWxzY2VQUW9zMkZuVUc1WmNWLVFUNy1id0R3OFN4SjJoQmhEMXlkWUJ4RU9YYmEza3c?oc=5",
+     "title": "Rappler. . Akmad Mitra Ampatuan, a vice mayor who testified against his relatives in the Maguindanao massacre case, was ambushed on Christmas Eve, December 24, on his way home. Full story: https://www.rappler.com/nation/247903-vice-mayor-testified-a",
+     "date": "2019-12-25"
+    },
+    {
+     "outlet": "Rappler",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdWFocWFlWlJyNEJ6OEFONXgtSkJvTjlKZm13czU0LUctV2ZpRGtGMk5nU2JpWS1faEp4Uml0MmRtWG5VeVk5YmJVLWF6RWdEc0dUUTJWc3BZc2FBQzhFNmtZbkxxUkFGYmcyeDFHU041SWhaWHcteTNUbk13ei1KOXJrRUI2LW9UZkFheGxhUWY5dzEzYm9pT3U5WG9JbjB5aWZXaXRKQXhfbVFMTWRoZGY2OWpjc0FIWW93Zw?oc=5",
+     "title": "Vice mayor who testified in Ampatuan massacre ambushed in Maguindanao",
+     "date": "2019-12-24"
+    }
+   ],
+   "id": "2019-12-24-maguindanao-del-sur-shooting"
+  },
+  {
    "date": "2019-11",
    "type": "fire",
    "kind": "Fire",
@@ -6893,6 +9041,116 @@
    "id": "2019-11-bubong-fire"
   },
   {
+   "date": "2019-11",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Lanao del Sur mayor's convoy ambushed; police officer, 2 others hurt",
+   "summary": "Gunmen ambushed the convoy of a Lanao del Sur town mayor, who survived; a police officer and 2 others were hurt, according to November 10, 2019 reports. The report did not name the town.",
+   "province": "Lanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 0,
+   "injured": 3,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.8319,
+   "lon": 124.2537,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philippine News Agency",
+     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB3dDh6YUtpOHpfZExNM1BFV0dWSk9IdWlNZmFOMUNjTm9WZmxmT3l0dUhUcEhSODBHa2VVVkF0eEVqZl9ueHN5Sm41M01Pb1k3?oc=5",
+     "title": "Lanao Sur mayor cheats death as gunmen waylay convoy",
+     "date": "2019-11-10"
+    },
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSmNibXJocVZhdzJFSVF3SU02emJfS29FSzNCbEV0MkRQcDFlakVNVVhvOWk1eGdJX0YybzRNeEhndHpqWVg3eGhJMHIycG56Z3lLNEN3TS1VdTNrREQ1eFNYZGFyQTlTNllMU2FSQmhJTXN5N3R0cmp1R2cxMDlmT1dlcnhteVExM0Q0djR3aWvSAZYBQVVfeXFMT1JxQUFoOFdGREFyaHpCOV9yV3A3NFdJUWwxLWRRNkw0TV8tbmVnY3VsWExEbVdzeU9sXzk1NDFZcUZRVEFSS240bmFyejR0X1NySTdUbTI1SEl2eENLRzJ6ZW83bllSRExia09zTVk0SGxUOTVFam5fcUhxX2RzUi1IcENmQUUwTXpoMlIxTUpVdGVFd3hR?oc=5",
+     "title": "Lanao del Sur mayor cheats death in ambush of convoy; cop, 2 others hurt",
+     "date": "2019-11-10"
+    }
+   ],
+   "id": "2019-11-lanao-del-sur-shooting"
+  },
+  {
+   "date": "2019-10",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Student shot in the head in Marawi dies after a week in coma",
+   "summary": "A student shot in the head in Marawi died after a week in a coma, according to an October 26, 2019 report.",
+   "province": "Lanao del Sur",
+   "municipality": "Marawi",
+   "barangay": null,
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 8.0047,
+   "lon": 124.2854,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Philippine News Agency",
+     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE85azZHUDJVT1h1NklLeTFGRy1XeFhKWnd6YzRfZktQSHNjZnlJeWhWc0FBQ2dkUU5PU2JDeERXOEtTT2FYeGEwc0t2TVZvMzFJ?oc=5",
+     "title": "Marawi stude shot in head dies after a week in coma",
+     "date": "2019-10-26"
+    }
+   ],
+   "id": "2019-10-marawi-shooting"
+  },
+  {
+   "date": "2019-09",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Barangay chief shot dead in Lanao del Sur",
+   "summary": "A barangay chief was shot dead in Lanao del Sur, according to a September 28, 2019 report. The report did not name the town.",
+   "province": "Lanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.8319,
+   "lon": 124.2537,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOanFqUDVCd3FkdnJXT2FKMmVkUDNsTzJIZjl5elJtbzc4QTlBcllNeTVoN09GNGJTa2FlLU9ETUE2V1hPdzBpSy14MXZDd25KR1NHY0tjM1pVTnFTTjBpOEdZZ2IybmliWDJhNnN5ZW5RWGJ4R0hsdlExRjRRblVRZ1JR0gGHAUFVX3lxTFBDODBDX21iekloNTBqVUoyM0s2bEFWcW1LNG5tdmFsOVdoNV9URDMwUnM5NXVscWZBSzAweGs0cEc1Ukdnd3hQX3Uza01KVnNzTnpDX3V6b29BcU52ZmlYUGRIWUNVMzhMbzd6cXhCXzBjVkF3OE1NMFJrRTY1Y3lyRVpCN3ItTQ?oc=5",
+     "title": "Lanao del Sur barangay chief shot dead",
+     "date": "2019-09-28"
+    }
+   ],
+   "id": "2019-09-lanao-del-sur-shooting"
+  },
+  {
+   "date": "2019-09",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "North Cotabato police officer wounded in Maguindanao ambush",
+   "summary": "A police officer from North Cotabato was wounded in an ambush in Maguindanao, according to a September 11, 2019 report. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 0,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Philippine News Agency",
+     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9mT1hQS0xrbGc3Qi1SM2xTd0dqZHBQZmJGOEljZHJUdEU3ellkSTYxaGtzVGJwLXphUGxnVUhkaEVjeE9xT1B4NXBvN3ZaeFFa?oc=5",
+     "title": "NoCot cop wounded in Maguindanao ambush",
+     "date": "2019-09-11"
+    }
+   ],
+   "id": "2019-09-maguindanao-del-sur-shooting"
+  },
+  {
    "date": "2019-07-17",
    "type": "other",
    "kind": "Electrocution",
@@ -6917,6 +9175,58 @@
     }
    ],
    "id": "2019-07-17-tamparan-other"
+  },
+  {
+   "date": "2019-04",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Man shot dead in Basilan",
+   "summary": "A man was shot dead in Basilan, according to an April 11, 2019 report. The report did not name the town.",
+   "province": "Basilan",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.5479,
+   "lon": 122.0458,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "ABS-CBN",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4yNHlpSTFuN1Q3emNvell6LVAzbUhkRWZWdDgxWnZYMzU1LVVKYnpYRUJYMDB4NmUyOFdLd3RxdEd2My10ck9GcTRZQURLTk5CQjVETWF5N0pCcngwbnhHTC1uZWtZT09CSlpqUUJzYWotYm4wcFVTbjZBMzRfZXM?oc=5",
+     "title": "Lalaki patay sa pamamaril sa Basilan",
+     "date": "2019-04-11"
+    }
+   ],
+   "id": "2019-04-basilan-shooting"
+  },
+  {
+   "date": "2019-04",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Soldier gunned down in Maguindanao",
+   "summary": "A soldier was gunned down in Maguindanao, according to an April 5, 2019 report. The report did not name the town.",
+   "province": "Maguindanao del Sur",
+   "municipality": null,
+   "barangay": null,
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8774,
+   "lon": 124.5505,
+   "placed": "province",
+   "sources": [
+    {
+     "outlet": "Inquirer.net",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9XMm5Ja3YwbHJVNUtZcmh3dzBDVml4b2JuR0pHelpHLUkzTmRpVWZNdGdEN2JURGJXQjlUUi1KLThTMlcybWVGRjlVNVh2U1B3Y0Z5SmNNYWJpaDFfa2VLUFZieUpSZkZwaDA4dW1EN3VPWUMzNUNoRVk0VHTSAYIBQVVfeXFMTm9HZU45S1o0bE5yanUtMXZSeXBkMWlQX3FocXhTN25nNG52emJFc3N0VlQ3UzRRcmp1b2hXYUNHdnNOZ1NQdG1WYWIwWUZienRsNWkxTGQyM2FQaGJOa1FyUDdXXzY5THRMdUNUNDNiRlNYd3RjTjJVYzFodDVKU3lKZw?oc=5",
+     "title": "Soldier gunned down in Maguindanao",
+     "date": "2019-04-05"
+    }
+   ],
+   "id": "2019-04-maguindanao-del-sur-shooting"
   },
   {
    "date": "2019-02-12",
