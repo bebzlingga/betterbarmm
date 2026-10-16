@@ -158,7 +158,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 	const [type, setType] = useState('')
 	const [province, setProvince] = useState('')
 	const [deadlyOnly, setDeadlyOnly] = useState(false)
-	const [show, setShow] = useState<Show>('both')
+	const [show, setShow] = useState<Show>('points')
 	const [selectedId, setSelectedId] = useState<string | null>(null)
 	const [focus, setFocus] = useState<Focus>(null)
 	const [open, setOpen] = useState(false)
