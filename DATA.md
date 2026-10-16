@@ -233,6 +233,7 @@ under-counted.
 | The incidents | `accidents.json` |
 | The reports they were read from, one file per research pass | `reports/*.json` |
 | Town centres, from OpenStreetMap through Nominatim | `municipality-centres.json` |
+| The region's outline for the map, PSA's PSGC boundaries without Sulu | `barmm-outline.json` |
 | Barangay look-ups, cached | `barangay-centres.json` |
 | Outlet addresses recovered for Google News links | `links.json` |
 | Later looks at single records — barangay, day, toll, photo — keyed by id | `enrichment/*.json` |

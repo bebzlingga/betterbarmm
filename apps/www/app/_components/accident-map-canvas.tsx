@@ -3,6 +3,7 @@
 import type { FeatureCollection, Point } from 'geojson'
 import type { GeoJSONSource, MapLayerMouseEvent } from 'maplibre-gl'
 import { useEffect, useRef, useState } from 'react'
+import outline from '../../../../datasets/accidents/barmm-outline.json'
 import { ACCIDENT_TYPES, type Accident } from '../_lib/accidents'
 import { Map, MapControls, useMap } from './mapcn'
 
@@ -30,6 +31,10 @@ export type AccidentFeatures = FeatureCollection<Point, { id: string; type: Acci
 export type Focus = { id: string; lon: number; lat: number; nonce: number } | null
 
 const SRC = 'accidents'
+/** The region itself, washed in the brand crimson under everything else, so the reader sees where BARMM ends. */
+const REGION = 'barmm'
+const REGION_FILL = 'barmm-fill'
+const REGION_LINE = 'barmm-line'
 const HEAT = 'accidents-heat'
 const PULSE = 'accidents-pulse'
 const PTS = 'accidents-points'
@@ -106,6 +111,11 @@ function Layers({
 	useEffect(() => {
 		if (!map || !isLoaded) return
 		const dark = resolvedTheme === 'dark'
+		if (!map.getSource(REGION)) map.addSource(REGION, { type: 'geojson', data: outline as never })
+		if (!map.getLayer(REGION_FILL))
+			map.addLayer({ id: REGION_FILL, type: 'fill', source: REGION, paint: { 'fill-color': dark ? '#e0604c' : '#8b1e1a', 'fill-opacity': dark ? 0.14 : 0.09 } })
+		if (!map.getLayer(REGION_LINE))
+			map.addLayer({ id: REGION_LINE, type: 'line', source: REGION, paint: { 'line-color': dark ? '#e0604c' : '#8b1e1a', 'line-opacity': 0.55, 'line-width': ['interpolate', ['linear'], ['zoom'], 5, 0.6, 10, 1.4] } })
 		if (!map.getSource(SRC)) map.addSource(SRC, { type: 'geojson', data: latest.current })
 		if (!map.getLayer(HEAT))
 			map.addLayer({
