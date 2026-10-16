@@ -56,6 +56,10 @@ CENTRE = {(c['province'], c['municipality']): (c['lat'], c['lon']) for c in CENT
 PROV_CENTRE = {}
 for c in CENTRES: PROV_CENTRE.setdefault(c['province'], []).append((c['lat'], c['lon']))
 PROV_CENTRE = {p: (round(sum(x for x, _ in v) / len(v), 4), round(sum(y for _, y in v) / len(v), 4)) for p, v in PROV_CENTRE.items()}
+# Except where the mean falls in water — Lanao del Sur's towns ring the lake, Tawi-Tawi's are islands — so every
+# province but the Special Geographic Area stands at its main town instead, which is always on land.
+SEAT = {'Lanao del Sur': 'Marawi', 'Maguindanao del Sur': 'Buluan', 'Maguindanao del Norte': 'Datu Odin Sinsuat', 'Basilan': 'Lamitan', 'Tawi-Tawi': 'Bongao', 'Cotabato City': 'Cotabato City'}
+PROV_CENTRE.update({p: CENTRE[(p, town)] for p, town in SEAT.items()})
 PROVINCES = {norm(p): p for p in PROV_CENTRE}
 
 def resolve_town(name, province):
@@ -233,6 +237,9 @@ for r in merged: r.pop('_ids', None); r.pop('_file', None)
 for r in merged:
     direct = {(s['outlet'], s['title'].strip().lower()) for s in r['sources'] if 'news.google.com' not in s['url']}
     r['sources'] = [s for s in r['sources'] if 'news.google.com' not in s['url'] or (s['outlet'], s['title'].strip().lower()) not in direct]
+# Every incident links to a report or it is not here: a patch that strikes a record's last dead link strikes the record.
+for r in [r for r in merged if not r['sources']]:
+    merged.remove(r); dropped.append(('enrichment', r['date'], r['municipality'], 'no source left', r['title']))
 if patched: print(f'{patched} patches applied from enrichment/', file=sys.stderr)
 json.dump(CACHE, open(CACHE_PATH, 'w'), indent=1, ensure_ascii=False)
 merged.sort(key=lambda r: r['date'], reverse=True)

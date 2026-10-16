@@ -251,7 +251,8 @@ not. Sulu is not mapped; it left the region in 2024.
 A dot sits on the barangay the report named where Nominatim could find it
 within 25 km of the town, otherwise on the town's centre, or — for a report
 that named only the province, as many shooting headlines do — on the
-province's centre, the mean of its towns'; the record says which (`placed`),
+province's main town (Marawi, Buluan, Datu Odin Sinsuat, Lamitan, Bongao; the
+Special Geographic Area's centre, the mean of its towns'); the record says which (`placed`),
 and the map draws a province-placed dot faint and leaves it out of the heat. Figures are as the last report gave them;
 `null` means no report gave one. Reports from Google News's index keep
 Google's link where the outlet's own address could not be recovered;

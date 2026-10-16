@@ -139,7 +139,7 @@ function Details({ a, onClose }: { a: Accident; onClose: () => void }) {
 			</p>
 			{a.placed !== 'barangay' ? (
 				<p className='mt-2 text-[10.5px] leading-[1.6] text-[var(--ink-mute)]'>
-					Placed at the centre of {a.municipality ?? a.province}; the report names no {a.municipality ? 'closer spot' : 'town'}.
+					{a.municipality ? `Placed at the centre of ${a.municipality}; the report names no closer spot.` : `The report names no town, so the dot stands faintly at ${a.province}'s main town.`}
 				</p>
 			) : null}
 		</article>
