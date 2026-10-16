@@ -255,16 +255,6 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 	const byType = countBy((a) => a.type, 'type')
 	const byProvince = countBy((a) => a.province, 'province')
 
-	const anyOff = q || year || type || province || deadlyOnly
-
-	const reset = () => {
-		setQuery('')
-		setYear('')
-		setType('')
-		setProvince('')
-		setDeadlyOnly(false)
-	}
-
 	// Drawn twice — on the page and in the dialog's header — off one state,
 	// on the estate's own controls, each the width of its words and no more.
 	// Only the dialog gets "Show", since the page has no heat or dots to
@@ -312,11 +302,6 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 				) : null}
 				</div>
 			</div>
-			{anyOff && !plain ? (
-				<button type='button' onClick={reset} className='mt-3 cursor-pointer text-[13px] font-semibold text-[var(--ink)] underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
-					Clear filters
-				</button>
-			) : null}
 		</div>
 	)
 
