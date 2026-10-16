@@ -57,3 +57,6 @@ datasets/bills/.pdf-cache/
 **/.openhalalan/
 __pycache__/
 .publish.json
+
+# /brag launch-video renders
+/brag-output*/
