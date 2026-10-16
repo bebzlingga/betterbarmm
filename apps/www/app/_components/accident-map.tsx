@@ -427,7 +427,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 									>
 										<KindIcon type={a.type} size={20} />
 										<span className='min-w-0'>
-											<span className='block text-[13px] font-bold leading-snug'>{a.title}</span>
+											<span className='block text-[13px] font-medium leading-snug'>{a.title}</span>
 											<span className='num block text-[11px] text-[var(--ink-3)]'>
 												{accidentDate(a.date)} · {a.municipality ?? a.province}
 											</span>
