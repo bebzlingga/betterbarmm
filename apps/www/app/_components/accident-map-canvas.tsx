@@ -34,7 +34,6 @@ const SRC = 'accidents'
 /** The region itself, washed in the brand crimson under everything else, so the reader sees where BARMM ends. */
 const REGION = 'barmm'
 const REGION_FILL = 'barmm-fill'
-const REGION_LINE = 'barmm-line'
 const HEAT = 'accidents-heat'
 const PULSE = 'accidents-pulse'
 const PTS = 'accidents-points'
@@ -117,8 +116,6 @@ function Layers({
 		const ground = map.getStyle().layers?.find((layer) => layer.type === 'symbol' || layer.type === 'line')?.id
 		if (!map.getLayer(REGION_FILL))
 			map.addLayer({ id: REGION_FILL, type: 'fill', source: REGION, paint: { 'fill-color': dark ? '#e0604c' : '#8b1e1a', 'fill-opacity': dark ? 0.06 : 0.035 } }, ground)
-		if (!map.getLayer(REGION_LINE))
-			map.addLayer({ id: REGION_LINE, type: 'line', source: REGION, paint: { 'line-color': dark ? '#e0604c' : '#8b1e1a', 'line-opacity': 0.55, 'line-width': ['interpolate', ['linear'], ['zoom'], 5, 0.6, 10, 1.4] } }, ground)
 		if (!map.getSource(SRC)) map.addSource(SRC, { type: 'geojson', data: latest.current })
 		if (!map.getLayer(HEAT))
 			map.addLayer({
