@@ -406,10 +406,9 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 				</div>
 
 				<div className='grid min-h-0 flex-1 lg:grid-cols-[26rem_minmax(0,1fr)]'>
-					{/* Details on the left: filters, figures, the chosen incident, the list. */}
+					{/* The list on the left; the chosen incident floats over the map's corner. */}
 					<aside className='order-2 min-h-0 overflow-y-auto border-t border-[var(--rule)] p-5 lg:order-1 lg:border-r lg:border-t-0'>
-						{selected ? <Details a={selected} onClose={() => setSelectedId(null)} /> : null}
-						<ul className={`border-t border-[var(--rule)] ${selected ? 'mt-5' : ''}`}>
+						<ul className='border-t border-[var(--rule)]'>
 							{filtered.map((a) => (
 								<li key={a.id} className='border-b border-[var(--rule-soft)]'>
 									<button
@@ -435,8 +434,13 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 							))}
 						</ul>
 					</aside>
-					<div className='order-1 h-[55dvh] min-h-0 lg:order-2 lg:h-auto'>
+					<div className='relative order-1 h-[55dvh] min-h-0 lg:order-2 lg:h-auto'>
 						{open ? <Canvas features={features} show={show} selectedId={selectedId} onSelect={onSelect} focus={focus} /> : null}
+						{selected ? (
+							<div className='absolute bottom-4 right-4 z-10 w-[22rem] max-w-[calc(100%-2rem)] max-h-[calc(100%-2rem)] overflow-y-auto shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)]'>
+								<Details a={selected} onClose={() => setSelectedId(null)} />
+							</div>
+						) : null}
 					</div>
 				</div>
 			</dialog>
