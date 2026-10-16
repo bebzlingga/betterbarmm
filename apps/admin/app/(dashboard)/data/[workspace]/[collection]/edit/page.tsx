@@ -11,17 +11,19 @@ import { RecordForm } from "../../../record-form";
 /**
  * Edit a record (`?key=…`) or create one (no key). The key travels as a query
  * parameter rather than a path segment because keys contain slashes and URLs.
+ * A new record can arrive filled in: `?init=` a JSON object for its fields and
+ * `?newkey=` its key, as the Incidents page sends a correction it has started.
  */
 export default async function EditRecordPage({
   params,
   searchParams,
 }: {
   params: Promise<{ workspace: string; collection: string }>;
-  searchParams: Promise<{ key?: string; saved?: string }>;
+  searchParams: Promise<{ key?: string; saved?: string; init?: string; newkey?: string }>;
 }) {
   const { supabase } = await requireEditor();
   const { workspace, collection } = await params;
-  const { key, saved } = await searchParams;
+  const { key, saved, init, newkey } = await searchParams;
   const def = findCollection(workspace, collection);
   if (!def) notFound();
 
@@ -51,6 +53,8 @@ export default async function EditRecordPage({
     initial = data.data;
     title = data.title || key;
     updatedAt = data.updated_at;
+  } else if (prefilled(init)) {
+    initial = prefilled(init)!;
   } else {
     // A new record starts with the same fields as the first one, emptied.
     const { data } = await supabase
@@ -97,6 +101,7 @@ export default async function EditRecordPage({
           workspace={workspace}
           collection={collection}
           recordKey={key ?? null}
+          defaultKey={newkey}
           initial={initial}
         />
         {key ? (
@@ -107,4 +112,15 @@ export default async function EditRecordPage({
       </div>
     </div>
   );
+}
+
+/** `?init=` as a record, or null when it is missing or not a JSON object. */
+function prefilled(init: string | undefined): Record<string, unknown> | null {
+  if (!init) return null;
+  try {
+    const value = JSON.parse(init);
+    return value && typeof value === "object" && !Array.isArray(value) ? value : null;
+  } catch {
+    return null;
+  }
 }

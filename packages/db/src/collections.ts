@@ -28,6 +28,7 @@ export const WORKSPACES = [
 	{ value: 'election', label: 'Election' },
 	{ value: 'lgu', label: 'Local government' },
 	{ value: 'travel', label: 'Travel' },
+	{ value: 'accidents', label: 'Incident Watch' },
 ] as const
 
 const s = (value: unknown) => (value == null ? '' : String(value))
@@ -234,6 +235,27 @@ export const COLLECTIONS: CollectionDef[] = [
 		source: array('travel/towns.json', null),
 		key: (r) => s(r.slug),
 		title: (r) => `${s(r.name)} (${s(r.area)})`,
+	},
+
+	// ---- Incident Watch ----
+	// accidents.json is built (scripts/build_accidents.py), so an editor's work goes into the build's inputs, never
+	// into it: a correction is a patch keyed by the incident's id, applied after every other; a missing incident
+	// is a report of its own. The hourly publish rebuilds the map from them.
+	{
+		workspace: 'accidents',
+		collection: 'edits',
+		label: 'Corrections',
+		source: array('accidents/enrichment/admin.json', null),
+		key: (r) => s(r.id),
+		title: (r) => `${s(r.id)}${r.drop ? ' — drop' : ''}${r.note ? ` — ${s(r.note)}` : ''}`,
+	},
+	{
+		workspace: 'accidents',
+		collection: 'added',
+		label: 'Added by hand',
+		source: array('accidents/reports/admin.json', null),
+		key: (r) => s(r.ref),
+		title: (r) => `${s(r.date)} — ${s(r.title)}`,
 	},
 ]
 

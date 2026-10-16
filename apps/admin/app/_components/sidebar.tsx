@@ -14,6 +14,7 @@ import {
   MegaphoneIcon,
   NewspaperIcon,
   ScrollIcon,
+  SirenIcon,
   SquaresFourIcon,
   UsersIcon,
   type Icon,
@@ -29,6 +30,7 @@ const WORKSPACE_ICONS: Record<string, Icon> = {
   election: CheckSquareOffsetIcon,
   lgu: BuildingsIcon,
   travel: MapTrifoldIcon,
+  accidents: SirenIcon,
 };
 
 export function Sidebar({

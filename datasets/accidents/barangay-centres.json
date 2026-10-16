@@ -556,6 +556,11 @@
    "lat": 7.2215,
    "lon": 124.2543,
    "matched": "Poblacion, Bulalo, Cotabato City, Bangsamoro, 9600, Philippines"
+  },
+  "Capiton|Datu Odin Sinsuat|Maguindanao del Norte": {
+   "lat": 7.1569,
+   "lon": 124.2329,
+   "matched": "Capiton, Maguindanao del Norte, Bangsamoro, 9601, Philippines"
   }
  }
 }

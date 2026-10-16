@@ -30,6 +30,16 @@ jobs:
       - uses: oven-sh/setup-bun@v2
       - run: bun install --frozen-lockfile
       - run: bun db:publish
+      # The accident map is built from its inputs, not edited: when an editor's
+      # correction or added incident was just written, build it again so the
+      # commit carries the map that follows from them.
+      - name: Rebuild the accident map
+        run: |
+          if git diff --quiet -- datasets/accidents/enrichment/admin.json datasets/accidents/reports/admin.json; then
+            echo "No Incident Watch edits"
+          else
+            python3 -I datasets/accidents/scripts/build_accidents.py
+          fi
       - name: Commit
         run: |
           if git diff --quiet -- datasets; then

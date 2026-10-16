@@ -18,7 +18,11 @@ export default async function DashboardLayout({ children }: { children: React.Re
   const workspaces: NavWorkspace[] = WORKSPACES.map((w) => ({
     value: w.value,
     label: w.label,
-    collections: COLLECTIONS.filter((c) => c.workspace === w.value).map((c) => ({ href: `/data/${c.workspace}/${c.collection}`, label: c.label })),
+    collections: [
+      // Incident Watch opens on its own list of the map's records, ahead of the collections that feed it.
+      ...(w.value === "accidents" ? [{ href: "/incidents", label: "Incidents" }] : []),
+      ...COLLECTIONS.filter((c) => c.workspace === w.value).map((c) => ({ href: `/data/${c.workspace}/${c.collection}`, label: c.label })),
+    ],
   }));
 
   const account = (

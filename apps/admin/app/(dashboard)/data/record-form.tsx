@@ -23,12 +23,15 @@ export function RecordForm({
   workspace,
   collection,
   recordKey,
+  defaultKey,
   initial,
 }: {
   workspace: string;
   collection: string;
   /** null for a new record. */
   recordKey: string | null;
+  /** A new record's key, filled in for the editor to keep or change. */
+  defaultKey?: string;
   initial: Data;
 }) {
   const [state, action, pending] = useActionState(saveRecord.bind(null, workspace, collection, recordKey), {
@@ -64,7 +67,7 @@ export function RecordForm({
         {recordKey === null ? (
           <label className="block">
             <span className="field-label">Key</span>
-            <input name="key" required className="field field-mono w-72" placeholder="unique id" />
+            <input name="key" required defaultValue={defaultKey} className="field field-mono w-72" placeholder="unique id" />
           </label>
         ) : (
           <p className="flex min-w-0 items-center gap-2 text-[13px] text-[var(--ink-3)]">
