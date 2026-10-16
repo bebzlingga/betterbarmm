@@ -349,7 +349,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 									{a.title}
 								</button>
 								<p className='mt-0.5 text-[12.5px] text-[var(--ink-3)]'>{place(a)}</p>
-								<p className='mt-2 hidden max-w-xl text-[13px] leading-6 text-[var(--ink-2)] lg:block'>{a.summary}</p>
+								<p className='mt-2 hidden max-w-4xl text-[13px] leading-6 text-[var(--ink-2)] lg:block'>{a.summary}</p>
 								<p className='mt-1.5 text-[12px] leading-[1.7] text-[var(--ink-3)]'>
 									<Sources a={a} />
 								</p>
