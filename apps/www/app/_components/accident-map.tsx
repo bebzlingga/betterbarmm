@@ -288,7 +288,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 						onChange={(v) => setShow(v as Show)}
 						plain={plain}
 						options={[
-							['both', 'Heat and dots'],
+							['both', 'Heat & dots'],
 							['heat', 'Heat only'],
 							['points', 'Dots only'],
 						]}
