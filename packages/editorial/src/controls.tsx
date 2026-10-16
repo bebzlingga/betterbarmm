@@ -26,7 +26,7 @@ export function Select({
 }) {
 	return (
 		<label className={plain ? 'flex min-w-0 items-center gap-2' : 'flex min-w-0 flex-col gap-1'}>
-			<span className='whitespace-nowrap text-[12px] text-[var(--ink-3)]'>{label}</span>
+			<span className={`whitespace-nowrap text-[var(--ink-3)] ${plain ? 'text-[14px]' : 'text-[12px]'}`}>{label}</span>
 			{/* The browser's own arrow sits against the edge and differs per
 			    browser; this one is the site's, inset like the search icon. */}
 			<span className='relative min-w-0 flex-1'>
