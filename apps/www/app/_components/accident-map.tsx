@@ -348,7 +348,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 				</span>
 			</button>
 
-			<div className='mt-10 border-y border-[var(--rule)] py-6'>{filters(false)}</div>
+			<div className='mt-10 border-b border-[var(--rule)] py-6'>{filters(false)}</div>
 
 			{/* The table view: every incident on the map, newest first, with its
 			    sources — drawn the way the registry's tables are drawn. */}
