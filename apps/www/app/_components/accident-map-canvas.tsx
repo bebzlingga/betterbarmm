@@ -262,7 +262,8 @@ export default function AccidentMapCanvas({
 		)
 
 	return (
-		<Map className='h-full w-full' bounds={BOUNDS} fitBoundsOptions={FIT} minZoom={4.5} maxZoom={16}>
+		// Stops at barangay level: a dot is placed no closer than a barangay, so a street-level view would claim a precision it lacks.
+		<Map className='h-full w-full' bounds={BOUNDS} fitBoundsOptions={FIT} minZoom={4.5} maxZoom={13}>
 			<Layers features={features} show={show} selectedId={selectedId} focus={focus} onSelect={onSelect} />
 			<MapControls position='top-right' showZoom />
 			<AllBarmm />
