@@ -24,18 +24,19 @@ export function Select({
 	plain?: boolean
 }) {
 	// A plain select is exactly as wide as what it says, not as its longest option,
-	// which is what a native select sizes to. An invisible copy of the chosen text
-	// shares a grid cell with the select and sets the cell's width; the select
-	// fills the cell, and the arrow sits at its edge, right after the words.
+	// which is what a native select sizes to — even in a grid cell, whose auto
+	// track would take the select's own longest-option width. So an invisible copy
+	// of the chosen text is the only thing in the flow, and the select is laid
+	// over it absolutely; the arrow sits at its edge, right after the words.
 	const chosen = options.find(([key]) => key === value)?.[1] ?? ''
 	return (
 		<label className={plain ? 'flex min-w-0 items-center gap-2' : 'flex min-w-0 flex-col gap-1'}>
 			<span className={`whitespace-nowrap text-[var(--ink-3)] ${plain ? 'text-[14px]' : 'text-[12px]'}`}>{label}</span>
 			{/* The browser's own arrow sits against the edge and differs per
 			    browser; this one is the site's, inset like the search icon. */}
-			<span className={plain ? 'relative inline-grid' : 'relative min-w-0 flex-1'}>
+			<span className={plain ? 'relative inline-block' : 'relative min-w-0 flex-1'}>
 				{plain ? (
-					<span aria-hidden='true' className='invisible col-start-1 row-start-1 whitespace-pre pr-5 text-[14px] font-semibold'>
+					<span aria-hidden='true' className='invisible block h-10 whitespace-pre pr-5 text-[14px] font-semibold leading-10'>
 						{chosen}
 					</span>
 				) : null}
@@ -43,7 +44,7 @@ export function Select({
 					value={value}
 					onChange={(event) => onChange(event.target.value)}
 					className={`h-10 w-full min-w-0 cursor-pointer appearance-none truncate text-[14px] text-[var(--ink)] outline-none transition ${
-						plain ? 'col-start-1 row-start-1 pl-0 pr-5 font-semibold' : 'pl-3 pr-9'
+						plain ? 'absolute inset-0 pl-0 pr-5 font-semibold' : 'pl-3 pr-9'
 					} ${box(plain)}`}
 				>
 					{options.map(([key, text]) => (

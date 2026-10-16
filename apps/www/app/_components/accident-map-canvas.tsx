@@ -35,11 +35,28 @@ const PULSE = 'accidents-pulse'
 const PTS = 'accidents-points'
 const HALO = 'accidents-halo'
 
-/** Mapun in the west to Wao in the east, Sitangkai in the south to Marawi's lake. */
+/** The whole region, every map's opening view: the Turtle Islands and Mapun in the
+    west to Datu Paglas and Old Kaabakan in the east, Sitangkai in the south to
+    Tagoloan II above Marawi's lake in the north. */
 const BOUNDS: [[number, number], [number, number]] = [
-	[118.4, 4.4],
-	[125.4, 8.4],
+	[118.2, 4.5],
+	[125.0, 8.2],
 ]
+const FIT = { padding: 32 }
+
+/** Back to the whole region, from wherever a click or a flight has left the map. */
+function AllBarmm() {
+	const { map } = useMap()
+	return (
+		<button
+			type='button'
+			onClick={() => map?.fitBounds(BOUNDS, { ...FIT, duration: 700 })}
+			className='absolute left-3 top-3 z-10 cursor-pointer bg-[var(--paper)] px-3 py-1.5 text-[12px] font-semibold text-[var(--ink)] shadow-sm transition hover:text-[var(--accent)]'
+		>
+			All BARMM
+		</button>
+	)
+}
 
 const colourMatch = (dark: boolean) => [
 	'match',
@@ -235,9 +252,10 @@ export default function AccidentMapCanvas({
 		)
 
 	return (
-		<Map className='h-full w-full' bounds={BOUNDS} fitBoundsOptions={{ padding: 24 }} minZoom={4.5} maxZoom={16}>
+		<Map className='h-full w-full' bounds={BOUNDS} fitBoundsOptions={FIT} minZoom={4.5} maxZoom={16}>
 			<Layers features={features} show={show} selectedId={selectedId} focus={focus} onSelect={onSelect} />
 			<MapControls position='top-right' showZoom />
+			<AllBarmm />
 		</Map>
 	)
 }
