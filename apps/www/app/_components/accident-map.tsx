@@ -154,7 +154,8 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 	// dropdown without anyone editing a list.
 	const [query, setQuery] = useState('')
 	const [page, setPage] = useState(1)
-	const [year, setYear] = useState('')
+	// Opens on the latest year, the one a reader most likely came for; "All years" is one choice away.
+	const [year, setYear] = useState(() => years[years.length - 1] ?? '')
 	const [type, setType] = useState('')
 	const [province, setProvince] = useState('')
 	const [deadlyOnly, setDeadlyOnly] = useState(false)

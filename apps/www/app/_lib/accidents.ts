@@ -55,12 +55,9 @@ export const ACCIDENT_TYPES: { id: AccidentType; label: string; color: string; c
 
 export const typeOf = (id: AccidentType) => ACCIDENT_TYPES.find((t) => t.id === id) ?? ACCIDENT_TYPES[ACCIDENT_TYPES.length - 1]!
 
-// ponytail: 2025 on for now — the earlier years are a handful of reports each; drop FROM once the sweeps cover them.
-const FROM = '2025'
+export const accidents = (dataset.incidents as Accident[]).slice().sort((a, b) => (a.date < b.date ? 1 : -1))
 
-export const accidents = (dataset.incidents as Accident[]).filter((a) => a.date >= FROM).sort((a, b) => (a.date < b.date ? 1 : -1))
-
-export const accidentsMeta = { generatedAt: dataset.generatedAt as string, note: dataset.note as string, since: FROM }
+export const accidentsMeta = { generatedAt: dataset.generatedAt as string, note: dataset.note as string, since: dataset.since as string }
 
 /** "12 March 2024", or "March 2024" when only the month is known. */
 export function accidentDate(date: string) {
