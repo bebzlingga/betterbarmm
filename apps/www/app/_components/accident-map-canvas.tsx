@@ -234,8 +234,8 @@ export default function AccidentMapCanvas({
 			</div>
 		)
 
+	// Dark whatever the site's theme: the heat and the kinds' colours read best on it, and the column beside it stays on paper.
 	return (
-		{/* Dark whatever the site's theme: the heat and the kinds' colours read best on it, and the column beside it stays on paper. */}
 		<Map className='h-full w-full' theme='dark' bounds={BOUNDS} fitBoundsOptions={{ padding: 24 }} minZoom={4.5} maxZoom={16}>
 			<Layers features={features} show={show} selectedId={selectedId} focus={focus} onSelect={onSelect} />
 			<MapControls position='top-right' showZoom />
