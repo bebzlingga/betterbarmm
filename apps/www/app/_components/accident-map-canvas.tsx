@@ -56,7 +56,7 @@ function AllBarmm() {
 		<button
 			type='button'
 			onClick={() => map?.fitBounds(BOUNDS, { ...FIT, duration: 700 })}
-			className='absolute left-3 top-3 z-10 cursor-pointer bg-[var(--paper)] px-3 py-1.5 text-[12px] font-semibold text-[var(--ink)] shadow-sm transition hover:text-[var(--accent)]'
+			className='absolute right-12 top-2 z-10 flex h-8 cursor-pointer items-center rounded-md border border-[var(--rule)] bg-[var(--paper)] px-3 text-[12px] font-semibold text-[var(--ink)] shadow-sm transition hover:text-[var(--accent)]'
 		>
 			All BARMM
 		</button>
