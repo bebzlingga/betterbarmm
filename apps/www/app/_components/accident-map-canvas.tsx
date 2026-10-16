@@ -160,7 +160,7 @@ function Layers({
 				id: PTS,
 				type: 'circle',
 				source: SRC,
-				paint: { 'circle-color': colourMatch(dark) as never, 'circle-radius': radius(1) as never, 'circle-opacity': opacity(0.94) as never, 'circle-stroke-width': 1, 'circle-stroke-color': dark ? '#131312' : '#ffffff', 'circle-stroke-opacity': opacity(0.9) as never },
+				paint: { 'circle-color': colourMatch(dark) as never, 'circle-radius': radius(1) as never, 'circle-opacity': opacity(0.94) as never, 'circle-stroke-width': 1, 'circle-stroke-color': '#ffffff', 'circle-stroke-opacity': opacity(0.9) as never },
 			})
 		if (!map.getLayer(HALO))
 			map.addLayer({
