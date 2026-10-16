@@ -16,6 +16,10 @@
     "phone": null,
     "email": "info@bangsamoro.gov.ph"
    },
+   "charter": {
+    "label": "OCM, Citizen's Charter Handbook, 1st Edition, 2023",
+    "url": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf"
+   },
    "programs": [
     {
      "name": "Ayudang Medikal mula sa Bangsamoro Government (AMBaG)",
@@ -283,6 +287,7 @@
    "website": "https://mbhte.bangsamoro.gov.ph/",
    "mandate": "The Bangsamoro Government ministry for education: basic education, college, technical-vocational training and the madaris (Islamic schools) system in BARMM.",
    "contact": null,
+   "charter": null,
    "programs": [
     {
      "name": "Access to Higher and Modern Education Scholarship Program (AHME-SP)",
@@ -383,6 +388,7 @@
     "phone": "(064) 552-9221",
     "email": null
    },
+   "charter": null,
    "programs": [
     {
      "name": "Bangsamoro Medical Scholarship Program (BMSP-TDIF)",
@@ -475,6 +481,10 @@
     "address": "Bangsamoro Government Center, MSSD-BARMM, Gov. Gutierrez Ave., RH-7, Cotabato City",
     "phone": "(064) 421-5856",
     "email": "mssd@bangsamoro.gov.ph"
+   },
+   "charter": {
+    "label": "MSSD, Citizen's Charter (frontline services), 2025",
+    "url": "https://mssd.barmm.gov.ph/citizens-charter/"
    },
    "programs": [
     {
@@ -714,6 +724,10 @@
     "address": "BARMM Compound, Gov. Gutierrez Ave., Cotabato City, 9600",
     "phone": "(064) 552-3166",
     "email": null
+   },
+   "charter": {
+    "label": "MAFAR, Citizen's Charter (posted as 2024 2nd Edition; document says updated as of January 2021)",
+    "url": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf"
    },
    "programs": [
     {
@@ -1240,6 +1254,7 @@
     "phone": "(064) 557-0006",
     "email": "mpw@bangsamoro.gov.ph"
    },
+   "charter": null,
    "programs": [
     {
      "name": "Expanded Bangsamoro Advanced Road Mapping and Management (E-BARMM) System",
@@ -1310,6 +1325,7 @@
    "website": "https://www.milgbarmm.com/",
    "mandate": "Supervises the region's local governments (provinces, cities, municipalities, barangays) and builds their capacity, including in peace and order, public safety and disaster preparedness.",
    "contact": null,
+   "charter": null,
    "programs": [
     {
      "name": "Support to Local Moral Governance (SLMG)",
@@ -1372,6 +1388,10 @@
     "address": "MHSD-BARMM Regional Office, near COA Office, Bangsamoro Government Center, Rosary Heights VII, Cotabato City",
     "phone": "(064) 442-5842; mobile 0955 799 4778; housing beneficiary concerns 0956 960 2823 / 0930 391 3023",
     "email": null
+   },
+   "charter": {
+    "label": "MHSD, Citizen's Charter Handbook, 1st edition, January 2025",
+    "url": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf"
    },
    "programs": [
     {
@@ -1687,6 +1707,7 @@
     "phone": "(064) 421-1187",
     "email": "menre@bangsamoro.gov.ph"
    },
+   "charter": null,
    "programs": [
     {
      "name": "Integrated Bangsamoro Greening Program (IBGP)",
@@ -2018,6 +2039,7 @@
     "phone": "(064) 557 2819",
     "email": "mtit@bangsamoro.gov.ph"
    },
+   "charter": null,
    "programs": [
     {
      "name": "Barangay Micro Business Enterprise (BMBE) registration assistance",
@@ -2115,6 +2137,7 @@
     "phone": "(064) 552-1539",
     "email": null
    },
+   "charter": null,
    "programs": [
     {
      "name": "BLTO Amnesty Program 2026",
@@ -2289,6 +2312,10 @@
     "address": "BARMM Complex, Cotabato City",
     "phone": "(064) 421 8183",
     "email": "most@bangsamoro.gov.ph"
+   },
+   "charter": {
+    "label": "MOST-BARMM, Citizen's Charter Handbook, 2023 1st Edition",
+    "url": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view"
    },
    "programs": [
     {
@@ -2683,6 +2710,7 @@
     "phone": "(064) 557 2717",
     "email": "mfbm@bangsamoro.gov.ph"
    },
+   "charter": null,
    "programs": [],
    "services": [
     {
@@ -2731,6 +2759,7 @@
     "phone": "(064) 421-3347; +63 997 193 1330",
     "email": null
    },
+   "charter": null,
    "programs": [
     {
      "name": "Special Program for the Employment of Students (SPES)",
@@ -2954,6 +2983,7 @@
     "phone": "(064) 425 5514",
     "email": "mpos@bangsamoro.gov.ph"
    },
+   "charter": null,
    "programs": [
     {
      "name": "Alternative Dispute Resolution (ADR)",
@@ -3034,6 +3064,7 @@
    "website": null,
    "mandate": "Protects and promotes the rights and well-being of non-Moro indigenous peoples in BARMM, in line with their beliefs, culture and institutions. It replaced the Office for Southern Cultural Communities.",
    "contact": null,
+   "charter": null,
    "programs": [
     {
      "name": "Tawid Pangarap Program",
@@ -3144,6 +3175,7 @@
     "phone": null,
     "email": "bpda@bangsamoro.gov.ph"
    },
+   "charter": null,
    "programs": [
     {
      "name": "Bangsamoro Knowledge Portal",
@@ -3202,6 +3234,7 @@
    "website": null,
    "mandate": "Manages development in the Special Geographic Area (the 63 barangays in Cotabato province that joined BARMM): plans, carries out and coordinates programs and supervises the barangays, under the Ministry of the Interior and Local Government.",
    "contact": null,
+   "charter": null,
    "programs": [
     {
      "name": "SGADA sa Barangay",
@@ -3251,6 +3284,7 @@
    "website": "https://bpa.bangsamoro.gov.ph/",
    "mandate": "Manages Hajj and Umrah matters for pilgrims from the Bangsamoro and protects their rights while on pilgrimage, working with the National Commission on Muslim Filipinos.",
    "contact": null,
+   "charter": null,
    "programs": [
     {
      "name": "Manasikul Hajj Program",
@@ -3297,6 +3331,7 @@
    "website": "https://bdi.bangsamoro.gov.ph/",
    "mandate": "The region's highest Islamic advisory body, led by the Bangsamoro Grand Mufti: it issues fatwas (religious rulings) and religious guidelines and gives Islamic guidance and scholarly consultation to the people of the Bangsamoro.",
    "contact": null,
+   "charter": null,
    "programs": [
     {
      "name": "Fatwas and religious guidelines",
@@ -3368,6 +3403,7 @@
     "phone": "(064) 442 5261",
     "email": "bhrc@bangsamoro.gov.ph"
    },
+   "charter": null,
    "programs": [
     {
      "name": "Human Rights Cases Investigation",
@@ -3512,6 +3548,7 @@
     "phone": "(064) 421-1470; (064) 552-0028",
     "email": "bcpch@bangsamoro.gov.ph"
    },
+   "charter": null,
    "programs": [
     {
      "name": "Bangsamoro Museum and Museum Educational Tour",
@@ -3647,6 +3684,7 @@
     "phone": "(064) 421-2562",
     "email": null
    },
+   "charter": null,
    "programs": [
     {
      "name": "Kabuhayan ni Kaka Bai",
@@ -3781,6 +3819,7 @@
     "phone": "(064) 421-7776",
     "email": "byc@bangsamoro.gov.ph"
    },
+   "charter": null,
    "programs": [
     {
      "name": "BYC Registration and Accreditation Program (BYC-ReAP)",
@@ -3900,6 +3939,7 @@
     "phone": null,
     "email": "bsc@bangsamoro.gov.ph"
    },
+   "charter": null,
    "programs": [
     {
      "name": "Grassroots Sports Clinics",
@@ -4005,6 +4045,10 @@
     "address": "Governor Gutierrez Avenue, Rosary Heights VII, Bangsamoro Government Center, Cotabato City",
     "phone": "(064) 552-1053",
     "email": null
+   },
+   "charter": {
+    "label": "Office of the Chief Minister, Citizen's Charter 1st Edition 2023 (BAGO section)",
+    "url": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf"
    },
    "programs": [
     {
@@ -4152,6 +4196,10 @@
     "address": "JICA Building, BCG, Gov. Gutierrez Ave., Brgy. RH XII, Cotabato City 9600",
     "phone": null,
     "email": "csea@bangsamoro.gov.ph"
+   },
+   "charter": {
+    "label": "CSEA, Citizen's Charter: List of Frontline Services (image), 2025",
+    "url": "https://csea.bangsamoro.gov.ph/citizens-charter-2/"
    },
    "programs": [
     {
@@ -4364,6 +4412,7 @@
    "website": null,
    "mandate": "The communications arm and information center of the Bangsamoro Government; it promotes transparency and builds a network of information officers across ministries.",
    "contact": null,
+   "charter": null,
    "programs": [
     {
      "name": "Radyo Bangsamoro",
@@ -4405,6 +4454,7 @@
    "website": "https://dab.bangsamoro.gov.ph/",
    "mandate": "The training and research arm of the Bangsamoro Government for its offices, officials and employees; its Center of Training and Assessment is recognized by the Civil Service Commission as a learning and development institution.",
    "contact": null,
+   "charter": null,
    "programs": [
     {
      "name": "Mandatory Onboarding Training (MOT)",
@@ -4464,6 +4514,7 @@
     "phone": null,
     "email": "bicto@bangsamoro.gov.ph"
    },
+   "charter": null,
    "programs": [
     {
      "name": "BangsaNet Free Wi-Fi Program",
@@ -4550,6 +4601,7 @@
     "phone": "(064) 421-1591",
     "email": null
    },
+   "charter": null,
    "programs": [
     {
      "name": "Investment registration and incentives",
@@ -4587,6 +4639,7 @@
     "phone": "+63 977 045 5600",
     "email": null
    },
+   "charter": null,
    "programs": [
     {
      "name": "OSC Radio: Tinig ng Mamamayang Settlers ng Bangsamoro",
@@ -4658,6 +4711,7 @@
     "phone": "(064) 429 2659",
     "email": "bshs@most.bangsamoro.gov.ph"
    },
+   "charter": null,
    "programs": [
     {
      "name": "Grade 7 admission",
@@ -4713,6 +4767,7 @@
    "website": null,
    "mandate": "Planned to give technical training, short courses and extension services in agriculture and fisheries to Bangsamoro farmers and fisherfolk, and to set the region's extension agenda.",
    "contact": null,
+   "charter": null,
    "programs": [],
    "services": [],
    "sources": [
@@ -4735,6 +4790,7 @@
    "website": "https://wali.bangsamoro.gov.ph/",
    "mandate": "Supports the Wali, the ceremonial head of the Bangsamoro, who acts as the region's moral guardian, opens Parliament, administers oaths of office, can dissolve Parliament on the Chief Minister's advice, and attends public ceremonies.",
    "contact": null,
+   "charter": null,
    "programs": [],
    "services": [],
    "sources": [

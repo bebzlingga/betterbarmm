@@ -1,4 +1,4 @@
-import { ArrowSquareOutIcon, ArrowUpRightIcon, CaretDownIcon, CoinsIcon, EnvelopeSimpleIcon, GlobeIcon, MapPinIcon, PhoneIcon } from '@phosphor-icons/react/ssr'
+import { ArrowSquareOutIcon, ArrowUpRightIcon, CaretDownIcon, CoinsIcon, EnvelopeSimpleIcon, FileTextIcon, GlobeIcon, MapPinIcon, PhoneIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -61,6 +61,11 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 							<GlobeIcon size={16} aria-hidden='true' /> Official website
 						</a>
 					) : null}
+					{office.charter ? (
+						<a href={office.charter.url} target='_blank' rel='noreferrer' className='inline-flex h-11 items-center gap-2 border border-white/40 px-4 text-[14px] font-semibold text-white hover:bg-white/10'>
+							<FileTextIcon size={16} aria-hidden='true' /> Citizen’s Charter
+						</a>
+					) : null}
 					<a href={budgetHref(office)} className='inline-flex h-11 items-center gap-2 border border-white/40 px-4 text-[14px] font-semibold text-white hover:bg-white/10'>
 						<CoinsIcon size={16} aria-hidden='true' /> Its budget
 					</a>
@@ -85,100 +90,114 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 
 				<div className='mt-10 grid gap-12 lg:grid-cols-[minmax(0,1fr)_18rem]'>
 					<div className='min-w-0 space-y-14'>
-						<section aria-labelledby='programs'>
-							<h2 id='programs' className='text-[22px] font-extrabold tracking-[-0.01em]'>
-								Programs <span className='text-[var(--ink-mute)]'>{office.programs.length}</span>
-							</h2>
-							{office.programs.length ? (
-								<ul className='mt-5 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)]'>
-									{office.programs.map((p) => (
-										<li key={p.name} id={`program-${slugify(p.name)}`} className='scroll-mt-[calc(var(--site-header-h)+1rem)] py-5'>
-											<div className='flex items-start justify-between gap-4'>
-												<h3 className='text-[16.5px] font-bold leading-snug'>{p.name}</h3>
-												<span className='shrink-0 pt-0.5'>
-													<Source url={p.source} />
-												</span>
-											</div>
-											<p className='mt-1.5 max-w-3xl text-[14.5px] leading-[1.65] text-[var(--ink-2)]'>{p.summary}</p>
-											{p.how ? (
-												<p className='mt-2 max-w-3xl text-[13.5px] leading-6'>
-													<span className='font-semibold'>How to get it: </span>
-													{p.how}
-												</p>
-											) : null}
-											<For list={p.for} />
-										</li>
-									))}
-								</ul>
-							) : (
-								<p className='mt-4 text-[14px] text-[var(--ink-3)]'>No program found in the office’s published material yet.</p>
-							)}
-						</section>
-
-						<section aria-labelledby='services'>
-							<h2 id='services' className='text-[22px] font-extrabold tracking-[-0.01em]'>
-								Services <span className='text-[var(--ink-mute)]'>{office.services.length}</span>
-							</h2>
-							<p className='mt-1 text-[13.5px] text-[var(--ink-3)]'>As the office’s Citizen’s Charter lists them: what to bring, what it costs, how long it takes.</p>
-							{office.services.length ? (
-								<ul className='mt-5 space-y-3'>
-									{office.services.map((s) => (
-										<li key={s.name} id={`service-${slugify(s.name)}`} className='scroll-mt-[calc(var(--site-header-h)+1rem)]'>
-											<details className='group border border-[var(--rule)] open:border-[var(--ink)]'>
-												<summary className='flex cursor-pointer list-none items-start justify-between gap-4 p-4 [&::-webkit-details-marker]:hidden'>
-													<span className='min-w-0'>
-														<span className='block text-[15.5px] font-semibold leading-snug'>{s.name}</span>
-														<span className='mt-1 block text-[12.5px] text-[var(--ink-3)]'>
-															{[s.fee && `Fee: ${s.fee}`, s.time && `Takes ${s.time}`].filter(Boolean).join(' · ') || 'Fee and time not stated'}
+						{office.charter ? (
+							<>
+								<section aria-labelledby='programs'>
+									<h2 id='programs' className='text-[22px] font-extrabold tracking-[-0.01em]'>
+										Programs <span className='text-[var(--ink-mute)]'>{office.programs.length}</span>
+									</h2>
+									{office.programs.length ? (
+										<ul className='mt-5 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)]'>
+											{office.programs.map((p) => (
+												<li key={p.name} id={`program-${slugify(p.name)}`} className='scroll-mt-[calc(var(--site-header-h)+1rem)] py-5'>
+													<div className='flex items-start justify-between gap-4'>
+														<h3 className='text-[16.5px] font-bold leading-snug'>{p.name}</h3>
+														<span className='shrink-0 pt-0.5'>
+															<Source url={p.source} />
 														</span>
-													</span>
-													<CaretDownIcon size={16} className='mt-1 shrink-0 transition group-open:rotate-180' aria-hidden='true' />
-												</summary>
-												<div className='border-t border-[var(--rule-soft)] px-4 pb-4 pt-3 text-[14px] leading-6'>
-													{s.summary ? <p className='text-[var(--ink-2)]'>{s.summary}</p> : null}
-													{s.requirements.length ? (
-														<>
-															<p className='mt-3 font-semibold'>What to bring</p>
-															<ul className='mt-1 list-disc space-y-0.5 pl-5 text-[var(--ink-2)]'>
-																{s.requirements.map((r) => (
-																	<li key={r}>{r}</li>
-																))}
-															</ul>
-														</>
+													</div>
+													<p className='mt-1.5 max-w-3xl text-[14.5px] leading-[1.65] text-[var(--ink-2)]'>{p.summary}</p>
+													{p.how ? (
+														<p className='mt-2 max-w-3xl text-[13.5px] leading-6'>
+															<span className='font-semibold'>How to get it: </span>
+															{p.how}
+														</p>
 													) : null}
-													<dl className='mt-3 grid gap-x-6 gap-y-1 text-[13.5px] sm:grid-cols-[auto_1fr]'>
-														{s.fee ? (
-															<>
-																<dt className='text-[var(--ink-3)]'>Fee</dt>
-																<dd>{s.fee}</dd>
-															</>
-														) : null}
-														{s.time ? (
-															<>
-																<dt className='text-[var(--ink-3)]'>Processing time</dt>
-																<dd>{s.time}</dd>
-															</>
-														) : null}
-														{s.where ? (
-															<>
-																<dt className='text-[var(--ink-3)]'>Where</dt>
-																<dd>{s.where}</dd>
-															</>
-														) : null}
-													</dl>
-													<For list={s.for} />
-													<p className='mt-3'>
-														<Source url={s.source} />
-													</p>
-												</div>
-											</details>
-										</li>
-									))}
-								</ul>
-							) : (
-								<p className='mt-4 text-[14px] text-[var(--ink-3)]'>No Citizen’s Charter we could read was published online. Ask the office directly.</p>
-							)}
-						</section>
+													<For list={p.for} />
+												</li>
+											))}
+										</ul>
+									) : (
+										<p className='mt-4 text-[14px] text-[var(--ink-3)]'>No program found in the office’s published material yet.</p>
+									)}
+								</section>
+
+								<section aria-labelledby='services'>
+									<h2 id='services' className='text-[22px] font-extrabold tracking-[-0.01em]'>
+										Services <span className='text-[var(--ink-mute)]'>{office.services.length}</span>
+									</h2>
+									<p className='mt-1 text-[13.5px] text-[var(--ink-3)]'>As the office’s Citizen’s Charter lists them: what to bring, what it costs, how long it takes.</p>
+									{office.services.length ? (
+										<ul className='mt-5 space-y-3'>
+											{office.services.map((s) => (
+												<li key={s.name} id={`service-${slugify(s.name)}`} className='scroll-mt-[calc(var(--site-header-h)+1rem)]'>
+													<details className='group border border-[var(--rule)] open:border-[var(--ink)]'>
+														<summary className='flex cursor-pointer list-none items-start justify-between gap-4 p-4 [&::-webkit-details-marker]:hidden'>
+															<span className='min-w-0'>
+																<span className='block text-[15.5px] font-semibold leading-snug'>{s.name}</span>
+																<span className='mt-1 block text-[12.5px] text-[var(--ink-3)]'>
+																	{[s.fee && `Fee: ${s.fee}`, s.time && `Takes ${s.time}`].filter(Boolean).join(' · ') || 'Fee and time not stated'}
+																</span>
+															</span>
+															<CaretDownIcon size={16} className='mt-1 shrink-0 transition group-open:rotate-180' aria-hidden='true' />
+														</summary>
+														<div className='border-t border-[var(--rule-soft)] px-4 pb-4 pt-3 text-[14px] leading-6'>
+															{s.summary ? <p className='text-[var(--ink-2)]'>{s.summary}</p> : null}
+															{s.requirements.length ? (
+																<>
+																	<p className='mt-3 font-semibold'>What to bring</p>
+																	<ul className='mt-1 list-disc space-y-0.5 pl-5 text-[var(--ink-2)]'>
+																		{s.requirements.map((r) => (
+																			<li key={r}>{r}</li>
+																		))}
+																	</ul>
+																</>
+															) : null}
+															<dl className='mt-3 grid gap-x-6 gap-y-1 text-[13.5px] sm:grid-cols-[auto_1fr]'>
+																{s.fee ? (
+																	<>
+																		<dt className='text-[var(--ink-3)]'>Fee</dt>
+																		<dd>{s.fee}</dd>
+																	</>
+																) : null}
+																{s.time ? (
+																	<>
+																		<dt className='text-[var(--ink-3)]'>Processing time</dt>
+																		<dd>{s.time}</dd>
+																	</>
+																) : null}
+																{s.where ? (
+																	<>
+																		<dt className='text-[var(--ink-3)]'>Where</dt>
+																		<dd>{s.where}</dd>
+																	</>
+																) : null}
+															</dl>
+															<For list={s.for} />
+															<p className='mt-3'>
+																<Source url={s.source} />
+															</p>
+														</div>
+													</details>
+												</li>
+											))}
+										</ul>
+									) : (
+										<p className='mt-4 text-[14px] text-[var(--ink-3)]'>No Citizen’s Charter we could read was published online. Ask the office directly.</p>
+									)}
+								</section>
+							</>
+						) : (
+							<section aria-labelledby='no-charter' className='border border-[var(--rule)] bg-[var(--paper-2)] p-6'>
+								<h2 id='no-charter' className='text-[18px] font-bold'>No Citizen’s Charter published</h2>
+								<p className='mt-2 max-w-2xl text-[14.5px] leading-[1.7] text-[var(--ink-2)]'>
+									Every government office must publish a Citizen’s Charter: each service it gives, what to bring, what it costs and how long it takes. We could not find one from the {office.name} online, so its programs and services are not listed here until it does. Ask the office directly, or tell us where its charter is.
+								</p>
+								<a href='/report' className='mt-4 inline-flex text-[14px] font-semibold underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
+									Tell us where to find it
+								</a>
+							</section>
+						)}
 					</div>
 
 					<aside className='space-y-10 lg:sticky lg:top-[calc(var(--site-header-h)+1.5rem)] lg:self-start'>

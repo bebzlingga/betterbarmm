@@ -63,6 +63,8 @@ export type Office = {
 	website: string | null
 	mandate: string | null
 	contact: { address: string | null; phone: string | null; email: string | null } | null
+	/** The Citizen's Charter the office published, or null when none could be found online. */
+	charter: { label: string; url: string } | null
 	programs: Program[]
 	services: Service[]
 	sources: { label: string; url: string }[]
@@ -111,9 +113,10 @@ export const shortName = (o: Office) => o.acronym ?? o.name
 /** The office's page on the budget portal, where its money is traced. */
 export const budgetHref = (o: Office) => `https://budget.betterbarmm.com/offices/${o.slug}`
 
-/** Every program and service with the office it belongs to, for the cross-office search. */
+/** Every program and service with the office it belongs to, for the cross-office search — only from offices that
+    published a Citizen's Charter; the others' are not shown until they do. */
 export type Offering = { office: Office; kind: 'program' | 'service'; item: Program | Service }
-export const offerings: Offering[] = offices.flatMap((office) => [
+export const offerings: Offering[] = offices.filter((office) => office.charter).flatMap((office) => [
 	...office.programs.map((item) => ({ office, kind: 'program' as const, item })),
 	...office.services.map((item) => ({ office, kind: 'service' as const, item })),
 ])

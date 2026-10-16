@@ -39,7 +39,7 @@ export default async function ServicesPage({ searchParams }: { searchParams: Pro
 				muted={[1]}
 				standfirst='Scholarships, assistance, permits, training and the rest: office by office, who each is for, and what to bring, from the offices’ own Citizen’s Charters.'
 				facts={[
-					{ value: String(offices.length), label: 'offices' },
+					{ value: String(offices.filter((o) => o.charter).length), label: 'with a Citizen’s Charter' },
 					{ value: String(programs), label: 'programs' },
 					{ value: String(services), label: 'services' },
 				]}
@@ -78,7 +78,7 @@ export default async function ServicesPage({ searchParams }: { searchParams: Pro
 				{searching ? <Results found={found} q={q} audience={audience} /> : <Directory />}
 
 				<p className='mt-16 max-w-3xl text-[13px] leading-[1.7] text-[var(--ink-3)]'>
-					{servicesMeta.note} An office that published no charter we could read shows its programs only. Know of a program that is missing or out of date?{' '}
+					{servicesMeta.note} An office that has published no Citizen’s Charter online is greyed out, and what it offers is not listed until it does. Know of a program that is missing or out of date?{' '}
 					<a href='/report' className='underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
 						Tell us
 					</a>
@@ -103,14 +103,22 @@ function Directory() {
 						<ul className='mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
 							{list.map((o) => (
 								<li key={o.slug}>
-									<Link href={`/services/${o.slug}`} className='group flex h-full flex-col border border-[var(--rule)] bg-[var(--paper)] p-5 transition hover:border-[var(--ink)]'>
-										{o.acronym ? <span className='font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>{o.acronym}</span> : null}
-										<span className='mt-1 text-[16px] font-bold leading-snug'>{o.name}</span>
-										{o.mandate ? <span className='mt-2 line-clamp-3 text-[13.5px] leading-6 text-[var(--ink-2)]'>{o.mandate}</span> : null}
+									{/* An office with no Citizen's Charter published is greyed out: what it offers is not listed until it publishes one. */}
+									<Link
+										href={`/services/${o.slug}`}
+										className={`group flex h-full flex-col border p-5 transition ${o.charter ? 'border-[var(--rule)] bg-[var(--paper)] hover:border-[var(--ink)]' : 'border-[var(--rule-soft)] bg-[var(--paper-2)] text-[var(--ink-mute)] hover:border-[var(--rule)]'}`}
+									>
+										{o.acronym ? <span className={`font-mono text-[11px] font-semibold uppercase tracking-[0.14em] ${o.charter ? 'text-[var(--accent)]' : ''}`}>{o.acronym}</span> : null}
+										<span className={`mt-1 text-[16px] font-bold leading-snug ${o.charter ? '' : 'text-[var(--ink-3)]'}`}>{o.name}</span>
+										{o.mandate ? <span className={`mt-2 line-clamp-3 text-[13.5px] leading-6 ${o.charter ? 'text-[var(--ink-2)]' : ''}`}>{o.mandate}</span> : null}
 										<span className='mt-auto flex items-center justify-between pt-4 text-[12.5px] text-[var(--ink-3)]'>
-											<span>
-												{o.programs.length} {o.programs.length === 1 ? 'program' : 'programs'} · {o.services.length} {o.services.length === 1 ? 'service' : 'services'}
-											</span>
+											{o.charter ? (
+												<span>
+													{o.programs.length} {o.programs.length === 1 ? 'program' : 'programs'} · {o.services.length} {o.services.length === 1 ? 'service' : 'services'}
+												</span>
+											) : (
+												<span className='italic'>No Citizen’s Charter published</span>
+											)}
 											<ArrowRightIcon size={15} className='transition group-hover:translate-x-0.5 group-hover:text-[var(--accent)]' aria-hidden='true' />
 										</span>
 									</Link>

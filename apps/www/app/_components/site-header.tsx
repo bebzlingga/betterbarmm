@@ -40,7 +40,8 @@ const secondaryLinks = [
 	// Latest news is hidden for now; the page still builds at /news.
 	// { key: 'news', href: '/news', label: 'Latest news' },
 	// Accidents is reached through the strip's Projects switch, not the bar; phones get a row in the menu below.
-	{ key: 'services', href: '/services', label: 'Programs & services' },
+	// Programs & services is hidden for now; the pages still build at /services.
+	// { key: 'services', href: '/services', label: 'Programs & services' },
 	{ key: 'explainers', href: '/explainers', label: 'Explainers' },
 	{ key: 'about', href: '/about', label: 'About' },
 ] as const
