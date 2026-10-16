@@ -23,23 +23,27 @@ export function Select({
 	/** No box, no padding, the label beside the words rather than over them, the words semibold — a row of controls in a header rather than a form. */
 	plain?: boolean
 }) {
-	// A plain select is as wide as what it says, not as its longest option: a native
-	// select sizes to the latter, so the width is set from the chosen text in ch,
-	// plus the box's padding and arrow. Roomy by a little, since ch is the figure
-	// zero's width, and never cramped.
+	// A plain select is exactly as wide as what it says, not as its longest option,
+	// which is what a native select sizes to. An invisible copy of the chosen text
+	// shares a grid cell with the select and sets the cell's width; the select
+	// fills the cell, and the arrow sits at its edge, right after the words.
 	const chosen = options.find(([key]) => key === value)?.[1] ?? ''
 	return (
 		<label className={plain ? 'flex min-w-0 items-center gap-2' : 'flex min-w-0 flex-col gap-1'}>
 			<span className={`whitespace-nowrap text-[var(--ink-3)] ${plain ? 'text-[14px]' : 'text-[12px]'}`}>{label}</span>
 			{/* The browser's own arrow sits against the edge and differs per
 			    browser; this one is the site's, inset like the search icon. */}
-			<span className={plain ? 'relative' : 'relative min-w-0 flex-1'}>
+			<span className={plain ? 'relative inline-grid' : 'relative min-w-0 flex-1'}>
+				{plain ? (
+					<span aria-hidden='true' className='invisible col-start-1 row-start-1 whitespace-pre pr-5 text-[14px] font-semibold'>
+						{chosen}
+					</span>
+				) : null}
 				<select
 					value={value}
 					onChange={(event) => onChange(event.target.value)}
-					style={plain ? { width: `calc(${chosen.length}ch + 1.4rem)` } : undefined}
-					className={`h-10 min-w-0 cursor-pointer appearance-none truncate text-[14px] text-[var(--ink)] outline-none transition ${
-						plain ? 'pl-0 pr-5 font-semibold' : 'w-full pl-3 pr-9'
+					className={`h-10 w-full min-w-0 cursor-pointer appearance-none truncate text-[14px] text-[var(--ink)] outline-none transition ${
+						plain ? 'col-start-1 row-start-1 pl-0 pr-5 font-semibold' : 'pl-3 pr-9'
 					} ${box(plain)}`}
 				>
 					{options.map(([key, text]) => (
