@@ -52,7 +52,7 @@ export type WorkspaceKey = (typeof WORKSPACES)[number]['key']
 /** The projects: records of a different kind, each a page on the landing
  *  site rather than a workspace of its own, listed from every workspace. */
 const PROJECTS = [
-	{ key: 'accidents', href: 'https://betterbarmm.com/accidents', label: 'Incident Monitoring System (IMS)', icon: SirenIcon },
+	{ key: 'accidents', href: 'https://betterbarmm.com/accidents', label: 'Incident Watch', icon: SirenIcon },
 ] as const
 
 export type ProjectKey = (typeof PROJECTS)[number]['key']

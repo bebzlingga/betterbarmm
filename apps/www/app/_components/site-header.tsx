@@ -343,7 +343,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 
 							<p className='bb-label mt-7'>Project</p>
 							<div className='mt-3 grid'>
-								{[...secondaryLinks, { key: 'accidents', href: '/accidents', label: 'Incident Monitoring System (IMS)' } as const].map((item) => (
+								{[...secondaryLinks, { key: 'accidents', href: '/accidents', label: 'Incident Watch' } as const].map((item) => (
 									<Link
 										key={item.href}
 										href={item.href}
