@@ -201,8 +201,22 @@ def apply(r, patch):
 for path in sorted(glob.glob(os.path.join(ROOT, 'enrichment', '*.json'))):
     patches = {}
     for patch in json.load(open(path)): patches.setdefault(patch['id'], []).append(patch)
+    # A patch finds the record that carries its id now. Only when none does, and exactly one record ever carried
+    # it, does it fall back to that one: ids are reissued when a record moves, so a past id can name two records.
+    current = {r['id']: r for r in merged}
+    target = {}
+    for pid, group in patches.items():
+        # Where ids collide — several records redated to one day — a patch can name its record by headline instead.
+        match = next((g['match'] for g in group if g.get('match')), None)
+        if match:
+            hits = [r for r in merged if match.lower() in r['title'].lower()]
+            if len(hits) == 1: target[pid] = hits[0]
+        elif pid in current: target[pid] = current[pid]
+        else:
+            past = [r for r in merged if pid in r['_ids']]
+            if len(past) == 1: target[pid] = past[0]
     for r in list(merged):
-        for pid in [i for i in patches if i in r['_ids']]:
+        for pid in [i for i in list(patches) if target.get(i) is r]:
             for patch in patches.pop(pid):
                 patched += 1
                 # A later report can drop a record — outside the region, a duplicate, not an incident.

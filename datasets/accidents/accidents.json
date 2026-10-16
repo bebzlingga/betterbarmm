@@ -2837,16 +2837,16 @@
    "title": "Retired police officer and companion killed in Maguindanao del Sur ambush",
    "summary": "Retired police officer Elias Dandan, a former police chief of Pikit and Matalam known for anti-drug operations, and his companion Raymund Bioy were shot dead when a gunman aboard a minivan fired on their vehicle in Barangay Pagagawan, Datu Montawal, Maguindanao del Sur, at about 2:30 p.m. on Tuesday, March 3, 2026, as they travelled toward Pikit, Cotabato. Both died of multiple gunshot wounds before reaching hospital; police were investigating the motive.",
    "province": "Maguindanao del Sur",
-   "municipality": "Paglat",
-   "barangay": "Poblacion",
+   "municipality": "Pagagawan",
+   "barangay": "Pagagawan",
    "deaths": 2,
    "injured": 0,
    "missing": 0,
    "vehicles": [
     "minivan"
    ],
-   "lat": 6.7805,
-   "lon": 124.7856,
+   "lat": 7.1019,
+   "lon": 124.7643,
    "placed": "barangay",
    "sources": [
     {
@@ -2866,15 +2866,9 @@
      "url": "https://mb.com.ph/2026/03/04/retired-cop-killed-in-maguindanao-del-sur-ambush",
      "title": "Retired cop killed in Maguindanao del Sur ambush",
      "date": "2026-03-04"
-    },
-    {
-     "outlet": "Inquirer",
-     "url": "https://newsinfo.inquirer.net/2197986/barmm-town-councilor-shot-dead-in-maguindanao-del-sur",
-     "title": "BARMM town councilor shot dead in Maguindanao del Sur",
-     "date": "2026-03-18"
     }
    ],
-   "id": "2026-03-03-paglat-shooting",
+   "id": "2026-03-03-pagagawan-shooting",
    "image": {
     "url": "https://images.gmanews.tv/regionaltv2023/content_images/article/shooting_2026_03_04_18_50_46.jpeg",
     "outlet": "GMA Regional TV",
@@ -2914,24 +2908,24 @@
    "title": "Town councilor shot dead in Maguindanao del Sur",
    "summary": "A municipal councilor was shot dead in Maguindanao del Sur, as reported on March 18, 2026; the report names no town.",
    "province": "Maguindanao del Sur",
-   "municipality": null,
-   "barangay": null,
+   "municipality": "Paglat",
+   "barangay": "Poblacion",
    "deaths": 1,
    "injured": null,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.8774,
-   "lon": 124.5505,
-   "placed": "province",
+   "lat": 6.7805,
+   "lon": 124.7856,
+   "placed": "barangay",
    "sources": [
     {
      "outlet": "Inquirer",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVUhwcnlTRlY5UVliNVNwNWtrbDlQUkpLRm9UZ21sTjRsdVFUdTFzVzAyc1dlNzNJbjUtRUhtOFZXNjBFblZNU2prM0xXWWg5REV1Zm92NDNjb1dETzBySVByelhnaS1IZm51ZGNCeW1QMy1GM3IxNVd3eERuZXFEWmRzRGM5eVJUMGRjQ1BpT3dzLThDMVHSAZsBQVVfeXFMT1Znb1B0bDZYTGhiUm9MLVNqZ2d2TGJLb1A1NHBTZm9aR0JCNlFwbDRoR2hsdGNGYVBlUndsOG5QcVVTNTdvMTVnWE9NTlRwQU9wOWJyZ09HQ3lacU9LZGctZ3FnbjNMTlNFN2wwU3NFMWJES1lDbWxfMWY1Z2R2UUJlMWFZREJ1aVpvQU5DLWNMRWtIeFluQWM2UkU?oc=5",
+     "url": "https://newsinfo.inquirer.net/2197986/barmm-town-councilor-shot-dead-in-maguindanao-del-sur",
      "title": "BARMM town councilor shot dead in Maguindanao del Sur",
      "date": "2026-03-18"
     }
    ],
-   "id": "2026-03-maguindanao-del-sur-shooting"
+   "id": "2026-03-paglat-shooting"
   },
   {
    "date": "2026-02-17",
@@ -4536,8 +4530,8 @@
    "title": "3 killed in Maguindanao del Norte ambush",
    "summary": "A father, his wife and their daughter were shot dead and their 11-year-old son wounded when two men on a motorcycle fired on the family's tricycle in Barangay Nalinan, Sultan Kudarat, Maguindanao del Norte, at about 3 p.m. on Monday, September 1, 2025. Police were hunting the two gunmen; the motive was undetermined.",
    "province": "Maguindanao del Norte",
-   "municipality": "Datu Odin Sinsuat",
-   "barangay": "Bagoinged",
+   "municipality": "Sultan Kudarat",
+   "barangay": "Nalinan",
    "deaths": 3,
    "injured": 1,
    "missing": 0,
@@ -4545,10 +4539,16 @@
     "tricycle",
     "motorcycle"
    ],
-   "lat": 7.0236,
-   "lon": 124.3157,
-   "placed": "municipality",
+   "lat": 7.1982,
+   "lon": 124.293,
+   "placed": "barangay",
    "sources": [
+    {
+     "outlet": "Inquirer",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTU9fMmV4UFgyNC0zTEM1QkM3N3NOOGpVMHJXNFhiTmtXMFFaUDZDZG4xVTlLSTNybjZBM1VNRnkxMjg1VGVxNEZwWXRITU5QRkRVUVlabWtud0J2R09waVdSMlY1WF9yRnhrYzBmemdpZFNUWXg0bTVtZWJyQnlfSV95VVdpTXI5cGtuNDgwVy1xbEZrazdVVW9sT2h1MXl0NUQ3QnhfSEZ4d9IBrwFBVV95cUxPa2hMVGNjUXBPNl8wb2tmb3J6WmZONXo5Y1dJVmtJOThjQjg5ejZLTXZ2Yjl2V0lFMjZtME5WZmJESmUwWnpGZGhYOTl6cS1UdWh5ZUplanVNeXg2OUhESHAxRUdocEdxNEF5eDA2dGM1clZENlY2dUhRcTJBYlBOYlN3Ty05TGZyZ29YMzliWnNVak10aWZGaElWVXRjMFFpMEtNOGdBT20zSm1UV05j?oc=5",
+     "title": "5 killed in P1.6M drug bust, separate ambush in Maguindanao del Norte",
+     "date": "2025-09-02"
+    },
     {
      "outlet": "Manila Bulletin",
      "url": "https://mb.com.ph/2025/09/02/family-of-3-shot-dead-in-ambush-police",
@@ -4556,16 +4556,36 @@
      "date": "2025-09-02"
     },
     {
-     "outlet": "Inquirer",
-     "url": "https://newsinfo.inquirer.net/2103325/5-killed-in-p1-6m-drug-bust-separate-ambush-in-maguindanao-del-norte",
-     "title": "5 killed in P1.6M drug bust, separate ambush in Maguindanao del Norte",
-     "date": "2025-09-02"
-    },
-    {
      "outlet": "Philstar",
      "url": "https://www.philstar.com/nation/2025/09/03/2470008/maguindanao-ambush-leaves-3-dead",
      "title": "Maguindanao ambush leaves 3 dead",
      "date": "2025-09-03"
+    }
+   ],
+   "id": "2025-09-01-sultan-kudarat-shooting"
+  },
+  {
+   "date": "2025-09-01",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "2 killed in P1.6M drug bust in Maguindanao del Norte",
+   "summary": "Suspects were killed during a P1.6-million drug bust in Maguindanao del Norte in early September 2025. The Inquirer counted five dead across the bust and a separate ambush; with the ambush toll reported at three, two died in the bust. The report did not name the town.",
+   "province": "Maguindanao del Norte",
+   "municipality": "Datu Odin Sinsuat",
+   "barangay": "Bagoinged",
+   "deaths": 2,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.0236,
+   "lon": 124.3157,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Inquirer",
+     "url": "https://newsinfo.inquirer.net/2103325/5-killed-in-p1-6m-drug-bust-separate-ambush-in-maguindanao-del-norte",
+     "title": "5 killed in P1.6M drug bust, separate ambush in Maguindanao del Norte",
+     "date": "2025-09-02"
     }
    ],
    "id": "2025-09-01-datu-odin-sinsuat-shooting"
@@ -4600,32 +4620,6 @@
     "outlet": "MSSD BARMM",
     "href": "https://mssd.barmm.gov.ph/fire-and-windstorm-affected-families-in-masiu-receive-assistance/"
    }
-  },
-  {
-   "date": "2025-09",
-   "type": "shooting",
-   "kind": "Shooting",
-   "title": "2 killed in P1.6M drug bust in Maguindanao del Norte",
-   "summary": "Suspects were killed during a P1.6-million drug bust in Maguindanao del Norte in early September 2025. The Inquirer counted five dead across the bust and a separate ambush; with the ambush toll reported at three, two died in the bust. The report did not name the town.",
-   "province": "Maguindanao del Norte",
-   "municipality": null,
-   "barangay": null,
-   "deaths": 2,
-   "injured": 0,
-   "missing": 0,
-   "vehicles": [],
-   "lat": 7.2371,
-   "lon": 124.2928,
-   "placed": "province",
-   "sources": [
-    {
-     "outlet": "Inquirer",
-     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTU9fMmV4UFgyNC0zTEM1QkM3N3NOOGpVMHJXNFhiTmtXMFFaUDZDZG4xVTlLSTNybjZBM1VNRnkxMjg1VGVxNEZwWXRITU5QRkRVUVlabWtud0J2R09waVdSMlY1WF9yRnhrYzBmemdpZFNUWXg0bTVtZWJyQnlfSV95VVdpTXI5cGtuNDgwVy1xbEZrazdVVW9sT2h1MXl0NUQ3QnhfSEZ4d9IBrwFBVV95cUxPa2hMVGNjUXBPNl8wb2tmb3J6WmZONXo5Y1dJVmtJOThjQjg5ejZLTXZ2Yjl2V0lFMjZtME5WZmJESmUwWnpGZGhYOTl6cS1UdWh5ZUplanVNeXg2OUhESHAxRUdocEdxNEF5eDA2dGM1clZENlY2dUhRcTJBYlBOYlN3Ty05TGZyZ29YMzliWnNVak10aWZGaElWVXRjMFFpMEtNOGdBT20zSm1UV05j?oc=5",
-     "title": "5 killed in P1.6M drug bust, separate ambush in Maguindanao del Norte",
-     "date": "2025-09-02"
-    }
-   ],
-   "id": "2025-09-maguindanao-del-norte-shooting"
   },
   {
    "date": "2025-08-22",
