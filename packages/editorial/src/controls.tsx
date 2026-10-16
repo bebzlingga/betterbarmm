@@ -24,16 +24,22 @@ export function Select({
 	/** No border or ground until hovered, the label beside the box rather than over it — a row of controls in a header rather than a form. */
 	plain?: boolean
 }) {
+	// A plain select is as wide as what it says, not as its longest option: a native
+	// select sizes to the latter, so the width is set from the chosen text in ch,
+	// plus the box's padding and arrow. Roomy by a little, since ch is the figure
+	// zero's width, and never cramped.
+	const chosen = options.find(([key]) => key === value)?.[1] ?? ''
 	return (
 		<label className={plain ? 'flex min-w-0 items-center gap-2' : 'flex min-w-0 flex-col gap-1'}>
 			<span className={`whitespace-nowrap text-[var(--ink-3)] ${plain ? 'text-[14px]' : 'text-[12px]'}`}>{label}</span>
 			{/* The browser's own arrow sits against the edge and differs per
 			    browser; this one is the site's, inset like the search icon. */}
-			<span className='relative min-w-0 flex-1'>
+			<span className={plain ? 'relative' : 'relative min-w-0 flex-1'}>
 				<select
 					value={value}
 					onChange={(event) => onChange(event.target.value)}
-					className={`h-10 w-full min-w-0 cursor-pointer appearance-none truncate pl-3 pr-9 text-[14px] text-[var(--ink)] outline-none transition ${box(plain)}`}
+					style={plain ? { width: `calc(${chosen.length}ch + 2.75rem)` } : undefined}
+					className={`h-10 min-w-0 cursor-pointer appearance-none truncate pl-3 pr-9 text-[14px] text-[var(--ink)] outline-none transition ${plain ? '' : 'w-full'} ${box(plain)}`}
 				>
 					{options.map(([key, text]) => (
 						<option key={key} value={key}>
