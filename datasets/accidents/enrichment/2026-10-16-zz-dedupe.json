@@ -1,0 +1,239 @@
+[
+ {
+  "id": "2024-12-02-sibutu-water-2",
+  "drop": true,
+  "note": "The same incident as 2024-12-02-sibutu-water; its sources move there."
+ },
+ {
+  "id": "2024-04-25-south-upi-other-2",
+  "drop": true,
+  "note": "The same incident as 2024-04-25-south-upi-other; its sources move there."
+ },
+ {
+  "id": "2023-06-14-shariff-aguak-shooting-2",
+  "drop": true,
+  "note": "The same incident as 2023-06-14-shariff-aguak-shooting; its sources move there."
+ },
+ {
+  "id": "2021-04-04-sitangkai-water-2",
+  "drop": true,
+  "note": "The same incident as 2021-04-04-sitangkai-water; its sources move there."
+ },
+ {
+  "id": "2021-04-sitangkai-water",
+  "drop": true,
+  "note": "The same incident as 2021-04-04-sitangkai-water; its sources move there."
+ },
+ {
+  "id": "2020-09-16-lantawan-other-2",
+  "drop": true,
+  "note": "The same incident as 2020-09-16-lantawan-other; its sources move there."
+ },
+ {
+  "id": "2020-04-08-sultan-kudarat-road-2",
+  "drop": true,
+  "note": "The same incident as 2020-04-08-sultan-kudarat-road; its sources move there."
+ },
+ {
+  "id": "2024-07-09-lanao-del-sur-flood",
+  "drop": true,
+  "note": "The same incident as 2024-07-09-kapatagan-flood; its sources move there."
+ },
+ {
+  "id": "2024-07-kapatagan-flood",
+  "drop": true,
+  "note": "The same incident as 2024-07-09-kapatagan-flood; its sources move there."
+ },
+ {
+  "id": "2023-09-tawi-tawi-fire",
+  "drop": true,
+  "note": "The same incident as 2023-09-07-bongao-fire; its sources move there."
+ },
+ {
+  "id": "2023-08-basilan-shooting",
+  "drop": true,
+  "note": "The same incident as 2023-08-12-ungkaya-pukan-shooting; its sources move there."
+ },
+ {
+  "id": "2024-12-02-sibutu-water",
+  "sources": [
+   {
+    "outlet": "GMA News",
+    "url": "https://www.gmanetwork.com/news/topstories/regions/929157/fisherman-stranded-at-sea-for-2-days-rescued-in-tawi-tawi/story",
+    "title": "Fisherman stranded at sea for 2 days rescued in Tawi-Tawi",
+    "date": "2024-12-06"
+   },
+   {
+    "outlet": "MindaNews",
+    "url": "https://mindanews.com/top-stories/2024/12/philippine-navy-saves-stranded-fisherman-in-tawi-tawi/",
+    "title": "Philippine Navy saves stranded fisherman in Tawi-Tawi",
+    "date": "2024-12-06"
+   }
+  ],
+  "note": "Takes the sources of its duplicates."
+ },
+ {
+  "id": "2024-04-25-south-upi-other",
+  "sources": [
+   {
+    "outlet": "Inquirer",
+    "url": "https://newsinfo.inquirer.net/1934078/suspected-food-poisoning-downs-80-in-maguindanao-del-sur",
+    "title": "Suspected food poisoning downs 80 in Maguindanao del Sur",
+    "date": "2024-04-26"
+   },
+   {
+    "outlet": "MindaNews",
+    "url": "https://mindanews.com/top-stories/2024/04/suspected-food-poisoning-downs-80-people-in-south-upi/",
+    "title": "Suspected food poisoning downs 80 people in South Upi",
+    "date": "2024-04-26"
+   },
+   {
+    "outlet": "GMA News",
+    "url": "https://www.gmanetwork.com/news/topstories/regions/904925/80-fall-ill-due-to-food-poisoning-after-tribal-wedding-in-maguindanao-del-sur/story/",
+    "title": "80 fall ill due to food poisoning after tribal wedding in Maguindanao del Sur",
+    "date": "2024-04-25"
+   }
+  ],
+  "note": "Takes the sources of its duplicates."
+ },
+ {
+  "id": "2023-06-14-shariff-aguak-shooting",
+  "sources": [
+   {
+    "outlet": "Facebook",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNc1NRUVdfLXEzVTNzWERJZXVVVlZVQWpyeWl4UGpRZEdIVk9vNHkxNTAwRzl6elhZTlBSeUFpaWlLa2lyYXRaQlhWempiOHkyaVlQYlUzd3dKYTQzaWpuZmhaUmIzUzd4VElQeFRmME1SUkdicEFncEZNc1NTdG1DQlZQSWxfbFp4T21LalhTLXpFWXlOcnc3WEU1WWZzSXhRTjR4d1VuTEhOa3ZDbUVoOGVWbkgwNndvV0RqRlVVa2xKNkd5aU1QSkJJQ3I5emc?oc=5",
+    "title": "NEWS UPDATE: 2 cops were killed while 4 were wounded in an ambush incident in Shariff Aguak, Maguindanao del Sur on Wednesday night, June 14, as confirmed by PNP-BARMM Director Police Brig. Gen. Allan Nobleza. | via Patrick de Jesus",
+    "date": "2023-06-14"
+   },
+   {
+    "outlet": "Philstar.com",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPb1NzSE9iSW5RSkFPcjBiaWFsY3NoMk9HZWtCeUU3RmJqQ1UzMVRScXd0eGlKTUxCb0djaHBBbkhSODhSNHNzMXY1Z0ItQWJWa2lNekZ6WTdCdnd5Qm1ZQzk1S0ZPbkQ3QkZJR0J4ZFQ1bVlUUzN4b3JDRFJBTkJBbU1MSXNTNUU3dUw5YWs1NUo4d0dOejluUWVCU0dSSFFhMG1ta3k3cDA3VzR5YUdJ0gG2AUFVX3lxTE0xOFdzR1ZDcm80SWNYa3AxWDhqcy11eFlELW41ZzIzUzZQbDloZFhKQjZKSDZMa1lYQTNQRl83STJPY01QYVBtR1RmNXdFSzFobFlGWXBZT2pRRjc1bGN3NTIwVm95TkVyZ1lOOEJNWDFiQzRVZmR1X2NFVXcxbjdLTnY5a0dfalBBOUF1anpJRExlbTZTQkxMQ1FHZUs4SW12aTJMd3BFZC1URzBtUTFTZDFHUkdB?oc=5",
+    "title": "PNP: Ambush on Maguindanao del Sur cops 'will not go unsolved'",
+    "date": "2023-06-15"
+   }
+  ],
+  "note": "Takes the sources of its duplicates."
+ },
+ {
+  "id": "2021-04-04-sitangkai-water",
+  "sources": [
+   {
+    "outlet": "Philstar",
+    "url": "https://www.philstar.com/nation/2021/04/06/2089175/3-injured-boat-catches-fire-tawi-tawi",
+    "title": "3 injured as boat catches fire off Tawi-Tawi",
+    "date": "2021-04-06"
+   },
+   {
+    "outlet": "The Manila Times",
+    "url": "https://www.manilatimes.net/2021/04/07/news/regions/9-rescued-after-explosion-at-sea-off-tawi-tawi/860749",
+    "title": "9 rescued after explosion at sea off Tawi-Tawi",
+    "date": "2021-04-07"
+   }
+  ],
+  "note": "Takes the sources of its duplicates."
+ },
+ {
+  "id": "2020-09-16-lantawan-other",
+  "sources": [
+   {
+    "outlet": "Manila Bulletin",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOangwd0ZBaUdPLUlLcmhzcWZJN1o2aDVmWDF2YVhJQXJjUFg1djZBcFZ4amxQT1NfVU52VEwxNGZVSXF3eWlDbWgtMjBQUjJNQndwYjRncXNaYzI4SUdsYTZyUmt2Wm9CQUs0OW9zU3Q0VHFXVXRMa29kamNUOUpJa0dfTFlZZw?oc=5",
+    "title": "PAF honors fallen 'Angels' in Basilan chopper crash",
+    "date": "2020-09-18"
+   },
+   {
+    "outlet": "Inquirer",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNEJSSlFQdEIxZFpJdmVJaTFLNE9tSy1ZZHZRbzZWZXVqdDRWUVdBcFBZSXVVUzd5Q0psSm5Zb1lPWHo4QnMzRmtVZDQ2RVFkeU94VEx1MmU0TVN0Ump5T0NDa2tsUmhNbjNvcDduQkVseXZyb255UXQ0aTF1Ql90eEk3STZ6cDIyYmczdWotdTd2YjRHbnhreWZua1BDQdIBowFBVV95cUxNR3RqMG9IUUd5bnhXTGE2YWFQY1djU1NNazFhUHRMaTE5RTZvRThNa1Z1dWhqRi1paXN0dXJsSWstdDNFMXk3T3FUS190cmhGdll5RzlhYjExU2lELWZYT2l2UkN1ZHdwUUhVbk9MS1QzMHVFUDVyUXl0a0dIbWNQMWROa3hvN01HY29Lc0NxUUhzSWk0VFZlbUU1aU9GVkpCSnM4?oc=5",
+    "title": "Sikorsky rescue choppers grounded after fatal Basilan crash",
+    "date": "2020-09-16"
+   }
+  ],
+  "note": "Takes the sources of its duplicates."
+ },
+ {
+  "id": "2020-04-08-sultan-kudarat-road",
+  "sources": [
+   {
+    "outlet": "Philstar.com",
+    "url": "https://www.philstar.com/nation/2020/04/08/2006321/marine-killed-12-injured-maguindanao-road-accident",
+    "title": "Marine killed, 12 injured in Maguindanao road accident",
+    "date": "2020-04-08"
+   },
+   {
+    "outlet": "Philstar",
+    "url": "https://www.philstar.com/nation/2020/04/09/2006452/nation",
+    "title": "Marine corporal dead, 12 injured in Maguindanao road mishap",
+    "date": "2020-04-09"
+   },
+   {
+    "outlet": "ABS-CBN",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUlM2UVNhc0lDa21ZRmJjcy1pektqWWhqN1Y4ajNtZ0pOMWMzcXNtRnZHUDdNOVk2azZYSGlocV92Q1FCTmZwaGQzem8yLVdWZWFsY19TV2VyY09VY2NocmU4MnloVnZPMHpXY1FVQ3F2Ry1aT0Y3TFhFYmpKYmxOZ1VGbVM4aVdncklTcE1YZHduWnowM3c5R090dWZ1S3diczNYMg?oc=5",
+    "title": "Miyembro ng Philippine Marines, patay sa aksidente sa Maguindanao",
+    "date": "2020-04-09"
+   }
+  ],
+  "note": "Takes the sources of its duplicates."
+ },
+ {
+  "id": "2024-07-09-kapatagan-flood",
+  "sources": [
+   {
+    "outlet": "GMA Network",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdDRRTWV6ZFNELWRJUnl4d2RBM2NBbWRzRHZYRVhXcTlLWWNLZ0dCanR1WGdzTWk4RWR2NFNsUHJfU2ZxYkx1c2ZhLXE3UW9zVjBEdXJaa3BDOVJ4ZG5SWHBFclJpdG91Uk8wRmM0bm8yQW95XzFOekR0aFlCTjU2TWIzSUdVZkdDbEZ5NzlQcFozODA5eEVzalJJWERnNTMzb1l3SmZQN3N6RW1RcEtsUEpPZjNhRzNWUnhV?oc=5",
+    "title": "1 killed, over 3,000 families affected by flood in Lanao del Sur",
+    "date": "2024-07-11"
+   },
+   {
+    "outlet": "Facebook",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQVG1HVm1rZ2U0SC1ab0EyMU5idEt4d1ROdHRscUF6YVNhOFhmTXZjSXZPM2E0YXJBLXBVbEhER3c5QUYwVXc0LUVuaTQ2Z0tCMnVTV2pKdlFLVVRfZVRIampWVG1fT3RCdExJSVFSVmh5dHUtTkI0NmlUWENteTdJQXlfRWRJWURiTjR1NUZJNUswWE9VQnBab1Jqei1UWDZNNmtBbWFPS3g5ZmNEcHBJcUdrbXlDa3RzY1haY094dG1zWklrUjd1VWJxcS00aEp0YXA4?oc=5",
+    "title": "The massive flooding in the Bangsamoro region has killed at least five people as of Friday, July 12, 2024. Three people died in Matanog, Maguindanao del Norte while two others were reported dead in Kapatagan, Lanao del Sur, based on data from the Office",
+    "date": "2024-07-13"
+   },
+   {
+    "outlet": "GMA Network",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOUGs0Qjd3VzNFa1ljdHpMV2plR2w0ZW1SMWxUalItY3pxa0VOVXoxVnZuMUY5cnp1UXd3NXloR01PTkJIcWNCa0xicGdjbXZONmhKYzU2b0VhZnRCQTkyN0FUeVB4VGtOVXhJTXdXcHAxN2w4X0wxdGxzb1RRdThTcmhYdHh4d0h3a3NKQkVia2FRT0RsWXc3eHVfMTHSAaIBQVVfeXFMTnljU3ljY1ZHajVwOHlXNnI1TUlhMU9ZeTgzaUVDUmRhY21RR0FDMG84anJTeW1qRm1DVVVGa2Rsd0kxRTRfUG1WT0hqUDd1NXM3VC1MZDEwX1Fuei12NEl4VzhHU0s2LWRCTmFIMGhoa1BSdDg1bnBLMFRaODA3XzBpLU9RekQwc3BzTFNpV0hBbGhrQnpWX3BBdnpGM1NZM2Rn?oc=5",
+    "title": "At least 5 dead in BARMM floods",
+    "date": "2024-07-14"
+   },
+   {
+    "outlet": "Inquirer.net",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZHN5ajRDbDVEQ3JxWFQwSFd4ZFhLaDU4d3Z0ZGN3LWswM09OSENPVGxTenZSTk1uYzZWWHFOelF4aEMxcWdFalhBbmU5eVNnbzJUZVZ0RzhRS1hFSUJZRDVLcmhtRlA3RGdOUnpoT0R0TTMyeXRfTUZST3o1SXpXeXhQNF9LbzByemhBX0xXTHNJOFNKV0w4eFlFY9IBoAFBVV95cUxPVWZYcHhwWC1YamFjemtLbEhNMklMay1QQ01JZ1R5cTNzU1dKLXJqTm5tb0tJTEo4QVRZNzRvYjdxamNuN01Uek9LRVR4ZkpSNE51WVlQV0t1SEN0TmY2Z0tCZnBrOHJnS0w5aENtYkxtUFNxalJHQXBnTFhFS0RDQk9yRjZRQ255cjFFbHc1cFFlQTVNRXFPWFlxVjJ1OVZT?oc=5",
+    "title": "Boy dead, 2 toddlers missing in Lanao del Sur flash floods",
+    "date": "2024-07-10"
+   },
+   {
+    "outlet": "Inquirer.net",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ibXpIM1VZT3p4MnJHOXJGU2JBRGtYOGxmQUdmN1otYlN3Z3lWUjJCakE5T0VvOFpIWTVnNkMyRWQySEEtY1lpTkljeDYtX0szWDdSRENDaVljaVY3dzdkcGxDeGtNWGdHVXNlaFlfZVhHYUZkRGRrdEo2cHpid9IBgwFBVV95cUxNOUVrNnRVVm02WVNaVkhYWTViX2N0RUVNVExQdVU1UzNrbVJqYlRnNnV4My01YnFSY2k3SzFEOGVTWHRKOXhqLXJUdDZZOHRwTlpqdUc5ZDdqeVZMMDZwamdYTDhZT25tNi1Fb1g3allBNEphbU1Kai1pT3lkSzBQbnpWaw?oc=5",
+    "title": "1 dead, 7 missing in Mindanao floods",
+    "date": "2024-07-11"
+   }
+  ],
+  "note": "Takes the sources of its duplicates. OCD-BARMM, 12 July 2024: 2 dead and 1 missing in Kapatagan.",
+  "deaths": 2,
+  "missing": 1
+ },
+ {
+  "id": "2023-09-07-bongao-fire",
+  "sources": [
+   {
+    "outlet": "MindaNews",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA2X1BvMXhPcHI3UnRzdGVERlJzT1ZIV0xyQXZVNG5LNlNFNHBpbnhXelg3dFlTRFZ1S0dMak96RzFSNE4yMGd1cjZTR3Ewek5NTkFIMkRlVUwxTWUtcGZnUjBpYjVRY2g3aG9iSVJUNHNsRGRvVlFsVlh5T2U?oc=5",
+    "title": "Navy brings relief aid for Tawi-Tawi fire victims",
+    "date": "2023-09-13"
+   }
+  ],
+  "note": "Takes the sources of its duplicates."
+ },
+ {
+  "id": "2023-08-12-ungkaya-pukan-shooting",
+  "sources": [
+   {
+    "outlet": "Inquirer.net",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQktRWVREQ2dSODBJNzYwcHg1amhkdUZLaVFiQjRNNUN4VWR4ay1UejdQbE5DNU9iSU9KUnRkVG81WkJHNEdYdlBoR3U0eDZtTU5nRUdNanpXV01JcDJjUkY0a1U0b0gxcjlZbW5xenYyRGpSWF9wd3Y1UWJFVmlISVJmMkHSAYoBQVVfeXFMTUpldW9jLUVLdGNVUzhzZEhOV3RHa3FFaWtwbVV5YVJnME1lT3R4bkladS1RaU9uZ1BxdTZ4R1BCakRLWFZNR0UzNUptLWFwQjF4VmxUdU1NN1RsWlJkWU1sWkJnVnBMTHdFaHBsc2prQkhLc1Q0UFBLTEl6YzY3RVFkR0dTbk1fZlN3?oc=5",
+    "title": "Soldier dead, 9 wounded in Basilan ambush",
+    "date": "2023-08-14"
+   }
+  ],
+  "note": "Takes the sources of its duplicates."
+ }
+]

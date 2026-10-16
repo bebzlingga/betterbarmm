@@ -1,0 +1,1184 @@
+[
+ {
+  "id": "2024-12-02-sibutu-water",
+  "verdict": "ok",
+  "note": "GMA News (Dec 6, 2024) confirms the Sibutu fisherman capsized near Sibutu Island on Monday and was rescued Wednesday near Andulingan Island with minor injuries; MindaNews was blocked."
+ },
+ {
+  "id": "2024-12-maguindanao-del-norte-other",
+  "verdict": "corrected",
+  "note": "GMA News says 3 died and 30 were hospitalized after eating turtle meat served at a gathering in Datu Blah Sinsuat; the incident day is not given.",
+  "municipality": "Datu Blah T. Sinsuat",
+  "title": "Turtle-meat food poisoning kills 3, sends 30 to hospital in Datu Blah T. Sinsuat",
+  "summary": "Three people died and 30 were taken to hospital with vomiting, stomachache and dizziness after eating turtle dishes served at a gathering in Datu Blah T. Sinsuat, Maguindanao del Norte, according to the provincial health office. The case was reported on 2 December 2024."
+ },
+ {
+  "id": "2024-12-maguindanao-del-norte-fire",
+  "verdict": "corrected",
+  "note": "GMA Regional TV says at least 10 stores burned at the public market in Nuro, Upi, and a man suffered second-degree burns; structural damage about P100,000.",
+  "municipality": "Upi",
+  "barangay": "Nuro",
+  "deaths": 0,
+  "injured": 1,
+  "title": "Fire razes 10 stores at Nuro public market in Upi, Maguindanao del Norte",
+  "summary": "At least 10 stores selling plastic wares, clothes, toys and firecrackers burned at the public market in Nuro, Upi, Maguindanao del Norte, in December 2024. A man suffered second-degree burns; structural damage was about P100,000, and the cause was under investigation."
+ },
+ {
+  "id": "2024-12-tawi-tawi-water",
+  "verdict": "corrected",
+  "note": "GMA News (Dec 6, 2024): Sibutu fisherman's boat capsized near Sibutu Island on Monday, rescued Wednesday with minor injuries; this is the same incident as 2024-12-02-sibutu-water (duplicate).",
+  "municipality": "Sibutu",
+  "barangay": "Off Sibutu Island",
+  "date": "2024-12-02",
+  "injured": 1,
+  "title": "Fisherman's boat capsizes off Sibutu; rescued two days later",
+  "summary": "A 40-year-old fisherman from Barangay Tandu Banak, Sibutu, was stranded at sea after his boat capsized near Sibutu Island on Monday, 2 December 2024. The Navy ship BRP Jose Loor Sr. rescued him on Wednesday about 6.4 nautical miles north of Andulingan Island, Sitangkai, and treated him for minor injuries."
+ },
+ {
+  "id": "2024-12-lamitan-shooting",
+  "verdict": "corrected",
+  "note": "Manila Bulletin and GMA say three ISAFP personnel in a van were ambushed in Barangay Baimbing, Lamitan City, on Monday evening, Dec. 23, 2024.",
+  "barangay": "Baimbing",
+  "date": "2024-12-23",
+  "summary": "Three personnel of the Intelligence Service of the Armed Forces of the Philippines were killed when armed men fired on their van in Barangay Baimbing, Lamitan City, Basilan, on the evening of Monday, 23 December 2024. They were returning from a coordination meeting with barangay officials; no group claimed the attack."
+ },
+ {
+  "id": "2024-12-cotabato-shooting",
+  "verdict": "corrected",
+  "note": "GMA Regional TV says a Maguindanao del Norte police intelligence officer was shot dead at a mall parking area in Cotabato City on Sunday, Dec. 1, 2024; it reports no one missing (the Inquirer article was blocked, so the 'another missing' in its headline cannot be checked).",
+  "date": "2024-12-01",
+  "missing": 0,
+  "summary": "A police master sergeant of the Maguindanao del Norte provincial intelligence unit was shot dead in front of his family at a mall parking area in Cotabato City on the evening of Sunday, 1 December 2024. He was hit in the head, neck and chest and died before reaching hospital; police said the killing may be work-related."
+ },
+ {
+  "id": "2024-12-lanao-del-sur-shooting",
+  "verdict": "unverified",
+  "note": "The only source (Inquirer) is blocked by Cloudflare, and WebFetch also returned 403."
+ },
+ {
+  "id": "2024-11-15-sultan-kudarat-shooting",
+  "verdict": "unverified",
+  "note": "The only source is a Philippine Star Facebook post with no text loaded."
+ },
+ {
+  "id": "2024-11-basilan-shooting",
+  "verdict": "corrected",
+  "note": "Inquirer (latest) says 5 soldiers of the 45IB were wounded when about 20 armed men ambushed their truck at Sitio Valentine, Barangay Tipo-Tipo Proper, Tipo-Tipo, on Tuesday (Nov. 19, 2024); earlier GMA and Philstar reports said 2 wounded.",
+  "municipality": "Tipo-Tipo",
+  "barangay": "Tipo-Tipo Proper",
+  "date": "2024-11-19",
+  "injured": 5,
+  "title": "5 soldiers wounded in ambush on military truck in Tipo-Tipo, Basilan",
+  "summary": "Armed men ambushed a 45th Infantry Battalion truck at Sitio Valentine, Barangay Tipo-Tipo Proper, Tipo-Tipo, Basilan, on Tuesday, 19 November 2024, as the troops returned from a medical outreach. Five soldiers were wounded, two by gunshots and three with minor injuries; the attackers fled."
+ },
+ {
+  "id": "2024-11-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "GMA Regional TV says two cousins aged 14 and 15 from Mamasapano were shot dead in their car in Shariff Aguak on Thursday, Nov. 14, 2024.",
+  "municipality": "Shariff Aguak",
+  "date": "2024-11-14",
+  "title": "2 minor cousins shot dead inside car in Shariff Aguak, Maguindanao del Sur",
+  "summary": "Two cousins aged 14 and 15, residents of Barangay Kulalo, Mamasapano, were shot dead inside their car in Shariff Aguak, Maguindanao del Sur, on Thursday, 14 November 2024, after being followed by another vehicle from Ampatuan. Police recovered 40 empty shells; the motive was undetermined."
+ },
+ {
+  "id": "2024-10-11-marogong-fire",
+  "verdict": "ok",
+  "note": "GMA Regional TV confirms 12 houses destroyed, 9 partly damaged and 20 families displaced in Barangay Proper, Marogong, at dawn on Friday, Oct. 11, 2024, with no one hurt."
+ },
+ {
+  "id": "2024-10-cotabato-fire",
+  "verdict": "corrected",
+  "note": "BARMM Bureau of Public Information says MSSD aided 105 families on Oct. 18, 2024, hit by several recent fires across Cotabato City barangays; no casualties or fire dates are given.",
+  "summary": "Several fires in Cotabato City in October 2024 affected 105 families: 76 in Poblacion VII, 24 in Rosary Heights IV, three in Kalanganan I and one each in Poblacion III and Kalanganan Mother. The Bangsamoro social services ministry gave them relief on 18 October 2024."
+ },
+ {
+  "id": "2024-10-lanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "GMA Regional TV says troops killed three NPA rebels in a 15-minute gunfight in Barangay Malna, Kapai, shortly before midnight on Saturday, Oct. 5, 2024.",
+  "municipality": "Kapai",
+  "barangay": "Malna",
+  "date": "2024-10-05",
+  "title": "3 NPA rebels killed in clash with troops in Kapai, Lanao del Sur",
+  "summary": "Three New People's Army members were killed in a 15-minute gunfight with Joint Task Force ZamPeLan troops in Barangay Malna, Kapai, Lanao del Sur, shortly before midnight on Saturday, 5 October 2024. There were no government casualties, and four rifles were recovered."
+ },
+ {
+  "id": "2024-10-maguindanao-del-norte-shooting",
+  "verdict": "unverified",
+  "note": "The only source (Inquirer) is blocked by Cloudflare, and WebFetch also returned 403."
+ },
+ {
+  "id": "2024-10-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Philstar says at least 19 gunmen were killed in gunfights between two MILF factions over land in Barangay Kilangan, Pagalungan, on Wednesday, Oct. 30, 2024.",
+  "municipality": "Pagalungan",
+  "barangay": "Kilangan",
+  "date": "2024-10-30",
+  "title": "19 dead as armed Moro groups clash over land in Pagalungan, Maguindanao del Sur",
+  "summary": "At least 19 gunmen were killed in a series of gunfights between two armed Moro groups disputing farmland in Sitio Gageranin, Barangay Kilangan, Pagalungan, Maguindanao del Sur, on Wednesday, 30 October 2024. Soldiers recovered nine bodies, and villagers reported 10 more dead elsewhere."
+ },
+ {
+  "id": "2024-10-basilan-shooting",
+  "verdict": "corrected",
+  "note": "Philstar says two BPAT volunteers on a motorcycle were killed by roadside gunmen in Barangay Tumahubong, Sumisip, on Friday, Oct. 25, 2024.",
+  "municipality": "Sumisip",
+  "barangay": "Tumahubong",
+  "date": "2024-10-25",
+  "title": "2 community watchmen killed in ambush in Sumisip, Basilan",
+  "summary": "Two Barangay Peacekeeping Action Team volunteers riding a motorcycle were killed by gunmen positioned along a road in Barangay Tumahubong, Sumisip, Basilan, on Friday, 25 October 2024. Both died on the spot, and the gunmen escaped."
+ },
+ {
+  "id": "2024-09-13-malabang-other",
+  "verdict": "ok",
+  "note": "GMA News confirms four minors died and three were hurt when a tree uprooted by severe weather fell in Malabang on Friday, Sept. 13, 2024; Manila Bulletin and Inquirer were blocked."
+ },
+ {
+  "id": "2024-09-malabang-shooting",
+  "verdict": "corrected",
+  "note": "Rappler says a clan feud erupted overnight in Sitio Lati, Barangay Bacayawan, Malabang, leaving 2 killed and 4 wounded; the article does not give the exact day.",
+  "barangay": "Bacayawan",
+  "summary": "A long-running clan feud erupted overnight in Sitio Lati, Barangay Bacayawan, Malabang, Lanao del Sur, in September 2024, leaving two people killed and four wounded and forcing some residents to evacuate. Police sent nine teams with Army backup, and the clashes had settled by noon the next day."
+ },
+ {
+  "id": "2024-08-02-south-upi-shooting",
+  "verdict": "corrected",
+  "note": "GMA News says the vice mayor's wife, child and another security escort were wounded in the Sitio Linao, Barangay Pandan ambush on Friday afternoon, Aug. 2, 2024 (Rappler and GMA Regional name only the wife and child); Rappler says it happened before 5 pm.",
+  "injured": 3,
+  "summary": "Armed men fired on the pick-up truck of South Upi Vice Mayor Roldan Benito in Sitio Linao, Barangay Pandan, South Upi, on the afternoon of Friday, 2 August 2024, killing him and a security aide. His wife, the Pandan barangay chair, their child and another security escort were wounded."
+ },
+ {
+  "id": "2024-08-maguindanao-del-norte-road",
+  "verdict": "corrected",
+  "note": "Philstar (Aug. 9, 2024) says a 92nd IB light truck hit a multicab on the Cotabato-Isulan Highway in Barangay Upper Capiton, Datu Odin Sinsuat, on Thursday afternoon, injuring 9.",
+  "municipality": "Datu Odin Sinsuat",
+  "barangay": "Upper Capiton",
+  "date": "2024-08-08",
+  "title": "Army truck hits multicab in Datu Odin Sinsuat; 9 hurt, most of them pupils",
+  "summary": "An Army 92nd Infantry Battalion light truck hit the side of a multicab turning left on the Cotabato-Isulan Highway in Barangay Upper Capiton, Datu Odin Sinsuat, Maguindanao del Norte, on the afternoon of Thursday, 8 August 2024. Nine members of two families were hurt, including schoolchildren on their way home, the driver and his mother."
+ },
+ {
+  "id": "2024-08-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Philstar (Aug. 7, 2024) says a farmer was killed and his wife wounded when gunmen fired on their multicab in Sitio Bisang, Barangay Romongaob, South Upi, on Tuesday.",
+  "municipality": "South Upi",
+  "barangay": "Romongaob",
+  "date": "2024-08-06",
+  "injured": 1,
+  "title": "Farmer killed, wife wounded in roadside ambush in South Upi, Maguindanao del Sur",
+  "summary": "Gunmen positioned along the road in Sitio Bisang, Barangay Romongaob, South Upi, Maguindanao del Sur, fired on a couple's multicab loaded with corn on Tuesday, 6 August 2024. The farmer died on the spot and his wife was wounded, four days after the vice mayor was ambushed on the same route."
+ },
+ {
+  "id": "2024-07-22-datu-anggal-midtimbang-road",
+  "verdict": "unverified",
+  "note": "The only source (Inquirer) is blocked by Cloudflare, and WebFetch also returned 403."
+ },
+ {
+  "id": "2024-07-09-kapatagan-flood",
+  "verdict": "ok",
+  "note": "SunStar/PNA confirms 1 teen dead and 1 missing in Kapatagan, 2 children missing in Balabagan, 4 injured, 4,990 households evacuated and 665 houses damaged; GMA Regional TV dates the flooding to July 9, 2024."
+ },
+ {
+  "id": "2024-07-lanao-del-sur-flood",
+  "verdict": "corrected",
+  "note": "GMA Regional TV says the July 9, 2024 flood in Malabang, Balabagan, Kapatagan and Marogong killed a man and left 2 children missing in Balabagan; this is the same flood as 2024-07-09-kapatagan-flood (duplicate).",
+  "date": "2024-07-09",
+  "missing": 2,
+  "summary": "Flooding on 9 July 2024 affected more than 3,100 families in 40 barangays of Malabang, Balabagan, Kapatagan and Marogong, Lanao del Sur. A man was found dead on Thursday, and two children were missing in Balabagan after their house was swept away; in Kapatagan, 22 houses were destroyed and 56 damaged."
+ },
+ {
+  "id": "2024-07-tawi-tawi-water",
+  "verdict": "corrected",
+  "note": "Manila Times (Mon. July 15, 2024) says four Russians on a distressed vessel were rescued on Tuesday near San Miguel Island (Bangkawan), Barangay Umus Mataha, by Mapun-based units; the town comes from that barangay and is not named outright.",
+  "municipality": "Mapun",
+  "barangay": "Umus Mataha (near San Miguel Island)",
+  "date": "2024-07-09",
+  "title": "4 Russians rescued from distressed vessel off San Miguel Island, Mapun, Tawi-Tawi",
+  "summary": "Coast Guard, police and Marine units rescued four Russians from a distressed vessel near San Miguel Island (Bangkawan), Barangay Umus Mataha, Tawi-Tawi, on Tuesday, 9 July 2024. No one was reported hurt."
+ },
+ {
+  "id": "2024-07-matanog-flood",
+  "verdict": "corrected",
+  "note": "GMA News citing OCD-BARMM says the floods as of Friday, July 12, 2024 had killed 3, hurt 8 and left 2 missing in Matanog.",
+  "injured": 8,
+  "missing": 2,
+  "summary": "Flooding in Matanog, Maguindanao del Norte, in July 2024 killed three people, hurt eight and left two missing as of 12 July 2024, according to Office of Civil Defense-BARMM data."
+ },
+ {
+  "id": "2024-07-kapatagan-flood",
+  "verdict": "corrected",
+  "note": "GMA News citing OCD-BARMM says as of July 12, 2024 two died and one was missing in Kapatagan (the two missing toddlers were in Balabagan); this overlaps 2024-07-09-kapatagan-flood.",
+  "missing": 1,
+  "summary": "Flash floods in Lanao del Sur in July 2024 left two people dead and one missing in Kapatagan as of 12 July 2024, according to Office of Civil Defense-BARMM data."
+ },
+ {
+  "id": "2024-07-maguindanao-del-sur-other",
+  "verdict": "unverified",
+  "note": "The only source (Inquirer) is blocked by Cloudflare, and WebFetch also returned 403."
+ },
+ {
+  "id": "2024-07-maguindanao-del-norte-shooting",
+  "verdict": "corrected",
+  "note": "GMA Regional TV says 3 were killed and 2 hurt when armed groups clashed in coastal barangays of Datu Odin Sinsuat on the evening of Tuesday, July 23, 2024.",
+  "municipality": "Datu Odin Sinsuat",
+  "barangay": "Coastal barangays (Mompong, Badak, Kusiong, Linek)",
+  "date": "2024-07-23",
+  "title": "3 killed, 2 hurt as armed groups clash in Datu Odin Sinsuat, Maguindanao del Norte",
+  "summary": "Armed groups exchanged gunfire in coastal barangays of Datu Odin Sinsuat, Maguindanao del Norte, from the evening of Tuesday, 23 July 2024, killing three and injuring two. Up to 879 families in Mompong, Badak, Kusiong and Linek fled, and 30 beach resorts were temporarily closed."
+ },
+ {
+  "id": "2024-06-basilan-water",
+  "verdict": "drop",
+  "note": "SunStar Zamboanga says the soldiers' motorboat capsized en route to Al-Barka and they were rescued off Santa Cruz Island, Zamboanga City, which is outside the map.",
+  "drop": true
+ },
+ {
+  "id": "2024-06-cotabato-shooting",
+  "verdict": "unverified",
+  "note": "The only source (Inquirer) is blocked by Cloudflare, and WebFetch also returned 403."
+ },
+ {
+  "id": "2024-06-basilan-shooting",
+  "verdict": "corrected",
+  "note": "GMA News says the 16-year-old was shot in the head outside a mini gym in Tipo-Tipo, Basilan, on Wednesday afternoon over an alleged rido; the article date is not in the text, so the day cannot be fixed.",
+  "municipality": "Tipo-Tipo",
+  "title": "16-year-old graduating student shot dead in Tipo-Tipo, Basilan",
+  "summary": "A 16-year-old junior high school student attending graduation practice was shot in the head and killed outside a mini gym in Tipo-Tipo, Basilan, on a Wednesday afternoon in June 2024. Police said the attack was linked to a family feud (rido)."
+ },
+ {
+  "id": "2024-06-cotabato-shooting-2",
+  "verdict": "corrected",
+  "note": "Philstar (8 Jun 2024, Saturday) says the van of the Barangay Kalanganan 2 chairman was ambushed on Mabini Street, Barangay Bagua 3, on Friday night; four companions were shot and a fifth slightly wounded.",
+  "date": "2024-06-07",
+  "barangay": "Bagua 3",
+  "title": "Village chief survives ambush, 5 companions hurt in Bagua 3, Cotabato City",
+  "summary": "Gunmen fired on a van carrying the chairman of Barangay Kalanganan 2 on Mabini Street in Barangay Bagua 3, Cotabato City on Friday night, 7 June 2024. The chairman survived; four of his companions were wounded by gunfire and a fifth was slightly hurt."
+ },
+ {
+  "id": "2024-05-tawi-tawi-shooting",
+  "verdict": "corrected",
+  "note": "GMA Regional TV says an alleged ex-Abu Sayyaf member and two companions were killed and five, including three policemen, wounded when CIDG served a warrant in Tawi-Tawi on Tuesday 28 May 2024; no town named.",
+  "date": "2024-05-28",
+  "deaths": 3,
+  "injured": 5,
+  "title": "Alleged ex-militant and 2 companions killed, 5 hurt in Tawi-Tawi clash",
+  "summary": "An alleged former Abu Sayyaf member and two companions were killed when they fought CIDG operatives serving arrest warrants in Tawi-Tawi on 28 May 2024. Three policemen and two other suspects were wounded. The report did not name the town."
+ },
+ {
+  "id": "2024-05-lanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Philstar (1 May 2024, Wednesday) says the ambush happened in Barangay East, Marogong on Tuesday morning, killing 3 CAFGU members and wounding 3.",
+  "date": "2024-04-30",
+  "municipality": "Marogong",
+  "barangay": "East",
+  "title": "3 CAFGU members killed, 3 wounded in ambush in Marogong, Lanao del Sur",
+  "summary": "Gunmen with assault rifles ambushed a vehicle carrying CAFGU militiamen to their detachment in Barangay East, Marogong, Lanao del Sur on the morning of 30 April 2024. Three were killed on the spot and three were wounded."
+ },
+ {
+  "id": "2024-05-maguindanao-del-norte-shooting",
+  "verdict": "unverified",
+  "note": "The only article (Inquirer) is behind a bot check, and a WebFetch returned 403."
+ },
+ {
+  "id": "2024-04-25-south-upi-other",
+  "verdict": "ok",
+  "note": "GMA confirms about 80 fell ill after a tribal wedding in South Upi, with beniton suspected; Manila Bulletin (in the sibling record) confirms Barangay Pandan and 25 April. The Inquirer and MindaNews articles were blocked, so the 49-admitted figure could not be checked (MB gave 61 still admitted)."
+ },
+ {
+  "id": "2024-04-maguindanao-del-sur-other",
+  "verdict": "corrected",
+  "note": "Manila Bulletin says 80 fell ill after eating beniton at a tribal wedding in Barangay Pandan, South Upi on Thursday 25 April 2024; this record duplicates 2024-04-25-south-upi-other.",
+  "date": "2024-04-25",
+  "municipality": "South Upi",
+  "barangay": "Pandan",
+  "title": "Suspected food poisoning downs 80 after wedding in Pandan, South Upi",
+  "summary": "At least 80 Indigenous people were taken to hospitals with stomach pain and vomiting after eating beniton, a native chicken dish in coconut milk, at a tribal wedding in Barangay Pandan, South Upi, Maguindanao del Sur on 25 April 2024. Sixty-five went to the South Upi municipal hospital and 15 to a hospital in North Upi."
+ },
+ {
+  "id": "2024-04-tawi-tawi-shooting",
+  "verdict": "corrected",
+  "note": "Philstar (18 Apr 2024) says Bongao police shot dead four suspected shabu dealers in Barangay Luuk Pandan, Bongao on Monday.",
+  "date": "2024-04-15",
+  "municipality": "Bongao",
+  "barangay": "Luuk Pandan",
+  "title": "4 drug suspects killed in shootout with police in Luuk Pandan, Bongao",
+  "summary": "Bongao police shot dead four suspected shabu dealers in Barangay Luuk Pandan, Bongao, Tawi-Tawi on 15 April 2024 after two of them drew pistols and opened fire. Three supposed buyers escaped."
+ },
+ {
+  "id": "2024-04-cotabato-shooting",
+  "verdict": "corrected",
+  "note": "Philstar (20 Apr 2024, Saturday) says two men in an SUV were shot and wounded on 5th Road, Barangay Rosary Heights 5, on Friday night.",
+  "date": "2024-04-19",
+  "barangay": "Rosary Heights 5",
+  "title": "2 wounded in ambush in Rosary Heights 5, Cotabato City",
+  "summary": "Gunmen repeatedly shot two men in a sports utility vehicle on 5th Road in Barangay Rosary Heights 5, Cotabato City on Friday night, 19 April 2024. Both were wounded and taken to hospital."
+ },
+ {
+  "id": "2024-04-maguindanao-del-sur-shooting",
+  "verdict": "unverified",
+  "note": "The only article (Inquirer) is behind a bot check, and a WebFetch returned 403."
+ },
+ {
+  "id": "2024-04-maguindanao-del-sur-shooting-2",
+  "verdict": "corrected",
+  "note": "Philstar (2 Apr 2024) says a fruit dealer was shot dead in his car on the Cotabato-Davao Highway in Barangay Galakit, Pagalungan, on Tuesday morning; his wife was unhurt.",
+  "date": "2024-04-02",
+  "municipality": "Pagalungan",
+  "barangay": "Galakit",
+  "title": "Merchant killed in ambush on highway in Galakit, Pagalungan",
+  "summary": "Gunmen shot dead a fruit dealer driving with his wife on the Cotabato-Davao Highway in Barangay Galakit, Pagalungan, Maguindanao del Sur on the morning of 2 April 2024. His wife was unhurt, and the attackers fled on motorcycles."
+ },
+ {
+  "id": "2024-03-20-sibutu-water",
+  "verdict": "corrected",
+  "note": "SunStar says BRP Jose Loor Jr. (PC390) rescued the three near Omapoy Island, Sibutu, on Wednesday 20 March, so the summary has the wrong ship name.",
+  "summary": "A speedboat carrying its skipper and two passengers had engine trouble and drifted for several hours off Omapoy Island, Sibutu, Tawi-Tawi on Wednesday, 20 March 2024. The Navy patrol craft BRP Jose Loor Jr. found it and towed it to Sibutu Island after a relative reported losing contact; nobody was hurt."
+ },
+ {
+  "id": "2024-03-lanao-del-sur-fire",
+  "verdict": "drop",
+  "drop": true,
+  "note": "The same 27 February 2023 Dilausan, Balindong fire as 2023-02-27-balindong-fire; the 2024 date was the article's publication, not the fire."
+ },
+ {
+  "id": "2024-03-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "The Philstar article (6 Mar 2024) covers a different clash: a BIFF member killed in Barangay Pidsandawan, Mamasapano, on 4 March. The Inquirer 'BIFF trainer' story this record follows is blocked (WebFetch 403), so the record's other fields are unchecked.",
+  "wrong_sources": [
+   "https://news.google.com/rss/articles/CBMiogFBVV95cUxON2VPdG16V0UtZ3BVZnJ0RkpsQWt5S3pDR0JLUWZFQy12X09GTmlBcDhNdGd1dFpiNlEzN3dqSUxGTTYwa1kzSGlTakVaTGNURWRlaFlQSmMwVVhtalJiN2VVNGJBel9sWVVib3FOSFZ5ejVobFg4THA1UUVPNkR4ZDY3VFZuc1ZlRGlBSGNBcmg5T01wYjZBYjRMeWxFSnNoUGfSAagBQVVfeXFMTTQyaFl2VzFpOVA3YzhaLUU4aG1aaENOel96WXpCREFWU25mcGw5MkhBaVF3d09GN3U0d0g4WlNOdkZsYVppRlBGNk5XMWc4ZDJCOXFDUVIzR1pGb2tTd3BYaDRWa1BEZTA5eXBCM0VrZ0FBbjAzdjBNYjB2RlJ6X2hwWTlMVG5JUHlzallCQmtycGxrOWxFVC12dWhiUlRoQjN1cS0tZ25E?oc=5"
+  ]
+ },
+ {
+  "id": "2024-03-maguindanao-del-sur-shooting-2",
+  "verdict": "corrected",
+  "note": "Philstar, Manila Bulletin, GMA and Rappler place the ambush in Barangay Tuayan, Datu Hoffer Ampatuan, on Sunday 17 March 2024, with 4 soldiers killed.",
+  "date": "2024-03-17",
+  "municipality": "Datu Hoffer Ampatuan",
+  "barangay": "Tuayan",
+  "title": "4 Army soldiers killed in ambush in Tuayan, Datu Hoffer Ampatuan",
+  "summary": "Gunmen ambushed 40th Infantry Battalion soldiers in a civilian vehicle returning from buying iftar supplies in Barangay Tuayan, Datu Hoffer Ampatuan, Maguindanao del Sur on the morning of 17 March 2024, killing four. The Army blamed Dawlah Islamiyah, while a BIFF faction also claimed the attack."
+ },
+ {
+  "id": "2024-03-cotabato-shooting",
+  "verdict": "corrected",
+  "note": "Philstar (2 Mar 2024, Saturday) says the CDRRMO operations chief was shot dead on his motorcycle on Friday night near the corner of Sinsuat Avenue and Luna Street.",
+  "date": "2024-03-01",
+  "barangay": "Sinsuat Avenue and Luna Street",
+  "title": "Cotabato City disaster office operations chief killed in ambush",
+  "summary": "Gunmen with .45 caliber pistols shot dead the operations chief of the Cotabato City Disaster Risk Reduction and Management Office as he rode home on a motorcycle near the corner of Sinsuat Avenue and Luna Street on Friday night, 1 March 2024. The attackers escaped on motorcycles."
+ },
+ {
+  "id": "2024-03-maguindanao-del-sur-shooting-3",
+  "verdict": "unverified",
+  "note": "The only article (PNA 1219886) returns 404, both as fetched and through WebFetch."
+ },
+ {
+  "id": "2024-02-tawi-tawi-water",
+  "verdict": "corrected",
+  "note": "Philstar (15 and 16 Feb 2024) says M/L Dhiemal, sailing from Tandu Banak, Sibutu to Bongao, lost its engine about nine miles out and drifted toward the Sibutu Passage on Tuesday. All 85 aboard were towed to Bongao and found in good condition.",
+  "date": "2024-02-13",
+  "municipality": "Sibutu",
+  "barangay": "Sibutu Passage",
+  "injured": 0,
+  "title": "Passenger boat drifts off Sibutu after engine failure; 85 rescued",
+  "summary": "The motor launch Dhiemal, bound for Bongao from Tandu Banak in Sibutu, Tawi-Tawi, lost its engine about nine miles out and drifted toward the Sibutu Passage on 13 February 2024. Navy patrol craft PC390 towed it to Bongao, and all 78 passengers and 7 crew were found in good condition."
+ },
+ {
+  "id": "2024-02-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Rappler (3 and 15 Feb) says the doctor was shot along a highway in Paglas on the night of 3 February 2024, and her speeding car then hit a tricycle, hurting a family of three. Philstar says Buluan, but the later Rappler piece repeats Paglas.",
+  "date": "2024-02-03",
+  "municipality": "Datu Paglas",
+  "barangay": "Datu Paglas Highway",
+  "injured": 4,
+  "title": "Government doctor wounded in ambush in Paglas, Maguindanao del Sur",
+  "summary": "Gunmen on a motorcycle shot and wounded a government doctor driving along a highway in Paglas, Maguindanao del Sur on the night of 3 February 2024; she drove herself to hospital, and on the way her car hit a tricycle, injuring a family of three. Two suspects later surrendered, and police called it a robbery attempt."
+ },
+ {
+  "id": "2024-01-lamitan-road",
+  "verdict": "corrected",
+  "note": "GMA Regional TV confirms the Lamitan hit-and-run, 1 dead and 3 hurt, but the summary names a private victim, so it is rewritten without the name.",
+  "summary": "A van cut into the lane of a motorcycle carrying a family home in Lamitan City, Basilan in January 2024, killing the rider and injuring his wife and two children. The van fled and was later found abandoned in Barangay Kabangalan, Ungkaya Pukan; the driver was not located."
+ },
+ {
+  "id": "2024-01-lanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "GMA says nine alleged Dawlah Islamiyah members were killed and four soldiers injured in a clash in Barangay Tapurog, Piagapo, on Thursday; Manila Bulletin dates the Piagapo operation to 25-26 January.",
+  "date": "2024-01-25",
+  "municipality": "Piagapo",
+  "barangay": "Tapurog",
+  "injured": 4,
+  "title": "9 alleged Dawlah Islamiyah members killed in clash in Tapurog, Piagapo",
+  "summary": "Nine alleged Dawlah Islamiyah members, including suspects in the December 2023 MSU bombing, were killed in a clash with Army troops in Barangay Tapurog, Piagapo, Lanao del Sur on 25 January 2024. Four soldiers were injured."
+ },
+ {
+  "id": "2024-01-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Philstar (23 Jan 2024, Tuesday) says gunmen shot dead a Sultan sa Barongis school principal on the highway in Barangay Manungkaling, Mamasapano, on Monday afternoon.",
+  "date": "2024-01-22",
+  "municipality": "Mamasapano",
+  "barangay": "Manungkaling",
+  "title": "School principal killed in ambush in Manungkaling, Mamasapano",
+  "summary": "Gunmen beside a highway shot dead an elementary school principal from Sultan sa Barongis as he rode his motorcycle through Barangay Manungkaling, Mamasapano, Maguindanao del Sur on the afternoon of 22 January 2024. He was the second school official from the town killed in an ambush in two months."
+ },
+ {
+  "id": "2023-12-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Philstar (26 Dec 2023) says four MILF members were killed in a gunfight between two MILF groups in Barangay Kapinpilan, Ampatuan, on Monday morning (it lists five names but twice says four).",
+  "date": "2023-12-25",
+  "municipality": "Ampatuan",
+  "barangay": "Kapinpilan",
+  "title": "4 dead in gunfight between MILF groups in Kapinpilan, Ampatuan",
+  "summary": "Four MILF members were killed when two armed MILF groups feuding over farmland traded shots in Barangay Kapinpilan, Ampatuan, Maguindanao del Sur on the morning of 25 December 2023. Villagers fled the area."
+ },
+ {
+  "id": "2023-11-basilan-shooting",
+  "verdict": "corrected",
+  "note": "Manila Bulletin says Board Member Nasser Asarul was shot dead at an eatery in Barangay Basak, Sumisip, on Wednesday 8 November 2023, and a companion then shot the gunman dead.",
+  "date": "2023-11-08",
+  "municipality": "Sumisip",
+  "barangay": "Basak",
+  "deaths": 2,
+  "title": "Basilan provincial board member shot dead in Basak, Sumisip",
+  "summary": "Basilan 2nd District Board Member Nasser Asarul was shot dead by a man who confronted his group at an eatery in Barangay Basak, Sumisip, on the afternoon of 8 November 2023. One of Asarul's companions shot the gunman dead."
+ },
+ {
+  "id": "2023-10-30-butig-shooting",
+  "verdict": "ok",
+  "note": "The PNA Facebook video has no body, but its caption says a shooting at a clustered precinct in Bayabao Elementary School, Butig, killed the husband of a barangay chief early on 30 October 2023 and voting was extended, which matches the record."
+ },
+ {
+  "id": "2023-10-cotabato-shooting",
+  "verdict": "corrected",
+  "note": "Philstar (24 Oct 2023, Tuesday) says the attack on people hanging campaign posters on Sousa Extension, Barangay Rosary Heights 12, happened on Monday night, killing 3 (two of them councilor candidates) and wounding 2.",
+  "date": "2023-10-23",
+  "barangay": "Rosary Heights 12",
+  "title": "3 dead, 2 hurt in election-related gun attack in Rosary Heights 12, Cotabato City",
+  "summary": "Gunmen opened fire on a group hanging campaign posters on Sousa Extension in Barangay Rosary Heights 12, Cotabato City on the night of 23 October 2023, killing three, including councilor candidates Nur-Moqtadir Butucan and Alfar Sing Ayunan, and wounding two. Police arrested 12 suspects about four hours later."
+ },
+ {
+  "id": "2023-10-lanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Philstar (25 Oct 2023) says a barangay chairman candidate was killed and his wife and son wounded in an ambush in Barangay Sigayan, Kapatagan, on Wednesday morning.",
+  "date": "2023-10-25",
+  "municipality": "Kapatagan",
+  "barangay": "Sigayan",
+  "injured": 2,
+  "title": "Barangay chairman candidate killed, 2 hurt in ambush in Sigayan, Kapatagan",
+  "summary": "Gunmen with assault rifles ambushed the vehicle of Kamar Bilao Bansil, an independent candidate for chairman of Barangay Sigayan, Kapatagan, Lanao del Sur, on the morning of 25 October 2023. Bansil died on the spot, and his wife and son were badly wounded."
+ },
+ {
+  "id": "2023-09-07-bongao-fire",
+  "verdict": "corrected",
+  "note": "The DSWD DROMIC Report 4 (via WebFetch) confirms the 7 Sept 1:15 PM fire in Poblacion and 324 houses damaged (317 totally) but counts 652 families affected, not 536. MindaNews stayed blocked.",
+  "summary": "A fire that began at about 1:15 p.m. on Thursday, 7 September 2023 swept four areas of Barangay Poblacion, Bongao, Tawi-Tawi for three hours until rain helped put it out. Early reports relayed by MindaNews put the loss at around 600 wooden houses; DSWD's assessment by 13 September counted 324 houses damaged, 317 of them totally, and 652 families affected. Buildings of the Tawi-Tawi School of Fisheries, including its senior high building, library and computer laboratory, were razed; damage was estimated at P20 million."
+ },
+ {
+  "id": "2023-09-tawi-tawi-fire",
+  "verdict": "unverified",
+  "note": "The only article (MindaNews, Navy relief aid) is blocked, and a WebFetch returned 403. The same article is cited by 2023-09-07-bongao-fire, so this is probably a duplicate of that fire."
+ },
+ {
+  "id": "2023-09-cotabato-fire",
+  "verdict": "corrected",
+  "note": "The BARMM website says a fire on 5 Sept 2023 in Barangay Rosary Heights 7 damaged 25 households and displaced 40 families, who got relief on 8 Sept.",
+  "date": "2023-09-05",
+  "barangay": "Rosary Heights 7",
+  "title": "Fire displaces 40 families in Rosary Heights 7, Cotabato City",
+  "summary": "A fire on 5 September 2023 in Barangay Rosary Heights 7, Cotabato City damaged 25 households and displaced 40 families, some of whom sheltered at the barangay hall. The Bangsamoro social services ministry distributed relief on 8 September."
+ },
+ {
+  "id": "2023-09-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Rappler says Dawlah Islamiyah and MILF fighters clashed in Barangay Tuawayan (Tuayan), Datu Hoffer, on Monday 11 Sept 2023, killing two men. The Philstar article is a separate 23 Sept army clash in Ampatuan (1 dead, 3 hurt), which is where the injured 3 came from.",
+  "date": "2023-09-11",
+  "municipality": "Datu Hoffer Ampatuan",
+  "barangay": "Tuayan",
+  "injured": null,
+  "wrong_sources": [
+   "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTHF0aHlCODkwODUwR2tWVi1NVzF6S3NSNVRobmJTVFZ6cjd1akdKeDhZNlNOcmF3dXdUVnEzWUw5cTJ6UUpXZGpMVVpuNmJRZWkza3lHOUY1ZXl2RUNLdThsdzdLcl91MDREWVBZRUtUWTA1dHlzM3VjaTRuMEQ2OFJ3V09md2VhYzZlYUVFeUdJc2JoVGQ4SzFlOUJfcHJfMUNQd9IBqwFBVV95cUxOOTM3SnUwZEk0aEJWX2V3Y2lsbXhLMkl4bldZVE93TGYyb0RhTTJ6RGhZNjBKRXJoamotU0JXSnl2cWR3LWtvaDh1eXlYek1BUHVxU3hTZFhpamZHUVBLeWVkSFFkVjhkcE1nOXhMT202Q01tN2dvVE1yUGRYRFlHMV9Ca0p6SUVxczVwZ2t2SXd6V1hCeEQ0dlpQbXZkRFNORjVLM1lBVkhxR3c?oc=5"
+  ],
+  "title": "2 killed as Dawlah Islamiyah and MILF clash in Tuayan, Datu Hoffer Ampatuan",
+  "summary": "Dawlah Islamiyah and MILF fighters clashed for about half an hour in Barangay Tuayan, Datu Hoffer Ampatuan, Maguindanao del Sur on 11 September 2023, killing two men believed to be Dawlah Islamiyah members. At least 24 Teduray families evacuated."
+ },
+ {
+  "id": "2023-09-maguindanao-del-sur-shooting-2",
+  "verdict": "unverified",
+  "note": "The only article (Inquirer) is behind a bot check, and a WebFetch returned 403."
+ },
+ {
+  "id": "2023-09-maguindanao-del-norte-shooting",
+  "verdict": "corrected",
+  "note": "Philstar (30 Sept 2023, Saturday) says an Army sergeant was killed and a private wounded at noon on Friday on the Cotabato-Davao Highway in Sitio Sandakan, Barangay Dalumangcob, Sultan Kudarat.",
+  "date": "2023-09-29",
+  "municipality": "Sultan Kudarat",
+  "barangay": "Dalumangcob",
+  "title": "Soldier killed, companion wounded in ambush in Dalumangcob, Sultan Kudarat",
+  "summary": "Gunmen on motorcycles shot two Army soldiers riding a motorcycle on the Cotabato-Davao Highway in Sitio Sandakan, Barangay Dalumangcob, Sultan Kudarat, Maguindanao del Norte at noon on 29 September 2023. A staff sergeant died on the spot and his companion was badly wounded."
+ },
+ {
+  "id": "2023-08-cotabato-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article is Inquirer, blocked by Cloudflare (WebFetch also 403); nothing to check against."
+ },
+ {
+  "id": "2023-08-basilan-shooting",
+  "verdict": "corrected",
+  "note": "Rappler (MILF probe; MILF members confirmed) says the Saturday, August 12 ambush was in Barangay Ulitan, Ungkaya Pukan, killing 2 soldiers (one died in hospital August 14) and wounding 7.",
+  "municipality": "Ungkaya Pukan",
+  "barangay": "Ulitan",
+  "date": "2023-08-12",
+  "injured": 7,
+  "title": "2 soldiers killed, 7 wounded in ambush in Ulitan, Ungkaya Pukan, Basilan",
+  "summary": "An armed group ambushed Army 64th Infantry Battalion soldiers of a Joint Peace and Security Team in Barangay Ulitan, Ungkaya Pukan, on the afternoon of August 12, 2023, as they prepared for a medical outreach. One soldier died at the scene and a wounded corporal died in hospital on August 14; 7 others were wounded."
+ },
+ {
+  "id": "2023-08-basilan-shooting-2",
+  "verdict": "unverified",
+  "note": "Only cited article is Inquirer, blocked by Cloudflare (WebFetch also 403); nothing to check against. Headline (1 soldier dead, 9 wounded, Inquirer 1816009) looks like the first report of the August 12 Ungkaya Pukan ambush, i.e. a likely duplicate of 2023-08-basilan-shooting."
+ },
+ {
+  "id": "2023-07-basilan-shooting",
+  "verdict": "drop",
+  "note": "Philstar says the Hadji Muhtamad mayor's fishing trustee was shot at a residence in Zamboanga City (Police Station 11), outside the map.",
+  "drop": true
+ },
+ {
+  "id": "2023-07-maguindanao-del-sur-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article is Inquirer, blocked by Cloudflare (WebFetch also 403); nothing to check against."
+ },
+ {
+  "id": "2023-06-14-shariff-aguak-shooting",
+  "verdict": "ok",
+  "note": "Philstar says 2 patrolmen were killed and 4 police hurt when ambushed in Shariff Aguak returning from patrol on Wednesday (June 14); duplicate of 2023-06-maguindanao-del-sur-shooting-2."
+ },
+ {
+  "id": "2023-06-lanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Rappler says 4 DI-Maute members and 1 soldier were killed and 3 soldiers wounded in two encounters on Wednesday night, May 31, in Barangay Piangolongan, Marogong.",
+  "municipality": "Marogong",
+  "barangay": "Piangolongan",
+  "date": "2023-05-31",
+  "injured": 3,
+  "title": "5 killed, 3 hurt in clashes with Dawlah Islamiyah-Maute in Piangolongan, Marogong",
+  "summary": "Scout Rangers clashed twice with Dawlah Islamiyah-Maute members on the night of May 31, 2023, in Barangay Piangolongan, Marogong, Lanao del Sur. 4 militants and 1 soldier were killed and 3 soldiers were wounded; 2 minors and a woman were rescued."
+ },
+ {
+  "id": "2023-06-marawi-shooting",
+  "verdict": "corrected",
+  "note": "Philstar and Manila Standard say Dawlah Islamiya emir Abu Zacharia was killed resisting arrest in a 10-minute gunfight before dawn Wednesday, June 14, in the Sarimanok area of Marawi.",
+  "date": "2023-06-14",
+  "barangay": "Sarimanok",
+  "summary": "A joint Army and police team serving arrest warrants killed Dawlah Islamiya leader Abu Zacharia in a 10-minute gunfight before dawn on June 14, 2023, in the Sarimanok area of Marawi City. Grenades, explosives and 2 M16 rifles were found in the hideout."
+ },
+ {
+  "id": "2023-06-maguindanao-del-sur-shooting",
+  "verdict": "unverified",
+  "note": "Both cited articles are Inquirer, blocked by Cloudflare (WebFetch also 403); nothing to check against."
+ },
+ {
+  "id": "2023-06-maguindanao-del-sur-shooting-2",
+  "verdict": "corrected",
+  "note": "Rappler says the June 14 ambush that killed 2 patrolmen and wounded 4 police happened in Shariff Aguak near the provincial police camp; this duplicates 2023-06-14-shariff-aguak-shooting.",
+  "municipality": "Shariff Aguak",
+  "date": "2023-06-14",
+  "title": "2 police killed, 4 wounded in ambush in Shariff Aguak, Maguindanao del Sur",
+  "summary": "Gunmen ambushed a Maguindanao del Sur police mobile force team returning from patrol in Shariff Aguak Poblacion at about 8:30 p.m. on June 14, 2023, near the provincial police headquarters. 2 patrolmen were killed and 4 police were wounded."
+ },
+ {
+  "id": "2023-06-maguindanao-del-sur-shooting-3",
+  "verdict": "corrected",
+  "note": "Philstar (Monday, June 26) says 2 fish vendors riding home from Barangay Sanduagan were ambushed in South Upi at dusk Saturday, i.e. June 24.",
+  "municipality": "South Upi",
+  "date": "2023-06-24",
+  "title": "2 fish vendors killed in ambush in South Upi, Maguindanao del Sur",
+  "summary": "Gunmen ambushed 2 fish vendors on a motorcycle on their way home from Barangay Sanduagan in South Upi, Maguindanao del Sur, at dusk on June 24, 2023. One died at the scene and the other in hospital; relatives blamed extortionists whose demands they had refused."
+ },
+ {
+  "id": "2023-05-lanao-del-sur-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article (PNA 1200651) returns 404 with no text; nothing to check against."
+ },
+ {
+  "id": "2023-05-maguindanao-del-norte-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article is Cebu Daily News (Inquirer), blocked by Cloudflare (WebFetch also 403)."
+ },
+ {
+  "id": "2023-04-tawi-tawi-water",
+  "verdict": "unverified",
+  "note": "Only cited article is Inquirer, blocked by Cloudflare (WebFetch also 403); nothing to check against."
+ },
+ {
+  "id": "2023-04-maguindanao-del-sur-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article is Inquirer, blocked by Cloudflare (WebFetch also 403); nothing to check against."
+ },
+ {
+  "id": "2023-04-maguindanao-del-sur-shooting-2",
+  "verdict": "unverified",
+  "note": "Only cited article is Inquirer, blocked by Cloudflare (WebFetch also 403); nothing to check against."
+ },
+ {
+  "id": "2023-03-29-hadji-muhtamad-water",
+  "verdict": "ok",
+  "note": "GMA (April 13) says the last missing passenger of MV Lady Mary Joy 3, which caught fire at 10:40 p.m. March 29 off Baluk-Baluk Island, Hadji Muhtamad, was recovered, putting the toll at 33; Philstar gives 249 aboard and Malaya faulty wiring."
+ },
+ {
+  "id": "2023-03-05-datu-odin-sinsuat-road",
+  "verdict": "ok",
+  "note": "DZRH says a pickup, passenger van and tricycle crashed on the highway in Barangay Kurinte, Datu Odin Sinsuat, killing 6 and hurting 13."
+ },
+ {
+  "id": "2023-02-27-balindong-fire",
+  "verdict": "ok",
+  "note": "BARMM/MSSD says the February 27 fire in Barangay Dilausan, Balindong destroyed 17 houses, damaged 5 and displaced 42 families (156 people)."
+ },
+ {
+  "id": "2023-02-hadji-muhtamad-water",
+  "verdict": "unverified",
+  "note": "Only cited article is Inquirer, blocked by Cloudflare (WebFetch also 403); nothing to check against."
+ },
+ {
+  "id": "2023-02-lanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Sources split on the place of the 17 February 2023 Adiong ambush: Philstar and Rappler say Maguing, Lanao del Sur; GMA, Davao Today and Manila Bulletin say Kalilangan, Bukidnon, or the boundary. Kept at Maguing, the governor's side of the line.",
+  "municipality": "Maguing"
+ },
+ {
+  "id": "2023-02-lanao-del-sur-shooting-2",
+  "verdict": "unverified",
+  "note": "Only cited article is Inquirer, blocked by Cloudflare (WebFetch also 403); nothing to check against."
+ },
+ {
+  "id": "2023-02-lanao-del-sur-shooting-3",
+  "verdict": "unverified",
+  "note": "Cited articles are Inquirer (blocked by Cloudflare, WebFetch 403) and a Philippine Star Facebook post with no text."
+ },
+ {
+  "id": "2023-02-basilan-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article is Inquirer, blocked by Cloudflare (WebFetch also 403); nothing to check against."
+ },
+ {
+  "id": "2023-01-cotabato-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article is Inquirer, blocked by Cloudflare (WebFetch also 403); nothing to check against."
+ },
+ {
+  "id": "2022-12-cotabato-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article is Inquirer, blocked by Cloudflare (WebFetch also 403); nothing to check against."
+ },
+ {
+  "id": "2022-12-sultan-kudarat-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article is Inquirer, blocked by Cloudflare (WebFetch also 403); nothing to check against."
+ },
+ {
+  "id": "2022-11-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Philstar (Monday, November 28) says gunmen killed 3 CAFGU members and wounded 2 guarding a bridge in Barangay Edcor, Buldon, Maguindanao del Norte, before dawn Monday.",
+  "province": "Maguindanao del Norte",
+  "municipality": "Buldon",
+  "barangay": "Edcor",
+  "date": "2022-11-28",
+  "injured": 2,
+  "title": "3 CAFGU members killed, 2 wounded guarding bridge in Edcor, Buldon",
+  "summary": "Motorcycle-riding gunmen attacked CAFGU militiamen guarding repairs to a bridge damaged by Tropical Storm Paeng in Barangay Edcor, Buldon, Maguindanao del Norte, before dawn on November 28, 2022. 3 were killed and 2 wounded."
+ },
+ {
+  "id": "2022-11-cotabato-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article is Inquirer, blocked by Cloudflare (WebFetch also 403); nothing to check against."
+ },
+ {
+  "id": "2022-10-28-datu-odin-sinsuat-other",
+  "verdict": "corrected",
+  "note": "Manila Bulletin (Nov 9) says Senator Padilla's resolution cites at least 24 Teduray dead and 30 injured in the Paeng landslides at Sitio Tabunon, Barangay Kusiong, Datu Odin Sinsuat; no article gives the 13 dead now on the record.",
+  "deaths": 24,
+  "injured": 30,
+  "title": "Paeng landslide kills 24 Teduray in Kusiong, Datu Odin Sinsuat",
+  "summary": "Heavy rain from Severe Tropical Storm Paeng on 27-28 October 2022 set off landslides at the foot of Mt. Minandar in Barangay Kusiong, Datu Odin Sinsuat, Maguindanao del Norte, where a Teduray community had been relocated in 2020. A Senate resolution filed in November cited at least 24 Teduray dead and 30 injured; retrieval operations ended by 3 November."
+ },
+ {
+  "id": "2022-10-28-datu-odin-sinsuat-flood",
+  "verdict": "corrected",
+  "note": "NBC/AP (Oct 28) says at least 31 died and 9 were missing: 26 in Datu Odin Sinsuat and Datu Blah Sinsuat, 5 in Upi; it reported no immediate casualties at Kusiong, so the landslide deaths belong to the separate Kusiong record.",
+  "missing": 9,
+  "summary": "Flash floods and landslides from Tropical Storm Paeng (Nalgae) killed at least 31 people in Maguindanao overnight on 27-28 October 2022: 26, mostly drowned, in Datu Odin Sinsuat and Datu Blah Sinsuat and 5 in Upi, with 9 missing. Teduray residents later welcomed a Senate probe into their relocation to the Kusiong landslide area."
+ },
+ {
+  "id": "2022-10-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Philstar (October 28) says a Dinaig District Hospital nurse was gunned down in Datu Odin Sinsuat, Maguindanao del Norte, before dawn the previous day.",
+  "province": "Maguindanao del Norte",
+  "municipality": "Datu Odin Sinsuat",
+  "date": "2022-10-27",
+  "title": "Government hospital nurse shot dead in Datu Odin Sinsuat",
+  "summary": "A nurse of the Dinaig District Hospital was shot dead in Datu Odin Sinsuat, Maguindanao del Norte, before dawn on October 27, 2022, and was declared dead on arrival at the Cotabato City Regional Medical Center; witnesses said an argument preceded the shooting."
+ },
+ {
+  "id": "2022-09-basilan-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article (Inquirer) is behind a bot wall; WebFetch also returned 403."
+ },
+ {
+  "id": "2022-09-lanao-del-sur-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article (Inquirer) is behind a bot wall."
+ },
+ {
+  "id": "2022-09-basilan-shooting-2",
+  "verdict": "corrected",
+  "note": "Rappler says 3 soldiers were killed in an Abu Sayyaf ambush in Barangay Magcawa near the Al-Barka town hall on Thursday, 15 September 2022.",
+  "municipality": "Al-Barka",
+  "barangay": "Magcawa",
+  "date": "2022-09-15",
+  "title": "3 soldiers killed in ambush in Magcawa, Al-Barka, Basilan",
+  "summary": "At least 6 gunmen ambushed Army soldiers on their way to relieve a detachment in Barangay Magcawa, near the Al-Barka town hall, at about 1:45 pm on 15 September 2022, killing 3 of them. The attackers fled toward Tipo-Tipo with a rifle taken from one of the soldiers."
+ },
+ {
+  "id": "2022-09-maguindanao-del-sur-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article (Inquirer) is behind a bot wall."
+ },
+ {
+  "id": "2022-08-30-ampatuan-shooting",
+  "verdict": "corrected",
+  "note": "Philstar and Rappler say the police chief and his aide were killed and 3 other policemen wounded in Sitio Pasio, Barangay Kapinpilan, Ampatuan on 30 August 2022 (GMA's earlier report said 2 wounded).",
+  "barangay": "Kapinpilan",
+  "injured": 3,
+  "summary": "Gunmen fired on a police patrol vehicle in Sitio Pasio, Barangay Kapinpilan, Ampatuan, on the morning of 30 August 2022 as the team returned from trying to serve an arrest warrant. The Ampatuan town police chief and his aide were killed and 3 other policemen were wounded."
+ },
+ {
+  "id": "2022-08-lamitan-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article (MindaNews) is behind a bot wall; WebFetch also returned 403."
+ },
+ {
+  "id": "2022-07-28-lamitan-shooting",
+  "verdict": "corrected",
+  "note": "Philstar, Rappler, BusinessMirror and GMA all say the shooting was on Friday, 29 July 2022, outside his home in Barangay Maganda, Lamitan.",
+  "date": "2022-07-29",
+  "barangay": "Maganda",
+  "summary": "Two motorcycle-riding gunmen shot dead the father of the Ateneo shooting suspect outside his home on Rizal Avenue, Barangay Maganda, Lamitan City, at about 6:45 am on 29 July 2022. He was hit 4 times and was declared dead on arrival at hospital."
+ },
+ {
+  "id": "2022-06-basilan-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article (Inquirer) is behind a bot wall."
+ },
+ {
+  "id": "2022-06-basilan-shooting-2",
+  "verdict": "corrected",
+  "note": "Manila Bulletin says the losing Akbar mayoral candidate was shot by the roadside in Riverside, Barangay Matibay, and his son-in-law near a cemetery in Barangay Maganda that night; it does not name the town of either barangay. Matibay and Maganda are both barangays of Lamitan and of no other BARMM town.",
+  "barangay": "Matibay",
+  "summary": "A losing mayoral candidate in Akbar, Ujud Ujurun Gappal, was shot dead by the roadside in Riverside, Barangay Matibay, at 4:55 pm and died at Lamitan District Hospital. At about 10 pm his son-in-law was shot dead near the Muslim cemetery in Sitio Kayo Poteh, Barangay Maganda, after burying him; reported 10 June 2022.",
+  "municipality": "Lamitan"
+ },
+ {
+  "id": "2022-05-09-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "GMA and Philstar place the Election Day attack at the polling school in the town proper of Buluan; GMA says 3 peacekeepers were killed and 1 wounded.",
+  "municipality": "Buluan",
+  "injured": 1,
+  "title": "3 village peacekeepers shot dead at Buluan poll site on Election Day",
+  "summary": "Gunmen in vehicles fired assault rifles at barangay peacekeepers guarding a polling precinct at a school in the town proper of Buluan on the morning of Election Day, 9 May 2022. 3 were killed and 1 was wounded, and voting was interrupted."
+ },
+ {
+  "id": "2022-05-lanao-del-sur-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article (Inquirer) is behind a bot wall."
+ },
+ {
+  "id": "2022-04-lanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "GMA says the rido shootout was in Barangay Tubod, Malabang, from Sunday night to Monday, hurting 8 civilians including a child; the article gives no calendar date.",
+  "municipality": "Malabang",
+  "barangay": "Tubod",
+  "title": "8 hurt in rido shootout between political rivals in Malabang, Lanao del Sur",
+  "summary": "A shootout blamed on a rido between 2 political families broke out in Barangay Tubod, Malabang, from about 9 pm on a Sunday to 2 am Monday and again at 5 am, reported in April 2022. 8 civilians, including a child, were grazed by bullets; no one was killed."
+ },
+ {
+  "id": "2022-04-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Philstar (21 April 2022) says the suspect was shot dead on Thursday in Sitio Itil, Barangay Satan, Shariff Aguak, and a villager was wounded in the crossfire.",
+  "municipality": "Shariff Aguak",
+  "barangay": "Satan",
+  "date": "2022-04-21",
+  "injured": 1,
+  "title": "Maguindanao massacre suspect killed in shootout with police in Shariff Aguak",
+  "summary": "A suspect in the 2009 Maguindanao massacre was shot dead after firing at police and soldiers serving an arrest warrant at his hideout in Sitio Itil, Barangay Satan, Shariff Aguak, on the morning of 21 April 2022. A villager was wounded in the crossfire."
+ },
+ {
+  "id": "2022-02-lanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "GMA says 2 suspected Dawlah Islamiyah-Maute members were killed and 4 soldiers injured in a Wednesday encounter in Balabagan; the article gives no calendar date.",
+  "municipality": "Balabagan",
+  "injured": 4,
+  "title": "2 suspected extremists killed, 4 soldiers hurt in Balabagan, Lanao del Sur clash",
+  "summary": "Marines clashed with suspected Dawlah Islamiyah-Maute members in Balabagan, Lanao del Sur, on a Wednesday, reported in February 2022. 2 of the gunmen were killed and 4 soldiers were injured."
+ },
+ {
+  "id": "2022-02-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Manila Bulletin says the 5 suspects were killed at a checkpoint in Barangay Kauran, Ampatuan, after a robbery on Saturday evening, 19 February 2022.",
+  "municipality": "Ampatuan",
+  "barangay": "Kauran",
+  "date": "2022-02-19",
+  "title": "5 robbery suspects killed in firefight with soldiers in Ampatuan, Maguindanao",
+  "summary": "Soldiers and CAFGU members responding to a robbery at a convenience store in Barangay Kauran, Ampatuan, on the evening of 19 February 2022 set up a checkpoint and exchanged fire with the suspects in a minivan. All 5 suspects were killed."
+ },
+ {
+  "id": "2022-02-cotabato-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article (PNA) returns 404; WebFetch also returned 404."
+ },
+ {
+  "id": "2022-02-maguindanao-del-sur-shooting-2",
+  "verdict": "corrected",
+  "note": "Philstar (12 February 2022) and GMA say 9 were killed in a rido ambush on Saturday morning in Barangay Kalumamis, Guindulungan.",
+  "municipality": "Guindulungan",
+  "barangay": "Kalumamis",
+  "date": "2022-02-12",
+  "title": "9 killed in rido ambush in Kalumamis, Guindulungan, Maguindanao",
+  "summary": "Gunmen fired assault rifles at 2 vehicles on a road linking Barangay Kalumamis to the Cotabato-Isulan Highway in Guindulungan on the morning of 12 February 2022, killing 9 people. Police and the Army blamed a long-running rido between 2 clans."
+ },
+ {
+  "id": "2021-10-maguindanao-del-sur-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article (PNA) returns 404."
+ },
+ {
+  "id": "2021-09-marawi-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article (Inquirer) is behind a bot wall."
+ },
+ {
+  "id": "2021-09-maguindanao-del-sur-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article (Inquirer) is behind a bot wall."
+ },
+ {
+  "id": "2021-05-maguindanao-del-sur-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article (PNA 1140028) returns 404; PNA 1140446 (another dossier) mentions a clash that left 5 BIFF dead in Sitio Linek, Barangay Digal, Buluan, about 11 May 2021, likely this incident."
+ },
+ {
+  "id": "2021-05-maguindanao-del-sur-shooting-2",
+  "verdict": "corrected",
+  "note": "PNA says 2 BIFF members were killed in a firefight early Sunday, 16 May 2021, in Barangay Mao, Datu Paglas.",
+  "municipality": "Datu Paglas",
+  "barangay": "Mao",
+  "date": "2021-05-16",
+  "title": "2 BIFF members killed in clash with troops in Mao, Datu Paglas, Maguindanao",
+  "summary": "A 15-minute firefight between Army troops and a BIFF faction broke out early on 16 May 2021 in Barangay Mao, Datu Paglas, killing 2 BIFF members. No government casualties were reported."
+ },
+ {
+  "id": "2021-05-basilan-shooting",
+  "verdict": "unverified",
+  "note": "Cited articles are a PNA 404 and an Inquirer bot wall."
+ },
+ {
+  "id": "2021-04-04-sitangkai-water",
+  "verdict": "ok",
+  "note": "Philstar bears it out: M/L Marissa exploded and capsized near Panguan Island, Sitangkai, on Sunday 4 April 2021, 3 of 9 crew injured. Same incident as 2021-04-tawi-tawi-water and 2021-04-sitangkai-water."
+ },
+ {
+  "id": "2021-04-tawi-tawi-water",
+  "verdict": "corrected",
+  "note": "Philstar places it near Panguan Island, Sitangkai, on Sunday 4 April 2021; this record duplicates 2021-04-04-sitangkai-water (same article).",
+  "municipality": "Sitangkai",
+  "barangay": "Panguan Island",
+  "date": "2021-04-04",
+  "title": "Motor launch catches fire and capsizes off Panguan Island, Sitangkai; 3 hurt",
+  "summary": "The motor launch M/L Marissa caught fire, exploded and capsized while loading gasoline from a tanker from Sabah near Panguan Island, Sitangkai, on 4 April 2021. Three of its nine crew were injured; all were rescued and the injured were taken to a hospital in Sibutu."
+ },
+ {
+  "id": "2021-04-sitangkai-water",
+  "verdict": "ok",
+  "note": "Manila Times bears it out (ML Marissa sank off Bulu-Bulu Island, 9 rescued, 3 injured); it is the same incident as 2021-04-04-sitangkai-water."
+ },
+ {
+  "id": "2021-03-maguindanao-del-sur-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article (PNA) returns 404."
+ },
+ {
+  "id": "2021-03-basilan-shooting",
+  "verdict": "unverified",
+  "note": "Only cited article (ABS-CBN) returned Access Denied; WebFetch on ABS-CBN also returned 403."
+ },
+ {
+  "id": "2021-02-18-marawi-fire",
+  "verdict": "unverified",
+  "note": "Only cited article (Inquirer) is behind a bot wall."
+ },
+ {
+  "id": "2021-01-30-datu-odin-sinsuat-road",
+  "verdict": "unverified",
+  "note": "Only cited article (Inquirer) is behind a bot wall."
+ },
+ {
+  "id": "2021-01-basilan-water",
+  "verdict": "unverified",
+  "note": "Only cited article (ABS-CBN) returned Access Denied; WebFetch also returned 403."
+ },
+ {
+  "id": "2021-01-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "GMA says 13 were killed in the Saturday clash in Sultan Kudarat town, Maguindanao, when police served a warrant on a Barangay Limbo chairman; it says 4 wounded against the Inquirer headline's 7, so the injured count is left as is.",
+  "municipality": "Sultan Kudarat",
+  "province": "Maguindanao del Norte",
+  "date": "2021-01-23",
+  "title": "13 killed in shootout during law-enforcement operation in Sultan Kudarat, Maguindanao",
+  "summary": "Police serving arrest and search warrants on a barangay chairman in Sultan Kudarat, Maguindanao, at about 3 am on 23 January 2021 met armed resistance, setting off a gun battle of about 6 hours. 13 people were killed; reports put the wounded at between 4 and 7, including policemen."
+ },
+ {
+  "id": "2021-01-basilan-shooting",
+  "verdict": "corrected",
+  "note": "Philstar (11 Jan 2021) says the 9 January ambush struck the car on the road in Barangay Banah, Tipo-Tipo, and was rooted in a rido.",
+  "municipality": "Tipo-Tipo",
+  "barangay": "Banah",
+  "date": "2021-01-09",
+  "title": "Barangay chairman, 3 others killed in Tipo-Tipo, Basilan ambush",
+  "summary": "Gunmen ambushed a car in Barangay Banah, Tipo-Tipo, Basilan on 9 January 2021, killing a barangay chairman from Ungkaya Pukan and 3 companions on the spot. Officials said the attack stemmed from a rido, not the Abu Sayyaf."
+ },
+ {
+  "id": "2020-11-26-madamba-other",
+  "verdict": "ok",
+  "note": "Philstar (27 Nov 2020) confirms the UH-1D crash-landed in Madamba on Thursday with 2 pilots and 5 others hurt."
+ },
+ {
+  "id": "2020-11-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Rappler says he was shot at 1:45 pm on the Narciso Ramos Highway in Barangay Macabiso, Sultan Mastura (PNP statement of Saturday 21 Nov); the day of the shooting itself is not stated, so date left as is.",
+  "municipality": "Sultan Mastura",
+  "province": "Maguindanao del Norte",
+  "barangay": "Macabiso, Narciso Ramos Highway",
+  "title": "Former Jolo police chief shot dead in Sultan Mastura, Maguindanao",
+  "summary": "A dismissed former Jolo police chief was shot dead at 1:45 pm along the Narciso Ramos Highway in Barangay Macabiso, Sultan Mastura, Maguindanao by a gunman in another vehicle, the PNP said on Saturday, 21 November 2020. He had stepped out of his car to buy coconut juice."
+ },
+ {
+  "id": "2020-09-27-sultan-kudarat-water",
+  "verdict": "corrected",
+  "note": "Philstar (30 Sep 2020) bears out the place, day and 3 dead/1 missing; summary rewritten to drop the children's names and the unverifiable Inquirer claim (Inquirer and MindaNews blocked).",
+  "summary": "Children playing near the Simuay River in Sultan Kudarat, Maguindanao were swept away when it overflowed in heavy rain on Sunday, 27 September 2020. The bodies of 3 children aged 8 to 11 were recovered on Monday, and the search for a 5-year-old was still on as of 30 September."
+ },
+ {
+  "id": "2020-09-16-sumisip-other",
+  "verdict": "corrected",
+  "note": "Manila Bulletin (16 and 18 Sep 2020) puts the crash in a rubber plantation in Barangay Upper Manggas, Lantawan, not Sumisip; same crash as 2020-09-16-tipo-tipo-other and 2020-09-basilan-other.",
+  "municipality": "Lantawan",
+  "barangay": "Upper Manggas",
+  "title": "Air Force helicopter crashes in Lantawan, Basilan, killing 4 airmen",
+  "summary": "A Philippine Air Force Sikorsky S-76A search-and-rescue helicopter on a medevac mission to Jolo crashed in a rubber plantation in Lantawan, Basilan on Wednesday, 16 September 2020, reportedly in bad weather, killing all 4 airmen aboard. The Air Force grounded its 2 remaining Sikorsky helicopters."
+ },
+ {
+  "id": "2020-09-16-tipo-tipo-other",
+  "verdict": "unverified",
+  "note": "The only cited article (Inquirer) was blocked; other records' Manila Bulletin reports place this same crash in Lantawan, not Tipo-Tipo, so this is likely a duplicate of 2020-09-16-sumisip-other."
+ },
+ {
+  "id": "2020-09-basilan-other",
+  "verdict": "corrected",
+  "note": "Manila Bulletin (16 Sep 2020) says the S-76A crashed in Barangay Upper Manggas, Lantawan on Wednesday afternoon, all 4 aboard dead; duplicate of 2020-09-16-sumisip-other.",
+  "municipality": "Lantawan",
+  "barangay": "Upper Manggas",
+  "date": "2020-09-16",
+  "injured": 0,
+  "title": "Air Force helicopter crashes in Lantawan, Basilan, killing 4 airmen",
+  "summary": "A Philippine Air Force Sikorsky S-76A search-and-rescue helicopter bound for Jolo on a medevac mission crashed in Barangay Upper Manggas, Lantawan, Basilan on the afternoon of 16 September 2020, reportedly in bad weather. All 4 airmen aboard were found dead in the wreckage."
+ },
+ {
+  "id": "2020-07-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Philstar (Thu 2 Jul 2020) says police killed the 4 on Wednesday in Barangay Timbangan, Shariff Aguak.",
+  "municipality": "Shariff Aguak",
+  "barangay": "Timbangan",
+  "date": "2020-07-01",
+  "title": "4 Dawlah Islamiya members killed in police shootout in Shariff Aguak",
+  "summary": "Police killed 4 Dawlah Islamiya members in a brief shootout in Barangay Timbangan, Shariff Aguak, Maguindanao on Wednesday, 1 July 2020, after the men refused a vehicle inspection and drew guns. Police said they found firearms and bomb-making materials in the vehicle."
+ },
+ {
+  "id": "2020-06-tawi-tawi-shooting",
+  "verdict": "corrected",
+  "note": "SunStar Zamboanga says the suspect was killed in a buy-bust shootout in Batu-Batu village, Panglima Sugala, on Thursday 25 June 2020.",
+  "municipality": "Panglima Sugala",
+  "barangay": "Batu-Batu",
+  "date": "2020-06-25",
+  "title": "Drug suspect killed in police shootout in Panglima Sugala, Tawi-Tawi",
+  "summary": "A suspected drug dealer was killed in a buy-bust operation in Batu-Batu village, Panglima Sugala, Tawi-Tawi at about 10:45 am on Thursday, 25 June 2020, after he drew a revolver and fired at undercover police, who returned fire. He was declared dead on arrival at the rural health unit."
+ },
+ {
+  "id": "2020-05-cotabato-shooting",
+  "verdict": "unverified",
+  "note": "Every cited article was blocked or empty (Inquirer/ABS-CBN 403, PNA 404, Facebook empty); WebFetch retries were also refused."
+ },
+ {
+  "id": "2020-04-08-sultan-kudarat-road",
+  "verdict": "corrected",
+  "note": "Philstar (8 and 9 Apr 2020) bears out the place, day and toll; summary rewritten only to drop the victim's name.",
+  "summary": "A Kia light truck carrying 13 personnel of the 2nd Marine Battalion flipped and rolled over on the Cotabato–Davao Highway in Barangay Alamada, Sultan Kudarat, Maguindanao on the morning of Wednesday, 8 April 2020. A Marine corporal died on the spot and 12 other Marines were badly hurt and taken to the military hospital at Camp Siongco in Datu Odin Sinsuat."
+ },
+ {
+  "id": "2020-04-maguindanao-del-sur-road",
+  "verdict": "corrected",
+  "note": "Philstar (8 Apr 2020) places the crash on the Cotabato–Davao Highway in Barangay Alamada, Sultan Kudarat, on Wednesday morning; duplicate of 2020-04-08-sultan-kudarat-road.",
+  "municipality": "Sultan Kudarat",
+  "province": "Maguindanao del Norte",
+  "barangay": "Alamada",
+  "date": "2020-04-08",
+  "title": "Marine truck flips in Alamada, Sultan Kudarat, Maguindanao; 1 dead, 12 hurt",
+  "summary": "A light truck carrying 13 Marines flipped and rolled over on the Cotabato–Davao Highway in Barangay Alamada, Sultan Kudarat, Maguindanao on the morning of 8 April 2020. A corporal died on the spot and 12 other Marines were badly hurt."
+ },
+ {
+  "id": "2020-03-maguindanao-del-sur-fire",
+  "verdict": "corrected",
+  "note": "PressOne says an alleged fragmentation grenade exploded behind a house in Sitio Santillano, Barangay Macaviso, Sultan Mastura on a Saturday, killing 2 children; police were checking claims they were playing with a found grenade (accidental blast, not an attack). The article gives no date, so date left as is.",
+  "municipality": "Sultan Mastura",
+  "province": "Maguindanao del Norte",
+  "barangay": "Macaviso",
+  "title": "Grenade blast kills 2 children in Sultan Mastura, Maguindanao",
+  "summary": "2 children aged 7 and 5 died of shrapnel wounds hours after an alleged fragmentation grenade exploded at 2:30 pm on a Saturday behind their house in Sitio Santillano, Barangay Macaviso, Sultan Mastura, Maguindanao. Police were verifying witness claims that the children had been playing with a grenade they found."
+ },
+ {
+  "id": "2020-03-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "GMA News says the clash was in Shariff Aguak on a Monday afternoon; the article carries no date, so date left as is. Its mention of a separate ambush in Sultan Kudarat was ignored.",
+  "municipality": "Shariff Aguak",
+  "title": "Soldier and 2 Dawlah Islamiyah members killed in Shariff Aguak clash",
+  "summary": "An Army soldier and 2 members of the Dawlah Islamiyah were killed in a clash in Shariff Aguak, Maguindanao on a Monday afternoon in March 2020. The troops recovered an improvised explosive device and rifles from the site."
+ },
+ {
+  "id": "2020-02-lamitan-fire",
+  "verdict": "unverified",
+  "note": "Every cited article was blocked or empty (Inquirer/ABS-CBN 403, PNA 404, Facebook empty); WebFetch retries were also refused."
+ },
+ {
+  "id": "2020-01-tawi-tawi-water",
+  "verdict": "corrected",
+  "note": "Philstar (Thu 2 Jan 2020) says the Coast Guard in the Turtle Islands and Marines rescued the fishers on Tuesday, and the captain had a broken arm and leg.",
+  "municipality": "Turtle Islands",
+  "date": "2019-12-31",
+  "injured": 1,
+  "title": "Vietnamese fishers rescued off the Turtle Islands, Tawi-Tawi",
+  "summary": "Coast Guard personnel in the Turtle Islands and the 6th Marine Battalion rescued Vietnamese fishermen whose boat drifted into Tawi-Tawi waters after an accident on Tuesday, 31 December 2019. The boat's captain, who broke an arm and a leg, was among those flown to Camp Navarro Hospital in Zamboanga City."
+ },
+ {
+  "id": "2019-12-24-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Rappler says gunmen sprayed his car at about 1 pm on the national highway in Shariff Aguak; 2 aides died and the vice mayor was hurt.",
+  "municipality": "Shariff Aguak",
+  "barangay": "National highway",
+  "deaths": 2,
+  "injured": 1,
+  "title": "Vice mayor ambushed in Shariff Aguak, Maguindanao; 2 aides killed",
+  "summary": "Gunmen in a multicab fired on the car of Vice Mayor Akmad Mitra Ampatuan, a witness against his relatives in the Maguindanao massacre case, at about 1 pm on 24 December 2019 along the national highway in Shariff Aguak, Maguindanao. 2 of his aides were killed, and he was wounded and later reported in stable condition."
+ },
+ {
+  "id": "2019-11-bubong-fire",
+  "verdict": "unverified",
+  "note": "Every cited article was blocked or empty (Inquirer/ABS-CBN 403, PNA 404, Facebook empty); WebFetch retries were also refused."
+ },
+ {
+  "id": "2019-11-lanao-del-sur-shooting",
+  "verdict": "unverified",
+  "note": "Every cited article was blocked or empty (Inquirer/ABS-CBN 403, PNA 404, Facebook empty); WebFetch retries were also refused."
+ },
+ {
+  "id": "2019-10-marawi-shooting",
+  "verdict": "unverified",
+  "note": "Every cited article was blocked or empty (Inquirer/ABS-CBN 403, PNA 404, Facebook empty); WebFetch retries were also refused."
+ },
+ {
+  "id": "2019-09-maguindanao-del-norte-water",
+  "verdict": "unverified",
+  "note": "Every cited article was blocked or empty (Inquirer/ABS-CBN 403, PNA 404, Facebook empty); WebFetch retries were also refused."
+ },
+ {
+  "id": "2019-09-tawi-tawi-shooting",
+  "verdict": "unverified",
+  "note": "Every cited article was blocked or empty (Inquirer/ABS-CBN 403, PNA 404, Facebook empty); WebFetch retries were also refused."
+ },
+ {
+  "id": "2019-09-lanao-del-sur-shooting",
+  "verdict": "unverified",
+  "note": "Every cited article was blocked or empty (Inquirer/ABS-CBN 403, PNA 404, Facebook empty); WebFetch retries were also refused."
+ },
+ {
+  "id": "2019-09-maguindanao-del-sur-shooting",
+  "verdict": "unverified",
+  "note": "Every cited article was blocked or empty (Inquirer/ABS-CBN 403, PNA 404, Facebook empty); WebFetch retries were also refused."
+ },
+ {
+  "id": "2019-07-25-shariff-saydona-mustapha-shooting",
+  "verdict": "unverified",
+  "note": "The only cited source is a Facebook post with no text loaded."
+ },
+ {
+  "id": "2019-07-17-tamparan-other",
+  "verdict": "unverified",
+  "note": "Every cited article was blocked or empty (Inquirer/ABS-CBN 403, PNA 404, Facebook empty); WebFetch retries were also refused."
+ },
+ {
+  "id": "2019-04-tawi-tawi-water",
+  "verdict": "unverified",
+  "note": "Every cited article was blocked or empty (Inquirer/ABS-CBN 403, PNA 404, Facebook empty); WebFetch retries were also refused."
+ },
+ {
+  "id": "2019-04-basilan-shooting",
+  "verdict": "unverified",
+  "note": "Every cited article was blocked or empty (Inquirer/ABS-CBN 403, PNA 404, Facebook empty); WebFetch retries were also refused."
+ },
+ {
+  "id": "2019-04-maguindanao-del-sur-shooting",
+  "verdict": "unverified",
+  "note": "Every cited article was blocked or empty (Inquirer/ABS-CBN 403, PNA 404, Facebook empty); WebFetch retries were also refused."
+ },
+ {
+  "id": "2019-03-lanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "GMA News says 4 soldiers and 4 suspected Maute members were killed and 2 soldiers wounded when the 49th IB clashed with them in Barangay Dinaigan, Tubaran, on a Thursday; the article carries no date.",
+  "municipality": "Tubaran",
+  "barangay": "Dinaigan",
+  "deaths": 8,
+  "injured": 2,
+  "title": "4 soldiers, 4 Maute gunmen killed in Tubaran, Lanao del Sur clash",
+  "summary": "Troops of the Army's 49th Infantry Battalion clashed with about 10 suspected Maute group members in Barangay Dinaigan, Tubaran, Lanao del Sur at about 5 pm on a Thursday in March 2019. 4 soldiers and 4 of the gunmen were killed and 2 soldiers were wounded in the 90-minute fight."
+ },
+ {
+  "id": "2019-02-12-cotabato-fire",
+  "verdict": "ok",
+  "note": "GMA News bears out the Tuesday-evening fire in Purok Sibuyan, Rosary Heights, Cotabato City, with no one hurt."
+ },
+ {
+  "id": "2019-01-lanao-del-sur-shooting",
+  "verdict": "corrected",
+  "note": "Philstar (Thu 24 Jan 2019) says the 3 Maute members were killed that Thursday on the boundary of Sultan Dumalondong and Marogong towns.",
+  "municipality": "Sultan Dumalondong",
+  "barangay": "Boundary with Marogong",
+  "date": "2019-01-24",
+  "title": "3 Maute members killed in clash on Sultan Dumalondong–Marogong boundary",
+  "summary": "3 Maute group members were killed on Thursday, 24 January 2019, when they opened fire on Army troops cordoning off their lair along the boundary of Sultan Dumalondong and Marogong, Lanao del Sur. The troops were checking reports that the group's leader was in the area."
+ },
+ {
+  "id": "2023-02-27-balindong-fire",
+  "verdict": "corrected",
+  "sources": [
+   {
+    "outlet": "BARMM Official Website",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNEpXZVdjdTg4M0NkYTBpNUg1X0VLbzlvRXA4ellGR0hWb3JKVHRsVlBCUGRfU1JweXNHeS1jZFVjdEZwdGhjTXF1TktTbmdDNlBRQ1lIYnhPc0ZXbnJvY3BoZ0NJNjFJRDVYUV9seHlBaEJJOE1pNnJmOERJZ3JvT3BuOW05cEI1NUZuS3FYc2ptWC1CWV9iWUZad01yejVBcllGWHBUV09lVDdiUHY2RjJvdWZnYmx0VzVMcHNhWWpXQQ?oc=5",
+    "title": "BARMM sends emergency assistance to 42 fire-affected families in Lanao del Sur",
+    "date": "2024-03-08"
+   },
+   {
+    "outlet": "BARMM Official Website",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNS0xHbVU1M1ZoVFVSYTVEd05sREs0YVl2clJ4R1ZfWDRVaHlQX04zSTZtM29jeGNTdXU5eVhmMHQwVkJDOUxiQW9xQ2FIU2JBUzAyakpoQ1lLU2tOYmQwODEta2FwX2tfemZfV3FZYkVCVnFRUEpmUElEN0VjN3QyUnUyVjktdmMxekozU0JlOC12QlpkdTMyT0txcjltVGZyUXdUNzlKY3lDQzk2Y3FhT2s1ZFNyOWdvN2dpOXpYUQ?oc=5",
+    "title": "BARMM sends emergency assistance to 42 fire-affected families in Lanao del Sur",
+    "date": "2024-03-08"
+   }
+  ],
+  "note": "Takes the sources of the misdated 2024 record of the same fire."
+ }
+]

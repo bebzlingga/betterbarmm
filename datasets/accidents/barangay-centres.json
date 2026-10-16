@@ -309,6 +309,154 @@
    "lon": 122.0523,
    "matched": "Marang, Sumisip, Basilan, Bangsamoro, Philippines"
   },
-  "mall parking area|Cotabato City|Cotabato City": null
+  "mall parking area|Cotabato City|Cotabato City": null,
+  "Boundary with Marogong|Sultan Dumalondong|Lanao del Sur": null,
+  "Dinaigan|Tubaran|Lanao del Sur": null,
+  "National highway|Shariff Aguak|Maguindanao del Sur": {
+   "lat": 6.8515,
+   "lon": 124.4449,
+   "matched": "Maguindanao National High School, Cotabato-Koronadal Highway, Dicalongan, Shariff Aguak, Maguindanao del Sur, Bangsamoro, 9629, Philippines"
+  },
+  "Macaviso|Sultan Mastura|Maguindanao del Norte": null,
+  "Batu-Batu|Panglima Sugala|Tawi-Tawi": {
+   "lat": 5.0737,
+   "lon": 119.886,
+   "matched": "Batu-Batu, Kulape, Panglima Sugala, Tawi-Tawi, Bangsamoro, 7501, Philippines"
+  },
+  "Timbangan|Shariff Aguak|Maguindanao del Sur": null,
+  "Upper Manggas|Lantawan|Basilan": {
+   "lat": 6.6576,
+   "lon": 121.9132,
+   "matched": "Upper Manggas, Lantawan, Basilan, Bangsamoro, 7301, Philippines"
+  },
+  "Macabiso, Narciso Ramos Highway|Sultan Mastura|Maguindanao del Norte": {
+   "lat": 7.2962,
+   "lon": 124.2978,
+   "matched": "Balut Elementary School, Narciso Ramos Highway, Balut, Sultan Mastura, Maguindanao del Norte, Bangsamoro, 9636, Philippines"
+  },
+  "Banah|Tipo-Tipo|Basilan": {
+   "lat": 6.5357,
+   "lon": 122.1962,
+   "matched": "Banah, Tipo-Tipo, Basilan, Bangsamoro, 7304, Philippines"
+  },
+  "Mao|Datu Paglas|Maguindanao del Sur": {
+   "lat": 6.7161,
+   "lon": 124.9157,
+   "matched": "Mao, Datu Paglas, Maguindanao del Sur, Bangsamoro, 9617, Philippines"
+  },
+  "Kauran|Ampatuan|Maguindanao del Sur": {
+   "lat": 6.7795,
+   "lon": 124.4776,
+   "matched": "Kauran, Ampatuan, Maguindanao del Sur, Bangsamoro, 9609, Philippines"
+  },
+  "Kalumamis|Guindulungan|Maguindanao del Sur": null,
+  "Tubod|Malabang|Lanao del Sur": null,
+  "Satan|Shariff Aguak|Maguindanao del Sur": {
+   "lat": 6.8694,
+   "lon": 124.4364,
+   "matched": "Armed Forces of the Philippines, Old Capitol, Shariff Aguak, Maguindanao del Sur, Bangsamoro, 9629, Philippines"
+  },
+  "Maganda|Lamitan|Basilan": {
+   "lat": 6.6764,
+   "lon": 122.0618,
+   "matched": "Maganda, Santa Clara, Lamitan, Basilan, Bangsamoro, 7302, Philippines"
+  },
+  "Magcawa|Al-Barka|Basilan": {
+   "lat": 6.4916,
+   "lon": 122.141,
+   "matched": "Magcawa, Linuan, Al-Barka, Basilan, Bangsamoro, 7308, Philippines"
+  },
+  "Piangolongan|Marogong|Lanao del Sur": null,
+  "Sarimanok|Marawi|Lanao del Sur": {
+   "lat": 7.9951,
+   "lon": 124.292,
+   "matched": "Sarimanok Sports Stadium, Senator Alauya Alonto Avenue, Pangarungan Village, Bito Buadi Parba, Marawi, Lanao del Sur, Bangsamoro, 9700, Philippines"
+  },
+  "Ulitan|Ungkaya Pukan|Basilan": {
+   "lat": 6.4776,
+   "lon": 122.0962,
+   "matched": "Ulitan, Ungkaya Pukan, Basilan, Bangsamoro, 7311, Philippines"
+  },
+  "Rosary Heights 7|Cotabato City|Cotabato City": {
+   "lat": 7.1977,
+   "lon": 124.2445,
+   "matched": "Rosary Heights 7, Rosary Heights, Kabuntalan, Cotabato City, Bangsamoro, 9600, Philippines"
+  },
+  "Tuayan|Datu Hoffer Ampatuan|Maguindanao del Sur": null,
+  "Rosary Heights 12|Cotabato City|Cotabato City": {
+   "lat": 7.2164,
+   "lon": 124.2384,
+   "matched": "Rosary Heights 12, Bagua, Katuli, Cotabato City, Bangsamoro, 9600, Philippines"
+  },
+  "Sigayan|Kapatagan|Lanao del Sur": null,
+  "Basak|Sumisip|Basilan": {
+   "lat": 6.433,
+   "lon": 122.026,
+   "matched": "Basak, Sumisip, Basilan, Bangsamoro, Philippines"
+  },
+  "Tapurog|Piagapo|Lanao del Sur": null,
+  "Manungkaling|Mamasapano|Maguindanao del Sur": null,
+  "Sibutu Passage|Sibutu|Tawi-Tawi": null,
+  "Sinsuat Avenue and Luna Street|Cotabato City|Cotabato City": null,
+  "Luuk Pandan|Bongao|Tawi-Tawi": {
+   "lat": 5.0561,
+   "lon": 119.7605,
+   "matched": "Luuk Pandan, Bongao, Tawi-Tawi, Bangsamoro, 7500, Philippines"
+  },
+  "Rosary Heights 5|Cotabato City|Cotabato City": {
+   "lat": 7.2103,
+   "lon": 124.2489,
+   "matched": "Rosary Heights 5, Poblacion, Kabuntalan, Cotabato City, Bangsamoro, 9600, Philippines"
+  },
+  "Galakit|Pagalungan|Maguindanao del Sur": {
+   "lat": 7.0714,
+   "lon": 124.7118,
+   "matched": "Galakit, Pagalungan, Maguindanao del Sur, Bangsamoro, 9610, Philippines"
+  },
+  "East|Marogong|Lanao del Sur": {
+   "lat": 7.672,
+   "lon": 124.142,
+   "matched": "Marogong East, Marogong, Lanao del Sur, Bangsamoro, Philippines"
+  },
+  "Bagua 3|Cotabato City|Cotabato City": {
+   "lat": 7.2215,
+   "lon": 124.2429,
+   "matched": "Bagua 3, Bagua, Katuli, Cotabato City, Bangsamoro, 9600, Philippines"
+  },
+  "Umus Mataha (near San Miguel Island)|Mapun|Tawi-Tawi": null,
+  "Coastal barangays (Mompong, Badak, Kusiong, Linek)|Datu Odin Sinsuat|Maguindanao del Norte": null,
+  "Upper Capiton|Datu Odin Sinsuat|Maguindanao del Norte": {
+   "lat": 7.1562,
+   "lon": 124.2242,
+   "matched": "Upper Capiton, Tenorio, Datu Odin Sinsuat, Maguindanao del Norte, Bangsamoro, 9601, Philippines"
+  },
+  "Bacayawan|Malabang|Lanao del Sur": {
+   "lat": 7.5962,
+   "lon": 124.0734,
+   "matched": "Bacayawan, Malabang, Lanao del Sur, Bangsamoro, 9300, Philippines"
+  },
+  "Malna|Kapai|Lanao del Sur": null,
+  "Kilangan|Pagalungan|Maguindanao del Sur": {
+   "lat": 7.1773,
+   "lon": 124.7248,
+   "matched": "Kilangan, Pagalungan, Maguindanao del Sur, Bangsamoro, 9610, Philippines"
+  },
+  "Tipo-Tipo Proper|Tipo-Tipo|Basilan": {
+   "lat": 6.5013,
+   "lon": 122.123,
+   "matched": "Tipo-tipo Proper, Tipo-Tipo, Basilan, Bangsamoro, 7311, Philippines"
+  },
+  "Nuro|Upi|Maguindanao del Norte": {
+   "lat": 7.0106,
+   "lon": 124.163,
+   "matched": "Nuro, Maguindanao del Norte, Bangsamoro, 9602, Philippines"
+  },
+  "Off Sibutu Island|Sibutu|Tawi-Tawi": null,
+  "Baimbing|Lamitan|Basilan": null,
+  "Datu Paglas Highway|Datu Paglas|Maguindanao del Sur": {
+   "lat": 6.7427,
+   "lon": 124.8661,
+   "matched": "Datu Paglas Public Market, Tulunan-Datu Paglas National Highway, Poblacion, Datu Paglas, Maguindanao del Sur, Bangsamoro, 9617, Philippines"
+  }
  }
 }
