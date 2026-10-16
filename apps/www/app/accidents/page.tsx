@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import { AccidentMap } from '../_components/accident-map'
+import { AccidentOpener } from '../_components/accident-opener'
 import { Masthead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
-import { accidents, accidentsMeta, sum } from '../_lib/accidents'
+import { accidents, accidentsMeta } from '../_lib/accidents'
 import { pageMeta } from '../_lib/seo'
 
 export const metadata: Metadata = pageMeta({
@@ -13,7 +14,6 @@ export const metadata: Metadata = pageMeta({
 })
 
 export default function AccidentsPage() {
-	const deaths = sum(accidents, 'deaths')
 	return (
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader activeItem='accidents' />
@@ -24,19 +24,14 @@ export default function AccidentsPage() {
 				lines={['Where the region’s', 'accidents happen.']}
 				muted={[0]}
 				standfirst='Road crashes, boats lost at sea, fires, drownings, shootings and the rest, placed on a map from the news reports that covered them. Every mark links to the report it rests on. Nobody publishes a register of these; this is what was reported, and only that.'
-				facts={[
-					{ value: accidents.length.toLocaleString('en-PH'), label: 'incidents reported' },
-					{ value: deaths.toLocaleString('en-PH'), label: 'deaths' },
-					{ value: `${accidentsMeta.since} on`, label: 'coverage' },
-				]}
-				scrollTo='accident-map'
-				scrollLabel='To the map'
-			/>
+			>
+				<AccidentOpener incidents={accidents} />
+			</Masthead>
 
 			<section id='accident-map' className='bb-container bb-section scroll-mt-[var(--site-header-h)]'>
 				<AccidentMap incidents={accidents} />
 
-				<p className='mt-16 border-t border-[var(--rule)] pt-6 text-[13px] leading-[1.7] text-[var(--ink-3)]'>
+				<p className='mt-16 text-[13px] leading-[1.7] text-[var(--ink-3)]'>
 					{accidentsMeta.note}{' '}Shootings are the one deliberate kind carried; bombings and clan feuds are not. A dot sits on the barangay the report named where it could be located, otherwise on the town&rsquo;s centre; a report that named only the province sits faintly at the province&rsquo;s centre and adds nothing to the heat. Figures are as the last report gave them. Headlines belong to their outlets; BetterBARMM links to them and does not reproduce
 					the stories. Sulu left the region in 2024 and is not mapped. Know of an accident that is missing or wrong?{' '}
 					<a href='/report' className='underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>

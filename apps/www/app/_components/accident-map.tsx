@@ -1,8 +1,7 @@
 'use client'
 
-import { ArrowUpRightIcon, BoatIcon, CarProfileIcon, CrosshairIcon, FireIcon, MapTrifoldIcon, WarningIcon, XIcon, type Icon } from '@phosphor-icons/react'
+import { ArrowUpRightIcon, BoatIcon, CarProfileIcon, CrosshairIcon, FireIcon, WarningIcon, XIcon, type Icon } from '@phosphor-icons/react'
 import { SearchField, Select } from '@betterbarmm/editorial'
-import { barmmBoundaries } from '@betterbarmm/lgu-data'
 import dynamic from 'next/dynamic'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { ACCIDENT_TYPES, accidentDate, accidentsMeta, typeOf, type Accident, type AccidentType } from '../_lib/accidents'
@@ -35,43 +34,6 @@ const figure = (n: number) => n.toLocaleString('en-PH')
 
 /** "Kurinte, Datu Odin Sinsuat, Maguindanao del Norte" — a city that is its own province is named once. */
 const place = (a: Accident) => [a.barangay, a.municipality !== a.province ? a.municipality : null, a.province].filter(Boolean).join(', ')
-
-/* The region's outlines, as the home page draws them, with the incidents
-   on top. The frame is the boundary file's: an equirectangular projection
-   settled in datasets/lgu/scripts/build_boundaries.py, which ships no
-   constants. These four were fitted once from the towns' centres against
-   their own shapes (100 towns, median error 3 frame units of 1000) — good
-   enough to put a dot on the right island, which is all a preview owes. */
-const toX = (lon: number) => 135.12 * lon - 15935.323
-const toY = (lat: number) => -133.3897 * lat + 1141.245
-
-/** The frame cropped to the region's body. Mapun and the Turtle Islands, 200 km west of the rest, fall outside; a preview can afford that. */
-const CROP = '170 30 800 510'
-
-function Preview({ incidents }: { incidents: Accident[] }) {
-	const { areas, outside, land } = barmmBoundaries
-	return (
-		<svg viewBox={CROP} className='h-auto w-full' aria-hidden='true'>
-			<path d={land} fillRule='nonzero' className='fill-[var(--paper)]' />
-			{outside.map((area) => (
-				<path key={area.slug} d={area.d} fillRule='nonzero' className='fill-[var(--paper)]' />
-			))}
-			{areas.map((area) => (
-				<path key={area.slug} d={area.d} fillRule='nonzero' className='fill-[var(--rule)]' />
-			))}
-			{incidents.map((a) => (
-				<circle
-					key={a.id}
-					cx={toX(a.lon)}
-					cy={toY(a.lat)}
-					r={4 + Math.min(a.deaths ?? 0, 12) * 0.5}
-					style={{ fill: `var(--acc-${a.type})` }}
-					opacity={a.placed === 'province' ? 0.4 : 0.85}
-				/>
-			))}
-		</svg>
-	)
-}
 
 /** One glyph per kind, kept here rather than in the lib so the server page never loads the icon set. */
 const ICONS: Record<AccidentType, Icon> = { road: CarProfileIcon, water: BoatIcon, fire: FireIcon, shooting: CrosshairIcon, other: WarningIcon }
@@ -233,12 +195,20 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 		dialog.current?.showModal()
 	}, [])
 
-	// `#map` opens the dialog on arrival, so the map itself can be linked to.
-	// Deferred a frame: the dialog element has to exist before showModal.
+	// `#map` opens the dialog — on arrival, and whenever the masthead's door
+	// sets it — so the map can be linked to and opened from outside this
+	// component. Deferred a frame on arrival: the dialog element has to
+	// exist before showModal.
 	useEffect(() => {
-		if (window.location.hash !== '#map') return
-		const frame = requestAnimationFrame(openMap)
-		return () => cancelAnimationFrame(frame)
+		const onHash = () => {
+			if (window.location.hash === '#map') openMap()
+		}
+		const frame = requestAnimationFrame(onHash)
+		window.addEventListener('hashchange', onHash)
+		return () => {
+			cancelAnimationFrame(frame)
+			window.removeEventListener('hashchange', onHash)
+		}
 	}, [openMap])
 
 	// The dialog scrolls; the page under it should not.
@@ -324,31 +294,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 
 	return (
 		<div>
-			{/* The way in. The map is a dialog, so the page opens on a door to it. */}
-			<button
-				type='button'
-				onClick={openMap}
-				className='group grid w-full cursor-pointer gap-6 bg-[var(--paper-2)] p-6 text-left transition hover:bg-[var(--rule-soft)] md:grid-cols-[15rem_minmax(0,1fr)_auto] md:items-center md:p-8'
-			>
-				<div className='w-48 md:w-auto'>
-					<Preview incidents={incidents} />
-				</div>
-				<div>
-					<p className='bb-label'>Interactive map</p>
-					<p className='mt-1 text-[clamp(1.3rem,2.4vw,1.75rem)] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
-						Every incident on one map, with the report behind each mark.
-					</p>
-					<p className='mt-2 max-w-[44rem] text-[13px] leading-[1.7] text-[var(--ink-3)]'>
-						Heat for where it keeps happening; dots coloured by kind and sized by deaths. Filters, details and each report down the left.
-					</p>
-				</div>
-				<span className='bb-btn bb-btn-accent !px-5 !py-3 !text-[10.5px]'>
-					<MapTrifoldIcon size={15} weight='bold' aria-hidden='true' />
-					Open the map
-				</span>
-			</button>
-
-			<div className='mt-10 border-b border-[var(--rule)] py-6'>{filters(false)}</div>
+			<div className='border-b border-[var(--rule)] py-6'>{filters(false)}</div>
 
 			{/* The table view: every incident on the map, newest first, with its
 			    sources — drawn the way the registry's tables are drawn. */}
@@ -401,7 +347,11 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 
 			<dialog
 				ref={dialog}
-				onClose={() => setOpen(false)}
+				onClose={() => {
+					setOpen(false)
+					// Clear the hash on close, so the door's next click is a change again.
+					if (window.location.hash === '#map') history.replaceState(null, '', window.location.pathname + window.location.search)
+				}}
 				aria-labelledby='accident-map-title'
 				className='m-0 h-dvh max-h-none w-screen max-w-none overflow-y-auto bg-[var(--paper)] p-0 text-[var(--ink)] backdrop:bg-black/40 open:flex open:flex-col lg:overflow-hidden'
 			>
