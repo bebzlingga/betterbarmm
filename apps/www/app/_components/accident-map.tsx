@@ -302,7 +302,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 
 	return (
 		<div>
-			<div className='border-b border-[var(--rule)] pb-6'>{filters(false)}</div>
+			<div className='pb-6'>{filters(false)}</div>
 
 			{/* The table view: every incident on the map, newest first, with its
 			    sources — drawn the way the registry's tables are drawn. */}
