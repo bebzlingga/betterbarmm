@@ -124,6 +124,14 @@ function Details({ a, onClose }: { a: Accident; onClose: () => void }) {
 			<h3 className='mt-2 text-[15px] font-extrabold leading-snug tracking-[-0.01em]'>{a.title}</h3>
 			<p className='mt-1 text-[12.5px] text-[var(--ink-2)]'>{place(a)}</p>
 			{a.deaths || a.injured || a.missing ? <Counts a={a} className='mt-3 border-t border-[var(--rule)] pt-3' /> : null}
+			{a.image ? (
+				<a href={a.image.href} target='_blank' rel='noreferrer' className='group/photo mt-3 block'>
+					{/* The outlet's photo, hot-linked and credited — a thumbnail, not a reproduction. */}
+					{/* eslint-disable-next-line @next/next/no-img-element */}
+					<img src={a.image.url} alt='' loading='lazy' className='aspect-[16/9] w-full object-cover' />
+					<span className='mt-1 block text-[10.5px] text-[var(--ink-mute)] group-hover/photo:text-[var(--ink-3)]'>Photo: {a.image.outlet}</span>
+				</a>
+			) : null}
 			<p className='mt-3 text-[13px] leading-[1.6] text-[var(--ink-2)]'>{a.summary}</p>
 			<p className='mt-3 text-[11.5px] leading-[1.7] text-[var(--ink-3)]'>
 				{a.sources.length === 1 ? 'Source: ' : 'Sources: '}

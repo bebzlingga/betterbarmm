@@ -7,6 +7,11 @@ groups, places each incident (barangay through Nominatim where it can be found
 within 25 km of the town, else the town's centre), merges records that describe
 one incident, and writes the dataset.
 
+Enrichment — a later look at one record: the barangay, the day, a corrected
+toll, an outlet's own address, a photo — lives in `enrichment/*.json` as
+patches keyed by the record's id, applied after the merge so the research
+passes stay as they were written.
+
     python3 -I datasets/accidents/scripts/build_accidents.py [--no-geocode]
 """
 import glob, json, os, re, sys, time, math, urllib.parse, urllib.request, unicodedata
@@ -135,8 +140,6 @@ for path in sorted(glob.glob(os.path.join(ROOT, 'reports', '*.json'))):
                         'province': province, 'municipality': municipality, 'barangay': barangay, 'deaths': raw.get('deaths'), 'injured': raw.get('injured'), 'missing': raw.get('missing'),
                         'vehicles': raw.get('vehicles') or [], 'lat': lat, 'lon': lon, 'placed': placed, 'sources': sources, '_file': os.path.basename(path)})
 
-json.dump(CACHE, open(CACHE_PATH, 'w'), indent=1, ensure_ascii=False)
-
 # One incident once: same town, same group, dates within two days, and either a similar headline or the same death toll —
 # except for shootings, where one dead is the usual toll and only the headline can tell two apart.
 def day(d):
@@ -162,12 +165,34 @@ for r in sorted(records, key=lambda r: r['date']):
     else:
         merged.append(r)
 
-counts = {}
-for r in sorted(merged, key=lambda r: r['date'], reverse=True):
-    base = f"{r['date']}-{slug(r['municipality'] or r['province'])}-{r['type']}"
-    counts[base] = counts.get(base, 0) + 1
-    r['id'] = base if counts[base] == 1 else f'{base}-{counts[base]}'
+def assign_ids(rows):
+    counts = {}
+    for r in sorted(rows, key=lambda r: r['date'], reverse=True):
+        base = f"{r['date']}-{slug(r['municipality'] or r['province'])}-{r['type']}"
+        counts[base] = counts.get(base, 0) + 1
+        r['id'] = base if counts[base] == 1 else f'{base}-{counts[base]}'
+assign_ids(merged)
+
+# The enrichment: patches keyed by the id the merge just gave, applied on top; a patched barangay is placed like any other.
+PATCHES = {}
+for path in sorted(glob.glob(os.path.join(ROOT, 'enrichment', '*.json'))):
+    for patch in json.load(open(path)): PATCHES.setdefault(patch['id'], []).append(patch)
+patched = 0
+for r in merged:
+    for patch in PATCHES.get(r['id'], []):
+        patched += 1
+        for k in ('date', 'title', 'summary', 'deaths', 'injured', 'missing', 'vehicles', 'image'):
+            if patch.get(k) is not None: r[k] = patch[k]
+        if patch.get('barangay') and r['placed'] != 'barangay' and r['municipality']:
+            r['barangay'] = patch['barangay']
+            hit = geocode_barangay(re.sub(r'^(brgy\.?|barangay)\s*', '', patch['barangay'], flags=re.I), r['municipality'], r['province'], CENTRE[(r['province'], r['municipality'])])
+            if hit: r.update(lat=hit['lat'], lon=hit['lon'], placed='barangay')
+        seen = {s['url'] for s in r['sources']}
+        r['sources'] += [s for s in patch.get('sources') or [] if s.get('url') and s['url'] not in seen and not seen.add(s['url'])]
     r.pop('_file', None)
+if patched: print(f'{patched} patches applied from enrichment/', file=sys.stderr)
+assign_ids(merged)
+json.dump(CACHE, open(CACHE_PATH, 'w'), indent=1, ensure_ascii=False)
 merged.sort(key=lambda r: r['date'], reverse=True)
 
 out = {
@@ -175,7 +200,7 @@ out = {
     'generatedAt': date.today().isoformat(),
     'since': min(r['date'][:4] for r in merged) if merged else '2019',
     'note': 'Compiled from news reports: the outlets’ own sites, Google News’s index of them, and public Facebook posts that index carried. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.',
-    'sources': {'reports': 'datasets/accidents/reports/', 'centres': 'datasets/accidents/municipality-centres.json', 'barangays': 'datasets/accidents/barangay-centres.json'},
+    'sources': {'reports': 'datasets/accidents/reports/', 'enrichment': 'datasets/accidents/enrichment/', 'centres': 'datasets/accidents/municipality-centres.json', 'barangays': 'datasets/accidents/barangay-centres.json'},
     'incidents': merged,
 }
 json.dump(out, open(os.path.join(ROOT, 'accidents.json'), 'w'), indent=1, ensure_ascii=False)

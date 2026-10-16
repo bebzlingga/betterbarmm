@@ -41,6 +41,8 @@ export type Accident = {
 	/** Whether the dot sits on the barangay the report named, on the town's centre, or — when the report named no town — on the province's. */
 	placed: 'barangay' | 'municipality' | 'province'
 	sources: { outlet: string; url: string; title: string; date: string | null }[]
+	/** An outlet's photo of the incident, shown small and credited; the outlet's, not ours. */
+	image?: { url: string; outlet: string; href: string } | null
 }
 
 export const ACCIDENT_TYPES: { id: AccidentType; label: string; color: string; colorDark: string }[] = [

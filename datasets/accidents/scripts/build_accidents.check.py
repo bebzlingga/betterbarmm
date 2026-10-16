@@ -25,4 +25,5 @@ for a in incidents:
         assert a[k] is None or (isinstance(a[k], int) and a[k] >= 0), f"{a['id']} {k}"
     assert a['title'] and a['summary'] and a['province'], a['id']
     assert 'Sulu' != a['province'], a['id']
+    assert a.get('image') is None or (a['image']['url'].startswith('http') and a['image']['href'].startswith('http') and a['image']['outlet']), f"{a['id']} image"
 print(f"ok: {len(incidents)} incidents, {sum(a['deaths'] or 0 for a in incidents)} deaths, {sum(1 for a in incidents if a['placed'] == 'barangay')} placed at a barangay")

@@ -235,6 +235,7 @@ under-counted.
 | Town centres, from OpenStreetMap through Nominatim | `municipality-centres.json` |
 | Barangay look-ups, cached | `barangay-centres.json` |
 | Outlet addresses recovered for Google News links | `links.json` |
+| Later looks at single records — barangay, day, toll, photo — keyed by id | `enrichment/*.json` |
 | Build | `scripts/build_accidents.py` |
 
 Five kinds, one colour each on the map — road; sea, lake and river; fire
