@@ -260,10 +260,19 @@ either way the link reaches the article.
 
 To add a research pass, drop its JSON array into `reports/` in the shape
 the existing files use and run the build; it normalises town names
-against the LGU directory, folds the fine kinds into the four groups,
+against the LGU directory, folds the fine kinds into the six,
 drops anything it cannot place, merges records that describe one incident
 (same town, same kind, dates within two days or the same month when only
 the month is known, similar headline or the same death toll) and lists what it dropped.
+
+Every record was read against its own articles on 16 October 2026, through a
+headless browser that follows Google News links through to the outlet, and
+corrected from them (`enrichment/2026-10-16-verify-2019-2024.json`,
+`…-zy-verify-2.json`); duplicates the reading turned up are merged in the
+`…-dedupe` files. 18 records rest only on pages no automated reader gets past —
+Manila Bulletin, MindaNews, Facebook, PNA links that now return 404 — and
+stand as first written. `links.json` carries the outlet's own address for
+each Google News link the browser resolved.
 
 ---
 

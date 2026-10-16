@@ -1,0 +1,44 @@
+[
+ {
+  "id": "2026-01-kapai-fire",
+  "verdict": "corrected",
+  "note": "MSSD says aid was given on 6 January 2026 to 3 Kapai families whose houses a fire totally destroyed; it gives no fire date and does not tie the 7 partially damaged houses to the fire.",
+  "summary": "A fire in Kapai, Lanao del Sur totally destroyed the houses of 3 families, each granted P40,000 in Emergency Shelter Assistance by MSSD-BARMM on 6 January 2026. The fire's date, barangay, cause and casualties were not stated."
+ },
+ {
+  "id": "2020-09-16-lantawan-other-2",
+  "drop": true,
+  "note": "The same 16 September 2020 helicopter crash as 2020-09-16-lantawan-other; its sources move there."
+ },
+ {
+  "id": "2020-09-16-lantawan-other",
+  "sources": [
+   {
+    "outlet": "Inquirer",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcV9xX0ViSEhQaFJNZFRpeDFJamlCT2pIWUJhNmlrbUk0TWFqSURaTW5sY3NzYi1tYzk1V2dpR2VYN3dJclRhM3kySFBuMmVsSGNmX05xZnQtdlFnNm94RElxREZZMFBiNllGUm4yWmxNLTZLTE5wR3ZpQld3MGxCVTJ5bzVsaXdPMFBvbV9MaWdURzDSAZgBQVVfeXFMTWRrVHBVUXZHQ2tzSVE4WEloT3VjMkwtX2JnSUJ1YTdxTUhrdGI1Qng1RVBnbTBEcmtDZ0d4NFhLRHlFTlNLQXJQRG9oTmlwUzFZNE01WjFtSkcyb2pKX3JnbFhmblNqM2ZTTGRsUHpJZUlmMlJVeUlmcXhwVEhabjl5MnVBSVJ6M284Y0FzampoMW9aNjBVSl8?oc=5",
+    "title": "4 airmen killed in Basilan chopper crash identified",
+    "date": "2020-09-17"
+   }
+  ],
+  "note": "Takes the sources of its duplicate."
+ },
+ {
+  "id": "2024-06-07-cotabato-shooting",
+  "drop": true,
+  "note": "The same 7 June 2024 Cotabato City ambush on a village chief as 2024-06-07-cotabato-shooting-2; its sources move there."
+ },
+ {
+  "id": "2024-06-07-cotabato-shooting-2",
+  "sources": [
+   {
+    "outlet": "Inquirer.net",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTEdmX05OYkYwaG5pTzV0ZW5XRzg4NGp6QXhoOFZHUlRqUmlBWFNjOWdLZ1pTbDJaS1Q5Q21JQUNMU3F6Z2FBVVlxWUhRdFlKamd1cWkzbk92YjFVMnl1YVF6N1dRclZVTzBaRE1uVXh0YndqOTZYM0tXSTJrcUdPMEVxbnExa2NOUkZoekVGONIBlAFBVV95cUxQclVmdlAwWWc1UUFpRnJsOUVMVHBEdmViLTAyQ09LWHVNSER0NVA5blZnenJ3ZGpDd2lzcHVfdlptSnA1NTRxZGJWem1kdlk2cGNXVjllNkd5MEVWZHJ3M245LTRtLWcxdlJTeF9ha2pCWldvNkhqQk9SRzVIM0VzOFZVTGRSQVN0Nk5vcEhsM09fTUFs?oc=5",
+    "title": "1 of 5 persons hurt on Cotabato City ambush dies",
+    "date": "2024-06-10"
+   }
+  ],
+  "deaths": 1,
+  "injured": 4,
+  "note": "Takes the sources of its duplicate, and its later toll: 1 dead, 4 wounded."
+ }
+]
