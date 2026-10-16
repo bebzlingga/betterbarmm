@@ -1,13 +1,14 @@
 """Keep the sweep's items that read like accidents in or near BARMM; drop violence, politics and far-away places.
 With --shootings, keep the ones that read like shootings instead: a title that names a gun and a BARMM place, no bomb.
 
-    python3 -I filter_candidates.py SWEEP.jsonl CANDIDATES.json [--shootings]
+    python3 -I filter_candidates.py SWEEP.jsonl CANDIDATES.json [--shootings] [--from=2019]
 """
 import json, re, sys, collections
 SHOOTINGS = '--shootings' in sys.argv
 src, dst = [a for a in sys.argv[1:] if not a.startswith('--')]
+FROM = int(next((a[7:] for a in sys.argv if a.startswith('--from=')), 2025 if SHOOTINGS else 2019))
 rows = [json.loads(l) for l in open(src)]
-SHOOT = re.compile(r"\b(shot|shoots?|shooting|gunm[ae]n|gunfire|gunned|strafing|strafed|ambush(?:ed)?|sniper|binaril|pinagbabaril|pamamaril|rido)\b", re.I)
+SHOOT = re.compile(r"\b(shot|shoots?|shooting|gunm[ae]n|gunfire|gunned|gun attack|gunshot|riding-in-tandem|strafing|strafed|ambush(?:ed)?|sniper|binaril|pinagbabaril|pamamaril|rido)\b", re.I)
 BOMB = re.compile(r"\b(bomb|bombing|IED|grenade|blast|explosion|explode[sd]?|landmine)\b", re.I)
 ACC = re.compile(r"\b(accident|crash|crashed|collision|collide[sd]?|mishap|hit-and-run|run over|ran over|rams?|rammed|overturn|flipped|fell into|plunge[sd]?|capsiz|sank|sinks|sinking|drown|rescued|missing fisher|adrift|stranded|fire|blaze|razed|gutted|burn|explosion|explode[sd]?|LPG|firecracker|electrocut|lightning|landslide|flash ?flood|floods?|flooding|food poisoning|collapse[sd]?|aksidente|nabangga|banggaan|bumaligtad|nasunog|sunog|nalunod|lumubog|pumutok|nasawi|patay|sugatan)\b", re.I)
 VIOLENCE = re.compile(r"\b(shot|shoot|shooting|gunm[ae]n|gunfire|strafing|strafed|ambush|slain|slay|killed in attack|attack|bomb|bombing|IED|grenade|blast|terror|Abu Sayyaf|BIFF|Dawlah|rido|clan war|kidnap|abduct|encounter|clash|firefight|hostage|murder|stab|rape|drug|shabu|buy-bust|arrested|nabbed|election|poll|vote|campaign|martial law|rebel|MILF|MNLF|military operation|airstrike)\b", re.I)
@@ -28,7 +29,7 @@ for r in rows:
     if not SHOOTINGS and VIOLENCE.search(t) and not re.search(r'\b(accident|crash|capsiz|drown|LPG|firecracker|electrocut|lightning|landslide|flood|collision|mishap|aksidente|nabangga|nasunog|nalunod|lumubog)\b', t, re.I): drop['violence'] += 1; continue
     if FAR.search(t) and not BARMM.search(re.sub(FAR, '', t)): drop['far'] += 1; continue
     yr = r['pubDate'][-17:-13]
-    if yr.isdigit() and int(yr) < (2025 if SHOOTINGS else 2019): drop['too-early'] += 1; continue
+    if yr.isdigit() and int(yr) < FROM: drop['too-early'] += 1; continue
     keep.append(r)
 print('kept', len(keep), 'dropped', dict(drop), file=sys.stderr)
 json.dump(keep, open(dst, 'w'), ensure_ascii=False, indent=0)

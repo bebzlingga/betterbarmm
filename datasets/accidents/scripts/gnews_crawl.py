@@ -2,7 +2,8 @@
 Writes one JSON line per item: {q, title, link, source, pubDate, description}.
 
     python3 -I gnews_crawl.py OUT.jsonl              # accidents, 2019 on
-    python3 -I gnews_crawl.py OUT.jsonl --shootings  # shootings, 2025 on, half-year windows
+    python3 -I gnews_crawl.py OUT.jsonl --shootings  # shootings, 2025 on, quarter windows
+    python3 -I gnews_crawl.py OUT.jsonl --shootings --years=2019-2024  # any span of years
 """
 import json, re, sys, time, urllib.parse, urllib.request, html
 
@@ -18,9 +19,11 @@ GROUPS = [G_SHOOTING] if SHOOTINGS else [G_ROAD, G_WATER_FIRE, G_OTHER]
 
 PROVINCES = ['"Cotabato City"', 'Maguindanao', '"Lanao del Sur"', 'Marawi', 'Basilan', '"Tawi-Tawi"', '(BARMM OR Bangsamoro)']
 TOWNS = ['"Datu Odin Sinsuat"', '"Parang, Maguindanao"', '"Sultan Kudarat, Maguindanao"', '"Upi, Maguindanao"', 'Kabuntalan', '"Buluan"', '"Shariff Aguak"', '"Datu Piang"', '"Pagalungan"', '"Datu Paglas"', '"South Upi"', '"Ampatuan"', '"Mamasapano"', '"Malabang"', '"Wao, Lanao"', '"Balabagan"', '"Marantao"', '"Saguiaran"', '"Lake Lanao"', '"Lamitan"', '"Maluso"', '"Sumisip"', '"Tipo-Tipo"', '"Bongao"', '"Sitangkai"', '"Panglima Sugala"', '"Mapun"', '"Simunul"', '"Languyan"', '"Polloc"', '"Awang"', '"Kusiong"', '"Pikit"']
-YEARS = list(range(2025, 2027)) if SHOOTINGS else list(range(2019, 2027))
-# Shootings are frequent enough that a year of one province overruns the feed's 100 items, so they go by half-years.
-PERIODS = [(f'{y}-01-01', f'{y}-07-01') for y in YEARS] + [(f'{y}-07-01', f'{y+1}-01-01') for y in YEARS] if SHOOTINGS else [(f'{y}-01-01', f'{y+1}-01-01') for y in YEARS]
+SPAN = next((a[8:].split('-') for a in sys.argv if a.startswith('--years=')), None)
+Y0, Y1 = (int(SPAN[0]), int(SPAN[1]) + 1) if SPAN else ((2025, 2027) if SHOOTINGS else (2019, 2027))
+YEARS = list(range(Y0, Y1))
+# Shootings are frequent enough that a half-year of one province overruns the feed's 100 items, so they go by quarters.
+PERIODS = [(f'{y}-{m:02d}-01', f'{y + (m == 10)}-{(m + 3 - 1) % 12 + 1:02d}-01') for y in YEARS for m in (1, 4, 7, 10)] if SHOOTINGS else [(f'{y}-01-01', f'{y+1}-01-01') for y in YEARS]
 
 def rss(q):
     url = 'https://news.google.com/rss/search?' + urllib.parse.urlencode({'q': q, 'hl': 'en-PH', 'gl': 'PH', 'ceid': 'PH:en'})
@@ -45,15 +48,23 @@ def items(xml):
     for it in re.findall(r'<item>(.*?)</item>', xml, re.S):
         yield {'title': tag(it, 'title'), 'link': tag(it, 'link'), 'pubDate': tag(it, 'pubDate'), 'source': tag(it, 'source'), 'description': re.sub(r'<[^>]+>', ' ', tag(it, 'description'))[:300]}
 
+# Google drops the after:/before: filter, silently, once an OR-group passes about 10 terms, and answers with
+# the newest 100 items instead. So every group goes out in chunks of 6.
+def chunks(g, n=6):
+    terms = g.strip('()').split(' OR ')
+    return [f"({' OR '.join(terms[i:i + n])})" for i in range(0, len(terms), n)]
+
 queries = []
 for place in PROVINCES:
     for g in GROUPS:
-        for a, b in PERIODS:
-            queries.append(f'{place} {g} after:{a} before:{b}')
+        for c in chunks(g):
+            for a, b in PERIODS:
+                queries.append(f'{place} {c} after:{a} before:{b}')
 ALL = '(accident OR crash OR capsized OR sank OR drowned OR fire OR explosion OR electrocuted OR landslide OR aksidente OR nasunog OR nalunod OR lumubog OR nabangga)'
 for town in TOWNS:
-    for a, b in (((2025, 2027),) if SHOOTINGS else ((2019, 2023), (2023, 2027))):
-        queries.append(f'{town} {G_SHOOTING if SHOOTINGS else ALL} after:{a}-01-01 before:{b}-01-01')
+    for a in range(Y0, Y1, 2):
+        for c in chunks(G_SHOOTING if SHOOTINGS else ALL):
+            queries.append(f'{town} {c} after:{a}-01-01 before:{min(a + 2, Y1)}-01-01')
 
 seen = set()
 n = 0
