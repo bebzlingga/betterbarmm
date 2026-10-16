@@ -399,7 +399,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 						type='button'
 						onClick={() => dialog.current?.close()}
 						aria-label='Close map'
-						className='inline-flex size-9 cursor-pointer items-center justify-center border border-current transition hover:bg-[var(--ink)] hover:text-[var(--paper)]'
+						className='inline-flex size-9 cursor-pointer items-center justify-center text-[var(--ink-3)] transition hover:text-[var(--ink)]'
 					>
 						<XIcon size={16} weight='bold' aria-hidden='true' />
 					</button>
