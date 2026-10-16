@@ -215,6 +215,10 @@ for path in sorted(glob.glob(os.path.join(ROOT, 'enrichment', '*.json'))):
     assign_ids(merged)
     for r in merged: r['_ids'].add(r['id'])
 for r in merged: r.pop('_ids', None); r.pop('_file', None)
+# A Google News link to an article the record also carries at the outlet's own address is the same source twice.
+for r in merged:
+    direct = {(s['outlet'], s['title'].strip().lower()) for s in r['sources'] if 'news.google.com' not in s['url']}
+    r['sources'] = [s for s in r['sources'] if 'news.google.com' not in s['url'] or (s['outlet'], s['title'].strip().lower()) not in direct]
 if patched: print(f'{patched} patches applied from enrichment/', file=sys.stderr)
 json.dump(CACHE, open(CACHE_PATH, 'w'), indent=1, ensure_ascii=False)
 merged.sort(key=lambda r: r['date'], reverse=True)

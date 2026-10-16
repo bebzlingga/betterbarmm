@@ -241,6 +241,73 @@
    "lat": 7.0248,
    "lon": 124.3153,
    "matched": "Dalican, Datu Odin Sinsuat, Maguindanao del Norte, Bangsamoro, 9601, Philippines"
+  },
+  "Biaba Damag|Marawi|Lanao del Sur": null,
+  "Kamasi|Ampatuan|Maguindanao del Sur": null,
+  "Punud|Calanogas|Lanao del Sur": null,
+  "Taviran|Datu Odin Sinsuat|Maguindanao del Norte": {
+   "lat": 7.1188,
+   "lon": 124.3139,
+   "matched": "Taviran Elementary School, Cotabato-Koronadal Highway, Datu Odin Sinsuat, Maguindanao del Norte, Bangsamoro, 9601, Philippines"
+  },
+  "Dalumangcob|Sultan Kudarat|Maguindanao del Norte": {
+   "lat": 7.2697,
+   "lon": 124.2914,
+   "matched": "Dalumangcob, Sultan Kudarat, Maguindanao del Norte, Bangsamoro, 9605, Philippines"
+  },
+  "Campo|Paglat|Maguindanao del Sur": {
+   "lat": 6.7741,
+   "lon": 124.7632,
+   "matched": "Campo, Paglat, Maguindanao del Sur, Bangsamoro, 9632, Philippines"
+  },
+  "Lower Cabengbeng|Sumisip|Basilan": {
+   "lat": 6.4316,
+   "lon": 122.0855,
+   "matched": "Cabengbeng Lower, Sumisip, Basilan, Bangsamoro, Philippines"
+  },
+  "Himba|Tandubas|Tawi-Tawi": null,
+  "Bandara-Ingud|Pagayawan|Lanao del Sur": null,
+  "Poblacion|Paglat|Maguindanao del Sur": {
+   "lat": 6.7805,
+   "lon": 124.7856,
+   "matched": "Poblacion, Paglat, Maguindanao del Sur, Bangsamoro, 9632, Philippines"
+  },
+  "Tamontaka 4|Cotabato City|Cotabato City": {
+   "lat": 7.163,
+   "lon": 124.2875,
+   "matched": "Tamontaka 4, Cotabato City, Bangsamoro, 9600, Philippines"
+  },
+  "Macabiso|Sultan Mastura|Maguindanao del Norte": {
+   "lat": 7.2918,
+   "lon": 124.2901,
+   "matched": "Macabico, Sultan Mastura, Maguindanao del Norte, Bangsamoro, 9636, Philippines"
+  },
+  "Pembalkan|Mamasapano|Maguindanao del Sur": null,
+  "Lagayas|Tipo-Tipo|Basilan": {
+   "lat": 6.5346,
+   "lon": 122.146,
+   "matched": "Lagayas, Tipo-Tipo, Basilan, Bangsamoro, 7304, Philippines"
+  },
+  "Bagoinged|Datu Odin Sinsuat|Maguindanao del Norte": null,
+  "Tamontaka|Datu Odin Sinsuat|Maguindanao del Norte": {
+   "lat": 7.1724,
+   "lon": 124.2181,
+   "matched": "Tamontaka, Datu Odin Sinsuat, Maguindanao del Norte, Bangsamoro, 9601, Philippines"
+  },
+  "Semba|Datu Odin Sinsuat|Maguindanao del Norte": {
+   "lat": 7.1816,
+   "lon": 124.2137,
+   "matched": "Semba, Maguindanao del Norte, Bangsamoro, 9601, Philippines"
+  },
+  "Kalanganan 2|Cotabato City|Cotabato City": {
+   "lat": 7.1982,
+   "lon": 124.2045,
+   "matched": "Kalanganan 2, Cotabato City, Bangsamoro, 9600, Philippines"
+  },
+  "Marang|Sumisip|Basilan": {
+   "lat": 6.4515,
+   "lon": 122.0523,
+   "matched": "Marang, Sumisip, Basilan, Bangsamoro, Philippines"
   }
  }
 }

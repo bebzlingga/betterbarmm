@@ -1,0 +1,532 @@
+[
+ {
+  "id": "2025-02-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "municipality": "Buluan",
+  "sources": [
+   {
+    "outlet": "Inquirer",
+    "url": "https://newsinfo.inquirer.net/2033619/maguindanao-del-sur-vice-mayoral-candidate-survives-ambush",
+    "title": "Maguindanao del sur vice mayoral candidate survives ambush",
+    "date": "2025-02-11"
+   }
+  ],
+  "note": "Inquirer search snippet: Buluan vice mayoral candidate Anwar Dimasinsil was ambushed on a Tuesday morning along the national highway in Buluan; driver hit in his vest; no barangay named.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2025-09-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "municipality": "Ampatuan",
+  "barangay": "Kamasi",
+  "date": "2025-09-27",
+  "sources": [
+   {
+    "outlet": "Inquirer",
+    "url": "https://newsinfo.inquirer.net/2116553/businesswoman-shot-dead-in-maguindanao-del-sur",
+    "title": "Businesswoman shot dead in Maguindanao del Sur",
+    "date": "2025-09-28"
+   }
+  ],
+  "note": "Inquirer search snippet: gas station owner Sharra Jou Ampatuan shot near her station on the national highway in Barangay Kamasi, Ampatuan, on September 27, 2025.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-03-lanao-del-sur-shooting",
+  "verdict": "corrected",
+  "municipality": "Calanogas",
+  "barangay": "Punud",
+  "date": "2026-03-19",
+  "sources": [
+   {
+    "outlet": "Philstar",
+    "url": "https://www.philstar.com/nation/2026/03/20/2515678/maranao-peace-activist-killed-lanao-del-sur-ambush",
+    "title": "Maranao peace activist killed in Lanao del Sur ambush",
+    "date": "2026-03-20"
+   }
+  ],
+  "note": "Philstar article text (fetched): Jamail Mindalano, 59, ambushed on the Secretary Narciso Ramos Highway in Barangay Punud, Calanogas, on Thursday, March 19.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-08-maguindanao-del-norte-shooting",
+  "verdict": "corrected",
+  "municipality": "Datu Odin Sinsuat",
+  "barangay": "Taviran",
+  "sources": [
+   {
+    "outlet": "Inquirer",
+    "url": "https://newsinfo.inquirer.net/2276587/man-shot-dead-in-maguindanao-norte-amid-barmm-election-gun-ban",
+    "title": "Man shot dead in Maguindanao Norte amid BARMM election gun ban",
+    "date": "2026-08-03"
+   }
+  ],
+  "note": "Inquirer search snippet: John Salik, 49, of Dadtumeg, Kabuntalan, shot dead on his motorbike at about 10 a.m. in Sitio Tuka, Barangay Taviran, Datu Odin Sinsuat; snippet gives no day.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-08-maguindanao-del-norte-shooting-4",
+  "verdict": "corrected",
+  "municipality": "Sultan Kudarat",
+  "barangay": "Dalumangcob",
+  "date": "2026-08-22",
+  "sources": [
+   {
+    "outlet": "Inquirer",
+    "url": "https://newsinfo.inquirer.net/2289928/police-personnel-in-maguindanao-del-norte-shot-dead",
+    "title": "Police personnel in Maguindanao del Norte shot dead",
+    "date": "2026-08-22"
+   }
+  ],
+  "note": "Inquirer search snippet: non-uniformed PRO-BAR member Jonathan A. Juan of the Sultan Kudarat police station shot from behind on the national highway in Barangay Dalumangcob, Sultan Kudarat, at about 8:10 a.m. on August 22.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-09-maguindanao-del-sur-shooting",
+  "verdict": "corrected",
+  "municipality": "Paglat",
+  "barangay": "Campo",
+  "date": "2026-09-07",
+  "sources": [
+   {
+    "outlet": "Philstar",
+    "url": "https://www.philstar.com/nation/2026/09/07/2554664/2-more-men-killed-ambush-maguindanao-del-sur",
+    "title": "2 more men killed in ambush in Maguindanao del Sur",
+    "date": "2026-09-07"
+   }
+  ],
+  "note": "Philstar article text (fetched): Ebrahim Mamalinta and his relative Marquez Mamalinta ambushed on a motorcycle in Barangay Campo, Paglat, on Monday afternoon, September 7 (Philstar says 'relative', not brothers).",
+  "wrong_sources": []
+ },
+ {
+  "id": "2025-01-08-turtle-islands-water",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/106118/missing-vessel-found-in-tawitawi-passengers-crew-rescued/story",
+    "title": "Missing vessel found in Tawi-Tawi, passengers, crew rescued",
+    "date": "2025-01-14"
+   }
+  ],
+  "note": "GMA text (fetched): vessel bound for Turtle Islands found 5.4 nautical miles west of Siklangkalong Island on January 14 after engine trouble near Pangutaran Island on January 8.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2025-02-marawi-shooting",
+  "verdict": "corrected",
+  "barangay": "Biaba Damag",
+  "date": "2025-02-27",
+  "sources": [
+   {
+    "outlet": "Philstar",
+    "url": "https://www.philstar.com/nation/2025/02/28/2424886/lady-cop-shot-dead-fellow-officer-marawi-city",
+    "title": "Lady cop shot dead by fellow officer in Marawi City",
+    "date": "2025-02-28"
+   }
+  ],
+  "note": "Philstar search snippet: Patrolwoman Amerah Mamayandug shot by a fellow policewoman during an argument in Barangay Biaba Damag, Marawi City, on February 27, 2025.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2025-03-buluan-shooting",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/107259/company-exec-killed-wife-hurt-in-maguindanao-del-sur-shooting/story",
+    "title": "Company exec killed, wife hurt in Maguindanao del Sur shooting",
+    "date": "2025-03-25"
+   }
+  ],
+  "note": "GMA text (fetched): couple from Mlang, Cotabato shot by motorcycle-riding suspects along the national highway in Buluan; no barangay named.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2025-06-26-marawi-fire",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "Lanao del Sur Provincial Government",
+    "url": "https://lanaodelsur.gov.ph/quick-response-contained-early-morning-fire-in-marawi-city/",
+    "title": "Quick Response Contained Early Morning Fire in Marawi City",
+    "date": "2025-06-26"
+   }
+  ],
+  "note": "Provincial page (fetched): fire erupted in Barangay Marawi Poblacion at about 5:48 a.m. on June 26, 2025.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2025-07-malabang-fire",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "MSSD BARMM",
+    "url": "https://mssd.barmm.gov.ph/more-than-200-fire-affected-families-in-malabang-lanao-del-sur-receive-welfare-assistance/",
+    "title": "More than 200 fire-affected families in Malabang, Lanao del Sur receive welfare assistance",
+    "date": "2025-07-16"
+   }
+  ],
+  "note": "MSSD page (fetched): 227 families hit by a fire in Barangays Tiongcop and Calumbog, Malabang, received aid on July 8, 2025 at Barangay Mable; fire date not given.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2025-08-22-sapa-sapa-water",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "SunStar Zamboanga",
+    "url": "https://www.sunstar.com.ph/zamboanga/motorboat-capsizes-5-rescued-off-sapa-sapa-tawi-tawi",
+    "title": "Motorboat capsizes, 5 rescued off Sapa-Sapa, Tawi-Tawi",
+    "date": "2025-08-22"
+   }
+  ],
+  "note": "SunStar text (fetched): Sapa-Sapa MDRRMO rescued them between the islands of Mantabuan and Latuan; the boat was bound for Poblacion, Sapa-Sapa.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2025-10-06-maluso-water",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "SunStar Zamboanga",
+    "url": "https://www.sunstar.com.ph/zamboanga/20-fishermen-rescued-off-basilan-sulu",
+    "title": "20 fishermen rescued off Basilan, Sulu",
+    "date": "2025-10-07"
+   }
+  ],
+  "note": "SunStar text (fetched): FB Mona crew rescued at 7:25 a.m. October 6, 2025 between Tamok Island, Basilan and Duay Bulod Island, Sulu, with PCG Maluso, and towed to Teheem Island, Maluso; the article does not itself say Tamok Island is in Maluso.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2025-10-lamitan-shooting",
+  "verdict": "confirmed",
+  "date": "2025-10-21",
+  "sources": [
+   {
+    "outlet": "Inquirer",
+    "url": "https://newsinfo.inquirer.net/2127993/basilan-village-councilman-shot-dead-2-suspects-arrested",
+    "title": "Basilan village councilman shot dead, 2 suspects arrested",
+    "date": "2025-10-21"
+   }
+  ],
+  "note": "Inquirer search snippet: Nadzri Asdana Tarahin, councilman of Baguindan, Tipo-Tipo, shot at a bus terminal in Barangay Malinis, Lamitan City; Manila Bulletin snippet dates it October 21.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2025-12-21-marawi-shooting",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/112051/girl-rescued-hostage-taker-killed-in-marawi-city/story/",
+    "title": "Girl rescued, hostage-taker killed in Marawi City",
+    "date": "2025-12-21"
+   }
+  ],
+  "note": "GMA text (fetched): hostage-taker killed in Barangay Sabala Manao Proper, Marawi City, early Sunday, December 21, 2025.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-01-16-turtle-islands-water",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "Daily Tribune",
+    "url": "https://tribune.net.ph/2026/01/17/navy-rescues-30-from-disabled-boat",
+    "title": "Navy rescues 30 from disabled boat",
+    "date": "2026-01-17"
+   }
+  ],
+  "note": "Tribune text (fetched): BRP Juan Magluyan found the launch about 46 nautical miles east of Taganak, Tawi-Tawi, at about 9:30 p.m. Friday; Taganak is the Turtle Islands seat.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-01-25-shariff-aguak-shooting",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "SunStar",
+    "url": "https://www.sunstar.com.ph/manila/shariff-aguak-mayor-survives-ambush-gunmen-killed",
+    "title": "Shariff Aguak mayor survives ambush, gunmen killed",
+    "date": "2026-01-26"
+   }
+  ],
+  "note": "SunStar text (fetched): attack at about 6:30 a.m. along Maguindanao Street in Barangay Poblacion, Shariff Aguak; the gunmen were later cornered in Barangay Meta, Datu Unsay.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-02-15-lantawan-water",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "Manila Bulletin",
+    "url": "https://mb.com.ph/2026/02/16/pcg-rescues-2-fisherfolk-from-capsized-boat-in-basilan",
+    "title": "PCG rescues 2 fisherfolk from capsized boat in Basilan",
+    "date": "2026-02-16"
+   }
+  ],
+  "note": "Manila Bulletin search snippet: two fishers in an 8-metre boat capsized in rough seas off Lantawan, Basilan, drifted two hours and were sighted at 11 a.m.; no barangay named.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-03-23-cotabato-road",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "GMA News",
+    "url": "https://www.gmanetwork.com/news/balitambayan/promdi/981223/estudyanteng-tumatawid-sa-pedestrian-lane-tumilapon-nang-masalpok-ng-nag-overtake-na-motorsiklo/story/",
+    "title": "Estudyanteng tumatawid sa pedestrian lane, tumilapon nang masalpok ng nag-overtake na motorsiklo",
+    "date": "2026-03-24"
+   }
+  ],
+  "note": "GMA text (fetched): a Grade 12 student on a pedestrian lane in Cotabato City was hit on Monday, March 23, 2026; no barangay or street named.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-03-30-pandag-shooting",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "GMA News",
+    "url": "https://www.gmanetwork.com/news/balitambayan/promdi/982157/barangay-chairman-at-kaniyang-driver-sugatan-sa-ambush-sa-maguindanao/story/",
+    "title": "Barangay chairman at kaniyang driver, sugatan sa ambush sa Maguindanao",
+    "date": "2026-03-31"
+   }
+  ],
+  "note": "GMA text (fetched): the ambush was in Sitio Bagyang, Barangay Malangit, Pandag, on the morning of Monday, March 30, 2026.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-04-30-shariff-aguak-shooting",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/113937/1-dead-3-hurt-in-maguindanao-del-sur-shooting/story/",
+    "title": "1 dead, 3 hurt in Maguindanao del Sur shooting",
+    "date": "2026-05-01"
+   }
+  ],
+  "note": "GMA text (fetched): mechanics shot at a shop in Shariff Aguak on Thursday, April 30, 2026; the barangay (Poblacion 1) comes from the DZRH source, which I did not fetch.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-06-12-datu-hoffer-ampatuan-shooting",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "Philstar",
+    "url": "https://www.philstar.com/nation/2026/06/14/2535001/milf-leader-gunned-down",
+    "title": "MILF leader gunned down",
+    "date": "2026-06-14"
+   }
+  ],
+  "note": "Philstar text (fetched): MILF leader Abdulrahim shot at his house in Barangay Tuayan Mother, Datu Hoffer, Maguindanao del Sur, on Friday night.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-07-malabang-fire",
+  "verdict": "unverified",
+  "sources": [],
+  "note": "The only source is a LinkedIn repost via Google News; outlet and open-web searches found no article on a Malasakit Team fire aid to 30 households in Malabang, so the town comes only from the record's own source title.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-08-20-datu-saudi-ampatuan-shooting",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/115271/2-dead-1-hurt-in-maguindanao-del-sur-shooting/story/",
+    "title": "2 dead, 1 hurt in Maguindanao del Sur shooting",
+    "date": "2026-08-21"
+   }
+  ],
+  "note": "GMA text (fetched): the vehicle was fired at in Datu Saudi Ampatuan on Thursday, August 20, 2026 while going from Datu Unsay to Cotabato City; no barangay named.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-09-11-lamitan-shooting",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "Daily Tribune",
+    "url": "https://tribune.net.ph/2026/09/12/businessman-wounded-in-lamitan-drive-by-shooting",
+    "title": "Businessman wounded in Lamitan drive-by shooting",
+    "date": "2026-09-12"
+   }
+  ],
+  "note": "Tribune text (fetched): drive-by shooting at Sitio Riverside, Barangay Matibay, Lamitan City, on the evening of September 11, 2026.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2025-01-24-cotabato-fire",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/106265/fire-razes-around-180-houses-in-cotabato-city/story",
+    "title": "Fire razes around 180 houses in Cotabato City",
+    "date": "2025-01-24"
+   }
+  ],
+  "note": "GMA text (fetched): around 180 houses razed in Poblacion 7, Cotabato City, on Friday, January 24, 2025.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2025-03-17-datu-odin-sinsuat-shooting",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "Philstar",
+    "url": "https://www.philstar.com/nation/2025/03/18/2429315/female-lawyer-killed-boyfriend-lawyer-injured-maguindanao-del-norte-ambush",
+    "title": "Female lawyer killed, boyfriend lawyer injured in Maguindanao del Norte ambush",
+    "date": "2025-03-18"
+   }
+  ],
+  "note": "Philstar search snippet: ambush on the afternoon of March 17, 2025 on the highway in Barangay Awang, Datu Odin Sinsuat (Philstar spells the names Kimamaw and Pindatu).",
+  "wrong_sources": []
+ },
+ {
+  "id": "2025-08-kapai-fire",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "MSSD BARMM",
+    "url": "https://mssd.barmm.gov.ph/fire-affected-families-in-kapai-lanao-del-sur-receive-welfare-goods/",
+    "title": "Fire-affected families in Kapai, Lanao del Sur receive welfare goods",
+    "date": "2025-08-08"
+   }
+  ],
+  "note": "MSSD page (fetched): relief on August 6, 2025 to 9 families hit by a fire in Barangay Kapai Proper.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2025-11-07-maguing-fire",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "MSSD BARMM",
+    "url": "https://mssd.barmm.gov.ph/fire-victim-families-in-maguing-receive-immediate-aid-from-mssd/",
+    "title": "Fire victim families in Maguing receive immediate aid from MSSD",
+    "date": "2025-11-11"
+   }
+  ],
+  "note": "MSSD page (fetched): fire at Barangay Malungun, Maguing, on November 7, 2025.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-02-03-bongao-fire",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "SunStar Zamboanga",
+    "url": "https://www.sunstar.com.ph/zamboanga/fire-destroys-1000-houses-in-bongao-tawi-tawi",
+    "title": "Fire destroys 1,000 houses in Bongao, Tawi-Tawi",
+    "date": "2026-02-04"
+   }
+  ],
+  "note": "SunStar text (fetched): a four-hour fire destroyed about 1,000 stilt houses in Lamion, a coastal village in Bongao, on Tuesday evening, February 3, 2026.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-05-04-buadiposo-buntong-shooting",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "Inquirer",
+    "url": "https://newsinfo.inquirer.net/2223160/pnp-saf-member-killed-4-other-cops-wounded-in-lanao-del-sur-ambush",
+    "title": "PNP-SAF member killed, 4 other cops wounded in Lanao del Sur ambush",
+    "date": "2026-05-04"
+   }
+  ],
+  "note": "Inquirer search snippet: SAF team ambushed while serving a warrant in Barangay Catogonan, Buadipuso Buntong, at about 11 a.m.; one Inquirer item gives Monday, May 4, 2026.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-06-07-malabang-fire",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "MSSD BARMM",
+    "url": "https://mssd.barmm.gov.ph/relief-and-psychosocial-support-extended-to-fire-victims-in-malabang/",
+    "title": "Relief and psychosocial support extended to fire victims in Malabang",
+    "date": "2026-06-09"
+   }
+  ],
+  "note": "MSSD page (fetched): fire at about 5 p.m. on June 7, 2026 near the roundball area of Barangay Matling, Malabang; 21 structures totally and 1 partly damaged, 38 households.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-07-08-calanogas-shooting",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/114738/firefighter-dead-another-hurt-in-lanao-del-sur-gun-attack/story/",
+    "title": "Firefighter dead, another hurt in Lanao del Sur gun attack",
+    "date": "2026-07-09"
+   }
+  ],
+  "note": "GMA text (fetched): Malabang fire station pickup fired on in Barangay Bubongaranao, Calanogas, on the evening of Wednesday, July 8, 2026.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-07-14-sultan-kudarat-shooting",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/114812/radio-technician-shot-dead-in-maguindanao-del-norte/story/",
+    "title": "Radio technician shot dead in Maguindanao del Norte",
+    "date": "2026-07-15"
+   }
+  ],
+  "note": "GMA text (fetched): technician shot in Barangay Limbo, Sultan Kudarat, Maguindanao del Norte, on Tuesday, July 14, 2026.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-07-29-datu-blah-t-sinsuat-water",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "GMA News",
+    "url": "https://www.gmanetwork.com/news/topstories/regions/996801/6-passengers-of-capsized-motor-banca-rescued-in-maguindanao-del-norte-area-pcg/story",
+    "title": "6 passengers of capsized motor banca rescued in Maguindanao del Norte area — PCG",
+    "date": "2026-07-30"
+   }
+  ],
+  "note": "GMA text (fetched): motor banca capsized off Barangay Pura, Datu Blah Sinsuat, on Wednesday, July 29, 2026, going from Pura to Nalkan.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-09-23-sultan-kudarat-shooting",
+  "verdict": "confirmed",
+  "sources": [
+   {
+    "outlet": "Philstar",
+    "url": "https://www.philstar.com/nation/2026/09/24/2558626/2-soldiers-killed-maguindanao-del-norte-ambush",
+    "title": "2 soldiers killed in Maguindanao del Norte ambush",
+    "date": "2026-09-24"
+   }
+  ],
+  "note": "Philstar search snippet: Pfc. Jobert Labuson and Pfc. John Mark Dumaguing of the 7th IB ambushed on a highway in Barangay Ladia, Sultan Kudarat, Maguindanao del Norte, on the evening of September 23; the GMA 'two soldiers wounded' item could not be checked.",
+  "wrong_sources": []
+ },
+ {
+  "id": "2026-10-datu-odin-sinsuat-shooting",
+  "verdict": "confirmed",
+  "date": "2026-10-12",
+  "sources": [
+   {
+    "outlet": "Inquirer",
+    "url": "https://newsinfo.inquirer.net/2322150/village-councilor-shot-dead-in-broad-daylight-in-maguindanao-del-norte",
+    "title": "Village councilor shot dead in broad daylight in Maguindanao del Norte",
+    "date": "2026-10-12"
+   }
+  ],
+  "note": "Inquirer search snippet: Bungued kagawad Amil Beno shot in the back on the Bungued-Dalican road near the public market in Barangay Poblacion Dalican, Datu Odin Sinsuat, on Monday morning; the article is dated October 12, 2026.",
+  "wrong_sources": []
+ }
+]
