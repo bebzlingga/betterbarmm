@@ -93,7 +93,12 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 								<ul className='mt-5 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)]'>
 									{office.programs.map((p) => (
 										<li key={p.name} id={`program-${slugify(p.name)}`} className='scroll-mt-[calc(var(--site-header-h)+1rem)] py-5'>
-											<h3 className='text-[16.5px] font-bold leading-snug'>{p.name}</h3>
+											<div className='flex items-start justify-between gap-4'>
+												<h3 className='text-[16.5px] font-bold leading-snug'>{p.name}</h3>
+												<span className='shrink-0 pt-0.5'>
+													<Source url={p.source} />
+												</span>
+											</div>
 											<p className='mt-1.5 max-w-3xl text-[14.5px] leading-[1.65] text-[var(--ink-2)]'>{p.summary}</p>
 											{p.how ? (
 												<p className='mt-2 max-w-3xl text-[13.5px] leading-6'>
@@ -102,9 +107,6 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 												</p>
 											) : null}
 											<For list={p.for} />
-											<p className='mt-2'>
-												<Source url={p.source} />
-											</p>
 										</li>
 									))}
 								</ul>
