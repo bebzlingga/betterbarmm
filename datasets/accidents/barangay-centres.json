@@ -159,6 +159,83 @@
   },
   "about 46 nautical miles east of Taganak Island|Turtle Islands|Tawi-Tawi": null,
   "sea border of Simunul and Bongao|Simunul|Tawi-Tawi": null,
-  "Panoroganan|Marawi|Lanao del Sur": null
+  "Panoroganan|Marawi|Lanao del Sur": null,
+  "Poblacion 7|Cotabato City|Cotabato City": {
+   "lat": 7.2266,
+   "lon": 124.2512,
+   "matched": "Poblacion 7, Poblacion, Bulalo, Cotabato City, Bangsamoro, 9600, Philippines"
+  },
+  "5.4 nautical miles west of Siklangkalong Island|Turtle Islands|Tawi-Tawi": null,
+  "Poblacion 1|Shariff Aguak|Maguindanao del Sur": null,
+  "Catogonan|Buadiposo-Buntong|Lanao del Sur": {
+   "lat": 7.9586,
+   "lon": 124.3831,
+   "matched": "Catogonan Elementary School, Buadiposo-Buntong, Katogonan, Lanao del Sur, Bangsamoro, 9714, Philippines"
+  },
+  "Sarmiento|Parang|Maguindanao del Norte": {
+   "lat": 7.3345,
+   "lon": 124.2477,
+   "matched": "Landasan, Parang, Maguindanao del Norte, Bangsamoro, 9636, Philippines"
+  },
+  "Fort Pikit|Malidegao|Special Geographic Area": null,
+  "Uyaan Proper|Madamba|Lanao del Sur": {
+   "lat": 7.8614,
+   "lon": 124.0513,
+   "matched": "Uya-an Proper, Madamba, Lanao del Sur, Bangsamoro, Philippines"
+  },
+  "Campo Muslim|Malabang|Lanao del Sur": {
+   "lat": 7.5928,
+   "lon": 124.075,
+   "matched": "Campo Muslim, Malabang, Lanao del Sur, Bangsamoro, 9300, Philippines"
+  },
+  "Tuayan Mother|Datu Hoffer Ampatuan|Maguindanao del Sur": null,
+  "Baungis|Lantawan|Basilan": {
+   "lat": 6.6298,
+   "lon": 121.8627,
+   "matched": "Baungis, Lantawan, Basilan, Bangsamoro, 7301, Philippines"
+  },
+  "Lamin|Malabang|Lanao del Sur": null,
+  "Poblacion 8|Cotabato City|Cotabato City": {
+   "lat": 7.2215,
+   "lon": 124.2543,
+   "matched": "Poblacion, Bulalo, Cotabato City, Bangsamoro, 9600, Philippines"
+  },
+  "Bubongaranao|Calanogas|Lanao del Sur": {
+   "lat": 7.764,
+   "lon": 124.08,
+   "matched": "Bubongaranao Primary School, Calanogas, Bubonga Ranao, Lanao del Sur, Bangsamoro, Philippines"
+  },
+  "Limbo|Sultan Kudarat|Maguindanao del Norte": {
+   "lat": 7.245,
+   "lon": 124.266,
+   "matched": "Limbo, Sultan Kudarat, Maguindanao del Norte, Bangsamoro, 9605, Philippines"
+  },
+  "Rosary Heights 11|Cotabato City|Cotabato City": {
+   "lat": 7.2037,
+   "lon": 124.2297,
+   "matched": "Rosary Heights 11, Rosary Heights, Cotabato City, Bangsamoro, 9600, Philippines"
+  },
+  "Bitu|Datu Odin Sinsuat|Maguindanao del Norte": null,
+  "Balong|Tugunan|Special Geographic Area": null,
+  "Ladia|Sultan Kudarat|Maguindanao del Norte": {
+   "lat": 7.2598,
+   "lon": 124.3202,
+   "matched": "Ladia, Sultan Kudarat, Maguindanao del Norte, Bangsamoro, 9605, Philippines"
+  },
+  "Bagua 2|Cotabato City|Cotabato City": {
+   "lat": 7.2189,
+   "lon": 124.2352,
+   "matched": "Bagua 2, Bagua, Katuli, Cotabato City, Bangsamoro, 9600, Philippines"
+  },
+  "Badja|Tipo-Tipo|Basilan": {
+   "lat": 6.5556,
+   "lon": 122.1538,
+   "matched": "Badja, Tipo-Tipo, Basilan, Bangsamoro, 7311, Philippines"
+  },
+  "Sabong|Lamitan|Basilan": {
+   "lat": 6.5975,
+   "lon": 122.1687,
+   "matched": "Sabong Barangay Health Station, Sabong, Lamitan, Basilan, Bangsamoro, 7302, Philippines"
+  }
  }
 }

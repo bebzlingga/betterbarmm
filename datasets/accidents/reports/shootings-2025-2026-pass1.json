@@ -2420,22 +2420,10 @@
     "date": "2026-08-21"
    },
    {
-    "outlet": "Facebook",
-    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbW5tS2ttQ080azQySEw0UjhFaTFrd080Snk4bjBTNEsycjUtbDk5WjdIblZ6eVJWNUtndXdTQlBIYTB6d29qWTdhbU5CZ0k4ZHJZdEl5cUdFYThmd2QxeWJlOW4ydFlfVndvRzlObURLUUQ4UHpOeHlhbHAzN211VzdsOTNwSDZMWEJIQmVYMTVTUnZqbGlZcTlXejUyLWlvLU9Dbg?oc=5",
-    "title": "2 dead, 1 hurt in Maguindanao del Sur shooting",
-    "date": "2026-08-21"
-   },
-   {
     "outlet": "Daily Tribune",
     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5mRWxRR2FzUEVoTmw5RU9FTDQtU2R0dGZIZnN6ZDFqTkFDbnV1T3Y3MWpUNlZHYmRHSGk0WWh0OGY1VUo3Y1R2Tkd6MUhqZ05CRmRnN1JOVUdmbHREaEZOQzNKekd1bUM5SkNv?oc=5",
     "title": "Wife killed, husband hurt in Pagalungan ambush",
     "date": "2026-08-21"
-   },
-   {
-    "outlet": "GMA News",
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVWxWc185UXZDTFhWVnZISUZ5OXRhaHhoNVFUM0t6Z2g5TjB6ZHdna09HNUhHR1JCWFQ5QUhjY0tuYm11YmF3QUJoeEpQS0ZGWUFIXzd4MHA0MS01dHlQS3RRYjJIVmdWbHFOaXdZMy04eC1FM1l0ZGRmRjJpYzQ1R2dvNS1mYVRmdzgtVHFpaUVGZV9rSW1PdXcxTGREMldXNmRHRFBWTzQ5VEdDZl9r0gG0AUFVX3lxTE1aWjJ5WjN0Z180b1F2OG0tX2FlajE5UzNCYmtfbWVpRks3V1kyNVBLWmtVUXRiNnBLU3dDSFVmOG5lYWFuajczSXBCdm9KbG44eTJDcnloNF9nVGpnWlpiR1VXdGpGQ2RpUEhaLUVZbGo1VzFiZFhDVFhaZ0paX2pPcXJDd0dEakpxME1xYjlQM2lfVG9nTVFsR3ZfWlZYd2REXzdTNjc1NnB6UTdJbE1GUTJRUA?oc=5",
-    "title": "2 dead, 1 hurt in Maguindanao del Sur shooting",
-    "date": "2026-08-22"
    }
   ],
   "uncertain": "casualties"
@@ -3179,6 +3167,63 @@
     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOM0xmSlBaWW11a2RfU1k2UGZfSFlNWUd1TUl2MVpPMW5HZ0N0Sk11WEdWaTlOR0Itc19aODBETE1qX2FrRGJlR0lpRlFsNEtoWE5GaEhqeHE1bWhQSVd1NFN2bWtmWlNqNVhLbnptMEtJV29GQ0xPSTZJaHY5Y2s1LXpOVDRzOU1tX1E0YVl2ME1tZU1wcDBuQ3Z3UWd3dDRaYjBoaDF3emhvR2g0QVo4bmpGTzZFSERULXJENXcxTWFHSDBXcmMxVlh3?oc=5",
     "title": "Village chair shot dead in Philippines' southern-central Mindanao",
     "date": "2026-10-12"
+   }
+  ]
+ },
+ {
+  "date": "2026-10",
+  "type": "shooting",
+  "title": "Village councilor shot dead in broad daylight in Maguindanao del Norte",
+  "summary": "A village councilor was shot dead in broad daylight in Maguindanao del Norte in October 2026. The headline does not name the town.",
+  "province": "Maguindanao del Norte",
+  "municipality": null,
+  "barangay": null,
+  "deaths": 1,
+  "injured": 0,
+  "missing": 0,
+  "vehicles": [],
+  "sources": [
+   {
+    "outlet": "Inquirer",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMU9VNENudWd5WVhlcFVLZEhrRTZZR3VzaERLdTEyV1h4WE1FNHlKdzB0MEJqUVZMWldrZDFFOTNwNnoxNXFrWTBGWnU3UjJWZjBQX2htX1hkWENIN0xzYmhUUEoyRjNWS2xuYmRCRkU1RkhSc05acnBxWFhRZ29CMm9sdzRxTzZGUWFrclhDUGVaQk5JMk81TTRkem91NWlEaG1iZUNwN3prYXBU0gGyAUFVX3lxTE1GWXQ2eUU2b0JvV0ZpcDRaRnBGemFhVlp6MXdXdm9GdlZFOGdyRDZ1RTdrUTg0YnQ5MVZYTUVmeVVUSUtzWERLQ0s1OWpJeFdtSjVZRFFoQVJRZHFKLTVGeXMxb19ZcHdITU9ZOEg5TTNXeWdEUmFBRDZndTZyUGFWUUdLMWM2WHpTQ3JXaUl4RFFFVDladWlKcnUxdDZBbTlxYXFVbjdnMTNPZkY1N2wybEE?oc=5",
+    "title": "Village councilor shot dead in broad daylight in Maguindanao del Norte",
+    "date": "2026-10-12"
+   }
+  ],
+  "uncertain": "place"
+ },
+ {
+  "date": "2026-08-20",
+  "type": "shooting",
+  "title": "Gunmen fire on a vehicle bound for Cotabato City in Datu Saudi-Ampatuan; 2 dead, 1 hurt",
+  "summary": "On Thursday, 20 August 2026, motorcycle-riding gunmen fired on a vehicle travelling from Datu Unsay to Cotabato City in Datu Saudi-Ampatuan, Maguindanao del Sur, killing its 56-year-old driver and a 40-year-old companion and wounding a labourer.",
+  "province": "Maguindanao del Sur",
+  "municipality": "Datu Saudi-Ampatuan",
+  "barangay": null,
+  "deaths": 2,
+  "injured": 1,
+  "missing": 0,
+  "vehicles": [
+   "motorcycle"
+  ],
+  "sources": [
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/115271/2-dead-1-hurt-in-maguindanao-del-sur-shooting/story/",
+    "title": "2 dead, 1 hurt in Maguindanao del Sur shooting",
+    "date": "2026-08-21"
+   },
+   {
+    "outlet": "Facebook",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbW5tS2ttQ080azQySEw0UjhFaTFrd080Snk4bjBTNEsycjUtbDk5WjdIblZ6eVJWNUtndXdTQlBIYTB6d29qWTdhbU5CZ0k4ZHJZdEl5cUdFYThmd2QxeWJlOW4ydFlfVndvRzlObURLUUQ4UHpOeHlhbHAzN211VzdsOTNwSDZMWEJIQmVYMTVTUnZqbGlZcTlXejUyLWlvLU9Dbg?oc=5",
+    "title": "2 dead, 1 hurt in Maguindanao del Sur shooting",
+    "date": "2026-08-21"
+   },
+   {
+    "outlet": "GMA News",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVWxWc185UXZDTFhWVnZISUZ5OXRhaHhoNVFUM0t6Z2g5TjB6ZHdna09HNUhHR1JCWFQ5QUhjY0tuYm11YmF3QUJoeEpQS0ZGWUFIXzd4MHA0MS01dHlQS3RRYjJIVmdWbHFOaXdZMy04eC1FM1l0ZGRmRjJpYzQ1R2dvNS1mYVRmdzgtVHFpaUVGZV9rSW1PdXcxTGREMldXNmRHRFBWTzQ5VEdDZl9r0gG0AUFVX3lxTE1aWjJ5WjN0Z180b1F2OG0tX2FlajE5UzNCYmtfbWVpRks3V1kyNVBLWmtVUXRiNnBLU3dDSFVmOG5lYWFuajczSXBCdm9KbG44eTJDcnloNF9nVGpnWlpiR1VXdGpGQ2RpUEhaLUVZbGo1VzFiZFhDVFhaZ0paX2pPcXJDd0dEakpxME1xYjlQM2lfVG9nTVFsR3ZfWlZYd2REXzdTNjc1NnB6UTdJbE1GUTJRUA?oc=5",
+    "title": "2 dead, 1 hurt in Maguindanao del Sur shooting",
+    "date": "2026-08-22"
    }
   ]
  },

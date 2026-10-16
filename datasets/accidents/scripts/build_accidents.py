@@ -43,7 +43,7 @@ ALIASES = {'datu montawal': 'Pagagawan', 'sultan sumagka': 'Talitay', 'bumbaran'
            'general s k pendatun': 'Gen. S. K. Pendatun', 'cagayan de tawi tawi': 'Mapun', 'balimbing': 'Panglima Sugala', 'poon a bayabao': 'Poona Bayabao',
            'cotabato': 'Cotabato City', 'kabuntalan': 'Kabuntalan', 'north upi': 'Upi', 'datu blah sinsuat': 'Datu Blah T. Sinsuat', 'datu blah t sinsuat': 'Datu Blah T. Sinsuat',
            'shariff saydona': 'Shariff Saydona Mustapha', 'datu saudi': 'Datu Saudi-Ampatuan', 'sultan sa barongis': 'Sultan Sa Barongis', 'tagoloan': 'Tagoloan II',
-           'hadji mohammad ajul': 'Hadji Mohammad Ajul', 'hadji muhtamad': 'Hadji Muhtamad', 'lumba bayabao': 'Lumba-Bayabao', 'ditsaan ramain': 'Ditsaan-Ramain'}
+           'hadji mohammad ajul': 'Hadji Mohammad Ajul', 'buadipuso buntong': 'Buadiposo-Buntong', 'datu hoffer': 'Datu Hoffer Ampatuan', 'hadji muhtamad': 'Hadji Muhtamad', 'lumba bayabao': 'Lumba-Bayabao', 'ditsaan ramain': 'Ditsaan-Ramain'}
 # Towns of Cotabato province whose BARMM barangays became the Special Geographic Area's municipalities.
 SGA_HOST = {'pikit': 'Kadayangan', 'kabacan': 'Old Kaabakan', 'midsayap': 'Nabalawag', 'pigcawayan': 'Kapalawan', 'aleosan': 'Kapalawan', 'carmen': 'Malidegao', 'tulunan': 'Ligawasan'}
 
