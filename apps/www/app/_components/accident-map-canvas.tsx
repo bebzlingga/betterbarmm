@@ -224,7 +224,7 @@ function Layers({
 	// A row in the list asked for this incident: fly there.
 	useEffect(() => {
 		if (!map || !isLoaded || !focus) return
-		map.flyTo({ center: [focus.lon, focus.lat], zoom: Math.max(map.getZoom(), 10.5), duration: 900 })
+		map.flyTo({ center: [focus.lon, focus.lat], zoom: Math.max(map.getZoom(), 10), duration: 900 })
 	}, [map, isLoaded, focus])
 
 	return null
@@ -262,7 +262,7 @@ export default function AccidentMapCanvas({
 		)
 
 	return (
-		<Map className='h-full w-full' bounds={BOUNDS} fitBoundsOptions={FIT} minZoom={4.5} maxZoom={20}>
+		<Map className='h-full w-full' bounds={BOUNDS} fitBoundsOptions={FIT} minZoom={4.5} maxZoom={10}>
 			<Layers features={features} show={show} selectedId={selectedId} focus={focus} onSelect={onSelect} />
 			<MapControls position='top-right' showZoom />
 			<AllBarmm />
