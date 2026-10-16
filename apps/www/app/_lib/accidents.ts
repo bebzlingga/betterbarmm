@@ -54,6 +54,9 @@ export const ACCIDENT_TYPES: { id: AccidentType; label: string; color: string; c
 	{ id: 'other', label: 'Other', color: '#8a8578', colorDark: '#9a9488' },
 ]
 
+/** As close as the map zooms; dots that share a point are spaced to stand clear of one another there. */
+export const MAX_ZOOM = 10
+
 export const typeOf = (id: AccidentType) => ACCIDENT_TYPES.find((t) => t.id === id) ?? ACCIDENT_TYPES[ACCIDENT_TYPES.length - 1]!
 
 export const accidents = (dataset.incidents as Accident[]).slice().sort((a, b) => (a.date < b.date ? 1 : -1))

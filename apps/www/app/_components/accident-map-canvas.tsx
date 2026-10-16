@@ -4,7 +4,7 @@ import type { FeatureCollection, Point } from 'geojson'
 import type { GeoJSONSource, MapLayerMouseEvent } from 'maplibre-gl'
 import { useEffect, useRef, useState } from 'react'
 import outline from '../../../../datasets/accidents/barmm-outline.json'
-import { ACCIDENT_TYPES, type Accident } from '../_lib/accidents'
+import { ACCIDENT_TYPES, MAX_ZOOM, type Accident } from '../_lib/accidents'
 import { Map, MapControls, useMap } from './mapcn'
 
 /* ============================================================
@@ -224,7 +224,7 @@ function Layers({
 	// A row in the list asked for this incident: fly there.
 	useEffect(() => {
 		if (!map || !isLoaded || !focus) return
-		map.flyTo({ center: [focus.lon, focus.lat], zoom: Math.max(map.getZoom(), 10), duration: 900 })
+		map.flyTo({ center: [focus.lon, focus.lat], zoom: Math.max(map.getZoom(), MAX_ZOOM), duration: 900 })
 	}, [map, isLoaded, focus])
 
 	return null
@@ -262,7 +262,7 @@ export default function AccidentMapCanvas({
 		)
 
 	return (
-		<Map className='h-full w-full' bounds={BOUNDS} fitBoundsOptions={FIT} minZoom={4.5} maxZoom={10}>
+		<Map className='h-full w-full' bounds={BOUNDS} fitBoundsOptions={FIT} minZoom={4.5} maxZoom={MAX_ZOOM}>
 			<Layers features={features} show={show} selectedId={selectedId} focus={focus} onSelect={onSelect} />
 			<MapControls position='top-right' showZoom />
 			<AllBarmm />

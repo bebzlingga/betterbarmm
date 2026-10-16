@@ -4,7 +4,7 @@ import { ArrowUpRightIcon, BoatIcon, CaretLeftIcon, CaretRightIcon, CarProfileIc
 import { SearchField, Select } from '@betterbarmm/editorial'
 import dynamic from 'next/dynamic'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { ACCIDENT_TYPES, accidentDate, typeOf, type Accident, type AccidentType } from '../_lib/accidents'
+import { ACCIDENT_TYPES, accidentDate, MAX_ZOOM, typeOf, type Accident, type AccidentType } from '../_lib/accidents'
 import lake from '../../../../datasets/accidents/lake-lanao.json'
 import outline from '../../../../datasets/accidents/barmm-outline.json'
 import type { AccidentFeatures, Focus } from './accident-map-canvas'
@@ -164,40 +164,46 @@ function within([x, y]: [number, number], ring: Ring) {
 /** On the region's land: inside its outline (which leaves out the sea) and out of Lake Lanao (which it does not). */
 const onLand = (p: [number, number]) => !within(p, LAKE) && LAND.some(([outer, ...holes]) => within(p, outer!) && !holes.some((h) => within(p, h)))
 
-/** Incidents that share a point — a town's centre, most often — fanned out on a sunflower spiral around it, some
-    300 m apart, a dot's width at street zoom, so each can be seen and clicked; a turn of the spiral that would put a
-    dot in the lake or the sea is skipped. Worked out over every incident, not the filtered few, so a dot keeps its
-    place whatever the filters say. */
+/** A dot's radius in pixels at MAX_ZOOM, as the canvas draws it: 3.5 + 0.5 a death at zoom 5, 6 + 1.4 a death at 11. */
+const dotRadius = (a: Accident) => {
+	const d = Math.min(a.deaths ?? 0, 12)
+	const t = (MAX_ZOOM - 5) / 6
+	return 3.5 + 0.5 * d + t * (2.5 + 0.9 * d)
+}
+
+/** Every dot set down where it stands clear of the ones before it at the map's closest zoom, by both their sizes and
+    a pixel more: each starts at its own point and walks out a sunflower spiral until it is clear and on land (not the
+    sea, not Lake Lanao). The surest go first — barangay, then town, then province — so they keep their exact place.
+    Fixed on the ground, so a dot keeps its place at every zoom, and worked out over every incident, not the filtered
+    few, so it keeps it whatever the filters say. */
 function spread(incidents: Accident[]) {
-	const groups = new Map<string, Accident[]>()
-	for (const a of incidents) {
-		const key = `${a.lon.toFixed(5)},${a.lat.toFixed(5)}`
-		groups.set(key, [...(groups.get(key) ?? []), a])
-	}
+	const rank = { barangay: 0, municipality: 1, province: 2 }
+	const order = [...incidents].sort((a, b) => rank[a.placed] - rank[b.placed] || (a.id < b.id ? -1 : 1))
+	// Metres in a pixel at MAX_ZOOM, at the region's latitude: MapLibre's 512-px tiles put 78,272 m in one at zoom 0.
+	const metres = (78272 * Math.cos((7 * Math.PI) / 180)) / 2 ** MAX_ZOOM
+	const placed: { x: number; y: number; r: number }[] = []
 	const at = new Map<string, [number, number]>()
-	for (const group of groups.values()) {
-		group.sort((a, b) => (a.id < b.id ? -1 : 1))
-		if (group.length === 1) {
-			at.set(group[0]!.id, [group[0]!.lon, group[0]!.lat])
-			continue
-		}
-		let k = 0
-		for (const a of group) {
-			const shrink = Math.cos((a.lat * Math.PI) / 180)
-			let p: [number, number] = [a.lon, a.lat]
-			// ponytail: tries up to 400 turns per dot; a stack ringed by water on every side keeps its centre.
-			for (const stop = k + 400; k < stop; k++) {
-				const r = 0.0016 * Math.sqrt(k + 0.5)
-				const t = k * 2.39996 // the golden angle
-				const q: [number, number] = [a.lon + (r * Math.cos(t)) / shrink, a.lat + r * Math.sin(t)]
-				if (onLand(q)) {
-					p = q
-					k++
-					break
-				}
+	for (const a of order) {
+		const shrink = Math.cos((a.lat * Math.PI) / 180)
+		const r = dotRadius(a)
+		// The point as pixels at MAX_ZOOM, to measure clearance in.
+		const px = (lon: number, lat: number) => ({ x: (lon * 111320 * shrink) / metres, y: (lat * 111320) / metres })
+		const clear = (x: number, y: number) => placed.every((o) => Math.hypot(o.x - x, o.y - y) >= o.r + r + 1)
+		let best: [number, number] = [a.lon, a.lat]
+		// ponytail: up to 600 turns of 3 px each; a dot boxed in past that keeps its own point.
+		for (let k = 0; k < 600; k++) {
+			const step = (3 * Math.sqrt(k) * metres) / 111320
+			const t = k * 2.39996 // the golden angle
+			const q: [number, number] = [a.lon + (step * Math.cos(t)) / shrink, a.lat + step * Math.sin(t)]
+			const { x, y } = px(q[0], q[1])
+			if (clear(x, y) && (k === 0 || onLand(q))) {
+				best = q
+				break
 			}
-			at.set(a.id, p)
 		}
+		const { x, y } = px(best[0], best[1])
+		placed.push({ x, y, r })
+		at.set(a.id, best)
 	}
 	return at
 }
@@ -299,8 +305,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 	// A row asked for this incident: choose it, fly there, and open the map if it is shut.
 	const goTo = (a: Accident) => {
 		setSelectedId(a.id)
-		const [lon, lat] = at.get(a.id) ?? [a.lon, a.lat]
-		setFocus({ id: a.id, lon, lat, nonce: ++asks.current })
+		setFocus({ id: a.id, lon: a.lon, lat: a.lat, nonce: ++asks.current })
 		if (!open) openMap()
 	}
 
