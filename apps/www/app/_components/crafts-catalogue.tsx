@@ -19,23 +19,20 @@ export function CraftsCatalogue() {
 		<main className='min-h-screen bg-[#f4efe8] text-[#3b2419]'>
 			<SiteHeader activeItem='crafts' />
 
-			<section className='bg-[radial-gradient(ellipse_at_75%_0%,#a7694c,#7b4a35_45%,#4a2c22)] px-4 py-16 text-[#f4e8dc] sm:px-6 lg:py-24'>
+			<section className='bg-[radial-gradient(ellipse_at_75%_0%,#c8453a,#8f2328_45%,#4a0f14)] px-4 py-16 text-[#f4e8dc] sm:px-6 lg:py-24'>
 				<div className='mx-auto grid max-w-[84rem] items-center gap-12 lg:grid-cols-[minmax(0,1fr)_26rem]'>
 					<div>
 					<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[#e7c9a9]'>
 						{crafts.length} crafts · {peoples} peoples
 					</p>
-					<h1 className={`${serif} mt-3 max-w-3xl text-[40px] font-bold leading-[1.08] sm:text-[56px]`}>Crafts of the Bangsamoro</h1>
+					<h1 className={`${serif} mt-3 max-w-4xl text-[48px] font-bold leading-[1.04] sm:text-[68px] lg:text-[80px]`}>
+						Crafts of the
+						<br />
+						Bangsamoro
+					</h1>
 					<p className={`${serif} mt-5 max-w-2xl text-[18px] leading-[1.6] text-[#ecdccd]`}>
 						What the region weaves, casts and carves: where each piece is made, who still makes it, and where a visitor can watch it made or buy it from the hands that made it.
 					</p>
-					<nav aria-label='Kinds of craft' className='mt-9 flex flex-wrap gap-2'>
-						{groups.map(({ g, list }) => (
-							<a key={g} href={`#${g}`} className='rounded-full border border-[#e7c9a9]/40 px-4 py-1.5 text-[13.5px] transition hover:bg-white hover:text-[#3b2419]'>
-								{GROUP[g]} <span className='text-[#d9bba6]'>{list.length}</span>
-							</a>
-						))}
-					</nav>
 					</div>
 					<div className='relative hidden h-[26rem] lg:block'>
 						{cover.map((c, i) => (

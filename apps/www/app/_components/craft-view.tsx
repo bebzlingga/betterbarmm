@@ -27,7 +27,7 @@ export function CraftView({ c }: { c: Craft }) {
 			<section data-craft-tone style={toneVars(c.images[0]?.tone)} className='craft-tone flex min-h-dvh items-center bg-[linear-gradient(90deg,var(--tone-out-l)_0_63%,var(--tone-out-r)_63%_100%)] px-4 py-16 sm:px-6 lg:py-14'>
 			<div className='relative mx-auto flex w-full max-w-[84rem] flex-col overflow-hidden rounded-[10px] shadow-[0_40px_80px_-30px_rgba(30,12,5,0.7)] lg:grid lg:min-h-[calc(100dvh-7rem)] lg:grid-cols-[63fr_37fr]'>
 				<div className='flex flex-col bg-[radial-gradient(ellipse_at_70%_15%,var(--tone-glow),var(--tone-panel)_55%,var(--tone-edge))] p-7 text-[#f4e8dc] sm:p-12'>
-					<p className={`${serif} flex flex-wrap items-center gap-x-3 text-[22px] font-bold sm:text-[26px]`}>
+					<p className={`${serif} flex flex-wrap items-center gap-x-3 text-[26px] font-bold sm:text-[32px]`}>
 						<Link href='/crafts' replace className='hover:text-white'>
 							Crafts of the Bangsamoro
 						</Link>
