@@ -58,7 +58,7 @@ export function CraftView({ c }: { c: Craft }) {
 						) : null}
 					</div>
 
-					<dl className='grid gap-x-10 gap-y-6 text-[13.5px] leading-[1.6] sm:grid-cols-3 lg:w-[90%]'>
+					<dl className='flex flex-wrap gap-x-12 gap-y-6 text-[13.5px] leading-[1.6] sm:flex-nowrap'>
 						{/* Only what a source says: a spec it does not give is left out rather than guessed. */}
 						{[
 							['Made in', made],
@@ -67,7 +67,7 @@ export function CraftView({ c }: { c: Craft }) {
 						]
 							.filter(([, v]) => v)
 							.map(([k, v]) => (
-								<div key={k}>
+								<div key={k} className='min-w-0 max-w-[16rem]'>
 									<dt className={`${serif} text-[17px] font-bold text-[#f4e8dc]`}>{k}</dt>
 									<dd className='mt-2 text-[#e2cbb8]'>{v}</dd>
 								</div>
