@@ -1,0 +1,1141 @@
+{
+ "name": "Directory of the Bangsamoro Government",
+ "generatedAt": "2026-10-17",
+ "note": "Heads, numbers and emails as the offices' own pages and documents published them, each with its source and date. An email is listed only where an official page shows it as text; many sites hide theirs from automated readers. The elected Parliament takes office on 30 October 2026, and the Chief Minister and the cabinet may change with it. Confirm a number before you rely on it.",
+ "hotlines": [
+  {
+   "name": "CM-ACTS, Office of the Chief Minister: text feedback and complaints",
+   "number": "0919-160-3000",
+   "source": "https://bicto.bangsamoro.gov.ph/"
+  }
+ ],
+ "offices": [
+  {
+   "slug": "office-of-the-chief-minister",
+   "name": "Office of the Chief Minister",
+   "acronym": "OCM",
+   "head": {
+    "name": "Abdulraof A. Macacua",
+    "title": "Interim Chief Minister",
+    "as_of": "2026-10-15",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/pbbm-reaffirms-support-for-bangsamoro-self-governance-as-elected-parliament-takes-office-oct-30/"
+   },
+   "address": "Office of the Chief Minister Building, BARMM Compound, Gov. Gutierrez Avenue, Cotabato City 9600",
+   "phones": [
+    "(064) 552-2939"
+   ],
+   "emails": [
+    "osm@bangsamoro.gov.ph"
+   ],
+   "website": "https://bangsamoro.gov.ph/",
+   "facebook": "https://www.facebook.com/thebangsamorogovt/",
+   "sources": [
+    {
+     "label": "bangsamoro.gov.ph, BARMM Officials (Key Officials) page, modified 2026-06-17",
+     "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    },
+    {
+     "label": "BIO news, elected parliament takes office Oct 30, 2026-10-15",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/pbbm-reaffirms-support-for-bangsamoro-self-governance-as-elected-parliament-takes-office-oct-30/"
+    },
+    {
+     "label": "OCM Citizen's Charter 2023 (1st ed.), Office of the Chief of Staff contact",
+     "url": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf"
+    },
+    {
+     "label": "bangsamoro.gov.ph Contact Us",
+     "url": "https://bangsamoro.gov.ph/contact-us/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-basic-higher-and-technical-education",
+   "name": "Ministry of Basic, Higher and Technical Education",
+   "acronym": "MBHTE",
+   "head": {
+    "name": "Abdulraof A. Macacua",
+    "title": "Minister (concurrent; Chief Minister)",
+    "as_of": "2026-10-13",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-govt-pays-tribute-to-cotabato-citys-long-tenured-teachers/"
+   },
+   "address": "BARMM Compound, Gov. Gutierrez Ave., Cotabato City 9600",
+   "phones": [],
+   "emails": [],
+   "website": "https://mbhte.bangsamoro.gov.ph/",
+   "facebook": null,
+   "sources": [
+    {
+     "label": "BARMM news, MBHTE service awards (CM Macacua 'concurrent minister'), 2026-10-13",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-govt-pays-tribute-to-cotabato-citys-long-tenured-teachers/"
+    },
+    {
+     "label": "BARMM news, World Teachers' Day Tawi-Tawi (Acting Deputy Minister Atty. Abubakar A. Katambak), 2026-10-05",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/world-teachers-day-mbhte-honors-more-than-2000-teachers-in-tawi-tawi-celebration/"
+    },
+    {
+     "label": "bangsamoro.gov.ph Key Officials page (address; minister name blank), undated",
+     "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-health",
+   "name": "Ministry of Health",
+   "acronym": "MOH",
+   "head": {
+    "name": "Kadil \"Jojo\" Sinolinding Jr.",
+    "title": "Minister",
+    "as_of": "2026-07-19",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/first-super-health-center-in-barmm-opens-in-maguindanao-del-norte-town/"
+   },
+   "address": "Bangsamoro Government Center, Rosary Heights VII, Cotabato City 9600",
+   "phones": [
+    "(064) 552-9221",
+    "09629270584 (MOH Operation Center Hotline)"
+   ],
+   "emails": [],
+   "website": "https://moh.bangsamoro.gov.ph",
+   "facebook": "https://www.facebook.com/ministryofhealthbarmm",
+   "sources": [
+    {
+     "label": "MOH Contact Us page, 2026-10",
+     "url": "https://moh.bangsamoro.gov.ph/contact-us/"
+    },
+    {
+     "label": "bangsamoro.gov.ph, BARMM Officials (Key Officials) page, modified 2026-06-17",
+     "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    },
+    {
+     "label": "BIO news, Health Minister Sinolinding at super health center, 2026-07-19",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/first-super-health-center-in-barmm-opens-in-maguindanao-del-norte-town/"
+    },
+    {
+     "label": "BIO news, mpox advisory with MOH Operation Center Hotline, 2025-06-10",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/no-to-panicking-over-mpox-cases-in-barmm-moh/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-social-services-and-development",
+   "name": "Ministry of Social Services and Development",
+   "acronym": "MSSD",
+   "head": {
+    "name": "Atty. Raissa H. Jajurie",
+    "title": "Minister",
+    "as_of": "2026-10-13",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/athar-bangsamoro-govt-launches-book-honoring-regions-social-service-legacy/"
+   },
+   "address": "MSSD Regional Office, Bangsamoro Government Center, MSSD-BARMM, Gov. Gutierrez Ave., RH-7, Cotabato City 9600",
+   "phones": [
+    "(064) 421-5856",
+    "(064) 421-7730",
+    "+63916 139 2765",
+    "+63 915 210 4011",
+    "+63 956 932 8201",
+    "(064) 577-7159",
+    "+63917-316-1050",
+    "+63 916 578 2433",
+    "+63 948 778 6162",
+    "+63 939 905 5970",
+    "(068) 268-1006",
+    "+63917-301-8188",
+    "+63 905 905 2512"
+   ],
+   "emails": [
+    "mssd@bangsamoro.gov.ph"
+   ],
+   "website": "https://mssd.barmm.gov.ph/",
+   "facebook": "https://www.facebook.com/MSSDBangsamoro",
+   "sources": [
+    {
+     "label": "MSSD Contact Us (regional, annex and provincial offices)",
+     "url": "https://mssd.barmm.gov.ph/contact-us/"
+    },
+    {
+     "label": "MSSD Directory of Officials",
+     "url": "https://mssd.barmm.gov.ph/directory-of-officials/"
+    },
+    {
+     "label": "BARMM news, Athar book launch (Minister Jajurie), 2026-10-13",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/athar-bangsamoro-govt-launches-book-honoring-regions-social-service-legacy/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-agriculture-fisheries-and-agrarian-reform",
+   "name": "Ministry of Agriculture, Fisheries and Agrarian Reform",
+   "acronym": "MAFAR",
+   "head": {
+    "name": "Abunawas Maslamama",
+    "title": "Minister",
+    "as_of": "2026-09-30",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/five-refrigerated-vans-to-benefit-bangsamoro-fisherfolks-fresh-produce/"
+   },
+   "address": "BARMM Compound, Gov. Gutierrez Ave., Cotabato City, 9600",
+   "phones": [
+    "(064) 552-3166"
+   ],
+   "emails": [
+    "mafar@bangsamoro.gov.ph"
+   ],
+   "website": "https://mafar.bangsamoro.gov.ph/",
+   "facebook": "https://www.facebook.com/mafar.bangsamoro",
+   "sources": [
+    {
+     "label": "MAFAR Citizen's Charter rev01, 2024-06 (hotline)",
+     "url": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf"
+    },
+    {
+     "label": "MAFAR Contact Us page, 2026-10",
+     "url": "https://mafar.bangsamoro.gov.ph/contact-us/"
+    },
+    {
+     "label": "bangsamoro.gov.ph, BARMM Officials (Key Officials) page, modified 2026-06-17",
+     "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    },
+    {
+     "label": "BIO news, refrigerated vans for fisherfolk, 2026-09-30",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/five-refrigerated-vans-to-benefit-bangsamoro-fisherfolks-fresh-produce/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-public-works",
+   "name": "Ministry of Public Works",
+   "acronym": "MPW",
+   "head": {
+    "name": "Archt. Eduard Uy Guerra",
+    "title": "Minister",
+    "as_of": "2026-04-20",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/new-assembly-building-strengthens-barmm-parliament-operations/"
+   },
+   "address": "Bangsamoro Government Center (BGC), RH7, Gov. Gutierrez Avenue, Cotabato City",
+   "phones": [
+    "(064) 557-0006"
+   ],
+   "emails": [],
+   "website": "https://mpw.bangsamoro.gov.ph",
+   "facebook": "https://www.facebook.com/MPWBARMMGov",
+   "sources": [
+    {
+     "label": "MPW homepage footer (address, phone)",
+     "url": "https://mpw.bangsamoro.gov.ph/"
+    },
+    {
+     "label": "MPW Regional Officials page",
+     "url": "https://mpw.bangsamoro.gov.ph/officials/"
+    },
+    {
+     "label": "BARMM news, Regional Assembly Building turnover (Minister Guerra), 2026-04-20",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/new-assembly-building-strengthens-barmm-parliament-operations/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-the-interior-and-local-government",
+   "name": "Ministry of the Interior and Local Government",
+   "acronym": "MILG",
+   "head": {
+    "name": "Jordan S. Bayam",
+    "title": "Minister",
+    "as_of": "2026-06-30",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-expands-community-based-prevention-campaign-vs-dengue/"
+   },
+   "address": "BARMM Compound, Gov. Gutierrez Ave., Cotabato City 9600",
+   "phones": [],
+   "emails": [],
+   "website": "https://www.milgbarmm.com/",
+   "facebook": "https://www.facebook.com/MILGBangsamoro/",
+   "sources": [
+    {
+     "label": "bangsamoro.gov.ph, BARMM Officials (Key Officials) page, modified 2026-06-17",
+     "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    },
+    {
+     "label": "BIO news, CM Macacua names Bayam as interior minister, 2026-04-06",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-names-bayam-as-barmm-interior-minister/"
+    },
+    {
+     "label": "BIO news, MILG Minister Jordan Bayam signs dengue JMC, 2026-06-30",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-expands-community-based-prevention-campaign-vs-dengue/"
+    },
+    {
+     "label": "MILG website, About page",
+     "url": "https://www.milgbarmm.com/about"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-human-settlements-and-development",
+   "name": "Ministry of Human Settlements and Development",
+   "acronym": "MHSD",
+   "head": {
+    "name": "Zaide C. Ali",
+    "title": "Minister",
+    "as_of": "2026-07-22",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/mhsd-awards-p38-86-m-50-housing-units-to-former-combatants-vulnerable-families-in-maguindanao-del-norte/"
+   },
+   "address": "MHSD-BARMM Regional Office, Near COA Office, Bangsamoro Government Center, Rosary Heights VII, Cotabato City",
+   "phones": [
+    "(064) 442-5842",
+    "09557994778",
+    "09569602823",
+    "09303913023",
+    "09171560578",
+    "064-425-5388",
+    "09355647262",
+    "09171356722",
+    "09664954855"
+   ],
+   "emails": [
+    "mhsd@bangsamoro.gov.ph"
+   ],
+   "website": null,
+   "facebook": "https://www.facebook.com/ministryhsd",
+   "sources": [
+    {
+     "label": "MHSD Contact Us (regional and provincial offices)",
+     "url": "https://mhsd.bangsamoro.gov.ph/contact-us/"
+    },
+    {
+     "label": "MHSD Citizen's Charter Handbook, ed. 1, 2025-01-17 (email, phone)",
+     "url": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf"
+    },
+    {
+     "label": "MHSD homepage Key Officials",
+     "url": "https://mhsd.bangsamoro.gov.ph/"
+    },
+    {
+     "label": "BARMM news, housing awarding (Minister Zaide Ali), 2026-07-22",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/mhsd-awards-p38-86-m-50-housing-units-to-former-combatants-vulnerable-families-in-maguindanao-del-norte/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-environment-natural-resources-and-energy",
+   "name": "Ministry of Environment, Natural Resources and Energy",
+   "acronym": "MENRE",
+   "head": {
+    "name": "Akmad Brahim",
+    "title": "Minister",
+    "as_of": "2026-10-15",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/anti-illegal-logging-task-force-to-intensify-barmms-forest-protection/"
+   },
+   "address": "BARMM Compound, Rosary Heights VII, Cotabato City",
+   "phones": [
+    "(064) 421-1187"
+   ],
+   "emails": [],
+   "website": null,
+   "facebook": "https://www.facebook.com/MENREBARMM",
+   "sources": [
+    {
+     "label": "MENRE homepage FAQ and contact block, 2026-10",
+     "url": "https://menre.bangsamoro.gov.ph/"
+    },
+    {
+     "label": "bangsamoro.gov.ph, BARMM Officials (Key Officials) page, modified 2026-06-17",
+     "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    },
+    {
+     "label": "BIO news, anti-illegal logging task force, 2026-10-15",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/anti-illegal-logging-task-force-to-intensify-barmms-forest-protection/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-trade-investments-and-tourism",
+   "name": "Ministry of Trade, Investments and Tourism",
+   "acronym": "MTIT",
+   "head": {
+    "name": "Farserina Mohammad",
+    "title": "Minister",
+    "as_of": "2026-08-19",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/travel-fair-opens-new-business-opportunities-for-barmm-tourism-players/"
+   },
+   "address": "Bangsamoro Government Center, Governor Gutierrez Avenue, Rosary Heights VII, 9600 Cotabato City, Philippines",
+   "phones": [
+    "(064) 557 2819",
+    "0917.834.3330"
+   ],
+   "emails": [],
+   "website": "https://mtit.bangsamoro.gov.ph/",
+   "facebook": "https://www.facebook.com/barmmmtit",
+   "sources": [
+    {
+     "label": "MTIT About Us / footer (address, phones)",
+     "url": "https://mtit.bangsamoro.gov.ph/about-us/"
+    },
+    {
+     "label": "BARMM news, travel fair (MTIT Minister Farserina Mohammad), 2026-08-19",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/travel-fair-opens-new-business-opportunities-for-barmm-tourism-players/"
+    },
+    {
+     "label": "BARMM news, delivery riders kits (Bangsamoro DG Rosslaini Alonto-Sinarimbo), 2026-10-15",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/over-100-bangsamoro-delivery-riders-receive-essential-business-kits-from-barmm/"
+    },
+    {
+     "label": "MTIT Minister page (stale: Abuamri A. Taddik)",
+     "url": "https://mtit.bangsamoro.gov.ph/minister/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-transportation-and-communications",
+   "name": "Ministry of Transportation and Communications",
+   "acronym": "MOTC",
+   "head": {
+    "name": "Termizie G. Masahud",
+    "title": "Minister",
+    "as_of": "2026-09-09",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/motc-turns-over-nearly-p90-m-jolo-port-airport-infrastructure-projects/"
+   },
+   "address": "BARMM Compound, Rosary Height 7, Cotabato City",
+   "phones": [
+    "(064) 552-1539"
+   ],
+   "emails": [],
+   "website": "https://motc.bangsamoro.gov.ph/",
+   "facebook": "https://www.facebook.com/motcbarmm/",
+   "sources": [
+    {
+     "label": "MOTC Contact Us page, 2026-10",
+     "url": "https://motc.bangsamoro.gov.ph/contact-us/"
+    },
+    {
+     "label": "MOTC Key Officials page",
+     "url": "https://motc.bangsamoro.gov.ph/key-officials/"
+    },
+    {
+     "label": "bangsamoro.gov.ph, BARMM Officials (Key Officials) page, modified 2026-06-17",
+     "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    },
+    {
+     "label": "BIO news, Jolo port/airport turnover, 2026-09-09",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/motc-turns-over-nearly-p90-m-jolo-port-airport-infrastructure-projects/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-science-and-technology",
+   "name": "Ministry of Science and Technology",
+   "acronym": "MOST",
+   "head": {
+    "name": "Baileng S. Mantawil",
+    "title": "Minister",
+    "as_of": "2026-09-30",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/science-driven-halal-opportunities-now-more-accessible-to-bangsamoro/"
+   },
+   "address": "BARMM Complex, Cotabato City",
+   "phones": [
+    "(064) 421 8183"
+   ],
+   "emails": [],
+   "website": "https://most.bangsamoro.gov.ph",
+   "facebook": null,
+   "sources": [
+    {
+     "label": "MOST homepage footer (address, phone)",
+     "url": "https://most.bangsamoro.gov.ph/"
+    },
+    {
+     "label": "MOST Minister's Corner",
+     "url": "https://most.bangsamoro.gov.ph/ministries-corner/"
+    },
+    {
+     "label": "BARMM news, Halal summit (Minister Mantawil), 2026-09-30",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/science-driven-halal-opportunities-now-more-accessible-to-bangsamoro/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-finance-and-budget-and-management",
+   "name": "Ministry of Finance, and Budget and Management",
+   "acronym": "MFBM",
+   "head": {
+    "name": "Atty. Ubaida Pacasem",
+    "title": "Minister",
+    "as_of": "2026-06-01",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-advances-transparency-digital-reforms-in-revenue-collection/"
+   },
+   "address": "MFBM-BARMM Bldg., Bangsamoro Government Center, Gov. Gutierrez St., Cotabato City, Philippines, 9600",
+   "phones": [
+    "(064) 557 2717"
+   ],
+   "emails": [
+    "mfbm@bangsamoro.gov.ph"
+   ],
+   "website": "https://mfbm.bangsamoro.gov.ph/",
+   "facebook": "https://www.facebook.com/finance.budgetBARMM",
+   "sources": [
+    {
+     "label": "MFBM homepage contact block, 2026-10",
+     "url": "https://mfbm.bangsamoro.gov.ph/"
+    },
+    {
+     "label": "bangsamoro.gov.ph, BARMM Officials (Key Officials) page, modified 2026-06-17",
+     "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    },
+    {
+     "label": "BIO news, revenue collection reforms, 2026-06-01",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-advances-transparency-digital-reforms-in-revenue-collection/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-labor-and-employment",
+   "name": "Ministry of Labor and Employment",
+   "acronym": "MOLE",
+   "head": {
+    "name": "Muslimin G. Sema",
+    "title": "Minister",
+    "as_of": "2026-08-11",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-labor-ministry-gets-gsis-recognition-for-zero-delayed-remittances-in-2025/"
+   },
+   "address": "Ground Fl., Extension Bldg., MOLE-BARMM, Bangsamoro Government Center, Gov. Gutierrez Ave., Rosary Heights VII, Cotabato City",
+   "phones": [
+    "(064) 421-3347",
+    "+63 997 193 1330"
+   ],
+   "emails": [],
+   "website": "https://mole.bangsamoro.gov.ph/",
+   "facebook": "https://www.facebook.com/people/Ministry-of-Labor-and-Employment/61553826134522/",
+   "sources": [
+    {
+     "label": "MOLE Officials page (address, phone)",
+     "url": "https://mole.bangsamoro.gov.ph/officials/"
+    },
+    {
+     "label": "MOLE homepage header (phones)",
+     "url": "https://mole.bangsamoro.gov.ph/"
+    },
+    {
+     "label": "BARMM news, GSIS recognition (Minister Muslimin Sema), 2026-08-11",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-labor-ministry-gets-gsis-recognition-for-zero-delayed-remittances-in-2025/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-public-order-and-safety",
+   "name": "Ministry of Public Order and Safety",
+   "acronym": "MPOS",
+   "head": {
+    "name": "Hussein P. Muñoz",
+    "title": "Minister",
+    "as_of": "2026-09-07",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-security-forces-finalize-preparations-ahead-of-historic-sept-14-polls/"
+   },
+   "address": "Givfrell building, Gov. Gutierrez Ave., Cotabato City, 9600",
+   "phones": [
+    "(064) 425 5514"
+   ],
+   "emails": [],
+   "website": "https://mpos.bangsamoro.gov.ph",
+   "facebook": "https://www.facebook.com/mposbarmm",
+   "sources": [
+    {
+     "label": "MPOS Contact Us page, 2026-10",
+     "url": "https://mpos.bangsamoro.gov.ph/contact-us/"
+    },
+    {
+     "label": "bangsamoro.gov.ph, BARMM Officials (Key Officials) page, modified 2026-06-17",
+     "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    },
+    {
+     "label": "MPOS news, intra-ministry consultation naming Minister Hussein P. Muñoz, 2026-04-15",
+     "url": "https://mpos.bangsamoro.gov.ph/mpos-leads-initial-policy-talks-for-bangsamoro-public-safety-law-through-intra-ministry-consultation/"
+    },
+    {
+     "label": "BIO news, security forces finalize poll preparations, 2026-09-07",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-security-forces-finalize-preparations-ahead-of-historic-sept-14-polls/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-indigenous-peoples-affairs",
+   "name": "Ministry of Indigenous Peoples' Affairs",
+   "acronym": "MIPA",
+   "head": {
+    "name": "Guiamal Abdulrahman",
+    "title": "Minister",
+    "as_of": "2026-05-14",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/mipa-provides-legal-cash-aid-to-ip-victims-seeking-justice/"
+   },
+   "address": "BARMM Compound, Gov. Gutierrez Ave., Cotabato City 9600",
+   "phones": [],
+   "emails": [],
+   "website": null,
+   "facebook": null,
+   "sources": [
+    {
+     "label": "BARMM news, IP victims assistance (MIPA Minister Guiamal Abdulrahman), 2026-05-14",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/mipa-provides-legal-cash-aid-to-ip-victims-seeking-justice/"
+    },
+    {
+     "label": "BARMM news, water system turnover (Minister Abdulrahman), 2026-04-28",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/mipa-addresses-limited-water-access-in-ip-community-in-mag-norte/"
+    },
+    {
+     "label": "bangsamoro.gov.ph Key Officials page (address), undated",
+     "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-planning-and-development-authority",
+   "name": "Bangsamoro Planning and Development Authority",
+   "acronym": "BPDA",
+   "head": {
+    "name": "Engr. Mohajirin T. Ali",
+    "title": "Director General",
+    "as_of": "2026-07-27",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-launches-unified-monitoring-system-to-improve-government-performance/"
+   },
+   "address": null,
+   "phones": [],
+   "emails": [
+    "bpda@bangsamoro.gov.ph"
+   ],
+   "website": "https://bpda.bangsamoro.gov.ph/",
+   "facebook": "https://www.facebook.com/BPDA.Bangsamoro",
+   "sources": [
+    {
+     "label": "BPDA website header settings and Director General's Corner, 2026-10",
+     "url": "https://bpda.bangsamoro.gov.ph/about-us/director-generals-corner"
+    },
+    {
+     "label": "BIO news, unified monitoring system launch, 2026-07-27",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-launches-unified-monitoring-system-to-improve-government-performance/"
+    }
+   ]
+  },
+  {
+   "slug": "special-geographic-area-development-authority",
+   "name": "Special Geographic Area Development Authority",
+   "acronym": "SGADA",
+   "head": {
+    "name": "Butch Malang",
+    "title": "Administrator",
+    "as_of": "2026-02-27",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/sgada-hosts-ramadhan-quran-tilt-to-deepen-islamic-faith-in-sga/"
+   },
+   "address": null,
+   "phones": [],
+   "emails": [],
+   "website": null,
+   "facebook": null,
+   "sources": [
+    {
+     "label": "BARMM news, SGADA Qur'an tilt (SGADA Administrator and MP Butch Malang), 2026-02-27",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/sgada-hosts-ramadhan-quran-tilt-to-deepen-islamic-faith-in-sga/"
+    },
+    {
+     "label": "BARMM news, SGA development plan launch, 2026-01-13",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmms-sga-poised-for-inclusive-growth-as-sgada-launches-devt-plan-formulation/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-pilgrimage-authority",
+   "name": "Bangsamoro Pilgrimage Authority",
+   "acronym": "BPA",
+   "head": {
+    "name": "Sheikh Ibrahim Ali",
+    "title": "Executive Director",
+    "as_of": "2026-08-25",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-ncmf-strengthen-partnership-to-upgrade-hajj-services/"
+   },
+   "address": null,
+   "phones": [],
+   "emails": [],
+   "website": "https://bpa.bangsamoro.gov.ph/",
+   "facebook": "https://www.facebook.com/bpabarmm",
+   "sources": [
+    {
+     "label": "BIO news, Salendab and BPA ED Ibrahim Ali sworn in, 2026-05-18",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-installs-new-barmm-execs-pushes-accountability-agenda/"
+    },
+    {
+     "label": "BIO news, BARMM-NCMF Hajj partnership, 2026-08-25",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-ncmf-strengthen-partnership-to-upgrade-hajj-services/"
+    },
+    {
+     "label": "bangsamoro.gov.ph footer link to BPA Facebook",
+     "url": "https://bangsamoro.gov.ph/contact-us/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-darul-ifta",
+   "name": "Bangsamoro Darul-Ifta'",
+   "acronym": "BDI",
+   "head": {
+    "name": "Sheikh Abdulrauf Guialani",
+    "title": "Bangsamoro Mufti",
+    "as_of": "2026-07-13",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-govt-advances-standardized-zakat-governance-in-barmm/"
+   },
+   "address": null,
+   "phones": [],
+   "emails": [],
+   "website": "https://bdi.bangsamoro.gov.ph/",
+   "facebook": null,
+   "sources": [
+    {
+     "label": "BARMM news, Zakat governance consultation (Bangsamoro Mufti Sheikh Abdulrauf Guialani), 2026-07-13",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-govt-advances-standardized-zakat-governance-in-barmm/"
+    },
+    {
+     "label": "BDI website (Under Construction page)",
+     "url": "https://bdi.bangsamoro.gov.ph/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-human-rights-commission",
+   "name": "Bangsamoro Human Rights Commission",
+   "acronym": "BHRC",
+   "head": {
+    "name": "Atty. Abdul Rashid Kalim",
+    "title": "Chairperson",
+    "as_of": "2025-12-15",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-rights-body-marks-five-years-with-strong-case-resolution-rate/"
+   },
+   "address": "Bangsamoro Compound, Cotabato City, Maguindanao, Philippines",
+   "phones": [
+    "(064) 442 5261",
+    "0955 695 4655 (Basilan Provincial Office)",
+    "09650761258 (Maguindanao Provincial Office)",
+    "0918 546 0433 (Lanao del Sur Provincial Office)",
+    "(064) 5570 812 (SGA-North Cot/Cotabato City Provincial Office)",
+    "09275177692 (Sulu Provincial Office)"
+   ],
+   "emails": [
+    "bhrc@bangsamoro.gov.ph"
+   ],
+   "website": "https://bhrc.bangsamoro.gov.ph",
+   "facebook": "https://www.facebook.com/BHRCBARMM",
+   "sources": [
+    {
+     "label": "BHRC Contact Us page, 2026-10",
+     "url": "https://bhrc.bangsamoro.gov.ph/contact-us/"
+    },
+    {
+     "label": "BIO news, BHRC marks five years, 2025-12-15",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-rights-body-marks-five-years-with-strong-case-resolution-rate/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-commission-for-the-preservation-of-cultural-heritage",
+   "name": "Bangsamoro Commission for the Preservation of Cultural Heritage",
+   "acronym": "BCPCH",
+   "head": {
+    "name": "Robert M. Alonto",
+    "title": "Chairperson",
+    "as_of": "2026-05-13",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/new-bangsamoro-heritage-chief-pushes-reforms-community-based-cultural-programs/"
+   },
+   "address": "SKCC Building, Bangsamoro Government Center, Cotabato City",
+   "phones": [
+    "(064) 421-1470",
+    "(064) 552-0028"
+   ],
+   "emails": [
+    "bcpch@bangsamoro.gov.ph"
+   ],
+   "website": "https://bcpch.bangsamoro.gov.ph/",
+   "facebook": "https://www.facebook.com/BCPCHBARMMOfficial",
+   "sources": [
+    {
+     "label": "BCPCH Contact Us (address, phones)",
+     "url": "https://bcpch.bangsamoro.gov.ph/contact-us/"
+    },
+    {
+     "label": "BCPCH Regional Key Personnel",
+     "url": "https://bcpch.bangsamoro.gov.ph/regional-key-personnel/"
+    },
+    {
+     "label": "BARMM news, new heritage chief Robert Alonto assumes office 2026-05-06, published 2026-05-13",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/new-bangsamoro-heritage-chief-pushes-reforms-community-based-cultural-programs/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-women-commission",
+   "name": "Bangsamoro Women Commission",
+   "acronym": "BWC",
+   "head": {
+    "name": "Hadja Bainon G. Karon",
+    "title": "Chairperson",
+    "as_of": "2026-10-16",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/bwc-consults-basilan-womens-groups-for-grassroots-responsive-gender-policies/"
+   },
+   "address": "Bangsamoro Government Center, Rosary Heights VII, Cotabato City, BARMM 9600",
+   "phones": [
+    "(064) 421-2562"
+   ],
+   "emails": [],
+   "website": "https://bwc.bangsamoro.gov.ph/",
+   "facebook": "https://www.facebook.com/barmmwomen",
+   "sources": [
+    {
+     "label": "BWC homepage contact block, 2026-10",
+     "url": "https://bwc.bangsamoro.gov.ph/"
+    },
+    {
+     "label": "BWC news, 3rd En Banc presided by Chairperson Karon, 2026-07-22",
+     "url": "https://bwc.bangsamoro.gov.ph/bangsamoro-women-commission-bwc-convened-its-3rd-en-banc-session/"
+    },
+    {
+     "label": "BIO news, BWC consults Basilan women's groups, 2026-10-16",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/bwc-consults-basilan-womens-groups-for-grassroots-responsive-gender-policies/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-youth-commission",
+   "name": "Bangsamoro Youth Commission",
+   "acronym": "BYC",
+   "head": {
+    "name": "Nasserudin D. Dunding, MA",
+    "title": "Chairperson",
+    "as_of": "2026-08-18",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/youth-gains-development-priorities-outlined-in-7th-sobya/"
+   },
+   "address": "#003 Albert Einstein Road, Rosary Heights 7, Cotabato City, Philippines, 9600",
+   "phones": [
+    "(064) 421-7776"
+   ],
+   "emails": [
+    "byc@bangsamoro.gov.ph"
+   ],
+   "website": "https://byc.bangsamoro.gov.ph",
+   "facebook": "https://www.facebook.com/barmmyouth/",
+   "sources": [
+    {
+     "label": "BYC Contact Us",
+     "url": "https://byc.bangsamoro.gov.ph/contact-us/"
+    },
+    {
+     "label": "BYC Directory (Meet the Team)",
+     "url": "https://byc.bangsamoro.gov.ph/directory/"
+    },
+    {
+     "label": "BARMM news, 7th SOBYA (Chairperson Dunding), 2026-08-18",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/youth-gains-development-priorities-outlined-in-7th-sobya/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-sports-commission",
+   "name": "Bangsamoro Sports Commission",
+   "acronym": "BSC",
+   "head": {
+    "name": "Arsalan Diamaoden",
+    "title": "Chairperson",
+    "as_of": "2026-07-13",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/barmms-sports-commission-awards-p495k-incentives-to-palarong-pambansa-medalists-coaches/"
+   },
+   "address": "2nd Floor Carumba Building, Jupiter Street, Rosary Heights IX, Cotabato City",
+   "phones": [
+    "064-421-1135"
+   ],
+   "emails": [],
+   "website": "https://bsc.bangsamoro.gov.ph/",
+   "facebook": null,
+   "sources": [
+    {
+     "label": "BSC Contact Us page, 2026-10",
+     "url": "https://bsc.bangsamoro.gov.ph/contact-us/"
+    },
+    {
+     "label": "BSC Official Address page",
+     "url": "https://bsc.bangsamoro.gov.ph/bsc-address/"
+    },
+    {
+     "label": "BIO news, Palarong Pambansa incentives, 2026-07-13",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmms-sports-commission-awards-p495k-incentives-to-palarong-pambansa-medalists-coaches/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-attorney-general-s-office",
+   "name": "Bangsamoro Attorney-General's Office",
+   "acronym": "BAGO",
+   "head": {
+    "name": "Atty. Bantuas M. Lucman",
+    "title": "Attorney General",
+    "as_of": "2026-10-13",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/league-of-bangsamoro-lawyers-vows-stronger-legal-network-in-barmm/"
+   },
+   "address": "Governor Gutierrez Avenue, RH VII, BGC, Cotabato City, Maguindanao del Norte",
+   "phones": [
+    "(064) 552-1053",
+    "(064) 421-5436",
+    "(064) 552-3299",
+    "09951841445"
+   ],
+   "emails": [
+    "bago@bangsamoro.gov.ph"
+   ],
+   "website": "https://bago.bangsamoro.gov.ph/",
+   "facebook": "https://www.facebook.com/agobarmm",
+   "sources": [
+    {
+     "label": "BAGO Contact page (address, phone)",
+     "url": "https://bago.bangsamoro.gov.ph/content/contact/"
+    },
+    {
+     "label": "BAGO Attorney General page",
+     "url": "https://bago.bangsamoro.gov.ph/content/attorney-general/"
+    },
+    {
+     "label": "OCM Citizen's Charter 1st Edition 2023, BAGO section (email, extension office phones, SMS)",
+     "url": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf"
+    },
+    {
+     "label": "BARMM news, Legal Liaison Network (Attorney General Lucman), 2026-10-13",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/league-of-bangsamoro-lawyers-vows-stronger-legal-network-in-barmm/"
+    }
+   ]
+  },
+  {
+   "slug": "cooperatives-and-social-enterprise-authority",
+   "name": "Cooperatives and Social Enterprise Authority",
+   "acronym": "CSEA",
+   "head": {
+    "name": "Samcia Ibrahim",
+    "title": "Executive Director",
+    "as_of": "2026-10-08",
+    "source": "https://csea.bangsamoro.gov.ph/strengthening-governance-and-accountability-for-a-more-sustainable-barmm/"
+   },
+   "address": "JICA Building, BCG, Gov. Gutierrez Ave., Brgy. RH XII, Cotabato City 9600",
+   "phones": [],
+   "emails": [
+    "csea@bangsamoro.gov.ph"
+   ],
+   "website": "https://csea.bangsamoro.gov.ph",
+   "facebook": "https://www.facebook.com/p/Cooperatives-and-Social-Enterprise-Authority-BARMM-61557757138570",
+   "sources": [
+    {
+     "label": "CSEA Contacts page, 2026-10",
+     "url": "https://csea.bangsamoro.gov.ph/contacts/"
+    },
+    {
+     "label": "CSEA news, ED Samcia Ibrahim at zakat round table, 2026-10-08",
+     "url": "https://csea.bangsamoro.gov.ph/strengthening-governance-and-accountability-for-a-more-sustainable-barmm/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-information-office",
+   "name": "Bangsamoro Information Office",
+   "acronym": "BIO",
+   "head": {
+    "name": "Ameen Andrew Alonto",
+    "title": "Executive Director",
+    "as_of": "2026-07-01",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/lakbay-aral-introduces-lanao-del-sur-youth-to-bangsamoro-governance-peace-journey/"
+   },
+   "address": null,
+   "phones": [],
+   "emails": [],
+   "website": null,
+   "facebook": "https://www.facebook.com/biobarmm",
+   "sources": [
+    {
+     "label": "BARMM news, Lakbay Aral (BIO Executive Director Ameen Andrew Alonto), 2026-07-01",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/lakbay-aral-introduces-lanao-del-sur-youth-to-bangsamoro-governance-peace-journey/"
+    },
+    {
+     "label": "bangsamoro.gov.ph homepage (links facebook.com/biobarmm)",
+     "url": "https://bangsamoro.gov.ph/"
+    }
+   ]
+  },
+  {
+   "slug": "development-academy-of-the-bangsamoro",
+   "name": "Development Academy of the Bangsamoro",
+   "acronym": "DAB",
+   "head": {
+    "name": "Nasrudin Yusof",
+    "title": "Executive Director",
+    "as_of": "2026-01-26",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/partnerships-seek-to-widen-public-understanding-of-islamic-finance-in-barmm/"
+   },
+   "address": null,
+   "phones": [
+    "552-01-73"
+   ],
+   "emails": [],
+   "website": "https://dab.bangsamoro.gov.ph/",
+   "facebook": "https://www.facebook.com/dab.bangsamoro",
+   "sources": [
+    {
+     "label": "DAB Contact Us page, 2026-10",
+     "url": "https://dab.bangsamoro.gov.ph/contact-us/"
+    },
+    {
+     "label": "BIO news, Islamic finance partnerships, 2026-01-26",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/partnerships-seek-to-widen-public-understanding-of-islamic-finance-in-barmm/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-information-and-communications-technology-office",
+   "name": "Bangsamoro Information and Communications Technology Office",
+   "acronym": "BICTO",
+   "head": {
+    "name": "Jonathan M. Mantikayan, Ph.D.IT",
+    "title": "Executive Director II",
+    "as_of": "2026-06-14",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/bicto-showcases-research-innovation-to-advance-digital-transformation-in-barmm/"
+   },
+   "address": "Bangsamoro Government Center, Gov. Gutierrez Ave., Cotabato City, Philippines",
+   "phones": [],
+   "emails": [],
+   "website": "https://bicto.bangsamoro.gov.ph",
+   "facebook": "https://www.facebook.com/BangsamoroICTO",
+   "sources": [
+    {
+     "label": "BICTO Contact Us",
+     "url": "https://bicto.bangsamoro.gov.ph/pages/contact-us.html"
+    },
+    {
+     "label": "BICTO Executive Director's Corner",
+     "url": "https://bicto.bangsamoro.gov.ph/pages/executive-directors-corner.html"
+    },
+    {
+     "label": "BARMM news, BICTO research showcase (ED Jonathan Mantikayan), 2026-06-14",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/bicto-showcases-research-innovation-to-advance-digital-transformation-in-barmm/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-board-of-investments",
+   "name": "Bangsamoro Board of Investments",
+   "acronym": "BBOI",
+   "head": {
+    "name": "Mohamad Omar Pasigan",
+    "title": "Chairperson",
+    "as_of": "2026-07-13",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-expands-global-investment-push-brunei-agency-eyes-partnership/"
+   },
+   "address": null,
+   "phones": [
+    "(064) 421-1591"
+   ],
+   "emails": [],
+   "website": "https://bboi.bangsamoro.gov.ph/",
+   "facebook": "https://www.facebook.com/bboibarmm",
+   "sources": [
+    {
+     "label": "BBOI website (under construction page with phone and Facebook), 2026-10",
+     "url": "https://bboi.bangsamoro.gov.ph/"
+    },
+    {
+     "label": "BIO news, Brunei agency partnership, 2026-07-13",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-expands-global-investment-push-brunei-agency-eyes-partnership/"
+    }
+   ]
+  },
+  {
+   "slug": "office-for-settler-communities",
+   "name": "Office for Settler Communities",
+   "acronym": "OSC",
+   "head": {
+    "name": "Dr. Susana Salvador-Anayatin",
+    "title": "Executive Director",
+    "as_of": "2026-05-12",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/settler-entrepreneurs-benefit-from-barmms-livelihood-assistance-program/"
+   },
+   "address": "Ground Floor, CNX 2 Building, Bishop Mongeau Avenue, Notre Dame Village, Barangay Rosary Heights 8, Cotabato City, Philippines",
+   "phones": [
+    "+63 977 045 5600"
+   ],
+   "emails": [],
+   "website": "https://osc.bangsamoro.gov.ph/",
+   "facebook": "https://www.facebook.com/OfficeforSettlerCommunitiesOCM/",
+   "sources": [
+    {
+     "label": "OSC homepage footer (address, phone, Facebook)",
+     "url": "https://osc.bangsamoro.gov.ph/"
+    },
+    {
+     "label": "OSC Our Team & Structure / Director's Corner",
+     "url": "https://osc.bangsamoro.gov.ph/OurTeamandStructure.html"
+    },
+    {
+     "label": "BARMM news, settler entrepreneurs (OSC Director Susana Anayatin), 2026-05-12",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/settler-entrepreneurs-benefit-from-barmms-livelihood-assistance-program/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-science-high-school",
+   "name": "Bangsamoro Science High School",
+   "acronym": "BSHS",
+   "head": {
+    "name": "Engr. Abdulrakman Asim",
+    "title": "Interim Campus Director",
+    "as_of": "2024-09-05",
+    "source": "https://most.bangsamoro.gov.ph/most-barmm-holds-4th-bshs-board-of-trustees-meeting/"
+   },
+   "address": null,
+   "phones": [],
+   "emails": [],
+   "website": "https://bshs.bangsamoro.gov.ph",
+   "facebook": null,
+   "sources": [
+    {
+     "label": "MOST news, 4th BSHS Board of Trustees meeting, 2024-09-05",
+     "url": "https://most.bangsamoro.gov.ph/most-barmm-holds-4th-bshs-board-of-trustees-meeting/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-agriculture-and-fisheries-training-institute",
+   "name": "Bangsamoro Agriculture and Fisheries Training Institute",
+   "acronym": "BAFTI",
+   "head": null,
+   "address": null,
+   "phones": [],
+   "emails": [],
+   "website": null,
+   "facebook": null,
+   "sources": [
+    {
+     "label": "BARMM news, BTA passes BAFTI Act (Parliament Bill No. 39), 2024-07-24",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/bill-creating-agri-fishery-training-institute-to-enhance-food-sufficiency-in-barmm/"
+    }
+   ]
+  },
+  {
+   "slug": "office-of-the-wali-of-bangsamoro",
+   "name": "Office of the Wali of Bangsamoro",
+   "acronym": null,
+   "head": {
+    "name": "Sheikh Muslim Guiamaden",
+    "title": "Wali",
+    "as_of": "2026-08-14",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/new-p15-b-bangsamoro-govt-center-to-rise-in-parang-maguindanao-del-norte/"
+   },
+   "address": null,
+   "phones": [],
+   "emails": [],
+   "website": "https://wali.bangsamoro.gov.ph/",
+   "facebook": null,
+   "sources": [
+    {
+     "label": "Office of the Wali website (under construction, Facebook link), 2026-10",
+     "url": "https://wali.bangsamoro.gov.ph/"
+    },
+    {
+     "label": "BIO news, new Bangsamoro Government Center groundbreaking, 2026-08-14",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/new-p15-b-bangsamoro-govt-center-to-rise-in-parang-maguindanao-del-norte/"
+    }
+   ]
+  }
+ ]
+}

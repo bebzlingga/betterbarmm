@@ -42,6 +42,7 @@ spent is not published by anyone, and is not here. See [Gaps](#what-is-not-here)
 | Local government | `datasets/lgu/` | 79 MB, 16 files | Provinces, towns, barangays, officials |
 | Accidents | `datasets/accidents/` | small | Accidents and shootings, from news reports; 2019 on |
 | Programs & services | `datasets/services/` | small | 35 offices' programs and Citizen's Charter services |
+| Directory | `datasets/directory/` | small | Heads, phones and emails of the 35 regional offices |
 | Travel guide | `packages/travel-data/` | — | **Written**, not captured |
 | Region primer | `packages/primer-data/` | — | **Written**, not captured |
 
@@ -295,6 +296,24 @@ whose only source had gone were left out. Two offices' sites carry injected
 spam links (MHSD, MENRE) and one is gone (MIPA): none is offered as the
 office's website. Audiences are a fixed list of 27 tags, in
 `apps/www/app/_lib/services.ts`.
+
+---
+
+## Directory — `datasets/directory/`
+
+The same 35 offices as Programs and services, keyed by the same slugs: who
+heads each, with the date and page of the newest official source naming them,
+and the phones, emails, address, website and Facebook page the office
+publishes. Read on 17 October 2026: 34 heads (the Bangsamoro Agriculture and
+Fisheries Training Institute is a bill, not yet an office), 54 numbers in 22
+offices, 11 emails.
+
+An email is kept only where an official page or document shows it as text;
+most office sites hide theirs from automated readers, and those are not
+decoded. The elected Parliament takes office on 30 October 2026, so the Chief
+Minister and the cabinet named here are the interim government's. The page's
+local governments are not in this file: they are the 2025 winners already in
+`datasets/lgu/barmm-lgu.json`.
 
 ---
 
