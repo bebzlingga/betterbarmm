@@ -8,7 +8,8 @@ export function DirectoryDialog({ id, name, children }: { id: string; name: stri
 			name={name}
 			home='/directory'
 			frame='panel'
-			className='bg-[var(--paper)] text-[var(--ink)] backdrop:bg-black/60'
+			// Tighter than a page: a shorter masthead, less space around each section, narrower sides.
+			className='bg-[var(--paper)] text-[var(--ink)] backdrop:bg-black/60 [--bb-rhythm:2.5rem] [&_.bb-container]:px-5! md:[&_.bb-container]:px-8! [&_.brand-bg_.bb-container]:py-10!'
 			// On a small white disc, so the mark reads over the red masthead and the white page alike.
 			closeClassName='rounded-full bg-white/95 text-[#191713] shadow-[0_6px_18px_-8px_rgba(0,0,0,0.45)]'
 		>
