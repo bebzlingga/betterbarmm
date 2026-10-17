@@ -206,3 +206,45 @@ export function WorkspaceIndex({ workspaces }: { workspaces: Workspace[] }) {
 		</div>
 	)
 }
+
+/**
+ * The same workspaces, compact: the live ones as slim rows — glyph, name, what it
+ * covers, two lines of what it holds — and the rest as one cell of names. The
+ * front page's index, where the full cards took a screen and a half to say
+ * five things.
+ */
+export function WorkspaceList({ workspaces }: { workspaces: Workspace[] }) {
+  const live = workspaces.filter((w) => w.state === 'live' && w.href)
+  const coming = workspaces.filter((w) => !(w.state === 'live' && w.href))
+  return (
+    <div>
+      <ul className='grid gap-px overflow-hidden border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-2 lg:grid-cols-3'>
+        {live.map((w) => {
+          const Glyph = ICONS[w.label]
+          return (
+            <li key={w.label} className='bg-[var(--paper)]'>
+              <a href={w.href} className='group flex h-full gap-3.5 p-4 transition duration-200 hover:bg-[var(--paper-2)]'>
+                {Glyph ? <Glyph size={22} weight='duotone' aria-hidden='true' className='mt-0.5 shrink-0 text-[var(--accent)]' /> : null}
+                <span className='min-w-0 flex-1'>
+                  <span className='flex items-baseline justify-between gap-3'>
+                    <span className='text-[16px] font-extrabold tracking-[-0.02em] group-hover:text-[var(--accent)]'>{w.label}</span>
+                    <ArrowUpRightIcon className='size-3.5 shrink-0 text-[var(--ink-3)] transition duration-200 group-hover:text-[var(--accent)]' aria-hidden='true' />
+                  </span>
+                  <span className='block font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>{w.measure}</span>
+                  <span className='mt-1.5 line-clamp-2 text-[13.5px] leading-[1.55] text-[var(--ink-2)]'>{w.blurb}</span>
+                </span>
+              </a>
+            </li>
+          )
+        })}
+        {/* What is not built yet, in the grid's own last cell: five live rows and this one fill two columns or three. */}
+        {coming.length ? (
+          <li className='bg-[var(--paper-2)] p-4'>
+            <span className='block font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Coming next</span>
+            <span className='mt-1.5 block text-[13.5px] leading-[1.6] text-[var(--ink-2)]'>{coming.map((w) => w.label).join(' · ')}</span>
+          </li>
+        ) : null}
+      </ul>
+    </div>
+  )
+}

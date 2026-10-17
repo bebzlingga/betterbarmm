@@ -11,7 +11,9 @@ import { lguCounts, lguData, lguProvinces } from '@betterbarmm/lgu-data'
 import { SectionHead } from './_components/masthead'
 import { HeroGraphic } from './_components/hero-graphic'
 import { SiteHeader } from './_components/site-header'
-import { WorkspaceIndex } from './_components/workspace-index'
+import { WorkspaceList } from './_components/workspace-index'
+import { ExplainerCard } from './_components/explainer-card'
+import { listExplainers } from './_lib/explainers'
 import { workspaces } from './_lib/workspaces'
 
 export const metadata: Metadata = {
@@ -96,8 +98,12 @@ const chapters: StripCard[] = [
  * are called in the region and what fits a band at this size.
  */
 
-export default function HomePage() {
+// New explainers reach the front page within a minute of being published, as they reach the Explainers page.
+export const revalidate = 60
+
+export default async function HomePage() {
 	const live = workspaces.filter((workspace) => workspace.state === 'live').length
+	const explainers = await listExplainers().catch(() => [])
 
 	return (
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
@@ -170,20 +176,42 @@ export default function HomePage() {
 			{/* ---- The names ---- */}
 			<DiscoverMarquee items={principlesBand} duration={50} />
 
-			{/* ---- The workspaces ---- */}
-			<section id='workspaces' className='bb-container scroll-mt-20 bb-section'>
-				<SectionHead
-					index='01'
-					eyebrow='The workspaces'
-					title={`${live} live.`}
-					titleMuted='More on the way.'
-					lead='Each one turns a pile of public records into something you can read, question, and trace back to the source. A card without a link is one we have not built yet.'
-				/>
+			{/* ---- The workspaces ----
 
-				<div>
-					<WorkspaceIndex workspaces={workspaces} />
+			    Compact: the live ones as slim rows and the rest as a line of names. The
+			    full cards took a screen and a half to say five things. */}
+			<section id='workspaces' className='bb-container scroll-mt-20 py-14 lg:py-16'>
+				<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2'>
+					<h2 className='text-[1.6rem] font-extrabold tracking-[-0.03em]'>
+						The workspaces <span className='text-[var(--ink-mute)]'>· {live} live</span>
+					</h2>
+					<p className='max-w-xl text-[13.5px] leading-6 text-[var(--ink-3)]'>Public records you can read, question, and trace back to the source.</p>
+				</div>
+				<div className='mt-6'>
+					<WorkspaceList workspaces={workspaces} />
 				</div>
 			</section>
+
+			{/* ---- Explainers ---- */}
+			{explainers.length ? (
+				<section aria-labelledby='explainers-title' className='border-t border-[var(--rule)]'>
+					<div className='bb-container py-14 lg:py-16'>
+						<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2'>
+							<h2 id='explainers-title' className='text-[1.6rem] font-extrabold tracking-[-0.03em]'>
+								Explainers <span className='text-[var(--ink-mute)]'>· how government works, in plain words</span>
+							</h2>
+							<Link href='/explainers' className='inline-flex items-center gap-1.5 text-[14px] font-semibold underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
+								All explainers <ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
+							</Link>
+						</div>
+						<div className='mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
+							{explainers.slice(0, 3).map((e) => (
+								<ExplainerCard key={e.id} e={e} heading='h3' />
+							))}
+						</div>
+					</div>
+				</section>
+			) : null}
 
 			{/* ---- The region, in figures ----
 

@@ -3,12 +3,13 @@ import type { Metadata } from 'next'
 import { CtaAction, CtaPanel } from '@betterbarmm/editorial'
 import { pageMeta } from '../_lib/seo'
 import Link from 'next/link'
-import { EXPLAINER_CATEGORIES, categoryLabel } from '@betterbarmm/db'
+import { EXPLAINER_CATEGORIES } from '@betterbarmm/db'
 import { listExplainers } from '../_lib/explainers'
 import { Masthead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
 import { GUIDES } from './guides'
 import { GuideMotif } from './motif'
+import { ExplainerCard } from '../_components/explainer-card'
 
 export const metadata: Metadata = pageMeta({
 	title: 'Explainers',
@@ -90,31 +91,7 @@ export default async function ExplainersPage({
 				{shown.length ? (
 					<div className='mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
 						{shown.map((e) => (
-							<Link
-								key={e.id}
-								href={`/explainers/${e.slug}`}
-								className='bb-plate group relative flex h-full flex-col overflow-hidden p-7 transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.45)]'
-							>
-								{/* On hover: an arrow slides in, the title takes the accent, a rule draws along the foot. */}
-								<ArrowRightIcon
-									className='absolute right-6 top-6 size-4 -translate-x-2 text-[var(--accent)] opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100'
-									weight='bold'
-									aria-hidden='true'
-								/>
-								<span aria-hidden='true' className='absolute inset-x-0 bottom-0 h-[3px] origin-left scale-x-0 bg-[var(--accent)] transition-transform duration-500 group-hover:scale-x-100' />
-								<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
-									{categoryLabel(e.category)}
-								</span>
-								<h2 className='mt-4 pr-6 text-[1.2rem] font-extrabold leading-snug tracking-[-0.02em] transition-colors duration-300 group-hover:text-[var(--accent)]'>
-									{e.title}
-								</h2>
-								{e.summary ? <p className='mt-3 flex-1 bb-body !leading-[1.7] text-[var(--ink-2)]'>{e.summary}</p> : null}
-								{e.published_at ? (
-									<p className='mt-5 text-[12.5px] text-[var(--ink-3)]'>
-										{[longDate(e.published_at), e.author ? `@${e.author}` : null].filter(Boolean).join(' · ')}
-									</p>
-								) : null}
-							</Link>
+							<ExplainerCard key={e.id} e={e} />
 						))}
 					</div>
 				) : (
@@ -146,7 +123,6 @@ export default async function ExplainersPage({
 	)
 }
 
-const longDate = (iso: string) => new Date(iso).toLocaleDateString('en-PH', { day: 'numeric', month: 'long', year: 'numeric' })
 
 /** Each workspace's mark, as the workspace switch shows it. */
 const WORKSPACE_ICON: Record<string, React.ComponentType<{ size?: number; weight?: 'regular' | 'fill'; className?: string }>> = {
