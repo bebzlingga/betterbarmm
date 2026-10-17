@@ -64,35 +64,39 @@ export function CraftsCatalogue() {
 						</ul>
 					</section>
 				))}
-
-				{festivals.length ? (
-					<section aria-labelledby='festivals' className='border-t border-[#e4d8cb] pt-14'>
-						<h2 id='festivals' className={`${serif} text-[28px] font-bold`}>
-							When to go
-						</h2>
-						<p className='mt-2 max-w-2xl text-[14.5px] leading-[1.6] text-[#5a3d2e]'>The festivals where these crafts are shown, worn and sold.</p>
-						<ul className='mt-8 grid gap-x-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-3'>
-							{festivals.map((f) => (
-								<li key={f.name} className='border-t border-[#d9c7b5] pt-4'>
-									<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[#9a6a4f]'>{f.month}</p>
-									<p className={`${serif} mt-1 text-[19px] font-bold`}>{f.name}</p>
-									<p className='mt-0.5 flex items-center gap-1 text-[13px] text-[#8a6d5c]'>
-										<MapPinIcon size={13} aria-hidden='true' /> {f.place}
-									</p>
-									<p className='mt-2 text-[14px] leading-[1.6] text-[#5a3d2e]'>{f.note}</p>
-									<a href={f.source} target='_blank' rel='noreferrer' className='mt-2 inline-flex items-center gap-0.5 text-[11.5px] text-[#8a6d5c] hover:text-[#5a3424]'>
-										Source <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
-									</a>
-								</li>
-							))}
-						</ul>
-					</section>
-				) : null}
-
-				<p className='mt-16 max-w-3xl text-[12.5px] leading-[1.7] text-[#8a6d5c]'>
-					Every fact here is linked to the page it came from. Photos are from Wikimedia Commons under free licences, each credited on the photo.
-				</p>
 			</div>
+
+			{/* When to go: a white band of its own, the catalogue's last word before the ask. */}
+			<section aria-labelledby='festivals' className='bg-white'>
+				<div className='mx-auto max-w-[84rem] px-4 py-16 sm:px-6 lg:py-20'>
+					{festivals.length ? (
+						<>
+							<h2 id='festivals' className={`${serif} text-[28px] font-bold`}>
+								When to go
+							</h2>
+							<p className='mt-2 max-w-2xl text-[14.5px] leading-[1.6] text-[#5a3d2e]'>The festivals where these crafts are shown, worn and sold.</p>
+							<ul className='mt-8 grid gap-x-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-3'>
+								{festivals.map((f) => (
+									<li key={f.name} className='border-t border-[#d9c7b5] pt-4'>
+										<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[#9a6a4f]'>{f.month}</p>
+										<p className={`${serif} mt-1 text-[19px] font-bold`}>{f.name}</p>
+										<p className='mt-0.5 flex items-center gap-1 text-[13px] text-[#8a6d5c]'>
+											<MapPinIcon size={13} aria-hidden='true' /> {f.place}
+										</p>
+										<p className='mt-2 text-[14px] leading-[1.6] text-[#5a3d2e]'>{f.note}</p>
+										<a href={f.source} target='_blank' rel='noreferrer' className='mt-2 inline-flex items-center gap-0.5 text-[11.5px] text-[#8a6d5c] hover:text-[#5a3424]'>
+											Source <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
+										</a>
+									</li>
+								))}
+							</ul>
+						</>
+					) : null}
+					<p className='mt-16 max-w-3xl text-[12.5px] leading-[1.7] text-[#8a6d5c]'>
+						Every fact here is linked to the page it came from. Photos are from Wikimedia Commons under free licences, each credited on the photo.
+					</p>
+				</div>
+			</section>
 			<GetInvolved />
 		</main>
 	)
