@@ -348,9 +348,12 @@ Preservation of Cultural Heritage’s coffee-table book (PDF posted February
 2025), cited as the PDF with `#page=N`. Pusaka’s entries are paraphrased
 closely and add nothing it does not say; its Sulu items, its places (Lake
 Lanao, Bud Bongao, the torogan) and the Basilan dulang feast are left out, and
-its Maguindanao items carry the undivided province, `maguindanao`. Its own
-photographs are not used: 25 crafts have free-licence Commons photos and 27
-show their colours until one is found.
+its Maguindanao items carry the undivided province, `maguindanao`. 25 crafts
+have free-licence Commons photos; the other 27, which Commons has nothing
+genuine for, use Pusaka’s own photographs (47 in all, resized into
+`apps/www/public/crafts/pusaka/`), matched to their items by the book’s
+spreads and credited to the BCPCH by page. The commission’s sites state that
+their content is in the public domain unless otherwise marked.
 
 17 crafts of the region, read on 17 October 2026: 4 textiles (inaul, malong a
 landap, langkit, Yakan tennun), the Sama tepo mat, 2 Tugaya brass pieces, 5

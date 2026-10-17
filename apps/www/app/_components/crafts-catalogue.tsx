@@ -159,7 +159,7 @@ export function CraftsCatalogue() {
 						</>
 					) : null}
 					<p className='mt-16 text-[12.5px] leading-[1.7] text-[#8a6d5c]'>
-						Every fact here is linked to the page it came from. Photos are from Wikimedia Commons under free licences, each credited on the photo. Items cited to Pusaka come from the commission’s book, by page.
+						Every fact here is linked to the page it came from. Photos are from Wikimedia Commons under free licences, or from the commission’s book Pusaka, which its site places in the public domain; each is credited on the photo. Items cited to Pusaka come from the book, by page.
 					</p>
 				</div>
 			</section>

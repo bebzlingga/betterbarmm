@@ -1694,7 +1694,22 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=9"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/sipil-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=9",
+     "author": "BCPCH, Pusaka p. 9",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 1022,
+     "height": 609,
+     "caption": "Sipil, from Pusaka, p. 9",
+     "tone": [
+      54,
+      0.42
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -1720,7 +1735,22 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=11"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/patakiya-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=11",
+     "author": "BCPCH, Pusaka p. 11",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 764,
+     "height": 1079,
+     "caption": "Patakiya, from Pusaka, p. 11",
+     "tone": [
+      53,
+      0.62
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -1746,7 +1776,36 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=12"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/dudan-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=12",
+     "author": "BCPCH, Pusaka p. 12",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 722,
+     "height": 1079,
+     "caption": "Dudan, from Pusaka, p. 12",
+     "tone": [
+      53,
+      0.58
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/dudan-2.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=12",
+     "author": "BCPCH, Pusaka p. 12",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 760,
+     "height": 398,
+     "caption": "Dudan, from Pusaka, p. 12",
+     "tone": [
+      52,
+      0.66
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -1772,7 +1831,22 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=13"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/langgaman-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=13",
+     "author": "BCPCH, Pusaka p. 13",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 1400,
+     "height": 779,
+     "caption": "Langgaman, from Pusaka, p. 13",
+     "tone": [
+      39,
+      0.37
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -1799,7 +1873,28 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=14"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/sayap-buyang-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=14",
+     "author": "BCPCH, Pusaka p. 14",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 714,
+     "height": 1079,
+     "caption": "Sayap and buyang, from Pusaka, p. 14",
+     "tone": [
+      50,
+      0.31
+     ],
+     "crop": [
+      0.022,
+      0,
+      0,
+      0
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -1826,7 +1921,22 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=15"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/tudong-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=15",
+     "author": "BCPCH, Pusaka p. 15",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 713,
+     "height": 1079,
+     "caption": "Tudong, from Pusaka, p. 15",
+     "tone": [
+      260,
+      0.63
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -1852,7 +1962,22 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=16"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/binangga-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=16",
+     "author": "BCPCH, Pusaka p. 16",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 726,
+     "height": 1079,
+     "caption": "Binangga, from Pusaka, p. 16",
+     "tone": [
+      2,
+      0.81
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -1933,7 +2058,36 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=19"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/binuwaya-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=19",
+     "author": "BCPCH, Pusaka p. 19",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 748,
+     "height": 310,
+     "caption": "Binuwaya, from Pusaka, p. 19",
+     "tone": [
+      24,
+      0.66
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/binuwaya-2.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=19",
+     "author": "BCPCH, Pusaka p. 19",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 684,
+     "height": 288,
+     "caption": "Binuwaya, from Pusaka, p. 19",
+     "tone": [
+      23,
+      0.79
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2015,7 +2169,22 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=31"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/obul-obul-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=31",
+     "author": "BCPCH, Pusaka p. 31",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 833,
+     "height": 1076,
+     "caption": "Obul-obul, from Pusaka, p. 31",
+     "tone": [
+      355,
+      0.64
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2082,7 +2251,22 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=39"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/igaan-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=39",
+     "author": "BCPCH, Pusaka p. 39",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 950,
+     "height": 1076,
+     "caption": "Igaan, from Pusaka, p. 39",
+     "tone": [
+      24,
+      0.63
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2150,7 +2334,36 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=44"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/mamandiyang-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=44",
+     "author": "BCPCH, Pusaka p. 44",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 849,
+     "height": 539,
+     "caption": "Mamandiyang, from Pusaka, p. 44",
+     "tone": [
+      335,
+      0.73
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/mamandiyang-2.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=44",
+     "author": "BCPCH, Pusaka p. 44",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 849,
+     "height": 538,
+     "caption": "Mamandiyang, from Pusaka, p. 44",
+     "tone": [
+      37,
+      0.76
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2176,7 +2389,50 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=49"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/satora-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=48",
+     "author": "BCPCH, Pusaka p. 48",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 1249,
+     "height": 1076,
+     "caption": "Satora, from Pusaka, p. 48",
+     "tone": [
+      35,
+      0.37
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/satora-2.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=49",
+     "author": "BCPCH, Pusaka p. 49",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 651,
+     "height": 529,
+     "caption": "Satora, from Pusaka, p. 49",
+     "tone": [
+      34,
+      0.37
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/satora-3.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=49",
+     "author": "BCPCH, Pusaka p. 49",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 650,
+     "height": 528,
+     "caption": "Satora, from Pusaka, p. 49",
+     "tone": [
+      34,
+      0.29
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2202,7 +2458,28 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=50"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/glat-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=50",
+     "author": "BCPCH, Pusaka p. 50",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 1080,
+     "height": 854,
+     "caption": "Glat, from Pusaka, p. 50",
+     "tone": [
+      35,
+      0.42
+     ],
+     "crop": [
+      0,
+      0,
+      0.053,
+      0.03
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2228,7 +2505,50 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=54"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/tanyak-tanyak-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=54",
+     "author": "BCPCH, Pusaka p. 54",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 1400,
+     "height": 990,
+     "caption": "Tanyak-tanyak, from Pusaka, p. 54",
+     "tone": [
+      352,
+      0.8
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/tanyak-tanyak-2.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=55",
+     "author": "BCPCH, Pusaka p. 55",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 1279,
+     "height": 1076,
+     "caption": "Tanyak-tanyak, from Pusaka, p. 55",
+     "tone": [
+      9,
+      0.57
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/tanyak-tanyak-3.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=55",
+     "author": "BCPCH, Pusaka p. 55",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 724,
+     "height": 356,
+     "caption": "Tanyak-tanyak, from Pusaka, p. 55",
+     "tone": [
+      26,
+      0.24
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2255,7 +2575,68 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=59"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/yakan-wedding-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=59",
+     "author": "BCPCH, Pusaka p. 59",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 651,
+     "height": 1076,
+     "caption": "Yakan wedding dress, from Pusaka, p. 59",
+     "tone": [
+      6,
+      0.6
+     ],
+     "crop": [
+      0.058,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/yakan-wedding-2.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=58",
+     "author": "BCPCH, Pusaka p. 58",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 468,
+     "height": 1078,
+     "caption": "Yakan wedding dress, from Pusaka, p. 58",
+     "tone": [
+      23,
+      0.27
+     ],
+     "crop": [
+      0.075,
+      0.194,
+      0.044,
+      0.198
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/yakan-wedding-3.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=58",
+     "author": "BCPCH, Pusaka p. 58",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 453,
+     "height": 1079,
+     "caption": "Yakan wedding dress, from Pusaka, p. 58",
+     "tone": [
+      23,
+      0.28
+     ],
+     "crop": [
+      0.04,
+      0.133,
+      0.036,
+      0.261
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2343,7 +2724,48 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=65"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/kulaing-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=65",
+     "author": "BCPCH, Pusaka p. 65",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 451,
+     "height": 1075,
+     "caption": "Kulaing, from Pusaka, p. 65",
+     "tone": [
+      9,
+      0.4
+     ],
+     "crop": [
+      0,
+      0,
+      0.081,
+      0
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/kulaing-2.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=65",
+     "author": "BCPCH, Pusaka p. 65",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 1075,
+     "height": 450,
+     "caption": "Kulaing, from Pusaka, p. 65",
+     "tone": [
+      33,
+      0.22
+     ],
+     "crop": [
+      0.041,
+      0,
+      0,
+      0
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2425,7 +2847,28 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=67"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/suling-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=67",
+     "author": "BCPCH, Pusaka p. 67",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 1400,
+     "height": 396,
+     "caption": "Suling, from Pusaka, p. 67",
+     "tone": [
+      34,
+      0.41
+     ],
+     "crop": [
+      0.371,
+      0.047,
+      0.386,
+      0.032
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2451,7 +2894,36 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=68"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/barung-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=68",
+     "author": "BCPCH, Pusaka p. 68",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 578,
+     "height": 881,
+     "caption": "Barung, from Pusaka, p. 68",
+     "tone": [
+      38,
+      0.53
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/barung-2.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=68",
+     "author": "BCPCH, Pusaka p. 68",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 779,
+     "height": 549,
+     "caption": "Barung, from Pusaka, p. 68",
+     "tone": [
+      36,
+      0.3
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2477,7 +2949,48 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=69"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/punyal-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=69",
+     "author": "BCPCH, Pusaka p. 69",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 882,
+     "height": 578,
+     "caption": "Punyal, from Pusaka, p. 69",
+     "tone": [
+      37,
+      0.25
+     ],
+     "crop": [
+      0.104,
+      0,
+      0.154,
+      0
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/punyal-2.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=69",
+     "author": "BCPCH, Pusaka p. 69",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 779,
+     "height": 550,
+     "caption": "Punyal, from Pusaka, p. 69",
+     "tone": [
+      36,
+      0.23
+     ],
+     "crop": [
+      0.416,
+      0.036,
+      0.23,
+      0.035
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2504,7 +3017,56 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=95"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/bangka-bangka-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=95",
+     "author": "BCPCH, Pusaka p. 95",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 672,
+     "height": 370,
+     "caption": "Bangka-bangka, from Pusaka, p. 95",
+     "tone": [
+      34,
+      0.28
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/bangka-bangka-2.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=95",
+     "author": "BCPCH, Pusaka p. 95",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 672,
+     "height": 354,
+     "caption": "Bangka-bangka, from Pusaka, p. 95",
+     "tone": [
+      27,
+      0.6
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/bangka-bangka-3.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=95",
+     "author": "BCPCH, Pusaka p. 95",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 672,
+     "height": 354,
+     "caption": "Bangka-bangka, from Pusaka, p. 95",
+     "tone": [
+      24,
+      0.51
+     ],
+     "crop": [
+      0.108,
+      0,
+      0,
+      0
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2530,7 +3092,22 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=96"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/dulang-latal-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=96",
+     "author": "BCPCH, Pusaka p. 96",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 1400,
+     "height": 721,
+     "caption": "Dulang and latal, from Pusaka, p. 96",
+     "tone": [
+      35,
+      0.29
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2557,7 +3134,50 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=99"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/habol-tiyahian-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=98",
+     "author": "BCPCH, Pusaka p. 98",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 1400,
+     "height": 990,
+     "caption": "Habol tiyahian, from Pusaka, p. 98",
+     "tone": [
+      39,
+      0.74
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/habol-tiyahian-2.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=99",
+     "author": "BCPCH, Pusaka p. 99",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 755,
+     "height": 545,
+     "caption": "Habol tiyahian, from Pusaka, p. 99",
+     "tone": [
+      40,
+      0.68
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/habol-tiyahian-3.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=99",
+     "author": "BCPCH, Pusaka p. 99",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 755,
+     "height": 532,
+     "caption": "Habol tiyahian, from Pusaka, p. 99",
+     "tone": [
+      202,
+      0.79
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2586,7 +3206,50 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=100"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/kabkab-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=100",
+     "author": "BCPCH, Pusaka p. 100",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 693,
+     "height": 490,
+     "caption": "Kabkab, from Pusaka, p. 100",
+     "tone": [
+      218,
+      0.37
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/kabkab-2.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=100",
+     "author": "BCPCH, Pusaka p. 100",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 718,
+     "height": 470,
+     "caption": "Kabkab, from Pusaka, p. 100",
+     "tone": [
+      219,
+      0.32
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/kabkab-3.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=100",
+     "author": "BCPCH, Pusaka p. 100",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 686,
+     "height": 471,
+     "caption": "Kabkab, from Pusaka, p. 100",
+     "tone": [
+      213,
+      0.33
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2709,7 +3372,50 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=105"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/quran-lihal-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=104",
+     "author": "BCPCH, Pusaka p. 104",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 1400,
+     "height": 990,
+     "caption": "Qur’an lihal, from Pusaka, p. 104",
+     "tone": [
+      38,
+      0.38
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/quran-lihal-2.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=105",
+     "author": "BCPCH, Pusaka p. 105",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 873,
+     "height": 570,
+     "caption": "Qur’an lihal, from Pusaka, p. 105",
+     "tone": [
+      36,
+      0.29
+     ]
+    },
+    {
+     "url": "/crafts/pusaka/quran-lihal-3.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=105",
+     "author": "BCPCH, Pusaka p. 105",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 873,
+     "height": 507,
+     "caption": "Qur’an lihal, from Pusaka, p. 105",
+     "tone": [
+      37,
+      0.39
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2735,7 +3441,22 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=106"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/sablay-sawwal-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=106",
+     "author": "BCPCH, Pusaka p. 106",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 711,
+     "height": 1075,
+     "caption": "Sablay and sawwal, from Pusaka, p. 106",
+     "tone": [
+      33,
+      0.35
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2761,7 +3482,22 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=107"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/sambra-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=107",
+     "author": "BCPCH, Pusaka p. 107",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 713,
+     "height": 1076,
+     "caption": "Sambra, from Pusaka, p. 107",
+     "tone": [
+      207,
+      0.8
+     ]
+    }
+   ],
    "model": null
   },
   {
@@ -2787,7 +3523,22 @@
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=109"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/crafts/pusaka/badju-sama-1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=108",
+     "author": "BCPCH, Pusaka p. 108",
+     "license": "Public domain",
+     "license_url": "https://bcpch.bangsamoro.gov.ph/",
+     "width": 1400,
+     "height": 989,
+     "caption": "Badju’ Sama, from Pusaka, p. 108",
+     "tone": [
+      206,
+      0.62
+     ]
+    }
+   ],
    "model": null
   }
  ],
