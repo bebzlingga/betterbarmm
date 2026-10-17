@@ -67,7 +67,10 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 					) : null}
 				</p>
 
-				<div className='mt-8 grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]'>
+				{/* Two columns from a laptop up: who heads it and how to reach it (35%), beside the right (65%):
+				    how it is organized, its offices in the provinces and its past heads. */}
+				<div className='mt-8 grid gap-12 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:gap-16'>
+					<aside className='space-y-10'>
 					<div>
 						<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Head of office</p>
 						{o.head ? (
@@ -135,7 +138,9 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 						</ul>
 						{o.checked ? <p className='mt-3 text-[12px] text-[var(--ink-3)]'>Checked by an editor, {o.checked}.</p> : null}
 					</div>
-				</div>
+					</aside>
+
+					<div className='min-w-0 [&>*:first-child]:mt-0'>
 
 				{org ? <OfficeStructure org={org} /> : null}
 
@@ -144,7 +149,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 						<h2 id='field' className='text-[20px] font-extrabold'>
 							In the provinces <span className='text-[var(--ink-mute)]'>{field.length}</span>
 						</h2>
-						<ul className='mt-4 grid pt-px pl-px sm:grid-cols-2 lg:grid-cols-3'>
+						<ul className='mt-4 grid pt-px pl-px sm:grid-cols-2'>
 							{field.map((f) => (
 								<li key={f.office} className='-mt-px -ml-px border border-[var(--rule)] bg-[var(--paper)] p-5 text-[13.5px] leading-6'>
 									<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>{f.province}</p>
@@ -219,6 +224,9 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 						</ul>
 					</section>
 				) : null}
+
+					</div>
+				</div>
 
 				<p className='mt-16 max-w-3xl text-[12.5px] leading-[1.7] text-[var(--ink-3)]'>{directoryMeta.note}</p>
 			</section>
