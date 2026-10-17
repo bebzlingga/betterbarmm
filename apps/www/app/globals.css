@@ -1012,3 +1012,25 @@
   --acc-shooting: #ef4050;
   --acc-other: #9a9488;
 }
+
+/* ============================================================
+   Crafts: the card's colours, taken from the photo on show.
+   Registered, so a change of photo fades the gradients across
+   instead of snapping them (see craft-tone.ts).
+   ============================================================ */
+@property --tone-glow { syntax: '<color>'; inherits: true; initial-value: #a7694c; }
+@property --tone-panel { syntax: '<color>'; inherits: true; initial-value: #7b4a35; }
+@property --tone-edge { syntax: '<color>'; inherits: true; initial-value: #64392a; }
+@property --tone-out-l { syntax: '<color>'; inherits: true; initial-value: #4a2c22; }
+@property --tone-out-r { syntax: '<color>'; inherits: true; initial-value: #9a6a4f; }
+@property --tone-paper { syntax: '<color>'; inherits: true; initial-value: #f4efe8; }
+
+.craft-tone {
+  transition: --tone-glow 0.7s, --tone-panel 0.7s, --tone-edge 0.7s, --tone-out-l 0.7s, --tone-out-r 0.7s, --tone-paper 0.7s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .craft-tone {
+    transition: none;
+  }
+}

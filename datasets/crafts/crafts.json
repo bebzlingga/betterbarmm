@@ -116,7 +116,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
      "width": 1920,
      "height": 2560,
-     "caption": "Inaul fabric on display in the old Cotabato City Hall"
+     "caption": "Inaul fabric on display in the old Cotabato City Hall",
+     "tone": [
+      37,
+      0.45
+     ]
     },
     {
      "file": "File:Inaul Festival of Datu Piang, Maguindanao.jpg",
@@ -127,7 +131,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
      "width": 1920,
      "height": 3291,
-     "caption": "Dancer from Datu Piang at the Inaul Festival, Maguindanao"
+     "caption": "Dancer from Datu Piang at the Inaul Festival, Maguindanao",
+     "tone": [
+      5,
+      0.9
+     ]
     }
    ],
    "model": {
@@ -216,7 +224,11 @@
      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
      "width": 1920,
      "height": 4258,
-     "caption": "Maranao malong a landap of silk or rayon with tapestry-woven bands, Honolulu Museum of Art"
+     "caption": "Maranao malong a landap of silk or rayon with tapestry-woven bands, Honolulu Museum of Art",
+     "tone": [
+      340,
+      0.45
+     ]
     },
     {
      "file": "File:Malong (tube skirt) from Mindanao, Honolulu Museum of Art 14180.1.JPG",
@@ -227,7 +239,11 @@
      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
      "width": 1684,
      "height": 2840,
-     "caption": "Maranao malong in yellow and magenta panels with patterned bands, mid-20th century, Honolulu Museum of Art"
+     "caption": "Maranao malong in yellow and magenta panels with patterned bands, mid-20th century, Honolulu Museum of Art",
+     "tone": [
+      37,
+      0.85
+     ]
     }
    ],
    "model": {
@@ -356,7 +372,11 @@
      "width": 1920,
      "height": 4258,
      "caption": "Langkit bands running down and across a Maranao malong a landap, Honolulu Museum of Art",
-     "focus": "50% 88%"
+     "focus": "50% 88%",
+     "tone": [
+      340,
+      0.45
+     ]
     }
    ],
    "model": {
@@ -465,7 +485,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
      "width": 1920,
      "height": 2794,
-     "caption": "Seputangan head cloth woven by Ambalang Ausalin of Lamitan, Basilan, shown at the 2024 National Arts and Crafts Fair"
+     "caption": "Seputangan head cloth woven by Ambalang Ausalin of Lamitan, Basilan, shown at the 2024 National Arts and Crafts Fair",
+     "tone": [
+      23,
+      0.77
+     ]
     },
     {
      "file": "File:Tennum Ambalang Ausalin Lamitan Basilan Islamic head clothB.jpg",
@@ -476,7 +500,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
      "width": 1920,
      "height": 1418,
-     "caption": "Yakan tennun head cloth from the Ambalang Ausalin weaving tradition, Lamitan, Basilan"
+     "caption": "Yakan tennun head cloth from the Ambalang Ausalin weaving tradition, Lamitan, Basilan",
+     "tone": [
+      7,
+      0.62
+     ]
     },
     {
      "file": "File:Badju Yakan attire Tenun Ambalang AusalinA.jpg",
@@ -487,7 +515,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
      "width": 1874,
      "height": 3964,
-     "caption": "Yakan attire of woven tennun associated with Ambalang Ausalin, at the 2024 National Arts and Crafts Fair"
+     "caption": "Yakan attire of woven tennun associated with Ambalang Ausalin, at the 2024 National Arts and Crafts Fair",
+     "tone": [
+      322,
+      0.54
+     ]
     },
     {
      "file": "File:Basilan SLT Community folk fabricsA.jpg",
@@ -498,7 +530,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
      "width": 1920,
      "height": 1159,
-     "caption": "Yakan fabrics from a Basilan School of Living Tradition community"
+     "caption": "Yakan fabrics from a Basilan School of Living Tradition community",
+     "tone": [
+      354,
+      0.5
+     ]
     }
    ],
    "model": {
@@ -579,7 +615,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
      "width": 1920,
      "height": 3759,
-     "caption": "Tepo mat from Ungos Matata, Tandubas, Tawi-Tawi, in the tradition of Haja Amina Appi, shown at the 2024 National Arts and Crafts Fair"
+     "caption": "Tepo mat from Ungos Matata, Tandubas, Tawi-Tawi, in the tradition of Haja Amina Appi, shown at the 2024 National Arts and Crafts Fair",
+     "tone": [
+      37,
+      0.49
+     ]
     },
     {
      "file": "File:Tepo Tandubas Sama Bajau mat Pandanus Haja Amina Appi TreasureB.jpg",
@@ -590,7 +630,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
      "width": 1920,
      "height": 2669,
-     "caption": "Close view of a Tandubas tepo mat with geometric patterns"
+     "caption": "Close view of a Tandubas tepo mat with geometric patterns",
+     "tone": [
+      36,
+      0.55
+     ]
     },
     {
      "file": "File:Sibutu Tawi Tawi Sama Bajau pandan Banig mat textile colorfulF.jpg",
@@ -601,7 +645,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
      "width": 1920,
      "height": 2560,
-     "caption": "Sama pandan mat from Sibutu, Tawi-Tawi"
+     "caption": "Sama pandan mat from Sibutu, Tawi-Tawi",
+     "tone": [
+      335,
+      0.62
+     ]
     },
     {
      "file": "File:Sibiya Jawahari Bahali Sama Tepo 2026-10-03 Maluso Basilan 01.jpg",
@@ -612,7 +660,11 @@
      "license_url": "https://creativecommons.org/licenses/by/4.0",
      "width": 1920,
      "height": 2513,
-     "caption": "Sama tepo weaver Sibiya Jawahari Bahali of Maluso, Basilan, with her mats"
+     "caption": "Sama tepo weaver Sibiya Jawahari Bahali of Maluso, Basilan, with her mats",
+     "tone": [
+      5,
+      0.4
+     ]
     }
    ],
    "model": {
@@ -686,7 +738,11 @@
      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
      "width": 1450,
      "height": 2360,
-     "caption": "Maranao food jar (gadur) of brass with silver inlay, Honolulu Museum of Art"
+     "caption": "Maranao food jar (gadur) of brass with silver inlay, Honolulu Museum of Art",
+     "tone": [
+      56,
+      0.39
+     ]
     }
    ],
    "model": {
@@ -748,7 +804,11 @@
      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
      "width": 1920,
      "height": 1083,
-     "caption": "Maranao betel box of copper alloy with silver inlay, probably 20th century, Honolulu Museum of Art"
+     "caption": "Maranao betel box of copper alloy with silver inlay, probably 20th century, Honolulu Museum of Art",
+     "tone": [
+      38,
+      0.23
+     ]
     }
    ],
    "model": null
@@ -805,7 +865,11 @@
      "license_url": "https://creativecommons.org/licenses/by/4.0",
      "width": 1920,
      "height": 1760,
-     "caption": "Maranao kulintang on an okir-painted frame"
+     "caption": "Maranao kulintang on an okir-painted frame",
+     "tone": [
+      36,
+      0.36
+     ]
     },
     {
      "file": "File:National Museum of Ethnology, Osaka - Kolintang - Maranao people in Philippines - Collected in 2002.jpg",
@@ -816,7 +880,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
      "width": 1920,
      "height": 1440,
-     "caption": "Maranao kolintang collected in 2002, National Museum of Ethnology, Osaka"
+     "caption": "Maranao kolintang collected in 2002, National Museum of Ethnology, Osaka",
+     "tone": [
+      39,
+      0.43
+     ]
     },
     {
      "file": "File:Kulintang 08.jpg",
@@ -827,7 +895,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
      "width": 1183,
      "height": 1579,
-     "caption": "The eight Philippine horizontally laid, knobbed gongs known as the kulintang used as a main melodic instrument in the kulintang ensemble. Here, it is used as an accompaniment for a healing ritual. The dancers perform the dance, sagayan, while the kulintang player performs the piece, Taggungo."
+     "caption": "The eight Philippine horizontally laid, knobbed gongs known as the kulintang used as a main melodic instrument in the kulintang ensemble. Here, it is used as an accompaniment for a healing ritual. The dancers perform the dance, sagayan, while the kulintang player performs the piece, Taggungo.",
+     "tone": [
+      34,
+      0.53
+     ]
     }
    ],
    "model": {
@@ -877,7 +949,11 @@
      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
      "width": 1920,
      "height": 1280,
-     "caption": "Maranao agong on a carved stand, Museum of the Filipino People, Manila"
+     "caption": "Maranao agong on a carved stand, Museum of the Filipino People, Manila",
+     "tone": [
+      38,
+      0.59
+     ]
     },
     {
      "file": "File:Agung 02.jpg",
@@ -888,7 +964,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
      "width": 1920,
      "height": 1440,
-     "caption": "The two Philippine vertically hanged, wide-rimmed gongs known as the agung used as a supportive/accompanying instrument in the kulintang ensemble."
+     "caption": "The two Philippine vertically hanged, wide-rimmed gongs known as the agung used as a supportive/accompanying instrument in the kulintang ensemble.",
+     "tone": [
+      33,
+      0.6
+     ]
     },
     {
      "file": "File:National Museum of Ethnology, Osaka - Agong - Maranao people in Philippines - Collected in 2002.jpg",
@@ -899,7 +979,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
      "width": 1920,
      "height": 1440,
-     "caption": "Maranao agong collected in 2002, National Museum of Ethnology, Osaka"
+     "caption": "Maranao agong collected in 2002, National Museum of Ethnology, Osaka",
+     "tone": [
+      51,
+      0.42
+     ]
     }
    ],
    "model": {
@@ -941,7 +1025,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
      "width": 1536,
      "height": 2048,
-     "caption": "The four Philippine vertically hanged gongs known as the gandingan used as a secondary melodic instrument in the kulintang ensemble. (The four vertical brass hanging gongs that make up the instrument known as the gandingan. This instrument in particular is used by Master Danongan Kalanduyan at San Francisco State to teach his kulintang class.)"
+     "caption": "The four Philippine vertically hanged gongs known as the gandingan used as a secondary melodic instrument in the kulintang ensemble. (The four vertical brass hanging gongs that make up the instrument known as the gandingan. This instrument in particular is used by Master Danongan Kalanduyan at San Francisco State to teach his kulintang class.)",
+     "tone": [
+      23,
+      0.42
+     ]
     },
     {
      "file": "File:Gandingan 03.jpg",
@@ -952,7 +1040,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
      "width": 1920,
      "height": 1440,
-     "caption": "The four Philippine vertically hanged gongs known as the gandingan used as a secondary melodic instrument in the kulintang ensemble, being shown here with the smaller gongs placed inside the larger ones."
+     "caption": "The four Philippine vertically hanged gongs known as the gandingan used as a secondary melodic instrument in the kulintang ensemble, being shown here with the smaller gongs placed inside the larger ones.",
+     "tone": [
+      22,
+      0.57
+     ]
     }
    ],
    "model": null
@@ -998,7 +1090,11 @@
      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
      "width": 1745,
      "height": 1310,
-     "caption": "A Kutiyapi is a two-stringed Philippine boat lute, the only stringed instrument used by the Maguindanaon. Made from jackfruit wood (Artocarpus heterophyllus)"
+     "caption": "A Kutiyapi is a two-stringed Philippine boat lute, the only stringed instrument used by the Maguindanaon. Made from jackfruit wood (Artocarpus heterophyllus)",
+     "tone": [
+      24,
+      0.39
+     ]
     },
     {
      "file": "File:Lute (kutyapi), Mindanao, wood, Honolulu Museum of Art.jpg",
@@ -1009,7 +1105,11 @@
      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
      "width": 1920,
      "height": 485,
-     "caption": "Wooden kutyapi boat lute from Mindanao, Honolulu Museum of Art"
+     "caption": "Wooden kutyapi boat lute from Mindanao, Honolulu Museum of Art",
+     "tone": [
+      66,
+      0.27
+     ]
     }
    ],
    "model": null
@@ -1051,7 +1151,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
      "width": 1920,
      "height": 2560,
-     "caption": "Maranao dabakan with an okir-carved shell, collected in 2002, National Museum of Ethnology, Osaka"
+     "caption": "Maranao dabakan with an okir-carved shell, collected in 2002, National Museum of Ethnology, Osaka",
+     "tone": [
+      37,
+      0.43
+     ]
     },
     {
      "file": "File:Dabakan 05.jpg",
@@ -1062,7 +1166,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
      "width": 1163,
      "height": 1551,
-     "caption": "The dabakan is a Philippine, single-headed, drum made of jackfruit/coconut lumber topped with a lizard or goat skin drumhead. It’s the only non-drum instrument of the kulintang ensemble. In this image, a Magui Master Artist playing the dabakan during a kulintang performance."
+     "caption": "The dabakan is a Philippine, single-headed, drum made of jackfruit/coconut lumber topped with a lizard or goat skin drumhead. It’s the only non-drum instrument of the kulintang ensemble. In this image, a Magui Master Artist playing the dabakan during a kulintang performance.",
+     "tone": [
+      227,
+      0.6
+     ]
     }
    ],
    "model": null
@@ -1160,7 +1268,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
      "width": 1920,
      "height": 1238,
-     "caption": "Tugaya wooden chest with mother-of-pearl inlay, at a 2024 crafts fair in Manila"
+     "caption": "Tugaya wooden chest with mother-of-pearl inlay, at a 2024 crafts fair in Manila",
+     "tone": [
+      20,
+      0.27
+     ]
     },
     {
      "file": "File:Maranao people chest with mother of pearl1.jpg",
@@ -1171,7 +1283,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
      "width": 1920,
      "height": 1765,
-     "caption": "Maranao chest with mother-of-pearl inlay, beside a brass betel container"
+     "caption": "Maranao chest with mother-of-pearl inlay, beside a brass betel container",
+     "tone": [
+      37,
+      0.22
+     ]
     },
     {
      "file": "File:Tugaya Lanao del Sur inlays mother of pearl crafts12.jpg",
@@ -1182,7 +1298,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
      "width": 1920,
      "height": 2560,
-     "caption": "Tugaya wooden urn and boxes with mother-of-pearl inlay"
+     "caption": "Tugaya wooden urn and boxes with mother-of-pearl inlay",
+     "tone": [
+      24,
+      0.19
+     ]
     },
     {
      "file": "File:Maranao Baur chest LanaoG.jpg",
@@ -1193,7 +1313,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
      "width": 1920,
      "height": 1564,
-     "caption": "Maranao baur chest with inlaid geometric design"
+     "caption": "Maranao baur chest with inlaid geometric design",
+     "tone": [
+      350,
+      0.54
+     ]
     }
    ],
    "model": null
@@ -1260,7 +1384,11 @@
      "license_url": "https://creativecommons.org/licenses/by/2.0",
      "width": 1920,
      "height": 1277,
-     "caption": "Painted panolong, the carved beam-end of a Maranao torogan"
+     "caption": "Painted panolong, the carved beam-end of a Maranao torogan",
+     "tone": [
+      69,
+      0.56
+     ]
     },
     {
      "file": "File:Maranao Torogan (c. 1908 - 1924), Philippines.jpg",
@@ -1271,7 +1399,8 @@
      "license_url": null,
      "width": 1600,
      "height": 1014,
-     "caption": "Maranao torogan photographed between about 1908 and 1924"
+     "caption": "Maranao torogan photographed between about 1908 and 1924",
+     "tone": null
     }
    ],
    "model": null
@@ -1319,7 +1448,11 @@
      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
      "width": 1920,
      "height": 2880,
-     "caption": "Carved wooden sarimanok standing on a fish, Bangsamoro and Lumad Cultures Gallery, Museum of the Filipino People, Manila"
+     "caption": "Carved wooden sarimanok standing on a fish, Bangsamoro and Lumad Cultures Gallery, Museum of the Filipino People, Manila",
+     "tone": [
+      24,
+      0.6
+     ]
     }
    ],
    "model": null
@@ -1357,7 +1490,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
      "width": 910,
      "height": 740,
-     "caption": "Moro kampilan of the late 19th to early 20th century with rattan-bound hilt and wooden sheath"
+     "caption": "Moro kampilan of the late 19th to early 20th century with rattan-bound hilt and wooden sheath",
+     "tone": [
+      21,
+      0.44
+     ]
     },
     {
      "file": "File:Krieger 1926 Philippine ethnic weapons Plate 7.png",
@@ -1368,7 +1505,11 @@
      "license_url": null,
      "width": 1565,
      "height": 949,
-     "caption": "1926 plate of kampilan and talibong; No. 1 is a kampilan from Lake Lanao captured in 1903"
+     "caption": "1926 plate of kampilan and talibong; No. 1 is a kampilan from Lake Lanao captured in 1903",
+     "tone": [
+      50,
+      0.35
+     ]
     }
    ],
    "model": null
@@ -1416,7 +1557,8 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
      "width": 1920,
      "height": 1044,
-     "caption": "Tugaya-made kris in its sheath on an inlaid stand, at a 2024 crafts fair in Manila"
+     "caption": "Tugaya-made kris in its sheath on an inlaid stand, at a 2024 crafts fair in Manila",
+     "tone": null
     },
     {
      "file": "File:Tugaya Lanao del Sur kris6.jpg",
@@ -1427,7 +1569,11 @@
      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
      "width": 1920,
      "height": 812,
-     "caption": "Tugaya kris on a carved stand with mother-of-pearl inlay"
+     "caption": "Tugaya kris on a carved stand with mother-of-pearl inlay",
+     "tone": [
+      354,
+      0.61
+     ]
     }
    ],
    "model": {

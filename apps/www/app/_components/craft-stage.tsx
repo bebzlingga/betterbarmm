@@ -2,9 +2,10 @@
 
 import { CubeIcon } from '@phosphor-icons/react'
 import dynamic from 'next/dynamic'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { commonsThumb } from '../_lib/commons'
 import { PhotoCredit } from './discover-figure'
+import { toneVars } from '../_lib/craft-tone'
 import type { CraftImage, CraftModel } from '../_lib/crafts'
 
 /* The craft's main picture and the rail beside it: the object in three
@@ -21,9 +22,17 @@ export function CraftStage({ name, model, images, className = '' }: { name: stri
 	const [at, setAt] = useState(model ? -1 : 0)
 	const photo = at >= 0 ? images[at] : undefined
 	const tiles = [...(model ? [-1] : []), ...images.map((_, i) => i)]
+	const ref = useRef<HTMLDivElement>(null)
+
+	// Repaint the card in the colours of the photo now on show (the model keeps the first photo's).
+	useEffect(() => {
+		const card = ref.current?.closest<HTMLElement>('[data-craft-tone]')
+		if (!card) return
+		for (const [k, v] of Object.entries(toneVars(images[Math.max(0, at)]?.tone))) card.style.setProperty(k, v)
+	}, [at, images])
 
 	return (
-		<div className={`flex flex-col gap-4 lg:flex-row ${className}`}>
+		<div ref={ref} className={`flex flex-col gap-4 lg:flex-row ${className}`}>
 			<figure className='relative flex min-h-0 flex-1 flex-col'>
 				<div className='relative grid min-h-[18rem] flex-1 place-items-center [container-type:size]'>
 					{photo ? (

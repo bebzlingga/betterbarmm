@@ -1,6 +1,7 @@
 import data from '../../../../datasets/crafts/crafts.json'
 
 export { commonsThumb } from './commons'
+import type { Tone } from './craft-tone'
 
 /* The crafts of the region: textiles, mats, brass, gongs, carving and blades,
    each with where it is made, who makes it and where a visitor can see it.
@@ -14,7 +15,7 @@ export type CraftModel =
 	| { kind: 'kris' }
 
 /** focus: a CSS object-position, where a crop should centre (two crafts can share one photo). */
-export type CraftImage = { focus?: string; url: string; page: string; author: string; license: string; license_url: string | null; width: number; height: number; caption: string }
+export type CraftImage = { tone?: Tone; focus?: string; url: string; page: string; author: string; license: string; license_url: string | null; width: number; height: number; caption: string }
 export type Sourced = { name: string; note: string; source: string; place?: string; month?: string }
 
 export type Craft = {

@@ -1,5 +1,6 @@
 import { ArrowUpRightIcon, MapPinIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
+import { toneVars } from '../_lib/craft-tone'
 import { GROUP, PROVINCE, commonsThumb, related, type Craft } from '../_lib/crafts'
 import { CraftCard } from './craft-card'
 import { CraftStage } from './craft-stage'
@@ -21,9 +22,10 @@ export function CraftView({ c }: { c: Craft }) {
 
 	return (
 		<>
-		<section className='flex min-h-dvh items-center bg-[linear-gradient(90deg,#4a2c22_0_63%,#9a6a4f_63%_100%)] px-4 py-16 sm:px-6 lg:py-14'>
+		{/* The card takes its colours from the photo on show; the stage repaints them when another is picked. */}
+			<section data-craft-tone style={toneVars(c.images[0]?.tone)} className='craft-tone flex min-h-dvh items-center bg-[linear-gradient(90deg,var(--tone-out-l)_0_63%,var(--tone-out-r)_63%_100%)] px-4 py-16 sm:px-6 lg:py-14'>
 			<div className='relative mx-auto flex w-full max-w-[84rem] flex-col overflow-hidden rounded-[10px] shadow-[0_40px_80px_-30px_rgba(30,12,5,0.7)] lg:grid lg:min-h-[calc(100dvh-7rem)] lg:grid-cols-[63fr_37fr]'>
-				<div className='flex flex-col bg-[radial-gradient(ellipse_at_70%_15%,#a7694c,#7b4a35_55%,#64392a)] p-7 text-[#f4e8dc] sm:p-12'>
+				<div className='flex flex-col bg-[radial-gradient(ellipse_at_70%_15%,var(--tone-glow),var(--tone-panel)_55%,var(--tone-edge))] p-7 text-[#f4e8dc] sm:p-12'>
 					<p className={`${serif} flex flex-wrap items-center gap-x-3 text-[22px] font-bold sm:text-[26px]`}>
 						<Link href='/crafts' replace className='hover:text-white'>
 							Crafts of the Bangsamoro
@@ -66,7 +68,7 @@ export function CraftView({ c }: { c: Craft }) {
 					</dl>
 				</div>
 
-				<div className='flex flex-col bg-[#f4efe8] p-6 sm:p-10'>
+				<div className='flex flex-col bg-[var(--tone-paper)] p-6 sm:p-10'>
 					<CraftStage
 						key={c.slug}
 						name={c.name}

@@ -351,7 +351,10 @@ Photos are Wikimedia Commons files under free licences (CC0, CC BY, CC BY-SA,
 public domain), 37 in all, credited on the page as each licence asks. Commons
 serves thumbnails only at fixed widths (250, 330, 500, 960, 1280, 1920); other
 widths answer 400. `model` describes the three-dimensional study the site draws
-for 9 of the crafts; it is a shape, not a scan.
+for 9 of the crafts; it is a shape, not a scan. Each image's `tone` is its dominant hue
+and saturation, read from the 250px thumbnail (pixels too dark, light or grey
+skipped; the rest vote by hue, weighted by saturation), or null for a grey
+photo. The dialog builds its colours from it at fixed lightness.
 
 Left out: Maranao and Maguindanaon jewellery (no readable source), Teduray and
 Iranun weaving (none either), Sulu's pis syabit and barong (Sulu is no longer in
