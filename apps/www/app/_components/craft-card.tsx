@@ -2,10 +2,11 @@ import Link from 'next/link'
 import { GROUP, PROVINCE, commonsThumb, type Craft } from '../_lib/crafts'
 
 /** A craft as a card: its first photo, or a wash of its colours where there is none. */
-export function CraftCard({ c }: { c: Craft }) {
+/** replace: inside the dialog, so moving between crafts keeps one history entry. */
+export function CraftCard({ c, replace = false }: { c: Craft; replace?: boolean }) {
 	const img = c.images[0]
 	return (
-		<Link href={`/crafts/${c.slug}`} className='group block overflow-hidden rounded-[6px] bg-white shadow-[0_12px_30px_-18px_rgba(60,30,15,0.45)] transition hover:shadow-[0_18px_40px_-16px_rgba(60,30,15,0.55)]'>
+		<Link href={`/crafts/${c.slug}`} replace={replace} className='group block overflow-hidden rounded-[6px] bg-white shadow-[0_12px_30px_-18px_rgba(60,30,15,0.45)] transition hover:shadow-[0_18px_40px_-16px_rgba(60,30,15,0.55)]'>
 			<span className='block aspect-[4/3] overflow-hidden bg-[#e9ddd0]'>
 				{img ? (
 					// eslint-disable-next-line @next/next/no-img-element

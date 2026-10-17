@@ -4,6 +4,12 @@ import { Alegreya } from 'next/font/google'
 // they are a catalogue to browse, not a record to check.
 const alegreya = Alegreya({ subsets: ['latin'], variable: '--font-craft', display: 'swap' })
 
-export default function CraftsLayout({ children }: { children: React.ReactNode }) {
-	return <div className={alegreya.variable}>{children}</div>
+/** modal: a craft opened from the catalogue, drawn full screen over it (see @modal). */
+export default function CraftsLayout({ children, modal }: { children: React.ReactNode; modal: React.ReactNode }) {
+	return (
+		<div className={alegreya.variable}>
+			{children}
+			{modal}
+		</div>
+	)
 }
