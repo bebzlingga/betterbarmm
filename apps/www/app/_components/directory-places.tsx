@@ -2,6 +2,7 @@ import { ArrowRightIcon, PhoneIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { commonsThumb } from '../_lib/commons'
 import { LINE_LABEL, localGovernments, placePhoto, provinceLines, telHref, townLines, type Line, type PlacePhoto } from '../_lib/directory'
+import { barmmBoundaries, lguProvinces, sameUnit } from '@betterbarmm/lgu-data'
 import { PhotoCredit } from './discover-figure'
 import { photo as discoverPhoto, type DiscoverPhotoKey } from './discover-media'
 
@@ -25,6 +26,45 @@ function Picture({ photo, name, size }: { photo: PlacePhoto | null; name: string
 	return (
 		// eslint-disable-next-line @next/next/no-img-element
 		<img src={commonsThumb(photo.url, size)} alt={photo.caption || name} loading='lazy' className='size-full object-cover' />
+	)
+}
+
+/** The numbers of an absolute M/L path, as [x, y] pairs. */
+const points = (d: string) => {
+	const n = d.match(/-?\d+(\.\d+)?/g)?.map(Number) ?? []
+	const out: [number, number][] = []
+	for (let i = 0; i + 1 < n.length; i += 2) out.push([n[i]!, n[i + 1]!])
+	return out
+}
+const box = (ds: string[]) => {
+	const ps = ds.flatMap(points)
+	const xs = ps.map((p) => p[0])
+	const ys = ps.map((p) => p[1])
+	const [x0, x1, y0, y1] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)]
+	const pad = Math.max(x1 - x0, y1 - y0) * 0.06
+	return `${x0 - pad} ${y0 - pad} ${x1 - x0 + 2 * pad} ${y1 - y0 + 2 * pad}`
+}
+
+/** A town without a photograph is drawn instead: its province's towns in outline and itself filled, from the PSA boundaries. */
+function townMap(province: string, town: string) {
+	const unit = lguProvinces.find((p) => p.slug === province)?.municipalities.find((m) => m.slug === town)
+	if (!unit) return null
+	const shapes = barmmBoundaries.units.filter((u) => u.area === province)
+	const own = shapes.find((u) => sameUnit(u.psgc, unit.psgc, u.name, unit.name))
+	if (!own) return null
+	return { viewBox: box(shapes.map((u) => u.d)), others: shapes.filter((u) => u !== own).map((u) => u.d), own: own.d }
+}
+
+function TownMap({ province, town, name }: { province: string; town: string; name: string }) {
+	const m = townMap(province, town)
+	if (!m) return <Picture photo={null} name={name} size={500} />
+	return (
+		<svg viewBox={m.viewBox} preserveAspectRatio='xMidYMid meet' role='img' aria-label={`Where ${name} lies in its province`} className='size-full bg-[var(--paper-2)] p-2'>
+			{m.others.map((d, i) => (
+				<path key={i} d={d} fill='var(--paper)' stroke='var(--rule)' strokeWidth='0.6' vectorEffect='non-scaling-stroke' />
+			))}
+			<path d={m.own} fill='var(--accent)' fillOpacity='0.85' stroke='var(--accent)' strokeWidth='1' vectorEffect='non-scaling-stroke' />
+		</svg>
 	)
 }
 
@@ -109,7 +149,7 @@ export function DirectoryPlaces() {
 								return (
 									<li key={u.slug} className='bb-frame relative flex gap-4 border-b border-[var(--rule-soft)] bg-transparent! py-3 sm:flex-col sm:gap-0 sm:overflow-hidden sm:border sm:border-[var(--rule)] sm:py-0'>
 										<span className='relative size-16 shrink-0 overflow-hidden sm:h-32 sm:w-full sm:rounded-none'>
-											<Picture photo={tp} name={u.name} size={500} />
+											{tp ? <Picture photo={tp} name={u.name} size={500} /> : <TownMap province={g.slug} town={u.slug} name={u.name} />}
 											{tp ? (
 												<span className='hidden sm:contents'>
 													<PhotoCredit photo={credit(tp)} />
