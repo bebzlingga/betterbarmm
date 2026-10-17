@@ -26,9 +26,9 @@ export function CraftsCatalogue() {
 						{crafts.length} crafts · {peoples} peoples
 					</p>
 					<h1 className={`${serif} mt-3 max-w-4xl text-[48px] font-bold leading-[1.04] sm:text-[68px] lg:text-[80px]`}>
-						Crafts of the
+						Living Crafts
 						<br />
-						Bangsamoro
+						of the Bangsamoro
 					</h1>
 					<p className={`${serif} mt-5 max-w-2xl text-[18px] leading-[1.6] text-[#ecdccd]`}>
 						What the region weaves, casts and carves: where each piece is made, who still makes it, and where a visitor can watch it made or buy it from the hands that made it.
