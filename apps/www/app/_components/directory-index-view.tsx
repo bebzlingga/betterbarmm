@@ -42,7 +42,7 @@ export function DirectoryIndex() {
 					{hotlines.length ? (
 						<section id='hotlines' aria-labelledby='hotlines-title' className='scroll-mt-[calc(var(--site-header-h)+1rem)]'>
 							{/* As many columns as there are panels, up to three, so no empty cell shows the rule colour. */}
-							<div className={`grid gap-px overflow-hidden rounded-[6px] border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-2 ${hotlines.length + 1 >= 3 ? 'lg:grid-cols-3' : ''}`}>
+							<div className={`grid gap-px overflow-hidden border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-2 ${hotlines.length + 1 >= 3 ? 'lg:grid-cols-3' : ''}`}>
 								<div className='flex items-center gap-3 bg-[#8f2328] p-5 text-white'>
 									<SirenIcon size={26} weight='fill' aria-hidden='true' />
 									<div>
@@ -84,7 +84,7 @@ export function DirectoryIndex() {
 											<li key={o.slug}>
 												<Link scroll={false}
 													href={`/directory/office/${o.slug}`}
-													className='group flex h-full flex-col border-b border-[var(--rule-soft)] py-3 transition sm:rounded-[6px] sm:border sm:border-[var(--rule)] sm:p-5 sm:hover:border-[var(--ink)] sm:hover:shadow-[0_14px_30px_-22px_rgba(0,0,0,0.5)]'
+													className='group flex h-full flex-col border-b border-[var(--rule-soft)] py-3 transition sm:border sm:border-[var(--rule)] sm:p-5 sm:hover:border-[var(--ink)] sm:hover:shadow-[0_14px_30px_-22px_rgba(0,0,0,0.5)]'
 												>
 													<span className='hidden items-start justify-between gap-3 sm:flex'>
 														<span className={`${eyebrow} text-[var(--accent)]`}>{o.acronym ?? (o.kind === 'attached' ? 'Office' : 'Ministry')}</span>
@@ -132,7 +132,7 @@ export function DirectoryIndex() {
 					<section aria-labelledby='mps-title' className='mt-20'>
 						<Link scroll={false}
 							href='/directory/parliament'
-							className='group flex flex-col gap-4 rounded-[6px] border border-[var(--rule)] bg-[var(--paper-2)] p-6 transition hover:border-[var(--ink)] sm:flex-row sm:items-center sm:justify-between'
+							className='group flex flex-col gap-4 border border-[var(--rule)] bg-[var(--paper-2)] p-6 transition hover:border-[var(--ink)] sm:flex-row sm:items-center sm:justify-between'
 						>
 							<span>
 								<span className={`${eyebrow} text-[var(--accent)]`}>Bangsamoro Parliament</span>

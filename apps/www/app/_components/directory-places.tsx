@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { commonsThumb } from '../_lib/commons'
 import { LINE_LABEL, localGovernments, placePhoto, provinceLines, telHref, townLines, type Line, type PlacePhoto } from '../_lib/directory'
 import { PhotoCredit } from './discover-figure'
+import { photo as discoverPhoto, type DiscoverPhotoKey } from './discover-media'
 
 /* The directory's provinces and towns, laid out in full: each province under a
    photograph of it, with its governor and its own lines, then every town as a
@@ -29,20 +30,31 @@ function Picture({ photo, name, size }: { photo: PlacePhoto | null; name: string
 
 const credit = (p: PlacePhoto) => ({ credit: p.author, license: p.license, source: p.page })
 
+/** Where a province has no Commons photograph yet, the site's own Discover photograph of it, already credited. */
+const AREA_FALLBACK: Record<string, DiscoverPhotoKey> = { 'tawi-tawi': 'budBongao', 'cotabato-city': 'cotabatoPlaza', 'lanao-del-sur': 'lakeLanao', basilan: 'yakanWeaving' }
+function bannerPhoto(slug: string) {
+	const p = placePhoto(slug)
+	if (p) return { src: commonsThumb(p.url, 1280), credit: credit(p) }
+	const key = AREA_FALLBACK[slug]
+	if (!key) return null
+	const d = discoverPhoto(key)
+	return { src: d.src.src, credit: d }
+}
+
 export function DirectoryPlaces() {
 	return (
 		<div className='mt-10 space-y-16'>
 			{localGovernments.map((g) => {
-				const photo = placePhoto(g.slug)
+				const banner = bannerPhoto(g.slug)
 				const lines = provinceLines(g.slug)
 				const single = g.units.length === 1
 				return (
 					<section key={g.slug} id={`area-${g.slug}`} aria-labelledby={`area-${g.slug}-title`} className='scroll-mt-[calc(var(--site-header-h)+1rem)]'>
 						{/* The province under its photograph. */}
-						<div className='bb-frame relative isolate h-56 overflow-hidden rounded-[8px] bg-[#3a1a14] sm:h-64'>
-							{photo ? (
+						<div className='bb-frame relative isolate h-56 overflow-hidden bg-[#3a1a14] sm:h-64'>
+							{banner ? (
 								// eslint-disable-next-line @next/next/no-img-element
-								<img src={commonsThumb(photo.url, 1280)} alt='' loading='lazy' className='absolute inset-0 -z-10 size-full object-cover' />
+								<img src={banner.src} alt='' loading='lazy' className='absolute inset-0 -z-10 size-full object-cover' />
 							) : null}
 							<span aria-hidden='true' className='absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgba(20,8,4,0.85),rgba(20,8,4,0.25)_60%,rgba(20,8,4,0.05))]' />
 							<div className='flex h-full flex-col justify-end p-5 text-white sm:p-7'>
@@ -56,7 +68,12 @@ export function DirectoryPlaces() {
 									{g.governor ? (
 										<>
 											Governor <span className='font-semibold text-white'>{g.governor}</span>
-											{g.viceGovernor ? <span className='hidden sm:inline'> · Vice governor {g.viceGovernor}</span> : null}
+											{g.viceGovernor ? (
+												<span className='hidden sm:inline'>
+													{' '}
+													· Vice governor <span className='font-semibold text-white'>{g.viceGovernor}</span>
+												</span>
+											) : null}
 										</>
 									) : single && g.units[0]!.head ? (
 										<>
@@ -67,7 +84,7 @@ export function DirectoryPlaces() {
 									)}
 								</p>
 							</div>
-							{photo ? <PhotoCredit photo={credit(photo)} /> : null}
+							{banner ? <PhotoCredit photo={banner.credit} /> : null}
 						</div>
 
 						{/* Its own lines, then where to find the rest. */}
@@ -90,8 +107,8 @@ export function DirectoryPlaces() {
 								const tp = placePhoto(g.slug, u.slug)
 								const tl = topLines(townLines(g.slug, u.slug))
 								return (
-									<li key={u.slug} className='bb-frame relative flex gap-4 border-b border-[var(--rule-soft)] bg-transparent! py-3 sm:flex-col sm:gap-0 sm:overflow-hidden sm:rounded-[6px] sm:border sm:border-[var(--rule)] sm:py-0'>
-										<span className='relative size-16 shrink-0 overflow-hidden rounded-[4px] sm:h-32 sm:w-full sm:rounded-none'>
+									<li key={u.slug} className='bb-frame relative flex gap-4 border-b border-[var(--rule-soft)] bg-transparent! py-3 sm:flex-col sm:gap-0 sm:overflow-hidden sm:border sm:border-[var(--rule)] sm:py-0'>
+										<span className='relative size-16 shrink-0 overflow-hidden sm:h-32 sm:w-full sm:rounded-none'>
 											<Picture photo={tp} name={u.name} size={500} />
 											{tp ? (
 												<span className='hidden sm:contents'>

@@ -1,6 +1,238 @@
 {
  "name": "Photographs of BARMM's provinces, cities and towns",
  "note": "One freely licensed Wikimedia Commons photograph per place, credited as its licence asks.",
- "areas": {},
- "towns": {}
+ "areas": {
+  "basilan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/To_Basilan_Island.jpg/1280px-To_Basilan_Island.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:To_Basilan_Island.jpg",
+   "author": "Aldous Mariano Cariño",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 4461,
+   "height": 2974,
+   "caption": "A ferry crossing the Basilan Strait towards the forested mountains of Basilan Island"
+  },
+  "lanao-del-sur": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Lake_Lanao_Marawi_City.jpg/1280px-Lake_Lanao_Marawi_City.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Lake_Lanao_Marawi_City.jpg",
+   "author": "PeterParker22",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 1600,
+   "height": 1200,
+   "caption": "Lake Lanao and the surrounding mountains, seen from Marawi City"
+  },
+  "maguindanao-del-norte": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Polloc_Port.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Polloc_Port.jpg",
+   "author": "MarkoDalisay",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 960,
+   "height": 720,
+   "caption": "Aerial view of Polloc Port in Parang, on Illana Bay"
+  }
+ },
+ "towns": {
+  "basilan/lamitan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Lamitan_Poblacion%2C_Quezon_Boulevard_rotonda_%28Lamitan%2C_Basilan%3B_10-07-2023%29.jpg/1280px-Lamitan_Poblacion%2C_Quezon_Boulevard_rotonda_%28Lamitan%2C_Basilan%3B_10-07-2023%29.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Lamitan_Poblacion,_Quezon_Boulevard_rotonda_(Lamitan,_Basilan;_10-07-2023).jpg",
+   "author": "Patrickroque01",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 3552,
+   "height": 2664,
+   "caption": "The rotonda on Quezon Boulevard in the Lamitan town proper"
+  },
+  "basilan/maluso": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Port_Holland_Maluso.jpg/1280px-Port_Holland_Maluso.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Port_Holland_Maluso.jpg",
+   "author": "Jjarivera",
+   "license": "Public domain",
+   "license_url": "",
+   "width": 1600,
+   "height": 1200,
+   "caption": "Market stalls along the main street of Port Holland, Maluso"
+  },
+  "lanao-del-sur/bacolod-kalawi": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Bacolod-Kalawi_Lanao_del_Sur..jpg/1280px-Bacolod-Kalawi_Lanao_del_Sur..jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bacolod-Kalawi_Lanao_del_Sur..jpg",
+   "author": "micketymoc",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "width": 1600,
+   "height": 1200,
+   "caption": "Masjid Bacolod on the shore of Lake Lanao in Bacolod-Kalawi"
+  },
+  "lanao-del-sur/balabagan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Coolest_spring_Balabagan_pic-1.jpg/1280px-Coolest_spring_Balabagan_pic-1.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Coolest_spring_Balabagan_pic-1.jpg",
+   "author": "Yasser arumpac",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 2048,
+   "height": 1536,
+   "caption": "A clear spring-fed bathing spot in Balabagan"
+  },
+  "lanao-del-sur/kapatagan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/6/68/Kapatagan_LDS_Municipal_Hall.jpeg/1280px-Kapatagan_LDS_Municipal_Hall.jpeg",
+   "page": "https://en.wikipedia.org/wiki/File:Kapatagan_LDS_Municipal_Hall.jpeg",
+   "author": "Marwan Khan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The municipal hall of Kapatagan"
+  },
+  "lanao-del-sur/marawi": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Sights_of_Marawi_City%2C_Lanao_del_Sur_%2839%29.jpg/1280px-Sights_of_Marawi_City%2C_Lanao_del_Sur_%2839%29.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sights_of_Marawi_City,_Lanao_del_Sur_(39).jpg",
+   "author": "Bjeweld",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 6000,
+   "height": 4000,
+   "caption": "The Islamic Center of Marawi, the city's Grand Mosque"
+  },
+  "lanao-del-sur/masiu": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Municipal_hall_of_municipality_of_Masiu_in_the_province_of_Lanao_del_Sur%2C_BARMM.jpg/1280px-Municipal_hall_of_municipality_of_Masiu_in_the_province_of_Lanao_del_Sur%2C_BARMM.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Municipal_hall_of_municipality_of_Masiu_in_the_province_of_Lanao_del_Sur,_BARMM.jpg",
+   "author": "nihayapm",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 4000,
+   "height": 2250,
+   "caption": "Aerial view of the municipal hall of Masiu"
+  },
+  "lanao-del-sur/piagapo": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Piagapo_Municipal_Complex.jpg/1280px-Piagapo_Municipal_Complex.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Piagapo_Municipal_Complex.jpg",
+   "author": "Onward piagapo",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 3648,
+   "height": 2432,
+   "caption": "The municipal hall at the Piagapo Municipal Complex"
+  },
+  "lanao-del-sur/picong": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Picong_Hall.jpg/1280px-Picong_Hall.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Picong_Hall.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The elevated municipal hall of Picong"
+  },
+  "lanao-del-sur/pualas": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Water_Body_Classification_of_Lake_Dapao_commences.jpg/1280px-Water_Body_Classification_of_Lake_Dapao_commences.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Water_Body_Classification_of_Lake_Dapao_commences.jpg",
+   "author": "Bangsamoro Ministry of Environment, Natural Resources, and Energy",
+   "license": "Public domain",
+   "license_url": "",
+   "width": 2000,
+   "height": 1320,
+   "caption": "A small boat on Lake Dapao in Pualas"
+  },
+  "lanao-del-sur/tamparan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Lake_Lanao_in_Tamparan%2C_Lanao_del_Sur_%28cropped%29.jpg/1280px-Lake_Lanao_in_Tamparan%2C_Lanao_del_Sur_%28cropped%29.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Lake_Lanao_in_Tamparan,_Lanao_del_Sur_(cropped).jpg",
+   "author": "Jiminenur",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 2106,
+   "height": 1665,
+   "caption": "The shore of Lake Lanao at Tamparan"
+  },
+  "maguindanao-del-norte/barira": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Barira_Municipal_Hall.jpg/1280px-Barira_Municipal_Hall.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Barira_Municipal_Hall.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The municipal hall of Barira"
+  },
+  "maguindanao-del-norte/buldon": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Buldon_Municipal_Hall.jpg/1280px-Buldon_Municipal_Hall.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Buldon_Municipal_Hall.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The municipal hall of Buldon"
+  },
+  "maguindanao-del-norte/datu-odin-sinsuat": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Datu_Odin_Sinsuat_Town_Hall.jpg/1280px-Datu_Odin_Sinsuat_Town_Hall.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Datu_Odin_Sinsuat_Town_Hall.jpg",
+   "author": "MarkoDalisay",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 4160,
+   "height": 3120,
+   "caption": "The municipal hall of Datu Odin Sinsuat"
+  },
+  "maguindanao-del-norte/kabuntalan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Kabuntalan_Municipal_Hall.jpg/1280px-Kabuntalan_Municipal_Hall.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Kabuntalan_Municipal_Hall.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The municipal hall of Kabuntalan"
+  },
+  "maguindanao-del-norte/matanog": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Matanog_Poblacion.jpg/1280px-Matanog_Poblacion.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Matanog_Poblacion.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The town centre (poblacion) of Matanog"
+  },
+  "maguindanao-del-norte/parang": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Parang_Wharf_Road.jpg/1280px-Parang_Wharf_Road.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Parang_Wharf_Road.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The tree-lined Parang Wharf Road in Parang"
+  },
+  "maguindanao-del-norte/sultan-kudarat": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/SK_MAG_Municipal_Hall.jpg/1280px-SK_MAG_Municipal_Hall.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:SK_MAG_Municipal_Hall.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The municipal hall of Sultan Kudarat at Barangay Dalumangcob"
+  },
+  "maguindanao-del-norte/sultan-mastura": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Sultan_Mastura_Hall.jpg/1280px-Sultan_Mastura_Hall.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sultan_Mastura_Hall.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The municipal hall of Sultan Mastura on the Maharlika Highway"
+  },
+  "maguindanao-del-norte/upi": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Nangi_Upi_23.jpg/1280px-Nangi_Upi_23.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Nangi_Upi_23.jpg",
+   "author": "LuzViMindaLife",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 4000,
+   "height": 3000,
+   "caption": "Rice fields and mountains in the upland town of Upi"
+  }
+ }
 }
