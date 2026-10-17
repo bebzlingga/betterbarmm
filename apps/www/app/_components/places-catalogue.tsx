@@ -1,4 +1,3 @@
-import { WarningCircleIcon } from '@phosphor-icons/react/ssr'
 import { AREA, KIND, byPhoto, place, places } from '../_lib/places'
 import { commonsThumb } from '../_lib/commons'
 import { PhotoCredit } from './discover-figure'
@@ -26,26 +25,14 @@ export function PlacesCatalogue() {
 					<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[#9fd6cf]'>
 						{places.length} places · {areas} areas
 					</p>
-					<h1 className='mt-3 max-w-3xl text-[44px] font-extrabold leading-[1.02] tracking-[-0.03em] sm:text-[64px] lg:text-[76px]'>
-						Places of the
-						<br />
-						Bangsamoro
-					</h1>
+					{/* One line at every width, sized to the screen. */}
+					<h1 className='mt-3 text-[clamp(1.9rem,7.6vw,6.75rem)] font-extrabold leading-[1] tracking-[-0.035em] whitespace-nowrap'>Places of the Bangsamoro</h1>
 					<p className='mt-5 max-w-xl text-[17px] leading-[1.6] text-white/85'>
 						Islands and white sand, lakes in the highlands, mosques, falls and the old forts and houses of the sultanates: what is there, how to get there, and what to know before you go.
 					</p>
 				</div>
 				{cover ? <PhotoCredit photo={{ credit: cover.author, license: cover.license, source: cover.page }} /> : null}
 			</section>
-
-			<div className='bb-container pt-12'>
-				<p className='flex max-w-4xl gap-3 border-l-2 border-[#d9a441] pl-4 text-[14px] leading-[1.6] text-[#34505a]'>
-					<WarningCircleIcon size={18} weight='fill' className='mt-0.5 shrink-0 text-[#9a6a16]' aria-hidden='true' />
-					<span>
-						Several governments advise against travel to parts of Mindanao, including much of BARMM. Check your government’s current advice, go with someone local, and confirm a place is open before you set out.
-					</span>
-				</p>
-			</div>
 
 			<div className='bb-container pt-14 pb-20 lg:pt-16 lg:pb-28'>
 				{kinds.map(({ k, list }) => (
