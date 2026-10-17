@@ -122,29 +122,37 @@ export default async function HomePage() {
 			    and the links all invert together — and anything added
 			    here later inverts with them. */}
 			<section className='brand-bg bb-lattice relative overflow-hidden'>
-				<span aria-hidden='true' className='bb-glow absolute -left-[6%] -top-[14%] size-[34rem]' />
+				{/* A warm yellow light from the top centre, over the headline. Important: bb-glow sets its own brass ground outside the layers. */}
+				<span
+					aria-hidden='true'
+					className='bb-glow absolute -top-[22rem] left-1/2 h-[40rem] w-[64rem] max-w-[160vw] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(255,206,84,0.75)_0%,rgba(255,170,40,0.35)_38%,transparent_70%)]! opacity-80!'
+				/>
 
 				{/* Shorter than it was, and it now does a job: the search box is the band's one
 				    action, since most readers arrive looking for something specific — a bill, a
 				    town, a budget line. The links under it are the ways in for everyone else. */}
-				<div className='bb-container relative py-14 lg:py-20'>
+				<div className='bb-container relative py-20 lg:py-32'>
 					{/* One centred column: label, headline, standfirst, search, the ways in. */}
-					<div className='mx-auto max-w-3xl text-center'>
+					<div className='mx-auto max-w-5xl text-center'>
 						<Rise distance={14}>
 							<p className='bb-label'>Public transparency for the Bangsamoro</p>
 						</Rise>
 
 						<LineReveal
-							lines={['Every public record,', 'traced to its source.']}
+							lines={[
+								<>
+									Public records, <span className='bb-mute'>in one place.</span>
+								</>,
+							]}
 							delay={0.08}
-							// A step above bb-display-md: the band's one headline.
-							className='bb-display-md mt-5 text-[var(--ink)] [font-size:clamp(min(2.8rem,10.6vw),5.8vw,5rem)]'
-							lineClassName={[undefined, 'bb-mute']}
+							// One line at every width: sized to the screen rather than wrapped, up to a step above bb-display-md.
+							// Important: bb-display-md sits outside the layers and would win over both, its text-wrap: balance included.
+							className='bb-display-md mt-5 text-[var(--ink)] [font-size:clamp(1.6rem,6.4vw,5rem)]! text-nowrap!'
 						/>
 
 						<Rise delay={0.3} distance={16}>
 							<p className='mx-auto mt-6 max-w-xl text-[15px] leading-7 text-[var(--ink-2)]'>
-								Bills, budgets, elections, procurement and every local government in the region, made readable.
+								Bills, budgets, elections, procurement and every local government in the region, readable and traced back to the source.
 							</p>
 						</Rise>
 
