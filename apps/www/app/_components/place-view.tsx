@@ -31,6 +31,8 @@ export function PlaceView({ p }: { p: Place }) {
 	const stays = staysNear(p)
 	const lodgingHere = areaLodging(p.area)
 	const near = nearby(p)
+	// The place's own food first, then the area's dishes from the travel guide.
+	const food = [...(p.eat ?? []).map((d) => ({ key: d.title, name: d.title, line: d.detail, who: p.municipality, photo: null })), ...dishesHere.map((d) => ({ key: d.slug, name: d.name, line: d.summary, who: d.tradition, photo: dishPhoto(d.slug) }))]
 	return (
 		<>
 			<section className='bb-frame relative isolate flex min-h-[62dvh] items-end overflow-hidden bg-[#13303a] text-white'>
@@ -97,32 +99,6 @@ export function PlaceView({ p }: { p: Place }) {
 							</ul>
 						</div>
 					) : null}
-					{p.eat?.length || dishesHere.length ? (
-						<div>
-							<p className={`${label} flex items-center gap-1.5 text-[#1f6f78]`}>
-								<BowlFoodIcon size={14} weight='fill' aria-hidden='true' /> Food to try
-							</p>
-							<ul className='mt-3 space-y-3'>
-								{[...(p.eat ?? []).map((d) => ({ key: d.title, name: d.title, line: d.detail, who: null, photo: null })), ...dishesHere.map((d) => ({ key: d.slug, name: d.name, line: d.summary, who: d.tradition, photo: dishPhoto(d.slug) }))].map((d) => (
-									<li key={d.key} className='flex gap-3'>
-										{d.photo ? (
-											<a href={d.photo.source} target='_blank' rel='noreferrer' title={`Photo: ${d.photo.credit}, ${d.photo.license}`} className='shrink-0'>
-												{/* eslint-disable-next-line @next/next/no-img-element */}
-												<img src={d.photo.src.src} alt={d.photo.alt} loading='lazy' className='size-14 object-cover' />
-											</a>
-										) : null}
-										<span className='min-w-0 text-[14.5px] leading-[1.55] text-[#34505a]'>
-											<span className='font-semibold text-[#13303a]'>{d.name}</span>
-											{d.who ? <span className='ml-1.5 text-[12px] text-[#7a8c92]'>{d.who}</span> : null}
-											<span className='block'>{d.line}</span>
-											{d.photo ? <span className='block text-[11.5px] text-[#7a8c92]'>Photo: {d.photo.credit}</span> : null}
-										</span>
-									</li>
-								))}
-							</ul>
-							<p className='mt-2 text-[12px] text-[#7a8c92]'>The food is halal; dishes are the travel guide’s.</p>
-						</div>
-					) : null}
 					{p.before_you_go.length ? (
 						<div className='border-l-2 border-[#d9a441] pl-4'>
 							<p className={`${label} flex items-center gap-1.5 text-[#9a6a16]`}>
@@ -152,6 +128,40 @@ export function PlaceView({ p }: { p: Place }) {
 				</aside>
 			</section>
 
+
+			{/* What to eat, in the same grid as where to sleep. */}
+			{food.length ? (
+				<section aria-labelledby='food' className='bb-container pb-14'>
+					<h2 id='food' className='text-[22px] font-extrabold tracking-[-0.02em] text-[#13303a]'>
+						Food to try <span className='text-[#8aa3a9]'>{food.length}</span>
+					</h2>
+					<ul className='mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6'>
+						{food.map((d) => (
+							<li key={d.key} className='bb-frame relative bg-transparent!'>
+								<span className='relative block aspect-[4/3] overflow-hidden bg-[#dfe9e6]'>
+									{d.photo ? (
+										<a href={d.photo.source} target='_blank' rel='noreferrer' title={`Photo: ${d.photo.credit}, ${d.photo.license}`}>
+											{/* eslint-disable-next-line @next/next/no-img-element */}
+											<img src={d.photo.src.src} alt={d.photo.alt} loading='lazy' className='size-full object-cover' />
+										</a>
+									) : (
+										<span className='grid size-full place-items-center bg-[linear-gradient(135deg,#e3efec,#cfe0dc)] text-[#1f6f78]'>
+											<BowlFoodIcon size={28} weight='duotone' aria-hidden='true' />
+										</span>
+									)}
+								</span>
+								<span className='block pt-3'>
+									{d.who ? <span className='font-mono text-[9.5px] font-semibold uppercase tracking-[0.12em] text-[#1f6f78]'>{d.who}</span> : null}
+									<span className='mt-0.5 block text-[14.5px] font-bold leading-snug text-[#13303a]'>{d.name}</span>
+									<span className='mt-0.5 line-clamp-3 block text-[12.5px] leading-[1.5] text-[#4d6670]'>{d.line}</span>
+									{d.photo ? <span className='mt-1 block text-[11.5px] text-[#7a8c92]'>Photo: {d.photo.credit}</span> : null}
+								</span>
+							</li>
+						))}
+					</ul>
+					<p className='mt-3 text-[12px] text-[#7a8c92]'>The food is halal. Named eateries come from dated listings, so check they are still open.</p>
+				</section>
+			) : null}
 
 			{/* Where to sleep, shown only where there is somewhere listed: the guide's word on the area, then up to six places, each with its source. */}
 			{stays.length ? (
