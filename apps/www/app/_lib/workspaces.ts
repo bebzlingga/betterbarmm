@@ -1,3 +1,4 @@
+import type { Project } from '../_components/project-list'
 import type { Workspace } from '../_components/workspace-index'
 
 /** Every workspace, in the order the front page shows them. */
@@ -70,5 +71,32 @@ export const workspaces: Workspace[] = [
 		blurb: 'The documents and datasets underneath every workspace, openable on their own.',
 		measure: 'PDFs and JSON',
 		state: 'planned',
+	},
+]
+
+/** The projects: records of a different kind, each a page on this site rather than a workspace of its own. */
+export const projects: Project[] = [
+	{
+		key: 'accidents',
+		label: 'Incident Watch',
+		href: '/accidents',
+		measure: 'Since 2019',
+		blurb: 'Road crashes, sea mishaps, fires, floods and shootings across the region, mapped from the news, every report linked.',
+		state: 'live',
+	},
+	{
+		key: 'directory',
+		label: 'Directory',
+		href: '/directory',
+		measure: '35 offices · every LGU',
+		blurb: 'Who heads each regional office, with its numbers and emails, and every governor and mayor in BARMM.',
+		state: 'live',
+	},
+	{
+		key: 'services',
+		label: 'Programs & services',
+		measure: 'Citizen’s Charters',
+		blurb: 'What each office offers, who it is for, and what to bring, from its own Citizen’s Charter.',
+		state: 'soon',
 	},
 ]

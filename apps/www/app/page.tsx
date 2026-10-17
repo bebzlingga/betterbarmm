@@ -14,7 +14,8 @@ import { SiteHeader } from './_components/site-header'
 import { WorkspaceList } from './_components/workspace-index'
 import { ExplainerCard } from './_components/explainer-card'
 import { listExplainers } from './_lib/explainers'
-import { workspaces } from './_lib/workspaces'
+import { projects, workspaces } from './_lib/workspaces'
+import { ProjectList } from './_components/project-list'
 
 export const metadata: Metadata = {
 	alternates: { canonical: '/' },
@@ -199,6 +200,23 @@ export default async function HomePage() {
 				</div>
 				<div className='mt-6'>
 					<WorkspaceList workspaces={workspaces} />
+				</div>
+			</section>
+
+			{/* ---- The projects ----
+
+			    The same grid as the workspaces, each with a picture of what it holds. */}
+			<section aria-labelledby='projects-title' className='border-t border-[var(--rule)]'>
+				<div className='bb-container py-20 lg:py-24'>
+					<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2'>
+						<h2 id='projects-title' className='text-[1.6rem] font-extrabold tracking-[-0.03em]'>
+							Projects <span className='text-[var(--ink-mute)]'>· {projects.filter((p) => p.state === 'live').length} live</span>
+						</h2>
+						<p className='max-w-xl text-[13.5px] leading-6 text-[var(--ink-3)]'>Records of another kind, each on a page of its own.</p>
+					</div>
+					<div className='mt-6'>
+						<ProjectList projects={projects} />
+					</div>
 				</div>
 			</section>
 
