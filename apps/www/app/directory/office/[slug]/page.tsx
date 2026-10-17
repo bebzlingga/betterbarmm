@@ -179,7 +179,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 								<li key={h.name + h.from} className='grid gap-x-4 gap-y-0.5 py-2.5 sm:grid-cols-[13rem_minmax(0,1fr)_auto]'>
 									<span className='tabular-nums text-[var(--ink-3)]'>
 										{h.from ? monthYear(h.from) : h.first_seen ? `By ${monthYear(h.first_seen)}` : '?'} –{' '}
-										{h.to ? monthYear(h.to) : h.former ? (h.last_seen ? `at least ${monthYear(h.last_seen)}` : 'undated') : 'now'}
+										{h.to ? monthYear(h.to) : h.former ? (h.last_seen ? `at least ${monthYear(h.last_seen)}` : 'undated') : 'Present'}
 									</span>
 									<span>
 										<span className='font-semibold'>{h.name}</span>
