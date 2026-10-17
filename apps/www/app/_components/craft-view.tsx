@@ -53,7 +53,7 @@ export function CraftView({ c }: { c: Craft }) {
 						) : null}
 					</div>
 
-					<dl className='grid gap-x-10 gap-y-6 text-[13.5px] leading-[1.6] sm:grid-cols-3 lg:w-4/5'>
+					<dl className='grid gap-x-10 gap-y-6 text-[13.5px] leading-[1.6] sm:grid-cols-3 lg:w-[90%]'>
 						<div>
 							<dt className={`${serif} text-[17px] font-bold text-[#f4e8dc]`}>Made in</dt>
 							<dd className='mt-2 text-[#e2cbb8]'>{made}</dd>
