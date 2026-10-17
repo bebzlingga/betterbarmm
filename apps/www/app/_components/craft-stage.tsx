@@ -23,6 +23,14 @@ export function CraftStage({ name, model, images, colors = [], className = '' }:
 	const photo = at >= 0 ? images[at] : undefined
 	const tiles = [...(model ? [-1] : []), ...images.map((_, i) => i)]
 	const ref = useRef<HTMLDivElement>(null)
+	// The photo whose file has arrived: a new one stays hidden until then, so the frame never shows the old
+	// picture in the new shape, or an empty box, mid-switch.
+	const [ready, setReady] = useState<string | null>(null)
+
+	// Fetch the other photos as soon as the craft opens, so a switch is usually instant.
+	useEffect(() => {
+		for (const i of images.slice(1)) new Image().src = i.url
+	}, [images])
 
 	// Repaint the card in the colours of the photo now on show (the model keeps the first photo's).
 	useEffect(() => {
@@ -38,11 +46,22 @@ export function CraftStage({ name, model, images, colors = [], className = '' }:
 					{photo ? (
 						// The frame is the picture's own size, the largest that fits, so the credit sits on its corner.
 						<span
+							key={photo.url}
 							className='bb-frame relative overflow-hidden rounded-[4px] shadow-[0_30px_60px_-20px_rgba(60,30,15,0.55)]'
 							style={{ aspectRatio: contentAspect(photo), width: `min(100cqw, 100cqh * ${contentAspect(photo)})` }}
 						>
 							{/* eslint-disable-next-line @next/next/no-img-element */}
-							<img src={photo.url} alt={photo.caption || name} style={cropStyle(photo, contentAspect(photo)) ?? undefined} className='size-full object-cover' />
+							<img
+								src={photo.url}
+								alt={photo.caption || name}
+								style={cropStyle(photo, contentAspect(photo)) ?? undefined}
+								// A file already in the cache may finish before React listens, so check on mount as well as on load.
+								ref={(el) => {
+									if (el?.complete && el.naturalWidth) setReady(photo.url)
+								}}
+								onLoad={() => setReady(photo.url)}
+								className={`size-full object-cover transition-opacity duration-300 ${ready === photo.url ? 'opacity-100' : 'opacity-0'}`}
+							/>
 							<PhotoCredit photo={{ credit: photo.author, license: photo.license, source: photo.page }} />
 						</span>
 					) : model ? (
