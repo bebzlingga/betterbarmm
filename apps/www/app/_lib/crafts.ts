@@ -61,6 +61,9 @@ export const PROVINCE: Record<string, string> = {
 
 export const crafts = data.items as Craft[]
 
+/** A Commons photo in the shape the site's credit mark takes. */
+export const creditOf = (i: CraftImage) => ({ credit: i.author, license: i.license, source: i.page })
+
 export const festivals = data.festivals as Sourced[]
 export const craftsMeta = { generatedAt: data.generatedAt }
 export const craft = (slug: string) => crafts.find((c) => c.slug === slug)

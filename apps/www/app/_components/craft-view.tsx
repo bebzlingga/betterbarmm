@@ -5,9 +5,8 @@ import { CraftCard } from './craft-card'
 import { CraftStage } from './craft-stage'
 import { monthYear } from './directory-bits'
 
-/* One craft, as its page shows it and as the full-screen dialog over the
-   catalogue shows it: the showroom card, then how it is made and where to
-   see it. In the dialog the card fills the screen. The palette is its own,
+/* One craft, in the full-screen dialog over the catalogue: the showroom
+   card filling the screen, then how it is made and where to see it. The palette is its own,
    the same in light and dark: warm brown and cream. */
 
 // Important: the shared base styles set the body face on p, li and dd outside any layer.
@@ -15,18 +14,18 @@ const serif = 'font-[family-name:var(--font-craft)]!'
 const label = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em]'
 const source = 'inline-flex items-center gap-0.5 text-[11.5px] text-[#8a6d5c] hover:text-[#5a3424]'
 
-export function CraftView({ c, dialog = false }: { c: Craft; dialog?: boolean }) {
+export function CraftView({ c }: { c: Craft }) {
 	const others = related(c)
 	const next = others[0]!
 	const made = [c.towns.join(', '), PROVINCE[c.province]].filter(Boolean).join(', ')
 
 	return (
 		<>
-		<section className={`bg-[linear-gradient(90deg,#4a2c22_0_63%,#9a6a4f_63%_100%)] px-4 sm:px-6 ${dialog ? 'flex min-h-dvh items-center py-16 lg:py-14' : 'py-8 lg:py-16'}`}>
-			<div className={`relative mx-auto flex w-full max-w-[84rem] flex-col overflow-hidden rounded-[10px] shadow-[0_40px_80px_-30px_rgba(30,12,5,0.7)] lg:grid lg:grid-cols-[63fr_37fr] ${dialog ? 'lg:min-h-[calc(100dvh-7rem)]' : 'lg:min-h-[44rem]'}`}>
+		<section className='flex min-h-dvh items-center bg-[linear-gradient(90deg,#4a2c22_0_63%,#9a6a4f_63%_100%)] px-4 py-16 sm:px-6 lg:py-14'>
+			<div className='relative mx-auto flex w-full max-w-[84rem] flex-col overflow-hidden rounded-[10px] shadow-[0_40px_80px_-30px_rgba(30,12,5,0.7)] lg:grid lg:min-h-[calc(100dvh-7rem)] lg:grid-cols-[63fr_37fr]'>
 				<div className='flex flex-col bg-[radial-gradient(ellipse_at_70%_15%,#a7694c,#7b4a35_55%,#64392a)] p-7 text-[#f4e8dc] sm:p-12'>
-					<p className={`${serif} flex items-center gap-3 text-[18px]`}>
-						<Link href='/crafts' replace={dialog} className='hover:text-white'>
+					<p className={`${serif} flex flex-wrap items-center gap-x-3 text-[22px] font-bold sm:text-[26px]`}>
+						<Link href='/crafts' replace className='hover:text-white'>
 							Crafts of the Bangsamoro
 						</Link>
 						<span className='text-[#d9bba6]'>·</span>
@@ -37,9 +36,10 @@ export function CraftView({ c, dialog = false }: { c: Craft; dialog?: boolean })
 						<p className={`${label} text-[#e7c9a9]`}>
 							{c.people} · {PROVINCE[c.province]}
 						</p>
-						<h1 className={`${serif} mt-3 text-[34px] font-bold leading-[1.12] sm:text-[42px]`}>{c.name}</h1>
+						{/* A short name is set large; a long one steps down so it keeps to two or three lines. */}
+						<h1 className={`${serif} mt-3 font-bold leading-[1.05] ${c.name.length > 18 ? 'text-[36px] sm:text-[44px] lg:text-[52px]' : 'text-[44px] sm:text-[60px] lg:text-[72px]'}`}>{c.name}</h1>
 						<p className={`${serif} mt-1 text-[17px] italic text-[#e7c9a9]`}>{c.local_name}</p>
-						<p className={`${serif} mt-5 text-[17px] leading-[1.6] text-[#ecdccd]`}>{c.summary}</p>
+						<p className={`${serif} mt-5 text-[16px] leading-[1.6] text-[#ecdccd]`}>{c.summary}</p>
 						{c.price ? (
 							<p className='mt-4 text-[13px] text-[#e7c9a9]'>
 								{c.price.text}{' '}
@@ -48,23 +48,20 @@ export function CraftView({ c, dialog = false }: { c: Craft; dialog?: boolean })
 								</a>
 							</p>
 						) : null}
-						<a href='#see' className={`${serif} mt-7 inline-block bg-white px-10 py-2.5 text-[15px] text-[#3b2419] shadow-sm transition hover:bg-[#f4e8dc]`}>
-							Where to see it
-						</a>
 					</div>
 
-					<dl className='grid gap-6 text-[12.5px] leading-[1.6] sm:grid-cols-3 lg:max-w-[38rem]'>
+					<dl className='grid gap-x-10 gap-y-6 text-[14.5px] leading-[1.6] sm:grid-cols-3 lg:w-4/5'>
 						<div>
-							<dt className={`${serif} text-[14px] font-bold text-[#f4e8dc]`}>Made in</dt>
-							<dd className='mt-1.5 text-[#e2cbb8]'>{made}</dd>
+							<dt className={`${serif} text-[17px] font-bold text-[#f4e8dc]`}>Made in</dt>
+							<dd className='mt-2 text-[#e2cbb8]'>{made}</dd>
 						</div>
 						<div>
-							<dt className={`${serif} text-[14px] font-bold text-[#f4e8dc]`}>Materials</dt>
-							<dd className='mt-1.5 text-[#e2cbb8]'>{c.materials}</dd>
+							<dt className={`${serif} text-[17px] font-bold text-[#f4e8dc]`}>Materials</dt>
+							<dd className='mt-2 text-[#e2cbb8]'>{c.materials}</dd>
 						</div>
 						<div>
-							<dt className={`${serif} text-[14px] font-bold text-[#f4e8dc]`}>Worn or used</dt>
-							<dd className='mt-1.5 text-[#e2cbb8]'>{c.uses}</dd>
+							<dt className={`${serif} text-[17px] font-bold text-[#f4e8dc]`}>Worn or used</dt>
+							<dd className='mt-2 text-[#e2cbb8]'>{c.uses}</dd>
 						</div>
 					</dl>
 				</div>
@@ -73,11 +70,12 @@ export function CraftView({ c, dialog = false }: { c: Craft; dialog?: boolean })
 					<CraftStage
 						key={c.slug}
 						name={c.name}
-						model={c.model}
+						// The three-dimensional studies are off for now; c.model turns them back on.
+						model={null}
 						images={c.images}
 						className='h-[26rem] lg:absolute lg:top-20 lg:right-10 lg:bottom-48 lg:left-[44%] lg:h-auto'
 					/>
-					<Link href={`/crafts/${next.slug}`} replace={dialog} className='group mt-8 block lg:mt-auto'>
+					<Link href={`/crafts/${next.slug}`} replace className='group mt-8 block lg:mt-auto'>
 						<p className={`${serif} text-[14px] text-[#8a6d5c]`}>More like it</p>
 						<span className='mt-2 flex items-center gap-4 bg-white p-3'>
 							{next.images[0] ? (
@@ -133,7 +131,7 @@ export function CraftView({ c, dialog = false }: { c: Craft; dialog?: boolean })
 				) : null}
 			</div>
 
-			<div id='see' className='scroll-mt-24'>
+			<div>
 				<h2 className={`${serif} text-[26px] font-bold`}>Where to see it</h2>
 				{c.where_to_see.length ? (
 					<ul className='mt-4 divide-y divide-[#e4d8cb] border-y border-[#e4d8cb]'>
@@ -167,12 +165,12 @@ export function CraftView({ c, dialog = false }: { c: Craft; dialog?: boolean })
 		</section>
 
 		<section className='border-t border-[#e4d8cb] bg-[#efe6dc]'>
-			<div className='mx-auto max-w-[84rem] px-4 py-14 sm:px-6'>
+			<div className='mx-auto max-w-[84rem] px-4 py-20 sm:px-6 lg:py-28'>
 				<h2 className={`${serif} text-[22px] font-bold`}>More from the region</h2>
 				<ul className='mt-6 grid gap-5 sm:grid-cols-3'>
 					{others.map((o) => (
 						<li key={o.slug}>
-							<CraftCard c={o} replace={dialog} />
+							<CraftCard c={o} replace plain />
 						</li>
 					))}
 				</ul>

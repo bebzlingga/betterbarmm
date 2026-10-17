@@ -4,6 +4,7 @@ import { CubeIcon } from '@phosphor-icons/react'
 import dynamic from 'next/dynamic'
 import { useState } from 'react'
 import { commonsThumb } from '../_lib/commons'
+import { PhotoCredit } from './discover-figure'
 import type { CraftImage, CraftModel } from '../_lib/crafts'
 
 /* The craft's main picture and the rail beside it: the object in three
@@ -24,35 +25,24 @@ export function CraftStage({ name, model, images, className = '' }: { name: stri
 	return (
 		<div className={`flex flex-col gap-4 lg:flex-row ${className}`}>
 			<figure className='relative flex min-h-0 flex-1 flex-col'>
-				<div className='relative min-h-[18rem] flex-1'>
+				<div className='relative grid min-h-[18rem] flex-1 place-items-center [container-type:size]'>
 					{photo ? (
-						// eslint-disable-next-line @next/next/no-img-element
-						<img
-							src={photo.url}
-							alt={photo.caption || name}
-							className='absolute inset-0 m-auto max-h-full max-w-full rounded-[4px] object-contain shadow-[0_30px_60px_-20px_rgba(60,30,15,0.55)]'
-						/>
+						// The frame is the picture's own size, the largest that fits, so the credit sits on its corner.
+						<span
+							className='bb-frame relative overflow-hidden rounded-[4px] shadow-[0_30px_60px_-20px_rgba(60,30,15,0.55)]'
+							style={{ aspectRatio: `${photo.width} / ${photo.height}`, width: `min(100cqw, 100cqh * ${photo.width / photo.height})` }}
+						>
+							{/* eslint-disable-next-line @next/next/no-img-element */}
+							<img src={photo.url} alt={photo.caption || name} className='size-full object-cover' />
+							<PhotoCredit photo={{ credit: photo.author, license: photo.license, source: photo.page }} />
+						</span>
 					) : model ? (
 						<Scene model={model} label={name} />
 					) : null}
 				</div>
 				<figcaption className='mt-3 min-h-8 text-[11.5px] leading-4 text-[#8a6d5c] lg:ml-auto lg:max-w-[22rem] lg:text-right'>
 					{photo ? (
-						<>
-							{photo.caption ? <span className='line-clamp-1'>{photo.caption}</span> : null}
-							Photo:{' '}
-							<a href={photo.page} target='_blank' rel='noreferrer' className='underline underline-offset-2 hover:text-[#5a3424]'>
-								{photo.author}
-							</a>
-							, {photo.license_url ? (
-								<a href={photo.license_url} target='_blank' rel='noreferrer' className='underline underline-offset-2 hover:text-[#5a3424]'>
-									{photo.license}
-								</a>
-							) : (
-								photo.license
-							)}
-							, via Wikimedia Commons
-						</>
+						<span className='line-clamp-2'>{photo.caption}</span>
 					) : model ? (
 						'A study of its form, drawn here rather than scanned from one piece. Drag to turn it.'
 					) : null}

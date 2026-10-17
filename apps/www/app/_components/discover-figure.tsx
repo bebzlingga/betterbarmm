@@ -14,7 +14,7 @@ import { EASE, IN_VIEW } from '@betterbarmm/editorial'
  * original, and a license condition is not something to bury in a colophon — so
  * it travels with the image instead.
  */
-export function PhotoCredit({ photo }: { photo: DiscoverPhoto }) {
+export function PhotoCredit({ photo }: { photo: Pick<DiscoverPhoto, 'credit' | 'license' | 'source'> }) {
   return (
     <a
       href={photo.source}

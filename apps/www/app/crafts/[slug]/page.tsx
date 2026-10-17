@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { CraftDialog } from '../../_components/craft-dialog'
 import { CraftView } from '../../_components/craft-view'
-import { SiteHeader } from '../../_components/site-header'
 import { craft, crafts } from '../../_lib/crafts'
 import { pageMeta } from '../../_lib/seo'
 
@@ -15,13 +15,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 	return pageMeta({ title: `${c.name} — Crafts`, description: c.summary, path: `/crafts/${c.slug}` })
 }
 
+/** A craft always opens as a full-screen dialog over the catalogue, whether clicked or linked to. */
 export default async function CraftPage({ params }: { params: Promise<{ slug: string }> }) {
 	const c = craft((await params).slug)
 	if (!c) notFound()
 	return (
-		<main className='min-h-screen bg-[#f4efe8] text-[#3b2419]'>
-			<SiteHeader activeItem='crafts' />
+		<CraftDialog slug={c.slug} name={c.name}>
 			<CraftView c={c} />
-		</main>
+		</CraftDialog>
 	)
 }
