@@ -1,7 +1,8 @@
-import { ArrowRightIcon, CaretDownIcon, PhoneIcon, SirenIcon } from '@phosphor-icons/react/ssr'
+import { ArrowRightIcon, PhoneIcon, SirenIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { linkClass } from '../_components/directory-bits'
+import { DirectoryPlaces } from '../_components/directory-places'
 import { DirectorySearch } from '../_components/directory-search'
 import { members } from '../_lib/directory-index'
 import { GetInvolved } from '../_components/get-involved'
@@ -131,51 +132,7 @@ export default function DirectoryPage() {
 							</h2>
 							<p className='max-w-xl text-[13.5px] text-[var(--ink-3)]'>Winners of COMELEC’s canvass of the May 2025 elections, for 2025–2028. Each town’s page has its emergency lines and barangay officials.</p>
 						</div>
-						<ul className='mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3'>
-							{localGovernments.map((g) => (
-								<li key={g.slug} className='flex flex-col rounded-[6px] border border-[var(--rule)] p-5'>
-									<p className={`${eyebrow} text-[var(--accent)]`}>{g.kind}</p>
-									<Link href={g.href} className='mt-1 text-[19px] font-extrabold tracking-[-0.01em] hover:text-[var(--accent)]'>
-										{g.name}
-									</Link>
-									{g.governor ? (
-										<p className='mt-3 text-[13.5px] leading-5'>
-											<span className='text-[var(--ink-3)]'>Governor</span> <span className='font-semibold'>{g.governor}</span>
-											{g.viceGovernor ? (
-												<span className='block'>
-													<span className='text-[var(--ink-3)]'>Vice governor</span> {g.viceGovernor}
-												</span>
-											) : null}
-										</p>
-									) : g.units.length === 1 && g.units[0]!.head ? (
-										<p className='mt-3 text-[13.5px] leading-5'>
-											<span className='text-[var(--ink-3)]'>Mayor</span> <span className='font-semibold'>{g.units[0]!.head}</span>
-										</p>
-									) : null}
-									{g.units.length > 1 ? (
-										<details className='group mt-auto pt-4'>
-											<summary className='flex cursor-pointer list-none items-center justify-between border-t border-[var(--rule-soft)] pt-3 text-[13.5px] font-semibold text-[var(--ink-2)] hover:text-[var(--accent)] [&::-webkit-details-marker]:hidden'>
-												{g.units.length} towns and cities
-												<CaretDownIcon size={14} className='transition group-open:rotate-180' aria-hidden='true' />
-											</summary>
-											<ul className='mt-3 grid grid-cols-2 gap-x-4 gap-y-1.5 text-[13.5px]'>
-												{g.units.map((u) => (
-													<li key={u.slug} className='min-w-0 truncate'>
-														<Link href={u.href} className={linkClass}>
-															{u.name}
-														</Link>
-													</li>
-												))}
-											</ul>
-										</details>
-									) : (
-										<Link href={g.units[0]?.href ?? g.href} className={`mt-auto pt-4 text-[13.5px] font-semibold ${linkClass}`}>
-											Its page, lines and barangays
-										</Link>
-									)}
-								</li>
-							))}
-						</ul>
+						<DirectoryPlaces />
 					</section>
 
 					<section aria-labelledby='mps-title' className='mt-20'>

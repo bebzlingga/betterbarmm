@@ -4,6 +4,7 @@ import { provinceHistory, tookOffice, unitHistory } from '@betterbarmm/lgu-data/
 import emergency from '../../../../datasets/directory/emergency.json'
 import fieldOfficesFile from '../../../../datasets/directory/field-offices.json'
 import historyFile from '../../../../datasets/directory/history.json'
+import placePhotos from '../../../../datasets/directory/place-photos.json'
 import dataset from '../../../../datasets/directory/offices.json'
 import { offices as serviceOffices } from './services'
 
@@ -167,3 +168,9 @@ export function barangayRows(province: string, unit: string): BarangayRow[] {
 
 /** The anchor a Member of Parliament's row carries on the directory's Parliament page. */
 export const memberId = (m: { rosterName: string }) => m.rosterName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+
+/** A Commons photograph of a place, credited as its licence asks. */
+export type PlacePhoto = { url: string; page: string; author: string; license: string; caption: string; width: number; height: number }
+const photos = placePhotos as { areas: Record<string, PlacePhoto | null>; towns: Record<string, PlacePhoto | null> }
+/** A province's or area's photograph, or a town's (province and town slugs), if one has been found. */
+export const placePhoto = (province: string, town?: string) => (town ? photos.towns[`${province}/${town}`] : photos.areas[province]) ?? null
