@@ -9,8 +9,8 @@ import { PlaceCard } from './place-card'
 
 /* One place, in the full-screen dialog over the catalogue: its photograph
    across the top with the name over it, then what is there beside how to go
-   and when to go, what to do and eat there and what to know first. Its
-   photographs sit in a row under the header, each opening full size. */
+   and when to go, what to do and eat there and what to know first. Then its
+   photographs, each opening full size, and what is nearby. */
 
 /** The site's own photographs of a dish, from Discover BARMM, where there is one. */
 const DISH_PHOTO = { pastil: 'pastil', 'tiyula-itum': 'tiyulaItum', palapa: 'paterPalapa' } as const
@@ -55,14 +55,7 @@ export function PlaceView({ p }: { p: Place }) {
 				{hero ? <PhotoCredit photo={{ credit: hero.author, license: hero.license, source: hero.page }} /> : null}
 			</section>
 
-			{/* Every photograph, straight under the header, each opening full size. */}
-			{p.images.length > 1 ? (
-				<section aria-label='Photographs' className='bb-container pt-6'>
-					<PlaceGallery images={p.images} name={p.name} />
-				</section>
-			) : null}
-
-			<section className='bb-container grid gap-12 pt-10 pb-14 lg:grid-cols-[minmax(0,65fr)_minmax(0,35fr)] lg:gap-20 lg:pt-12 lg:pb-20'>
+			<section className='bb-container grid gap-12 py-14 lg:grid-cols-[minmax(0,65fr)_minmax(0,35fr)] lg:gap-20 lg:py-20'>
 				<div>
 					<p className='text-[21px] font-semibold leading-[1.5] tracking-[-0.01em] text-[#13303a]'>{p.summary}</p>
 					<div className='mt-6 space-y-4 text-[16px] leading-[1.75] text-[#34505a]'>
@@ -157,6 +150,18 @@ export function PlaceView({ p }: { p: Place }) {
 				</aside>
 			</section>
 
+
+			{/* Every photograph, each opening full size. */}
+			{p.images.length > 1 ? (
+				<section aria-labelledby='gallery' className='bb-container pb-14'>
+					<h2 id='gallery' className='text-[22px] font-extrabold tracking-[-0.02em] text-[#13303a]'>
+						Photographs <span className='text-[#8aa3a9]'>{p.images.length}</span>
+					</h2>
+					<div className='mt-5'>
+						<PlaceGallery images={p.images} name={p.name} />
+					</div>
+				</section>
+			) : null}
 
 			{near.length ? (
 				<section className='bg-[#eef4f2]'>
