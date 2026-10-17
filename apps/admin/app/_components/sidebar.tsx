@@ -15,6 +15,7 @@ import {
   NewspaperIcon,
   ScrollIcon,
   SirenIcon,
+  AddressBookIcon,
   SquaresFourIcon,
   UsersIcon,
   type Icon,
@@ -31,6 +32,7 @@ const WORKSPACE_ICONS: Record<string, Icon> = {
   lgu: BuildingsIcon,
   travel: MapTrifoldIcon,
   accidents: SirenIcon,
+  directory: AddressBookIcon,
 };
 
 export function Sidebar({

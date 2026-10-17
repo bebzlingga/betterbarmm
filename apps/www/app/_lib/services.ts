@@ -111,7 +111,7 @@ export const audienceLabel = (id: string) => AUDIENCES.find((a) => a.id === id)?
 export const shortName = (o: Office) => o.acronym ?? o.name
 
 /** The office's page on the budget portal, where its money is traced. */
-export const budgetHref = (o: Office) => `https://budget.betterbarmm.com/offices/${o.slug}`
+export const budgetHref = (o: { slug: string }) => `https://budget.betterbarmm.com/offices/${o.slug}`
 
 /** Every program and service with the office it belongs to, for the cross-office search — only from offices that
     published a Citizen's Charter; the others' are not shown until they do. */

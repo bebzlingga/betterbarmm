@@ -29,6 +29,7 @@ export const WORKSPACES = [
 	{ value: 'lgu', label: 'Local government' },
 	{ value: 'travel', label: 'Travel' },
 	{ value: 'accidents', label: 'Incident Watch' },
+	{ value: 'directory', label: 'Directory' },
 ] as const
 
 const s = (value: unknown) => (value == null ? '' : String(value))
@@ -256,6 +257,50 @@ export const COLLECTIONS: CollectionDef[] = [
 		source: array('accidents/reports/admin.json', null),
 		key: (r) => s(r.ref),
 		title: (r) => `${s(r.date)} — ${s(r.title)}`,
+	},
+
+	// ---- Directory ----
+	// Plain files, not built: an editor's change is published as written. `checked` on an office is the day an
+	// editor last confirmed it against its sources, and the page shows it.
+	{
+		workspace: 'directory',
+		collection: 'offices',
+		label: 'Offices',
+		source: array('directory/offices.json', 'offices'),
+		key: (r) => s(r.slug),
+		title: (r) => `${s(r.name)}${r.head && typeof r.head === 'object' ? ` — ${s((r.head as Record<string, unknown>).name)}` : ''}`,
+	},
+	{
+		workspace: 'directory',
+		collection: 'heads',
+		label: 'Heads over time',
+		source: array('directory/history.json', 'offices'),
+		key: (r) => s(r.slug),
+		title: (r) => s(r.slug),
+	},
+	{
+		workspace: 'directory',
+		collection: 'field-offices',
+		label: 'Field offices',
+		source: array('directory/field-offices.json', 'offices'),
+		key: (r) => `${s(r.ministry_slug)}|${s(r.office)}`,
+		title: (r) => s(r.office),
+	},
+	{
+		workspace: 'directory',
+		collection: 'province-lines',
+		label: 'Emergency lines: provinces',
+		source: array('directory/emergency.json', 'provinces'),
+		key: (r) => s(r.slug),
+		title: (r) => s(r.slug),
+	},
+	{
+		workspace: 'directory',
+		collection: 'town-lines',
+		label: 'Emergency lines: towns',
+		source: array('directory/emergency.json', 'towns'),
+		key: (r) => `${s(r.province)}/${s(r.slug)}`,
+		title: (r) => `${s(r.slug)}, ${s(r.province)}`,
 	},
 ]
 

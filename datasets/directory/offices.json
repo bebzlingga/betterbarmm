@@ -46,7 +46,8 @@
      "label": "bangsamoro.gov.ph Contact Us",
      "url": "https://bangsamoro.gov.ph/contact-us/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "ministry-of-basic-higher-and-technical-education",
@@ -76,7 +77,8 @@
      "label": "bangsamoro.gov.ph Key Officials page (address; minister name blank), undated",
      "url": "https://bangsamoro.gov.ph/officials/key-officials/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "ministry-of-health",
@@ -113,7 +115,8 @@
      "label": "BIO news, mpox advisory with MOH Operation Center Hotline, 2025-06-10",
      "url": "https://bangsamoro.gov.ph/news/latest-news/no-to-panicking-over-mpox-cases-in-barmm-moh/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "ministry-of-social-services-and-development",
@@ -159,7 +162,8 @@
      "label": "BARMM news, Athar book launch (Minister Jajurie), 2026-10-13",
      "url": "https://bangsamoro.gov.ph/news/latest-news/athar-bangsamoro-govt-launches-book-honoring-regions-social-service-legacy/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "ministry-of-agriculture-fisheries-and-agrarian-reform",
@@ -197,7 +201,8 @@
      "label": "BIO news, refrigerated vans for fisherfolk, 2026-09-30",
      "url": "https://bangsamoro.gov.ph/news/latest-news/five-refrigerated-vans-to-benefit-bangsamoro-fisherfolks-fresh-produce/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "ministry-of-public-works",
@@ -229,7 +234,8 @@
      "label": "BARMM news, Regional Assembly Building turnover (Minister Guerra), 2026-04-20",
      "url": "https://bangsamoro.gov.ph/news/latest-news/new-assembly-building-strengthens-barmm-parliament-operations/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "ministry-of-the-interior-and-local-government",
@@ -263,7 +269,8 @@
      "label": "MILG website, About page",
      "url": "https://www.milgbarmm.com/about"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "ministry-of-human-settlements-and-development",
@@ -309,7 +316,8 @@
      "label": "BARMM news, housing awarding (Minister Zaide Ali), 2026-07-22",
      "url": "https://bangsamoro.gov.ph/news/latest-news/mhsd-awards-p38-86-m-50-housing-units-to-former-combatants-vulnerable-families-in-maguindanao-del-norte/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "ministry-of-environment-natural-resources-and-energy",
@@ -341,7 +349,8 @@
      "label": "BIO news, anti-illegal logging task force, 2026-10-15",
      "url": "https://bangsamoro.gov.ph/news/latest-news/anti-illegal-logging-task-force-to-intensify-barmms-forest-protection/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "ministry-of-trade-investments-and-tourism",
@@ -378,7 +387,8 @@
      "label": "MTIT Minister page (stale: Abuamri A. Taddik)",
      "url": "https://mtit.bangsamoro.gov.ph/minister/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "ministry-of-transportation-and-communications",
@@ -414,7 +424,8 @@
      "label": "BIO news, Jolo port/airport turnover, 2026-09-09",
      "url": "https://bangsamoro.gov.ph/news/latest-news/motc-turns-over-nearly-p90-m-jolo-port-airport-infrastructure-projects/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "ministry-of-science-and-technology",
@@ -446,7 +457,8 @@
      "label": "BARMM news, Halal summit (Minister Mantawil), 2026-09-30",
      "url": "https://bangsamoro.gov.ph/news/latest-news/science-driven-halal-opportunities-now-more-accessible-to-bangsamoro/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "ministry-of-finance-and-budget-and-management",
@@ -480,7 +492,8 @@
      "label": "BIO news, revenue collection reforms, 2026-06-01",
      "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-advances-transparency-digital-reforms-in-revenue-collection/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "ministry-of-labor-and-employment",
@@ -513,7 +526,8 @@
      "label": "BARMM news, GSIS recognition (Minister Muslimin Sema), 2026-08-11",
      "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-labor-ministry-gets-gsis-recognition-for-zero-delayed-remittances-in-2025/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "ministry-of-public-order-and-safety",
@@ -549,7 +563,8 @@
      "label": "BIO news, security forces finalize poll preparations, 2026-09-07",
      "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-security-forces-finalize-preparations-ahead-of-historic-sept-14-polls/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "ministry-of-indigenous-peoples-affairs",
@@ -579,7 +594,8 @@
      "label": "bangsamoro.gov.ph Key Officials page (address), undated",
      "url": "https://bangsamoro.gov.ph/officials/key-officials/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "bangsamoro-planning-and-development-authority",
@@ -607,7 +623,8 @@
      "label": "BIO news, unified monitoring system launch, 2026-07-27",
      "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-launches-unified-monitoring-system-to-improve-government-performance/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "special-geographic-area-development-authority",
@@ -633,7 +650,8 @@
      "label": "BARMM news, SGA development plan launch, 2026-01-13",
      "url": "https://bangsamoro.gov.ph/news/latest-news/barmms-sga-poised-for-inclusive-growth-as-sgada-launches-devt-plan-formulation/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "bangsamoro-pilgrimage-authority",
@@ -663,7 +681,8 @@
      "label": "bangsamoro.gov.ph footer link to BPA Facebook",
      "url": "https://bangsamoro.gov.ph/contact-us/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "bangsamoro-darul-ifta",
@@ -689,7 +708,8 @@
      "label": "BDI website (Under Construction page)",
      "url": "https://bdi.bangsamoro.gov.ph/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "bangsamoro-human-rights-commission",
@@ -724,7 +744,8 @@
      "label": "BIO news, BHRC marks five years, 2025-12-15",
      "url": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-rights-body-marks-five-years-with-strong-case-resolution-rate/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "bangsamoro-commission-for-the-preservation-of-cultural-heritage",
@@ -759,7 +780,8 @@
      "label": "BARMM news, new heritage chief Robert Alonto assumes office 2026-05-06, published 2026-05-13",
      "url": "https://bangsamoro.gov.ph/news/latest-news/new-bangsamoro-heritage-chief-pushes-reforms-community-based-cultural-programs/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "bangsamoro-women-commission",
@@ -791,7 +813,8 @@
      "label": "BIO news, BWC consults Basilan women's groups, 2026-10-16",
      "url": "https://bangsamoro.gov.ph/news/latest-news/bwc-consults-basilan-womens-groups-for-grassroots-responsive-gender-policies/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "bangsamoro-youth-commission",
@@ -825,7 +848,8 @@
      "label": "BARMM news, 7th SOBYA (Chairperson Dunding), 2026-08-18",
      "url": "https://bangsamoro.gov.ph/news/latest-news/youth-gains-development-priorities-outlined-in-7th-sobya/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "bangsamoro-sports-commission",
@@ -857,7 +881,8 @@
      "label": "BIO news, Palarong Pambansa incentives, 2026-07-13",
      "url": "https://bangsamoro.gov.ph/news/latest-news/barmms-sports-commission-awards-p495k-incentives-to-palarong-pambansa-medalists-coaches/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "bangsamoro-attorney-general-s-office",
@@ -898,7 +923,8 @@
      "label": "BARMM news, Legal Liaison Network (Attorney General Lucman), 2026-10-13",
      "url": "https://bangsamoro.gov.ph/news/latest-news/league-of-bangsamoro-lawyers-vows-stronger-legal-network-in-barmm/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "cooperatives-and-social-enterprise-authority",
@@ -926,7 +952,8 @@
      "label": "CSEA news, ED Samcia Ibrahim at zakat round table, 2026-10-08",
      "url": "https://csea.bangsamoro.gov.ph/strengthening-governance-and-accountability-for-a-more-sustainable-barmm/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "bangsamoro-information-office",
@@ -952,7 +979,8 @@
      "label": "bangsamoro.gov.ph homepage (links facebook.com/biobarmm)",
      "url": "https://bangsamoro.gov.ph/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "development-academy-of-the-bangsamoro",
@@ -980,7 +1008,8 @@
      "label": "BIO news, Islamic finance partnerships, 2026-01-26",
      "url": "https://bangsamoro.gov.ph/news/latest-news/partnerships-seek-to-widen-public-understanding-of-islamic-finance-in-barmm/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "bangsamoro-information-and-communications-technology-office",
@@ -1010,7 +1039,8 @@
      "label": "BARMM news, BICTO research showcase (ED Jonathan Mantikayan), 2026-06-14",
      "url": "https://bangsamoro.gov.ph/news/latest-news/bicto-showcases-research-innovation-to-advance-digital-transformation-in-barmm/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "bangsamoro-board-of-investments",
@@ -1038,7 +1068,8 @@
      "label": "BIO news, Brunei agency partnership, 2026-07-13",
      "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-expands-global-investment-push-brunei-agency-eyes-partnership/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "office-for-settler-communities",
@@ -1070,7 +1101,8 @@
      "label": "BARMM news, settler entrepreneurs (OSC Director Susana Anayatin), 2026-05-12",
      "url": "https://bangsamoro.gov.ph/news/latest-news/settler-entrepreneurs-benefit-from-barmms-livelihood-assistance-program/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "bangsamoro-science-high-school",
@@ -1092,7 +1124,8 @@
      "label": "MOST news, 4th BSHS Board of Trustees meeting, 2024-09-05",
      "url": "https://most.bangsamoro.gov.ph/most-barmm-holds-4th-bshs-board-of-trustees-meeting/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "bangsamoro-agriculture-and-fisheries-training-institute",
@@ -1109,7 +1142,8 @@
      "label": "BARMM news, BTA passes BAFTI Act (Parliament Bill No. 39), 2024-07-24",
      "url": "https://bangsamoro.gov.ph/news/latest-news/bill-creating-agri-fishery-training-institute-to-enhance-food-sufficiency-in-barmm/"
     }
-   ]
+   ],
+   "checked": null
   },
   {
    "slug": "office-of-the-wali-of-bangsamoro",
@@ -1135,7 +1169,8 @@
      "label": "BIO news, new Bangsamoro Government Center groundbreaking, 2026-08-14",
      "url": "https://bangsamoro.gov.ph/news/latest-news/new-p15-b-bangsamoro-govt-center-to-rise-in-parang-maguindanao-del-norte/"
     }
-   ]
+   ],
+   "checked": null
   }
  ]
 }

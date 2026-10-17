@@ -1,8 +1,9 @@
-import { ArrowUpRightIcon, EnvelopeSimpleIcon, FacebookLogoIcon, GlobeIcon, MagnifyingGlassIcon, MapPinIcon, PhoneIcon, SirenIcon } from '@phosphor-icons/react/ssr'
+import { ArrowUpRightIcon, EnvelopeSimpleIcon, FacebookLogoIcon, GlobeIcon, MagnifyingGlassIcon, MapPinIcon, SirenIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Masthead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
+import { Phone, linkClass } from '../_components/directory-bits'
 import { directoryMeta, directoryOffices, hotlines, localGovernments, telHref } from '../_lib/directory'
 import { pageMeta } from '../_lib/seo'
 
@@ -23,19 +24,6 @@ const asOf = (d: string | null) => {
 	if (!d) return null
 	const [y, m] = d.split('-').map(Number)
 	return m ? new Date(Date.UTC(y!, m - 1, 1)).toLocaleDateString('en-PH', { month: 'long', year: 'numeric', timeZone: 'UTC' }) : String(y)
-}
-
-const linkClass = 'underline decoration-[var(--rule)] underline-offset-4 hover:text-[var(--accent)] hover:decoration-[var(--accent)]'
-
-function Phone({ number }: { number: string }) {
-	return (
-		<li className='flex gap-2'>
-			<PhoneIcon size={15} className='mt-1 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
-			<a href={telHref(number)} className={`tabular-nums ${linkClass}`}>
-				{number}
-			</a>
-		</li>
-	)
 }
 
 export default async function DirectoryPage({ searchParams }: { searchParams: Promise<{ q?: string }> }) {
@@ -76,6 +64,13 @@ export default async function DirectoryPage({ searchParams }: { searchParams: Pr
 					) : null}
 				</form>
 
+				<p className='mt-6 text-[14px]'>
+					<Link href='/directory/parliament' className={`font-semibold ${linkClass}`}>
+						Members of Parliament
+					</Link>
+					<span className='text-[var(--ink-3)]'> · the 80 elected on 14 September 2026</span>
+				</p>
+
 				{hotlines.length && !term ? (
 					<section aria-labelledby='hotlines' className='mt-10 border border-[var(--rule)] bg-[var(--paper-2)] p-5'>
 						<h2 id='hotlines' className='flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
@@ -112,7 +107,9 @@ export default async function DirectoryPage({ searchParams }: { searchParams: Pr
 											<li key={o.slug} id={o.slug} className='grid scroll-mt-[calc(var(--site-header-h)+1rem)] gap-4 py-5 md:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)]'>
 												<div className='min-w-0'>
 													{o.acronym ? <p className='font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>{o.acronym}</p> : null}
-													<p className='text-[16px] font-bold leading-snug'>{o.name}</p>
+													<Link href={`/directory/office/${o.slug}`} className='text-[16px] font-bold leading-snug hover:text-[var(--accent)]'>
+														{o.name}
+													</Link>
 													{o.head ? (
 														<p className='mt-2 text-[14px] leading-6'>
 															<span className='font-semibold'>{o.head.name}</span>
@@ -191,7 +188,7 @@ export default async function DirectoryPage({ searchParams }: { searchParams: Pr
 						Local governments
 					</h2>
 					<p className='mt-1 max-w-3xl text-[13.5px] leading-6 text-[var(--ink-3)]'>
-						Who won each office in COMELEC’s canvass of the May 2025 elections, for the 2025–2028 term. A succession since then is not shown; each place’s page has its full council and history.
+						Who won each office in COMELEC’s canvass of the May 2025 elections, for the 2025–2028 term. A succession since then is not shown. Each place’s page has its emergency numbers, its barangay officials and who has held the office since 2007.
 					</p>
 					{locals.length ? (
 						<div className='mt-8 space-y-10'>
