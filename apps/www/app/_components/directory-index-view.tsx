@@ -148,7 +148,7 @@ export function DirectoryIndex() {
 						</Link>
 					</section>
 
-					<p className='mt-16 max-w-3xl text-[13px] leading-[1.7] text-[var(--ink-3)]'>
+					<p className='mt-16 text-[13px] leading-[1.7] text-[var(--ink-3)]'>
 						{directoryMeta.note} A number that no longer works, or a head who has changed?{' '}
 						<a href='/report' className={linkClass}>
 							Tell us
