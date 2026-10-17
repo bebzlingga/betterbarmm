@@ -96,7 +96,7 @@ export function CraftView({ c }: { c: Craft }) {
 			</div>
 		</section>
 
-		<section className='mx-auto grid max-w-[84rem] gap-12 px-4 py-14 sm:px-6 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] lg:py-20'>
+		<section className='mx-auto grid max-w-[84rem] gap-12 px-4 py-14 sm:px-6 lg:grid-cols-[minmax(0,7fr)_minmax(0,3fr)] lg:py-20'>
 			<div>
 				<h2 className={`${serif} text-[26px] font-bold`}>How it is made</h2>
 				<p className={`${serif} mt-3 max-w-2xl text-[17px] leading-[1.7] text-[#5a3d2e]`}>{c.how_made}</p>

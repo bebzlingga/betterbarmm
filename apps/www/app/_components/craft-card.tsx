@@ -5,12 +5,13 @@ import { PhotoCredit } from './discover-figure'
 /** A craft as a card: its first photo, or a wash of its colours where there is none.
  *  replace: inside the dialog, so moving between crafts keeps one history entry.
  *  plain: no card, the photo and its words on the ground, square-cornered.
+ *  bb-frame is only for the credit to slide out on hover; its own ground is overridden.
  *  The photo's credit is a link of its own, so it sits beside the card's link, over the photo, not inside it. */
 export function CraftCard({ c, replace = false, plain = false }: { c: Craft; replace?: boolean; plain?: boolean }) {
 	const img = c.images[0]
 	return (
 		<div
-			className={`bb-frame group relative ${plain ? '' : 'overflow-hidden rounded-[6px] bg-white'}`}
+			className={`bb-frame group relative ${plain ? 'bg-transparent!' : 'overflow-hidden rounded-[6px] bg-white!'}`}
 		>
 			<Link href={`/crafts/${c.slug}`} replace={replace} className='block'>
 				<span className='block aspect-[4/3] overflow-hidden bg-[#e9ddd0]'>

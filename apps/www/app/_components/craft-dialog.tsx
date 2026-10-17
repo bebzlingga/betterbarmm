@@ -54,9 +54,9 @@ export function CraftDialog({ slug, name, children }: { slug: string; name: stri
 				type='button'
 				onClick={close}
 				aria-label='Close'
-				className='fixed top-4 right-4 z-20 flex size-11 items-center justify-center rounded-full bg-white text-[#3b2419] shadow-[0_10px_30px_-10px_rgba(30,12,5,0.6)] transition hover:bg-[#f4e8dc] sm:top-5 sm:right-5'
+				className='fixed top-4 right-4 z-20 flex size-11 items-center justify-center text-[#2a1810] transition hover:opacity-70 sm:top-5 sm:right-5'
 			>
-				<XIcon size={20} weight='bold' aria-hidden='true' />
+				<XIcon size={26} weight='bold' aria-hidden='true' />
 			</button>
 			{children}
 		</dialog>
