@@ -354,7 +354,10 @@ widths answer 400. `model` describes the three-dimensional study the site draws
 for 9 of the crafts; it is a shape, not a scan. Each image's `tone` is its dominant hue
 and saturation, read from the 250px thumbnail (pixels too dark, light or grey
 skipped; the rest vote by hue, weighted by saturation), or null for a grey
-photo. The dialog builds its colours from it at fixed lightness.
+photo. The dialog builds its colours from it at fixed lightness. `crop` is a photo's white margins
+as fractions [top, right, bottom, left], trimmed from the thumbnail, so the
+page frames only the picture; the museum malong's wall shades off white too
+gradually to trim and is cropped by eye (`crop_by: "hand"`).
 
 Left out: Maranao and Maguindanaon jewellery (no readable source), Teduray and
 Iranun weaving (none either), Sulu's pis syabit and barong (Sulu is no longer in

@@ -1,6 +1,7 @@
 import { ArrowUpRightIcon, MapPinIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { toneVars } from '../_lib/craft-tone'
+import { cropStyle } from '../_lib/commons'
 import { GROUP, PROVINCE, commonsThumb, related, type Craft } from '../_lib/crafts'
 import { CraftCard } from './craft-card'
 import { CraftStage } from './craft-stage'
@@ -81,8 +82,10 @@ export function CraftView({ c }: { c: Craft }) {
 						<p className={`${serif} text-[14px] text-[#8a6d5c]`}>More like it</p>
 						<span className='mt-2 flex items-center gap-4 bg-white p-3'>
 							{next.images[0] ? (
-								// eslint-disable-next-line @next/next/no-img-element
-								<img src={commonsThumb(next.images[0].url, 250)} alt='' loading='lazy' className='size-16 shrink-0 object-cover' />
+								<span className='relative size-16 shrink-0 overflow-hidden'>
+									{/* eslint-disable-next-line @next/next/no-img-element */}
+									<img src={commonsThumb(next.images[0].url, 250)} alt='' loading='lazy' style={cropStyle(next.images[0], 1) ?? undefined} className='size-full object-cover' />
+								</span>
 							) : (
 								<span className='size-16 shrink-0' style={{ background: `linear-gradient(135deg, ${next.colors.join(', ')})` }} />
 							)}

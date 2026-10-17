@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { cropStyle } from '../_lib/commons'
 import { GROUP, PROVINCE, commonsThumb, creditOf, type Craft } from '../_lib/crafts'
 import { PhotoCredit } from './discover-figure'
 
@@ -14,10 +15,10 @@ export function CraftCard({ c, replace = false, plain = false }: { c: Craft; rep
 			className={`bb-frame group relative ${plain ? 'bg-transparent!' : 'overflow-hidden rounded-[6px] bg-white!'}`}
 		>
 			<Link href={`/crafts/${c.slug}`} replace={replace} className='block'>
-				<span className='block aspect-[4/3] overflow-hidden bg-[#e9ddd0]'>
+				<span className='relative block aspect-[4/3] overflow-hidden bg-[#e9ddd0]'>
 					{img ? (
 						// eslint-disable-next-line @next/next/no-img-element
-						<img src={commonsThumb(img.url, 960)} alt='' loading='lazy' style={{ objectPosition: img.focus }} className='size-full object-cover transition duration-500 group-hover:scale-[1.03]' />
+						<img src={commonsThumb(img.url, 960)} alt='' loading='lazy' style={cropStyle(img, 4 / 3) ?? { objectPosition: img.focus }} className='size-full object-cover transition duration-500 group-hover:scale-[1.03]' />
 					) : (
 						<span className='block size-full' style={{ background: `linear-gradient(135deg, ${c.colors.join(', ')})` }} />
 					)}

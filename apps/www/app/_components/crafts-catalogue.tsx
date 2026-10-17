@@ -74,7 +74,7 @@ export function CraftsCatalogue() {
 							When to go
 						</h2>
 						<p className='mt-2 max-w-2xl text-[14.5px] leading-[1.6] text-[#5a3d2e]'>The festivals where these crafts are shown, worn and sold.</p>
-						<ul className='mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3'>
+						<ul className='mt-8 grid gap-x-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-3'>
 							{festivals.map((f) => (
 								<li key={f.name} className='border-t border-[#d9c7b5] pt-4'>
 									<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[#9a6a4f]'>{f.month}</p>
