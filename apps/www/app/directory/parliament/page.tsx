@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import parliament from '../../../../../datasets/bills/bangsamoro_registry/members/parliament-2026.json'
 import { linkClass } from '../../_components/directory-bits'
+import { memberId } from '../../_lib/directory'
 import { Masthead } from '../../_components/masthead'
 import { SiteHeader } from '../../_components/site-header'
 import { pageMeta } from '../../_lib/seo'
@@ -69,7 +70,7 @@ export default function ParliamentDirectoryPage() {
 						</h2>
 						<ul className='mt-4 grid gap-px overflow-hidden border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-2 lg:grid-cols-4'>
 							{g.list.map((m) => (
-								<li key={m.rosterName} className='bg-[var(--paper)]'>
+								<li key={m.rosterName} id={memberId(m)} className='scroll-mt-[calc(var(--site-header-h)+1rem)] bg-[var(--paper)] target:bg-[var(--paper-2)] target:outline-2 target:outline-[var(--accent)]'>
 									<a href={`${LEGISLATION}/members/elected`} className='group flex h-full items-center gap-3 p-4 hover:bg-[var(--paper-2)]'>
 										{m.photo ? (
 											// eslint-disable-next-line @next/next/no-img-element

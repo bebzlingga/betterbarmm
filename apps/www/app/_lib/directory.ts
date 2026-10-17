@@ -164,3 +164,6 @@ export function barangayRows(province: string, unit: string): BarangayRow[] {
 		return { name: b.name, captain: r?.punongBarangay ? personName(r.punongBarangay.name) : null, sk: r?.skChairperson ? personName(r.skChairperson.name) : null }
 	})
 }
+
+/** The anchor a Member of Parliament's row carries on the directory's Parliament page. */
+export const memberId = (m: { rosterName: string }) => m.rosterName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
