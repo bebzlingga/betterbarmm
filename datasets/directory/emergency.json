@@ -1,7 +1,7 @@
 {
  "name": "Emergency and public-service numbers, by province and town",
  "generatedAt": "2026-10-17",
- "note": "Police, fire, disaster-response, health and town-hall numbers as official pages and documents printed them, each with its source. Numbers change; in a life-threatening emergency call 911.",
+ "note": "Police, fire, disaster-response, health and town-hall numbers as official pages and documents printed them, each with its source. Health lines for many towns come from PhilHealth’s lists of accredited government facilities. Numbers change; in a life-threatening emergency call 911.",
  "provinces": [
   {
    "slug": "basilan",
@@ -1198,6 +1198,936 @@
       "0953-105-9720"
      ],
      "source": "https://web.archive.org/web/20250517212958/https://ecotabatocity.ph/lgu-landline/"
+    }
+   ]
+  },
+  {
+   "province": "basilan",
+   "slug": "hadji-muhtamad",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "HADJI MUHTAMAD RURAL HEALTH UNIT",
+     "phones": [
+      "09263939032"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "HADJI MUHTAMAD RURAL HEALTH UNIT",
+     "phones": [
+      "09175726763"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "HADJI MUHTAMAD RURAL HEALTH UNIT",
+     "phones": [
+      "0906-257-8557"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/DOTS_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "basilan",
+   "slug": "tipo-tipo",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "TIPO TIPO RURAL HEALTH UNIT",
+     "phones": [
+      "09064417826"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "basilan",
+   "slug": "tuburan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "TUBURAN RURAL HEALTH UNIT",
+     "phones": [
+      "0936-515-1898"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "TUBURAN RHU",
+     "phones": [
+      "09532937095"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "basilan",
+   "slug": "ungkaya-pukan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "UNGKAYA PUKAN",
+     "phones": [
+      "09668520141"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "amai-manabilang",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "BUMBARAN RURAL HEALTH UNIT",
+     "phones": [
+      "0919-582-9344"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "BUMBARAN RURAL HEALTH UNIT",
+     "phones": [
+      "09195829344"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "balabagan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "BALABAGAN RURAL HEALTH UNIT",
+     "phones": [
+      "09101008265"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "balindong",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "BALINDONG DISTRICT HOSPITAL",
+     "phones": [
+      "09173270773"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "BALINDONG RURAL HEALTH UNIT",
+     "phones": [
+      "09177079296"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "bayang",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "BAYANG RURAL HEALTH UNIT",
+     "phones": [
+      "09350068123"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "BAYANG RHU",
+     "phones": [
+      "09177167699"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "binidayan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "UNAYAN DISTRICT HOSPITAL",
+     "phones": [
+      "09198666665"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "buadiposo-buntong",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "BUADIPUSO BUNTONG RHU",
+     "phones": [
+      "09491380507"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "BUADIPUSO BUNTONG RHU",
+     "phones": [
+      "09176322296"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "bubong",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "BUBONG RURAL HEALTH UNIT",
+     "phones": [
+      "09127091718"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "BUBONG RHU",
+     "phones": [
+      "09999906525"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "butig",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "BUTIG RURAL HEALTH UNIT",
+     "phones": [
+      "09053435733"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "BUTIG RHU",
+     "phones": [
+      "09177180675"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "calanogas",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "CALANOGAS RHU",
+     "phones": [
+      "09198666668"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "ditsaan-ramain",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "DITSA-AN RAMAIN RHU",
+     "phones": [
+      "09999916810"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "DITSA-AN RAMAIN RHU",
+     "phones": [
+      "09177267411"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/DOTS_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "ganassi",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "GANASSI RURAL HEALTH UNIT",
+     "phones": [
+      "09514715726"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "GANASSI RHU",
+     "phones": [
+      "09176205139/09282152694"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "kapai",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "KAPAI RHU",
+     "phones": [
+      "09182290772"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "lumba-bayabao",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "LUMBA BAYABAO RURAL HEALTH UNIT",
+     "phones": [
+      "09171385435"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "lumbaca-unayan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "LUMBACA UNAYAN RURAL HEALTH UNIT",
+     "phones": [
+      "09778500751"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "lumbatan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "LUMBATAN RURAL HEALTH UNIT",
+     "phones": [
+      "09172036490"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "lumbayanague",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "LUMBAYANAGUE RHU",
+     "phones": [
+      "09065313769"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "LUMBAYANAGUE RHU",
+     "phones": [
+      "09228949015"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/DOTS_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "madalum",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "MADALUM RHU",
+     "phones": [
+      "09503746067"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "madamba",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "MADAMBA RHU",
+     "phones": [
+      "0909-085-7726"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "maguing",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "MAGUING RURAL HEALTH",
+     "phones": [
+      "09177170733"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "malabang",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "DR. SERAPIO B. MONTAÑER JR., AL-HAJ MEMORIAL HOSPITAL",
+     "phones": [
+      "0917-321-4935"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "MALABANG RURAL HEALTH UNIT",
+     "phones": [
+      "09955331312"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "MALABANG RHU",
+     "phones": [
+      "09999906798"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "DR. SERAPIO B. MONTAÑER, JR. AL-HAJ MEMORIAL HOSPITAL",
+     "phones": [
+      "0927984456"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/ABPP_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "marantao",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "MARANTAO RURAL HEALTH UNIT",
+     "phones": [
+      "09209571932"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "MARANTAO RHU",
+     "phones": [
+      "09088696155"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "marogong",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "MAROGONG RHU",
+     "phones": [
+      "0919-333-5332"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/DOTS_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "masiu",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "MASIU RHU",
+     "phones": [
+      "09399203170"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "MASIU RHU",
+     "phones": [
+      "09176223542"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/DOTS_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "mulondo",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "MULONDO RURAL HEALTH UNIT",
+     "phones": [
+      "09197512281"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "MULONDO RHU",
+     "phones": [
+      "09215377218"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "pagayawan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "PAGAYAWAN RHU",
+     "phones": [
+      "09129119220"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "piagapo",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "PIAGAPO RURAL HEALTH UNIT",
+     "phones": [
+      "09484310812"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "PIAGAPO RHU",
+     "phones": [
+      "09993192226"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "picong",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "PICONG RHU",
+     "phones": [
+      "09981569119"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "PICONG RHU",
+     "phones": [
+      "09206461622"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "poona-bayabao",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "POONA BAYABAO RHU",
+     "phones": [
+      "09153877165"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "pualas",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "PUALAS RHU",
+     "phones": [
+      "09479926991"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "saguiaran",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "SAGUIARAN RHU",
+     "phones": [
+      "09279712092"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "sultan-dumalondong",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "SULTAN DUMALONDONG RURAL HEALTH UNIT",
+     "phones": [
+      "0915-274-7506"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "SULTAN DUMALONDONG RHU",
+     "phones": [
+      "09179745006"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "tagoloan-ii",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "TAGOLOAN RURAL HEALTH UNIT",
+     "phones": [
+      "09481132062"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "TAGOLOAN RURAL HEALTH UNIT",
+     "phones": [
+      "09177067795"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "tamparan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "TAMPARAN DISTRICT HOSPITAL",
+     "phones": [
+      "09455131775"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "TAMPARAN RURAL HEALTH UNIT",
+     "phones": [
+      "09175009717"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "TAMPARAN RHU",
+     "phones": [
+      "09054271563"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "tubaran",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "TUBARAN RURAL HEALTH UNIT",
+     "phones": [
+      "09213950167"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "wao",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "WAO DISTRICT HOSPITAL",
+     "phones": [
+      "09778368176"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "WAO RURAL HEALTH UNIT",
+     "phones": [
+      "09069565174"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "WAO RHU TB DOTS CLINIC",
+     "phones": [
+      "09177172567"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/DOTS_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "datu-salibo",
+   "lines": [
+    {
+     "kind": "hall",
+     "name": "LGU Datu Salibo (Contact Nos.)",
+     "phones": [
+      "(064) 421-8235"
+     ],
+     "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Datu%20Salibo"
+    },
+    {
+     "kind": "health",
+     "name": "DATU SALIBO RHU",
+     "phones": [
+      "09176536743/09328538089"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/DOTS_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "paglat",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "PAGLAT RHU",
+     "phones": [
+      "09491568907"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "PAGLAT RHU",
+     "phones": [
+      "09173096846"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/DOTS_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "tawi-tawi",
+   "slug": "languyan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "LANGUYAN RHU",
+     "phones": [
+      "09778371208"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "LANGUYAN RHU",
+     "phones": [
+      "09061814599"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "tawi-tawi",
+   "slug": "panglima-sugala",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "PANGLIMA SUGALA RHU",
+     "phones": [
+      "0905-445-4644"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "tawi-tawi",
+   "slug": "sapa-sapa",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "SAPA-SAPA RHU",
+     "phones": [
+      "09488377799"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "TUAN LIGADDUNG LIPAE MEMORIAL HOSPITAL",
+     "phones": [
+      "09989504522"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "tawi-tawi",
+   "slug": "sibutu",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "SIBUTU RHU",
+     "phones": [
+      "09688561712"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "SIBUTU RHU",
+     "phones": [
+      "0932486-7825"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "tawi-tawi",
+   "slug": "south-ubian",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "SOUTH UBIAN RHU",
+     "phones": [
+      "09062193489"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "SOUTH UBIAN RHU",
+     "phones": [
+      "0906-219-3489"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "SOUTH UBIAN RHU",
+     "phones": [
+      "09290059417"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/DOTS_093026.pdf"
+    }
+   ]
+  },
+  {
+   "province": "tawi-tawi",
+   "slug": "tandubas",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "TANDUBAS RHU",
+     "phones": [
+      "09287626424"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/MCC_093026.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "TANDUBAS RHU",
+     "phones": [
+      "0928-762-6424"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/DOTS_093026.pdf"
     }
    ]
   }

@@ -248,8 +248,12 @@
     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-expands-community-based-prevention-campaign-vs-dengue/"
    },
    "address": "BARMM Compound, Gov. Gutierrez Ave., Cotabato City 9600",
-   "phones": [],
-   "emails": [],
+   "phones": [
+    "(064) 421 1379"
+   ],
+   "emails": [
+    "milg@bangsamoro.gov.ph"
+   ],
    "website": "https://www.milgbarmm.com/",
    "facebook": "https://www.facebook.com/MILGBangsamoro/",
    "sources": [
@@ -268,6 +272,10 @@
     {
      "label": "MILG website, About page",
      "url": "https://www.milgbarmm.com/about"
+    },
+    {
+     "label": "Contact details",
+     "url": "https://api.milgbarmm.com/api/v1/public/website/contacts"
     }
    ],
    "checked": null
@@ -439,9 +447,12 @@
    },
    "address": "BARMM Complex, Cotabato City",
    "phones": [
-    "(064) 421 8183"
+    "(064) 421 8183",
+    "(064) 442-5171"
    ],
-   "emails": [],
+   "emails": [
+    "most@bangsamoro.gov.ph"
+   ],
    "website": "https://most.bangsamoro.gov.ph",
    "facebook": null,
    "sources": [
@@ -456,6 +467,10 @@
     {
      "label": "BARMM news, Halal summit (Minister Mantawil), 2026-09-30",
      "url": "https://bangsamoro.gov.ph/news/latest-news/science-driven-halal-opportunities-now-more-accessible-to-bangsamoro/"
+    },
+    {
+     "label": "Contact details",
+     "url": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view"
     }
    ],
    "checked": null
@@ -562,6 +577,10 @@
     {
      "label": "BIO news, security forces finalize poll preparations, 2026-09-07",
      "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-security-forces-finalize-preparations-ahead-of-historic-sept-14-polls/"
+    },
+    {
+     "label": "Contact details",
+     "url": "https://mpos.bangsamoro.gov.ph/wp-json/wp/v2/pages?search=contact"
     }
    ],
    "checked": null
@@ -812,6 +831,10 @@
     {
      "label": "BIO news, BWC consults Basilan women's groups, 2026-10-16",
      "url": "https://bangsamoro.gov.ph/news/latest-news/bwc-consults-basilan-womens-groups-for-grassroots-responsive-gender-policies/"
+    },
+    {
+     "label": "Contact details",
+     "url": "https://bwc.bangsamoro.gov.ph/wp-json/wp/v2/pages?search=contact"
     }
    ],
    "checked": null
@@ -880,6 +903,10 @@
     {
      "label": "BIO news, Palarong Pambansa incentives, 2026-07-13",
      "url": "https://bangsamoro.gov.ph/news/latest-news/barmms-sports-commission-awards-p495k-incentives-to-palarong-pambansa-medalists-coaches/"
+    },
+    {
+     "label": "Contact details",
+     "url": "https://bsc.bangsamoro.gov.ph/wp-json/wp/v2/pages?search=contact"
     }
    ],
    "checked": null
@@ -965,7 +992,7 @@
     "as_of": "2026-07-01",
     "source": "https://bangsamoro.gov.ph/news/latest-news/lakbay-aral-introduces-lanao-del-sur-youth-to-bangsamoro-governance-peace-journey/"
    },
-   "address": null,
+   "address": "SKCC, Bangsamoro Government Center, Gov. Gutierrez Avenue, Cotabato City, Philippines, 9600",
    "phones": [],
    "emails": [],
    "website": null,
@@ -978,6 +1005,10 @@
     {
      "label": "bangsamoro.gov.ph homepage (links facebook.com/biobarmm)",
      "url": "https://bangsamoro.gov.ph/"
+    },
+    {
+     "label": "Contact details",
+     "url": "https://bangsamoro.gov.ph/author/infobangsamoro-gov-ph/"
     }
    ],
    "checked": null
@@ -1007,6 +1038,10 @@
     {
      "label": "BIO news, Islamic finance partnerships, 2026-01-26",
      "url": "https://bangsamoro.gov.ph/news/latest-news/partnerships-seek-to-widen-public-understanding-of-islamic-finance-in-barmm/"
+    },
+    {
+     "label": "Contact details",
+     "url": "https://dab.bangsamoro.gov.ph/wp-json/wp/v2/pages?search=contact"
     }
    ],
    "checked": null
@@ -1114,15 +1149,23 @@
     "as_of": "2024-09-05",
     "source": "https://most.bangsamoro.gov.ph/most-barmm-holds-4th-bshs-board-of-trustees-meeting/"
    },
-   "address": null,
-   "phones": [],
-   "emails": [],
+   "address": "BSHS Compound, Cotabato City",
+   "phones": [
+    "(064) 429 2659"
+   ],
+   "emails": [
+    "bshs@most.bangsamoro.gov.ph"
+   ],
    "website": "https://bshs.bangsamoro.gov.ph",
    "facebook": null,
    "sources": [
     {
      "label": "MOST news, 4th BSHS Board of Trustees meeting, 2024-09-05",
      "url": "https://most.bangsamoro.gov.ph/most-barmm-holds-4th-bshs-board-of-trustees-meeting/"
+    },
+    {
+     "label": "Contact details",
+     "url": "https://bshs.bangsamoro.gov.ph/"
     }
    ],
    "checked": null
