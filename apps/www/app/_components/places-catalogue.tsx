@@ -26,7 +26,7 @@ export function PlacesCatalogue() {
 						{places.length} places · {areas} areas
 					</p>
 					{/* One line at every width, sized to the screen. */}
-					<h1 className='mt-3 text-[clamp(1.9rem,7.6vw,6.75rem)] font-extrabold leading-[1] tracking-[-0.035em] whitespace-nowrap'>Places of the Bangsamoro</h1>
+					<h1 className='mt-3 text-[clamp(1.75rem,6vw,5rem)] font-extrabold leading-[1] tracking-[-0.035em] whitespace-nowrap'>Places of the Bangsamoro</h1>
 					<p className='mt-5 max-w-xl text-[17px] leading-[1.6] text-white/85'>
 						Islands and white sand, lakes in the highlands, mosques, falls and the old forts and houses of the sultanates: what is there, how to get there, and what to know before you go.
 					</p>
