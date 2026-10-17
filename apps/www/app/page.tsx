@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import { CARD } from './_lib/seo'
-import { ArrowRightIcon, ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
+import { ArrowRightIcon, ArrowUpRightIcon, MagnifyingGlassIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { ChapterStrip, type StripCard } from './_components/chapter-strip'
-import { Counter, CtaAction, CtaPanel, LineReveal, Magnetic, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { Counter, CtaAction, CtaPanel, LineReveal, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
 import { bangsamoroParliament } from '@betterbarmm/primer-data'
 import { DiscoverMarquee } from './_components/discover-marquee'
 import { photo } from './_components/discover-media'
@@ -128,47 +128,57 @@ export default async function HomePage() {
 				    headline. Desktop only — on a phone it would sit under the words. */}
 				<HeroGraphic className='absolute inset-[3%] hidden opacity-50 lg:block' />
 
-				<div className='bb-container masthead-band relative'>
-					{/* The headline keeps the room it actually needs. Any narrower and
-					    "Public records," wraps, and a two-word line broken across two rows
-					    is not a masthead. */}
-					<div className='lg:max-w-[62%]'>
-						<div>
-							<Rise distance={14}>
-								<p className='bb-label'>Public transparency for the Bangsamoro</p>
-							</Rise>
+				{/* Shorter than it was, and it now does a job: the search box is the band's one
+				    action, since most readers arrive looking for something specific — a bill, a
+				    town, a budget line. The links under it are the ways in for everyone else. */}
+				<div className='bb-container relative py-14 lg:py-20'>
+					<div className='lg:max-w-[58%]'>
+						<Rise distance={14}>
+							<p className='bb-label'>Public transparency for the Bangsamoro</p>
+						</Rise>
 
-							<LineReveal
-								lines={['Public records,', 'in one place.']}
-								delay={0.08}
-								className='bb-display mt-7 text-[var(--ink)]'
-								lineClassName={[undefined, 'bb-mute']}
-							/>
+						<LineReveal
+							lines={['Public records,', 'in one place.']}
+							delay={0.08}
+							className='bb-display-md mt-5 text-[var(--ink)]'
+							lineClassName={[undefined, 'bb-mute']}
+						/>
 
-							<Rise delay={0.35} distance={16}>
-								<p className='mt-9 max-w-2xl text-[15px] leading-8 text-[var(--ink-2)]'>
-									BetterBARMM turns scattered Bangsamoro public records into workspaces you can read,
-									question, and trace back to the source — the bills before Parliament, the budgets
-									behind them, and every local government in the region.
-								</p>
-							</Rise>
+						<Rise delay={0.3} distance={16}>
+							<p className='mt-6 max-w-xl text-[15px] leading-7 text-[var(--ink-2)]'>
+								Bills, budgets, elections, procurement and every local government in the region, readable and traced back to the source.
+							</p>
+						</Rise>
 
-							<Rise delay={0.45} distance={14}>
-								<div className='mt-11 flex flex-wrap items-center gap-3'>
-									<Magnetic strength={0.24}>
-										<Link href='https://budget.betterbarmm.com' className='bb-btn bb-btn-solid'>
-											Open the Budget workspace
-											<ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
-										</Link>
-									</Magnetic>
-									<Magnetic strength={0.24}>
-										<Link href='/discover' className='bb-btn bb-btn-ghost'>
-											Discover BARMM
-										</Link>
-									</Magnetic>
-								</div>
-							</Rise>
-						</div>
+						<Rise delay={0.4} distance={14}>
+							<form action='/search' role='search' className='mt-8 flex max-w-xl'>
+								<label className='sr-only' htmlFor='home-search'>
+									Search BetterBARMM
+								</label>
+								{/* Fixed colours: inside the band, --paper and --ink are re-pointed to its crimson ground. */}
+								<span className='flex h-12 min-w-0 flex-1 items-center gap-3 bg-white px-4 text-[#191713]'>
+									<MagnifyingGlassIcon size={18} className='shrink-0 text-[#5c574c]' aria-hidden='true' />
+									<input id='home-search' name='q' placeholder='A bill, a town, a budget line, an official…' className='min-w-0 flex-1 bg-transparent text-[15px] outline-none placeholder:text-[#8a857a]' />
+								</span>
+								<button type='submit' className='h-12 shrink-0 cursor-pointer bg-[#191713] px-5 text-[13px] font-semibold uppercase tracking-[0.12em] text-white transition hover:bg-black'>
+									Search
+								</button>
+							</form>
+						</Rise>
+
+						<Rise delay={0.5} distance={12}>
+							<p className='mt-6 flex flex-wrap gap-x-6 gap-y-2 text-[14px] font-semibold'>
+								<Link href='https://budget.betterbarmm.com' className='inline-flex items-center gap-1.5 text-[var(--ink)] underline decoration-white/40 underline-offset-4 hover:decoration-white'>
+									Open the Budget workspace <ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
+								</Link>
+								<Link href='/discover' className='inline-flex items-center gap-1.5 text-[var(--ink)] underline decoration-white/40 underline-offset-4 hover:decoration-white'>
+									Discover BARMM <ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
+								</Link>
+								<Link href='/directory' className='inline-flex items-center gap-1.5 text-[var(--ink)] underline decoration-white/40 underline-offset-4 hover:decoration-white'>
+									Directory <ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
+								</Link>
+							</p>
+						</Rise>
 					</div>
 				</div>
 			</section>
@@ -180,7 +190,7 @@ export default async function HomePage() {
 
 			    Compact: the live ones as slim rows and the rest as a line of names. The
 			    full cards took a screen and a half to say five things. */}
-			<section id='workspaces' className='bb-container scroll-mt-20 py-14 lg:py-16'>
+			<section id='workspaces' className='bb-container scroll-mt-20 py-20 lg:py-24'>
 				<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2'>
 					<h2 className='text-[1.6rem] font-extrabold tracking-[-0.03em]'>
 						The workspaces <span className='text-[var(--ink-mute)]'>· {live} live</span>
@@ -195,7 +205,7 @@ export default async function HomePage() {
 			{/* ---- Explainers ---- */}
 			{explainers.length ? (
 				<section aria-labelledby='explainers-title' className='border-t border-[var(--rule)]'>
-					<div className='bb-container py-14 lg:py-16'>
+					<div className='bb-container py-20 lg:py-24'>
 						<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2'>
 							<h2 id='explainers-title' className='text-[1.6rem] font-extrabold tracking-[-0.03em]'>
 								Explainers
