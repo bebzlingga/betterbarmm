@@ -72,7 +72,30 @@
      ]
     }
    ],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "Visit the mosque outside prayer times, dressed modestly",
+     "detail": "Cover arms and legs, bring a headscarf if you are a woman, take your shoes off before the prayer hall and stay away during Friday midday prayer unless you are attending.",
+     "source": "guide"
+    },
+    {
+     "title": "See the gold domes and the 43-metre minarets lit at night",
+     "detail": "The minarets are 43 metres high and lit after dark, bright enough to guide pilots flying near the city.",
+     "source": "https://en.wikipedia.org/wiki/Sultan_Haji_Hassanal_Bolkiah_Mosque"
+    },
+    {
+     "title": "Watch the sunset from the Baywalk near the mosque",
+     "detail": "A waterfront walk close to the Grand Mosque is where people in the city go to watch the sun set over the bay.",
+     "source": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "title": "Look back at the mosque from the Timako Hill bridge",
+     "detail": "The bridge at Timako Hill gives a wide view over Barangay Kalanganan II with the Grand Mosque behind it.",
+     "source": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "pedro-colina-hill",
@@ -135,7 +158,25 @@
      ]
     }
    ],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "Walk past the painted houses on the Sinsuat Avenue side",
+     "detail": "Since 2018 the houses on this side of the hill have been painted in bright colours with gongs, crabs and guinakit boats, behind the big Cotabato City sign at the corner of Sinsuat and Notre Dame Avenues.",
+     "source": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "title": "Climb to the top for the view over the delta",
+     "detail": "Tantawan, the hill's Maguindanaon name, means 'extensive view'; the climb is short, and late afternoon is the best time for both the light and the heat.",
+     "source": "https://en.wikipedia.org/wiki/Pedro_Colina_Hill"
+    },
+    {
+     "title": "Start at Tantawan Park at the foot of the hill",
+     "detail": "The park with the Sultan Kudarat monument sits at the base of the hill, so it makes a natural starting point for the walk up.",
+     "source": "https://en.wikipedia.org/wiki/Tantawan_Park"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "kutawato-caves",
@@ -180,7 +221,20 @@
      ]
     }
    ],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "Go into the caves with a guide and a torch",
+     "detail": "The cave is not lit for visitors and access has opened and closed over the years, so ask locally about current access before you go.",
+     "source": "guide"
+    },
+    {
+     "title": "Ask which of the four entrances is open",
+     "detail": "The cave system has four named entrances: the Provincial Capitol Cave, Bagua Cave, Caverna Español and Kuweba ni Satur.",
+     "source": "https://en.wikipedia.org/wiki/Kutawato_Caves"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "tamontaka-church",
@@ -238,7 +292,31 @@
      ]
     }
    ],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "See the old Jesuit mission church on the Tamontaka River",
+     "detail": "The mission was founded in 1872, the church moved to its present site in 1879, and it was declared a National Historic Landmark in 2004.",
+     "source": "https://en.wikipedia.org/wiki/Tamontaka_Church"
+    },
+    {
+     "title": "Attend Mass, or come back after it",
+     "detail": "It is a working parish, so around Mass times either join the service or return later.",
+     "source": "guide"
+    },
+    {
+     "title": "Pair it with the Grand Mosque on the same day",
+     "detail": "The church is a few kilometres from the Grand Mosque, and seeing both shows the two faiths that have shared the city for a long time.",
+     "source": "guide"
+    }
+   ],
+   "eat": [
+    {
+     "title": "Fried hito at Babo Katips in Tamontaka",
+     "detail": "A restaurant in Tamontaka known for its fried catfish (hito).",
+     "source": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ]
   },
   {
    "slug": "tantawan-park",
@@ -288,7 +366,30 @@
      ]
     }
    ],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "See the monument to Sultan Muhammad Kudarat",
+     "detail": "The park's centrepiece is a monument to the Maguindanao sultan, at the corner of Quezon Avenue and Sinsuat Avenue.",
+     "source": "https://en.wikipedia.org/wiki/Tantawan_Park"
+    },
+    {
+     "title": "Get a short massage in the park",
+     "detail": "A 2018 visitor found short, cheap massages on offer in the park.",
+     "source": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "title": "Watch the Shariff Kabunsuan Festival in December",
+     "detail": "The festival runs on December 15 to 19, with a dance parade, a boat race and a re-enactment of Shariff Kabunsuan's arrival.",
+     "source": "https://en.wikipedia.org/wiki/Cotabato_City"
+    },
+    {
+     "title": "Walk on up Pedro Colina Hill",
+     "detail": "The hill and the Kutawato Caves are at the same spot, so the park is the first stop on a short walk that takes in all three.",
+     "source": "guide"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "bangsamoro-government-center",
@@ -351,7 +452,25 @@
      "tone": null
     }
    ],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Visit the Bangsamoro Museum",
+     "detail": "The museum is in the Shariff Kabunsuan Cultural Complex inside the government centre; bring ID for the security check at the gate.",
+     "source": "https://en.wikipedia.org/wiki/Bangsamoro_Government_Center"
+    },
+    {
+     "title": "See Toym Imao's Manara art installations",
+     "detail": "In 2018 a set of interactive art installations by the artist Toym Imao, called Manara, had a permanent home in the compound.",
+     "source": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "title": "Look at the arcaded main building",
+     "detail": "The 1976 central building, nicknamed the Little Malacañan of the South, is ringed by arcades with Muslim motifs on the roof; ask before photographing.",
+     "source": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "rio-grande-de-mindanao",
@@ -422,7 +541,25 @@
      ]
     }
    ],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Walk the Bai Walk along the river",
+     "detail": "The river wall in Cotabato City has been turned into a riverside park.",
+     "source": "https://en.wikipedia.org/wiki/Cotabato_City"
+    },
+    {
+     "title": "Watch the boat race at the Shariff Kabunsuan Festival",
+     "detail": "The festival on December 15 to 19 includes a banca race and a re-enactment of Shariff Kabunsuan's arrival by river.",
+     "source": "https://en.wikipedia.org/wiki/Cotabato_City"
+    },
+    {
+     "title": "Arrange a boat trip on the river locally",
+     "detail": "There is no scheduled tour boat; trips are informal and arranged with boat owners on the riverfront.",
+     "source": "guide"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "bud-bongao",
@@ -501,7 +638,35 @@
      ]
     }
    ],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "Climb the stone steps to the view deck on Tambisan Peak",
+     "detail": "A cobblestone trail of 3,608 steps runs from the jump-off at Barangay Pasiagan to a view deck at 317 metres, looking over the Celebes Sea to Tambisan Island in Sabah; start early, as the heat builds fast.",
+     "source": "https://en.wikipedia.org/wiki/Mount_Bongao"
+    },
+    {
+     "title": "Register at the visitor centre before you climb",
+     "detail": "In 2017 climbers registered and got a briefing at the visitor centre, and paid an entrance fee of PHP 20 towards upkeep.",
+     "source": "https://ptvnews.ph/?p=12251"
+    },
+    {
+     "title": "Bring bananas for the macaques along the trail",
+     "detail": "Friendly monkeys gather beside the path on the way up, so bring enough bananas for them, and keep other food in a closed bag.",
+     "source": "https://www.sunstar.com.ph/more-articles/6-interesting-things-places-in-tawi-tawi"
+    },
+    {
+     "title": "Visit the tampat shrines near the summit, quietly and dressed modestly",
+     "detail": "Pilgrims climb to pray at the burial shrines under the Tampat rocks, where 2 followers of Sheik Karimul Makhdum are said to be buried.",
+     "source": "https://www.sunstar.com.ph/davao/lifestyle/salvador-breathtaking-bud-bongao"
+    },
+    {
+     "title": "Look out from the peaks named after the islands they face",
+     "detail": "The mountain has 6 limestone peaks, and each one looks out towards the island it is named after: Bongao, Simunul, Tambisan, Tinondakan, Pajar and Sibutu, the highest at 342 metres.",
+     "source": "https://www.sunstar.com.ph/davao/lifestyle/salvador-breathtaking-bud-bongao"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "panampangan-island",
@@ -584,7 +749,35 @@
      ]
     }
    ],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "Walk the sandbar at low tide",
+     "detail": "The crescent-shaped sandbar runs out about 3,128 metres into Basibuli Shoal, so check the tide table before you charter the boat.",
+     "source": "https://www.sunstar.com.ph/davao/lifestyle/the-allure-of-panampangan-island"
+    },
+    {
+     "title": "Picnic in the beach huts and grilling areas",
+     "detail": "In 2018 there were huts and grilling areas on the beach for picnics, with Marines posted on the island; bring your own food, water and shade.",
+     "source": "https://www.sunstar.com.ph/davao/lifestyle/the-allure-of-panampangan-island"
+    },
+    {
+     "title": "Swim and snorkel off the island",
+     "detail": "The water is clear and the reef is in good condition, but nothing is rented here, so bring your own snorkel gear.",
+     "source": "guide"
+    },
+    {
+     "title": "Stop at Simunul on the boat from Bongao",
+     "detail": "The trip takes 30 minutes to 1 hour by speedboat or pump boat, and tours from Bongao often stop at Simunul for the Sheik Karimul Makhdum Mosque on the way.",
+     "source": "https://www.sunstar.com.ph/davao/lifestyle/the-allure-of-panampangan-island"
+    },
+    {
+     "title": "Camp overnight by arrangement",
+     "detail": "There is no resort, but you can camp if you arrange it with the barangay; take all your rubbish back with you.",
+     "source": "guide"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "sheik-makhdum-mosque",
@@ -647,7 +840,30 @@
      ]
     }
    ],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "See the 4 old hardwood pillars inside the mosque",
+     "detail": "The National Museum dated the pillars to the 17th century, which makes them the oldest known Islamic artefacts in the Philippines; ask before photographing them.",
+     "source": "https://en.wikipedia.org/wiki/Sheikh_Karimul_Makhdum_Mosque"
+    },
+    {
+     "title": "Visit Sheik Karimul Makhdum's tomb nearby",
+     "detail": "The missionary's remains are buried close to the mosque; cover up and keep quiet, as at any pilgrimage site.",
+     "source": "https://www.sunstar.com.ph/more-articles/6-interesting-things-places-in-tawi-tawi"
+    },
+    {
+     "title": "Come for Sheikh Karimul Makhdum Day on November 7",
+     "detail": "Simunul marks the Sheik's arrival and the beginning of Islam in the country every November 7.",
+     "source": "https://www.philstar.com/nation/2017/11/08/1756887/tourism-tawi-tawi-thriving-province-reports/amp/"
+    },
+    {
+     "title": "Swim at one of Simunul's beaches",
+     "detail": "The municipality has 6 beaches across Simunul Island and Manuk Mangkaw Island, 3.5 km to the south.",
+     "source": "https://en.wikipedia.org/wiki/Simunul"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "sitangkai",
@@ -711,7 +927,25 @@
      ]
     }
    ],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "Get around town by boat and plank footbridge",
+     "detail": "Boats are the main way to get around and footbridges link one house to the next, which is why the town is called the Venice of the South.",
+     "source": "https://en.wikipedia.org/wiki/Sitangkai"
+    },
+    {
+     "title": "Watch the seaweed being dried and sorted",
+     "detail": "Seaweed racks, drying lines and sorting are everywhere in town; ask before photographing people and their houses.",
+     "source": "guide"
+    },
+    {
+     "title": "Plan the trip with the municipality",
+     "detail": "Count on most of a day each way by boat from Bongao via Sibutu, and let the municipality know before you arrive.",
+     "source": "guide"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "turtle-islands",
@@ -772,7 +1006,30 @@
      ]
     }
    ],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "Watch the turtles nest at night, with supervision",
+     "detail": "Visitors come to watch green turtles lay their eggs at night, and outside the strict protection zones visits are allowed only with guidance from government staff; no lights, flash or handling.",
+     "source": "https://en.wikipedia.org/wiki/Turtle_Islands_Wildlife_Sanctuary"
+    },
+    {
+     "title": "Go between late August and December",
+     "detail": "From the end of August to December the turtles come ashore by the hundreds to lay their eggs.",
+     "source": "https://en.wikipedia.org/wiki/Turtle_Islands_Wildlife_Sanctuary"
+    },
+    {
+     "title": "Watch the hatchlings head for the sea",
+     "detail": "Visitors to Baguan, the main sanctuary island, also come to watch hatchlings climb out of their nests and make for the water.",
+     "source": "https://gmanetwork.com/news/cbb/content/364006/ecotourism-projects-eyed-for-tawi-tawi-s-turtle-islands/story"
+    },
+    {
+     "title": "Look for the islands' birds",
+     "detail": "At least 71 bird species have been recorded, among them the Philippine megapode, the grey imperial pigeon and the Mantanani scops owl.",
+     "source": "https://en.wikipedia.org/wiki/Turtle_Islands_Wildlife_Sanctuary"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "balobok-rock-shelter",
@@ -805,7 +1062,20 @@
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
    "images": [],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Visit the shelter with the municipality or tourism office",
+     "detail": "People lived in this cave between 8,000 and 5,000 years ago; nothing is built for visitors, so arrange a visit and touch nothing.",
+     "source": "https://en.wikipedia.org/wiki/Balobok_Cave"
+    },
+    {
+     "title": "Watch wooden boats being built on Sanga-Sanga",
+     "detail": "Large wooden prahu boats are built by hand around Sanga-Sanga, mostly by Sama-Bajau craftsmen, and each one takes about a year.",
+     "source": "https://www.sunstar.com.ph/more-articles/6-interesting-things-places-in-tawi-tawi"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "sibutu-island",
@@ -873,7 +1143,20 @@
      ]
     }
    ],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Watch boat builders at work",
+     "detail": "Most people on Sibutu build boats, and a wooden prahu built entirely by hand takes about a year.",
+     "source": "https://www.sunstar.com.ph/more-articles/6-interesting-things-places-in-tawi-tawi"
+    },
+    {
+     "title": "Break the boat journey from Bongao to Sitangkai here",
+     "detail": "Sibutu is the stop on the long crossing to Sitangkai; let the municipality know before you arrive.",
+     "source": "guide"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "panguan-island",
@@ -924,7 +1207,20 @@
      ]
     }
    ],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "See the flagpole at the edge of the country",
+     "detail": "The Philippine flag was raised here on 29 April 2017, beside a military barrack, on the last island of the Sulu Archipelago before Malaysia, 50 km from Sabah.",
+     "source": "https://en.wikipedia.org/wiki/Panguan_Island"
+    },
+    {
+     "title": "Go only with clearance and bring everything",
+     "detail": "Clear the trip with the municipality and the provincial tourism office, and bring your own food and drinking water, since the island has little of either.",
+     "source": "guide"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "lake-lanao",
@@ -1014,7 +1310,30 @@
      ]
     }
    ],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "Drive the shore road round the lake towns",
+     "detail": "Hire a vehicle with a local driver for the loop through Marantao, Tugaya, Bacolod-Kalawi, Ganassi and Binidayan, and ask about the southern shore before doing the full circuit.",
+     "source": "guide"
+    },
+    {
+     "title": "Look over the lake from Angoyao Hills",
+     "detail": "Angoyao Hills in Barangay Sogod, Marawi, is a natural viewpoint over the lake.",
+     "source": "https://en.wikipedia.org/wiki/Marawi"
+    },
+    {
+     "title": "Go down to Bagang beach",
+     "detail": "Bagang beach is 2 km from Marawi's commercial centre.",
+     "source": "https://en.wikipedia.org/wiki/Marawi"
+    },
+    {
+     "title": "Visit the Polo Barakat Mosque in Binidayan",
+     "detail": "The provincial tourism office lists this mosque in Binidayan, on the lake circuit, among the province's draws; dress modestly.",
+     "source": "https://www.sunstar.com.ph/article/125205/lanao-del-sur-marks-high-tourist-visitors"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "aga-khan-museum",
@@ -1040,7 +1359,35 @@
     "https://en.wikipedia.org/wiki/Marawi"
    ],
    "images": [],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "See the weapons from the Moro wars",
+     "detail": "The museum shows weapons used against the Spanish and the Americans, including the lantaka cannon, the kris and the kampilan.",
+     "source": "https://en.wikipedia.org/wiki/Aga_Khan_Museum_of_Islamic_Arts"
+    },
+    {
+     "title": "See the model pagoda mosques and torogan parts",
+     "detail": "Miniature pagoda-style mosques, replicas and pieces of torogan houses such as the carved panolong beam ends are on display, along with musical instruments and farm tools.",
+     "source": "https://en.wikipedia.org/wiki/Aga_Khan_Museum_of_Islamic_Arts"
+    },
+    {
+     "title": "Find Abdulmari Imao's calligraphic sculptures",
+     "detail": "In 2016 the museum was reported to hold more than 300 of Abdulmari Imao's calligraphic sculptures of the name of Allah.",
+     "source": "https://en.wikipedia.org/wiki/Aga_Khan_Museum_of_Islamic_Arts"
+    },
+    {
+     "title": "Go up to the natural history floor",
+     "detail": "The second floor holds the natural history collection and some traditional costumes, and the museum also has old photographs of Marawi from the American period.",
+     "source": "https://langyaw.com/2013/08/14/the-aga-khan-museum-marawi-city/"
+    },
+    {
+     "title": "Take a tricycle to MSU and check it is open",
+     "detail": "Tricycles are the easiest way to get around Marawi, so ask for MSU if the driver does not know the museum; hours have varied, so confirm before you travel and ask at the desk about photography.",
+     "source": "https://langyaw.com/2013/08/14/the-aga-khan-museum-marawi-city/"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "tugaya",
@@ -1068,7 +1415,30 @@
     "https://en.wikipedia.org/wiki/Lanao_del_Sur"
    ],
    "images": [],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "Watch brass cast by the lost-wax method",
+     "detail": "Tugaya's foundries cast brass and bronze by the lost-wax method, including the gador, a pair of ornate brass urns; ask before photographing inside a workshop.",
+     "source": "https://en.wikipedia.org/wiki/Tugaya"
+    },
+    {
+     "title": "Buy straight from a workshop",
+     "detail": "Buying direct is the point of coming: prices are negotiated, nothing takes a card, so bring cash, and remember that brass is heavy.",
+     "source": "guide"
+    },
+    {
+     "title": "See the langkit panels woven for the malong landap",
+     "detail": "Weavers here use back-strap looms and slow needle-weaving to make langkit panels, which are sewn into the traditional Maranao malong landap.",
+     "source": "https://en.wikipedia.org/wiki/Tugaya"
+    },
+    {
+     "title": "See okir chests inlaid with shell",
+     "detail": "Workshops under the houses make gongs, drums and baul, wooden chests carved with okir and inlaid with polished tipay shell.",
+     "source": "https://www.rappler.com/?p=2643498"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "kawayan-torogan",
@@ -1095,7 +1465,25 @@
     "https://en.wikipedia.org/wiki/Torogan"
    ],
    "images": [],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "Arrange a visit with the family that holds the house",
+     "detail": "The house is privately connected to the family that holds it, so arrange your visit locally, and expect that parts of it may be closed.",
+     "source": "guide"
+    },
+    {
+     "title": "Look at the carved panolong beam ends",
+     "detail": "The butterfly-shaped beam ends are carved in turn with the naga (serpent) and the pako rabong (growing fern), the classic Maranao okir motifs.",
+     "source": "https://en.wikipedia.org/wiki/Kawayan_Torogan"
+    },
+    {
+     "title": "See the posts set on boulders",
+     "detail": "The house stands on huge tree-trunk posts resting on rounded boulders, so that it can move without falling in an earthquake and is protected from rot and termites.",
+     "source": "https://en.wikipedia.org/wiki/Kawayan_Torogan"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "marawi-ground-zero",
@@ -1145,7 +1533,25 @@
      ]
     }
    ],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "Go with a local contact",
+     "detail": "Do not walk in alone with a camera; some sections are still restricted or unsafe, so follow what you are told on the ground.",
+     "source": "guide"
+    },
+    {
+     "title": "Listen to people who lived here",
+     "detail": "Residents will generally talk about the 2017 siege, but ask before photographing anything and accept no as an answer.",
+     "source": "guide"
+    },
+    {
+     "title": "Buy your lunch here",
+     "detail": "Spending money in the rebuilt area is the most direct way a visit helps.",
+     "source": "guide"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "marawi-grand-mosque",
@@ -1225,7 +1631,20 @@
      ]
     }
    ],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Visit outside prayer times, dressed modestly",
+     "detail": "Cover arms and legs, bring a headscarf if you are a woman, take your shoes off before the prayer hall and avoid Friday midday prayer unless you are attending.",
+     "source": "guide"
+    },
+    {
+     "title": "See the rebuilt mosque",
+     "detail": "Rebuilt by 2021, the mosque has 3 floors and a basement over 9,434 square metres, holds 20,000 worshippers, and also houses a madrasa and a library.",
+     "source": "https://en.wikipedia.org/wiki/Marawi_Grand_Mosque"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "lake-dapao",
@@ -1271,7 +1690,20 @@
      ]
     }
    ],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Go out on the lake with a fishing family",
+     "detail": "The boats belong to fishing families, so ask before going out on the water, and pay.",
+     "source": "guide"
+    },
+    {
+     "title": "Visit with a local contact from Pualas",
+     "detail": "There are no visitor facilities at the lake.",
+     "source": "guide"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "lake-butig",
@@ -1301,7 +1733,25 @@
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
    "images": [],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Swim at the lakeshore resort",
+     "detail": "The lake sits at 500 metres and a swimming resort has been set up on the shore for people who come to cool off.",
+     "source": "https://en.wikipedia.org/wiki/Lake_Butig_National_Park"
+    },
+    {
+     "title": "Look for hornbills and wild ducks in the forest",
+     "detail": "The 68-hectare park's forest has hornbills, parrots, woodpeckers and wild ducks, as well as monkeys, deer and wild pigs.",
+     "source": "https://en.wikipedia.org/wiki/Lake_Butig_National_Park"
+    },
+    {
+     "title": "Drive in on the Lake Lanao Circumferential Road",
+     "detail": "The lake is about 30 km from Marawi by the circumferential road; get current local advice before setting out.",
+     "source": "https://en.wikipedia.org/wiki/Lake_Butig_National_Park"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "sacred-mountain",
@@ -1332,7 +1782,20 @@
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
    "images": [],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Trek to the pond at the top of Mount Mupo",
+     "detail": "The trail up the 274-metre extinct volcanic cone ends at a pond at the summit; there is no marked trail, so take a local guide.",
+     "source": "https://en.wikipedia.org/wiki/Sacred_Mountain_National_Park"
+    },
+    {
+     "title": "Go birdwatching in the early morning",
+     "detail": "The park is known for birdwatching, and early morning is the best time.",
+     "source": "https://en.wikipedia.org/wiki/Sacred_Mountain_National_Park"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "upi-uplands",
@@ -1377,7 +1840,26 @@
      ]
     }
    ],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "Go for the Meguyaya Festival in December",
+     "detail": "Meguyaya, the Teduray harvest thanksgiving, is held every December with street dancing that shows the Teduray, Maguindanaon and settler cultures, cultural nights and a trade fair.",
+     "source": "https://en.wikipedia.org/wiki/Upi,_Maguindanao_del_Norte"
+    },
+    {
+     "title": "Drive up from the coastal plain",
+     "detail": "The road climbs into cool farm country with views back over the plain towards Cotabato City; the last stretches are rough after rain, so a high-clearance vehicle helps.",
+     "source": "guide"
+    }
+   ],
+   "eat": [
+    {
+     "title": "Roast corn at the Maisan Na grills",
+     "detail": "During Meguyaya a long line of grills is set up beside the road, where everyone roasts corn together.",
+     "source": "https://en.wikipedia.org/wiki/Upi,_Maguindanao_del_Norte"
+    }
+   ]
   },
   {
    "slug": "illana-bay-coast",
@@ -1424,7 +1906,30 @@
      ]
     }
    ],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "Swim at Zone Beach or Punta Beach",
+     "detail": "These are 2 of the beaches Parang lists among its attractions; facilities are basic and most people swim covered.",
+     "source": "https://en.wikipedia.org/wiki/Parang,_Maguindanao_del_Norte"
+    },
+    {
+     "title": "Take a boat across to Bongo Island",
+     "detail": "Boats to the islands are arranged at the shore and the price is negotiated.",
+     "source": "guide"
+    },
+    {
+     "title": "Visit the fruit bat sanctuary",
+     "detail": "Parang lists a fruit bat sanctuary among its attractions.",
+     "source": "https://en.wikipedia.org/wiki/Parang,_Maguindanao_del_Norte"
+    },
+    {
+     "title": "Come for Parang's founding day on August 18",
+     "detail": "The town holds a cultural festival every August 18, its founding anniversary.",
+     "source": "https://en.wikipedia.org/wiki/Parang,_Maguindanao_del_Norte"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "mount-minandar",
@@ -1452,7 +1957,20 @@
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
    "images": [],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Hike 2 hours to the grassy summit",
+     "detail": "The climb from the foot to the summit takes about 2 hours; there is little shade, so start early, carry water and arrange a guide in Kusiong.",
+     "source": "https://en.wikipedia.org/wiki/Datu_Odin_Sinsuat"
+    },
+    {
+     "title": "Finish with a swim at Kusiong Beach",
+     "detail": "The town's beaches are in the same barangay, so a climb and a swim fit into one day.",
+     "source": "https://en.wikipedia.org/wiki/Datu_Odin_Sinsuat"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "blue-lagoon-datu-odin-sinsuat",
@@ -1504,7 +2022,30 @@
      ]
     }
    ],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Swim, or jump into the deep blue water",
+     "detail": "Local teenagers dive into the lagoon from above; it is deep and unguarded, so no soap, no sunscreen, and give way to people fetching water.",
+     "source": "https://www.nomadicexperiences.com/2019/07/dipping-sans-brooke-shields-in-blue.html"
+    },
+    {
+     "title": "Come in the morning, when the water is bluest",
+     "detail": "The lagoon looks bluest in the morning, but villagers fetch drinking water here early in the morning and late in the evening, so keep out of their way.",
+     "source": "https://www.lakwatsero.com/?p=16737"
+    },
+    {
+     "title": "Take the Isulan multicab from Awang",
+     "detail": "From Cotabato City, take a multicab bound for Isulan at Awang and get off at Margues Elementary School (the fare was PHP 10 in 2015); the lagoon is a few steps from the road.",
+     "source": "https://www.lakwatsero.com/?p=16737"
+    },
+    {
+     "title": "Walk on to the second lagoon at Bitu",
+     "detail": "The Bitu lagoon is 100 stone steps down from the highway and a 15 to 20 minute walk from Margues.",
+     "source": "https://www.lakwatsero.com/?p=16737"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "kusiong-beach",
@@ -1532,7 +2073,20 @@
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
    "images": [],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Swim from one of the beach resorts",
+     "detail": "You get onto the beach through resorts such as Amaya, Sahara and Precious Cabana; ask about their rules when you arrive.",
+     "source": "https://en.wikipedia.org/wiki/Datu_Odin_Sinsuat"
+    },
+    {
+     "title": "Climb Mount Minandar in the same barangay",
+     "detail": "The grassy mountain is about a 2-hour hike to the summit from its foot in Kusiong.",
+     "source": "https://en.wikipedia.org/wiki/Datu_Odin_Sinsuat"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "masjid-taviran",
@@ -1563,7 +2117,20 @@
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
    "images": [],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Ask to see the tiered pagoda-style mosque",
+     "detail": "It is one of the last pagoda-style mosques still standing in the Philippines; ask permission before going in or taking photographs, and dress covered.",
+     "source": "https://en.wikipedia.org/wiki/List_of_mosques_in_the_Philippines"
+    },
+    {
+     "title": "Picture the first mosque at Simunul",
+     "detail": "The first mosque at Simunul was probably built in this same pagoda style, so this is the closest you can get to seeing what it looked like.",
+     "source": "https://en.wikipedia.org/wiki/List_of_mosques_in_the_Philippines"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "bongo-island",
@@ -1591,7 +2158,20 @@
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
    "images": [],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Swim at the white-sand beach at Limbayan",
+     "detail": "Parang lists the white-sand beach at Limbayan on Bongo Island among its attractions; bring water and food.",
+     "source": "https://en.wikipedia.org/wiki/Parang,_Maguindanao_del_Norte"
+    },
+    {
+     "title": "Hire a boat across from the Parang shore",
+     "detail": "Boats are arranged on the Parang shore and the price is negotiated.",
+     "source": "guide"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "masjid-dimaukom",
@@ -1645,7 +2225,20 @@
      ]
     }
    ],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "Visit the mosque, dressed covered",
+     "detail": "It is a working mosque: cover up, take your shoes off inside, women wear a scarf in the prayer hall, and ask before photographing the interior.",
+     "source": "guide"
+    },
+    {
+     "title": "Look for the town's other pink buildings",
+     "detail": "The mayor who built the mosque also had other buildings in Datu Saudi Ampatuan painted pink, including the municipal hall.",
+     "source": "https://gmanetwork.com/news/topstories/regions/367904/pink-mosque-is-maguindanao-s-newest-landmark/story"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "ligawasan-marsh",
@@ -1676,7 +2269,25 @@
     "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia"
    ],
    "images": [],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "Take a boat through the channels with a local guide",
+     "detail": "Arrange the boat and guide in the barangay; nothing is scheduled, and the marsh is easier to get around by boat in the wet season.",
+     "source": "guide"
+    },
+    {
+     "title": "See the water lilies turn the marsh pink",
+     "detail": "When the water lilies bloom, parts of the marsh turn into a sea of pink.",
+     "source": "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia"
+    },
+    {
+     "title": "Look for the comb-crested jacana at dawn",
+     "detail": "The marsh is the only place in the Philippines where the comb-crested jacana can be seen, among at least 92 bird species recorded here.",
+     "source": "https://en.wikipedia.org/wiki/Liguasan_Marsh"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "lake-buluan",
@@ -1723,7 +2334,15 @@
      ]
     }
    ],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Go out on the lake with a local boatman",
+     "detail": "Fishers here catch snakehead, catfish, carp, milkfish and tilapia; go out only with a boatman, and ask about current conditions first.",
+     "source": "https://en.wikipedia.org/wiki/Lake_Buluan"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "maliga-walay",
@@ -1752,7 +2371,20 @@
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
    "images": [],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "See the red house, now the town hall",
+     "detail": "The historic house of Datu Piang now serves as the municipal building, so ask at the municipal office before looking around.",
+     "source": "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia"
+    },
+    {
+     "title": "Watch inaul being woven in Datu Piang",
+     "detail": "Datu Piang is one of the towns where the Maguindanaon handwoven inaul is still made, and visitors can watch it being woven and buy it.",
+     "source": "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "kuhan-falls",
@@ -1779,7 +2411,20 @@
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
    "images": [],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Walk to the cascades with a local guide",
+     "detail": "The falls run down in a series of cascades through lush mountain country; arrange a guide in South Upi.",
+     "source": "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia"
+    },
+    {
+     "title": "Watch Teduray Monom weavers and buy from them",
+     "detail": "In South Upi visitors can watch the Monom weaving and craft work and buy directly from the artisans.",
+     "source": "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "lamitan",
@@ -1826,7 +2471,30 @@
      ]
     }
    ],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "Buy Yakan weaving at the market",
+     "detail": "Lamitan's market is where Yakan weaving is actually sold, and the dense geometric cloth is the thing to buy.",
+     "source": "guide"
+    },
+    {
+     "title": "See the Lami-Lamihan Festival in June",
+     "detail": "During the festival week in June, Yakan dress, weaving, music and horsemanship are all on show at once.",
+     "source": "guide"
+    },
+    {
+     "title": "Visit the Datu Kalun Shrine and the Museum of Lamitan",
+     "detail": "The shrine honours the Yakan leader who founded the town, and the museum shows Lami-Lamihan and also serves as the town's information centre.",
+     "source": "https://en.wikipedia.org/wiki/Lamitan"
+    },
+    {
+     "title": "Check in with the city tourism office first",
+     "detail": "Coordinating with the tourism office before touring Lamitan is normal practice; ferries run from Zamboanga City.",
+     "source": "https://langyaw.com/2015/06/16/charming-bulingan-falls-in-lamitan-city/"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "bulingan-falls",
@@ -1871,7 +2539,25 @@
      ]
     }
    ],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "See the column-like rock formations",
+     "detail": "The falls are less than 10 metres high but wide, and the water drops over rocks that look like stone posts set side by side.",
+     "source": "https://langyaw.com/2015/06/16/charming-bulingan-falls-in-lamitan-city/"
+    },
+    {
+     "title": "Swim in the pool below the falls",
+     "detail": "The edges have been cemented and part of the runoff held back to form a pool, which is busiest at weekends and better for swimming outside the wet months.",
+     "source": "https://langyaw.com/2015/06/16/charming-bulingan-falls-in-lamitan-city/"
+    },
+    {
+     "title": "Go on to Calugusan Beach",
+     "detail": "Visitors usually combine the falls with a swim at Calugusan Beach in the same city; coordinate with the city tourism office first.",
+     "source": "https://langyaw.com/2015/06/16/charming-bulingan-falls-in-lamitan-city/"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "malamawi-island",
@@ -1916,7 +2602,25 @@
      ]
     }
    ],
-   "from_guide": true
+   "from_guide": true,
+   "do": [
+    {
+     "title": "Cross by pump boat from beside Isabela port",
+     "detail": "Pump boats leave from a small wharf beside Isabela City port for a 5-minute crossing; in 2012 the shared fare was PHP 5, and a boat to yourself was PHP 45.",
+     "source": "https://langyaw.com/2012/10/21/beautiful-white-beach-in-basilan/"
+    },
+    {
+     "title": "Ride a habal-habal across to the white beach",
+     "detail": "The beach is on the far side of the island, more than 15 minutes by motorcycle on a rough trail past villages and a coconut plantation.",
+     "source": "https://langyaw.com/2012/10/21/beautiful-white-beach-in-basilan/"
+    },
+    {
+     "title": "Rent a cottage on the beach",
+     "detail": "Cottages line the beach; go on a weekday to avoid the Sunday crowds, and bring water and food.",
+     "source": "https://langyaw.com/2012/10/21/beautiful-white-beach-in-basilan/"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "calugusan-beach",
@@ -1963,7 +2667,20 @@
      ]
     }
    ],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Swim at the public white-sand beach",
+     "detail": "At low tide broken shells and coral cover the shore, and the noon sun is hard, so bring water and shade.",
+     "source": "https://langyaw.com/2015/03/30/white-calugusan-beach-in-lamitan/"
+    },
+    {
+     "title": "Watch the jumps off the small wharf",
+     "detail": "Local young people jump from the small wharf into deep water between the public beach and the gated private beach, less than 1 km further on, where the water is clearer.",
+     "source": "https://langyaw.com/2015/03/30/white-calugusan-beach-in-lamitan/"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "basilan-national-park",
@@ -2019,7 +2736,15 @@
      ]
     }
    ],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "See Basilan Peak from Lamitan or from the sea",
+     "detail": "Locals advise visitors to stay in the city centres rather than go into the interior, so view the park's forested peak from a distance.",
+     "source": "https://langyaw.com/2015/06/16/charming-bulingan-falls-in-lamitan-city/"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "datu-kalun-shrine",
@@ -2046,7 +2771,25 @@
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
    "images": [],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "See the Yakan textiles in the Museum of Lamitan",
+     "detail": "The museum shows colourful, intricate traditional Yakan textiles and highlights from the Lami-Lamihan festival.",
+     "source": "https://en.wikipedia.org/wiki/Basilan"
+    },
+    {
+     "title": "Pick up information at the museum",
+     "detail": "The museum also serves as the town's information centre.",
+     "source": "https://en.wikipedia.org/wiki/Lamitan"
+    },
+    {
+     "title": "Walk the triangular park downtown",
+     "detail": "The shrine is a triangular park in the centre of downtown Lamitan, built in honour of the Yakan leader Datu Kalun.",
+     "source": "guide"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "monte-santo-shrine",
@@ -2073,7 +2816,15 @@
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
    "images": [],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Walk the Stations of the Cross up Mount Ubit in Holy Week",
+     "detail": "Devout Catholics climb to the shrine in Holy Week; dress modestly, keep quiet during prayers, and coordinate with the city tourism office.",
+     "source": "guide"
+    }
+   ],
+   "eat": []
   },
   {
    "slug": "fort-pikit",
@@ -2135,7 +2886,20 @@
      ]
     }
    ],
-   "from_guide": false
+   "from_guide": false,
+   "do": [
+    {
+     "title": "Walk round the 1893 walls and towers",
+     "detail": "The fort has 2 artillery towers and a rubble wall 38 metres on each side; watch your footing, and do not climb on loose masonry.",
+     "source": "https://en.wikipedia.org/wiki/Fort_Pikit"
+    },
+    {
+     "title": "Find it on the hill behind the municipal hall",
+     "detail": "The fort stands on a hill behind the Pikit municipal hall, facing the national highway.",
+     "source": "https://en.wikipedia.org/wiki/Fort_Pikit"
+    }
+   ],
+   "eat": []
   }
  ],
  "notes": "44 places: the 21 from places.ts (summary, detail and before_you_go copied verbatim; kind, sources, images, getting_there and best_time added) and 23 new ones. Sulu is excluded throughout.\n\nSecurity: the UK FCDO advice (gov.uk, updated 15 July 2026) advises against all travel to western and central Mindanao and the Sulu archipelago, which covers all of BARMM. Every new entry carries that line in before_you_go. The 21 guide entries keep places.ts's before_you_go unchanged, so they do not carry it; the site may want to add it. The US State Department advisory page refused plain fetches (HTTP 403) and is not used.\n\nDoubts in places.ts worth checking: it calls the Cotabato Grand Mosque the largest in the Philippines, but Wikipedia now gives that title to the rebuilt Marawi Grand Mosque (20,000 capacity against 15,000). It puts Kawayan Torogan in Marantao; the 2018 PRECUP registry puts it in Pompongan-a-Marantao, a barangay of Marawi City, and the matter is unsettled. It calls Bud Bongao 314 m; Wikipedia gives 317 m for the view deck on Tambisan Peak. It dates Tamontaka Church to the 1870s; Wikipedia says 1872, moved to its present site in 1879, and rebuilt after the 1976 earthquake.\n\nMunicipality notes: Malamawi Island is in Isabela City (Region IX), as places.ts itself says. Basilan National Park is listed under Lamitan, but the park spans Isabela City, Lamitan, Tipo-Tipo and Sumisip. Fort Pikit is listed under Malidegao (SGA, created 2024).\n\nNo usable photo, so the entry has none: Aga Khan Museum, Tugaya, Kawayan Torogan, Ligawasan Marsh, Balobok Rock Shelter, Lake Butig, Sacred Mountain, Mount Minandar, Kusiong Beach, Masjid Taviran, Bongo Island, Maliga Walay, Kuhan Falls, Datu Kalun Shrine, Monte Santo Shrine.\n\nPhotos rejected: the Tugaya craft photos on Commons were taken at a trade fair at SM Megamall, not in Tugaya, and have no author. Liguasan Marsh from Mt. Akir Akir is 600px wide and taken from Cotabato province. Mount Makaturing's only photo has a named person as its subject. Sitangkai from Tumindao Channel has a navy machine gun filling the foreground. The Sitangkai water-taxi photo has a boatload of passengers as its subject. The Amaya Beach Resort photo shows a resort house, not Kusiong beach. Kutawato Cave 1 and 2 are small and uncategorised, so it cannot be confirmed they show Kutawato. Sights of Marawi (01) shows a smoke plume, not the ruins its caption describes. Nangi Upi 1 shows only a concrete road. Satellite images were left out. The Fort Pikit photos are public domain on Commons (NHCP) but carry an NHCP copyright watermark in the image.\n\nPlaces dropped for want of a text source beyond a Commons caption or a bare list entry: Biraddali Falls in Languyan (a Commons photo exists), Bongao public market and the Chinese Pier, Pahut beach, Sangay Siapo off Simunul (one blog only; it says the island is privately owned and being quarried for sand), Masjid Bacolod in Bacolod-Kalawi (its photo is used on Lake Lanao instead), the Marawi School of Living Traditions, the Balabagan spring, Rungkunan National Park, Mount Makaturing as its own entry, and the falls PhilAtlas lists by name only (Busay, Kanapnapan, Sifaran, Sumpitan, Rainbow). Kilantan and Bual springs, Boboguiron Falls and Mango Grove in Maguindanao del Sur are named in one Manila Times piece only. The SGA has only Fort Pikit; no other site there could be sourced.\n\nSources: MindaNews, the Tourism Promotions Board World Expo pages and travel.state.gov returned 403 to plain fetches and were not used. Mount Minandar's entry therefore rests only on Wikipedia. The Manila Times feature on Maguindanao del Sur (August 2026) was read through its Newswav copy. Colours are approximate dominant tones from 250px thumbnails of the first 1-2 photos."
