@@ -198,17 +198,27 @@ export default async function HomePage() {
 					<div className='bb-container py-14 lg:py-16'>
 						<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2'>
 							<h2 id='explainers-title' className='text-[1.6rem] font-extrabold tracking-[-0.03em]'>
-								Explainers <span className='text-[var(--ink-mute)]'>· how government works, in plain words</span>
+								Explainers
 							</h2>
-							<Link href='/explainers' className='inline-flex items-center gap-1.5 text-[14px] font-semibold underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
-								All explainers <ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
-							</Link>
+							<p className='flex flex-wrap items-baseline gap-x-5 gap-y-1 text-[13.5px] leading-6 text-[var(--ink-3)]'>
+								How government works, in plain words.
+								<Link href='/explainers' className='inline-flex items-center gap-1.5 font-semibold text-[var(--ink)] underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
+									All explainers <ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
+								</Link>
+							</p>
 						</div>
-						<div className='mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-							{explainers.slice(0, 3).map((e) => (
-								<ExplainerCard key={e.id} e={e} heading='h3' />
-							))}
-						</div>
+						{/* One explainer takes the row to itself; more share it, three at most. */}
+						{explainers.length === 1 ? (
+							<div className='mt-6'>
+								<ExplainerCard e={explainers[0]!} heading='h3' wide />
+							</div>
+						) : (
+							<div className='mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
+								{explainers.slice(0, 3).map((e) => (
+									<ExplainerCard key={e.id} e={e} heading='h3' />
+								))}
+							</div>
+						)}
 					</div>
 				</section>
 			) : null}

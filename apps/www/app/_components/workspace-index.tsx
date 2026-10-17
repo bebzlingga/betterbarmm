@@ -223,7 +223,7 @@ export function WorkspaceList({ workspaces }: { workspaces: Workspace[] }) {
           const Glyph = ICONS[w.label]
           return (
             <li key={w.label} className='bg-[var(--paper)]'>
-              <a href={w.href} className='group flex h-full gap-3.5 p-4 transition duration-200 hover:bg-[var(--paper-2)]'>
+              <a href={w.href} className='group flex h-full gap-4 p-6 transition duration-200 hover:bg-[var(--paper-2)]'>
                 {Glyph ? <Glyph size={22} weight='duotone' aria-hidden='true' className='mt-0.5 shrink-0 text-[var(--accent)]' /> : null}
                 <span className='min-w-0 flex-1'>
                   <span className='flex items-baseline justify-between gap-3'>
@@ -239,7 +239,7 @@ export function WorkspaceList({ workspaces }: { workspaces: Workspace[] }) {
         })}
         {/* What is not built yet, in the grid's own last cell: five live rows and this one fill two columns or three. */}
         {coming.length ? (
-          <li className='bg-[var(--paper-2)] p-4'>
+          <li className='bg-[var(--paper-2)] p-6'>
             <span className='block font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Coming next</span>
             <span className='mt-1.5 block text-[13.5px] leading-[1.6] text-[var(--ink-2)]'>{coming.map((w) => w.label).join(' · ')}</span>
           </li>
