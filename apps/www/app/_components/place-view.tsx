@@ -153,17 +153,16 @@ export function PlaceView({ p }: { p: Place }) {
 			</section>
 
 
-			{/* Where to sleep: the guide's word on the area, then up to six places, each with its source. */}
-			{stays.length || lodgingHere ? (
+			{/* Where to sleep, shown only where there is somewhere listed: the guide's word on the area, then up to six places, each with its source. */}
+			{stays.length ? (
 				<section aria-labelledby='stay' className='bb-container pb-14'>
 					<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
 						<h2 id='stay' className='text-[22px] font-extrabold tracking-[-0.02em] text-[#13303a]'>
-							Places to stay {stays.length ? <span className='text-[#8aa3a9]'>{stays.length}</span> : null}
+							Places to stay <span className='text-[#8aa3a9]'>{stays.length}</span>
 						</h2>
 						{lodgingHere ? <p className='max-w-2xl text-[13.5px] leading-[1.55] text-[#4d6670]'>{lodgingHere.booking}</p> : null}
 					</div>
-					{stays.length ? (
-						<ul className='mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6'>
+					<ul className='mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6'>
 							{stays.map((st) => (
 								<li key={st.name + st.municipality} className='bb-frame relative bg-transparent!'>
 									<span className='relative block aspect-[4/3] overflow-hidden bg-[#dfe9e6]'>
@@ -190,7 +189,6 @@ export function PlaceView({ p }: { p: Place }) {
 								</li>
 							))}
 						</ul>
-					) : null}
 					<p className='mt-3 text-[12px] text-[#7a8c92]'>No prices here: rates change quickly. Confirm and book directly before you go.</p>
 				</section>
 			) : null}
