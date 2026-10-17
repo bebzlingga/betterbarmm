@@ -1,5 +1,55 @@
 {
  "name": "Photographs of the Bangsamoro Government offices' buildings",
  "note": "An office's own building where an official page or Wikimedia Commons shows it; offices in the Bangsamoro Government Center compound otherwise show the Center.",
- "offices": {}
+ "offices": {
+  "office-of-the-chief-minister": {
+   "src": "/directory/offices/office-of-the-chief-minister.jpg",
+   "page": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-digital-system-will-speed-up-barmms-response-to-gender-based-violence/",
+   "credit": "Marhom Ibrahim/BIO",
+   "license": "Public domain",
+   "caption": "The Office of the Chief Minister (OCM) building in Cotabato City, seen from the air"
+  },
+  "ministry-of-basic-higher-and-technical-education": {
+   "src": "/directory/offices/ministry-of-basic-higher-and-technical-education.jpg",
+   "page": "https://bangsamoro.gov.ph/news/latest-news/mbhte-opens-new-three-storey-office-building-at-bangsamoro-government-center/",
+   "credit": "Michael Camsa/BIO",
+   "license": "Public domain",
+   "caption": "The new three-storey MBHTE office building at the Bangsamoro Government Center, Cotabato City, on its inauguration day (Jan. 15, 2026)"
+  },
+  "ministry-of-public-works": {
+   "src": "/directory/offices/ministry-of-public-works.jpg",
+   "page": "https://mpw.bangsamoro.gov.ph/about",
+   "credit": "Ministry of Public Works",
+   "license": "Public domain",
+   "caption": "Facade of the Ministry of Public Works main building, with 'Ministry of Public Works, Bangsamoro Autonomous Region in Muslim Mindanao' and 'Main Building' signage"
+  },
+  "ministry-of-the-interior-and-local-government": {
+   "src": "/directory/offices/ministry-of-the-interior-and-local-government.jpg",
+   "page": "https://bangsamoro.gov.ph/news/latest-news/barmms-new-digital-hub-transforming-the-future-of-services-in-the-region/",
+   "credit": "MILG",
+   "license": "Public domain",
+   "caption": "The newly furnished and expanded MILG building, reflected in a puddle, which houses the regional digital data center"
+  },
+  "ministry-of-finance-and-budget-and-management": {
+   "src": "/directory/offices/ministry-of-finance-and-budget-and-management.jpg",
+   "page": "https://mfbm.bangsamoro.gov.ph/contact-us",
+   "credit": "Ministry of Finance, and Budget and Management",
+   "license": "Public domain",
+   "caption": "The MFBM-BARMM building, painted green, white and red, with the 'Ministry of Finance, and Budget and Management' sign over the entrance"
+  },
+  "bangsamoro-commission-for-the-preservation-of-cultural-heritage": {
+   "src": "/directory/offices/bangsamoro-commission-for-the-preservation-of-cultural-heritage.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:SKCC_BGC.jpg",
+   "credit": "Marwan Khan",
+   "license": "CC BY-SA 3.0",
+   "caption": "Facade of the Shariff Kabunsuan Cultural Complex (SKCC) at the Bangsamoro Government Center, Cotabato City"
+  },
+  "bangsamoro-women-commission": {
+   "src": "/directory/offices/bangsamoro-women-commission.jpg",
+   "page": "https://bwc.bangsamoro.gov.ph/about-us/office-bldg/",
+   "credit": "Bangsamoro Women Commission",
+   "license": "Public domain",
+   "caption": "The commission's office building, signed 'Regional Commission on Bangsamoro Women-ARMM, Regional Women Peace and Training Center, ARMM Complex, Cotabato City'"
+  }
+ }
 }

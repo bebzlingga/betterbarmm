@@ -198,6 +198,8 @@ export function officePhoto(slug: string, address: string | null): OfficePhoto |
 }
 
 /** An office's organizational structure: its units, nested, each with its head where a source names one. */
-export type OrgUnit = { name: string; kind: string; head: { name: string; title: string; source?: string } | null; source?: string; source_kind?: string; units?: OrgUnit[] }
+/** Where a unit or a name was read: a page, or a PDF and its page number, and the source's date. */
+export type OrgSource = string | { url: string; page?: number | null; date?: string | null }
+export type OrgUnit = { name: string; kind: string; head: { name: string; title: string | null; source?: OrgSource } | null; source?: OrgSource; source_kind?: string; units?: OrgUnit[] }
 export type OrgStructure = { as_of: string | null; sources: { label: string; url: string }[]; units: OrgUnit[]; note?: string }
 export const officeStructure = (slug: string) => (structureFile.offices as Record<string, OrgStructure | null | undefined>)[slug] ?? null

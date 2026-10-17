@@ -1,10 +1,14 @@
-import { ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
-import type { OrgStructure, OrgUnit } from '../_lib/directory'
+import { ArrowUpRightIcon, CaretRightIcon } from '@phosphor-icons/react/ssr'
+import type { OrgSource, OrgStructure, OrgUnit } from '../_lib/directory'
 import { monthYear } from './directory-bits'
 
 /* An office's organizational structure as a tree: each unit, the person who
    heads it where a source names one, and that source. The top level opens
-   in full; a bureau's divisions sit under it, indented along a rule. */
+   in full; a bureau's divisions fold under it, indented along a rule. */
+
+/** A source as a link: a PDF opens at its page. */
+const href = (s: OrgSource) => (typeof s === 'string' ? s : s.page && /\.pdf($|\?)/i.test(s.url) ? `${s.url}#page=${s.page}` : s.url)
+const when = (s: OrgSource) => (typeof s === 'string' || !s.date ? null : monthYear(s.date.slice(0, 7)))
 
 const count = (units: OrgUnit[]): { all: number; named: number } =>
 	units.reduce((n, u) => {
@@ -12,38 +16,79 @@ const count = (units: OrgUnit[]): { all: number; named: number } =>
 		return { all: n.all + 1 + c.all, named: n.named + (u.head ? 1 : 0) + c.named }
 	}, { all: 0, named: 0 })
 
+/** A name or title the source printed in capitals, in the page's own case; one already in mixed case is left alone. */
+const SMALL = new Set(['of', 'and', 'the', 'for', 'in', 'del', 'de', 'sa', 'a'])
+const KEEP = /^(RSW|MPA|MD|PhD|CPA|BARMM|PSWO|IPHO|MSSD|MOH|DDS|II|III|IV|V|VI|JR\.?|SR\.?)$/i
+function tidy(s: string | null | undefined) {
+	if (!s) return s ?? ''
+	if (s !== s.toUpperCase() || !/[A-Z]{3}/.test(s)) return s
+	return s
+		.toLowerCase()
+		.split(/(\s+|-)/)
+		.map((w, i) => {
+			const up = w.toUpperCase()
+			if (KEEP.test(up.replace(/[,.]$/, ''))) return /^(JR|SR)/.test(up) ? up[0] + up.slice(1).toLowerCase() : up
+			if (i && SMALL.has(w)) return w
+			return w.charAt(0).toUpperCase() + w.slice(1)
+		})
+		.join('')
+}
+
+function Head({ u }: { u: OrgUnit }) {
+	if (!u.head) return <span className='text-[var(--ink-mute)]'>–</span>
+	const source = u.head.source ?? u.source
+	return (
+		<>
+			<span className='font-semibold'>{tidy(u.head.name)}</span>
+			{u.head.title ? <span className='text-[var(--ink-3)]'>, {tidy(u.head.title)}</span> : null}
+			{source ? (
+				<a href={href(source)} target='_blank' rel='noreferrer' className='ml-2 inline-flex items-center gap-0.5 align-baseline text-[11.5px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
+					{when(source) ?? 'Source'} <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
+				</a>
+			) : null}
+		</>
+	)
+}
+
+function Row({ u, depth }: { u: OrgUnit; depth: number }) {
+	return (
+		<div className='grid gap-x-6 gap-y-0.5 py-2.5 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]'>
+			<p className={`${depth ? 'text-[14px] font-semibold' : 'text-[15px] font-bold'} leading-snug`}>
+				{tidy(u.name)}
+				{u.source_kind === 'law' ? <span className='ml-2 font-mono text-[9.5px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>By law</span> : null}
+				{u.units?.length ? <span className='ml-2 text-[12px] font-normal text-[var(--ink-mute)]'>{count(u.units).all}</span> : null}
+			</p>
+			<p className='text-[14px] leading-snug'>
+				<Head u={u} />
+			</p>
+		</div>
+	)
+}
+
+/** A unit; one with units of its own folds them away behind its row, so a large office stays one screen at first. */
 function Unit({ u, depth }: { u: OrgUnit; depth: number }) {
-	const source = u.head?.source ?? u.source
+	const kids = u.units ?? []
 	return (
 		<li className={depth ? 'border-l border-[var(--rule)] pl-4' : ''}>
-			<div className='grid gap-x-6 gap-y-0.5 py-2.5 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]'>
-				<p className={`${depth ? 'text-[14px] font-semibold' : 'text-[15px] font-bold'} leading-snug`}>
-					{u.name}
-					{u.source_kind === 'law' ? <span className='ml-2 font-mono text-[9.5px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>By law</span> : null}
-				</p>
-				<p className='text-[14px] leading-snug'>
-					{u.head ? (
-						<>
-							<span className='font-semibold'>{u.head.name}</span>
-							{u.head.title ? <span className='text-[var(--ink-3)]'>, {u.head.title}</span> : null}
-						</>
-					) : (
-						<span className='text-[var(--ink-mute)]'>Head not named in a source</span>
-					)}
-					{source ? (
-						<a href={source} target='_blank' rel='noreferrer' className='ml-2 inline-flex items-center gap-0.5 align-baseline text-[11.5px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
-							Source <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
-						</a>
-					) : null}
-				</p>
-			</div>
-			{u.units?.length ? (
-				<ul className='mb-2 ml-1'>
-					{u.units.map((c, i) => (
-						<Unit key={i} u={c} depth={depth + 1} />
-					))}
-				</ul>
-			) : null}
+			{kids.length ? (
+				<details className='group'>
+					<summary className='flex cursor-pointer list-none items-start gap-2 [&::-webkit-details-marker]:hidden'>
+						<CaretRightIcon size={13} weight='bold' className='mt-[0.9rem] shrink-0 text-[var(--ink-3)] transition group-open:rotate-90' aria-hidden='true' />
+						<span className='min-w-0 flex-1'>
+							<Row u={u} depth={depth} />
+						</span>
+					</summary>
+					<ul className='mb-2 ml-[5px]'>
+						{kids.map((c, i) => (
+							<Unit key={i} u={c} depth={depth + 1} />
+						))}
+					</ul>
+				</details>
+			) : (
+				<div className='pl-[21px]'>
+					<Row u={u} depth={depth} />
+				</div>
+			)}
 		</li>
 	)
 }
@@ -76,8 +121,14 @@ export function OfficeStructure({ org }: { org: OrgStructure }) {
 							</a>
 						</span>
 					))}
-					. {org.note ?? ''}
+					.
 				</p>
+			) : null}
+			{org.note ? (
+				<details className='mt-1 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+					<summary className='cursor-pointer list-none font-semibold hover:text-[var(--accent)] [&::-webkit-details-marker]:hidden'>How this was read</summary>
+					<p className='mt-1 max-w-4xl'>{org.note}</p>
+				</details>
 			) : null}
 		</section>
 	)

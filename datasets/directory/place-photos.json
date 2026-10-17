@@ -1,6 +1,6 @@
 {
  "name": "Photographs of BARMM's provinces, cities and towns",
- "note": "One freely licensed Wikimedia Commons photograph per place, credited as its licence asks.",
+ "note": "One freely licensed photograph per place, credited as its licence asks: Wikimedia Commons, or English Wikipedia where a building photo cannot go to Commons.",
  "areas": {
   "basilan": {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/To_Basilan_Island.jpg/1280px-To_Basilan_Island.jpg",
@@ -31,6 +31,46 @@
    "width": 960,
    "height": 720,
    "caption": "Aerial view of Polloc Port in Parang, on Illana Bay"
+  },
+  "maguindanao-del-sur": {
+   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/1/1b/Masjid_Dimaukom_Pink_Mosque_%28Salbu-Pagatin_Road%2C_Datu_Saudi_Ampatuan%2C_Maguindanao_Del_Norte%3B_08-15-2023%29.jpg/1280px-Masjid_Dimaukom_Pink_Mosque_%28Salbu-Pagatin_Road%2C_Datu_Saudi_Ampatuan%2C_Maguindanao_Del_Norte%3B_08-15-2023%29.jpg",
+   "page": "https://en.wikipedia.org/wiki/File:Masjid_Dimaukom_Pink_Mosque_(Salbu-Pagatin_Road,_Datu_Saudi_Ampatuan,_Maguindanao_Del_Norte;_08-15-2023).jpg",
+   "author": "Patrickroque01",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "width": 3552,
+   "height": 2664,
+   "caption": "Masjid Dimaukom, the Pink Mosque, in Datu Saudi Ampatuan"
+  },
+  "tawi-tawi": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Bud_bongao.jpg/1280px-Bud_bongao.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Bud_bongao.jpg",
+   "author": "Hanankarimi 12",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 3264,
+   "height": 2448,
+   "caption": "Bud Bongao, the forested peak above Bongao on Tawi-Tawi Island"
+  },
+  "cotabato-city": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Rio_Grande_De_Mindanao%2C_Cotabato_Poblacion_skyline_%28Cotabato_City%3B_08-16-2023%29.jpg/1280px-Rio_Grande_De_Mindanao%2C_Cotabato_Poblacion_skyline_%28Cotabato_City%3B_08-16-2023%29.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Rio_Grande_De_Mindanao,_Cotabato_Poblacion_skyline_(Cotabato_City;_08-16-2023).jpg",
+   "author": "Patrickroque01",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 3552,
+   "height": 2664,
+   "caption": "Houses along the Rio Grande de Mindanao in the Cotabato City poblacion"
+  },
+  "special-geographic-area": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Fort_Pikit_03.jpg/1280px-Fort_Pikit_03.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fort_Pikit_03.jpg",
+   "author": "National Historical Commission of the Philippines",
+   "license": "Public domain",
+   "license_url": null,
+   "width": 1600,
+   "height": 1071,
+   "caption": "The ruins of Fort Pikit, a Spanish-era hilltop fort in Malidegao"
   }
  },
  "towns": {
@@ -49,7 +89,7 @@
    "page": "https://commons.wikimedia.org/wiki/File:Port_Holland_Maluso.jpg",
    "author": "Jjarivera",
    "license": "Public domain",
-   "license_url": "",
+   "license_url": null,
    "width": 1600,
    "height": 1200,
    "caption": "Market stalls along the main street of Port Holland, Maluso"
@@ -129,7 +169,7 @@
    "page": "https://commons.wikimedia.org/wiki/File:Water_Body_Classification_of_Lake_Dapao_commences.jpg",
    "author": "Bangsamoro Ministry of Environment, Natural Resources, and Energy",
    "license": "Public domain",
-   "license_url": "",
+   "license_url": null,
    "width": 2000,
    "height": 1320,
    "caption": "A small boat on Lake Dapao in Pualas"
@@ -233,6 +273,346 @@
    "width": 4000,
    "height": 3000,
    "caption": "Rice fields and mountains in the upland town of Upi"
+  },
+  "maguindanao-del-sur/ampatuan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/6/67/Ampatuan_Municipal_Hall.JPG/1280px-Ampatuan_Municipal_Hall.JPG",
+   "page": "https://en.wikipedia.org/wiki/File:Ampatuan_Municipal_Hall.JPG",
+   "author": "Marwan Khan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The municipal hall of Ampatuan"
+  },
+  "maguindanao-del-sur/buluan": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Maguindanao_New_Provincial_Capitol.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Maguindanao_New_Provincial_Capitol.jpg",
+   "author": "Maguindanao Task Force Reconciliation and Unification Facebook page",
+   "license": "Public domain",
+   "license_url": null,
+   "width": 960,
+   "height": 720,
+   "caption": "The provincial capitol in Buluan"
+  },
+  "maguindanao-del-sur/datu-abdullah-sangki": {
+   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/1/16/Datu_Abdullah_Sangki_Municipal_Hall.JPG/1280px-Datu_Abdullah_Sangki_Municipal_Hall.JPG",
+   "page": "https://en.wikipedia.org/wiki/File:Datu_Abdullah_Sangki_Municipal_Hall.JPG",
+   "author": "Marwan Khan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The municipal hall of Datu Abdullah Sangki"
+  },
+  "maguindanao-del-sur/datu-anggal-midtimbang": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Datu_Anggal_Midtimbang_Hall.jpg/1280px-Datu_Anggal_Midtimbang_Hall.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Datu_Anggal_Midtimbang_Hall.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The entrance to the municipal compound of Datu Anggal Midtimbang"
+  },
+  "maguindanao-del-sur/datu-hoffer-ampatuan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/3/3c/Datu_Hoffer_Municipal_Hall.JPG/1280px-Datu_Hoffer_Municipal_Hall.JPG",
+   "page": "https://en.wikipedia.org/wiki/File:Datu_Hoffer_Municipal_Hall.JPG",
+   "author": "Marwan Khan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The municipal hall of Datu Hoffer Ampatuan"
+  },
+  "maguindanao-del-sur/datu-piang": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Datu_Piang_Town_Aerial_View_2024.jpg/1280px-Datu_Piang_Town_Aerial_View_2024.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Datu_Piang_Town_Aerial_View_2024.jpg",
+   "author": "Francis 188",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "width": 2048,
+   "height": 1152,
+   "caption": "Aerial view of the town of Datu Piang and the river beside it"
+  },
+  "maguindanao-del-sur/datu-salibo": {
+   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/4/48/Datu_Salibo_Municipal_Hall.jpg/1280px-Datu_Salibo_Municipal_Hall.jpg",
+   "page": "https://en.wikipedia.org/wiki/File:Datu_Salibo_Municipal_Hall.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY 4.0",
+   "license_url": "http://creativecommons.org/licenses/by/4.0/",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The municipal hall of Datu Salibo"
+  },
+  "maguindanao-del-sur/datu-saudi-ampatuan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/D-S-A_Roundabout.jpg/1280px-D-S-A_Roundabout.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:D-S-A_Roundabout.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The roundabout in the town centre of Datu Saudi Ampatuan"
+  },
+  "maguindanao-del-sur/datu-unsay": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Datu_Unsay_Archway.jpg/1280px-Datu_Unsay_Archway.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Datu_Unsay_Archway.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The welcome arch of Datu Unsay on the highway near Shariff Aguak"
+  },
+  "maguindanao-del-sur/guindulungan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Guindulungan_Hall.jpg/1280px-Guindulungan_Hall.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Guindulungan_Hall.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The entrance to the municipal compound of Guindulungan"
+  },
+  "maguindanao-del-sur/mamasapano": {
+   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/2/27/Mamasapano_Municipal_Hall.JPG/1280px-Mamasapano_Municipal_Hall.JPG",
+   "page": "https://en.wikipedia.org/wiki/File:Mamasapano_Municipal_Hall.JPG",
+   "author": "Marwan Khan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The municipal hall of Mamasapano"
+  },
+  "maguindanao-del-sur/pagagawan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Municipal_Hall_of_Datu_Montawal%2C_Maguindanao_del_Sur.jpg/1280px-Municipal_Hall_of_Datu_Montawal%2C_Maguindanao_del_Sur.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Municipal_Hall_of_Datu_Montawal,_Maguindanao_del_Sur.jpg",
+   "author": "Exec8",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 2283,
+   "height": 1440,
+   "caption": "The municipal hall of Datu Montawal (Pagagawan)"
+  },
+  "maguindanao-del-sur/pagalungan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Pagalungan_Terminal.jpg/1280px-Pagalungan_Terminal.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Pagalungan_Terminal.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The Pagalungan Integrated Terminal on the Davao-Cotabato Road"
+  },
+  "maguindanao-del-sur/pandag": {
+   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/b/ba/Pandag_Municipal_Hall.jpg/1280px-Pandag_Municipal_Hall.jpg",
+   "page": "https://en.wikipedia.org/wiki/File:Pandag_Municipal_Hall.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The gate of the municipal compound of Pandag"
+  },
+  "maguindanao-del-sur/rajah-buayan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/1/1e/Rajah_Buayan_Municipal_Compound.JPG/1280px-Rajah_Buayan_Municipal_Compound.JPG",
+   "page": "https://en.wikipedia.org/wiki/File:Rajah_Buayan_Municipal_Compound.JPG",
+   "author": "Marwan Khan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The entrance to the municipal compound of Rajah Buayan"
+  },
+  "maguindanao-del-sur/shariff-aguak": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Shariff_Aguak_Terminal.jpg/1280px-Shariff_Aguak_Terminal.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Shariff_Aguak_Terminal.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The bus terminal of Shariff Aguak"
+  },
+  "maguindanao-del-sur/shariff-saydona-mustapha": {
+   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/d/d4/Shariff_Saydona_Mustapha_Municipal_Compound.JPG/1280px-Shariff_Saydona_Mustapha_Municipal_Compound.JPG",
+   "page": "https://en.wikipedia.org/wiki/File:Shariff_Saydona_Mustapha_Municipal_Compound.JPG",
+   "author": "Marwan Khan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The roadside sign and municipal compound of Shariff Saydona Mustapha"
+  },
+  "maguindanao-del-sur/sultan-sa-barongis": {
+   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/2/2d/Sultan_Sa_Barongis_Municipal_Hall.JPG/1280px-Sultan_Sa_Barongis_Municipal_Hall.JPG",
+   "page": "https://en.wikipedia.org/wiki/File:Sultan_Sa_Barongis_Municipal_Hall.JPG",
+   "author": "Marwan Khan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The municipal hall of Sultan sa Barongis"
+  },
+  "maguindanao-del-sur/talayan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Talayan_Hall.jpg/1280px-Talayan_Hall.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Talayan_Hall.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The entrance to the municipal compound of Talayan"
+  },
+  "tawi-tawi/bongao": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Sunset_of_Pahut.jpg/1280px-Sunset_of_Pahut.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sunset_of_Pahut.jpg",
+   "author": "JAcapulco",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 4000,
+   "height": 3000,
+   "caption": "The seaside road at Pahut, Bongao, at sunset"
+  },
+  "tawi-tawi/languyan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Biraddali_Falls%2C_Languyan%2C_Tawi-Tawi.jpg/1280px-Biraddali_Falls%2C_Languyan%2C_Tawi-Tawi.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Biraddali_Falls,_Languyan,_Tawi-Tawi.jpg",
+   "author": "DMuksan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 3000,
+   "height": 4000,
+   "caption": "Biraddali Falls in Languyan"
+  },
+  "tawi-tawi/mapun": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Mapun_Municipal_Hall.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Mapun_Municipal_Hall.jpg",
+   "author": "Edil Hairon",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "width": 1262,
+   "height": 719,
+   "caption": "The municipal hall of Mapun"
+  },
+  "tawi-tawi/panglima-sugala": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Rubber_tree_in_Panglima_Sugala.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Rubber_tree_in_Panglima_Sugala.jpg",
+   "author": "MimiAhid",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "width": 863,
+   "height": 960,
+   "caption": "A lane through a rubber tree plantation, a local landmark in Panglima Sugala"
+  },
+  "tawi-tawi/sapa-sapa": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Panampangan_Island.jpg/1280px-Panampangan_Island.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Panampangan_Island.jpg",
+   "author": "Ervin Malicdem",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 3973,
+   "height": 2980,
+   "caption": "Panampangan Island and its sandbar on the Basibuli Reef, Sapa-Sapa"
+  },
+  "tawi-tawi/sibutu": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Sibutu_Island%2C_Tawitawi.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Sibutu_Island,_Tawitawi.JPG",
+   "author": "Hisakazu HAYASHI",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "width": 1181,
+   "height": 745,
+   "caption": "Sibutu Island seen from the sea"
+  },
+  "tawi-tawi/simunul": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Sheikh_Karimul_Makhdum_Mosque_BIO_file_photo.jpg/1280px-Sheikh_Karimul_Makhdum_Mosque_BIO_file_photo.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sheikh_Karimul_Makhdum_Mosque_BIO_file_photo.jpg",
+   "author": "Laila Aripin for the Bangsamoro Information Office (BIO)",
+   "license": "Public domain",
+   "license_url": null,
+   "width": 2400,
+   "height": 1590,
+   "caption": "The Sheikh Karimul Makhdum Mosque in Simunul, the oldest mosque in the Philippines"
+  },
+  "tawi-tawi/sitangkai": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Sitangkai.jpg/1280px-Sitangkai.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Sitangkai.jpg",
+   "author": "Municipal Tourism Office of Sitangkai, Tawi-Tawi",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 1440,
+   "height": 729,
+   "caption": "Aerial view of Sitangkai's stilt-house villages over the sea"
+  },
+  "tawi-tawi/turtle-islands": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/PORT_OF_TAGANAK.png/1280px-PORT_OF_TAGANAK.png",
+   "page": "https://commons.wikimedia.org/wiki/File:PORT_OF_TAGANAK.png",
+   "author": "Bangsamoro Ports Management Authority",
+   "license": "Public domain",
+   "license_url": null,
+   "width": 1440,
+   "height": 1080,
+   "caption": "The port and beach of Taganak Island, the largest of the Turtle Islands"
+  },
+  "cotabato-city/cotabato-city": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/ALLAN_JAY_QUESADA_-_COTABATO_city_01_DSC_2206.jpg/1280px-ALLAN_JAY_QUESADA_-_COTABATO_city_01_DSC_2206.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:ALLAN_JAY_QUESADA_-_COTABATO_city_01_DSC_2206.jpg",
+   "author": "Allan Jay Quesada",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "width": 4818,
+   "height": 3210,
+   "caption": "The Bangsamoro Government Center in Cotabato City"
+  },
+  "special-geographic-area/kadayangan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/2/20/Tumbras_Public_Market_Kadayangan.jpg/1280px-Tumbras_Public_Market_Kadayangan.jpg",
+   "page": "https://en.wikipedia.org/wiki/File:Tumbras_Public_Market_Kadayangan.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY 4.0",
+   "license_url": "http://creativecommons.org/licenses/by/4.0/",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The public market of Tumbras in Kadayangan"
+  },
+  "special-geographic-area/ligawasan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Gli-Gli_Barangay_Hall_SGA.jpg/1280px-Gli-Gli_Barangay_Hall_SGA.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Gli-Gli_Barangay_Hall_SGA.jpg",
+   "author": "Special Geographic Development Authority - Bangsamoro Autonomous Region in Muslim Mindanao (SGDA-BARMM)",
+   "license": "Public domain",
+   "license_url": null,
+   "width": 2400,
+   "height": 1590,
+   "caption": "The barangay hall of Gli-Gli in Ligawasan"
+  },
+  "special-geographic-area/malidegao": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Fort_Pikit_01.jpg/1280px-Fort_Pikit_01.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fort_Pikit_01.jpg",
+   "author": "National Historical Commission of the Philippines",
+   "license": "Public domain",
+   "license_url": null,
+   "width": 1600,
+   "height": 1071,
+   "caption": "The stone walls of Fort Pikit in Barangay Fort Pikit, Malidegao"
+  },
+  "special-geographic-area/nabalawag": {
+   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/9/94/Olandang_Barangay_Hall.jpg/1280px-Olandang_Barangay_Hall.jpg",
+   "page": "https://en.wikipedia.org/wiki/File:Olandang_Barangay_Hall.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY 4.0",
+   "license_url": "http://creativecommons.org/licenses/by/4.0/",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The barangay hall of Olandang in Nabalawag"
+  },
+  "special-geographic-area/pahamuddin": {
+   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/e/ea/Datu_Binasing_Market.jpg/1280px-Datu_Binasing_Market.jpg",
+   "page": "https://en.wikipedia.org/wiki/File:Datu_Binasing_Market.jpg",
+   "author": "Marwan Khan",
+   "license": "CC BY 4.0",
+   "license_url": "http://creativecommons.org/licenses/by/4.0/",
+   "width": 5184,
+   "height": 3456,
+   "caption": "The new public market at Datu Binasing, Pahamuddin"
   }
  }
 }
