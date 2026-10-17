@@ -55,13 +55,7 @@ export default async function DirectoryPage({ searchParams }: { searchParams: Pr
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader activeItem='directory' />
 
-			<Masthead
-				brand
-				label='Directory'
-				lines={['Who runs what in the Bangsamoro,', 'and how to reach them.']}
-				muted={[1]}
-				standfirst='The head of every regional office with its numbers, emails and address, and the governor or mayor of every province, city and town.'
-			/>
+			<Masthead brand lines={['Directory']} />
 
 			<section className='bb-container bb-section'>
 				<form role='search' className='flex flex-col gap-3 sm:flex-row sm:items-end'>
@@ -81,14 +75,6 @@ export default async function DirectoryPage({ searchParams }: { searchParams: Pr
 						</Link>
 					) : null}
 				</form>
-				<p className='mt-4 flex flex-wrap gap-x-5 gap-y-1 text-[13.5px] font-semibold'>
-					<a href='#regional' className={linkClass}>
-						Regional government
-					</a>
-					<a href='#local' className={linkClass}>
-						Local governments
-					</a>
-				</p>
 
 				{hotlines.length && !term ? (
 					<section aria-labelledby='hotlines' className='mt-10 border border-[var(--rule)] bg-[var(--paper-2)] p-5'>

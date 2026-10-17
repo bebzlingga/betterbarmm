@@ -6,8 +6,8 @@ import { LineReveal, Rise } from '@betterbarmm/editorial'
 import { ScrollCue } from './scroll-cue'
 
 type MastheadProps = {
-  /** The small brass label above the headline. States the subject, not the page. */
-  label: string
+  /** The small brass label above the headline. States the subject, not the page. Left out, the headline stands alone. */
+  label?: string
   /**
    * The headline, broken by hand.
    *
@@ -84,7 +84,7 @@ export function Masthead({
 
       <div className='bb-container relative w-full py-[clamp(3.75rem,7vw,6.5rem)]'>
         <Rise distance={14}>
-          <p className='bb-label'>{label}</p>
+          {label ? <p className='bb-label'>{label}</p> : null}
         </Rise>
 
         <LineReveal
