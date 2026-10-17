@@ -5,7 +5,8 @@ import { notFound } from 'next/navigation'
 import { Phone, linkClass, monthYear } from '../../../_components/directory-bits'
 import { Masthead } from '../../../_components/masthead'
 import { DirectoryDialog } from '../../../_components/directory-dialog'
-import { directoryMeta, directoryOffice, directoryOffices, fieldOffices, headPhoto, officeHistory } from '../../../_lib/directory'
+import { directoryMeta, directoryOffice, directoryOffices, fieldOffices, headPhoto, officeHistory, officePhoto } from '../../../_lib/directory'
+import { PhotoCredit } from '../../../_components/discover-figure'
 import { HeadPortrait } from '../../../_components/head-portrait'
 import { budgetHref, officeBySlug } from '../../../_lib/services'
 import { pageMeta } from '../../../_lib/seo'
@@ -35,10 +36,18 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 	const attached = directoryOffices.filter((x) => x.parent === o.slug)
 	const service = officeBySlug(o.slug)
 	const portrait = headPhoto(o.slug)
+	const building = officePhoto(o.slug, o.address)
 
 	return (
 		<DirectoryDialog id={o.slug} name={o.name}>
 			<Masthead brand label={o.acronym ? `${KIND[o.kind]} · ${o.acronym}` : KIND[o.kind]} lines={[o.name]} />
+			{building ? (
+				<figure className='bb-frame relative h-56 overflow-hidden bg-[var(--paper-2)] sm:h-80'>
+					{/* eslint-disable-next-line @next/next/no-img-element */}
+					<img src={building.src} alt={building.caption} className='size-full object-cover' />
+					<PhotoCredit photo={{ credit: building.credit, license: building.license, source: building.page }} />
+				</figure>
+			) : null}
 
 			<section className='bb-container bb-section'>
 				<p className='text-[13.5px] text-[var(--ink-3)]'>

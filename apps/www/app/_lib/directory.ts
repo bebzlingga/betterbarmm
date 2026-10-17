@@ -5,8 +5,10 @@ import emergency from '../../../../datasets/directory/emergency.json'
 import fieldOfficesFile from '../../../../datasets/directory/field-offices.json'
 import historyFile from '../../../../datasets/directory/history.json'
 import headPhotos from '../../../../datasets/directory/head-photos.json'
+import officePhotos from '../../../../datasets/directory/office-photos.json'
 import placePhotos from '../../../../datasets/directory/place-photos.json'
 import dataset from '../../../../datasets/directory/offices.json'
+import { photo as discoverPhoto } from '../_components/discover-media'
 import { offices as serviceOffices } from './services'
 
 /* ============================================================
@@ -179,3 +181,17 @@ export const placePhoto = (province: string, town?: string) => (town ? photos.to
 /** An office head's official portrait, served from this site, with the page it came from. */
 export type HeadPhoto = { src: string; page: string; credit: string }
 export const headPhoto = (slug: string) => (headPhotos.heads as Record<string, HeadPhoto | undefined>)[slug] ?? null
+
+/** A photograph of an office's building, with its credit: its own where one has been found, otherwise the
+ *  Bangsamoro Government Center for an office in the compound, otherwise none. */
+export type OfficePhoto = { src: string; page: string; credit: string; license: string; caption: string }
+const GOVERNMENT_CENTER = /government cent(er|re)|barmm compound|bangsamoro compound|barmm complex|office of the chief minister building|\bbgc\b|\bbcg\b/i
+export function officePhoto(slug: string, address: string | null): OfficePhoto | null {
+	const own = (officePhotos.offices as Record<string, OfficePhoto | undefined>)[slug]
+	if (own) return own
+	if (!address || !GOVERNMENT_CENTER.test(address)) return null
+	// The compound's main building, the Office of the Chief Minister, by day.
+	const center = discoverPhoto('chiefMinisterOffice')
+	const caption = slug === 'office-of-the-chief-minister' ? 'The Office of the Chief Minister building, Cotabato City' : 'The Bangsamoro Government Center compound, Cotabato City: the Office of the Chief Minister building'
+	return { src: center.src.src, page: center.source, credit: center.credit, license: center.license, caption }
+}

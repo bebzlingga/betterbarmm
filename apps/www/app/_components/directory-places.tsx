@@ -126,7 +126,7 @@ export function DirectoryPlaces() {
 											<p className='mt-0.5 truncate text-[13px] text-[var(--ink-2)]'>
 												{u.head ? (
 													<>
-														<span className='text-[var(--ink-3)]'>Mayor</span> {u.head}
+														<span className='text-[var(--ink-3)]'>Mayor</span> <span className='font-semibold text-[var(--ink)]'>{u.head}</span>
 													</>
 												) : (
 													<span className='text-[var(--ink-3)]'>Mayor not in the canvass</span>

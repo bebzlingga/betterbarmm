@@ -2,12 +2,13 @@ import { ArrowRightIcon, PhoneIcon, SirenIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { linkClass } from './directory-bits'
 import { HeadPortrait } from './head-portrait'
+import { PhotoCredit } from './discover-figure'
 import { DirectoryPlaces } from './directory-places'
 import { DirectorySearch } from './directory-search'
 import { members } from '../_lib/directory-index'
 import { GetInvolved } from './get-involved'
 import { SiteHeader } from './site-header'
-import { barangayRows, directoryMeta, directoryOffices, hotlines, localGovernments, telHref } from '../_lib/directory'
+import { barangayRows, directoryMeta, directoryOffices, hotlines, localGovernments, officePhoto, telHref } from '../_lib/directory'
 
 
 const GROUPS = [
@@ -82,11 +83,18 @@ export function DirectoryIndex() {
 									{/* A list on a phone, cards from a tablet up. */}
 									<ul className='mt-3 grid border-t border-[var(--rule)] sm:mt-4 sm:grid-cols-2 sm:gap-4 sm:border-t-0 lg:grid-cols-3'>
 										{list.map((o) => (
-											<li key={o.slug}>
+											<li key={o.slug} className='relative'>
 												<Link scroll={false}
 													href={`/directory/office/${o.slug}`}
 													className='group flex h-full flex-col border-b border-[var(--rule-soft)] py-3 transition sm:border sm:border-[var(--rule)] sm:p-5 sm:hover:border-[var(--ink)] sm:hover:shadow-[0_14px_30px_-22px_rgba(0,0,0,0.5)]'
 												>
+													{/* The office's building across the top of the card, from a tablet up. */}
+													{officePhoto(o.slug, o.address) ? (
+														<span className='-mx-5 -mt-5 mb-4 hidden h-32 overflow-hidden bg-[var(--paper-2)] sm:block'>
+															{/* eslint-disable-next-line @next/next/no-img-element */}
+															<img src={officePhoto(o.slug, o.address)!.src} alt='' loading='lazy' className='size-full object-cover transition duration-500 group-hover:scale-[1.03]' />
+														</span>
+													) : null}
 													<span className='hidden items-start justify-between gap-3 sm:flex'>
 														<span className={`${eyebrow} text-[var(--accent)]`}>{o.acronym ?? (o.kind === 'attached' ? 'Office' : 'Ministry')}</span>
 														<ArrowRightIcon size={14} className='mt-0.5 shrink-0 text-[var(--ink-mute)] transition group-hover:translate-x-0.5 group-hover:text-[var(--accent)]' aria-hidden='true' />
@@ -112,6 +120,11 @@ export function DirectoryIndex() {
 														) : null}
 													</span>
 												</Link>
+												{officePhoto(o.slug, o.address) ? (
+													<span className='pointer-events-none absolute inset-x-px top-px hidden h-32 overflow-hidden sm:block [&>a]:pointer-events-auto'>
+														<PhotoCredit photo={{ credit: officePhoto(o.slug, o.address)!.credit, license: officePhoto(o.slug, o.address)!.license, source: officePhoto(o.slug, o.address)!.page }} />
+													</span>
+												) : null}
 											</li>
 										))}
 									</ul>
