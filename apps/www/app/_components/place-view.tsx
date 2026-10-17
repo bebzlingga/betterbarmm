@@ -1,7 +1,7 @@
-import { ArrowUpRightIcon, BowlFoodIcon, CalendarBlankIcon, CompassIcon, MapPinIcon, NavigationArrowIcon, WarningCircleIcon } from '@phosphor-icons/react/ssr'
+import { ArrowUpRightIcon, BedIcon, BowlFoodIcon, CalendarBlankIcon, CompassIcon, MapPinIcon, NavigationArrowIcon, WarningCircleIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { commonsThumb, cropStyle } from '../_lib/commons'
-import { AREA, KIND_ONE, areaDishes, nearby, type Place } from '../_lib/places'
+import { AREA, KIND_ONE, areaDishes, areaLodging, nearby, staysNear, type Place } from '../_lib/places'
 import { PlaceGallery } from './place-gallery'
 import { photo as discoverPhoto } from './discover-media'
 import { PhotoCredit } from './discover-figure'
@@ -28,6 +28,8 @@ const site = (s: string) => {
 export function PlaceView({ p }: { p: Place }) {
 	const hero = p.images[0]
 	const dishesHere = areaDishes(p.area)
+	const stays = staysNear(p)
+	const lodgingHere = areaLodging(p.area)
 	const near = nearby(p)
 	return (
 		<>
@@ -150,6 +152,48 @@ export function PlaceView({ p }: { p: Place }) {
 				</aside>
 			</section>
 
+
+			{/* Where to sleep: the guide's word on the area, then up to six places, each with its source. */}
+			{stays.length || lodgingHere ? (
+				<section aria-labelledby='stay' className='bb-container pb-14'>
+					<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
+						<h2 id='stay' className='text-[22px] font-extrabold tracking-[-0.02em] text-[#13303a]'>
+							Places to stay {stays.length ? <span className='text-[#8aa3a9]'>{stays.length}</span> : null}
+						</h2>
+						{lodgingHere ? <p className='max-w-2xl text-[13.5px] leading-[1.55] text-[#4d6670]'>{lodgingHere.booking}</p> : null}
+					</div>
+					{stays.length ? (
+						<ul className='mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6'>
+							{stays.map((st) => (
+								<li key={st.name + st.municipality} className='bb-frame relative bg-transparent!'>
+									<span className='relative block aspect-[4/3] overflow-hidden bg-[#dfe9e6]'>
+										{st.image ? (
+											// eslint-disable-next-line @next/next/no-img-element
+											<img src={commonsThumb(st.image.url, 500)} alt='' loading='lazy' className='size-full object-cover' />
+										) : (
+											<span className='grid size-full place-items-center bg-[linear-gradient(135deg,#e3efec,#cfe0dc)] text-[#1f6f78]'>
+												<BedIcon size={28} weight='duotone' aria-hidden='true' />
+											</span>
+										)}
+										{st.image ? <PhotoCredit photo={{ credit: st.image.author, license: st.image.license, source: st.image.page }} /> : null}
+									</span>
+									<span className='block pt-3'>
+										<span className='font-mono text-[9.5px] font-semibold uppercase tracking-[0.12em] text-[#1f6f78]'>
+											{st.kind} · {st.municipality}
+										</span>
+										<span className='mt-0.5 block text-[14.5px] font-bold leading-snug text-[#13303a]'>{st.name}</span>
+										<span className='mt-0.5 line-clamp-2 block text-[12.5px] leading-[1.5] text-[#4d6670]'>{st.note}</span>
+										<a href={st.source} target='_blank' rel='noreferrer' className='mt-1 inline-flex items-center gap-0.5 text-[11.5px] text-[#7a8c92] hover:text-[#1f6f78]'>
+											{st.accredited ? 'Accredited' : 'Source'}, {st.as_of.slice(0, 4)} <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
+										</a>
+									</span>
+								</li>
+							))}
+						</ul>
+					) : null}
+					<p className='mt-3 text-[12px] text-[#7a8c92]'>No prices here: rates change quickly. Confirm and book directly before you go.</p>
+				</section>
+			) : null}
 
 			{/* Every photograph, each opening full size. */}
 			{p.images.length > 1 ? (

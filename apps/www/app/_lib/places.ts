@@ -1,5 +1,6 @@
 import data from '../../../../datasets/places/places.json'
-import { dishes, type Dish } from '@betterbarmm/travel-data'
+import staysFile from '../../../../datasets/places/stays.json'
+import { dishes, lodgingForArea, type Dish } from '@betterbarmm/travel-data'
 import type { CraftImage } from './crafts'
 
 /* Places worth the journey in BARMM: beaches, islands, mosques, lakes, falls,
@@ -96,3 +97,26 @@ export const areaDishes = (area: string, n = 4) =>
 		.filter((d) => (KITCHENS[area] ?? []).includes(d.tradition))
 		.sort((a, b) => Number(!a.essential) - Number(!b.essential))
 		.slice(0, n)
+
+/** A place to stay, from an official or dated source; the image only where it is free or a government work. */
+export type Stay = {
+	name: string
+	kind: 'hotel' | 'resort' | 'inn' | 'pension' | 'homestay' | 'guesthouse'
+	area: string
+	municipality: string
+	address: string | null
+	note: string
+	accredited: boolean
+	source: string
+	as_of: string
+	image: CraftImage | null
+}
+const stays = staysFile.stays as Stay[]
+const sameTown = (a: string, b: string) => a.toLowerCase().replace(/ city$/, '') === b.toLowerCase().replace(/ city$/, '')
+
+/** Up to six places to stay for a visitor to a place: in its town first, then elsewhere in its area. */
+export const staysNear = (p: Place, n = 6) =>
+	[...stays.filter((s) => s.area === p.area && sameTown(s.municipality, p.municipality)), ...stays.filter((s) => s.area === p.area && !sameTown(s.municipality, p.municipality))].slice(0, n)
+
+/** The guide's own word on how lodging works in an area: where people sleep and how a room is booked. */
+export const areaLodging = (area: string) => lodgingForArea(area) ?? null
