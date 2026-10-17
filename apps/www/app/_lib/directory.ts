@@ -7,6 +7,7 @@ import historyFile from '../../../../datasets/directory/history.json'
 import headPhotos from '../../../../datasets/directory/head-photos.json'
 import officePhotos from '../../../../datasets/directory/office-photos.json'
 import placePhotos from '../../../../datasets/directory/place-photos.json'
+import structureFile from '../../../../datasets/directory/structure.json'
 import dataset from '../../../../datasets/directory/offices.json'
 import { photo as discoverPhoto } from '../_components/discover-media'
 import { offices as serviceOffices } from './services'
@@ -195,3 +196,8 @@ export function officePhoto(slug: string, address: string | null): OfficePhoto |
 	const caption = slug === 'office-of-the-chief-minister' ? 'The Office of the Chief Minister building, Cotabato City' : 'The Bangsamoro Government Center compound, Cotabato City: the Office of the Chief Minister building'
 	return { src: center.src.src, page: center.source, credit: center.credit, license: center.license, caption }
 }
+
+/** An office's organizational structure: its units, nested, each with its head where a source names one. */
+export type OrgUnit = { name: string; kind: string; head: { name: string; title: string; source?: string } | null; source?: string; source_kind?: string; units?: OrgUnit[] }
+export type OrgStructure = { as_of: string | null; sources: { label: string; url: string }[]; units: OrgUnit[]; note?: string }
+export const officeStructure = (slug: string) => (structureFile.offices as Record<string, OrgStructure | null | undefined>)[slug] ?? null

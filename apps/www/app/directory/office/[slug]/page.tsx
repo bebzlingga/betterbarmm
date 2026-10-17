@@ -5,7 +5,8 @@ import { notFound } from 'next/navigation'
 import { Phone, linkClass, monthYear } from '../../../_components/directory-bits'
 import { Masthead } from '../../../_components/masthead'
 import { DirectoryDialog } from '../../../_components/directory-dialog'
-import { directoryMeta, directoryOffice, directoryOffices, fieldOffices, headPhoto, officeHistory, officePhoto } from '../../../_lib/directory'
+import { directoryMeta, directoryOffice, directoryOffices, fieldOffices, headPhoto, officeHistory, officePhoto, officeStructure } from '../../../_lib/directory'
+import { OfficeStructure } from '../../../_components/office-structure'
 import { PhotoCredit } from '../../../_components/discover-figure'
 import { HeadPortrait } from '../../../_components/head-portrait'
 import { budgetHref, officeBySlug } from '../../../_lib/services'
@@ -37,6 +38,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 	const service = officeBySlug(o.slug)
 	const portrait = headPhoto(o.slug)
 	const building = officePhoto(o.slug, o.address)
+	const org = officeStructure(o.slug)
 
 	return (
 		<DirectoryDialog id={o.slug} name={o.name}>
@@ -134,6 +136,8 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 						{o.checked ? <p className='mt-3 text-[12px] text-[var(--ink-3)]'>Checked by an editor, {o.checked}.</p> : null}
 					</div>
 				</div>
+
+				{org ? <OfficeStructure org={org} /> : null}
 
 				{field.length ? (
 					<section aria-labelledby='field' className='mt-14'>
