@@ -22,12 +22,13 @@ const LINE_ICON: Record<Line['kind'], Icon> = { drrm: SirenIcon, police: ShieldI
 /** Emergency and service lines as cards: what the office is, its numbers, where the numbers were read. */
 export function Lines({ lines, empty }: { lines: Line[]; empty: string }) {
 	if (!lines.length) return <p className='mt-3 text-[13.5px] text-[var(--ink-3)]'>{empty}</p>
+	// Each card draws its own hairline, overlapping its neighbour's, so a row the cards do not fill shows the page, not a grey block.
 	return (
-		<ul className='mt-4 grid gap-px overflow-hidden border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-2 lg:grid-cols-3'>
+		<ul className='mt-4 grid pt-px pl-px sm:grid-cols-2 lg:grid-cols-3'>
 			{lines.map((l) => {
 				const Glyph = LINE_ICON[l.kind]
 				return (
-					<li key={l.kind + l.name} className='bg-[var(--paper)] p-5'>
+					<li key={l.kind + l.name} className='-mt-px -ml-px border border-[var(--rule)] bg-[var(--paper)] p-5'>
 						<p className='flex items-center gap-2 font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>
 							<Glyph size={15} weight='fill' aria-hidden='true' /> {LINE_LABEL[l.kind]}
 						</p>

@@ -66,9 +66,9 @@ export default function ParliamentDirectoryPage() {
 						<h2 className='text-[13px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
 							{g.label}s <span className='text-[var(--ink-mute)]'>{g.list.length}</span>
 						</h2>
-						<ul className='mt-4 grid gap-px overflow-hidden border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-2 lg:grid-cols-4'>
+						<ul className='mt-4 grid pt-px pl-px sm:grid-cols-2 lg:grid-cols-4'>
 							{g.list.map((m) => (
-								<li key={m.rosterName} id={memberId(m)} className='scroll-mt-[calc(var(--site-header-h)+1rem)] bg-[var(--paper)] target:bg-[var(--paper-2)] target:outline-2 target:outline-[var(--accent)]'>
+								<li key={m.rosterName} id={memberId(m)} className='-mt-px -ml-px scroll-mt-[calc(var(--site-header-h)+1rem)] border border-[var(--rule)] bg-[var(--paper)] target:bg-[var(--paper-2)] target:outline-2 target:outline-[var(--accent)]'>
 									<a href={`${LEGISLATION}/members/elected`} className='group flex h-full items-center gap-3 p-4 hover:bg-[var(--paper-2)]'>
 										{m.photo ? (
 											// eslint-disable-next-line @next/next/no-img-element

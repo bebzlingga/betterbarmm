@@ -52,7 +52,9 @@ export function CraftDialog({ slug, name, children }: { slug: string; name: stri
 				e.preventDefault()
 				close()
 			}}
-			className='fixed inset-0 z-[60] m-0 outline-none h-dvh max-h-none w-screen max-w-none overflow-y-auto overscroll-contain bg-[#f4efe8] p-0 text-[#3b2419] backdrop:bg-[#2a1810]/80'
+			// The size is set inline as well: some browsers' own dialog styles cap a modal at the window less a margin.
+			style={{ position: 'fixed', inset: 0, width: '100%', height: '100dvh', maxWidth: 'none', maxHeight: 'none', margin: 0, padding: 0, border: 0 }}
+			className='z-[60] overflow-y-auto overscroll-contain bg-[#f4efe8] text-[#3b2419] outline-none backdrop:bg-[#2a1810]/80'
 		>
 			<button
 				type='button'

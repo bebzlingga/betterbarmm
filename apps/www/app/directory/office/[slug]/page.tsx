@@ -121,9 +121,9 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 						<h2 id='field' className='text-[20px] font-extrabold'>
 							In the provinces <span className='text-[var(--ink-mute)]'>{field.length}</span>
 						</h2>
-						<ul className='mt-4 grid gap-px overflow-hidden border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-2 lg:grid-cols-3'>
+						<ul className='mt-4 grid pt-px pl-px sm:grid-cols-2 lg:grid-cols-3'>
 							{field.map((f) => (
-								<li key={f.office} className='bg-[var(--paper)] p-5 text-[13.5px] leading-6'>
+								<li key={f.office} className='-mt-px -ml-px border border-[var(--rule)] bg-[var(--paper)] p-5 text-[13.5px] leading-6'>
 									<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>{f.province}</p>
 									<p className='mt-1 text-[14.5px] font-semibold leading-snug'>{f.office}</p>
 									{f.head ? (

@@ -64,7 +64,9 @@ export function OverlayDialog({
 				e.preventDefault()
 				close()
 			}}
-			className={`fixed inset-0 z-[60] m-0 h-dvh max-h-none w-screen max-w-none overflow-y-auto overscroll-contain p-0 outline-none ${className}`}
+			// The size is set inline as well: some browsers' own dialog styles cap a modal at the window less a margin.
+			style={{ position: 'fixed', inset: 0, width: '100%', height: '100dvh', maxWidth: 'none', maxHeight: 'none', margin: 0, padding: 0, border: 0 }}
+			className={`z-[60] overflow-y-auto overscroll-contain outline-none ${className}`}
 		>
 			<button type='button' onClick={close} aria-label='Close' className={`fixed top-4 right-4 z-20 flex size-11 items-center justify-center transition hover:opacity-70 sm:top-5 sm:right-5 ${closeClassName}`}>
 				<XIcon size={26} weight='bold' aria-hidden='true' />
