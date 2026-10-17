@@ -1,0 +1,135 @@
+import { ArrowUpRightIcon, CalendarBlankIcon, MapPinIcon, NavigationArrowIcon, WarningCircleIcon } from '@phosphor-icons/react/ssr'
+import Link from 'next/link'
+import { commonsThumb, cropStyle } from '../_lib/commons'
+import { AREA, KIND_ONE, nearby, type Place } from '../_lib/places'
+import { PhotoCredit } from './discover-figure'
+import { PlaceCard } from './place-card'
+
+/* One place, in the full-screen dialog over the catalogue: its photograph
+   across the top with the name over it, then what is there beside how to go
+   and what to know first, then its other photographs and what is nearby. */
+
+const label = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em]'
+const site = (s: string) => {
+	try {
+		return new URL(s).hostname.replace(/^www\./, '')
+	} catch {
+		return s
+	}
+}
+
+export function PlaceView({ p }: { p: Place }) {
+	const [hero, ...more] = p.images
+	const near = nearby(p)
+	return (
+		<>
+			<section className='bb-frame relative isolate flex min-h-[62dvh] items-end overflow-hidden bg-[#13303a] text-white'>
+				{hero ? (
+					// eslint-disable-next-line @next/next/no-img-element
+					<img src={commonsThumb(hero.url, 1280)} alt={hero.caption || p.name} style={cropStyle(hero, 16 / 9) ?? undefined} className='absolute inset-0 -z-10 size-full object-cover' />
+				) : (
+					<span aria-hidden='true' className='absolute inset-0 -z-10' style={{ background: `linear-gradient(135deg, ${p.colors.join(', ') || '#1f5a6b, #7fb3a8'})` }} />
+				)}
+				<span aria-hidden='true' className='absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgba(8,20,26,0.88),rgba(8,20,26,0.35)_55%,rgba(8,20,26,0.1))]' />
+				<div className='bb-container w-full pt-24 pb-10 sm:pb-14'>
+					<p className={`${label} text-white/80`}>
+						<Link href='/places' replace scroll={false} className='hover:text-white'>
+							Places
+						</Link>{' '}
+						· {KIND_ONE[p.kind]}
+					</p>
+					<h1 className='mt-3 max-w-4xl text-[40px] font-extrabold leading-[1.02] tracking-[-0.03em] sm:text-[60px] lg:text-[72px]'>{p.name}</h1>
+					<p className='mt-3 flex items-center gap-1.5 text-[15px] text-white/85'>
+						<MapPinIcon size={16} weight='fill' aria-hidden='true' /> {[p.municipality, AREA[p.area]].filter((x, i, a) => x && a.indexOf(x) === i).join(', ')}
+					</p>
+					{p.also_known_as?.length ? <p className='mt-1 text-[13px] text-white/70'>Also known as {p.also_known_as.join(', ')}</p> : null}
+				</div>
+				{hero ? <PhotoCredit photo={{ credit: hero.author, license: hero.license, source: hero.page }} /> : null}
+			</section>
+
+			<section className='bb-container grid gap-12 py-14 lg:grid-cols-[minmax(0,65fr)_minmax(0,35fr)] lg:gap-20 lg:py-20'>
+				<div>
+					<p className='text-[21px] font-semibold leading-[1.5] tracking-[-0.01em] text-[#13303a]'>{p.summary}</p>
+					<div className='mt-6 space-y-4 text-[16px] leading-[1.75] text-[#34505a]'>
+						{p.detail.map((d) => (
+							<p key={d}>{d}</p>
+						))}
+					</div>
+				</div>
+				<aside className='space-y-8'>
+					{p.getting_there ? (
+						<div>
+							<p className={`${label} flex items-center gap-1.5 text-[#1f6f78]`}>
+								<NavigationArrowIcon size={14} weight='fill' aria-hidden='true' /> Getting there
+							</p>
+							<p className='mt-2 text-[14.5px] leading-[1.65] text-[#34505a]'>{p.getting_there}</p>
+						</div>
+					) : null}
+					{p.best_time ? (
+						<div>
+							<p className={`${label} flex items-center gap-1.5 text-[#1f6f78]`}>
+								<CalendarBlankIcon size={14} weight='fill' aria-hidden='true' /> When to go
+							</p>
+							<p className='mt-2 text-[14.5px] leading-[1.65] text-[#34505a]'>{p.best_time}</p>
+						</div>
+					) : null}
+					{p.before_you_go.length ? (
+						<div className='border-l-2 border-[#d9a441] pl-4'>
+							<p className={`${label} flex items-center gap-1.5 text-[#9a6a16]`}>
+								<WarningCircleIcon size={14} weight='fill' aria-hidden='true' /> Before you go
+							</p>
+							<ul className='mt-2 space-y-2 text-[14px] leading-[1.6] text-[#34505a]'>
+								{p.before_you_go.map((b) => (
+									<li key={b}>{b}</li>
+								))}
+							</ul>
+						</div>
+					) : null}
+					{p.sources.length ? (
+						<div>
+							<p className={`${label} text-[#4d6670]`}>Read more</p>
+							<ul className='mt-2 space-y-1 text-[13px]'>
+								{p.sources.map((s) => (
+									<li key={s}>
+										<a href={s} target='_blank' rel='noreferrer' className='inline-flex items-center gap-1 text-[#1f6f78] underline decoration-[#cfe0dc] underline-offset-4 hover:decoration-[#1f6f78]'>
+											{site(s)} <ArrowUpRightIcon size={11} weight='bold' aria-hidden='true' />
+										</a>
+									</li>
+								))}
+							</ul>
+						</div>
+					) : null}
+				</aside>
+			</section>
+
+			{more.length ? (
+				<section aria-label='More photographs' className='bb-container pb-14'>
+					<ul className='grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
+						{more.map((img) => (
+							<li key={img.url} className='bb-frame relative aspect-[4/3] overflow-hidden bg-[#dfe9e6]'>
+								{/* eslint-disable-next-line @next/next/no-img-element */}
+								<img src={commonsThumb(img.url, 960)} alt={img.caption || p.name} loading='lazy' style={cropStyle(img, 4 / 3) ?? undefined} className='size-full object-cover' />
+								<PhotoCredit photo={{ credit: img.author, license: img.license, source: img.page }} />
+							</li>
+						))}
+					</ul>
+				</section>
+			) : null}
+
+			{near.length ? (
+				<section className='bg-[#eef4f2]'>
+					<div className='bb-container py-16 lg:py-20'>
+						<h2 className='text-[22px] font-extrabold tracking-[-0.02em] text-[#13303a]'>Nearby and alike</h2>
+						<ul className='mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4'>
+							{near.map((n) => (
+								<li key={n.slug}>
+									<PlaceCard p={n} replace />
+								</li>
+							))}
+						</ul>
+					</div>
+				</section>
+			) : null}
+		</>
+	)
+}

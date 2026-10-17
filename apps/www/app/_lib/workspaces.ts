@@ -93,6 +93,14 @@ export const projects: Project[] = [
 		state: 'live',
 	},
 	{
+		key: 'places',
+		label: 'Places',
+		href: '/places',
+		measure: 'Islands, lakes, mosques',
+		blurb: 'Beaches, islands, lakes, mosques and heritage sites across the region: what is there, how to get there, what to know first.',
+		state: 'live',
+	},
+	{
 		key: 'services',
 		label: 'Programs & services',
 		measure: 'Citizen’s Charters',

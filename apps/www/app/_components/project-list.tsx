@@ -3,6 +3,7 @@ import Link from 'next/link'
 import outline from '../../../../datasets/accidents/barmm-outline.json'
 import { ACCIDENT_TYPES, accidents, typeOf } from '../_lib/accidents'
 import { commonsThumb, craft, creditOf } from '../_lib/crafts'
+import { place } from '../_lib/places'
 import { PhotoCredit } from './discover-figure'
 
 /* ============================================================
@@ -15,7 +16,7 @@ import { PhotoCredit } from './discover-figure'
    ============================================================ */
 
 export type Project = {
-	key: 'accidents' | 'crafts' | 'services'
+	key: 'accidents' | 'crafts' | 'places' | 'services'
 	label: string
 	href?: string
 	measure: string
@@ -110,7 +111,17 @@ function CraftPhoto() {
 	)
 }
 
-const PICTURE = { accidents: IncidentDots, crafts: CraftPhoto, services: Checklist } as const
+// The Places card shows a place itself: Panampangan's sandbar, off Sapa-Sapa.
+const PLACE_PHOTO = (place('panampangan-island') ?? place('bud-bongao'))!.images[0]!
+
+function PlacePhoto() {
+	return (
+		// eslint-disable-next-line @next/next/no-img-element
+		<img src={commonsThumb(PLACE_PHOTO.url, 960)} alt='' loading='lazy' className='h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]' />
+	)
+}
+
+const PICTURE = { accidents: IncidentDots, crafts: CraftPhoto, places: PlacePhoto, services: Checklist } as const
 
 export function ProjectList({ projects }: { projects: Project[] }) {
 	return (
@@ -121,7 +132,7 @@ export function ProjectList({ projects }: { projects: Project[] }) {
 				const body = (
 					<>
 						{/* The picture fills its panel edge to edge; the sketches that do not are inset. */}
-						<span className={`block h-40 overflow-hidden border-b border-[var(--rule-soft)] bg-[var(--paper-2)] ${p.key === 'accidents' || p.key === 'crafts' ? '' : 'px-6 py-4'}`}>
+						<span className={`block h-40 overflow-hidden border-b border-[var(--rule-soft)] bg-[var(--paper-2)] ${p.key === 'accidents' || p.key === 'crafts' || p.key === 'places' ? '' : 'px-6 py-4'}`}>
 							<Picture />
 						</span>
 						<span className='block p-6'>
@@ -147,9 +158,9 @@ export function ProjectList({ projects }: { projects: Project[] }) {
 						) : (
 							<div className='h-full opacity-80'>{body}</div>
 						)}
-						{p.key === 'crafts' ? (
+						{p.key === 'crafts' || p.key === 'places' ? (
 							<span className='pointer-events-none absolute inset-x-0 top-0 h-40 [&>a]:pointer-events-auto'>
-								<PhotoCredit photo={creditOf(CRAFT_PHOTO)} />
+								<PhotoCredit photo={creditOf(p.key === 'crafts' ? CRAFT_PHOTO : PLACE_PHOTO)} />
 							</span>
 						) : null}
 					</li>
