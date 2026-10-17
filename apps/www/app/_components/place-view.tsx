@@ -3,13 +3,18 @@ import Link from 'next/link'
 import { commonsThumb, cropStyle } from '../_lib/commons'
 import { AREA, KIND_ONE, areaDishes, nearby, type Place } from '../_lib/places'
 import { PlaceGallery } from './place-gallery'
+import { photo as discoverPhoto } from './discover-media'
 import { PhotoCredit } from './discover-figure'
 import { PlaceCard } from './place-card'
 
 /* One place, in the full-screen dialog over the catalogue: its photograph
    across the top with the name over it, then what is there beside how to go
-   and what to know first, then what to do and eat there, its photographs
-   (each opening full size) and what is nearby. */
+   and when to go, what to do and eat there and what to know first. Its
+   photographs sit in a row under the header, each opening full size. */
+
+/** The site's own photographs of a dish, from Discover BARMM, where there is one. */
+const DISH_PHOTO = { pastil: 'pastil', 'tiyula-itum': 'tiyulaItum', palapa: 'paterPalapa' } as const
+const dishPhoto = (slug: string) => (slug in DISH_PHOTO ? discoverPhoto(DISH_PHOTO[slug as keyof typeof DISH_PHOTO]) : null)
 
 const label = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em]'
 const site = (s: string) => {
@@ -50,7 +55,14 @@ export function PlaceView({ p }: { p: Place }) {
 				{hero ? <PhotoCredit photo={{ credit: hero.author, license: hero.license, source: hero.page }} /> : null}
 			</section>
 
-			<section className='bb-container grid gap-12 py-14 lg:grid-cols-[minmax(0,65fr)_minmax(0,35fr)] lg:gap-20 lg:py-20'>
+			{/* Every photograph, straight under the header, each opening full size. */}
+			{p.images.length > 1 ? (
+				<section aria-label='Photographs' className='bb-container pt-6'>
+					<PlaceGallery images={p.images} name={p.name} />
+				</section>
+			) : null}
+
+			<section className='bb-container grid gap-12 pt-10 pb-14 lg:grid-cols-[minmax(0,65fr)_minmax(0,35fr)] lg:gap-20 lg:pt-12 lg:pb-20'>
 				<div>
 					<p className='text-[21px] font-semibold leading-[1.5] tracking-[-0.01em] text-[#13303a]'>{p.summary}</p>
 					<div className='mt-6 space-y-4 text-[16px] leading-[1.75] text-[#34505a]'>
@@ -74,6 +86,46 @@ export function PlaceView({ p }: { p: Place }) {
 								<CalendarBlankIcon size={14} weight='fill' aria-hidden='true' /> When to go
 							</p>
 							<p className='mt-2 text-[14.5px] leading-[1.65] text-[#34505a]'>{p.best_time}</p>
+						</div>
+					) : null}
+					{p.do?.length ? (
+						<div>
+							<p className={`${label} flex items-center gap-1.5 text-[#1f6f78]`}>
+								<CompassIcon size={14} weight='fill' aria-hidden='true' /> Things to do
+							</p>
+							<ul className='mt-2 space-y-2.5 text-[14.5px] leading-[1.6] text-[#34505a]'>
+								{p.do.map((d) => (
+									<li key={d.title}>
+										<span className='font-semibold text-[#13303a]'>{d.title}.</span> {d.detail}
+									</li>
+								))}
+							</ul>
+						</div>
+					) : null}
+					{p.eat?.length || dishesHere.length ? (
+						<div>
+							<p className={`${label} flex items-center gap-1.5 text-[#1f6f78]`}>
+								<BowlFoodIcon size={14} weight='fill' aria-hidden='true' /> Food to try
+							</p>
+							<ul className='mt-3 space-y-3'>
+								{[...(p.eat ?? []).map((d) => ({ key: d.title, name: d.title, line: d.detail, who: null, photo: null })), ...dishesHere.map((d) => ({ key: d.slug, name: d.name, line: d.summary, who: d.tradition, photo: dishPhoto(d.slug) }))].map((d) => (
+									<li key={d.key} className='flex gap-3'>
+										{d.photo ? (
+											<a href={d.photo.source} target='_blank' rel='noreferrer' title={`Photo: ${d.photo.credit}, ${d.photo.license}`} className='shrink-0'>
+												{/* eslint-disable-next-line @next/next/no-img-element */}
+												<img src={d.photo.src.src} alt={d.photo.alt} loading='lazy' className='size-14 object-cover' />
+											</a>
+										) : null}
+										<span className='min-w-0 text-[14.5px] leading-[1.55] text-[#34505a]'>
+											<span className='font-semibold text-[#13303a]'>{d.name}</span>
+											{d.who ? <span className='ml-1.5 text-[12px] text-[#7a8c92]'>{d.who}</span> : null}
+											<span className='block'>{d.line}</span>
+											{d.photo ? <span className='block text-[11.5px] text-[#7a8c92]'>Photo: {d.photo.credit}</span> : null}
+										</span>
+									</li>
+								))}
+							</ul>
+							<p className='mt-2 text-[12px] text-[#7a8c92]'>The food is halal; dishes are the travel guide’s.</p>
 						</div>
 					) : null}
 					{p.before_you_go.length ? (
@@ -105,72 +157,6 @@ export function PlaceView({ p }: { p: Place }) {
 				</aside>
 			</section>
 
-			{p.do?.length || dishesHere.length || p.eat?.length ? (
-				<section aria-labelledby='there' className='border-t border-[#dbe7e4] bg-white'>
-					<div className='bb-container py-14 lg:py-20'>
-						<h2 id='there' className='text-[26px] font-extrabold tracking-[-0.02em] text-[#13303a]'>
-							When you get there
-						</h2>
-						<div className='mt-8 grid gap-12 lg:grid-cols-2 lg:gap-20'>
-							{p.do?.length ? (
-								<div>
-									<p className={`${label} flex items-center gap-1.5 text-[#1f6f78]`}>
-										<CompassIcon size={14} weight='fill' aria-hidden='true' /> Things to do
-									</p>
-									<ol className='mt-4 space-y-5'>
-										{p.do.map((d, i) => (
-											<li key={d.title} className='flex gap-4'>
-												<span className='grid size-8 shrink-0 place-items-center rounded-full bg-[#e3efec] text-[13px] font-bold tabular-nums text-[#1f6f78]'>{i + 1}</span>
-												<span>
-													<span className='block text-[16px] font-bold leading-snug text-[#13303a]'>{d.title}</span>
-													<span className='mt-1 block text-[14.5px] leading-[1.6] text-[#4d6670]'>{d.detail}</span>
-												</span>
-											</li>
-										))}
-									</ol>
-								</div>
-							) : null}
-							{p.eat?.length || dishesHere.length ? (
-								<div>
-									<p className={`${label} flex items-center gap-1.5 text-[#9a6a16]`}>
-										<BowlFoodIcon size={14} weight='fill' aria-hidden='true' /> Food to try
-									</p>
-									<ul className='mt-4 grid gap-3 sm:grid-cols-2'>
-										{(p.eat ?? []).map((d) => (
-											<li key={d.title} className='bg-[#fbf6ea] p-4'>
-												<span className='block text-[15px] font-bold text-[#13303a]'>{d.title}</span>
-												<span className='mt-1 block text-[13.5px] leading-[1.55] text-[#4d6670]'>{d.detail}</span>
-											</li>
-										))}
-										{dishesHere.map((d) => (
-											<li key={d.slug} className='bg-[#fbf6ea] p-4'>
-												<span className='flex items-baseline justify-between gap-2'>
-													<span className='text-[15px] font-bold text-[#13303a]'>{d.name}</span>
-													<span className='font-mono text-[9.5px] font-semibold uppercase tracking-[0.12em] text-[#9a6a16]'>{d.tradition}</span>
-												</span>
-												<span className='mt-1 block text-[13.5px] leading-[1.55] text-[#4d6670]'>{d.summary}</span>
-												<span className='mt-2 block text-[12.5px] leading-[1.5] text-[#7a8c92]'>{d.whereToFind}</span>
-											</li>
-										))}
-									</ul>
-									<p className='mt-3 text-[12px] text-[#7a8c92]'>The region’s food is halal. Dishes are the travel guide’s, by the people whose kitchen they come from.</p>
-								</div>
-							) : null}
-						</div>
-					</div>
-				</section>
-			) : null}
-
-			{p.images.length > 1 ? (
-				<section aria-labelledby='gallery' className='bb-container py-14'>
-					<h2 id='gallery' className='text-[22px] font-extrabold tracking-[-0.02em] text-[#13303a]'>
-						Photographs <span className='text-[#8aa3a9]'>{p.images.length}</span>
-					</h2>
-					<div className='mt-5'>
-						<PlaceGallery images={p.images} name={p.name} />
-					</div>
-				</section>
-			) : null}
 
 			{near.length ? (
 				<section className='bg-[#eef4f2]'>
