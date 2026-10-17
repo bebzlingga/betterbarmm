@@ -1,7 +1,7 @@
 {
  "name": "Places of the Bangsamoro",
  "generatedAt": "2026-10-17",
- "note": "Places worth the journey in BARMM: the travel guide’s own 21, and 23 more each traced to its sources. Photos are Wikimedia Commons files, or English Wikipedia files where a building cannot go to Commons, under free licences.",
+ "note": "Places worth the journey in BARMM: the travel guide’s own 21, and more each traced to its sources. Photos are Wikimedia Commons files, or English Wikipedia files where a building cannot go to Commons, under free licences.",
  "items": [
   {
    "slug": "grand-mosque-cotabato",
@@ -49,12 +49,6 @@
      "tone": [
       68,
       0.31
-     ],
-     "crop": [
-      0.183,
-      0,
-      0,
-      0
      ]
     },
     {
@@ -532,12 +526,6 @@
      "tone": [
       217,
       0.26
-     ],
-     "crop": [
-      0.164,
-      0,
-      0,
-      0
      ]
     }
    ],
@@ -712,12 +700,6 @@
      "tone": [
       203,
       0.65
-     ],
-     "crop": [
-      0.336,
-      0,
-      0,
-      0
      ]
     },
     {
@@ -1134,12 +1116,6 @@
      "tone": [
       95,
       0.56
-     ],
-     "crop": [
-      0.323,
-      0.16,
-      0.305,
-      0.16
      ]
     }
    ],
@@ -2216,12 +2192,6 @@
      "tone": [
       348,
       0.61
-     ],
-     "crop": [
-      0.151,
-      0,
-      0,
-      0
      ]
     }
    ],
@@ -2727,12 +2697,6 @@
      "tone": [
       36,
       0.79
-     ],
-     "crop": [
-      0.338,
-      0,
-      0,
-      0
      ]
     }
    ],
@@ -2898,6 +2862,1451 @@
      "detail": "The fort stands on a hill behind the Pikit municipal hall, facing the national highway.",
      "source": "https://en.wikipedia.org/wiki/Fort_Pikit"
     }
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "Panglima Sugala Saturday barter market"
+   ],
+   "before_you_go": [
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "By road from Bongao; a jeepney leaves Bongao Public Market daily for Panglima Sugala. The market is in Barangay Batu-Batu, the town centre.",
+   "best_time": "Saturday, from first light; most goods are gone by 9 am.",
+   "do": [
+    {
+     "title": "Come early on a Saturday",
+     "detail": "Traders start unloading at first light and nearly everything is traded before 9 am.",
+     "source": "https://bangsamoro.gov.ph/news/feature-story/keeping-barter-trade-alive-the-adlaw-pagtabuh-tabuh-of-tawi-tawi/"
+    },
+    {
+     "title": "Buy breakfast or lunch for the boat",
+     "detail": "One island-hopping itinerary stops at the market at 8 am to buy food for lunch before going on to Panampangan Island.",
+     "source": "https://transitpinas.com/tawi-tawi-travel-guide-2022/"
+    },
+    {
+     "title": "Pay in cash if you have nothing to trade",
+     "detail": "Visitors without goods to exchange can simply buy with cash.",
+     "source": "https://bangsamoro.gov.ph/news/feature-story/keeping-barter-trade-alive-the-adlaw-pagtabuh-tabuh-of-tawi-tawi/"
+    }
+   ],
+   "images": [],
+   "slug": "adlaw-pagtabuh-tabuh",
+   "name": "Adlaw Pagtabuh-tabuh",
+   "kind": "market",
+   "area": "tawi-tawi",
+   "municipality": "Panglima Sugala",
+   "summary": "A weekly Saturday market in Panglima Sugala where Badjao fishers and Tausug farmers still trade goods by barter.",
+   "detail": [
+    "Every Saturday, Badjao fishers bring fish, dried octopus, seaweed and shells to the shore at Panglima Sugala, and farmers from the mainland arrive with cassava, bananas, coconuts, sugarcane and other produce. Most trade is a direct exchange of seafood for farm goods.",
+    "The market is busy by 6 am and most produce is sold or traded before 9 am. Buyers come from Bongao, Sapa-Sapa, Simunul and Sitangkai, and visitors with nothing to trade can pay in cash.",
+    "There are no cash registers, price tags or weighing scales. The Bangsamoro Information Office calls it one of the few places in the Philippines where barter trade is still a working tradition."
+   ],
+   "colors": [
+    "#1f6f8b",
+    "#e0a43a",
+    "#5b8c3a",
+    "#f2e6cf"
+   ],
+   "sources": [
+    "https://bangsamoro.gov.ph/news/feature-story/keeping-barter-trade-alive-the-adlaw-pagtabuh-tabuh-of-tawi-tawi/",
+    "https://transitpinas.com/tawi-tawi-travel-guide-2022/",
+    "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "Sangay Siapoh",
+    "Sangay Siapuh",
+    "Maldives of the South"
+   ],
+   "before_you_go": [
+    "The island is privately run; one 2022 itinerary paid PHP 100 per person to land.",
+    "Boat hire for a day of island hopping costs PHP 9,000 to 15,000, so it is cheaper in a group.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "By hired boat from Bongao, often combined with Simunul and Panampangan Island.",
+   "best_time": null,
+   "do": [
+    {
+     "title": "Swim off the boardwalk",
+     "detail": "The boardwalk crosses shallow water to the white beach, and large fish can be seen beside it.",
+     "source": "https://transitpinas.com/tawi-tawi-travel-guide-2022/"
+    },
+    {
+     "title": "Add it to a Simunul and Panampangan boat day",
+     "detail": "A 2022 itinerary reached Sangay Siapo at 4:30 pm after Panampangan and Simunul and was back in Bongao by early evening.",
+     "source": "https://transitpinas.com/tawi-tawi-travel-guide-2022/"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Sangay_Siapu%2C_Simunul%2C_Tawi%E2%80%91Tawi.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Sangay_Siapu,_Simunul,_Tawi%E2%80%91Tawi.jpg",
+     "author": "MimiAhid",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "width": 960,
+     "height": 720,
+     "caption": "White sand and turquoise water at Sangay Siapo"
+    }
+   ],
+   "slug": "sangay-siapo-island",
+   "name": "Sangay Siapo Island",
+   "kind": "island",
+   "area": "tawi-tawi",
+   "municipality": "Simunul",
+   "summary": "A small white-sand resort island near Bongao with a boardwalk and shallow, clear water.",
+   "detail": [
+    "Sangay Siapo is a privately owned resort island with overwater cottages linked by a boardwalk. Large fish gather on one side of the boardwalk, and the water around the island is shallow.",
+    "It is usually visited on a boat day from Bongao together with Simunul and Panampangan Island. Photos on Wikimedia Commons place it in Simunul; travel guides describe it only as near Bongao."
+   ],
+   "colors": [
+    "#3fb7c9",
+    "#f4efe0",
+    "#1c5a7a"
+   ],
+   "sources": [
+    "https://transitpinas.com/tawi-tawi-travel-guide-2022/",
+    "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/",
+    "https://www.philippinebeaches.org/?p=20261"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [],
+   "before_you_go": [
+    "It is a working government building; ask at the gate before walking in.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "By tricycle from downtown Bongao; tricycles can be hired for a half-day or full-day tour of the island.",
+   "best_time": null,
+   "do": [
+    {
+     "title": "Go after the Bud Bongao climb",
+     "detail": "One 2022 itinerary came down from Bud Bongao at 6 pm and visited the capitol at 7 pm.",
+     "source": "https://transitpinas.com/tawi-tawi-travel-guide-2022/"
+    },
+    {
+     "title": "Look over Bongao Port from the waterfront",
+     "detail": "From the port the capitol shows near the centre of the skyline with Bud Bongao behind it.",
+     "source": "https://commons.wikimedia.org/wiki/File:Bongao_by_the_Sea.jpg"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Bongao_by_the_Sea.jpg/1280px-Bongao_by_the_Sea.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Bongao_by_the_Sea.jpg",
+     "author": "Crow1997",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 3472,
+     "height": 4640,
+     "caption": "Bongao Port, with the Provincial Capitol near the centre and Bud Bongao behind",
+     "tone": [
+      212,
+      0.59
+     ]
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Tawi-Tawi_at_Dusk.jpg/1280px-Tawi-Tawi_at_Dusk.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Tawi-Tawi_at_Dusk.jpg",
+     "author": "Crow1997",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 3472,
+     "height": 4640,
+     "caption": "Mainland Tawi-Tawi at dusk, seen from Capitol Hill",
+     "tone": [
+      247,
+      0.26
+     ]
+    }
+   ],
+   "slug": "tawi-tawi-provincial-capitol",
+   "name": "Tawi-Tawi Provincial Capitol",
+   "kind": "heritage",
+   "area": "tawi-tawi",
+   "municipality": "Bongao",
+   "summary": "The seat of the provincial government, on a hill over Bongao, with a large dome and minarets modelled on the province's mosques.",
+   "detail": [
+    "The capitol stands on a hill in Barangay Tubig-Boh that looks over the town and the nearby islands. Its large dome and minarets take their design from the mosques of the province.",
+    "Travel guides list it among the sights of Bongao, usually on the same day as Bud Bongao and a walk through the downtown."
+   ],
+   "colors": [
+    "#2e7d5b",
+    "#f0ead6",
+    "#c9a24a"
+   ],
+   "sources": [
+    "https://transitpinas.com/tawi-tawi-travel-guide-2022/",
+    "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/",
+    "https://en.wikivoyage.org/wiki/Bongao"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "Bihing Tahik Resort"
+   ],
+   "before_you_go": [
+    "It is a private resort; one 2022 itinerary paid PHP 100 per person to enter.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "In Barangay Bahod, Bongao, about 3 km from Sanga-Sanga Airport (from a search snippet of a MindaNews photo post); reached by tricycle.",
+   "best_time": "Late afternoon, for the sunset.",
+   "do": [
+    {
+     "title": "Watch the sunset from the beach",
+     "detail": "Guides to Bongao suggest ending the day here for the sunset.",
+     "source": "https://transitpinas.com/tawi-tawi-travel-guide-2022/"
+    },
+    {
+     "title": "Look at the clam-shell architecture",
+     "detail": "The buildings follow the smooth curves of a giant clam's shell.",
+     "source": "https://bluprint-onemega.com/architecture/concept/bihing-tahik-resort-a-toast-to-local-culture/"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Bihing_Tahik%2C_Bongao_Tawi-Tawi.jpg/1280px-Bihing_Tahik%2C_Bongao_Tawi-Tawi.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Bihing_Tahik,_Bongao_Tawi-Tawi.jpg",
+     "author": "MimiAhid",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "width": 3578,
+     "height": 2684,
+     "caption": "The clam-shell buildings of Bihing Tahik Resort",
+     "tone": [
+      38,
+      0.59
+     ]
+    }
+   ],
+   "slug": "bihing-tahik",
+   "name": "Bihing Tahik",
+   "kind": "beach",
+   "area": "tawi-tawi",
+   "municipality": "Bongao",
+   "summary": "A beach resort about 3 km from Sanga-Sanga Airport whose buildings are shaped after the giant clam.",
+   "detail": [
+    "Bihing Tahik means by the sea in the local language. Architect Deo Alrashid Alam of the firm DADA based its design on the curves of the giant clam shell, which are regarded as the jade of the sea, and the resort uses the design to draw attention to giant clam conservation.",
+    "Travel guides recommend it for the sunset."
+   ],
+   "colors": [
+    "#e8c9a0",
+    "#2a8fa8",
+    "#f6f1e7"
+   ],
+   "sources": [
+    "https://bluprint-onemega.com/architecture/concept/bihing-tahik-resort-a-toast-to-local-culture/",
+    "https://transitpinas.com/tawi-tawi-travel-guide-2022/",
+    "https://en.wikivoyage.org/wiki/Bongao",
+    "https://mindanews.com/photo-of-the-day/2022/04/bihing-tahik/"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [],
+   "before_you_go": [
+    "Do not touch or chase the turtles.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "do": [
+    {
+     "title": "Snorkel with the turtles",
+     "detail": "Green sea turtles swim over the reef off the beach.",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/"
+    }
+   ],
+   "images": [],
+   "slug": "silisad-beach",
+   "name": "Silisad Beach",
+   "kind": "beach",
+   "area": "tawi-tawi",
+   "municipality": "Bongao",
+   "summary": "A beach in Bongao under Bud Bongao where green sea turtles swim over the reef.",
+   "detail": [
+    "A winning photo in the 2021 regional photo contest of the Ministry of Trade, Investments and Tourism was taken at Silisad: Bud Bongao Forest Park above, and a green sea turtle over coral in clear water below.",
+    "The ministry describes snorkelling or diving here with turtles swimming alongside."
+   ],
+   "colors": [
+    "#1d7f86",
+    "#5aa05a",
+    "#f1ead8"
+   ],
+   "sources": [
+    "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "Chinese Pier"
+   ],
+   "before_you_go": [
+    "Bring cash: guides report that no establishments in Bongao accept cards.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "In downtown Bongao, reached on foot or by tricycle.",
+   "best_time": null,
+   "do": [
+    {
+     "title": "Walk the market and the pier",
+     "detail": "Guides suggest a walk around the market and the old Chinese Pier.",
+     "source": "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/"
+    },
+    {
+     "title": "Catch a public boat to the islands",
+     "detail": "Public boats run from the Chinese Pier to Simunul, Sibutu, Sitangkai, Sipangkot and Liyaburan; other islands need a hired boat.",
+     "source": "https://transitpinas.com/tawi-tawi-travel-guide-2022/"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Busy_Waterways_on_Bongao.jpg/1280px-Busy_Waterways_on_Bongao.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Busy_Waterways_on_Bongao.jpg",
+     "author": "Crow1997",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 3472,
+     "height": 4640,
+     "caption": "Boats on the waterway at the Chinese Pier, downtown Bongao",
+     "tone": [
+      214,
+      0.5
+     ]
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Bongao%2C_Tawi-Tawi_Public_Market_33.jpg/1280px-Bongao%2C_Tawi-Tawi_Public_Market_33.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Bongao,_Tawi-Tawi_Public_Market_33.jpg",
+     "author": "LuzViMindaLife",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 4032,
+     "height": 3024,
+     "caption": "Inside Bongao public market",
+     "tone": [
+      23,
+      0.28
+     ]
+    }
+   ],
+   "slug": "bongao-chinese-pier",
+   "name": "Bongao Chinese Pier and public market",
+   "kind": "market",
+   "area": "tawi-tawi",
+   "municipality": "Bongao",
+   "summary": "Downtown Bongao's old pier, where boats leave for the outer islands, next to the town's public market.",
+   "detail": [
+    "The Chinese Pier is the busy waterfront of downtown Bongao. Public boats leave from here for Simunul, Sibutu, Sitangkai, Sipangkot and Liyaburan, and painted motorboats tie up beside colourful lepa boats.",
+    "Guides pair it with a walk through the public market, where jeepneys leave daily for Panglima Sugala and Languyan."
+   ],
+   "colors": [
+    "#d9443b",
+    "#2f7fb5",
+    "#f2c14e",
+    "#3b3b3b"
+   ],
+   "sources": [
+    "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/",
+    "https://transitpinas.com/tawi-tawi-travel-guide-2022/"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "Sheik Karimol Makhdum Shrine"
+   ],
+   "before_you_go": [
+    "It is a grave and a place of prayer: dress modestly and ask before taking photos.",
+    "Let the municipality know before you arrive in Sibutu.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "By public boat from the Chinese Pier in Bongao to Sibutu.",
+   "best_time": "7 November is Sheikh Karimul Makhdum Day, marking the arrival of Islam.",
+   "do": [],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Unveiling_of_the_Sheik_Karimol_Makhdum_burial_site_historical_marker.jpg/1280px-Unveiling_of_the_Sheik_Karimol_Makhdum_burial_site_historical_marker.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Unveiling_of_the_Sheik_Karimol_Makhdum_burial_site_historical_marker.jpg",
+     "author": "National Historical Commission of the Philippines",
+     "license": "Public domain",
+     "license_url": null,
+     "width": 1576,
+     "height": 1182,
+     "caption": "The unveiling of the National Historical Commission marker at the burial site",
+     "tone": [
+      215,
+      0.53
+     ]
+    }
+   ],
+   "slug": "sheik-makhdum-shrine-sibutu",
+   "name": "Burial Site of Sheik Karimol Makhdum",
+   "kind": "heritage",
+   "area": "tawi-tawi",
+   "municipality": "Sibutu",
+   "summary": "The grave in Tandu Banak, Sibutu, of the 14th-century missionary who brought Islam to the Philippines, declared a National Historical Shrine.",
+   "detail": [
+    "Sheik Karimol Makhdum is the missionary credited with founding the first mosque in the country at Tubig Indangan, Simunul. His burial site at Tandu Banak in Sibutu is declared a National Historical Shrine.",
+    "The National Historical Commission of the Philippines installed a marker here on 6 November 2023, the day before the marker at his mosque in Simunul. Accounts differ on where he lies: a SunStar travel feature says his remains are buried beside the mosque in Simunul."
+   ],
+   "colors": [
+    "#2f6b4f",
+    "#e9e1cc",
+    "#8c6d3f"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_historical_markers_of_the_Philippines_in_Bangsamoro",
+    "https://en.wikipedia.org/wiki/List_of_Cultural_Properties_of_the_Philippines_in_Bangsamoro",
+    "https://www.philstar.com/nation/2017/11/08/1756887/tourism-tawi-tawi-thriving-province-reports/amp/",
+    "https://www.sunstar.com.ph/more-articles/6-interesting-things-places-in-tawi-tawi"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "Cagayan de Sulu",
+    "Cagayan de Tawi-Tawi"
+   ],
+   "before_you_go": [
+    "Mapun is far out from Bongao; arrange the trip with the provincial tourism office and the municipality.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": "Early September, for Mapun Day.",
+   "do": [],
+   "images": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Mapun_Municipal_Hall.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Mapun_Municipal_Hall.jpg",
+     "author": "Edil Hairon",
+     "license": "CC BY 3.0",
+     "license_url": "https://creativecommons.org/licenses/by/3.0",
+     "width": 1262,
+     "height": 719,
+     "caption": "The municipal hall of Mapun"
+    }
+   ],
+   "slug": "mapun",
+   "name": "Mapun",
+   "kind": "island",
+   "area": "tawi-tawi",
+   "municipality": "Mapun",
+   "summary": "A remote island far out in the Sulu Sea, home of the Jama Mapun, with freshwater lakes and rocky cliffs.",
+   "detail": [
+    "Mapun lies in the Sulu Sea north-west of the rest of Tawi-Tawi. It holds freshwater lakes, among them Lake Ernestine, Lake Sapah and Lake Singuan, along with springs and rocky cliffs, and turtles are raised on the islets around it.",
+    "The Magellan-Elcano expedition passed here and described the people as Muslim and brave fighters. The National Historical Commission placed a Quincentennial marker on Isla Keana, Barangay Iruk-Iruk, in 2021.",
+    "Mapun Day, the town's foundation day, is on 5 September, after a week of contests in song, dance, oration and the Budjang Mapun pageant."
+   ],
+   "colors": [
+    "#1b6ca8",
+    "#5c9e6e",
+    "#e7dcc2"
+   ],
+   "sources": [
+    "https://www.philippinebeaches.org/?p=5362",
+    "https://www.philatlas.com/lists/physical/lakes-barmm.html",
+    "https://en.wikipedia.org/wiki/List_of_historical_markers_of_the_Philippines_in_Bangsamoro",
+    "https://en.wikipedia.org/wiki/Mapun"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "Mount Piapayungan",
+    "Mount Piagayungan",
+    "Blue Mountain",
+    "The Sleeping Lady"
+   ],
+   "before_you_go": [
+    "It is an active volcano: check the PHIVOLCS bulletin before going near it.",
+    "Arrange visits outside Marawi through the provincial tourism office and go with local companions.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "do": [
+    {
+     "title": "See it from Mount Matampor",
+     "detail": "The campsite on Mount Matampor in Balindong looks across Lake Lanao to Mount Ragang.",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Mt._Ragang.jpg/1280px-Mt._Ragang.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Mt._Ragang.jpg",
+     "author": "Kenneth Magbanua",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 11120,
+     "height": 2752,
+     "caption": "Mount Ragang in the background, over dry hill country",
+     "tone": [
+      200,
+      0.8
+     ]
+    }
+   ],
+   "slug": "mount-ragang",
+   "name": "Mount Ragang",
+   "kind": "mountain",
+   "area": "lanao-del-sur",
+   "municipality": "Southern Lanao del Sur",
+   "summary": "An active stratovolcano of 2,815 metres, the highest point of Lanao del Sur and the seventh highest mountain in the country.",
+   "detail": [
+    "Ragang rises to 2,815 metres in the south of Lanao del Sur and has a base about 32 kilometres across. It is part of the Central Mindanao Arc of volcanoes, and Wikipedia calls it the most active volcano on Mindanao.",
+    "The Philippine Institute of Volcanology and Seismology lists 8 eruptions, the last in July 1916; some eruptions credited to nearby Makaturing may have been Ragang's.",
+    "Its long profile is known locally as the Sleeping Lady, and it is the view from the campsite on Mount Matampor across Lake Lanao."
+   ],
+   "colors": [
+    "#3d5a4c",
+    "#7f9c8b",
+    "#c9d3cf"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mount_Ragang",
+    "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "Palaw a Magatoring"
+   ],
+   "before_you_go": [
+    "It is an active volcano: check the PHIVOLCS bulletin before going.",
+    "Arrange visits outside Marawi through the provincial tourism office and go with local companions.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "do": [],
+   "images": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/View_of_Mount_Makaturing_in_Macadar%2CLanao_del_Sur_with_Abdullah_Mamacotao_standing_in_position..jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:View_of_Mount_Makaturing_in_Macadar,Lanao_del_Sur_with_Abdullah_Mamacotao_standing_in_position..jpg",
+     "author": "Nayef Lao",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 960,
+     "height": 720,
+     "caption": "Mount Makaturing seen from Macadar, Lanao del Sur",
+     "tone": [
+      213,
+      0.44
+     ]
+    }
+   ],
+   "slug": "mount-makaturing",
+   "name": "Mount Makaturing",
+   "kind": "mountain",
+   "area": "lanao-del-sur",
+   "municipality": "Butig",
+   "summary": "An active stratovolcano of 1,940 metres in Butig, whose old eruptions are tied to the history of the Maguindanao Sultanate.",
+   "detail": [
+    "Makaturing stands 1,940 metres high in Butig, with a base about 29 kilometres across, and is one of the active volcanoes of the Central Mindanao Arc.",
+    "A travel writer on Cotabato history links an 18th-century eruption of Makaturing to the decline of the Maguindanao Sultanate. On 18 May 1947 a Philippine Air Force C-47 named Lili Marlene crashed on the mountain, killing General Edwin Andrews and 16 others, among them Senator Francisco Zulueta.",
+    "Bangsamoro officials visited Mount Makaturing from Barira in Maguindanao del Norte in 2022, while a road linking Barira to Butig was under construction."
+   ],
+   "colors": [
+    "#4b5d43",
+    "#8fa07a",
+    "#d7d9c8"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mount_Makaturing",
+    "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/",
+    "https://bangsamoro.gov.ph/news/latest-news/completion-of-public-market-in-barira-expected-to-spur-local-economy/"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [],
+   "before_you_go": [
+    "The climb takes 2 to 3 hours for experienced hikers.",
+    "Arrange visits outside Marawi through the provincial tourism office and go with local companions.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "do": [
+    {
+     "title": "Camp on the summit",
+     "detail": "The campsite looks over Lake Lanao to Mount Ragang and the Bukidnon ranges.",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/"
+    }
+   ],
+   "images": [],
+   "slug": "mount-matampor",
+   "name": "Mount Matampor",
+   "kind": "mountain",
+   "area": "lanao-del-sur",
+   "municipality": "Balindong",
+   "summary": "A peak of the Gurain Range in Balindong with a campsite over Lake Lanao and Mount Ragang.",
+   "detail": [
+    "Mount Matampor is in the Gurain Range at Barangay Bualan, Balindong. A photo from its campsite won the Lanao del Sur prize in the 2021 regional photo contest of the Ministry of Trade, Investments and Tourism.",
+    "From the campsite the view takes in Lake Lanao, Mount Ragang, and the Kitanglad Range and Mount Kalatungan in Bukidnon."
+   ],
+   "colors": [
+    "#3f6e4e",
+    "#9cb7a1",
+    "#e3e6dc"
+   ],
+   "sources": [
+    "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "Lake Pantao Raya"
+   ],
+   "before_you_go": [
+    "Arrange visits outside Marawi through the provincial tourism office and go with local companions.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "On the Iligan-Marawi road.",
+   "best_time": null,
+   "do": [],
+   "images": [],
+   "slug": "pantuwaraya-lake",
+   "name": "Pantuwaraya Lake National Park",
+   "kind": "lake",
+   "area": "lanao-del-sur",
+   "municipality": "Saguiaran",
+   "summary": "A small lake and national park of 20 hectares in Saguiaran, on the Iligan-Marawi road.",
+   "detail": [
+    "The park covers 20 hectares around Lake Pantao Raya in Barangay Pantao Raya, Saguiaran. It was declared a national park in 1965 under Republic Act No. 4190.",
+    "It lies in the Lake Lanao-Agus River watershed, which feeds the Agus hydroelectric plants. The Iligan-Marawi road that reaches it also passes Basak Lake, Laguna de Calaganan, Talao Lake and Agus Lake."
+   ],
+   "colors": [
+    "#2d6a73",
+    "#6fa58a",
+    "#dfe7df"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pantuwaraya_Lake_National_Park"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "King Faisal Masjid"
+   ],
+   "before_you_go": [
+    "Dress modestly. Wikivoyage notes that Muslim women in Marawi are expected to cover their hair, while non-Muslims are not required to.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "Inside the Mindanao State University main campus in Marawi.",
+   "best_time": null,
+   "do": [
+    {
+     "title": "Pair it with the Aga Khan Museum",
+     "detail": "The museum is on the same campus; a blogger found it closed on a Sunday visit.",
+     "source": "https://www.ivanhenares.com/search/label/Marawi"
+    }
+   ],
+   "images": [],
+   "slug": "king-faisal-mosque",
+   "name": "King Faisal Mosque",
+   "kind": "mosque",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "summary": "The mosque on the Mindanao State University campus, a gift of the King of Saudi Arabia, in green with painted petals on its dome.",
+   "detail": [
+    "The mosque was donated by the King of Saudi Arabia to Mindanao State University. It follows a green colour scheme, with metalwork on its minaret, painted petals on its dome and the name of Allah on top of its spires.",
+    "Visitors to the campus usually see it together with the Aga Khan Museum; a delegation from Aceh toured both in July 2025."
+   ],
+   "colors": [
+    "#2e8b57",
+    "#e8e3d3",
+    "#c8a951"
+   ],
+   "sources": [
+    "https://en.wikivoyage.org/wiki/Marawi",
+    "https://www.ivanhenares.com/search/label/Marawi",
+    "https://www.msumain.edu.ph/?p=52071"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [],
+   "before_you_go": [
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "Inside the Mindanao State University main campus in Marawi.",
+   "best_time": null,
+   "do": [],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Mindanao_State_University_Golf_Course_%28Marawi%2C_Lanao_Del_Sur%3B_10-14-2023%29.jpg/1280px-Mindanao_State_University_Golf_Course_%28Marawi%2C_Lanao_Del_Sur%3B_10-14-2023%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Mindanao_State_University_Golf_Course_(Marawi,_Lanao_Del_Sur;_10-14-2023).jpg",
+     "author": "Patrickroque01",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 3552,
+     "height": 2664,
+     "caption": "The Mindanao State University Golf Course, Marawi",
+     "tone": [
+      77,
+      0.27
+     ]
+    }
+   ],
+   "slug": "msu-golf-course",
+   "name": "MSU Golf Course",
+   "kind": "nature",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "summary": "A 9-hole course on the Mindanao State University campus that is also a viewpoint over Lake Lanao and Marawi.",
+   "detail": [
+    "The course lies on the rolling grounds of Mindanao State University. A heritage blogger calls it a great place to view Lake Lanao and the city.",
+    "The Marawi Resort Hotel is nearby on the campus."
+   ],
+   "colors": [
+    "#5f8f4e",
+    "#3d6f8f",
+    "#e6ead9"
+   ],
+   "sources": [
+    "https://en.wikivoyage.org/wiki/Marawi",
+    "https://www.ivanhenares.com/search/label/Marawi"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [],
+   "before_you_go": [
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "do": [],
+   "images": [],
+   "slug": "lanao-peoples-park",
+   "name": "Lanao People's Park",
+   "kind": "heritage",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "summary": "A park in Marawi on the site of Fort Marawi, where Amai Pakpak held off the Spanish, now marked by the National Historical Commission.",
+   "detail": [
+    "In 1992 President Corazon Aquino took 30,697 square metres out of the Camp Amai Pakpak military reservation, formerly Camp Keithley, and reserved it for the Lanao People's Park and Public Library.",
+    "Markers identify it with Fort Marawi, the kota of Amai Pakpak: in August 2024 the National Historical Commission installed 2 here, on the 1891 battle between Amai Pakpak and Governor-General Valeriano Weyler and on the defence of Marawi against Weyler and Ramón Blanco.",
+    "The Bangsamoro heritage commission plans further archaeological work at Kota Marawi, now Barangay Camp Amai Pakpak."
+   ],
+   "colors": [
+    "#3e6b48",
+    "#b88b4a",
+    "#ece5d3"
+   ],
+   "sources": [
+    "https://lawphil.net/executive/proc/proc1992/proc_922_1992.html",
+    "https://en.wikipedia.org/wiki/List_of_historical_markers_of_the_Philippines_in_Bangsamoro",
+    "https://bangsamoro.gov.ph/news/latest-news/archaeological-finds-in-lanaos-kota-kalawi-shed-new-light-on-bangsamoro-past/"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "KM 0, Marawi"
+   ],
+   "before_you_go": [
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "do": [],
+   "images": [],
+   "slug": "kilometer-zero-marawi",
+   "name": "Kilometer Zero of Mindanao",
+   "kind": "heritage",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "summary": "The marker in Marawi used as the reference point for distances on the roads of Mindanao.",
+   "detail": [
+    "Just as Luzon measures its roads from Rizal Park in Manila, Mindanao uses a Kilometer Zero marker in Marawi as the reference point for all its provinces.",
+    "The provincial tourism office lists Kilometer Zero among the attractions of Marawi."
+   ],
+   "colors": [
+    "#f2f2ee",
+    "#2d5d8a",
+    "#9a9a92"
+   ],
+   "sources": [
+    "https://penfires.com/where-are-the-kilometer-0s-in-the-philippines/",
+    "https://www.sunstar.com.ph/article/125205/lanao-del-sur-marks-high-tourist-visitors"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [],
+   "before_you_go": [
+    "Raft only with an organised operator, with helmets and life jackets.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "do": [],
+   "images": [],
+   "slug": "maradugao-river-wao",
+   "name": "Maradugao River",
+   "kind": "nature",
+   "area": "lanao-del-sur",
+   "municipality": "Wao",
+   "summary": "The river on Wao's border with Bukidnon, run as a whitewater rafting trip of about 3 hours.",
+   "detail": [
+    "The Maradugao marks the border between Wao and Bukidnon. A 2023 Philippine Information Agency feature describes whitewater rafting on it, on a stretch of up to 11 kilometres through about 7 barangays, taking about 3 hours.",
+    "The provincial tourism office has also named whitewater rafting in Wao among Lanao del Sur's draws."
+   ],
+   "colors": [
+    "#3a7d7b",
+    "#6b8f3e",
+    "#d9e4dc"
+   ],
+   "sources": [
+    "https://mirror.pia.gov.ph/features/2023/03/28/wow-wao-lanao-del-surs-newest-rising-tourist-attraction",
+    "https://en.wikipedia.org/wiki/Wao,_Lanao_del_Sur",
+    "https://www.sunstar.com.ph/article/125205/lanao-del-sur-marks-high-tourist-visitors"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [],
+   "before_you_go": [
+    "The site is on community land; visit with the municipality's permission.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "do": [],
+   "images": [],
+   "slug": "kota-kalawi",
+   "name": "Kota Kalawi",
+   "kind": "heritage",
+   "area": "lanao-del-sur",
+   "municipality": "Bacolod-Kalawi",
+   "summary": "A Maranao fort on Lake Lanao, the site of a 1903 clash with the US Army and of the first archaeological dig in BARMM.",
+   "detail": [
+    "Kota Kalawi is a Maranao defensive fort in Bacolod-Kalawi, built in response to American incursions. The Bangsamoro heritage commission records the Battle of Kota Kalawi of April 1903 here; nearby Kota Bacolod Grande was where the Sultan of Bacolod fought Captain John J. Pershing's forces that month.",
+    "Archaeologists from the University of the Philippines and Mindanao State University excavated the site, the first such dig in Lanao del Sur and BARMM, and presented their findings in May 2026. They traced occupation back to the Neolithic and found little evidence of the heavy fighting described in American reports."
+   ],
+   "colors": [
+    "#7b5e3b",
+    "#4f7a5a",
+    "#e6dcc8"
+   ],
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/?p=2418",
+    "https://bangsamoro.gov.ph/news/latest-news/archaeological-finds-in-lanaos-kota-kalawi-shed-new-light-on-bangsamoro-past/",
+    "https://alumni-dev.up.edu.ph/?p=19252"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "Kota Pandapatan"
+   ],
+   "before_you_go": [
+    "It is farmland; ask the municipality or barangay before walking in.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "do": [],
+   "images": [],
+   "slug": "padang-karbala",
+   "name": "Padang Karbala",
+   "kind": "memory",
+   "area": "lanao-del-sur",
+   "municipality": "Bayang",
+   "summary": "The field in Bayang where the Sultan of Bayang and his followers made their last stand against American forces in May 1902.",
+   "detail": [
+    "Padang Karbala, the site of Kota Pandapatan, is where the Sultan of Bayang and his followers fought American forces in May 1902. The Bangsamoro heritage commission validated it as a historical site in 2023.",
+    "The land is farmed today. Locals point to patches of cement they say belonged to Camp Vicars, the American camp."
+   ],
+   "colors": [
+    "#6d7f3f",
+    "#b39a62",
+    "#eee8d6"
+   ],
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/?p=2418"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [],
+   "before_you_go": [
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "do": [],
+   "images": [],
+   "slug": "jose-abad-santos-malabang",
+   "name": "José Abad Santos execution site",
+   "kind": "memory",
+   "area": "lanao-del-sur",
+   "municipality": "Malabang",
+   "summary": "The place in Malabang where Chief Justice José Abad Santos was executed in 1942 for refusing to take an oath to the Japanese.",
+   "detail": [
+    "José Abad Santos was executed in Malabang on 7 May 1942 for refusing to take the oath of allegiance to the Japanese forces.",
+    "The National Historical Commission of the Philippines marked the site on 6 March 2025."
+   ],
+   "colors": [
+    "#5a5a52",
+    "#a8a08a",
+    "#ecebe5"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_historical_markers_of_the_Philippines_in_Bangsamoro"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [],
+   "before_you_go": [
+    "It is a grave and a place of remembrance: dress modestly and ask before taking photos.",
+    "Go only with the heritage commission's or the municipality's arrangement.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "do": [],
+   "images": [],
+   "slug": "hashim-mimbantas-burial-site",
+   "name": "Hashim and Mimbantas burial site",
+   "kind": "memory",
+   "area": "lanao-del-sur",
+   "municipality": "Butig",
+   "summary": "The graves at Camp Bushra Somiorang in Butig of the MILF's founding chairman and its military chief, protected by Bangsamoro law.",
+   "detail": [
+    "Sheikh Salamat Hashim, founding chairman of the Moro Islamic Liberation Front, and Alim Abdul Aziz Mimbantas, its vice chair for military affairs, are buried at Camp Bushra Somiorang in Butig.",
+    "Bangsamoro Autonomy Act No. 60 recognises the site as a protected heritage and tourism site, managed by a board chaired by the Bangsamoro heritage commission."
+   ],
+   "colors": [
+    "#2f5d3a",
+    "#d8d2bf",
+    "#6b6b5e"
+   ],
+   "sources": [
+    "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-honors-moro-martyrs-through-construction-of-memorial-sites/"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "Bulubudtua Falls",
+    "Rainbow Falls"
+   ],
+   "before_you_go": [
+    "Go with the municipality's or the local organisers' arrangement; escorts were provided in 2019.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "About 1 hour by road from Cotabato City.",
+   "best_time": null,
+   "do": [
+    {
+     "title": "Swim under the falls",
+     "detail": "Visitors swim in the pools and stand under the falling water for a water massage.",
+     "source": "https://www.gmanetwork.com/news/lifestyle/content/689696/hidden-paradise-in-a-former-milf-camp/story/"
+    },
+    {
+     "title": "Cool off in the Ambal River",
+     "detail": "Swimming in the Ambal River nearby is free of charge.",
+     "source": "https://www.gmanetwork.com/news/lifestyle/content/689696/hidden-paradise-in-a-former-milf-camp/story/"
+    }
+   ],
+   "images": [],
+   "slug": "bubuludtua-falls",
+   "name": "Bubuludtua Falls",
+   "kind": "falls",
+   "area": "maguindanao-del-norte",
+   "municipality": "Barira",
+   "summary": "A swimming waterfall in Barira, about an hour from Cotabato City, on land that was once part of an MILF camp.",
+   "detail": [
+    "Part of the site used to be a camp of the Moro Islamic Liberation Front and has been turned into a summer spot with the help of several local groups. In 2019 GMA News reported a PHP 10 entrance fee, swimming in cool mountain water, and MILF members acting as security escorts for visitors.",
+    "The Ambal River nearby is free for swimming. The Bangsamoro tourism bureau named the development of Bubuludtua Falls among the region's potential tourism projects in 2023, and regional officials visited it in 2022."
+   ],
+   "colors": [
+    "#2f7f6f",
+    "#7cbf9e",
+    "#e8f0e8"
+   ],
+   "sources": [
+    "https://www.gmanetwork.com/news/lifestyle/content/689696/hidden-paradise-in-a-former-milf-camp/story/",
+    "https://bangsamoro.gov.ph/news/latest-news/promising-opportunities-await-tourism-investors-in-barmm/",
+    "https://bangsamoro.gov.ph/news/latest-news/completion-of-public-market-in-barira-expected-to-spur-local-economy/",
+    "https://www.philatlas.com/lists/physical/waterfalls-barmm.html"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [],
+   "before_you_go": [
+    "Dress modestly and ask before taking photos inside.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "do": [],
+   "images": [],
+   "slug": "masjid-alqudra",
+   "name": "Masjid Alqudra",
+   "kind": "mosque",
+   "area": "maguindanao-del-norte",
+   "municipality": "Sultan Kudarat",
+   "summary": "A mosque in Barangay Bulalo, Sultan Kudarat, picked for the Maguindanao prize in the region's 2021 tourism photo contest.",
+   "detail": [
+    "The Ministry of Trade, Investments and Tourism chose a photo of Masjid Alqudra in Bulalo, Sultan Kudarat, as the first-prize entry for Maguindanao in its 2021 photo contest, Bangsamoro: Revealing its Hidden Treasure.",
+    "The ministry describes it as a place of learning and moral guidance for the Maguindanaon community as well as of prayer."
+   ],
+   "colors": [
+    "#e7e2d4",
+    "#2c7a6b",
+    "#c4a35a"
+   ],
+   "sources": [
+    "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [],
+   "before_you_go": [
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "do": [],
+   "images": [],
+   "slug": "salipada-pendatun-tomb",
+   "name": "Tomb of Salipada K. Pendatun",
+   "kind": "heritage",
+   "area": "maguindanao-del-sur",
+   "municipality": "General Salipada K. Pendatun",
+   "summary": "The grave of the World War II guerrilla leader and lawmaker after whom his town is named, marked by the National Historical Commission.",
+   "detail": [
+    "Salipada K. Pendatun (1912 to 1985) set up the guerrilla movement in Cotabato during World War II and later represented Maguindanao in the Regular Batasang Pambansa from 1984 to 1985.",
+    "The National Historical Commission of the Philippines placed a marker at his tomb in 2012. A 2026 travel feature on Maguindanao del Sur names the tomb among the province's historical places."
+   ],
+   "colors": [
+    "#5c6b4a",
+    "#cfc6ad",
+    "#8a7350"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/List_of_historical_markers_of_the_Philippines_in_Bangsamoro",
+    "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [],
+   "before_you_go": [
+    "Dress modestly and ask before photographing the prayer hall.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "On the highway through Guindulungan.",
+   "best_time": null,
+   "do": [],
+   "images": [],
+   "slug": "masjidil-haron-rashid",
+   "name": "Masjidil Haron Rashid",
+   "kind": "mosque",
+   "area": "maguindanao-del-sur",
+   "municipality": "Guindulungan",
+   "summary": "A highway mosque in Guindulungan, opened in 1995, that sheltered MILF fighters during the war and is now painted inside with Qur'anic calligraphy.",
+   "detail": [
+    "The first call to prayer sounded here on 20 January 1995, in Barangay Tambunan II, then part of Talayan and now of Guindulungan. The mosque was built on the initiative of Maguindanao Vice Governor Datu Midpantao Antao Midtimbang Sr. by local volunteers, on land that had held a market and later military housing.",
+    "During the armed struggle it was a meeting place and supply point for MILF fighters. In 2024 a group of hafidz painted its interior walls by hand with Qur'anic surahs and Islamic sayings.",
+    "Today it stands along the highway as a landmark of the town and hosts Eid prayers, iftar gatherings and Qur'an reading contests."
+   ],
+   "colors": [
+    "#e8e1cf",
+    "#2d6e5a",
+    "#b8903f"
+   ],
+   "sources": [
+    "https://bangsamoro.gov.ph/news/feature-story/masjidil-haron-rashid-a-place-of-worship-a-refuge-for-bangsamoro-mujahideen/"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "Camp Abubakar"
+   ],
+   "before_you_go": [
+    "Visit with the municipality's or the heritage commission's arrangement.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "do": [],
+   "images": [],
+   "slug": "camp-abubakar-hashim-residence",
+   "name": "Salamat Hashim residence, Camp Abubakar",
+   "kind": "memory",
+   "area": "maguindanao-del-norte",
+   "municipality": "Barira",
+   "summary": "The 1990 house in the former MILF stronghold of Camp Abubakar where the movement's founder lived, the first site marked by the Bangsamoro heritage commission.",
+   "detail": [
+    "Camp Abubakar was once a stronghold of the Moro Islamic Liberation Front. The residence of its founder, Sheikh Salamat Hashim, built in 1990, served as a command centre during the armed struggle.",
+    "On 3 July 2025 the Bangsamoro Commission for the Preservation of Cultural Heritage unveiled its first historical marker here. Bangsamoro Autonomy Act No. 61 provides for a memorial marker bearing the names of the fallen and an eco-park in the camp, still to be built."
+   ],
+   "colors": [
+    "#4a6b3f",
+    "#d6cfb8",
+    "#7a5a3a"
+   ],
+   "sources": [
+    "https://bangsamoro.gov.ph/news/latest-news/barmms-first-historical-marker-honors-salamat-hashims-legacy/",
+    "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-honors-moro-martyrs-through-construction-of-memorial-sites/"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "Timaco Hill"
+   ],
+   "before_you_go": [
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "In Barangay Kalanganan, the same barangay as the Grand Mosque.",
+   "best_time": null,
+   "do": [
+    {
+     "title": "Take in the view from the bridge",
+     "detail": "The bridge on Timako Hill looks over Kalanganan II to the Grand Mosque.",
+     "source": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "title": "Swim at the beaches of Timaco",
+     "detail": "Wikivoyage suggests the beaches below the hill for a swim.",
+     "source": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    },
+    {
+     "title": "Eat mud crab from the fishponds",
+     "detail": "The fishponds of Kalanganan supply a wide variety of seafood, mud crabs above all.",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/never-get-lost-again-a-guide-to-cotabato-citys-barangays-and-landmarks/"
+    }
+   ],
+   "images": [],
+   "slug": "timako-hill",
+   "name": "Timako Hill",
+   "kind": "nature",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "summary": "A wooded coastal hill in Kalanganan, one of only 2 high points in Cotabato City, with monkeys, mangroves and a view of the Grand Mosque.",
+   "detail": [
+    "Timako Hill rises on the coast of Barangay Kalanganan, facing Illana Bay, and is home to monkeys and other wildlife. A MindaNews feature calls it one of only 2 elevated areas in the city where the trees are protected (from a search snippet).",
+    "Around it are fishponds known for mud crabs, and the Timaco Mangrove Swamp, where a 2022 study counted 15 mangrove species, 2 of them threatened, but far fewer trees than an earlier survey.",
+    "A bridge on the hill gives a wide view over Kalanganan with the Grand Mosque behind. A new seaport was being built at its foot in 2018."
+   ],
+   "colors": [
+    "#3f7a4d",
+    "#2f6f8f",
+    "#d9d3b8"
+   ],
+   "sources": [
+    "https://bangsamoro.gov.ph/news/latest-news/never-get-lost-again-a-guide-to-cotabato-citys-barangays-and-landmarks/",
+    "https://bangsamoro.gov.ph/lifestyle/kutawato-go-a-virtual-tour-experience-in-cotabato-city/",
+    "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/",
+    "https://en.wikivoyage.org/wiki/Cotabato_City",
+    "https://www.threatenedtaxa.org/index.php/JoTT/article/view/7826",
+    "https://mindanews.com/top-stories/2017/05/timako-hill-a-welcome-getaway-valerie-ann-lambo/"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "Cotabato City Hall"
+   ],
+   "before_you_go": [
+    "It is a working city hall; view it from outside or ask at the entrance.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "do": [],
+   "images": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Cotabato_City_Hall.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Cotabato_City_Hall.jpg",
+     "author": "George Parrilla",
+     "license": "CC BY 2.0",
+     "license_url": "https://creativecommons.org/licenses/by/2.0",
+     "width": 1005,
+     "height": 668,
+     "caption": "The People's Palace, Cotabato City Hall",
+     "tone": [
+      26,
+      0.53
+     ]
+    }
+   ],
+   "slug": "peoples-palace-cotabato",
+   "name": "People's Palace",
+   "kind": "heritage",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "summary": "Cotabato City's city hall, a building that mixes neo-classical and Muslim architecture.",
+   "detail": [
+    "The People's Palace houses all the offices of the city's executive government. Its architecture blends neo-classical and Muslim motifs.",
+    "It stands in Rosary Heights X, the upper town, and is one of the city landmarks featured in the Kutawato Go virtual tour app."
+   ],
+   "colors": [
+    "#efe9dc",
+    "#3b6e8f",
+    "#c2a15a"
+   ],
+   "sources": [
+    "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/",
+    "https://bangsamoro.gov.ph/lifestyle/kutawato-go-a-virtual-tour-experience-in-cotabato-city/",
+    "https://bangsamoro.gov.ph/news/latest-news/never-get-lost-again-a-guide-to-cotabato-citys-barangays-and-landmarks/"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "Old Cotabato City Hall",
+    "Cotabato City Museum"
+   ],
+   "before_you_go": [
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "On Dorotheo Street in downtown Cotabato City.",
+   "best_time": null,
+   "do": [
+    {
+     "title": "Start a city visit here",
+     "detail": "The building doubles as the city's visitor information centre.",
+     "source": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "title": "See the weaves and old photos",
+     "detail": "The displays include samples of the region's tribal cloths and archive photos of the city.",
+     "source": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Old_Cotabato_City_Hall_%28Dorotheo_Street%2C_Cotabato_City%3B_08-15-2023%29.jpg/1280px-Old_Cotabato_City_Hall_%28Dorotheo_Street%2C_Cotabato_City%3B_08-15-2023%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Old_Cotabato_City_Hall_(Dorotheo_Street,_Cotabato_City;_08-15-2023).jpg",
+     "author": "Patrickroque01",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 3552,
+     "height": 2664,
+     "caption": "The Old Cotabato City Hall on Dorotheo Street",
+     "tone": [
+      219,
+      0.32
+     ]
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Cotabato_City_Hall_Museum_Exhibit_4.jpg/1280px-Cotabato_City_Hall_Museum_Exhibit_4.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Cotabato_City_Hall_Museum_Exhibit_4.jpg",
+     "author": "MarkoDalisay",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 3120,
+     "height": 4160,
+     "caption": "An exhibit inside the city museum",
+     "tone": null
+    }
+   ],
+   "slug": "old-cotabato-city-hall",
+   "name": "Old Cotabato City Hall Museum",
+   "kind": "museum",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "summary": "The 1940s city hall by National Artist Juan Arellano, in Maguindanao-inspired style, now a small museum and visitor centre.",
+   "detail": [
+    "The old city hall was designed by Juan Arellano, National Artist for Architecture, and built in the 1940s with architecture drawn from Maguindanaon art.",
+    "It is now a small museum of the city's history and culture and the city's visitor information centre. On display are tribal weaves and archive photos of the city, including pictures taken after the 1976 earthquake."
+   ],
+   "colors": [
+    "#e9dcc0",
+    "#9b3b2f",
+    "#2f5f4f"
+   ],
+   "sources": [
+    "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/",
+    "https://en.wikivoyage.org/wiki/Cotabato_City",
+    "https://www.liquisearch.com/cotabato_city/tourist_attractions"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "Bai Walk"
+   ],
+   "before_you_go": [
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": "Late afternoon, for the sunset.",
+   "do": [
+    {
+     "title": "Walk at sunset",
+     "detail": "Wikivoyage suggests walking and sunset viewing at the Baywalk.",
+     "source": "https://en.wikivoyage.org/wiki/Cotabato_City"
+    }
+   ],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Cotabato_City_Baywalk_1.jpg/1280px-Cotabato_City_Baywalk_1.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Cotabato_City_Baywalk_1.jpg",
+     "author": "PeterParker22",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 4160,
+     "height": 3120,
+     "caption": "The Cotabato City Baywalk",
+     "tone": [
+      205,
+      0.44
+     ]
+    }
+   ],
+   "slug": "cotabato-baywalk",
+   "name": "Cotabato City Baywalk",
+   "kind": "nature",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "summary": "A waterfront walk near the Grand Mosque for watching the sunset over Illana Bay.",
+   "detail": [
+    "The Baywalk is a newer attraction near the Sultan Haji Hassanal Bolkiah Masjid, built for walking and watching the sunset.",
+    "It pairs naturally with a late-afternoon visit to the Grand Mosque and Timako Hill."
+   ],
+   "colors": [
+    "#e58e4a",
+    "#2b5f8a",
+    "#f3e3c3"
+   ],
+   "sources": [
+    "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/",
+    "https://en.wikivoyage.org/wiki/Cotabato_City"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [],
+   "before_you_go": [
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "Inside the Bangsamoro Government Center, Rosary Heights VII, Cotabato City.",
+   "best_time": "February, when the museum marks its anniversary and National Arts Month with exhibits and workshops.",
+   "do": [],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/SKCC_BGC.jpg/1280px-SKCC_BGC.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:SKCC_BGC.jpg",
+     "author": "Marwan Khan",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "width": 5184,
+     "height": 3456,
+     "caption": "The Shariff Kabunsuan Cultural Complex at the Bangsamoro Government Center",
+     "tone": null
+    }
+   ],
+   "slug": "bangsamoro-museum",
+   "name": "Bangsamoro Museum",
+   "kind": "museum",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "summary": "The regional museum in the Bangsamoro Government Center, run by the Bangsamoro heritage commission since 2019.",
+   "detail": [
+    "The Bangsamoro Museum opened in 2019 at the Bangsamoro Government Center, in the Shariff Kabunsuan Cultural Complex. It is run by the Bangsamoro Commission for the Preservation of Cultural Heritage and holds artefacts, artworks, oral histories and digitised records of the region.",
+    "It also hosts temporary exhibitions and workshops, such as the Landung art exhibit in February 2025 and a Teduray sayaf basket-weaving workshop on its 7th anniversary in February 2026."
+   ],
+   "colors": [
+    "#1f5e4a",
+    "#c8a24a",
+    "#efe8d8"
+   ],
+   "sources": [
+    "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-museum-marks-7th-anniversary-with-hands-on-cultural-workshops/",
+    "https://bangsamoro.gov.ph/news/latest-news/landung-exhibit-now-open-for-public-at-bangsamoro-museum/",
+    "https://bangsamoro.gov.ph/news/latest-news/digitized-records-at-bangsamoro-museum-reflect-barmms-history-identity/",
+    "https://en.wikivoyage.org/wiki/Cotabato_City"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [],
+   "before_you_go": [
+    "Reach it only with the municipality's or the provincial tourism office's arrangement; the provincial office has offered guides and escorts to visitors.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "do": [],
+   "images": [],
+   "slug": "cojangan-lagoon",
+   "name": "Cojangan",
+   "kind": "nature",
+   "area": "basilan",
+   "municipality": "Hadji Muhtamad",
+   "summary": "A calm, lagoon-like stretch of sea among the islets of Hadji Muhtamad, west of Basilan Island.",
+   "detail": [
+    "Hadji Muhtamad is a young municipality made up of the Pilas Islands and other islets west of Basilan Island. Cojangan, in Barangay Palahangan, takes its name from the Sinama word lowang, a hole: it has a hole in the middle that looks like a lagoon. The ministry praises the freshness of its sea water and the calm.",
+    "A photo of Cojangan took the Basilan first prize in the 2021 regional photo contest of the Ministry of Trade, Investments and Tourism."
+   ],
+   "colors": [
+    "#2aa3b8",
+    "#0f5e7a",
+    "#e9e3cf"
+   ],
+   "sources": [
+    "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/",
+    "https://en.wikipedia.org/wiki/Hadji_Muhtamad",
+    "https://transitpinas.com/basilan-travel-guide/"
+   ],
+   "eat": []
+  },
+  {
+   "also_known_as": [
+    "Subah Maluso"
+   ],
+   "before_you_go": [
+    "Arrange a visit through the provincial tourism office, which has given visitors free guides for the cost of fuel.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "Maluso has a roll-on roll-off port at Port Holland.",
+   "best_time": null,
+   "do": [],
+   "images": [],
+   "slug": "maluso-river",
+   "name": "Maluso River",
+   "kind": "nature",
+   "area": "basilan",
+   "municipality": "Maluso",
+   "summary": "The river of Maluso on south-western Basilan, noted as a source of fresh water for sailors in an 1843 sailing directory.",
+   "detail": [
+    "Maluso lies on the south-western side of Basilan and is known for its beaches, rivers and wide mangroves. Its river, locally called Subah Maluso, is tied to the town's beginnings and was noted as a source of fresh water by European sailors; it appears in James Horsburgh's India Directory of 1843.",
+    "In July 2022 the town launched Marayaw Maluso, a programme to make it a peace and eco-tourism hub. A list of the region's waterfalls places Garlayan Falls and Mahayahay Falls in Maluso."
+   ],
+   "colors": [
+    "#3c7a5c",
+    "#6aa3a8",
+    "#e4e0cf"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maluso",
+    "https://www.philatlas.com/lists/physical/waterfalls-barmm.html",
+    "https://en.wikivoyage.org/wiki/Basilan",
+    "https://transitpinas.com/basilan-travel-guide/"
    ],
    "eat": []
   }
