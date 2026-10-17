@@ -1,13 +1,15 @@
-import { ArrowUpRightIcon, CalendarBlankIcon, MapPinIcon, NavigationArrowIcon, WarningCircleIcon } from '@phosphor-icons/react/ssr'
+import { ArrowUpRightIcon, BowlFoodIcon, CalendarBlankIcon, CompassIcon, MapPinIcon, NavigationArrowIcon, WarningCircleIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { commonsThumb, cropStyle } from '../_lib/commons'
-import { AREA, KIND_ONE, nearby, type Place } from '../_lib/places'
+import { AREA, KIND_ONE, areaDishes, nearby, type Place } from '../_lib/places'
+import { PlaceGallery } from './place-gallery'
 import { PhotoCredit } from './discover-figure'
 import { PlaceCard } from './place-card'
 
 /* One place, in the full-screen dialog over the catalogue: its photograph
    across the top with the name over it, then what is there beside how to go
-   and what to know first, then its other photographs and what is nearby. */
+   and what to know first, then what to do and eat there, its photographs
+   (each opening full size) and what is nearby. */
 
 const label = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em]'
 const site = (s: string) => {
@@ -19,7 +21,8 @@ const site = (s: string) => {
 }
 
 export function PlaceView({ p }: { p: Place }) {
-	const [hero, ...more] = p.images
+	const hero = p.images[0]
+	const dishesHere = areaDishes(p.area)
 	const near = nearby(p)
 	return (
 		<>
@@ -102,17 +105,70 @@ export function PlaceView({ p }: { p: Place }) {
 				</aside>
 			</section>
 
-			{more.length ? (
-				<section aria-label='More photographs' className='bb-container pb-14'>
-					<ul className='grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
-						{more.map((img) => (
-							<li key={img.url} className='bb-frame relative aspect-[4/3] overflow-hidden bg-[#dfe9e6]'>
-								{/* eslint-disable-next-line @next/next/no-img-element */}
-								<img src={commonsThumb(img.url, 960)} alt={img.caption || p.name} loading='lazy' style={cropStyle(img, 4 / 3) ?? undefined} className='size-full object-cover' />
-								<PhotoCredit photo={{ credit: img.author, license: img.license, source: img.page }} />
-							</li>
-						))}
-					</ul>
+			{p.do?.length || dishesHere.length || p.eat?.length ? (
+				<section aria-labelledby='there' className='border-t border-[#dbe7e4] bg-white'>
+					<div className='bb-container py-14 lg:py-20'>
+						<h2 id='there' className='text-[26px] font-extrabold tracking-[-0.02em] text-[#13303a]'>
+							When you get there
+						</h2>
+						<div className='mt-8 grid gap-12 lg:grid-cols-2 lg:gap-20'>
+							{p.do?.length ? (
+								<div>
+									<p className={`${label} flex items-center gap-1.5 text-[#1f6f78]`}>
+										<CompassIcon size={14} weight='fill' aria-hidden='true' /> Things to do
+									</p>
+									<ol className='mt-4 space-y-5'>
+										{p.do.map((d, i) => (
+											<li key={d.title} className='flex gap-4'>
+												<span className='grid size-8 shrink-0 place-items-center rounded-full bg-[#e3efec] text-[13px] font-bold tabular-nums text-[#1f6f78]'>{i + 1}</span>
+												<span>
+													<span className='block text-[16px] font-bold leading-snug text-[#13303a]'>{d.title}</span>
+													<span className='mt-1 block text-[14.5px] leading-[1.6] text-[#4d6670]'>{d.detail}</span>
+												</span>
+											</li>
+										))}
+									</ol>
+								</div>
+							) : null}
+							{p.eat?.length || dishesHere.length ? (
+								<div>
+									<p className={`${label} flex items-center gap-1.5 text-[#9a6a16]`}>
+										<BowlFoodIcon size={14} weight='fill' aria-hidden='true' /> Food to try
+									</p>
+									<ul className='mt-4 grid gap-3 sm:grid-cols-2'>
+										{(p.eat ?? []).map((d) => (
+											<li key={d.title} className='bg-[#fbf6ea] p-4'>
+												<span className='block text-[15px] font-bold text-[#13303a]'>{d.title}</span>
+												<span className='mt-1 block text-[13.5px] leading-[1.55] text-[#4d6670]'>{d.detail}</span>
+											</li>
+										))}
+										{dishesHere.map((d) => (
+											<li key={d.slug} className='bg-[#fbf6ea] p-4'>
+												<span className='flex items-baseline justify-between gap-2'>
+													<span className='text-[15px] font-bold text-[#13303a]'>{d.name}</span>
+													<span className='font-mono text-[9.5px] font-semibold uppercase tracking-[0.12em] text-[#9a6a16]'>{d.tradition}</span>
+												</span>
+												<span className='mt-1 block text-[13.5px] leading-[1.55] text-[#4d6670]'>{d.summary}</span>
+												<span className='mt-2 block text-[12.5px] leading-[1.5] text-[#7a8c92]'>{d.whereToFind}</span>
+											</li>
+										))}
+									</ul>
+									<p className='mt-3 text-[12px] text-[#7a8c92]'>The region’s food is halal. Dishes are the travel guide’s, by the people whose kitchen they come from.</p>
+								</div>
+							) : null}
+						</div>
+					</div>
+				</section>
+			) : null}
+
+			{p.images.length > 1 ? (
+				<section aria-labelledby='gallery' className='bb-container py-14'>
+					<h2 id='gallery' className='text-[22px] font-extrabold tracking-[-0.02em] text-[#13303a]'>
+						Photographs <span className='text-[#8aa3a9]'>{p.images.length}</span>
+					</h2>
+					<div className='mt-5'>
+						<PlaceGallery images={p.images} name={p.name} />
+					</div>
 				</section>
 			) : null}
 

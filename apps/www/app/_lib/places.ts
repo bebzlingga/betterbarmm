@@ -1,4 +1,5 @@
 import data from '../../../../datasets/places/places.json'
+import { dishes, type Dish } from '@betterbarmm/travel-data'
 import type { CraftImage } from './crafts'
 
 /* Places worth the journey in BARMM: beaches, islands, mosques, lakes, falls,
@@ -22,6 +23,9 @@ export type Place = {
 	sources: string[]
 	images: CraftImage[]
 	from_guide?: boolean
+	/** What to do there, and anything to eat particular to it, each from a source ('guide' for the guide's own text). */
+	do?: { title: string; detail: string; source: string }[]
+	eat?: { title: string; detail: string; source: string }[]
 }
 
 export const KIND = {
@@ -74,3 +78,21 @@ export const byPhoto = (list: Place[]) => [...list].sort((a, b) => Number(!a.ima
 /** Others in the same area first, then the same kind, for "Nearby". */
 export const nearby = (p: Place, n = 4) =>
 	[...byPhoto(places.filter((x) => x.area === p.area && x !== p)), ...byPhoto(places.filter((x) => x.area !== p.area && x.kind === p.kind))].slice(0, n)
+
+/** Whose cooking a visitor meets in each area: the guide's dishes are filed by tradition, not by place. */
+const KITCHENS: Record<string, Dish['tradition'][]> = {
+	'lanao-del-sur': ['Maranao'],
+	'maguindanao-del-norte': ['Maguindanaon', 'Iranun'],
+	'maguindanao-del-sur': ['Maguindanaon'],
+	'cotabato-city': ['Maguindanaon'],
+	'special-geographic-area': ['Maguindanaon'],
+	'tawi-tawi': ['Sama', 'Tausug'],
+	basilan: ['Yakan', 'Tausug'],
+}
+
+/** The area's dishes from the travel guide, the ones nobody should miss first. */
+export const areaDishes = (area: string, n = 4) =>
+	dishes
+		.filter((d) => (KITCHENS[area] ?? []).includes(d.tradition))
+		.sort((a, b) => Number(!a.essential) - Number(!b.essential))
+		.slice(0, n)
