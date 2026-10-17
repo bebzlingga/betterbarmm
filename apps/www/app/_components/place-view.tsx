@@ -183,13 +183,13 @@ export function PlaceView({ p }: { p: Place }) {
 										<span className='mt-0.5 block text-[14.5px] font-bold leading-snug text-[#13303a]'>{st.name}</span>
 										<span className='mt-0.5 line-clamp-2 block text-[12.5px] leading-[1.5] text-[#4d6670]'>{st.note}</span>
 										<a href={st.source} target='_blank' rel='noreferrer' className='mt-1 inline-flex items-center gap-0.5 text-[11.5px] text-[#7a8c92] hover:text-[#1f6f78]'>
-											{st.accredited ? 'Accredited' : 'Source'}, {st.as_of.slice(0, 4)} <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
+											{st.accredited ? 'Accredited' : 'Named in'} {st.as_of.slice(0, 4)} <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
 										</a>
 									</span>
 								</li>
 							))}
 						</ul>
-					<p className='mt-3 text-[12px] text-[#7a8c92]'>No prices here: rates change quickly. Confirm and book directly before you go.</p>
+					<p className='mt-3 text-[12px] text-[#7a8c92]'>Each is named in an official or dated source; none could be checked against an accreditation list. No prices: rates change quickly, so confirm and book directly before you go.</p>
 				</section>
 			) : null}
 
