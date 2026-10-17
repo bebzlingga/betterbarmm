@@ -17,7 +17,7 @@ const label = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em]
 const source = 'inline-flex items-center gap-0.5 text-[11.5px] text-[#8a6d5c] hover:text-[#5a3424]'
 
 export function CraftView({ c }: { c: Craft }) {
-	const others = related(c)
+	const others = related(c, 4)
 	const next = others[0]!
 	const made = [c.towns.join(', '), PROVINCE[c.province]].filter(Boolean).join(', ')
 
@@ -172,7 +172,7 @@ export function CraftView({ c }: { c: Craft }) {
 		<section className='border-t border-[#e4d8cb] bg-[#efe6dc]'>
 			<div className='mx-auto max-w-[84rem] px-4 py-20 sm:px-6 lg:py-28'>
 				<h2 className={`${serif} text-[22px] font-bold`}>More from the region</h2>
-				<ul className='mt-6 grid gap-5 sm:grid-cols-3'>
+				<ul className='mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4'>
 					{others.map((o) => (
 						<li key={o.slug}>
 							<CraftCard c={o} replace plain />
