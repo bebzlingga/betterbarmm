@@ -10,8 +10,8 @@ import { useEffect, useRef } from 'react'
    does a click on the dimmed index around it. Closing returns to `home`, the
    index that stays mounted underneath, scrolled where the reader left it.
 
-   `frame`: 'full' fills the window; 'panel' is a centred panel, 80% of the
-   window from a tablet up and the whole screen on a phone. The panel holds
+   `frame`: 'full' fills the window; 'panel' is a centred panel, 90% wide and 80% tall from a tablet
+   up, and the whole screen on a phone. The panel holds
    its own scroll, so the close button stays in its corner. */
 
 export function OverlayDialog({
@@ -65,7 +65,7 @@ export function OverlayDialog({
 	const size =
 		frame === 'full'
 			? 'h-dvh! w-full! max-h-none! max-w-none!'
-			: 'h-dvh! w-full! max-h-none! max-w-none! md:h-[88dvh]! md:w-[80vw]! md:shadow-[0_40px_120px_-30px_rgba(0,0,0,0.6)]'
+			: 'h-dvh! w-full! max-h-none! max-w-none! md:h-[80dvh]! md:w-[90vw]! md:shadow-[0_40px_120px_-30px_rgba(0,0,0,0.6)]'
 
 	return (
 		<dialog

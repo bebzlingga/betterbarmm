@@ -69,7 +69,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 
 				{/* Two columns from a laptop up: who heads it and how to reach it (35%), beside the right (65%):
 				    how it is organized, its offices in the provinces and its past heads. */}
-				<div className='mt-8 grid gap-12 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:gap-16'>
+				<div className='mt-8 grid gap-12 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:gap-24'>
 					<aside className='space-y-10'>
 					<div>
 						<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Head of office</p>
