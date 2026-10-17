@@ -3208,7 +3208,11 @@
      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
      "width": 960,
      "height": 720,
-     "caption": "White sand and turquoise water at Sangay Siapo"
+     "caption": "White sand and turquoise water at Sangay Siapo",
+     "tone": [
+      50,
+      0.42
+     ]
     }
    ],
    "slug": "sangay-siapo-island",
@@ -3601,7 +3605,11 @@
      "license_url": "https://creativecommons.org/licenses/by/3.0",
      "width": 1262,
      "height": 719,
-     "caption": "The municipal hall of Mapun"
+     "caption": "The municipal hall of Mapun",
+     "tone": [
+      206,
+      0.64
+     ]
     }
    ],
    "slug": "mapun",
@@ -4735,6 +4743,1195 @@
     "https://en.wikivoyage.org/wiki/Basilan",
     "https://transitpinas.com/basilan-travel-guide/"
    ],
+   "eat": []
+  },
+  {
+   "slug": "kilantan-spring",
+   "name": "Kilantan Spring",
+   "also_known_as": [],
+   "kind": "nature",
+   "area": "maguindanao-del-sur",
+   "municipality": "Ampatuan",
+   "summary": "A cool spring in Ampatuan, on ground the Teduray hold as a sacred hunting ground.",
+   "detail": [
+    "Kilantan Spring is one of the tourism sites the Maguindanao del Sur provincial government lists for the town of Ampatuan. The name comes from klan-taen, a word meaning chaos, drought, the dry season or the absence of water.",
+    "The province describes the place as a sacred hunting ground of the Teduray, the native inhabitants of the area. A 2026 Manila Times column on the province's lesser-known places notes the spring's cool water and the greenery around it."
+   ],
+   "before_you_go": [
+    "The spring sits on ground the Teduray consider sacred; ask community leaders before visiting and follow their guidance.",
+    "No source gives directions, fees or opening hours; arrange the visit through the Ampatuan municipal hall or the provincial tourism office.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "colors": [
+    "#2f6b4f",
+    "#8fc1b5",
+    "#c9b48a"
+   ],
+   "sources": [
+    "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
+    "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [
+    {
+     "title": "Cool off in the spring",
+     "detail": "Its cool water and the greenery around it make it a quiet place to spend time outdoors.",
+     "source": "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia"
+    }
+   ],
+   "eat": []
+  },
+  {
+   "slug": "bual-spring",
+   "name": "Bual Spring",
+   "also_known_as": [
+    "Seven Pools"
+   ],
+   "kind": "nature",
+   "area": "maguindanao-del-sur",
+   "municipality": "Datu Abdullah Sangki",
+   "summary": "A spring of clear, cold pools in Sitio Bisang, kept by the Indigenous community around it.",
+   "detail": [
+    "Bual Spring is in Sitio Bisang, Barangay Talisawa, Datu Abdullah Sangki. The provincial government says the spring, locally called bual, is maintained by the Indigenous community living around it and has long been the source of drinking water for the residents of Sitio Bisang.",
+    "Its cold, clear water draws small groups from nearby villages, mostly on weekends. The site is now promoted as Seven Pools, an eco-tourism spot, and the province says development there is meant to make room for visitors without spoiling the natural pools. A 2026 Manila Times column describes its naturally formed pools of clear freshwater."
+   ],
+   "before_you_go": [
+    "The spring is still the drinking-water source of Sitio Bisang; do not use soap or shampoo and carry your rubbish out.",
+    "The site is looked after by the local Indigenous community; ask permission on arrival.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": "Weekends are when local visitors come, so go on a weekday for a quieter visit.",
+   "colors": [
+    "#3f7f8c",
+    "#a7d3d0",
+    "#6b8e4e"
+   ],
+   "sources": [
+    "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
+    "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [
+    {
+     "title": "Swim in the natural pools",
+     "detail": "The spring forms a series of naturally formed pools of cold, clear water.",
+     "source": "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia"
+    }
+   ],
+   "eat": []
+  },
+  {
+   "slug": "sa-wa-river",
+   "name": "Sa-Wa River",
+   "also_known_as": [
+    "Sawa River"
+   ],
+   "kind": "nature",
+   "area": "maguindanao-del-sur",
+   "municipality": "Datu Hoffer Ampatuan",
+   "summary": "A clear river pool about 7 feet deep in Sitio Tangkapa, Datu Hoffer Ampatuan.",
+   "detail": [
+    "The Sa-Wa River flows through Sitio Tangkapa in Barangay Talibadok, Datu Hoffer Ampatuan. Where it runs over natural ground it forms a small pool of more or less 7 feet deep, which the provincial government lists among the town's tourism sites for anyone wanting a dip in clear water.",
+    "The provincial tourism list groups Datu Hoffer under the heading Mini Switzerland of MDS. The town is also home to Teduray craft communities; in Barangay Limpongo, women weave rattan and bamboo goods for sale."
+   ],
+   "before_you_go": [
+    "The pool is more or less 7 feet deep; weaker swimmers should stay at the edge.",
+    "Arrange a guide through the Datu Hoffer Ampatuan municipal hall; no source gives directions or fees.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "colors": [
+    "#2d6a7a",
+    "#9ccfc9",
+    "#4f7a3a"
+   ],
+   "sources": [
+    "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
+    "https://www.nomadicexperiences.com/2026/01/a-glimpse-of-mindanaoan-culture-in.html",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [
+    {
+     "title": "Take a dip in the river pool",
+     "detail": "The river forms a small natural pool of more or less 7 feet deep with clear water.",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf"
+    }
+   ],
+   "eat": []
+  },
+  {
+   "slug": "limpongo-teduray-crafts",
+   "name": "Limpongo Teduray crafts",
+   "also_known_as": [
+    "Limpongo Women and Youth Association"
+   ],
+   "kind": "heritage",
+   "area": "maguindanao-del-sur",
+   "municipality": "Datu Hoffer Ampatuan",
+   "summary": "A Teduray village in Datu Hoffer Ampatuan where women make and sell rattan and bamboo goods.",
+   "detail": [
+    "In Barangay Limpongo, Datu Hoffer Ampatuan, the Teduray welcome visitors with a display of rattan and bamboo crafts. The women of the Limpongo Women and Youth Association keep up techniques handed down through generations, and the enterprise gives them both an income and a way of keeping their heritage going.",
+    "The Teduray live between Maguindanao del Norte and Maguindanao del Sur. Their name is explained as coming from tew, meaning people, and duray, a tiny bamboo hook that stands for their skill at fishing. The provincial government also lists the Monom handbag, woven from onomen, as a Datu Hoffer handicraft."
+   ],
+   "before_you_go": [
+    "The Tourism Promotions Board has picked communities in the province for community-based tourism; arrange a visit through the provincial tourism office.",
+    "Ask before photographing people at work, and buy from the makers directly.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "colors": [
+    "#8a5a2b",
+    "#d8b36a",
+    "#4b6b3a"
+   ],
+   "sources": [
+    "https://www.nomadicexperiences.com/2026/01/a-glimpse-of-mindanaoan-culture-in.html",
+    "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdshandicrafts.pdf",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [
+    {
+     "title": "Buy rattan and bamboo crafts from the weavers",
+     "detail": "The Limpongo Women and Youth Association displays and sells rattan and bamboo goods made with inherited techniques.",
+     "source": "https://www.nomadicexperiences.com/2026/01/a-glimpse-of-mindanaoan-culture-in.html"
+    }
+   ],
+   "eat": []
+  },
+  {
+   "slug": "tamburi-falls",
+   "name": "Tamburi Falls",
+   "also_known_as": [],
+   "kind": "falls",
+   "area": "maguindanao-del-sur",
+   "municipality": "South Upi",
+   "summary": "A waterfall over layered rock into a cold pool in South Upi.",
+   "detail": [
+    "Tamburi Falls is one of 2 waterfalls the Maguindanao del Sur provincial government lists for South Upi, alongside Kuhan Falls. Its water drops over the edge of a steep mountain slope into a pool below, and the falls are known for an unusual layered rock formation.",
+    "The province says residents of South Upi come for the clean, cold water. South Upi is Teduray country, where the Monom weaving and craft tradition is practised."
+   ],
+   "before_you_go": [
+    "Go with a local guide arranged in South Upi; no source gives a route or trail conditions.",
+    "Rocks around falls are slippery; take care at the pool edge.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "colors": [
+    "#355e3b",
+    "#9fc5c0",
+    "#7a6a55"
+   ],
+   "sources": [
+    "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
+    "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [
+    {
+     "title": "Swim in the pool below the falls",
+     "detail": "The water falls over a steep rock edge into a pool, and locals come for the clean, cold water.",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf"
+    }
+   ],
+   "eat": []
+  },
+  {
+   "slug": "mamasapano-miracle-mosque",
+   "name": "Miracle Mosque",
+   "also_known_as": [
+    "Miracle Mosque of Mamasapano"
+   ],
+   "kind": "mosque",
+   "area": "maguindanao-del-sur",
+   "municipality": "Mamasapano",
+   "summary": "A mosque in Mamasapano that the community dates to 1444, known for a mimbar said to have survived a flood.",
+   "detail": [
+    "The Maguindanao del Sur provincial government lists the Miracle Mosque among the tourism sites of Mamasapano. The community believes the mosque has stood since the 14th century, and gives a date of 5 March 1444.",
+    "Its name comes from a story told in the town. In 1951 a heavy flash flood swept through the area, but the mimbar, the pulpit inside the mosque, was not carried away. 3 ustadz of the community, Hadji Abdulmanan Matangkoy, Hadji Pawa Mulidis and Hadji Akmad Manalasal, tell of several more wonders connected with the mimbar."
+   ],
+   "before_you_go": [
+    "Dress modestly: cover shoulders and knees, and women should bring a headscarf. Remove shoes before entering the prayer hall and avoid prayer times, especially Friday midday prayer.",
+    "This is a working mosque; ask the caretaker or imam before entering or taking photographs.",
+    "Check local conditions with the Mamasapano municipal hall before going.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "colors": [
+    "#2e6b45",
+    "#e8e2cf",
+    "#b08a3e"
+   ],
+   "sources": [
+    "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [],
+   "eat": []
+  },
+  {
+   "slug": "tomb-of-datu-udtog-matalam",
+   "name": "Tomb of Datu Udtog Matalam and the Old Mosque",
+   "also_known_as": [
+    "Old Mosque of Pagalungan"
+   ],
+   "kind": "heritage",
+   "area": "maguindanao-del-sur",
+   "municipality": "Pagalungan",
+   "summary": "The tomb of a former governor of the old Cotabato province, beside an old mosque in Pagalungan.",
+   "detail": [
+    "The tomb of Datu Udtog Matalam Sr., the first elected governor of the old Cotabato province, stands beside an old mosque in Pagalungan. The provincial government describes the 2 structures, side by side, as illustrating the old history of Central Mindanao, and credits Matalam with building harmonious relations between Muslims and Christian settlers in the region.",
+    "Matalam is also remembered for the manifesto he issued on 1 May 1968, 2 months after the Jabidah massacre, declaring the Muslim Independence Movement, which sought an independent state of Mindanao, Sulu and Palawan. Pagalungan itself was the capital of the old Cotabato province from 1966 to 1973.",
+    "Other landmarks from his time are nearby. The old NAWASA water tank, built while he was governor and declared a historical landmark by the town, is now home to thousands of bats. The old provincial jail is used as an evacuation centre, and the red house of the old Rural Bank of Greater Cotabato has been kept as a heritage site."
+   ],
+   "before_you_go": [
+    "Dress modestly: cover shoulders and knees, and women should bring a headscarf. Remove shoes before entering the prayer hall and avoid prayer times, especially Friday midday prayer.",
+    "Ask the family or the caretaker before entering the tomb area.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "colors": [
+    "#7a2e2a",
+    "#d9c7a7",
+    "#3f5f45"
+   ],
+   "sources": [
+    "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
+    "https://en.wikipedia.org/wiki/Pagalungan",
+    "https://en.wikipedia.org/wiki/Muslim_Independence_Movement",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [
+    {
+     "title": "See the bats at the old NAWASA tank",
+     "detail": "The old water reservoir, built in Matalam's time and declared a municipal historical landmark, shelters thousands of bats.",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf"
+    },
+    {
+     "title": "Look at the old Rural Bank red house",
+     "detail": "The former Rural Bank of Greater Cotabato building is kept as one of the town's heritage sites.",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf"
+    }
+   ],
+   "eat": []
+  },
+  {
+   "slug": "ampatuan-massacre-memorial",
+   "name": "Ampatuan massacre memorial",
+   "also_known_as": [
+    "Maguindanao massacre site",
+    "Sitio Masalay"
+   ],
+   "kind": "memory",
+   "area": "maguindanao-del-sur",
+   "municipality": "Ampatuan",
+   "summary": "The site in Sitio Masalay where 58 people, many of them journalists, were killed on 23 November 2009.",
+   "detail": [
+    "On the morning of 23 November 2009, 58 people on their way to file a certificate of candidacy for governor for Esmael Mangudadatu, then vice-mayor of Buluan, were stopped in Ampatuan, kidnapped and killed at Sitio Masalay, Barangay Salman. The dead included Mangudadatu's wife and 2 sisters, lawyers, aides, passing motorists and journalists; Davao Today counts 32 journalists and Wikipedia at least 34. The Committee to Protect Journalists called it the single deadliest event for journalists since it began keeping records in 1992.",
+    "A memorial marker stands at the site with tombstones bearing the victims' names; Davao Today counted at least 38 tombstones in 2017. A separate monument was built nearby in remembrance of the victims.",
+    "Each year around 23 November, families and colleagues of the victims come to the site for a mass, light candles and lay flowers where the bodies were found."
+   ],
+   "before_you_go": [
+    "This is a grave site; behave as you would at a cemetery and do not walk on the tombs.",
+    "Journalists visiting for the anniversaries have been escorted by the military and police; do not go on your own, and coordinate with local authorities first.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": "Families and media groups gather at the site for the anniversary around 23 November.",
+   "colors": [
+    "#4a4a4a",
+    "#c9c3b5",
+    "#8a1f1f"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maguindanao_massacre",
+    "https://davaotoday.com/human-rights/in-photos-ampatuan-massacre-eight-years-later/",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [
+    {
+     "title": "Join the anniversary commemoration",
+     "detail": "Families and colleagues hold a mass at the site around 23 November and light candles at the memorial.",
+     "source": "https://davaotoday.com/human-rights/in-photos-ampatuan-massacre-eight-years-later/"
+    }
+   ],
+   "eat": []
+  },
+  {
+   "slug": "old-maguindanao-provincial-capitol",
+   "name": "Old Maguindanao Provincial Capitol",
+   "also_known_as": [
+    "Maguindanao Provincial Capitol (Shariff Aguak)"
+   ],
+   "kind": "heritage",
+   "area": "maguindanao-del-sur",
+   "municipality": "Shariff Aguak",
+   "summary": "The P218-million capitol the Ampatuans built in Shariff Aguak, about 400 m from their mansions.",
+   "detail": [
+    "Shariff Aguak was the first capital of Maguindanao, but the capitol moved to Sultan Kudarat after the 1986 People Power Revolution. Andal Ampatuan Sr., elected governor in 2001, brought the offices back to Shariff Aguak and then built a larger, 3-storey capitol, occupied before the 2007 election and inaugurated in March 2009 in the presence of President Gloria Macapagal Arroyo. It cost P218 million, P50 million of it from her social funds, and stands about 400 m from the mansions of the Ampatuan clan; the governor's wing even has a jacuzzi.",
+    "After the Maguindanao massacre of November 2009 the building was used as a warehouse. Governor Esmael Mangudadatu, elected in 2010, governed from his hometown of Buluan instead; his successor Mariam Mangudadatu moved back in 2019, and in July 2020 it served as a COVID-19 isolation facility. When Maguindanao was split in 2022, Buluan became the capital of Maguindanao del Sur.",
+    "A photograph released by the Philippine Army's 601st Infantry Brigade describes the old capitol as now housing one of the army's infantry brigades."
+   ],
+   "before_you_go": [
+    "The building is described as an army brigade headquarters; ask permission before approaching or photographing it.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "colors": [
+    "#c98b8b",
+    "#e8dcc8",
+    "#4a5a3a"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Maguindanao_Provincial_Capitol_(Shariff_Aguak)",
+    "https://commons.wikimedia.org/wiki/File:Maguindanao_Old_Provincial_Capitol,_Shariff_Aguak,_Maguindanao.jpg",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Maguindanao_Old_Provincial_Capitol%2C_Shariff_Aguak%2C_Maguindanao.jpg/1280px-Maguindanao_Old_Provincial_Capitol%2C_Shariff_Aguak%2C_Maguindanao.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Maguindanao_Old_Provincial_Capitol,_Shariff_Aguak,_Maguindanao.jpg",
+     "author": "601st Infantry Brigade, Philippine Army",
+     "license": "Public domain",
+     "license_url": null,
+     "width": 1944,
+     "height": 1296,
+     "caption": "Soldiers running on the drive in front of the pink-roofed old provincial capitol in Shariff Aguak",
+     "tone": null
+    }
+   ],
+   "do": [],
+   "eat": []
+  },
+  {
+   "slug": "mado-hot-spring-national-park",
+   "name": "Mado Hot Spring National Park",
+   "also_known_as": [
+    "Mado Hot Spring"
+   ],
+   "kind": "nature",
+   "area": "maguindanao-del-norte",
+   "municipality": "Datu Odin Sinsuat",
+   "summary": "A 48-hectare national park around a hot spring near Awang Airport, set aside in 1939.",
+   "detail": [
+    "Mado Hot Spring National Park is a protected area in Barangay Awang, Datu Odin Sinsuat, near Awang Airport. It covers 48 hectares around a medicinal hot spring, with a natural swimming pool and a health resort, and is governed by the Department of Environment and Natural Resources.",
+    "President Manuel L. Quezon declared it a national park on 25 September 1939 by Proclamation No. 456, reserving the land, then in the municipal district of Awang in the old Cotabato province, 'for the benefit and enjoyment of the people of the Philippines'. The proclamation placed it under the Bureau of Forestry and marked its corners with trees such as balobo, white lauan and apitong."
+   ],
+   "before_you_go": [
+    "No current source describes the state of the pool or resort; ask in Datu Odin Sinsuat before making the trip.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "In Barangay Awang, Datu Odin Sinsuat, near Awang Airport.",
+   "best_time": null,
+   "colors": [
+    "#7a8c5a",
+    "#d9cfae",
+    "#4a7a8c"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mado_Hot_Spring_National_Park",
+    "https://lawphil.net/executive/proc/proc1939/proc_456_1939.html",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [
+    {
+     "title": "Soak in the hot spring",
+     "detail": "The park contains a medicinal hot spring with a natural swimming pool.",
+     "source": "https://en.wikipedia.org/wiki/Mado_Hot_Spring_National_Park"
+    }
+   ],
+   "eat": []
+  },
+  {
+   "slug": "masjid-al-nasser-abpi",
+   "name": "Masjid Al-Nasser Abpi",
+   "also_known_as": [
+    "The White Mosque"
+   ],
+   "kind": "mosque",
+   "area": "maguindanao-del-norte",
+   "municipality": "Datu Odin Sinsuat",
+   "summary": "A white-and-gold mosque in Datu Odin Sinsuat, built in 2016, that holds more than 10,000 worshippers.",
+   "detail": [
+    "Masjid Al-Nasser Abpi, known as the White Mosque, was built in 2016 by the Abpi family, whose roots are in Datu Piang, Maguindanao del Sur. It stands on a 20,000-square-metre property and can hold more than 10,000 worshippers. The idea came out of a conversation among the Abpi siblings, and the mosque is named after one of them, Al-Nasser Abpi; it began as a small mosque and was later enlarged.",
+    "The design is minimalist, white and gold inside and out, and the caretaker says it was inspired by the mosque in Madinah. Mashrabiya and glass windows let in air while keeping out the sun. There are small rooms for worshippers staying overnight for i'tikaf, and the mosque is lent free of charge for markaz graduations and nikah weddings.",
+    "A travel writer who toured the province with its tourism office notes that the mosque stands out especially against the dusk sky."
+   ],
+   "before_you_go": [
+    "Dress modestly: cover shoulders and knees, and women should bring a headscarf. Remove shoes before entering the prayer hall and avoid prayer times, especially Friday midday prayer.",
+    "Parking is at the back of the mosque; it fills up on Eid'l Fitr and Eid'l Adha.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": "Dusk, when the white mosque stands out against the sky.",
+   "colors": [
+    "#f4f1ea",
+    "#c9a646",
+    "#5b7f95"
+   ],
+   "sources": [
+    "https://bangsamoro.gov.ph/news/latest-news/masjid-al-nasser-abpi-a-gift-to-the-community-a-house-in-paradise/",
+    "https://www.nomadicexperiences.com/2026/01/a-glimpse-of-mindanaoan-culture-in.html",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [
+    {
+     "title": "See the mosque at dusk",
+     "detail": "The white mosque stands out against the evening sky.",
+     "source": "https://www.nomadicexperiences.com/2026/01/a-glimpse-of-mindanaoan-culture-in.html"
+    },
+    {
+     "title": "Look at the mihrab and mashrabiya windows",
+     "detail": "Inside are the mihrab facing Makkah and mashrabiya and glass windows that control sunlight and air.",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/masjid-al-nasser-abpi-a-gift-to-the-community-a-house-in-paradise/"
+    }
+   ],
+   "eat": []
+  },
+  {
+   "slug": "ranao-pilayan-falls",
+   "name": "Ranao Pilayan Falls",
+   "also_known_as": [],
+   "kind": "falls",
+   "area": "maguindanao-del-norte",
+   "municipality": "Upi",
+   "summary": "A modest waterfall in the Upi uplands, 10 minutes' walk from the trailhead.",
+   "detail": [
+    "Ranao Pilayan Falls is one of several waterfalls on the slopes of Upi, which PhilAtlas lists with Kiga, Sapala and Tabuan Falls in the same municipality. Ranao Pilayan is also the name of a barangay of Upi.",
+    "A network of gentle trails leads to the falls, which a travel writer touring the province with its tourism office described as modest but striking. The cascade is a brisk 10-minute walk from the trailhead."
+   ],
+   "before_you_go": [
+    "Go with a local guide arranged through the provincial tourism office.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "A brisk 10-minute walk from the trailhead.",
+   "best_time": null,
+   "colors": [
+    "#2f5d3a",
+    "#a9cbb7",
+    "#6e5b45"
+   ],
+   "sources": [
+    "https://www.nomadicexperiences.com/2026/01/a-glimpse-of-mindanaoan-culture-in.html",
+    "https://www.philatlas.com/lists/physical/waterfalls-barmm.html",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [
+    {
+     "title": "Walk the short trail to the falls",
+     "detail": "The cascade is a brisk 10-minute walk from the trailhead.",
+     "source": "https://www.nomadicexperiences.com/2026/01/a-glimpse-of-mindanaoan-culture-in.html"
+    }
+   ],
+   "eat": []
+  },
+  {
+   "slug": "forever-tulip-garden",
+   "name": "Forever Tulip Garden",
+   "also_known_as": [
+    "Lamitan Tulip Garden"
+   ],
+   "kind": "nature",
+   "area": "basilan",
+   "municipality": "Lamitan",
+   "summary": "A garden in Lamitan of 30,000 tulips cut from recycled plastic bottles.",
+   "detail": [
+    "The city government of Lamitan opened the Forever Tulip Garden on 23 September 2019 at Sitio Panansangan, Barangay Ubit. Its 30,000 tulips were cut from 26,877 plastic bottles gathered from 45 villages of the city and painted red, yellow, pink and blue; other bottles were mixed into sand and cement to make the garden paths.",
+    "The garden came out of the city's solid waste campaign under then mayor Rose Furigay, Abante Lamitan, Atras Basura, and visitors were already coming before it was finished. In 2025 the Daily Tribune still listed it among Basilan's attractions, alongside Bulingan Falls."
+   ],
+   "before_you_go": [
+    "Coordinate with the Lamitan City tourism office before visiting places outside the city centre; it arranges guides and transport.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "At Sitio Panansangan, Barangay Ubit, Lamitan City.",
+   "best_time": null,
+   "colors": [
+    "#d6336c",
+    "#f2c94c",
+    "#3a7d44"
+   ],
+   "sources": [
+    "https://www.rappler.com/?p=240799",
+    "https://interaksyon.philstar.com/trends-spotlights/2019/09/25/155396/lamitan-city-turns-plastic-trash-into-tulips-to-fight-waste/",
+    "https://tribune.net.ph/2025/10/01/tabiawan-falls-offers-tranquil-atmosphere",
+    "https://transitpinas.com/basilan-travel-guide/",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Tulips_Garden_-_Lamitan_City.jpg/1280px-Tulips_Garden_-_Lamitan_City.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Tulips_Garden_-_Lamitan_City.jpg",
+     "author": "Nikkaella",
+     "license": "CC0",
+     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+     "width": 2048,
+     "height": 1536,
+     "caption": "A tree-lined path in the Lamitan tulip garden leading to a large decorative flower sculpture",
+     "tone": [
+      82,
+      0.36
+     ]
+    }
+   ],
+   "do": [
+    {
+     "title": "Walk the bottle-paved paths",
+     "detail": "Bottles were mixed into sand and cement to make the garden's pathways, between beds of painted plastic tulips.",
+     "source": "https://interaksyon.philstar.com/trends-spotlights/2019/09/25/155396/lamitan-city-turns-plastic-trash-into-tulips-to-fight-waste/"
+    }
+   ],
+   "eat": []
+  },
+  {
+   "slug": "ambalang-museum",
+   "name": "Ambalang Museum and GAMABA Weaving Center",
+   "also_known_as": [
+    "GAMABA Weaving Center",
+    "GAMABA School of Weaving"
+   ],
+   "kind": "museum",
+   "area": "basilan",
+   "municipality": "Lamitan",
+   "summary": "A weaving school and museum in Lamitan honouring the Yakan master weaver Apuh Ambalang Ausalin.",
+   "detail": [
+    "Ambalang Ausalin (1943–2022) was a Yakan master weaver from Lamitan, known for sinalu'an and seputangan, 2 of the most intricate Yakan textiles. She learned from her mother, reputed to be the best weaver in Basilan, and received the National Living Treasures Award (Gawad sa Manlilikha ng Bayan) in 2016. She died at her home in Parangbasak, Lamitan, in February 2022.",
+    "The GAMABA Weaving Center in Lamitan also works as a School of Living Tradition, where she taught a new generation of magtetenum (weavers) to make tennun, Yakan for woven cloth. In June 2024 her eldest son, Berty Ausalin, led the inauguration of the weaving centre and the Ambalang Museum on Yakan culture.",
+    "Yakan cloth is woven in geometric patterns in bright, contrasting colours. A 2-metre cloth takes between 2 weeks and a month to make, and designs include the rainbow-like palipattang, the python-inspired buga-sama and the vine-patterned dawen-dawen."
+   ],
+   "before_you_go": [
+    "Hand-woven tennun takes weeks to make; pay the asking price rather than haggling.",
+    "Ask before photographing weavers at their looms.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": "Lamitan's Lami-Lamihan Festival in late June, when Yakan come in full dress to sell their produce and wares.",
+   "colors": [
+    "#c0392b",
+    "#f1c40f",
+    "#1f6f8b"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Ambalang_Ausalin",
+    "https://nomadicexperiences.com/2021/09/in-presence-of-national-living-treasure.html",
+    "https://en.wikipedia.org/wiki/Basilan",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [
+    {
+     "title": "Watch Yakan weavers at the looms",
+     "detail": "The centre is a School of Living Tradition where weavers make tennun on traditional looms.",
+     "source": "https://nomadicexperiences.com/2021/09/in-presence-of-national-living-treasure.html"
+    },
+    {
+     "title": "Buy Yakan woven cloth",
+     "detail": "Weavers make table runners, clothing, bags and wall decor as well as traditional cloth.",
+     "source": "https://nomadicexperiences.com/2021/09/in-presence-of-national-living-treasure.html"
+    }
+   ],
+   "eat": []
+  },
+  {
+   "slug": "kumalarang-river",
+   "name": "Kumalarang River",
+   "also_known_as": [
+    "Baunuh Peggesan"
+   ],
+   "kind": "nature",
+   "area": "basilan",
+   "municipality": "Lantawan",
+   "summary": "Basilan's westward-flowing river, with waterfalls and a stone said to mark a French landing of the 1840s.",
+   "detail": [
+    "The Kumalarang River flows west through the western half of Basilan and is also called Baunuh Peggesan; Kumalarang was also one of the old names given to the whole island. Chinese texts of the Ming dynasty mention a Kingdom of Kumalarang, believed to have been on the island's north-western shore. The Basilan provincial article on Wikipedia lists the waterfalls of the Kumalarang River among the island's natural attractions.",
+    "French archives show that the French navy spent 6 months surveying Basilan in 1844 and 1845, and that France tried and failed to acquire the island. The archives say the French etched a landmark into stone on the banks of the Kumalarang River in Lantawan, and in 2026 the Bangsamoro heritage commission in Basilan led a mission to find the landing site."
+   ],
+   "before_you_go": [
+    "The river runs through Lantawan and Isabela City; Isabela is not part of BARMM, so check which side you are visiting.",
+    "Go with guides arranged through the Basilan provincial tourism office.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "colors": [
+    "#2c6e63",
+    "#a3c9a8",
+    "#6b5844"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Basilan",
+    "https://bangsamoro.gov.ph/news/latest-news/french-archives-uncover-new-chapter-in-basilan-history-boost-heritage-preservation-efforts/",
+    "https://en.wikivoyage.org/wiki/Basilan",
+    "https://transitpinas.com/basilan-travel-guide/",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [],
+   "eat": []
+  },
+  {
+   "slug": "punta-matangal",
+   "name": "Punta Matangal",
+   "also_known_as": [],
+   "kind": "beach",
+   "area": "basilan",
+   "municipality": "Tuburan",
+   "summary": "A peninsula point in Tuburan that Basilan's travel guides name as a surf spot.",
+   "detail": [
+    "Punta Matangal is a peninsula point in Tuburan, on Basilan. The Wikivoyage guide to the province describes it as a haven for surfers, comparing it with the north shores of Hawaii.",
+    "Matangal is an old name: in Yakan oral tradition it was one of the names of prehistoric Basilan, taken from a mountain farther east that, like Basilan Peak, served Maguindanao traders as a landmark when sailing the Celebes Sea."
+   ],
+   "before_you_go": [
+    "No source gives current surf conditions, access or facilities; ask the Basilan provincial tourism office before going.",
+    "Travel writers strongly advise against going far from Basilan's town centres without a local guide.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "colors": [
+    "#1f5f8b",
+    "#7fc8d6",
+    "#e3d3a8"
+   ],
+   "sources": [
+    "https://en.wikivoyage.org/wiki/Basilan",
+    "https://en.wikipedia.org/wiki/Basilan",
+    "https://transitpinas.com/basilan-travel-guide/",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [],
+   "eat": []
+  },
+  {
+   "slug": "saluag-island",
+   "name": "Saluag Island",
+   "also_known_as": [
+    "Sikulan"
+   ],
+   "kind": "island",
+   "area": "tawi-tawi",
+   "municipality": "Sibutu",
+   "summary": "The southernmost island of the Philippines, a 1.6 km strip of white sand with 2 lighthouses.",
+   "detail": [
+    "Saluag Island, part of the municipality of Sibutu, is the southernmost island of the Philippines and is 1.6 km long. Locally it is called Sikulan.",
+    "A small community of Sama Dilaut and Tausug live there, off waters rich in fish and seaweed. The island has fine white sand, green bush and 2 lighthouses, one old and rusted and the other a modern working light."
+   ],
+   "before_you_go": [
+    "Register with the tourism office in Bongao before visiting the outer islands, and follow the advice of local authorities.",
+    "People live on the island; ask before photographing homes and residents.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "From Tandu Banak or Sibutu proper, take a habal-habal (motorcycle taxi) to Tandu Owak, then charter a boat; the crossing takes about 30 minutes.",
+   "best_time": null,
+   "colors": [
+    "#e9e4d4",
+    "#3fb5c8",
+    "#2f6b4f"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Saluag_Island",
+    "https://www.rappler.com/?p=93689",
+    "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [
+    {
+     "title": "See the 2 lighthouses",
+     "detail": "An old rusted lighthouse stands next to a modern working one.",
+     "source": "https://www.rappler.com/?p=93689"
+    }
+   ],
+   "eat": []
+  },
+  {
+   "slug": "sanga-sanga-island",
+   "name": "Sanga-Sanga Island",
+   "also_known_as": [],
+   "kind": "island",
+   "area": "tawi-tawi",
+   "municipality": "Bongao",
+   "summary": "The island between Bongao and Tawi-Tawi that holds the province's airport and its boatyards.",
+   "detail": [
+    "Sanga-Sanga lies between Tawi-Tawi Island to the east and Bongao Island to the south, and its 11 barangays all belong to Bongao. Sanga-Sanga Airport, the main airport of the province, is on the island, about 15 minutes from Bongao town.",
+    "During the Second World War the island was a major stopover of the Japanese navy; American forces liberated it on 2 April 1945 and it was then used by American and Australian forces.",
+    "Walking around Sanga-Sanga you pass large wooden boats being built by local craftsmen, most of them Sama-Bajau. One builder told a SunStar writer that a wooden prahu takes about a year to build, all by hand."
+   ],
+   "before_you_go": [
+    "Ask before photographing boatbuilders and their yards.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "The island is joined to Bongao by road; tricycles and habal-habal run between the airport and Bongao town in about 15 minutes.",
+   "best_time": null,
+   "colors": [
+    "#6b4f2f",
+    "#3f8fa6",
+    "#d9c8a0"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sanga-Sanga",
+    "https://www.sunstar.com.ph/more-articles/6-interesting-things-places-in-tawi-tawi",
+    "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/",
+    "https://transitpinas.com/tawi-tawi-travel-guide-2022/",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Sanga-Sanga_Airport.jpg/1280px-Sanga-Sanga_Airport.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Sanga-Sanga_Airport.jpg",
+     "author": "Agtillah",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+     "width": 6000,
+     "height": 4000,
+     "caption": "Sanga-Sanga Island and its airport runway seen from the peak of Bud Bongao",
+     "tone": [
+      206,
+      0.58
+     ]
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Sanga-Sanga_from_Bud_Bongao.jpg/1280px-Sanga-Sanga_from_Bud_Bongao.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Sanga-Sanga_from_Bud_Bongao.jpg",
+     "author": "Crow1997",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+     "width": 3472,
+     "height": 4640,
+     "caption": "Sanga-Sanga and part of Tawi-Tawi Island seen across the channel from the top of Bud Bongao",
+     "tone": [
+      216,
+      0.47
+     ]
+    }
+   ],
+   "do": [
+    {
+     "title": "Watch boats being built by hand",
+     "detail": "Sama-Bajau craftsmen build large wooden prahu by hand, each taking about a year.",
+     "source": "https://www.sunstar.com.ph/more-articles/6-interesting-things-places-in-tawi-tawi"
+    },
+    {
+     "title": "See the sunset at Yanas Farm",
+     "detail": "Travel guides send visitors to the Yanas Farm sunset view in Barangay Lakit-Lakit, on Sanga-Sanga.",
+     "source": "https://transitpinas.com/tawi-tawi-travel-guide-2022/"
+    }
+   ],
+   "eat": []
+  },
+  {
+   "slug": "tawi-tawi-island",
+   "name": "Tawi-Tawi Island",
+   "also_known_as": [
+    "Tawitawi Island"
+   ],
+   "kind": "island",
+   "area": "tawi-tawi",
+   "municipality": "Languyan, Panglima Sugala, Tandubas and Bongao",
+   "summary": "The main island of the province: hilly, wooded and home to birds found nowhere else.",
+   "detail": [
+    "Tawi-Tawi Island is the main island of the province, with a little more than half its land. At 580.5 km² it is the 21st-largest island of the Philippines and the third-largest in the Sulu Archipelago, about 55 km long and between 10 and 23 km wide, rising to 549 m. It is of volcanic origin, hilly and heavily wooded, with white sand beaches and rocky coasts, and is shared by Bongao, Languyan, Panglima Sugala and Tandubas.",
+    "The island supports many endemic species, among them the Tawitawi brown dove and the Sulu hornbill, while the Sulu bleeding-heart may already be extinct. Clearing for farms and settlements in recent decades has sharply reduced their forest, and many of these birds are listed as critically endangered."
+   ],
+   "before_you_go": [
+    "Register with the tourism office in Bongao before travelling beyond the town, and travel with a local guide.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "From Bongao, a jeepney leaves daily from the public market for Panglima Sugala and Languyan.",
+   "best_time": null,
+   "colors": [
+    "#2f5d3a",
+    "#7fb59a",
+    "#3f7fa6"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tawi-Tawi_Island",
+    "https://en.wikipedia.org/wiki/Tawi-Tawi",
+    "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/",
+    "https://transitpinas.com/tawi-tawi-panglima-sugala/",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [
+    {
+     "title": "Go to the Saturday barter market in Batu-Batu",
+     "detail": "Every Saturday Sama, Bajau, farmers and fisherfolk trade at the Adlaw Pagtabuh-tabuh market in Panglima Sugala, on the island.",
+     "source": "https://transitpinas.com/tawi-tawi-panglima-sugala/"
+    }
+   ],
+   "eat": []
+  },
+  {
+   "slug": "pahut-dive-site",
+   "name": "Pahut",
+   "also_known_as": [],
+   "kind": "nature",
+   "area": "tawi-tawi",
+   "municipality": "Bongao",
+   "summary": "A dive site in Bongao where a Second World War plane wreck lies among the corals.",
+   "detail": [
+    "Pahut, in Bongao, is one of the dive sites around the provincial capital. Divers see corals and fish, and the wreck of a Second World War plane, which a Lakwatsero guide identifies as an old Japanese war plane.",
+    "There is a beach resort in Pahut, and the Tawi-Tawi Divers Club is the contact the guide gives for scuba diving around Bongao."
+   ],
+   "before_you_go": [
+    "Dive only with a local dive operator; no source gives depth or current conditions at the wreck.",
+    "Leave the wreck as you find it.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "colors": [
+    "#1f4e79",
+    "#3fa9c9",
+    "#c9b07a"
+   ],
+   "sources": [
+    "https://www.rappler.com/?p=93689",
+    "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Sunset_of_Pahut.jpg/1280px-Sunset_of_Pahut.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Sunset_of_Pahut.jpg",
+     "author": "JAcapulco",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+     "width": 4000,
+     "height": 3000,
+     "caption": "The shore road and leaning trees at Pahut, Bongao, in the evening light",
+     "tone": [
+      218,
+      0.22
+     ]
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Pahut_beach.jpg/1280px-Pahut_beach.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Pahut_beach.jpg",
+     "author": "JAcapulco",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+     "width": 3000,
+     "height": 4000,
+     "caption": "Sunset over the sea from the beach at Pahut, Bongao",
+     "tone": [
+      36,
+      0.64
+     ]
+    }
+   ],
+   "do": [
+    {
+     "title": "Dive the Second World War wreck",
+     "detail": "Divers at Pahut see corals, fish and a Second World War plane wreck.",
+     "source": "https://www.rappler.com/?p=93689"
+    }
+   ],
+   "eat": []
+  },
+  {
+   "slug": "bongao-bajau-village",
+   "name": "Bajau village of Bongao",
+   "also_known_as": [
+    "Badjao Village"
+   ],
+   "kind": "heritage",
+   "area": "tawi-tawi",
+   "municipality": "Bongao",
+   "summary": "A Sama Dilaut community of stilt houses and footbridges in Bongao, known for its woven mats.",
+   "detail": [
+    "In Bongao, a Sama Dilaut (Bajau) community lives in stilt houses joined by wooden footbridges that run out over the sea. Visitors come to see a day in their sea-based life.",
+    "The village is known for weaving, especially the colourful banig, hand-woven mats that many of the women make every day, and travel guides send visitors here to buy souvenirs."
+   ],
+   "before_you_go": [
+    "This is a living neighbourhood; go with a local guide and ask before photographing people or their homes.",
+    "Footbridges can be narrow and uneven.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "colors": [
+    "#c1442e",
+    "#f0c75e",
+    "#2b7a99"
+   ],
+   "sources": [
+    "https://nomadicexperiences.com/2018/04/places-to-visit-in-tawi-tawi.html",
+    "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [
+    {
+     "title": "Watch banig mats being woven",
+     "detail": "Many of the women weave colourful banig mats every day.",
+     "source": "https://nomadicexperiences.com/2018/04/places-to-visit-in-tawi-tawi.html"
+    },
+    {
+     "title": "Buy souvenirs from the village",
+     "detail": "Guides recommend the Badjao Village in Bongao for souvenir items.",
+     "source": "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/"
+    }
+   ],
+   "eat": []
+  },
+  {
+   "slug": "takumi-butai-memorial-shrine",
+   "name": "Takumi Butai Memorial Shrine",
+   "also_known_as": [
+    "Takumi Butai Shrine"
+   ],
+   "kind": "memory",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "summary": "A memorial to a Japanese wartime commander and the Japanese soldiers who died in Cotabato City.",
+   "detail": [
+    "The Takumi Butai Memorial Shrine honours Takumi, the provincial commander of the Japanese forces in Cotabato City during the Second World War, and the Japanese soldiers who died in the city. Before he died Takumi asked that some of his ashes be buried in Cotabato City.",
+    "The shrine was built by the Lions Club of Kyoto, Japan, together with the city government. Wikivoyage lists it among the city's sights."
+   ],
+   "before_you_go": [
+    "Treat the shrine as a grave and a war memorial.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "colors": [
+    "#7a6a5a",
+    "#d9d2c3",
+    "#8c2f2f"
+   ],
+   "sources": [
+    "https://www.liquisearch.com/cotabato_city/tourist_attractions",
+    "https://en.wikivoyage.org/wiki/Cotabato_City",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [],
+   "eat": []
+  },
+  {
+   "slug": "cotabato-cathedral",
+   "name": "Immaculate Conception Cathedral",
+   "also_known_as": [
+    "Cotabato Cathedral",
+    "Metropolitan Cathedral of the Immaculate Conception"
+   ],
+   "kind": "heritage",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "summary": "The seat of the Archdiocese of Cotabato, on Quezon Avenue.",
+   "detail": [
+    "The Metropolitan Cathedral of the Immaculate Conception is the seat of the Archdiocese of Cotabato, which covers Cotabato City, Maguindanao del Norte, Maguindanao del Sur, western Cotabato and most of Sultan Kudarat. GCatholic dates the cathedral parish to 1954, and the Church named it one of its jubilee churches for the 500 years of Christianity in the Philippines and for the Holy Year 2025.",
+    "The diocese grew from the Territorial Prelature of Cotabato and Sulu, created in 1950, and was raised to a metropolitan archdiocese by Pope John Paul II on 5 November 1979. Its patron feast is the Immaculate Conception on 8 December. It is a different church from the older Immaculate Conception church at Tamontaka."
+   ],
+   "before_you_go": [
+    "Dress modestly and keep quiet during Mass.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "On Quezon Avenue, Cotabato City.",
+   "best_time": "The patron feast of the Immaculate Conception on 8 December.",
+   "colors": [
+    "#e8e0d0",
+    "#8c3b2e",
+    "#4a6b8a"
+   ],
+   "sources": [
+    "https://gcatholic.org/churches/asia/2623.htm",
+    "https://en.wikipedia.org/wiki/Archdiocese_of_Cotabato",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Immaculate_Concepcion_Metropolitan_Cathedral_Cotabato_%28Quezon_Avenue%2C_Cotabato_City%3B_08-15-2023%29.jpg/1280px-Immaculate_Concepcion_Metropolitan_Cathedral_Cotabato_%28Quezon_Avenue%2C_Cotabato_City%3B_08-15-2023%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Immaculate_Concepcion_Metropolitan_Cathedral_Cotabato_(Quezon_Avenue,_Cotabato_City;_08-15-2023).jpg",
+     "author": "Patrickroque01",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+     "width": 3552,
+     "height": 2664,
+     "caption": "The white facade and bell tower of the Immaculate Conception Cathedral on Quezon Avenue in 2023",
+     "tone": [
+      217,
+      0.24
+     ]
+    }
+   ],
+   "do": [],
+   "eat": []
+  },
+  {
+   "slug": "camp-keithley",
+   "name": "Camp Keithley",
+   "also_known_as": [
+    "Camp Marahui"
+   ],
+   "kind": "memory",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "summary": "The site of an American army post of 1903 in Marawi, now being excavated by archaeologists.",
+   "detail": [
+    "After the Battle of Bayang in May 1902 and Pershing's campaigns around Lake Lanao, American forces set up a post called Camp Marahui at the foot of Signal Hill in 1903. Later that year Meranaw warriors attacked the camp, killing several American soldiers, among them Private Fernando Guy Keithley. In 1905 it was renamed Camp Keithley, the first military camp named after a private. A monument put up in 1939 was removed during the Japanese occupation in 1942.",
+    "The Camp Keithley Archaeological Project of the University of the Philippines School of Archaeology, with the Bangsamoro heritage commission and the tourism ministry, dug 4 trenches in Barangay Datu Saber, looking for old settlements, kota (forts), colonial military structures and conflict sites. Finds shown in Marawi in June 2026 included earthenware, obsidian and chert, glass and metal objects; the project hopes they will also shed light on Meranaw life before Islam."
+   ],
+   "before_you_go": [
+    "The excavation is a research site; see the finds through exhibits rather than entering the trenches.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": "In Barangay Datu Saber, Marawi City, at the foot of Signal Hill.",
+   "best_time": null,
+   "colors": [
+    "#6b5a3a",
+    "#cdbb93",
+    "#2f5d6b"
+   ],
+   "sources": [
+    "https://bangsamoro.gov.ph/news/latest-news/camp-keithley-archaeological-project-showcases-findings-in-marawi-exhibit/",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Barracks_at_Camp_Keithley_Marawi.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Barracks_at_Camp_Keithley_Marawi.jpg",
+     "author": "Unknown photographer (postcard, more than 100 years old)",
+     "license": "Public domain",
+     "license_url": null,
+     "width": 1080,
+     "height": 699,
+     "caption": "A coloured postcard of the barracks at Camp Keithley, with hills behind",
+     "tone": [
+      82,
+      0.3
+     ]
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Camp_Keithley_-_DPLA_-_da71c022f78fa6d41b65197425d8f6b6.jpg/1280px-Camp_Keithley_-_DPLA_-_da71c022f78fa6d41b65197425d8f6b6.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Camp_Keithley_-_DPLA_-_da71c022f78fa6d41b65197425d8f6b6.jpg",
+     "author": "Published by the Salvation Army",
+     "license": "Public domain",
+     "license_url": null,
+     "width": 3506,
+     "height": 2277,
+     "caption": "An early postcard of Camp Keithley as the post of the 18th US Infantry",
+     "tone": [
+      53,
+      0.33
+     ]
+    }
+   ],
+   "do": [],
+   "eat": []
+  },
+  {
+   "slug": "salikata-national-park",
+   "name": "Salikata National Park",
+   "also_known_as": [],
+   "kind": "nature",
+   "area": "lanao-del-sur",
+   "municipality": "Lumba-Bayabao",
+   "summary": "A forested national park of waterfalls, cliffs and a river gorge in the foothills of Mount Ragang.",
+   "detail": [
+    "Salikata National Park lies in Lumba-Bayabao, in the thickly forested foothills of the Mount Ragang (Piapayungan) range. It is one of the 6 national parks of Lanao del Sur declared in 1965.",
+    "The park takes in waterfalls, a river gorge, rocky cliffs and dense forest canopy along the valley of the Gata River, from Barangay Salaman to Mapantao near the provincial border with Cotabato."
+   ],
+   "before_you_go": [
+    "No source describes trails or visitor facilities; ask in Lumba-Bayabao for a local guide.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "colors": [
+    "#234d32",
+    "#7a9e7e",
+    "#8a7a5a"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Salikata_National_Park",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [],
+   "eat": []
+  },
+  {
+   "slug": "rungkunan-national-park",
+   "name": "Rungkunan National Park",
+   "also_known_as": [],
+   "kind": "nature",
+   "area": "lanao-del-sur",
+   "municipality": "Ditsaan-Ramain and Tagoloan II",
+   "summary": "A mountain forest park east of Marawi in the Lake Lanao and Agus River watershed.",
+   "detail": [
+    "Rungkunan National Park covers the mountainous eastern part of Lanao del Sur in Ditsaan-Ramain and Tagoloan II, about 10 km east-south-east of Marawi. It lies near the Lake Lanao and Agus River watershed and is known for its sparkling stream, virgin forest and invigorating climate.",
+    "It was declared a national park in 1965 by Republic Act No. 4190."
+   ],
+   "before_you_go": [
+    "No source describes trails or visitor facilities; ask locally for a guide.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "colors": [
+    "#2f5d3a",
+    "#9fbfa0",
+    "#5b7f95"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rungkunan_National_Park",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [],
+   "eat": []
+  },
+  {
+   "slug": "agus-river",
+   "name": "Agus River",
+   "also_known_as": [],
+   "kind": "nature",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "summary": "The fast river that drains Lake Lanao through Marawi to Iligan Bay and powers much of Mindanao.",
+   "detail": [
+    "The Agus River flows out of Lake Lanao from a narrow depression on its north-western rim and runs through Marawi to Iligan Bay, splitting near the sea into the channels that feed Maria Cristina Falls and Tinago Falls. Its current reaches up to 30 miles an hour in places, so it cannot be navigated along its whole length.",
+    "The hydroelectric plants on the river generate 70% of Mindanao's electricity, but the dams that regulate them have changed the levels of Lake Lanao and caused conflict with the people around it. In Maranao tradition, the Archangel Gabriel made the river to drain the lake when its rising waters threatened to drown the people of Sebangan. Wikivoyage notes that it flows between Saduc and Lilod in Marawi."
+   ],
+   "before_you_go": [
+    "Do not swim in the fast-flowing stretches.",
+    "The UK Foreign Office advises against all travel to western and central Mindanao and the Sulu archipelago, citing terrorist activity and clashes between the military and insurgent groups (advice current to October 2026). Check your own government's advice and current local conditions before going."
+   ],
+   "getting_there": null,
+   "best_time": null,
+   "colors": [
+    "#2a5f7a",
+    "#8cc0c9",
+    "#5a6b3a"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Agus_River",
+    "https://en.wikivoyage.org/wiki/Lanao_del_Sur",
+    "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
+   ],
+   "images": [],
+   "do": [],
    "eat": []
   }
  ],
