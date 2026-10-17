@@ -1223,6 +1223,8 @@
 
 .bb-row {
   position: relative;
+  /* The hover picture rests scaled to 106% and would widen the page past the window. */
+  overflow-x: clip;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
@@ -1690,9 +1692,11 @@
   white-space: nowrap;
 }
 
-/* A phone has room for the workspace switch and the theme only; the
-   project links move into the phone menu (`UtilityMenuLinks`). */
-@media (max-width: 639px) {
+/* Below a wide screen the strip has room for the switches, search, the
+   theme and Contribute only; its text links (About, Contact us, Facebook)
+   would push the page wider than the window. They live in the menu
+   (`UtilityMenuLinks`), the main navigation and the footer instead. */
+@media (max-width: 1119px) {
   .utility-bar nav > a.utility-bar-link {
     display: none;
   }

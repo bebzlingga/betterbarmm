@@ -87,7 +87,8 @@ function Switch({
 		<details className={`utility-bar-switch relative ${className}`}>
 			<summary className='utility-bar-link cursor-pointer list-none'>
 				{icon}
-				<span className='font-bold'>{label}</span>
+				{/* On the narrowest phones the value says enough; "Workspace:" would push the strip past the window. */}
+				<span className={`font-bold ${value ? 'max-[399px]:hidden' : ''}`}>{label}</span>
 				{value ? <span className='text-[var(--ink)]'>{value}</span> : null}
 				<svg viewBox='0 0 10 6' aria-hidden='true' className='utility-bar-caret size-2.5'>
 					<path d='M1 1l4 4 4-4' fill='none' stroke='currentColor' strokeWidth='1.5' />
@@ -166,7 +167,7 @@ export function UtilityBar({
 						items={WORKSPACES}
 						current={current}
 					/>
-					{/* Phones have no room for a second switch; their menu lists the projects. */}
+					{/* Below a tablet there is no room for a second switch; the menu lists the projects. */}
 					<Switch
 						icon={<ProjectIcon size={13} weight='bold' aria-hidden='true' />}
 						label={projectLabel ? 'Project:' : 'Projects'}
@@ -174,7 +175,7 @@ export function UtilityBar({
 						heading='Projects'
 						items={PROJECTS}
 						current={project}
-						className='hidden sm:block'
+						className='hidden md:block'
 					/>
 					<SwitchCloser />
 				</div>
