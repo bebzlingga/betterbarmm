@@ -17,14 +17,14 @@ const label = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em]
 /**
  * A spec column as wide as its own lines. A wrapped paragraph keeps the full width of its box however short its
  * lines run, and that slack would add to the gap beside it, so the width is worked out from the text instead:
- * as many lines as 19em needs, each of the average length, with text-wrap: balance filling them evenly. The
+ * as many lines as 22em needs, each of the average length, with text-wrap: balance filling them evenly. The
  * figures are DM Sans at the spec size (about 0.5em a character) and the 17px serif label (about 0.62em a
  * character in the spec's em).
  */
 function specWidth(label: string, value: string) {
 	const chars = value.length * 0.5
-	const lines = Math.ceil(chars / 19)
-	return `${Math.max(Math.min(19, chars / lines + 1.2), label.length * 0.62).toFixed(1)}em`
+	const lines = Math.ceil(chars / 22)
+	return `${Math.max(Math.min(22, chars / lines + 1.2), label.length * 0.62).toFixed(1)}em`
 }
 
 /** A link as its reader would name it: Pusaka by its page, anything else by its site. */
