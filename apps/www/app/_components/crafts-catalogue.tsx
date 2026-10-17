@@ -3,6 +3,7 @@ import { CraftCard } from './craft-card'
 import { SiteHeader } from './site-header'
 import { PhotoCredit } from './discover-figure'
 import { GROUP, commonsThumb, craft, crafts, creditOf, festivals } from '../_lib/crafts'
+import { GetInvolved } from './get-involved'
 
 // Important: the shared base styles set the body face on p, li and dd outside any layer.
 const serif = 'font-[family-name:var(--font-craft)]!'
@@ -60,7 +61,7 @@ export function CraftsCatalogue() {
 						<ul className='mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4'>
 							{list.map((c) => (
 								<li key={c.slug}>
-									<CraftCard c={c} />
+									<CraftCard c={c} plain />
 								</li>
 							))}
 						</ul>
@@ -75,7 +76,7 @@ export function CraftsCatalogue() {
 						<p className='mt-2 max-w-2xl text-[14.5px] leading-[1.6] text-[#5a3d2e]'>The festivals where these crafts are shown, worn and sold.</p>
 						<ul className='mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3'>
 							{festivals.map((f) => (
-								<li key={f.name} className='rounded-[6px] bg-white p-5'>
+								<li key={f.name} className='border-t border-[#d9c7b5] pt-4'>
 									<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[#9a6a4f]'>{f.month}</p>
 									<p className={`${serif} mt-1 text-[19px] font-bold`}>{f.name}</p>
 									<p className='mt-0.5 flex items-center gap-1 text-[13px] text-[#8a6d5c]'>
@@ -95,6 +96,7 @@ export function CraftsCatalogue() {
 					Every fact here is linked to the page it came from. Photos are from Wikimedia Commons under free licences, each credited on the photo.
 				</p>
 			</div>
+			<GetInvolved />
 		</main>
 	)
 }

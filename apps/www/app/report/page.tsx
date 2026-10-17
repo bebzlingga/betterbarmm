@@ -3,6 +3,7 @@ import { Masthead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
 import { pageMeta } from '../_lib/seo'
 import { ReportForm } from './report-form'
+import { GetInvolved } from '../_components/get-involved'
 
 export const metadata: Metadata = pageMeta({
 	title: 'Report an error',
@@ -26,6 +27,7 @@ export default async function ReportPage({ searchParams }: { searchParams: Promi
 			<section className='bb-container bb-section max-w-[44rem]'>
 				<ReportForm url={url.slice(0, 500)} title={title.slice(0, 200)} />
 			</section>
+			<GetInvolved />
 		</main>
 	)
 }

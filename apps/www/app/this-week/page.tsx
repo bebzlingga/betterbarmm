@@ -5,6 +5,7 @@ import { Masthead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
 import { pageMeta } from '../_lib/seo'
 import { PROC, addDays, latestDay, mondayOf, week, type MeasureEvent } from '../_lib/weekly'
+import { GetInvolved } from '../_components/get-involved'
 
 export const metadata: Metadata = pageMeta({
 	title: 'This week',
@@ -179,6 +180,7 @@ export default async function ThisWeekPage({ searchParams }: { searchParams: Pro
 					</a>
 				</section>
 			</div>
+			<GetInvolved />
 		</main>
 	)
 }

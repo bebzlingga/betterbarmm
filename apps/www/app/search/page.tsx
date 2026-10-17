@@ -3,6 +3,7 @@ import { Masthead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
 import { SiteSearch } from '../_components/site-search'
 import { pageMeta } from '../_lib/seo'
+import { GetInvolved } from '../_components/get-involved'
 
 export const metadata: Metadata = pageMeta({
 	title: 'Search',
@@ -19,6 +20,7 @@ export default async function SearchPage({ searchParams }: { searchParams: Promi
 			<section className='bb-container bb-section'>
 				<SiteSearch initial={q ?? ''} />
 			</section>
+			<GetInvolved />
 		</main>
 	)
 }

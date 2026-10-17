@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Masthead } from './_components/masthead'
 import { SiteHeader } from './_components/site-header'
+import { GetInvolved } from './_components/get-involved'
 
 export const metadata: Metadata = {
 	title: 'Page not found',
@@ -43,6 +44,7 @@ export default function NotFound() {
 					Report a broken link
 				</Link>
 			</Masthead>
+			<GetInvolved />
 		</main>
 	)
 }

@@ -6,6 +6,7 @@ import { Masthead, SectionHead } from '../_components/masthead'
 import { WorkspaceIndex } from '../_components/workspace-index'
 import { workspaces } from '../_lib/workspaces'
 import { SiteHeader } from '../_components/site-header'
+import { GetInvolved } from '../_components/get-involved'
 
 export const metadata: Metadata = pageMeta({
 	title: 'Not open yet',
@@ -87,6 +88,7 @@ export default function SoonPage() {
 					</div>
 				</div>
 			</section>
+			<GetInvolved />
 		</main>
 	)
 }

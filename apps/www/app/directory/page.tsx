@@ -6,6 +6,7 @@ import { SiteHeader } from '../_components/site-header'
 import { Phone, linkClass } from '../_components/directory-bits'
 import { directoryMeta, directoryOffices, hotlines, localGovernments, telHref } from '../_lib/directory'
 import { pageMeta } from '../_lib/seo'
+import { GetInvolved } from '../_components/get-involved'
 
 export const metadata: Metadata = pageMeta({
 	title: 'Directory',
@@ -251,6 +252,7 @@ export default async function DirectoryPage({ searchParams }: { searchParams: Pr
 					.
 				</p>
 			</section>
+			<GetInvolved />
 		</main>
 	)
 }

@@ -3,7 +3,7 @@ import { CARD } from './_lib/seo'
 import { ArrowRightIcon, ArrowUpRightIcon, MagnifyingGlassIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { ChapterStrip, type StripCard } from './_components/chapter-strip'
-import { Counter, CtaAction, CtaPanel, LineReveal, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { Counter, LineReveal, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
 import { bangsamoroParliament } from '@betterbarmm/primer-data'
 import { DiscoverMarquee } from './_components/discover-marquee'
 import { photo } from './_components/discover-media'
@@ -13,6 +13,7 @@ import { HeroGraphic } from './_components/hero-graphic'
 import { SiteHeader } from './_components/site-header'
 import { WorkspaceList } from './_components/workspace-index'
 import { ExplainerCard } from './_components/explainer-card'
+import { GetInvolved } from './_components/get-involved'
 import { listExplainers } from './_lib/explainers'
 import { projects, workspaces } from './_lib/workspaces'
 import { ProjectList } from './_components/project-list'
@@ -361,23 +362,7 @@ export default async function HomePage() {
 				/>
 			</div>
 
-			<CtaPanel
-				label='Get involved'
-				lines={['Public records get better', 'when people check them.']}
-				standfirst='Spotted an error, or have a document worth adding? Every correction and every source makes the record stronger — and the official source is always right where we are wrong.'
-			>
-				<CtaAction>
-					<Link href='/contribute' className='bb-btn bb-btn-brass'>
-						Contribute
-						<ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
-					</Link>
-				</CtaAction>
-				<CtaAction>
-					<Link href='/about' className='bb-btn bb-btn-ghost'>
-						About the project
-					</Link>
-				</CtaAction>
-			</CtaPanel>
+			<GetInvolved />
 		</main>
 	)
 }

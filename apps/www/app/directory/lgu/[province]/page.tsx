@@ -6,6 +6,7 @@ import { Masthead } from '../../../_components/masthead'
 import { SiteHeader } from '../../../_components/site-header'
 import { emergencyMeta, localGovernments, localGroup, localLineage, provinceLines } from '../../../_lib/directory'
 import { pageMeta } from '../../../_lib/seo'
+import { GetInvolved } from '../../../_components/get-involved'
 
 export function generateStaticParams() {
 	return localGovernments.map((g) => ({ province: g.slug }))
@@ -115,6 +116,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 					</section>
 				) : null}
 			</section>
+			<GetInvolved />
 		</main>
 	)
 }

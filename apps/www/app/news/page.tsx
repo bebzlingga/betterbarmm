@@ -4,6 +4,7 @@ import { listNews } from '@betterbarmm/db'
 import { Masthead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
 import { pageMeta } from '../_lib/seo'
+import { GetInvolved } from '../_components/get-involved'
 
 export const metadata: Metadata = pageMeta({
 	title: 'Latest news',
@@ -78,6 +79,7 @@ export default async function NewsPage() {
 					</p>
 				) : null}
 			</section>
+			<GetInvolved />
 		</main>
 	)
 }

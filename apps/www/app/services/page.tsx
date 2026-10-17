@@ -5,6 +5,7 @@ import { Masthead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
 import { pageMeta } from '../_lib/seo'
 import { AUDIENCES, audienceLabel, matches, offerings, offices, servicesMeta, shortName, slugify, type Office, type Offering } from '../_lib/services'
+import { GetInvolved } from '../_components/get-involved'
 
 export const metadata: Metadata = pageMeta({
 	title: 'Programs & services',
@@ -85,6 +86,7 @@ export default async function ServicesPage({ searchParams }: { searchParams: Pro
 					.
 				</p>
 			</section>
+			<GetInvolved />
 		</main>
 	)
 }

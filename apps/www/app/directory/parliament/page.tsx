@@ -6,6 +6,7 @@ import { linkClass } from '../../_components/directory-bits'
 import { Masthead } from '../../_components/masthead'
 import { SiteHeader } from '../../_components/site-header'
 import { pageMeta } from '../../_lib/seo'
+import { GetInvolved } from '../../_components/get-involved'
 
 export const metadata: Metadata = pageMeta({
 	title: 'Members of Parliament — Directory',
@@ -90,6 +91,7 @@ export default function ParliamentDirectoryPage() {
 					</section>
 				))}
 			</section>
+			<GetInvolved />
 		</main>
 	)
 }

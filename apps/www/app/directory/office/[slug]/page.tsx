@@ -8,6 +8,7 @@ import { SiteHeader } from '../../../_components/site-header'
 import { directoryMeta, directoryOffice, directoryOffices, fieldOffices, officeHistory } from '../../../_lib/directory'
 import { budgetHref, officeBySlug } from '../../../_lib/services'
 import { pageMeta } from '../../../_lib/seo'
+import { GetInvolved } from '../../../_components/get-involved'
 
 export function generateStaticParams() {
 	return directoryOffices.map((o) => ({ slug: o.slug }))
@@ -200,6 +201,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 
 				<p className='mt-16 max-w-3xl text-[12.5px] leading-[1.7] text-[var(--ink-3)]'>{directoryMeta.note}</p>
 			</section>
+			<GetInvolved />
 		</main>
 	)
 }

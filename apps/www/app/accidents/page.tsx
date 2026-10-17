@@ -4,6 +4,7 @@ import { AccidentOpener } from '../_components/accident-opener'
 import { SiteHeader } from '../_components/site-header'
 import { accidents, accidentsMeta } from '../_lib/accidents'
 import { pageMeta } from '../_lib/seo'
+import { GetInvolved } from '../_components/get-involved'
 
 export const metadata: Metadata = pageMeta({
 	title: 'Accidents',
@@ -38,6 +39,7 @@ export default function AccidentsPage() {
 					.
 				</p>
 			</section>
+			<GetInvolved />
 		</main>
 	)
 }

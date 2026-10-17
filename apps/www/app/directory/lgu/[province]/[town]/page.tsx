@@ -7,6 +7,7 @@ import { Masthead } from '../../../../_components/masthead'
 import { SiteHeader } from '../../../../_components/site-header'
 import { barangayRows, emergencyMeta, localGovernments, localGroup, localLineage, townLines } from '../../../../_lib/directory'
 import { pageMeta } from '../../../../_lib/seo'
+import { GetInvolved } from '../../../../_components/get-involved'
 
 export function generateStaticParams() {
 	return localGovernments.flatMap((g) => g.units.map((u) => ({ province: g.slug, town: u.slug })))
@@ -135,6 +136,7 @@ export default async function TownPage({ params }: { params: Promise<{ province:
 					<p className='mt-3 text-[12.5px] text-[var(--ink-3)]'>The winner of each election, from COMELEC’s canvass and OpenHalalan’s rebuild of the older returns. A succession mid-term is not shown.</p>
 				</section>
 			</section>
+			<GetInvolved />
 		</main>
 	)
 }

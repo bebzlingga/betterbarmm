@@ -4,7 +4,7 @@ import { PhotoCredit } from './discover-figure'
 
 /** A craft as a card: its first photo, or a wash of its colours where there is none.
  *  replace: inside the dialog, so moving between crafts keeps one history entry.
- *  plain: no card, the photo and its words on the ground.
+ *  plain: no card, the photo and its words on the ground, square-cornered.
  *  The photo's credit is a link of its own, so it sits beside the card's link, over the photo, not inside it. */
 export function CraftCard({ c, replace = false, plain = false }: { c: Craft; replace?: boolean; plain?: boolean }) {
 	const img = c.images[0]
@@ -13,7 +13,7 @@ export function CraftCard({ c, replace = false, plain = false }: { c: Craft; rep
 			className={`bb-frame group relative ${plain ? '' : 'overflow-hidden rounded-[6px] bg-white'}`}
 		>
 			<Link href={`/crafts/${c.slug}`} replace={replace} className='block'>
-				<span className={`block aspect-[4/3] overflow-hidden bg-[#e9ddd0] ${plain ? 'rounded-[6px]' : ''}`}>
+				<span className='block aspect-[4/3] overflow-hidden bg-[#e9ddd0]'>
 					{img ? (
 						// eslint-disable-next-line @next/next/no-img-element
 						<img src={commonsThumb(img.url, 960)} alt='' loading='lazy' style={{ objectPosition: img.focus }} className='size-full object-cover transition duration-500 group-hover:scale-[1.03]' />
@@ -30,7 +30,7 @@ export function CraftCard({ c, replace = false, plain = false }: { c: Craft; rep
 				</span>
 			</Link>
 			{img ? (
-				<span className={`pointer-events-none absolute inset-x-0 top-0 aspect-[4/3] overflow-hidden [&>a]:pointer-events-auto ${plain ? 'rounded-[6px]' : ''}`}>
+				<span className='pointer-events-none absolute inset-x-0 top-0 aspect-[4/3] overflow-hidden [&>a]:pointer-events-auto'>
 					<PhotoCredit photo={creditOf(img)} />
 				</span>
 			) : null}

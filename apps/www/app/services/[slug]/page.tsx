@@ -6,6 +6,7 @@ import { Masthead } from '../../_components/masthead'
 import { SiteHeader } from '../../_components/site-header'
 import { pageMeta } from '../../_lib/seo'
 import { audienceLabel, budgetHref, officeBySlug, offices, servicesMeta, shortName, slugify, type Audience } from '../../_lib/services'
+import { GetInvolved } from '../../_components/get-involved'
 
 export function generateStaticParams() {
 	return offices.map((o) => ({ slug: o.slug }))
@@ -266,6 +267,7 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 					</aside>
 				</div>
 			</section>
+			<GetInvolved />
 		</main>
 	)
 }
