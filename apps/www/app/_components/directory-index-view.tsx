@@ -1,7 +1,6 @@
 import { ArrowRightIcon, PhoneIcon, SirenIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { linkClass } from './directory-bits'
-import { HeadPortrait } from './head-portrait'
 import { DirectoryPlaces } from './directory-places'
 import { DirectorySearch } from './directory-search'
 import { members } from '../_lib/directory-index'
@@ -15,14 +14,14 @@ const GROUPS = [
 	{ kinds: ['attached'], title: 'Attached offices, authorities and commissions' },
 ] as const
 
-/** An office's logo in a small square, or its acronym where no logo has been found. */
+/** An office's logo on the card's ground, or its acronym where no logo has been found. */
 function OfficeLogo({ slug, acronym }: { slug: string; acronym: string | null }) {
 	const logo = officeLogo(slug)
 	return logo ? (
 		// eslint-disable-next-line @next/next/no-img-element
-		<img src={logo.src} alt='' title={`Logo: ${logo.credit}`} loading='lazy' className='size-12 shrink-0 object-contain' />
+		<img src={logo.src} alt='' title={`Logo: ${logo.credit}`} loading='lazy' className='size-full bg-[var(--paper-2)] object-contain! p-3' />
 	) : (
-		<span aria-hidden='true' className='grid size-12 shrink-0 place-items-center bg-[var(--paper-2)] font-mono text-[10px] font-bold text-[var(--ink-3)]'>
+		<span aria-hidden='true' className='grid size-full place-items-center bg-[var(--paper-2)] font-mono text-[11px] font-bold text-[var(--ink-3)] sm:text-[18px]'>
 			{(acronym ?? '').slice(0, 5)}
 		</span>
 	)
@@ -95,39 +94,35 @@ export function DirectoryIndex() {
 									{/* A list on a phone, cards from a tablet up. */}
 									<ul className='mt-3 grid border-t border-[var(--rule)] sm:mt-4 sm:grid-cols-2 sm:gap-4 sm:border-t-0 lg:grid-cols-3'>
 										{list.map((o) => (
-											<li key={o.slug} className='relative'>
-												<Link scroll={false}
-													href={`/directory/office/${o.slug}`}
-													className='group flex h-full flex-col border-b border-[var(--rule-soft)] py-3 transition sm:border sm:border-[var(--rule)] sm:p-5 sm:hover:border-[var(--ink)] sm:hover:shadow-[0_14px_30px_-22px_rgba(0,0,0,0.5)]'
-												>
-													<span className='hidden items-start justify-between gap-3 sm:flex'>
-														<span className='flex items-center gap-3'>
-															<OfficeLogo slug={o.slug} acronym={o.acronym} />
-															<span className={`${eyebrow} text-[var(--accent)]`}>{o.acronym ?? (o.kind === 'attached' ? 'Office' : 'Ministry')}</span>
-														</span>
-														<ArrowRightIcon size={14} className='mt-0.5 shrink-0 text-[var(--ink-mute)] transition group-hover:translate-x-0.5 group-hover:text-[var(--accent)]' aria-hidden='true' />
-													</span>
-													<span className='text-[15px] font-bold leading-snug group-hover:text-[var(--accent)] sm:mt-2 sm:text-[15.5px]'>{o.name}</span>
-													<span className='mt-auto pt-0.5 text-[13.5px] leading-5 sm:pt-4'>
+											<li key={o.slug} className='bb-frame relative flex min-w-0 gap-4 border-b border-[var(--rule-soft)] bg-transparent! py-3 sm:flex-col sm:gap-0 sm:overflow-hidden sm:border sm:border-[var(--rule)] sm:py-0'>
+												<span className='relative size-16 shrink-0 overflow-hidden sm:h-32 sm:w-full'>
+													<OfficeLogo slug={o.slug} acronym={o.acronym} />
+												</span>
+												<div className='min-w-0 flex-1 sm:p-4'>
+													<p>
+														<Link scroll={false} href={`/directory/office/${o.slug}`} className='text-[15.5px] font-bold leading-snug hover:text-[var(--accent)]'>
+															{o.name}
+														</Link>
+													</p>
+													<p className='mt-0.5 truncate text-[13.5px]'>
 														{o.head ? (
-															<span className='flex items-center gap-3'>
-																<HeadPortrait slug={o.slug} name={o.head.name} className='size-10 sm:size-12' />
-																<span className='min-w-0'>
-																	<span className='block font-semibold'>{o.head.name}</span>
-																	<span className='block text-[var(--ink-3)]'>{o.head.title}</span>
-																</span>
-															</span>
+															<>
+																<span className='text-[var(--ink-3)]'>{o.head.title.replace(/\s*\(.*\)$/, '')}</span> <span className='font-semibold text-[var(--ink)]'>{o.head.name}</span>
+															</>
 														) : (
-															<span className='block text-[var(--ink-3)]'>Head not named in an official source</span>
+															<span className='text-[var(--ink-3)]'>Head not named in an official source</span>
 														)}
-														{o.phones[0] ? (
-															<span className='mt-2 hidden items-center gap-1.5 tabular-nums text-[var(--ink-2)] sm:flex'>
-																<PhoneIcon size={13} aria-hidden='true' /> {o.phones[0]}
+													</p>
+													{o.phones[0] ? (
+														<p className='mt-2 truncate text-[12.5px]'>
+															<a href={telHref(o.phones[0])} className='inline-flex items-center gap-1.5 hover:text-[var(--accent)]'>
+																<PhoneIcon size={12} className='shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
+																<span className='font-semibold tabular-nums'>{o.phones[0]}</span>
 																{o.phones.length > 1 ? <span className='text-[var(--ink-mute)]'>+{o.phones.length - 1}</span> : null}
-															</span>
-														) : null}
-													</span>
-												</Link>
+															</a>
+														</p>
+													) : null}
+												</div>
 											</li>
 										))}
 									</ul>
