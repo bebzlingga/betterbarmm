@@ -140,9 +140,9 @@ export default async function HomePage() {
 
 						<LineReveal
 							lines={[
-								<>
+								<span key='line'>
 									Public records, <span className='bb-mute'>in one place.</span>
-								</>,
+								</span>,
 							]}
 							delay={0.08}
 							// One line at every width: sized to the screen rather than wrapped, up to a step above bb-display-md.

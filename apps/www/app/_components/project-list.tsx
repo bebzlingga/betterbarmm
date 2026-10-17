@@ -1,7 +1,9 @@
 import { ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import outline from '../../../../datasets/accidents/barmm-outline.json'
-import { accidents, typeOf } from '../_lib/accidents'
+import { ACCIDENT_TYPES, accidents, typeOf } from '../_lib/accidents'
+import { commonsThumb, craft, creditOf } from '../_lib/crafts'
+import { PhotoCredit } from './discover-figure'
 
 /* ============================================================
    The projects, for the front page
@@ -21,34 +23,61 @@ export type Project = {
 	state: 'live' | 'soon'
 }
 
-// The thumbnail's box: the mainland and Basilan, where most incidents are, at the card's own proportions.
-// Tawi-Tawi and the Turtle Islands fall outside it; the map itself has them.
-const [W0, W1, S0, S1] = [121.55, 125.05, 6.3, 8.25]
-const px = (lon: number, lat: number) => [((lon - W0) / (W1 - W0)) * 340, (1 - (lat - S0) / (S1 - S0)) * 190] as const
+// The map's box: Basilan to the mainland's eastern towns, where nearly every incident is. Tawi-Tawi and the
+// Turtle Islands fall outside it; the map itself has them. The region is taller than the card is, so the map
+// takes the right of the panel at its own shape and the left carries the count and the kinds.
+const [W0, W1, S0, S1] = [121.85, 125.05, 6.3, 8.3]
+const VW = (W1 - W0) * 100
+const VH = (S1 - S0) * 100
+const px = (lon: number, lat: number) => [(lon - W0) * 100, (S1 - lat) * 100] as const
 
-/** The region's land as one SVG path, worked out once on the server: the map's own outline, washed in the brand crimson. */
+/** The region's land as one SVG path, worked out once on the server from the map's own outline. */
 const REGION = (outline.features as { geometry: { type: string; coordinates: number[][][] | number[][][][] } }[])
 	.flatMap((f) => (f.geometry.type === 'MultiPolygon' ? (f.geometry.coordinates as number[][][][]) : [f.geometry.coordinates as number[][][]]))
 	.flatMap((poly) => poly)
 	.map((ring) => 'M' + ring.map(([lon, lat]) => px(lon!, lat!).map((v) => v.toFixed(1)).join(' ')).join('L') + 'Z')
 	.join('')
 
-/** Every incident as a dot in its kind's colour on the region's outline. */
+const INSIDE = accidents.filter((a) => a.lon >= W0 && a.lon <= W1 && a.lat >= S0 && a.lat <= S1)
+const KINDS = ACCIDENT_TYPES.map((t) => ({ ...t, n: accidents.filter((a) => a.type === t.id).length }))
+	.filter((t) => t.n)
+	.sort((a, b) => b.n - a.n)
+	.slice(0, 4)
+
+/** The region on the page's own light ground, every incident a soft dot in its kind's colour; beside it, the count and the main kinds. */
 function IncidentDots() {
 	return (
-		<svg viewBox='0 0 340 190' className='h-full w-full overflow-hidden' aria-hidden='true'>
-			<path d={REGION} fill='var(--accent)' fillOpacity='0.12' stroke='var(--accent)' strokeOpacity='0.45' strokeWidth='0.7' />
-			{accidents.map((a) => (
-				<circle
-					key={a.id}
-					cx={px(a.lon, a.lat)[0]}
-					cy={px(a.lon, a.lat)[1]}
-					r={a.deaths && a.deaths > 2 ? 3.6 : 2.6}
-					fill={typeOf(a.type).color}
-					fillOpacity={0.85}
-				/>
-			))}
-		</svg>
+		<span className='flex h-full w-full items-stretch bg-[var(--paper-2)] text-[var(--ink-2)]'>
+			<span className='flex w-[42%] shrink-0 flex-col justify-center gap-2 pl-6'>
+				<span className='font-[family-name:var(--font-display)] text-[30px] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>{accidents.length.toLocaleString('en-PH')}</span>
+				<span className='font-mono text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>incidents mapped</span>
+				<span className='mt-1 grid gap-1'>
+					{KINDS.map((t) => (
+						<span key={t.id} className='flex items-center gap-1.5 text-[11px] leading-none'>
+							<span className='size-1.5 shrink-0 rounded-full' style={{ background: t.color }} />
+							<span className='truncate'>{t.label}</span>
+							<span className='tabular-nums text-[var(--ink-3)]'>{t.n}</span>
+						</span>
+					))}
+				</span>
+			</span>
+			<svg viewBox={`0 0 ${VW} ${VH}`} preserveAspectRatio='xMidYMid meet' className='h-full min-w-0 flex-1 py-3 pr-3' aria-hidden='true'>
+				<defs>
+					<filter id='iw-glow' x='-50%' y='-50%' width='200%' height='200%'>
+						<feGaussianBlur stdDeviation='3.2' />
+					</filter>
+				</defs>
+				<path d={REGION} fill='var(--accent)' fillOpacity='0.1' stroke='var(--accent)' strokeOpacity='0.4' strokeWidth='0.8' />
+				<g filter='url(#iw-glow)' opacity='0.45'>
+					{INSIDE.map((a) => (
+						<circle key={a.id} cx={px(a.lon, a.lat)[0]} cy={px(a.lon, a.lat)[1]} r={a.deaths && a.deaths > 2 ? 6.5 : 4.8} fill={typeOf(a.type).color} />
+					))}
+				</g>
+				{INSIDE.map((a) => (
+					<circle key={a.id} cx={px(a.lon, a.lat)[0]} cy={px(a.lon, a.lat)[1]} r={a.deaths && a.deaths > 2 ? 2.6 : 1.9} fill={typeOf(a.type).color} />
+				))}
+			</svg>
+		</span>
 	)
 }
 
@@ -90,33 +119,29 @@ function Checklist() {
 	)
 }
 
-/** A woven band: rows of nested diamonds, the motif Yakan and Sama weavers share. */
-function Weave() {
+// The Crafts card shows a craft itself: the wide photograph of Yakan cloth from a Basilan School of Living Tradition.
+const CRAFT_PHOTO = craft('yakan-tennun')!.images.find((i) => i.width > i.height)!
+
+/** A real piece, the photograph filling the panel; its credit is drawn by the card, outside the card's link. */
+function CraftPhoto() {
 	return (
-		<svg viewBox='0 0 340 190' className='h-full w-full' aria-hidden='true'>
-			<rect x='40' y='40' width='260' height='110' rx='3' fill='#7b4a35' />
-			{[58, 132].map((y) => (
-				<rect key={y} x='40' y={y} width='260' height='4' fill='#c89b4a' />
-			))}
-			{Array.from({ length: 7 }, (_, i) => 66 + i * 35).map((x) =>
-				[22, 14, 6].map((r, j) => <path key={`${x}-${r}`} d={`M${x} ${95 - r} l${r * 0.9} ${r} l${-r * 0.9} ${r} l${-r * 0.9} ${-r} z`} fill={['#e7c9a9', '#b23a2e', '#f4efe8'][j]} />),
-			)}
-		</svg>
+		// eslint-disable-next-line @next/next/no-img-element
+		<img src={commonsThumb(CRAFT_PHOTO.url, 960)} alt='' loading='lazy' className='h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]' />
 	)
 }
 
-const PICTURE = { accidents: IncidentDots, directory: ContactCard, crafts: Weave, services: Checklist } as const
+const PICTURE = { accidents: IncidentDots, directory: ContactCard, crafts: CraftPhoto, services: Checklist } as const
 
 export function ProjectList({ projects }: { projects: Project[] }) {
 	return (
-		// Each card draws its own hairline (overlapping its neighbour's by a pixel), so a row the projects do not
-		// fill shows the page, not a grey block.
-		<ul className='grid sm:grid-cols-2 lg:grid-cols-3'>
+		// Separate cards with room between them, each with its own hairline.
+		<ul className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
 			{projects.map((p) => {
 				const Picture = PICTURE[p.key]
 				const body = (
 					<>
-						<span className='block h-40 border-b border-[var(--rule-soft)] bg-[var(--paper-2)] px-6 py-4'>
+						{/* The picture fills its panel edge to edge; the sketches that do not are inset. */}
+						<span className={`block h-40 overflow-hidden border-b border-[var(--rule-soft)] bg-[var(--paper-2)] ${p.key === 'accidents' || p.key === 'crafts' ? '' : 'px-6 py-4'}`}>
 							<Picture />
 						</span>
 						<span className='block p-6'>
@@ -134,7 +159,7 @@ export function ProjectList({ projects }: { projects: Project[] }) {
 					</>
 				)
 				return (
-					<li key={p.key} className='-mt-px -ml-px border border-[var(--rule)] bg-[var(--paper)]'>
+					<li key={p.key} className='bb-frame relative overflow-hidden border border-[var(--rule)] bg-[var(--paper)]!'>
 						{p.href ? (
 							<Link href={p.href} className='group block h-full transition duration-200 hover:bg-[var(--paper-2)]'>
 								{body}
@@ -142,6 +167,11 @@ export function ProjectList({ projects }: { projects: Project[] }) {
 						) : (
 							<div className='h-full opacity-80'>{body}</div>
 						)}
+						{p.key === 'crafts' ? (
+							<span className='pointer-events-none absolute inset-x-0 top-0 h-40 [&>a]:pointer-events-auto'>
+								<PhotoCredit photo={creditOf(CRAFT_PHOTO)} />
+							</span>
+						) : null}
 					</li>
 				)
 			})}
