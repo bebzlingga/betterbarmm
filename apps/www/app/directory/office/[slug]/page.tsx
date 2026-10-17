@@ -5,7 +5,8 @@ import { notFound } from 'next/navigation'
 import { Phone, linkClass, monthYear } from '../../../_components/directory-bits'
 import { Masthead } from '../../../_components/masthead'
 import { DirectoryDialog } from '../../../_components/directory-dialog'
-import { directoryMeta, directoryOffice, directoryOffices, fieldOffices, officeHistory } from '../../../_lib/directory'
+import { directoryMeta, directoryOffice, directoryOffices, fieldOffices, headPhoto, officeHistory } from '../../../_lib/directory'
+import { HeadPortrait } from '../../../_components/head-portrait'
 import { budgetHref, officeBySlug } from '../../../_lib/services'
 import { pageMeta } from '../../../_lib/seo'
 
@@ -33,6 +34,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 	const parent = o.parent ? directoryOffice(o.parent) : undefined
 	const attached = directoryOffices.filter((x) => x.parent === o.slug)
 	const service = officeBySlug(o.slug)
+	const portrait = headPhoto(o.slug)
 
 	return (
 		<DirectoryDialog id={o.slug} name={o.name}>
@@ -58,13 +60,21 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 					<div>
 						<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Head of office</p>
 						{o.head ? (
-							<>
-								<p className='mt-1 text-[24px] font-extrabold leading-tight tracking-[-0.02em]'>{o.head.name}</p>
-								<p className='mt-1 text-[15px] text-[var(--ink-2)]'>{o.head.title}</p>
-								<a href={o.head.source} target='_blank' rel='noreferrer' className='mt-1 inline-flex items-center gap-0.5 text-[12.5px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
-									{monthYear(o.head.as_of) ? `As of ${monthYear(o.head.as_of)}` : 'Source'} <ArrowUpRightIcon size={11} weight='bold' aria-hidden='true' />
-								</a>
-							</>
+							<div className='mt-2 flex items-start gap-5'>
+								<HeadPortrait slug={o.slug} name={o.head.name} className='size-24 sm:size-28' />
+								<div className='min-w-0'>
+									<p className='text-[24px] font-extrabold leading-tight tracking-[-0.02em]'>{o.head.name}</p>
+									<p className='mt-1 text-[15px] text-[var(--ink-2)]'>{o.head.title}</p>
+									<a href={o.head.source} target='_blank' rel='noreferrer' className='mt-1 inline-flex items-center gap-0.5 text-[12.5px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
+										{monthYear(o.head.as_of) ? `As of ${monthYear(o.head.as_of)}` : 'Source'} <ArrowUpRightIcon size={11} weight='bold' aria-hidden='true' />
+									</a>
+									{portrait ? (
+										<a href={portrait.page} target='_blank' rel='noreferrer' className='mt-0.5 block text-[11.5px] text-[var(--ink-mute)] hover:text-[var(--accent)]'>
+											Portrait: {portrait.credit}
+										</a>
+									) : null}
+								</div>
+							</div>
 						) : (
 							<p className='mt-1 text-[15px] text-[var(--ink-3)]'>Not named in an official source we could read.</p>
 						)}

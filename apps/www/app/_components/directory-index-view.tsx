@@ -1,6 +1,7 @@
 import { ArrowRightIcon, PhoneIcon, SirenIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { linkClass } from './directory-bits'
+import { HeadPortrait } from './head-portrait'
 import { DirectoryPlaces } from './directory-places'
 import { DirectorySearch } from './directory-search'
 import { members } from '../_lib/directory-index'
@@ -93,13 +94,13 @@ export function DirectoryIndex() {
 													<span className='text-[15px] font-bold leading-snug group-hover:text-[var(--accent)] sm:mt-2 sm:text-[15.5px]'>{o.name}</span>
 													<span className='mt-auto pt-0.5 text-[13.5px] leading-5 sm:pt-4'>
 														{o.head ? (
-															<>
-																<span className='font-semibold sm:block'>{o.head.name}</span>
-																<span className='text-[var(--ink-3)] sm:block'>
-																	<span className='sm:hidden'>, </span>
-																	{o.head.title}
+															<span className='flex items-center gap-3'>
+																<HeadPortrait slug={o.slug} name={o.head.name} className='size-10 sm:size-12' />
+																<span className='min-w-0'>
+																	<span className='block font-semibold'>{o.head.name}</span>
+																	<span className='block text-[var(--ink-3)]'>{o.head.title}</span>
 																</span>
-															</>
+															</span>
 														) : (
 															<span className='block text-[var(--ink-3)]'>Head not named in an official source</span>
 														)}

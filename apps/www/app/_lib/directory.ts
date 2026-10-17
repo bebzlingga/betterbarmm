@@ -4,6 +4,7 @@ import { provinceHistory, tookOffice, unitHistory } from '@betterbarmm/lgu-data/
 import emergency from '../../../../datasets/directory/emergency.json'
 import fieldOfficesFile from '../../../../datasets/directory/field-offices.json'
 import historyFile from '../../../../datasets/directory/history.json'
+import headPhotos from '../../../../datasets/directory/head-photos.json'
 import placePhotos from '../../../../datasets/directory/place-photos.json'
 import dataset from '../../../../datasets/directory/offices.json'
 import { offices as serviceOffices } from './services'
@@ -174,3 +175,7 @@ export type PlacePhoto = { url: string; page: string; author: string; license: s
 const photos = placePhotos as { areas: Record<string, PlacePhoto | null>; towns: Record<string, PlacePhoto | null> }
 /** A province's or area's photograph, or a town's (province and town slugs), if one has been found. */
 export const placePhoto = (province: string, town?: string) => (town ? photos.towns[`${province}/${town}`] : photos.areas[province]) ?? null
+
+/** An office head's official portrait, served from this site, with the page it came from. */
+export type HeadPhoto = { src: string; page: string; credit: string }
+export const headPhoto = (slug: string) => (headPhotos.heads as Record<string, HeadPhoto | undefined>)[slug] ?? null

@@ -1,0 +1,36 @@
+{
+ "name": "Portraits of the heads of the Bangsamoro Government offices",
+ "note": "Official portraits of the heads, from BARMM and Parliament sources (public domain unless otherwise stated), resized and cropped to head and shoulders.",
+ "heads": {
+  "office-of-the-chief-minister": {
+   "src": "/directory/heads/office-of-the-chief-minister.jpg",
+   "page": "https://parliament.bangsamoro.gov.ph/member-parliament/macacua-abdulraof-a/",
+   "credit": "Bangsamoro Parliament"
+  },
+  "ministry-of-basic-higher-and-technical-education": {
+   "src": "/directory/heads/ministry-of-basic-higher-and-technical-education.jpg",
+   "page": "https://parliament.bangsamoro.gov.ph/member-parliament/macacua-abdulraof-a/",
+   "credit": "Bangsamoro Parliament"
+  },
+  "ministry-of-social-services-and-development": {
+   "src": "/directory/heads/ministry-of-social-services-and-development.jpg",
+   "page": "https://parliament.bangsamoro.gov.ph/member-parliament/atty-jajurie-raissa-h/",
+   "credit": "Bangsamoro Parliament"
+  },
+  "ministry-of-agriculture-fisheries-and-agrarian-reform": {
+   "src": "/directory/heads/ministry-of-agriculture-fisheries-and-agrarian-reform.jpg",
+   "page": "https://bangsamoro.gov.ph/officials/key-officials/",
+   "credit": "Bangsamoro Government, Key Officials"
+  },
+  "ministry-of-public-works": {
+   "src": "/directory/heads/ministry-of-public-works.jpg",
+   "page": "https://parliament.bangsamoro.gov.ph/members/",
+   "credit": "Bangsamoro Parliament"
+  },
+  "ministry-of-environment-natural-resources-and-energy": {
+   "src": "/directory/heads/ministry-of-environment-natural-resources-and-energy.jpg",
+   "page": "https://menre.bangsamoro.gov.ph/?page_id=6728",
+   "credit": "MENRE, Minister’s Corner"
+  }
+ }
+}
