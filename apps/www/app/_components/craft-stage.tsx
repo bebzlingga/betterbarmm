@@ -17,7 +17,7 @@ const Scene = dynamic(() => import('./craft-scene'), {
 	loading: () => <p className='absolute inset-0 grid place-items-center text-[12.5px] text-[#8a6d5c]'>Shaping it…</p>,
 })
 
-export function CraftStage({ name, model, images, className = '' }: { name: string; model: CraftModel | null; images: CraftImage[]; className?: string }) {
+export function CraftStage({ name, model, images, colors = [], className = '' }: { name: string; model: CraftModel | null; images: CraftImage[]; colors?: string[]; className?: string }) {
 	// -1 is the model; 0… are the photos.
 	const [at, setAt] = useState(model ? -1 : 0)
 	const photo = at >= 0 ? images[at] : undefined
@@ -47,14 +47,24 @@ export function CraftStage({ name, model, images, className = '' }: { name: stri
 						</span>
 					) : model ? (
 						<Scene model={model} label={name} />
-					) : null}
+					) : (
+						// No free photo yet: the craft's colours, and its name, rather than an empty frame.
+						<span
+							className='flex aspect-[4/3] w-full max-w-md items-end rounded-[4px] p-6'
+							style={{ background: `linear-gradient(135deg, ${colors.join(', ') || '#7b4a35, #c89b4a'})` }}
+						>
+							<span className='font-[family-name:var(--font-craft)] text-[28px] font-bold text-white/90 [text-shadow:0_1px_12px_rgba(0,0,0,0.35)]'>{name}</span>
+						</span>
+					)}
 				</div>
 				<figcaption className='mt-3 min-h-8 text-[11.5px] leading-4 text-[#8a6d5c] lg:ml-auto lg:max-w-[22rem] lg:text-right'>
 					{photo ? (
 						<span className='line-clamp-2'>{photo.caption}</span>
 					) : model ? (
 						'A study of its form, drawn here rather than scanned from one piece. Drag to turn it.'
-					) : null}
+					) : (
+						'No freely licensed photo of it found yet.'
+					)}
 				</figcaption>
 			</figure>
 

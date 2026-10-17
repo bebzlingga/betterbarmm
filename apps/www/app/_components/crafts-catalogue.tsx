@@ -57,7 +57,7 @@ export function CraftsCatalogue() {
 			</section>
 
 			{/* The region's own catalogue of the same heritage, read before anything else here. */}
-			<section aria-labelledby='pusaka' className='border-b border-[#e4d8cb] bg-[#efe6dc]'>
+			<section aria-labelledby='pusaka' className='bg-[#efe6dc]'>
 				<div className='mx-auto grid max-w-[84rem] items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-16 lg:py-20'>
 					<a href={PUSAKA.pdf} target='_blank' rel='noreferrer' className='group block'>
 						{/* eslint-disable-next-line @next/next/no-img-element */}
@@ -159,7 +159,7 @@ export function CraftsCatalogue() {
 						</>
 					) : null}
 					<p className='mt-16 text-[12.5px] leading-[1.7] text-[#8a6d5c]'>
-						Every fact here is linked to the page it came from. Photos are from Wikimedia Commons under free licences, each credited on the photo.
+						Every fact here is linked to the page it came from. Photos are from Wikimedia Commons under free licences, each credited on the photo. Items cited to Pusaka come from the commission’s book, by page.
 					</p>
 				</div>
 			</section>

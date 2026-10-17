@@ -43,16 +43,22 @@ export type Craft = {
 
 export const GROUP = {
 	textile: 'Textiles',
+	attire: 'Dress',
 	mat: 'Mats',
+	basketry: 'Basketry',
 	brass: 'Brass',
+	pottery: 'Pottery',
 	instrument: 'Instruments',
 	carving: 'Carving',
 	ornament: 'Ornaments',
 	blade: 'Blades',
+	boat: 'Boats',
 } as const
 
 export const PROVINCE: Record<string, string> = {
 	basilan: 'Basilan',
+	// Pusaka writes of Maguindanao before its 2022 division, so its items name the old province.
+	maguindanao: 'Maguindanao',
 	'lanao-del-sur': 'Lanao del Sur',
 	'maguindanao-del-norte': 'Maguindanao del Norte',
 	'maguindanao-del-sur': 'Maguindanao del Sur',

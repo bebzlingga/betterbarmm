@@ -14,6 +14,11 @@ import { monthYear } from './directory-bits'
 // Important: the shared base styles set the body face on p, li and dd outside any layer.
 const serif = 'font-[family-name:var(--font-craft)]!'
 const label = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em]'
+/** A link as its reader would name it: Pusaka by its page, anything else by its site. */
+const sourceLabel = (s: string) => {
+	const page = s.match(/BARMM-CTB.*#page=(\d+)/)?.[1]
+	return page ? `Pusaka (BCPCH), p. ${page}` : new URL(s).hostname.replace(/^www\./, '')
+}
 const source = 'inline-flex items-center gap-0.5 text-[11.5px] text-[#8a6d5c] hover:text-[#5a3424]'
 
 export function CraftView({ c }: { c: Craft }) {
@@ -54,18 +59,19 @@ export function CraftView({ c }: { c: Craft }) {
 					</div>
 
 					<dl className='grid gap-x-10 gap-y-6 text-[13.5px] leading-[1.6] sm:grid-cols-3 lg:w-[90%]'>
-						<div>
-							<dt className={`${serif} text-[17px] font-bold text-[#f4e8dc]`}>Made in</dt>
-							<dd className='mt-2 text-[#e2cbb8]'>{made}</dd>
-						</div>
-						<div>
-							<dt className={`${serif} text-[17px] font-bold text-[#f4e8dc]`}>Materials</dt>
-							<dd className='mt-2 text-[#e2cbb8]'>{c.materials}</dd>
-						</div>
-						<div>
-							<dt className={`${serif} text-[17px] font-bold text-[#f4e8dc]`}>Worn or used</dt>
-							<dd className='mt-2 text-[#e2cbb8]'>{c.uses}</dd>
-						</div>
+						{/* Only what a source says: a spec it does not give is left out rather than guessed. */}
+						{[
+							['Made in', made],
+							['Materials', c.materials],
+							['Worn or used', c.uses],
+						]
+							.filter(([, v]) => v)
+							.map(([k, v]) => (
+								<div key={k}>
+									<dt className={`${serif} text-[17px] font-bold text-[#f4e8dc]`}>{k}</dt>
+									<dd className='mt-2 text-[#e2cbb8]'>{v}</dd>
+								</div>
+							))}
 					</dl>
 				</div>
 
@@ -73,6 +79,7 @@ export function CraftView({ c }: { c: Craft }) {
 					<CraftStage
 						key={c.slug}
 						name={c.name}
+						colors={c.colors}
 						// The three-dimensional studies are off for now; c.model turns them back on.
 						model={null}
 						images={c.images}
@@ -103,8 +110,12 @@ export function CraftView({ c }: { c: Craft }) {
 
 		<section className='mx-auto grid max-w-[84rem] gap-12 px-4 py-14 sm:px-6 lg:grid-cols-[minmax(0,7fr)_minmax(0,3fr)] lg:py-20'>
 			<div>
-				<h2 className={`${serif} text-[26px] font-bold`}>How it is made</h2>
-				<p className={`${serif} mt-3 max-w-2xl text-[17px] leading-[1.7] text-[#5a3d2e]`}>{c.how_made}</p>
+				{c.how_made ? (
+					<>
+						<h2 className={`${serif} text-[26px] font-bold`}>How it is made</h2>
+						<p className={`${serif} mt-3 max-w-2xl text-[17px] leading-[1.7] text-[#5a3d2e]`}>{c.how_made}</p>
+					</>
+				) : null}
 				{c.motifs?.length ? (
 					<>
 						<h3 className={`${label} mt-10 text-[#8a6d5c]`}>Motifs</h3>
@@ -161,7 +172,7 @@ export function CraftView({ c }: { c: Craft }) {
 					{c.sources.map((s) => (
 						<li key={s}>
 							<a href={s} target='_blank' rel='noreferrer' className='break-all text-[#7b4a35] underline decoration-[#e4d8cb] underline-offset-4 hover:decoration-[#7b4a35]'>
-								{new URL(s).hostname.replace(/^www\./, '')}
+								{sourceLabel(s)}
 							</a>
 						</li>
 					))}
