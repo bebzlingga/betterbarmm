@@ -26,7 +26,7 @@ export function CraftsCatalogue() {
 		<main className='min-h-screen bg-[#f4efe8] text-[#3b2419]'>
 			<SiteHeader activeItem='crafts' />
 
-			<section className='bg-[radial-gradient(ellipse_at_75%_0%,#c8453a,#8f2328_45%,#4a0f14)] px-4 py-16 text-[#f4e8dc] sm:px-6 lg:py-24'>
+			<section className='bg-[radial-gradient(ellipse_at_75%_0%,#b4613f,#7d3f2b_45%,#3e2018)] px-4 py-16 text-[#f4e8dc] sm:px-6 lg:py-24'>
 				<div className='mx-auto grid max-w-[84rem] items-center gap-12 lg:grid-cols-[minmax(0,1fr)_26rem]'>
 					<div>
 					<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[#e7c9a9]'>
