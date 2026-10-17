@@ -1,7 +1,7 @@
 import { ArrowRightIcon, PhoneIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { commonsThumb } from '../_lib/commons'
-import { LINE_LABEL, localGovernments, placePhoto, provinceLines, telHref, townLines, type Line, type PlacePhoto } from '../_lib/directory'
+import { LINE_LABEL, localGovernments, placePhoto, placeSeal, provinceLines, telHref, townLines, type Line, type PlacePhoto } from '../_lib/directory'
 import { barmmBoundaries, lguProvinces, sameUnit } from '@betterbarmm/lgu-data'
 import { PhotoCredit } from './discover-figure'
 import { photo as discoverPhoto, type DiscoverPhotoKey } from './discover-media'
@@ -149,7 +149,15 @@ export function DirectoryPlaces() {
 								return (
 									<li key={u.slug} className='bb-frame relative flex gap-4 border-b border-[var(--rule-soft)] bg-transparent! py-3 sm:flex-col sm:gap-0 sm:overflow-hidden sm:border sm:border-[var(--rule)] sm:py-0'>
 										<span className='relative size-16 shrink-0 overflow-hidden sm:h-32 sm:w-full sm:rounded-none'>
-											{tp ? <Picture photo={tp} name={u.name} size={500} /> : <TownMap province={g.slug} town={u.slug} name={u.name} />}
+											{tp ? (
+												<Picture photo={tp} name={u.name} size={500} />
+											) : placeSeal(g.slug, u.slug) ? (
+												// No photograph: the town's official seal, on the card's ground.
+												// eslint-disable-next-line @next/next/no-img-element
+												<img src={placeSeal(g.slug, u.slug)!.src} alt={`The seal of ${u.name}`} title={`Seal: ${placeSeal(g.slug, u.slug)!.credit}`} loading='lazy' className='size-full bg-[var(--paper-2)] object-contain p-3' />
+											) : (
+												<TownMap province={g.slug} town={u.slug} name={u.name} />
+											)}
 											{tp ? (
 												<span className='hidden sm:contents'>
 													<PhotoCredit photo={credit(tp)} />

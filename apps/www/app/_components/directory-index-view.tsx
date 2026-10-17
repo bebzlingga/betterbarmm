@@ -2,19 +2,31 @@ import { ArrowRightIcon, PhoneIcon, SirenIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { linkClass } from './directory-bits'
 import { HeadPortrait } from './head-portrait'
-import { PhotoCredit } from './discover-figure'
 import { DirectoryPlaces } from './directory-places'
 import { DirectorySearch } from './directory-search'
 import { members } from '../_lib/directory-index'
 import { GetInvolved } from './get-involved'
 import { SiteHeader } from './site-header'
-import { barangayRows, directoryMeta, directoryOffices, hotlines, localGovernments, officePhoto, telHref } from '../_lib/directory'
+import { barangayRows, directoryMeta, directoryOffices, hotlines, localGovernments, officeLogo, telHref } from '../_lib/directory'
 
 
 const GROUPS = [
 	{ kinds: ['office', 'ministry'], title: 'The Chief Minister’s office and the ministries' },
 	{ kinds: ['attached'], title: 'Attached offices, authorities and commissions' },
 ] as const
+
+/** An office's logo in a small square, or its acronym where no logo has been found. */
+function OfficeLogo({ slug, acronym }: { slug: string; acronym: string | null }) {
+	const logo = officeLogo(slug)
+	return logo ? (
+		// eslint-disable-next-line @next/next/no-img-element
+		<img src={logo.src} alt='' title={`Logo: ${logo.credit}`} loading='lazy' className='size-12 shrink-0 object-contain' />
+	) : (
+		<span aria-hidden='true' className='grid size-12 shrink-0 place-items-center bg-[var(--paper-2)] font-mono text-[10px] font-bold text-[var(--ink-3)]'>
+			{(acronym ?? '').slice(0, 5)}
+		</span>
+	)
+}
 
 const sectionHead = 'flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'
 const eyebrow = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em]'
@@ -88,15 +100,11 @@ export function DirectoryIndex() {
 													href={`/directory/office/${o.slug}`}
 													className='group flex h-full flex-col border-b border-[var(--rule-soft)] py-3 transition sm:border sm:border-[var(--rule)] sm:p-5 sm:hover:border-[var(--ink)] sm:hover:shadow-[0_14px_30px_-22px_rgba(0,0,0,0.5)]'
 												>
-													{/* The office's building across the top of the card, from a tablet up. */}
-													{officePhoto(o.slug, o.address) ? (
-														<span className='-mx-5 -mt-5 mb-4 hidden h-32 overflow-hidden bg-[var(--paper-2)] sm:block'>
-															{/* eslint-disable-next-line @next/next/no-img-element */}
-															<img src={officePhoto(o.slug, o.address)!.src} alt='' loading='lazy' className={officePhoto(o.slug, o.address)!.kind === 'emblem' ? 'size-full object-contain p-5' : 'size-full object-cover transition duration-500 group-hover:scale-[1.03]'} />
-														</span>
-													) : null}
 													<span className='hidden items-start justify-between gap-3 sm:flex'>
-														<span className={`${eyebrow} text-[var(--accent)]`}>{o.acronym ?? (o.kind === 'attached' ? 'Office' : 'Ministry')}</span>
+														<span className='flex items-center gap-3'>
+															<OfficeLogo slug={o.slug} acronym={o.acronym} />
+															<span className={`${eyebrow} text-[var(--accent)]`}>{o.acronym ?? (o.kind === 'attached' ? 'Office' : 'Ministry')}</span>
+														</span>
 														<ArrowRightIcon size={14} className='mt-0.5 shrink-0 text-[var(--ink-mute)] transition group-hover:translate-x-0.5 group-hover:text-[var(--accent)]' aria-hidden='true' />
 													</span>
 													<span className='text-[15px] font-bold leading-snug group-hover:text-[var(--accent)] sm:mt-2 sm:text-[15.5px]'>{o.name}</span>
@@ -120,11 +128,6 @@ export function DirectoryIndex() {
 														) : null}
 													</span>
 												</Link>
-												{officePhoto(o.slug, o.address) ? (
-													<span className='pointer-events-none absolute inset-x-px top-px hidden h-32 overflow-hidden sm:block [&>a]:pointer-events-auto'>
-														<PhotoCredit photo={{ credit: officePhoto(o.slug, o.address)!.credit, license: officePhoto(o.slug, o.address)!.license, source: officePhoto(o.slug, o.address)!.page }} />
-													</span>
-												) : null}
 											</li>
 										))}
 									</ul>

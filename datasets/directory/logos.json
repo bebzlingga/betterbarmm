@@ -1,0 +1,74 @@
+{
+ "name": "Logos and seals of the Bangsamoro Government offices and the local governments",
+ "note": "Each office’s logo as its own site or Wikimedia Commons publishes it, and each province’s and town’s official seal from Wikimedia Commons; government works, credited.",
+ "offices": {
+  "ministry-of-public-order-and-safety": {
+   "src": "/directory/offices/ministry-of-public-order-and-safety.png",
+   "page": "https://mpos.bangsamoro.gov.ph/",
+   "credit": "Ministry of Public Order and Safety",
+   "license": "Public domain"
+  },
+  "bangsamoro-planning-and-development-authority": {
+   "src": "/directory/offices/bangsamoro-planning-and-development-authority.png",
+   "page": "https://bpda.bangsamoro.gov.ph/",
+   "credit": "Bangsamoro Planning and Development Authority",
+   "license": "Public domain"
+  },
+  "bangsamoro-pilgrimage-authority": {
+   "src": "/directory/offices/bangsamoro-pilgrimage-authority.png",
+   "page": "https://bpa.bangsamoro.gov.ph/",
+   "credit": "Bangsamoro Pilgrimage Authority",
+   "license": "Public domain"
+  },
+  "bangsamoro-youth-commission": {
+   "src": "/directory/offices/bangsamoro-youth-commission.png",
+   "page": "https://byc.bangsamoro.gov.ph/",
+   "credit": "Bangsamoro Youth Commission",
+   "license": "Public domain"
+  },
+  "bangsamoro-sports-commission": {
+   "src": "/directory/offices/bangsamoro-sports-commission.png",
+   "page": "https://bsc.bangsamoro.gov.ph/bsc-official-logo/",
+   "credit": "Bangsamoro Sports Commission",
+   "license": "Public domain"
+  },
+  "development-academy-of-the-bangsamoro": {
+   "src": "/directory/offices/development-academy-of-the-bangsamoro.png",
+   "page": "https://dab.bangsamoro.gov.ph/",
+   "credit": "Development Academy of the Bangsamoro",
+   "license": "Public domain"
+  },
+  "bangsamoro-board-of-investments": {
+   "src": "/directory/offices/bangsamoro-board-of-investments.png",
+   "page": "https://bboi.bangsamoro.gov.ph/?attachment_id=3731",
+   "credit": "Bangsamoro Board of Investments",
+   "license": "Public domain"
+  },
+  "office-for-settler-communities": {
+   "src": "/directory/offices/office-for-settler-communities.png",
+   "page": "https://osc.bangsamoro.gov.ph/logo.html",
+   "credit": "Office for Settler Communities",
+   "license": "Public domain"
+  },
+  "bangsamoro-science-high-school": {
+   "src": "/directory/offices/bangsamoro-science-high-school.png",
+   "page": "https://bshs.bangsamoro.gov.ph/",
+   "credit": "Bangsamoro Science High School",
+   "license": "Public domain"
+  },
+  "office-of-the-wali-of-bangsamoro": {
+   "src": "/directory/offices/office-of-the-wali-of-bangsamoro.png",
+   "page": "https://wali.bangsamoro.gov.ph/owb-seal-recolor-final/",
+   "credit": "Office of the Wali of Bangsamoro",
+   "license": "Public domain"
+  },
+  "special-geographic-area-development-authority": {
+   "src": "/directory/offices/special-geographic-area-development-authority.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Seal_of_the_Special_Geographic_Area_Development_Authority.png",
+   "credit": "Special Geographic Area Development Authority",
+   "license": "Public domain (Philippine government work; tagged Public domain on Wikimedia Commons)"
+  }
+ },
+ "areas": {},
+ "towns": {}
+}

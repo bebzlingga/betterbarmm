@@ -5,6 +5,7 @@ import emergency from '../../../../datasets/directory/emergency.json'
 import fieldOfficesFile from '../../../../datasets/directory/field-offices.json'
 import historyFile from '../../../../datasets/directory/history.json'
 import headPhotos from '../../../../datasets/directory/head-photos.json'
+import logosFile from '../../../../datasets/directory/logos.json'
 import officePhotos from '../../../../datasets/directory/office-photos.json'
 import placePhotos from '../../../../datasets/directory/place-photos.json'
 import structureFile from '../../../../datasets/directory/structure.json'
@@ -204,3 +205,10 @@ export type OrgSource = string | { url: string; page?: number | null; date?: str
 export type OrgUnit = { name: string; kind: string; head: { name: string; title: string | null; source?: OrgSource } | null; source?: OrgSource; source_kind?: string; units?: OrgUnit[] }
 export type OrgStructure = { as_of: string | null; sources: { label: string; url: string }[]; units: OrgUnit[]; note?: string }
 export const officeStructure = (slug: string) => (structureFile.offices as Record<string, OrgStructure | null | undefined>)[slug] ?? null
+
+/** An office's logo, or a province's or town's seal, served from this site, with the page it came from. */
+export type Logo = { src: string; page: string; credit: string; license: string }
+const logos = logosFile as { offices: Record<string, Logo>; areas: Record<string, Logo>; towns: Record<string, Logo> }
+export const officeLogo = (slug: string) => logos.offices[slug] ?? null
+/** A province's seal, or a town's (province and town slugs). */
+export const placeSeal = (province: string, town?: string) => (town ? logos.towns[`${province}/${town}`] : logos.areas[province]) ?? null
