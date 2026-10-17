@@ -1,4 +1,4 @@
-import { AddressBookIcon, BuildingsIcon, CheckSquareOffsetIcon, CoinsIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon } from '@phosphor-icons/react/ssr'
+import { AddressBookIcon, BuildingsIcon, CheckSquareOffsetIcon, CoinsIcon, DiamondsFourIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon } from '@phosphor-icons/react/ssr'
 import { GlobalSearch } from './global-search'
 import { SwitchCloser } from './switch-closer'
 
@@ -54,6 +54,7 @@ export type WorkspaceKey = (typeof WORKSPACES)[number]['key']
 const PROJECTS = [
 	{ key: 'accidents', href: 'https://betterbarmm.com/accidents', label: 'Incident Watch', icon: SirenIcon },
 	{ key: 'directory', href: 'https://betterbarmm.com/directory', label: 'Directory', icon: AddressBookIcon },
+	{ key: 'crafts', href: 'https://betterbarmm.com/crafts', label: 'Crafts', icon: DiamondsFourIcon },
 ] as const
 
 export type ProjectKey = (typeof PROJECTS)[number]['key']

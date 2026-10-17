@@ -1,0 +1,1483 @@
+{
+ "name": "Crafts of the Bangsamoro",
+ "generatedAt": "2026-10-17",
+ "note": "Textiles, mats, brass, instruments, carving and blades of BARMM, each traced to the pages it came from. Photos are Wikimedia Commons files under free licences. model is drawn by the site from a few numbers; null where only photos are shown.",
+ "items": [
+  {
+   "slug": "inaul",
+   "name": "Inaul",
+   "local_name": "inaul (Maguindanaon)",
+   "group": "textile",
+   "people": "Maguindanaon",
+   "province": "maguindanao-del-sur",
+   "towns": [
+    "Buluan",
+    "Datu Piang",
+    "Sultan Kudarat",
+    "Sultan Mastura"
+   ],
+   "summary": "Inaul is the handwoven cloth of the Maguindanaon; the word itself means \"woven\", and the cloth is mostly sold and worn as a malong. Its patterns are passed down in families, some are inspired by stories, objects or emotions, and some designs were once reserved for royal houses.",
+   "materials": "Cotton (tanor), rayon and shiny katiyado thread; much of the silk thread is sourced from China",
+   "how_made": "Women weave inaul on a hand loom (earlier weavers used backstrap looms); a length takes from 2 days to about 6 days for harder patterns. For the binaludan pattern the weaver dyes the threads, wraps them in banana leaves and dries them in the sun, a resist-dye method similar to ikat.",
+   "uses": "Worn as the malong and also made into tubaw headcloths, shawls, headscarves, bags and gowns.",
+   "motifs": [
+    {
+     "name": "binaludto",
+     "meaning": "rainbow"
+    },
+    {
+     "name": "makabimban",
+     "meaning": "stripes"
+    },
+    {
+     "name": "panigabi",
+     "meaning": "taro"
+    },
+    {
+     "name": "binaludan",
+     "meaning": "wave-like; among the hardest and most expensive patterns"
+    },
+    {
+     "name": "lombayan",
+     "meaning": "sadness"
+    },
+    {
+     "name": "karanda",
+     "meaning": "named after a sultan's precious metal case, from a story of a weaving contest among his wives"
+    }
+   ],
+   "colors": [
+    "#5B2A6E",
+    "#3F7A3A",
+    "#D4A72C",
+    "#B3202A"
+   ],
+   "makers": [
+    {
+     "name": "Normina Collie",
+     "note": "Master weaver who began weaving at 12; described in 2018 as a 7th-generation weaver teaching some 300 weavers in the province.",
+     "source": "https://www.sunstar.com.ph/more-articles/inaul-weaving-one-maguindanao"
+    },
+    {
+     "name": "Noraina \"Jho\" Abbas Ansing",
+     "note": "Master weaver from Barangay Katidtuan, Sultan Kudarat, believed to be the birthplace of inaul; won the malong weaving contest at the Inaul Festival and trains young women.",
+     "source": "https://www.rappler.com/culture-desk/style/226823-maguindanao-weaving-tradition-inaul/"
+    },
+    {
+     "name": "Bia Abdullah and Norhaya Gulang",
+     "note": "Aunt and niece weavers from Datu Piang who competed in the Kapaginaul weaving competition.",
+     "source": "https://www.sunstar.com.ph/more-articles/inaul-weaving-one-maguindanao"
+    },
+    {
+     "name": "Women Center weaving section, Buluan",
+     "note": "Provincial weaving centre where many weavers are wives of former Moro rebels; reported in 2018.",
+     "source": "https://ptvnews.ph/reviving-dying-inaul-industry-thru-festival-maguindanao/"
+    }
+   ],
+   "where_to_see": [
+    {
+     "name": "Inaul Festival",
+     "place": "Buluan, Maguindanao del Sur",
+     "note": "February; weaving competition, inaul gown exhibit and trade expo.",
+     "source": "https://www.sunstar.com.ph/more-articles/inaul-weaving-one-maguindanao"
+    },
+    {
+     "name": "Women Center",
+     "place": "Buluan, Maguindanao del Sur",
+     "note": "In 2018 the one inaul weaving centre was in Buluan, though most women wove at home.",
+     "source": "https://bworldonline.com/arts-and-leisure/2018/01/29/118283/inaul-weaving-festival-serves-centerpiece-armm-tourism/"
+    },
+    {
+     "name": "Old Cotabato City Hall exhibit",
+     "place": "Cotabato City",
+     "note": "An inaul fabric is shown in the museum exhibit inside the old city hall (as photographed on Wikimedia Commons).",
+     "source": "https://commons.wikimedia.org/wiki/File:Cotabato_City_Hall_Museum_Exhibit_3.jpg"
+    }
+   ],
+   "price": {
+    "text": "₱2,500–₱5,000 for an inaul malong, depending on the cloth and design",
+    "source": "https://ptvnews.ph/reviving-dying-inaul-industry-thru-festival-maguindanao/",
+    "as_of": "2018-02"
+   },
+   "sources": [
+    "https://www.sunstar.com.ph/more-articles/inaul-weaving-one-maguindanao",
+    "https://ptvnews.ph/reviving-dying-inaul-industry-thru-festival-maguindanao/",
+    "https://www.rappler.com/culture-desk/style/226823-maguindanao-weaving-tradition-inaul/",
+    "https://bworldonline.com/arts-and-leisure/2018/01/29/118283/inaul-weaving-festival-serves-centerpiece-armm-tourism/",
+    "https://en.wikipedia.org/wiki/Malong"
+   ],
+   "images": [
+    {
+     "file": "File:Cotabato City Hall Museum Exhibit 3.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Cotabato_City_Hall_Museum_Exhibit_3.jpg/1920px-Cotabato_City_Hall_Museum_Exhibit_3.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Cotabato_City_Hall_Museum_Exhibit_3.jpg",
+     "author": "MarkoDalisay",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1920,
+     "height": 2560,
+     "caption": "Inaul fabric on display in the old Cotabato City Hall"
+    },
+    {
+     "file": "File:Inaul Festival of Datu Piang, Maguindanao.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Inaul_Festival_of_Datu_Piang%2C_Maguindanao.jpg/1920px-Inaul_Festival_of_Datu_Piang%2C_Maguindanao.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Inaul_Festival_of_Datu_Piang,_Maguindanao.jpg",
+     "author": "Ranieljosecastaneda",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1920,
+     "height": 3291,
+     "caption": "Dancer from Datu Piang at the Inaul Festival, Maguindanao"
+    }
+   ],
+   "model": {
+    "kind": "hanging",
+    "pattern": {
+     "style": "plaid",
+     "colors": [
+      "#5B2A6E",
+      "#3F7A3A",
+      "#D4A72C",
+      "#B3202A"
+     ]
+    }
+   }
+  },
+  {
+   "slug": "malong-a-landap",
+   "name": "Malong a landap",
+   "local_name": "malong a landap (Maranao)",
+   "group": "textile",
+   "people": "Maranao",
+   "province": "lanao-del-sur",
+   "towns": [
+    "Marawi City",
+    "Tugaya"
+   ],
+   "summary": "The malong a landap is the Maranao tube skirt made of broad plain-coloured panels joined by woven langkit bands. Handwoven landap are costly and worn at social functions, and their colours carry rank: yellow for sultans, red for warriors and green for imams.",
+   "materials": "Silk or rayon, with cotton or rayon langkit bands",
+   "how_made": "Separate panels are woven and joined into a tube by langkit strips, with 2 narrow tobrian strips running across and a single broader lakban down the middle. Langkit for the landap is woven on the backstrap loom, and in Tugaya the complex panels are made by needle-weaving.",
+   "uses": "Worn by men and women as a skirt or wrap at weddings, feasts and other formal occasions.",
+   "motifs": [
+    {
+     "name": "yellow landap",
+     "meaning": "worn by sultans; leadership, dignity and nobility"
+    },
+    {
+     "name": "red landap",
+     "meaning": "colour of warriors; courage and protection"
+    },
+    {
+     "name": "green landap",
+     "meaning": "for imams; faith, wisdom and guidance"
+    }
+   ],
+   "colors": [
+    "#B0124F",
+    "#E0A526",
+    "#2E6B3F",
+    "#4B1E5A"
+   ],
+   "makers": [
+    {
+     "name": "Maranao Collectibles",
+     "note": "Social enterprise of Salika and Jardin Samad, founded after the 2017 Marawi siege; it produces 200–500 metres of fabric a month.",
+     "source": "https://www.metrocagayandemisamis.com/2026/02/19/the-heart-of-tradition-the-keeper-of-the-okir/"
+    },
+    {
+     "name": "Saadira (Saadera \"Dida\") Shiek Basmala",
+     "note": "Veteran Marawi weaver nominated by the BCPCH-Lanao del Sur for the GAMABA National Living Treasures Award.",
+     "source": "https://www.metrocagayandemisamis.com/2026/02/19/the-heart-of-tradition-the-keeper-of-the-okir/"
+    }
+   ],
+   "where_to_see": [
+    {
+     "name": "Langkit Festival",
+     "place": "Marawi City",
+     "note": "August, during the week of the city charter anniversary.",
+     "source": "https://tribune.net.ph/2024/08/13/langkit-festival"
+    }
+   ],
+   "price": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Malong",
+    "https://www.metrocagayandemisamis.com/2026/02/19/the-heart-of-tradition-the-keeper-of-the-okir/",
+    "https://narrastudio.com/blogs/journal/langkit-weaving-binding-fabrics-connecting-maranao-communities",
+    "https://en.wikipedia.org/wiki/Tugaya",
+    "https://tribune.net.ph/2024/08/13/langkit-festival"
+   ],
+   "images": [
+    {
+     "file": "File:Malong (tube skirt) from Mindanao, Honolulu Museum of Art 9178.1.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Malong_%28tube_skirt%29_from_Mindanao%2C_Honolulu_Museum_of_Art_9178.1.JPG/1920px-Malong_%28tube_skirt%29_from_Mindanao%2C_Honolulu_Museum_of_Art_9178.1.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Malong_(tube_skirt)_from_Mindanao,_Honolulu_Museum_of_Art_9178.1.JPG",
+     "author": "Hiart",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "width": 1920,
+     "height": 4258,
+     "caption": "Maranao malong a landap of silk or rayon with tapestry-woven bands, Honolulu Museum of Art"
+    },
+    {
+     "file": "File:Malong (tube skirt) from Mindanao, Honolulu Museum of Art 14180.1.JPG",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Malong_%28tube_skirt%29_from_Mindanao%2C_Honolulu_Museum_of_Art_14180.1.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Malong_(tube_skirt)_from_Mindanao,_Honolulu_Museum_of_Art_14180.1.JPG",
+     "author": "Hiart",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "width": 1684,
+     "height": 2840,
+     "caption": "Maranao malong in yellow and magenta panels with patterned bands, mid-20th century, Honolulu Museum of Art"
+    }
+   ],
+   "model": {
+    "kind": "tube",
+    "pattern": {
+     "style": "band",
+     "colors": [
+      "#B0124F",
+      "#E0A526",
+      "#2E6B3F",
+      "#4B1E5A"
+     ]
+    }
+   }
+  },
+  {
+   "slug": "langkit",
+   "name": "Langkit",
+   "local_name": "langkit (Maranao)",
+   "group": "textile",
+   "people": "Maranao",
+   "province": "lanao-del-sur",
+   "towns": [
+    "Marawi City",
+    "Tugaya"
+   ],
+   "summary": "Langkit are narrow, multicoloured woven strips that join and decorate the panels of a Maranao malong. A trained eye could once tell which part of the Lake Lanao region a person came from by the patterns of their malong and langkit.",
+   "materials": "Coloured thread (silk, cotton or rayon)",
+   "how_made": "The weaver chooses colours with the final pattern in mind, lays the threads on a warp board and moves them to a backstrap loom tied to a post, sitting on the floor and adjusting the tension with her back. Sequences are memorised without written manuals, and a seasoned weaver can finish a 1-metre langkit in a day.",
+   "uses": "Sewn onto the malong a landap, and now also used on dresses, shirts, bookmarks, straps and table runners.",
+   "motifs": [
+    {
+     "name": "potiok",
+     "meaning": "bud"
+    },
+    {
+     "name": "dapal or raon",
+     "meaning": "leaf"
+    },
+    {
+     "name": "katorai",
+     "meaning": "flower"
+    },
+    {
+     "name": "pako or piako",
+     "meaning": "fern"
+    },
+    {
+     "name": "pako rabong",
+     "meaning": "growing fern"
+    },
+    {
+     "name": "mayan sa palaw",
+     "meaning": "mountain-like"
+    },
+    {
+     "name": "biabak",
+     "meaning": "frog"
+    },
+    {
+     "name": "sarimanok",
+     "meaning": "the bird of legend"
+    },
+    {
+     "name": "tinaburo",
+     "meaning": "diamond shape"
+    },
+    {
+     "name": "tuwak-tuwak",
+     "meaning": "triangle or staircase"
+    }
+   ],
+   "colors": [
+    "#6B1F5C",
+    "#E2B13C",
+    "#C8352E",
+    "#2F6E4F"
+   ],
+   "makers": [
+    {
+     "name": "Dayawan Loom Weaving Producers Cooperative",
+     "note": "Marawi weavers' cooperative led by Saadia S. Abdulrahman.",
+     "source": "https://www.metrocagayandemisamis.com/2024/08/17/langkit-weaving-tradition-through-the-market-maze/"
+    },
+    {
+     "name": "Maranao Collectibles",
+     "note": "Began teaching langkit weaving to evacuees in Iligan after the 2017 siege; developed the Jardin Hybrid Loom, a raised-seat backstrap loom that won a 2023 grassroots innovation award.",
+     "source": "https://www.metrocagayandemisamis.com/2026/02/19/the-heart-of-tradition-the-keeper-of-the-okir/"
+    },
+    {
+     "name": "Saadera \"Dida\" Shiek Basmala",
+     "note": "Langkit weaver since about age 8, demonstrated at the April 2024 Okir Art Exhibit.",
+     "source": "https://www.metrocagayandemisamis.com/2024/08/17/langkit-weaving-tradition-through-the-market-maze/"
+    }
+   ],
+   "where_to_see": [
+    {
+     "name": "Langkit Festival and competition",
+     "place": "Marawi City",
+     "note": "August; Marawi names its week-long charter celebration after the langkit, and the city government holds a langkit competition.",
+     "source": "https://tribune.net.ph/2024/08/13/langkit-festival"
+    },
+    {
+     "name": "Weaving demonstrations",
+     "place": "Marawi City",
+     "note": "A group of expert women weavers holds demonstrations for tourists.",
+     "source": "https://tribune.net.ph/2024/08/13/langkit-festival"
+    }
+   ],
+   "price": null,
+   "sources": [
+    "https://www.metrocagayandemisamis.com/2024/08/17/langkit-weaving-tradition-through-the-market-maze/",
+    "https://www.metrocagayandemisamis.com/2026/02/19/the-heart-of-tradition-the-keeper-of-the-okir/",
+    "https://tribune.net.ph/2024/08/13/langkit-festival",
+    "https://en.wikipedia.org/wiki/Okir",
+    "https://en.wikipedia.org/wiki/Tugaya"
+   ],
+   "images": [
+    {
+     "file": "File:Malong (tube skirt) from Mindanao, Honolulu Museum of Art 9178.1.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Malong_%28tube_skirt%29_from_Mindanao%2C_Honolulu_Museum_of_Art_9178.1.JPG/1920px-Malong_%28tube_skirt%29_from_Mindanao%2C_Honolulu_Museum_of_Art_9178.1.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Malong_(tube_skirt)_from_Mindanao,_Honolulu_Museum_of_Art_9178.1.JPG",
+     "author": "Hiart",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "width": 1920,
+     "height": 4258,
+     "caption": "Langkit bands running down and across a Maranao malong a landap, Honolulu Museum of Art",
+     "focus": "50% 88%"
+    }
+   ],
+   "model": {
+    "kind": "hanging",
+    "pattern": {
+     "style": "band",
+     "colors": [
+      "#6B1F5C",
+      "#E2B13C",
+      "#C8352E",
+      "#2F6E4F"
+     ]
+    }
+   }
+  },
+  {
+   "slug": "yakan-tennun",
+   "name": "Yakan weaving",
+   "local_name": "tennun (Yakan); seputangan, bunga sama",
+   "group": "textile",
+   "people": "Yakan",
+   "province": "basilan",
+   "towns": [
+    "Lamitan City"
+   ],
+   "summary": "Yakan tennun is the dense, brightly patterned woven cloth of the Yakan of Basilan, made in named categories such as the seputangan, sinaluan and bunga sama. The seputangan, worn by women at the waist or as a head cloth, is the most intricate design.",
+   "materials": "Traditionally pineapple and abaca fibre coloured with plant dyes; chemical dyes are now common",
+   "how_made": "Yakan weavers traditionally dyed plant fibres with extracts of leaves, roots and bark and wove them into geometric patterns, so that no two finished cloths are exactly alike. Chemical dyes and new products such as table runners and purses came with outside contact.",
+   "uses": "Worn as head and waist cloths and as Yakan attire, notably in the Lami-Lamihan Festival parade.",
+   "motifs": [
+    {
+     "name": "seputangan",
+     "meaning": "the most intricate design, worn at the waist or as a head cloth"
+    },
+    {
+     "name": "palipattang",
+     "meaning": "patterned after the colours of the rainbow"
+    },
+    {
+     "name": "bunga sama",
+     "meaning": "patterned after the python"
+    },
+    {
+     "name": "kenna-kenna",
+     "meaning": "fish"
+    },
+    {
+     "name": "dawen-dawen",
+     "meaning": "leaf of a vine"
+    },
+    {
+     "name": "pene mata-mata",
+     "meaning": "eye shape"
+    },
+    {
+     "name": "kabang buddi",
+     "meaning": "diamond shape"
+    }
+   ],
+   "colors": [
+    "#C62828",
+    "#F2B705",
+    "#2E7D32",
+    "#5E2A84"
+   ],
+   "makers": [
+    {
+     "name": "Ambalang Ausalin (1943–2022)",
+     "note": "Master Yakan weaver of Parangbasak, Lamitan; National Living Treasure (GAMABA) 2016, known for the sinaluan and seputangan.",
+     "source": "https://en.wikipedia.org/wiki/Ambalang_Ausalin"
+    },
+    {
+     "name": "Berty Ausalin",
+     "note": "Her eldest son, who led the June 2024 opening of the GAMABA Weaving Center and Ambalang Museum.",
+     "source": "https://en.wikipedia.org/wiki/Ambalang_Ausalin"
+    }
+   ],
+   "where_to_see": [
+    {
+     "name": "GAMABA Weaving Center and Ambalang Museum",
+     "place": "Lamitan City, Basilan",
+     "note": "Opened in June 2024; features Yakan culture.",
+     "source": "https://en.wikipedia.org/wiki/Ambalang_Ausalin"
+    },
+    {
+     "name": "Lami-Lamihan Festival",
+     "place": "Lamitan City, Basilan",
+     "note": "June; residents parade in hand-woven Yakan attire.",
+     "source": "https://www.sunstar.com.ph/zamboanga/lami-lamihan-festival-2025-reels-off"
+    }
+   ],
+   "price": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yakan_people",
+    "https://en.wikipedia.org/wiki/Ambalang_Ausalin",
+    "https://en.wikipedia.org/wiki/National_Living_Treasures_Award",
+    "https://www.sunstar.com.ph/zamboanga/lami-lamihan-festival-2025-reels-off"
+   ],
+   "images": [
+    {
+     "file": "File:Tennum Ambalang Ausalin Lamitan Basilan Islamic weavingA.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Tennum_Ambalang_Ausalin_Lamitan_Basilan_Islamic_weavingA.jpg/1920px-Tennum_Ambalang_Ausalin_Lamitan_Basilan_Islamic_weavingA.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Tennum_Ambalang_Ausalin_Lamitan_Basilan_Islamic_weavingA.jpg",
+     "author": "Valenzuela400",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1920,
+     "height": 2794,
+     "caption": "Seputangan head cloth woven by Ambalang Ausalin of Lamitan, Basilan, shown at the 2024 National Arts and Crafts Fair"
+    },
+    {
+     "file": "File:Tennum Ambalang Ausalin Lamitan Basilan Islamic head clothB.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Tennum_Ambalang_Ausalin_Lamitan_Basilan_Islamic_head_clothB.jpg/1920px-Tennum_Ambalang_Ausalin_Lamitan_Basilan_Islamic_head_clothB.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Tennum_Ambalang_Ausalin_Lamitan_Basilan_Islamic_head_clothB.jpg",
+     "author": "Valenzuela400",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1920,
+     "height": 1418,
+     "caption": "Yakan tennun head cloth from the Ambalang Ausalin weaving tradition, Lamitan, Basilan"
+    },
+    {
+     "file": "File:Badju Yakan attire Tenun Ambalang AusalinA.jpg",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Badju_Yakan_attire_Tenun_Ambalang_AusalinA.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Badju_Yakan_attire_Tenun_Ambalang_AusalinA.jpg",
+     "author": "Valenzuela400",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1874,
+     "height": 3964,
+     "caption": "Yakan attire of woven tennun associated with Ambalang Ausalin, at the 2024 National Arts and Crafts Fair"
+    },
+    {
+     "file": "File:Basilan SLT Community folk fabricsA.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Basilan_SLT_Community_folk_fabricsA.jpg/1920px-Basilan_SLT_Community_folk_fabricsA.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Basilan_SLT_Community_folk_fabricsA.jpg",
+     "author": "Valenzuela400",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1920,
+     "height": 1159,
+     "caption": "Yakan fabrics from a Basilan School of Living Tradition community"
+    }
+   ],
+   "model": {
+    "kind": "hanging",
+    "pattern": {
+     "style": "diamond",
+     "colors": [
+      "#C62828",
+      "#F2B705",
+      "#2E7D32",
+      "#5E2A84"
+     ]
+    }
+   }
+  },
+  {
+   "slug": "tepo",
+   "name": "Sama pandan mat",
+   "local_name": "tepo (Sama)",
+   "group": "mat",
+   "people": "Sama",
+   "province": "tawi-tawi",
+   "towns": [
+    "Tandubas (Ungos Matata)",
+    "Mapun"
+   ],
+   "summary": "Tepo are the pandan mats of the Sama of Tawi-Tawi, woven in stripes, multicoloured squares, checks and zigzags. Mats from Ungos Matata island in Tandubas are less pliable but more vivid in colour than the softer mats of Laminusa in Sulu.",
+   "materials": "Pandan leaves (Pandanus), dyed",
+   "how_made": "Pandan leaves are harvested, dried, dyed and woven into designs. The craft is passed down among women, traditionally from mother to daughter.",
+   "uses": "Used as sleeping and floor mats and often hung as wall decorations.",
+   "motifs": [
+    {
+     "name": "stripes, multicoloured squares, checks and zigzags",
+     "meaning": "the most common tepo patterns"
+    }
+   ],
+   "colors": [
+    "#D81B7A",
+    "#1E8C8C",
+    "#E8C33A",
+    "#F2E6C9"
+   ],
+   "makers": [
+    {
+     "name": "Haja Amina Appi (1925–2013)",
+     "note": "Sama master mat weaver of Ungos Matata, Tandubas; National Living Treasure (GAMABA) 2004, who mixed her own dyes where older Sama mats were plain white.",
+     "source": "https://en.wikipedia.org/wiki/Haja_Amina_Appi"
+    },
+    {
+     "name": "Rohainie Amendo",
+     "note": "Weaver from a family of weavers in Mapun, Tawi-Tawi, who learned by watching her grandmother.",
+     "source": "https://tribune.net.ph/2025/10/27/traditional-weaver-from-tawi-tawi"
+    }
+   ],
+   "where_to_see": [
+    {
+     "name": "National Arts and Crafts Fair",
+     "place": "SM Megamall, Mandaluyong City (outside BARMM)",
+     "note": "October; Tawi-Tawi weavers have demonstrated tepo weaving at the fair.",
+     "source": "https://tribune.net.ph/2025/10/27/traditional-weaver-from-tawi-tawi"
+    }
+   ],
+   "price": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Banig",
+    "https://en.wikipedia.org/wiki/Haja_Amina_Appi",
+    "https://tribune.net.ph/2024/10/25/tepo-mat-weaver-laminusa-siasi",
+    "https://tribune.net.ph/2025/10/27/traditional-weaver-from-tawi-tawi",
+    "https://en.wikipedia.org/wiki/National_Living_Treasures_Award"
+   ],
+   "images": [
+    {
+     "file": "File:Tepo Tandubas Sama Bajau mat Pandanus Haja Amina AppiA.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Tepo_Tandubas_Sama_Bajau_mat_Pandanus_Haja_Amina_AppiA.jpg/1920px-Tepo_Tandubas_Sama_Bajau_mat_Pandanus_Haja_Amina_AppiA.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Tepo_Tandubas_Sama_Bajau_mat_Pandanus_Haja_Amina_AppiA.jpg",
+     "author": "Valenzuela400",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1920,
+     "height": 3759,
+     "caption": "Tepo mat from Ungos Matata, Tandubas, Tawi-Tawi, in the tradition of Haja Amina Appi, shown at the 2024 National Arts and Crafts Fair"
+    },
+    {
+     "file": "File:Tepo Tandubas Sama Bajau mat Pandanus Haja Amina Appi TreasureB.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Tepo_Tandubas_Sama_Bajau_mat_Pandanus_Haja_Amina_Appi_TreasureB.jpg/1920px-Tepo_Tandubas_Sama_Bajau_mat_Pandanus_Haja_Amina_Appi_TreasureB.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Tepo_Tandubas_Sama_Bajau_mat_Pandanus_Haja_Amina_Appi_TreasureB.jpg",
+     "author": "Valenzuela400",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1920,
+     "height": 2669,
+     "caption": "Close view of a Tandubas tepo mat with geometric patterns"
+    },
+    {
+     "file": "File:Sibutu Tawi Tawi Sama Bajau pandan Banig mat textile colorfulF.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Sibutu_Tawi_Tawi_Sama_Bajau_pandan_Banig_mat_textile_colorfulF.jpg/1920px-Sibutu_Tawi_Tawi_Sama_Bajau_pandan_Banig_mat_textile_colorfulF.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Sibutu_Tawi_Tawi_Sama_Bajau_pandan_Banig_mat_textile_colorfulF.jpg",
+     "author": "Valenzuela400",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1920,
+     "height": 2560,
+     "caption": "Sama pandan mat from Sibutu, Tawi-Tawi"
+    },
+    {
+     "file": "File:Sibiya Jawahari Bahali Sama Tepo 2026-10-03 Maluso Basilan 01.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Sibiya_Jawahari_Bahali_Sama_Tepo_2026-10-03_Maluso_Basilan_01.jpg/1920px-Sibiya_Jawahari_Bahali_Sama_Tepo_2026-10-03_Maluso_Basilan_01.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Sibiya_Jawahari_Bahali_Sama_Tepo_2026-10-03_Maluso_Basilan_01.jpg",
+     "author": "P1898",
+     "license": "CC BY 4.0",
+     "license_url": "https://creativecommons.org/licenses/by/4.0",
+     "width": 1920,
+     "height": 2513,
+     "caption": "Sama tepo weaver Sibiya Jawahari Bahali of Maluso, Basilan, with her mats"
+    }
+   ],
+   "model": {
+    "kind": "mat",
+    "pattern": {
+     "style": "diamond",
+     "colors": [
+      "#F2E6C9",
+      "#D81B7A",
+      "#1E8C8C",
+      "#E8C33A"
+     ]
+    }
+   }
+  },
+  {
+   "slug": "gador",
+   "name": "Maranao brass urn",
+   "local_name": "gador / gadur (Maranao)",
+   "group": "brass",
+   "people": "Maranao",
+   "province": "lanao-del-sur",
+   "towns": [
+    "Tugaya"
+   ],
+   "summary": "The gador is a lidded Maranao brass urn, cast in traditional forms and often made in pairs. Its silver-inlaid floral and geometric okir decoration is what sets Maranao brassware apart from that of the rest of island Southeast Asia.",
+   "materials": "Brass or bronze, with silver inlay",
+   "how_made": "Tugaya foundries cast gador by the lost-wax (cire perdue) method, then inlay silver-alloy patterns into the surface. The craft is concentrated in Tugaya's barangays of Lumbac, Bubong and Pandiaranao.",
+   "uses": "Kept in Maranao homes, including the torogan, as containers for belongings, food and water.",
+   "motifs": [
+    {
+     "name": "okir",
+     "meaning": "Maranao floral and geometric scroll designs, inlaid in silver"
+    }
+   ],
+   "colors": [
+    "#B08D57",
+    "#5A4632",
+    "#D9D4C7",
+    "#7A6A4F"
+   ],
+   "makers": [
+    {
+     "name": "Tugaya brassware barangays",
+     "note": "Lumbac, Bubong and Pandiaranao specialise in brassware-making.",
+     "source": "https://web.archive.org/web/20260606013421/https://old.pcij.org/stories/armm-town-thrives-on-traditional-arts/"
+    }
+   ],
+   "where_to_see": [
+    {
+     "name": "Tugaya brassware workshops",
+     "place": "Tugaya, Lanao del Sur",
+     "note": "Newly made brassware is displayed outside households; the town also built a display centre by the national highway.",
+     "source": "https://web.archive.org/web/20260606013421/https://old.pcij.org/stories/armm-town-thrives-on-traditional-arts/"
+    }
+   ],
+   "price": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tugaya",
+    "https://web.archive.org/web/20260606013421/https://old.pcij.org/stories/armm-town-thrives-on-traditional-arts/",
+    "https://www.roots.gov.sg/Collection-Landing/listing/1250509",
+    "https://en.wikipedia.org/wiki/Torogan"
+   ],
+   "images": [
+    {
+     "file": "File:Food jar (gadur), Mindanao, Maranao, brass with silver inlay, Honolulu Academy of Arts.JPG",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Food_jar_%28gadur%29%2C_Mindanao%2C_Maranao%2C_brass_with_silver_inlay%2C_Honolulu_Academy_of_Arts.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Food_jar_(gadur),_Mindanao,_Maranao,_brass_with_silver_inlay,_Honolulu_Academy_of_Arts.JPG",
+     "author": "Haa900",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "width": 1450,
+     "height": 2360,
+     "caption": "Maranao food jar (gadur) of brass with silver inlay, Honolulu Museum of Art"
+    }
+   ],
+   "model": {
+    "kind": "vessel",
+    "shape": "gador"
+   }
+  },
+  {
+   "slug": "lotowan",
+   "name": "Maranao betel box",
+   "local_name": "lotowan / lutuan (Maranao)",
+   "group": "brass",
+   "people": "Maranao",
+   "province": "lanao-del-sur",
+   "towns": [],
+   "summary": "The lotowan is a lidded brass box for betel nut and its ingredients, part of the Maranao betel (sireh) set. Museum pieces from Lanao del Sur are covered in silver-inlaid okir scrolls and flowers.",
+   "materials": "Brass with silver inlay; some sets carry a beaded strap",
+   "how_made": "The box is cast in brass and decorated by inlaying, stamping and incising silver designs. The silver-inlay technique is described as unique to Maranao brasswork.",
+   "uses": "Holds betel nut and its ingredients as part of a betel (sireh) set.",
+   "motifs": [
+    {
+     "name": "okir",
+     "meaning": "geometric and floral designs drawn from Maranao woodcarving"
+    }
+   ],
+   "colors": [
+    "#C2A36B",
+    "#6B5638",
+    "#E3DED2"
+   ],
+   "makers": [],
+   "where_to_see": [
+    {
+     "name": "Spencer Museum of Art",
+     "place": "Lawrence, Kansas, USA",
+     "note": "Holds a lotowan made in Lanao del Sur.",
+     "source": "https://spencerart.ku.edu/art/collections-online/object/33794"
+    },
+    {
+     "name": "Asian Civilisations Museum",
+     "place": "Singapore",
+     "note": "Holds a Maranao inlaid brass betel set.",
+     "source": "https://www.roots.gov.sg/Collection-Landing/listing/1250509"
+    }
+   ],
+   "price": null,
+   "sources": [
+    "https://spencerart.ku.edu/art/collections-online/object/33794",
+    "https://www.roots.gov.sg/Collection-Landing/listing/1250509",
+    "https://en.wikipedia.org/wiki/Tugaya"
+   ],
+   "images": [
+    {
+     "file": "File:Betel box from the Philippines, Mindanao, Maranao people, probably 20th century, copper alloy with silver inlay, HAA.JPG",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Betel_box_from_the_Philippines%2C_Mindanao%2C_Maranao_people%2C_probably_20th_century%2C_copper_alloy_with_silver_inlay%2C_HAA.JPG/1920px-Betel_box_from_the_Philippines%2C_Mindanao%2C_Maranao_people%2C_probably_20th_century%2C_copper_alloy_with_silver_inlay%2C_HAA.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Betel_box_from_the_Philippines,_Mindanao,_Maranao_people,_probably_20th_century,_copper_alloy_with_silver_inlay,_HAA.JPG",
+     "author": "Hiart",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "width": 1920,
+     "height": 1083,
+     "caption": "Maranao betel box of copper alloy with silver inlay, probably 20th century, Honolulu Museum of Art"
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "kulintang",
+   "name": "Kulintang",
+   "local_name": "kulintang (Maguindanaon); kolintang (Maranao)",
+   "group": "instrument",
+   "people": "Maguindanaon, Maranao",
+   "province": "lanao-del-sur",
+   "towns": [
+    "Tugaya"
+   ],
+   "summary": "The kulintang is a row of 5 to 9 small knobbed gongs laid on a frame and played as the melody of an ensemble with larger hanging gongs and a drum. There is no fixed tuning, so every set has its own pitch, intervals and tone.",
+   "materials": "Bronze traditionally, now mostly brass; wooden or bamboo frame",
+   "how_made": "Each gong is cast by the lost-wax method in a mould of wax coated with powdered coal and mud, then tuned by ear by hammering the boss from inside or outside. The frame (antangan in Maguindanaon, langkonga in Maranao) can be carved with okir.",
+   "uses": "Played at gatherings and festivals; traditionally a women's instrument, though men now play it too.",
+   "colors": [
+    "#B5892E",
+    "#7A1F1F",
+    "#2D5C3A",
+    "#E6C36A"
+   ],
+   "makers": [
+    {
+     "name": "Tugaya metalworkers",
+     "note": "Tugaya households make gongs, drums and other instruments.",
+     "source": "https://www.rappler.com/philippines/mindanao/okir-art-exhibit-cagayan-de-oro-art-cool-maranao-youth/"
+    }
+   ],
+   "where_to_see": [
+    {
+     "name": "Langkit Festival",
+     "place": "Marawi City",
+     "note": "August; barangay booths present kulintang playing.",
+     "source": "https://tribune.net.ph/2024/08/13/langkit-festival"
+    }
+   ],
+   "price": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kulintang",
+    "https://en.wikipedia.org/wiki/Tugaya",
+    "https://www.rappler.com/philippines/mindanao/okir-art-exhibit-cagayan-de-oro-art-cool-maranao-youth/",
+    "https://tribune.net.ph/2024/08/13/langkit-festival"
+   ],
+   "images": [
+    {
+     "file": "File:Meranaw October 3 2026 Kulintang Dubakan Agong Langkongan 01.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Meranaw_October_3_2026_Kulintang_Dubakan_Agong_Langkongan_01.jpg/1920px-Meranaw_October_3_2026_Kulintang_Dubakan_Agong_Langkongan_01.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Meranaw_October_3_2026_Kulintang_Dubakan_Agong_Langkongan_01.jpg",
+     "author": "P1898",
+     "license": "CC BY 4.0",
+     "license_url": "https://creativecommons.org/licenses/by/4.0",
+     "width": 1920,
+     "height": 1760,
+     "caption": "Maranao kulintang on an okir-painted frame"
+    },
+    {
+     "file": "File:National Museum of Ethnology, Osaka - Kolintang - Maranao people in Philippines - Collected in 2002.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/National_Museum_of_Ethnology%2C_Osaka_-_Kolintang_-_Maranao_people_in_Philippines_-_Collected_in_2002.jpg/1920px-National_Museum_of_Ethnology%2C_Osaka_-_Kolintang_-_Maranao_people_in_Philippines_-_Collected_in_2002.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Ethnology,_Osaka_-_Kolintang_-_Maranao_people_in_Philippines_-_Collected_in_2002.jpg",
+     "author": "Yanajin33",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "width": 1920,
+     "height": 1440,
+     "caption": "Maranao kolintang collected in 2002, National Museum of Ethnology, Osaka"
+    },
+    {
+     "file": "File:Kulintang 08.jpg",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Kulintang_08.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Kulintang_08.jpg",
+     "author": "Philip Dominguez Mercurio (PhilipDM)",
+     "license": "CC BY-SA 2.5",
+     "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+     "width": 1183,
+     "height": 1579,
+     "caption": "The eight Philippine horizontally laid, knobbed gongs known as the kulintang used as a main melodic instrument in the kulintang ensemble. Here, it is used as an accompaniment for a healing ritual. The dancers perform the dance, sagayan, while the kulintang player performs the piece, Taggungo."
+    }
+   ],
+   "model": {
+    "kind": "gongs",
+    "count": 8
+   }
+  },
+  {
+   "slug": "agung",
+   "name": "Agung",
+   "local_name": "agung / agong (Maguindanaon, Maranao)",
+   "group": "instrument",
+   "people": "Maguindanaon, Maranao",
+   "province": "lanao-del-sur",
+   "towns": [
+    "Tugaya"
+   ],
+   "summary": "The agung is a pair of large, wide-rimmed hanging gongs that give the bass in a kulintang ensemble. It has a much deeper turned-in rim than the gandingan and usually weighs 13–16 pounds.",
+   "materials": "Bronze, brass or iron",
+   "how_made": "In Tugaya, agung are formed by hand, shaping and pounding flat metal sheets into solid gongs. The larger gong is the pangandungan (Maguindanaon) or p'nanggisa-an (Maranao), and the smaller, thicker one is the panentekan or p'malsan.",
+   "uses": "Hung from a beam or stand and struck with padded mallets as the supporting bass of kulintang music.",
+   "colors": [
+    "#8C6A3F",
+    "#4A3B2A",
+    "#C9A35E"
+   ],
+   "makers": [
+    {
+     "name": "Tugaya metalsmiths",
+     "note": "Hand-shape agong and gandingan from metal sheets.",
+     "source": "https://en.wikipedia.org/wiki/Tugaya"
+    }
+   ],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Agung",
+    "https://en.wikipedia.org/wiki/Tugaya"
+   ],
+   "images": [
+    {
+     "file": "File:Maranao agong.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Maranao_agong.jpg/1920px-Maranao_agong.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Maranao_agong.jpg",
+     "author": "Gary Todd",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "width": 1920,
+     "height": 1280,
+     "caption": "Maranao agong on a carved stand, Museum of the Filipino People, Manila"
+    },
+    {
+     "file": "File:Agung 02.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Agung_02.jpg/1920px-Agung_02.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Agung_02.jpg",
+     "author": "Philip Dominguez Mercurio (PhilipDM)",
+     "license": "CC BY-SA 2.5",
+     "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+     "width": 1920,
+     "height": 1440,
+     "caption": "The two Philippine vertically hanged, wide-rimmed gongs known as the agung used as a supportive/accompanying instrument in the kulintang ensemble."
+    },
+    {
+     "file": "File:National Museum of Ethnology, Osaka - Agong - Maranao people in Philippines - Collected in 2002.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/National_Museum_of_Ethnology%2C_Osaka_-_Agong_-_Maranao_people_in_Philippines_-_Collected_in_2002.jpg/1920px-National_Museum_of_Ethnology%2C_Osaka_-_Agong_-_Maranao_people_in_Philippines_-_Collected_in_2002.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Ethnology,_Osaka_-_Agong_-_Maranao_people_in_Philippines_-_Collected_in_2002.jpg",
+     "author": "Yanajin33",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "width": 1920,
+     "height": 1440,
+     "caption": "Maranao agong collected in 2002, National Museum of Ethnology, Osaka"
+    }
+   ],
+   "model": {
+    "kind": "gongs",
+    "count": 1
+   }
+  },
+  {
+   "slug": "gandingan",
+   "name": "Gandingan",
+   "local_name": "gandingan (Maguindanaon)",
+   "group": "instrument",
+   "people": "Maguindanaon",
+   "province": "maguindanao-del-sur",
+   "towns": [],
+   "summary": "The gandingan is a set of four large, thin-rimmed hanging gongs that act as the second melody in the Maguindanaon kulintang ensemble. Played alone it imitates the tones of speech, so it is called the \"talking gongs\" and was used to send messages over distances.",
+   "materials": "Bronze traditionally; now often steel or galvanised steel sheet",
+   "how_made": "After World War II bronze became scarce, so many makers now cut the knob, body and rim from separate steel sheets, weld them and grind them smooth. Tugaya smiths also pound gandingan from flat metal sheets.",
+   "uses": "Played standing with rubber-tipped mallets, in ensembles and in gandingan contests.",
+   "colors": [
+    "#B87333",
+    "#6E4A2A",
+    "#D9A066"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gandingan",
+    "https://en.wikipedia.org/wiki/Tugaya"
+   ],
+   "images": [
+    {
+     "file": "File:Gandingan 01.jpg",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Gandingan_01.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Gandingan_01.jpg",
+     "author": "Philip Dominguez Mercurio (PhilipDM)",
+     "license": "CC BY-SA 2.5",
+     "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+     "width": 1536,
+     "height": 2048,
+     "caption": "The four Philippine vertically hanged gongs known as the gandingan used as a secondary melodic instrument in the kulintang ensemble. (The four vertical brass hanging gongs that make up the instrument known as the gandingan. This instrument in particular is used by Master Danongan Kalanduyan at San Francisco State to teach his kulintang class.)"
+    },
+    {
+     "file": "File:Gandingan 03.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Gandingan_03.jpg/1920px-Gandingan_03.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Gandingan_03.jpg",
+     "author": "Philip Dominguez Mercurio (PhilipDM)",
+     "license": "CC BY-SA 2.5",
+     "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+     "width": 1920,
+     "height": 1440,
+     "caption": "The four Philippine vertically hanged gongs known as the gandingan used as a secondary melodic instrument in the kulintang ensemble, being shown here with the smaller gongs placed inside the larger ones."
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "kutiyapi",
+   "name": "Kutiyapi",
+   "local_name": "kutiyapi / kutyapi (Maguindanaon); kotyapi (Maranao)",
+   "group": "instrument",
+   "people": "Maguindanaon, Maranao",
+   "province": "maguindanao-del-sur",
+   "towns": [],
+   "summary": "The kutiyapi is a two-stringed, fretted boat lute about 4–6 feet long, carved from a single piece of soft wood. One string plays a constant drone while the other, an octave higher, carries the melody.",
+   "materials": "Jackfruit or other soft wood; frets of hardened beeswax; rattan or plastic plectrum",
+   "how_made": "The body is carved out of solid soft wood such as jackfruit and fitted with 9 frets of hardened beeswax.",
+   "uses": "Played in dayunday song contests at weddings, Eid and other gatherings, and among the Maranao in courtship ensembles and to accompany epic chant.",
+   "colors": [
+    "#8B5A2B",
+    "#C68E52",
+    "#3B2A1A"
+   ],
+   "makers": [
+    {
+     "name": "Samaon Sulaiman (1953–2011)",
+     "note": "Maguindanaon kutiyapi master from Mamasapano; National Living Treasure (GAMABA) 1993, who taught players in Maganoy.",
+     "source": "https://en.wikipedia.org/wiki/Samaon_Sulaiman"
+    }
+   ],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kutiyapi",
+    "https://en.wikipedia.org/wiki/Samaon_Sulaiman",
+    "https://en.wikipedia.org/wiki/National_Living_Treasures_Award"
+   ],
+   "images": [
+    {
+     "file": "File:Kutiyapi.jpg",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Kutiyapi.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Kutiyapi.jpg",
+     "author": "Philip Dominguez Mercurio PhilipDM",
+     "license": "CC BY-SA 3.0",
+     "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+     "width": 1745,
+     "height": 1310,
+     "caption": "A Kutiyapi is a two-stringed Philippine boat lute, the only stringed instrument used by the Maguindanaon. Made from jackfruit wood (Artocarpus heterophyllus)"
+    },
+    {
+     "file": "File:Lute (kutyapi), Mindanao, wood, Honolulu Museum of Art.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Lute_%28kutyapi%29%2C_Mindanao%2C_wood%2C_Honolulu_Museum_of_Art.jpg/1920px-Lute_%28kutyapi%29%2C_Mindanao%2C_wood%2C_Honolulu_Museum_of_Art.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Lute_(kutyapi),_Mindanao,_wood,_Honolulu_Museum_of_Art.jpg",
+     "author": "Hiart",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "width": 1920,
+     "height": 485,
+     "caption": "Wooden kutyapi boat lute from Mindanao, Honolulu Museum of Art"
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "dabakan",
+   "name": "Dabakan drum",
+   "local_name": "dabakan (Maguindanaon); dadabuan (Maranao)",
+   "group": "instrument",
+   "people": "Maguindanaon, Maranao",
+   "province": "lanao-del-sur",
+   "towns": [
+    "Tugaya"
+   ],
+   "summary": "The dabakan is a single-headed goblet or hourglass drum, the only non-gong instrument of the Maguindanaon kulintang ensemble. Maranao makers carve the outside of the shell with okir.",
+   "materials": "Coconut-trunk or jackfruit wood; goat, carabao, deer or lizard skin; rattan hoops",
+   "how_made": "The shell is carved from coconut-trunk or jackfruit wood and hollowed out, and the skin is fastened with wire and two tight rattan hoops. Tugaya woodworkers also make the large dadabuan drum.",
+   "uses": "Played with two thin rattan or bamboo sticks to keep the rhythm of kulintang music.",
+   "colors": [
+    "#4E3B2C",
+    "#8A6B4E",
+    "#C7A982"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dabakan",
+    "https://en.wikipedia.org/wiki/Tugaya",
+    "https://en.wikipedia.org/wiki/Kutiyapi"
+   ],
+   "images": [
+    {
+     "file": "File:National Museum of Ethnology, Osaka - Dabakan - Maranao people in Philippines - Collected in 2002.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/National_Museum_of_Ethnology%2C_Osaka_-_Dabakan_-_Maranao_people_in_Philippines_-_Collected_in_2002.jpg/1920px-National_Museum_of_Ethnology%2C_Osaka_-_Dabakan_-_Maranao_people_in_Philippines_-_Collected_in_2002.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Ethnology,_Osaka_-_Dabakan_-_Maranao_people_in_Philippines_-_Collected_in_2002.jpg",
+     "author": "Yanajin33",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "width": 1920,
+     "height": 2560,
+     "caption": "Maranao dabakan with an okir-carved shell, collected in 2002, National Museum of Ethnology, Osaka"
+    },
+    {
+     "file": "File:Dabakan 05.jpg",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Dabakan_05.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Dabakan_05.jpg",
+     "author": "Philip Dominguez Mercurio (PhilipDM)",
+     "license": "CC BY-SA 2.5",
+     "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+     "width": 1163,
+     "height": 1551,
+     "caption": "The dabakan is a Philippine, single-headed, drum made of jackfruit/coconut lumber topped with a lizard or goat skin drumhead. It’s the only non-drum instrument of the kulintang ensemble. In this image, a Magui Master Artist playing the dabakan during a kulintang performance."
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "okir-baul",
+   "name": "Okir woodcarving and inlaid chests",
+   "local_name": "okir; baul / baur (Maranao)",
+   "group": "carving",
+   "people": "Maranao",
+   "province": "lanao-del-sur",
+   "towns": [
+    "Tugaya"
+   ],
+   "summary": "Okir is the Maranao art of flowing plant-based scrolls, split into a curvilinear \"male\" style (okir-a-dato) and a geometric \"female\" style (okir-a-bai). In Tugaya it is carved into baul chests inlaid with polished shell and into drums, furniture and other woodwork.",
+   "materials": "Hardwood with mother-of-pearl (tipay) shell inlay",
+   "how_made": "Carvers cut okir designs into the wood, and every small piece of mother-of-pearl inlay is set by hand. Woodcarving and inlaid chests are made in Tugaya's barangays of Sugod-I, Ingud Poblacion, Dilimbayan and Tangcal.",
+   "uses": "Baul chests store belongings and valuables; carved pieces decorate homes and are sold as heritage crafts.",
+   "motifs": [
+    {
+     "name": "pako rabong",
+     "meaning": "a fern growing upwards"
+    },
+    {
+     "name": "obid-obid",
+     "meaning": "rope-like border"
+    },
+    {
+     "name": "binotoon",
+     "meaning": "stars"
+    },
+    {
+     "name": "saragonting",
+     "meaning": "cross"
+    },
+    {
+     "name": "sapak a madanding",
+     "meaning": "branch of happiness"
+    },
+    {
+     "name": "raon a kayo",
+     "meaning": "tree leaves"
+    },
+    {
+     "name": "tring indawa",
+     "meaning": "yellow bamboo"
+    }
+   ],
+   "colors": [
+    "#3E2A1E",
+    "#6B4A33",
+    "#EDE6D8",
+    "#A67C52"
+   ],
+   "makers": [
+    {
+     "name": "Lantong Pangcoga",
+     "note": "Master woodcarver whose Tugaya workshop makes baul with okir and tipay inlay; reported in 2024 that young people prefer other work.",
+     "source": "https://www.rappler.com/philippines/mindanao/okir-art-exhibit-cagayan-de-oro-art-cool-maranao-youth/"
+    },
+    {
+     "name": "Alamin",
+     "note": "Tugaya brassware trader and woodcraftsman known for carved wooden boxes.",
+     "source": "https://web.archive.org/web/20260606013421/https://old.pcij.org/stories/armm-town-thrives-on-traditional-arts/"
+    }
+   ],
+   "where_to_see": [
+    {
+     "name": "Tugaya workshops",
+     "place": "Tugaya, Lanao del Sur",
+     "note": "Workshops under houses make gongs, drums, chests and tapestries.",
+     "source": "https://www.rappler.com/philippines/mindanao/okir-art-exhibit-cagayan-de-oro-art-cool-maranao-youth/"
+    },
+    {
+     "name": "Okir Art Exhibit",
+     "place": "Cagayan de Oro (outside BARMM)",
+     "note": "April 2024; a BARMM trade ministry exhibit of baul, tapestries, paintings and okir jewellery.",
+     "source": "https://www.rappler.com/philippines/mindanao/okir-art-exhibit-cagayan-de-oro-art-cool-maranao-youth/"
+    }
+   ],
+   "price": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Okir",
+    "https://web.archive.org/web/20260606013421/https://old.pcij.org/stories/armm-town-thrives-on-traditional-arts/",
+    "https://www.rappler.com/philippines/mindanao/okir-art-exhibit-cagayan-de-oro-art-cool-maranao-youth/",
+    "https://en.wikipedia.org/wiki/Tugaya"
+   ],
+   "images": [
+    {
+     "file": "File:Tugaya Lanao del Sur baul chest8.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Tugaya_Lanao_del_Sur_baul_chest8.jpg/1920px-Tugaya_Lanao_del_Sur_baul_chest8.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Tugaya_Lanao_del_Sur_baul_chest8.jpg",
+     "author": "Valenzuela400",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1920,
+     "height": 1238,
+     "caption": "Tugaya wooden chest with mother-of-pearl inlay, at a 2024 crafts fair in Manila"
+    },
+    {
+     "file": "File:Maranao people chest with mother of pearl1.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Maranao_people_chest_with_mother_of_pearl1.jpg/1920px-Maranao_people_chest_with_mother_of_pearl1.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Maranao_people_chest_with_mother_of_pearl1.jpg",
+     "author": "Valenzuela400",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1920,
+     "height": 1765,
+     "caption": "Maranao chest with mother-of-pearl inlay, beside a brass betel container"
+    },
+    {
+     "file": "File:Tugaya Lanao del Sur inlays mother of pearl crafts12.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Tugaya_Lanao_del_Sur_inlays_mother_of_pearl_crafts12.jpg/1920px-Tugaya_Lanao_del_Sur_inlays_mother_of_pearl_crafts12.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Tugaya_Lanao_del_Sur_inlays_mother_of_pearl_crafts12.jpg",
+     "author": "Valenzuela400",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1920,
+     "height": 2560,
+     "caption": "Tugaya wooden urn and boxes with mother-of-pearl inlay"
+    },
+    {
+     "file": "File:Maranao Baur chest LanaoG.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Maranao_Baur_chest_LanaoG.jpg/1920px-Maranao_Baur_chest_LanaoG.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Maranao_Baur_chest_LanaoG.jpg",
+     "author": "Valenzuela400",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1920,
+     "height": 1564,
+     "caption": "Maranao baur chest with inlaid geometric design"
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "panolong",
+   "name": "Torogan panolong",
+   "local_name": "panolong (Maranao)",
+   "group": "carving",
+   "people": "Maranao",
+   "province": "lanao-del-sur",
+   "towns": [
+    "Marawi City",
+    "Marantao"
+   ],
+   "summary": "Panolong are the large wing-like carved beam-ends that jut from the front of a torogan, the Maranao royal house. Modelled on the prows of Maranao boats, they make the house look like a royal vessel and are carved with the naga sea serpent and other okir.",
+   "materials": "Hardwood, carved and painted",
+   "how_made": "Each panolong is carved with its own design, often an open-mouthed niyaga, with the sixth usually ending in a curling fern; torogan themselves are built without nails, using fitted joints and lashings.",
+   "uses": "Mark the torogan of a datu as a symbol of rank and were meant to drive away evil spirits.",
+   "motifs": [
+    {
+     "name": "niyaga / naga",
+     "meaning": "mythical sea serpent"
+    },
+    {
+     "name": "piyako",
+     "meaning": "fern"
+    }
+   ],
+   "colors": [
+    "#1F7A4D",
+    "#D4372C",
+    "#F2C230",
+    "#2A5DA8"
+   ],
+   "makers": [],
+   "where_to_see": [
+    {
+     "name": "Kawayan Torogan",
+     "place": "Marantao, Lanao del Sur",
+     "note": "The oldest known torogan in the Philippines.",
+     "source": "https://en.wikipedia.org/wiki/Tugaya"
+    },
+    {
+     "name": "Torogan of Dayawan",
+     "place": "Marawi City, Lanao del Sur",
+     "note": "Among the best-known surviving torogan.",
+     "source": "https://en.wikipedia.org/wiki/Torogan"
+    }
+   ],
+   "price": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Torogan",
+    "https://en.wikipedia.org/wiki/Okir",
+    "https://en.wikipedia.org/wiki/Tugaya"
+   ],
+   "images": [
+    {
+     "file": "File:Panolong.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Panolong.jpg/1920px-Panolong.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Panolong.jpg",
+     "author": "Nikka Cunom",
+     "license": "CC BY 2.0",
+     "license_url": "https://creativecommons.org/licenses/by/2.0",
+     "width": 1920,
+     "height": 1277,
+     "caption": "Painted panolong, the carved beam-end of a Maranao torogan"
+    },
+    {
+     "file": "File:Maranao Torogan (c. 1908 - 1924), Philippines.jpg",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Maranao_Torogan_%28c._1908_-_1924%29%2C_Philippines.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Maranao_Torogan_(c._1908_-_1924),_Philippines.jpg",
+     "author": "Unknown author",
+     "license": "Public domain",
+     "license_url": null,
+     "width": 1600,
+     "height": 1014,
+     "caption": "Maranao torogan photographed between about 1908 and 1924"
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "sarimanok",
+   "name": "Sarimanok",
+   "local_name": "sarimanok; papanok (Maranao)",
+   "group": "carving",
+   "people": "Maranao",
+   "province": "lanao-del-sur",
+   "towns": [],
+   "summary": "The sarimanok is the legendary bird of the Maranao, shown as a fowl with colourful wings and tail holding a fish in its beak or claws. It is the best-known symbol of Maranao art and stands for good fortune.",
+   "materials": "Carved and painted wood",
+   "how_made": "The head is profusely decorated with scroll, leaf and spiral motifs; because of Islamic beliefs against idolatry, living creatures in okir are deliberately stylised.",
+   "uses": "Placed on top of poles with flags and standards during celebrations and on the umbrellas of sultans and dignitaries.",
+   "colors": [
+    "#C62828",
+    "#1565C0",
+    "#F9A825",
+    "#2E7D32"
+   ],
+   "makers": [],
+   "where_to_see": [
+    {
+     "name": "National Museum of the Philippines (Museum of the Filipino People)",
+     "place": "Manila (outside BARMM)",
+     "note": "A carved sarimanok is shown in the Bangsamoro and Lumad cultures gallery, as photographed on Wikimedia Commons.",
+     "source": "https://commons.wikimedia.org/wiki/File:Mindanao_Bangsamoro_Islamic_Art_(24815474049).jpg"
+    }
+   ],
+   "price": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sarimanok",
+    "https://en.wikipedia.org/wiki/Okir",
+    "https://en.wikipedia.org/wiki/Maranao_people"
+   ],
+   "images": [
+    {
+     "file": "File:Mindanao Bangsamoro Islamic Art (24815474049).jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Mindanao_Bangsamoro_Islamic_Art_%2824815474049%29.jpg/1920px-Mindanao_Bangsamoro_Islamic_Art_%2824815474049%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Mindanao_Bangsamoro_Islamic_Art_(24815474049).jpg",
+     "author": "Gary Todd from Xinzheng, China",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "width": 1920,
+     "height": 2880,
+     "caption": "Carved wooden sarimanok standing on a fish, Bangsamoro and Lumad Cultures Gallery, Museum of the Filipino People, Manila"
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "kampilan",
+   "name": "Kampilan",
+   "local_name": "kampilan; kifing (Maranao); parang kampilan (Iranun)",
+   "group": "blade",
+   "people": "Maranao, Maguindanaon, Iranun",
+   "province": "lanao-del-sur",
+   "towns": [],
+   "summary": "The kampilan is a heritage long sword, 90–100 cm long, whose single-edged blade widens toward the tip. Its forked pommel is carved as a crocodile, sea serpent, hornbill or cockatoo.",
+   "materials": "Laminated (pattern-welded) steel; carved wooden hilt",
+   "how_made": "The single-edged blade is laminated by pattern welding, and some blades have holes near the tip filled with brass.",
+   "uses": "Survives as a heritage object and is central to the Maranao and Maguindanaon Sagayan war dance, which depicts a scene from the Darangen epic.",
+   "colors": [
+    "#5D5D5D",
+    "#8B5E3C",
+    "#C9B79C"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kampilan"
+   ],
+   "images": [
+    {
+     "file": "File:Kampilan moro sword with sheath.jpg",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Kampilan_moro_sword_with_sheath.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Kampilan_moro_sword_with_sheath.jpg",
+     "author": "Filhistorydotcom",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "width": 910,
+     "height": 740,
+     "caption": "Moro kampilan of the late 19th to early 20th century with rattan-bound hilt and wooden sheath"
+    },
+    {
+     "file": "File:Krieger 1926 Philippine ethnic weapons Plate 7.png",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Krieger_1926_Philippine_ethnic_weapons_Plate_7.png",
+     "page": "https://commons.wikimedia.org/wiki/File:Krieger_1926_Philippine_ethnic_weapons_Plate_7.png",
+     "author": "Herbert W. Krieger",
+     "license": "Public domain",
+     "license_url": null,
+     "width": 1565,
+     "height": 949,
+     "caption": "1926 plate of kampilan and talibong; No. 1 is a kampilan from Lake Lanao captured in 1903"
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "kalis",
+   "name": "Kris sword",
+   "local_name": "kalis; sundang (Maranao, Maguindanaon)",
+   "group": "blade",
+   "people": "Maranao, Maguindanaon",
+   "province": "lanao-del-sur",
+   "towns": [
+    "Tugaya"
+   ],
+   "summary": "The kalis is the Philippine kris: a double-edged sword, larger than the Javanese dagger, with a blade that is straight, wavy near the hilt or fully wavy. The kris appears on the flag of the Bangsamoro region as a symbol of Moro identity.",
+   "materials": "Forged steel; hardwood pommel, sometimes with silver, brass or swasaa bands; rattan-bound hardwood scabbard",
+   "how_made": "Traditional blades have deep waves forged to the centre line, while modern tourist pieces have shallow cut waves. In Tugaya, a 2007 report showed an older craftsman making blades in his workshop under his house.",
+   "uses": "Kept as a heritage and ceremonial object and a symbol of Moro identity.",
+   "colors": [
+    "#4F4F4F",
+    "#6D4C33",
+    "#D8D2C4"
+   ],
+   "makers": [
+    {
+     "name": "Tugaya bladesmiths",
+     "note": "An older Maranao craftsman photographed making blades in his workshop under his house.",
+     "source": "https://web.archive.org/web/20260606013421/https://old.pcij.org/stories/armm-town-thrives-on-traditional-arts/"
+    }
+   ],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kalis",
+    "https://en.wikipedia.org/wiki/Kris",
+    "https://web.archive.org/web/20260606013421/https://old.pcij.org/stories/armm-town-thrives-on-traditional-arts/"
+   ],
+   "images": [
+    {
+     "file": "File:Tugaya Lanao del Sur kris sword5.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Tugaya_Lanao_del_Sur_kris_sword5.jpg/1920px-Tugaya_Lanao_del_Sur_kris_sword5.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Tugaya_Lanao_del_Sur_kris_sword5.jpg",
+     "author": "Valenzuela400",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1920,
+     "height": 1044,
+     "caption": "Tugaya-made kris in its sheath on an inlaid stand, at a 2024 crafts fair in Manila"
+    },
+    {
+     "file": "File:Tugaya Lanao del Sur kris6.jpg",
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Tugaya_Lanao_del_Sur_kris6.jpg/1920px-Tugaya_Lanao_del_Sur_kris6.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Tugaya_Lanao_del_Sur_kris6.jpg",
+     "author": "Valenzuela400",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1920,
+     "height": 812,
+     "caption": "Tugaya kris on a carved stand with mother-of-pearl inlay"
+    }
+   ],
+   "model": {
+    "kind": "kris"
+   }
+  }
+ ],
+ "festivals": [
+  {
+   "name": "Inaul Festival",
+   "place": "Buluan, Maguindanao del Sur",
+   "month": "February",
+   "note": "Started in 2017 to promote inaul; features the Kapaginaul weaving competition, inaul gowns, a search for the oldest inaul and a trade expo. Reporting found covers 2017–2019.",
+   "source": "https://www.sunstar.com.ph/more-articles/inaul-weaving-one-maguindanao"
+  },
+  {
+   "name": "Lami-Lamihan Festival",
+   "place": "Lamitan City, Basilan",
+   "month": "June",
+   "note": "Opens on June 26 at the Datu Kalun Shrine; a celebration of Yakan culture with a parade in hand-woven Yakan attire. 2025 was its 42nd year.",
+   "source": "https://www.sunstar.com.ph/zamboanga/lami-lamihan-festival-2025-reels-off"
+  },
+  {
+   "name": "Shariff Kabunsuan Festival",
+   "place": "Cotabato City",
+   "month": "December",
+   "note": "Mid-December; highlight is the Guinakit fluvial parade on December 19 along the Rio Grande de Mindanao, with ornately adorned boats once used by royal families.",
+   "source": "https://tribune.net.ph/2024/12/20/shariff-kabunsuan-festival-draws-crowd"
+  },
+  {
+   "name": "Langkit Festival",
+   "place": "Marawi City, Lanao del Sur",
+   "month": "August",
+   "note": "Week-long city charter celebration named after the langkit, with barangay booths, kulintang playing and a langkit competition.",
+   "source": "https://tribune.net.ph/2024/08/13/langkit-festival"
+  },
+  {
+   "name": "Okir Art Exhibit",
+   "place": "Cagayan de Oro (outside BARMM)",
+   "month": "April",
+   "note": "BARMM trade ministry exhibit of Maranao baul, tapestries, paintings and okir jewellery; held in April 2024.",
+   "source": "https://www.rappler.com/philippines/mindanao/okir-art-exhibit-cagayan-de-oro-art-cool-maranao-youth/"
+  },
+  {
+   "name": "National Arts and Crafts Fair",
+   "place": "SM Megamall, Mandaluyong City (outside BARMM)",
+   "month": "October",
+   "note": "National crafts fair where a pandan mat weaver from Mapun, Tawi-Tawi, wove at her booth in 2025.",
+   "source": "https://tribune.net.ph/2025/10/27/traditional-weaver-from-tawi-tawi"
+  }
+ ],
+ "notes": "Dropped: ornament/jewellery group (no source on Maranao or Maguindanaon gold, beadwork or headdresses could be read; only an LLM-generated page and slide decks turned up). Malong a andon dropped (only a passing mention in Wikipedia). Teduray and Iranun weaving (no readable source; a Commons caption names an Iranun Weaving Center in Sultan Kudarat but was not used as a fact source). Yakan music (Uwang Ahadas, GAMABA 2000, Lamitan: gabbang, kwintangan) left out because no free image of Yakan instruments was found. Kubing jaw harp and pira (Yakan sword) left out as too thinly sourced. Barong sword and Tausug pis syabit excluded as Sulu crafts; Darhata Sawabi (Parang, Sulu) excluded. Kalilang festival dropped (no source found). Rasid Laidon, named in a search snippet as a Tugaya brass caster and 1990 awardee, is not in the NCCA GAMABA list on Wikipedia and was not used. Blocked or not read: NCCA (403), PNA article URLs (404), PCIJ needed an expired-certificate bypass; Inquirer, MindaNews and PIA skipped per instructions, so the Inquirer price for Yakan cloth (P400 a metre) was not used. The inaul price (PTV, February 2018) is the only price stated by a news source; Inaul Festival coverage stops at 2019, so its current schedule after the 2022 split of Maguindanao is unconfirmed. Province is a single slug: inaul is woven in both Maguindanao provinces (Buluan and Datu Piang in del Sur; Sultan Kudarat and Sultan Mastura in del Norte). Towns are left empty where no source says where an item is made. Colours are judgement from photos. Image urls: Commons no longer serves 1600px thumbnails (a 1600px request returns HTTP 400); the API returns its 1920px bucket on thumb.wikimedia.org, or the original file when it is narrower than that, and width/height match the url given."
+}

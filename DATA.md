@@ -43,6 +43,7 @@ spent is not published by anyone, and is not here. See [Gaps](#what-is-not-here)
 | Accidents | `datasets/accidents/` | small | Accidents and shootings, from news reports; 2019 on |
 | Programs & services | `datasets/services/` | small | 35 offices' programs and Citizen's Charter services |
 | Directory | `datasets/directory/` | small | Heads, past heads, field offices and phones of the 35 regional offices; emergency lines by town |
+| Crafts | `datasets/crafts/` | small | 17 textiles, mats, brass, instruments, carvings and blades, with makers, festivals and free-licence photos |
 | Travel guide | `packages/travel-data/` | — | **Written**, not captured |
 | Region primer | `packages/primer-data/` | — | **Written**, not captured |
 
@@ -335,6 +336,28 @@ All four are admin collections under the Directory workspace, so an editor can
 correct them and set an office's `checked` date. Barangay officials on the town
 pages come from DILG's directory through `@betterbarmm/lgu-data`; their
 contacts are not copied.
+
+---
+
+## Crafts — `datasets/crafts/`
+
+17 crafts of the region, read on 17 October 2026: 4 textiles (inaul, malong a
+landap, langkit, Yakan tennun), the Sama tepo mat, 2 Tugaya brass pieces, 5
+instruments, 3 carvings and 2 blades, plus 6 festivals where they are shown.
+Each carries where it is made, its materials, how it is made, named makers and
+where a visitor can see it, every claim linked to the page it came from.
+
+Photos are Wikimedia Commons files under free licences (CC0, CC BY, CC BY-SA,
+public domain), 37 in all, credited on the page as each licence asks. Commons
+serves thumbnails only at fixed widths (250, 330, 500, 960, 1280, 1920); other
+widths answer 400. `model` describes the three-dimensional study the site draws
+for 9 of the crafts; it is a shape, not a scan.
+
+Left out: Maranao and Maguindanaon jewellery (no readable source), Teduray and
+Iranun weaving (none either), Sulu's pis syabit and barong (Sulu is no longer in
+BARMM). Inaul is woven in both Maguindanao provinces but is tagged
+`maguindanao-del-sur`; the Inaul Festival's reporting stops at 2019. The one
+price, for inaul, is from February 2018.
 
 ---
 

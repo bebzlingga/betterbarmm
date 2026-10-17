@@ -93,6 +93,14 @@ export const projects: Project[] = [
 		state: 'live',
 	},
 	{
+		key: 'crafts',
+		label: 'Crafts',
+		href: '/crafts',
+		measure: 'Weaves, brass, gongs',
+		blurb: 'The weaves, mats, brass and gongs of the region: where each is made, who makes it, and where to see it.',
+		state: 'live',
+	},
+	{
 		key: 'services',
 		label: 'Programs & services',
 		measure: 'Citizen’s Charters',

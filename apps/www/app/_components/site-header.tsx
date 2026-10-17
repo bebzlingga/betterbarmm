@@ -10,7 +10,7 @@ import { EASE, Magnetic, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo,
 import { ThemeToggle } from './theme-toggle'
 
 type SiteHeaderProps = {
-	activeItem?: 'discover' | 'this-week' | 'news' | 'accidents' | 'services' | 'directory' | 'explainers' | 'jo' | 'about' | 'contribute'
+	activeItem?: 'discover' | 'this-week' | 'news' | 'accidents' | 'services' | 'directory' | 'crafts' | 'explainers' | 'jo' | 'about' | 'contribute'
 	/**
 	 * Sit over the page rather than on top of it.
 	 *
@@ -154,7 +154,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 			{overlay ? null : (
 				<UtilityBar
 					current='home'
-					project={activeItem === 'accidents' || activeItem === 'directory' ? activeItem : undefined}
+					project={activeItem === 'accidents' || activeItem === 'directory' || activeItem === 'crafts' ? activeItem : undefined}
 					className='bb-strip bg-[var(--paper-2)]'
 					switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
 					end={
@@ -345,7 +345,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 
 							<p className='bb-label mt-7'>Project</p>
 							<div className='mt-3 grid'>
-								{[...secondaryLinks, { key: 'accidents', href: '/accidents', label: 'Incident Watch' } as const, { key: 'directory', href: '/directory', label: 'Directory' } as const].map((item) => (
+								{[...secondaryLinks, { key: 'accidents', href: '/accidents', label: 'Incident Watch' } as const, { key: 'directory', href: '/directory', label: 'Directory' } as const, { key: 'crafts', href: '/crafts', label: 'Crafts' } as const].map((item) => (
 									<Link
 										key={item.href}
 										href={item.href}

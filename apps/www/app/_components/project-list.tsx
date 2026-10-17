@@ -13,7 +13,7 @@ import { accidents, typeOf } from '../_lib/accidents'
    ============================================================ */
 
 export type Project = {
-	key: 'accidents' | 'directory' | 'services'
+	key: 'accidents' | 'directory' | 'crafts' | 'services'
 	label: string
 	href?: string
 	measure: string
@@ -90,7 +90,22 @@ function Checklist() {
 	)
 }
 
-const PICTURE = { accidents: IncidentDots, directory: ContactCard, services: Checklist } as const
+/** A woven band: rows of nested diamonds, the motif Yakan and Sama weavers share. */
+function Weave() {
+	return (
+		<svg viewBox='0 0 340 190' className='h-full w-full' aria-hidden='true'>
+			<rect x='40' y='40' width='260' height='110' rx='3' fill='#7b4a35' />
+			{[58, 132].map((y) => (
+				<rect key={y} x='40' y={y} width='260' height='4' fill='#c89b4a' />
+			))}
+			{Array.from({ length: 7 }, (_, i) => 66 + i * 35).map((x) =>
+				[22, 14, 6].map((r, j) => <path key={`${x}-${r}`} d={`M${x} ${95 - r} l${r * 0.9} ${r} l${-r * 0.9} ${r} l${-r * 0.9} ${-r} z`} fill={['#e7c9a9', '#b23a2e', '#f4efe8'][j]} />),
+			)}
+		</svg>
+	)
+}
+
+const PICTURE = { accidents: IncidentDots, directory: ContactCard, crafts: Weave, services: Checklist } as const
 
 export function ProjectList({ projects }: { projects: Project[] }) {
 	return (

@@ -215,7 +215,8 @@ export default async function HomePage() {
 						<p className='max-w-xl text-[13.5px] leading-6 text-[var(--ink-3)]'>Records of another kind, each on a page of its own.</p>
 					</div>
 					<div className='mt-6'>
-						<ProjectList projects={projects} />
+						{/* Programs & services is hidden for now; only the live projects show. */}
+						<ProjectList projects={projects.filter((p) => p.state === 'live')} />
 					</div>
 				</div>
 			</section>
