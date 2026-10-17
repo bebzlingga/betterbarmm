@@ -60,7 +60,7 @@ export function CraftView({ c }: { c: Craft }) {
 						<span className='text-[#d9bba6]'>{GROUP[c.group]}</span>
 					</p>
 
-					<div className='my-auto max-w-[34rem] py-10 lg:pt-8 lg:pb-24'>
+					<div className='my-auto max-w-[34rem] py-10 lg:pt-0 lg:pb-32'>
 						<p className={`${label} text-[#e7c9a9]`}>
 							{c.people} · {PROVINCE[c.province]}
 						</p>
