@@ -1,5 +1,5 @@
 /**
- * Proposed updates: what the nightly fetch found, waiting for an editor.
+ * Proposed updates: what the last fetch found, waiting for an editor.
  * See migrations/0003_updates.sql for the flow.
  */
 

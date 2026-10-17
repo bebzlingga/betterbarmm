@@ -72,21 +72,21 @@ export async function decideGroup(group: string, decision: "approved" | "rejecte
 export type PublishState = { message: string | null; ok: boolean };
 
 /**
- * Start the publish job now rather than waiting for its hourly run. Needs a
+ * Start the publish job now; it runs only when started. Needs a
  * GitHub token with Actions write on the repository (GITHUB_TOKEN and
  * GITHUB_REPOSITORY, e.g. "bebzlingga/betterbarmm", on the admin's Vercel
- * project). Without them the hourly run still publishes.
+ * project). Without them, start Publish updates by hand in GitHub Actions.
  */
 export async function publishNow(): Promise<PublishState> {
   await requireEditor();
   const token = process.env.GITHUB_TOKEN;
   const repo = process.env.GITHUB_REPOSITORY;
-  if (!token || !repo) return { ok: false, message: "Publishing on demand is not set up; approved updates go live within the hour." };
+  if (!token || !repo) return { ok: false, message: "Publishing from here is not set up; run Publish updates in GitHub Actions." };
   const res = await fetch(`https://api.github.com/repos/${repo}/actions/workflows/publish-updates.yml/dispatches`, {
     method: "POST",
     headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" },
     body: JSON.stringify({ ref: "main" }),
   });
-  if (!res.ok) return { ok: false, message: `GitHub refused (${res.status}). Approved updates still go live within the hour.` };
+  if (!res.ok) return { ok: false, message: `GitHub refused (${res.status}). Run Publish updates in GitHub Actions instead.` };
   return { ok: true, message: "Publishing started. The sites update in a few minutes." };
 }

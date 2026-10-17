@@ -11,7 +11,7 @@ import { requireEditor } from "../../_lib/auth";
    Read from the published accidents.json, so what is listed here is what
    readers see. accidents.json is built, never edited: "Correct" starts a
    patch in the Corrections collection, keyed by the incident's id, and
-   "Add incident" a report in Added by hand. The hourly publish writes them
+   "Add incident" a report in Added by hand. Publishing, when run, writes them
    to the build's inputs and rebuilds the map.
    ============================================================ */
 
@@ -95,7 +95,7 @@ export default async function IncidentsPage({ searchParams }: { searchParams: Pr
         title="Incidents"
         description={
           <>
-            {incidents.length} on the map, as last published. Corrections and added incidents go live at the next hourly publish, which rebuilds the map. Type is one of{" "}
+            {incidents.length} on the map, as last published. Corrections and added incidents go live when publishing is next run, which rebuilds the map. Type is one of{" "}
             <code className="field-mono">road</code>, <code className="field-mono">sea</code>, <code className="field-mono">flood</code>, <code className="field-mono">fire</code>,{" "}
             <code className="field-mono">shooting</code> or <code className="field-mono">other</code>.
           </>

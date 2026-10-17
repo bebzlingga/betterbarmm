@@ -91,7 +91,7 @@ export default async function EditRecordPage({
       >
         {saved ? (
           <p className="mt-4 inline-flex items-center gap-2 rounded-lg bg-[var(--good-soft)] px-3 py-2 text-sm text-[var(--good)]">
-            <CheckCircleIcon size={16} weight="fill" aria-hidden="true" /> Saved. It goes live at the next hourly publish.
+            <CheckCircleIcon size={16} weight="fill" aria-hidden="true" /> Saved. It goes live when publishing is next run.
           </p>
         ) : null}
       </PageHeader>

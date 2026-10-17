@@ -1,6 +1,6 @@
 /**
  * File what a fresh fetch found as proposals for an editor to approve. Run by
- * the nightly job after the fetch scripts have rewritten files in datasets/
+ * the fetch job after the fetch scripts have rewritten files in datasets/
  * (on the job's own checkout — it never commits).
  *
  *     bun db:propose <run-id> legislation/proposed-index legislation/bills-index

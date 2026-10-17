@@ -9,7 +9,7 @@ import type { SupabaseClient } from '@supabase/supabase-js'
    by definition; a national outlet's item is kept only when its
    headline or teaser names the region.
 
-   Run five times a day by scripts/news.ts and on demand from the admin.
+   Run by hand: scripts/news.ts from GitHub Actions, or the admin's Run now.
    ============================================================ */
 
 export type NewsItem = {

@@ -1,5 +1,5 @@
-# Five times a day: read the news feeds and add what is new to the news
-# table, which the site's Latest news page and the admin's News page read.
+# Run by hand (Actions → Fetch news → Run workflow): read the news feeds and
+# add what is new to the news table, which the site's Latest news page and the admin's News page read.
 # Nothing is committed; the news lives in the database.
 #
 # Secrets: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY.
@@ -7,10 +7,6 @@
 name: Fetch news
 
 on:
-  schedule:
-    # 5am, 9am, 12nn, 3pm and 9pm in Manila (UTC+8). GitHub may start a
-    # scheduled run some minutes late.
-    - cron: '0 21,1,4,7,13 * * *'
   workflow_dispatch:
 
 concurrency:

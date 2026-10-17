@@ -50,7 +50,7 @@ export default async function OverviewPage() {
   const totalRecords = [...stats.values()].reduce((sum, s) => sum + s.total, 0);
   const editsWaiting = [...stats.values()].reduce((sum, s) => sum + s.unpublished, 0);
 
-  // What the nightly fetch has filed, by where it goes.
+  // What the last fetch has filed, by where it goes.
   const pending = (waiting ?? []).filter((p) => p.status === "pending");
   const approved = (waiting ?? []).filter((p) => p.status === "approved").length;
   const byGroup = new Map<string, number>();
@@ -76,8 +76,8 @@ export default async function OverviewPage() {
       />
 
       <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-        <StatCard icon={ArrowsClockwiseIcon} tone={pending.length ? "accent" : "good"} label="Updates waiting" value={pending.length.toLocaleString()} hint={pending.length ? "Found by the nightly fetch" : "Sources and site agree"} href="/updates" />
-        <StatCard icon={CloudArrowUpIcon} tone={approved + editsWaiting ? "warn" : "good"} label="Waiting to go live" value={(approved + editsWaiting).toLocaleString()} hint="Published at the next hourly run" href="/updates?status=approved" />
+        <StatCard icon={ArrowsClockwiseIcon} tone={pending.length ? "accent" : "good"} label="Updates waiting" value={pending.length.toLocaleString()} hint={pending.length ? "Found by the last fetch" : "Sources and site agree"} href="/updates" />
+        <StatCard icon={CloudArrowUpIcon} tone={approved + editsWaiting ? "warn" : "good"} label="Waiting to go live" value={(approved + editsWaiting).toLocaleString()} hint="Published when publishing is next run" href="/updates?status=approved" />
         <StatCard icon={DatabaseIcon} tone="info" label="Records" value={totalRecords.toLocaleString()} hint={`In ${COLLECTIONS.length} collections`} />
         <StatCard icon={ArticleIcon} label="Explainers" value={published.toLocaleString()} hint={`${drafts} draft${drafts === 1 ? "" : "s"}`} href="/explainers" />
       </section>
@@ -104,7 +104,7 @@ export default async function OverviewPage() {
             </ul>
           ) : (
             <EmptyState icon={CheckCircleIcon} title="All caught up">
-              Nothing from the sources is waiting. The nightly fetch runs at 2:00 in the morning.
+              Nothing from the sources is waiting. Run Fetch updates in GitHub Actions to check them again.
             </EmptyState>
           )}
         </div>

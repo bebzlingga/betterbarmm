@@ -1,14 +1,12 @@
-# Hourly, or on demand from the admin's "Publish approved now": write
-# approved updates and admin edits into datasets/, commit to main, and let
-# the sites redeploy.
+# Run by hand (Actions → Publish updates → Run workflow), or from the admin's
+# "Publish approved now": write approved updates and admin edits into
+# datasets/, commit to main, and let the sites redeploy.
 #
 # Secrets: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY.
 
 name: Publish updates
 
 on:
-  schedule:
-    - cron: '15 * * * *'
   workflow_dispatch:
 
 concurrency:

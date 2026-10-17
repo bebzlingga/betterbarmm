@@ -4,7 +4,7 @@ import { runNewsFetch } from "@betterbarmm/db";
 import { revalidatePath } from "next/cache";
 import { requireEditor } from "../../_lib/auth";
 
-/** Read the feeds now, as the editor; the schedule does the same five times a day. */
+/** Read the feeds now, as the editor; Fetch news in GitHub Actions does the same when run. */
 export async function runNow() {
   const { supabase, profile } = await requireEditor();
   await runNewsFetch(supabase, "manual", profile.email);

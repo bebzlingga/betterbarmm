@@ -240,7 +240,7 @@ export const COLLECTIONS: CollectionDef[] = [
 	// ---- Incident Watch ----
 	// accidents.json is built (scripts/build_accidents.py), so an editor's work goes into the build's inputs, never
 	// into it: a correction is a patch keyed by the incident's id, applied after every other; a missing incident
-	// is a report of its own. The hourly publish rebuilds the map from them.
+	// is a report of its own. Publishing rebuilds the map from them.
 	{
 		workspace: 'accidents',
 		collection: 'edits',

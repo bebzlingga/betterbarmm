@@ -1,4 +1,4 @@
-# Nightly: re-read the sources and file what changed as proposals in the
+# Run by hand (Actions → Fetch updates → Run workflow): re-read the sources and file what changed as proposals in the
 # admin's Updates page. This job never commits — an editor approves first,
 # and publish-updates.yml writes approved work to the site.
 #
@@ -7,8 +7,6 @@
 name: Fetch updates
 
 on:
-  schedule:
-    - cron: '0 18 * * *' # 02:00 in Manila
   workflow_dispatch:
 
 concurrency:

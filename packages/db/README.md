@@ -15,8 +15,8 @@ explainers on `www`.
   can be brought back. Changes made by `db:seed`/`db:pull` are not logged.
 - `sync_state` — when each collection was last seeded or pulled, so the admin
   can count records edited since and say when a pull is due.
-- `proposals` — what the nightly fetch found at the sources, waiting for an
-  editor in the admin's **Updates** page. See "Automatic updates" below.
+- `proposals` — what the last fetch found at the sources, waiting for an
+  editor in the admin's **Updates** page. See "Updates from the sources" below.
 - `profiles` — one per signed-in account, with a role: `admin`, `editor` or
   `viewer`. Only admins and editors can write; only admins manage roles.
 
@@ -55,9 +55,12 @@ Both take an optional `workspace` or `workspace/collection` argument, e.g.
 Deleting a record from a folder collection (acts, bill and resolution records)
 removes it from the database but not its file; delete the file by hand.
 
-## Automatic updates
+## Updates from the sources
 
-Every night `.github/workflows/fetch-updates.yml` re-reads Parliament (acts,
+Nothing runs on a schedule; each job is started by hand from GitHub's Actions
+tab (**Run workflow**).
+
+`.github/workflows/fetch-updates.yml` re-reads Parliament (acts,
 bills, resolutions) and PhilGEPS, compares what it got with what the site
 holds, and files each difference as a proposal. It never commits.
 
@@ -73,10 +76,12 @@ fields side by side. Approving a record writes it into `records` as the
 signing-in editor (so it shows in Activity and History); rejecting it means
 the same change is not filed again.
 
-Every hour `.github/workflows/publish-updates.yml` runs `bun db:publish`: it
+`.github/workflows/publish-updates.yml` runs `bun db:publish`: it
 writes approved records — and any other admin edit since the last sync — into
-`datasets/`, writes approved files, commits to main, and the sites redeploy.
-**Publish approved now** in the admin starts it at once.
+`datasets/`, writes approved files, rebuilds the accident map if its admin
+files changed, commits to main, and the sites redeploy. **Publish approved
+now** in the admin starts it too. `.github/workflows/fetch-news.yml` reads the
+news feeds into the news table; the admin's News page has **Run now**.
 
 Setup, once:
 

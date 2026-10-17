@@ -8,7 +8,7 @@ import { signOut } from "../login/actions";
 
 export default async function DashboardLayout({ children }: { children: React.ReactNode }) {
   const { supabase, profile } = await requireEditor();
-  // What the nightly fetch found and nobody has looked at yet.
+  // What the last fetch found and nobody has looked at yet.
   const [{ count: pending }, { count: reviewPosts }, { count: newReports }] = await Promise.all([
     supabase.from("proposals").select("id", { count: "exact", head: true }).eq("status", "pending"),
     supabase.from("social_posts").select("id", { count: "exact", head: true }).eq("status", "in_review"),

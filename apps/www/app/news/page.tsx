@@ -7,11 +7,11 @@ import { pageMeta } from '../_lib/seo'
 
 export const metadata: Metadata = pageMeta({
 	title: 'Latest news',
-	description: 'Headlines about the Bangsamoro from the region’s own offices and the national press, gathered five times a day, each linking to the outlet that reported it.',
+	description: 'Headlines about the Bangsamoro from the region’s own offices and the national press, gathered from their feeds, each linking to the outlet that reported it.',
 	path: '/news',
 })
 
-// The feeds are read five times a day; the page catches up within five minutes.
+// The feeds are read when an editor runs the fetch; the page catches up within five minutes.
 export const revalidate = 300
 
 const day = (iso: string) =>
@@ -36,7 +36,7 @@ export default async function NewsPage() {
 				label='Latest news'
 				lines={['What is being reported', 'about the Bangsamoro.']}
 				muted={[1]}
-				standfirst='Headlines from the region’s own offices and the national press, gathered five times a day. Each links to the outlet that reported it; read the story there.'
+				standfirst='Headlines from the region’s own offices and the national press, gathered from their feeds. Each links to the outlet that reported it; read the story there.'
 			/>
 
 			<section className='bb-container bb-section'>

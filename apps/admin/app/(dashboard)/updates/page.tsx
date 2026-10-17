@@ -6,7 +6,7 @@ import { requireEditor } from "../../_lib/auth";
 import { decideGroup, decideOne } from "./actions";
 import { PublishButton } from "./publish-button";
 
-/* What the nightly fetch found at the sources, waiting for an editor. Nothing
+/* What the last fetch found at the sources, waiting for an editor. Nothing
    here is on the site until it is approved and published. */
 
 const STATUSES = [
@@ -83,7 +83,7 @@ export default async function UpdatesPage({ searchParams }: { searchParams: Prom
     <div>
       <PageHeader
         title="Updates"
-        description="What the nightly fetch found at the sources — Parliament and PhilGEPS. Nothing here is on the site until it is approved; approved updates go live at the next hourly publish."
+        description="What the last fetch found at the sources — Parliament and PhilGEPS. Nothing here is on the site until it is approved; approved updates go live when publishing is next run."
         actions={<PublishButton />}
       />
 
@@ -103,7 +103,7 @@ export default async function UpdatesPage({ searchParams }: { searchParams: Prom
       {!proposals.length ? (
         <div className="panel">
           <EmptyState icon={CheckCircleIcon} title={status === "pending" ? "All caught up" : "Nothing here"}>
-            {status === "pending" ? "The sources and the site agree. The nightly fetch runs at 2:00 in the morning, Manila time." : null}
+            {status === "pending" ? "The sources and the site agree, as of the last fetch. Run Fetch updates in GitHub Actions to check again." : null}
           </EmptyState>
         </div>
       ) : null}
