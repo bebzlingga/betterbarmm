@@ -185,7 +185,8 @@ export const headPhoto = (slug: string) => (headPhotos.heads as Record<string, H
 
 /** A photograph of an office's building, with its credit: its own where one has been found, otherwise the
  *  Bangsamoro Government Center for an office in the compound, otherwise none. */
-export type OfficePhoto = { src: string; page: string; credit: string; license: string; caption: string }
+/** kind: a photograph of the building, or the office's emblem where no photograph of it is published. */
+export type OfficePhoto = { src: string; page: string; credit: string; license: string; caption: string; kind?: 'photo' | 'emblem' }
 const GOVERNMENT_CENTER = /government cent(er|re)|barmm compound|bangsamoro compound|barmm complex|office of the chief minister building|\bbgc\b|\bbcg\b/i
 export function officePhoto(slug: string, address: string | null): OfficePhoto | null {
 	const own = (officePhotos.offices as Record<string, OfficePhoto | undefined>)[slug]

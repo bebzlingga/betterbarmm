@@ -46,7 +46,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 			{building ? (
 				<figure className='bb-frame relative h-48 overflow-hidden bg-[var(--paper-2)] sm:h-64'>
 					{/* eslint-disable-next-line @next/next/no-img-element */}
-					<img src={building.src} alt={building.caption} className='size-full object-cover' />
+					<img src={building.src} alt={building.caption} className={building.kind === 'emblem' ? 'size-full object-contain p-8' : 'size-full object-cover'} />
 					<PhotoCredit photo={{ credit: building.credit, license: building.license, source: building.page }} />
 				</figure>
 			) : null}

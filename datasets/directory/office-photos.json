@@ -50,6 +50,94 @@
    "credit": "Bangsamoro Women Commission",
    "license": "Public domain",
    "caption": "The commission's office building, signed 'Regional Commission on Bangsamoro Women-ARMM, Regional Women Peace and Training Center, ARMM Complex, Cotabato City'"
+  },
+  "ministry-of-public-order-and-safety": {
+   "src": "/directory/offices/ministry-of-public-order-and-safety.png",
+   "page": "https://mpos.bangsamoro.gov.ph/",
+   "credit": "Ministry of Public Order and Safety",
+   "license": "Public domain",
+   "caption": "The emblem of the Ministry of Public Order and Safety",
+   "kind": "emblem"
+  },
+  "bangsamoro-planning-and-development-authority": {
+   "src": "/directory/offices/bangsamoro-planning-and-development-authority.png",
+   "page": "https://bpda.bangsamoro.gov.ph/",
+   "credit": "Bangsamoro Planning and Development Authority",
+   "license": "Public domain",
+   "caption": "The emblem of the Bangsamoro Planning and Development Authority",
+   "kind": "emblem"
+  },
+  "bangsamoro-pilgrimage-authority": {
+   "src": "/directory/offices/bangsamoro-pilgrimage-authority.png",
+   "page": "https://bpa.bangsamoro.gov.ph/",
+   "credit": "Bangsamoro Pilgrimage Authority",
+   "license": "Public domain",
+   "caption": "The emblem of the Bangsamoro Pilgrimage Authority",
+   "kind": "emblem"
+  },
+  "bangsamoro-youth-commission": {
+   "src": "/directory/offices/bangsamoro-youth-commission.png",
+   "page": "https://byc.bangsamoro.gov.ph/",
+   "credit": "Bangsamoro Youth Commission",
+   "license": "Public domain",
+   "caption": "The emblem of the Bangsamoro Youth Commission",
+   "kind": "emblem"
+  },
+  "bangsamoro-sports-commission": {
+   "src": "/directory/offices/bangsamoro-sports-commission.png",
+   "page": "https://bsc.bangsamoro.gov.ph/bsc-official-logo/",
+   "credit": "Bangsamoro Sports Commission",
+   "license": "Public domain",
+   "caption": "The emblem of the Bangsamoro Sports Commission",
+   "kind": "emblem"
+  },
+  "development-academy-of-the-bangsamoro": {
+   "src": "/directory/offices/development-academy-of-the-bangsamoro.png",
+   "page": "https://dab.bangsamoro.gov.ph/",
+   "credit": "Development Academy of the Bangsamoro",
+   "license": "Public domain",
+   "caption": "The emblem of the Development Academy of the Bangsamoro",
+   "kind": "emblem"
+  },
+  "bangsamoro-board-of-investments": {
+   "src": "/directory/offices/bangsamoro-board-of-investments.png",
+   "page": "https://bboi.bangsamoro.gov.ph/?attachment_id=3731",
+   "credit": "Bangsamoro Board of Investments",
+   "license": "Public domain",
+   "caption": "The emblem of the Bangsamoro Board of Investments",
+   "kind": "emblem"
+  },
+  "office-for-settler-communities": {
+   "src": "/directory/offices/office-for-settler-communities.png",
+   "page": "https://osc.bangsamoro.gov.ph/logo.html",
+   "credit": "Office for Settler Communities",
+   "license": "Public domain",
+   "caption": "The emblem of the Office for Settler Communities",
+   "kind": "emblem"
+  },
+  "bangsamoro-science-high-school": {
+   "src": "/directory/offices/bangsamoro-science-high-school.png",
+   "page": "https://bshs.bangsamoro.gov.ph/",
+   "credit": "Bangsamoro Science High School",
+   "license": "Public domain",
+   "caption": "The emblem of the Bangsamoro Science High School",
+   "kind": "emblem"
+  },
+  "office-of-the-wali-of-bangsamoro": {
+   "src": "/directory/offices/office-of-the-wali-of-bangsamoro.png",
+   "page": "https://wali.bangsamoro.gov.ph/owb-seal-recolor-final/",
+   "credit": "Office of the Wali of Bangsamoro",
+   "license": "Public domain",
+   "caption": "The emblem of the Office of the Wali of Bangsamoro",
+   "kind": "emblem"
+  },
+  "special-geographic-area-development-authority": {
+   "src": "/directory/offices/special-geographic-area-development-authority.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Seal_of_the_Special_Geographic_Area_Development_Authority.png",
+   "credit": "Special Geographic Area Development Authority",
+   "license": "Public domain (Philippine government work; tagged Public domain on Wikimedia Commons)",
+   "caption": "The emblem of the Special Geographic Area Development Authority",
+   "kind": "emblem"
   }
  }
 }

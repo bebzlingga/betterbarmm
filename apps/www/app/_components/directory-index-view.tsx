@@ -92,7 +92,7 @@ export function DirectoryIndex() {
 													{officePhoto(o.slug, o.address) ? (
 														<span className='-mx-5 -mt-5 mb-4 hidden h-32 overflow-hidden bg-[var(--paper-2)] sm:block'>
 															{/* eslint-disable-next-line @next/next/no-img-element */}
-															<img src={officePhoto(o.slug, o.address)!.src} alt='' loading='lazy' className='size-full object-cover transition duration-500 group-hover:scale-[1.03]' />
+															<img src={officePhoto(o.slug, o.address)!.src} alt='' loading='lazy' className={officePhoto(o.slug, o.address)!.kind === 'emblem' ? 'size-full object-contain p-5' : 'size-full object-cover transition duration-500 group-hover:scale-[1.03]'} />
 														</span>
 													) : null}
 													<span className='hidden items-start justify-between gap-3 sm:flex'>
