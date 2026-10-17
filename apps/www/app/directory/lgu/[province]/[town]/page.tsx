@@ -4,10 +4,9 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Lines, linkClass, monthYear } from '../../../../_components/directory-bits'
 import { Masthead } from '../../../../_components/masthead'
-import { SiteHeader } from '../../../../_components/site-header'
+import { DirectoryDialog } from '../../../../_components/directory-dialog'
 import { barangayRows, emergencyMeta, localGovernments, localGroup, localLineage, townLines } from '../../../../_lib/directory'
 import { pageMeta } from '../../../../_lib/seo'
-import { GetInvolved } from '../../../../_components/get-involved'
 
 export function generateStaticParams() {
 	return localGovernments.flatMap((g) => g.units.map((u) => ({ province: g.slug, town: u.slug })))
@@ -41,17 +40,16 @@ export default async function TownPage({ params }: { params: Promise<{ province:
 	const lineage = localLineage('mayor', province, town)
 
 	return (
-		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
-			<SiteHeader activeItem='directory' />
+		<DirectoryDialog id={`${g.slug}/${u.slug}`} name={u.name}>
 			<Masthead brand label={`${u.isCity ? 'City' : 'Municipality'} · ${g.name}`} lines={[u.name]} />
 
 			<section className='bb-container bb-section'>
 				<p className='text-[13.5px] text-[var(--ink-3)]'>
-					<Link href='/directory' className={linkClass}>
+					<Link scroll={false} href='/directory' className={linkClass}>
 						Directory
 					</Link>{' '}
 					·{' '}
-					<Link href={g.href} className={linkClass}>
+					<Link scroll={false} href={g.href} className={linkClass}>
 						{g.name}
 					</Link>
 				</p>
@@ -136,7 +134,6 @@ export default async function TownPage({ params }: { params: Promise<{ province:
 					<p className='mt-3 text-[12.5px] text-[var(--ink-3)]'>The winner of each election, from COMELEC’s canvass and OpenHalalan’s rebuild of the older returns. A succession mid-term is not shown.</p>
 				</section>
 			</section>
-			<GetInvolved />
-		</main>
+		</DirectoryDialog>
 	)
 }

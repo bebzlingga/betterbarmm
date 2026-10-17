@@ -99,7 +99,7 @@ export function DirectorySearch({ head, children }: { head: React.ReactNode; chi
 			setAt((i) => (i - 1 + flat.length) % flat.length)
 		} else if (e.key === 'Enter') {
 			e.preventDefault()
-			router.push(flat[at]!.href)
+			router.push(flat[at]!.href, { scroll: false })
 		}
 	}
 
@@ -181,7 +181,7 @@ export function DirectorySearch({ head, children }: { head: React.ReactNode; chi
 											const i = n
 											return (
 												<li key={i}>
-													<Link
+													<Link scroll={false}
 														href={e.href}
 														onMouseEnter={() => setAt(i)}
 														data-on={on}

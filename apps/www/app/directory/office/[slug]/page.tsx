@@ -4,11 +4,10 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Phone, linkClass, monthYear } from '../../../_components/directory-bits'
 import { Masthead } from '../../../_components/masthead'
-import { SiteHeader } from '../../../_components/site-header'
+import { DirectoryDialog } from '../../../_components/directory-dialog'
 import { directoryMeta, directoryOffice, directoryOffices, fieldOffices, officeHistory } from '../../../_lib/directory'
 import { budgetHref, officeBySlug } from '../../../_lib/services'
 import { pageMeta } from '../../../_lib/seo'
-import { GetInvolved } from '../../../_components/get-involved'
 
 export function generateStaticParams() {
 	return directoryOffices.map((o) => ({ slug: o.slug }))
@@ -36,20 +35,19 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 	const service = officeBySlug(o.slug)
 
 	return (
-		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
-			<SiteHeader activeItem='directory' />
+		<DirectoryDialog id={o.slug} name={o.name}>
 			<Masthead brand label={o.acronym ? `${KIND[o.kind]} · ${o.acronym}` : KIND[o.kind]} lines={[o.name]} />
 
 			<section className='bb-container bb-section'>
 				<p className='text-[13.5px] text-[var(--ink-3)]'>
-					<Link href='/directory' className={linkClass}>
+					<Link scroll={false} href='/directory' className={linkClass}>
 						Directory
 					</Link>
 					{parent ? (
 						<>
 							{' '}
 							· Attached to the{' '}
-							<Link href={`/directory/office/${parent.slug}`} className={linkClass}>
+							<Link scroll={false} href={`/directory/office/${parent.slug}`} className={linkClass}>
 								{parent.name}
 							</Link>
 						</>
@@ -190,7 +188,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 						<ul className='mt-3 flex flex-wrap gap-x-6 gap-y-2 text-[14px]'>
 							{attached.map((a) => (
 								<li key={a.slug}>
-									<Link href={`/directory/office/${a.slug}`} className={linkClass}>
+									<Link scroll={false} href={`/directory/office/${a.slug}`} className={linkClass}>
 										{a.name}
 									</Link>
 								</li>
@@ -201,7 +199,6 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 
 				<p className='mt-16 max-w-3xl text-[12.5px] leading-[1.7] text-[var(--ink-3)]'>{directoryMeta.note}</p>
 			</section>
-			<GetInvolved />
-		</main>
+		</DirectoryDialog>
 	)
 }

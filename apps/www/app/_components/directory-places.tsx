@@ -48,7 +48,7 @@ export function DirectoryPlaces() {
 							<div className='flex h-full flex-col justify-end p-5 text-white sm:p-7'>
 								<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-white/75'>{g.kind}</p>
 								<h3 id={`area-${g.slug}-title`} className='mt-1 text-[28px] font-extrabold leading-tight tracking-[-0.02em] sm:text-[34px]'>
-									<Link href={g.href} className='hover:underline hover:decoration-white/50 hover:underline-offset-4'>
+									<Link scroll={false} href={g.href} className='hover:underline hover:decoration-white/50 hover:underline-offset-4'>
 										{g.name}
 									</Link>
 								</h3>
@@ -79,7 +79,7 @@ export function DirectoryPlaces() {
 									<span className='font-semibold tabular-nums'>{l.phones[0]}</span>
 								</a>
 							))}
-							<Link href={g.href} className='ml-auto inline-flex items-center gap-1 font-semibold hover:text-[var(--accent)]'>
+							<Link scroll={false} href={g.href} className='ml-auto inline-flex items-center gap-1 font-semibold hover:text-[var(--accent)]'>
 								{lines.length ? 'All its lines and governors since 2007' : 'Its page and governors since 2007'} <ArrowRightIcon size={13} weight='bold' aria-hidden='true' />
 							</Link>
 						</div>
@@ -101,7 +101,7 @@ export function DirectoryPlaces() {
 										</span>
 										<div className='min-w-0 flex-1 sm:p-4'>
 											<p className='flex items-baseline gap-2'>
-												<Link href={u.href} className='truncate text-[15.5px] font-bold hover:text-[var(--accent)]'>
+												<Link scroll={false} href={u.href} className='truncate text-[15.5px] font-bold hover:text-[var(--accent)]'>
 													{u.name}
 												</Link>
 												{u.isCity ? <span className='font-mono text-[9.5px] font-semibold uppercase tracking-[0.12em] text-[var(--accent)]'>City</span> : null}

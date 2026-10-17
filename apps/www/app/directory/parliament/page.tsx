@@ -5,9 +5,8 @@ import parliament from '../../../../../datasets/bills/bangsamoro_registry/member
 import { linkClass } from '../../_components/directory-bits'
 import { memberId } from '../../_lib/directory'
 import { Masthead } from '../../_components/masthead'
-import { SiteHeader } from '../../_components/site-header'
+import { DirectoryDialog } from '../../_components/directory-dialog'
 import { pageMeta } from '../../_lib/seo'
-import { GetInvolved } from '../../_components/get-involved'
 
 export const metadata: Metadata = pageMeta({
 	title: 'Members of Parliament — Directory',
@@ -41,13 +40,12 @@ export default function ParliamentDirectoryPage() {
 	const groups = ORDER.map((label) => ({ label, list: members.filter((m) => m.seatLabel === label) })).filter((g) => g.list.length)
 
 	return (
-		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
-			<SiteHeader activeItem='directory' />
+		<DirectoryDialog id={'parliament'} name={'Members of Parliament'}>
 			<Masthead brand label='Directory' lines={['Members of Parliament']} />
 
 			<section className='bb-container bb-section'>
 				<p className='text-[13.5px] text-[var(--ink-3)]'>
-					<Link href='/directory' className={linkClass}>
+					<Link scroll={false} href='/directory' className={linkClass}>
 						Directory
 					</Link>
 				</p>
@@ -92,7 +90,6 @@ export default function ParliamentDirectoryPage() {
 					</section>
 				))}
 			</section>
-			<GetInvolved />
-		</main>
+		</DirectoryDialog>
 	)
 }

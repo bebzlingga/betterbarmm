@@ -3,10 +3,9 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Lines, linkClass } from '../../../_components/directory-bits'
 import { Masthead } from '../../../_components/masthead'
-import { SiteHeader } from '../../../_components/site-header'
+import { DirectoryDialog } from '../../../_components/directory-dialog'
 import { emergencyMeta, localGovernments, localGroup, localLineage, provinceLines } from '../../../_lib/directory'
 import { pageMeta } from '../../../_lib/seo'
-import { GetInvolved } from '../../../_components/get-involved'
 
 export function generateStaticParams() {
 	return localGovernments.map((g) => ({ province: g.slug }))
@@ -30,13 +29,12 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 	const lineage = isProvince ? localLineage('governor', g.slug) : []
 
 	return (
-		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
-			<SiteHeader activeItem='directory' />
+		<DirectoryDialog id={g.slug} name={g.name}>
 			<Masthead brand label={g.kind} lines={[g.name]} />
 
 			<section className='bb-container bb-section'>
 				<p className='text-[13.5px] text-[var(--ink-3)]'>
-					<Link href='/directory' className={linkClass}>
+					<Link scroll={false} href='/directory' className={linkClass}>
 						Directory
 					</Link>{' '}
 					· <a href={g.lguHref} className={linkClass}>{g.name} profile</a>
@@ -79,7 +77,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 							{g.units.map((u) => (
 								<tr key={u.slug} className='border-b border-[var(--rule-soft)] align-top'>
 									<td className='py-2 pr-4'>
-										<Link href={u.href} className={linkClass}>
+										<Link scroll={false} href={u.href} className={linkClass}>
 											{u.name}
 										</Link>
 										{u.isCity ? <span className='ml-1.5 text-[11px] uppercase tracking-[0.08em] text-[var(--ink-3)]'>City</span> : null}
@@ -116,7 +114,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 					</section>
 				) : null}
 			</section>
-			<GetInvolved />
-		</main>
+		</DirectoryDialog>
 	)
 }
