@@ -76,7 +76,7 @@ export function CraftView({ c }: { c: Craft }) {
 						// The three-dimensional studies are off for now; c.model turns them back on.
 						model={null}
 						images={c.images}
-						className='h-[26rem] lg:absolute lg:top-20 lg:right-10 lg:bottom-48 lg:left-[44%] lg:h-auto'
+						className='h-[26rem] lg:absolute lg:top-20 lg:right-10 lg:bottom-48 lg:left-[49%] lg:h-auto'
 					/>
 					<Link href={`/crafts/${next.slug}`} replace className='group mt-8 block lg:mt-auto'>
 						<p className={`${serif} text-[14px] text-[#8a6d5c]`}>More like it</p>
