@@ -15,10 +15,13 @@ import { monthYear } from './directory-bits'
 // Important: the shared base styles set the body face on p, li and dd outside any layer.
 const serif = 'font-[family-name:var(--font-craft)]!'
 const label = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em]'
-/** A link as its reader would name it: Pusaka by its page, anything else by its site. */
+/** A link as its reader would name it: a book by its title (and Pusaka by its page), anything else by its site. */
 const sourceLabel = (s: string) => {
 	const page = s.match(/BARMM-CTB.*#page=(\d+)/)?.[1]
-	return page ? `Pusaka (BCPCH), p. ${page}` : new URL(s).hostname.replace(/^www\./, '')
+	if (page) return `Pusaka (BCPCH), p. ${page}`
+	// The National Library's scan of the CCP Encyclopedia of Philippine Art.
+	if (s.includes('NLP00VM052mcd')) return 'CCP Encyclopedia of Philippine Art (1994)'
+	return new URL(s).hostname.replace(/^www\./, '')
 }
 const source = 'inline-flex items-center gap-0.5 text-[11.5px] text-[#8a6d5c] hover:text-[#5a3424]'
 
