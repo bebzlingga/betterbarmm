@@ -19,13 +19,12 @@ const label = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em]
  * however short its lines run, so the width is worked out from the text instead: as many lines as 20em needs,
  * each of the average length, with text-wrap: balance filling them evenly. The figures are DM Sans at the spec
  * size (about 0.5em a character) and the 17px serif label (about 0.62em a character in the spec's em).
- * Specs that all fit on one line each hug their own text; once one wraps, they all take the widest width,
- * so the columns line up as equals.
+ * Each spec hugs its own text, so the gap between columns is the gap and nothing more.
  */
 function specWidth(label: string, value: string) {
 	const chars = value.length * 0.5
 	const lines = Math.ceil(chars / 20)
-	return { em: Math.max(Math.min(20, chars / lines + 1.2), label.length * 0.62), wraps: lines > 1 }
+	return Math.max(Math.min(20, chars / lines + 1.2), label.length * 0.62)
 }
 
 /** A link as its reader would name it: Pusaka by its page, anything else by its site. */
@@ -46,8 +45,6 @@ export function CraftView({ c }: { c: Craft }) {
 			['Worn or used', c.uses],
 		] as const
 	).filter(([, v]) => v)
-	const widths = specs.map(([k, v]) => specWidth(k, v))
-	const shared = widths.some((w) => w.wraps) ? Math.max(...widths.map((w) => w.em)) : null
 
 	return (
 		<>
@@ -83,8 +80,8 @@ export function CraftView({ c }: { c: Craft }) {
 
 					<dl className='flex flex-wrap gap-x-12 gap-y-6 text-[13.5px] leading-[1.6] sm:flex-nowrap'>
 						{/* Only what a source says: a spec it does not give is left out rather than guessed. */}
-						{specs.map(([k, v], i) => (
-							<div key={k} className='min-w-0' style={{ flex: `0 1 ${(shared ?? widths[i]!.em).toFixed(1)}em` }}>
+						{specs.map(([k, v]) => (
+							<div key={k} className='min-w-0' style={{ flex: `0 1 ${specWidth(k, v).toFixed(1)}em` }}>
 								<dt className={`${serif} text-[17px] font-bold text-[#f4e8dc]`}>{k}</dt>
 								<dd className='mt-2 text-balance text-[#e2cbb8]'>{v}</dd>
 							</div>
