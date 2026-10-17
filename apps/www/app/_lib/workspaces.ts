@@ -90,7 +90,7 @@ export const projects: Project[] = [
 		href: '/directory',
 		measure: '35 offices · every LGU',
 		blurb: 'Who heads each regional office, with its numbers and emails, and every governor and mayor in BARMM.',
-		state: 'live',
+		state: 'soon', // hidden for now,
 	},
 	{
 		key: 'crafts',

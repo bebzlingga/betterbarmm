@@ -176,9 +176,6 @@ export default async function HomePage() {
 								<Link href='/discover' className='inline-flex items-center gap-1.5 text-[var(--ink)] underline decoration-white/40 underline-offset-4 hover:decoration-white'>
 									Discover BARMM <ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
 								</Link>
-								<Link href='/directory' className='inline-flex items-center gap-1.5 text-[var(--ink)] underline decoration-white/40 underline-offset-4 hover:decoration-white'>
-									Directory <ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
-								</Link>
 							</p>
 						</Rise>
 					</div>

@@ -1,4 +1,4 @@
-import { AddressBookIcon, BuildingsIcon, CheckSquareOffsetIcon, CoinsIcon, DiamondsFourIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon } from '@phosphor-icons/react/ssr'
+import { BuildingsIcon, CheckSquareOffsetIcon, CoinsIcon, DiamondsFourIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon } from '@phosphor-icons/react/ssr'
 import { GlobalSearch } from './global-search'
 import { SwitchCloser } from './switch-closer'
 
@@ -53,7 +53,8 @@ export type WorkspaceKey = (typeof WORKSPACES)[number]['key']
  *  site rather than a workspace of its own, listed from every workspace. */
 const PROJECTS = [
 	{ key: 'accidents', href: 'https://betterbarmm.com/accidents', label: 'Incident Watch', icon: SirenIcon },
-	{ key: 'directory', href: 'https://betterbarmm.com/directory', label: 'Directory', icon: AddressBookIcon },
+	// Directory is hidden for now; its pages stay up at /directory.
+	// { key: 'directory', href: 'https://betterbarmm.com/directory', label: 'Directory', icon: AddressBookIcon },
 	{ key: 'crafts', href: 'https://betterbarmm.com/crafts', label: 'Crafts', icon: DiamondsFourIcon },
 ] as const
 
