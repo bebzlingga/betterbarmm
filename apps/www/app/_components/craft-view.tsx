@@ -120,7 +120,7 @@ export function CraftView({ c, dialog = false }: { c: Craft; dialog?: boolean })
 						<h3 className={`${label} mt-10 text-[#8a6d5c]`}>Makers</h3>
 						<ul className='mt-3 grid gap-4 sm:grid-cols-2'>
 							{c.makers.map((m) => (
-								<li key={m.name} className='rounded-[4px] bg-white p-4 shadow-[0_8px_24px_-16px_rgba(60,30,15,0.4)]'>
+								<li key={m.name} className='rounded-[4px] bg-white p-4'>
 									<p className={`${serif} text-[16px] font-bold`}>{m.name}</p>
 									<p className='mt-1 text-[13.5px] leading-[1.55] text-[#5a3d2e]'>{m.note}</p>
 									<a href={m.source} target='_blank' rel='noreferrer' className={`mt-2 ${source}`}>
