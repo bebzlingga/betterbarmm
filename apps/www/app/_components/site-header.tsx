@@ -39,10 +39,9 @@ const secondaryLinks = [
 	// { key: 'this-week', href: '/this-week', label: 'This week' },
 	// Latest news is hidden for now; the page still builds at /news.
 	// { key: 'news', href: '/news', label: 'Latest news' },
-	// Accidents is reached through the strip's Projects switch, not the bar; phones get a row in the menu below.
+	// Accidents and the Directory are reached through the strip's Projects switch, not the bar; phones get a row each in the menu below.
 	// Programs & services is hidden for now; the pages still build at /services.
 	// { key: 'services', href: '/services', label: 'Programs & services' },
-	{ key: 'directory', href: '/directory', label: 'Directory' },
 	{ key: 'explainers', href: '/explainers', label: 'Explainers' },
 	{ key: 'about', href: '/about', label: 'About' },
 ] as const
@@ -155,7 +154,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 			{overlay ? null : (
 				<UtilityBar
 					current='home'
-					project={activeItem === 'accidents' ? 'accidents' : undefined}
+					project={activeItem === 'accidents' || activeItem === 'directory' ? activeItem : undefined}
 					className='bb-strip bg-[var(--paper-2)]'
 					switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
 					end={
@@ -346,7 +345,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 
 							<p className='bb-label mt-7'>Project</p>
 							<div className='mt-3 grid'>
-								{[...secondaryLinks, { key: 'accidents', href: '/accidents', label: 'Incident Watch' } as const].map((item) => (
+								{[...secondaryLinks, { key: 'accidents', href: '/accidents', label: 'Incident Watch' } as const, { key: 'directory', href: '/directory', label: 'Directory' } as const].map((item) => (
 									<Link
 										key={item.href}
 										href={item.href}

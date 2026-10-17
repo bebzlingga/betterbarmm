@@ -235,18 +235,11 @@ export default async function HomePage() {
 								</Link>
 							</p>
 						</div>
-						{/* One explainer takes the row to itself; more share it, three at most. */}
-						{explainers.length === 1 ? (
-							<div className='mt-6'>
-								<ExplainerCard e={explainers[0]!} heading='h3' wide />
-							</div>
-						) : (
-							<div className='mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-								{explainers.slice(0, 3).map((e) => (
-									<ExplainerCard key={e.id} e={e} heading='h3' />
-								))}
-							</div>
-						)}
+						<div className='mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
+							{explainers.slice(0, 3).map((e) => (
+								<ExplainerCard key={e.id} e={e} heading='h3' />
+							))}
+						</div>
 					</div>
 				</section>
 			) : null}
