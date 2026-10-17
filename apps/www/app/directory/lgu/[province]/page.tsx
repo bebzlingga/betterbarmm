@@ -35,15 +35,8 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 			<PlaceHeader province={g.slug} name={g.name} />
 
 			<section className='bb-container bb-section'>
-				<p className='text-[13.5px] text-[var(--ink-3)]'>
-					<Link scroll={false} href='/directory' className={linkClass}>
-						Directory
-					</Link>{' '}
-					· <a href={g.lguHref} className={linkClass}>{g.name} profile</a>
-				</p>
-
 				{isProvince ? (
-					<div className='mt-8 grid gap-6 sm:grid-cols-2'>
+					<div className='grid gap-6 sm:grid-cols-2'>
 						<div className='border-t border-[var(--ink)] pt-4'>
 							<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Governor</p>
 							<p className='mt-1 text-[22px] font-extrabold tracking-[-0.02em]'>{g.governor ?? 'Not in the canvass'}</p>
@@ -54,6 +47,13 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 						</div>
 					</div>
 				) : null}
+				<p className={`${isProvince ? 'mt-3 ' : ''}text-[13px] text-[var(--ink-3)]`}>
+					The full {isProvince ? 'provincial board' : 'council'} is on the{' '}
+					<a href={g.lguHref} className={linkClass}>
+						{g.name} profile
+					</a>
+					.
+				</p>
 
 				<section aria-labelledby='lines' className='mt-14'>
 					<h2 id='lines' className='text-[20px] font-extrabold'>

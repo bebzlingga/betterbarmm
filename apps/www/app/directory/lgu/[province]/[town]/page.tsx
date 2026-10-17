@@ -1,6 +1,5 @@
 import { barangayOfficials } from '@betterbarmm/lgu-data/barangay-officials'
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Lines, linkClass, monthYear } from '../../../../_components/directory-bits'
 import { Masthead } from '../../../../_components/masthead'
@@ -46,17 +45,7 @@ export default async function TownPage({ params }: { params: Promise<{ province:
 			<PlaceHeader province={g.slug} town={u.slug} name={u.name} />
 
 			<section className='bb-container bb-section'>
-				<p className='text-[13.5px] text-[var(--ink-3)]'>
-					<Link scroll={false} href='/directory' className={linkClass}>
-						Directory
-					</Link>{' '}
-					·{' '}
-					<Link scroll={false} href={g.href} className={linkClass}>
-						{g.name}
-					</Link>
-				</p>
-
-				<div className='mt-8 grid gap-6 sm:grid-cols-2'>
+				<div className='grid gap-6 sm:grid-cols-2'>
 					<div className='border-t border-[var(--ink)] pt-4'>
 						<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Mayor</p>
 						<p className='mt-1 text-[22px] font-extrabold tracking-[-0.02em]'>{u.head ?? 'Not in the canvass'}</p>
