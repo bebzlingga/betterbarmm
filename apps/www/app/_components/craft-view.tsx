@@ -4,6 +4,7 @@ import { toneVars } from '../_lib/craft-tone'
 import { cropStyle } from '../_lib/commons'
 import { GROUP, PROVINCE, commonsThumb, related, type Craft } from '../_lib/crafts'
 import { CraftCard } from './craft-card'
+import { CraftSpecs } from './craft-specs'
 import { CraftStage } from './craft-stage'
 import { monthYear } from './directory-bits'
 
@@ -14,19 +15,6 @@ import { monthYear } from './directory-bits'
 // Important: the shared base styles set the body face on p, li and dd outside any layer.
 const serif = 'font-[family-name:var(--font-craft)]!'
 const label = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em]'
-/**
- * The width, in the spec's em, that one spec's text needs. A wrapped paragraph keeps the full width of its box
- * however short its lines run, so the width is worked out from the text instead: as many lines as 20em needs,
- * each of the average length, with text-wrap: balance filling them evenly. The figures are DM Sans at the spec
- * size (about 0.5em a character) and the 17px serif label (about 0.62em a character in the spec's em).
- * Each spec hugs its own text, so the gap between columns is the gap and nothing more.
- */
-function specWidth(label: string, value: string) {
-	const chars = value.length * 0.5
-	const lines = Math.ceil(chars / 20)
-	return Math.max(Math.min(20, chars / lines + 1.2), label.length * 0.62)
-}
-
 /** A link as its reader would name it: Pusaka by its page, anything else by its site. */
 const sourceLabel = (s: string) => {
 	const page = s.match(/BARMM-CTB.*#page=(\d+)/)?.[1]
@@ -78,15 +66,7 @@ export function CraftView({ c }: { c: Craft }) {
 						) : null}
 					</div>
 
-					<dl className='flex flex-wrap gap-x-12 gap-y-6 text-[13.5px] leading-[1.6] sm:flex-nowrap'>
-						{/* Only what a source says: a spec it does not give is left out rather than guessed. */}
-						{specs.map(([k, v]) => (
-							<div key={k} className='min-w-0' style={{ flex: `0 1 ${specWidth(k, v).toFixed(1)}em` }}>
-								<dt className={`${serif} text-[17px] font-bold text-[#f4e8dc]`}>{k}</dt>
-								<dd className='mt-2 text-balance text-[#e2cbb8]'>{v}</dd>
-							</div>
-						))}
-					</dl>
+					<CraftSpecs specs={specs} labelClass={serif} />
 				</div>
 
 				<div className='flex flex-col bg-[var(--tone-paper)] p-6 sm:p-10'>
@@ -122,7 +102,7 @@ export function CraftView({ c }: { c: Craft }) {
 			</div>
 		</section>
 
-		<section className='mx-auto grid max-w-[84rem] gap-12 px-4 py-14 sm:px-6 lg:grid-cols-[minmax(0,7fr)_minmax(0,3fr)] lg:py-20'>
+		<section className='mx-auto grid max-w-[84rem] gap-12 px-4 py-14 sm:px-6 lg:grid-cols-[minmax(0,7fr)_minmax(0,3fr)] lg:gap-x-24 lg:py-20'>
 			<div>
 				{c.how_made ? (
 					<>
