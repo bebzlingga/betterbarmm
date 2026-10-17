@@ -44,7 +44,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 		<DirectoryDialog id={o.slug} name={o.name}>
 			<Masthead brand label={o.acronym ? `${KIND[o.kind]} · ${o.acronym}` : KIND[o.kind]} lines={[o.name]} />
 			{building ? (
-				<figure className='bb-frame relative h-56 overflow-hidden bg-[var(--paper-2)] sm:h-80'>
+				<figure className='bb-frame relative h-48 overflow-hidden bg-[var(--paper-2)] sm:h-64'>
 					{/* eslint-disable-next-line @next/next/no-img-element */}
 					<img src={building.src} alt={building.caption} className='size-full object-cover' />
 					<PhotoCredit photo={{ credit: building.credit, license: building.license, source: building.page }} />
