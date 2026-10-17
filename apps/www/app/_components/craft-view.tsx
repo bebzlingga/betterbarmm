@@ -14,6 +14,19 @@ import { monthYear } from './directory-bits'
 // Important: the shared base styles set the body face on p, li and dd outside any layer.
 const serif = 'font-[family-name:var(--font-craft)]!'
 const label = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em]'
+/**
+ * A spec column as wide as its own lines. A wrapped paragraph keeps the full width of its box however short its
+ * lines run, and that slack would add to the gap beside it, so the width is worked out from the text instead:
+ * as many lines as 19em needs, each of the average length, with text-wrap: balance filling them evenly. The
+ * figures are DM Sans at the spec size (about 0.5em a character) and the 17px serif label (about 0.62em a
+ * character in the spec's em).
+ */
+function specWidth(label: string, value: string) {
+	const chars = value.length * 0.5
+	const lines = Math.ceil(chars / 19)
+	return `${Math.max(Math.min(19, chars / lines + 1.2), label.length * 0.62).toFixed(1)}em`
+}
+
 /** A link as its reader would name it: Pusaka by its page, anything else by its site. */
 const sourceLabel = (s: string) => {
 	const page = s.match(/BARMM-CTB.*#page=(\d+)/)?.[1]
@@ -67,9 +80,9 @@ export function CraftView({ c }: { c: Craft }) {
 						]
 							.filter(([, v]) => v)
 							.map(([k, v]) => (
-								<div key={k} className='min-w-0 max-w-[16rem]'>
+								<div key={k} className='min-w-0 shrink-0' style={{ width: specWidth(k, v) }}>
 									<dt className={`${serif} text-[17px] font-bold text-[#f4e8dc]`}>{k}</dt>
-									<dd className='mt-2 text-[#e2cbb8]'>{v}</dd>
+									<dd className='mt-2 text-balance text-[#e2cbb8]'>{v}</dd>
 								</div>
 							))}
 					</dl>
@@ -180,7 +193,7 @@ export function CraftView({ c }: { c: Craft }) {
 			</div>
 		</section>
 
-		<section className='border-t border-[#e4d8cb] bg-[#efe6dc]'>
+		<section className='bg-[#efe6dc]'>
 			<div className='mx-auto max-w-[84rem] px-4 py-20 sm:px-6 lg:py-28'>
 				<h2 className={`${serif} text-[22px] font-bold`}>More from the region</h2>
 				<ul className='mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4'>
