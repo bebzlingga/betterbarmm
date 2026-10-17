@@ -43,6 +43,10 @@ type MastheadProps = {
   headlineClassName?: string
   /** Paint the band in the brand crimson, as the front page's masthead is. */
   brand?: boolean
+  /** Drawn behind everything, filling the band: a photograph blended into the ground. */
+  backdrop?: React.ReactNode
+  /** Beside the label and headline, on the right: a logo or a seal. */
+  aside?: React.ReactNode
 }
 
 /**
@@ -69,6 +73,8 @@ export function Masthead({
   size = 'display-md',
   headlineClassName = '',
   brand = false,
+  backdrop,
+  aside,
 }: MastheadProps) {
   return (
     /* Four fifths of the screen: enough that the headline opens on nothing but
@@ -77,22 +83,28 @@ export function Masthead({
        than `vh` so a phone's collapsing address bar cannot change the height
        mid-scroll. */
     <section className={`${brand ? 'brand-bg ' : ''}bb-lattice relative overflow-hidden`}>
+      {backdrop}
       <span
         aria-hidden='true'
         className='bb-glow absolute -right-[10%] -top-[20%] size-[36rem]'
       />
 
       <div className='bb-container relative w-full py-[clamp(3.75rem,7vw,6.5rem)]'>
-        <Rise distance={14}>
-          {label ? <p className='bb-label'>{label}</p> : null}
-        </Rise>
+        <div className={aside ? 'flex items-center justify-between gap-6 sm:gap-10' : undefined}>
+          <div className='min-w-0'>
+            <Rise distance={14}>
+              {label ? <p className='bb-label'>{label}</p> : null}
+            </Rise>
 
-        <LineReveal
-          lines={lines}
-          delay={0.08}
-          className={`bb-${size} mt-6 text-[var(--ink)] ${headlineClassName}`}
-          lineClassName={lines.map((_, index) => (muted.includes(index) ? 'bb-mute' : undefined))}
-        />
+            <LineReveal
+              lines={lines}
+              delay={0.08}
+              className={`bb-${size} mt-6 text-[var(--ink)] ${headlineClassName}`}
+              lineClassName={lines.map((_, index) => (muted.includes(index) ? 'bb-mute' : undefined))}
+            />
+          </div>
+          {aside}
+        </div>
 
         {standfirst ? (
           <Rise delay={0.35} distance={16}>

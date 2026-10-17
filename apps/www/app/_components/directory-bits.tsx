@@ -2,6 +2,7 @@ import type { Icon } from '@phosphor-icons/react'
 import { ArrowUpRightIcon, FireIcon, FirstAidIcon, HouseIcon, PhoneIcon, ShieldIcon, SirenIcon } from '@phosphor-icons/react/ssr'
 import { LINE_LABEL, telHref, type Line } from '../_lib/directory'
 import { PhotoCredit } from './discover-figure'
+import { Masthead } from './masthead'
 
 /* The pieces every directory page shares: a number you can tap, a block of service lines, a crumb trail. */
 
@@ -56,32 +57,36 @@ export function monthYear(d: string | null) {
 	return m ? new Date(Date.UTC(y!, m - 1, 1)).toLocaleDateString('en-PH', { month: 'long', year: 'numeric', timeZone: 'UTC' }) : String(y)
 }
 
-type HeaderPhoto = { src: string; alt: string; credit: { credit: string; license: string; source: string } }
-type HeaderLogo = { src: string; alt: string; title: string }
+type HeadPhoto = { src: string; alt: string; credit: { credit: string; license: string; source: string } }
+type HeadLogo = { src: string; alt: string; title: string }
 
-/** The picture under a dialog's title: a photograph with the logo or seal in a white badge in its corner,
- * or the logo alone on the ground where there is no photograph, or `children` (a drawing) where there is neither. */
-export function HeaderBlock({ photo, logo, children }: { photo: HeaderPhoto | null; logo: HeaderLogo | null; children?: React.ReactNode }) {
-	if (!photo && !logo && !children) return null
-	// Important: `.bb-frame img` covers its frame from outside the layers, so a logo needs `!` to stay whole.
+/** A directory dialog's band: its label and name over the crimson ground, the place's or the office's photograph
+ * blended into that ground where there is one, and its logo or seal on the right. */
+export function DirectoryHead({ label, name, photo, logo }: { label: string; name: string; photo: HeadPhoto | null; logo: HeadLogo | null }) {
 	return (
-		<figure className='bb-frame relative h-48 overflow-hidden bg-[var(--paper-2)] sm:h-64'>
-			{photo ? (
-				<>
-					{/* eslint-disable-next-line @next/next/no-img-element */}
-					<img src={photo.src} alt={photo.alt} className='size-full object-cover' />
-					<PhotoCredit photo={photo.credit} />
-					{logo ? (
-						// eslint-disable-next-line @next/next/no-img-element
-						<img src={logo.src} alt={logo.alt} title={logo.title} className='absolute bottom-4 left-5 size-20! bg-white object-contain! p-2 md:left-8' />
-					) : null}
-				</>
-			) : logo ? (
-				// eslint-disable-next-line @next/next/no-img-element
-				<img src={logo.src} alt={logo.alt} title={logo.title} className='size-full object-contain! p-8' />
-			) : (
-				children
-			)}
-		</figure>
+		<Masthead
+			brand
+			label={label}
+			lines={[name]}
+			backdrop={
+				photo ? (
+					<span className='absolute inset-0'>
+						{/* eslint-disable-next-line @next/next/no-img-element */}
+						<img src={photo.src} alt={photo.alt} className='absolute inset-0 size-full object-cover opacity-45 mix-blend-luminosity' />
+						{/* The crimson comes back over the left, so the name reads; the photograph shows through on the right. */}
+						<span aria-hidden='true' className='absolute inset-0 bg-[linear-gradient(90deg,var(--paper)_20%,color-mix(in_srgb,var(--paper)_55%,transparent)_65%,transparent)]' />
+						<span className='[&_.dsc-credit]:z-10'>
+							<PhotoCredit photo={photo.credit} />
+						</span>
+					</span>
+				) : null
+			}
+			aside={
+				logo ? (
+					// eslint-disable-next-line @next/next/no-img-element
+					<img src={logo.src} alt={logo.alt} title={logo.title} className='mr-12 size-[4.5rem] shrink-0 bg-white object-contain p-2 md:mr-14 md:size-[6.5rem] md:p-3' />
+				) : null
+			}
+		/>
 	)
 }

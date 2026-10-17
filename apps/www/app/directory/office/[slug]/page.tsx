@@ -2,8 +2,7 @@ import { ArrowUpRightIcon, CoinsIcon, EnvelopeSimpleIcon, FacebookLogoIcon, Glob
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { HeaderBlock, Phone, linkClass, monthYear } from '../../../_components/directory-bits'
-import { Masthead } from '../../../_components/masthead'
+import { DirectoryHead, Phone, linkClass, monthYear } from '../../../_components/directory-bits'
 import { DirectoryDialog } from '../../../_components/directory-dialog'
 import { directoryMeta, directoryOffice, directoryOffices, fieldOffices, headPhoto, officeHistory, officeLogo, officePhoto, officeStructure } from '../../../_lib/directory'
 import { OfficeStructure } from '../../../_components/office-structure'
@@ -42,8 +41,9 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 
 	return (
 		<DirectoryDialog id={o.slug} name={o.name}>
-			<Masthead brand label={o.acronym ? `${KIND[o.kind]} · ${o.acronym}` : KIND[o.kind]} lines={[o.name]} />
-			<HeaderBlock
+			<DirectoryHead
+				label={o.acronym ? `${KIND[o.kind]} · ${o.acronym}` : KIND[o.kind]}
+				name={o.name}
 				photo={building ? { src: building.src, alt: building.caption, credit: { credit: building.credit, license: building.license, source: building.page } } : null}
 				logo={logo ? { src: logo.src, alt: `${o.name} logo`, title: `Logo: ${logo.credit}` } : null}
 			/>

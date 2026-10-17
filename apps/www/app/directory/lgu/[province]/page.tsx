@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Lines, linkClass } from '../../../_components/directory-bits'
-import { Masthead } from '../../../_components/masthead'
 import { PlaceHeader } from '../../../_components/directory-places'
 import { DirectoryDialog } from '../../../_components/directory-dialog'
 import { emergencyMeta, localGovernments, localGroup, localLineage, provinceLines } from '../../../_lib/directory'
@@ -31,8 +30,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 
 	return (
 		<DirectoryDialog id={g.slug} name={g.name}>
-			<Masthead brand label={g.kind} lines={[g.name]} />
-			<PlaceHeader province={g.slug} name={g.name} />
+			<PlaceHeader label={g.kind} province={g.slug} name={g.name} />
 
 			<section className='bb-container bb-section'>
 				{isProvince ? (
@@ -47,13 +45,6 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 						</div>
 					</div>
 				) : null}
-				<p className={`${isProvince ? 'mt-3 ' : ''}text-[13px] text-[var(--ink-3)]`}>
-					The full {isProvince ? 'provincial board' : 'council'} is on the{' '}
-					<a href={g.lguHref} className={linkClass}>
-						{g.name} profile
-					</a>
-					.
-				</p>
 
 				<section aria-labelledby='lines' className='mt-14'>
 					<h2 id='lines' className='text-[20px] font-extrabold'>

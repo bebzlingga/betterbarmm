@@ -2,7 +2,6 @@ import { barangayOfficials } from '@betterbarmm/lgu-data/barangay-officials'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { Lines, linkClass, monthYear } from '../../../../_components/directory-bits'
-import { Masthead } from '../../../../_components/masthead'
 import { PlaceHeader } from '../../../../_components/directory-places'
 import { DirectoryDialog } from '../../../../_components/directory-dialog'
 import { barangayRows, emergencyMeta, localGovernments, localGroup, localLineage, townLines } from '../../../../_lib/directory'
@@ -41,8 +40,7 @@ export default async function TownPage({ params }: { params: Promise<{ province:
 
 	return (
 		<DirectoryDialog id={`${g.slug}/${u.slug}`} name={u.name}>
-			<Masthead brand label={`${u.isCity ? 'City' : 'Municipality'} · ${g.name}`} lines={[u.name]} />
-			<PlaceHeader province={g.slug} town={u.slug} name={u.name} />
+			<PlaceHeader label={`${u.isCity ? 'City' : 'Municipality'} · ${g.name}`} province={g.slug} town={u.slug} name={u.name} />
 
 			<section className='bb-container bb-section'>
 				<div className='grid gap-6 sm:grid-cols-2'>
@@ -55,13 +53,6 @@ export default async function TownPage({ params }: { params: Promise<{ province:
 						<p className='mt-1 text-[22px] font-extrabold tracking-[-0.02em]'>{u.deputy ?? '–'}</p>
 					</div>
 				</div>
-				<p className='mt-3 text-[13px] text-[var(--ink-3)]'>
-					Won in COMELEC’s canvass of the May 2025 elections, for 2025–2028. The full council is on the{' '}
-					<a href={u.lguHref} className={linkClass}>
-						{u.name} profile
-					</a>
-					.
-				</p>
 
 				<section aria-labelledby='lines' className='mt-14'>
 					<h2 id='lines' className='text-[20px] font-extrabold'>
