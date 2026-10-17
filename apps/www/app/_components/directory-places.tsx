@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { commonsThumb } from '../_lib/commons'
 import { LINE_LABEL, localGovernments, placePhoto, placeSeal, provinceLines, telHref, townLines, type Line, type PlacePhoto } from '../_lib/directory'
 import { barmmBoundaries, lguProvinces, sameUnit } from '@betterbarmm/lgu-data'
+import { HeaderBlock } from './directory-bits'
 import { PhotoCredit } from './discover-figure'
 import { photo as discoverPhoto, type DiscoverPhotoKey } from './discover-media'
 
@@ -81,6 +82,26 @@ function bannerPhoto(slug: string) {
 	return { src: d.src.src, credit: d }
 }
 
+/** The picture under a province's or a town's dialog title: its photograph with its seal in the corner,
+ * or the seal alone, or, for a town with neither, where it lies in its province. */
+export function PlaceHeader({ province, town, name }: { province: string; town?: string; name: string }) {
+	const tp = town ? placePhoto(province, town) : null
+	const photo = town ? (tp ? { src: commonsThumb(tp.url, 1280), credit: credit(tp) } : null) : bannerPhoto(province)
+	const seal = placeSeal(province, town)
+	return (
+		<HeaderBlock
+			photo={photo ? { src: photo.src, alt: tp?.caption || name, credit: photo.credit } : null}
+			logo={seal ? { src: seal.src, alt: `The seal of ${name}`, title: `Seal: ${seal.credit}` } : null}
+		>
+			{town ? (
+				<span className='mx-auto block h-full max-w-md'>
+					<TownMap province={province} town={town} name={name} />
+				</span>
+			) : null}
+		</HeaderBlock>
+	)
+}
+
 export function DirectoryPlaces() {
 	return (
 		<div className='mt-10 space-y-16'>
@@ -154,7 +175,7 @@ export function DirectoryPlaces() {
 											) : placeSeal(g.slug, u.slug) ? (
 												// No photograph: the town's official seal, on the card's ground.
 												// eslint-disable-next-line @next/next/no-img-element
-												<img src={placeSeal(g.slug, u.slug)!.src} alt={`The seal of ${u.name}`} title={`Seal: ${placeSeal(g.slug, u.slug)!.credit}`} loading='lazy' className='size-full bg-[var(--paper-2)] object-contain p-3' />
+												<img src={placeSeal(g.slug, u.slug)!.src} alt={`The seal of ${u.name}`} title={`Seal: ${placeSeal(g.slug, u.slug)!.credit}`} loading='lazy' className='size-full bg-[var(--paper-2)] object-contain! p-3' />
 											) : (
 												<TownMap province={g.slug} town={u.slug} name={u.name} />
 											)}

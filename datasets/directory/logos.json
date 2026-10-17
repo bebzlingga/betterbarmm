@@ -1,6 +1,6 @@
 {
  "name": "Logos and seals of the Bangsamoro Government offices and the local governments",
- "note": "Each office’s logo as its own site or Wikimedia Commons publishes it, and each province’s and town’s official seal from Wikimedia Commons; government works, credited.",
+ "note": "Each office’s logo as its own site, the Bangsamoro Government’s site or Wikimedia Commons publishes it, and each province’s and town’s official seal from Wikimedia Commons or, for most towns, the copy English Wikipedia holds; seals and logos are Philippine government works (RA 8293 Sec. 176), credited to the government they belong to.",
  "offices": {
   "ministry-of-public-order-and-safety": {
    "src": "/directory/offices/ministry-of-public-order-and-safety.png",
@@ -67,8 +67,706 @@
    "page": "https://commons.wikimedia.org/wiki/File:Seal_of_the_Special_Geographic_Area_Development_Authority.png",
    "credit": "Special Geographic Area Development Authority",
    "license": "Public domain (Philippine government work; tagged Public domain on Wikimedia Commons)"
+  },
+  "office-of-the-chief-minister": {
+   "src": "/directory/logos/office-of-the-chief-minister.png",
+   "page": "https://bangsamoro.gov.ph/",
+   "credit": "Office of the Chief Minister, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "ministry-of-basic-higher-and-technical-education": {
+   "src": "/directory/logos/ministry-of-basic-higher-and-technical-education.png",
+   "page": "https://bangsamoro.gov.ph/",
+   "credit": "Ministry of Basic, Higher and Technical Education, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "ministry-of-health": {
+   "src": "/directory/logos/ministry-of-health.png",
+   "page": "https://moh.bangsamoro.gov.ph/",
+   "credit": "Ministry of Health, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "ministry-of-social-services-and-development": {
+   "src": "/directory/logos/ministry-of-social-services-and-development.png",
+   "page": "https://mssd.barmm.gov.ph/",
+   "credit": "Ministry of Social Services and Development, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "ministry-of-agriculture-fisheries-and-agrarian-reform": {
+   "src": "/directory/logos/ministry-of-agriculture-fisheries-and-agrarian-reform.png",
+   "page": "https://mafar.bangsamoro.gov.ph/",
+   "credit": "Ministry of Agriculture, Fisheries and Agrarian Reform, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "ministry-of-public-works": {
+   "src": "/directory/logos/ministry-of-public-works.png",
+   "page": "https://mpw.bangsamoro.gov.ph/",
+   "credit": "Ministry of Public Works, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "ministry-of-the-interior-and-local-government": {
+   "src": "/directory/logos/ministry-of-the-interior-and-local-government.png",
+   "page": "https://bangsamoro.gov.ph/",
+   "credit": "Ministry of the Interior and Local Government, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "ministry-of-human-settlements-and-development": {
+   "src": "/directory/logos/ministry-of-human-settlements-and-development.png",
+   "page": "https://bangsamoro.gov.ph/",
+   "credit": "Ministry of Human Settlements and Development, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "ministry-of-environment-natural-resources-and-energy": {
+   "src": "/directory/logos/ministry-of-environment-natural-resources-and-energy.png",
+   "page": "https://bangsamoro.gov.ph/",
+   "credit": "Ministry of Environment, Natural Resources and Energy, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "ministry-of-trade-investments-and-tourism": {
+   "src": "/directory/logos/ministry-of-trade-investments-and-tourism.png",
+   "page": "https://mtit.bangsamoro.gov.ph/",
+   "credit": "Ministry of Trade, Investments and Tourism, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "ministry-of-transportation-and-communications": {
+   "src": "/directory/logos/ministry-of-transportation-and-communications.png",
+   "page": "https://motc.bangsamoro.gov.ph/",
+   "credit": "Ministry of Transportation and Communications, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "ministry-of-science-and-technology": {
+   "src": "/directory/logos/ministry-of-science-and-technology.png",
+   "page": "https://most.bangsamoro.gov.ph/",
+   "credit": "Ministry of Science and Technology, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "ministry-of-finance-and-budget-and-management": {
+   "src": "/directory/logos/ministry-of-finance-and-budget-and-management.png",
+   "page": "https://bangsamoro.gov.ph/",
+   "credit": "Ministry of Finance, and Budget and Management, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "ministry-of-labor-and-employment": {
+   "src": "/directory/logos/ministry-of-labor-and-employment.png",
+   "page": "https://mole.bangsamoro.gov.ph/",
+   "credit": "Ministry of Labor and Employment, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "ministry-of-indigenous-peoples-affairs": {
+   "src": "/directory/logos/ministry-of-indigenous-peoples-affairs.png",
+   "page": "https://bangsamoro.gov.ph/",
+   "credit": "Ministry of Indigenous Peoples' Affairs, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "bangsamoro-human-rights-commission": {
+   "src": "/directory/logos/bangsamoro-human-rights-commission.png",
+   "page": "https://bhrc.bangsamoro.gov.ph/",
+   "credit": "Bangsamoro Human Rights Commission, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "bangsamoro-commission-for-the-preservation-of-cultural-heritage": {
+   "src": "/directory/logos/bangsamoro-commission-for-the-preservation-of-cultural-heritage.png",
+   "page": "https://bcpch.bangsamoro.gov.ph/",
+   "credit": "Bangsamoro Commission for the Preservation of Cultural Heritage, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "bangsamoro-women-commission": {
+   "src": "/directory/logos/bangsamoro-women-commission.png",
+   "page": "https://bwc.bangsamoro.gov.ph/",
+   "credit": "Bangsamoro Women Commission, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "bangsamoro-attorney-general-s-office": {
+   "src": "/directory/logos/bangsamoro-attorney-general-s-office.png",
+   "page": "https://bago.bangsamoro.gov.ph/",
+   "credit": "Bangsamoro Attorney-General's Office, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "cooperatives-and-social-enterprise-authority": {
+   "src": "/directory/logos/cooperatives-and-social-enterprise-authority.png",
+   "page": "https://csea.bangsamoro.gov.ph/",
+   "credit": "Cooperatives and Social Enterprise Authority, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
+  },
+  "bangsamoro-information-and-communications-technology-office": {
+   "src": "/directory/logos/bangsamoro-information-and-communications-technology-office.png",
+   "page": "https://bicto.bangsamoro.gov.ph/",
+   "credit": "Bangsamoro Information and Communications Technology Office, Bangsamoro Government",
+   "license": "Philippine government work - no copyright subsists (RA 8293 Sec. 176); no licence stated on site"
   }
  },
- "areas": {},
- "towns": {}
+ "areas": {
+  "basilan": {
+   "src": "/directory/seals/basilan.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Official_Seal_of_Basilan.svg",
+   "credit": "Province of Basilan",
+   "license": "Public domain (PD-PhilippinesGov on Commons); LGU seal is a Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur": {
+   "src": "/directory/seals/lanao-del-sur.png",
+   "page": "https://commons.wikimedia.org/wiki/File:PH_seal_lanao_del_sur.svg",
+   "credit": "Province of Lanao del Sur",
+   "license": "Public domain; LGU seal is a Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-norte": {
+   "src": "/directory/seals/maguindanao-del-norte.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Seal_of_Maguindanao_del_Norte.png",
+   "credit": "Province of Maguindanao del Norte",
+   "license": "Public domain; LGU seal is a Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur": {
+   "src": "/directory/seals/maguindanao-del-sur.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Seal_of_Maguindanao_del_Sur.svg",
+   "credit": "Province of Maguindanao del Sur",
+   "license": "Public domain; LGU seal is a Philippine government work (RA 8293 Sec. 176)"
+  },
+  "tawi-tawi": {
+   "src": "/directory/seals/tawi-tawi.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Seal_of_Tawi-Tawi.png",
+   "credit": "Province of Tawi-Tawi",
+   "license": "Public domain; LGU seal is a Philippine government work (RA 8293 Sec. 176)"
+  },
+  "cotabato-city": {
+   "src": "/directory/seals/cotabato-city.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Cotabato_City_Official_Seal.png",
+   "credit": "Cotabato City",
+   "license": "Public domain; LGU seal is a Philippine government work (RA 8293 Sec. 176)"
+  }
+ },
+ "towns": {
+  "basilan/akbar": {
+   "src": "/directory/seals/basilan__akbar.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Akbar.png",
+   "credit": "Municipality of Akbar",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "basilan/hadji-mohammad-ajul": {
+   "src": "/directory/seals/basilan__hadji-mohammad-ajul.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Hadji_Mohammad_Ajul.png",
+   "credit": "Municipality of Hadji Mohammad Ajul",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "basilan/hadji-muhtamad": {
+   "src": "/directory/seals/basilan__hadji-muhtamad.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Hadji_Muhtamad.png",
+   "credit": "Municipality of Hadji Muhtamad",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "basilan/lamitan": {
+   "src": "/directory/seals/basilan__lamitan.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Lamitan_City.png",
+   "credit": "City of Lamitan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "basilan/lantawan": {
+   "src": "/directory/seals/basilan__lantawan.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Lantawan.png",
+   "credit": "Municipality of Lantawan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "basilan/maluso": {
+   "src": "/directory/seals/basilan__maluso.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Maluso.png",
+   "credit": "Municipality of Maluso",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "basilan/sumisip": {
+   "src": "/directory/seals/basilan__sumisip.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Sumisip.png",
+   "credit": "Municipality of Sumisip",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "basilan/tabuan-lasa": {
+   "src": "/directory/seals/basilan__tabuan-lasa.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Tabuan-Lasa.png",
+   "credit": "Municipality of Tabuan-Lasa",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "basilan/tipo-tipo": {
+   "src": "/directory/seals/basilan__tipo-tipo.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Tipo-Tipo.png",
+   "credit": "Municipality of Tipo-Tipo",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "basilan/tuburan": {
+   "src": "/directory/seals/basilan__tuburan.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Tuburan.png",
+   "credit": "Municipality of Tuburan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "basilan/ungkaya-pukan": {
+   "src": "/directory/seals/basilan__ungkaya-pukan.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Ungkaya_Pukan.png",
+   "credit": "Municipality of Ungkaya Pukan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/amai-manabilang": {
+   "src": "/directory/seals/lanao-del-sur__amai-manabilang.png",
+   "page": "https://en.wikipedia.org/wiki/File:Amai_Manabilang_Seal.png",
+   "credit": "Municipality of Amai Manabilang",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/bacolod-kalawi": {
+   "src": "/directory/seals/lanao-del-sur__bacolod-kalawi.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Bacolod-Kalawi.png",
+   "credit": "Municipality of Bacolod-Kalawi",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/balabagan": {
+   "src": "/directory/seals/lanao-del-sur__balabagan.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Balabagan.png",
+   "credit": "Municipality of Balabagan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/balindong": {
+   "src": "/directory/seals/lanao-del-sur__balindong.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Balindong.png",
+   "credit": "Municipality of Balindong",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/bayang": {
+   "src": "/directory/seals/lanao-del-sur__bayang.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Bayang.png",
+   "credit": "Municipality of Bayang",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/binidayan": {
+   "src": "/directory/seals/lanao-del-sur__binidayan.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Binidayan.png",
+   "credit": "Municipality of Binidayan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/buadiposo-buntong": {
+   "src": "/directory/seals/lanao-del-sur__buadiposo-buntong.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Buadiposo_Buntong.png",
+   "credit": "Municipality of Buadiposo-Buntong",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/bubong": {
+   "src": "/directory/seals/lanao-del-sur__bubong.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Bubong.png",
+   "credit": "Municipality of Bubong",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/butig": {
+   "src": "/directory/seals/lanao-del-sur__butig.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Butig.png",
+   "credit": "Municipality of Butig",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/calanogas": {
+   "src": "/directory/seals/lanao-del-sur__calanogas.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Calanogas.png",
+   "credit": "Municipality of Calanogas",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/ganassi": {
+   "src": "/directory/seals/lanao-del-sur__ganassi.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Ganassi.png",
+   "credit": "Municipality of Ganassi",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/kapai": {
+   "src": "/directory/seals/lanao-del-sur__kapai.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Kapai.png",
+   "credit": "Municipality of Kapai",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/kapatagan": {
+   "src": "/directory/seals/lanao-del-sur__kapatagan.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Kapatagan,LDS.png",
+   "credit": "Municipality of Kapatagan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/lumba-bayabao": {
+   "src": "/directory/seals/lanao-del-sur__lumba-bayabao.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Lumba-Bayabao.png",
+   "credit": "Municipality of Lumba-Bayabao",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/lumbaca-unayan": {
+   "src": "/directory/seals/lanao-del-sur__lumbaca-unayan.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Lumbaca-Unayan.png",
+   "credit": "Municipality of Lumbaca-Unayan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/lumbatan": {
+   "src": "/directory/seals/lanao-del-sur__lumbatan.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Lumbatan.png",
+   "credit": "Municipality of Lumbatan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/lumbayanague": {
+   "src": "/directory/seals/lanao-del-sur__lumbayanague.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Lumbayanague.png",
+   "credit": "Municipality of Lumbayanague",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/madalum": {
+   "src": "/directory/seals/lanao-del-sur__madalum.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Madalum.png",
+   "credit": "Municipality of Madalum",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/madamba": {
+   "src": "/directory/seals/lanao-del-sur__madamba.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Madamba.png",
+   "credit": "Municipality of Madamba",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/maguing": {
+   "src": "/directory/seals/lanao-del-sur__maguing.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Maguing.png",
+   "credit": "Municipality of Maguing",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/malabang": {
+   "src": "/directory/seals/lanao-del-sur__malabang.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Malabang.png",
+   "credit": "Municipality of Malabang",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/marantao": {
+   "src": "/directory/seals/lanao-del-sur__marantao.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Marantao.png",
+   "credit": "Municipality of Marantao",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/marawi": {
+   "src": "/directory/seals/lanao-del-sur__marawi.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Seal_of_Marawi.png",
+   "credit": "City of Marawi",
+   "license": "Public domain; LGU seal is a Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/marogong": {
+   "src": "/directory/seals/lanao-del-sur__marogong.png",
+   "page": "https://en.wikipedia.org/wiki/File:Marogong_Lanao_del_Sur.png",
+   "credit": "Municipality of Marogong",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/masiu": {
+   "src": "/directory/seals/lanao-del-sur__masiu.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Masiu.png",
+   "credit": "Municipality of Masiu",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/mulondo": {
+   "src": "/directory/seals/lanao-del-sur__mulondo.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Mulondo.png",
+   "credit": "Municipality of Mulondo",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/pagayawan": {
+   "src": "/directory/seals/lanao-del-sur__pagayawan.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Pagayawan.png",
+   "credit": "Municipality of Pagayawan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/piagapo": {
+   "src": "/directory/seals/lanao-del-sur__piagapo.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Piagapo.png",
+   "credit": "Municipality of Piagapo",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/picong": {
+   "src": "/directory/seals/lanao-del-sur__picong.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Picong.png",
+   "credit": "Municipality of Picong",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/poona-bayabao": {
+   "src": "/directory/seals/lanao-del-sur__poona-bayabao.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Poona_Bayabao.png",
+   "credit": "Municipality of Poona Bayabao",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/saguiaran": {
+   "src": "/directory/seals/lanao-del-sur__saguiaran.png",
+   "page": "https://en.wikipedia.org/wiki/File:Saguiaran_Seal.png",
+   "credit": "Municipality of Saguiaran",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/sultan-dumalondong": {
+   "src": "/directory/seals/lanao-del-sur__sultan-dumalondong.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Sultan_Dumalundong.png",
+   "credit": "Municipality of Sultan Dumalondong",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/tagoloan-ii": {
+   "src": "/directory/seals/lanao-del-sur__tagoloan-ii.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Tagoloan_II_Lanao_del_Sur.png",
+   "credit": "Municipality of Tagoloan II",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/tamparan": {
+   "src": "/directory/seals/lanao-del-sur__tamparan.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Tamparan.png",
+   "credit": "Municipality of Tamparan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/taraka": {
+   "src": "/directory/seals/lanao-del-sur__taraka.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Taraka,_LDS.png",
+   "credit": "Municipality of Taraka",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/tubaran": {
+   "src": "/directory/seals/lanao-del-sur__tubaran.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Tubaran.png",
+   "credit": "Municipality of Tubaran",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/tugaya": {
+   "src": "/directory/seals/lanao-del-sur__tugaya.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Tugaya.png",
+   "credit": "Municipality of Tugaya",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "lanao-del-sur/wao": {
+   "src": "/directory/seals/lanao-del-sur__wao.png",
+   "page": "https://en.wikipedia.org/wiki/File:Wao_Seal.png",
+   "credit": "Municipality of Wao",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-norte/barira": {
+   "src": "/directory/seals/maguindanao-del-norte__barira.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Barira.jpg",
+   "credit": "Municipality of Barira",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-norte/buldon": {
+   "src": "/directory/seals/maguindanao-del-norte__buldon.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Buldon.jpg",
+   "credit": "Municipality of Buldon",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-norte/datu-blah-t-sinsuat": {
+   "src": "/directory/seals/maguindanao-del-norte__datu-blah-t-sinsuat.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Datu_Blah_Sinsuat.png",
+   "credit": "Municipality of Datu Blah T. Sinsuat",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-norte/datu-odin-sinsuat": {
+   "src": "/directory/seals/maguindanao-del-norte__datu-odin-sinsuat.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Datu_Odin_Sinsuat.jpg",
+   "credit": "Municipality of Datu Odin Sinsuat",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-norte/kabuntalan": {
+   "src": "/directory/seals/maguindanao-del-norte__kabuntalan.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Kabuntalan.jpg",
+   "credit": "Municipality of Kabuntalan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-norte/matanog": {
+   "src": "/directory/seals/maguindanao-del-norte__matanog.png",
+   "page": "https://en.wikipedia.org/wiki/File:Matanog_Maguindanao.png",
+   "credit": "Municipality of Matanog",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-norte/northern-kabuntalan": {
+   "src": "/directory/seals/maguindanao-del-norte__northern-kabuntalan.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Northern_Kabuntalan.jpg",
+   "credit": "Municipality of Northern Kabuntalan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-norte/parang": {
+   "src": "/directory/seals/maguindanao-del-norte__parang.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Parang_Maguindanao.jpg",
+   "credit": "Municipality of Parang",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-norte/sultan-kudarat": {
+   "src": "/directory/seals/maguindanao-del-norte__sultan-kudarat.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Sultan_Kudarat_Maguindanao.jpg",
+   "credit": "Municipality of Sultan Kudarat",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-norte/sultan-mastura": {
+   "src": "/directory/seals/maguindanao-del-norte__sultan-mastura.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Sultan_Mastura.jpg",
+   "credit": "Municipality of Sultan Mastura",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-norte/upi": {
+   "src": "/directory/seals/maguindanao-del-norte__upi.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Upi_logo.png",
+   "credit": "Municipality of Upi",
+   "license": "CC BY-SA 4.0; LGU seal is a Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/ampatuan": {
+   "src": "/directory/seals/maguindanao-del-sur__ampatuan.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Ampatuan,_Maguindanao.jpg",
+   "credit": "Municipality of Ampatuan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/buluan": {
+   "src": "/directory/seals/maguindanao-del-sur__buluan.png",
+   "page": "https://en.wikipedia.org/wiki/File:The_Seal_of_the_municipality_of_Buluan,_Maguindanao.jpg",
+   "credit": "Municipality of Buluan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/datu-abdullah-sangki": {
+   "src": "/directory/seals/maguindanao-del-sur__datu-abdullah-sangki.png",
+   "page": "https://en.wikipedia.org/wiki/File:The_Seal_of_the_municipality_of_Datu_Abdullah_Sangki,_Maguindanao.png",
+   "credit": "Municipality of Datu Abdullah Sangki",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/datu-anggal-midtimbang": {
+   "src": "/directory/seals/maguindanao-del-sur__datu-anggal-midtimbang.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Datu_Anggal_Midtimbang.png",
+   "credit": "Municipality of Datu Anggal Midtimbang",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/datu-hoffer-ampatuan": {
+   "src": "/directory/seals/maguindanao-del-sur__datu-hoffer-ampatuan.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Datu_Hoffer.png",
+   "credit": "Municipality of Datu Hoffer Ampatuan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/datu-paglas": {
+   "src": "/directory/seals/maguindanao-del-sur__datu-paglas.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Datu_Paglas.png",
+   "credit": "Municipality of Datu Paglas",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/datu-piang": {
+   "src": "/directory/seals/maguindanao-del-sur__datu-piang.png",
+   "page": "https://en.wikipedia.org/wiki/File:Ph_seal_maguindanao_datu_piang.png",
+   "credit": "Municipality of Datu Piang",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/datu-salibo": {
+   "src": "/directory/seals/maguindanao-del-sur__datu-salibo.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Datu_Salibo.png",
+   "credit": "Municipality of Datu Salibo",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/datu-saudi-ampatuan": {
+   "src": "/directory/seals/maguindanao-del-sur__datu-saudi-ampatuan.png",
+   "page": "https://en.wikipedia.org/wiki/File:The_Seal_of_the_municipality_of_Datu_Saudi_Ampatuan,_Maguindanao.jpg",
+   "credit": "Municipality of Datu Saudi-Ampatuan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/datu-unsay": {
+   "src": "/directory/seals/maguindanao-del-sur__datu-unsay.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Datu_Unsay.png",
+   "credit": "Municipality of Datu Unsay",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/gen-s-k-pendatun": {
+   "src": "/directory/seals/maguindanao-del-sur__gen-s-k-pendatun.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Gen._S.K._Pendatun.png",
+   "credit": "Municipality of Gen. S. K. Pendatun",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/guindulungan": {
+   "src": "/directory/seals/maguindanao-del-sur__guindulungan.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Guindulungan.jpg",
+   "credit": "Municipality of Guindulungan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/mamasapano": {
+   "src": "/directory/seals/maguindanao-del-sur__mamasapano.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Mamasapano.png",
+   "credit": "Municipality of Mamasapano",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/mangudadatu": {
+   "src": "/directory/seals/maguindanao-del-sur__mangudadatu.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Mangudadatu,_Maguindanao.png",
+   "credit": "Municipality of Mangudadatu",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/pagalungan": {
+   "src": "/directory/seals/maguindanao-del-sur__pagalungan.png",
+   "page": "https://en.wikipedia.org/wiki/File:The_Seal_of_the_municipality_of_Pagalungan,_Maguindanao.jpg",
+   "credit": "Municipality of Pagalungan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/paglat": {
+   "src": "/directory/seals/maguindanao-del-sur__paglat.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Paglat.png",
+   "credit": "Municipality of Paglat",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/pandag": {
+   "src": "/directory/seals/maguindanao-del-sur__pandag.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Pandag.png",
+   "credit": "Municipality of Pandag",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/rajah-buayan": {
+   "src": "/directory/seals/maguindanao-del-sur__rajah-buayan.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Rajah_Buayan.jpg",
+   "credit": "Municipality of Rajah Buayan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/shariff-aguak": {
+   "src": "/directory/seals/maguindanao-del-sur__shariff-aguak.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Shariff_Aguak.jpg",
+   "credit": "Municipality of Shariff Aguak",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/shariff-saydona-mustapha": {
+   "src": "/directory/seals/maguindanao-del-sur__shariff-saydona-mustapha.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Shariff_Saydona_Mustapha.png",
+   "credit": "Municipality of Shariff Saydona Mustapha",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/south-upi": {
+   "src": "/directory/seals/maguindanao-del-sur__south-upi.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_South_Upi.jpg",
+   "credit": "Municipality of South Upi",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/sultan-sa-barongis": {
+   "src": "/directory/seals/maguindanao-del-sur__sultan-sa-barongis.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Sultan_Sa_Barongis.jpg",
+   "credit": "Municipality of Sultan Sa Barongis",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "maguindanao-del-sur/talayan": {
+   "src": "/directory/seals/maguindanao-del-sur__talayan.png",
+   "page": "https://en.wikipedia.org/wiki/File:The_Seal_of_the_municipality_of_Talayan,_Maguindanao.jpg",
+   "credit": "Municipality of Talayan",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "tawi-tawi/bongao": {
+   "src": "/directory/seals/tawi-tawi__bongao.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Bongao.png",
+   "credit": "Municipality of Bongao",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "tawi-tawi/south-ubian": {
+   "src": "/directory/seals/tawi-tawi__south-ubian.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_South_Ubian.png",
+   "credit": "Municipality of South Ubian",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "tawi-tawi/tandubas": {
+   "src": "/directory/seals/tawi-tawi__tandubas.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Tandubas.png",
+   "credit": "Municipality of Tandubas",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "tawi-tawi/turtle-islands": {
+   "src": "/directory/seals/tawi-tawi__turtle-islands.png",
+   "page": "https://en.wikipedia.org/wiki/File:Seal_of_Turtle_Islands.png",
+   "credit": "Municipality of Turtle Islands",
+   "license": "Philippine government work (RA 8293 Sec. 176)"
+  },
+  "cotabato-city/cotabato-city": {
+   "src": "/directory/seals/cotabato-city__cotabato-city.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Cotabato_City_Official_Seal.png",
+   "credit": "City of Cotabato City",
+   "license": "Public domain; LGU seal is a Philippine government work (RA 8293 Sec. 176)"
+  },
+  "special-geographic-area/kadayangan": {
+   "src": "/directory/seals/special-geographic-area__kadayangan.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Seal_of_Kadayangan.png",
+   "credit": "Municipality of Kadayangan",
+   "license": "Public domain; LGU seal is a Philippine government work (RA 8293 Sec. 176)"
+  }
+ }
 }

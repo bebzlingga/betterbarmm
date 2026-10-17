@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Lines, linkClass } from '../../../_components/directory-bits'
 import { Masthead } from '../../../_components/masthead'
+import { PlaceHeader } from '../../../_components/directory-places'
 import { DirectoryDialog } from '../../../_components/directory-dialog'
 import { emergencyMeta, localGovernments, localGroup, localLineage, provinceLines } from '../../../_lib/directory'
 import { pageMeta } from '../../../_lib/seo'
@@ -31,6 +32,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 	return (
 		<DirectoryDialog id={g.slug} name={g.name}>
 			<Masthead brand label={g.kind} lines={[g.name]} />
+			<PlaceHeader province={g.slug} name={g.name} />
 
 			<section className='bb-container bb-section'>
 				<p className='text-[13.5px] text-[var(--ink-3)]'>

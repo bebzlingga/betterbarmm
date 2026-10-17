@@ -1,6 +1,7 @@
 import type { Icon } from '@phosphor-icons/react'
 import { ArrowUpRightIcon, FireIcon, FirstAidIcon, HouseIcon, PhoneIcon, ShieldIcon, SirenIcon } from '@phosphor-icons/react/ssr'
 import { LINE_LABEL, telHref, type Line } from '../_lib/directory'
+import { PhotoCredit } from './discover-figure'
 
 /* The pieces every directory page shares: a number you can tap, a block of service lines, a crumb trail. */
 
@@ -53,4 +54,34 @@ export function monthYear(d: string | null) {
 	if (!d) return null
 	const [y, m] = d.split('-').map(Number)
 	return m ? new Date(Date.UTC(y!, m - 1, 1)).toLocaleDateString('en-PH', { month: 'long', year: 'numeric', timeZone: 'UTC' }) : String(y)
+}
+
+type HeaderPhoto = { src: string; alt: string; credit: { credit: string; license: string; source: string } }
+type HeaderLogo = { src: string; alt: string; title: string }
+
+/** The picture under a dialog's title: a photograph with the logo or seal in a white badge in its corner,
+ * or the logo alone on the ground where there is no photograph, or `children` (a drawing) where there is neither. */
+export function HeaderBlock({ photo, logo, children }: { photo: HeaderPhoto | null; logo: HeaderLogo | null; children?: React.ReactNode }) {
+	if (!photo && !logo && !children) return null
+	// Important: `.bb-frame img` covers its frame from outside the layers, so a logo needs `!` to stay whole.
+	return (
+		<figure className='bb-frame relative h-48 overflow-hidden bg-[var(--paper-2)] sm:h-64'>
+			{photo ? (
+				<>
+					{/* eslint-disable-next-line @next/next/no-img-element */}
+					<img src={photo.src} alt={photo.alt} className='size-full object-cover' />
+					<PhotoCredit photo={photo.credit} />
+					{logo ? (
+						// eslint-disable-next-line @next/next/no-img-element
+						<img src={logo.src} alt={logo.alt} title={logo.title} className='absolute bottom-4 left-5 size-20! bg-white object-contain! p-2 md:left-8' />
+					) : null}
+				</>
+			) : logo ? (
+				// eslint-disable-next-line @next/next/no-img-element
+				<img src={logo.src} alt={logo.alt} title={logo.title} className='size-full object-contain! p-8' />
+			) : (
+				children
+			)}
+		</figure>
+	)
 }

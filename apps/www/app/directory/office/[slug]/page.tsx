@@ -2,12 +2,11 @@ import { ArrowUpRightIcon, CoinsIcon, EnvelopeSimpleIcon, FacebookLogoIcon, Glob
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { Phone, linkClass, monthYear } from '../../../_components/directory-bits'
+import { HeaderBlock, Phone, linkClass, monthYear } from '../../../_components/directory-bits'
 import { Masthead } from '../../../_components/masthead'
 import { DirectoryDialog } from '../../../_components/directory-dialog'
 import { directoryMeta, directoryOffice, directoryOffices, fieldOffices, headPhoto, officeHistory, officeLogo, officePhoto, officeStructure } from '../../../_lib/directory'
 import { OfficeStructure } from '../../../_components/office-structure'
-import { PhotoCredit } from '../../../_components/discover-figure'
 import { HeadPortrait } from '../../../_components/head-portrait'
 import { budgetHref, officeBySlug } from '../../../_lib/services'
 import { pageMeta } from '../../../_lib/seo'
@@ -44,25 +43,10 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 	return (
 		<DirectoryDialog id={o.slug} name={o.name}>
 			<Masthead brand label={o.acronym ? `${KIND[o.kind]} · ${o.acronym}` : KIND[o.kind]} lines={[o.name]} />
-			{/* The header block: the building with the office's logo inside it, or the logo alone where no building has been found. */}
-			{building || logo ? (
-				<figure className='bb-frame relative h-48 overflow-hidden bg-[var(--paper-2)] sm:h-64'>
-					{building ? (
-						<>
-							{/* eslint-disable-next-line @next/next/no-img-element */}
-							<img src={building.src} alt={building.caption} className={building.kind === 'emblem' ? 'size-full object-contain! p-8' : 'size-full object-cover'} />
-							<PhotoCredit photo={{ credit: building.credit, license: building.license, source: building.page }} />
-							{logo && building.kind !== 'emblem' ? (
-								// eslint-disable-next-line @next/next/no-img-element
-								<img src={logo.src} alt={`${o.name} logo`} title={`Logo: ${logo.credit}`} className='absolute bottom-4 left-5 size-20! bg-white object-contain! p-2 md:left-8' />
-							) : null}
-						</>
-					) : (
-						// eslint-disable-next-line @next/next/no-img-element
-						<img src={logo!.src} alt={`${o.name} logo`} title={`Logo: ${logo!.credit}`} className='size-full object-contain! p-8' />
-					)}
-				</figure>
-			) : null}
+			<HeaderBlock
+				photo={building ? { src: building.src, alt: building.caption, credit: { credit: building.credit, license: building.license, source: building.page } } : null}
+				logo={logo ? { src: logo.src, alt: `${o.name} logo`, title: `Logo: ${logo.credit}` } : null}
+			/>
 
 			<section className='bb-container bb-section'>
 				<p className='text-[13.5px] text-[var(--ink-3)]'>

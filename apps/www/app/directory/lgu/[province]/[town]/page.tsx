@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Lines, linkClass, monthYear } from '../../../../_components/directory-bits'
 import { Masthead } from '../../../../_components/masthead'
+import { PlaceHeader } from '../../../../_components/directory-places'
 import { DirectoryDialog } from '../../../../_components/directory-dialog'
 import { barangayRows, emergencyMeta, localGovernments, localGroup, localLineage, townLines } from '../../../../_lib/directory'
 import { pageMeta } from '../../../../_lib/seo'
@@ -42,6 +43,7 @@ export default async function TownPage({ params }: { params: Promise<{ province:
 	return (
 		<DirectoryDialog id={`${g.slug}/${u.slug}`} name={u.name}>
 			<Masthead brand label={`${u.isCity ? 'City' : 'Municipality'} · ${g.name}`} lines={[u.name]} />
+			<PlaceHeader province={g.slug} town={u.slug} name={u.name} />
 
 			<section className='bb-container bb-section'>
 				<p className='text-[13.5px] text-[var(--ink-3)]'>
