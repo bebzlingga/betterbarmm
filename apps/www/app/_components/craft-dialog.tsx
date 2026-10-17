@@ -24,6 +24,9 @@ export function CraftDialog({ slug, name, children }: { slug: string; name: stri
 		// Open from the server as a plain dialog; reopen as a modal one.
 		if (d.open) d.close()
 		d.showModal()
+		// A modal dialog focuses its first control, the close button, which then wears a focus ring on open.
+		// Focus the dialog itself instead; Tab still reaches the button and Escape still closes.
+		d.focus({ preventScroll: true })
 		const html = document.documentElement
 		const before = html.style.overflow
 		html.style.overflow = 'hidden'
@@ -43,12 +46,13 @@ export function CraftDialog({ slug, name, children }: { slug: string; name: stri
 		<dialog
 			ref={ref}
 			open
+			tabIndex={-1}
 			aria-label={name}
 			onCancel={(e) => {
 				e.preventDefault()
 				close()
 			}}
-			className='fixed inset-0 z-[60] m-0 h-dvh max-h-none w-screen max-w-none overflow-y-auto overscroll-contain bg-[#f4efe8] p-0 text-[#3b2419] backdrop:bg-[#2a1810]/80'
+			className='fixed inset-0 z-[60] m-0 outline-none h-dvh max-h-none w-screen max-w-none overflow-y-auto overscroll-contain bg-[#f4efe8] p-0 text-[#3b2419] backdrop:bg-[#2a1810]/80'
 		>
 			<button
 				type='button'
