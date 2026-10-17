@@ -21,12 +21,16 @@ const SMALL = new Set(['of', 'and', 'the', 'for', 'in', 'del', 'de', 'sa', 'a'])
 const KEEP = /^(RSW|MPA|MD|PhD|CPA|BARMM|PSWO|IPHO|MSSD|MOH|DDS|II|III|IV|V|VI|JR\.?|SR\.?)$/i
 function tidy(s: string | null | undefined) {
 	if (!s) return s ?? ''
-	if (s !== s.toUpperCase() || !/[A-Z]{3}/.test(s)) return s
+	// A trailing "Jr." in mixed case does not stop a name otherwise in capitals from counting as capitals.
+	const core = s.replace(/\b(Jr|Sr)\.?/g, '')
+	if (core !== core.toUpperCase() || !/[A-Z]{3}/.test(core)) return s
 	return s
 		.toLowerCase()
 		.split(/(\s+|-)/)
 		.map((w, i) => {
 			const up = w.toUpperCase()
+			// An acronym in brackets, as in "(PPB)", stays in capitals.
+			if (/^\([a-z]{2,8}\)[,.]?$/.test(w)) return up
 			if (KEEP.test(up.replace(/[,.]$/, ''))) return /^(JR|SR)/.test(up) ? up[0] + up.slice(1).toLowerCase() : up
 			if (i && SMALL.has(w)) return w
 			return w.charAt(0).toUpperCase() + w.slice(1)
