@@ -77,14 +77,14 @@ export function CraftView({ c, dialog = false }: { c: Craft; dialog?: boolean })
 						images={c.images}
 						className='h-[26rem] lg:absolute lg:top-20 lg:right-10 lg:bottom-48 lg:left-[44%] lg:h-auto'
 					/>
-					<Link href={`/crafts/${next.slug}`} replace={dialog} className='group mt-8 lg:mt-auto lg:ml-auto lg:w-[21rem]'>
+					<Link href={`/crafts/${next.slug}`} replace={dialog} className='group mt-8 block lg:mt-auto'>
 						<p className={`${serif} text-[14px] text-[#8a6d5c]`}>More like it</p>
-						<span className='mt-2 flex items-center gap-4 rounded-[4px] bg-white p-3 shadow-[0_10px_30px_-14px_rgba(60,30,15,0.4)] transition group-hover:shadow-[0_14px_34px_-12px_rgba(60,30,15,0.5)]'>
+						<span className='mt-2 flex items-center gap-4 bg-white p-3'>
 							{next.images[0] ? (
 								// eslint-disable-next-line @next/next/no-img-element
-								<img src={commonsThumb(next.images[0].url, 250)} alt='' loading='lazy' className='size-16 shrink-0 rounded-[3px] object-cover' />
+								<img src={commonsThumb(next.images[0].url, 250)} alt='' loading='lazy' className='size-16 shrink-0 object-cover' />
 							) : (
-								<span className='size-16 shrink-0 rounded-[3px]' style={{ background: `linear-gradient(135deg, ${next.colors.join(', ')})` }} />
+								<span className='size-16 shrink-0' style={{ background: `linear-gradient(135deg, ${next.colors.join(', ')})` }} />
 							)}
 							<span className='min-w-0'>
 								<span className={`${serif} block text-[15px] font-bold leading-snug group-hover:text-[#7b4a35]`}>{next.name}</span>
