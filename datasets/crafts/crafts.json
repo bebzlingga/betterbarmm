@@ -1,7 +1,7 @@
 {
  "name": "Crafts of the Bangsamoro",
  "generatedAt": "2026-10-17",
- "note": "Textiles, mats, brass, instruments, carving and blades of BARMM, each traced to the pages it came from. Photos are Wikimedia Commons files under free licences. model is drawn by the site from a few numbers; null where only photos are shown.",
+ "note": "Textiles, mats, brass, instruments, carving and blades of BARMM, each traced to the pages it came from. Photos are Wikimedia Commons files under free licences. model is drawn by the site from a few numbers; null where only photos are shown. Items marked with a Pusaka source come from the BCPCH’s Pusaka (2025), cited by page.",
  "items": [
   {
    "slug": "inaul",
@@ -104,7 +104,8 @@
     "https://ptvnews.ph/reviving-dying-inaul-industry-thru-festival-maguindanao/",
     "https://www.rappler.com/culture-desk/style/226823-maguindanao-weaving-tradition-inaul/",
     "https://bworldonline.com/arts-and-leisure/2018/01/29/118283/inaul-weaving-festival-serves-centerpiece-armm-tourism/",
-    "https://en.wikipedia.org/wiki/Malong"
+    "https://en.wikipedia.org/wiki/Malong",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=30"
    ],
    "images": [
     {
@@ -372,7 +373,8 @@
     "https://www.metrocagayandemisamis.com/2026/02/19/the-heart-of-tradition-the-keeper-of-the-okir/",
     "https://tribune.net.ph/2024/08/13/langkit-festival",
     "https://en.wikipedia.org/wiki/Okir",
-    "https://en.wikipedia.org/wiki/Tugaya"
+    "https://en.wikipedia.org/wiki/Tugaya",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=42"
    ],
    "images": [
     {
@@ -454,6 +456,18 @@
     {
      "name": "kabang buddi",
      "meaning": "diamond shape"
+    },
+    {
+     "name": "sinaulan",
+     "meaning": ""
+    },
+    {
+     "name": "ianalaman",
+     "meaning": ""
+    },
+    {
+     "name": "pinalantupan",
+     "meaning": ""
     }
    ],
    "colors": [
@@ -493,7 +507,8 @@
     "https://en.wikipedia.org/wiki/Yakan_people",
     "https://en.wikipedia.org/wiki/Ambalang_Ausalin",
     "https://en.wikipedia.org/wiki/National_Living_Treasures_Award",
-    "https://www.sunstar.com.ph/zamboanga/lami-lamihan-festival-2025-reels-off"
+    "https://www.sunstar.com.ph/zamboanga/lami-lamihan-festival-2025-reels-off",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=57"
    ],
    "images": [
     {
@@ -607,6 +622,11 @@
      "name": "Rohainie Amendo",
      "note": "Weaver from a family of weavers in Mapun, Tawi-Tawi, who learned by watching her grandmother.",
      "source": "https://tribune.net.ph/2025/10/27/traditional-weaver-from-tawi-tawi"
+    },
+    {
+     "name": "Sabilaydah Likawani",
+     "note": "Master tepo weaver of Badjao Village, who teaches the craft to younger weavers.",
+     "source": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=110"
     }
    ],
    "where_to_see": [
@@ -623,7 +643,8 @@
     "https://en.wikipedia.org/wiki/Haja_Amina_Appi",
     "https://tribune.net.ph/2024/10/25/tepo-mat-weaver-laminusa-siasi",
     "https://tribune.net.ph/2025/10/27/traditional-weaver-from-tawi-tawi",
-    "https://en.wikipedia.org/wiki/National_Living_Treasures_Award"
+    "https://en.wikipedia.org/wiki/National_Living_Treasures_Award",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=110"
    ],
    "images": [
     {
@@ -731,6 +752,11 @@
      "name": "Tugaya brassware barangays",
      "note": "Lumbac, Bubong and Pandiaranao specialise in brassware-making.",
      "source": "https://web.archive.org/web/20260606013421/https://old.pcij.org/stories/armm-town-thrives-on-traditional-arts/"
+    },
+    {
+     "name": "Nasser M. Salsal",
+     "note": "Master brass artisan of Barangay Bubong, Tugaya, at the craft for 53 years.",
+     "source": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=37"
     }
    ],
    "where_to_see": [
@@ -739,6 +765,12 @@
      "place": "Tugaya, Lanao del Sur",
      "note": "Newly made brassware is displayed outside households; the town also built a display centre by the national highway.",
      "source": "https://web.archive.org/web/20260606013421/https://old.pcij.org/stories/armm-town-thrives-on-traditional-arts/"
+    },
+    {
+     "name": "Brassware of Mother Kalanganan",
+     "place": "Barangay Mother Kalanganan, Cotabato City",
+     "note": "A long-standing brassware tradition, cast by the lost-wax method; only a few skilled craftsmen are left.",
+     "source": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=21"
     }
    ],
    "price": null,
@@ -746,7 +778,10 @@
     "https://en.wikipedia.org/wiki/Tugaya",
     "https://web.archive.org/web/20260606013421/https://old.pcij.org/stories/armm-town-thrives-on-traditional-arts/",
     "https://www.roots.gov.sg/Collection-Landing/listing/1250509",
-    "https://en.wikipedia.org/wiki/Torogan"
+    "https://en.wikipedia.org/wiki/Torogan",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=10",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=21",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=37"
    ],
    "images": [
     {
@@ -873,7 +908,8 @@
     "https://en.wikipedia.org/wiki/Kulintang",
     "https://en.wikipedia.org/wiki/Tugaya",
     "https://www.rappler.com/philippines/mindanao/okir-art-exhibit-cagayan-de-oro-art-cool-maranao-youth/",
-    "https://tribune.net.ph/2024/08/13/langkit-festival"
+    "https://tribune.net.ph/2024/08/13/langkit-festival",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=22"
    ],
    "images": [
     {
@@ -957,7 +993,9 @@
    "price": null,
    "sources": [
     "https://en.wikipedia.org/wiki/Agung",
-    "https://en.wikipedia.org/wiki/Tugaya"
+    "https://en.wikipedia.org/wiki/Tugaya",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=27",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=64"
    ],
    "images": [
     {
@@ -1033,7 +1071,8 @@
    "price": null,
    "sources": [
     "https://en.wikipedia.org/wiki/Gandingan",
-    "https://en.wikipedia.org/wiki/Tugaya"
+    "https://en.wikipedia.org/wiki/Tugaya",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=25"
    ],
    "images": [
     {
@@ -1159,7 +1198,9 @@
    "sources": [
     "https://en.wikipedia.org/wiki/Dabakan",
     "https://en.wikipedia.org/wiki/Tugaya",
-    "https://en.wikipedia.org/wiki/Kutiyapi"
+    "https://en.wikipedia.org/wiki/Kutiyapi",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=24",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=36"
    ],
    "images": [
     {
@@ -1255,6 +1296,11 @@
      "name": "Alamin",
      "note": "Tugaya brassware trader and woodcraftsman known for carved wooden boxes.",
      "source": "https://web.archive.org/web/20260606013421/https://old.pcij.org/stories/armm-town-thrives-on-traditional-arts/"
+    },
+    {
+     "name": "Ansary G. Bantayan",
+     "note": "Chest-maker of Tugaya since 1979, who learned from his parents and taught his family.",
+     "source": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=35"
     }
    ],
    "where_to_see": [
@@ -1276,7 +1322,9 @@
     "https://en.wikipedia.org/wiki/Okir",
     "https://web.archive.org/web/20260606013421/https://old.pcij.org/stories/armm-town-thrives-on-traditional-arts/",
     "https://www.rappler.com/philippines/mindanao/okir-art-exhibit-cagayan-de-oro-art-cool-maranao-youth/",
-    "https://en.wikipedia.org/wiki/Tugaya"
+    "https://en.wikipedia.org/wiki/Tugaya",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=35",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=45"
    ],
    "images": [
     {
@@ -1398,7 +1446,9 @@
    "sources": [
     "https://en.wikipedia.org/wiki/Torogan",
     "https://en.wikipedia.org/wiki/Okir",
-    "https://en.wikipedia.org/wiki/Tugaya"
+    "https://en.wikipedia.org/wiki/Tugaya",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=34",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=46"
    ],
    "images": [
     {
@@ -1468,7 +1518,8 @@
    "sources": [
     "https://en.wikipedia.org/wiki/Sarimanok",
     "https://en.wikipedia.org/wiki/Okir",
-    "https://en.wikipedia.org/wiki/Maranao_people"
+    "https://en.wikipedia.org/wiki/Maranao_people",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=47"
    ],
    "images": [
     {
@@ -1510,7 +1561,8 @@
    "where_to_see": [],
    "price": null,
    "sources": [
-    "https://en.wikipedia.org/wiki/Kampilan"
+    "https://en.wikipedia.org/wiki/Kampilan",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=40"
    ],
    "images": [
     {
@@ -1583,7 +1635,8 @@
    "sources": [
     "https://en.wikipedia.org/wiki/Kalis",
     "https://en.wikipedia.org/wiki/Kris",
-    "https://web.archive.org/web/20260606013421/https://old.pcij.org/stories/armm-town-thrives-on-traditional-arts/"
+    "https://web.archive.org/web/20260606013421/https://old.pcij.org/stories/armm-town-thrives-on-traditional-arts/",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=41"
    ],
    "images": [
     {
@@ -1617,6 +1670,1125 @@
    "model": {
     "kind": "kris"
    }
+  },
+  {
+   "slug": "sipil",
+   "name": "Sipil",
+   "local_name": "sipil (Maguindanaon)",
+   "group": "brass",
+   "people": "Maguindanaon",
+   "province": "maguindanao",
+   "towns": [],
+   "summary": "A brass box in five sections that keeps the apug, namat and maman of a betel chew clean. It carries the Maguindanaon custom of chewing betel nut.",
+   "materials": "Brass",
+   "how_made": "",
+   "uses": "Holds what is needed for chewing betel nut.",
+   "colors": [
+    "#c89b4a",
+    "#6b4a2a",
+    "#e3c27a"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=9"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "patakiya",
+   "name": "Patakiya",
+   "local_name": "patakiya (Maguindanaon)",
+   "group": "brass",
+   "people": "Maguindanaon",
+   "province": "maguindanao",
+   "towns": [],
+   "summary": "A brass vessel kept as a lemba, a piece for display, and set out at Maguindanaon celebrations, above all weddings.",
+   "materials": "Brass",
+   "how_made": "",
+   "uses": "Displayed at weddings and other celebrations.",
+   "colors": [
+    "#c89b4a",
+    "#6b4a2a",
+    "#e3c27a"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=11"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "dudan",
+   "name": "Dudan",
+   "local_name": "dudan (Maguindanaon)",
+   "group": "brass",
+   "people": "Maguindanaon",
+   "province": "maguindanao",
+   "towns": [],
+   "summary": "A vessel of galang, or brass, made for the custom of chewing and dipping tobacco.",
+   "materials": "Brass (galang)",
+   "how_made": "",
+   "uses": "Used in chewing and dipping tobacco.",
+   "colors": [
+    "#c89b4a",
+    "#6b4a2a",
+    "#e3c27a"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=12"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "langgaman",
+   "name": "Langgaman",
+   "local_name": "langgaman (Maguindanaon)",
+   "group": "blade",
+   "people": "Maguindanaon",
+   "province": "maguindanao",
+   "towns": [],
+   "summary": "A harvesting knife of steel and wood made to reach deep into thick rice stalks. Each harvest it is used for counts as a good one.",
+   "materials": "Steel and wood",
+   "how_made": "",
+   "uses": "Cutting rice at harvest.",
+   "colors": [
+    "#8a8f96",
+    "#4a3324",
+    "#c9b79c"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=13"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "sayap-buyang",
+   "name": "Sayap and buyang",
+   "local_name": "sayap; buyang (Maguindanaon)",
+   "group": "basketry",
+   "people": "Maguindanaon",
+   "province": "maguindanao",
+   "towns": [],
+   "summary": "The sayap is a wide-brimmed hat and the buyang a hand fan, both woven from palm leaves.",
+   "materials": "Sayap: pandan, buri palm, coconut leaves, water hyacinth and other palms. Buyang: buri and anahaw palm.",
+   "how_made": "",
+   "uses": "Everyday hat and fan.",
+   "colors": [
+    "#c9a46a",
+    "#b23a5e",
+    "#2f7a6a",
+    "#e8c33a"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=14"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "tudong",
+   "name": "Tudong",
+   "local_name": "tudong (Maguindanaon)",
+   "group": "basketry",
+   "people": "Maguindanaon",
+   "province": "maguindanao",
+   "towns": [],
+   "summary": "A food cover woven from pandan dyed yellow, green, maroon and violet, stiffened underneath with coconut leaves and bamboo strips.",
+   "materials": "Dyed pandan, coconut leaves and bamboo strips",
+   "how_made": "",
+   "uses": "Keeps food warm and fresh at weddings, aqiqah, enthronements and other occasions.",
+   "colors": [
+    "#e8c33a",
+    "#2f7a3a",
+    "#7a1f2b",
+    "#5e2a84"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=15"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "binangga",
+   "name": "Binangga",
+   "local_name": "binangga (Maguindanaon)",
+   "group": "pottery",
+   "people": "Maguindanaon",
+   "province": "maguindanao",
+   "towns": [],
+   "summary": "A clay pot that held the water in Maguindanaon homes. The porous clay gave the water a taste of its own.",
+   "materials": "Clay",
+   "how_made": "",
+   "uses": "Holding drinking water.",
+   "colors": [
+    "#9c5a3c",
+    "#5e3a28",
+    "#c88a62"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=16"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "sundang",
+   "name": "Sundang",
+   "local_name": "sundang; lanti, the wavy blade (Maguindanaon)",
+   "group": "blade",
+   "people": "Maguindanaon",
+   "province": "maguindanao",
+   "towns": [],
+   "summary": "A Moro blade made straight (matidtu) or wavy (lanti), the waves likened to the flames of the naga, the mythical serpent. Maguindanaon warriors carried it.",
+   "materials": "Steel",
+   "how_made": "",
+   "uses": "",
+   "colors": [
+    "#8a8f96",
+    "#4a3324",
+    "#c9b79c"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=17"
+   ],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Mindanao_Bangsamoro_Swords_%2825183419975%29.jpg/1920px-Mindanao_Bangsamoro_Swords_%2825183419975%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Mindanao_Bangsamoro_Swords_(25183419975).jpg",
+     "author": "Gary Todd from Xinzheng, China",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "width": 3168,
+     "height": 4752,
+     "caption": "Museum display of Moro swords: the labels identify the wavy-bladed and straight-bladed kris (kalis) as Maguindanao (Cotabato) and Maranao (Lanao del Sur) pieces. Museum of the Filipino People, Manila.",
+     "tone": [
+      50,
+      0.34
+     ]
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Mindanao_Bangsamoro_Swords_%2825065047992%29.jpg/1920px-Mindanao_Bangsamoro_Swords_%2825065047992%29.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Mindanao_Bangsamoro_Swords_(25065047992).jpg",
+     "author": "Gary Todd from Xinzheng, China",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "width": 4752,
+     "height": 3168,
+     "caption": "A Maranao kris with its wavy blade and ornate hilt, shown next to its sheath in the Bangsamoro gallery of the Museum of the Filipino People, Manila.",
+     "tone": [
+      36,
+      0.58
+     ]
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "binuwaya",
+   "name": "Binuwaya",
+   "local_name": "bolo; binuwaya (Maguindanaon)",
+   "group": "blade",
+   "people": "Maguindanaon",
+   "province": "maguindanao",
+   "towns": [],
+   "summary": "The blade of the highest-ranking Maguindanaon soldiers. Its three parts stand for three communities: Rajah Buayan in the blade, Datu Maguindanao in the middle and Sultan Kabuntalan in the handle.",
+   "materials": "Steel and wood",
+   "how_made": "",
+   "uses": "Now mostly carried in rituals, above all at weddings.",
+   "colors": [
+    "#8a8f96",
+    "#4a3324",
+    "#c9b79c"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=19"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "babendil",
+   "name": "Babendil",
+   "local_name": "babendil (Maguindanaon)",
+   "group": "instrument",
+   "people": "Maguindanaon",
+   "province": "maguindanao",
+   "towns": [],
+   "summary": "The timekeeper of the kulintang ensemble: a gong about a foot across, larger than the largest kulintang gong and near the size of the agong.",
+   "materials": "",
+   "how_made": "",
+   "uses": "Keeps time for the kulintang ensemble.",
+   "colors": [
+    "#c89b4a",
+    "#6b4a2a",
+    "#e3c27a"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=26"
+   ],
+   "images": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Babendil_01.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Babendil_01.jpg",
+     "author": "Philip Dominguez Mercurio (PhilipDM)",
+     "license": "CC BY-SA 2.5",
+     "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+     "width": 1536,
+     "height": 2048,
+     "caption": "A babendil, the small handheld gong that keeps time in the kulintang ensemble; this one is used by Maguindanaon master Danongan Kalanduyan to teach kulintang at San Francisco State.",
+     "tone": [
+      24,
+      0.45
+     ]
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Babendil_03.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Babendil_03.jpg",
+     "author": "Philip Dominguez Mercurio (PhilipDM)",
+     "license": "CC BY-SA 2.5",
+     "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+     "width": 1536,
+     "height": 2048,
+     "caption": "Another view of the babendil, the timekeeping gong of the kulintang ensemble, hung in its frame.",
+     "tone": [
+      25,
+      0.51
+     ]
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "obul-obul",
+   "name": "Obul-obul",
+   "local_name": "obul-obul (Maguindanaon)",
+   "group": "ornament",
+   "people": "Maguindanaon",
+   "province": "maguindanao",
+   "towns": [],
+   "summary": "A Maguindanaon wedding decoration, hung with the pandala, sambulayang, bagiyuntay, pamanay and lansay, in many designs and bright colours.",
+   "materials": "",
+   "how_made": "",
+   "uses": "Decorates the wedding.",
+   "colors": [
+    "#d81b60",
+    "#f9a825",
+    "#2e7d32",
+    "#1565c0"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=31"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "gunong",
+   "name": "Gunong",
+   "local_name": "gunong (Maranao)",
+   "group": "blade",
+   "people": "Maranao",
+   "province": "lanao-del-sur",
+   "towns": [],
+   "summary": "A Maranao dagger with a straight or curved blade, made for cutting and stabbing. Once a weapon, it is now kept as heritage.",
+   "materials": "Steel",
+   "how_made": "",
+   "uses": "",
+   "colors": [
+    "#8a8f96",
+    "#4a3324",
+    "#c9b79c"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=38"
+   ],
+   "images": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Mindanao_gunong_punal.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Mindanao_gunong_punal.JPG",
+     "author": "Filhistorydotcom (filhistory.com)",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 988,
+     "height": 444,
+     "caption": "A gunong, the Moro dagger, at least 65 years old, with a laminated blade, a brass ferrule and guard, and a wooden sheath.",
+     "tone": [
+      37,
+      0.27
+     ]
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "igaan",
+   "name": "Igaan",
+   "local_name": "igaan (Maranao)",
+   "group": "carving",
+   "people": "Maranao",
+   "province": "lanao-del-sur",
+   "towns": [],
+   "summary": "A Maranao bed: the frame carved with okir, the mattress, pillows and canopy trimmed with langkit.",
+   "materials": "Carved wood; langkit-trimmed bedding",
+   "how_made": "",
+   "uses": "",
+   "colors": [
+    "#5a3a24",
+    "#b0124f",
+    "#e0a526"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=39"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "mamaan",
+   "name": "Mamaan",
+   "local_name": "mamaan (Maranao)",
+   "group": "brass",
+   "people": "Maranao",
+   "province": "lanao-del-sur",
+   "towns": [],
+   "summary": "A brass betel-nut box decorated with okir, with a section each for the betel nut, the slaked lime and the betel leaf.",
+   "materials": "Brass",
+   "how_made": "",
+   "uses": "Holds what is needed for chewing betel nut.",
+   "colors": [
+    "#c89b4a",
+    "#6b4a2a",
+    "#e3c27a"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=43"
+   ],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Betel_box_from_the_Philippines%2C_Mindanao%2C_Maranao_people%2C_probably_20th_century%2C_copper_alloy_with_silver_inlay%2C_HAA.JPG/1920px-Betel_box_from_the_Philippines%2C_Mindanao%2C_Maranao_people%2C_probably_20th_century%2C_copper_alloy_with_silver_inlay%2C_HAA.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Betel_box_from_the_Philippines,_Mindanao,_Maranao_people,_probably_20th_century,_copper_alloy_with_silver_inlay,_HAA.JPG",
+     "author": "Hiart",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "width": 2524,
+     "height": 1424,
+     "caption": "Maranao betel box of copper alloy with silver inlay, Mindanao, probably 20th century (Honolulu Museum of Art).",
+     "tone": [
+      38,
+      0.23
+     ]
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "mamandiyang",
+   "name": "Mamandiyang",
+   "local_name": "mamandiyang (Maranao)",
+   "group": "textile",
+   "people": "Maranao",
+   "province": "lanao-del-sur",
+   "towns": [],
+   "summary": "A brightly coloured Maranao hanging in okir designs.",
+   "materials": "",
+   "how_made": "",
+   "uses": "Dresses Maranao homes, above all for weddings and sultanate enthronements.",
+   "colors": [
+    "#d4372c",
+    "#1f7a4d",
+    "#f2c230",
+    "#2a5da8"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=44"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "satora",
+   "name": "Satora",
+   "local_name": "satora; kanduma (Maranao)",
+   "group": "carving",
+   "people": "Maranao",
+   "province": "lanao-del-sur",
+   "towns": [],
+   "summary": "Maranao chess, played on a board of its own architectural layout. Sultans, datus and other respected people play it with family and friends, often in the torogan.",
+   "materials": "Carved wood",
+   "how_made": "",
+   "uses": "A game for leisure.",
+   "colors": [
+    "#5a3a24",
+    "#8a5a3a",
+    "#d8c2a0"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=49"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "glat",
+   "name": "Glat",
+   "local_name": "glat (Maranao)",
+   "group": "blade",
+   "people": "Maranao",
+   "province": "lanao-del-sur",
+   "towns": [],
+   "summary": "A cutting tool of everyday Maranao life, and a point of pride in its making.",
+   "materials": "Steel and wood",
+   "how_made": "",
+   "uses": "",
+   "colors": [
+    "#8a8f96",
+    "#4a3324",
+    "#c9b79c"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=50"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "tanyak-tanyak",
+   "name": "Tanyak-tanyak",
+   "local_name": "tanyak-tanyak (Yakan)",
+   "group": "ornament",
+   "people": "Yakan",
+   "province": "basilan",
+   "towns": [],
+   "summary": "The face painting of a Yakan wedding. White circles, dots, stars and other marks on the bride’s and groom’s faces and hands stand for heavenly witnesses to their vows.",
+   "materials": "Borak sinah, a paste of rice flour and water",
+   "how_made": "Painted on with bamboo tools.",
+   "uses": "Worn by the bride and groom at their wedding.",
+   "colors": [
+    "#f4efe8",
+    "#b3202a",
+    "#2e2e2e"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=54"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "yakan-wedding",
+   "name": "Yakan wedding dress",
+   "local_name": "pamakey pangantin (Yakan)",
+   "group": "attire",
+   "people": "Yakan",
+   "province": "basilan",
+   "towns": [],
+   "summary": "At a Yakan wedding the couple dress in rich woven cloth and both wear tanyak-tanyak, a sign of love and harmony. The wedding is a community’s event as much as the couple’s.",
+   "materials": "Yakan tennun",
+   "how_made": "",
+   "uses": "Worn by the bride and groom.",
+   "colors": [
+    "#c62828",
+    "#f2b705",
+    "#2e7d32",
+    "#5e2a84"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=59"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "yakan-attire",
+   "name": "Yakan dress",
+   "local_name": "pilis, kandit, sawwal; saputangan, badju lapih (Yakan)",
+   "group": "attire",
+   "people": "Yakan",
+   "province": "basilan",
+   "towns": [],
+   "summary": "Men wear the pilis headdress, a red kandit cloth 10 to 15 metres long wound round the waist, and sawwal trousers finished with jambu tassels. Women wear the saputangan headscarf and the badju lapih, a blouse with close sleeves.",
+   "materials": "Yakan tennun; silk tassels",
+   "how_made": "",
+   "uses": "",
+   "colors": [
+    "#c62828",
+    "#f2b705",
+    "#2e7d32",
+    "#5e2a84"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=61"
+   ],
+   "images": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Badju_Yakan_attire_Tenun_Ambalang_AusalinA.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Badju_Yakan_attire_Tenun_Ambalang_AusalinA.jpg",
+     "author": "Valenzuela400",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1874,
+     "height": 3964,
+     "caption": "A Yakan woman in traditional dress: a magenta badju blouse with rows of gold buttons, a striped woven wrap and belt, sawwal trousers and a woven head cloth; linked to master weaver Ambalang Ausalin of Lamitan, Basilan.",
+     "tone": [
+      322,
+      0.54
+     ]
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Basilan_SLT_Community_folk_costumesB.jpg/1920px-Basilan_SLT_Community_folk_costumesB.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Basilan_SLT_Community_folk_costumesB.jpg",
+     "author": "Valenzuela400",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 2292,
+     "height": 3941,
+     "caption": "Two Yakan women from a Basilan School of Living Tradition in green button-studded badju blouses, woven tennun wraps, striped trousers and head cloths.",
+     "tone": [
+      22,
+      0.34
+     ]
+    }
+   ],
+   "model": null,
+   "motifs": [
+    {
+     "name": "jambu",
+     "meaning": "the silk leg tassels of the sawwal, which stand for the horse and the place of horsemanship in Yakan life"
+    }
+   ]
+  },
+  {
+   "slug": "kulaing",
+   "name": "Kulaing",
+   "local_name": "kulaing (Yakan)",
+   "group": "instrument",
+   "people": "Yakan",
+   "province": "basilan",
+   "towns": [],
+   "summary": "A jaw harp cut from a strip of bamboo about 2 centimetres wide.",
+   "materials": "Bamboo",
+   "how_made": "",
+   "uses": "",
+   "colors": [
+    "#5a3a24",
+    "#8a5a3a",
+    "#d8c2a0"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=65"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "gabbang",
+   "name": "Gabbang",
+   "local_name": "gabbang (Yakan, Sama)",
+   "group": "instrument",
+   "people": "Yakan and Sama",
+   "province": "basilan",
+   "towns": [],
+   "summary": "A xylophone of trapezoidal bamboo bars of different lengths set over a resonator, each bar carved to its own note and struck with mallets. It is played in Tawi-Tawi too, at dances, celebrations and gatherings.",
+   "materials": "Bamboo",
+   "how_made": "",
+   "uses": "Accompanies songs and dances; children play it in the fields to scare off animals, birds and insects.",
+   "colors": [
+    "#5a3a24",
+    "#8a5a3a",
+    "#d8c2a0"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=66",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=97"
+   ],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Kontra-Gapi_Gabbang.jpg/1920px-Kontra-Gapi_Gabbang.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Kontra-Gapi_Gabbang.jpg",
+     "author": "Icqgirl",
+     "license": "Public domain",
+     "license_url": "",
+     "width": 2132,
+     "height": 1552,
+     "caption": "A gabbang, the bamboo xylophone of the Sulu archipelago, with its bamboo keys over a wooden box; owned by the University of the Philippines ensemble Kontra-Gapi.",
+     "tone": [
+      38,
+      0.6
+     ]
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Philippine_Gabbang.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Philippine_Gabbang.jpg",
+     "author": "Jfmrili",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "width": 1665,
+     "height": 1229,
+     "caption": "A Tausug gabbang (bamboo xylophone) with its beater; property of UP Kontra-Gapi.",
+     "tone": [
+      40,
+      0.38
+     ]
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "suling",
+   "name": "Suling",
+   "local_name": "suling (Yakan)",
+   "group": "instrument",
+   "people": "Yakan",
+   "province": "basilan",
+   "towns": [],
+   "summary": "A bamboo flute with carefully placed holes. Players learn both how to play it and what each melody means.",
+   "materials": "Bamboo",
+   "how_made": "",
+   "uses": "",
+   "colors": [
+    "#5a3a24",
+    "#8a5a3a",
+    "#d8c2a0"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=67"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "barung",
+   "name": "Barung",
+   "local_name": "barung (Yakan)",
+   "group": "blade",
+   "people": "Yakan",
+   "province": "basilan",
+   "towns": [],
+   "summary": "The Yakan barung has a leaf-shaped blade carved with ukil near the edge and grip, a wooden pommel sheathed in silver, and a sheath set with old coins and tipay shell.",
+   "materials": "Steel, wood, silver, coins and shell",
+   "how_made": "",
+   "uses": "",
+   "colors": [
+    "#8a8f96",
+    "#4a3324",
+    "#c9b79c"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=68"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "punyal",
+   "name": "Punyal",
+   "local_name": "punyal (Yakan)",
+   "group": "blade",
+   "people": "Yakan",
+   "province": "basilan",
+   "towns": [],
+   "summary": "A small kris for stabbing at close quarters, kept in a sheath and worn below the waist.",
+   "materials": "Steel and wood",
+   "how_made": "",
+   "uses": "",
+   "colors": [
+    "#8a8f96",
+    "#4a3324",
+    "#c9b79c"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=69"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "bangka-bangka",
+   "name": "Bangka-bangka",
+   "local_name": "bangka-bangka (Sama)",
+   "group": "basketry",
+   "people": "Sama",
+   "province": "tawi-tawi",
+   "towns": [],
+   "summary": "A boat-shaped container woven from pandan, for serving delicacies and fruit.",
+   "materials": "Pandan",
+   "how_made": "",
+   "uses": "Set out at weddings, at the completion of religious studies and on the Prophet’s birthday.",
+   "colors": [
+    "#c9a46a",
+    "#b23a5e",
+    "#2f7a6a",
+    "#e8c33a"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=95"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "dulang-latal",
+   "name": "Dulang and latal",
+   "local_name": "dulang kamaasan (Sama)",
+   "group": "basketry",
+   "people": "Sama",
+   "province": "tawi-tawi",
+   "towns": [],
+   "summary": "A set of trays woven from nito vine for presenting delicacies and fruit, a sign of generosity and of Tawi-Tawi’s feasting tradition.",
+   "materials": "Nito vine",
+   "how_made": "",
+   "uses": "",
+   "colors": [
+    "#c9a46a",
+    "#8a6a3e",
+    "#5e4632"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=96"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "habol-tiyahian",
+   "name": "Habol tiyahian",
+   "local_name": "habul tyahian (Tausug); olos tinahian (Sama)",
+   "group": "textile",
+   "people": "Sama and Tausug",
+   "province": "tawi-tawi",
+   "towns": [],
+   "summary": "Cotton or silk cloth embroidered in bright DMC thread with ukkil or floral designs.",
+   "materials": "Cotton or silk; DMC embroidery thread",
+   "how_made": "",
+   "uses": "Worn by women at important events and festivals, with the batawi and sablay.",
+   "colors": [
+    "#1565c0",
+    "#f9a825",
+    "#d81b60",
+    "#2e7d32"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=99"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "kabkab",
+   "name": "Kabkab",
+   "local_name": "kabkab (Sama)",
+   "group": "basketry",
+   "people": "Sama",
+   "province": "tawi-tawi",
+   "towns": [
+    "Sibutu"
+   ],
+   "summary": "A hand fan woven from pandan in intricate designs by the women of Sibutu.",
+   "materials": "Pandan",
+   "how_made": "",
+   "uses": "",
+   "colors": [
+    "#c9a46a",
+    "#b23a5e",
+    "#2f7a6a",
+    "#e8c33a"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=100"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "tutup",
+   "name": "Tutup",
+   "local_name": "tutup (Sama)",
+   "group": "basketry",
+   "people": "Sama",
+   "province": "tawi-tawi",
+   "towns": [],
+   "summary": "A colourful food cover of pandan and bamboo strips in geometric patterns.",
+   "materials": "Pandan and bamboo strips",
+   "how_made": "",
+   "uses": "Keeps dishes and delicacies fresh.",
+   "colors": [
+    "#b3202a",
+    "#e8c33a",
+    "#2f7a3a",
+    "#1e3a8a"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=101"
+   ],
+   "images": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Tutup_SLT_Yakan_Basilan1.jpg/1920px-Tutup_SLT_Yakan_Basilan1.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Tutup_SLT_Yakan_Basilan1.jpg",
+     "author": "Valenzuela400",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 3411,
+     "height": 3072,
+     "caption": "A colourful woven tutup (food cover) labelled 'Tutup, Yakan SLT in Basilan'; this is a Yakan piece from Basilan, not Sama or Tausug from Tawi-Tawi.",
+     "tone": [
+      352,
+      0.44
+     ]
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Tutup_SLT_Yakan_Basilan_products2.jpg/1920px-Tutup_SLT_Yakan_Basilan_products2.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Tutup_SLT_Yakan_Basilan_products2.jpg",
+     "author": "Valenzuela400",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 4096,
+     "height": 2891,
+     "caption": "The same Yakan tutup (woven food cover) from Basilan, seen from above, with woven baskets beside it.",
+     "tone": [
+      353,
+      0.48
+     ]
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "kumpit",
+   "name": "Kumpit",
+   "local_name": "kumpit (Sama)",
+   "group": "boat",
+   "people": "Sama",
+   "province": "tawi-tawi",
+   "towns": [],
+   "summary": "A wooden boat that Tawi-Tawi’s islanders long relied on as their main way to travel, and a houseboat for the Sama-Badjao.",
+   "materials": "Wood",
+   "how_made": "",
+   "uses": "",
+   "colors": [
+    "#1e4f7a",
+    "#5a3a24",
+    "#d8c2a0"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=103"
+   ],
+   "images": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/The_Vessels_That_Connect_the_Sama_Islands.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:The_Vessels_That_Connect_the_Sama_Islands.jpg",
+     "author": "Patrick101456",
+     "license": "CC0",
+     "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "width": 1536,
+     "height": 2048,
+     "caption": "A lansa or kumpit, a large wooden Sama boat used to travel between the islands, moored on clear water.",
+     "tone": [
+      205,
+      0.62
+     ]
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "quran-lihal",
+   "name": "Qur’an lihal",
+   "local_name": "lihal (Sama)",
+   "group": "carving",
+   "people": "Sama",
+   "province": "tawi-tawi",
+   "towns": [],
+   "summary": "A folding stand of carved mahogany that holds the Qur’an for reading and study. Tawi-Tawi is held to be where Islam first reached the archipelago.",
+   "materials": "Mahogany",
+   "how_made": "",
+   "uses": "Holds the Qur’an for reading and study.",
+   "colors": [
+    "#5a3a24",
+    "#8a5a3a",
+    "#d8c2a0"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=105"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "sablay-sawwal",
+   "name": "Sablay and sawwal",
+   "local_name": "sablay; sawwal (Sama, Tausug)",
+   "group": "attire",
+   "people": "Sama",
+   "province": "tawi-tawi",
+   "towns": [],
+   "summary": "Women’s dress: the long-sleeved sablay falls to the hips, its front covered by a simpay fastened with karusang pins, worn with patadjug or sawwal trousers and a kamban shawl or papanda scarf.",
+   "materials": "Silk or brocade",
+   "how_made": "",
+   "uses": "",
+   "colors": [
+    "#5e2a84",
+    "#e0a526",
+    "#b0124f"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=106"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "sambra",
+   "name": "Sambra",
+   "local_name": "sambra (Sama)",
+   "group": "attire",
+   "people": "Sama",
+   "province": "tawi-tawi",
+   "towns": [],
+   "summary": "A short-sleeved blouse for every day, plainer than the batawi and sablay, in designs drawn from siyang batik.",
+   "materials": "",
+   "how_made": "",
+   "uses": "",
+   "colors": [
+    "#2a5da8",
+    "#f2c230",
+    "#d4372c"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=107"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "badju-sama",
+   "name": "Badju’ Sama",
+   "local_name": "badju’ Sama (Sama-Badjao)",
+   "group": "attire",
+   "people": "Sama-Badjao",
+   "province": "tawi-tawi",
+   "towns": [],
+   "summary": "Sama-Badjao dress in green and yellow, the colours of the Tawi-Tawi islands, and a sign of Sama-Badjao identity and pride.",
+   "materials": "",
+   "how_made": "",
+   "uses": "",
+   "colors": [
+    "#2e7d32",
+    "#f9a825",
+    "#1565c0"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "price": null,
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=109"
+   ],
+   "images": [],
+   "model": null
   }
  ],
  "festivals": [

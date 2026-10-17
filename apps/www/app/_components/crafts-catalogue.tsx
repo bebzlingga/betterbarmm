@@ -2,7 +2,7 @@ import { ArrowUpRightIcon, MapPinIcon } from '@phosphor-icons/react/ssr'
 import { CraftCard } from './craft-card'
 import { SiteHeader } from './site-header'
 import { PhotoCredit } from './discover-figure'
-import { GROUP, commonsThumb, craft, crafts, creditOf, festivals } from '../_lib/crafts'
+import { GROUP, byPhoto, commonsThumb, craft, crafts, creditOf, festivals } from '../_lib/crafts'
 import { GetInvolved } from './get-involved'
 
 // Important: the shared base styles set the body face on p, li and dd outside any layer.
@@ -17,7 +17,7 @@ const PUSAKA = {
 
 /** The catalogue. It lives in the crafts layout, so it stays put, scrolled where the reader left it, while a craft opens over it. */
 export function CraftsCatalogue() {
-	const groups = (Object.keys(GROUP) as (keyof typeof GROUP)[]).map((g) => ({ g, list: crafts.filter((c) => c.group === g) })).filter((x) => x.list.length)
+	const groups = (Object.keys(GROUP) as (keyof typeof GROUP)[]).map((g) => ({ g, list: byPhoto(crafts.filter((c) => c.group === g)) })).filter((x) => x.list.length)
 	const peoples = new Set(crafts.map((c) => c.people)).size
 	// Three pieces for the masthead, one each of cloth, brass and mat.
 	const cover = ['yakan-tennun', 'gador', 'tepo'].map(craft).filter((c) => c?.images[0])

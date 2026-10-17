@@ -43,7 +43,7 @@ spent is not published by anyone, and is not here. See [Gaps](#what-is-not-here)
 | Accidents | `datasets/accidents/` | small | Accidents and shootings, from news reports; 2019 on |
 | Programs & services | `datasets/services/` | small | 35 offices' programs and Citizen's Charter services |
 | Directory | `datasets/directory/` | small | Heads, past heads, field offices and phones of the 35 regional offices; emergency lines by town |
-| Crafts | `datasets/crafts/` | small | 17 textiles, mats, brass, instruments, carvings and blades, with makers, festivals and free-licence photos |
+| Crafts | `datasets/crafts/` | small | 52 crafts of the region in 11 kinds, from research and the BCPCH's Pusaka, with makers, festivals and free-licence photos |
 | Travel guide | `packages/travel-data/` | — | **Written**, not captured |
 | Region primer | `packages/primer-data/` | — | **Written**, not captured |
 
@@ -340,6 +340,17 @@ contacts are not copied.
 ---
 
 ## Crafts — `datasets/crafts/`
+
+52 crafts. 17 came from research on 17 October 2026; 35 more, and makers and
+page citations for many of the first 17, from *Pusaka: Embodying Prestige of
+the BARMM’s Cultural Properties*, the Bangsamoro Commission for the
+Preservation of Cultural Heritage’s coffee-table book (PDF posted February
+2025), cited as the PDF with `#page=N`. Pusaka’s entries are paraphrased
+closely and add nothing it does not say; its Sulu items, its places (Lake
+Lanao, Bud Bongao, the torogan) and the Basilan dulang feast are left out, and
+its Maguindanao items carry the undivided province, `maguindanao`. Its own
+photographs are not used: 25 crafts have free-licence Commons photos and 27
+show their colours until one is found.
 
 17 crafts of the region, read on 17 October 2026: 4 textiles (inaul, malong a
 landap, langkit, Yakan tennun), the Sama tepo mat, 2 Tugaya brass pieces, 5

@@ -76,5 +76,9 @@ export const festivals = data.festivals as Sourced[]
 export const craftsMeta = { generatedAt: data.generatedAt }
 export const craft = (slug: string) => crafts.find((c) => c.slug === slug)
 
-/** The others of its kind first, then the rest, for "More like it". */
-export const related = (c: Craft, n = 3) => [...crafts.filter((x) => x.group === c.group && x !== c), ...crafts.filter((x) => x.group !== c.group)].slice(0, n)
+/** Crafts with a photo before those still waiting for one; otherwise in their own order. */
+export const byPhoto = (list: Craft[]) => [...list].sort((a, b) => Number(!a.images.length) - Number(!b.images.length))
+
+/** The others of its kind first, then the rest, photographed ones first in each, for "More like it". */
+export const related = (c: Craft, n = 3) =>
+	[...byPhoto(crafts.filter((x) => x.group === c.group && x !== c)), ...byPhoto(crafts.filter((x) => x.group !== c.group))].slice(0, n)
