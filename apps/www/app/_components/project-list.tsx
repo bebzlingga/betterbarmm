@@ -15,7 +15,7 @@ import { PhotoCredit } from './discover-figure'
    ============================================================ */
 
 export type Project = {
-	key: 'accidents' | 'directory' | 'crafts' | 'services'
+	key: 'accidents' | 'crafts' | 'services'
 	label: string
 	href?: string
 	measure: string
@@ -81,26 +81,6 @@ function IncidentDots() {
 	)
 }
 
-/** A contact card: a portrait circle, a name, and the lines a directory entry carries. */
-function ContactCard() {
-	return (
-		<svg viewBox='0 0 340 190' className='h-full w-full' aria-hidden='true'>
-			<rect x='70' y='34' width='200' height='122' rx='6' fill='var(--paper)' stroke='var(--rule)' />
-			<circle cx='104' cy='72' r='18' fill='var(--accent)' fillOpacity='0.18' />
-			<circle cx='104' cy='67' r='7' fill='var(--accent)' fillOpacity='0.7' />
-			<path d='M92 84 a12 9 0 0 1 24 0' fill='var(--accent)' fillOpacity='0.7' />
-			<rect x='132' y='60' width='96' height='9' rx='2' fill='var(--ink)' fillOpacity='0.75' />
-			<rect x='132' y='76' width='64' height='6' rx='2' fill='var(--ink-3)' fillOpacity='0.6' />
-			{[106, 122, 138].map((y, i) => (
-				<g key={y}>
-					<circle cx='92' cy={y} r='4' fill='var(--brass)' fillOpacity='0.8' />
-					<rect x='104' y={y - 3} width={[110, 132, 88][i]} height='6' rx='2' fill='var(--ink-3)' fillOpacity='0.45' />
-				</g>
-			))}
-		</svg>
-	)
-}
-
 /** A charter's page: a document with its checklist of what to bring. */
 function Checklist() {
 	return (
@@ -130,7 +110,7 @@ function CraftPhoto() {
 	)
 }
 
-const PICTURE = { accidents: IncidentDots, directory: ContactCard, crafts: CraftPhoto, services: Checklist } as const
+const PICTURE = { accidents: IncidentDots, crafts: CraftPhoto, services: Checklist } as const
 
 export function ProjectList({ projects }: { projects: Project[] }) {
 	return (

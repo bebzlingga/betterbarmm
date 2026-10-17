@@ -85,14 +85,6 @@ export const projects: Project[] = [
 		state: 'live',
 	},
 	{
-		key: 'directory',
-		label: 'Directory',
-		href: '/directory',
-		measure: '35 offices · every LGU',
-		blurb: 'Who heads each regional office, with its numbers and emails, and every governor and mayor in BARMM.',
-		state: 'soon', // hidden for now,
-	},
-	{
 		key: 'crafts',
 		label: 'Crafts',
 		href: '/crafts',

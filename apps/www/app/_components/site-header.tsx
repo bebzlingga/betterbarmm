@@ -39,7 +39,8 @@ const secondaryLinks = [
 	// { key: 'this-week', href: '/this-week', label: 'This week' },
 	// Latest news is hidden for now; the page still builds at /news.
 	// { key: 'news', href: '/news', label: 'Latest news' },
-	// Accidents and the Directory are reached through the strip's Projects switch, not the bar; phones get a row each in the menu below.
+	// Incident Watch and Crafts are reached through the strip's Projects switch, not the bar; phones get a row each in the menu below.
+	{ key: 'directory', href: '/directory', label: 'Directory' },
 	// Programs & services is hidden for now; the pages still build at /services.
 	// { key: 'services', href: '/services', label: 'Programs & services' },
 	{ key: 'explainers', href: '/explainers', label: 'Explainers' },
