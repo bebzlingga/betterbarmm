@@ -109,8 +109,9 @@ const PICTURE = { accidents: IncidentDots, directory: ContactCard, crafts: Weave
 
 export function ProjectList({ projects }: { projects: Project[] }) {
 	return (
-		// As many columns as there are projects, up to three, so no empty cell shows the rule colour behind the grid.
-		<ul className={`grid gap-px overflow-hidden border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-2 ${projects.length % 3 === 0 ? 'lg:grid-cols-3' : ''}`}>
+		// Each card draws its own hairline (overlapping its neighbour's by a pixel), so a row the projects do not
+		// fill shows the page, not a grey block.
+		<ul className='grid sm:grid-cols-2 lg:grid-cols-3'>
 			{projects.map((p) => {
 				const Picture = PICTURE[p.key]
 				const body = (
@@ -133,7 +134,7 @@ export function ProjectList({ projects }: { projects: Project[] }) {
 					</>
 				)
 				return (
-					<li key={p.key} className='bg-[var(--paper)]'>
+					<li key={p.key} className='-mt-px -ml-px border border-[var(--rule)] bg-[var(--paper)]'>
 						{p.href ? (
 							<Link href={p.href} className='group block h-full transition duration-200 hover:bg-[var(--paper-2)]'>
 								{body}

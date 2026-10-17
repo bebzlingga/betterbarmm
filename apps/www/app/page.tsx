@@ -135,15 +135,16 @@ export default async function HomePage() {
 						</Rise>
 
 						<LineReveal
-							lines={['Public records,', 'in one place.']}
+							lines={['Every public record,', 'traced to its source.']}
 							delay={0.08}
-							className='bb-display-md mt-5 text-[var(--ink)]'
+							// A step above bb-display-md: the band's one headline.
+							className='bb-display-md mt-5 text-[var(--ink)] [font-size:clamp(min(2.8rem,10.6vw),5.8vw,5rem)]'
 							lineClassName={[undefined, 'bb-mute']}
 						/>
 
 						<Rise delay={0.3} distance={16}>
 							<p className='mx-auto mt-6 max-w-xl text-[15px] leading-7 text-[var(--ink-2)]'>
-								Bills, budgets, elections, procurement and every local government in the region, readable and traced back to the source.
+								Bills, budgets, elections, procurement and every local government in the region, made readable.
 							</p>
 						</Rise>
 
