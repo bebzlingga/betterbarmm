@@ -9,7 +9,6 @@ import { DiscoverMarquee } from './_components/discover-marquee'
 import { photo } from './_components/discover-media'
 import { lguCounts, lguData, lguProvinces } from '@betterbarmm/lgu-data'
 import { SectionHead } from './_components/masthead'
-import { HeroGraphic } from './_components/hero-graphic'
 import { SiteHeader } from './_components/site-header'
 import { WorkspaceList } from './_components/workspace-index'
 import { ExplainerCard } from './_components/explainer-card'
@@ -119,22 +118,18 @@ export default async function HomePage() {
 			    heard of the Bangsamoro read the next screen. */}
 			{/* The masthead is the one band on the front page painted in the brand
 			    crimson. `.brand-bg` re-points the tokens rather than restyling the
-			    parts, so the headline, the standfirst, the three figures, the two
-			    buttons and the artwork all invert together — and anything added
+			    parts, so the headline, the standfirst, the three figures, the search
+			    and the links all invert together — and anything added
 			    here later inverts with them. */}
 			<section className='brand-bg bb-lattice relative overflow-hidden'>
 				<span aria-hidden='true' className='bb-glow absolute -left-[6%] -top-[14%] size-[34rem]' />
-
-				{/* The artwork is the band's background, not a column: it runs nearly
-				    edge to edge behind the type and fades out before it reaches the
-				    headline. Desktop only — on a phone it would sit under the words. */}
-				<HeroGraphic className='absolute inset-[3%] hidden opacity-50 lg:block' />
 
 				{/* Shorter than it was, and it now does a job: the search box is the band's one
 				    action, since most readers arrive looking for something specific — a bill, a
 				    town, a budget line. The links under it are the ways in for everyone else. */}
 				<div className='bb-container relative py-14 lg:py-20'>
-					<div className='lg:max-w-[58%]'>
+					{/* One centred column: label, headline, standfirst, search, the ways in. */}
+					<div className='mx-auto max-w-3xl text-center'>
 						<Rise distance={14}>
 							<p className='bb-label'>Public transparency for the Bangsamoro</p>
 						</Rise>
@@ -147,13 +142,13 @@ export default async function HomePage() {
 						/>
 
 						<Rise delay={0.3} distance={16}>
-							<p className='mt-6 max-w-xl text-[15px] leading-7 text-[var(--ink-2)]'>
+							<p className='mx-auto mt-6 max-w-xl text-[15px] leading-7 text-[var(--ink-2)]'>
 								Bills, budgets, elections, procurement and every local government in the region, readable and traced back to the source.
 							</p>
 						</Rise>
 
 						<Rise delay={0.4} distance={14}>
-							<form action='/search' role='search' className='mt-8 flex max-w-xl'>
+							<form action='/search' role='search' className='mx-auto mt-8 flex max-w-xl text-left'>
 								<label className='sr-only' htmlFor='home-search'>
 									Search BetterBARMM
 								</label>
@@ -162,14 +157,14 @@ export default async function HomePage() {
 									<MagnifyingGlassIcon size={18} className='shrink-0 text-[#5c574c]' aria-hidden='true' />
 									<input id='home-search' name='q' placeholder='A bill, a town, a budget line, an official…' className='min-w-0 flex-1 bg-transparent text-[15px] outline-none placeholder:text-[#8a857a]' />
 								</span>
-								<button type='submit' className='h-12 shrink-0 cursor-pointer bg-[#191713] px-5 text-[13px] font-semibold uppercase tracking-[0.12em] text-white transition hover:bg-black'>
+								<button type='submit' className='h-12 shrink-0 cursor-pointer border-l border-[#e7e2d8] bg-white px-5 text-[13px] font-semibold uppercase tracking-[0.12em] text-[#8f2328] transition hover:bg-[#f7f3ec]'>
 									Search
 								</button>
 							</form>
 						</Rise>
 
 						<Rise delay={0.5} distance={12}>
-							<p className='mt-6 flex flex-wrap gap-x-6 gap-y-2 text-[14px] font-semibold'>
+							<p className='mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[14px] font-semibold'>
 								<Link href='https://budget.betterbarmm.com' className='inline-flex items-center gap-1.5 text-[var(--ink)] underline decoration-white/40 underline-offset-4 hover:decoration-white'>
 									Open the Budget workspace <ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
 								</Link>

@@ -109,7 +109,8 @@ const PICTURE = { accidents: IncidentDots, directory: ContactCard, crafts: Weave
 
 export function ProjectList({ projects }: { projects: Project[] }) {
 	return (
-		<ul className='grid gap-px overflow-hidden border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-2 lg:grid-cols-3'>
+		// As many columns as there are projects, up to three, so no empty cell shows the rule colour behind the grid.
+		<ul className={`grid gap-px overflow-hidden border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-2 ${projects.length % 3 === 0 ? 'lg:grid-cols-3' : ''}`}>
 			{projects.map((p) => {
 				const Picture = PICTURE[p.key]
 				const body = (
