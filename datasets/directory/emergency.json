@@ -2,6 +2,1204 @@
  "name": "Emergency and public-service numbers, by province and town",
  "generatedAt": "2026-10-17",
  "note": "Police, fire, disaster-response, health and town-hall numbers as official pages and documents printed them, each with its source. Numbers change; in a life-threatening emergency call 911.",
- "provinces": [],
- "towns": []
+ "provinces": [
+  {
+   "slug": "basilan",
+   "lines": [
+    {
+     "kind": "fire",
+     "name": "BFP Office of the Provincial Fire Marshal (OPFM) - Basilan",
+     "phones": [
+      "0935-377-1824"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-citizens-reminded-to-observe-fire-safety-after-series-of-blaze-incidents"
+    }
+   ]
+  },
+  {
+   "slug": "lanao-del-sur",
+   "lines": [
+    {
+     "kind": "hall",
+     "name": "Provincial Governor's Office",
+     "phones": [
+      "0907-955-1205",
+      "0906-532-9895"
+     ],
+     "source": "https://lanaodelsur.gov.ph/contact-us/"
+    },
+    {
+     "kind": "health",
+     "name": "Provincial Health Office",
+     "phones": [
+      "0928-789-0036",
+      "0995-367-7239"
+     ],
+     "source": "https://lanaodelsur.gov.ph/contact-us/"
+    },
+    {
+     "kind": "fire",
+     "name": "BFP Office of the Provincial Fire Marshal (OPFM) - Lanao del Sur",
+     "phones": [
+      "0919-641-2597"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-citizens-reminded-to-observe-fire-safety-after-series-of-blaze-incidents"
+    },
+    {
+     "kind": "other",
+     "name": "Provincial Security Force",
+     "phones": [
+      "0997-726-3027"
+     ],
+     "source": "https://lanaodelsur.gov.ph/contact-us/"
+    },
+    {
+     "kind": "health",
+     "name": "Amai Pakpak Medical Center (DOH), Marawi City",
+     "phones": [
+      "(063) 876 0001"
+     ],
+     "source": "https://apmc.doh.gov.ph/contact-us/"
+    }
+   ]
+  },
+  {
+   "slug": "tawi-tawi",
+   "lines": [
+    {
+     "kind": "hall",
+     "name": "Office of the Provincial Governor, Provincial Capitol, Bongao",
+     "phones": [
+      "0966 273 2237",
+      "0930 513 5195"
+     ],
+     "source": "https://tawi-tawi.gov.ph/contact-us/"
+    },
+    {
+     "kind": "police",
+     "name": "Tawi-Tawi Police Provincial Office - Provincial Head Quarter",
+     "phones": [
+      "0906 444 6866"
+     ],
+     "source": "https://tawi-tawi.gov.ph/directory/"
+    },
+    {
+     "kind": "fire",
+     "name": "Bureau of Fire Protection (BFP) Provincial Fire Marshal",
+     "phones": [
+      "0965-953-4857"
+     ],
+     "source": "https://tawi-tawi.gov.ph/directory/"
+    },
+    {
+     "kind": "other",
+     "name": "Philippine Coast Guard Station Central Tawi-Tawi",
+     "phones": [
+      "0938-370-8811",
+      "0945-369-3714"
+     ],
+     "source": "https://tawi-tawi.gov.ph/directory/"
+    }
+   ]
+  },
+  {
+   "slug": "maguindanao-del-norte",
+   "lines": [
+    {
+     "kind": "fire",
+     "name": "OPFM-Maguindanao",
+     "phones": [
+      "0927-004-9186"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-citizens-reminded-to-observe-fire-safety-after-series-of-blaze-incidents/"
+    }
+   ]
+  },
+  {
+   "slug": "maguindanao-del-sur",
+   "lines": [
+    {
+     "kind": "drrm",
+     "name": "Provincial Disaster Risk Reduction Management Office (Rajah Buayan Silongan Peace Center)",
+     "phones": [
+      "0955-6386684"
+     ],
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "kind": "fire",
+     "name": "OPFM-Maguindanao",
+     "phones": [
+      "0927-004-9186"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-citizens-reminded-to-observe-fire-safety-after-series-of-blaze-incidents/"
+    },
+    {
+     "kind": "health",
+     "name": "Maguindanao Provincial Hospital (Limpongo, Datu Hoffer Ampatuan)",
+     "phones": [
+      "0915-259-5708"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/HOSP_093026.pdf"
+    },
+    {
+     "kind": "hall",
+     "name": "Provincial Governors Office",
+     "phones": [
+      "0916-427-8313"
+     ],
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    }
+   ]
+  },
+  {
+   "slug": "cotabato-city",
+   "lines": [
+    {
+     "kind": "drrm",
+     "name": "City Disaster Risk Reduction and Management Office (CDRRMO)",
+     "phones": [
+      "0995-981-3015",
+      "552-1085"
+     ],
+     "source": "https://web.archive.org/web/20250518011104/http://ecotabatocity.ph/emergency-hotlines/"
+    },
+    {
+     "kind": "fire",
+     "name": "Cotabato Fire Station",
+     "phones": [
+      "552-1785",
+      "0966-166-3427"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-citizens-reminded-to-observe-fire-safety-after-series-of-blaze-incidents/"
+    },
+    {
+     "kind": "health",
+     "name": "Cotabato Regional and Medical Center",
+     "phones": [
+      "(064) 421-2340"
+     ],
+     "source": "https://crmc.doh.gov.ph/contact-us"
+    }
+   ]
+  }
+ ],
+ "towns": [
+  {
+   "province": "basilan",
+   "slug": "akbar",
+   "lines": [
+    {
+     "kind": "hall",
+     "name": "Akbar LGU",
+     "phones": [
+      "0931-207-4829"
+     ],
+     "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Akbar"
+    }
+   ]
+  },
+  {
+   "province": "basilan",
+   "slug": "lamitan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "City Health Office (CHO) - Emergency Transfer",
+     "phones": [
+      "0995-467-5592"
+     ],
+     "source": "http://www.lamitancity.gov.ph/lcw/"
+    },
+    {
+     "kind": "drrm",
+     "name": "CDRRMO",
+     "phones": [
+      "0995-582-8020"
+     ],
+     "source": "http://www.lamitancity.gov.ph/lcw/"
+    },
+    {
+     "kind": "police",
+     "name": "PNP",
+     "phones": [
+      "0915-569-3495"
+     ],
+     "source": "http://www.lamitancity.gov.ph/lcw/"
+    },
+    {
+     "kind": "fire",
+     "name": "BFP",
+     "phones": [
+      "0905-240-9595"
+     ],
+     "source": "http://www.lamitancity.gov.ph/lcw/"
+    },
+    {
+     "kind": "health",
+     "name": "Lamitan District Hospital/Ediborah Yap Memorial Hospital",
+     "phones": [
+      "0926-108-0611"
+     ],
+     "source": "http://www.lamitancity.gov.ph/lcw/tourism/support-services/"
+    },
+    {
+     "kind": "hall",
+     "name": "Lamitan City LGU",
+     "phones": [
+      "0905-449-3534"
+     ],
+     "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Lamitan"
+    }
+   ]
+  },
+  {
+   "province": "basilan",
+   "slug": "lantawan",
+   "lines": [
+    {
+     "kind": "hall",
+     "name": "Lantawan LGU",
+     "phones": [
+      "0956-782-9848"
+     ],
+     "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Lantawan"
+    }
+   ]
+  },
+  {
+   "province": "basilan",
+   "slug": "maluso",
+   "lines": [
+    {
+     "kind": "hall",
+     "name": "Maluso LGU",
+     "phones": [
+      "9174257016"
+     ],
+     "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Maluso"
+    }
+   ]
+  },
+  {
+   "province": "basilan",
+   "slug": "sumisip",
+   "lines": [
+    {
+     "kind": "hall",
+     "name": "Sumisip Municipal Hall",
+     "phones": [
+      "0917-102-9327"
+     ],
+     "source": "https://sumisip.gov.ph/contact-us"
+    },
+    {
+     "kind": "hall",
+     "name": "Sumisip LGU",
+     "phones": [
+      "0936-487-7991"
+     ],
+     "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Sumisip"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "bacolod-kalawi",
+   "lines": [
+    {
+     "kind": "hall",
+     "name": "Bacolod-Kalawi LGU",
+     "phones": [
+      "0995-006-0087"
+     ],
+     "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Bacolod-Kalawi"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "marawi",
+   "lines": [
+    {
+     "kind": "fire",
+     "name": "BFP Office of the City Fire Marshal - Marawi City (OPFM-Marawi City)",
+     "phones": [
+      "0907-022-4843"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-citizens-reminded-to-observe-fire-safety-after-series-of-blaze-incidents"
+    },
+    {
+     "kind": "health",
+     "name": "Amai Pakpak Medical Center (DOH), Marawi City",
+     "phones": [
+      "(063) 876 0001"
+     ],
+     "source": "https://apmc.doh.gov.ph/contact-us/"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "taraka",
+   "lines": [
+    {
+     "kind": "drrm",
+     "name": "Municipal Disaster Risk Reduction and Management Office (MDRRMO)",
+     "phones": [
+      "0908-866-1099"
+     ],
+     "source": "https://taraka.gov.ph/disaster-risk-reduction-management-office/"
+    },
+    {
+     "kind": "police",
+     "name": "Philippine National Police (PNP) Taraka",
+     "phones": [
+      "0915-624-2356"
+     ],
+     "source": "https://taraka.gov.ph/philippine-national-police-pnp/"
+    },
+    {
+     "kind": "fire",
+     "name": "BFP Taraka Fire Station",
+     "phones": [
+      "0917-169-3647"
+     ],
+     "source": "https://taraka.gov.ph/bfp-barmm-taraka-fire-station/"
+    },
+    {
+     "kind": "health",
+     "name": "Municipal Health Officer (DOH-MHO)",
+     "phones": [
+      "0949-603-3728",
+      "0927-039-3604"
+     ],
+     "source": "https://taraka.gov.ph/doh-mho/"
+    }
+   ]
+  },
+  {
+   "province": "lanao-del-sur",
+   "slug": "tugaya",
+   "lines": [
+    {
+     "kind": "hall",
+     "name": "Tugaya LGU",
+     "phones": [
+      "0912-643-2691"
+     ],
+     "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Tugaya"
+    }
+   ]
+  },
+  {
+   "province": "tawi-tawi",
+   "slug": "bongao",
+   "lines": [
+    {
+     "kind": "hall",
+     "name": "Bongao LGU",
+     "phones": [
+      "(068)268-1011"
+     ],
+     "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Bongao"
+    }
+   ]
+  },
+  {
+   "province": "tawi-tawi",
+   "slug": "mapun",
+   "lines": [
+    {
+     "kind": "hall",
+     "name": "Mapun LGU",
+     "phones": [
+      "0926-943-0795"
+     ],
+     "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Mapun"
+    }
+   ]
+  },
+  {
+   "province": "tawi-tawi",
+   "slug": "simunul",
+   "lines": [
+    {
+     "kind": "hall",
+     "name": "Simunul Municipal Hall",
+     "phones": [
+      "0917-164-8562",
+      "0970-987-1518"
+     ],
+     "source": "https://simunul.gov.ph/contact-us/"
+    }
+   ]
+  },
+  {
+   "province": "tawi-tawi",
+   "slug": "sitangkai",
+   "lines": [
+    {
+     "kind": "hall",
+     "name": "Sitangkai Municipal Hall",
+     "phones": [
+      "0927-064-7300"
+     ],
+     "source": "https://sitangkai.gov.ph/contact-us/"
+    }
+   ]
+  },
+  {
+   "province": "tawi-tawi",
+   "slug": "turtle-islands",
+   "lines": [
+    {
+     "kind": "hall",
+     "name": "Turtle Islands Municipal Hall",
+     "phones": [
+      "0999-807-0452"
+     ],
+     "source": "https://turtleislands.gov.ph/contact-us/"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-norte",
+   "slug": "barira",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Barira Rural Health Unit",
+     "phones": [
+      "0973-370-1132"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-norte",
+   "slug": "buldon",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Buldon Rural Health Unit",
+     "phones": [
+      "0915-612-2681",
+      "0975-610-1912"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-norte",
+   "slug": "datu-blah-t-sinsuat",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Datu Blah Sinsuat Rural Health Unit",
+     "phones": [
+      "0967-006-1994"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-norte",
+   "slug": "datu-odin-sinsuat",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Datu Odin Sinsuat District Hospital",
+     "phones": [
+      "0917-622-3894"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/HOSP_093026.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "Datu Odin Sinsuat RHU",
+     "phones": [
+      "0965-096-4819",
+      "0927-600-8944"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-norte",
+   "slug": "kabuntalan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Kabuntalan RHU",
+     "phones": [
+      "0935-525-3050",
+      "0917-677-0060"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-norte",
+   "slug": "matanog",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "RHU Matanog",
+     "phones": [
+      "0916-301-2500",
+      "0961-688-2070"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-norte",
+   "slug": "northern-kabuntalan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Northern Kabuntalan Rural Health Unit",
+     "phones": [
+      "0995-019-7896"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-norte",
+   "slug": "parang",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Iranon District Hospital",
+     "phones": [
+      "0927-535-7803",
+      "064-421-8433"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "Iranon District Hospital",
+     "phones": [
+      "(064) 4218 057"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/HOSP_093026.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "Parang RHU",
+     "phones": [
+      "0919-007-2348"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-norte",
+   "slug": "sultan-kudarat",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Cotabato Sanitarium and General Hospital",
+     "phones": [
+      "064-552-2890",
+      "0917-723-7994"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "Cotabato Sanitarium and General Hospital",
+     "phones": [
+      "(064)-429-0082"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/HOSP_093026.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "Sultan Kudarat RHU",
+     "phones": [
+      "0967-337-7711"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-norte",
+   "slug": "sultan-mastura",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Sultan Mastura Rural Health Unit",
+     "phones": [
+      "0936-824-2461",
+      "0927-542-3393"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-norte",
+   "slug": "talitay",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Rural Health Unit Talitay",
+     "phones": [
+      "0960-408-1865"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-norte",
+   "slug": "upi",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "North Upi RHU",
+     "phones": [
+      "0910-672-0360",
+      "0956-168-7713"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "Datu Blah T. Sinsuat District Hospital (Brgy. Nuro, Upi)",
+     "phones": [
+      "0908-873-0305"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/HOSP_093026.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "Datu Blah T. Sinsuat District Hospital (Brgy. Nuro, Upi)",
+     "phones": [
+      "0917-621-9571"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "ampatuan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Rural Health Unit-Ampatuan",
+     "phones": [
+      "0975-830-8479"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "buluan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Buluan District Hospital",
+     "phones": [
+      "0966-661-7191"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/HOSP_093026.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "Buluan Rural Health Unit",
+     "phones": [
+      "0969-040-7993"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "datu-abdullah-sangki",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Datu Abdullah Sangki RHU",
+     "phones": [
+      "0981-120-0166"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "datu-anggal-midtimbang",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Datu Anggal Midtimbang RHU",
+     "phones": [
+      "0905-155-7531"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "datu-hoffer-ampatuan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Maguindanao Provincial Hospital (Limpongo)",
+     "phones": [
+      "0915-259-5708"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/HOSP_093026.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "RHU Datu Hoffer",
+     "phones": [
+      "0917-300-1707"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "datu-paglas",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "RHU Datu Paglas",
+     "phones": [
+      "0936-106-0450"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "datu-piang",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "RHU Datu Piang",
+     "phones": [
+      "0936-339-0809",
+      "0915-354-5428"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "datu-saudi-ampatuan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Datu Saudi Ampatuan RHU",
+     "phones": [
+      "0955-270-3279"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "datu-unsay",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Datu Unsay RHU",
+     "phones": [
+      "0916-201-3101"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "gen-s-k-pendatun",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "RHU - General Salipada K. Pendatun",
+     "phones": [
+      "0917-309-6846"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "guindulungan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Guindulungan Rural Health Unit",
+     "phones": [
+      "0976-368-0714"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "mamasapano",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Mamasapano Rural Health Unit",
+     "phones": [
+      "0975-123-6955"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "mangudadatu",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Mangudadatu Rural Health Unit",
+     "phones": [
+      "0948-683-7853"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "pagagawan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Datu Montawal Rural Health Unit",
+     "phones": [
+      "0917-115-0034"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "pagalungan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Pagalungan Rural Health Unit",
+     "phones": [
+      "0928-768-9751"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "pandag",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Pandag RHU",
+     "phones": [
+      "0909-911-7262"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "rajah-buayan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Radjah Buayan RHU",
+     "phones": [
+      "0945-230-5968"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "shariff-aguak",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Shariff Aguak RHU",
+     "phones": [
+      "0963-132-7358"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "shariff-saydona-mustapha",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Shariff Saydona Mustapha RHU",
+     "phones": [
+      "0956-658-0632"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "south-upi",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "South Upi Municipal Hospital",
+     "phones": [
+      "0917-833-4828"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/HOSP_093026.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "South Upi Municipal Hospital",
+     "phones": [
+      "0927-153-1183",
+      "0956-052-0050"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "South Upi Rural Health Unit",
+     "phones": [
+      "0946-636-3655"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "sultan-sa-barongis",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Sultan sa Barongis RHU",
+     "phones": [
+      "0917-117-8377"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "maguindanao-del-sur",
+   "slug": "talayan",
+   "lines": [
+    {
+     "kind": "health",
+     "name": "Talayan RHU",
+     "phones": [
+      "0953-952-6331"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    }
+   ]
+  },
+  {
+   "province": "cotabato-city",
+   "slug": "cotabato-city",
+   "lines": [
+    {
+     "kind": "drrm",
+     "name": "City Disaster Risk Reduction and Management Office (CDRRMO)",
+     "phones": [
+      "0995-981-3015",
+      "552-1085"
+     ],
+     "source": "https://web.archive.org/web/20250518011104/http://ecotabatocity.ph/emergency-hotlines/"
+    },
+    {
+     "kind": "police",
+     "name": "PNP Police Station 1",
+     "phones": [
+      "0998-598-7255",
+      "(064) 421-1180"
+     ],
+     "source": "https://web.archive.org/web/20250518011104/http://ecotabatocity.ph/emergency-hotlines/"
+    },
+    {
+     "kind": "police",
+     "name": "PNP Police Station 2",
+     "phones": [
+      "0915-625-9581",
+      "0969-215-4223",
+      "(064) 552-2596"
+     ],
+     "source": "https://web.archive.org/web/20250518011104/http://ecotabatocity.ph/emergency-hotlines/"
+    },
+    {
+     "kind": "police",
+     "name": "PNP Police Station 3",
+     "phones": [
+      "0998-598-7174",
+      "(064) 557-0602"
+     ],
+     "source": "https://web.archive.org/web/20250518011104/http://ecotabatocity.ph/emergency-hotlines/"
+    },
+    {
+     "kind": "police",
+     "name": "PNP Police Station 4",
+     "phones": [
+      "0998-884-1328",
+      "0998-967-4237"
+     ],
+     "source": "https://web.archive.org/web/20250518011104/http://ecotabatocity.ph/emergency-hotlines/"
+    },
+    {
+     "kind": "fire",
+     "name": "Fire",
+     "phones": [
+      "(064) 552-1785"
+     ],
+     "source": "https://web.archive.org/web/20250518011104/http://ecotabatocity.ph/emergency-hotlines/"
+    },
+    {
+     "kind": "fire",
+     "name": "Cotabato Fire Station",
+     "phones": [
+      "552-1785",
+      "0966-166-3427"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-citizens-reminded-to-observe-fire-safety-after-series-of-blaze-incidents/"
+    },
+    {
+     "kind": "fire",
+     "name": "MBRH Substation",
+     "phones": [
+      "552-2723"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-citizens-reminded-to-observe-fire-safety-after-series-of-blaze-incidents/"
+    },
+    {
+     "kind": "fire",
+     "name": "OCM Fire Substation",
+     "phones": [
+      "552-0043"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-citizens-reminded-to-observe-fire-safety-after-series-of-blaze-incidents/"
+    },
+    {
+     "kind": "fire",
+     "name": "White House Substation",
+     "phones": [
+      "552-2720"
+     ],
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-citizens-reminded-to-observe-fire-safety-after-series-of-blaze-incidents/"
+    },
+    {
+     "kind": "other",
+     "name": "EMS",
+     "phones": [
+      "0916-706-5180",
+      "0965-506-0891"
+     ],
+     "source": "https://web.archive.org/web/20250518011104/http://ecotabatocity.ph/emergency-hotlines/"
+    },
+    {
+     "kind": "other",
+     "name": "BARMM READi",
+     "phones": [
+      "0966-301-8777",
+      "0939-339-5221"
+     ],
+     "source": "https://web.archive.org/web/20250518011104/http://ecotabatocity.ph/emergency-hotlines/"
+    },
+    {
+     "kind": "health",
+     "name": "City Health",
+     "phones": [
+      "0936-264-6949"
+     ],
+     "source": "https://web.archive.org/web/20250518011104/http://ecotabatocity.ph/emergency-hotlines/"
+    },
+    {
+     "kind": "health",
+     "name": "City Health Office, Cotabato City",
+     "phones": [
+      "0966-502-9145"
+     ],
+     "source": "https://www.philhealth.gov.ph/partners/providers/facilities/accredited/YAKAP.pdf"
+    },
+    {
+     "kind": "health",
+     "name": "Cotabato Regional and Medical Center",
+     "phones": [
+      "(064) 421-2340"
+     ],
+     "source": "https://crmc.doh.gov.ph/contact-us"
+    },
+    {
+     "kind": "hall",
+     "name": "Whitehouse",
+     "phones": [
+      "0936-337-0747",
+      "(064) 552-3174"
+     ],
+     "source": "https://web.archive.org/web/20250518011104/http://ecotabatocity.ph/emergency-hotlines/"
+    },
+    {
+     "kind": "hall",
+     "name": "Office of the City Mayor",
+     "phones": [
+      "421-8969",
+      "552-0300",
+      "557-1612"
+     ],
+     "source": "https://web.archive.org/web/20250517212958/https://ecotabatocity.ph/lgu-landline/"
+    },
+    {
+     "kind": "other",
+     "name": "Office of the City Public Safety Officer",
+     "phones": [
+      "(064) 421-3569",
+      "421-5197",
+      "0953-105-9720"
+     ],
+     "source": "https://web.archive.org/web/20250517212958/https://ecotabatocity.ph/lgu-landline/"
+    }
+   ]
+  }
+ ]
 }
