@@ -40,7 +40,8 @@ export type DirectoryOffice = {
 
 export type Hotline = { name: string; number: string; source: string }
 export type Line = { kind: 'drrm' | 'police' | 'fire' | 'health' | 'hall' | 'other'; name: string; phones: string[]; source: string }
-export type Tenure = { name: string; title: string; from: string | null; to: string | null; source: string }
+/** A head's time in office. Where no source dates it, first_seen and last_seen are the earliest and latest months a source shows them there; former marks a past head whose end is undated. */
+export type Tenure = { name: string; title: string; from: string | null; to: string | null; source: string; first_seen?: string; last_seen?: string; former?: boolean }
 export type FieldOffice = {
 	ministry_slug: string
 	office: string
@@ -67,7 +68,7 @@ export const directoryOffice = (slug: string) => directoryOffices.find((o) => o.
 /** Every head an office has had, newest first. */
 export function officeHistory(slug: string): Tenure[] {
 	const h = (historyFile.offices as { slug: string; history: Tenure[] }[]).find((o) => o.slug === slug)?.history ?? []
-	return [...h].sort((a, b) => (b.from ?? '').localeCompare(a.from ?? ''))
+	return [...h].sort((a, b) => (b.from ?? b.first_seen ?? '').localeCompare(a.from ?? a.first_seen ?? ''))
 }
 
 /** A ministry's offices in the provinces. */

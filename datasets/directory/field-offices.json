@@ -2,5 +2,703 @@
  "name": "Provincial and field offices of the Bangsamoro ministries",
  "generatedAt": "2026-10-17",
  "note": "The ministries' offices in the provinces, as the ministries' own pages and charters list them.",
- "offices": []
+ "offices": [
+  {
+   "ministry_slug": "ministry-of-social-services-and-development",
+   "office": "MSSD Special Geographic Area",
+   "province": "Special Geographic Area",
+   "address": "2nd floor Duga Building, Talisay Street, Poblacion 6, Midsayap, North Cotabato",
+   "phones": [
+    "(064) 577-7159"
+   ],
+   "head": {
+    "name": "Haron D. Amer, RSW",
+    "title": "PSWO, BARMM Special Geographic Area"
+   },
+   "source": "https://mssd.barmm.gov.ph/contact-us/",
+   "head_source": "https://mssd.barmm.gov.ph/directory-of-officials/"
+  },
+  {
+   "ministry_slug": "ministry-of-social-services-and-development",
+   "office": "MSSD Maguindanao del Norte",
+   "province": "Maguindanao del Norte",
+   "address": "RESWAD, Brgy. Semba, Datu Odin Sinsuat, Maguindanao",
+   "phones": [
+    "+63917-316-1050"
+   ],
+   "head": {
+    "name": "Hadja Emma Salik Ali, RSW",
+    "title": "PSWO, Maguindanao del Norte"
+   },
+   "source": "https://mssd.barmm.gov.ph/contact-us/",
+   "head_source": "https://mssd.barmm.gov.ph/directory-of-officials/"
+  },
+  {
+   "ministry_slug": "ministry-of-social-services-and-development",
+   "office": "MSSD Maguindanao del Sur",
+   "province": "Maguindanao del Sur",
+   "address": "RESWAD, Brgy. Semba, Datu Odin Sinsuat, Maguindanao",
+   "phones": [
+    "+63917-316-1050"
+   ],
+   "head": {
+    "name": "Eman Panondi, RSW",
+    "title": "PSWO, Maguindanao del Sur"
+   },
+   "source": "https://mssd.barmm.gov.ph/contact-us/",
+   "head_source": "https://mssd.barmm.gov.ph/directory-of-officials/",
+   "note": "The contact page lists the same address and number as Maguindanao del Norte."
+  },
+  {
+   "ministry_slug": "ministry-of-social-services-and-development",
+   "office": "MSSD Lanao del Sur A",
+   "province": "Lanao del Sur",
+   "address": "Provincial Capitol Complex, Brgy. Buadisacayo, Marawi City, Lanao Del Sur",
+   "phones": [
+    "+63 916 578 2433",
+    "+63 948 778 6162"
+   ],
+   "head": {
+    "name": "Bai Yasmira N. Pangadapun, MPA",
+    "title": "PSWO, Lanao del Sur A"
+   },
+   "source": "https://mssd.barmm.gov.ph/contact-us/",
+   "head_source": "https://mssd.barmm.gov.ph/directory-of-officials/"
+  },
+  {
+   "ministry_slug": "ministry-of-social-services-and-development",
+   "office": "MSSD Lanao del Sur B",
+   "province": "Lanao del Sur",
+   "address": "Brgy. Bacayawan, Malabang, Lanao del Sur",
+   "phones": [
+    "+63 939 905 5970"
+   ],
+   "head": {
+    "name": "Jaslin L. Masbud, RSW",
+    "title": "PSWO, Lanao del Sur B"
+   },
+   "source": "https://mssd.barmm.gov.ph/contact-us/",
+   "head_source": "https://mssd.barmm.gov.ph/directory-of-officials/",
+   "note": "On the contact page this entry is headed 'MSSD Lanao del Sur A' but links to the 'MSSD BARMM Lanao del Sur B' page; the Malabang address is taken to be Lanao del Sur B."
+  },
+  {
+   "ministry_slug": "ministry-of-social-services-and-development",
+   "office": "MSSD Tawi-Tawi",
+   "province": "Tawi-Tawi",
+   "address": "Lacquere Street, Poblacion, Bongao, Tawi-Tawi",
+   "phones": [
+    "(068) 268-1006",
+    "+63917-301-8188"
+   ],
+   "head": {
+    "name": "Hadja Belinda C. Adil, RSW",
+    "title": "PSWO, Tawi-Tawi"
+   },
+   "source": "https://mssd.barmm.gov.ph/contact-us/",
+   "head_source": "https://mssd.barmm.gov.ph/directory-of-officials/"
+  },
+  {
+   "ministry_slug": "ministry-of-social-services-and-development",
+   "office": "MSSD Basilan Coordinating Office",
+   "province": "Basilan",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Nurhada Abdulkadir, RSW",
+    "title": "Coordinator, Basilan Coordinating Office"
+   },
+   "source": "https://mssd.barmm.gov.ph/directory-of-officials/",
+   "note": "The contact page lists a 'MSSD Basilan Field Office' only as a feedback recipient, with no address or number."
+  },
+  {
+   "ministry_slug": "ministry-of-social-services-and-development",
+   "office": "MSSD Cotabato City Annex Office",
+   "province": "Cotabato City",
+   "address": "#14 Macapagal Street, (Near Golden Lace Resto), Mother Barangay Rosary Heights, Cotabato City",
+   "phones": [],
+   "head": null,
+   "source": "https://mssd.barmm.gov.ph/contact-us/",
+   "note": "Annex in Cotabato City; the contact page lists numbers there per program (SLP +63 915 210 4011; EPAHP +63 956 932 8201), not for the annex itself. The Crisis Intervention Unit Cotabato is at CNX Bldg III, ND Village, RH-8, Cotabato City, +63916 139 2765, (064) 421-7730."
+  },
+  {
+   "ministry_slug": "ministry-of-social-services-and-development",
+   "office": "MSSD Marawi City Coordinating Office",
+   "province": "Lanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Naharah G. Noroden, RSW",
+    "title": "Coordinator, Marawi City Coordinating Office"
+   },
+   "source": "https://mssd.barmm.gov.ph/directory-of-officials/"
+  },
+  {
+   "ministry_slug": "ministry-of-public-works",
+   "office": "Cotabato City District Engineering Office",
+   "province": "Cotabato City",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Tarhata P. Kalim",
+    "title": "Acting District Engineer"
+   },
+   "source": "https://mpw.bangsamoro.gov.ph/district-engineers/"
+  },
+  {
+   "ministry_slug": "ministry-of-public-works",
+   "office": "Maguindanao del Norte District Engineering Office",
+   "province": "Maguindanao del Norte",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Sahid A. Abdullah",
+    "title": "Acting District Engineer"
+   },
+   "source": "https://mpw.bangsamoro.gov.ph/district-engineers/"
+  },
+  {
+   "ministry_slug": "ministry-of-public-works",
+   "office": "Maguindanao del Sur District Engineering Office",
+   "province": "Maguindanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Esmael D. Ganduan",
+    "title": "OIC – District Engineer"
+   },
+   "source": "https://mpw.bangsamoro.gov.ph/district-engineers/"
+  },
+  {
+   "ministry_slug": "ministry-of-public-works",
+   "office": "Lanao del Sur 1st District Engineering Office",
+   "province": "Lanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Abolcair S. Langilao",
+    "title": "District Engineer"
+   },
+   "source": "https://mpw.bangsamoro.gov.ph/district-engineers/"
+  },
+  {
+   "ministry_slug": "ministry-of-public-works",
+   "office": "Lanao del Sur 2nd District Engineering Office",
+   "province": "Lanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Abdul Maomit M. Tomawis",
+    "title": "District Engineer"
+   },
+   "source": "https://mpw.bangsamoro.gov.ph/district-engineers/"
+  },
+  {
+   "ministry_slug": "ministry-of-public-works",
+   "office": "Basilan District Engineering Office",
+   "province": "Basilan",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Alnaif Ronie Abunawas Cuevas",
+    "title": "Acting District Engineer"
+   },
+   "source": "https://mpw.bangsamoro.gov.ph/district-engineers/",
+   "note": "Took office 2026-07-20, succeeding Kasim Hasanin (https://bangsamoro.gov.ph/news/latest-news/new-basilan-acting-district-engineer-vows-timely-quality-infrastructure-projects/)."
+  },
+  {
+   "ministry_slug": "ministry-of-public-works",
+   "office": "Tawi-Tawi District Engineering Office",
+   "province": "Tawi-Tawi",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Borris-Zanzibar L. Kadil",
+    "title": "District Engineer"
+   },
+   "source": "https://mpw.bangsamoro.gov.ph/district-engineers/"
+  },
+  {
+   "ministry_slug": "ministry-of-labor-and-employment",
+   "office": "Cotabato City Field Office",
+   "province": "Cotabato City",
+   "address": "2nd Fl., Corner Pansacala St., Sinsuat Ave., Mother Barangay Rosary Heights, Cotabato City",
+   "phones": [
+    "(064) 421-6352"
+   ],
+   "head": {
+    "name": "Engr. Dimaporo A. Diocolano",
+    "title": "Supervising Labor and Employment Officer"
+   },
+   "source": "https://mole.bangsamoro.gov.ph/officials/"
+  },
+  {
+   "ministry_slug": "ministry-of-labor-and-employment",
+   "office": "Special Geographic Area Field Office",
+   "province": "Special Geographic Area",
+   "address": null,
+   "phones": [
+    "(064) 572-4225",
+    "0935-470-2057"
+   ],
+   "head": {
+    "name": "Moctar S. Macalipat",
+    "title": "Supervising Labor and Employment Officer"
+   },
+   "source": "https://mole.bangsamoro.gov.ph/officials/"
+  },
+  {
+   "ministry_slug": "ministry-of-labor-and-employment",
+   "office": "Maguindanao Field Office",
+   "province": "Maguindanao",
+   "address": null,
+   "phones": [
+    "(064) 552-3499"
+   ],
+   "head": {
+    "name": "Hamsa G. Nul",
+    "title": "Supervising Labor and Employment Officer"
+   },
+   "source": "https://mole.bangsamoro.gov.ph/officials/"
+  },
+  {
+   "ministry_slug": "ministry-of-labor-and-employment",
+   "office": "Lanao del Sur Field Office",
+   "province": "Lanao del Sur",
+   "address": "51 Baguibdaali St., Marawi Poblacion, Marawi City",
+   "phones": [
+    "0907-948-3095"
+   ],
+   "head": {
+    "name": "Norolain T. Dimaluna",
+    "title": "Supervising Labor and Employment Officer"
+   },
+   "source": "https://mole.bangsamoro.gov.ph/officials/"
+  },
+  {
+   "ministry_slug": "ministry-of-labor-and-employment",
+   "office": "Basilan Field Office",
+   "province": "Basilan",
+   "address": "Ground Floor Tinis Building, Mezi, Isabela City, Basilan",
+   "phones": [
+    "0946-035-1592"
+   ],
+   "head": {
+    "name": "Amna Farrah A. Alihuddin",
+    "title": "Supervising Labor and Employment Officer"
+   },
+   "source": "https://mole.bangsamoro.gov.ph/officials/"
+  },
+  {
+   "ministry_slug": "ministry-of-labor-and-employment",
+   "office": "Tawi-Tawi Field Office",
+   "province": "Tawi-Tawi",
+   "address": "Beachside Inn, Sowangkagang, Pasiagan, Bongao, Tawi-tawi",
+   "phones": [
+    "0935-119-4414"
+   ],
+   "head": {
+    "name": "Haipa H. Jumdain",
+    "title": "Supervising Labor and Employment Officer"
+   },
+   "source": "https://mole.bangsamoro.gov.ph/officials/"
+  },
+  {
+   "ministry_slug": "ministry-of-human-settlements-and-development",
+   "office": "MHSD – Lanao Del Sur",
+   "province": "Lanao del Sur",
+   "address": "MHSD- Lanao del Sur Provincial Office, MH4 Building, Bo. Green, Marawi CIty",
+   "phones": [
+    "09171560578"
+   ],
+   "head": {
+    "name": "Benjamin D. Alangca",
+    "title": "Provincial Director, MHSD-Lanao del Sur"
+   },
+   "source": "https://mhsd.bangsamoro.gov.ph/contact-us/"
+  },
+  {
+   "ministry_slug": "ministry-of-human-settlements-and-development",
+   "office": "MHSD – Maguindanao (MDN)",
+   "province": "Maguindanao del Norte",
+   "address": "MHSD-Maguindanao Provincial Office, Dilangalen Building, Bishop Mongeau St., Rosary Heights VIII, Cotabato City",
+   "phones": [
+    "064-425-5388"
+   ],
+   "head": {
+    "name": "Bai Maroudz S. Ibrahim",
+    "title": "Provincial Director, MHSD-Maguindanao (MDN)"
+   },
+   "source": "https://mhsd.bangsamoro.gov.ph/contact-us/",
+   "note": "The contact page lists one Maguindanao office, but separate directors for MDN and MDS."
+  },
+  {
+   "ministry_slug": "ministry-of-human-settlements-and-development",
+   "office": "MHSD – Maguindanao (MDS)",
+   "province": "Maguindanao del Sur",
+   "address": "MHSD-Maguindanao Provincial Office, Dilangalen Building, Bishop Mongeau St., Rosary Heights VIII, Cotabato City",
+   "phones": [
+    "064-425-5388"
+   ],
+   "head": {
+    "name": "Noroden S. Abdullah",
+    "title": "Provincial Director, MHSD-Maguindanao (MDS)"
+   },
+   "source": "https://mhsd.bangsamoro.gov.ph/contact-us/",
+   "note": "The contact page lists one Maguindanao office, but separate directors for MDN and MDS."
+  },
+  {
+   "ministry_slug": "ministry-of-human-settlements-and-development",
+   "office": "MHSD – Basilan",
+   "province": "Basilan",
+   "address": "MHSD-Basilan Provincial office, Sta. Clara, Lamitan City, Basilan Province",
+   "phones": [
+    "09355647262"
+   ],
+   "head": {
+    "name": "Ibrahim M. Haruddain, MPA",
+    "title": "Provincial Director, MHSD-Basilan"
+   },
+   "source": "https://mhsd.bangsamoro.gov.ph/contact-us/"
+  },
+  {
+   "ministry_slug": "ministry-of-human-settlements-and-development",
+   "office": "MHSD – Tawi-Tawi",
+   "province": "Tawi-Tawi",
+   "address": "MHSD- Tawi-Tawi Provincial office, Capitol Hill, Bongao, Tawi-Tawi",
+   "phones": [
+    "09664954855"
+   ],
+   "head": {
+    "name": "Engr. Sabturani U. Bakil",
+    "title": "Provincial Director, MHSD-Tawi-Tawi"
+   },
+   "source": "https://mhsd.bangsamoro.gov.ph/contact-us/"
+  },
+  {
+   "ministry_slug": "ministry-of-human-settlements-and-development",
+   "office": "MHSD-(SGA)",
+   "province": "Special Geographic Area",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Hamzah A. Salik",
+    "title": "Provincial Director, MHSD-(SGA)"
+   },
+   "source": "https://mhsd.bangsamoro.gov.ph/contact-us/",
+   "note": "The director is listed, but no address is given for an SGA office."
+  },
+  {
+   "ministry_slug": "ministry-of-trade-investments-and-tourism",
+   "office": "MTIT-Basilan Provincial Office",
+   "province": "Basilan",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Dr. Argie J. Sarco",
+    "title": "Provincial Director"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/mtit-basilan-hosts-msme-investment-roadshow-to-boost-local-enterprises/",
+   "head_as_of": "2025-09"
+  },
+  {
+   "ministry_slug": "ministry-of-trade-investments-and-tourism",
+   "office": "MTIT Tawi-Tawi Provincial Office",
+   "province": "Tawi-Tawi",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Fatima Neyyar H. Hassan",
+    "title": "OIC Provincial Director"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/mtit-tawi-tawi-recognizes-5-msmes-for-contributions-to-local-economy/",
+   "head_as_of": "2026-09"
+  },
+  {
+   "ministry_slug": "ministry-of-trade-investments-and-tourism",
+   "office": "MTIT Maguindanao Provincial Office",
+   "province": "Maguindanao",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Romeo Diocolano",
+    "title": "Provincial Director, MTIT-Maguindanao"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-stakeholders-advance-cultural-stewardship-to-safeguard-inawl-heritage/",
+   "head_as_of": "2026-06"
+  },
+  {
+   "ministry_slug": "ministry-of-trade-investments-and-tourism",
+   "office": "MTIT-Cotabato City Field Office (MTIT-CCFO)",
+   "province": "Cotabato City",
+   "address": "8Z old Barter Tourism Complex, Gov. Gutierrez Avenue",
+   "phones": [],
+   "head": null,
+   "source": "https://bangsamoro.gov.ph/news/latest-news/new-mtit-field-office-to-drive-economic-boom-in-cotabato-city/",
+   "note": "Opened 2023-10-06."
+  },
+  {
+   "ministry_slug": "ministry-of-agriculture-fisheries-and-agrarian-reform",
+   "office": "MAFAR Tawi-Tawi",
+   "province": "Tawi-Tawi",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Dr. Aidarus Nami",
+    "title": "Provincial Director"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/mafar-strengthens-fisheries-governance-with-1st-bangsamoro-seaweed-congress-in-tawi-tawi/",
+   "head_as_of": "2025-10"
+  },
+  {
+   "ministry_slug": "ministry-of-agriculture-fisheries-and-agrarian-reform",
+   "office": "MAFAR-Lanao del Sur",
+   "province": "Lanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Atty. Khalid D. Ansano",
+    "title": "Provincial Director"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/mafar-lds-fao-distribute-post-harvest-cooler-boxes-to-fisherfolk-groups/",
+   "head_as_of": "2026-04"
+  },
+  {
+   "ministry_slug": "ministry-of-agriculture-fisheries-and-agrarian-reform",
+   "office": "MAFAR-Maguindanao",
+   "province": "Maguindanao",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Dr. Ronjamin Maulana",
+    "title": "Provincial Director"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/maguindanao-fisherfolk-receive-postharvest-equipment-from-mafar/",
+   "head_as_of": "2026-05"
+  },
+  {
+   "ministry_slug": "ministry-of-agriculture-fisheries-and-agrarian-reform",
+   "office": "MAFAR-Basilan",
+   "province": "Basilan",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Hanie Muadz Junuban",
+    "title": "Provincial Director"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/mafar-unveils-upgraded-community-fish-landing-center-in-lamitan-city-to-improve-fisherfolk-livelihoods/",
+   "head_as_of": "2025-10"
+  },
+  {
+   "ministry_slug": "ministry-of-agriculture-fisheries-and-agrarian-reform",
+   "office": "MAFAR-Special Geographic Area and Cotabato City",
+   "province": "Special Geographic Area",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Julie O. Maliga",
+    "title": "MAFAR-SGA Director"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/mafar-sga-brings-agri-fishery-assisatance-to-ligawasan-on-2nd-founding-anniv/",
+   "head_as_of": "2026-10",
+   "note": "Called \"MAFAR-Special Geographic Area and Cotabato City Director\" by BIO on 2026-05-13 (https://bangsamoro.gov.ph/news/latest-news/maguindanao-fisherfolk-receive-postharvest-equipment-from-mafar/), so the office covers Cotabato City too. The MAFAR contact page lists provincial Facebook pages only, with no addresses."
+  },
+  {
+   "ministry_slug": "ministry-of-the-interior-and-local-government",
+   "office": "MILG-Basilan",
+   "province": "Basilan",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Ra-diyah M. Akmad",
+    "title": "Provincial Director"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/milg-evaluates-lamitan-city-two-basilan-towns-for-local-legislative-awards/",
+   "head_as_of": "2025-10"
+  },
+  {
+   "ministry_slug": "ministry-of-the-interior-and-local-government",
+   "office": "MILG Tawi-Tawi",
+   "province": "Tawi-Tawi",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Gulamhasan A. Sappayani",
+    "title": "Provincial Director"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/first-digital-governance-center-in-barmm-island-provinces-launched-in-bongao-tawi-tawi/",
+   "head_as_of": "2025-09"
+  },
+  {
+   "ministry_slug": "ministry-of-the-interior-and-local-government",
+   "office": "MILG-Lanao del Sur Field Office",
+   "province": "Lanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Cader Indar Jr.",
+    "title": "Provincial Director"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/25-lgus-in-lanao-del-sur-recognized-for-anti-trafficking-vawc-efforts/",
+   "head_as_of": "2026-04"
+  },
+  {
+   "ministry_slug": "ministry-of-health",
+   "office": "IPHO-Lanao del Sur",
+   "province": "Lanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Dr. Alinader D. Minalang",
+    "title": "Provincial Health Officer II"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/377-healthcare-workers-sworn-in-to-strengthen-lanao-del-surs-health-system/",
+   "head_as_of": "2025-03",
+   "note": "Integrated Provincial Health Office, which works with MOH."
+  },
+  {
+   "ministry_slug": "ministry-of-health",
+   "office": "IPHO Tawi-Tawi",
+   "province": "Tawi-Tawi",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Dr. Sangkula G. Laja",
+    "title": "Provincial Health Officer II"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/philhealth-barmm-ipho-tawi-tawi-serve-371-workers-in-labor-day-yakap-launch/",
+   "head_as_of": "2026-05"
+  },
+  {
+   "ministry_slug": "ministry-of-health",
+   "office": "Maguindanao Integrated Provincial Health Office",
+   "province": "Maguindanao",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Mahammad Ariff Baguindali",
+    "title": "Provincial Health Officer II and Chief of Hospital"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/first-super-health-center-in-barmm-opens-in-maguindanao-del-norte-town/",
+   "head_as_of": "2026-07"
+  },
+  {
+   "ministry_slug": "ministry-of-health",
+   "office": "Basilan Provincial Health Office",
+   "province": "Basilan",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Dr. Sharifa Ann Abbas-Alvarez",
+    "title": "Provincial Health Officer"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-govt-delivers-500-boxes-of-essential-medicines-to-boost-basilan-health-services/",
+   "head_as_of": "2025-07",
+   "note": "Not confirmed as an MOH office; it may be the provincial government's."
+  },
+  {
+   "ministry_slug": "ministry-of-basic-higher-and-technical-education",
+   "office": "Schools Division of Cotabato City",
+   "province": "Cotabato City",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Dr. Bai Rojana Sinsuat",
+    "title": "Schools Division Superintendent"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/minister-iqbal-urges-dedication-sincerity-as-mbhte-swears-in-811-new-education-personnel/",
+   "head_as_of": "2025-10"
+  },
+  {
+   "ministry_slug": "ministry-of-basic-higher-and-technical-education",
+   "office": "Schools Division of Lanao del Sur I",
+   "province": "Lanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Dr. Shahanee Sumagayon",
+    "title": "Schools Division Superintendent"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/minister-iqbal-urges-dedication-sincerity-as-mbhte-swears-in-811-new-education-personnel/",
+   "head_as_of": "2025-10"
+  },
+  {
+   "ministry_slug": "ministry-of-basic-higher-and-technical-education",
+   "office": "Schools Division of Lanao del Sur II",
+   "province": "Lanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Dr. Anna Zenaida Unte-Alonto",
+    "title": "Schools Division Superintendent"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/minister-iqbal-urges-dedication-sincerity-as-mbhte-swears-in-811-new-education-personnel/",
+   "head_as_of": "2025-10"
+  },
+  {
+   "ministry_slug": "ministry-of-basic-higher-and-technical-education",
+   "office": "Schools Division of Maguindanao del Norte",
+   "province": "Maguindanao del Norte",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Hadja Norie Mamalinta",
+    "title": "Schools Division Superintendent"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/1400-student-journalists-vie-in-2026-regional-schools-press-conference/",
+   "head_as_of": "2026-03"
+  },
+  {
+   "ministry_slug": "ministry-of-basic-higher-and-technical-education",
+   "office": "Schools Division of Basilan",
+   "province": "Basilan",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Dr. Myra Borja Mangkabung",
+    "title": "Schools Division Superintendent"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/basilans-joint-back-to-school-initiative-advances-mbhtes-push-for-learner-retention-school-attendance/",
+   "head_as_of": "2026-06",
+   "note": "BIO called her the Lamitan City SDS in 2025-07."
+  },
+  {
+   "ministry_slug": "ministry-of-basic-higher-and-technical-education",
+   "office": "Schools Division of Lamitan City",
+   "province": "Basilan",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Noel Notario",
+    "title": "Acting Schools Division Superintendent"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/lamitan-sports-meet-selects-athletes-for-bangsamoro-national-games/",
+   "head_as_of": "2026-10"
+  },
+  {
+   "ministry_slug": "ministry-of-basic-higher-and-technical-education",
+   "office": "Schools Division of the Special Geographic Area",
+   "province": "Special Geographic Area",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Benjamin Wahab",
+    "title": "Officer-in-Charge Schools Division Superintendent"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/most-nurtures-stem-excellence-among-sga-youth-through-sci-math-olympiad/",
+   "head_as_of": "2026-08"
+  },
+  {
+   "ministry_slug": "ministry-of-basic-higher-and-technical-education",
+   "office": "Schools Division of Tawi-Tawi",
+   "province": "Tawi-Tawi",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Rajis S. Abdulwahid",
+    "title": "OIC Schools Division Superintendent"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/world-teachers-day-mbhte-honors-more-than-2000-teachers-in-tawi-tawi-celebration/",
+   "head_as_of": "2026-10"
+  }
+ ]
 }

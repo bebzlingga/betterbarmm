@@ -42,7 +42,7 @@ spent is not published by anyone, and is not here. See [Gaps](#what-is-not-here)
 | Local government | `datasets/lgu/` | 79 MB, 16 files | Provinces, towns, barangays, officials |
 | Accidents | `datasets/accidents/` | small | Accidents and shootings, from news reports; 2019 on |
 | Programs & services | `datasets/services/` | small | 35 offices' programs and Citizen's Charter services |
-| Directory | `datasets/directory/` | small | Heads, phones and emails of the 35 regional offices |
+| Directory | `datasets/directory/` | small | Heads, past heads, field offices and phones of the 35 regional offices; emergency lines by town |
 | Travel guide | `packages/travel-data/` | — | **Written**, not captured |
 | Region primer | `packages/primer-data/` | — | **Written**, not captured |
 
@@ -314,6 +314,27 @@ decoded. The elected Parliament takes office on 30 October 2026, so the Chief
 Minister and the cabinet named here are the interim government's. The page's
 local governments are not in this file: they are the 2025 winners already in
 `datasets/lgu/barmm-lgu.json`.
+
+Beside it, also read on 17 October 2026:
+
+- **`history.json`**: who headed each office before, for 34 of the 35, from
+  BARMM releases and news reports. Where no source dates a start or an end,
+  `first_seen` and `last_seen` give the months a source first and last shows
+  the person in office, and `former` marks a past head whose end is undated.
+- **`field-offices.json`**: 52 provincial and field offices of the nine
+  ministries, with the head, address and phones each ministry lists. Four
+  offices named only "Maguindanao" keep that name; their sources do not say
+  which of the two provinces.
+- **`emergency.json`**: police, fire, disaster-response, health and town-hall
+  lines for 6 provinces and 49 of the towns, each linked to the LGU page, BFP
+  or BARMM release, DTI CMCI profile or PhilHealth facility list it came from.
+  The Basilan capitol number (source unreadable) and a garbled Paglat RHU
+  number are left out.
+
+All four are admin collections under the Directory workspace, so an editor can
+correct them and set an office's `checked` date. Barangay officials on the town
+pages come from DILG's directory through `@betterbarmm/lgu-data`; their
+contacts are not copied.
 
 ---
 

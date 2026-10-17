@@ -1,6 +1,779 @@
 {
  "name": "Who headed each office of the Bangsamoro Government, and when",
  "generatedAt": "2026-10-17",
- "note": "Each tenure as an official source or a news report dated it; a year alone where the month was not stated.",
- "offices": []
+ "note": "Each tenure as an official source or a news report dated it; a year alone where the month was not stated. Where no source dates a start or an end, the month a source first or last shows the person in office is given instead.",
+ "offices": [
+  {
+   "slug": "office-of-the-chief-minister",
+   "history": [
+    {
+     "name": "Ahod \"Al Haj Murad\" Ebrahim",
+     "title": "Interim Chief Minister",
+     "from": "2019-02",
+     "to": "2025-03",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/hataman-leads-turnover-ceremony-of-armm-to-the-bta/",
+     "to_source": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-officially-takes-helm-vows-to-continue-ebrahims-moral-governance-agenda/"
+    },
+    {
+     "name": "Abdulraof A. Macacua",
+     "title": "Interim Chief Minister",
+     "from": "2025-03",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-officially-takes-helm-vows-to-continue-ebrahims-moral-governance-agenda/",
+     "note": "Took his oath before the President on 2025-03-12."
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-basic-higher-and-technical-education",
+   "history": [
+    {
+     "name": "Mohagher Iqbal",
+     "title": "Minister",
+     "from": "2019-02",
+     "to": "2026-05",
+     "source": "https://edgedavao.net/latest-news/2019/02/murad-vows-a-govt-free-of-all-the-ills/",
+     "to_source": "https://newsinfo.inquirer.net/2232422/barmm-education-minister-sacked",
+     "note": "The Chief Minister asked him on 2026-05-11 to resign by 2026-05-18; he confirmed his removal on 2026-05-22 (Inquirer; Manila Bulletin)."
+    },
+    {
+     "name": "Abdulraof A. Macacua",
+     "title": "Minister (concurrent; Chief Minister)",
+     "from": "2026-05",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-strengthens-grassroots-sports-development-through-palaro-support/",
+     "note": "BusinessWorld, 2026-05-21: https://www.bworldonline.com/the-nation/2026/05/21/751372/barmm-chief-takes-over-education-ministry/"
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-health",
+   "history": [
+    {
+     "name": "Dr. Saffrullah Dipatuan",
+     "title": "Minister",
+     "from": "2019-02",
+     "to": "2020",
+     "source": "https://edgedavao.net/latest-news/2019/02/murad-vows-a-govt-free-of-all-the-ills/",
+     "note": "BIO still calls him Health Minister on 2020-09-16; the month he left is not stated."
+    },
+    {
+     "name": "Dr. Ameril Usman",
+     "title": "OIC Minister",
+     "from": "2020",
+     "to": "2021-03",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-launches-campaign-against-measles-rubella-in-lanao-del-sur/",
+     "note": "Called OIC Health Minister by BIO on 2020-11-04; start month not stated."
+    },
+    {
+     "name": "Dr. Bashary A. Latiph",
+     "title": "Minister",
+     "from": "2021-03",
+     "to": "2022",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/moh-partners-with-iom-japan-to-boost-covid-19-response/",
+     "note": "\"Newly installed\" in BIO, 2021-03-27. Ministers were told to tender courtesy resignations on 2022-02-08."
+    },
+    {
+     "name": "Dr. Zul Qarneyn Abas",
+     "title": "OIC Minister",
+     "from": "2022",
+     "to": "2022",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/chief-minister-holds-57th-cabinet-meeting-3-new-ministers-take-oath-of-moral-governance/",
+     "note": "BIO, 2022-03-14, names him the current OIC Minister; he served until Piang was appointed."
+    },
+    {
+     "name": "Dr. Rizaldy Piang",
+     "title": "Minister",
+     "from": "2022",
+     "to": "2024-05",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/get-vaxxed-to-win-campaign-hails-performing-schools-in-barmm/",
+     "note": "Named Minister by BIO from 2022-12-09. Wikipedia, citing an MOH post that no longer loads, gives 2022-11-09."
+    },
+    {
+     "name": "Dr. Kadil \"Jojo\" Sinolinding Jr.",
+     "title": "Minister",
+     "from": "2024-05",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/new-barmm-health-chiefs-first-100-days-feature-expanded-healthcare-access/",
+     "note": "Took office 2024-05-06."
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-social-services-and-development",
+   "history": [
+    {
+     "name": "Atty. Raissa H. Jajurie",
+     "title": "Minister",
+     "from": "2019-02",
+     "to": null,
+     "source": "https://edgedavao.net/latest-news/2019/02/murad-vows-a-govt-free-of-all-the-ills/",
+     "note": "Re-appointed and sworn in on 2022-09-23 (https://bangsamoro.gov.ph/news/latest-news/chief-minister-ebrahims-swears-in-new-set-of-cabinet/)."
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-agriculture-fisheries-and-agrarian-reform",
+   "history": [
+    {
+     "name": "Mohammad S. Yacob, Ph.D.",
+     "title": "Minister",
+     "from": "2019-02",
+     "to": "2025-04",
+     "source": "https://edgedavao.net/latest-news/2019/02/murad-vows-a-govt-free-of-all-the-ills/",
+     "to_source": "https://mafar.bangsamoro.gov.ph/minister-abunawas-maslamama-takes-over-leadership-to-boost-bangsamoro-agriculture-and-fisheries"
+    },
+    {
+     "name": "Abunawas L. Maslamama",
+     "title": "Minister",
+     "from": "2025-04",
+     "to": null,
+     "source": "https://mafar.bangsamoro.gov.ph/minister-abunawas-maslamama-takes-over-leadership-to-boost-bangsamoro-agriculture-and-fisheries",
+     "note": "Turnover held 2025-04-14."
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-public-works",
+   "history": [
+    {
+     "name": "Ahod \"Al Haj Murad\" Ebrahim",
+     "title": "Minister (concurrent; Chief Minister)",
+     "from": "2019-02",
+     "to": "2019-11",
+     "source": "https://edgedavao.net/latest-news/2019/02/murad-vows-a-govt-free-of-all-the-ills/",
+     "to_source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-chief-minister-ebrahim-reshuffles-regional-cabinet/"
+    },
+    {
+     "name": "Archt. Eduard Uy Guerra",
+     "title": "Minister",
+     "from": "2019-11",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-chief-minister-ebrahim-reshuffles-regional-cabinet/",
+     "note": "The reshuffle took effect 2019-11-11."
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-the-interior-and-local-government",
+   "history": [
+    {
+     "name": "Atty. Naguib Sinarimbo",
+     "title": "Minister",
+     "from": "2019-02",
+     "to": "2023-12",
+     "source": "https://edgedavao.net/latest-news/2019/02/murad-vows-a-govt-free-of-all-the-ills/",
+     "to_source": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-vows-to-uphold-milgs-exemplary-public-service-for-empowered-lgus/"
+    },
+    {
+     "name": "Atty. Sha Elijah Dumama-Alba",
+     "title": "Minister",
+     "from": "2023-12",
+     "to": "2025-07",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-vows-to-uphold-milgs-exemplary-public-service-for-empowered-lgus/",
+     "note": "Appointed 2023-12-07."
+    },
+    {
+     "name": "Abdulraof A. Macacua",
+     "title": "Minister (concurrent; Chief Minister)",
+     "from": "2025-07",
+     "to": "2026-04",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-vows-to-uphold-milgs-exemplary-public-service-for-empowered-lgus/",
+     "note": "Turnover held 2025-07-22."
+    },
+    {
+     "name": "Jordan S. Bayam",
+     "title": "Minister",
+     "from": "2026-04",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-names-bayam-as-barmm-interior-minister/",
+     "note": "Took his oath 2026-04-06."
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-human-settlements-and-development",
+   "history": [
+    {
+     "name": "Atty. Hamid Aminoddin D. Barra",
+     "title": "Minister",
+     "from": null,
+     "to": "2026-01",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/chief-minister-ebrahims-swears-in-new-set-of-cabinet/",
+     "to_source": "https://www.inquirer.net/465125/barmm-opapru-mourn-passing-of-regions-housing-minister/",
+     "note": "Start not confirmed. He was not among the 10 ministers named on 2019-02-26. BIO lists him as re-appointed on 2022-09-23. Wikipedia gives 2019-02-26. He died in office (Inquirer, 2026-01-13)."
+    },
+    {
+     "name": "Aldin H. Asiri",
+     "title": "Deputy Minister and Officer-in-Charge",
+     "from": "2026",
+     "to": "2026",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/all-out-war-displaced-families-in-maguindanao-del-norte-to-get-100-houses-from-barmm/",
+     "note": "Called OIC by BIO from 2026-02-13 to 2026-04-16."
+    },
+    {
+     "name": "Zaide C. Ali",
+     "title": "Minister",
+     "from": "2026",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/new-150-permanent-housing-units-to-rise-for-displaced-marawi-families/",
+     "note": "BIO, 2026-05-25, calls him \"newly appointed\"; the date of appointment is not stated."
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-environment-natural-resources-and-energy",
+   "history": [
+    {
+     "name": "Abdulraof A. Macacua",
+     "title": "Minister",
+     "from": "2019-02",
+     "to": "2022",
+     "source": "https://edgedavao.net/latest-news/2019/02/murad-vows-a-govt-free-of-all-the-ills/",
+     "note": "Became Executive Secretary on 2019-11-11 but kept oversight of the ministry (https://bangsamoro.gov.ph/news/latest-news/bangsamoro-chief-minister-ebrahim-reshuffles-regional-cabinet/)."
+    },
+    {
+     "name": "Akmad Brahim",
+     "title": "Minister",
+     "from": "2022",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/chief-minister-holds-57th-cabinet-meeting-3-new-ministers-take-oath-of-moral-governance/",
+     "note": "Took the oath on 2022-03-14, having assumed office \"weeks\" earlier."
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-trade-investments-and-tourism",
+   "history": [
+    {
+     "name": "Abuamri A. Taddik",
+     "title": "Minister",
+     "from": "2019",
+     "to": "2025-08",
+     "source": "https://en.wikipedia.org/wiki/Murad_Ebrahim_cabinet",
+     "note": "No official or news source found for the start; Wikipedia gives 2019-06-10. MTIT site bio: https://mtit.bangsamoro.gov.ph/minister/ (2023).",
+     "to_source": "https://bangsamoro.gov.ph/news/latest-news/new-mtit-minister-vows-sustainable-livelihood-devt-for-bangsamoro-families/"
+    },
+    {
+     "name": "Farserina Mohammad",
+     "title": "Minister",
+     "from": "2025-08",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/new-mtit-minister-vows-sustainable-livelihood-devt-for-bangsamoro-families/",
+     "note": "Took her oath 2025-08-04."
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-transportation-and-communications",
+   "history": [
+    {
+     "name": "Dickson Hermoso",
+     "title": "Minister",
+     "from": "2019-07",
+     "to": "2022-09",
+     "source": "https://newsinfo.inquirer.net/1142237/ex-military-exec-joins-bangsamoro-cabinet",
+     "note": "Appointment effective 2019-07-15."
+    },
+    {
+     "name": "Atty. Paisalin Tago, CPA",
+     "title": "Minister",
+     "from": "2022-09",
+     "to": "2025",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/chief-minister-ebrahims-swears-in-new-set-of-cabinet/",
+     "note": "Named Minister by BIO as late as 2025-07-02. MindaNews says he was named president of the MSU System in June 2025."
+    },
+    {
+     "name": "Termizie G. Masahud",
+     "title": "Minister",
+     "from": "2025-08",
+     "to": null,
+     "source": "https://mindanews.com/top-stories/2025/08/sama-leader-makes-history-as-first-from-tawi-tawi-to-be-appointed-in-barmm-cabinet/",
+     "note": "Wikipedia gives 2025-08-08."
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-science-and-technology",
+   "history": [
+    {
+     "name": "Engr. Aida M. Silongan",
+     "title": "Minister",
+     "from": null,
+     "to": "2025",
+     "source": "https://most.bangsamoro.gov.ph/jehan-amella-usop-officially-assumes-role-as-most-acting-minister/",
+     "note": "Start not confirmed. She was not among the 10 ministers named on 2019-02-26. Wikipedia gives 2019-02-26. Re-appointed 2022-09-23 (https://bangsamoro.gov.ph/news/latest-news/chief-minister-ebrahims-swears-in-new-set-of-cabinet/)."
+    },
+    {
+     "name": "Jehan Amella Usop",
+     "title": "Acting Minister (Deputy Minister)",
+     "from": "2025-05",
+     "to": "2025-08",
+     "source": "https://most.bangsamoro.gov.ph/jehan-amella-usop-officially-assumes-role-as-most-acting-minister/",
+     "note": "Turnover held 2025-05-27."
+    },
+    {
+     "name": "Baileng S. Mantawil",
+     "title": "Minister",
+     "from": "2025-08",
+     "to": null,
+     "source": "https://most.bangsamoro.gov.ph/most-welcomes-mp-baileng-s-mantawil-as-new-minister/",
+     "note": "Turnover held 2025-08-18."
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-finance-and-budget-and-management",
+   "history": [
+    {
+     "name": "Archt. Eduard Guerra",
+     "title": "Minister",
+     "from": "2019-02",
+     "to": "2019-11",
+     "source": "https://edgedavao.net/latest-news/2019/02/murad-vows-a-govt-free-of-all-the-ills/",
+     "to_source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-chief-minister-ebrahim-reshuffles-regional-cabinet/"
+    },
+    {
+     "name": "Ahod \"Al Haj Murad\" Ebrahim",
+     "title": "Under the direct supervision of the Chief Minister",
+     "from": "2019-11",
+     "to": "2022",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-chief-minister-ebrahim-reshuffles-regional-cabinet/",
+     "note": "BIO says the ministry was placed under the Chief Minister's direct supervision. Wikipedia lists him as minister."
+    },
+    {
+     "name": "Atty. Ubaida Pacasem",
+     "title": "Minister",
+     "from": "2022",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/chief-minister-holds-57th-cabinet-meeting-3-new-ministers-take-oath-of-moral-governance/",
+     "note": "Took the oath on 2022-03-14, having assumed office \"weeks\" earlier. Previously Deputy Minister."
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-labor-and-employment",
+   "history": [
+    {
+     "name": "Romeo Sema",
+     "title": "Minister",
+     "from": "2019-06",
+     "to": "2022",
+     "source": "https://newsinfo.inquirer.net/1126797/ebrahim-names-mnlfs-sema-as-barmm-labor-minister"
+    },
+    {
+     "name": "Muslimin G. Sema",
+     "title": "Minister",
+     "from": "2022",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/chief-minister-holds-57th-cabinet-meeting-3-new-ministers-take-oath-of-moral-governance/",
+     "note": "Took the oath on 2022-03-14, having assumed office \"weeks\" earlier. Wikipedia gives 2022-03-08."
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-public-order-and-safety",
+   "history": [
+    {
+     "name": "Hussein P. Muñoz",
+     "title": "Minister",
+     "from": "2019-02",
+     "to": null,
+     "source": "https://edgedavao.net/latest-news/2019/02/murad-vows-a-govt-free-of-all-the-ills/",
+     "note": "Re-appointed 2022-09-23 (https://bangsamoro.gov.ph/news/latest-news/chief-minister-ebrahims-swears-in-new-set-of-cabinet/)."
+    }
+   ]
+  },
+  {
+   "slug": "ministry-of-indigenous-peoples-affairs",
+   "history": [
+    {
+     "name": "Timuay Melanio Ulama",
+     "title": "Minister",
+     "from": "2019-02",
+     "to": "2025-07",
+     "source": "https://edgedavao.net/latest-news/2019/02/murad-vows-a-govt-free-of-all-the-ills/",
+     "to_source": "https://mindanews.com/top-stories/2025/08/barmm-has-a-new-head-of-ministry-of-indigenous-peoples-affairs"
+    },
+    {
+     "name": "Guiamal B. Abdulrahman",
+     "title": "Minister",
+     "from": "2025-08",
+     "to": null,
+     "source": "https://mindanews.com/top-stories/2025/08/barmm-has-a-new-head-of-ministry-of-indigenous-peoples-affairs",
+     "note": "Wikipedia gives 2025-08-01."
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-planning-and-development-authority",
+   "history": [
+    {
+     "name": "Engr. Mohajirin T. Ali",
+     "title": "Director General",
+     "from": "2019",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-prepares-action-plan-for-el-nino/",
+     "note": "In 2019-04 he was Acting Executive Director of RPDO-BARMM, the precursor office. Called BPDA Director General by 2019-10. Re-appointed 2022-09-23 (https://bangsamoro.gov.ph/news/latest-news/chief-minister-ebrahims-swears-in-new-set-of-cabinet/)."
+    }
+   ]
+  },
+  {
+   "slug": "special-geographic-area-development-authority",
+   "history": [
+    {
+     "name": "Mohammad Kelie Antao",
+     "title": "Administrator (SGA Development Coordinating Office)",
+     "from": "2020-06",
+     "to": "2022",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-creates-office-to-administer-63-barangays-in-north-cotabato/"
+    },
+    {
+     "name": "Butch Malang",
+     "title": "Administrator",
+     "from": "2022-09",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/chief-minister-ebrahims-swears-in-new-set-of-cabinet/"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-pilgrimage-authority",
+   "history": [
+    {
+     "name": "Said Salendab",
+     "title": "Executive Director",
+     "from": null,
+     "to": "2026-05",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-pilgrimage-authority-employees-undergo-excellent-client-service-training/",
+     "first_seen": "2022-09",
+     "note": "Start not found. He headed the Bangsamoro Treasury Office until the BPA was set up, then became its Executive Director. Sworn in as Senior Minister on 2026-05-18 (https://bangsamoro.gov.ph/news/latest-news/cm-macacua-installs-new-barmm-execs-pushes-accountability-agenda/)."
+    },
+    {
+     "name": "Sheikh Ibrahim Ali",
+     "title": "Executive Director",
+     "from": "2026-05",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-installs-new-barmm-execs-pushes-accountability-agenda/",
+     "note": "Sworn in 2026-05-18."
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-darul-ifta",
+   "history": [
+    {
+     "name": "Sheikh Abuhuraira A. Udasan",
+     "title": "Bangsamoro Grand Mufti",
+     "from": null,
+     "to": "2023-07",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/in-memoriam-grand-mufti-abuhuraira-udasan-a-beacon-of-faith-guidance-for-bangsamoro-community/",
+     "note": "\"Appointed ... following the establishment of BARMM\"; no date given. He died in office; a BIO article of 2024-03-07 gives his tenure as Mufti (counting his MILF Darul-Ifta years) as 2015–July 2023."
+    },
+    {
+     "name": "Sheikh Abdulrauf Guialani",
+     "title": "Bangsamoro Mufti",
+     "from": "2024",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoros-new-mufti-meet-sheikh-abdulrauf-guialani-a-man-of-strong-faith-integrity-humility/",
+     "note": "Called \"new Grand Mufti\" on 2024-03-07; month of appointment not stated. No source found for who, if anyone, acted as head from July 2023 to 2024."
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-human-rights-commission",
+   "history": [
+    {
+     "name": "Atty. Abdul Rashid Kalim",
+     "title": "Chairperson",
+     "from": null,
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/bhrc-celebrates-73rd-international-human-rights-day/",
+     "first_seen": "2021-12",
+     "note": "The BHRC was created in 2020 by Bangsamoro Autonomy Act No. 4. No source found for when he was appointed or whether anyone chaired it before him."
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-commission-for-the-preservation-of-cultural-heritage",
+   "history": [
+    {
+     "name": "Dr. Salem Y. Lingasa",
+     "title": "Chairperson (and Commissioner for Maguindanao)",
+     "from": "2021-05",
+     "to": "2026-05",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/bcpch-installs-commissioners-for-barmm-provinces/",
+     "note": "Installed 2021-05-26. Before then, BIO (2021-03) names Ardan Sali as BCPCH executive director."
+    },
+    {
+     "name": "Robert M. Alonto",
+     "title": "Chairperson",
+     "from": "2026-05",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/new-bangsamoro-heritage-chief-pushes-reforms-community-based-cultural-programs/",
+     "note": "Turnover held 2026-05-06."
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-women-commission",
+   "history": [
+    {
+     "name": "Hadja Bainon G. Karon",
+     "title": "Chairperson",
+     "from": null,
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/bwc-strengthens-womens-participation-thru-women-summit/",
+     "first_seen": "2021-03",
+     "note": "Start not stated. She gave her 3rd State of the Bangsamoro Women Address in 2021-11 and her 7th in 2025-11."
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-youth-commission",
+   "history": [
+    {
+     "name": "Dr. Marjanie Mimbantas Macasalong",
+     "title": "Chairperson",
+     "from": null,
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-youth-commission-to-commemorate-international-youth-day/",
+     "first_seen": "2020-08",
+     "last_seen": "2024-08",
+     "former": true,
+     "note": "In 2019-12 he was Executive Director of the Office on Bangsamoro Youth Affairs. The end of his term was not found."
+    },
+    {
+     "name": "Nasserudin D. Dunding, MA",
+     "title": "Chairperson",
+     "from": null,
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/mainland-youth-leaders-join-forces-to-shape-bangsamoros-future/",
+     "first_seen": "2025-04",
+     "note": "Earlier a BYC commissioner. Date of appointment as chair not found."
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-sports-commission",
+   "history": [
+    {
+     "name": "Nu-man Caludtiag",
+     "title": "Chairperson",
+     "from": null,
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/bsc-assures-support-to-young-chess-prodigy-from-marawi/",
+     "first_seen": "2020-12",
+     "last_seen": "2022-10",
+     "former": true
+    },
+    {
+     "name": "Dr. Arsalan A. Diamaoden",
+     "title": "Chairperson",
+     "from": null,
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/sports-fest-officially-kicks-off/",
+     "first_seen": "2023-01"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-attorney-general-s-office",
+   "history": [
+    {
+     "name": "Atty. Sha Elijah Dumama-Alba",
+     "title": "Attorney General",
+     "from": "2019",
+     "to": "2023-12",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/national-womens-month-meet-the-women-members-of-the-bangsamoro-cabinet/",
+     "note": "Became MILG Minister on 2023-12-07."
+    },
+    {
+     "name": "Atty. Anna Tarhata Basman",
+     "title": "Attorney General",
+     "from": null,
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/national-barmm-govts-underscore-commitments-anew-during-18th-igrb-meeting/",
+     "first_seen": "2024-05",
+     "last_seen": "2024-05",
+     "former": true,
+     "note": "Dates of tenure not found."
+    },
+    {
+     "name": "Atty. Mohammad Al-Amin Julkipli",
+     "title": "Officer-in-Charge",
+     "from": null,
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-govt-files-twin-motions-before-sc-to-re-include-sulu-province-to-barmm/",
+     "first_seen": "2024-10",
+     "former": true
+    },
+    {
+     "name": "Atty. Bantuas M. Lucman",
+     "title": "Attorney General",
+     "from": "2025",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-govts-legal-officers-strengthen-mandates-as-regions-legal-stewards/",
+     "note": "A Philippine Embassy (Kuala Lumpur) release called him \"newly appointed\" in late April 2025: https://kualalumpurpe.dfa.gov.ph/newsroom/press-releases/812-bangsamoro-attorney-general-s-office-delegation-visits-embassy (seen in search results only; the page returned 403 when fetched)."
+    }
+   ]
+  },
+  {
+   "slug": "cooperatives-and-social-enterprise-authority",
+   "history": [
+    {
+     "name": "Samcia U. Ibrahim, MPA",
+     "title": "Executive Director",
+     "from": null,
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/cooperative-month-csea-extends-technical-assistance-to-registered-coops/",
+     "first_seen": "2022-10",
+     "note": "Reappointed 2025-04 (https://csea.bangsamoro.gov.ph/reappointment-of-executive-director-samcia-ulanen-ibrahim-mpa/). No predecessor found."
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-information-office",
+   "history": [
+    {
+     "name": "Dr. Norodin Salam",
+     "title": "Executive Director, Bureau of Public Information",
+     "from": null,
+     "to": "2020-04",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-leadership-designates-alonto-as-new-info-chief/",
+     "note": "The Bureau of Public Information preceded the BIO."
+    },
+    {
+     "name": "Ameen Andrew L. Alonto",
+     "title": "OIC Executive Director, then Executive Director",
+     "from": "2020-04",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-leadership-designates-alonto-as-new-info-chief/",
+     "note": "Designated effective 2020-04-29."
+    }
+   ]
+  },
+  {
+   "slug": "development-academy-of-the-bangsamoro",
+   "history": [
+    {
+     "name": "Hisham S. Nando",
+     "title": "Officer-in-Charge",
+     "from": null,
+     "to": "2020",
+     "source": "https://dab.bangsamoro.gov.ph/dab-is-under-new-leadership-3/"
+    },
+    {
+     "name": "Dr. Norodin D. Salam",
+     "title": "President",
+     "from": "2020",
+     "to": null,
+     "source": "https://dab.bangsamoro.gov.ph/dab-is-under-new-leadership-3/",
+     "last_seen": "2020-06",
+     "former": true,
+     "note": "Post of 2020-06-09. End of term not found."
+    },
+    {
+     "name": "Dr. Nasrudin Yusof",
+     "title": "Executive Director",
+     "from": null,
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-program-trains-more-former-milf-combatants-for-peace-community-leadership/",
+     "first_seen": "2025-12"
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-information-and-communications-technology-office",
+   "history": [
+    {
+     "name": "Jonathan M. Mantikayan, Ph.D.IT",
+     "title": "Executive Director II",
+     "from": null,
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/bicto-consults-stakeholders-in-drafting-of-bangsamoro-e-government-master-plan/",
+     "first_seen": "2021-09",
+     "note": "No predecessor found."
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-board-of-investments",
+   "history": [
+    {
+     "name": "Atty. Ishak Mastura",
+     "title": "Chairman (Regional BBOI)",
+     "from": null,
+     "to": "2022",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/businessmen-to-invest-p200-m-to-revive-banana-industry-in-maguindanao/",
+     "first_seen": "2021-09"
+    },
+    {
+     "name": "Mohamad Omar Pasigan",
+     "title": "Chairperson",
+     "from": "2022",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/p76-m-investments-in-barmm-to-improve-tawi-tawis-power-electricity/",
+     "note": "Called \"newly appointed\" by BIO on 2022-12-13."
+    }
+   ]
+  },
+  {
+   "slug": "office-for-settler-communities",
+   "history": [
+    {
+     "name": "Dr. Susana Salvador-Anayatin",
+     "title": "Executive Director",
+     "from": null,
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-improves-school-access-to-clean-water-sanitation-facilities-in-maguindanao/",
+     "first_seen": "2025-06",
+     "note": "No start date or predecessor found."
+    }
+   ]
+  },
+  {
+   "slug": "bangsamoro-science-high-school",
+   "history": [
+    {
+     "name": "Engr. Abdulrakman Asim",
+     "title": "Interim Campus Director",
+     "from": null,
+     "to": null,
+     "source": "https://most.bangsamoro.gov.ph/most-barmm-holds-4th-bshs-board-of-trustees-meeting/",
+     "first_seen": "2024-09",
+     "note": "No history found; only the current head is known, from the input."
+    }
+   ]
+  },
+  {
+   "slug": "office-of-the-wali-of-bangsamoro",
+   "history": [
+    {
+     "name": "Sheikh Khalipha Usman Nando",
+     "title": "Wali",
+     "from": "2019-03",
+     "to": "2023-02",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-honors-life-and-legacy-of-bangsamoro-wali-sheikh-khalipha-nando/",
+     "note": "Appointed by the BTA Parliament on 2019-03-29. Died in office in 2023-02."
+    },
+    {
+     "name": "Omarkhalid A. Ampatuan",
+     "title": "Officer-in-Charge, Office of the Wali",
+     "from": "2023-03",
+     "to": "2024-05",
+     "source": "https://mindanews.com/top-stories/2024/05/barmm-has-new-wali/",
+     "note": "The Office of the Wali's own posts of 2023-07 and 2023-09 call him OIC."
+    },
+    {
+     "name": "Sheikh Muslim Guiamaden",
+     "title": "Wali",
+     "from": "2024-05",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/new-bangsamoro-wali-vows-to-support-barmm-govt-in-developing-priority-legislation/",
+     "note": "Endorsed by the Parliament on 2024-05-13."
+    }
+   ]
+  }
+ ]
 }
