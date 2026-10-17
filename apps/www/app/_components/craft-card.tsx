@@ -10,7 +10,7 @@ export function CraftCard({ c, replace = false, plain = false }: { c: Craft; rep
 	const img = c.images[0]
 	return (
 		<div
-			className={`bb-frame group relative ${plain ? '' : 'overflow-hidden rounded-[6px] bg-white shadow-[0_12px_30px_-18px_rgba(60,30,15,0.45)] transition hover:shadow-[0_18px_40px_-16px_rgba(60,30,15,0.55)]'}`}
+			className={`bb-frame group relative ${plain ? '' : 'overflow-hidden rounded-[6px] bg-white'}`}
 		>
 			<Link href={`/crafts/${c.slug}`} replace={replace} className='block'>
 				<span className={`block aspect-[4/3] overflow-hidden bg-[#e9ddd0] ${plain ? 'rounded-[6px]' : ''}`}>

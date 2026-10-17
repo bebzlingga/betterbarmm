@@ -40,7 +40,7 @@ export function CraftsCatalogue() {
 						{cover.map((c, i) => (
 							<span
 								key={c!.slug}
-								className={`bb-frame absolute w-56 overflow-hidden rounded-[6px] shadow-[0_30px_60px_-20px_rgba(20,8,3,0.7)] ${['top-0 left-0 h-72 -rotate-3', 'top-10 right-0 h-64 rotate-2', 'bottom-0 left-24 h-52 rotate-1'][i]}`}
+								className={`bb-frame absolute w-56 overflow-hidden rounded-[6px] ${['top-0 left-0 h-72 -rotate-3', 'top-10 right-0 h-64 rotate-2', 'bottom-0 left-24 h-52 rotate-1'][i]}`}
 							>
 								{/* eslint-disable-next-line @next/next/no-img-element */}
 								<img src={commonsThumb(c!.images[0]!.url, 500)} alt='' className='size-full object-cover' />
@@ -57,7 +57,7 @@ export function CraftsCatalogue() {
 						<h2 id={`h-${g}`} className={`${serif} text-[28px] font-bold`}>
 							{GROUP[g]}
 						</h2>
-						<ul className='mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
+						<ul className='mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4'>
 							{list.map((c) => (
 								<li key={c.slug}>
 									<CraftCard c={c} />
@@ -75,7 +75,7 @@ export function CraftsCatalogue() {
 						<p className='mt-2 max-w-2xl text-[14.5px] leading-[1.6] text-[#5a3d2e]'>The festivals where these crafts are shown, worn and sold.</p>
 						<ul className='mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3'>
 							{festivals.map((f) => (
-								<li key={f.name} className='rounded-[6px] bg-white p-5 shadow-[0_12px_30px_-20px_rgba(60,30,15,0.45)]'>
+								<li key={f.name} className='rounded-[6px] bg-white p-5'>
 									<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[#9a6a4f]'>{f.month}</p>
 									<p className={`${serif} mt-1 text-[19px] font-bold`}>{f.name}</p>
 									<p className='mt-0.5 flex items-center gap-1 text-[13px] text-[#8a6d5c]'>
