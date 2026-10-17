@@ -115,7 +115,7 @@ export function CraftsCatalogue() {
 				</div>
 			</section>
 
-			<div className='mx-auto max-w-[84rem] px-4 pt-14 pb-10 sm:px-6 lg:pt-20 lg:pb-12'>
+			<div className='mx-auto max-w-[84rem] px-4 pt-14 pb-20 sm:px-6 lg:pt-20 lg:pb-28'>
 				{groups.map(({ g, list }) => (
 					<section key={g} id={g} aria-labelledby={`h-${g}`} className='mb-16 scroll-mt-24 last:mb-0'>
 						<h2 id={`h-${g}`} className={`${serif} text-[28px] font-bold`}>
