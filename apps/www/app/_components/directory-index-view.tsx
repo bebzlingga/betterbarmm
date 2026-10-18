@@ -10,7 +10,8 @@ import { barangayRows, directoryMeta, directoryOffices, hotlines, localGovernmen
 
 
 const GROUPS = [
-	{ kinds: ['office', 'ministry'], title: 'The Chief Minister’s office and the ministries' },
+	// The ministries lead under the section's own heading, so they take no label of their own.
+	{ kinds: ['office', 'ministry'], title: null },
 	{ kinds: ['attached'], title: 'Attached offices, authorities and commissions' },
 ] as const
 
@@ -87,10 +88,12 @@ export function DirectoryIndex() {
 						{GROUPS.map((g) => {
 							const list = directoryOffices.filter((o) => (g.kinds as readonly string[]).includes(o.kind))
 							return (
-								<div key={g.title} className='mt-8'>
-									<h3 className={`${eyebrow} text-[var(--ink-3)]`}>
-										{g.title} <span className='text-[var(--ink-mute)]'>· {list.length}</span>
-									</h3>
+								<div key={g.kinds[0]} className={g.title ? 'mt-12' : 'mt-8'}>
+									{g.title ? (
+										<h3 className={`${eyebrow} text-[var(--ink-3)]`}>
+											{g.title} <span className='text-[var(--ink-mute)]'>· {list.length}</span>
+										</h3>
+									) : null}
 									{/* A list on a phone, cards from a tablet up. */}
 									<ul className='mt-3 grid border-t border-[var(--rule)] sm:mt-4 sm:grid-cols-2 sm:gap-4 sm:border-t-0 lg:grid-cols-3 xl:grid-cols-4'>
 										{list.map((o) => (
