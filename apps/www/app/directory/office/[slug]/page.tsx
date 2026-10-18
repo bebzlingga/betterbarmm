@@ -153,7 +153,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 						<ul className='mt-3 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)] text-[14px]'>
 							{field.map((f) => (
 								<li key={f.office} className='grid gap-x-4 gap-y-1 py-3 sm:grid-cols-[9rem_minmax(0,1fr)_auto]'>
-									<span className='font-mono text-[10.5px] font-semibold uppercase leading-6 tracking-[0.14em] text-[var(--accent)]'>{f.province}</span>
+									<span className='pt-1 font-mono text-[10.5px] font-semibold uppercase leading-[1.35] tracking-[0.14em] text-[var(--accent)]'>{f.province}</span>
 									<div className='min-w-0'>
 										<p className='font-semibold leading-snug'>{f.office}</p>
 										{f.head ? (
