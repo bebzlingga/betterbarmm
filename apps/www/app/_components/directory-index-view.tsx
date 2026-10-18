@@ -99,8 +99,8 @@ export function DirectoryIndex() {
 													<OfficeLogo slug={o.slug} acronym={o.acronym} />
 												</span>
 												<div className='min-w-0 flex-1 sm:p-4'>
-													<p>
-														<Link scroll={false} href={`/directory/office/${o.slug}`} className='text-[15.5px] font-bold leading-snug hover:text-[var(--accent)]'>
+													<p className='mb-1.5 text-[15.5px] leading-[1.2]'>
+														<Link scroll={false} href={`/directory/office/${o.slug}`} className='font-bold hover:text-[var(--accent)]'>
 															{o.name}
 														</Link>
 													</p>
