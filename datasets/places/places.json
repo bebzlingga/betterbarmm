@@ -2737,7 +2737,22 @@
     "https://en.wikipedia.org/wiki/List_of_mosques_in_the_Philippines",
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/masjid-taviran__1.jpg",
+     "page": "https://www.flickr.com/photos/199747714@N05/53420020196/",
+     "author": "Marwan Khan",
+     "license": "CC BY 2.0",
+     "license_url": "https://creativecommons.org/licenses/by/2.0/",
+     "width": 1600,
+     "height": 1066,
+     "caption": "The white Taviran mosque with its tiered roof, on a grassy rise among palms.",
+     "tone": [
+      68,
+      0.29
+     ]
+    }
+   ],
    "from_guide": false,
    "do": [
     {
@@ -2777,7 +2792,22 @@
     "https://en.wikipedia.org/wiki/Maguindanao_del_Norte",
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/bongo-island__1.jpg",
+     "page": "https://menre.bangsamoro.gov.ph/?p=3647",
+     "author": "Ministry of Environment, Natural Resources and Energy (BARMM)",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1066,
+     "caption": "An aerial view of a shoreline village on Bongo Island, backed by coconut groves and a wide tidal flat.",
+     "tone": [
+      82,
+      0.53
+     ]
+    }
+   ],
    "from_guide": false,
    "do": [
     {
@@ -3027,7 +3057,22 @@
     "https://en.wikipedia.org/wiki/Mindanao_River",
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/maliga-walay__1.jpg",
+     "page": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
+     "author": "Provincial Government of Maguindanao del Sur",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 338,
+     "height": 228,
+     "caption": "The red two-storey Maliga Walay, now the municipal hall of Datu Piang.",
+     "tone": [
+      355,
+      0.53
+     ]
+    }
+   ],
    "from_guide": false,
    "do": [
     {
@@ -3066,7 +3111,22 @@
     "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia",
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/kuhan-falls__1.jpg",
+     "page": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
+     "author": "Provincial Government of Maguindanao del Sur",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 346,
+     "height": 334,
+     "caption": "Kuhan Falls pours down a forested cliff into a pool in South Upi.",
+     "tone": [
+      68,
+      0.51
+     ]
+    }
+   ],
    "from_guide": false,
    "do": [
     {
@@ -3773,7 +3833,50 @@
      "source": "https://bangsamoro.gov.ph/news/feature-story/keeping-barter-trade-alive-the-adlaw-pagtabuh-tabuh-of-tawi-tawi/"
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/adlaw-pagtabuh-tabuh__1.jpg",
+     "page": "https://bangsamoro.gov.ph/news/feature-story/keeping-barter-trade-alive-the-adlaw-pagtabuh-tabuh-of-tawi-tawi/",
+     "author": "Laila Aripin / Bangsamoro Information Office",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1200,
+     "height": 1600,
+     "caption": "Seafood, seaweed and shellfish laid out on the ground at the Adlaw Pagtabuh-tabuh market.",
+     "tone": [
+      82,
+      0.63
+     ]
+    },
+    {
+     "url": "/places/adlaw-pagtabuh-tabuh__2.jpg",
+     "page": "https://bangsamoro.gov.ph/news/feature-story/keeping-barter-trade-alive-the-adlaw-pagtabuh-tabuh-of-tawi-tawi/",
+     "author": "Laila Aripin / Bangsamoro Information Office",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1200,
+     "height": 1600,
+     "caption": "Bananas and other produce being unloaded from boats on the shore at Panglima Sugala.",
+     "tone": [
+      201,
+      0.61
+     ]
+    },
+    {
+     "url": "/places/adlaw-pagtabuh-tabuh__3.jpg",
+     "page": "https://bangsamoro.gov.ph/news/feature-story/keeping-barter-trade-alive-the-adlaw-pagtabuh-tabuh-of-tawi-tawi/",
+     "author": "Laila Aripin / Bangsamoro Information Office",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1200,
+     "caption": "Fresh fish and rays set out on coolers and mats for trade at the weekly market.",
+     "tone": [
+      203,
+      0.51
+     ]
+    }
+   ],
    "slug": "adlaw-pagtabuh-tabuh",
    "name": "Adlaw Pagtabuh-tabuh",
    "kind": "market",
@@ -5074,7 +5177,22 @@
    "getting_there": null,
    "best_time": null,
    "do": [],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/salipada-pendatun-tomb__1.jpg",
+     "page": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
+     "author": "Provincial Government of Maguindanao del Sur",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 712,
+     "height": 519,
+     "caption": "The National Historical Commission marker for Salipada K. Pendatun at his tomb.",
+     "tone": [
+      36,
+      0.27
+     ]
+    }
+   ],
    "slug": "salipada-pendatun-tomb",
    "name": "Tomb of Salipada K. Pendatun",
    "kind": "heritage",
@@ -5110,7 +5228,47 @@
      "source": "https://bangsamoro.gov.ph/news/feature-story/masjidil-haron-rashid-a-place-of-worship-a-refuge-for-bangsamoro-mujahideen/"
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/masjidil-haron-rashid__1.jpg",
+     "page": "https://bangsamoro.gov.ph/news/feature-story/masjidil-haron-rashid-a-place-of-worship-a-refuge-for-bangsamoro-mujahideen/",
+     "author": "Comenei Ali / Bangsamoro Information Office",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1066,
+     "caption": "The white, green-domed front of Masjidil Haron Rashid with calligraphy along its arches.",
+     "tone": [
+      214,
+      0.61
+     ]
+    },
+    {
+     "url": "/places/masjidil-haron-rashid__2.jpg",
+     "page": "https://bangsamoro.gov.ph/news/feature-story/masjidil-haron-rashid-a-place-of-worship-a-refuge-for-bangsamoro-mujahideen/",
+     "author": "Comenei Ali / Bangsamoro Information Office",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1066,
+     "caption": "The prayer hall of Masjidil Haron Rashid, its walls painted with Qur'anic calligraphy.",
+     "tone": null
+    },
+    {
+     "url": "/places/masjidil-haron-rashid__3.jpg",
+     "page": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
+     "author": "Provincial Government of Maguindanao del Sur",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 716,
+     "height": 462,
+     "caption": "Masjidil Haron Rashid from the highway, with its tall white minaret and green dome.",
+     "tone": [
+      215,
+      0.49
+     ]
+    }
+   ],
    "slug": "masjidil-haron-rashid",
    "name": "Masjidil Haron Rashid",
    "kind": "mosque",
@@ -5142,7 +5300,22 @@
    "getting_there": null,
    "best_time": null,
    "do": [],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/camp-abubakar-hashim-residence__1.jpg",
+     "page": "https://bangsamoro.gov.ph/news/latest-news/remembering-all-out-war-in-mindanao-24-years-ago/",
+     "author": "Morsid Kadir / Bangsamoro Information Office",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1060,
+     "caption": "A faded sign reading Residence of Salamat Hashim on the ruined house at Camp Abubakar.",
+     "tone": [
+      81,
+      0.32
+     ]
+    }
+   ],
    "slug": "camp-abubakar-hashim-residence",
    "name": "Salamat Hashim residence, Camp Abubakar",
    "kind": "memory",
@@ -5699,7 +5872,22 @@
     "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia",
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/kilantan-spring__1.jpg",
+     "page": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
+     "author": "Provincial Government of Maguindanao del Sur",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 720,
+     "height": 433,
+     "caption": "The spring-fed swimming pool at Kilantan Spring, ringed by trees and cottages.",
+     "tone": [
+      170,
+      0.24
+     ]
+    }
+   ],
    "do": [
     {
      "title": "Cool off in the spring",
@@ -5779,7 +5967,22 @@
     "https://www.nomadicexperiences.com/2026/01/a-glimpse-of-mindanaoan-culture-in.html",
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/sa-wa-river__1.jpg",
+     "page": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
+     "author": "Provincial Government of Maguindanao del Sur",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 344,
+     "height": 229,
+     "caption": "A small cascade drops into the clear green pool of the Sa-Wa River.",
+     "tone": [
+      156,
+      0.31
+     ]
+    }
+   ],
    "do": [
     {
      "title": "Take a dip in the river pool",
@@ -5857,7 +6060,36 @@
     "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia",
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/tamburi-falls__1.jpg",
+     "page": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
+     "author": "Provincial Government of Maguindanao del Sur",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1080,
+     "height": 507,
+     "caption": "Water spills over stepped layers of rock at Tamburi Falls.",
+     "tone": [
+      36,
+      0.39
+     ]
+    },
+    {
+     "url": "/places/tamburi-falls__2.jpg",
+     "page": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
+     "author": "Provincial Government of Maguindanao del Sur",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1080,
+     "height": 508,
+     "caption": "Tamburi Falls seen from the boulders downstream, under a canopy of trees.",
+     "tone": [
+      40,
+      0.27
+     ]
+    }
+   ],
    "do": [
     {
      "title": "Swim in the pool below the falls",
@@ -5897,7 +6129,22 @@
     "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/mamasapano-miracle-mosque__1.jpg",
+     "page": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
+     "author": "Provincial Government of Maguindanao del Sur",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1131,
+     "caption": "The arcaded Miracle Mosque of Mamasapano with its green dome and slim minaret.",
+     "tone": [
+      11,
+      0.86
+     ]
+    }
+   ],
    "do": [],
    "eat": []
   },
@@ -5933,7 +6180,36 @@
     "https://en.wikipedia.org/wiki/Muslim_Independence_Movement",
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/tomb-of-datu-udtog-matalam__1.jpg",
+     "page": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
+     "author": "Provincial Government of Maguindanao del Sur",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1430,
+     "height": 1073,
+     "caption": "The fenced tomb of Datu Udtog Matalam with the old mosque's green minaret beside it.",
+     "tone": [
+      217,
+      0.82
+     ]
+    },
+    {
+     "url": "/places/tomb-of-datu-udtog-matalam__2.jpg",
+     "page": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
+     "author": "Provincial Government of Maguindanao del Sur",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1430,
+     "height": 899,
+     "caption": "The weathered old mosque next to the tomb, with its pointed tiered roof.",
+     "tone": [
+      215,
+      0.87
+     ]
+    }
+   ],
    "do": [
     {
      "title": "See the bats at the old NAWASA tank",
@@ -6106,7 +6382,50 @@
     "https://www.nomadicexperiences.com/2026/01/a-glimpse-of-mindanaoan-culture-in.html",
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/masjid-al-nasser-abpi__1.jpg",
+     "page": "https://bangsamoro.gov.ph/news/latest-news/masjid-al-nasser-abpi-a-gift-to-the-community-a-house-in-paradise/",
+     "author": "Comenei Ali / Bangsamoro Information Office",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1066,
+     "caption": "The white facade of Masjid Al-Nasser Abpi with its 2 minarets and row of domes.",
+     "tone": [
+      220,
+      0.43
+     ]
+    },
+    {
+     "url": "/places/masjid-al-nasser-abpi__2.jpg",
+     "page": "https://bangsamoro.gov.ph/news/latest-news/masjid-al-nasser-abpi-a-gift-to-the-community-a-house-in-paradise/",
+     "author": "Comenei Ali / Bangsamoro Information Office",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1066,
+     "caption": "The arcaded entrance and domes of Masjid Al-Nasser Abpi under a blue sky.",
+     "tone": [
+      220,
+      0.49
+     ]
+    },
+    {
+     "url": "/places/masjid-al-nasser-abpi__3.jpg",
+     "page": "https://bangsamoro.gov.ph/news/latest-news/masjid-al-nasser-abpi-a-gift-to-the-community-a-house-in-paradise/",
+     "author": "Comenei Ali / Bangsamoro Information Office",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1066,
+     "caption": "The prayer hall of Masjid Al-Nasser Abpi under its central dome and chandelier.",
+     "tone": [
+      25,
+      0.46
+     ]
+    }
+   ],
    "do": [
     {
      "title": "See the mosque at dusk",
