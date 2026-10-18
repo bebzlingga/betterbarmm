@@ -45,7 +45,7 @@ type MastheadProps = {
   brand?: boolean
   /** Drawn behind everything, filling the band: a photograph blended into the ground. */
   backdrop?: React.ReactNode
-  /** Beside the label and headline, on the right: a logo or a seal. */
+  /** Before the label and headline, on their left and centred on them: a logo or a seal. */
   aside?: React.ReactNode
 }
 
@@ -90,7 +90,8 @@ export function Masthead({
       />
 
       <div className='bb-container relative w-full py-[clamp(3.75rem,7vw,6.5rem)]'>
-        <div className={aside ? 'flex items-center justify-between gap-6 sm:gap-10' : undefined}>
+        <div className={aside ? 'flex items-center gap-5 sm:gap-8' : undefined}>
+          {aside}
           <div className='min-w-0'>
             <Rise distance={14}>
               {label ? <p className='bb-label'>{label}</p> : null}
@@ -103,7 +104,6 @@ export function Masthead({
               lineClassName={lines.map((_, index) => (muted.includes(index) ? 'bb-mute' : undefined))}
             />
           </div>
-          {aside}
         </div>
 
         {standfirst ? (

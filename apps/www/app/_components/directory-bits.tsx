@@ -61,7 +61,7 @@ type HeadPhoto = { src: string; alt: string; credit: { credit: string; license: 
 type HeadLogo = { src: string; alt: string; title: string }
 
 /** A directory dialog's band: its label and name over the crimson ground, the place's or the office's photograph
- * blended into that ground where there is one, and its logo or seal on the right. */
+ * blended into that ground where there is one, and its logo or seal on the left of its name. */
 export function DirectoryHead({ label, name, photo, logo }: { label: string; name: string; photo: HeadPhoto | null; logo: HeadLogo | null }) {
 	return (
 		<Masthead
@@ -84,7 +84,7 @@ export function DirectoryHead({ label, name, photo, logo }: { label: string; nam
 			aside={
 				logo ? (
 					// eslint-disable-next-line @next/next/no-img-element
-					<img src={logo.src} alt={logo.alt} title={logo.title} className='mr-12 size-[4.5rem] shrink-0 object-contain md:mr-0 md:size-[6.5rem]' />
+					<img src={logo.src} alt={logo.alt} title={logo.title} className='size-16 shrink-0 object-contain md:size-[6.5rem]' />
 				) : null
 			}
 		/>
