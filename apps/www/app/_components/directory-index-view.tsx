@@ -54,8 +54,8 @@ export function DirectoryIndex() {
 				<div className='bb-container py-14 lg:py-20'>
 					{hotlines.length ? (
 						<section id='hotlines' aria-labelledby='hotlines-title' className='scroll-mt-[calc(var(--site-header-h)+1rem)]'>
-							{/* As many columns as there are panels, up to three, so no empty cell shows the rule colour. */}
-							<div className={`grid gap-px overflow-hidden border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-2 ${hotlines.length + 1 >= 3 ? 'lg:grid-cols-3' : ''}`}>
+							{/* Each panel a card of its own, up to three to a row. */}
+							<div className={`grid gap-4 sm:grid-cols-2 ${hotlines.length + 1 >= 3 ? 'lg:grid-cols-3' : ''}`}>
 								<div className='flex items-center gap-3 bg-[#8f2328] p-5 text-white'>
 									<SirenIcon size={26} weight='fill' aria-hidden='true' />
 									<div>
@@ -66,7 +66,7 @@ export function DirectoryIndex() {
 									</div>
 								</div>
 								{hotlines.map((h) => (
-									<a key={h.name + h.number} href={telHref(h.number)} className='group bg-[var(--paper)] p-5 transition hover:bg-[var(--paper-2)]'>
+									<a key={h.name + h.number} href={telHref(h.number)} className='group border border-[var(--rule)] bg-[var(--paper)] p-5 transition hover:border-[var(--ink)]'>
 										<span className='block text-[13px] leading-5 text-[var(--ink-2)]'>{h.name}</span>
 										<span className='mt-1 inline-flex items-center gap-2 text-[18px] font-bold tabular-nums group-hover:text-[var(--accent)]'>
 											<PhoneIcon size={16} weight='bold' aria-hidden='true' /> {h.number}
