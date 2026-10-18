@@ -92,7 +92,7 @@ export function DirectoryIndex() {
 										{g.title} <span className='text-[var(--ink-mute)]'>· {list.length}</span>
 									</h3>
 									{/* A list on a phone, cards from a tablet up. */}
-									<ul className='mt-3 grid border-t border-[var(--rule)] sm:mt-4 sm:grid-cols-2 sm:gap-4 sm:border-t-0 lg:grid-cols-3'>
+									<ul className='mt-3 grid border-t border-[var(--rule)] sm:mt-4 sm:grid-cols-2 sm:gap-4 sm:border-t-0 lg:grid-cols-3 xl:grid-cols-4'>
 										{list.map((o) => (
 											<li key={o.slug} className='bb-frame relative flex min-w-0 gap-4 border-b border-[var(--rule-soft)] bg-transparent! py-3 sm:flex-col sm:gap-0 sm:overflow-hidden sm:border sm:border-[var(--rule)] sm:py-0'>
 												<span className='relative size-16 shrink-0 overflow-hidden sm:h-32 sm:w-full'>
