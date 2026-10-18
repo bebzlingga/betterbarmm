@@ -55,6 +55,8 @@ export type FieldOffice = {
 	province: string
 	address: string | null
 	phones: string[]
+	/** Only where an official page prints it as text. */
+	emails?: string[]
 	head: { name: string; title: string } | null
 	source: string
 }

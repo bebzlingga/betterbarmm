@@ -162,10 +162,18 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 											</p>
 										) : null}
 										{f.address ? <p className='mt-0.5 text-[13px] text-[var(--ink-3)]'>{f.address}</p> : null}
-										{f.phones.length ? (
-											<ul className='mt-1 flex flex-wrap gap-x-5 gap-y-1 text-[13.5px]'>
+										{f.phones.length || f.emails?.length ? (
+											<ul className='mt-2.5 flex flex-wrap gap-x-5 gap-y-1 text-[13.5px]'>
 												{f.phones.map((p) => (
 													<Phone key={p} number={p} />
+												))}
+												{f.emails?.map((e) => (
+													<li key={e} className='flex gap-2'>
+														<EnvelopeSimpleIcon size={15} className='mt-1 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
+														<a href={`mailto:${e}`} className={`break-all ${linkClass}`}>
+															{e}
+														</a>
+													</li>
 												))}
 											</ul>
 										) : null}
