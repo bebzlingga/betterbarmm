@@ -149,23 +149,28 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 						<h2 id='field' className='text-[20px] font-extrabold'>
 							In the provinces <span className='text-[var(--ink-mute)]'>{field.length}</span>
 						</h2>
-						<ul className='mt-4 grid pt-px pl-px sm:grid-cols-2'>
+						{/* A list, as the past heads are: where, which office and who heads it, its numbers, its source. */}
+						<ul className='mt-3 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)] text-[14px]'>
 							{field.map((f) => (
-								<li key={f.office} className='-mt-px -ml-px border border-[var(--rule)] bg-[var(--paper)] p-5 text-[13.5px] leading-6'>
-									<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>{f.province}</p>
-									<p className='mt-1 text-[14.5px] font-semibold leading-snug'>{f.office}</p>
-									{f.head ? (
-										<p className='mt-1 text-[var(--ink-2)]'>
-											{f.head.name}, {f.head.title}
-										</p>
-									) : null}
-									{f.address ? <p className='mt-1 text-[var(--ink-3)]'>{f.address}</p> : null}
-									<ul className='mt-1.5 space-y-1'>
-										{f.phones.map((p) => (
-											<Phone key={p} number={p} />
-										))}
-									</ul>
-									<a href={f.source} target='_blank' rel='noreferrer' className='mt-2 inline-flex items-center gap-0.5 text-[11.5px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
+								<li key={f.office} className='grid gap-x-4 gap-y-1 py-3 sm:grid-cols-[9rem_minmax(0,1fr)_auto]'>
+									<span className='font-mono text-[10.5px] font-semibold uppercase leading-6 tracking-[0.14em] text-[var(--accent)]'>{f.province}</span>
+									<div className='min-w-0'>
+										<p className='font-semibold leading-snug'>{f.office}</p>
+										{f.head ? (
+											<p className='mt-0.5 text-[13.5px] text-[var(--ink-2)]'>
+												{f.head.name}, {f.head.title}
+											</p>
+										) : null}
+										{f.address ? <p className='mt-0.5 text-[13px] text-[var(--ink-3)]'>{f.address}</p> : null}
+										{f.phones.length ? (
+											<ul className='mt-1 flex flex-wrap gap-x-5 gap-y-1 text-[13.5px]'>
+												{f.phones.map((p) => (
+													<Phone key={p} number={p} />
+												))}
+											</ul>
+										) : null}
+									</div>
+									<a href={f.source} target='_blank' rel='noreferrer' className='inline-flex items-center gap-0.5 self-start text-[12px] leading-6 text-[var(--ink-3)] hover:text-[var(--accent)]'>
 										Source <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
 									</a>
 								</li>
@@ -233,7 +238,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 					<h2 id='read' className='mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>
 						How this was read
 					</h2>
-					<div className='mt-2 space-y-2 text-[12.5px] leading-[1.7] text-[var(--ink-mute)] opacity-70'>
+					<div className='mt-2 space-y-2 text-[12.5px] leading-[1.7] text-[var(--ink-mute)]'>
 						{org ? <OrgNote org={org} /> : null}
 						<p>{directoryMeta.note}</p>
 					</div>
