@@ -45,11 +45,11 @@ export default async function TownPage({ params }: { params: Promise<{ province:
 			<section className='bb-container bb-section'>
 				<div className='grid gap-6 sm:grid-cols-2'>
 					<div className='border-t border-[var(--ink)] pt-4'>
-						<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Mayor</p>
+						<p className='mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Mayor</p>
 						<p className='mt-1 text-[22px] font-extrabold tracking-[-0.02em]'>{u.head ?? 'Not in the canvass'}</p>
 					</div>
 					<div className='border-t border-[var(--rule)] pt-4'>
-						<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Vice mayor</p>
+						<p className='mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Vice mayor</p>
 						<p className='mt-1 text-[22px] font-extrabold tracking-[-0.02em]'>{u.deputy ?? '–'}</p>
 					</div>
 				</div>

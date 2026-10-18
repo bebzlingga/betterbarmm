@@ -36,11 +36,11 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				{isProvince ? (
 					<div className='grid gap-6 sm:grid-cols-2'>
 						<div className='border-t border-[var(--ink)] pt-4'>
-							<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Governor</p>
+							<p className='mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Governor</p>
 							<p className='mt-1 text-[22px] font-extrabold tracking-[-0.02em]'>{g.governor ?? 'Not in the canvass'}</p>
 						</div>
 						<div className='border-t border-[var(--rule)] pt-4'>
-							<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Vice governor</p>
+							<p className='mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Vice governor</p>
 							<p className='mt-1 text-[22px] font-extrabold tracking-[-0.02em]'>{g.viceGovernor ?? '–'}</p>
 						</div>
 					</div>

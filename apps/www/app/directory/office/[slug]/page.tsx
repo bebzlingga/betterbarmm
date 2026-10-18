@@ -63,7 +63,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 				<div className='grid gap-12 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:gap-24'>
 					<aside className='space-y-10'>
 					<div>
-						<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Head of office</p>
+						<p className='mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Head of office</p>
 						{o.head ? (
 							<div className='mt-2 flex items-start gap-5'>
 								<HeadPortrait slug={o.slug} name={o.head.name} className='size-24 sm:size-28' />
@@ -87,7 +87,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 					</div>
 
 					<div>
-						<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>How to reach it</p>
+						<p className='mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>How to reach it</p>
 						<ul className='mt-2 space-y-1.5 text-[14px] leading-6'>
 							{o.phones.map((p) => (
 								<Phone key={p} number={p} />
@@ -128,7 +128,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 					</div>
 
 					<div>
-						<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Its budget</p>
+						<p className='mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Its budget</p>
 						<ul className='mt-2 space-y-1.5 text-[14px] leading-6'>
 							<li className='flex gap-2'>
 								<CoinsIcon size={15} className='mt-1 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
@@ -230,7 +230,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 
 				{/* Where it all came from, as a section of its own under the two columns. */}
 				<section aria-labelledby='read' className='mt-16'>
-					<h2 id='read' className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+					<h2 id='read' className='mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>
 						How this was read
 					</h2>
 					<div className='mt-2 space-y-2 text-[12.5px] leading-[1.7] text-[var(--ink-mute)] opacity-70'>
