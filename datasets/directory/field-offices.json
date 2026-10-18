@@ -148,13 +148,19 @@
    "ministry_slug": "ministry-of-public-works",
    "office": "Maguindanao del Norte District Engineering Office",
    "province": "Maguindanao del Norte",
-   "address": null,
-   "phones": [],
+   "address": "Barangay Tamontaka, Datu Odin Sinsuat, Maguindanao",
+   "phones": [
+    "(064) 429-0816"
+   ],
    "head": {
     "name": "Sahid A. Abdullah",
     "title": "Acting District Engineer"
    },
-   "source": "https://mpw.bangsamoro.gov.ph/district-engineers/"
+   "source": "https://mpw.bangsamoro.gov.ph/district-engineers/",
+   "emails": [
+    "BACmagdelnortedeo@gmail.com"
+   ],
+   "contact_source": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/PrintableBidNoticeAbstractUI.aspx?refid=13289620"
   },
   {
    "ministry_slug": "ministry-of-public-works",
@@ -314,7 +320,11 @@
     "name": "Benjamin D. Alangca",
     "title": "Provincial Director, MHSD-Lanao del Sur"
    },
-   "source": "https://mhsd.bangsamoro.gov.ph/contact-us/"
+   "source": "https://mhsd.bangsamoro.gov.ph/contact-us/",
+   "emails": [
+    "lanaodelsur@mhsd.bangsamoro.gov.ph"
+   ],
+   "contact_source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf"
   },
   {
    "ministry_slug": "ministry-of-human-settlements-and-development",
@@ -329,7 +339,11 @@
     "title": "Provincial Director, MHSD-Maguindanao (MDN)"
    },
    "source": "https://mhsd.bangsamoro.gov.ph/contact-us/",
-   "note": "The contact page lists one Maguindanao office, but separate directors for MDN and MDS."
+   "note": "The contact page lists one Maguindanao office, but separate directors for MDN and MDS.",
+   "emails": [
+    "mhsdmaguindanao2023@gmail.com"
+   ],
+   "contact_source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf"
   },
   {
    "ministry_slug": "ministry-of-human-settlements-and-development",
@@ -344,7 +358,11 @@
     "title": "Provincial Director, MHSD-Maguindanao (MDS)"
    },
    "source": "https://mhsd.bangsamoro.gov.ph/contact-us/",
-   "note": "The contact page lists one Maguindanao office, but separate directors for MDN and MDS."
+   "note": "The contact page lists one Maguindanao office, but separate directors for MDN and MDS.",
+   "emails": [
+    "mhsdmaguindanao2023@gmail.com"
+   ],
+   "contact_source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf"
   },
   {
    "ministry_slug": "ministry-of-human-settlements-and-development",
@@ -358,7 +376,8 @@
     "name": "Ibrahim M. Haruddain, MPA",
     "title": "Provincial Director, MHSD-Basilan"
    },
-   "source": "https://mhsd.bangsamoro.gov.ph/contact-us/"
+   "source": "https://mhsd.bangsamoro.gov.ph/contact-us/",
+   "contact_source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf"
   },
   {
    "ministry_slug": "ministry-of-human-settlements-and-development",
@@ -372,7 +391,11 @@
     "name": "Engr. Sabturani U. Bakil",
     "title": "Provincial Director, MHSD-Tawi-Tawi"
    },
-   "source": "https://mhsd.bangsamoro.gov.ph/contact-us/"
+   "source": "https://mhsd.bangsamoro.gov.ph/contact-us/",
+   "emails": [
+    "tawitawi@mhsd.bangsamoro.gov.ph"
+   ],
+   "contact_source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf"
   },
   {
    "ministry_slug": "ministry-of-human-settlements-and-development",
@@ -392,39 +415,51 @@
    "office": "MTIT-Basilan Provincial Office",
    "province": "Basilan",
    "address": null,
-   "phones": [],
+   "phones": [
+    "09670918908"
+   ],
    "head": {
     "name": "Dr. Argie J. Sarco",
     "title": "Provincial Director"
    },
    "source": "https://bangsamoro.gov.ph/news/latest-news/mtit-basilan-hosts-msme-investment-roadshow-to-boost-local-enterprises/",
-   "head_as_of": "2025-09"
+   "head_as_of": "2025-09",
+   "contact_source": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-ensures-just-pricing-of-goods-during-ramadhan/"
   },
   {
    "ministry_slug": "ministry-of-trade-investments-and-tourism",
    "office": "MTIT Tawi-Tawi Provincial Office",
    "province": "Tawi-Tawi",
    "address": null,
-   "phones": [],
+   "phones": [
+    "09275177701",
+    "09630964398"
+   ],
    "head": {
     "name": "Fatima Neyyar H. Hassan",
     "title": "OIC Provincial Director"
    },
    "source": "https://bangsamoro.gov.ph/news/latest-news/mtit-tawi-tawi-recognizes-5-msmes-for-contributions-to-local-economy/",
-   "head_as_of": "2026-09"
+   "head_as_of": "2026-09",
+   "contact_source": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-ensures-just-pricing-of-goods-during-ramadhan/"
   },
   {
    "ministry_slug": "ministry-of-trade-investments-and-tourism",
    "office": "MTIT Maguindanao Provincial Office",
    "province": "Maguindanao",
    "address": null,
-   "phones": [],
+   "phones": [
+    "09974979647",
+    "09300848942",
+    "557-2474"
+   ],
    "head": {
     "name": "Romeo Diocolano",
     "title": "Provincial Director, MTIT-Maguindanao"
    },
    "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-stakeholders-advance-cultural-stewardship-to-safeguard-inawl-heritage/",
-   "head_as_of": "2026-06"
+   "head_as_of": "2026-06",
+   "contact_source": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-ensures-just-pricing-of-goods-during-ramadhan/"
   },
   {
    "ministry_slug": "ministry-of-trade-investments-and-tourism",
@@ -479,14 +514,18 @@
    "ministry_slug": "ministry-of-agriculture-fisheries-and-agrarian-reform",
    "office": "MAFAR-Basilan",
    "province": "Basilan",
-   "address": null,
+   "address": "MAFAR Provincial Office, BGC Compound, Lamitan, Basilan",
    "phones": [],
    "head": {
     "name": "Hanie Muadz Junuban",
     "title": "Provincial Director"
    },
    "source": "https://bangsamoro.gov.ph/news/latest-news/mafar-unveils-upgraded-community-fish-landing-center-in-lamitan-city-to-improve-fisherfolk-livelihoods/",
-   "head_as_of": "2025-10"
+   "head_as_of": "2025-10",
+   "emails": [
+    "basilanmafar@gmail.com"
+   ],
+   "contact_source": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/PrintableBidNoticeAbstractUI.aspx?refid=13290554"
   },
   {
    "ministry_slug": "ministry-of-agriculture-fisheries-and-agrarian-reform",
@@ -691,14 +730,15 @@
    "ministry_slug": "ministry-of-basic-higher-and-technical-education",
    "office": "Schools Division of Tawi-Tawi",
    "province": "Tawi-Tawi",
-   "address": null,
+   "address": "Barangay Sowangkang, Bongao, Tawi-Tawi",
    "phones": [],
    "head": {
     "name": "Rajis S. Abdulwahid",
     "title": "OIC Schools Division Superintendent"
    },
    "source": "https://bangsamoro.gov.ph/news/latest-news/world-teachers-day-mbhte-honors-more-than-2000-teachers-in-tawi-tawi-celebration/",
-   "head_as_of": "2026-10"
+   "head_as_of": "2026-10",
+   "contact_source": "https://bangsamoro.gov.ph/news/latest-news/bfd-2024-mbhte-unveils-new-2-storey-office-building-in-tawi-tawi/"
   },
   {
    "ministry_slug": "ministry-of-the-interior-and-local-government",
@@ -764,6 +804,306 @@
    },
    "source": "https://api.milgbarmm.com/api/v1/public/website/about/key-officials",
    "head_as_of": "2025-10"
+  },
+  {
+   "ministry_slug": "ministry-of-science-and-technology",
+   "office": "Provincial Science and Technology Center-Lanao del Sur",
+   "province": "Lanao del Sur",
+   "address": "Brgy. Datu Saber, Marawi City near at APMC Hospital",
+   "phones": [],
+   "head": null,
+   "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+   "page": 196,
+   "as_of": "2023-03"
+  },
+  {
+   "ministry_slug": "ministry-of-science-and-technology",
+   "office": "Provincial Science and Technology Center-Basilan",
+   "province": "Basilan",
+   "address": "12/F Gerry Salapuddin Multipurpose Bldg., Geras Village Brgy. Sumagdang, Isabela City, Basilan",
+   "phones": [],
+   "head": null,
+   "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+   "page": 196,
+   "as_of": "2023-03"
+  },
+  {
+   "ministry_slug": "ministry-of-science-and-technology",
+   "office": "Provincial Science and Technology Center-Tawi-Tawi",
+   "province": "Tawi-Tawi",
+   "address": "BARMS Building, Brgy. Tubig-Boh, Tawi-tawi",
+   "phones": [],
+   "head": null,
+   "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+   "page": 196,
+   "as_of": "2023-03"
+  },
+  {
+   "ministry_slug": "ministry-of-science-and-technology",
+   "office": "Provincial Science and Technology Center-Cotabato City",
+   "province": "Cotabato City",
+   "address": "Door 1, Ground Floor, RD Commercial Bldg. Bishop Mongeau St., RH 8, Cotabato City",
+   "phones": [],
+   "head": null,
+   "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+   "page": 196,
+   "as_of": "2023-03"
+  },
+  {
+   "ministry_slug": "ministry-of-science-and-technology",
+   "office": "Provincial Science and Technology Center-Special Geographic Areas",
+   "province": "Special Geographic Area",
+   "address": null,
+   "phones": [],
+   "head": null,
+   "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
+   "emails": [
+    "mostsga63@gmail.com"
+   ],
+   "page": 196,
+   "as_of": "2023-03"
+  },
+  {
+   "ministry_slug": "ministry-of-trade-investments-and-tourism",
+   "office": "MTIT Lanao del Sur Provincial Office",
+   "province": "Lanao del Sur",
+   "address": null,
+   "phones": [
+    "09175024714"
+   ],
+   "head": null,
+   "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-ensures-just-pricing-of-goods-during-ramadhan/",
+   "as_of": "2025-03"
+  },
+  {
+   "ministry_slug": "ministry-of-the-interior-and-local-government",
+   "office": "MILG Special Geographic Area Field Office",
+   "province": "Special Geographic Area",
+   "address": "Brgy. Datu Binasing, Pigcawayan Cluster, Special Geographic Area",
+   "phones": [],
+   "head": {
+    "name": "Zaiton Abas",
+    "title": "SGA Field Director"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/people-centric-governance-milg-opens-two-storey-field-office-in-sga/",
+   "head_as_of": "2023-12",
+   "as_of": "2023-12"
+  },
+  {
+   "ministry_slug": "ministry-of-labor-and-employment",
+   "office": "Maluso Extension Office",
+   "province": "Basilan",
+   "address": "Barangay Upper Port Holland, Maluso, Basilan",
+   "phones": [],
+   "head": null,
+   "source": "https://bangsamoro.gov.ph/news/latest-news/mole-basilan-opens-maluso-extension-office-for-faster-service/",
+   "as_of": "2026-08",
+   "note": "Extension of the Basilan Field Office, in a building the LGU of Maluso provided; opened 2026-08-03."
+  },
+  {
+   "ministry_slug": "ministry-of-health",
+   "office": "Special Geographic Area Field Health Office (MOH-SGAFHO)",
+   "province": "Special Geographic Area",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Dr. Zul Qarneyn Abas",
+    "title": "head of MOH-SGAFHO"
+   },
+   "source": "https://bangsamoro.gov.ph/news/latest-news/3-health-institutions-receive-p21-4-m-medical-support-from-barmm-govt/",
+   "head_as_of": "2026-07"
+  },
+  {
+   "ministry_slug": "ministry-of-basic-higher-and-technical-education",
+   "office": "Schools Division of Marawi City",
+   "province": "Lanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": null,
+   "source": "https://bangsamoro.gov.ph/news/latest-news/women-and-youth-the-vote-that-carries-a-generations-hopes/",
+   "as_of": "2026-09"
+  },
+  {
+   "ministry_slug": "ministry-of-basic-higher-and-technical-education",
+   "office": "Schools Division of Maguindanao del Sur",
+   "province": "Maguindanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": null,
+   "source": "https://bangsamoro.gov.ph/news/latest-news/cotabato-city-overall-champ-in-2025-barmm-athletic-meet/",
+   "as_of": "2025-02"
+  },
+  {
+   "ministry_slug": "ministry-of-environment-natural-resources-and-energy",
+   "office": "PENREO Lanao del Sur",
+   "province": "Lanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "ASMARIE M. LABAO, MPA",
+    "title": "Provincial Environment, Natural Resources, and Energy Officer (PENREO)"
+   },
+   "source": "https://menre.bangsamoro.gov.ph/?page_id=332"
+  },
+  {
+   "ministry_slug": "ministry-of-environment-natural-resources-and-energy",
+   "office": "PENREO Basilan",
+   "province": "Basilan",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "MARIETTA R. LADJIMAN, MPA",
+    "title": "Provincial Environment, Natural Resources, and Energy Officer (PENREO)"
+   },
+   "source": "https://menre.bangsamoro.gov.ph/?page_id=332"
+  },
+  {
+   "ministry_slug": "ministry-of-environment-natural-resources-and-energy",
+   "office": "PENREO Tawi-Tawi",
+   "province": "Tawi-Tawi",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "JONEL I. MOHAMMAD MONEL, EdD",
+    "title": "Provincial Environment, Natural Resources, and Energy Officer (PENREO)"
+   },
+   "source": "https://menre.bangsamoro.gov.ph/?page_id=332"
+  },
+  {
+   "ministry_slug": "ministry-of-environment-natural-resources-and-energy",
+   "office": "PENREO Maguindanao del Norte",
+   "province": "Maguindanao del Norte",
+   "address": null,
+   "phones": [],
+   "head": null,
+   "source": "https://menre.bangsamoro.gov.ph/wp-content/uploads/2026/06/MENRE.png",
+   "as_of": "2026-06"
+  },
+  {
+   "ministry_slug": "ministry-of-environment-natural-resources-and-energy",
+   "office": "PENREO Maguindanao del Sur",
+   "province": "Maguindanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": null,
+   "source": "https://menre.bangsamoro.gov.ph/wp-content/uploads/2026/06/MENRE.png",
+   "as_of": "2026-06"
+  },
+  {
+   "ministry_slug": "ministry-of-environment-natural-resources-and-energy",
+   "office": "CENREO Maguindanao del Norte",
+   "province": "Maguindanao del Norte",
+   "address": null,
+   "phones": [],
+   "head": null,
+   "source": "https://menre.bangsamoro.gov.ph/wp-content/uploads/2026/06/MENRE.png",
+   "as_of": "2026-06"
+  },
+  {
+   "ministry_slug": "ministry-of-environment-natural-resources-and-energy",
+   "office": "CENREO Maguindanao del Sur",
+   "province": "Maguindanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": null,
+   "source": "https://menre.bangsamoro.gov.ph/wp-content/uploads/2026/06/MENRE.png",
+   "as_of": "2026-06"
+  },
+  {
+   "ministry_slug": "ministry-of-environment-natural-resources-and-energy",
+   "office": "CENREO Lanao del Sur A",
+   "province": "Lanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": null,
+   "source": "https://menre.bangsamoro.gov.ph/wp-content/uploads/2026/06/MENRE.png",
+   "as_of": "2026-06"
+  },
+  {
+   "ministry_slug": "ministry-of-environment-natural-resources-and-energy",
+   "office": "CENREO Lanao del Sur B",
+   "province": "Lanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": null,
+   "source": "https://menre.bangsamoro.gov.ph/wp-content/uploads/2026/06/MENRE.png",
+   "as_of": "2026-06"
+  },
+  {
+   "ministry_slug": "ministry-of-environment-natural-resources-and-energy",
+   "office": "CENREO Basilan A",
+   "province": "Basilan",
+   "address": null,
+   "phones": [],
+   "head": null,
+   "source": "https://menre.bangsamoro.gov.ph/wp-content/uploads/2026/06/MENRE.png",
+   "as_of": "2026-06"
+  },
+  {
+   "ministry_slug": "ministry-of-environment-natural-resources-and-energy",
+   "office": "CENREO Basilan B",
+   "province": "Basilan",
+   "address": null,
+   "phones": [],
+   "head": null,
+   "source": "https://menre.bangsamoro.gov.ph/wp-content/uploads/2026/06/MENRE.png",
+   "as_of": "2026-06"
+  },
+  {
+   "ministry_slug": "ministry-of-environment-natural-resources-and-energy",
+   "office": "CENREO Tawi-Tawi A",
+   "province": "Tawi-Tawi",
+   "address": null,
+   "phones": [],
+   "head": null,
+   "source": "https://menre.bangsamoro.gov.ph/wp-content/uploads/2026/06/MENRE.png",
+   "as_of": "2026-06"
+  },
+  {
+   "ministry_slug": "ministry-of-environment-natural-resources-and-energy",
+   "office": "CENREO Tawi-Tawi B",
+   "province": "Tawi-Tawi",
+   "address": null,
+   "phones": [],
+   "head": null,
+   "source": "https://menre.bangsamoro.gov.ph/wp-content/uploads/2026/06/MENRE.png",
+   "as_of": "2026-06"
+  },
+  {
+   "ministry_slug": "ministry-of-agriculture-fisheries-and-agrarian-reform",
+   "office": "PARAD-Basilan",
+   "province": "Basilan",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Abdulajid C. Alano",
+    "title": "Attorney IV"
+   },
+   "source": "https://mafar.bangsamoro.gov.ph/directory-of-officials/"
+  },
+  {
+   "ministry_slug": "ministry-of-agriculture-fisheries-and-agrarian-reform",
+   "office": "PARAD-Lanao del Sur",
+   "province": "Lanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "H. Mohammad N. Pundato",
+    "title": "Attorney IV"
+   },
+   "source": "https://mafar.bangsamoro.gov.ph/directory-of-officials/"
+  },
+  {
+   "ministry_slug": "ministry-of-agriculture-fisheries-and-agrarian-reform",
+   "office": "PARAD, Tawi-Tawi",
+   "province": "Tawi-Tawi",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Sulaiman J. Nur",
+    "title": "Attorney IV"
+   },
+   "source": "https://mafar.bangsamoro.gov.ph/directory-of-officials/"
   }
  ]
 }
