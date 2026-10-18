@@ -84,7 +84,7 @@ export function DirectoryHead({ label, name, photo, logo }: { label: string; nam
 			aside={
 				logo ? (
 					// eslint-disable-next-line @next/next/no-img-element
-					<img src={logo.src} alt={logo.alt} title={logo.title} className='mr-12 size-[4.5rem] shrink-0 bg-white object-contain p-2 md:mr-14 md:size-[6.5rem] md:p-3' />
+					<img src={logo.src} alt={logo.alt} title={logo.title} className='mr-12 size-[4.5rem] shrink-0 object-contain md:mr-14 md:size-[6.5rem]' />
 				) : null
 			}
 		/>
