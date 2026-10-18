@@ -114,7 +114,7 @@ export function PlaceView({ p }: { p: Place }) {
 			{p.do?.length ? (
 				<section aria-labelledby='do' className='bb-container py-10 lg:py-12'>
 					<h2 id='do' className='text-[22px] font-extrabold tracking-[-0.02em] text-[#13303a]'>
-						Things to do <span className='text-[#8aa3a9]'>{p.do.length}</span>
+						Things to do
 					</h2>
 					<ol className='mt-6 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3'>
 						{p.do.map((d, i) => (
@@ -134,7 +134,7 @@ export function PlaceView({ p }: { p: Place }) {
 			{p.images.length > 1 ? (
 				<section aria-labelledby='gallery' className='bb-container py-10 lg:py-12'>
 					<h2 id='gallery' className='text-[22px] font-extrabold tracking-[-0.02em] text-[#13303a]'>
-						Photographs <span className='text-[#8aa3a9]'>{p.images.length}</span>
+						Photographs
 					</h2>
 					<div className='mt-5'>
 						<PlaceGallery images={p.images} name={p.name} />
@@ -146,7 +146,7 @@ export function PlaceView({ p }: { p: Place }) {
 			{food.length ? (
 				<section aria-labelledby='food' className='bb-container py-10 lg:py-12'>
 					<h2 id='food' className='text-[22px] font-extrabold tracking-[-0.02em] text-[#13303a]'>
-						Food to try <span className='text-[#8aa3a9]'>{food.length}</span>
+						Food to try
 					</h2>
 					<ul className='mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6'>
 						{food.map((d) => (
@@ -181,7 +181,7 @@ export function PlaceView({ p }: { p: Place }) {
 				<section aria-labelledby='stay' className='bb-container py-10 lg:py-12'>
 					<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
 						<h2 id='stay' className='text-[22px] font-extrabold tracking-[-0.02em] text-[#13303a]'>
-							Places to stay <span className='text-[#8aa3a9]'>{stays.length}</span>
+							Places to stay
 						</h2>
 						{lodgingHere ? <p className='max-w-2xl text-[13.5px] leading-[1.55] text-[#4d6670]'>{lodgingHere.booking}</p> : null}
 					</div>
