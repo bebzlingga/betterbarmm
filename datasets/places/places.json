@@ -6127,7 +6127,22 @@
     "https://www.nomadicexperiences.com/2026/01/a-glimpse-of-mindanaoan-culture-in.html",
     "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdshandicrafts.pdf"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/limpongo-teduray-crafts__1.jpg",
+     "page": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdshandicrafts.pdf",
+     "author": "Provincial Government of Maguindanao del Sur (Maguindanao del Sur Handicrafts, p. 2)",
+     "license": "Philippine government work",
+     "license_url": "https://www.officialgazette.gov.ph/1997/06/06/republic-act-no-8293/",
+     "width": 696,
+     "height": 696,
+     "caption": "Two lidded kongo baskets of rattan and bamboo, a Teduray craft of Datu Hoffer Ampatuan.",
+     "tone": [
+      23,
+      0.35
+     ]
+    }
+   ],
    "do": [
     {
      "title": "Buy rattan and bamboo crafts from the weavers",
@@ -6357,7 +6372,22 @@
     "https://en.wikipedia.org/wiki/Maguindanao_massacre",
     "https://davaotoday.com/human-rights/in-photos-ampatuan-massacre-eight-years-later/"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/ampatuan-massacre-memorial__1.jpg",
+     "page": "https://www.pna.gov.ph/articles/1122663",
+     "author": "Philippine News Agency (PNA GenSan photo)",
+     "license": "Philippine government work",
+     "license_url": "https://www.officialgazette.gov.ph/1997/06/06/republic-act-no-8293/",
+     "width": 415,
+     "height": 260,
+     "caption": "White headstones bearing the names of the 58 people killed stand on a slope at Sitio Masalay in Ampatuan.",
+     "tone": [
+      37,
+      0.53
+     ]
+    }
+   ],
    "do": [
     {
      "title": "Join the anniversary commemoration",
