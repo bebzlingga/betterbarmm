@@ -1,7 +1,7 @@
-import { ArrowRightIcon, PhoneIcon } from '@phosphor-icons/react/ssr'
+import { ArrowRightIcon, EnvelopeSimpleIcon, PhoneIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { commonsThumb } from '../_lib/commons'
-import { LINE_LABEL, localGovernments, placePhoto, placeSeal, provinceLines, telHref, townLines, type Line, type PlacePhoto } from '../_lib/directory'
+import { LINE_LABEL, lguEmail, localGovernments, placePhoto, placeSeal, provinceLines, telHref, townLines, type Line, type PlacePhoto } from '../_lib/directory'
 import { barmmBoundaries, lguProvinces, sameUnit } from '@betterbarmm/lgu-data'
 import { DirectoryHead } from './directory-bits'
 import { PhotoCredit } from './discover-figure'
@@ -213,6 +213,14 @@ export function DirectoryPlaces() {
 														</li>
 													))}
 												</ul>
+											) : null}
+											{lguEmail(g.slug, u.slug) ? (
+												<p className='mt-0.5 truncate text-[12.5px]'>
+													<a href={`mailto:${lguEmail(g.slug, u.slug)!.emails[0]}`} className='inline-flex max-w-full items-center gap-1.5 hover:text-[var(--accent)]'>
+														<EnvelopeSimpleIcon size={12} className='shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
+														<span className='truncate'>{lguEmail(g.slug, u.slug)!.emails[0]}</span>
+													</a>
+												</p>
 											) : null}
 										</div>
 									</li>

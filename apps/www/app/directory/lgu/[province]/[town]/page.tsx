@@ -1,10 +1,10 @@
 import { barangayOfficials } from '@betterbarmm/lgu-data/barangay-officials'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { Lines, linkClass, monthYear } from '../../../../_components/directory-bits'
+import { LguEmailBlock, Lines, linkClass, monthYear } from '../../../../_components/directory-bits'
 import { PlaceHeader } from '../../../../_components/directory-places'
 import { DirectoryDialog } from '../../../../_components/directory-dialog'
-import { barangayRows, emergencyMeta, localGovernments, localGroup, localLineage, townLines } from '../../../../_lib/directory'
+import { barangayRows, emergencyMeta, lguEmail, localGovernments, localGroup, localLineage, townLines } from '../../../../_lib/directory'
 import { pageMeta } from '../../../../_lib/seo'
 
 export function generateStaticParams() {
@@ -53,6 +53,8 @@ export default async function TownPage({ params }: { params: Promise<{ province:
 						<p className='mt-1 text-[22px] font-extrabold tracking-[-0.02em]'>{u.deputy ?? '–'}</p>
 					</div>
 				</div>
+
+				<LguEmailBlock email={lguEmail(province, town)} />
 
 				<section aria-labelledby='lines' className='mt-14'>
 					<h2 id='lines' className='text-[20px] font-extrabold'>

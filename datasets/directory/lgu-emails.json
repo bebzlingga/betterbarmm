@@ -1,0 +1,482 @@
+{
+ "name": "Emails of the local governments of BARMM",
+ "generatedAt": "2026-10-18",
+ "note": "Each province's and town's own email, as an official page prints it as text: the LGU's own site, the League of Provinces directory, or the town's profile in DTI's Cities and Municipalities Competitiveness Index (the email the LGU itself reported). Addresses that read as a person's or reach a single department are left out.",
+ "areas": {
+  "lanao-del-sur": {
+   "emails": [
+    "plgu.lds@gmail.com"
+   ],
+   "source": "https://lanaodelsur.gov.ph/contact-us/",
+   "as_of": null,
+   "office": "Provincial Governor's Office"
+  },
+  "tawi-tawi": {
+   "emails": [
+    "kasalitawitawi2019@gmail.com"
+   ],
+   "source": "https://tawi-tawi.gov.ph/contact-us/",
+   "as_of": null,
+   "office": "Office of the Governor"
+  },
+  "maguindanao-del-norte": {
+   "emails": [
+    "Maguindanaodelnorte@gmail.com"
+   ],
+   "source": "http://web.archive.org/web/20250919130448/https://lpp.gov.ph/directory-of-governors-2025-2028/",
+   "as_of": "2025-06",
+   "office": "Provincial Capitol (League of Provinces governors directory)"
+  },
+  "maguindanao-del-sur": {
+   "emails": [
+    "makabagongmaguindanao@gmail.com"
+   ],
+   "source": "https://www.maguindanaodelsur.gov.ph/images/gmsm/2022.pdf",
+   "as_of": "2023-11",
+   "office": "Office of the Provincial Governor"
+  }
+ },
+ "towns": {
+  "basilan/akbar": {
+   "emails": [
+    "akbarmunicipality@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Akbar&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "basilan/hadji-mohammad-ajul": {
+   "emails": [
+    "hmajulofficial@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Hadji+Mohammad+Ajul&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "basilan/lamitan": {
+   "emails": [
+    "elgulamitan@yahoo.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Lamitan&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "basilan/lantawan": {
+   "emails": [
+    "lantawan.basilan2019@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Lantawan&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "basilan/maluso": {
+   "emails": [
+    "lgumaluso@yahoo.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Maluso&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "basilan/sumisip": {
+   "emails": [
+    "lgusumisip@gmail.com"
+   ],
+   "source": "https://sumisip.gov.ph/contact-us",
+   "as_of": null,
+   "office": "Official LGU Inquiry (municipal website)"
+  },
+  "lanao-del-sur/bacolod-kalawi": {
+   "emails": [
+    "bacolodkalawilgu@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Bacolod-Kalawi&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/binidayan": {
+   "emails": [
+    "lgubinidayan20@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Binidayan&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/butig": {
+   "emails": [
+    "butig9305@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Butig&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/ganassi": {
+   "emails": [
+    "ganassilgu@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Ganassi&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/kapai": {
+   "emails": [
+    "lgukapai01@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Kapai&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/kapatagan": {
+   "emails": [
+    "kapataganlds@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Kapatagan+%28LS%29&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/lumba-bayabao": {
+   "emails": [
+    "mgolumbabayabao@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Lumba-Bayabao&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/lumbatan": {
+   "emails": [
+    "lumbatan2016@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Lumbatan&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/lumbayanague": {
+   "emails": [
+    "lumbayanague_lgu@yahoo.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Lumbayanague&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/madalum": {
+   "emails": [
+    "madalumlds@yahoo.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Madalum&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/madamba": {
+   "emails": [
+    "lgumadamba@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Madamba&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/maguing": {
+   "emails": [
+    "maguinggovernment@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Maguing&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/malabang": {
+   "emails": [
+    "malabang.lgu2019@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Malabang&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/marantao": {
+   "emails": [
+    "municipalityofmarantao@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Marantao&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/marogong": {
+   "emails": [
+    "marogonglgu@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Marogong&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/masiu": {
+   "emails": [
+    "lgumasiu@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Masiu&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/mulondo": {
+   "emails": [
+    "lgumolundo@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Mulondo&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/pagayawan": {
+   "emails": [
+    "lgupagayawanlds@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Pagayawan&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/piagapo": {
+   "emails": [
+    "onward_piagapo@yahoo.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Piagapo&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/picong": {
+   "emails": [
+    "lgupicong@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Picong&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/saguiaran": {
+   "emails": [
+    "saguiaranlgu30@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Saguiaran&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/taraka": {
+   "emails": [
+    "taraka_lanaodelsur@yahoo.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Taraka&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/tubaran": {
+   "emails": [
+    "mptubaran@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Tubaran&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "lanao-del-sur/wao": {
+   "emails": [
+    "waoomm01@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Wao&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-norte/barira": {
+   "emails": [
+    "mlgubarira@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Barira&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-norte/datu-odin-sinsuat": {
+   "emails": [
+    "lgudatuodinsinsuatmaguindanao@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Datu+Odin+Sinsuat&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-norte/kabuntalan": {
+   "emails": [
+    "lgukabuntalan@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Kabuntalan&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-norte/northern-kabuntalan": {
+   "emails": [
+    "nk.mayorsoffice@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Northern+Kabuntalan&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-norte/parang": {
+   "emails": [
+    "lguparang18@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Parang+%28MA%29&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-norte/sultan-kudarat": {
+   "emails": [
+    "sultankudarat_mag@yahoo.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Sultan+Kudarat&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-norte/talitay": {
+   "emails": [
+    "lgutalitay@gmail.com",
+    "lgutalitaymaguindanao@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Talitay&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-norte/upi": {
+   "emails": [
+    "upimunicipality1248@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Upi&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-sur/ampatuan": {
+   "emails": [
+    "lguampatuan@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Ampatuan&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-sur/datu-salibo": {
+   "emails": [
+    "datusalibolgu@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Datu+Salibo&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-sur/datu-unsay": {
+   "emails": [
+    "lgu.datuunsay@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Datu+Unsay&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-sur/gen-s-k-pendatun": {
+   "emails": [
+    "lgugskp@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Gen+S.K+Pendatun&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-sur/guindulungan": {
+   "emails": [
+    "guindulunganlgu@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Guindulungan&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-sur/mamasapano": {
+   "emails": [
+    "mamasapanogovt@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Mamasapano&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-sur/pagalungan": {
+   "emails": [
+    "pagalungan.1947@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Pagalungan&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-sur/paglat": {
+   "emails": [
+    "paglatmaguindanao@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Paglat&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-sur/pandag": {
+   "emails": [
+    "municipalityofpandag@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Pandag&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-sur/rajah-buayan": {
+   "emails": [
+    "rajahbmunicipality@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Rajah+Buayan&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-sur/shariff-aguak": {
+   "emails": [
+    "mgo_shariffaguak@yahoo.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Shariff+Aguak&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-sur/south-upi": {
+   "emails": [
+    "lgusouthupimag@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=South+Upi&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "maguindanao-del-sur/talayan": {
+   "emails": [
+    "lgutalayan76@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Talayan&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "tawi-tawi/bongao": {
+   "emails": [
+    "lgub7500@yahoo.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Bongao&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "tawi-tawi/panglima-sugala": {
+   "emails": [
+    "lgu_psm2016@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Panglima+Sugala&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "tawi-tawi/sitangkai": {
+   "emails": [
+    "tawitawilgusitangkai@gmail.com"
+   ],
+   "source": "https://sitangkai.gov.ph/contact-us/",
+   "as_of": null,
+   "office": "LGU Sitangkai (municipal website)"
+  },
+  "tawi-tawi/turtle-islands": {
+   "emails": [
+    "mlgu.tislands@gmail.com"
+   ],
+   "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Turtle+Islands&year=2025",
+   "as_of": null,
+   "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  }
+ }
+}

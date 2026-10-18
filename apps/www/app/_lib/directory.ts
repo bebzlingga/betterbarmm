@@ -6,6 +6,7 @@ import fieldOfficesFile from '../../../../datasets/directory/field-offices.json'
 import historyFile from '../../../../datasets/directory/history.json'
 import headPhotos from '../../../../datasets/directory/head-photos.json'
 import logosFile from '../../../../datasets/directory/logos.json'
+import lguEmailsFile from '../../../../datasets/directory/lgu-emails.json'
 import officePhotos from '../../../../datasets/directory/office-photos.json'
 import placePhotos from '../../../../datasets/directory/place-photos.json'
 import structureFile from '../../../../datasets/directory/structure.json'
@@ -94,6 +95,11 @@ export const provinceLines = (slug: string) =>
 	sortLines((emergency.provinces as { slug: string; lines: Line[] }[]).find((p) => p.slug === slug)?.lines ?? [])
 export const townLines = (province: string, slug: string) =>
 	sortLines((emergency.towns as { province: string; slug: string; lines: Line[] }[]).find((t) => t.province === province && t.slug === slug)?.lines ?? [])
+
+/** A province's or a town's own email, where an official page prints it, with that page. */
+export type LguEmail = { emails: string[]; source: string; as_of: string | null; office: string | null }
+const lguEmails = lguEmailsFile as { areas: Record<string, LguEmail>; towns: Record<string, LguEmail> }
+export const lguEmail = (province: string, town?: string) => (town ? lguEmails.towns[`${province}/${town}`] : lguEmails.areas[province]) ?? null
 
 /** A phone number as a tel: link: digits only, Philippine area and mobile numbers given the country code. */
 export function telHref(phone: string) {

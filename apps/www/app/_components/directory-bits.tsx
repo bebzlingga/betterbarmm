@@ -1,6 +1,6 @@
 import type { Icon } from '@phosphor-icons/react'
-import { ArrowUpRightIcon, FireIcon, FirstAidIcon, HouseIcon, PhoneIcon, ShieldIcon, SirenIcon } from '@phosphor-icons/react/ssr'
-import { LINE_LABEL, telHref, type Line } from '../_lib/directory'
+import { ArrowUpRightIcon, EnvelopeSimpleIcon, FireIcon, FirstAidIcon, HouseIcon, PhoneIcon, ShieldIcon, SirenIcon } from '@phosphor-icons/react/ssr'
+import { LINE_LABEL, telHref, type Line, type LguEmail } from '../_lib/directory'
 import { PhotoCredit } from './discover-figure'
 import { Masthead } from './masthead'
 
@@ -55,6 +55,29 @@ export function monthYear(d: string | null) {
 	if (!d) return null
 	const [y, m] = d.split('-').map(Number)
 	return m ? new Date(Date.UTC(y!, m - 1, 1)).toLocaleDateString('en-PH', { month: 'long', year: 'numeric', timeZone: 'UTC' }) : String(y)
+}
+
+/** A local government's email, with the page that prints it. */
+export function LguEmailBlock({ email }: { email: LguEmail | null }) {
+	if (!email) return null
+	return (
+		<div className='mt-8'>
+			<p className='mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Email</p>
+			<ul className='space-y-1 text-[14px] leading-6'>
+				{email.emails.map((e) => (
+					<li key={e} className='flex gap-2'>
+						<EnvelopeSimpleIcon size={15} className='mt-1 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
+						<a href={`mailto:${e}`} className={`break-all ${linkClass}`}>
+							{e}
+						</a>
+					</li>
+				))}
+			</ul>
+			<a href={email.source} target='_blank' rel='noreferrer' className='mt-1 inline-flex items-center gap-0.5 text-[12px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
+				{email.office ?? 'Source'} <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
+			</a>
+		</div>
+	)
 }
 
 type HeadPhoto = { src: string; alt: string; credit: { credit: string; license: string; source: string } }

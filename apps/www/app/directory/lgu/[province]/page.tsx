@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { Lines, linkClass } from '../../../_components/directory-bits'
+import { LguEmailBlock, Lines, linkClass } from '../../../_components/directory-bits'
 import { PlaceHeader } from '../../../_components/directory-places'
 import { DirectoryDialog } from '../../../_components/directory-dialog'
-import { emergencyMeta, localGovernments, localGroup, localLineage, provinceLines } from '../../../_lib/directory'
+import { emergencyMeta, lguEmail, localGovernments, localGroup, localLineage, provinceLines } from '../../../_lib/directory'
 import { pageMeta } from '../../../_lib/seo'
 
 export function generateStaticParams() {
@@ -45,6 +45,8 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 						</div>
 					</div>
 				) : null}
+
+				<LguEmailBlock email={lguEmail(g.slug)} />
 
 				<section aria-labelledby='lines' className='mt-14'>
 					<h2 id='lines' className='text-[20px] font-extrabold'>
