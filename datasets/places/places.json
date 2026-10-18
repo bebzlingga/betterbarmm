@@ -68,6 +68,48 @@
       202,
       0.92
      ]
+    },
+    {
+     "url": "/places/grand-mosque-cotabato__1.jpg",
+     "page": "https://www.tourism.gov.ph/destination/barmm/tawi-tawi/barmm_maguindanao-del-norte_cotabato-city_sultan-haji-hassanal-bolkiah-mosque-grand-mosque-2/",
+     "author": "Department of Tourism",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1066,
+     "caption": "The front of the Grand Mosque, its arched entrance flanked by four minarets and gold domes.",
+     "tone": [
+      214,
+      0.36
+     ]
+    },
+    {
+     "url": "/places/grand-mosque-cotabato__2.jpg",
+     "page": "https://www.tourism.gov.ph/destination/barmm/tawi-tawi/barmm_maguindanao-del-norte_cotabato-city_sultan-haji-hassanal-bolkiah-mosque-grand-mosque-8/",
+     "author": "Department of Tourism",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1066,
+     "caption": "The inner courtyard of the Grand Mosque, ringed by arcades under a gold dome.",
+     "tone": [
+      34,
+      0.36
+     ]
+    },
+    {
+     "url": "/places/grand-mosque-cotabato__3.jpg",
+     "page": "https://www.tourism.gov.ph/destination/barmm/tawi-tawi/barmm_maguindanao-del-norte_cotabato-city_sultan-haji-hassanal-bolkiah-mosque-grand-mosque-7/",
+     "author": "Department of Tourism",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1066,
+     "caption": "Inside the prayer hall of the Grand Mosque, a wide carpeted floor under a lit central dome.",
+     "tone": [
+      25,
+      0.23
+     ]
     }
    ],
    "from_guide": true,
@@ -292,6 +334,31 @@
      "tone": [
       99,
       0.36
+     ]
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Kutawato_Cave_1.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Kutawato_Cave_1.jpg",
+     "author": "Francis 188",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1024,
+     "height": 683,
+     "caption": "Inside the Kutawato Caves, a limestone chamber with a still pool at its edge.",
+     "tone": null
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Kutawato_Cave_signage.jpg/1280px-Kutawato_Cave_signage.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Kutawato_Cave_signage.jpg",
+     "author": "MarkoDalisay",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 4032,
+     "height": 3024,
+     "caption": "The Kutawato Cave sign beside the limestone face of the hill.",
+     "tone": [
+      6,
+      0.39
      ]
     }
    ],
@@ -1587,6 +1654,20 @@
       95,
       0.56
      ]
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Drupadia_hayashii%2C_habitat_on_Sibutu_Island.jpg/1280px-Drupadia_hayashii%2C_habitat_on_Sibutu_Island.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Drupadia_hayashii,_habitat_on_Sibutu_Island.jpg",
+     "author": "Hisakazu HAYASHI",
+     "license": "CC BY-SA 3.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+     "width": 1417,
+     "height": 2076,
+     "caption": "Coconut palms and dense scrub forest on Sibutu Island, habitat of the Drupadia hayashii butterfly.",
+     "tone": [
+      80,
+      0.3
+     ]
     }
    ],
    "from_guide": false,
@@ -1672,6 +1753,34 @@
      "tone": [
       216,
       0.67
+     ]
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Flagpole_PanguanIsland.jpg/1280px-Flagpole_PanguanIsland.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Flagpole_PanguanIsland.jpg",
+     "author": "Ervin Malicdem",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 4032,
+     "height": 3024,
+     "caption": "The country's southernmost flagpole, raised on Panguan Island in 2017, in a clearing by the island's trees.",
+     "tone": [
+      213,
+      0.72
+     ]
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Drone_panguan_mapping.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Drone_panguan_mapping.jpg",
+     "author": "Ervin Malicdem",
+     "license": "Attribution",
+     "license_url": null,
+     "width": 824,
+     "height": 589,
+     "caption": "A mapping team walks Panguan Island's long white-sand beach in 2017.",
+     "tone": [
+      215,
+      0.61
      ]
     }
    ],
@@ -1946,43 +2055,60 @@
    ],
    "images": [
     {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Tugaya_Lanao_del_Sur_baul_chest8.jpg/1280px-Tugaya_Lanao_del_Sur_baul_chest8.jpg",
-     "page": "https://commons.wikimedia.org/wiki/File:Tugaya_Lanao_del_Sur_baul_chest8.jpg",
-     "author": "Valenzuela400",
-     "license": "CC BY-SA 4.0",
-     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-     "width": 4096,
-     "height": 2640,
-     "caption": "A wooden chest inlaid with mother-of-pearl in the okir-patterned style Tugaya's craftsmen are known for.",
+     "url": "/places/tugaya__1.jpg",
+     "page": "https://www.tourism.gov.ph/destination/barmm/tawi-tawi/barmm_lanao-del-sur_tugaya/",
+     "author": "Department of Tourism",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1068,
+     "height": 1600,
+     "caption": "An inlaid chest, carved okir panels and brass jars crowd a craft shop in Tugaya, the Maranao craft town on Lake Lanao.",
      "tone": [
-      20,
-      0.27
+      26,
+      0.44
      ]
     },
     {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Tugaya_Lanao_del_Sur_inlays_mother_of_pearl_crafts12.jpg/1280px-Tugaya_Lanao_del_Sur_inlays_mother_of_pearl_crafts12.jpg",
-     "page": "https://commons.wikimedia.org/wiki/File:Tugaya_Lanao_del_Sur_inlays_mother_of_pearl_crafts12.jpg",
-     "author": "Valenzuela400",
-     "license": "CC BY-SA 4.0",
-     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-     "width": 3072,
-     "height": 4096,
-     "caption": "A tall wooden jar and stand inlaid with mother-of-pearl, Tugaya work shown at a crafts fair.",
+     "url": "/places/tugaya__2.jpg",
+     "page": "https://www.tourism.gov.ph/destination/barmm/tawi-tawi/barmm_lanao-del-sur_tugaya-15/",
+     "author": "Department of Tourism",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1066,
+     "caption": "A Tugaya woodworker turns a log on a lathe in a workshop stacked with carved jars and wood shavings.",
      "tone": [
-      24,
-      0.19
+      35,
+      0.57
      ]
     },
     {
-     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Tugaya_Lanao_del_Sur_kris_sword5.jpg/1280px-Tugaya_Lanao_del_Sur_kris_sword5.jpg",
-     "page": "https://commons.wikimedia.org/wiki/File:Tugaya_Lanao_del_Sur_kris_sword5.jpg",
-     "author": "Valenzuela400",
-     "license": "CC BY-SA 4.0",
-     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-     "width": 4028,
-     "height": 2190,
-     "caption": "A kris on an inlaid wooden display stand, from Tugaya's metal and woodworking tradition.",
-     "tone": null
+     "url": "/places/tugaya__3.jpg",
+     "page": "https://www.tourism.gov.ph/destination/barmm/tawi-tawi/barmm_lanao-del-sur_tugaya-12/",
+     "author": "Department of Tourism",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1066,
+     "caption": "A carver chisels the scrolling okir pattern into a wooden panel in Tugaya.",
+     "tone": [
+      23,
+      0.55
+     ]
+    },
+    {
+     "url": "/places/tugaya__4.jpg",
+     "page": "https://www.tourism.gov.ph/destination/barmm/tawi-tawi/barmm_lanao-del-sur_tugaya-7/",
+     "author": "Department of Tourism",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1066,
+     "caption": "Brass gongs hang above rows of mother-of-pearl inlaid boxes in a Tugaya workshop.",
+     "tone": [
+      38,
+      0.45
+     ]
     }
    ],
    "from_guide": true,
@@ -2496,6 +2622,20 @@
      "tone": [
       216,
       0.32
+     ]
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Nangi_Upi_14.jpg/1280px-Nangi_Upi_14.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Nangi_Upi_14.jpg",
+     "author": "LuzViMindaLife",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 4000,
+     "height": 3000,
+     "caption": "Ripening rice below a forested peak in Nangi, Upi.",
+     "tone": [
+      216,
+      0.49
      ]
     }
    ],
@@ -4362,6 +4502,20 @@
      "tone": [
       247,
       0.26
+     ]
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Downtown_Bongao.jpg/1280px-Downtown_Bongao.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Downtown_Bongao.jpg",
+     "author": "DMuksan",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 2093,
+     "height": 2791,
+     "caption": "Morning mist over Bongao at sunrise, seen from Capitol Hill.",
+     "tone": [
+      48,
+      0.56
      ]
     }
    ],
@@ -6956,6 +7110,48 @@
       22,
       0.67
      ]
+    },
+    {
+     "url": "/places/ambalang-museum__1.jpg",
+     "page": "https://www.tourism.gov.ph/destination/barmm/tawi-tawi/barmm_basilan_lamitan-city_gamaba-weaving-center/",
+     "author": "Department of Tourism",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1066,
+     "caption": "Yakan weavers in their striped dress outside the GAMABA Cultural Center in Lamitan.",
+     "tone": [
+      354,
+      0.58
+     ]
+    },
+    {
+     "url": "/places/ambalang-museum__2.jpg",
+     "page": "https://www.tourism.gov.ph/destination/barmm/tawi-tawi/barmm_basilan_lamitan-city_gamaba-weaving-center-2/",
+     "author": "Department of Tourism",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1066,
+     "caption": "Inside the weaving center, Yakan women work at backstrap looms strung with bright warps.",
+     "tone": [
+      21,
+      0.35
+     ]
+    },
+    {
+     "url": "/places/ambalang-museum__3.jpg",
+     "page": "https://www.tourism.gov.ph/destination/barmm/tawi-tawi/barmm_basilan_lamitan-city_gamaba-weaving-center-4/",
+     "author": "Department of Tourism",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1066,
+     "height": 1600,
+     "caption": "An elder Yakan weaver picks out a pattern on her loom at the Lamitan weaving center.",
+     "tone": [
+      354,
+      0.75
+     ]
     }
    ],
    "do": [
@@ -7252,6 +7448,20 @@
      "tone": [
       247,
       0.26
+     ]
+    },
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Biraddali_Falls%2C_Languyan%2C_Tawi-Tawi.jpg/1280px-Biraddali_Falls%2C_Languyan%2C_Tawi-Tawi.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Biraddali_Falls,_Languyan,_Tawi-Tawi.jpg",
+     "author": "DMuksan",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 3000,
+     "height": 4000,
+     "caption": "Biraddali Falls spilling over rock into a forest pool in Languyan, on Tawi-Tawi Island.",
+     "tone": [
+      65,
+      0.41
      ]
     }
    ],
