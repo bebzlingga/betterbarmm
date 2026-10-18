@@ -5018,7 +5018,22 @@
    "getting_there": null,
    "best_time": null,
    "do": [],
-   "images": [],
+   "images": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Marawi_KM0_marker%2C_Al_Ikhlas_%28Marawi%2C_Lanao_Del_Sur%3B_10-14-2023%29.jpg/1280px-Marawi_KM0_marker%2C_Al_Ikhlas_%28Marawi%2C_Lanao_Del_Sur%3B_10-14-2023%29.jpg",
+     "page": "https://en.wikipedia.org/wiki/File:Marawi_KM0_marker,_Al_Ikhlas_(Marawi,_Lanao_Del_Sur;_10-14-2023).jpg",
+     "author": "Patrickroque01",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+     "width": 1280,
+     "height": 960,
+     "caption": "The Kilometer Zero marker on a street corner in Marawi, inscribed as the original reference point of all roads of Mindanao.",
+     "tone": [
+      218,
+      0.7
+     ]
+    }
+   ],
    "slug": "kilometer-zero-marawi",
    "name": "Kilometer Zero of Mindanao",
    "kind": "heritage",
