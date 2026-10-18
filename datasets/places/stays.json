@@ -186,7 +186,13 @@
    "accredited": false,
    "source": "https://bangsamoro.gov.ph/news/latest-news/mipa-boosts-basilan-ips-livelihoods-through-coconut-training/",
    "as_of": "2026-10",
-   "image": null
+   "image": {
+    "url": "/places/stays/stay-sitti-auna-riverland.jpg",
+    "page": "https://www.lamitancity.gov.ph/lcw/tourism/tourist-attraction/",
+    "author": "City Government of Lamitan",
+    "license": "Philippine government work",
+    "caption": "Sitti Auna Riverland Resort, Lamitan City: footbridges and fishponds in the resort grounds, as shown on the city's tourist attractions page"
+   }
   },
   {
    "name": "ARCAR Pension House",
