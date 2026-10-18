@@ -199,7 +199,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 					) : (
 						<p className='mt-3 text-[13.5px] text-[var(--ink-3)]'>No dated list of past heads found yet.</p>
 					)}
-					<p className='mt-3 text-[12.5px] text-[var(--ink-3)]'>
+					<p className='mt-3 text-[12.5px] text-[var(--ink-mute)] opacity-70'>
 						Read with the office’s{' '}
 						<a href={budgetHref(o)} className={linkClass}>
 							budget
@@ -228,8 +228,16 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 					</div>
 				</div>
 
-				{org ? <OrgNote org={org} /> : null}
-				<p className={`${org?.note ? 'mt-4' : 'mt-16'} text-[12.5px] leading-[1.7] text-[var(--ink-3)]`}>{directoryMeta.note}</p>
+				{/* Where it all came from, as a section of its own under the two columns. */}
+				<section aria-labelledby='read' className='mt-16'>
+					<h2 id='read' className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+						How this was read
+					</h2>
+					<div className='mt-2 space-y-2 text-[12.5px] leading-[1.7] text-[var(--ink-mute)] opacity-70'>
+						{org ? <OrgNote org={org} /> : null}
+						<p>{directoryMeta.note}</p>
+					</div>
+				</section>
 			</section>
 		</DirectoryDialog>
 	)
