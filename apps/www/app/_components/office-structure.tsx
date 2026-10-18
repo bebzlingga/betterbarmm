@@ -59,7 +59,7 @@ function Row({ u, depth }: { u: OrgUnit; depth: number }) {
 		<div className='grid gap-x-6 gap-y-0.5 py-2.5 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]'>
 			<p className={`${depth ? 'text-[13px] font-semibold' : 'text-[14px] font-bold'} leading-snug`}>
 				{tidy(u.name)}
-				{u.source_kind === 'law' ? <span className='ml-2 font-mono text-[9px] font-semibold whitespace-nowrap uppercase tracking-[0.12em] text-[var(--ink-3)]'>By law</span> : null}
+				{u.source_kind === 'law' ? <span className='ml-2 font-mono text-[9px] font-semibold whitespace-nowrap uppercase tracking-[0.12em] text-[var(--ink-mute)] opacity-60'>By law</span> : null}
 				{u.units?.length ? <span className='ml-2 text-[11.5px] font-normal text-[var(--ink-mute)]'>{count(u.units).all}</span> : null}
 			</p>
 			<p className='text-[13px] leading-snug'>
