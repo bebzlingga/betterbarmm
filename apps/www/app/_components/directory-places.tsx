@@ -170,7 +170,7 @@ export function DirectoryPlaces() {
 											) : placeSeal(g.slug, u.slug) ? (
 												// No photograph: the town's official seal, on the card's ground.
 												// eslint-disable-next-line @next/next/no-img-element
-												<img src={placeSeal(g.slug, u.slug)!.src} alt={`The seal of ${u.name}`} title={`Seal: ${placeSeal(g.slug, u.slug)!.credit}`} loading='lazy' className='size-full bg-[var(--paper-2)] object-contain! p-3' />
+												<img src={placeSeal(g.slug, u.slug)!.src} alt={`The seal of ${u.name}`} title={`Seal: ${placeSeal(g.slug, u.slug)!.credit}`} loading='lazy' className='size-full bg-[var(--paper-2)] object-contain! p-2 sm:p-5' />
 											) : (
 												<TownMap province={g.slug} town={u.slug} name={u.name} />
 											)}

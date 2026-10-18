@@ -19,7 +19,7 @@ function OfficeLogo({ slug, acronym }: { slug: string; acronym: string | null })
 	const logo = officeLogo(slug)
 	return logo ? (
 		// eslint-disable-next-line @next/next/no-img-element
-		<img src={logo.src} alt='' title={`Logo: ${logo.credit}`} loading='lazy' className='size-full bg-[var(--paper-2)] object-contain! p-3' />
+		<img src={logo.src} alt='' title={`Logo: ${logo.credit}`} loading='lazy' className='size-full bg-[var(--paper-2)] object-contain! p-2 sm:p-5' />
 	) : (
 		<span aria-hidden='true' className='grid size-full place-items-center bg-[var(--paper-2)] font-mono text-[11px] font-bold text-[var(--ink-3)] sm:text-[18px]'>
 			{(acronym ?? '').slice(0, 5)}
