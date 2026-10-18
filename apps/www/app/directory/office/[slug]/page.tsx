@@ -219,7 +219,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 					</div>
 				</div>
 
-				<p className='mt-16 max-w-3xl text-[12.5px] leading-[1.7] text-[var(--ink-3)]'>{directoryMeta.note}</p>
+				<p className='mt-16 text-[12.5px] leading-[1.7] text-[var(--ink-3)]'>{directoryMeta.note}</p>
 			</section>
 		</DirectoryDialog>
 	)
