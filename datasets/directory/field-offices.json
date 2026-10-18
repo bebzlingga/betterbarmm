@@ -699,6 +699,71 @@
    },
    "source": "https://bangsamoro.gov.ph/news/latest-news/world-teachers-day-mbhte-honors-more-than-2000-teachers-in-tawi-tawi-celebration/",
    "head_as_of": "2026-10"
+  },
+  {
+   "ministry_slug": "ministry-of-the-interior-and-local-government",
+   "office": "MILG Maguindanao del Norte Provincial Field Office",
+   "province": "Maguindanao del Norte",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Tarhata L. Balading, PhD",
+    "title": "Provincial Director"
+   },
+   "source": "https://api.milgbarmm.com/api/v1/public/website/about/key-officials",
+   "head_as_of": "2025-10"
+  },
+  {
+   "ministry_slug": "ministry-of-the-interior-and-local-government",
+   "office": "MILG Maguindanao del Sur Provincial Field Office",
+   "province": "Maguindanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Engr. Amina T. Dalandag",
+    "title": "Provincial Director"
+   },
+   "source": "https://api.milgbarmm.com/api/v1/public/website/about/key-officials",
+   "head_as_of": "2025-10"
+  },
+  {
+   "ministry_slug": "ministry-of-the-interior-and-local-government",
+   "office": "MILG Cotabato City Field Office",
+   "province": "Cotabato City",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Edgardo C. Padolina",
+    "title": "Acting City Director"
+   },
+   "source": "https://api.milgbarmm.com/api/v1/public/website/about/key-officials",
+   "head_as_of": "2025-07"
+  },
+  {
+   "ministry_slug": "ministry-of-the-interior-and-local-government",
+   "office": "MILG Lamitan City Field Unit",
+   "province": "Basilan",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Indirah-Patra A. Juaini",
+    "title": "City LGOO"
+   },
+   "source": "https://api.milgbarmm.com/api/v1/public/website/about/key-officials",
+   "head_as_of": "2025-10"
+  },
+  {
+   "ministry_slug": "ministry-of-the-interior-and-local-government",
+   "office": "MILG Marawi City Field Unit",
+   "province": "Lanao del Sur",
+   "address": null,
+   "phones": [],
+   "head": {
+    "name": "Alibaer M. Pangandaman",
+    "title": "City LGOO"
+   },
+   "source": "https://api.milgbarmm.com/api/v1/public/website/about/key-officials",
+   "head_as_of": "2025-10"
   }
  ]
 }
