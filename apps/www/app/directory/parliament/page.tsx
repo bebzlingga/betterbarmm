@@ -43,7 +43,7 @@ export default function ParliamentDirectoryPage() {
 			<Masthead brand label='Directory' lines={['Members of Parliament']} />
 
 			<section className='bb-container bb-section'>
-				<p className='max-w-3xl text-[14.5px] leading-[1.7] text-[var(--ink-2)]'>
+				<p className='text-[14.5px] leading-[1.7] text-[var(--ink-2)]'>
 					The {members.length} Members elected on 14 September 2026, who take office on 30 October 2026. Their offices in Parliament are not yet published; until they are, write through the{' '}
 					<a href='https://parliament.bangsamoro.gov.ph/' target='_blank' rel='noreferrer' className={linkClass}>
 						Bangsamoro Parliament
