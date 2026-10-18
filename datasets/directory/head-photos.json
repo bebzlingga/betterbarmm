@@ -82,11 +82,6 @@
    "page": "https://bangsamoro.gov.ph/officials/key-officials/",
    "credit": "Bangsamoro Government, Key Officials"
   },
-  "special-geographic-area-development-authority": {
-   "src": "/directory/heads/special-geographic-area-development-authority.jpg",
-   "page": "https://parliament.bangsamoro.gov.ph/member-parliament/malang-butch-p/",
-   "credit": "Bangsamoro Parliament"
-  },
   "bangsamoro-human-rights-commission": {
    "src": "/directory/heads/bangsamoro-human-rights-commission.jpg",
    "page": "https://bhrc.bangsamoro.gov.ph/chairpersons-corner/",
@@ -141,6 +136,11 @@
    "src": "/directory/heads/office-of-the-wali-of-bangsamoro.jpg",
    "page": "https://wali.bangsamoro.gov.ph/wali-profile/",
    "credit": "Office of the Wali of Bangsamoro"
+  },
+  "special-geographic-area-development-authority": {
+   "src": "/directory/heads/special-geographic-area-development-authority.jpg",
+   "page": "https://parliament.bangsamoro.gov.ph/member-parliament/antao-mohammad-kelie-u/",
+   "credit": "Bangsamoro Parliament"
   }
  }
 }

@@ -433,7 +433,16 @@
      "title": "Administrator",
      "from": "2022-09",
      "to": null,
-     "source": "https://bangsamoro.gov.ph/news/latest-news/chief-minister-ebrahims-swears-in-new-set-of-cabinet/"
+     "source": "https://bangsamoro.gov.ph/news/latest-news/chief-minister-ebrahims-swears-in-new-set-of-cabinet/",
+     "former": true,
+     "last_seen": "2026-04"
+    },
+    {
+     "name": "Mohammad Kelie U. Antao",
+     "title": "Administrator",
+     "from": "2026-07",
+     "to": null,
+     "source": "https://www.inquirer.net/481050/party-switching-reshapes-bangsamoro-political-landscape/"
     }
    ]
   },

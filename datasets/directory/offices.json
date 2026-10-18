@@ -635,10 +635,10 @@
    "name": "Special Geographic Area Development Authority",
    "acronym": "SGADA",
    "head": {
-    "name": "Butch Malang",
+    "name": "Mohammad Kelie U. Antao",
     "title": "Administrator",
-    "as_of": "2026-02-27",
-    "source": "https://bangsamoro.gov.ph/news/latest-news/sgada-hosts-ramadhan-quran-tilt-to-deepen-islamic-faith-in-sga/"
+    "as_of": "2026-07-18",
+    "source": "https://www.inquirer.net/481050/party-switching-reshapes-bangsamoro-political-landscape/"
    },
    "address": null,
    "phones": [],
@@ -646,6 +646,10 @@
    "website": null,
    "facebook": null,
    "sources": [
+    {
+     "label": "Inquirer, Party switching reshapes Bangsamoro political landscape (CM Macacua appoints Kelie Antao SGA administrator), 2026-07-18",
+     "url": "https://www.inquirer.net/481050/party-switching-reshapes-bangsamoro-political-landscape/"
+    },
     {
      "label": "BARMM news, SGADA Qur'an tilt (SGADA Administrator and MP Butch Malang), 2026-02-27",
      "url": "https://bangsamoro.gov.ph/news/latest-news/sgada-hosts-ramadhan-quran-tilt-to-deepen-islamic-faith-in-sga/"
@@ -1199,6 +1203,40 @@
     }
    ],
    "checked": null
+  },
+  {
+   "slug": "bangsamoro-readi",
+   "name": "Bangsamoro Rapid Emergency Action on Disaster Incidence",
+   "acronym": "READi",
+   "head": {
+    "name": "Muhammad Farzieh B. Abutazil",
+    "title": "Director",
+    "as_of": "2026-08-04",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-pushes-unified-disaster-response-across-lgus/"
+   },
+   "address": null,
+   "phones": [],
+   "emails": [],
+   "website": null,
+   "facebook": null,
+   "sources": [
+    {
+     "label": "BARMM news, Bangsamoro DRRM Summit 2026 (READi Head Director Muhammad Farzieh Abutazil), 2026-08-04",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-pushes-unified-disaster-response-across-lgus/"
+    },
+    {
+     "label": "BARMM news, READi quick response teams in Talayan and Calanogas (the MILG's Bangsamoro READi), 2026-07-12",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-govt-deploys-emergency-teams-for-rescue-operations-in-two-barmm-towns/"
+    },
+    {
+     "label": "BARMM news, flood response (Abutazil, director of Bangsamoro READi), 2026-07-09",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-govts-flood-response-intensifies-amid-enhanced-southwest-monsoon/"
+    }
+   ],
+   "checked": null,
+   "kind": "attached",
+   "parent": "ministry-of-the-interior-and-local-government",
+   "budget_of": "ministry-of-the-interior-and-local-government"
   }
  ]
 }

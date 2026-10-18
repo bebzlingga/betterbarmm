@@ -9630,7 +9630,7 @@
    "note": "The chart shows every staff member's portrait, name and position. The first card under each division (the usual place of the division head) is taken as its head; the chart prints only position titles and does not call anyone 'Chief' of a division. No field offices are shown, and no citizen's charter was found."
   },
   "special-geographic-area-development-authority": {
-   "as_of": "2026-04",
+   "as_of": "2026-07",
    "sources": [
     {
      "label": "Bangsamoro Administrative Code (BAA 13), Book VI Title VIII, Chapter 6, Secs. 14-20",
@@ -9639,6 +9639,10 @@
     {
      "label": "BARMM Official Website news releases, 2025-2026",
      "url": "https://bangsamoro.gov.ph/news/latest-news/"
+    },
+    {
+     "label": "Inquirer, Party switching reshapes Bangsamoro political landscape (Antao appointed SGA administrator), 2026-07-18",
+     "url": "https://www.inquirer.net/481050/party-switching-reshapes-bangsamoro-political-landscape/"
     }
    ],
    "units": [
@@ -9658,11 +9662,11 @@
      "name": "Administrator",
      "kind": "office",
      "head": {
-      "name": "Butch P. Malang",
-      "title": "SGADA Administrator and Member of Parliament",
+      "name": "Mohammad Kelie U. Antao",
+      "title": "SGA Administrator",
       "source": {
-       "url": "https://bangsamoro.gov.ph/news/latest-news/mpos-partners-settle-clan-conflict-in-sga/",
-       "date": "2026-04-16"
+       "url": "https://www.inquirer.net/481050/party-switching-reshapes-bangsamoro-political-landscape/",
+       "date": "2026-07-18"
       }
      },
      "source": {
@@ -12808,6 +12812,80 @@
     }
    ],
    "note": "The Wali site's 'Functional Organogram Chart' page has only a legend in its stored content (the chart is not in the page), and the site now shows an 'under construction' page, so divisions are from BAA 13. The citizen's charter images in its media library are banners with no text. The profile page also lists former Wali Sheikh Khalipha Usman Nando (2019-Feb 2023) and Officer-in-Charge Omarkhalid A. Ampatuan (March 2023)."
+  },
+  "bangsamoro-readi": {
+   "as_of": "2026-09",
+   "sources": [
+    {
+     "label": "MILG, Key Officials page (content served by the MILG website API)",
+     "url": "https://www.milgbarmm.com/about/key-officials"
+    },
+    {
+     "label": "MILG website API, key officials JSON (per-record updated_at dates)",
+     "url": "https://api.milgbarmm.com/api/v1/public/website/about/key-officials"
+    },
+    {
+     "label": "Bangsamoro Administrative Code (BAA 13), Book III Title VIII, pp. 108-114",
+     "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/03/BA-Act-No.13-Bangsamoro-Administrative-Code-Proofread-04052021-3-33pm.pdf"
+    }
+   ],
+   "units": [
+    {
+     "name": "Research and Planning Division - Bangsamoro READi",
+     "kind": "division",
+     "head": {
+      "name": "Ruwaida M. Abas",
+      "title": "Chief",
+      "source": {
+       "url": "https://api.milgbarmm.com/api/v1/public/website/about/key-officials",
+       "date": "2025-07-02"
+      }
+     },
+     "source": {
+      "url": "https://api.milgbarmm.com/api/v1/public/website/about/key-officials",
+      "date": "2025-07-02"
+     },
+     "source_kind": "website",
+     "units": []
+    },
+    {
+     "name": "Emergency Operation Division - Bangsamoro READi",
+     "kind": "division",
+     "head": {
+      "name": "Leobelo Jofel A. Delicana",
+      "title": "Chief",
+      "source": {
+       "url": "https://api.milgbarmm.com/api/v1/public/website/about/key-officials",
+       "date": "2025-07-02"
+      }
+     },
+     "source": {
+      "url": "https://api.milgbarmm.com/api/v1/public/website/about/key-officials",
+      "date": "2025-07-02"
+     },
+     "source_kind": "website",
+     "units": []
+    },
+    {
+     "name": "Administration and Training Division - Bangsamoro READi",
+     "kind": "division",
+     "head": {
+      "name": "Jihada L. Karon-Maisalat",
+      "title": "Chief",
+      "source": {
+       "url": "https://api.milgbarmm.com/api/v1/public/website/about/key-officials",
+       "date": "2025-10-20"
+      }
+     },
+     "source": {
+      "url": "https://api.milgbarmm.com/api/v1/public/website/about/key-officials",
+      "date": "2025-10-20"
+     },
+     "source_kind": "website",
+     "units": []
+    }
+   ],
+   "note": "Read from the MILG key officials list, where READi sits as the \"Bangsamoro READi & SGAFO\" branch of the ministry; its divisions are listed here as READi's own."
   }
  }
 }

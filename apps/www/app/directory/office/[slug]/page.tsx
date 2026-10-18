@@ -37,6 +37,9 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 	const portrait = headPhoto(o.slug)
 	const building = officePhoto(o.slug, o.address)
 	const org = officeStructure(o.slug)
+	// An office funded within another's budget links to that one.
+	const budget = budgetHref({ slug: o.budget_of ?? o.slug })
+	const budgetOwner = o.budget_of ? directoryOffice(o.budget_of) : undefined
 	const logo = officeLogo(o.slug)
 
 	return (
@@ -132,8 +135,8 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 						<ul className='mt-2 space-y-1.5 text-[14px] leading-6'>
 							<li className='flex gap-2'>
 								<CoinsIcon size={15} className='mt-1 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
-								<a href={budgetHref(o)} className={linkClass}>
-									Year by year, in the Budget workspace
+								<a href={budget} className={linkClass}>
+									{budgetOwner ? `Within the ${budgetOwner.acronym ?? budgetOwner.name}’s budget, year by year` : 'Year by year, in the Budget workspace'}
 								</a>
 							</li>
 						</ul>
@@ -214,7 +217,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 					)}
 					<p className='mt-3 text-[12.5px] text-[var(--ink-mute)] opacity-70'>
 						Read with the office’s{' '}
-						<a href={budgetHref(o)} className={linkClass}>
+						<a href={budget} className={linkClass}>
 							budget
 						</a>
 						, a tenure says who ran the office when its money was spent.

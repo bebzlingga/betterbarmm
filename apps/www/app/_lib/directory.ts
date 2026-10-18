@@ -43,6 +43,11 @@ export type DirectoryOffice = {
 	sources: { label: string; url: string }[]
 	/** When an editor last confirmed the entry against its sources. */
 	checked?: string | null
+	/** For an office the programs-and-services list doesn't carry: its kind and the office it sits under. */
+	kind?: 'office' | 'ministry' | 'attached'
+	parent?: string | null
+	/** The office whose budget funds this one, where it has no budget line of its own. */
+	budget_of?: string
 }
 
 export type Hotline = { name: string; number: string; source: string }
@@ -69,8 +74,8 @@ const KIND = new Map(serviceOffices.map((o) => [o.slug, o]))
 /** The office's kind and parent, kept with its programs and services so the two lists never disagree. */
 export const directoryOffices = (dataset.offices as DirectoryOffice[]).map((o) => ({
 	...o,
-	kind: KIND.get(o.slug)?.kind ?? 'attached',
-	parent: KIND.get(o.slug)?.parent ?? null,
+	kind: KIND.get(o.slug)?.kind ?? o.kind ?? 'attached',
+	parent: KIND.get(o.slug)?.parent ?? o.parent ?? null,
 }))
 export const directoryOffice = (slug: string) => directoryOffices.find((o) => o.slug === slug)
 
