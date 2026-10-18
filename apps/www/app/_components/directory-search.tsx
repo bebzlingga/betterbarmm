@@ -159,7 +159,7 @@ export function DirectorySearch({ head, children }: { head: React.ReactNode; chi
 
 			<div id='directory-results' aria-live='polite'>
 				{query.trim() ? (
-					<div className='bb-container py-16 lg:py-24'>
+					<div className={`bb-container ${total ? 'py-16 lg:py-24' : 'py-32 lg:py-48'}`}>
 						{/* A count over the results; with none, the line stands alone in the middle. */}
 						<p className={`text-[13.5px] text-[var(--ink-3)] ${total ? '' : 'text-center'}`}>
 							{!entries
