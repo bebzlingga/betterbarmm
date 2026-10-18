@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation'
 import { DirectoryHead, Phone, linkClass, monthYear } from '../../../_components/directory-bits'
 import { DirectoryDialog } from '../../../_components/directory-dialog'
 import { directoryMeta, directoryOffice, directoryOffices, fieldOffices, headPhoto, officeHistory, officeLogo, officePhoto, officeStructure } from '../../../_lib/directory'
-import { OfficeStructure } from '../../../_components/office-structure'
+import { OfficeStructure, OrgNote } from '../../../_components/office-structure'
 import { HeadPortrait } from '../../../_components/head-portrait'
 import { budgetHref, officeBySlug } from '../../../_lib/services'
 import { pageMeta } from '../../../_lib/seo'
@@ -84,9 +84,6 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 							<p className='mt-1 text-[15px] text-[var(--ink-3)]'>Not named in an official source we could read.</p>
 						)}
 						{service?.mandate ? <p className='mt-6 max-w-xl text-[14.5px] leading-[1.7] text-[var(--ink-2)]'>{service.mandate}</p> : null}
-						<a href={budgetHref(o)} className={`mt-5 inline-flex items-center gap-1.5 text-[14px] font-semibold ${linkClass}`}>
-							<CoinsIcon size={16} aria-hidden='true' /> Its budget, year by year
-						</a>
 					</div>
 
 					<div>
@@ -128,6 +125,18 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 							{!o.phones.length && !o.emails.length && !o.address ? <li className='text-[var(--ink-3)]'>No public number or email found.</li> : null}
 						</ul>
 						{o.checked ? <p className='mt-3 text-[12px] text-[var(--ink-3)]'>Checked by an editor, {o.checked}.</p> : null}
+					</div>
+
+					<div>
+						<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Its budget</p>
+						<ul className='mt-2 space-y-1.5 text-[14px] leading-6'>
+							<li className='flex gap-2'>
+								<CoinsIcon size={15} className='mt-1 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
+								<a href={budgetHref(o)} className={linkClass}>
+									Year by year, in the Budget workspace
+								</a>
+							</li>
+						</ul>
 					</div>
 					</aside>
 
@@ -219,7 +228,8 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 					</div>
 				</div>
 
-				<p className='mt-16 text-[12.5px] leading-[1.7] text-[var(--ink-3)]'>{directoryMeta.note}</p>
+				{org ? <OrgNote org={org} /> : null}
+				<p className={`${org?.note ? 'mt-4' : 'mt-16'} text-[12.5px] leading-[1.7] text-[var(--ink-3)]`}>{directoryMeta.note}</p>
 			</section>
 		</DirectoryDialog>
 	)

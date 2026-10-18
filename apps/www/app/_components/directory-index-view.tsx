@@ -1,4 +1,4 @@
-import { ArrowRightIcon, PhoneIcon, SirenIcon } from '@phosphor-icons/react/ssr'
+import { ArrowRightIcon, EnvelopeSimpleIcon, PhoneIcon, SirenIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { linkClass } from './directory-bits'
 import { DirectoryPlaces } from './directory-places'
@@ -119,6 +119,14 @@ export function DirectoryIndex() {
 																<PhoneIcon size={12} className='shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
 																<span className='font-semibold tabular-nums'>{o.phones[0]}</span>
 																{o.phones.length > 1 ? <span className='text-[var(--ink-mute)]'>+{o.phones.length - 1}</span> : null}
+															</a>
+														</p>
+													) : null}
+													{o.emails[0] ? (
+														<p className={`${o.phones[0] ? 'mt-0.5' : 'mt-2'} truncate text-[12.5px]`}>
+															<a href={`mailto:${o.emails[0]}`} className='inline-flex max-w-full items-center gap-1.5 hover:text-[var(--accent)]'>
+																<EnvelopeSimpleIcon size={12} className='shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
+																<span className='truncate'>{o.emails[0]}</span>
 															</a>
 														</p>
 													) : null}

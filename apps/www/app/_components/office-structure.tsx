@@ -128,12 +128,17 @@ export function OfficeStructure({ org }: { org: OrgStructure }) {
 					.
 				</p>
 			) : null}
-			{org.note ? (
-				<details className='mt-1 text-[12.5px] leading-6 text-[var(--ink-3)]'>
-					<summary className='cursor-pointer list-none font-semibold hover:text-[var(--accent)] [&::-webkit-details-marker]:hidden'>How this was read</summary>
-					<p className='mt-1 max-w-4xl'>{org.note}</p>
-				</details>
-			) : null}
 		</section>
+	)
+}
+
+/** How the structure was read from its sources, folded; it goes at the foot of the office's dialog. */
+export function OrgNote({ org }: { org: OrgStructure }) {
+	if (!org.note) return null
+	return (
+		<details className='mt-16 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+			<summary className='cursor-pointer list-none font-semibold hover:text-[var(--accent)] [&::-webkit-details-marker]:hidden'>How this was read</summary>
+			<p className='mt-1'>{org.note}</p>
+		</details>
 	)
 }
