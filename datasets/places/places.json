@@ -1844,7 +1844,36 @@
     "https://www.ivanhenares.com/search/label/Marawi",
     "https://en.wikivoyage.org/wiki/Marawi"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/aga-khan-museum__1.jpg",
+     "page": "https://www.msumain.edu.ph/agakhan-museum-and-natural-science-museum/",
+     "author": "Mindanao State University",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 700,
+     "height": 374,
+     "caption": "The white arched front of the Aga Khan Museum on the Mindanao State University campus in Marawi.",
+     "tone": [
+      33,
+      0.25
+     ]
+    },
+    {
+     "url": "/places/aga-khan-museum__2.jpg",
+     "page": "https://www.flickr.com/photos/sittiealiah/4654999029/",
+     "author": "sittiealiah M A",
+     "license": "CC BY 2.0",
+     "license_url": "https://creativecommons.org/licenses/by/2.0/",
+     "width": 720,
+     "height": 540,
+     "caption": "The Aga Khan Museum and its garden in 2010, when the building was painted yellow and green.",
+     "tone": [
+      40,
+      0.47
+     ]
+    }
+   ],
    "from_guide": true,
    "do": [
     {
@@ -3655,7 +3684,36 @@
     "https://en.wikipedia.org/wiki/Basilan",
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/datu-kalun-shrine__1.jpg",
+     "page": "https://www.lamitancity.gov.ph/lcw/tourism/tourist-attraction/",
+     "author": "City Government of Lamitan",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 904,
+     "caption": "Datu Kalun's Park in Lamitan, with his bronze statue on a white pedestal at the centre of the plaza.",
+     "tone": [
+      214,
+      0.8
+     ]
+    },
+    {
+     "url": "/places/datu-kalun-shrine__2.jpg",
+     "page": "https://www.lamitancity.gov.ph/lcw/tourism/tourist-attraction/",
+     "author": "City Government of Lamitan",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1067,
+     "height": 1600,
+     "caption": "The bronze statue of Datu Kalun and its plaques at the Datu Kalun Shrine in Lamitan.",
+     "tone": [
+      34,
+      0.39
+     ]
+    }
+   ],
    "from_guide": false,
    "do": [
     {
@@ -3699,7 +3757,22 @@
     "https://en.wikipedia.org/wiki/Basilan",
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/monte-santo-shrine__1.jpg",
+     "page": "https://www.lamitancity.gov.ph/lcw/tourism/tourist-attraction/",
+     "author": "City Government of Lamitan",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1067,
+     "caption": "White crosses of the Stations of the Cross along the hillside path of Monte Santo in Lamitan.",
+     "tone": [
+      82,
+      0.33
+     ]
+    }
+   ],
    "from_guide": false,
    "do": [
     {
@@ -4808,7 +4881,22 @@
      "source": "https://en.wikivoyage.org/wiki/Marawi"
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/king-faisal-mosque__1.jpg",
+     "page": "https://www.msumain.edu.ph/extension-services-department/",
+     "author": "Mindanao State University",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1279,
+     "height": 708,
+     "caption": "The green-domed King Faisal Mosque on the MSU campus, behind a colourful KFCIAAS letter sign.",
+     "tone": [
+      205,
+      0.89
+     ]
+    }
+   ],
    "slug": "king-faisal-mosque",
    "name": "King Faisal Mosque",
    "kind": "mosque",
@@ -5018,7 +5106,22 @@
    "getting_there": null,
    "best_time": null,
    "do": [],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/padang-karbala__1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/bcpch-conducts-site-identification-and-validation-process-in-the-province-of-lanao-del-sur/",
+     "author": "Bangsamoro Commission for the Preservation of Cultural Heritage",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1024,
+     "height": 683,
+     "caption": "The stone sign of Padang Karbala Historical Park in Bayang, set in a grassy slope.",
+     "tone": [
+      80,
+      0.32
+     ]
+    }
+   ],
    "slug": "padang-karbala",
    "name": "Padang Karbala",
    "kind": "memory",
@@ -7191,7 +7294,22 @@
     "https://en.wikivoyage.org/wiki/Lanao_del_Sur",
     "https://www.gov.uk/foreign-travel-advice/philippines/warnings-and-insurance"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/agus-river__1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/bcpch-conducts-site-identification-and-validation-process-in-the-province-of-lanao-del-sur/",
+     "author": "Bangsamoro Commission for the Preservation of Cultural Heritage",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1024,
+     "height": 683,
+     "caption": "The fast-flowing Agus River in Marawi beside a surviving pier of the Spanish-era King Alfonso Bridge.",
+     "tone": [
+      82,
+      0.27
+     ]
+    }
+   ],
    "do": [],
    "eat": []
   }
