@@ -98,7 +98,7 @@ export const projects: Project[] = [
 		href: '/places',
 		measure: 'Islands, lakes, mosques',
 		blurb: 'Beaches, islands, lakes, mosques and heritage sites across the region: what is there, how to get there, what to know first.',
-		state: 'live',
+		state: 'soon', // hidden for now
 	},
 	{
 		key: 'services',

@@ -155,7 +155,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 			{overlay ? null : (
 				<UtilityBar
 					current='home'
-					project={activeItem === 'accidents' || activeItem === 'crafts' || activeItem === 'places' ? activeItem : undefined}
+					project={activeItem === 'accidents' || activeItem === 'crafts' ? activeItem : undefined}
 					className='bb-strip bg-[var(--paper-2)]'
 					switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
 					end={
@@ -346,7 +346,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 
 							<p className='bb-label mt-7'>Project</p>
 							<div className='mt-3 grid'>
-								{[...secondaryLinks, { key: 'accidents', href: '/accidents', label: 'Incident Watch' } as const, { key: 'crafts', href: '/crafts', label: 'Crafts' } as const, { key: 'places', href: '/places', label: 'Places' } as const].map((item) => (
+								{[...secondaryLinks, { key: 'accidents', href: '/accidents', label: 'Incident Watch' } as const, { key: 'crafts', href: '/crafts', label: 'Crafts' } as const].map((item) => (
 									<Link
 										key={item.href}
 										href={item.href}
