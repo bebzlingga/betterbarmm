@@ -159,7 +159,7 @@ export function DirectorySearch({ head, children }: { head: React.ReactNode; chi
 
 			<div id='directory-results' aria-live='polite'>
 				{query.trim() ? (
-					<div className='bb-container py-12'>
+					<div className='bb-container py-16 lg:py-24'>
 						<p className='text-[13.5px] text-[var(--ink-3)]'>
 							{!entries
 								? 'Searching…'
