@@ -1,6 +1,162 @@
 {
  "name": "Photographs of the food in the places catalogue",
  "note": "A dish's photograph by its slug, and a place's own food item's by 'place-slug|title', each freely licensed or a Philippine government work, credited.",
- "dishes": {},
- "eat": {}
+ "dishes": {
+  "piaparan": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Piaparan_a_Manok.jpg/1280px-Piaparan_a_Manok.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Piaparan_a_Manok.jpg",
+   "author": "Lokalpedia",
+   "license": "CC BY-SA 4.0",
+   "caption": "Piaparan a manok, chicken cooked with turmeric, coconut milk and grated coconut, served on a banana leaf."
+  },
+  "beef-rendang": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Beef_Rendang..JPG/1280px-Beef_Rendang..JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Beef_Rendang..JPG",
+   "author": "Miansari66",
+   "license": "CC0",
+   "caption": "A plate of beef rendang, the slow-cooked spiced beef that Maranao cooks call randang."
+  },
+  "satti": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/SattiTamu.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:SattiTamu.jpg",
+   "author": "Anak 1 at en.wikipedia",
+   "license": "Public domain",
+   "caption": "Tausug satti: grilled meat skewers with a bowl of spiced sauce and ta'mu rice cake in woven coconut leaf."
+  },
+  "kiyoning": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Maranao_chicken_pater_with_palapa_and_kuning_%28turmeric_rice%29_from_Bukidnon%2C_Philippines_01.jpg/1280px-Maranao_chicken_pater_with_palapa_and_kuning_%28turmeric_rice%29_from_Bukidnon%2C_Philippines_01.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Maranao_chicken_pater_with_palapa_and_kuning_(turmeric_rice)_from_Bukidnon,_Philippines_01.jpg",
+   "author": "Obsidian Soul",
+   "license": "CC0",
+   "caption": "A mound of yellow turmeric rice, the kiyoning or kuning of Moro tables, topped with chicken in palapa."
+  },
+  "junay": {
+   "url": "/places/food/junay.jpg",
+   "page": "https://bangsamoro.gov.ph/news/feature-story/ramadhan-series-a-tausug-inspired-iftar-dishes-you-shouldnt-miss/",
+   "author": "Bangsamoro Information Office",
+   "license": "Philippine government work",
+   "caption": "Junay, rice cooked in coconut milk with burnt-coconut spices and steamed in banana leaves."
+  },
+  "latoh": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Latok.jpg/1280px-Latok.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Latok.jpg",
+   "author": "Nurhazwaniabdulbahar",
+   "license": "CC BY-SA 4.0",
+   "caption": "A bowl of latoh sea grapes dressed with chilli, lime and garlic."
+  },
+  "agar-agar-salad": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Agar-agar_Sabah.jpg/1280px-Agar-agar_Sabah.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Agar-agar_Sabah.jpg",
+   "author": "Sweizhong",
+   "license": "CC BY-SA 4.0",
+   "caption": "A seaweed salad of crunchy agal-agal with green mango, tomato, shallots and chillies on a banana leaf."
+  },
+  "tinagtag": {
+   "url": "/places/food/tinagtag.jpg",
+   "page": "https://bangsamoro.gov.ph/news/feature-story/ramadhan-series-breaking-the-fast-with-maguindanao-del-surs-sweet-delights/",
+   "author": "Bangsamoro Information Office",
+   "license": "Philippine government work",
+   "caption": "Lacy discs of tinagtag, the fried rice-flour snack sold at Ramadhan stalls in Maguindanao del Sur."
+  },
+  "panyalam": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Panyalam.jpg/1280px-Panyalam.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Panyalam.jpg",
+   "author": "Arvin and Aiky",
+   "license": "CC BY 2.0",
+   "caption": "A plate of panyalam, the crisp-edged fried rice pancakes sold in Mindanao markets."
+  },
+  "dodol": {
+   "url": "/places/food/dodol.jpg",
+   "page": "https://bangsamoro.gov.ph/news/feature-story/ramadhan-series-traditional-meranaw-dishes-that-make-iftar-special/",
+   "author": "Bangsamoro Information Office",
+   "license": "Philippine government work",
+   "caption": "Rolls of Maranao dodol in bright wrappers hanging at a stall in Lanao del Sur."
+  },
+  "daral": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Daral%2C_a_Tausug_delicacy%2C_Mar_2026.jpg/1280px-Daral%2C_a_Tausug_delicacy%2C_Mar_2026.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Daral,_a_Tausug_delicacy,_Mar_2026.jpg",
+   "author": "Ralff Nestor Nacor",
+   "license": "CC BY-SA 4.0",
+   "caption": "Two daral, Tausug crepes rolled around sweetened coconut."
+  }
+ },
+ "eat": {
+  "grand-mosque-cotabato|Mud crab from the Kalanganan fishponds": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/1559Cuisine_foods_and_delicacies_in_Bulacan_Philippines_02.jpg/1280px-1559Cuisine_foods_and_delicacies_in_Bulacan_Philippines_02.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:1559Cuisine_foods_and_delicacies_in_Bulacan_Philippines_02.jpg",
+   "author": "Judgefloro",
+   "license": "CC0",
+   "caption": "Live mud crabs, tied and ready for the pot, on a market tray."
+  },
+  "bud-bongao|A knickerbocker after the climb": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Fresh_Knickerbocker_in_Zamboanga_City.jpg/1280px-Fresh_Knickerbocker_in_Zamboanga_City.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fresh_Knickerbocker_in_Zamboanga_City.jpg",
+   "author": "Rica Rentutar",
+   "license": "CC BY 4.0",
+   "caption": "Two cups of knickerbocker, fruit and jelly in chilled cream topped with ice cream, by the sea at sunset."
+  },
+  "panampangan-island|Grilled reef fish under the coconut trees": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/El_Nido%2C_Grilled_sea_fish%2C_Palawan%2C_Philippines.jpg/1280px-El_Nido%2C_Grilled_sea_fish%2C_Palawan%2C_Philippines.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:El_Nido,_Grilled_sea_fish,_Palawan,_Philippines.jpg",
+   "author": "Vyacheslav Argenberg",
+   "license": "CC BY 4.0",
+   "caption": "Reef fish grilling over coals on a beach."
+  },
+  "lake-lanao|Maranao sweets and snacks": {
+   "url": "/places/food/browa.jpg",
+   "page": "https://bangsamoro.gov.ph/news/feature-story/ramadhan-series-traditional-meranaw-dishes-that-make-iftar-special/",
+   "author": "Bangsamoro Information Office",
+   "license": "Philippine government work",
+   "caption": "Boxes of browa, the small Maranao sponge cakes, stacked for sale in Lanao del Sur."
+  },
+  "lake-buluan|Buluan Lake tilapia": {
+   "url": "/places/food/tilapia.jpg",
+   "page": "https://bangsamoro.gov.ph/news/feature-story/buluan-lake-how-tilapia-farming-changed-a-fishermans-life/",
+   "author": "Benyamen Cabuntalan/BIO",
+   "license": "Philippine government work",
+   "caption": "A fisherman hauls tilapia from his fish pen on Buluan Lake."
+  },
+  "lamitan|Satti and panyalam at a halal eatery": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/SattiTamu.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:SattiTamu.jpg",
+   "author": "Anak 1 at en.wikipedia",
+   "license": "Public domain",
+   "caption": "A plate of satti skewers with spiced sauce and ta'mu rice cake."
+  },
+  "lamitan|Basilan Brew coffee": {
+   "url": "/places/food/coffee.jpg",
+   "page": "https://bangsamoro.gov.ph/news/latest-news/mtit-basilan-equips-20-msmes-to-raise-coffee-quality-market-value/",
+   "author": "Yasser Nur/BIO",
+   "license": "Philippine government work",
+   "caption": "Coffee growers grade Basilan green coffee beans at a workshop in Lamitan City."
+  },
+  "adlaw-pagtabuh-tabuh|Marang off the carts": {
+   "url": "/places/food/marang.jpg",
+   "page": "https://bangsamoro.gov.ph/news/feature-story/keeping-barter-trade-alive-the-adlaw-pagtabuh-tabuh-of-tawi-tawi/",
+   "author": "Laila Aripin/BIO",
+   "license": "Philippine government work",
+   "caption": "Shoppers crowd round a cart of freshly harvested marang at the Adlaw Pagtabuh-tabuh market."
+  },
+  "adlaw-pagtabuh-tabuh|Cowfish and seaweed by the tumpok": {
+   "url": "/places/food/seaweed.jpg",
+   "page": "https://bangsamoro.gov.ph/news/feature-story/keeping-barter-trade-alive-the-adlaw-pagtabuh-tabuh-of-tawi-tawi/",
+   "author": "Laila Aripin/BIO",
+   "license": "Philippine government work",
+   "caption": "Badjao traders lay out heaps of seaweed, shellfish and fish at the Adlaw Pagtabuh-tabuh market."
+  },
+  "adlaw-pagtabuh-tabuh|Tausug sweets from the Batu-Batu stores": {
+   "url": "/places/food/sweets.jpg",
+   "page": "https://bangsamoro.gov.ph/news/feature-story/ramadhan-series-iftar-the-tawi-tawi-way-a-seafood-feast/",
+   "author": "Bangsamoro Information Office",
+   "license": "Philippine government work",
+   "caption": "A market stall in Tawi-Tawi piled with rice cakes, sweets and other native delicacies."
+  },
+  "mount-makaturing|Labas on the way to Butig": {
+   "url": "/places/food/labas.jpg",
+   "page": "https://bangsamoro.gov.ph/news/feature-story/ramadhan-series-traditional-meranaw-dishes-that-make-iftar-special/",
+   "author": "Bangsamoro Information Office",
+   "license": "Philippine government work",
+   "caption": "Smoked tuna on skewers over a long grill in Lanao del Sur."
+  }
+ }
 }
