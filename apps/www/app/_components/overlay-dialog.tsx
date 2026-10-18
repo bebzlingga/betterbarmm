@@ -12,7 +12,7 @@ import { useEffect, useRef } from 'react'
 
    `frame`: 'full' fills the window; 'panel' is a centred panel, 85% wide and 90% tall from a tablet
    up, and the whole screen on a phone. The panel holds
-   its own scroll; its close button stands just outside its top right corner. */
+   its own scroll; its close button stands in the window's top right corner, outside it. */
 
 export function OverlayDialog({
 	id,
@@ -81,10 +81,10 @@ export function OverlayDialog({
 			onClick={(e) => {
 				if (e.target === e.currentTarget) close()
 			}}
-			// From a tablet up the panel lets its close button stand outside it, in the dimmed margin.
+			// From a tablet up the panel lets its close button stand outside it, in the window's corner.
 			className={`fixed inset-0 z-[60] m-auto! border-0! p-0! outline-none ${frame === 'panel' ? 'overflow-hidden md:overflow-visible' : 'overflow-hidden'} ${size} ${className}`}
 		>
-			<button type='button' onClick={close} aria-label='Close' className={`absolute top-4 right-4 z-20 flex size-11 items-center justify-center transition hover:opacity-70 sm:top-5 sm:right-5 ${frame === 'panel' ? 'md:top-0 md:-right-16' : ''} ${closeClassName}`}>
+			<button type='button' onClick={close} aria-label='Close' className={`absolute top-4 right-4 z-20 flex size-11 items-center justify-center transition hover:opacity-70 sm:top-5 sm:right-5 ${frame === 'panel' ? 'md:fixed md:top-5 md:right-5' : ''} ${closeClassName}`}>
 				<XIcon size={26} weight='bold' aria-hidden='true' />
 			</button>
 			<div ref={scroller} className='h-full overflow-y-auto overscroll-contain'>
