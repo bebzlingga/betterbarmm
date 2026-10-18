@@ -1,4 +1,4 @@
-import { BuildingsIcon, CheckSquareOffsetIcon, CoinsIcon, DiamondsFourIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon } from '@phosphor-icons/react/ssr'
+import { BuildingsIcon, MapPinAreaIcon, CheckSquareOffsetIcon, CoinsIcon, DiamondsFourIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon } from '@phosphor-icons/react/ssr'
 import { GlobalSearch } from './global-search'
 import { SwitchCloser } from './switch-closer'
 
@@ -54,8 +54,7 @@ export type WorkspaceKey = (typeof WORKSPACES)[number]['key']
 const PROJECTS = [
 	{ key: 'accidents', href: 'https://betterbarmm.com/accidents', label: 'Incident Watch', icon: SirenIcon },
 	{ key: 'crafts', href: 'https://betterbarmm.com/crafts', label: 'Crafts', icon: DiamondsFourIcon },
-	// Places is hidden for now; its pages stay up at /places.
-	// { key: 'places', href: 'https://betterbarmm.com/places', label: 'Places', icon: MapPinAreaIcon },
+	{ key: 'places', href: 'https://betterbarmm.com/places', label: 'Places', icon: MapPinAreaIcon },
 ] as const
 
 export type ProjectKey = (typeof PROJECTS)[number]['key']
