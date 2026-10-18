@@ -1489,7 +1489,22 @@
     "https://janisnarvas.com/tawi-tawi/",
     "https://transitpinas.com/tawi-tawi-travel-guide-2022/"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/balobok-rock-shelter__1.jpg",
+     "page": "https://www.nationalmuseum.gov.ph/2022/06/28/balobok-rockshelter/",
+     "author": "National Museum of the Philippines",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1078,
+     "height": 750,
+     "caption": "The wooded limestone cove of the Balobok Rock Shelter on Sanga-Sanga, seen from the water.",
+     "tone": [
+      37,
+      0.43
+     ]
+    }
+   ],
    "from_guide": false,
    "do": [
     {
@@ -6847,7 +6862,50 @@
     "https://www.rappler.com/?p=93689",
     "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/saluag-island__1.jpg",
+     "page": "https://www.tourism.gov.ph/destination/barmm/barmm_tawi-tawi_sibutu_saluag-island-4/",
+     "author": "Department of Tourism (Philippines)",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1068,
+     "caption": "The old rusted lighthouse of Saluag Island above the village and its white sand shore.",
+     "tone": [
+      213,
+      0.68
+     ]
+    },
+    {
+     "url": "/places/saluag-island__2.jpg",
+     "page": "https://www.tourism.gov.ph/destination/barmm/barmm_tawi-tawi_sibutu_saluag-island-3/",
+     "author": "Department of Tourism (Philippines)",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1067,
+     "caption": "Green bush and sandbars on Saluag Island, with Sibutu low on the horizon.",
+     "tone": [
+      82,
+      0.56
+     ]
+    },
+    {
+     "url": "/places/saluag-island__3.jpg",
+     "page": "https://www.tourism.gov.ph/destination/barmm/barmm_tawi-tawi_sibutu_saluag-island-2/",
+     "author": "Department of Tourism (Philippines)",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1068,
+     "caption": "Shallow sand flats off Saluag Island at low tide.",
+     "tone": [
+      213,
+      0.68
+     ]
+    }
+   ],
    "do": [
     {
      "title": "See the 2 lighthouses",
@@ -6960,7 +7018,36 @@
     "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/",
     "https://transitpinas.com/tawi-tawi-panglima-sugala/"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/tawi-tawi-island__1.jpg",
+     "page": "https://earthobservatory.nasa.gov/images/149738/island-hopping-in-tawi-tawi",
+     "author": "NASA Earth Observatory image by Joshua Stevens, using Landsat data from the U.S. Geological Survey",
+     "license": "Public domain",
+     "license_url": null,
+     "width": 1600,
+     "height": 1066,
+     "caption": "Tawi-Tawi Island and its fringing reefs and islets, seen by the Landsat 8 satellite.",
+     "tone": [
+      203,
+      0.68
+     ]
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Tawi-Tawi_at_Dusk.jpg/1280px-Tawi-Tawi_at_Dusk.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Tawi-Tawi_at_Dusk.jpg",
+     "author": "Crow1997",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 1280,
+     "height": 1711,
+     "caption": "The hills of mainland Tawi-Tawi at dusk, seen across the water from Capitol Hill in Bongao.",
+     "tone": [
+      247,
+      0.26
+     ]
+    }
+   ],
    "do": [
     {
      "title": "Go to the Saturday barter market in Batu-Batu",
