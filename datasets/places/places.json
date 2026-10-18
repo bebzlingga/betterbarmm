@@ -2598,7 +2598,22 @@
    "sources": [
     "https://en.wikipedia.org/wiki/Datu_Odin_Sinsuat"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/mount-minandar__1.jpg",
+     "page": "https://datuodinsinsuat.gov.ph/",
+     "author": "Municipal Government of Datu Odin Sinsuat",
+     "license": "Philippine government work",
+     "license_url": "https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html",
+     "width": 575,
+     "height": 499,
+     "caption": "The grassy peak of Mount Minandar rising above coconut-covered slopes.",
+     "tone": [
+      226,
+      0.47
+     ]
+    }
+   ],
    "from_guide": false,
    "do": [
     {
@@ -2710,7 +2725,22 @@
    "sources": [
     "https://en.wikipedia.org/wiki/Datu_Odin_Sinsuat"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/kusiong-beach__1.jpg",
+     "page": "https://datuodinsinsuat.gov.ph/",
+     "author": "Municipal Government of Datu Odin Sinsuat",
+     "license": "Philippine government work",
+     "license_url": "https://lawphil.net/statutes/repacts/ra1997/ra_8293_1997.html",
+     "width": 800,
+     "height": 500,
+     "caption": "A leaning tree over the grey sand of Kusiong Beach, with the hills of the coast across the water.",
+     "tone": [
+      207,
+      0.25
+     ]
+    }
+   ],
    "from_guide": false,
    "do": [
     {
