@@ -1,5 +1,6 @@
 import data from '../../../../datasets/places/places.json'
 import staysFile from '../../../../datasets/places/stays.json'
+import foodPhotosFile from '../../../../datasets/places/food-photos.json'
 import { dishes, lodgingForArea, type Dish } from '@betterbarmm/travel-data'
 import type { CraftImage } from './crafts'
 
@@ -120,3 +121,9 @@ export const staysNear = (p: Place, n = 6) =>
 
 /** The guide's own word on how lodging works in an area: where people sleep and how a room is booked. */
 export const areaLodging = (area: string) => lodgingForArea(area) ?? null
+
+/** A photograph of a dish, or of a place's own food item ('place-slug|title'): a Commons thumbnail or a file this site serves. */
+export type FoodPhoto = { url: string; page: string; author: string; license: string; caption: string }
+const foodPhotos = foodPhotosFile as { dishes: Record<string, FoodPhoto>; eat: Record<string, FoodPhoto> }
+export const dishPhotoOf = (slug: string) => foodPhotos.dishes[slug] ?? null
+export const eatPhotoOf = (place: string, title: string) => foodPhotos.eat[`${place}|${title}`] ?? null

@@ -1,7 +1,7 @@
 import { ArrowUpRightIcon, BedIcon, BowlFoodIcon, CalendarBlankIcon, MapPinIcon, NavigationArrowIcon, WarningCircleIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { commonsThumb, cropStyle } from '../_lib/commons'
-import { AREA, KIND_ONE, areaDishes, areaLodging, nearby, staysNear, type Place } from '../_lib/places'
+import { AREA, KIND_ONE, areaDishes, dishPhotoOf, eatPhotoOf, type FoodPhoto, areaLodging, nearby, staysNear, type Place } from '../_lib/places'
 import { PlaceGallery } from './place-gallery'
 import { photo as discoverPhoto } from './discover-media'
 import { PhotoCredit } from './discover-figure'
@@ -15,7 +15,16 @@ import { PlaceCard } from './place-card'
 
 /** The site's own photographs of a dish, from Discover BARMM, where there is one. */
 const DISH_PHOTO = { pastil: 'pastil', 'tiyula-itum': 'tiyulaItum', palapa: 'paterPalapa' } as const
-const dishPhoto = (slug: string) => (slug in DISH_PHOTO ? discoverPhoto(DISH_PHOTO[slug as keyof typeof DISH_PHOTO]) : null)
+/** One shape for every food photograph: the site's own, then the food dataset's. */
+type Shot = { src: string; page: string; credit: string; license: string; alt: string }
+const asShot = (f: FoodPhoto | null): Shot | null => (f ? { src: commonsThumb(f.url, 500), page: f.page, credit: f.author, license: f.license, alt: f.caption } : null)
+const dishPhoto = (slug: string): Shot | null => {
+	if (slug in DISH_PHOTO) {
+		const d = discoverPhoto(DISH_PHOTO[slug as keyof typeof DISH_PHOTO])
+		return { src: d.src.src, page: d.source, credit: d.credit, license: d.license, alt: d.alt }
+	}
+	return asShot(dishPhotoOf(slug))
+}
 
 const label = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em]'
 const site = (s: string) => {
@@ -33,7 +42,7 @@ export function PlaceView({ p }: { p: Place }) {
 	const lodgingHere = areaLodging(p.area)
 	const near = nearby(p)
 	// The place's own food first, then the area's dishes from the travel guide.
-	const food = [...(p.eat ?? []).map((d) => ({ key: d.title, name: d.title, line: d.detail, who: p.municipality, photo: null })), ...dishesHere.map((d) => ({ key: d.slug, name: d.name, line: d.summary, who: d.tradition, photo: dishPhoto(d.slug) }))]
+	const food = [...(p.eat ?? []).map((d) => ({ key: d.title, name: d.title, line: d.detail, who: p.municipality, photo: asShot(eatPhotoOf(p.slug, d.title)) })), ...dishesHere.map((d) => ({ key: d.slug, name: d.name, line: d.summary, who: d.tradition, photo: dishPhoto(d.slug) }))]
 	return (
 		<>
 			<section className='bb-frame relative isolate flex min-h-[62dvh] items-end overflow-hidden bg-[#13303a] text-white'>
@@ -153,9 +162,9 @@ export function PlaceView({ p }: { p: Place }) {
 							<li key={d.key} className='bb-frame relative bg-transparent!'>
 								<span className='relative block aspect-[4/3] overflow-hidden bg-[#dfe9e6]'>
 									{d.photo ? (
-										<a href={d.photo.source} target='_blank' rel='noreferrer' title={`Photo: ${d.photo.credit}, ${d.photo.license}`}>
+										<a href={d.photo.page} target='_blank' rel='noreferrer' title={`Photo: ${d.photo.credit}, ${d.photo.license}`}>
 											{/* eslint-disable-next-line @next/next/no-img-element */}
-											<img src={d.photo.src.src} alt={d.photo.alt} loading='lazy' className='size-full object-cover' />
+											<img src={d.photo.src} alt={d.photo.alt} loading='lazy' className='size-full object-cover' />
 										</a>
 									) : (
 										<span className='grid size-full place-items-center bg-[linear-gradient(135deg,#e3efec,#cfe0dc)] text-[#1f6f78]'>

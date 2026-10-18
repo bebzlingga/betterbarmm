@@ -1,0 +1,6 @@
+{
+ "name": "Photographs of the food in the places catalogue",
+ "note": "A dish's photograph by its slug, and a place's own food item's by 'place-slug|title', each freely licensed or a Philippine government work, credited.",
+ "dishes": {},
+ "eat": {}
+}
