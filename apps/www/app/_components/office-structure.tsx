@@ -46,7 +46,7 @@ function Head({ u }: { u: OrgUnit }) {
 			<span className='font-semibold'>{tidy(u.head.name)}</span>
 			{u.head.title ? <span className='text-[var(--ink-3)]'>, {tidy(u.head.title)}</span> : null}
 			{source ? (
-				<a href={href(source)} target='_blank' rel='noreferrer' className='ml-2 inline-flex items-center gap-0.5 align-baseline text-[11.5px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
+				<a href={href(source)} target='_blank' rel='noreferrer' className='ml-2 inline-flex items-center gap-0.5 align-baseline text-[11px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
 					{when(source) ?? 'Source'} <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
 				</a>
 			) : null}
@@ -57,12 +57,12 @@ function Head({ u }: { u: OrgUnit }) {
 function Row({ u, depth }: { u: OrgUnit; depth: number }) {
 	return (
 		<div className='grid gap-x-6 gap-y-0.5 py-2.5 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]'>
-			<p className={`${depth ? 'text-[14px] font-semibold' : 'text-[15px] font-bold'} leading-snug`}>
+			<p className={`${depth ? 'text-[13px] font-semibold' : 'text-[14px] font-bold'} leading-snug`}>
 				{tidy(u.name)}
-				{u.source_kind === 'law' ? <span className='ml-2 font-mono text-[9.5px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>By law</span> : null}
-				{u.units?.length ? <span className='ml-2 text-[12px] font-normal text-[var(--ink-mute)]'>{count(u.units).all}</span> : null}
+				{u.source_kind === 'law' ? <span className='ml-2 font-mono text-[9px] font-semibold whitespace-nowrap uppercase tracking-[0.12em] text-[var(--ink-3)]'>By law</span> : null}
+				{u.units?.length ? <span className='ml-2 text-[11.5px] font-normal text-[var(--ink-mute)]'>{count(u.units).all}</span> : null}
 			</p>
-			<p className='text-[14px] leading-snug'>
+			<p className='text-[13px] leading-snug'>
 				<Head u={u} />
 			</p>
 		</div>
