@@ -43,11 +43,11 @@ export default async function ExplainerPage({ params }: Props) {
 					<Link href={`/explainers?category=${explainer.category}`} className='bb-label justify-center hover:underline'>
 						Explainer · {categoryLabel(explainer.category)}
 					</Link>
-					<h1 className='mx-auto mt-6 max-w-[24ch] text-[clamp(2.2rem,5vw,3.6rem)] font-extrabold leading-[1.02] tracking-[-0.04em] text-[var(--ink)]'>
+					<h1 className='mx-auto mt-6 max-w-[32ch] text-[clamp(2.2rem,5vw,3.6rem)] font-extrabold leading-[1.02] tracking-[-0.04em] text-[var(--ink)]'>
 						{explainer.title}
 					</h1>
 					{explainer.summary ? (
-						<p className='mx-auto mt-6 max-w-[40em] text-[1.05rem] leading-[1.6] text-[var(--ink-2)]'>{explainer.summary}</p>
+						<p className='mx-auto mt-6 max-w-[54em] text-[1.05rem] leading-[1.6] text-[var(--ink-2)]'>{explainer.summary}</p>
 					) : null}
 					{explainer.published_at ? (
 						<p className='mt-6 text-[13px] text-[var(--ink-3)]'>
