@@ -53,12 +53,12 @@ export type Answer =
 	  }
 	| { ok: false; error: string }
 
-const SPACES: Space[] = ['legislation', 'budget', 'election', 'travel', 'lgu', 'primer']
+const SPACES: Space[] = ['legislation', 'budget', 'election', 'travel', 'lgu', 'primer', 'directory', 'incidents']
 
 const SEARCH: ModelTool = {
 	name: 'search_records',
 	description:
-		'Search every record on BetterBARMM: the measures of the Bangsamoro Parliament (acts, bills, resolutions) and the Bangsamoro Local Governance Code of 2023 rule by rule together with its 2025 implementing rules (what a barangay may do, how many kagawad it elects and what they are paid, local taxes, the cedula and the real property tax, who may run and what disqualifies them, terms, recall and succession, the barangay justice system, how a barangay or a town is created, how the local budget is made and what must be set aside, and the municipalities of the Special Geographic Area), the enacted FY 2026 budget (what each office and program was appropriated, sorted into 38 sectors; the 207 special provisions — the conditions the Act puts on how money may be spent and what must be reported; and the 258 named roads, bridges and buildings being funded, each with the barangay it is in), the September 2026 parliamentary election (the 13 parties and how many seats each won, every one of the 80 elected members and which party and which seat they hold, all 32 district races with who stood and what they polled, and the reserved sectoral seats), the travel guide (places, food, areas, routes), the local government directory (provinces, cities, municipalities, barangay counts, population), and the region primer (how BARMM came to be, from the sultanates through the Moro Wars, the Jabidah incident, the MNLF and MILF, the Tripoli Agreement, the peace process and the Organic Law to the transition; how the government is structured; the peoples and communities; culture and places). Use it for every question about the Bangsamoro, and use it more than once when a question covers more than one subject.',
+		'Search every record on BetterBARMM: the measures of the Bangsamoro Parliament (acts, bills, resolutions) and the Bangsamoro Local Governance Code of 2023 rule by rule together with its 2025 implementing rules (what a barangay may do, how many kagawad it elects and what they are paid, local taxes, the cedula and the real property tax, who may run and what disqualifies them, terms, recall and succession, the barangay justice system, how a barangay or a town is created, how the local budget is made and what must be set aside, and the municipalities of the Special Geographic Area), the enacted FY 2026 budget (what each office and program was appropriated, sorted into 38 sectors; the 207 special provisions — the conditions the Act puts on how money may be spent and what must be reported; and the 258 named roads, bridges and buildings being funded, each with the barangay it is in), the September 2026 parliamentary election (the 13 parties and how many seats each won, every one of the 80 elected members and which party and which seat they hold, all 32 district races with who stood and what they polled, and the reserved sectoral seats), the travel guide (places, food, areas, routes), the local government directory (provinces, cities, municipalities, barangay counts, population), the Directory of the Bangsamoro Government (who heads each ministry and office now and before, their phone numbers, emails, addresses and provincial offices, the hotlines, and each town’s police, fire, health and town hall numbers and email), Incident Watch (road crashes, shootings, drownings and other incidents reported since 2019, with counts per town and province), the region’s crafts, and the region primer (how BARMM came to be, from the sultanates through the Moro Wars, the Jabidah incident, the MNLF and MILF, the Tripoli Agreement, the peace process and the Organic Law to the transition; how the government is structured; the peoples and communities; culture and places). Use it for every question about the Bangsamoro, and use it more than once when a question covers more than one subject.',
 	parameters: {
 		type: 'object',
 		properties: {
@@ -70,7 +70,7 @@ const SEARCH: ModelTool = {
 				type: 'string',
 				enum: SPACES,
 				description:
-					'Narrow to one workspace: legislation for measures and for the rules of the Local Governance Code and its implementing rules, budget for money and for what is being built, election for parties, members of parliament and how the seats were won, travel for places and food, lgu for towns and population, primer for history and for how the region and its government came to be. Leave it out to search everything.',
+					'Narrow to one workspace: legislation for measures and for the rules of the Local Governance Code and its implementing rules, budget for money and for what is being built, election for parties, members of parliament and how the seats were won, travel for places, places to stay, crafts and food, lgu for towns and population, primer for history and for how the region and its government came to be, directory for who heads each regional office and how to reach it (phones, emails, addresses, past heads, provincial offices, hotlines, each town’s emergency numbers), incidents for road crashes, shootings, drownings and other incidents reported in the region. Leave it out to search everything.',
 			},
 		},
 		required: ['query'],
@@ -143,7 +143,7 @@ const RIGHT_NOW =
 	/\b(current|currently|now|nowadays|today|latest|newest|incumbent|so far|these days|at present|right now|this year|as of)\b/i
 
 /* Records that hold how things stand in the present term or year. */
-const CURRENT_KINDS = new Set(['Officials', 'Barangay captains', 'NTA allocation'])
+const CURRENT_KINDS = new Set(['Officials', 'Barangay captains', 'NTA allocation', 'Office head', 'Field office', 'Emergency lines', 'Hotline'])
 
 /* The shape of Jo saying she has nothing — her own words for it, from the
    brief, plus the couple of ways a model reaches for the same thing. */
@@ -298,6 +298,10 @@ export async function answer(turns: Turn[]): Promise<Answer> {
 			? discoverBarmmTopics.find((one) => one.slug === lead.topic)?.timeline
 			: undefined
 
+	/* Asked for as a list, so the lines naming one record each are the answer
+	   rather than rows copied back; `written` must not strike them. */
+	const listing = !roster?.length && !timeline?.length && (WANTS_LIST.test(asked) || WANTS_PARTS.test(asked))
+
 	const wrote = await askModel([
 		{
 			role: 'system',
@@ -328,7 +332,7 @@ export async function answer(turns: Turn[]): Promise<Answer> {
 		? [...FISCAL_YEARS].reverse().map((fy) => ({ year: fy, total: budgetFor(fy).budget.total }))
 		: undefined
 
-	const say = written(wrote.text, rows, Boolean(timeline?.length))
+	const say = written(wrote.text, rows, Boolean(timeline?.length), listing)
 
 	/* An answer that is not one, sent to the web.
 	
@@ -377,8 +381,8 @@ const OPENER = 'Here is what I have on that.'
  * directly underneath, which is the same wall of figures twice. So a line that
  * only restates a record comes out, and a written hand-off goes in.
  */
-function written(say: string, rows: Entry[], shown?: boolean): string {
-	const kept = grounded(trimmed(say, rows), rows)
+function written(say: string, rows: Entry[], shown?: boolean, listing?: boolean): string {
+	const kept = grounded(listing ? unrun(say) : trimmed(say, rows), rows)
 	/* The model said nothing, or said only figures it could not support.
 	
 	   The prompt forbids this and has been made to fail twice — once on the

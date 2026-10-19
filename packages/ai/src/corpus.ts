@@ -46,8 +46,9 @@ import readingsFile from '../../../datasets/bills/readings.json'
 import ballotFile from '../../../datasets/election/election.min.json'
 import resultsFile from '../../../datasets/election/election-results.json'
 import { more, MORE_ASKED } from './more'
+import { catalogue, directory, DIRECTORY_ASKED } from './directory'
 
-export type Space = 'legislation' | 'budget' | 'election' | 'travel' | 'lgu' | 'primer'
+export type Space = 'legislation' | 'budget' | 'election' | 'travel' | 'lgu' | 'primer' | 'directory' | 'incidents'
 
 /** One thing a reader can be sent to. `text` is the haystack; everything else is shown. */
 export type Entry = {
@@ -145,6 +146,8 @@ const SITE: Record<Space, string> = {
 	travel: 'https://travel.betterbarmm.com',
 	lgu: 'https://lgu.betterbarmm.com',
 	primer: 'https://betterbarmm.com',
+	directory: 'https://betterbarmm.com/directory',
+	incidents: 'https://betterbarmm.com/accidents',
 }
 
 type Measure = {
@@ -819,7 +822,9 @@ function election(): Entry[] {
 }
 
 function travel(): Entry[] {
-	const visit: Entry[] = places.map((place) => ({
+	// The www catalogue holds the fuller record of a place both list; the guide's own row would only split the match.
+	const listed = new Set(catalogue().map((row) => row.title.toLowerCase()))
+	const visit: Entry[] = places.filter((place) => !listed.has(place.name.toLowerCase())).map((place) => ({
 		space: 'travel',
 		kind: 'Place',
 		title: place.name,
@@ -1168,11 +1173,12 @@ export function corpus(): Entry[] {
 			...local(),
 			...primer(),
 			...more(),
+			...directory(),
 		]
 		// Hung on the row rather than written into each builder: it is one rule
 		// about how questions are worded, not a fact about any of the four
 		// datasets. Kept apart from `text` so it can be scored apart from it.
-		for (const row of built) row.asked = ASKED_FOR[row.kind] ?? MORE_ASKED[row.kind]
+		for (const row of built) row.asked = ASKED_FOR[row.kind] ?? MORE_ASKED[row.kind] ?? DIRECTORY_ASKED[row.kind]
 	}
 	return built
 }
@@ -1271,6 +1277,12 @@ const SUBJECT = /\bhistory of\b|\boverview\b|\btell me about\b|\bexplain\b|\bbac
 const WHOLE_SEATS = new Set(['Election', 'Party', 'Member', 'District', 'Reserved seat'])
 const WHO = /\bwho\b|\bnominee|\bwinner|\bwho won\b|\bmembers of parliament\b|\belected\b/
 
+/* Rows that carry a place's name but answer only one kind of question about it.
+   "Tell me about Basilan" is not asking for its incident count, its emergency
+   numbers or a ministry's old heads, so these come up only when one of the
+   question's words is one of their own. */
+const ASKED_ONLY = new Set(['Incident', 'Incident count', 'Emergency lines', 'Tenures', 'Field office', 'Place to stay'])
+
 export function search(query: string, space?: Space, limit = 8): Entry[] {
 	const asked = query.toLowerCase()
 	const counting = COUNTING.test(asked)
@@ -1290,6 +1302,7 @@ export function search(query: string, space?: Space, limit = 8): Entry[] {
 	const scored: { entry: Entry; score: number }[] = []
 	for (const entry of corpus()) {
 		if (space && entry.space !== space) continue
+		if (ASKED_ONLY.has(entry.kind) && !terms.some((term) => entry.asked && times(entry.asked, term, 1))) continue
 		const title = entry.title.toLowerCase()
 		let score = 0
 		let matched = 0
