@@ -10,6 +10,7 @@ export const EXPLAINER_CATEGORIES = [
 	{ value: 'election', label: 'Election' },
 	{ value: 'lgu', label: 'Local government' },
 	{ value: 'travel', label: 'Travel' },
+	{ value: 'transparency', label: 'Transparency' },
 	{ value: 'general', label: 'General' },
 ] as const
 
