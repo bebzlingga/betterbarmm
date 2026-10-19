@@ -566,6 +566,16 @@
    "lat": 6.7192,
    "lon": 124.793,
    "matched": "Poblacion, Buluan, Maguindanao del Sur, Bangsamoro, 9616, Philippines"
+  },
+  "Pasiagan|Bongao|Tawi-Tawi": {
+   "lat": 5.0093,
+   "lon": 119.7498,
+   "matched": "Pasiagan, Bongao, Tawi-Tawi, Bangsamoro, 7500, Philippines"
+  },
+  "Tapayan|Sultan Mastura|Maguindanao del Norte": {
+   "lat": 7.3042,
+   "lon": 124.2803,
+   "matched": "Tapayan, Sultan Mastura, Maguindanao del Norte, Bangsamoro, 9636, Philippines"
   }
  }
 }

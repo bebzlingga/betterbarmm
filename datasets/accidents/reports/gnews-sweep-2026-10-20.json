@@ -1,0 +1,74 @@
+[
+ {
+  "date": "2026-10-09",
+  "type": "sea",
+  "title": "Speedboat sinks off Pasiagan, Bongao; all 3 aboard rescued",
+  "summary": "The 115-horsepower speedboat Baby Sha, bound from Bongao to Sitangkai, sank after its hull was holed in the waters near Pasiagan, Bongao, Tawi-Tawi, on 9 October 2026. Maritime police, the Coast Guard, a Seajet passenger vessel and the provincial disaster office rescued the operator and both passengers, who were given first aid.",
+  "province": "Tawi-Tawi",
+  "municipality": "Bongao",
+  "barangay": "Pasiagan",
+  "deaths": 0,
+  "injured": 0,
+  "missing": 0,
+  "vehicles": [
+   "boat"
+  ],
+  "sources": [
+   {
+    "outlet": "SunStar",
+    "url": "https://www.sunstar.com.ph/zamboanga/3-rescued-from-capsized-speedboat-off-tawi-tawi",
+    "title": "3 rescued from capsized speedboat off Tawi-Tawi",
+    "date": "2026-10-12"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-16",
+  "type": "shooting",
+  "title": "4 killed as Dawlah Islamiya sub-leader resists arrest in Tapayan, Sultan Mastura",
+  "summary": "A Dawlah Islamiya sub-leader and three escorts were killed at about 3:30 pm on 16 October 2026 when they opened fire on police and soldiers serving arrest warrants at a suspected safe house in Barangay Tapayan, Sultan Mastura, Maguindanao del Norte. An assault rifle, three pistols and an improvised explosive device were recovered; no government casualties were reported.",
+  "province": "Maguindanao del Norte",
+  "municipality": "Sultan Mastura",
+  "barangay": "Tapayan",
+  "deaths": 4,
+  "injured": 0,
+  "missing": 0,
+  "vehicles": [],
+  "sources": [
+   {
+    "outlet": "Philippine News Agency",
+    "url": "https://www.pna.gov.ph/article/4-di-extremists-killed-in-maguindanao-norte-clash-with-govt-troops",
+    "title": "4 DI extremists killed in Maguindanao Norte clash with gov’t troops",
+    "date": "2026-10-19"
+   },
+   {
+    "outlet": "Manila Bulletin",
+    "url": "https://mb.com.ph/2026/10/17/dawlah-islamiyah-commander-3-others-slain-in-maguindanao-del-norte-clash-military",
+    "title": "Dawlah Islamiyah commander, 3 others slain in Maguindanao del Norte clash – military",
+    "date": "2026-10-17"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-18",
+  "type": "shooting",
+  "title": "Teduray tribal leader slain in Maguindanao del Sur",
+  "summary": "A Teduray tribal leader was killed in Maguindanao del Sur, as reported on 18 October 2026. The report could not be read in full, so the town and the circumstances are not recorded here.",
+  "province": "Maguindanao del Sur",
+  "municipality": null,
+  "barangay": null,
+  "deaths": 1,
+  "injured": 0,
+  "missing": 0,
+  "vehicles": [],
+  "sources": [
+   {
+    "outlet": "Inquirer",
+    "url": "https://newsinfo.inquirer.net/2326081/teduray-tribal-leader-slain-in-maguindanao-del-sur",
+    "title": "Teduray tribal leader slain in Maguindanao del Sur",
+    "date": "2026-10-18"
+   }
+  ],
+  "uncertain": "place"
+ }
+]
