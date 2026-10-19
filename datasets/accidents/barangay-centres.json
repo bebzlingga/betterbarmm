@@ -561,6 +561,11 @@
    "lat": 7.1569,
    "lon": 124.2329,
    "matched": "Capiton, Maguindanao del Norte, Bangsamoro, 9601, Philippines"
+  },
+  "Poblacion|Buluan|Maguindanao del Sur": {
+   "lat": 6.7192,
+   "lon": 124.793,
+   "matched": "Poblacion, Buluan, Maguindanao del Sur, Bangsamoro, 9616, Philippines"
   }
  }
 }
