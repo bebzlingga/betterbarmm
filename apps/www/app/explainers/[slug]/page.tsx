@@ -47,7 +47,7 @@ export default async function ExplainerPage({ params }: Props) {
 						{explainer.title}
 					</h1>
 					{explainer.summary ? (
-						<p className='mx-auto mt-6 max-w-[40em] text-[1.15rem] leading-[1.7] text-[var(--ink-2)]'>{explainer.summary}</p>
+						<p className='mx-auto mt-6 max-w-[40em] text-[1.05rem] leading-[1.6] text-[var(--ink-2)]'>{explainer.summary}</p>
 					) : null}
 					{explainer.published_at ? (
 						<p className='mt-6 text-[13px] text-[var(--ink-3)]'>
