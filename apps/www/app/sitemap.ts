@@ -32,7 +32,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 		page('/explainers', 0.8),
 		...explainers.map((e) => ({ ...page(`/explainers/${e.slug}`, 0.7, 'monthly'), lastModified: new Date(e.updated_at ?? e.published_at ?? now) })),
 		page('/about', 0.6, 'monthly'),
-		page('/brain', 0.6, 'weekly'),
 		page('/contribute', 0.6, 'monthly'),
 		page('/jo', 0.4, 'monthly'),
 	]

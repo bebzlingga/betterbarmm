@@ -101,9 +101,10 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 	const name = (id: string) => placed.get(id)?.label ?? id
 
 	return (
-		<div className='grid gap-0 lg:grid-cols-[minmax(0,1fr)_380px]'>
-			<div className='relative'>
-				<svg viewBox='-90 0 1180 1000' role='img' aria-label='A map of BetterBARMM: its sources, datasets and workspaces, joined to Jo at the centre' className='mx-auto block w-full max-w-[920px]' onClick={() => setPicked(null)}>
+		// Details on the left and the map on the right from a laptop up; on a phone the map comes first.
+		<div className='grid gap-0 lg:h-full lg:grid-cols-[minmax(0,400px)_minmax(0,1fr)]'>
+			<div className='relative lg:order-2 lg:flex lg:min-h-0 lg:flex-col'>
+				<svg viewBox='-90 0 1180 1000' role='img' aria-label='A map of BetterBARMM: its sources, datasets and workspaces, joined to Jo at the centre' className='mx-auto block w-full max-w-[920px] lg:min-h-0 lg:max-w-none lg:flex-1' onClick={() => setPicked(null)}>
 					<defs>
 						<radialGradient id='jo'>
 							<stop offset='0' stopColor='#fff8e8' />
@@ -202,7 +203,7 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 						)
 					})}
 				</svg>
-				<ul className='mx-auto mt-2 flex max-w-[920px] flex-wrap justify-center gap-x-5 gap-y-1 px-4 text-[12px] text-white/70'>
+				<ul className='mx-auto mt-2 flex max-w-[920px] shrink-0 flex-wrap justify-center gap-x-5 gap-y-1 px-4 text-[12px] text-white/70'>
 					<li className='flex items-center gap-1.5'><span className='size-2.5 rounded-full bg-[#7fa9aa]' /> Sources</li>
 					<li className='flex items-center gap-1.5'><span className='size-2.5 rounded-full bg-[#e3ac3e]' /> Datasets</li>
 					<li className='flex items-center gap-1.5'><span className='size-2.5 rounded-full bg-[#c3313b]' /> Workspaces</li>
@@ -211,7 +212,7 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 				</ul>
 			</div>
 
-			<aside className='border-t border-white/10 p-6 text-white lg:border-t-0 lg:border-l lg:p-8'>
+			<aside className='border-t border-white/10 p-6 text-white lg:order-1 lg:min-h-0 lg:overflow-y-auto lg:border-t-0 lg:border-r lg:p-8 lg:pl-0'>
 				<label htmlFor='town' className='font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[#f1c453]'>
 					Follow a town
 				</label>

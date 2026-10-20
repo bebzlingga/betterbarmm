@@ -44,6 +44,8 @@ const secondaryLinks = [
 	// Programs & services is hidden for now; the pages still build at /services.
 	// { key: 'services', href: '/services', label: 'Programs & services' },
 	{ key: 'explainers', href: '/explainers', label: 'Explainers' },
+	// Opens the brain dialog over whatever page is open.
+	{ key: 'brain', href: '#brain', label: 'Brain' },
 	{ key: 'about', href: '/about', label: 'About' },
 ] as const
 

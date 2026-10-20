@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { BrainDialog } from './_components/brain-dialog'
 import { DM_Sans, Outfit } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { AskDock } from '@betterbarmm/ai/dock'
@@ -128,6 +129,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </MotionProvider>
         <Analytics />
         <AskDock />
+        <BrainDialog />
       </body>
     </html>
   )
