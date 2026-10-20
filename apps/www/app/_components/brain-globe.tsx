@@ -78,9 +78,11 @@ type Props = {
 	picked: string | null
 	onHover: (id: string | null) => void
 	onPick: (id: string | null) => void
+	/** Drawn above the zoom buttons: the 3D / 2D switch. */
+	toolbar?: React.ReactNode
 }
 
-export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick }: Props) {
+export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick, toolbar }: Props) {
 	const box = useRef<HTMLDivElement>(null)
 	const state = useRef({ lit, edgeLit, picked, onHover, onPick })
 	// The frame loop reads the latest of these; kept current after every render.
@@ -336,6 +338,7 @@ export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick
 		<div className='relative h-full min-h-[60vh] w-full lg:min-h-0'>
 			<div ref={box} className='absolute inset-0 overflow-hidden' aria-label='A globe of BetterBARMM: drag to turn it, scroll to zoom, click a node for its details' role='img' />
 			<div className='absolute right-2 bottom-2 flex flex-col gap-1.5'>
+				{toolbar}
 				<button type='button' className={button} aria-label='Zoom in' onClick={() => api.current?.zoom(0.75)}>
 					<PlusIcon size={16} weight='bold' />
 				</button>

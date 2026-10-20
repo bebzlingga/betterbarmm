@@ -1,9 +1,10 @@
 'use client'
 
-import { ArrowUpRightIcon, BuildingsIcon, MapPinIcon, SidebarSimpleIcon, XIcon } from '@phosphor-icons/react'
+import { ArrowUpRightIcon, BuildingsIcon, MagnifyingGlassIcon, MapPinIcon, SidebarSimpleIcon, XIcon } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
 import type { BrainEdge, BrainNode, Thread } from '../_lib/brain'
+import { BrainFlat } from './brain-flat'
 import { BrainGlobe } from './brain-globe'
 
 /* ============================================================
@@ -37,6 +38,7 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 	const [picked, setPicked] = useState<string | null>(null)
 	const [follow, setFollow] = useState<string>('')
 	const [shown, setShown] = useState(true)
+	const [view, setView] = useState<'3d' | '2d'>('3d')
 
 	const thread = threads.find((t) => t.key === follow) ?? null
 	const followLit = useMemo(() => (thread ? new Set(thread.lit) : null), [thread])
@@ -58,10 +60,20 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 	const links = chosen ? edges.filter((e) => e.from === chosen.id || e.to === chosen.id) : []
 	const name = (id: string) => byId.get(id)?.label ?? id
 
-	const pickers = [
-		{ id: 'follow-town', label: 'Follow a town', icon: MapPinIcon, kind: 'town' as const, blank: `Pick one of ${threads.filter((t) => t.kind === 'town').length} towns and cities…` },
-		{ id: 'follow-office', label: 'Follow an office', icon: BuildingsIcon, kind: 'office' as const, blank: `Pick one of ${threads.filter((t) => t.kind === 'office').length} ministries and offices…` },
-	]
+
+	// 3D or 2D, above the zoom buttons on the globe and in the same corner on the flat map.
+	// One button: it shows the view in use, and a click turns to the other.
+	const switcher = (
+		<button
+			type='button'
+			onClick={() => setView(view === '3d' ? '2d' : '3d')}
+			aria-label={`Showing ${view.toUpperCase()}; switch to ${view === '3d' ? '2D' : '3D'}`}
+			title={`Switch to ${view === '3d' ? '2D' : '3D'}`}
+			className='mb-1.5 flex size-9 items-center justify-center border border-[#f1c453] bg-[#f1c453] font-mono text-[11px] font-bold text-[#2a0a10] transition hover:bg-transparent hover:text-[#f1c453]'
+		>
+			{view.toUpperCase()}
+		</button>
+	)
 
 	return (
 		// Details on the left and the globe on the right from a laptop up; the column folds away. On a phone the globe comes first.
@@ -76,8 +88,15 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 				>
 					<SidebarSimpleIcon size={16} weight='bold' aria-hidden='true' /> {shown ? 'Hide details' : 'Show details'}
 				</button>
-				<div className='h-[62vh] lg:h-auto lg:min-h-0 lg:flex-1'>
-					<BrainGlobe nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} onHover={setHover} onPick={setPicked} />
+				<div className='relative h-[62vh] lg:h-auto lg:min-h-0 lg:flex-1'>
+					{view === '3d' ? (
+						<BrainGlobe nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} onHover={setHover} onPick={setPicked} toolbar={switcher} />
+					) : (
+						<>
+							<BrainFlat nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} onHover={setHover} onPick={setPicked} />
+							<div className='absolute right-2 bottom-2'>{switcher}</div>
+						</>
+					)}
 				</div>
 				<ul className='mx-auto mt-2 flex max-w-[920px] shrink-0 flex-wrap justify-center gap-x-5 gap-y-1 px-4 pb-4 text-[12px] text-white/70'>
 					<li className='flex items-center gap-1.5'><span className='size-2.5 rounded-full bg-[#7fa9aa]' /> Sources</li>
@@ -88,42 +107,7 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 			</div>
 
 			<aside id='brain-details' hidden={!shown} className='border-t border-white/10 p-6 text-white lg:order-1 lg:min-h-0 lg:overflow-y-auto lg:border-t-0 lg:border-r lg:bg-black/20 lg:p-8'>
-				<div className='space-y-5'>
-					{pickers.map((pk) => (
-						<div key={pk.id}>
-							<label htmlFor={pk.id} className='font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[#f1c453]'>
-								{pk.label}
-							</label>
-							<div className='mt-2 flex items-center gap-2 border border-white/20 bg-white/5 px-3'>
-								<pk.icon size={15} className='shrink-0 text-white/60' aria-hidden='true' />
-								<select
-									id={pk.id}
-									value={thread?.kind === pk.kind ? follow : ''}
-									onChange={(e) => (setFollow(e.target.value), setPicked(null))}
-									className='h-11 min-w-0 flex-1 bg-transparent text-[14px] text-white outline-none [&>optgroup]:text-black [&>option]:text-black'
-								>
-									<option value=''>{pk.blank}</option>
-									{[...new Set(threads.filter((t) => t.kind === pk.kind).map((t) => t.group))].map((g) => (
-										<optgroup key={g} label={g}>
-											{threads
-												.filter((t) => t.kind === pk.kind && t.group === g)
-												.map((t) => (
-													<option key={t.key} value={t.key}>
-														{t.title}
-													</option>
-												))}
-										</optgroup>
-									))}
-								</select>
-								{thread?.kind === pk.kind ? (
-									<button type='button' onClick={() => setFollow('')} aria-label={`Clear: ${pk.label}`} className='text-white/60 hover:text-white'>
-										<XIcon size={14} weight='bold' />
-									</button>
-								) : null}
-							</div>
-						</div>
-					))}
-				</div>
+				<FollowSearch threads={threads} value={thread} onChoose={(key) => (setFollow(key), setPicked(null))} />
 
 				{chosen ? (
 					<div className='mt-8'>
@@ -198,6 +182,90 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 					</div>
 				)}
 			</aside>
+		</div>
+	)
+}
+
+const fold = (s: string) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+
+/** One search for a town or an office: type, then pick with the arrows and Enter, or a click. */
+function FollowSearch({ threads, value, onChoose }: { threads: Thread[]; value: Thread | null; onChoose: (key: string) => void }) {
+	const [q, setQ] = useState('')
+	const [open, setOpen] = useState(false)
+	const [at, setAt] = useState(0)
+	const words = fold(q).split(/\s+/).filter(Boolean)
+	const hits = words.length
+		? threads.filter((t) => words.every((w) => fold(`${t.title} ${t.group} ${t.kind === 'town' ? 'town city municipality' : 'office ministry'}`).includes(w))).slice(0, 8)
+		: []
+	const choose = (t: Thread) => {
+		onChoose(t.key)
+		setQ('')
+		setOpen(false)
+	}
+	return (
+		<div className='relative'>
+			<label htmlFor='follow' className='font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[#f1c453]'>
+				Follow a town or an office
+			</label>
+			<div className='mt-2 flex items-center gap-2 border border-white/20 bg-white/5 px-3 focus-within:border-white/60'>
+				<MagnifyingGlassIcon size={15} className='shrink-0 text-white/60' aria-hidden='true' />
+				<input
+					id='follow'
+					type='search'
+					autoComplete='off'
+					role='combobox'
+					aria-expanded={open && hits.length > 0}
+					aria-controls='follow-list'
+					value={q}
+					placeholder={value ? value.title : `${threads.filter((t) => t.kind === 'town').length} towns, ${threads.filter((t) => t.kind === 'office').length} offices…`}
+					onChange={(e) => (setQ(e.target.value), setOpen(true), setAt(0))}
+					onFocus={() => setOpen(true)}
+					onBlur={() => setTimeout(() => setOpen(false), 120)}
+					onKeyDown={(e) => {
+						if (e.key === 'ArrowDown' && hits.length) {
+							e.preventDefault()
+							setAt((at + 1) % hits.length)
+						} else if (e.key === 'ArrowUp' && hits.length) {
+							e.preventDefault()
+							setAt((at - 1 + hits.length) % hits.length)
+						} else if (e.key === 'Enter' && hits[at]) {
+							e.preventDefault()
+							choose(hits[at])
+						} else if (e.key === 'Escape' && open && q) {
+							// Escape closes the list first, and only then the dialog.
+							e.preventDefault()
+							setOpen(false)
+						}
+					}}
+					className='h-11 min-w-0 flex-1 bg-transparent text-[14px] text-white outline-none placeholder:text-white/55 [&::-webkit-search-cancel-button]:hidden'
+				/>
+				{value || q ? (
+					<button type='button' onClick={() => (setQ(''), onChoose(''))} aria-label='Clear' className='text-white/60 hover:text-white'>
+						<XIcon size={14} weight='bold' />
+					</button>
+				) : null}
+			</div>
+			{open && hits.length ? (
+				<ul id='follow-list' role='listbox' className='absolute inset-x-0 top-full z-20 mt-1 border border-white/20 bg-[#1d080d] shadow-[0_20px_40px_-20px_rgba(0,0,0,.9)]'>
+					{hits.map((t, i) => (
+						<li key={t.key} role='option' aria-selected={i === at}>
+							<button
+								type='button'
+								onMouseDown={(e) => e.preventDefault()}
+								onClick={() => choose(t)}
+								onMouseEnter={() => setAt(i)}
+								className={`flex w-full items-center gap-3 px-3 py-2 text-left ${i === at ? 'bg-white/10' : ''}`}
+							>
+								{t.kind === 'town' ? <MapPinIcon size={14} className='shrink-0 text-[#f1c453]' aria-hidden='true' /> : <BuildingsIcon size={14} className='shrink-0 text-[#e8848a]' aria-hidden='true' />}
+								<span className='min-w-0 flex-1'>
+									<span className='block truncate text-[13.5px] font-semibold text-white'>{t.title}</span>
+									<span className='block text-[11.5px] text-white/55'>{t.kicker}</span>
+								</span>
+							</button>
+						</li>
+					))}
+				</ul>
+			) : null}
 		</div>
 	)
 }
