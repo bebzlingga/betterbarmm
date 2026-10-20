@@ -321,7 +321,7 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, chain, onHover, 
 						onPick(n.id)
 					}}
 					onKeyDown={(ev) => (ev.key === 'Enter' || ev.key === ' ') && (ev.preventDefault(), onPick(n.id))}
-					className='cursor-pointer outline-none'
+					className='cursor-pointer outline-none! focus:outline-none!'
 					style={{ transition: 'opacity .3s' }}
 					opacity={on ? 1 : 0.18}
 				>
