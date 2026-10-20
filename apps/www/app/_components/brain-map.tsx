@@ -123,7 +123,7 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 				</button>
 				<div className='relative h-[62vh] lg:h-auto lg:min-h-0 lg:flex-1'>
 					{view === '3d' ? (
-						<BrainGlobe nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} onHover={setHover} onPick={setPicked} toolbar={switcher} />
+						<BrainGlobe nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} chain={chain} onHover={setHover} onPick={setPicked} toolbar={switcher} />
 					) : (
 						<BrainFlat nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} chain={chain} onHover={setHover} onPick={setPicked} toolbar={switcher} />
 					)}

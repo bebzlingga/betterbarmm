@@ -94,33 +94,61 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, chain, onHover, 
 		pt.y = clientY
 		return pt.matrixTransform(el.getScreenCTM()!.inverse())
 	}
-	/** Zoom by f around a point of the map (the centre of the view by default). */
-	const zoom = (f: number, at?: { x: number; y: number }) =>
-		setVb((v) => {
-			const w = Math.min(FARTHEST, Math.max(CLOSEST, v.w * f))
-			const k = w / v.w
-			const p = at ?? { x: v.x + v.w / 2, y: v.y + v.h / 2 }
-			return { x: p.x - (p.x - v.x) * k, y: p.y - (p.y - v.y) * k, w, h: v.h * k }
-		})
-
-	/** Glide the view to a box, eased, rather than jump. */
-	const glide = useRef(0)
-	const glideTo = (to: typeof HOME) => {
-		cancelAnimationFrame(glide.current)
-		const from = { ...vbRef.current }
-		const t0 = performance.now()
-		const step = (now: number) => {
-			const u = Math.min(1, (now - t0) / 550)
-			const e = 1 - (1 - u) ** 3
-			setVb({ x: from.x + (to.x - from.x) * e, y: from.y + (to.y - from.y) * e, w: from.w + (to.w - from.w) * e, h: from.h + (to.h - from.h) * e })
-			if (u < 1) glide.current = requestAnimationFrame(step)
-		}
-		glide.current = requestAnimationFrame(step)
-	}
+	/* Where the view is heading. Zooming, the buttons and a pick all move this,
+	   and every frame the view eases a little closer to it, so nothing jumps;
+	   a drag moves both at once, so the map stays under the pointer. */
 	const vbRef = useRef(vb)
-	useEffect(() => {
-		vbRef.current = vb
-	}, [vb])
+	const goal = useRef(HOME)
+	const raf = useRef(0)
+	const show = (v: typeof HOME) => {
+		vbRef.current = v
+		setVb(v)
+	}
+	const run = () => {
+		if (raf.current) return
+		let last = performance.now()
+		const step = (now: number) => {
+			const dt = Math.min(0.05, (now - last) / 1000)
+			last = now
+			const k = 1 - Math.exp(-dt * 13)
+			const v = vbRef.current
+			const g = goal.current
+			const next = { x: v.x + (g.x - v.x) * k, y: v.y + (g.y - v.y) * k, w: v.w + (g.w - v.w) * k, h: v.h + (g.h - v.h) * k }
+			if (Math.abs(next.x - g.x) + Math.abs(next.y - g.y) + Math.abs(next.w - g.w) < 0.5) {
+				show(g)
+				raf.current = 0
+				return
+			}
+			show(next)
+			raf.current = requestAnimationFrame(step)
+		}
+		raf.current = requestAnimationFrame(step)
+	}
+	const glideTo = (to: typeof HOME) => {
+		goal.current = to
+		run()
+	}
+	/** Zoom by f around a point of the map (the centre of the view by default), from where the view is heading. */
+	const zoom = (f: number, at?: { x: number; y: number }) => {
+		const v = goal.current
+		const w = Math.min(FARTHEST, Math.max(CLOSEST, v.w * f))
+		const k = w / v.w
+		const p = at ?? { x: v.x + v.w / 2, y: v.y + v.h / 2 }
+		glideTo({ x: p.x - (p.x - v.x) * k, y: p.y - (p.y - v.y) * k, w, h: v.h * k })
+	}
+	const panBy = (dx: number, dy: number) => {
+		goal.current = { ...goal.current, x: goal.current.x - dx, y: goal.current.y - dy }
+		const v = vbRef.current
+		show({ ...v, x: v.x - dx, y: v.y - dy })
+	}
+	useEffect(
+		() => () => {
+			cancelAnimationFrame(raf.current)
+			// Cleared too, or a remount (React runs effects twice in development) finds a stale frame and never glides again.
+			raf.current = 0
+		},
+		[],
+	)
 
 	// A pick frames its chain; clearing it goes back to the whole map.
 	useEffect(() => {
@@ -129,16 +157,46 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, chain, onHover, 
 			return
 		}
 		const pts = [...chain].map((id) => placed.get(id)).filter(Boolean) as Placed[]
-		if (pts.length < 2) return
-		const pad = 110
-		const x0 = Math.min(...pts.map((p) => p.x)) - pad
-		const x1 = Math.max(...pts.map((p) => p.x)) + pad
-		const y0 = Math.min(...pts.map((p) => p.y)) - pad
-		const y1 = Math.max(...pts.map((p) => p.y)) + pad
-		// Kept to the map's own proportions, centred on the chain.
-		const w = Math.max(x1 - x0, ((y1 - y0) * HOME.w) / HOME.h, CLOSEST * 1.6)
-		const h = (w * HOME.h) / HOME.w
-		glideTo({ x: (x0 + x1) / 2 - w / 2, y: (y0 + y1) / 2 - h / 2, w, h })
+		if (pts.length < 2 || !svg.current) return
+		// Each node's box with its label, as the label is drawn: beside an outer node, under a workspace.
+		let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity
+		for (const n of pts) {
+			const r = n.kind === 'jo' ? 34 : n.kind === 'workspace' ? 15 : 16
+			const outer = n.kind === 'dataset' || n.kind === 'source'
+			const tw = n.label.length * (n.kind === 'workspace' ? 8.2 : 6.6) + 6
+			let lx0 = n.x - r, lx1 = n.x + r
+			if (outer) {
+				const lx = n.x + Math.cos(n.a) * (r + 8)
+				const c = Math.cos(n.a)
+				if (c > 0.2) lx1 = Math.max(lx1, lx + tw)
+				else if (c < -0.2) lx0 = Math.min(lx0, lx - tw)
+				else {
+					lx0 = Math.min(lx0, lx - tw / 2)
+					lx1 = Math.max(lx1, lx + tw / 2)
+				}
+			} else if (n.kind === 'workspace') {
+				lx0 = Math.min(lx0, n.x - tw / 2)
+				lx1 = Math.max(lx1, n.x + tw / 2)
+			}
+			x0 = Math.min(x0, lx0)
+			x1 = Math.max(x1, lx1)
+			y0 = Math.min(y0, n.y - r - 14)
+			y1 = Math.max(y1, n.y + r + (n.kind === 'workspace' ? 22 : 14))
+		}
+		// Fitted to the map's own size on screen, clear of what is laid over it: the toggle at the
+		// top, the controls on the right and the legend at the foot.
+		const el = svg.current.getBoundingClientRect()
+		const inset = { top: 64, right: 76, bottom: 60, left: 28 }
+		const bw = x1 - x0
+		const bh = y1 - y0
+		const scale = Math.min((el.width - inset.left - inset.right) / bw, (el.height - inset.top - inset.bottom) / bh, el.width / CLOSEST)
+		const w = el.width / scale
+		const h = el.height / scale
+		const x = x0 - inset.left / scale - ((el.width - inset.left - inset.right) / scale - bw) / 2
+		const y = y0 - inset.top / scale - ((el.height - inset.top - inset.bottom) / scale - bh) / 2
+		glideTo({ x, y, w, h })
+		// glideTo only moves refs, so it need not be a dependency.
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [chain, picked, placed])
 
 	// The wheel zooms toward the pointer. Not passive, so the dialog does not scroll instead.
@@ -147,10 +205,13 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, chain, onHover, 
 		const wheel = (e: WheelEvent) => {
 			e.preventDefault()
 			const p = toMap(e.clientX, e.clientY)
-			zoom(e.deltaY > 0 ? 1.12 : 1 / 1.12, { x: p.x, y: p.y })
+			const delta = e.deltaMode === 1 ? e.deltaY * 30 : e.deltaY
+			zoom(Math.exp(Math.max(-120, Math.min(120, delta)) * 0.0022), { x: p.x, y: p.y })
 		}
 		el.addEventListener('wheel', wheel, { passive: false })
 		return () => el.removeEventListener('wheel', wheel)
+		// zoom only moves refs, so it need not be a dependency.
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
 	const button = 'flex size-9 items-center justify-center border border-white/20 bg-black/30 text-white/85 backdrop-blur transition hover:border-white hover:text-white'
@@ -177,7 +238,7 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, chain, onHover, 
 			const dy = (e.clientY - d.y) / scale
 			d.x = e.clientX
 			d.y = e.clientY
-			setVb((v) => ({ ...v, x: v.x - dx, y: v.y - dy }))
+			panBy(dx, dy)
 		}}
 		onPointerUp={() => (drag.current = null)}
 		onClickCapture={(e) => {
@@ -292,7 +353,7 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, chain, onHover, 
 		<button type='button' className={button} aria-label='Zoom out' onClick={() => zoom(1.33)}>
 			<MinusIcon size={16} weight='bold' />
 		</button>
-		<button type='button' className={button} aria-label='Reset the view' onClick={() => (setVb(HOME), onPick(null))}>
+		<button type='button' className={button} aria-label='Reset the view' onClick={() => (glideTo(HOME), onPick(null))}>
 			<ArrowsInIcon size={16} weight='bold' />
 		</button>
 	</div>

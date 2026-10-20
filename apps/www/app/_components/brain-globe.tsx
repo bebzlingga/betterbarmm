@@ -80,14 +80,16 @@ type Props = {
 	onPick: (id: string | null) => void
 	/** Drawn above the zoom buttons: the 3D / 2D switch. */
 	toolbar?: React.ReactNode
+	/** Everything a pick reaches; the camera fits it on screen. */
+	chain?: Set<string> | null
 }
 
-export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick, toolbar }: Props) {
+export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick, toolbar, chain }: Props) {
 	const box = useRef<HTMLDivElement>(null)
-	const state = useRef({ lit, edgeLit, picked, onHover, onPick })
+	const state = useRef({ lit, edgeLit, picked, onHover, onPick, chain })
 	// The frame loop reads the latest of these; kept current after every render.
 	useEffect(() => {
-		state.current = { lit, edgeLit, picked, onHover, onPick }
+		state.current = { lit, edgeLit, picked, onHover, onPick, chain }
 	})
 	const api = useRef<{ zoom: (k: number) => void; reset: () => void; spin: (on: boolean) => void } | null>(null)
 	const [spinning, setSpinning] = useState(true)
@@ -249,45 +251,83 @@ export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick
 		renderer.domElement.addEventListener('pointerleave', leave)
 		renderer.domElement.style.cursor = 'grab'
 
-		// Flying the camera to a picked node, and back home.
+		/* The camera's two motions. A flight (to frame a pick, or home) eases the
+		   camera and its target toward a goal; a zoom eases only the distance.
+		   Either gives way the moment the reader drags, scrolls or pinches, and a
+		   flight gives up after a moment, so neither ever fights the hand. */
+		const clock = new THREE.Clock()
 		let flyTo: THREE.Vector3 | null = null
 		let flyLook: THREE.Vector3 | null = null
+		let flyUntil = 0
+		let zoomTo: number | null = null
 		let lastPicked: string | null = null
+		const fly = (to: THREE.Vector3, look: THREE.Vector3) => {
+			flyTo = to
+			flyLook = look
+			flyUntil = clock.elapsedTime + 1.6
+			zoomTo = null
+		}
+		const land = () => {
+			flyTo = flyLook = null
+		}
+		controls.addEventListener('start', land)
+		const clampDist = (d: number) => Math.min(controls.maxDistance, Math.max(controls.minDistance, d))
+		// The wheel (and a trackpad's pinch, which arrives as one) zooms by how far it turned.
+		const wheel = (e: WheelEvent) => {
+			e.preventDefault()
+			e.stopPropagation()
+			land()
+			const delta = e.deltaMode === 1 ? e.deltaY * 30 : e.deltaY
+			const from = zoomTo ?? camera.position.distanceTo(controls.target)
+			zoomTo = clampDist(from * Math.exp(Math.max(-120, Math.min(120, delta)) * 0.0016))
+		}
+		host.addEventListener('wheel', wheel, { passive: false, capture: true })
+
+		/** Fit a set of nodes on screen, labels and all, looking at them from outside the globe. */
+		const frame3d = (ids: string[]) => {
+			const pts = ids.map((id) => at.get(id)).filter(Boolean) as THREE.Vector3[]
+			if (!pts.length) return
+			const centre = pts.reduce((c, p) => c.add(p), new THREE.Vector3()).multiplyScalar(1 / pts.length)
+			const radius = Math.max(0.5, ...pts.map((p) => p.distanceTo(centre))) + 0.55
+			const v = THREE.MathUtils.degToRad(camera.fov) / 2
+			const hz = Math.atan(Math.tan(v) * camera.aspect)
+			const dist = clampDist((radius / Math.sin(Math.min(v, hz))) * 1.08)
+			const dir = centre.length() > 0.3 ? centre.clone().normalize() : camera.position.clone().sub(controls.target).normalize()
+			fly(centre.clone().add(dir.multiplyScalar(dist)), centre)
+		}
+
 		api.current = {
 			zoom: (k) => {
-				flyTo = camera.position.clone().multiplyScalar(k).clampLength(controls.minDistance, controls.maxDistance)
-				flyLook = controls.target.clone()
+				land()
+				zoomTo = clampDist((zoomTo ?? camera.position.distanceTo(controls.target)) * k)
 			},
-			reset: () => {
-				flyTo = home.clone()
-				flyLook = new THREE.Vector3()
-			},
+			reset: () => fly(home.clone(), new THREE.Vector3()),
 			spin: (on) => (controls.autoRotate = on && !still),
 		}
 
 		const camDir = new THREE.Vector3()
-		const clock = new THREE.Clock()
 		let frame = 0
 		const tick = () => {
 			frame = requestAnimationFrame(tick)
 			const dt = clock.getDelta()
-			const { lit, edgeLit, picked } = state.current
+			const { lit, edgeLit, picked, chain } = state.current
 
 			if (picked !== lastPicked) {
 				lastPicked = picked
-				const pos = picked ? at.get(picked) : null
-				if (pos && pos.length() > 0.01) {
-					flyTo = pos.clone().setLength(pos.length() + 3.2)
-					flyLook = pos.clone().multiplyScalar(0.55)
-				} else if (picked === 'jo') {
-					flyTo = new THREE.Vector3(0, 0.8, 4.2)
-					flyLook = new THREE.Vector3()
-				}
+				if (picked) frame3d(chain?.size ? [...chain] : [picked])
 			}
 			if (flyTo && flyLook) {
-				camera.position.lerp(flyTo, 0.07)
-				controls.target.lerp(flyLook, 0.07)
-				if (camera.position.distanceTo(flyTo) < 0.02) flyTo = flyLook = null
+				const k = 1 - Math.exp(-dt * 4.5)
+				camera.position.lerp(flyTo, k)
+				controls.target.lerp(flyLook, k)
+				if (camera.position.distanceTo(flyTo) < 0.03 || clock.elapsedTime > flyUntil) land()
+			}
+			if (zoomTo !== null) {
+				const offset = camera.position.clone().sub(controls.target)
+				const d = offset.length()
+				const next = d + (zoomTo - d) * (1 - Math.exp(-dt * 10))
+				camera.position.copy(controls.target).add(offset.setLength(next))
+				if (Math.abs(next - zoomTo) < 0.01) zoomTo = null
 			}
 
 			camera.getWorldDirection(camDir)
@@ -357,6 +397,8 @@ export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick
 		return () => {
 			cancelAnimationFrame(frame)
 			fit.disconnect()
+			controls.removeEventListener('start', land)
+			host.removeEventListener('wheel', wheel, { capture: true })
 			controls.dispose()
 			renderer.domElement.removeEventListener('pointermove', move)
 			renderer.domElement.removeEventListener('pointerdown', press)
