@@ -1,6 +1,6 @@
 {
  "name": "GPPB blacklisted entities",
- "generatedAt": "2026-10-12",
+ "generatedAt": "2026-10-20",
  "source": [
   {
    "label": "GPPB Online Blacklisting Portal",
@@ -130,38 +130,6 @@
    ]
   },
   {
-   "blacklisted_entity": "Jakka Service Center Corporation",
-   "bo_issued": "4",
-   "min_date": "2024-02-20",
-   "max_date": "2025-02-19",
-   "orders": [
-    {
-     "procuring_entity": "Philippine Army (Land Forces)",
-     "start_date": "2024-02-20",
-     "end_date": "2025-02-19",
-     "project": "Supply and Delivery of Lot 3: Spare Parts of 2 1/2 Ton, Troop Carrier/Cargo M35"
-    },
-    {
-     "procuring_entity": "Philippine Army (Land Forces)",
-     "start_date": "2024-02-20",
-     "end_date": "2025-02-19",
-     "project": "Supply and Delivery of Lot 1: Spare Parts of Truck, Troop Carrier 1 1/4 Ton, KM450"
-    },
-    {
-     "procuring_entity": "Philippine Army (Land Forces)",
-     "start_date": "2024-02-20",
-     "end_date": "2025-02-19",
-     "project": "Supply and Delivery of Lot 2: Spare Parts of 2 1/2 Ton, Troop Carrier/Cargo, KM250"
-    },
-    {
-     "procuring_entity": "Philippine Army (Land Forces)",
-     "start_date": "2024-02-20",
-     "end_date": "2025-02-19",
-     "project": "Supply and Delivery of Lot 4: Spare Parts of 5 Ton, Troop Carrier/Cargo, M923A1"
-    }
-   ]
-  },
-  {
    "blacklisted_entity": "WAWAO Builders",
    "bo_issued": "4",
    "min_date": "2026-04-08",
@@ -194,34 +162,34 @@
    ]
   },
   {
-   "blacklisted_entity": "Joint Venture of MLS JC Construction Services and Namkoo Power Solar Panel Trading",
+   "blacklisted_entity": "Jakka Service Center Corporation",
    "bo_issued": "4",
-   "min_date": "2026-06-23",
-   "max_date": "2027-06-29",
+   "min_date": "2024-02-20",
+   "max_date": "2025-02-19",
    "orders": [
     {
-     "procuring_entity": "National Power Corporation",
-     "start_date": "2026-06-23",
-     "end_date": "2027-06-22",
-     "project": "Design, Supply, Delivery, Installation, Test and Commissioning of Batbatan Island Solar PV-Diesel Hybrid System (with ESS)"
+     "procuring_entity": "Philippine Army (Land Forces)",
+     "start_date": "2024-02-20",
+     "end_date": "2025-02-19",
+     "project": "Supply and Delivery of Lot 3: Spare Parts of 2 1/2 Ton, Troop Carrier/Cargo M35"
     },
     {
-     "procuring_entity": "National Power Corporation",
-     "start_date": "2026-06-23",
-     "end_date": "2027-06-22",
-     "project": "Design, Supply, Delivery, Installation, Test and Commissioning of Maripipi Island Solar PV-Diesel Hybrid System (with ESS)"
+     "procuring_entity": "Philippine Army (Land Forces)",
+     "start_date": "2024-02-20",
+     "end_date": "2025-02-19",
+     "project": "Supply and Delivery of Lot 1: Spare Parts of Truck, Troop Carrier 1 1/4 Ton, KM450"
     },
     {
-     "procuring_entity": "National Power Corporation",
-     "start_date": "2026-06-23",
-     "end_date": "2027-06-22",
-     "project": "Design, Supply, Delivery, Installation, Test and Commissioning of Kalayaan Island Solar PV-Diesel Hybrid System (with ESS)"
+     "procuring_entity": "Philippine Army (Land Forces)",
+     "start_date": "2024-02-20",
+     "end_date": "2025-02-19",
+     "project": "Supply and Delivery of Lot 2: Spare Parts of 2 1/2 Ton, Troop Carrier/Cargo, KM250"
     },
     {
-     "procuring_entity": "National Power Corporation",
-     "start_date": "2026-06-30",
-     "end_date": "2027-06-29",
-     "project": "Design, Supply, Delivery, Installation, Test and Commissioning of Calayan Solar PV-Diesel Hybrid System (with ESS)"
+     "procuring_entity": "Philippine Army (Land Forces)",
+     "start_date": "2024-02-20",
+     "end_date": "2025-02-19",
+     "project": "Supply and Delivery of Lot 4: Spare Parts of 5 Ton, Troop Carrier/Cargo, M923A1"
     }
    ]
   },
@@ -254,6 +222,38 @@
      "start_date": "2023-01-04",
      "end_date": "2024-01-03",
      "project": "MMIP-II LMC-021 Package 5, Construction of Canal & Structures Along RMC2 Station 12+540-13+840"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Joint Venture of MLS JC Construction Services and Namkoo Power Solar Panel Trading",
+   "bo_issued": "4",
+   "min_date": "2026-06-23",
+   "max_date": "2027-06-29",
+   "orders": [
+    {
+     "procuring_entity": "National Power Corporation",
+     "start_date": "2026-06-23",
+     "end_date": "2027-06-22",
+     "project": "Design, Supply, Delivery, Installation, Test and Commissioning of Batbatan Island Solar PV-Diesel Hybrid System (with ESS)"
+    },
+    {
+     "procuring_entity": "National Power Corporation",
+     "start_date": "2026-06-23",
+     "end_date": "2027-06-22",
+     "project": "Design, Supply, Delivery, Installation, Test and Commissioning of Maripipi Island Solar PV-Diesel Hybrid System (with ESS)"
+    },
+    {
+     "procuring_entity": "National Power Corporation",
+     "start_date": "2026-06-23",
+     "end_date": "2027-06-22",
+     "project": "Design, Supply, Delivery, Installation, Test and Commissioning of Kalayaan Island Solar PV-Diesel Hybrid System (with ESS)"
+    },
+    {
+     "procuring_entity": "National Power Corporation",
+     "start_date": "2026-06-30",
+     "end_date": "2027-06-29",
+     "project": "Design, Supply, Delivery, Installation, Test and Commissioning of Calayan Solar PV-Diesel Hybrid System (with ESS)"
     }
    ]
   },
@@ -336,28 +336,28 @@
    ]
   },
   {
-   "blacklisted_entity": "J-R3 CONSTRUCTION AND SUPPLY",
+   "blacklisted_entity": "JV of Gensan Shipyard and Machine Works Inc. and Tropicana Worldwide Corp.",
    "bo_issued": "3",
-   "min_date": "2026-01-06",
-   "max_date": "PERMANENT",
+   "min_date": "2025-09-23",
+   "max_date": "2028-02-08",
    "orders": [
     {
-     "procuring_entity": "Bureau of Fire Protection - NCR",
-     "start_date": "2026-01-06",
-     "end_date": "2027-01-05",
-     "project": "Reconstruction of Sta. Mesa Fire Station, Fire District I, BFP-NCR"
+     "procuring_entity": "Philippine Navy Procurement Center",
+     "start_date": "2025-09-23",
+     "end_date": "2026-09-22",
+     "project": "Drydocking and Other Related Repairs (DDORR) of BRP IVATAN (LC298)"
     },
     {
-     "procuring_entity": "Bureau of Fire Protection - Region 4B",
-     "start_date": "2026-04-28",
-     "end_date": "2028-04-27",
-     "project": "Early Procurement Activity for the Construction of Mamburao Fire Station"
+     "procuring_entity": "Philippine Navy Procurement Center",
+     "start_date": "2026-02-09",
+     "end_date": "2028-02-08",
+     "project": "Drydocking and Other Related Repairs (DDORR) of BRP BATAK (LC299)"
     },
     {
-     "procuring_entity": "Bureau of Fire Protection - Region 4B",
-     "start_date": "2026-05-20",
-     "end_date": "PERMANENT",
-     "project": "Early Procurement Activity for the Construction of Busuanga Fire Station, Palawan"
+     "procuring_entity": "Philippine Navy Procurement Center",
+     "start_date": "2026-02-09",
+     "end_date": "2028-02-08",
+     "project": "Drydocking and Other Related Repairs (DDORR) of BRP CONRADO YAP (PS39)"
     }
    ]
   },
@@ -466,32 +466,6 @@
    ]
   },
   {
-   "blacklisted_entity": "JV of Gensan Shipyard and Machine Works Inc. and Tropicana Worldwide Corp.",
-   "bo_issued": "3",
-   "min_date": "2025-09-23",
-   "max_date": "2028-02-08",
-   "orders": [
-    {
-     "procuring_entity": "Philippine Navy Procurement Center",
-     "start_date": "2025-09-23",
-     "end_date": "2026-09-22",
-     "project": "Drydocking and Other Related Repairs (DDORR) of BRP IVATAN (LC298)"
-    },
-    {
-     "procuring_entity": "Philippine Navy Procurement Center",
-     "start_date": "2026-02-09",
-     "end_date": "2028-02-08",
-     "project": "Drydocking and Other Related Repairs (DDORR) of BRP BATAK (LC299)"
-    },
-    {
-     "procuring_entity": "Philippine Navy Procurement Center",
-     "start_date": "2026-02-09",
-     "end_date": "2028-02-08",
-     "project": "Drydocking and Other Related Repairs (DDORR) of BRP CONRADO YAP (PS39)"
-    }
-   ]
-  },
-  {
    "blacklisted_entity": "MLTP Enterprises",
    "bo_issued": "3",
    "min_date": "2023-11-15",
@@ -514,6 +488,32 @@
      "start_date": "2025-03-20",
      "end_date": "2027-03-19",
      "project": "Supply and Delivery of Spare Parts for Carry on Board Spares (COBS) of NCEBde Watercrafts"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "J-R3 CONSTRUCTION AND SUPPLY",
+   "bo_issued": "3",
+   "min_date": "2026-01-06",
+   "max_date": "PERMANENT",
+   "orders": [
+    {
+     "procuring_entity": "Bureau of Fire Protection - NCR",
+     "start_date": "2026-01-06",
+     "end_date": "2027-01-05",
+     "project": "Reconstruction of Sta. Mesa Fire Station, Fire District I, BFP-NCR"
+    },
+    {
+     "procuring_entity": "Bureau of Fire Protection - Region 4B",
+     "start_date": "2026-04-28",
+     "end_date": "2028-04-27",
+     "project": "Early Procurement Activity for the Construction of Mamburao Fire Station"
+    },
+    {
+     "procuring_entity": "Bureau of Fire Protection - Region 4B",
+     "start_date": "2026-05-20",
+     "end_date": "PERMANENT",
+     "project": "Early Procurement Activity for the Construction of Busuanga Fire Station, Palawan"
     }
    ]
   },
@@ -648,6 +648,46 @@
    ]
   },
   {
+   "blacklisted_entity": "Propmech Corporation",
+   "bo_issued": "2",
+   "min_date": "2026-09-07",
+   "max_date": "2028-09-06",
+   "orders": [
+    {
+     "procuring_entity": "Philippine Navy Procurement Center",
+     "start_date": "2026-09-07",
+     "end_date": "2027-09-06",
+     "project": "Supply and Delivery of Parts and Materials for the Preventive Maintenance Schedule of Sixteen (16) Units of Patrol Craft Coastal for the PMC"
+    },
+    {
+     "procuring_entity": "Philippine Navy Procurement Center",
+     "start_date": "2026-09-07",
+     "end_date": "2028-09-06",
+     "project": "Procurement of Float Engine for MCABBN"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "M-NAV SOLUTIONS, INC., VISSIM AS",
+   "bo_issued": "2",
+   "min_date": "2022-02-03",
+   "max_date": "2024-02-02",
+   "orders": [
+    {
+     "procuring_entity": "Authority of the Freeport Area of Bataan (AFAB)",
+     "start_date": "2022-02-03",
+     "end_date": "2024-02-02",
+     "project": "Vessel Traffic Management System"
+    },
+    {
+     "procuring_entity": "Authority of the Freeport Area of Bataan (AFAB)",
+     "start_date": "2022-02-03",
+     "end_date": "2024-02-02",
+     "project": "Vessel Traffic Management System"
+    }
+   ]
+  },
+  {
    "blacklisted_entity": "INFOSHARE MANAGEMENT SYSTEMS (IFMS)",
    "bo_issued": "2",
    "min_date": "2022-08-11",
@@ -664,66 +704,6 @@
      "start_date": "2022-08-11",
      "end_date": "2023-08-11",
      "project": "CONSULTING SERVICES FOR THE PREPARATION OF REGIONAL STRATEGIC INVESTMENT PLAN FOR COFFEE INDUSTRY AND PROCESSED FRUITS AND NUTS INDUSTRY"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "Ventureone Trading & Construction Co.",
-   "bo_issued": "2",
-   "min_date": "2022-04-05",
-   "max_date": "2023-04-05",
-   "orders": [
-    {
-     "procuring_entity": "Clark Development Corporation",
-     "start_date": "2022-04-05",
-     "end_date": "2023-04-05",
-     "project": "CDC Office Renovation Phase 1 (COA Office Extension at Bldg. 2121)"
-    },
-    {
-     "procuring_entity": "Clark Development Corporation",
-     "start_date": "2022-04-05",
-     "end_date": "2023-04-05",
-     "project": "CDC Office Renovation Phase 1 (COA Office Extension at Bldg. 2121)"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "L.M. Baltonado Construction",
-   "bo_issued": "2",
-   "min_date": "2022-12-12",
-   "max_date": "2024-12-11",
-   "orders": [
-    {
-     "procuring_entity": "Department of Public Works and Highways - Central Office",
-     "start_date": "2022-12-12",
-     "end_date": "2023-12-11",
-     "project": "1. 19IA0007 - Rehabilitation of Damaged Paved Roads - Tertiary Roads, Maripipi Circumferential Road, K0014+000 - K0015+500 (From 11.81517314 deg, 124.3176803 deg to 11.81536483 deg, 124.329689 deg) and, 2. 20IA0023 - Asset Preservation  - Rehabilitation/Reconstruction/Upgrading of Damaged Paved - Tertiary Roads - Maripipi Circumferential Road, K0004+585 - K0006+600 (124.51507, 11.58347 - 124.51518, 11.58332) Maripipi, Biliran Province"
-    },
-    {
-     "procuring_entity": "Department of Public Works and Highways - Central Office",
-     "start_date": "2022-12-12",
-     "end_date": "2024-12-11",
-     "project": "19IA0007 - Rehabiitation of Damaged Paved Roads - Tertiary Roads, Maripipi Circumferential Road K0014+000 - K0015+500 (from 11.81517314°, 124.3176803\" to 11.81536483°, 124.329689\"), Maripipi, Biliran Province"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "DUBC CONST CORP.",
-   "bo_issued": "2",
-   "min_date": "2021-08-17",
-   "max_date": "2022-08-16",
-   "orders": [
-    {
-     "procuring_entity": "City of General Santos (Dadiangas), South Cotabato",
-     "start_date": "2021-08-17",
-     "end_date": "2022-08-16",
-     "project": "19CW-GSC-038 Road Concreting of National Hi-way to Purok Estrella, Barangay Calumpang, General Santos City"
-    },
-    {
-     "procuring_entity": "City of General Santos (Dadiangas), South Cotabato",
-     "start_date": "2021-08-17",
-     "end_date": "2022-08-16",
-     "project": "19CW-GSC-038 Road Concreting of National Hi-way to Purok Estrella, Barangay Calumpang, General Santos City"
     }
    ]
   },
@@ -748,66 +728,6 @@
    ]
   },
   {
-   "blacklisted_entity": "M-NAV SOLUTIONS, INC., VISSIM AS",
-   "bo_issued": "2",
-   "min_date": "2022-02-03",
-   "max_date": "2024-02-02",
-   "orders": [
-    {
-     "procuring_entity": "Authority of the Freeport Area of Bataan (AFAB)",
-     "start_date": "2022-02-03",
-     "end_date": "2024-02-02",
-     "project": "Vessel Traffic Management System"
-    },
-    {
-     "procuring_entity": "Authority of the Freeport Area of Bataan (AFAB)",
-     "start_date": "2022-02-03",
-     "end_date": "2024-02-02",
-     "project": "Vessel Traffic Management System"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "B.C. Cuerpo Construction Corporation",
-   "bo_issued": "2",
-   "min_date": "2020-12-01",
-   "max_date": "2021-11-30",
-   "orders": [
-    {
-     "procuring_entity": "Zamboanga City State Polytechnic College",
-     "start_date": "2020-12-01",
-     "end_date": "2021-11-30",
-     "project": "Construction of Engineering Building"
-    },
-    {
-     "procuring_entity": "Zamboanga City State Polytechnic College",
-     "start_date": "2020-12-01",
-     "end_date": "2021-11-30",
-     "project": "Refitting of Garments and Textile Shop Laboratory Classrooms"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "Propmech Corporation",
-   "bo_issued": "2",
-   "min_date": "2026-09-07",
-   "max_date": "2028-09-06",
-   "orders": [
-    {
-     "procuring_entity": "Philippine Navy Procurement Center",
-     "start_date": "2026-09-07",
-     "end_date": "2027-09-06",
-     "project": "Supply and Delivery of Parts and Materials for the Preventive Maintenance Schedule of Sixteen (16) Units of Patrol Craft Coastal for the PMC"
-    },
-    {
-     "procuring_entity": "Philippine Navy Procurement Center",
-     "start_date": "2026-09-07",
-     "end_date": "2028-09-06",
-     "project": "Procurement of Float Engine for MCABBN"
-    }
-   ]
-  },
-  {
    "blacklisted_entity": "IJM ENTERPRISES AND SERVICES INC.",
    "bo_issued": "2",
    "min_date": "2026-06-25",
@@ -824,246 +744,6 @@
      "start_date": "2026-07-06",
      "end_date": "2028-07-05",
      "project": "Venue Accommodation with Food and Drinks and Others under Project No. QCDTRC(TAHANAN)-24-HLMF-1706"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "DCCJ TRADING",
-   "bo_issued": "2",
-   "min_date": "2025-05-22",
-   "max_date": "2026-09-01",
-   "orders": [
-    {
-     "procuring_entity": "Philippine National Police Academy",
-     "start_date": "2025-05-22",
-     "end_date": "2026-05-21",
-     "project": "Procurement of Bunks for PNPA Class of 2028"
-    },
-    {
-     "procuring_entity": "Philippine Merchant Marine Academy",
-     "start_date": "2025-09-02",
-     "end_date": "2026-09-01",
-     "project": "BUNK BEDS FOR PMMA CDO"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "MC Taguba Construction",
-   "bo_issued": "2",
-   "min_date": "2025-03-31",
-   "max_date": "2027-03-27",
-   "orders": [
-    {
-     "procuring_entity": "Bureau of Fire Protection - Region 2",
-     "start_date": "2025-03-31",
-     "end_date": "2026-03-30",
-     "project": "Construction of Tuao FS"
-    },
-    {
-     "procuring_entity": "Development Bank of the Philippines",
-     "start_date": "2026-03-27",
-     "end_date": "2027-03-27",
-     "project": "Grounds-Up Construction of the Tuguegarao Branch of the Development Bank of the Philippines under Reference No. I-2022-07"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "Rych Construction",
-   "bo_issued": "2",
-   "min_date": "2025-01-24",
-   "max_date": "2026-01-23",
-   "orders": [
-    {
-     "procuring_entity": "Philippine National Police - Region 10",
-     "start_date": "2025-01-24",
-     "end_date": "2026-01-23",
-     "project": "Construction of Standard Municipal Police Station Building Type \"B/C in Kitaotao, Bukidnon"
-    },
-    {
-     "procuring_entity": "Philippine National Police - Region 10",
-     "start_date": "2025-01-24",
-     "end_date": "2026-01-23",
-     "project": "Construction of Standard Municipal Police Station Building type \"B/C\" in Guinsiliban, Camiguin"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "LEGACY CONSTRUCTION CORPORATION",
-   "bo_issued": "2",
-   "min_date": "2024-04-23",
-   "max_date": "2025-04-22",
-   "orders": [
-    {
-     "procuring_entity": "National Irrigation Administration - Region XIII",
-     "start_date": "2024-04-23",
-     "end_date": "2025-04-22",
-     "project": "REPAIR NIS-BAOY RIS-2024-DISTRICT II-SDN-ADSI-IMO-001-RO and LMC-2024-HAWILIAN-SIP-010-RO"
-    },
-    {
-     "procuring_entity": "National Irrigation Administration - Region XIII",
-     "start_date": "2024-04-23",
-     "end_date": "2025-04-22",
-     "project": "REPAIR NIS-BAOY RIS-2024-DISTRICT II-SDN-ADSI-IMO-001-RO (REPAIR OF DIVERSION DAM) and LMC-2024-HAWILIAN-SIP-010-RO (CONSTRUCTION OF CANAL STRUCTURES AND CANALIZATION WORKS AT MAIN CANAL)"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "ISOMETRIC ENTERPRISES, INC.",
-   "bo_issued": "2",
-   "min_date": "2025-11-11",
-   "max_date": "2027-12-04",
-   "orders": [
-    {
-     "procuring_entity": "Philippine International Convention Center",
-     "start_date": "2025-11-11",
-     "end_date": "2026-11-10",
-     "project": "Supply and installation of two (2) passenger elevators and one (1) freight elevator as replacement of the old/existing units serving the Delegation and Secretariat Buildings"
-    },
-    {
-     "procuring_entity": "Philippine International Convention Center",
-     "start_date": "2025-12-05",
-     "end_date": "2027-12-04",
-     "project": "Supply, Delivery, and Installation of New Escalators at the 3rd Floor to 4th Floor Delegation Building"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "Jeros Construction and Supply",
-   "bo_issued": "2",
-   "min_date": "2024-02-12",
-   "max_date": "2025-02-20",
-   "orders": [
-    {
-     "procuring_entity": "City of Baguio, Benguet",
-     "start_date": "2024-02-12",
-     "end_date": "2025-02-11",
-     "project": "Rehabilitation/Improvement of Child Development Center at Purok Magsaysay, Loakan Proper, Baguio City"
-    },
-    {
-     "procuring_entity": "City of Baguio, Benguet",
-     "start_date": "2024-02-21",
-     "end_date": "2025-02-20",
-     "project": "Sidewalk Recovery and Improvement and Rehabilitation of Drainage"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "Fatin Enterprise",
-   "bo_issued": "2",
-   "min_date": "2021-10-05",
-   "max_date": "2022-10-06",
-   "orders": [
-    {
-     "procuring_entity": "Department of Environment and Natural Resources - NCR",
-     "start_date": "2021-10-05",
-     "end_date": "2022-10-06",
-     "project": "Procurement of Office Furniture and Portable Generator Set"
-    },
-    {
-     "procuring_entity": "Department of Environment and Natural Resources - NCR",
-     "start_date": "2021-10-05",
-     "end_date": "2022-10-06",
-     "project": "Procurement of Office Furniture and Portable Generator Set"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "Houston Hydrotech Products and Systems, Inc.",
-   "bo_issued": "2",
-   "min_date": "2025-03-07",
-   "max_date": "2026-03-06",
-   "orders": [
-    {
-     "procuring_entity": "National Irrigation Administration - Agusan del Norte, Surigao del Norte and Dinagat Island Irrigation Management Office",
-     "start_date": "2025-03-07",
-     "end_date": "2026-03-06",
-     "project": "Construction of Solar Powered Pump"
-    },
-    {
-     "procuring_entity": "National Irrigation Administration - Agusan del Norte, Surigao del Norte and Dinagat Island Irrigation Management Office",
-     "start_date": "2025-03-07",
-     "end_date": "2026-03-06",
-     "project": "Construction of Solar Powered Pump in Brgy. Aupagan, Butuan City, Agusan del Norte"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "MECEL CONSTRUCTION AND ELECTRICAL, INC.",
-   "bo_issued": "2",
-   "min_date": "2024-05-03",
-   "max_date": "2026-05-20",
-   "orders": [
-    {
-     "procuring_entity": "Philippine National Police- NHQ",
-     "start_date": "2024-05-03",
-     "end_date": "2026-05-03",
-     "project": "INSTALLATION OF OTHER ELECTRICAL FACILITIES FOR PNP MEDICAL PLAZA"
-    },
-    {
-     "procuring_entity": "Philippine National Police- NHQ",
-     "start_date": "2024-05-20",
-     "end_date": "2026-05-20",
-     "project": "THE CONSTRUCTION OF MEDICAL PLAZA (PHASE 2)"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "MECEL CONSTRUCTION AND ELECTRICAL, INC.",
-   "bo_issued": "2",
-   "min_date": "2024-05-03",
-   "max_date": "2026-05-20",
-   "orders": [
-    {
-     "procuring_entity": "Philippine National Police- NHQ",
-     "start_date": "2024-05-03",
-     "end_date": "2026-05-03",
-     "project": "INSTALLATION OF OTHER ELECTRICAL FACILITIES FOR PNP MEDICAL PLAZA"
-    },
-    {
-     "procuring_entity": "Philippine National Police- NHQ",
-     "start_date": "2024-05-20",
-     "end_date": "2026-05-20",
-     "project": "THE CONSTRUCTION OF MEDICAL PLAZA (PHASE 2)"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "DCCJ TRADING",
-   "bo_issued": "2",
-   "min_date": "2025-05-22",
-   "max_date": "2026-09-01",
-   "orders": [
-    {
-     "procuring_entity": "Philippine National Police Academy",
-     "start_date": "2025-05-22",
-     "end_date": "2026-05-21",
-     "project": "Procurement of Bunks for PNPA Class of 2028"
-    },
-    {
-     "procuring_entity": "Philippine Merchant Marine Academy",
-     "start_date": "2025-09-02",
-     "end_date": "2026-09-01",
-     "project": "BUNK BEDS FOR PMMA CDO"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "ISOMETRIC ENTERPRISES, INC.",
-   "bo_issued": "2",
-   "min_date": "2025-11-11",
-   "max_date": "2027-12-04",
-   "orders": [
-    {
-     "procuring_entity": "Philippine International Convention Center",
-     "start_date": "2025-11-11",
-     "end_date": "2026-11-10",
-     "project": "Supply and installation of two (2) passenger elevators and one (1) freight elevator as replacement of the old/existing units serving the Delegation and Secretariat Buildings"
-    },
-    {
-     "procuring_entity": "Philippine International Convention Center",
-     "start_date": "2025-12-05",
-     "end_date": "2027-12-04",
-     "project": "Supply, Delivery, and Installation of New Escalators at the 3rd Floor to 4th Floor Delegation Building"
     }
    ]
   },
@@ -1088,6 +768,86 @@
    ]
   },
   {
+   "blacklisted_entity": "B.C. Cuerpo Construction Corporation",
+   "bo_issued": "2",
+   "min_date": "2020-12-01",
+   "max_date": "2021-11-30",
+   "orders": [
+    {
+     "procuring_entity": "Zamboanga City State Polytechnic College",
+     "start_date": "2020-12-01",
+     "end_date": "2021-11-30",
+     "project": "Construction of Engineering Building"
+    },
+    {
+     "procuring_entity": "Zamboanga City State Polytechnic College",
+     "start_date": "2020-12-01",
+     "end_date": "2021-11-30",
+     "project": "Refitting of Garments and Textile Shop Laboratory Classrooms"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Ventureone Trading & Construction Co.",
+   "bo_issued": "2",
+   "min_date": "2022-04-05",
+   "max_date": "2023-04-05",
+   "orders": [
+    {
+     "procuring_entity": "Clark Development Corporation",
+     "start_date": "2022-04-05",
+     "end_date": "2023-04-05",
+     "project": "CDC Office Renovation Phase 1 (COA Office Extension at Bldg. 2121)"
+    },
+    {
+     "procuring_entity": "Clark Development Corporation",
+     "start_date": "2022-04-05",
+     "end_date": "2023-04-05",
+     "project": "CDC Office Renovation Phase 1 (COA Office Extension at Bldg. 2121)"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "DCCJ TRADING",
+   "bo_issued": "2",
+   "min_date": "2025-05-22",
+   "max_date": "2026-09-01",
+   "orders": [
+    {
+     "procuring_entity": "Philippine National Police Academy",
+     "start_date": "2025-05-22",
+     "end_date": "2026-05-21",
+     "project": "Procurement of Bunks for PNPA Class of 2028"
+    },
+    {
+     "procuring_entity": "Philippine Merchant Marine Academy",
+     "start_date": "2025-09-02",
+     "end_date": "2026-09-01",
+     "project": "BUNK BEDS FOR PMMA CDO"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "FFJJ Construction",
+   "bo_issued": "2",
+   "min_date": "2026-05-26",
+   "max_date": "2027-05-25",
+   "orders": [
+    {
+     "procuring_entity": "Philippine National Oil Company - Exploration Corporation",
+     "start_date": "2026-05-26",
+     "end_date": "2027-05-25",
+     "project": "Construction of Infrastructures for Mine 4 Coal Project in Zamboanga Sibugay"
+    },
+    {
+     "procuring_entity": "Philippine National Oil Company - Exploration Corporation",
+     "start_date": "2026-05-26",
+     "end_date": "2027-05-25",
+     "project": "Construction of Infrastructures for Mine 4 Coal Project in Zamboanga Sibugay"
+    }
+   ]
+  },
+  {
    "blacklisted_entity": "MC Taguba Construction",
    "bo_issued": "2",
    "min_date": "2025-03-31",
@@ -1108,42 +868,62 @@
    ]
   },
   {
-   "blacklisted_entity": "M-NAV SOLUTIONS, INC., VISSIM AS",
+   "blacklisted_entity": "L.M. Baltonado Construction",
    "bo_issued": "2",
-   "min_date": "2022-02-03",
-   "max_date": "2024-02-02",
+   "min_date": "2022-12-12",
+   "max_date": "2024-12-11",
    "orders": [
     {
-     "procuring_entity": "Authority of the Freeport Area of Bataan (AFAB)",
-     "start_date": "2022-02-03",
-     "end_date": "2024-02-02",
-     "project": "Vessel Traffic Management System"
+     "procuring_entity": "Department of Public Works and Highways - Central Office",
+     "start_date": "2022-12-12",
+     "end_date": "2023-12-11",
+     "project": "1. 19IA0007 - Rehabilitation of Damaged Paved Roads - Tertiary Roads, Maripipi Circumferential Road, K0014+000 - K0015+500 (From 11.81517314 deg, 124.3176803 deg to 11.81536483 deg, 124.329689 deg) and, 2. 20IA0023 - Asset Preservation  - Rehabilitation/Reconstruction/Upgrading of Damaged Paved - Tertiary Roads - Maripipi Circumferential Road, K0004+585 - K0006+600 (124.51507, 11.58347 - 124.51518, 11.58332) Maripipi, Biliran Province"
     },
     {
-     "procuring_entity": "Authority of the Freeport Area of Bataan (AFAB)",
-     "start_date": "2022-02-03",
-     "end_date": "2024-02-02",
-     "project": "Vessel Traffic Management System"
+     "procuring_entity": "Department of Public Works and Highways - Central Office",
+     "start_date": "2022-12-12",
+     "end_date": "2024-12-11",
+     "project": "19IA0007 - Rehabiitation of Damaged Paved Roads - Tertiary Roads, Maripipi Circumferential Road K0014+000 - K0015+500 (from 11.81517314°, 124.3176803\" to 11.81536483°, 124.329689\"), Maripipi, Biliran Province"
     }
    ]
   },
   {
-   "blacklisted_entity": "INFOSHARE MANAGEMENT SYSTEMS (IFMS)",
+   "blacklisted_entity": "LEGACY CONSTRUCTION CORPORATION",
    "bo_issued": "2",
-   "min_date": "2022-08-11",
-   "max_date": "2023-08-11",
+   "min_date": "2024-04-23",
+   "max_date": "2025-04-22",
    "orders": [
     {
-     "procuring_entity": "Department of Trade and Industry - Region 8",
-     "start_date": "2022-08-11",
-     "end_date": "2023-08-11",
-     "project": "CONSULTING SERVICES FOR THE PREPARATION OF REGIONAL STRATEGIC INVESTMENT PLAN FOR COFFEE INDUSTRY AND PROCESSED FRUITS AND NUTS INDUSTRY"
+     "procuring_entity": "National Irrigation Administration - Region XIII",
+     "start_date": "2024-04-23",
+     "end_date": "2025-04-22",
+     "project": "REPAIR NIS-BAOY RIS-2024-DISTRICT II-SDN-ADSI-IMO-001-RO and LMC-2024-HAWILIAN-SIP-010-RO"
     },
     {
-     "procuring_entity": "Department of Trade and Industry - Region 8",
-     "start_date": "2022-08-11",
-     "end_date": "2023-08-11",
-     "project": "CONSULTING SERVICES FOR THE PREPARATION OF REGIONAL STRATEGIC INVESTMENT PLAN FOR COFFEE INDUSTRY AND PROCESSED FRUITS AND NUTS INDUSTRY"
+     "procuring_entity": "National Irrigation Administration - Region XIII",
+     "start_date": "2024-04-23",
+     "end_date": "2025-04-22",
+     "project": "REPAIR NIS-BAOY RIS-2024-DISTRICT II-SDN-ADSI-IMO-001-RO (REPAIR OF DIVERSION DAM) and LMC-2024-HAWILIAN-SIP-010-RO (CONSTRUCTION OF CANAL STRUCTURES AND CANALIZATION WORKS AT MAIN CANAL)"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Houston Hydrotech Products and Systems, Inc.",
+   "bo_issued": "2",
+   "min_date": "2025-03-07",
+   "max_date": "2026-03-06",
+   "orders": [
+    {
+     "procuring_entity": "National Irrigation Administration - Agusan del Norte, Surigao del Norte and Dinagat Island Irrigation Management Office",
+     "start_date": "2025-03-07",
+     "end_date": "2026-03-06",
+     "project": "Construction of Solar Powered Pump"
+    },
+    {
+     "procuring_entity": "National Irrigation Administration - Agusan del Norte, Surigao del Norte and Dinagat Island Irrigation Management Office",
+     "start_date": "2025-03-07",
+     "end_date": "2026-03-06",
+     "project": "Construction of Solar Powered Pump in Brgy. Aupagan, Butuan City, Agusan del Norte"
     }
    ]
   },
@@ -1188,22 +968,202 @@
    ]
   },
   {
-   "blacklisted_entity": "LICHT INDUSTRIAL CORPORATION",
+   "blacklisted_entity": "Jeros Construction and Supply",
    "bo_issued": "2",
-   "min_date": "2021-05-14",
-   "max_date": "2023-07-11",
+   "min_date": "2024-02-12",
+   "max_date": "2025-02-20",
    "orders": [
     {
-     "procuring_entity": "Philippine Air Force (Air Forces)",
-     "start_date": "2021-05-14",
-     "end_date": "2022-05-14",
-     "project": "PAFPC-CDS-20-126 Procurement of Generators Set Type"
+     "procuring_entity": "City of Baguio, Benguet",
+     "start_date": "2024-02-12",
+     "end_date": "2025-02-11",
+     "project": "Rehabilitation/Improvement of Child Development Center at Purok Magsaysay, Loakan Proper, Baguio City"
     },
     {
-     "procuring_entity": "Pag-IBIG Fund Cagayan Valley Region",
-     "start_date": "2022-07-11",
-     "end_date": "2023-07-11",
-     "project": "SUPPLY, DELIVERY, INSTALLATION AND COMMISSIONING OF BRAND NEW GENERATOR SETS_ ONE UNIT 90KVA FOR Pag-IBIG FUND CAUAYAN BRANCH AND ONE UNIT 350KVA FOR Pag-IBIG FUND TUGUEGARAO HUB"
+     "procuring_entity": "City of Baguio, Benguet",
+     "start_date": "2024-02-21",
+     "end_date": "2025-02-20",
+     "project": "Sidewalk Recovery and Improvement and Rehabilitation of Drainage"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "ISOMETRIC ENTERPRISES, INC.",
+   "bo_issued": "2",
+   "min_date": "2025-11-11",
+   "max_date": "2027-12-04",
+   "orders": [
+    {
+     "procuring_entity": "Philippine International Convention Center",
+     "start_date": "2025-11-11",
+     "end_date": "2026-11-10",
+     "project": "Supply and installation of two (2) passenger elevators and one (1) freight elevator as replacement of the old/existing units serving the Delegation and Secretariat Buildings"
+    },
+    {
+     "procuring_entity": "Philippine International Convention Center",
+     "start_date": "2025-12-05",
+     "end_date": "2027-12-04",
+     "project": "Supply, Delivery, and Installation of New Escalators at the 3rd Floor to 4th Floor Delegation Building"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "DCCJ TRADING",
+   "bo_issued": "2",
+   "min_date": "2025-05-22",
+   "max_date": "2026-09-01",
+   "orders": [
+    {
+     "procuring_entity": "Philippine National Police Academy",
+     "start_date": "2025-05-22",
+     "end_date": "2026-05-21",
+     "project": "Procurement of Bunks for PNPA Class of 2028"
+    },
+    {
+     "procuring_entity": "Philippine Merchant Marine Academy",
+     "start_date": "2025-09-02",
+     "end_date": "2026-09-01",
+     "project": "BUNK BEDS FOR PMMA CDO"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "ISOMETRIC ENTERPRISES, INC.",
+   "bo_issued": "2",
+   "min_date": "2025-11-11",
+   "max_date": "2027-12-04",
+   "orders": [
+    {
+     "procuring_entity": "Philippine International Convention Center",
+     "start_date": "2025-11-11",
+     "end_date": "2026-11-10",
+     "project": "Supply and installation of two (2) passenger elevators and one (1) freight elevator as replacement of the old/existing units serving the Delegation and Secretariat Buildings"
+    },
+    {
+     "procuring_entity": "Philippine International Convention Center",
+     "start_date": "2025-12-05",
+     "end_date": "2027-12-04",
+     "project": "Supply, Delivery, and Installation of New Escalators at the 3rd Floor to 4th Floor Delegation Building"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "MC Taguba Construction",
+   "bo_issued": "2",
+   "min_date": "2025-03-31",
+   "max_date": "2027-03-27",
+   "orders": [
+    {
+     "procuring_entity": "Bureau of Fire Protection - Region 2",
+     "start_date": "2025-03-31",
+     "end_date": "2026-03-30",
+     "project": "Construction of Tuao FS"
+    },
+    {
+     "procuring_entity": "Development Bank of the Philippines",
+     "start_date": "2026-03-27",
+     "end_date": "2027-03-27",
+     "project": "Grounds-Up Construction of the Tuguegarao Branch of the Development Bank of the Philippines under Reference No. I-2022-07"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "DUBC CONST CORP.",
+   "bo_issued": "2",
+   "min_date": "2021-08-17",
+   "max_date": "2022-08-16",
+   "orders": [
+    {
+     "procuring_entity": "City of General Santos (Dadiangas), South Cotabato",
+     "start_date": "2021-08-17",
+     "end_date": "2022-08-16",
+     "project": "19CW-GSC-038 Road Concreting of National Hi-way to Purok Estrella, Barangay Calumpang, General Santos City"
+    },
+    {
+     "procuring_entity": "City of General Santos (Dadiangas), South Cotabato",
+     "start_date": "2021-08-17",
+     "end_date": "2022-08-16",
+     "project": "19CW-GSC-038 Road Concreting of National Hi-way to Purok Estrella, Barangay Calumpang, General Santos City"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "INFOSHARE MANAGEMENT SYSTEMS (IFMS)",
+   "bo_issued": "2",
+   "min_date": "2022-08-11",
+   "max_date": "2023-08-11",
+   "orders": [
+    {
+     "procuring_entity": "Department of Trade and Industry - Region 8",
+     "start_date": "2022-08-11",
+     "end_date": "2023-08-11",
+     "project": "CONSULTING SERVICES FOR THE PREPARATION OF REGIONAL STRATEGIC INVESTMENT PLAN FOR COFFEE INDUSTRY AND PROCESSED FRUITS AND NUTS INDUSTRY"
+    },
+    {
+     "procuring_entity": "Department of Trade and Industry - Region 8",
+     "start_date": "2022-08-11",
+     "end_date": "2023-08-11",
+     "project": "CONSULTING SERVICES FOR THE PREPARATION OF REGIONAL STRATEGIC INVESTMENT PLAN FOR COFFEE INDUSTRY AND PROCESSED FRUITS AND NUTS INDUSTRY"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "M-NAV SOLUTIONS, INC., VISSIM AS",
+   "bo_issued": "2",
+   "min_date": "2022-02-03",
+   "max_date": "2024-02-02",
+   "orders": [
+    {
+     "procuring_entity": "Authority of the Freeport Area of Bataan (AFAB)",
+     "start_date": "2022-02-03",
+     "end_date": "2024-02-02",
+     "project": "Vessel Traffic Management System"
+    },
+    {
+     "procuring_entity": "Authority of the Freeport Area of Bataan (AFAB)",
+     "start_date": "2022-02-03",
+     "end_date": "2024-02-02",
+     "project": "Vessel Traffic Management System"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Fatin Enterprise",
+   "bo_issued": "2",
+   "min_date": "2021-10-05",
+   "max_date": "2022-10-06",
+   "orders": [
+    {
+     "procuring_entity": "Department of Environment and Natural Resources - NCR",
+     "start_date": "2021-10-05",
+     "end_date": "2022-10-06",
+     "project": "Procurement of Office Furniture and Portable Generator Set"
+    },
+    {
+     "procuring_entity": "Department of Environment and Natural Resources - NCR",
+     "start_date": "2021-10-05",
+     "end_date": "2022-10-06",
+     "project": "Procurement of Office Furniture and Portable Generator Set"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "MMEEN Construction ",
+   "bo_issued": "2",
+   "min_date": "2021-03-10",
+   "max_date": "2023-03-23",
+   "orders": [
+    {
+     "procuring_entity": "Department of Budget and Management - Central Office",
+     "start_date": "2021-03-10",
+     "end_date": "2023-03-10",
+     "project": "Replacement of Tiles and Repainting of the Interior Walls and Finishes of Budget Information Training Service Office"
+    },
+    {
+     "procuring_entity": "Department of Budget and Management - Central Office",
+     "start_date": "2021-03-24",
+     "end_date": "2023-03-23",
+     "project": "Replacement of Tiles and Repainting of the Interior Walls and Finishes of Budget and Management Bureau-B Office"
     }
    ]
   },
@@ -1244,6 +1204,46 @@
      "start_date": "2020-08-10",
      "end_date": "2021-08-10",
      "project": "SSF on Chichacorn, Food Processing for Root Crops and Fruits, Meat Processing, Coffee processing, and Food Processing"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "LICHT INDUSTRIAL CORPORATION",
+   "bo_issued": "2",
+   "min_date": "2021-05-14",
+   "max_date": "2023-07-11",
+   "orders": [
+    {
+     "procuring_entity": "Philippine Air Force (Air Forces)",
+     "start_date": "2021-05-14",
+     "end_date": "2022-05-14",
+     "project": "PAFPC-CDS-20-126 Procurement of Generators Set Type"
+    },
+    {
+     "procuring_entity": "Pag-IBIG Fund Cagayan Valley Region",
+     "start_date": "2022-07-11",
+     "end_date": "2023-07-11",
+     "project": "SUPPLY, DELIVERY, INSTALLATION AND COMMISSIONING OF BRAND NEW GENERATOR SETS_ ONE UNIT 90KVA FOR Pag-IBIG FUND CAUAYAN BRANCH AND ONE UNIT 350KVA FOR Pag-IBIG FUND TUGUEGARAO HUB"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Bongabong Coconut Farmers Multi-Purpose Cooperative ",
+   "bo_issued": "2",
+   "min_date": "2020-12-01",
+   "max_date": "2021-12-01",
+   "orders": [
+    {
+     "procuring_entity": "Department of Education - NCR",
+     "start_date": "2020-12-01",
+     "end_date": "2021-12-01",
+     "project": "Supply and Delivery of School Furniture under the CY 2018 Basic Education Facilities Fund "
+    },
+    {
+     "procuring_entity": "Department of Education - NCR",
+     "start_date": "2020-12-01",
+     "end_date": "2021-12-01",
+     "project": "Supply and Delivery of TVL Tools and Equipment"
     }
    ]
   },
@@ -1328,26 +1328,6 @@
    ]
   },
   {
-   "blacklisted_entity": "Jesse Care Pest Management Services",
-   "bo_issued": "2",
-   "min_date": "2024-01-30",
-   "max_date": "2025-01-30",
-   "orders": [
-    {
-     "procuring_entity": "Bangko Sentral ng Pilipinas - Head Office and Security Plant Complex",
-     "start_date": "2024-01-30",
-     "end_date": "2025-01-29",
-     "project": "One (1) Lot - Supply of Manpower, Tools, Equipment, Supplies, Materials, and Supervision for General Pest Control, with Above-Ground Stations, Baiting System and Other Related Services for the Bangko Sentral ng Pilipinas, Security Plant Complex under BAC-SPC GS No. 2022-076 dated 20 December 2021"
-    },
-    {
-     "procuring_entity": "Bangko Sentral ng Pilipinas",
-     "start_date": "2024-01-30",
-     "end_date": "2025-01-30",
-     "project": "One (1) Lot – Supply of Manpower, Tools, Equipment, Supplies, Materials, and Supervision for General Pest Control, with Above-Ground Stations, Baiting System and Other Related Services for the Bangko Sentral Ng Pilipinas, Security Plant Complex"
-    }
-   ]
-  },
-  {
    "blacklisted_entity": "JOHNSEV ENTERPRISES",
    "bo_issued": "2",
    "min_date": "2023-02-20",
@@ -1368,22 +1348,42 @@
    ]
   },
   {
-   "blacklisted_entity": "B.C. Cuerpo Construction Corporation",
+   "blacklisted_entity": "Jesse Care Pest Management Services",
    "bo_issued": "2",
-   "min_date": "2020-12-01",
-   "max_date": "2021-11-30",
+   "min_date": "2024-01-30",
+   "max_date": "2025-01-30",
    "orders": [
     {
-     "procuring_entity": "Zamboanga City State Polytechnic College",
-     "start_date": "2020-12-01",
-     "end_date": "2021-11-30",
-     "project": "Construction of Engineering Building"
+     "procuring_entity": "Bangko Sentral ng Pilipinas - Head Office and Security Plant Complex",
+     "start_date": "2024-01-30",
+     "end_date": "2025-01-29",
+     "project": "One (1) Lot - Supply of Manpower, Tools, Equipment, Supplies, Materials, and Supervision for General Pest Control, with Above-Ground Stations, Baiting System and Other Related Services for the Bangko Sentral ng Pilipinas, Security Plant Complex under BAC-SPC GS No. 2022-076 dated 20 December 2021"
     },
     {
-     "procuring_entity": "Zamboanga City State Polytechnic College",
-     "start_date": "2020-12-01",
-     "end_date": "2021-11-30",
-     "project": "Refitting of Garments and Textile Shop Laboratory Classrooms"
+     "procuring_entity": "Bangko Sentral ng Pilipinas",
+     "start_date": "2024-01-30",
+     "end_date": "2025-01-30",
+     "project": "One (1) Lot – Supply of Manpower, Tools, Equipment, Supplies, Materials, and Supervision for General Pest Control, with Above-Ground Stations, Baiting System and Other Related Services for the Bangko Sentral Ng Pilipinas, Security Plant Complex"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Fourth Generation T Construction",
+   "bo_issued": "2",
+   "min_date": "2026-07-08",
+   "max_date": "2028-07-22",
+   "orders": [
+    {
+     "procuring_entity": "Department of Agriculture - Region 4B",
+     "start_date": "2026-07-08",
+     "end_date": "2027-07-07",
+     "project": "Construction of Rice Processing Center III Warehouse in Taytay, Palawan"
+    },
+    {
+     "procuring_entity": "Department of Agriculture - Region 4B",
+     "start_date": "2026-07-23",
+     "end_date": "2028-07-22",
+     "project": "Construction of Bio-Secured 30-Sow Level Farm Production Facility in Odiongan, Romblon"
     }
    ]
   },
@@ -1428,22 +1428,42 @@
    ]
   },
   {
-   "blacklisted_entity": "HERVELYN Intertrading & Builders Corporation",
+   "blacklisted_entity": "ISOMETRIC ENTERPRISES, INC.",
    "bo_issued": "2",
-   "min_date": "2024-01-05",
-   "max_date": "2026-01-05",
+   "min_date": "2025-11-11",
+   "max_date": "2027-12-04",
    "orders": [
     {
-     "procuring_entity": "National Irrigation Administration – Malitubog-Maridagao Irrigation Project Phase II",
-     "start_date": "2024-01-05",
-     "end_date": "2025-01-05",
-     "project": "MMIP-II LMC-020, Package I, Construction of Canal Structure along RMC2 Station 8+680-9+480 and Lateral C Station 0+000-1+677 MMIP-II LMC-020, Package III, Construction of Canal Structure along RMC2 Sta. 10+520 to Sta. 11+460 MMIP-II LMC-021, Package I, Construction of Canal Structure along RMC2 Station 11+460 to Sta. 12+540 (1.30km) MMIP-II LMC-021, Package V, Construction of Canal Structure along RMC2 Station 12+540 to Sta. 13+840 (1.30km)"
+     "procuring_entity": "Philippine International Convention Center",
+     "start_date": "2025-11-11",
+     "end_date": "2026-11-10",
+     "project": "Supply and installation of two (2) passenger elevators and one (1) freight elevator as replacement of the old/existing units serving the Delegation and Secretariat Buildings"
     },
     {
-     "procuring_entity": "National Irrigation Administration - Malitubog-Maridagao Irrigation Project Stage II",
-     "start_date": "2025-01-06",
-     "end_date": "2026-01-05",
-     "project": "1.\tMMIPII-LMC-020, Package I, Construction of Canal and Structures along RMC2 Sta. 8+680 to Sta. 9+480 and Lateral C Sta. 0+000 to 1+677 in the amount of Php 95,398,596.05\r\n2.\tMMIPII-LMC-020, Package III, Construction of Canal and Structures along RMC2 Sta. 10+520 to Sta. 11+460 in the amount of Php 95,259,004.76.\r\n3.\tMMIPII-LMC-021, Package I, Construction of Canal and Structure along RMC2 Station 11+460 to Sta. 12+540 (1.30 km) in the amount of Php 93,476,738.22\r\n4.\tMMIPII-LMC-021, Package V, Construction of Canal and Structure along RMC2 Station 12+540 to Sta. 13+840 (1.30 km) in the amount of Php 92,296,612.51."
+     "procuring_entity": "Philippine International Convention Center",
+     "start_date": "2025-12-05",
+     "end_date": "2027-12-04",
+     "project": "Supply, Delivery, and Installation of New Escalators at the 3rd Floor to 4th Floor Delegation Building"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Fatin Enterprise",
+   "bo_issued": "2",
+   "min_date": "2021-10-05",
+   "max_date": "2022-10-06",
+   "orders": [
+    {
+     "procuring_entity": "Department of Environment and Natural Resources - NCR",
+     "start_date": "2021-10-05",
+     "end_date": "2022-10-06",
+     "project": "Procurement of Office Furniture and Portable Generator Set"
+    },
+    {
+     "procuring_entity": "Department of Environment and Natural Resources - NCR",
+     "start_date": "2021-10-05",
+     "end_date": "2022-10-06",
+     "project": "Procurement of Office Furniture and Portable Generator Set"
     }
    ]
   },
@@ -1468,42 +1488,22 @@
    ]
   },
   {
-   "blacklisted_entity": "Benguet Agri-Resources",
+   "blacklisted_entity": "MECEL CONSTRUCTION AND ELECTRICAL, INC.",
    "bo_issued": "2",
-   "min_date": "2020-08-10",
-   "max_date": "2021-08-10",
+   "min_date": "2024-05-03",
+   "max_date": "2026-05-20",
    "orders": [
     {
-     "procuring_entity": "Department of Trade and Industry - CAR",
-     "start_date": "2020-08-10",
-     "end_date": "2021-08-09",
-     "project": "SSF on Chichacorn processing, SSF on Food Processing for Root Cropos"
+     "procuring_entity": "Philippine National Police- NHQ",
+     "start_date": "2024-05-03",
+     "end_date": "2026-05-03",
+     "project": "INSTALLATION OF OTHER ELECTRICAL FACILITIES FOR PNP MEDICAL PLAZA"
     },
     {
-     "procuring_entity": "Department of Trade and Industry - CAR",
-     "start_date": "2020-08-10",
-     "end_date": "2021-08-10",
-     "project": "SSF on Chichacorn, Food Processing for Root Crops and Fruits, Meat Processing, Coffee processing, and Food Processing"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "AWB Chekibo Company",
-   "bo_issued": "2",
-   "min_date": "2022-03-29",
-   "max_date": "2024-03-28",
-   "orders": [
-    {
-     "procuring_entity": "Philippine Air Force (Air Forces)",
-     "start_date": "2022-03-29",
-     "end_date": "2024-03-28",
-     "project": "PO# 2021-3-0524 Proc of 5 rolls 38mm THHN wire & 14 other L/I; PO# 2021-4-0684 Proc of 10 pails Aircraft Toilet Sanitizer (25L/pail) PN_ ADROX 1823 (FN) & 16 other L/I; PO# 2021-4-0689 Proc of 1 lot Maintenance and Cleaning of Air Conditioning units of OCHA; PO# 2021-4-0690 Proc of 40 pcs LED Light bulb 25W & 26 other L/I"
-    },
-    {
-     "procuring_entity": "Philippine Air Force (Air Forces)",
-     "start_date": "2022-03-29",
-     "end_date": "2024-03-28",
-     "project": "PO# 2021-3-0524 Proc of 5 rolls 38mm THHN wire & 14 other L/I; PO# 2021-4-0684 Proc of 10 pails Aircraft Toilet Sanitizer (25L/pail) PN_ ADROX 1823 (FN) & 16 other L/I; PO# 2021-4-0689 Proc of 1 lot Maintenance and Cleaning of Air Conditioning units of OCHA; PO# 2021-4-0690 Proc of 40 pcs LED Light bulb 25W & 26 other L/I"
+     "procuring_entity": "Philippine National Police- NHQ",
+     "start_date": "2024-05-20",
+     "end_date": "2026-05-20",
+     "project": "THE CONSTRUCTION OF MEDICAL PLAZA (PHASE 2)"
     }
    ]
   },
@@ -1528,22 +1528,22 @@
    ]
   },
   {
-   "blacklisted_entity": "Red Diamond Construction",
+   "blacklisted_entity": "Benguet Agri-Resources",
    "bo_issued": "2",
-   "min_date": "2023-10-25",
-   "max_date": "2026-01-12",
+   "min_date": "2020-08-10",
+   "max_date": "2021-08-10",
    "orders": [
     {
-     "procuring_entity": "Philippine International Trading Corporation",
-     "start_date": "2023-10-25",
-     "end_date": "2024-10-24",
-     "project": "Repair and Rehabilitation of Enlisted Personnel Career Advance Course (EPCAC) Building 7301 for the Philippine Navy (PN) – One (1) Lot under Contract Ref. No. 2019-245"
+     "procuring_entity": "Department of Trade and Industry - CAR",
+     "start_date": "2020-08-10",
+     "end_date": "2021-08-09",
+     "project": "SSF on Chichacorn processing, SSF on Food Processing for Root Cropos"
     },
     {
-     "procuring_entity": "Philippine Navy Procurement Center",
-     "start_date": "2025-01-13",
-     "end_date": "2026-01-12",
-     "project": "Supply and Delivery of Labor and Materials for the Construction of EP Barracks at MBGL"
+     "procuring_entity": "Department of Trade and Industry - CAR",
+     "start_date": "2020-08-10",
+     "end_date": "2021-08-10",
+     "project": "SSF on Chichacorn, Food Processing for Root Crops and Fruits, Meat Processing, Coffee processing, and Food Processing"
     }
    ]
   },
@@ -1568,6 +1568,26 @@
    ]
   },
   {
+   "blacklisted_entity": "LEGACY CONSTRUCTION CORPORATION",
+   "bo_issued": "2",
+   "min_date": "2024-04-23",
+   "max_date": "2025-04-22",
+   "orders": [
+    {
+     "procuring_entity": "National Irrigation Administration - Region XIII",
+     "start_date": "2024-04-23",
+     "end_date": "2025-04-22",
+     "project": "REPAIR NIS-BAOY RIS-2024-DISTRICT II-SDN-ADSI-IMO-001-RO and LMC-2024-HAWILIAN-SIP-010-RO"
+    },
+    {
+     "procuring_entity": "National Irrigation Administration - Region XIII",
+     "start_date": "2024-04-23",
+     "end_date": "2025-04-22",
+     "project": "REPAIR NIS-BAOY RIS-2024-DISTRICT II-SDN-ADSI-IMO-001-RO (REPAIR OF DIVERSION DAM) and LMC-2024-HAWILIAN-SIP-010-RO (CONSTRUCTION OF CANAL STRUCTURES AND CANALIZATION WORKS AT MAIN CANAL)"
+    }
+   ]
+  },
+  {
    "blacklisted_entity": "O.Q. Construction and Supply",
    "bo_issued": "2",
    "min_date": "2024-04-18",
@@ -1588,62 +1608,42 @@
    ]
   },
   {
-   "blacklisted_entity": "JOHNSEV ENTERPRISES",
+   "blacklisted_entity": "Red Diamond Construction",
    "bo_issued": "2",
-   "min_date": "2023-02-20",
-   "max_date": "2024-02-19",
+   "min_date": "2023-10-25",
+   "max_date": "2026-01-12",
    "orders": [
     {
-     "procuring_entity": "Occidental Mindoro State College",
-     "start_date": "2023-02-20",
-     "end_date": "2023-02-19",
-     "project": "Rehabilitation of 2-storey Classroom Building of the College of Criminal Justice Education (CCJE) at OMSC Labangan"
+     "procuring_entity": "Philippine International Trading Corporation",
+     "start_date": "2023-10-25",
+     "end_date": "2024-10-24",
+     "project": "Repair and Rehabilitation of Enlisted Personnel Career Advance Course (EPCAC) Building 7301 for the Philippine Navy (PN) – One (1) Lot under Contract Ref. No. 2019-245"
     },
     {
-     "procuring_entity": "Occidental Mindoro State College",
-     "start_date": "2023-02-20",
-     "end_date": "2024-02-19",
-     "project": "Rehabilitation of 2-Storey Classroom Building of the College of Criminal Justice Education (CCJE) at OMSC Labangan."
+     "procuring_entity": "Philippine Navy Procurement Center",
+     "start_date": "2025-01-13",
+     "end_date": "2026-01-12",
+     "project": "Supply and Delivery of Labor and Materials for the Construction of EP Barracks at MBGL"
     }
    ]
   },
   {
-   "blacklisted_entity": "MMEEN Construction ",
+   "blacklisted_entity": "AWB Chekibo Company",
    "bo_issued": "2",
-   "min_date": "2021-03-10",
-   "max_date": "2023-03-23",
+   "min_date": "2022-03-29",
+   "max_date": "2024-03-28",
    "orders": [
     {
-     "procuring_entity": "Department of Budget and Management - Central Office",
-     "start_date": "2021-03-10",
-     "end_date": "2023-03-10",
-     "project": "Replacement of Tiles and Repainting of the Interior Walls and Finishes of Budget Information Training Service Office"
+     "procuring_entity": "Philippine Air Force (Air Forces)",
+     "start_date": "2022-03-29",
+     "end_date": "2024-03-28",
+     "project": "PO# 2021-3-0524 Proc of 5 rolls 38mm THHN wire & 14 other L/I; PO# 2021-4-0684 Proc of 10 pails Aircraft Toilet Sanitizer (25L/pail) PN_ ADROX 1823 (FN) & 16 other L/I; PO# 2021-4-0689 Proc of 1 lot Maintenance and Cleaning of Air Conditioning units of OCHA; PO# 2021-4-0690 Proc of 40 pcs LED Light bulb 25W & 26 other L/I"
     },
     {
-     "procuring_entity": "Department of Budget and Management - Central Office",
-     "start_date": "2021-03-24",
-     "end_date": "2023-03-23",
-     "project": "Replacement of Tiles and Repainting of the Interior Walls and Finishes of Budget and Management Bureau-B Office"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "MECEL CONSTRUCTION AND ELECTRICAL, INC.",
-   "bo_issued": "2",
-   "min_date": "2024-05-03",
-   "max_date": "2026-05-20",
-   "orders": [
-    {
-     "procuring_entity": "Philippine National Police- NHQ",
-     "start_date": "2024-05-03",
-     "end_date": "2026-05-03",
-     "project": "INSTALLATION OF OTHER ELECTRICAL FACILITIES FOR PNP MEDICAL PLAZA"
-    },
-    {
-     "procuring_entity": "Philippine National Police- NHQ",
-     "start_date": "2024-05-20",
-     "end_date": "2026-05-20",
-     "project": "THE CONSTRUCTION OF MEDICAL PLAZA (PHASE 2)"
+     "procuring_entity": "Philippine Air Force (Air Forces)",
+     "start_date": "2022-03-29",
+     "end_date": "2024-03-28",
+     "project": "PO# 2021-3-0524 Proc of 5 rolls 38mm THHN wire & 14 other L/I; PO# 2021-4-0684 Proc of 10 pails Aircraft Toilet Sanitizer (25L/pail) PN_ ADROX 1823 (FN) & 16 other L/I; PO# 2021-4-0689 Proc of 1 lot Maintenance and Cleaning of Air Conditioning units of OCHA; PO# 2021-4-0690 Proc of 40 pcs LED Light bulb 25W & 26 other L/I"
     }
    ]
   },
@@ -1688,42 +1688,42 @@
    ]
   },
   {
-   "blacklisted_entity": "ISOMETRIC ENTERPRISES, INC.",
+   "blacklisted_entity": "MMEEN Construction ",
    "bo_issued": "2",
-   "min_date": "2025-11-11",
-   "max_date": "2027-12-04",
+   "min_date": "2021-03-10",
+   "max_date": "2023-03-23",
    "orders": [
     {
-     "procuring_entity": "Philippine International Convention Center",
-     "start_date": "2025-11-11",
-     "end_date": "2026-11-10",
-     "project": "Supply and installation of two (2) passenger elevators and one (1) freight elevator as replacement of the old/existing units serving the Delegation and Secretariat Buildings"
+     "procuring_entity": "Department of Budget and Management - Central Office",
+     "start_date": "2021-03-10",
+     "end_date": "2023-03-10",
+     "project": "Replacement of Tiles and Repainting of the Interior Walls and Finishes of Budget Information Training Service Office"
     },
     {
-     "procuring_entity": "Philippine International Convention Center",
-     "start_date": "2025-12-05",
-     "end_date": "2027-12-04",
-     "project": "Supply, Delivery, and Installation of New Escalators at the 3rd Floor to 4th Floor Delegation Building"
+     "procuring_entity": "Department of Budget and Management - Central Office",
+     "start_date": "2021-03-24",
+     "end_date": "2023-03-23",
+     "project": "Replacement of Tiles and Repainting of the Interior Walls and Finishes of Budget and Management Bureau-B Office"
     }
    ]
   },
   {
-   "blacklisted_entity": "Solid M Construction",
+   "blacklisted_entity": "FFJJ Construction",
    "bo_issued": "2",
-   "min_date": "2022-09-02",
-   "max_date": "2023-09-06",
+   "min_date": "2026-05-26",
+   "max_date": "2027-05-25",
    "orders": [
     {
-     "procuring_entity": "National Irrigation Administration - Region 8",
-     "start_date": "2022-09-02",
-     "end_date": "2023-09-06",
-     "project": "Construction of Diversion Dam and Irrigation Canals of Hagbay Irrigation Project"
+     "procuring_entity": "Philippine National Oil Company - Exploration Corporation",
+     "start_date": "2026-05-26",
+     "end_date": "2027-05-25",
+     "project": "Construction of Infrastructures for Mine 4 Coal Project in Zamboanga Sibugay"
     },
     {
-     "procuring_entity": "National Irrigation Administration - Region 8",
-     "start_date": "2022-09-07",
-     "end_date": "2023-09-06",
-     "project": "Construction of Diversion Dam and Irrigation Canals of Hagbay Irrigation Project"
+     "procuring_entity": "Philippine National Oil Company - Exploration Corporation",
+     "start_date": "2026-05-26",
+     "end_date": "2027-05-25",
+     "project": "Construction of Infrastructures for Mine 4 Coal Project in Zamboanga Sibugay"
     }
    ]
   },
@@ -1768,44 +1768,22 @@
    ]
   },
   {
-   "blacklisted_entity": "Markmedia Solutions.com",
-   "bo_issued": "1",
-   "min_date": "2021-09-06",
-   "max_date": "2022-09-05",
+   "blacklisted_entity": "Solid M Construction",
+   "bo_issued": "2",
+   "min_date": "2022-09-02",
+   "max_date": "2023-09-06",
    "orders": [
     {
-     "procuring_entity": "Philippine Health Insurance Corporation - CAR",
-     "start_date": "2021-09-06",
-     "end_date": "2022-09-05",
-     "project": "Procurement of Various PhilHealth Collaterals per Job Order No. J-20-006 dated October 26, 2020"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "TRYST BUILDERS ENTERPRISES",
-   "bo_issued": "1",
-   "min_date": "2026-06-01",
-   "max_date": "2027-05-31",
-   "orders": [
+     "procuring_entity": "National Irrigation Administration - Region 8",
+     "start_date": "2022-09-02",
+     "end_date": "2023-09-06",
+     "project": "Construction of Diversion Dam and Irrigation Canals of Hagbay Irrigation Project"
+    },
     {
-     "procuring_entity": "Philippine Army (Land Forces)",
-     "start_date": "2026-06-01",
-     "end_date": "2027-05-31",
-     "project": "Design and Build of Mobilization Center at Camp Marcos, Brgy. Visaya, Vintar, Ilocos Norte"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "BENZQ Industrial Machinery Trading",
-   "bo_issued": "1",
-   "min_date": "2023-01-16",
-   "max_date": "2024-01-16",
-   "orders": [
-    {
-     "procuring_entity": "Municipal Government Unit of Libungan, Cotabato",
-     "start_date": "2023-01-16",
-     "end_date": "2024-01-16",
-     "project": "Procurement of Cassava Chipper with Granulator"
+     "procuring_entity": "National Irrigation Administration - Region 8",
+     "start_date": "2022-09-07",
+     "end_date": "2023-09-06",
+     "project": "Construction of Diversion Dam and Irrigation Canals of Hagbay Irrigation Project"
     }
    ]
   },
@@ -1880,20 +1858,6 @@
    ]
   },
   {
-   "blacklisted_entity": "CTC Builders and Supplies Inc.",
-   "bo_issued": "1",
-   "min_date": "2023-06-07",
-   "max_date": "2024-06-06",
-   "orders": [
-    {
-     "procuring_entity": "Department of Public Works and Highways - Central Office",
-     "start_date": "2023-06-07",
-     "end_date": "2024-06-06",
-     "project": "22FE0064 - OO1_ Bridge Program - Widening of Permanent Bridges - Bagula Bridge (B00390LZ), along Daang Maharlika (LZ)"
-    }
-   ]
-  },
-  {
    "blacklisted_entity": "Binungor Construction",
    "bo_issued": "1",
    "min_date": "2026-02-12",
@@ -1908,16 +1872,16 @@
    ]
   },
   {
-   "blacklisted_entity": "RALB CONSTRUCTION",
+   "blacklisted_entity": "CTC Builders and Supplies Inc.",
    "bo_issued": "1",
-   "min_date": "2020-10-01",
-   "max_date": "2021-10-01",
+   "min_date": "2023-06-07",
+   "max_date": "2024-06-06",
    "orders": [
     {
-     "procuring_entity": "Land Transportation Office - NCR",
-     "start_date": "2020-10-01",
-     "end_date": "2021-10-01",
-     "project": "Rehabilitation of Office Building at LTO Kaloocan District Office and Kaloocan Licensing Extension"
+     "procuring_entity": "Department of Public Works and Highways - Central Office",
+     "start_date": "2023-06-07",
+     "end_date": "2024-06-06",
+     "project": "22FE0064 - OO1_ Bridge Program - Widening of Permanent Bridges - Bagula Bridge (B00390LZ), along Daang Maharlika (LZ)"
     }
    ]
   },
@@ -1936,20 +1900,6 @@
    ]
   },
   {
-   "blacklisted_entity": "Embrocal Builders, Inc.",
-   "bo_issued": "1",
-   "min_date": "2022-02-17",
-   "max_date": "2024-02-17",
-   "orders": [
-    {
-     "procuring_entity": "Philippine Air Force (Air Forces)",
-     "start_date": "2022-02-17",
-     "end_date": "2024-02-17",
-     "project": "PB-PAFSBAC-001-21 for the Repair of AIr Force City Inn, Building Nr 6892 "
-    }
-   ]
-  },
-  {
    "blacklisted_entity": "AGP Elevator Supply and Installation Services",
    "bo_issued": "1",
    "min_date": "2022-05-13",
@@ -1960,6 +1910,34 @@
      "start_date": "2022-05-13",
      "end_date": "2023-05-13",
      "project": "One (1) Lot Supply, Delivery and Replacement of Bearings of the Traction Motor and Deflection Pulley of Passenger Elevator No. 4 located at the Multi-Storey Building, Bangko Sentral ng Pilipinas Head Office, as per BSP Terms of Reference "
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "RALB CONSTRUCTION",
+   "bo_issued": "1",
+   "min_date": "2020-10-01",
+   "max_date": "2021-10-01",
+   "orders": [
+    {
+     "procuring_entity": "Land Transportation Office - NCR",
+     "start_date": "2020-10-01",
+     "end_date": "2021-10-01",
+     "project": "Rehabilitation of Office Building at LTO Kaloocan District Office and Kaloocan Licensing Extension"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Embrocal Builders, Inc.",
+   "bo_issued": "1",
+   "min_date": "2022-02-17",
+   "max_date": "2024-02-17",
+   "orders": [
+    {
+     "procuring_entity": "Philippine Air Force (Air Forces)",
+     "start_date": "2022-02-17",
+     "end_date": "2024-02-17",
+     "project": "PB-PAFSBAC-001-21 for the Repair of AIr Force City Inn, Building Nr 6892 "
     }
    ]
   },
@@ -2020,20 +1998,6 @@
    ]
   },
   {
-   "blacklisted_entity": "SSR Construction and Enterprise",
-   "bo_issued": "1",
-   "min_date": "2022-07-08",
-   "max_date": "2024-07-07",
-   "orders": [
-    {
-     "procuring_entity": "National Food Authority - Region 14 (ARMM)",
-     "start_date": "2022-07-08",
-     "end_date": "2024-07-07",
-     "project": "Repair/Rehabilitation of NFA Sulu Provincial Office."
-    }
-   ]
-  },
-  {
    "blacklisted_entity": "Yes Prints and Inks Enterprises, Inc.",
    "bo_issued": "1",
    "min_date": "2025-10-17",
@@ -2044,6 +2008,20 @@
      "start_date": "2025-10-17",
      "end_date": "2026-10-16",
      "project": "Supply and Delivery of Various ICT Equipment for the Multi-Hazard Impact Based Forecasting and Early Warning System (MHIBFEWS) Project in the Philippines"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Grandstellar Builders Inc.",
+   "bo_issued": "1",
+   "min_date": "2025-01-16",
+   "max_date": "2026-01-17",
+   "orders": [
+    {
+     "procuring_entity": "Department of Health - Caraga Center for Health Development",
+     "start_date": "2025-01-16",
+     "end_date": "2026-01-17",
+     "project": "Construction of Luna Super Health Center in Brgy. Luna, Surigao City, Surigao del Norte"
     }
    ]
   },
@@ -2062,6 +2040,20 @@
    ]
   },
   {
+   "blacklisted_entity": "ELPA Construction",
+   "bo_issued": "1",
+   "min_date": "2022-08-22",
+   "max_date": "2024-08-21",
+   "orders": [
+    {
+     "procuring_entity": "Philippine Air Force (Air Forces)",
+     "start_date": "2022-08-22",
+     "end_date": "2024-08-21",
+     "project": "PAF-CDS-19-048 Improvement of RPC Building"
+    }
+   ]
+  },
+  {
    "blacklisted_entity": "1.\tFIRMABUILT CONSTRUCTION",
    "bo_issued": "1",
    "min_date": "2026-02-16",
@@ -2076,44 +2068,100 @@
    ]
   },
   {
-   "blacklisted_entity": "ESER Enterprises",
+   "blacklisted_entity": "Leon Cullen’s Trading",
    "bo_issued": "1",
-   "min_date": "2025-02-21",
-   "max_date": "2026-02-20",
+   "min_date": "2024-02-16",
+   "max_date": "2025-02-16",
    "orders": [
     {
-     "procuring_entity": "National Irrigation Administration Regional - Tarlac Balog-balog Multipurpose Project - Phase II (BBMP)",
-     "start_date": "2025-02-21",
-     "end_date": "2026-02-20",
-     "project": "Construction of Lateral L Package 2 Sta1+558.00 - Sta 4+047.00 (new station Sta1+680.00 - Sta.3+369.442)"
+     "procuring_entity": "Office of the Civil Defense.",
+     "start_date": "2024-02-16",
+     "end_date": "2025-02-16",
+     "project": "Supply and Delivery of Toners and Cartridges for the Various Printers and Photocopiers for the 2nd Semester of CY 2023"
     }
    ]
   },
   {
-   "blacklisted_entity": "AXL Builders and Construction Supplies",
+   "blacklisted_entity": "Yes Prints and Inks Enterprises, Inc.",
    "bo_issued": "1",
-   "min_date": "2023-12-19",
-   "max_date": "2025-12-19",
+   "min_date": "2025-10-17",
+   "max_date": "2026-10-16",
    "orders": [
     {
-     "procuring_entity": "Provincial Government of Antique",
-     "start_date": "2023-12-19",
-     "end_date": "2025-12-19",
-     "project": "Completion of Upgrading/Expansion/Repair and Renovation of Ancilliary/Clinical Services and Construction of Sewage Treatment Plant (STP) Tobias Fornier, Antique Completion of Upgrading/Expansion/Repair and Renovation of Ancilliary/Clinical Services and Construction of Sewage Treatment Plant (STP) Valderrama, Antique"
+     "procuring_entity": "Office of Civil Defense - Central Office",
+     "start_date": "2025-10-17",
+     "end_date": "2026-10-16",
+     "project": "Supply and Delivery of Various ICT Equipment for the Multi-Hazard Impact Based Forecasting and Early Warning System (MHIBFEWS) Project in the Philippines"
     }
    ]
   },
   {
-   "blacklisted_entity": "SSR Construction and Enterprise",
+   "blacklisted_entity": "Grandstellar Builders Inc.",
    "bo_issued": "1",
-   "min_date": "2022-07-08",
-   "max_date": "2024-07-07",
+   "min_date": "2025-01-16",
+   "max_date": "2026-01-17",
    "orders": [
     {
-     "procuring_entity": "National Food Authority - Region 14 (ARMM)",
-     "start_date": "2022-07-08",
-     "end_date": "2024-07-07",
-     "project": "Repair/Rehabilitation of NFA Sulu Provincial Office."
+     "procuring_entity": "Department of Health - Caraga Center for Health Development",
+     "start_date": "2025-01-16",
+     "end_date": "2026-01-17",
+     "project": "Construction of Luna Super Health Center in Brgy. Luna, Surigao City, Surigao del Norte"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Stone of David Corp., GAIA Automotive Industries Limited",
+   "bo_issued": "1",
+   "min_date": "2021-09-15",
+   "max_date": "2022-09-15",
+   "orders": [
+    {
+     "procuring_entity": "Philippine National Police Special Action Force",
+     "start_date": "2021-09-15",
+     "end_date": "2022-09-15",
+     "project": "One (Lot) MPAV Armored Personnel Carrier and Accessories"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "ELPA Construction",
+   "bo_issued": "1",
+   "min_date": "2022-08-22",
+   "max_date": "2024-08-21",
+   "orders": [
+    {
+     "procuring_entity": "Philippine Air Force (Air Forces)",
+     "start_date": "2022-08-22",
+     "end_date": "2024-08-21",
+     "project": "PAF-CDS-19-048 Improvement of RPC Building"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "1.\tFIRMABUILT CONSTRUCTION",
+   "bo_issued": "1",
+   "min_date": "2026-02-16",
+   "max_date": "2027-02-15",
+   "orders": [
+    {
+     "procuring_entity": "Occidental Mindoro State College",
+     "start_date": "2026-02-16",
+     "end_date": "2027-02-15",
+     "project": "Construction of Two-Storey School Building at OMSC Mamburao under project reference no. B-8661-22-32"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Meccanica Per L'elletronica E Servomecanismi- M.E.S- Societa Per Azioni",
+   "bo_issued": "1",
+   "min_date": "2024-11-27",
+   "max_date": "2025-11-26",
+   "orders": [
+    {
+     "procuring_entity": "Philippine Army (Land Forces)",
+     "start_date": "2024-11-27",
+     "end_date": "2025-11-26",
+     "project": "Supply and Delivery of 2,950 rounds Cartridge, 105mm: HE-T"
     }
    ]
   },
@@ -2160,30 +2208,30 @@
    ]
   },
   {
-   "blacklisted_entity": "Yes Prints and Inks Enterprises, Inc.",
+   "blacklisted_entity": "Leon Cullen’s Trading",
    "bo_issued": "1",
-   "min_date": "2025-10-17",
-   "max_date": "2026-10-16",
+   "min_date": "2024-02-16",
+   "max_date": "2025-02-16",
    "orders": [
     {
-     "procuring_entity": "Office of Civil Defense - Central Office",
-     "start_date": "2025-10-17",
-     "end_date": "2026-10-16",
-     "project": "Supply and Delivery of Various ICT Equipment for the Multi-Hazard Impact Based Forecasting and Early Warning System (MHIBFEWS) Project in the Philippines"
+     "procuring_entity": "Office of the Civil Defense.",
+     "start_date": "2024-02-16",
+     "end_date": "2025-02-16",
+     "project": "Supply and Delivery of Toners and Cartridges for the Various Printers and Photocopiers for the 2nd Semester of CY 2023"
     }
    ]
   },
   {
-   "blacklisted_entity": "Val Engineering and Construction",
+   "blacklisted_entity": "Avescor Motors Inc.",
    "bo_issued": "1",
-   "min_date": "2025-04-03",
-   "max_date": "2026-04-02",
+   "min_date": "2023-12-19",
+   "max_date": "2024-12-19",
    "orders": [
     {
-     "procuring_entity": "Department of Public Works and Highways - Central Office",
-     "start_date": "2025-04-03",
-     "end_date": "2026-04-02",
-     "project": "24MB0053 - Construction of Road with Drainage System, Barangay Siguel, General Santos City\r\n24ME0027 - Construction of Multi-Purpose Building (Building 1), Barangay Poblacion; Alabel, Sarangani Province\r\n24ME0084 - Construction of Multi-Purpose Building (Health Center), Barangay Paraiso; Alabel, Sarangani Province"
+     "procuring_entity": "Provincial Government of Antique",
+     "start_date": "2023-12-19",
+     "end_date": "2024-12-19",
+     "project": "IB No. L-2023-002: Motor Vehicles Dropside Body (MT)"
     }
    ]
   },
@@ -2216,30 +2264,30 @@
    ]
   },
   {
-   "blacklisted_entity": "Stone of David Corp., GAIA Automotive Industries Limited",
+   "blacklisted_entity": "CAT VID'Z TAILORING",
    "bo_issued": "1",
-   "min_date": "2021-09-15",
-   "max_date": "2022-09-15",
+   "min_date": "2025-03-11",
+   "max_date": "2026-03-10",
    "orders": [
     {
-     "procuring_entity": "Philippine National Police Special Action Force",
-     "start_date": "2021-09-15",
-     "end_date": "2022-09-15",
-     "project": "One (Lot) MPAV Armored Personnel Carrier and Accessories"
+     "procuring_entity": "Philippine Merchant Marine Academy",
+     "start_date": "2025-03-11",
+     "end_date": "2026-03-10",
+     "project": "BAC Executive Jacket"
     }
    ]
   },
   {
-   "blacklisted_entity": "1.\tFIRMABUILT CONSTRUCTION",
+   "blacklisted_entity": "Meyers Food and Services Inc.",
    "bo_issued": "1",
-   "min_date": "2026-02-16",
-   "max_date": "2027-02-15",
+   "min_date": "2024-05-06",
+   "max_date": "2025-05-05",
    "orders": [
     {
-     "procuring_entity": "Occidental Mindoro State College",
-     "start_date": "2026-02-16",
-     "end_date": "2027-02-15",
-     "project": "Construction of Two-Storey School Building at OMSC Mamburao under project reference no. B-8661-22-32"
+     "procuring_entity": "Veterans Federation of the Philippines",
+     "start_date": "2024-05-06",
+     "end_date": "2025-05-05",
+     "project": "Procurement of Catering Services for Araw ng Kagitingan on April 09, 2024 (Bataan)"
     }
    ]
   },
@@ -2258,76 +2306,6 @@
    ]
   },
   {
-   "blacklisted_entity": "JEANNILIE CATERING SERVICES",
-   "bo_issued": "1",
-   "min_date": "2025-08-07",
-   "max_date": "2026-08-06",
-   "orders": [
-    {
-     "procuring_entity": "City of Pasig, NCR",
-     "start_date": "2025-08-07",
-     "end_date": "2026-08-06",
-     "project": "SUPPLY AND DELIVERY OF PACKED MEALS FOR THE HANDOG PASASALAMAT 2024 DISTRIBUTION TEAM - OCM"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "Grandstellar Builders Inc.",
-   "bo_issued": "1",
-   "min_date": "2025-01-16",
-   "max_date": "2026-01-17",
-   "orders": [
-    {
-     "procuring_entity": "Department of Health - Caraga Center for Health Development",
-     "start_date": "2025-01-16",
-     "end_date": "2026-01-17",
-     "project": "Construction of Luna Super Health Center in Brgy. Luna, Surigao City, Surigao del Norte"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "CAT VID'Z TAILORING",
-   "bo_issued": "1",
-   "min_date": "2025-03-11",
-   "max_date": "2026-03-10",
-   "orders": [
-    {
-     "procuring_entity": "Philippine Merchant Marine Academy",
-     "start_date": "2025-03-11",
-     "end_date": "2026-03-10",
-     "project": "BAC Executive Jacket"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "FREY-FIL CORPORATION",
-   "bo_issued": "1",
-   "min_date": "2025-08-29",
-   "max_date": "2026-08-28",
-   "orders": [
-    {
-     "procuring_entity": "Department of Public Works and Highways - Central Office",
-     "start_date": "2025-08-29",
-     "end_date": "2026-08-28",
-     "project": "22B00013 - Organizational Outcome 1: Ensure Safe and Reliable National Road System: Bridge - Widening of Permanent Bridges Dummun Bridge (B01093LZ) along Cagayan Valley Road, Gattaran, Cagayan"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "JCPRIME NON-SPECIALIZED WHOLESALE TRADING",
-   "bo_issued": "1",
-   "min_date": "2026-03-06",
-   "max_date": "2027-03-05",
-   "orders": [
-    {
-     "procuring_entity": "Sandiganbayan",
-     "start_date": "2026-03-06",
-     "end_date": "2027-03-05",
-     "project": "Supply and Delivery of the following Information, Education and Communication (IEC) Materials: Six (6) pcs. Acrylic Standee and Twelve (12) pcs. Mounted Glass Boards"
-    }
-   ]
-  },
-  {
    "blacklisted_entity": "Doctor Textus Gadgets and Accessories Shop",
    "bo_issued": "1",
    "min_date": "2022-07-21",
@@ -2352,132 +2330,6 @@
      "start_date": "2025-03-11",
      "end_date": "2026-03-10",
      "project": "1. Construction of Three (3) Storey Academic Building of SDSSU Tandag Campus\r\n2.  Construction of Three (3) Storey Dormitory Building of SDSSU Tandag Campus"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "Doctor Textus Gadgets and Accessories Shop",
-   "bo_issued": "1",
-   "min_date": "2022-07-21",
-   "max_date": "2023-07-20",
-   "orders": [
-    {
-     "procuring_entity": "National Privacy Commission - Central Office",
-     "start_date": "2022-07-21",
-     "end_date": "2023-07-20",
-     "project": "Supplies And Other Expenses (Tokens)"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "AQARICH CONSTRUCTION AND SUPPLY",
-   "bo_issued": "1",
-   "min_date": "2024-04-29",
-   "max_date": "2025-04-28",
-   "orders": [
-    {
-     "procuring_entity": "Philippine National Police - Region 8",
-     "start_date": "2024-04-29",
-     "end_date": "2025-04-28",
-     "project": "Construction of Standard Type \"B/C\" Jiabong MPS Building Project"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "Aremos Security and Investigation Agency",
-   "bo_issued": "1",
-   "min_date": "2023-06-05",
-   "max_date": "2024-06-04",
-   "orders": [
-    {
-     "procuring_entity": "Sandiganbayan",
-     "start_date": "2023-06-05",
-     "end_date": "2024-06-04",
-     "project": "One (1) Lot Provision of Third Party Security Services Personnel and K-9 Team for the Sandiganbayan for One (1) Year"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "E.S. Pua Construction",
-   "bo_issued": "1",
-   "min_date": "2023-05-17",
-   "max_date": "2024-05-16",
-   "orders": [
-    {
-     "procuring_entity": "National Irrigation Administration Regional - Magat River Integrated Irrigation Systems (MARIIS) - Division III",
-     "start_date": "2023-05-17",
-     "end_date": "2024-05-16",
-     "project": "2023-D3-RNIS-Aurora-Package 9"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "Vancity Construction",
-   "bo_issued": "1",
-   "min_date": "2023-06-27",
-   "max_date": "2024-06-26",
-   "orders": [
-    {
-     "procuring_entity": "Department of Agriculture - Region 6",
-     "start_date": "2023-06-27",
-     "end_date": "2024-06-26",
-     "project": "Construction of Sinamongan Small Water Impounding Project"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "Lucky Magic Light Trading Co.",
-   "bo_issued": "1",
-   "min_date": "2024-03-04",
-   "max_date": "2025-03-04",
-   "orders": [
-    {
-     "procuring_entity": "Veterans Federation of the Philippines",
-     "start_date": "2024-03-04",
-     "end_date": "2025-03-04",
-     "project": "Procurement of Engineering and Maintenance Equipment"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "Two Aces Construction and Supply",
-   "bo_issued": "1",
-   "min_date": "2025-03-11",
-   "max_date": "2026-03-10",
-   "orders": [
-    {
-     "procuring_entity": "North Eastern Mindanao State University",
-     "start_date": "2025-03-11",
-     "end_date": "2026-03-10",
-     "project": "1. Construction of Three (3) Storey Academic Building of SDSSU Tandag Campus\r\n2.  Construction of Three (3) Storey Dormitory Building of SDSSU Tandag Campus"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "ELPA Construction",
-   "bo_issued": "1",
-   "min_date": "2022-08-22",
-   "max_date": "2024-08-21",
-   "orders": [
-    {
-     "procuring_entity": "Philippine Air Force (Air Forces)",
-     "start_date": "2022-08-22",
-     "end_date": "2024-08-21",
-     "project": "PAF-CDS-19-048 Improvement of RPC Building"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "Leon Cullen’s Trading",
-   "bo_issued": "1",
-   "min_date": "2024-02-16",
-   "max_date": "2025-02-16",
-   "orders": [
-    {
-     "procuring_entity": "Office of the Civil Defense.",
-     "start_date": "2024-02-16",
-     "end_date": "2025-02-16",
-     "project": "Supply and Delivery of Toners and Cartridges for the Various Printers and Photocopiers for the 2nd Semester of CY 2023"
     }
    ]
   },
@@ -2496,30 +2348,100 @@
    ]
   },
   {
-   "blacklisted_entity": "JTA Builders",
+   "blacklisted_entity": "Remnant Engineering Services",
    "bo_issued": "1",
-   "min_date": "2020-08-28",
-   "max_date": "2022-08-27",
+   "min_date": "2026-06-22",
+   "max_date": "2027-06-21",
    "orders": [
     {
-     "procuring_entity": "Aklan State University",
-     "start_date": "2020-08-28",
-     "end_date": "2022-08-27",
-     "project": "3-STOREY TOURISM DEVELOPMENT CENTER BUILDING AT ASU-IBAJAY CAMPUS"
+     "procuring_entity": "City of Baguio, Benguet",
+     "start_date": "2026-06-22",
+     "end_date": "2027-06-21",
+     "project": "Construction of Multi-Purpose Hall, Lourdes Subdivision Extension"
     }
    ]
   },
   {
-   "blacklisted_entity": "Avescor Motors Inc.",
+   "blacklisted_entity": "Two Aces Construction and Supply",
    "bo_issued": "1",
-   "min_date": "2023-12-19",
-   "max_date": "2024-12-19",
+   "min_date": "2025-03-11",
+   "max_date": "2026-03-10",
    "orders": [
     {
-     "procuring_entity": "Provincial Government of Antique",
-     "start_date": "2023-12-19",
-     "end_date": "2024-12-19",
-     "project": "IB No. L-2023-002: Motor Vehicles Dropside Body (MT)"
+     "procuring_entity": "North Eastern Mindanao State University",
+     "start_date": "2025-03-11",
+     "end_date": "2026-03-10",
+     "project": "1. Construction of Three (3) Storey Academic Building of SDSSU Tandag Campus\r\n2.  Construction of Three (3) Storey Dormitory Building of SDSSU Tandag Campus"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "GCPK Construction and Supply",
+   "bo_issued": "1",
+   "min_date": "2022-09-08",
+   "max_date": "2023-09-07",
+   "orders": [
+    {
+     "procuring_entity": "Bureau of Fire Protection - Region 4A",
+     "start_date": "2022-09-08",
+     "end_date": "2023-09-07",
+     "project": "Proposed 2-Storey San Pascual Fire Station, Batangas and 2-Storey Kalayaan Fire Station, Laguna"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Universal Harvester, Inc.",
+   "bo_issued": "1",
+   "min_date": "2021-10-29",
+   "max_date": "2022-10-28",
+   "orders": [
+    {
+     "procuring_entity": "Department of Agriculture - CAR",
+     "start_date": "2021-10-29",
+     "end_date": "2022-10-28",
+     "project": "Supply and Delivery of  Fertilizers under IB No. 2021-01 amounting to Php7,474,625.00 with Notice to Proceed dated March 5, 2021"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "JCMAK Enterprise",
+   "bo_issued": "1",
+   "min_date": "2025-12-23",
+   "max_date": "2026-12-22",
+   "orders": [
+    {
+     "procuring_entity": "Department of Budget and Management - Procurement Service",
+     "start_date": "2025-12-23",
+     "end_date": "2026-12-22",
+     "project": "SUPPLY AND DELIVERY OF BROOM STICK (TING-TING) FOR THE PROCUREMENT SERVICE - DBM"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "SCCIP Office Supplies and Equipment Trading",
+   "bo_issued": "1",
+   "min_date": "2024-01-12",
+   "max_date": "2025-01-11",
+   "orders": [
+    {
+     "procuring_entity": "Department of Budget and Management – Central Office",
+     "start_date": "2024-01-12",
+     "end_date": "2025-01-11",
+     "project": "Procurement of Tokens for the PFMCP Resource Speakers and other PFM-related Sessions"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Aremos Security and Investigation Agency",
+   "bo_issued": "1",
+   "min_date": "2023-06-05",
+   "max_date": "2024-06-04",
+   "orders": [
+    {
+     "procuring_entity": "Sandiganbayan",
+     "start_date": "2023-06-05",
+     "end_date": "2024-06-04",
+     "project": "One (1) Lot Provision of Third Party Security Services Personnel and K-9 Team for the Sandiganbayan for One (1) Year"
     }
    ]
   },
@@ -2538,16 +2460,16 @@
    ]
   },
   {
-   "blacklisted_entity": "Financial Services-Information Sharing and Analysis Center, Inc.",
+   "blacklisted_entity": "JTA Builders",
    "bo_issued": "1",
-   "min_date": "2024-01-08",
-   "max_date": "2025-01-08",
+   "min_date": "2020-08-28",
+   "max_date": "2022-08-27",
    "orders": [
     {
-     "procuring_entity": "Bangko Sentral ng Pilipinas",
-     "start_date": "2024-01-08",
-     "end_date": "2025-01-08",
-     "project": "One  (1) Lot Multi-Year Online Premier Subscription to Cyber Threat Intelligence (CTI) and Information Sharing Analysis Center (ISAC)"
+     "procuring_entity": "Aklan State University",
+     "start_date": "2020-08-28",
+     "end_date": "2022-08-27",
+     "project": "3-STOREY TOURISM DEVELOPMENT CENTER BUILDING AT ASU-IBAJAY CAMPUS"
     }
    ]
   },
@@ -2566,6 +2488,34 @@
    ]
   },
   {
+   "blacklisted_entity": "Financial Services-Information Sharing and Analysis Center, Inc.",
+   "bo_issued": "1",
+   "min_date": "2024-01-08",
+   "max_date": "2025-01-08",
+   "orders": [
+    {
+     "procuring_entity": "Bangko Sentral ng Pilipinas",
+     "start_date": "2024-01-08",
+     "end_date": "2025-01-08",
+     "project": "One  (1) Lot Multi-Year Online Premier Subscription to Cyber Threat Intelligence (CTI) and Information Sharing Analysis Center (ISAC)"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "SYMS CONSTRUCTION TRADING",
+   "bo_issued": "1",
+   "min_date": "2026-09-24",
+   "max_date": "2027-09-23",
+   "orders": [
+    {
+     "procuring_entity": "Department of Public Works and Highways - Central Office",
+     "start_date": "2026-09-24",
+     "end_date": "2027-09-23",
+     "project": "25CC0316 - Road Widening - Secondary Roads - Pulilan - Calumpit Rd - K0050+650-K0051+350, Calumpit, Bulacan (CID No. 25CC0316)"
+    }
+   ]
+  },
+  {
    "blacklisted_entity": "Infinite Powertech Scientific Equipment Sales",
    "bo_issued": "1",
    "min_date": "2021-03-04",
@@ -2580,6 +2530,20 @@
    ]
   },
   {
+   "blacklisted_entity": "APRIL ROSE ENT. & BUILDERS",
+   "bo_issued": "1",
+   "min_date": "2026-07-06",
+   "max_date": "2027-07-05",
+   "orders": [
+    {
+     "procuring_entity": "Department of Public Works and Highways - Central Office",
+     "start_date": "2026-07-06",
+     "end_date": "2027-07-05",
+     "project": "CLUSTER 2 - 1. Repair of 3 Classrooms, Monteverde ES, Samboan, Cebu; 2. Repair of 5 Classrooms, Basak Elementary School, Samboan, Cebu; 3. Repair of 3 Classrooms, Samboan Central ES, Samboan Cebu (Contract ID: 23HG0081)"
+    }
+   ]
+  },
+  {
    "blacklisted_entity": "AIR LIQUIDE PHILIPPINES, INC.",
    "bo_issued": "1",
    "min_date": "2021-12-24",
@@ -2590,6 +2554,48 @@
      "start_date": "2021-12-24",
      "end_date": "2022-12-23",
      "project": "Supply and Delivery of One (1) Lot Liquid Nitrogen Gas Cylinder and Co2 Tank Rental and Refills"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "YPR GEN. CONTRACTOR AND CONSTRUCTION SUPPLY, INC.",
+   "bo_issued": "1",
+   "min_date": "2026-09-18",
+   "max_date": "2028-09-17",
+   "orders": [
+    {
+     "procuring_entity": "Department of Public Works and Highways - Central Office",
+     "start_date": "2026-09-18",
+     "end_date": "2028-09-17",
+     "project": "24FA0250 - Construction of Flood Mitigation Structures along Aklan River (Package 2), Kalibo, Aklan"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Jody-Art Enterprises",
+   "bo_issued": "1",
+   "min_date": "2023-01-26",
+   "max_date": "2024-01-26",
+   "orders": [
+    {
+     "procuring_entity": "City of Quezon City, NCR",
+     "start_date": "2023-01-26",
+     "end_date": "2024-01-26",
+     "project": "Various Hardware Supplies and Others"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": " JTA BUILDERS, INC",
+   "bo_issued": "1",
+   "min_date": "2020-11-12",
+   "max_date": "2022-11-11",
+   "orders": [
+    {
+     "procuring_entity": "Aklan State University",
+     "start_date": "2020-11-12",
+     "end_date": "2022-11-11",
+     "project": " Construction of Library and Information Center Building"
     }
    ]
   },
@@ -2622,58 +2628,16 @@
    ]
   },
   {
-   "blacklisted_entity": "APRIL ROSE ENT. & BUILDERS",
+   "blacklisted_entity": "A.M.A Pharma and Medical Supplies Trading",
    "bo_issued": "1",
-   "min_date": "2026-07-06",
-   "max_date": "2027-07-05",
+   "min_date": "2023-01-10",
+   "max_date": "2024-01-09",
    "orders": [
     {
-     "procuring_entity": "Department of Public Works and Highways - Central Office",
-     "start_date": "2026-07-06",
-     "end_date": "2027-07-05",
-     "project": "CLUSTER 2 - 1. Repair of 3 Classrooms, Monteverde ES, Samboan, Cebu; 2. Repair of 5 Classrooms, Basak Elementary School, Samboan, Cebu; 3. Repair of 3 Classrooms, Samboan Central ES, Samboan Cebu (Contract ID: 23HG0081)"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "YPR GEN. CONTRACTOR AND CONSTRUCTION SUPPLY, INC.",
-   "bo_issued": "1",
-   "min_date": "2026-09-18",
-   "max_date": "2028-09-17",
-   "orders": [
-    {
-     "procuring_entity": "Department of Public Works and Highways - Central Office",
-     "start_date": "2026-09-18",
-     "end_date": "2028-09-17",
-     "project": "24FA0250 - Construction of Flood Mitigation Structures along Aklan River (Package 2), Kalibo, Aklan"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": " JTA BUILDERS, INC",
-   "bo_issued": "1",
-   "min_date": "2020-11-12",
-   "max_date": "2022-11-11",
-   "orders": [
-    {
-     "procuring_entity": "Aklan State University",
-     "start_date": "2020-11-12",
-     "end_date": "2022-11-11",
-     "project": " Construction of Library and Information Center Building"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "Jody-Art Enterprises",
-   "bo_issued": "1",
-   "min_date": "2023-01-26",
-   "max_date": "2024-01-26",
-   "orders": [
-    {
-     "procuring_entity": "City of Quezon City, NCR",
-     "start_date": "2023-01-26",
-     "end_date": "2024-01-26",
-     "project": "Various Hardware Supplies and Others"
+     "procuring_entity": "Department of Health - Center for Health Development Region I",
+     "start_date": "2023-01-10",
+     "end_date": "2024-01-09",
+     "project": "Rabies Vaccine for the use of DOH CHD-I"
     }
    ]
   },
@@ -2692,30 +2656,16 @@
    ]
   },
   {
-   "blacklisted_entity": "HIGEL Construction",
+   "blacklisted_entity": "BANCAL CONSTRUCTION & SUPPLY",
    "bo_issued": "1",
-   "min_date": "2025-02-13",
-   "max_date": "2026-02-13",
+   "min_date": "2026-03-02",
+   "max_date": "PERMANENT",
    "orders": [
     {
-     "procuring_entity": "Philippine National Police - Region 7",
-     "start_date": "2025-02-13",
-     "end_date": "2026-02-13",
-     "project": "Supply and Delivery of Furniture and Fixtures for the 17 Police Stations of Police Regional Office 7"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "A.M.A Pharma and Medical Supplies Trading",
-   "bo_issued": "1",
-   "min_date": "2023-01-10",
-   "max_date": "2024-01-09",
-   "orders": [
-    {
-     "procuring_entity": "Department of Health - Center for Health Development Region I",
-     "start_date": "2023-01-10",
-     "end_date": "2024-01-09",
-     "project": "Rabies Vaccine for the use of DOH CHD-I"
+     "procuring_entity": "Department of Health - Central Luzon Center for Health Development",
+     "start_date": "2026-03-02",
+     "end_date": "PERMANENT",
+     "project": "Project 027-HFEP2023: Construction of Candelaria District Hospital\r\nDietary Building\r\n\r\nProject 028-HFEP2023: Construction of Dietary Building Of San Marcelino\r\nDistrict Hospital\r\n\r\nProject 035-HFEP2023: Construction Of Public Health Laboratory Of\r\nPresident Ramon Magsaysay Memorial Hospital"
     }
    ]
   },
@@ -2748,6 +2698,20 @@
    ]
   },
   {
+   "blacklisted_entity": "HIGEL Construction",
+   "bo_issued": "1",
+   "min_date": "2025-02-13",
+   "max_date": "2026-02-13",
+   "orders": [
+    {
+     "procuring_entity": "Philippine National Police - Region 7",
+     "start_date": "2025-02-13",
+     "end_date": "2026-02-13",
+     "project": "Supply and Delivery of Furniture and Fixtures for the 17 Police Stations of Police Regional Office 7"
+    }
+   ]
+  },
+  {
    "blacklisted_entity": "A.M.A NON-SPECIALIZED WHOLESALE TRADING",
    "bo_issued": "1",
    "min_date": "2025-08-07",
@@ -2758,20 +2722,6 @@
      "start_date": "2025-08-07",
      "end_date": "2026-08-06",
      "project": "UPPLY AND DELIVERY OF ETOFENPROX AND DIPHACINONE - CHD"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "BENJOSH CONSTRUCTION SUPPLY",
-   "bo_issued": "1",
-   "min_date": "2025-06-27",
-   "max_date": "2026-06-26",
-   "orders": [
-    {
-     "procuring_entity": "Department of Public Works and Highways - Central Office",
-     "start_date": "2025-06-27",
-     "end_date": "2026-06-26",
-     "project": "25FF0014 - BIP: Access Roads and/or Bridges from National Road/s Leading to Major/Strategic Public Buildings/ Facilities Construction of Road, Barangay Siembre, Bombon, Camarines Sur\r\n25FF0016 - BIP: Flood Mitigation Structures Protecting Public Infrastructures/Facilities - Construction of Flood Mitigation Structure, Barangay Dugcal, Camaligan, Camarines Sur\r\n25FF0018 - BIP: Access Roads and/or Bridges from the National Road/s Leading to Major/Strategic Public Buildings/Facilities Construction of Road, Barangay Pacol, Naga City, Camarines Sur"
     }
    ]
   },
@@ -2804,62 +2754,6 @@
    ]
   },
   {
-   "blacklisted_entity": "JR & JP Enterprises",
-   "bo_issued": "1",
-   "min_date": "2021-02-18",
-   "max_date": "2022-02-18",
-   "orders": [
-    {
-     "procuring_entity": "Department of Education - NCR",
-     "start_date": "2021-02-18",
-     "end_date": "2022-02-18",
-     "project": "Supply and Delivery of Hygiene Kit"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "Mericare Medical Supply",
-   "bo_issued": "1",
-   "min_date": "2024-05-15",
-   "max_date": "2025-05-14",
-   "orders": [
-    {
-     "procuring_entity": "Bangko Sentral ng Pilipinas - Head Office and Security Plant Complex",
-     "start_date": "2024-05-15",
-     "end_date": "2025-05-14",
-     "project": "Supply and Delivery of 40,000 pcs. KN95 Masks"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "RDR Trading",
-   "bo_issued": "1",
-   "min_date": "2024-06-26",
-   "max_date": "2025-06-25",
-   "orders": [
-    {
-     "procuring_entity": "Office of Civil Defense - Region 13",
-     "start_date": "2024-06-26",
-     "end_date": "2025-06-25",
-     "project": "Supply and Delivery of Non-Food Items (NFIs) for the Prepositioning and Stockpiling in Caraga Region - Lot 1: Family Hygiene Kits"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "Eric Van P. Sesbreño Constrcution",
-   "bo_issued": "1",
-   "min_date": "2023-09-20",
-   "max_date": "2024-09-19",
-   "orders": [
-    {
-     "procuring_entity": "Land Bank of the Philippines",
-     "start_date": "2023-09-20",
-     "end_date": "2024-09-19",
-     "project": "Rosario CEZ (Cavite) Branch Renovation; Ilagan (Isabela) Branch Expansion/Reovation & Northern Isabela LC Fit-Out; Trece Martires (Cavite) and Burauen (Leyte) Branches Two-Storey  Building Construction"
-    }
-   ]
-  },
-  {
    "blacklisted_entity": "Northern Star Investigation & Security Agency",
    "bo_issued": "1",
    "min_date": "2023-09-20",
@@ -2888,6 +2782,62 @@
    ]
   },
   {
+   "blacklisted_entity": "Nashe Enterprises",
+   "bo_issued": "1",
+   "min_date": "2024-05-24",
+   "max_date": "2025-05-23",
+   "orders": [
+    {
+     "procuring_entity": "Bangko Sentral ng Pilipinas - Head Office and Security Plant Complex",
+     "start_date": "2024-05-24",
+     "end_date": "2025-05-23",
+     "project": "Supply and Delivery of Ammunition and Firearms: Lot 3 - 160 units 12-Gauge Brand-New Shotgun"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "AUDRIC CONSTRUCTION & SUPPLY",
+   "bo_issued": "1",
+   "min_date": "2024-02-19",
+   "max_date": "2025-02-18",
+   "orders": [
+    {
+     "procuring_entity": "Department of Public Works and Highways - Central Office",
+     "start_date": "2024-02-19",
+     "end_date": "2025-02-18",
+     "project": "18GA0131 - Construction of Two (2) Storey Eight (8) Classroom School Building, Dalagsaan Integrated School, Dalagsaan, Libacao, Aklan"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "JR & JP Enterprises",
+   "bo_issued": "1",
+   "min_date": "2021-02-18",
+   "max_date": "2022-02-18",
+   "orders": [
+    {
+     "procuring_entity": "Department of Education - NCR",
+     "start_date": "2021-02-18",
+     "end_date": "2022-02-18",
+     "project": "Supply and Delivery of Hygiene Kit"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Mericare Medical Supply",
+   "bo_issued": "1",
+   "min_date": "2024-05-15",
+   "max_date": "2025-05-14",
+   "orders": [
+    {
+     "procuring_entity": "Bangko Sentral ng Pilipinas - Head Office and Security Plant Complex",
+     "start_date": "2024-05-15",
+     "end_date": "2025-05-14",
+     "project": "Supply and Delivery of 40,000 pcs. KN95 Masks"
+    }
+   ]
+  },
+  {
    "blacklisted_entity": "AFG CONSTRUCTION CORPORATION",
    "bo_issued": "1",
    "min_date": "2025-08-11",
@@ -2902,16 +2852,114 @@
    ]
   },
   {
-   "blacklisted_entity": "Nashe Enterprises",
+   "blacklisted_entity": "COVER AND PAGES CORPORATION",
    "bo_issued": "1",
-   "min_date": "2024-05-24",
-   "max_date": "2025-05-23",
+   "min_date": "2024-04-26",
+   "max_date": "2025-04-25",
    "orders": [
     {
-     "procuring_entity": "Bangko Sentral ng Pilipinas - Head Office and Security Plant Complex",
-     "start_date": "2024-05-24",
-     "end_date": "2025-05-23",
-     "project": "Supply and Delivery of Ammunition and Firearms: Lot 3 - 160 units 12-Gauge Brand-New Shotgun"
+     "procuring_entity": "National Economic and Development Authority - Central Office",
+     "start_date": "2024-04-26",
+     "end_date": "2025-04-25",
+     "project": "PROCUREMENT OF PRINTING, PRODUCTION, AND DELIVERY OF NEDA IEC MATERIALS"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "UNIFIED UPLAND FARMERS AND ENTREPRENEURS COMMUNITY ORGANIZATION, INC. (UFECO)",
+   "bo_issued": "1",
+   "min_date": "2026-01-05",
+   "max_date": "2027-01-04",
+   "orders": [
+    {
+     "procuring_entity": "National Power Corporation",
+     "start_date": "2026-01-05",
+     "end_date": "2027-01-04",
+     "project": "Community Development Training on Beekeeping"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Naniwa Marine and Industrial Supply",
+   "bo_issued": "1",
+   "min_date": "2020-10-05",
+   "max_date": "2021-10-05",
+   "orders": [
+    {
+     "procuring_entity": "National Power Corporation",
+     "start_date": "2020-10-05",
+     "end_date": "2021-10-05",
+     "project": "Supply of Labor, Tools, Equipment and Materials for the Repair of Daihatsu 6DK-32 Engine Crankshaft for Unit 2 of Jolo DPP"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "T.J. Velasco Construction and Supply",
+   "bo_issued": "1",
+   "min_date": "2023-12-29",
+   "max_date": "2024-12-28",
+   "orders": [
+    {
+     "procuring_entity": "Philippine Marine Corps",
+     "start_date": "2023-12-29",
+     "end_date": "2024-12-28",
+     "project": "Supply and Delivery of Construction of Two (2) Storey Personnel Barracks of PMC"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Mendo Enterprises",
+   "bo_issued": "1",
+   "min_date": "2023-04-24",
+   "max_date": "2024-04-23",
+   "orders": [
+    {
+     "procuring_entity": "Office of the Press Secretary",
+     "start_date": "2023-04-24",
+     "end_date": "2024-04-23",
+     "project": "Procurement of Supply and Delivery of Motor Vehicle Parts for Repair and Maintenance of OPS Vehicles"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "RDR Trading",
+   "bo_issued": "1",
+   "min_date": "2024-06-26",
+   "max_date": "2025-06-25",
+   "orders": [
+    {
+     "procuring_entity": "Office of Civil Defense - Region 13",
+     "start_date": "2024-06-26",
+     "end_date": "2025-06-25",
+     "project": "Supply and Delivery of Non-Food Items (NFIs) for the Prepositioning and Stockpiling in Caraga Region - Lot 1: Family Hygiene Kits"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "BENJOSH CONSTRUCTION SUPPLY",
+   "bo_issued": "1",
+   "min_date": "2025-06-27",
+   "max_date": "2026-06-26",
+   "orders": [
+    {
+     "procuring_entity": "Department of Public Works and Highways - Central Office",
+     "start_date": "2025-06-27",
+     "end_date": "2026-06-26",
+     "project": "25FF0014 - BIP: Access Roads and/or Bridges from National Road/s Leading to Major/Strategic Public Buildings/ Facilities Construction of Road, Barangay Siembre, Bombon, Camarines Sur\r\n25FF0016 - BIP: Flood Mitigation Structures Protecting Public Infrastructures/Facilities - Construction of Flood Mitigation Structure, Barangay Dugcal, Camaligan, Camarines Sur\r\n25FF0018 - BIP: Access Roads and/or Bridges from the National Road/s Leading to Major/Strategic Public Buildings/Facilities Construction of Road, Barangay Pacol, Naga City, Camarines Sur"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "GABRIEL IMPORT AND EXPORT INC.",
+   "bo_issued": "1",
+   "min_date": "2026-01-27",
+   "max_date": "2027-01-26",
+   "orders": [
+    {
+     "procuring_entity": "Department of Public Works and Highways - Central Office",
+     "start_date": "2026-01-27",
+     "end_date": "2027-01-26",
+     "project": "25GMC0140 - Rental of Service Vehicle for Use of Materials Engineers in Supervision of Various Projects within the District (1-unit Multi-Purpose Vehicle, MPV) (October 1-14, 2025) Equipment Rental\r\n\r\n25GMC0141 - Rental of Service Vehicle for Use of Projects Engineers in Supervision of Various Projects within the District (1-unit Multi-Purpose Vehicle, MPV) (October 1-14, 2025) Equipment Rental\r\n\r\n25GMC0142 - Rental of Service Vehicle for Supervision/Implementation of Construction Projects within the  District (1-unit 4x2 Pick Up) (October 2-15, 2025) (Equipment Rental)\r\n\r\n25GMC0144 - Rental of Service Vehicle for Use in the Inspection/Supervision of Maintenance Activities of Roads and Bridges along Poblacion Magpet-Binay-Noa-Basak-Temporan-Badiangon-Greenfield Road of this District (1-unit 4x4 Pick Up) (October 1-14, 2025)"
     }
    ]
   },
@@ -3000,30 +3048,30 @@
    ]
   },
   {
-   "blacklisted_entity": "Jaylot Trading and Construction",
+   "blacklisted_entity": "T.J. Velasco Construction and Supply",
    "bo_issued": "1",
-   "min_date": "2022-02-10",
-   "max_date": "2023-02-10",
+   "min_date": "2023-12-29",
+   "max_date": "2024-12-28",
    "orders": [
     {
-     "procuring_entity": "Philippine National Police Special Action Force",
-     "start_date": "2022-02-10",
-     "end_date": "2023-02-10",
-     "project": "One (1) Lot Upgrading of Outside Electrical System of SAF Infrastructure Projects at Camp Bagong Diwa, Bicutan, Taguig City"
+     "procuring_entity": "Philippine Marine Corps",
+     "start_date": "2023-12-29",
+     "end_date": "2024-12-28",
+     "project": "Supply and Delivery of Construction of Two (2) Storey Personnel Barracks of PMC"
     }
    ]
   },
   {
-   "blacklisted_entity": "AFG CONSTRUCTION CORPORATION",
+   "blacklisted_entity": "RBLG ENTERPRISES",
    "bo_issued": "1",
-   "min_date": "2025-08-11",
-   "max_date": "2026-08-10",
+   "min_date": "2024-05-14",
+   "max_date": "2026-05-13",
    "orders": [
     {
-     "procuring_entity": "Department of Public Works and Highways - Central Office",
-     "start_date": "2025-08-11",
-     "end_date": "2026-08-10",
-     "project": "24EE0191 - Repair/Rehabilitation of School Buildings, Magara School for Philippine Craftsmen, Roxas, Palawan\r\n25EF0031 - Rehabilitation/Reconstruction of Roads with slips, slope collapse and landslide secondary roads Palawan Circum. Rd. - K0258+513-K0258+567-K0259+677-K0258+761-K0259+022-K0259+086-K0259+154-K0259+270 Bataraza, Palawan\r\n25EF0015 - Rehabilitation/Reconstruction of Roads with Slips, Slope Collapse and Landslide-Secondary Roads-Culandanum - Panalingaan Cross Country Rd K0244+716+K0244+803-K0245+755-K0245+797 Bataraza, Palawan"
+     "procuring_entity": "Philippine Amusement and Gaming Corporation",
+     "start_date": "2024-05-14",
+     "end_date": "2026-05-13",
+     "project": "LOT 1 OF THE SUPPLY AND DELIVERY OF ELECTRONIC TYPEWRITERS AND NUMBERING AND STAMPING MACHINES  UNDER ITB NO. SV22-05-024COR"
     }
    ]
   },
@@ -3042,30 +3090,30 @@
    ]
   },
   {
-   "blacklisted_entity": "CVAP Construction",
+   "blacklisted_entity": "Mendo Enterprises",
    "bo_issued": "1",
-   "min_date": "2021-11-10",
-   "max_date": "2022-11-10",
+   "min_date": "2023-04-24",
+   "max_date": "2024-04-23",
    "orders": [
     {
-     "procuring_entity": "Armed Forces of the Philippines - General Headquarters Procurement Service",
-     "start_date": "2021-11-10",
-     "end_date": "2022-11-10",
-     "project": "Repair and Improvement of OH5"
+     "procuring_entity": "Office of the Press Secretary",
+     "start_date": "2023-04-24",
+     "end_date": "2024-04-23",
+     "project": "Procurement of Supply and Delivery of Motor Vehicle Parts for Repair and Maintenance of OPS Vehicles"
     }
    ]
   },
   {
-   "blacklisted_entity": "Nashe Enterprises",
+   "blacklisted_entity": "IMPEXTIC, INC.",
    "bo_issued": "1",
-   "min_date": "2024-05-24",
-   "max_date": "2025-05-23",
+   "min_date": "2026-09-23",
+   "max_date": "2027-09-22",
    "orders": [
     {
-     "procuring_entity": "Bangko Sentral ng Pilipinas - Head Office and Security Plant Complex",
-     "start_date": "2024-05-24",
-     "end_date": "2025-05-23",
-     "project": "Supply and Delivery of Ammunition and Firearms: Lot 3 - 160 units 12-Gauge Brand-New Shotgun"
+     "procuring_entity": "University of the Philippines - Diliman Campus",
+     "start_date": "2026-09-23",
+     "end_date": "2027-09-22",
+     "project": "SVP-D 25-10-0425B: One (1) Lot Three Months Contract for DEMO Hauling Service"
     }
    ]
   },
@@ -3112,16 +3160,16 @@
    ]
   },
   {
-   "blacklisted_entity": "AUDRIC CONSTRUCTION & SUPPLY",
+   "blacklisted_entity": "One That Love Trading",
    "bo_issued": "1",
-   "min_date": "2024-02-19",
-   "max_date": "2025-02-18",
+   "min_date": "2025-09-19",
+   "max_date": "2026-09-19",
    "orders": [
     {
-     "procuring_entity": "Department of Public Works and Highways - Central Office",
-     "start_date": "2024-02-19",
-     "end_date": "2025-02-18",
-     "project": "18GA0131 - Construction of Two (2) Storey Eight (8) Classroom School Building, Dalagsaan Integrated School, Dalagsaan, Libacao, Aklan"
+     "procuring_entity": "Philippine Pharma Procurement Inc. (formerly PITC Pharma, Inc.)",
+     "start_date": "2025-09-19",
+     "end_date": "2026-09-19",
+     "project": "Procurement of Various Generic Medicines through Negotiated Procurement - Small Value Procurement"
     }
    ]
   },
@@ -3140,16 +3188,16 @@
    ]
   },
   {
-   "blacklisted_entity": "Advanced Matrix Construction, Inc.",
+   "blacklisted_entity": "Philippine Life Saving Equipment Inc.",
    "bo_issued": "1",
-   "min_date": "2022-06-03",
-   "max_date": "2023-06-03",
+   "min_date": "2020-10-27",
+   "max_date": "PERMANENT",
    "orders": [
     {
-     "procuring_entity": "Bangko Sentral ng Pilipinas - Head Office and Security Plant Complex",
-     "start_date": "2022-06-03",
-     "end_date": "2023-06-03",
-     "project": "One (1) Lot Construction of Covered Executive Vehicle Entrance at Gate 1, Bangko Sentral ng Pilipinas, Head Office, as per BSP Terms of Reference, Plans and Drawings"
+     "procuring_entity": "Philippine Merchant Marine Academy",
+     "start_date": "2020-10-27",
+     "end_date": "PERMANENT",
+     "project": "Procurement of Full Mission Bridge Simulator and Full Mission Engine Simulator with Civil Works"
     }
    ]
   },
@@ -3168,30 +3216,30 @@
    ]
   },
   {
-   "blacklisted_entity": "COVER AND PAGES CORPORATION",
+   "blacklisted_entity": "Poliran Builders Corporation",
    "bo_issued": "1",
-   "min_date": "2024-04-26",
-   "max_date": "2025-04-25",
+   "min_date": "2024-10-04",
+   "max_date": "2025-10-03",
    "orders": [
     {
-     "procuring_entity": "National Economic and Development Authority - Central Office",
-     "start_date": "2024-04-26",
-     "end_date": "2025-04-25",
-     "project": "PROCUREMENT OF PRINTING, PRODUCTION, AND DELIVERY OF NEDA IEC MATERIALS"
+     "procuring_entity": "Department of Health - Caraga Center for Health Development",
+     "start_date": "2024-10-04",
+     "end_date": "2025-10-03",
+     "project": "Construction of Cabadbaran Super Health Center (Medium Model)"
     }
    ]
   },
   {
-   "blacklisted_entity": "Naniwa Marine and Industrial Supply",
+   "blacklisted_entity": "1.\tBIAN-JOHN OFFICE SUPPLIES & GEN. MERCHANDISE",
    "bo_issued": "1",
-   "min_date": "2020-10-05",
-   "max_date": "2021-10-05",
+   "min_date": "2025-04-29",
+   "max_date": "2026-04-28",
    "orders": [
     {
-     "procuring_entity": "National Power Corporation",
-     "start_date": "2020-10-05",
-     "end_date": "2021-10-05",
-     "project": "Supply of Labor, Tools, Equipment and Materials for the Repair of Daihatsu 6DK-32 Engine Crankshaft for Unit 2 of Jolo DPP"
+     "procuring_entity": "Pamantasan ng Lungsod ng Maynila",
+     "start_date": "2025-04-29",
+     "end_date": "2026-04-28",
+     "project": "“Materials for the Repair and Improvements of Various Facilities” (Lot Nos. 1, 2, and 3 only)"
     }
    ]
   },
@@ -3210,30 +3258,30 @@
    ]
   },
   {
-   "blacklisted_entity": "Jaylot Trading and Construction",
+   "blacklisted_entity": "T.J. Velasco Construction and Supply",
    "bo_issued": "1",
-   "min_date": "2022-02-10",
-   "max_date": "2023-02-10",
+   "min_date": "2023-12-29",
+   "max_date": "2024-12-28",
    "orders": [
     {
-     "procuring_entity": "Philippine National Police Special Action Force",
-     "start_date": "2022-02-10",
-     "end_date": "2023-02-10",
-     "project": "One (1) Lot Upgrading of Outside Electrical System of SAF Infrastructure Projects at Camp Bagong Diwa, Bicutan, Taguig City"
+     "procuring_entity": "Philippine Marine Corps",
+     "start_date": "2023-12-29",
+     "end_date": "2024-12-28",
+     "project": "Supply and Delivery of Construction of Two (2) Storey Personnel Barracks of PMC"
     }
    ]
   },
   {
-   "blacklisted_entity": "Rex E. Morales Construction",
+   "blacklisted_entity": "Mendo Enterprises",
    "bo_issued": "1",
-   "min_date": "2024-11-27",
-   "max_date": "2025-11-26",
+   "min_date": "2023-04-24",
+   "max_date": "2024-04-23",
    "orders": [
     {
-     "procuring_entity": "Department of Public Works and Highways - Central Office",
-     "start_date": "2024-11-27",
-     "end_date": "2025-11-26",
-     "project": "24IA0098 - Concreting of Brgy. San Lorenzo FMR, Brgy. San Lorenzo, Kawayan, Biliran (11.694392, 124.479681 to 11.686397, 124.477427)"
+     "procuring_entity": "Office of the Press Secretary",
+     "start_date": "2023-04-24",
+     "end_date": "2024-04-23",
+     "project": "Procurement of Supply and Delivery of Motor Vehicle Parts for Repair and Maintenance of OPS Vehicles"
     }
    ]
   },
@@ -3252,58 +3300,58 @@
    ]
   },
   {
-   "blacklisted_entity": "AFG CONSTRUCTION CORPORATION",
+   "blacklisted_entity": "IMPEXTIC, INC.",
    "bo_issued": "1",
-   "min_date": "2025-08-11",
-   "max_date": "2026-08-10",
+   "min_date": "2026-09-23",
+   "max_date": "2027-09-22",
    "orders": [
     {
-     "procuring_entity": "Department of Public Works and Highways - Central Office",
-     "start_date": "2025-08-11",
-     "end_date": "2026-08-10",
-     "project": "24EE0191 - Repair/Rehabilitation of School Buildings, Magara School for Philippine Craftsmen, Roxas, Palawan\r\n25EF0031 - Rehabilitation/Reconstruction of Roads with slips, slope collapse and landslide secondary roads Palawan Circum. Rd. - K0258+513-K0258+567-K0259+677-K0258+761-K0259+022-K0259+086-K0259+154-K0259+270 Bataraza, Palawan\r\n25EF0015 - Rehabilitation/Reconstruction of Roads with Slips, Slope Collapse and Landslide-Secondary Roads-Culandanum - Panalingaan Cross Country Rd K0244+716+K0244+803-K0245+755-K0245+797 Bataraza, Palawan"
+     "procuring_entity": "University of the Philippines - Diliman Campus",
+     "start_date": "2026-09-23",
+     "end_date": "2027-09-22",
+     "project": "SVP-D 25-10-0425B: One (1) Lot Three Months Contract for DEMO Hauling Service"
     }
    ]
   },
   {
-   "blacklisted_entity": "Nashe Enterprises",
+   "blacklisted_entity": "Reinastar Trading and Construction Supply",
    "bo_issued": "1",
-   "min_date": "2024-05-24",
-   "max_date": "2025-05-23",
+   "min_date": "2024-05-13",
+   "max_date": "2025-05-12",
    "orders": [
     {
-     "procuring_entity": "Bangko Sentral ng Pilipinas - Head Office and Security Plant Complex",
-     "start_date": "2024-05-24",
-     "end_date": "2025-05-23",
-     "project": "Supply and Delivery of Ammunition and Firearms: Lot 3 - 160 units 12-Gauge Brand-New Shotgun"
+     "procuring_entity": "Department of Health-MIMAROPA Center for Health Development",
+     "start_date": "2024-05-13",
+     "end_date": "2025-05-12",
+     "project": "Construction of Various Health Facilities in the Province of Palawan (1st District)"
     }
    ]
   },
   {
-   "blacklisted_entity": "AUDRIC CONSTRUCTION & SUPPLY",
+   "blacklisted_entity": "One That Love Trading",
    "bo_issued": "1",
-   "min_date": "2024-02-19",
-   "max_date": "2025-02-18",
+   "min_date": "2025-09-19",
+   "max_date": "2026-09-19",
    "orders": [
     {
-     "procuring_entity": "Department of Public Works and Highways - Central Office",
-     "start_date": "2024-02-19",
-     "end_date": "2025-02-18",
-     "project": "18GA0131 - Construction of Two (2) Storey Eight (8) Classroom School Building, Dalagsaan Integrated School, Dalagsaan, Libacao, Aklan"
+     "procuring_entity": "Philippine Pharma Procurement Inc. (formerly PITC Pharma, Inc.)",
+     "start_date": "2025-09-19",
+     "end_date": "2026-09-19",
+     "project": "Procurement of Various Generic Medicines through Negotiated Procurement - Small Value Procurement"
     }
    ]
   },
   {
-   "blacklisted_entity": "COVER AND PAGES CORPORATION",
+   "blacklisted_entity": "Philippine Life Saving Equipment Inc.",
    "bo_issued": "1",
-   "min_date": "2024-04-26",
-   "max_date": "2025-04-25",
+   "min_date": "2020-10-27",
+   "max_date": "PERMANENT",
    "orders": [
     {
-     "procuring_entity": "National Economic and Development Authority - Central Office",
-     "start_date": "2024-04-26",
-     "end_date": "2025-04-25",
-     "project": "PROCUREMENT OF PRINTING, PRODUCTION, AND DELIVERY OF NEDA IEC MATERIALS"
+     "procuring_entity": "Philippine Merchant Marine Academy",
+     "start_date": "2020-10-27",
+     "end_date": "PERMANENT",
+     "project": "Procurement of Full Mission Bridge Simulator and Full Mission Engine Simulator with Civil Works"
     }
    ]
   },
@@ -3322,30 +3370,30 @@
    ]
   },
   {
-   "blacklisted_entity": "DCCJ Trading",
+   "blacklisted_entity": "JJTP Builders and Supply",
    "bo_issued": "1",
-   "min_date": "2026-04-28",
-   "max_date": "2027-04-27",
+   "min_date": "2023-07-01",
+   "max_date": "2025-07-30",
    "orders": [
     {
-     "procuring_entity": "Philippine Navy Procurement Center",
-     "start_date": "2026-04-28",
-     "end_date": "2027-04-27",
-     "project": "Procurement of Semi-Expendable Equipment for the Appurtenances of Newly Constructed Facilities at BTP, Morong Bataan (Lot 1)"
+     "procuring_entity": "Environmental Management Bureau-MIMAROPA Region",
+     "start_date": "2023-07-01",
+     "end_date": "2025-07-30",
+     "project": "Establishment of Materials Recovery Facilities (MRFs) within the Administrative Jurisdiction of MIMAROPA Region (4 lots) – 2nd posting"
     }
    ]
   },
   {
-   "blacklisted_entity": "Naniwa Marine and Industrial Supply",
+   "blacklisted_entity": "St. Dominic Industries, Inc.",
    "bo_issued": "1",
-   "min_date": "2020-10-05",
-   "max_date": "2021-10-05",
+   "min_date": "2025-12-23",
+   "max_date": "2026-12-22",
    "orders": [
     {
-     "procuring_entity": "National Power Corporation",
-     "start_date": "2020-10-05",
-     "end_date": "2021-10-05",
-     "project": "Supply of Labor, Tools, Equipment and Materials for the Repair of Daihatsu 6DK-32 Engine Crankshaft for Unit 2 of Jolo DPP"
+     "procuring_entity": "Department of Budget and Management - Procurement Service",
+     "start_date": "2025-12-23",
+     "end_date": "2026-12-22",
+     "project": "SUPPLY AND DELIVERY OF FIRE EXTINGUISHER, PURE HCFC FOR THE PROCUREMENT SERVICE - DBM"
     }
    ]
   },
@@ -3392,44 +3440,44 @@
    ]
   },
   {
-   "blacklisted_entity": "UNIFIED UPLAND FARMERS AND ENTREPRENEURS COMMUNITY ORGANIZATION, INC. (UFECO)",
+   "blacklisted_entity": "STONE OF HOPE BUILDERS AND DEVELOPMENT CORPORATION",
    "bo_issued": "1",
-   "min_date": "2026-01-05",
-   "max_date": "2027-01-04",
+   "min_date": "2024-05-31",
+   "max_date": "2025-05-30",
    "orders": [
     {
-     "procuring_entity": "National Power Corporation",
-     "start_date": "2026-01-05",
-     "end_date": "2027-01-04",
-     "project": "Community Development Training on Beekeeping"
+     "procuring_entity": "Philippine Air Force (Air Forces)",
+     "start_date": "2024-05-31",
+     "end_date": "2025-05-30",
+     "project": "PAFPC-CDS-19-141 CONSTRUCTION OF 3-STOREY ENLISTED PERSONNEL BARRACKS AT COLONEL JESUS VILLAMOR AIR BASE"
     }
    ]
   },
   {
-   "blacklisted_entity": "CDJ BULIDERS & CONSTRUCTION SUPPLIES",
+   "blacklisted_entity": "Heratyke Trading",
    "bo_issued": "1",
-   "min_date": "2021-07-07",
-   "max_date": "2022-07-07",
+   "min_date": "2023-05-25",
+   "max_date": "2024-05-25",
    "orders": [
     {
-     "procuring_entity": "Bureau of Fire Protection - NCR",
-     "start_date": "2021-07-07",
-     "end_date": "2022-07-07",
-     "project": "REPAIR/IMPROVEMENT OF PATEROS MUNICIPAL FIRE STATION (PHASE II), NCR"
+     "procuring_entity": "Department of Public Works and Highways - Central Office",
+     "start_date": "2023-05-25",
+     "end_date": "2024-05-25",
+     "project": "PO No. C 0113-0313-19 Procurement of One (1) Unit Flipchart and one (1) unit Data Center Labelling Tool"
     }
    ]
   },
   {
-   "blacklisted_entity": "T.J. Velasco Construction and Supply",
+   "blacklisted_entity": "Trends and Technologies, Incorporated",
    "bo_issued": "1",
-   "min_date": "2023-12-29",
-   "max_date": "2024-12-28",
+   "min_date": "2024-11-13",
+   "max_date": "2025-11-12",
    "orders": [
     {
-     "procuring_entity": "Philippine Marine Corps",
-     "start_date": "2023-12-29",
-     "end_date": "2024-12-28",
-     "project": "Supply and Delivery of Construction of Two (2) Storey Personnel Barracks of PMC"
+     "procuring_entity": "Human Settlements Adjudication Commission - Central Office",
+     "start_date": "2024-11-13",
+     "end_date": "2025-11-12",
+     "project": "1. Supply, Delivery, Installation, Testing, and Commissioning of Communication and Network Infrastructure for the Nine (9)-Storey Housing and Land Use Regulatory Board - Office Building\r\n\r\n2. Repair and Maintenance of Vertiv Smart Cabinet and UPS Battery Replacement\r\n\r\n3. Supply, Delivery Commissioning and Testing of Replacement PDU and Sensors for the Vertiv Smart Cabinet\r\n\r\n4. Maintenance Agreements for the HSAC Central Office Network Infrastructure and Vertiv Smart Cabinet\r\n\r\n5. Maintenance Agreements for the HSAC Central Office Network Infrastructure and Vertiv Smart Cabinet for Nine (9) Months"
     }
    ]
   },
@@ -3448,6 +3496,20 @@
    ]
   },
   {
+   "blacklisted_entity": "KB KONSTRAK BILDING SOLUSYONS",
+   "bo_issued": "1",
+   "min_date": "2024-07-04",
+   "max_date": "2025-07-03",
+   "orders": [
+    {
+     "procuring_entity": "University of the Philippines - Diliman Campus",
+     "start_date": "2024-07-04",
+     "end_date": "2025-07-03",
+     "project": "(Contract Reference No: IB-2017-031) for the Proposed Construction of Nursery of Indigenous and Endemic Plants"
+    }
+   ]
+  },
+  {
    "blacklisted_entity": "One That Love Trading",
    "bo_issued": "1",
    "min_date": "2025-09-19",
@@ -3462,72 +3524,58 @@
    ]
   },
   {
-   "blacklisted_entity": "Mendo Enterprises",
+   "blacklisted_entity": "Kaisa Consulting Company, Inc. and Polaris Consulting and Services Limited",
    "bo_issued": "1",
-   "min_date": "2023-04-24",
-   "max_date": "2024-04-23",
+   "min_date": "2021-02-16",
+   "max_date": "2022-02-15",
    "orders": [
     {
-     "procuring_entity": "Office of the Press Secretary",
-     "start_date": "2023-04-24",
-     "end_date": "2024-04-23",
-     "project": "Procurement of Supply and Delivery of Motor Vehicle Parts for Repair and Maintenance of OPS Vehicles"
+     "procuring_entity": "Development Bank of the Philippines",
+     "start_date": "2021-02-16",
+     "end_date": "2022-02-15",
+     "project": "Procurement, Customization and Implementation of an Integrated Core Banking Solution for the Development Bank of the Philippines"
     }
    ]
   },
   {
-   "blacklisted_entity": "Naniwa Marine and Industrial Supply",
+   "blacklisted_entity": "Philippine Life Saving Equipment Inc.",
    "bo_issued": "1",
-   "min_date": "2020-10-05",
-   "max_date": "2021-10-05",
+   "min_date": "2020-10-27",
+   "max_date": "PERMANENT",
    "orders": [
     {
-     "procuring_entity": "National Power Corporation",
-     "start_date": "2020-10-05",
-     "end_date": "2021-10-05",
-     "project": "Supply of Labor, Tools, Equipment and Materials for the Repair of Daihatsu 6DK-32 Engine Crankshaft for Unit 2 of Jolo DPP"
+     "procuring_entity": "Philippine Merchant Marine Academy",
+     "start_date": "2020-10-27",
+     "end_date": "PERMANENT",
+     "project": "Procurement of Full Mission Bridge Simulator and Full Mission Engine Simulator with Civil Works"
     }
    ]
   },
   {
-   "blacklisted_entity": "WERR Corporation International",
+   "blacklisted_entity": "JJTP Builders and Supply",
    "bo_issued": "1",
-   "min_date": "2022-04-04",
-   "max_date": "2023-04-04",
+   "min_date": "2023-07-01",
+   "max_date": "2025-07-30",
    "orders": [
     {
-     "procuring_entity": "Philippine Navy Procurement Center",
-     "start_date": "2022-04-04",
-     "end_date": "2023-04-04",
-     "project": "Supply and Delivery of Labor and Materials for the Improvement of Storage and Maintenance Facility"
+     "procuring_entity": "Environmental Management Bureau-MIMAROPA Region",
+     "start_date": "2023-07-01",
+     "end_date": "2025-07-30",
+     "project": "Establishment of Materials Recovery Facilities (MRFs) within the Administrative Jurisdiction of MIMAROPA Region (4 lots) – 2nd posting"
     }
    ]
   },
   {
-   "blacklisted_entity": "UNIFIED UPLAND FARMERS AND ENTREPRENEURS COMMUNITY ORGANIZATION, INC. (UFECO)",
+   "blacklisted_entity": "St. Dominic Industries, Inc.",
    "bo_issued": "1",
-   "min_date": "2026-01-05",
-   "max_date": "2027-01-04",
+   "min_date": "2025-12-23",
+   "max_date": "2026-12-22",
    "orders": [
     {
-     "procuring_entity": "National Power Corporation",
-     "start_date": "2026-01-05",
-     "end_date": "2027-01-04",
-     "project": "Community Development Training on Beekeeping"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "T.J. Velasco Construction and Supply",
-   "bo_issued": "1",
-   "min_date": "2023-12-29",
-   "max_date": "2024-12-28",
-   "orders": [
-    {
-     "procuring_entity": "Philippine Marine Corps",
-     "start_date": "2023-12-29",
-     "end_date": "2024-12-28",
-     "project": "Supply and Delivery of Construction of Two (2) Storey Personnel Barracks of PMC"
+     "procuring_entity": "Department of Budget and Management - Procurement Service",
+     "start_date": "2025-12-23",
+     "end_date": "2026-12-22",
+     "project": "SUPPLY AND DELIVERY OF FIRE EXTINGUISHER, PURE HCFC FOR THE PROCUREMENT SERVICE - DBM"
     }
    ]
   },
@@ -3546,44 +3594,44 @@
    ]
   },
   {
-   "blacklisted_entity": "Saver-Tech Computer Sales and Services",
+   "blacklisted_entity": "Heratyke Trading",
    "bo_issued": "1",
-   "min_date": "2022-02-07",
-   "max_date": "2023-02-07",
+   "min_date": "2023-05-25",
+   "max_date": "2024-05-25",
    "orders": [
     {
      "procuring_entity": "Department of Public Works and Highways - Central Office",
-     "start_date": "2022-02-07",
-     "end_date": "2023-02-07",
-     "project": "19GSK00021 - Lot 2, Supply and Delivery of IT Equipment, Accessories and Office Consumables for Use in the Office of the Regional Director - ARD, PAIO, Procurement Unit and Legal Division"
+     "start_date": "2023-05-25",
+     "end_date": "2024-05-25",
+     "project": "PO No. C 0113-0313-19 Procurement of One (1) Unit Flipchart and one (1) unit Data Center Labelling Tool"
     }
    ]
   },
   {
-   "blacklisted_entity": "One That Love Trading",
+   "blacklisted_entity": "LUCKY A CONSTRUCTION",
    "bo_issued": "1",
-   "min_date": "2025-09-19",
-   "max_date": "2026-09-19",
+   "min_date": "2021-03-04",
+   "max_date": "2021-03-03",
    "orders": [
     {
-     "procuring_entity": "Philippine Pharma Procurement Inc. (formerly PITC Pharma, Inc.)",
-     "start_date": "2025-09-19",
-     "end_date": "2026-09-19",
-     "project": "Procurement of Various Generic Medicines through Negotiated Procurement - Small Value Procurement"
+     "procuring_entity": "Municipality of Natonin, Mountain Province",
+     "start_date": "2021-03-04",
+     "end_date": "2021-03-03",
+     "project": "POBLACION - MADUCAYAN - SALIOK ACCESS ROAD"
     }
    ]
   },
   {
-   "blacklisted_entity": "RBLG Enterprises",
+   "blacklisted_entity": "Trends and Technologies, Incorporated",
    "bo_issued": "1",
-   "min_date": "2023-09-21",
-   "max_date": "2024-09-20",
+   "min_date": "2024-11-13",
+   "max_date": "2025-11-12",
    "orders": [
     {
-     "procuring_entity": "Philippine Amusement and Gaming Corporation",
-     "start_date": "2023-09-21",
-     "end_date": "2024-09-20",
-     "project": "Supply and Delivery of Various Office Supplies"
+     "procuring_entity": "Human Settlements Adjudication Commission - Central Office",
+     "start_date": "2024-11-13",
+     "end_date": "2025-11-12",
+     "project": "1. Supply, Delivery, Installation, Testing, and Commissioning of Communication and Network Infrastructure for the Nine (9)-Storey Housing and Land Use Regulatory Board - Office Building\r\n\r\n2. Repair and Maintenance of Vertiv Smart Cabinet and UPS Battery Replacement\r\n\r\n3. Supply, Delivery Commissioning and Testing of Replacement PDU and Sensors for the Vertiv Smart Cabinet\r\n\r\n4. Maintenance Agreements for the HSAC Central Office Network Infrastructure and Vertiv Smart Cabinet\r\n\r\n5. Maintenance Agreements for the HSAC Central Office Network Infrastructure and Vertiv Smart Cabinet for Nine (9) Months"
     }
    ]
   },
@@ -3616,16 +3664,16 @@
    ]
   },
   {
-   "blacklisted_entity": "Mendo Enterprises",
+   "blacklisted_entity": "FIELDTECH ASIA INC",
    "bo_issued": "1",
-   "min_date": "2023-04-24",
-   "max_date": "2024-04-23",
+   "min_date": "2025-01-07",
+   "max_date": "2026-01-06",
    "orders": [
     {
-     "procuring_entity": "Office of the Press Secretary",
-     "start_date": "2023-04-24",
-     "end_date": "2024-04-23",
-     "project": "Procurement of Supply and Delivery of Motor Vehicle Parts for Repair and Maintenance of OPS Vehicles"
+     "procuring_entity": "Philippine Air Force (Air Forces)",
+     "start_date": "2025-01-07",
+     "end_date": "2026-01-06",
+     "project": "PAFPC-CDS-21-230 PROCUREMENT OF SPARES AND SERVICES FOR THE RECOVERY AND AVIONICS UPGRADE OF SF-260TP AIRCRAFT #708"
     }
    ]
   },
@@ -3672,16 +3720,16 @@
    ]
   },
   {
-   "blacklisted_entity": "IMPEXTIC, INC.",
+   "blacklisted_entity": "Alog & Company, Inc.",
    "bo_issued": "1",
-   "min_date": "2026-09-23",
-   "max_date": "2027-09-22",
+   "min_date": "2022-05-01",
+   "max_date": "2023-05-01",
    "orders": [
     {
-     "procuring_entity": "University of the Philippines - Diliman Campus",
-     "start_date": "2026-09-23",
-     "end_date": "2027-09-22",
-     "project": "SVP-D 25-10-0425B: One (1) Lot Three Months Contract for DEMO Hauling Service"
+     "procuring_entity": "Department of Health-Metro Manila Center for Health Development",
+     "start_date": "2022-05-01",
+     "end_date": "2023-05-01",
+     "project": "Procurement of 1,432 sachet of Clothianidin 50% + Deltamethrin 6.24% Wettable powder in water-soluble sachet, 100g/Sachet"
     }
    ]
   },
@@ -3700,20 +3748,6 @@
    ]
   },
   {
-   "blacklisted_entity": "DCLABRO3 CONSTRUCTION",
-   "bo_issued": "1",
-   "min_date": "2023-05-15",
-   "max_date": "2024-05-14",
-   "orders": [
-    {
-     "procuring_entity": "National Power Corporation",
-     "start_date": "2023-05-15",
-     "end_date": "2024-05-14",
-     "project": "Expansion and Repair of Powerhouse and Transfer of Switchyard of Itbayat DPP"
-    }
-   ]
-  },
-  {
    "blacklisted_entity": "Maximum Data Infrastructure Technologies, Inc.",
    "bo_issued": "1",
    "min_date": "2021-10-05",
@@ -3728,20 +3762,6 @@
    ]
   },
   {
-   "blacklisted_entity": "V2X Sytems LLC (formerly Vectrus Systems LLC)",
-   "bo_issued": "1",
-   "min_date": "2026-05-13",
-   "max_date": "2028-05-12",
-   "orders": [
-    {
-     "procuring_entity": "Philippine Navy Procurement Center",
-     "start_date": "2026-05-13",
-     "end_date": "2028-05-12",
-     "project": "Supply and Delivery of Materials for the Minor Refurbishment Overhaul of 76MM Gun of PS15 and PS37"
-    }
-   ]
-  },
-  {
    "blacklisted_entity": "Philippine Life Saving Equipment Inc.",
    "bo_issued": "1",
    "min_date": "2020-10-27",
@@ -3752,6 +3772,34 @@
      "start_date": "2020-10-27",
      "end_date": "PERMANENT",
      "project": "Procurement of Full Mission Bridge Simulator and Full Mission Engine Simulator with Civil Works"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "JJTP Builders and Supply",
+   "bo_issued": "1",
+   "min_date": "2023-07-01",
+   "max_date": "2025-07-30",
+   "orders": [
+    {
+     "procuring_entity": "Environmental Management Bureau-MIMAROPA Region",
+     "start_date": "2023-07-01",
+     "end_date": "2025-07-30",
+     "project": "Establishment of Materials Recovery Facilities (MRFs) within the Administrative Jurisdiction of MIMAROPA Region (4 lots) – 2nd posting"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "St. Dominic Industries, Inc.",
+   "bo_issued": "1",
+   "min_date": "2025-12-23",
+   "max_date": "2026-12-22",
+   "orders": [
+    {
+     "procuring_entity": "Department of Budget and Management - Procurement Service",
+     "start_date": "2025-12-23",
+     "end_date": "2026-12-22",
+     "project": "SUPPLY AND DELIVERY OF FIRE EXTINGUISHER, PURE HCFC FOR THE PROCUREMENT SERVICE - DBM"
     }
    ]
   },
@@ -3784,16 +3832,16 @@
    ]
   },
   {
-   "blacklisted_entity": "UNIFIED UPLAND FARMERS AND ENTREPRENEURS COMMUNITY ORGANIZATION, INC. (UFECO)",
+   "blacklisted_entity": "Medicare Medical Supply",
    "bo_issued": "1",
-   "min_date": "2026-01-05",
-   "max_date": "2027-01-04",
+   "min_date": "2024-05-15",
+   "max_date": "2025-05-14",
    "orders": [
     {
-     "procuring_entity": "National Power Corporation",
-     "start_date": "2026-01-05",
-     "end_date": "2027-01-04",
-     "project": "Community Development Training on Beekeeping"
+     "procuring_entity": "Bangko Sentral ng Pilipinas - Head Office and Security Plant Complex",
+     "start_date": "2024-05-15",
+     "end_date": "2025-05-14",
+     "project": "Supply and Delivery of 40,000 pcs. KN95 Masks"
     }
    ]
   },
@@ -3812,30 +3860,30 @@
    ]
   },
   {
-   "blacklisted_entity": "T.J. Velasco Construction and Supply",
+   "blacklisted_entity": "JEROS CONSTRUCTION AND SUPPLY",
    "bo_issued": "1",
-   "min_date": "2023-12-29",
-   "max_date": "2024-12-28",
+   "min_date": "2026-05-26",
+   "max_date": "2027-05-25",
    "orders": [
     {
-     "procuring_entity": "Philippine Marine Corps",
-     "start_date": "2023-12-29",
-     "end_date": "2024-12-28",
-     "project": "Supply and Delivery of Construction of Two (2) Storey Personnel Barracks of PMC"
+     "procuring_entity": "Social Security System",
+     "start_date": "2026-05-26",
+     "end_date": "2027-05-25",
+     "project": "REPAINTING OF EXTERIOR WALLS AND VARIOUS EXTERIOR REPAIR WORKS  AT THE SOCIAL SECURITY SYSTEM (SSS) MAIN BUILDING"
     }
    ]
   },
   {
-   "blacklisted_entity": "BANCAL CONSTRUCTION AND SUPPLY",
+   "blacklisted_entity": "Heratyke Trading",
    "bo_issued": "1",
-   "min_date": "2025-06-27",
-   "max_date": "2026-06-26",
+   "min_date": "2023-05-25",
+   "max_date": "2024-05-25",
    "orders": [
     {
-     "procuring_entity": "Bureau of Fire Protection - Region 3",
-     "start_date": "2025-06-27",
-     "end_date": "2026-06-26",
-     "project": "BFPRIII BAC IB No. 004 (I) s. 2023 Improvement of Candelaria Fire Station, Zambales"
+     "procuring_entity": "Department of Public Works and Highways - Central Office",
+     "start_date": "2023-05-25",
+     "end_date": "2024-05-25",
+     "project": "PO No. C 0113-0313-19 Procurement of One (1) Unit Flipchart and one (1) unit Data Center Labelling Tool"
     }
    ]
   },
@@ -3854,16 +3902,16 @@
    ]
   },
   {
-   "blacklisted_entity": "One That Love Trading",
+   "blacklisted_entity": "Trends and Technologies, Incorporated",
    "bo_issued": "1",
-   "min_date": "2025-09-19",
-   "max_date": "2026-09-19",
+   "min_date": "2024-11-13",
+   "max_date": "2025-11-12",
    "orders": [
     {
-     "procuring_entity": "Philippine Pharma Procurement Inc. (formerly PITC Pharma, Inc.)",
-     "start_date": "2025-09-19",
-     "end_date": "2026-09-19",
-     "project": "Procurement of Various Generic Medicines through Negotiated Procurement - Small Value Procurement"
+     "procuring_entity": "Human Settlements Adjudication Commission - Central Office",
+     "start_date": "2024-11-13",
+     "end_date": "2025-11-12",
+     "project": "1. Supply, Delivery, Installation, Testing, and Commissioning of Communication and Network Infrastructure for the Nine (9)-Storey Housing and Land Use Regulatory Board - Office Building\r\n\r\n2. Repair and Maintenance of Vertiv Smart Cabinet and UPS Battery Replacement\r\n\r\n3. Supply, Delivery Commissioning and Testing of Replacement PDU and Sensors for the Vertiv Smart Cabinet\r\n\r\n4. Maintenance Agreements for the HSAC Central Office Network Infrastructure and Vertiv Smart Cabinet\r\n\r\n5. Maintenance Agreements for the HSAC Central Office Network Infrastructure and Vertiv Smart Cabinet for Nine (9) Months"
     }
    ]
   },
@@ -3896,30 +3944,44 @@
    ]
   },
   {
-   "blacklisted_entity": "Mendo Enterprises",
+   "blacklisted_entity": "IYADA BUILDERS AND ENTERPRISES",
    "bo_issued": "1",
-   "min_date": "2023-04-24",
-   "max_date": "2024-04-23",
+   "min_date": "2021-08-24",
+   "max_date": "2022-08-23",
    "orders": [
     {
-     "procuring_entity": "Office of the Press Secretary",
-     "start_date": "2023-04-24",
-     "end_date": "2024-04-23",
-     "project": "Procurement of Supply and Delivery of Motor Vehicle Parts for Repair and Maintenance of OPS Vehicles"
+     "procuring_entity": "City of General Santos (Dadiangas), South Cotabato",
+     "start_date": "2021-08-24",
+     "end_date": "2022-08-23",
+     "project": "18CW-GSC-060 CONSTRUCTION OF FOUNDING MAYORS LANDMARK, JUNCTION OF SANTIAGO BLVD., ROYECA BLVD., P. ACHARON BLVD., IN BRGY. BULA AND BRGY. DAD. SOUTH, GENERAL SANTOS CITY"
     }
    ]
   },
   {
-   "blacklisted_entity": "IMPEXTIC, INC.",
+   "blacklisted_entity": "FIELDTECH ASIA INC",
    "bo_issued": "1",
-   "min_date": "2026-09-23",
-   "max_date": "2027-09-22",
+   "min_date": "2025-01-07",
+   "max_date": "2026-01-06",
    "orders": [
     {
-     "procuring_entity": "University of the Philippines - Diliman Campus",
-     "start_date": "2026-09-23",
-     "end_date": "2027-09-22",
-     "project": "SVP-D 25-10-0425B: One (1) Lot Three Months Contract for DEMO Hauling Service"
+     "procuring_entity": "Philippine Air Force (Air Forces)",
+     "start_date": "2025-01-07",
+     "end_date": "2026-01-06",
+     "project": "PAFPC-CDS-21-230 PROCUREMENT OF SPARES AND SERVICES FOR THE RECOVERY AND AVIONICS UPGRADE OF SF-260TP AIRCRAFT #708"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "Jozeth Trading",
+   "bo_issued": "1",
+   "min_date": "2023-04-18",
+   "max_date": "2024-04-18",
+   "orders": [
+    {
+     "procuring_entity": "Department of Education - Region 1",
+     "start_date": "2023-04-18",
+     "end_date": "2024-04-18",
+     "project": "Supply and Door-to-Door Delivery of Technical, Vocational and Livelihood Materials, Tools and Equipment for Public Senior High Schools in DepEd Region I on the lots (Lot Nos. 1, 8, 11, 13, 17, 18, 19, 21, 22, 26, B5, B6, B11, B13 and B14)"
     }
    ]
   },
@@ -3938,20 +4000,6 @@
    ]
   },
   {
-   "blacklisted_entity": "MAKK Builders",
-   "bo_issued": "1",
-   "min_date": "2024-03-01",
-   "max_date": "2025-03-01",
-   "orders": [
-    {
-     "procuring_entity": "Baguio General Hospital and Medical Center",
-     "start_date": "2024-03-01",
-     "end_date": "2025-03-01",
-     "project": "ITB 2022-014 BAC I One(1) Lot Labor and Materials for the Proposed Ramp at the Flavier Building of BGHMC"
-    }
-   ]
-  },
-  {
    "blacklisted_entity": "Seaver Marine Shipbuilding & Industrial Corp.",
    "bo_issued": "1",
    "min_date": "2026-04-14",
@@ -3966,72 +4014,58 @@
    ]
   },
   {
-   "blacklisted_entity": "Renton Engineering Services",
+   "blacklisted_entity": "J-Marbela Construction and Supply",
    "bo_issued": "1",
-   "min_date": "2023-06-27",
-   "max_date": "2024-06-26",
+   "min_date": "2023-03-21",
+   "max_date": "2024-03-20",
    "orders": [
     {
-     "procuring_entity": "Department of Public Works and Highways - Central Office",
-     "start_date": "2023-06-27",
-     "end_date": "2024-06-26",
-     "project": "22PD0037 Basic Infrastructure Program (BIP) - Construction of Road from Scout Barrio Main Road to Barangay Upper Dagsian, Baguio City, Benguet"
+     "procuring_entity": "City of Naga, Camarines Sur",
+     "start_date": "2023-03-21",
+     "end_date": "2024-03-20",
+     "project": "Construction of 2-Storey 8-Classroom School Building and Road Concreting Project at CCN/Molecular Laboratory Access Road"
     }
    ]
   },
   {
-   "blacklisted_entity": "PCI INNOVATIONS TECH CENTER INC.",
+   "blacklisted_entity": "Scuderia Enterprises",
    "bo_issued": "1",
-   "min_date": "2026-08-24",
-   "max_date": "2027-08-23",
+   "min_date": "2022-08-11",
+   "max_date": "2023-08-11",
    "orders": [
     {
-     "procuring_entity": "Philippine Merchant Marine Academy",
-     "start_date": "2026-08-24",
-     "end_date": "2027-08-23",
-     "project": "PROCUREMENT OF EQUIPMENT AND SERVICES FOR THE ESTABLISHMENT OF SMART CAMPUS ADVANCED LEARNING SYSTEM"
+     "procuring_entity": "Philippine Navy Procurement Center",
+     "start_date": "2022-08-11",
+     "end_date": "2023-08-11",
+     "project": "Supply and Delivery of 72-100 RF Supplies of PN Units Lot 8 - Vehicular Supplies (Batteries)"
     }
    ]
   },
   {
-   "blacklisted_entity": "ITP Construction, Inc. and Guangxi Hydroelectric Construction Bureau Co., Ltd.",
+   "blacklisted_entity": "Beta-J Construction and Supply",
    "bo_issued": "1",
-   "min_date": "2025-11-04",
-   "max_date": "PERMANENT",
+   "min_date": "2022-01-20",
+   "max_date": "2023-01-20",
    "orders": [
     {
-     "procuring_entity": "National Irrigation Administration - Central Office",
-     "start_date": "2025-11-04",
-     "end_date": "PERMANENT",
-     "project": "Contract No. R3-AARD-NCB-C-1R, Rehabilitation of Angat Afterbay Regulator Dam (Bustos Dam)"
+     "procuring_entity": "Philippine Navy Procurement Center",
+     "start_date": "2022-01-20",
+     "end_date": "2023-01-20",
+     "project": "Supply and Delivery of Labor and Materials for the Dredging of CAPT FERANIL Pier"
     }
    ]
   },
   {
-   "blacklisted_entity": "Philippine Life Saving Equipment Inc.",
+   "blacklisted_entity": "CK Diaz General Merchandise",
    "bo_issued": "1",
-   "min_date": "2020-10-27",
-   "max_date": "PERMANENT",
+   "min_date": "2025-10-20",
+   "max_date": "2026-10-19",
    "orders": [
     {
-     "procuring_entity": "Philippine Merchant Marine Academy",
-     "start_date": "2020-10-27",
-     "end_date": "PERMANENT",
-     "project": "Procurement of Full Mission Bridge Simulator and Full Mission Engine Simulator with Civil Works"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "St. Dominic Industries, Inc.",
-   "bo_issued": "1",
-   "min_date": "2025-12-23",
-   "max_date": "2026-12-22",
-   "orders": [
-    {
-     "procuring_entity": "Department of Budget and Management - Procurement Service",
-     "start_date": "2025-12-23",
-     "end_date": "2026-12-22",
-     "project": "SUPPLY AND DELIVERY OF FIRE EXTINGUISHER, PURE HCFC FOR THE PROCUREMENT SERVICE - DBM"
+     "procuring_entity": "Philippine Navy Procurement Center",
+     "start_date": "2025-10-20",
+     "end_date": "2026-10-19",
+     "project": "Supply and Delivery of PN Units CCIE Lot - 3 Oversea Cap with Emblem for Officers and Socks, Boots for Officer"
     }
    ]
   },
@@ -5926,6 +5960,20 @@
    ]
   },
   {
+   "blacklisted_entity": "CASEDIST INC.",
+   "bo_issued": "1",
+   "min_date": "2026-08-04",
+   "max_date": "2027-08-03",
+   "orders": [
+    {
+     "procuring_entity": "Subic Bay Metropolitan Authority (SBMA)",
+     "start_date": "2026-08-04",
+     "end_date": "2027-08-03",
+     "project": "Supply, Delivery and Installation of Various Security Screening Equipment for Subic Bay International Airport (SBIA)"
+    }
+   ]
+  },
+  {
    "blacklisted_entity": "Jayben Construction Services",
    "bo_issued": "1",
    "min_date": "2024-02-01",
@@ -6580,6 +6628,20 @@
      "start_date": "2023-11-01",
      "end_date": "2024-10-31",
      "project": "Consulting Services for the Conduct of Social and Environmental Impact Assessment of Cabacanan SRIP-Republication"
+    }
+   ]
+  },
+  {
+   "blacklisted_entity": "SYMS CONSTRUCTION TRADING",
+   "bo_issued": "1",
+   "min_date": "2026-09-24",
+   "max_date": "2027-09-23",
+   "orders": [
+    {
+     "procuring_entity": "Department of Public Works and Highways - Central Office",
+     "start_date": "2026-09-24",
+     "end_date": "2027-09-23",
+     "project": "25CC0316 - Road Widening - Secondary Roads - Pulilan - Calumpit Rd - K0050+650-K0051+350, Calumpit, Bulacan (CID No. 25CC0316)"
     }
    ]
   },
@@ -7298,6 +7360,20 @@
    ]
   },
   {
+   "blacklisted_entity": "BANCAL CONSTRUCTION & SUPPLY",
+   "bo_issued": "1",
+   "min_date": "2026-03-02",
+   "max_date": "PERMANENT",
+   "orders": [
+    {
+     "procuring_entity": "Department of Health - Central Luzon Center for Health Development",
+     "start_date": "2026-03-02",
+     "end_date": "PERMANENT",
+     "project": "Project 027-HFEP2023: Construction of Candelaria District Hospital\r\nDietary Building\r\n\r\nProject 028-HFEP2023: Construction of Dietary Building Of San Marcelino\r\nDistrict Hospital\r\n\r\nProject 035-HFEP2023: Construction Of Public Health Laboratory Of\r\nPresident Ramon Magsaysay Memorial Hospital"
+    }
+   ]
+  },
+  {
    "blacklisted_entity": "A.M.A Pharma and Medical Supplies Trading",
    "bo_issued": "1",
    "min_date": "2023-01-10",
@@ -7406,20 +7482,6 @@
      "start_date": "2024-01-12",
      "end_date": "2025-01-11",
      "project": "Procurement of Tokens for the PFMCP Resource Speakers and other PFM-related Sessions"
-    }
-   ]
-  },
-  {
-   "blacklisted_entity": "ELPA Construction",
-   "bo_issued": "1",
-   "min_date": "2022-08-22",
-   "max_date": "2024-08-21",
-   "orders": [
-    {
-     "procuring_entity": "Philippine Air Force (Air Forces)",
-     "start_date": "2022-08-22",
-     "end_date": "2024-08-21",
-     "project": "PAF-CDS-19-048 Improvement of RPC Building"
     }
    ]
   }

@@ -133,6 +133,17 @@ def main(extra_refs=()):
             'open': l.get('open', False), 'status': l.get('Status') or d['status'],
             **{k: d[k] for k in ('abc', 'mode', 'class', 'fund', 'location', 'category')},
         })
+    # A notice no longer in either list is re-read from its own page only, and
+    # once it closes that page stops giving the publish date (and sometimes the
+    # office). Whatever the last run knew stays: a field the page has gone
+    # blank on is not a field that changed, and fetch_philgeps.py drops a
+    # notice with no publish date.
+    before = {n['ref']: n for n in json.loads(OUT.read_text())['notices']} if OUT.exists() else {}
+    for n in notices:
+        old = before.get(n['ref'], {})
+        for k, v in old.items():
+            if n.get(k) in (None, '') and v not in (None, ''):
+                n[k] = v
     OUT.write_text(json.dumps({'generatedAt': datetime.now().strftime('%Y-%m-%d'), 'notices': notices}, ensure_ascii=False, indent=1))
     print(f'mPhilGEPS: {len(notices)} notices, {sum(n["open"] for n in notices)} open')
 
