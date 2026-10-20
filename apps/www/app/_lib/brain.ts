@@ -122,7 +122,14 @@ export function brain() {
 		{ id: 's-bio', label: 'Bangsamoro Information Office', kind: 'source', note: 'News releases: often the newest dated record of who holds a post.' },
 		{ id: 's-ministries', label: 'Ministry & town sites', kind: 'source', note: 'Officials lists, hotlines and Citizen’s Charters.' },
 		{ id: 's-news', label: 'News outlets', kind: 'source', note: 'For incidents, which no office keeps a register of.' },
-		{ id: 's-photos', label: 'Commons, DOT & museums', kind: 'source', note: 'Freely licensed and government photographs, each credited.' },
+		{ id: 's-bcpch', label: 'BCPCH', kind: 'source', note: 'The Bangsamoro Commission for the Preservation of Cultural Heritage: its Pusaka registry of crafts and makers, and heritage site validations.' },
+		{ id: 's-mtit', label: 'MTIT', kind: 'source', note: 'The Ministry of Trade, Investments and Tourism: tourism sites, travel fairs and the regional photo competition.' },
+		{ id: 's-mfbm', label: 'MFBM', kind: 'source', note: 'The Ministry of Finance, and Budget and Management, which prepares the budget Parliament enacts.' },
+		{ id: 's-milg', label: 'MILG', kind: 'source', note: 'The Ministry of the Interior and Local Government: its key officials, field offices and READi.' },
+		{ id: 's-pna', label: 'Philippine News Agency', kind: 'source', note: 'The government’s news agency, one of the outlets incidents are read from.' },
+		{ id: 's-dot', label: 'Department of Tourism', kind: 'source', note: 'Its own photographs of the region’s destinations, government works.' },
+		{ id: 's-museum', label: 'National Museum', kind: 'source', note: 'Archaeological sites and their photographs.' },
+		{ id: 's-commons', label: 'Wikimedia Commons', kind: 'source', note: 'Freely licensed photographs, each credited to its author.' },
 		{ id: 's-scholars', label: 'Histories & laws', kind: 'source', note: 'The Organic Law, peace agreements and published histories behind the primer.' },
 	]
 
@@ -143,7 +150,14 @@ export function brain() {
 		['s-bio', ['d-offices', 'd-field', 'd-places', 'd-crafts']],
 		['s-ministries', ['d-offices', 'd-field', 'd-lines']],
 		['s-news', ['d-incidents']],
-		['s-photos', ['d-places', 'd-crafts']],
+		['s-bcpch', ['d-crafts', 'd-places']],
+		['s-mtit', ['d-places', 'd-field']],
+		['s-mfbm', ['d-appropriations']],
+		['s-milg', ['d-offices', 'd-field', 'd-officials']],
+		['s-pna', ['d-incidents']],
+		['s-dot', ['d-places']],
+		['s-museum', ['d-places']],
+		['s-commons', ['d-places', 'd-crafts']],
 		['s-scholars', ['d-primer']],
 	]
 	const publishes: [string, string[]][] = [

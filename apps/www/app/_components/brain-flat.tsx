@@ -1,6 +1,7 @@
 'use client'
 
-import { useMemo } from 'react'
+import { ArrowsInIcon, MinusIcon, PlusIcon } from '@phosphor-icons/react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import type { BrainEdge, BrainNode } from '../_lib/brain'
 
 /* ============================================================
@@ -67,12 +68,86 @@ type Props = {
 	picked: string | null
 	onHover: (id: string | null) => void
 	onPick: (id: string | null) => void
+	/** Drawn above the zoom buttons: the 3D / 2D switch. */
+	toolbar?: React.ReactNode
 }
 
-export function BrainFlat({ nodes, edges, lit, edgeLit, picked, onHover, onPick }: Props) {
+/** The whole map, and how far in and out it may go. */
+const HOME = { x: -90, y: 0, w: 1180, h: 1000 }
+const CLOSEST = HOME.w / 6
+const FARTHEST = HOME.w * 1.3
+
+export function BrainFlat({ nodes, edges, lit, edgeLit, picked, onHover, onPick, toolbar }: Props) {
 	const placed = useMemo(() => layout(nodes, edges), [nodes, edges])
+	const svg = useRef<SVGSVGElement>(null)
+	const [vb, setVb] = useState(HOME)
+	const drag = useRef<{ x: number; y: number; moved: boolean } | null>(null)
+	const dragged = useRef(false)
+
+	/** A screen point in the map's own units. */
+	const toMap = (clientX: number, clientY: number) => {
+		const el = svg.current!
+		const pt = el.createSVGPoint()
+		pt.x = clientX
+		pt.y = clientY
+		return pt.matrixTransform(el.getScreenCTM()!.inverse())
+	}
+	/** Zoom by f around a point of the map (the centre of the view by default). */
+	const zoom = (f: number, at?: { x: number; y: number }) =>
+		setVb((v) => {
+			const w = Math.min(FARTHEST, Math.max(CLOSEST, v.w * f))
+			const k = w / v.w
+			const p = at ?? { x: v.x + v.w / 2, y: v.y + v.h / 2 }
+			return { x: p.x - (p.x - v.x) * k, y: p.y - (p.y - v.y) * k, w, h: v.h * k }
+		})
+
+	// The wheel zooms toward the pointer. Not passive, so the dialog does not scroll instead.
+	useEffect(() => {
+		const el = svg.current!
+		const wheel = (e: WheelEvent) => {
+			e.preventDefault()
+			const p = toMap(e.clientX, e.clientY)
+			zoom(e.deltaY > 0 ? 1.12 : 1 / 1.12, { x: p.x, y: p.y })
+		}
+		el.addEventListener('wheel', wheel, { passive: false })
+		return () => el.removeEventListener('wheel', wheel)
+	}, [])
+
+	const button = 'flex size-9 items-center justify-center border border-white/20 bg-black/30 text-white/85 backdrop-blur transition hover:border-white hover:text-white'
 	return (
-	<svg viewBox='-90 0 1180 1000' role='img' aria-label='A map of BetterBARMM: its sources, datasets and workspaces, joined to Jo at the centre' className='mx-auto block h-full w-full' onClick={() => onPick(null)}>
+	<div className='relative h-full w-full'>
+	<svg
+		ref={svg}
+		viewBox={`${vb.x} ${vb.y} ${vb.w} ${vb.h}`}
+		role='img'
+		aria-label='A map of BetterBARMM: its sources, datasets and workspaces, joined to Jo at the centre. Scroll to zoom, drag to move.'
+		className={`mx-auto block h-full w-full touch-none ${vb.w < HOME.w ? 'cursor-grab active:cursor-grabbing' : ''}`}
+		// Dragging moves the map; a press that did not move is a click, which clears the pick.
+		onPointerDown={(e) => {
+			drag.current = { x: e.clientX, y: e.clientY, moved: false }
+			dragged.current = false
+		}}
+		onPointerMove={(e) => {
+			const d = drag.current
+			if (!d || !(e.buttons & 1)) return
+			if (!d.moved && Math.hypot(e.clientX - d.x, e.clientY - d.y) < 4) return
+			d.moved = dragged.current = true
+			const scale = svg.current!.getScreenCTM()!.a
+			const dx = (e.clientX - d.x) / scale
+			const dy = (e.clientY - d.y) / scale
+			d.x = e.clientX
+			d.y = e.clientY
+			setVb((v) => ({ ...v, x: v.x - dx, y: v.y - dy }))
+		}}
+		onPointerUp={() => (drag.current = null)}
+		onClickCapture={(e) => {
+			if (dragged.current) {
+				e.stopPropagation()
+				dragged.current = false
+			}
+		}}
+		onClick={() => onPick(null)}
+	>
 		<defs>
 			<radialGradient id='jo'>
 				<stop offset='0' stopColor='#fff8e8' />
@@ -169,5 +244,18 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, onHover, onPick 
 			)
 		})}
 	</svg>
+	<div className='absolute right-4 bottom-4 flex flex-col gap-1.5'>
+		{toolbar}
+		<button type='button' className={button} aria-label='Zoom in' onClick={() => zoom(0.75)}>
+			<PlusIcon size={16} weight='bold' />
+		</button>
+		<button type='button' className={button} aria-label='Zoom out' onClick={() => zoom(1.33)}>
+			<MinusIcon size={16} weight='bold' />
+		</button>
+		<button type='button' className={button} aria-label='Reset the view' onClick={() => (setVb(HOME), onPick(null))}>
+			<ArrowsInIcon size={16} weight='bold' />
+		</button>
+	</div>
+	</div>
 	)
 }

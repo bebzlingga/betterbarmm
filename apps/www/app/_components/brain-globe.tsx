@@ -337,7 +337,7 @@ export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick
 	return (
 		<div className='relative h-full min-h-[60vh] w-full lg:min-h-0'>
 			<div ref={box} className='absolute inset-0 overflow-hidden' aria-label='A globe of BetterBARMM: drag to turn it, scroll to zoom, click a node for its details' role='img' />
-			<div className='absolute right-2 bottom-2 flex flex-col gap-1.5'>
+			<div className='absolute right-4 bottom-4 flex flex-col gap-1.5'>
 				{toolbar}
 				<button type='button' className={button} aria-label='Zoom in' onClick={() => api.current?.zoom(0.75)}>
 					<PlusIcon size={16} weight='bold' />

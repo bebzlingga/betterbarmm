@@ -92,13 +92,10 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 					{view === '3d' ? (
 						<BrainGlobe nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} onHover={setHover} onPick={setPicked} toolbar={switcher} />
 					) : (
-						<>
-							<BrainFlat nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} onHover={setHover} onPick={setPicked} />
-							<div className='absolute right-2 bottom-2'>{switcher}</div>
-						</>
+						<BrainFlat nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} onHover={setHover} onPick={setPicked} toolbar={switcher} />
 					)}
 				</div>
-				<ul className='mx-auto mt-2 flex max-w-[920px] shrink-0 flex-wrap justify-center gap-x-5 gap-y-1 px-4 pb-4 text-[12px] text-white/70'>
+				<ul className='pointer-events-none flex flex-wrap justify-center gap-x-5 gap-y-1 px-4 pt-2 pb-4 text-[12px] text-white/70 lg:absolute lg:inset-x-0 lg:bottom-0 lg:pt-0 lg:pb-5'>
 					<li className='flex items-center gap-1.5'><span className='size-2.5 rounded-full bg-[#7fa9aa]' /> Sources</li>
 					<li className='flex items-center gap-1.5'><span className='size-2.5 rounded-full bg-[#e3ac3e]' /> Datasets</li>
 					<li className='flex items-center gap-1.5'><span className='size-2.5 rounded-full bg-[#c3313b]' /> Workspaces</li>
@@ -164,7 +161,7 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 							{thread.links.map((l, i) => (
 								<li key={i}>
 									<Link href={l.href} className='group flex items-start gap-3 py-2.5 hover:bg-white/5'>
-										<span className='w-28 shrink-0 text-[12px] font-semibold uppercase tracking-[0.06em] text-white/55'>{l.where}</span>
+										<span className='w-24 shrink-0 pt-px text-[10px] font-semibold uppercase leading-snug tracking-[0.08em] text-white/55'>{l.where}</span>
 										<span className='min-w-0 flex-1 text-[13.5px] leading-snug text-white/90 group-hover:text-white'>{l.what}</span>
 										<ArrowUpRightIcon size={13} weight='bold' className='mt-0.5 shrink-0 text-[#f1c453]' aria-hidden='true' />
 									</Link>
