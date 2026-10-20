@@ -2,7 +2,8 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { lguProvinces } from '@betterbarmm/lgu-data'
 import { discoverBarmmTopics } from '@betterbarmm/primer-data'
-import { barangayRows, localGovernments } from './directory'
+import { barangayRows, directoryOffices, fieldOffices, localGovernments, officeHistory } from './directory'
+import { budgetHref } from './services'
 
 /* ============================================================
    The brain of BetterBARMM, as data
@@ -26,23 +27,26 @@ export type Kind = 'jo' | 'workspace' | 'dataset' | 'source'
 export type BrainNode = { id: string; label: string; kind: Kind; note: string; count?: number; unit?: string; date?: string | null; href?: string; fresh?: boolean }
 export type BrainEdge = { from: string; to: string; kind: 'feeds' | 'reads' | 'join'; label?: string }
 
-export type TownThread = {
+/** A town or an office, followed across the estate: what it is, its facts, every place it appears, and what to light. */
+export type Thread = {
 	key: string
-	name: string
-	province: string
-	isCity: boolean
-	mayor: string | null
-	barangays: number
-	lines: number
-	email: boolean
-	incidents: number
-	deaths: number
-	notices: number
-	places: string[]
-	district: string | null
-	directory: string
-	lgu: string
+	kind: 'town' | 'office'
+	group: string
+	title: string
+	kicker: string
+	facts: [string, string][]
+	links: { where: string; what: string; href: string }[]
+	lit: string[]
 }
+
+const PROCUREMENT = 'https://procurement.betterbarmm.com'
+const ELECTION = 'https://election.betterbarmm.com'
+/** The procurement workspace's own address for an entity: its name slugged, the same rule and order it uses. */
+const slugify = (name: string) =>
+	name.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 80)
+const squash = (name: string) => name.toUpperCase().replace(/[^A-Z0-9]+/g, ' ').replace(/\bTHE\b/g, ' ').replace(/\s+/g, ' ').trim()
+const n = (x: number) => x.toLocaleString('en-PH')
+const plural = (x: number, one: string, many = `${one}s`) => `${n(x)} ${x === 1 ? one : many}`
 
 export function brain() {
 	const acts = read<{ acts: unknown[] }>('bills/bangsamoro_registry/baa/official_index.json').acts.length
@@ -62,7 +66,7 @@ export function brain() {
 	const field = read<{ generatedAt: string; offices: unknown[] }>('directory/field-offices.json')
 	const emergency = read<{ generatedAt: string; towns: { province: string; slug: string; lines: unknown[] }[] }>('directory/emergency.json')
 	const emails = read<{ generatedAt: string; towns: Record<string, unknown> }>('directory/lgu-emails.json')
-	const places = read<{ generatedAt: string; items: { name: string; municipality: string; area: string }[] }>('places/places.json')
+	const places = read<{ generatedAt: string; items: { slug: string; name: string; municipality: string; area: string }[] }>('places/places.json')
 	const stays = read<{ stays: unknown[] }>('places/stays.json').stays.length
 	const crafts = read<{ generatedAt: string; items: unknown[] }>('crafts/crafts.json')
 	const accidents = read<{ generatedAt: string; incidents: { province: string; municipality: string | null; deaths: number }[] }>('accidents/accidents.json')
@@ -178,35 +182,100 @@ export function brain() {
 		...joins.map(([from, to, label]): BrainEdge => ({ from, to, kind: 'join', label })),
 	]
 
-	/* Each town across every workspace that holds it. */
-	const unitNotices = new Map<string, number>()
-	philgeps.notices.forEach((row) => {
-		const unit = philgeps.entities[row[3] as number]?.unit
-		if (unit) unitNotices.set(unit, (unitNotices.get(unit) ?? 0) + 1)
+	/* Each PhilGEPS entity's notices, and its address in the procurement workspace. */
+	const used = new Set<string>()
+	const entities = (philgeps.entities as { name: string; unit: string | null }[]).map((e, i) => {
+		let slug = slugify(e.name)
+		while (used.has(slug)) slug += '-2'
+		used.add(slug)
+		return { i, name: e.name.replace(/\s+/g, ' ').trim(), unit: e.unit, slug, notices: 0 }
 	})
-	const threads: TownThread[] = localGovernments.flatMap((g) =>
+	philgeps.notices.forEach((row) => {
+		const e = entities[row[3] as number]
+		if (e) e.notices += 1
+	})
+	const procurementLinks = (list: typeof entities) =>
+		list
+			.filter((e) => e.notices)
+			.sort((a, b) => b.notices - a.notices)
+			.slice(0, 4)
+			.map((e) => ({ where: 'Procurement', what: `${e.name}: ${plural(e.notices, 'bid notice')}`, href: `${PROCUREMENT}/${e.slug}` }))
+
+	/* Each town across every workspace that holds it. */
+	const townThreads: Thread[] = localGovernments.flatMap((g) =>
 		g.units.map((u) => {
 			const key = `${g.slug}/${u.slug}`
 			const hits = accidents.incidents.filter((i) => i.municipality === u.name && i.province === g.name)
+			const dead = hits.reduce((k, i) => k + i.deaths, 0)
+			const lines = emergency.towns.find((t) => t.province === g.slug && t.slug === u.slug)?.lines.length ?? 0
+			const email = key in emails.towns
+			const own = entities.filter((e) => e.unit === key)
+			const notices = own.reduce((k, e) => k + e.notices, 0)
+			const here = places.items.filter((p) => p.area === g.slug && p.municipality === u.name)
+			const district = districts[key]?.districts.join(', ') ?? null
+			const links = [
+				{ where: 'Directory', what: `Mayor, ${plural(barangayRows(g.slug, u.slug).length, 'barangay')}${lines ? `, ${plural(lines, 'emergency line')}` : ''}${email ? ', email' : ''}`, href: u.href },
+				{ where: 'Local Government', what: 'Officials, finances, audits and history', href: u.lguHref },
+				...(district ? [{ where: 'Election', what: `Votes in its province’s ${district} parliamentary district`, href: `${ELECTION}/results` }] : []),
+				...procurementLinks(own),
+				...(hits.length ? [{ where: 'Incident Watch', what: `${plural(hits.length, 'incident')} since 2019, ${n(dead)} dead`, href: '/accidents' }] : []),
+				...here.map((p) => ({ where: 'Places', what: p.name, href: `/places/${p.slug}` })),
+			]
+			const lit = ['jo', 'w-directory', 'w-lgu', 'd-lgus', 'd-officials', 'd-lines', 'd-finances', ...(district ? ['w-election', 'd-election'] : []), ...(notices ? ['w-procurement', 'd-notices'] : []), ...(hits.length ? ['w-incidents', 'd-incidents'] : []), ...(here.length ? ['w-places', 'd-places'] : [])]
 			return {
-				key,
-				name: u.name,
-				province: g.name,
-				isCity: u.isCity,
-				mayor: u.head,
-				barangays: barangayRows(g.slug, u.slug).length,
-				lines: emergency.towns.find((t) => t.province === g.slug && t.slug === u.slug)?.lines.length ?? 0,
-				email: key in emails.towns,
-				incidents: hits.length,
-				deaths: hits.reduce((n, i) => n + i.deaths, 0),
-				notices: unitNotices.get(key) ?? 0,
-				places: places.items.filter((p) => p.area === g.slug && p.municipality === u.name).map((p) => p.name),
-				district: districts[key]?.districts.join(', ') ?? null,
-				directory: u.href,
-				lgu: u.lguHref,
+				key: `town:${key}`,
+				kind: 'town' as const,
+				group: g.name,
+				title: u.name,
+				kicker: `${u.isCity ? 'City' : 'Municipality'} · ${g.name}`,
+				facts: [
+					['Mayor', u.head ?? '—'],
+					['Barangays', n(barangayRows(g.slug, u.slug).length)],
+					['Emergency lines', lines ? `${lines}${email ? ' + email' : ''}` : email ? 'Email only' : '—'],
+					['District', district ?? '—'],
+					['Bid notices', notices ? n(notices) : '—'],
+					['Incidents', hits.length ? `${hits.length} · ${dead} dead` : '—'],
+				] as [string, string][],
+				links,
+				lit,
 			}
 		}),
 	)
+
+	/* Each regional office across the Directory, the Budget and Procurement. */
+	const KIND_GROUP = { office: 'The Chief Minister’s office', ministry: 'Ministries', attached: 'Attached offices' } as const
+	const officeThreads: Thread[] = directoryOffices.map((o) => {
+		const field = fieldOffices(o.slug)
+		const past = officeHistory(o.slug).length
+		const name = squash(o.name)
+		const own = entities.filter((e) => squash(e.name).startsWith(name))
+		const notices = own.reduce((k, e) => k + e.notices, 0)
+		const budgetOf = (o as { budget_of?: string }).budget_of
+		const links = [
+			{ where: 'Directory', what: `Head, contacts, structure${past ? `, ${plural(past, 'past head')}` : ''}`, href: `/directory/office/${o.slug}` },
+			{ where: 'Budget', what: budgetOf ? 'Funded within its parent ministry’s budget' : 'Its appropriations, year by year', href: budgetHref({ slug: budgetOf ?? o.slug }) },
+			...(field.length ? [{ where: 'Directory', what: `${plural(field.length, 'provincial office')}`, href: `/directory/office/${o.slug}` }] : []),
+			...procurementLinks(own),
+		]
+		return {
+			key: `office:${o.slug}`,
+			kind: 'office' as const,
+			group: KIND_GROUP[o.kind as keyof typeof KIND_GROUP] ?? 'Offices',
+			title: o.acronym ? `${o.name} (${o.acronym})` : o.name,
+			kicker: KIND_GROUP[o.kind as keyof typeof KIND_GROUP] ?? 'Office',
+			facts: [
+				['Head', o.head ? `${o.head.title} ${o.head.name}` : '—'],
+				['As of', o.head?.as_of ? new Date(`${o.head.as_of.slice(0, 7)}-01T00:00:00+08:00`).toLocaleDateString('en-PH', { month: 'long', year: 'numeric' }) : '—'],
+				['Phone', o.phones[0] ?? '—'],
+				['Email', o.emails[0] ?? '—'],
+				['Provincial offices', field.length ? n(field.length) : '—'],
+				['Bid notices', notices ? n(notices) : '—'],
+			] as [string, string][],
+			links,
+			lit: ['jo', 'w-directory', 'd-offices', 'w-budget', 'd-appropriations', ...(field.length ? ['d-field'] : []), ...(notices ? ['w-procurement', 'd-notices'] : []), ...(past ? [] : [])],
+		}
+	})
+	const threads = [...townThreads, ...officeThreads]
 
 	return { nodes, edges, threads }
 }
