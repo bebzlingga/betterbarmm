@@ -43,18 +43,51 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 	const thread = threads.find((t) => t.key === follow) ?? null
 	const followLit = useMemo(() => (thread ? new Set(thread.lit) : null), [thread])
 
-	const focus = hover ?? picked
+	/* Hover lights a node's neighbours. A pick lights its whole chain: everything
+	   upstream of it to the sources and everything downstream to Jo, so a
+	   workspace shows every dataset and source behind it. */
 	const near = useMemo(() => {
-		if (!focus) return null
-		const s = new Set([focus])
-		for (const e of edges) {
-			if (e.from === focus) s.add(e.to)
-			if (e.to === focus) s.add(e.from)
+		// Resting on the node just picked is still the pick, not a hover over it.
+		if (hover && hover !== picked) {
+			const s = new Set([hover])
+			for (const e of edges) {
+				if (e.from === hover) s.add(e.to)
+				if (e.to === hover) s.add(e.from)
+			}
+			return { ids: s, from: hover, chain: false }
 		}
-		return s
-	}, [focus, edges])
-	const lit = (id: string) => (near ? near.has(id) : followLit ? followLit.has(id) : true)
-	const edgeLit = (e: BrainEdge) => (near ? near.has(e.from) && near.has(e.to) && (e.from === focus || e.to === focus) : followLit ? followLit.has(e.from) && followLit.has(e.to) : true)
+		if (!picked) return null
+		const s = new Set([picked])
+		const walk = (dir: 'up' | 'down') => {
+			const queue = [picked]
+			while (queue.length) {
+				const at = queue.shift()!
+				for (const e of edges) {
+					if (e.kind === 'join') continue
+					const next = dir === 'up' ? (e.to === at ? e.from : null) : e.from === at ? e.to : null
+					if (next && !s.has(next)) {
+						s.add(next)
+						queue.push(next)
+					}
+				}
+			}
+		}
+		// Jo reads everything, so walking up from Jo is the whole brain; walking down from her is nothing.
+		walk('up')
+		if (picked !== 'jo') walk('down')
+		return { ids: s, from: picked, chain: true }
+	}, [hover, picked, edges])
+	const lit = (id: string) => (near ? near.ids.has(id) : followLit ? followLit.has(id) : true)
+	const edgeLit = (e: BrainEdge) =>
+		near
+			? near.chain
+				? e.kind !== 'join' && near.ids.has(e.from) && near.ids.has(e.to)
+				: near.ids.has(e.from) && near.ids.has(e.to) && (e.from === near.from || e.to === near.from)
+			: followLit
+				? followLit.has(e.from) && followLit.has(e.to)
+				: true
+	/** What a pick reaches, for the flat map to frame. */
+	const chain = near?.chain ? near.ids : null
 
 	const chosen = picked ? byId.get(picked) : null
 	const links = chosen ? edges.filter((e) => e.from === chosen.id || e.to === chosen.id) : []
@@ -92,7 +125,7 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 					{view === '3d' ? (
 						<BrainGlobe nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} onHover={setHover} onPick={setPicked} toolbar={switcher} />
 					) : (
-						<BrainFlat nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} onHover={setHover} onPick={setPicked} toolbar={switcher} />
+						<BrainFlat nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} chain={chain} onHover={setHover} onPick={setPicked} toolbar={switcher} />
 					)}
 				</div>
 				<ul className='pointer-events-none flex flex-wrap justify-center gap-x-5 gap-y-1 px-4 pt-2 pb-4 text-[12px] text-white/70 lg:absolute lg:inset-x-0 lg:bottom-0 lg:pt-0 lg:pb-5'>

@@ -133,7 +133,7 @@ export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick
 		const at = place(nodes, edges)
 
 		// Links, each a curve bowed toward the core, with a pulse riding it.
-		type Wire = { e: BrainEdge; line: THREE.Line; mat: THREE.LineBasicMaterial; curve: THREE.QuadraticBezierCurve3; pulse?: THREE.Mesh; t: number; speed: number }
+		type Wire = { e: BrainEdge; line: THREE.Line; mat: THREE.LineBasicMaterial; curve: THREE.QuadraticBezierCurve3; pulse?: THREE.Mesh; tail: THREE.Mesh[]; t: number; speed: number; count: number }
 		const wires: Wire[] = []
 		edges.forEach((e, i) => {
 			const p = at.get(e.from)
@@ -149,16 +149,26 @@ export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick
 			const line = new THREE.Line(geo, mat)
 			if (e.kind === 'join') line.computeLineDistances()
 			scene.add(line)
-			const wire: Wire = { e, line, mat, curve, t: (i * 0.137) % 1, speed: 0.12 + ((i * 7) % 5) * 0.03 }
+			mat.opacity = still ? mat.opacity : 0
+			if (!still) geo.setDrawRange(0, 0)
+			const wire: Wire = { e, line, mat, curve, tail: [], t: (i * 0.137) % 1, speed: 0.12 + ((i * 7) % 5) * 0.03, count: 41 }
 			if (!still && e.kind !== 'join') {
-				wire.pulse = new THREE.Mesh(new THREE.SphereGeometry(e.kind === 'reads' ? 0.035 : 0.025, 8, 8), new THREE.MeshBasicMaterial({ color: e.kind === 'reads' ? '#ffd7a0' : '#f1c453', transparent: true }))
+				// A comet: a bright head and a short tail of fading beads behind it.
+				const color = e.kind === 'reads' ? '#ffd7a0' : '#f1c453'
+				const size = e.kind === 'reads' ? 0.035 : 0.025
+				wire.pulse = new THREE.Mesh(new THREE.SphereGeometry(size, 10, 10), new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0, blending: THREE.AdditiveBlending }))
 				scene.add(wire.pulse)
+				for (let k = 1; k <= 4; k++) {
+					const bead = new THREE.Mesh(new THREE.SphereGeometry(size * (1 - k * 0.17), 6, 6), new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0, blending: THREE.AdditiveBlending }))
+					scene.add(bead)
+					wire.tail.push(bead)
+				}
 			}
 			wires.push(wire)
 		})
 
 		// Nodes: a sphere each, a glow for Jo and the workspaces, a label that follows.
-		type Dot = { n: BrainNode; mesh: THREE.Mesh; mat: THREE.MeshBasicMaterial; halo?: THREE.Sprite; label: CSS2DObject; el: HTMLDivElement }
+		type Dot = { n: BrainNode; mesh: THREE.Mesh; mat: THREE.MeshBasicMaterial; halo?: THREE.Sprite; haloSize: number; label: CSS2DObject; el: HTMLDivElement; home: THREE.Vector3; born: number; size: number }
 		const dots: Dot[] = []
 		const hits: THREE.Mesh[] = []
 		for (const n of nodes) {
@@ -200,7 +210,9 @@ export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick
 			const label = new CSS2DObject(el)
 			label.position.copy(pos)
 			scene.add(label)
-			dots.push({ n, mesh, mat, halo, label, el })
+			// Born from the core outward, ring by ring, a little apart within each ring.
+			const born = { jo: 0, workspace: 0.18, dataset: 0.45, source: 0.72 }[n.kind] + (dots.length % 9) * 0.035
+			dots.push({ n, mesh, mat, halo, haloSize: halo ? halo.scale.x : 0, label, el, home: pos.clone(), born, size: 1 })
 		}
 
 		// Pointing and picking. A press that moved is a turn of the globe, not a click.
@@ -279,23 +291,53 @@ export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick
 			}
 
 			camera.getWorldDirection(camDir)
+			const age = still ? 99 : clock.elapsedTime
+			const ease = (u: number) => 1 - (1 - Math.min(1, Math.max(0, u))) ** 3
+			const smooth = Math.min(1, dt * 9)
+			const grown = new Map<string, number>()
 			for (const d of dots) {
 				const on = lit(d.n.id)
-				d.mat.opacity = on ? 1 : 0.14
-				if (d.halo) d.halo.material.opacity = on ? 1 : 0.1
+				// Growing out of Jo when the dialog opens.
+				const g = ease((age - d.born) / 1.1)
+				grown.set(d.n.id, g)
+				const at = d.home.clone().multiplyScalar(g)
+				d.mesh.position.copy(at)
+				d.label.position.copy(at)
+				// Swell under the pointer; a picked node breathes.
+				const target = d.n.id === hovered ? 1.6 : picked === d.n.id ? 1.4 + Math.sin(age * 4) * 0.12 : 1
+				d.size += (target - d.size) * Math.min(1, dt * 12)
+				const breath = d.n.kind === 'jo' && !still ? 1 + Math.sin(age * 1.6) * 0.04 : 1
+				d.mesh.scale.setScalar(Math.max(0.001, g * d.size * breath))
+				d.mat.opacity += ((on ? 1 : 0.14) - d.mat.opacity) * smooth
+				if (d.halo) {
+					d.halo.position.copy(at)
+					const pulse = d.n.kind === 'jo' && !still ? 1 + Math.sin(age * 1.6) * 0.09 : 1
+					d.halo.scale.setScalar(d.haloSize * g * pulse * (d.n.id === hovered ? 1.25 : 1))
+					d.halo.material.opacity += ((on ? 1 : 0.1) - d.halo.material.opacity) * smooth
+				}
 				// A label on the far side of the globe fades, so the near side reads first.
-				const facing = d.mesh.position.clone().sub(camera.position).normalize().dot(camDir)
-				const behind = d.mesh.position.clone().normalize().dot(camera.position.clone().normalize()) < -0.25
-				d.el.style.opacity = String((on ? 1 : 0.15) * (behind ? 0.35 : 1) * (facing > 0 ? 1 : 0))
+				const facing = at.clone().sub(camera.position).normalize().dot(camDir)
+				const behind = at.clone().normalize().dot(camera.position.clone().normalize()) < -0.25
+				d.el.style.opacity = String(g * (on ? 1 : 0.15) * (behind ? 0.35 : 1) * (facing > 0 ? 1 : 0))
 				d.el.style.outline = picked === d.n.id ? '1px solid rgba(255,255,255,.8)' : 'none'
 			}
 			for (const w of wires) {
 				const on = edgeLit(w.e)
-				w.mat.opacity = on ? (w.e.kind === 'join' ? 0.85 : 0.38) : 0.04
+				// A link draws itself from its source once both its ends have grown.
+				const g = Math.min(grown.get(w.e.from) ?? 1, grown.get(w.e.to) ?? 1)
+				const drawn = still ? 1 : ease((g - 0.6) / 0.4)
+				w.line.geometry.setDrawRange(0, Math.ceil(w.count * drawn))
+				const want = (on ? (w.e.kind === 'join' ? 0.85 : 0.38) : 0.04) * drawn
+				w.mat.opacity += (want - w.mat.opacity) * smooth
 				if (w.pulse) {
 					w.t = (w.t + dt * w.speed) % 1
+					const bright = (on ? 0.95 : 0.05) * (drawn >= 1 ? 1 : 0)
 					w.pulse.position.copy(w.curve.getPoint(w.t))
-					;(w.pulse.material as THREE.MeshBasicMaterial).opacity = on ? 0.95 : 0.05
+					;(w.pulse.material as THREE.MeshBasicMaterial).opacity = bright
+					w.tail.forEach((bead, k) => {
+						bead.position.copy(w.curve.getPoint(Math.max(0, w.t - (k + 1) * 0.018)))
+						;(bead.material as THREE.MeshBasicMaterial).opacity = w.t > (k + 1) * 0.018 ? bright * (0.55 - k * 0.12) : 0
+					})
 				}
 			}
 			controls.update()

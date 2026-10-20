@@ -70,6 +70,8 @@ type Props = {
 	onPick: (id: string | null) => void
 	/** Drawn above the zoom buttons: the 3D / 2D switch. */
 	toolbar?: React.ReactNode
+	/** Everything a pick reaches; the view glides to frame it. */
+	chain?: Set<string> | null
 }
 
 /** The whole map, and how far in and out it may go. */
@@ -77,7 +79,7 @@ const HOME = { x: -90, y: 0, w: 1180, h: 1000 }
 const CLOSEST = HOME.w / 6
 const FARTHEST = HOME.w * 1.3
 
-export function BrainFlat({ nodes, edges, lit, edgeLit, picked, onHover, onPick, toolbar }: Props) {
+export function BrainFlat({ nodes, edges, lit, edgeLit, picked, chain, onHover, onPick, toolbar }: Props) {
 	const placed = useMemo(() => layout(nodes, edges), [nodes, edges])
 	const svg = useRef<SVGSVGElement>(null)
 	const [vb, setVb] = useState(HOME)
@@ -100,6 +102,44 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, onHover, onPick,
 			const p = at ?? { x: v.x + v.w / 2, y: v.y + v.h / 2 }
 			return { x: p.x - (p.x - v.x) * k, y: p.y - (p.y - v.y) * k, w, h: v.h * k }
 		})
+
+	/** Glide the view to a box, eased, rather than jump. */
+	const glide = useRef(0)
+	const glideTo = (to: typeof HOME) => {
+		cancelAnimationFrame(glide.current)
+		const from = { ...vbRef.current }
+		const t0 = performance.now()
+		const step = (now: number) => {
+			const u = Math.min(1, (now - t0) / 550)
+			const e = 1 - (1 - u) ** 3
+			setVb({ x: from.x + (to.x - from.x) * e, y: from.y + (to.y - from.y) * e, w: from.w + (to.w - from.w) * e, h: from.h + (to.h - from.h) * e })
+			if (u < 1) glide.current = requestAnimationFrame(step)
+		}
+		glide.current = requestAnimationFrame(step)
+	}
+	const vbRef = useRef(vb)
+	useEffect(() => {
+		vbRef.current = vb
+	}, [vb])
+
+	// A pick frames its chain; clearing it goes back to the whole map.
+	useEffect(() => {
+		if (!chain) {
+			if (!picked) glideTo(HOME)
+			return
+		}
+		const pts = [...chain].map((id) => placed.get(id)).filter(Boolean) as Placed[]
+		if (pts.length < 2) return
+		const pad = 110
+		const x0 = Math.min(...pts.map((p) => p.x)) - pad
+		const x1 = Math.max(...pts.map((p) => p.x)) + pad
+		const y0 = Math.min(...pts.map((p) => p.y)) - pad
+		const y1 = Math.max(...pts.map((p) => p.y)) + pad
+		// Kept to the map's own proportions, centred on the chain.
+		const w = Math.max(x1 - x0, ((y1 - y0) * HOME.w) / HOME.h, CLOSEST * 1.6)
+		const h = (w * HOME.h) / HOME.w
+		glideTo({ x: (x0 + x1) / 2 - w / 2, y: (y0 + y1) / 2 - h / 2, w, h })
+	}, [chain, picked, placed])
 
 	// The wheel zooms toward the pointer. Not passive, so the dialog does not scroll instead.
 	useEffect(() => {
