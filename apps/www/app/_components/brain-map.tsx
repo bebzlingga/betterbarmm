@@ -60,7 +60,7 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 				<div className='h-[62vh] lg:h-auto lg:min-h-0 lg:flex-1'>
 					<BrainGlobe nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} onHover={setHover} onPick={setPicked} />
 				</div>
-				<ul className='mx-auto mt-2 flex max-w-[920px] shrink-0 flex-wrap justify-center gap-x-5 gap-y-1 px-4 text-[12px] text-white/70'>
+				<ul className='mx-auto mt-2 flex max-w-[920px] shrink-0 flex-wrap pb-4 justify-center gap-x-5 gap-y-1 px-4 text-[12px] text-white/70'>
 					<li className='flex items-center gap-1.5'><span className='size-2.5 rounded-full bg-[#7fa9aa]' /> Sources</li>
 					<li className='flex items-center gap-1.5'><span className='size-2.5 rounded-full bg-[#e3ac3e]' /> Datasets</li>
 					<li className='flex items-center gap-1.5'><span className='size-2.5 rounded-full bg-[#c3313b]' /> Workspaces</li>
@@ -68,7 +68,7 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 				</ul>
 			</div>
 
-			<aside className='border-t border-white/10 p-6 text-white lg:order-1 lg:min-h-0 lg:overflow-y-auto lg:border-t-0 lg:border-r lg:p-8 lg:pl-0'>
+			<aside className='border-t border-white/10 p-6 text-white lg:order-1 lg:min-h-0 lg:overflow-y-auto lg:border-t-0 lg:border-r lg:bg-black/20 lg:p-8'>
 				<label htmlFor='town' className='font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[#f1c453]'>
 					Follow a town
 				</label>

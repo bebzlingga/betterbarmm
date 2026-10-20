@@ -127,9 +127,6 @@ export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick
 			const grid = new THREE.LineSegments(new THREE.WireframeGeometry(new THREE.SphereGeometry(r, 36, 18)), new THREE.LineBasicMaterial({ color: '#f3d9a8', transparent: true, opacity: o }))
 			scene.add(grid)
 		}
-		const atmosphere = new THREE.Sprite(new THREE.SpriteMaterial({ map: glow('rgba(241,196,83,0.18)'), transparent: true, depthWrite: false, blending: THREE.AdditiveBlending }))
-		atmosphere.scale.setScalar(11)
-		scene.add(atmosphere)
 
 		const at = place(nodes, edges)
 
