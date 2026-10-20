@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowsInIcon, MinusIcon, PlusIcon } from '@phosphor-icons/react'
+import { ArrowsInIcon, BrainIcon, MinusIcon, PlusIcon } from '@phosphor-icons/react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { BrainEdge, BrainNode } from '../_lib/brain'
 
@@ -328,9 +328,7 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, chain, onHover, 
 					{n.kind === 'jo' ? <circle cx={n.x} cy={n.y} r={r + 10} fill='#f1c453' opacity='.18' filter='url(#glow)' /> : null}
 					<circle cx={n.x} cy={n.y} r={r} fill={FILL[n.kind]} stroke={picked === n.id ? '#ffffff' : 'none'} strokeWidth='2' filter={n.kind === 'workspace' ? 'url(#glow)' : undefined} />
 					{n.kind === 'jo' ? (
-						<text x={n.x} y={n.y + 6} textAnchor='middle' className='fill-[#3a0f16] text-[18px] font-extrabold'>
-							Jo
-						</text>
+						<BrainIcon x={n.x - 18} y={n.y - 18} size={36} weight='fill' color='#3a0f16' aria-hidden='true' />
 					) : (
 						<text
 							x={lx}

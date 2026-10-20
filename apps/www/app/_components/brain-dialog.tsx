@@ -1,6 +1,6 @@
 'use client'
 
-import { XIcon } from '@phosphor-icons/react'
+import { BrainIcon, XIcon } from '@phosphor-icons/react'
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react'
 import type { brain } from '../_lib/brain'
 import { BrainMap } from './brain-map'
@@ -92,7 +92,11 @@ export function BrainDialog() {
 				{data ? (
 					<BrainMap nodes={data.nodes} edges={data.edges} threads={data.threads} />
 				) : (
-					<p className='py-32 text-center text-[14px] text-white/60'>{failed ? 'The map did not load. Close this and try again.' : 'Drawing the map…'}</p>
+					<div role='status' className='flex h-full flex-col items-center justify-center gap-4 px-6 text-center'>
+						<BrainIcon size={44} weight='fill' aria-hidden='true' className={failed ? 'text-white/40' : 'text-[#f1c453] motion-safe:animate-pulse'} />
+						<p className='text-[15px] font-medium text-white/75'>{failed ? 'The map did not load.' : 'Drawing the map…'}</p>
+						<p className='text-[12.5px] text-white/45'>{failed ? 'Close this and try again.' : 'Gathering the records, sources and links.'}</p>
+					</div>
 				)}
 			</div>
 		</dialog>
