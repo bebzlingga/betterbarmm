@@ -80,22 +80,16 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 			</Masthead>
 
 			<section className='bb-container bb-section'>
-				<p className='text-[13.5px] text-[var(--ink-3)]'>
-					<Link href='/services' className='underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
-						All offices
-					</Link>
-					{parent ? (
-						<>
-							{' '}
-							· Attached to the{' '}
-							<Link href={`/services/${parent.slug}`} className='underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
-								{parent.name}
-							</Link>
-						</>
-					) : null}
-				</p>
+				{parent ? (
+					<p className='mb-10 text-[13.5px] text-[var(--ink-3)]'>
+						Attached to the{' '}
+						<Link href={`/services/${parent.slug}`} className='underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
+							{parent.name}
+						</Link>
+					</p>
+				) : null}
 
-				<div className='mt-10 grid gap-12 lg:grid-cols-[minmax(0,1fr)_18rem]'>
+				<div className='grid gap-12 lg:grid-cols-[minmax(0,1fr)_18rem]'>
 					<div className='min-w-0 space-y-14'>
 						{hasCharter(office) ? (
 							<>
