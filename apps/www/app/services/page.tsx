@@ -6,7 +6,8 @@ import { ServicesSearch, type ServiceEntry } from '../_components/services-searc
 import { ServicesTabs } from '../_components/services-tabs'
 import { lgus } from '../_lib/lgu-services'
 import { GetInvolved } from '../_components/get-involved'
-import { officeLogo } from '../_lib/directory'
+import { officeLogo } from '../_lib/images'
+import { Emblem } from '../_components/emblem'
 import { pageMeta } from '../_lib/seo'
 import { AUDIENCES, budgetHref, CATEGORIES, CHARTER_GAPS, fundedPrograms, hasCharter, offerings, offices, peso, servicesMeta, shortName, slugify, type Office, type Service } from '../_lib/services'
 
@@ -26,19 +27,6 @@ const GROUPS: { kind: Office['kind'][]; title: string | null }[] = [
 const sectionHead = 'flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'
 const eyebrow = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em]'
 const linkClass = 'underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'
-
-/** An office's logo, as the Directory draws it, or its acronym where no logo has been found. */
-function OfficeLogo({ o, small = false }: { o: Office; small?: boolean }) {
-	const logo = officeLogo(o.slug)
-	return logo ? (
-		// eslint-disable-next-line @next/next/no-img-element
-		<img src={logo.src} alt='' title={`Logo: ${logo.credit}`} loading='lazy' className={`size-full object-contain! ${small ? '' : 'bg-[var(--paper-2)] p-2 sm:p-4'}`} />
-	) : (
-		<span aria-hidden='true' className={`grid size-full place-items-center font-mono font-bold text-[var(--ink-3)] ${small ? 'text-[9px]' : 'bg-[var(--paper-2)] text-[11px] sm:text-[16px]'}`}>
-			{(o.acronym ?? '').slice(0, 5)}
-		</span>
-	)
-}
 
 export default async function ServicesPage({ searchParams }: { searchParams: Promise<{ q?: string; cat?: string; for?: string }> }) {
 	const { q = '', cat = '', for: audience = '' } = await searchParams
@@ -134,7 +122,7 @@ function WithCharter() {
 							{list.map((o) => (
 								<li key={o.slug} className='bb-frame relative flex min-w-0 gap-4 border-b border-[var(--rule-soft)] bg-transparent! py-3 sm:flex-col sm:gap-0 sm:overflow-hidden sm:border sm:border-[var(--rule)] sm:py-0'>
 									<span className='relative size-16 shrink-0 overflow-hidden sm:h-28 sm:w-full'>
-										<OfficeLogo o={o} />
+										<Emblem image={officeLogo(o.slug)} name={o.name} label={o.acronym} tile className='size-full text-[11px] sm:text-[16px]' />
 									</span>
 									<div className='flex min-w-0 flex-1 flex-col sm:p-4'>
 										<p className='text-[15.5px] leading-[1.2]'>
@@ -209,7 +197,7 @@ function GapRow({ o }: { o: Office }) {
 		<li className='grid gap-x-8 gap-y-3 border-b border-[var(--rule-soft)] py-5 md:grid-cols-[minmax(0,26rem)_minmax(0,1fr)] lg:gap-x-20'>
 			<div className='flex min-w-0 gap-4'>
 				<span className='size-12 shrink-0'>
-					<OfficeLogo o={o} small />
+					<Emblem image={officeLogo(o.slug)} name={o.name} label={o.acronym} className='size-full rounded-full text-[9px]' />
 				</span>
 				<div className='min-w-0'>
 				{o.acronym ? <p className={`${eyebrow} text-[var(--accent)]`}>{o.acronym}</p> : null}

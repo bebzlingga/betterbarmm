@@ -1,4 +1,4 @@
-import { headPhoto } from '../_lib/directory'
+import { headPhoto } from '../_lib/images'
 
 /** An office head's portrait in a circle, or their initials where no official portrait has been found. */
 export function HeadPortrait({ slug, name, className = 'size-12' }: { slug: string; name: string | null; className?: string }) {

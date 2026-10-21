@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import parliament from '../../../../../datasets/bills/bangsamoro_registry/members/parliament-2026.json'
 import { linkClass } from '../../_components/directory-bits'
 import { memberId } from '../../_lib/directory'
+import { memberPortrait } from '../../_lib/images'
+import { Emblem } from '../../_components/emblem'
 import { Masthead } from '../../_components/masthead'
 import { DirectoryDialog } from '../../_components/directory-dialog'
 import { pageMeta } from '../../_lib/seo'
@@ -27,14 +29,6 @@ type Member = {
 const LEGISLATION = 'https://legislation.betterbarmm.com'
 const members = parliament.members as Member[]
 const ORDER = ['District representative', 'Party representative', 'Sectoral representative', 'Non-Moro indigenous peoples representative']
-const initials = (name: string) =>
-	name
-		.split(/\s+/)
-		.filter((w) => /^[A-Z]/.test(w))
-		.slice(0, 2)
-		.map((w) => w[0])
-		.join('')
-
 export default function ParliamentDirectoryPage() {
 	const groups = ORDER.map((label) => ({ label, list: members.filter((m) => m.seatLabel === label) })).filter((g) => g.list.length)
 
@@ -64,14 +58,7 @@ export default function ParliamentDirectoryPage() {
 							{g.list.map((m) => (
 								<li key={m.rosterName} id={memberId(m)} className='-mt-px -ml-px scroll-mt-[calc(var(--site-header-h)+1rem)] border border-[var(--rule)] bg-[var(--paper)] target:bg-[var(--paper-2)] target:outline-2 target:outline-[var(--accent)]'>
 									<a href={`${LEGISLATION}/members/elected`} className='group flex h-full items-center gap-3 p-4 hover:bg-[var(--paper-2)]'>
-										{m.photo ? (
-											// eslint-disable-next-line @next/next/no-img-element
-											<img src={`${LEGISLATION}/images/members/elected/${m.photo.file}`} alt='' loading='lazy' className='size-12 shrink-0 rounded-full object-cover' />
-										) : (
-											<span aria-hidden='true' className='flex size-12 shrink-0 items-center justify-center rounded-full bg-[var(--paper-2)] text-[13px] font-bold text-[var(--ink-3)]'>
-												{initials(m.fullName)}
-											</span>
-										)}
+										<Emblem image={memberPortrait(m)} name={m.fullName} portrait className='size-12 rounded-full text-[13px]' />
 										<span className='min-w-0'>
 											<span className='block text-[14px] font-semibold leading-snug group-hover:text-[var(--accent)]'>{m.fullName}</span>
 											<span className='block text-[12px] leading-5 text-[var(--ink-3)]'>{[m.district ?? m.sector, m.partyLabel].filter(Boolean).join(' · ')}</span>

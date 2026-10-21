@@ -1,13 +1,12 @@
 import parliament from '../../../../datasets/bills/bangsamoro_registry/members/parliament-2026.json'
 import type { DirectoryEntry } from '../_components/directory-search'
-import { barangayRows, directoryOffices, localGovernments, memberId, officeLogo, placeSeal } from './directory'
+import { barangayRows, directoryOffices, localGovernments, memberId } from './directory'
+import { memberPortrait, officeLogo, placeSeal } from './images'
 
 /* The directory search's index: every office, province, town, barangay and Member of Parliament, with what each
    can be found by. Served as a static JSON file and fetched when the reader first types, so the page stays light. */
 
 export type Member = { fullName: string; rosterName: string; seatLabel: string; district: string | null; sector: string | null; partyLabel: string | null; photo?: { file: string } | null }
-
-const LEGISLATION = 'https://legislation.betterbarmm.com'
 export const members = parliament.members as Member[]
 
 const fold = (...parts: (string | null | undefined)[]) =>
@@ -67,7 +66,7 @@ export function searchIndex(): DirectoryEntry[] {
 			title: m.fullName,
 			sub: [m.district ?? m.sector ?? m.seatLabel, m.partyLabel].filter(Boolean).join(' · '),
 			href: `/directory/parliament#${memberId(m)}`,
-			image: m.photo ? `${LEGISLATION}/images/members/elected/${m.photo.file}` : undefined,
+			image: memberPortrait(m)?.src,
 			terms: fold(m.fullName, m.district, m.sector, m.partyLabel, m.seatLabel),
 		})
 	return out

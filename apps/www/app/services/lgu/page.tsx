@@ -5,7 +5,8 @@ import { GetInvolved } from '../../_components/get-involved'
 import { ServicesSearch, type ServiceEntry } from '../../_components/services-search'
 import { ServicesTabs } from '../../_components/services-tabs'
 import { SiteHeader } from '../../_components/site-header'
-import { placeSeal } from '../../_lib/directory'
+import { lguSeal } from '../../_lib/images'
+import { Emblem } from '../../_components/emblem'
 import { LGU_GAPS, lguHasCharter, lguHref, lguMeta, lgus, PROVINCES, type Lgu } from '../../_lib/lgu-services'
 import { pageMeta } from '../../_lib/seo'
 import { AUDIENCES, CATEGORIES, offerings, slugify } from '../../_lib/services'
@@ -20,24 +21,6 @@ export const metadata: Metadata = pageMeta({
 const sectionHead = 'flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'
 const eyebrow = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em]'
 const linkClass = 'underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'
-
-/** A province's or a town's seal, as the Directory draws it, or its initials where none has been found. */
-function Seal({ l, size }: { l: Lgu; size: 'sm' | 'lg' }) {
-	const seal = l.kind === 'Province' ? placeSeal(l.key) : placeSeal(l.provinceSlug, l.key.split('/')[1])
-	return seal ? (
-		// eslint-disable-next-line @next/next/no-img-element
-		<img src={seal.src} alt='' title={`Seal: ${seal.credit}`} loading='lazy' className={`size-full object-contain! ${size === 'lg' ? 'bg-[var(--paper-2)] p-2 sm:p-4' : ''}`} />
-	) : (
-		<span aria-hidden='true' className={`grid size-full place-items-center font-mono font-bold text-[var(--ink-3)] ${size === 'lg' ? 'bg-[var(--paper-2)] text-[16px]' : 'rounded-full border border-[var(--rule)] text-[10px]'}`}>
-			{l.name
-				.split(/[\s-]+/)
-				.filter((w) => /^[A-Z]/.test(w))
-				.map((w) => w[0])
-				.join('')
-				.slice(0, 3)}
-		</span>
-	)
-}
 
 const kindOf = (l: Lgu) => (l.kind === 'Municipality' ? 'Town' : l.kind)
 
@@ -126,7 +109,7 @@ function WithCharter({ listed }: { listed: Lgu[] }) {
 					{listed.map((l) => (
 						<li key={l.key} className='bb-frame relative flex min-w-0 gap-4 border-b border-[var(--rule-soft)] bg-transparent! py-3 sm:flex-col sm:gap-0 sm:overflow-hidden sm:border sm:border-[var(--rule)] sm:py-0'>
 							<span className='relative size-16 shrink-0 overflow-hidden sm:h-28 sm:w-full'>
-								<Seal l={l} size='lg' />
+								<Emblem image={lguSeal(l.key)} name={l.name} tile className='size-full text-[16px]' />
 							</span>
 							<div className='flex min-w-0 flex-1 flex-col sm:p-4'>
 								<p className={`${eyebrow} text-[var(--ink-3)]`}>
@@ -189,7 +172,7 @@ function WithoutCharter() {
 										{inP.map((l) => (
 											<li key={l.key} className='flex min-w-0 gap-3 border-t border-[var(--rule-soft)] py-5'>
 												<span className='size-9 shrink-0'>
-													<Seal l={l} size='sm' />
+													<Emblem image={lguSeal(l.key)} name={l.name} className='size-full rounded-full text-[10px]' />
 												</span>
 												<div className='min-w-0'>
 													<p className='text-[14.5px] font-semibold leading-snug'>

@@ -6,7 +6,9 @@ import { DirectorySearch } from './directory-search'
 import { members } from '../_lib/directory-index'
 import { GetInvolved } from './get-involved'
 import { SiteHeader } from './site-header'
-import { barangayRows, directoryMeta, directoryOffices, hotlines, localGovernments, officeLogo, telHref } from '../_lib/directory'
+import { barangayRows, directoryMeta, directoryOffices, hotlines, localGovernments, telHref } from '../_lib/directory'
+import { officeLogo } from '../_lib/images'
+import { Emblem } from './emblem'
 
 
 const GROUPS = [
@@ -14,19 +16,6 @@ const GROUPS = [
 	{ kinds: ['office', 'ministry'], title: null },
 	{ kinds: ['attached'], title: 'Attached offices, authorities and commissions' },
 ] as const
-
-/** An office's logo on the card's ground, or its acronym where no logo has been found. */
-function OfficeLogo({ slug, acronym }: { slug: string; acronym: string | null }) {
-	const logo = officeLogo(slug)
-	return logo ? (
-		// eslint-disable-next-line @next/next/no-img-element
-		<img src={logo.src} alt='' title={`Logo: ${logo.credit}`} loading='lazy' className='size-full bg-[var(--paper-2)] object-contain! p-2 sm:p-5' />
-	) : (
-		<span aria-hidden='true' className='grid size-full place-items-center bg-[var(--paper-2)] font-mono text-[11px] font-bold text-[var(--ink-3)] sm:text-[18px]'>
-			{(acronym ?? '').slice(0, 5)}
-		</span>
-	)
-}
 
 const sectionHead = 'flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'
 const eyebrow = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em]'
@@ -99,7 +88,7 @@ export function DirectoryIndex() {
 										{list.map((o) => (
 											<li key={o.slug} className='bb-frame relative flex min-w-0 gap-4 border-b border-[var(--rule-soft)] bg-transparent! py-3 sm:flex-col sm:gap-0 sm:overflow-hidden sm:border sm:border-[var(--rule)] sm:py-0'>
 												<span className='relative size-16 shrink-0 overflow-hidden sm:h-32 sm:w-full'>
-													<OfficeLogo slug={o.slug} acronym={o.acronym} />
+													<Emblem image={officeLogo(o.slug)} name={o.name} label={o.acronym} tile className='size-full text-[11px] sm:text-[18px]' />
 												</span>
 												<div className='min-w-0 flex-1 sm:p-4'>
 													<p className='mb-1.5 text-[15.5px] leading-[1.2]'>
