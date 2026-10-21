@@ -192,8 +192,8 @@ export function ServicesSearch({
 
 			{/* The search on the left, the two filters on the right, always under the band, so a choice can be made or undone from the results as well as the sections. */}
 			<div id='filters' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] pt-10 lg:pt-12'>
-				<div className='flex flex-col gap-3 lg:flex-row lg:items-end'>
-					<form role='search' action='/services' onSubmit={(e) => e.preventDefault()} className='flex min-w-0 flex-1 flex-col gap-1'>
+				<div className='flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between'>
+					<form role='search' action='/services' onSubmit={(e) => e.preventDefault()} className='flex min-w-0 flex-col gap-1 lg:w-[26rem]'>
 						<label htmlFor='services-search' className='text-[12px] text-[var(--ink-3)]'>
 							Search
 						</label>
