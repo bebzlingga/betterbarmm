@@ -8,18 +8,22 @@ import bills from '../../../../datasets/bills/bangsamoro_registry/bills/official
 import adopted from '../../../../datasets/bills/bangsamoro_registry/resolutions/adopted_official_index.json'
 import proposed from '../../../../datasets/bills/bangsamoro_registry/resolutions/proposed_official_index.json'
 import trends from '../../../../datasets/budget/trends.json'
+import directory from '../../../../datasets/directory/offices.json'
+import { categoryLabel, offerings, shortName, slugify as anchor } from './services'
+import { lguHasCharter, lguHref, lgus } from './lgu-services'
 
 /* ============================================================
    One search across the estate
 
    Every named thing a reader might look for, in one list held on the
    server: measures and members, budget offices, provinces, towns and
-   barangays, procurement offices and suppliers. Each entry links to
+   barangays, procurement offices and suppliers, the regional offices in
+   the Directory, and every program and service. Each entry links to
    the workspace that holds its record. Ranked by how much of the name
    the words cover, then by kind.
    ============================================================ */
 
-export type SearchKind = 'Act' | 'Bill' | 'Resolution' | 'Member' | 'Budget office' | 'Town' | 'Province' | 'Barangay' | 'Procuring office' | 'Supplier'
+export type SearchKind = 'Act' | 'Bill' | 'Resolution' | 'Member' | 'Budget office' | 'Town' | 'Province' | 'Barangay' | 'Procuring office' | 'Supplier' | 'Office' | 'Service' | 'Program'
 
 export type SearchHit = { kind: SearchKind; title: string; detail: string; href: string }
 
@@ -29,6 +33,8 @@ const LEG = 'https://legislation.betterbarmm.com'
 const BUDGET = 'https://budget.betterbarmm.com'
 const LGU = 'https://lgu.betterbarmm.com'
 const PROC = 'https://procurement.betterbarmm.com'
+// The landing site's own pages, written whole: the search answers every workspace's header too.
+const WWW = 'https://betterbarmm.com'
 
 /** Lowercase, unaccented, punctuation to spaces. */
 export const fold = (s: string) =>
@@ -54,7 +60,10 @@ const sentence = (title: string) => title.charAt(0) + title.slice(1).toLowerCase
 const KIND_RANK: Record<SearchKind, number> = {
 	Town: 0,
 	Province: 0,
+	Office: 1,
 	Member: 1,
+	Service: 2,
+	Program: 3,
 	Act: 2,
 	'Budget office': 2,
 	'Procuring office': 3,
@@ -124,6 +133,23 @@ const index: Entry[] = [
 	),
 	...trends.offices.map((o) => entry('Budget office', o.name, 'In the Bangsamoro budget', `${BUDGET}/offices/${o.slug}`)),
 	...procurement(),
+	...(directory.offices as { slug: string; name: string; acronym: string | null }[]).map((o) =>
+		entry('Office', o.name, 'Regional office · in the Directory', `${WWW}/directory/office/${o.slug}`, o.acronym ?? ''),
+	),
+	...offerings.map((o) =>
+		entry(
+			o.kind === 'program' ? 'Program' : 'Service',
+			o.item.name,
+			`${shortName(o.office)} · ${o.item.category ? categoryLabel(o.item.category) : 'Programs & services'}`,
+			`${WWW}/services/${o.office.slug}#${o.kind}-${anchor(o.item.name)}`,
+			`${o.office.acronym ?? ''} ${o.item.summary ?? ''}`,
+		),
+	),
+	...lgus.filter(lguHasCharter).flatMap((l) =>
+		l.services.map((s) =>
+			entry('Service', s.name, `${l.name} · ${s.category ? categoryLabel(s.category) : 'Programs & services'}`, `${WWW}${lguHref(l)}#service-${anchor(s.name)}`, `${l.name} ${l.province} ${s.summary ?? ''}`),
+		),
+	),
 ]
 
 export function search(q: string, limit = 40): { hits: SearchHit[]; total: number } {

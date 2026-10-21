@@ -1,4 +1,4 @@
-import { ArrowUpRightIcon, BuildingsIcon, FacebookLogoIcon, FileTextIcon, GlobeIcon } from '@phosphor-icons/react/ssr'
+import { AddressBookIcon, ArrowUpRightIcon, FacebookLogoIcon, FileTextIcon, GlobeIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -54,7 +54,7 @@ export default async function LguPage({ params }: { params: Promise<{ key: strin
 						</a>
 					) : null}
 					<Link href={directory} className='inline-flex items-center gap-2 text-[14px] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
-						<BuildingsIcon size={16} aria-hidden='true' /> In the Directory
+						<AddressBookIcon size={16} aria-hidden='true' /> In the Directory
 					</Link>
 				</div>
 			</Masthead>

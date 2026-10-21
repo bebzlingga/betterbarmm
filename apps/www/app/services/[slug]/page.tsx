@@ -1,4 +1,4 @@
-import { ArrowSquareOutIcon, ArrowUpRightIcon, CoinsIcon, EnvelopeSimpleIcon, FileTextIcon, GlobeIcon, MapPinIcon, PhoneIcon } from '@phosphor-icons/react/ssr'
+import { AddressBookIcon, ArrowSquareOutIcon, ArrowUpRightIcon, CoinsIcon, EnvelopeSimpleIcon, FileTextIcon, GlobeIcon, MapPinIcon, PhoneIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -7,6 +7,7 @@ import { SiteHeader } from '../../_components/site-header'
 import { pageMeta } from '../../_lib/seo'
 import { budgetHref, fundedPrograms, hasCharter, officeBySlug, offices, peso, servicesMeta, shortName, slugify } from '../../_lib/services'
 import { GetInvolved } from '../../_components/get-involved'
+import { directoryOffice } from '../../_lib/directory'
 import { ServiceCards, Source, Tags } from '../../_components/service-cards'
 
 export function generateStaticParams() {
@@ -51,6 +52,11 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 					<a href={budgetHref(office)} className='inline-flex items-center gap-2 text-[14px] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
 						<CoinsIcon size={16} aria-hidden='true' /> Its budget
 					</a>
+					{directoryOffice(office.slug) ? (
+						<Link href={`/directory/office/${office.slug}`} className='inline-flex items-center gap-2 text-[14px] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
+							<AddressBookIcon size={16} aria-hidden='true' /> In the Directory
+						</Link>
+					) : null}
 				</div>
 			</Masthead>
 
