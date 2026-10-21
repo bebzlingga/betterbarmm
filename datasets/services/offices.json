@@ -20,6 +20,9 @@
     "label": "OCM, Citizen's Charter Handbook, 1st Edition, 2023",
     "url": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf"
    },
+   "charterStatus": "published",
+   "charterNote": null,
+   "charterPage": null,
    "programs": [
     {
      "name": "Ayudang Medikal mula sa Bangsamoro Government (AMBaG)",
@@ -30,6 +33,7 @@
       "senior-citizens",
       "persons-with-disability"
      ],
+     "category": "health",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "how": "Bring the hospital papers to the AMBaG Office, 3rd Floor, Alnor Building 2, Sinsuat Avenue, Cotabato City."
     },
@@ -41,6 +45,7 @@
       "patients",
       "local-governments"
      ],
+     "category": "assistance",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "how": "Submit a request letter at the Project TABANG office on ND Avenue, Cotabato City."
     },
@@ -51,6 +56,7 @@
       "patients",
       "families-in-need"
      ],
+     "category": "health",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "how": "Visit the mobile clinic with an ID, or call the MRP hotline for the lake ambulance."
     },
@@ -63,6 +69,7 @@
       "researchers",
       "everyone"
      ],
+     "category": "community",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "how": "Apply for a borrower's card with a valid ID and a membership form."
     },
@@ -74,6 +81,7 @@
       "patients",
       "travellers"
      ],
+     "category": "assistance",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "how": "Submit a request letter and certificate of indigency to the liaison office."
     },
@@ -83,6 +91,7 @@
      "for": [
       "everyone"
      ],
+     "category": "community",
      "source": "https://bangsamoro.gov.ph/contact-us/",
      "how": "Download the complaint form from the Contact Us page of bangsamoro.gov.ph."
     }
@@ -99,6 +108,7 @@
       "children",
       "women"
      ],
+     "category": "health",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "requirements": [
       "Request form (from the AMBaG desk officer)",
@@ -119,6 +129,7 @@
       "senior-citizens",
       "persons-with-disability"
      ],
+     "category": "health",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "requirements": [
       "Request form",
@@ -138,6 +149,7 @@
       "patients",
       "families-in-need"
      ],
+     "category": "health",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "requirements": [
       "Government-issued ID or any document showing the patient's name"
@@ -153,6 +165,7 @@
       "patients",
       "families-in-need"
      ],
+     "category": "health",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "requirements": [
       "Government-issued ID or any document showing the name of the patient or deceased, if available",
@@ -169,6 +182,7 @@
       "families-in-need",
       "local-governments"
      ],
+     "category": "assistance",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "requirements": [
       "Request letter to the Project Manager stating the type and quantity of help and the number of affected communities, with a contact number",
@@ -188,6 +202,7 @@
       "patients",
       "local-governments"
      ],
+     "category": "health",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "requirements": [
       "Rural health units: endorsement letter from the Ministry of Health",
@@ -207,6 +222,7 @@
       "patients",
       "travellers"
      ],
+     "category": "assistance",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "requirements": [
       "Request letter",
@@ -227,6 +243,7 @@
       "researchers",
       "everyone"
      ],
+     "category": "community",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "requirements": [
       "Any valid ID (student, company, government, or a parent's or guardian's ID for minors)",
@@ -243,6 +260,7 @@
       "everyone",
       "businesses"
      ],
+     "category": "community",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "requirements": [
       "Request or endorsement letter (2 original copies)",
@@ -258,6 +276,7 @@
      "for": [
       "everyone"
      ],
+     "category": "requests",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "requirements": [
       "Request letter addressed to the Chief Minister"
@@ -288,6 +307,9 @@
    "mandate": "The Bangsamoro Government ministry for education: basic education, college, technical-vocational training and the madaris (Islamic schools) system in BARMM.",
    "contact": null,
    "charter": null,
+   "charterStatus": "unchecked",
+   "charterNote": "Its website turns away automated visits, so we could not check it for a charter.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Access to Higher and Modern Education Scholarship Program (AHME-SP)",
@@ -388,7 +410,13 @@
     "phone": "(064) 552-9221",
     "email": null
    },
-   "charter": null,
+   "charter": {
+    "label": "MOH, Citizen's Charter, Version 1, 2026",
+    "url": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf"
+   },
+   "charterStatus": "published",
+   "charterNote": null,
+   "charterPage": null,
    "programs": [
     {
      "name": "Bangsamoro Medical Scholarship Program (BMSP-TDIF)",
@@ -396,6 +424,7 @@
      "for": [
       "students"
      ],
+     "category": "education",
      "source": "https://mcu.edu.ph/news/mcu-and-moh-barmm-forge-scholarship-partnership-to-expand-access-to-healthcare-education/",
      "how": null
     },
@@ -406,6 +435,7 @@
       "everyone",
       "families-in-need"
      ],
+     "category": "health",
      "source": "https://www.sunstar.com.ph/zamboanga/barmm-rolls-out-purokalusugan-program",
      "how": null
     },
@@ -417,6 +447,7 @@
       "families-in-need",
       "persons-with-disability"
      ],
+     "category": "health",
      "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-celebrates-healthcare-milestones-at-inaugural-kapihan-sa-bagong-pilipinas",
      "how": null
     },
@@ -427,6 +458,7 @@
       "local-governments",
       "everyone"
      ],
+     "category": "government",
      "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-celebrates-healthcare-milestones-at-inaugural-kapihan-sa-bagong-pilipinas",
      "how": null
     },
@@ -437,11 +469,576 @@
       "everyone",
       "ulama"
      ],
+     "category": "health",
      "source": "https://moh.bangsamoro.gov.ph/7-priority-area-with-islamic-perspective/",
      "how": null
     }
    ],
-   "services": [],
+   "services": [
+    {
+     "name": "Request for Use of Conference Rooms and Covered Court",
+     "summary": "Book a ministry conference room or the covered court for a meeting, training or event.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Request letter (from the requesting client)",
+      "Duly accomplished booking form (from the General Services Section)"
+     ],
+     "fee": "None",
+     "time": "10 Minutes",
+     "where": "General Services Section"
+    },
+    {
+     "name": "Receiving and Releasing of Official Documents",
+     "summary": "Submit or receive official documents at the ministry and get a stamped receiving copy.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Documents for releasing/receiving, 1 original copy and 1 photocopy (from the requesting client)"
+     ],
+     "fee": "None",
+     "time": "1 Hour, 25 Minutes",
+     "where": "Records Section, Administrative Division"
+    },
+    {
+     "name": "Payment of Claims",
+     "summary": "Get paid by cheque for approved transactions with the Ministry of Health.",
+     "for": [
+      "everyone"
+     ],
+     "category": "suppliers",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Disbursement Voucher (DV), 4 original copies (from the end-user)",
+      "Obligation Request and Status (ORS), 3 original copies (from the end-user)",
+      "Supporting documents per COA Circular No. 2012-001, RA 9184 and other issuances for the transaction (from the Procurement, Supply, Personnel or General Services Section, or the end-user)",
+      "Justification, if applicable",
+      "Government valid ID, for cheque releasing (from the end-user/payee)",
+      "For release to a second person: Special Power of Attorney, government valid IDs of principal and representative, and authorization letter"
+     ],
+     "fee": "None",
+     "time": "7 Hours, 27 Minutes",
+     "where": "Finance Division"
+    },
+    {
+     "name": "Request for Schedule Delivery of Supplies",
+     "summary": "Suppliers get an approved date and time to deliver goods to the ministry.",
+     "for": [
+      "businesses"
+     ],
+     "category": "suppliers",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Request for Schedule of Delivery (RSD) Form (from the Supply Section)",
+      "Contract or Purchase Order with pertinent attachments (from the Procurement Section)",
+      "Notice to Proceed (from the Procurement Section)"
+     ],
+     "fee": "None",
+     "time": "2 Hours, 30 Minutes",
+     "where": "Supply Section"
+    },
+    {
+     "name": "Request for Inspection and Acceptance of Supplies Delivered",
+     "summary": "Suppliers get delivered goods inspected and accepted, with an Inspection and Acceptance Report for payment.",
+     "for": [
+      "businesses"
+     ],
+     "category": "suppliers",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Approved Request for Schedule of Delivery (RSD) Form (from the Supply Section)",
+      "Contract or Purchase Order with corresponding attachments (from the Procurement Section)",
+      "Original copy of dealer's/supplier's invoices showing quantity, description, unit and total value, signed by the dealer or authorized representative (from the supplier)",
+      "Delivery receipt (from the supplier)",
+      "Warranty security (from the supplier)",
+      "For equipment: tax receipts from the Bureau of Customs or BIR showing exact specifications and/or serial number (from the supplier)",
+      "Certificate of product registration from FDA (from the supplier)",
+      "Certificate of good manufacturing practices from FDA (from the supplier)",
+      "Batch release certificate from FDA (from the supplier)",
+      "If the supplier is not the manufacturer, certification from the manufacturer that the supplier is an authorized distributor/dealer (from the supplier)",
+      "License to Operate from FDA with list of sources (from the supplier)",
+      "Delivery receipt/invoice bearing lot numbers and expiry dates of the drugs and medicines (from the supplier)"
+     ],
+     "fee": "None",
+     "time": "1 Hour, 45 Minutes",
+     "where": "Supply Section"
+    },
+    {
+     "name": "Issuance of Permit to Construct",
+     "summary": "Health facilities get a permit before building, expanding or renovating a hospital or clinic.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Accomplished Application Form for Permit to Construct a Health Facility (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office)",
+      "Letter of intent for new and existing health facility, with background and scope of the project (from the requesting health facility)",
+      "For new health facility (new government general hospitals, private hospitals below 100 authorized beds): approved Certificate of Need (from the MOH Regional Office)",
+      "Proof of registration of name of health facility: DTI/SEC registration with Articles of Incorporation and By-Laws for private facility (from DTI/SEC), Enabling Act/Board Resolution for government facility (from the Local Government Unit), or CDA registration with Articles of Cooperation and By-Laws (from the Cooperative Development Authority)",
+      "3 sets of site development plans and architectural floor plans in blueprint 20 x 30, signed and sealed by an architect/engineer (from private/government practitioners)",
+      "For expansion/renovation: latest approved Permit to Construct and approved floor plan with latest copy of LTO/COA (from the requesting health facility), and floor plan showing proposed changes (from an engineer/architect)",
+      "Feasibility study, for non-hospital-based dialysis clinic only (from the requesting health facility)"
+     ],
+     "fee": "Refer to Health Facility Schedule of Fees; ₱1,000.00 to ₱3,000.00 depending on facility type",
+     "time": "11 Days, 2 Hours, 20 Minutes",
+     "where": "Health Regulation Division"
+    },
+    {
+     "name": "Issuance of Initial License to Operate/ Certificate of Registration of Regulated Health Facility",
+     "summary": "New hospitals, clinics, laboratories and other health facilities get their first licence to operate.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Application Form 1 (for initial and renewal) (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office)",
+      "Acknowledgement, notarized (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office)",
+      "Accomplished Health Facility Self-Assessment Tool (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office)",
+      "Health Facility Geographic Form (geographic coordinates), required for initial/new application (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office)",
+      "Mayor's Business Permit, for private facility (from the Local Government Unit)",
+      "DTI / SEC Registration, for private facility (from the Securities and Exchange Commission Office / Department of Trade and Industry)",
+      "Approved Permit to Construct (PTC) for initial/new application or facility with changes, expansion, renovation and alteration, if applicable (from the requesting health facility)",
+      "For Birthing Home: notarized MOAs with an OB-GYNE, a Pediatrician, a higher-level facility for referral and a licensed ambulance (with photocopy of driver's license and photo of ambulance) (from the requesting health facility); filled-up Registration Form of Patient Transport Vehicle (PTV) (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office)",
+      "For Infirmary: notarized MOAs with an OB-GYNE, a Pediatrician, a higher-level facility for referral and a licensed ambulance (from the requesting health facility); filled-up PTV Registration Form (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office); updated Fire Certificate (from the Bureau of Fire Protection); updated Water Analysis Certificate (from a water laboratory); Health Certificate for dietary personnel (from a medical doctor); PIDSR Certificate (from the Integrated Provincial Hospital Office); EDPMS Compliance, if applicable (from the EDPMS Coordinator, Ministry of Health)",
+      "For Level 1 Hospital: notarized MOAs with an OB-GYNE, a Pediatrician, Medicine, a Surgeon and an Anaesthesiologist (from the requesting health facility); updated Fire Certificate (from the Bureau of Fire Protection); updated Water Analysis Certificate (from a water laboratory); Health Certificate for dietary personnel (from a medical doctor); PIDSR Certificate (from the Integrated Provincial Hospital Office); EDPMS Compliance, if applicable (from the EDPMS Coordinator, Ministry of Health)",
+      "For Clinical Laboratory, if applicable: application as Head of Facility signed by the Pathologist (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office); notarized MOA with a Pathologist (from the requesting health facility); Certificate of Online Polio Laboratory Containment Survey (from labcontainmentsurvey.com); photocopy of EQAS Certificate for Parasitology, Hematology, Clinical Chemistry and Serology (from nkti.gov.ph, ritm.gov.ph, lcp.gov.ph or nrlshsaccl.com.ph)",
+      "For Blood Service, if applicable: application as Head of Blood Collecting Unit / Blood Station signed by the Head and notarized Self-Assessment Tool (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office); Certificate of Inclusion in the Regional Blood Services Network (from the Regional Voluntary Blood Services Program, Ministry of Health)",
+      "For Ambulance, if applicable: filled-up and notarized Self-Assessment Tool for Ambulance (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office)",
+      "For Medical X-ray Facility, if applicable: photocopy of Certificate of Compliance / Acknowledgement Letter (from the Food and Drug Administration)",
+      "For Pharmacy, if applicable: photocopy of Recommendation Letter / Acknowledgement Letter (from the Food and Drug Administration)"
+     ],
+     "fee": "Refer to Health Facility Schedule of Fees; varies by facility type (e.g. Birthing Home ₱4,500.00, Infirmary ₱6,000.00, Level 1 Hospital ₱6,500.00), plus cash bonds for DATRC, drug testing labs and MFOWS",
+     "time": "16 Days, 3 Hours, 5 Minutes",
+     "where": "Health Regulation Division"
+    },
+    {
+     "name": "Renewal of License to Operate/ Certificate of Registration of Regulated Health Facility",
+     "summary": "Licensed health facilities renew their licence to operate each validity period.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Application Form 1 (renewal) (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office)",
+      "Acknowledgement, notarized (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office)",
+      "Accomplished Health Facility Self-Assessment Tool (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office)",
+      "Health Facility Geographic Form (geographic coordinates), required for initial/new application (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office)",
+      "Mayor's Business Permit, for private facility (from the Local Government Unit)",
+      "DTI / SEC Registration, for private facility (from the Securities and Exchange Commission Office / Department of Trade and Industry)",
+      "Approved Permit to Construct (PTC) for initial/new application or facility with changes, expansion, renovation and alteration, if applicable (from the requesting health facility)",
+      "For Birthing Home: notarized MOAs with an OB-GYNE, a Pediatrician, a higher-level facility for referral and a licensed ambulance (with photocopy of driver's license and photo of ambulance) (from the requesting health facility); Birthing Statistical Report, submitted online annually January–March of the next year (from the requesting health facility); filled-up Registration Form of Patient Transport Vehicle (PTV) (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office)",
+      "For Infirmary: notarized MOAs with an OB-GYNE, a Pediatrician, a higher-level facility for referral and a licensed ambulance (from the requesting health facility); filled-up PTV Registration Form (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office); updated Fire Certificate (from the Bureau of Fire Protection); updated Water Analysis Certificate (from a water laboratory); Health Certificate for dietary personnel (from a medical doctor); PIDSR Certificate (from the Integrated Provincial Hospital Office); EDPMS Compliance, if applicable (from the EDPMS Coordinator, Ministry of Health)",
+      "For Level 1 Hospital: notarized MOAs with an OB-GYNE, a Pediatrician, Medicine, a Surgeon and an Anaesthesiologist (from the requesting health facility); updated Fire Certificate (from the Bureau of Fire Protection); updated Water Analysis Certificate (from a water laboratory); Health Certificate for dietary personnel (from a medical doctor); PIDSR Certificate (from the Integrated Provincial Hospital Office); EDPMS Compliance, if applicable (from the EDPMS Coordinator, Ministry of Health)",
+      "For Clinical Laboratory, if applicable: application as Head of Facility signed by the Pathologist (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office); notarized MOA with a Pathologist (from the requesting health facility); Certificate of Online Polio Laboratory Containment Survey (from labcontainmentsurvey.com); photocopy of EQAS Certificate for Parasitology, Hematology, Clinical Chemistry and Serology (from nkti.gov.ph, ritm.gov.ph, lcp.gov.ph or nrlshsaccl.com.ph)",
+      "For Blood Service, if applicable: application as Head of Blood Collecting Unit / Blood Station signed by the Head and notarized Self-Assessment Tool (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office); Certificate of Inclusion in the Regional Blood Services Network (from the Regional Voluntary Blood Services Program, Ministry of Health)",
+      "For Ambulance, if applicable: filled-up and notarized Self-Assessment Tool for Ambulance (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office)",
+      "For Medical X-ray Facility, if applicable: photocopy of Certificate of Compliance / Acknowledgement Letter (from the Food and Drug Administration)",
+      "For Pharmacy, if applicable: photocopy of Recommendation Letter / Acknowledgement Letter (from the Food and Drug Administration)"
+     ],
+     "fee": "Refer to Health Facility Schedule of Fees; varies by facility type (e.g. Birthing Home ₱3,000.00, Infirmary ₱6,000.00, Level 1 Hospital ₱6,000.00); 10% discount if filed 1 October to 30 November; 100% surcharge if expired up to 3 months",
+     "time": "15 Days, 3 Hours, 25 Minutes",
+     "where": "Health Regulation Division"
+    },
+    {
+     "name": "Remote Collection Permit for Clinical Laboratories",
+     "summary": "Licensed clinical laboratories get a 2-week permit to collect specimens off-site within 100 km.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Accomplished application form (downloadable from www.hfsrb.doh.gov.ph or the MOH Health Regulation Division Office)",
+      "Letter of request signed by the Head of the Clinical Laboratory, with facility name and MOH-LTO number, address, date, time and venue of collection, estimated number of clients, specimens to be collected and list of personnel (from the requesting health facility)",
+      "Notarized Memorandum of Agreement or contract between the contracting parties (from the requesting health facility)",
+      "Technical or operational procedures for remote collection, including specimen handling and transportation (from the requesting health facility)",
+      "List of laboratory supplies/equipment including transport materials (from the requesting health facility)"
+     ],
+     "fee": "₱500.00 x number of sites",
+     "time": "3 Days, 3 Hours, 15 Minutes",
+     "where": "Health Regulation Division"
+    },
+    {
+     "name": "Renewal of Registration of Licensed Embalmers and Licensed Massage Therapists",
+     "summary": "Licensed embalmers and massage therapists renew their yearly registration and ID.",
+     "for": [
+      "workers"
+     ],
+     "category": "permits",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Renewal application form (from the MOH Health Regulation Division Office)",
+      "1 original copy of Professional Tax Receipt (from the Local Government Unit)",
+      "1 original copy of Resident Certificate (from the Local Government Unit)",
+      "1 photocopy of medical certificate with chest X-ray (from any government physician)",
+      "1 original copy of valid ID (SSS, DFA, LGU-issued, DSWD, barangay, NBI, PAG-IBIG, PhilHealth, COMELEC or LTO)",
+      "CEE/CEUE Certification of Credit Units Earned, 30 units (from an accredited training institution)",
+      "1 photocopy of Certificate of Registration (from the Committee on Embalmers/Undertaker)",
+      "Recent ID pictures: 1 pc 1x1 and 2 pcs 2x2 (from any photo studio)",
+      "Category I, practicing professional: employer's certificate/business permit (from the applicant's employer)",
+      "Category II, non-practicing professional: authorization letter stating the professional is not practicing but wants to stay in the registry (from the requesting party)"
+     ],
+     "fee": "₱250.00; penalty ₱83.33 per year",
+     "time": "4 Days, 2 Hours, 35 Minutes",
+     "where": "Health Regulation Division"
+    },
+    {
+     "name": "Validation of Drug Test Kits",
+     "summary": "Licensed drug testing laboratories get newly bought drug test kits checked and validated.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Drug Testing Kit Validation Form (from the IDTOMIS website)",
+      "Used drug testing kits with drug test results (from the requesting health facility)",
+      "Newly procured drug testing kits (from an FDA-approved drug testing kit supplier)",
+      "Return of at least 50% of used kits from the previous DTK balance (from the requesting health facility)"
+     ],
+     "fee": "None",
+     "time": "4 Hours, 35 Minutes",
+     "where": "Health Regulation Division"
+    },
+    {
+     "name": "Request for Electronic Drug Price Monitoring System (EDPMS) Account Registration",
+     "summary": "Drugstores and drug establishments get an account to report medicine prices online.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Company Registration Form, Service Request Form and online form (from the EDPMS website: https://edpms.doh.gov.ph)",
+      "FDA License to Operate (from the FDA e-services portal: https://eservices.fda.gov.ph)"
+     ],
+     "fee": "None",
+     "time": "5 Days",
+     "where": "Pharmaceutical Unit"
+    },
+    {
+     "name": "Request for Electronic Drug Price Monitoring System (EDPMS) Account Revalidation",
+     "summary": "Drugstores renew their medicine price reporting account each year.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Accomplished EDPMS Service Request Form (from the EDPMS website: https://edpms.doh.gov.ph)",
+      "FDA License to Operate (from the FDA e-services portal: https://eservices.fda.gov.ph)"
+     ],
+     "fee": "None",
+     "time": "35 Minutes",
+     "where": "Pharmaceutical Unit"
+    },
+    {
+     "name": "Request for Certificate of Compliance (COC) in Electronic Drug Price Monitoring System (EDPMS)",
+     "summary": "Drugstores get a certificate showing they comply with medicine price reporting rules.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Letter of request addressed to the Minister of Health, through the Regional Drug Price Monitoring Officer (from the requesting party)"
+     ],
+     "fee": "None",
+     "time": "3 Days",
+     "where": "Pharmaceutical Unit"
+    },
+    {
+     "name": "Unified Pricing Certification in Electronic Drug Price Monitoring System (EDPMS)",
+     "summary": "Drugstore chains with the same prices in all branches report once for every branch.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Individual account registration of branches (from the EDPMS website: https://edpms.doh.gov.ph)",
+      "FDA License to Operate (from the FDA e-services portal: https://eservices.fda.gov.ph)",
+      "Notarized sworn statement of unified pricing, with list of registered branches attached"
+     ],
+     "fee": "None",
+     "time": "19 Days",
+     "where": "Pharmaceutical Unit"
+    },
+    {
+     "name": "Request for Change of Name/Address of the Establishment in Electronic Drug Price Monitoring System (EDPMS)",
+     "summary": "Drugstores update their business name or address in the medicine price reporting system.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Accomplished EDPMS Service Request Form (from the EDPMS website: https://edpms.doh.gov.ph)",
+      "Old License to Operate (from the FDA e-services portal: https://eservices.fda.gov.ph)",
+      "New License to Operate (from the FDA e-services portal: https://eservices.fda.gov.ph)"
+     ],
+     "fee": "None",
+     "time": "2 Days",
+     "where": "Pharmaceutical Unit"
+    },
+    {
+     "name": "Issuance of Notice to Proceed",
+     "summary": "Winning contractors get the formal go-signal to start work on a ministry project.",
+     "for": [
+      "businesses"
+     ],
+     "category": "suppliers",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Copy of Notice of Award (from the contractor)",
+      "Copy of notarized Contract of Agreement (from the contractor)",
+      "Pre-construction/As-stake Survey of Site Certification (from the Infra-Construction and Equipment Section)",
+      "Copy of Deed of Donation or copy of land title, for new sites (from the end-user/project recipient or HFDD)"
+     ],
+     "fee": "None",
+     "time": "1 Hour, 5 Minutes",
+     "where": "Health Facility Development Division"
+    },
+    {
+     "name": "Request for Pre-construction/As-stake Survey of Site Certification",
+     "summary": "Contractors get a project site surveyed and certified ready for construction.",
+     "for": [
+      "businesses"
+     ],
+     "category": "suppliers",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Request letter addressed to the HFDD Chief, attention Infra-Construction & Equipment Section head (from the contractor)",
+      "Accomplished and signed Pre-construction/As-stake Survey of Site Certification Form (from the Infra-Construction & Equipment Section)",
+      "Copy of Deed of Donation or copy of land title, for new sites (from the Office of the HFDD Division Chief)"
+     ],
+     "fee": "None",
+     "time": "17 Days, 1 Hour, 26 Minutes",
+     "where": "Infra-Construction & Equipment Section, Health Facility Development Division (HFDD)"
+    },
+    {
+     "name": "Request for Site Inspection and Issuance of Inspection Report and Statement of Work Accomplished",
+     "summary": "Contractors get project work inspected and certified so they can bill for payment.",
+     "for": [
+      "businesses"
+     ],
+     "category": "suppliers",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "For 1st progress billing: request letter addressed to the Minister, attention HFDD Chief (from the contractor)",
+      "For 1st progress billing: copy of Building Permit and, if applicable, Demolition Permit (from city or local building officials)",
+      "For 1st progress billing: copy of approved and signed Gantt Chart and PERT-CPM (from the contractor)",
+      "For 1st progress billing: copy of construction methodology (from the contractor)",
+      "For 1st progress billing: copy of MOLE-approved construction health and safety program (from the contractor)",
+      "For 1st progress billing: copy of Deed of Donation or land title, for new sites (from the Office of the HFDD Division Chief)",
+      "For other progress billing and final billing: request letter addressed to the HFDD Chief, attention Infra-Construction & Equipment Section head (from the contractor)",
+      "For warranty-end inspection/retention payment: request letter addressed to the HFDD Chief, attention Infra-Construction & Equipment Section head (from the contractor), and Certificate of Completion (from the Office of the HFDD Division Chief)"
+     ],
+     "fee": "None",
+     "time": "14 Days, 2 Hour, 6 Minutes",
+     "where": "Infra-Construction & Equipment Section, Health Facility Development Division (HFDD), Bureau of Operation"
+    },
+    {
+     "name": "Issuance of Certificate of Completion and/or Acceptance",
+     "summary": "Contractors get a certificate that their project or delivery is complete and accepted.",
+     "for": [
+      "businesses"
+     ],
+     "category": "suppliers",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "For Certificate of Completion: signed and approved final inspection report with geotagged photos (from the Infra-Construction & Equipment Section)",
+      "For Certificate of Completion: signed and approved Statement of Work Accomplished (from the Infra-Construction & Equipment Section)",
+      "For Certificate of Completion: approved as-built plan (from the contractor)",
+      "For Certificate of Acceptance (1 year after completion): request letter for warranty-end inspection addressed to the HFDD Chief, attention Infra-Construction & Equipment Section head (from the contractor)",
+      "For Certificate of Acceptance: approved warranty-end inspection report (from the Infra-Construction & Equipment Section)",
+      "For Certificate of Acceptance: copy of Certificate of Completion (from the Infra-Construction & Equipment Section)"
+     ],
+     "fee": "None",
+     "time": "1 Hour, 5 Minutes",
+     "where": "Infra-Construction & Equipment Section, Health Facility Development Division (HFDD), Bureau of Operation"
+    },
+    {
+     "name": "Request for Work Suspension and Contract Time Extension",
+     "summary": "Contractors ask to pause work or extend the deadline when delays are beyond their control.",
+     "for": [
+      "businesses"
+     ],
+     "category": "suppliers",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "For work suspension: request letter stating the reason and number of days, addressed to the Minister, attention HFDD Chief (from the contractor)",
+      "For work suspension: PAG-ASA report, for weather issues (from PAG-ASA)",
+      "For work suspension: PNP report, for peace and order issues (from the PNP), or an official situational report on the project site area addressed to the Ministry of Health (from an authorized official or agency monitoring peace and order)",
+      "For time extension: request letter stating the reason and number of days, addressed to the Minister, attention HFDD Chief (from the contractor)",
+      "For time extension: notarized commitment letter to complete the project by a stated date (from the contractor)",
+      "For time extension: notarized catch-up plan (from the contractor)",
+      "For time extension, as applicable: PAG-ASA report (from PAG-ASA), PNP report (from the PNP) or official situational report, approved Variation Order or approved Work Suspension Order (from the Infra-Construction & Equipment Section)"
+     ],
+     "fee": "None",
+     "time": "1 Day, 3 Hours, 35 Minutes",
+     "where": "Infra-Construction & Equipment Section, Health Facility Development Division (HFDD), Bureau of Operation"
+    },
+    {
+     "name": "Request for Variation Order",
+     "summary": "Contractors get approval to add, drop or change work in an ongoing project.",
+     "for": [
+      "businesses"
+     ],
+     "category": "suppliers",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Request letter addressed to the Minister, attention HFDD Chief (from the contractor, or the end-user if the request comes from the end-user)",
+      "Project Engineer's Certificate of Needs (from the Infra-Construction & Equipment Section, HFDD)",
+      "Approved Program of Works, for additional work (from the Infra-Construction & Equipment Section, HFDD)",
+      "Approved Detailed Engineering Design, for the additional work (from the Planning and Design Section, HFDD)",
+      "Financial analysis (from the Infra-Construction & Equipment Section, HFDD)"
+     ],
+     "fee": "None",
+     "time": "19 Days, 1 Hour, 16 Minutes",
+     "where": "Infra-Construction & Equipment Section, Health Facility Development Division (HFDD), Bureau of Operation"
+    },
+    {
+     "name": "Request For Insecticide Application (Target Outdoor/Indoor Spraying)",
+     "summary": "Mosquito spraying in homes, schools and public places at high risk of dengue.",
+     "for": [
+      "local-governments",
+      "everyone"
+     ],
+     "category": "health",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Formal request letter addressed to the Minister of Health – BARMM through the IDC Dengue Program Coordinator, signed by the LCE or MHO (from the Municipal/City Health Office or the Mayor)",
+      "Recent dengue surveillance or case report supporting the need for spraying (from the RHU, MHO/CHO or PHO/IPHO; may come from RESU/DSU reports)",
+      "List of target areas or barangays with location details, population and recent dengue case data (prepared by the MHO/CHO with barangay officials and BHWs)",
+      "Contact person and coordination details: name, position and contact number of the focal person for logistics (designated by the MHO/CHO or PHO/IPHO)"
+     ],
+     "fee": "None",
+     "time": "3 Hours, 45 Minutes",
+     "where": "Infectious Diseases Cluster Disease Unit – Dengue Prevention and Control Program"
+    },
+    {
+     "name": "Provision of Psychological First Aid (PFA), Psychosocial Support Sessions, and Referral",
+     "summary": "Free emotional support, counselling sessions and referral to mental health specialists after a crisis.",
+     "for": [
+      "everyone"
+     ],
+     "category": "health",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Valid ID (from the requesting client)",
+      "Referral letter from another healthcare provider, if applicable",
+      "Formal request letter from the requesting office/agency, if applicable"
+     ],
+     "fee": "None",
+     "time": "1 Day, 2 Hours, 10 Minutes",
+     "where": "Mental Health Unit – Mental and Psychosocial Support (MHPSS)"
+    },
+    {
+     "name": "Mental Emergency Response Services",
+     "summary": "A mental health team sent to help people cope during and after disasters, conflict or outbreaks.",
+     "for": [
+      "local-governments"
+     ],
+     "category": "health",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Formal request letter, if possible; verbal or immediate notification accepted in crises/disasters (from the requesting client)",
+      "Description of the emergency and type of support required",
+      "Location and estimated number of affected individuals"
+     ],
+     "fee": "None",
+     "time": "6 Days, 5 Hours",
+     "where": "Mental Health Unit – Mental and Psychosocial Support (MHPSS)"
+    },
+    {
+     "name": "Quick Response in Nutrition in Emergencies (NiE)",
+     "summary": "Emergency nutrition help, food supplements and assessment for young children and mothers after disasters.",
+     "for": [
+      "local-governments"
+     ],
+     "category": "health",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Request letter addressed to the Minister (from the requesting client)",
+      "Optional: situation report with number of children under 5 and pregnant and lactating women"
+     ],
+     "fee": "None",
+     "time": "7 Days, 17 Hours, 30 Minutes",
+     "where": "Nutrition Division – Technical Services"
+    },
+    {
+     "name": "Request for the Conduct of Eye Screening and Provision of Reading Glasses",
+     "summary": "Free community eye check-ups, with reading glasses for those who need them.",
+     "for": [
+      "everyone"
+     ],
+     "category": "health",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Formal letter of request addressed to the Head of Office with proposed date, venue and target beneficiaries (from the school, office or community requesting eye screening)"
+     ],
+     "fee": "None",
+     "time": "10 Days",
+     "where": "Non-Communicable Diseases Cluster – Prevention of Blindness Program"
+    },
+    {
+     "name": "Referral of Rabies Prone Exposure Patient to ABTCs",
+     "summary": "People bitten or scratched by animals get referred to the nearest animal bite treatment centre.",
+     "for": [
+      "everyone"
+     ],
+     "category": "health",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Animal Bite Referral Form (from the Infectious Diseases Cluster Disease Unit – Rabies Prevention and Control Program)"
+     ],
+     "fee": "None",
+     "time": "30 Minutes",
+     "where": "Infectious Diseases Cluster Disease Unit – Rabies Prevention and Control Program"
+    },
+    {
+     "name": "Issuance and Re-Issuance of Certificate of Quality for Animal Bite Treatment Center (ABTC)/ Animal Bite Clinic (ABC)",
+     "summary": "Health facilities get certified as animal bite treatment centres or clinics.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Letter of Intent on Certification (from the requesting client)",
+      "Filled-out Self-Assessment Form Tool (from the Technical Building – Rabies Prevention and Control Program)"
+     ],
+     "fee": "None",
+     "time": "18 Days, 10 Minutes",
+     "where": "Infectious Diseases Cluster Disease Unit – Rabies Prevention and Control Program"
+    },
+    {
+     "name": "Request for TB Active Case Finding",
+     "summary": "A mobile X-ray van screens communities for tuberculosis with free chest X-rays.",
+     "for": [
+      "local-governments"
+     ],
+     "category": "health",
+     "source": "https://moh.bangsamoro.gov.ph/wp-content/uploads/2026/10/CITIZENS-CHARTER_MOH_V1.pdf",
+     "requirements": [
+      "Request letter (from the requesting client)",
+      "ACF tool checklist (from the requesting client)"
+     ],
+     "fee": "None",
+     "time": "8 Days, 2 Hours",
+     "where": "Infectious Diseases Cluster Disease Unit – Bangsamoro Tuberculosis Program"
+    }
+   ],
    "sources": [
     {
      "label": "MOH-BARMM, Citizen's Charter page, 2026",
@@ -486,6 +1083,9 @@
     "label": "MSSD, Citizen's Charter (frontline services), 2025",
     "url": "https://mssd.barmm.gov.ph/citizens-charter/"
    },
+   "charterStatus": "published",
+   "charterNote": null,
+   "charterPage": null,
    "programs": [
     {
      "name": "Angat Bangsamoro: Kabataan Tungo sa Karunungan (ABaKa)",
@@ -494,6 +1094,7 @@
       "students",
       "families-in-need"
      ],
+     "category": "education",
      "source": "https://mssd.barmm.gov.ph/angat-bangsamoro-kabataan-tungo-sa-karunungan-abaka/",
      "how": "Apply at an MSSD regional, provincial or municipal office with an ID, proof of enrollment and a barangay certificate of residency or indigency."
     },
@@ -503,6 +1104,7 @@
      "for": [
       "families-in-need"
      ],
+     "category": "livelihood",
      "source": "https://mssd.barmm.gov.ph/citizens-charter/",
      "how": null
     },
@@ -513,6 +1115,7 @@
       "families-in-need",
       "workers"
      ],
+     "category": "livelihood",
      "source": "https://mssd.barmm.gov.ph/bangsamoro-sagip-kabuhayan-program-bsk/",
      "how": "Usually by referral; submit a valid ID, a livelihood project proposal and a General Intake Sheet for assessment by the municipal or city social welfare officer."
     },
@@ -523,6 +1126,7 @@
       "families-in-need",
       "women"
      ],
+     "category": "assistance",
      "source": "https://mssd.barmm.gov.ph/dakila-program/",
      "how": "Solo parents are assessed by MSSD social workers."
     },
@@ -533,6 +1137,7 @@
       "persons-with-disability",
       "families-in-need"
      ],
+     "category": "assistance",
      "source": "https://mssd.barmm.gov.ph/kalinga-program/",
      "how": "Applicants are assessed on how much difficulty they have in six areas (seeing, hearing, walking, remembering, self-care, communicating); a PWD ID or medical certificate may be required."
     },
@@ -543,6 +1148,7 @@
       "senior-citizens",
       "families-in-need"
      ],
+     "category": "assistance",
      "source": "https://mssd.barmm.gov.ph/social-pension-for-indigent-senior-citizens/",
      "how": "Submit an application form and a copy of your OSCA ID (or birth certificate or other ID) through your barangay senior citizens association, OSCA, the city/municipal social welfare office or the local MSSD office."
     },
@@ -555,6 +1161,7 @@
       "indigenous-peoples",
       "former-combatants"
      ],
+     "category": "requests",
      "source": "https://mssd.barmm.gov.ph/free-birth-registration/",
      "how": null
     },
@@ -565,6 +1172,7 @@
       "children",
       "families-in-need"
      ],
+     "category": "assistance",
      "source": "https://mssd.barmm.gov.ph/citizens-charter/",
      "how": null
     },
@@ -575,6 +1183,7 @@
       "women",
       "families-in-need"
      ],
+     "category": "health",
      "source": "https://mssd.barmm.gov.ph/citizens-charter/",
      "how": null
     },
@@ -585,6 +1194,7 @@
       "senior-citizens",
       "families-in-need"
      ],
+     "category": "health",
      "source": "https://mssd.barmm.gov.ph/citizens-charter/",
      "how": null
     },
@@ -594,6 +1204,7 @@
      "for": [
       "families-in-need"
      ],
+     "category": "assistance",
      "source": "https://mssd.barmm.gov.ph/citizens-charter/",
      "how": null
     },
@@ -603,6 +1214,7 @@
      "for": [
       "families-in-need"
      ],
+     "category": "assistance",
      "source": "https://mssd.barmm.gov.ph/citizens-charter/",
      "how": null
     }
@@ -615,6 +1227,7 @@
       "patients",
       "families-in-need"
      ],
+     "category": "health",
      "source": "https://mssd.barmm.gov.ph/citizens-charter/",
      "requirements": [
       "Medical certificate or abstract",
@@ -634,6 +1247,7 @@
       "patients",
       "families-in-need"
      ],
+     "category": "health",
      "source": "https://mssd.barmm.gov.ph/citizens-charter/",
      "requirements": [
       "Laboratory request with date, doctor's signature and license number",
@@ -652,6 +1266,7 @@
       "patients",
       "senior-citizens"
      ],
+     "category": "health",
      "source": "https://mssd.barmm.gov.ph/citizens-charter/",
      "requirements": [
       "Price quotation of the device from a clinic or supplier",
@@ -669,6 +1284,7 @@
      "for": [
       "families-in-need"
      ],
+     "category": "assistance",
      "source": "https://mssd.barmm.gov.ph/citizens-charter/",
      "requirements": [
       "Death certificate",
@@ -687,6 +1303,7 @@
       "patients",
       "families-in-need"
      ],
+     "category": "health",
      "source": "https://mssd.barmm.gov.ph/citizens-charter/",
      "requirements": [
       "Prescription with date, doctor's signature and license number (valid for 2 months)",
@@ -729,6 +1346,9 @@
     "label": "MAFAR, Citizen's Charter (posted as 2024 2nd Edition; document says updated as of January 2021)",
     "url": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf"
    },
+   "charterStatus": "published",
+   "charterNote": null,
+   "charterPage": null,
    "programs": [
     {
      "name": "Basic Integration for Harmonized Intervention (BIHI)",
@@ -736,6 +1356,7 @@
      "for": [
       "farmers"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/basic-integration-for-harmonized-intervention/",
      "how": null
     },
@@ -745,6 +1366,7 @@
      "for": [
       "farmers"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/corn-program/",
      "how": null
     },
@@ -754,6 +1376,7 @@
      "for": [
       "farmers"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/high-value-crops-development-program/",
      "how": null
     },
@@ -763,6 +1386,7 @@
      "for": [
       "farmers"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/organic-agriculture-program/",
      "how": null
     },
@@ -774,6 +1398,7 @@
       "women",
       "cooperatives"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/integrated-and-sustainable-development-for-aquaculture-capture/",
      "how": null
     },
@@ -783,6 +1408,7 @@
      "for": [
       "farmers"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/land-distribution-and-development-for-the-upliftment-of-poor-arbs/",
      "how": null
     },
@@ -793,6 +1419,7 @@
       "farmers",
       "cooperatives"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/arccess/",
      "how": null
     },
@@ -804,6 +1431,7 @@
       "fisherfolk",
       "cooperatives"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/special-development-fund/",
      "how": null
     },
@@ -814,6 +1442,7 @@
       "farmers",
       "fisherfolk"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/philippine-rural-development-project/",
      "how": null
     },
@@ -824,6 +1453,7 @@
       "farmers",
       "fisherfolk"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/08/new-RSBS-FORMS.pdf",
      "how": "Download the RSBSA form from the MAFAR website and submit it to MAFAR."
     }
@@ -837,6 +1467,7 @@
       "fisherfolk",
       "businesses"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Buyer or seller matching form (given at the office)"
@@ -852,6 +1483,7 @@
       "farmers",
       "fisherfolk"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Inquiry form (given at the office)"
@@ -866,6 +1498,7 @@
      "for": [
       "everyone"
      ],
+     "category": "permits",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Rabies ID",
@@ -882,6 +1515,7 @@
      "for": [
       "everyone"
      ],
+     "category": "permits",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Valid ID",
@@ -897,6 +1531,7 @@
      "for": [
       "farmers"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Request letter approved by the Minister",
@@ -913,6 +1548,7 @@
      "for": [
       "farmers"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Project proposal endorsed by the MAFAR municipal officer and provincial head",
@@ -929,6 +1565,7 @@
      "for": [
       "farmers"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Crop damage report",
@@ -946,6 +1583,7 @@
      "for": [
       "farmers"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Request letter approved by the Minister",
@@ -962,6 +1600,7 @@
      "for": [
       "everyone"
      ],
+     "category": "community",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Request letter approved by the Minister and endorsed by the Center Manager"
@@ -976,6 +1615,7 @@
      "for": [
       "farmers"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Request letter approved by the Minister and released order by the Center Manager"
@@ -990,6 +1630,7 @@
      "for": [
       "farmers"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Request letter approved by the Minister and endorsed by the Center Manager"
@@ -1004,6 +1645,7 @@
      "for": [
       "farmers"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Request letter approved by the Minister and endorsed by the Center Manager",
@@ -1019,6 +1661,7 @@
      "for": [
       "farmers"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Request letter approved by the Minister and endorsed by the Center Manager"
@@ -1033,6 +1676,7 @@
      "for": [
       "farmers"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Request letter approved by the Minister and endorsed by the Center Manager",
@@ -1049,6 +1693,7 @@
       "fisherfolk",
       "businesses"
      ],
+     "category": "permits",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Regional BFAR application form for fishing vessel license",
@@ -1069,6 +1714,7 @@
       "fisherfolk",
       "workers"
      ],
+     "category": "permits",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Community Tax Certificate",
@@ -1087,6 +1733,7 @@
       "fisherfolk",
       "businesses"
      ],
+     "category": "permits",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Fishing log book",
@@ -1104,6 +1751,7 @@
       "fisherfolk",
       "businesses"
      ],
+     "category": "permits",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "FLA application form",
@@ -1124,6 +1772,7 @@
       "fisherfolk",
       "businesses"
      ],
+     "category": "permits",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Applicable permits or certificates (such as aquatic wildlife permits, health certificate, vessel license, auxiliary invoice)"
@@ -1138,6 +1787,7 @@
      "for": [
       "businesses"
      ],
+     "category": "permits",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Sanitary permit and business permit from the LGU",
@@ -1157,6 +1807,7 @@
       "fisherfolk",
       "businesses"
      ],
+     "category": "permits",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Stock samples to be transported",
@@ -1173,6 +1824,7 @@
       "fisherfolk",
       "businesses"
      ],
+     "category": "permits",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Aquaculture farm registration form"
@@ -1187,6 +1839,7 @@
      "for": [
       "fisherfolk"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Water, fish or shrimp samples"
@@ -1201,6 +1854,7 @@
      "for": [
       "fisherfolk"
      ],
+     "category": "farming",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Water sample"
@@ -1215,6 +1869,7 @@
      "for": [
       "farmers"
      ],
+     "category": "requests",
      "source": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/06/CITIZENS-CHARTER-FINAL-rev01.pdf",
      "requirements": [
       "Valid ID",
@@ -1255,6 +1910,9 @@
     "email": "mpw@bangsamoro.gov.ph"
    },
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen’s Charter was found on its website.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Expanded Bangsamoro Advanced Road Mapping and Management (E-BARMM) System",
@@ -1326,6 +1984,9 @@
    "mandate": "Supervises the region's local governments (provinces, cities, municipalities, barangays) and builds their capacity, including in peace and order, public safety and disaster preparedness.",
    "contact": null,
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen’s Charter was found on its website.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Support to Local Moral Governance (SLMG)",
@@ -1393,6 +2054,9 @@
     "label": "MHSD, Citizen's Charter Handbook, 1st edition, January 2025",
     "url": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf"
    },
+   "charterStatus": "published",
+   "charterNote": null,
+   "charterPage": null,
    "programs": [
     {
      "name": "SALAM Homes (Bangsamoro Affordable Housing Project)",
@@ -1400,6 +2064,7 @@
      "for": [
       "workers"
      ],
+     "category": "housing",
      "source": "https://bangsamoro.gov.ph/news/latest-news/salam-homes-mhsd-awards-affordable-housing-to-barmm-employees/",
      "how": "For BARMM employees who are active Pag-IBIG members, including contractual and job order staff; start with the MHSD preliminary qualification for a Pag-IBIG housing loan."
     },
@@ -1411,6 +2076,7 @@
       "families-in-need",
       "indigenous-peoples"
      ],
+     "category": "housing",
      "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-builds-1707-free-housing-units-2586-more-underway/",
      "how": "Beneficiaries (former MILF and MNLF combatants, the poorest of the poor, victims of calamity or conflict, indigenous peoples, displaced persons) are identified and selected with partners such as LGUs."
     }
@@ -1422,6 +2088,7 @@
      "for": [
       "local-governments"
      ],
+     "category": "government",
      "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
      "requirements": [
       "Letter stating the request, addressed to MHSD, with supporting documents if needed"
@@ -1436,6 +2103,7 @@
      "for": [
       "local-governments"
      ],
+     "category": "government",
      "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
      "requirements": [
       "Request letter with a brief description of the activity"
@@ -1450,6 +2118,7 @@
      "for": [
       "local-governments"
      ],
+     "category": "government",
      "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
      "requirements": [
       "Request letter for technical inputs"
@@ -1465,6 +2134,7 @@
       "businesses",
       "everyone"
      ],
+     "category": "permits",
      "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
      "requirements": [
       "Notarized application form for zoning certification",
@@ -1483,6 +2153,7 @@
       "businesses",
       "everyone"
      ],
+     "category": "permits",
      "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
      "requirements": [
       "Notarized application form",
@@ -1504,6 +2175,7 @@
      "for": [
       "businesses"
      ],
+     "category": "permits",
      "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
      "requirements": [
       "Notarized application form",
@@ -1524,6 +2196,7 @@
      "for": [
       "businesses"
      ],
+     "category": "permits",
      "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
      "requirements": [
       "Sworn registration statement",
@@ -1546,6 +2219,7 @@
      "for": [
       "businesses"
      ],
+     "category": "permits",
      "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
      "requirements": [
       "Application letter",
@@ -1566,6 +2240,7 @@
       "businesses",
       "workers"
      ],
+     "category": "permits",
      "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
      "requirements": [
       "Two recent 2x2 color photos",
@@ -1585,6 +2260,7 @@
      "for": [
       "everyone"
      ],
+     "category": "permits",
      "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
      "requirements": [
       "Notarized articles of incorporation signed by all incorporators",
@@ -1607,6 +2283,7 @@
       "workers",
       "everyone"
      ],
+     "category": "housing",
      "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
      "requirements": [
       "Application form (Housing Loan Section)",
@@ -1625,6 +2302,7 @@
      "for": [
       "businesses"
      ],
+     "category": "suppliers",
      "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
      "requirements": [
       "Letter of intent",
@@ -1644,6 +2322,7 @@
      "for": [
       "businesses"
      ],
+     "category": "suppliers",
      "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
      "requirements": [
       "Obligation request and status",
@@ -1662,6 +2341,7 @@
      "for": [
       "workers"
      ],
+     "category": "requests",
      "source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf",
      "requirements": [
       "Request form"
@@ -1708,6 +2388,9 @@
     "email": "menre@bangsamoro.gov.ph"
    },
    "charter": null,
+   "charterStatus": "coming",
+   "charterNote": "Its Citizen’s Charter page says “This page will be updated soon.”",
+   "charterPage": "https://menre.bangsamoro.gov.ph/?page_id=127",
    "programs": [
     {
      "name": "Integrated Bangsamoro Greening Program (IBGP)",
@@ -2040,6 +2723,9 @@
     "email": "mtit@bangsamoro.gov.ph"
    },
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen’s Charter was found on its website.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Barangay Micro Business Enterprise (BMBE) registration assistance",
@@ -2138,6 +2824,9 @@
     "email": null
    },
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen’s Charter was found on its website.",
+   "charterPage": null,
    "programs": [
     {
      "name": "BLTO Amnesty Program 2026",
@@ -2317,6 +3006,9 @@
     "label": "MOST-BARMM, Citizen's Charter Handbook, 2023 1st Edition",
     "url": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view"
    },
+   "charterStatus": "draft",
+   "charterNote": "The only charter online is marked as a draft; its services are listed from that draft.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Bangsamoro Assistance for Science Education (BASE) and BASE-Merit",
@@ -2324,6 +3016,7 @@
      "for": [
       "students"
      ],
+     "category": "education",
      "source": "https://most.bangsamoro.gov.ph/scholarships-grants-2/",
      "how": "Pass the MOST scholarship exam, then apply online or at a MOST provincial office."
     },
@@ -2334,6 +3027,7 @@
       "students",
       "former-combatants"
      ],
+     "category": "education",
      "source": "https://most.bangsamoro.gov.ph/scholarships-grants-2/",
      "how": "Submit the MASE form with enrollment, birth, unit-base and indigency certificates."
     },
@@ -2343,6 +3037,7 @@
      "for": [
       "students"
      ],
+     "category": "education",
      "source": "https://most.bangsamoro.gov.ph/scholarships-grants-2/",
      "how": "Submit the BSASE form with enrollment, grades, birth, indigency papers and an MP recommendation letter."
     },
@@ -2353,6 +3048,7 @@
       "workers",
       "students"
      ],
+     "category": "education",
      "source": "https://most.bangsamoro.gov.ph/scholarships-grants-2/",
      "how": null
     },
@@ -2362,6 +3058,7 @@
      "for": [
       "workers"
      ],
+     "category": "education",
      "source": "https://most.bangsamoro.gov.ph/scholarships-grants-2/",
      "how": null
     },
@@ -2372,6 +3069,7 @@
       "businesses",
       "cooperatives"
      ],
+     "category": "business",
      "source": "https://most.bangsamoro.gov.ph/sts/",
      "how": "Request a Technology Needs Assessment at a Provincial Science and Technology Center."
     },
@@ -2383,6 +3081,7 @@
       "researchers",
       "local-governments"
      ],
+     "category": "business",
      "source": "https://most.bangsamoro.gov.ph/regional-standards-and-halal-testing-laboratory/",
      "how": null
     },
@@ -2393,6 +3092,7 @@
       "students",
       "teachers"
      ],
+     "category": "education",
      "source": "https://most.bangsamoro.gov.ph/science-education/",
      "how": null
     },
@@ -2402,6 +3102,7 @@
      "for": [
       "researchers"
      ],
+     "category": "education",
      "source": "https://most.bangsamoro.gov.ph/research-development-and-innovation/",
      "how": "Answer a MOST call for proposals."
     },
@@ -2411,6 +3112,7 @@
      "for": [
       "local-governments"
      ],
+     "category": "government",
      "source": "https://most.bangsamoro.gov.ph/drrm/",
      "how": null
     },
@@ -2421,6 +3123,7 @@
       "businesses",
       "researchers"
      ],
+     "category": "business",
      "source": "https://most.bangsamoro.gov.ph/programs-and-services/",
      "how": null
     }
@@ -2432,6 +3135,7 @@
      "for": [
       "students"
      ],
+     "category": "education",
      "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
      "requirements": [
       "Scholarship application form (online e-Scholarship Application System or from MOST offices)",
@@ -2456,6 +3160,7 @@
      "for": [
       "students"
      ],
+     "category": "education",
      "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
      "requirements": [
       "Examination permit/password (claim at MOST provincial or regional office)",
@@ -2471,6 +3176,7 @@
      "for": [
       "students"
      ],
+     "category": "education",
      "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
      "requirements": [
       "Certificate of enrolment and study load",
@@ -2488,6 +3194,7 @@
       "students",
       "workers"
      ],
+     "category": "education",
      "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
      "requirements": [
       "Letter of request for clearance",
@@ -2504,6 +3211,7 @@
      "for": [
       "teachers"
      ],
+     "category": "education",
      "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
      "requirements": [
       "List of schools (MBHTE)",
@@ -2523,6 +3231,7 @@
       "teachers",
       "researchers"
      ],
+     "category": "education",
      "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
      "requirements": [
       "Letter of intent (1 original)",
@@ -2539,6 +3248,7 @@
       "students",
       "teachers"
      ],
+     "category": "education",
      "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
      "requirements": [
       "Letter of intent (1 original)"
@@ -2554,6 +3264,7 @@
       "businesses",
       "cooperatives"
      ],
+     "category": "business",
      "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
      "requirements": [
       "Request letter allowing MOST to assess the business",
@@ -2571,6 +3282,7 @@
       "businesses",
       "cooperatives"
      ],
+     "category": "business",
      "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
      "requirements": [
       "Signed technical request form (letter of intent)",
@@ -2591,6 +3303,7 @@
       "businesses",
       "everyone"
      ],
+     "category": "business",
      "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
      "requirements": [
       "Letter of intent",
@@ -2612,6 +3325,7 @@
       "researchers",
       "local-governments"
      ],
+     "category": "business",
      "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
      "requirements": [
       "Nondisclosure form",
@@ -2631,6 +3345,7 @@
      "for": [
       "researchers"
      ],
+     "category": "education",
      "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
      "requirements": [
       "MOST R&D Form A detailed research proposal",
@@ -2647,6 +3362,7 @@
      "for": [
       "local-governments"
      ],
+     "category": "government",
      "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
      "requirements": [
       "Request letter to the Minister",
@@ -2665,6 +3381,7 @@
      "for": [
       "everyone"
      ],
+     "category": "community",
      "source": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view",
      "requirements": [
       "Request form"
@@ -2710,25 +3427,413 @@
     "phone": "(064) 557 2717",
     "email": "mfbm@bangsamoro.gov.ph"
    },
-   "charter": null,
+   "charter": {
+    "label": "MFBM, Citizen's Charter, 2024",
+    "url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf"
+   },
+   "charterStatus": "published",
+   "charterNote": null,
+   "charterPage": null,
    "programs": [],
    "services": [
     {
-     "name": "Release of LGU shares in national taxes, fees and charges",
-     "summary": "The Bangsamoro Treasury Office releases local governments' shares of taxes collected in the region.",
+     "name": "Request for Legal Opinions",
+     "summary": "Legal opinion from the ministry's lawyers on budget-related issues, contracts and agreements.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "Letter or memorandum of request for comments, with digital copy of the contracts (from the originating unit or requesting party)",
+      "Supporting documents such as contracts, circulars, executive issuances, copy of the memorandum of understanding (one photocopy) (from the originating unit or requesting party)"
+     ],
+     "fee": "None",
+     "time": "5 days",
+     "where": "Legal and Legislative Liaison Division (LLLD)"
+    },
+    {
+     "name": "Submission of Documents to the Ministry",
+     "summary": "Hand in letters, requests and other documents for the ministry and get a stamped receiving copy.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "Documents addressed to MFBM officials/employees/office and one (1) receiving copy, e.g., letter, memorandum, requests, order (from the client)"
+     ],
+     "fee": "None",
+     "time": "5 hours and 30 minutes",
+     "where": "Administrative Division-Records Management Section (AD-RMS)"
+    },
+    {
+     "name": "Request for Certified True Copy of Records/Documents",
+     "summary": "Get a certified true copy of an official document released by the ministry.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "Properly accomplished MFBM Request Slip Form (from the AD-RMS Releasing Records Officer)",
+      "Valid ID",
+      "Authorization Letter, if requesting party is a representative"
+     ],
+     "fee": "None",
+     "time": "4 hours",
+     "where": "Administrative Division-Records Management Section (AD-RMS)"
+    },
+    {
+     "name": "Processing of Request for Service Record/s and/or Certification/s",
+     "summary": "Current and former ministry employees get a service record or employment certificate.",
+     "for": [
+      "workers"
+     ],
+     "category": "requests",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "HRMD-PMS Transaction Request Form (from HRMD-PMS)",
+      "Office ID",
+      "Authorization (for second person)"
+     ],
+     "fee": "None",
+     "time": "4 hours",
+     "where": "Human Resource Management Division-Personnel Management Section (HRMD-PMS)"
+    },
+    {
+     "name": "Request for Employees' Certified True Copy/ies of Record/s",
+     "summary": "Current and former ministry employees get certified copies of their appointment, payroll and other records.",
+     "for": [
+      "workers"
+     ],
+     "category": "requests",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "HRMD-PMS Transaction Request Form (from HRMD-PMS)",
+      "Office ID",
+      "Authorization (for second person)"
+     ],
+     "fee": "None",
+     "time": "4 hours",
+     "where": "Human Resource Management Division-Personnel Management Section (HRMD-PMS)"
+    },
+    {
+     "name": "Request for Copy of Validated Notice of Transfer Allocation (NTA)",
+     "summary": "Ministries get a bank-validated copy of the notice showing funds transferred to their accounts.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "The Advice of Notice of Cash Allocation Issued (ANCAI) and corresponding Monthly Requirements Schedule (MRS) (the MFBM Records Section transmits the ANCAI to the ministries/offices)"
+     ],
+     "fee": "None",
+     "time": "5 working days",
+     "where": "Bangsamoro Treasury Office"
+    },
+    {
+     "name": "Request for the Release of LGU Share in National Taxes, Fees and Charges",
+     "summary": "Local governments receive their share of national taxes, fees and charges collected in the Bangsamoro.",
      "for": [
       "local-governments"
      ],
-     "source": "https://mfbm.bangsamoro.gov.ph/bangsamoro-treasury-office-bto/faqs-bto/",
+     "category": "government",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
      "requirements": [
-      "Affidavit (for first release and change of chief executive)",
-      "Approved appropriation ordinance for the shares previously released",
-      "Quarterly or annual report on trust fund use and project status",
-      "Active authorized government depository bank account with LBP, DBP or AIIB"
+      "Sanggunian Approved Appropriation Ordinance of the previous shares released (from the LGU Sanggunian, may be requested from the Secretary)",
+      "Quarterly Report on Trust Fund Utilization and Status of Project Implementation (from the LGU Finance Department, may be requested from the Municipal Treasurer or Accountant)",
+      "Annual Report of Trust Fund Utilization (from the LGU Finance Department, may be requested from the Municipal Treasurer or Accountant)"
      ],
-     "fee": null,
-     "time": null,
+     "fee": "None",
+     "time": "7 working days",
      "where": "Bangsamoro Treasury Office"
+    },
+    {
+     "name": "Request for Official Receipt/Certification of Deposits",
+     "summary": "Ministries get an official receipt or certificate for collections they remitted to the Bangsamoro Treasury.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "Properly filled-out Remittance Form and Attachment or List of Deposited Collections (form may be requested by email at btofrfdivision@gmail.com and filled out by the remitting client)",
+      "Cash/Copy of Deposit Slip (from the client / validated deposit slip from the Authorized Government Servicing Banks (AGSBs))",
+      "Check and Bank Received Check Advice (from the client's AGSB)"
+     ],
+     "fee": "None",
+     "time": "30 minutes",
+     "where": "Bangsamoro Treasury Office - Fund Receipt and Fiscal Division-Local Remittance Receipt Section (FRFD-LRRS)"
+    },
+    {
+     "name": "Purchase/Issuance of Accountable Forms",
+     "summary": "Ministries buy official receipt booklets and get travel tax or parking fee tickets.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "Properly filled-out Purchase Order (form available for download in the COA website, www.coa.gov.ph)",
+      "Cash/Copy of Deposit Slip (from the client / validated deposit slip from the Authorized Government Depository Banks (AGDBs))",
+      "Check and Bank Received Check Advice (prepared by clients and received by its Authorized Depository Bank)"
+     ],
+     "fee": "₱300 per unit",
+     "time": "40 minutes",
+     "where": "Bangsamoro Treasury Office - Fund Receipt and Fiscal Division-Local Remittance Receipt Section (FRFD-LRRS)"
+    },
+    {
+     "name": "Request for Collection, Fund Release and Other Related Information",
+     "summary": "Get reports on Bangsamoro collections and fund releases, unless confidential.",
+     "for": [
+      "everyone",
+      "government-offices"
+     ],
+     "category": "requests",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "Official written communication or request form (request form may be requested through the BTO email, bto@bangsamoro.gov.ph)"
+     ],
+     "fee": "None",
+     "time": "5 days",
+     "where": "Bangsamoro Treasury Office"
+    },
+    {
+     "name": "Requests for Personnel Services Fund",
+     "summary": "Ministries get funds released for salaries and benefits of new, promoted or transferred staff.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "Special Budget Request (1 original and 1 photocopy) (from the requesting M/O/A, per Bangsamoro Budget Circular 2021-04: Omnibus Guidelines on Execution of Personnel Services Fund)",
+      "Approved Budget Execution Documents (1 & 3) (1 original and 1 photocopy) (from the requesting M/O/A, per Bangsamoro Budget Circular 2021-04: Omnibus Guidelines on Execution of Personnel Services Fund)",
+      "Appointment Paper (2 photocopies) (from the requesting M/O/A, per Bangsamoro Budget Circular 2021-04: Omnibus Guidelines on Execution of Personnel Services Fund)",
+      "Assumption of Duty (1 original and 1 photocopy) (from the requesting M/O/A, per Bangsamoro Budget Circular 2021-04: Omnibus Guidelines on Execution of Personnel Services Fund)",
+      "Oath of Office (1 original and 1 photocopy) (from the requesting M/O/A, per Bangsamoro Budget Circular 2021-04: Omnibus Guidelines on Execution of Personnel Services Fund)",
+      "Service Record (1 original and 1 photocopy) (from the requesting M/O/A, per Bangsamoro Budget Circular 2021-04: Omnibus Guidelines on Execution of Personnel Services Fund)",
+      "Computation (1 original and 1 photocopy) (from the requesting M/O/A, per Bangsamoro Budget Circular 2021-04: Omnibus Guidelines on Execution of Personnel Services Fund)",
+      "Deployment Order (for MBHTE only) (2 photocopies) (from the requesting M/O/A, per Bangsamoro Budget Circular 2021-04: Omnibus Guidelines on Execution of Personnel Services Fund)"
+     ],
+     "fee": "None",
+     "time": "6 working days, 4 hours and 45 minutes (up to 50 employees); 7 working days, 4 hours, and 45 minutes (51-100 employees); 8 working days, 4 hours, and 45 minutes (more than 100 employees)",
+     "where": "Bangsamoro Budget Office (BBO) - Organization and Systems Improvement Division (OSID) and Budget Preparation and Execution Division (BEPD)"
+    },
+    {
+     "name": "Request for Pension and Gratuity Fund",
+     "summary": "Ministries get funds released for terminal leave and retirement benefits of their personnel.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "Special Budget Request (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "List of Retirees to be paid (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Updated Service Record (2 photocopies) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Latest Notice of Salary Adjustment (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Letter of Intent to Retire (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Approved Application Letter for Retirement (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Statement of Leave Credits Earned certified by HRMO (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Employees Leave Card (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "NSO Marriage Certificate for change of name of married women (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "GSIS Clearance (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Appointment (2 photocopies) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Clearance Form from employer (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)"
+     ],
+     "fee": "None",
+     "time": "8 working days, 4 hours, 45 minutes (up to 50 employees); 9 working days, 4 hours, 45 minutes (51-100 employees); 10 working days, 4 hours, and 45 minutes (more than 100 employees)",
+     "where": "Bangsamoro Budget Office (BBO) - Organization and Systems Improvement Division (OSID) and Budget Preparation and Execution Division (BEPD)"
+    },
+    {
+     "name": "Request for Personal Services Itemization and Plantilla of Personnel",
+     "summary": "Ministries get an approved copy of their staffing list (PSIPOP) to submit to the Civil Service Commission.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "Hard copy of Summary of Incumbent and PSIPOP (1 original and 1 photocopy) (from the requesting MOA, per Bangsamoro Budget Circular 2021-04: Omnibus Guidelines on Execution of Personnel Services Fund)",
+      "Database of Summary of Incumbent and PSIPOP (1 original soft copy) (from the requesting MOA, per Bangsamoro Budget Circular 2021-04: Omnibus Guidelines on Execution of Personnel Services Fund)"
+     ],
+     "fee": "None",
+     "time": "26 days and 5 minutes",
+     "where": "Bangsamoro Budget Office (BBO) - Organization and Systems Improvement Division (OSID) and Budget Preparation and Execution Division (BEPD)"
+    },
+    {
+     "name": "Request for Maintenance and Other Operating Expenses - For Later Release",
+     "summary": "Ministries get withheld operating funds released once conditions are met.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "Special Budget Request (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Project Implementation Plans for non-infrastructure (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Financial Plan - Budget Execution Document No. 1 (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Physical Plan - Budget Execution Document No. 2 (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Monthly Disbursement Plan - Budget Execution Document No. 3 (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Any documents specified in Special Provisions of General Appropriation Act of the Bangsamoro (GAAB) for the related Fiscal Year (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)"
+     ],
+     "fee": "None",
+     "time": "3 days, 7 hours, and 40 minutes",
+     "where": "Bangsamoro Budget Office (BBO) - Budget Execution and Preparation Division (BEPD)"
+    },
+    {
+     "name": "Request for the Authority to Purchase Motor Vehicle",
+     "summary": "Ministries get authority to buy a government vehicle before procurement.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "Special Budget Request (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Attachments (specifications / units) (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)"
+     ],
+     "fee": "None",
+     "time": "3 days, 5 hours, and 40 minutes",
+     "where": "Bangsamoro Budget Office (BBO) - Budget Execution and Preparation Division (BEPD)"
+    },
+    {
+     "name": "Request for Funds for Capital Outlay - Non-Infrastructure (Transportation Equipment and Intangible Assets)",
+     "summary": "Ministries get funds released to buy vehicles, equipment and software.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "Special Budget Request (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Attachments (specifications / units) (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Financial Plan - Budget Execution Document No. 1 (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Physical Plan - Budget Execution Document No. 2 (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Monthly Disbursement Plan - Budget Execution Document No. 3 (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Authority to Purchase Motor Vehicle (APMV), if Transportation Equipment request (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)"
+     ],
+     "fee": "None",
+     "time": "3 days, 7 hours and 40 minutes",
+     "where": "Bangsamoro Budget Office (BBO) - Budget Execution and Preparation Division (BEPD)"
+    },
+    {
+     "name": "Request for Funds for Capital Outlay - Infrastructure",
+     "summary": "Ministries get withheld funds released for building and infrastructure projects.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "Special Budget Request (3 original copies) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Program of Works (POW) (1 original copy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Detailed Engineering Design (DED) (1 original copy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Approved Budget for the Contract (ABC) (1 original copy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Financial Plan - Budget Execution Document No. 1 (1 original copy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Physical Plan - Budget Execution Document No. 2 (1 original copy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Monthly Disbursement Plan - Budget Execution Document No. 3 (1 original copy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)"
+     ],
+     "fee": "None",
+     "time": "9 days, 1 hour, and 45 minutes",
+     "where": "Bangsamoro Budget Office (BBO) - Budget Technical Division (BTD) and Budget Execution and Preparation Division (BEPD)"
+    },
+    {
+     "name": "Request for Quick Response Fund",
+     "summary": "Ministries get emergency quick response funds released on the Chief Minister's order.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "Special Budget Request (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Financial Plan - Budget Execution Document No. 1 (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Physical Plan - Budget Execution Document No. 2 (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Monthly Disbursement Plan - Budget Execution Document No. 3 (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Other attachments as may be needed (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)"
+     ],
+     "fee": "None",
+     "time": "4 days, 5 hours, and 40 minutes",
+     "where": "Bangsamoro Budget Office (BBO) - Budget Execution and Preparation Division (BEPD)"
+    },
+    {
+     "name": "Request for Contingent Fund",
+     "summary": "Ministries get funds released for new or urgent projects approved by the Chief Minister.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "OCM Endorsement (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Special Budget Request (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Financial Plan - Budget Execution Document No. 1 (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Physical Plan - Budget Execution Document No. 2 (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Monthly Disbursement Plan - Budget Execution Document No. 3 (1 original and 1 photocopy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)"
+     ],
+     "fee": "None",
+     "time": "9 days, 5 hours, and 40 minutes",
+     "where": "Bangsamoro Budget Office (BBO) - Budget Execution and Preparation Division (BEPD)"
+    },
+    {
+     "name": "Request for Release of Special Development Fund",
+     "summary": "Ministries get funds released for rebuilding and developing conflict-affected communities.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "Special Budget Request (SBR) (prescribed forms may be downloaded at the official MFBM website, https://mfbm.bangsamoro.gov.ph)",
+      "Financial documents: Financial Plan (BED No. 1), Physical Plan (BED No. 2), Monthly Disbursement Program (BED No. 3) (prescribed forms may be downloaded at the official MFBM website, https://mfbm.bangsamoro.gov.ph)",
+      "Project Implementation Plan and Guidelines, for projects charged to MOOE (formatted based on usual forms and standards)",
+      "Specifications of Equipment, for non-infra capital outlay (formatted based on usual forms and standards)",
+      "Approved and duly signed Program of Works, for infrastructure projects (formatted based on usual forms and standards for infrastructure projects)",
+      "Duly approved and signed Budget for the Contract, for infrastructure projects (formatted based on usual forms and standards for infrastructure projects)",
+      "Duly approved and signed detailed engineering design and/or construction plan, for infrastructure projects (formatted based on usual forms and standards for infrastructure projects)"
+     ],
+     "fee": "None",
+     "time": "9-16 days depending on the number of projects submitted in one request",
+     "where": "Planning Division, Bangsamoro Budget Office, and Bangsamoro Treasury Office"
+    },
+    {
+     "name": "Request for Approval of Modification Advice Form",
+     "summary": "Ministries get approval to move budget allotments from one class to another.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "Request letter with justification for the proposed modification (3 original copies) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Modification Advice Form (MAF) signed by the Budget Officer and Minister/Head of Office - Attachment 1-B (2 original copies) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Certification of Actual Deficiency and Sources of Funds signed by the Budget Officer and Minister/Head of Office, identifying the affected P/A/Ps and objects of expenditure (\"From\" and \"To\") - Attachment 3 (1 original copy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Financial Plan - BED No. 1 (1 original copy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Physical Plan - BED No. 2 (1 original copy) (from the requesting MOA, per the Bangsamoro Budget Circular for the related Fiscal Year - Budget Execution Guidelines)",
+      "Latest FAR Nos. 1 and 1A (1 original copy) (from the requesting Ministry/Office/Agency, per the Bangsamoro Budget Circular for the Guidelines on the Budget and Financial Accountability Reports (BFARs))"
+     ],
+     "fee": "None",
+     "time": "9 days, 6 hours, and 5 minutes",
+     "where": "Bangsamoro Budget Office (BBO) - Budget Technical Division (BTD) and Budget Execution and Preparation Division (BEPD)"
+    },
+    {
+     "name": "Request of Responses/Answers to Ministry/Office/Agency Queries and Concerns",
+     "summary": "Ministries get an official answer to their budget and management questions.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "source": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Citizens-Charter-PRINTED-FINAL-OMIN-1.pdf",
+     "requirements": [
+      "Official Letter of Inquiry with attachments, if any (1 original copy) (Records Section)"
+     ],
+     "fee": "None",
+     "time": "21 days, 5 hours, and 50 minutes",
+     "where": "Bangsamoro Budget Office (BBO)"
     }
    ],
    "sources": [
@@ -2760,6 +3865,9 @@
     "email": null
    },
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen’s Charter was found on its website.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Special Program for the Employment of Students (SPES)",
@@ -2984,6 +4092,9 @@
     "email": "mpos@bangsamoro.gov.ph"
    },
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen’s Charter was found on its website.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Alternative Dispute Resolution (ADR)",
@@ -3065,6 +4176,9 @@
    "mandate": "Protects and promotes the rights and well-being of non-Moro indigenous peoples in BARMM, in line with their beliefs, culture and institutions. It replaced the Office for Southern Cultural Communities.",
    "contact": null,
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own was found.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Tawid Pangarap Program",
@@ -3176,6 +4290,9 @@
     "email": "bpda@bangsamoro.gov.ph"
    },
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen’s Charter was found on its website.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Bangsamoro Knowledge Portal",
@@ -3235,6 +4352,9 @@
    "mandate": "Manages development in the Special Geographic Area (the 63 barangays in Cotabato province that joined BARMM): plans, carries out and coordinates programs and supervises the barangays, under the Ministry of the Interior and Local Government.",
    "contact": null,
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own was found.",
+   "charterPage": null,
    "programs": [
     {
      "name": "SGADA sa Barangay",
@@ -3285,6 +4405,9 @@
    "mandate": "Manages Hajj and Umrah matters for pilgrims from the Bangsamoro and protects their rights while on pilgrimage, working with the National Commission on Muslim Filipinos.",
    "contact": null,
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen’s Charter was found on its website.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Manasikul Hajj Program",
@@ -3332,6 +4455,9 @@
    "mandate": "The region's highest Islamic advisory body, led by the Bangsamoro Grand Mufti: it issues fatwas (religious rulings) and religious guidelines and gives Islamic guidance and scholarly consultation to the people of the Bangsamoro.",
    "contact": null,
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen’s Charter was found on its website.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Fatwas and religious guidelines",
@@ -3404,6 +4530,9 @@
     "email": "bhrc@bangsamoro.gov.ph"
    },
    "charter": null,
+   "charterStatus": "coming",
+   "charterNote": "It has a Citizen’s Charter page, but no charter loads on it.",
+   "charterPage": "https://bhrc.bangsamoro.gov.ph/citizens-charter/",
    "programs": [
     {
      "name": "Human Rights Cases Investigation",
@@ -3549,6 +4678,9 @@
     "email": "bcpch@bangsamoro.gov.ph"
    },
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen’s Charter was found on its website.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Bangsamoro Museum and Museum Educational Tour",
@@ -3684,7 +4816,13 @@
     "phone": "(064) 421-2562",
     "email": null
    },
-   "charter": null,
+   "charter": {
+    "label": "BWC, Citizen's Charter, 2026",
+    "url": "https://bwc.bangsamoro.gov.ph/wp-content/uploads/2026/09/BWC-CITIZENS-CHARTER.pdf"
+   },
+   "charterStatus": "published",
+   "charterNote": null,
+   "charterPage": null,
    "programs": [
     {
      "name": "Kabuhayan ni Kaka Bai",
@@ -3692,6 +4830,7 @@
      "for": [
       "women"
      ],
+     "category": "livelihood",
      "source": "https://bwc.bangsamoro.gov.ph/kabuhayan-ni-kaka-bai/",
      "how": null
     },
@@ -3701,6 +4840,7 @@
      "for": [
       "women"
      ],
+     "category": "assistance",
      "source": "https://bwc.bangsamoro.gov.ph/kalinga-alay-sa-kababaihan/",
      "how": null
     },
@@ -3711,6 +4851,7 @@
       "women",
       "children"
      ],
+     "category": "legal",
      "source": "https://bwc.bangsamoro.gov.ph/barangay-vaw-desk/",
      "how": "Go to the VAW desk in your barangay."
     },
@@ -3720,6 +4861,7 @@
      "for": [
       "local-governments"
      ],
+     "category": "government",
      "source": "https://bwc.bangsamoro.gov.ph/barmm-gender-and-development-gad-resource-pool-bgrp/",
      "how": null
     },
@@ -3730,6 +4872,7 @@
       "everyone",
       "women"
      ],
+     "category": "community",
      "source": "https://bwc.bangsamoro.gov.ph/babae-usap-tayo/",
      "how": null
     },
@@ -3740,51 +4883,106 @@
       "everyone",
       "women"
      ],
+     "category": "community",
      "source": "https://bwc.bangsamoro.gov.ph/18-day-campaign-to-end-violence-against-women/",
      "how": null
     }
    ],
    "services": [
     {
-     "name": "Women Associations and Women-Serving Agencies Partnership Accreditation",
-     "summary": "Accreditation of women associations and women-serving agencies as partners of BWC and the Bangsamoro Government.",
+     "name": "Provision of Technical Assistance",
+     "summary": "Expert help from the Women Commission on gender and development work for BARMM offices.",
      "for": [
-      "women"
+      "government-offices"
      ],
-     "source": "https://bwc.bangsamoro.gov.ph/women-association-accreditation/",
+     "category": "government",
+     "source": "https://bwc.bangsamoro.gov.ph/wp-content/uploads/2026/09/BWC-CITIZENS-CHARTER.pdf",
      "requirements": [
-      "Notarized application form for accreditation",
-      "Letter of intent and board resolution",
-      "Certificate of registration with a government registering agency",
-      "Articles of incorporation and by-laws",
-      "Organizational profile",
-      "Vicinity map and recent photo of the main office",
-      "Latest audited financial report",
-      "Previous year accomplishment report with photos",
-      "Endorsement by a BWC Commissioner"
+      "Letter of Intent sent through Email, Postal or Walk-In (from the requesting client)"
      ],
-     "fee": null,
-     "time": null,
-     "where": "Bangsamoro Women Commission (in person, by registered mail or courier, or by email; hard copies must follow an email submission)"
+     "fee": "None",
+     "time": "3 Days & 45 Minutes",
+     "where": "TSD - Coordination and Public Engagement"
     },
     {
-     "name": "Women Sectoral Organization Certification",
-     "summary": "Certification of women sectoral organizations, as required by the Bangsamoro Electoral Code (BAA 35).",
+     "name": "Assistance to Victims of Gender-Based Violence",
+     "summary": "Interview, case management and referral to service providers for survivors of gender-based violence.",
+     "for": [
+      "women",
+      "children"
+     ],
+     "category": "legal",
+     "source": "https://bwc.bangsamoro.gov.ph/wp-content/uploads/2026/09/BWC-CITIZENS-CHARTER.pdf",
+     "requirements": [
+      "Walk-in client (the requesting client)"
+     ],
+     "fee": "None",
+     "time": "1 Hour & 43 Minutes",
+     "where": "TSD - Coordination and Public Engagement"
+    },
+    {
+     "name": "Women Associations and Women-Serving Agencies Partnership Accreditation (GWAPA)",
+     "summary": "Accreditation of women's associations and women-serving agencies as partners of the Women Commission.",
      "for": [
       "women"
      ],
-     "source": "https://bwc.bangsamoro.gov.ph/women-sectoral-organization-certification/",
+     "category": "permits",
+     "source": "https://bwc.bangsamoro.gov.ph/wp-content/uploads/2026/09/BWC-CITIZENS-CHARTER.pdf",
      "requirements": [
-      "Notarized application form (name, address, contacts, officers, and at least 50 women members)",
-      "Constitution and by-laws",
-      "Organizational structure",
-      "Notarized list of members and their addresses",
-      "Track record of at least 3 verifiable projects for women in BARMM",
-      "Platform of government"
+      "Letter of Intent sent through Email or Walk-In (from the requesting client)",
+      "Supporting Documents (from the requesting client)"
      ],
-     "fee": null,
+     "fee": "None",
+     "time": "19 Days, 1 Hour & 10 Minutes",
+     "where": "TSD - Coordination and Public Engagement"
+    },
+    {
+     "name": "Certification of Women Sectoral Organizations (WSOs)",
+     "summary": "A certificate for women's sectoral organizations fielding candidates in BARMM sectoral representative elections.",
+     "for": [
+      "women"
+     ],
+     "category": "permits",
+     "source": "https://bwc.bangsamoro.gov.ph/wp-content/uploads/2026/09/BWC-CITIZENS-CHARTER.pdf",
+     "requirements": [
+      "Letter of Intent sent through Email or Walk-In (from the requesting client)",
+      "Supporting Documents (from the requesting client)"
+     ],
+     "fee": "None",
+     "time": "33 Days",
+     "where": "TSD - Coordination and Public Engagement"
+    },
+    {
+     "name": "Releasing of Check Payments",
+     "summary": "Suppliers, service providers and consultants collect their check payments and tax certificates (BIR 2307).",
+     "for": [
+      "businesses"
+     ],
+     "category": "suppliers",
+     "source": "https://bwc.bangsamoro.gov.ph/wp-content/uploads/2026/09/BWC-CITIZENS-CHARTER.pdf",
+     "requirements": [
+      "Official Receipt (care of client)",
+      "Valid Identification Card (IDs) (care of client)",
+      "Authorization Letter, if claimed by a second person (care of client)"
+     ],
+     "fee": "None",
+     "time": "28 minutes",
+     "where": "Administrative and Finance Services Division (AFSD) - Cashier Unit"
+    },
+    {
+     "name": "Government Internship Program / On-the-Job Training / Immersion",
+     "summary": "Internship, on-the-job training or immersion at the Women Commission, with a certificate of completion.",
+     "for": [
+      "students"
+     ],
+     "category": "education",
+     "source": "https://bwc.bangsamoro.gov.ph/wp-content/uploads/2026/09/BWC-CITIZENS-CHARTER.pdf",
+     "requirements": [
+      "Endorsement/Recommendation Letter (Human Resource Management Unit)"
+     ],
+     "fee": "None",
      "time": null,
-     "where": "Bangsamoro Women Commission (copy also sent to the Office of the Chief Minister)"
+     "where": "Administrative and Finance Division - Human Resource Management Unit"
     }
    ],
    "sources": [
@@ -3820,6 +5018,9 @@
     "email": "byc@bangsamoro.gov.ph"
    },
    "charter": null,
+   "charterStatus": "coming",
+   "charterNote": "It held a workshop on drafting its Citizen’s Charter in October 2025; none is published yet.",
+   "charterPage": "https://byc.bangsamoro.gov.ph/2025/10/28/news/byc-holds-training-workshop-on-citizens-charter-formulation/",
    "programs": [
     {
      "name": "BYC Registration and Accreditation Program (BYC-ReAP)",
@@ -3940,6 +5141,9 @@
     "email": "bsc@bangsamoro.gov.ph"
    },
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen’s Charter was found on its website.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Grassroots Sports Clinics",
@@ -4050,6 +5254,9 @@
     "label": "Office of the Chief Minister, Citizen's Charter 1st Edition 2023 (BAGO section)",
     "url": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf"
    },
+   "charterStatus": "published",
+   "charterNote": "Its services are in the Office of the Chief Minister's 2023 Citizen's Charter Handbook.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Kape, Pandesal at Usapang Legal",
@@ -4057,6 +5264,7 @@
      "for": [
       "everyone"
      ],
+     "category": "legal",
      "source": "https://bago.bangsamoro.gov.ph/content/news/Kape,%20Pandesal%20at%20Usapang%20Legal%202026/",
      "how": "Walk in at the event venue when BAGO holds it."
     }
@@ -4068,6 +5276,7 @@
      "for": [
       "everyone"
      ],
+     "category": "government",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "requirements": [
       "Request letter or endorsement letter",
@@ -4084,6 +5293,7 @@
      "for": [
       "everyone"
      ],
+     "category": "government",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "requirements": [
       "Request letter or endorsement letter",
@@ -4100,6 +5310,7 @@
      "for": [
       "everyone"
      ],
+     "category": "government",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "requirements": [
       "Request letter or endorsement letter",
@@ -4116,6 +5327,7 @@
      "for": [
       "everyone"
      ],
+     "category": "legal",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "requirements": [
       "Request letter or endorsement letter",
@@ -4132,6 +5344,7 @@
      "for": [
       "workers"
      ],
+     "category": "requests",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "requirements": [
       "Request form"
@@ -4146,6 +5359,7 @@
      "for": [
       "workers"
      ],
+     "category": "requests",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "requirements": [
       "Request form"
@@ -4160,6 +5374,7 @@
      "for": [
       "workers"
      ],
+     "category": "requests",
      "source": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/OCM-Citizens-Charter-1st-Edition-2023.docx.pdf",
      "requirements": [
       "Request form"
@@ -4201,6 +5416,9 @@
     "label": "CSEA, Citizen's Charter: List of Frontline Services (image), 2025",
     "url": "https://csea.bangsamoro.gov.ph/citizens-charter-2/"
    },
+   "charterStatus": "published",
+   "charterNote": null,
+   "charterPage": null,
    "programs": [
     {
      "name": "Social Enterprise Tabang sa Usbong Pagbangon (SET-UP) Cash-for-Work Program",
@@ -4210,6 +5428,7 @@
       "cooperatives",
       "families-in-need"
      ],
+     "category": "livelihood",
      "source": "https://csea.bangsamoro.gov.ph/csea-barmm-cash-for-work-assistance-under-set-up-program/",
      "how": null
     },
@@ -4220,6 +5439,7 @@
       "farmers",
       "cooperatives"
      ],
+     "category": "business",
      "source": "https://csea.bangsamoro.gov.ph/csea-barmm-strengthens-coconut-farming-communities-through-cooperative-pre-registration-seminars/",
      "how": null
     },
@@ -4229,6 +5449,7 @@
      "for": [
       "cooperatives"
      ],
+     "category": "business",
      "source": "https://csea.bangsamoro.gov.ph/database/reg/index.html",
      "how": "Use the E-Coop Registration link under Online Services on the CSEA site."
     }
@@ -4240,6 +5461,7 @@
      "for": [
       "cooperatives"
      ],
+     "category": "business",
      "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
      "requirements": [
       "Articles of Cooperation",
@@ -4255,6 +5477,7 @@
      "for": [
       "cooperatives"
      ],
+     "category": "business",
      "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
      "requirements": [
       "General Assembly resolution",
@@ -4271,6 +5494,7 @@
      "for": [
       "cooperatives"
      ],
+     "category": "business",
      "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
      "requirements": [
       "Monitoring forms"
@@ -4285,6 +5509,7 @@
      "for": [
       "cooperatives"
      ],
+     "category": "business",
      "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
      "requirements": [
       "Monitoring forms"
@@ -4299,6 +5524,7 @@
      "for": [
       "cooperatives"
      ],
+     "category": "business",
      "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
      "requirements": [
       "Prescribed CDA form",
@@ -4315,6 +5541,7 @@
      "for": [
       "cooperatives"
      ],
+     "category": "business",
      "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
      "requirements": [
       "Monitoring forms"
@@ -4329,6 +5556,7 @@
      "for": [
       "cooperatives"
      ],
+     "category": "business",
      "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
      "requirements": [
       "Cooperative Annual Performance Report (CAPR)",
@@ -4347,6 +5575,7 @@
      "for": [
       "cooperatives"
      ],
+     "category": "business",
      "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
      "requirements": [
       "Cooperative resolution stating the internal problem"
@@ -4361,6 +5590,7 @@
      "for": [
       "cooperatives"
      ],
+     "category": "business",
      "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
      "requirements": [
       "Monitoring forms"
@@ -4375,6 +5605,7 @@
      "for": [
       "cooperatives"
      ],
+     "category": "business",
      "source": "https://csea.bangsamoro.gov.ph/citizens-charter-2/",
      "requirements": [
       "Monitoring forms"
@@ -4413,6 +5644,9 @@
    "mandate": "The communications arm and information center of the Bangsamoro Government; it promotes transparency and builds a network of information officers across ministries.",
    "contact": null,
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own was found.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Radyo Bangsamoro",
@@ -4455,6 +5689,9 @@
    "mandate": "The training and research arm of the Bangsamoro Government for its offices, officials and employees; its Center of Training and Assessment is recognized by the Civil Service Commission as a learning and development institution.",
    "contact": null,
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen’s Charter was found on its website.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Mandatory Onboarding Training (MOT)",
@@ -4515,6 +5752,9 @@
     "email": "bicto@bangsamoro.gov.ph"
    },
    "charter": null,
+   "charterStatus": "coming",
+   "charterNote": "Its Citizen’s Charter page says the charter “is currently being prepared.”",
+   "charterPage": "https://bicto.bangsamoro.gov.ph/pages/citizens-charter",
    "programs": [
     {
      "name": "BangsaNet Free Wi-Fi Program",
@@ -4602,6 +5842,9 @@
     "email": null
    },
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen’s Charter was found on its website.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Investment registration and incentives",
@@ -4640,6 +5883,9 @@
     "email": null
    },
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen’s Charter was found on its website.",
+   "charterPage": null,
    "programs": [
     {
      "name": "OSC Radio: Tinig ng Mamamayang Settlers ng Bangsamoro",
@@ -4712,6 +5958,9 @@
     "email": "bshs@most.bangsamoro.gov.ph"
    },
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen’s Charter was found on its website.",
+   "charterPage": null,
    "programs": [
     {
      "name": "Grade 7 admission",
@@ -4768,6 +6017,9 @@
    "mandate": "Planned to give technical training, short courses and extension services in agriculture and fisheries to Bangsamoro farmers and fisherfolk, and to set the region's extension agenda.",
    "contact": null,
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own was found.",
+   "charterPage": null,
    "programs": [],
    "services": [],
    "sources": [
@@ -4791,6 +6043,9 @@
    "mandate": "Supports the Wali, the ceremonial head of the Bangsamoro, who acts as the region's moral guardian, opens Parliament, administers oaths of office, can dissolve Parliament on the Chief Minister's advice, and attends public ceremonies.",
    "contact": null,
    "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen’s Charter was found on its website.",
+   "charterPage": null,
    "programs": [],
    "services": [],
    "sources": [
@@ -4804,5 +6059,6 @@
     }
    ]
   }
- ]
+ ],
+ "charterCheckedAt": "2026-10-21"
 }

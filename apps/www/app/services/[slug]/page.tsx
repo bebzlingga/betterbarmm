@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation'
 import { Masthead } from '../../_components/masthead'
 import { SiteHeader } from '../../_components/site-header'
 import { pageMeta } from '../../_lib/seo'
-import { audienceLabel, budgetHref, officeBySlug, offices, servicesMeta, shortName, slugify, type Audience } from '../../_lib/services'
+import { audienceLabel, budgetHref, categoryLabel, fundedPrograms, hasCharter, officeBySlug, offices, peso, servicesMeta, shortName, slugify, type Audience, type Category } from '../../_lib/services'
 import { GetInvolved } from '../../_components/get-involved'
 
 export function generateStaticParams() {
@@ -24,10 +24,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 const KIND = { office: 'Office of the Chief Minister', ministry: 'Ministry', attached: 'Attached office' } as const
 
-function For({ list }: { list: Audience[] }) {
-	if (!list.length) return null
+/** Its category, then who it is for: each a link to everything else on that shelf, or for those readers. */
+function For({ list, category }: { list: Audience[]; category?: Category }) {
+	if (!list.length && !category) return null
 	return (
 		<p className='mt-2 flex flex-wrap gap-1.5'>
+			{category ? (
+				<Link href={`/services?cat=${category}`} className='border border-[var(--accent)] px-2 py-0.5 text-[11.5px] font-semibold text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white'>
+					{categoryLabel(category)}
+				</Link>
+			) : null}
 			{list.map((a) => (
 				<Link key={a} href={`/services?for=${a}`} className='border border-[var(--rule)] px-2 py-0.5 text-[11.5px] text-[var(--ink-2)] hover:border-[var(--ink)]'>
 					{audienceLabel(a)}
@@ -91,8 +97,14 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 
 				<div className='mt-10 grid gap-12 lg:grid-cols-[minmax(0,1fr)_18rem]'>
 					<div className='min-w-0 space-y-14'>
-						{office.charter ? (
+						{hasCharter(office) ? (
 							<>
+								{office.charterStatus === 'draft' ? (
+									<p className='border-l-2 border-[var(--brass)] pl-4 text-[14px] leading-[1.65] text-[var(--ink-2)]'>
+										<span className='font-semibold text-[var(--ink)]'>From a draft charter. </span>
+										{office.charterNote} Confirm with the office before you go.
+									</p>
+								) : null}
 								<section aria-labelledby='programs'>
 									<h2 id='programs' className='text-[22px] font-extrabold tracking-[-0.01em]'>
 										Programs <span className='text-[var(--ink-mute)]'>{office.programs.length}</span>
@@ -114,7 +126,7 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 															{p.how}
 														</p>
 													) : null}
-													<For list={p.for} />
+													<For list={p.for} category={p.category} />
 												</li>
 											))}
 										</ul>
@@ -174,7 +186,7 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 																	</>
 																) : null}
 															</dl>
-															<For list={s.for} />
+															<For list={s.for} category={s.category} />
 															<p className='mt-3'>
 																<Source url={s.source} />
 															</p>
@@ -192,13 +204,48 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 							<section aria-labelledby='no-charter' className='border border-[var(--rule)] bg-[var(--paper-2)] p-6'>
 								<h2 id='no-charter' className='text-[18px] font-bold'>No Citizen’s Charter published</h2>
 								<p className='mt-2 max-w-2xl text-[14.5px] leading-[1.7] text-[var(--ink-2)]'>
-									Every government office must publish a Citizen’s Charter: each service it gives, what to bring, what it costs and how long it takes. We could not find one from the {office.name} online, so its programs and services are not listed here until it does. Ask the office directly, or tell us where its charter is.
+									Every government office must publish a Citizen’s Charter: each service it gives, what to bring, what it costs and how long it takes. We could not find one from the {office.name} online, so its services are not listed here until it does. Ask the office directly, or tell us where its charter is.
 								</p>
+								{/* The plain "none found" note repeats the paragraph above; any other note says something it does not. */}
+								{office.charterNote && office.charterStatus !== 'none' || office.charterNote?.startsWith('No website') ? (
+									<p className='mt-3 max-w-2xl text-[14px] leading-[1.65] text-[var(--ink-3)]'>
+										{office.charterNote}{' '}
+										{office.charterPage ? (
+											<a href={office.charterPage} target='_blank' rel='noreferrer' className='inline-flex items-center gap-0.5 underline decoration-[var(--rule)] underline-offset-4 hover:text-[var(--accent)]'>
+												See it <ArrowUpRightIcon size={11} weight='bold' aria-hidden='true' />
+											</a>
+										) : null}
+									</p>
+								) : null}
 								<a href='/report' className='mt-4 inline-flex text-[14px] font-semibold underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
 									Tell us where to find it
 								</a>
 							</section>
 						)}
+						{!hasCharter(office) && fundedPrograms(office).length ? (
+							// Until it publishes a charter, its 2026 appropriation is the only public account of what it does.
+							<section aria-labelledby='funded'>
+								<h2 id='funded' className='text-[22px] font-extrabold tracking-[-0.01em]'>
+									What the 2026 budget funds it to do
+								</h2>
+								<p className='mt-1.5 max-w-2xl text-[13.5px] leading-6 text-[var(--ink-3)]'>
+									Its programs as the 2026 General Appropriations Act names them. These are what it is paid to do, not services you can apply for.
+								</p>
+								<ul className='mt-5 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)]'>
+									{fundedPrograms(office).map((p) => (
+										<li key={p.name} className='flex items-baseline justify-between gap-4 py-3 text-[14.5px] leading-snug'>
+											<span className='min-w-0'>{p.name}</span>
+											<span className='shrink-0 text-right tabular-nums text-[var(--ink-2)]'>
+												{peso(p.amount)} <span className='block text-[11.5px] text-[var(--ink-mute)]'>BAA 85, p. {p.page}</span>
+											</span>
+										</li>
+									))}
+								</ul>
+								<a href={budgetHref(office)} className='mt-4 inline-flex items-center gap-1.5 text-[14px] font-semibold underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
+									<CoinsIcon size={15} aria-hidden='true' /> Its whole budget
+								</a>
+							</section>
+						) : null}
 					</div>
 
 					<aside className='space-y-10 lg:sticky lg:top-[calc(var(--site-header-h)+1.5rem)] lg:self-start'>
