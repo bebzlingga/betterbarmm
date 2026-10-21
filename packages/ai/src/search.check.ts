@@ -429,6 +429,15 @@ assert.ok(both.length === 0 || both[0]!.text.includes('marawi'), 'the two-word q
 	}
 }
 
+// Programs & services: a service question finds the counter; a question about the law still finds the law.
+assert.match(search('cedula', 'services')[0]?.title ?? '', /Community Tax Certificate/, 'narrowed to the services, a cedula question missed the cedula')
+assert.ok(
+	search('requirements for cedula in Cotabato City').slice(0, 3).some((e) => /Individual \(Cotabato City\)/.test(e.title)),
+	'the requirements of Cotabato City\'s cedula were not near the top',
+)
+assert.match(search('business permit Northern Kabuntalan')[0]?.title ?? '', /^Issuance of Business Permit/, 'a town\'s business permit was not the first answer')
+assert.equal(search('license to operate a clinic')[0]?.space, 'services', 'a licence question did not reach the services')
+
 console.log(
 	`ok — ${all.length} records, ${health.length} on health, ${money.length} in the budget, ${voted.length} in the election`,
 )

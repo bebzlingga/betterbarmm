@@ -47,8 +47,9 @@ import ballotFile from '../../../datasets/election/election.min.json'
 import resultsFile from '../../../datasets/election/election-results.json'
 import { more, MORE_ASKED } from './more'
 import { catalogue, directory, DIRECTORY_ASKED } from './directory'
+import { services, SERVICES_ASKED, SERVICES_ASKED_ONLY } from './services'
 
-export type Space = 'legislation' | 'budget' | 'election' | 'travel' | 'lgu' | 'primer' | 'directory' | 'incidents'
+export type Space = 'legislation' | 'budget' | 'election' | 'travel' | 'lgu' | 'primer' | 'directory' | 'incidents' | 'services'
 
 /** One thing a reader can be sent to. `text` is the haystack; everything else is shown. */
 export type Entry = {
@@ -148,6 +149,7 @@ const SITE: Record<Space, string> = {
 	primer: 'https://betterbarmm.com',
 	directory: 'https://betterbarmm.com/directory',
 	incidents: 'https://betterbarmm.com/accidents',
+	services: 'https://betterbarmm.com/services',
 }
 
 type Measure = {
@@ -1174,11 +1176,12 @@ export function corpus(): Entry[] {
 			...primer(),
 			...more(),
 			...directory(),
+			...services(),
 		]
 		// Hung on the row rather than written into each builder: it is one rule
 		// about how questions are worded, not a fact about any of the four
 		// datasets. Kept apart from `text` so it can be scored apart from it.
-		for (const row of built) row.asked = ASKED_FOR[row.kind] ?? MORE_ASKED[row.kind] ?? DIRECTORY_ASKED[row.kind]
+		for (const row of built) row.asked = ASKED_FOR[row.kind] ?? MORE_ASKED[row.kind] ?? DIRECTORY_ASKED[row.kind] ?? SERVICES_ASKED[row.kind]
 	}
 	return built
 }
@@ -1302,7 +1305,9 @@ export function search(query: string, space?: Space, limit = 8): Entry[] {
 	const scored: { entry: Entry; score: number }[] = []
 	for (const entry of corpus()) {
 		if (space && entry.space !== space) continue
-		if (ASKED_ONLY.has(entry.kind) && !terms.some((term) => entry.asked && times(entry.asked, term, 1))) continue
+		// A service waits for a question about getting something, unless the search was narrowed to the services already.
+		const waits = ASKED_ONLY.has(entry.kind) || (space !== 'services' && SERVICES_ASKED_ONLY.includes(entry.kind))
+		if (waits && !terms.some((term) => entry.asked && times(entry.asked, term, 1))) continue
 		const title = entry.title.toLowerCase()
 		let score = 0
 		let matched = 0
