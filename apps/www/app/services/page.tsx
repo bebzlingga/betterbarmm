@@ -231,7 +231,7 @@ function GapRow({ o }: { o: Office }) {
 								{peso(total)} in all <ArrowRightIcon size={11} weight='bold' aria-hidden='true' />
 							</a>
 						</p>
-						<ul className='mt-2 grid gap-x-6 sm:grid-cols-2'>
+						<ul className='mt-2'>
 							{funded.slice(0, 6).map((p) => (
 								<li key={p.name} className='flex items-baseline justify-between gap-3 border-b border-dotted border-[var(--rule)] py-1.5 text-[13.5px] leading-snug'>
 									<span className='min-w-0 text-[var(--ink-2)]'>{p.name}</span>
