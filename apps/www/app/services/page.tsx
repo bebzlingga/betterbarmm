@@ -198,7 +198,7 @@ function GapRow({ o }: { o: Office }) {
 	const funded = fundedPrograms(o)
 	const total = funded.reduce((n, p) => n + p.amount, 0)
 	return (
-		<li className='grid gap-x-8 gap-y-3 border-b border-[var(--rule-soft)] py-5 md:grid-cols-[minmax(0,19rem)_minmax(0,1fr)]'>
+		<li className='grid gap-x-8 gap-y-3 border-b border-[var(--rule-soft)] py-5 md:grid-cols-[minmax(0,19rem)_minmax(0,1fr)] lg:gap-x-20'>
 			<div className='min-w-0'>
 				{o.acronym ? <p className={`${eyebrow} text-[var(--accent)]`}>{o.acronym}</p> : null}
 				<p className='mt-0.5 text-[15.5px] font-bold leading-snug'>
