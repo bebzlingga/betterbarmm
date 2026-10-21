@@ -223,7 +223,7 @@ export function SiteFooter({
 					<div className='lg:max-w-xl'>
 						{/* White name: the ground under it is dark in both themes. */}
 						<a href={home} className='inline-block'>
-							<BrandLogo className='text-white' mark='#FFFFFF' />
+							<BrandLogo className='text-white' inverse />
 						</a>
 
 						<Rise delay={0.08} distance={14}>
