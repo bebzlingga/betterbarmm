@@ -41,11 +41,9 @@ const secondaryLinks = [
 	// { key: 'news', href: '/news', label: 'Latest news' },
 	// Incident Watch and Crafts are reached through the strip's Projects switch, not the bar; phones get a row each in the menu below.
 	{ key: 'directory', href: '/directory', label: 'Directory' },
-	// Programs & services is hidden for now; the pages still build at /services.
-	// { key: 'services', href: '/services', label: 'Programs & services' },
+	{ key: 'services', href: '/services', label: 'Services' },
 	{ key: 'explainers', href: '/explainers', label: 'Explainers' },
-	// Opens the brain dialog over whatever page is open.
-	{ key: 'brain', href: '#brain', label: 'Brain' },
+	// The brain is reached through the strip's Projects switch, which opens its dialog over whatever page is open.
 	{ key: 'about', href: '/about', label: 'About' },
 ] as const
 
