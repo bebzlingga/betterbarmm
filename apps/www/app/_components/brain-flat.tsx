@@ -16,7 +16,7 @@ import type { BrainEdge, BrainNode } from '../_lib/brain'
 
 const C = 500
 const RADIUS = { jo: 0, workspace: 175, dataset: 318, source: 448 } as const
-const ORDER = ['w-legislation', 'w-budget', 'w-directory', 'w-procurement', 'w-lgu', 'w-election', 'w-incidents', 'w-places', 'w-crafts', 'w-discover']
+const ORDER = ['w-legislation', 'w-budget', 'w-directory', 'w-services', 'w-procurement', 'w-lgu', 'w-election', 'w-incidents', 'w-places', 'w-crafts', 'w-discover']
 
 type Placed = BrainNode & { x: number; y: number; a: number }
 

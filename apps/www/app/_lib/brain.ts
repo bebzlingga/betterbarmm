@@ -3,7 +3,8 @@ import path from 'node:path'
 import { lguProvinces } from '@betterbarmm/lgu-data'
 import { discoverBarmmTopics } from '@betterbarmm/primer-data'
 import { barangayRows, directoryOffices, fieldOffices, localGovernments, officeHistory } from './directory'
-import { budgetHref } from './services'
+import { budgetHref, hasCharter, officeBySlug, offerings } from './services'
+import { lguByKey, lguHasCharter, lguHref, lgus } from './lgu-services'
 
 /* ============================================================
    The brain of BetterBARMM, as data
@@ -90,6 +91,7 @@ export function brain() {
 		{ id: 'w-incidents', label: 'Incident Watch', kind: 'workspace', note: 'Road crashes, shootings, drownings, fires and floods reported in the region, on a map.', href: '/accidents' },
 		{ id: 'w-places', label: 'Places', kind: 'workspace', note: 'Islands, lakes, mosques, falls and heritage sites: what is there, how to get there, where to stay.', href: '/places' },
 		{ id: 'w-crafts', label: 'Crafts', kind: 'workspace', note: 'The weaves, mats, brass and gongs of the region, who makes them and where to see them.', href: '/crafts' },
+		{ id: 'w-services', label: 'Programs & services', kind: 'workspace', note: 'What each regional office, province, city and town offers the public: who it is for, what to bring, the fee and how long it takes.', href: '/services' },
 		{ id: 'w-discover', label: 'Discover', kind: 'workspace', note: 'How the Bangsamoro came to be, how its government works, and the explainers.', href: '/discover' },
 
 		{ id: 'd-measures', label: 'Acts, bills & resolutions', kind: 'dataset', count: acts + bills + adopted + proposed, unit: 'measures', note: `${acts} acts, ${bills} bills, ${adopted} adopted and ${proposed} proposed resolutions, with authors and status.` },
@@ -108,6 +110,8 @@ export function brain() {
 		{ id: 'd-places', label: 'Places & stays', kind: 'dataset', count: places.items.length + stays, unit: 'places', date: places.generatedAt, note: `${places.items.length} places and ${stays} places to stay, each traced to its sources.` },
 		{ id: 'd-crafts', label: 'Crafts', kind: 'dataset', count: crafts.items.length, unit: 'crafts', date: crafts.generatedAt, note: 'Textiles, mats, brass, wood and gongs, with their makers and where to see them.' },
 		{ id: 'd-incidents', label: 'Incident reports', kind: 'dataset', count: accidents.incidents.length, unit: 'incidents', date: accidents.generatedAt, note: 'One record per incident since 2019, every report linked, placed on its barangay where named.' },
+		{ id: 'd-charters', label: 'Regional Citizen’s Charters', kind: 'dataset', count: offerings.length, unit: 'services & programs', note: `The services and programs of the ${new Set(offerings.map((o) => o.office.slug)).size} regional offices that publish a Citizen’s Charter, each with its requirements, fee and time.` },
+		{ id: 'd-lgu-charters', label: 'LGU Citizen’s Charters', kind: 'dataset', count: lgus.reduce((k, l) => k + (lguHasCharter(l) ? l.services.length : 0), 0), unit: 'services', note: `The services of the ${lgus.filter(lguHasCharter).length} provinces, cities and towns whose charters are online; the other ${lgus.filter((l) => !lguHasCharter(l)).length} have none.` },
 		{ id: 'd-primer', label: 'History primer', kind: 'dataset', count: discoverBarmmTopics.length, unit: 'chapters', note: 'The region’s story from the sultanates to the transition, with dated timelines.' },
 
 		{ id: 's-parliament', label: 'Bangsamoro Parliament', kind: 'source', note: 'Bills, resolutions, enacted acts and member profiles.' },
@@ -148,7 +152,7 @@ export function brain() {
 		['s-gppb', ['d-blacklist']],
 		['s-dti', ['d-lines', 'd-finances']],
 		['s-bio', ['d-offices', 'd-field', 'd-places', 'd-crafts']],
-		['s-ministries', ['d-offices', 'd-field', 'd-lines']],
+		['s-ministries', ['d-offices', 'd-field', 'd-lines', 'd-charters', 'd-lgu-charters']],
 		['s-news', ['d-incidents']],
 		['s-bcpch', ['d-crafts', 'd-places']],
 		['s-mtit', ['d-places', 'd-field']],
@@ -163,7 +167,9 @@ export function brain() {
 	const publishes: [string, string[]][] = [
 		['d-measures', ['w-legislation']],
 		['d-code', ['w-legislation', 'w-lgu']],
-		['d-appropriations', ['w-budget']],
+		['d-appropriations', ['w-budget', 'w-services']],
+		['d-charters', ['w-services', 'w-directory']],
+		['d-lgu-charters', ['w-services', 'w-directory']],
 		['d-election', ['w-election']],
 		['d-lgus', ['w-lgu', 'w-directory']],
 		['d-officials', ['w-lgu', 'w-directory']],
@@ -188,6 +194,8 @@ export function brain() {
 		['w-directory', 'w-budget', 'Office ID'],
 		['w-directory', 'w-procurement', 'Office'],
 		['w-budget', 'w-legislation', 'Act number'],
+		['w-services', 'w-directory', 'Office ID'],
+		['w-services', 'w-lgu', 'Town code'],
 	]
 	const edges: BrainEdge[] = [
 		...feeds.flatMap(([from, to]) => to.map((t): BrainEdge => ({ from, to: t, kind: 'feeds' }))),
@@ -227,15 +235,18 @@ export function brain() {
 			const notices = own.reduce((k, e) => k + e.notices, 0)
 			const here = places.items.filter((p) => p.area === g.slug && p.municipality === u.name)
 			const district = districts[key]?.districts.join(', ') ?? null
+			const lgu = lguByKey(key)
+			const served = lgu && lguHasCharter(lgu) ? lgu.services.length : 0
 			const links = [
 				{ where: 'Directory', what: `Mayor, ${plural(barangayRows(g.slug, u.slug).length, 'barangay')}${lines ? `, ${plural(lines, 'emergency line')}` : ''}${email ? ', email' : ''}`, href: u.href },
 				{ where: 'Local Government', what: 'Officials, finances, audits and history', href: u.lguHref },
+				...(lgu ? [{ where: 'Programs & services', what: served ? `${plural(served, 'service')} from its Citizen’s Charter` : 'No Citizen’s Charter online', href: lguHref(lgu) }] : []),
 				...(district ? [{ where: 'Election', what: `Votes in its province’s ${district} parliamentary district`, href: `${ELECTION}/results` }] : []),
 				...procurementLinks(own),
 				...(hits.length ? [{ where: 'Incident Watch', what: `${plural(hits.length, 'incident')} since 2019, ${n(dead)} dead`, href: '/accidents' }] : []),
 				...here.map((p) => ({ where: 'Places', what: p.name, href: `/places/${p.slug}` })),
 			]
-			const lit = ['jo', 'w-directory', 'w-lgu', 'd-lgus', 'd-officials', 'd-lines', 'd-finances', ...(district ? ['w-election', 'd-election'] : []), ...(notices ? ['w-procurement', 'd-notices'] : []), ...(hits.length ? ['w-incidents', 'd-incidents'] : []), ...(here.length ? ['w-places', 'd-places'] : [])]
+			const lit = ['jo', 'w-directory', 'w-lgu', 'd-lgus', 'd-officials', 'd-lines', 'd-finances', ...(district ? ['w-election', 'd-election'] : []), ...(notices ? ['w-procurement', 'd-notices'] : []), ...(hits.length ? ['w-incidents', 'd-incidents'] : []), ...(here.length ? ['w-places', 'd-places'] : []), ...(served ? ['w-services', 'd-lgu-charters'] : [])]
 			return {
 				key: `town:${key}`,
 				kind: 'town' as const,
@@ -265,9 +276,14 @@ export function brain() {
 		const own = entities.filter((e) => squash(e.name).startsWith(name))
 		const notices = own.reduce((k, e) => k + e.notices, 0)
 		const budgetOf = (o as { budget_of?: string }).budget_of
+		const service = officeBySlug(o.slug)
+		const charter = service && hasCharter(service)
 		const links = [
 			{ where: 'Directory', what: `Head, contacts, structure${past ? `, ${plural(past, 'past head')}` : ''}`, href: `/directory/office/${o.slug}` },
 			{ where: 'Budget', what: budgetOf ? 'Funded within its parent ministry’s budget' : 'Its appropriations, year by year', href: budgetHref({ slug: budgetOf ?? o.slug }) },
+			...(service
+				? [{ where: 'Programs & services', what: charter ? `${plural(service.services.length, 'service')} and ${plural(service.programs.length, 'program')}` : 'No Citizen’s Charter; what its budget funds', href: `/services/${service.slug}` }]
+				: []),
 			...(field.length ? [{ where: 'Directory', what: `${plural(field.length, 'provincial office')}`, href: `/directory/office/${o.slug}` }] : []),
 			...procurementLinks(own),
 		]
@@ -286,7 +302,7 @@ export function brain() {
 				['Bid notices', notices ? n(notices) : '—'],
 			] as [string, string][],
 			links,
-			lit: ['jo', 'w-directory', 'd-offices', 'w-budget', 'd-appropriations', ...(field.length ? ['d-field'] : []), ...(notices ? ['w-procurement', 'd-notices'] : []), ...(past ? [] : [])],
+			lit: ['jo', 'w-directory', 'd-offices', 'w-budget', 'd-appropriations', ...(field.length ? ['d-field'] : []), ...(notices ? ['w-procurement', 'd-notices'] : []), ...(service ? ['w-services', charter ? 'd-charters' : 'd-appropriations'] : [])],
 		}
 	})
 	const threads = [...townThreads, ...officeThreads]
