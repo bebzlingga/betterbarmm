@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { SiteHeader } from '../_components/site-header'
 import { ServicesSearch, type ServiceEntry } from '../_components/services-search'
+import { ServicesTabs } from '../_components/services-tabs'
+import { lgus } from '../_lib/lgu-services'
 import { GetInvolved } from '../_components/get-involved'
 import { officeLogo } from '../_lib/directory'
 import { pageMeta } from '../_lib/seo'
@@ -71,6 +73,12 @@ export default async function ServicesPage({ searchParams }: { searchParams: Pro
 				categories={categories}
 				audiences={audiences}
 				initial={{ q, cat, for: audience }}
+				tabs={<ServicesTabs active='regional' counts={{ regional: offerings.length, lgu: lgus.reduce((n, l) => n + l.services.length, 0) }} />}
+				jump={[
+					{ href: '#categories', label: 'Categories', icon: 'categories' },
+					{ href: '#offices', label: 'Offices with a charter', icon: 'charter' },
+					{ href: '#no-charter', label: 'Offices without one', icon: 'none' },
+				]}
 				head={
 					<>
 						<p className='bb-label'>What the government offers, and how to get it</p>

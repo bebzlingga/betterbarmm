@@ -7,6 +7,7 @@ import {
 	BriefcaseIcon,
 	CertificateIcon,
 	ClockIcon,
+	CoinsIcon,
 	FileTextIcon,
 	FilesIcon,
 	FirstAidKitIcon,
@@ -49,6 +50,8 @@ export type ServiceEntry = {
 	fee: string | null
 	time: string | null
 	draft: boolean
+	/** The province an LGU's service belongs to, for the Local governments tab's third filter. */
+	place?: string
 }
 
 type Choice = { id: string; label: string; count: number }
@@ -65,16 +68,15 @@ const ICONS: Record<string, Icon> = {
 	business: StorefrontIcon,
 	permits: CertificateIcon,
 	requests: FilesIcon,
+	taxes: CoinsIcon,
 	community: BooksIcon,
 	suppliers: TruckIcon,
 	government: BankIcon,
 }
 
-const JUMP = [
-	{ href: '#categories', label: 'Categories', icon: SquaresFourIcon },
-	{ href: '#offices', label: 'Offices with a charter', icon: FileTextIcon },
-	{ href: '#no-charter', label: 'Offices without one', icon: ProhibitIcon },
-]
+/** The band's jumps to the page's sections; each page names its own. */
+export type Jump = { href: string; label: string; icon: 'categories' | 'charter' | 'none' }
+const JUMP_ICONS: Record<Jump['icon'], Icon> = { categories: SquaresFourIcon, charter: FileTextIcon, none: ProhibitIcon }
 
 const fold = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
 
@@ -83,19 +85,28 @@ export function ServicesSearch({
 	entries,
 	categories,
 	audiences,
+	places,
 	initial,
+	tabs,
+	jump,
 	children,
 }: {
 	head: React.ReactNode
 	entries: ServiceEntry[]
 	categories: Choice[]
 	audiences: Choice[]
-	initial: { q: string; cat: string; for: string }
+	/** Provinces, for the Local governments tab; absent, there is no province filter. */
+	places?: Choice[]
+	initial: { q: string; cat: string; for: string; in?: string }
+	/** The tab bar between the regional offices and the local governments, drawn under the band. */
+	tabs?: React.ReactNode
+	jump: Jump[]
 	children: React.ReactNode
 }) {
 	const [q, setQ] = useState(initial.q)
 	const [cat, setCat] = useState(initial.cat)
 	const [who, setWho] = useState(initial.for)
+	const [place, setPlace] = useState(initial.in ?? '')
 	const query = useDeferredValue(q)
 	const [at, setAt] = useState(0)
 	const input = useRef<HTMLInputElement>(null)
@@ -117,20 +128,20 @@ export function ServicesSearch({
 	// The address follows the choices without a navigation, so the page does not re-render from the server.
 	useEffect(() => {
 		const url = new URL(window.location.href)
-		for (const [k, v] of [['q', query.trim()], ['cat', cat], ['for', who]] as const) {
+		for (const [k, v] of [['q', query.trim()], ['cat', cat], ['for', who], ['in', place]] as const) {
 			if (v) url.searchParams.set(k, v)
 			else url.searchParams.delete(k)
 		}
 		if (url.href !== window.location.href) history.replaceState(history.state, '', url)
-	}, [query, cat, who])
+	}, [query, cat, who, place])
 
 	// Every word must match somewhere; a match in the name ranks over one in the summary or the office.
 	// Grouped by category, in the categories' own order, unless one category is already chosen.
 	const found = useMemo(() => {
 		const words = fold(query).split(/\s+/).filter(Boolean)
-		if (!words.length && !cat && !who) return []
+		if (!words.length && !cat && !who && !place) return []
 		const hits = entries.filter(
-			(e) => (!cat || e.category === cat) && (!who || e.for.includes(who)) && words.every((w) => fold(`${e.name} ${e.summary ?? ''} ${e.office} ${e.officeName}`).includes(w)),
+			(e) => (!cat || e.category === cat) && (!who || e.for.includes(who)) && (!place || e.place === place) && words.every((w) => fold(`${e.name} ${e.summary ?? ''} ${e.office} ${e.officeName}`).includes(w)),
 		)
 		const rank = (e: ServiceEntry) => (!words.length ? 0 : words.every((w) => fold(e.name).includes(w)) ? 0 : 1)
 		const order = new Map(categories.map((c, i) => [c.id, i]))
@@ -138,8 +149,8 @@ export function ServicesSearch({
 			.map((e, i) => [e, rank(e), i] as const)
 			.sort((a, b) => (order.get(a[0].category) ?? 99) - (order.get(b[0].category) ?? 99) || a[1] - b[1] || a[2] - b[2])
 			.map(([e]) => e)
-	}, [entries, categories, query, cat, who])
-	const searching = Boolean(query.trim() || cat || who)
+	}, [entries, categories, query, cat, who, place])
+	const searching = Boolean(query.trim() || cat || who || place)
 
 	const onKeyDown = (e: React.KeyboardEvent) => {
 		if (!found.length) return
@@ -161,10 +172,10 @@ export function ServicesSearch({
 		setAt(0)
 		requestAnimationFrame(() => document.getElementById('filters')?.scrollIntoView({ block: 'start', behavior: 'smooth' }))
 	}
-	const clear = () => (setQ(''), setCat(''), setWho(''))
+	const clear = () => (setQ(''), setCat(''), setWho(''), setPlace(''))
 
 	const label = (list: Choice[], id: string) => list.find((c) => c.id === id)?.label ?? ''
-	const what = [query.trim() && `“${query.trim()}”`, cat && `in ${label(categories, cat)}`, who && `for ${label(audiences, who).toLowerCase()}`].filter(Boolean).join(' ')
+	const what = [query.trim() && `“${query.trim()}”`, cat && `in ${label(categories, cat)}`, who && `for ${label(audiences, who).toLowerCase()}`, place && `in ${label(places ?? [], place)}`].filter(Boolean).join(' ')
 
 	return (
 		<>
@@ -176,7 +187,9 @@ export function ServicesSearch({
 				<div className='bb-container relative py-16 text-center lg:py-24'>
 					{head}
 					<nav aria-label='Jump to' className='mt-8 flex flex-wrap justify-center gap-2'>
-						{JUMP.map(({ href, label, icon: Icon }) => (
+						{jump.map(({ href, label, icon }) => {
+							const Icon = JUMP_ICONS[icon]
+							return (
 							<a
 								key={href}
 								href={href}
@@ -185,13 +198,16 @@ export function ServicesSearch({
 							>
 								<Icon size={14} weight='bold' aria-hidden='true' /> {label}
 							</a>
-						))}
+							)
+						})}
 					</nav>
 				</div>
 			</section>
 
+			{tabs}
+
 			{/* The search on the left, the two filters on the right, always under the band, so a choice can be made or undone from the results as well as the sections. */}
-			<div id='filters' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] pt-10 lg:pt-12'>
+			<div id='filters' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] pt-6 lg:pt-8'>
 				<div className='flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between'>
 					<form role='search' action='/services' onSubmit={(e) => e.preventDefault()} className='flex min-w-0 flex-col gap-1 lg:w-[26rem]'>
 						<label htmlFor='services-search' className='text-[12px] text-[var(--ink-3)]'>
@@ -221,7 +237,10 @@ export function ServicesSearch({
 							)}
 						</span>
 					</form>
-					<div className='grid gap-3 sm:grid-cols-2 lg:w-[34rem] lg:shrink-0'>
+					<div className={`grid gap-3 lg:shrink-0 ${places ? 'sm:grid-cols-3 lg:w-[48rem]' : 'sm:grid-cols-2 lg:w-[34rem]'}`}>
+						{places ? (
+							<Select label='Province' value={place} onChange={(v) => (setPlace(v), setAt(0))} options={[['', 'Every province'], ...places.map((c): [string, string] => [c.id, `${c.label} (${c.count})`])]} />
+						) : null}
 						<Select label='Category' value={cat} onChange={(v) => (setCat(v), setAt(0))} options={[['', 'Every category'], ...categories.map((c): [string, string] => [c.id, `${c.label} (${c.count})`])]} />
 						<Select label='Who it’s for' value={who} onChange={(v) => (setWho(v), setAt(0))} options={[['', 'Anyone'], ...audiences.map((a): [string, string] => [a.id, `${a.label} (${a.count})`])]} />
 					</div>
@@ -300,6 +319,7 @@ export function ServicesSearch({
 
 /** Every category as a tile: its count and the first few things on its shelf. */
 function Categories({ categories, entries, onOpen }: { categories: Choice[]; entries: ServiceEntry[]; onOpen: (id: string) => void }) {
+	if (!categories.length) return null
 	return (
 		<section id='categories' aria-labelledby='categories-title' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] pt-8 lg:pt-10'>
 			<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>

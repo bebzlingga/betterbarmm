@@ -54,6 +54,7 @@ export type Category =
 	| 'business'
 	| 'permits'
 	| 'requests'
+	| 'taxes'
 	| 'community'
 	| 'suppliers'
 	| 'government'
@@ -70,6 +71,7 @@ export const CATEGORIES: { id: Category; label: string }[] = [
 	{ id: 'business', label: 'Business & cooperatives' },
 	{ id: 'permits', label: 'Permits, licences & accreditation' },
 	{ id: 'requests', label: 'Documents & records' },
+	{ id: 'taxes', label: 'Taxes, fees & payments' },
 	{ id: 'community', label: 'Venues, libraries & public information' },
 	{ id: 'suppliers', label: 'For suppliers & contractors' },
 	{ id: 'government', label: 'For government offices & LGUs' },

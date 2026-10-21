@@ -1,0 +1,4342 @@
+{
+ "name": "Programs and services of the provinces, cities and towns of BARMM",
+ "generatedAt": "2026-10-21",
+ "note": "Compiled from each local government's Citizen's Charter. Requirements, fees and times are as the LGU published them; confirm with the LGU before you go.",
+ "charterCheckedAt": "2026-10-21",
+ "lgus": [
+  {
+   "key": "basilan",
+   "name": "Basilan",
+   "kind": "Province",
+   "province": "Basilan",
+   "provinceSlug": "basilan",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "Its website, basilan.gov.ph, shows an error on every page.",
+   "services": []
+  },
+  {
+   "key": "basilan/akbar",
+   "name": "Akbar",
+   "kind": "Municipality",
+   "province": "Basilan",
+   "provinceSlug": "basilan",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "basilan/al-barka",
+   "name": "Al-Barka",
+   "kind": "Municipality",
+   "province": "Basilan",
+   "provinceSlug": "basilan",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "basilan/hadji-mohammad-ajul",
+   "name": "Hadji Mohammad Ajul",
+   "kind": "Municipality",
+   "province": "Basilan",
+   "provinceSlug": "basilan",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "basilan/hadji-muhtamad",
+   "name": "Hadji Muhtamad",
+   "kind": "Municipality",
+   "province": "Basilan",
+   "provinceSlug": "basilan",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "basilan/lamitan",
+   "name": "Lamitan",
+   "kind": "City",
+   "province": "Basilan",
+   "provinceSlug": "basilan",
+   "website": "https://www.lamitancity.gov.ph/lcw/",
+   "facebook": "https://www.facebook.com/LamitanCityOfficial",
+   "charter": {
+    "label": "City of Lamitan, service pages of its website",
+    "url": "https://www.lamitancity.gov.ph/lcw/services/"
+   },
+   "charterStatus": "published",
+   "charterNote": "Its services are read from its website's service pages; it publishes no document titled Citizen's Charter.",
+   "services": [
+    {
+     "name": "Processing of Application for lease of market stall or Busines Permit",
+     "summary": "Get a lease for a stall in the city public market.",
+     "for": [
+      "businesses"
+     ],
+     "category": "business",
+     "requirements": [
+      "3 pieces of 2×2 colored picture",
+      "Community tax certificate"
+     ],
+     "fee": "P300 (application form)",
+     "time": null,
+     "where": "City public market (EEDMO)",
+     "source": "https://www.lamitancity.gov.ph/lcw/services/processing-of-application-for-lease-of-market-stall-or-busines-permit/"
+    },
+    {
+     "name": "Clientele / Students who uses Library Materials for Research and Studies",
+     "summary": "Use the city library's books and materials for research and study.",
+     "for": [
+      "students",
+      "researchers"
+     ],
+     "category": "education",
+     "requirements": [
+      "School ID/Any valid ID’s"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "City Library",
+     "source": "https://www.lamitancity.gov.ph/lcw/services/clientele/"
+    },
+    {
+     "name": "Applying for the LGU Subsidized Scholarship Program",
+     "summary": "Apply for a city-funded scholarship for high school or college if your family is poor.",
+     "for": [
+      "students",
+      "families-in-need"
+     ],
+     "category": "education",
+     "requirements": [
+      "Bio Data with 2×2 picture",
+      "Form 138 or hight school report card",
+      "Copy of latest income tax return of the family",
+      "Barangay certification that the applicant is a resident of the barangay and that he/she is of good moral character",
+      "All photocopies must be authenticated"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "City Human Resource Management Office (HRMO)",
+     "source": "https://www.lamitancity.gov.ph/lcw/services/scholarship-program/"
+    },
+    {
+     "name": "Issuance of Business Permit and Licenses",
+     "summary": "Get a new or renewed permit to run a business in Lamitan City.",
+     "for": [
+      "businesses"
+     ],
+     "category": "business",
+     "requirements": [
+      "Residence certificate",
+      "Barangay clearance",
+      "Police clearance",
+      "Court clearance",
+      "Application to lease for market stalls (for market occupants)",
+      "Medical cerificate",
+      "Sanitary permits",
+      "Zoning clearance",
+      "Old Business Permit for renewal",
+      "4 pcs 2×2 picture of the owner/Manager"
+     ],
+     "fee": null,
+     "time": null,
+     "where": null,
+     "source": "https://www.lamitancity.gov.ph/lcw/services/business-permit-and-licenses/"
+    },
+    {
+     "name": "Availing of Public Customer Assistance",
+     "summary": "Get a referral or endorsement letter for medical aid, a job, or a government transfer.",
+     "for": [
+      "families-in-need",
+      "patients",
+      "job-seekers",
+      "workers"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "For Medical Assistance: Medical prescriptions",
+      "For Medical Assistance: Clinical diagnosis or doctor’s referral",
+      "For Job Recommendation: Complete bio-data or curriculum vitae",
+      "For Job Recommendation: Police clearance",
+      "For Job Recommendation: Past employment records",
+      "For Job Recommendation: Other related documents",
+      "For Endorsement for Transfer: Letter request for transfer",
+      "For Endorsement for Transfer: Letter of request for transfer stating therein reasons for request",
+      "For Endorsement for Transfer: Certified service record, if available"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "Office of the City Mayor",
+     "source": "https://www.lamitancity.gov.ph/lcw/services/public-customer-assistance/"
+    },
+    {
+     "name": "Zoning Clearance Application",
+     "summary": "Get zoning or locational clearance for a business, building, or land subdivision.",
+     "for": [
+      "businesses",
+      "everyone"
+     ],
+     "category": "permits",
+     "requirements": [
+      "For Temporary Use Permit: Certification (business permit)",
+      "For Temporary Use Permit: Location Clearance",
+      "For Temporary Use Permit: Decision on Zoning",
+      "For Building Permit: Plan with site development/location",
+      "For Building Permit: Cost of estimates and bill of materials",
+      "For Building Permit: Location Clearance",
+      "For Building Permit: Transfer Certificate of Title (Latest)",
+      "For Building Permit: Tax Receipt/Tax Clearance (Latest)",
+      "For Building Permit: Decision of Zoning",
+      "For Building Permit: Certification",
+      "For Building Permit: Environmental Compliance Certificate (ECC)",
+      "For Building Permit: Pollution Control Certificate (DENR)",
+      "For Subdivision: Application for subdivision form",
+      "For Subdivision: Application for Development Permit Form",
+      "For Subdivision: Application for preliminary approval form",
+      "For Subdivision: Subdivision Approval Form",
+      "For Subdivision: Transfer Certificate of Title (Latest)",
+      "For Subdivision: Tax Declaration (Latest)",
+      "For Subdivision: Tax Receipt/Tax Clearance (Latest)",
+      "For Subdivision: Subdivision Plan with Vicinity Map (duly signed by the Geodetic Engineer)",
+      "For Subdivision: Location Clearance",
+      "For Subdivision: Certification"
+     ],
+     "fee": "Temporary use permit: zoning certification fee P100.00, locational clearance P200.00. Building permit: zoning certification, location clearance and land use and zoning fees 1.00; coe x 0.01%; 200.00. Subdivision: subdivision fee P100, development permit P200, preliminary approval zoning certification fee P220",
+     "time": null,
+     "where": "City Planning and Development Office (CPDO), Zoning; fees paid at the City Treasury Office",
+     "source": "https://www.lamitancity.gov.ph/lcw/services/zoning-clearance-application/"
+    },
+    {
+     "name": "Requesting the Preparation of Plans and Programs of Work",
+     "summary": "Ask city engineers to prepare plans, estimates and programs of work for roads, drainage or buildings.",
+     "for": [
+      "local-governments",
+      "government-offices",
+      "everyone"
+     ],
+     "category": "government",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "City Engineer’s Office (Construction and Maintenance Division)",
+     "source": "https://www.lamitancity.gov.ph/lcw/services/programs-of-work/"
+    },
+    {
+     "name": "Processing of Building Permit",
+     "summary": "Get a building permit approved before constructing a building.",
+     "for": [
+      "everyone"
+     ],
+     "category": "permits",
+     "requirements": [
+      "If applicant is the Registered Owner of the Lot: Certified true copy of TCT and approved lot plan duly signed by the Geodetic Engineer (3 copies each)",
+      "Tax Declaration (3 photo copies each)",
+      "Current Real Property Tax Receipt (3 photo copies each)",
+      "Six (6) sets of plans (blue print) signed and sealed by duly licensed Architect or Civil Engineer professional, Electrical Engineer, Sanitary/Plumbing Engineer, Mechanical Engineer and Owner of Applicant",
+      "Six (6) sets of estimates/Bill of Materials signed and sealed by a duly licensed Architect or Civil Engineer Owner",
+      "Structural analysis/soil bearing capacity duly signed by structural Engineer and owner",
+      "Barangay Clearance for securing Building Permit Forms signed by Civil Engineer and Owner/Applicant",
+      "ECC-Environment Compliace Certificates (from DENR)",
+      "If Applicant is not Registered Owner of the Lot (3 Photo copies each): Duly notarized copy of the contract of least, or",
+      "Duly notarized copy of the deed of Sale"
+     ],
+     "fee": "According to NBC fee",
+     "time": null,
+     "where": "Office of the Building Official (City Engineer’s Office)",
+     "source": "https://www.lamitancity.gov.ph/lcw/services/building-permit/"
+    },
+    {
+     "name": "Cancellation, Revision or Correction of Assessments",
+     "summary": "Have the assessment on your real property cancelled, revised or corrected.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Letter of request for cancellation, correction or revision of assessment",
+      "Tax Clearance Certificate"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "City Assessor’s Office",
+     "source": "https://www.lamitancity.gov.ph/lcw/services/correction-of-assessments/"
+    },
+    {
+     "name": "Securing Assessment for a new building or machinery and real properties declared for the first time",
+     "summary": "Get a new tax declaration for a new building, machinery or first-time declared property.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Letter of request/Personal request",
+      "Building permit/floor plan",
+      "Certificate of Occupancy",
+      "Receipts of machinery acquisition"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "City Assessor’s Office",
+     "source": "https://www.lamitancity.gov.ph/lcw/services/assessment-new-building/"
+    },
+    {
+     "name": "Securing certified true copy of tax declarations, landholding or no improvements",
+     "summary": "Get a certified copy of a tax declaration or a landholding or no-improvement certification.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Photocopy of Tax Declaration/Personal Request",
+      "Request Slip of the BIR/Register of Deeds",
+      "Certification fee of P50.00 per request"
+     ],
+     "fee": "P50.00 per request",
+     "time": null,
+     "where": "City Assessor’s Office",
+     "source": "https://www.lamitancity.gov.ph/lcw/services/securing-tax-declarations/"
+    },
+    {
+     "name": "Annotating or cancelling bail bonds on tax declaration’s & verifying status of real property tax assessment on tax map",
+     "summary": "Get a bail bond annotated or cancelled on a tax declaration, or find property on the tax map.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Trial court order for annotation/cancellation",
+      "Photocopy of Title or Tax Declaration"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "City Assessor’s Office (Records and Tax Mapping)",
+     "source": "https://www.lamitancity.gov.ph/lcw/services/tax-map/"
+    },
+    {
+     "name": "Securing Mayor’s Clearance",
+     "summary": "Get a mayor's clearance for a firearms license or job application.",
+     "for": [
+      "everyone",
+      "job-seekers"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Original copy if police clearance",
+      "original copy of barangay clearance",
+      "Latest community tax certificate",
+      "Official Receipts (from the City Treasurer’s Office)",
+      "1 set of doc. Stamp",
+      "Photocopies of the Barangay clearance and police clearance"
+     ],
+     "fee": "P50.00",
+     "time": null,
+     "where": "Office of the City Mayor",
+     "source": "https://www.lamitancity.gov.ph/lcw/services/mayors-clearance/"
+    },
+    {
+     "name": "Front line Services: Delivery of basic social services",
+     "summary": "Get social welfare help for children, youth, women, elderly, disabled people, disaster victims and families.",
+     "for": [
+      "children",
+      "out-of-school-youth",
+      "youth",
+      "women",
+      "senior-citizens",
+      "persons-with-disability",
+      "families-in-need"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Form 200",
+      "Barangay Certificate",
+      "Certified Through Copy",
+      "Certification of Eligibility",
+      "Birth Certificate/Marriage Contract",
+      "Family Data Survey Form"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "City Social Welfare and Development Office",
+     "source": "https://www.lamitancity.gov.ph/lcw/services/front-line-services/"
+    },
+    {
+     "name": "Registration of Birth, Marriage, Death Correction of entries under R.A. 9048",
+     "summary": "Register a birth, marriage or death, correct civil registry entries, or get certified copies.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Birth (Current): marriage contract of parents and attachments for non-christian",
+      "Delayed Registration of Birth, 1 month to 17 years old: Marriage contract of parents, baptismal certificate, affidavit of birth with two witnesses, school records form 137, barangay certification",
+      "Delayed Registration of Birth, 18 yrs old and above: CRS Form No.1 (Negative Certification of Birth at NSO Regional Office Zamboanga City), Xerox Copy of any valid ID’s, Service Records, 1 copy of 2×2 picture, other requirements mentioned above",
+      "Death: For vehicular or shooting accident, spot report from the police authority, Barangay certification",
+      "Delayed registration of death: Affidavit of delayed registration of death by any of the nearest relative of the deceased or by any person having legal charge of the deceased when he was still alive",
+      "Marriage: Certification of No Marriage records (CENOMAR), live birth certificate of both contracting parties, pre-cana seminar, POPCOM Seminar, permission to marry for AFP personnel only",
+      "Marriage under article 34: Joint affidavit with years union as husband and wife with no legal impediments",
+      "Delayed Registration of Marriage: Copy of Marriage Certificate to be registered, affidavit executed by the registrant surrounding the marriage and the reason of the cause of the delayed, certification from the church",
+      "Out of Town registration: The same requirement as delayed registration of birth with additional of affidavit of out of town, registration attested with two witness, money order address to civil registrar where it is forwarded for processing fee and other incidental expenses",
+      "Annotated civil registry documents affected by R.A. 9048: City/Municipal Registrar and Civil Registrar General approved petition, certificate, certificate of finality, annotated certificate, original (un-annotated) certificate",
+      "Certificate true copy/Form 1a/Authentication: Processing Fee, Documentary stamp"
+     ],
+     "fee": "Birth P80.00; Death P80.00; Marriage License P100.00; Certified True Copy P80.00; Attachment P40.00; Authentication P30.00; Legitimation P70.00",
+     "time": null,
+     "where": "Office of the City Civil Registrar",
+     "source": "https://www.lamitancity.gov.ph/lcw/services/ra-9048/"
+    }
+   ]
+  },
+  {
+   "key": "basilan/lantawan",
+   "name": "Lantawan",
+   "kind": "Municipality",
+   "province": "Basilan",
+   "provinceSlug": "basilan",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, lantawan.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "basilan/maluso",
+   "name": "Maluso",
+   "kind": "Municipality",
+   "province": "Basilan",
+   "provinceSlug": "basilan",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "basilan/sumisip",
+   "name": "Sumisip",
+   "kind": "Municipality",
+   "province": "Basilan",
+   "provinceSlug": "basilan",
+   "website": "https://sumisip.gov.ph/",
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "Its website shows a Citizen's Charter card with no file behind it.",
+   "services": []
+  },
+  {
+   "key": "basilan/tabuan-lasa",
+   "name": "Tabuan-Lasa",
+   "kind": "Municipality",
+   "province": "Basilan",
+   "provinceSlug": "basilan",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, tabuan-lasa.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "basilan/tipo-tipo",
+   "name": "Tipo-Tipo",
+   "kind": "Municipality",
+   "province": "Basilan",
+   "provinceSlug": "basilan",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, tipo-tipo.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "basilan/tuburan",
+   "name": "Tuburan",
+   "kind": "Municipality",
+   "province": "Basilan",
+   "provinceSlug": "basilan",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "basilan/ungkaya-pukan",
+   "name": "Ungkaya Pukan",
+   "kind": "Municipality",
+   "province": "Basilan",
+   "provinceSlug": "basilan",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur",
+   "name": "Lanao del Sur",
+   "kind": "Province",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": "https://lanaodelsur.gov.ph/",
+   "facebook": "https://www.facebook.com/PIO.LanaoDelSur",
+   "charter": {
+    "label": "Provincial Government of Lanao del Sur, Citizen's Charter of 9 offices, 2024",
+    "url": "https://lanaodelsur.gov.ph/citizens-charter/"
+   },
+   "charterStatus": "published",
+   "charterNote": null,
+   "services": [
+    {
+     "name": "Use of Ambulance",
+     "summary": "Get a provincial ambulance and driver to transport a patient; you provide the fuel.",
+     "for": [
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [
+      "Duly signed trip ticket"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "Provincial Governor's Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PGO-Citizens-Charter-v1.pdf"
+    },
+    {
+     "name": "Financial Assistance Service",
+     "summary": "Get cash or a check from the Governor's Office to help with medical bills.",
+     "for": [
+      "patients",
+      "families-in-need"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Medical Assistance Letter (addressed to the Governor)",
+      "Medical Abstract",
+      "Statement of Account",
+      "Certificate of Indigency (from Barangay Captain)",
+      "Brief Social Case Study Report (from MSWDO/LGU)",
+      "Photocopy of ID"
+     ],
+     "fee": "None",
+     "time": "35 Minutes",
+     "where": "Provincial Governor's Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PGO-Citizens-Charter-v1.pdf"
+    },
+    {
+     "name": "Free Medicine Assistance Service",
+     "summary": "Get a referral for free medicines when you bring a government doctor's prescription.",
+     "for": [
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [
+      "Doctor's prescription (must be from a Government Doctor or from Rural Health Unit)"
+     ],
+     "fee": "None",
+     "time": "30 Minutes",
+     "where": "Provincial Governor's Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PGO-Citizens-Charter-v1.pdf"
+    },
+    {
+     "name": "Written Communications Tracking System",
+     "summary": "Submit a letter to the Governor and have it tracked, endorsed or referred to the right office.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Communication to be submitted to Governor"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "Provincial Governor's Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PGO-Citizens-Charter-v1.pdf"
+    },
+    {
+     "name": "Information Assistance Services",
+     "summary": "Fill out a form at the front desk and meet the Governor if available.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Get & fill out form from information desk"
+     ],
+     "fee": "None",
+     "time": "7 Minutes",
+     "where": "Provincial Governor's Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PGO-Citizens-Charter-v1.pdf"
+    },
+    {
+     "name": "Special Projects Assistance to LGU & NGO",
+     "summary": "Local governments and NGOs can request provincial support for a project through a signed MOA.",
+     "for": [
+      "local-governments"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Letter Request Resolution with Program of Works"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "Provincial Governor's Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PGO-Citizens-Charter-v1.pdf"
+    },
+    {
+     "name": "Venue Reservations",
+     "summary": "Reserve a provincial venue for your event.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter Request",
+      "Get and fill-out form from the Receiving Clerk"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "Provincial Governor's Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PGO-Citizens-Charter-v1.pdf"
+    },
+    {
+     "name": "Scheduling of Photo/Video Coverage",
+     "summary": "Request a provincial photographer and videographer to cover your event.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter of Request"
+     ],
+     "fee": null,
+     "time": "30 minutes",
+     "where": "Provincial Information Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PIO-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Request of Photos and Video Clips",
+     "summary": "Get copies of the province's photos and video clips on your own storage device.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Storage devices such as external hard drive, flash drive (USB)"
+     ],
+     "fee": null,
+     "time": "2 hours",
+     "where": "Provincial Information Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PIO-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Request for Tarpaulin Design",
+     "summary": "Get a tarpaulin layout designed by the Provincial Information Office.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter request and details needed for the design",
+      "Storage devices such as external hard drive, flash drive (USB)"
+     ],
+     "fee": null,
+     "time": "1 week",
+     "where": "Provincial Information Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PIO-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Request for Information, Education and Communication (IEC Design)",
+     "summary": "Get information and education materials designed by the Provincial Information Office.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter request and details needed for the design",
+      "Storage devices such as external hard drive, flash drive (USB)"
+     ],
+     "fee": null,
+     "time": "1 week",
+     "where": "Provincial Information Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PIO-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Request for Programme Design",
+     "summary": "Get an event programme designed by the Provincial Information Office.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter request and details needed for the design",
+      "Storage devices such as external hard drive, flash drive (USB)"
+     ],
+     "fee": null,
+     "time": "1 week",
+     "where": "Provincial Information Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PIO-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Request for Publication of Articles",
+     "summary": "Have your article edited and published by the Provincial Information Office.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter request and details needed for the Article"
+     ],
+     "fee": null,
+     "time": "1 hour",
+     "where": "Provincial Information Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PIO-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Request for Information Dissemination via 2-Way Radio",
+     "summary": "Have an announcement checked and broadcast over the province's 2-way radio.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter request and details needed for the Article"
+     ],
+     "fee": null,
+     "time": "1 hour",
+     "where": "Provincial Information Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PIO-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Assistance to Visitor/Transactor",
+     "summary": "Get a visitor's tag and entry to the Provincial Capitol after signing the logbook.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Present I.D. (sign in the visitor's log book at the entrance gate of the Capitol)"
+     ],
+     "fee": "None",
+     "time": "20 Seconds",
+     "where": "Provincial Security Force Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PSF-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Assistance to Parking or Traffic Arrangement inside @ Outskirt of Capitol (i.e. Vehicular Incident inside A.O.R.)",
+     "summary": "Get help with parking, traffic or a vehicle incident at the Capitol, including mediation and settlement.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "I.D. card",
+      "Disclose facts"
+     ],
+     "fee": "None",
+     "time": "2 Days",
+     "where": "Provincial Security Force Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PSF-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Assistance to Owner of Lost and Found Article(s)",
+     "summary": "Report or claim a lost or found item at the Provincial Capitol.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Valid I.D. card",
+      "Details of lost and/or found article"
+     ],
+     "fee": "None",
+     "time": "3 Minutes (found); 1 Day (lost)",
+     "where": "Provincial Security Force Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PSF-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Security Assistance to the Handling of Amicable Settlement (Rido-Family Feud) and Social Activities/Programs",
+     "summary": "Get security guards assigned to a rido settlement or a social activity.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter request or referral from P-Governor's Office"
+     ],
+     "fee": "None",
+     "time": "5 Minutes",
+     "where": "Provincial Security Force Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PSF-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Complaint for Theft, Robbery and Other Unlawful Acts Committed inside the AOR (Capitol)",
+     "summary": "File a complaint about theft or other crimes at the Capitol and have it investigated.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Valid I.D.",
+      "Details of event"
+     ],
+     "fee": "None",
+     "time": "2 Days",
+     "where": "Provincial Security Force Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PSF-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Provision/Release of Socio-Economic Data, Development Plans, Maps and Other Documents",
+     "summary": "Get copies of the province's socio-economic data, development plans and maps.",
+     "for": [
+      "government-offices",
+      "researchers",
+      "students"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Request Letter from the agency head stating the data requested addressed to the Provincial Planning and Development Coordinator",
+      "Fill up request form and present valid ID for walk-in client",
+      "Blank CD/DVD, USB"
+     ],
+     "fee": "None",
+     "time": "28 Minutes",
+     "where": "Provincial Planning and Development Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PPDO-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Project Proposal Preparation",
+     "summary": "Have the planning office prepare a project proposal for your agency.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "requirements": [
+      "Letter request from the agency head stating the project proposal addressed to the PPDC"
+     ],
+     "fee": "None",
+     "time": "5 Days, 1 Hour and 6 Minutes",
+     "where": "Provincial Planning and Development Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PPDO-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Financial Assistance for RA 9208/9262 Victims",
+     "summary": "Victims of trafficking or violence against women and children get a cash assistance check.",
+     "for": [
+      "women",
+      "children"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Medical Certificate",
+      "Case Study Report of MSWDO and PSWDO",
+      "Certificate of Eligibility of MSWDO/PSWDO",
+      "Police Blotter"
+     ],
+     "fee": "None",
+     "time": "5 Days, 1 Hour and 6 Minutes",
+     "where": "Provincial Planning and Development Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PPDO-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Technical Assistance",
+     "summary": "Get field visits and farming or fisheries advice from provincial agriculture technicians.",
+     "for": [
+      "farmers",
+      "fisherfolk"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Project Proposal / Letter Request"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "Office of the Provincial Agriculturist",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/Agriculturist-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Financial Assistance",
+     "summary": "Get loans, planting materials or counterpart support for farming and fisheries projects.",
+     "for": [
+      "farmers",
+      "fisherfolk"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Project Proposal / Letter Request / Resolution / Application Form"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "Office of the Provincial Agriculturist",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/Agriculturist-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Medical Check-Up / Consultation",
+     "summary": "See a provincial doctor for a check-up, diagnosis and prescribed medicines.",
+     "for": [
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Provincial Health Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/Health-Office-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Dental Services",
+     "summary": "Get a dental examination and treatment from the provincial dentist.",
+     "for": [
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Provincial Health Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/Health-Office-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Prenatal Check-Up",
+     "summary": "Pregnant women get a prenatal examination, health advice and prenatal medicines.",
+     "for": [
+      "women"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Provincial Health Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/Health-Office-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Medical Certificates",
+     "summary": "Get a medical certificate after a physical examination by the physician on duty.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Provincial Health Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/Health-Office-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Issuance of Permits (Quarry, Sand and Gravel, Pebble-Picking, Guano, Gemstone-Gathering)",
+     "summary": "Get a provincial permit to quarry, extract sand and gravel, or gather guano, pebbles or gemstones.",
+     "for": [
+      "businesses",
+      "cooperatives"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Application Form",
+      "Clearance from the government agencies concerned that may be affected by the proposed project, or written permission from the land owner(s) and surface owner(s) of the area applied",
+      "Survey plan of the area for extraction (Five blueprint copies and the original tracing plan of the area applied for duly signed and sealed by a Licensed Geodetic Engineer)",
+      "Certified copy of Articles of Incorporation/Partnership/Association and By-Laws, if applicable, to be registered with PENRO",
+      "Duly notarized Special Power of Attorney if application is filed by an agent or representative to be registered with PENRO",
+      "Audited Financial Statement for Corporation/Partnership or Income Tax Return immediately preceding three (3) years for individuals, or credit lines",
+      "Area Clearance (from MGB - Regional Office)",
+      "Certificate Environmental Management and Community Relations Record (CEMCRR) (from MGB - Regional Office)",
+      "Certificate of Lodging (from MRFC)",
+      "Work Program",
+      "Environmental Compliance Certificate (ECC) (EMB Region)",
+      "Excise Tax Certificate (from the BIR) (for renewal of permits only)",
+      "Certificate of Posting (from the concerned LGU's)",
+      "Project Proposal (for Government Gratuitous Permit Application)",
+      "Surety Bond except for Gratuitous and Exclusive Sand & Gravel",
+      "Permit",
+      "Verification Report (from PENRO)",
+      "Other supporting papers as the concerned Regional Office/Provincial Mining Regulatory Board may require for the applicant may submit"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "Provincial Environment and Natural Resources Office",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PENRO-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Issuance of Transport Permit and Mineral Export Permit",
+     "summary": "Get a permit to transport minerals out of the province or export them abroad.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Application Form (from PENRO - MGDS) (2 copies)",
+      "Photocopy (4 sets) of Mining/Quarry Permit",
+      "Photocopy (4 sets) of Mineral products Purchase Order",
+      "Photocopy (4 sets) of Delivery Receipt",
+      "Photocopy (4 sets) of Sales Invoice",
+      "Photocopy (4 sets) of BIR Official Receipt for Excise Tax payment for Mineral Products",
+      "Photocopy (4 sets) of Registered Special Power of Attorney (if filed by a representative of the applicant)"
+     ],
+     "fee": null,
+     "time": "1 day, 10 minutes",
+     "where": "Provincial Environment and Natural Resources Office (MGDS)",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PENRO-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Request for the Use of Gov't. Equipments and Facilities/Renting Out of Facilities",
+     "summary": "Borrow or rent provincial facilities and equipment such as tables and chairs.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter request/verbal",
+      "Fully accomplished reservation borrower's slip form",
+      "Official Receipt of payment"
+     ],
+     "fee": "Rental fee (see attached rental fees on official receipt)",
+     "time": "20 minutes",
+     "where": "Provincial General Services Office (Admin Division)",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/PGSO-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Payment of Real Property Tax",
+     "summary": "Pay your yearly real property tax and get an official receipt.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Official Receipt (Last Payment)",
+      "Statement of Accounts",
+      "Tax Declaration"
+     ],
+     "fee": "Basic (1% of the Assessed Value); SEF (1% of the Assessed Value)",
+     "time": null,
+     "where": "Provincial Treasurer's Office (Revenue Operations Division)",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/Treasurer-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Payment of Transfer Tax",
+     "summary": "Pay the transfer tax when property ownership changes hands.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Latest Tax Declaration",
+      "Notarized Documents",
+      "Official Receipt of Last Payment"
+     ],
+     "fee": "50% of 1% of the Market Value or amount of sale whichever is higher; 25% Surcharge, 2% interest/mo. not to exceed 72% (after 2 mos. grace period)",
+     "time": "37 minutes",
+     "where": "Provincial Treasurer's Office (Revenue Operations Division)",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/Treasurer-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Payment of Professional Tax",
+     "summary": "Licensed professionals pay their yearly professional tax and get an official receipt.",
+     "for": [
+      "workers"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Updated/Renewed PRC License",
+      "In the absence of PRC ID, Proof of Payment"
+     ],
+     "fee": "Bracket A: P500.00 (doctors, dentists, lawyers, architects, CPAs, engineers and similar); Bracket B: P400.00 (nurses, midwives and all other professions)",
+     "time": "6 minutes",
+     "where": "Provincial Treasurer's Office (Revenue Operations Division)",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/Treasurer-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Payment of Franchise Tax",
+     "summary": "Businesses with a franchise pay the provincial franchise tax.",
+     "for": [
+      "businesses"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Audited Financial Report of the previous year",
+      "Annual Gross Receipts of the previous year",
+      "Statement of Cash Receipts"
+     ],
+     "fee": "50% of 1% of the Gross Receipts",
+     "time": "11 minutes",
+     "where": "Provincial Treasurer's Office (Revenue Operations Division)",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/Treasurer-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Payment of Sand & Gravel, Guano, Quarry and Other Mineral Resources",
+     "summary": "Pay the permit fees and taxes for quarrying and mineral extraction.",
+     "for": [
+      "businesses",
+      "cooperatives"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Complete and approved documents from concerned agencies"
+     ],
+     "fee": "Varies by kind of permit (e.g. Private Gratuitous P580; Government Gratuitous P460+; Pebble-Picking P1,680+; Industrial P9,550.00); see fee tables",
+     "time": "10 minutes",
+     "where": "Provincial Treasurer's Office (Revenue Operations Division)",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/Treasurer-Citizens-Charter_v1.pdf"
+    },
+    {
+     "name": "Payment of Annual Fixed Tax on Delivery Trucks and Vans",
+     "summary": "Pay the yearly fixed tax on your delivery trucks, vans and motorcycles.",
+     "for": [
+      "businesses"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Previous O.R."
+     ],
+     "fee": "Large Truck Php 500.00; Medium Trucks Php 300.00; Small Vans & Jeeps Php 200.00; Motorized Cycle Php 50.00; Annual Permit Fee Php 200.00; Sticker Fee Php 50.00",
+     "time": "9 minutes",
+     "where": "Provincial Treasurer's Office (Revenue Operations Division)",
+     "source": "https://lanaodelsur.gov.ph/wp-content/uploads/2024/01/Treasurer-Citizens-Charter_v1.pdf"
+    }
+   ]
+  },
+  {
+   "key": "lanao-del-sur/amai-manabilang",
+   "name": "Amai Manabilang",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/bacolod-kalawi",
+   "name": "Bacolod-Kalawi",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, bacolod-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/balabagan",
+   "name": "Balabagan",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/balindong",
+   "name": "Balindong",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, balindog-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/bayang",
+   "name": "Bayang",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/binidayan",
+   "name": "Binidayan",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/buadiposo-buntong",
+   "name": "Buadiposo-Buntong",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/bubong",
+   "name": "Bubong",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/butig",
+   "name": "Butig",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/calanogas",
+   "name": "Calanogas",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/ditsaan-ramain",
+   "name": "Ditsaan-Ramain",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, ditsaanramain-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/ganassi",
+   "name": "Ganassi",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, ganassi-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/kapai",
+   "name": "Kapai",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, kapai-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/kapatagan",
+   "name": "Kapatagan",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, kapatagan-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/lumba-bayabao",
+   "name": "Lumba-Bayabao",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, lumbabayabao-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/lumbaca-unayan",
+   "name": "Lumbaca-Unayan",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/lumbatan",
+   "name": "Lumbatan",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, lumbatan-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/lumbayanague",
+   "name": "Lumbayanague",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, lumbayanague-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/madalum",
+   "name": "Madalum",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, madalum-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/madamba",
+   "name": "Madamba",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, madamba-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/maguing",
+   "name": "Maguing",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, maguing-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/malabang",
+   "name": "Malabang",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, malabang.com.ph, is a parked domain.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/marantao",
+   "name": "Marantao",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/marawi",
+   "name": "Marawi",
+   "kind": "City",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/marogong",
+   "name": "Marogong",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/masiu",
+   "name": "Masiu",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, masiu-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/mulondo",
+   "name": "Mulondo",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/pagayawan",
+   "name": "Pagayawan",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/piagapo",
+   "name": "Piagapo",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, piagapo-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/picong",
+   "name": "Picong",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, sultangumander-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/poona-bayabao",
+   "name": "Poona Bayabao",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, poonabayabao-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/pualas",
+   "name": "Pualas",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/saguiaran",
+   "name": "Saguiaran",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, saguiaran-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/sultan-dumalondong",
+   "name": "Sultan Dumalondong",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, sultandumalondong-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/tagoloan-ii",
+   "name": "Tagoloan II",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/tamparan",
+   "name": "Tamparan",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, tamparan-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/taraka",
+   "name": "Taraka",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": "https://taraka.gov.ph/",
+   "facebook": "https://www.facebook.com/MunTaraka/",
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "Its Citizen's Charter page lists its offices and phone numbers, but no requirements, fees or times.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/tubaran",
+   "name": "Tubaran",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/tugaya",
+   "name": "Tugaya",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, tugaya-lds.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "lanao-del-sur/wao",
+   "name": "Wao",
+   "kind": "Municipality",
+   "province": "Lanao del Sur",
+   "provinceSlug": "lanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-norte",
+   "name": "Maguindanao del Norte",
+   "kind": "Province",
+   "province": "Maguindanao del Norte",
+   "provinceSlug": "maguindanao-del-norte",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-norte/barira",
+   "name": "Barira",
+   "kind": "Municipality",
+   "province": "Maguindanao del Norte",
+   "provinceSlug": "maguindanao-del-norte",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-norte/buldon",
+   "name": "Buldon",
+   "kind": "Municipality",
+   "province": "Maguindanao del Norte",
+   "provinceSlug": "maguindanao-del-norte",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, buldon.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-norte/datu-blah-t-sinsuat",
+   "name": "Datu Blah T. Sinsuat",
+   "kind": "Municipality",
+   "province": "Maguindanao del Norte",
+   "provinceSlug": "maguindanao-del-norte",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-norte/datu-odin-sinsuat",
+   "name": "Datu Odin Sinsuat",
+   "kind": "Municipality",
+   "province": "Maguindanao del Norte",
+   "provinceSlug": "maguindanao-del-norte",
+   "website": "https://datuodinsinsuat.gov.ph/",
+   "facebook": "https://www.facebook.com/profile.php?id=61578703077374",
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "Its website's Transparency page is empty.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-norte/kabuntalan",
+   "name": "Kabuntalan",
+   "kind": "Municipality",
+   "province": "Maguindanao del Norte",
+   "provinceSlug": "maguindanao-del-norte",
+   "website": "https://kabuntalan.gov.ph/",
+   "facebook": "https://www.facebook.com/Kabs.gov.ph.mag/",
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "Its website is a one-page placeholder.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-norte/matanog",
+   "name": "Matanog",
+   "kind": "Municipality",
+   "province": "Maguindanao del Norte",
+   "provinceSlug": "maguindanao-del-norte",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-norte/northern-kabuntalan",
+   "name": "Northern Kabuntalan",
+   "kind": "Municipality",
+   "province": "Maguindanao del Norte",
+   "provinceSlug": "maguindanao-del-norte",
+   "website": "https://northernkabuntalan.substack.com/",
+   "facebook": null,
+   "charter": {
+    "label": "Municipality of Northern Kabuntalan, 2022 Updated Citizen's Charter Handbook",
+    "url": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+   },
+   "charterStatus": "published",
+   "charterNote": "Its charter is posted on its Substack site; its own .gov.ph site is a placeholder.",
+   "services": [
+    {
+     "name": "Filing of Complaints/Recommendation/Feedback",
+     "summary": "Send the town a complaint, suggestion or feedback about any of its services and get a response.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Filled up form and/or letter of complaint or call the hotline 8888 (Public Assistance and Complaints Desk)"
+     ],
+     "fee": "None",
+     "time": "8 Hours and 47 Minutes",
+     "where": "Office of the Mayor",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Mayor's Clearance",
+     "summary": "Get a clearance stating you have no pending case with the Office of the Mayor.",
+     "for": [
+      "everyone"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Barangay Clearance (Barangay Concerned)",
+      "Police Clearance (Northern Kabuntalan Police Station)",
+      "Court Clearance (if applicable) (Municipal Trial Court)",
+      "Official Receipt (Office of the Municipal Treasurer (Windows 1-2))",
+      "Community Tax Certificate (Office of the Municipal Treasurer (Windows 1-2))"
+     ],
+     "fee": "₱100.00",
+     "time": "12 Minutes",
+     "where": "Office of the Mayor",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Mayor's Permit",
+     "summary": "Get the Mayor's Permit you need to open a business, build or do other regulated work.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Letter of Request (Office of the Mayor)",
+      "Official Receipt (Office of the Municipal Treasurer (Windows 1-7))"
+     ],
+     "fee": "Based on the computation of the BPLD and MEO",
+     "time": "12 Minutes",
+     "where": "Office of the Mayor",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Special Permit",
+     "summary": "Get a special permit from the Mayor to hold an activity or for another purpose.",
+     "for": [
+      "everyone"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Letter of Request (Client)"
+     ],
+     "fee": "None",
+     "time": "9 Minutes",
+     "where": "Office of the Mayor",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Receiving of Application Letters",
+     "summary": "Apply for a job at the municipal government and get checked for the screening schedule.",
+     "for": [
+      "job-seekers"
+     ],
+     "category": "livelihood",
+     "requirements": [
+      "Application Letter (Applicant)",
+      "Fully accomplished Personal Data Sheet (CS Form No.212 Revised 2017) (Download form from the CSC website)",
+      "Performance rating in the last rating period (if applicable) (Previous employer or current agency connected with)",
+      "Photocopy of Certificate of Eligibility, rating/license (if applicable) (Applicant)",
+      "Photocopy of Transcript of Records (Applicant)"
+     ],
+     "fee": "None",
+     "time": "20 Minutes",
+     "where": "Human Resource Development Division",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Assistance on Department of Tourism Accreditation",
+     "summary": "Tourism businesses get help, inspection and endorsement when applying for Department of Tourism accreditation.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Business Permit (2 photocopies) (Client)",
+      "Fully accomplished Application Form (Tourism Division)"
+     ],
+     "fee": "None",
+     "time": "3 Hours and 21 Minutes",
+     "where": "Office of the Municipal Mayor - Tourism Division",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Business Permit (New and Renewal)",
+     "summary": "Get a new or renewed permit to run your business in the town.",
+     "for": [
+      "businesses"
+     ],
+     "category": "business",
+     "requirements": [
+      "Community tax/Cedula for Business (Municipal Treasurer's Office)",
+      "Barangay Clearance for Business (Barangay Hall)",
+      "DTI Registration (single proprietorship) (Department of Trade and Industry)",
+      "SEC Registration (Corporation) (Securities and Exchange Commission)",
+      "CDA Registration (Cooperative) (Cooperative Development Authority)",
+      "Sanitary Permit (c/o Birthing Center) (Municipal Health Office)",
+      "Photocopy of Lessor’s Business Permit (Owner of Establishment)",
+      "Building Permit (Municipal Engineer's Office)",
+      "MENRO Certificate (Municipal Environment and Natural Resources Office)"
+     ],
+     "fee": null,
+     "time": "4 Hours",
+     "where": "Business Permit and Licensing Division",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Certification (For Retirement, Change Ownership, Change Trade Name & Change of Location)",
+     "summary": "Get a certification when closing your business or changing its owner, trade name or location.",
+     "for": [
+      "businesses"
+     ],
+     "category": "business",
+     "requirements": [
+      "Original copy of Business Permit and Business Plate (in case of closure/retirement) (Business establishments)",
+      "Xerox copy of new SEC/DTI/CDA (in case of change in trade name) (Securities & Exchange Commission/Department of Trade & Industry/Cooperative Development Authority)"
+     ],
+     "fee": "₱100.00",
+     "time": "15 Minutes",
+     "where": "Business Permit and Licensing Division",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Request for the use of LGU Facilities",
+     "summary": "Borrow or use municipal facilities for your activity.",
+     "for": [
+      "everyone",
+      "government-offices"
+     ],
+     "category": "community",
+     "requirements": [
+      "Accomplished Request Form (Office of General Services Officer)",
+      "Borrower's Form (Office of General Services Officer)"
+     ],
+     "fee": "None",
+     "time": "10 Minutes",
+     "where": "Office of the General Services Officer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Disaster Preparedness Orientation/Training",
+     "summary": "Your community gets risk mapping, a disaster plan and training to prepare for emergencies.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter of request (Client)"
+     ],
+     "fee": "None",
+     "time": "4 Days",
+     "where": "Office of the Local Disaster and Risk Reduction Management Officer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Disaster Rehabilitation and Recovery",
+     "summary": "Communities hit by disaster get damage assessment, materials and help to rebuild.",
+     "for": [
+      "everyone"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "List of affected areas (Office of the Local Disaster and Risk Reduction Management Officer)"
+     ],
+     "fee": "None",
+     "time": "3 Days",
+     "where": "Office of the Local Disaster and Risk Reduction Management Officer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Disaster Response",
+     "summary": "People affected by a disaster get quick help, including food and non-food relief goods.",
+     "for": [
+      "everyone"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Occurrence of disaster or any emergency situations"
+     ],
+     "fee": "None",
+     "time": "2 Days and 5 Hours",
+     "where": "Office of the Local Disaster and Risk Reduction Management Officer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Application for Marriage License",
+     "summary": "Couples apply for the license they need to marry, valid for 120 days anywhere in the Philippines.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Certificate of No Marriage (CENOMAR)/groom & bride - (1) photocopy (Client)",
+      "Certificate of Family Planning/Marriage Counseling - (1) original copy (Client)",
+      "Parents/Guardian consent or advice for 25 yrs. old below - (2) original copies (Parents/Guardian)",
+      "Certificate of Live Birth (both party) - (1) photocopy (Client)",
+      "Official Receipt (Municipal Treasurer’s Office (Windows 1-7))",
+      "Recent Community Tax Certificate - (1) photocopy (Client)",
+      "Certificate of Legal Capacity to marry/No Impediment/Passport, if foreigner - (2) photocopies w/ original presented (Client)",
+      "Certificate of Divorce, Annulment, if applicable - (2) photocopies w/ original presented (Client)"
+     ],
+     "fee": "See the schedule of fees (₱2.00 to ₱300.00 per item)",
+     "time": "11 Days and 50 Minutes",
+     "where": "Office of the Municipal Civil Registrar",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Registration of Certificate of Live Birth (Timely)",
+     "summary": "Register a baby's birth within 30 days and get the registered birth certificate.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Duly prepared Certificate of Live Birth signed by physician/midwife, if born in Hospital or Clinic - (4) original copies, if not fill-up birth data sheet (Hospital/Lying-in Clinic/Birthing Center)",
+      "Affidavit to Use Surname of Father (AUSF) for unwed parents, pursuant to RA 9255, if applicable - (3) copies original (Client)",
+      "Certificate of Marriage, if married - (1) photocopy (Client)",
+      "Recent Community Tax Certificate - (1) copy original (Client)",
+      "Official Receipt (Office of the Municipal Treasurer (Windows 1-7))"
+     ],
+     "fee": "₱80.00",
+     "time": "33 Minutes",
+     "where": "Office of the Municipal Civil Registrar",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Registration of Certificate of Live Birth (Delayed)",
+     "summary": "Register a birth reported more than 30 days late and get the registered birth certificate.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Negative Result from PSA - (1) original, (2) photocopies (Client)",
+      "Affidavit to Use Surname of Father (AUSF) for unwed parents, pursuant to RA 9255, if applicable - (3) copies original (Client)",
+      "Joint Affidavit of Birth (2 disinterested person) - (3) copies original (Client)",
+      "Certificate of Marriage, if married - (3) photocopies (Client)",
+      "Recent Community Tax Certificate - (1) copy original (Client)",
+      "Official Receipt (Municipal Treasurer’s Office (Windows 1-7))",
+      "At least one (1) of the following: Immunization Card, Baptismal Certificate, School Record form no. 137 - (3) photocopies, or other evidence of birth showing full name, place and date of birth (Client)"
+     ],
+     "fee": "₱130.00",
+     "time": "10 Days and 40 Minutes",
+     "where": "Office of the Municipal Civil Registrar",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Registration of Certificate of Death (Timely)",
+     "summary": "Register a death within 30 days and get the registered death certificate and burial permit.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Duly prepared Certificate of Death signed by physician, if died in hospital - (4) original copies (Hospital)",
+      "Barangay Certification, if died at home - (2) original copies (Client)",
+      "Signature of embalmer, if embalmed - (4) original copies (Embalmer)",
+      "Signature of Municipal Health Officer - (4) original copies (Office of the Municipal Health Officer)",
+      "Official Receipt (Municipal Treasurer’s Office (Windows 1-7))"
+     ],
+     "fee": "₱130.00",
+     "time": "38 Minutes",
+     "where": "Office of the Municipal Civil Registrar",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Registration of Certificate of Death (Delayed)",
+     "summary": "Register a death reported more than 30 days late and get the registered death certificate.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Duly prepared Certificate of Death signed by physician, if died in hospital - (4) original copies (Hospital)",
+      "Barangay Certification, if died at home - (3) original copies (Client)",
+      "Signature of embalmer, if embalmed - (4) original copies (Embalmer)",
+      "Signature of Municipal Health Officer - (4) original copies (Office of the Municipal Health Officer)",
+      "Affidavit of Death - (3) original copies (Client)",
+      "Official Receipt (Municipal Treasurer’s Office (Windows 1-7))"
+     ],
+     "fee": "₱180.00",
+     "time": "10 Days and 38 Minutes",
+     "where": "Office of the Municipal Civil Registrar",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Registration of Certificate of Marriage (Timely)",
+     "summary": "Register a marriage within 30 days and get the registered marriage certificate.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Duly prepared Certificate of Marriage w/ complete signatories - (4) original copies (Solemnizing Officer)",
+      "Official Receipt (Municipal Treasurer’s Office (Windows 1-7))"
+     ],
+     "fee": "₱80.00",
+     "time": "38 Minutes",
+     "where": "Office of the Municipal Civil Registrar",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Registration of Certificate of Marriage (Delayed)",
+     "summary": "Register a marriage reported more than 30 days late and get the registered marriage certificate.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Duly prepared Certificate of Marriage w/ complete signatories - (4) original copies (Solemnizing Officer/Owner)",
+      "Negative Result - (3) photocopies (Client)",
+      "Affidavit of Marriage - (3) original copies (Client)",
+      "Official Receipt (Municipal Treasurer’s Office (Windows 1-7))",
+      "Other evidence showing the date and place of marriage - (3) photocopies (Client)"
+     ],
+     "fee": "₱130.00",
+     "time": "10 Days and 38 Minutes",
+     "where": "Office of the Municipal Civil Registrar",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Application for Change of First Name under RA 9048",
+     "summary": "Petition to change your first name or nickname in civil registry records without going to court.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Civil Registry Documents to be corrected (PSA & LCRO copy) - (3) photocopies (Client)",
+      "At least (2) or more of the following: Baptismal Certificate, School Records, Voters Certification - (3) photocopies, or other authentic documents which support the correct entries (Client)",
+      "Police Clearance - (1) original, (2) photocopies (Client)",
+      "NBI Clearance - (1) original, (2) photocopies (Client)",
+      "Court Clearance - (1) original, (2) photocopies (Client)",
+      "Employment Certification, if employed - (1) original, (2) photocopies (Client)",
+      "Affidavit of Non-Employment, if not employed - (1) original, (2) photocopies (Client)",
+      "Newspaper Publication: Affidavit of Publication - (3) original copy; Newspaper Clippings (two (2) issues) - (1) original (Client)",
+      "Official Receipt (Office of the Municipal Treasurer)",
+      "Certificate of Indigency, for free filing fee for indigent petitioner (Client)"
+     ],
+     "fee": "₱3,000.00",
+     "time": "14 Days, 1 Hour and 3 Minutes",
+     "where": "Office of the Municipal Civil Registrar",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Application for Correction of Clerical Error under RA 9048",
+     "summary": "Petition to fix a typing or clerical error in a civil registry record without going to court.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Civil Registry Documents to be corrected (LCRO/PSA copy) - (3) photocopies (Client)",
+      "At least (2) or more of the following: Baptismal Certificate, School Records, Voters Certification, or other authentic documents which support the correct entries (Client)",
+      "Official Receipt (Municipal Treasurer’s Office (Windows 1-7))",
+      "Certificate of Indigency, for free filing fee for indigent petitioner (Client)"
+     ],
+     "fee": "₱1,000.00",
+     "time": "14 Days and 58 Minutes",
+     "where": "Office of the Municipal Civil Registrar",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Application for Correction of Clerical Error under RA 10172 (Change of Sex/ Day and or Month of Birth)",
+     "summary": "Petition to correct the sex or the day or month of birth on a birth record without court.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Certificate of Live Birth to be corrected - LCRO & PSA copy - (3) photocopies (Client)",
+      "Earliest School Record (Elementary Form No. 137) - (3) photocopies (Client)",
+      "Medical Record, if applicable - (3) photocopies (Client)",
+      "Affidavit of No Medical Record, if not applicable - (1) original, (2) photocopies (Client)",
+      "Baptismal Certificate - (3) photocopies (Client)",
+      "Employment Clearance or Certification, if employed - (3) original (Client)",
+      "Affidavit of Non-employment, if not employed - (1) original, (2) photocopies (Client)",
+      "Police Clearance - (1) original, (2) photocopies (Client)",
+      "NBI Clearance - (1) original, (2) photocopies (Client)",
+      "Medical Certification from Government Physician of birthplace (only for change of sex) - (1) original, (2) photocopies (Client)",
+      "Newspaper Publication: Affidavit of Publication - (3) original copies; Newspaper Clippings (two (2) issues) - (1) original copy (Client)",
+      "Official Receipt (Municipal Treasurer’s Office (Windows 1-7))"
+     ],
+     "fee": "₱3,000.00",
+     "time": "14 Days and 1 Hour",
+     "where": "Office of the Municipal Civil Registrar",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Review the Annual & Supplemental Budget of Barangays",
+     "summary": "Barangays have their annual and supplemental budgets reviewed and endorsed to the Sangguniang Bayan.",
+     "for": [
+      "local-governments"
+     ],
+     "category": "government",
+     "requirements": [
+      "Complete Plans and Programs (Municipal Budget Office)"
+     ],
+     "fee": "None",
+     "time": "26 Minutes",
+     "where": "Office of the Municipal Budget Officer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Facilitate Submission of Barangay Reports",
+     "summary": "Barangays submit their monthly and yearly financial reports for review and recording before audit.",
+     "for": [
+      "local-governments"
+     ],
+     "category": "government",
+     "requirements": [
+      "Punong Barangay Certification (Original & Duplicate Copy) (by barangay)",
+      "Transmittal (Original & Duplicate) (by barangay)",
+      "Reports of Appropriations and Obligations, including SK, LDRRM, GF and PS, Senior Citizen, GAD and BCPC (Original & Duplicate Copy) (by barangay)",
+      "Statements of Appropriations Obligations and Balances (Original & Duplicate Copy) (by barangay)",
+      "Snapshot (Original & Duplicate Copy) (by barangay)",
+      "Cashbook (Original & Duplicate Copy) (by barangay)",
+      "Deposit slip (Original & Duplicate Copy) (by barangay)",
+      "Official Receipt of Collection (Original & Duplicate Copy) (by barangay)",
+      "Report of Collection and Deposits (Original & Duplicate Copy) (by barangay)",
+      "Reports of Accountability for Accountable Form (Original & Duplicate Copy) (by barangay)",
+      "Report of Collection and Remittance (Original & Duplicate Copy) (by barangay)",
+      "Report of Estimated of Actual Income (Original & Duplicate Copy) (by barangay)",
+      "Supporting documents for each cash advance, payment, remittance and liquidation, such as photocopy of check, disbursement vouchers and payrolls (by barangay)"
+     ],
+     "fee": "None",
+     "time": "15 Minutes",
+     "where": "Office of the Municipal Accountant",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Accountant’s Advice for Check Issued",
+     "summary": "Payees' checks are recorded and the accountant's advice is sent to the bank so checks can be released.",
+     "for": [
+      "businesses"
+     ],
+     "category": "suppliers",
+     "requirements": [
+      "Journal Entry Voucher (Office of the Municipal Accountant)",
+      "Checks (Office of the Municipal Treasurer)",
+      "Advice of checks issued (Office of the Municipal Accountant)"
+     ],
+     "fee": "None",
+     "time": "46 Minutes",
+     "where": "Office of the Municipal Accountant",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Processing of Disbursement Voucher/ Payroll & Other Government Money Payment",
+     "summary": "Suppliers' and contractors' payment vouchers are checked for complete papers and available funds.",
+     "for": [
+      "businesses"
+     ],
+     "category": "suppliers",
+     "requirements": [
+      "Purchase of Supplies: Obligation Request, Disbursement Vouchers, Inspection & Acceptance Report, Delivery Receipt, Purchase Request, Purchase Order, Pre & Post Inspection Report, Report of Waste Materials, BIR Form, Letter Request, List of Recipients, Acknowledgement Receipt & Equipment (Original & Duplicate Copy) (by Office/Department)",
+      "Purchase of Services: Obligation Request, Disbursement Vouchers, Acceptance & Inspection Report, Purchase Order/Contract, Purchase Request, Receipt / Delivery Receipt, Abstract of Canvass, Sealed Canvass, BIR Form, Pre & Post Inspection Report, Memorandum of Agreement, List of Recipients, Letter Request, Status of Accomplishment, Certificate of Acceptance (Original & Duplicate Copy) (by Office/Department)",
+      "Public Bidding: Publication, Notice of bid, Abstract of Bid, Bidders Bond, Letter of Award / Acceptance of Bid Proposal, Purchase Order / Contract, Program of Works, Notice of Commerce Work, Report of Accomplishment Certificate, Inspection Report, Performance Bond, Plans & Specifications, Notice of Winning Bidders, Certificate of Acceptance, Blue Print, Statement of Work Accomplish, Certificate of Completion, Bidders Tender Form, Report of Local Inspectorate Team / PMC, Contractors Accreditation, Agency Estimate, Evidence that Contractor is Duly License & Register, Statement of Time Lapse & Work Accomplishment (Original & Duplicate Copy) (by Office/Department)"
+     ],
+     "fee": "None",
+     "time": "19 Minutes",
+     "where": "Office of the Municipal Accountant",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Community Tax Certificate (Cedula)",
+     "summary": "Pay your community tax and get your cedula, often needed for permits and documents.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Accomplished form (Office of the Municipal Treasurer)",
+      "Valid ID (Client)",
+      "Barangay Clearance (optional) (Barangay Concern)"
+     ],
+     "fee": "₱35.00 basic community tax, plus an amount based on salary or income",
+     "time": "4 Minutes",
+     "where": "Office of the Municipal Treasurer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Official Receipts on Business Licenses",
+     "summary": "Pay your business permit and licence fees and get an official receipt.",
+     "for": [
+      "businesses"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Order of Payment (Business Permit and Licensing Division)"
+     ],
+     "fee": "Based on the computation of the Business Permit and Licensing Division",
+     "time": "5 Minutes",
+     "where": "Office of the Municipal Treasurer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Official Receipts on Building Permit Fees and other Fees",
+     "summary": "Pay building permit, zoning, bid document or correction fees and get an official receipt.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Order of Payment (Building Permit) (Office of the Municipal Engineer)",
+      "Order of Payment (Zoning Clearance) (Office of the Municipal Planning and Development Coordinator)",
+      "Order of Payment (Bid Documents) (Bid and Awards Committee Secretariat)",
+      "Order of Payment (Correction of Clerical Errors) (Office of the Municipal Civil Registrar)"
+     ],
+     "fee": "Based on the computation of respective offices",
+     "time": "3 Minutes",
+     "where": "Office of the Municipal Treasurer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Official Receipts on Mayor's Clearance Fees",
+     "summary": "Pay the Mayor's Clearance fee and get an official receipt.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Community Tax Certificate (Municipal Treasurer's Office (Windows 1-7))",
+      "Barangay Clearance (Barangay Hall)"
+     ],
+     "fee": "₱80.00",
+     "time": "3 Minutes",
+     "where": "Office of the Municipal Treasurer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Official Receipts on Other Transactions",
+     "summary": "Pay other dues, such as professional tax or barangay fund transfers, and get an official receipt.",
+     "for": [
+      "everyone",
+      "local-governments"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Professional Tax Receipt (Professional Clients)",
+      "Transfer of Funds of Barangay (Voucher with Check) (Barangay Concern)",
+      "Transfer of Collection PTO (Provincial Treasurers Office)",
+      "Accountable Forms (Office of the Municipal Treasurer)",
+      "Refund of Cash Advance (Liquidation Report) (LGU Officials & Employees)"
+     ],
+     "fee": "See the schedule of fees (e.g. Professional Tax Receipt ₱330.00, Occupation/Calling Fee ₱287.00)",
+     "time": "3 Minutes",
+     "where": "Office of the Municipal Treasurer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Official Receipts on Police Clearance Fees",
+     "summary": "Pay the police clearance fee and get an official receipt.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Barangay Clearance (Barangay Hall)",
+      "Community Tax Certificate (Municipal Treasurer's Office (Windows 1-7))"
+     ],
+     "fee": "₱350.00",
+     "time": "3 Minutes",
+     "where": "Office of the Municipal Treasurer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Official Receipts on Real Property Taxes",
+     "summary": "Pay real property tax on your land or building and get an official receipt.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Tax Declaration as to Ownership of Real Property (Office of the Municipal Assessor)",
+      "Previous Real Property Tax Payments (Previous Tax Payments/Owners File)",
+      "Tax Clearance (Office of the Municipal Treasurer)",
+      "Real Property Tax Billing (Office of the Municipal Treasurer)"
+     ],
+     "fee": "₱80.00; tax based on Real Property Tax Billing",
+     "time": "3 Minutes",
+     "where": "Office of the Municipal Treasurer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Processing of Disbursement Vouchers and Issuance of Checks",
+     "summary": "Payees' approved vouchers are processed and their checks prepared, signed and released.",
+     "for": [
+      "businesses"
+     ],
+     "category": "suppliers",
+     "requirements": [
+      "Disbursement vouchers with complete supporting documents (Office of the Municipal Accountant)"
+     ],
+     "fee": "None",
+     "time": "10 Minutes",
+     "where": "Office of the Municipal Treasurer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Appraisal and Assessment of New discovery of (Land, Building and Machinery)",
+     "summary": "Have newly declared land, buildings or machinery inspected, valued and given a tax declaration.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Filled up request form (Office of the Municipal Assessor)",
+      "Land Title (Owner/ Register of Deeds)",
+      "Building, Electrical and Plumbing Permit/Certificate of completion (for Building) (Owner/Office of the Municipal Engineer)",
+      "Purchase receipts of Machinery & Specification (for Machinery) (Seller/ Owner)"
+     ],
+     "fee": "₱75.00",
+     "time": "1 Hour & 54 Minutes",
+     "where": "Office of the Municipal Assessor",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Certificate of Exact Location of Property",
+     "summary": "Get a certificate stating the exact location of your property based on assessor records.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Filled up request form (Office of the Municipal Assessor)"
+     ],
+     "fee": "₱80.00",
+     "time": "26 Minutes",
+     "where": "Office of the Municipal Assessor",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Certificate of No Improvement or with improvement",
+     "summary": "Get a certificate stating whether your land has recorded buildings or other improvements.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Filled up request form (Office of the Municipal Assessor)"
+     ],
+     "fee": "₱80.00",
+     "time": "21 Minutes",
+     "where": "Office of the Municipal Assessor",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of True Copy of Tax Declaration",
+     "summary": "Get an updated true copy of your property's tax declaration showing its market and assessed value.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Filled up request form (Office of the Municipal Assessor)",
+      "Official Receipt (Office of the Municipal Treasurer (Windows 1-7))",
+      "Land Title (Register of Deeds/ Owner)"
+     ],
+     "fee": "₱80.00",
+     "time": "18 Minutes",
+     "where": "Office of the Municipal Assessor",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Re-assessment of Land, Building and Machinery",
+     "summary": "Ask to have your land, building or machinery re-inspected and its assessed value updated.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Duly Accomplish request form (Office of the Municipal Assessor)",
+      "Land Title (Owner/ Register of Deeds)",
+      "Building, Electrical and Plumbing Permit (for Building) (Owner/ Office of the Municipal Engineer)",
+      "Certificate of Completion (for Building) (Owner/ Office of the Municipal Engineer)",
+      "Purchase receipts of Machinery & Specification (for Machinery) (Seller/ Owner)"
+     ],
+     "fee": "₱75.00",
+     "time": "1 Hour and 37 Minutes",
+     "where": "Office of the Municipal Assessor",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Transfer of Ownership of Tax Declaration",
+     "summary": "Move a property's tax declaration into the new owner's name after a sale or transfer.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Original Copy of Land Title (Register of Deeds)",
+      "Deed of Sale or Certificate of Ownership (if Building and machinery), Subdivision Plan (Owner, Housing Land Use Regulatory Board)",
+      "Official Receipts/ Transfer Fee/ Tax Clearance (Office of the Municipal Treasurer (Windows 1-7))",
+      "Sworn Statement (Office of the Municipal Assessor)"
+     ],
+     "fee": "₱25.00 transfer fee; ₱300.00 standard fine and additional fines based on assessed value",
+     "time": "52 Minutes",
+     "where": "Office of the Municipal Assessor",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Adolescent Health and Development Program Services",
+     "summary": "Young people aged 10 to 19 get check-ups, counselling, lab tests and medicines.",
+     "for": [
+      "youth"
+     ],
+     "category": "health",
+     "requirements": [
+      "Referral Slip (1 Original Copy) (Barangay Health Stations; from Department of Education District Nurses; School Guidance Office)",
+      "HEADDSSS Form, PCB Form (Rural Health Unit of Northern Kabuntalan / Municipal Health Office - Records Room)"
+     ],
+     "fee": "None",
+     "time": "1 Hour & 35 Minutes",
+     "where": "Office of the Municipal Health Officer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Dental Health Program Services",
+     "summary": "Get basic dental care such as check-ups, cleaning, fillings and tooth extraction.",
+     "for": [
+      "everyone"
+     ],
+     "category": "health",
+     "requirements": [
+      "Referral Slip / Note (1 Original Copy) (Optional) (Barangay Health Stations)"
+     ],
+     "fee": "₱150.00",
+     "time": "1 Hour and 55 Minutes",
+     "where": "Office of the Municipal Health Officer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Death Certificate",
+     "summary": "Have the health officer review and sign the death certificate of someone who died in town.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Death Certificate (4pcs Original Copy) (Office of the Municipal Civil Registrar)"
+     ],
+     "fee": "None",
+     "time": "25 Minutes",
+     "where": "Office of the Municipal Health Officer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Medical Certificate for Medico - Legal, Senior Citizen, and Person with Disability",
+     "summary": "Get a medical certificate for legal cases or for a senior citizen or PWD ID.",
+     "for": [
+      "everyone",
+      "senior-citizens",
+      "persons-with-disability"
+     ],
+     "category": "health",
+     "requirements": [
+      "Police Report (Northern Kabuntalan Police Station)",
+      "Barangay Certificate (Barangay where the client belong / resides)",
+      "Valid ID, Latest Picture of Senior Citizen / Person with Disabilities (Commission on Elections; Municipal Social Welfare Development Office)"
+     ],
+     "fee": "None",
+     "time": "40 Minutes",
+     "where": "Office of the Municipal Health Officer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Pre - Employment Medical Certificate",
+     "summary": "Get a medical or health certificate for a job, school, sports or scholarship.",
+     "for": [
+      "everyone",
+      "job-seekers"
+     ],
+     "category": "health",
+     "requirements": [
+      "Complete filled - out Application Form (Company where they will apply; School enrolled; Office)",
+      "Official Receipt (Municipal Treasurer's Office (Windows 1-7))",
+      "Community Tax Certificate (Barangay where they belong)",
+      "Specimens (Client)",
+      "X - ray Result (Facility with Xray Machine)",
+      "Drug Test Results (DOH Accredited Laboratory)",
+      "Result of Neuro Exam (Licensed Neuro Clinics)"
+     ],
+     "fee": null,
+     "time": "40 Minutes",
+     "where": "Office of the Municipal Health Officer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Sanitary Permit",
+     "summary": "Businesses and facilities serving the public get inspected and receive a sanitary permit.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Duly filled-out form (Business and Permit Licensing Division)",
+      "Official Receipt for Sanitary Permit (Municipal Treasurer’s Office (Windows 1-7))"
+     ],
+     "fee": null,
+     "time": "5 Days, 2 Hours and 20 Minutes",
+     "where": "Office of the Municipal Health Officer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Maternal Care Services / Prenatal Care Services",
+     "summary": "Pregnant women get prenatal check-ups, lab tests, vaccines, iron supplements and health advice.",
+     "for": [
+      "women"
+     ],
+     "category": "health",
+     "requirements": [
+      "Referral Slip / Note (1 Original Copy) (Optional) (Barangay Health Stations)",
+      "Mother - Baby Booklet / Prenatal Care Booklet (Client)"
+     ],
+     "fee": "None",
+     "time": "1 Hour and 55 Minutes",
+     "where": "Office of the Municipal Health Officer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "National Immunization Program Services",
+     "summary": "Babies up to 12 months old get free vaccines against preventable diseases.",
+     "for": [
+      "children"
+     ],
+     "category": "health",
+     "requirements": [
+      "Referral Slip / Note (1 Original Copy) (Optional) (Barangay Health Stations)",
+      "Mother - Baby Booklet / Immunization Booklet (Client)"
+     ],
+     "fee": "None",
+     "time": "1 Hour and 15 Minutes",
+     "where": "Office of the Municipal Health Officer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Out - Patient Department - Medical Consultation Services",
+     "summary": "See a doctor for common illnesses like cough, high blood pressure or wounds and get medicines.",
+     "for": [
+      "everyone",
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [
+      "Referral Slip / Note (1 Original Copy) (Optional) (Barangay Health Stations)"
+     ],
+     "fee": "None",
+     "time": "60 Minutes",
+     "where": "Office of the Municipal Health Officer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Responsible Parenthood and Reproductive Health Services",
+     "summary": "Get family planning advice and your chosen method to space or limit births.",
+     "for": [
+      "everyone"
+     ],
+     "category": "health",
+     "requirements": [
+      "Referral Slip / Note (1 Original Copy) (Optional) (Barangay Health Stations)",
+      "Family Planning Card (for Current Family Planning User) (Client)"
+     ],
+     "fee": "None",
+     "time": "1 Hour and 45 Minutes",
+     "where": "Office of the Municipal Health Officer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Building & Electrical Permit",
+     "summary": "Get the permit you need before building, renovating or wiring a structure.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Lot Title (5 Copies Photocopy) (National Land Titles and Deeds Registration Administration)",
+      "Tax Declaration (5 Copies Photocopy) (Office of the Municipal Assessors/Office of the Municipal Treasurer)",
+      "Plans & Estimates (5 Copies Photocopy) (Licensed Architect or Civil Engineer (Private))",
+      "Lease Contract (If renting) (5 Copies Photocopy) (Owner of the Building)",
+      "Building Permit Form (5 Copies Original) (Office of the Municipal Engineer)",
+      "Electrical Permit Form (5 Copies Original) (Office of the Municipal Engineer)",
+      "Plumbing/Sanitary Permit Form (5 Copies Original) (Office of the Municipal Engineer)",
+      "General Conditions & Specifications (5 Copies Original) (Licensed Architect or Civil Engineer (Private))",
+      "Structural Analysis (For Two-Storey Up) (5 Copies Original) (Licensed Architect or Civil Engineer (Private))",
+      "Construction Safety & Health Program (5 Copies Photocopy) (Department of Labor & Employment (DOLE))",
+      "2 Long Brown Envelope Folder (Client)"
+     ],
+     "fee": "Based on the National Building Code of the Philippines (PD 1096)",
+     "time": "40 Minutes",
+     "where": "Office of the Municipal Engineer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Demolition Permit",
+     "summary": "Get the permit you need before tearing down all or part of a building.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Lot Title (5 Copies Photocopy) (National Land Titles and Deeds Registration Administration)",
+      "Subdivision Plan/Sketch Plan/Locational Plan (5 Copies Original) (Licensed Architect or Civil Engineer (Private))",
+      "Barangay Clearance (5 Copies Photocopy) (Barangay Hall/Office of the Barangay Captain)"
+     ],
+     "fee": "Based on the National Building Code of the Philippines (PD 1096)",
+     "time": "40 Minutes",
+     "where": "Office of the Municipal Engineer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Fencing Permit",
+     "summary": "Get the permit you need before building a fence on your property.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Lot Title (5 Copies Photocopy) (National Land Titles and Deeds Registration Administration)",
+      "Subdivision Plan/Sketch Plan/Locational Plan (5 Copies Original) (Licensed Architect or Civil Engineer (Private))",
+      "Plans & Estimates (5 Copies Original) (Licensed Architect or Civil Engineer (Private))",
+      "Barangay Clearance (5 Copies Photocopy) (Barangay Hall/Office of the Barangay Captain)"
+     ],
+     "fee": "Based on the National Building Code of the Philippines (PD 1096)",
+     "time": "40 Minutes",
+     "where": "Office of the Municipal Engineer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Occupancy Permit",
+     "summary": "Get the permit that lets you use or move into a newly finished building.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Certificate of Completion (Office of the Municipal Engineer)",
+      "Building Permit (Office of the Municipal Engineer)",
+      "Log book of daily activities (Licensed Architect/Civil Engineer)",
+      "As built plan (Licensed Architect/Civil Engineer)"
+     ],
+     "fee": "Based on the National Building Code of the Philippines (PD 1096)",
+     "time": "40 Minutes",
+     "where": "Office of the Municipal Engineer",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Population Data And Information Management Services",
+     "summary": "Request population data and information about the town from the population office.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter of Request (Client)"
+     ],
+     "fee": "None",
+     "time": "5 Minutes",
+     "where": "Municipal Population Office",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Technical Assistance Rendered To Program Partners",
+     "summary": "Program partners can invite the population office to give trainings, orientations or talks.",
+     "for": [
+      "local-governments",
+      "government-offices"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter of Request (Client)"
+     ],
+     "fee": "None",
+     "time": "2 Days",
+     "where": "Municipal Population Office",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Zoning/Locational Clearance for Business (New Business)",
+     "summary": "New businesses get clearance that their chosen location is allowed under the town's land use plan.",
+     "for": [
+      "businesses",
+      "investors"
+     ],
+     "category": "permits",
+     "requirements": [
+      "DTI for Single Proprietorship/SEC for Corporations/CDA Registration for Cooperatives (DTI Offices or Negosyo Centers/ SEC Office/ CDA Office)",
+      "Barangay Business Clearance (Barangay Hall (where the business is located))",
+      "Community Tax Certificate (For Business) (Treasurer’s Office)",
+      "Proof of Ownership or Land Title (if owned) (Business Applicant)",
+      "Contract of Lease (if renting) (Lessor)",
+      "Fully Accomplished Application Form (Municipal Planning and Development Office)"
+     ],
+     "fee": "₱1,200.00",
+     "time": "10 minutes",
+     "where": "Municipal Planning and Development Office",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Zoning/Locational Clearance for Business (Renewal Business)",
+     "summary": "Businesses renewing their permit get a zoning decision confirming their location is allowed.",
+     "for": [
+      "businesses",
+      "investors"
+     ],
+     "category": "permits",
+     "requirements": [
+      "DTI for Single Proprietorship/SEC for Corporations/CDA Registration for Cooperatives (DTI Offices or Negosyo Centers/ SEC Office/ CDA Office)",
+      "Barangay Business Clearance (Barangay Hall (where the business is located))",
+      "Community Tax Certificate (For Business) (Treasurer’s Office)",
+      "Proof of Ownership or Land Title (if owned) (Business Applicant)",
+      "Contract of Lease (if renting) (Lessor)",
+      "Fully Accomplished Application Form (Municipal Planning and Development Office)"
+     ],
+     "fee": "None",
+     "time": "10 minutes",
+     "where": "Municipal Planning and Development Office",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    },
+    {
+     "name": "Issuance of Decision of Zoning Clearance for Building Permit",
+     "summary": "Get zoning clearance that your planned building or expansion is allowed on the site.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Application Form for Zoning Clearance / Locational Clearance, duly notarized – Three (3) copies (Municipal Planning and Development Office)",
+      "Building Plan duly signed by a Civil Engineer – One (1) set; Site Development Plan (Applicant)",
+      "Transfer Certificate of Title (TCT) or any proof of ownership or right over the property; if lot is not owned, Contract of Lease or Authorization to Occupy Lot (Applicant or Lessor)",
+      "Real Property Tax Declaration – One (1) copy and Certificate of the latest Real Property Tax Payment (Applicant)",
+      "Environmental Clearance Certificate (ECC), when applicable (Environmental and Management Bureau)",
+      "Conversion clearance, if the land was covered by the Comprehensive Agrarian Reform Program (Department of Agrarian Reform)",
+      "Approved ordinance for the reclassification of the site, if the dominant land use is agricultural (Sangguniang Bayan of the Municipality)",
+      "Lot Plan with vicinity map (Applicant)",
+      "Bill of Materials – One (1) Copy (Applicant)",
+      "Specifications – One (1) Copy (Applicant)"
+     ],
+     "fee": "Computation prescribed by the Housing and Land Use Regulatory Board (HLURB)",
+     "time": "5 days and 18 minutes",
+     "where": "Municipal Planning and Development Office",
+     "source": "https://drive.google.com/file/d/1gSGr3lYLkMlWC3Sh1kFCWnNn_k078t1w/view"
+    }
+   ]
+  },
+  {
+   "key": "maguindanao-del-norte/parang",
+   "name": "Parang",
+   "kind": "Municipality",
+   "province": "Maguindanao del Norte",
+   "provinceSlug": "maguindanao-del-norte",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, lgu-parang.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-norte/sultan-kudarat",
+   "name": "Sultan Kudarat",
+   "kind": "Municipality",
+   "province": "Maguindanao del Norte",
+   "provinceSlug": "maguindanao-del-norte",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, sultankudarat-mag.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-norte/sultan-mastura",
+   "name": "Sultan Mastura",
+   "kind": "Municipality",
+   "province": "Maguindanao del Norte",
+   "provinceSlug": "maguindanao-del-norte",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-norte/talitay",
+   "name": "Talitay",
+   "kind": "Municipality",
+   "province": "Maguindanao del Norte",
+   "provinceSlug": "maguindanao-del-norte",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-norte/upi",
+   "name": "Upi",
+   "kind": "Municipality",
+   "province": "Maguindanao del Norte",
+   "provinceSlug": "maguindanao-del-norte",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur",
+   "name": "Maguindanao del Sur",
+   "kind": "Province",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": "https://maguindanaodelsur.gov.ph/gov/",
+   "facebook": null,
+   "charter": {
+    "label": "Provincial Government of Maguindanao del Sur, Citizen Charter 2023, 3rd Edition",
+    "url": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+   },
+   "charterStatus": "published",
+   "charterNote": null,
+   "services": [
+    {
+     "name": "Budget Review",
+     "summary": "The province reviews and helps finish your town's annual or supplemental budget.",
+     "for": [
+      "local-governments"
+     ],
+     "category": "government",
+     "requirements": [
+      "Annual Performance Budget (Municipal) (MLGU)",
+      "Supplemental Budget (MLGU)",
+      "Ordinance (MLGU)"
+     ],
+     "fee": "None",
+     "time": "5 Days and 8 Minutes",
+     "where": "PBO-Assistor and Review Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Provision of Emergency Medical Care and Transport",
+     "summary": "Call the hotline and a rescue team gives first aid and takes the patient to hospital.",
+     "for": [
+      "everyone",
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": "None",
+     "time": "22 Minutes",
+     "where": "PDRRMO-Operations and Warning Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Provision of Standby Medic and Firetruck",
+     "summary": "Ask for a medic team and fire truck to stand by at your event.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter Request (Client)"
+     ],
+     "fee": "None",
+     "time": "38 Minutes",
+     "where": "PDRRMO-Operations and Warning Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Provision of Technical Assistance to Conduct Training on Disaster Risk Reduction and Management (DRRM)",
+     "summary": "Ask the province to train your group in disaster preparedness, first aid and basic life support.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter Request (Client)"
+     ],
+     "fee": "None",
+     "time": "11 Days and 17 Minutes",
+     "where": "PDRRMO-Administration and Training Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Provision of Food and Non-Food Items to Victims of Calamities or Other Disaster-Related Incidents",
+     "summary": "Families hit by fighting, fire, floods or other disasters get food, relief goods and family kits.",
+     "for": [
+      "everyone",
+      "families-in-need"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Letter Request (Client)"
+     ],
+     "fee": "None",
+     "time": "3 Days and 9 Minutes",
+     "where": "PDRRMO-Operations and Warning Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Lease of Heavy Equipments",
+     "summary": "Rent the province's excavators, dump trucks, graders, cranes or buses for your project.",
+     "for": [
+      "everyone",
+      "local-governments"
+     ],
+     "category": "community",
+     "requirements": [
+      "Request Letter Address to the Governor (Requesting Party/LGU)",
+      "Original Receipt (Provincial Treasurer’s Office)"
+     ],
+     "fee": "₱6,000.00 to ₱19,320.00 depending on the equipment; see the schedule of fees",
+     "time": "2 Days 8 Hours and 15 Minutes",
+     "where": "Provincial Engineer’s Office",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Recruitment, Selection and Placement",
+     "summary": "Apply for an open job at the provincial government and go through screening and exams.",
+     "for": [
+      "job-seekers"
+     ],
+     "category": "livelihood",
+     "requirements": [
+      "Application Letter (Interested Applicant)",
+      "Fully Accomplished Personal Data Sheet (PDS) (CSC Form 212, Revised 2017) (Interested Applicant)",
+      "Performance Rating for the last two (2) rating periods if applicable (for promotion and transfer) (Interested Applicant)",
+      "Photocopy of Certificate of Eligibility/rating/license (Interested Applicant)",
+      "Photocopy of Transcript of Records (Interested Applicant)"
+     ],
+     "fee": "None",
+     "time": "17 Days, 6 hours and 7 minutes",
+     "where": "Recruitment, Selection and Placement Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Inspection Collection of Real Property Tax (Basic & SEF)",
+     "summary": "Pay the yearly tax on your land, building or machinery and get a tax clearance.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Latest Official Receipt of last Payment or Certificate of Payment/ Original Copy or Certified True Copy of Real Property Tax Declaration/ Original or Certified True Copy of Tax Clearance (Client’s Copy/ Local Assessor)"
+     ],
+     "fee": "1% basic tax and 1% SEF tax on the assessed value; ₱150.00 for a tax clearance",
+     "time": "32 Minutes",
+     "where": "PTO- Revenue Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Collection of Transfer Tax",
+     "summary": "Pay the tax due when land or property is sold, donated or otherwise transferred.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Deed of Sale, donation or any applicable document proving transfer of ownership/ Original Copy of Real Property Tax Declaration/ Tax Clearance or updated tax payment (Official Receipt) (Client’s Copy/ Local Assessor)"
+     ],
+     "fee": "60% of 1% of the market value or cost of sale/donation, whichever is higher",
+     "time": "12 minutes",
+     "where": "PTO- Revenue Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Collection of Professional Tax",
+     "summary": "Licensed professionals pay their yearly professional tax and get an official receipt.",
+     "for": [
+      "workers"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Current annual registration card or PRC License (Client’s Copy)"
+     ],
+     "fee": "₱350.00 (Bracket A) or ₱250.00 (Bracket B)",
+     "time": "15 Minutes",
+     "where": "PTO-Revenue Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Collection of Franchise Tax",
+     "summary": "Businesses holding a franchise pay their yearly franchise tax to the province.",
+     "for": [
+      "businesses"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Financial Statement of the preceding year / Gross sales receipts (Client’s Copy)"
+     ],
+     "fee": "60% of 1% of the gross annual receipts of the preceding year",
+     "time": "15 Minutes",
+     "where": "PTO-Revenue Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Collection of Annual Fixed Tax on Delivery Truck & Vans and Issuance of Governor’s Permit and Sticker",
+     "summary": "Businesses pay the yearly tax on delivery trucks and vans and get a Governor's Permit and sticker.",
+     "for": [
+      "businesses"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "OR/CR to ensure that the vehicle used is registered (Client’s Copy)"
+     ],
+     "fee": "₱1,950.00 (₱650.00 tax, ₱1,000.00 Governor’s Permit, ₱300.00 sticker)",
+     "time": "50 Minutes",
+     "where": "PTO-Revenue Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Collection of Tax on Sand and Gravel and Issuance of Governor’s Permit",
+     "summary": "Quarry operators pay the tax on sand, gravel and other materials and get a Governor's Permit.",
+     "for": [
+      "businesses"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Documents from PMRC (Client’s Copy)",
+      "Delivery Receipt (Duplicate Copy) (Provincial’s Copy)"
+     ],
+     "fee": "See the schedule of fees (permit fees ₱200.00 to ₱2,500.00; tax of ₱50.00/cu.m for sand and gravel, ₱20.00/cu.m for limestone)",
+     "time": "67 Minutes",
+     "where": "PTO-Revenue Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Collection of Other Fees and Charges",
+     "summary": "Pay fees for certifications, authentications, veterinary health certificates and loan documents.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Transaction Slip (Office Concerned)"
+     ],
+     "fee": "₱100.00 each for certification, authentication, veterinary health certificate or loan documents",
+     "time": "15 Minutes",
+     "where": "PTO-Revenue Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Request for Tourism-Related Inquiries and Initiatives",
+     "summary": "Bring your tourism question, plan or proposal to the province for review and support.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Proposals, Plans, Datasheets, and other pertinent documents (Requesting Party/LGU)"
+     ],
+     "fee": "None",
+     "time": "25 Minutes",
+     "where": "Provincial Tourism Office/Planning and Development",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Request for Tourist Attraction Assessment",
+     "summary": "Ask the province to assess a place as a tourist attraction.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Proposals, Plans, Datasheets, and other pertinent documents (Requesting Party/LGU)"
+     ],
+     "fee": "None",
+     "time": "1 Day and 20 Minutes",
+     "where": "Provincial Tourism Office/Planning and Development",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Technical Assistance",
+     "summary": "Town tourism and planning officers get help with tourism statistics, training and marketing.",
+     "for": [
+      "local-governments"
+     ],
+     "category": "government",
+     "requirements": [
+      "Request form (Requesting Party/LGU)",
+      "Information needed"
+     ],
+     "fee": "None",
+     "time": "8 Hours and 10 Minutes",
+     "where": "Provincial Tourism Office/Planning and Development",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Request for Tourism Information Assistance Center (TIAC) Visit",
+     "summary": "Visit the tourism center and museum for a guided tour and travel information.",
+     "for": [
+      "everyone",
+      "travellers"
+     ],
+     "category": "community",
+     "requirements": [
+      "Request Letter (Requesting Party/LGU)"
+     ],
+     "fee": "None",
+     "time": "55 Minutes",
+     "where": "Provincial Tourism Office/Marketing and Promotion",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Financial Assistance Services/Festival Celebration",
+     "summary": "Towns get financial help from the province for their festivals and anniversaries.",
+     "for": [
+      "local-governments"
+     ],
+     "category": "government",
+     "requirements": [
+      "Request Letter (Requesting Party/LGU)",
+      "Recommendation of the grant of financial assistance (Provincial Tourism Office)",
+      "Approved Letter Request (Provincial Governor’s Office)"
+     ],
+     "fee": "None",
+     "time": "6 Days and 30 Minutes",
+     "where": "Provincial Tourism Office/Marketing and Promotion",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Request for Performing Arts Ensemble",
+     "summary": "Book the province's music and dance performers for your event.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Request Letter (Requesting Party/LGU)"
+     ],
+     "fee": "None",
+     "time": "1 Day, 1 Hour and 35 Minutes",
+     "where": "Provincial Tourism Office",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Accommodate Inquiries on Tourism/Cultural Activities of the Province",
+     "summary": "Ask about and get the schedule of the province's tourism and cultural activities.",
+     "for": [
+      "everyone",
+      "travellers"
+     ],
+     "category": "community",
+     "requirements": [
+      "Request Letter (Requesting Party/LGU)"
+     ],
+     "fee": "None",
+     "time": "15 Minutes",
+     "where": "Provincial Tourism Office",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Request for Tour Guiding Services to Historical Places in the Province",
+     "summary": "Get a guided tour of historical places in the province.",
+     "for": [
+      "everyone",
+      "travellers"
+     ],
+     "category": "community",
+     "requirements": [
+      "Request Letter (Requesting Party/LGU)"
+     ],
+     "fee": "None",
+     "time": "1 Day and 28 Minutes",
+     "where": "Provincial Tourism Office",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Aid to Person with Disability",
+     "summary": "Persons with disability living in the province get help with assistive devices.",
+     "for": [
+      "persons-with-disability"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Request Letter (Requesting Party)",
+      "Referral Letter (MSWDO/Barangay)"
+     ],
+     "fee": "None",
+     "time": "2 Months, 2 Hours and 5 Minutes",
+     "where": "Persons with Disability Affairs Office",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Request for Development Plan",
+     "summary": "Get a copy of the province's development plans, such as the PDPFP or PCIP.",
+     "for": [
+      "local-governments",
+      "government-offices"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Request Letter (Requesting Party)"
+     ],
+     "fee": "None",
+     "time": "1 Hour and 55 Minutes",
+     "where": "OPPDC / Plans and Program Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Request for Various Maps, Data and Shape Files",
+     "summary": "Get maps, data and GIS shape files of the province for planning.",
+     "for": [
+      "local-governments",
+      "government-offices"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Request Letter (Requesting Party)"
+     ],
+     "fee": "None",
+     "time": "5 Days and 41 Minutes",
+     "where": "OPPDC / Plans and Program Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Review of Annual MLGU GAD Plan and Budget",
+     "summary": "The province reviews and endorses your town's yearly Gender and Development plan and budget.",
+     "for": [
+      "local-governments"
+     ],
+     "category": "government",
+     "requirements": [
+      "Request Letter (Requesting Party/MLGU)"
+     ],
+     "fee": "None",
+     "time": "1 Day and 10 Minutes",
+     "where": "OPPDC / Plans and Program Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Provision of Technical Services on the Development Plans and Maps (Plans and Program Division)",
+     "summary": "Planners and mappers from the province help you prepare development plans and maps.",
+     "for": [
+      "local-governments",
+      "government-offices"
+     ],
+     "category": "government",
+     "requirements": [
+      "Request Letter (Requesting Party)"
+     ],
+     "fee": "None",
+     "time": "4 hours and 7 Minutes",
+     "where": "OPPDC / Plans and Program Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Request for Statistical Data/Information",
+     "summary": "Get copies of the province's statistics and planning data.",
+     "for": [
+      "local-governments",
+      "government-offices"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Request Letter (Requesting Party)"
+     ],
+     "fee": "None",
+     "time": "1 hour and 40 Minutes",
+     "where": "OPPDC / Project Monitoring Information Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Provision of Technical Services on the Development Plans and Maps (Project Monitoring Information Division)",
+     "summary": "Get help preparing an ecological profile, accomplishment reports and other town promotional materials.",
+     "for": [
+      "local-governments",
+      "government-offices"
+     ],
+     "category": "government",
+     "requirements": [
+      "Request Letter (Requesting Party)"
+     ],
+     "fee": "None",
+     "time": "1 hour and 44 Minutes",
+     "where": "OPPDC / Project Monitoring Information Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Extension Services/Technical Assistance",
+     "summary": "Farmers get expert advice, training and on-farm help with crops and farm problems.",
+     "for": [
+      "farmers"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Request Letter (From Clientele/ Farmer)"
+     ],
+     "fee": "None",
+     "time": "2 Days and 45 minutes",
+     "where": "Office of the Provincial Agriculturist",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Distribution of Agricultural Inputs, Planting Materials and Livelihood Projects",
+     "summary": "Farmers receive seedlings, farm inputs and livelihood projects after a site check.",
+     "for": [
+      "farmers"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Request Letter (From Clientele/ Farmer)"
+     ],
+     "fee": "None",
+     "time": "2 Days, 1 Hour and 25 Minutes",
+     "where": "Office of the Provincial Agriculturist",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Nutrition Services",
+     "summary": "Get nutrition counseling and nutrition program activities for your community.",
+     "for": [
+      "everyone",
+      "women"
+     ],
+     "category": "health",
+     "requirements": [
+      "Request Letter (From Clientele/ Farmer)"
+     ],
+     "fee": "None",
+     "time": "2 Days and 1 Hour",
+     "where": "Office of the Provincial Agriculturist",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Issuance of Veterinary Health Certificate (Livestock Traders: Cattle, Carabao, Swine and Horse)",
+     "summary": "Livestock traders get the health certificate needed to transport cattle, carabao, pigs or horses.",
+     "for": [
+      "farmers",
+      "businesses"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Certificate of ownership of poultry/ livestock animals (Municipal Licensing Office)",
+      "Certificate of transfer of ownership of large animals (Municipal Licensing Office)",
+      "Mayor’s business permit (Municipal Licensing Office)",
+      "Livestock handler’s permit (DA region XII)",
+      "Police clearance (Police Office)",
+      "Result of blood samples for (ASF, Surra, EIA) (RADDL)",
+      "Shipping Permit (Quarantine Office)"
+     ],
+     "fee": "₱100.00",
+     "time": "13 Minutes",
+     "where": "OPVET-Livestock and Poultry Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Issuance of Veterinary Health Certificate for Transport (Poultry, Duck Farmers and Game Fowl Enthusiasts)",
+     "summary": "Poultry and duck raisers and gamefowl owners get the health certificate needed to transport their birds.",
+     "for": [
+      "farmers"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Mayor’s/Business Permit (Municipal Licensing Office)",
+      "Livestock Handler’s Permit (Municipal Licensing Office)",
+      "Result of Blood Samples (Avian Influenza) (RADDL)",
+      "NCD Vaccination Card (Veterinarian/Livestock Technician)",
+      "Shipping Permit (Quarantine Office)"
+     ],
+     "fee": "₱200.00 (1-200 heads)",
+     "time": "14 Minutes",
+     "where": "OPVET-Regulatory Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Issuance of Veterinary Health Certificate for Transport of Pet Animals",
+     "summary": "Pet owners get the health certificate needed to travel with or ship their pets.",
+     "for": [
+      "everyone"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Pet Animal Vaccination Card (Veterinary)",
+      "Official Receipt (Provincial Treasury Office)"
+     ],
+     "fee": "₱200.00 (1 to 200 heads)",
+     "time": "16 Minutes",
+     "where": "OPVET-Regulatory Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Issuance of Veterinary Health Certificate (Livestock and Poultry Farmers, Duck, Quail, Chicken Eggs and Balut)",
+     "summary": "Farmers get the health certificate needed to transport animals, eggs and balut.",
+     "for": [
+      "farmers"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Result of blood samples (Avian Influenza) (RDDL)"
+     ],
+     "fee": "₱100.00",
+     "time": "18 Minutes",
+     "where": "OPVET-Livestock and Poultry Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Animal Health Services (Walk In/House to House/Barangay)",
+     "summary": "Livestock and poultry farmers get their animals checked and treated by a veterinarian.",
+     "for": [
+      "farmers"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Client presence",
+      "Animals"
+     ],
+     "fee": "₱100.00",
+     "time": "16 Minutes",
+     "where": "OPVET-Livestock and Poultry Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Routine Services/Vitamins/Deworming and Iron Administration (Walk In/House to House/Barangay)",
+     "summary": "Farm animals get vitamins, deworming and iron shots to keep them healthy.",
+     "for": [
+      "farmers"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Client presence",
+      "Data of animals"
+     ],
+     "fee": "None",
+     "time": "16 Minutes",
+     "where": "OPVET-Livestock and Poultry Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Anti-Rabies (Walk-In)",
+     "summary": "Bring your dog or cat for a free anti-rabies shot and vaccination card.",
+     "for": [
+      "everyone"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Client presence",
+      "Vaccination Card (Provincial Veterinarian/Veterinarian II)",
+      "Pet Animal"
+     ],
+     "fee": "None",
+     "time": "3 Hours and 14 Minutes",
+     "where": "OPVET-Regulatory and Control Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Anti-Rabies (House to House/Barangay)",
+     "summary": "Vets visit your barangay to give free anti-rabies shots to pets.",
+     "for": [
+      "everyone"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Request letter (Municipal Hall/Barangay Hall)",
+      "Pet animal"
+     ],
+     "fee": "None",
+     "time": "7 Days, 3 Hours and 11 Minutes",
+     "where": "OPVET-Regulatory and Control Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Animal Disease Surveillance (Blood Collection of Animals)",
+     "summary": "Get blood and other samples from your animals tested for diseases like African swine fever.",
+     "for": [
+      "farmers",
+      "everyone"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Client presence",
+      "Letter request",
+      "Transport media (Regional Animal Disease Diagnostic Laboratory (RADDL))",
+      "Animals"
+     ],
+     "fee": "None",
+     "time": "2 days, 2 hours and 36 Minutes",
+     "where": "OPVET-Livestock and Poultry Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Animal Welfare Services/Castration/Spaying/Minor Surgeries for Dogs and Cats (Walk-In)",
+     "summary": "Get your dog or cat spayed, castrated or given minor surgery for free.",
+     "for": [
+      "everyone"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Client presence",
+      "Pet animals"
+     ],
+     "fee": "None",
+     "time": "1 hour and 6 Minutes",
+     "where": "OPVET-Livestock and Poultry Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Veterinary Quarantine Services",
+     "summary": "Vehicles carrying animals or meat are checked and disinfected to keep diseases like ASF out.",
+     "for": [
+      "farmers",
+      "businesses"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Veterinary Health Certificate (Veterinary Office)",
+      "FDA Certificate (FDA)",
+      "DTI Certificate (DTI)",
+      "NMIS (NMIS)",
+      "Shipping Permit (Veterinary Quarantine Office)"
+     ],
+     "fee": "None",
+     "time": "5 Days",
+     "where": "OPVET-Livestock and Poultry Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Artificial Insemination/Carabao/Cattle and Goat (Barangay)",
+     "summary": "Technicians visit your barangay to artificially inseminate carabao, cattle and goats for better breeds.",
+     "for": [
+      "farmers"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Request Letter"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "OPVET-Livestock and Poultry Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Request for Issuance of New Tax Declaration",
+     "summary": "Get a new tax declaration after buying property or adding a building or machinery.",
+     "for": [
+      "everyone",
+      "government-offices"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Present Photocopy of title/TD or real property tax receipt and other reference of property identification for assessment and appraisal (Requesting Party (CLIENTS))",
+      "Additional requirements for authorized representative requesting",
+      "Owner’s authorization letter/SPA",
+      "Photocopy of Valid ID"
+     ],
+     "fee": "None",
+     "time": "35 Minutes",
+     "where": "PASSO-Evaluation & Assessment Division",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Annotation of Mortgages/Bail Bond/Liens or Its Cancellation to the Field Appraisal and Assessment Sheet (FAAS) and Tax Declaration (TD)",
+     "summary": "Have a mortgage, bail bond or lien, or its cancellation, recorded on your property's tax declaration.",
+     "for": [
+      "everyone",
+      "businesses",
+      "government-offices"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Copy mortgage/bail bond /lien documents or its cancellation documents (Mortgage- banks, credit unions, mortgage lenders, mortgage, brokers, and other mortgage companies)"
+     ],
+     "fee": null,
+     "time": "56 Minutes",
+     "where": "Provincial Assessor’s Office",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Legislative Services",
+     "summary": "Towns get certified copies of resolutions and ordinances passed by the provincial board.",
+     "for": [
+      "local-governments"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Request Letter (Requesting Party/LGU)"
+     ],
+     "fee": "None",
+     "time": "33 minutes",
+     "where": "OSSP",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Accreditation of CSO",
+     "summary": "Civil society groups and NGOs apply to be accredited by the provincial board.",
+     "for": [
+      "everyone"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Letter of Application signifying intention for accreditation, 15 copies (Requesting Party)",
+      "Duly accomplished application form for accreditation, 15 copies (Requesting Party)",
+      "Board resolution signifying intention for accreditation, 15 copies (Requesting Party)",
+      "Certificate of Registration, 15 copies (Requesting Party)",
+      "List of current officers and members, 15 copies (Requesting Party)",
+      "Original Sworn Statement, 15 copies (Requesting Party)",
+      "Annual accomplishment report, 15 copies (Requesting Party)",
+      "Financial Statement, 15 copies (Requesting Party)",
+      "Copy of the minutes of the latest meeting of the organization, 15 copies (Requesting Party)",
+      "Profile indicating purpose and objective of the organization, 15 copies (Requesting Party)"
+     ],
+     "fee": "None",
+     "time": "30 Days",
+     "where": "OVG, SP and OSSP",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Provision of Legal Technical Assistance",
+     "summary": "Mayors, barangay officials and provincial officials get legal opinions on contracts, ordinances and agreements.",
+     "for": [
+      "local-governments"
+     ],
+     "category": "legal",
+     "requirements": [],
+     "fee": "None",
+     "time": "1 Days, 1 Hour and 20 Minutes",
+     "where": "Office of the Provincial Legal",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Legal Advise and Other Legal Services",
+     "summary": "Walk in and get free legal advice from the Provincial Legal Officer.",
+     "for": [
+      "everyone"
+     ],
+     "category": "legal",
+     "requirements": [],
+     "fee": "None",
+     "time": "2 Hours and 10 Minutes",
+     "where": "Office of the Provincial Legal",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Administering Oath and Preparation of Affidavits",
+     "summary": "Have an affidavit or other legal document prepared and sworn for free.",
+     "for": [
+      "everyone"
+     ],
+     "category": "legal",
+     "requirements": [
+      "Valid ID",
+      "CTC"
+     ],
+     "fee": "None",
+     "time": "1 Hour, 16 Minutes and 30 seconds",
+     "where": "Office of the Provincial Legal",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Hospitalization Assistance to Senior Citizens",
+     "summary": "Senior citizens living in the province get help paying hospital bills or a referral letter.",
+     "for": [
+      "senior-citizens",
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [
+      "Hospital Bill (Hospital)",
+      "Clinical Abstract; or Medical Certificate"
+     ],
+     "fee": "None",
+     "time": "37 Minutes",
+     "where": "Provincial Governor’s Office-Office for Senior Citizens Affairs",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    },
+    {
+     "name": "Provide Assistive Device to Senior Citizens",
+     "summary": "Senior citizens living in the province get canes, crutches, walkers or wheelchairs.",
+     "for": [
+      "senior-citizens"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Request Letter (Requesting Party)"
+     ],
+     "fee": "None",
+     "time": "27 Minutes",
+     "where": "Provincial Governor’s Office-Office for Senior Citizens Affairs",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/quicklinks/citizens_charter.pdf"
+    }
+   ]
+  },
+  {
+   "key": "maguindanao-del-sur/ampatuan",
+   "name": "Ampatuan",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/buluan",
+   "name": "Buluan",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/datu-abdullah-sangki",
+   "name": "Datu Abdullah Sangki",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/datu-anggal-midtimbang",
+   "name": "Datu Anggal Midtimbang",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/datu-hoffer-ampatuan",
+   "name": "Datu Hoffer Ampatuan",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/datu-paglas",
+   "name": "Datu Paglas",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/datu-piang",
+   "name": "Datu Piang",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, datupiang.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/datu-salibo",
+   "name": "Datu Salibo",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/datu-saudi-ampatuan",
+   "name": "Datu Saudi-Ampatuan",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/datu-unsay",
+   "name": "Datu Unsay",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, datuunsayampatuan.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/gen-s-k-pendatun",
+   "name": "Gen. S. K. Pendatun",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, genskpendatun.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/guindulungan",
+   "name": "Guindulungan",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/mamasapano",
+   "name": "Mamasapano",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, mamasapano.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/mangudadatu",
+   "name": "Mangudadatu",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/pagagawan",
+   "name": "Pagagawan",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/pagalungan",
+   "name": "Pagalungan",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, pagalungan.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/paglat",
+   "name": "Paglat",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, paglat.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/pandag",
+   "name": "Pandag",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/rajah-buayan",
+   "name": "Rajah Buayan",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/shariff-aguak",
+   "name": "Shariff Aguak",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, maganoy.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/shariff-saydona-mustapha",
+   "name": "Shariff Saydona Mustapha",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/south-upi",
+   "name": "South Upi",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, southupi.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/sultan-sa-barongis",
+   "name": "Sultan Sa Barongis",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, sultansabarongis.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "maguindanao-del-sur/talayan",
+   "name": "Talayan",
+   "kind": "Municipality",
+   "province": "Maguindanao del Sur",
+   "provinceSlug": "maguindanao-del-sur",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, talayan.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "tawi-tawi",
+   "name": "Tawi-Tawi",
+   "kind": "Province",
+   "province": "Tawi-Tawi",
+   "provinceSlug": "tawi-tawi",
+   "website": "https://tawi-tawi.gov.ph/",
+   "facebook": "https://www.facebook.com/tawitawigovernment/",
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen's Charter among its website's pages and files.",
+   "services": []
+  },
+  {
+   "key": "tawi-tawi/bongao",
+   "name": "Bongao",
+   "kind": "Municipality",
+   "province": "Tawi-Tawi",
+   "provinceSlug": "tawi-tawi",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, bongao.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "tawi-tawi/languyan",
+   "name": "Languyan",
+   "kind": "Municipality",
+   "province": "Tawi-Tawi",
+   "provinceSlug": "tawi-tawi",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, languyan.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "tawi-tawi/mapun",
+   "name": "Mapun",
+   "kind": "Municipality",
+   "province": "Tawi-Tawi",
+   "provinceSlug": "tawi-tawi",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "tawi-tawi/panglima-sugala",
+   "name": "Panglima Sugala",
+   "kind": "Municipality",
+   "province": "Tawi-Tawi",
+   "provinceSlug": "tawi-tawi",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, panglimasugala.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "tawi-tawi/sapa-sapa",
+   "name": "Sapa-Sapa",
+   "kind": "Municipality",
+   "province": "Tawi-Tawi",
+   "provinceSlug": "tawi-tawi",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, sapasapa.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "tawi-tawi/sibutu",
+   "name": "Sibutu",
+   "kind": "Municipality",
+   "province": "Tawi-Tawi",
+   "provinceSlug": "tawi-tawi",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No website of its own found.",
+   "services": []
+  },
+  {
+   "key": "tawi-tawi/simunul",
+   "name": "Simunul",
+   "kind": "Municipality",
+   "province": "Tawi-Tawi",
+   "provinceSlug": "tawi-tawi",
+   "website": "https://simunul.gov.ph/",
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "Its website's Transparency page has only budget documents.",
+   "services": []
+  },
+  {
+   "key": "tawi-tawi/sitangkai",
+   "name": "Sitangkai",
+   "kind": "Municipality",
+   "province": "Tawi-Tawi",
+   "provinceSlug": "tawi-tawi",
+   "website": "https://sitangkai.gov.ph/",
+   "facebook": "https://www.facebook.com/profile.php?id=100067088449892",
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "No Citizen's Charter on any page of its website.",
+   "services": []
+  },
+  {
+   "key": "tawi-tawi/south-ubian",
+   "name": "South Ubian",
+   "kind": "Municipality",
+   "province": "Tawi-Tawi",
+   "provinceSlug": "tawi-tawi",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, southubian.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "tawi-tawi/tandubas",
+   "name": "Tandubas",
+   "kind": "Municipality",
+   "province": "Tawi-Tawi",
+   "provinceSlug": "tawi-tawi",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "The website listed for it, tandubas.gov.ph, no longer loads.",
+   "services": []
+  },
+  {
+   "key": "tawi-tawi/turtle-islands",
+   "name": "Turtle Islands",
+   "kind": "Municipality",
+   "province": "Tawi-Tawi",
+   "provinceSlug": "tawi-tawi",
+   "website": "https://turtleislands.gov.ph/",
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "Its website's Transparency page has only budget text.",
+   "services": []
+  },
+  {
+   "key": "cotabato-city/cotabato-city",
+   "name": "Cotabato City",
+   "kind": "City",
+   "province": "Cotabato City",
+   "provinceSlug": "cotabato-city",
+   "website": "https://cityofcotabato.com/",
+   "facebook": "https://www.facebook.com/CotabatoCityGovernment",
+   "charter": {
+    "label": "City of Cotabato, Citizen's Charter",
+    "url": "https://cityofcotabato.com/citizens-charter/"
+   },
+   "charterStatus": "published",
+   "charterNote": null,
+   "services": []
+  },
+  {
+   "key": "special-geographic-area/kadayangan",
+   "name": "Kadayangan",
+   "kind": "Municipality",
+   "province": "Special Geographic Area",
+   "provinceSlug": "special-geographic-area",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "A town created in 2024; no website or charter found yet.",
+   "services": []
+  },
+  {
+   "key": "special-geographic-area/kapalawan",
+   "name": "Kapalawan",
+   "kind": "Municipality",
+   "province": "Special Geographic Area",
+   "provinceSlug": "special-geographic-area",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "A town created in 2024; no website or charter found yet.",
+   "services": []
+  },
+  {
+   "key": "special-geographic-area/ligawasan",
+   "name": "Ligawasan",
+   "kind": "Municipality",
+   "province": "Special Geographic Area",
+   "provinceSlug": "special-geographic-area",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "A town created in 2024; no website or charter found yet.",
+   "services": []
+  },
+  {
+   "key": "special-geographic-area/malidegao",
+   "name": "Malidegao",
+   "kind": "Municipality",
+   "province": "Special Geographic Area",
+   "provinceSlug": "special-geographic-area",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "A town created in 2024; no website or charter found yet.",
+   "services": []
+  },
+  {
+   "key": "special-geographic-area/nabalawag",
+   "name": "Nabalawag",
+   "kind": "Municipality",
+   "province": "Special Geographic Area",
+   "provinceSlug": "special-geographic-area",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "A town created in 2024; no website or charter found yet.",
+   "services": []
+  },
+  {
+   "key": "special-geographic-area/old-kaabakan",
+   "name": "Old Kaabakan",
+   "kind": "Municipality",
+   "province": "Special Geographic Area",
+   "provinceSlug": "special-geographic-area",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "A town created in 2024; no website or charter found yet.",
+   "services": []
+  },
+  {
+   "key": "special-geographic-area/pahamuddin",
+   "name": "Pahamuddin",
+   "kind": "Municipality",
+   "province": "Special Geographic Area",
+   "provinceSlug": "special-geographic-area",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "A town created in 2024; no website or charter found yet.",
+   "services": []
+  },
+  {
+   "key": "special-geographic-area/tugunan",
+   "name": "Tugunan",
+   "kind": "Municipality",
+   "province": "Special Geographic Area",
+   "provinceSlug": "special-geographic-area",
+   "website": null,
+   "facebook": null,
+   "charter": null,
+   "charterStatus": "none",
+   "charterNote": "A town created in 2024; no website or charter found yet.",
+   "services": []
+  }
+ ]
+}

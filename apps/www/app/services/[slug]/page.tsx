@@ -1,12 +1,13 @@
-import { ArrowSquareOutIcon, ArrowUpRightIcon, CaretDownIcon, CoinsIcon, EnvelopeSimpleIcon, FileTextIcon, GlobeIcon, MapPinIcon, PhoneIcon } from '@phosphor-icons/react/ssr'
+import { ArrowSquareOutIcon, ArrowUpRightIcon, CoinsIcon, EnvelopeSimpleIcon, FileTextIcon, GlobeIcon, MapPinIcon, PhoneIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Masthead } from '../../_components/masthead'
 import { SiteHeader } from '../../_components/site-header'
 import { pageMeta } from '../../_lib/seo'
-import { audienceLabel, budgetHref, categoryLabel, fundedPrograms, hasCharter, officeBySlug, offices, peso, servicesMeta, shortName, slugify, type Audience, type Category } from '../../_lib/services'
+import { budgetHref, fundedPrograms, hasCharter, officeBySlug, offices, peso, servicesMeta, shortName, slugify } from '../../_lib/services'
 import { GetInvolved } from '../../_components/get-involved'
+import { ServiceCards, Source, Tags } from '../../_components/service-cards'
 
 export function generateStaticParams() {
 	return offices.map((o) => ({ slug: o.slug }))
@@ -23,31 +24,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 const KIND = { office: 'Office of the Chief Minister', ministry: 'Ministry', attached: 'Attached office' } as const
-
-/** Its category, then who it is for: each a link to everything else on that shelf, or for those readers. */
-function For({ list, category }: { list: Audience[]; category?: Category }) {
-	if (!list.length && !category) return null
-	return (
-		<p className='mt-2 flex flex-wrap gap-1.5'>
-			{category ? (
-				<Link href={`/services?cat=${category}`} className='border border-[var(--accent)] px-2 py-0.5 text-[11.5px] font-semibold text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white'>
-					{categoryLabel(category)}
-				</Link>
-			) : null}
-			{list.map((a) => (
-				<Link key={a} href={`/services?for=${a}`} className='border border-[var(--rule)] px-2 py-0.5 text-[11.5px] text-[var(--ink-2)] hover:border-[var(--ink)]'>
-					{audienceLabel(a)}
-				</Link>
-			))}
-		</p>
-	)
-}
-
-const Source = ({ url }: { url: string }) => (
-	<a href={url} target='_blank' rel='noreferrer' className='inline-flex items-center gap-1 text-[12px] text-[var(--ink-3)] underline decoration-[var(--rule)] underline-offset-4 hover:text-[var(--accent)]'>
-		Source <ArrowUpRightIcon size={11} weight='bold' aria-hidden='true' />
-	</a>
-)
 
 export default async function OfficePage({ params }: { params: Promise<{ slug: string }> }) {
 	const office = officeBySlug((await params).slug)
@@ -120,7 +96,7 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 															{p.how}
 														</p>
 													) : null}
-													<For list={p.for} category={p.category} />
+													<Tags list={p.for} category={p.category} />
 												</li>
 											))}
 										</ul>
@@ -135,60 +111,7 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 									</h2>
 									<p className='mt-1 text-[13.5px] text-[var(--ink-3)]'>As the office’s Citizen’s Charter lists them: what to bring, what it costs, how long it takes.</p>
 									{office.services.length ? (
-										<ul className='mt-5 space-y-3'>
-											{office.services.map((s) => (
-												<li key={s.name} id={`service-${slugify(s.name)}`} className='scroll-mt-[calc(var(--site-header-h)+1rem)]'>
-													<details className='group border border-[var(--rule)] open:border-[var(--ink)]'>
-														<summary className='flex cursor-pointer list-none items-start justify-between gap-4 px-5 py-6 sm:px-7 [&::-webkit-details-marker]:hidden'>
-															<span className='min-w-0'>
-																<span className='block text-[15.5px] font-semibold leading-snug'>{s.name}</span>
-																<span className='mt-1 block text-[12.5px] text-[var(--ink-3)]'>
-																	{[s.fee && `Fee: ${s.fee}`, s.time && `Takes ${s.time}`].filter(Boolean).join(' · ') || 'Fee and time not stated'}
-																</span>
-															</span>
-															<CaretDownIcon size={16} className='mt-1 shrink-0 transition group-open:rotate-180' aria-hidden='true' />
-														</summary>
-														<div className='border-t border-[var(--rule-soft)] px-5 pb-7 pt-5 text-[14px] leading-6 sm:px-7 sm:pb-8'>
-															{s.summary ? <p className='text-[var(--ink-2)]'>{s.summary}</p> : null}
-															{s.requirements.length ? (
-																<>
-																	<p className='mt-3 font-semibold'>What to bring</p>
-																	<ul className='mt-1 list-disc space-y-0.5 pl-5 text-[var(--ink-2)]'>
-																		{s.requirements.map((r) => (
-																			<li key={r}>{r}</li>
-																		))}
-																	</ul>
-																</>
-															) : null}
-															<dl className='mt-3 grid gap-x-6 gap-y-1 text-[13.5px] sm:grid-cols-[auto_1fr]'>
-																{s.fee ? (
-																	<>
-																		<dt className='text-[var(--ink-3)]'>Fee</dt>
-																		<dd>{s.fee}</dd>
-																	</>
-																) : null}
-																{s.time ? (
-																	<>
-																		<dt className='text-[var(--ink-3)]'>Processing time</dt>
-																		<dd>{s.time}</dd>
-																	</>
-																) : null}
-																{s.where ? (
-																	<>
-																		<dt className='text-[var(--ink-3)]'>Where</dt>
-																		<dd>{s.where}</dd>
-																	</>
-																) : null}
-															</dl>
-															<For list={s.for} category={s.category} />
-															<p className='mt-5 border-t border-[var(--rule-soft)] pt-4'>
-																<Source url={s.source} />
-															</p>
-														</div>
-													</details>
-												</li>
-											))}
-										</ul>
+										<ServiceCards services={office.services} />
 									) : (
 										<p className='mt-4 text-[14px] text-[var(--ink-3)]'>No Citizen’s Charter we could read was published online. Ask the office directly.</p>
 									)}
