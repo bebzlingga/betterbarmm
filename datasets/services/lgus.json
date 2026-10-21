@@ -4232,7 +4232,3266 @@
    },
    "charterStatus": "published",
    "charterNote": null,
-   "services": []
+   "services": [
+    {
+     "name": "Food/Financial/Transportation Assistance",
+     "summary": "Food, cash or transport help for people facing a sudden money crisis.",
+     "for": [
+      "families-in-need"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Valid ID (Xerox) (Clients Personal Documents)",
+      "Barangay Certification (Xerox) (Barangay Hall/Barangay Official)"
+     ],
+     "fee": "None",
+     "time": "1 hour and 15 minutes",
+     "where": "Office on Social Welfare and Development Services – Crisis Intervention and Disaster Relief Operation (CIDRO) Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Issuance of Certification (Proof of Indigence)",
+     "summary": "A certificate proving you are a low-income earner.",
+     "for": [
+      "families-in-need"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Barangay Certification (Xerox) (Barangay Hall/Barangay Official)",
+      "BIR Certification (Xerox) if needed (BIR Staff)"
+     ],
+     "fee": "None",
+     "time": "1 hour",
+     "where": "Office on Social Welfare and Development Services – Crisis Intervention and Disaster Relief Operation (CIDRO) Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Social Case Study Report",
+     "summary": "A social worker's report you need to apply for medical or hospital aid.",
+     "for": [
+      "families-in-need",
+      "patients"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Valid ID (Xerox) (Personal Documents of Clients)",
+      "Barangay Certification (Xerox) (Barangay Hall/Barangay Official)",
+      "Medical Abstract (Xerox) (Hospital Staffs)",
+      "Final Billing (Xerox) (Hospital Staffs)"
+     ],
+     "fee": "None",
+     "time": "2 Days 1 hour and 5 minutes",
+     "where": "Office on Social Welfare and Development Services – Crisis Intervention and Disaster Relief Operation (CIDRO) Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Medical Assistance (Crisis Intervention)",
+     "summary": "Help paying for medicines through a partner pharmacy when you cannot afford them.",
+     "for": [
+      "families-in-need",
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [
+      "Valid ID (Xerox) (Personal Documents of Clients)",
+      "Barangay Certification (Xerox) (Barangay Hall/Barangay Official)",
+      "Medical Abstract (Xerox) (Hospital Staffs)",
+      "Final Billing (Xerox) (Pharmacy)"
+     ],
+     "fee": "None",
+     "time": "1 hour and 35 minutes",
+     "where": "Office on Social Welfare and Development Services – Crisis Intervention and Disaster Relief Operation (CIDRO) Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Medical Assistance and Hospital Assistance (Senate Funds MOA)",
+     "summary": "A referral letter to the Malasakit Center at Cotabato Regional Medical Center for hospital bill help.",
+     "for": [
+      "families-in-need",
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [
+      "Valid ID (Xerox) (Personal Documents of Clients)",
+      "Medical Certificate (Xerox) (Hospital Staffs)",
+      "Final Billing (Xerox) (Hospital Staffs)"
+     ],
+     "fee": "None",
+     "time": "1 hour and 40 minutes",
+     "where": "Office on Social Welfare and Development Services – Crisis Intervention and Disaster Relief Operation (CIDRO) Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Emergency PhilHealth (PHIC) Card",
+     "summary": "Emergency PhilHealth coverage when you are suddenly hospitalised and cannot pay.",
+     "for": [
+      "families-in-need",
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [
+      "Valid ID (Xerox) (Personal Documents of Clients)",
+      "Barangay Certificate (Xerox) (Barangay Official/Barangay Hall)",
+      "Certificate of Confinement (Xerox) (Hospital Staffs)"
+     ],
+     "fee": "None",
+     "time": "1 hour and 30 minutes",
+     "where": "Office on Social Welfare and Development Services – Crisis Intervention and Disaster Relief Operation (CIDRO) Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Relief Operation (Natural and Man-Made Calamities)",
+     "summary": "Food and non-food relief packs for victims of disasters and other calamities.",
+     "for": [
+      "families-in-need"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Assessment and Validation Report that they are Victims of Natural and Man-Made Calamities from Barangay Officials and CIDRO Staffs (Barangay Officials and CIDRO Staff)"
+     ],
+     "fee": "None",
+     "time": "2 days and 45 minutes",
+     "where": "Office on Social Welfare and Development Services – Crisis Intervention and Disaster Relief Operation (CIDRO) Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Child Welfare Program - Protective Services (Custodial Issue Mediation/Settlement Process)",
+     "summary": "Help settling a child custody dispute through a case conference with your barangay.",
+     "for": [
+      "children",
+      "families-in-need"
+     ],
+     "category": "legal",
+     "requirements": [
+      "Birth Certificate (Philippine Statistic Authority (PSA))",
+      "Marriage Certificate (Philippine Statistic Authority (PSA))",
+      "Other Documents (depends on circumstances)"
+     ],
+     "fee": "None",
+     "time": "1 day and 1 hour",
+     "where": "Office on Social Welfare and Development Services – Child Welfare Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Child Welfare Program - Protective Services (Children-At-Risk – CNSP)",
+     "summary": "Protection, medico-legal help, counselling and case filing for children who suffered abuse.",
+     "for": [
+      "children"
+     ],
+     "category": "legal",
+     "requirements": [
+      "Communication Letter (optional for walk-in client) (Respective Barangay/BCPC/Agency)",
+      "Barangay Blotter/Police Blotter/ Spot Report (Respective Barangay/Police Station)",
+      "Certificate of Live Birth (Philippine Statistic Authority (PSA))",
+      "Result of Medical Examination/ Medico-legal (If possible) (CRMC Hospital)"
+     ],
+     "fee": "None",
+     "time": "5 days and 5 hours",
+     "where": "Office on Social Welfare and Development Services – Child Welfare Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Child Welfare Program - Protective Services (Children-At-Risk – Violators)",
+     "summary": "Temporary shelter, values formation and case conferences for children who break ordinances or commit light offences.",
+     "for": [
+      "children"
+     ],
+     "category": "legal",
+     "requirements": [
+      "Communication Letter (Respective Barangay/BCPC/Agency)",
+      "Barangay Certificate (Respective Barangay/BCPC)",
+      "Certificate of Live Birth (Philippine Statistic Authority (PSA))",
+      "School ID/ School Records (If possible) (Respective School)",
+      "Result of Medical Examination/ Medico-legal (CRMC Hospital)",
+      "Barangay Blotter/Police Blotter/ Spot Report (Respective Barangay/Police Station)"
+     ],
+     "fee": "None",
+     "time": "1 day & 4 hours & 30 minutes",
+     "where": "Office on Social Welfare and Development Services – Child Welfare Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Child Welfare Program - Protective Services (Children In-Conflict with the Law (CICL)/Children Deprived of Liberty)",
+     "summary": "Social worker help, release requests and diversion programs for children accused of a crime.",
+     "for": [
+      "children"
+     ],
+     "category": "legal",
+     "requirements": [
+      "Communication Letter (optional for walk-in client) (Respective Barangay/BCPC/Agency)",
+      "Barangay Certificate (Respective Barangay/BCPC)",
+      "Certificate of Live Birth (Philippine Statistic Authority (PSA))",
+      "School ID/ School Records (If possible) (Respective School)",
+      "Result of Medical Examination/ Medico-legal (If possible) (CRMC Hospital)",
+      "Barangay Blotter/Police Blotter/ Spot Report (Respective Barangay/Police Station)"
+     ],
+     "fee": "None",
+     "time": "22 days & 3 hours & 30 minute",
+     "where": "Office on Social Welfare and Development Services – Child Welfare Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Child Welfare Program - Protective Services (Request for Certification of Custody)",
+     "summary": "A certificate of custody a child needs to claim a survivorship pension.",
+     "for": [
+      "children"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Barangay Certificate (for minor) (Respective Barangay)",
+      "Certificate of Live Birth of minor (Philippine Statistic Authority (PSA))",
+      "Certificate of Marriage of Parents (Philippine Statistic Authority (PSA))",
+      "Death Certificate of Deceased Parent(s) (Philippine Statistic Authority (PSA))",
+      "Other Documents (depends on circumstances)"
+     ],
+     "fee": "None",
+     "time": "1 day and 1 hour & 30 minutes",
+     "where": "Office on Social Welfare and Development Services – Child Welfare Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Child Welfare Program - Protective Services (Request for Certification for Passport Application)",
+     "summary": "A social welfare certificate a child needs to apply for a passport.",
+     "for": [
+      "children",
+      "travellers"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Barangay Certificate (for minor) (Respective Barangay)",
+      "Certificate of Live Birth of minor (Philippine Statistic Authority (PSA))",
+      "Parent(s) Consent/ Authorization Letter (Parent(s) of the minor)",
+      "Two (2) valid I.D. of the Parent(s) (Any Government Agency)",
+      "Two (2) valid I.D. of the Applicant (If not the parents) (Any Government Agency)"
+     ],
+     "fee": "None",
+     "time": "1 day and 1 hour",
+     "where": "Office on Social Welfare and Development Services – Child Welfare Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Child Welfare Program - Protective Services (Application for Travel Clearance)",
+     "summary": "A travel clearance for a child travelling alone or without parents within the Philippines.",
+     "for": [
+      "children",
+      "travellers"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Barangay Certificate (for minor) (Respective Barangay)",
+      "Certificate of Live Birth of minor (Philippine Statistic Authority (PSA))",
+      "Airline Ticket of the minor & adult companion (Airline ticketing office)",
+      "Parent(s) Consent/ Authorization Letter (Parent(s) of the minor)",
+      "Two (2) valid I.D. of the Parent(s) (Any Government Agency)",
+      "Two (2) valid I.D. of the minor companion/applicant (Any Government Agency)",
+      "Accomplished travel clearance form (OSWDS)"
+     ],
+     "fee": "None",
+     "time": "2 hours and 30 minutes",
+     "where": "Office on Social Welfare and Development Services – Child Welfare Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Solo Parent Identification (ID) Issuance",
+     "summary": "A solo parent ID card for single parents raising children alone.",
+     "for": [
+      "families-in-need"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Barangay Certification of Residency (Barangay Hall)",
+      "Proof of evidence being solo parent (death certificate, separation papers, affidavit of being Solo Parent) (Barangay Hall, City Prosecutor Office)",
+      "Birth certificate of minor dependents (LCR)",
+      "Income Tax Return or Barangay Certification of Indigency (Barangay Hall, BIR)",
+      "1 piece 1x1 & 1 piece 2x2 ID picture",
+      "Home Visit for validation"
+     ],
+     "fee": "None",
+     "time": "2 hours and 20 minutes",
+     "where": "Office on Social Welfare and Development Services – Family and Community Welfare Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Financial Assistance for VAWC Clients",
+     "summary": "Counselling, help filing a case and cash aid for women and children who suffered violence.",
+     "for": [
+      "women",
+      "children"
+     ],
+     "category": "legal",
+     "requirements": [
+      "Medico legal Report (Hospital)",
+      "Barangay Certification of Residency (Barangay Hall)",
+      "Barangay Protection Order (BPO) (Barangay Hall)",
+      "PNP Blotter Report (PNP Station)"
+     ],
+     "fee": "None",
+     "time": "7 hours and 30 minutes",
+     "where": "Office on Social Welfare and Development Services – Family and Community Welfare Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Livelihood Assistance for Indigent Family",
+     "summary": "Livelihood help for poor families after a home visit and assessment.",
+     "for": [
+      "families-in-need"
+     ],
+     "category": "livelihood",
+     "requirements": [
+      "Barangay Certification of Residency (Barangay Hall)",
+      "Barangay Certification of Indigency (Barangay Hall)",
+      "Intake interview (Filled out Intake Sheet/Form) (OSWDS)",
+      "Social Case Study Report (OSWDS)"
+     ],
+     "fee": "None",
+     "time": "4 Hours and 30 minutes",
+     "where": "Office on Social Welfare and Development Services – Family and Community Welfare Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Pre-Marriage Counselling",
+     "summary": "A pre-marriage counselling session and certificate couples need for a marriage licence.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Secure copy of requirements for application of marriage license (Local Civil Registry)"
+     ],
+     "fee": "P50.00",
+     "time": "4 hours 1 minute",
+     "where": "Office on Social Welfare and Development Services – Population and Day Care Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Productivity Skills Capability Building for Disadvantaged Women",
+     "summary": "Free sewing and pattern-making training for disadvantaged women, with livelihood help for graduates.",
+     "for": [
+      "women"
+     ],
+     "category": "livelihood",
+     "requirements": [
+      "Barangay Certification (Barangay)"
+     ],
+     "fee": "None",
+     "time": "15 days 30 minutes",
+     "where": "Office on Social Welfare and Development Services – PSCB",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Social Pension Program for Indigent Senior Citizens (SPPISC) or SocPen",
+     "summary": "A monthly PhP 500.00 pension for poor senior citizens.",
+     "for": [
+      "senior-citizens"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Senior Citizens ID - Original and photocopied ID (must bear the specimen signature of the OSCA Executive Secretary) (OSCA)",
+      "Barangay Certificate of Residency with the specimen signature of the Barangay Senior Citizens President (BSCP) (Barangay of Residence)",
+      "3 copies of latest 2x2 picture with white background (Photo Studio)",
+      "Voter’s Certificate - Original and Xeroxed (COMELEC)",
+      "Filled-up Intake Interview Form (OSWDS-SSSS)"
+     ],
+     "fee": "None",
+     "time": "8 months, 2 weeks, 6 days, 2 hours & 10 minutes",
+     "where": "Office on Social Welfare and Development Services – Special Social Services Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Burial Assistance (Senior Citizens)",
+     "summary": "Cash help with burial costs for families of poor senior citizens who died.",
+     "for": [
+      "senior-citizens",
+      "families-in-need"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Death Certificate issued by the Local Civil Registry and/or Death Certificate issued by the Barangay for Moslem Beneficiaries (Local Civil Registry/ Barangay of Residence)",
+      "Certificate of Indigency (Barangay of Residence)",
+      "Original and photocopied Senior ID of the Deceased (OSCA)",
+      "Original and photocopied ID of the Representative of the Deceased (Client)",
+      "Filled-up Intake Interview Form (OSWDS-SSSS)"
+     ],
+     "fee": "None",
+     "time": "2 days and 2 hours",
+     "where": "Office on Social Welfare and Development Services – Special Social Services Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Medical Assistance (Senior Citizens)",
+     "summary": "Free prescription medicines from a partner pharmacy for poor senior citizens.",
+     "for": [
+      "senior-citizens",
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [
+      "Original and photocopied Senior Citizens ID (OSCA)",
+      "Updated Prescription (Medical Practitioner)",
+      "Filled-up Intake Interview Form (OSWDS-SSSS)"
+     ],
+     "fee": "None",
+     "time": "1 hour and 10 minutes",
+     "where": "Office on Social Welfare and Development Services – Special Social Services Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Financial Assistance (Senior Citizens)",
+     "summary": "Cash aid for poor senior citizens in need.",
+     "for": [
+      "senior-citizens"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Original and photocopied Senior Citizens ID (OSCA)",
+      "Certificate of Indigency (Barangay of Residence)",
+      "Barangay Certificate of Residency (Barangay of Residence)",
+      "Medical Abstract (if assistance is related to health) (Medical Practitioner)",
+      "Filled-up Intake Interview Form (OSWDS-SSSS)"
+     ],
+     "fee": "None",
+     "time": "1 day, 3 hours and 30 minutes",
+     "where": "Office on Social Welfare and Development Services – Special Social Services Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Provision of Assistive Device (Senior Citizens)",
+     "summary": "A wheelchair, cane or other assistive device for poor senior citizens who need one.",
+     "for": [
+      "senior-citizens"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Original and photocopied Senior Citizens ID (OSCA)",
+      "Certificate of Indigency (Barangay of Residence)",
+      "Medical Abstract (Medical Practitioner)",
+      "Medical Certificate (stating the assistive device needed) (Medical Practitioner)",
+      "Filled-up Intake Interview Form (OSWDS-SSSS)"
+     ],
+     "fee": "None",
+     "time": "1 day, 3 hours and 30 minutes",
+     "where": "Office on Social Welfare and Development Services – Special Social Services Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Centenarian Program",
+     "summary": "A national government cash grant and plaque for citizens who reach 100 years old.",
+     "for": [
+      "senior-citizens"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "2 pcs 1x1 picture (Client)",
+      "Filled-up Intake Sheet Form (OSWDS-SSSS)",
+      "Latest Barangay Certificate (Barangay of Residence)",
+      "Photocopy of Senior Citizens ID (Client)",
+      "NSO Birth Certificate (SECPA with Original Receipt) (PSA)",
+      "Affidavit of 2 Disinterested Persons certifying the fact of birth with 2 Witnesses 80+ of Age (Attach Photocopy of IDs of the Affiants) (Client)",
+      "Original Voter’s Certificate (COMELEC)",
+      "Whole Body and Half Body Pictures (Photo Studio)",
+      "Birth Certificate (SECPA with Original Receipts) of the Children (PSA)",
+      "Community Tax Certificate (City Treasury Office)"
+     ],
+     "fee": "None",
+     "time": "5 days, 4 hours and 40 minutes",
+     "where": "Office on Social Welfare and Development Services – Special Social Services Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Burial Assistance (Persons with Disability)",
+     "summary": "Cash help with burial costs for families of poor persons with disability who died.",
+     "for": [
+      "persons-with-disability",
+      "families-in-need"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Death Certificate issued by the Local Civil Registry and/or Death Certificate issued by the Barangay for Moslem Beneficiaries (Local Civil Registry/ Barangay of Residence)",
+      "Certificate of Indigency (Barangay of Residence)",
+      "Original and photocopied PWD ID of the deceased (PDAO)",
+      "Original and photocopied ID of the Representative of the deceased (Client)",
+      "Filled-up Intake Interview Form (OSWDS-SSSS)"
+     ],
+     "fee": "None",
+     "time": "3 hours and 20 minutes",
+     "where": "Office on Social Welfare and Development Services – Special Social Services Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Medical Assistance (Persons with Disability)",
+     "summary": "Free prescription medicines from a partner pharmacy for poor persons with disability.",
+     "for": [
+      "persons-with-disability",
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [
+      "Original and photocopied PWD ID (PDAO)",
+      "Updated Prescription (Medical Practitioner)",
+      "Filled-up Intake Interview Form (OSWDS-SSSS)"
+     ],
+     "fee": "None",
+     "time": "1 hour and 20 minutes",
+     "where": "Office on Social Welfare and Development Services – Special Social Services Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Financial Assistance (Persons with Disability)",
+     "summary": "Cash aid for poor persons with disability in need.",
+     "for": [
+      "persons-with-disability"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Original and photocopied PWD ID (PDAO)",
+      "Certificate of Indigency (Barangay of Residence)",
+      "Barangay Certificate of Residency (Barangay of Residence)",
+      "Medical Abstract (if assistance is related to health) (Medical Practitioner)",
+      "Filled-up Intake Interview Form (OSWDS-SSSS)"
+     ],
+     "fee": "None",
+     "time": "1 day, 3 hours and 20 minutes",
+     "where": "Office on Social Welfare and Development Services – Special Social Services Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Provision of Assistive Device (Persons with Disability)",
+     "summary": "A wheelchair, cane or other assistive device for poor persons with disability.",
+     "for": [
+      "persons-with-disability"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Original and photocopied PWD ID (PDAO)",
+      "Certificate of Indigency (Barangay of Residence)",
+      "Medical Abstract (Medical Practitioner)",
+      "Medical Certificate (stating the assistive device needed) (Medical Practitioner)",
+      "Filled-up Intake Interview Form (OSWDS-SSSS)"
+     ],
+     "fee": "None",
+     "time": "1 day, 3 hours and 30 minutes",
+     "where": "Office on Social Welfare and Development Services – Special Social Services Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Educational Assistance",
+     "summary": "Cash aid to help poor but deserving students with disability stay in school.",
+     "for": [
+      "persons-with-disability",
+      "students"
+     ],
+     "category": "education",
+     "requirements": [
+      "Original and Xeroxed PWD ID (PDAO)",
+      "Certificate of Indigency (Barangay of Residence)",
+      "Certificate of Enrollment with LRN Number (School where Enrolled)",
+      "Filled-up Intake Interview Form (OSWDS-SSSS)"
+     ],
+     "fee": "None",
+     "time": "2 days, 3 hours and 10 minutes",
+     "where": "Office on Social Welfare and Development Services – Special Social Services Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Temporary Protective Custody",
+     "summary": "Safe temporary shelter, counselling and legal help for at-risk children and women in crisis.",
+     "for": [
+      "children",
+      "women"
+     ],
+     "category": "legal",
+     "requirements": [
+      "Negative RT-PCR Swab Test/Antigen Rapid Test (CRMC/City Health Office)",
+      "Endorsement Letter/Referral Letter (Barangay, PNP, & other agencies)",
+      "Photocopy of Birth Certificate (LCR Office/PSA Office)",
+      "Photocopy of Medical Certificate (CRMC/City Health Office)",
+      "Photocopy of School Records (in case no birth certificate) (Respective School of Client)"
+     ],
+     "fee": "None",
+     "time": "1 day, 2 hours & 35 minutes",
+     "where": "Office on Social Welfare and Development Services – Women Crisis Center & Social Development Center",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Issuance of Occupational or Mayor’s Permit",
+     "summary": "The yearly permit workers need to work within Cotabato City.",
+     "for": [
+      "workers"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Official Receipt of Payment (Business Permit and Licensing Office)",
+      "Valid ID (Concerned individual/client)"
+     ],
+     "fee": "P150.00",
+     "time": "10 minutes",
+     "where": "Office of the City Treasurer – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Receiving of Correspondences",
+     "summary": "Submit a request, protest or complaint letter to the City Treasurer and get a response.",
+     "for": [
+      "everyone",
+      "businesses",
+      "government-offices"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Original and Duplicate copy of: Letter of Request, Letter of Protest, Letter of Complaint, or Memoranda/Circular/Guidelines (Personal Letter; From the Company Involved; From the Government Agency/Office)"
+     ],
+     "fee": "None",
+     "time": "5 hours and 22 minutes",
+     "where": "Office of the City Treasurer – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Issuance of Certificate of Appearance",
+     "summary": "A certificate showing you appeared at the City Treasurer's office.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Valid ID (Concerned individual/client)"
+     ],
+     "fee": "None",
+     "time": "10 minutes",
+     "where": "Office of the City Treasurer – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Certification of Photocopy of Official Receipts Issued by This Office as True Copy",
+     "summary": "A certified true copy of an official receipt the City Treasurer issued you.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Valid ID (Concerned individual/client)",
+      "Original copy of Official Receipt (Office of the City Treasurer)",
+      "Photocopy of Official Receipt (Office of the City Treasurer)"
+     ],
+     "fee": "P30.00",
+     "time": "10 minutes",
+     "where": "Office of the City Treasurer – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Issuance of BIR Form 0016, Accountable Forms and Citation Tickets to Barangay Treasurers, Government and Law Enforcement Agencies",
+     "summary": "Barangays and agencies get official receipt booklets, accountable forms and citation tickets.",
+     "for": [
+      "local-governments",
+      "government-offices"
+     ],
+     "category": "government",
+     "requirements": [
+      "Photocopy of Valid ID of Head of Barangay, Government and Law Enforcement Agencies (Barangay, Government and Law Enforcement Agencies)",
+      "Photocopy of Valid ID of Accountable Officer or Treasurer (Barangay, Government and Law Enforcement Agencies)",
+      "Authorization letter from Head of Barangay, Head of Government or Law Enforcement Agency requesting for release of Accountable Forms (Barangay, Government and Law Enforcement Agencies)",
+      "Confirmation Letter (Bureau of Internal Revenue (BIR))",
+      "Accomplished RIS form (OCT-Admin)"
+     ],
+     "fee": "None",
+     "time": "6 minutes 10 seconds",
+     "where": "Office of the City Treasurer – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Receipt of Payment of Business Taxes",
+     "summary": "Pay your business taxes, fees and charges and get an official receipt.",
+     "for": [
+      "businesses"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Community Tax Receipts of employees and/or Corporation (Office of the City Treasurer- Business License and Fees Collection Division)",
+      "Occupational Tax Receipt/ Professional Tax Receipt (Office of the City Treasurer- Business License and Fees Collection Division)",
+      "Tax Order of Payment (1st Quarter- Business Permit Licensing Office (BPLO); 2nd, 3rd and 4th Quarter- BLFRD-OCT)"
+     ],
+     "fee": "Not exceeding 50% of 1% of the gross receipts for the preceding calendar year",
+     "time": "9 minutes",
+     "where": "Office of the City Treasurer – Business License and Fees Collection Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Issuance of Community Tax Certificate-Individual",
+     "summary": "Get your personal community tax certificate (cedula).",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Filled-out Application Form (Office of the City Treasurer- BLFCD)"
+     ],
+     "fee": "Annual basic community tax of PHP5 plus PHP1 for every PHP 1,000 of income; additional tax not exceeding PHP 5,000",
+     "time": "6 minutes",
+     "where": "Office of the City Treasurer – Business License and Fees Collection Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Issuance of Community Tax Certificate-Corporate",
+     "summary": "Get your corporation's community tax certificate (cedula).",
+     "for": [
+      "businesses"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Tax Order of Payment (Business Permit Licensing Office)"
+     ],
+     "fee": "Annual basic community tax of PHP 500 plus 2 for every PHP5,000 of gross receipts; additional tax not exceeding P10,000",
+     "time": "6 minutes",
+     "where": "Office of the City Treasurer – Business License and Fees Collection Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Issuance of Professional Tax Receipt (PTR)",
+     "summary": "Pay the yearly professional tax and get the receipt licensed professionals need to practise.",
+     "for": [
+      "workers"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "PRC License (PRC)"
+     ],
+     "fee": "PHP300 plus 25% surcharge and 2% interest per month",
+     "time": "4 minutes",
+     "where": "Office of the City Treasurer – Business License and Fees Collection Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Receipt of Payment of Real Property Transfer Tax",
+     "summary": "Pay the tax due when land or property changes owner by sale, donation or inheritance.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Original Copy of Deed of Sale/ Donation/ Extrajudicial Settlement (Client)",
+      "Photocopy of Tax Declaration of Property to be transferred (Office of the City Assessor)",
+      "Certificate Authorizing Registration (CAR) (Bureau of Internal Revenue)",
+      "Tax Clearance (Real Property Tax Division- Cotabato City)"
+     ],
+     "fee": "75% of 1% of the total consideration involved in the acquisition of the property or fair market value, whichever is higher",
+     "time": "8 minutes",
+     "where": "Office of the City Treasurer – Real Property Tax Collection Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Issuance of Certification of Business Closure",
+     "summary": "A certificate confirming your business has closed, after a short inspection.",
+     "for": [
+      "businesses"
+     ],
+     "category": "business",
+     "requirements": [
+      "Letter of Intent to Close Business (Office of the City Treasurer- Business License and Fees Records Division)",
+      "Business Plate (Business Establishment)",
+      "Business Permit (Business Establishment)",
+      "Document indicating Gross Sales (Business Establishment)",
+      "Official Receipt (OCT-BLFCD)"
+     ],
+     "fee": "P140.00",
+     "time": "1 day 9 minutes",
+     "where": "Office of the City Treasurer – Business License and Fees Records Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Receipt of Payment of Real Property Taxes",
+     "summary": "Pay the yearly tax on your land, building or machinery and get an official receipt.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Statement of Account or latest official receipt (Office of the City Treasurer)",
+      "Copy of the Latest Real Property Tax Declaration (Office of the City Treasurer)"
+     ],
+     "fee": "Amount reflected in the Statement of Account or 1.125% [RPT=Basic (Assessed Value x Tax Rate) + SEF (Assessed Value x 1%)]",
+     "time": "4 minutes",
+     "where": "Office of the City Treasurer – Real Property Tax Collection Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Issuance of Real Property Tax Clearance",
+     "summary": "A clearance proving the real property taxes on your property are fully paid.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Accomplished Tax Clearance Form (Office of the City Treasurer)",
+      "Latest official receipt for existing property (Office of the City Treasurer)",
+      "Or Tax Declaration for newly acquired properties (Office of the City Assessor)"
+     ],
+     "fee": "PHP30 Tax Declaration; PHP50 per Clearance; PHP50 Security Seal",
+     "time": "23 minutes",
+     "where": "Office of the City Treasurer – Real Property Tax Collection Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Real Property Tax- Current/Delinquent",
+     "summary": "Find out how much current or overdue property tax you owe and pay it.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Latest Official Real Property Tax Receipt (Taxpayer’s File)",
+      "Tax Declaration (City Assessors)",
+      "Real Property Tax Credit: Request Letter for Tax Credit, Official Real Property Tax Receipts, Previous Statement of Real Property Tax Due (If any) (Taxpayer’s file)"
+     ],
+     "fee": "None",
+     "time": "9 minutes",
+     "where": "Office of the City Treasurer – Real Property Tax Records Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Real Property Tax Credit",
+     "summary": "A tax credit certificate when you paid property tax twice or by mistake.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Latest Official Real Property Tax Receipt (Taxpayer’s File)",
+      "Tax Declaration (City Assessors)",
+      "Real Property Tax Credit: Request Letter for Tax Credit, Official Real Property Tax Receipts, Previous Statement of Real Property Tax Due (If any) (Taxpayer’s file)"
+     ],
+     "fee": "None",
+     "time": "7 days and 3 minutes",
+     "where": "Office of the City Treasurer – Real Property Tax Records Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Disbursement of Financial Assistance/ Cash Allowance",
+     "summary": "Claim your approved medical, burial or other cash assistance from the city cashier.",
+     "for": [
+      "families-in-need"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "For Medical/ Burial Assistance - OSWDS Claim Stub (Office of the City Social Welfare and Development Service Officer)",
+      "Authorization from the original recipient, if release to a representative (Client)",
+      "Valid Government issued ID (Government Agency)"
+     ],
+     "fee": "None",
+     "time": "6 minutes",
+     "where": "Office of the City Treasurer – Cash Disbursement Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Payment of Obligations to Suppliers, Contractors, Bussiness Enterprises, and Other Government Agencies",
+     "summary": "Suppliers, contractors and agencies collect the city's check payments owed to them.",
+     "for": [
+      "businesses",
+      "government-offices"
+     ],
+     "category": "suppliers",
+     "requirements": [
+      "Audited and approved disbursement voucher and signed check (Office of the City Treasurer)",
+      "Official Receipt/ Collection Receipt (From the corresponding company or government agency.)",
+      "Authorization from the company if release to representatives (From the corresponding company or government agency.)"
+     ],
+     "fee": "None",
+     "time": "6 minutes",
+     "where": "Office of the City Treasurer – Cash Disbursement Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Request to Needed Services (Administrative Division)",
+     "summary": "Send a letter asking the city environment office for a service and get it acted on.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter of request (Concerned Individual)"
+     ],
+     "fee": "None",
+     "time": "23 minutes",
+     "where": "Office of the City Environment & Natural Resources – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Barrowing of Office Equipment / Item",
+     "summary": "Borrow equipment or items from the city environment office.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Borrower’s Slip (CENRO Admin. Division)"
+     ],
+     "fee": "None",
+     "time": "1 hour and 2 minutes",
+     "where": "Office of the City Environment & Natural Resources – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Retrieval of Office Records for Reference",
+     "summary": "Get a certified true copy of a record kept by the city environment office.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Verbal Request or Letter of Request (Concerned Individual)"
+     ],
+     "fee": "None",
+     "time": "23 minutes",
+     "where": "Office of the City Environment & Natural Resources – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Burial Request",
+     "summary": "Approval to bury a loved one at the city cemetery.",
+     "for": [
+      "everyone"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Burial Permit (City Civil Registry Office.)",
+      "Death Certificate (City Civil Registry Office)",
+      "Consent or approval letter (Office of the Secretary to the City Mayor)"
+     ],
+     "fee": "100.00 (burial fee)",
+     "time": "48 minutes",
+     "where": "Office of the City Environment & Natural Resources – Public Services Division (Parks and Plaza Section)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Special Collection for Special Garbage",
+     "summary": "Request a special trip to collect bulky or unusual garbage from your place.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter Request/Request Form for Special Collection of Garbage. (Concerned Individual)"
+     ],
+     "fee": null,
+     "time": "1 hour and 40 minutes",
+     "where": "Office of the City Environment & Natural Resources – Public Services Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Order of Payment for Violation Under City Ordinance No. 4203",
+     "summary": "Settle the fine for an environment citation ticket under City Ordinance No. 4203.",
+     "for": [
+      "everyone"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Citation Ticket for Violation under City Ordinance No. 4203. (CENRO Public Services Division)",
+      "Order of payment slip"
+     ],
+     "fee": "See the schedule of fines/penalties under Ordinance 4203",
+     "time": "26 minutes",
+     "where": "Office of the City Environment & Natural Resources – Public Services Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Regular Garbage Collection Schedule",
+     "summary": "City garbage trucks collect daily by area, 4:00 A.M.–10:00 A.M. and 9:00 P.M.–3:00 A.M.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Office of the City Environment & Natural Resources – Public Services Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Request for Needed Services (Environment & Natural Resources Division)",
+     "summary": "Ask for tree planting, clean-up drives or water and air checks, or file an environmental complaint.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter request (Concerned individual/ client)",
+      "Letter of complaint (Concerned individual/ client)"
+     ],
+     "fee": "None",
+     "time": "1 hour and 14 minutes",
+     "where": "Office of the City Environment & Natural Resources – Environment & Natural Resources Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Issuance of Zoning (Locational) Clearance for Building Permit",
+     "summary": "The zoning clearance you need before getting a building permit.",
+     "for": [
+      "everyone"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Zoning Assessment Fee (paid according to Schedule of Fees) (Assessment – Office of the City Planning and Development Coordinator – Environmental Control and Zoning Division; Fee – Pay at Office of the City Treasurer)",
+      "Proof of ownership – Authenticated Copy of Registered Land Title (Registry of Deeds)",
+      "Proof of consent from registered owner in case the applicant is not the lot owner (Interested applicant)",
+      "Building Plan: Perspective, Site Development and Location/Vicinity Map (Civil Engineer, Architect, Draftsman, Building Plans Signed and Seal by Geodetic Engineer and Civil Engineer)",
+      "Bills of Materials and Cost Estimates (Civil Engineer, Architect, Draftsman, Building Plans Signed and Seal by Geodetic Engineer and Civil Engineer)",
+      "Accomplished and duly notarized Application Form for Zoning Clearance (Office of the City Planning and Development Coordinator – Environmental Control and Zoning Division)",
+      "Community Tax Certificate (Office of the City Treasurer)",
+      "Barangay Clearance (Respective barangay)"
+     ],
+     "fee": "See the schedule of fees",
+     "time": "2 hours 40 minutes",
+     "where": "Office of the City Planning and Development Coordinator – Environmental Control and Zoning Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Issuance of Certificate of Zoning Classification",
+     "summary": "A certificate stating the zoning classification of your land.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Site Development Plan and Vicinity Map signed and sealed by a Geodetic Engineer (Client)",
+      "Authenticated Photocopy of Land Title (Register of Deeds)"
+     ],
+     "fee": "Php20.00 to Php35.00, depending on land area",
+     "time": "30 minutes",
+     "where": "Office of the City Planning and Development Coordinator – Environmental Control and Zoning Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Evaluation, Processing and Request for Approval of Preliminary Subdivision Development Plan (PSDP) - Simple/Complex Subdivision",
+     "summary": "Approval of a preliminary plan to turn your land into a subdivision.",
+     "for": [
+      "everyone"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Subdivision Scheme including the Site Development Plan, Vicinity Map, Survey Plan of Lot (Surveyor (Registered Geodetic Engineer))",
+      "Affidavit/Sworn Statement indicating therein the purpose, nature, number, income level of beneficiaries and maximum selling price per lot (Client secured duly notarized affidavit/sworn statement from a lawyer)",
+      "DAR Certification of Non-Tenancy of Lot or Affidavit of Waiver of Tenant (if land is planted with rice) (DAR)",
+      "Duly authenticated copies of Transfer Certificate of Title (TCT), Tax Declaration (TD), and original copy of the current Tax Clearance (Register of Deeds (ROD))",
+      "Right to Use Property or Deed of Sale/Donation of the Road-Right-of-Way (if applicable) (Client secures consent from owner duly notarized by a lawyer)",
+      "Proof of payment (Zoning Fee/Subdivision Fee) (Office of the City Treasurer)",
+      "Proof of License of Geodetic Engineer (PRC, PTR) (Surveyor (Registered Geodetic Engineer))",
+      "Application Form and Request for Approval of PSDP (Office of the City Planning and Development Coordinator – Physical/Infrastructure Planning Division / Sangguniang Panlungsod)",
+      "Special Power of Attorney (SPA) authorizing the representative to process, follow-up, execute and receive any documents in behalf of the applicant (Client secures consent from owner duly notarized by a lawyer)",
+      "Affidavit of Undertaking (Client secures consent from owner duly notarized by a lawyer)"
+     ],
+     "fee": "Zoning fee Php25.00 per hectare; subdivision fee Php250.00 per hectare (or a fraction thereof)",
+     "time": "3 days and 50 minutes",
+     "where": "Office of the City Planning and Development Coordinator – Physical/Infrastructure Planning Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Evaluation, Processing and Request for Approval of Development Permit",
+     "summary": "Approval of a development permit so you can build your subdivision project.",
+     "for": [
+      "everyone"
+     ],
+     "category": "permits",
+     "requirements": [
+      "All documentary requirements pertaining to Development Permit (Applicant)",
+      "Subdivision Development Permit / Preliminary Subdivision Development Permit approved by Sangguniang Panlungsod (PSDP is a prerequisite to Development Permit) (Office of the City Planning and Development Coordinator – Physical/Infrastructure Planning Division/ Sangguniang Panlungsod)",
+      "Certified True Copy of Environmental Compliance Certificate (ECC) or Certificate of Non-Coverage, whichever is applicable issued by DENR (DENR)",
+      "Batas Pambansa Blg 220 established parameters for economic and socialized housing projects in urban and rural areas (minimum design standard) (Applicant/Owner, Geodetic Engineer)",
+      "Application for Permit to Drill from the National Water Resources Board (NWRB), if applicable; Traffic Impact Assessment (TIA) for projects 30 hectares and above (Applicant/Owner, National Water Resources Board)",
+      "List of names of duly licensed professionals who signed the plans and other similar documents (Applicant/Owner)",
+      "Affidavit of ceiling price (according to board Resolution No. 973 series of 2018 “AMENDING PERTINENT PROVISION OF THE REVISED IMPLEMENTING RULES AND REGULATIONS FOR BATAS PAMBANSA BILANG 220”) (Applicant/Owner)"
+     ],
+     "fee": "Inspection fee Php1,000.00/ha; final approval & development permit Php2,000.00/ha, regardless of density",
+     "time": "6 days and 10 minutes",
+     "where": "Office of the City Planning and Development Coordinator – Physical/Infrastructure Planning Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Release of Socio-Economic Profile of Cotabato City",
+     "summary": "A printed or emailed copy of the city's socio-economic profile.",
+     "for": [
+      "everyone",
+      "researchers"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter request addressed to the Office of the City Mayor indicating the purpose (Client)",
+      "Routing slip of letter request to the Office of the City Planning and Development Coordinator indicating instruction or approval to release (Office of the City Mayor)"
+     ],
+     "fee": "None",
+     "time": "3 days",
+     "where": "Office of the City Planning and Development Coordinator",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Release of Planning Documents of City Government of Cotabato",
+     "summary": "A printed or emailed copy of the city's land use, development and other plans.",
+     "for": [
+      "everyone",
+      "researchers"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter request addressed to the Office of the City Mayor indicating the purpose (Client)",
+      "Routing slip of letter request to the Office of the City Planning and Development Coordinator indicating instruction or approval to release (Office of the City Mayor)"
+     ],
+     "fee": "None",
+     "time": "3 days",
+     "where": "Office of the City Planning and Development Coordinator",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Review and Evaluation of Barangay and Sangguniang Kabataan Planning Documents",
+     "summary": "Barangay and SK officials get their plans reviewed and signed off by the city.",
+     "for": [
+      "local-governments"
+     ],
+     "category": "government",
+     "requirements": [
+      "Duly signed Barangay/Sangguniang Kabataan planning documents (Barangay/Sangguniang Kabataan Officials)"
+     ],
+     "fee": "None",
+     "time": "30 minutes",
+     "where": "Office of the City Planning and Development Coordinator – Social Planning Development and Evaluation Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Maternal & Child Health Program Services",
+     "summary": "Pregnant women get check-ups before and after giving birth, plus birthing and newborn screening.",
+     "for": [
+      "women",
+      "children",
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": "Lying-in P 2,300.00 (multipara) to P 2,500.00 (primipara); newborn screening P 1,750.00; lab tests P 50.00 to P 150.00",
+     "time": null,
+     "where": "Barangay Health Center nearest you (City Health Office)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Family Planning & Reproductive Health Services",
+     "summary": "Get family planning advice, free contraceptives when available, and IUD or implant insertion and removal.",
+     "for": [
+      "women",
+      "families-in-need",
+      "everyone"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": "Free, except P 50.00 physical examination fee for IUD and Implanon insertion and removal",
+     "time": null,
+     "where": "Barangay Health Center nearest you, or the Main Health Center (City Health Office)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Immunization Program Services",
+     "summary": "Free vaccines for babies, seniors, pregnant women, preteens, wound and animal-bite patients.",
+     "for": [
+      "children",
+      "senior-citizens",
+      "women",
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": "Free, except P 50.00 physical examination fee",
+     "time": null,
+     "where": "Barangay Health Center nearest you, or the Main Health Center (City Health Office)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Nutrition Program Services",
+     "summary": "Children aged 6 to 71 months are weighed, checked, and given vitamins; malnourished children get feeding referrals.",
+     "for": [
+      "children",
+      "families-in-need"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Barangay Health Center nearest you, or the Main Health Center (City Health Office)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "National Tuberculosis Program (NTP/TB-DOTS) Services",
+     "summary": "People with TB symptoms get tested and receive free TB medicines for the full treatment.",
+     "for": [
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [
+      "Request form from physician, or referral form from other facility (for X-ray, GeneXpert, PPD testing and enrollment)"
+     ],
+     "fee": "Free assessment and treatment; chest X-ray P230.00 + P75.00 reading PF; GeneXpert P 75.00; HIV testing P 350.00",
+     "time": null,
+     "where": "City Health Office (National TB Program)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Leprosy Control Program Services",
+     "summary": "People with leprosy are identified and given free medicines for 12 to 18 months.",
+     "for": [
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [
+      "Referral from physician or other facility"
+     ],
+     "fee": "Free",
+     "time": "3 to 5 minutes",
+     "where": "City Health Office (Leprosy Control Program)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Health Certificate",
+     "summary": "Get a health certificate after your laboratory results come back.",
+     "for": [
+      "workers",
+      "everyone"
+     ],
+     "category": "health",
+     "requirements": [
+      "Official receipt and results from laboratory"
+     ],
+     "fee": "P 50.00",
+     "time": "5 minutes",
+     "where": "City Health Office (Environmental Health and Sanitation Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Sanitary Endorsement for Building Permit",
+     "summary": "Get the health office's sanitary endorsement needed for your building permit application.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Blue print",
+      "Approved plan from CEO",
+      "Official receipt"
+     ],
+     "fee": "P 750.00 (Commercial); P 675.00 (Residential)",
+     "time": "5 minutes",
+     "where": "City Health Office (Environmental Health and Sanitation Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Exhumation Permit",
+     "summary": "Get a permit to dig up and move the remains of a buried person.",
+     "for": [
+      "everyone"
+     ],
+     "category": "permits",
+     "requirements": [],
+     "fee": "P 675.00",
+     "time": "5 minutes",
+     "where": "City Health Office (Environmental Health and Sanitation Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Burial Permit",
+     "summary": "Get the permit needed to bury a deceased family member.",
+     "for": [
+      "everyone"
+     ],
+     "category": "permits",
+     "requirements": [],
+     "fee": "P 50.00",
+     "time": "5 minutes",
+     "where": "City Health Office (Environmental Health and Sanitation Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Transfer of Cadaver Permit",
+     "summary": "Get a permit to transport a deceased person's body.",
+     "for": [
+      "everyone"
+     ],
+     "category": "permits",
+     "requirements": [],
+     "fee": "P 675.00",
+     "time": "5 minutes",
+     "where": "City Health Office (Environmental Health and Sanitation Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Transfer Permit for Food",
+     "summary": "Get a sanitary permit to transport food.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [],
+     "fee": "P 675.00",
+     "time": "5 minutes",
+     "where": "City Health Office (Environmental Health and Sanitation Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Sanitary Permit for Delivery Vehicle",
+     "summary": "Get a sanitary permit for a vehicle used for deliveries.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [],
+     "fee": "P 675.00",
+     "time": "5 minutes",
+     "where": "City Health Office (Environmental Health and Sanitation Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Sanitary Inspection Clearance",
+     "summary": "Get a sanitary clearance after a health inspection of your establishment.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [],
+     "fee": "P 675.00",
+     "time": "5 minutes",
+     "where": "City Health Office (Environmental Health and Sanitation Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Food Handlers Class",
+     "summary": "Food establishment workers attend a food safety class required for food handlers.",
+     "for": [
+      "workers",
+      "businesses"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": "P 675.00",
+     "time": "4 hours",
+     "where": "City Health Office (Environmental Health and Sanitation Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Request for Fogging",
+     "summary": "Have an area fogged to kill mosquitoes and other pests.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": "P 675.00 / 1,000 sq.m.",
+     "time": "5 minutes",
+     "where": "City Health Office (Environmental Health and Sanitation Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Request for Misting",
+     "summary": "Have an area misted to control mosquitoes and other pests.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": "P 2,000.00 / 1,000 sq.m.",
+     "time": "5 minutes",
+     "where": "City Health Office (Environmental Health and Sanitation Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Request for Water Sampling",
+     "summary": "Have your water source sampled for safety testing.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": "P 800.00",
+     "time": "5 minutes",
+     "where": "City Health Office (Environmental Health and Sanitation Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Certificate of Water Potability",
+     "summary": "Get a certificate that your water is safe to drink.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Payment at City Treasury Office",
+      "Passed laboratory results from DOH accredited laboratory"
+     ],
+     "fee": "P 300.00",
+     "time": "5 minutes",
+     "where": "City Health Office (Environmental Health and Sanitation Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Attendance to Sanitation Complaints",
+     "summary": "Report sanitation problems such as unsafe water, toilets or garbage for inspection.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "City Health Office (Environmental Health and Sanitation Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Dental Services",
+     "summary": "Get dental check-ups, tooth extraction, fillings, cleaning, dental X-rays and certificates.",
+     "for": [
+      "children",
+      "women",
+      "patients",
+      "everyone"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": "P 50.00 to P 700.00 (e.g. consultation P 50.00, tooth extraction P 200.00); see the schedule of fees",
+     "time": null,
+     "where": "City Health Office (Dental Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Laboratory Services",
+     "summary": "Get urine, stool, blood tests, X-rays and ultrasound done at the city health laboratory.",
+     "for": [
+      "patients",
+      "everyone"
+     ],
+     "category": "health",
+     "requirements": [
+      "Request Slip"
+     ],
+     "fee": "P 50.00 to P 900.00 plus reading fee for X-ray and ultrasound; see the schedule of fees",
+     "time": null,
+     "where": "City Health Office (Laboratory Section)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Social Hygiene Clinic Services",
+     "summary": "Get tested and treated for sexually transmitted infections, counselling, and a health (pink) card.",
+     "for": [
+      "workers",
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": "Laboratory examination P 25.00; health (pink) card P 25.00",
+     "time": null,
+     "where": "City Health Office (Social Hygiene Clinic)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Emergency Clinic Services",
+     "summary": "Get emergency consultation, first aid, minor surgery, or referral to a hospital.",
+     "for": [
+      "patients",
+      "everyone"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": "P 10.00 to P 650.00 depending on the procedure (e.g. wound dressing P 50.00, ECG P 400.00)",
+     "time": null,
+     "where": "City Health Office (Emergency Clinic)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Medical Emergency Response",
+     "summary": "A medical emergency team is sent to emergencies and disasters within 15 minutes of a call.",
+     "for": [
+      "everyone"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": null,
+     "time": "Within 15 minutes upon receipt of info",
+     "where": "City Health Office (Medical Emergency Response Team), Tel. (064) 421-2752 or (064) 421-6959",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Ambulance Services",
+     "summary": "Get an ambulance ride to a hospital, free within the city.",
+     "for": [
+      "patients",
+      "everyone"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": "Free within the city; P200.00 to P2,300.00 outside the city depending on distance",
+     "time": null,
+     "where": "City Health Office (Health Emergency Management Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Adolescent Health and Development Program",
+     "summary": "Teenagers get a health check-in, counselling, and referral when needed, free of charge.",
+     "for": [
+      "youth"
+     ],
+     "category": "health",
+     "requirements": [],
+     "fee": "None",
+     "time": null,
+     "where": "City Health Office",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Various Request (General Services)",
+     "summary": "Ask the general services office for technical help or support you need.",
+     "for": [
+      "everyone",
+      "businesses",
+      "government-offices"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter Request (Client)"
+     ],
+     "fee": "None",
+     "time": "8 Minutes",
+     "where": "Office of the City General Services Officer – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Issuance of Certified Copy/ies of Documents",
+     "summary": "Get certified copies of documents kept by the city's general services records office.",
+     "for": [
+      "everyone",
+      "government-offices"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Letter of request / Records Request Form (Requesting office)"
+     ],
+     "fee": "None",
+     "time": "17 Minutes",
+     "where": "Office of the City General Services Officer – Records Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Release of Transfer Certificate of Title (TCTs) for Resettlement Program Beneficiaries",
+     "summary": "Malagapas resettlement beneficiaries who fully paid their lot receive their original land title.",
+     "for": [
+      "families-in-need"
+     ],
+     "category": "housing",
+     "requirements": [
+      "Letter from OCPDO to OCGSO stating client has complied the necessary requirements & full payment of lot, requesting release of original TCT (CPDO)",
+      "Entry Pass (original) (Client)",
+      "Deed of Sale, properly notarized (Any law firm/Attorney)",
+      "Official Receipt (original) of full payment (CTO)",
+      "Two (2) Valid IDs (Client)",
+      "Community Tax Certificate (current) (CTO)",
+      "Physical appearance of beneficiary or Special Power of Attorney (Client)"
+     ],
+     "fee": "None",
+     "time": "20 Minutes",
+     "where": "Office of the City General Services Officer – Records Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Building Maintenance",
+     "summary": "Request repair and maintenance work on a building.",
+     "for": [
+      "government-offices",
+      "businesses"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter request/Phone call/Verbal (Requesting Office)"
+     ],
+     "fee": "None",
+     "time": "1 day and 35 minutes (minor repair); 3 days and 35 minutes (major repair)",
+     "where": "Office of the City General Services Officer – General Maintenance Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Illumination and Tube Replacement of Streetlights and City Parks",
+     "summary": "Report busted streetlights or request new ones so the city repairs or installs them.",
+     "for": [
+      "everyone",
+      "local-governments"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter request/Phone call/Verbal (Requesting Office)"
+     ],
+     "fee": "None",
+     "time": "3 days and 20 minutes",
+     "where": "Office of the City General Services Officer – General Maintenance Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Sound System with Tables and Chairs",
+     "summary": "Borrow the city's sound system, tables and chairs, set up for your event.",
+     "for": [
+      "everyone",
+      "businesses",
+      "government-offices"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter request/Phone call/Verbal (Requesting Client/Office/Business)"
+     ],
+     "fee": "None",
+     "time": "39 minutes",
+     "where": "Office of the City General Services Officer – General Maintenance Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Certificate of Appearance and Certificate of Completion for On-the-Job Trainings (OJTs)",
+     "summary": "Get a certificate of appearance for your visit, or an OJT completion certificate after training.",
+     "for": [
+      "everyone",
+      "government-offices",
+      "students"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Office ID / Valid ID (Concerned Employees/Client)",
+      "Travel Order (Concerned Employees/Client)",
+      "Special Power of Attorney (SPA) (Any Legal Office)",
+      "Request slip (Receiving desk (Administrative Division))"
+     ],
+     "fee": "None",
+     "time": "51 minutes",
+     "where": "Office of the City Assessor – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Transfer of Real Property Ownership, Consolidation/Subdivision and Revision of Assessment",
+     "summary": "Transfer a property's tax declaration to a new owner, or update it after subdivision or consolidation.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Deed of Sale/Deed of Donation/Deed of Assignment/Deed of Exchange/Extra-Judicial Settlement of Estate/Affidavit of Adjudication/Certificate of Sale/Affidavit of Consolidation/Contract of Lease/Last Will and Testament/Waiver of Rights/Special Power of Attorney (Notary Public)",
+      "BIR's Certificate Authorizing Registration (CAR) [Capital Gains Tax, Donor's Tax, Estate Tax] (Bureau of Internal Revenue (BIR))",
+      "Transfer Tax Receipt (¾ of 1% of MV or SV whichever is higher) – Ordinance No. 2850 (City Treasury Office)",
+      "Administrative Fine (P3,000.00 for Corporation, P500 for individual) – Ordinance No. 2850 (City Treasury Office)",
+      "Realty Tax Clearance with Official Receipt for the current year (City Treasury Office)",
+      "Clear Copy of Approved Subdivision/Consolidation Plan (2 copies Blue Print or White Print or Combination) (Geodetic Engineer)",
+      "New Transfer Certificate of Title/s (Register of Deeds (ROD))",
+      "Petition for Registration/Deed of Partition (Register of Deeds (ROD))",
+      "Previous Title (Mother Title if needed) (Owner's File)",
+      "Payment of 10 years Back Taxes with official Receipt (City Treasury Office)",
+      "Approval of Application and Issuance of Patent (Ministry of Environment Natural Resources and Energy (MENRE))",
+      "Technical Description (MENRE/Geodetic Engineer/ROD)"
+     ],
+     "fee": "None at the Assessor's Office; transfer tax and any administrative fine are paid at the City Treasury Office",
+     "time": "26 minutes",
+     "where": "Office of the City Assessor – Assessment Standards and Examination Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Tax Mapping Verification, Certifications and Map Copies",
+     "summary": "Verify a property's exact location and owner, get boundary or road right-of-way certificates, and map copies.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Accomplished Bill Statement (Tax Mapping Division)",
+      "Written request (case to case) (Requesting Party)"
+     ],
+     "fee": "P 50.00 to P 300.00 depending on the request (e.g. RROW certification P 50.00, boundary certification P 100.00); see the schedule of fees",
+     "time": "10 to 15 minutes per item",
+     "where": "Office of the City Assessor – Tax Mapping Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Assessment or Re-assessment of Real Property (New Buildings, Machinery and Improvements)",
+     "summary": "Have a new building, machine or improvement assessed, or a property re-assessed or cancelled, for tax.",
+     "for": [
+      "everyone",
+      "businesses",
+      "government-offices"
+     ],
+     "category": "taxes",
+     "requirements": [
+      "Land – Titles, Approved free patent/Subdivision/consolidation plan (Registry of Deeds; MENRE BARMM)",
+      "Building/improvements – building permits/certificate of occupancy (City Engineer's Office)",
+      "Machineries – Purchased receipt (Owner's File)",
+      "For cancellation or reassessment: Building/Inputs – Demolition permits/Renovation permits (City Engineer's Office)",
+      "For cancellation or reassessment: Machineries – Surrender of business permits (Business Permit Licensing Office (BPLO))"
+     ],
+     "fee": "None",
+     "time": "3 hours and 3 minutes",
+     "where": "Office of the City Assessor – Assessment and Appraisal Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Certified True Copy of Tax Declaration",
+     "summary": "Get a certified true copy of your property's tax declaration.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Photocopy of Tax Declaration (Owner's file) / Real Property Tax receipt (Office of the City Treasurer) / Title (Register of Deeds)",
+      "Request Slip (Receiving Desk of the Records Division)",
+      "Special Power of Attorney (SPA) – for representative (Owner / Heir)"
+     ],
+     "fee": "Php 30.00/RPU",
+     "time": null,
+     "where": "Office of the City Assessor – Assessment Records and Management Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Certified Photocopy of Tax Declaration",
+     "summary": "Get a certified photocopy of an older tax declaration from the records books.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Photocopy of Tax Declaration (Owner's file) / Real Property Tax receipt (Office of the City Treasurer) / Title (Register of Deeds)",
+      "Request Slip (Receiving Desk of the Records Division)",
+      "Special Power of Attorney (SPA) – for representative (Owner / Heir)"
+     ],
+     "fee": "P 25.00/RPU",
+     "time": null,
+     "where": "Office of the City Assessor – Assessment Records and Management Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Certification of Property With or Without Improvement/s",
+     "summary": "Get a certificate stating whether your property has buildings or other improvements.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Photocopy of Tax Declaration (Owner's file) / Real Property Tax receipt (Office of the City Treasurer) / Title (Register of Deeds)",
+      "Request Slip (Receiving Desk of the Records Division)",
+      "Special Power of Attorney (SPA) – for representative (Owner / Heir)"
+     ],
+     "fee": "P 25.00/Certificate",
+     "time": null,
+     "where": "Office of the City Assessor – Assessment Records and Management Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Certification of Total Land Holdings",
+     "summary": "Get a certificate listing all land declared under an owner's name, including for estate tax.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Name of Real Property owner",
+      "For payment of Estate Tax: copy of death certificate or year of death",
+      "Request Slip (Receiving Desk of the Records Division)",
+      "Special Power of Attorney (SPA) – for representative (Owner / Heir)"
+     ],
+     "fee": "P 25.00/certificate",
+     "time": null,
+     "where": "Office of the City Assessor – Assessment Records and Management Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Certification of No Land/Property Holdings",
+     "summary": "Get a certificate that no land or property is declared under a person's name.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Name of Real Property owner",
+      "Request Slip (Receiving Desk of the Records Division)"
+     ],
+     "fee": "P 25.00/certificate",
+     "time": null,
+     "where": "Office of the City Assessor – Assessment Records and Management Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Certification of No Record",
+     "summary": "Get a certificate that the assessor has no record for a titled property.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Photocopy of title (Register of Deeds)",
+      "Request Slip (Receiving Desk of the Records Division)"
+     ],
+     "fee": "P 25.00/certificate",
+     "time": null,
+     "where": "Office of the City Assessor – Assessment Records and Management Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Annotation of Mortgage",
+     "summary": "Have a property mortgage noted on its tax declaration.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Mortgage Agreement (Bank / any government institution)",
+      "Owner's copy of Tax Declaration (Owner's file)",
+      "Request Slip (Receiving Desk of the Records Division)"
+     ],
+     "fee": "P 60.00/RPU",
+     "time": null,
+     "where": "Office of the City Assessor – Assessment Records and Management Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "History Assessment",
+     "summary": "Get copies tracing a property's past tax declarations and assessments.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Photocopy of Tax Declaration (Owner's file) / Real Property Tax receipt (Office of the City Treasurer) / Title (Register of Deeds)",
+      "Request Slip (Receiving Desk of the Records Division)",
+      "Special Power of Attorney (SPA) – for representative (Owner / Heir)"
+     ],
+     "fee": "P 10.00/revision",
+     "time": null,
+     "where": "Office of the City Assessor – Assessment Records and Management Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Employment Referral Services",
+     "summary": "Job seekers register and get matched and referred to employers with job openings.",
+     "for": [
+      "job-seekers"
+     ],
+     "category": "livelihood",
+     "requirements": [
+      "Resume/Application letter/Biodata",
+      "Pertinent Credentials",
+      "PESO Employment Information System (PEIS) Registration Form (walk-in applicants)"
+     ],
+     "fee": "None",
+     "time": "30 minutes",
+     "where": "Public Employment Service Office (Office of the City Mayor – Labor and Employment)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Employers' Accreditation",
+     "summary": "Employers and recruitment agencies get accredited to post jobs and recruit through PESO.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Business Permit (Business Permit and Licensing Department)",
+      "BIR Certificate (Bureau of Internal Revenue)",
+      "SEC/DTI Registration (Securities and Exchange Commission/Department of Trade and Industry)",
+      "Company Profile",
+      "Job Vacancies with qualification (for local employment)",
+      "Job Order (for Overseas) (Philippine Overseas Employment Administration)",
+      "DOLE License (for local manpower agencies) (Ministry of Labor and Employment)",
+      "POEA License (for overseas recruitment agencies) (Philippine Overseas Employment Administration)",
+      "List of Clients (for local manpower agencies)",
+      "PhilJobnet Registration (Philjobnet.com)",
+      "Letter of Intent addressed to the City Mayor Thru PESO Head"
+     ],
+     "fee": "None",
+     "time": "1 day and 90 minutes",
+     "where": "Public Employment Service Office (Office of the City Mayor – Labor and Employment)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Job Fair Activity",
+     "summary": "Job seekers join job fairs to apply and be interviewed by employers on the spot.",
+     "for": [
+      "job-seekers"
+     ],
+     "category": "livelihood",
+     "requirements": [
+      "Resume/Biodata",
+      "Certificate(s) of Training(s)",
+      "Certificate(s) of Employment",
+      "Other Credentials"
+     ],
+     "fee": "None",
+     "time": "40 minutes",
+     "where": "Public Employment Service Office (Office of the City Mayor – Labor and Employment)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Special Recruitment Activity",
+     "summary": "Employers and agencies hold recruitment drives for local or overseas jobs through PESO.",
+     "for": [
+      "businesses"
+     ],
+     "category": "livelihood",
+     "requirements": [
+      "For local recruitment: Letter of Intent addressed to the Local Chief Executive thru PESO Head",
+      "For local recruitment: PhilJobNet registration",
+      "For local recruitment: Job order/s",
+      "For local recruitment: Business permit",
+      "For local recruitment: DTI",
+      "For overseas recruitment: Letter of Intent addressed to the Local Chief Executive thru PESO Head",
+      "For overseas recruitment: Agency license",
+      "For overseas recruitment: Affidavit of undertaking duly signed by a responsible officer acknowledged by POEA",
+      "For overseas recruitment: No Objection Certificate (NOC) from PESO, DOLE or POEA (if recruitment will be conducted in PESO/DOLE/POEA)",
+      "For overseas recruitment: Copies of approved job order/s from POEA",
+      "For overseas recruitment: Terminal reports of previous activity (if conducted previous SRA in PESO)",
+      "For overseas recruitment: Appointment from agency",
+      "For overseas recruitment: Office ID of agency representatives"
+     ],
+     "fee": "None",
+     "time": "1 week",
+     "where": "Public Employment Service Office (Office of the City Mayor – Labor and Employment)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Career Coaching and Guidance Counseling",
+     "summary": "Graduating students get career coaching and labor education sessions at their school.",
+     "for": [
+      "students"
+     ],
+     "category": "livelihood",
+     "requirements": [
+      "Invitation Letter (PESO Office)",
+      "Proposal Letter",
+      "PEIS Form",
+      "Database"
+     ],
+     "fee": "None",
+     "time": "2 days and 20 minutes",
+     "where": "Public Employment Service Office (Office of the City Mayor – Labor and Employment)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Government Internship Program (GIP)",
+     "summary": "Young people work as paid interns in government offices to gain public service experience.",
+     "for": [
+      "youth",
+      "job-seekers"
+     ],
+     "category": "education",
+     "requirements": [
+      "GIP Application Form (PESO Office)",
+      "Birth Certificate (Philippine Statistics Authority)",
+      "Transcript of Records (School Last Attended)",
+      "Certificate of Indigency (OSWDS or Barangay)",
+      "2 pcs 2x2 Colored ID Picture with white background, nametag and signature"
+     ],
+     "fee": "None",
+     "time": "12 days and 40 minutes",
+     "where": "Public Employment Service Office (Office of the City Mayor – Labor and Employment)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Special Program for the Employment of Students and Out-of-School Youth (SPESOS)",
+     "summary": "Poor but deserving students and out-of-school youth get paid vacation jobs to fund schooling.",
+     "for": [
+      "students",
+      "out-of-school-youth"
+     ],
+     "category": "livelihood",
+     "requirements": [
+      "SPES Application Form (PESO Office)",
+      "Birth Certificate (Philippine Statistics Authority)",
+      "Recent Grades signed by the registrar (School Last Attended)",
+      "Out-of-School Youth Certification (for OSY) (OSWDS or Barangay)",
+      "Certificate of Indigency (Barangay where the SPES Applicant resides)",
+      "2 pcs 2x2 Colored ID Picture with white background, nametag and signature",
+      "Personal Narrative (OSY) that the SPES salary is intended for school enrolment"
+     ],
+     "fee": "None",
+     "time": "12 days and 40 minutes",
+     "where": "Public Employment Service Office (Office of the City Mayor – Labor and Employment)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Tulong Panghanapbuhay para sa Ating Disadvantaged Workers (TUPAD)",
+     "summary": "Displaced, underemployed or self-employed workers get short-term paid community work.",
+     "for": [
+      "workers",
+      "families-in-need"
+     ],
+     "category": "livelihood",
+     "requirements": [
+      "Proof of residency (Barangay Hall)",
+      "Government Issued ID (Government agency)",
+      "TUPAD Form"
+     ],
+     "fee": "None",
+     "time": "12 days and 40 minutes",
+     "where": "Public Employment Service Office (Office of the City Mayor – Labor and Employment)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Application / Filing New Business Permit / Renewal of Existing Business Permit",
+     "summary": "Get or renew the Mayor's Permit needed to legally run a business in the city.",
+     "for": [
+      "businesses"
+     ],
+     "category": "business",
+     "requirements": [
+      "Location sketch of the business at the back of the application indicating landmark, for new and renewal (Form from BPLO office)",
+      "Zoning Clearance, for new and renewal (City Planning and Development Office)",
+      "Occupancy Permit / Building Clearance, for new and renewal (Office of the City Engineer)",
+      "Fire Clearance, for new and renewal (Fire Department)",
+      "Health/Sanitary Clearance, renewable every 6 months, for new and renewal (Office of the City Health Officer)",
+      "Barangay Clearance (Current Year), for new and renewal (Barangay where business is located at)",
+      "Community Tax, for new and renewal (Office of the City Treasurer)",
+      "Approved DTI Registration (Sole Proprietorship), for new applicants (DTI office)",
+      "Approved SEC Registration (Partnership / Corporation), for new applicants (Security and Exchange Commission Office)",
+      "Taxes Clearance at the City Government, for new and renewal (Office of the City Treasurer)",
+      "Paid-up Capital for Investment, for new applicants (Business Owner (Applicants))",
+      "Copy Lease Contract if place of business is rented, for new and renewal (Lessor (Owner of the Building))",
+      "Certificate attesting to the tax exemption, if the business is tax exempt (Cotabato City Investment Board)",
+      "CCTV Footage (Picture of Installed Camera's), for new and renewal (Business Owner (Applicants))",
+      "Vaccination Card (Vaccinated Employees), for new and renewal (Department of Health)",
+      "Previous Year Mayor's Permit, for renewal applicants (BPLO)",
+      "Gross Sales/Receipts of Proceeding year, for renewal applicants (Business Owner (Applicants))"
+     ],
+     "fee": "P 405.00 in fees, plus business tax based on capitalization (new) or gross sales (renewal)",
+     "time": "30 minutes",
+     "where": "Business Permit and Licensing Office (Office of the City Mayor – License Inspection Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Filing New Business Permit for PUV & PUJ / Renewal of Business Permit for PUV & PUJ",
+     "summary": "Jeepney and public utility vehicle operators get or renew their business permit and sticker.",
+     "for": [
+      "businesses"
+     ],
+     "category": "business",
+     "requirements": [
+      "Franchise (LTFRB)",
+      "Inspection Report/Clearance (Traffic Management Unit)",
+      "Business Permit of the previous year (Applicant/Operator/Owner)",
+      "ORCR (Operator/Owner)",
+      "Driver's License (Driver of the Tricycle)",
+      "Health Card (City Health Office)"
+     ],
+     "fee": "P 1,175 (for new); P 1,025 (for existing)",
+     "time": "22 minutes",
+     "where": "Business Permit and Licensing Office (Office of the City Mayor – License Inspection Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Filing New and Renewal of Business Permit for Motorized Tricycle Operators Permit",
+     "summary": "Tricycle operators get or renew their operator's permit, franchise and tricycle sticker.",
+     "for": [
+      "businesses"
+     ],
+     "category": "business",
+     "requirements": [
+      "Franchise (LTFRB)",
+      "Inspection Report/Clearance (Traffic Management Unit)",
+      "Business Permit of the previous year (Applicant/Operator/Owner)",
+      "ORCR (Operator/Owner)",
+      "Driver's License (Driver of the Tricycle)",
+      "Health Card (City Health Office)"
+     ],
+     "fee": "P 1,175 (for new); P 1,025 (for existing)",
+     "time": "22 minutes",
+     "where": "Business Permit and Licensing Office (Office of the City Mayor – License Inspection Services)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Pre-Registration Seminar (PRS) and Issuance of PRS Certificate",
+     "summary": "Groups forming a cooperative attend the required pre-registration seminar and get a certificate.",
+     "for": [
+      "everyone",
+      "cooperatives"
+     ],
+     "category": "business",
+     "requirements": [
+      "Written request for provision of a PRS (Client concerned)",
+      "List of names of at least 15 participants (recommended is at least 26) (Client concerned)"
+     ],
+     "fee": "None",
+     "time": "3 working days",
+     "where": "Office of the City Cooperative Officer",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Indorsement for Registration of Cooperative Documents",
+     "summary": "Get your cooperative's registration papers checked and endorsed to CSEA-BARMM for registration.",
+     "for": [
+      "cooperatives"
+     ],
+     "category": "business",
+     "requirements": [
+      "4 folders containing the following documents:",
+      "PRS Training Certificate (original and 3 photocopies) (CSEA-BARMM)",
+      "Duly notarized, signed and complete By-laws and Articles of Cooperation (all original) (Client concerned)",
+      "Economic Survey (all original) (Client concerned)",
+      "Surety Bond of three (3) Accountable Officers (original and 3 photocopies) (Client concerned)",
+      "Duly notarized Sworn Statement of Treasurer's Affidavit (all original) (Client concerned)",
+      "Organizational Structure (all original) (Client concerned)"
+     ],
+     "fee": "None",
+     "time": "3 working days",
+     "where": "Office of the City Cooperative Officer",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Processing of Cooperative Documents for Registration",
+     "summary": "Have your new cooperative's registration documents processed and issued.",
+     "for": [
+      "cooperatives"
+     ],
+     "category": "business",
+     "requirements": [
+      "PRS Training Certificate – Original and three (3) photocopies (CSEA-BARMM)",
+      "Valid Cedula of each member – Photocopies only (Office of the City Treasurer)",
+      "Government-issued ID of all members – Clear photocopies (Client concerned)",
+      "List of Names of Members with TIN and Complete Address (Client concerned and BIR (for the TIN))",
+      "List of Names of Officers elected by the members (Client concerned)",
+      "Surety Bond of three (3) Accountable Officers with amount of coverage of Php10,000/officer – Original and three (3) photocopies (CEMPUC (Insurance Agent))"
+     ],
+     "fee": "None",
+     "time": "20 working days",
+     "where": "Office of the City Cooperative Officer",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Processing of Amendments of ACBL (Articles of Cooperation and By-Laws)",
+     "summary": "Cooperatives get changes to their articles of cooperation and by-laws processed.",
+     "for": [
+      "cooperatives"
+     ],
+     "category": "business",
+     "requirements": [
+      "Photocopy of ACBL (if with amendments, latest amended copy) (Cooperative concerned)",
+      "Certified true copy of COR (if with amendments, certified true copy of latest amended COR) (Cooperative concerned)",
+      "3 copies of GA Resolution stating the specific proposed amendment/s and such was approved by at least 2/3 vote of all members with voting rights (Cooperative concerned)",
+      "Duly notarized BOD & Secretary Certificate (Cooperative concerned)",
+      "Treasurer/s Affidavit (in case of increase in capital) (Cooperative concerned)"
+     ],
+     "fee": "None",
+     "time": "20 working days",
+     "where": "Office of the City Cooperative Officer",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Indorsement of Mandatory Reports for Certificate of Compliance (COC)",
+     "summary": "Cooperatives get their yearly reports endorsed to CSEA-BARMM to receive a Certificate of Compliance.",
+     "for": [
+      "cooperatives"
+     ],
+     "category": "business",
+     "requirements": [
+      "Four (4) sets of the following:",
+      "Certified True Copy of Updated Surety Bond of three (3) Accountable Officers (Cooperative concerned)",
+      "Minutes of GA Meeting/Election Result for BOD (Cooperative concerned)",
+      "3 years Action Plan or Cooperative Development Plan (Cooperative concerned)",
+      "CAPR with AFS (Cooperative concerned)",
+      "Photocopy of COR (CDA or CSEA issued) (Cooperative concerned)"
+     ],
+     "fee": "None",
+     "time": "30 minutes",
+     "where": "Office of the City Cooperative Officer",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Certification of Good Standing with Security Seal for Business Permit Application/Renewal",
+     "summary": "Cooperatives get a certificate of good standing needed to apply for or renew a business permit.",
+     "for": [
+      "cooperatives"
+     ],
+     "category": "business",
+     "requirements": [
+      "New application: Authenticated photocopy of COR (1 copy) (OCCO)",
+      "New application: One (1) complete set of Registration documents (Cooperative concerned)",
+      "New application: OR of payment of certification fee/security seal (OCT)",
+      "New application: Valid cedula of all members (photocopy) (OCT)",
+      "Renewal: Authenticated photocopy of valid COC (OCCO)",
+      "Renewal: Members' valid cedula (photocopy) (OCT)",
+      "Renewal: OR of payment of certification fee/security seal (OCT)"
+     ],
+     "fee": "P 100.00",
+     "time": "30 minutes",
+     "where": "Office of the City Cooperative Officer",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Authentication of Cooperative Documents",
+     "summary": "Get photocopies of your cooperative's documents, like by-laws, officially authenticated.",
+     "for": [
+      "cooperatives"
+     ],
+     "category": "business",
+     "requirements": [
+      "Original Copies of Cooperative Documents Requiring Authentication (Cooperative concerned)",
+      "Photocopies of Cooperative Documents Requiring Authentication, exact copies of the originals (Cooperative concerned)"
+     ],
+     "fee": "None",
+     "time": "30 minutes",
+     "where": "Office of the City Cooperative Officer",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Availment of Farm Input Assistance",
+     "summary": "Farmers and fisherfolk receive seeds, seedlings, fingerlings and other farm inputs when stocks allow.",
+     "for": [
+      "farmers",
+      "fisherfolk"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Must be a resident of Cotabato City (Barangay)",
+      "Must present a valid identification card (Client concern)",
+      "Must present a barangay clearance (Respective barangay)",
+      "Must be RSBSA Registered (Office of the City Agriculturist)"
+     ],
+     "fee": "None",
+     "time": "7 days and 15 minutes",
+     "where": "Office of the City Agriculturist",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Technical Assistance on Crop Production",
+     "summary": "Farmers and fisherfolk get expert advice and farm visits to solve crop or fish problems.",
+     "for": [
+      "farmers",
+      "fisherfolk",
+      "cooperatives"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Sample or a section of the problem (crops, fish) (Client)",
+      "Document or picture of the problem (Client)"
+     ],
+     "fee": "None",
+     "time": "4 days and 15 minutes",
+     "where": "Office of the City Agriculturist",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Demo Farms / Farmers Field School",
+     "summary": "Farmers, groups or barangays get help setting up demonstration farms to learn better farming methods.",
+     "for": [
+      "farmers",
+      "fisherfolk",
+      "cooperatives",
+      "local-governments"
+     ],
+     "category": "farming",
+     "requirements": [
+      "For group: Certificate of Registration (Cooperative Development Authority, Ministry of Labor and Employment, Securities and Exchange Commission and other registration agencies)",
+      "For individual: Registered Farmer/Fisherfolk (Office of the City Agriculturist)",
+      "For individual: Registry System for Basic Sectors in Agriculture (RSBSA) registered (Office of the City Agriculturist)",
+      "Letter of Intent"
+     ],
+     "fee": "None",
+     "time": "68 days and 10 minutes",
+     "where": "Office of the City Agriculturist",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Provision of Farmers and Fisher Folks Registration and Identification",
+     "summary": "Farmers and fisherfolk register with the city and get a lifetime farmer's ID card.",
+     "for": [
+      "farmers",
+      "fisherfolk"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Registry System for Basic Sectors in Agriculture (RSBSA) registered (Office of the City Agriculturist)",
+      "Photocopied materials and handouts (tax declaration/land title and valid ID) (Client)",
+      "Farmer/fisherfolk certification from Punong Barangay (Respective barangay)"
+     ],
+     "fee": "None",
+     "time": "30 minutes",
+     "where": "Office of the City Agriculturist",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Acceptance of Students for On-the-Job Training (OJT)",
+     "summary": "College and high school students do on-the-job training at the city agriculture office.",
+     "for": [
+      "students"
+     ],
+     "category": "education",
+     "requirements": [
+      "Endorsement letter signed by College Dean or School Principal (Respective School)",
+      "School ID (Respective School)"
+     ],
+     "fee": "None",
+     "time": "1 Hour",
+     "where": "Office of the City Agriculturist",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Building Permit",
+     "summary": "Get the permit you need before building, renovating, moving or demolishing any building or structure.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [
+      "At least Four (4) copies of filled up Application Form for Building Permit (BP) and Fire Safety Evaluation Certificate (FSEC) (Office of the City Engineer – Building Evaluation and Processing Division; Building Inspection and Enforcement Division)",
+      "Filled up form for Locational Clearance (Zoning Clearance) from OCPDC (Office of the City Planning and Development Coordinator)",
+      "Authenticated original Certificate of Title (OCT) or Transfer Certificate of Title (TCT) (Office concern)",
+      "Deed of Absolute Sale and Notarized Consent from Lot owner (Office concern)",
+      "Tax Declaration (Office concern)",
+      "Tax Receipt (Office concern)",
+      "Cedula of Lot owner/applicant (Office concern)",
+      "Clearances: Barangay, DPWH, DOH, DEPEd, ATO, DOLE (if applicable) (Office concern)",
+      "At least Four (4) sets of plans: Architectural, Civil/Structural, Electrical, Mechanical, Sanitary, Plumbing, Electronics, Geodetic and Fire Protection Documents (if applicable) (Office concern)",
+      "Three (3) copies of valid licenses (PRC ID and PTR) of all involved professionals (Client)",
+      "Notarized estimated value of the building/structure to be erected as declared by the owner and Engineer (Private Engineering Services)",
+      "Construction and Safety Health Program (if applicable) (Office concern)",
+      "Affidavit of Undertaking (if applicable) (Private Engineering Services)",
+      "Structural Design Analysis w/ Seismic Analysis (Private Engineering Services)",
+      "Soil Test (if applicable) (Office concern)"
+     ],
+     "fee": "Per the National Building Code (PD 1096) and the Revised Revenue Code of Cotabato City",
+     "time": "14 days and 15 Minutes",
+     "where": "Office of the City Engineer – Building and Industrial Safety Inspection Division, Permits Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Certificate of Occupancy",
+     "summary": "Get the certificate that lets you occupy a finished building after it passes the safety inspection.",
+     "for": [
+      "everyone",
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Filled up Application Form for Certificate of Occupancy (Office of the City Engineer – Building Evaluation Division; Building Inspection and Enforcement Division)",
+      "Fire Safety Inspection Certificate (SFIC) (Office of the City Engineer – Building Evaluation Division; Building Inspection and Enforcement Division)",
+      "Three (3) copies of duly notarized Certificate of Completion signed by the owner/applicant and signed and sealed by the duly licensed Architect or Engineers in-charge of construction, and construction logbook (Client)",
+      "As-Built plan (if necessary) (Client)"
+     ],
+     "fee": "See the Revised Revenue Code of Cotabato City",
+     "time": "3 Days 1 hour and 15 minutes",
+     "where": "Office of the City Engineer – Building and Industrial Safety Inspection Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Preparation of Plans and Program of Work",
+     "summary": "Get city engineers to prepare plans and cost estimates for schools, barangay halls, roads and other projects.",
+     "for": [
+      "everyone",
+      "government-offices",
+      "local-governments"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter request specifying the services needed (Client concern)"
+     ],
+     "fee": "None",
+     "time": "16 days and 12 minutes",
+     "where": "Office of the City Engineer – Planning Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Maintaining Drainage Systems and Other Infrastructure",
+     "summary": "Ask the city to clean drainage, repair roads, potholes, manholes and government buildings, or do demolition work.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter request specifying the service needed address to the City Mayor through the City Engineer"
+     ],
+     "fee": "None",
+     "time": "1 Day and 15 minutes",
+     "where": "Office of the City Engineer – Maintenance Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Request for Trainings/Orientation and Drills",
+     "summary": "Request disaster preparedness training, orientation or drills for your group, school or office.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter of Request addressed to the City Mayor thru CDRRMO Head (Office Of The Secretary To The Mayor)",
+      "List of Participants"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "City Disaster Risk Reduction and Management Office (CDRRMO) – Administrative and Training Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Rescue and Emergency Response",
+     "summary": "Call the emergency hotline to get a rescue team sent to your emergency.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [],
+     "fee": "None",
+     "time": null,
+     "where": "City Disaster Risk Reduction and Management Office (CDRRMO) – Operations and Warning Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Standby Medic or Ambulance",
+     "summary": "Request medics or an ambulance on standby for your event or activity.",
+     "for": [
+      "everyone"
+     ],
+     "category": "health",
+     "requirements": [
+      "Request letter to the Office of the City Mayor"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "City Disaster Risk Reduction and Management Office (CDRRMO) – Operations and Warning Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Assistance in DRR-CCA Study or Research",
+     "summary": "Get help and city contingency plans for your study on disaster risk reduction and climate change.",
+     "for": [
+      "researchers",
+      "students"
+     ],
+     "category": "education",
+     "requirements": [
+      "Request letter to the Office of the City Mayor"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "City Disaster Risk Reduction and Management Office (CDRRMO) – Research and Planning Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Youth Organization Registration Program",
+     "summary": "Register your youth or youth-serving organization with the city for easier access to youth programs.",
+     "for": [
+      "youth"
+     ],
+     "category": "community",
+     "requirements": [
+      "Youth Organization Registration Form",
+      "Directory of Officers and Advisers",
+      "List of Members in Good Standing",
+      "Copy of Constitution and By – Laws",
+      "Endorsement / Certification from Appropriate Authority"
+     ],
+     "fee": "None",
+     "time": null,
+     "where": "Office of the City Mayor – Local Youth Development Services",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "City Scholarship Grant",
+     "summary": "Apply for a city college scholarship if you are a poor but deserving student aged 25 or below.",
+     "for": [
+      "students",
+      "youth"
+     ],
+     "category": "education",
+     "requirements": [
+      "Accomplished Application form",
+      "Report Card / Certificate of Grades",
+      "Good Moral Character",
+      "Barangay Certificate of Indigency",
+      "Income Tax Return",
+      "Voter's ID / Certification",
+      "Senior High School Diploma"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "Office of the City Mayor – Local Youth Development Services",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Release of Confiscated Driver's License",
+     "summary": "Get back a driver's license taken by traffic enforcers after paying the penalty and attending the seminar.",
+     "for": [
+      "everyone"
+     ],
+     "category": "permits",
+     "requirements": [
+      "One (1) day seminar on traffic code prior to the release of License",
+      "Payment of corresponding penalty (Office of the City Treasury)"
+     ],
+     "fee": "Corresponding penalty (paid at the Office of the City Treasury)",
+     "time": "10 minutes",
+     "where": "Office of the City Public Safety Officer – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "City Number Coding Scheme Exempt Sticker",
+     "summary": "Apply for a sticker that exempts your vehicle from the city number coding scheme.",
+     "for": [
+      "everyone"
+     ],
+     "category": "permits",
+     "requirements": [],
+     "fee": null,
+     "time": "2 to 3 hours",
+     "where": "Office of the City Public Safety Officer – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Security and Traffic Assistance for Activities",
+     "summary": "Request security and traffic help for your motorcade, parade, reunion or other large activity.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Request letter"
+     ],
+     "fee": null,
+     "time": "2 to 3 hours",
+     "where": "Office of the City Public Safety Officer – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Deployment of Personnel to Ensure Health Protocol",
+     "summary": "Businesses can request public safety personnel to make sure health protocols are followed.",
+     "for": [
+      "businesses"
+     ],
+     "category": "community",
+     "requirements": [],
+     "fee": null,
+     "time": "2 to 3 hours",
+     "where": "Office of the City Public Safety Officer – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Public Safety Assistance",
+     "summary": "Call the public safety office for help with peace and order concerns.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [],
+     "fee": "None",
+     "time": "15 minutes",
+     "where": "Office of the City Public Safety Officer – Operation Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Issuance of Senior Citizens Identification Card (with Booklets)",
+     "summary": "Get or renew your senior citizen ID and discount booklets for medicine, groceries and movies.",
+     "for": [
+      "senior-citizens"
+     ],
+     "category": "requests",
+     "requirements": [
+      "New: Barangay Certificate (Purpose for Applying Senior Citizen ID, Countersigned by the Barangay Senior Citizen President) (Barangay Office)",
+      "New: Birth Certificate (PSA/NSO) and any Valid ID",
+      "New: CEDULA (Office of the City Treasurer)",
+      "New: Recent 2x2 Photo (1copy)",
+      "Renewal: Barangay Certificate (Applying for Senior Citizen ID Renewal, Original Copy, Countersigned by the Barangay Senior Citizen President) (Barangay Office)",
+      "Renewal: Photo copy of Senior Citizen ID with Three (3) SIGNATURES",
+      "Renewal: Recent 2x2 Photo (1copy) white background",
+      "Renewal: CEDULA (Office of the City Treasurer)",
+      "Lost: Affidavit Of Loss (Legal Office/Firm)",
+      "Lost: CEDULA (Office of the City Treasurer)",
+      "Lost: Recent 2x2 Photo (1copy)",
+      "Correction: Senior Citizen ID",
+      "Correction: Birth Certificate and any valid IDs"
+     ],
+     "fee": "None",
+     "time": "3 minutes",
+     "where": "Office of the Senior Citizens Affairs (OSCA)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Cancellation of Senior Citizens ID",
+     "summary": "Have a senior citizen ID cancelled and get a Certificate of Cancelation.",
+     "for": [
+      "senior-citizens"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Senior Citizen ID (OSCA)"
+     ],
+     "fee": "None",
+     "time": "3 minutes",
+     "where": "Office of the Senior Citizens Affairs (OSCA)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Application for Senior Citizens Late Birth",
+     "summary": "Get help registering a senior citizen's birth that was never recorded.",
+     "for": [
+      "senior-citizens"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Verification for Records/PSA Negative (PSA)",
+      "Verification Fee 100/LCR (Office of the Civil Registrar)",
+      "Joint Affidavit of 2 disinterested Persons witnessing the Birth (PAO)",
+      "Barangay Certificate Applying for Birth Certificate where you reside with corresponding Signature of Senior Citizen President (Barangay Office)",
+      "OUT OF TOWN (Affidavit of Birth with CORROBORATION)",
+      "MDR (Philhealth)",
+      "Comelec Certificate (Updated) (COMELEC)",
+      "CEDULA",
+      "National ID",
+      "Baptismal Certificate for Christian",
+      "Police/NBI Clearance (NBI Office)",
+      "PICTURE with latest Calendar",
+      "Birth Certificate of Sibling",
+      "Marriage Contract",
+      "GREEN BIRTH (Barangay)",
+      "OSCA ID Xerox with 3 Signatures",
+      "OSCA Certificate of Senior Citizens Identification Card holder with details"
+     ],
+     "fee": "None",
+     "time": "6 mins.",
+     "where": "Office of the Senior Citizens Affairs (OSCA)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Application for Senior Citizens Cash Card ATM Privilege and Social Pension",
+     "summary": "Apply for a senior citizen cash card or the social pension for indigent seniors.",
+     "for": [
+      "senior-citizens"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Cash Card: Photocopy of Senior Citizen's ID Card",
+      "Cash Card: Proof of Billing",
+      "Cash Card: Barangay Clearance",
+      "Cash Card: COMELEC Certification (at least 2 years registered)",
+      "Cash Card: Accomplish the Application Form for Cash Card ATM",
+      "Social Pension: Three (3) 2x2 pictures",
+      "Social Pension: One (1) Xerox copy of Senior Citizen ID – (with signature of OSCA Head)",
+      "Social Pension: One (1) Barangay Certificate of Residency (Original) – (w/ Signature of Senior Citizen President)",
+      "Social Pension: One (1) Voters Certificate (Xerox copy and Original)"
+     ],
+     "fee": "None",
+     "time": "1 month and 6 minutes",
+     "where": "Office of the Senior Citizens Affairs (OSCA)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Application for Senior Citizens Burial Assistance and Data Collection",
+     "summary": "Families can claim burial aid when a senior citizen dies; seniors can also register their records.",
+     "for": [
+      "senior-citizens",
+      "families-in-need"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Burial Assistance: Registered Death Certificate (Office of the City Civil Registrar)",
+      "Burial Assistance: Barangay Certificate of Indigency (deceased)",
+      "Burial Assistance: Funeral Contract (for Non-Muslims)",
+      "Burial Assistance: VIDEO/PHOTO documentations ON CELLPHONE",
+      "Burial Assistance: Deceased and claimant's government issued valid I.D.",
+      "Data Collection: Recent 2x2 pictures white background (1copy)",
+      "Data Collection: Photo copy of Senior Citizen ID with Three (3) SIGNATURES or thumbmark",
+      "Data Collection: Photocopy of BIRTH CERTIFICATE"
+     ],
+     "fee": "None",
+     "time": "2 weeks and 6 minutes",
+     "where": "Office of the Senior Citizens Affairs (OSCA)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Financial Assistance for Centenarian",
+     "summary": "Senior citizens who reach 100 years old can apply for a cash gift.",
+     "for": [
+      "senior-citizens"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Intake Sheet",
+      "1x1 Picture (2pcs)",
+      "Latest Barangay Certificate",
+      "Photocopy of Senior Citizen's ID",
+      "NSO Birth Certificate (SECPA with receipt)",
+      "Affidavit of 2 Disinterested Persons with Photocopy of Valid IDs",
+      "ORIGINAL Voter's Certificate",
+      "Whole and Half Body Pictures",
+      "Birth Certificate of Children (SECPA with receipt)",
+      "Community Tax Certificate"
+     ],
+     "fee": "None",
+     "time": "2 weeks and 3 minutes",
+     "where": "Office of the Senior Citizens Affairs (OSCA)",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Notarization of Affidavits and Other Legal Documents",
+     "summary": "Have affidavits, deeds and other legal documents notarized at low cost, especially for poor residents.",
+     "for": [
+      "everyone",
+      "families-in-need"
+     ],
+     "category": "legal",
+     "requirements": [
+      "Valid I.D."
+     ],
+     "fee": "Php 50.00–500.00 for most documents; deeds and contracts 1% or Php 1,000.00, whichever is higher",
+     "time": null,
+     "where": "Office of the City Legal Officer",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Legal Assistance (Particularly on Human Rights Victims)",
+     "summary": "Get free legal advice and counseling from the City Legal Officer, especially if your rights were violated.",
+     "for": [
+      "everyone"
+     ],
+     "category": "legal",
+     "requirements": [],
+     "fee": null,
+     "time": null,
+     "where": "Office of the City Legal Officer",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Receiving of Documents (Invitations, Courtesies, Memorandum of Agreement)",
+     "summary": "Submit invitations, courtesy calls or agreements to the City Administrator for action.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Pertinent documents (Concerned individual/client)"
+     ],
+     "fee": "None",
+     "time": "1 day and 31 minutes",
+     "where": "Office of the City Administrator",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Feedback and Complaints Mechanism",
+     "summary": "File a complaint letter and have it reviewed and sent to the right city office.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter of complaints"
+     ],
+     "fee": null,
+     "time": "1 day and 30 minutes",
+     "where": "Office of the City Administrator",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Implementation of Annual Lupon Tagapamayapa Incentive Awards",
+     "summary": "Barangay Lupons that settle disputes well can join the annual awards and win cash incentives.",
+     "for": [
+      "local-governments"
+     ],
+     "category": "government",
+     "requirements": [
+      "Katarungang Pambarangay Reports"
+     ],
+     "fee": "None",
+     "time": "11 day, 9 hours, and 10 minutes",
+     "where": "Office of the City Mayor – Community and Cultural Affairs Division, Barangay Affairs Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Conduct Capability Training/Seminar",
+     "summary": "Lupon members and barangay officials get training on Katarungang Pambarangay and barangay governance.",
+     "for": [
+      "local-governments"
+     ],
+     "category": "government",
+     "requirements": [
+      "Invitation letter",
+      "Attendance"
+     ],
+     "fee": "None",
+     "time": "3 days, 1 hours, and 20 minutes",
+     "where": "Office of the City Mayor – Community and Cultural Affairs Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Provision of Technical Assistance to the Barangays and Other Community Groups",
+     "summary": "Get help writing project proposals and training designs for your barangay or community group.",
+     "for": [
+      "local-governments"
+     ],
+     "category": "community",
+     "requirements": [
+      "Request letter for Technical Assistance"
+     ],
+     "fee": "None",
+     "time": "10 days and 35 minutes",
+     "where": "Office of the City Mayor – Community and Cultural Affairs Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Issuance of Various Certificates for Elected and Appointed Barangay Officials",
+     "summary": "Barangay officials get certificates for their fidelity bond or civil service eligibility.",
+     "for": [
+      "local-governments"
+     ],
+     "category": "government",
+     "requirements": [],
+     "fee": "P50.00",
+     "time": "40 minutes",
+     "where": "Office of the City Mayor – Community and Cultural Affairs Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Request for Coverage (Photos, Videos, and Livestream)",
+     "summary": "Ask the city information office to cover your event with photos, videos or a livestream.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Letter request submitted to the office"
+     ],
+     "fee": "None",
+     "time": "1 day",
+     "where": "Office of the City Information Officer",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Receive and Relay Request for Assistance on Information Dissemination of Materials (All Forms)",
+     "summary": "Government agencies can ask the city to help spread information about their programs.",
+     "for": [
+      "government-offices"
+     ],
+     "category": "government",
+     "requirements": [
+      "Letter submitted through email or to the office"
+     ],
+     "fee": "None",
+     "time": "1 day",
+     "where": "Office of the City Information Officer",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Facilitate the Conduct of Press Conference",
+     "summary": "Accredited media can cover the City Mayor's press conferences after showing their credentials.",
+     "for": [
+      "businesses",
+      "workers"
+     ],
+     "category": "community",
+     "requirements": [
+      "Original Company ID",
+      "Letter Assignment"
+     ],
+     "fee": "None",
+     "time": "1 hour and 30 minutes",
+     "where": "Office of the City Information Officer",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Processing of Complaints and Feedback",
+     "summary": "Send complaints or feedback about city services by letter, form or Facebook.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Complaint letter or request form",
+      "Letter sent through social media (Facebook)"
+     ],
+     "fee": "None",
+     "time": "1 hour",
+     "where": "Office of the City Information Officer",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Public Customer Assistance – Medical Assistance",
+     "summary": "Get a Mayor's referral or endorsement for medical assistance.",
+     "for": [
+      "patients"
+     ],
+     "category": "health",
+     "requirements": [
+      "Medical Prescription (Accredited private and government medical clinics and hospitals)",
+      "Clinical Diagnosis or Doctor's Referral (Accredited private and government medical clinics and hospitals)"
+     ],
+     "fee": "None",
+     "time": "37 minutes",
+     "where": "Office of the City Mayor – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Public Customer Assistance – Job Recommendations",
+     "summary": "Get a Mayor's recommendation letter to support your job application.",
+     "for": [
+      "job-seekers"
+     ],
+     "category": "livelihood",
+     "requirements": [
+      "Complete Bio-Data and Curriculum Vitae",
+      "Past Employment Records (Human Resource Office)",
+      "Clearances",
+      "Other Relevant Documents"
+     ],
+     "fee": "None",
+     "time": "37 minutes",
+     "where": "Office of the City Mayor – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Public Customer Assistance – Transportation Discount",
+     "summary": "Get a Mayor's endorsement for a transportation discount.",
+     "for": [
+      "everyone"
+     ],
+     "category": "assistance",
+     "requirements": [
+      "Community Tax Certificate (Office of the City Treasurer)",
+      "Voter's ID (Commission on Election BARMM)"
+     ],
+     "fee": "None",
+     "time": "37 minutes",
+     "where": "Office of the City Mayor – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Public Customer Assistance – Burial Permits (Public Cemeteries)",
+     "summary": "Get a permit to bury a loved one in a government-owned public cemetery.",
+     "for": [
+      "everyone"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Death Certificate (NSO BARMM)",
+      "Barangay Certification (Barangay Hall where the applicant is a registered resident)"
+     ],
+     "fee": "None",
+     "time": "37 minutes",
+     "where": "Office of the City Mayor – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Public Customer Assistance – Certifications for Various Purposes",
+     "summary": "Request a certification from the Mayor's Office for your stated purpose.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Letter request stating the purpose (Client/applicant or representative)",
+      "Other related documents (Human Resource Office, respective office where the documents are extracted from)"
+     ],
+     "fee": "None",
+     "time": "37 minutes",
+     "where": "Office of the City Mayor – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Public Customer Assistance – Authentication of Various Official Records",
+     "summary": "Have official city records authenticated by the Mayor's Office.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Original Copy (Client/applicant or representative)",
+      "Other related documents for verification"
+     ],
+     "fee": "None",
+     "time": "37 minutes",
+     "where": "Office of the City Mayor – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Mayor's Clearance",
+     "summary": "Get a Mayor's clearance for local jobs, AFP/PNP enlistment, passports, travel abroad or marriage.",
+     "for": [
+      "everyone",
+      "job-seekers",
+      "overseas-workers"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Original Copy of Barangay Clearance (Barangay Office)",
+      "Original Copy of Court Clearance (City Court)",
+      "Original Copy of Fiscal Clearance (Fiscal Office)",
+      "Original Copy of Police Clearance (City Police Department)",
+      "One (1) pc 2 x 2 picture (Client or Representative)",
+      "One (1) Documentary Stamp (Office of the City Treasurer)",
+      "One (1) photo copy for each clearance submitted"
+     ],
+     "fee": "None",
+     "time": "35 minutes",
+     "where": "Office of the City Mayor – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Certificate of Good Moral Character",
+     "summary": "Get a certificate from the Mayor's Office stating you have good moral character.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Barangay Certification stating that the client is a resident of the barangay and has no derogatory records (Barangay Hall)",
+      "Official Receipt from the Office of the City Treasurer (Office of the City Treasurer)"
+     ],
+     "fee": "None",
+     "time": "35 minutes",
+     "where": "Office of the City Mayor – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Mayor's Clearance for Securing Firearms License",
+     "summary": "Get the Mayor's clearance you need when applying for a firearms license.",
+     "for": [
+      "everyone"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Letter of intent stating name, status, address, occupation and purpose of securing Firearm License (Client or representative)",
+      "Drug Test (Accredited Drug Testing Center)",
+      "Personal Appearance of Applicant",
+      "Certificate of Membership to any Gun Club (Registered Gun Owner's Association)",
+      "Original Copy of Barangay Clearance (Barangay Hall)",
+      "Original Copy of Court Clearance (Hall of Justice – City Court)",
+      "Original Copy of Fiscal Clearance (Fiscal Office)",
+      "Original Copy of Police Clearance (City Police Department)",
+      "One (1) pc 2 x 2 ID picture (Client or representative)",
+      "One (1) Documentary Stamp (Office of the City Treasurer)",
+      "One (1) photo copy for each clearance submitted"
+     ],
+     "fee": "None",
+     "time": "35 minutes",
+     "where": "Office of the City Mayor – Administrative Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Permit to Conduct Motorcade/Parade/Mass or Group Gatherings and Other Miscellaneous Permits",
+     "summary": "Get a permit before holding a motorcade, parade, rally or other group gathering in the city.",
+     "for": [
+      "everyone",
+      "businesses",
+      "cooperatives",
+      "government-offices"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Letter request addressed to the City Mayor indicating the schedule, planned route and the purpose of activity (Client or representative)",
+      "Payment of fees for motorcades/parades conducted to promote concerts and other related fund raising activities (Office of the City Treasurer)",
+      "Coordination of activities for mass gatherings such as prayer/protest/indignation rallies (Cotabato City Police Office)"
+     ],
+     "fee": "None, except fees for motorcades/parades promoting concerts and fund-raising activities",
+     "time": "37 minutes",
+     "where": "Office of the City Mayor – Administrative Division, Records Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Use of Government Facilities",
+     "summary": "Borrow city venues like the City Plaza or Social Hall, the sound system or the city bus.",
+     "for": [
+      "everyone"
+     ],
+     "category": "community",
+     "requirements": [
+      "Request letter address to the City Mayor, specifying the government facility to be used with date, time, and purpose indicated (Client or representative)"
+     ],
+     "fee": "None",
+     "time": "1 hour and 4 minutes",
+     "where": "Office of the City Mayor – Administrative Division, Records Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Authenticated Photocopy of Ordinance and/or Resolution and Other Related Documents",
+     "summary": "Get certified copies of city ordinances, resolutions and related documents.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Request letter (Records Division Chief – Receiving Section)"
+     ],
+     "fee": "None",
+     "time": "60 minutes",
+     "where": "Sangguniang Panlungsod (Office of the City Vice Mayor) – Records Division",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Request for Copies of Transcribed Minutes of the Proceedings of Committee Hearing",
+     "summary": "Get copies of the transcribed minutes of city council committee hearings.",
+     "for": [
+      "everyone"
+     ],
+     "category": "requests",
+     "requirements": [
+      "Letter Request (Records Division)"
+     ],
+     "fee": "None",
+     "time": "50 minutes",
+     "where": "Sangguniang Panlungsod (Office of the City Vice Mayor) – Records Division, Receiving Section",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Research Assistance",
+     "summary": "Students and researchers can get help from the tourism office for their research.",
+     "for": [
+      "students",
+      "researchers"
+     ],
+     "category": "education",
+     "requirements": [
+      "Resume/Application letter/Biodata (Concerned Client)",
+      "Pertinent Credentials (Concerned Client)"
+     ],
+     "fee": "None",
+     "time": "10 minutes",
+     "where": "Office of the City Mayor – Office of the City Tourism Officer",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Tourism Clearance",
+     "summary": "Tourism-related businesses can get a tourism clearance from the city.",
+     "for": [
+      "businesses"
+     ],
+     "category": "permits",
+     "requirements": [
+      "Resume/Application letter/Biodata (Concerned Client)",
+      "Pertinent Credentials (Concerned Client)"
+     ],
+     "fee": "None",
+     "time": "12 minutes",
+     "where": "Office of the City Mayor – Office of the City Tourism Officer",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Tour Guiding",
+     "summary": "Request a city tour guide for your visit or group.",
+     "for": [
+      "travellers",
+      "businesses"
+     ],
+     "category": "community",
+     "requirements": [
+      "Resume/Application letter/Biodata (Concerned Client)",
+      "Pertinent Credentials (Concerned Client)"
+     ],
+     "fee": "None",
+     "time": "7 minutes",
+     "where": "Office of the City Mayor – Office of the City Tourism Officer",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Applying for Job with the City Government",
+     "summary": "Apply for open jobs at the city government; applicants are screened by a selection board.",
+     "for": [
+      "job-seekers"
+     ],
+     "category": "livelihood",
+     "requirements": [
+      "Application",
+      "Personal Data Sheet (PDS) with latest 2\"x2\" ID picture",
+      "Photocopy of Eligibility (ies)",
+      "Photocopy of Transcript of Records",
+      "Other supporting documents, if any"
+     ],
+     "fee": null,
+     "time": null,
+     "where": "Office of the City Human Resource & Management Officer",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Veterinary (Animal Health)",
+     "summary": "Get an animal health certificate or permit for your pet or livestock.",
+     "for": [
+      "everyone",
+      "farmers"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Presence of Animal (Client)",
+      "Vaccination Card of Animal (Veterinarian of the Place of Origin)"
+     ],
+     "fee": "Php 50.00",
+     "time": "27 minutes",
+     "where": "Office of the City Veterinarian",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Meat Inspection Activities",
+     "summary": "Have animals and meat inspected so only safe meat is sold to the public.",
+     "for": [
+      "businesses",
+      "farmers"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Meat Inspection Certificate (National Meat Inspection Service)",
+      "Municipal/Barangay Health Certificate (Veterinarian of the Place of Origin)"
+     ],
+     "fee": "None",
+     "time": "31 minutes",
+     "where": "Office of the City Veterinarian",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Animal Impounding and Depopulation Program",
+     "summary": "Get back your impounded animal from the city pound after paying the fine.",
+     "for": [
+      "everyone"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Receipt of Payment (City Treasury)",
+      "Animal Health Certificate/Card (Veterinarian of the place of Origin)"
+     ],
+     "fee": "Php 500.00 fine",
+     "time": "31 minutes",
+     "where": "Office of the City Veterinarian – City Pound",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Operation of Halal Slaughterhouse",
+     "summary": "Have your cattle, carabao, goats or sheep slaughtered the halal way and inspected as fit to eat.",
+     "for": [
+      "everyone",
+      "businesses",
+      "farmers"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Personal Identification (Concerned Individual/Client)",
+      "Barangay Clearance (Registered barangay office)",
+      "Certificate of Ownership/Transfer (Halal Slaughterhouse Office)",
+      "Veterinary Health Certificate (City Veterinary Office)"
+     ],
+     "fee": "P970.00/head (cow), P1,070.00/head (carabao), P233.00/head (goat/sheep)",
+     "time": "10 hours and 32 minutes",
+     "where": "Office of the City Mayor – Cotabato City \"AA\" Halal Slaughterhouse",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    },
+    {
+     "name": "Operation of Hog Slaughterhouse",
+     "summary": "Have your hogs slaughtered, inspected, cleaned and delivered to market stalls.",
+     "for": [
+      "everyone",
+      "businesses",
+      "farmers"
+     ],
+     "category": "farming",
+     "requirements": [
+      "Veterinary Health Certificate (City Veterinary Office)",
+      "Permit Receipt (Slaughterhouse/Revenue Collection Office)",
+      "Meat Inspection Certification (Slaughterhouse)"
+     ],
+     "fee": "649.25 per head",
+     "time": "4 hours and 18 minutes",
+     "where": "Office of the City Mayor – Hog Slaughterhouse",
+     "source": "https://cityofcotabato.com/wp-content/uploads/2026/05/Citizen-Charter-new.pdf"
+    }
+   ]
   },
   {
    "key": "special-geographic-area/kadayangan",

@@ -8,6 +8,7 @@ import { ServiceCards } from '../../../_components/service-cards'
 import { SiteHeader } from '../../../_components/site-header'
 import { lguByKey, lguHasCharter, lguMeta, lgus } from '../../../_lib/lgu-services'
 import { pageMeta } from '../../../_lib/seo'
+import { CATEGORIES } from '../../../_lib/services'
 
 export function generateStaticParams() {
 	return lgus.map((l) => ({ key: l.key.split('/') }))
@@ -67,7 +68,19 @@ export default async function LguPage({ params }: { params: Promise<{ key: strin
 								Services <span className='text-[var(--ink-mute)]'>{l.services.length}</span>
 							</h2>
 							<p className='mt-1 text-[13.5px] text-[var(--ink-3)]'>As its Citizen’s Charter lists them: what to bring, what it costs, how long it takes.</p>
-							<ServiceCards services={l.services} base='/services/lgu' />
+							{/* A city's charter runs to a hundred services and more, so they are shelved by category, in the categories' own order. */}
+							{CATEGORIES.map((c) => {
+								const list = l.services.filter((s) => s.category === c.id)
+								if (!list.length) return null
+								return (
+									<div key={c.id} className='mt-10'>
+										<h3 className='flex items-baseline gap-2 border-b border-[var(--ink)] pb-2 text-[12px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
+											{c.label} <span className='text-[var(--ink-mute)]'>{list.length}</span>
+										</h3>
+										<ServiceCards services={list} base='/services/lgu' />
+									</div>
+								)
+							})}
 						</section>
 					) : (
 						<section aria-labelledby='no-charter' className='border border-[var(--rule)] bg-[var(--paper-2)] p-6'>
