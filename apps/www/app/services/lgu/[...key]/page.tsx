@@ -37,24 +37,23 @@ export default async function LguPage({ params }: { params: Promise<{ key: strin
 			<SiteHeader activeItem='services' />
 
 			<Masthead brand label={l.kind === 'Province' ? 'Province' : `${l.kind === 'Municipality' ? 'Town' : l.kind} · ${l.province}`} lines={[title(l)]}>
-				<div className='flex flex-wrap gap-3'>
-					{/* Fixed colours: inside the band, --paper and --ink are re-pointed to its crimson ground. */}
-					{l.charter ? (
-						<a href={l.charter.url} target='_blank' rel='noreferrer' className='inline-flex h-11 items-center gap-2 bg-white px-4 text-[14px] font-semibold text-[#191713] hover:bg-white/90'>
+				<div className='flex flex-wrap gap-x-8 gap-y-3'>
+										{l.charter ? (
+						<a href={l.charter.url} target='_blank' rel='noreferrer' className='inline-flex items-center gap-2 text-[14px] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
 							<FileTextIcon size={16} aria-hidden='true' /> Citizen’s Charter
 						</a>
 					) : null}
 					{l.website ? (
-						<a href={l.website} target='_blank' rel='noreferrer' className='inline-flex h-11 items-center gap-2 border border-white/40 px-4 text-[14px] font-semibold text-white hover:bg-white/10'>
+						<a href={l.website} target='_blank' rel='noreferrer' className='inline-flex items-center gap-2 text-[14px] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
 							<GlobeIcon size={16} aria-hidden='true' /> Official website
 						</a>
 					) : null}
 					{l.facebook ? (
-						<a href={l.facebook} target='_blank' rel='noreferrer' className='inline-flex h-11 items-center gap-2 border border-white/40 px-4 text-[14px] font-semibold text-white hover:bg-white/10'>
+						<a href={l.facebook} target='_blank' rel='noreferrer' className='inline-flex items-center gap-2 text-[14px] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
 							<FacebookLogoIcon size={16} aria-hidden='true' /> Facebook
 						</a>
 					) : null}
-					<Link href={directory} className='inline-flex h-11 items-center gap-2 border border-white/40 px-4 text-[14px] font-semibold text-white hover:bg-white/10'>
+					<Link href={directory} className='inline-flex items-center gap-2 text-[14px] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
 						<BuildingsIcon size={16} aria-hidden='true' /> In the Directory
 					</Link>
 				</div>

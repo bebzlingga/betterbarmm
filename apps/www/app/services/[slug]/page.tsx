@@ -37,19 +37,18 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 			<SiteHeader activeItem='services' />
 
 			<Masthead brand label={office.acronym ? `${KIND[office.kind]} · ${office.acronym}` : KIND[office.kind]} lines={[office.name]} standfirst={office.mandate ?? undefined}>
-				<div className='flex flex-wrap gap-3'>
-					{/* Fixed colours: inside the band, --paper and --ink are re-pointed to its crimson ground. */}
-					{office.website ? (
-						<a href={office.website} target='_blank' rel='noreferrer' className='inline-flex h-11 items-center gap-2 bg-white px-4 text-[14px] font-semibold text-[#191713] hover:bg-white/90'>
+				<div className='flex flex-wrap gap-x-8 gap-y-3'>
+										{office.website ? (
+						<a href={office.website} target='_blank' rel='noreferrer' className='inline-flex items-center gap-2 text-[14px] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
 							<GlobeIcon size={16} aria-hidden='true' /> Official website
 						</a>
 					) : null}
 					{office.charter ? (
-						<a href={office.charter.url} target='_blank' rel='noreferrer' className='inline-flex h-11 items-center gap-2 border border-white/40 px-4 text-[14px] font-semibold text-white hover:bg-white/10'>
+						<a href={office.charter.url} target='_blank' rel='noreferrer' className='inline-flex items-center gap-2 text-[14px] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
 							<FileTextIcon size={16} aria-hidden='true' /> Citizen’s Charter
 						</a>
 					) : null}
-					<a href={budgetHref(office)} className='inline-flex h-11 items-center gap-2 border border-white/40 px-4 text-[14px] font-semibold text-white hover:bg-white/10'>
+					<a href={budgetHref(office)} className='inline-flex items-center gap-2 text-[14px] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
 						<CoinsIcon size={16} aria-hidden='true' /> Its budget
 					</a>
 				</div>
