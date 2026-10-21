@@ -1,4 +1,5 @@
-import { ArrowUpRightIcon, CaretDownIcon } from '@phosphor-icons/react/ssr'
+import { ArrowUpRightIcon, CaretDownIcon, UsersIcon } from '@phosphor-icons/react/ssr'
+import { CATEGORY_ICONS } from './category-icons'
 import Link from 'next/link'
 import { audienceLabel, categoryLabel, slugify, type Audience, type Category, type Service } from '../_lib/services'
 
@@ -7,22 +8,27 @@ import { audienceLabel, categoryLabel, slugify, type Audience, type Category, ty
    LGU's, so the two read the same; `base` is the list the category and
    audience tags lead back to. */
 
-/** Its category, then who it is for: each a link to everything else on that shelf, or for those readers. */
-export function Tags({ list, category, base = '/services' }: { list: Audience[]; category?: Category; base?: string }) {
+const chip = 'inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border px-2.5 py-1 text-[12px] leading-none transition'
+
+/** Its category, then who it is for, as chips: each a link to everything else on that shelf, or for those readers. */
+export function Tags({ list, category, base = '/services', className = 'mt-2' }: { list: Audience[]; category?: Category; base?: string; className?: string }) {
 	if (!list.length && !category) return null
+	const Glyph = category ? CATEGORY_ICONS[category] : null
 	return (
-		<p className='mt-2 flex flex-wrap gap-1.5'>
+		<span className={`flex flex-wrap gap-1.5 ${className}`}>
 			{category ? (
-				<Link href={`${base}?cat=${category}`} className='border border-[var(--accent)] px-2 py-0.5 text-[11.5px] font-semibold text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white'>
+				<Link href={`${base}?cat=${category}`} className={`${chip} border-[var(--accent)] font-semibold text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white`}>
+					{Glyph ? <Glyph size={13} weight='duotone' aria-hidden='true' /> : null}
 					{categoryLabel(category)}
 				</Link>
 			) : null}
 			{list.map((a) => (
-				<Link key={a} href={`${base}?for=${a}`} className='border border-[var(--rule)] px-2 py-0.5 text-[11.5px] text-[var(--ink-2)] hover:border-[var(--ink)]'>
+				<Link key={a} href={`${base}?for=${a}`} className={`${chip} border-[var(--rule)] text-[var(--ink-2)] hover:border-[var(--ink)] hover:text-[var(--ink)]`}>
+					<UsersIcon size={13} aria-hidden='true' />
 					{audienceLabel(a)}
 				</Link>
 			))}
-		</p>
+		</span>
 	)
 }
 
@@ -38,12 +44,16 @@ export function ServiceCards({ services, base = '/services' }: { services: Servi
 			{services.map((s) => (
 				<li key={s.name} id={`service-${slugify(s.name)}`} className='scroll-mt-[calc(var(--site-header-h)+1rem)]'>
 					<details className='group border border-[var(--rule)] open:border-[var(--ink)]'>
-						<summary className='flex cursor-pointer list-none items-start justify-between gap-4 px-5 py-6 sm:px-7 [&::-webkit-details-marker]:hidden'>
-							<span className='min-w-0'>
-								<span className='block text-[15.5px] font-semibold leading-snug'>{s.name}</span>
-								<span className='mt-1 block text-[12.5px] text-[var(--ink-3)]'>
-									{[s.fee && `Fee: ${s.fee}`, s.time && `Takes ${s.time}`].filter(Boolean).join(' · ') || 'Fee and time not stated'}
+						<summary className='flex cursor-pointer list-none items-start gap-4 px-5 py-6 sm:px-7 [&::-webkit-details-marker]:hidden'>
+							{/* The title on the left, its chips on the right; on a narrow screen the chips go under it. */}
+							<span className='flex min-w-0 flex-1 flex-col gap-3 lg:flex-row lg:items-start lg:justify-between lg:gap-8'>
+								<span className='min-w-0'>
+									<span className='block text-[15.5px] font-semibold leading-snug'>{s.name}</span>
+									<span className='mt-1 block text-[12.5px] text-[var(--ink-3)]'>
+										{[s.fee && `Fee: ${s.fee}`, s.time && `Takes ${s.time}`].filter(Boolean).join(' · ') || 'Fee and time not stated'}
+									</span>
 								</span>
+								<Tags list={s.for} category={s.category} base={base} className='shrink-0 lg:max-w-[45%] lg:justify-end' />
 							</span>
 							<CaretDownIcon size={16} className='mt-1 shrink-0 transition group-open:rotate-180' aria-hidden='true' />
 						</summary>
@@ -79,7 +89,6 @@ export function ServiceCards({ services, base = '/services' }: { services: Servi
 									</>
 								) : null}
 							</dl>
-							<Tags list={s.for} category={s.category} base={base} />
 							<p className='mt-5 border-t border-[var(--rule-soft)] pt-4'>
 								<Source url={s.source} />
 							</p>

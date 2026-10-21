@@ -2,30 +2,17 @@
 
 import {
 	ArrowRightIcon,
-	BankIcon,
-	BooksIcon,
-	BriefcaseIcon,
-	CertificateIcon,
 	ClockIcon,
-	CoinsIcon,
 	FileTextIcon,
-	FilesIcon,
-	FirstAidKitIcon,
-	GraduationCapIcon,
-	HandCoinsIcon,
-	HouseLineIcon,
 	MagnifyingGlassIcon,
-	PlantIcon,
 	ProhibitIcon,
 	ReceiptIcon,
-	ScalesIcon,
 	SquaresFourIcon,
-	StorefrontIcon,
-	TruckIcon,
 	XIcon,
 	type Icon,
 } from '@phosphor-icons/react'
 import { Select } from '@betterbarmm/editorial'
+import { CATEGORY_ICONS } from './category-icons'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { Fragment, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
@@ -56,23 +43,6 @@ export type ServiceEntry = {
 
 type Choice = { id: string; label: string; count: number }
 
-/** One glyph per category, keyed by its id in the dataset. */
-const ICONS: Record<string, Icon> = {
-	health: FirstAidKitIcon,
-	assistance: HandCoinsIcon,
-	education: GraduationCapIcon,
-	livelihood: BriefcaseIcon,
-	farming: PlantIcon,
-	housing: HouseLineIcon,
-	legal: ScalesIcon,
-	business: StorefrontIcon,
-	permits: CertificateIcon,
-	requests: FilesIcon,
-	taxes: CoinsIcon,
-	community: BooksIcon,
-	suppliers: TruckIcon,
-	government: BankIcon,
-}
 
 /** The band's jumps to the page's sections; each page names its own. */
 export type Jump = { href: string; label: string; icon: 'categories' | 'charter' | 'none' }
@@ -260,7 +230,7 @@ export function ServicesSearch({
 							{found.map((e, i) => {
 								// A heading wherever the category changes; with one category chosen there is only the first.
 								const heading = !cat && (i === 0 || found[i - 1]!.category !== e.category)
-								const Glyph = ICONS[e.category]
+								const Glyph = CATEGORY_ICONS[e.category]
 								return (
 									<Fragment key={e.href + i}>
 										{heading ? (
@@ -330,7 +300,7 @@ function Categories({ categories, entries, onOpen }: { categories: Choice[]; ent
 			</div>
 			<ul className='mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 				{categories.map((c) => {
-					const Glyph = ICONS[c.id]
+					const Glyph = CATEGORY_ICONS[c.id]
 					// Services first: they are what a reader can walk in and ask for.
 					const sample = entries
 						.filter((e) => e.category === c.id)
