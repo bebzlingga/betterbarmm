@@ -226,55 +226,81 @@ export function ServicesSearch({
 								Clear all
 							</button>
 						</p>
-						<ul className='mt-4'>
-							{found.map((e, i) => {
-								// A heading wherever the category changes; with one category chosen there is only the first.
-								const heading = !cat && (i === 0 || found[i - 1]!.category !== e.category)
-								const Glyph = CATEGORY_ICONS[e.category]
-								return (
-									<Fragment key={e.href + i}>
-										{heading ? (
-											<li className='mt-8 flex items-center gap-2 border-b border-[var(--ink)] pb-2 text-[12px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] first:mt-2'>
-												{Glyph ? <Glyph size={15} weight='duotone' className='text-[var(--accent)]' aria-hidden='true' /> : null}
-												{label(categories, e.category)}
-											</li>
-										) : null}
-										<li>
-											<Link
-												href={e.href}
-												onMouseEnter={() => setAt(i)}
-												data-on={i === at}
-												className='group flex items-start gap-4 border-b border-[var(--rule-soft)] px-2 py-4 data-[on=true]:bg-[var(--paper-2)]'
-											>
-												<span className='min-w-0 flex-1'>
-													<span className='block font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
-														{e.kind === 'program' ? 'Program' : 'Service'} · {e.office}
-														{e.draft ? ' · draft charter' : ''}
-													</span>
-													<span className='mt-1 block text-[15.5px] font-semibold leading-snug group-data-[on=true]:text-[var(--accent)]'>{e.name}</span>
-													{e.summary ? <span className='mt-1 block max-w-3xl text-[13.5px] leading-6 text-[var(--ink-2)]'>{e.summary}</span> : null}
-													{e.fee || e.time ? (
-														<span className='mt-2 flex flex-wrap gap-x-4 gap-y-1 text-[12.5px] text-[var(--ink-3)]'>
-															{e.fee ? (
-																<span className='inline-flex items-center gap-1.5'>
-																	<ReceiptIcon size={13} aria-hidden='true' /> {e.fee}
-																</span>
-															) : null}
-															{e.time ? (
-																<span className='inline-flex items-center gap-1.5'>
-																	<ClockIcon size={13} aria-hidden='true' /> {e.time}
-																</span>
-															) : null}
+						{/* A table: the name and what it is, then the facts a reader compares, each in its own column. On a phone the
+						    type, fee and time fold under the name. The whole row opens the record; the name is its link. */}
+						<table className='mt-4 w-full border-collapse text-left text-[13.5px]'>
+							<thead className='hidden md:table-header-group'>
+								<tr className='border-b border-[var(--ink)] text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
+									<th className='py-2 pl-2 pr-4 font-semibold'>Program or service</th>
+									<th className='py-2 pr-4 font-semibold'>Type</th>
+									<th className='py-2 pr-4 font-semibold'>{places ? 'Local government' : 'Office'}</th>
+									<th className='py-2 pr-4 font-semibold'>Fee</th>
+									<th className='py-2 pr-4 font-semibold'>Time</th>
+									<th className='w-6 py-2' aria-hidden='true' />
+								</tr>
+							</thead>
+							<tbody>
+								{found.map((e, i) => {
+									// A heading row wherever the category changes; with one category chosen there is none.
+									const heading = !cat && (i === 0 || found[i - 1]!.category !== e.category)
+									const Glyph = CATEGORY_ICONS[e.category]
+									return (
+										<Fragment key={e.href + i}>
+											{heading ? (
+												<tr>
+													<th colSpan={6} scope='colgroup' className={`pb-2 text-left ${i === 0 ? 'pt-4' : 'pt-10'}`}>
+														<span className='flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.12em] text-[var(--ink)]'>
+															{Glyph ? <Glyph size={15} weight='duotone' className='text-[var(--accent)]' aria-hidden='true' /> : null}
+															{label(categories, e.category)}
 														</span>
-													) : null}
-												</span>
-												<ArrowRightIcon size={14} className='mt-6 shrink-0 text-[var(--ink-mute)] group-data-[on=true]:text-[var(--accent)]' aria-hidden='true' />
-											</Link>
-										</li>
-									</Fragment>
-								)
-							})}
-						</ul>
+													</th>
+												</tr>
+											) : null}
+											<tr
+												onMouseEnter={() => setAt(i)}
+												onClick={(ev) => (ev.target as HTMLElement).closest('a') || router.push(e.href)}
+												data-on={i === at}
+												className='group cursor-pointer border-t border-[var(--rule-soft)] align-top data-[on=true]:bg-[var(--paper-2)]'
+											>
+												<td className='py-4 pl-2 pr-4'>
+													<Link href={e.href} className='block text-[15px] font-semibold leading-snug group-data-[on=true]:text-[var(--accent)]'>
+														{e.name}
+													</Link>
+													{e.summary ? <span className='mt-1 block max-w-2xl leading-6 text-[var(--ink-2)]'>{e.summary}</span> : null}
+													<span className='mt-2 flex flex-wrap gap-x-4 gap-y-1 text-[12.5px] text-[var(--ink-3)] md:hidden'>
+														<span>
+															{e.kind === 'program' ? 'Program' : 'Service'} · {e.office}
+														</span>
+														{e.fee ? (
+															<span className='inline-flex items-center gap-1.5'>
+																<ReceiptIcon size={13} aria-hidden='true' /> {e.fee}
+															</span>
+														) : null}
+														{e.time ? (
+															<span className='inline-flex items-center gap-1.5'>
+																<ClockIcon size={13} aria-hidden='true' /> {e.time}
+															</span>
+														) : null}
+													</span>
+												</td>
+												<td className='hidden whitespace-nowrap py-4 pr-4 text-[var(--ink-3)] md:table-cell'>
+													{e.kind === 'program' ? 'Program' : 'Service'}
+													{e.draft ? <span className='block text-[11.5px] text-[var(--brass)]'>Draft charter</span> : null}
+												</td>
+												<td className='hidden py-4 pr-4 font-semibold md:table-cell'>{e.office}</td>
+												<td className='hidden max-w-[13rem] py-4 pr-4 text-[var(--ink-2)] md:table-cell'>
+													<span className='line-clamp-3'>{e.fee ?? '—'}</span>
+												</td>
+												<td className='hidden max-w-[10rem] py-4 pr-4 text-[var(--ink-2)] md:table-cell'>{e.time ?? '—'}</td>
+												<td className='py-4 pr-2 pt-5'>
+													<ArrowRightIcon size={14} className='text-[var(--ink-mute)] group-data-[on=true]:text-[var(--accent)]' aria-hidden='true' />
+												</td>
+											</tr>
+										</Fragment>
+									)
+								})}
+							</tbody>
+						</table>
 					</div>
 				) : (
 					<>
