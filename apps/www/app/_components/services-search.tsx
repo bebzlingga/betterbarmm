@@ -301,7 +301,7 @@ export function ServicesSearch({
 /** Every category as a tile: its count and the first few things on its shelf. */
 function Categories({ categories, entries, onOpen }: { categories: Choice[]; entries: ServiceEntry[]; onOpen: (id: string) => void }) {
 	return (
-		<section id='categories' aria-labelledby='categories-title' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] pt-14 lg:pt-20'>
+		<section id='categories' aria-labelledby='categories-title' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] pt-8 lg:pt-10'>
 			<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
 				<h2 id='categories-title' className='text-[26px] font-extrabold tracking-[-0.02em]'>
 					By category
