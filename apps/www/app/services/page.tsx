@@ -26,13 +26,13 @@ const eyebrow = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14e
 const linkClass = 'underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'
 
 /** An office's logo, as the Directory draws it, or its acronym where no logo has been found. */
-function OfficeLogo({ o }: { o: Office }) {
+function OfficeLogo({ o, small = false }: { o: Office; small?: boolean }) {
 	const logo = officeLogo(o.slug)
 	return logo ? (
 		// eslint-disable-next-line @next/next/no-img-element
-		<img src={logo.src} alt='' title={`Logo: ${logo.credit}`} loading='lazy' className='size-full bg-[var(--paper-2)] object-contain! p-2 sm:p-4' />
+		<img src={logo.src} alt='' title={`Logo: ${logo.credit}`} loading='lazy' className={`size-full object-contain! ${small ? '' : 'bg-[var(--paper-2)] p-2 sm:p-4'}`} />
 	) : (
-		<span aria-hidden='true' className='grid size-full place-items-center bg-[var(--paper-2)] font-mono text-[11px] font-bold text-[var(--ink-3)] sm:text-[16px]'>
+		<span aria-hidden='true' className={`grid size-full place-items-center font-mono font-bold text-[var(--ink-3)] ${small ? 'text-[9px]' : 'bg-[var(--paper-2)] text-[11px] sm:text-[16px]'}`}>
 			{(o.acronym ?? '').slice(0, 5)}
 		</span>
 	)
@@ -198,8 +198,12 @@ function GapRow({ o }: { o: Office }) {
 	const funded = fundedPrograms(o)
 	const total = funded.reduce((n, p) => n + p.amount, 0)
 	return (
-		<li className='grid gap-x-8 gap-y-3 border-b border-[var(--rule-soft)] py-5 md:grid-cols-[minmax(0,19rem)_minmax(0,1fr)] lg:gap-x-20'>
-			<div className='min-w-0'>
+		<li className='grid gap-x-8 gap-y-3 border-b border-[var(--rule-soft)] py-5 md:grid-cols-[minmax(0,26rem)_minmax(0,1fr)] lg:gap-x-20'>
+			<div className='flex min-w-0 gap-4'>
+				<span className='size-12 shrink-0'>
+					<OfficeLogo o={o} small />
+				</span>
+				<div className='min-w-0'>
 				{o.acronym ? <p className={`${eyebrow} text-[var(--accent)]`}>{o.acronym}</p> : null}
 				<p className='mt-0.5 text-[15.5px] font-bold leading-snug'>
 					<Link href={`/services/${o.slug}`} className='hover:text-[var(--accent)]'>
@@ -219,6 +223,7 @@ function GapRow({ o }: { o: Office }) {
 						) : null}
 					</p>
 				) : null}
+				</div>
 			</div>
 			<div className='min-w-0'>
 				{funded.length ? (
