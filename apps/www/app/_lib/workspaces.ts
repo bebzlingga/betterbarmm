@@ -51,9 +51,10 @@ export const workspaces: Workspace[] = [
 	},
 	{
 		label: 'Public services',
-		blurb: 'Which office handles what, what it costs, and what you need to bring.',
-		measure: 'Service finder',
-		state: 'planned',
+		href: '/services',
+		blurb: 'What each regional office, province, city and town offers the public: who it is for, what to bring, the fee and how long it takes.',
+		measure: 'Citizen’s Charters',
+		state: 'live',
 	},
 	{
 		label: 'Travel',

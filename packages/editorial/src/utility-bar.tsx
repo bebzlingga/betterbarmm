@@ -1,4 +1,4 @@
-import { BrainIcon, BuildingsIcon, MapPinAreaIcon, CheckSquareOffsetIcon, CoinsIcon, DiamondsFourIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon } from '@phosphor-icons/react/ssr'
+import { BrainIcon, BuildingsIcon, LifebuoyIcon, MapPinAreaIcon, CheckSquareOffsetIcon, CoinsIcon, DiamondsFourIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon } from '@phosphor-icons/react/ssr'
 import { GlobalSearch } from './global-search'
 import { SwitchCloser } from './switch-closer'
 
@@ -45,6 +45,7 @@ const WORKSPACES = [
 	{ key: 'budget', href: 'https://budget.betterbarmm.com', label: 'Budget', icon: CoinsIcon },
 	{ key: 'lgu', href: 'https://lgu.betterbarmm.com', label: 'Local Government', icon: BuildingsIcon },
 	{ key: 'procurement', href: 'https://procurement.betterbarmm.com', label: 'Procurement', icon: ShoppingCartIcon },
+	{ key: 'services', href: 'https://betterbarmm.com/services', label: 'Programs & services', icon: LifebuoyIcon },
 ] as const
 
 export type WorkspaceKey = (typeof WORKSPACES)[number]['key']

@@ -154,7 +154,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 			    Discover pages carry these links in the menu and the footer. */}
 			{overlay ? null : (
 				<UtilityBar
-					current='home'
+					current={activeItem === 'services' ? 'services' : 'home'}
 					project={activeItem === 'accidents' || activeItem === 'crafts' || activeItem === 'places' ? activeItem : undefined}
 					className='bb-strip bg-[var(--paper-2)]'
 					switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}

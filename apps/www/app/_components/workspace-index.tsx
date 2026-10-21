@@ -213,6 +213,10 @@ export function WorkspaceIndex({ workspaces }: { workspaces: Workspace[] }) {
  * front page's index, where the full cards took a screen and a half to say
  * five things.
  */
+// Whole class names, so the build sees them.
+const SM_SPAN: Record<number, string> = { 1: 'sm:col-span-1', 2: 'sm:col-span-2' }
+const LG_SPAN: Record<number, string> = { 1: 'lg:col-span-1', 2: 'lg:col-span-2', 3: 'lg:col-span-3' }
+
 export function WorkspaceList({ workspaces }: { workspaces: Workspace[] }) {
   const live = workspaces.filter((w) => w.state === 'live' && w.href)
   const coming = workspaces.filter((w) => !(w.state === 'live' && w.href))
@@ -237,9 +241,9 @@ export function WorkspaceList({ workspaces }: { workspaces: Workspace[] }) {
             </li>
           )
         })}
-        {/* What is not built yet, in the grid's own last cell: five live rows and this one fill two columns or three. */}
+        {/* What is not built yet, in the grid's own last cell, stretched across what is left of its row at two columns or three. */}
         {coming.length ? (
-          <li className='bg-[var(--paper-2)] p-6'>
+          <li className={`bg-[var(--paper-2)] p-6 ${SM_SPAN[2 - (live.length % 2)]} ${LG_SPAN[3 - (live.length % 3)]}`}>
             <span className='block font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Coming next</span>
             <span className='mt-1.5 block text-[13.5px] leading-[1.6] text-[var(--ink-2)]'>{coming.map((w) => w.label).join(' · ')}</span>
           </li>
