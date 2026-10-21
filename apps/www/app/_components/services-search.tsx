@@ -175,36 +175,7 @@ export function ServicesSearch({
 				/>
 				<div className='bb-container relative py-16 text-center lg:py-24'>
 					{head}
-					<form role='search' action='/services' onSubmit={(e) => e.preventDefault()} className='mx-auto mt-8 max-w-2xl'>
-						<label htmlFor='services-search' className='sr-only'>
-							Search programs and services
-						</label>
-						{/* Fixed colours: inside the brand band, --paper and --ink point at its crimson ground. */}
-						<span className='flex h-14 items-center gap-3 bg-white px-5 text-[#191713] shadow-[0_20px_40px_-24px_rgba(0,0,0,0.6)]'>
-							<MagnifyingGlassIcon size={20} className='shrink-0 text-[#5c574c]' aria-hidden='true' />
-							<input
-								ref={input}
-								id='services-search'
-								name='q'
-								type='search'
-								autoComplete='off'
-								value={q}
-								onChange={(e) => (setQ(e.target.value), setAt(0))}
-								onKeyDown={onKeyDown}
-								placeholder='Scholarship, medical assistance, permit, accreditation…'
-								aria-controls='services-results'
-								className='min-w-0 flex-1 bg-transparent text-[16px] outline-none placeholder:text-[#8a857a] [&::-webkit-search-cancel-button]:hidden'
-							/>
-							{q ? (
-								<button type='button' onClick={() => (setQ(''), input.current?.focus())} aria-label='Clear the search' className='grid size-7 shrink-0 cursor-pointer place-items-center rounded-full text-[#5c574c] hover:bg-[#f1ede6]'>
-									<XIcon size={15} weight='bold' aria-hidden='true' />
-								</button>
-							) : (
-								<kbd className='hidden shrink-0 rounded border border-[#d9d4ca] px-1.5 py-0.5 font-mono text-[11px] text-[#8a857a] sm:block'>/</kbd>
-							)}
-						</span>
-					</form>
-					<nav aria-label='Jump to' className='mt-6 flex flex-wrap justify-center gap-2'>
+					<nav aria-label='Jump to' className='mt-8 flex flex-wrap justify-center gap-2'>
 						{JUMP.map(({ href, label, icon: Icon }) => (
 							<a
 								key={href}
@@ -219,16 +190,41 @@ export function ServicesSearch({
 				</div>
 			</section>
 
-			{/* The two filters, always under the band, so a choice can be made or undone from the results as well as the sections. */}
+			{/* The search on the left, the two filters on the right, always under the band, so a choice can be made or undone from the results as well as the sections. */}
 			<div id='filters' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] pt-10 lg:pt-12'>
-				<div className='flex flex-wrap items-end gap-3 [&>*]:w-full sm:[&>*]:w-72'>
-					<Select label='Category' value={cat} onChange={(v) => (setCat(v), setAt(0))} options={[['', 'Every category'], ...categories.map((c): [string, string] => [c.id, `${c.label} (${c.count})`])]} />
-					<Select label='Who it’s for' value={who} onChange={(v) => (setWho(v), setAt(0))} options={[['', 'Anyone'], ...audiences.map((a): [string, string] => [a.id, `${a.label} (${a.count})`])]} />
-					{searching ? (
-						<button type='button' onClick={clear} className='h-10 w-auto! cursor-pointer px-1 text-left text-[13.5px] font-semibold underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
-							Clear all
-						</button>
-					) : null}
+				<div className='flex flex-col gap-3 lg:flex-row lg:items-end'>
+					<form role='search' action='/services' onSubmit={(e) => e.preventDefault()} className='flex min-w-0 flex-1 flex-col gap-1'>
+						<label htmlFor='services-search' className='text-[12px] text-[var(--ink-3)]'>
+							Search
+						</label>
+						<span className='flex h-10 items-center gap-3 border border-[var(--rule)] bg-[var(--paper-2)] px-3 focus-within:border-[var(--ink)]'>
+							<MagnifyingGlassIcon size={16} className='shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
+							<input
+								ref={input}
+								id='services-search'
+								name='q'
+								type='search'
+								autoComplete='off'
+								value={q}
+								onChange={(e) => (setQ(e.target.value), setAt(0))}
+								onKeyDown={onKeyDown}
+								placeholder='Scholarship, medical assistance, permit, accreditation…'
+								aria-controls='services-results'
+								className='min-w-0 flex-1 bg-transparent text-[14px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+							/>
+							{q ? (
+								<button type='button' onClick={() => (setQ(''), input.current?.focus())} aria-label='Clear the search' className='grid size-6 shrink-0 cursor-pointer place-items-center rounded-full text-[var(--ink-3)] hover:bg-[var(--paper-3)]'>
+									<XIcon size={13} weight='bold' aria-hidden='true' />
+								</button>
+							) : (
+								<kbd className='hidden shrink-0 rounded border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[11px] text-[var(--ink-mute)] sm:block'>/</kbd>
+							)}
+						</span>
+					</form>
+					<div className='grid gap-3 sm:grid-cols-2 lg:w-[34rem] lg:shrink-0'>
+						<Select label='Category' value={cat} onChange={(v) => (setCat(v), setAt(0))} options={[['', 'Every category'], ...categories.map((c): [string, string] => [c.id, `${c.label} (${c.count})`])]} />
+						<Select label='Who it’s for' value={who} onChange={(v) => (setWho(v), setAt(0))} options={[['', 'Anyone'], ...audiences.map((a): [string, string] => [a.id, `${a.label} (${a.count})`])]} />
+					</div>
 				</div>
 			</div>
 
@@ -237,6 +233,9 @@ export function ServicesSearch({
 					<div className={`bb-container ${found.length ? 'py-10 lg:py-14' : 'py-24 lg:py-32'}`}>
 						<p className={`text-[13.5px] text-[var(--ink-3)] ${found.length ? '' : 'text-center'}`}>
 							{found.length ? `${found.length} ${found.length === 1 ? 'program or service' : 'programs and services'} ${what}` : `Nothing matches ${what}. Try a shorter word, or clear a filter.`}
+							<button type='button' onClick={clear} className='ml-3 cursor-pointer font-semibold text-[var(--ink)] underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
+								Clear all
+							</button>
 						</p>
 						<ul className='mt-4'>
 							{found.map((e, i) => {
