@@ -173,7 +173,8 @@ function WithoutCharter() {
 			</div>
 
 			{CHARTER_GAPS.map((g) => {
-				const list = without.filter((o) => o.charterStatus === g.status)
+				// A charter only promised counts as none; those offices lead the list, their notes saying what was promised.
+				const list = without.filter((o) => o.charterStatus === g.status || (g.status === 'none' && o.charterStatus === 'coming')).sort((a, b) => Number(b.charterStatus === 'coming') - Number(a.charterStatus === 'coming'))
 				if (!list.length) return null
 				return (
 					<div key={g.status} className='mt-10'>

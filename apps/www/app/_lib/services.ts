@@ -122,9 +122,8 @@ export const servicesMeta = { generatedAt: dataset.generatedAt as string, note: 
 export const hasCharter = (o: Office) => o.charterStatus === 'published' || o.charterStatus === 'draft'
 
 /** The offices without one, in the order the page explains them. */
-export const CHARTER_GAPS: { status: Exclude<CharterStatus, 'published' | 'draft'>; title: string; lead: string }[] = [
-	{ status: 'coming', title: 'A charter promised, not yet published', lead: 'A page or a notice says a charter is on its way.' },
-	{ status: 'none', title: 'No charter found', lead: 'Nothing on its website, or no website of its own.' },
+export const CHARTER_GAPS: { status: Exclude<CharterStatus, 'published' | 'draft' | 'coming'>; title: string; lead: string }[] = [
+	{ status: 'none', title: 'No charter found', lead: 'Nothing on its website, a page that promises one, or no website of its own.' },
 	{ status: 'unchecked', title: 'Could not be checked', lead: 'Its website turns away automated visits.' },
 ]
 
