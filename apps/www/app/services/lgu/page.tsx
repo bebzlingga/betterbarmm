@@ -181,12 +181,13 @@ function WithoutCharter() {
 							if (!inP.length) return null
 							return (
 								<div key={p.slug} className='mt-6'>
-									<p className='border-b border-[var(--ink)] pb-2 text-[13px] font-bold'>
+									<p className='relative border-b border-[var(--ink)] pb-2 text-[13px] font-bold'>
 										{p.name} <span className='font-normal text-[var(--ink-mute)]'>· {inP.length}</span>
 									</p>
-									<ul className='grid gap-x-14 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+									{/* Each row's rule is on its top, so the last row ends without one at any column count; the first row's tuck under the province's rule, which is positioned to paint over them. */}
+									<ul className='-mt-px grid gap-x-14 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 										{inP.map((l) => (
-											<li key={l.key} className='flex min-w-0 gap-3 border-b border-[var(--rule-soft)] py-5'>
+											<li key={l.key} className='flex min-w-0 gap-3 border-t border-[var(--rule-soft)] py-5'>
 												<span className='size-9 shrink-0'>
 													<Seal l={l} size='sm' />
 												</span>
