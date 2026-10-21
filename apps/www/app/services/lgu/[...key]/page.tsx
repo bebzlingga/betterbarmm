@@ -37,7 +37,7 @@ export default async function LguPage({ params }: { params: Promise<{ key: strin
 			<SiteHeader activeItem='services' />
 
 			<Masthead brand label={l.kind === 'Province' ? 'Province' : `${l.kind === 'Municipality' ? 'Town' : l.kind} · ${l.province}`} lines={[title(l)]}>
-				<div className='flex flex-wrap gap-x-8 gap-y-3'>
+				<div className='flex flex-wrap gap-x-5 gap-y-2'>
 										{l.charter ? (
 						<a href={l.charter.url} target='_blank' rel='noreferrer' className='inline-flex items-center gap-2 text-[14px] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
 							<FileTextIcon size={16} aria-hidden='true' /> Citizen’s Charter

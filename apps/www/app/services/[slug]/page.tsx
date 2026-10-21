@@ -37,7 +37,7 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 			<SiteHeader activeItem='services' />
 
 			<Masthead brand label={office.acronym ? `${KIND[office.kind]} · ${office.acronym}` : KIND[office.kind]} lines={[office.name]} standfirst={office.mandate ?? undefined}>
-				<div className='flex flex-wrap gap-x-8 gap-y-3'>
+				<div className='flex flex-wrap gap-x-5 gap-y-2'>
 										{office.website ? (
 						<a href={office.website} target='_blank' rel='noreferrer' className='inline-flex items-center gap-2 text-[14px] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
 							<GlobeIcon size={16} aria-hidden='true' /> Official website
