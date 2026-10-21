@@ -18,6 +18,8 @@ export type DirectoryEntry = {
 	/** Who holds it, or where it is. */
 	sub: string
 	href: string
+	/** Its logo, seal or portrait, where there is one. */
+	image?: string
 	/** Everything it can be found by, lower-cased. */
 	terms: string
 }
@@ -188,6 +190,22 @@ export function DirectorySearch({ head, children }: { head: React.ReactNode; chi
 														data-on={on}
 														className='group flex items-center gap-4 border-b border-[var(--rule-soft)] px-2 py-3 data-[on=true]:bg-[var(--paper-2)]'
 													>
+														{/* A portrait fills its circle; a logo or a seal sits whole inside it. */}
+														<span className={`grid size-10 shrink-0 place-items-center overflow-hidden rounded-full ${e.image ? '' : 'border border-[var(--rule)]'}`}>
+															{e.image ? (
+																// eslint-disable-next-line @next/next/no-img-element
+																<img src={e.image} alt='' loading='lazy' className={`size-full ${e.kind === 'Member of Parliament' ? 'object-cover' : 'object-contain'}`} />
+															) : (
+																<span aria-hidden='true' className='font-mono text-[10px] font-bold text-[var(--ink-3)]'>
+																	{e.title
+																		.split(/[\s,(-]+/)
+																		.filter((w) => /^[A-Z]/.test(w))
+																		.map((w) => w[0])
+																		.join('')
+																		.slice(0, 2)}
+																</span>
+															)}
+														</span>
 														<span className='min-w-0 flex-1'>
 															<span className='block truncate text-[15px] font-semibold group-data-[on=true]:text-[var(--accent)]'>{e.title}</span>
 															<span className='block truncate text-[13px] text-[var(--ink-3)]'>{e.sub}</span>

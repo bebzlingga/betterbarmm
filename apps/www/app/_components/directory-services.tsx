@@ -27,9 +27,11 @@ export function DirectoryServices({ services, href, base, note }: { services: Se
 				<>
 					<ServiceCards services={services.slice(0, SHOWN)} base={base} />
 					{services.length > SHOWN ? (
-						<Link href={href} className='mt-4 inline-flex items-center gap-1.5 text-[14px] font-semibold underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
-							{services.length - SHOWN} more, by category <ArrowRightIcon size={12} weight='bold' aria-hidden='true' />
-						</Link>
+						<p className='mt-4 text-right'>
+							<Link href={href} className='inline-flex items-center gap-1.5 text-[14px] font-semibold underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
+								{services.length - SHOWN} more, by category <ArrowRightIcon size={12} weight='bold' aria-hidden='true' />
+							</Link>
+						</p>
 					) : null}
 				</>
 			) : null}

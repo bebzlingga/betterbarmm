@@ -1,11 +1,13 @@
 import parliament from '../../../../datasets/bills/bangsamoro_registry/members/parliament-2026.json'
 import type { DirectoryEntry } from '../_components/directory-search'
-import { barangayRows, directoryOffices, localGovernments, memberId } from './directory'
+import { barangayRows, directoryOffices, localGovernments, memberId, officeLogo, placeSeal } from './directory'
 
 /* The directory search's index: every office, province, town, barangay and Member of Parliament, with what each
    can be found by. Served as a static JSON file and fetched when the reader first types, so the page stays light. */
 
-export type Member = { fullName: string; rosterName: string; seatLabel: string; district: string | null; sector: string | null; partyLabel: string | null }
+export type Member = { fullName: string; rosterName: string; seatLabel: string; district: string | null; sector: string | null; partyLabel: string | null; photo?: { file: string } | null }
+
+const LEGISLATION = 'https://legislation.betterbarmm.com'
 export const members = parliament.members as Member[]
 
 const fold = (...parts: (string | null | undefined)[]) =>
@@ -25,6 +27,7 @@ export function searchIndex(): DirectoryEntry[] {
 			title: o.acronym ? `${o.name} (${o.acronym})` : o.name,
 			sub: o.head ? `${o.head.name}, ${o.head.title}` : 'Head not named',
 			href: `/directory/office/${o.slug}`,
+			image: officeLogo(o.slug)?.src,
 			terms: fold(o.name, o.acronym, o.head?.name, o.head?.title),
 		})
 	for (const g of localGovernments) {
@@ -33,14 +36,18 @@ export function searchIndex(): DirectoryEntry[] {
 			title: g.name,
 			sub: g.governor ? `Governor ${g.governor}` : `${g.units.length} towns`,
 			href: g.href,
+			image: placeSeal(g.slug)?.src,
 			terms: fold(g.name, g.governor, g.viceGovernor),
 		})
 		for (const u of g.units) {
+			// A barangay has no seal of its own here, so it takes its town's.
+			const seal = placeSeal(g.slug, u.slug)?.src
 			out.push({
 				kind: 'Town',
 				title: u.name,
 				sub: [u.head ? `Mayor ${u.head}` : null, g.name].filter(Boolean).join(' · '),
 				href: u.href,
+				image: seal,
 				terms: fold(u.name, u.head, u.deputy, g.name),
 			})
 			for (const b of barangayRows(g.slug, u.slug))
@@ -49,6 +56,7 @@ export function searchIndex(): DirectoryEntry[] {
 					title: `${b.name}, ${u.name}`,
 					sub: [b.captain ? `Punong barangay ${b.captain}` : null, g.name].filter(Boolean).join(' · '),
 					href: `${u.href}#barangays`,
+					image: seal,
 					terms: fold(b.name, b.captain, u.name),
 				})
 		}
@@ -59,6 +67,7 @@ export function searchIndex(): DirectoryEntry[] {
 			title: m.fullName,
 			sub: [m.district ?? m.sector ?? m.seatLabel, m.partyLabel].filter(Boolean).join(' · '),
 			href: `/directory/parliament#${memberId(m)}`,
+			image: m.photo ? `${LEGISLATION}/images/members/elected/${m.photo.file}` : undefined,
 			terms: fold(m.fullName, m.district, m.sector, m.partyLabel, m.seatLabel),
 		})
 	return out
