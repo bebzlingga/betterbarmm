@@ -181,7 +181,7 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 																) : null}
 															</dl>
 															<For list={s.for} category={s.category} />
-															<p className='mt-3'>
+															<p className='mt-5 border-t border-[var(--rule-soft)] pt-4'>
 																<Source url={s.source} />
 															</p>
 														</div>
