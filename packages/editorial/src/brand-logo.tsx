@@ -5,7 +5,7 @@
    `text-white` and nothing else changes; on a dark band, `inverse` turns
    the highlight white and its word crimson. */
 
-export function BrandLogo({ className = '', inverse = false, size = 34 }: { className?: string; inverse?: boolean; size?: number }) {
+export function BrandLogo({ className = '', inverse = false, size = 40 }: { className?: string; inverse?: boolean; size?: number }) {
 	return (
 		<span className={`inline-flex items-baseline font-extrabold leading-none tracking-[-0.03em] ${className}`} style={{ fontSize: Math.round(size * 0.62) }}>
 			<span className={`px-[0.2em] py-[0.08em] ${inverse ? 'bg-white text-[#8a2418]' : 'bg-[#8a2418] text-white'}`}>Better</span>
