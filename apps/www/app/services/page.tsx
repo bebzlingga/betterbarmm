@@ -93,7 +93,7 @@ export default async function ServicesPage({ searchParams }: { searchParams: Pro
 					<WithCharter />
 					<WithoutCharter />
 
-					<p className='mt-16 max-w-3xl text-[13px] leading-[1.7] text-[var(--ink-3)]'>
+					<p className='mt-16 text-[13px] leading-[1.7] text-[var(--ink-3)]'>
 						{servicesMeta.note} Each office’s website was checked for a charter on{' '}
 						{new Date(servicesMeta.charterCheckedAt).toLocaleDateString('en-PH', { month: 'long', day: 'numeric', year: 'numeric' })}. Know of a charter we missed, or a service that is out of date?{' '}
 						<a href='/report' className={linkClass}>

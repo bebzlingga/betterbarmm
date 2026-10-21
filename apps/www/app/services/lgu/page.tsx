@@ -96,7 +96,7 @@ export default async function LguServicesPage({ searchParams }: { searchParams: 
 					<WithCharter listed={listed} />
 					<WithoutCharter />
 
-					<p className='mt-16 max-w-3xl text-[13px] leading-[1.7] text-[var(--ink-3)]'>
+					<p className='mt-16 text-[13px] leading-[1.7] text-[var(--ink-3)]'>
 						{lguMeta.note} Each local government’s website, and a web search for its charter, were checked on{' '}
 						{new Date(lguMeta.charterCheckedAt).toLocaleDateString('en-PH', { month: 'long', day: 'numeric', year: 'numeric' })}. Know of a charter we missed?{' '}
 						<a href='/report' className={linkClass}>
@@ -154,6 +154,7 @@ function WithCharter({ listed }: { listed: Lgu[] }) {
 /** Every other LGU, by why it has no services listed, then by province: a compact list, each with its seal and its links. */
 function WithoutCharter() {
 	const without = lgus.filter((l) => !lguHasCharter(l))
+	const groups = LGU_GAPS.map((g) => ({ g, list: without.filter((l) => g.status.includes(l.charterStatus)) })).filter(({ list }) => list.length)
 	return (
 		<section id='no-charter' aria-labelledby='no-charter-title' className='mt-20 scroll-mt-[calc(var(--site-header-h)+1rem)] border-t border-[var(--rule)] pt-14 lg:mt-24'>
 			<div className={sectionHead}>
@@ -163,15 +164,18 @@ function WithoutCharter() {
 				<p className='max-w-xl text-[13.5px] text-[var(--ink-3)]'>Every local government must publish a Citizen’s Charter: each service, what to bring, the fee and how long it takes.</p>
 			</div>
 
-			{LGU_GAPS.map((g) => {
-				const list = without.filter((l) => g.status.includes(l.charterStatus))
-				if (!list.length) return null
+			{/* A group is only named when there is another to tell it from; with one, the provinces follow the section's heading. */}
+			{groups.map(({ g, list }) => {
 				return (
 					<div key={g.title} className='mt-10'>
-						<h3 className={`${eyebrow} text-[var(--ink-3)]`}>
-							{g.title} <span className='text-[var(--ink-mute)]'>· {list.length}</span>
-						</h3>
-						<p className='mt-1 text-[13px] text-[var(--ink-mute)]'>{g.lead}</p>
+						{groups.length > 1 ? (
+							<>
+								<h3 className={`${eyebrow} text-[var(--ink-3)]`}>
+									{g.title} <span className='text-[var(--ink-mute)]'>· {list.length}</span>
+								</h3>
+								<p className='mt-1 text-[13px] text-[var(--ink-mute)]'>{g.lead}</p>
+							</>
+						) : null}
 						{PROVINCES.map((p) => {
 							const inP = list.filter((l) => l.provinceSlug === p.slug)
 							if (!inP.length) return null
@@ -180,7 +184,7 @@ function WithoutCharter() {
 									<p className='border-b border-[var(--ink)] pb-2 text-[13px] font-bold'>
 										{p.name} <span className='font-normal text-[var(--ink-mute)]'>· {inP.length}</span>
 									</p>
-									<ul className='grid gap-x-10 sm:grid-cols-2 lg:grid-cols-3'>
+									<ul className='grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 										{inP.map((l) => (
 											<li key={l.key} className='flex min-w-0 gap-3 border-b border-[var(--rule-soft)] py-3'>
 												<span className='size-9 shrink-0'>
