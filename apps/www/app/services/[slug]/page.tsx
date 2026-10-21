@@ -139,7 +139,7 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 											{office.services.map((s) => (
 												<li key={s.name} id={`service-${slugify(s.name)}`} className='scroll-mt-[calc(var(--site-header-h)+1rem)]'>
 													<details className='group border border-[var(--rule)] open:border-[var(--ink)]'>
-														<summary className='flex cursor-pointer list-none items-start justify-between gap-4 p-4 [&::-webkit-details-marker]:hidden'>
+														<summary className='flex cursor-pointer list-none items-start justify-between gap-4 p-5 sm:px-6 [&::-webkit-details-marker]:hidden'>
 															<span className='min-w-0'>
 																<span className='block text-[15.5px] font-semibold leading-snug'>{s.name}</span>
 																<span className='mt-1 block text-[12.5px] text-[var(--ink-3)]'>
@@ -148,7 +148,7 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 															</span>
 															<CaretDownIcon size={16} className='mt-1 shrink-0 transition group-open:rotate-180' aria-hidden='true' />
 														</summary>
-														<div className='border-t border-[var(--rule-soft)] px-4 pb-4 pt-3 text-[14px] leading-6'>
+														<div className='border-t border-[var(--rule-soft)] px-5 pb-5 pt-4 text-[14px] leading-6 sm:px-6 sm:pb-6'>
 															{s.summary ? <p className='text-[var(--ink-2)]'>{s.summary}</p> : null}
 															{s.requirements.length ? (
 																<>
