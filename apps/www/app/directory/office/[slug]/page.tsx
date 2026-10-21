@@ -1,4 +1,4 @@
-import { ArrowUpRightIcon, CoinsIcon, EnvelopeSimpleIcon, FacebookLogoIcon, GlobeIcon, LifebuoyIcon, MapPinIcon } from '@phosphor-icons/react/ssr'
+import { ArrowUpRightIcon, CoinsIcon, EnvelopeSimpleIcon, FacebookLogoIcon, GlobeIcon, MapPinIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -8,6 +8,7 @@ import { directoryMeta, directoryOffice, directoryOffices, fieldOffices, headPho
 import { OfficeStructure, OrgNote } from '../../../_components/office-structure'
 import { HeadPortrait } from '../../../_components/head-portrait'
 import { budgetHref, hasCharter, officeBySlug } from '../../../_lib/services'
+import { DirectoryServices } from '../../../_components/directory-services'
 import { pageMeta } from '../../../_lib/seo'
 
 export function generateStaticParams() {
@@ -142,24 +143,22 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 						</ul>
 					</div>
 
-					{service ? (
-						<div>
-							<p className='mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Its services</p>
-							<ul className='mt-2 space-y-1.5 text-[14px] leading-6'>
-								<li className='flex gap-2'>
-									<LifebuoyIcon size={15} className='mt-1 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
-									<Link href={`/services/${service.slug}`} className={linkClass}>
-										{hasCharter(service)
-											? `${service.services.length} services and ${service.programs.length} programs, from its Citizen’s Charter`
-											: 'No Citizen’s Charter published; what its 2026 budget funds'}
-									</Link>
-								</li>
-							</ul>
-						</div>
-					) : null}
 					</aside>
 
 					<div className='min-w-0 [&>*:first-child]:mt-0'>
+
+				{service ? (
+					<DirectoryServices
+						services={hasCharter(service) ? service.services : []}
+						href={`/services/${service.slug}`}
+						base='/services'
+						note={
+							hasCharter(service)
+								? `From its Citizen’s Charter: what to bring, the fee and how long each takes${service.programs.length ? `; and ${service.programs.length} programs on its services page` : ''}.`
+								: 'No Citizen’s Charter published; its services page has what its 2026 budget funds it to do.'
+						}
+					/>
+				) : null}
 
 				{org ? <OfficeStructure org={org} /> : null}
 

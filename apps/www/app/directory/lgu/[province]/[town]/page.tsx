@@ -6,6 +6,8 @@ import { PlaceHeader } from '../../../../_components/directory-places'
 import { DirectoryDialog } from '../../../../_components/directory-dialog'
 import { barangayRows, emergencyMeta, lguEmail, localGovernments, localGroup, localLineage, townLines } from '../../../../_lib/directory'
 import { pageMeta } from '../../../../_lib/seo'
+import { DirectoryServices } from '../../../../_components/directory-services'
+import { lguByKey, lguHasCharter, lguHref } from '../../../../_lib/lgu-services'
 
 export function generateStaticParams() {
 	return localGovernments.flatMap((g) => g.units.map((u) => ({ province: g.slug, town: u.slug })))
@@ -37,6 +39,7 @@ export default async function TownPage({ params }: { params: Promise<{ province:
 	const barangays = barangayRows(province, town)
 	const listed = barangays.filter((b) => b.captain).length
 	const lineage = localLineage('mayor', province, town)
+	const lgu = lguByKey(`${province}/${town}`)
 
 	return (
 		<DirectoryDialog id={`${g.slug}/${u.slug}`} name={u.name}>
@@ -63,6 +66,8 @@ export default async function TownPage({ params }: { params: Promise<{ province:
 					<Lines lines={lines} empty='No town numbers found on an official page yet. The province’s lines are on its page.' />
 					<p className='mt-3 text-[12.5px] text-[var(--ink-3)]'>{emergencyMeta.note}</p>
 				</section>
+
+				{lgu ? <DirectoryServices services={lguHasCharter(lgu) ? lgu.services : []} href={lguHref(lgu)} base='/services/lgu' note={lgu ? (lguHasCharter(lgu) ? 'From its Citizen’s Charter: what to bring, the fee and how long each takes.' : (lgu.charterNote ?? 'No Citizen’s Charter of its own was found online.')) : ''} /> : null}
 
 				<section aria-labelledby='barangays' className='mt-14'>
 					<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>

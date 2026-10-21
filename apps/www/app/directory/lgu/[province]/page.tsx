@@ -6,6 +6,8 @@ import { PlaceHeader } from '../../../_components/directory-places'
 import { DirectoryDialog } from '../../../_components/directory-dialog'
 import { emergencyMeta, lguEmail, localGovernments, localGroup, localLineage, provinceLines } from '../../../_lib/directory'
 import { pageMeta } from '../../../_lib/seo'
+import { DirectoryServices } from '../../../_components/directory-services'
+import { lguByKey, lguHasCharter, lguHref } from '../../../_lib/lgu-services'
 
 export function generateStaticParams() {
 	return localGovernments.map((g) => ({ province: g.slug }))
@@ -27,6 +29,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 	const isProvince = g.kind === 'Province'
 	const lines = provinceLines(g.slug)
 	const lineage = isProvince ? localLineage('governor', g.slug) : []
+	const lgu = lguByKey(g.slug)
 
 	return (
 		<DirectoryDialog id={g.slug} name={g.name}>
@@ -55,6 +58,8 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 					<Lines lines={lines} empty='No province-wide numbers found on an official page yet.' />
 					<p className='mt-3 text-[12.5px] text-[var(--ink-3)]'>{emergencyMeta.note}</p>
 				</section>
+
+				{lgu ? <DirectoryServices services={lguHasCharter(lgu) ? lgu.services : []} href={lguHref(lgu)} base='/services/lgu' note={lgu ? (lguHasCharter(lgu) ? 'From its Citizen’s Charter: what to bring, the fee and how long each takes.' : (lgu.charterNote ?? 'No Citizen’s Charter of its own was found online.')) : ''} /> : null}
 
 				<section aria-labelledby='towns' className='mt-14'>
 					<h2 id='towns' className='text-[20px] font-extrabold'>
