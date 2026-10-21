@@ -184,9 +184,9 @@ function WithoutCharter() {
 									<p className='border-b border-[var(--ink)] pb-2 text-[13px] font-bold'>
 										{p.name} <span className='font-normal text-[var(--ink-mute)]'>· {inP.length}</span>
 									</p>
-									<ul className='grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+									<ul className='grid gap-x-14 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 										{inP.map((l) => (
-											<li key={l.key} className='flex min-w-0 gap-3 border-b border-[var(--rule-soft)] py-3'>
+											<li key={l.key} className='flex min-w-0 gap-3 border-b border-[var(--rule-soft)] py-5'>
 												<span className='size-9 shrink-0'>
 													<Seal l={l} size='sm' />
 												</span>
