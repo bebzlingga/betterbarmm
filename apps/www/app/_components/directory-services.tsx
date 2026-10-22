@@ -9,7 +9,7 @@ import { ServiceCards } from './service-cards'
    The Directory says who runs a place and how to reach it; this says what
    it gives the public, so neither page has to be left to learn the other. */
 
-const SHOWN = 8
+const SHOWN = 3
 
 export function DirectoryServices({ services, href, base, note }: { services: Service[]; href: string; base: string; note: string }) {
 	return (
@@ -25,7 +25,7 @@ export function DirectoryServices({ services, href, base, note }: { services: Se
 			<p className='mt-1 text-[13px] text-[var(--ink-3)]'>{note}</p>
 			{services.length ? (
 				<>
-					<ServiceCards services={services.slice(0, SHOWN)} base={base} />
+					<ServiceCards services={services.slice(0, SHOWN)} base={base} href={href} />
 					{services.length > SHOWN ? (
 						<p className='mt-4 text-right'>
 							<Link href={href} className='inline-flex items-center gap-1.5 text-[14px] font-semibold underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>

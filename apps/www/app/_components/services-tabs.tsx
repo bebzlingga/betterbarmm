@@ -14,7 +14,7 @@ const TABS = [
 export function ServicesTabs({ active, counts }: { active: 'regional' | 'lgu'; counts: Record<'regional' | 'lgu', number> }) {
 	return (
 		<nav aria-label='Programs and services' className='bb-container pt-8 lg:pt-10'>
-			<ul className='flex gap-1 border-b border-[var(--rule)]'>
+			<ul className='flex gap-8 border-b border-[var(--rule)]'>
 				{TABS.map(({ key, href, label, icon: Icon }) => {
 					const on = key === active
 					return (
@@ -22,7 +22,7 @@ export function ServicesTabs({ active, counts }: { active: 'regional' | 'lgu'; c
 							<Link
 								href={href}
 								aria-current={on ? 'page' : undefined}
-								className={`-mb-px inline-flex items-center gap-2 border-b-2 px-4 py-3 text-[14.5px] font-semibold transition ${
+								className={`-mb-px inline-flex items-center gap-2 border-b-2 py-3 text-[14.5px] font-semibold transition ${
 									on ? 'border-[var(--accent)] text-[var(--ink)]' : 'border-transparent text-[var(--ink-3)] hover:border-[var(--rule)] hover:text-[var(--ink)]'
 								}`}
 							>

@@ -22,11 +22,11 @@ export function Phone({ number }: { number: string }) {
 const LINE_ICON: Record<Line['kind'], Icon> = { drrm: SirenIcon, police: ShieldIcon, fire: FireIcon, health: FirstAidIcon, hall: HouseIcon, other: PhoneIcon }
 
 /** Emergency and service lines as cards: what the office is, its numbers, where the numbers were read. */
-export function Lines({ lines, empty }: { lines: Line[]; empty: string }) {
+export function Lines({ lines, empty, cols = 'sm:grid-cols-2 lg:grid-cols-3' }: { lines: Line[]; empty: string; cols?: string }) {
 	if (!lines.length) return <p className='mt-3 text-[13.5px] text-[var(--ink-3)]'>{empty}</p>
 	// Each card draws its own hairline, overlapping its neighbour's, so a row the cards do not fill shows the page, not a grey block.
 	return (
-		<ul className='mt-4 grid pt-px pl-px sm:grid-cols-2 lg:grid-cols-3'>
+		<ul className={`mt-4 grid pt-px pl-px ${cols}`}>
 			{lines.map((l) => {
 				const Glyph = LINE_ICON[l.kind]
 				return (
@@ -58,10 +58,10 @@ export function monthYear(d: string | null) {
 }
 
 /** A local government's email, with the page that prints it. */
-export function LguEmailBlock({ email }: { email: LguEmail | null }) {
+export function LguEmailBlock({ email, className = 'mt-8' }: { email: LguEmail | null; className?: string }) {
 	if (!email) return null
 	return (
-		<div className='mt-8'>
+		<div className={className}>
 			<p className='mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Email</p>
 			<ul className='space-y-1 text-[14px] leading-6'>
 				{email.emails.map((e) => (

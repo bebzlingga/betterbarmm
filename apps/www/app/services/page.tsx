@@ -174,11 +174,16 @@ function WithoutCharter() {
 				if (!list.length) return null
 				return (
 					<div key={g.status} className='mt-10'>
-						<h3 className={`${eyebrow} text-[var(--ink-3)]`}>
-							{g.title} <span className='text-[var(--ink-mute)]'>· {list.length}</span>
-						</h3>
-						<p className='mt-1 text-[13px] text-[var(--ink-mute)]'>{g.lead}</p>
-						<ul className='mt-4 border-t border-[var(--ink)]'>
+						{/* The offices with none follow the section's own lead, which already says so; only the others take a heading. */}
+						{g.status === 'none' ? null : (
+							<>
+								<h3 className={`${eyebrow} text-[var(--ink-3)]`}>
+									{g.title} <span className='text-[var(--ink-mute)]'>· {list.length}</span>
+								</h3>
+								<p className='mt-1 text-[13px] text-[var(--ink-mute)]'>{g.lead}</p>
+							</>
+						)}
+						<ul className={`${g.status === 'none' ? '' : 'mt-4 '}border-t border-[var(--ink)]`}>
 							{list.map((o) => (
 								<GapRow key={o.slug} o={o} />
 							))}

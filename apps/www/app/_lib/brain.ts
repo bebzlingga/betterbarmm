@@ -87,11 +87,11 @@ export function brain() {
 		{ id: 'w-election', label: 'Election', kind: 'workspace', note: 'The September 2026 parliamentary election: every party, every seat, every district race.', href: 'https://election.betterbarmm.com' },
 		{ id: 'w-lgu', label: 'Local Government', kind: 'workspace', note: 'Every province, town and barangay: who governs it, what it collects and spends, and how it was audited.', href: 'https://lgu.betterbarmm.com' },
 		{ id: 'w-procurement', label: 'Procurement', kind: 'workspace', note: 'What every BARMM office set out to buy on PhilGEPS since 2019, and who won the contracts.', href: 'https://procurement.betterbarmm.com' },
-		{ id: 'w-directory', label: 'Directory', kind: 'workspace', note: 'Who heads each regional office, how to reach it, who led it before, and every town’s emergency lines.', href: '/directory' },
+		{ id: 'w-directory', label: 'Directory', kind: 'workspace', note: 'Who heads each regional office, how to reach it, who led it before, every town’s emergency lines, and the first few services each office and town offers, each a link to it.', href: '/directory' },
 		{ id: 'w-incidents', label: 'Incident Watch', kind: 'workspace', note: 'Road crashes, shootings, drownings, fires and floods reported in the region, on a map.', href: '/accidents' },
 		{ id: 'w-places', label: 'Places', kind: 'workspace', note: 'Islands, lakes, mosques, falls and heritage sites: what is there, how to get there, where to stay.', href: '/places' },
 		{ id: 'w-crafts', label: 'Crafts', kind: 'workspace', note: 'The weaves, mats, brass and gongs of the region, who makes them and where to see them.', href: '/crafts' },
-		{ id: 'w-services', label: 'Programs & services', kind: 'workspace', note: 'What each regional office, province, city and town offers the public: who it is for, what to bring, the fee and how long it takes.', href: '/services' },
+		{ id: 'w-services', label: 'Programs & services', kind: 'workspace', note: 'What each regional office, province, city and town offers the public: who it is for, what to bring, the fee and how long it takes, with each place’s head, numbers and email beside it.', href: '/services' },
 		{ id: 'w-discover', label: 'Discover', kind: 'workspace', note: 'How the Bangsamoro came to be, how its government works, and the explainers.', href: '/discover' },
 
 		{ id: 'd-measures', label: 'Acts, bills & resolutions', kind: 'dataset', count: acts + bills + adopted + proposed, unit: 'measures', note: `${acts} acts, ${bills} bills, ${adopted} adopted and ${proposed} proposed resolutions, with authors and status.` },
@@ -172,14 +172,14 @@ export function brain() {
 		['d-lgu-charters', ['w-services', 'w-directory']],
 		['d-election', ['w-election']],
 		['d-lgus', ['w-lgu', 'w-directory']],
-		['d-officials', ['w-lgu', 'w-directory']],
+		['d-officials', ['w-lgu', 'w-directory', 'w-services']],
 		['d-finances', ['w-lgu']],
 		['d-audits', ['w-lgu', 'w-budget']],
 		['d-notices', ['w-procurement']],
 		['d-blacklist', ['w-procurement']],
 		['d-offices', ['w-directory']],
 		['d-field', ['w-directory']],
-		['d-lines', ['w-directory']],
+		['d-lines', ['w-directory', 'w-services']],
 		['d-places', ['w-places']],
 		['d-crafts', ['w-crafts']],
 		['d-incidents', ['w-incidents']],
@@ -194,7 +194,7 @@ export function brain() {
 		['w-directory', 'w-budget', 'Office ID'],
 		['w-directory', 'w-procurement', 'Office'],
 		['w-budget', 'w-legislation', 'Act number'],
-		['w-services', 'w-directory', 'Office ID'],
+		['w-services', 'w-directory', 'Office ID · town code'],
 		['w-services', 'w-lgu', 'Town code'],
 	]
 	const edges: BrainEdge[] = [
@@ -238,15 +238,15 @@ export function brain() {
 			const lgu = lguByKey(key)
 			const served = lgu && lguHasCharter(lgu) ? lgu.services.length : 0
 			const links = [
-				{ where: 'Directory', what: `Mayor, ${plural(barangayRows(g.slug, u.slug).length, 'barangay')}${lines ? `, ${plural(lines, 'emergency line')}` : ''}${email ? ', email' : ''}`, href: u.href },
+				{ where: 'Directory', what: `Mayor, ${plural(barangayRows(g.slug, u.slug).length, 'barangay')}${lines ? `, ${plural(lines, 'emergency line')}` : ''}${email ? ', email' : ''}${served ? ', its first services' : ''}`, href: u.href },
 				{ where: 'Local Government', what: 'Officials, finances, audits and history', href: u.lguHref },
-				...(lgu ? [{ where: 'Programs & services', what: served ? `${plural(served, 'service')} from its Citizen’s Charter` : 'No Citizen’s Charter online', href: lguHref(lgu) }] : []),
+				...(lgu ? [{ where: 'Programs & services', what: served ? `${plural(served, 'service')} from its Citizen’s Charter, with its mayor, numbers and email` : 'No Citizen’s Charter online; its mayor, numbers and email', href: lguHref(lgu) }] : []),
 				...(district ? [{ where: 'Election', what: `Votes in its province’s ${district} parliamentary district`, href: `${ELECTION}/results` }] : []),
 				...procurementLinks(own),
 				...(hits.length ? [{ where: 'Incident Watch', what: `${plural(hits.length, 'incident')} since 2019, ${n(dead)} dead`, href: '/accidents' }] : []),
 				...here.map((p) => ({ where: 'Places', what: p.name, href: `/places/${p.slug}` })),
 			]
-			const lit = ['jo', 'w-directory', 'w-lgu', 'd-lgus', 'd-officials', 'd-lines', 'd-finances', ...(district ? ['w-election', 'd-election'] : []), ...(notices ? ['w-procurement', 'd-notices'] : []), ...(hits.length ? ['w-incidents', 'd-incidents'] : []), ...(here.length ? ['w-places', 'd-places'] : []), ...(served ? ['w-services', 'd-lgu-charters'] : [])]
+			const lit = ['jo', 'w-directory', 'w-lgu', 'd-lgus', 'd-officials', 'd-lines', 'd-finances', ...(district ? ['w-election', 'd-election'] : []), ...(notices ? ['w-procurement', 'd-notices'] : []), ...(hits.length ? ['w-incidents', 'd-incidents'] : []), ...(here.length ? ['w-places', 'd-places'] : []), ...(lgu ? ['w-services', ...(served ? ['d-lgu-charters'] : [])] : [])]
 			return {
 				key: `town:${key}`,
 				kind: 'town' as const,
@@ -279,7 +279,7 @@ export function brain() {
 		const service = officeBySlug(o.slug)
 		const charter = service && hasCharter(service)
 		const links = [
-			{ where: 'Directory', what: `Head, contacts, structure${past ? `, ${plural(past, 'past head')}` : ''}`, href: `/directory/office/${o.slug}` },
+			{ where: 'Directory', what: `Head, contacts, structure${past ? `, ${plural(past, 'past head')}` : ''}${charter && service.services.length ? ', its first services' : ''}`, href: `/directory/office/${o.slug}` },
 			{ where: 'Budget', what: budgetOf ? 'Funded within its parent ministry’s budget' : 'Its appropriations, year by year', href: budgetHref({ slug: budgetOf ?? o.slug }) },
 			...(service
 				? [{ where: 'Programs & services', what: charter ? `${plural(service.services.length, 'service')} and ${plural(service.programs.length, 'program')}` : 'No Citizen’s Charter; what its budget funds', href: `/services/${service.slug}` }]
