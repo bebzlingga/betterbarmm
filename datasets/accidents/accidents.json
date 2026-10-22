@@ -1,6 +1,6 @@
 {
  "name": "Accidents in BARMM, as reported",
- "generatedAt": "2026-10-20",
+ "generatedAt": "2026-10-22",
  "since": "2019",
  "note": "Compiled from news reports: the outlets’ own sites, Google News’s index of them, and public Facebook posts that index carried. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.",
  "sources": {
@@ -10,6 +10,37 @@
   "barangays": "datasets/accidents/barangay-centres.json"
  },
  "incidents": [
+  {
+   "date": "2026-10-22",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Coast Guard seaman killed, another wounded as gunmen fire on PCG vehicle in Cotabato City",
+   "summary": "A Philippine Coast Guard seaman was killed and an apprentice seaman was wounded when two masked gunmen on a motorcycle fired into both sides of the vehicle carrying them and their station commander along Roman Vilo Street, Poblacion 6, Cotabato City, at noon on Thursday, 22 October 2026. Both were hit in the head; the seaman was declared dead on arrival at the Cotabato Regional and Medical Center. The commander was unhurt. Police recovered seven spent shells believed to be from a 9mm pistol; the gunmen fled toward the Texing and Washington area.",
+   "province": "Cotabato City",
+   "municipality": "Cotabato City",
+   "barangay": "Poblacion 6",
+   "deaths": 1,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2215,
+   "lon": 124.2543,
+   "placed": "barangay",
+   "sources": [
+    {
+     "outlet": "Facebook",
+     "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0qVFgECFa8M22rpi3HiDu25xFkVqoNRk7TksqkYN7H3RM5n5DG4HVBZkVJcPnFA1Dl&id=100068735708353",
+     "title": "UPDATE: Isa patay, isa sugatan sa pamamaril sa tatlong mga Coast Guard personnel sa Cotabato City",
+     "date": "2026-10-22"
+    }
+   ],
+   "id": "2026-10-22-cotabato-shooting",
+   "image": {
+    "url": "/accident-photos/2026-10-22-cotabato-shooting.jpg",
+    "outlet": "Facebook",
+    "href": "https://www.facebook.com/permalink.php?story_fbid=pfbid0qVFgECFa8M22rpi3HiDu25xFkVqoNRk7TksqkYN7H3RM5n5DG4HVBZkVJcPnFA1Dl&id=100068735708353"
+   }
+  },
   {
    "date": "2026-10-18",
    "type": "shooting",

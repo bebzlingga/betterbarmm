@@ -19,5 +19,26 @@
     "date": null
    }
   ]
+ },
+ {
+  "date": "2026-10-22",
+  "type": "shooting",
+  "title": "Coast Guard seaman killed, another wounded as gunmen fire on PCG vehicle in Cotabato City",
+  "summary": "A Philippine Coast Guard seaman was killed and an apprentice seaman was wounded when two masked gunmen on a motorcycle fired into both sides of the vehicle carrying them and their station commander along Roman Vilo Street, Poblacion 6, Cotabato City, at noon on Thursday, 22 October 2026. Both were hit in the head; the seaman was declared dead on arrival at the Cotabato Regional and Medical Center. The commander was unhurt. Police recovered seven spent shells believed to be from a 9mm pistol; the gunmen fled toward the Texing and Washington area.",
+  "province": "Cotabato City",
+  "municipality": "Cotabato City",
+  "barangay": "Poblacion 6",
+  "deaths": 1,
+  "injured": 1,
+  "missing": 0,
+  "vehicles": [],
+  "sources": [
+   {
+    "outlet": "Facebook",
+    "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0qVFgECFa8M22rpi3HiDu25xFkVqoNRk7TksqkYN7H3RM5n5DG4HVBZkVJcPnFA1Dl&id=100068735708353",
+    "title": "UPDATE: Isa patay, isa sugatan sa pamamaril sa tatlong mga Coast Guard personnel sa Cotabato City",
+    "date": "2026-10-22"
+   }
+  ]
  }
 ]
