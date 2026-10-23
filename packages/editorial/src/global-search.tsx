@@ -81,9 +81,10 @@ export function GlobalSearch({ base = '' }: { base?: string }) {
 			<dialog
 				ref={dialog}
 				aria-label='Search every workspace'
-				// A click on the backdrop lands on the dialog itself.
+				// A click on the backdrop lands on the dialog itself. It sits in the utility bar, whose
+				// semibold capitals it would otherwise inherit; titles and labels set their own weight.
 				onClick={(e) => e.target === e.currentTarget && dialog.current?.close()}
-				className='m-0 mx-auto mt-[12vh] w-[min(40rem,calc(100vw-2rem))] max-w-none border border-[var(--ink)] bg-[var(--paper)] p-0 text-[var(--ink)] normal-case tracking-normal shadow-[0_24px_60px_-20px_rgba(0,0,0,0.5)] backdrop:bg-black/45'
+				className='m-0 mx-auto mt-[12vh] w-[min(40rem,calc(100vw-2rem))] max-w-none border border-[var(--ink)] bg-[var(--paper)] p-0 text-[var(--ink)] font-normal normal-case tracking-normal shadow-[0_24px_60px_-20px_rgba(0,0,0,0.5)] backdrop:bg-black/45'
 			>
 				<label className='flex items-center gap-3 border-b border-[var(--rule)] px-4 py-3.5'>
 					<MagnifyingGlassIcon size={18} className='shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
@@ -119,7 +120,7 @@ export function GlobalSearch({ base = '' }: { base?: string }) {
 						))}
 					</ul>
 				) : (
-					<p className='px-4 py-5 text-[13px] text-[var(--ink-3)]'>
+					<p className='px-6 py-7 text-[13.5px] leading-[1.6] text-[var(--ink-3)]'>
 						{data ? 'Nothing by that name.' : 'Every workspace at once: towns and barangays, laws, members, budget and procurement offices, suppliers.'}
 					</p>
 				)}

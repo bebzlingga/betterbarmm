@@ -21,7 +21,7 @@ export default function AccidentsPage() {
 			{/* The band opens straight on the map's door — the same ground and
 			    seam the masthead would have drawn, with nothing else in it. */}
 			<section className='brand-bg bb-lattice relative overflow-hidden'>
-				<div className='bb-container relative w-full py-10 md:py-14'>
+				<div className='bb-container relative w-full py-14 md:py-20'>
 					<AccidentOpener />
 				</div>
 				<div className='bb-weave' aria-hidden='true' />

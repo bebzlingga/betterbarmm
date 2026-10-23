@@ -1,4 +1,4 @@
-import { BrainIcon, BuildingsIcon, LifebuoyIcon, MapPinAreaIcon, CheckSquareOffsetIcon, CoinsIcon, DiamondsFourIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon } from '@phosphor-icons/react/ssr'
+import { BrainIcon, BuildingsIcon, LifebuoyIcon, MapPinAreaIcon, CheckSquareOffsetIcon, CoinsIcon, DiamondsFourIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon, UmbrellaIcon } from '@phosphor-icons/react/ssr'
 import { GlobalSearch } from './global-search'
 import { SwitchCloser } from './switch-closer'
 
@@ -54,6 +54,7 @@ export type WorkspaceKey = (typeof WORKSPACES)[number]['key']
  *  site rather than a workspace of its own, listed from every workspace. */
 const PROJECTS = [
 	{ key: 'accidents', href: 'https://betterbarmm.com/accidents', label: 'Incident Watch', icon: SirenIcon },
+	{ key: 'preparedness', href: 'https://betterbarmm.com/preparedness', label: 'Preparedness', icon: UmbrellaIcon },
 	{ key: 'crafts', href: 'https://betterbarmm.com/crafts', label: 'Crafts', icon: DiamondsFourIcon },
 	{ key: 'places', href: 'https://betterbarmm.com/places', label: 'Places', icon: MapPinAreaIcon },
 	// A dialog, not a page: the landing site opens it over whatever page is open.

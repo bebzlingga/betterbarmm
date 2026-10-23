@@ -44,6 +44,7 @@ spent is not published by anyone, and is not here. See [Gaps](#what-is-not-here)
 | Programs & services | `datasets/services/` | small | 35 offices' programs and Citizen's Charter services |
 | Directory | `datasets/directory/` | small | Heads, past heads, field offices and phones of the 35 regional offices; emergency lines by town |
 | Crafts | `datasets/crafts/` | small | 60 crafts of the region in 11 kinds, from research, the BCPCH's Pusaka and the CCP Encyclopedia, with makers and honours, heritage status, places to buy, dated prices, festivals and free-licence photos |
+| Preparedness | `datasets/preparedness/` | 1.4 MB + tiles | Every barangay's land in Project NOAH's flood, landslide and storm surge hazard classes, its 2024 population, and emergency facilities from OpenStreetMap |
 | Latest news | `datasets/news/` | small | Headlines about the region from 19 October 2026, read from outlets' RSS feeds and Google News (`scripts/fetch_news.ts`), each linked to the outlet's own page (`scripts/resolve_links.py`) |
 | Travel guide | `packages/travel-data/` | — | **Written**, not captured |
 | Region primer | `packages/primer-data/` | — | **Written**, not captured |
@@ -350,6 +351,46 @@ All four are admin collections under the Directory workspace, so an editor can
 correct them and set an office's `checked` date. Barangay officials on the town
 pages come from DILG's directory through `@betterbarmm/lgu-data`; their
 contacts are not copied.
+
+---
+
+## Preparedness — `datasets/preparedness/`
+
+The data behind `/preparedness`, the disaster risk and preparedness map.
+
+- **`exposure.json`** — all 2,182 barangays (PSA 2023 PSGC boundaries, through
+  faeldon/philippines-json-maps, high resolution where the low-resolution files
+  drop barangays), each with its area, a point inside it, its bounds, and the km²
+  of it in each of Project NOAH's three hazard classes (1 low, 2 medium, 3 high):
+  flood for a 100-year rain, landslide (shallow, structurally controlled and debris
+  flow), and storm surge at Storm Surge Advisory 4. NOAH publishes by pre-2022
+  province: Maguindanao covers both Maguindanao provinces and Cotabato City, and
+  Cotabato the Special Geographic Area. NOAH has no flood model for Tawi-Tawi. A
+  few barangays sum to slightly over their area where NOAH's polygons of one class
+  overlap; the page caps them at 100%. Hazards are ODbL, so this file is too.
+- **`population.json`** — PSA's 2024 Census of Population by barangay, as PSA
+  prints it beside each code in the PSGC, read from the psgc R package
+  (github.com/yng-me/psgc, MIT) because psa.gov.ph refuses automated requests;
+  joined on the 10-digit code: 2,179 of 2,182, summing to PSA's 2024 regional
+  total without Sulu. The three without a figure are Special Geographic Area
+  barangays PSA has since moved between towns. Built by `build_population.py`;
+  PSA's own count of the region's barangays is 2,185, three more than the
+  boundary file draws.
+- **`facilities.json`** — OpenStreetMap (ODbL) through the Overpass API: schools,
+  health centres and clinics, hospitals, police and fire stations, disaster risk
+  reduction offices and the one evacuation centre it names, each placed in the
+  barangay that holds it and linked to its record. No official list of the
+  region's evacuation centres is open: DILG's 2023 master list with coordinates
+  is released through FOI, and the DOH health facility registry refuses automated
+  access. Schools stand in for the sites LGUs most often designate, and the page
+  says a school shown is not thereby a designated centre.
+
+The map's geometry is in `apps/www/public/preparedness/`: `hazards.pmtiles`
+(NOAH's zones cut to the region, the smallest shapes dropped at low zooms) and
+`barangays.pmtiles` (every barangay, carrying its shares). Rebuilt by
+`scripts/build_hazards.py` (shapely, pyshp, tippecanoe) from NOAH's downloads and
+`scripts/build_facilities.py` (shapely) from an Overpass read and PSA's file; the
+raw downloads are not committed.
 
 ---
 

@@ -12,12 +12,12 @@ import { MapTrifoldIcon } from '@phosphor-icons/react/ssr'
 export function AccidentOpener() {
 	return (
 		<div className='flex flex-wrap items-center justify-between gap-8'>
-			<div className='max-w-[38rem]'>
+			<div className='max-w-[48rem]'>
 				<p className='bb-label'>Interactive map</p>
-				<h1 className='mt-2 text-[clamp(1.6rem,3vw,2.4rem)] font-extrabold leading-[1.1] tracking-[-0.025em] text-[var(--ink)]'>
+				<h1 className='mt-2 text-[clamp(2.1rem,4.4vw,3.4rem)] font-extrabold leading-[1.05] tracking-[-0.025em] text-[var(--ink)]'>
 					Every incident on one map, with the report behind each mark.
 				</h1>
-				<p className='mt-2 text-[13.5px] leading-[1.7] text-[var(--ink-2)]'>
+				<p className='mt-3 text-[15.5px] leading-[1.65] text-[var(--ink-2)]'>
 					Heat for where it keeps happening; dots coloured by kind and sized by deaths. Filters, details and each report down the left.
 				</p>
 			</div>

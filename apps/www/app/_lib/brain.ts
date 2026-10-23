@@ -70,6 +70,8 @@ export function brain() {
 	const places = read<{ generatedAt: string; items: { slug: string; name: string; municipality: string; area: string }[] }>('places/places.json')
 	const stays = read<{ stays: unknown[] }>('places/stays.json').stays.length
 	const crafts = read<{ generatedAt: string; items: unknown[] }>('crafts/crafts.json')
+	const exposure = read<{ generatedAt: string; barangays: unknown[] }>('preparedness/exposure.json')
+	const facilitiesFile = read<{ generatedAt: string; facilities: unknown[] }>('preparedness/facilities.json')
 	const accidents = read<{ generatedAt: string; incidents: { province: string; municipality: string | null; deaths: number }[] }>('accidents/accidents.json')
 	const audits = read<{ generatedAt: string; reports: unknown[] }>('coa/audit-reports.json')
 	const finances = read<Record<string, unknown>>('lgu/finances.json')
@@ -89,6 +91,7 @@ export function brain() {
 		{ id: 'w-procurement', label: 'Procurement', kind: 'workspace', note: 'What every BARMM office set out to buy on PhilGEPS since 2019, and who won the contracts.', href: 'https://procurement.betterbarmm.com' },
 		{ id: 'w-directory', label: 'Directory', kind: 'workspace', note: 'Who heads each regional office, how to reach it, who led it before, every town’s emergency lines, and the first few services each office and town offers, each a link to it.', href: '/directory' },
 		{ id: 'w-incidents', label: 'Incident Watch', kind: 'workspace', note: 'Road crashes, shootings, drownings, fires and floods reported in the region, on a map.', href: '/accidents' },
+		{ id: 'w-preparedness', label: 'Preparedness', kind: 'workspace', note: 'Flood, landslide and storm surge hazard for every barangay, from Project NOAH, and the evacuation sites, hospitals and offices nearest each one.', href: '/preparedness' },
 		{ id: 'w-places', label: 'Places', kind: 'workspace', note: 'Islands, lakes, mosques, falls and heritage sites: what is there, how to get there, where to stay.', href: '/places' },
 		{ id: 'w-crafts', label: 'Crafts', kind: 'workspace', note: 'The weaves, mats, brass and gongs of the region, who makes them and where to see them.', href: '/crafts' },
 		{ id: 'w-services', label: 'Programs & services', kind: 'workspace', note: 'What each regional office, province, city and town offers the public: who it is for, what to bring, the fee and how long it takes, with each place’s head, numbers and email beside it.', href: '/services' },
@@ -110,6 +113,8 @@ export function brain() {
 		{ id: 'd-places', label: 'Places & stays', kind: 'dataset', count: places.items.length + stays, unit: 'places', date: places.generatedAt, note: `${places.items.length} places and ${stays} places to stay, each traced to its sources.` },
 		{ id: 'd-crafts', label: 'Crafts', kind: 'dataset', count: crafts.items.length, unit: 'crafts', date: crafts.generatedAt, note: 'Textiles, mats, brass, wood and gongs, with their makers and where to see them.' },
 		{ id: 'd-incidents', label: 'Incident reports', kind: 'dataset', count: accidents.incidents.length, unit: 'incidents', date: accidents.generatedAt, note: 'One record per incident since 2019, every report linked, placed on its barangay where named.' },
+		{ id: 'd-hazards', label: 'Hazard exposure', kind: 'dataset', count: exposure.barangays.length, unit: 'barangays', date: exposure.generatedAt, note: 'Each barangay’s land in each of NOAH’s flood, landslide and storm surge hazard classes, with its 2020 population.' },
+		{ id: 'd-facilities', label: 'Emergency facilities', kind: 'dataset', count: facilitiesFile.facilities.length, unit: 'facilities', date: facilitiesFile.generatedAt, note: 'Evacuation sites, schools, hospitals, health centres, police, fire and disaster risk reduction offices, each placed in its barangay.' },
 		{ id: 'd-charters', label: 'Regional Citizen’s Charters', kind: 'dataset', count: offerings.length, unit: 'services & programs', note: `The services and programs of the ${new Set(offerings.map((o) => o.office.slug)).size} regional offices that publish a Citizen’s Charter, each with its requirements, fee and time.` },
 		{ id: 'd-lgu-charters', label: 'LGU Citizen’s Charters', kind: 'dataset', count: lgus.reduce((k, l) => k + (lguHasCharter(l) ? l.services.length : 0), 0), unit: 'services', note: `The services of the ${lgus.filter(lguHasCharter).length} provinces, cities and towns whose charters are online; the other ${lgus.filter((l) => !lguHasCharter(l)).length} have none.` },
 		{ id: 'd-primer', label: 'History primer', kind: 'dataset', count: discoverBarmmTopics.length, unit: 'chapters', note: 'The region’s story from the sultanates to the transition, with dated timelines.' },
@@ -133,6 +138,8 @@ export function brain() {
 		{ id: 's-pna', label: 'Philippine News Agency', kind: 'source', note: 'The government’s news agency, one of the outlets incidents are read from.' },
 		{ id: 's-dot', label: 'Department of Tourism', kind: 'source', note: 'Its own photographs of the region’s destinations, government works.' },
 		{ id: 's-museum', label: 'National Museum', kind: 'source', note: 'Archaeological sites and their photographs.' },
+		{ id: 's-noah', label: 'Project NOAH', kind: 'source', note: 'The University of the Philippines’ flood, landslide and storm surge hazard maps, open under the ODbL.' },
+		{ id: 's-osm', label: 'OpenStreetMap', kind: 'source', note: 'Volunteer-mapped facilities, used where the official registers are not open.' },
 		{ id: 's-commons', label: 'Wikimedia Commons', kind: 'source', note: 'Freely licensed photographs, each credited to its author.' },
 		{ id: 's-scholars', label: 'Histories & laws', kind: 'source', note: 'The Organic Law, peace agreements and published histories behind the primer.' },
 	]
@@ -145,7 +152,9 @@ export function brain() {
 		['s-parliament', ['d-measures', 'd-code', 'd-appropriations']],
 		['s-comelec', ['d-election', 'd-officials']],
 		['s-dilg', ['d-officials', 'd-lgus']],
-		['s-psa', ['d-lgus']],
+		['s-psa', ['d-lgus', 'd-hazards']],
+		['s-noah', ['d-hazards']],
+		['s-osm', ['d-facilities']],
 		['s-dbm', ['d-finances']],
 		['s-coa', ['d-audits', 'd-finances']],
 		['s-philgeps', ['d-notices', 'd-field']],
@@ -183,6 +192,8 @@ export function brain() {
 		['d-places', ['w-places']],
 		['d-crafts', ['w-crafts']],
 		['d-incidents', ['w-incidents']],
+		['d-hazards', ['w-preparedness']],
+		['d-facilities', ['w-preparedness']],
 		['d-primer', ['w-discover']],
 	]
 	const joins: [string, string, string][] = [
@@ -191,6 +202,7 @@ export function brain() {
 		['w-lgu', 'w-procurement', 'Town code'],
 		['w-lgu', 'w-incidents', 'Town code'],
 		['w-lgu', 'w-places', 'Town'],
+		['w-lgu', 'w-preparedness', 'Barangay code'],
 		['w-directory', 'w-budget', 'Office ID'],
 		['w-directory', 'w-procurement', 'Office'],
 		['w-budget', 'w-legislation', 'Act number'],
