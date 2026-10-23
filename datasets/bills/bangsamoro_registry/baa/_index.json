@@ -30,7 +30,7 @@
           "municipality_lgu": 15,
           "symbols_identity": 12,
           "labor_social": 11,
-          "priority_code": 5,
+          "priority_code": 6,
           "elections_districting": 6,
           "governance_other": 1
         }
@@ -58,7 +58,7 @@
         }
       ],
       "priority_codes": {
-        "mandated_by": "Parliament's own site counts 5 priority codes, all enacted: the Administrative, Civil Service, Education, Electoral and Local Governance Codes.",
+        "mandated_by": "The Organic Law mandates 7 priority codes; 6 are enacted, as the Office of the Chief Minister's farewell to the BTA on 23 October 2026 ('94 laws | 6/7 priority codes') counts them: the Administrative, Civil Service, Education, Electoral and Local Governance Codes and the Indigenous Peoples Rights Act. Parliament's own site counted 5, leaving out the Indigenous Peoples law.",
         "codes": [
           {
             "code": "Education Code",
@@ -89,9 +89,21 @@
             "baa": 49,
             "date": "2023-09-28",
             "status": "Enacted"
+          },
+          {
+            "code": "Indigenous Peoples Rights Act",
+            "baa": 64,
+            "date": "2024-12-10",
+            "status": "Enacted"
+          },
+          {
+            "code": "Revenue Code",
+            "baa": null,
+            "date": null,
+            "status": "Not enacted: Bill 286, filed in 2024, was still pending when the BTA held its final session"
           }
         ],
-        "note": "The Organic Law also calls for a Revenue Code, which Parliament does not count among its priority codes. Bill 286, filed in 2024, was still unenacted as of August 2026."
+        "note": "The Revenue Code is the seventh and the only one not enacted by the end of the transition. Bill 286, filed in 2024, was still unenacted as of October 2026."
       },
       "amendment_graph": {
         "14": [
@@ -792,6 +804,7 @@
       "date_ratified": "2024-12-10",
       "status": "IN FORCE",
       "tags": [
+        "priority_code",
         "labor_social"
       ]
     },

@@ -1,7 +1,64 @@
 {
  "source": "https://parliament.bangsamoro.gov.ph/proposed-resolutions/",
- "generated": "2026-10-14",
+ "generated": "2026-10-23",
  "measures": [
+  {
+   "number": 829,
+   "title": "A RESOLUTION URGING CHIEF MINISTER ABDULRAOF A. MACACUA OF THE BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO TO UNDERTAKE IMMEDIATE FUEL SUPPLY AND CONSUMER RELIEF MEASURES TO MITIGATE THE IMPACT OF HIGH PETROLEUM AND TRANSPORTATION COSTS ON THE PEOPLE OF TAWI-TAWI, CONSISTENT WITH THE DEREGULATED NATURE OF THE DOWNSTREAM OIL INDUSTRY",
+   "url": "https://parliament.bangsamoro.gov.ph/proposes-reso-22/a-resolution-urging-chief-minister-abdulraof-a-macacua-of-the-bangsamoro-autonomous-region-in-muslim-mindanao-to-undertake-immediate-fuel-supply-and-consumer-relief-measures-to-mitigate-the-impact-o-2/",
+   "status": "Simple Resolution",
+   "as_of": "10/05/2026",
+   "session": "fourth-regular-session-2025",
+   "principal_authors": [
+    "LIM, JOHN ANTHONY L.",
+    "LORENA, JOSE I."
+   ],
+   "co_authors": [
+    "SEMA, ROMEO K.",
+    "SINOLINDING, KADIL M., JR.",
+    "PARCASIO, RANDOLPH C.",
+    "ANAYATIN, SUSANA S.",
+    "MISUARI, ABDULKARIM T."
+   ],
+   "history": [
+    "Filed – 9/30/2026",
+    "Enhanced – 10/1/2026",
+    "Enhanced – 10/5/2026",
+    "Deferred – 10/5/2026",
+    "Deferred – 10/6/2026 (Resumption)",
+    "Deferred – 10/7/2026 (Resumption)",
+    "Deferred – 10/8/2026 (Resumption)",
+    "Deferred – 10/12/2026 (Resumption)",
+    "Deferred – 10/13/2026 (Resumption)",
+    "Deferred – 10/14/2026 (Resumption)",
+    "Deferred – 10/19/2026 (Resumption)",
+    "Deferred – 10/20/2026 (Resumption)"
+   ],
+   "committee_referrals": ""
+  },
+  {
+   "number": 831,
+   "title": "A RESOLUTION REQUESTING THE AD HOC COMMITTEE FOR THE PREPARATION OF BANGSAMORO TRANSITION AUTHORITY TRANSITION REPORT TO PRESENT A COPY OF THE DRAFT TRANSITION REPORT TO THE PARLIAMENT",
+   "url": "https://parliament.bangsamoro.gov.ph/proposes-reso-22/a-resolution-requesting-the-ad-hoc-committee-for-the-preparation-of-bangsamoro-transition-authority-transition-report-to-present-a-copy-of-the-draft-transition-report-to-the-parliament/",
+   "status": "Referred to a Committee",
+   "as_of": "10/12/2026",
+   "session": "fourth-regular-session-2025",
+   "principal_authors": [
+    "DUMAMA-ALBA, SHA ELIJAH B.",
+    "HASHIM, ABDULLAH B.",
+    "GAYAK, AMIRODDIN Y.",
+    "EBIL, MUHAMMAD NADZIR S.",
+    "GUERRA, EDUARD U.",
+    "HADJI ABDULLAH, KHALID M.",
+    "UY-OYOD, SITTIE FAHANIE S."
+   ],
+   "co_authors": [],
+   "history": [
+    "Filed – 10/8/2026",
+    "Referred to the Committee on Rules – 10/12/2026 (Resumption)"
+   ],
+   "committee_referrals": "Committee on Rules"
+  },
   {
    "number": 826,
    "title": "RESOLUTION URGING THE BANGSAMORO GOVERNMENT TO FACILITATE AND SUPPORT THE ESTABLISHMENT OF A LOCAL HEALTH INSURANCE OFFICE (LHIO) IN THE SPECIAL GEOGRAPHIC AREA (SGA) UNDER THE SUPERVISION OF THE PHILHEALTH REGIONAL OFFICE–BARMM",
@@ -62,7 +119,8 @@
     "Deferred – 10/6/2026 (Resumption)",
     "Deferred – 10/7/2026 (Resumption)",
     "Deferred – 10/8/2026 (Resumption)",
-    "Deferred – 10/12/2026 (Resumption)"
+    "Deferred – 10/12/2026 (Resumption)",
+    "Deferred – 10/13/2026 (Resumption)"
    ],
    "committee_referrals": ""
   },

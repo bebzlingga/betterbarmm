@@ -43,7 +43,7 @@ spent is not published by anyone, and is not here. See [Gaps](#what-is-not-here)
 | Accidents | `datasets/accidents/` | small | Accidents and shootings, from news reports; 2019 on |
 | Programs & services | `datasets/services/` | small | 35 offices' programs and Citizen's Charter services |
 | Directory | `datasets/directory/` | small | Heads, past heads, field offices and phones of the 35 regional offices; emergency lines by town |
-| Crafts | `datasets/crafts/` | small | 52 crafts of the region in 11 kinds, from research and the BCPCH's Pusaka, with makers, festivals and free-licence photos |
+| Crafts | `datasets/crafts/` | small | 60 crafts of the region in 11 kinds, from research, the BCPCH's Pusaka and the CCP Encyclopedia, with makers and honours, heritage status, places to buy, dated prices, festivals and free-licence photos |
 | Latest news | `datasets/news/` | small | Headlines about the region from 19 October 2026, read from outlets' RSS feeds and Google News (`scripts/fetch_news.ts`), each linked to the outlet's own page (`scripts/resolve_links.py`) |
 | Travel guide | `packages/travel-data/` | — | **Written**, not captured |
 | Region primer | `packages/primer-data/` | — | **Written**, not captured |
@@ -355,7 +355,19 @@ contacts are not copied.
 
 ## Crafts — `datasets/crafts/`
 
-52 crafts. 17 came from research on 17 October 2026; 35 more, and makers and
+60 crafts. On 23 October 2026 each gained, where a source gives it: makers'
+honours (`makers[].honour`: GAMABA from the proclamations, BCPCH Cultural
+Master 2024) and towns; `heritage` (a National Living Treasure craft or art, a
+BCPCH School of Living Traditions, the NCCA intangible heritage inventory as
+transcribed on Wikipedia and cited so, or an at-risk statement); `buy`, places
+to buy with the date of their source, those outside BARMM marked so; `prices`,
+dated, replacing the single `price`; and `spend`, public money on it from
+PhilGEPS. `markets` holds fairs and shops that sell crafts without naming
+which. 8 crafts were added: monom, tubao, pira, Cotabato brassware, water
+hyacinth craft, lakub, the Maranao sedge mat and malong a andon. The site maps
+each craft's towns with the accident data's town centres
+(`datasets/accidents/municipality-centres.json`) and links them to the
+Directory. The first 52: 17 came from research on 17 October 2026; 35 more, and makers and
 page citations for many of the first 17, from *Pusaka: Embodying Prestige of
 the BARMM’s Cultural Properties*, the Bangsamoro Commission for the
 Preservation of Cultural Heritage’s coffee-table book (PDF posted February

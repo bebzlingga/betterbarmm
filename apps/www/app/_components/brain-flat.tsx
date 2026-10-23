@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowsInIcon, BrainIcon, MinusIcon, PlusIcon } from '@phosphor-icons/react'
+import { ArrowsInIcon, BrainIcon, CircleDashedIcon, MinusIcon, PlusIcon, TreeStructureIcon } from '@phosphor-icons/react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { BrainEdge, BrainNode } from '../_lib/brain'
 
@@ -10,6 +10,8 @@ import type { BrainEdge, BrainNode } from '../_lib/brain'
    The 2D view beside the globe: the same rings seen from above —
    Jo at the centre, the workspaces, the datasets, the sources —
    with the links bowed toward the centre and pulses running in.
+   Or, at the toggle, laid out in columns: Jo on the left, then the
+   workspaces, the datasets and the sources, the pulses running in to her.
    It shares the globe's props, so hover, pick and follow work the
    same on either.
    ============================================================ */
@@ -18,22 +20,40 @@ const C = 500
 const RADIUS = { jo: 0, workspace: 175, dataset: 318, source: 448 } as const
 const ORDER = ['w-legislation', 'w-budget', 'w-directory', 'w-services', 'w-procurement', 'w-lgu', 'w-election', 'w-incidents', 'w-places', 'w-crafts', 'w-discover']
 
-type Placed = BrainNode & { x: number; y: number; a: number }
+type Layout = 'rings' | 'columns'
+/** A node where it sits, and where its label goes. */
+type Placed = BrainNode & { x: number; y: number; a: number; lx: number; ly: number; anchor: 'start' | 'middle' | 'end' }
 
 const at = (r: number, a: number) => ({ x: C + r * Math.cos(a), y: C + r * Math.sin(a) })
 const mean = (as: number[]) => Math.atan2(as.reduce((s, a) => s + Math.sin(a), 0), as.reduce((s, a) => s + Math.cos(a), 0))
 
+/** A node's radius as drawn: a dataset grows with its count. */
+const radius = (n: BrainNode) => (n.kind === 'dataset' && n.count ? Math.min(16, SIZE.dataset + Math.log10(n.count) * 2) : SIZE[n.kind])
+
 /** Workspaces evenly round the circle; each outer ring ordered by what it feeds, then spread evenly in that order. */
-function layout(nodes: BrainNode[], edges: BrainEdge[]): Map<string, Placed> {
+function rings(nodes: BrainNode[], edges: BrainEdge[]): Map<string, Placed> {
 	const placed = new Map<string, Placed>()
+	// A ring node's label points away from the centre; a workspace's sits under it.
+	const put = (n: BrainNode, a: number, x: number, y: number) => {
+		const r = radius(n)
+		const outer = n.kind === 'dataset' || n.kind === 'source'
+		const c = Math.cos(a)
+		placed.set(n.id, {
+			...n, a, x, y,
+			lx: outer ? x + c * (r + 8) : x,
+			ly: outer ? y + Math.sin(a) * (r + 8) + 4 : y + r + 16,
+			anchor: outer ? (c > 0.2 ? 'start' : c < -0.2 ? 'end' : 'middle') : 'middle',
+		})
+	}
 	const start = -Math.PI / 2
 	const ws = ORDER.map((id) => nodes.find((n) => n.id === id)!).filter(Boolean)
 	ws.forEach((n, i) => {
 		const a = start + (i / ws.length) * Math.PI * 2
-		placed.set(n.id, { ...n, a, ...at(RADIUS.workspace, a) })
+		const p = at(RADIUS.workspace, a)
+		put(n, a, p.x, p.y)
 	})
 	const jo = nodes.find((n) => n.kind === 'jo')!
-	placed.set(jo.id, { ...jo, a: 0, x: C, y: C })
+	put(jo, 0, C, C)
 	for (const kind of ['dataset', 'source'] as const) {
 		const ring = nodes.filter((n) => n.kind === kind)
 		const wanted = ring.map((n) => {
@@ -44,14 +64,49 @@ function layout(nodes: BrainNode[], edges: BrainEdge[]): Map<string, Placed> {
 		wanted.sort((p, q) => p.a - q.a)
 		wanted.forEach(({ n }, i) => {
 			const a = start + ((i + 0.5) / wanted.length) * Math.PI * 2
-			placed.set(n.id, { ...n, a, ...at(RADIUS[kind], a) })
+			const p = at(RADIUS[kind], a)
+			put(n, a, p.x, p.y)
 		})
 	}
 	return placed
 }
 
-/** A link bowed toward the centre, so the rings read as layers rather than spokes. */
-function curve(p: Placed, q: Placed, kind: BrainEdge['kind']): string {
+/* In columns, from Jo on the left out to the sources on the right. Each column is
+   ordered by where what it feeds sits, so the links cross as little as they can. */
+const COL = { jo: 0, workspace: 280, dataset: 640, source: 1000 } as const
+const TALL = 720
+function columns(nodes: BrainNode[], edges: BrainEdge[]): Map<string, Placed> {
+	const placed = new Map<string, Placed>()
+	const put = (n: BrainNode, y: number) => {
+		const x = COL[n.kind]
+		const r = radius(n)
+		// Datasets and sources are labelled to their right, a workspace under it.
+		const side = n.kind === 'source' || n.kind === 'dataset' ? 'start' : 'middle'
+		placed.set(n.id, { ...n, a: 0, x, y, lx: side === 'start' ? x + r + 8 : x, ly: side === 'middle' ? y + r + 16 : y + 4, anchor: side })
+	}
+	const spread = (list: BrainNode[]) => list.forEach((n, i) => put(n, ((i + 0.5) / list.length) * TALL))
+	spread(ORDER.map((id) => nodes.find((n) => n.id === id)!).filter(Boolean))
+	put(nodes.find((n) => n.kind === 'jo')!, TALL / 2)
+	for (const kind of ['dataset', 'source'] as const) {
+		const col = nodes.filter((n) => n.kind === kind)
+		const y = (n: BrainNode) => {
+			const ys = edges.filter((e) => e.from === n.id && placed.has(e.to)).map((e) => placed.get(e.to)!.y)
+			return ys.length ? ys.reduce((s, v) => s + v, 0) / ys.length : TALL / 2
+		}
+		spread(col.map((n) => ({ n, y: y(n) })).sort((p, q) => p.y - q.y).map((p) => p.n))
+	}
+	return placed
+}
+
+/** A link bowed toward the centre, so the rings read as layers rather than spokes; in columns, an S from one to the next. */
+function curve(p: Placed, q: Placed, kind: BrainEdge['kind'], mode: Layout): string {
+	const f = (v: number) => v.toFixed(1)
+	if (mode === 'columns') {
+		// A join runs between two workspaces in the same column: an arc out toward Jo.
+		if (kind === 'join') return `M${f(p.x)},${f(p.y)} Q${f(p.x - 40 - Math.abs(q.y - p.y) * 0.35)},${f((p.y + q.y) / 2)} ${f(q.x)},${f(q.y)}`
+		const mx = (p.x + q.x) / 2
+		return `M${f(p.x)},${f(p.y)} C${f(mx)},${f(p.y)} ${f(mx)},${f(q.y)} ${f(q.x)},${f(q.y)}`
+	}
 	const bend = kind === 'join' ? 0.35 : 0.82
 	const mx = C + ((p.x + q.x) / 2 - C) * bend
 	const my = C + ((p.y + q.y) / 2 - C) * bend
@@ -70,19 +125,19 @@ type Props = {
 	onPick: (id: string | null) => void
 	/** Drawn above the zoom buttons: the 3D / 2D switch. */
 	toolbar?: React.ReactNode
-	/** Everything a pick reaches; the view glides to frame it. */
-	chain?: Set<string> | null
 }
 
-/** The whole map, and how far in and out it may go. */
-const HOME = { x: -90, y: 0, w: 1180, h: 1000 }
-const CLOSEST = HOME.w / 6
-const FARTHEST = HOME.w * 1.3
+/** The whole map in each layout; how far in and out it may go follows from it. */
+const HOMES = { rings: { x: -90, y: 0, w: 1180, h: 1000 }, columns: { x: -110, y: -50, w: 1340, h: TALL + 110 } }
 
-export function BrainFlat({ nodes, edges, lit, edgeLit, picked, chain, onHover, onPick, toolbar }: Props) {
-	const placed = useMemo(() => layout(nodes, edges), [nodes, edges])
+export function BrainFlat({ nodes, edges, lit, edgeLit, picked, onHover, onPick, toolbar }: Props) {
+	const [mode, setMode] = useState<Layout>('rings')
+	const HOME = HOMES[mode]
+	const CLOSEST = HOME.w / 6
+	const FARTHEST = HOME.w * 1.3
+	const placed = useMemo(() => (mode === 'rings' ? rings : columns)(nodes, edges), [nodes, edges, mode])
 	const svg = useRef<SVGSVGElement>(null)
-	const [vb, setVb] = useState(HOME)
+	const [vb, setVb] = useState(HOMES.rings)
 	const drag = useRef<{ x: number; y: number; moved: boolean } | null>(null)
 	const dragged = useRef(false)
 
@@ -98,9 +153,9 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, chain, onHover, 
 	   and every frame the view eases a little closer to it, so nothing jumps;
 	   a drag moves both at once, so the map stays under the pointer. */
 	const vbRef = useRef(vb)
-	const goal = useRef(HOME)
+	const goal = useRef(HOMES.rings)
 	const raf = useRef(0)
-	const show = (v: typeof HOME) => {
+	const show = (v: typeof HOMES.rings) => {
 		vbRef.current = v
 		setVb(v)
 	}
@@ -124,7 +179,7 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, chain, onHover, 
 		}
 		raf.current = requestAnimationFrame(step)
 	}
-	const glideTo = (to: typeof HOME) => {
+	const glideTo = (to: typeof HOMES.rings) => {
 		goal.current = to
 		run()
 	}
@@ -150,54 +205,12 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, chain, onHover, 
 		[],
 	)
 
-	// A pick frames its chain; clearing it goes back to the whole map.
+	// A pick lights its chain where the view already is; only a change of layout moves the view, back to the whole map.
 	useEffect(() => {
-		if (!chain) {
-			if (!picked) glideTo(HOME)
-			return
-		}
-		const pts = [...chain].map((id) => placed.get(id)).filter(Boolean) as Placed[]
-		if (pts.length < 2 || !svg.current) return
-		// Each node's box with its label, as the label is drawn: beside an outer node, under a workspace.
-		let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity
-		for (const n of pts) {
-			const r = n.kind === 'jo' ? 34 : n.kind === 'workspace' ? 15 : 16
-			const outer = n.kind === 'dataset' || n.kind === 'source'
-			const tw = n.label.length * (n.kind === 'workspace' ? 8.2 : 6.6) + 6
-			let lx0 = n.x - r, lx1 = n.x + r
-			if (outer) {
-				const lx = n.x + Math.cos(n.a) * (r + 8)
-				const c = Math.cos(n.a)
-				if (c > 0.2) lx1 = Math.max(lx1, lx + tw)
-				else if (c < -0.2) lx0 = Math.min(lx0, lx - tw)
-				else {
-					lx0 = Math.min(lx0, lx - tw / 2)
-					lx1 = Math.max(lx1, lx + tw / 2)
-				}
-			} else if (n.kind === 'workspace') {
-				lx0 = Math.min(lx0, n.x - tw / 2)
-				lx1 = Math.max(lx1, n.x + tw / 2)
-			}
-			x0 = Math.min(x0, lx0)
-			x1 = Math.max(x1, lx1)
-			y0 = Math.min(y0, n.y - r - 14)
-			y1 = Math.max(y1, n.y + r + (n.kind === 'workspace' ? 22 : 14))
-		}
-		// Fitted to the map's own size on screen, clear of what is laid over it: the toggle at the
-		// top, the controls on the right and the legend at the foot.
-		const el = svg.current.getBoundingClientRect()
-		const inset = { top: 64, right: 76, bottom: 60, left: 28 }
-		const bw = x1 - x0
-		const bh = y1 - y0
-		const scale = Math.min((el.width - inset.left - inset.right) / bw, (el.height - inset.top - inset.bottom) / bh, el.width / CLOSEST)
-		const w = el.width / scale
-		const h = el.height / scale
-		const x = x0 - inset.left / scale - ((el.width - inset.left - inset.right) / scale - bw) / 2
-		const y = y0 - inset.top / scale - ((el.height - inset.top - inset.bottom) / scale - bh) / 2
-		glideTo({ x, y, w, h })
+		glideTo(HOMES[mode])
 		// glideTo only moves refs, so it need not be a dependency.
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [chain, picked, placed])
+	}, [mode])
 
 	// The wheel zooms toward the pointer. Not passive, so the dialog does not scroll instead.
 	useEffect(() => {
@@ -268,18 +281,18 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, chain, onHover, 
 			</filter>
 		</defs>
 
-		{/* The rings themselves, faint. */}
-		{[RADIUS.workspace, RADIUS.dataset, RADIUS.source].map((r) => (
-			<circle key={r} cx={C} cy={C} r={r} fill='none' stroke='#ffffff' strokeOpacity='.05' strokeDasharray='2 6' />
-		))}
-		<circle cx={C} cy={C} r={120} fill='url(#halo)' />
+		{/* The rings themselves, or the columns, faint. */}
+		{mode === 'rings'
+			? [RADIUS.workspace, RADIUS.dataset, RADIUS.source].map((r) => <circle key={r} cx={C} cy={C} r={r} fill='none' stroke='#ffffff' strokeOpacity='.05' strokeDasharray='2 6' />)
+			: [COL.source, COL.dataset, COL.workspace].map((x) => <line key={x} x1={x} x2={x} y1={0} y2={TALL} stroke='#ffffff' strokeOpacity='.05' strokeDasharray='2 6' />)}
+		<circle cx={mode === 'rings' ? C : COL.jo} cy={mode === 'rings' ? C : TALL / 2} r={120} fill='url(#halo)' />
 
 		{edges.map((e, i) => {
 			const p = placed.get(e.from)
 			const q = placed.get(e.to)
 			if (!p || !q) return null
 			const on = edgeLit(e)
-			const d = curve(p, q, e.kind)
+			const d = curve(p, q, e.kind, mode)
 			return (
 				<g key={i} style={{ transition: 'opacity .3s' }} opacity={on ? 1 : 0.08}>
 					<path
@@ -301,11 +314,7 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, chain, onHover, 
 
 		{[...placed.values()].map((n) => {
 			const on = lit(n.id)
-			const r = n.kind === 'dataset' && n.count ? Math.min(16, SIZE.dataset + Math.log10(n.count) * 2) : SIZE[n.kind]
-			const outer = n.kind === 'dataset' || n.kind === 'source'
-			const lx = outer ? n.x + Math.cos(n.a) * (r + 8) : n.x
-			const ly = outer ? n.y + Math.sin(n.a) * (r + 8) : n.y + r + 16
-			const anchor = outer ? (Math.cos(n.a) > 0.2 ? 'start' : Math.cos(n.a) < -0.2 ? 'end' : 'middle') : 'middle'
+			const r = radius(n)
 						return (
 				<g
 					key={n.id}
@@ -331,9 +340,11 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, chain, onHover, 
 						<BrainIcon x={n.x - 18} y={n.y - 18} size={36} weight='fill' color='#3a0f16' aria-hidden='true' />
 					) : (
 						<text
-							x={lx}
-							y={ly + (outer ? 4 : 0)}
-							textAnchor={anchor}
+							x={n.lx}
+							y={n.ly}
+							textAnchor={n.anchor}
+							// In columns a label crosses the links beside it; a halo of the ground keeps it legible.
+							{...(mode === 'columns' ? { stroke: '#1f070b', strokeWidth: 3.5, strokeLinejoin: 'round' as const, paintOrder: 'stroke' } : {})}
 							className={n.kind === 'workspace' ? 'fill-white text-[14px] font-bold' : n.kind === 'dataset' ? 'fill-[#f3dcae] text-[11.5px]' : 'fill-[#a9c6c6] text-[11px]'}
 						>
 							{n.label}
@@ -344,6 +355,16 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, chain, onHover, 
 		})}
 	</svg>
 	<div className='absolute right-4 bottom-4 flex flex-col gap-1.5'>
+		{/* Rings or columns: the button shows the layout a click turns to. */}
+		<button
+			type='button'
+			className={button}
+			onClick={() => setMode(mode === 'rings' ? 'columns' : 'rings')}
+			aria-label={mode === 'rings' ? 'Lay the map out in columns' : 'Lay the map out in rings'}
+			title={mode === 'rings' ? 'Columns' : 'Rings'}
+		>
+			{mode === 'rings' ? <TreeStructureIcon size={16} weight='bold' className='rotate-90' /> : <CircleDashedIcon size={16} weight='bold' />}
+		</button>
 		{toolbar}
 		<button type='button' className={button} aria-label='Zoom in' onClick={() => zoom(0.75)}>
 			<PlusIcon size={16} weight='bold' />

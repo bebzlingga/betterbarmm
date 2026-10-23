@@ -338,7 +338,8 @@ export function getOfficialMeasuresMeta(): {
 	}
 
 	return {
-		generatedAt: toStringValue(files.find(({ data }) => data?.generated)?.data?.generated) || 'not recorded',
+		// The latest of the indexes' capture dates: when the counts were last checked against Parliament.
+		generatedAt: files.map(({ data }) => toStringValue(data?.generated)).filter(Boolean).sort().at(-1) || 'not recorded',
 		total: measures.length,
 		byCategory,
 		credited: measures.filter(

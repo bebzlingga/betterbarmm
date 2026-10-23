@@ -86,8 +86,6 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 			: followLit
 				? followLit.has(e.from) && followLit.has(e.to)
 				: true
-	/** What a pick reaches, for the flat map to frame. */
-	const chain = near?.chain ? near.ids : null
 
 	const chosen = picked ? byId.get(picked) : null
 	const links = chosen ? edges.filter((e) => e.from === chosen.id || e.to === chosen.id) : []
@@ -123,9 +121,9 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 				</button>
 				<div className='relative h-[62vh] lg:h-auto lg:min-h-0 lg:flex-1'>
 					{view === '3d' ? (
-						<BrainGlobe nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} chain={chain} onHover={setHover} onPick={setPicked} toolbar={switcher} />
+						<BrainGlobe nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} onHover={setHover} onPick={setPicked} toolbar={switcher} />
 					) : (
-						<BrainFlat nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} chain={chain} onHover={setHover} onPick={setPicked} toolbar={switcher} />
+						<BrainFlat nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} onHover={setHover} onPick={setPicked} toolbar={switcher} />
 					)}
 				</div>
 				<ul className='pointer-events-none flex flex-wrap justify-center gap-x-5 gap-y-1 px-4 pt-2 pb-4 text-[12px] text-white/70 lg:absolute lg:inset-x-0 lg:bottom-0 lg:pt-0 lg:pb-5'>

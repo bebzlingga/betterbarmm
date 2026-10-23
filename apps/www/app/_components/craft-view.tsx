@@ -1,8 +1,9 @@
-import { ArrowUpRightIcon, MapPinIcon } from '@phosphor-icons/react/ssr'
+import { ArrowUpRightIcon, EnvelopeSimpleIcon, MapPinIcon, SealCheckIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { toneVars } from '../_lib/craft-tone'
 import { cropStyle } from '../_lib/commons'
 import { GROUP, PROVINCE, commonsThumb, related, type Craft } from '../_lib/crafts'
+import { craftTowns, festivalsFor, placesFor } from '../_lib/craft-places'
 import { CraftCard } from './craft-card'
 import { CraftSpecs } from './craft-specs'
 import { CraftStage } from './craft-stage'
@@ -24,9 +25,20 @@ const sourceLabel = (s: string) => {
 	return new URL(s).hostname.replace(/^www\./, '')
 }
 const source = 'inline-flex items-center gap-0.5 text-[11.5px] text-[#8a6d5c] hover:text-[#5a3424]'
+const BUY_KIND = { fair: 'Fair', centre: 'Centre', shop: 'Shop', otop: 'One Town, One Product', cooperative: 'Cooperative', online: 'Online' }
+const peso = (n: number) => `₱${n.toLocaleString('en-PH', { maximumFractionDigits: 0 })}`
+/** A short email to the site about this craft, its subject and a skeleton filled in. */
+const mailto = (c: Craft) =>
+	`mailto:support@betterbarmm.com?subject=${encodeURIComponent(`Crafts: ${c.name}`)}&body=${encodeURIComponent(
+		`About ${c.name} (betterbarmm.com/crafts/${c.slug})\n\nWhat to add or correct (a maker, a place to buy it, a price, a photo you took):\n\nThe source (a link, a document, or how you know):\n`,
+	)}`
 
 export function CraftView({ c }: { c: Craft }) {
 	const others = related(c, 4)
+	const towns = craftTowns(c)
+	const fests = festivalsFor(c)
+	const places = placesFor(c)
+	const prices = [...(c.prices ?? [])].sort((a, b) => b.as_of.localeCompare(a.as_of))
 	const next = others[0]!
 	const made = [c.towns.join(', '), PROVINCE[c.province]].filter(Boolean).join(', ')
 	const specs = (
@@ -58,13 +70,26 @@ export function CraftView({ c }: { c: Craft }) {
 						{/* A short name is set large; a long one steps down so it keeps to two or three lines. */}
 						<h1 className={`${serif} mt-3 font-bold leading-[1.05] ${c.name.length > 18 ? 'text-[36px] sm:text-[44px] lg:text-[52px]' : 'text-[44px] sm:text-[60px] lg:text-[72px]'}`}>{c.name}</h1>
 						<p className={`${serif} mt-1 text-[17px] italic text-[#e7c9a9]`}>{c.local_name}</p>
+						{c.heritage?.length ? (
+							<ul className='mt-4 flex flex-wrap gap-2'>
+								{c.heritage.map((h) => (
+									<li key={h.status}>
+										<a href={h.source} target='_blank' rel='noreferrer' title={h.note} className='inline-flex items-center gap-1.5 rounded-full border border-[#e7c9a9]/50 px-3 py-1 text-[12px] font-semibold text-[#f4e8dc] hover:border-[#f4e8dc]'>
+											<SealCheckIcon size={14} weight='fill' aria-hidden='true' /> {h.status} · {h.body}
+										</a>
+									</li>
+								))}
+							</ul>
+						) : null}
 						<p className={`${serif} mt-5 text-[16px] leading-[1.6] text-[#ecdccd]`}>{c.summary}</p>
-						{c.price ? (
+						{/* The newest price here; every price, dated, sits below with where to buy. */}
+						{prices[0] ? (
 							<p className='mt-4 text-[13px] text-[#e7c9a9]'>
-								{c.price.text}{' '}
-								<a href={c.price.source} target='_blank' rel='noreferrer' className='underline underline-offset-2 hover:text-white'>
-									as of {monthYear(c.price.as_of)}
+								{prices[0].text}{' '}
+								<a href={prices[0].source} target='_blank' rel='noreferrer' className='underline underline-offset-2 hover:text-white'>
+									as of {monthYear(prices[0].as_of)}
 								</a>
+								{prices.length > 1 ? <span className='text-[#d9bba6]'> · {prices.length - 1} more below</span> : null}
 							</p>
 						) : null}
 					</div>
@@ -132,9 +157,50 @@ export function CraftView({ c }: { c: Craft }) {
 						<ul className='mt-3 grid gap-4 sm:grid-cols-2'>
 							{c.makers.map((m) => (
 								<li key={m.name} className='rounded-[4px] bg-white p-4'>
+									{m.honour ? <p className='mb-1 font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[#9a6a4f]'>{m.honour}</p> : null}
 									<p className={`${serif} text-[16px] font-bold`}>{m.name}</p>
+									{m.town ? <p className='text-[12.5px] text-[#8a6d5c]'>{m.town}</p> : null}
 									<p className='mt-1 text-[13.5px] leading-[1.55] text-[#5a3d2e]'>{m.note}</p>
 									<a href={m.source} target='_blank' rel='noreferrer' className={`mt-2 ${source}`}>
+										Source <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
+									</a>
+								</li>
+							))}
+						</ul>
+					</>
+				) : null}
+				{towns.length ? (
+					<>
+						<h3 className={`${label} mt-10 text-[#8a6d5c]`}>Where it is made</h3>
+						<ul className='mt-3 flex flex-wrap gap-2'>
+							{towns.map(({ label: t, town }) => (
+								<li key={t}>
+									{town?.href ? (
+										<Link href={town.href} className='inline-flex items-center gap-1 rounded-full bg-white px-3 py-1.5 text-[13px] text-[#5a3d2e] hover:text-[#3b2419]'>
+											<MapPinIcon size={13} aria-hidden='true' /> {t} <span className='text-[#8a6d5c]'>· {town.province}</span>
+										</Link>
+									) : (
+										<span className='inline-flex items-center gap-1 rounded-full bg-white px-3 py-1.5 text-[13px] text-[#5a3d2e]'>
+											<MapPinIcon size={13} aria-hidden='true' /> {t}
+										</span>
+									)}
+								</li>
+							))}
+						</ul>
+						<p className='mt-2 text-[12px] text-[#8a6d5c]'>Each town opens in the Directory: its mayor, its offices and how to reach them.</p>
+					</>
+				) : null}
+				{c.heritage?.length ? (
+					<>
+						<h3 className={`${label} mt-10 text-[#8a6d5c]`}>Heritage</h3>
+						<ul className='mt-3 space-y-3'>
+							{c.heritage.map((h) => (
+								<li key={h.status} className='border-l-2 border-[#c89b4a] pl-3 text-[14px] leading-[1.6] text-[#5a3d2e]'>
+									<span className='font-semibold text-[#3b2419]'>
+										{h.status}, {h.body}.
+									</span>{' '}
+									{h.note}{' '}
+									<a href={h.source} target='_blank' rel='noreferrer' className={source}>
 										Source <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
 									</a>
 								</li>
@@ -164,6 +230,92 @@ export function CraftView({ c }: { c: Craft }) {
 				) : (
 					<p className='mt-3 text-[14px] text-[#8a6d5c]'>Made in {made}; no shop, centre or festival for it found in a source yet.</p>
 				)}
+				{fests.length ? (
+					<>
+						<h3 className={`${label} mt-10 text-[#8a6d5c]`}>Festivals nearby</h3>
+						<ul className='mt-2 divide-y divide-[#e4d8cb] border-y border-[#e4d8cb]'>
+							{fests.map((f) => (
+								<li key={f.name} className='py-3'>
+									<p className={`${serif} text-[16px] font-bold`}>{f.name}</p>
+									<p className='text-[12.5px] text-[#8a6d5c]'>{[f.month, f.place].filter(Boolean).join(' · ')}</p>
+									<a href={f.source} target='_blank' rel='noreferrer' className={`mt-1 ${source}`}>
+										Source <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
+									</a>
+								</li>
+							))}
+						</ul>
+					</>
+				) : null}
+
+				<h2 className={`${serif} mt-12 text-[26px] font-bold`}>Where to buy it</h2>
+				{c.buy?.length ? (
+					<ul className='mt-4 divide-y divide-[#e4d8cb] border-y border-[#e4d8cb]'>
+						{c.buy.map((b) => (
+							<li key={b.name + b.place} className='py-4'>
+								<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[#9a6a4f]'>{BUY_KIND[b.kind]}</p>
+								<p className={`${serif} text-[17px] font-bold`}>{b.url ? <a href={b.url} target='_blank' rel='noreferrer' className='hover:text-[#7b4a35]'>{b.name}</a> : b.name}</p>
+								<p className='mt-0.5 flex items-center gap-1 text-[13px] text-[#8a6d5c]'>
+									<MapPinIcon size={13} aria-hidden='true' /> {b.place}
+								</p>
+								<p className='mt-1.5 text-[14px] leading-[1.6] text-[#5a3d2e]'>{b.note}</p>
+								<a href={b.source} target='_blank' rel='noreferrer' className={`mt-1.5 ${source}`}>
+									Source, {monthYear(b.as_of)} <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
+								</a>
+							</li>
+						))}
+					</ul>
+				) : (
+					<p className='mt-3 text-[14px] text-[#8a6d5c]'>No shop, fair or cooperative selling it found in a source yet.</p>
+				)}
+
+				{prices.length > 1 ? (
+					<>
+						<h3 className={`${label} mt-10 text-[#8a6d5c]`}>Prices</h3>
+						<ul className='mt-2 space-y-2.5'>
+							{prices.map((pr) => (
+								<li key={pr.source + pr.text} className='text-[13.5px] leading-[1.55] text-[#5a3d2e]'>
+									{pr.text}.{' '}
+									<a href={pr.source} target='_blank' rel='noreferrer' className={source}>
+										{monthYear(pr.as_of)} <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
+									</a>
+								</li>
+							))}
+						</ul>
+					</>
+				) : null}
+
+				{places.length ? (
+					<>
+						<h3 className={`${label} mt-10 text-[#8a6d5c]`}>While you are there</h3>
+						<ul className='mt-2 space-y-1.5 text-[14px]'>
+							{places.map((pl) => (
+								<li key={pl.slug}>
+									<Link href={`/places/${pl.slug}`} className='text-[#7b4a35] underline decoration-[#e4d8cb] underline-offset-4 hover:decoration-[#7b4a35]'>
+										{pl.name}
+									</Link>{' '}
+									<span className='text-[12.5px] text-[#8a6d5c]'>· {pl.municipality}</span>
+								</li>
+							))}
+						</ul>
+					</>
+				) : null}
+
+				{c.spend?.length ? (
+					<>
+						<h3 className={`${label} mt-10 text-[#8a6d5c]`}>Public money</h3>
+						<ul className='mt-2 space-y-3'>
+							{c.spend.map((x) => (
+								<li key={x.source} className='text-[13.5px] leading-[1.55] text-[#5a3d2e]'>
+									{x.title}. <span className='text-[#8a6d5c]'>{x.by}, {monthYear(x.date.slice(0, 7))}{x.amount ? `, ${peso(x.amount)}` : ''}.</span>{' '}
+									<a href={x.source} target='_blank' rel='noreferrer' className={source}>
+										Bid notice <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
+									</a>
+								</li>
+							))}
+						</ul>
+					</>
+				) : null}
+
 				<h3 className={`${label} mt-10 text-[#8a6d5c]`}>Read more</h3>
 				<ul className='mt-2 space-y-1.5 text-[13px]'>
 					{c.sources.map((s) => (
@@ -174,6 +326,14 @@ export function CraftView({ c }: { c: Craft }) {
 						</li>
 					))}
 				</ul>
+
+				<div className='mt-10 rounded-[6px] bg-white p-5'>
+					<p className={`${serif} text-[17px] font-bold`}>Know more about the {c.name.toLowerCase().startsWith('the ') ? c.name.slice(4) : c.name}?</p>
+					<p className='mt-1 text-[13.5px] leading-[1.6] text-[#5a3d2e]'>A maker, a place to buy it, a price, a photo you took, or a correction. Send it with a source and it is checked before it goes up.</p>
+					<a href={mailto(c)} className='mt-3 inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-[#7b4a35] hover:text-[#3b2419]'>
+						<EnvelopeSimpleIcon size={15} aria-hidden='true' /> Send it
+					</a>
+				</div>
 			</div>
 		</section>
 

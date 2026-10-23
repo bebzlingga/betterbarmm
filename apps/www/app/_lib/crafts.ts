@@ -18,6 +18,15 @@ export type CraftModel =
 /** focus: a CSS object-position, where a crop should centre (two crafts can share one photo). */
 export type CraftImage = { crop?: Crop; tone?: Tone; focus?: string; url: string; page: string; author: string; license: string; license_url: string | null; width: number; height: number; caption: string }
 export type Sourced = { name: string; note: string; source: string; place?: string; month?: string }
+/** A maker; honour names a national recognition, such as a GAMABA award or a School of Living Traditions. */
+export type Maker = Sourced & { honour?: string | null; town?: string | null }
+/** A recognition of the craft itself: a registry entry, a national treasure, or a warning that it is at risk. */
+export type Heritage = { status: string; body: string; note: string; source: string }
+/** Somewhere a visitor can buy it: a fair, a centre, a shop or a cooperative. */
+export type BuyAt = { name: string; place: string; kind: 'fair' | 'centre' | 'shop' | 'otop' | 'cooperative' | 'online'; note: string; url?: string | null; source: string; as_of: string }
+export type Price = { text: string; source: string; as_of: string }
+/** Public money spent on it, as a bid notice records. */
+export type Spend = { title: string; by: string; date: string; amount: number | null; source: string }
 
 export type Craft = {
 	slug: string
@@ -33,9 +42,13 @@ export type Craft = {
 	uses: string
 	motifs?: { name: string; meaning: string }[]
 	colors: string[]
-	makers: Sourced[]
+	makers: Maker[]
 	where_to_see: Sourced[]
-	price: { text: string; source: string; as_of: string } | null
+	/** Dated prices, newest first. */
+	prices?: Price[]
+	buy?: BuyAt[]
+	heritage?: Heritage[]
+	spend?: Spend[]
 	sources: string[]
 	images: CraftImage[]
 	model: CraftModel | null
@@ -73,6 +86,8 @@ export const crafts = data.items as Craft[]
 export const creditOf = (i: CraftImage) => ({ credit: i.author, license: i.license, source: i.page })
 
 export const festivals = data.festivals as Sourced[]
+/** Fairs and shops that sell the region's crafts without naming which. */
+export const markets = data.markets as BuyAt[]
 export const craftsMeta = { generatedAt: data.generatedAt }
 export const craft = (slug: string) => crafts.find((c) => c.slug === slug)
 

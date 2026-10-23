@@ -1,6 +1,6 @@
 {
  "name": "Accidents in BARMM, as reported",
- "generatedAt": "2026-10-22",
+ "generatedAt": "2026-10-23",
  "since": "2019",
  "note": "Compiled from news reports: the outlets’ own sites, Google News’s index of them, and public Facebook posts that index carried. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.",
  "sources": {
@@ -10,6 +10,37 @@
   "barangays": "datasets/accidents/barangay-centres.json"
  },
  "incidents": [
+  {
+   "date": "2026-10-23",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Three shot dead, two wounded at a fishpond on Timako Hill, Kalanganan 2, Cotabato City",
+   "summary": "Three men were killed and two wounded when gunmen opened fire at Maceda Fishpond on Timako Hill, Barangay Kalanganan 2, Cotabato City, at 7:40 am on Friday, 23 October 2026. Police said the victims had arranged to meet five men posing as buyers of their produce; three of them stepped out of a white Toyota Hilux and fired long firearms. The dead were a 53-year-old businessman, a resident of Lebak, Sultan Kudarat, and a fisherman from Timako; the two wounded, among them a 49-year-old fisherman, were taken to the Cotabato Regional and Medical Center. Police are looking into a long-running family feud and extortion of the business, and are gathering CCTV footage to identify the gunmen and their vehicle. An early report said one of the dead was a former barangay kagawad.",
+   "province": "Cotabato City",
+   "municipality": "Cotabato City",
+   "barangay": "Kalanganan 2",
+   "deaths": 3,
+   "injured": 2,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.1982,
+   "lon": 124.2045,
+   "placed": "barangay",
+   "sources": [
+    {
+     "outlet": "Facebook",
+     "url": "https://www.facebook.com/radyobanderacotabato/posts/pfbid01F5BSg5BHFnKdh5wSLk9t6i7xiaAPD87QHkXMzd34BKiVs9SJPnq4r6cKw8jY6pYl",
+     "title": "BREAKING NEWS | Tatlo nasawi, dalawa sugatan sa pamamaril sa Kalanganan 2",
+     "date": "2026-10-23"
+    }
+   ],
+   "id": "2026-10-23-cotabato-shooting",
+   "image": {
+    "url": "/accident-photos/2026-10-23-kalanganan-shooting.jpg",
+    "outlet": "Bandera News TV-Cotabato",
+    "href": "https://www.facebook.com/radyobanderacotabato/posts/pfbid01F5BSg5BHFnKdh5wSLk9t6i7xiaAPD87QHkXMzd34BKiVs9SJPnq4r6cKw8jY6pYl"
+   }
+  },
   {
    "date": "2026-10-22",
    "type": "shooting",

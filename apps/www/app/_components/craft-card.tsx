@@ -18,7 +18,7 @@ export function CraftCard({ c, replace = false, plain = false }: { c: Craft; rep
 				<span className='relative block aspect-[4/3] overflow-hidden bg-[#e9ddd0]'>
 					{img ? (
 						// eslint-disable-next-line @next/next/no-img-element
-						<img src={commonsThumb(img.url, 960)} alt='' loading='lazy' style={cropStyle(img, 4 / 3) ?? { objectPosition: img.focus }} className='size-full object-cover transition duration-500 group-hover:scale-[1.03]' />
+						<img src={commonsThumb(img.url, 960, img.width)} alt='' loading='lazy' style={cropStyle(img, 4 / 3) ?? { objectPosition: img.focus }} className='size-full object-cover transition duration-500 group-hover:scale-[1.03]' />
 					) : (
 						<span className='block size-full' style={{ background: `linear-gradient(135deg, ${c.colors.join(', ')})` }} />
 					)}

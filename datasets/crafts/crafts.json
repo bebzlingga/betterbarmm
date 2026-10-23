@@ -1,6 +1,6 @@
 {
  "name": "Crafts of the Bangsamoro",
- "generatedAt": "2026-10-17",
+ "generatedAt": "2026-10-23",
  "note": "Textiles, mats, brass, instruments, carving and blades of BARMM, each traced to the pages it came from. Photos are Wikimedia Commons files under free licences. model is drawn by the site from a few numbers; null where only photos are shown. Items marked with a Pusaka source come from the BCPCH’s Pusaka (2025), cited by page.",
  "items": [
   {
@@ -72,6 +72,12 @@
      "name": "Women Center weaving section, Buluan",
      "note": "Provincial weaving centre where many weavers are wives of former Moro rebels; reported in 2018.",
      "source": "https://ptvnews.ph/reviving-dying-inaul-industry-thru-festival-maguindanao/"
+    },
+    {
+     "name": "Minang S. Gani",
+     "note": "Recognised by BCPCH as Maguindanao Cultural Master for inaul weaving in 2024.",
+     "source": "https://bcpch.bangsamoro.gov.ph/recognition-of-bangsamoro-cultural-artists-and-artisans/",
+     "honour": "BCPCH Cultural Master 2024"
     }
    ],
    "where_to_see": [
@@ -94,11 +100,62 @@
      "source": "https://commons.wikimedia.org/wiki/File:Cotabato_City_Hall_Museum_Exhibit_3.jpg"
     }
    ],
-   "price": {
-    "text": "₱2,500–₱5,000 for an inaul malong, depending on the cloth and design",
-    "source": "https://ptvnews.ph/reviving-dying-inaul-industry-thru-festival-maguindanao/",
-    "as_of": "2018-02"
-   },
+   "prices": [
+    {
+     "text": "₱2,500–₱5,000 for an inaul malong, depending on the cloth and design",
+     "source": "https://ptvnews.ph/reviving-dying-inaul-industry-thru-festival-maguindanao/",
+     "as_of": "2018-02"
+    },
+    {
+     "text": "₱1,000–₱1,800 market price for a 2 m × 4 m inaul malong, depending on design; raw materials cost the weaver ₱500–₱1,000",
+     "source": "https://www.sunstar.com.ph/more-articles/inaul-weaving-one-maguindanao",
+     "as_of": "2018-02"
+    },
+    {
+     "text": "an inaul malong bought from the weaver for ₱1,500 is resold by traders for over ₱2,000",
+     "source": "https://www.sunstar.com.ph/more-articles/inaul-weaving-one-maguindanao",
+     "as_of": "2018-02"
+    },
+    {
+     "text": "at least ₱2,800 for a binaludan (tie-dyed) inaul malong",
+     "source": "https://www.rappler.com/culture-desk/style/226823-maguindanao-weaving-tradition-inaul/",
+     "as_of": "2019-03"
+    }
+   ],
+   "buy": [
+    {
+     "name": "Inaul Expo at the Inaul Festival",
+     "place": "Buluan, Maguindanao del Sur",
+     "kind": "fair",
+     "note": "During the festival, held each February in Buluan since 2017, inaul from several towns is shown and sold, along with shawls, headscarves and bags; the sources date from before Maguindanao was split, and no edition after 2019 is confirmed here.",
+     "url": null,
+     "source": "https://www.rappler.com/culture-desk/style/226823-maguindanao-weaving-tradition-inaul/",
+     "as_of": "2019-03"
+    },
+    {
+     "name": "Provincial Women Center (inaul weaving section)",
+     "place": "Buluan, Maguindanao del Sur",
+     "kind": "centre",
+     "note": "A centre run by the provincial government where a women's group weaves, manages and exhibits inaul products; the source predates the 2022 split of Maguindanao, so its current status is unconfirmed.",
+     "url": null,
+     "source": "https://edgedavao.net/the-economy/2018/02/baste-duterte-endorses-inaul-festival-products/",
+     "as_of": "2018-02"
+    }
+   ],
+   "heritage": [
+    {
+     "status": "At risk",
+     "body": "BCPCH",
+     "note": "At BCPCH's 2026 inawl conference, MTIT Maguindanao's provincial director warned the craft will die if weavers cannot pass their skills to the next generation; the weavers also asked for protection against copying.",
+     "source": "https://bcpch.bangsamoro.gov.ph/bcpch-concludes-second-cultural-workers-conference-on-inawl-preservation/"
+    },
+    {
+     "status": "Taught in a School of Living Traditions",
+     "body": "BCPCH",
+     "note": "Inaul is one of the crafts in BCPCH's SLT workshops; the SLT model itself is on UNESCO's Register of Good Safeguarding Practices (2021).",
+     "source": "https://bcpch.bangsamoro.gov.ph/school-of-living-traditions/"
+    }
+   ],
    "sources": [
     "https://www.sunstar.com.ph/more-articles/inaul-weaving-one-maguindanao",
     "https://ptvnews.ph/reviving-dying-inaul-industry-thru-festival-maguindanao/",
@@ -213,7 +270,17 @@
      "source": "https://tribune.net.ph/2024/08/13/langkit-festival"
     }
    ],
-   "price": null,
+   "buy": [
+    {
+     "name": "Maranao Collectible Service Cooperative (Maranao Collectibles)",
+     "place": "Marawi City, Lanao del Sur",
+     "kind": "cooperative",
+     "note": "A cooperative of about 80 mostly women artisans formed after the 2017 siege, which sells langkit by the metre, takes orders and works with distributors.",
+     "url": null,
+     "source": "https://www.bulatlat.com/2022/10/16/how-a-moro-woman-has-preserved-their-culture-while-helping-provide-food-for-displaced-families/",
+     "as_of": "2022-10"
+    }
+   ],
    "sources": [
     "https://en.wikipedia.org/wiki/Malong",
     "https://www.metrocagayandemisamis.com/2026/02/19/the-heart-of-tradition-the-keeper-of-the-okir/",
@@ -351,6 +418,12 @@
      "name": "Saadera \"Dida\" Shiek Basmala",
      "note": "Langkit weaver since about age 8, demonstrated at the April 2024 Okir Art Exhibit.",
      "source": "https://www.metrocagayandemisamis.com/2024/08/17/langkit-weaving-tradition-through-the-market-maze/"
+    },
+    {
+     "name": "Saadira Shiek Basmala",
+     "note": "Recognised by BCPCH as Lanao del Sur Cultural Master for langkit weaving in 2024.",
+     "source": "https://bcpch.bangsamoro.gov.ph/recognition-of-bangsamoro-cultural-artists-and-artisans/",
+     "honour": "BCPCH Cultural Master 2024"
     }
    ],
    "where_to_see": [
@@ -367,7 +440,32 @@
      "source": "https://tribune.net.ph/2024/08/13/langkit-festival"
     }
    ],
-   "price": null,
+   "prices": [
+    {
+     "text": "about ₱50 per metre of langkit, depending on how intricate the design is (Maranao Collectible cooperative)",
+     "source": "https://www.bulatlat.com/2022/10/16/how-a-moro-woman-has-preserved-their-culture-while-helping-provide-food-for-displaced-families/",
+     "as_of": "2022-10"
+    }
+   ],
+   "buy": [
+    {
+     "name": "Maranao Collectible Service Cooperative (Maranao Collectibles)",
+     "place": "Marawi City, Lanao del Sur",
+     "kind": "cooperative",
+     "note": "A cooperative of about 80 mostly women artisans formed after the 2017 siege, which sells langkit by the metre, takes orders and works with distributors.",
+     "url": null,
+     "source": "https://www.bulatlat.com/2022/10/16/how-a-moro-woman-has-preserved-their-culture-while-helping-provide-food-for-displaced-families/",
+     "as_of": "2022-10"
+    }
+   ],
+   "heritage": [
+    {
+     "status": "In the national heritage inventory",
+     "body": "NCCA",
+     "note": "Listed as Langkit: Tobira and Lakban. Listed under traditional craftsmanship for the Maranao of Lanao del Sur (via Wikipedia).",
+     "source": "https://en.wikipedia.org/wiki/Intangible_Cultural_Heritage_of_the_Philippines"
+    }
+   ],
    "sources": [
     "https://www.metrocagayandemisamis.com/2024/08/17/langkit-weaving-tradition-through-the-market-maze/",
     "https://www.metrocagayandemisamis.com/2026/02/19/the-heart-of-tradition-the-keeper-of-the-okir/",
@@ -480,12 +578,20 @@
     {
      "name": "Ambalang Ausalin (1943–2022)",
      "note": "Master Yakan weaver of Parangbasak, Lamitan; National Living Treasure (GAMABA) 2016, known for the sinaluan and seputangan.",
-     "source": "https://en.wikipedia.org/wiki/Ambalang_Ausalin"
+     "source": "https://en.wikipedia.org/wiki/Ambalang_Ausalin",
+     "honour": "GAMABA 2016",
+     "town": "Lamitan"
     },
     {
      "name": "Berty Ausalin",
      "note": "Her eldest son, who led the June 2024 opening of the GAMABA Weaving Center and Ambalang Museum.",
      "source": "https://en.wikipedia.org/wiki/Ambalang_Ausalin"
+    },
+    {
+     "name": "Nurayja M. Arabain",
+     "note": "Recognised by BCPCH as Basilan Cultural Master for tennun weaving at the 2024 'Weaving the Bangsamoro Identity' exhibit at the NCCA.",
+     "source": "https://bcpch.bangsamoro.gov.ph/recognition-of-bangsamoro-cultural-artists-and-artisans/",
+     "honour": "BCPCH Cultural Master 2024"
     }
    ],
    "where_to_see": [
@@ -502,7 +608,70 @@
      "source": "https://www.sunstar.com.ph/zamboanga/lami-lamihan-festival-2025-reels-off"
     }
    ],
-   "price": null,
+   "prices": [
+    {
+     "text": "₱20,000 quoted for a rare old tennun woven by Ambalang Ausalin's mother, at the GAMABA Weaving Center in Lamitan",
+     "source": "https://nomadicexperiences.com/2021/09/in-presence-of-national-living-treasure.html",
+     "as_of": "2021-11"
+    },
+    {
+     "text": "₱1,429–₱4,287 for a Yakan table runner (museum shop in Makati, outside BARMM)",
+     "source": "https://yuchengcomuseum.org/product/yakan-table-runner-7/",
+     "as_of": "2026-10"
+    }
+   ],
+   "buy": [
+    {
+     "name": "GAMABA Weaving Center and Ambalang Museum",
+     "place": "Lamitan City, Basilan",
+     "kind": "centre",
+     "note": "A School of Living Tradition linked to master weaver Ambalang Ausalin, where weavers quoted a visitor a price for a tennun piece; a weaving centre and museum under this name were inaugurated in June 2024.",
+     "url": null,
+     "source": "https://nomadicexperiences.com/2021/09/in-presence-of-national-living-treasure.html",
+     "as_of": "2021-11"
+    },
+    {
+     "name": "Datu Dizal Cultural Center",
+     "place": "Lamitan City, Basilan",
+     "kind": "otop",
+     "note": "Lamitan named Yakan fabric its One Town, One Product, and the city set up this centre to house the weaving industry (2013 source, current status unconfirmed).",
+     "url": null,
+     "source": "https://www.pinasmuna.com/2013/08/yakan-weaving-in-lamitan-yakan-homeland.html",
+     "as_of": "2013-08"
+    },
+    {
+     "name": "Yakan Weaving Village (Yakan Village Weaving Center)",
+     "place": "Upper Calarian, Zamboanga City (outside BARMM)",
+     "kind": "shop",
+     "note": "a 1974 settlement of Yakan families from Basilan with about ten or more shops selling woven polos, bags and pouches; a 2013 blog (pinasmuna.com) says Lamitan-made fabric is shipped here for sale.",
+     "url": null,
+     "source": "https://vogue.ph/lifestyle/culture/craft-corner-the-weaving-tradition-of-the-yakan-village-in-zamboanga/",
+     "as_of": "2024-04"
+    },
+    {
+     "name": "Yuchengco Museum shop (online)",
+     "place": "Makati City (outside BARMM)",
+     "kind": "online",
+     "note": "a museum shop selling Yakan table runners described as woven by Yakan in Basilan and Zamboanga.",
+     "url": "https://yuchengcomuseum.org/product/yakan-table-runner-7/",
+     "source": "https://yuchengcomuseum.org/product/yakan-table-runner-7/",
+     "as_of": "2026-10"
+    }
+   ],
+   "heritage": [
+    {
+     "status": "National Living Treasure craft",
+     "body": "NCCA",
+     "note": "Proclamation 126 (2017) names Yakan tennun (tapestry weaving) as the tradition Ambalang Ausalin safeguards, on NCCA recommendation.",
+     "source": "https://lawphil.net/executive/proc/proc2017/proc_126_2017.html"
+    },
+    {
+     "status": "Taught in a School of Living Traditions",
+     "body": "BCPCH",
+     "note": "Tennun weaving is in BCPCH's SLT workshops for Basilan.",
+     "source": "https://bcpch.bangsamoro.gov.ph/school-of-living-traditions/"
+    }
+   ],
    "sources": [
     "https://en.wikipedia.org/wiki/Yakan_people",
     "https://en.wikipedia.org/wiki/Ambalang_Ausalin",
@@ -616,7 +785,9 @@
     {
      "name": "Haja Amina Appi (1925–2013)",
      "note": "Sama master mat weaver of Ungos Matata, Tandubas; National Living Treasure (GAMABA) 2004, who mixed her own dyes where older Sama mats were plain white.",
-     "source": "https://en.wikipedia.org/wiki/Haja_Amina_Appi"
+     "source": "https://en.wikipedia.org/wiki/Haja_Amina_Appi",
+     "honour": "GAMABA 2004",
+     "town": "Ungos Matata, Tandubas"
     },
     {
      "name": "Rohainie Amendo",
@@ -627,6 +798,12 @@
      "name": "Sabilaydah Likawani",
      "note": "Master tepo weaver of Badjao Village, who teaches the craft to younger weavers.",
      "source": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=110"
+    },
+    {
+     "name": "Farisha S. Akkeng",
+     "note": "Recognised by BCPCH as Tawi-Tawi Cultural Master for tepo weaving in 2024.",
+     "source": "https://bcpch.bangsamoro.gov.ph/recognition-of-bangsamoro-cultural-artists-and-artisans/",
+     "honour": "BCPCH Cultural Master 2024"
     }
    ],
    "where_to_see": [
@@ -637,7 +814,62 @@
      "source": "https://tribune.net.ph/2025/10/27/traditional-weaver-from-tawi-tawi"
     }
    ],
-   "price": null,
+   "prices": [
+    {
+     "text": "₱300–₱4,000 for a tepo mat at a Badjao weaving community in Bongao",
+     "source": "https://twomonkeystravelgroup.com/diy-travel-guide-tawi-tawi-philippines/",
+     "as_of": "2025-03"
+    }
+   ],
+   "buy": [
+    {
+     "name": "Badjao weaving community (Badjao Village)",
+     "place": "Bongao, Tawi-Tawi",
+     "kind": "centre",
+     "note": "A stilt village where Sama/Badjao women weave colourful pandan tepo mats and sell them to visitors.",
+     "url": null,
+     "source": "https://twomonkeystravelgroup.com/diy-travel-guide-tawi-tawi-philippines/",
+     "as_of": "2025-03"
+    },
+    {
+     "name": "Ayuda Badjao Project",
+     "place": "Maasin, Zamboanga City (outside BARMM)",
+     "kind": "centre",
+     "note": "a livelihood project for Badjao families, founded in 2000, that sells the women's tepo mats as souvenirs.",
+     "url": null,
+     "source": "https://langyaw.com/2014/10/11/where-to-buy-tribal-woven-souvenirs-in-zamboanga-city/",
+     "as_of": "2014-10"
+    }
+   ],
+   "heritage": [
+    {
+     "status": "National Living Treasure craft",
+     "body": "NCCA",
+     "note": "Haja Amina Appi was honoured with GAMABA in 2004 for tepo mat weaving; a presidential proclamation (No. 963) made 25 June 2025 to 24 June 2026 her centennial year.",
+     "source": "https://tribune.net.ph/2025/07/15/phl-marks-centennial-year-of-national-living-treasure-haja-amina-appi"
+    },
+    {
+     "status": "In the national heritage inventory",
+     "body": "NCCA",
+     "note": "The inventory lists 'Tepo Mat (Baluy Mat Weaving)' of the Sama of Tawi-Tawi, and a Daily Tribune profile quotes the Pinagmulan entry on Haja Amina Appi's mat weaving.",
+     "source": "https://tribune.net.ph/2025/06/20/haja-amina-appi-sama-gawad-sa-manlilikha-ng-bayan"
+    },
+    {
+     "status": "Taught in a School of Living Traditions",
+     "body": "BCPCH",
+     "note": "Tepo weaving is in BCPCH's SLT workshops for Tandubas, Tawi-Tawi.",
+     "source": "https://bcpch.bangsamoro.gov.ph/school-of-living-traditions/"
+    }
+   ],
+   "spend": [
+    {
+     "title": "Supply and delivery of construction materials for the Construction of Mat Weaving Center, Brgy. Kakoong, Tandubas",
+     "by": "Ministry of Public Works – BARMM, Tawi-Tawi District Engineering Office",
+     "date": "2025-09-10",
+     "amount": 1015527.69,
+     "source": "https://notices.philgeps.gov.ph/GEPSNONPILOT/Tender/SplashBidNoticeAbstractUI.aspx?refID=12383751"
+    }
+   ],
    "sources": [
     "https://en.wikipedia.org/wiki/Banig",
     "https://en.wikipedia.org/wiki/Haja_Amina_Appi",
@@ -757,6 +989,12 @@
      "name": "Nasser M. Salsal",
      "note": "Master brass artisan of Barangay Bubong, Tugaya, at the craft for 53 years.",
      "source": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=37"
+    },
+    {
+     "name": "Rasid Laidon",
+     "note": "Named as a noted Tugaya brass caster working the lost-wax tradition and a 1990 Manlilikha ng Bayan awardee in a National Library monograph on metalcraft.",
+     "source": "https://nlpdl.nlp.gov.ph/CC01/monographs/1994/NLP00VM052mcd/v3/v17.pdf",
+     "town": "Tugaya"
     }
    ],
    "where_to_see": [
@@ -773,7 +1011,14 @@
      "source": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=21"
     }
    ],
-   "price": null,
+   "heritage": [
+    {
+     "status": "In the national heritage inventory",
+     "body": "NCCA",
+     "note": "Listed as Maranao Brass-casting. The inventory also lists Maranao brass-stamping and metal-casting with wire templates (via Wikipedia).",
+     "source": "https://en.wikipedia.org/wiki/Intangible_Cultural_Heritage_of_the_Philippines"
+    }
+   ],
    "sources": [
     "https://en.wikipedia.org/wiki/Tugaya",
     "https://web.archive.org/web/20260606013421/https://old.pcij.org/stories/armm-town-thrives-on-traditional-arts/",
@@ -843,7 +1088,6 @@
      "source": "https://www.roots.gov.sg/Collection-Landing/listing/1250509"
     }
    ],
-   "price": null,
    "sources": [
     "https://spencerart.ku.edu/art/collections-online/object/33794",
     "https://www.roots.gov.sg/Collection-Landing/listing/1250509",
@@ -893,6 +1137,19 @@
      "name": "Tugaya metalworkers",
      "note": "Tugaya households make gongs, drums and other instruments.",
      "source": "https://www.rappler.com/philippines/mindanao/okir-art-exhibit-cagayan-de-oro-art-cool-maranao-youth/"
+    },
+    {
+     "name": "Danongan Kalanduyan",
+     "note": "Maguindanaon kulintang musician, raised in Datu Piang, honoured in 1995 as an NEA National Heritage Fellow for kulintang music in the United States.",
+     "source": "https://www.arts.gov/honors/heritage/danongan-kalanduyan",
+     "honour": "US National Heritage Fellow 1995",
+     "town": "Datu Piang"
+    },
+    {
+     "name": "Dr. Musalik P. Kabunto",
+     "note": "Acknowledged by BCPCH as a Kulintang Cultural Master Artist at its National Heritage Month 2026 close.",
+     "source": "https://bcpch.bangsamoro.gov.ph/bcpch-concludes-national-heritage-month-2026-with-dalendeg-cultural-showcase/",
+     "town": "Cotabato City (Cotabato State University)"
     }
    ],
    "where_to_see": [
@@ -903,7 +1160,6 @@
      "source": "https://tribune.net.ph/2024/08/13/langkit-festival"
     }
    ],
-   "price": null,
    "sources": [
     "https://en.wikipedia.org/wiki/Kulintang",
     "https://en.wikipedia.org/wiki/Tugaya",
@@ -990,7 +1246,14 @@
     }
    ],
    "where_to_see": [],
-   "price": null,
+   "heritage": [
+    {
+     "status": "National Living Treasure art",
+     "body": "NCCA",
+     "note": "Uwang Ahadas, GAMABA 2000, mastered the agung, by Yakan custom a man's instrument, along with the kwintangan.",
+     "source": "https://bcpch.bangsamoro.gov.ph/uwang-ahadas/"
+    }
+   ],
    "sources": [
     "https://en.wikipedia.org/wiki/Agung",
     "https://en.wikipedia.org/wiki/Tugaya",
@@ -1068,7 +1331,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://en.wikipedia.org/wiki/Gandingan",
     "https://en.wikipedia.org/wiki/Tugaya",
@@ -1129,11 +1391,26 @@
     {
      "name": "Samaon Sulaiman (1953–2011)",
      "note": "Maguindanaon kutiyapi master from Mamasapano; National Living Treasure (GAMABA) 1993, who taught players in Maganoy.",
-     "source": "https://en.wikipedia.org/wiki/Samaon_Sulaiman"
+     "source": "https://en.wikipedia.org/wiki/Samaon_Sulaiman",
+     "honour": "GAMABA 1993",
+     "town": "Libutan, Maganoy"
     }
    ],
    "where_to_see": [],
-   "price": null,
+   "heritage": [
+    {
+     "status": "National Living Treasure art",
+     "body": "NCCA",
+     "note": "Proclamation 385 (1994), on NCCA recommendation, honours Samaon Sulaiman's kutyapi playing 'at a time when this instrument no longer exists in many parts of Mindanao'.",
+     "source": "https://lawphil.net/executive/proc/proc1994/proc_385_1994.html"
+    },
+    {
+     "status": "At risk",
+     "body": "BCPCH",
+     "note": "BCPCH calls the Maguindanaon kutyapi among the hardest Filipino instruments to master, which it gives as a reason the young are not keen to learn it.",
+     "source": "https://bcpch.bangsamoro.gov.ph/samaon-sulaiman/"
+    }
+   ],
    "sources": [
     "https://en.wikipedia.org/wiki/Kutiyapi",
     "https://en.wikipedia.org/wiki/Samaon_Sulaiman",
@@ -1194,7 +1471,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://en.wikipedia.org/wiki/Dabakan",
     "https://en.wikipedia.org/wiki/Tugaya",
@@ -1317,7 +1593,14 @@
      "source": "https://www.rappler.com/philippines/mindanao/okir-art-exhibit-cagayan-de-oro-art-cool-maranao-youth/"
     }
    ],
-   "price": null,
+   "heritage": [
+    {
+     "status": "In the national heritage inventory",
+     "body": "NCCA",
+     "note": "Listed as Maranao Woodworking. Maranao woodworking is in the inventory, and Maranao metal and wood craftsmanship is among the elements proposed for urgent safeguarding (via Wikipedia).",
+     "source": "https://en.wikipedia.org/wiki/Intangible_Cultural_Heritage_of_the_Philippines"
+    }
+   ],
    "sources": [
     "https://en.wikipedia.org/wiki/Okir",
     "https://web.archive.org/web/20260606013421/https://old.pcij.org/stories/armm-town-thrives-on-traditional-arts/",
@@ -1442,7 +1725,6 @@
      "source": "https://en.wikipedia.org/wiki/Torogan"
     }
    ],
-   "price": null,
    "sources": [
     "https://en.wikipedia.org/wiki/Torogan",
     "https://en.wikipedia.org/wiki/Okir",
@@ -1514,7 +1796,14 @@
      "source": "https://commons.wikimedia.org/wiki/File:Mindanao_Bangsamoro_Islamic_Art_(24815474049).jpg"
     }
    ],
-   "price": null,
+   "heritage": [
+    {
+     "status": "In the national heritage inventory",
+     "body": "NCCA",
+     "note": "'Sarimanok' of the Maranao of Lanao del Sur is listed under traditional craftsmanship (via Wikipedia).",
+     "source": "https://en.wikipedia.org/wiki/Intangible_Cultural_Heritage_of_the_Philippines"
+    }
+   ],
    "sources": [
     "https://en.wikipedia.org/wiki/Sarimanok",
     "https://en.wikipedia.org/wiki/Okir",
@@ -1559,7 +1848,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://en.wikipedia.org/wiki/Kampilan",
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=40"
@@ -1631,7 +1919,6 @@
     }
    ],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://en.wikipedia.org/wiki/Kalis",
     "https://en.wikipedia.org/wiki/Kris",
@@ -1690,7 +1977,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=9",
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=21"
@@ -1732,7 +2018,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=11",
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=21"
@@ -1774,7 +2059,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=12",
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=21"
@@ -1830,7 +2114,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=13"
    ],
@@ -1872,7 +2155,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=14"
    ],
@@ -1920,7 +2202,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=15"
    ],
@@ -1961,7 +2242,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=16",
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=29"
@@ -2003,7 +2283,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=17",
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=41"
@@ -2059,7 +2338,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=19"
    ],
@@ -2114,7 +2392,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=26",
     "https://en.wikipedia.org/wiki/Babendil"
@@ -2171,7 +2448,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=31"
    ],
@@ -2212,7 +2488,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=38",
     "https://en.wikipedia.org/wiki/Gunong"
@@ -2254,7 +2529,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=39"
    ],
@@ -2295,7 +2569,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=43",
     "https://nlpdl.nlp.gov.ph/CC01/monographs/1994/NLP00VM052mcd/v3/v17.pdf"
@@ -2338,7 +2611,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=44"
    ],
@@ -2393,7 +2665,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=49"
    ],
@@ -2462,7 +2733,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=50"
    ],
@@ -2509,7 +2779,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=54"
    ],
@@ -2579,7 +2848,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=59",
     "https://sil-philippines-languages.org/online/yka/dict/lexicon/lx04369.html"
@@ -2660,6 +2928,12 @@
    "materials": "Yakan tennun; silk tassels",
    "how_made": "The man's kandit is a red cloth 10 to 15 meters long with woven ends whose tassels are tied into a thick rope, the jambu leg tassels are silk thread, and the woman's kamisun sawwal is made from black woven fabric.",
    "uses": "",
+   "motifs": [
+    {
+     "name": "jambu",
+     "meaning": "the silk leg tassels of the sawwal, which stand for the horse and the place of horsemanship in Yakan life"
+    }
+   ],
    "colors": [
     "#c62828",
     "#f2b705",
@@ -2668,7 +2942,17 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
+   "buy": [
+    {
+     "name": "Yakan Weaving Village (Yakan Village Weaving Center)",
+     "place": "Upper Calarian, Zamboanga City (outside BARMM)",
+     "kind": "shop",
+     "note": "a 1974 settlement of Yakan families from Basilan with about ten or more shops selling woven polos, bags and pouches; a 2013 blog (pinasmuna.com) says Lamitan-made fabric is shipped here for sale.",
+     "url": null,
+     "source": "https://vogue.ph/lifestyle/culture/craft-corner-the-weaving-tradition-of-the-yakan-village-in-zamboanga/",
+     "as_of": "2024-04"
+    }
+   ],
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=61"
    ],
@@ -2702,13 +2986,7 @@
      ]
     }
    ],
-   "model": null,
-   "motifs": [
-    {
-     "name": "jambu",
-     "meaning": "the silk leg tassels of the sawwal, which stand for the horse and the place of horsemanship in Yakan life"
-    }
-   ]
+   "model": null
   },
   {
    "slug": "kulaing",
@@ -2729,7 +3007,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=65",
     "https://sil-philippines-languages.org/online/yka/dict/lexicon/lx02304.html"
@@ -2795,9 +3072,30 @@
     "#8a5a3a",
     "#d8c2a0"
    ],
-   "makers": [],
+   "makers": [
+    {
+     "name": "Uwang Ahadas",
+     "note": "Near-blind Yakan musician who started on the gabbang, went on to the agung, kwintangan kayu and the women's kwintangan, and taught across Basilan.",
+     "source": "https://bcpch.bangsamoro.gov.ph/uwang-ahadas/",
+     "honour": "GAMABA 2000",
+     "town": "Lamitan"
+    }
+   ],
    "where_to_see": [],
-   "price": null,
+   "heritage": [
+    {
+     "status": "National Living Treasure art",
+     "body": "NCCA",
+     "note": "BCPCH lists Uwang Ahadas as a 2000 GAMABA awardee; his art began on the gabbang bamboo xylophone.",
+     "source": "https://bcpch.bangsamoro.gov.ph/gamaba-awardees/"
+    },
+    {
+     "status": "In the national heritage inventory",
+     "body": "NCCA",
+     "note": "Listed under traditional craftsmanship as Yakan Musical Instruments of Basilan (via Wikipedia's transcription of the inventory).",
+     "source": "https://en.wikipedia.org/wiki/Intangible_Cultural_Heritage_of_the_Philippines"
+    }
+   ],
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=66",
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=97",
@@ -2854,7 +3152,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=67",
     "https://sil-philippines-languages.org/online/yka/dict/lexicon/lx04617.html"
@@ -2902,7 +3199,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=68"
    ],
@@ -2957,7 +3253,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=69",
     "https://en.wikipedia.org/wiki/Gunong"
@@ -3026,7 +3321,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=95"
    ],
@@ -3101,7 +3395,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=96"
    ],
@@ -3143,7 +3436,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=99",
     "https://nlpdl.nlp.gov.ph/CC01/monographs/1994/NLP00VM052mcd/v1/v46.pdf"
@@ -3216,7 +3508,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=100"
    ],
@@ -3286,7 +3577,14 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
+   "heritage": [
+    {
+     "status": "Taught in a School of Living Traditions",
+     "body": "BCPCH",
+     "note": "Tutup making in Guinanta, Albarka, is in BCPCH's SLT workshops for Basilan.",
+     "source": "https://bcpch.bangsamoro.gov.ph/school-of-living-traditions/"
+    }
+   ],
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=101",
     "https://nlpdl.nlp.gov.ph/CC01/monographs/1994/NLP00VM052mcd/v1/v46.pdf",
@@ -3343,7 +3641,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=103",
     "https://museum.wa.gov.au/maritime-archaeology-db/sites/default/files/no._064_philippinesreport.pdf"
@@ -3385,7 +3682,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=105"
    ],
@@ -3454,7 +3750,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=106",
     "https://nlpdl.nlp.gov.ph/CC01/monographs/1994/NLP00VM052mcd/v1/v42.pdf"
@@ -3496,7 +3791,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=107"
    ],
@@ -3537,7 +3831,6 @@
    ],
    "makers": [],
    "where_to_see": [],
-   "price": null,
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=109",
     "https://nlpdl.nlp.gov.ph/CC01/monographs/1994/NLP00VM052mcd/v1/v4.pdf"
@@ -3558,6 +3851,438 @@
      ]
     }
    ],
+   "model": null
+  },
+  {
+   "slug": "monom",
+   "name": "Monom basketry",
+   "local_name": "monom (Teduray)",
+   "group": "basketry",
+   "people": "Teduray",
+   "province": "maguindanao-del-norte",
+   "towns": [
+    "Upi",
+    "South Upi",
+    "Datu Blah Sinsuat"
+   ],
+   "summary": "Monom is the Teduray tradition of weaving baskets and hats from bamboo, rattan and nito, carried on in the uplands of Upi, South Upi and parts of Datu Blah Sinsuat. The Teduray have a word for every part of a basket, every step of the work and every design, and a 1994 encyclopedia ranks them among the most accomplished basket weavers of the country's cultural communities.",
+   "materials": "Pawa, a thin and light bamboo (genus Bambusa); teel, the Teduray word for uway rattan (genus Calamus), for the rims; nito (Lygodium circinnatum), a climbing fern, to sew the rims. The black colour, buring, is soot (in 2014, from a small block of burnt tyre rubber) fixed with the sap of camote leaves; weavers now also use bright synthetic dyes.",
+   "how_made": "Bamboo is harvested on moonless days so that it will not dry-rot. Nito is split in four with the thumbnail and drawn through a hole punched with a pointed tool (kusu) in a sardine-can lid until every strand is the same width, a step called sangaten. Bamboo strips are blackened by brushing on powdered soot with a bundle of camote leaves, whose sap fixes the colour, and the black strips are woven with natural ones into two-toned patterns; an older account says the bamboo is smoked black before splitting. Nested sets of up to 12 planter baskets are made without a mould and still fit snugly one inside the next.",
+   "uses": "The biton is a squarish storage and carrying basket for harvested corn, rice and vegetables, carried on the back with a strap across the forehead to leave both hands free; fitted with a cover it becomes the senafeng, used to store seeds and grain. Other pieces are the tefaya winnowing basket, the tafisan strainer, the laba food cover and the sayaf, a shallow conical hat worn by men and women against the sun. From the 1960s many baskets were also made for tourist and export buyers.",
+   "motifs": [
+    {
+     "name": "dau t'beli",
+     "meaning": "leaf pattern"
+    },
+    {
+     "name": "bukag timon",
+     "meaning": "cucumber seeds"
+    },
+    {
+     "name": "along tudok",
+     "meaning": "shadow of the mountain"
+    },
+    {
+     "name": "drumata",
+     "meaning": "eyes of the pineapple"
+    },
+    {
+     "name": "sebanga igor",
+     "meaning": "an animal biting the tail of another, an interlocking design"
+    },
+    {
+     "name": "doh tuwol",
+     "meaning": "a macopa seed cut in half"
+    },
+    {
+     "name": "belinsuwang",
+     "meaning": "the movement of a rocking chair"
+    },
+    {
+     "name": "moto teniboh",
+     "meaning": "may only be woven by someone who has killed another person"
+    },
+    {
+     "name": "taang-taangan",
+     "meaning": "may only be woven by someone who ran off with another person's spouse"
+    },
+    {
+     "name": "human figures",
+     "meaning": "taboo; weaving them is believed to bring bad luck"
+    }
+   ],
+   "colors": [
+    "#1F1B18",
+    "#D6BC86"
+   ],
+   "makers": [
+    {
+     "name": "Perlita B. Laugan",
+     "note": "Teduray master weaver from South Upi, recognised by the BCPCH as Cultural Master for monom weaving in 2024; describes herself as the sixth generation of sayaf weavers and led a sayaf-making workshop at the Bangsamoro Museum in February 2026.",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-museum-marks-7th-anniversary-with-hands-on-cultural-workshops/",
+     "honour": "BCPCH Cultural Master 2024",
+     "town": "South Upi"
+    },
+    {
+     "name": "Lencio T. Arig",
+     "note": "Barangay kagawad of Romonggaub; women wove backpacks to order at his house when SunStar visited in 2014.",
+     "source": "https://www.sunstar.com.ph/more-articles/monom-teduray-weaving-tradition"
+    },
+    {
+     "name": "Upi Monom",
+     "note": "Teduray people's organisation in South Upi that received 2 handloom units from the Ministry of Trade, Investments and Tourism in March 2026.",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-turns-over-weaving-handlooms-to-ip-group-and-pdl-facilities/"
+    }
+   ],
+   "where_to_see": [
+    {
+     "name": "Bangsamoro Museum",
+     "place": "Cotabato City",
+     "note": "Held a Monom Sayaf lecture-demonstration and hands-on workshop for Teduray students on its 7th anniversary, February 2026.",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-museum-marks-7th-anniversary-with-hands-on-cultural-workshops/"
+    }
+   ],
+   "sources": [
+    "https://www.sunstar.com.ph/more-articles/monom-teduray-weaving-tradition",
+    "https://bcpch.bangsamoro.gov.ph/monom-of-the-indigenous-people/",
+    "https://nlpdl.nlp.gov.ph/CC01/monographs/1994/NLP00VM052mcd/v1/v49.pdf",
+    "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-museum-marks-7th-anniversary-with-hands-on-cultural-workshops/",
+    "https://bcpch.bangsamoro.gov.ph/bangsamoro-museum-marks-7th-anniversary-with-sayaf-making-workshop-celebrating-living-heritage/",
+    "https://bcpch.bangsamoro.gov.ph/recognition-of-bangsamoro-cultural-artists-and-artisans/",
+    "https://bangsamoro.gov.ph/news/latest-news/barmm-turns-over-weaving-handlooms-to-ip-group-and-pdl-facilities/",
+    "https://bcpch.bangsamoro.gov.ph/school-of-living-traditions/"
+   ],
+   "images": [],
+   "model": null,
+   "heritage": [
+    {
+     "status": "Taught in a School of Living Traditions",
+     "body": "BCPCH",
+     "note": "Monom, hand-sewn weaving in bamboo, rattan and nito strips is one of the workshops in BCPCH's School of Living Traditions.",
+     "source": "https://bcpch.bangsamoro.gov.ph/school-of-living-traditions/"
+    }
+   ]
+  },
+  {
+   "slug": "tubao",
+   "name": "Tubao headcloth",
+   "local_name": "tubao (Maranao; also used in Maguindanaon)",
+   "group": "attire",
+   "people": "Maranao, Maguindanaon, Iranun, Teduray",
+   "province": "maguindanao",
+   "towns": [],
+   "summary": "The tubao is a square handwoven cloth worn mostly by men as a headcloth, used by most Bangsamoro groups and some lumad peoples of Mindanao. The word is Maranao and was later taken up by the Maguindanaon. How it is tied tells others whether the wearer is single, married, separated, widowed or of a royal family.",
+   "materials": "Handwoven cloth in plain or banded colour fields, usually red; the pieces in the BCPCH collection measure about 68 x 68 cm and 65 x 61 cm.",
+   "how_made": "Woven in plain or banded fields of colour. It resembles the telia rumal of Andhra Pradesh in India, but unlike it the tubao is not ikat-dyed and has no supplementary-weft patterning.",
+   "uses": "Worn as headgear, tied in different ways to show civil and social status: widower, separated, royal family member, single or married.",
+   "motifs": [],
+   "colors": [
+    "#B5281F",
+    "#7A1E22",
+    "#E3B23C",
+    "#3C7A3E"
+   ],
+   "makers": [],
+   "where_to_see": [
+    {
+     "name": "Bangsamoro Museum, Woven Heritage | Tempered Identity exhibition",
+     "place": "Cotabato City",
+     "note": "Two tubao were shown in this exhibition of Bangsamoro textiles and blades, first opened in March 2024.",
+     "source": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/01/Woven-Heritage-Tempered-Indentity-Catalogue.pdf#page=3"
+    }
+   ],
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/01/Woven-Heritage-Tempered-Indentity-Catalogue.pdf#page=12",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/01/Woven-Heritage-Tempered-Indentity-Catalogue.pdf#page=13"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "pira",
+   "name": "Pira",
+   "local_name": "pira (Yakan)",
+   "group": "blade",
+   "people": "Yakan",
+   "province": "basilan",
+   "towns": [],
+   "summary": "The pira is the Yakan's favoured working and fighting blade: single-edged and heavy, narrow near the hilt and widening to a broad tip. It is a tool for the farm as much as for fighting, so it is not used in ceremonies, does not show status and is not accepted as dowry.",
+   "materials": "Steel blade; hilt of wood or carabao horn; metal ferrule; braided twine grip; wooden scabbard carved with ukkil and lashed with rattan. The piece in the BCPCH collection has a 38 cm blade and is 53 cm overall.",
+   "how_made": "The blade widens towards the tip to give weight to a cut while keeping a point for thrusting. Older hilts were shaped after the kakatua (cockatoo) and lengthened to balance the heavy blade, long enough to guard the forearm; a modern Basilan pira has a simple wooden handle that abstracts the cockatoo crest.",
+   "uses": "Farming and fighting. Yakan say a du'a while sharpening it: 'In the name of God, the merciful and compassionate: wake this blade for cutting.' It is valued below the barong and the kris.",
+   "motifs": [
+    {
+     "name": "kakatua",
+     "meaning": "cockatoo; the shape of older hilts and the crest of modern ones"
+    },
+    {
+     "name": "ukkil",
+     "meaning": "carved decoration on the scabbard"
+    }
+   ],
+   "colors": [
+    "#8A8F96",
+    "#B07A3B",
+    "#6B4226"
+   ],
+   "makers": [],
+   "where_to_see": [
+    {
+     "name": "Bangsamoro Museum, Woven Heritage | Tempered Identity exhibition",
+     "place": "Cotabato City",
+     "note": "A modern pira from Basilan was shown in this exhibition, first opened in March 2024.",
+     "source": "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/01/Woven-Heritage-Tempered-Indentity-Catalogue.pdf#page=31"
+    }
+   ],
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/01/Woven-Heritage-Tempered-Indentity-Catalogue.pdf#page=30",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/01/Woven-Heritage-Tempered-Indentity-Catalogue.pdf#page=31"
+   ],
+   "images": [
+    {
+     "file": "File:Mindanao pira yakan early-20thC.JPG",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Mindanao_pira_yakan_early-20thC.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Mindanao_pira_yakan_early-20thC.JPG",
+     "author": "Filhistorydotcom (filhistory.com)",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 954,
+     "height": 745,
+     "caption": "An early 20th-century Yakan pira from Basilan with its wooden scabbard; the hilt is wood with a woven rattan ferrule."
+    },
+    {
+     "file": "File:Mindanao pira 1960s version.JPG",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Mindanao_pira_1960s_version.JPG",
+     "page": "https://commons.wikimedia.org/wiki/File:Mindanao_pira_1960s_version.JPG",
+     "author": "Lorenz Lasco (filhistory.com)",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 783,
+     "height": 736,
+     "caption": "A Yakan pira, probably from the 1960s, with a horn hilt and brass ferrule."
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "cotabato-brassware",
+   "name": "Cotabato brassware",
+   "local_name": "garul (Iranun)",
+   "group": "brass",
+   "people": "Iranun",
+   "province": "cotabato-city",
+   "towns": [
+    "Cotabato City (Kalanganan)",
+    "Sultan Kudarat"
+   ],
+   "summary": "Cotabato has its own brass-casting tradition, best known for the low, finely hand-engraved garul; in 1994 the CCP Encyclopedia credited it to the Iranun and ranked it second only to Maranao brass. In Cotabato City the Cotabato Brassware Association, whose craftsmen come from the Kalanganan district and nearby Sultan Kudarat, makes traditional brassware for export from scrap bronze.",
+   "materials": "Brass, cast from scrap bronze.",
+   "how_made": "Scrap metal is melted and cast, then ground, drilled and buffed: the equipment the DTI gave the association's Kalanganan production centre in 2014 was a furnace-type oven for molten scrap brass, grinders, a 13 mm push drill, an air compressor, a blower and electric motors for buffing. The garul is finished with hand engraving.",
+   "uses": "Traditional brassware made for sale, including for export.",
+   "motifs": [],
+   "colors": [
+    "#C9A548",
+    "#8C6B2A"
+   ],
+   "makers": [
+    {
+     "name": "Cotabato Brassware Association (CBA)",
+     "note": "Brassware makers from the Kalanganan district of Cotabato City and from Sultan Kudarat, Maguindanao; president Mohammad Mang signed for P177,776 of DTI Shared Service Facility equipment in October 2014.",
+     "source": "https://www.philstar.com/nation/2014/10/11/1379034/cotabato-brass-producers-awarded-new-equipment/amp/"
+    }
+   ],
+   "where_to_see": [],
+   "sources": [
+    "https://nlpdl.nlp.gov.ph/CC01/monographs/1994/NLP00VM052mcd/v3/v17.pdf",
+    "https://www.philstar.com/nation/2014/10/11/1379034/cotabato-brass-producers-awarded-new-equipment/amp/"
+   ],
+   "images": [
+    {
+     "file": "File:Cotabato City Museum 2.jpg",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Cotabato_City_Museum_2.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Cotabato_City_Museum_2.jpg",
+     "author": "MarkoDalisay",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+     "width": 720,
+     "height": 404,
+     "caption": "Brass jars and a kulintang on display in Cotabato City; the photographer describes them as brassware made in the city."
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "water-hyacinth-craft",
+   "name": "Water hyacinth crafts",
+   "local_name": "pusaw (Maguindanaon)",
+   "group": "basketry",
+   "people": "Maguindanaon",
+   "province": "maguindanao-del-sur",
+   "towns": [
+    "General S.K. Pendatun",
+    "Cotabato City"
+   ],
+   "summary": "Water hyacinth covers much of the Liguasan Marsh and clogs the Rio Grande de Mindanao, and Maguindanaon communities dry, braid and weave its stalks into bags, pouches, slippers, mats and home decor. The BCPCH teaches it in its School of Living Tradition alongside inaul weaving and brassware making.",
+   "materials": "Dried stalks of the water hyacinth variety called pusaw in Maguindanaon, harvested in the Liguasan Marsh; the butiti and sawa varieties are not recommended. Dye is optional.",
+   "how_made": "The stalks are sun-dried until light brown, cut lengthwise into thin strands and braided into a long strand, which can be dyed any colour. The braid is then woven into the finished pieces.",
+   "uses": "Bags, pouches, slippers, mats and home decor; the Maguindanaon sayap hat can also be woven from water hyacinth.",
+   "motifs": [],
+   "colors": [],
+   "makers": [
+    {
+     "name": "Water hyacinth project, General S.K. Pendatun",
+     "note": "A community industry that in 2013 employed more than 100 widows of MILF rebels and out-of-school young people, backed by the OPAPP PAMANA programme, the DSWD and the provincial government.",
+     "source": "https://www.philstar.com/nation/2013/01/18/898442/moro-communities-eye-abundant-water-hyacinths-income-source/amp/"
+    },
+    {
+     "name": "Cotabato City residents' association",
+     "note": "An association making bags and home decor from dried water hyacinth stalks that had received DTI Shared Service Facility equipment by 2014.",
+     "source": "https://www.philstar.com/nation/2014/10/11/1379034/cotabato-brass-producers-awarded-new-equipment/amp/"
+    }
+   ],
+   "where_to_see": [],
+   "sources": [
+    "https://bcpch.bangsamoro.gov.ph/school-of-living-traditions/",
+    "https://www.philstar.com/nation/2013/01/18/898442/moro-communities-eye-abundant-water-hyacinths-income-source/amp/",
+    "https://www.philstar.com/nation/2014/10/11/1379034/cotabato-brass-producers-awarded-new-equipment/amp/",
+    "https://bangsamoro.gov.ph/news/latest-news/bcpch-advances-cultural-preservation-thru-weaving-training-in-sga/",
+    "https://bcpch.bangsamoro.gov.ph/wp-content/uploads/2025/02/Page_Compressed-BARMM-CTB_009-downsize-version-1-compressed.pdf#page=14"
+   ],
+   "images": [],
+   "model": null,
+   "heritage": [
+    {
+     "status": "Taught in a School of Living Traditions",
+     "body": "BCPCH",
+     "note": "Braiding and weaving the pusaw water hyacinth of the Liguasan Marsh into bags, pouches and slippers is one of the workshops in BCPCH's School of Living Traditions.",
+     "source": "https://bcpch.bangsamoro.gov.ph/school-of-living-traditions/"
+    }
+   ]
+  },
+  {
+   "slug": "lakub",
+   "name": "Lakub",
+   "local_name": "lakub (Maranao)",
+   "group": "carving",
+   "people": "Maranao",
+   "province": "lanao-del-sur",
+   "towns": [],
+   "summary": "The lakub is a Maranao tobacco container made from a length of bamboo and dyed in bold colours. The CCP Encyclopedia calls it a fine example of Maranao bamboo craft.",
+   "materials": "Bamboo, dyes and paint; a lidded example in the Spencer Museum of Art, made in Lanao del Sur in the late 1800s or early 1900s, is 55.5 cm tall.",
+   "how_made": "The dyeing is the hard part: parts of the bamboo are covered while the rest is dipped in dye, building up patterns in violet, yellow, dull red and dull green. Museum records list carving, dyeing and painting.",
+   "uses": "A container for tobacco.",
+   "motifs": [],
+   "colors": [
+    "#6B4C8A",
+    "#E0B23A",
+    "#A8432F",
+    "#5E7A45"
+   ],
+   "makers": [],
+   "where_to_see": [],
+   "sources": [
+    "https://nlpdl.nlp.gov.ph/CC01/monographs/1994/NLP00VM052mcd/v1/v36.pdf",
+    "https://spencerart.ku.edu/art/collections-online/object/33841"
+   ],
+   "images": [
+    {
+     "file": "File:Lakub bamboo handicraft October 3 2026 Maranao Marantao 04.jpg",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Lakub_bamboo_handicraft_October_3_2026_Maranao_Marantao_04.jpg/1280px-Lakub_bamboo_handicraft_October_3_2026_Maranao_Marantao_04.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Lakub_bamboo_handicraft_October_3_2026_Maranao_Marantao_04.jpg",
+     "author": "P1898",
+     "license": "CC BY 4.0",
+     "license_url": "https://creativecommons.org/licenses/by/4.0",
+     "width": 1280,
+     "height": 1023,
+     "caption": "Dyed bamboo lakub stacked at a craft fair stall; the photographer credits them to Marantao, Lanao del Sur."
+    },
+    {
+     "file": "File:Lakub bamboo handicraft October 3 2026 Maranao Marantao 02.jpg",
+     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Lakub_bamboo_handicraft_October_3_2026_Maranao_Marantao_02.jpg/1280px-Lakub_bamboo_handicraft_October_3_2026_Maranao_Marantao_02.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Lakub_bamboo_handicraft_October_3_2026_Maranao_Marantao_02.jpg",
+     "author": "P1898",
+     "license": "CC BY 4.0",
+     "license_url": "https://creativecommons.org/licenses/by/4.0",
+     "width": 1280,
+     "height": 758,
+     "caption": "Lakub in many sizes, dyed in yellow, red, green and violet patterns."
+    }
+   ],
+   "model": null
+  },
+  {
+   "slug": "maranao-mat",
+   "name": "Maranao mat",
+   "local_name": "",
+   "group": "mat",
+   "people": "Maranao",
+   "province": "lanao-del-sur",
+   "towns": [],
+   "summary": "Maranao mats are woven from sesed, a local tikug sedge, in purely geometric designs whose motifs each have a name. A mat takes about 2 to 3 weeks and is sold at market to a comprador.",
+   "materials": "Sesed (tikug), dyed in colours called atar.",
+   "how_made": "The sesed is gathered, sun-dried, cooked and dyed, then dried again and flattened. The length of the sesed sets the width of each panel (da-ir), and the number of panels sets the size of the mat. Weaving is done on flat ground in the early morning or late afternoon, when the cool air keeps the sesed from turning brittle.",
+   "uses": "Sold at market; the price depends on size, workmanship and pattern, and finer patterns in more subdued colours fetch more.",
+   "motifs": [
+    {
+     "name": "binitoon",
+     "meaning": "star-like"
+    },
+    {
+     "name": "onsod",
+     "meaning": "pyramid"
+    },
+    {
+     "name": "matilak",
+     "meaning": "circle"
+    },
+    {
+     "name": "saragonting",
+     "meaning": "cross-like"
+    }
+   ],
+   "colors": [],
+   "makers": [],
+   "where_to_see": [],
+   "sources": [
+    "https://nlpdl.nlp.gov.ph/CC01/monographs/1994/NLP00VM052mcd/v1/v36.pdf",
+    "https://spencerart.ku.edu/art/collections-online/object/33884"
+   ],
+   "images": [],
+   "model": null
+  },
+  {
+   "slug": "malong-a-andon",
+   "name": "Malong a andon",
+   "local_name": "andon (Maranao)",
+   "group": "textile",
+   "people": "Maranao",
+   "province": "lanao-del-sur",
+   "towns": [],
+   "summary": "Andon is one of the three classes of Maranao malong, alongside landap and karangkali. Its pattern is made by tie-dyeing the thread before weaving, so the undyed parts form the motif.",
+   "materials": "Tie-dyed thread.",
+   "how_made": "Parts of the thread are bound and the rest dyed; the parts left undyed form the motif once the cloth is woven.",
+   "uses": "Worn as the malong, the tubular garment.",
+   "motifs": [
+    {
+     "name": "katiambang",
+     "meaning": "a complete tie-dye design"
+    },
+    {
+     "name": "sinalapa",
+     "meaning": "enclosed designs"
+    },
+    {
+     "name": "patola",
+     "meaning": "vertical and geometric designs"
+    }
+   ],
+   "colors": [],
+   "makers": [],
+   "where_to_see": [],
+   "sources": [
+    "https://nlpdl.nlp.gov.ph/CC01/monographs/1994/NLP00VM052mcd/v1/v36.pdf"
+   ],
+   "images": [],
    "model": null
   }
  ],
@@ -3605,5 +4330,43 @@
    "source": "https://tribune.net.ph/2025/10/27/traditional-weaver-from-tawi-tawi"
   }
  ],
- "notes": "Dropped: ornament/jewellery group (no source on Maranao or Maguindanaon gold, beadwork or headdresses could be read; only an LLM-generated page and slide decks turned up). Malong a andon dropped (only a passing mention in Wikipedia). Teduray and Iranun weaving (no readable source; a Commons caption names an Iranun Weaving Center in Sultan Kudarat but was not used as a fact source). Yakan music (Uwang Ahadas, GAMABA 2000, Lamitan: gabbang, kwintangan) left out because no free image of Yakan instruments was found. Kubing jaw harp and pira (Yakan sword) left out as too thinly sourced. Barong sword and Tausug pis syabit excluded as Sulu crafts; Darhata Sawabi (Parang, Sulu) excluded. Kalilang festival dropped (no source found). Rasid Laidon, named in a search snippet as a Tugaya brass caster and 1990 awardee, is not in the NCCA GAMABA list on Wikipedia and was not used. Blocked or not read: NCCA (403), PNA article URLs (404), PCIJ needed an expired-certificate bypass; Inquirer, MindaNews and PIA skipped per instructions, so the Inquirer price for Yakan cloth (P400 a metre) was not used. The inaul price (PTV, February 2018) is the only price stated by a news source; Inaul Festival coverage stops at 2019, so its current schedule after the 2022 split of Maguindanao is unconfirmed. Province is a single slug: inaul is woven in both Maguindanao provinces (Buluan and Datu Piang in del Sur; Sultan Kudarat and Sultan Mastura in del Norte). Towns are left empty where no source says where an item is made. Colours are judgement from photos. Image urls: Commons no longer serves 1600px thumbnails (a 1600px request returns HTTP 400); the API returns its 1920px bucket on thumb.wikimedia.org, or the original file when it is narrower than that, and width/height match the url given."
+ "markets": [
+  {
+   "name": "Bangsamoro Ramadhan Trade Fair",
+   "place": "Bangsamoro Government Center, Cotabato City",
+   "kind": "fair",
+   "note": "MTIT's annual month-long fair runs through Ramadhan (the 2026 edition opened on 16 February with 60 MSMEs); it sells mostly halal food but also handcrafted items and gift items, though no specific crafts are named.",
+   "url": null,
+   "source": "https://bangsamoro.gov.ph/news/latest-news/ramadhan-trade-fair-opens-at-barmm-govt-center-supporting-local-msmes/",
+   "as_of": "2026-02"
+  },
+  {
+   "name": "Shariff Kabunsuan Festival Agri-Trade Fair",
+   "place": "Bangsamoro Government Center, Cotabato City",
+   "kind": "fair",
+   "note": "A 3-day fair held in mid-December during the Shariff Kabunsuan Festival (16–18 December in 2024), where 20 cooperatives sold local products including cultural attire.",
+   "url": null,
+   "source": "https://bangsamoro.gov.ph/news/latest-news/sk-fest-2024-agri-trade-fair-opens-doors-to-economic-development-for-bangsamoro-entrepreneurs/",
+   "as_of": "2024-12"
+  },
+  {
+   "name": "Lami-Lamihan Festival Tourism Trade Fair and Gallery Walk",
+   "place": "Barangay Malinis, Lamitan City, Basilan",
+   "kind": "fair",
+   "note": "MTIT-Basilan's trade fair for local producers and artisans, held during Lamitan's late-June Lami-Lamihan Festival (opened 22 June 2026); no specific crafts are listed.",
+   "url": null,
+   "source": "https://bangsamoro.gov.ph/news/latest-news/mtit-basilan-reaffirms-support-to-msmes-tourism-at-lamitans-lami-lamihan-festival/",
+   "as_of": "2026-06"
+  },
+  {
+   "name": "MSU-Marawi Pasalubong Center",
+   "place": "Marawi City, Lanao del Sur",
+   "kind": "shop",
+   "note": "Stocks The Meranaw Hijab collections, including one inspired by langkit; it is the only crafts-adjacent stock confirmed, so other Meranaw crafts are unverified.",
+   "url": null,
+   "source": "https://bangsamoro.gov.ph/news/feature-story/bangsamoro-lifestyle-meranaw-hijab-embracing-cultural-identity-through-modest-fashion/",
+   "as_of": "2024-12"
+  }
+ ],
+ "notes": "Dropped: ornament/jewellery group (no source on Maranao or Maguindanaon gold, beadwork or headdresses could be read; only an LLM-generated page and slide decks turned up). Iranun weaving is under inaul: the BARMM describes inawl as the handwoven malong of both the Iranun and the Maguindanaon; a Commons caption naming an Iranun Weaving Center was not used, as its photo shows a beaded blouse. Yakan music (Uwang Ahadas, GAMABA 2000, Lamitan: gabbang, kwintangan) left out because no free image of Yakan instruments was found. Kubing jaw harp left out as too thinly sourced. Barong sword and Tausug pis syabit excluded as Sulu crafts; Darhata Sawabi (Parang, Sulu) excluded. Kalilang festival dropped (no source found). Rasid Laidon is listed as a Tugaya brass caster from the National Library's metalcraft monograph, which calls him a 1990 Manlilikha ng Bayan; he is not in the GAMABA list, so no honour is shown for him. Blocked or not read: NCCA (403), PNA article URLs (404), PCIJ needed an expired-certificate bypass; Inquirer, MindaNews and PIA skipped per instructions, so the Inquirer price for Yakan cloth (P400 a metre) was not used. Prices are dated and mostly 2018–2022; Inaul Festival coverage stops at 2019, so its current schedule after the 2022 split of Maguindanao is unconfirmed. Province is a single slug: inaul is woven in both Maguindanao provinces (Buluan and Datu Piang in del Sur; Sultan Kudarat and Sultan Mastura in del Norte). Towns are left empty where no source says where an item is made. Colours are judgement from photos. Image urls: Commons no longer serves 1600px thumbnails (a 1600px request returns HTTP 400); the API returns its 1920px bucket on thumb.wikimedia.org, or the original file when it is narrower than that, and width/height match the url given. Added 23 October 2026: makers and honours (GAMABA proclamations on lawphil.net, the BCPCH pages on its GAMABA awardees and its 2024 Cultural Masters), heritage status (GAMABA, BCPCH's School of Living Traditions, at-risk statements, and the NCCA intangible heritage inventory, which could be read only through Wikipedia's transcription and is cited so), places to buy and dated prices, public money from PhilGEPS, and 8 crafts: monom (Teduray basketry), tubao, pira, Cotabato brassware, water hyacinth craft, lakub, the Maranao sedge mat and malong a andon, from BCPCH, the CCP Encyclopedia of Philippine Art (1994), Philstar, SunStar and museum records. Proposed UNESCO nominations are not shown: only Wikipedia records them. Still without a readable source: Maranao and Maguindanaon jewellery, Iranun bukabok baskets (the QAGOMA pages blocked fetches), and any craft of the Special Geographic Area beyond an inaul training course in Old Kaabakan."
 }

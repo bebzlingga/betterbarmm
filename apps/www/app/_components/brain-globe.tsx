@@ -84,16 +84,14 @@ type Props = {
 	onPick: (id: string | null) => void
 	/** Drawn above the zoom buttons: the 3D / 2D switch. */
 	toolbar?: React.ReactNode
-	/** Everything a pick reaches; the camera fits it on screen. */
-	chain?: Set<string> | null
 }
 
-export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick, toolbar, chain }: Props) {
+export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick, toolbar }: Props) {
 	const box = useRef<HTMLDivElement>(null)
-	const state = useRef({ lit, edgeLit, picked, onHover, onPick, chain })
+	const state = useRef({ lit, edgeLit, picked, onHover, onPick })
 	// The frame loop reads the latest of these; kept current after every render.
 	useEffect(() => {
-		state.current = { lit, edgeLit, picked, onHover, onPick, chain }
+		state.current = { lit, edgeLit, picked, onHover, onPick }
 	})
 	const api = useRef<{ zoom: (k: number) => void; reset: () => void; spin: (on: boolean) => void } | null>(null)
 	const [spinning, setSpinning] = useState(true)
@@ -265,7 +263,6 @@ export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick
 		let flyLook: THREE.Vector3 | null = null
 		let flyUntil = 0
 		let zoomTo: number | null = null
-		let lastPicked: string | null = null
 		const fly = (to: THREE.Vector3, look: THREE.Vector3) => {
 			flyTo = to
 			flyLook = look
@@ -288,26 +285,6 @@ export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick
 		}
 		host.addEventListener('wheel', wheel, { passive: false, capture: true })
 
-		/** Fit a set of nodes on screen, labels and all. The camera always looks at the globe's centre,
-		 *  so the globe still turns about itself afterwards; only the angle it is seen from and the
-		 *  distance change. */
-		const frame3d = (ids: string[]) => {
-			const pts = ids.map((id) => at.get(id)).filter(Boolean) as THREE.Vector3[]
-			if (!pts.length) return
-			const centre = pts.reduce((c, p) => c.add(p), new THREE.Vector3()).multiplyScalar(1 / pts.length)
-			const dir = centre.length() > 0.3 ? centre.normalize() : camera.position.clone().normalize()
-			const v = THREE.MathUtils.degToRad(camera.fov) / 2
-			const reach = Math.tan(Math.min(v, Math.atan(Math.tan(v) * camera.aspect))) * 0.86
-			// Far enough back that every point, with room for its label, sits inside the view cone.
-			let dist = controls.minDistance
-			for (const p of pts) {
-				const along = p.dot(dir)
-				const across = p.clone().sub(dir.clone().multiplyScalar(along)).length() + 0.45
-				dist = Math.max(dist, along + across / reach)
-			}
-			fly(dir.clone().multiplyScalar(clampDist(dist)), new THREE.Vector3())
-		}
-
 		api.current = {
 			zoom: (k) => {
 				land()
@@ -322,12 +299,7 @@ export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick
 		const tick = () => {
 			frame = requestAnimationFrame(tick)
 			const dt = clock.getDelta()
-			const { lit, edgeLit, picked, chain } = state.current
-
-			if (picked !== lastPicked) {
-				lastPicked = picked
-				if (picked) frame3d(chain?.size ? [...chain] : [picked])
-			}
+			const { lit, edgeLit, picked } = state.current
 			if (flyTo && flyLook) {
 				const k = 1 - Math.exp(-dt * 4.5)
 				camera.position.lerp(flyTo, k)

@@ -7,8 +7,8 @@ import { MemberPayFigures } from './_components/member-pay'
 import { PageHeader } from './_components/page-header'
 import { Reveal } from './_components/reveal'
 import { StatBand } from './_components/stat-band'
-import { getCategoryCounts, getDataset, registryGeneratedAt } from './_lib/legislation-data'
-import { getOfficialMeasuresByCategory, type OfficialMeasure } from './_lib/official-measures'
+import { getCategoryCounts, getDataset } from './_lib/legislation-data'
+import { getOfficialMeasuresByCategory, getOfficialMeasuresMeta, type OfficialMeasure } from './_lib/official-measures'
 
 /** The seat-cost section, held back until it is ready to run again. */
 const SHOW_SEAT_COST = false
@@ -26,10 +26,10 @@ export default function HomePage() {
 		counts.acts + counts.bills + counts['adopted-resolutions'] + counts['proposed-resolutions']
 	const codes = getDataset('acts').records.filter((record) => record.types.some((type) => type.value === 'priority_code'))
 	const priorityCodes = codes.length
-	// "Bangsamoro Civil Service Code of 2021" → "Civil Service", oldest first.
+	// "Bangsamoro Civil Service Code of 2021" → "Civil Service", "Indigenous Peoples' Act of 2024" → "Indigenous Peoples", oldest first.
 	const codeNames = [...codes]
 		.sort((a, b) => a.number - b.number)
-		.map((r) => (r.shortTitle || r.title).replace(/^Bangsamoro\s+/i, '').replace(/\s+Code\b.*$/i, ''))
+		.map((r) => (r.shortTitle || r.title).replace(/^Bangsamoro\s+/i, '').replace(/\s+(Code|Rights Act|Act)\b.*$/i, '').replace(/['’]$/, ''))
 
 	/* Each kind of measure by the year it was filed (or, for acts and adopted
 	   resolutions, ratified or adopted), 2019 to now. */
@@ -120,7 +120,7 @@ export default function HomePage() {
 				title='Every law the region has made,'
 				titleMuted='in words you already know.'
 				description='The Bangsamoro Parliament publishes its record across six separate archives. This puts them in one place — searchable, filterable, and written in language you do not need a law degree to read.'
-				meta={`${totalRecords.toLocaleString()} records / registry generated ${registryGeneratedAt}`}
+				meta={`${totalRecords.toLocaleString()} records / checked against Parliament ${getOfficialMeasuresMeta().generatedAt}`}
 			/>
 
 			<StatBand
@@ -135,8 +135,9 @@ export default function HomePage() {
 					},
 					{
 						label: 'Priority codes',
-						value: priorityCodes.toLocaleString(),
-						detail: 'The five codes the organic law asked Parliament to pass first.',
+						// The Organic Law mandates seven; the Revenue Code is the one the transition did not pass.
+						value: `${priorityCodes} of 7`,
+						detail: 'The codes the Organic Law asked Parliament to pass during the transition. The Revenue Code is still pending.',
 						marks: codeNames,
 					},
 					{
