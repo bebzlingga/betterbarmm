@@ -37,14 +37,13 @@ const discoverSections = [
 const secondaryLinks = [
 	// This week is hidden for now; the page still builds at /this-week.
 	// { key: 'this-week', href: '/this-week', label: 'This week' },
-	// Latest news is hidden for now; the page still builds at /news.
-	// { key: 'news', href: '/news', label: 'Latest news' },
+	{ key: 'news', href: '/news', label: 'Latest news' },
 	// Incident Watch and Crafts are reached through the strip's Projects switch, not the bar; phones get a row each in the menu below.
 	{ key: 'directory', href: '/directory', label: 'Directory' },
 	{ key: 'services', href: '/services', label: 'Services' },
 	{ key: 'explainers', href: '/explainers', label: 'Explainers' },
 	// The brain is reached through the strip's Projects switch, which opens its dialog over whatever page is open.
-	{ key: 'about', href: '/about', label: 'About' },
+	// About lives in the strip above, not the bar; phones get it in the menu's BetterBARMM links.
 ] as const
 
 /**
@@ -373,7 +372,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 								</Link>
 							</div>
 
-							<UtilityMenuLinks links={ESTATE_LINKS.filter((link) => link.href !== '/about')} onNavigate={closeMenu} />
+							<UtilityMenuLinks links={ESTATE_LINKS} onNavigate={closeMenu} />
 
 							{/* Last, under the links: the one row here that changes the page
 							    rather than leaving it. The button carries the icon and the

@@ -181,6 +181,8 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 											</p>
 										) : null}
 										{f.address ? <p className='mt-0.5 text-[13px] text-[var(--ink-3)]'>{f.address}</p> : null}
+										{/* The source's own caveat: an office listed twice, a number that is a program's, not the office's. */}
+										{f.note ? <p className='mt-1 text-[12px] leading-[1.55] text-[var(--ink-3)]'>{f.note}</p> : null}
 										{f.phones.length || f.emails?.length ? (
 											<ul className='mt-2.5 flex flex-wrap gap-x-5 gap-y-1 text-[13.5px]'>
 												{f.phones.map((p) => (

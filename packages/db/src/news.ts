@@ -91,7 +91,12 @@ const OUTLET_NAMES: Record<string, string> = {
 
 /** The region named in a headline or teaser. Sulu left the region in 2024 and is not on the list. */
 const ABOUT_THE_REGION =
-	/\b(BARMM|Bangsamoro|Cotabato City|Maguindanao|Lanao del Sur|Marawi|Basilan|Lamitan|Tawi-?Tawi|Special Geographic Area|MILF|MNLF)\b/i
+	/\b(BARMM|Bangsamoro|Cotabato City|Maguindanao|Lanao del Sur|Marawi|Basilan|Lamitan|Tawi-?Tawi|Special Geographic Area|MNLF)\b/i
+/* "MILF" alone also names a genre of spam, and Google News indexes it: a bare MILF counts only beside a word of the
+   peace process. */
+const MILF = /\bMILF\b/
+const MILF_CONTEXT = /Moro|combatant|decommission|peace|Murad|OPAPRU|UBJP|rebel|camp|commander|stronghold|Mindanao/i
+export const aboutTheRegion = (text: string) => ABOUT_THE_REGION.test(text) || (MILF.test(text) && MILF_CONTEXT.test(text))
 
 const ENTITIES: Record<string, string> = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', hellip: '…', ndash: '–', mdash: '—', rsquo: '’', lsquo: '‘', rdquo: '”', ldquo: '“' }
 
@@ -101,6 +106,8 @@ function text(raw: string) {
 		.replace(/<[^>]+>/g, ' ')
 		.replace(/&#(\d+);/g, (_, n: string) => String.fromCodePoint(Number(n)))
 		.replace(/&#x([0-9a-f]+);/gi, (_, n: string) => String.fromCodePoint(parseInt(n, 16)))
+		.replace(/&([a-z]+);/gi, (m, name: string) => ENTITIES[name.toLowerCase()] ?? m)
+		// Some feeds encode twice ("&amp;nbsp;"): the first pass leaves "&nbsp;", so a second one finishes it.
 		.replace(/&([a-z]+);/gi, (m, name: string) => ENTITIES[name.toLowerCase()] ?? m)
 		.replace(/\s+/g, ' ')
 		.trim()
@@ -132,7 +139,7 @@ export async function readFeed(feed: Feed): Promise<FetchedItem[]> {
 		const source = feed.source ?? (OUTLET_NAMES[named] ?? (named || feed.name))
 		if (named && title.endsWith(` - ${named}`)) title = title.slice(0, -(named.length + 3))
 		const summary = feed.name.startsWith('Google News') ? '' : teaser(text(tag(item, 'description')))
-		if (!feed.regional && !ABOUT_THE_REGION.test(`${title} ${summary}`)) continue
+		if (!feed.regional && !aboutTheRegion(`${title} ${summary}`)) continue
 		const date = new Date(text(tag(item, 'pubDate')) || text(tag(item, 'dc:date')))
 		out.push({ url, title, source, summary, feed: feed.name, published_at: Number.isNaN(date.getTime()) ? null : date.toISOString() })
 	}

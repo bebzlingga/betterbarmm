@@ -44,6 +44,7 @@ spent is not published by anyone, and is not here. See [Gaps](#what-is-not-here)
 | Programs & services | `datasets/services/` | small | 35 offices' programs and Citizen's Charter services |
 | Directory | `datasets/directory/` | small | Heads, past heads, field offices and phones of the 35 regional offices; emergency lines by town |
 | Crafts | `datasets/crafts/` | small | 52 crafts of the region in 11 kinds, from research and the BCPCH's Pusaka, with makers, festivals and free-licence photos |
+| Latest news | `datasets/news/` | small | Headlines about the region from 19 October 2026, read from outlets' RSS feeds and Google News (`scripts/fetch_news.ts`), each linked to the outlet's own page (`scripts/resolve_links.py`) |
 | Travel guide | `packages/travel-data/` | — | **Written**, not captured |
 | Region primer | `packages/primer-data/` | — | **Written**, not captured |
 
@@ -181,13 +182,16 @@ in a search result reports a party's seats as however many happened to match.
   `former`; Sulu is left out; the 8 Special Geographic Area towns have no rows.
 - **`funds.json`** (205 KB) — the rest of BLGF's per-LGU publications, one
   section each: **dependency** (Annual Regular Income and BLGF's NTA-dependency
-  ratios, FY 2020–2025 — the median town draws 99.5% of its regular income from
-  the NTA); **disasterFund** (the LDRRMF, **appropriated beside spent**, FY 2020
-  and 2022–2025 — BLGF's FY 2021 file lists no BARMM LGU); **educationFund**
-  (SEF collections and spending by purpose, FY 2020–2025); **propertyRoll**
-  (taxable property and RPT collectible, FY 2022 only); **borrowing** (56 DOF
-  borrowing certificates to 49 BARMM LGUs, 2022–August 2026 — permission to
-  borrow, not loans).
+  ratios, FY 2009–2025 — the median town draws 99.5% of its regular income from
+  the NTA); **disasterFund** (the LDRRMF, **appropriated beside spent**, FY
+  2018–2025); **educationFund** (SEF collections and spending by purpose, FY
+  2009–2025); **propertyRoll** (taxable property and RPT collectible, FY 2022
+  only); **borrowing** (56 DOF borrowing certificates to 49 BARMM LGUs,
+  2022–September 2026 — permission to borrow, not loans; BLGF's 2016–2021 lists
+  are in an older layout, not yet read). Rows are BARMM's by **province**, not by
+  BLGF's region column: that says ARMM before 2019, puts Cotabato City in Region
+  XII before 2019, and files every BARMM LGU under Region IX or XII in FY 2021's
+  LDRRMF, which is how that year once looked empty.
 - **`income-class.json`** — each LGU's income class under DOF DO 074-2024
   (effective 2025, RA 11964's five classes) and DO 23-08 (2008). Most BARMM
   LGUs moved up sharply; two kept a higher old class by law (`retained`).
@@ -309,9 +313,13 @@ publishes. Read on 17 October 2026: 34 heads (the Bangsamoro Agriculture and
 Fisheries Training Institute is a bill, not yet an office), 54 numbers in 22
 offices, 11 emails.
 
-An email is kept only where an official page or document shows it as text;
-most office sites hide theirs from automated readers, and those are not
-decoded. The elected Parliament takes office on 30 October 2026, so the Chief
+An email is kept only where an official page or document shows it as text.
+Many office sites hide theirs from automated readers behind an encoding that
+every visitor's browser undoes; from 23 October 2026 those are decoded, since a
+reader of the page sees them as text. Where an office's site is down or blank,
+its official Facebook page's intro (phone, email, address) is used, read
+through web search, and the source says so; Facebook does not let a script read
+a page directly. The elected Parliament takes office on 30 October 2026, so the Chief
 Minister and the cabinet named here are the interim government's. The page's
 local governments are not in this file: they are the 2025 winners already in
 `datasets/lgu/barmm-lgu.json`.
@@ -326,6 +334,12 @@ Beside it, also read on 17 October 2026:
   ministries, with the head, address and phones each ministry lists. Four
   offices named only "Maguindanao" keep that name; their sources do not say
   which of the two provinces.
+- **`national-offices.json`**: 11 national agencies' offices serving the
+  region (PSA, PhilHealth, SSS, DFA, PRC, COMELEC, CSC, PNP, BFP, PCG, PDEA),
+  read 23 October 2026: what each is for, its address, numbers, email and
+  pages, each with its source. Many publish little; DFA's Cotabato office has
+  been suspended since July 2021, and Pag-IBIG's Cotabato branch is missing
+  because no source gave its address. Shown above Provinces and towns.
 - **`emergency.json`**: police, fire, disaster-response, health and town-hall
   lines for 6 provinces and 49 of the towns, each linked to the LGU page, BFP
   or BARMM release, DTI CMCI profile or PhilHealth facility list it came from.

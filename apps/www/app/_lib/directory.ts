@@ -5,6 +5,7 @@ import emergency from '../../../../datasets/directory/emergency.json'
 import fieldOfficesFile from '../../../../datasets/directory/field-offices.json'
 import historyFile from '../../../../datasets/directory/history.json'
 import lguEmailsFile from '../../../../datasets/directory/lgu-emails.json'
+import nationalFile from '../../../../datasets/directory/national-offices.json'
 import structureFile from '../../../../datasets/directory/structure.json'
 import dataset from '../../../../datasets/directory/offices.json'
 import { offices as serviceOffices } from './services'
@@ -14,9 +15,10 @@ import { offices as serviceOffices } from './services'
 
    The regional government, office by office: its head as the newest
    official source names them, with that source's date, every phone
-   number and email the office publishes in plain text, who headed it
-   before, and its offices in the provinces. Emails a site hides from
-   robots are left out rather than decoded.
+   number and email the office shows a reader (including those a site
+   hides from robots but shows every visitor), who headed it before,
+   and its offices in the provinces. Beside them, the national
+   agencies' offices that serve the region.
 
    Local governments come from the LGU directory: whoever won each
    governorship and mayoralty in COMELEC's canvass, term by term, and
@@ -59,9 +61,33 @@ export type FieldOffice = {
 	emails?: string[]
 	head: { name: string; title: string } | null
 	source: string
+	/** What the source itself leaves unclear, in a sentence for the reader. */
+	note?: string
 }
 
 export const directoryMeta = { generatedAt: dataset.generatedAt as string, note: dataset.note as string }
+
+/** A national agency's office serving the region: what a reader goes there for, and how to reach it. */
+export type NationalOffice = {
+	slug: string
+	agency: string
+	acronym: string
+	office: string
+	/** What a reader goes there for, in a phrase. */
+	for: string
+	head: { name: string; title: string; as_of: string | null; source: string } | null
+	address: string | null
+	phones: string[]
+	emails: string[]
+	website: string | null
+	facebook: string | null
+	/** What the source leaves unclear, or the office's status. */
+	note: string | null
+	sources: { label: string; url: string }[]
+}
+export const nationalOffices = nationalFile.offices as NationalOffice[]
+export const nationalOffice = (slug: string) => nationalOffices.find((o) => o.slug === slug)
+export const nationalMeta = { note: nationalFile.note as string }
 export const emergencyMeta = { note: emergency.note as string }
 export const hotlines = (dataset.hotlines ?? []) as Hotline[]
 

@@ -1,6 +1,6 @@
 {
  "name": "Emergency and public-service numbers, by province and town",
- "generatedAt": "2026-10-17",
+ "generatedAt": "2026-10-23",
  "note": "Police, fire, disaster-response, health and town-hall numbers as official pages and documents printed them, each with its source. Health lines for many towns come from PhilHealth’s lists of accredited government facilities. Numbers change; in a life-threatening emergency call 911.",
  "provinces": [
   {
@@ -19,6 +19,14 @@
   {
    "slug": "lanao-del-sur",
    "lines": [
+    {
+     "kind": "drrm",
+     "name": "Provincial DRRM Office - Lanao del Sur",
+     "phones": [
+      "0921-327-0920"
+     ],
+     "source": "https://www.facebook.com/PDRRMOLDS"
+    },
     {
      "kind": "hall",
      "name": "Provincial Governor's Office",

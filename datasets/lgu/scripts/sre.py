@@ -23,6 +23,7 @@ ALIASES = {
     'bumbaran': 'amai manabilang',
     'datu salibu': 'datu salibo',
     'shariff saydona mustahpa': 'shariff saydona mustapha',
+    'datu blah sinsuat': 'datu blah t sinsuat',  # FY 2016–2017 ARI
 }
 
 NS = '{http://schemas.openxmlformats.org/spreadsheetml/2006/main}'

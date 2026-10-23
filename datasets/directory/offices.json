@@ -1,7 +1,7 @@
 {
  "name": "Directory of the Bangsamoro Government",
- "generatedAt": "2026-10-17",
- "note": "Heads, numbers and emails as the offices' own pages and documents published them, each with its source and date. An email is listed only where an official page shows it as text; many sites hide theirs from automated readers. The elected Parliament takes office on 30 October 2026, and the Chief Minister and the cabinet may change with it. Confirm a number before you rely on it.",
+ "generatedAt": "2026-10-23",
+ "note": "Heads, numbers and emails as the offices' own pages and documents published them, each with its source and date. An email is listed only where an official page shows it as text, including addresses a site hides from automated readers but shows every visitor; where an office's site is down, its official Facebook page's intro is the source. The elected Parliament takes office on 30 October 2026, and the Chief Minister and the cabinet may change with it. Confirm a number before you rely on it.",
  "hotlines": [
   {
    "name": "CM-ACTS, Office of the Chief Minister: text feedback and complaints",
@@ -95,7 +95,9 @@
     "(064) 552-9221",
     "09629270584 (MOH Operation Center Hotline)"
    ],
-   "emails": [],
+   "emails": [
+    "mohbarmm2019info@gmail.com"
+   ],
    "website": "https://moh.bangsamoro.gov.ph",
    "facebook": "https://www.facebook.com/ministryofhealthbarmm",
    "sources": [
@@ -208,7 +210,9 @@
    "phones": [
     "(064) 557-0006"
    ],
-   "emails": [],
+   "emails": [
+    "mpw@bangsamoro.gov.ph"
+   ],
    "website": "https://mpw.bangsamoro.gov.ph",
    "facebook": "https://www.facebook.com/MPWBARMMGov",
    "sources": [
@@ -223,6 +227,10 @@
     {
      "label": "BARMM news, Regional Assembly Building turnover (Minister Guerra), 2026-04-20",
      "url": "https://bangsamoro.gov.ph/news/latest-news/new-assembly-building-strengthens-barmm-parliament-operations/"
+    },
+    {
+     "label": "mpw.bangsamoro.gov.ph About Us, read 2026-10-23",
+     "url": "https://mpw.bangsamoro.gov.ph/about-us/"
     }
    ],
    "checked": null
@@ -290,7 +298,7 @@
    "emails": [
     "mhsd@bangsamoro.gov.ph"
    ],
-   "website": null,
+   "website": "https://mhsd.bangsamoro.gov.ph/",
    "facebook": "https://www.facebook.com/ministryhsd",
    "sources": [
     {
@@ -326,8 +334,10 @@
    "phones": [
     "(064) 421-1187"
    ],
-   "emails": [],
-   "website": null,
+   "emails": [
+    "menre@bangsamoro.gov.ph"
+   ],
+   "website": "https://menre.bangsamoro.gov.ph/",
    "facebook": "https://www.facebook.com/MENREBARMM",
    "sources": [
     {
@@ -360,7 +370,9 @@
     "(064) 557 2819",
     "0917.834.3330"
    ],
-   "emails": [],
+   "emails": [
+    "mtit@bangsamoro.gov.ph"
+   ],
    "website": "https://mtit.bangsamoro.gov.ph/",
    "facebook": "https://www.facebook.com/barmmmtit",
    "sources": [
@@ -397,7 +409,9 @@
    "phones": [
     "(064) 552-1539"
    ],
-   "emails": [],
+   "emails": [
+    "motc@bangsamoro.gov.ph"
+   ],
    "website": "https://motc.bangsamoro.gov.ph/",
    "facebook": "https://www.facebook.com/motcbarmm/",
    "sources": [
@@ -439,7 +453,7 @@
     "most@bangsamoro.gov.ph"
    ],
    "website": "https://most.bangsamoro.gov.ph",
-   "facebook": null,
+   "facebook": "https://www.facebook.com/MOSTBARMMOfficial/",
    "sources": [
     {
      "label": "MOST homepage footer (address, phone)",
@@ -456,6 +470,10 @@
     {
      "label": "Contact details",
      "url": "https://drive.google.com/file/d/12G_mYAMQBV6LOP9DfditfUHpC6q0K6ru/view"
+    },
+    {
+     "label": "MOST BARMM Facebook page intro, read through a web search on 2026-10-23",
+     "url": "https://www.facebook.com/MOSTBARMMOfficial/"
     }
    ],
    "checked": null
@@ -510,7 +528,9 @@
     "(064) 421-3347",
     "+63 997 193 1330"
    ],
-   "emails": [],
+   "emails": [
+    "mole.barmm@bangsamoro.gov.ph"
+   ],
    "website": "https://mole.bangsamoro.gov.ph/",
    "facebook": "https://www.facebook.com/people/Ministry-of-Labor-and-Employment/61553826134522/",
    "sources": [
@@ -543,7 +563,9 @@
    "phones": [
     "(064) 425 5514"
    ],
-   "emails": [],
+   "emails": [
+    "mpos@bangsamoro.gov.ph"
+   ],
    "website": "https://mpos.bangsamoro.gov.ph",
    "facebook": "https://www.facebook.com/mposbarmm",
    "sources": [
@@ -582,9 +604,11 @@
    },
    "address": "BARMM Compound, Gov. Gutierrez Ave., Cotabato City 9600",
    "phones": [],
-   "emails": [],
+   "emails": [
+    "mipa@bangsamoro.gov.ph"
+   ],
    "website": null,
-   "facebook": null,
+   "facebook": "https://www.facebook.com/mipa.bangsamoro/",
    "sources": [
     {
      "label": "BARMM news, IP victims assistance (MIPA Minister Guiamal Abdulrahman), 2026-05-14",
@@ -597,6 +621,10 @@
     {
      "label": "bangsamoro.gov.ph Key Officials page (address), undated",
      "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    },
+    {
+     "label": "MIPA BARMM Facebook page intro, read through a web search on 2026-10-23",
+     "url": "https://www.facebook.com/mipa.bangsamoro/"
     }
    ],
    "checked": null
@@ -644,7 +672,7 @@
    "phones": [],
    "emails": [],
    "website": null,
-   "facebook": null,
+   "facebook": "https://www.facebook.com/sgada.barmm/",
    "sources": [
     {
      "label": "Inquirer, Party switching reshapes Bangsamoro political landscape (CM Macacua appoints Kelie Antao SGA administrator), 2026-07-18",
@@ -657,6 +685,10 @@
     {
      "label": "BARMM news, SGA development plan launch, 2026-01-13",
      "url": "https://bangsamoro.gov.ph/news/latest-news/barmms-sga-poised-for-inclusive-growth-as-sgada-launches-devt-plan-formulation/"
+    },
+    {
+     "label": "SGADA BARMM Facebook page intro, read through a web search on 2026-10-23",
+     "url": "https://www.facebook.com/sgada.barmm/"
     }
    ],
    "checked": null
@@ -673,7 +705,9 @@
    },
    "address": null,
    "phones": [],
-   "emails": [],
+   "emails": [
+    "bpa@bangsamoro.gov.ph"
+   ],
    "website": "https://bpa.bangsamoro.gov.ph/",
    "facebook": "https://www.facebook.com/bpabarmm",
    "sources": [
@@ -688,6 +722,10 @@
     {
      "label": "bangsamoro.gov.ph footer link to BPA Facebook",
      "url": "https://bangsamoro.gov.ph/contact-us/"
+    },
+    {
+     "label": "Bangsamoro Pilgrimage Authority Facebook page intro, read through a web search on 2026-10-23",
+     "url": "https://www.facebook.com/bpabarmm/"
     }
    ],
    "checked": null
@@ -704,9 +742,11 @@
    },
    "address": null,
    "phones": [],
-   "emails": [],
+   "emails": [
+    "bdi@bangsamoro.gov.ph"
+   ],
    "website": "https://bdi.bangsamoro.gov.ph/",
-   "facebook": null,
+   "facebook": "https://www.facebook.com/bdibarmm2020",
    "sources": [
     {
      "label": "BARMM news, Zakat governance consultation (Bangsamoro Mufti Sheikh Abdulrauf Guialani), 2026-07-13",
@@ -715,6 +755,10 @@
     {
      "label": "BDI website (Under Construction page)",
      "url": "https://bdi.bangsamoro.gov.ph/"
+    },
+    {
+     "label": "Bangsamoro Darul-Ifta' BARMM Facebook page intro, read through a web search on 2026-10-23",
+     "url": "https://www.facebook.com/bdibarmm2020"
     }
    ],
    "checked": null
@@ -805,7 +849,9 @@
    "phones": [
     "(064) 421-2562"
    ],
-   "emails": [],
+   "emails": [
+    "bwcbarmm@gmail.com"
+   ],
    "website": "https://bwc.bangsamoro.gov.ph/",
    "facebook": "https://www.facebook.com/barmmwomen",
    "sources": [
@@ -824,6 +870,10 @@
     {
      "label": "Contact details",
      "url": "https://bwc.bangsamoro.gov.ph/wp-json/wp/v2/pages?search=contact"
+    },
+    {
+     "label": "bwc.bangsamoro.gov.ph About Us, read 2026-10-23",
+     "url": "https://bwc.bangsamoro.gov.ph/about-us/"
     }
    ],
    "checked": null
@@ -877,9 +927,11 @@
    "phones": [
     "064-421-1135"
    ],
-   "emails": [],
+   "emails": [
+    "bsc@bangsamoro.gov.ph"
+   ],
    "website": "https://bsc.bangsamoro.gov.ph/",
-   "facebook": null,
+   "facebook": "https://www.facebook.com/SPORTSBARMM/",
    "sources": [
     {
      "label": "BSC Contact Us page, 2026-10",
@@ -896,6 +948,10 @@
     {
      "label": "Contact details",
      "url": "https://bsc.bangsamoro.gov.ph/wp-json/wp/v2/pages?search=contact"
+    },
+    {
+     "label": "Bangsamoro Sports Commission Facebook page intro, read through a web search on 2026-10-23",
+     "url": "https://www.facebook.com/SPORTSBARMM/"
     }
    ],
    "checked": null
@@ -983,8 +1039,10 @@
    },
    "address": "SKCC, Bangsamoro Government Center, Gov. Gutierrez Avenue, Cotabato City, Philippines, 9600",
    "phones": [],
-   "emails": [],
-   "website": null,
+   "emails": [
+    "info@bangsamoro.gov.ph"
+   ],
+   "website": "https://bangsamoro.gov.ph/",
    "facebook": "https://www.facebook.com/biobarmm",
    "sources": [
     {
@@ -998,6 +1056,10 @@
     {
      "label": "Contact details",
      "url": "https://bangsamoro.gov.ph/author/infobangsamoro-gov-ph/"
+    },
+    {
+     "label": "Bangsamoro Information Office Facebook page intro, read through a web search on 2026-10-23",
+     "url": "https://www.facebook.com/biobarmm/"
     }
    ],
    "checked": null
@@ -1016,7 +1078,9 @@
    "phones": [
     "552-01-73"
    ],
-   "emails": [],
+   "emails": [
+    "dab@bangsamoro.gov.ph"
+   ],
    "website": "https://dab.bangsamoro.gov.ph/",
    "facebook": "https://www.facebook.com/dab.bangsamoro",
    "sources": [
@@ -1047,7 +1111,9 @@
    },
    "address": "Bangsamoro Government Center, Gov. Gutierrez Ave., Cotabato City, Philippines",
    "phones": [],
-   "emails": [],
+   "emails": [
+    "bicto@bangsamoro.gov.ph"
+   ],
    "website": "https://bicto.bangsamoro.gov.ph",
    "facebook": "https://www.facebook.com/BangsamoroICTO",
    "sources": [
@@ -1062,6 +1128,10 @@
     {
      "label": "BARMM news, BICTO research showcase (ED Jonathan Mantikayan), 2026-06-14",
      "url": "https://bangsamoro.gov.ph/news/latest-news/bicto-showcases-research-innovation-to-advance-digital-transformation-in-barmm/"
+    },
+    {
+     "label": "bicto.bangsamoro.gov.ph, read 2026-10-23",
+     "url": "https://bicto.bangsamoro.gov.ph/"
     }
    ],
    "checked": null
@@ -1076,11 +1146,13 @@
     "as_of": "2026-07-13",
     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-expands-global-investment-push-brunei-agency-eyes-partnership/"
    },
-   "address": null,
+   "address": "Bangsamoro Government Center, Gov. Gutierrez Avenue, Rosary Heights VII, Cotabato City",
    "phones": [
     "(064) 421-1591"
    ],
-   "emails": [],
+   "emails": [
+    "bboi@bangsamoro.gov.ph"
+   ],
    "website": "https://bboi.bangsamoro.gov.ph/",
    "facebook": "https://www.facebook.com/bboibarmm",
    "sources": [
@@ -1091,6 +1163,14 @@
     {
      "label": "BIO news, Brunei agency partnership, 2026-07-13",
      "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-expands-global-investment-push-brunei-agency-eyes-partnership/"
+    },
+    {
+     "label": "bboi.bangsamoro.gov.ph Contact Us, read 2026-10-23",
+     "url": "https://bboi.bangsamoro.gov.ph/contact-us/"
+    },
+    {
+     "label": "Bangsamoro Board of Investments Facebook page intro, read through a web search on 2026-10-23",
+     "url": "https://www.facebook.com/bboibarmm/"
     }
    ],
    "checked": null
@@ -1109,7 +1189,9 @@
    "phones": [
     "+63 977 045 5600"
    ],
-   "emails": [],
+   "emails": [
+    "osc@bangsamoro.gov.ph"
+   ],
    "website": "https://osc.bangsamoro.gov.ph/",
    "facebook": "https://www.facebook.com/OfficeforSettlerCommunitiesOCM/",
    "sources": [
@@ -1187,11 +1269,13 @@
     "as_of": "2026-08-14",
     "source": "https://bangsamoro.gov.ph/news/latest-news/new-p15-b-bangsamoro-govt-center-to-rise-in-parang-maguindanao-del-norte/"
    },
-   "address": null,
+   "address": "Bangsamoro Government Center, Cotabato City",
    "phones": [],
-   "emails": [],
+   "emails": [
+    "wali@bangsamoro.gov.ph"
+   ],
    "website": "https://wali.bangsamoro.gov.ph/",
-   "facebook": null,
+   "facebook": "https://www.facebook.com/WaliBangsamoro/",
    "sources": [
     {
      "label": "Office of the Wali website (under construction, Facebook link), 2026-10",
@@ -1200,6 +1284,10 @@
     {
      "label": "BIO news, new Bangsamoro Government Center groundbreaking, 2026-08-14",
      "url": "https://bangsamoro.gov.ph/news/latest-news/new-p15-b-bangsamoro-govt-center-to-rise-in-parang-maguindanao-del-norte/"
+    },
+    {
+     "label": "Office of the Wālī of Bangsamoro Facebook page intro, read through a web search on 2026-10-23",
+     "url": "https://www.facebook.com/WaliBangsamoro/"
     }
    ],
    "checked": null
@@ -1214,11 +1302,15 @@
     "as_of": "2026-08-04",
     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-pushes-unified-disaster-response-across-lgus/"
    },
-   "address": null,
-   "phones": [],
-   "emails": [],
+   "address": "OCM Compound, Bangsamoro Government Center, Cotabato City",
+   "phones": [
+    "0966-301-8777"
+   ],
+   "emails": [
+    "readi@bangsamoro.gov.ph"
+   ],
    "website": null,
-   "facebook": null,
+   "facebook": "https://www.facebook.com/BARMMREADI/",
    "sources": [
     {
      "label": "BARMM news, Bangsamoro DRRM Summit 2026 (READi Head Director Muhammad Farzieh Abutazil), 2026-08-04",
@@ -1231,6 +1323,10 @@
     {
      "label": "BARMM news, flood response (Abutazil, director of Bangsamoro READi), 2026-07-09",
      "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-govts-flood-response-intensifies-amid-enhanced-southwest-monsoon/"
+    },
+    {
+     "label": "Bangsamoro READi Facebook page intro, read through a web search on 2026-10-23; the intro may be older than the page",
+     "url": "https://www.facebook.com/BARMMREADI/"
     }
    ],
    "checked": null,

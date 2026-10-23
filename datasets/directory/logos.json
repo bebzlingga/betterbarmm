@@ -1,6 +1,6 @@
 {
  "name": "Logos and seals of the Bangsamoro Government offices and the local governments",
- "note": "Each office’s logo as its own site, the Bangsamoro Government’s site or Wikimedia Commons publishes it, and each province’s and town’s official seal from Wikimedia Commons or, for most towns, the copy English Wikipedia holds; seals and logos are Philippine government works (RA 8293 Sec. 176), credited to the government they belong to.",
+ "note": "Each office’s logo as its own site, the Bangsamoro Government’s site or Wikimedia Commons publishes it, and each province’s and town’s official seal from Wikimedia Commons or, for most towns, the copy English Wikipedia holds; seals and logos are Philippine government works (RA 8293 Sec. 176), credited to the government they belong to. National agencies’ logos and seals (`national`) are from Wikimedia Commons.",
  "offices": {
   "ministry-of-public-order-and-safety": {
    "src": "/directory/offices/ministry-of-public-order-and-safety.png",
@@ -767,6 +767,74 @@
    "page": "https://commons.wikimedia.org/wiki/File:Seal_of_Kadayangan.png",
    "credit": "Municipality of Kadayangan",
    "license": "Public domain; LGU seal is a Philippine government work (RA 8293 Sec. 176)"
+  }
+ },
+ "national": {
+  "psa": {
+   "src": "/directory/national/psa.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Philippine_Statistics_Authority.svg",
+   "credit": "Philippine Statistics Authority",
+   "license": "Public domain"
+  },
+  "philhealth": {
+   "src": "/directory/national/philhealth.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Philippine_Health_Insurance_Corporation_(PhilHealth).svg",
+   "credit": "Philippine Health Insurance Corporation",
+   "license": "Public domain"
+  },
+  "sss": {
+   "src": "/directory/national/sss.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Social_Security_System_(SSS).svg",
+   "credit": "Social Security System",
+   "license": "Public domain"
+  },
+  "dfa": {
+   "src": "/directory/national/dfa.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Seal_of_the_Department_of_Foreign_Affairs_of_the_Philippines.svg",
+   "credit": "Department of Foreign Affairs",
+   "license": "Public domain"
+  },
+  "prc": {
+   "src": "/directory/national/prc.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Professional_Regulation_Commission_(PRC).svg",
+   "credit": "Professional Regulation Commission",
+   "license": "Public domain"
+  },
+  "comelec": {
+   "src": "/directory/national/comelec.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Commission_on_Elections_(COMELEC).svg",
+   "credit": "Commission on Elections",
+   "license": "Public domain"
+  },
+  "csc": {
+   "src": "/directory/national/csc.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Civil_Service_Commission.svg",
+   "credit": "Civil Service Commission",
+   "license": "Public domain"
+  },
+  "pnp": {
+   "src": "/directory/national/pnp.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Philippine_National_Police_seal.svg",
+   "credit": "Philippine National Police",
+   "license": "Public domain"
+  },
+  "bfp": {
+   "src": "/directory/national/bfp.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Bureau_of_Fire_Protection.png",
+   "credit": "Bureau of Fire Protection",
+   "license": "Public domain"
+  },
+  "pcg": {
+   "src": "/directory/national/pcg.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Philippine_Coast_Guard_(PCG).svg",
+   "credit": "Philippine Coast Guard",
+   "license": "Public domain"
+  },
+  "pdea": {
+   "src": "/directory/national/pdea.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Philippine_Drug_Enforcement_Agency_(PDEA).svg",
+   "credit": "Philippine Drug Enforcement Agency",
+   "license": "Public domain"
   }
  }
 }

@@ -250,8 +250,7 @@ export function LguFinances({
 					note={
 						<>
 							The Local DRRM Fund is the one record here that sets a budget beside its spending. Spending above
-							the appropriation can come from earlier years&rsquo; unspent funds. BLGF&rsquo;s FY 2021 file lists
-							no BARMM LGU. Source:{' '}
+							the appropriation can come from earlier years&rsquo; unspent funds. Source:{' '}
 							<Source href='https://blgf.gov.ph/lgu-fiscal-data/'>BLGF, LDRRMF by LGU</Source>.
 						</>
 					}
@@ -276,10 +275,11 @@ export function LguFinances({
 			{sefYears.some((y) => n(row(funds.educationFund, unitKey, y)!.rptCollected) || n(row(funds.educationFund, unitKey, y)!.spent)) ? (
 				<Block
 					title='Special Education Fund'
-					note='The extra 1% real property tax for schools. Ordinary municipalities share their province’s, so many show little or none.'
+					note='The extra 1% real property tax for schools. Ordinary municipalities share their province’s, so many show little or none. The latest eight years; BLGF’s record goes back to FY 2009.'
 				>
 					<YearTable
-						years={sefYears}
+						// The latest eight years, so the table opens on the present rather than on FY 2009.
+						years={sefYears.slice(-8)}
 						lines={[
 							['Collected', (y) => peso(row(funds.educationFund, unitKey, y)!.rptCollected)],
 							['Spent', (y) => peso(row(funds.educationFund, unitKey, y)!.spent)],

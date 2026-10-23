@@ -5,7 +5,8 @@
    and spending (BLGF's Statement of Receipts and Expenditures and
    its other per-LGU tables), its income class, its procurement,
    the national releases that name it, its COA audits, and the
-   seals and awards it has won — FY 2020 on.
+   seals and awards it has won — FY 2016 on for the statement,
+   FY 2009 on for regular income and the education fund.
 
    Every figure is a reported actual, not the budget a council
    passed, except the disaster fund, which BLGF publishes both

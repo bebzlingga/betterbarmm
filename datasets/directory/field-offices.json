@@ -1,6 +1,6 @@
 {
  "name": "Provincial and field offices of the Bangsamoro ministries",
- "generatedAt": "2026-10-17",
+ "generatedAt": "2026-10-23",
  "note": "The ministries' offices in the provinces, as the ministries' own pages and charters list them.",
  "offices": [
   {
@@ -16,7 +16,11 @@
     "title": "PSWO, BARMM Special Geographic Area"
    },
    "source": "https://mssd.barmm.gov.ph/contact-us/",
-   "head_source": "https://mssd.barmm.gov.ph/directory-of-officials/"
+   "head_source": "https://mssd.barmm.gov.ph/directory-of-officials/",
+   "emails": [
+    "specialgeographicarea@mssd.bangsamoro.gov.ph"
+   ],
+   "contact_source": "https://mssd.barmm.gov.ph/contact-us/"
   },
   {
    "ministry_slug": "ministry-of-social-services-and-development",
@@ -31,7 +35,12 @@
     "title": "PSWO, Maguindanao del Norte"
    },
    "source": "https://mssd.barmm.gov.ph/contact-us/",
-   "head_source": "https://mssd.barmm.gov.ph/directory-of-officials/"
+   "head_source": "https://mssd.barmm.gov.ph/directory-of-officials/",
+   "emails": [
+    "magdelnorte@mssd.bangsamoro.gov.ph"
+   ],
+   "contact_source": "https://mssd.barmm.gov.ph/contact-us/",
+   "note": "Shared with Maguindanao del Sur: MSSD lists this one office, the former Maguindanao provincial office, for both provinces."
   },
   {
    "ministry_slug": "ministry-of-social-services-and-development",
@@ -47,7 +56,11 @@
    },
    "source": "https://mssd.barmm.gov.ph/contact-us/",
    "head_source": "https://mssd.barmm.gov.ph/directory-of-officials/",
-   "note": "The contact page lists the same address and number as Maguindanao del Norte."
+   "note": "MSSD lists one office for both Maguindanao provinces: the former Maguindanao provincial office at RESWAD, Brgy. Semba, Datu Odin Sinsuat, with the same number and email as Maguindanao del Norte. Maguindanao del Sur has its own provincial social welfare officer, but no office of its own is listed.",
+   "emails": [
+    "magdelnorte@mssd.bangsamoro.gov.ph"
+   ],
+   "contact_source": "https://mssd.barmm.gov.ph/contact-us/"
   },
   {
    "ministry_slug": "ministry-of-social-services-and-development",
@@ -63,7 +76,11 @@
     "title": "PSWO, Lanao del Sur A"
    },
    "source": "https://mssd.barmm.gov.ph/contact-us/",
-   "head_source": "https://mssd.barmm.gov.ph/directory-of-officials/"
+   "head_source": "https://mssd.barmm.gov.ph/directory-of-officials/",
+   "emails": [
+    "lanaodelsur-a@mssd.bangsamoro.gov.ph"
+   ],
+   "contact_source": "https://mssd.barmm.gov.ph/contact-us/"
   },
   {
    "ministry_slug": "ministry-of-social-services-and-development",
@@ -79,7 +96,11 @@
    },
    "source": "https://mssd.barmm.gov.ph/contact-us/",
    "head_source": "https://mssd.barmm.gov.ph/directory-of-officials/",
-   "note": "On the contact page this entry is headed 'MSSD Lanao del Sur A' but links to the 'MSSD BARMM Lanao del Sur B' page; the Malabang address is taken to be Lanao del Sur B."
+   "note": "On the contact page this entry is headed 'MSSD Lanao del Sur A' but links to the 'MSSD BARMM Lanao del Sur B' page; the Malabang address is taken to be Lanao del Sur B.",
+   "emails": [
+    "lanaodelsur-b@mssd.bangsamoro.gov.ph"
+   ],
+   "contact_source": "https://mssd.barmm.gov.ph/contact-us/"
   },
   {
    "ministry_slug": "ministry-of-social-services-and-development",
@@ -95,7 +116,11 @@
     "title": "PSWO, Tawi-Tawi"
    },
    "source": "https://mssd.barmm.gov.ph/contact-us/",
-   "head_source": "https://mssd.barmm.gov.ph/directory-of-officials/"
+   "head_source": "https://mssd.barmm.gov.ph/directory-of-officials/",
+   "emails": [
+    "tawitawi@mssd.bangsamoro.gov.ph"
+   ],
+   "contact_source": "https://mssd.barmm.gov.ph/contact-us/"
   },
   {
    "ministry_slug": "ministry-of-social-services-and-development",
@@ -377,7 +402,10 @@
     "title": "Provincial Director, MHSD-Basilan"
    },
    "source": "https://mhsd.bangsamoro.gov.ph/contact-us/",
-   "contact_source": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/03/Citizens-Charter-Handbook-edition-1-v.-01-17-2025.pdf"
+   "contact_source": "https://mhsd.bangsamoro.gov.ph/contact-us/",
+   "emails": [
+    "ibs@mhsd.bangsamoro.gov.ph"
+   ]
   },
   {
    "ministry_slug": "ministry-of-human-settlements-and-development",
@@ -585,14 +613,20 @@
    "office": "IPHO-Lanao del Sur",
    "province": "Lanao del Sur",
    "address": null,
-   "phones": [],
+   "phones": [
+    "0977-850-0751"
+   ],
    "head": {
     "name": "Dr. Alinader D. Minalang",
     "title": "Provincial Health Officer II"
    },
    "source": "https://bangsamoro.gov.ph/news/latest-news/377-healthcare-workers-sworn-in-to-strengthen-lanao-del-surs-health-system/",
    "head_as_of": "2025-03",
-   "note": "Integrated Provincial Health Office, which works with MOH."
+   "note": "Integrated Provincial Health Office, which works with MOH. Contacts from its Facebook page intro, read through a web search on 2026-10-23.",
+   "emails": [
+    "ipholanaodelsur@yahoo.com"
+   ],
+   "contact_source": "https://www.facebook.com/IPHOlanao/"
   },
   {
    "ministry_slug": "ministry-of-health",
@@ -618,7 +652,12 @@
     "title": "Provincial Health Officer II and Chief of Hospital"
    },
    "source": "https://bangsamoro.gov.ph/news/latest-news/first-super-health-center-in-barmm-opens-in-maguindanao-del-norte-town/",
-   "head_as_of": "2026-07"
+   "head_as_of": "2026-07",
+   "emails": [
+    "iphomaguindanao.mph@gmail.com"
+   ],
+   "contact_source": "https://www.facebook.com/p/IPHO-Maguindanao_Official-100057113633836/",
+   "note": "Contacts from its Facebook page intro, read through a web search on 2026-10-23."
   },
   {
    "ministry_slug": "ministry-of-health",
@@ -639,13 +678,20 @@
    "office": "Schools Division of Cotabato City",
    "province": "Cotabato City",
    "address": null,
-   "phones": [],
+   "phones": [
+    "(064) 421-2574"
+   ],
    "head": {
     "name": "Dr. Bai Rojana Sinsuat",
     "title": "Schools Division Superintendent"
    },
    "source": "https://bangsamoro.gov.ph/news/latest-news/minister-iqbal-urges-dedication-sincerity-as-mbhte-swears-in-811-new-education-personnel/",
-   "head_as_of": "2025-10"
+   "head_as_of": "2025-10",
+   "emails": [
+    "cotabato.city@deped.gov.ph"
+   ],
+   "contact_source": "https://www.facebook.com/DepEdTayoCotabatoCity/",
+   "note": "Contacts from its Facebook page intro, read through a web search on 2026-10-23."
   },
   {
    "ministry_slug": "ministry-of-basic-higher-and-technical-education",
@@ -678,13 +724,20 @@
    "office": "Schools Division of Maguindanao del Norte",
    "province": "Maguindanao del Norte",
    "address": null,
-   "phones": [],
+   "phones": [
+    "(064) 552-2516"
+   ],
    "head": {
     "name": "Hadja Norie Mamalinta",
     "title": "Schools Division Superintendent"
    },
    "source": "https://bangsamoro.gov.ph/news/latest-news/1400-student-journalists-vie-in-2026-regional-schools-press-conference/",
-   "head_as_of": "2026-03"
+   "head_as_of": "2026-03",
+   "emails": [
+    "sdo.mag2@deped.gov.ph"
+   ],
+   "contact_source": "https://www.facebook.com/sdomaguindanaodelnorte/",
+   "note": "Contacts from its Facebook page intro, read through a web search on 2026-10-23."
   },
   {
    "ministry_slug": "ministry-of-basic-higher-and-technical-education",
@@ -943,7 +996,11 @@
     "name": "ASMARIE M. LABAO, MPA",
     "title": "Provincial Environment, Natural Resources, and Energy Officer (PENREO)"
    },
-   "source": "https://menre.bangsamoro.gov.ph/?page_id=332"
+   "source": "https://menre.bangsamoro.gov.ph/?page_id=332",
+   "emails": [
+    "penreo.lds@menre.bangsamoro.gov.ph"
+   ],
+   "contact_source": "https://menre.bangsamoro.gov.ph/?page_id=332"
   },
   {
    "ministry_slug": "ministry-of-environment-natural-resources-and-energy",
@@ -955,7 +1012,11 @@
     "name": "MARIETTA R. LADJIMAN, MPA",
     "title": "Provincial Environment, Natural Resources, and Energy Officer (PENREO)"
    },
-   "source": "https://menre.bangsamoro.gov.ph/?page_id=332"
+   "source": "https://menre.bangsamoro.gov.ph/?page_id=332",
+   "emails": [
+    "penreo.basilan@menre.bangsamoro.gov.ph"
+   ],
+   "contact_source": "https://menre.bangsamoro.gov.ph/?page_id=332"
   },
   {
    "ministry_slug": "ministry-of-environment-natural-resources-and-energy",
@@ -967,7 +1028,11 @@
     "name": "JONEL I. MOHAMMAD MONEL, EdD",
     "title": "Provincial Environment, Natural Resources, and Energy Officer (PENREO)"
    },
-   "source": "https://menre.bangsamoro.gov.ph/?page_id=332"
+   "source": "https://menre.bangsamoro.gov.ph/?page_id=332",
+   "emails": [
+    "penreo.tawi@menre.bangsamoro.gov.ph"
+   ],
+   "contact_source": "https://menre.bangsamoro.gov.ph/?page_id=332"
   },
   {
    "ministry_slug": "ministry-of-environment-natural-resources-and-energy",

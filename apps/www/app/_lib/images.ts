@@ -17,8 +17,10 @@ import { photo as discoverPhoto } from '../_components/discover-media'
 
 /** An office's logo, or a province's or town's seal, served from this site, with the page it came from. */
 export type Logo = { src: string; page: string; credit: string; license: string }
-const logos = logosFile as { offices: Record<string, Logo>; areas: Record<string, Logo>; towns: Record<string, Logo> }
+const logos = logosFile as { offices: Record<string, Logo>; national: Record<string, Logo>; areas: Record<string, Logo>; towns: Record<string, Logo> }
 export const officeLogo = (slug: string) => logos.offices[slug] ?? null
+/** A national agency's logo or seal, by its slug in national-offices.json. */
+export const nationalLogo = (slug: string) => logos.national[slug] ?? null
 /** A province's seal, or a town's (province and town slugs). */
 export const placeSeal = (province: string, town?: string) => (town ? logos.towns[`${province}/${town}`] : logos.areas[province]) ?? null
 /** An LGU's seal by its key, `province` or `province/town`, the key the services and the Directory both use. */

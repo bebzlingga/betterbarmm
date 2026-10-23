@@ -4,24 +4,25 @@ Government Finance publishes per LGU, for each BARMM province, city and
 municipality, beside the SRE in finances.json:
 
   dependency     Annual Regular Income and how much of it is the NTA,
-                 FY 2020–2025 (BLGF computes the ratios; they are copied).
+                 FY 2009–2025 (BLGF computes the ratios; they are copied).
   disasterFund   The Local DRRM Fund — what the council APPROPRIATED and what
                  was SPENT, 70% mitigation part and 30% Quick Response Fund,
-                 FY 2020–2025. The only per-LGU record here that sets a budget
-                 beside its spending. FY 2021's workbook has no BARMM rows.
+                 FY 2018–2025. The only per-LGU record here that sets a budget
+                 beside its spending.
   educationFund  Special Education Fund — the SEF real property tax collected
-                 and what it was spent on, FY 2020–2025.
+                 and what it was spent on, FY 2009–2025.
   propertyRoll   Real property assessment roll, FY 2022 only: taxable land
                  area, property units, market and assessed value, and the tax
                  collectible on them.
   borrowing      Every Certificate of Net Debt Service Ceiling and Borrowing
-                 Capacity DOF issued to a BARMM LGU, January 2022 – August
+                 Capacity DOF issued to a BARMM LGU, January 2022 – September
                  2026: the loan proposed, its purpose, and the ceiling and
                  capacity BLGF certified. A certificate is permission to
                  borrow, not a loan.
 
-Rows are matched to the directory exactly as in build_finances.py: Sulu is
-left out, pre-split Maguindanao's province rows go under "former", and a row
+Rows are BARMM's by province (BARMM_PROVINCES), since BLGF's region column
+says ARMM before 2019 and is wrong in FY 2021's LDRRMF; they are matched to
+the directory exactly as in build_finances.py: Sulu is left out, pre-split Maguindanao's province rows go under "former", and a row
 whose every figure is zero is a year the LGU did not report — left out.
 
 Sources (blgf.gov.ph/lgu-fiscal-data/ — sre.py has the curl line); every
@@ -35,6 +36,12 @@ from sre import BLGF, NS, ROOT, SRC, ET, norm, provinces, towns
 OUT = ROOT / 'datasets/lgu/funds.json'
 FORMER = {'maguindanao': 'maguindanao'}
 KINDS = ('Province', 'City', 'Municipality')
+# A row is BARMM's by its province, not by BLGF's region column: before 2019 the region is "ARMM" and Cotabato City
+# sits under Region XII, and FY 2021's LDRRMF workbook files every BARMM LGU under Region IX or XII. Isabela City is in
+# Basilan province but was never in the region.
+# Cotabato City is admitted by name and type: norm() reads the province "Cotabato" (North Cotabato) the same way.
+BARMM_PROVINCES = {'basilan', 'lanao del sur', 'maguindanao', 'maguindanao del norte', 'maguindanao del sur', 'tawi tawi'}
+NOT_BARMM = {'isabela'}
 
 
 def sheets(path):
@@ -117,7 +124,8 @@ def by_lgu(spec, files, sheet=0, shift=None):
         seen = False
         for r in rows:
             cell = lambda c: r[c] if c < len(r) else None
-            if str(cell(ids['region'])).strip() != 'BARMM' or norm(str(cell(ids['province']))) == 'sulu':
+            city = norm(str(cell(ids['name']))) == 'cotabato' and str(cell(ids['kind'])).strip() == 'City'
+            if (norm(str(cell(ids['province']))) not in BARMM_PROVINCES and not city) or norm(str(cell(ids['name']))) in NOT_BARMM:
                 continue
             seen = True
             where, key = match(str(cell(ids['name'])), str(cell(ids['kind'])).strip())
@@ -144,7 +152,7 @@ def sources(label, files):
 report = {}
 
 # ---- Annual Regular Income and dependency ---------------------------------
-ARI_FILES = {y: ('2025/03', f'By-LGU-ARI-and-Dependencies-{y}.xlsx') for y in (2020, 2021, 2022, 2023)}
+ARI_FILES = {y: ('2025/03', f'By-LGU-ARI-and-Dependencies-{y}.xlsx') for y in range(2009, 2024)}
 ARI_FILES[2024] = ('2026/03', 'By-LGU-ARI-and-Dependencies-2024.xlsx')
 ARI_FILES[2025] = ('2026/05', 'By-LGU-ARI-and-Dependencies-2025Preliminary.xlsx')
 ARI = [  # (key, kind, column, header keyword) — FY 2020–2022 have INCOME CLASS at 5, one column earlier
@@ -183,6 +191,7 @@ report['dependency'].append(off)
 
 # ---- Local DRRM Fund ------------------------------------------------------
 DRRM_FILES = {
+    2018: ('2025/01', 'FY2018-LDRRMF-by-LGU.xlsx'), 2019: ('2025/01', 'FY2019-LDRRMF-by-LGU.xlsx'),
     2020: ('2025/04', 'FY2020-LDRRMF-by-LGU.xlsx'), 2021: ('2025/01', 'FY2021-LDRRMF-by-LGU.xlsx'),
     2022: ('2025/04', 'FY2022-LDRRMF-by-LGU.xlsx'), 2023: ('2026/09', 'FY2023-LDRRMF-by-LGU.xlsx'),
     2024: ('2026/01', 'FY2024-LDRRMF-by-LGU.xlsx'), 2025: ('2026/06', 'FY2025-LDRRMF-by-LGU.xlsx'),
@@ -204,7 +213,7 @@ DRRM_LABELS = {
 disaster, *report['disasterFund'] = by_lgu(DRRM, DRRM_FILES)
 
 # ---- Special Education Fund (two sheets: income, then spending) -----------
-SEF_FILES = {y: ('2025/06', f'FY{y}-SEF-Income-and-Expenditures.xlsx') for y in (2020, 2021, 2022, 2023)}
+SEF_FILES = {y: ('2025/06', f'FY{y}-SEF-Income-and-Expenditures.xlsx') for y in range(2009, 2024)}
 SEF_FILES[2024] = ('2026/01', 'FY2024-SEF-Income-and-Expenditures.xlsx')
 SEF_FILES[2025] = ('2026/06', 'FY2025-SEF-Income-and-Expenditures.xlsx')
 SEF_IN = [('rptCollected', 'n', 5, 'RPT Collections')]
@@ -270,6 +279,7 @@ CERT_FILES = [
     ('2025/01', 'List-of-issued-CNDSCBC-as-of-December-2024.xlsx'),
     ('2026/01', 'List-of-issued-CNDSCBC-as-of-December-2025.xlsx'),
     ('2026/09', 'List-of-issued-CNDSCBC-as-of-August-2026.xlsx'),
+    ('2026/10', 'List-of-issued-CNDSCBC-as-of-September-2026.xlsx'),
 ]
 certificates, cert_unmatched = {}, []
 for folder, name in CERT_FILES:
@@ -343,7 +353,9 @@ data = {
         'Each section is one BLGF publication, in pesos unless a field says otherwise. Each unit’s year is a row of '
         'values in the order of the section’s "fields". A year left out is a year the LGU reported nothing. Sulu, in '
         'BARMM until 2024, is left out; pre-split Maguindanao’s province rows are under "former"; the eight Special '
-        'Geographic Area towns have no rows. Barangays are not in any of these.'
+        'Geographic Area towns have no rows. Barangays are not in any of these. Years before 2019 are the ARMM’s, and '
+        'Cotabato City’s rows before 2019 are from when it was a Region XII city; a town has rows only from the year '
+        'it reported.'
     ),
     'dependency': section(
         'Annual Regular Income and Dependencies by LGU', ARI_FILES, ARI, ARI_LABELS, dependency,
@@ -354,7 +366,8 @@ data = {
         'The LDRRMF is at least 5% of an LGU’s estimated regular revenue: 70% for mitigation and preparedness, '
         '30% held as a Quick Response Fund. "Appropriated" is the budget the council passed; "spent" is what was '
         'paid out. Spending above the appropriation can come from continuing appropriations of earlier years. '
-        'BLGF’s FY 2021 workbook lists no BARMM LGU, so FY 2021 is absent for all of them. FY 2025 is preliminary.'),
+        'BLGF’s FY 2021 workbook files BARMM’s LGUs under Region IX and XII; they are read by province. '
+        'FY 2025 is preliminary.'),
     'educationFund': section(
         'Special Education Fund income and expenditures by LGU', SEF_FILES, SEF_IN + SEF_OUT,
         SEF_LABELS, education,
@@ -372,7 +385,7 @@ data = {
             'A Certificate of Net Debt Service Ceiling and Borrowing Capacity is DOF’s clearance for an LGU to borrow: '
             'it states the loan proposed and the most the LGU can afford to service. It is not a loan — whether one '
             'was taken shows in finances.json (borrowings). Amounts are converted from the lists’ thousands of pesos. '
-            'BLGF’s published lists start in 2022; earlier certificates are not public.'),
+            'BLGF also publishes lists for 2016–2021, in an older layout not read here yet.'),
         'units': borrowing,
     },
 }

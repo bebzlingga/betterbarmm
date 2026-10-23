@@ -1,6 +1,6 @@
 {
  "name": "Emails of the local governments of BARMM",
- "generatedAt": "2026-10-18",
+ "generatedAt": "2026-10-23",
  "note": "Each province's and town's own email, as an official page prints it as text: the LGU's own site, the League of Provinces directory, or the town's profile in DTI's Cities and Municipalities Competitiveness Index (the email the LGU itself reported). Addresses that read as a person's or reach a single department are left out.",
  "areas": {
   "lanao-del-sur": {
@@ -477,6 +477,22 @@
    "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Turtle+Islands&year=2025",
    "as_of": null,
    "office": "DTI CMCI profile, \"LGU E-mail\" field (2025 edition)"
+  },
+  "special-geographic-area/kadayangan": {
+   "emails": [
+    "municipalitykadayangan@gmail.com"
+   ],
+   "source": "https://www.facebook.com/Midsayap1BARMM63/",
+   "as_of": "2026-10-23",
+   "office": "Municipal government, its Facebook page intro, read through a web search on 2026-10-23"
+  },
+  "special-geographic-area/old-kaabakan": {
+   "emails": [
+    "oldkaabakan@gmail.com"
+   ],
+   "source": "https://www.facebook.com/p/Municipality-of-OLD-Kaabakan-61563946256795/",
+   "as_of": "2026-10-23",
+   "office": "Municipal government, its Facebook page intro, read through a web search on 2026-10-23"
   }
  }
 }

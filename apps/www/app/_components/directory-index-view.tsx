@@ -6,8 +6,8 @@ import { DirectorySearch } from './directory-search'
 import { members } from '../_lib/directory-index'
 import { GetInvolved } from './get-involved'
 import { SiteHeader } from './site-header'
-import { barangayRows, directoryMeta, directoryOffices, hotlines, localGovernments, telHref } from '../_lib/directory'
-import { officeLogo } from '../_lib/images'
+import { barangayRows, directoryMeta, directoryOffices, hotlines, localGovernments, nationalMeta, nationalOffices, telHref } from '../_lib/directory'
+import { nationalLogo, officeLogo } from '../_lib/images'
 import { Emblem } from './emblem'
 
 
@@ -129,6 +129,60 @@ export function DirectoryIndex() {
 								</div>
 							)
 						})}
+					</section>
+
+					{/* National agencies' offices in the region, carded as the ministries are; each opens a dialog with the rest. */}
+					<section id='national' aria-labelledby='national-title' className='mt-20 scroll-mt-[calc(var(--site-header-h)+1rem)]'>
+						<div className={sectionHead}>
+							<h2 id='national-title' className='text-[26px] font-extrabold tracking-[-0.02em]'>
+								National offices in the region
+							</h2>
+							<p className='max-w-xl text-[13.5px] text-[var(--ink-3)]'>Where to go for a certificate, a contribution, a licence or a passport. Many publish little; an empty line is one no official source showed.</p>
+						</div>
+						<ul className='mt-3 grid border-t border-[var(--rule)] sm:mt-8 sm:grid-cols-2 sm:gap-4 sm:border-t-0 lg:grid-cols-3 xl:grid-cols-4'>
+							{nationalOffices.map((o) => (
+								<li key={o.slug} id={`national-${o.slug}`} className='bb-frame relative flex min-w-0 scroll-mt-[calc(var(--site-header-h)+1rem)] gap-4 border-b border-[var(--rule-soft)] bg-transparent! py-3 sm:flex-col sm:gap-0 sm:overflow-hidden sm:border sm:border-[var(--rule)] sm:py-0'>
+									{/* The panel keeps the ministries' height; each logo sits in one small box inside it, so a wordmark and a seal read the same size. */}
+									<span className='relative grid size-16 shrink-0 place-items-center overflow-hidden bg-[var(--paper-2)] sm:h-32 sm:w-full'>
+										<Emblem image={nationalLogo(o.slug)} name={o.agency} label={o.acronym} className='h-10! w-12! text-[11px] sm:h-16! sm:w-24! sm:text-[16px]' />
+									</span>
+									<div className='min-w-0 flex-1 sm:p-4'>
+										<p className='mb-1.5 text-[15.5px] leading-[1.2]'>
+											<Link scroll={false} href={`/directory/national/${o.slug}`} className='font-bold hover:text-[var(--accent)]'>
+												{o.office}
+											</Link>
+										</p>
+										<p className='mt-0.5 truncate text-[13.5px]'>
+											{o.head ? (
+												<>
+													<span className='text-[var(--ink-3)]'>{o.head.title}</span> <span className='font-semibold text-[var(--ink)]'>{o.head.name}</span>
+												</>
+											) : (
+												<span className='text-[var(--ink-3)]'>Head not named in an official source</span>
+											)}
+										</p>
+										{o.phones[0] ? (
+											<p className='mt-2 truncate text-[12.5px]'>
+												<a href={telHref(o.phones[0])} className='inline-flex items-center gap-1.5 hover:text-[var(--accent)]'>
+													<PhoneIcon size={12} className='shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
+													<span className='font-semibold tabular-nums'>{o.phones[0]}</span>
+													{o.phones.length > 1 ? <span className='text-[var(--ink-mute)]'>+{o.phones.length - 1}</span> : null}
+												</a>
+											</p>
+										) : null}
+										{o.emails[0] ? (
+											<p className={`${o.phones[0] ? 'mt-0.5' : 'mt-2'} truncate text-[12.5px]`}>
+												<a href={`mailto:${o.emails[0]}`} className='inline-flex max-w-full items-center gap-1.5 hover:text-[var(--accent)]'>
+													<EnvelopeSimpleIcon size={12} className='shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
+													<span className='truncate'>{o.emails[0]}</span>
+												</a>
+											</p>
+										) : null}
+									</div>
+								</li>
+							))}
+						</ul>
+						<p className='mt-4 max-w-3xl text-[12.5px] leading-[1.65] text-[var(--ink-3)]'>{nationalMeta.note}</p>
 					</section>
 
 					<section id='local' aria-labelledby='local-title' className='mt-20 scroll-mt-[calc(var(--site-header-h)+1rem)]'>

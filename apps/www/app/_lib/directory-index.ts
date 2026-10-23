@@ -1,7 +1,7 @@
 import parliament from '../../../../datasets/bills/bangsamoro_registry/members/parliament-2026.json'
 import type { DirectoryEntry } from '../_components/directory-search'
-import { barangayRows, directoryOffices, localGovernments, memberId } from './directory'
-import { memberPortrait, officeLogo, placeSeal } from './images'
+import { barangayRows, directoryOffices, localGovernments, memberId, nationalOffices } from './directory'
+import { memberPortrait, nationalLogo, officeLogo, placeSeal } from './images'
 
 /* The directory search's index: every office, province, town, barangay and Member of Parliament, with what each
    can be found by. Served as a static JSON file and fetched when the reader first types, so the page stays light. */
@@ -28,6 +28,15 @@ export function searchIndex(): DirectoryEntry[] {
 			href: `/directory/office/${o.slug}`,
 			image: officeLogo(o.slug)?.src,
 			terms: fold(o.name, o.acronym, o.head?.name, o.head?.title),
+		})
+	for (const o of nationalOffices)
+		out.push({
+			kind: 'National office',
+			title: `${o.office} (${o.acronym})`,
+			sub: o.for,
+			href: `/directory/national/${o.slug}`,
+			image: nationalLogo(o.slug)?.src,
+			terms: fold(o.office, o.agency, o.acronym, o.for, o.head?.name),
 		})
 	for (const g of localGovernments) {
 		out.push({

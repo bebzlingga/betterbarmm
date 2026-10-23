@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowRightIcon, BuildingsIcon, MagnifyingGlassIcon, MapTrifoldIcon, SirenIcon, UsersThreeIcon, XIcon } from '@phosphor-icons/react'
+import { ArrowRightIcon, BankIcon, BuildingsIcon, MagnifyingGlassIcon, MapTrifoldIcon, SirenIcon, UsersThreeIcon, XIcon } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { Emblem } from './emblem'
 import { useRouter } from 'next/navigation'
@@ -14,7 +14,7 @@ import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 
 export type DirectoryEntry = {
 	/** What it is, for the group it is listed under. */
-	kind: 'Office' | 'Province' | 'Town' | 'Barangay' | 'Member of Parliament'
+	kind: 'Office' | 'National office' | 'Province' | 'Town' | 'Barangay' | 'Member of Parliament'
 	title: string
 	/** Who holds it, or where it is. */
 	sub: string
@@ -25,9 +25,10 @@ export type DirectoryEntry = {
 	terms: string
 }
 
-const ORDER: DirectoryEntry['kind'][] = ['Office', 'Province', 'Town', 'Member of Parliament', 'Barangay']
+const ORDER: DirectoryEntry['kind'][] = ['Office', 'National office', 'Province', 'Town', 'Member of Parliament', 'Barangay']
 const PLURAL: Record<DirectoryEntry['kind'], string> = {
 	Office: 'Offices',
+	'National office': 'National offices',
 	Province: 'Provinces',
 	Town: 'Towns and cities',
 	'Member of Parliament': 'Members of Parliament',
@@ -39,6 +40,7 @@ const LIMIT = 8
 const JUMP = [
 	{ href: '#hotlines', label: 'Hotlines', icon: SirenIcon },
 	{ href: '#regional', label: 'Regional offices', icon: BuildingsIcon },
+	{ href: '#national', label: 'National offices', icon: BankIcon },
 	{ href: '#local', label: 'Provinces and towns', icon: MapTrifoldIcon },
 	{ href: '/directory/parliament', label: 'Parliament', icon: UsersThreeIcon },
 ]

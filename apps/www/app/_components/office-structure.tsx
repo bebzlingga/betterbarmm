@@ -103,7 +103,8 @@ export function OfficeStructure({ org }: { org: OrgStructure }) {
 		<section aria-labelledby='structure' className='mt-14'>
 			<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
 				<h2 id='structure' className='text-[20px] font-extrabold'>
-					How it is organized <span className='text-[var(--ink-mute)]'>{all}</span>
+					{/* Counts the people named, not the units: the line beside it says how many units have one. */}
+					Officials <span className='text-[var(--ink-mute)]'>{named}</span>
 				</h2>
 				<p className='text-[12.5px] text-[var(--ink-3)]'>
 					{named} of {all} units with a named head{org.as_of ? `, as of ${monthYear(org.as_of)}` : ''}

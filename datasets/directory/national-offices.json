@@ -1,0 +1,270 @@
+{
+ "name": "National government offices serving BARMM",
+ "generatedAt": "2026-10-23",
+ "note": "National agencies’ offices that serve the region, with what each is for. Read on 23 October 2026 from the agencies’ own pages and documents, their official Facebook pages, and news of an office opening; each line’s source is given. Many of these offices publish little: an empty field is one no official source showed. Pag-IBIG Fund’s Cotabato branch is not here because no source gave its address.",
+ "offices": [
+  {
+   "slug": "psa",
+   "agency": "Philippine Statistics Authority",
+   "acronym": "PSA",
+   "office": "PSA Regional Statistical Services Office – BARMM",
+   "for": "Birth, marriage and death certificates, and the national ID",
+   "head": null,
+   "address": "Mega Supreme Holdings Corp. Building, N.D. Avenue cor. Doña Theresa Street, Poblacion 4, Cotabato City 9600",
+   "phones": [
+    "(064) 557-1541",
+    "(064) 552-3206"
+   ],
+   "emails": [
+    "rssobarmm@psa.gov.ph"
+   ],
+   "website": "https://rssobarmm.psa.gov.ph/",
+   "facebook": null,
+   "note": "Moved here from Rosary Heights 9 in September 2023.",
+   "sources": [
+    {
+     "label": "PSA RSSO BARMM directory page, read through a web search on 2026-10-23",
+     "url": "https://rssobarmm.psa.gov.ph/directory/autonomous-region-in-muslim-mindanao"
+    }
+   ]
+  },
+  {
+   "slug": "philhealth",
+   "agency": "Philippine Health Insurance Corporation",
+   "acronym": "PhilHealth",
+   "office": "PhilHealth Regional Office – BARMM",
+   "for": "Membership, contributions and claims",
+   "head": null,
+   "address": "Kouzbary Business Complex, Ali Bin Talib Street, New Capitol Heights, Marawi Poblacion, Marawi City",
+   "phones": [
+    "(02) 866-225-88"
+   ],
+   "emails": [
+    "accre.proarmm@philhealth.gov.ph"
+   ],
+   "website": "https://www.philhealth.gov.ph/",
+   "facebook": null,
+   "note": "The number is PhilHealth’s national hotline; the email is the regional office’s accreditation desk. The address is from PhilHealth’s 2022 list.",
+   "sources": [
+    {
+     "label": "PhilHealth Circular 2022-0029, Annex E: regional offices and contact information",
+     "url": "https://www.philhealth.gov.ph/circulars/2022/029/AnnexE_PhilHealthRegionalOfficesCoverageAreasandContactInformation.pdf"
+    },
+    {
+     "label": "PhilHealth hotline page",
+     "url": "https://www.philhealth.gov.ph/about_us/eos.php"
+    }
+   ]
+  },
+  {
+   "slug": "sss",
+   "agency": "Social Security System",
+   "acronym": "SSS",
+   "office": "SSS Cotabato City Branch",
+   "for": "Membership, contributions, loans and benefits",
+   "head": null,
+   "address": "S.T. Lim Holdings Building, Makakua Street, Brgy. Poblacion, Cotabato City",
+   "phones": [
+    "1455"
+   ],
+   "emails": [],
+   "website": "https://www.sss.gov.ph/",
+   "facebook": null,
+   "note": "1455 is the SSS national hotline. The address is from SSS’s 2024 branch list.",
+   "sources": [
+    {
+     "label": "SSS 2024 bid documents, branch addresses and coordinates",
+     "url": "https://www.sss.gov.ph/wp-content/uploads/2024/10/Attachment-Branch-Coordinates-ITB-SSS-GOODS-2024-067.pdf"
+    }
+   ]
+  },
+  {
+   "slug": "dfa",
+   "agency": "Department of Foreign Affairs",
+   "acronym": "DFA",
+   "office": "DFA Consular Office Cotabato",
+   "for": "Passports and authentication",
+   "head": null,
+   "address": "Cotabato City",
+   "phones": [],
+   "emails": [],
+   "website": "https://consular.dfa.gov.ph/",
+   "facebook": null,
+   "note": "Operations suspended since July 2021 \"until further notice\"; no reopening has been announced that we could find. Check the DFA before you travel.",
+   "sources": [
+    {
+     "label": "DFA advisory 390: temporary suspension of operations in DFA Consular Office Cotabato",
+     "url": "https://consular.dfa.gov.ph/advisories/390-public-advisory-on-the-temporary-suspension-of-operations-in-dfa-consular-office-in-cotabato-city-co-cotabato"
+    }
+   ]
+  },
+  {
+   "slug": "prc",
+   "agency": "Professional Regulation Commission",
+   "acronym": "PRC",
+   "office": "PRC BARMM Office",
+   "for": "Professional licence renewal and registration",
+   "head": null,
+   "address": "CityMall, uptown Cotabato City",
+   "phones": [],
+   "emails": [],
+   "website": "https://www.prc.gov.ph/",
+   "facebook": null,
+   "note": "Opened in October 2026, the PRC’s first office in the region; before it, professionals went to Koronadal, Davao, Cagayan de Oro or Zamboanga.",
+   "sources": [
+    {
+     "label": "Philstar, PRC opens BARMM office in Cotabato City, 2026-10-02",
+     "url": "https://www.philstar.com/metro/2026/10/02/2560499/prc-opens-barmm-office-cotabato-city"
+    }
+   ]
+  },
+  {
+   "slug": "comelec",
+   "agency": "Commission on Elections",
+   "acronym": "COMELEC",
+   "office": "COMELEC Regional Office – BARMM",
+   "for": "Voter registration and elections",
+   "head": {
+    "name": "Ray A. Sumalipao",
+    "title": "Regional Election Director",
+    "as_of": "2026-05",
+    "source": "https://bworldonline.com/?p=748306"
+   },
+   "address": "Cotabato City",
+   "phones": [],
+   "emails": [],
+   "website": "https://comelec.gov.ph/",
+   "facebook": null,
+   "note": null,
+   "sources": [
+    {
+     "label": "BusinessWorld, filing of certificates of candidacy for the BARMM parliamentary election, May 2026",
+     "url": "https://bworldonline.com/?p=748306"
+    }
+   ]
+  },
+  {
+   "slug": "csc",
+   "agency": "Civil Service Commission",
+   "acronym": "CSC",
+   "office": "CSC Regional Office – BARMM",
+   "for": "Civil service exams and eligibility, and complaints about government service",
+   "head": {
+    "name": "Sandrah Arnica Macalangcom Usman",
+    "title": "Acting Director IV",
+    "as_of": null,
+    "source": "https://www.facebook.com/cscforbarmm/"
+   },
+   "address": null,
+   "phones": [
+    "(064) 425-5863"
+   ],
+   "emails": [
+    "robarmm.pald@csc.gov.ph"
+   ],
+   "website": "https://www.csc.gov.ph/",
+   "facebook": "https://www.facebook.com/cscforbarmm/",
+   "note": null,
+   "sources": [
+    {
+     "label": "CSC for BARMM Facebook page intro, read through a web search on 2026-10-23",
+     "url": "https://www.facebook.com/cscforbarmm/"
+    }
+   ]
+  },
+  {
+   "slug": "pnp",
+   "agency": "Philippine National Police",
+   "acronym": "PNP",
+   "office": "Police Regional Office – Bangsamoro Autonomous Region (PRO-BAR)",
+   "for": "Police; in an emergency call 911",
+   "head": null,
+   "address": "Camp BGen. Salipada K. Pendatun, Parang, Maguindanao del Norte",
+   "phones": [
+    "0935-962-3289"
+   ],
+   "emails": [
+    "proarmm_pcrd@yahoo.com"
+   ],
+   "website": null,
+   "facebook": "https://www.facebook.com/rcaddprobar/",
+   "note": "The number and email are the regional community affairs and development division’s.",
+   "sources": [
+    {
+     "label": "Police Regional Office BAR RCADD Facebook page intro, read through a web search on 2026-10-23",
+     "url": "https://www.facebook.com/rcaddprobar/"
+    }
+   ]
+  },
+  {
+   "slug": "bfp",
+   "agency": "Bureau of Fire Protection",
+   "acronym": "BFP",
+   "office": "BFP Regional Office – BARMM",
+   "for": "Fire safety inspections and fire response; in an emergency call 911",
+   "head": null,
+   "address": "Cotabato City",
+   "phones": [
+    "0955-532-0537"
+   ],
+   "emails": [],
+   "website": null,
+   "facebook": "https://www.facebook.com/BFPBAR/",
+   "note": "The number is the BFP BARMM Special Rescue Force’s, listed as always open.",
+   "sources": [
+    {
+     "label": "Bureau of Fire Protection BARMM Facebook page intro, read through a web search on 2026-10-23",
+     "url": "https://www.facebook.com/BFPBAR/"
+    },
+    {
+     "label": "BFP BARMM Special Rescue Force Facebook page intro, read through a web search on 2026-10-23",
+     "url": "https://www.facebook.com/bfpbarmmsrf/"
+    }
+   ]
+  },
+  {
+   "slug": "pcg",
+   "agency": "Philippine Coast Guard",
+   "acronym": "PCG",
+   "office": "Coast Guard Station Maguindanao",
+   "for": "Sea travel safety and emergencies at sea",
+   "head": null,
+   "address": "10 Rajah Tabunaway Boulevard, Port Area, Cotabato City",
+   "phones": [
+    "0917-119-7429"
+   ],
+   "emails": [
+    "cgsmaguindanao@gmail.com"
+   ],
+   "website": "https://www.coastguard.gov.ph/",
+   "facebook": null,
+   "note": "Under Coast Guard District BARMM. PCG’s pages give a second number, 0909-398-3684, for the same station.",
+   "sources": [
+    {
+     "label": "PCG, Coast Guard District BARMM page, read through a web search on 2026-10-23",
+     "url": "https://www.coastguard.gov.ph/index.php/districts/cgd-bangsamoro-autonomous-region-in-muslim-mindanao"
+    }
+   ]
+  },
+  {
+   "slug": "pdea",
+   "agency": "Philippine Drug Enforcement Agency",
+   "acronym": "PDEA",
+   "office": "PDEA Regional Office – BARMM",
+   "for": "Reporting illegal drugs",
+   "head": null,
+   "address": "Cotabato City",
+   "phones": [],
+   "emails": [],
+   "website": "https://pdea.gov.ph/",
+   "facebook": "https://www.facebook.com/antidrugwarriors/",
+   "note": null,
+   "sources": [
+    {
+     "label": "PDEA Regional Office BARMM Facebook page intro, read through a web search on 2026-10-23",
+     "url": "https://www.facebook.com/antidrugwarriors/"
+    }
+   ]
+  }
+ ]
+}
