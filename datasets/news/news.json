@@ -1,9 +1,285 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-10-22T12:00:03.911Z",
+ "generatedAt": "2026-10-23T22:32:25.963Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds and Google News’s index of them. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "items": [
+  {
+   "url": "https://tribune.net.ph/2026/10/23/murder-suspect-on-the-run-for-16-years-arrested-in-lanao-del-sur",
+   "title": "Murder suspect on the run for 16 years arrested in Lanao del Sur",
+   "source": "Daily Tribune",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T22:07:05.000Z",
+   "via": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOcmw4TzVST1ExdHpMTmhIRjZGaWNDVUtFb1ZMT3RmUGV0NTlKT3JNb0pydHQ5a1ZkUjkwTFRSUUwzTmlXajE4ZkhzbkJhblRiTDl4bXJCcW1TQXdGVmVzd1FGTFltUGVUQ1NMaVRqRUdVS081WFVVc0JTNElwb0xQMXlGYk5qcFpfRHA0Z29TeUI2bjhocjJSSVkzRElTYk0?oc=5"
+  },
+  {
+   "url": "https://newsinfo.inquirer.net/2329184/barmm-ex-mp-denies-link-to-seized-laos-drug-cargo",
+   "title": "BARMM ex-MP denies link to seized Laos drug cargo",
+   "source": "Inquirer",
+   "summary": "COTABATO CITY — A former member of parliament (MP) of the Bangsamoro Autonomous Region in Muslim Mindanao (BARMM) denied allegations by law enforcement officials that he was behind the recent foiled shipment of illegal drugs from Laos. In…",
+   "feed": "Inquirer",
+   "published_at": "2026-10-23T21:39:00.000Z"
+  },
+  {
+   "url": "https://www.abs-cbn.com/news/nation/2026/10/23/ex-barmm-parliament-member-denies-allegations-in-laos-drug-shipment-0920",
+   "title": "Ex-BARMM parliament member denies link to Laos drug shipment after 'mastermind' tag",
+   "source": "ABS-CBN",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T21:11:15.000Z",
+   "via": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPOGJzTldDM2RxczJIdjdOaUF6TkpSZVJFS1RPWm5tNUpTN0x4T24zWUhJbXQyVlZHMjdIcnFKNXRSXzF3SGdaaXRQUGx2SEFZemhtenZUODNKUjdZLTRlVmtLMmJYOTJlVW9HNmloSXlJeW12dTJONUdiY0J2VGZHa1Jrc0twOUotcFgyYUJBb2pmRnoxeFJRb1Bsazc1MUY0S1REWHJndkwtemVoQUVENERxVUJTR3JnQnBF?oc=5"
+  },
+  {
+   "url": "https://www.gmanetwork.com/news/topstories/regions/1006981/misuari-5-barmm-governors-back-macacua-to-lead-bangsamoro-parliament/story/",
+   "title": "Misuari, 5 BARMM governors back Macacua to lead Bangsamoro Parliament",
+   "source": "GMA News",
+   "summary": "Moro National Liberation Front (MNLF) founding chairman and former Autonomous Region in Muslim Mindanao (ARMM) regional governor Nur Misuari has thrown his full support behind Chief Minister Abdulraof Macacua to lead the regular Bangsamoro…",
+   "feed": "GMA Regions",
+   "published_at": "2026-10-23T17:34:34.000Z"
+  },
+  {
+   "url": "https://www.gmanetwork.com/regionaltv/onemindanao/160840/ika9-anibersaryo-sa-marawi-liberation-gihinumdom-i-one-mindanao/video/",
+   "title": "Ika-9 anibersaryo sa Marawi liberation, gihinumdom I One Mindanao",
+   "source": "GMA News",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T16:55:57.000Z",
+   "via": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOeUEzcFZ1cENvU25wa3diSjR4RS1rdlFwcXZTMkRDTnZaV1ZlYWRiVS0tTU5SX0UzN0otUkRBS25CNVVvbE1CZkdMSFhlaTYxY3hScUtYNEdKTk40dnZDTndzSHIwTmFSTVF2dTNqR25GSDhKNGU1N3YxeVBkT3E5UXJlZmg4RWJLRktTdndhcUdDNTZHZThCQTNyYjgySnlxNDVOb2lhLVN3aE4tSGsydjRDb2M0dVRpcDVNN2RGZEd0VFRWLXc?oc=5"
+  },
+  {
+   "url": "https://www.manilatimes.net/2026/10/24/news/national/ex-bangsamoro-lawmaker-denies-role-in-drug-shipment/2452470",
+   "title": "Ex-Bangsamoro lawmaker denies role in drug shipment",
+   "source": "The Manila Times",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T16:16:57.000Z",
+   "via": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNaEdzV0dabE53ZGpPRmFWdFVDN3BGNDlablJGSWtLOXk4V2M1OF9fQkctdXJZdTBwbVJ3aENHVnJWQ1QxVmYtSnJUOVlWaWNTTHlsQkRydFBpN1FySzQ3WFNJN195dTNqc3Fob0JyNjN2WU8yUmRxYVNiNGZPUmg2QV8ycWI0VlNETkRKWXN2aDM5emxyX09vMXNOM0JrWjdLMjM2NkcwQ3l1TS1YMFBBWmZR0gG3AUFVX3lxTE5jVlc4T2NSQVZfMkdTTlVEZ28zblBsOWdZTjN6aUFzMG5yQWxWSGRuZnhwSFR6T0FoLTlHTi1QVVM0QWVNNWI4WGpoOTdIV1VmR1FXWV9tVWJqbTA4UFN2ZEZxMjdUT216dk5CZ0R1VGpQbmswVC1PdzlNTWRVNTVlcHF1MXU4SkNoMy0xYlhacERjZDM1UjdoVVN4dERaanFMRGVmc2ppQ2dSUUI5eXFnX1RybGdoTQ?oc=5"
+  },
+  {
+   "url": "https://www.manilatimes.net/2026/10/24/regions/coast-guard-rescues-20-off-basilan/2452740",
+   "title": "Coast Guard rescues 20 off Basilan",
+   "source": "The Manila Times",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T16:05:00.000Z",
+   "via": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNTmtXc1E3TlFhVndUaXlMU3JkNldwTnJqcEZKYmJpQ0ZaUUpvLWYwRUpQRU9FbGNaR0pJdG9kQnpwcGl3b2hlY3RENTQyZ2FCdWh1c2RTa1NuZmFjeGxxNFRPOHdlNjN3Nk9SZXpJY3hyRnBoVTFjUHE5SEotLXIyYXZaWm1NWUptWHVxeDJkRFJoWXPSAZgBQVVfeXFMT0hmdmNrNlVxYjdLRUJSODA0a2loTXpUVFV5RGJwb3czMFk2TGt3SXlPWG8wcnNZMW5JRTNHb1A5ODZoYmFrZXlFb2pCVXVVc1AtbFlyaHd2RTA3VXJOM0IwUjdpQzRRNzNQTm0wY0xMRjRGeFEwcDNSejNvZmxZaUxlcTNjYmdSNEZIT2tuQ2hWdVhJZDRhblU?oc=5"
+  },
+  {
+   "url": "https://qa.philstar.com/headlines/2026/10/24/2565372/ex-bangsamoro-exec-denies-link-laos-drugs",
+   "title": "Ex-Bangsamoro exec denies link to Laos drugs",
+   "source": "Philstar",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T16:00:00.000Z",
+   "via": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQa1Q3al81VHRNTlgza3RZMDJrSUNsOV9FQXpFUFZ6eXB6akdENkdIb205RVpxaHFBLWUybDRRN0U1SWg5OEtiZ2NocmNOWFNFM09aenE4dldhbk9MTTVvUl93b0JSSmszMVlub1pXN0poSjBBUWtKc3Fzdkx4QUFiN3BwczBfZ0pUUG5WaHZ0dmRFME9xQThvTV9n0gGgAUFVX3lxTE8weWV2cXdrOFI0UUVtNE95NlFRZE5xODJ2M1l2djNJemhzRk9nM3M2QnVPVDV2YkQ1SU8wTjh0cUVwV2RtSTNKdjI4ZzNRTHNCMjRQX20yOXdmNlNJMWkzci1oRmtZSVFjNHhUenlXVFdNRmJ2bE9rSzFrZ25yQ0xmc3lWejlhNmpXVmlndDZ4bjdjSEpBN2xsQXFoektreC0?oc=5"
+  },
+  {
+   "url": "https://www.philstar.com/nation/2026/10/24/2565290/3-killed-another-attack-cotabato-city",
+   "title": "3 killed in another attack in Cotabato City",
+   "source": "Philstar",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T16:00:00.000Z",
+   "via": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPbjF0ZThJeUVJYjhzOHF6aDlweEtvZXNtZ1VfUkZYNzAxb0FaZjRaUUpHR1d5eVRnc2VVcnVidzF5QW9HeE5uMjU0eDlsaTRuMWEyX01sa3pORkRKOThvYmZ2d1c5RXl3YjhmOXJKcDBHeDhtYlUtb242N3p5Q3FFNGx2YUlLUnl1TmlLNndkcGx6QdIBmAFBVV95cUxQVTJpZHc5ZzVPUjdreG8yVzFTZ3d2Nk9wdjE3aERKaDdPaWlXYWo0VFptaU56a2N6MFhiLXNDY1dyR2VGUFJvM0pad3l5MFhXcmhhQVdSbzAwQ3B2MUdhSnBpeVpuWG1pM1N4c2hEVTdjMkpKVUlfLUt0VmlUdnE0MmgybEkxWWQ4ck91TUoxQXVrTjk5dVN3dA?oc=5"
+  },
+  {
+   "url": "https://newsinfo.inquirer.net/2329161/bangsamoro-group-urges-marcos-milf-chief-to-meet-before-oct-30",
+   "title": "Bangsamoro group urges Marcos, MILF chief to meet before Oct. 30",
+   "source": "Inquirer",
+   "summary": "MANILA, Philippines — Several Bangsamoro organizations, civil society, and leaders appealed to President Ferdinand Marcos Jr. to meet Moro Islamic Liberation Front (MILF) Chairperson Al Haj Murad Ebrahim before Oct. 30. Malacañang earlier…",
+   "feed": "Inquirer",
+   "published_at": "2026-10-23T14:21:12.000Z"
+  },
+  {
+   "url": "https://mindanaogoldstardaily.com/marawi-siege-victims-can-track-compensation-claims-online",
+   "title": "Marawi siege victims can track compensation claims online",
+   "source": "Mindanao Gold Star Daily",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T10:55:41.000Z",
+   "via": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOaV9yTzJtX3VUcmpQcmROeEZUQXNTakFydGF5WU0wdUhtZmMyQUMtT1ozaE1YMXFXOTJxU2xRVmR3ZlF0TTBoNzBMTXZTSUdRTUpGd2NzTV9tNm1lSVNmTE9HaGt3eGgxOEF6emktVms3TUJ2NXI0TExJcEJMaEdpOXRJZnVPdlBVdlk1bklUa1hyak9CT1E?oc=5"
+  },
+  {
+   "url": "https://canadianinquirer.net/2026/10/23/ex-bangsamoro-lawmaker-denies-role-in-%E2%82%B13-5-b-laos-drug-shipment-as-pdea-names-him-alleged-mastermind/",
+   "title": "Ex-Bangsamoro lawmaker denies role in ₱3.5-B Laos drug shipment as PDEA names him alleged mastermind",
+   "source": "Philippine Canadian Inquirer",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T10:33:26.000Z",
+   "via": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNbUVhMUk3YXFJdkxqZ0dSZ2FWeHY1aDRyVTJoVWhoS2NOSUNSdWFQZDFOT1pudVNTbmtVSGx5Qnc1R3FrVjB0T1ZzZXplWHY5Z1ZjX1d5dkRUNzF4Z0g0Nmo3eGkzLW9SV2gzTVNQdVgxcWFPQXUtT0J3TTc4ZnEtRzBQWlhYdGlmZ2tTTXIzMEdSYzhHdnJSSXQ0eGlRNy1FYy1Mc3hxVVVYNV9IUjJyNWJwMlJlQ2huc0tVQmdnYnlhUC1hdmVxanFOR2FieEN0Tkp6N1l4NDRCVl90T3NYYktkZw?oc=5"
+  },
+  {
+   "url": "https://www.philstar.com/nation/2026/10/23/2565241/3-killed-another-gun-attack-cotabato-city",
+   "title": "3 killed in another gun attack in Cotabato City",
+   "source": "Philstar",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T10:31:00.000Z",
+   "via": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONzVxWWNlbVh4N0dHTkdfdXFfTXo5SllRVGZiTkNCNVgwMXFRWDBpWXphVEg1dDhtZEFZTktVUmxDaXBWdnA2c3lPT19QRlpZTWU5c0ZMQUZZWER2TFllenFqRnB5YkUySzh5cUZVa1FJZklUaDZ6UWNHVGE5UnpNOWJLRVBROV85T0ZKSzF3LVNmdzR6cGs00gGeAUFVX3lxTE1UZXdZVVlKbDg0YXZ3V294cmh3R240aS01T1VrUm9ZMEZ5bFpZd3FKaExaRE9kejJLZEtySUJYcjIyeDZQUG82RGpBSnpVVTNOeU9lZW1QbkJmSkpTRkZPbFVEcWpaYXFPczJMS2psSEZpM0t0ZjEzckR4ZlFFLTBoRUJDbmRqdzBVYkUzQWlvRHRIQXc4ZkkyUmtoRjlB?oc=5"
+  },
+  {
+   "url": "https://www.philstar.com/nation/2026/10/23/2565235/pdea-barmm-shuts-down-drug-den-maguindanao-del-norte",
+   "title": "PDEA-BARMM shuts down drug den in Maguindanao del Norte",
+   "source": "Philstar",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T09:28:00.000Z",
+   "via": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNY3cweTlkdHNPVFMtbWxERGtxZThGbmRHX19Oc1RvN05PZ3c4OHBZNEFaV2dJc1lJdTIzY21lMG9wdjRSYkprRzBjdXBJQ09Ec0VZRHVucGhaT01VOVZtSGhmRVM0SFk3ODVSSjJSZDFBMGpkaDl5YXpYTEw2RGZtTW1IeVNieURLZ29LZ0VuRkdEbTdtRlNNa0NxTTlBa1FYWEw0Rzh30gGsAUFVX3lxTE0yS3ZuTzlwTUp4UVJUbDd2WW9GbDJXTUdJOUF1YXBiSC1URVNIVllfd29LQ001U0RwT2I2Y2VEaHFIV3VlbTU5ZGZuT2lkZnhDM1pXby1qWHRTaU1oeGFnSVRCa29FSlc4OGF2YnFFVGI4VFN3emJVR2NvX0V4ZFVZanYySUM1NTA0VmRqY3NmQjFBN2ZYcTNiczRwQ2dpSTJ1ckFVMENfMXJ1RW0?oc=5"
+  },
+  {
+   "url": "https://pia.gov.ph/news/mindanao/barmm/cultural-advocates-laud-lanao-del-surs-omar-awards/",
+   "title": "Cultural advocates laud Lanao del Sur’s OMAR Awards",
+   "source": "Philippine Information Agency",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T08:56:57.000Z",
+   "via": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOGc3c1l6aTNhc0c2R2ItdDNLWG85ZHBWNHZieFBKdFQ0X1gtQVZLOU5aZzBfdDQ2UjI5c3pIdXFIOTFPdzRTRlFDMWJ3TUJRLWVMNURsWXJPYUVLNk01T0hiZW4xZUlRNk1fdlgyT1VGbTNwOUROaGphQTgyLWw5MmZyODhFZkgybmFLSlA3Qzl6RkI3?oc=5"
+  },
+  {
+   "url": "https://pia.gov.ph/news/mindanao/zp/basilan-settles-dispute-between-two-parties-in-sumisip-through-peaceful-reconciliation/",
+   "title": "Basilan settles dispute between two parties in Sumisip through peaceful reconciliation",
+   "source": "Philippine Information Agency",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T08:15:19.000Z",
+   "via": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPY01MOU91QjFzcUhMbGtNZGRKVG5aUmdySUpOelNQTjNtZUpaeFhOYWpDTHlMLV9TQXJ6dGI2T1BRZ3pqMVNQaDB0V2JOSlZSOERZcG05QWJ4RVJGUmNiSEd3clNsQkdoajhWRUhSLW9Ha21qSThHc09sb1pfWi1xOS1mSEdqNXJOWVlMN0JWbW4xYk9Ra0hyVHBZM3VXX3ZBVEh6c3Vwa2FINVR5Ujk5UXJ2QTF5ZUJBZ1lDRUhlWFM?oc=5"
+  },
+  {
+   "url": "https://pageone.ph/bangsamoro-tax-share-to-rise-php838-million-in-2027-budget/",
+   "title": "Bangsamoro Tax Share To Rise PHP838 Million In 2027 Budget",
+   "source": "pageone.ph",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T08:05:36.000Z",
+   "via": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaU1PMnAzd1BRWHRCWUhhWnYxQ3BQcWlCVHl5M3BIcndpakItVTJES1pzZlFUd205SzlOLUhTQnZhUVV3NkRVamx2WTVkNW05R3dxTXRfc0Ywc09qVXNTdmszeGtIOG5IbmxVTzVmNUlZTzMzTnlZeFFwN3FLRHc1LXF1UWk?oc=5"
+  },
+  {
+   "url": "https://vigan.bomboradyo.com/dati-a-bangsamoro-official-pinaglibakanna-a-karaman-iti-p3-5-b-shabu-haul-idiay-laos/",
+   "title": "Dati a Bangsamoro official, pinaglibakanna a karaman iti P3.5-B shabu haul idiay Laos",
+   "source": "Bombo Radyo Vigan",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T07:21:12.000Z",
+   "via": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcDR6R3FLb1dsLURqby1JdFQ1cnhocGdOOTVIdUF4Z0VVWWJfbFpjcWk4Tk1Ec1hDQmRDT3hMSlA0MDJIbml0SEx5cjFSYW5ZWm5xSUNLSWl1M09veXlZRlhaZmpETGZrMWVFTGphdDlENW1PRFYxYmZRd0VXZHhhbWhNTkRJOTdvOGtjTEtyY0xzam9vNmF5T3hTVUx0Q2dSb1hoajlxX1JtMUZiY1hrbEpVNlQ?oc=5"
+  },
+  {
+   "url": "https://anfrel.org/anfrel-ndi-to-launch-final-election-observation-report-on-2026-barmm-parliamentary-elections/",
+   "title": "ANFREL, NDI to launch final election observation report on 2026 BARMM Parliamentary Elections",
+   "source": "Asian Network for Free Elections",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T07:04:18.000Z",
+   "via": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQc0xfY3dkRkVPR2pNZXJTeVhNSlNnZkdrbTdrZVprM29tcFFNREpzdk1faU5pd3NFTEJoVi1PZU1JQWZWak45RDBGTGRvajhyQ3hfRkNraTBHWlJqaTZXUHh1SXN1emNHUW1LSWxGX19YTmVjdkktOGI5bVdVN1B0M1Rnd3I5UmZhcGdINGtldEgxbVNkcXN6V0VacFJrZWgxSUFIcHd1S3pMZFpvUUkzTUtB?oc=5"
+  },
+  {
+   "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/23/ex-bangsamoro-lawmaker-denies-involvement-in-laos-drug-smuggling-case",
+   "title": "Ex-Bangsamoro lawmaker denies involvement in Laos drug smuggling case",
+   "source": "The Star",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T04:54:00.000Z",
+   "via": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZEhUSWVJWWcxQnFnQTRRRExubl9FZ2tjb1lVdmt3YU0tQ0xpclNrbGtKWXkzdFFzbGJqb2t1UTRYYTZkZGxNMnY4S2tXZW1Hak45ZVloT1FsZnVmZTVjaHd1UEtJRk9uSkR5cVRjUkh2OVk0VEJYRmhrbWtSbHFWX3pUT0tONUNGUFBxbmoyYjlLczc2WDA1VGRFNGhac0lsdlFlbWlSR3o1TklMZnd1RkU1NFpmRWdqVzB3UFViNmRfVXZuUUJQT3hYQUE?oc=5"
+  },
+  {
+   "url": "https://newsinfo.inquirer.net/2328882/ex-bangsamoro-lawmaker-denies-link-to-laos-drug-smuggling-attempt",
+   "title": "Ex-Bangsamoro lawmaker denies link to Laos drug smuggling attempt",
+   "source": "Inquirer",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T04:27:00.000Z",
+   "via": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQclFSZlRHbXJXWUx0X0JRNzZJU3JyVXNrZ1p6MkE1SmtaX2VQczFTQ2RmUnplalhLYmd0b3NFUThjZERkbFo1U0JrUjNKeDExUFgtT25FbnlHNkRhS2NSR3RRbXRpbGRhU3BJazlkUEtQVmFub1R4Z1JLcUR5NzRLdkt4c2E5N3QydEt3dFhHdzJHamkzOXU1Smh5ZlQ0bTd1cDlOYmtB?oc=5"
+  },
+  {
+   "url": "https://www.philstar.com/headlines/2026/10/23/2565201/ex-bangsamoro-solon-rimbang-denies-bankrolling-p35-billion-laos-shabu-shipment",
+   "title": "Ex-Bangsamoro solon Rimbang denies bankrolling P3.5-billion Laos shabu shipment",
+   "source": "Philstar",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T03:39:00.000Z",
+   "via": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNVGRGd3lYN19PVzBfcmo3WHY5VjNhR2Y4amxmZGh4Y0hNZkZ3Vjl4bkhSb1FMY1AyY0YtYUdUYlZNMC1nMVhzRTRLY2hqaU1iOU9oZUxBekZ4ek1haXdkX2R0RDNTQUhnclI3dmxtYXh3YUVSMkItZGZTaklSYUV0WV9HSG5hTTF3RlhoNVBkcHhBNDJLWTFFUU1CVFhZVThQNk9xMFFXdjNMdjl3T29laE96U1h6WUxlZVI0Rk03WFJ3UEtoRldVYlgtcEs?oc=5"
+  },
+  {
+   "url": "https://mindanaogoldstardaily.com/bangsamoro-groups-press-marcos-murad-to-advance-peace-deal",
+   "title": "Bangsamoro groups press Marcos, Murad to advance peace deal",
+   "source": "Mindanao Gold Star Daily",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T03:00:23.000Z",
+   "via": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMk15a1pDMEt0S2lsYlljeGZHWWtPQi1jRHc0MF9na3I5RVNOYlo5QWhVdndVVXZfUmFfNi1rX2FxWG1ab0xFWWtaT2JKV3F3VXo2WHFYS05RbGQxSElSNkNBWEpkOGhRWlRiT1ZDWVJxbVJzb19qd0FoUHNweDVFTDRkZjZzdXRuVm5QemZobUdrR0Jqc3Fn?oc=5"
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWmpuaklBeGpPNHlncllhR0tTTVkxbm1hUFhQS0pTNUVRSFByY2xWUENpNnJENGxNSzR2UWFvdTBiZld3V3g5cUM5cWUtQjhiMGNTM3lLMGhhVDNxOEJwRjM2LUc5OE5mNFhyRlZ6MTh3azQxYW9OeHF1NWJpS2tYaFpiN0ZWdldvVHQ0bmdaTDRXQjh2LTBMU3V5YjgyZVQwM0hic0I3UlRRd0ptbGlUcHBpMXBJN3RGLVplNUxIMnZLS3lHM003dEtYUQ?oc=5",
+   "title": "Ex-BARMM parliament member ‘appears to be’ mastermind in Laos drug shipment – PDEA",
+   "source": "ABS-CBN",
+   "summary": "",
+   "feed": "Google News (international)",
+   "published_at": "2026-10-23T02:48:12.000Z"
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVlVySXZtbWxPeEZfVlU1ZmJBdjNXY2U1YXMtdGhuWWp0Z1BNN3NuY2dUWTJlVXdMQ3JmTk1GYW5FOEtIbUJod3R4Y0JoVC10REdpS05Id0FDODIyR1lqUUlBb1dYWlZjQks3ZmVBdHRXS1FTVzdDamJkdzBKWkhHVDF2ZXczN3lVQ2czOU1Rd0V5OTFYeng2SFFkOFJKclBjTnc?oc=5",
+   "title": "Ex-Bangsamoro lawmaker Rimbang denies financing drug shipment from Laos",
+   "source": "The Chronicle PH",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T02:47:35.000Z"
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNd2lJOXdfQmdybHlmdU1TYml4Q0pjcHpxWXpfZE56RzMyTGRtMFNlNDhKc1A4YmpTUDF4dzMySzQ3anZDUlJSbHY4ZmhUY0ZRTlFTdlJFS1BmVXY5UGJEY1R5cl9kTDdrdUtaM0t0Z3dLajVYb3VEaE1IQS0yMmdmUWwtaC1aZ2ZWS1E1emRWbTNZNnBjSXdJVG9zakNCREZtd3c3b1UzLVFWZ28yNW5rZ2hnRGIxdUwtSU4xRUExYjR5YnhBVVVPVHlsM1lOblFBRWfSAdcBQVVfeXFMTkNrNGVBNFZuaWVQTjF5RE5tMDJHa3ZsVGk3c1lhNXJWZ3JLY2tjM3VUMzQ2MFowZlpmblpqdXBnck1IU0s1NVF3WGc4X2dvaEFSajRCclptRUJRRE1ISXNEeXgyeGxTWmFnbjg4NTYzb2EzUlk0Z0tSY3AyY3VmanVkMng0Ymg4Y2JMalNfdGVIV1Z6RHZNejhPTFc3dGx0WXJOY0JhQkdza1BxQm8tbGhla1djblI5cXA3bWlVOEs0UDluMWhyRnB6aUVZWmxvMV9Qc0p0Zkk?oc=5",
+   "title": "Ex-Bangsamoro MP Rimbang denies involvement in P3.5B Laos drug shipment",
+   "source": "GMA News",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T01:55:27.000Z"
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUTNpc0FTZDA0OEFncjB3b2xkOGZ4WGI0SmlpMFg5M0szUDB6VTFWNU1xUVI2aVVRUFBJSDdlTHAwbnY2Y2dxaDhlY2RHandXVlFfQU9GcFVyZjh0aFhhWjFIazJudkstSGUtS05uMDRYVlNlNnhfQ3Y5dXFvdTRsZXVNcE16VmZ6NVBLRW5NV1lqX19HMG83OERHQU9WLXlBbFR2V2lSNW0wc3NERlRiSVM0VExLeWRUN2Y4cFVBX3RjWFVvcThvN2Q5b9IB0AFBVV95cUxNSEZfbmdwZVNndmVyczBEQzNMdk1UWnNfanlSYVVFeVctdjRPRmNzanZta0lITFVySHZIRVNwSmd2YmhwQUFrSUJjRlRIVk5OM1JHRXE3WDItS0oxMGQxMWNOcTdPTzRwcEdqTDc2UHdyMks1QzQwUWNFaXpCN0hadTB0NVdhUUhvdkhmbnZWaEhNRHYwcTlqbUhMdmNPMGI0Wko2RHByd0hzVHVVcWZYR3FqZ09HNEV2T2hsUEM1ZGJYQl9GWmFDWXh4WVIwLWZn?oc=5",
+   "title": "Bangsamoro groups press Marcos, Murad to seal peace deal before parliament opens",
+   "source": "The Manila Times",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T01:50:00.000Z"
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMTZITzVweTJ2cmpxZHhtR2didGk3RGZzQUZjTW5HcTN6eC1FNXlwWDRXSDJ1a2VmbDAwREs4cXFHdnJCdDhoSzh1MEszaEtnQVIzNkN2ek01LWNoUVRQQXFzVmhwMTE4ZjZnUlRuVDJFQng5NkRpRk1wT010a3c5eQ?oc=5",
+   "title": "2 PCG personnel killed in Cotabato City ambush",
+   "source": "DZRH News",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T01:05:08.000Z"
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNX0ktemFrTXJoUHA3UGdUcHlFUEFFb05MSWZxSTNnVFBCV1Q2UWpra0x3WHh4RjJtTTlLYXAzbk9TWmNVenFhX3Fqb2loNVhQajNOdF9PQk9qVVdpcUVvU2UybUNmTjIyN2VYQ1luX051ellEa0xLRHNlMU1hcEgwU0FaZDFuVlpoekZtODMxQXpwNno1QXRZ?oc=5",
+   "title": "BARMM accounts for 70% of election hot spots",
+   "source": "Rappler",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-22T23:15:00.000Z"
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQR1FKU0Y5QVNCM216X0E1bTg0ajlVbnpSdXByT0lIdWNId0JHUlhfdllMOS1kQ3l3N0dUYjRQLXI4cDB5cXp1aGxlTzRnenJKR3N3c2Y5ejFsdXhTOUZwZV9VNmtHMU1yUFozUW80UlJvQVFZM1p6cFlTNjFzTHBoSzlaWXhrdy14OTRTWlFZQ1l1U1N1aWgtTGlsQzJPbU3SAaQBQVVfeXFMUFlTUGkxRnRlLWpRRWVQYjY3c2tBYTZaQVdRODU0U2M1X2QyM255WXpnLS1vazdwX3JlMjdfREpFbDE4YVA2dHc4Tk82V2hwZTVkYVl4X3FRbDZ1ai1ZZlZkeThVZmNuUEZlc055eEZkM0pORXJYMHNXMzh3emVVR0YydmowUTlyRllPVHprUGc3SGZXTlZNWkNReFE4U3hTSXljUjY?oc=5",
+   "title": "Ex-BARMM exec now tagged as brains behind Laos drug cargo",
+   "source": "Inquirer",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-22T21:38:00.000Z"
+  },
+  {
+   "url": "https://newsinfo.inquirer.net/2328689/milf-chief-pushed-to-rule-rainbow-coalition",
+   "title": "MILF chief pushed to rule ‘rainbow coalition’",
+   "source": "Inquirer",
+   "summary": "COTABATO CITY — Some 1,500 supporters of the Moro Islamic Liberation Front (MILF) gathered at the city plaza here on Thursday to air their call for the elected Bangsamoro parties and district and sectoral representatives to unite in a…",
+   "feed": "Inquirer Regions",
+   "published_at": "2026-10-22T21:06:00.000Z"
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVTRySnoxV2RtV0doYk0xYkl1aUFPRnZnLVhoSU9TVGl0Nko4cldXb0tLOWdEbDB6VTRLeVg2Sl9tSEQ2U0I2Q0JZZ2MyRnZDNEpKZ1JtTmRVSFBDRjZoeUthZmgxR0ZFenYzcDQ1bE5KODNubl8tNEh5eTVka2h3Q2VDU28yZS1PcmUwUWNTREV0YXZRZ2Q1bjZEZklsQlluQjFBR1dRYlgwOE93U1NRSkU1b9IBswFBVV95cUxOVTRySnoxV2RtV0doYk0xYkl1aUFPRnZnLVhoSU9TVGl0Nko4cldXb0tLOWdEbDB6VTRLeVg2Sl9tSEQ2U0I2Q0JZZ2MyRnZDNEpKZ1JtTmRVSFBDRjZoeUthZmgxR0ZFenYzcDQ1bE5KODNubl8tNEh5eTVka2h3Q2VDU28yZS1PcmUwUWNTREV0YXZRZ2Q1bjZEZklsQlluQjFBR1dRYlgwOE93U1NRSkU1bw?oc=5",
+   "title": "Police battalion transfers HQ to Lamitan; move welcomed",
+   "source": "The Manila Times",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-22T18:09:31.000Z"
+  },
   {
    "url": "https://www.philstar.com/nation/2026/10/22/2565027/2-coast-guard-personnel-killed-ambush-cotabato-city",
    "title": "2 Coast Guard personnel killed in ambush in Cotabato City",
@@ -19,6 +295,14 @@
    "summary": "A fire on Wednesday night, October 21, destroyed several buildings on the campus of a historic Catholic school in the predominantly-Muslim town of Mapun, Tawi-Tawi. The school is known for prompting interfaith dialogue…",
    "feed": "Philstar",
    "published_at": "2026-10-22T11:14:00.000Z"
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPS2NlMy1OMFBlcmljUGlLQ3EtUnJ5R0V4czJobmVBWHY5dEZfVzNLZWxZS2ZZZ19NZEVKYXhHcnRaWUE0Y3h4SERleTNvU3RILXF5ZG9PcXBJM1F6Zk5OLXBtR0ZSRHc4MjdVUnZqQ1NXNmluTG5sd2Z1SEZhZE5PTl9IUGYtM0NubGlmeFN6MGcyQUJHeXF1Y2I3Q2Uxby16SnlILTBtUHlHSkx2S0sxenRB?oc=5",
+   "title": "Marcos Jr. urged to meet Murad before October 30 to advance Bangsamoro peace process",
+   "source": "smni news channel",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-22T11:09:25.000Z"
   },
   {
    "url": "https://tribune.net.ph/2026/10/22/bangsamoro-leaders-urge-marcos-murad-to-complete-peace-process",
@@ -636,6 +920,14 @@
    "feed": "Google News",
    "published_at": "2026-10-19T16:10:00.000Z",
    "via": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWElUelE4YW53QlhNdUhqVjZ0SWRVUGRDU3NnMVBRZm1tUnJLSnRYN29hM2Q0dGtPbDZ4RzBBSVZQMnBoeUhiVUwxSFhUVm9aS2ZkWUg1WXZzdHBYV0tTUTJJYVktc2E4ajJtTktoSXdULTJkR19OUGJJVlQzX2tUd1lZRV90R0NZUFVzdTQ2MTRMckRF0gGaAUFVX3lxTE9mV3RvUVNwTWRjTDFJSTNsdzRCX09jelFoYmhwMzNiWVNYRU1Gb0VhLUNHZnFvTHhPbVJ3dXVvR0ROa0FURy1CUXdhZF9XeTVIazVnanJVY09seXZZa2lxR3B3NExLZlRMVnhpQ3Y3TXlRRFVFOGhwemVTQ1JIcUdqcmlMX3pUT3ZjajFLWlJEdlN4LVlxWVVDdHc?oc=5"
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeVg1Z0FTbzVYS1ZzR2d5Vnlodk1iNWlqeTNKZU9OQzBHcjdqbGR2U2RhM1luUWRaenBKczFyMkZOblRILVRHTkM1ZHVWZmlOQnhCMkhzbzgzd1BDaEdqeXVRUUNJUUt1SW8yWEFmVURmeC1SN0F5Sy1MYjhnUXJuVHlfS0FCSUxaUENEaDBxdV9SZFNtN25TZjZEdURSejA5dkdoVVdTdnJpZ3lLdlRHQ2Z0bHFYdUNz0gG-AUFVX3lxTE95WGw3c1VmMENwNmVrWDlGWlEzSzU3NkhMX1ZITUk1WkpKSl9oMVJkNGNTRGNqSzhxS1BaNzFGR0MyR3hHdnN1SUdZa2ZEelV1SjlNOHVMdDFjckRPaWNsbW55RzYtZHZKRGRhRGVHelFTMGdUVHY5SHFrT3MzM011eFFJaXhsa3RwVzFia2ZWVW52UTVYMTVHYmNHeFpiczRQZ0dVQ3puSkIxR1ItNkdVX29JRHpiZXR6R1RqLWc?oc=5",
+   "title": "Award-winning Maguindanao massacre documentary ‘58th’ to screen in California",
+   "source": "Cebu Daily News",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-19T15:10:00.000Z"
   },
   {
    "url": "https://tribune.net.ph/2026/10/19/4id-honors-marawi-siege-heroes",
