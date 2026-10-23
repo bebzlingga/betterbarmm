@@ -1,7 +1,10 @@
 import { ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import outline from '../../../../datasets/accidents/barmm-outline.json'
+import news from '../../../../datasets/news/news.json'
 import { ACCIDENT_TYPES, accidents, typeOf } from '../_lib/accidents'
+import { brain } from '../_lib/brain'
+import { barangays, CLASS_COLORS, HAZARDS, officialBarangays, region } from '../_lib/preparedness'
 import { commonsThumb, craft, creditOf } from '../_lib/crafts'
 import { place } from '../_lib/places'
 import { PhotoCredit } from './discover-figure'
@@ -12,11 +15,13 @@ import { PhotoCredit } from './discover-figure'
    The records of a different kind — each a page on this site rather
    than a workspace of its own — in the same grid as the workspaces,
    but each with a picture of what it holds: Incident Watch draws its
-   own incidents, the others a sketch of the page.
+   own incidents, Preparedness every barangay in its flood hazard, Latest
+   news its newest headlines, the Brain its own wiring, the others a
+   photograph or a sketch of the page.
    ============================================================ */
 
 export type Project = {
-	key: 'accidents' | 'crafts' | 'places' | 'services'
+	key: 'accidents' | 'preparedness' | 'news' | 'crafts' | 'places' | 'brain' | 'services'
 	label: string
 	href?: string
 	measure: string
@@ -82,6 +87,82 @@ function IncidentDots() {
 	)
 }
 
+// Every barangay at a point inside it, in the same box as Incident Watch, coloured by its land in medium or high flood hazard.
+const BGY = barangays.filter(({ at: [lon, lat] }) => lon >= W0 && lon <= W1 && lat >= S0 && lat <= S1)
+function floodColor(b: (typeof barangays)[number]) {
+	const s = b.area ? (b.flood[1] + b.flood[2]) / b.area : 0
+	return s >= 0.5 ? CLASS_COLORS[2] : s >= 0.3 ? CLASS_COLORS[1] : s >= 0.1 ? CLASS_COLORS[0] : null
+}
+
+/** The region's barangays, the flood-prone ones lit in NOAH's colours; beside them, the barangays in high hazard for each of the three. */
+function HazardDots() {
+	return (
+		<span className='flex h-full w-full items-stretch bg-[var(--paper-2)] text-[var(--ink-2)]'>
+			<span className='flex w-[42%] shrink-0 flex-col justify-center gap-2 pl-6'>
+				<span className='font-[family-name:var(--font-display)] text-[30px] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>{officialBarangays.toLocaleString('en-PH')}</span>
+				<span className='font-mono text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>barangays mapped</span>
+				<span className='mt-1 grid gap-1'>
+					<span className='text-[10.5px] font-semibold text-[var(--ink-3)]'>In high hazard</span>
+					{HAZARDS.map((h) => (
+						<span key={h.id} className='flex items-center gap-1.5 text-[11px] leading-none'>
+							<span className='size-1.5 shrink-0 rounded-full' style={{ background: CLASS_COLORS[2] }} />
+							<span className='truncate'>{h.label}</span>
+							<span className='tabular-nums text-[var(--ink-3)]'>{region.highBarangays[h.id]}</span>
+						</span>
+					))}
+				</span>
+			</span>
+			<svg viewBox={`0 0 ${VW} ${VH}`} preserveAspectRatio='xMidYMid meet' className='h-full min-w-0 flex-1 py-3 pr-3' aria-hidden='true'>
+				<path d={REGION} fill='var(--accent)' fillOpacity='0.06' stroke='var(--accent)' strokeOpacity='0.3' strokeWidth='0.8' />
+				{BGY.map((b) => {
+					const c = floodColor(b)
+					const [x, y] = px(b.at[0], b.at[1])
+					return <circle key={b.psgc} cx={x} cy={y} r={c ? 1.7 : 1.1} fill={c ?? 'var(--ink-3)'} fillOpacity={c ? 0.95 : 0.22} />
+				})}
+			</svg>
+		</span>
+	)
+}
+
+/** The newest headlines on the list, outlet over headline, as the page lists them. */
+const HEADLINES = [...news.items].sort((a, b) => (b.published_at ?? '').localeCompare(a.published_at ?? '')).slice(0, 3)
+function Headlines() {
+	return (
+		<span className='flex h-full w-full flex-col justify-center gap-2.5 bg-[var(--paper-2)] px-6'>
+			{HEADLINES.map((h) => (
+				<span key={h.url} className='block border-l-2 border-[var(--accent)] pl-3'>
+					<span className='block font-mono text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>{h.source}</span>
+					<span className='line-clamp-1 text-[12.5px] font-semibold leading-snug text-[var(--ink)]'>{h.title}</span>
+				</span>
+			))}
+		</span>
+	)
+}
+
+// The Brain's own wiring: its sources, the datasets built from them and the workspaces that show them, as three columns.
+const NODES = brain().nodes
+const COLS = (['source', 'dataset', 'workspace'] as const).map((k) => NODES.filter((n) => n.kind === k).length)
+function BrainWeb() {
+	const xs = [70, 170, 270]
+	// Up to twelve dots a column, spread down it; the labels under them carry the real counts.
+	const pts: [number, number][][] = COLS.map((n, c) => {
+		const k = Math.max(1, Math.min(n, 12))
+		return Array.from({ length: k }, (_, i): [number, number] => [xs[c]!, 20 + (k > 1 ? (150 / (k - 1)) * i : 75)])
+	})
+	return (
+		<svg viewBox='0 0 340 190' className='h-full w-full' aria-hidden='true'>
+			{pts[0]!.flatMap(([x, y], i) => [pts[1]![(i * 3) % pts[1]!.length]!, pts[1]![(i * 5 + 2) % pts[1]!.length]!].map(([x2, y2], k) => <line key={`a${i}${k}`} x1={x} y1={y} x2={x2} y2={y2} stroke='var(--accent)' strokeOpacity='0.28' strokeWidth='1' />))}
+			{pts[1]!.flatMap(([x, y], i) => [pts[2]![(i * 2) % pts[2]!.length]!].map(([x2, y2], k) => <line key={`b${i}${k}`} x1={x} y1={y} x2={x2} y2={y2} stroke='var(--accent)' strokeOpacity='0.28' strokeWidth='1' />))}
+			{pts.map((col, c) => col.map(([x, y], i) => <circle key={`${c}${i}`} cx={x} cy={y} r={c === 2 ? 5 : 3.6} fill={c === 2 ? 'var(--accent)' : 'var(--paper)'} stroke='var(--accent)' strokeWidth='1.4' />))}
+			{['sources', 'datasets', 'workspaces'].map((l, c) => (
+				<text key={l} x={xs[c]} y={186} textAnchor='middle' className='font-mono' fontSize='9.5' fill='var(--ink-3)' letterSpacing='0.12em'>
+					{COLS[c]} {l.toUpperCase()}
+				</text>
+			))}
+		</svg>
+	)
+}
+
 /** A charter's page: a document with its checklist of what to bring. */
 function Checklist() {
 	return (
@@ -121,7 +202,7 @@ function PlacePhoto() {
 	)
 }
 
-const PICTURE = { accidents: IncidentDots, crafts: CraftPhoto, places: PlacePhoto, services: Checklist } as const
+const PICTURE = { accidents: IncidentDots, preparedness: HazardDots, news: Headlines, crafts: CraftPhoto, places: PlacePhoto, brain: BrainWeb, services: Checklist } as const
 
 export function ProjectList({ projects }: { projects: Project[] }) {
 	return (
@@ -132,7 +213,7 @@ export function ProjectList({ projects }: { projects: Project[] }) {
 				const body = (
 					<>
 						{/* The picture fills its panel edge to edge; the sketches that do not are inset. */}
-						<span className={`block h-40 overflow-hidden border-b border-[var(--rule-soft)] bg-[var(--paper-2)] ${p.key === 'accidents' || p.key === 'crafts' || p.key === 'places' ? '' : 'px-6 py-4'}`}>
+						<span className={`block h-40 overflow-hidden border-b border-[var(--rule-soft)] bg-[var(--paper-2)] ${p.key === 'accidents' || p.key === 'preparedness' || p.key === 'news' || p.key === 'crafts' || p.key === 'places' ? '' : 'px-6 py-4'}`}>
 							<Picture />
 						</span>
 						<span className='block p-6'>
