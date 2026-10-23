@@ -1,6 +1,6 @@
 {
  "name": "Accidents in BARMM, as reported",
- "generatedAt": "2026-10-23",
+ "generatedAt": "2026-10-24",
  "since": "2019",
  "note": "Compiled from news reports: the outlets’ own sites, Google News’s index of them, and public Facebook posts that index carried. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.",
  "sources": {
@@ -45,13 +45,13 @@
    "date": "2026-10-22",
    "type": "shooting",
    "kind": "Shooting",
-   "title": "Coast Guard seaman killed, another wounded as gunmen fire on PCG vehicle in Cotabato City",
-   "summary": "A Philippine Coast Guard seaman was killed and an apprentice seaman was wounded when two masked gunmen on a motorcycle fired into both sides of the vehicle carrying them and their station commander along Roman Vilo Street, Poblacion 6, Cotabato City, at noon on Thursday, 22 October 2026. Both were hit in the head; the seaman was declared dead on arrival at the Cotabato Regional and Medical Center. The commander was unhurt. Police recovered seven spent shells believed to be from a 9mm pistol; the gunmen fled toward the Texing and Washington area.",
+   "title": "Two Coast Guard men shot dead as gunmen fire on PCG vehicle in Cotabato City",
+   "summary": "Seaman Second Class Reniel Agpalo and Apprentice Seaman Louther John Vitor of the Philippine Coast Guard's Cotabato City Station were shot dead when two masked gunmen on a motorcycle fired into both sides of the vehicle carrying them and their station chief, Lt. Commander John Paul Cabarrubias, along Roman Vilo Street, Poblacion 6, Cotabato City, at noon on Thursday, 22 October 2026. Both were hit in the head and declared dead on arrival at hospital; the station chief was unhurt. Police recovered seven spent shells believed to be from a 9mm pistol; investigators were looking at a work-related motive or a personal dispute.",
    "province": "Cotabato City",
    "municipality": "Cotabato City",
    "barangay": "Poblacion 6",
-   "deaths": 1,
-   "injured": 1,
+   "deaths": 2,
+   "injured": 0,
    "missing": 0,
    "vehicles": [],
    "lat": 7.2215,
@@ -63,6 +63,18 @@
      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0qVFgECFa8M22rpi3HiDu25xFkVqoNRk7TksqkYN7H3RM5n5DG4HVBZkVJcPnFA1Dl&id=100068735708353",
      "title": "UPDATE: Isa patay, isa sugatan sa pamamaril sa tatlong mga Coast Guard personnel sa Cotabato City",
      "date": "2026-10-22"
+    },
+    {
+     "outlet": "Inquirer",
+     "url": "https://newsinfo.inquirer.net/2328335/2-pcg-men-shot-dead-in-cotabato-city-station-chief-unharmed",
+     "title": "2 PCG men shot dead in Cotabato City; station chief unharmed",
+     "date": "2026-10-22"
+    },
+    {
+     "outlet": "Philstar",
+     "url": "https://www.philstar.com/nation/2026/10/22/2565027/2-coast-guard-personnel-killed-ambush-cotabato-city",
+     "title": "2 Coast Guard personnel killed in ambush in Cotabato City",
+     "date": "2026-10-22"
     }
    ],
    "id": "2026-10-22-cotabato-shooting",
@@ -71,6 +83,98 @@
     "outlet": "Facebook",
     "href": "https://www.facebook.com/permalink.php?story_fbid=pfbid0qVFgECFa8M22rpi3HiDu25xFkVqoNRk7TksqkYN7H3RM5n5DG4HVBZkVJcPnFA1Dl&id=100068735708353"
    }
+  },
+  {
+   "date": "2026-10-22",
+   "type": "water",
+   "kind": "Boat mishap",
+   "title": "Cargo boat ML Niesah loses its propeller shaft off Pangasaan, Lantawan; all 20 aboard rescued",
+   "summary": "The wooden-hulled cargo vessel ML Niesah, carrying empty LPG cylinders from Jolo to Zamboanga City, was left drifting when its main propeller shaft snapped off Pangasaan, Lantawan, Basilan, at about 12:30 pm on Thursday, 22 October 2026. Coast Guard Sub-Station Lantawan reached it at 2:28 pm; when an LGU motorboat could not tow it, the passing MV Mayflower towed it to Tairan Wharf in Lantawan by 4 pm. All 20 passengers and crew were accounted for without injury.",
+   "province": "Basilan",
+   "municipality": "Lantawan",
+   "barangay": "Pangasaan",
+   "deaths": 0,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [
+    "boat"
+   ],
+   "lat": 6.6387,
+   "lon": 121.8403,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "The Manila Times",
+     "url": "https://www.manilatimes.net/2026/10/24/regions/coast-guard-rescues-20-off-basilan/2452740",
+     "title": "Coast Guard rescues 20 off Basilan",
+     "date": "2026-10-24"
+    }
+   ],
+   "id": "2026-10-22-lantawan-water"
+  },
+  {
+   "date": "2026-10-21",
+   "type": "fire",
+   "kind": "Fire",
+   "title": "Fire destroys classrooms and the library of Notre Dame of Cagayan in Lupa Pula, Mapun",
+   "summary": "A fire on the night of Wednesday, 21 October 2026, destroyed several classrooms and the library of Notre Dame of Cagayan, a Catholic school founded in 1968 by Oblate missionaries, on its campus in Barangay Lupa Pula, Mapun, Tawi-Tawi. School officials and the vice mayor said the cause was still being determined. No report gave a figure for anyone hurt.",
+   "province": "Tawi-Tawi",
+   "municipality": "Mapun",
+   "barangay": "Lupa Pula",
+   "deaths": null,
+   "injured": null,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.9757,
+   "lon": 118.5027,
+   "placed": "barangay",
+   "sources": [
+    {
+     "outlet": "Philstar",
+     "url": "https://www.philstar.com/nation/2026/10/22/2565025/historic-tawi-tawi-catholic-school-razed-fire",
+     "title": "Historic Tawi-Tawi Catholic school razed by fire",
+     "date": "2026-10-22"
+    }
+   ],
+   "id": "2026-10-21-mapun-fire"
+  },
+  {
+   "date": "2026-10-20",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Village chairman wounded as gunmen fire on a barangay rescue vehicle at Crossing Awang, Datu Odin Sinsuat",
+   "summary": "Ahmad Jabiden, chairman of Barangay Dinaig Proper, was wounded in the belly when two men on a motorcycle overtook the barangay rescue vehicle he was riding in and opened fire at Crossing Awang, Datu Odin Sinsuat, Maguindanao del Norte, at 3 pm on Tuesday, 20 October 2026. He was taken to hospital in stable condition. Police recovered 17 spent shells from a .45-calibre pistol; the gunmen fled.",
+   "province": "Maguindanao del Norte",
+   "municipality": "Datu Odin Sinsuat",
+   "barangay": "Awang",
+   "deaths": 0,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.1591,
+   "lon": 124.2221,
+   "placed": "barangay",
+   "sources": [
+    {
+     "outlet": "balita.com",
+     "url": "https://balita.com/maguindanao-norte-village-chair-escapes-ambush-sustains-minor-injury/",
+     "title": "Maguindanao Norte village chair escapes ambush, sustains minor injury",
+     "date": "2026-10-21"
+    },
+    {
+     "outlet": "Inquirer",
+     "url": "https://newsinfo.inquirer.net/2327529/maguindanao-village-chief-survives-17-bullets-in-daylight-ambush",
+     "title": "Maguindanao village chief survives 17 bullets in daylight ambush",
+     "date": "2026-10-21"
+    },
+    {
+     "outlet": "Brigada News",
+     "url": "https://www.brigadanews.ph/maguindanao-del-norte-barangay-captain-survives-shooting-attack/",
+     "title": "Maguindanao del Norte barangay captain survives shooting attack",
+     "date": "2026-10-21"
+    }
+   ],
+   "id": "2026-10-20-datu-odin-sinsuat-shooting"
   },
   {
    "date": "2026-10-18",
@@ -102,27 +206,59 @@
    "date": "2026-10-18",
    "type": "shooting",
    "kind": "Shooting",
-   "title": "Teduray tribal leader slain in Maguindanao del Sur",
-   "summary": "A Teduray tribal leader was killed in Maguindanao del Sur, as reported on 18 October 2026. The report could not be read in full, so the town and the circumstances are not recorded here.",
+   "title": "Teduray farmer shot dead, his CAFGU cousin wounded in Datu Unsay",
+   "summary": "Cyril Tomas, a Teduray farmer from Barangay Limpogo, Datu Hoffer, was shot dead in Datu Unsay, Maguindanao del Sur, on Sunday, 18 October 2026, the day after the killing of Teduray councilor Joel Magtud in the same town; his cousin Jayjay Guiaman, a CAFGU member, was seriously wounded. The provincial police director said the two attacks were unrelated.",
    "province": "Maguindanao del Sur",
-   "municipality": null,
+   "municipality": "Datu Unsay",
+   "barangay": null,
+   "deaths": 1,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8813,
+   "lon": 124.4356,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Inquirer",
+     "url": "https://newsinfo.inquirer.net/2328211/non-moro-ips-raise-safety-concerns-after-maguindanao-killings",
+     "title": "Non-Moro IPs raise safety concerns after Maguindanao killings",
+     "date": "2026-10-22"
+    }
+   ],
+   "id": "2026-10-18-datu-unsay-shooting"
+  },
+  {
+   "date": "2026-10-17",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Teduray leader and village councilor shot dead on the highway in Datu Unsay",
+   "summary": "Joel Magtud, a Teduray leader and councilor of Barangay Macalag Mahantao, Datu Hoffer, was shot dead by two men on a motorcycle who followed him and opened fire as he rode along the national highway in Datu Unsay, Maguindanao del Sur, on the evening of Saturday, 17 October 2026. He was declared dead on arrival at the Bangsamoro Regional Medical Center. Police named a person of interest and formed a special investigation task group.",
+   "province": "Maguindanao del Sur",
+   "municipality": "Datu Unsay",
    "barangay": null,
    "deaths": 1,
    "injured": 0,
    "missing": 0,
    "vehicles": [],
-   "lat": 6.7166,
-   "lon": 124.7866,
-   "placed": "province",
+   "lat": 6.8813,
+   "lon": 124.4356,
+   "placed": "municipality",
    "sources": [
     {
      "outlet": "Inquirer",
      "url": "https://newsinfo.inquirer.net/2326081/teduray-tribal-leader-slain-in-maguindanao-del-sur",
      "title": "Teduray tribal leader slain in Maguindanao del Sur",
      "date": "2026-10-18"
+    },
+    {
+     "outlet": "Inquirer",
+     "url": "https://newsinfo.inquirer.net/2328211/non-moro-ips-raise-safety-concerns-after-maguindanao-killings",
+     "title": "Non-Moro IPs raise safety concerns after Maguindanao killings",
+     "date": "2026-10-22"
     }
    ],
-   "id": "2026-10-18-maguindanao-del-sur-shooting"
+   "id": "2026-10-17-datu-unsay-shooting"
   },
   {
    "date": "2026-10-16",

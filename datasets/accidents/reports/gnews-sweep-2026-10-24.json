@@ -1,0 +1,98 @@
+[
+ {
+  "date": "2026-10-22",
+  "type": "sea",
+  "title": "Cargo boat ML Niesah loses its propeller shaft off Pangasaan, Lantawan; all 20 aboard rescued",
+  "summary": "The wooden-hulled cargo vessel ML Niesah, carrying empty LPG cylinders from Jolo to Zamboanga City, was left drifting when its main propeller shaft snapped off Pangasaan, Lantawan, Basilan, at about 12:30 pm on Thursday, 22 October 2026. Coast Guard Sub-Station Lantawan reached it at 2:28 pm; when an LGU motorboat could not tow it, the passing MV Mayflower towed it to Tairan Wharf in Lantawan by 4 pm. All 20 passengers and crew were accounted for without injury.",
+  "province": "Basilan",
+  "municipality": "Lantawan",
+  "barangay": "Pangasaan",
+  "deaths": 0,
+  "injured": 0,
+  "missing": 0,
+  "vehicles": ["boat"],
+  "sources": [
+   {
+    "outlet": "The Manila Times",
+    "url": "https://www.manilatimes.net/2026/10/24/regions/coast-guard-rescues-20-off-basilan/2452740",
+    "title": "Coast Guard rescues 20 off Basilan",
+    "date": "2026-10-24"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-21",
+  "type": "fire",
+  "title": "Fire destroys classrooms and the library of Notre Dame of Cagayan in Lupa Pula, Mapun",
+  "summary": "A fire on the night of Wednesday, 21 October 2026, destroyed several classrooms and the library of Notre Dame of Cagayan, a Catholic school founded in 1968 by Oblate missionaries, on its campus in Barangay Lupa Pula, Mapun, Tawi-Tawi. School officials and the vice mayor said the cause was still being determined. No report gave a figure for anyone hurt.",
+  "province": "Tawi-Tawi",
+  "municipality": "Mapun",
+  "barangay": "Lupa Pula",
+  "deaths": null,
+  "injured": null,
+  "missing": 0,
+  "vehicles": [],
+  "sources": [
+   {
+    "outlet": "Philstar",
+    "url": "https://www.philstar.com/nation/2026/10/22/2565025/historic-tawi-tawi-catholic-school-razed-fire",
+    "title": "Historic Tawi-Tawi Catholic school razed by fire",
+    "date": "2026-10-22"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-20",
+  "type": "shooting",
+  "title": "Village chairman wounded as gunmen fire on a barangay rescue vehicle at Crossing Awang, Datu Odin Sinsuat",
+  "summary": "Ahmad Jabiden, chairman of Barangay Dinaig Proper, was wounded in the belly when two men on a motorcycle overtook the barangay rescue vehicle he was riding in and opened fire at Crossing Awang, Datu Odin Sinsuat, Maguindanao del Norte, at 3 pm on Tuesday, 20 October 2026. He was taken to hospital in stable condition. Police recovered 17 spent shells from a .45-calibre pistol; the gunmen fled.",
+  "province": "Maguindanao del Norte",
+  "municipality": "Datu Odin Sinsuat",
+  "barangay": "Awang",
+  "deaths": 0,
+  "injured": 1,
+  "missing": 0,
+  "vehicles": [],
+  "sources": [
+   {
+    "outlet": "balita.com",
+    "url": "https://balita.com/maguindanao-norte-village-chair-escapes-ambush-sustains-minor-injury/",
+    "title": "Maguindanao Norte village chair escapes ambush, sustains minor injury",
+    "date": "2026-10-21"
+   },
+   {
+    "outlet": "Inquirer",
+    "url": "https://newsinfo.inquirer.net/2327529/maguindanao-village-chief-survives-17-bullets-in-daylight-ambush",
+    "title": "Maguindanao village chief survives 17 bullets in daylight ambush",
+    "date": "2026-10-21"
+   },
+   {
+    "outlet": "Brigada News",
+    "url": "https://www.brigadanews.ph/maguindanao-del-norte-barangay-captain-survives-shooting-attack/",
+    "title": "Maguindanao del Norte barangay captain survives shooting attack",
+    "date": "2026-10-21"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-18",
+  "type": "shooting",
+  "title": "Teduray farmer shot dead, his CAFGU cousin wounded in Datu Unsay",
+  "summary": "Cyril Tomas, a Teduray farmer from Barangay Limpogo, Datu Hoffer, was shot dead in Datu Unsay, Maguindanao del Sur, on Sunday, 18 October 2026, the day after the killing of Teduray councilor Joel Magtud in the same town; his cousin Jayjay Guiaman, a CAFGU member, was seriously wounded. The provincial police director said the two attacks were unrelated.",
+  "province": "Maguindanao del Sur",
+  "municipality": "Datu Unsay",
+  "barangay": null,
+  "deaths": 1,
+  "injured": 1,
+  "missing": 0,
+  "vehicles": [],
+  "sources": [
+   {
+    "outlet": "Inquirer",
+    "url": "https://newsinfo.inquirer.net/2328211/non-moro-ips-raise-safety-concerns-after-maguindanao-killings",
+    "title": "Non-Moro IPs raise safety concerns after Maguindanao killings",
+    "date": "2026-10-22"
+   }
+  ]
+ }
+]

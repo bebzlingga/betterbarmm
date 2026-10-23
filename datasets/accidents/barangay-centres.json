@@ -576,6 +576,12 @@
    "lat": 7.3042,
    "lon": 124.2803,
    "matched": "Tapayan, Sultan Mastura, Maguindanao del Norte, Bangsamoro, 9636, Philippines"
+  },
+  "Pangasaan|Lantawan|Basilan": null,
+  "Lupa Pula|Mapun|Tawi-Tawi": {
+   "lat": 6.9757,
+   "lon": 118.5027,
+   "matched": "Lupa Pula, Mapun, Tawi-Tawi, Bangsamoro, 7508, Philippines"
   }
  }
 }
