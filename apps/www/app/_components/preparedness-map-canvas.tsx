@@ -53,6 +53,9 @@ const BOUNDS: [[number, number], [number, number]] = [
 const HZ = 'hz'
 /** Barangays in a tileset of their own, so crowded hazard tiles never thin them out. */
 const BGY = 'bgy'
+/** Overture Maps' buildings, read straight from its open tiles (a release a month; this one is October 2026's). */
+const BLDG = 'bldg'
+const BUILDINGS = 'https://tiles.overturemaps.org/2026-10-21.0/buildings.pmtiles'
 const HAZARD_IDS: HazardId[] = ['flood', 'landslide', 'surge']
 const hazardColor = ['match', ['get', 'h'], 1, CLASS_COLORS[0], 2, CLASS_COLORS[1], 3, CLASS_COLORS[2], '#999999']
 const medHigh = (h: HazardId) => ['+', ['coalesce', ['get', `${h[0]}2`], 0], ['coalesce', ['get', `${h[0]}3`], 0]]
@@ -104,6 +107,8 @@ type Props = {
 function Layers({ hazard, view, facilities, kinds, heat, selected, focus, me, onSelectBarangay, onSelectFacility }: Props) {
 	const { map, isLoaded, resolvedTheme } = useMap()
 	const [hover, setHover] = useState<Hover | null>(null)
+	// 2D or 3D: flat and north up, or tilted with the basemap's buildings raised.
+	const [three, setThree] = useState(false)
 	const latest = useRef({ facilities, heat, kinds })
 	useEffect(() => {
 		latest.current = { facilities, heat, kinds }
@@ -142,6 +147,32 @@ function Layers({ hazard, view, facilities, kinds, heat, selected, focus, me, on
 			map.addLayer({ id: 'bgy-line', type: 'line', source: BGY, 'source-layer': 'barangays', minzoom: 8, paint: { 'line-color': dark ? '#d8d2c4' : '#5b564c', 'line-opacity': ['interpolate', ['linear'], ['zoom'], 8, 0.15, 12, 0.5] as never, 'line-width': 0.6 } })
 		if (!map.getLayer('bgy-hover')) map.addLayer({ id: 'bgy-hover', type: 'line', source: BGY, 'source-layer': 'barangays', filter: ['==', ['get', 'psgc'], ''], paint: { 'line-color': dark ? '#f3efe6' : '#131312', 'line-width': 1.4, 'line-opacity': 0.8 } })
 		if (!map.getLayer('bgy-sel')) map.addLayer({ id: 'bgy-sel', type: 'line', source: BGY, 'source-layer': 'barangays', filter: ['==', ['get', 'psgc'], ''], paint: { 'line-color': dark ? '#f3efe6' : '#131312', 'line-width': 2.5 } })
+		// Every building raised for 3D, from Overture Maps: OpenStreetMap's, filled out with the footprints Google and
+		// Microsoft detected from satellite imagery, so a village with nothing on OpenStreetMap still shows its houses.
+		// Above the hazard zones and the roads, under the place names. Its height where one is known, else its floors at
+		// 3 m each, else 4 m, a one-storey house.
+		const labels = map.getStyle()?.layers?.find((l) => l.type === 'symbol')?.id
+		if (!map.getSource(BLDG)) map.addSource(BLDG, { type: 'vector', url: `pmtiles://${BUILDINGS}`, attribution: '© Overture Maps Foundation' })
+		if (!map.getLayer('bldg-3d'))
+			map.addLayer(
+				{
+					id: 'bldg-3d',
+					type: 'fill-extrusion',
+					source: BLDG,
+					'source-layer': 'building',
+					minzoom: 13,
+					filter: ['!=', ['get', 'is_underground'], true],
+					layout: { visibility: 'none' },
+					paint: {
+						'fill-extrusion-color': dark ? '#5d5850' : '#aca18f',
+						'fill-extrusion-vertical-gradient': false,
+						'fill-extrusion-height': ['interpolate', ['linear'], ['zoom'], 13, 0, 14.5, ['coalesce', ['get', 'height'], ['*', ['get', 'num_floors'], 3], 4]] as never,
+						'fill-extrusion-base': ['coalesce', ['get', 'min_height'], 0] as never,
+						'fill-extrusion-opacity': 0.92,
+					},
+				},
+				labels,
+			)
 		if (!map.getSource('fac')) map.addSource('fac', { type: 'geojson', data: latest.current.facilities })
 		if (!map.getLayer('fac'))
 			map.addLayer({
@@ -213,6 +244,21 @@ function Layers({ hazard, view, facilities, kinds, heat, selected, focus, me, on
 		}
 	}, [map, isLoaded, resolvedTheme, hazard, view])
 
+	// 3D shows the raised buildings (again after a theme change reloads the style); the camera tilts only when the switch moves.
+	useEffect(() => {
+		if (!live(map) || !isLoaded || !map.getLayer('bldg-3d')) return
+		map.setLayoutProperty('bldg-3d', 'visibility', three ? 'visible' : 'none')
+		// The basemap's own flat buildings would lie over the raised ones' roofs, so 3D puts them away.
+		for (const id of ['building', 'building-top']) if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', three ? 'none' : 'visible')
+	}, [map, isLoaded, resolvedTheme, three])
+	useEffect(() => {
+		if (!live(map) || !isLoaded) return
+		const z = map.getZoom()
+		// From a town, 3D goes on down to street level, where the buildings stand out; from the whole region it only tilts.
+		map.easeTo(three ? { pitch: 55, bearing: -17, zoom: z >= 11.5 && z < 16 ? 16 : z, duration: 1100 } : { pitch: 0, bearing: 0, duration: 700 })
+		if (three) map.setLight({ anchor: 'viewport', position: [1.3, 210, 40], intensity: 0.3 })
+	}, [map, isLoaded, three])
+
 	// The panel beside the map comes and goes with the picked place, so the map follows its own box, not only the window.
 	useEffect(() => {
 		if (!live(map) || !isLoaded) return
@@ -265,13 +311,31 @@ function Layers({ hazard, view, facilities, kinds, heat, selected, focus, me, on
 
 	return (
 		<>
-			<button
-				type='button'
-				onClick={() => map?.fitBounds(BOUNDS, { padding: 24, duration: 800 })}
-				className='absolute left-2 top-2 z-10 flex h-8 cursor-pointer items-center rounded-md border border-[var(--rule)] bg-[var(--paper)] px-3 text-[12px] font-semibold text-[var(--ink)] shadow-sm transition hover:text-[var(--accent)]'
-			>
-				Whole region
-			</button>
+			<div className='absolute left-2 top-2 z-10 flex gap-2'>
+				<button
+					type='button'
+					onClick={() => map?.fitBounds(BOUNDS, { padding: 24, duration: 800 })}
+					className='flex h-8 cursor-pointer items-center rounded-md border border-[var(--rule)] bg-[var(--paper)] px-3 text-[12px] font-semibold text-[var(--ink)] shadow-sm transition hover:text-[var(--accent)]'
+				>
+					Whole region
+				</button>
+				<div role='group' aria-label='Map view' className='flex h-8 overflow-hidden rounded-md border border-[var(--rule)] bg-[var(--paper)] text-[12px] font-semibold shadow-sm'>
+					{(['2D', '3D'] as const).map((m) => {
+						const on = (m === '3D') === three
+						return (
+							<button
+								key={m}
+								type='button'
+								aria-pressed={on}
+								onClick={() => setThree(m === '3D')}
+								className={`cursor-pointer px-2.5 transition ${on ? 'bg-[var(--ink)] text-[var(--paper)]' : 'text-[var(--ink)] hover:text-[var(--accent)]'}`}
+							>
+								{m}
+							</button>
+						)
+					})}
+				</div>
+			</div>
 			{hover ? <Tip hover={hover} hazard={hazard} kinds={kinds} /> : null}
 		</>
 	)
@@ -348,7 +412,7 @@ export default function PreparednessMapCanvas(props: Props) {
 	return (
 		<Map className='h-full w-full' bounds={BOUNDS} fitBoundsOptions={{ padding: 24 }} minZoom={4.5} maxZoom={16}>
 			<Layers {...props} />
-			<MapControls position='top-right' showZoom />
+			<MapControls position='top-right' showZoom showCompass />
 		</Map>
 	)
 }
