@@ -1,9 +1,48 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-10-23T22:32:25.963Z",
+ "generatedAt": "2026-10-24T09:40:11.946Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds and Google News’s index of them. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "items": [
+  {
+   "url": "https://theglobalfilipinomagazine.com/ex-bangsamoro-lawmaker-challenges-pdea-to-prove-links-to-p3-5-billion-drug-shipment/",
+   "title": "Ex-Bangsamoro lawmaker challenges PDEA to prove links to P3.5-billion drug shipment",
+   "source": "The Global Filipino Magazine",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-24T05:42:58.000Z",
+   "via": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNHZ1dkxWNkhZLTEtdG56WktaVnNDNm83bU1VMkx0UklZeXdmZ2tSeVh3UkpzSUFHXzhHMzFibU93MzRXY3poSWNYNDhZbGN4ZTlRdnk1dzROWllwTjg3aGNNZXNzdGFUTWFqRmpScFlhZ0xhOHI4TVhGamN4STBMZkVpNW1YMzZ3ejF4VTRLSkVNNjZVeVpaRUVyOWZ2MGtRY0EzUEpPT1JjMmpPWXQxWjREYXE1VzhYSnN0QTVjcw?oc=5",
+   "checked": "2026-10-24"
+  },
+  {
+   "url": "https://www.philstar.com/nation/2026/10/24/2565418/barmm-chief-gains-mnlf-founding-chairmans-backing",
+   "title": "BARMM chief gains MNLF founding chairman's backing",
+   "source": "Philstar",
+   "summary": "Nur Misuari, founding chairman of the Moro National Liberation Front, has expressed strong support for Abdulraof “Sam” Macacua to lead the Bangsamoro government.",
+   "feed": "Philstar",
+   "published_at": "2026-10-24T03:23:00.000Z",
+   "checked": "2026-10-24"
+  },
+  {
+   "url": "https://tribune.net.ph/2026/10/24/mnlf-founder-endorses-macacua-to-lead-bangsamoro-government",
+   "title": "MNLF founder endorses Macacua to lead Bangsamoro government",
+   "source": "Daily Tribune",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-24T02:46:16.000Z",
+   "via": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNT2xwdWFmaGxmUTUwOUdwVk5ITUdFSkF1RWVFVWtqYm5VUVMzeUdTMUtHdzFoU3pNek0yNVljc19oUWlILXk0WE0yd1RHRWwxcFlCNng2dGY5RmRWbV82MXh4V1J4OGJnQkdoLVd0VEtBSjNjRHVucHc0ZnNyRkxudzlxM1ZjR2k5dmNyc2ZkTDNYb19aTzUzZg?oc=5",
+   "checked": "2026-10-24"
+  },
+  {
+   "url": "https://manilastandard.net/news/politics/314809769/yacob-closes-bangsamoro-transition-government.html",
+   "title": "Yacob closes Bangsamoro transition government",
+   "source": "Manila Standard",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T23:23:07.000Z",
+   "via": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSWxDc1pIQUg5TDN3TmZsU0o4UXl4dHQ2cS1rYTBucnpiZkdhUFBnQml5U1BsMmoyU3dEeDduZEs2Mk5obmMwdzNkWlk2cFFhNm0yVXFHMUk2SnNwUFptUDJkdnQ5ZVZXTkhpdkwzRDFKT0tMaW1lZ1lka3JIdlNMcmo0bjMteGc2M0RCQ0dVdVUzWlRzVHhvZDhrSHpMODA3bHNB?oc=5",
+   "checked": "2026-10-24"
+  },
   {
    "url": "https://tribune.net.ph/2026/10/23/murder-suspect-on-the-run-for-16-years-arrested-in-lanao-del-sur",
    "title": "Murder suspect on the run for 16 years arrested in Lanao del Sur",
@@ -21,6 +60,16 @@
    "summary": "COTABATO CITY — A former member of parliament (MP) of the Bangsamoro Autonomous Region in Muslim Mindanao (BARMM) denied allegations by law enforcement officials that he was behind the recent foiled shipment of illegal drugs from Laos. In…",
    "feed": "Inquirer",
    "published_at": "2026-10-23T21:39:00.000Z",
+   "checked": "2026-10-24"
+  },
+  {
+   "url": "https://www.onenews.ph/articles/ex-bangsamoro-official-denies-link-to-laos-drugs",
+   "title": "Ex-Bangsamoro Official Denies Link To Laos Drugs",
+   "source": "OneNews.PH",
+   "summary": "",
+   "feed": "Google News (international)",
+   "published_at": "2026-10-23T21:29:30.000Z",
+   "via": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPUWkybDl4OERaMTVfR0MteEtJbHVTOHBlRkgyOXZhYjRtN2ltd1B1Z0tuRGUyamdNMXJQOWdNTktZYmYyTjB6M1lqejd6aGEteTdWR28ydXF1aTBKREs1YVZDR29JeVVqMmVaWVU1TXpkbUliNVBzNmFhejlQb2tZSTZTUzZhS00?oc=5",
    "checked": "2026-10-24"
   },
   {
@@ -73,7 +122,7 @@
    "checked": "2026-10-24"
   },
   {
-   "url": "https://qa.philstar.com/headlines/2026/10/24/2565372/ex-bangsamoro-exec-denies-link-laos-drugs",
+   "url": "https://www.philstar.com/headlines/2026/10/24/2565372/ex-bangsamoro-exec-denies-link-laos-drugs",
    "title": "Ex-Bangsamoro exec denies link to Laos drugs",
    "source": "Philstar",
    "summary": "",
@@ -1225,6 +1274,12 @@
    "via": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNX0ktemFrTXJoUHA3UGdUcHlFUEFFb05MSWZxSTNnVFBCV1Q2UWpra0x3WHh4RjJtTTlLYXAzbk9TWmNVenFhX3Fqb2loNVhQajNOdF9PQk9qVVdpcUVvU2UybUNmTjIyN2VYQ1luX051ellEa0xLRHNlMU1hcEgwU0FaZDFuVlpoekZtODMxQXpwNno1QXRZ?oc=5",
    "title": "BARMM accounts for 70% of election hot spots",
    "reason": "published 2023-10-29"
+  },
+  {
+   "url": "https://www.rappler.com/philippines/elections/ubjp-endorsement-robredo-test-milf-clout-barmm/",
+   "via": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRkEtbHJnTzJySGIwZGdSRUJKSGYwbW83ejlyVzVBVTBGcTNPRzZFYkNZb2JYNVVsOXBLbS1jWUF5Um5TdW9WLXIwR3E2dUNZUXFENzA0UktVcjU2RkxWejltQXJIb3drRTRveUpRRW1JYTZmajMwcUtDTWF0UmJqbV9Ca0cxM2tfYnBQWEd1Ry1aenFBMVFPZw?oc=5",
+   "title": "UBJP endorsement of Robredo to test MILF’s clout in BARMM",
+   "reason": "published 2022-04-24"
   }
  ]
 }
