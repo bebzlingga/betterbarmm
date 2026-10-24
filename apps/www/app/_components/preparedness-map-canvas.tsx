@@ -150,7 +150,8 @@ function Layers({ hazard, view, facilities, kinds, heat, selected, focus, me, on
 		// Every building raised for 3D, from Overture Maps: OpenStreetMap's, filled out with the footprints Google and
 		// Microsoft detected from satellite imagery, so a village with nothing on OpenStreetMap still shows its houses.
 		// Above the hazard zones and the roads, under the place names. Its height where one is known, else its floors at
-		// 3 m each, else 4 m, a one-storey house.
+		// 3 m each, else 4 m, a one-storey house. Each is asked for with `has`: a missing value inside the arithmetic would
+		// fail the whole expression and lay the building flat.
 		const labels = map.getStyle()?.layers?.find((l) => l.type === 'symbol')?.id
 		if (!map.getSource(BLDG)) map.addSource(BLDG, { type: 'vector', url: `pmtiles://${BUILDINGS}`, attribution: '© Overture Maps Foundation' })
 		if (!map.getLayer('bldg-3d'))
@@ -165,9 +166,9 @@ function Layers({ hazard, view, facilities, kinds, heat, selected, focus, me, on
 					layout: { visibility: 'none' },
 					paint: {
 						'fill-extrusion-color': dark ? '#5d5850' : '#aca18f',
-						'fill-extrusion-vertical-gradient': false,
-						'fill-extrusion-height': ['interpolate', ['linear'], ['zoom'], 13, 0, 14.5, ['coalesce', ['get', 'height'], ['*', ['get', 'num_floors'], 3], 4]] as never,
-						'fill-extrusion-base': ['coalesce', ['get', 'min_height'], 0] as never,
+						'fill-extrusion-vertical-gradient': true,
+						'fill-extrusion-height': ['interpolate', ['linear'], ['zoom'], 13, 0, 14.5, ['case', ['has', 'height'], ['get', 'height'], ['has', 'num_floors'], ['*', ['get', 'num_floors'], 3], 4]] as never,
+						'fill-extrusion-base': ['case', ['has', 'min_height'], ['get', 'min_height'], 0] as never,
 						'fill-extrusion-opacity': 0.92,
 					},
 				},
@@ -255,8 +256,9 @@ function Layers({ hazard, view, facilities, kinds, heat, selected, focus, me, on
 		if (!live(map) || !isLoaded) return
 		const z = map.getZoom()
 		// From a town, 3D goes on down to street level, where the buildings stand out; from the whole region it only tilts.
-		map.easeTo(three ? { pitch: 55, bearing: -17, zoom: z >= 11.5 && z < 16 ? 16 : z, duration: 1100 } : { pitch: 0, bearing: 0, duration: 700 })
-		if (three) map.setLight({ anchor: 'viewport', position: [1.3, 210, 40], intensity: 0.3 })
+		// The light comes from one side, so walls shade darker than roofs and a building reads as a block.
+		map.easeTo(three ? { pitch: 55, bearing: -17, zoom: z >= 11.5 && z < 17 ? 17 : z, duration: 1100 } : { pitch: 0, bearing: 0, duration: 700 })
+		if (three) map.setLight({ anchor: 'viewport', color: '#ffffff', position: [1.2, 210, 35], intensity: 0.55 })
 	}, [map, isLoaded, three])
 
 	// The panel beside the map comes and goes with the picked place, so the map follows its own box, not only the window.
@@ -410,7 +412,7 @@ export default function PreparednessMapCanvas(props: Props) {
 			</div>
 		)
 	return (
-		<Map className='h-full w-full' bounds={BOUNDS} fitBoundsOptions={{ padding: 24 }} minZoom={4.5} maxZoom={16}>
+		<Map className='h-full w-full' bounds={BOUNDS} fitBoundsOptions={{ padding: 24 }} minZoom={4.5} maxZoom={19} maxPitch={70}>
 			<Layers {...props} />
 			<MapControls position='top-right' showZoom showCompass />
 		</Map>

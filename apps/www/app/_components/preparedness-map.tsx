@@ -576,6 +576,9 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 								</>
 							)}
 							<p className='mt-2 border-t border-[var(--rule)] pt-2 text-[11px] leading-[1.5] text-[var(--ink-3)] max-lg:hidden'>{hz.note}</p>
+							<a href='https://noah.up.edu.ph/' target='_blank' rel='noreferrer' className='mt-1.5 inline-flex items-center gap-0.5 text-[11px] font-semibold text-[var(--ink-3)] hover:text-[var(--accent)]'>
+								Hazard maps: Project NOAH <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
+							</a>
 						</div>
 					) : null}
 

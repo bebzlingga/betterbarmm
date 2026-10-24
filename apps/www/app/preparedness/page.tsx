@@ -160,7 +160,11 @@ export default function PreparednessPage() {
 							<p className='bb-label'>Interactive map</p>
 							<h1 className='mt-2 text-[clamp(2.1rem,4.4vw,3.4rem)] font-extrabold leading-[1.05] tracking-[-0.025em] text-[var(--ink)]'>Know the hazard where you live, and where to go.</h1>
 							<p className='mt-3 text-[15.5px] leading-[1.65] text-[var(--ink-2)]'>
-								Flood, landslide and storm surge from Project NOAH, as zones, as heat or barangay by barangay, with evacuation sites, hospitals and offices on top. Pick a place, or let the map find you.
+								Flood, landslide and storm surge from{' '}
+								<a href='https://noah.up.edu.ph/' target='_blank' rel='noreferrer' className='underline decoration-[var(--rule)] underline-offset-4 hover:text-[var(--accent)]'>
+									Project NOAH
+								</a>
+								, as zones, as heat or barangay by barangay, with evacuation sites, hospitals and offices on top. Pick a place, or let the map find you.
 							</p>
 						</div>
 						<a href='#map' className='bb-btn bb-btn-solid !px-5 !py-3 !text-[10.5px]'>
