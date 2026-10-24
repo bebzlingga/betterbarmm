@@ -3,10 +3,15 @@ import Link from 'next/link'
 import { Masthead, longDate, peso } from '../_components/parts'
 import { SVP_CEILING, blacklistedSuppliers, bunching, dominantSuppliers, overBudget, sameDayClusters, supplierHref } from '../_lib/philgeps'
 
+// Hidden for now: out of the nav and the footer, and the address shows a coming-soon page. Set to false to bring it back.
+const HIDDEN = true
+
 export const metadata: Metadata = {
 	title: 'Patterns',
-	description:
-		'Five patterns in BARMM procurement worth a second look: budgets bunched under the bidding threshold, same-day purchases that add up past it, one supplier winning most of an office’s contracts, and awards above budget.',
+	robots: { index: false, follow: false },
+	description: HIDDEN
+		? 'Patterns in BARMM procurement worth a second look. Coming soon.'
+		: 'Five patterns in BARMM procurement worth a second look: budgets bunched under the bidding threshold, same-day purchases that add up past it, one supplier winning most of an office’s contracts, and awards above budget.',
 }
 
 /* ============================================================
@@ -126,7 +131,37 @@ function Bunching() {
 	)
 }
 
+/** While the page is hidden: what is coming, and the records that are here now. */
+function Soon() {
+	return (
+		<>
+			<Masthead
+				kicker='Coming soon'
+				name='Patterns'
+				note='Signals in the region’s procurement record worth a second look, each with the innocent explanations beside it. We are checking them before they go up. Until then, the record itself is here.'
+			/>
+			<div className='bb-container bb-section'>
+				<ul className='grid gap-4 sm:grid-cols-3'>
+					{[
+						['/notices', 'Bid notices', 'What the offices put out to bid'],
+						['/suppliers', 'Suppliers', 'Who wins the contracts'],
+						['/follow-the-peso', 'Follow the peso', 'Budget, bid out, awarded'],
+					].map(([href, label, note]) => (
+						<li key={href}>
+							<Link href={href} className='group block h-full border border-[var(--rule)] p-5 transition hover:border-[var(--ink)]'>
+								<span className='block text-[17px] font-extrabold tracking-[-0.01em] group-hover:text-[var(--accent)]'>{label} →</span>
+								<span className='mt-1 block text-[13.5px] text-[var(--ink-3)]'>{note}</span>
+							</Link>
+						</li>
+					))}
+				</ul>
+			</div>
+		</>
+	)
+}
+
 export default function PatternsPage() {
+	if (HIDDEN) return <Soon />
 	const lastMax = Math.max(...bunching.offices.map((o) => o.count), 1)
 	const clusters = sameDayClusters.slice(0, 20)
 	const clusterMax = Math.max(...clusters.map((c) => c.total), 1)

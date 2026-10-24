@@ -22,7 +22,6 @@ const groups = [
 	{
 		label: 'Analysis',
 		pages: [
-			{ href: '/patterns', label: 'Patterns', note: 'Signals worth a second look' },
 			{ href: '/follow-the-peso', label: 'Follow the peso', note: 'Budget, bid out, awarded' },
 		],
 	},
