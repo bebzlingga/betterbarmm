@@ -145,9 +145,10 @@ export default async function HomePage() {
 								</span>,
 							]}
 							delay={0.08}
-							// One line at every width: sized to the screen rather than wrapped, up to a step above bb-display-md.
-							// Important: bb-display-md sits outside the layers and would win over both, its text-wrap: balance included.
-							className='bb-display-md mt-5 text-[var(--ink)] [font-size:clamp(1.6rem,6.4vw,5rem)]! text-nowrap!'
+							// On a phone, two lines at a size that reads; from sm, one line sized to the screen rather than wrapped,
+							// up to a step above bb-display-md. Important: bb-display-md sits outside the layers and would win over
+							// both, its text-wrap: balance included.
+							className='bb-display-md mt-5 text-[var(--ink)] [font-size:clamp(2.4rem,11vw,3.4rem)]! sm:[font-size:clamp(1.6rem,6.4vw,5rem)]! sm:text-nowrap!'
 						/>
 
 						<Rise delay={0.3} distance={16}>

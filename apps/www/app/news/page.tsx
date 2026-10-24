@@ -56,7 +56,9 @@ function stories(items: Item[]) {
 			// The headline is the one an outlet's own feed carries with its teaser; else the earliest report.
 			const byTime = [...group].sort((x, y) => (x.published_at ?? '').localeCompare(y.published_at ?? ''))
 			const lead = byTime.find((i) => i.summary) ?? byTime[0]!
-			const latest = byTime.at(-1)!.published_at
+			// The day and the time are the lead report's, so the row says when the story it shows broke; the later
+			// reports of it are the outlets under "Also reported by", not a later date beside an earlier time.
+			const at = lead.published_at
 			const seen = new Set([lead.source])
 			return {
 				key: lead.url,
@@ -64,14 +66,14 @@ function stories(items: Item[]) {
 				summary: lead.summary,
 				url: lead.url,
 				source: lead.source,
-				day: latest ? day(latest) : 'Undated',
-				time: lead.published_at ? time(lead.published_at) : null,
-				latest: latest ?? '',
+				day: at ? day(at) : 'Undated',
+				time: at ? time(at) : null,
+				at: at ?? '',
 				// One link per other outlet: an outlet with two takes on the story is still one more source.
 				also: byTime.filter((i) => i !== lead && !seen.has(i.source) && seen.add(i.source)).map((i) => ({ source: i.source, url: i.url })),
 			}
 		})
-		.sort((x, y) => y.latest.localeCompare(x.latest))
+		.sort((x, y) => y.at.localeCompare(x.at))
 }
 
 export default function NewsPage() {

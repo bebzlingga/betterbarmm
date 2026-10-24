@@ -1,9 +1,7 @@
 import { ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import outline from '../../../../datasets/accidents/barmm-outline.json'
-import news from '../../../../datasets/news/news.json'
 import { ACCIDENT_TYPES, accidents, typeOf } from '../_lib/accidents'
-import { brain } from '../_lib/brain'
 import { barangays, CLASS_COLORS, HAZARDS, officialBarangays, region } from '../_lib/preparedness'
 import { commonsThumb, craft, creditOf } from '../_lib/crafts'
 import { place } from '../_lib/places'
@@ -15,13 +13,12 @@ import { PhotoCredit } from './discover-figure'
    The records of a different kind — each a page on this site rather
    than a workspace of its own — in the same grid as the workspaces,
    but each with a picture of what it holds: Incident Watch draws its
-   own incidents, Preparedness every barangay in its flood hazard, Latest
-   news its newest headlines, the Brain its own wiring, the others a
-   photograph or a sketch of the page.
+   own incidents, Preparedness every barangay in its flood hazard, the
+   others a photograph or a sketch of the page.
    ============================================================ */
 
 export type Project = {
-	key: 'accidents' | 'preparedness' | 'news' | 'crafts' | 'places' | 'brain' | 'services'
+	key: 'accidents' | 'preparedness' | 'crafts' | 'places' | 'services'
 	label: string
 	href?: string
 	measure: string
@@ -124,45 +121,6 @@ function HazardDots() {
 	)
 }
 
-/** The newest headlines on the list, outlet over headline, as the page lists them. */
-const HEADLINES = [...news.items].sort((a, b) => (b.published_at ?? '').localeCompare(a.published_at ?? '')).slice(0, 3)
-function Headlines() {
-	return (
-		<span className='flex h-full w-full flex-col justify-center gap-2.5 bg-[var(--paper-2)] px-6'>
-			{HEADLINES.map((h) => (
-				<span key={h.url} className='block border-l-2 border-[var(--accent)] pl-3'>
-					<span className='block font-mono text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>{h.source}</span>
-					<span className='line-clamp-1 text-[12.5px] font-semibold leading-snug text-[var(--ink)]'>{h.title}</span>
-				</span>
-			))}
-		</span>
-	)
-}
-
-// The Brain's own wiring: its sources, the datasets built from them and the workspaces that show them, as three columns.
-const NODES = brain().nodes
-const COLS = (['source', 'dataset', 'workspace'] as const).map((k) => NODES.filter((n) => n.kind === k).length)
-function BrainWeb() {
-	const xs = [70, 170, 270]
-	// Up to twelve dots a column, spread down it; the labels under them carry the real counts.
-	const pts: [number, number][][] = COLS.map((n, c) => {
-		const k = Math.max(1, Math.min(n, 12))
-		return Array.from({ length: k }, (_, i): [number, number] => [xs[c]!, 20 + (k > 1 ? (150 / (k - 1)) * i : 75)])
-	})
-	return (
-		<svg viewBox='0 0 340 190' className='h-full w-full' aria-hidden='true'>
-			{pts[0]!.flatMap(([x, y], i) => [pts[1]![(i * 3) % pts[1]!.length]!, pts[1]![(i * 5 + 2) % pts[1]!.length]!].map(([x2, y2], k) => <line key={`a${i}${k}`} x1={x} y1={y} x2={x2} y2={y2} stroke='var(--accent)' strokeOpacity='0.28' strokeWidth='1' />))}
-			{pts[1]!.flatMap(([x, y], i) => [pts[2]![(i * 2) % pts[2]!.length]!].map(([x2, y2], k) => <line key={`b${i}${k}`} x1={x} y1={y} x2={x2} y2={y2} stroke='var(--accent)' strokeOpacity='0.28' strokeWidth='1' />))}
-			{pts.map((col, c) => col.map(([x, y], i) => <circle key={`${c}${i}`} cx={x} cy={y} r={c === 2 ? 5 : 3.6} fill={c === 2 ? 'var(--accent)' : 'var(--paper)'} stroke='var(--accent)' strokeWidth='1.4' />))}
-			{['sources', 'datasets', 'workspaces'].map((l, c) => (
-				<text key={l} x={xs[c]} y={186} textAnchor='middle' className='font-mono' fontSize='9.5' fill='var(--ink-3)' letterSpacing='0.12em'>
-					{COLS[c]} {l.toUpperCase()}
-				</text>
-			))}
-		</svg>
-	)
-}
-
 /** A charter's page: a document with its checklist of what to bring. */
 function Checklist() {
 	return (
@@ -202,7 +160,7 @@ function PlacePhoto() {
 	)
 }
 
-const PICTURE = { accidents: IncidentDots, preparedness: HazardDots, news: Headlines, crafts: CraftPhoto, places: PlacePhoto, brain: BrainWeb, services: Checklist } as const
+const PICTURE = { accidents: IncidentDots, preparedness: HazardDots, crafts: CraftPhoto, places: PlacePhoto, services: Checklist } as const
 
 export function ProjectList({ projects }: { projects: Project[] }) {
 	return (
@@ -213,7 +171,7 @@ export function ProjectList({ projects }: { projects: Project[] }) {
 				const body = (
 					<>
 						{/* The picture fills its panel edge to edge; the sketches that do not are inset. */}
-						<span className={`block h-40 overflow-hidden border-b border-[var(--rule-soft)] bg-[var(--paper-2)] ${p.key === 'accidents' || p.key === 'preparedness' || p.key === 'news' || p.key === 'crafts' || p.key === 'places' ? '' : 'px-6 py-4'}`}>
+						<span className={`block h-40 overflow-hidden border-b border-[var(--rule-soft)] bg-[var(--paper-2)] ${p.key === 'accidents' || p.key === 'preparedness' || p.key === 'crafts' || p.key === 'places' ? '' : 'px-6 py-4'}`}>
 							<Picture />
 						</span>
 						<span className='block p-6'>

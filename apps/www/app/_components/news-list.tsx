@@ -13,7 +13,7 @@ export type Story = {
 	summary: string
 	url: string
 	source: string
-	/** Manila day and time of the story's latest report, formatted on the server. */
+	/** Manila day and time of the report whose headline the row shows, formatted on the server. */
 	day: string
 	time: string | null
 	also: { source: string; url: string }[]

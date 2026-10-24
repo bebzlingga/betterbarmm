@@ -324,7 +324,8 @@ function Categories({ categories, entries, onOpen }: { categories: Choice[]; ent
 				</h2>
 				<p className='text-[13.5px] text-[var(--ink-3)]'>What you need, whichever office gives it.</p>
 			</div>
-			<ul className='mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+			{/* grid-cols-1 holds the phone's one column to the screen; an auto column would grow to the longest service name. */}
+			<ul className='mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4'>
 				{categories.map((c) => {
 					const Glyph = CATEGORY_ICONS[c.id]
 					// Services first: they are what a reader can walk in and ask for.
@@ -337,16 +338,18 @@ function Categories({ categories, entries, onOpen }: { categories: Choice[]; ent
 							<button
 								type='button'
 								onClick={() => onOpen(c.id)}
-								className='bb-frame group flex h-full w-full cursor-pointer flex-col border border-[var(--rule)] bg-[var(--paper)] p-5 text-left transition hover:border-[var(--ink)]'
+								className='bb-frame group flex h-full w-full min-w-0 cursor-pointer flex-col border border-[var(--rule)] bg-[var(--paper)] p-4 text-left transition hover:border-[var(--ink)] sm:p-5'
 							>
-								<span className='flex items-start justify-between gap-3'>
-									{Glyph ? <Glyph size={30} weight='duotone' className='text-[var(--accent)]' aria-hidden='true' /> : null}
-									<span className='num text-[13px] font-semibold tabular-nums text-[var(--ink-3)]'>{c.count}</span>
+								{/* On a phone the icon sits beside the name, so a card is a row and not a block. */}
+								<span className='flex items-center gap-3 sm:items-start sm:justify-between'>
+									{Glyph ? <Glyph size={30} weight='duotone' className='shrink-0 text-[var(--accent)] max-sm:size-6' aria-hidden='true' /> : null}
+									<span className='min-w-0 flex-1 text-[16px] font-extrabold leading-snug tracking-[-0.01em] group-hover:text-[var(--accent)] sm:hidden'>{c.label}</span>
+									<span className='num shrink-0 text-[13px] font-semibold tabular-nums text-[var(--ink-3)]'>{c.count}</span>
 								</span>
-								<span className='mt-4 text-[17px] font-extrabold leading-snug tracking-[-0.01em] group-hover:text-[var(--accent)]'>{c.label}</span>
-								<span className='mt-2 space-y-1 text-[13px] leading-snug text-[var(--ink-3)]'>
-									{sample.map((e) => (
-										<span key={e.href} className='block truncate'>
+								<span className='mt-4 text-[17px] font-extrabold leading-snug tracking-[-0.01em] group-hover:text-[var(--accent)] max-sm:hidden'>{c.label}</span>
+								<span className='mt-2 min-w-0 space-y-1 text-[13px] leading-snug text-[var(--ink-3)] max-sm:pl-9'>
+									{sample.map((e, k) => (
+										<span key={e.href} className={`block truncate ${k === 2 ? 'max-sm:hidden' : ''}`}>
 											{e.name}
 										</span>
 									))}

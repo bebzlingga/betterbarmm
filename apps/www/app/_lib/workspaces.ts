@@ -94,14 +94,6 @@ export const projects: Project[] = [
 		state: 'live',
 	},
 	{
-		key: 'news',
-		label: 'Latest news',
-		href: '/news',
-		measure: 'This week',
-		blurb: 'This week’s Bangsamoro headlines from the region’s offices and the national press on one page, each linked to its outlet.',
-		state: 'live',
-	},
-	{
 		key: 'crafts',
 		label: 'Crafts',
 		href: '/crafts',
@@ -115,14 +107,6 @@ export const projects: Project[] = [
 		href: '/places',
 		measure: 'Islands, lakes, mosques',
 		blurb: 'Beaches, islands, lakes, mosques and heritage sites across the region: what is there, how to get there, what to know first.',
-		state: 'live',
-	},
-	{
-		key: 'brain',
-		label: 'The Brain',
-		href: '/#brain',
-		measure: 'How the records join',
-		blurb: 'Every public record on the site, traced from the office that publishes it to the datasets built from it and the workspaces that show it.',
 		state: 'live',
 	},
 	{
