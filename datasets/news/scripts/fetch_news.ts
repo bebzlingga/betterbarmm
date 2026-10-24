@@ -3,7 +3,8 @@ import { NEWS_FEEDS, readFeed, type FetchedItem } from '../../../packages/db/src
 /* `bun datasets/news/scripts/fetch_news.ts [YYYY-MM-DD]` — read the news feeds and add
    what is new to datasets/news/news.json, from the given day (default: this week's
    Monday, Manila time). Then resolve the Google News links to the outlets' own
-   addresses: `python3 -I datasets/news/scripts/resolve_links.py`.
+   addresses: `python3 -I datasets/news/scripts/resolve_links.py`, and check each story's own
+   date: `python3 -I datasets/news/scripts/check_dates.py`.
 
    The feeds and the reader are the ones the database fetcher used
    (packages/db/src/news.ts); the database is gone, so the headlines live in a file
@@ -11,7 +12,8 @@ import { NEWS_FEEDS, readFeed, type FetchedItem } from '../../../packages/db/src
 
 const FILE = new URL('../news.json', import.meta.url)
 type Item = FetchedItem & { via?: string }
-type Dataset = { name: string; generatedAt: string; since: string; note: string; items: Item[] }
+type Struck = { url: string; via?: string | null; title: string; reason: string }
+type Dataset = { name: string; generatedAt: string; since: string; note: string; items: Item[]; dropped?: Struck[] }
 
 const manila = (d: Date) => new Date(d.getTime() + 8 * 3600_000)
 const monday = () => {
@@ -57,8 +59,10 @@ for (const item of read)
 
 // Manila's day, so a story posted at 1 am on Monday is Monday's.
 const day = (iso: string | null) => (iso ? manila(new Date(iso)).toISOString().slice(0, 10) : null)
-const haveUrls = new Set(data.items.flatMap((i) => [i.url, i.via ?? '']))
-const haveTitles = new Set(data.items.map((i) => key(i.title)))
+// What check_dates.py struck counts as had, or Google's fresh date on an old story would bring it back.
+const struck = data.dropped ?? []
+const haveUrls = new Set([...data.items, ...struck].flatMap((i) => [i.url, i.via ?? '']))
+const haveTitles = new Set([...data.items, ...struck].map((i) => key(i.title)))
 let added = 0
 for (const item of read) {
 	const d = day(item.published_at)

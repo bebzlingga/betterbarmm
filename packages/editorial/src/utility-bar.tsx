@@ -67,7 +67,8 @@ export type ProjectKey = (typeof PROJECTS)[number]['key']
  * One dropdown of the strip. A dropdown rather than a row: it stays one
  * control however many entries there are. Native `<details>`, so it opens
  * without script; `SwitchCloser` shuts it from outside. Drawn twice, for
- * the workspaces and then the projects, so the two read as one control.
+ * the workspaces and then the projects, so the two read as one control —
+ * and one `name`, so the browser itself never lets both stand open.
  */
 function Switch({
 	icon,
@@ -87,7 +88,7 @@ function Switch({
 	className?: string
 }) {
 	return (
-		<details className={`utility-bar-switch relative ${className}`}>
+		<details name='utility-bar-switch' className={`utility-bar-switch relative ${className}`}>
 			<summary className='utility-bar-link cursor-pointer list-none'>
 				{icon}
 				{/* On the narrowest phones the value says enough; "Workspace:" would push the strip past the window. */}
