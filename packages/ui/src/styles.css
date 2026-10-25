@@ -1356,11 +1356,8 @@ figcaption {
   color: var(--ink);
 }
 
-:root[data-theme="dark"] .brand-bg {
-  --paper: #6b1a11;
-  --paper-2: #5d160e;
-  --paper-3: #4f120b;
-}
+/* Dark mode keeps the band the brand's own crimson (user decision, 25 October 2026): a header reads as the
+   primary colour on either theme, not as a darker maroon. */
 
 .discover-dark-section,
 .dark-bg {
