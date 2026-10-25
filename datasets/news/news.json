@@ -1,9 +1,76 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-10-24T22:12:06.423Z",
+ "generatedAt": "2026-10-25T12:24:53.876Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds and Google News’s index of them. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "items": [
+  {
+   "url": "https://kami.com.ph/philippines/192273-three-killed-wounded-gunmen-posing-buyers-open-fire-cotabato-city/",
+   "title": "Three killed, two wounded after gunmen posing as buyers open fire in Cotabato City",
+   "source": "Kami.com.ph",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-25T11:20:11.000Z",
+   "image": "https://cdn.kami.com.ph/images/1200x675/bb534af54b98be82.jpeg?v=1",
+   "via": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORXhTeXBrbjlTdDBvSnVjZk1lcGRRUjNhelhqY2hONVRwZDctVlRBSjdfNmR2V3ZIdWUzTWFmTmduczN5QzlxSjZyUFNsWGtldy1RX01UdkN5clVpMTY3LVg5NXNoTWdxb1FlVEFWeXJOdWRNZUdvaWlnWjE4MzUwYUk1UEdmTTdkTFVFejZzcnJnSHljZWNwVnhtWDN6WXhuTEVXbk1udVo?oc=5",
+   "checked": "2026-10-25",
+   "pictured": true
+  },
+  {
+   "url": "https://www.philstar.com/nation/2026/10/25/2565628/gunman-rocket-attack-barmm-mayors-convoy-arrested",
+   "title": "Gunman in rocket attack on BARMM mayor’s convoy arrested",
+   "source": "Philstar",
+   "summary": "Policemen have arrested one of the alleged perpetrators of the January 25 ambush of the mayor in Shariff Aguak, Maguindanao del Sur, in which gunment fired rifles and a B40 anti-tank rocket at his vehicle, wounding him and four companions.",
+   "feed": "Philstar",
+   "published_at": "2026-10-25T08:16:00.000Z",
+   "image": "https://media.philstar.com/photos/2026/10/25/rocket-attack_2026-10-25_16-19-28.jpg",
+   "checked": "2026-10-25",
+   "pictured": true
+  },
+  {
+   "url": "https://www.philstar.com/nation/2026/10/25/2565625/misuari-wants-macacua-remain-barmms-figurehead",
+   "title": "Misuari wants Macacua to remain as BARMM's figurehead",
+   "source": "Philstar",
+   "summary": "Various sectors welcomed the wish of Moro National Liberation Front (MNLF) founder Nur Misuari for Abdulraof Macacua to remain as chief minister of the Bangsamoro regional government.",
+   "feed": "Philstar",
+   "published_at": "2026-10-25T07:56:00.000Z",
+   "image": "https://media.philstar.com/photos/2026/10/25/macacua-nur-misuari_2026-10-25_15-56-39.jpg",
+   "checked": "2026-10-25",
+   "pictured": true
+  },
+  {
+   "url": "https://www.philstar.com/nation/2026/10/25/2565623/newly-elected-barmm-lawmakers-urged-work-hard-constituents",
+   "title": "Newly elected BARMM lawmakers urged to work hard for constituents",
+   "source": "Philstar",
+   "summary": "The speaker of the interim Bangsamoro parliament and an outgoing member from the Moro National Liberation (MNLF) have separately urged the newly elected regional lawmakers to work together to foster peace and development in the autonomous…",
+   "feed": "Philstar",
+   "published_at": "2026-10-25T06:29:00.000Z",
+   "image": "https://media.philstar.com/photos/2020/09/16/barmm-capitol_2020-09-16_13-45-10.jpg",
+   "checked": "2026-10-25",
+   "pictured": true
+  },
+  {
+   "url": "https://astig.ph/maguindanao-rpg-attack-suspect-toraipe-lusod-arrested-shariff-aguak-2026/",
+   "title": "Police caught their No. 1 most wanted in Maguindanao del Sur over a January RPG attack on a mayor",
+   "source": "astig.ph",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-25T02:37:05.000Z",
+   "image": "https://i0.wp.com/astig.ph/wp-content/uploads/2026/10/ampatuan-shariff-aguak-press-conference.jpg?fit=1200%2C675&ssl=1",
+   "via": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNb1JDRzZOdVc1T1NaU3VDcUlrZl9NMW55clBTd2NHYmt4MWdQVTVnUnNpamlFLThEbzRwN3FUTVpwUTNuQ1JtMkthaVdraUc2X0FDLW9GMWpfSk82VlhyeUpqSk9IZHVwMmVlZ2lKZ0RRdWt6QnRVcnJGazlrMlBLV1NLM2VDd3NCczBoMnUzdzhHZWFT?oc=5",
+   "checked": "2026-10-25",
+   "pictured": true
+  },
+  {
+   "url": "https://newsinfo.inquirer.net/2329740/army-readies-new-defense-brigade-as-troops-return-from-barmm-deployment",
+   "title": "Army readies new defense brigade as troops return from BARMM deployment",
+   "source": "Inquirer",
+   "summary": "CAGAYAN DE ORO CITY — The last of the four battalions of the Army’s 10th Infantry Division (ID) deployed to help secure the historic Bangsamoro parliamentary elections on Sept. 14 had returned to its home base, clearing the way for the…",
+   "feed": "Inquirer",
+   "published_at": "2026-10-25T01:12:49.000Z",
+   "image": "https://newsinfo.inquirer.net/files/2026/10/1000010109.jpg",
+   "checked": "2026-10-25"
+  },
   {
    "url": "https://newsinfo.inquirer.net/2329583/2-coast-guard-personnel-slain-in-cotabato-city-shooting",
    "title": "2 Coast Guard personnel slain in Cotabato City shooting",
@@ -43,6 +110,18 @@
    "published_at": "2026-10-24T17:13:09.000Z",
    "checked": "2026-10-25",
    "image": "https://newsinfo.inquirer.net/files/2022/09/Cotabato-map-filephoto-091422.jpg"
+  },
+  {
+   "url": "https://manilastandard.net/news/314810014/govt-milf-push-for-commission-on-bangsamoro-transitional-justice.html",
+   "title": "Gov’t, MILF push for commission on Bangsamoro transitional justice",
+   "source": "Manila Standard",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-24T14:35:00.000Z",
+   "image": "https://cdn.manilastandard.net/wp-content/uploads/2026/10/gph-milf-e1792848998868.jpg",
+   "via": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQa2pSVlNLV1JwSHRnemJwWkhWaXVVV01Cd2NWdDY4NlpnOHZmeFNfME1MbEZjN3F5N0ZSWlZXdzFVbW5OSm9odFJiUklMU3BIOV8wM2stSm9lenBHMzEzZWpadjJqNXN4R2x3Ykl2T21oQktXQmcwRU9aT2duM1ZwX1gtMm5qWXIwLWw4UTJkdjV0bk1ZNktVSUJtdWYwckgxQmpwTlRBcHpVamVBMHM2TQ?oc=5",
+   "checked": "2026-10-25",
+   "pictured": true
   },
   {
    "url": "https://newsinfo.inquirer.net/2329561/barmms-majority-coalition-gains-support-of-governors-misuari",
@@ -289,7 +368,8 @@
    "published_at": "2026-10-23T08:56:57.000Z",
    "via": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOGc3c1l6aTNhc0c2R2ItdDNLWG85ZHBWNHZieFBKdFQ0X1gtQVZLOU5aZzBfdDQ2UjI5c3pIdXFIOTFPdzRTRlFDMWJ3TUJRLWVMNURsWXJPYUVLNk01T0hiZW4xZUlRNk1fdlgyT1VGbTNwOUROaGphQTgyLWw5MmZyODhFZkgybmFLSlA3Qzl6RkI3?oc=5",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://pia.gov.ph/news/mindanao/zp/basilan-settles-dispute-between-two-parties-in-sumisip-through-peaceful-reconciliation/",
@@ -300,7 +380,8 @@
    "published_at": "2026-10-23T08:15:19.000Z",
    "via": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPY01MOU91QjFzcUhMbGtNZGRKVG5aUmdySUpOelNQTjNtZUpaeFhOYWpDTHlMLV9TQXJ6dGI2T1BRZ3pqMVNQaDB0V2JOSlZSOERZcG05QWJ4RVJGUmNiSEd3clNsQkdoajhWRUhSLW9Ha21qSThHc09sb1pfWi1xOS1mSEdqNXJOWVlMN0JWbW4xYk9Ra0hyVHBZM3VXX3ZBVEh6c3Vwa2FINVR5Ujk5UXJ2QTF5ZUJBZ1lDRUhlWFM?oc=5",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://pageone.ph/bangsamoro-tax-share-to-rise-php838-million-in-2027-budget/",
@@ -356,6 +437,18 @@
    "via": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQclFSZlRHbXJXWUx0X0JRNzZJU3JyVXNrZ1p6MkE1SmtaX2VQczFTQ2RmUnplalhLYmd0b3NFUThjZERkbFo1U0JrUjNKeDExUFgtT25FbnlHNkRhS2NSR3RRbXRpbGRhU3BJazlkUEtQVmFub1R4Z1JLcUR5NzRLdkt4c2E5N3QydEt3dFhHdzJHamkzOXU1Smh5ZlQ0bTd1cDlOYmtB?oc=5",
    "checked": "2026-10-24",
    "image": "https://newsinfo.inquirer.net/files/2026/10/Screenshot-2026-10-23-at-12.24.59-PM.png"
+  },
+  {
+   "url": "https://manilastandard.net/news/314809330/bangsamoro-parliament-ends-7-year-term-with-94-laws.html",
+   "title": "Bangsamoro Parliament ends 7-year term with 94 laws",
+   "source": "Manila Standard",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-23T03:43:51.000Z",
+   "image": "https://cdn.manilastandard.net/wp-content/uploads/2026/10/speaker-mohammad-shuaib-yacob-1.png",
+   "via": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbG8wYmlhbmw4Yl9kM3U0S1RXM1V0dVNQS0NGMHpDTmFZUTNKN3dEOGhiTUNpWHpGQzhkV1Q4azA2aTVLSm1VU1MwU1A0ejdnQnIzalltNU1yVks1Wk9GSlM5b2oySFJjSDg3U2M5WnRTS0U0Nk9uTmd6aWNhck10MVlKYkt0aDlEU0RxVWgxd1N2c3pLQmpVWWYxRUJBMTg?oc=5",
+   "checked": "2026-10-25",
+   "pictured": true
   },
   {
    "url": "https://www.philstar.com/headlines/2026/10/23/2565201/ex-bangsamoro-solon-rimbang-denies-bankrolling-p35-billion-laos-shabu-shipment",
@@ -453,7 +546,8 @@
    "published_at": "2026-10-22T16:03:00.000Z",
    "via": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVTRySnoxV2RtV0doYk0xYkl1aUFPRnZnLVhoSU9TVGl0Nko4cldXb0tLOWdEbDB6VTRLeVg2Sl9tSEQ2U0I2Q0JZZ2MyRnZDNEpKZ1JtTmRVSFBDRjZoeUthZmgxR0ZFenYzcDQ1bE5KODNubl8tNEh5eTVka2h3Q2VDU28yZS1PcmUwUWNTREV0YXZRZ2Q1bjZEZklsQlluQjFBR1dRYlgwOE93U1NRSkU1b9IBswFBVV95cUxOVTRySnoxV2RtV0doYk0xYkl1aUFPRnZnLVhoSU9TVGl0Nko4cldXb0tLOWdEbDB6VTRLeVg2Sl9tSEQ2U0I2Q0JZZ2MyRnZDNEpKZ1JtTmRVSFBDRjZoeUthZmgxR0ZFenYzcDQ1bE5KODNubl8tNEh5eTVka2h3Q2VDU28yZS1PcmUwUWNTREV0YXZRZ2Q1bjZEZklsQlluQjFBR1dRYlgwOE93U1NRSkU1bw?oc=5",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://www.abs-cbn.com/news/regions/2026/10/22/ex-barmm-parliament-member-appears-to-be-mastermind-in-laos-drug-shipment-pdea-2125",
@@ -527,7 +621,8 @@
    "feed": "Bangsamoro Parliament",
    "published_at": "2026-10-22T09:38:15.000Z",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://www.rappler.com/philippines/elections/barmm-updates-voting-results-tracking-polls-2026/",
@@ -581,7 +676,8 @@
    "published_at": "2026-10-22T07:44:30.000Z",
    "via": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZHYyNlQ3X05vQ0lvSXppbGNCS1pjbER6NkoyZ1R3cWlVSGtJLTVESkpwMUdLX3VnVmJQV3ZhVWZ6aWdnc2hteXR1bjhjV2htN25nYXhqZGZVYVZJV3AxYU1Jd18xcWdtY2xMaWFzMDRENVpocjZua24wQjdaOGh5azBqSVRNRkV4MEdlMVotZy1vbTBGQll6eEtkVElnSjQ2VFpMSWtLdEU?oc=5",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://www.brigadanews.ph/pdea-links-ex-barmm-member-sultan-edrieza-rimbang-to-laos-drug-bust/",
@@ -697,7 +793,8 @@
    "published_at": "2026-10-22T04:21:51.000Z",
    "via": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNOUxVb2FMNlRJbVRvZWZ6VHoxTHliTGYxMmdLMjZ6WGJxaUFZenhLYjk1R2NUanpGM2s0OU1Nc3VURk15Vk9LZDhOUDJjQTllUTJmZHhvSVVSSXJ3bW5XdVJqWjg1VzlLYmVJeXNkQjk2cHc2eG5RNHU4LTFBbm0xNk9aVzd0M0R1bFNZN3VHaEh5MWc?oc=5",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://pia.gov.ph/news/mindanao/nm/government-expedites-compensation-for-marawi-siege-victims/",
@@ -708,7 +805,8 @@
    "published_at": "2026-10-22T04:05:12.000Z",
    "via": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaXVSbWpiR0V3UmVYZDJZZ0YwcHRYcVBsTWttY28zMTBmRU82cF93eW1pNDlPY184NVlFNkQzc19IYVJkZlp4M2E0ckZuNWR1RGxDLXlMaVNOR3h1REtYYU4zaV9kMXBPSVJIeVpfVnFSVHRxMHIyQWYwZF95cXJCNFI2QTVhcU5IMGY3LW1pdmFOdXlhMjVxYWkzTQ?oc=5",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://newsline.ph/at-the-crossroads-of-peace-why-14000-unarmed-combatants-hold-the-key-to-bangsamoros-future/",
@@ -890,7 +988,8 @@
    "published_at": "2026-10-21T06:25:48.000Z",
    "via": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOb1hMS0FEMnZDb0o3LTJId3E4cGp3cUk0WVoxd3lkZ1Y3cl9ERXB5OEpiMWFiSlJiV2IycFdpT29oOUhJcWZmUFI0NHIyWUk1bkxtUzNEY2dka21HU3lRMU14eTBhLTQ2R19ZaXQwVzNvQkdHdkxYNmtvbHVQLTNrdlo1OGtSWEJlZEcydUIxZ0NvTUdLdkgyUHZkWDZYVThxb01vZWtfejYxQQ?oc=5",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://www.brigadanews.ph/four-biff-karialan-faction-members-return-to-government-in-maguindanao-del-sur/",
@@ -956,7 +1055,8 @@
    "published_at": "2026-10-21T02:43:30.000Z",
    "via": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB2bjNBVU1XT1BMcUY2bXZlbUZYSFpOcEh6OUpoRnRyalZLYnBYNU5qSTlxbDhPVXlodGZTQk00bWNnSGxVT3BsNkJ2ci1rSFlsMVNnUHBtdFprWGxGcF9WaHM4NFhfb1VNR3R3UnlvbWJIUkUtTFZnS0xB?oc=5",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://www.brigadanews.ph/maguindanao-del-norte-barangay-captain-survives-shooting-attack/",
@@ -1033,7 +1133,8 @@
    "published_at": "2026-10-20T13:12:29.000Z",
    "via": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdjRjRkdOZU1TWERaeDllRjQ0MEJqMDdNa1JLcUJTbmJTc2pJbWJpOEZMX3BfQzVqTEV0ZGNTLWtxb2FERUFqaEx1MmM2M2ZycmQ1U2hHZnJwVklXem5Qbm5TVFNlTURwbEFtVHBfQjB2YXd5T2NfSmVsai1HVmxLRkRSYTJnOFlCT3VBZHFFLXg0OFhaWnFhMg?oc=5",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://bworldonline.com/the-nation/2026/10/20/788217/barmm-cops-seize-p17-m-imported-cigarettes/",
@@ -1088,7 +1189,8 @@
    "published_at": "2026-10-20T09:38:11.000Z",
    "via": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZmdaaklKUkhxUS1ocFFDdXg1aDEyNUFNa1R2a1pXRGRDZDBpNy1aTV9XVGloc3k4SGFJd21xMFM4dHpoQWk3OEZRMDhKRjBiV1hvTVIyQm9uS1FzRmdFeEtGMjJzTXY0Q0lac012R3VJWURfR25URE1uemc0bHdjS1AwOHZqUzVidGVxT0VjRDVmeWVXVG5ZbjZ5ajdPcVd2aW9XeWhvMW9Tc2g3dFoxUi1jMXBvVHM?oc=5",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://news.abs-cbn.com/news/nation/2026/10/20/14-000-milf-combatants-still-need-decommissioning-opapru-1720",
@@ -1099,7 +1201,8 @@
    "published_at": "2026-10-20T09:20:00.000Z",
    "via": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSlJkeFlVWFM5NHFrSWFzOW1oeUQ4X3FWVm9NVW9lUk1Sd19HMkdiN3ZJMmhFcUVSVlpSb1lxQ3BJSUtGR01tbEoxVm50Um5YTHN5NURURElwSTJPenZzYk5YZlR1TEtlYURxMDNIU0dSZERWbnlnd2Q3dXFoay1sWEhMSWIzOVpTX3V2eWJfYXFHM1pNUDM5b3RlTlhvdjBFaUxOUmJGRV85a2d0QVE?oc=5",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://mindanaogoldstardaily.com/free-medical-aid-reaches-former-milf-stronghold-in-munai-town",
@@ -1165,7 +1268,8 @@
    "published_at": "2026-10-20T06:10:08.000Z",
    "via": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNVZBbDcyajVhUnNVU2NTeUhHczhHaGE5NzAwWEdoaGFBTVRBR1VVbEdQUjdEV180Nl90bWV1b0VRQV9rb2d4Zkh1QjlKS3ZTbjlZaEctcXdQR1k1cmh4bGhkaDJhODRvQkplZVJPT1FpR0haSjZLYmxKSjgwTW9QWGVBYzZHU2RvS1RpLTNBblFjVWs5V3JRbDNrdlJYNXVlZHJIR0VBeGduMk5ZWnlxeA?oc=5",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://pia.gov.ph/news/mindanao/nm/pbbm-directs-more-livelihood-support-for-marawi-siege-survivors/",
@@ -1176,7 +1280,8 @@
    "published_at": "2026-10-20T06:03:08.000Z",
    "via": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeWtCVjZrQjk0Wk5mTkozMzJJemdxa3hEYm5BSjNkcm8ycTFsWVJmM3ZuT3d2azRCTnQtX1IzWV9PakM0My1rek50VTZSNXp6ZEVuXzVneVJHT3hFZjM4cUwzeVg0LV94a3Z6NlJiTUE4WjFnUnRXWTlSanZHNjVLQWdPc0hlTlh2Z0hNMUphMzZHbG95NVNtaHJNUWxPLXh1bWc?oc=5",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://www.pna.gov.ph/article/marawi-rehab-on-track-9-years-after-siege",
@@ -1198,7 +1303,8 @@
    "published_at": "2026-10-20T01:01:00.000Z",
    "via": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQV2pNZFRLZWJrNVlFdkdYa0hFT01OaDRHcVJJb2VSSnd4VElfN1cyRzdHTDI3d0dGWGZxUWtMRFJSMWhHaHljemdISEpZbllDby1vNF8tZml3R2hNblJycENvSzh1ckRiR3FSS2ZtT2x2X1kwSnlQMU5CazNpNEVzT0VTMmRVYTk0V3FnUUUxY1RZbnpYMjRrb1VuZWVVVHRVaFpPSVdCSGNjdWxwN0HSAbMBQVVfeXFMTi1Tc2w0TFdUa1hnWFhKRy1JMG8tY1lINUhHZDlyc1U4MVQ2RFBReFVTN01xOHNIOGM3eE5RRW4tclNaaVlZdDJvREhqd0F2SHVjeGZaNmlaMVl6aUlQWFV0OGJVeGtMSGdDSVNoLTg3QTBqX0w1RVotX3QwQmNPMU5sakt0SWlGZTZ0Z3IwT0ppODJjMjgxY2Vnd0tfdDZ1Um81ODBHTWtYeHlVZDJZT1RKMXM?oc=5",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://newsinfo.inquirer.net/2326649/govt-keeps-hands-off-barmm-parliament-leadership-vote",
@@ -1230,7 +1336,8 @@
    "published_at": "2026-10-19T15:10:00.000Z",
    "via": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeVg1Z0FTbzVYS1ZzR2d5Vnlodk1iNWlqeTNKZU9OQzBHcjdqbGR2U2RhM1luUWRaenBKczFyMkZOblRILVRHTkM1ZHVWZmlOQnhCMkhzbzgzd1BDaEdqeXVRUUNJUUt1SW8yWEFmVURmeC1SN0F5Sy1MYjhnUXJuVHlfS0FCSUxaUENEaDBxdV9SZFNtN25TZjZEdURSejA5dkdoVVdTdnJpZ3lLdlRHQ2Z0bHFYdUNz0gG-AUFVX3lxTE95WGw3c1VmMENwNmVrWDlGWlEzSzU3NkhMX1ZITUk1WkpKSl9oMVJkNGNTRGNqSzhxS1BaNzFGR0MyR3hHdnN1SUdZa2ZEelV1SjlNOHVMdDFjckRPaWNsbW55RzYtZHZKRGRhRGVHelFTMGdUVHY5SHFrT3MzM011eFFJaXhsa3RwVzFia2ZWVW52UTVYMTVHYmNHeFpiczRQZ0dVQ3puSkIxR1ItNkdVX29JRHpiZXR6R1RqLWc?oc=5",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://tribune.net.ph/2026/10/19/4id-honors-marawi-siege-heroes",
@@ -1252,7 +1359,8 @@
    "published_at": "2026-10-19T12:43:00.000Z",
    "via": "https://news.google.com/rss/articles/CBMieEFVX3lxTE42eUNwYmlyaXBYdHMtXzZtLVpWZnk1Mkh1ZHR3RVR3dVFMVGQ5b1pBcWl2ay1LemZ6TkUwRlZiaS1reGpMTDNKM0laOHhZSy1sbnRXNWxZQkk5UHIyU3NZTkRIbzJYaUxFT011bThxd18xbjZ6NGV2ZtIBfkFVX3lxTFB1YkxnQVJKYWdSUVJMZ1l6amx3ZDM3aVpRSVRaMFdIRXZDQnRFMHB5bDFudEFJZzJISmZLSFl0QkJ5QlpRaUJIQ2dFdl9oUUdJSTRYQU1GNFdmbEJRamY3UW1xZHJpWnItZUtaV0lrV2RhZE54VEJGaWlEdk44UQ?oc=5",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://www.manilatimes.net/2026/10/19/news/national-govt-will-not-interfere-in-selection-of-barmm-leaders/2448466",
@@ -1340,7 +1448,8 @@
    "published_at": "2026-10-19T05:37:00.000Z",
    "via": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPX2RTR2VTckJ1U0xfbE1YazJldDlIdlBGcms2NkZHZWRmX3NGQ3dhQ0ZDV1RFY1lJODZkUmgzTkFjUDJyTGdreXZwZ01uNmh4QVVDeVh3RmV4TkhVazBaOHFnQjJiSW5yMXRuSmlWNDMwd0hQcnJnNnRVa0hiWkNZamFPTjdQTjNNMlZGUnQzSzVPY3duem9sT0c1QnR3ZlctU2tPeFpoNkdsVUxRU0RaazJDVHN1Xy1oS0E?oc=5",
    "checked": "2026-10-24",
-   "image": null
+   "image": null,
+   "pictured": true
   },
   {
    "url": "https://www.dzrh.com.ph/post/pnp-on-alert-for-possible-dawlah-islamiyah-retaliation-after-sub-leader-3-others-killed-in-maguindanao-clash",
@@ -1488,6 +1597,12 @@
    "via": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRkEtbHJnTzJySGIwZGdSRUJKSGYwbW83ejlyVzVBVTBGcTNPRzZFYkNZb2JYNVVsOXBLbS1jWUF5Um5TdW9WLXIwR3E2dUNZUXFENzA0UktVcjU2RkxWejltQXJIb3drRTRveUpRRW1JYTZmajMwcUtDTWF0UmJqbV9Ca0cxM2tfYnBQWEd1Ry1aenFBMVFPZw?oc=5",
    "title": "UBJP endorsement of Robredo to test MILF’s clout in BARMM",
    "reason": "published 2022-04-24"
+  },
+  {
+   "url": "https://edcom2.gov.ph/edcom-2-and-msu-iit-forge-research-partnership-to-drive-education-reform-in-barmm/",
+   "via": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNOWNfenZlb3U3c1VKY1NnbDZpblNlcVJBSy1nQ2ZOSldhbWFyc0h0QlhzMFlONlJCcG5YNTZpdU04TWs1NVhjRldmVVRkRGFHbnZFRXlVeGRpQ1JPV2pLdWhsdUgzV3Z6OEtzMkpXZ1c0M3F1ZTNHZU9SYnItc0ZRdnRxdWNzWGN6dERnM2FCNU93RmVSQ0E2ZkhTSEktZ2tEZXdqc25PMA?oc=5",
+   "title": "EDCOM 2 and MSU-IIT forge research partnership to drive education reform in BARMM",
+   "reason": "published 2026-08-20"
   }
  ]
 }

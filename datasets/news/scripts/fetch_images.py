@@ -65,10 +65,12 @@ def inquirer_picture(url):
 
 
 data = json.load(open(PATH))
-todo = [i for i in data['items'] if 'image' not in i and 'news.google.com' not in i['url']]
+# A story is asked once (`pictured`): the fetch sets `image` from the feed, so null there only means the feed had none.
+todo = [i for i in data['items'] if not i.get('image') and not i.get('pictured') and 'news.google.com' not in i['url']]
 found = 0
 for n, item in enumerate(todo):
     item['image'] = picture(item['url']) or (inquirer_picture(item['url']) if 'inquirer.net' in item['url'] else None)
+    item['pictured'] = True
     found += bool(item['image'])
     time.sleep(0.4)
     if n % 20 == 19:
