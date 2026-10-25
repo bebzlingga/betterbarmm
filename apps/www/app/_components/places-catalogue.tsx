@@ -3,6 +3,7 @@ import { commonsThumb } from '../_lib/commons'
 import { PhotoCredit } from './discover-figure'
 import { GetInvolved } from './get-involved'
 import { PlaceCard } from './place-card'
+import { PlacesBrowser, type PlaceIndex } from './places-browser'
 import { SiteHeader } from './site-header'
 
 /** The catalogue. It lives in the places layout, so it stays put, scrolled where the reader left it, while a place opens over it. */
@@ -10,6 +11,15 @@ export function PlacesCatalogue() {
 	const kinds = (Object.keys(KIND) as (keyof typeof KIND)[]).map((k) => ({ k, list: byPhoto(places.filter((p) => p.kind === k)) })).filter((x) => x.list.length)
 	const cover = place('panampangan-island')?.images[0] ?? place('bud-bongao')?.images[0]
 	const areas = new Set(places.map((p) => p.area)).size
+	// The kinds in the order they are listed, photographed places first within each; the cards drawn here, the filtering in the browser.
+	const ordered = kinds.flatMap(({ list }) => list)
+	const index: PlaceIndex[] = ordered.map((p) => ({
+		slug: p.slug,
+		kind: p.kind,
+		area: p.area,
+		text: [p.name, ...(p.also_known_as ?? []), p.municipality, AREA[p.area], KIND[p.kind], p.summary].join(' ').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(),
+	}))
+	const cards = Object.fromEntries(ordered.map((p) => [p.slug, <PlaceCard key={p.slug} p={p} />]))
 
 	return (
 		<main className='min-h-screen bg-[#f6f9f8] text-[#13303a]'>
@@ -35,20 +45,14 @@ export function PlacesCatalogue() {
 			</section>
 
 			<div className='bb-container pt-14 pb-20 lg:pt-16 lg:pb-28'>
-				{kinds.map(({ k, list }) => (
-					<section key={k} id={k} aria-labelledby={`h-${k}`} className='mb-16 scroll-mt-24 last:mb-0'>
-						<h2 id={`h-${k}`} className='text-[28px] font-extrabold tracking-[-0.02em]'>
-							{KIND[k]} <span className='text-[#8aa3a9]'>{list.length}</span>
-						</h2>
-						<ul className='mt-6 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4'>
-							{list.map((p) => (
-								<li key={p.slug}>
-									<PlaceCard p={p} />
-								</li>
-							))}
-						</ul>
-					</section>
-				))}
+				<PlacesBrowser
+					index={index}
+					cards={cards}
+					kinds={kinds.map(({ k }) => ({ id: k, label: KIND[k] }))}
+					areas={Object.entries(AREA)
+						.filter(([id]) => places.some((p) => p.area === id))
+						.map(([id, label]) => ({ id, label }))}
+				/>
 				<p className='mt-16 text-[12.5px] leading-[1.7] text-[#4d6670]'>
 					Every place is traced to the pages it came from, and the guide’s own entries are the travel workspace’s. Photos are from Wikimedia Commons or English Wikipedia under free licences, each credited on the photo. {Object.keys(AREA).length} areas: Basilan, Lanao del Sur, Maguindanao del Norte and del Sur, Tawi-Tawi, Cotabato City and the Special Geographic Area.
 				</p>
