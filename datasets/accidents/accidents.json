@@ -1,6 +1,6 @@
 {
  "name": "Accidents in BARMM, as reported",
- "generatedAt": "2026-10-24",
+ "generatedAt": "2026-10-25",
  "since": "2019",
  "note": "Compiled from news reports: the outlets’ own sites, Google News’s index of them, and public Facebook posts that index carried. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.",
  "sources": {
@@ -81,6 +81,12 @@
      "url": "https://www.philstar.com/nation/2026/10/22/2565027/2-coast-guard-personnel-killed-ambush-cotabato-city",
      "title": "2 Coast Guard personnel killed in ambush in Cotabato City",
      "date": "2026-10-22"
+    },
+    {
+     "outlet": "Inquirer",
+     "url": "https://newsinfo.inquirer.net/2329583/2-coast-guard-personnel-slain-in-cotabato-city-shooting",
+     "title": "2 Coast Guard personnel slain in Cotabato City shooting",
+     "date": "2026-10-24"
     }
    ],
    "id": "2026-10-22-cotabato-shooting",
@@ -113,6 +119,12 @@
      "outlet": "The Manila Times",
      "url": "https://www.manilatimes.net/2026/10/24/regions/coast-guard-rescues-20-off-basilan/2452740",
      "title": "Coast Guard rescues 20 off Basilan",
+     "date": "2026-10-24"
+    },
+    {
+     "outlet": "balita.com (PNA)",
+     "url": "https://balita.com/pcg-assists-vessel-in-distress-off-basilan/",
+     "title": "PCG assists vessel in distress off Basilan",
      "date": "2026-10-24"
     }
    ],
