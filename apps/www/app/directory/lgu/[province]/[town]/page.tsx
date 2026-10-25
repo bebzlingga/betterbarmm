@@ -66,7 +66,7 @@ export default async function TownPage({ params }: { params: Promise<{ province:
 							<h2 id='lines' className='text-[20px] font-extrabold'>
 								Who to call
 							</h2>
-							<Lines lines={lines} cols='sm:grid-cols-2 lg:grid-cols-1' empty='No town numbers found on an official page yet. The province’s lines are on its page.' />
+							<Lines lines={lines} empty='No town numbers found on an official page yet. The province’s lines are on its page.' />
 							<p className='mt-3 text-[12.5px] text-[var(--ink-3)]'>{emergencyMeta.note}</p>
 						</section>
 					</aside>

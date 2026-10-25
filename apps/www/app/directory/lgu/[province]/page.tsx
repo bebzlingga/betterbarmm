@@ -58,7 +58,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 							<h2 id='lines' className='text-[20px] font-extrabold'>
 								Who to call, province-wide
 							</h2>
-							<Lines lines={lines} cols='sm:grid-cols-2 lg:grid-cols-1' empty='No province-wide numbers found on an official page yet.' />
+							<Lines lines={lines} empty='No province-wide numbers found on an official page yet.' />
 							<p className='mt-3 text-[12.5px] text-[var(--ink-3)]'>{emergencyMeta.note}</p>
 						</section>
 					</aside>

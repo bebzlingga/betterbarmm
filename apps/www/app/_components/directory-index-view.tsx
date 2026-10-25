@@ -87,8 +87,8 @@ export function DirectoryIndex() {
 									<ul className='mt-3 grid border-t border-[var(--rule)] sm:mt-4 sm:grid-cols-2 sm:gap-4 sm:border-t-0 lg:grid-cols-3 xl:grid-cols-4'>
 										{list.map((o) => (
 											<li key={o.slug} className='bb-frame relative flex min-w-0 gap-4 border-b border-[var(--rule-soft)] bg-transparent! py-3 sm:flex-col sm:gap-0 sm:overflow-hidden sm:border sm:border-[var(--rule)] sm:py-0'>
-												<span className='relative size-16 shrink-0 overflow-hidden sm:h-32 sm:w-full'>
-													<Emblem image={officeLogo(o.slug)} name={o.name} label={o.acronym} tile className='size-full text-[11px] sm:text-[18px]' />
+												<span className='relative size-14 shrink-0 overflow-hidden sm:h-24 sm:w-full'>
+													<Emblem image={officeLogo(o.slug)} name={o.name} label={o.acronym} tile className='size-full text-[10px] sm:text-[16px]' />
 												</span>
 												<div className='min-w-0 flex-1 sm:p-4'>
 													<p className='mb-1.5 text-[15.5px] leading-[1.2]'>
@@ -143,8 +143,8 @@ export function DirectoryIndex() {
 							{nationalOffices.map((o) => (
 								<li key={o.slug} id={`national-${o.slug}`} className='bb-frame relative flex min-w-0 scroll-mt-[calc(var(--site-header-h)+1rem)] gap-4 border-b border-[var(--rule-soft)] bg-transparent! py-3 sm:flex-col sm:gap-0 sm:overflow-hidden sm:border sm:border-[var(--rule)] sm:py-0'>
 									{/* The panel keeps the ministries' height; each logo sits in one small box inside it, so a wordmark and a seal read the same size. */}
-									<span className='relative grid size-16 shrink-0 place-items-center overflow-hidden bg-[var(--paper-2)] sm:h-32 sm:w-full'>
-										<Emblem image={nationalLogo(o.slug)} name={o.agency} label={o.acronym} className='h-10! w-12! text-[11px] sm:h-16! sm:w-24! sm:text-[16px]' />
+									<span className='relative grid size-14 shrink-0 place-items-center overflow-hidden bg-[var(--paper-2)] sm:h-24 sm:w-full'>
+										<Emblem image={nationalLogo(o.slug)} name={o.agency} label={o.acronym} className='h-9! w-11! text-[10px] sm:h-12! sm:w-20! sm:text-[14px]' />
 									</span>
 									<div className='min-w-0 flex-1 sm:p-4'>
 										<p className='mb-1.5 text-[15.5px] leading-[1.2]'>

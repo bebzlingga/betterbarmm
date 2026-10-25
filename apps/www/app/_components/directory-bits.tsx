@@ -21,28 +21,72 @@ export function Phone({ number }: { number: string }) {
 
 const LINE_ICON: Record<Line['kind'], Icon> = { drrm: SirenIcon, police: ShieldIcon, fire: FireIcon, health: FirstAidIcon, hall: HouseIcon, other: PhoneIcon }
 
-/** Emergency and service lines as cards: what the office is, its numbers, where the numbers were read. */
-export function Lines({ lines, empty, cols = 'sm:grid-cols-2 lg:grid-cols-3' }: { lines: Line[]; empty: string; cols?: string }) {
+// Kept as written when a name is in capitals: the offices' acronyms, roman numerals and initials ("B.").
+const ACRONYM = /^(RHU|BHS|BHU|PNP|BFP|EMS|ER|OPD|MDRRMO|PDRRMO|CDRRMO|MDRRMC|DRRMO|MHO|PHO|CHO|LGU|MPS|CPS|PPO|AFP|DOH|DSWD|MSWD|MSWDO|BARMM|II|III|IV|[A-Z]\.)$/
+
+/** A name the source prints in capitals ("SOUTH UBIAN RHU"), set in ordinary case with its acronyms kept ("South Ubian RHU"). */
+function plainCase(name: string) {
+	if (name !== name.toUpperCase() || !/[A-Z]{3}/.test(name)) return name
+	return name
+		.split(/(\s+|-|\/)/)
+		.map((w, i, parts) => {
+			if (ACRONYM.test(w) || !/[A-Z]/.test(w)) return w
+			// The short end of a hyphenated name stays small: Ditsa-an.
+			if (parts[i - 1] === '-' && w.length <= 2) return w.toLowerCase()
+			return w.charAt(0) + w.slice(1).toLowerCase()
+		})
+		.join('')
+}
+
+/** One office once: the same office listed for each of its numbers becomes one row with all of them, and a
+ *  number written two ways (0906-219-3489, 09062193489) is one number. */
+function mergeLines(lines: Line[]) {
+	const byOffice = new Map<string, Line & { sources: string[] }>()
+	for (const l of lines) {
+		const key = `${l.kind}|${l.name.trim().toLowerCase()}`
+		const row = byOffice.get(key) ?? { ...l, name: plainCase(l.name.trim()), phones: [], sources: [] }
+		const digits = new Set(row.phones.map((p) => p.replace(/\D/g, '')))
+		for (const p of l.phones) {
+			const d = p.replace(/\D/g, '')
+			if (digits.has(d)) continue
+			row.phones.push(p)
+			digits.add(d)
+		}
+		if (!row.sources.includes(l.source)) row.sources.push(l.source)
+		byOffice.set(key, row)
+	}
+	return [...byOffice.values()]
+}
+
+/** Emergency and service lines as a list: what the office is, its numbers to tap, and where they were read. */
+export function Lines({ lines, empty }: { lines: Line[]; empty: string }) {
 	if (!lines.length) return <p className='mt-3 text-[13.5px] text-[var(--ink-3)]'>{empty}</p>
-	// Each card draws its own hairline, overlapping its neighbour's, so a row the cards do not fill shows the page, not a grey block.
 	return (
-		<ul className={`mt-4 grid pt-px pl-px ${cols}`}>
-			{lines.map((l) => {
+		<ul className='mt-3 divide-y divide-[var(--rule-soft,var(--rule))] border-y border-[var(--rule)]'>
+			{mergeLines(lines).map((l) => {
 				const Glyph = LINE_ICON[l.kind]
 				return (
-					<li key={l.kind + l.name} className='-mt-px -ml-px border border-[var(--rule)] bg-[var(--paper)] p-5'>
-						<p className='flex items-center gap-2 font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>
-							<Glyph size={15} weight='fill' aria-hidden='true' /> {LINE_LABEL[l.kind]}
-						</p>
-						<p className='mt-1.5 text-[14.5px] font-semibold leading-snug'>{l.name}</p>
-						<ul className='mt-2 space-y-1 text-[14px]'>
-							{l.phones.map((p) => (
-								<Phone key={p} number={p} />
+					<li key={l.kind + l.name} className='flex gap-3 py-3'>
+						<Glyph size={16} weight='fill' className='mt-0.5 shrink-0 text-[var(--accent)]' aria-hidden='true' />
+						<div className='min-w-0 flex-1'>
+							<p className='text-[14px] font-semibold leading-snug'>
+								{l.name} <span className='ml-1 text-[12px] font-medium text-[var(--ink-3)]'>{LINE_LABEL[l.kind]}</span>
+							</p>
+							<p className='mt-0.5 flex flex-wrap gap-x-3 gap-y-0.5 text-[13px]'>
+								{l.phones.map((p) => (
+									<a key={p} href={telHref(p)} className={`tabular-nums ${linkClass}`}>
+										{p}
+									</a>
+								))}
+							</p>
+						</div>
+						<span className='flex shrink-0 flex-col items-end gap-0.5 pt-0.5'>
+							{l.sources.map((src, i) => (
+								<a key={src} href={src} target='_blank' rel='noreferrer' className='inline-flex items-center gap-0.5 text-[11.5px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
+									Source{l.sources.length > 1 ? ` ${i + 1}` : ''} <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
+								</a>
 							))}
-						</ul>
-						<a href={l.source} target='_blank' rel='noreferrer' className='mt-2 inline-flex items-center gap-0.5 text-[11.5px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
-							Source <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
-						</a>
+						</span>
 					</li>
 				)
 			})}
