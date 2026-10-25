@@ -13,10 +13,51 @@ export type Story = {
 	summary: string
 	url: string
 	source: string
+	/** The outlet's own picture for the story (its og:image or feed image), or null. */
+	image: string | null
 	/** Manila day and time of the report whose headline the row shows, formatted on the server. */
 	day: string
 	time: string | null
 	also: { source: string; url: string }[]
+}
+
+/** One story: its picture on the left where the outlet has one that loads; with none, the text takes the row. */
+function Row({ s }: { s: Story }) {
+	const [failed, setFailed] = useState(false)
+	const pic = !!s.image && !failed
+	return (
+		<li className={`grid gap-y-1 border-t border-[var(--rule)] py-5 ${pic ? 'grid-cols-[3.25rem_minmax(0,1fr)] gap-x-3.5 sm:grid-cols-[5.25rem_minmax(0,1fr)] sm:gap-x-5 md:grid-cols-[6rem_minmax(0,1fr)_12rem] md:gap-x-6' : 'gap-x-8 md:grid-cols-[minmax(0,1fr)_12rem]'}`}>
+			{pic ? (
+				<a href={s.url} target='_blank' rel='noreferrer' tabIndex={-1} aria-hidden='true' className='row-span-2 block aspect-square self-start overflow-hidden bg-[var(--paper-2)] sm:aspect-[3/2] md:row-span-1'>
+					{/* eslint-disable-next-line @next/next/no-img-element */}
+					<img src={s.image!} alt='' loading='lazy' referrerPolicy='no-referrer' onError={() => setFailed(true)} className='h-full w-full object-cover' />
+				</a>
+			) : null}
+			<div className='min-w-0'>
+				<a href={s.url} target='_blank' rel='noreferrer' className='group'>
+					<span className='text-[1.05rem] font-bold leading-snug tracking-[-0.01em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
+						{s.title}
+						<ArrowUpRightIcon className='ml-1.5 inline size-3.5 align-baseline text-[var(--ink-mute)] group-hover:text-[var(--accent)]' weight='bold' aria-hidden='true' />
+					</span>
+				</a>
+				{s.summary ? <p className='mt-2 text-[14px] leading-[1.7] text-[var(--ink-2)]'>{s.summary}</p> : null}
+				{s.also.length ? (
+					<p className='mt-2.5 flex flex-wrap items-baseline gap-x-3 gap-y-1 text-[13px]'>
+						<span className='text-[var(--ink-3)]'>Also reported by</span>
+						{s.also.map((a) => (
+							<a key={a.url} href={a.url} target='_blank' rel='noreferrer' className='inline-flex items-center gap-0.5 font-semibold text-[var(--ink-2)] underline decoration-[var(--rule)] underline-offset-4 hover:text-[var(--accent)] hover:decoration-[var(--accent)]'>
+								{a.source} <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
+							</a>
+						))}
+					</p>
+				) : null}
+			</div>
+			<span className={`text-[12.5px] leading-[1.7] text-[var(--ink-3)] md:text-right ${pic ? 'col-start-2 md:col-start-auto' : ''}`}>
+				<span className='block font-semibold text-[var(--ink-2)]'>{s.source}</span>
+				{s.time}
+			</span>
+		</li>
+	)
 }
 
 const fold = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
@@ -84,31 +125,7 @@ export function NewsList({ stories, head }: { stories: Story[]; head: React.Reac
 							<h2 className='bb-label'>{label}</h2>
 							<ul className='mt-4'>
 								{list.map((s) => (
-									<li key={s.key} className='grid gap-x-8 gap-y-1 border-t border-[var(--rule)] py-5 md:grid-cols-[minmax(0,1fr)_12rem]'>
-										<div className='min-w-0'>
-											<a href={s.url} target='_blank' rel='noreferrer' className='group'>
-												<span className='text-[1.05rem] font-bold leading-snug tracking-[-0.01em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
-													{s.title}
-													<ArrowUpRightIcon className='ml-1.5 inline size-3.5 align-baseline text-[var(--ink-mute)] group-hover:text-[var(--accent)]' weight='bold' aria-hidden='true' />
-												</span>
-											</a>
-											{s.summary ? <p className='mt-2 text-[14px] leading-[1.7] text-[var(--ink-2)]'>{s.summary}</p> : null}
-											{s.also.length ? (
-												<p className='mt-2.5 flex flex-wrap items-baseline gap-x-3 gap-y-1 text-[13px]'>
-													<span className='text-[var(--ink-3)]'>Also reported by</span>
-													{s.also.map((a) => (
-														<a key={a.url} href={a.url} target='_blank' rel='noreferrer' className='inline-flex items-center gap-0.5 font-semibold text-[var(--ink-2)] underline decoration-[var(--rule)] underline-offset-4 hover:text-[var(--accent)] hover:decoration-[var(--accent)]'>
-															{a.source} <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
-														</a>
-													))}
-												</p>
-											) : null}
-										</div>
-										<span className='text-[12.5px] leading-[1.7] text-[var(--ink-3)] md:text-right'>
-											<span className='block font-semibold text-[var(--ink-2)]'>{s.source}</span>
-											{s.time}
-										</span>
-									</li>
+									<Row key={s.key} s={s} />
 								))}
 							</ul>
 						</div>

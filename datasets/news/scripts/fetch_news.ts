@@ -3,8 +3,9 @@ import { NEWS_FEEDS, readFeed, type FetchedItem } from '../../../packages/db/src
 /* `bun datasets/news/scripts/fetch_news.ts [YYYY-MM-DD]` — read the news feeds and add
    what is new to datasets/news/news.json, from the given day (default: this week's
    Monday, Manila time). Then resolve the Google News links to the outlets' own
-   addresses: `python3 -I datasets/news/scripts/resolve_links.py`, and check each story's own
-   date: `python3 -I datasets/news/scripts/check_dates.py`.
+   addresses: `python3 -I datasets/news/scripts/resolve_links.py`, check each story's own
+   date: `python3 -I datasets/news/scripts/check_dates.py`, and give each its picture:
+   `python3 -I datasets/news/scripts/fetch_images.py`.
 
    The feeds and the reader are the ones the database fetcher used
    (packages/db/src/news.ts); the database is gone, so the headlines live in a file

@@ -121,7 +121,20 @@ function teaser(s: string, max = 240) {
 	return `${s.slice(0, s.lastIndexOf(' ', max))}…`
 }
 
-export type FetchedItem = Omit<NewsItem, 'id' | 'hidden' | 'fetched_at'>
+/** An item as a feed gives it; `image` is the feed's own picture for the story, where it carries one. */
+export type FetchedItem = Omit<NewsItem, 'id' | 'hidden' | 'fetched_at'> & { image?: string | null }
+
+/** The story's picture as the feed carries it: media:content or media:thumbnail, an image enclosure, or the first image in its body. */
+function feedImage(item: string) {
+	const attr = (re: RegExp) => item.match(re)?.[1]?.replace(/&amp;/g, '&')
+	const url =
+		attr(/<media:content[^>]*\burl="([^"]+)"[^>]*>/i) ??
+		attr(/<media:thumbnail[^>]*\burl="([^"]+)"/i) ??
+		attr(/<enclosure[^>]*\burl="([^"]+)"[^>]*type="image\//i) ??
+		attr(/<img[^>]+src="([^"]+)"/i) ??
+		attr(/&lt;img[^&]+src=&quot;([^&]+)&quot;/i)
+	return url && /^https?:\/\//.test(url) && !/\.(svg|gif)(\?|$)/i.test(url) ? url : null
+}
 
 /** One feed's items about the region. */
 export async function readFeed(feed: Feed): Promise<FetchedItem[]> {
@@ -141,7 +154,7 @@ export async function readFeed(feed: Feed): Promise<FetchedItem[]> {
 		const summary = feed.name.startsWith('Google News') ? '' : teaser(text(tag(item, 'description')))
 		if (!feed.regional && !aboutTheRegion(`${title} ${summary}`)) continue
 		const date = new Date(text(tag(item, 'pubDate')) || text(tag(item, 'dc:date')))
-		out.push({ url, title, source, summary, feed: feed.name, published_at: Number.isNaN(date.getTime()) ? null : date.toISOString() })
+		out.push({ url, title, source, summary, feed: feed.name, published_at: Number.isNaN(date.getTime()) ? null : date.toISOString(), image: feedImage(item) })
 	}
 	return out
 }
@@ -179,7 +192,8 @@ export async function runNewsFetch(db: SupabaseClient, trigger: NewsRun['trigger
 	const fresh = unique.filter((item) => !haveUrls.has(item.url) && !haveTitles.has(key(item.title)))
 
 	if (fresh.length) {
-		const { error } = await db.from('news_items').upsert(fresh, { onConflict: 'url', ignoreDuplicates: true })
+		// The table has no image column: the picture is the file's (datasets/news), not the database's.
+		const { error } = await db.from('news_items').upsert(fresh.map(({ image: _image, ...row }) => row), { onConflict: 'url', ignoreDuplicates: true })
 		if (error) errors.push(`news_items: ${error.message}`)
 	}
 

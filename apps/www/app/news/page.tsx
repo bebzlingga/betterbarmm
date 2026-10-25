@@ -13,7 +13,7 @@ export const metadata: Metadata = pageMeta({
 
 /* The feeds are read by datasets/news/scripts/fetch_news.ts into a file, as every other dataset is, and the
    page is built from it. The database the fetch once wrote to is gone. */
-type Item = { url: string; title: string; source: string; published_at: string | null; summary: string }
+type Item = { url: string; title: string; source: string; published_at: string | null; summary: string; image?: string | null }
 
 const day = (iso: string) =>
 	new Date(iso).toLocaleDateString('en-PH', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Manila' })
@@ -63,6 +63,8 @@ function stories(items: Item[]) {
 			return {
 				key: lead.url,
 				title: lead.title,
+				// The lead's picture, else the first other report's: the outlets' own, shown small beside the link.
+				image: lead.image ?? byTime.find((i) => i.image)?.image ?? null,
 				summary: lead.summary,
 				url: lead.url,
 				source: lead.source,
