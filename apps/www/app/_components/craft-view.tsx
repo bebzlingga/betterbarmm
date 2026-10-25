@@ -156,7 +156,7 @@ export function CraftView({ c }: { c: Craft }) {
 						<h3 className={`${label} mt-10 text-[#8a6d5c]`}>Makers</h3>
 						<ul className='mt-3 grid gap-4 sm:grid-cols-2'>
 							{c.makers.map((m) => (
-								<li key={m.name} className='rounded-[4px] bg-white p-4'>
+								<li key={m.name} className='bg-white p-4'>
 									{m.honour ? <p className='mb-1 font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[#9a6a4f]'>{m.honour}</p> : null}
 									<p className={`${serif} text-[16px] font-bold`}>{m.name}</p>
 									{m.town ? <p className='text-[12.5px] text-[#8a6d5c]'>{m.town}</p> : null}
@@ -176,11 +176,11 @@ export function CraftView({ c }: { c: Craft }) {
 							{towns.map(({ label: t, town }) => (
 								<li key={t}>
 									{town?.href ? (
-										<Link href={town.href} className='inline-flex items-center gap-1 rounded-full bg-white px-3 py-1.5 text-[13px] text-[#5a3d2e] hover:text-[#3b2419]'>
+										<Link href={town.href} className='inline-flex items-center gap-1 bg-white px-3 py-1.5 text-[13px] text-[#5a3d2e] hover:text-[#3b2419]'>
 											<MapPinIcon size={13} aria-hidden='true' /> {t} <span className='text-[#8a6d5c]'>· {town.province}</span>
 										</Link>
 									) : (
-										<span className='inline-flex items-center gap-1 rounded-full bg-white px-3 py-1.5 text-[13px] text-[#5a3d2e]'>
+										<span className='inline-flex items-center gap-1 bg-white px-3 py-1.5 text-[13px] text-[#5a3d2e]'>
 											<MapPinIcon size={13} aria-hidden='true' /> {t}
 										</span>
 									)}
@@ -327,13 +327,34 @@ export function CraftView({ c }: { c: Craft }) {
 					))}
 				</ul>
 
-				<div className='mt-10 rounded-[6px] bg-white p-5'>
-					<p className={`${serif} text-[17px] font-bold`}>Know more about the {c.name.toLowerCase().startsWith('the ') ? c.name.slice(4) : c.name}?</p>
-					<p className='mt-1 text-[13.5px] leading-[1.6] text-[#5a3d2e]'>A maker, a place to buy it, a price, a photo you took, or a correction. Send it with a source and it is checked before it goes up.</p>
-					<a href={mailto(c)} className='mt-3 inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-[#7b4a35] hover:text-[#3b2419]'>
-						<EnvelopeSimpleIcon size={15} aria-hidden='true' /> Send it
+			</div>
+		</section>
+
+		{/* What a reader can add: its own band, between the craft and the others like it. */}
+		<section className='bg-[#3b2419] text-[#f3e9de]'>
+			<div className='mx-auto grid max-w-[84rem] gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[minmax(0,6fr)_minmax(0,5fr)] lg:items-center lg:gap-x-24 lg:py-24'>
+				<div>
+					<p className={`${label} text-[#c89b4a]`}>Help complete this page</p>
+					<h2 className={`${serif} mt-3 text-[clamp(1.75rem,3.4vw,2.6rem)] font-bold leading-[1.15]`}>Know more about the {c.name.toLowerCase().startsWith('the ') ? c.name.slice(4) : c.name}?</h2>
+					<p className='mt-4 max-w-xl text-[15px] leading-[1.7] text-[#dccbb9]'>Send it with a source, a link, a document or how you know, and it is checked before it goes up.</p>
+					<a href={mailto(c)} className='mt-7 inline-flex items-center gap-2 bg-[#c89b4a] px-5 py-3 text-[14px] font-semibold text-[#3b2419] transition hover:bg-[#e0b866]'>
+						<EnvelopeSimpleIcon size={16} weight='bold' aria-hidden='true' /> Send it
 					</a>
 				</div>
+				<ul className='grid gap-px bg-[#5a3d2e] sm:grid-cols-2'>
+					{[
+						['A maker', 'Who makes it, and where'],
+						['A place to buy it', 'A shop, a centre, a fair'],
+						['A price', 'What it sells for, and when'],
+						['A photo you took', 'Of the craft or its making'],
+						['A correction', 'Anything here that is wrong'],
+					].map(([what, note]) => (
+						<li key={what} className='bg-[#3b2419] p-5 last:sm:col-span-2'>
+							<p className={`${serif} text-[17px] font-bold`}>{what}</p>
+							<p className='mt-1 text-[13.5px] leading-[1.5] text-[#bfa995]'>{note}</p>
+						</li>
+					))}
+				</ul>
 			</div>
 		</section>
 
