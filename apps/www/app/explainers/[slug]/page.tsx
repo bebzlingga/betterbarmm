@@ -10,6 +10,7 @@ import { SiteHeader } from '../../_components/site-header'
 import { getExplainer } from '../../_lib/explainers'
 import { CADENA_FIGURES } from '../figures/cadena'
 import { HOW_FIGURES } from '../figures/how-betterbarmm'
+import { REVENUE_CODE_FIGURES } from '../figures/revenue-code'
 
 export const revalidate = 60
 
@@ -19,6 +20,7 @@ type Props = { params: Promise<{ slug: string }> }
 const FIGURES: Record<string, Record<string, React.ReactNode>> = {
 	'cadena-act': CADENA_FIGURES,
 	'how-betterbarmm-brings-records-together': HOW_FIGURES,
+	'bangsamoro-priority-codes': REVENUE_CODE_FIGURES,
 }
 
 const longDate = (iso: string) => new Date(iso).toLocaleDateString('en-PH', { day: 'numeric', month: 'long', year: 'numeric' })

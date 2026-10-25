@@ -54,13 +54,22 @@ function fileArticles(): Article[] {
 	}
 }
 
+/** The admin's explainers, or none when the database cannot be reached: the files still make the page. */
+async function fromDatabase<T>(read: () => Promise<T>, fallback: T): Promise<T> {
+	try {
+		return await read()
+	} catch {
+		return fallback
+	}
+}
+
 export async function listExplainers(): Promise<Article[]> {
 	const files = fileArticles()
 	const taken = new Set(files.map((article) => article.slug))
-	const db = (await listPublishedExplainers()).filter((explainer) => !taken.has(explainer.slug))
+	const db = (await fromDatabase(listPublishedExplainers, [])).filter((explainer) => !taken.has(explainer.slug))
 	return [...files, ...db].sort((a, b) => (b.published_at ?? '').localeCompare(a.published_at ?? ''))
 }
 
 export async function getExplainer(slug: string): Promise<Article | null> {
-	return fileArticles().find((article) => article.slug === slug) ?? (await getPublishedExplainer(slug))
+	return fileArticles().find((article) => article.slug === slug) ?? (await fromDatabase(() => getPublishedExplainer(slug), null))
 }
