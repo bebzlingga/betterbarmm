@@ -1,9 +1,56 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-10-25T12:24:53.876Z",
+ "generatedAt": "2026-10-26T00:55:00.095Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds and Google News’s index of them. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "items": [
+  {
+   "url": "https://www.panaynews.net/521-kilo-shabu-smuggling-plot-ex-barmm-lawmaker-denies-financing-laos-drug-shipment/",
+   "title": "521-KILO SHABU SMUGGLING PLOT: Ex-BARMM lawmaker denies financing Laos drug shipment",
+   "source": "Panay News",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-25T16:26:00.000Z",
+   "image": null,
+   "via": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSUx1cU9abTRDeWM0d2NwY3ZieWFxUmdqY2d1X2RiLXJyZVNBb2YwVk5peGU4LVdrZkxpR2tEc0V3OUFCUVdxak8tMDRCMGhKbnU4TG01UW15dmQ2SWJHa2FNNzhod196WFRFX2hWWExpYUJ3TFdhRXc2VzFFbWJrSmFkTktOWUR3OXlrYmdGNFkyMVZmM0N1U2tadGc3aDM3YVB5SlE4MU9hTkVvRGM4?oc=5",
+   "checked": "2026-10-26",
+   "pictured": true
+  },
+  {
+   "url": "https://www.manilatimes.net/2026/10/26/opinion/editorial/barmms-long-and-difficult-road/2453524",
+   "title": "BARMM’s long and difficult road",
+   "source": "The Manila Times",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-25T16:09:00.000Z",
+   "image": "https://manilatimes.net/manilatimes/uploads/images/2026/10/26/1275790.jpg",
+   "via": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNcUlGd0x5RFhaMFNuZnN1eEFTQm85VFlIdEZndWtCcy0xX2NfMXhvaGJIeFBkVzgwbERvbmUzdmhJeU9BU0xDYm5Ja01xYW9WU2hJcGF0QVdMa2JlLWFfVERMdUlfZHJqWVRzend6dUFPZE1na2R3b1dUTEdnX2RFY2F1OVZxYzc2Wm9SRzlaSjNwMVZEZXlpV0QtQdIBoAFBVV95cUxOZzJDNGFlTVVBalZmUVF6WTBJMDk1STh3c3FWcjJoSVhVU1BmN0hTMW4zRmM4U0JVbWVFaGlFZnJSOG1ITUpYT0tmVFFZXzNySGlTY2tiWkVsRzBfYVUwMXBwVVR2bEJxMVBoRm1xNktpZEtDbDJvVC0yVEhVT01MYmpKWUpsd2ZEaUkzcktRTFBLYjlUUU9qLUQ2OG91MUJN?oc=5",
+   "checked": "2026-10-26",
+   "pictured": true
+  },
+  {
+   "url": "https://www.philstar.com/nation/2026/10/26/2565650/barmm-mayors-attacker-nabbed",
+   "title": "BARMM mayor’s attacker nabbed",
+   "source": "Philstar",
+   "summary": "One of the gunmen who attacked Shariff Aguak town Mayor Akmad Ampatuan Sr. with a rocket launcher in January was arrested over the weekend, the Philippine National Police announced.",
+   "feed": "Philstar",
+   "published_at": "2026-10-25T16:00:00.000Z",
+   "image": "https://media.philstar.com/photos/2026/10/25/2_2026-10-25_19-40-05.jpg",
+   "checked": "2026-10-26",
+   "pictured": true
+  },
+  {
+   "url": "https://www.sunstar.com.ph/amp/story/davao/gph-milf-push-bill-for-bangsamoro-reconciliation-body",
+   "title": "GPH, MILF push bill for Bangsamoro Reconciliation body",
+   "source": "SunStar",
+   "summary": "",
+   "feed": "Google News (PH outlets)",
+   "published_at": "2026-10-25T13:37:02.000Z",
+   "image": "https://cf-images.assettype.com/sunstar%2F2026-10-25%2F4qamua1f%2FCopy-of-rUmp202610252117470000.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+   "via": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRHpkeXVmSXFEMC1Fa3FZTDVoWGJyOTB0emlDdWV3ZWNwX3QwOFhnalVxbE1kWUJzNWpmUmltRjg1Z20zMjVnQkExeGVPeHNXdnE1cy16NHBVR2llTUJHTEZIdGt6R3BqSVZURjR6eFVMZ3liZlRkZjRsQmwtWDFKQmlzR2hWRVVyTmd2bFBvYm1vczlJZW5aUzh6djTSAZwBQVVfeXFMUER6ZHl1ZklxRDAtRWtxWUw1aFhicjkwdHppQ3Vld2VjcF90MDhYZ2pVcWxNZFlCczVqZlJpbUY4NWdtMzI1Z0JBMXhlT3hzV3ZxNXMtejRwVUdpZU1CR0xGSHRrekdwaklWVEY0enhVTGd5YmZUZGY0bEJsLVgxSkJpc0doVkVVck5ndmxQb2Jtb3M5SWVuWlM4enY0?oc=5",
+   "checked": "2026-10-26",
+   "pictured": true
+  },
   {
    "url": "https://kami.com.ph/philippines/192273-three-killed-wounded-gunmen-posing-buyers-open-fire-cotabato-city/",
    "title": "Three killed, two wounded after gunmen posing as buyers open fire in Cotabato City",
@@ -100,6 +147,18 @@
    "published_at": "2026-10-24T17:42:08.000Z",
    "checked": "2026-10-25",
    "image": "https://newsinfo.inquirer.net/files/2023/04/mindanao-map.png"
+  },
+  {
+   "url": "https://t.co/3Pp8kCDXrh",
+   "title": "Chinese warships transit Basilan Strait, shadowed by PH vessels",
+   "source": "Howl.Link",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-24T17:34:51.000Z",
+   "image": null,
+   "via": "https://news.google.com/rss/articles/CBMiO0FVX3lxTFBqMVlaN2p5TDc4WS0wNVdnSDFLN00tZXREVnlVbzhiUlNaaUtmZkJ1UWVvR3l0WmFPaDRZ?oc=5",
+   "checked": "2026-10-26",
+   "pictured": true
   },
   {
    "url": "https://newsinfo.inquirer.net/2329657/carnapping-suspects-nabbed-in-cotabato-one-hurt-during-shootout",
@@ -1603,6 +1662,18 @@
    "via": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNOWNfenZlb3U3c1VKY1NnbDZpblNlcVJBSy1nQ2ZOSldhbWFyc0h0QlhzMFlONlJCcG5YNTZpdU04TWs1NVhjRldmVVRkRGFHbnZFRXlVeGRpQ1JPV2pLdWhsdUgzV3Z6OEtzMkpXZ1c0M3F1ZTNHZU9SYnItc0ZRdnRxdWNzWGN6dERnM2FCNU93RmVSQ0E2ZkhTSEktZ2tEZXdqc25PMA?oc=5",
    "title": "EDCOM 2 and MSU-IIT forge research partnership to drive education reform in BARMM",
    "reason": "published 2026-08-20"
+  },
+  {
+   "url": "https://www.volcanodiscovery.com/earthquakes/quake-info/23464032/mag2quake-Oct-25-2026-Philippines-005-km-S-24-W-of-Datu-Hoffer-Ampatuan-Maguindanao-Del-Sur.html",
+   "via": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPR3ZSWFJsaUVhZkprOHQzNjNEVF9sSVlyY3JpTmsyM0NOdVpIbTFDQjJtU01GNU1VTmdaTWhMSDlEM3hBNHR6NUxoYnliUVhqYXdILS1KcGZWUXNkU3RvcmtLalNhbWJZOEZGV292eWZHZ1F4cWIwN2JZX3Y0SUx1ejZsMnFTTUN4eFF1RU1vYk9tdDhSVklFM2ZJbkJ5Zm9XU1p5MDN3cGhSSHNhVHU1aHpEZlNLRHVQMldwdmpYNlhVNi1udnFlX2ctMHp3LUduZW1WS0xINF9EY0doTHk3dDVuQmZDenRoU2tqWDlrWmJBTzA?oc=5",
+   "title": "Weak mag. 2.2 earthquake - Province of Maguindanao, 6.1 km southwest of Maganoy, Philippines, on Sunday, Oct 25, 2026, at 11:26 pm (GMT +8)",
+   "reason": "not a news report"
+  },
+  {
+   "url": "https://www.rappler.com/philippines/mindanao/marcos-jr-administration-stands-with-israel-barmm-says-palestine-is-us/",
+   "via": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPcWtZdWlOX2NrcU1JN2ZVZzRYcDFod3lOdlJFS2xjRGVnUzRuVEFPUnJTLTFQV0t1OHd3bkNwaUhQYWxsYW9YdmVnVjE4R2tjd0ZCc3hvR1RGS29nZWVaXzY4RVR6Y2lxc0J6R3pqUkRXOEhxaE8wSllBRTFoeEdmTmxhZnZUbURUcmN6UHBIc3hkX3gweTQwNVQ0bWRNWEZiby0ydnNWOWMtVXd1TncxVHUyYlI5dG8?oc=5",
+   "title": "Marcos administration stands with Israel; BARMM says ‘Palestine is us’",
+   "reason": "published 2023-10-18"
   }
  ]
 }
