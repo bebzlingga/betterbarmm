@@ -215,7 +215,7 @@ export function DidYouKnow() {
 								    if "how do you know" is answered next to it. */}
 								<Link
 									href={`/acts/${fact.act.number}`}
-									className='rule-link rule-link-quiet mt-4 inline-block text-[13px]'
+									className='rule-link rule-link-quiet mt-4 inline-block text-[0.8125rem]'
 								>
 									BAA {fact.act.number} &middot; {fact.act.label}
 								</Link>

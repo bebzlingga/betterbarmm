@@ -154,7 +154,7 @@ export default function CandidatesPage() {
 									</h3>
 									<p className='mt-3 bb-body text-[var(--ink-2)]'>{group.summary}</p>
 								</div>
-								<p className='num shrink-0 font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+								<p className='num shrink-0 font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 									{group.parties.length} {group.parties.length === 1 ? 'party' : 'parties'}
 								</p>
 							</div>

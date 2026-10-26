@@ -81,7 +81,7 @@ export function FilterMenu({
 						<button
 							type='button'
 							onClick={onClear}
-							className='mb-1 w-full px-3 py-2 text-left font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
+							className='mb-1 w-full px-3 py-2 text-left font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
 						>
 							Clear {selected.size}
 						</button>
@@ -90,7 +90,7 @@ export function FilterMenu({
 					{options.map((option) => (
 						<label
 							key={option.value}
-							className='flex cursor-pointer items-center gap-2.5 px-3 py-2 text-[13.5px] text-[var(--ink-2)] transition hover:bg-[var(--paper-2)] hover:text-[var(--ink)]'
+							className='flex cursor-pointer items-center gap-2.5 px-3 py-2 text-[0.84375rem] text-[var(--ink-2)] transition hover:bg-[var(--paper-2)] hover:text-[var(--ink)]'
 						>
 							<input
 								type='checkbox'
@@ -103,7 +103,7 @@ export function FilterMenu({
 							    uses: programs are tagged "Lump-sum / Special Purpose Fund" and
 							    the workspace shows "Special Purpose Fund". */}
 							<span className='min-w-0 flex-1'>{option.label ?? option.value}</span>
-							<span className='money font-mono text-[10px] text-[var(--ink-mute)]'>
+							<span className='money font-mono text-[0.625rem] text-[var(--ink-mute)]'>
 								{option.count}
 							</span>
 						</label>

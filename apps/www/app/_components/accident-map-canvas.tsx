@@ -55,7 +55,7 @@ function AllBarmm() {
 		<button
 			type='button'
 			onClick={() => map?.fitBounds(BOUNDS, { ...FIT, duration: 700 })}
-			className='absolute right-12 top-2 z-10 flex h-8 cursor-pointer items-center rounded-md border border-[var(--rule)] bg-[var(--paper)] px-3 text-[12px] font-semibold text-[var(--ink)] shadow-sm transition hover:text-[var(--accent)]'
+			className='absolute right-12 top-2 z-10 flex h-8 cursor-pointer items-center rounded-md border border-[var(--rule)] bg-[var(--paper)] px-3 text-[0.75rem] font-semibold text-[var(--ink)] shadow-sm transition hover:text-[var(--accent)]'
 		>
 			All BARMM
 		</button>
@@ -256,7 +256,7 @@ export default function AccidentMapCanvas({
 
 	if (!webgl)
 		return (
-			<div className='flex h-full w-full items-center justify-center bg-[var(--paper-2)] p-8 text-center text-[14px] leading-[1.7] text-[var(--ink-3)]'>
+			<div className='flex h-full w-full items-center justify-center bg-[var(--paper-2)] p-8 text-center text-[0.875rem] leading-[1.7] text-[var(--ink-3)]'>
 				The map needs WebGL2, which this browser does not provide. Every incident is listed with its sources.
 			</div>
 		)

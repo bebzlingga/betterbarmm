@@ -32,12 +32,12 @@ export function PlacesCatalogue() {
 				) : null}
 				<span aria-hidden='true' className='absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgba(8,26,32,0.92),rgba(8,26,32,0.6)_55%,rgba(8,26,32,0.2))]' />
 				<div className='bb-container py-24 lg:py-32'>
-					<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[#9fd6cf]'>
+					<p className='font-mono text-[0.65625rem] font-semibold uppercase tracking-[0.14em] text-[#9fd6cf]'>
 						{places.length} places · {areas} areas
 					</p>
 					{/* One line at every width, sized to the screen. */}
 					<h1 className='mt-3 text-[clamp(1.75rem,6vw,5rem)] font-extrabold leading-[1] tracking-[-0.035em] whitespace-nowrap'>Places of the Bangsamoro</h1>
-					<p className='mt-5 max-w-xl text-[17px] leading-[1.6] text-white/85'>
+					<p className='mt-5 max-w-xl text-[1.0625rem] leading-[1.6] text-white/85'>
 						Islands and white sand, lakes in the highlands, mosques, falls and the old forts and houses of the sultanates: what is there, how to get there, and what to know before you go.
 					</p>
 				</div>
@@ -53,7 +53,7 @@ export function PlacesCatalogue() {
 						.filter(([id]) => places.some((p) => p.area === id))
 						.map(([id, label]) => ({ id, label }))}
 				/>
-				<p className='mt-16 text-[12.5px] leading-[1.7] text-[#4d6670]'>
+				<p className='mt-16 text-[0.78125rem] leading-[1.7] text-[#4d6670]'>
 					Every place is traced to the pages it came from, and the guide’s own entries are the travel workspace’s. Photos are from Wikimedia Commons or English Wikipedia under free licences, each credited on the photo. {Object.keys(AREA).length} areas: Basilan, Lanao del Sur, Maguindanao del Norte and del Sur, Tawi-Tawi, Cotabato City and the Special Geographic Area.
 				</p>
 			</div>

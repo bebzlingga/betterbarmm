@@ -46,7 +46,7 @@ export default function TravelHome() {
 					/>
 
 					<Rise delay={0.25} distance={14}>
-						<p className='mt-8 text-[15px] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>
+						<p className='mt-8 text-[0.9375rem] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>
 							The oldest mosque in the country, kilometres of sandbar, a lake with its own fish, and the
 							least written-about food in the Philippines. This guide says what it knows, names what it
 							does not, and never averages the region into one answer.
@@ -178,11 +178,11 @@ export default function TravelHome() {
 
 									<h3 className='item-title-lg mt-4'>{area.name}</h3>
 
-									<p className='mt-3 flex-1 text-[14px] leading-7 text-[var(--ink-2)]'>
+									<p className='mt-3 flex-1 text-[0.875rem] leading-7 text-[var(--ink-2)]'>
 										{area.tagline}
 									</p>
 
-									<p className='mt-5 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+									<p className='mt-5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 										Base · {area.base}
 									</p>
 								</Link>
@@ -249,7 +249,7 @@ export default function TravelHome() {
 										<article className='tv-card'>
 											<span className='tv-kind'>{dish.tradition}</span>
 											<h3 className='item-title-lg mt-3'>{dish.name}</h3>
-											<p className='mt-3 text-[14px] leading-7 text-[var(--ink-2)]'>{dish.summary}</p>
+											<p className='mt-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{dish.summary}</p>
 										</article>
 									</div>
 								</StaggerItem>
@@ -280,7 +280,7 @@ export default function TravelHome() {
 						{planSections.map((section) => (
 							<Link key={section.slug} href={`/plan#${section.slug}`} className='group'>
 								<p className='bb-label'>{section.title}</p>
-								<p className='mt-3 text-[14px] leading-7 text-[var(--ink-2)]'>{section.lede}</p>
+								<p className='mt-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{section.lede}</p>
 							</Link>
 						))}
 					</div>
@@ -291,10 +291,10 @@ export default function TravelHome() {
 							{festivals.map((festival) => (
 								<div key={festival.name}>
 									<p className='item-title'>{festival.name}</p>
-									<p className='mt-1 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
+									<p className='mt-1 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
 										{festival.when}
 									</p>
-									<p className='mt-2.5 text-[13.5px] leading-6 text-[var(--ink-3)]'>{festival.what}</p>
+									<p className='mt-2.5 text-[0.84375rem] leading-6 text-[var(--ink-3)]'>{festival.what}</p>
 								</div>
 							))}
 						</div>

@@ -35,7 +35,7 @@ import type { SceneBarangay, SceneFocus, SceneStyle } from './map-scene'
 
 const MapScene = dynamic(() => import('./map-scene'), {
 	ssr: false,
-	loading: () => <p className='absolute inset-0 grid place-items-center text-[13px] text-[var(--ink-3)]'>Drawing the region…</p>,
+	loading: () => <p className='absolute inset-0 grid place-items-center text-[0.8125rem] text-[var(--ink-3)]'>Drawing the region…</p>,
 })
 
 type Level =
@@ -378,7 +378,7 @@ export function MapApp({ data }: { data: MapRegion }) {
 
 				{/* Layers and their key. */}
 				<div className='absolute left-4 top-14 w-[min(19rem,calc(100%-2rem))] border border-[var(--rule)] bg-[var(--paper)]/95 p-3 shadow-sm backdrop-blur'>
-					<p className='font-mono text-[9.5px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>Show the towns by</p>
+					<p className='font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>Show the towns by</p>
 					<div role='radiogroup' aria-label='Map layer' className='mt-2 flex flex-wrap gap-1'>
 						{LAYERS.map((l) => (
 							<button
@@ -387,17 +387,17 @@ export function MapApp({ data }: { data: MapRegion }) {
 								role='radio'
 								aria-checked={layer === l.id}
 								onClick={() => setLayer(l.id)}
-								className='cursor-pointer border px-2 py-1 text-[11.5px] font-semibold transition aria-checked:border-[var(--ink)] aria-checked:bg-[var(--ink)] aria-checked:text-[var(--paper)] border-[var(--rule)] text-[var(--ink-2)] hover:border-[var(--ink)]'
+								className='cursor-pointer border px-2 py-1 text-[0.71875rem] font-semibold transition aria-checked:border-[var(--ink)] aria-checked:bg-[var(--ink)] aria-checked:text-[var(--paper)] border-[var(--rule)] text-[var(--ink-2)] hover:border-[var(--ink)]'
 							>
 								{l.label}
 							</button>
 						))}
 					</div>
-					<p className='mt-2.5 text-[11.5px] leading-[1.5] text-[var(--ink-3)]'>{layerNote}</p>
+					<p className='mt-2.5 text-[0.71875rem] leading-[1.5] text-[var(--ink-3)]'>{layerNote}</p>
 					{legend ? (
 						<div className='mt-2'>
 							<div className='h-2' style={{ background: `linear-gradient(90deg, ${legend.from}, ${legend.to})` }} />
-							<div className='num mt-1 flex justify-between text-[10.5px] text-[var(--ink-3)]'>
+							<div className='num mt-1 flex justify-between text-[0.65625rem] text-[var(--ink-3)]'>
 								<span>{legend.min}</span>
 								<span>{legend.max}</span>
 							</div>
@@ -405,7 +405,7 @@ export function MapApp({ data }: { data: MapRegion }) {
 					) : layer === 'election' ? (
 						<ul className='mt-2 grid gap-1'>
 							{data.parties.map((p) => (
-								<li key={p.id} className='flex items-center gap-2 text-[11.5px]'>
+								<li key={p.id} className='flex items-center gap-2 text-[0.71875rem]'>
 									<span
 										aria-hidden='true'
 										className='size-2.5 shrink-0 border border-[var(--rule)]'
@@ -431,7 +431,7 @@ export function MapApp({ data }: { data: MapRegion }) {
 								animate={{ opacity: 1, y: 0 }}
 								exit={{ opacity: 0 }}
 								transition={{ duration: 0.15 }}
-								className='border border-[var(--rule)] bg-[var(--paper)] px-3 py-1.5 text-[13px] font-semibold text-[var(--ink)] shadow-sm'
+								className='border border-[var(--rule)] bg-[var(--paper)] px-3 py-1.5 text-[0.8125rem] font-semibold text-[var(--ink)] shadow-sm'
 							>
 								{hoverText.name}
 								{hoverText.extra ? <span className='ml-2 font-normal text-[var(--ink-3)]'>{hoverText.extra}</span> : null}
@@ -442,7 +442,7 @@ export function MapApp({ data }: { data: MapRegion }) {
 					</AnimatePresence>
 
 					<div className='pointer-events-auto flex items-center gap-1.5'>
-						<p className='hidden border border-[var(--rule)] bg-[var(--paper)] px-3 py-1.5 text-[12px] text-[var(--ink-2)] sm:block'>
+						<p className='hidden border border-[var(--rule)] bg-[var(--paper)] px-3 py-1.5 text-[0.75rem] text-[var(--ink-2)] sm:block'>
 							<span className='num font-semibold text-[var(--ink)]'>{explored.size}</span> of {data.units.length}{' '}
 							towns explored
 						</p>
@@ -492,9 +492,9 @@ export function MapApp({ data }: { data: MapRegion }) {
 						) : level.kind === 'area' ? (
 							<AreaPanel area={areaOf(level.area)!} units={data.units} onUnit={goUnit} />
 						) : failed ? (
-							<p className='text-[14px] text-[var(--ink-3)]'>This town could not be loaded. Zoom out and try again.</p>
+							<p className='text-[0.875rem] text-[var(--ink-3)]'>This town could not be loaded. Zoom out and try again.</p>
 						) : !ready ? (
-							<p className='text-[14px] text-[var(--ink-3)]'>Loading…</p>
+							<p className='text-[0.875rem] text-[var(--ink-3)]'>Loading…</p>
 						) : level.kind === 'unit' ? (
 							<UnitPanel
 								detail={detail}
@@ -542,7 +542,7 @@ function RegionPanel({
 			<h2 className='mt-4 text-[1.8rem] font-extrabold leading-[1.05] tracking-[-0.035em]'>
 				Pick a town. Then a barangay.
 			</h2>
-			<p className='mt-3 text-[14px] leading-[1.7] text-[var(--ink-2)]'>
+			<p className='mt-3 text-[0.875rem] leading-[1.7] text-[var(--ink-2)]'>
 				{data.units.length} towns are drawn and {figure(total)} people live in them and the rest of the region. Click any
 				town to fly in and see its officials, budget, vote, travel guide and every barangay. Drag to move, right-drag to
 				turn, scroll to zoom.
@@ -555,7 +555,7 @@ function RegionPanel({
 					value={query}
 					onChange={(event) => setQuery(event.target.value)}
 					placeholder='Find a town'
-					className='w-full bg-transparent text-[14px] outline-none'
+					className='w-full bg-transparent text-[0.875rem] outline-none'
 				/>
 			</label>
 			{matches.length ? (
@@ -565,10 +565,10 @@ function RegionPanel({
 							<button
 								type='button'
 								onClick={() => onUnit(m.area, m.slug)}
-								className='flex w-full cursor-pointer items-baseline justify-between gap-3 border-b border-[var(--rule-soft)] px-3 py-2 text-left text-[14px] last:border-b-0 hover:bg-[var(--paper-2)]'
+								className='flex w-full cursor-pointer items-baseline justify-between gap-3 border-b border-[var(--rule-soft)] px-3 py-2 text-left text-[0.875rem] last:border-b-0 hover:bg-[var(--paper-2)]'
 							>
 								<span className='font-semibold'>{m.name}</span>
-								<span className='text-[12px] text-[var(--ink-3)]'>{m.areaName}</span>
+								<span className='text-[0.75rem] text-[var(--ink-3)]'>{m.areaName}</span>
 							</button>
 						</li>
 					))}
@@ -580,12 +580,12 @@ function RegionPanel({
 					{data.parties.map((p) => (
 						<li key={p.id} className='flex items-center gap-3 border-b border-[var(--rule-soft)] py-2'>
 							<span aria-hidden='true' className='size-3 shrink-0 border border-[var(--rule)]' style={{ background: p.color ?? 'var(--paper-2)' }} />
-							<span className='flex-1 text-[13.5px]'>{p.label}</span>
-							<span className='num text-[12px] text-[var(--ink-3)]'>{p.seats}</span>
+							<span className='flex-1 text-[0.84375rem]'>{p.label}</span>
+							<span className='num text-[0.75rem] text-[var(--ink-3)]'>{p.seats}</span>
 						</li>
 					))}
 				</ul>
-				<p className='mt-2 text-[12px] leading-5 text-[var(--ink-3)]'>Switch the map to “2026 vote” to see where each was won.</p>
+				<p className='mt-2 text-[0.75rem] leading-5 text-[var(--ink-3)]'>Switch the map to “2026 vote” to see where each was won.</p>
 			</Section>
 
 			<Section title='Areas'>
@@ -598,14 +598,14 @@ function RegionPanel({
 								className='group flex w-full cursor-pointer items-center gap-3 border-b border-[var(--rule-soft)] py-2.5 text-left'
 							>
 								<span aria-hidden='true' className='size-3 shrink-0' style={{ background: tint(a.slug) }} />
-								<span className='flex-1 text-[14px] font-semibold group-hover:text-[var(--accent)]'>{a.name}</span>
-								<span className='num text-[12px] text-[var(--ink-3)]'>{a.towns} {a.towns === 1 ? 'city' : 'towns'}</span>
+								<span className='flex-1 text-[0.875rem] font-semibold group-hover:text-[var(--accent)]'>{a.name}</span>
+								<span className='num text-[0.75rem] text-[var(--ink-3)]'>{a.towns} {a.towns === 1 ? 'city' : 'towns'}</span>
 							</button>
 						</li>
 					))}
 				</ul>
 			</Section>
-			<p className='mt-6 text-[12px] leading-5 text-[var(--ink-3)]'>
+			<p className='mt-6 text-[0.75rem] leading-5 text-[var(--ink-3)]'>
 				Outlines from{' '}
 				<a href={data.source.href} target='_blank' rel='noreferrer' className='underline underline-offset-4'>
 					{data.source.label}
@@ -630,7 +630,7 @@ function AreaPanel({
 		<>
 			<p className='bb-label'>{area.kind}</p>
 			<h2 className='mt-4 text-[2rem] font-extrabold leading-[1.05] tracking-[-0.035em]'>{area.name}</h2>
-			{area.tagline ? <p className='mt-3 text-[14px] leading-[1.7] text-[var(--ink-2)]'>{area.tagline}</p> : null}
+			{area.tagline ? <p className='mt-3 text-[0.875rem] leading-[1.7] text-[var(--ink-2)]'>{area.tagline}</p> : null}
 
 			<Stats
 				items={[
@@ -660,7 +660,7 @@ function AreaPanel({
 							[`FY ${area.spending.latestYear}, ${area.spending.projects} projects`, area.spending.latest],
 						]}
 					/>
-					<p className='mt-3 text-[12px] leading-5 text-[var(--ink-3)]'>
+					<p className='mt-3 text-[0.75rem] leading-5 text-[var(--ink-3)]'>
 						Regional construction naming this area — not the area’s own budget.
 					</p>
 				</Section>
@@ -673,10 +673,10 @@ function AreaPanel({
 							<button
 								type='button'
 								onClick={() => onUnit(area.slug, u.slug)}
-								className='w-full cursor-pointer border-b border-[var(--rule-soft)] py-2 text-left text-[13.5px] hover:text-[var(--accent)]'
+								className='w-full cursor-pointer border-b border-[var(--rule-soft)] py-2 text-left text-[0.84375rem] hover:text-[var(--accent)]'
 							>
 								{u.name}
-								{drawn.has(u.slug) ? null : <span className='ml-1 text-[11px] text-[var(--ink-mute)]'>· no outline</span>}
+								{drawn.has(u.slug) ? null : <span className='ml-1 text-[0.6875rem] text-[var(--ink-mute)]'>· no outline</span>}
 							</button>
 						</li>
 					))}
@@ -723,7 +723,7 @@ function UnitPanel({
 			</p>
 			<h2 className='mt-4 text-[2rem] font-extrabold leading-[1.05] tracking-[-0.035em]'>{detail.name}</h2>
 			{detail.alsoKnownAs ? (
-				<p className='mt-2 text-[13px] text-[var(--ink-3)]'>Also known as {detail.alsoKnownAs}</p>
+				<p className='mt-2 text-[0.8125rem] text-[var(--ink-3)]'>Also known as {detail.alsoKnownAs}</p>
 			) : null}
 
 			{/* Tabs: one row, scrolling sideways on a narrow panel rather than wrapping. */}
@@ -735,10 +735,10 @@ function UnitPanel({
 						role='tab'
 						aria-selected={tab === t.id}
 						onClick={() => setTab(t.id)}
-						className='relative shrink-0 cursor-pointer px-2.5 py-2 text-[12.5px] font-semibold text-[var(--ink-3)] transition hover:text-[var(--ink)] aria-selected:text-[var(--ink)]'
+						className='relative shrink-0 cursor-pointer px-2.5 py-2 text-[0.78125rem] font-semibold text-[var(--ink-3)] transition hover:text-[var(--ink)] aria-selected:text-[var(--ink)]'
 					>
 						{t.label}
-						{t.count ? <span className='num ml-1 text-[10.5px] text-[var(--ink-mute)]'>{t.count}</span> : null}
+						{t.count ? <span className='num ml-1 text-[0.65625rem] text-[var(--ink-mute)]'>{t.count}</span> : null}
 						{tab === t.id ? (
 							<motion.span layoutId='map-tab' className='absolute inset-x-1 -bottom-px h-0.5 bg-[var(--accent)]' />
 						) : null}
@@ -770,10 +770,10 @@ function UnitPanel({
 								{detail.officials.length ? (
 									<Rows rows={detail.officials.map((o) => [o.role, `${o.name}${o.party ? ` · ${o.party}` : ''}`])} />
 								) : (
-									<p className='text-[13px] text-[var(--ink-3)]'>COMELEC recorded no canvass for this town this term.</p>
+									<p className='text-[0.8125rem] text-[var(--ink-3)]'>COMELEC recorded no canvass for this town this term.</p>
 								)}
 								{detail.council.length ? (
-									<p className='mt-3 text-[13px] leading-6 text-[var(--ink-2)]'>
+									<p className='mt-3 text-[0.8125rem] leading-6 text-[var(--ink-2)]'>
 										<span className='text-[var(--ink-3)]'>Council: </span>
 										{detail.council.join(', ')}
 									</p>
@@ -781,7 +781,7 @@ function UnitPanel({
 							</Section>
 
 							<Section title={`Barangays (${detail.barangays.length})`}>
-								<p className='text-[13px] leading-6 text-[var(--ink-2)]'>
+								<p className='text-[0.8125rem] leading-6 text-[var(--ink-2)]'>
 									DILG’s directory names a captain for{' '}
 									<span className='font-semibold text-[var(--ink)]'>
 										{detail.captainsListed} of {detail.barangays.length}
@@ -795,7 +795,7 @@ function UnitPanel({
 										value={filter}
 										onChange={(event) => setFilter(event.target.value)}
 										placeholder='Find a barangay'
-										className='w-full bg-transparent text-[13.5px] outline-none'
+										className='w-full bg-transparent text-[0.84375rem] outline-none'
 									/>
 								</label>
 								<ul className='mt-2 max-h-72 overflow-y-auto'>
@@ -804,10 +804,10 @@ function UnitPanel({
 											<button
 												type='button'
 												onClick={() => onBarangay(index)}
-												className='flex w-full cursor-pointer items-baseline justify-between gap-3 border-b border-[var(--rule-soft)] py-2 text-left text-[13.5px] hover:text-[var(--accent)]'
+												className='flex w-full cursor-pointer items-baseline justify-between gap-3 border-b border-[var(--rule-soft)] py-2 text-left text-[0.84375rem] hover:text-[var(--accent)]'
 											>
 												<span>{b.name}</span>
-												<span className='truncate text-[12px] text-[var(--ink-3)]'>{b.captain ?? '—'}</span>
+												<span className='truncate text-[0.75rem] text-[var(--ink-3)]'>{b.captain ?? '—'}</span>
 											</button>
 										</li>
 									))}
@@ -827,22 +827,22 @@ function UnitPanel({
 								<ul>
 									{detail.foods.map((f) => (
 										<li key={f.name} className='border-b border-[var(--rule-soft)] py-3'>
-											<p className='text-[14px] font-semibold'>
+											<p className='text-[0.875rem] font-semibold'>
 												{f.name}{' '}
-												<span className='text-[12px] font-normal text-[var(--ink-3)]'>
+												<span className='text-[0.75rem] font-normal text-[var(--ink-3)]'>
 													· {f.tradition}
 													{f.essential ? ' · essential' : ''}
 												</span>
 											</p>
-											<p className='mt-1 text-[13px] leading-5 text-[var(--ink-2)]'>{f.summary}</p>
-											<p className='mt-1 text-[12px] leading-5 text-[var(--ink-3)]'>{f.whereToFind}</p>
+											<p className='mt-1 text-[0.8125rem] leading-5 text-[var(--ink-2)]'>{f.summary}</p>
+											<p className='mt-1 text-[0.75rem] leading-5 text-[var(--ink-3)]'>{f.whereToFind}</p>
 										</li>
 									))}
 								</ul>
 							) : (
-								<p className='text-[13px] text-[var(--ink-3)]'>No dish in the guide is tied to the traditions spoken here.</p>
+								<p className='text-[0.8125rem] text-[var(--ink-3)]'>No dish in the guide is tied to the traditions spoken here.</p>
 							)}
-							<p className='mt-3 text-[12px] leading-5 text-[var(--ink-3)]'>
+							<p className='mt-3 text-[0.75rem] leading-5 text-[var(--ink-3)]'>
 								Dishes of the culinary traditions of the languages spoken in {detail.area.name}, from the travel guide.
 							</p>
 						</Section>
@@ -862,7 +862,7 @@ function UnitPanel({
 								{r.bills.length ? (
 									<Measures items={r.bills} label='Bill' />
 								) : (
-									<p className='text-[13px] text-[var(--ink-3)]'>No bill names it.</p>
+									<p className='text-[0.8125rem] text-[var(--ink-3)]'>No bill names it.</p>
 								)}
 							</Section>
 						</>
@@ -873,7 +873,7 @@ function UnitPanel({
 								{r.resolutions.length ? (
 									<Measures items={r.resolutions} label='Res.' />
 								) : (
-									<p className='text-[13px] text-[var(--ink-3)]'>No adopted resolution names it.</p>
+									<p className='text-[0.8125rem] text-[var(--ink-3)]'>No adopted resolution names it.</p>
 								)}
 							</Section>
 						</>
@@ -898,10 +898,10 @@ function TravelTab({
 		<ul>
 			{items.map((p) => (
 				<li key={p.name} className='border-b border-[var(--rule-soft)] py-3'>
-					<p className='text-[14px] font-semibold'>
-						{p.name} <span className='text-[12px] font-normal text-[var(--ink-3)]'>· {p.kind}</span>
+					<p className='text-[0.875rem] font-semibold'>
+						{p.name} <span className='text-[0.75rem] font-normal text-[var(--ink-3)]'>· {p.kind}</span>
 					</p>
-					<p className='mt-1 text-[13px] leading-5 text-[var(--ink-2)]'>{p.summary ?? p.note}</p>
+					<p className='mt-1 text-[0.8125rem] leading-5 text-[var(--ink-2)]'>{p.summary ?? p.note}</p>
 				</li>
 			))}
 		</ul>
@@ -910,23 +910,23 @@ function TravelTab({
 		<>
 			{t ? (
 				<>
-					<p className='mt-6 text-[13.5px] leading-6 text-[var(--ink-2)]'>{t.summary}</p>
+					<p className='mt-6 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>{t.summary}</p>
 					{t.peoples.length ? (
-						<p className='mt-2 text-[12.5px] text-[var(--ink-3)]'>Peoples: {t.peoples.join(', ')}</p>
+						<p className='mt-2 text-[0.78125rem] text-[var(--ink-3)]'>Peoples: {t.peoples.join(', ')}</p>
 					) : null}
 					{t.caution ? (
-						<p className='mt-4 border-l-2 border-[var(--accent)] bg-[var(--paper-2)] px-3 py-2 text-[12.5px] leading-5 text-[var(--ink-2)]'>
+						<p className='mt-4 border-l-2 border-[var(--accent)] bg-[var(--paper-2)] px-3 py-2 text-[0.78125rem] leading-5 text-[var(--ink-2)]'>
 							{t.caution}
 						</p>
 					) : null}
 					<Section title={`Where to go (${t.whereToGo.length})`}>
-						{t.whereToGo.length ? list(t.whereToGo) : <p className='text-[13px] text-[var(--ink-3)]'>No sourced place to visit.</p>}
+						{t.whereToGo.length ? list(t.whereToGo) : <p className='text-[0.8125rem] text-[var(--ink-3)]'>No sourced place to visit.</p>}
 					</Section>
 					{t.whatToDo.length ? (
 						<Section title='What to do'>
 							<ul className='grid gap-1.5'>
 								{t.whatToDo.map((x) => (
-									<li key={x} className='text-[13px] leading-5 text-[var(--ink-2)]'>
+									<li key={x} className='text-[0.8125rem] leading-5 text-[var(--ink-2)]'>
 										{x}
 									</li>
 								))}
@@ -934,14 +934,14 @@ function TravelTab({
 						</Section>
 					) : null}
 					<Section title={`Where to eat (${t.eat.length})`}>
-						{t.eat.length ? list(t.eat) : <p className='text-[13px] text-[var(--ink-3)]'>No eatery listed in any source.</p>}
+						{t.eat.length ? list(t.eat) : <p className='text-[0.8125rem] text-[var(--ink-3)]'>No eatery listed in any source.</p>}
 					</Section>
 					<Section title={`Where to stay (${t.stay.length})`}>
 						{t.stay.length ? list(t.stay) : null}
-						{t.stayNote ? <p className='mt-2 text-[13px] leading-5 text-[var(--ink-2)]'>{t.stayNote}</p> : null}
+						{t.stayNote ? <p className='mt-2 text-[0.8125rem] leading-5 text-[var(--ink-2)]'>{t.stayNote}</p> : null}
 					</Section>
 					<Section title='Getting there'>
-						<p className='text-[13px] leading-5 text-[var(--ink-2)]'>{t.gettingThere}</p>
+						<p className='text-[0.8125rem] leading-5 text-[var(--ink-2)]'>{t.gettingThere}</p>
 					</Section>
 					<a href={t.href} className='bb-btn bb-btn-solid mt-8'>
 						Town guide, with sources
@@ -949,7 +949,7 @@ function TravelTab({
 					</a>
 				</>
 			) : (
-				<p className='mt-6 text-[13px] text-[var(--ink-3)]'>The travel guide has no entry for this town yet.</p>
+				<p className='mt-6 text-[0.8125rem] text-[var(--ink-3)]'>The travel guide has no entry for this town yet.</p>
 			)}
 			{elsewhere.length ? (
 				<Section title={`Elsewhere in ${detail.area.name}`}>
@@ -957,7 +957,7 @@ function TravelTab({
 				</Section>
 			) : null}
 			{knownFor.length ? (
-				<p className='mt-4 text-[13px] leading-6 text-[var(--ink-3)]'>
+				<p className='mt-4 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 					{detail.area.name} is known for: {knownFor.join('; ')}.
 				</p>
 			) : null}
@@ -967,10 +967,10 @@ function TravelTab({
 
 function ElectionTab({ detail }: { detail: MapUnitDetail }) {
 	const e = detail.election
-	if (!e) return <p className='mt-6 text-[13px] text-[var(--ink-3)]'>No parliamentary district is on file for this town.</p>
+	if (!e) return <p className='mt-6 text-[0.8125rem] text-[var(--ink-3)]'>No parliamentary district is on file for this town.</p>
 	return (
 		<>
-			<p className='mt-6 text-[13px] leading-6 text-[var(--ink-2)]'>
+			<p className='mt-6 text-[0.8125rem] leading-6 text-[var(--ink-2)]'>
 				{detail.name} votes in {e.districts.length === 1 ? e.districts[0].label : `${e.districts.length} districts`} for the Bangsamoro
 				Parliament. Results are counted by district, not by town.
 				{e.note ? ` ${e.note}` : ''}
@@ -982,14 +982,14 @@ function ElectionTab({ detail }: { detail: MapUnitDetail }) {
 						<ul>
 							{d.candidates.map((c) => (
 								<li key={c.name} className='border-b border-[var(--rule-soft)] py-2.5'>
-									<p className='flex items-baseline justify-between gap-3 text-[13.5px]'>
+									<p className='flex items-baseline justify-between gap-3 text-[0.84375rem]'>
 										<span className={c.won ? 'font-semibold' : ''}>
 											{c.name}
-											{c.won ? <span className='ml-1.5 text-[11px] font-semibold text-[var(--accent)]'>Won</span> : null}
+											{c.won ? <span className='ml-1.5 text-[0.6875rem] font-semibold text-[var(--accent)]'>Won</span> : null}
 										</span>
-										<span className='num text-[12px] text-[var(--ink-3)]'>{c.votes.toLocaleString('en-PH')}</span>
+										<span className='num text-[0.75rem] text-[var(--ink-3)]'>{c.votes.toLocaleString('en-PH')}</span>
 									</p>
-									<p className='mt-0.5 text-[12px] text-[var(--ink-3)]'>{c.party}</p>
+									<p className='mt-0.5 text-[0.75rem] text-[var(--ink-3)]'>{c.party}</p>
 									<div className='mt-1.5 h-1 bg-[var(--paper-2)]'>
 										<div
 											className='h-full'
@@ -999,7 +999,7 @@ function ElectionTab({ detail }: { detail: MapUnitDetail }) {
 								</li>
 							))}
 						</ul>
-						<p className='mt-2 num text-[12px] text-[var(--ink-3)]'>{d.totalVotes.toLocaleString('en-PH')} votes in the district</p>
+						<p className='mt-2 num text-[0.75rem] text-[var(--ink-3)]'>{d.totalVotes.toLocaleString('en-PH')} votes in the district</p>
 					</Section>
 				)
 			})}
@@ -1011,7 +1011,7 @@ function ElectionTab({ detail }: { detail: MapUnitDetail }) {
 					]}
 				/>
 			</Section>
-			<p className='mt-4 text-[12px] leading-5 text-[var(--ink-3)]'>
+			<p className='mt-4 text-[0.75rem] leading-5 text-[var(--ink-3)]'>
 				Districts from{' '}
 				<a href={e.source.href} target='_blank' rel='noreferrer' className='underline underline-offset-4'>
 					{e.source.label}
@@ -1028,7 +1028,7 @@ function ElectionTab({ detail }: { detail: MapUnitDetail }) {
 
 function ScopeNote({ detail }: { detail: MapUnitDetail }) {
 	return (
-		<p className='mt-6 text-[12.5px] leading-5 text-[var(--ink-3)]'>
+		<p className='mt-6 text-[0.78125rem] leading-5 text-[var(--ink-3)]'>
 			{detail.related.scope === 'town'
 				? `Measures whose titles name ${detail.name}.`
 				: `No measure’s title names ${detail.name}, so these are the ones naming ${detail.area.name}.`}
@@ -1042,17 +1042,17 @@ function Measures({ items, label }: { items: MapMeasure[]; label: string }) {
 			{items.map((m) => (
 				<li key={m.number} className='border-b border-[var(--rule-soft)] py-3'>
 					<a href={m.href} target='_blank' rel='noreferrer' className='group block'>
-						<p className='flex items-baseline justify-between gap-3 text-[11px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)]'>
+						<p className='flex items-baseline justify-between gap-3 text-[0.6875rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)]'>
 							<span>
 								{label} {m.number}
 								{m.status ? ` · ${m.status}` : ''}
 							</span>
 							<ArrowUpRightIcon className='size-3 shrink-0 transition group-hover:text-[var(--accent)]' aria-hidden='true' />
 						</p>
-						<p className='mt-1 text-[13.5px] font-semibold leading-snug transition group-hover:text-[var(--accent)]'>
+						<p className='mt-1 text-[0.84375rem] font-semibold leading-snug transition group-hover:text-[var(--accent)]'>
 							{m.title}
 						</p>
-						{m.summary ? <p className='mt-1 text-[12.5px] leading-5 text-[var(--ink-2)]'>{m.summary}</p> : null}
+						{m.summary ? <p className='mt-1 text-[0.78125rem] leading-5 text-[var(--ink-2)]'>{m.summary}</p> : null}
 					</a>
 				</li>
 			))}
@@ -1065,7 +1065,7 @@ function BudgetTab({ detail }: { detail: MapUnitDetail }) {
 	return (
 		<>
 			<Section title='National Tax Allotment (NTA / IRA)'>
-				<p className='text-[13px] leading-6 text-[var(--ink-2)]'>
+				<p className='text-[0.8125rem] leading-6 text-[var(--ink-2)]'>
 					The town’s share of national taxes — the IRA before the Mandanas ruling, and for most towns here nearly all
 					of the money they have.
 				</p>
@@ -1076,7 +1076,7 @@ function BudgetTab({ detail }: { detail: MapUnitDetail }) {
 						/>
 						<ul className='mt-3'>
 							{n.years.at(-1)?.perResident ? (
-								<li className='flex gap-4 border-b border-[var(--rule-soft)] py-2 text-[13.5px]'>
+								<li className='flex gap-4 border-b border-[var(--rule-soft)] py-2 text-[0.84375rem]'>
 									<span className='w-32 shrink-0 text-[var(--ink-3)]'>Per resident</span>
 									<span>
 										{n.years.at(-1)!.perResident} a year, FY {n.years.at(-1)!.year}
@@ -1084,13 +1084,13 @@ function BudgetTab({ detail }: { detail: MapUnitDetail }) {
 								</li>
 							) : null}
 							{n.change ? (
-								<li className='flex gap-4 border-b border-[var(--rule-soft)] py-2 text-[13.5px]'>
+								<li className='flex gap-4 border-b border-[var(--rule-soft)] py-2 text-[0.84375rem]'>
 									<span className='w-32 shrink-0 text-[var(--ink-3)]'>Change</span>
 									<span>{n.change}</span>
 								</li>
 							) : null}
 							{n.province ? (
-								<li className='flex gap-4 border-b border-[var(--rule-soft)] py-2 text-[13.5px]'>
+								<li className='flex gap-4 border-b border-[var(--rule-soft)] py-2 text-[0.84375rem]'>
 									<span className='w-32 shrink-0 text-[var(--ink-3)]'>{n.province.name}</span>
 									<span>
 										{n.province.latest} to the provincial government, FY {n.province.year}
@@ -1098,7 +1098,7 @@ function BudgetTab({ detail }: { detail: MapUnitDetail }) {
 								</li>
 							) : null}
 						</ul>
-						<p className='mt-3 text-[12px] leading-5 text-[var(--ink-3)]'>
+						<p className='mt-3 text-[0.75rem] leading-5 text-[var(--ink-3)]'>
 							{n.note}{' '}
 							<a href={n.source.href} target='_blank' rel='noreferrer' className='underline underline-offset-4'>
 								{n.source.label}
@@ -1107,7 +1107,7 @@ function BudgetTab({ detail }: { detail: MapUnitDetail }) {
 						</p>
 					</>
 				) : (
-					<p className='mt-3 text-[13px] leading-6 text-[var(--ink-3)]'>
+					<p className='mt-3 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 						No NTA reported for this town. The Special Geographic Area’s towns, created in 2024, are not in BLGF’s
 						statements yet.
 					</p>
@@ -1121,7 +1121,7 @@ function BudgetTab({ detail }: { detail: MapUnitDetail }) {
 							[`FY ${detail.spending.latestYear}, ${detail.spending.projects} projects`, detail.spending.latest],
 						]}
 					/>
-					<p className='mt-3 text-[12px] leading-5 text-[var(--ink-3)]'>
+					<p className='mt-3 text-[0.75rem] leading-5 text-[var(--ink-3)]'>
 						The Bangsamoro Government’s itemised construction naming the area — regional money landing there, not the
 						town’s own budget.
 					</p>
@@ -1154,7 +1154,7 @@ function BarangayPanel({
 				Barangay · {detail.name}, {detail.area.name}
 			</p>
 			<h2 className='mt-4 text-[2rem] font-extrabold leading-[1.05] tracking-[-0.035em]'>{b.name}</h2>
-			<p className='mt-2 num text-[12px] text-[var(--ink-3)]'>
+			<p className='mt-2 num text-[0.75rem] text-[var(--ink-3)]'>
 				{index + 1} of {count}
 				{b.psgc ? ` · PSGC ${b.psgc}` : ''}
 				{b.d ? '' : ' · no outline in the boundary edition'}
@@ -1173,12 +1173,12 @@ function BarangayPanel({
 						/>
 						{b.council.length ? (
 							<>
-								<p className='mt-4 text-[12px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
+								<p className='mt-4 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
 									Council ({b.council.length})
 								</p>
 								<ul className='mt-1'>
 									{b.council.map((name) => (
-										<li key={name} className='border-b border-[var(--rule-soft)] py-1.5 text-[13.5px]'>
+										<li key={name} className='border-b border-[var(--rule-soft)] py-1.5 text-[0.84375rem]'>
 											{name}
 										</li>
 									))}
@@ -1187,12 +1187,12 @@ function BarangayPanel({
 						) : null}
 					</>
 				) : (
-					<p className='text-[13px] leading-6 text-[var(--ink-3)]'>
+					<p className='text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 						DILG’s directory has no roster for this barangay — a gap in the directory, not a barangay without
 						officials.
 					</p>
 				)}
-				<p className='mt-4 text-[12px] leading-5 text-[var(--ink-3)]'>
+				<p className='mt-4 text-[0.75rem] leading-5 text-[var(--ink-3)]'>
 					From{' '}
 					<a href={detail.rostersSource} target='_blank' rel='noreferrer' className='underline underline-offset-4'>
 						DILG’s barangay officials directory
@@ -1233,7 +1233,7 @@ function Crumb({ children, onClick, active }: { children: React.ReactNode; onCli
 			type='button'
 			onClick={onClick}
 			disabled={active}
-			className={`pointer-events-auto border px-2.5 py-1 text-[12px] font-semibold shadow-sm transition ${
+			className={`pointer-events-auto border px-2.5 py-1 text-[0.75rem] font-semibold shadow-sm transition ${
 				active
 					? 'border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)]'
 					: 'cursor-pointer border-[var(--rule)] bg-[var(--paper)] text-[var(--ink-2)] hover:border-[var(--ink)]'
@@ -1261,7 +1261,7 @@ function HudButton({ label, onClick, children }: { label: string; onClick: () =>
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
 	return (
 		<section className='mt-8'>
-			<h3 className='border-b border-[var(--brass-line)] pb-2.5 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--ink)]'>
+			<h3 className='border-b border-[var(--brass-line)] pb-2.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--ink)]'>
 				{title}
 			</h3>
 			<div className='mt-2'>{children}</div>
@@ -1273,7 +1273,7 @@ function Rows({ rows }: { rows: [string, string][] }) {
 	return (
 		<ul>
 			{rows.map(([label, value]) => (
-				<li key={label} className='flex gap-4 border-b border-[var(--rule-soft)] py-2 text-[13.5px]'>
+				<li key={label} className='flex gap-4 border-b border-[var(--rule-soft)] py-2 text-[0.84375rem]'>
 					<span className='w-32 shrink-0 text-[var(--ink-3)]'>{label}</span>
 					<span className='min-w-0'>{value}</span>
 				</li>
@@ -1288,7 +1288,7 @@ function Stats({ items }: { items: [string, string][] }) {
 			{items.map(([label, value]) => (
 				<div key={label} className='border-b border-[var(--rule)] py-3 pr-3'>
 					<dd className='num text-[1.25rem] font-extrabold tracking-[-0.02em]'>{value}</dd>
-					<dt className='mt-0.5 font-mono text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+					<dt className='mt-0.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 						{label}
 					</dt>
 				</div>

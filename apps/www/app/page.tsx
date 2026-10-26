@@ -152,7 +152,7 @@ export default async function HomePage() {
 						/>
 
 						<Rise delay={0.3} distance={16}>
-							<p className='mx-auto mt-6 max-w-xl text-[15px] leading-7 text-[var(--ink-2)]'>
+							<p className='mx-auto mt-6 max-w-xl text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
 								Bills, budgets, elections, procurement and every local government in the region, readable and traced back to the source.
 							</p>
 						</Rise>
@@ -165,16 +165,16 @@ export default async function HomePage() {
 								{/* Fixed colours: inside the band, --paper and --ink are re-pointed to its crimson ground. */}
 								<span className='flex h-12 min-w-0 flex-1 items-center gap-3 bg-white px-4 text-[#191713]'>
 									<MagnifyingGlassIcon size={18} className='shrink-0 text-[#5c574c]' aria-hidden='true' />
-									<input id='home-search' name='q' placeholder='A bill, a town, a budget line, an official…' className='min-w-0 flex-1 bg-transparent text-[15px] outline-none placeholder:text-[#8a857a]' />
+									<input id='home-search' name='q' placeholder='A bill, a town, a budget line, an official…' className='min-w-0 flex-1 bg-transparent text-[0.9375rem] outline-none placeholder:text-[#8a857a]' />
 								</span>
-								<button type='submit' className='h-12 shrink-0 cursor-pointer border-l border-[#e7e2d8] bg-white px-5 text-[13px] font-semibold uppercase tracking-[0.12em] text-[#8f2328] transition hover:bg-[#f7f3ec]'>
+								<button type='submit' className='h-12 shrink-0 cursor-pointer border-l border-[#e7e2d8] bg-white px-5 text-[0.8125rem] font-semibold uppercase tracking-[0.12em] text-[#8f2328] transition hover:bg-[#f7f3ec]'>
 									Search
 								</button>
 							</form>
 						</Rise>
 
 						<Rise delay={0.5} distance={12}>
-							<p className='mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[14px] font-semibold'>
+							<p className='mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[0.875rem] font-semibold'>
 								<Link href='https://budget.betterbarmm.com' className='inline-flex items-center gap-1.5 text-[var(--ink)] underline decoration-white/40 underline-offset-4 hover:decoration-white'>
 									Open the Budget workspace <ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
 								</Link>
@@ -199,7 +199,7 @@ export default async function HomePage() {
 					<h2 className='text-[1.6rem] font-extrabold tracking-[-0.03em]'>
 						The workspaces <span className='text-[var(--ink-mute)]'>· {live} live</span>
 					</h2>
-					<p className='max-w-xl text-[13.5px] leading-6 text-[var(--ink-3)]'>Public records you can read, question, and trace back to the source.</p>
+					<p className='max-w-xl text-[0.84375rem] leading-6 text-[var(--ink-3)]'>Public records you can read, question, and trace back to the source.</p>
 				</div>
 				<div className='mt-6'>
 					<WorkspaceList workspaces={workspaces} />
@@ -215,7 +215,7 @@ export default async function HomePage() {
 						<h2 id='projects-title' className='text-[1.6rem] font-extrabold tracking-[-0.03em]'>
 							Projects <span className='text-[var(--ink-mute)]'>· {projects.filter((p) => p.state === 'live').length} live</span>
 						</h2>
-						<p className='max-w-xl text-[13.5px] leading-6 text-[var(--ink-3)]'>Records of another kind, each on a page of its own.</p>
+						<p className='max-w-xl text-[0.84375rem] leading-6 text-[var(--ink-3)]'>Records of another kind, each on a page of its own.</p>
 					</div>
 					<div className='mt-6'>
 						{/* Programs & services is hidden for now; only the live projects show. */}
@@ -232,7 +232,7 @@ export default async function HomePage() {
 							<h2 id='explainers-title' className='text-[1.6rem] font-extrabold tracking-[-0.03em]'>
 								Explainers
 							</h2>
-							<p className='flex flex-wrap items-baseline gap-x-5 gap-y-1 text-[13.5px] leading-6 text-[var(--ink-3)]'>
+							<p className='flex flex-wrap items-baseline gap-x-5 gap-y-1 text-[0.84375rem] leading-6 text-[var(--ink-3)]'>
 								How government works, in plain words.
 								<Link href='/explainers' className='inline-flex items-center gap-1.5 font-semibold text-[var(--ink)] underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
 									All explainers <ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
@@ -326,10 +326,10 @@ export default async function HomePage() {
 											suffix={stat.suffix ?? ''}
 										/>
 									</p>
-									<p className='mt-4 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--brass)]'>
+									<p className='mt-4 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--brass)]'>
 										{stat.label}
 									</p>
-									<p className='mt-2.5 text-[13.5px] leading-[var(--leading-body)] text-[var(--ink-2)]'>
+									<p className='mt-2.5 text-[0.84375rem] leading-[var(--leading-body)] text-[var(--ink-2)]'>
 										{stat.note}
 									</p>
 								</div>

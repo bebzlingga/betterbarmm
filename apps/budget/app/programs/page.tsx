@@ -33,7 +33,7 @@ export default async function ProgramsPage({ searchParams }: { searchParams: Pro
 				    the whole route falls out of prerendering. */}
 				<Suspense
 					fallback={
-						<p className='py-16 text-center font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+						<p className='py-16 text-center font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 							Loading {programs.length} programs…
 						</p>
 					}

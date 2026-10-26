@@ -121,7 +121,7 @@ export function ProjectBrowser({
 						autoComplete='off'
 						spellCheck={false}
 						placeholder='Your barangay, your town, “bridge”, “school building”…'
-						className='min-w-0 flex-1 bg-transparent text-[14.5px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+						className='min-w-0 flex-1 bg-transparent text-[0.90625rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 					/>
 				</label>
 
@@ -156,7 +156,7 @@ export function ProjectBrowser({
 
 			<p
 				aria-live='polite'
-				className='mt-5 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'
+				className='mt-5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'
 			>
 				<span className='money text-[var(--ink)]'>{hits.length}</span> of {projects.length} projects
 				· <span className='money text-[var(--brass)]'>{peso(found)}</span>
@@ -176,13 +176,13 @@ export function ProjectBrowser({
 							{/* +2px, and held to nine tenths of its cell: the Act writes a project as
 							    a whole sentence, so at the larger size the longest of them ran
 							    right up to the amount beside it. */}
-							<h2 className='mt-2.5 text-[16.5px] font-medium leading-relaxed text-[var(--ink)] lg:max-w-[90%]'>
+							<h2 className='mt-2.5 text-[1.03125rem] font-medium leading-relaxed text-[var(--ink)] lg:max-w-[90%]'>
 								{project.project}
 							</h2>
 						</div>
 
 						<p
-							className='money text-[15px] font-bold tracking-[-0.02em] text-[var(--ink)] lg:text-right'
+							className='money text-[0.9375rem] font-bold tracking-[-0.02em] text-[var(--ink)] lg:text-right'
 						>
 							{peso(project.amount)}
 						</p>
@@ -190,7 +190,7 @@ export function ProjectBrowser({
 				))}
 
 				{hits.length === 0 ? (
-					<p className='border-t border-[var(--rule)] py-16 text-center text-[13.5px] leading-7 text-[var(--ink-3)]'>
+					<p className='border-t border-[var(--rule)] py-16 text-center text-[0.84375rem] leading-7 text-[var(--ink-3)]'>
 						Nothing in the FY {fiscalYear} list is in “{query.trim()}”. That may simply mean
 						no project there was funded this year — this is one year of one ministry&rsquo;s
 						construction, not every public work in the region. Spellings also vary: try the

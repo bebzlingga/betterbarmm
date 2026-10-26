@@ -40,9 +40,9 @@ function Row({ s }: { s: Story }) {
 						<ArrowUpRightIcon className='ml-1.5 inline size-3.5 align-baseline text-[var(--ink-mute)] group-hover:text-[var(--accent)]' weight='bold' aria-hidden='true' />
 					</span>
 				</a>
-				{s.summary ? <p className='mt-2 text-[14px] leading-[1.7] text-[var(--ink-2)]'>{s.summary}</p> : null}
+				{s.summary ? <p className='mt-2 text-[0.875rem] leading-[1.7] text-[var(--ink-2)]'>{s.summary}</p> : null}
 				{s.also.length ? (
-					<p className='mt-2.5 flex flex-wrap items-baseline gap-x-3 gap-y-1 text-[13px]'>
+					<p className='mt-2.5 flex flex-wrap items-baseline gap-x-3 gap-y-1 text-[0.8125rem]'>
 						<span className='text-[var(--ink-3)]'>Also reported by</span>
 						{s.also.map((a) => (
 							<a key={a.url} href={a.url} target='_blank' rel='noreferrer' className='inline-flex items-center gap-0.5 font-semibold text-[var(--ink-2)] underline decoration-[var(--rule)] underline-offset-4 hover:text-[var(--accent)] hover:decoration-[var(--accent)]'>
@@ -52,7 +52,7 @@ function Row({ s }: { s: Story }) {
 					</p>
 				) : null}
 			</div>
-			<span className={`text-[12.5px] leading-[1.7] text-[var(--ink-3)] md:text-right ${pic ? 'col-start-2 md:col-start-auto' : ''}`}>
+			<span className={`text-[0.78125rem] leading-[1.7] text-[var(--ink-3)] md:text-right ${pic ? 'col-start-2 md:col-start-auto' : ''}`}>
 				<span className='block font-semibold text-[var(--ink-2)]'>{s.source}</span>
 				{s.time}
 			</span>
@@ -100,7 +100,7 @@ export function NewsList({ stories, head }: { stories: Story[]; head: React.Reac
 								onChange={(e) => setQ(e.target.value)}
 								placeholder='A town, a name, an outlet, a subject…'
 								aria-controls='news-results'
-								className='min-w-0 flex-1 bg-transparent text-[16px] outline-none placeholder:text-[#8a857a] [&::-webkit-search-cancel-button]:hidden'
+								className='min-w-0 flex-1 bg-transparent text-[1rem] outline-none placeholder:text-[#8a857a] [&::-webkit-search-cancel-button]:hidden'
 							/>
 							{q ? (
 								<button type='button' onClick={() => setQ('')} aria-label='Clear the search' className='grid size-7 shrink-0 cursor-pointer place-items-center rounded-full text-[#5c574c] hover:bg-[#f1ede6]'>
@@ -115,7 +115,7 @@ export function NewsList({ stories, head }: { stories: Story[]; head: React.Reac
 			<section id='news-results' aria-live='polite' className='bb-container bb-section'>
 				<div className='mx-auto max-w-5xl'>
 				{query.trim() ? (
-					<p className='mb-10 text-[13.5px] text-[var(--ink-3)]'>
+					<p className='mb-10 text-[0.84375rem] text-[var(--ink-3)]'>
 						{shown.length ? `${shown.length} ${shown.length === 1 ? 'story' : 'stories'} for “${query.trim()}”` : `Nothing this week matches “${query.trim()}”.`}
 					</p>
 				) : null}

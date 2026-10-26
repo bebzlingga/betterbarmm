@@ -52,7 +52,7 @@ export default async function ExplainerPage({ params }: Props) {
 						<p className='mx-auto mt-6 max-w-[54em] text-[1.05rem] leading-[1.6] text-[var(--ink-2)]'>{explainer.summary}</p>
 					) : null}
 					{explainer.published_at ? (
-						<p className='mt-6 text-[13px] text-[var(--ink-3)]'>
+						<p className='mt-6 text-[0.8125rem] text-[var(--ink-3)]'>
 							{[longDate(explainer.published_at), explainer.author ? `@${explainer.author}` : null].filter(Boolean).join(' · ')}
 						</p>
 					) : null}

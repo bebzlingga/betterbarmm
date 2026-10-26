@@ -189,13 +189,13 @@ export function TileMap({
 									style={{ left: Math.min(Math.max(x, 130), width - 130), top: Math.max(y - 48, 8), transform: 'translate(-50%, -100%)' }}
 									onPointerDown={(e) => e.stopPropagation()}
 								>
-									<p className='text-[13.5px] font-semibold leading-5 text-[var(--ink)]'>{p.name}</p>
-									{p.note ? <p className='mt-1 text-[12px] leading-5 text-[var(--ink-3)]'>{p.note}</p> : null}
+									<p className='text-[0.84375rem] font-semibold leading-5 text-[var(--ink)]'>{p.name}</p>
+									{p.note ? <p className='mt-1 text-[0.75rem] leading-5 text-[var(--ink-3)]'>{p.note}</p> : null}
 									<a
 										href={`https://www.openstreetmap.org/?mlat=${p.lat}&mlon=${p.lon}#map=18/${p.lat}/${p.lon}`}
 										target='_blank'
 										rel='noreferrer'
-										className='mt-2 inline-block text-[12px] font-semibold text-[var(--accent)]'
+										className='mt-2 inline-block text-[0.75rem] font-semibold text-[var(--accent)]'
 									>
 										Open in a map app
 									</a>
@@ -217,7 +217,7 @@ export function TileMap({
 					href='https://www.openstreetmap.org/copyright'
 					target='_blank'
 					rel='noreferrer'
-					className='absolute bottom-0 right-0 z-30 bg-[var(--paper)]/85 px-1.5 py-0.5 text-[10px] text-[var(--ink-3)]'
+					className='absolute bottom-0 right-0 z-30 bg-[var(--paper)]/85 px-1.5 py-0.5 text-[0.625rem] text-[var(--ink-3)]'
 					onPointerDown={(e) => e.stopPropagation()}
 				>
 					© OpenStreetMap contributors
@@ -226,7 +226,7 @@ export function TileMap({
 
 			<figcaption className='mt-3 flex flex-wrap gap-x-4 gap-y-1.5'>
 				{categories.map((c) => (
-					<span key={c.key} className='inline-flex items-center gap-1.5 text-[12px] text-[var(--ink-3)]'>
+					<span key={c.key} className='inline-flex items-center gap-1.5 text-[0.75rem] text-[var(--ink-3)]'>
 						<span className='size-2.5 rounded-full' style={{ background: c.color }} aria-hidden='true' />
 						{c.label}
 					</span>

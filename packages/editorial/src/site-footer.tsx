@@ -68,7 +68,7 @@ function FooterRow({ href, label, index }: FooterLink & { index: number }) {
 
 	const body = (
 		<>
-			<span className='num text-[10.5px] text-[var(--ink-mute)] transition group-hover:text-[var(--brass)]'>
+			<span className='num text-[0.65625rem] text-[var(--ink-mute)] transition group-hover:text-[var(--brass)]'>
 				{String(index + 1).padStart(2, '0')}
 			</span>
 			<span className='min-w-0 flex-1 break-words'>{label}</span>
@@ -85,7 +85,7 @@ function FooterRow({ href, label, index }: FooterLink & { index: number }) {
 	// the arrow against the middle of the block, so "02" floated between its
 	// own two lines instead of sitting on the first one.
 	const className =
-		'group flex items-baseline gap-3 border-b border-[var(--rule-soft)] py-2.5 text-[14px] text-[var(--ink-2)] transition hover:text-[var(--ink)]'
+		'group flex items-baseline gap-3 border-b border-[var(--rule-soft)] py-2.5 text-[0.875rem] text-[var(--ink-2)] transition hover:text-[var(--ink)]'
 
 	return external ? (
 		<a
@@ -173,7 +173,7 @@ export function SiteFooter({
 									lines={['Join the movement.']}
 									className='text-[1.7rem] font-extrabold leading-[1.12] tracking-[-0.035em] text-[var(--ink)] sm:text-[2.2rem]'
 								/>
-								<p className='mt-4 text-[15px] leading-[1.7] text-[var(--ink-2)]'>
+								<p className='mt-4 text-[0.9375rem] leading-[1.7] text-[var(--ink-2)]'>
 									Government works better when citizens can check it for themselves. That is what
 									we are here to make possible, and it is not a job for a few people.
 								</p>
@@ -189,7 +189,7 @@ export function SiteFooter({
 											href={one.href}
 											target={isAbsolute(one.href) ? '_blank' : undefined}
 											rel={one.href.startsWith('http') ? 'noreferrer noopener' : undefined}
-											className='group inline-flex items-center gap-3 border border-[var(--ink)] px-5 py-3 text-[13.5px] font-semibold tracking-[-0.01em] text-[var(--ink)] transition hover:bg-[var(--ink)] hover:text-[var(--paper)]'
+											className='group inline-flex items-center gap-3 border border-[var(--ink)] px-5 py-3 text-[0.84375rem] font-semibold tracking-[-0.01em] text-[var(--ink)] transition hover:bg-[var(--ink)] hover:text-[var(--paper)]'
 										>
 											{one.label}
 											<span
@@ -234,10 +234,10 @@ export function SiteFooter({
 							{/* Below the reading size. This is the note at the foot of the page
 						    explaining what the site is, not something anybody came to read,
 						    and at `bb-body` it had the same weight as the prose above it. */}
-						<p className='mt-7 text-[14px] leading-[1.7] text-[var(--ink-2)]'>{blurb}</p>
+						<p className='mt-7 text-[0.875rem] leading-[1.7] text-[var(--ink-2)]'>{blurb}</p>
 
 							{note ? (
-								<p className='mt-7 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
+								<p className='mt-7 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
 									{note}
 								</p>
 							) : null}
@@ -250,7 +250,7 @@ export function SiteFooter({
 					<Stagger gap={0.08} className='grid gap-x-8 gap-y-10 sm:grid-cols-3 sm:gap-x-10'>
 						{[...columns, { title: 'Workspaces', links: WORKSPACES }].map((column) => (
 							<StaggerItem key={column.title} className='sm:min-w-[10rem] sm:max-w-[15rem]' distance={12}>
-								<p className='border-b border-[var(--brass-line)] pb-2.5 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--ink)]'>
+								<p className='border-b border-[var(--brass-line)] pb-2.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--ink)]'>
 									{column.title}
 								</p>
 								<div className='mt-1'>
@@ -272,11 +272,11 @@ export function SiteFooter({
 				    Hidden for now; flip SHOW_REPORT_ERROR to bring it back. */}
 				{SHOW_REPORT_ERROR ? (
 					<div className='mt-16 lg:mt-20'>
-						<ReportErrorLink className='text-[14px] font-semibold text-[var(--ink)] transition hover:text-[var(--brass)]' />
+						<ReportErrorLink className='text-[0.875rem] font-semibold text-[var(--ink)] transition hover:text-[var(--brass)]' />
 					</div>
 				) : null}
 
-				<div className={`${SHOW_REPORT_ERROR ? 'mt-8' : 'mt-16 lg:mt-20'} flex flex-col justify-between gap-2 border-t border-[var(--rule)] pt-6 font-mono text-[10.5px] uppercase tracking-[0.12em] text-[var(--ink-mute)] sm:flex-row sm:items-center`}>
+				<div className={`${SHOW_REPORT_ERROR ? 'mt-8' : 'mt-16 lg:mt-20'} flex flex-col justify-between gap-2 border-t border-[var(--rule)] pt-6 font-mono text-[0.65625rem] uppercase tracking-[0.12em] text-[var(--ink-mute)] sm:flex-row sm:items-center`}>
 					<p>2026 betterbarmm.com — public domain unless otherwise specified</p>
 					<p>
 						{bottomRight ?? (

@@ -93,9 +93,9 @@ export default function PlacesPage() {
 											<div className='flex flex-wrap items-center gap-x-3 gap-y-1.5'>
 												<span className='tv-kind'>{PLACE_KIND_LABEL[place.kind]}</span>
 												{place.signature ? (
-													<span className='badge badge-plain !text-[9.5px]'>Signature</span>
+													<span className='badge badge-plain !text-[0.59375rem]'>Signature</span>
 												) : null}
-												<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+												<span className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 													{place.municipality}
 												</span>
 											</div>
@@ -103,7 +103,7 @@ export default function PlacesPage() {
 											<h3 className='section-title-sm mt-3'>{place.name}</h3>
 
 											{place.alsoKnownAs?.length ? (
-												<p className='mt-1.5 text-[13px] italic text-[var(--ink-3)]'>
+												<p className='mt-1.5 text-[0.8125rem] italic text-[var(--ink-3)]'>
 													Also {place.alsoKnownAs.join(', ')}
 												</p>
 											) : null}

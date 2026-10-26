@@ -92,7 +92,7 @@ export default function NewsPage() {
 					<>
 						<p className='bb-label'>What is being reported about the Bangsamoro</p>
 						<h1 className='bb-display-md mt-4 text-[var(--ink)]'>Latest News</h1>
-						<p className='mx-auto mt-4 max-w-xl text-[15px] leading-7 text-[var(--ink-2)]'>
+						<p className='mx-auto mt-4 max-w-xl text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
 							Headlines from the region’s own offices and the national press, one story to a row with every outlet that reported it. Read the story there.
 						</p>
 					</>
@@ -101,7 +101,7 @@ export default function NewsPage() {
 
 			<section className='bb-container pb-16'>
 				{sources.length ? (
-					<p className='mx-auto max-w-5xl border-t border-[var(--rule)] pt-6 text-[13px] leading-[1.7] text-[var(--ink-3)]'>
+					<p className='mx-auto max-w-5xl border-t border-[var(--rule)] pt-6 text-[0.8125rem] leading-[1.7] text-[var(--ink-3)]'>
 						From {sources.slice(0, 12).join(', ')}{sources.length > 12 ? ' and others' : ''}, read on{' '}
 						{new Date(dataset.generatedAt).toLocaleDateString('en-PH', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Manila' })}. Headlines and teasers belong to their
 						outlets; BetterBARMM links to them and does not reproduce the stories.

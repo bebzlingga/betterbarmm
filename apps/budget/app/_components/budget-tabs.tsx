@@ -109,11 +109,11 @@ export function BudgetTabs({ tabs, label }: { tabs: BudgetTab[]; label?: string 
 								aria-selected={active === tab.id}
 								aria-controls={`panel-${tab.id}`}
 								onClick={() => select(tab.id)}
-								className='flex shrink-0 cursor-pointer items-center gap-2 px-4 py-2.5 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)] transition duration-200 aria-selected:bg-[var(--accent)] aria-selected:text-white hover:text-[var(--ink)] aria-selected:hover:text-white'
+								className='flex shrink-0 cursor-pointer items-center gap-2 px-4 py-2.5 font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)] transition duration-200 aria-selected:bg-[var(--accent)] aria-selected:text-white hover:text-[var(--ink)] aria-selected:hover:text-white'
 							>
 								{tab.label}
 								{tab.badge != null ? (
-									<span className='num text-[10.5px] font-semibold text-current opacity-60'>
+									<span className='num text-[0.65625rem] font-semibold text-current opacity-60'>
 										{tab.badge}
 									</span>
 								) : null}

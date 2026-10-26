@@ -162,12 +162,12 @@ export default async function UnitPage({
 				name={unit.name}
 			>
 				{history ? (
-					<div className='mt-12 grid gap-6 text-[15px] leading-7 text-[var(--ink-2)] lg:grid-cols-2 lg:gap-20'>
+					<div className='mt-12 grid gap-6 text-[0.9375rem] leading-7 text-[var(--ink-2)] lg:grid-cols-2 lg:gap-20'>
 						<p>{history.summary ?? history.paragraphs.join(' ')}</p>
 						<p>{lead}</p>
 					</div>
 				) : (
-					<div className='mt-12 max-w-[58rem] space-y-4 text-[15px] leading-7 text-[var(--ink-2)]'>
+					<div className='mt-12 max-w-[58rem] space-y-4 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
 						<p>{lead}</p>
 						{[unit.nameNote, unit.populationNote].filter(Boolean).map((note) => (
 							<p key={note}>{note}</p>
@@ -197,15 +197,15 @@ export default async function UnitPage({
 									const captain = rosters[barangay.psgc ?? barangay.name]?.punongBarangay?.name
 									return (
 										<li key={barangay.psgc ?? barangay.name} className='break-inside-avoid border-b border-[var(--rule-soft)] py-2.5'>
-											<span className='block text-[15px] font-semibold text-[var(--ink)]'>{barangay.name}</span>
+											<span className='block text-[0.9375rem] font-semibold text-[var(--ink)]'>{barangay.name}</span>
 											{captain ? (
-												<span className='mt-0.5 block text-[12px] text-[var(--ink-3)]'>{personName(captain)}</span>
+												<span className='mt-0.5 block text-[0.75rem] text-[var(--ink-3)]'>{personName(captain)}</span>
 											) : null}
 										</li>
 									)
 								})}
 						</ul>
-						<p className='mt-4 text-[12.5px] leading-6 text-[var(--ink-mute)] transition-colors hover:text-[var(--ink-3)]'>
+						<p className='mt-4 text-[0.78125rem] leading-6 text-[var(--ink-mute)] transition-colors hover:text-[var(--ink-3)]'>
 							Punong barangay from DILG&rsquo;s directory, read {barangayOfficials.capturedAt}, where it lists one.{' '}
 							<a href={barangayOfficials.source.href} target='_blank' rel='noreferrer' className='rule-link'>
 								Source
@@ -244,7 +244,7 @@ export default async function UnitPage({
 						<h2 id='audits' className={H2}>
 							What the auditor found
 						</h2>
-						<p className='mt-3 max-w-[46rem] text-[14px] leading-6 text-[var(--ink-3)]'>
+						<p className='mt-3 max-w-[46rem] text-[0.875rem] leading-6 text-[var(--ink-3)]'>
 							The Commission on Audit&rsquo;s yearly report on {unit.name}&rsquo;s books, in plain words.
 						</p>
 						<div className='mt-6'>
@@ -265,15 +265,15 @@ export default async function UnitPage({
 								<dd className='num mt-2 text-[1.6rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
 									{stat.value}
 								</dd>
-								{stat.detail ? <dd className='mt-1.5 text-[12.5px] leading-5 text-[var(--ink-3)]'>{stat.detail}</dd> : null}
+								{stat.detail ? <dd className='mt-1.5 text-[0.78125rem] leading-5 text-[var(--ink-3)]'>{stat.detail}</dd> : null}
 							</div>
 						))}
 					</dl>
 
 					{officials.length > 0 || council.length > 0 ? (
 						<div className='mt-10'>
-							<h2 className='text-[15px] font-semibold text-[var(--ink)]'>Current officials</h2>
-							<p className='mt-1 text-[12.5px] text-[var(--ink-3)]'>{termLabel}</p>
+							<h2 className='text-[0.9375rem] font-semibold text-[var(--ink)]'>Current officials</h2>
+							<p className='mt-1 text-[0.78125rem] text-[var(--ink-3)]'>{termLabel}</p>
 							<ul className='mt-4'>
 								{officials.map((official) => (
 									<Official key={official.position} name={official.name} party={official.party} role={official.position} />
@@ -281,7 +281,7 @@ export default async function UnitPage({
 							</ul>
 							{council.length > 0 ? (
 								<div className='mt-8'>
-									<h3 className='text-[14px] font-semibold text-[var(--ink)]'>{councilName}</h3>
+									<h3 className='text-[0.875rem] font-semibold text-[var(--ink)]'>{councilName}</h3>
 									<ul className='mt-1'>
 										{council.map((member) => (
 											<Official key={member.name} name={personName(member.name)} party={member.party ?? null} role='Council member' />
@@ -289,7 +289,7 @@ export default async function UnitPage({
 									</ul>
 								</div>
 							) : null}
-							<Link href='/officials' className='rule-link mt-6 inline-block text-[13px]'>
+							<Link href='/officials' className='rule-link mt-6 inline-block text-[0.8125rem]'>
 								Every official, every term
 							</Link>
 						</div>
@@ -299,7 +299,7 @@ export default async function UnitPage({
 
 			<section className='bb-container bb-section-bottom'>
 				{history ? (
-					<p className='mb-8 text-[12.5px] leading-6 text-[var(--ink-mute)] transition-colors hover:text-[var(--ink-3)]'>
+					<p className='mb-8 text-[0.78125rem] leading-6 text-[var(--ink-mute)] transition-colors hover:text-[var(--ink-3)]'>
 						<span className='font-semibold text-[var(--ink-3)]'>History sources:</span>{' '}
 						{history.sources.map((source, i) => (
 							<span key={source.href}>
@@ -325,10 +325,10 @@ export default async function UnitPage({
 								aria-hidden='true'
 							/>
 							<span className='min-w-0'>
-								<span className='block font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
+								<span className='block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
 									Previous
 								</span>
-								<span className='mt-1 block truncate text-[15px] font-medium text-[var(--ink)]'>
+								<span className='mt-1 block truncate text-[0.9375rem] font-medium text-[var(--ink)]'>
 									{previous.name}
 								</span>
 							</span>
@@ -343,10 +343,10 @@ export default async function UnitPage({
 							className='group flex items-center justify-end gap-3 px-6 py-6 text-right transition hover:bg-[var(--paper-3)] sm:col-start-2'
 						>
 							<span className='min-w-0'>
-								<span className='block font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
+								<span className='block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
 									Next
 								</span>
-								<span className='mt-1 block truncate text-[15px] font-medium text-[var(--ink)]'>
+								<span className='mt-1 block truncate text-[0.9375rem] font-medium text-[var(--ink)]'>
 									{next.name}
 								</span>
 							</span>

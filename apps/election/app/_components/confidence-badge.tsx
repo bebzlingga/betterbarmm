@@ -27,7 +27,7 @@ export function ConfidenceBadge({
 	return (
 		<span
 			title={meta.note}
-			className={`inline-flex items-center gap-1.5 border border-[var(--rule)] px-2 py-1 font-mono text-[9px] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--ink-3)] ${className}`}
+			className={`inline-flex items-center gap-1.5 border border-[var(--rule)] px-2 py-1 font-mono text-[0.5625rem] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--ink-3)] ${className}`}
 		>
 			<span
 				aria-hidden='true'

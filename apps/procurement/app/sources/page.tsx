@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 }
 
 const H2 = 'text-[1.5rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
-const P = 'mt-4 text-[15px] leading-7 text-[var(--ink-2)]'
+const P = 'mt-4 text-[0.9375rem] leading-7 text-[var(--ink-2)]'
 
 export default function SourcesPage() {
 	return (

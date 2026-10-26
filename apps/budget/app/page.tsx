@@ -138,11 +138,11 @@ function YearTable({
 		<div>
 			{/* On a phone the years scroll and the names stay: the name column is
 			    pinned, so a swipe to FY 2026 still says whose row it is. */}
-			<p aria-hidden='true' className='mb-3 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] lg:hidden'>
+			<p aria-hidden='true' className='mb-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] lg:hidden'>
 				Swipe for every year &rarr;
 			</p>
 			<div className='overflow-x-auto lg:-mx-8 lg:px-8'>
-			<table className={`w-full border-collapse text-[14.5px] ${wide ? 'min-w-[50rem] lg:min-w-[58rem]' : 'min-w-[46rem] lg:min-w-[54rem]'}`}>
+			<table className={`w-full border-collapse text-[0.90625rem] ${wide ? 'min-w-[50rem] lg:min-w-[58rem]' : 'min-w-[46rem] lg:min-w-[54rem]'}`}>
 				<caption className='sr-only'>{caption}</caption>
 				<thead>
 					<tr className='border-b border-[var(--ink)]'>
@@ -153,14 +153,14 @@ function YearTable({
 							<th
 								key={year}
 								scope='col'
-								className='num py-4 pl-5 text-right font-mono text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
+								className='num py-4 pl-5 text-right font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
 							>
 								FY {year}
 							</th>
 						))}
 						<th
 							scope='col'
-							className='num py-4 pl-5 text-right font-mono text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
+							className='num py-4 pl-5 text-right font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
 						>
 							Total
 						</th>
@@ -173,12 +173,12 @@ function YearTable({
 								{row.href ? (
 									<Link
 										href={row.href}
-										className='text-[13.5px] font-semibold leading-snug text-[var(--ink)] hover:text-[var(--accent)] sm:text-[15px]'
+										className='text-[0.84375rem] font-semibold leading-snug text-[var(--ink)] hover:text-[var(--accent)] sm:text-[0.9375rem]'
 									>
 										{row.label}
 									</Link>
 								) : (
-									<span className='block text-[13.5px] font-semibold leading-snug text-[var(--ink)] sm:text-[15px]'>
+									<span className='block text-[0.84375rem] font-semibold leading-snug text-[var(--ink)] sm:text-[0.9375rem]'>
 										{row.label}
 									</span>
 								)}
@@ -186,13 +186,13 @@ function YearTable({
 							{trendYears.map((year) => (
 								<td
 									key={year}
-									className='num py-5 pl-5 text-right text-[13px] tabular-nums text-[var(--ink-2)]'
+									className='num py-5 pl-5 text-right text-[0.8125rem] tabular-nums text-[var(--ink-2)]'
 									title={row.at(year) > 0 ? peso(row.at(year)) : 'Not in this Act'}
 								>
 									{short(row.at(year))}
 								</td>
 							))}
-							<td className='num py-5 pl-5 text-right text-[13px] font-semibold tabular-nums text-[var(--ink)]'>
+							<td className='num py-5 pl-5 text-right text-[0.8125rem] font-semibold tabular-nums text-[var(--ink)]'>
 								{short(row.total)}
 							</td>
 						</tr>
@@ -201,7 +201,7 @@ function YearTable({
 			</table>
 			</div>
 			{foot ? (
-				<p className='mt-5 text-[12px] leading-6 text-[var(--ink-3)]'>{foot}</p>
+				<p className='mt-5 text-[0.75rem] leading-6 text-[var(--ink-3)]'>{foot}</p>
 			) : null}
 		</div>
 	)
@@ -234,7 +234,7 @@ function ActBars() {
 			<div className='flex items-end gap-3 border-b border-[var(--brass-line)] sm:gap-6'>
 				{ACTS.map((act) => (
 					<div key={act.year} className='flex min-w-0 flex-1 flex-col items-stretch gap-2.5'>
-						<p className='num text-center font-mono text-[10.5px] font-semibold tabular-nums text-[var(--ink-2)]'>
+						<p className='num text-center font-mono text-[0.65625rem] font-semibold tabular-nums text-[var(--ink-2)]'>
 							{short(act.total)}
 						</p>
 						{/* Capped and centerd in its track. Across the full container a
@@ -253,7 +253,7 @@ function ActBars() {
 				{ACTS.map((act) => (
 					<p
 						key={act.year}
-						className='num min-w-0 flex-1 text-center font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
+						className='num min-w-0 flex-1 text-center font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
 					>
 						FY {act.year}
 					</p>
@@ -304,11 +304,11 @@ export default function CompositionPage() {
 					lead='Three buckets, and every peso in the Act sits in one of them. The first pays the people. The second keeps the lights on and the fuel in the trucks. The third buys what is still there next year — a road, a health center, an ambulance.'
 				/>
 
-				<p aria-hidden='true' className='mb-3 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] lg:hidden'>
+				<p aria-hidden='true' className='mb-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] lg:hidden'>
 					Swipe for every year &rarr;
 				</p>
 				<div className='overflow-x-auto lg:-mx-8 lg:px-8'>
-					<table className='w-full min-w-[46rem] border-collapse text-[14.5px] lg:min-w-[54rem]'>
+					<table className='w-full min-w-[46rem] border-collapse text-[0.90625rem] lg:min-w-[54rem]'>
 						<caption className='sr-only'>
 							Each Bangsamoro Act by expense class
 						</caption>
@@ -321,14 +321,14 @@ export default function CompositionPage() {
 									<th
 										key={act.year}
 										scope='col'
-										className='num py-4 pl-5 text-right font-mono text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
+										className='num py-4 pl-5 text-right font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
 									>
 										FY {act.year}
 									</th>
 								))}
 								<th
 									scope='col'
-									className='num py-4 pl-5 text-right font-mono text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
+									className='num py-4 pl-5 text-right font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
 								>
 									Total
 								</th>
@@ -347,7 +347,7 @@ export default function CompositionPage() {
 													className='size-2.5 shrink-0'
 													style={{ background: one.tone }}
 												/>
-												<span className='text-[13.5px] font-semibold leading-snug text-[var(--ink)] sm:text-[15px]'>
+												<span className='text-[0.84375rem] font-semibold leading-snug text-[var(--ink)] sm:text-[0.9375rem]'>
 													{one.label}
 												</span>
 											</span>
@@ -355,13 +355,13 @@ export default function CompositionPage() {
 										{ACTS.map((act) => (
 											<td
 												key={act.year}
-												className='num py-5 pl-5 text-right text-[13px] tabular-nums text-[var(--ink-2)]'
+												className='num py-5 pl-5 text-right text-[0.8125rem] tabular-nums text-[var(--ink-2)]'
 												title={`${peso(act.totals[one.key])} — ${percent((act.totals[one.key] / act.total) * 100, 1)} of FY ${act.year}`}
 											>
 												{short(act.totals[one.key])}
 											</td>
 										))}
-										<td className='num py-5 pl-5 text-right text-[13px] font-semibold tabular-nums text-[var(--ink)]'>
+										<td className='num py-5 pl-5 text-right text-[0.8125rem] font-semibold tabular-nums text-[var(--ink)]'>
 											{short(across)}
 										</td>
 									</tr>
@@ -377,12 +377,12 @@ export default function CompositionPage() {
 								{ACTS.map((act) => (
 									<td
 										key={act.year}
-										className='num py-5 pl-5 text-right text-[13px] font-semibold tabular-nums text-[var(--ink)]'
+										className='num py-5 pl-5 text-right text-[0.8125rem] font-semibold tabular-nums text-[var(--ink)]'
 									>
 										{short(act.total)}
 									</td>
 								))}
-								<td className='num py-5 pl-5 text-right text-[13px] font-semibold tabular-nums text-[var(--accent)]'>
+								<td className='num py-5 pl-5 text-right text-[0.8125rem] font-semibold tabular-nums text-[var(--accent)]'>
 									{short(SPAN)}
 								</td>
 							</tr>
@@ -423,7 +423,7 @@ export default function CompositionPage() {
 										}}
 									/>
 								</div>
-								<dt className='money mt-3 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+								<dt className='money mt-3 font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
 									FY {act.year}
 								</dt>
 								<dd
@@ -432,7 +432,7 @@ export default function CompositionPage() {
 								>
 									{short(act.funds)}
 								</dd>
-								<dd className='money mt-1 font-mono text-[10.5px] font-semibold tracking-[0.08em] text-[var(--accent)]'>
+								<dd className='money mt-1 font-mono text-[0.65625rem] font-semibold tracking-[0.08em] text-[var(--accent)]'>
 									{percent((act.funds / act.total) * 100, 0)} of the Act
 								</dd>
 							</div>

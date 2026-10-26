@@ -52,14 +52,14 @@ export function Select({
 }) {
 	return (
 		<label className='flex min-w-0 flex-col gap-1'>
-			<span className='text-[12px] text-[var(--ink-3)]'>{label}</span>
+			<span className='text-[0.75rem] text-[var(--ink-3)]'>{label}</span>
 			{/* The browser's own arrow sits against the edge and differs per
 			    browser; this one is the site's, inset like the search icon. */}
 			<span className='relative'>
 				<select
 					value={value}
 					onChange={(event) => onChange(event.target.value)}
-					className='h-10 w-full min-w-0 cursor-pointer appearance-none truncate border border-[var(--rule)] bg-[var(--paper-2)] pl-3 pr-9 text-[14px] text-[var(--ink)] outline-none transition hover:border-[var(--ink)] focus:border-[var(--ink)]'
+					className='h-10 w-full min-w-0 cursor-pointer appearance-none truncate border border-[var(--rule)] bg-[var(--paper-2)] pl-3 pr-9 text-[0.875rem] text-[var(--ink)] outline-none transition hover:border-[var(--ink)] focus:border-[var(--ink)]'
 				>
 					{options.map(([key, text]) => (
 						<option key={key} value={key}>
@@ -129,7 +129,7 @@ export function StatsExplorer({
 		<div>
 			<div className='pb-6 lg:pb-10 grid grid-cols-2 gap-3 lg:grid-cols-[minmax(0,1fr)_15rem_9rem_9rem_11rem] lg:items-end lg:gap-4'>
 				<label className='col-span-2 flex w-full min-w-0 max-w-[26rem] flex-col gap-1 lg:col-span-1'>
-					<span className='text-[12px] text-[var(--ink-3)]'>Search</span>
+					<span className='text-[0.75rem] text-[var(--ink-3)]'>Search</span>
 					<span className='flex h-10 items-center gap-3 border border-[var(--rule)] bg-[var(--paper-2)] px-3 focus-within:border-[var(--ink)]'>
 						<MagnifyingGlassIcon className='size-4 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
 						<input
@@ -139,7 +139,7 @@ export function StatsExplorer({
 							autoComplete='off'
 							spellCheck={false}
 							placeholder='Name of a province, city or town'
-							className='min-w-0 flex-1 bg-transparent text-[14px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+							className='min-w-0 flex-1 bg-transparent text-[0.875rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 						/>
 					</span>
 				</label>
@@ -155,7 +155,7 @@ export function StatsExplorer({
 			</div>
 
 			{partial ? (
-				<p className='mb-4 text-[13px] leading-6 text-[var(--ink-3)]'>
+				<p className='mb-4 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 					For FY {year}, only DBM&rsquo;s NTA allocation is out. Income and spending come with BLGF&rsquo;s report
 					after the year ends.
 				</p>

@@ -88,7 +88,7 @@ export function QuoteBand({
             {quote}
           </p>
           {attribution ? (
-            <footer className='mt-8 font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-white/70'>
+            <footer className='mt-8 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-white/70'>
               {attribution}
             </footer>
           ) : null}

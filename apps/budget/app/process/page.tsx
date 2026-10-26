@@ -183,14 +183,14 @@ export default function ProcessPage() {
 								className='scroll-mt-32 border-t border-[var(--brass-line)] py-10 first:border-t-0 first:pt-0'
 							>
 								<div>
-									<h3 className='text-[24px] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)]'>
+									<h3 className='text-[1.5rem] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)]'>
 										{phase.phase}
 									</h3>
-									<p className='mt-2 font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+									<p className='mt-2 font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 										{phase.who}
 									</p>
 
-									<p className='mt-5 max-w-4xl text-[16px] leading-[1.7] text-[var(--ink-2)]'>
+									<p className='mt-5 max-w-4xl text-[1rem] leading-[1.7] text-[var(--ink-2)]'>
 										{phase.what}
 									</p>
 
@@ -216,10 +216,10 @@ export default function ProcessPage() {
 												{/* Filled, and the number in white rather than black: on the
 												    crimson this sits on, black lands under 2:1 and is unreadable
 												    at 10px. `font-black` is the weight. */}
-												<span className='num relative z-10 flex size-6 shrink-0 items-center justify-center bg-[var(--accent)] font-mono text-[10px] font-black text-white'>
+												<span className='num relative z-10 flex size-6 shrink-0 items-center justify-center bg-[var(--accent)] font-mono text-[0.625rem] font-black text-white'>
 													{at + 1}
 												</span>
-												<span className='pt-0.5 text-[14.5px] leading-[1.65] text-[var(--ink-2)]'>
+												<span className='pt-0.5 text-[0.90625rem] leading-[1.65] text-[var(--ink-2)]'>
 													{step}
 												</span>
 											</li>
@@ -230,14 +230,14 @@ export default function ProcessPage() {
 									    not another thing that happens in the phase, it is what the
 									    phase means for somebody watching from outside it. */}
 									<div className='mt-8 max-w-4xl border-l-2 border-[var(--accent)] bg-[var(--paper-2)] px-6 py-5'>
-										<p className='font-mono text-[9px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]'>
+										<p className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]'>
 											Why this phase matters
 										</p>
-										<p className='mt-3 text-[14.5px] leading-[1.7] text-[var(--ink-2)]'>
+										<p className='mt-3 text-[0.90625rem] leading-[1.7] text-[var(--ink-2)]'>
 											{phase.stakes}
 										</p>
 										{'basis' in phase && phase.basis ? (
-											<p className='mt-4 border-t border-[var(--rule)] pt-3 font-mono text-[10px] leading-5 uppercase tracking-[0.1em] text-[var(--ink-mute)]'>
+											<p className='mt-4 border-t border-[var(--rule)] pt-3 font-mono text-[0.625rem] leading-5 uppercase tracking-[0.1em] text-[var(--ink-mute)]'>
 												{phase.basis}
 											</p>
 										) : null}

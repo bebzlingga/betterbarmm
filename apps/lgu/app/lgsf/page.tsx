@@ -65,7 +65,7 @@ export default function LgsfPage() {
 					<div className='grid h-40 items-end gap-3 sm:gap-6' style={cols}>
 						{byYear.map(({ year, total }) => (
 							<div key={year} className='flex h-full flex-col items-center justify-end'>
-								<span className='num mb-1.5 text-[11px] text-[var(--ink-2)] sm:text-[12.5px]'>
+								<span className='num mb-1.5 text-[0.6875rem] text-[var(--ink-2)] sm:text-[0.78125rem]'>
 									₱{total >= 1e9 ? `${(total / 1e9).toFixed(2)}B` : `${Math.round(total / 1e6)}M`}
 								</span>
 								<div className='w-full max-w-16' style={{ height: `calc(${(total / top) * 100}% - 1.5rem)`, background: 'linear-gradient(to top, transparent, var(--accent))' }} />
@@ -74,12 +74,12 @@ export default function LgsfPage() {
 					</div>
 					<div className='grid gap-3 border-t border-[var(--rule)] pt-2 sm:gap-6' style={cols}>
 						{byYear.map(({ year }) => (
-							<span key={year} className='num text-center text-[12px] text-[var(--ink-3)]'>
+							<span key={year} className='num text-center text-[0.75rem] text-[var(--ink-3)]'>
 								{year}
 							</span>
 						))}
 					</div>
-					<figcaption className='mt-4 text-[12.5px] font-semibold text-[var(--ink)]'>
+					<figcaption className='mt-4 text-[0.78125rem] font-semibold text-[var(--ink)]'>
 						DBM&rsquo;s support fund allotted to BARMM&rsquo;s local governments, by year
 					</figcaption>
 				</figure>
@@ -89,7 +89,7 @@ export default function LgsfPage() {
 				<div className='bb-container grid gap-8 py-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-center lg:gap-20'>
 					<div>
 						<h2 className='text-[1.25rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>BARMM has a support fund of its own</h2>
-						<p className='mt-3 text-[15px] leading-7 text-[var(--ink-2)]'>
+						<p className='mt-3 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
 							The Bangsamoro budget has its own support fund for local governments, renamed in FY 2026 the Sustainable
 							Assistance Mechanism for Local Moral Governance. Who receives it, and for what, is not yet published, so
 							it is not in the list below. We will add it once the recipients are out.
@@ -99,7 +99,7 @@ export default function LgsfPage() {
 						<div className='grid h-48 grid-cols-5 items-end gap-3 sm:gap-5'>
 							{BARMM_FUND.map((f) => (
 								<div key={f.year} className='flex h-full flex-col items-center justify-end'>
-									<span className='num mb-1.5 text-[11px] text-[var(--ink-2)] sm:text-[12.5px]'>₱{(f.amount / 1e9).toFixed(2)}B</span>
+									<span className='num mb-1.5 text-[0.6875rem] text-[var(--ink-2)] sm:text-[0.78125rem]'>₱{(f.amount / 1e9).toFixed(2)}B</span>
 									<div
 										className='w-full max-w-14'
 										style={{ height: `calc(${(f.amount / FUND_TOP) * 100}% - 1.5rem)`, background: 'var(--accent)' }}
@@ -111,8 +111,8 @@ export default function LgsfPage() {
 						<div className='grid grid-cols-5 gap-3 border-t border-[var(--rule)] pt-2 sm:gap-5'>
 							{BARMM_FUND.map((f) => (
 								<span key={f.year} className='text-center'>
-									<span className='num block text-[12px] text-[var(--ink-3)]'>{f.year}</span>
-									<a href={`https://legislation.betterbarmm.com/acts/${f.act}`} className='rule-link text-[11px]'>
+									<span className='num block text-[0.75rem] text-[var(--ink-3)]'>{f.year}</span>
+									<a href={`https://legislation.betterbarmm.com/acts/${f.act}`} className='rule-link text-[0.6875rem]'>
 										BAA {f.act}
 									</a>
 								</span>
@@ -125,7 +125,7 @@ export default function LgsfPage() {
 			<section className='bb-container bb-section'>
 				<LgsfExplorer rows={rows} years={years} programs={lgsf.programs.filter((p) => rows.some((r) => r.program === p.code))} />
 
-				<div className='mt-10 space-y-2 text-[13px] leading-6 text-[var(--ink-3)]'>
+				<div className='mt-10 space-y-2 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 					<p>
 						<strong className='font-semibold text-[var(--ink-2)]'>Allotted</strong> is the Special Allotment
 						Release Order (SARO), the authority to spend.{' '}

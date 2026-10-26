@@ -94,8 +94,8 @@ export function BrainDialog() {
 				) : (
 					<div role='status' className='flex h-full flex-col items-center justify-center gap-4 px-6 text-center'>
 						<BrainIcon size={44} weight='fill' aria-hidden='true' className={failed ? 'text-white/40' : 'text-[#f1c453] motion-safe:animate-pulse'} />
-						<p className='text-[15px] font-medium text-white/75'>{failed ? 'The map did not load.' : 'Drawing the map…'}</p>
-						<p className='text-[12.5px] text-white/45'>{failed ? 'Close this and try again.' : 'Gathering the records, sources and links.'}</p>
+						<p className='text-[0.9375rem] font-medium text-white/75'>{failed ? 'The map did not load.' : 'Drawing the map…'}</p>
+						<p className='text-[0.78125rem] text-white/45'>{failed ? 'Close this and try again.' : 'Gathering the records, sources and links.'}</p>
 					</div>
 				)}
 			</div>

@@ -90,7 +90,7 @@ export function Masthead({
 						    Tighter than the reading leading too: set at the body's own 1.88
 						    it stacked into loose, widely separated lines that read as four
 						    short paragraphs. */}
-						<p className='mt-7 text-[15px] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>
+						<p className='mt-7 text-[0.9375rem] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>
 							{standfirst}
 						</p>
 					</Rise>
@@ -150,7 +150,7 @@ export function Masthead({
 											{/* The caption belongs to the figure, so it rides inside the
 											    same `dt` rather than as a third element the list does not
 											    account for. */}
-											<dt className='mt-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+											<dt className='mt-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 												{fact.label}
 												{/* Wider than it was. At 16rem a caption like "Of the 13 on
 												    the regional ballot…" broke into six short lines under a
@@ -159,7 +159,7 @@ export function Masthead({
 												    spare now that a three-fact head takes three columns
 												    rather than three of four. */}
 												{fact.detail ? (
-													<span className='mt-2 block max-w-[22rem] font-sans text-[13px] font-normal normal-case leading-[1.5] tracking-normal text-[var(--ink-3)]'>
+													<span className='mt-2 block max-w-[22rem] font-sans text-[0.8125rem] font-normal normal-case leading-[1.5] tracking-normal text-[var(--ink-3)]'>
 														{fact.detail}
 													</span>
 												) : null}

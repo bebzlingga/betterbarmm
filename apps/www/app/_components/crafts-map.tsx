@@ -23,23 +23,23 @@ export function CraftsMap({ points }: { points: MapPoint[] }) {
 			</div>
 			<div className='max-h-[34rem] overflow-y-auto border-t border-[#d9c7b5] p-5 lg:border-t-0 lg:border-l'>
 				{picked ? (
-					<button type='button' onClick={() => setSelected(null)} className='mb-3 text-[12.5px] font-semibold text-[#7b4a35] hover:text-[#3b2419]'>
+					<button type='button' onClick={() => setSelected(null)} className='mb-3 text-[0.78125rem] font-semibold text-[#7b4a35] hover:text-[#3b2419]'>
 						← Every town
 					</button>
 				) : (
-					<p className='mb-3 text-[12.5px] text-[#8a6d5c]'>Pick a dot, or a town below.</p>
+					<p className='mb-3 text-[0.78125rem] text-[#8a6d5c]'>Pick a dot, or a town below.</p>
 				)}
 				<ul className='space-y-4'>
 					{list.map((p) => (
 						<li key={p.key}>
 							<p className='flex items-baseline gap-1.5'>
 								<MapPinIcon size={13} className='shrink-0 self-center text-[#b4613f]' aria-hidden='true' />
-								<button type='button' onClick={() => setSelected(p.key)} className='text-left text-[15px] font-bold hover:text-[#7b4a35]'>
+								<button type='button' onClick={() => setSelected(p.key)} className='text-left text-[0.9375rem] font-bold hover:text-[#7b4a35]'>
 									{p.label}
 								</button>
-								<span className='text-[12px] text-[#8a6d5c]'>{p.sub}</span>
+								<span className='text-[0.75rem] text-[#8a6d5c]'>{p.sub}</span>
 							</p>
-							<p className='mt-1 pl-5 text-[13.5px] leading-[1.7]'>
+							<p className='mt-1 pl-5 text-[0.84375rem] leading-[1.7]'>
 								{p.crafts.map((c, i) => (
 									<span key={c.slug}>
 										{i ? ', ' : ''}
@@ -50,7 +50,7 @@ export function CraftsMap({ points }: { points: MapPoint[] }) {
 								))}
 							</p>
 							{p.href && picked ? (
-								<Link href={p.href} className='mt-2 inline-block pl-5 text-[12.5px] font-semibold text-[#7b4a35] hover:text-[#3b2419]'>
+								<Link href={p.href} className='mt-2 inline-block pl-5 text-[0.78125rem] font-semibold text-[#7b4a35] hover:text-[#3b2419]'>
 									{p.label} in the Directory →
 								</Link>
 							) : null}

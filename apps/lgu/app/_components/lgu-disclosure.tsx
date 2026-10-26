@@ -40,7 +40,7 @@ export function LguDisclosure({ unitKey, name }: { unitKey: string; name: string
 
 	return (
 		<div>
-			<p className='text-[15px] leading-7 text-[var(--ink-2)]'>
+			<p className='text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
 				Under DILG’s Full Disclosure Policy, every province, city and municipality must post its budget, its
 				procurement plans, its quarterly statements and how it used its development and disaster funds, in three
 				conspicuous places and on DILG’s portal. This is what {name} has put on the portal since 2023.{' '}
@@ -60,7 +60,7 @@ export function LguDisclosure({ unitKey, name }: { unitKey: string; name: string
 			</p>
 
 			{years.length === 0 ? (
-				<p className='mt-10 bg-[var(--paper-2)] px-6 py-5 text-[15px] leading-7 text-[var(--ink-2)]'>
+				<p className='mt-10 bg-[var(--paper-2)] px-6 py-5 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
 					Nothing from {name} has been put on the portal since 2023.
 				</p>
 			) : (
@@ -73,7 +73,7 @@ export function LguDisclosure({ unitKey, name }: { unitKey: string; name: string
 				/>
 			)}
 
-			<p className='mt-10 text-[12.5px] leading-6 text-[var(--ink-mute)] transition-colors hover:text-[var(--ink-3)]'>
+			<p className='mt-10 text-[0.78125rem] leading-6 text-[var(--ink-mute)] transition-colors hover:text-[var(--ink-3)]'>
 				A tick opens the file DILG holds; a dash means nothing is on the portal for that period, not that the
 				document was never produced. Annual documents sit under Year, quarterly ones under their quarter. From{' '}
 				<a href={fdpp.source[0].href} target='_blank' rel='noreferrer' className='rule-link'>

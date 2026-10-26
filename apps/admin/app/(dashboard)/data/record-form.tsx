@@ -70,7 +70,7 @@ export function RecordForm({
             <input name="key" required defaultValue={defaultKey} className="field field-mono w-72" placeholder="unique id" />
           </label>
         ) : (
-          <p className="flex min-w-0 items-center gap-2 text-[13px] text-[var(--ink-3)]">
+          <p className="flex min-w-0 items-center gap-2 text-[0.8125rem] text-[var(--ink-3)]">
             Key <code className="field-mono truncate rounded-md bg-[var(--surface)] px-2 py-0.5 text-[var(--ink-2)] shadow-[var(--shadow-sm)]">{recordKey}</code>
           </p>
         )}
@@ -249,8 +249,8 @@ function Field({
   return (
     <div className="group grid gap-2 px-4 py-3.5 md:grid-cols-[13rem_minmax(0,1fr)_auto] md:items-start">
       <div className="pt-1.5">
-        <p className="field-mono break-all text-[12.5px] font-medium text-[var(--ink)]">{name}</p>
-        <p className="mt-0.5 text-[11px] text-[var(--ink-mute)]">{kind === "list" ? "list · one per line" : kind}</p>
+        <p className="field-mono break-all text-[0.78125rem] font-medium text-[var(--ink)]">{name}</p>
+        <p className="mt-0.5 text-[0.6875rem] text-[var(--ink-mute)]">{kind === "list" ? "list · one per line" : kind}</p>
       </div>
       <div>{input}</div>
       <button

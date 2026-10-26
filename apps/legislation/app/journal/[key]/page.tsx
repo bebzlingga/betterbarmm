@@ -72,13 +72,13 @@ export default async function Page({ params }: { params: Promise<{ key: string }
 			    header, ruled off from the order of business below it. */}
 			<div className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
 				<div className='border-b border-[var(--rule)] pb-[clamp(3.75rem,7vw,6.5rem)]'>
-					<p className='text-[15px] leading-[1.7] text-[var(--ink-2)]'>{journal.summary}</p>
+					<p className='text-[0.9375rem] leading-[1.7] text-[var(--ink-2)]'>{journal.summary}</p>
 				</div>
 			</div>
 
 			<section className='bb-container grid gap-12 pt-[clamp(3.75rem,7vw,6.5rem)] pb-[clamp(3.75rem,7vw,6.5rem)] lg:grid-cols-[minmax(0,1fr)_18rem]'>
 				<div className='min-w-0'>
-					<h2 className='border-b border-[var(--brass-line)] pb-3 font-mono text-[11px] font-semibold uppercase tracking-[0.16em]'>
+					<h2 className='border-b border-[var(--brass-line)] pb-3 font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.16em]'>
 						The order of business · {journal.items.length} items
 					</h2>
 					<ol>
@@ -89,7 +89,7 @@ export default async function Page({ params }: { params: Promise<{ key: string }
 							const href = measureHref(item.measure, journal.parliament)
 							return (
 								<li key={index} className='border-b border-[var(--rule-soft)] py-4'>
-									<p className='flex flex-wrap items-baseline gap-x-3 text-[11px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)]'>
+									<p className='flex flex-wrap items-baseline gap-x-3 text-[0.6875rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)]'>
 										<span>{KIND_LABEL[item.kind] ?? item.kind}</span>
 										{item.measure ? (
 											href ? (
@@ -102,13 +102,13 @@ export default async function Page({ params }: { params: Promise<{ key: string }
 										) : null}
 									</p>
 									{item.measure?.titleAsRead ? (
-										<p className='mt-1 text-[13px] leading-6 text-[var(--ink-3)]'>{item.measure.titleAsRead}</p>
+										<p className='mt-1 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>{item.measure.titleAsRead}</p>
 									) : null}
-									<p className='mt-1 text-[14px] leading-6 text-[var(--ink)]'>{item.text}</p>
+									<p className='mt-1 text-[0.875rem] leading-6 text-[var(--ink)]'>{item.text}</p>
 									{points.length ? (
 										<ul className='mt-3 border-l-2 border-[var(--brass-line)] pl-4'>
 											{points.map((point, i) => (
-												<li key={i} className='py-1 text-[13.5px] leading-6 text-[var(--ink-2)]'>
+												<li key={i} className='py-1 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>
 													{point.point}
 												</li>
 											))}
@@ -131,7 +131,7 @@ export default async function Page({ params }: { params: Promise<{ key: string }
 						]}
 					/>
 					{journal.presiding ? (
-						<p className='-mt-4 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+						<p className='-mt-4 text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
 							<span className='font-semibold text-[var(--ink-2)]'>Presiding: </span>
 							{journal.presiding}
 						</p>
@@ -139,17 +139,17 @@ export default async function Page({ params }: { params: Promise<{ key: string }
 
 					{journal.rollCalls.length ? (
 						<div>
-							<h2 className='border-b border-[var(--brass-line)] pb-3 font-mono text-[11px] font-semibold uppercase tracking-[0.16em]'>
+							<h2 className='border-b border-[var(--brass-line)] pb-3 font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.16em]'>
 								Votes counted
 							</h2>
 							<ul>
 								{journal.rollCalls.map((roll, index) => (
-									<li key={index} className='border-b border-[var(--rule-soft)] py-3 text-[13px] leading-6'>
+									<li key={index} className='border-b border-[var(--rule-soft)] py-3 text-[0.8125rem] leading-6'>
 										<p className='font-semibold'>{measureLabel(roll.measure)}</p>
 										<p className='num text-[var(--ink-2)]'>
 											{roll.yes} for · {roll.no} against · {roll.abstain} abstained
 										</p>
-										{roll.note ? <p className='text-[12px] text-[var(--ink-3)]'>{roll.note}</p> : null}
+										{roll.note ? <p className='text-[0.75rem] text-[var(--ink-3)]'>{roll.note}</p> : null}
 									</li>
 								))}
 							</ul>
@@ -157,7 +157,7 @@ export default async function Page({ params }: { params: Promise<{ key: string }
 					) : null}
 
 					{journal.attendance?.absent?.length || journal.attendance?.onLeave?.length ? (
-						<div className='text-[12.5px] leading-6 text-[var(--ink-3)]'>
+						<div className='text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
 							{journal.attendance.absent?.length ? <p>Absent: {journal.attendance.absent.join(', ')}.</p> : null}
 							{journal.attendance.onLeave?.length ? (
 								<p className='mt-2'>On official business or leave: {journal.attendance.onLeave.join(', ')}.</p>
@@ -166,9 +166,9 @@ export default async function Page({ params }: { params: Promise<{ key: string }
 						</div>
 					) : null}
 
-					{journal.dateNote ? <p className='text-[12.5px] leading-6 text-[var(--ink-3)]'>{journal.dateNote}</p> : null}
+					{journal.dateNote ? <p className='text-[0.78125rem] leading-6 text-[var(--ink-3)]'>{journal.dateNote}</p> : null}
 
-					<div className='flex flex-col gap-2 text-[13px]'>
+					<div className='flex flex-col gap-2 text-[0.8125rem]'>
 						<a href={journal.pdf_url} target='_blank' rel='noreferrer' className='rule-link'>
 							The journal as published (PDF)
 						</a>
@@ -191,12 +191,12 @@ function Unplaced({ journal, shown }: { journal: Journal; shown: Set<string> }) 
 	if (!rest.length) return null
 	return (
 		<div className='mt-10'>
-			<h2 className='border-b border-[var(--brass-line)] pb-3 font-mono text-[11px] font-semibold uppercase tracking-[0.16em]'>
+			<h2 className='border-b border-[var(--brass-line)] pb-3 font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.16em]'>
 				Also on the floor
 			</h2>
 			<ul>
 				{rest.map((point, index) => (
-					<li key={index} className='border-b border-[var(--rule-soft)] py-3 text-[13.5px] leading-6 text-[var(--ink-2)]'>
+					<li key={index} className='border-b border-[var(--rule-soft)] py-3 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>
 						{point.measure ? <span className='font-semibold text-[var(--ink)]'>{measureLabel(point.measure)}: </span> : null}
 						{point.point}
 					</li>
@@ -212,7 +212,7 @@ function Facts({ rows }: { rows: [string, string][] }) {
 			{rows.map(([label, value]) => (
 				<div key={label} className='border-b border-[var(--rule)] py-3 pr-3'>
 					<dd className='num text-[1.15rem] font-extrabold leading-tight tracking-[-0.02em]'>{value}</dd>
-					<dt className='mt-0.5 font-mono text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+					<dt className='mt-0.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 						{label}
 					</dt>
 				</div>

@@ -27,7 +27,7 @@ export default async function AuditsPage({ searchParams }: { searchParams: Promi
 		return p.size ? `/audits?${p}` : '/audits'
 	}
 	const chip = (on: boolean, to: string, text: string) => (
-		<Link key={text} href={to} className={`border px-3 py-1.5 text-[13px] font-semibold ${on ? 'border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)]' : 'border-[var(--rule)] text-[var(--ink-2)] hover:border-[var(--ink)]'}`}>
+		<Link key={text} href={to} className={`border px-3 py-1.5 text-[0.8125rem] font-semibold ${on ? 'border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)]' : 'border-[var(--rule)] text-[var(--ink-2)] hover:border-[var(--ink)]'}`}>
 			{text}
 		</Link>
 	)
@@ -50,12 +50,12 @@ export default async function AuditsPage({ searchParams }: { searchParams: Promi
 					].map((f) => (
 						<div key={f.l} className='border-t border-[var(--rule)] pt-3'>
 							<dd className='num text-[2rem] font-extrabold leading-none tracking-[-0.03em]'>{f.v}</dd>
-							<dt className='mt-2 text-[12.5px] text-[var(--ink-3)]'>{f.l}</dt>
+							<dt className='mt-2 text-[0.78125rem] text-[var(--ink-3)]'>{f.l}</dt>
 						</div>
 					))}
 				</dl>
 
-				<div className='mt-12 bg-[var(--paper-2)] p-6 text-[14px] leading-7 text-[var(--ink-2)]'>
+				<div className='mt-12 bg-[var(--paper-2)] p-6 text-[0.875rem] leading-7 text-[var(--ink-2)]'>
 					<p>
 						<strong>What is here, and what is not.</strong> coa.gov.ph turns away automated readers, so these are the reports the Internet Archive
 						kept a copy of: {`${auditReports.length} executive summaries, almost all for FY 2020. `}The regional government&rsquo;s and ministries&rsquo;
@@ -82,17 +82,17 @@ export default async function AuditsPage({ searchParams }: { searchParams: Promi
 					{shown.map((r) => (
 						<div key={`${r.entity}-${r.year}`}>
 							{r.unitKey ? (
-								<Link href={`/${r.unitKey}#audits`} className='rule-link mb-1 inline-block text-[12px] font-semibold uppercase tracking-[0.1em] text-[var(--brass)]'>
+								<Link href={`/${r.unitKey}#audits`} className='rule-link mb-1 inline-block text-[0.75rem] font-semibold uppercase tracking-[0.1em] text-[var(--brass)]'>
 									{label(r.area ?? '')}
 								</Link>
 							) : (
-								<p className='mb-1 text-[12px] font-semibold uppercase tracking-[0.1em] text-[var(--brass)]'>{label(r.area ?? '')}</p>
+								<p className='mb-1 text-[0.75rem] font-semibold uppercase tracking-[0.1em] text-[var(--brass)]'>{label(r.area ?? '')}</p>
 							)}
 							<AuditReportCard report={r} showEntity />
 						</div>
 					))}
 				</div>
-				<p className='mt-12 text-[12.5px] text-[var(--ink-3)]'>
+				<p className='mt-12 text-[0.78125rem] text-[var(--ink-3)]'>
 					Read {auditMeta.generatedAt}. Source: {auditMeta.source.map((s) => s.label).join('; ')}.
 				</p>
 			</section>

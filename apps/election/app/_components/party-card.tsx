@@ -33,7 +33,7 @@ export function PartyCard({
 			<div className='flex items-start justify-between gap-3'>
 				<PartyMark partyId={party.party_id} ballotName={party.ballot_name} size={96} />
 				{party.dominantStatus ? (
-					<span className='border border-[var(--accent)] px-2 py-1 font-mono text-[9px] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--accent)]'>
+					<span className='border border-[var(--accent)] px-2 py-1 font-mono text-[0.5625rem] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--accent)]'>
 						{dominantStatusLabel[party.dominantStatus]}
 					</span>
 				) : (
@@ -44,18 +44,18 @@ export function PartyCard({
 			<h3 className='mt-5 text-2xl font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]'>
 				{party.ballot_name}
 			</h3>
-			<p className='mt-2 text-[13.5px] font-semibold leading-snug text-[var(--ink-2)]'>
+			<p className='mt-2 text-[0.84375rem] font-semibold leading-snug text-[var(--ink-2)]'>
 				{party.full_name}
 			</p>
 
 			{party.affiliation ? (
-				<p className='mt-3 line-clamp-1 font-mono text-[9px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+				<p className='mt-3 line-clamp-1 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 					{party.affiliation}
 				</p>
 			) : null}
 
 			{showDescription && party.description ? (
-				<p className='mt-4 line-clamp-4 text-[13px] leading-6 text-[var(--ink-2)]'>
+				<p className='mt-4 line-clamp-4 text-[0.8125rem] leading-6 text-[var(--ink-2)]'>
 					{party.description}
 				</p>
 			) : null}
@@ -75,7 +75,7 @@ export function PartyCard({
 						// what it is describing before it describes it, and `dd` before
 						// `dt` is not a description list at all.
 						<div key={stat.label} className='flex flex-col-reverse'>
-							<dt className='mt-2 font-mono text-[9px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+							<dt className='mt-2 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 								{stat.label}
 							</dt>
 							<dd className='num text-xl font-extrabold leading-none text-[var(--ink)]'>

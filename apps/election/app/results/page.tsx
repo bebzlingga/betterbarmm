@@ -44,14 +44,14 @@ const percent = (value: number | null, places = 1) =>
 function PartyPlate({ partyId, label }: { partyId: string | null; label: string }) {
 	if (!partyId) {
 		return (
-			<span className='text-[13px] font-semibold leading-none text-[var(--ink-3)]'>{label}</span>
+			<span className='text-[0.8125rem] font-semibold leading-none text-[var(--ink-3)]'>{label}</span>
 		)
 	}
 
 	return (
 		<span className='flex min-w-0 items-center gap-2.5'>
 			<PartyMark partyId={partyId} ballotName={label} size={22} />
-			<span className='truncate text-[13px] font-semibold leading-none text-[var(--ink-2)]'>
+			<span className='truncate text-[0.8125rem] font-semibold leading-none text-[var(--ink-2)]'>
 				{label}
 			</span>
 		</span>
@@ -78,7 +78,7 @@ function CandidateRow({
 		<div className='border-t border-[var(--rule-soft)] py-2.5 first:border-t-0'>
 			<div className='flex items-baseline justify-between gap-4'>
 				<p
-					className={`min-w-0 text-[14px] leading-snug ${
+					className={`min-w-0 text-[0.875rem] leading-snug ${
 						candidate.won
 							? 'font-extrabold text-[var(--ink)]'
 							: 'font-medium text-[var(--ink-2)]'
@@ -88,15 +88,15 @@ function CandidateRow({
 					{candidate.interim_mp ? (
 						<span
 							title='Sat in the appointed interim parliament'
-							className='ml-2 font-mono text-[9px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'
+							className='ml-2 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'
 						>
 							Interim MP
 						</span>
 					) : null}
 				</p>
-				<p className='num shrink-0 text-[14px] font-semibold leading-none text-[var(--ink)]'>
+				<p className='num shrink-0 text-[0.875rem] font-semibold leading-none text-[var(--ink)]'>
 					{votes(candidate.votes)}
-					<span className='ml-2 font-mono text-[10px] font-semibold tracking-[0.1em] text-[var(--ink-3)]'>
+					<span className='ml-2 font-mono text-[0.625rem] font-semibold tracking-[0.1em] text-[var(--ink-3)]'>
 						{percent(share(candidate.votes, total))}
 					</span>
 				</p>
@@ -111,7 +111,7 @@ function CandidateRow({
 						background: candidate.won ? (color ?? 'var(--ink)') : 'var(--rule)',
 					}}
 				/>
-				<span className='truncate font-mono text-[9px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+				<span className='truncate font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 					{candidate.party_label}
 				</span>
 			</div>
@@ -146,11 +146,11 @@ function Race({
 		<details className='group border-t border-[var(--rule)] py-5'>
 			<summary className='flex cursor-pointer list-none flex-col gap-3 sm:flex-row sm:items-baseline sm:justify-between'>
 				<div className='min-w-0'>
-					<p className='font-mono text-[9px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+					<p className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 						{title}
 						{subtitle ? ` · ${subtitle}` : ''}
 					</p>
-					<p className='mt-2 text-[17px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+					<p className='mt-2 text-[1.0625rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 						{winners.map((winner) => winner.name).join(', ')}
 					</p>
 					{/* One plate per party, not per winner. The settler-communities seat
@@ -171,15 +171,15 @@ function Race({
 				</div>
 
 				<div className='shrink-0 text-left sm:text-right'>
-					<p className='num text-[18px] font-extrabold leading-none text-[var(--ink)]'>
+					<p className='num text-[1.125rem] font-extrabold leading-none text-[var(--ink)]'>
 						{votes(winners[0]?.votes ?? null)}
 					</p>
-					<p className='mt-2 font-mono text-[9px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+					<p className='mt-2 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 						{margin === null
 							? `${candidates.length} on the ballot`
 							: `${decimal.format(margin)} ahead · ${candidates.length} ran`}
 					</p>
-					<p className='mt-2 font-mono text-[9px] font-semibold uppercase tracking-[0.14em] text-[var(--accent)] group-open:hidden'>
+					<p className='mt-2 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-[var(--accent)] group-open:hidden'>
 						Show the field
 					</p>
 				</div>
@@ -293,7 +293,7 @@ export default function ResultsPage() {
 											<th
 												key={heading}
 												scope='col'
-												className={`pb-3 font-mono text-[9px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] ${
+												className={`pb-3 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] ${
 													index === 0 ? 'text-left' : 'text-right'
 												}`}
 											>
@@ -314,16 +314,16 @@ export default function ResultsPage() {
 													style={{ background: blocColor(bloc.party_id) }}
 												/>
 												<span className='min-w-0'>
-													<span className='block text-[15px] font-bold leading-none text-[var(--ink)]'>
+													<span className='block text-[0.9375rem] font-bold leading-none text-[var(--ink)]'>
 														{bloc.label}
 													</span>
 													{bloc.district_component_parties.length ? (
-														<span className='mt-1.5 block font-mono text-[9px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+														<span className='mt-1.5 block font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 															Districts contested through SIAP, Al Ittihad-UKB and BPP
 														</span>
 													) : null}
 													{bloc.note ? (
-														<span className='mt-1.5 block font-mono text-[9px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+														<span className='mt-1.5 block font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 															{bloc.note}
 														</span>
 													) : null}
@@ -337,12 +337,12 @@ export default function ResultsPage() {
 										].map((seats, index) => (
 											<td
 												key={index}
-												className='num py-3.5 text-right text-[15px] font-semibold text-[var(--ink-2)]'
+												className='num py-3.5 text-right text-[0.9375rem] font-semibold text-[var(--ink-2)]'
 											>
 												{seats || '—'}
 											</td>
 										))}
-										<td className='num py-3.5 text-right text-[17px] font-extrabold text-[var(--ink)]'>
+										<td className='num py-3.5 text-right text-[1.0625rem] font-extrabold text-[var(--ink)]'>
 											{bloc.total_seats}
 										</td>
 									</tr>
@@ -390,10 +390,10 @@ export default function ResultsPage() {
 								},
 							].map((row) => (
 								<div key={row.term} className='border-b border-[var(--rule-soft)] py-4'>
-									<dt className='font-mono text-[9px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+									<dt className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 										{row.term}
 									</dt>
-									<dd className='mt-2 text-[15px] leading-[1.5] text-[var(--ink-2)]'>
+									<dd className='mt-2 text-[0.9375rem] leading-[1.5] text-[var(--ink-2)]'>
 										{row.detail}
 									</dd>
 								</div>
@@ -434,9 +434,9 @@ export default function ResultsPage() {
 										>
 											<div className='flex items-center justify-between gap-4'>
 												<PartyPlate partyId={party.party_id} label={party.label} />
-												<p className='num shrink-0 text-[14px] font-semibold leading-none text-[var(--ink)]'>
+												<p className='num shrink-0 text-[0.875rem] font-semibold leading-none text-[var(--ink)]'>
 													{votes(party.votes)}
-													<span className='ml-2 font-mono text-[10px] font-semibold tracking-[0.1em] text-[var(--ink-3)]'>
+													<span className='ml-2 font-mono text-[0.625rem] font-semibold tracking-[0.1em] text-[var(--ink-3)]'>
 														{percent(share(party.votes, prTotalVotes), 2)}
 													</span>
 												</p>
@@ -452,7 +452,7 @@ export default function ResultsPage() {
 															: 'var(--rule)',
 													}}
 												/>
-												<span className='shrink-0 font-mono text-[9px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+												<span className='shrink-0 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 													{party.seats
 														? `${party.seats} ${party.seats === 1 ? 'seat' : 'seats'}`
 														: 'No seat'}
@@ -484,7 +484,7 @@ export default function ResultsPage() {
 											<div>
 												<div className='flex items-center justify-between gap-4 border-b border-[var(--brass-line)] pb-3.5'>
 													<PartyPlate partyId={party.party_id} label={party.label} />
-													<p className='num shrink-0 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+													<p className='num shrink-0 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 														{party.nominees.length}{' '}
 														{party.nominees.length === 1 ? 'seat' : 'seats'}
 													</p>
@@ -493,9 +493,9 @@ export default function ResultsPage() {
 													{party.nominees.map((nominee, index) => (
 														<li
 															key={nominee.name}
-															className='flex items-baseline gap-2.5 text-[13.5px] leading-snug text-[var(--ink-2)]'
+															className='flex items-baseline gap-2.5 text-[0.84375rem] leading-snug text-[var(--ink-2)]'
 														>
-															<span className='num shrink-0 font-mono text-[10px] font-semibold text-[var(--ink-3)]'>
+															<span className='num shrink-0 font-mono text-[0.625rem] font-semibold text-[var(--ink-3)]'>
 																{index + 1}
 															</span>
 															<span className='min-w-0'>
@@ -503,7 +503,7 @@ export default function ResultsPage() {
 																{nominee.bta_incumbent ? (
 																	<span
 																		title='Sat in the appointed interim parliament'
-																		className='ml-1.5 font-mono text-[8px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'
+																		className='ml-1.5 font-mono text-[0.5rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'
 																	>
 																		Interim
 																	</span>
@@ -540,7 +540,7 @@ export default function ResultsPage() {
 									<h3 className='section-title section-title-sm text-[var(--ink)]'>
 										{area.area}
 									</h3>
-									<p className='num shrink-0 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+									<p className='num shrink-0 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 										{area.seats} {area.seats === 1 ? 'seat' : 'seats'}
 									</p>
 								</div>
@@ -560,7 +560,7 @@ export default function ResultsPage() {
 					))}
 				</div>
 
-				<p className='mt-12 border-t border-[var(--brass-line)] pt-5 font-mono text-[10px] font-semibold uppercase leading-5 tracking-[0.14em] text-[var(--ink-3)]'>
+				<p className='mt-12 border-t border-[var(--brass-line)] pt-5 font-mono text-[0.625rem] font-semibold uppercase leading-5 tracking-[0.14em] text-[var(--ink-3)]'>
 					{district.seats} district seats · {decimal.format(district.invalid_votes)} invalid or
 					unattributed ballots
 				</p>
@@ -595,15 +595,15 @@ export default function ResultsPage() {
 					    is not a race at all, and the method is the fact. */}
 					<Rise distance={14}>
 						<div className='border-t border-[var(--rule)] py-5'>
-							<p className='font-mono text-[9px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+							<p className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 								Non-Moro Indigenous Peoples · {sectoral.non_moro_indigenous_peoples.seats} seats
 							</p>
-							<p className='mt-2 text-[17px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+							<p className='mt-2 text-[1.0625rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 								{sectoral.non_moro_indigenous_peoples.elected
 									.map((member) => member.name)
 									.join(', ')}
 							</p>
-							<p className='mt-2.5 font-mono text-[9px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+							<p className='mt-2.5 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 								{sectoral.non_moro_indigenous_peoples.elected
 									.map((member) => member.group)
 									.join(' · ')}
@@ -635,17 +635,17 @@ export default function ResultsPage() {
 						{sources.map((source) => (
 							<Rise key={source.id} distance={12}>
 								<article className='border-t border-[var(--rule)] pt-5'>
-									<p className='font-mono text-[9px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+									<p className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 										{source.publisher} · {formatDate(source.date)}
 									</p>
-									<h3 className='mt-3 text-[15px] font-bold leading-snug text-[var(--ink)]'>
+									<h3 className='mt-3 text-[0.9375rem] font-bold leading-snug text-[var(--ink)]'>
 										{source.title}
 									</h3>
 									<a
 										href={source.url}
 										target='_blank'
 										rel='noreferrer'
-										className='rule-link mt-3 inline-block font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]'
+										className='rule-link mt-3 inline-block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]'
 									>
 										Open the source →
 									</a>

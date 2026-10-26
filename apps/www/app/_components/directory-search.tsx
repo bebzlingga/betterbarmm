@@ -137,14 +137,14 @@ export function DirectorySearch({ head, children }: { head: React.ReactNode; chi
 						onKeyDown={onKeyDown}
 						placeholder='An office, a minister, a town, a mayor, a barangay…'
 						aria-controls='directory-results'
-						className='min-w-0 flex-1 bg-transparent text-[16px] outline-none placeholder:text-[#8a857a] [&::-webkit-search-cancel-button]:hidden'
+						className='min-w-0 flex-1 bg-transparent text-[1rem] outline-none placeholder:text-[#8a857a] [&::-webkit-search-cancel-button]:hidden'
 					/>
 					{q ? (
 						<button type='button' onClick={() => (setQ(''), input.current?.focus())} aria-label='Clear the search' className='grid size-7 shrink-0 cursor-pointer place-items-center rounded-full text-[#5c574c] hover:bg-[#f1ede6]'>
 							<XIcon size={15} weight='bold' aria-hidden='true' />
 						</button>
 					) : (
-						<kbd className='hidden shrink-0 rounded border border-[#d9d4ca] px-1.5 py-0.5 font-mono text-[11px] text-[#8a857a] sm:block'>/</kbd>
+						<kbd className='hidden shrink-0 rounded border border-[#d9d4ca] px-1.5 py-0.5 font-mono text-[0.6875rem] text-[#8a857a] sm:block'>/</kbd>
 					)}
 				</span>
 			</form>
@@ -153,7 +153,7 @@ export function DirectorySearch({ head, children }: { head: React.ReactNode; chi
 							<a
 								key={href}
 								href={href}
-								className='inline-flex items-center gap-1.5 rounded-full border border-white/30 px-3.5 py-1.5 text-[13px] font-semibold text-[var(--ink)] transition hover:border-white hover:bg-white hover:text-[#8f2328]'
+								className='inline-flex items-center gap-1.5 rounded-full border border-white/30 px-3.5 py-1.5 text-[0.8125rem] font-semibold text-[var(--ink)] transition hover:border-white hover:bg-white hover:text-[#8f2328]'
 							>
 								<Icon size={14} weight='bold' aria-hidden='true' /> {label}
 							</a>
@@ -166,7 +166,7 @@ export function DirectorySearch({ head, children }: { head: React.ReactNode; chi
 				{query.trim() ? (
 					<div className={`bb-container ${total ? 'py-16 lg:py-24' : 'py-32 lg:py-48'}`}>
 						{/* A count over the results; with none, the line stands alone in the middle. */}
-						<p className={`text-[13.5px] text-[var(--ink-3)] ${total ? '' : 'text-center'}`}>
+						<p className={`text-[0.84375rem] text-[var(--ink-3)] ${total ? '' : 'text-center'}`}>
 							{!entries
 								? 'Searching…'
 								: total
@@ -176,7 +176,7 @@ export function DirectorySearch({ head, children }: { head: React.ReactNode; chi
 						<div className='mt-6 grid gap-10 lg:grid-cols-2'>
 							{groups.map((g) => (
 								<section key={g.kind} aria-label={PLURAL[g.kind]}>
-									<h2 className='flex items-baseline justify-between border-b border-[var(--ink)] pb-2 text-[12px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
+									<h2 className='flex items-baseline justify-between border-b border-[var(--ink)] pb-2 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
 										{PLURAL[g.kind]}
 										<span className='text-[var(--ink-mute)]'>{g.all.length > LIMIT ? `${LIMIT} of ${g.all.length}` : g.all.length}</span>
 									</h2>
@@ -193,10 +193,10 @@ export function DirectorySearch({ head, children }: { head: React.ReactNode; chi
 														data-on={on}
 														className='group flex items-center gap-4 border-b border-[var(--rule-soft)] px-2 py-3 data-[on=true]:bg-[var(--paper-2)]'
 													>
-														<Emblem image={e.image ? { src: e.image } : null} name={e.title} portrait={e.kind === 'Member of Parliament'} className='size-10 rounded-full text-[10px]' />
+														<Emblem image={e.image ? { src: e.image } : null} name={e.title} portrait={e.kind === 'Member of Parliament'} className='size-10 rounded-full text-[0.625rem]' />
 														<span className='min-w-0 flex-1'>
-															<span className='block truncate text-[15px] font-semibold group-data-[on=true]:text-[var(--accent)]'>{e.title}</span>
-															<span className='block truncate text-[13px] text-[var(--ink-3)]'>{e.sub}</span>
+															<span className='block truncate text-[0.9375rem] font-semibold group-data-[on=true]:text-[var(--accent)]'>{e.title}</span>
+															<span className='block truncate text-[0.8125rem] text-[var(--ink-3)]'>{e.sub}</span>
 														</span>
 														<ArrowRightIcon size={14} className='shrink-0 text-[var(--ink-mute)] group-data-[on=true]:text-[var(--accent)]' aria-hidden='true' />
 													</Link>

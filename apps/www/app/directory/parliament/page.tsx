@@ -37,7 +37,7 @@ export default function ParliamentDirectoryPage() {
 			<Masthead brand label='Directory' lines={['Members of Parliament']} />
 
 			<section className='bb-container bb-section'>
-				<p className='text-[14.5px] leading-[1.7] text-[var(--ink-2)]'>
+				<p className='text-[0.90625rem] leading-[1.7] text-[var(--ink-2)]'>
 					The {members.length} Members elected on 14 September 2026, who take office on 30 October 2026. Their offices in Parliament are not yet published; until they are, write through the{' '}
 					<a href='https://parliament.bangsamoro.gov.ph/' target='_blank' rel='noreferrer' className={linkClass}>
 						Bangsamoro Parliament
@@ -51,17 +51,17 @@ export default function ParliamentDirectoryPage() {
 
 				{groups.map((g) => (
 					<section key={g.label} aria-label={g.label} className='mt-12'>
-						<h2 className='text-[13px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
+						<h2 className='text-[0.8125rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
 							{g.label}s <span className='text-[var(--ink-mute)]'>{g.list.length}</span>
 						</h2>
 						<ul className='mt-4 grid pt-px pl-px sm:grid-cols-2 lg:grid-cols-4'>
 							{g.list.map((m) => (
 								<li key={m.rosterName} id={memberId(m)} className='-mt-px -ml-px scroll-mt-[calc(var(--site-header-h)+1rem)] border border-[var(--rule)] bg-[var(--paper)] target:bg-[var(--paper-2)] target:outline-2 target:outline-[var(--accent)]'>
 									<a href={`${LEGISLATION}/members/elected`} className='group flex h-full items-center gap-3 p-4 hover:bg-[var(--paper-2)]'>
-										<Emblem image={memberPortrait(m)} name={m.fullName} portrait className='size-12 rounded-full text-[13px]' />
+										<Emblem image={memberPortrait(m)} name={m.fullName} portrait className='size-12 rounded-full text-[0.8125rem]' />
 										<span className='min-w-0'>
-											<span className='block text-[14px] font-semibold leading-snug group-hover:text-[var(--accent)]'>{m.fullName}</span>
-											<span className='block text-[12px] leading-5 text-[var(--ink-3)]'>{[m.district ?? m.sector, m.partyLabel].filter(Boolean).join(' · ')}</span>
+											<span className='block text-[0.875rem] font-semibold leading-snug group-hover:text-[var(--accent)]'>{m.fullName}</span>
+											<span className='block text-[0.75rem] leading-5 text-[var(--ink-3)]'>{[m.district ?? m.sector, m.partyLabel].filter(Boolean).join(' · ')}</span>
 										</span>
 										<ArrowUpRightIcon size={12} className='ml-auto shrink-0 text-[var(--ink-3)] group-hover:text-[var(--accent)]' aria-hidden='true' />
 									</a>

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 	description: 'Every BARMM town and city by the public works the Bangsamoro budget has funded in it since FY 2020: how many projects and how much.',
 }
 
-const TH = 'py-2.5 pr-6 text-[11.5px] font-semibold uppercase tracking-[0.06em] text-[var(--ink-3)] last:pr-0'
+const TH = 'py-2.5 pr-6 text-[0.71875rem] font-semibold uppercase tracking-[0.06em] text-[var(--ink-3)] last:pr-0'
 const TD = 'py-3 pr-6 align-top last:pr-0'
 
 export default function TownsPage() {
@@ -34,7 +34,7 @@ export default function TownsPage() {
 			/>
 			<section className='bb-container bb-section'>
 				<div className='overflow-x-auto'>
-					<table className='w-full min-w-[40rem] border-collapse text-left text-[14px]'>
+					<table className='w-full min-w-[40rem] border-collapse text-left text-[0.875rem]'>
 						<thead>
 							<tr className='border-b border-[var(--rule)]'>
 								<th className={TH}>#</th>
@@ -62,7 +62,7 @@ export default function TownsPage() {
 						</tbody>
 					</table>
 				</div>
-				<p className='mt-8 max-w-[48rem] text-[13px] leading-6 text-[var(--ink-3)]'>
+				<p className='mt-8 max-w-[48rem] text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 					{unplaced.length.toLocaleString('en-PH')} projects ({peso(unplaced.reduce((s, w) => s + w.amount, 0))}) name no town the
 					directory knows: inter-town roads, sitios named alone, and Sulu&rsquo;s, whose towns left the region in 2024. They are in
 					the full list under their province.

@@ -19,7 +19,7 @@ function TribeRail({ tribes, active }: { tribes: BangsamoroTribe[]; active: stri
 	return (
 		<div className='sticky top-[var(--sticky-top)] z-20 transition-[top] duration-300 -mx-6 border-y border-[var(--rule)] bg-[var(--paper)]/92 px-6 backdrop-blur-md lg:-mx-8 lg:px-8'>
 			<div className='flex items-center gap-2 overflow-x-auto py-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden'>
-				<span className='shrink-0 pr-2 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--ink-3)]'>
+				<span className='shrink-0 pr-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--ink-3)]'>
 					Jump to
 				</span>
 				{tribes.map((tribe, index) => (
@@ -27,7 +27,7 @@ function TribeRail({ tribes, active }: { tribes: BangsamoroTribe[]; active: stri
 						key={tribe.slug}
 						href={`#tribe-${tribe.slug}`}
 						data-active={active === tribe.slug}
-						className='flex shrink-0 items-baseline gap-2 border border-[var(--rule)] px-3 py-1.5 font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)] transition hover:border-[var(--accent)] hover:text-[var(--accent)] data-[active=true]:border-[var(--accent)] data-[active=true]:bg-[var(--accent)] data-[active=true]:text-white'
+						className='flex shrink-0 items-baseline gap-2 border border-[var(--rule)] px-3 py-1.5 font-mono text-[0.65625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)] transition hover:border-[var(--accent)] hover:text-[var(--accent)] data-[active=true]:border-[var(--accent)] data-[active=true]:bg-[var(--accent)] data-[active=true]:text-white'
 					>
 						<span className='opacity-60'>{String(index + 1).padStart(2, '0')}</span>
 						{tribe.name}
@@ -50,10 +50,10 @@ function ColumnList({ items }: { items: { name: string; note: string }[] }) {
 					    group counters read elsewhere in Discover. With the number out of the
 					    way the note underneath no longer needs indenting past it either. */}
 					<div className='flex items-baseline justify-between gap-2.5'>
-						<h4 className='text-[16px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+						<h4 className='text-[1rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 							{item.name}
 						</h4>
-						<span className='num shrink-0 text-[10.5px] font-medium text-[var(--ink-3)]'>
+						<span className='num shrink-0 text-[0.65625rem] font-medium text-[var(--ink-3)]'>
 							{String(index + 1).padStart(2, '0')}
 						</span>
 					</div>
@@ -87,7 +87,7 @@ function TribeSection({ tribe, index }: { tribe: BangsamoroTribe; index: number 
 				{/* ---- Masthead ---- */}
 				<div className='grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14'>
 					<div>
-						<p className='flex items-center gap-3 font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--ink-3)]'>
+						<p className='flex items-center gap-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-[var(--ink-3)]'>
 							<span className='text-[var(--accent)]'>{String(index + 1).padStart(2, '0')}</span>
 							<span className='h-px w-8 bg-[var(--rule)]' aria-hidden='true' />
 							{tribe.homeland}
@@ -126,11 +126,11 @@ function TribeSection({ tribe, index }: { tribe: BangsamoroTribe; index: number 
 											placeholder='blur'
 											className='size-full object-cover'
 										/>
-										<span className='absolute left-0 top-0 z-2 bg-[var(--accent)] px-2 py-1 font-mono text-[9px] font-semibold uppercase tracking-[0.18em] text-white'>
+										<span className='absolute left-0 top-0 z-2 bg-[var(--accent)] px-2 py-1 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.18em] text-white'>
 											{i === 0 ? 'Table' : 'Hand'}
 										</span>
 									</div>
-									<figcaption className='mt-2.5 border-t border-[var(--rule)] pt-2.5 text-[11.5px] leading-5 text-[var(--ink-3)]'>
+									<figcaption className='mt-2.5 border-t border-[var(--rule)] pt-2.5 text-[0.71875rem] leading-5 text-[var(--ink-3)]'>
 										{entry.caption}{' '}
 										<a
 											href={entry.source}
@@ -156,12 +156,12 @@ function TribeSection({ tribe, index }: { tribe: BangsamoroTribe; index: number 
 						return (
 							<div key={column.key}>
 								<div className='flex items-baseline justify-between gap-3 border-t border-[var(--ink)] pt-3'>
-									<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--ink)]'>
+									<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--ink)]'>
 										{column.eyebrow}
 									</p>
-									<p className='num text-[11px] text-[var(--ink-3)]'>{items.length}</p>
+									<p className='num text-[0.6875rem] text-[var(--ink-3)]'>{items.length}</p>
 								</div>
-								<p className='mt-2 text-[12px] leading-5 text-[var(--ink-3)]'>{column.blurb}</p>
+								<p className='mt-2 text-[0.75rem] leading-5 text-[var(--ink-3)]'>{column.blurb}</p>
 								<ColumnList items={items} />
 							</div>
 						)
@@ -177,10 +177,10 @@ function TribeSection({ tribe, index }: { tribe: BangsamoroTribe; index: number 
 				{tribe.livingTreasure ? (
 					<div className='mt-12 border border-[var(--rule)] bg-[var(--paper-2)] p-6 lg:p-8'>
 						<div className='flex flex-wrap items-baseline gap-x-4 gap-y-2'>
-							<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--accent)]'>
+							<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-[var(--accent)]'>
 								National Living Treasure
 							</p>
-							<p className='font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+							<p className='font-mono text-[0.625rem] uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 								Gawad sa Manlilikha ng Bayan
 							</p>
 						</div>
@@ -190,7 +190,7 @@ function TribeSection({ tribe, index }: { tribe: BangsamoroTribe; index: number 
 								<h4 className='text-2xl font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>
 									{tribe.livingTreasure.name}
 								</h4>
-								<p className='mt-2 text-[13px] text-[var(--ink-3)]'>
+								<p className='mt-2 text-[0.8125rem] text-[var(--ink-3)]'>
 									{tribe.livingTreasure.title} · {tribe.livingTreasure.place}
 								</p>
 							</div>
@@ -203,7 +203,7 @@ function TribeSection({ tribe, index }: { tribe: BangsamoroTribe; index: number 
 									href={tribe.livingTreasure.href}
 									target='_blank'
 									rel='noreferrer'
-									className='mt-4 inline-flex items-center gap-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
+									className='mt-4 inline-flex items-center gap-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
 								>
 									BCPCH profile
 									<span aria-hidden='true'>&#8599;</span>
@@ -215,7 +215,7 @@ function TribeSection({ tribe, index }: { tribe: BangsamoroTribe; index: number 
 
 				{/* ---- Sources ---- */}
 				<div className='mt-8 flex flex-wrap items-center gap-x-2 gap-y-2 pb-16 lg:pb-20'>
-					<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+					<span className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 						Sources
 					</span>
 					{tribe.sources.map((source) => (
@@ -224,7 +224,7 @@ function TribeSection({ tribe, index }: { tribe: BangsamoroTribe; index: number 
 							href={source.href}
 							target='_blank'
 							rel='noreferrer'
-							className='border border-[var(--rule)] px-2.5 py-1 text-[11.5px] text-[var(--ink-2)] transition hover:border-[var(--accent)] hover:text-[var(--accent)]'
+							className='border border-[var(--rule)] px-2.5 py-1 text-[0.71875rem] text-[var(--ink-2)] transition hover:border-[var(--accent)] hover:text-[var(--accent)]'
 						>
 							{source.label}
 						</a>

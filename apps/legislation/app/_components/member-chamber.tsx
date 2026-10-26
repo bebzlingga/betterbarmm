@@ -16,7 +16,7 @@ export function MemberChamber({ record, name }: { record: ChamberRecord; name: s
 	return (
 		<section className='mt-16 border-t border-[var(--rule)] pt-12'>
 			<h2 className='text-[1.5rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>In the chamber</h2>
-			<p className='mt-2 max-w-[46rem] text-[14px] leading-6 text-[var(--ink-3)]'>
+			<p className='mt-2 max-w-[46rem] text-[0.875rem] leading-6 text-[var(--ink-3)]'>
 				From the plenary journals Parliament has published, which stop in March 2023. A sitting counts as present when the journal&rsquo;s roll call does not
 				list {name} as absent or on leave.
 			</p>
@@ -24,7 +24,7 @@ export function MemberChamber({ record, name }: { record: ChamberRecord; name: s
 				{figures.map((f) => (
 					<div key={f.label} className='border-t border-[var(--rule)] pt-3'>
 						<dd className='num text-[1.75rem] font-extrabold leading-none tracking-[-0.03em]'>{f.value}</dd>
-						<dt className='mt-2 text-[12.5px] text-[var(--ink-3)]'>{f.label}</dt>
+						<dt className='mt-2 text-[0.78125rem] text-[var(--ink-3)]'>{f.label}</dt>
 					</div>
 				))}
 			</dl>
@@ -36,14 +36,14 @@ export function MemberChamber({ record, name }: { record: ChamberRecord; name: s
 						<ul className='mt-3'>
 							{[...record.points].sort((a, b) => (b.journal.dates[0] ?? '').localeCompare(a.journal.dates[0] ?? '')).slice(0, 8).map((p, i) => (
 								<li key={i} className='border-t border-[var(--rule)] py-3'>
-									<p className='text-[14px] leading-6 text-[var(--ink-2)]'>{p.text}</p>
-									<a href={`/journal/${p.journal.key}`} className='mt-1 inline-block text-[12px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
+									<p className='text-[0.875rem] leading-6 text-[var(--ink-2)]'>{p.text}</p>
+									<a href={`/journal/${p.journal.key}`} className='mt-1 inline-block text-[0.75rem] text-[var(--ink-3)] hover:text-[var(--accent)]'>
 										{p.journal.title} · {journalDates(p.journal)}
 									</a>
 								</li>
 							))}
 						</ul>
-						{record.points.length > 8 ? <p className='mt-2 text-[12.5px] text-[var(--ink-3)]'>The latest 8 of {record.points.length}.</p> : null}
+						{record.points.length > 8 ? <p className='mt-2 text-[0.78125rem] text-[var(--ink-3)]'>The latest 8 of {record.points.length}.</p> : null}
 					</div>
 				) : null}
 				{record.absent.length || record.onLeave.length ? (
@@ -53,18 +53,18 @@ export function MemberChamber({ record, name }: { record: ChamberRecord; name: s
 							{[...record.absent.map((j) => ({ j, why: 'Absent' })), ...record.onLeave.map((j) => ({ j, why: 'On leave or official business' }))]
 								.sort((a, b) => (b.j.dates[0] ?? '').localeCompare(a.j.dates[0] ?? ''))
 								.map(({ j, why }) => (
-									<li key={`${j.key}-${why}`} className='flex items-baseline justify-between gap-4 border-t border-[var(--rule)] py-2.5 text-[13.5px]'>
+									<li key={`${j.key}-${why}`} className='flex items-baseline justify-between gap-4 border-t border-[var(--rule)] py-2.5 text-[0.84375rem]'>
 										<a href={`/journal/${j.key}`} className='text-[var(--ink)] hover:text-[var(--accent)]'>
 											{journalDates(j)}
 										</a>
-										<span className='text-[12.5px] text-[var(--ink-3)]'>{why}</span>
+										<span className='text-[0.78125rem] text-[var(--ink-3)]'>{why}</span>
 									</li>
 								))}
 						</ul>
 					</div>
 				) : null}
 			</div>
-			<p className='mt-8 max-w-[46rem] text-[12.5px] leading-6 text-[var(--ink-3)]'>
+			<p className='mt-8 max-w-[46rem] text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
 				Members who also run a ministry are often away on its business; the journals list that as absent unless the member asked to be excused. Most votes
 				are taken by voice, so a member&rsquo;s position on a measure is recorded only on the few roll calls.
 			</p>

@@ -21,17 +21,17 @@ export function AuditReportCard({ report: r, showEntity = false }: { report: Aud
 	return (
 		<article className='border-t border-[var(--rule)] pt-5'>
 			<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
-				<p className='text-[15px] font-extrabold tracking-[-0.01em]'>
+				<p className='text-[0.9375rem] font-extrabold tracking-[-0.01em]'>
 					{showEntity ? `${r.unitName ?? r.entity} · ` : ''}FY {r.year}
 				</p>
 				{o ? (
-					<p className='text-[13px]'>
+					<p className='text-[0.8125rem]'>
 						<span className={`font-semibold ${o.tone}`}>{o.label} opinion</span>
 						<span className='text-[var(--ink-3)]'> · {o.means}</span>
 					</p>
 				) : null}
 			</div>
-			<dl className='mt-3 flex flex-wrap gap-x-8 gap-y-2 text-[13px]'>
+			<dl className='mt-3 flex flex-wrap gap-x-8 gap-y-2 text-[0.8125rem]'>
 				{r.observations != null ? (
 					<div>
 						<dt className='inline text-[var(--ink-3)]'>Observations </dt>
@@ -63,17 +63,17 @@ export function AuditReportCard({ report: r, showEntity = false }: { report: Aud
 			{r.findings.length ? (
 				<ul className='mt-4 space-y-2'>
 					{r.findings.map((f, i) => (
-						<li key={i} className='flex gap-3 text-[14px] leading-6 text-[var(--ink-2)]'>
+						<li key={i} className='flex gap-3 text-[0.875rem] leading-6 text-[var(--ink-2)]'>
 							<span className='mt-2.5 size-1.5 shrink-0 rounded-full bg-[var(--brass)]' aria-hidden='true' />
 							<span>
 								{f.text}
-								{f.page ? <span className='text-[12px] text-[var(--ink-3)]'> (p. {f.page})</span> : null}
+								{f.page ? <span className='text-[0.75rem] text-[var(--ink-3)]'> (p. {f.page})</span> : null}
 							</span>
 						</li>
 					))}
 				</ul>
 			) : null}
-			<p className='mt-4 text-[12.5px] text-[var(--ink-3)]'>
+			<p className='mt-4 text-[0.78125rem] text-[var(--ink-3)]'>
 				Executive Summary of the Annual Audit Report ·{' '}
 				<a href={r.archived ?? r.pdf} target='_blank' rel='noreferrer' className='rule-link'>
 					the copy read
@@ -96,7 +96,7 @@ export function AuditReportCard({ report: r, showEntity = false }: { report: Aud
 export function AuditFindings({ reports, name }: { reports: AuditReport[]; name: string }) {
 	if (!reports.length)
 		return (
-			<p className='text-[14px] leading-7 text-[var(--ink-3)]'>
+			<p className='text-[0.875rem] leading-7 text-[var(--ink-3)]'>
 				No audit report for {name} could be read yet. See{' '}
 				<a href='/audits' className='rule-link'>
 					COA audits

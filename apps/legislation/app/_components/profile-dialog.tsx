@@ -98,8 +98,8 @@ export function ProfileDialog({
 							<ArrowLeftIcon size={16} className='shrink-0 text-[var(--ink-3)] group-hover:text-[var(--accent)]' aria-hidden='true' />
 							<Face photo={prev.photo} name={prev.name} />
 							<span className='min-w-0'>
-								<span className='block text-[10.5px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>Previous</span>
-								<span className='block truncate text-[14px] font-bold text-[var(--ink)] group-hover:text-[var(--accent)]'>{prev.name}</span>
+								<span className='block text-[0.65625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>Previous</span>
+								<span className='block truncate text-[0.875rem] font-bold text-[var(--ink)] group-hover:text-[var(--accent)]'>{prev.name}</span>
 							</span>
 						</button>
 					) : (
@@ -112,8 +112,8 @@ export function ProfileDialog({
 							className='group flex min-w-0 cursor-pointer items-center justify-end gap-3 px-5 py-3.5 text-right transition hover:bg-[var(--paper-2)]'
 						>
 							<span className='min-w-0'>
-								<span className='block text-[10.5px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>Next</span>
-								<span className='block truncate text-[14px] font-bold text-[var(--ink)] group-hover:text-[var(--accent)]'>{next.name}</span>
+								<span className='block text-[0.65625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>Next</span>
+								<span className='block truncate text-[0.875rem] font-bold text-[var(--ink)] group-hover:text-[var(--accent)]'>{next.name}</span>
 							</span>
 							<Face photo={next.photo} name={next.name} />
 							<ArrowRightIcon size={16} className='shrink-0 text-[var(--ink-3)] group-hover:text-[var(--accent)]' aria-hidden='true' />

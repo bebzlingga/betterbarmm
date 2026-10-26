@@ -144,7 +144,7 @@ export default function DiscoverBarmmPage() {
 				scrollTo='#chapters'
 				scrollLabel={`${discoverBarmmTopics.length} chapters`}
 				footnote={
-					<p className='num text-[12.5px] text-white/55'>
+					<p className='num text-[0.78125rem] text-white/55'>
 						{discoverBarmmTopics.length} chapters · {momentCount} moments · {peopleCount} peoples
 					</p>
 				}
@@ -195,13 +195,13 @@ export default function DiscoverBarmmPage() {
 							hideCredit
 						>
 							<span className='absolute inset-0 z-2 flex flex-col justify-end p-7 lg:p-10'>
-								<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-white/70'>
+								<span className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-white/70'>
 									Start at the beginning
 								</span>
 								<span className='mt-3 max-w-[14ch] text-3xl font-extrabold leading-[1.05] tracking-[-0.035em] text-white sm:text-4xl'>
 									How BARMM came to be
 								</span>
-								<span className='mt-5 inline-flex items-center gap-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-white/80'>
+								<span className='mt-5 inline-flex items-center gap-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-white/80'>
 									Read the timeline
 									<ArrowRightIcon
 										className='size-3.5 transition duration-500 group-hover:translate-x-1'
@@ -223,13 +223,13 @@ export default function DiscoverBarmmPage() {
 							delay={0.1}
 						>
 							<span className='absolute inset-0 z-2 flex flex-col justify-end p-7 lg:p-10'>
-								<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-white/70'>
+								<span className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-white/70'>
 									Already know the region?
 								</span>
 								<span className='mt-3 max-w-[14ch] text-3xl font-extrabold leading-[1.05] tracking-[-0.035em] text-white sm:text-4xl'>
 									The 2026 Election workspace
 								</span>
-								<span className='mt-5 inline-flex items-center gap-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-white/80'>
+								<span className='mt-5 inline-flex items-center gap-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-white/80'>
 									Parties, candidates, districts
 									<ArrowRightIcon
 										className='size-3.5 transition duration-500 group-hover:translate-x-1'

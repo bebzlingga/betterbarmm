@@ -8,8 +8,8 @@ import { CheckIcon, ClockIcon, ProhibitIcon } from '@phosphor-icons/react/ssr'
    ============================================================ */
 
 const FIG = 'bb-graphic my-10 leading-[1.7] border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-7'
-const CAPTION = 'mt-5 text-[12.5px] leading-[1.7] text-[var(--ink-3)]'
-const KICKER = 'text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'
+const CAPTION = 'mt-5 text-[0.78125rem] leading-[1.7] text-[var(--ink-3)]'
+const KICKER = 'text-[0.65625rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'
 const LEG = 'https://legislation.betterbarmm.com'
 
 /* ---- 1. The seven priority codes ---- */
@@ -28,7 +28,7 @@ export function Codes() {
 	return (
 		<figure className={FIG}>
 			<p className={KICKER}>The seven priority codes</p>
-			<p className='mt-2 text-[15px] font-bold leading-snug text-[var(--ink)]'>Six became law in the transition. The Revenue Code did not.</p>
+			<p className='mt-2 text-[0.9375rem] font-bold leading-snug text-[var(--ink)]'>Six became law in the transition. The Revenue Code did not.</p>
 			<ol className='!mt-6 grid !list-none gap-px border border-[var(--rule)] bg-[var(--rule)] !pl-0 sm:grid-cols-2 [&>li+li]:!mt-0'>
 				{CODES.map((c) => {
 					const passed = c.act !== null
@@ -38,8 +38,8 @@ export function Codes() {
 								{passed ? <CheckIcon size={13} weight='bold' aria-hidden='true' /> : <ClockIcon size={13} weight='bold' aria-hidden='true' />}
 							</span>
 							<span className='min-w-0'>
-								<span className='block text-[14.5px] font-bold text-[var(--ink)]'>{c.name}</span>
-								<span className='block text-[12.5px] font-semibold text-[var(--ink-3)]'>
+								<span className='block text-[0.90625rem] font-bold text-[var(--ink)]'>{c.name}</span>
+								<span className='block text-[0.78125rem] font-semibold text-[var(--ink-3)]'>
 									{passed ? (
 										<a href={`${LEG}/acts/${c.act}`} className='underline decoration-[var(--rule)] underline-offset-4 hover:text-[var(--accent)]'>
 											Bangsamoro Autonomy Act No. {c.act}, {c.date}
@@ -48,7 +48,7 @@ export function Codes() {
 										<span className='text-[var(--accent)]'>Not passed · Parliament Bill No. 286, still at second reading</span>
 									)}
 								</span>
-								<span className='mt-1 block text-[13px] leading-[1.55] text-[var(--ink-2)]'>{c.does}</span>
+								<span className='mt-1 block text-[0.8125rem] leading-[1.55] text-[var(--ink-2)]'>{c.does}</span>
 							</span>
 						</li>
 					)
@@ -74,15 +74,15 @@ export function Sources() {
 	return (
 		<figure className={FIG}>
 			<p className={KICKER}>Where the region’s money comes from</p>
-			<p className='mt-2 text-[15px] font-bold leading-snug text-[var(--ink)]'>The block grant and the tax share are set by national law. The part the region raises itself waits on the Revenue Code.</p>
+			<p className='mt-2 text-[0.9375rem] font-bold leading-snug text-[var(--ink)]'>The block grant and the tax share are set by national law. The part the region raises itself waits on the Revenue Code.</p>
 			<ul className='!mt-6 grid !list-none gap-3 !pl-0 sm:grid-cols-2 [&>li+li]:!mt-0'>
 				{SOURCES.map((s) => (
 					<li key={s.what} className={`flex flex-col border p-4 ${s.code ? 'border-[var(--accent)] bg-[var(--accent-soft,var(--paper-2))]' : 'border-[var(--rule)] bg-[var(--paper-2)]'}`}>
-						<span className='text-[14px] font-bold text-[var(--ink)]'>{s.what}</span>
-						<span className='mt-1 flex-1 text-[13px] leading-[1.55] text-[var(--ink-2)]'>{s.how}</span>
-						<span className='mt-3 flex items-center justify-between gap-2 font-mono text-[11px] text-[var(--ink-3)]'>
+						<span className='text-[0.875rem] font-bold text-[var(--ink)]'>{s.what}</span>
+						<span className='mt-1 flex-1 text-[0.8125rem] leading-[1.55] text-[var(--ink-2)]'>{s.how}</span>
+						<span className='mt-3 flex items-center justify-between gap-2 font-mono text-[0.6875rem] text-[var(--ink-3)]'>
 							<span>Organic Law, {s.law}</span>
-							{s.code ? <span className='font-sans text-[11.5px] font-bold text-[var(--accent)]'>Needs the code</span> : null}
+							{s.code ? <span className='font-sans text-[0.71875rem] font-bold text-[var(--accent)]'>Needs the code</span> : null}
 						</span>
 					</li>
 				))}
@@ -105,16 +105,16 @@ const WHY = [
 export function Why() {
 	return (
 		<figure className='bb-graphic brand-bg my-10 p-6 sm:p-9'>
-			<p className='text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>Why it matters</p>
+			<p className='text-[0.65625rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>Why it matters</p>
 			<p className='mt-2 text-[clamp(1.35rem,3vw,1.9rem)] font-extrabold leading-[1.15] tracking-[-0.02em] text-[var(--ink)]'>The other six codes built a government. The Revenue Code is how it pays its own way.</p>
 			<ol className='!mt-7 !list-none divide-y divide-[var(--rule)] border-t border-[var(--rule)] !pl-0 [&>li+li]:!mt-0'>
 				{WHY.map((w, i) => (
 					<li key={w.head} className='flex gap-4 py-5'>
-						<span className='font-mono text-[13px] font-bold text-[var(--brass)]'>{String(i + 1).padStart(2, '0')}</span>
+						<span className='font-mono text-[0.8125rem] font-bold text-[var(--brass)]'>{String(i + 1).padStart(2, '0')}</span>
 						<span>
-							<span className='block text-[16px] font-bold leading-snug text-[var(--ink)]'>{w.head}</span>
-							<span className='mt-1 block text-[14px] leading-[1.6] text-[var(--ink-2)]'>{w.body}</span>
-							<span className='mt-1.5 block font-mono text-[11px] text-[var(--ink-3)]'>Organic Law, {w.law}</span>
+							<span className='block text-[1rem] font-bold leading-snug text-[var(--ink)]'>{w.head}</span>
+							<span className='mt-1 block text-[0.875rem] leading-[1.6] text-[var(--ink-2)]'>{w.body}</span>
+							<span className='mt-1.5 block font-mono text-[0.6875rem] text-[var(--ink-3)]'>Organic Law, {w.law}</span>
 						</span>
 					</li>
 				))}
@@ -136,10 +136,10 @@ export function Limits() {
 	return (
 		<figure className={FIG}>
 			<p className={KICKER}>Where the taxing power stops</p>
-			<p className='mt-2 text-[15px] font-bold leading-snug text-[var(--ink)]'>Whatever the code says, the Organic Law already rules some taxes out.</p>
+			<p className='mt-2 text-[0.9375rem] font-bold leading-snug text-[var(--ink)]'>Whatever the code says, the Organic Law already rules some taxes out.</p>
 			<ul className='!mt-5 grid !list-none gap-2 !pl-0 sm:grid-cols-2 [&>li+li]:!mt-0'>
 				{LIMITS.map((l) => (
-					<li key={l} className='flex items-start gap-2.5 text-[14px] leading-[1.5] text-[var(--ink-2)]'>
+					<li key={l} className='flex items-start gap-2.5 text-[0.875rem] leading-[1.5] text-[var(--ink-2)]'>
 						<ProhibitIcon size={17} weight='bold' className='mt-0.5 shrink-0 text-[var(--accent)]' aria-hidden='true' /> {l}
 					</li>
 				))}
@@ -164,7 +164,7 @@ export function Road() {
 	return (
 		<figure className={FIG}>
 			<p className={KICKER}>The Revenue Code’s road so far</p>
-			<p className='mt-2 text-[15px] font-bold leading-snug text-[var(--ink)]'>Seven years of the transition, and it never reached a final vote.</p>
+			<p className='mt-2 text-[0.9375rem] font-bold leading-snug text-[var(--ink)]'>Seven years of the transition, and it never reached a final vote.</p>
 			<ol className='!mt-6 !list-none space-y-0 !pl-0 [&>li+li]:!mt-0'>
 				{ROAD.map((r, i) => (
 					<li key={r.when} className='relative flex gap-4 pb-5 last:pb-0'>
@@ -177,8 +177,8 @@ export function Road() {
 							{r.state === 'done' ? <CheckIcon size={12} weight='bold' aria-hidden='true' /> : <ClockIcon size={12} weight='bold' aria-hidden='true' />}
 						</span>
 						<span>
-							<span className='block font-mono text-[11.5px] font-semibold text-[var(--ink-3)]'>{r.when}</span>
-							<span className='block text-[14px] leading-[1.55] text-[var(--ink)]'>{r.what}</span>
+							<span className='block font-mono text-[0.71875rem] font-semibold text-[var(--ink-3)]'>{r.when}</span>
+							<span className='block text-[0.875rem] leading-[1.55] text-[var(--ink)]'>{r.what}</span>
 						</span>
 					</li>
 				))}

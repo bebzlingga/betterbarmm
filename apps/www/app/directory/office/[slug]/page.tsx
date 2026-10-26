@@ -55,7 +55,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 
 			<section className='bb-container bb-section'>
 				{parent ? (
-					<p className='mb-8 text-[13.5px] text-[var(--ink-3)]'>
+					<p className='mb-8 text-[0.84375rem] text-[var(--ink-3)]'>
 						Attached to the{' '}
 						<Link scroll={false} href={`/directory/office/${parent.slug}`} className={linkClass}>
 							{parent.name}
@@ -68,32 +68,32 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 				<div className='grid gap-12 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:gap-24'>
 					<aside className='space-y-10'>
 					<div>
-						<p className='mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Head of office</p>
+						<p className='mb-1.5 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Head of office</p>
 						{o.head ? (
 							<div className='mt-2 flex items-start gap-5'>
 								<HeadPortrait slug={o.slug} name={o.head.name} className='size-24 sm:size-28' />
 								<div className='min-w-0'>
-									<p className='text-[24px] font-extrabold leading-tight tracking-[-0.02em]'>{o.head.name}</p>
-									<p className='mt-1 text-[15px] text-[var(--ink-2)]'>{o.head.title}</p>
-									<a href={o.head.source} target='_blank' rel='noreferrer' className='mt-1 inline-flex items-center gap-0.5 text-[12.5px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
+									<p className='text-[1.5rem] font-extrabold leading-tight tracking-[-0.02em]'>{o.head.name}</p>
+									<p className='mt-1 text-[0.9375rem] text-[var(--ink-2)]'>{o.head.title}</p>
+									<a href={o.head.source} target='_blank' rel='noreferrer' className='mt-1 inline-flex items-center gap-0.5 text-[0.78125rem] text-[var(--ink-3)] hover:text-[var(--accent)]'>
 										{monthYear(o.head.as_of) ? `As of ${monthYear(o.head.as_of)}` : 'Source'} <ArrowUpRightIcon size={11} weight='bold' aria-hidden='true' />
 									</a>
 									{portrait ? (
-										<a href={portrait.page} target='_blank' rel='noreferrer' className='mt-0.5 block text-[11.5px] text-[var(--ink-mute)] hover:text-[var(--accent)]'>
+										<a href={portrait.page} target='_blank' rel='noreferrer' className='mt-0.5 block text-[0.71875rem] text-[var(--ink-mute)] hover:text-[var(--accent)]'>
 											Portrait: {portrait.credit}
 										</a>
 									) : null}
 								</div>
 							</div>
 						) : (
-							<p className='mt-1 text-[15px] text-[var(--ink-3)]'>Not named in an official source we could read.</p>
+							<p className='mt-1 text-[0.9375rem] text-[var(--ink-3)]'>Not named in an official source we could read.</p>
 						)}
-						{service?.mandate ? <p className='mt-6 max-w-xl text-[14.5px] leading-[1.7] text-[var(--ink-2)]'>{service.mandate}</p> : null}
+						{service?.mandate ? <p className='mt-6 max-w-xl text-[0.90625rem] leading-[1.7] text-[var(--ink-2)]'>{service.mandate}</p> : null}
 					</div>
 
 					<div>
-						<p className='mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>How to reach it</p>
-						<ul className='mt-2 space-y-1.5 text-[14px] leading-6'>
+						<p className='mb-1.5 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>How to reach it</p>
+						<ul className='mt-2 space-y-1.5 text-[0.875rem] leading-6'>
 							{o.phones.map((p) => (
 								<Phone key={p} number={p} />
 							))}
@@ -129,12 +129,12 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 							) : null}
 							{!o.phones.length && !o.emails.length && !o.address ? <li className='text-[var(--ink-3)]'>No public number or email found.</li> : null}
 						</ul>
-						{o.checked ? <p className='mt-3 text-[12px] text-[var(--ink-3)]'>Checked by an editor, {o.checked}.</p> : null}
+						{o.checked ? <p className='mt-3 text-[0.75rem] text-[var(--ink-3)]'>Checked by an editor, {o.checked}.</p> : null}
 					</div>
 
 					<div>
-						<p className='mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Its budget</p>
-						<ul className='mt-2 space-y-1.5 text-[14px] leading-6'>
+						<p className='mb-1.5 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Its budget</p>
+						<ul className='mt-2 space-y-1.5 text-[0.875rem] leading-6'>
 							<li className='flex gap-2'>
 								<CoinsIcon size={15} className='mt-1 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
 								<a href={budget} className={linkClass}>
@@ -165,26 +165,26 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 
 				{field.length ? (
 					<section aria-labelledby='field' className='mt-14'>
-						<h2 id='field' className='text-[20px] font-extrabold'>
+						<h2 id='field' className='text-[1.25rem] font-extrabold'>
 							In the provinces <span className='text-[var(--ink-mute)]'>{field.length}</span>
 						</h2>
 						{/* A list, as the past heads are: where, which office and who heads it, its numbers, its source. */}
-						<ul className='mt-3 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)] text-[14px]'>
+						<ul className='mt-3 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)] text-[0.875rem]'>
 							{field.map((f) => (
 								<li key={f.office} className='grid gap-x-4 gap-y-1 py-3 sm:grid-cols-[9rem_minmax(0,1fr)_auto]'>
-									<span className='pt-1 font-mono text-[10.5px] font-semibold uppercase leading-[1.35] tracking-[0.14em] text-[var(--accent)]'>{f.province}</span>
+									<span className='pt-1 font-mono text-[0.65625rem] font-semibold uppercase leading-[1.35] tracking-[0.14em] text-[var(--accent)]'>{f.province}</span>
 									<div className='min-w-0'>
 										<p className='font-semibold leading-snug'>{f.office}</p>
 										{f.head ? (
-											<p className='mt-0.5 text-[13.5px] text-[var(--ink-2)]'>
+											<p className='mt-0.5 text-[0.84375rem] text-[var(--ink-2)]'>
 												{f.head.name}, {f.head.title}
 											</p>
 										) : null}
-										{f.address ? <p className='mt-0.5 text-[13px] text-[var(--ink-3)]'>{f.address}</p> : null}
+										{f.address ? <p className='mt-0.5 text-[0.8125rem] text-[var(--ink-3)]'>{f.address}</p> : null}
 										{/* The source's own caveat: an office listed twice, a number that is a program's, not the office's. */}
-										{f.note ? <p className='mt-1 text-[12px] leading-[1.55] text-[var(--ink-3)]'>{f.note}</p> : null}
+										{f.note ? <p className='mt-1 text-[0.75rem] leading-[1.55] text-[var(--ink-3)]'>{f.note}</p> : null}
 										{f.phones.length || f.emails?.length ? (
-											<ul className='mt-2.5 flex flex-wrap gap-x-5 gap-y-1 text-[13.5px]'>
+											<ul className='mt-2.5 flex flex-wrap gap-x-5 gap-y-1 text-[0.84375rem]'>
 												{f.phones.map((p) => (
 													<Phone key={p} number={p} />
 												))}
@@ -199,7 +199,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 											</ul>
 										) : null}
 									</div>
-									<a href={f.source} target='_blank' rel='noreferrer' className='inline-flex items-center gap-0.5 self-start text-[12px] leading-6 text-[var(--ink-3)] hover:text-[var(--accent)]'>
+									<a href={f.source} target='_blank' rel='noreferrer' className='inline-flex items-center gap-0.5 self-start text-[0.75rem] leading-6 text-[var(--ink-3)] hover:text-[var(--accent)]'>
 										Source <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
 									</a>
 								</li>
@@ -209,11 +209,11 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 				) : null}
 
 				<section aria-labelledby='heads' className='mt-14'>
-					<h2 id='heads' className='text-[20px] font-extrabold'>
+					<h2 id='heads' className='text-[1.25rem] font-extrabold'>
 						Who has headed it
 					</h2>
 					{history.length ? (
-						<ol className='mt-3 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)] text-[14px]'>
+						<ol className='mt-3 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)] text-[0.875rem]'>
 							{history.map((h) => (
 								<li key={h.name + h.from} className='grid gap-x-4 gap-y-0.5 py-2.5 sm:grid-cols-[13rem_minmax(0,1fr)_auto]'>
 									<span className='tabular-nums text-[var(--ink-3)]'>
@@ -224,16 +224,16 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 										<span className='font-semibold'>{h.name}</span>
 										<span className='text-[var(--ink-2)]'>, {h.title}</span>
 									</span>
-									<a href={h.source} target='_blank' rel='noreferrer' className='inline-flex items-center gap-0.5 text-[12px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
+									<a href={h.source} target='_blank' rel='noreferrer' className='inline-flex items-center gap-0.5 text-[0.75rem] text-[var(--ink-3)] hover:text-[var(--accent)]'>
 										Source <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
 									</a>
 								</li>
 							))}
 						</ol>
 					) : (
-						<p className='mt-3 text-[13.5px] text-[var(--ink-3)]'>No dated list of past heads found yet.</p>
+						<p className='mt-3 text-[0.84375rem] text-[var(--ink-3)]'>No dated list of past heads found yet.</p>
 					)}
-					<p className='mt-3 text-[12.5px] text-[var(--ink-mute)] opacity-70'>
+					<p className='mt-3 text-[0.78125rem] text-[var(--ink-mute)] opacity-70'>
 						Read with the office’s{' '}
 						<a href={budget} className={linkClass}>
 							budget
@@ -244,10 +244,10 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 
 				{attached.length ? (
 					<section aria-labelledby='attached' className='mt-14'>
-						<h2 id='attached' className='text-[20px] font-extrabold'>
+						<h2 id='attached' className='text-[1.25rem] font-extrabold'>
 							Attached offices
 						</h2>
-						<ul className='mt-3 flex flex-wrap gap-x-6 gap-y-2 text-[14px]'>
+						<ul className='mt-3 flex flex-wrap gap-x-6 gap-y-2 text-[0.875rem]'>
 							{attached.map((a) => (
 								<li key={a.slug}>
 									<Link scroll={false} href={`/directory/office/${a.slug}`} className={linkClass}>
@@ -264,10 +264,10 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 
 				{/* Where it all came from, as a section of its own under the two columns. */}
 				<section aria-labelledby='read' className='mt-16'>
-					<h2 id='read' className='mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>
+					<h2 id='read' className='mb-1.5 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>
 						How this was read
 					</h2>
-					<div className='mt-2 space-y-2 text-[12.5px] leading-[1.7] text-[var(--ink-mute)]'>
+					<div className='mt-2 space-y-2 text-[0.78125rem] leading-[1.7] text-[var(--ink-mute)]'>
 						{org ? <OrgNote org={org} /> : null}
 						<p>{directoryMeta.note}</p>
 					</div>

@@ -114,9 +114,9 @@ export function DiscoverGallery({ photos }: { photos: DiscoverPhoto[] }) {
           />
 
           <span className='pointer-events-none absolute inset-0 flex items-end bg-gradient-to-t from-black/85 via-black/15 to-transparent p-3 text-left opacity-0 transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100'>
-            <span className='text-[11.5px] font-medium leading-4 text-white'>
+            <span className='text-[0.71875rem] font-medium leading-4 text-white'>
               {item.place ? (
-                <span className='mb-1 block font-mono text-[9px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
+                <span className='mb-1 block font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
                   {item.place}
                 </span>
               ) : null}
@@ -187,7 +187,7 @@ export function DiscoverGallery({ photos }: { photos: DiscoverPhoto[] }) {
                 if (event.target === event.currentTarget) setOpen(null)
               }}
             >
-              <p className='num text-[12px] text-white/50'>
+              <p className='num text-[0.75rem] text-white/50'>
                 {String((open ?? 0) + 1).padStart(2, '0')} / {String(photos.length).padStart(2, '0')}
               </p>
 
@@ -241,9 +241,9 @@ export function DiscoverGallery({ photos }: { photos: DiscoverPhoto[] }) {
               </div>
 
               <figcaption className='mt-5 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 border-t border-white/20 pt-4'>
-                <p className='max-w-2xl text-[13.5px] leading-[var(--leading-body)] text-white/90'>
+                <p className='max-w-2xl text-[0.84375rem] leading-[var(--leading-body)] text-white/90'>
                   {current.place ? (
-                    <span className='mr-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
+                    <span className='mr-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
                       {current.place}
                     </span>
                   ) : null}
@@ -253,7 +253,7 @@ export function DiscoverGallery({ photos }: { photos: DiscoverPhoto[] }) {
                   href={current.source}
                   target='_blank'
                   rel='noreferrer'
-                  className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-white/55 transition hover:text-white'
+                  className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-white/55 transition hover:text-white'
                 >
                   {current.credit} · {current.license}
                 </a>

@@ -71,7 +71,7 @@ export default async function ExplainersPage({
 					</div>
 					{tags.length ? (
 						<div className='flex flex-wrap items-center gap-2 lg:justify-end'>
-							<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+							<span className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 								Tags
 							</span>
 							{tags.map((t) => (
@@ -142,7 +142,7 @@ function Guides() {
 						<p className='bb-label'>From the workspaces</p>
 						<h2 className='mt-3 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Go deeper</h2>
 					</div>
-					<p className='text-[14px] leading-[1.7] text-[var(--ink-2)]'>
+					<p className='text-[0.875rem] leading-[1.7] text-[var(--ink-2)]'>
 						Each workspace carries its own long-form guides, written beside the records they explain: how Parliament makes a
 						law, how a budget moves, what each level of local government does, how public bidding works.
 					</p>
@@ -160,15 +160,15 @@ function Guides() {
 									<GuideMotif motif={g.motif} />
 								</span>
 								<span className='flex flex-1 flex-col p-6'>
-								<span className='flex items-center gap-2 text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
+								<span className='flex items-center gap-2 text-[0.65625rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
 									<Icon size={15} weight='fill' aria-hidden='true' className='shrink-0' />
 									{g.workspace}
 								</span>
 								<span className='mt-4 text-[1.1rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
 									{g.title}
 								</span>
-								<span className='mt-2 flex-1 text-[13.5px] leading-[1.7] text-[var(--ink-2)]'>{g.summary}</span>
-								<span className='mt-5 inline-flex items-center gap-1.5 text-[12.5px] font-semibold text-[var(--ink-3)] group-hover:text-[var(--ink)]'>
+								<span className='mt-2 flex-1 text-[0.84375rem] leading-[1.7] text-[var(--ink-2)]'>{g.summary}</span>
+								<span className='mt-5 inline-flex items-center gap-1.5 text-[0.78125rem] font-semibold text-[var(--ink-3)] group-hover:text-[var(--ink)]'>
 									Open in {g.workspace}
 									<ArrowUpRightIcon className='size-3.5 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5' weight='bold' aria-hidden='true' />
 								</span>

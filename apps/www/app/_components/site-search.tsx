@@ -42,12 +42,12 @@ export function SiteSearch({ initial = '' }: { initial?: string }) {
 					onChange={(e) => setQ(e.target.value)}
 					placeholder='A town, a law, a member, an office, a supplier'
 					aria-label='Search every workspace'
-					className='w-full bg-transparent text-[16px] outline-none placeholder:text-[var(--ink-mute)]'
+					className='w-full bg-transparent text-[1rem] outline-none placeholder:text-[var(--ink-mute)]'
 					autoFocus
 				/>
 			</label>
 			{data ? (
-				<p className='mt-4 text-[13px] text-[var(--ink-3)]'>
+				<p className='mt-4 text-[0.8125rem] text-[var(--ink-3)]'>
 					{data.total ? `${data.total.toLocaleString('en-PH')} found${data.total > data.hits.length ? `, the best ${data.hits.length} shown` : ''}` : 'Nothing by that name.'}
 				</p>
 			) : null}
@@ -58,10 +58,10 @@ export function SiteSearch({ initial = '' }: { initial?: string }) {
 						<ul className='mt-3'>
 							{hits.map((h) => (
 								<li key={h.href + h.title} className='border-t border-[var(--rule)] py-3'>
-									<a href={h.href} className='text-[15px] font-semibold leading-6 text-[var(--ink)] hover:text-[var(--accent)]'>
+									<a href={h.href} className='text-[0.9375rem] font-semibold leading-6 text-[var(--ink)] hover:text-[var(--accent)]'>
 										{h.title}
 									</a>
-									<p className='mt-0.5 text-[12.5px] text-[var(--ink-3)]'>{h.detail}</p>
+									<p className='mt-0.5 text-[0.78125rem] text-[var(--ink-3)]'>{h.detail}</p>
 								</li>
 							))}
 						</ul>

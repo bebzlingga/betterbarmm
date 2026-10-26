@@ -83,7 +83,7 @@ export default async function MemberProfilePage({ params }: { params: Promise<{ 
 				</Reveal>
 			</div>
 			{chamber ? <MemberChamber record={chamber} name={member.displayName} /> : null}
-			<div className='mt-12 text-[13px] text-[var(--ink-3)]'>
+			<div className='mt-12 text-[0.8125rem] text-[var(--ink-3)]'>
 				<a href={`/members/${slug}/feed.xml`} className='rule-link font-semibold text-[var(--ink)]'>
 					Follow {member.displayName}&rsquo;s measures by RSS
 				</a>{' '}

@@ -170,12 +170,12 @@ export function ElectionTimeline({ phases }: { phases: TimelinePhase[] }) {
 									style={{ borderColor: PHASE_COLORS[index % PHASE_COLORS.length] }}
 								>
 									<p
-										className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em]'
+										className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em]'
 										style={{ color: PHASE_COLORS[index % PHASE_COLORS.length] }}
 									>
 										{group.phase}
 									</p>
-									<p className='mt-1 font-mono text-[10px] text-[var(--ink-3)]'>
+									<p className='mt-1 font-mono text-[0.625rem] text-[var(--ink-3)]'>
 										{group.events.length} {group.events.length === 1 ? 'moment' : 'moments'}
 									</p>
 								</div>
@@ -230,13 +230,13 @@ export function ElectionTimeline({ phases }: { phases: TimelinePhase[] }) {
 										}`}
 									>
 										<p
-											className={`num text-[15px] font-bold leading-none tracking-[-0.02em] ${
+											className={`num text-[0.9375rem] font-bold leading-none tracking-[-0.02em] ${
 												item.isElectionDay ? 'text-[var(--accent)]' : 'text-[var(--ink)]'
 											}`}
 										>
 											{item.dateLabel}
 										</p>
-										<p className='mt-1.5 font-mono text-[9px] font-semibold uppercase leading-snug tracking-[0.14em] text-[var(--ink-3)]'>
+										<p className='mt-1.5 font-mono text-[0.5625rem] font-semibold uppercase leading-snug tracking-[0.14em] text-[var(--ink-3)]'>
 											{item.kicker}
 										</p>
 									</div>
@@ -267,11 +267,11 @@ export function ElectionTimeline({ phases }: { phases: TimelinePhase[] }) {
 												style={{ background: item.isElectionDay ? 'var(--accent)' : item.color }}
 											/>
 											<div className='pt-4'>
-												<h3 className='text-[16px] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)]'>
+												<h3 className='text-[1rem] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)]'>
 													{item.title}
 												</h3>
 												{item.body ? (
-													<p className='mt-2.5 text-[13px] leading-6 text-[var(--ink-2)]'>
+													<p className='mt-2.5 text-[0.8125rem] leading-6 text-[var(--ink-2)]'>
 														{item.body}
 													</p>
 												) : null}
@@ -297,7 +297,7 @@ export function ElectionTimeline({ phases }: { phases: TimelinePhase[] }) {
 				/>
 			</div>
 
-			<p className='mt-3 pl-6 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] lg:pl-[max(2rem,calc((100vw-88rem)/2+2rem))]'>
+			<p className='mt-3 pl-6 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] lg:pl-[max(2rem,calc((100vw-88rem)/2+2rem))]'>
 				Drag or scroll sideways
 			</p>
 		</div>

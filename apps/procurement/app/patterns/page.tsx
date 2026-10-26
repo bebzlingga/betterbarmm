@@ -26,7 +26,7 @@ export const metadata: Metadata = {
    what else could explain it right, in one paragraph, and the evidence under both.
    ============================================================ */
 
-const TH = 'py-2.5 pr-6 text-[11px] font-semibold uppercase tracking-[0.08em] text-[var(--ink-3)] last:pr-0'
+const TH = 'py-2.5 pr-6 text-[0.6875rem] font-semibold uppercase tracking-[0.08em] text-[var(--ink-3)] last:pr-0'
 const TD = 'py-3 pr-6 align-middle last:pr-0'
 const ROW = 'border-b border-[var(--rule-soft,var(--rule))] transition hover:bg-[var(--paper-2)]'
 const n = (x: number) => x.toLocaleString('en-PH')
@@ -63,12 +63,12 @@ function Pattern({
 						<h2 className='mt-3 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{p.title}</h2>
 						<p className='mt-6'>
 							<span className='num block text-[1.75rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--accent)]'>{p.stat}</span>
-							<span className='mt-1.5 block text-[12.5px] leading-snug text-[var(--ink-3)]'>{p.label}</span>
+							<span className='mt-1.5 block text-[0.78125rem] leading-snug text-[var(--ink-3)]'>{p.label}</span>
 						</p>
 					</div>
 					<div className='lg:pt-7'>
 						{/* What the pattern is, then the innocent reasons that also produce it. */}
-						<p className='text-[14px] leading-[1.7] text-[var(--ink-2)]'>
+						<p className='text-[0.875rem] leading-[1.7] text-[var(--ink-2)]'>
 							{lead} {also}
 						</p>
 					</div>
@@ -108,7 +108,7 @@ function Bunching() {
 					</div>
 					{/* The ceiling, half-way along: ₱1M sits at bin 30 of 60. */}
 					<div className='pointer-events-none absolute left-1/2 top-0 h-60 border-l border-dashed border-[var(--ink)]' aria-hidden='true' />
-					<div className='mt-2 flex justify-between text-[11px] text-[var(--ink-3)]'>
+					<div className='mt-2 flex justify-between text-[0.6875rem] text-[var(--ink-3)]'>
 						<span>₱700,000</span>
 						<span className='font-semibold text-[var(--ink)]'>₱1,000,000 ceiling</span>
 						<span>₱1,300,000</span>
@@ -123,7 +123,7 @@ function Bunching() {
 				].map(([v, l]) => (
 					<p key={l}>
 						<span className='num block text-[1.5rem] font-extrabold tracking-[-0.03em] text-[var(--ink)]'>{v}</span>
-						<span className='text-[12.5px] text-[var(--ink-3)]'>{l}</span>
+						<span className='text-[0.78125rem] text-[var(--ink-3)]'>{l}</span>
 					</p>
 				))}
 			</figcaption>
@@ -149,8 +149,8 @@ function Soon() {
 					].map(([href, label, note]) => (
 						<li key={href}>
 							<Link href={href} className='group block h-full border border-[var(--rule)] p-5 transition hover:border-[var(--ink)]'>
-								<span className='block text-[17px] font-extrabold tracking-[-0.01em] group-hover:text-[var(--accent)]'>{label} →</span>
-								<span className='mt-1 block text-[13.5px] text-[var(--ink-3)]'>{note}</span>
+								<span className='block text-[1.0625rem] font-extrabold tracking-[-0.01em] group-hover:text-[var(--accent)]'>{label} →</span>
+								<span className='mt-1 block text-[0.84375rem] text-[var(--ink-3)]'>{note}</span>
 							</Link>
 						</li>
 					))}
@@ -182,9 +182,9 @@ export default function PatternsPage() {
 						<li key={p.id} className='border-[var(--rule)] max-lg:border-b max-lg:odd:border-r lg:border-r lg:first:border-l'>
 							<a href={`#${p.id}`} className='group flex h-full flex-col px-5 py-5 transition sm:px-8 sm:py-7 hover:bg-[var(--paper-2)]'>
 								<span className='bb-label'>{String(i + 1).padStart(2, '0')}</span>
-								<span className='mt-3 min-h-[2.75em] text-[13px] sm:text-[14px] font-bold leading-snug text-[var(--ink)] group-hover:text-[var(--accent)]'>{p.title}</span>
+								<span className='mt-3 min-h-[2.75em] text-[0.8125rem] sm:text-[0.875rem] font-bold leading-snug text-[var(--ink)] group-hover:text-[var(--accent)]'>{p.title}</span>
 								<span className='num pt-5 text-[1.75rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--accent)]'>{p.stat}</span>
-								<span className='mt-1.5 text-[12px] leading-snug text-[var(--ink-3)]'>{p.label}</span>
+								<span className='mt-1.5 text-[0.75rem] leading-snug text-[var(--ink-3)]'>{p.label}</span>
 							</a>
 						</li>
 					))}
@@ -205,7 +205,7 @@ export default function PatternsPage() {
 			>
 				<Bunching />
 				<div className='mt-14 overflow-x-auto'>
-					<table className='w-full min-w-[34rem] border-collapse text-left text-[14px]'>
+					<table className='w-full min-w-[34rem] border-collapse text-left text-[0.875rem]'>
 						<thead>
 							<tr className='border-b border-[var(--rule)]'>
 								<th className={TH}>Office</th>
@@ -247,7 +247,7 @@ export default function PatternsPage() {
 				also='Many will be separate needs, such as catering for different events on the same day, which is why each has to be read.'
 			>
 				<div className='overflow-x-auto'>
-					<table className='w-full min-w-[44rem] border-collapse text-left text-[14px]'>
+					<table className='w-full min-w-[44rem] border-collapse text-left text-[0.875rem]'>
 						<thead>
 							<tr className='border-b border-[var(--rule)]'>
 								<th className={TH}>Office</th>
@@ -285,7 +285,7 @@ export default function PatternsPage() {
 				also='A specialised need, a remote town with one supplier, or a framework contract can all explain it; so can bidding that is not open.'
 			>
 				<div className='overflow-x-auto'>
-					<table className='w-full min-w-[44rem] border-collapse text-left text-[14px]'>
+					<table className='w-full min-w-[44rem] border-collapse text-left text-[0.875rem]'>
 						<thead>
 							<tr className='border-b border-[var(--rule)]'>
 								<th className={TH}>Office</th>
@@ -330,7 +330,7 @@ export default function PatternsPage() {
 				also='Several are close to double their budget, which looks like an amount entered twice at the source rather than an overpayment, but only the office’s own records can say.'
 			>
 				<div className='overflow-x-auto'>
-					<table className='w-full min-w-[44rem] border-collapse text-left text-[14px]'>
+					<table className='w-full min-w-[44rem] border-collapse text-left text-[0.875rem]'>
 						<thead>
 							<tr className='border-b border-[var(--rule)]'>
 								<th className={TH}>Office</th>
@@ -357,7 +357,7 @@ export default function PatternsPage() {
 										<td className={`${TD} num whitespace-nowrap text-right`}>{peso(o.notice.abc!)}</td>
 										<td className={`${TD} num whitespace-nowrap text-right font-semibold`}>{peso(o.awarded)}</td>
 										<td className={`${TD} num whitespace-nowrap text-right`}>
-											<span className={`inline-block min-w-[3.5rem] px-2 py-0.5 text-center text-[12.5px] font-semibold ${times >= 1.9 ? 'bg-[var(--accent)] text-[var(--paper)]' : 'bg-[var(--paper-2)] text-[var(--ink)]'}`}>
+											<span className={`inline-block min-w-[3.5rem] px-2 py-0.5 text-center text-[0.78125rem] font-semibold ${times >= 1.9 ? 'bg-[var(--accent)] text-[var(--paper)]' : 'bg-[var(--paper-2)] text-[var(--ink)]'}`}>
 												×{times.toFixed(times < 1.1 ? 2 : 1)}
 											</span>
 										</td>
@@ -378,8 +378,8 @@ export default function PatternsPage() {
 					{blacklistedSuppliers.map(({ supplier, entry }) => (
 						<li key={supplier.name} className='border-t border-[var(--rule)]'>
 							<Link href={supplierHref(supplier.name)} className='group flex items-baseline justify-between gap-4 py-3.5'>
-								<span className='text-[14px] font-semibold text-[var(--ink)] group-hover:text-[var(--accent)]'>{supplier.name}</span>
-								<span className='num shrink-0 text-[12px] text-[var(--ink-3)]'>
+								<span className='text-[0.875rem] font-semibold text-[var(--ink)] group-hover:text-[var(--accent)]'>{supplier.name}</span>
+								<span className='num shrink-0 text-[0.75rem] text-[var(--ink-3)]'>
 									barred {new Date(`${entry.min_date}T00:00:00Z`).getUTCFullYear()}–{new Date(`${entry.max_date}T00:00:00Z`).getUTCFullYear()}
 								</span>
 							</Link>
@@ -390,7 +390,7 @@ export default function PatternsPage() {
 
 			<section className='border-t border-[var(--rule)]'>
 				<div className='bb-container py-12'>
-					<p className='max-w-[52rem] text-[13px] leading-6 text-[var(--ink-3)]'>
+					<p className='max-w-[52rem] text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 						Read from PhilGEPS as every other figure here; see{' '}
 						<Link href='/sources' className='rule-link'>
 							Sources

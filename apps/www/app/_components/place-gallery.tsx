@@ -59,7 +59,7 @@ export function PlaceGallery({ images, name }: { images: CraftImage[]; name: str
 					<div className='pointer-events-none flex h-full flex-col items-center justify-center gap-4 p-4 sm:p-10'>
 						{/* eslint-disable-next-line @next/next/no-img-element */}
 						<img src={commonsThumb(img.url, 1280)} alt={img.caption || name} className='pointer-events-auto max-h-[80dvh] max-w-full object-contain shadow-[0_30px_80px_-20px_rgba(0,0,0,0.8)]' />
-						<p className='pointer-events-auto max-w-3xl text-center text-[13.5px] leading-[1.55] text-white/85'>
+						<p className='pointer-events-auto max-w-3xl text-center text-[0.84375rem] leading-[1.55] text-white/85'>
 							{img.caption ? <span className='block'>{img.caption}</span> : null}
 							<a href={img.page} target='_blank' rel='noreferrer' className='text-white/60 underline decoration-white/30 underline-offset-4 hover:text-white'>
 								{img.author} · {img.license}

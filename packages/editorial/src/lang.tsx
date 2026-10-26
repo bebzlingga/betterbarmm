@@ -138,7 +138,7 @@ export function LanguageToggle({ className = '' }: { className?: string }) {
 					type='button'
 					onClick={() => setLang(code)}
 					aria-pressed={lang === code}
-					className='cursor-pointer px-3 py-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)] transition duration-200 aria-pressed:bg-[var(--accent)] aria-pressed:text-white hover:text-[var(--ink)] aria-pressed:hover:text-white'
+					className='cursor-pointer px-3 py-1.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)] transition duration-200 aria-pressed:bg-[var(--accent)] aria-pressed:text-white hover:text-[var(--ink)] aria-pressed:hover:text-white'
 				>
 					{label}
 				</button>

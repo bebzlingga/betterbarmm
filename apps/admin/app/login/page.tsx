@@ -19,7 +19,7 @@ export default async function LoginPage({
         <div className="pointer-events-none absolute -bottom-40 -left-20 size-[26rem] rounded-full bg-black/10" aria-hidden="true" />
         <div className="relative flex items-center gap-2.5">
           <span className="grid size-9 place-items-center rounded-lg bg-white font-[family-name:var(--font-display)] text-base font-bold text-[#7f2216]">B</span>
-          <span className="font-[family-name:var(--font-display)] text-[17px] font-semibold">
+          <span className="font-[family-name:var(--font-display)] text-[1.0625rem] font-semibold">
             BetterBARMM <span className="font-normal text-white/70">Admin</span>
           </span>
         </div>
@@ -27,7 +27,7 @@ export default async function LoginPage({
           <p className="font-[family-name:var(--font-display)] text-[2.25rem] font-semibold leading-[1.1] tracking-[-0.02em]">
             Keep the public record current.
           </p>
-          <p className="mt-4 text-[15px] leading-7 text-white/75">
+          <p className="mt-4 text-[0.9375rem] leading-7 text-white/75">
             Review what changed at Parliament and PhilGEPS overnight, edit the records behind every workspace, and publish explainers.
           </p>
         </div>
@@ -38,7 +38,7 @@ export default async function LoginPage({
         <div className="w-full max-w-sm">
           <div className="mb-8 flex items-center gap-2.5 lg:hidden">
             <span className="grid size-9 place-items-center rounded-lg bg-[var(--accent)] font-[family-name:var(--font-display)] text-base font-bold text-[var(--accent-ink)]">B</span>
-            <span className="font-[family-name:var(--font-display)] text-[17px] font-semibold">BetterBARMM Admin</span>
+            <span className="font-[family-name:var(--font-display)] text-[1.0625rem] font-semibold">BetterBARMM Admin</span>
           </div>
           <h1 className="text-[1.75rem] font-semibold tracking-[-0.02em]">Sign in</h1>
           <p className="mt-2 text-sm text-[var(--ink-3)]">With the email and password an admin set up for you.</p>

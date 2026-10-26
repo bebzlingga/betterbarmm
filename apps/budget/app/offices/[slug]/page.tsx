@@ -179,7 +179,7 @@ export default async function OfficePage({
 
 					{/* Said once, here, rather than as a footnote on every row it
 					    applies to. */}
-					<p className='mt-6 text-[12px] leading-6 text-[var(--ink-3)]'>
+					<p className='mt-6 text-[0.75rem] leading-6 text-[var(--ink-3)]'>
 						Rows are reproduced as the Act prints them. In several offices Personnel Services is
 						printed against Operations as a whole and not against the programs beneath it, so a
 						column of program rows can total less than the heading above it.
@@ -261,14 +261,14 @@ export default async function OfficePage({
 									href={`/offices/${sub.slug}`}
 									className='group flex items-baseline justify-between gap-6 border-t border-[var(--rule)] py-4 transition hover:border-[var(--accent)] hover:bg-[var(--paper-2)]'
 								>
-									<span className='flex items-baseline gap-2 text-[14.5px] font-semibold tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
+									<span className='flex items-baseline gap-2 text-[0.90625rem] font-semibold tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
 										{sub.name}
 										<ArrowUpRightIcon
 											className='size-3.5 shrink-0 text-[var(--ink-3)] transition duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--accent)]'
 											aria-hidden='true'
 										/>
 									</span>
-									<span className='money whitespace-nowrap text-[13.5px] font-semibold text-[var(--ink-2)] transition group-hover:text-[var(--accent)]'>
+									<span className='money whitespace-nowrap text-[0.84375rem] font-semibold text-[var(--ink-2)] transition group-hover:text-[var(--accent)]'>
 										{peso(sub.total)}
 									</span>
 								</YearLink>
@@ -291,7 +291,7 @@ export default async function OfficePage({
 							office.projects.reduce((sum, project) => sum + project.amount, 0),
 						)} across ${projectsHere.length} provinces and areas, each with the road, bridge or building it pays for named.`}
 						aside={
-							<YearLink href='/projects' className='rule-link text-[12px]'>
+							<YearLink href='/projects' className='rule-link text-[0.75rem]'>
 								Search every project
 							</YearLink>
 						}
@@ -307,10 +307,10 @@ export default async function OfficePage({
 								   name lit up made the card look half-awake. */
 								className='group border-t border-[var(--rule)] py-4 transition hover:border-[var(--accent)] hover:bg-[var(--paper-2)]'
 							>
-								<p className='text-[14px] font-semibold tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
+								<p className='text-[0.875rem] font-semibold tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
 									{group.province}
 								</p>
-								<p className='money mt-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] transition group-hover:text-[var(--accent)]'>
+								<p className='money mt-1.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] transition group-hover:text-[var(--accent)]'>
 									{group.count} projects · {peso(group.total)}
 								</p>
 							</YearLink>

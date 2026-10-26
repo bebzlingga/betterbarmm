@@ -56,7 +56,7 @@ const sentenceCase = (s: string) => s[0]!.toUpperCase() + s.slice(1)
 
 const BULLET = 'relative pl-3.5 before:absolute before:left-0 before:top-[0.6em] before:size-1 before:bg-[var(--brass)]'
 
-const LABEL = 'text-[10.5px] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
+const LABEL = 'text-[0.65625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
 
 /** Relatives named with a public role. */
 const publicRelatives = (elected: ElectedSeat) => elected.family.filter((relative) => relative.name && relative.role)
@@ -67,13 +67,13 @@ function Timeline({ title, lines }: { title: string; lines: string[] }) {
 	return (
 		<section className='mt-7'>
 			<h3 className={LABEL}>{title}</h3>
-			<ol className='mt-3 grid gap-2.5 text-[14px] leading-[1.5]'>
+			<ol className='mt-3 grid gap-2.5 text-[0.875rem] leading-[1.5]'>
 				{lines.map((line) => {
 					const cut = line.indexOf(' · ')
 					const [when, what] = cut >= 0 ? [line.slice(0, cut), line.slice(cut + 3)] : ['', line]
 					return (
 						<li key={line} className='grid grid-cols-[6.5rem_minmax(0,1fr)] gap-3'>
-							<span className='num text-[12.5px] font-semibold text-[var(--ink-3)]'>{when || '—'}</span>
+							<span className='num text-[0.78125rem] font-semibold text-[var(--ink-3)]'>{when || '—'}</span>
 							<span className='text-[var(--ink-2)]'>{what}</span>
 						</li>
 					)
@@ -100,17 +100,17 @@ function CardFace({ member }: { member: Elected }) {
 			<div className='flex items-start gap-4'>
 				<MemberAvatar name={member.displayName} src={member.photoUrl} />
 				<div className='min-w-0'>
-					<h3 className='text-[16px] font-bold leading-snug tracking-[-0.01em] text-[var(--ink)]'>{member.displayName}</h3>
-					<p className='mt-1 text-[12.5px] leading-snug text-[var(--ink-3)]'>{[elected.where, elected.party].filter(Boolean).join(' · ')}</p>
-					{elected.votes != null ? <p className='num mt-1 text-[12px] text-[var(--ink-mute)]'>{elected.votes.toLocaleString('en-PH')} votes</p> : null}
+					<h3 className='text-[1rem] font-bold leading-snug tracking-[-0.01em] text-[var(--ink)]'>{member.displayName}</h3>
+					<p className='mt-1 text-[0.78125rem] leading-snug text-[var(--ink-3)]'>{[elected.where, elected.party].filter(Boolean).join(' · ')}</p>
+					{elected.votes != null ? <p className='num mt-1 text-[0.75rem] text-[var(--ink-mute)]'>{elected.votes.toLocaleString('en-PH')} votes</p> : null}
 				</div>
 			</div>
 			{elected.career.length || background.length || member.bio.length ? (
-				<p className='mt-4 line-clamp-3 text-[13px] leading-[1.6] text-[var(--ink-2)]'>{elected.career[0]?.replace(/^.*? · /, '') ?? background.find((line) => !/^(full name|also known)/i.test(line)) ?? background[0] ?? member.bio[0]}</p>
+				<p className='mt-4 line-clamp-3 text-[0.8125rem] leading-[1.6] text-[var(--ink-2)]'>{elected.career[0]?.replace(/^.*? · /, '') ?? background.find((line) => !/^(full name|also known)/i.test(line)) ?? background[0] ?? member.bio[0]}</p>
 			) : (
-				<p className='mt-4 text-[13px] text-[var(--ink-mute)]'>Nothing found and cited beyond the ballot yet.</p>
+				<p className='mt-4 text-[0.8125rem] text-[var(--ink-mute)]'>Nothing found and cited beyond the ballot yet.</p>
 			)}
-			<div className='mt-auto flex flex-wrap items-center gap-x-3 gap-y-1.5 pt-5 text-[11.5px]'>
+			<div className='mt-auto flex flex-wrap items-center gap-x-3 gap-y-1.5 pt-5 text-[0.71875rem]'>
 				{member.phases.length > 1 ? <span className='bg-[var(--paper-2)] px-2 py-0.5 font-semibold text-[var(--ink-2)]'>Transition Authority</span> : null}
 				{publicRelatives(elected).length ? (
 					<span className='bg-[var(--paper-2)] px-2 py-0.5 font-semibold text-[var(--ink-2)]'>
@@ -146,14 +146,14 @@ function Profile({ member }: { member: Elected }) {
 					</div>
 				)}
 				{elected.photoSource ? (
-					<p className='mt-2 text-[11px] text-[var(--ink-mute)]'>
+					<p className='mt-2 text-[0.6875rem] text-[var(--ink-mute)]'>
 						Photo:{' '}
 						<a href={elected.photoSource.url} target='_blank' rel='noreferrer' className='rule-link'>
 							{elected.photoSource.label}
 						</a>
 					</p>
 				) : null}
-				<dl className='mt-6 grid gap-4 text-[13px]'>
+				<dl className='mt-6 grid gap-4 text-[0.8125rem]'>
 					<div>
 						<dt className={LABEL}>Seat</dt>
 						<dd className='mt-1 text-[var(--ink)]'>{[elected.seat, elected.where].filter(Boolean).join(' · ')}</dd>
@@ -180,13 +180,13 @@ function Profile({ member }: { member: Elected }) {
 			<div className='p-6 md:overflow-y-auto md:overscroll-contain md:p-10'>
 				<h2 className='pr-8 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{member.displayName}</h2>
 				{member.phases.length > 1 ? (
-					<p className='mt-2 text-[13px] text-[var(--ink-3)]'>
+					<p className='mt-2 text-[0.8125rem] text-[var(--ink-3)]'>
 						Sat in the Transition Authority{member.principalCount ? ` · ${member.principalCount} measures as principal` : ''}
 					</p>
 				) : null}
 
 				{elected.born ? (
-					<p className='mt-4 text-[13.5px] text-[var(--ink-3)]'>
+					<p className='mt-4 text-[0.84375rem] text-[var(--ink-3)]'>
 						Born {[elected.born, elected.birthplace].filter(Boolean).join(', ')}
 					</p>
 				) : null}
@@ -194,7 +194,7 @@ function Profile({ member }: { member: Elected }) {
 				{elected.education.length ? (
 					<section className='mt-7'>
 						<h3 className={LABEL}>Education</h3>
-						<ul className='mt-3 grid gap-2 text-[14px] leading-[1.55] text-[var(--ink-2)]'>
+						<ul className='mt-3 grid gap-2 text-[0.875rem] leading-[1.55] text-[var(--ink-2)]'>
 							{elected.education.map((line) => (
 								<li key={line} className={BULLET}>
 									{line}
@@ -211,7 +211,7 @@ function Profile({ member }: { member: Elected }) {
 				{elected.accomplishments.length ? (
 					<section className='mt-7'>
 						<h3 className={LABEL}>Accomplishments</h3>
-						<ul className='mt-3 grid gap-2 text-[14px] leading-[1.55] text-[var(--ink-2)]'>
+						<ul className='mt-3 grid gap-2 text-[0.875rem] leading-[1.55] text-[var(--ink-2)]'>
 							{elected.accomplishments.map((line) => (
 								<li key={line} className={BULLET}>
 									{line}
@@ -226,7 +226,7 @@ function Profile({ member }: { member: Elected }) {
 					<section className='mt-7'>
 						<h3 className={LABEL}>Background</h3>
 						{lines.length ? (
-							<ul className='mt-3 grid gap-2 text-[14px] leading-[1.55] text-[var(--ink-2)]'>
+							<ul className='mt-3 grid gap-2 text-[0.875rem] leading-[1.55] text-[var(--ink-2)]'>
 								{lines.map((line) => (
 									<li key={line} className={BULLET}>
 										{line}
@@ -234,7 +234,7 @@ function Profile({ member }: { member: Elected }) {
 								))}
 							</ul>
 						) : (
-							<p className='mt-3 text-[13.5px] text-[var(--ink-mute)]'>Nothing found and cited beyond the ballot yet.</p>
+							<p className='mt-3 text-[0.84375rem] text-[var(--ink-mute)]'>Nothing found and cited beyond the ballot yet.</p>
 						)}
 					</section>
 				) : null}
@@ -242,21 +242,21 @@ function Profile({ member }: { member: Elected }) {
 				{principal.length ? (
 					<section className='mt-7'>
 						<h3 className={LABEL}>Recent measures as principal author</h3>
-						<ul className='mt-3 grid gap-2 text-[13.5px] leading-snug'>
+						<ul className='mt-3 grid gap-2 text-[0.84375rem] leading-snug'>
 							{principal.map((measure) => (
 								<li key={measure.id} className='border-b border-[var(--rule)] pb-2'>
 									<Link href={measure.href} className='line-clamp-2 text-[var(--ink)] hover:text-[var(--accent)]'>
 										<span className='num mr-2 font-semibold text-[var(--ink)]'>{measure.numberLabel}</span>
 										{measure.title}
 									</Link>
-									<span className='mt-0.5 block text-[12px] text-[var(--ink-mute)]'>
+									<span className='mt-0.5 block text-[0.75rem] text-[var(--ink-mute)]'>
 										{[measure.status, measure.dateDisplay].filter(Boolean).join(' · ')}
 									</span>
 								</li>
 							))}
 						</ul>
 						{member.principalCount > principal.length ? (
-							<p className='mt-2 text-[12.5px] text-[var(--ink-3)]'>
+							<p className='mt-2 text-[0.78125rem] text-[var(--ink-3)]'>
 								And {member.principalCount - principal.length} more on their full record.
 							</p>
 						) : null}
@@ -266,7 +266,7 @@ function Profile({ member }: { member: Elected }) {
 				{elected.family.length ? (
 					<section className='mt-7'>
 						<h3 className={LABEL}>Family</h3>
-						<ul className='mt-3 grid gap-2 text-[14px] leading-snug'>
+						<ul className='mt-3 grid gap-2 text-[0.875rem] leading-snug'>
 							{elected.family.map((relative) => (
 								<li key={`${relative.name}${relative.relation}${relative.role}`}>
 									<span className='text-[var(--ink-3)]'>{sentenceCase(relative.relation)} </span>
@@ -280,7 +280,7 @@ function Profile({ member }: { member: Elected }) {
 										<span className='text-[var(--ink-2)]'>{relative.role}</span>
 									)}
 									{relative.source ? (
-										<a href={relative.source.url} target='_blank' rel='noreferrer' title={relative.source.label} className='ml-1.5 text-[11.5px] text-[var(--ink-mute)] hover:text-[var(--accent)]'>
+										<a href={relative.source.url} target='_blank' rel='noreferrer' title={relative.source.label} className='ml-1.5 text-[0.71875rem] text-[var(--ink-mute)] hover:text-[var(--accent)]'>
 											source
 										</a>
 									) : null}
@@ -293,7 +293,7 @@ function Profile({ member }: { member: Elected }) {
 				{elected.sources.length ? (
 					<section className='mt-7 border-t border-[var(--rule)] pt-5'>
 						<h3 className={LABEL}>Sources</h3>
-						<ul className='mt-2 grid gap-1 text-[12px] leading-snug'>
+						<ul className='mt-2 grid gap-1 text-[0.75rem] leading-snug'>
 							{elected.sources.map((source) => (
 								<li key={source.url}>
 									<a href={source.url} target='_blank' rel='noreferrer' className='text-[var(--ink-3)] hover:text-[var(--accent)]'>
@@ -352,8 +352,8 @@ export default function ElectedPage() {
 							<li key={s.id} className='border-[var(--rule)] max-lg:border-b max-lg:odd:border-r lg:border-r lg:first:border-l'>
 								<a href={`#${s.id}`} className='group flex h-full flex-col px-5 py-6 transition hover:bg-[var(--paper-2)] sm:px-8'>
 									<span className='num text-[1.75rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--accent)]'>{count}</span>
-									<span className='mt-2 text-[14px] font-bold text-[var(--ink)] group-hover:text-[var(--accent)]'>{s.title}</span>
-									<span className='mt-1 text-[12px] leading-snug text-[var(--ink-3)]'>{s.note}</span>
+									<span className='mt-2 text-[0.875rem] font-bold text-[var(--ink)] group-hover:text-[var(--accent)]'>{s.title}</span>
+									<span className='mt-1 text-[0.75rem] leading-snug text-[var(--ink-3)]'>{s.note}</span>
 								</a>
 							</li>
 						)
@@ -372,7 +372,7 @@ export default function ElectedPage() {
 							{groups.map(([name, list]) => (
 								<div key={name} className='mt-10'>
 									{name ? (
-										<h3 className='mb-4 flex items-baseline gap-3 text-[13px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-2)]'>
+										<h3 className='mb-4 flex items-baseline gap-3 text-[0.8125rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-2)]'>
 											{name}
 											<span className='num text-[var(--ink-mute)]'>{list.length}</span>
 										</h3>
@@ -397,7 +397,7 @@ export default function ElectedPage() {
 			{/* How the page was put together, after the Members themselves. */}
 			<section className='border-t border-[var(--rule)] bg-[var(--paper-2)]'>
 				<div className='bb-container py-12'>
-				<p className='max-w-[52rem] text-[13.5px] leading-[1.7] text-[var(--ink-3)]'>
+				<p className='max-w-[52rem] text-[0.84375rem] leading-[1.7] text-[var(--ink-3)]'>
 					{veterans} of the {members.length} sat in the Transition Authority; their full record is on their page. {withFamily} have a relative in public life
 					that a source names. A relationship is listed only where a source states it, never from a shared surname. Something wrong or missing?{' '}
 					<a href='https://betterbarmm.com/contact' className='rule-link'>

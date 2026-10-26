@@ -95,7 +95,7 @@ export default async function PostPage({ params, searchParams }: { params: Promi
             ) : null}
             <section className="panel p-5">
               <p className="eyebrow mb-2">The post</p>
-              <p className="whitespace-pre-wrap text-[15px] leading-7">{post.body}</p>
+              <p className="whitespace-pre-wrap text-[0.9375rem] leading-7">{post.body}</p>
               {post.link ? (
                 <a href={post.link} target="_blank" rel="noreferrer" className="mt-3 inline-block break-all text-sm text-[var(--accent)] underline">
                   {post.link}

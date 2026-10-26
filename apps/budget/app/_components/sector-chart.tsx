@@ -98,10 +98,10 @@ export function SectorChart({ sectors }: { sectors: Sector[] }) {
                 <div className="relative h-12 w-full">
                   <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center opacity-0 transition-opacity duration-150 group-hover/col:opacity-100">
                     <p className="whitespace-nowrap bg-[var(--ink)] px-3 py-2 text-center">
-                      <span className="block text-[11px] font-semibold leading-tight text-[var(--paper)]">
+                      <span className="block text-[0.6875rem] font-semibold leading-tight text-[var(--paper)]">
                         {sector.name}
                       </span>
-                      <span className="money mt-0.5 block font-mono text-[10px] text-[var(--paper)] opacity-75">
+                      <span className="money mt-0.5 block font-mono text-[0.625rem] text-[var(--paper)] opacity-75">
                         {peso(sector.total)}
                       </span>
                     </p>
@@ -136,7 +136,7 @@ export function SectorChart({ sectors }: { sectors: Sector[] }) {
         </div>
       </div>
 
-      <p className="mt-8 border-t border-[var(--rule)] pt-5 text-[13.5px] leading-7 text-[var(--ink-2)]">
+      <p className="mt-8 border-t border-[var(--rule)] pt-5 text-[0.84375rem] leading-7 text-[var(--ink-2)]">
         <strong className="font-semibold text-[var(--ink)]">
           The {rows.length} largest, against each other.
         </strong>{" "}

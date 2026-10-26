@@ -95,10 +95,10 @@ export function GlobalSearch({ base = '' }: { base?: string }) {
 						onKeyDown={onKeyDown}
 						placeholder='A town, a law, a member, an office, a supplier'
 						aria-label='Search every workspace'
-						className='w-full bg-transparent text-[16px] outline-none placeholder:text-[var(--ink-mute)]'
+						className='w-full bg-transparent text-[1rem] outline-none placeholder:text-[var(--ink-mute)]'
 						autoFocus
 					/>
-					<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 text-[10px] text-[var(--ink-mute)] sm:inline'>Esc</kbd>
+					<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 text-[0.625rem] text-[var(--ink-mute)] sm:inline'>Esc</kbd>
 				</label>
 
 				{hits.length ? (
@@ -111,22 +111,22 @@ export function GlobalSearch({ base = '' }: { base?: string }) {
 									className={`flex items-baseline justify-between gap-4 px-3 py-2.5 ${i === active ? 'bg-[var(--paper-2)]' : ''}`}
 								>
 									<span className='min-w-0'>
-										<span className='block truncate text-[14px] font-semibold text-[var(--ink)]'>{h.title}</span>
-										<span className='block truncate text-[12px] text-[var(--ink-3)]'>{h.detail}</span>
+										<span className='block truncate text-[0.875rem] font-semibold text-[var(--ink)]'>{h.title}</span>
+										<span className='block truncate text-[0.75rem] text-[var(--ink-3)]'>{h.detail}</span>
 									</span>
-									<span className='shrink-0 text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>{h.kind}</span>
+									<span className='shrink-0 text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>{h.kind}</span>
 								</a>
 							</li>
 						))}
 					</ul>
 				) : (
-					<p className='px-6 py-7 text-[13.5px] leading-[1.6] text-[var(--ink-3)]'>
+					<p className='px-6 py-7 text-[0.84375rem] leading-[1.6] text-[var(--ink-3)]'>
 						{data ? 'Nothing by that name.' : 'Every workspace at once: towns and barangays, laws, members, budget and procurement offices, suppliers.'}
 					</p>
 				)}
 
 				{data && data.total > hits.length ? (
-					<a href={all} className='block border-t border-[var(--rule)] px-4 py-3 text-[12.5px] font-semibold text-[var(--accent)]'>
+					<a href={all} className='block border-t border-[var(--rule)] px-4 py-3 text-[0.78125rem] font-semibold text-[var(--accent)]'>
 						All {data.total.toLocaleString('en-PH')} results →
 					</a>
 				) : null}

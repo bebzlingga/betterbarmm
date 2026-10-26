@@ -44,7 +44,7 @@ function Block({ title, note, children }: { title: string; note?: React.ReactNod
 		<div className='mt-14 first:mt-0'>
 			<h3 className='bb-label block w-full border-b border-[var(--brass-line)] pb-3'>{title}</h3>
 			{children}
-			{note ? <p className='mt-4 text-[12.5px] leading-6 text-[var(--ink-mute)] transition-colors hover:text-[var(--ink-3)]'>{note}</p> : null}
+			{note ? <p className='mt-4 text-[0.78125rem] leading-6 text-[var(--ink-mute)] transition-colors hover:text-[var(--ink-3)]'>{note}</p> : null}
 		</div>
 	)
 }
@@ -62,21 +62,21 @@ function YearTable({ years, lines }: { years: string[]; lines: [string, (year: s
 	return (
 		<div className='mt-4'>
 			{years.length > 3 ? (
-				<p aria-hidden='true' className='mb-2 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] sm:hidden'>
+				<p aria-hidden='true' className='mb-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] sm:hidden'>
 					Swipe for every year &rarr;
 				</p>
 			) : null}
 			<div className='overflow-x-auto'>
-			<table className='w-full min-w-[36rem] border-collapse text-[13px]'>
+			<table className='w-full min-w-[36rem] border-collapse text-[0.8125rem]'>
 				<thead>
 					<tr>
-						<th className='sticky left-0 z-[1] bg-[var(--paper)] py-2 pr-4 text-left font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+						<th className='sticky left-0 z-[1] bg-[var(--paper)] py-2 pr-4 text-left font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 							FY
 						</th>
 						{years.map((year) => (
 							<th
 								key={year}
-								className='num py-2 pl-3 text-right font-mono text-[10px] font-semibold tracking-[0.1em] text-[var(--ink-3)]'
+								className='num py-2 pl-3 text-right font-mono text-[0.625rem] font-semibold tracking-[0.1em] text-[var(--ink-3)]'
 							>
 								{year}
 							</th>
@@ -117,7 +117,7 @@ function Bars({ items }: { items: { label: string; value: number }[] }) {
 		<ul className='mt-5 space-y-3'>
 			{items.map((item) => (
 				<li key={item.label} className='grid grid-cols-[minmax(0,11rem)_minmax(0,1fr)_auto] items-center gap-3'>
-					<span className='truncate text-[13px] text-[var(--ink-2)]'>{item.label}</span>
+					<span className='truncate text-[0.8125rem] text-[var(--ink-2)]'>{item.label}</span>
 					<span className='h-2.5 bg-[color-mix(in_oklab,var(--brass)_18%,transparent)]'>
 						<span
 							className='block h-full bg-[var(--accent)]'
@@ -125,7 +125,7 @@ function Bars({ items }: { items: { label: string; value: number }[] }) {
 							title={`${item.label}: ${peso(item.value)} (${Math.round((item.value / total) * 100)}%)`}
 						/>
 					</span>
-					<span className='num w-28 text-right text-[12.5px] text-[var(--ink)]'>
+					<span className='num w-28 text-right text-[0.78125rem] text-[var(--ink)]'>
 						{peso(item.value)} <span className='text-[var(--ink-3)]'>· {Math.round((item.value / total) * 100)}%</span>
 					</span>
 				</li>
@@ -164,7 +164,7 @@ export function LguFinances({
 
 	if (!f && !classes && !Object.keys(seals).length && !won.length) {
 		return (
-			<p className='text-[14.5px] leading-7 text-[var(--ink-2)]'>
+			<p className='text-[0.90625rem] leading-7 text-[var(--ink-2)]'>
 				No fiscal record names {name} yet. The towns of the Special Geographic Area were created in 2024 and
 				have not filed a Statement of Receipts and Expenditures with the Bureau of Local Government Finance,
 				nor been classified, ranked or awarded under their own names.
@@ -176,7 +176,7 @@ export function LguFinances({
 
 	return (
 		<div>
-			<p className='text-[14.5px] leading-7 text-[var(--ink-2)]'>
+			<p className='text-[0.90625rem] leading-7 text-[var(--ink-2)]'>
 				What {name}&rsquo;s treasurer reported collecting and spending to the Bureau of Local Government
 				Finance, year by year. These are <strong className='text-[var(--ink)]'>actuals, not the budget</strong>{' '}
 				the sanggunian passed — that is in its own appropriation ordinance, which nobody publishes together.
@@ -305,12 +305,12 @@ export function LguFinances({
 						<ul className='mt-4'>
 							{certificates.map((c) => (
 								<li key={c.control} className='grid gap-x-6 border-b border-[var(--rule-soft)] py-4 transition-colors hover:bg-[var(--paper-2)] md:grid-cols-[9rem_minmax(0,1fr)_8rem] md:items-baseline'>
-									<span className='num text-[12.5px] text-[var(--ink-3)]'>{c.date ?? '—'}</span>
-									<span className='text-[13px] leading-6 text-[var(--ink-2)]'>
+									<span className='num text-[0.78125rem] text-[var(--ink-3)]'>{c.date ?? '—'}</span>
+									<span className='text-[0.8125rem] leading-6 text-[var(--ink-2)]'>
 										<span className='font-semibold text-[var(--ink)]'>Cleared to borrow{c.barangay ? ` (Barangay ${c.barangay})` : ''}.</span>{' '}
 										{c.purpose.length > 220 ? `${c.purpose.slice(0, 220)}…` : c.purpose}
 									</span>
-									<a href={c.href} target='_blank' rel='noreferrer' className='num text-right text-[13px] font-semibold text-[var(--ink)] hover:text-[var(--accent)]'>
+									<a href={c.href} target='_blank' rel='noreferrer' className='num text-right text-[0.8125rem] font-semibold text-[var(--ink)] hover:text-[var(--accent)]'>
 										{peso(c.proposedAmount)}
 									</a>
 								</li>
@@ -332,14 +332,14 @@ export function LguFinances({
 						<ul className='mt-4'>
 							{releases.map((release) => (
 								<li key={release.number} className='grid gap-x-6 border-b border-[var(--rule-soft)] py-4 transition-colors hover:bg-[var(--paper-2)] md:grid-cols-[9rem_minmax(0,1fr)_8rem] md:items-baseline'>
-									<span className='num text-[12.5px] text-[var(--ink-3)]'>
+									<span className='num text-[0.78125rem] text-[var(--ink-3)]'>
 										{release.kind} · {release.date}
 									</span>
-									<span className='text-[13px] leading-6 text-[var(--ink-2)]'>
+									<span className='text-[0.8125rem] leading-6 text-[var(--ink-2)]'>
 										{release.fund ? <span className='font-semibold text-[var(--ink)]'>{release.fund}. </span> : null}
 										{release.purpose.length > 200 ? `${release.purpose.slice(0, 200)}…` : release.purpose}
 									</span>
-									<a href={release.href} target='_blank' rel='noreferrer' className='num text-right text-[13px] font-semibold text-[var(--ink)] hover:text-[var(--accent)]'>
+									<a href={release.href} target='_blank' rel='noreferrer' className='num text-right text-[0.8125rem] font-semibold text-[var(--ink)] hover:text-[var(--accent)]'>
 										{peso(release.amount)}
 									</a>
 								</li>
@@ -421,10 +421,10 @@ export function LguRecognition({ unitKey }: { unitKey: string }) {
 							return (
 								<li key={i} className='flex items-start justify-between gap-4 border-b border-[var(--rule-soft)] py-3'>
 									<a href={award.href} target='_blank' rel='noreferrer' className='group min-w-0'>
-										<span className='block text-[13.5px] font-medium text-[var(--ink)] group-hover:text-[var(--accent)]'>
+										<span className='block text-[0.84375rem] font-medium text-[var(--ink)] group-hover:text-[var(--accent)]'>
 											{meta?.name ?? award.award}
 										</span>
-										<span className='mt-0.5 block text-[12px] leading-5 text-[var(--ink-3)]'>
+										<span className='mt-0.5 block text-[0.75rem] leading-5 text-[var(--ink-3)]'>
 											{[
 												meta?.agency,
 												meta?.scope === 'regional' ? 'regional' : null,
@@ -441,7 +441,7 @@ export function LguRecognition({ unitKey }: { unitKey: string }) {
 												.join(' · ')}
 										</span>
 									</a>
-									<span className='num shrink-0 text-[12.5px] font-semibold text-[var(--brass)]'>{award.year}</span>
+									<span className='num shrink-0 text-[0.78125rem] font-semibold text-[var(--brass)]'>{award.year}</span>
 								</li>
 							)
 						})}
@@ -454,8 +454,8 @@ export function LguRecognition({ unitKey }: { unitKey: string }) {
 function Fact({ label, href, children }: { label: string; href?: string; children: React.ReactNode }) {
 	return (
 		<div className='flex flex-col gap-1 border-b border-[var(--rule-soft)] py-2.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4'>
-			<dt className='text-[13px] text-[var(--ink-3)]'>{label}</dt>
-			<dd className='text-[13.5px] font-medium text-[var(--ink)] sm:text-right'>
+			<dt className='text-[0.8125rem] text-[var(--ink-3)]'>{label}</dt>
+			<dd className='text-[0.84375rem] font-medium text-[var(--ink)] sm:text-right'>
 				{href ? (
 					<a href={href} target='_blank' rel='noreferrer' className='inline-flex items-center gap-1 hover:text-[var(--accent)]'>
 						{children}

@@ -160,15 +160,15 @@ export function BarmmMap() {
 						/>
 
 						<div className='min-w-0'>
-							<dt className='text-[15px] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
+							<dt className='text-[0.9375rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
 								{province.name}
 								{shape ? null : (
-									<span className='ml-2 font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>
+									<span className='ml-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>
 										not drawn
 									</span>
 								)}
 							</dt>
-							<dd className='num mt-1.5 text-[13px] leading-6 text-[var(--ink-2)]'>
+							<dd className='num mt-1.5 text-[0.8125rem] leading-6 text-[var(--ink-2)]'>
 								{figure(province.population)}
 								<span className='text-[var(--ink-mute)]'> people</span>
 								{' · '}

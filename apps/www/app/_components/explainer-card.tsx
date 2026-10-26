@@ -18,11 +18,11 @@ export function ExplainerCard({ e, heading: Heading = 'h2' }: { e: Article; head
 				weight='bold'
 				aria-hidden='true'
 			/>
-			<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>{categoryLabel(e.category)}</span>
+			<span className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>{categoryLabel(e.category)}</span>
 			<Heading className='mt-4 pr-6 text-[1.2rem] font-extrabold leading-snug tracking-[-0.02em] transition-colors duration-300 group-hover:text-[var(--accent)]'>{e.title}</Heading>
 			{e.summary ? <p className='mt-3 flex-1 bb-body !leading-[1.7] text-[var(--ink-2)]'>{e.summary}</p> : null}
 			{e.published_at ? (
-				<p className='mt-5 text-[12.5px] text-[var(--ink-3)]'>{[longDate(e.published_at), e.author ? `@${e.author}` : null].filter(Boolean).join(' · ')}</p>
+				<p className='mt-5 text-[0.78125rem] text-[var(--ink-3)]'>{[longDate(e.published_at), e.author ? `@${e.author}` : null].filter(Boolean).join(' · ')}</p>
 			) : null}
 		</Link>
 	)

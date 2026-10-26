@@ -52,11 +52,11 @@ function IncidentDots() {
 	return (
 		<span className='flex h-full w-full items-stretch bg-[var(--paper-2)] text-[var(--ink-2)]'>
 			<span className='flex w-[42%] shrink-0 flex-col justify-center gap-2 pl-6'>
-				<span className='font-[family-name:var(--font-display)] text-[30px] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>{accidents.length.toLocaleString('en-PH')}</span>
-				<span className='font-mono text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>incidents mapped</span>
+				<span className='font-[family-name:var(--font-display)] text-[1.875rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>{accidents.length.toLocaleString('en-PH')}</span>
+				<span className='font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>incidents mapped</span>
 				<span className='mt-1 grid gap-1'>
 					{KINDS.map((t) => (
-						<span key={t.id} className='flex items-center gap-1.5 text-[11px] leading-none'>
+						<span key={t.id} className='flex items-center gap-1.5 text-[0.6875rem] leading-none'>
 							<span className='size-1.5 shrink-0 rounded-full' style={{ background: t.color }} />
 							<span className='truncate'>{t.label}</span>
 							<span className='tabular-nums text-[var(--ink-3)]'>{t.n}</span>
@@ -96,12 +96,12 @@ function HazardDots() {
 	return (
 		<span className='flex h-full w-full items-stretch bg-[var(--paper-2)] text-[var(--ink-2)]'>
 			<span className='flex w-[42%] shrink-0 flex-col justify-center gap-2 pl-6'>
-				<span className='font-[family-name:var(--font-display)] text-[30px] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>{officialBarangays.toLocaleString('en-PH')}</span>
-				<span className='font-mono text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>barangays mapped</span>
+				<span className='font-[family-name:var(--font-display)] text-[1.875rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>{officialBarangays.toLocaleString('en-PH')}</span>
+				<span className='font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>barangays mapped</span>
 				<span className='mt-1 grid gap-1'>
-					<span className='text-[10.5px] font-semibold text-[var(--ink-3)]'>In high hazard</span>
+					<span className='text-[0.65625rem] font-semibold text-[var(--ink-3)]'>In high hazard</span>
 					{HAZARDS.map((h) => (
-						<span key={h.id} className='flex items-center gap-1.5 text-[11px] leading-none'>
+						<span key={h.id} className='flex items-center gap-1.5 text-[0.6875rem] leading-none'>
 							<span className='size-1.5 shrink-0 rounded-full' style={{ background: CLASS_COLORS[2] }} />
 							<span className='truncate'>{h.label}</span>
 							<span className='tabular-nums text-[var(--ink-3)]'>{region.highBarangays[h.id]}</span>
@@ -176,15 +176,15 @@ export function ProjectList({ projects }: { projects: Project[] }) {
 						</span>
 						<span className='block p-6'>
 							<span className='flex items-baseline justify-between gap-3'>
-								<span className={`text-[16px] font-extrabold tracking-[-0.02em] ${p.href ? 'group-hover:text-[var(--accent)]' : 'text-[var(--ink-3)]'}`}>{p.label}</span>
+								<span className={`text-[1rem] font-extrabold tracking-[-0.02em] ${p.href ? 'group-hover:text-[var(--accent)]' : 'text-[var(--ink-3)]'}`}>{p.label}</span>
 								{p.href ? (
 									<ArrowUpRightIcon className='size-3.5 shrink-0 text-[var(--ink-3)] transition duration-200 group-hover:text-[var(--accent)]' aria-hidden='true' />
 								) : (
-									<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Coming</span>
+									<span className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Coming</span>
 								)}
 							</span>
-							<span className='block font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>{p.measure}</span>
-							<span className='mt-1.5 line-clamp-2 text-[13.5px] leading-[1.55] text-[var(--ink-2)]'>{p.blurb}</span>
+							<span className='block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>{p.measure}</span>
+							<span className='mt-1.5 line-clamp-2 text-[0.84375rem] leading-[1.55] text-[var(--ink-2)]'>{p.blurb}</span>
 						</span>
 					</>
 				)

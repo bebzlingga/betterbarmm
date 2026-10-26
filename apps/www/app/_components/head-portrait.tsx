@@ -14,7 +14,7 @@ export function HeadPortrait({ slug, name, className = 'size-12' }: { slug: stri
 		// eslint-disable-next-line @next/next/no-img-element
 		<img src={photo.src} alt={name ? `${name}, official portrait` : ''} loading='lazy' className={`shrink-0 rounded-full bg-[var(--paper-2)] object-cover ${className}`} />
 	) : (
-		<span aria-hidden='true' className={`grid shrink-0 place-items-center rounded-full bg-[var(--paper-2)] text-[14px] font-bold text-[var(--ink-3)] ${className}`}>
+		<span aria-hidden='true' className={`grid shrink-0 place-items-center rounded-full bg-[var(--paper-2)] text-[0.875rem] font-bold text-[var(--ink-3)] ${className}`}>
 			{initials || '·'}
 		</span>
 	)

@@ -30,7 +30,7 @@ function MeasureRow({ measure, index }: { measure: MemberMeasure; index: number 
 				    three things that differ row to row, on one line. The tab
 				    already says what kind of measure it is. */}
 				<div className='flex flex-wrap items-center gap-x-2 gap-y-1.5'>
-					<span className='num text-[13px] font-medium text-[var(--ink-3)]'>
+					<span className='num text-[0.8125rem] font-medium text-[var(--ink-3)]'>
 						{measure.numberLabel}
 					</span>
 					<span

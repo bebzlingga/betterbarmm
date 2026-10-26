@@ -39,13 +39,13 @@ function Column({
 	return (
 		<div className='bg-[var(--paper)] p-6 sm:p-7'>
 			<div className='flex items-baseline gap-3'>
-				<p className='num text-[13px] font-bold leading-none text-[var(--accent)]'>{step}</p>
-				<h3 className='text-[16px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+				<p className='num text-[0.8125rem] font-bold leading-none text-[var(--accent)]'>{step}</p>
+				<h3 className='text-[1rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 					{title}
 				</h3>
 			</div>
 
-			<p className='mt-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+			<p className='mt-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 				{instruction}
 			</p>
 
@@ -53,7 +53,7 @@ function Column({
 				{rows.map((row) => (
 					<li
 						key={row}
-						className='flex items-start gap-3 border-b border-[var(--rule-soft)] py-2.5 text-[13.5px] leading-snug text-[var(--ink-2)]'
+						className='flex items-start gap-3 border-b border-[var(--rule-soft)] py-2.5 text-[0.84375rem] leading-snug text-[var(--ink-2)]'
 					>
 						<Oval />
 						<span className='min-w-0'>{row}</span>
@@ -62,12 +62,12 @@ function Column({
 			</ul>
 
 			{more ? (
-				<p className='mt-3 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+				<p className='mt-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 					{more}
 				</p>
 			) : null}
 
-			<p className='bb-measure mt-5 text-[13px] leading-7 text-[var(--ink-2)]'>{footnote}</p>
+			<p className='bb-measure mt-5 text-[0.8125rem] leading-7 text-[var(--ink-2)]'>{footnote}</p>
 		</div>
 	)
 }
@@ -100,10 +100,10 @@ export function BallotDiagram({
 	return (
 		<figure className='border border-[var(--ink)]'>
 			<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-[var(--ink)] bg-[var(--paper-2)] px-6 py-4'>
-				<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--ink)]'>
+				<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--ink)]'>
 					One ballot, two marks
 				</p>
-				<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
+				<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
 					{electionDay}
 				</p>
 			</div>
@@ -133,8 +133,8 @@ export function BallotDiagram({
 				    paper above it — and held to 34em under a figure that runs the page
 				    it read as an aside about the diagram rather than as the rest of
 				    the diagram's own account. */}
-				<p className='text-[13px] leading-7 text-[var(--ink-2)]'>
-					<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink)]'>
+				<p className='text-[0.8125rem] leading-7 text-[var(--ink-2)]'>
+					<span className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink)]'>
 						Not on the ballot ·{' '}
 					</span>
 					The remaining {reservedSeats} seats are reserved for named sectors — Non-Moro Indigenous

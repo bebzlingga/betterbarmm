@@ -35,7 +35,7 @@ function Dropdown({ name, options, on, toggle, clear, open, setOpen }: { name: s
 				type='button'
 				onClick={() => setOpen(!open)}
 				aria-expanded={open}
-				className={`group flex h-11 w-full cursor-pointer items-center gap-2 border px-3.5 text-left text-[14px] transition sm:w-auto ${picked.length ? 'border-[#1f6f78] bg-[#1f6f78] text-white' : open ? 'border-[#1f6f78] bg-[#eef4f3]' : 'border-[#c9d8d6] bg-white hover:border-[#8aa3a9]'}`}
+				className={`group flex h-11 w-full cursor-pointer items-center gap-2 border px-3.5 text-left text-[0.875rem] transition sm:w-auto ${picked.length ? 'border-[#1f6f78] bg-[#1f6f78] text-white' : open ? 'border-[#1f6f78] bg-[#eef4f3]' : 'border-[#c9d8d6] bg-white hover:border-[#8aa3a9]'}`}
 			>
 				<span className={picked.length ? 'text-white/75' : 'text-[#4d6670]'}>{name}</span>
 				<span className={`min-w-0 flex-1 truncate font-semibold sm:max-w-[11rem] ${picked.length ? 'text-white' : 'text-[#13303a]'}`}>{value}</span>
@@ -48,17 +48,17 @@ function Dropdown({ name, options, on, toggle, clear, open, setOpen }: { name: s
 							const checked = on.has(o.id)
 							return (
 								<li key={o.id}>
-									<button type='button' role='menuitemcheckbox' aria-checked={checked} onClick={() => toggle(o.id)} className={`flex w-full cursor-pointer items-center gap-2.5 px-2.5 py-2 text-left text-[14px] hover:bg-[#eef4f3] ${o.n || checked ? 'text-[#13303a]' : 'text-[#8aa3a9]'}`}>
+									<button type='button' role='menuitemcheckbox' aria-checked={checked} onClick={() => toggle(o.id)} className={`flex w-full cursor-pointer items-center gap-2.5 px-2.5 py-2 text-left text-[0.875rem] hover:bg-[#eef4f3] ${o.n || checked ? 'text-[#13303a]' : 'text-[#8aa3a9]'}`}>
 										<span className={`grid size-4 shrink-0 place-items-center border ${checked ? 'border-[#1f6f78] bg-[#1f6f78] text-white' : 'border-[#8aa3a9] bg-white'}`}>{checked ? <CheckIcon size={11} weight='bold' aria-hidden='true' /> : null}</span>
 										<span className='flex-1'>{o.label}</span>
-										<span className='tabular-nums text-[12.5px] text-[#8aa3a9]'>{o.n}</span>
+										<span className='tabular-nums text-[0.78125rem] text-[#8aa3a9]'>{o.n}</span>
 									</button>
 								</li>
 							)
 						})}
 					</ul>
 					{picked.length ? (
-						<button type='button' onClick={clear} className='mt-1 w-full cursor-pointer border-t border-[#e3ecea] px-2.5 pb-1 pt-2 text-left text-[13px] font-semibold text-[#1f6f78] hover:text-[#13303a]'>
+						<button type='button' onClick={clear} className='mt-1 w-full cursor-pointer border-t border-[#e3ecea] px-2.5 pb-1 pt-2 text-left text-[0.8125rem] font-semibold text-[#1f6f78] hover:text-[#13303a]'>
 							Clear {name.toLowerCase()}
 						</button>
 					) : null}
@@ -114,7 +114,7 @@ export function PlacesBrowser({
 						value={q}
 						onChange={(e) => setQ(e.target.value)}
 						placeholder='Search a place or town'
-						className='h-11 w-full border border-[#c9d8d6] bg-white pl-9 pr-3 text-[14.5px] text-[#13303a] placeholder:text-[#8aa3a9] focus:border-[#1f6f78] focus:outline-none'
+						className='h-11 w-full border border-[#c9d8d6] bg-white pl-9 pr-3 text-[0.90625rem] text-[#13303a] placeholder:text-[#8aa3a9] focus:border-[#1f6f78] focus:outline-none'
 					/>
 				</label>
 				<div className='grid grid-cols-2 gap-2 sm:ml-auto sm:flex'>
@@ -122,13 +122,13 @@ export function PlacesBrowser({
 					<Dropdown name='Location' options={areas.map((a) => ({ ...a, n: areaCount(a.id) }))} on={where} toggle={(id) => setWhere(flip(where, id))} clear={() => setWhere(new Set())} open={menu === 'area'} setOpen={(o) => setMenu(o ? 'area' : null)} />
 				</div>
 				{filtered ? (
-					<button type='button' onClick={clear} className='inline-flex cursor-pointer items-center gap-1 px-1 text-[13px] font-semibold text-[#1f6f78] hover:text-[#13303a] sm:order-none'>
+					<button type='button' onClick={clear} className='inline-flex cursor-pointer items-center gap-1 px-1 text-[0.8125rem] font-semibold text-[#1f6f78] hover:text-[#13303a] sm:order-none'>
 						<XIcon size={12} weight='bold' aria-hidden='true' /> Clear all
 					</button>
 				) : null}
 			</div>
 
-			{filtered ? <p className='mt-4 text-[13.5px] text-[#4d6670]'>{shown.length ? `${shown.length} of ${index.length} places` : 'No place matches. Try fewer filters.'}</p> : null}
+			{filtered ? <p className='mt-4 text-[0.84375rem] text-[#4d6670]'>{shown.length ? `${shown.length} of ${index.length} places` : 'No place matches. Try fewer filters.'}</p> : null}
 
 			<div className='mt-10'>
 				{kinds.map((k) => {
@@ -136,7 +136,7 @@ export function PlacesBrowser({
 					if (!list.length) return null
 					return (
 						<section key={k.id} id={k.id} aria-labelledby={`h-${k.id}`} className='mb-16 scroll-mt-24 last:mb-0'>
-							<h2 id={`h-${k.id}`} className='text-[28px] font-extrabold tracking-[-0.02em]'>
+							<h2 id={`h-${k.id}`} className='text-[1.75rem] font-extrabold tracking-[-0.02em]'>
 								{k.label} <span className='text-[#8aa3a9]'>{list.length}</span>
 							</h2>
 							<ul className='mt-6 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4'>

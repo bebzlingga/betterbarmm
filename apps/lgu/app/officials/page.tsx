@@ -165,7 +165,7 @@ export default async function OfficialsPage({ searchParams }: { searchParams: Pr
 			<section className='bb-container bb-section'>
 				<OfficialsExplorer terms={TERMS} term={term} officials={officials} />
 
-				<div className='mt-10 space-y-2 text-[13px] leading-6 text-[var(--ink-3)]'>
+				<div className='mt-10 space-y-2 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 					<p>
 						The 2025–2028 term is from COMELEC&rsquo;s 2025 Certificates of Canvass. Earlier terms are from{' '}
 						<a href={officialsHistory.source.href} target='_blank' rel='noreferrer' className='rule-link'>

@@ -37,7 +37,7 @@ export function DocToc({ items }: { items: TocItem[] }) {
 
 	return (
 		<nav aria-label='On this page'>
-			<p className='flex items-center gap-2 text-[14px] font-semibold text-[var(--ink)]'>
+			<p className='flex items-center gap-2 text-[0.875rem] font-semibold text-[var(--ink)]'>
 				<TextAlignLeftIcon size={16} className='text-[var(--ink-3)]' aria-hidden='true' />
 				On this page
 			</p>
@@ -49,7 +49,7 @@ export function DocToc({ items }: { items: TocItem[] }) {
 							<a
 								href={`#${item.id}`}
 								aria-current={on ? 'location' : undefined}
-								className={`-ml-px block border-l-2 py-1.5 text-[13.5px] leading-5 transition ${
+								className={`-ml-px block border-l-2 py-1.5 text-[0.84375rem] leading-5 transition ${
 									item.depth === 1 ? 'pl-4' : 'pl-7'
 								} ${
 									on

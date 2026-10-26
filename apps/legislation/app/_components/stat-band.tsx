@@ -35,7 +35,7 @@ function Spark({ series }: { series: { year: number; value: number }[] }) {
 					</circle>
 				))}
 			</svg>
-			<div className='mt-1 flex justify-between text-[10.5px] text-[var(--ink-mute)]'>
+			<div className='mt-1 flex justify-between text-[0.65625rem] text-[var(--ink-mute)]'>
 				<span>{series[0]?.year}</span>
 				<span>{series[last]?.year}</span>
 			</div>
@@ -48,7 +48,7 @@ function Marks({ marks }: { marks: string[] }) {
 	return (
 		<ul className='mt-5 flex max-w-[16rem] flex-wrap gap-1.5'>
 			{marks.map((m) => (
-				<li key={m} title={m} className='rounded-[3px] bg-[var(--accent)] px-2 py-1 text-[10.5px] font-semibold leading-none text-white'>
+				<li key={m} title={m} className='rounded-[3px] bg-[var(--accent)] px-2 py-1 text-[0.65625rem] font-semibold leading-none text-white'>
 					{m}
 				</li>
 			))}
@@ -131,7 +131,7 @@ export function StatFigures({ stats }: { stats: Stat[] }) {
 					    and five lines and the figures stop reading as a row at all.
 					    Not `.bb-body` with a size beside it: that class is unlayered
 					    and would win against the utility. */}
-					<p className='mt-3 max-w-[16rem] text-[13px] leading-[1.55] text-[var(--ink-3)]'>
+					<p className='mt-3 max-w-[16rem] text-[0.8125rem] leading-[1.55] text-[var(--ink-3)]'>
 						{stat.detail}
 					</p>
 				</StaggerItem>

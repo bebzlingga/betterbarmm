@@ -20,8 +20,8 @@ export const metadata: Metadata = {
 
 const H2 = 'text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
 const H3 = 'mt-10 text-[1.1rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'
-const P = 'mt-4 text-[15px] leading-7 text-[var(--ink-2)]'
-const CITE = 'mt-3 text-[12.5px] leading-5 text-[var(--ink-3)]'
+const P = 'mt-4 text-[0.9375rem] leading-7 text-[var(--ink-2)]'
+const CITE = 'mt-3 text-[0.78125rem] leading-5 text-[var(--ink-3)]'
 
 const IRR = 'https://www.officialgazette.gov.ph/downloads/2025/02feb/20250210-IRR-RA-12009-FRM.pdf'
 const ACT = 'https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html'
@@ -176,11 +176,11 @@ const sources = [
 function Table({ head, rows }: { head: string[]; rows: string[][] }) {
 	return (
 		<div className='mt-6 overflow-x-auto'>
-			<table className='w-full min-w-[30rem] border-collapse text-left text-[14px] leading-6'>
+			<table className='w-full min-w-[30rem] border-collapse text-left text-[0.875rem] leading-6'>
 				<thead>
 					<tr className='border-b border-[var(--rule-strong,var(--rule))]'>
 						{head.map((h) => (
-							<th key={h} className='py-2.5 pr-6 text-[12px] font-semibold uppercase tracking-[0.06em] text-[var(--ink-3)] last:pr-0'>
+							<th key={h} className='py-2.5 pr-6 text-[0.75rem] font-semibold uppercase tracking-[0.06em] text-[var(--ink-3)] last:pr-0'>
 								{h}
 							</th>
 						))}
@@ -309,11 +309,11 @@ export default function HowItWorksPage() {
 						<ol className='mt-8'>
 							{steps.map((s, i) => (
 								<li key={s.name} className='grid grid-cols-[2.5rem_minmax(0,1fr)] gap-x-4 border-t border-[var(--rule)] py-6'>
-									<span className='num text-[13px] font-semibold text-[var(--brass)]'>{String(i + 1).padStart(2, '0')}</span>
+									<span className='num text-[0.8125rem] font-semibold text-[var(--brass)]'>{String(i + 1).padStart(2, '0')}</span>
 									<div>
 										<h3 className='text-[1.05rem] font-extrabold tracking-[-0.01em] text-[var(--ink)]'>{s.name}</h3>
-										<p className='mt-2 text-[15px] leading-7 text-[var(--ink-2)]'>{s.body}</p>
-										<p className='mt-1.5 text-[12.5px] text-[var(--ink-3)]'>{s.cite}</p>
+										<p className='mt-2 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>{s.body}</p>
+										<p className='mt-1.5 text-[0.78125rem] text-[var(--ink-3)]'>{s.cite}</p>
 									</div>
 								</li>
 							))}
@@ -339,11 +339,11 @@ export default function HowItWorksPage() {
 								<dl className='mt-4'>
 									{g.items.map((m) => (
 										<div key={m.name} className='grid gap-x-8 gap-y-1 border-t border-[var(--rule)] py-4 sm:grid-cols-[minmax(0,1fr)_11rem]'>
-											<dt className='text-[15px] font-semibold text-[var(--ink)]'>{m.name}</dt>
-											<dd className='num text-[13px] text-[var(--ink-3)] sm:row-span-2 sm:text-right'>
+											<dt className='text-[0.9375rem] font-semibold text-[var(--ink)]'>{m.name}</dt>
+											<dd className='num text-[0.8125rem] text-[var(--ink-3)] sm:row-span-2 sm:text-right'>
 												{m.limit}
 											</dd>
-											<dd className='text-[14px] leading-6 text-[var(--ink-2)]'>{m.when}</dd>
+											<dd className='text-[0.875rem] leading-6 text-[var(--ink-2)]'>{m.when}</dd>
 										</div>
 									))}
 								</dl>
@@ -484,7 +484,7 @@ export default function HowItWorksPage() {
 						<p className={P}>
 							Read in October 2026. Where this page and the law differ, the law settles it.
 						</p>
-						<ol className='mt-6 space-y-3 text-[14px] leading-6'>
+						<ol className='mt-6 space-y-3 text-[0.875rem] leading-6'>
 							{sources.map((s) => (
 								<li key={s.href} className='border-t border-[var(--rule)] pt-3'>
 									<a href={s.href} target='_blank' rel='noreferrer' className='rule-link text-[var(--ink-2)]'>

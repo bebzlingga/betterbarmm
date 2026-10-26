@@ -322,14 +322,14 @@ const TOC: TocItem[] = OUTLINE.flatMap((section) => [
 
 const H2 = 'scroll-mt-32 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
 const H3 = 'scroll-mt-32 text-[1.1rem] font-semibold tracking-[-0.01em] text-[var(--ink)]'
-const P = 'text-[15px] leading-7 text-[var(--ink-2)]'
+const P = 'text-[0.9375rem] leading-7 text-[var(--ink-2)]'
 
 function Topic({ title, cite, children }: { title: string; cite?: string; children: React.ReactNode }) {
 	return (
 		<div className='mt-10'>
 			<h3 id={slug(title)} className={H3}>
 				{title}
-				{cite ? <span className='ml-3 text-[13px] font-normal text-[var(--ink-3)]'>{cite}</span> : null}
+				{cite ? <span className='ml-3 text-[0.8125rem] font-normal text-[var(--ink-3)]'>{cite}</span> : null}
 			</h3>
 			<div className={`mt-3 ${P}`}>{children}</div>
 		</div>
@@ -399,7 +399,7 @@ export default function GovernanceCodePage() {
 					<Section id='history' lead='It took two Parliaments.'>
 						<ol className='mt-6'>
 							{TIMELINE.map((step) => (
-								<li key={step.when} className='grid gap-x-4 border-b border-[var(--rule-soft)] py-3 text-[15px] leading-7 text-[var(--ink-2)] sm:grid-cols-[10rem_minmax(0,1fr)]'>
+								<li key={step.when} className='grid gap-x-4 border-b border-[var(--rule-soft)] py-3 text-[0.9375rem] leading-7 text-[var(--ink-2)] sm:grid-cols-[10rem_minmax(0,1fr)]'>
 									<span className='font-semibold text-[var(--ink)]'>{step.when}</span>
 									<span>{step.what}</span>
 								</li>
@@ -410,10 +410,10 @@ export default function GovernanceCodePage() {
 					<Section id='structure' lead='605 sections in four books, read in order: the rules that apply to every local government, then how they are funded, then what each level is and must do, then how the Code is put into force.'>
 						<ul className='mt-6'>
 							{BOOKS.map((book) => (
-								<li key={book.book} className='grid grid-cols-[5rem_minmax(0,1fr)_auto] gap-4 border-b border-[var(--rule-soft)] py-3 text-[15px] text-[var(--ink-2)]'>
+								<li key={book.book} className='grid grid-cols-[5rem_minmax(0,1fr)_auto] gap-4 border-b border-[var(--rule-soft)] py-3 text-[0.9375rem] text-[var(--ink-2)]'>
 									<span className='font-semibold text-[var(--ink)]'>{book.book}</span>
 									<span>{book.title}</span>
-									<span className='num text-[13px] text-[var(--ink-3)]'>{book.sections}</span>
+									<span className='num text-[0.8125rem] text-[var(--ink-3)]'>{book.sections}</span>
 								</li>
 							))}
 						</ul>
@@ -441,9 +441,9 @@ export default function GovernanceCodePage() {
 					<Section id='money' lead='Book II. Local taxes stay local; the region’s shares of natural resources and national taxes are passed down by formula; and every local budget carries minimum allocations.'>
 						<Points points={MONEY} />
 						<Topic title='Amounts brought up to date'>
-							<table className='w-full border-collapse text-[15px]'>
+							<table className='w-full border-collapse text-[0.9375rem]'>
 								<thead>
-									<tr className='border-b border-[var(--ink)] text-left text-[10.5px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)]'>
+									<tr className='border-b border-[var(--ink)] text-left text-[0.65625rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)]'>
 										<th className='py-2.5 pr-4 font-semibold'>Tax</th>
 										<th className='py-2.5 pr-4 text-right font-semibold'>MMAA 25 / RA 7160</th>
 										<th className='py-2.5 text-right font-semibold'>BAA 49</th>
@@ -466,8 +466,8 @@ export default function GovernanceCodePage() {
 								<dl className='mt-3'>
 									{share.rows.map(([label, split]) => (
 										<div key={label} className='border-b border-[var(--rule-soft)] py-2.5'>
-											<dt className='text-[13px] text-[var(--ink-3)]'>{label}</dt>
-											<dd className='text-[15px] text-[var(--ink)]'>{split}</dd>
+											<dt className='text-[0.8125rem] text-[var(--ink-3)]'>{label}</dt>
+											<dd className='text-[0.9375rem] text-[var(--ink)]'>{split}</dd>
 										</div>
 									))}
 								</dl>
@@ -490,7 +490,7 @@ export default function GovernanceCodePage() {
 										<div key={point.title}>
 											<dt className='font-semibold text-[var(--ink)]'>
 												{point.title}
-												{point.cite ? <span className='ml-2 text-[13px] font-normal text-[var(--ink-3)]'>{point.cite}</span> : null}
+												{point.cite ? <span className='ml-2 text-[0.8125rem] font-normal text-[var(--ink-3)]'>{point.cite}</span> : null}
 											</dt>
 											<dd className='mt-1'>{point.body}</dd>
 										</div>
@@ -510,13 +510,13 @@ export default function GovernanceCodePage() {
 								<div key={row.subject} className='border-t border-[var(--rule)] py-5'>
 									<p className='font-semibold text-[var(--ink)]'>{row.subject}</p>
 									<p className='mt-2 text-[var(--ink-3)]'>
-										<span className='text-[13px]'>RA 7160 · </span>
+										<span className='text-[0.8125rem]'>RA 7160 · </span>
 										{row.national}
 									</p>
 									<p className='mt-3 border-l-2 border-[var(--accent)] bg-[var(--paper-2)] px-5 py-4'>
-										<span className='text-[13px] text-[var(--accent)]'>BAA 49 · </span>
+										<span className='text-[0.8125rem] text-[var(--accent)]'>BAA 49 · </span>
 										{row.bangsamoro}
-										<span className='mt-1 block text-[13px] text-[var(--ink-3)]'>{row.basis}</span>
+										<span className='mt-1 block text-[0.8125rem] text-[var(--ink-3)]'>{row.basis}</span>
 									</p>
 								</div>
 							))}
@@ -529,7 +529,7 @@ export default function GovernanceCodePage() {
 							</ul>
 						</Topic>
 
-						<p className='mt-14 border-t border-[var(--rule)] pt-6 text-[13px] leading-6 text-[var(--ink-3)]'>
+						<p className='mt-14 border-t border-[var(--rule)] pt-6 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 							The topics above summarise the Code’s salient features and cite its sections as a briefing on the Code
 							does; the comparison is read from the Code, its implementing rules and RA 7160. Where this page and the
 							Act differ, the Act is right. Read{' '}

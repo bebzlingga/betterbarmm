@@ -211,7 +211,7 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 												rel='noreferrer'
 												className='row grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-3.5'
 											>
-												<span className='num text-[13px] font-medium text-[var(--ink)]'>
+												<span className='num text-[0.8125rem] font-medium text-[var(--ink)]'>
 													{report.title}
 												</span>
 												<span className='meta-sm shrink-0'>{report.dateDisplay}</span>

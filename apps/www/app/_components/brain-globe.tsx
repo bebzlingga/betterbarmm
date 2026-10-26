@@ -206,10 +206,10 @@ export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick
 				n.kind === 'jo'
 					? 'size-6 text-[#3a0f16]'
 					: n.kind === 'workspace'
-						? 'mt-7 text-[13px] font-bold text-white [text-shadow:0_1px_4px_rgba(0,0,0,.8)]'
+						? 'mt-7 text-[0.8125rem] font-bold text-white [text-shadow:0_1px_4px_rgba(0,0,0,.8)]'
 						: n.kind === 'dataset'
-							? 'mt-5 text-[11px] text-[#f3dcae] [text-shadow:0_1px_3px_rgba(0,0,0,.8)]'
-							: 'mt-4 text-[10.5px] text-[#a9c6c6] [text-shadow:0_1px_3px_rgba(0,0,0,.8)]'
+							? 'mt-5 text-[0.6875rem] text-[#f3dcae] [text-shadow:0_1px_3px_rgba(0,0,0,.8)]'
+							: 'mt-4 text-[0.65625rem] text-[#a9c6c6] [text-shadow:0_1px_3px_rgba(0,0,0,.8)]'
 			el.style.whiteSpace = 'nowrap'
 			el.style.transition = 'opacity .25s'
 			const label = new CSS2DObject(el)

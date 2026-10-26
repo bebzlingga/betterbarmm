@@ -56,7 +56,7 @@ export function ReferralList({
 								>
 									<span className='min-w-0 flex-1'>
 										<span className='flex flex-wrap items-center gap-x-2 gap-y-1.5'>
-											<span className='num text-[13px] font-medium text-[var(--ink-3)]'>
+											<span className='num text-[0.8125rem] font-medium text-[var(--ink-3)]'>
 												{item.record.numberLabel}
 											</span>
 											<span className={statusToneClass[item.record.statusTone]}>

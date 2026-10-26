@@ -23,12 +23,12 @@ function Events({ items }: { items: MeasureEvent[] }) {
 		<ul className='mt-5'>
 			{items.map((e, i) => (
 				<li key={`${e.href}-${e.stage}-${i}`} className='grid grid-cols-[5.5rem_minmax(0,1fr)] gap-x-5 border-t border-[var(--rule)] py-3.5'>
-					<span className='text-[12.5px] text-[var(--ink-3)]'>{day(e.date, { weekday: 'short', month: 'short', day: 'numeric' })}</span>
+					<span className='text-[0.78125rem] text-[var(--ink-3)]'>{day(e.date, { weekday: 'short', month: 'short', day: 'numeric' })}</span>
 					<div>
-						<p className='text-[12px] font-semibold uppercase tracking-[0.08em] text-[var(--brass)]'>
+						<p className='text-[0.75rem] font-semibold uppercase tracking-[0.08em] text-[var(--brass)]'>
 							{e.kind} {e.number} · {e.stage}
 						</p>
-						<a href={e.href} className='mt-1 block text-[15px] font-semibold leading-6 text-[var(--ink)] hover:text-[var(--accent)]'>
+						<a href={e.href} className='mt-1 block text-[0.9375rem] font-semibold leading-6 text-[var(--ink)] hover:text-[var(--accent)]'>
 							{e.title}
 						</a>
 					</div>
@@ -63,11 +63,11 @@ export default async function ThisWeekPage({ searchParams }: { searchParams: Pro
 				]}
 			/>
 
-			<nav className='bb-container flex flex-wrap items-center justify-between gap-4 border-b border-[var(--rule)] py-5 text-[14px]'>
+			<nav className='bb-container flex flex-wrap items-center justify-between gap-4 border-b border-[var(--rule)] py-5 text-[0.875rem]'>
 				<Link href={`/this-week?week=${addDays(monday, -7)}`} className='inline-flex items-center gap-2 font-semibold hover:text-[var(--accent)]'>
 					<ArrowLeftIcon size={14} weight='bold' aria-hidden='true' /> Week before
 				</Link>
-				<a href='/this-week/feed.xml' className='inline-flex items-center gap-2 text-[13px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
+				<a href='/this-week/feed.xml' className='inline-flex items-center gap-2 text-[0.8125rem] text-[var(--ink-3)] hover:text-[var(--accent)]'>
 					<RssIcon size={14} aria-hidden='true' /> Get it every week by RSS
 				</a>
 				{monday >= mondayOf(latestDay) ? (
@@ -104,13 +104,13 @@ export default async function ThisWeekPage({ searchParams }: { searchParams: Pro
 							) : null}
 						</>
 					) : (
-						<p className='mt-4 text-[15px] text-[var(--ink-3)]'>Parliament recorded no stage this week.</p>
+						<p className='mt-4 text-[0.9375rem] text-[var(--ink-3)]'>Parliament recorded no stage this week.</p>
 					)}
 				</section>
 
 				<section>
 					<h2 className={H2}>In procurement</h2>
-					<p className='mt-3 text-[14.5px] leading-7 text-[var(--ink-2)]'>
+					<p className='mt-3 text-[0.90625rem] leading-7 text-[var(--ink-2)]'>
 						BARMM offices posted <strong>{w.notices.count.toLocaleString('en-PH')}</strong> bid notices worth <strong>{peso(w.notices.budget)}</strong>.{' '}
 						{w.awards.count ? (
 							<>
@@ -127,12 +127,12 @@ export default async function ThisWeekPage({ searchParams }: { searchParams: Pro
 								{w.notices.largest.map((n) => (
 									<li key={n.ref} className='flex items-baseline justify-between gap-5 border-t border-[var(--rule)] py-3'>
 										<div className='min-w-0'>
-											<p className='text-[14.5px] font-semibold leading-6'>{n.title}</p>
-											<a href={`${PROC}/${n.officeSlug}`} className='text-[12.5px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
+											<p className='text-[0.90625rem] font-semibold leading-6'>{n.title}</p>
+											<a href={`${PROC}/${n.officeSlug}`} className='text-[0.78125rem] text-[var(--ink-3)] hover:text-[var(--accent)]'>
 												{n.office}
 											</a>
 										</div>
-										<span className='shrink-0 text-[14px] font-semibold tabular-nums'>{n.budget != null ? peso(n.budget) : '—'}</span>
+										<span className='shrink-0 text-[0.875rem] font-semibold tabular-nums'>{n.budget != null ? peso(n.budget) : '—'}</span>
 									</li>
 								))}
 							</ul>
@@ -145,12 +145,12 @@ export default async function ThisWeekPage({ searchParams }: { searchParams: Pro
 								{w.awards.largest.map((a, i) => (
 									<li key={`${a.ref}-${i}`} className='flex items-baseline justify-between gap-5 border-t border-[var(--rule)] py-3'>
 										<div className='min-w-0'>
-											<p className='text-[14.5px] font-semibold leading-6'>{a.supplier}</p>
-											<p className='text-[12.5px] text-[var(--ink-3)]'>
+											<p className='text-[0.90625rem] font-semibold leading-6'>{a.supplier}</p>
+											<p className='text-[0.78125rem] text-[var(--ink-3)]'>
 												{a.title} · {a.office}
 											</p>
 										</div>
-										<span className='shrink-0 text-[14px] font-semibold tabular-nums'>{a.amount != null ? peso(a.amount) : '—'}</span>
+										<span className='shrink-0 text-[0.875rem] font-semibold tabular-nums'>{a.amount != null ? peso(a.amount) : '—'}</span>
 									</li>
 								))}
 							</ul>
@@ -163,19 +163,19 @@ export default async function ThisWeekPage({ searchParams }: { searchParams: Pro
 								{w.closing.map((n) => (
 									<li key={n.ref} className='flex items-baseline justify-between gap-5 border-t border-[var(--rule)] py-3'>
 										<div className='min-w-0'>
-											<p className='text-[14.5px] font-semibold leading-6'>{n.title}</p>
-											<p className='text-[12.5px] text-[var(--ink-3)]'>{n.office}</p>
+											<p className='text-[0.90625rem] font-semibold leading-6'>{n.title}</p>
+											<p className='text-[0.78125rem] text-[var(--ink-3)]'>{n.office}</p>
 										</div>
-										<span className='shrink-0 text-right text-[13px]'>
+										<span className='shrink-0 text-right text-[0.8125rem]'>
 											<span className='block font-semibold tabular-nums'>{n.budget != null ? peso(n.budget) : ''}</span>
-											<span className='text-[12px] text-[var(--accent)]'>Closes {day(n.closing!)}</span>
+											<span className='text-[0.75rem] text-[var(--accent)]'>Closes {day(n.closing!)}</span>
 										</span>
 									</li>
 								))}
 							</ul>
 						</>
 					) : null}
-					<a href={`${PROC}/notices`} className='mt-6 inline-block text-[13px] font-semibold text-[var(--accent)]'>
+					<a href={`${PROC}/notices`} className='mt-6 inline-block text-[0.8125rem] font-semibold text-[var(--accent)]'>
 						Every bid notice →
 					</a>
 				</section>

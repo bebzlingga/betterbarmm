@@ -24,11 +24,11 @@ export function CraftCard({ c, replace = false, plain = false }: { c: Craft; rep
 					)}
 				</span>
 				<span className={`block ${plain ? 'pt-4' : 'p-5'}`}>
-					<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[#9a6a4f]'>
+					<span className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[#9a6a4f]'>
 						{GROUP[c.group]} · {PROVINCE[c.province]}
 					</span>
-					<span className='mt-1 block font-[family-name:var(--font-craft)] text-[19px] font-bold leading-snug text-[#3b2419] group-hover:text-[#7b4a35]'>{c.name}</span>
-					<span className='mt-0.5 block text-[13px] italic text-[#8a6d5c]'>{c.local_name}</span>
+					<span className='mt-1 block font-[family-name:var(--font-craft)] text-[1.1875rem] font-bold leading-snug text-[#3b2419] group-hover:text-[#7b4a35]'>{c.name}</span>
+					<span className='mt-0.5 block text-[0.8125rem] italic text-[#8a6d5c]'>{c.local_name}</span>
 				</span>
 			</Link>
 			{img ? (

@@ -193,7 +193,7 @@ function StripTile({ card, index, snap }: { card: StripCard; index: number; snap
             reads as five photographs with names on them instead of five
             captions with pictures above them. */}
         <span className='pointer-events-none absolute inset-x-0 bottom-0 z-2 bg-gradient-to-t from-black/85 via-black/35 to-transparent p-6 pt-16'>
-          <span className='block text-[26px] font-extrabold leading-none tracking-[-0.035em] text-white'>
+          <span className='block text-[1.625rem] font-extrabold leading-none tracking-[-0.035em] text-white'>
             {card.title}
           </span>
           <span className='mt-3 block bb-body text-white/75'>{card.blurb}</span>

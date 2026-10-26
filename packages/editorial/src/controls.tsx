@@ -127,7 +127,7 @@ export function Select({
 	// control, so a click on an option would land on the trigger and reopen the list.
 	return (
 		<div className={plain ? 'flex min-w-0 items-center gap-2' : 'flex min-w-0 flex-col gap-1'}>
-			<span id={`${id}-label`} className={`whitespace-nowrap text-[var(--ink-3)] ${plain ? 'text-[14px]' : 'text-[12px]'}`}>
+			<span id={`${id}-label`} className={`whitespace-nowrap text-[var(--ink-3)] ${plain ? 'text-[0.875rem]' : 'text-[0.75rem]'}`}>
 				{label}
 			</span>
 			<button
@@ -141,7 +141,7 @@ export function Select({
 				aria-activedescendant={open ? `${id}-${active}` : undefined}
 				popoverTarget={`${id}-list`}
 				onKeyDown={onKey}
-				className={`relative flex h-10 min-w-0 cursor-pointer items-center text-left text-[14px] text-[var(--ink)] outline-none transition focus-visible:underline focus-visible:decoration-[var(--accent)] focus-visible:underline-offset-4 ${
+				className={`relative flex h-10 min-w-0 cursor-pointer items-center text-left text-[0.875rem] text-[var(--ink)] outline-none transition focus-visible:underline focus-visible:decoration-[var(--accent)] focus-visible:underline-offset-4 ${
 					plain ? 'gap-2 whitespace-nowrap font-semibold' : 'w-full pl-3 pr-9'
 				} ${box(plain)}`}
 			>
@@ -163,7 +163,7 @@ export function Select({
 				aria-labelledby={`${id}-label`}
 				popover='auto'
 				style={place}
-				className='fixed inset-auto m-0 overflow-y-auto border border-[var(--rule)] bg-[var(--paper)] p-1 text-[14px] text-[var(--ink)] shadow-[0_16px_40px_rgba(0,0,0,0.28)] [scrollbar-width:thin]'
+				className='fixed inset-auto m-0 overflow-y-auto border border-[var(--rule)] bg-[var(--paper)] p-1 text-[0.875rem] text-[var(--ink)] shadow-[0_16px_40px_rgba(0,0,0,0.28)] [scrollbar-width:thin]'
 			>
 				{options.map(([key, text], i) => (
 					<li
@@ -198,7 +198,7 @@ export function SearchField({
 }) {
 	return (
 		<label className='flex w-full min-w-0 flex-col gap-1'>
-			<span className={plain ? 'sr-only' : 'text-[12px] text-[var(--ink-3)]'}>Search</span>
+			<span className={plain ? 'sr-only' : 'text-[0.75rem] text-[var(--ink-3)]'}>Search</span>
 			<span className={`flex h-10 items-center gap-3 ${plain ? 'bg-transparent' : 'border border-[var(--rule)] bg-[var(--paper-2)] px-3 focus-within:border-[var(--ink)]'}`}>
 				<MagnifyingGlassIcon className='size-4 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
 				<input
@@ -208,7 +208,7 @@ export function SearchField({
 					autoComplete='off'
 					spellCheck={false}
 					placeholder={placeholder}
-					className={`min-w-0 flex-1 bg-transparent text-[14px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden ${plain ? 'font-semibold' : ''}`}
+					className={`min-w-0 flex-1 bg-transparent text-[0.875rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden ${plain ? 'font-semibold' : ''}`}
 				/>
 			</span>
 		</label>

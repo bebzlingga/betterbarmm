@@ -30,7 +30,7 @@ export function Masthead({
 					<LineReveal lines={[name]} delay={0.06} className={`bb-display-md mt-5 text-[var(--ink)] ${stacked ? '!font-black' : ''}`} />
 					{note ? (
 						<Rise delay={0.25} distance={14}>
-							<p className={`mt-7 text-[15px] leading-7 text-[var(--ink-2)] ${stacked ? 'max-w-[44rem]' : 'lg:mt-0 lg:text-right lg:leading-6'}`}>{note}</p>
+							<p className={`mt-7 text-[0.9375rem] leading-7 text-[var(--ink-2)] ${stacked ? 'max-w-[44rem]' : 'lg:mt-0 lg:text-right lg:leading-6'}`}>{note}</p>
 						</Rise>
 					) : null}
 				</div>
@@ -57,7 +57,7 @@ export function YearBars({ bars, caption, note }: { bars: { year: number; value:
 			<div className='grid h-44 items-end gap-1.5 sm:gap-4' style={cols}>
 				{bars.map(({ year, value }) => (
 					<div key={year} className='flex h-full flex-col items-center justify-end'>
-						<span className='num mb-1.5 whitespace-nowrap text-[9px] text-[var(--ink-2)] sm:text-[12px]'>
+						<span className='num mb-1.5 whitespace-nowrap text-[0.5625rem] text-[var(--ink-2)] sm:text-[0.75rem]'>
 							{value >= 1e9 ? `${(value / 1e9).toFixed(1)}B` : `${Math.round(value / 1e6)}M`}
 						</span>
 						<div
@@ -70,15 +70,15 @@ export function YearBars({ bars, caption, note }: { bars: { year: number; value:
 			</div>
 			<div className='grid gap-1.5 border-t border-[var(--rule)] pt-2 sm:gap-4' style={cols}>
 				{bars.map(({ year }) => (
-					<span key={year} className='num text-center text-[10.5px] text-[var(--ink-3)] sm:text-[12px]'>
+					<span key={year} className='num text-center text-[0.65625rem] text-[var(--ink-3)] sm:text-[0.75rem]'>
 						<span className='sm:hidden'>’{String(year).slice(2)}</span>
 						<span className='hidden sm:inline'>{year}</span>
 					</span>
 				))}
 			</div>
 			<figcaption className='mt-4 flex flex-wrap items-baseline justify-between gap-2'>
-				<span className='text-[12.5px] font-semibold text-[var(--ink)]'>{caption}</span>
-				{note ? <span className='text-[11px] text-[var(--ink-3)]'>{note}</span> : null}
+				<span className='text-[0.78125rem] font-semibold text-[var(--ink)]'>{caption}</span>
+				{note ? <span className='text-[0.6875rem] text-[var(--ink-3)]'>{note}</span> : null}
 			</figcaption>
 		</figure>
 	)
@@ -100,7 +100,7 @@ function Spark({ series, years }: { series: number[]; years: number[] }) {
 					/>
 				))}
 			</div>
-			<div className='mt-1 flex justify-between text-[10.5px] text-[var(--ink-mute)]'>
+			<div className='mt-1 flex justify-between text-[0.65625rem] text-[var(--ink-mute)]'>
 				<span>{years[0]}</span>
 				<span>{years.at(-1)}</span>
 			</div>
@@ -128,7 +128,7 @@ export function Figures({
 			<div className='bb-container pt-16 lg:pt-20'>
 				<div className='flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-16'>
 					<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{title}</h2>
-					<p className='max-w-[38rem] text-[14px] leading-6 text-[var(--ink-3)] lg:text-right'>{note}</p>
+					<p className='max-w-[38rem] text-[0.875rem] leading-6 text-[var(--ink-3)] lg:text-right'>{note}</p>
 				</div>
 			</div>
 			<dl className='bb-container grid grid-cols-2 gap-x-10 gap-y-10 pb-16 pt-10 lg:grid-cols-4 lg:gap-x-16 lg:pb-20 lg:pt-14'>
@@ -138,7 +138,7 @@ export function Figures({
 						<dd className='num border-t border-[var(--rule)] pt-4 font-[family-name:var(--font-display)] text-[clamp(1.6rem,3.2vw,2.35rem)] font-black leading-none tracking-[-0.03em] text-[var(--ink)]'>
 							{item.value}
 						</dd>
-						<dt className='mt-2 text-[12.5px] text-[var(--ink-3)]'>{item.label}</dt>
+						<dt className='mt-2 text-[0.78125rem] text-[var(--ink-3)]'>{item.label}</dt>
 					</div>
 				))}
 			</dl>

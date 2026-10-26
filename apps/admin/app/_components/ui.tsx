@@ -23,7 +23,7 @@ export function PageHeader({
   return (
     <header className="mb-8">
       {crumbs?.length ? (
-        <nav aria-label="Breadcrumb" className="mb-3 flex flex-wrap items-center gap-1.5 text-[13px] text-[var(--ink-3)]">
+        <nav aria-label="Breadcrumb" className="mb-3 flex flex-wrap items-center gap-1.5 text-[0.8125rem] text-[var(--ink-3)]">
           {crumbs.map((c, i) => (
             <span key={i} className="inline-flex items-center gap-1.5">
               {i ? <CaretRightIcon size={11} className="text-[var(--ink-mute)]" aria-hidden="true" /> : null}
@@ -78,7 +78,7 @@ export function StatCard({
   const body = (
     <>
       <div className="flex items-center justify-between">
-        <p className="text-[13px] font-medium text-[var(--ink-3)]">{label}</p>
+        <p className="text-[0.8125rem] font-medium text-[var(--ink-3)]">{label}</p>
         <span className={`grid size-8 place-items-center rounded-lg ${TONES[tone]}`}>
           <Glyph size={16} weight="bold" aria-hidden="true" />
         </span>
@@ -103,7 +103,7 @@ export function EmptyState({ icon: Glyph, title, children }: { icon: Icon; title
       <span className="grid size-11 place-items-center rounded-xl bg-[var(--surface-2)] text-[var(--ink-3)]">
         <Glyph size={20} aria-hidden="true" />
       </span>
-      <p className="mt-4 font-[family-name:var(--font-display)] text-[15px] font-semibold">{title}</p>
+      <p className="mt-4 font-[family-name:var(--font-display)] text-[0.9375rem] font-semibold">{title}</p>
       {children ? <div className="mt-1.5 max-w-sm text-sm leading-6 text-[var(--ink-3)]">{children}</div> : null}
     </div>
   );
@@ -112,7 +112,7 @@ export function EmptyState({ icon: Glyph, title, children }: { icon: Icon; title
 export function Pagination({ page, pages, href, newer = "Previous", older = "Next" }: { page: number; pages: number; href: (n: number) => string; newer?: string; older?: string }) {
   if (pages <= 1) return null;
   return (
-    <nav className="mt-5 flex items-center justify-between text-[13px]" aria-label="Pages">
+    <nav className="mt-5 flex items-center justify-between text-[0.8125rem]" aria-label="Pages">
       <span className="text-[var(--ink-3)]">
         Page <span className="font-semibold text-[var(--ink)]">{page.toLocaleString()}</span> of {pages.toLocaleString()}
       </span>

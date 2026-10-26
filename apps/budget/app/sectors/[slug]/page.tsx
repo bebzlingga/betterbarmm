@@ -123,7 +123,7 @@ export default async function SectorPage({
 								   prints is eighteen glyphs and the longest count eleven. */
 								className='group grid items-baseline gap-x-8 gap-y-2 border-t border-[var(--rule)] py-4 transition first:border-t-0 hover:bg-[var(--paper-2)] sm:grid-cols-[minmax(0,1fr)_7rem_10.5rem]'
 							>
-								<span className='flex items-baseline gap-2 text-[14.5px] font-semibold tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
+								<span className='flex items-baseline gap-2 text-[0.90625rem] font-semibold tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
 									{office.name}
 									<ArrowUpRightIcon
 										className='size-3.5 shrink-0 text-[var(--ink-3)] transition duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--accent)]'
@@ -133,7 +133,7 @@ export default async function SectorPage({
 								{/* The gap is the grid's now, not a margin on this cell: with a
 								    sized track a right margin only pulled the count off its own
 								    column's edge. */}
-								<span className='money font-mono text-[10px] font-medium uppercase tracking-[0.12em] text-[var(--ink-mute)] sm:text-right'>
+								<span className='money font-mono text-[0.625rem] font-medium uppercase tracking-[0.12em] text-[var(--ink-mute)] sm:text-right'>
 									{office.count} {office.count === 1 ? 'program' : 'programs'}
 								</span>
 								{/* No fixed width. At `w-28` the box was 7rem and a figure of
@@ -141,7 +141,7 @@ export default async function SectorPage({
 								    nothing to align inside and the amount sat off the right edge
 								    of its own column. The track is `auto`, so letting it size to
 								    the figure puts every row's last character on one line. */}
-								<span className='money text-[13.5px] font-semibold text-[var(--ink)] sm:text-right'>
+								<span className='money text-[0.84375rem] font-semibold text-[var(--ink)] sm:text-right'>
 									{peso(office.total)}
 								</span>
 							</YearLink>
@@ -174,16 +174,16 @@ export default async function SectorPage({
 								className='grid items-center gap-x-10 gap-y-2 border-t border-[var(--rule)] py-4 first:border-t-0 lg:grid-cols-[minmax(0,1fr)_minmax(0,10rem)]'
 							>
 								<div className='min-w-0'>
-									<p className='text-[14px] font-medium leading-snug text-[var(--ink)]'>
+									<p className='text-[0.875rem] font-medium leading-snug text-[var(--ink)]'>
 										{program.path}
 									</p>
-									<p className='mt-1.5 text-[12px] text-[var(--ink-3)]'>
+									<p className='mt-1.5 text-[0.75rem] text-[var(--ink-3)]'>
 										<YearLink href={`/offices/${program.officeSlug}`} className='rule-link'>
 											{program.office}
 										</YearLink>
 									</p>
 								</div>
-								<p className='money text-[14px] font-semibold text-[var(--ink)] lg:text-right'>
+								<p className='money text-[0.875rem] font-semibold text-[var(--ink)] lg:text-right'>
 									{peso(program.total)}
 								</p>
 							</article>

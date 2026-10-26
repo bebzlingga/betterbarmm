@@ -95,7 +95,7 @@ export function Block({
 export function Duty({ letter, children }: { letter: string; children: React.ReactNode }) {
 	return (
 		<li className='flex gap-4 border-t border-[var(--rule-soft)] py-4 first:border-t-0 first:pt-0'>
-			<span className='num mt-px w-4 shrink-0 text-[13px] font-semibold text-[var(--ink-mute)]'>
+			<span className='num mt-px w-4 shrink-0 text-[0.8125rem] font-semibold text-[var(--ink-mute)]'>
 				{letter}
 			</span>
 			<span className='copy text-[var(--ink-2)]'>{children}</span>

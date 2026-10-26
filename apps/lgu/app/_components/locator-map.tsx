@@ -100,7 +100,7 @@ export function LocatorMap({
 				<path d={target} transform={`translate(0 ${depth * 1.6})`} className='fill-[color-mix(in_srgb,var(--accent)_62%,#000)]' />
 				<path d={target} strokeWidth={stroke * 1.4} strokeLinejoin='round' className='fill-[var(--accent)] stroke-[var(--paper)]' />
 			</svg>
-			<figcaption className='px-4 pb-3 text-[12px] text-[var(--ink-3)]'>{label} in red</figcaption>
+			<figcaption className='px-4 pb-3 text-[0.75rem] text-[var(--ink-3)]'>{label} in red</figcaption>
 		</figure>
 	)
 }

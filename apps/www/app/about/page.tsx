@@ -22,7 +22,7 @@ export const metadata: Metadata = pageMeta({
    ============================================================ */
 
 const H2 = 'text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
-const LEAD = 'mt-3 max-w-[46rem] text-[15px] leading-7 text-[var(--ink-3)]'
+const LEAD = 'mt-3 max-w-[46rem] text-[0.9375rem] leading-7 text-[var(--ink-3)]'
 
 const workspaces = [
 	{
@@ -103,7 +103,7 @@ export default function AboutPage() {
 							So that anyone can check what their government does.
 						</h2>
 					</div>
-					<div className='space-y-5 text-[16px] leading-8 text-[var(--ink-2)] lg:pt-9'>
+					<div className='space-y-5 text-[1rem] leading-8 text-[var(--ink-2)] lg:pt-9'>
 						<p>
 							What the Bangsamoro government decides, spends and promises is public in principle. In practice it
 							arrives as scanned PDFs spread across many agency websites, each with its own idea of an index. A record
@@ -131,8 +131,8 @@ export default function AboutPage() {
 								className='group flex flex-col bg-[var(--paper)] p-7 transition hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.3)]'
 							>
 								<h3 className='text-[1.15rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>{w.name}</h3>
-								<p className='mt-3 flex-1 text-[14px] leading-6 text-[var(--ink-2)]'>{w.body}</p>
-								<span className='mt-6 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[var(--accent)]'>
+								<p className='mt-3 flex-1 text-[0.875rem] leading-6 text-[var(--ink-2)]'>{w.body}</p>
+								<span className='mt-6 inline-flex items-center gap-1.5 text-[0.8125rem] font-semibold text-[var(--accent)]'>
 									Open
 									<ArrowUpRightIcon className='size-3.5 transition group-hover:translate-x-0.5' weight='bold' aria-hidden='true' />
 								</span>
@@ -149,9 +149,9 @@ export default function AboutPage() {
 				<div className='mt-10 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-4'>
 					{principles.map((p, i) => (
 						<div key={p.title} className='border-t border-[var(--rule)] pt-6'>
-							<p className='num text-[13px] font-semibold text-[var(--brass)]'>{String(i + 1).padStart(2, '0')}</p>
+							<p className='num text-[0.8125rem] font-semibold text-[var(--brass)]'>{String(i + 1).padStart(2, '0')}</p>
 							<h3 className='mt-3 text-[1.2rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)]'>{p.title}</h3>
-							<p className='mt-3 text-[15px] leading-7 text-[var(--ink-2)]'>{p.body}</p>
+							<p className='mt-3 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>{p.body}</p>
 						</div>
 					))}
 				</div>
@@ -166,8 +166,8 @@ export default function AboutPage() {
 							<span className='grid size-11 place-items-center rounded-full bg-[var(--accent)] text-white'>
 								<r.icon size={22} weight='fill' aria-hidden='true' />
 							</span>
-							<p className='mt-5 text-[16px] font-extrabold tracking-[-0.01em] text-[var(--ink)]'>{r.who}</p>
-							<p className='mt-2 text-[14px] leading-6 text-[var(--ink-2)]'>{r.what}</p>
+							<p className='mt-5 text-[1rem] font-extrabold tracking-[-0.01em] text-[var(--ink)]'>{r.who}</p>
+							<p className='mt-2 text-[0.875rem] leading-6 text-[var(--ink-2)]'>{r.what}</p>
 						</li>
 					))}
 				</ul>
@@ -179,7 +179,7 @@ export default function AboutPage() {
 					<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)] lg:text-[2.25rem]'>
 						Independent, not an official source.
 					</h2>
-					<p className='text-[16px] leading-8 text-[var(--ink-2)]'>
+					<p className='text-[1rem] leading-8 text-[var(--ink-2)]'>
 						BetterBARMM is not an official authority and does not speak for the Bangsamoro Government. Where it summarises
 						a document, reorganises a table or explains a record in its own words, the original is still what settles the
 						question, which is why the original is always linked.

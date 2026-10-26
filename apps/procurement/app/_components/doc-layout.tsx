@@ -18,18 +18,18 @@ export function DocLayout({
 	return (
 		<div className={`bb-container bb-section grid gap-12 ${toc ? 'lg:grid-cols-[minmax(0,1fr)_17rem] lg:gap-16' : ''}`}>
 			{summary ? (
-				<p className={`bg-[var(--paper-2)] px-6 py-5 text-[15px] leading-7 text-[var(--ink-2)] sm:px-8 sm:py-6 ${toc ? 'lg:col-span-2' : ''}`}>
+				<p className={`bg-[var(--paper-2)] px-6 py-5 text-[0.9375rem] leading-7 text-[var(--ink-2)] sm:px-8 sm:py-6 ${toc ? 'lg:col-span-2' : ''}`}>
 					{summary}
 				</p>
 			) : null}
 
 			{toc ? (
 			<details className='border border-[var(--rule)] bg-[var(--paper-2)] px-5 py-4 lg:hidden'>
-				<summary className='cursor-pointer text-[14px] font-semibold text-[var(--ink)]'>On this page</summary>
+				<summary className='cursor-pointer text-[0.875rem] font-semibold text-[var(--ink)]'>On this page</summary>
 				<ol className='mt-3'>
 					{toc.map((item) => (
 						<li key={item.id}>
-							<a href={`#${item.id}`} className={`block py-1 text-[13.5px] text-[var(--ink-2)] ${item.depth === 2 ? 'pl-4' : 'font-medium'}`}>
+							<a href={`#${item.id}`} className={`block py-1 text-[0.84375rem] text-[var(--ink-2)] ${item.depth === 2 ? 'pl-4' : 'font-medium'}`}>
 								{item.label}
 							</a>
 						</li>

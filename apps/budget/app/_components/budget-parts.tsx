@@ -90,7 +90,7 @@ export function Masthead({
 							<>
 								<YearLink
 									href={back.href}
-									className='group inline-flex items-center gap-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
+									className='group inline-flex items-center gap-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
 								>
 									<ArrowLeftIcon
 										className='size-3.5 transition duration-500 group-hover:-translate-x-0.5'
@@ -132,7 +132,7 @@ export function Masthead({
 						    share rather than a fixed max, so it stays proportional to the
 						    heading above it, and only from `lg` — at phone width 75% of a
 						    narrow column is just a narrower column. */}
-						<div className='mt-7 text-[15px] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>
+						<div className='mt-7 text-[0.9375rem] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>
 							{lead}
 						</div>
 					</Rise>
@@ -291,7 +291,7 @@ export function ExpenseSplit({
 			</div>
 
 			{layout === 'inline' ? (
-				<p className='mt-2.5 flex flex-wrap justify-center gap-x-5 gap-y-1 font-mono text-[10px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)]'>
+				<p className='mt-2.5 flex flex-wrap justify-center gap-x-5 gap-y-1 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)]'>
 					{parts.map((one) => (
 						<span key={one.key} className='flex items-center gap-1.5'>
 							<span
@@ -324,18 +324,18 @@ export function ExpenseSplit({
 									className='size-2.5 shrink-0 rotate-45'
 									style={{ background: one.tone }}
 								/>
-								<span className='text-[13px] font-semibold leading-tight text-[var(--ink)]'>
+								<span className='text-[0.8125rem] font-semibold leading-tight text-[var(--ink)]'>
 									{one.short}
 								</span>
-								<span className='money ml-auto text-[13px] font-semibold text-[var(--ink)]'>
+								<span className='money ml-auto text-[0.8125rem] font-semibold text-[var(--ink)]'>
 									{percent(one.share)}
 								</span>
 							</dt>
 							<dd className='mt-2'>
-								<p className='money text-[15px] font-semibold tracking-[-0.02em] text-[var(--ink)]'>
+								<p className='money text-[0.9375rem] font-semibold tracking-[-0.02em] text-[var(--ink)]'>
 									{peso(one.amount)}
 								</p>
-								<p className='mt-1.5 text-[12.5px] leading-6 text-[var(--ink-2)]'>{one.plain}</p>
+								<p className='mt-1.5 text-[0.78125rem] leading-6 text-[var(--ink-2)]'>{one.plain}</p>
 							</dd>
 						</div>
 					))}
@@ -406,7 +406,7 @@ export function SourceNote({
 	if (inline) return said
 
 	return (
-		<p className='mt-10 border-t border-[var(--rule)] pt-5 text-[12px] leading-6 text-[var(--ink-3)]'>
+		<p className='mt-10 border-t border-[var(--rule)] pt-5 text-[0.75rem] leading-6 text-[var(--ink-3)]'>
 			{said}
 		</p>
 	)
@@ -436,11 +436,11 @@ export function AppropriationNote({ className = '', fy }: { className?: string; 
 			aria-label='What these figures are, and what they are not'
 			className={`border-t border-[var(--brass-line)] pt-6 ${className}`}
 		>
-			<h2 className='font-mono text-[10px] font-semibold uppercase leading-5 tracking-[0.16em] text-[var(--brass)]'>
+			<h2 className='font-mono text-[0.625rem] font-semibold uppercase leading-5 tracking-[0.16em] text-[var(--brass)]'>
 				What these figures are, and what they are not
 			</h2>
 
-			<div className='mt-5 space-y-3.5 text-[13.5px] leading-7 text-[var(--ink-2)]'>
+			<div className='mt-5 space-y-3.5 text-[0.84375rem] leading-7 text-[var(--ink-2)]'>
 				<p>
 					Every figure here is an{' '}
 					<strong className='font-semibold text-[var(--ink)]'>appropriation</strong>: what Parliament

@@ -21,7 +21,7 @@ const topLines = (lines: Line[], n = 2) => [...lines].sort((a, b) => PRIORITY.in
 function Picture({ photo, name, size }: { photo: PlacePhoto | null; name: string; size: 250 | 500 | 960 | 1280 }) {
 	if (!photo)
 		return (
-			<span aria-hidden='true' className='grid size-full place-items-center bg-[linear-gradient(135deg,var(--paper-2),color-mix(in_srgb,var(--accent)_14%,var(--paper-2)))] text-[28px] font-extrabold text-[color-mix(in_srgb,var(--accent)_45%,transparent)]'>
+			<span aria-hidden='true' className='grid size-full place-items-center bg-[linear-gradient(135deg,var(--paper-2),color-mix(in_srgb,var(--accent)_14%,var(--paper-2)))] text-[1.75rem] font-extrabold text-[color-mix(in_srgb,var(--accent)_45%,transparent)]'>
 				{name.slice(0, 1)}
 			</span>
 		)
@@ -115,13 +115,13 @@ export function DirectoryPlaces() {
 							) : null}
 							<span aria-hidden='true' className='absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgba(20,8,4,0.85),rgba(20,8,4,0.25)_60%,rgba(20,8,4,0.05))]' />
 							<div className='flex h-full flex-col justify-end p-5 text-white sm:p-7'>
-								<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-white/75'>{g.kind}</p>
-								<h3 id={`area-${g.slug}-title`} className='mt-1 text-[28px] font-extrabold leading-tight tracking-[-0.02em] sm:text-[34px]'>
+								<p className='font-mono text-[0.65625rem] font-semibold uppercase tracking-[0.14em] text-white/75'>{g.kind}</p>
+								<h3 id={`area-${g.slug}-title`} className='mt-1 text-[1.75rem] font-extrabold leading-tight tracking-[-0.02em] sm:text-[2.125rem]'>
 									<Link scroll={false} href={g.href} className='hover:underline hover:decoration-white/50 hover:underline-offset-4'>
 										{g.name}
 									</Link>
 								</h3>
-								<p className='mt-1.5 text-[14px] text-white/85'>
+								<p className='mt-1.5 text-[0.875rem] text-white/85'>
 									{g.governor ? (
 										<>
 											Governor <span className='font-semibold text-white'>{g.governor}</span>
@@ -145,7 +145,7 @@ export function DirectoryPlaces() {
 						</div>
 
 						{/* Its own lines, then where to find the rest. */}
-						<div className='mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-[13.5px]'>
+						<div className='mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-[0.84375rem]'>
 							{topLines(lines, 4).map((l, i) => (
 								<a key={i} href={telHref(l.phones[0]!)} className='inline-flex items-center gap-1.5 hover:text-[var(--accent)]'>
 									<PhoneIcon size={14} className='text-[var(--ink-3)]' aria-hidden='true' />
@@ -183,12 +183,12 @@ export function DirectoryPlaces() {
 										</span>
 										<div className='min-w-0 flex-1 sm:p-4'>
 											<p className='flex items-baseline gap-2'>
-												<Link scroll={false} href={u.href} className='truncate text-[15.5px] font-bold hover:text-[var(--accent)]'>
+												<Link scroll={false} href={u.href} className='truncate text-[0.96875rem] font-bold hover:text-[var(--accent)]'>
 													{u.name}
 												</Link>
-												{u.isCity ? <span className='font-mono text-[9.5px] font-semibold uppercase tracking-[0.12em] text-[var(--accent)]'>City</span> : null}
+												{u.isCity ? <span className='font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.12em] text-[var(--accent)]'>City</span> : null}
 											</p>
-											<p className='mt-0.5 truncate text-[13px] text-[var(--ink-2)]'>
+											<p className='mt-0.5 truncate text-[0.8125rem] text-[var(--ink-2)]'>
 												{u.head ? (
 													<>
 														<span className='text-[var(--ink-3)]'>Mayor</span> <span className='font-semibold text-[var(--ink)]'>{u.head}</span>
@@ -198,12 +198,12 @@ export function DirectoryPlaces() {
 												)}
 											</p>
 											{u.deputy ? (
-												<p className='hidden truncate text-[13px] text-[var(--ink-3)] sm:block'>
+												<p className='hidden truncate text-[0.8125rem] text-[var(--ink-3)] sm:block'>
 													Vice mayor <span className='text-[var(--ink-2)]'>{u.deputy}</span>
 												</p>
 											) : null}
 											{tl.length ? (
-												<ul className='mt-2 space-y-0.5 text-[12.5px]'>
+												<ul className='mt-2 space-y-0.5 text-[0.78125rem]'>
 													{tl.map((l, i) => (
 														<li key={i} className='truncate'>
 															<a href={telHref(l.phones[0]!)} className='inline-flex items-center gap-1.5 hover:text-[var(--accent)]'>
@@ -216,7 +216,7 @@ export function DirectoryPlaces() {
 												</ul>
 											) : null}
 											{lguEmail(g.slug, u.slug) ? (
-												<p className='mt-0.5 truncate text-[12.5px]'>
+												<p className='mt-0.5 truncate text-[0.78125rem]'>
 													<a href={`mailto:${lguEmail(g.slug, u.slug)!.emails[0]}`} className='inline-flex max-w-full items-center gap-1.5 hover:text-[var(--accent)]'>
 														<EnvelopeSimpleIcon size={12} className='shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
 														<span className='truncate'>{lguEmail(g.slug, u.slug)!.emails[0]}</span>

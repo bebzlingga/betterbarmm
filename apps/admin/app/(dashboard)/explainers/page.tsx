@@ -28,7 +28,7 @@ export default async function ExplainersPage({
         key={label}
         href={params.size ? `/explainers?${params}` : "/explainers"}
         aria-current={on ? "page" : undefined}
-        className={`rounded-md px-3 py-1.5 text-[13px] font-medium transition ${on ? "bg-[var(--surface)] text-[var(--ink)] shadow-[var(--shadow-sm)]" : "text-[var(--ink-3)] hover:text-[var(--ink)]"}`}
+        className={`rounded-md px-3 py-1.5 text-[0.8125rem] font-medium transition ${on ? "bg-[var(--surface)] text-[var(--ink)] shadow-[var(--shadow-sm)]" : "text-[var(--ink-3)] hover:text-[var(--ink)]"}`}
       >
         {label}
       </Link>
@@ -88,7 +88,7 @@ export default async function ExplainersPage({
                       <Link href={`/explainers/${e.id}`} className="font-medium hover:text-[var(--accent)]">
                         {e.title}
                       </Link>
-                      <div className="field-mono mt-0.5 text-[11.5px] text-[var(--ink-mute)]">/explainers/{e.slug}</div>
+                      <div className="field-mono mt-0.5 text-[0.71875rem] text-[var(--ink-mute)]">/explainers/{e.slug}</div>
                     </td>
                     <td className="text-[var(--ink-2)]">{categoryLabel(e.category)}</td>
                     <td>

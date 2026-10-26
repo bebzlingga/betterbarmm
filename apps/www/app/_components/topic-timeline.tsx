@@ -94,7 +94,7 @@ export function Timeline({
                   }`}
                 >
                   <div className='lg:sticky lg:top-24 lg:self-start'>
-                    <p className='num text-[11px] font-medium text-[var(--ink-3)]'>
+                    <p className='num text-[0.6875rem] font-medium text-[var(--ink-3)]'>
                       {String(index + 1).padStart(2, '0')} / {String(events.length).padStart(2, '0')}
                     </p>
                     <p className='bb-era mt-2'>{event.era}</p>
@@ -119,14 +119,14 @@ export function Timeline({
                         hideCredit
                       />
                       <figcaption className='mt-2.5 border-t border-[var(--brass-line)] pt-2.5'>
-                        <span className='block text-[12.5px] leading-5 text-[var(--ink-3)]'>
+                        <span className='block text-[0.78125rem] leading-5 text-[var(--ink-3)]'>
                           {photo.caption}
                         </span>
                         <a
                           href={photo.source}
                           target='_blank'
                           rel='noreferrer'
-                          className='mt-1.5 block font-mono text-[9.5px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
+                          className='mt-1.5 block font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
                         >
                           {photo.credit} · {photo.license}
                         </a>

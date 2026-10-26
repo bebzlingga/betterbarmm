@@ -36,8 +36,8 @@ const groups = [
 
 const pages = groups.flatMap((g) => g.pages)
 
-const MENU_NAME = 'text-[13.5px] font-bold tracking-[-0.02em] text-[var(--ink)]'
-const MENU_NOTE = 'text-[11px] font-semibold text-[var(--ink-mute)]'
+const MENU_NAME = 'text-[0.84375rem] font-bold tracking-[-0.02em] text-[var(--ink)]'
+const MENU_NOTE = 'text-[0.6875rem] font-semibold text-[var(--ink-mute)]'
 
 /** Opens on click; closes on Escape or a pointer landing outside it. The same
  *  menu as the budget workspace's bar. */
@@ -129,7 +129,7 @@ export function SiteNav() {
 								href='https://betterbarmm.com/contribute'
 								target='_blank'
 								rel='noreferrer'
-								className='bb-btn bb-btn-accent !px-4 !py-0 !text-[9.5px]'
+								className='bb-btn bb-btn-accent !px-4 !py-0 !text-[0.59375rem]'
 							>
 								<HandHeartIcon size={13} weight='fill' aria-hidden='true' />
 								Contribute
@@ -163,7 +163,7 @@ export function SiteNav() {
 						<Link
 							href='/'
 							onClick={closeMenu}
-							className='hidden whitespace-nowrap font-[family-name:var(--font-display)] text-[10.5px] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
+							className='hidden whitespace-nowrap font-[family-name:var(--font-display)] text-[0.65625rem] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
 						>
 							Procurement
 						</Link>

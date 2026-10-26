@@ -81,7 +81,7 @@ function CandidateRowItem({ row }: { row: CandidateRow }) {
         <h3 className="item-title item-title-strong break-words transition-colors group-hover:text-[var(--accent)]">
           {row.name}
         </h3>
-        <p className="mt-1 break-words font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]">
+        <p className="mt-1 break-words font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]">
           {row.partyLabel}
         </p>
       </div>
@@ -334,7 +334,7 @@ export function CandidateBrowser({ rows }: { rows: CandidateRow[] }) {
                 <h3 className="item-title item-title-lg item-title-strong text-[var(--ink)]">
                   {area.area}
                 </h3>
-                <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]">
+                <p className="font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]">
                   {area.districts.length} {area.districts.length === 1 ? "district" : "districts"} ·{" "}
                   {area.count} filed
                 </p>
@@ -344,12 +344,12 @@ export function CandidateBrowser({ rows }: { rows: CandidateRow[] }) {
                 {area.districts.map((district) => (
                   <div key={`${area.area}-${district.district}`}>
                     <div className="flex items-baseline justify-between gap-3 border-b border-[var(--brass-line)] pb-2">
-                      <h4 className="truncate font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]">
+                      <h4 className="truncate font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]">
                         {district.district}
                       </h4>
                       {/* Every district returns one member, so the count is the
                           size of the contest for that seat. */}
-                      <p className="num shrink-0 font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]">
+                      <p className="num shrink-0 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]">
                         {district.rows.length} for 1 seat
                       </p>
                     </div>

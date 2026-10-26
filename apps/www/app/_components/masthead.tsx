@@ -108,7 +108,7 @@ export function Masthead({
 
         {standfirst ? (
           <Rise delay={0.35} distance={16}>
-            <p className='mt-7 text-[15px] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>
+            <p className='mt-7 text-[0.9375rem] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>
               {standfirst}
             </p>
           </Rise>
@@ -134,7 +134,7 @@ export function Masthead({
                     <div key={fact.label}>
                       <dt className='sr-only'>{fact.label}</dt>
                       <dd className='bb-figure-sm text-[var(--ink)]'>{fact.value}</dd>
-                      <p className='mt-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+                      <p className='mt-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
                         {fact.label}
                       </p>
                     </div>

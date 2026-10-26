@@ -50,11 +50,11 @@ export default function ProcurementHome() {
 					<div className='flex flex-wrap items-end justify-between gap-x-10 gap-y-3'>
 						<div>
 							<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Open for bids</h2>
-							<p className='mt-2 text-[14px] leading-6 text-[var(--ink-3)]'>
+							<p className='mt-2 text-[0.875rem] leading-6 text-[var(--ink-3)]'>
 								{openNotices.length} notices still taking bids, closing soonest first.
 							</p>
 						</div>
-						<Link href='/notices?stage=Open+for+bids' className='rule-link text-[14px] font-semibold text-[var(--ink)]'>
+						<Link href='/notices?stage=Open+for+bids' className='rule-link text-[0.875rem] font-semibold text-[var(--ink)]'>
 							See all {openNotices.length}
 						</Link>
 					</div>
@@ -62,8 +62,8 @@ export default function ProcurementHome() {
 						{openNotices.slice(0, 6).map((n) => (
 							<li key={n.ref} className='grid grid-cols-[minmax(0,1fr)_auto] gap-x-8 border-b border-[var(--rule)] py-4'>
 								<div className='min-w-0'>
-									<p className='line-clamp-2 text-[14.5px] font-semibold leading-6 text-[var(--ink)]'>{n.title ?? n.category}</p>
-									<p className='mt-1 truncate text-[12px] text-[var(--ink-3)]'>
+									<p className='line-clamp-2 text-[0.90625rem] font-semibold leading-6 text-[var(--ink)]'>{n.title ?? n.category}</p>
+									<p className='mt-1 truncate text-[0.75rem] text-[var(--ink-3)]'>
 										<Link href={`/${entities[n.entity]!.slug}`} className='rule-link'>
 											{entities[n.entity]!.name}
 										</Link>
@@ -71,8 +71,8 @@ export default function ProcurementHome() {
 									</p>
 								</div>
 								<div className='text-right'>
-									<p className='num text-[15px] font-semibold text-[var(--ink)]'>{n.abc == null ? '—' : peso(n.abc)}</p>
-									{n.closing ? <p className='mt-1 text-[11.5px] font-semibold text-[var(--accent)]'>Closes {longDate(n.closing)}</p> : null}
+									<p className='num text-[0.9375rem] font-semibold text-[var(--ink)]'>{n.abc == null ? '—' : peso(n.abc)}</p>
+									{n.closing ? <p className='mt-1 text-[0.71875rem] font-semibold text-[var(--accent)]'>Closes {longDate(n.closing)}</p> : null}
 								</div>
 							</li>
 						))}
@@ -120,7 +120,7 @@ export default function ProcurementHome() {
 			<section className='bb-container pb-[clamp(3.75rem,7vw,6.5rem)]'>
 				<h2 className='mb-8 border-t border-[var(--rule)] pt-12 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Every office</h2>
 				<EntityExplorer rows={rows} years={years} />
-				<p className='mt-10 text-[13px] leading-6 text-[var(--ink-3)]'>
+				<p className='mt-10 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 					An approved budget is what an office set aside for a purchase, not what it paid. Awards are only those PhilGEPS
 					records on the legacy system; the modernized system&rsquo;s awards are not published by agency. Open notices,
 					sources of funds and closing dates are read from the modernized system&rsquo;s own notice pages.

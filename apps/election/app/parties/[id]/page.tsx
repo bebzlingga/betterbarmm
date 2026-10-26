@@ -62,7 +62,7 @@ export default async function PartyDetailPage({
 					<Rise distance={12}>
 						<Link
 							href='/candidates#parties'
-							className='font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
+							className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
 						>
 							← All parties
 						</Link>
@@ -70,15 +70,15 @@ export default async function PartyDetailPage({
 
 					<Rise delay={0.06} distance={14}>
 						<div className='mt-8 flex flex-wrap items-center gap-3'>
-							<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--brass)]'>
+							<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--brass)]'>
 								{party.party_id}
 							</p>
 							<span aria-hidden='true' className='h-px w-8 bg-[var(--brass-line)]' />
-							<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+							<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 								{party.bloc}
 							</p>
 							{party.dominantStatus ? (
-								<span className='border border-[var(--accent)] px-2 py-1 font-mono text-[9px] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--accent)]'>
+								<span className='border border-[var(--accent)] px-2 py-1 font-mono text-[0.5625rem] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--accent)]'>
 									{dominantStatusLabel[party.dominantStatus]}
 								</span>
 							) : null}
@@ -94,7 +94,7 @@ export default async function PartyDetailPage({
 					</Rise>
 
 					<Rise delay={0.2} distance={14}>
-						<p className='mt-6 max-w-[52rem] text-[16px] font-semibold leading-8 text-[var(--ink)]'>
+						<p className='mt-6 max-w-[52rem] text-[1rem] font-semibold leading-8 text-[var(--ink)]'>
 							{party.full_name}
 						</p>
 					</Rise>
@@ -105,7 +105,7 @@ export default async function PartyDetailPage({
 						    This is a sentence read once under a name at display size, not a
 						    column somebody settles into; at 34em it stacked into a narrow
 						    stripe beside a very large heading. */}
-						<p className='mt-5 max-w-[52rem] text-[16px] leading-8 text-[var(--ink-2)]'>
+						<p className='mt-5 max-w-[52rem] text-[1rem] leading-8 text-[var(--ink-2)]'>
 							{party.description}
 						</p>
 						</Rise>
@@ -127,7 +127,7 @@ export default async function PartyDetailPage({
 						<div className='flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between'>
 							<div>
 								<p className='bb-label'>In the count</p>
-								<p className='mt-4 max-w-[34em] text-[16px] leading-[1.5] text-[var(--ink-2)]'>
+								<p className='mt-4 max-w-[34em] text-[1rem] leading-[1.5] text-[var(--ink-2)]'>
 									{result.disqualified
 										? 'Disqualified before the count. The party vote it drew was set aside as invalid, and it holds no seat in the elected Parliament.'
 										: result.totalSeats > 0
@@ -141,7 +141,7 @@ export default async function PartyDetailPage({
 												}, and the count returned none of them.`}
 								</p>
 								{result.componentParties.length ? (
-									<p className='mt-3 font-mono text-[9px] font-semibold uppercase leading-5 tracking-[0.14em] text-[var(--ink-3)]'>
+									<p className='mt-3 font-mono text-[0.5625rem] font-semibold uppercase leading-5 tracking-[0.14em] text-[var(--ink-3)]'>
 										District seats contested through SIAP, Al Ittihad-UKB and BPP
 									</p>
 								) : null}
@@ -161,7 +161,7 @@ export default async function PartyDetailPage({
 									},
 								].map((fact) => (
 									<div key={fact.label} className='flex flex-col-reverse'>
-										<dt className='mt-2.5 font-mono text-[9px] font-semibold uppercase leading-tight tracking-[0.14em] text-[var(--ink-3)]'>
+										<dt className='mt-2.5 font-mono text-[0.5625rem] font-semibold uppercase leading-tight tracking-[0.14em] text-[var(--ink-3)]'>
 											{fact.label}
 										</dt>
 										<dd className='num text-2xl font-extrabold leading-none text-[var(--ink)]'>
@@ -178,10 +178,10 @@ export default async function PartyDetailPage({
 						    which is a better answer to "who" than a list with no numbers. */}
 						{result.seatsByTrack.length ? (
 							<div className='mt-8 border-t border-[var(--rule)] pt-5'>
-								<p className='font-mono text-[9px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+								<p className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 									Where the seats came from
 								</p>
-								<p className='mt-3 text-[14px] leading-[1.6] text-[var(--ink-2)]'>
+								<p className='mt-3 text-[0.875rem] leading-[1.6] text-[var(--ink-2)]'>
 									{result.seatsByTrack
 										.map((track) => `${track.seats} ${track.label}`)
 										.join(' · ')}
@@ -191,7 +191,7 @@ export default async function PartyDetailPage({
 
 						<Link
 							href='/results'
-							className='mt-7 inline-block font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)] transition hover:text-[var(--accent-deep)]'
+							className='mt-7 inline-block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--accent)] transition hover:text-[var(--accent-deep)]'
 						>
 							The full result →
 						</Link>
@@ -225,11 +225,11 @@ export default async function PartyDetailPage({
 					    will cap it. */}
 					<Rise distance={14}>
 						<div className='mt-10'>
-							<p className='text-[16px] leading-8 text-[var(--ink-2)]'>
+							<p className='text-[1rem] leading-8 text-[var(--ink-2)]'>
 								{party.background.background}
 							</p>
 							{party.background.source_url ? (
-								<p className='mt-6 break-words font-mono text-[10px] font-semibold uppercase leading-6 tracking-[0.14em] text-[var(--ink-3)]'>
+								<p className='mt-6 break-words font-mono text-[0.625rem] font-semibold uppercase leading-6 tracking-[0.14em] text-[var(--ink-3)]'>
 									Source:{' '}
 									<a
 										href={party.background.source_url}
@@ -282,7 +282,7 @@ export default async function PartyDetailPage({
 									<h3 className='section-title section-title-sm text-[var(--ink)]'>
 										Sectoral nominees
 									</h3>
-									<p className='num font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+									<p className='num font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 										{party.sectoral.length}
 									</p>
 								</div>
@@ -295,10 +295,10 @@ export default async function PartyDetailPage({
 										>
 											<PersonAvatar name={candidate.full_name} partyId={party.party_id} size={44} />
 											<div className='min-w-0'>
-											<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
+											<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
 												{candidate.sector}
 											</p>
-											<h4 className='mt-2 text-[16px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+											<h4 className='mt-2 text-[1rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 												{displayName(candidate.full_name)}
 											</h4>
 											<p className='mt-2 bb-body text-[var(--ink-2)]'>
@@ -320,7 +320,7 @@ export default async function PartyDetailPage({
 										</h3>
 										<ConfidenceBadge confidence='working' />
 									</div>
-									<p className='num font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+									<p className='num font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 										{party.district.length}
 									</p>
 								</div>
@@ -339,7 +339,7 @@ export default async function PartyDetailPage({
 											    as one block of type rather than as a heading and a roster. */}
 											<div className='flex items-baseline justify-between gap-3 border-b border-[var(--rule)] pb-4'>
 												<p className='bb-label'>{group.area}</p>
-												<p className='num font-mono text-[11px] text-[var(--ink-3)]'>
+												<p className='num font-mono text-[0.6875rem] text-[var(--ink-3)]'>
 													{group.candidates.length}
 												</p>
 											</div>
@@ -352,11 +352,11 @@ export default async function PartyDetailPage({
 												>
 													<p className='flex min-w-0 items-center gap-3'>
 														<PersonAvatar name={candidate.name_as_reported} partyId={party.party_id} size={36} />
-														<span className='min-w-0 break-words text-[15px] font-semibold leading-snug text-[var(--ink)]'>
+														<span className='min-w-0 break-words text-[0.9375rem] font-semibold leading-snug text-[var(--ink)]'>
 															{displayName(candidate.name_as_reported)}
 														</span>
 													</p>
-													<p className='shrink-0 font-mono text-[9px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+													<p className='shrink-0 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 														{candidate.district ?? 'District not reported'}
 													</p>
 												</div>

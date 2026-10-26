@@ -27,7 +27,7 @@ export default async function NewsPage() {
 
       <section className="panel mb-6">
         <div className="panel-head">
-          <span className="text-[13px] font-medium">
+          <span className="text-[0.8125rem] font-medium">
             {last ? `Last read ${ago(last.started_at)} · ${last.added} new of ${last.seen}${last.trigger === "manual" ? ` · run by ${last.by_email || "an editor"}` : " · on schedule"}` : "Not read yet"}
           </span>
           <form action={runNow}>
@@ -37,12 +37,12 @@ export default async function NewsPage() {
           </form>
         </div>
         {last?.errors.length ? (
-          <p className="border-t border-[var(--rule)] px-[1.125rem] py-3 text-[13px] text-[var(--ink-3)]">
+          <p className="border-t border-[var(--rule)] px-[1.125rem] py-3 text-[0.8125rem] text-[var(--ink-3)]">
             {last.errors.length} feed{last.errors.length > 1 ? "s" : ""} could not be read: {last.errors.join(" · ")}
           </p>
         ) : null}
         {(runs ?? []).length > 1 ? (
-          <ul className="border-t border-[var(--rule)] px-[1.125rem] py-3 text-[12.5px] text-[var(--ink-3)]">
+          <ul className="border-t border-[var(--rule)] px-[1.125rem] py-3 text-[0.78125rem] text-[var(--ink-3)]">
             {(runs as NewsRun[]).slice(1).map((r) => (
               <li key={r.id} className="flex justify-between gap-4 py-0.5">
                 <span>{ago(r.started_at)}{r.trigger === "manual" ? ` · ${r.by_email || "manual"}` : ""}</span>
@@ -58,7 +58,7 @@ export default async function NewsPage() {
           {(items as NewsItem[]).map((n) => (
             <article key={n.id} className={`flex items-start gap-4 px-[1.125rem] py-3.5 ${n.hidden ? "opacity-50" : ""}`}>
               <div className="min-w-0 flex-1">
-                <a href={n.url} target="_blank" rel="noreferrer" className="inline-flex items-start gap-1.5 text-[14.5px] font-medium leading-snug hover:text-[var(--accent)]">
+                <a href={n.url} target="_blank" rel="noreferrer" className="inline-flex items-start gap-1.5 text-[0.90625rem] font-medium leading-snug hover:text-[var(--accent)]">
                   {n.title}
                   <ArrowSquareOutIcon size={13} className="mt-1 shrink-0" aria-hidden="true" />
                 </a>

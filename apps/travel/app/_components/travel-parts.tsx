@@ -37,7 +37,7 @@ export function Caution({ label, children }: { label: string; children: React.Re
 	return (
 		<div className='caution'>
 			<p className='caution-label'>{label}</p>
-			<div className='mt-2.5 text-[14.5px] leading-7 text-[var(--ink-2)]'>{children}</div>
+			<div className='mt-2.5 text-[0.90625rem] leading-7 text-[var(--ink-2)]'>{children}</div>
 		</div>
 	)
 }
@@ -76,7 +76,7 @@ export function TravelMasthead({
 						<LineReveal lines={[name]} delay={0.06} className='bb-display-md mt-5 text-[var(--ink)]' />
 						{note ? (
 							<Rise delay={0.25} distance={14}>
-								<p className='mt-7 text-[15px] leading-7 text-[var(--ink-2)] lg:mt-0 lg:text-right lg:leading-6'>{note}</p>
+								<p className='mt-7 text-[0.9375rem] leading-7 text-[var(--ink-2)] lg:mt-0 lg:text-right lg:leading-6'>{note}</p>
 							</Rise>
 						) : null}
 					</div>
@@ -123,7 +123,7 @@ export function SectionHead({
 				</h2>
 				{aside}
 			</div>
-			{lead ? <p className='mt-3 max-w-[48rem] text-[15px] leading-7 text-[var(--ink-3)]'>{lead}</p> : null}
+			{lead ? <p className='mt-3 max-w-[48rem] text-[0.9375rem] leading-7 text-[var(--ink-3)]'>{lead}</p> : null}
 		</div>
 	)
 }
@@ -137,7 +137,7 @@ export function GateList({ items, label }: { items: string[]; label?: string }) 
 			{label ? <p className='bb-label'>{label}</p> : null}
 			<ul className={`grid gap-2.5 ${label ? 'mt-3.5' : ''}`}>
 				{items.map((item) => (
-					<li key={item} className='tv-gate text-[14px] leading-7 text-[var(--ink-2)]'>
+					<li key={item} className='tv-gate text-[0.875rem] leading-7 text-[var(--ink-2)]'>
 						{item}
 					</li>
 				))}
@@ -159,21 +159,21 @@ export function PlaceCard({ place, areaName }: { place: Place; areaName?: string
 			<div className='flex flex-wrap items-center gap-x-3 gap-y-1.5'>
 				<span className='tv-kind'>{PLACE_KIND_LABEL[place.kind]}</span>
 				{place.signature ? (
-					<span className='badge badge-plain !text-[9.5px]'>Signature</span>
+					<span className='badge badge-plain !text-[0.59375rem]'>Signature</span>
 				) : null}
 			</div>
 
 			<h3 className='item-title-lg mt-3'>{place.name}</h3>
 
 			{place.alsoKnownAs?.length ? (
-				<p className='mt-1 text-[12.5px] italic text-[var(--ink-3)]'>
+				<p className='mt-1 text-[0.78125rem] italic text-[var(--ink-3)]'>
 					Also {place.alsoKnownAs.join(', ')}
 				</p>
 			) : null}
 
-			<p className='mt-3 text-[14px] leading-7 text-[var(--ink-2)]'>{place.summary}</p>
+			<p className='mt-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{place.summary}</p>
 
-			<p className='mt-4 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+			<p className='mt-4 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 				{place.municipality}
 				{areaName ? ` · ${areaName}` : ''}
 			</p>

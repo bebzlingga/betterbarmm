@@ -120,7 +120,7 @@ export default async function OverviewPage() {
             <ol className="divide-y divide-[var(--rule)]">
               {(recent as Revision[]).map((r) => (
                 <li key={r.id} className="flex items-start gap-3 px-[1.125rem] py-3">
-                  <span className="mt-0.5 grid size-7 shrink-0 place-items-center rounded-full bg-[var(--surface-3)] font-[family-name:var(--font-display)] text-[10px] font-semibold text-[var(--ink-2)]">
+                  <span className="mt-0.5 grid size-7 shrink-0 place-items-center rounded-full bg-[var(--surface-3)] font-[family-name:var(--font-display)] text-[0.625rem] font-semibold text-[var(--ink-2)]">
                     {initials(r.changed_by_email || "?")}
                   </span>
                   <div className="min-w-0 flex-1">
@@ -163,7 +163,7 @@ export default async function OverviewPage() {
                     <Glyph size={18} weight="fill" aria-hidden="true" />
                   </span>
                   <div>
-                    <p className="font-[family-name:var(--font-display)] text-[15px] font-semibold">{w.label}</p>
+                    <p className="font-[family-name:var(--font-display)] text-[0.9375rem] font-semibold">{w.label}</p>
                     <p className="text-xs text-[var(--ink-3)]">{total.toLocaleString()} records</p>
                   </div>
                 </div>
@@ -172,7 +172,7 @@ export default async function OverviewPage() {
                     const s = stats.get(`${c.workspace}/${c.collection}`) ?? { total: 0, unpublished: 0 };
                     return (
                       <li key={c.collection}>
-                        <Link href={`/data/${c.workspace}/${c.collection}`} className="flex items-center justify-between gap-3 rounded-md px-2 py-1.5 text-[13px] hover:bg-[var(--surface-2)]">
+                        <Link href={`/data/${c.workspace}/${c.collection}`} className="flex items-center justify-between gap-3 rounded-md px-2 py-1.5 text-[0.8125rem] hover:bg-[var(--surface-2)]">
                           <span className="truncate text-[var(--ink-2)]">{c.label}</span>
                           <span className="flex shrink-0 items-center gap-2">
                             {s.unpublished ? <span className="pill pill-warn">{s.unpublished} unpublished</span> : null}

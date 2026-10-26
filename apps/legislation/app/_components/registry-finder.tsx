@@ -148,9 +148,9 @@ export function RegistryFinder({ children }: { children: React.ReactNode }) {
 									aria-expanded={hits.length > 0}
 									aria-controls='finder-results'
 									placeholder='Bill, act, resolution or member…'
-									className='min-w-0 flex-1 bg-transparent text-[16px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+									className='min-w-0 flex-1 bg-transparent text-[1rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 								/>
-								<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[9.5px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
+								<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
 									Esc
 								</kbd>
 							</div>
@@ -169,32 +169,32 @@ export function RegistryFinder({ children }: { children: React.ReactNode }) {
 												className='finder-hit'
 											>
 												<span className='min-w-0 flex-1 text-left'>
-													<span className='block truncate text-[15px] font-semibold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+													<span className='block truncate text-[0.9375rem] font-semibold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 														{hit.title}
 													</span>
-													<span className='mt-1 block truncate font-mono text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+													<span className='mt-1 block truncate font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
 														{hit.meta}
 													</span>
 												</span>
-												<span className='shrink-0 text-right text-[11.5px] text-[var(--ink-3)]'>{hit.kind}</span>
+												<span className='shrink-0 text-right text-[0.71875rem] text-[var(--ink-3)]'>{hit.kind}</span>
 											</button>
 										))
 									: null}
 
 								{typed && !loading && hits.length === 0 ? (
-									<p className='px-5 py-8 text-center text-[13.5px] leading-6 text-[var(--ink-3)]'>
+									<p className='px-5 py-8 text-center text-[0.84375rem] leading-6 text-[var(--ink-3)]'>
 										Nothing in the registry matches “{query.trim()}”.
 									</p>
 								) : null}
 
 								{!typed ? (
-									<p className='px-5 py-8 text-center text-[13.5px] leading-6 text-[var(--ink-3)]'>
+									<p className='px-5 py-8 text-center text-[0.84375rem] leading-6 text-[var(--ink-3)]'>
 										Type two letters. A number works too: “BAA 49”, “Bill 468”.
 									</p>
 								) : null}
 							</div>
 
-							<div className='flex items-center justify-between gap-4 border-t border-[var(--rule)] px-5 py-3 font-mono text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+							<div className='flex items-center justify-between gap-4 border-t border-[var(--rule)] px-5 py-3 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
 								<span>Bills, acts, resolutions and members</span>
 								<span className='hidden sm:block'>↑↓ to move · ↵ to open</span>
 							</div>

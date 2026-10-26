@@ -41,7 +41,7 @@ const STEPS = [
 ]
 
 const H2 = 'text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
-const CITE = 'mt-2 font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'
+const CITE = 'mt-2 font-mono text-[0.5625rem] uppercase tracking-[0.14em] text-[var(--ink-mute)]'
 
 export default function OrdinancesPage() {
 	return (
@@ -57,7 +57,7 @@ export default function OrdinancesPage() {
 			<div className='bb-container bb-section '>
 				<section>
 					<h2 className={H2}>What an ordinance is</h2>
-					<div className='mt-5 gap-20 text-[15px] leading-7 text-[var(--ink-2)] lg:columns-2 [&>p+p]:mt-4'>
+					<div className='mt-5 gap-20 text-[0.9375rem] leading-7 text-[var(--ink-2)] lg:columns-2 [&>p+p]:mt-4'>
 						<p>
 							An ordinance is a local law. Each level of local government has a council that makes them: the
 							Sangguniang Panlalawigan for a province, the Sangguniang Panlungsod for a city, the Sangguniang Bayan
@@ -86,9 +86,9 @@ export default function OrdinancesPage() {
 					<ol className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
 						{STEPS.map((s, i) => (
 							<li key={s.step} className='bg-[var(--paper-2)] p-6'>
-								<p className='num font-mono text-[11px] font-semibold text-[var(--brass)]'>{String(i + 1).padStart(2, '0')}</p>
-								<h3 className='mt-2 text-[16px] font-extrabold tracking-[-0.01em] text-[var(--ink)]'>{s.step}</h3>
-								<p className='mt-3 text-[14px] leading-6 text-[var(--ink-2)]'>{s.what}</p>
+								<p className='num font-mono text-[0.6875rem] font-semibold text-[var(--brass)]'>{String(i + 1).padStart(2, '0')}</p>
+								<h3 className='mt-2 text-[1rem] font-extrabold tracking-[-0.01em] text-[var(--ink)]'>{s.step}</h3>
+								<p className='mt-3 text-[0.875rem] leading-6 text-[var(--ink-2)]'>{s.what}</p>
 								<p className={CITE}>{s.cite}</p>
 							</li>
 						))}
@@ -99,7 +99,7 @@ export default function OrdinancesPage() {
 				<section className='mt-20 flex flex-col gap-6 bg-[var(--paper-2)] p-8 lg:flex-row lg:items-center lg:justify-between lg:gap-12'>
 					<div className='max-w-[44rem]'>
 						<h2 className='text-[1.25rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Have an ordinance?</h2>
-						<p className='mt-3 text-[15px] leading-7 text-[var(--ink-2)]'>
+						<p className='mt-3 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
 							If you have a copy of an ordinance from your town or province, a council secretary&rsquo;s file, a
 							posted notice or a link, send it to us and it will be among the first we publish.
 						</p>

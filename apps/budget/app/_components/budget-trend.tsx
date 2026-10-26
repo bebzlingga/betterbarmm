@@ -279,7 +279,7 @@ export function BudgetTrend({
 			</svg>
 
 			{/* The two ends only. Seven figures would say what the line already says. */}
-			<div className='mt-3 flex items-baseline justify-between gap-6 border-t border-[var(--rule)] pt-3 font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
+			<div className='mt-3 flex items-baseline justify-between gap-6 border-t border-[var(--rule)] pt-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
 				<span className='money'>{peso(first.total)}</span>
 				<span className='money text-[var(--ink)]'>{peso(last.total)}</span>
 			</div>

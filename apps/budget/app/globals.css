@@ -340,7 +340,7 @@
   color: var(--ink-2);
   cursor: pointer;
   font-family: var(--font-display);
-  font-size: 14.5px;
+  font-size: 0.90625rem;
   font-weight: 600;
   line-height: 1.2;
   white-space: nowrap;
@@ -376,7 +376,7 @@
    on this estate uses for the name of a set rather than words in a sentence. */
 .chip-field {
   padding: 0.95rem 1.1rem;
-  font-size: 11px;
+  font-size: 0.6875rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   line-height: 1.125rem;
@@ -429,7 +429,7 @@
 .money-stat-label {
   margin-top: 0.6rem;
   font-family: var(--font-display);
-  font-size: 10px;
+  font-size: 0.625rem;
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;

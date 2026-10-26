@@ -50,7 +50,7 @@ export function recordMetadata(category: CategorySlug, raw: string): Metadata {
 /** A feed link, for a reader who wants to hear when this moves. */
 export function FollowFeed({ href, what }: { href: string; what: string }) {
 	return (
-		<div className='bb-container pb-16 text-[13px] text-[var(--ink-3)]'>
+		<div className='bb-container pb-16 text-[0.8125rem] text-[var(--ink-3)]'>
 			<a href={href} className='rule-link font-semibold text-[var(--ink)]'>
 				Follow {what} by RSS
 			</a>{' '}

@@ -131,7 +131,7 @@ function Search({ places, onBarangay, onTown, onLocate, locating }: { places: Pl
 						setOpen(false)
 					}
 				}}
-				className='h-10 w-full min-w-0 border border-[var(--rule)] bg-[var(--paper)] pl-9 pr-11 text-[14px] text-[var(--ink)] placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+				className='h-10 w-full min-w-0 border border-[var(--rule)] bg-[var(--paper)] pl-9 pr-11 text-[0.875rem] text-[var(--ink)] placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 			/>
 			<button
 				type='button'
@@ -152,10 +152,10 @@ function Search({ places, onBarangay, onTown, onLocate, locating }: { places: Pl
 							aria-selected={i === active}
 							onMouseDown={(e) => (e.preventDefault(), choose(h))}
 							onMouseEnter={() => setActive(i)}
-							className={`cursor-pointer px-3 py-1.5 text-[13.5px] ${i === active ? 'bg-[var(--paper-2)]' : ''}`}
+							className={`cursor-pointer px-3 py-1.5 text-[0.84375rem] ${i === active ? 'bg-[var(--paper-2)]' : ''}`}
 						>
 							<span className='font-semibold'>{h.name}</span>
-							<span className='block text-[11.5px] text-[var(--ink-3)]'>
+							<span className='block text-[0.71875rem] text-[var(--ink-3)]'>
 								{h.kind === 'town' ? `Town · ${PROVINCE_NAMES[h.prov] ?? h.prov} · ${h.n} barangays` : `${h.town}, ${PROVINCE_NAMES[h.prov] ?? h.prov}`}
 							</span>
 						</li>
@@ -197,7 +197,7 @@ function Menu({ label, value, width = 340, shut = 0, children }: { label: string
 	}, [shut])
 	return (
 		<div className='flex min-w-0 items-center gap-2'>
-			<span className='whitespace-nowrap text-[14px] text-[var(--ink-3)]'>{label}</span>
+			<span className='whitespace-nowrap text-[0.875rem] text-[var(--ink-3)]'>{label}</span>
 			<button
 				ref={button}
 				type='button'
@@ -205,12 +205,12 @@ function Menu({ label, value, width = 340, shut = 0, children }: { label: string
 				aria-expanded={open}
 				aria-controls={`${id}-panel`}
 				popoverTarget={`${id}-panel`}
-				className='flex h-10 min-w-0 cursor-pointer items-center gap-2 whitespace-nowrap text-[14px] font-semibold text-[var(--ink)] outline-none focus-visible:underline focus-visible:decoration-[var(--accent)] focus-visible:underline-offset-4'
+				className='flex h-10 min-w-0 cursor-pointer items-center gap-2 whitespace-nowrap text-[0.875rem] font-semibold text-[var(--ink)] outline-none focus-visible:underline focus-visible:decoration-[var(--accent)] focus-visible:underline-offset-4'
 			>
 				{value}
 				<CaretDownIcon size={11} weight='bold' aria-hidden='true' className={`shrink-0 text-[var(--ink-3)] transition-transform ${open ? 'rotate-180' : ''}`} />
 			</button>
-			<div ref={panel} id={`${id}-panel`} popover='auto' style={place} className='fixed inset-auto m-0 overflow-visible border border-[var(--rule)] bg-[var(--paper)] p-1.5 text-[13.5px] text-[var(--ink)] shadow-[0_16px_40px_rgba(0,0,0,0.28)]'>
+			<div ref={panel} id={`${id}-panel`} popover='auto' style={place} className='fixed inset-auto m-0 overflow-visible border border-[var(--rule)] bg-[var(--paper)] p-1.5 text-[0.84375rem] text-[var(--ink)] shadow-[0_16px_40px_rgba(0,0,0,0.28)]'>
 				{children}
 			</div>
 		</div>
@@ -244,12 +244,12 @@ function FacilityMenu({ kinds, counts, onToggle }: { kinds: FacilityKind[]; coun
 							<input type='checkbox' checked={k.on} onChange={() => onToggle(k.id)} className='accent-[var(--accent)]' />
 							<KindBadge kind={k.id} color={k.color} />
 							<span className={`flex-1 ${k.on ? '' : 'text-[var(--ink-3)]'}`}>{k.label}</span>
-							<span className='tabular-nums text-[12px] text-[var(--ink-3)]'>{counts[k.id] ? counts[k.id]!.toLocaleString('en-PH') : ''}</span>
+							<span className='tabular-nums text-[0.75rem] text-[var(--ink-3)]'>{counts[k.id] ? counts[k.id]!.toLocaleString('en-PH') : ''}</span>
 						</label>
 					</li>
 				))}
 			</ul>
-			<p className='mt-1 border-t border-[var(--rule)] px-2.5 pb-1.5 pt-2.5 text-[11.5px] leading-[1.55] text-[var(--ink-3)]'>From OpenStreetMap. No official list of the region’s evacuation centres is published, so schools stand in for the sites LGUs most often designate.</p>
+			<p className='mt-1 border-t border-[var(--rule)] px-2.5 pb-1.5 pt-2.5 text-[0.71875rem] leading-[1.55] text-[var(--ink-3)]'>From OpenStreetMap. No official list of the region’s evacuation centres is published, so schools stand in for the sites LGUs most often designate.</p>
 		</Menu>
 	)
 }
@@ -264,7 +264,7 @@ function Exposure({ place }: { place: Place }) {
 				const none = !v[0] && !v[1] && !v[2]
 				return (
 					<li key={h.id}>
-						<p className='flex justify-between text-[13px]'>
+						<p className='flex justify-between text-[0.8125rem]'>
 							<span className='font-semibold'>{h.label}</span>
 							<span className='text-[var(--ink-3)]'>{none ? (h.id === 'flood' && place.prov === 'tawi-tawi' ? 'Not modelled' : 'None mapped') : `${pct((v[1] + v[2]) / a)} medium or high`}</span>
 						</p>
@@ -280,8 +280,8 @@ function Exposure({ place }: { place: Place }) {
 	)
 }
 
-const select = 'h-10 w-full min-w-0 border border-[var(--rule)] bg-[var(--paper)] px-2 text-[14px] text-[var(--ink)]'
-const label = 'font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink-3)]'
+const select = 'h-10 w-full min-w-0 border border-[var(--rule)] bg-[var(--paper)] px-2 text-[0.875rem] text-[var(--ink)]'
+const label = 'font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink-3)]'
 const VIEWS: { id: View; label: string }[] = [
 	{ id: 'zones', label: 'NOAH’s zones' },
 	{ id: 'heat', label: 'Heat' },
@@ -491,17 +491,17 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 			<div className='bb-ground flex shrink-0 items-start justify-between gap-4 border-b border-[var(--rule)] px-4 py-2 [color-scheme:dark] lg:items-center lg:px-6'>
 				{/* The hazard and how to draw it, as the accident map's header does its filters: plain dropdowns on the dark ground. */}
 				<div className='flex min-w-0 flex-1 flex-wrap items-center gap-x-6 gap-y-1'>
-					<p className='hidden text-[14px] font-extrabold tracking-[-0.01em] text-[var(--ink)] xl:block'>Hazard and preparedness map</p>
+					<p className='hidden text-[0.875rem] font-extrabold tracking-[-0.01em] text-[var(--ink)] xl:block'>Hazard and preparedness map</p>
 					<Select label='Hazard' value={hazard ?? 'none'} onChange={(v) => setHazard(v === 'none' ? null : (v as HazardId))} options={[...HAZARDS.map((h): [string, string] => [h.id, h.label]), ['none', 'None']]} plain />
 					<Select label='Show' value={view} onChange={(v) => setView(v as View)} options={VIEWS.map((v): [string, string] => [v.id, v.label])} plain />
 					<FacilityMenu kinds={kinds} counts={counts} onToggle={(id) => setKinds(kinds.map((x) => (x.id === id ? { ...x, on: !x.on } : x)))} />
 					<Menu label='Place' value={<span className='max-w-[12rem] truncate'>{place ? place.name : 'Find a place'}</span>} width={380} shut={shut}>
 						<div className='p-2.5'>
-							<p className='mb-2 text-[12.5px] text-[var(--ink-3)]'>Search, tap the crosshair for places near you, or tap a barangay on the map.</p>
+							<p className='mb-2 text-[0.78125rem] text-[var(--ink-3)]'>Search, tap the crosshair for places near you, or tap a barangay on the map.</p>
 							<Search places={places} onBarangay={(p) => (pick(p), closePlace())} onTown={(t) => (goTown(t), closePlace())} onLocate={locate} locating={locating === 'busy'} />
-							{locating === 'busy' ? <p className='mt-1.5 text-[12px] text-[var(--ink-3)]'>Finding you…</p> : null}
-							{locating === 'failed' ? <p className='mt-1.5 text-[12px] text-[var(--ink-3)]'>Your location could not be read. Search or pick a place instead.</p> : null}
-							<p className='mt-4 text-[12.5px] font-semibold text-[var(--ink-3)]'>Or browse by province and town</p>
+							{locating === 'busy' ? <p className='mt-1.5 text-[0.75rem] text-[var(--ink-3)]'>Finding you…</p> : null}
+							{locating === 'failed' ? <p className='mt-1.5 text-[0.75rem] text-[var(--ink-3)]'>Your location could not be read. Search or pick a place instead.</p> : null}
+							<p className='mt-4 text-[0.78125rem] font-semibold text-[var(--ink-3)]'>Or browse by province and town</p>
 							<div className='mt-2 space-y-1.5'>
 								<select aria-label='Province' className={select} value={prov} onChange={(e) => goProv(e.target.value)}>
 									<option value=''>All provinces</option>
@@ -548,8 +548,8 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 							</p>
 							{view === 'barangays' ? (
 								<>
-									<p className='mt-1.5 text-[12px] text-[var(--ink-3)]'>Share of each barangay’s land in medium or high hazard</p>
-									<div className='mt-2 grid grid-cols-4 gap-1 text-[11px] text-[var(--ink-3)]'>
+									<p className='mt-1.5 text-[0.75rem] text-[var(--ink-3)]'>Share of each barangay’s land in medium or high hazard</p>
+									<div className='mt-2 grid grid-cols-4 gap-1 text-[0.6875rem] text-[var(--ink-3)]'>
 										{[
 											['#f7e7b4', '2–10%'],
 											[CLASS_COLORS[0], '10–30%'],
@@ -565,8 +565,8 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 								</>
 							) : (
 								<>
-									{view === 'heat' ? <p className='mt-1.5 text-[12px] leading-[1.5] text-[var(--ink-3)] max-lg:hidden'>Brighter where more land is in medium or high hazard. Zoom in and NOAH’s zones take over.</p> : null}
-									<ul className='mt-2 flex gap-x-3 gap-y-1 text-[12px] lg:block lg:space-y-1'>
+									{view === 'heat' ? <p className='mt-1.5 text-[0.75rem] leading-[1.5] text-[var(--ink-3)] max-lg:hidden'>Brighter where more land is in medium or high hazard. Zoom in and NOAH’s zones take over.</p> : null}
+									<ul className='mt-2 flex gap-x-3 gap-y-1 text-[0.75rem] lg:block lg:space-y-1'>
 										{hz.classes.map((c, i) => (
 											<li key={c} className='flex items-center gap-2'>
 												<span className='size-3 shrink-0' style={{ background: CLASS_COLORS[i] }} /> <span className='font-semibold'>{CLASS_LABELS[i]}</span> <span className='truncate text-[var(--ink-3)] max-lg:hidden'>{c}</span>
@@ -575,8 +575,8 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 									</ul>
 								</>
 							)}
-							<p className='mt-2 border-t border-[var(--rule)] pt-2 text-[11px] leading-[1.5] text-[var(--ink-3)] max-lg:hidden'>{hz.note}</p>
-							<a href='https://noah.up.edu.ph/' target='_blank' rel='noreferrer' className='mt-1.5 inline-flex items-center gap-0.5 text-[11px] font-semibold text-[var(--ink-3)] hover:text-[var(--accent)]'>
+							<p className='mt-2 border-t border-[var(--rule)] pt-2 text-[0.6875rem] leading-[1.5] text-[var(--ink-3)] max-lg:hidden'>{hz.note}</p>
+							<a href='https://noah.up.edu.ph/' target='_blank' rel='noreferrer' className='mt-1.5 inline-flex items-center gap-0.5 text-[0.6875rem] font-semibold text-[var(--ink-3)] hover:text-[var(--accent)]'>
 								Hazard maps: Project NOAH <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
 							</a>
 						</div>
@@ -587,8 +587,8 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 						<div className='absolute inset-x-3 bottom-3 z-10 bg-[var(--paper)] p-4 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] lg:hidden'>
 							<div className='flex items-start justify-between gap-3'>
 								<div className='min-w-0'>
-									<p className='truncate text-[16px] font-extrabold leading-tight'>{place.name}</p>
-									<p className='text-[12px] text-[var(--ink-3)]'>
+									<p className='truncate text-[1rem] font-extrabold leading-tight'>{place.name}</p>
+									<p className='text-[0.75rem] text-[var(--ink-3)]'>
 										{place.town}, {PROVINCE_NAMES[place.prov] ?? place.prov}
 										{place.pop ? ` · ${place.pop.toLocaleString('en-PH')} people` : ''}
 									</p>
@@ -600,24 +600,24 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 							<div className='mt-3'>
 								<Exposure place={place} />
 							</div>
-							{nearest.length ? <p className='mt-3 text-[12px] text-[var(--ink-3)]'>The nearest facilities are listed below the map.</p> : null}
+							{nearest.length ? <p className='mt-3 text-[0.75rem] text-[var(--ink-3)]'>The nearest facilities are listed below the map.</p> : null}
 						</div>
 					) : null}
 
 					{facility ? (
 						<div className='absolute inset-x-3 bottom-3 z-10 bg-[var(--paper)] p-4 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] lg:inset-x-auto lg:bottom-4 lg:right-4 lg:w-[22rem]'>
 							<div className='flex items-start justify-between gap-3'>
-								<p className='flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.1em]' style={{ color: color[facility.kind] }}>
+								<p className='flex items-center gap-1.5 text-[0.6875rem] font-semibold uppercase tracking-[0.1em]' style={{ color: color[facility.kind] }}>
 									<KindBadge kind={facility.kind} color={color[facility.kind] ?? '#888'} size={16} /> {kindLabel[facility.kind]}
 								</p>
 								<button type='button' aria-label='Close' onClick={() => setFacilityId(null)} className='text-[var(--ink-3)] hover:text-[var(--ink)]'>
 									<XIcon size={14} weight='bold' />
 								</button>
 							</div>
-							<p className='mt-1 text-[16px] font-bold leading-snug'>{facility.name}</p>
-							<p className='text-[12.5px] text-[var(--ink-3)]'>{[facility.detail, facility.town, facility.prov ? PROVINCE_NAMES[facility.prov] : null].filter(Boolean).join(' · ')}</p>
-							{origin ? <p className='mt-1 text-[12px] text-[var(--ink-3)]'>{km(distance(origin, [facility.lon, facility.lat]))} from {me ? 'you' : place?.name}, in a straight line</p> : null}
-							<a href={facility.source.url} target='_blank' rel='noreferrer' className='mt-1.5 inline-flex items-center gap-0.5 text-[12px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
+							<p className='mt-1 text-[1rem] font-bold leading-snug'>{facility.name}</p>
+							<p className='text-[0.78125rem] text-[var(--ink-3)]'>{[facility.detail, facility.town, facility.prov ? PROVINCE_NAMES[facility.prov] : null].filter(Boolean).join(' · ')}</p>
+							{origin ? <p className='mt-1 text-[0.75rem] text-[var(--ink-3)]'>{km(distance(origin, [facility.lon, facility.lat]))} from {me ? 'you' : place?.name}, in a straight line</p> : null}
+							<a href={facility.source.url} target='_blank' rel='noreferrer' className='mt-1.5 inline-flex items-center gap-0.5 text-[0.75rem] text-[var(--ink-3)] hover:text-[var(--accent)]'>
 								{facility.source.label} <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
 							</a>
 						</div>
@@ -634,8 +634,8 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 									<div className='flex items-start justify-between gap-3'>
 										<div>
 											<p className={label}>Barangay</p>
-											<p className='mt-1 text-[22px] font-extrabold leading-tight tracking-[-0.015em]'>{place.name}</p>
-											<p className='mt-0.5 text-[12.5px] text-[var(--ink-3)]'>
+											<p className='mt-1 text-[1.375rem] font-extrabold leading-tight tracking-[-0.015em]'>{place.name}</p>
+											<p className='mt-0.5 text-[0.78125rem] text-[var(--ink-3)]'>
 												{place.town}, {PROVINCE_NAMES[place.prov] ?? place.prov}
 											</p>
 										</div>
@@ -645,12 +645,12 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 									</div>
 									<dl className='mt-3 grid grid-cols-2 gap-3 border-y border-[var(--rule)] py-3'>
 										<div>
-											<dt className='text-[11px] text-[var(--ink-3)]'>Land</dt>
-											<dd className='text-[15px] font-bold tabular-nums'>{place.area < 10 ? place.area.toFixed(1) : Math.round(place.area)} km²</dd>
+											<dt className='text-[0.6875rem] text-[var(--ink-3)]'>Land</dt>
+											<dd className='text-[0.9375rem] font-bold tabular-nums'>{place.area < 10 ? place.area.toFixed(1) : Math.round(place.area)} km²</dd>
 										</div>
 										<div>
-											<dt className='text-[11px] text-[var(--ink-3)]'>People (2024)</dt>
-											<dd className='text-[15px] font-bold tabular-nums'>{place.pop ? place.pop.toLocaleString('en-PH') : '—'}</dd>
+											<dt className='text-[0.6875rem] text-[var(--ink-3)]'>People (2024)</dt>
+											<dd className='text-[0.9375rem] font-bold tabular-nums'>{place.pop ? place.pop.toLocaleString('en-PH') : '—'}</dd>
 										</div>
 									</dl>
 									<p className={`${label} mt-4`}>Its land in each hazard</p>
@@ -662,11 +662,11 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 							{nearest.length ? (
 								<div className={place ? 'mt-6' : ''}>
 									<p className={label}>Nearest {me ? 'to you' : `to ${place?.name}`}</p>
-									<p className='mt-0.5 text-[11.5px] text-[var(--ink-3)]'>Straight-line distance, not the road.</p>
+									<p className='mt-0.5 text-[0.71875rem] text-[var(--ink-3)]'>Straight-line distance, not the road.</p>
 									<div className='mt-3 space-y-3'>
 										{nearest.map(({ kind, list }) => (
 											<div key={kind.id}>
-												<p className='flex items-center gap-1.5 text-[12px] font-semibold'>
+												<p className='flex items-center gap-1.5 text-[0.75rem] font-semibold'>
 													<KindBadge kind={kind.id} color={kind.color} size={16} /> {kind.label}
 												</p>
 												<ul className='mt-1 divide-y divide-[var(--rule)] border-y border-[var(--rule)]'>
@@ -675,7 +675,7 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 															<button
 																type='button'
 																onClick={() => (setFacilityId(f.id), setFocus({ bbox: [f.lon - 0.01, f.lat - 0.01, f.lon + 0.01, f.lat + 0.01], nonce: Date.now() }))}
-																className={`flex w-full items-baseline justify-between gap-3 py-1.5 text-left text-[13px] hover:text-[var(--accent)] ${facilityId === f.id ? 'font-semibold text-[var(--accent)]' : ''}`}
+																className={`flex w-full items-baseline justify-between gap-3 py-1.5 text-left text-[0.8125rem] hover:text-[var(--accent)] ${facilityId === f.id ? 'font-semibold text-[var(--accent)]' : ''}`}
 															>
 																<span className='min-w-0 truncate'>{f.name}</span>
 																<span className='shrink-0 tabular-nums text-[var(--ink-3)]'>{km(d)}</span>

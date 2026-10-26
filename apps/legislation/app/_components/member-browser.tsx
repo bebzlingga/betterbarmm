@@ -232,7 +232,7 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 							)}
 							Filters
 							{activeCount > 0 ? (
-								<span className='num inline-flex size-[18px] items-center justify-center rounded-full bg-[var(--ink)] text-[11px] text-[var(--paper)]'>
+								<span className='num inline-flex size-[18px] items-center justify-center rounded-full bg-[var(--ink)] text-[0.6875rem] text-[var(--paper)]'>
 									{activeCount}
 								</span>
 							) : null}
@@ -392,7 +392,7 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 							<button
 								type='button'
 								onClick={clearAll}
-								className='w-fit cursor-pointer text-[13px] text-[var(--ink-3)] underline decoration-[var(--rule)] underline-offset-4 transition hover:text-[var(--ink)] hover:decoration-[var(--accent)]'
+								className='w-fit cursor-pointer text-[0.8125rem] text-[var(--ink-3)] underline decoration-[var(--rule)] underline-offset-4 transition hover:text-[var(--ink)] hover:decoration-[var(--accent)]'
 							>
 								Clear search and filters
 							</button>
@@ -470,7 +470,7 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 											    class is unlayered and beats a utility. */}
 											<div className='mt-auto pt-4'>
 												{member.representation ? (
-													<p className='text-[13px] leading-[1.5] text-[var(--ink-3)]'>
+													<p className='text-[0.8125rem] leading-[1.5] text-[var(--ink-3)]'>
 														{member.representation}
 													</p>
 												) : null}

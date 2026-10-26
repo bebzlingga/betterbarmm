@@ -42,7 +42,7 @@ export function ScrollCue({
 				target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' })
 				window.history.pushState(null, '', to)
 			}}
-			className={`inline-flex items-center gap-3 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--ink-3)] transition hover:text-[var(--accent)] ${className}`}
+			className={`inline-flex items-center gap-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--ink-3)] transition hover:text-[var(--accent)] ${className}`}
 		>
 			<span className='bb-cue flex size-9 items-center justify-center rounded-full border border-[var(--brass-line)]'>
 				<ArrowDownIcon className='size-3.5' aria-hidden='true' />

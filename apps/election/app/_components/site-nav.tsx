@@ -59,7 +59,7 @@ export function SiteNav() {
 								href='https://betterbarmm.com/contribute'
 								target='_blank'
 								rel='noreferrer'
-								className='bb-btn bb-btn-accent !px-4 !py-0 !text-[9.5px]'
+								className='bb-btn bb-btn-accent !px-4 !py-0 !text-[0.59375rem]'
 							>
 								<HandHeartIcon size={13} weight='fill' aria-hidden='true' />
 								Contribute
@@ -102,7 +102,7 @@ export function SiteNav() {
 						<Link
 							href='/'
 							onClick={closeMenu}
-							className='hidden whitespace-nowrap font-[family-name:var(--font-display)] text-[10.5px] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
+							className='hidden whitespace-nowrap font-[family-name:var(--font-display)] text-[0.65625rem] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
 						>
 							Election
 						</Link>

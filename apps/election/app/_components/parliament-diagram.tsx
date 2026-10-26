@@ -149,7 +149,7 @@ export function SeatMap({
 					{/* Tight under the numeral. The figure and its caption are one
 					    statement — "eighty seats in Parliament" — and at two and a half
 					    rems apart they read as a number and then a label about it. */}
-					<p className='mt-1 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+					<p className='mt-1 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 						seats in Parliament
 					</p>
 
@@ -191,11 +191,11 @@ export function SeatMap({
 								<p className='num text-2xl font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
 									{track.seats}
 								</p>
-								<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+								<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 									{Math.round((track.seats / total) * 100)}% of the chamber
 								</p>
 							</div>
-							<p className='mt-2.5 text-[13px] font-semibold leading-snug text-[var(--ink-2)]'>
+							<p className='mt-2.5 text-[0.8125rem] font-semibold leading-snug text-[var(--ink-2)]'>
 								{track.label}
 							</p>
 						</div>
@@ -228,11 +228,11 @@ export function MajorityBar({ total, majority }: { total: number; majority: numb
 			</div>
 
 			<figcaption className='mt-4 flex flex-wrap items-baseline gap-x-6 gap-y-2'>
-				<span className='flex items-center gap-2 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-2)]'>
+				<span className='flex items-center gap-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-2)]'>
 					<span aria-hidden='true' className='size-2.5 bg-[var(--accent)]' />
 					{majority} members — a majority
 				</span>
-				<span className='flex items-center gap-2 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+				<span className='flex items-center gap-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 					<span aria-hidden='true' className='size-2.5 bg-[var(--rule)]' />
 					{total - majority} remaining
 				</span>
@@ -275,16 +275,16 @@ export function DistrictSeatBars({
 						className='border-t border-[var(--rule-soft)] py-2.5'
 					>
 						<div className='flex items-baseline justify-between gap-3'>
-							<dt className='min-w-0 text-[13.5px] font-semibold leading-snug text-[var(--ink)]'>
+							<dt className='min-w-0 text-[0.84375rem] font-semibold leading-snug text-[var(--ink)]'>
 								{item.constituency}
 							</dt>
-							<dd className='num shrink-0 text-[15px] font-bold leading-none text-[var(--ink)]'>
+							<dd className='num shrink-0 text-[0.9375rem] font-bold leading-none text-[var(--ink)]'>
 								{item.seats}
 							</dd>
 						</div>
 
 						{item.note ? (
-							<p className='mt-1 text-[12px] leading-snug text-[var(--ink-3)]'>{item.note}</p>
+							<p className='mt-1 text-[0.75rem] leading-snug text-[var(--ink-3)]'>{item.note}</p>
 						) : null}
 
 						<dd className='mt-2'>
@@ -298,7 +298,7 @@ export function DistrictSeatBars({
 				))}
 			</dl>
 
-			<p className='mt-4 border-t border-[var(--brass-line)] pt-4 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+			<p className='mt-4 border-t border-[var(--brass-line)] pt-4 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 				{total} district seats in all
 			</p>
 		</figure>
@@ -360,7 +360,7 @@ export function OutcomeBar({
 
 			<figcaption className='mt-5'>
 				<p
-					className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-2)]'
+					className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-2)]'
 					style={{ marginLeft: `min(${(majority / total) * 100}%, 100% - 12rem)` }}
 				>
 					{majority} — a majority
@@ -374,10 +374,10 @@ export function OutcomeBar({
 								className='size-2.5 shrink-0 translate-y-[1px]'
 								style={{ background: bloc.color }}
 							/>
-							<span className='num text-[15px] font-bold leading-none text-[var(--ink)]'>
+							<span className='num text-[0.9375rem] font-bold leading-none text-[var(--ink)]'>
 								{bloc.seats}
 							</span>
-							<span className='text-[13px] font-semibold leading-none text-[var(--ink-2)]'>
+							<span className='text-[0.8125rem] font-semibold leading-none text-[var(--ink-2)]'>
 								{bloc.label}
 							</span>
 						</span>

@@ -39,7 +39,7 @@ export function DisclosureTable({
 	return (
 		<div className='mt-12'>
 			<div className='flex flex-wrap items-center justify-between gap-x-6 gap-y-3 border-b border-[var(--brass-line)] pb-3'>
-				<p className='text-[12.5px] text-[var(--ink-3)]'>
+				<p className='text-[0.78125rem] text-[var(--ink-3)]'>
 					<span className='num font-semibold text-[var(--ink)]'>{posted}</span> of {documents.length} documents
 					posted for {year}
 				</p>
@@ -50,7 +50,7 @@ export function DisclosureTable({
 							type='button'
 							aria-pressed={y === year}
 							onClick={() => setYear(y)}
-							className={`num cursor-pointer px-3 py-1.5 font-mono text-[11px] font-semibold tracking-[0.1em] transition ${
+							className={`num cursor-pointer px-3 py-1.5 font-mono text-[0.6875rem] font-semibold tracking-[0.1em] transition ${
 								y === year
 									? 'bg-[var(--accent)] text-white'
 									: 'text-[var(--ink-3)] hover:text-[var(--ink)]'
@@ -62,22 +62,22 @@ export function DisclosureTable({
 				</div>
 			</div>
 
-			<p aria-hidden='true' className='mt-4 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] sm:hidden'>
+			<p aria-hidden='true' className='mt-4 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] sm:hidden'>
 				Swipe for every quarter &rarr;
 			</p>
 			{/* `relative` keeps the ticks' screen-reader labels inside the scroll
 			    box; positioned outside it they widen the page. */}
 			<div className='relative mt-2 overflow-x-auto sm:mt-4'>
-				<table className='w-full min-w-[34rem] border-collapse text-[13.5px]'>
+				<table className='w-full min-w-[34rem] border-collapse text-[0.84375rem]'>
 					<thead>
 						<tr>
-							<th className='sticky left-0 z-[1] bg-[var(--paper)] py-2 pr-4 text-left font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+							<th className='sticky left-0 z-[1] bg-[var(--paper)] py-2 pr-4 text-left font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 								Document
 							</th>
 							{COLUMNS.map((c) => (
 								<th
 									key={c.key}
-									className='w-16 py-2 text-center font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'
+									className='w-16 py-2 text-center font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'
 								>
 									{c.label}
 								</th>

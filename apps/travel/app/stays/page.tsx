@@ -70,14 +70,14 @@ export default function StaysPage() {
 							<div className='grid content-start gap-7'>
 								<div>
 									<p className='bb-label'>Booking</p>
-									<p className='mt-3 text-[14px] leading-7 text-[var(--ink-2)]'>{entry.booking}</p>
+									<p className='mt-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{entry.booking}</p>
 								</div>
 
 								<GateList label='What to expect' items={entry.expect} />
 
 								<div>
 									<p className='bb-label'>When it fills up</p>
-									<p className='mt-3 text-[14px] leading-7 text-[var(--ink-2)]'>{entry.fillsUp}</p>
+									<p className='mt-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{entry.fillsUp}</p>
 								</div>
 							</div>
 						</div>
@@ -90,10 +90,10 @@ export default function StaysPage() {
 										<article key={stay.name} className='tv-card h-full'>
 											<span className='tv-kind'>{LODGING_KIND_LABEL[stay.kind]}</span>
 											<h3 className='item-title-lg mt-3'>{stay.name}</h3>
-											<p className='mt-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+											<p className='mt-1.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 												{stay.town}
 											</p>
-											<p className='mt-3.5 flex-1 text-[13.5px] leading-7 text-[var(--ink-2)]'>
+											<p className='mt-3.5 flex-1 text-[0.84375rem] leading-7 text-[var(--ink-2)]'>
 												{stay.note}
 											</p>
 										</article>

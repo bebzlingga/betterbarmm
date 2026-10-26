@@ -26,8 +26,8 @@ export const metadata: Metadata = {
    ============================================================ */
 
 /* One plain table style for the whole page. */
-const TABLE = 'w-full min-w-[34rem] border-collapse text-left text-[14px]'
-const HEAD = 'border-b border-[var(--ink)] text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
+const TABLE = 'w-full min-w-[34rem] border-collapse text-left text-[0.875rem]'
+const HEAD = 'border-b border-[var(--ink)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
 const TH = 'py-3 pr-4 font-semibold'
 const ROW = 'border-b border-[var(--rule-soft)] align-top transition-colors hover:bg-[var(--paper-2)]'
 /* Rows under a merged Level cell take no hover: the shade would cover one row and the merged cell. */
@@ -65,7 +65,7 @@ function Section({ id, lead, children }: { id: string; lead: string; children: R
 			<h2 id={id} className={H2}>
 				{TOC.find((item) => item.id === id)!.label}
 			</h2>
-			<p className='mt-5 text-[15px] leading-7 text-[var(--ink-2)]'>{lead}</p>
+			<p className='mt-5 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>{lead}</p>
 			{children}
 		</section>
 	)
@@ -85,13 +85,13 @@ export default function HowItWorksPage() {
 				id='introduction'
 				lead={`Below the Bangsamoro Government sit three levels of local government: the province, the city or municipality, and the barangay. In BARMM that is ${lguData.totals.provinces} provinces, ${lguData.totals.lgus} cities and municipalities and ${formatNumber(lguData.totals.barangays)} barangays.`}
 			>
-				<p className='mt-5 text-[15px] leading-7 text-[var(--ink-2)]'>
+				<p className='mt-5 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
 					Each one elects its own officials, passes its own budget and runs the services the Bangsamoro Local
 					Governance Code gives it. None takes orders from the level above on how to run its affairs. What
 					ties them together is money and oversight: the national and regional governments send shares down,
 					and each level checks that the one below it stays within its powers.
 				</p>
-				<p className='mt-5 text-[15px] leading-7 text-[var(--ink-2)]'>
+				<p className='mt-5 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
 					This page follows that story: who you elect at each level, what each one does for you, who runs it,
 					and what it may charge you. Where its money comes from and how its budget is made are on{' '}
 					<Link href='/local-budgets' className='rule-link'>
@@ -132,7 +132,7 @@ export default function HowItWorksPage() {
 						</tbody>
 					</table>
 				</div>
-				<p className='mt-6 text-[15px] leading-7 text-[var(--ink-2)]'>
+				<p className='mt-6 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
 					So a voter in BARMM fills two separate ballots: one for these local offices, on the national
 					local-election schedule, and one for the Bangsamoro Parliament.
 				</p>
@@ -141,7 +141,7 @@ export default function HowItWorksPage() {
 			{/* ---- What each level owes you ---- */}
 			<Section id='services' lead='Each level has its own job. Knowing which one handles what saves a wasted trip to the wrong office.'>
 				<div className='mt-8 overflow-x-auto'>
-					<table className='w-full border-collapse text-left text-[14px]'>
+					<table className='w-full border-collapse text-left text-[0.875rem]'>
 						<thead>
 							<tr className={HEAD}>
 								<th className={`${TH} w-32`}>Level</th>
@@ -155,7 +155,7 @@ export default function HowItWorksPage() {
 										{index === 0 ? (
 											<td rowSpan={rung.groups.length} className={`${TD} font-semibold text-[var(--ink)]`}>
 												{rung.level}
-												<span className='block text-[12.5px] font-normal text-[var(--ink-3)]'>
+												<span className='block text-[0.78125rem] font-normal text-[var(--ink-3)]'>
 													{formatNumber(rung.count)} in BARMM
 												</span>
 											</td>
@@ -199,7 +199,7 @@ export default function HowItWorksPage() {
 										) : null}
 										<td className={`${TD} font-medium text-[var(--ink)]`}>{post.title}</td>
 										<td className={TD}>{post.note}</td>
-										<td className={`${TD} text-[13px] text-[var(--ink-3)]`}>{post.detail ?? '—'}</td>
+										<td className={`${TD} text-[0.8125rem] text-[var(--ink-3)]`}>{post.detail ?? '—'}</td>
 									</tr>
 								)),
 							)}
@@ -208,12 +208,12 @@ export default function HowItWorksPage() {
 				</div>
 
 				<h3 className={H3}>Appointed offices</h3>
-				<p className='mt-3 text-[15px] leading-7 text-[var(--ink-2)]'>
+				<p className='mt-3 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
 					The department heads a governor or mayor appoints. The Code says which each level must have and
 					which it may add.
 				</p>
 				<AppointedOffices />
-				<p className='mt-6 text-[15px] leading-7 text-[var(--ink-2)]'>
+				<p className='mt-6 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
 					A barangay appoints a secretary and a treasurer, and has its lupon tagapamayapa for settling
 					disputes, barangay health workers, purok leaders and tanods: 1 for every 200 residents, never more
 					than 30 (Code ss. 413, 414).
@@ -241,10 +241,10 @@ export default function HowItWorksPage() {
 								<tr key={charge.what} className={ROW}>
 									<td className={`${TD} font-medium text-[var(--ink)]`}>
 										{charge.what}
-										<span className='block text-[12.5px] font-normal text-[var(--ink-3)]'>{charge.basis}</span>
+										<span className='block text-[0.78125rem] font-normal text-[var(--ink-3)]'>{charge.basis}</span>
 									</td>
 									<td className={TD}>{charge.rate}</td>
-									<td className={`${TD} text-[13px] text-[var(--ink-3)]`}>{charge.when}</td>
+									<td className={`${TD} text-[0.8125rem] text-[var(--ink-3)]`}>{charge.when}</td>
 								</tr>
 							))}
 						</tbody>

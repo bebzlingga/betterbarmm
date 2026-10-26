@@ -59,14 +59,14 @@ function Track({
 				<p className='bb-figure-sm mt-5 leading-none' style={{ color }}>
 					{seats}
 				</p>
-				<p className='mt-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+				<p className='mt-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 					of {total} seats
 				</p>
 
-				<h3 className='mt-6 text-[19px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+				<h3 className='mt-6 text-[1.1875rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 					{title}
 				</h3>
-				<p className='mt-2 font-mono text-[10px] font-semibold uppercase leading-tight tracking-[0.14em] text-[var(--ink-3)]'>
+				<p className='mt-2 font-mono text-[0.625rem] font-semibold uppercase leading-tight tracking-[0.14em] text-[var(--ink-3)]'>
 					{voterAction}
 				</p>
 
@@ -156,7 +156,7 @@ export default function Page() {
 							    masthead and its standfirst; at the lede's two rems it was a third
 							    voice at nearly headline size, and the three figures beside it
 							    were the quiet half of a row they are the point of. */}
-							<p className='max-w-[34em] text-[17px] leading-[1.55] text-pretty text-[var(--ink)]'>
+							<p className='max-w-[34em] text-[1.0625rem] leading-[1.55] text-pretty text-[var(--ink)]'>
 								{outcome.summary}
 							</p>
 
@@ -167,7 +167,7 @@ export default function Page() {
 									{ value: shortfall, label: 'Short of a majority' },
 								].map((fact) => (
 									<div key={fact.label} className='flex flex-col-reverse'>
-										<dt className='mt-2.5 font-mono text-[9px] font-semibold uppercase leading-tight tracking-[0.14em] text-[var(--ink-3)]'>
+										<dt className='mt-2.5 font-mono text-[0.5625rem] font-semibold uppercase leading-tight tracking-[0.14em] text-[var(--ink-3)]'>
 											{fact.label}
 										</dt>
 										<dd className='bb-figure-sm leading-none text-[var(--ink)]'>{fact.value}</dd>
@@ -178,7 +178,7 @@ export default function Page() {
 
 						<Link
 							href='/results'
-							className='mt-8 inline-block font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)] transition hover:text-[var(--accent-deep)]'
+							className='mt-8 inline-block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--accent)] transition hover:text-[var(--accent-deep)]'
 						>
 							Every seat, district and reserved seat →
 						</Link>
@@ -221,7 +221,7 @@ export default function Page() {
 						</p>
 						<Link
 							href='/candidates#parties'
-							className='mt-5 inline-block font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)] transition hover:text-[var(--accent-deep)]'
+							className='mt-5 inline-block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--accent)] transition hover:text-[var(--accent-deep)]'
 						>
 							Meet the {stats.regionalParties} parties →
 						</Link>
@@ -272,10 +272,10 @@ export default function Page() {
 								{election.sectoral_seat_distribution.map((item) => (
 									<StaggerItem key={item.sector} distance={10}>
 										<div className='flex items-baseline justify-between gap-4 border-b border-[var(--rule-soft)] py-2.5'>
-											<dt className='min-w-0 text-[13.5px] font-semibold leading-snug text-[var(--ink)]'>
+											<dt className='min-w-0 text-[0.84375rem] font-semibold leading-snug text-[var(--ink)]'>
 												{item.sector}
 											</dt>
-											<dd className='num shrink-0 text-[15px] font-bold leading-none text-[var(--ink)]'>
+											<dd className='num shrink-0 text-[0.9375rem] font-bold leading-none text-[var(--ink)]'>
 												{item.seats}
 											</dd>
 										</div>
@@ -327,7 +327,7 @@ export default function Page() {
 								</Link>
 								.
 							</p>
-							<p className='mt-6 font-mono text-[10px] font-semibold uppercase leading-6 tracking-[0.16em] text-[var(--ink-3)]'>
+							<p className='mt-6 font-mono text-[0.625rem] font-semibold uppercase leading-6 tracking-[0.16em] text-[var(--ink-3)]'>
 								Source:{' '}
 								<a
 									href='https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/92699'

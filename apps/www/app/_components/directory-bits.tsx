@@ -60,7 +60,7 @@ function mergeLines(lines: Line[]) {
 
 /** Emergency and service lines as a list: what the office is, its numbers to tap, and where they were read. */
 export function Lines({ lines, empty }: { lines: Line[]; empty: string }) {
-	if (!lines.length) return <p className='mt-3 text-[13.5px] text-[var(--ink-3)]'>{empty}</p>
+	if (!lines.length) return <p className='mt-3 text-[0.84375rem] text-[var(--ink-3)]'>{empty}</p>
 	return (
 		<ul className='mt-3 divide-y divide-[var(--rule-soft,var(--rule))] border-y border-[var(--rule)]'>
 			{mergeLines(lines).map((l) => {
@@ -69,10 +69,10 @@ export function Lines({ lines, empty }: { lines: Line[]; empty: string }) {
 					<li key={l.kind + l.name} className='flex gap-3 py-3'>
 						<Glyph size={16} weight='fill' className='mt-0.5 shrink-0 text-[var(--accent)]' aria-hidden='true' />
 						<div className='min-w-0 flex-1'>
-							<p className='text-[14px] font-semibold leading-snug'>
-								{l.name} <span className='ml-1 text-[12px] font-medium text-[var(--ink-3)]'>{LINE_LABEL[l.kind]}</span>
+							<p className='text-[0.875rem] font-semibold leading-snug'>
+								{l.name} <span className='ml-1 text-[0.75rem] font-medium text-[var(--ink-3)]'>{LINE_LABEL[l.kind]}</span>
 							</p>
-							<p className='mt-0.5 flex flex-wrap gap-x-3 gap-y-0.5 text-[13px]'>
+							<p className='mt-0.5 flex flex-wrap gap-x-3 gap-y-0.5 text-[0.8125rem]'>
 								{l.phones.map((p) => (
 									<a key={p} href={telHref(p)} className={`tabular-nums ${linkClass}`}>
 										{p}
@@ -82,7 +82,7 @@ export function Lines({ lines, empty }: { lines: Line[]; empty: string }) {
 						</div>
 						<span className='flex shrink-0 flex-col items-end gap-0.5 pt-0.5'>
 							{l.sources.map((src, i) => (
-								<a key={src} href={src} target='_blank' rel='noreferrer' className='inline-flex items-center gap-0.5 text-[11.5px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
+								<a key={src} href={src} target='_blank' rel='noreferrer' className='inline-flex items-center gap-0.5 text-[0.71875rem] text-[var(--ink-3)] hover:text-[var(--accent)]'>
 									Source{l.sources.length > 1 ? ` ${i + 1}` : ''} <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
 								</a>
 							))}
@@ -106,8 +106,8 @@ export function LguEmailBlock({ email, className = 'mt-8' }: { email: LguEmail |
 	if (!email) return null
 	return (
 		<div className={className}>
-			<p className='mb-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Email</p>
-			<ul className='space-y-1 text-[14px] leading-6'>
+			<p className='mb-1.5 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Email</p>
+			<ul className='space-y-1 text-[0.875rem] leading-6'>
 				{email.emails.map((e) => (
 					<li key={e} className='flex gap-2'>
 						<EnvelopeSimpleIcon size={15} className='mt-1 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
@@ -117,7 +117,7 @@ export function LguEmailBlock({ email, className = 'mt-8' }: { email: LguEmail |
 					</li>
 				))}
 			</ul>
-			<a href={email.source} target='_blank' rel='noreferrer' className='mt-1 inline-flex items-center gap-0.5 text-[12px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
+			<a href={email.source} target='_blank' rel='noreferrer' className='mt-1 inline-flex items-center gap-0.5 text-[0.75rem] text-[var(--ink-3)] hover:text-[var(--accent)]'>
 				{email.office ?? 'Source'} <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
 			</a>
 		</div>

@@ -66,7 +66,7 @@ export function SectorBars({ items }: { items: FilterOption[] }) {
 							/>
 						</dd>
 
-						<dd className='num text-[13px] font-semibold text-[var(--ink)]'>{item.count}</dd>
+						<dd className='num text-[0.8125rem] font-semibold text-[var(--ink)]'>{item.count}</dd>
 					</div>
 				)
 			})}

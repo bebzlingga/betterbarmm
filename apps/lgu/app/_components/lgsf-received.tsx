@@ -20,14 +20,14 @@ export function LgsfReceived({ unitKey, name }: { unitKey: string; name: string 
 				<h2 className='font-[family-name:var(--font-display)] text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>
 					Support fund received
 				</h2>
-				<Link href='/lgsf' className='rule-link text-[12.5px] text-[var(--ink-3)]'>
+				<Link href='/lgsf' className='rule-link text-[0.78125rem] text-[var(--ink-3)]'>
 					Every project in BARMM
 				</Link>
 			</div>
 
 			{projects.length ? (
 				<>
-					<p className='mt-3 text-[13px] text-[var(--ink-3)]'>
+					<p className='mt-3 text-[0.8125rem] text-[var(--ink-3)]'>
 						<span className='num font-semibold text-[var(--ink)]'>{projects.length}</span>{' '}
 						{projects.length === 1 ? 'project' : 'projects'} from DBM&rsquo;s Local Government Support Fund ·{' '}
 						<span className='num font-semibold text-[var(--ink)]'>{peso(allotted)}</span> allotted ·{' '}
@@ -37,15 +37,15 @@ export function LgsfReceived({ unitKey, name }: { unitKey: string; name: string 
 						{projects.map((p, i) => (
 							<li key={i} className='flex items-start justify-between gap-6 border-b border-[var(--rule)] py-4'>
 								<div className='min-w-0'>
-									<p className='text-[14.5px] font-semibold leading-6 text-[var(--ink)]'>{p.project}</p>
-									<p className='mt-1 text-[12px] text-[var(--ink-3)]'>
+									<p className='text-[0.90625rem] font-semibold leading-6 text-[var(--ink)]'>{p.project}</p>
+									<p className='mt-1 text-[0.75rem] text-[var(--ink-3)]'>
 										FY {p.year} · {p.program}
 										{p.barangay ? ` · Barangay ${p.barangay}` : ''}
 									</p>
 								</div>
 								<div className='shrink-0 text-right'>
-									<p className='num text-[14.5px] text-[var(--ink)]'>{p.saro == null ? '—' : peso(p.saro)}</p>
-									<p className='num mt-1 text-[12px] text-[var(--ink-3)]'>
+									<p className='num text-[0.90625rem] text-[var(--ink)]'>{p.saro == null ? '—' : peso(p.saro)}</p>
+									<p className='num mt-1 text-[0.75rem] text-[var(--ink-3)]'>
 										{p.nca == null ? 'Not yet released' : `${peso(p.nca)} released`}
 									</p>
 								</div>
@@ -54,11 +54,11 @@ export function LgsfReceived({ unitKey, name }: { unitKey: string; name: string 
 					</ul>
 				</>
 			) : (
-				<p className='mt-3 text-[14px] leading-6 text-[var(--ink-3)]'>
+				<p className='mt-3 text-[0.875rem] leading-6 text-[var(--ink-3)]'>
 					DBM lists no Local Government Support Fund project for {name} from FY 2022 to 2026.
 				</p>
 			)}
-			<p className='mt-4 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+			<p className='mt-4 text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
 				These are DBM&rsquo;s. The Bangsamoro budget has a support fund for local governments too, but who
 				receives it has not been published yet.{' '}
 				<Link href='/lgsf' className='rule-link'>

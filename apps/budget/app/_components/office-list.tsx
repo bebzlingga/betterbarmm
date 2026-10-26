@@ -79,7 +79,7 @@ export function OfficeList({ offices }: { offices: Office[] }) {
 						autoComplete='off'
 						spellCheck={false}
 						placeholder='Health, education, roads…'
-						className='min-w-0 flex-1 bg-transparent text-[14.5px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+						className='min-w-0 flex-1 bg-transparent text-[0.90625rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 					/>
 				</label>
 
@@ -143,7 +143,7 @@ export function OfficeList({ offices }: { offices: Office[] }) {
 							<p className='money text-[1.05rem] font-bold tracking-[-0.02em] text-[var(--ink)]'>
 								{peso(office.totals.total)}
 							</p>
-							<p className='money mt-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>
+							<p className='money mt-1.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>
 								{percent(office.share)} of the budget
 							</p>
 						</div>
@@ -151,7 +151,7 @@ export function OfficeList({ offices }: { offices: Office[] }) {
 				))}
 
 				{shown.length === 0 ? (
-					<p className='border-t border-[var(--rule)] py-16 text-center text-[13.5px] leading-7 text-[var(--ink-3)]'>
+					<p className='border-t border-[var(--rule)] py-16 text-center text-[0.84375rem] leading-7 text-[var(--ink-3)]'>
 						No office matches “{query.trim()}”
 						{group ? ' in that group' : ''}. The Act names offices formally — try “education” rather
 						than “schools”, or search the{' '}

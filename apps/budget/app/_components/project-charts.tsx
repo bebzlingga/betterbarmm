@@ -65,7 +65,7 @@ function Chart({
 			<ul className='space-y-3 sm:hidden'>
 				{rows.map((row, index) => (
 					<li key={row.key} className='grid grid-cols-[minmax(0,7.5rem)_minmax(0,1fr)_auto] items-center gap-3'>
-						<span className='text-[12px] font-semibold leading-tight text-[var(--ink-2)]'>{row.name}</span>
+						<span className='text-[0.75rem] font-semibold leading-tight text-[var(--ink-2)]'>{row.name}</span>
 						<span className='h-3'>
 							<span
 								className='block h-full rounded-r-[4px] bg-[var(--accent)]'
@@ -75,9 +75,9 @@ function Chart({
 								}}
 							/>
 						</span>
-						<span className='money text-right font-mono text-[10.5px] font-semibold text-[var(--ink-2)]'>
+						<span className='money text-right font-mono text-[0.65625rem] font-semibold text-[var(--ink-2)]'>
 							{pesoShort(row.total)}
-							<span className='block text-[9.5px] text-[var(--ink-mute)]'>{formatNumber(row.count)}</span>
+							<span className='block text-[0.59375rem] text-[var(--ink-mute)]'>{formatNumber(row.count)}</span>
 						</span>
 					</li>
 				))}
@@ -102,10 +102,10 @@ function Chart({
 								<div className='relative h-12 w-full'>
 									<div className='pointer-events-none absolute inset-x-0 bottom-0 flex justify-center opacity-0 transition-opacity duration-150 group-hover/col:opacity-100'>
 										<p className='whitespace-nowrap bg-[var(--ink)] px-3 py-2 text-center'>
-											<span className='block text-[11px] font-semibold leading-tight text-[var(--paper)]'>
+											<span className='block text-[0.6875rem] font-semibold leading-tight text-[var(--paper)]'>
 												{row.name}
 											</span>
-											<span className='money mt-0.5 block font-mono text-[10px] text-[var(--paper)] opacity-75'>
+											<span className='money mt-0.5 block font-mono text-[0.625rem] text-[var(--paper)] opacity-75'>
 												{peso(row.total)} · {formatNumber(row.count)}
 											</span>
 										</p>
@@ -131,11 +131,11 @@ function Chart({
 								    in the hover panel and in the accessible text, in full. */}
 								<p
 									title={row.name}
-									className='mt-3 w-full truncate text-center text-[10px] font-semibold tracking-[-0.01em] text-[var(--ink-2)]'
+									className='mt-3 w-full truncate text-center text-[0.625rem] font-semibold tracking-[-0.01em] text-[var(--ink-2)]'
 								>
 									{row.name}
 								</p>
-								<p className='money mt-1 text-center font-mono text-[9.5px] font-semibold uppercase tracking-[0.08em] text-[var(--ink-mute)]'>
+								<p className='money mt-1 text-center font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.08em] text-[var(--ink-mute)]'>
 									{formatNumber(row.count)}
 								</p>
 
@@ -169,7 +169,7 @@ function Reading({
 			/* Smaller than it was (user decision). At 15.5px on 1.95 this read as the
 			   page's own prose; it is a caption to the chart beside it, and a caption
 			   that outweighs its figure is arguing with it. */
-			className={`text-[13.5px] leading-[1.8] text-[var(--ink-2)] ${className}`}
+			className={`text-[0.84375rem] leading-[1.8] text-[var(--ink-2)] ${className}`}
 		>
 			<strong className='font-semibold text-[var(--ink)]'>{headline}</strong> {children}
 		</p>

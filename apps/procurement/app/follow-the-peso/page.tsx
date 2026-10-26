@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 		'Each Bangsamoro ministry and office: what the budget gave it to buy with, what it put out to bid on PhilGEPS, and what PhilGEPS records as awarded.',
 }
 
-const P = 'mt-4 text-[15px] leading-7 text-[var(--ink-2)]'
+const P = 'mt-4 text-[0.9375rem] leading-7 text-[var(--ink-2)]'
 
 export default function FollowThePesoPage() {
 	return (

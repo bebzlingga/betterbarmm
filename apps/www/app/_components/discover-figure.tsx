@@ -193,12 +193,12 @@ export function PhotoFigure({
           sentence that suddenly shouts a photographer's name — the credit is a
           different kind of statement and wants its own line. */}
       <figcaption className='mt-3 border-t border-[var(--brass-line)] pt-3'>
-        <span className='block text-[13px] leading-[var(--leading-body)] text-[var(--ink-2)]'>{photo.caption}</span>
+        <span className='block text-[0.8125rem] leading-[var(--leading-body)] text-[var(--ink-2)]'>{photo.caption}</span>
         <a
           href={photo.source}
           target='_blank'
           rel='noreferrer'
-          className='mt-1.5 block font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
+          className='mt-1.5 block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
         >
           {photo.credit} · {photo.license}
         </a>

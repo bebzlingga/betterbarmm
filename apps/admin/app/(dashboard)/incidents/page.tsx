@@ -121,7 +121,7 @@ export default async function IncidentsPage({ searchParams }: { searchParams: Pr
               key={t}
               href={`/incidents?${new URLSearchParams({ ...(t !== "all" ? { tab: t } : {}), ...(q ? { q } : {}) })}`}
               aria-current={t === tab ? "page" : undefined}
-              className={`rounded-md px-3 py-1.5 text-[13px] font-medium transition ${t === tab ? "bg-[var(--surface)] text-[var(--ink)] shadow-[var(--shadow-sm)]" : "text-[var(--ink-3)] hover:text-[var(--ink)]"}`}
+              className={`rounded-md px-3 py-1.5 text-[0.8125rem] font-medium transition ${t === tab ? "bg-[var(--surface)] text-[var(--ink)] shadow-[var(--shadow-sm)]" : "text-[var(--ink-3)] hover:text-[var(--ink)]"}`}
             >
               {label} <span className="tabular-nums text-[var(--ink-mute)]">{counts[t]}</span>
             </Link>
@@ -164,7 +164,7 @@ export default async function IncidentsPage({ searchParams }: { searchParams: Pr
                       <td className="whitespace-nowrap align-top tabular-nums text-[var(--ink-3)]">{a.date}</td>
                       <td className="max-w-[40rem] align-top">
                         <p className="font-medium">{a.title}</p>
-                        <p className="mt-0.5 text-[12.5px] text-[var(--ink-3)]">
+                        <p className="mt-0.5 text-[0.78125rem] text-[var(--ink-3)]">
                           {a.kind} · {place(a)} · {a.sources.length} {a.sources.length === 1 ? "source" : "sources"}
                         </p>
                         <p className="mt-1.5 flex flex-wrap gap-1.5">

@@ -317,11 +317,11 @@ function Layers({ hazard, view, facilities, kinds, heat, selected, focus, me, on
 				<button
 					type='button'
 					onClick={() => map?.fitBounds(BOUNDS, { padding: 24, duration: 800 })}
-					className='flex h-8 cursor-pointer items-center rounded-md border border-[var(--rule)] bg-[var(--paper)] px-3 text-[12px] font-semibold text-[var(--ink)] shadow-sm transition hover:text-[var(--accent)]'
+					className='flex h-8 cursor-pointer items-center rounded-md border border-[var(--rule)] bg-[var(--paper)] px-3 text-[0.75rem] font-semibold text-[var(--ink)] shadow-sm transition hover:text-[var(--accent)]'
 				>
 					Whole region
 				</button>
-				<div role='group' aria-label='Map view' className='flex h-8 overflow-hidden rounded-md border border-[var(--rule)] bg-[var(--paper)] text-[12px] font-semibold shadow-sm'>
+				<div role='group' aria-label='Map view' className='flex h-8 overflow-hidden rounded-md border border-[var(--rule)] bg-[var(--paper)] text-[0.75rem] font-semibold shadow-sm'>
 					{(['2D', '3D'] as const).map((m) => {
 						const on = (m === '3D') === three
 						return (
@@ -351,7 +351,7 @@ function Tip({ hover, hazard, kinds }: { hover: Hover; hazard: HazardId | null; 
 		const k = kinds.find((x) => x.id === hover.kind)
 		body = (
 			<>
-				<p className='text-[10.5px] font-semibold uppercase tracking-[0.1em]' style={{ color: k?.color }}>
+				<p className='text-[0.65625rem] font-semibold uppercase tracking-[0.1em]' style={{ color: k?.color }}>
 					{k?.label}
 				</p>
 				<p className='font-semibold leading-snug'>{hover.name}</p>
@@ -364,11 +364,11 @@ function Tip({ hover, hazard, kinds }: { hover: Hover; hazard: HazardId | null; 
 		body = (
 			<>
 				<p className='font-semibold leading-snug'>{String(p.name)}</p>
-				<p className='text-[11.5px] text-[var(--ink-3)]'>
+				<p className='text-[0.71875rem] text-[var(--ink-3)]'>
 					{String(p.town)}, {PROVINCE_NAMES[String(p.prov)] ?? String(p.prov)}
 				</p>
 				{hz ? (
-					<p className='mt-1 text-[12px]'>
+					<p className='mt-1 text-[0.75rem]'>
 						{hz.id === 'flood' && p.prov === 'tawi-tawi' ? (
 							<span className='text-[var(--ink-3)]'>No flood model for Tawi-Tawi</span>
 						) : share > 0 ? (
@@ -380,14 +380,14 @@ function Tip({ hover, hazard, kinds }: { hover: Hover; hazard: HazardId | null; 
 						)}
 					</p>
 				) : null}
-				<p className='mt-1 text-[11px] text-[var(--ink-3)]'>Click for its hazards and nearest facilities</p>
+				<p className='mt-1 text-[0.6875rem] text-[var(--ink-3)]'>Click for its hazards and nearest facilities</p>
 			</>
 		)
 	}
 	// Kept inside the canvas: it flips to the pointer's left or above it near the right and bottom edges.
 	return (
 		<div
-			className='pointer-events-none absolute z-20 w-max max-w-[16rem] rounded-md border border-[var(--rule)] bg-[var(--paper)] px-3 py-2 text-[12.5px] text-[var(--ink)] shadow-[0_12px_30px_-14px_rgba(0,0,0,0.45)]'
+			className='pointer-events-none absolute z-20 w-max max-w-[16rem] rounded-md border border-[var(--rule)] bg-[var(--paper)] px-3 py-2 text-[0.78125rem] text-[var(--ink)] shadow-[0_12px_30px_-14px_rgba(0,0,0,0.45)]'
 			style={{ left: hover.x, top: hover.y, transform: `translate(${hover.flipX ? 'calc(-100% - 14px)' : '14px'}, ${hover.flipY ? 'calc(-100% - 14px)' : '14px'})` }}
 		>
 			{body}
@@ -407,7 +407,7 @@ export default function PreparednessMapCanvas(props: Props) {
 	useState(() => (webgl ? registerPmtiles() : null))
 	if (!webgl)
 		return (
-			<div className='flex h-full w-full items-center justify-center bg-[var(--paper-2)] p-8 text-center text-[14px] leading-[1.7] text-[var(--ink-3)]'>
+			<div className='flex h-full w-full items-center justify-center bg-[var(--paper-2)] p-8 text-center text-[0.875rem] leading-[1.7] text-[var(--ink-3)]'>
 				The map needs WebGL2, which this browser does not provide. Pick a place beside it to see its hazards and nearest facilities.
 			</div>
 		)

@@ -162,7 +162,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 							<ThemeToggle />
 							{/* Phones have no room for it in the strip; the wrapper hides it. */}
 							<span className='hidden self-stretch sm:flex'>
-								<Link href='/contribute' className='bb-btn bb-btn-accent !px-4 !py-0 !text-[9.5px]'>
+								<Link href='/contribute' className='bb-btn bb-btn-accent !px-4 !py-0 !text-[0.59375rem]'>
 									<HandHeartIcon size={13} weight='fill' aria-hidden='true' />
 									Contribute
 								</Link>
@@ -263,7 +263,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 							) : null}
 
 							{/* Map hidden for now — restore with the imports above.
-							<MapDialog className='bb-btn bb-btn-ghost hidden cursor-pointer !px-4 !py-2.5 !text-[10px] md:inline-flex'>
+							<MapDialog className='bb-btn bb-btn-ghost hidden cursor-pointer !px-4 !py-2.5 !text-[0.625rem] md:inline-flex'>
 								<MapTrifoldIcon size={15} weight='bold' aria-hidden='true' />
 								Map
 							</MapDialog> */}
@@ -272,7 +272,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 								<Magnetic strength={0.22} className='hidden sm:inline-flex'>
 									<Link
 										href='/contribute'
-										className='bb-btn bb-btn-accent !px-4 !py-2.5 !text-[10px]'
+										className='bb-btn bb-btn-accent !px-4 !py-2.5 !text-[0.625rem]'
 									>
 										<HandHeartIcon size={15} weight='fill' aria-hidden='true' />
 										Contribute

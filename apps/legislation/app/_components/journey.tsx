@@ -176,7 +176,7 @@ export function JourneyList({ stages }: { stages: JourneyStage[] }) {
                 {/* "Now" rides at the end of the stage name, so it reads as part
 							    of the line rather than as a second row over the rail. */}
                 <p
-                  className={`hyphens-auto break-words text-[13px] leading-snug ${
+                  className={`hyphens-auto break-words text-[0.8125rem] leading-snug ${
                     stage.reached
                       ? "font-medium text-[var(--ink)]"
                       : "text-[var(--ink-display)]"

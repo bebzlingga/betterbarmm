@@ -263,6 +263,15 @@ html {
      want smoothing can ask for it themselves. */
 }
 
+/* Desktop reads a notch smaller. Type, spacing and the page measure
+   (.bb-container) are all in rem, so this one rule scales them together; a
+   percentage leaves the reader's own browser setting in charge. */
+@media (min-width: 1024px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
 body {
   margin: 0;
   min-height: 100%;
@@ -438,7 +447,7 @@ figcaption {
    title is not a heading over an answer — it is the record, and the whole row
    exists to be scanned for it, so it takes the step the copy beneath it does
    not. A modifier rather than a utility at the call site: these primitives are
-   unlayered, so `text-[16px]` on the element would lose to the size set here.
+   unlayered, so `text-[1rem]` on the element would lose to the size set here.
 
    Fluid, and a real step above the row's own furniture. At a flat 18px the
    official title — the one thing a reader is scanning a page of four hundred
@@ -474,7 +483,7 @@ figcaption {
 .section-lead,
 .copy,
 .item-title {
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 /* The same size and leading the rest of the estate reads at — `--leading-body`

@@ -259,7 +259,7 @@ export default function AboutPage() {
 										aria-hidden='true'
 										className={`-ml-6 hidden h-px flex-1 bg-[var(--rule)] lg:block ${index === 0 ? 'lg:invisible' : ''}`}
 									/>
-									<span className='num inline-flex size-8 shrink-0 items-center justify-center rounded-full border border-[var(--rule)] bg-[var(--paper)] text-[11px] font-bold text-[var(--ink-3)]'>
+									<span className='num inline-flex size-8 shrink-0 items-center justify-center rounded-full border border-[var(--rule)] bg-[var(--paper)] text-[0.6875rem] font-bold text-[var(--ink-3)]'>
 										{String(index + 1).padStart(2, '0')}
 									</span>
 									<span
@@ -278,7 +278,7 @@ export default function AboutPage() {
 								    tones are reserved for stages. */}
 								<span className='badge badge-plain badge-treatment mt-3'>{item.status}</span>
 
-								<p className='mt-3 text-[15px] leading-[1.7] text-[var(--ink-2)]'>{item.rule}</p>
+								<p className='mt-3 text-[0.9375rem] leading-[1.7] text-[var(--ink-2)]'>{item.rule}</p>
 							</div>
 						</Reveal>
 					))}
@@ -311,7 +311,7 @@ export default function AboutPage() {
 										{/* A coverage range is a figure, not a sentence — "BAA 1–94
 										    (2019–2026), complete" — so it takes the interface face
 										    rather than the reading one. */}
-										<p className='font-title mt-2 text-[13px] text-[var(--ink-3)]'>
+										<p className='font-title mt-2 text-[0.8125rem] text-[var(--ink-3)]'>
 											{dataset.metadata.coverage}
 										</p>
 									</div>
@@ -320,13 +320,13 @@ export default function AboutPage() {
 										{dataset.metadata.knownGaps.length > 0 ? (
 											<ul className='grid gap-2'>
 												{dataset.metadata.knownGaps.map((gap, gapIndex) => (
-													<li key={gapIndex} className='text-[15px] leading-[1.7] text-[var(--ink-2)]'>
+													<li key={gapIndex} className='text-[0.9375rem] leading-[1.7] text-[var(--ink-2)]'>
 														{gap}
 													</li>
 												))}
 											</ul>
 										) : (
-											<p className='text-[15px] leading-[1.7] text-[var(--ink-3)]'>
+											<p className='text-[0.9375rem] leading-[1.7] text-[var(--ink-3)]'>
 												No gaps recorded for this dataset.
 											</p>
 										)}
@@ -385,7 +385,7 @@ export default function AboutPage() {
 														{count.toLocaleString()}
 													</span>
 												</div>
-												<p className='mt-3 text-[15px] leading-[1.7] text-[var(--ink-3)]'>
+												<p className='mt-3 text-[0.9375rem] leading-[1.7] text-[var(--ink-3)]'>
 													{sectorDefinitions[value] ??
 														'A grouping label applied during classification. Check the official title for the exact scope.'}
 												</p>

@@ -103,7 +103,7 @@ export function DiscoverHero({
 						<Rise distance={10}>
 							<Link
 								href={backHref}
-								className='inline-flex items-center gap-2 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-white/70 transition hover:text-white'
+								className='inline-flex items-center gap-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-white/70 transition hover:text-white'
 							>
 								<ArrowLeftIcon className='size-3.5' aria-hidden='true' />
 								{backLabel}
@@ -112,7 +112,7 @@ export function DiscoverHero({
 					) : null}
 
 					<Rise delay={0.06} distance={12}>
-						<p className='mt-8 flex items-center gap-3 font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-white/80'>
+						<p className='mt-8 flex items-center gap-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-white/80'>
 							<span className='h-px w-8 bg-[var(--brass)]' aria-hidden='true' />
 							{kicker}
 						</p>
@@ -139,7 +139,7 @@ export function DiscoverHero({
 						    pulls whatever follows up into the headline's descender band. At
 						    display size that is around 16px of overlap, which is what this
 						    gives back. */}
-						<p className='bb-measure mt-4 text-base leading-[var(--leading-body)] text-white/80 sm:text-[16px]'>
+						<p className='bb-measure mt-4 text-base leading-[var(--leading-body)] text-white/80 sm:text-[1rem]'>
 							{standfirst}
 						</p>
 					</Rise>
@@ -149,7 +149,7 @@ export function DiscoverHero({
 							<div className='mt-10 flex flex-wrap items-center gap-x-8 gap-y-4'>
 								<a
 									href={scrollTo}
-									className='inline-flex items-center gap-3 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-white/75 transition hover:text-white'
+									className='inline-flex items-center gap-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-white/75 transition hover:text-white'
 								>
 									<span className='bb-cue flex size-9 items-center justify-center rounded-full border border-white/35'>
 										<ArrowDownIcon className='size-3.5' aria-hidden='true' />

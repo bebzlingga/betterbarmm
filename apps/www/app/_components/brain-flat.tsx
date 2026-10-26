@@ -345,7 +345,7 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, onHover, onPick,
 							textAnchor={n.anchor}
 							// In columns a label crosses the links beside it; a halo of the ground keeps it legible.
 							{...(mode === 'columns' ? { stroke: '#1f070b', strokeWidth: 3.5, strokeLinejoin: 'round' as const, paintOrder: 'stroke' } : {})}
-							className={n.kind === 'workspace' ? 'fill-white text-[14px] font-bold' : n.kind === 'dataset' ? 'fill-[#f3dcae] text-[11.5px]' : 'fill-[#a9c6c6] text-[11px]'}
+							className={n.kind === 'workspace' ? 'fill-white text-[0.875rem] font-bold' : n.kind === 'dataset' ? 'fill-[#f3dcae] text-[0.71875rem]' : 'fill-[#a9c6c6] text-[0.6875rem]'}
 						>
 							{n.label}
 						</text>

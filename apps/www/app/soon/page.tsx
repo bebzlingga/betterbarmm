@@ -71,7 +71,7 @@ export default function SoonPage() {
 				<div className='bb-container relative flex flex-col gap-6 py-[clamp(3.75rem,7vw,6.5rem)] lg:flex-row lg:items-center lg:justify-between lg:gap-12'>
 					<div className='max-w-[40rem]'>
 						<h2 className='bb-display-sm text-[var(--ink)]'>Want to know when it opens?</h2>
-						<p className='mt-3 text-[15px] leading-7 text-[var(--ink-2)]'>
+						<p className='mt-3 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
 							New workspaces are announced on our Facebook page first. Or write to us, and tell us what you would most like to
 							see in it.
 						</p>

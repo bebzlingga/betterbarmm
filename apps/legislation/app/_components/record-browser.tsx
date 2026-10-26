@@ -294,7 +294,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 								)}
 								Filters
 								{activeCount > 0 ? (
-									<span className='num inline-flex size-[18px] items-center justify-center rounded-full bg-[var(--ink)] text-[11px] text-[var(--paper)]'>
+									<span className='num inline-flex size-[18px] items-center justify-center rounded-full bg-[var(--ink)] text-[0.6875rem] text-[var(--paper)]'>
 										{activeCount}
 									</span>
 								) : null}
@@ -463,7 +463,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 								<button
 									type='button'
 									onClick={clearAll}
-									className='w-fit cursor-pointer text-[13px] text-[var(--ink-3)] underline decoration-[var(--rule)] underline-offset-4 transition hover:text-[var(--ink)] hover:decoration-[var(--accent)]'
+									className='w-fit cursor-pointer text-[0.8125rem] text-[var(--ink-3)] underline decoration-[var(--rule)] underline-offset-4 transition hover:text-[var(--ink)] hover:decoration-[var(--accent)]'
 								>
 									Clear search and filters
 								</button>
@@ -492,7 +492,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 								>
 									<div className='min-w-0'>
 										<div className='flex flex-wrap items-center gap-x-2 gap-y-1.5'>
-											<span className='num text-[13px] font-medium text-[var(--ink-3)]'>
+											<span className='num text-[0.8125rem] font-medium text-[var(--ink-3)]'>
 												{record.numberLabel}
 												{/* A bill that passed is still the same measure under a new
 												    number, so the act rides in the bill's own designation
@@ -636,7 +636,7 @@ function Pagination({
 				event.preventDefault()
 				onGo(n)
 			}}
-			className={`num inline-flex h-9 min-w-9 items-center justify-center border px-2.5 text-[13px] transition ${
+			className={`num inline-flex h-9 min-w-9 items-center justify-center border px-2.5 text-[0.8125rem] transition ${
 				n === current && !aria
 					? 'border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)]'
 					: 'border-[var(--rule)] text-[var(--ink-2)] hover:border-[var(--ink)] hover:text-[var(--ink)]'

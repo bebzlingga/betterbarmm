@@ -76,7 +76,7 @@ export function WorksExplorer({
 				<Select label='Sort' value={sort} onChange={(v) => reset(() => setSort(v))} options={[['amount', 'Largest first'], ['year', 'Newest first']]} />
 			</div>
 
-			<div className='mb-2 flex flex-wrap items-center justify-between gap-x-6 gap-y-2 border-y border-[var(--rule-soft)] py-3 text-[13px] text-[var(--ink-3)]'>
+			<div className='mb-2 flex flex-wrap items-center justify-between gap-x-6 gap-y-2 border-y border-[var(--rule-soft)] py-3 text-[0.8125rem] text-[var(--ink-3)]'>
 				<a href={`/api/works/csv?${params}`} className='rule-link font-semibold text-[var(--ink)]' download>
 					Download CSV
 				</a>
@@ -97,11 +97,11 @@ export function WorksExplorer({
 				{data?.rows.map((w) => (
 					<li key={w.id} className='grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-5 border-b border-[var(--rule)] py-4 sm:gap-x-16'>
 						<div className='min-w-0'>
-							<p className='font-[family-name:var(--font-display)] text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
+							<p className='font-[family-name:var(--font-display)] text-[0.59375rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
 								{w.kinds.join(' · ') || 'Works'}
 							</p>
-							<p className='mt-1 text-[14.5px] font-semibold leading-6 text-[var(--ink)]'>{w.name}</p>
-							<p className='mt-1 text-[12px] leading-5 text-[var(--ink-3)]'>
+							<p className='mt-1 text-[0.90625rem] font-semibold leading-6 text-[var(--ink)]'>{w.name}</p>
+							<p className='mt-1 text-[0.75rem] leading-5 text-[var(--ink-3)]'>
 								{`FY ${w.year} · `}
 								{w.town && w.area ? (
 									<a href={`${LGU}/${w.area}/${w.town.slug}`} className='rule-link'>
@@ -113,7 +113,7 @@ export function WorksExplorer({
 								{w.sourcePage ? ` · Act page ${w.sourcePage}` : ''}
 							</p>
 							{w.notice ? (
-								<p className='mt-2 text-[12.5px] leading-5 text-[var(--ink-2)]'>
+								<p className='mt-2 text-[0.78125rem] leading-5 text-[var(--ink-2)]'>
 									Likely bid notice{' '}
 									<a href={`${PROC}/notices?q=${encodeURIComponent(w.notice.ref)}`} className='rule-link font-semibold'>
 										{w.notice.ref}
@@ -122,13 +122,13 @@ export function WorksExplorer({
 								</p>
 							) : null}
 						</div>
-						<p className='num text-right text-[16px] font-semibold text-[var(--ink)]'>{peso(w.amount)}</p>
+						<p className='num text-right text-[1rem] font-semibold text-[var(--ink)]'>{peso(w.amount)}</p>
 					</li>
 				))}
 			</ul>
 
 			{data && data.pages > 1 ? (
-				<div className='mt-6 flex items-center justify-end gap-3 text-[13px] text-[var(--ink-3)]'>
+				<div className='mt-6 flex items-center justify-end gap-3 text-[0.8125rem] text-[var(--ink-3)]'>
 					<button type='button' disabled={page <= 1} onClick={() => setPage((p) => p - 1)} className='inline-flex size-9 cursor-pointer items-center justify-center border border-[var(--rule)] disabled:cursor-default disabled:opacity-40' aria-label='Previous page'>
 						<CaretLeftIcon size={14} />
 					</button>

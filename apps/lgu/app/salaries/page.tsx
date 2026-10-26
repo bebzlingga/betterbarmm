@@ -166,9 +166,9 @@ const TOC: TocItem[] = [
 
 const H2 = 'scroll-mt-32 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
 const H3 = 'scroll-mt-32 mt-10 text-[1.1rem] font-semibold tracking-[-0.01em] text-[var(--ink)]'
-const P = 'mt-5 text-[15px] leading-7 text-[var(--ink-2)]'
-const TABLE = 'w-full min-w-[34rem] border-collapse text-left text-[14px]'
-const HEAD = 'border-b border-[var(--ink)] text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
+const P = 'mt-5 text-[0.9375rem] leading-7 text-[var(--ink-2)]'
+const TABLE = 'w-full min-w-[34rem] border-collapse text-left text-[0.875rem]'
+const HEAD = 'border-b border-[var(--ink)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
 const TH = 'py-3 pr-4 font-semibold'
 const ROW = 'border-b border-[var(--rule-soft)] align-top transition-colors hover:bg-[var(--paper-2)]'
 const TD = 'py-3.5 pr-4 leading-6 text-[var(--ink-2)]'
@@ -190,7 +190,7 @@ function List({ items }: { items: string[] }) {
 	return (
 		<ul className='mt-4'>
 			{items.map((item) => (
-				<li key={item} className='border-b border-[var(--rule-soft)] py-3 text-[15px] leading-7 text-[var(--ink-2)]'>
+				<li key={item} className='border-b border-[var(--rule-soft)] py-3 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
 					{item}
 				</li>
 			))}
@@ -248,7 +248,7 @@ export default function SalariesPage() {
 						figure adds the two bonuses, PERA and the other yearly grants below, each at its ceiling.
 					</p>
 					<div className='mt-6 overflow-x-auto'>
-						<table className='w-full min-w-[44rem] border-collapse text-left text-[14px]'>
+						<table className='w-full min-w-[44rem] border-collapse text-left text-[0.875rem]'>
 							<thead>
 								<tr className={HEAD}>
 									<th className={TH}>Position</th>
@@ -263,7 +263,7 @@ export default function SalariesPage() {
 									<tr key={row.position} className={ROW}>
 										<td className={`${TD} font-medium text-[var(--ink)]`}>
 											{row.position}
-											<span className='block text-[12.5px] font-normal text-[var(--ink-3)]'>
+											<span className='block text-[0.78125rem] font-normal text-[var(--ink-3)]'>
 												{row.level} · {row.note ? `${row.note} · ` : ''}Code {row.cite}
 											</span>
 										</td>
@@ -282,7 +282,7 @@ export default function SalariesPage() {
 							</tbody>
 						</table>
 					</div>
-					<p className='mt-4 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+					<p className='mt-4 text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
 						Salary is step 1 of the 2026 schedule (Executive Order 64, s. 2024, third tranche); a unit may move to it
 						only after a year on the 2025 rates, so many still pay less. RATA is the representation and the
 						transportation allowance together, at the first class rate (DBM LBC 157); a city counts as a component
@@ -311,7 +311,7 @@ export default function SalariesPage() {
 									<tr key={row.benefit} className={ROW}>
 										<td className={`${TD} font-medium text-[var(--ink)]`}>{row.benefit}</td>
 										<td className={TD}>{row.amount}</td>
-										<td className={`${TD} text-[13px] text-[var(--ink-3)]`}>{row.source}</td>
+										<td className={`${TD} text-[0.8125rem] text-[var(--ink-3)]`}>{row.source}</td>
 									</tr>
 								))}
 							</tbody>
@@ -327,7 +327,7 @@ export default function SalariesPage() {
 						within its payroll cap, or a lower uniform rate if it cannot afford its own.
 					</p>
 					<div className='mt-6 overflow-x-auto'>
-						<table className='w-full border-collapse text-left text-[14px]'>
+						<table className='w-full border-collapse text-left text-[0.875rem]'>
 							<thead>
 								<tr className={HEAD}>
 									<th className={TH}>Income class</th>
@@ -346,7 +346,7 @@ export default function SalariesPage() {
 							</tbody>
 						</table>
 					</div>
-					<p className='mt-4 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+					<p className='mt-4 text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
 						Share of the national salary schedule, from EO 64 s. 2024 sec. 4 and DBM Local Budget Circulars 160, 165
 						and 172. A special city pays the full schedule. RATA steps down by class the same way (LBC 157). Each
 						unit’s class is on its{' '}
@@ -413,7 +413,7 @@ export default function SalariesPage() {
 					<p className={P}>SK officials in good standing (Sec. 465):</p>
 					<List items={SK_BENEFITS} />
 
-					<p className='mt-14 border-t border-[var(--rule)] pt-6 text-[13px] leading-6 text-[var(--ink-3)]'>
+					<p className='mt-14 border-t border-[var(--rule)] pt-6 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 						Read from the Code and its implementing rules, section by section. Where this page and the Act differ,
 						the Act is right. Read{' '}
 						<a href={lguReferences.localGovernanceCode.href} target='_blank' rel='noreferrer' className='rule-link'>

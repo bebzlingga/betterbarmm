@@ -42,7 +42,7 @@ export default async function ActivityPage({
       key={label}
       href={href}
       aria-current={on ? "page" : undefined}
-      className={`rounded-md px-3 py-1.5 text-[13px] font-medium transition ${on ? "bg-[var(--surface)] text-[var(--ink)] shadow-[var(--shadow-sm)]" : "text-[var(--ink-3)] hover:text-[var(--ink)]"}`}
+      className={`rounded-md px-3 py-1.5 text-[0.8125rem] font-medium transition ${on ? "bg-[var(--surface)] text-[var(--ink)] shadow-[var(--shadow-sm)]" : "text-[var(--ink-3)] hover:text-[var(--ink)]"}`}
     >
       {label}
     </Link>
@@ -73,7 +73,7 @@ export default async function ActivityPage({
           <ol className="divide-y divide-[var(--rule)]">
             {revisions.map((r) => (
               <li key={r.id} className="flex flex-wrap items-start gap-3 px-[1.125rem] py-3.5 sm:flex-nowrap">
-                <span className="mt-0.5 grid size-8 shrink-0 place-items-center rounded-full bg-[var(--surface-3)] font-[family-name:var(--font-display)] text-[10.5px] font-semibold text-[var(--ink-2)]" title={r.changed_by_email}>
+                <span className="mt-0.5 grid size-8 shrink-0 place-items-center rounded-full bg-[var(--surface-3)] font-[family-name:var(--font-display)] text-[0.65625rem] font-semibold text-[var(--ink-2)]" title={r.changed_by_email}>
                   {initials(r.changed_by_email || "?")}
                 </span>
                 <div className="min-w-0 flex-1">

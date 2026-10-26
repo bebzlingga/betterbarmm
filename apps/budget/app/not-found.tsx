@@ -45,7 +45,7 @@ export default function NotFound() {
 				That address is not <span className='bb-mute'>in this Act.</span>
 			</h1>
 
-			<p className='mx-auto mt-7 max-w-2xl text-[15px] leading-8 text-[var(--ink-2)]'>
+			<p className='mx-auto mt-7 max-w-2xl text-[0.9375rem] leading-8 text-[var(--ink-2)]'>
 				Nothing has been taken down. Every figure the {FISCAL_YEARS.length} Acts carry is still here
 				— but each page is one Act, so an office or sector that a later Act created has no page in
 				an earlier one, and a link carrying a <code className='money'>?fy=</code> from elsewhere can

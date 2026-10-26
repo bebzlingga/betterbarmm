@@ -70,7 +70,7 @@ export function ProvisionList({
 						{/* The office hangs off the title rather than on a line of its own
 						    (user decision): a fund's rule is titled with the fund's own
 						    name, so the two lines read as the same words printed twice. */}
-						<h3 className='text-[15px] font-bold leading-tight tracking-[-0.025em] text-[var(--ink)]'>
+						<h3 className='text-[0.9375rem] font-bold leading-tight tracking-[-0.025em] text-[var(--ink)]'>
 							{showOffice ? (
 								<YearLink href={`/offices/${provision.officeSlug}`} className='rule-link'>
 									{provision.title}
@@ -81,7 +81,7 @@ export function ProvisionList({
 						</h3>
 
 						{provision.amount != null ? (
-							<p className='money font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>
+							<p className='money font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>
 								of which {peso(provision.amount)}
 							</p>
 						) : null}
@@ -91,7 +91,7 @@ export function ProvisionList({
 					    full, and the figure it names sits ranged right on the line above.
 					    Held to 34em the quote ran down the left half of the page with the
 					    amount it belongs to floating alone across the gutter. */}
-					<p className='mt-3 text-[13.5px] leading-7 text-[var(--ink-2)]'>
+					<p className='mt-3 text-[0.84375rem] leading-7 text-[var(--ink-2)]'>
 						<Quoted text={provision.text} />
 					</p>
 
@@ -104,7 +104,7 @@ export function ProvisionList({
 							{provision.items.map((item) => (
 								<li
 									key={item.id}
-									className='flex gap-3 py-1 text-[13px] leading-6 text-[var(--ink-2)]'
+									className='flex gap-3 py-1 text-[0.8125rem] leading-6 text-[var(--ink-2)]'
 									style={{ paddingInlineStart: `${item.depth * 1.15}rem` }}
 								>
 									<span
@@ -114,7 +114,7 @@ export function ProvisionList({
 									<span className='min-w-0'>
 										<Quoted text={item.text} />
 										{item.amount != null ? (
-											<span className='money ml-2 whitespace-nowrap font-mono text-[10px] font-semibold uppercase tracking-[0.1em] text-[var(--brass)]'>
+											<span className='money ml-2 whitespace-nowrap font-mono text-[0.625rem] font-semibold uppercase tracking-[0.1em] text-[var(--brass)]'>
 												{peso(item.amount)}
 											</span>
 										) : null}

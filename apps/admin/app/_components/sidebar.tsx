@@ -95,7 +95,7 @@ export function Sidebar({
                   </summary>
                   <div className="ml-[1.15rem] mt-0.5 space-y-0.5 border-l border-[var(--rule)] pl-2.5">
                     {w.collections.map((c) => (
-                      <Link key={c.href} href={c.href} aria-current={current(c.href)} className="nav-link !py-1 !text-[12.5px]">
+                      <Link key={c.href} href={c.href} aria-current={current(c.href)} className="nav-link !py-1 !text-[0.78125rem]">
                         {c.label}
                       </Link>
                     ))}

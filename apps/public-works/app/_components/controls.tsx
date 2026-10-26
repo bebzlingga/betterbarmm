@@ -15,14 +15,14 @@ export function Select({
 }) {
 	return (
 		<label className='flex min-w-0 flex-col gap-1'>
-			<span className='text-[12px] text-[var(--ink-3)]'>{label}</span>
+			<span className='text-[0.75rem] text-[var(--ink-3)]'>{label}</span>
 			{/* The browser's own arrow sits against the edge and differs per
 			    browser; this one is the site's, inset like the search icon. */}
 			<span className='relative'>
 				<select
 					value={value}
 					onChange={(event) => onChange(event.target.value)}
-					className='h-10 w-full min-w-0 cursor-pointer appearance-none truncate border border-[var(--rule)] bg-[var(--paper-2)] pl-3 pr-9 text-[14px] text-[var(--ink)] outline-none transition hover:border-[var(--ink)] focus:border-[var(--ink)]'
+					className='h-10 w-full min-w-0 cursor-pointer appearance-none truncate border border-[var(--rule)] bg-[var(--paper-2)] pl-3 pr-9 text-[0.875rem] text-[var(--ink)] outline-none transition hover:border-[var(--ink)] focus:border-[var(--ink)]'
 				>
 					{options.map(([key, text]) => (
 						<option key={key} value={key}>
@@ -53,7 +53,7 @@ export function SearchField({
 }) {
 	return (
 		<label className='flex w-full min-w-0 flex-col gap-1'>
-			<span className='text-[12px] text-[var(--ink-3)]'>Search</span>
+			<span className='text-[0.75rem] text-[var(--ink-3)]'>Search</span>
 			<span className='flex h-10 items-center gap-3 border border-[var(--rule)] bg-[var(--paper-2)] px-3 focus-within:border-[var(--ink)]'>
 				<MagnifyingGlassIcon className='size-4 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
 				<input
@@ -63,7 +63,7 @@ export function SearchField({
 					autoComplete='off'
 					spellCheck={false}
 					placeholder={placeholder}
-					className='min-w-0 flex-1 bg-transparent text-[14px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+					className='min-w-0 flex-1 bg-transparent text-[0.875rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 				/>
 			</span>
 		</label>

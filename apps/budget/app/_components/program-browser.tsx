@@ -132,7 +132,7 @@ export function ProgramBrowser({
 						autoComplete='off'
 						spellCheck={false}
 						placeholder='Scholarship, madrasah, irrigation, halal…'
-						className='min-w-0 flex-1 bg-transparent text-[14.5px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+						className='min-w-0 flex-1 bg-transparent text-[0.90625rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 					/>
 				</label>
 
@@ -163,7 +163,7 @@ export function ProgramBrowser({
 			    for a sector wants the second one. */}
 			<p
 				aria-live='polite'
-				className='mt-5 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'
+				className='mt-5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'
 			>
 				<span className='money text-[var(--ink)]'>{hits.length}</span> of {programs.length}{' '}
 				programs
@@ -221,7 +221,7 @@ export function ProgramBrowser({
 													className='size-3 shrink-0 text-[var(--ink-3)] transition group-hover:text-[var(--accent)]'
 													aria-hidden='true'
 												/>
-												<h2 className='min-w-0 text-[15px] font-semibold leading-snug tracking-[-0.02em] text-[var(--ink)]'>
+												<h2 className='min-w-0 text-[0.9375rem] font-semibold leading-snug tracking-[-0.02em] text-[var(--ink)]'>
 													{program.path}
 												</h2>
 											</div>
@@ -229,16 +229,16 @@ export function ProgramBrowser({
 											    links inside the row: an anchor in a `summary` is a click
 											    that both navigates and opens the row it is leaving. Set
 											    under the title rather than under the mark. */}
-											<p className='mt-2 pl-[1.4rem] text-[12.5px] text-[var(--ink-3)]'>
+											<p className='mt-2 pl-[1.4rem] text-[0.78125rem] text-[var(--ink-3)]'>
 												{program.office} · {program.sector}
 											</p>
 										</div>
 
 										<div className='lg:text-right'>
-											<p className='money text-[15px] font-bold tracking-[-0.02em] text-[var(--ink)]'>
+											<p className='money text-[0.9375rem] font-bold tracking-[-0.02em] text-[var(--ink)]'>
 												{peso(program.total)}
 											</p>
-											<p className='money mt-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>
+											<p className='money mt-1.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>
 												{percent(program.share, 2)} of the budget
 											</p>
 										</div>
@@ -249,7 +249,7 @@ export function ProgramBrowser({
 							<div className='pb-9 pl-5 lg:pl-8'>
 								<div className='flex items-baseline justify-between gap-6'>
 									<p className='bb-label leading-none'>What the money is</p>
-									<p className='money font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>
+									<p className='money font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>
 										{parts.length} {parts.length === 1 ? 'class' : 'classes'}
 									</p>
 								</div>
@@ -263,7 +263,7 @@ export function ProgramBrowser({
 											key={one.key}
 											className='grid items-center gap-x-6 gap-y-2 border-t border-[var(--rule)] py-3.5 first:border-t-0 sm:grid-cols-[minmax(0,15rem)_minmax(0,1fr)_minmax(0,10rem)]'
 										>
-											<dt className='flex items-center gap-2 text-[13px] font-semibold text-[var(--ink)]'>
+											<dt className='flex items-center gap-2 text-[0.8125rem] font-semibold text-[var(--ink)]'>
 												<span
 													aria-hidden='true'
 													className='size-2.5 shrink-0 rotate-45'
@@ -278,9 +278,9 @@ export function ProgramBrowser({
 													aria-hidden='true'
 												/>
 											</dd>
-											<dd className='money flex items-baseline justify-between gap-3 text-[13px] font-semibold text-[var(--ink)] sm:justify-end'>
+											<dd className='money flex items-baseline justify-between gap-3 text-[0.8125rem] font-semibold text-[var(--ink)] sm:justify-end'>
 												{peso(one.amount)}
-												<span className='font-mono text-[10px] uppercase tracking-[0.1em] text-[var(--ink-3)]'>
+												<span className='font-mono text-[0.625rem] uppercase tracking-[0.1em] text-[var(--ink-3)]'>
 													{percent(one.share)}
 												</span>
 											</dd>
@@ -292,7 +292,7 @@ export function ProgramBrowser({
 									<>
 										<div className='mt-8 flex items-baseline justify-between gap-6'>
 											<p className='bb-label leading-none'>What it is divided into</p>
-											<p className='money font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>
+											<p className='money font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>
 												{under.length} {under.length === 1 ? 'line' : 'lines'} ·{' '}
 												{peso(under.reduce((sum, one) => sum + one.total, 0))}
 											</p>
@@ -304,7 +304,7 @@ export function ProgramBrowser({
 													key={one.id}
 													className='grid items-center gap-x-6 gap-y-2 border-t border-[var(--rule)] py-3 first:border-t-0 sm:grid-cols-[minmax(0,15rem)_minmax(0,1fr)_minmax(0,10rem)]'
 												>
-													<dt className='text-[13px] leading-snug text-[var(--ink-2)]'>
+													<dt className='text-[0.8125rem] leading-snug text-[var(--ink-2)]'>
 														{one.name}
 													</dt>
 													<dd className='rank-track'>
@@ -314,7 +314,7 @@ export function ProgramBrowser({
 															aria-hidden='true'
 														/>
 													</dd>
-													<dd className='money text-[13px] font-semibold text-[var(--ink)] sm:text-right'>
+													<dd className='money text-[0.8125rem] font-semibold text-[var(--ink)] sm:text-right'>
 														{peso(one.total)}
 													</dd>
 												</div>
@@ -327,7 +327,7 @@ export function ProgramBrowser({
 								    the object items — salaries, fuel, equipment — per office and
 								    never per program, so this says where they are rather than
 								    splitting an office's tree across its programs. */}
-								<p className='mt-7 flex flex-wrap items-baseline gap-x-2 gap-y-1 border-t border-[var(--rule)] pt-5 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+								<p className='mt-7 flex flex-wrap items-baseline gap-x-2 gap-y-1 border-t border-[var(--rule)] pt-5 text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
 									<YearLink href={`/offices/${program.officeSlug}`} className='rule-link'>
 										{program.office}
 									</YearLink>
@@ -348,7 +348,7 @@ export function ProgramBrowser({
 				})}
 
 				{hits.length === 0 ? (
-					<p className='border-t border-[var(--rule)] py-16 text-center text-[13.5px] leading-7 text-[var(--ink-3)]'>
+					<p className='border-t border-[var(--rule)] py-16 text-center text-[0.84375rem] leading-7 text-[var(--ink-3)]'>
 						No program in the Act says “{query.trim()}”. It names things formally and often in
 						the plural — “Scholarship” rather than “student aid”, “Farm-to-Market” rather than
 						“roads”. Try one word rather than a phrase.

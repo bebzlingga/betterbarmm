@@ -27,7 +27,7 @@ export function TopChart({ title, rankings }: { title: string; rankings: TopRank
 			<div className='flex flex-wrap items-center justify-between gap-x-10 gap-y-4'>
 				<div>
 					<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{title}</h2>
-					<p className='mt-2 text-[14px] leading-6 text-[var(--ink-3)]'>{r.note}</p>
+					<p className='mt-2 text-[0.875rem] leading-6 text-[var(--ink-3)]'>{r.note}</p>
 				</div>
 				<div role='tablist' aria-label='Ranking' className='-mx-4 flex max-w-[calc(100%+2rem)] gap-1 overflow-x-auto px-4 sm:mx-0 sm:max-w-full sm:px-0'>
 					{rankings.map((x) => (
@@ -37,7 +37,7 @@ export function TopChart({ title, rankings }: { title: string; rankings: TopRank
 							role='tab'
 							aria-selected={x.key === key}
 							onClick={() => setKey(x.key)}
-							className={`shrink-0 cursor-pointer px-3.5 py-2 text-[13.5px] font-semibold transition ${
+							className={`shrink-0 cursor-pointer px-3.5 py-2 text-[0.84375rem] font-semibold transition ${
 								x.key === key ? 'bg-[var(--accent)] text-white' : 'bg-[var(--paper-2)] text-[var(--ink-2)] hover:text-[var(--ink)]'
 							}`}
 						>
@@ -60,15 +60,15 @@ export function TopChart({ title, rankings }: { title: string; rankings: TopRank
 						return (
 							<li key={item.label} className='group flex min-w-0 flex-col'>
 								<div className='flex h-64 flex-col justify-end border-b border-[var(--rule)]'>
-									<span className='num mb-1.5 text-center text-[11px] font-semibold text-[var(--ink-2)]'>{show(item.value)}</span>
+									<span className='num mb-1.5 text-center text-[0.6875rem] font-semibold text-[var(--ink-2)]'>{show(item.value)}</span>
 									<span
 										title={`${item.label}: ${show(item.value)}`}
 										className='bg-[var(--accent)] transition-opacity group-hover:opacity-80'
 										style={{ height: `${Math.max((item.value / max) * 85, 1)}%` }}
 									/>
 								</div>
-								<p className='num mt-2 text-center text-[10.5px] text-[var(--ink-mute)]'>{i + 1}</p>
-								<p className='mt-1 line-clamp-4 text-center break-words text-[10px] tracking-[-0.01em] font-semibold leading-[1.35] text-[var(--ink)]' title={item.label}>
+								<p className='num mt-2 text-center text-[0.65625rem] text-[var(--ink-mute)]'>{i + 1}</p>
+								<p className='mt-1 line-clamp-4 text-center break-words text-[0.625rem] tracking-[-0.01em] font-semibold leading-[1.35] text-[var(--ink)]' title={item.label}>
 									{label}
 								</p>
 							</li>

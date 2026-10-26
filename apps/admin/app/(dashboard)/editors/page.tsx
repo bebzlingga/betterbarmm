@@ -43,7 +43,7 @@ export default async function EditorsPage() {
         <ul className="divide-y divide-[var(--rule)]">
           {profiles.map((p) => (
             <li key={p.id} className="flex flex-wrap items-center gap-4 px-[1.125rem] py-3.5">
-              <span className="grid size-9 shrink-0 place-items-center rounded-full bg-[var(--surface-3)] font-[family-name:var(--font-display)] text-[11px] font-semibold text-[var(--ink-2)]">
+              <span className="grid size-9 shrink-0 place-items-center rounded-full bg-[var(--surface-3)] font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold text-[var(--ink-2)]">
                 {initials(p.name || p.email)}
               </span>
               <div className="min-w-0 flex-1">
@@ -62,7 +62,7 @@ export default async function EditorsPage() {
                 </span>
               ) : (
                 <form action={setRole.bind(null, p.id)} className="flex flex-wrap items-center gap-3">
-                  <label className="flex items-center gap-2 text-[13px] text-[var(--ink-2)]" title="May approve social posts before they go to Facebook">
+                  <label className="flex items-center gap-2 text-[0.8125rem] text-[var(--ink-2)]" title="May approve social posts before they go to Facebook">
                     <input type="checkbox" name="can_approve_posts" defaultChecked={Boolean(p.can_approve_posts)} className="size-4 accent-[var(--accent)]" />
                     Approves posts
                   </label>

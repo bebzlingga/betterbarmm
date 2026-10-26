@@ -15,20 +15,20 @@ export function DirectoryServices({ services, href, base, note }: { services: Se
 	return (
 		<section aria-labelledby='services' className='mt-14'>
 			<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
-				<h2 id='services' className='text-[20px] font-extrabold'>
+				<h2 id='services' className='text-[1.25rem] font-extrabold'>
 					Programs & services {services.length ? <span className='text-[var(--ink-mute)]'>{services.length}</span> : null}
 				</h2>
-				<Link href={href} className='inline-flex items-center gap-1.5 text-[13.5px] font-semibold underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
+				<Link href={href} className='inline-flex items-center gap-1.5 text-[0.84375rem] font-semibold underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
 					{services.length > SHOWN ? `All ${services.length}` : 'Its services page'} <ArrowRightIcon size={12} weight='bold' aria-hidden='true' />
 				</Link>
 			</div>
-			<p className='mt-1 text-[13px] text-[var(--ink-3)]'>{note}</p>
+			<p className='mt-1 text-[0.8125rem] text-[var(--ink-3)]'>{note}</p>
 			{services.length ? (
 				<>
 					<ServiceCards services={services.slice(0, SHOWN)} base={base} href={href} />
 					{services.length > SHOWN ? (
 						<p className='mt-4 text-right'>
-							<Link href={href} className='inline-flex items-center gap-1.5 text-[14px] font-semibold underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
+							<Link href={href} className='inline-flex items-center gap-1.5 text-[0.875rem] font-semibold underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
 								{services.length - SHOWN} more, by category <ArrowRightIcon size={12} weight='bold' aria-hidden='true' />
 							</Link>
 						</p>

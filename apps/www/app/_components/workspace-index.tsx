@@ -118,7 +118,7 @@ export function WorkspaceIndex({ workspaces }: { workspaces: Workspace[] }) {
 					const body = (
 						<>
 							<span className='flex items-center justify-between gap-3'>
-								<span className='num text-[12px] font-semibold text-[var(--brass)]'>
+								<span className='num text-[0.75rem] font-semibold text-[var(--brass)]'>
 									{String(index + 1).padStart(2, '0')}
 								</span>
 								<span className='bb-chip'>{workspace.measure}</span>
@@ -152,7 +152,7 @@ export function WorkspaceIndex({ workspaces }: { workspaces: Workspace[] }) {
 							<span className='mt-8 flex items-center justify-between gap-4 border-t border-[var(--rule)] pt-4'>
 								<span className='flex items-center gap-3'>
 									{workspace.state === 'live' ? <LivePulse /> : null}
-									<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+									<span className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 										{STATE_LABEL[workspace.state]}
 									</span>
 								</span>
@@ -231,11 +231,11 @@ export function WorkspaceList({ workspaces }: { workspaces: Workspace[] }) {
                 {Glyph ? <Glyph size={22} weight='duotone' aria-hidden='true' className='mt-0.5 shrink-0 text-[var(--accent)]' /> : null}
                 <span className='min-w-0 flex-1'>
                   <span className='flex items-baseline justify-between gap-3'>
-                    <span className='text-[16px] font-extrabold tracking-[-0.02em] group-hover:text-[var(--accent)]'>{w.label}</span>
+                    <span className='text-[1rem] font-extrabold tracking-[-0.02em] group-hover:text-[var(--accent)]'>{w.label}</span>
                     <ArrowUpRightIcon className='size-3.5 shrink-0 text-[var(--ink-3)] transition duration-200 group-hover:text-[var(--accent)]' aria-hidden='true' />
                   </span>
-                  <span className='block font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>{w.measure}</span>
-                  <span className='mt-1.5 line-clamp-2 text-[13.5px] leading-[1.55] text-[var(--ink-2)]'>{w.blurb}</span>
+                  <span className='block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>{w.measure}</span>
+                  <span className='mt-1.5 line-clamp-2 text-[0.84375rem] leading-[1.55] text-[var(--ink-2)]'>{w.blurb}</span>
                 </span>
               </a>
             </li>
@@ -244,8 +244,8 @@ export function WorkspaceList({ workspaces }: { workspaces: Workspace[] }) {
         {/* What is not built yet, in the grid's own last cell, stretched across what is left of its row at two columns or three. */}
         {coming.length ? (
           <li className={`bg-[var(--paper-2)] p-6 ${SM_SPAN[2 - (live.length % 2)]} ${LG_SPAN[3 - (live.length % 3)]}`}>
-            <span className='block font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Coming next</span>
-            <span className='mt-1.5 block text-[13.5px] leading-[1.6] text-[var(--ink-2)]'>{coming.map((w) => w.label).join(' · ')}</span>
+            <span className='block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Coming next</span>
+            <span className='mt-1.5 block text-[0.84375rem] leading-[1.6] text-[var(--ink-2)]'>{coming.map((w) => w.label).join(' · ')}</span>
           </li>
         ) : null}
       </ul>

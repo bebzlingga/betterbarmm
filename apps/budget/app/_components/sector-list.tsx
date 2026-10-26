@@ -93,7 +93,7 @@ function SortMenu({ sort, onPick }: { sort: string; onPick: (key: string) => voi
 								onPick(one.key)
 								setOpen(false)
 							}}
-							className={`block w-full px-3 py-2 text-left text-[13.5px] transition hover:bg-[var(--paper-2)] hover:text-[var(--ink)] ${
+							className={`block w-full px-3 py-2 text-left text-[0.84375rem] transition hover:bg-[var(--paper-2)] hover:text-[var(--ink)] ${
 								one.key === sort
 									? 'font-semibold text-[var(--ink)]'
 									: 'text-[var(--ink-2)]'
@@ -144,7 +144,7 @@ export function SectorList({ sectors }: { sectors: Sector[] }) {
 						autoComplete='off'
 						spellCheck={false}
 						placeholder='Water, schools, roads…'
-						className='min-w-0 flex-1 bg-transparent text-[14.5px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+						className='min-w-0 flex-1 bg-transparent text-[0.90625rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 					/>
 				</label>
 
@@ -191,7 +191,7 @@ export function SectorList({ sectors }: { sectors: Sector[] }) {
 										aria-hidden='true'
 									/>
 								</h2>
-								<p className='mt-2 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+								<p className='mt-2 text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
 									{sector.description}
 								</p>
 							</div>
@@ -213,7 +213,7 @@ export function SectorList({ sectors }: { sectors: Sector[] }) {
 							<p className='money text-[1.05rem] font-bold tracking-[-0.02em] text-[var(--ink)]'>
 								{sector.total > 0 ? peso(sector.total) : '—'}
 							</p>
-							<p className='money mt-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>
+							<p className='money mt-1.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>
 								{sector.count} {sector.count === 1 ? 'line' : 'lines'} in program rows
 							</p>
 						</div>
@@ -221,7 +221,7 @@ export function SectorList({ sectors }: { sectors: Sector[] }) {
 				))}
 
 				{shown.length === 0 ? (
-					<p className='py-16 text-center text-[13.5px] leading-7 text-[var(--ink-3)]'>
+					<p className='py-16 text-center text-[0.84375rem] leading-7 text-[var(--ink-3)]'>
 						No sector matches “{query.trim()}”. The list is 38 sectors wide — try “water”,
 						“health” or “roads”, or search the{' '}
 						<YearLink href='/programs' className='rule-link'>

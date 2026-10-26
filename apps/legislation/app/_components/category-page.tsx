@@ -58,7 +58,7 @@ export function CategoryPage({ slug }: { slug: CategorySlug }) {
 				<>
 					<RecordBrowser dataset={dataset} />
 					{DOWNLOADABLE.has(slug) ? (
-						<div className='bb-container pb-16 text-[13px]'>
+						<div className='bb-container pb-16 text-[0.8125rem]'>
 							<a href={`/csv/${slug}`} className='rule-link font-semibold text-[var(--ink)]' download>
 								Download Parliament&rsquo;s full list as CSV
 							</a>

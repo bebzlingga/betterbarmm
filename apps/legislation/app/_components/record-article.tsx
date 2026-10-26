@@ -258,7 +258,7 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 					    off the edge — a measure can carry a status and a Cabinet mark at
 					    once. */}
 					<div className='flex flex-wrap items-center gap-x-3 gap-y-1.5'>
-						<p className='num shrink-0 text-[13px] font-medium text-[var(--ink-3)]'>
+						<p className='num shrink-0 text-[0.8125rem] font-medium text-[var(--ink-3)]'>
 							{record.display}
 						</p>
 						{/* The one place the status is stated — it rides above the title

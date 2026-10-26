@@ -15,13 +15,13 @@ export function PostPreview({ pageName, when, body, image, link }: { pageName: s
       <div className="flex items-center gap-2.5 px-4 pt-4">
         <span className="grid size-10 place-items-center rounded-full bg-[#9b2a1c] font-[family-name:var(--font-display)] text-sm font-bold text-white">B</span>
         <div>
-          <p className="text-[14px] font-semibold leading-tight">{pageName}</p>
-          <p className="flex items-center gap-1 text-[12px] text-[#65676b]">
+          <p className="text-[0.875rem] font-semibold leading-tight">{pageName}</p>
+          <p className="flex items-center gap-1 text-[0.75rem] text-[#65676b]">
             {when} · <GlobeHemisphereEastIcon size={12} aria-hidden="true" />
           </p>
         </div>
       </div>
-      <p className="whitespace-pre-wrap break-words px-4 pb-3 pt-3 text-[15px] leading-[1.35]">
+      <p className="whitespace-pre-wrap break-words px-4 pb-3 pt-3 text-[0.9375rem] leading-[1.35]">
         {body ? (
           body.length > LONG ? (
             <>
@@ -39,12 +39,12 @@ export function PostPreview({ pageName, when, body, image, link }: { pageName: s
         <img src={image} alt="" className="max-h-[22rem] w-full object-cover" />
       ) : host ? (
         <div className="border-t border-[#e4e6eb] bg-[#f0f2f5] px-4 py-3">
-          <p className="text-[12px] uppercase text-[#65676b]">{host}</p>
-          <p className="mt-0.5 text-[15px] font-semibold leading-snug">Link preview</p>
-          <p className="text-[13px] text-[#65676b]">Facebook fills this card from the page when it posts.</p>
+          <p className="text-[0.75rem] uppercase text-[#65676b]">{host}</p>
+          <p className="mt-0.5 text-[0.9375rem] font-semibold leading-snug">Link preview</p>
+          <p className="text-[0.8125rem] text-[#65676b]">Facebook fills this card from the page when it posts.</p>
         </div>
       ) : null}
-      {image && link ? <p className="px-4 py-2 text-[13px] text-[#385898]">{link}</p> : null}
+      {image && link ? <p className="px-4 py-2 text-[0.8125rem] text-[#385898]">{link}</p> : null}
     </div>
   );
 }

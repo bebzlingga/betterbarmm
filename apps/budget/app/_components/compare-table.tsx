@@ -59,16 +59,16 @@ export function CompareTable({
 					className='flex min-w-0 flex-col border-l border-t border-[var(--rule)] p-6 lg:p-7'
 				>
 					<div className='min-w-0'>
-						<p className='text-[14px] font-semibold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+						<p className='text-[0.875rem] font-semibold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 							{row.name}
 						</p>
-						<p className='money mt-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>
+						<p className='money mt-1.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>
 							{row.first[0]} — {row.last[0]}
 						</p>
 						{/* A reader who knows the office by the name an older Act printed
 						    has to be able to find it under the name the latest one uses. */}
 						{row.was && row.was.length > 0 ? (
-							<p className='mt-2 text-[11.5px] leading-5 text-[var(--ink-3)]'>
+							<p className='mt-2 text-[0.71875rem] leading-5 text-[var(--ink-3)]'>
 								Earlier Acts print it as {row.was.join('; ')}.
 							</p>
 						) : null}
@@ -97,10 +97,10 @@ export function CompareTable({
 					</div>
 
 					<div className='mt-5 flex items-baseline justify-between gap-4 border-t border-[var(--rule)] pt-4'>
-						<p className='money text-[13.5px] font-semibold text-[var(--ink)]'>
+						<p className='money text-[0.84375rem] font-semibold text-[var(--ink)]'>
 							{pesoShort(row.last[1])}
 						</p>
-						<p className='money font-mono text-[10px] font-semibold uppercase tracking-[0.1em] text-[var(--brass)]'>
+						<p className='money font-mono text-[0.625rem] font-semibold uppercase tracking-[0.1em] text-[var(--brass)]'>
 							{row.change === null
 								? '—'
 								: `${row.change >= 0 ? '+' : ''}${percent(row.change, 0)}`}

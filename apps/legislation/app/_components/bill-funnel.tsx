@@ -72,7 +72,7 @@ function LegendRow({
 				<p className={`flex flex-wrap items-center gap-x-2 ${mirrored ? 'lg:justify-end' : ''}`}>
 					{/* The count leads: the row answers "how many are here", and the
 					    stage name is what that number is a count of. */}
-					<span className='num text-[15px] font-semibold text-[var(--ink)]'>
+					<span className='num text-[0.9375rem] font-semibold text-[var(--ink)]'>
 						{slice.count.toLocaleString()}
 					</span>
 					<span className='item-title text-[var(--ink)]'>{slice.label}</span>
@@ -86,7 +86,7 @@ function LegendRow({
 					    `--ink` flips with the theme it darkens on paper and lightens on
 					    a dark ground without a second rule. */}
 					<span
-						className='num inline-flex shrink-0 items-center rounded-full px-1.5 py-0.5 text-[10.5px] font-bold leading-none tracking-[0.01em]'
+						className='num inline-flex shrink-0 items-center rounded-full px-1.5 py-0.5 text-[0.65625rem] font-bold leading-none tracking-[0.01em]'
 						style={{
 							background: `color-mix(in oklab, ${slice.color} 20%, transparent)`,
 							color: `color-mix(in oklab, ${slice.color} 68%, var(--ink))`,
@@ -95,7 +95,7 @@ function LegendRow({
 						{share < 1 ? '<1' : Math.round(share)}
 						{/* The unit a step down from the figure — the number is the value,
 						    the sign only says what kind. */}
-						<span className='ml-px text-[8px] font-bold'>%</span>
+						<span className='ml-px text-[0.5rem] font-bold'>%</span>
 					</span>
 				</p>
 				<p className='mt-1 bb-body text-[var(--ink-3)]'>{slice.note}</p>

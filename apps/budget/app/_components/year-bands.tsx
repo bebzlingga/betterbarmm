@@ -28,7 +28,7 @@ export function YearBands({
 }) {
 	return (
 		<div className='mt-10'>
-			<p className='flex flex-wrap gap-x-6 gap-y-2 font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
+			<p className='flex flex-wrap gap-x-6 gap-y-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
 				{legend.map((one) => (
 					<span key={one.label} className='flex items-center gap-2'>
 						<span
@@ -50,7 +50,7 @@ export function YearBands({
 							key={row.year}
 							className='grid items-center gap-x-8 gap-y-2 border-t border-[var(--rule)] py-4 sm:grid-cols-[4.5rem_minmax(0,1fr)_minmax(0,13rem)]'
 						>
-							<dt className='money font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+							<dt className='money font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
 								FY {row.year}
 							</dt>
 
@@ -78,7 +78,7 @@ export function YearBands({
 									))}
 							</dd>
 
-							<dd className='money font-mono text-[10px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)] sm:text-right'>
+							<dd className='money font-mono text-[0.625rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)] sm:text-right'>
 								{row.note ?? ''}
 							</dd>
 						</div>

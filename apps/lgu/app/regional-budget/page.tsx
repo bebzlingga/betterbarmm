@@ -39,13 +39,13 @@ export default function SpendingPage() {
 			/>
 
 			<section className='bb-container bb-section'>
-				<p aria-hidden='true' className='mb-3 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] lg:hidden'>
+				<p aria-hidden='true' className='mb-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] lg:hidden'>
 					Swipe for every year &rarr;
 				</p>
 				{/* The area column is pinned on a phone, so a swipe to FY 2026 still
 				    says whose row it is. */}
 				<div className='overflow-x-auto lg:-mx-8 lg:px-8'>
-					<table className='w-full min-w-[46rem] border-collapse text-[14.5px] lg:min-w-[54rem]'>
+					<table className='w-full min-w-[46rem] border-collapse text-[0.90625rem] lg:min-w-[54rem]'>
 						<caption className='sr-only'>
 							Bangsamoro construction appropriated into each area, in billions of pesos, by
 							fiscal year
@@ -59,14 +59,14 @@ export default function SpendingPage() {
 									<th
 										key={year}
 										scope='col'
-										className='num py-4 pl-5 text-right align-bottom font-mono text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
+										className='num py-4 pl-5 text-right align-bottom font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
 									>
 										{/* The flag goes above the year, not below it. Below, it took the
 										    baseline and pushed "FY 2023" up a line on its own, so the one
 										    column that needed reading carefully was the one whose year had
 										    drifted out of the row. */}
 										{thinlyTagged(year) ? (
-											<span className='block text-[9px] font-normal leading-4 text-[var(--accent)]'>
+											<span className='block text-[0.5625rem] font-normal leading-4 text-[var(--accent)]'>
 												barely tagged
 											</span>
 										) : null}
@@ -75,7 +75,7 @@ export default function SpendingPage() {
 								))}
 								<th
 									scope='col'
-									className='num py-4 pl-5 text-right align-bottom font-mono text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
+									className='num py-4 pl-5 text-right align-bottom font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
 								>
 									Total
 								</th>
@@ -86,15 +86,15 @@ export default function SpendingPage() {
 							{areaSpending.areas.map((area) => (
 								<tr key={area.name} className='group border-b border-[var(--rule-soft)] transition-colors duration-150 hover:bg-[var(--paper-2)]'>
 									<th scope='row' className='w-[10.5rem] min-w-[10.5rem] py-5 pr-4 text-left font-normal sm:w-auto sticky left-0 z-[1] bg-[var(--paper)] transition-colors duration-150 group-hover:bg-[var(--paper-2)]'>
-										<span className='block text-[13.5px] font-semibold leading-snug text-[var(--ink)] sm:text-[15px]'>
+										<span className='block text-[0.84375rem] font-semibold leading-snug text-[var(--ink)] sm:text-[0.9375rem]'>
 											{area.name}
 										</span>
 										{area.note ? (
-											<span className='mt-0.5 block text-[11px] leading-5 text-[var(--ink-3)]'>
+											<span className='mt-0.5 block text-[0.6875rem] leading-5 text-[var(--ink-3)]'>
 												{area.note}
 											</span>
 										) : area.printedAs.length > 1 ? (
-											<span className='mt-0.5 block text-[11px] leading-5 text-[var(--ink-mute)]'>
+											<span className='mt-0.5 block text-[0.6875rem] leading-5 text-[var(--ink-mute)]'>
 												Printed as {area.printedAs.join(', ')}
 											</span>
 										) : null}
@@ -105,7 +105,7 @@ export default function SpendingPage() {
 										return (
 											<td
 												key={year}
-												className='num py-5 pl-5 text-right text-[13px] tabular-nums text-[var(--ink-2)]'
+												className='num py-5 pl-5 text-right text-[0.8125rem] tabular-nums text-[var(--ink-2)]'
 												title={
 													cell && cell.projects > 0
 														? `${cell.projects} project${cell.projects === 1 ? '' : 's'}`
@@ -117,7 +117,7 @@ export default function SpendingPage() {
 										)
 									})}
 
-									<td className='num py-5 pl-5 text-right text-[13px] font-semibold tabular-nums text-[var(--ink)]'>
+									<td className='num py-5 pl-5 text-right text-[0.8125rem] font-semibold tabular-nums text-[var(--ink)]'>
 										{pesoCell(area.total)}
 									</td>
 								</tr>
@@ -132,12 +132,12 @@ export default function SpendingPage() {
 								{YEARS.map((year) => (
 									<td
 										key={year}
-										className='num py-5 pl-5 text-right text-[13px] font-semibold tabular-nums text-[var(--ink)]'
+										className='num py-5 pl-5 text-right text-[0.8125rem] font-semibold tabular-nums text-[var(--ink)]'
 									>
 										{pesoCell(spentIn(year))}
 									</td>
 								))}
-								<td className='num py-5 pl-5 text-right text-[13px] font-semibold tabular-nums text-[var(--accent)]'>
+								<td className='num py-5 pl-5 text-right text-[0.8125rem] font-semibold tabular-nums text-[var(--accent)]'>
 									{pesoCell(grand)}
 								</td>
 							</tr>
@@ -145,7 +145,7 @@ export default function SpendingPage() {
 					</table>
 				</div>
 
-				<p className='mt-5 text-[12px] leading-6 text-[var(--ink-3)]'>
+				<p className='mt-5 text-[0.75rem] leading-6 text-[var(--ink-3)]'>
 					Hover a figure for the number of projects behind it. A dash is an Act that tagged
 					nothing to that area, which is not the same as nothing being built there.
 				</p>
@@ -159,10 +159,10 @@ export default function SpendingPage() {
 							<h3 className='bb-label'>Two things to read the table with</h3>
 							<ul className='mt-5'>
 								<li className='border-b border-[var(--rule-soft)] py-3.5'>
-									<p className='text-[13px] font-semibold text-[var(--ink)]'>
+									<p className='text-[0.8125rem] font-semibold text-[var(--ink)]'>
 										FY {thin.join(' and FY ')} barely tagged anything
 									</p>
-									<p className='mt-1 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+									<p className='mt-1 text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
 										That Act names a province on{' '}
 										{areaSpending.areasTaggedPerYear[String(thin[0] ?? '')] ?? 0} areas where the
 										others name seven or eight. The column is thin because of what was printed,
@@ -170,10 +170,10 @@ export default function SpendingPage() {
 									</p>
 								</li>
 								<li className='border-b border-[var(--rule-soft)] py-3.5'>
-									<p className='text-[13px] font-semibold text-[var(--ink)]'>
+									<p className='text-[0.8125rem] font-semibold text-[var(--ink)]'>
 										The region was redrawn inside the span
 									</p>
-									<p className='mt-1 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+									<p className='mt-1 text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
 										Maguindanao became Del Norte and Del Sur, Lanao del Sur is printed as one
 										province and as two districts in different years, and Sulu was removed by the
 										Supreme Court. Rows are reconciled to the present names with every printed
@@ -182,7 +182,7 @@ export default function SpendingPage() {
 								</li>
 							</ul>
 
-							<p className='mt-6 text-[12px] leading-6 text-[var(--ink-3)]'>
+							<p className='mt-6 text-[0.75rem] leading-6 text-[var(--ink-3)]'>
 								Read from the seven enacted Acts.{' '}
 								<a
 									href='https://budget.betterbarmm.com'

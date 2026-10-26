@@ -10,7 +10,7 @@ import { audienceLabel, categoryLabel, slugify, type Audience, type Category, ty
    three read the same; `base` is the list the category and audience tags lead
    back to. */
 
-const chip = 'inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border px-2.5 py-1 text-[12px] leading-none transition'
+const chip = 'inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border px-2.5 py-1 text-[0.75rem] leading-none transition'
 
 /** Its category, then who it is for, as chips: each a link to everything else on that shelf, or for those readers. */
 export function Tags({ list, category, base = '/services', className = 'mt-2' }: { list: Audience[]; category?: Category; base?: string; className?: string }) {
@@ -46,7 +46,7 @@ function CategoryLink({ id, base }: { id: Category; base: string }) {
 }
 
 export const Source = ({ url }: { url: string }) => (
-	<a href={url} target='_blank' rel='noreferrer' className='inline-flex items-center gap-1 text-[12px] text-[var(--ink-3)] underline decoration-[var(--rule)] underline-offset-4 hover:text-[var(--accent)]'>
+	<a href={url} target='_blank' rel='noreferrer' className='inline-flex items-center gap-1 text-[0.75rem] text-[var(--ink-3)] underline decoration-[var(--rule)] underline-offset-4 hover:text-[var(--accent)]'>
 		Source <ArrowUpRightIcon size={11} weight='bold' aria-hidden='true' />
 	</a>
 )
@@ -56,7 +56,7 @@ export const Source = ({ url }: { url: string }) => (
    what to bring; given `href` (the Directory, which shows a few of them),
    each row is a link to that service on its services page instead. */
 const COLS = 'lg:grid lg:grid-cols-[minmax(0,4fr)_minmax(0,1.3fr)_minmax(0,0.5fr)_1rem] lg:gap-x-12'
-const HEAD = 'text-[11px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)]'
+const HEAD = 'text-[0.6875rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)]'
 const ROW = `flex items-start gap-4 px-3 py-6 transition hover:bg-[var(--paper-2)] ${COLS}`
 const anchor = (s: Service) => `service-${slugify(s.name)}`
 
@@ -66,26 +66,26 @@ function Cells({ s, base, href }: { s: Service; base: string; href?: string }) {
 		<>
 			<span className='min-w-0 flex-1'>
 				{href ? (
-					<Link href={`${href}#${anchor(s)}`} className="block text-[15px] font-semibold leading-snug after:absolute after:inset-0 after:content-['']">
+					<Link href={`${href}#${anchor(s)}`} className="block text-[0.9375rem] font-semibold leading-snug after:absolute after:inset-0 after:content-['']">
 						{s.name}
 					</Link>
 				) : (
-					<span className='block text-[15px] font-semibold leading-snug'>{s.name}</span>
+					<span className='block text-[0.9375rem] font-semibold leading-snug'>{s.name}</span>
 				)}
 				{/* Its category under the name rather than in a column of its own, so the name keeps the width. */}
 				{s.category ? (
-					<span className='relative z-10 mt-1.5 hidden text-[13px] font-semibold leading-snug lg:block lg:w-fit'>
+					<span className='relative z-10 mt-1.5 hidden text-[0.8125rem] font-semibold leading-snug lg:block lg:w-fit'>
 						<CategoryLink id={s.category} base={base} />
 					</span>
 				) : null}
 				{/* Under the name on a narrow screen, where there are no columns to hold them. */}
-				<span className='mt-1 block text-[12.5px] text-[var(--ink-3)] lg:hidden'>
+				<span className='mt-1 block text-[0.78125rem] text-[var(--ink-3)] lg:hidden'>
 					{[s.fee && `Fee: ${s.fee}`, s.time && `Takes ${s.time}`].filter(Boolean).join(' · ') || 'Fee and time not stated'}
 				</span>
 				<Tags list={s.for} category={s.category} base={base} className='relative z-10 mt-2.5 lg:hidden' />
 			</span>
 			{/* Who it is for as plain links, not chips: six chips in a column this narrow stacked one to a line. */}
-			<span className='relative z-10 hidden text-[13.5px] leading-snug text-[var(--ink-2)] lg:block'>
+			<span className='relative z-10 hidden text-[0.84375rem] leading-snug text-[var(--ink-2)] lg:block'>
 				{s.for.length
 					? s.for.map((a, i) => (
 							<span key={a}>
@@ -97,7 +97,7 @@ function Cells({ s, base, href }: { s: Service; base: string; href?: string }) {
 						))
 					: '—'}
 			</span>
-			<span className='hidden text-[13.5px] leading-snug text-[var(--ink-2)] lg:line-clamp-2'>
+			<span className='hidden text-[0.84375rem] leading-snug text-[var(--ink-2)] lg:line-clamp-2'>
 				<span className='sr-only'>Fee: </span>
 				{s.fee || '—'}
 			</span>
@@ -132,7 +132,7 @@ export function ServiceCards({ services, base = '/services', href }: { services:
 								<summary className={`cursor-pointer list-none [&::-webkit-details-marker]:hidden ${ROW}`}>
 									<Cells s={s} base={base} />
 								</summary>
-								<div className='max-w-3xl px-3 pb-7 pt-1 text-[14px] leading-6'>
+								<div className='max-w-3xl px-3 pb-7 pt-1 text-[0.875rem] leading-6'>
 									{s.summary ? <p className='text-[var(--ink-2)]'>{s.summary}</p> : null}
 									{s.requirements.length ? (
 										<>
@@ -144,7 +144,7 @@ export function ServiceCards({ services, base = '/services', href }: { services:
 											</ul>
 										</>
 									) : null}
-									<dl className='mt-3 grid gap-x-6 gap-y-1 text-[13.5px] sm:grid-cols-[auto_1fr]'>
+									<dl className='mt-3 grid gap-x-6 gap-y-1 text-[0.84375rem] sm:grid-cols-[auto_1fr]'>
 										{s.fee ? (
 											<>
 												<dt className='text-[var(--ink-3)]'>Fee</dt>

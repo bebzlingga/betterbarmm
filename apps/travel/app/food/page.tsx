@@ -51,7 +51,7 @@ export default function FoodPage() {
 						{foodNotes.map((note) => (
 							<div key={note.title}>
 								<p className='item-title'>{note.title}</p>
-								<p className='mt-3 text-[14px] leading-7 text-[var(--ink-2)]'>{note.body}</p>
+								<p className='mt-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{note.body}</p>
 							</div>
 						))}
 					</div>
@@ -88,24 +88,24 @@ export default function FoodPage() {
 											</div>
 										) : null}
 										{dish.essential ? (
-											<span className='badge badge-plain !text-[9.5px] self-start'>
+											<span className='badge badge-plain !text-[0.59375rem] self-start'>
 												Do not leave without
 											</span>
 										) : null}
 
 										<h3 className={`item-title-lg ${dish.essential ? 'mt-3' : ''}`}>{dish.name}</h3>
 
-										<p className='mt-2.5 text-[13.5px] leading-6 text-[var(--brass)]'>
+										<p className='mt-2.5 text-[0.84375rem] leading-6 text-[var(--brass)]'>
 											{dish.summary}
 										</p>
 
-										<p className='mt-4 flex-1 text-[14px] leading-7 text-[var(--ink-2)]'>
+										<p className='mt-4 flex-1 text-[0.875rem] leading-7 text-[var(--ink-2)]'>
 											{dish.detail}
 										</p>
 
 										<div className='mt-5 border-t border-[var(--rule-soft)] pt-4'>
 											<p className='bb-label'>Where to find it</p>
-											<p className='mt-2 text-[13px] leading-6 text-[var(--ink-3)]'>
+											<p className='mt-2 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 												{dish.whereToFind}
 											</p>
 										</div>
@@ -120,7 +120,7 @@ export default function FoodPage() {
 			<section className='bb-section'>
 				<div className='bb-container'>
 					<OkirRule />
-					<p className='mt-8 max-w-3xl text-[14px] leading-7 text-[var(--ink-3)]'>
+					<p className='mt-8 max-w-3xl text-[0.875rem] leading-7 text-[var(--ink-3)]'>
 						No restaurants are named and no prices are given. Places in this region open and close
 						faster than a guide can track, and the best cooking is in markets and in houses in any
 						case — so what is given is what to look for and roughly where that kind of place is,

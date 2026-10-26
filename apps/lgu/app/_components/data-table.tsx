@@ -127,7 +127,7 @@ export function DataTable({
 					// The arrow always holds its place right of the label, so a heading
 					// does not shift when it is sorted; figure cells are inset by the same
 					// width (`pr-4`) so a label still ends over its numbers.
-					className={`inline-flex cursor-pointer items-center gap-1 text-[10.5px] font-semibold uppercase tracking-[0.1em] transition hover:text-[var(--ink)] ${
+					className={`inline-flex cursor-pointer items-center gap-1 text-[0.65625rem] font-semibold uppercase tracking-[0.1em] transition hover:text-[var(--ink)] ${
 						numeric ? 'text-right' : 'text-left'
 					} ${active ? 'text-[var(--ink)]' : 'text-[var(--ink-3)]'}`}
 				>
@@ -151,10 +151,10 @@ export function DataTable({
 						autoComplete='off'
 						spellCheck={false}
 						placeholder={`Filter ${rows.length} ${filterLabel}`}
-						className='min-w-0 flex-1 bg-transparent text-[14px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+						className='min-w-0 flex-1 bg-transparent text-[0.875rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 					/>
 					{query ? (
-						<span className='num shrink-0 text-[12px] text-[var(--ink-3)]'>
+						<span className='num shrink-0 text-[0.75rem] text-[var(--ink-3)]'>
 							{shown.length} of {rows.length}
 						</span>
 					) : null}
@@ -166,7 +166,7 @@ export function DataTable({
 				<thead>
 					<tr className='border-b border-[var(--ink)]'>
 						{ranked ? (
-							<th scope='col' className='w-10 py-3 pr-3 text-left text-[10.5px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)]'>
+							<th scope='col' className='w-10 py-3 pr-3 text-left text-[0.65625rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)]'>
 								#
 							</th>
 						) : null}
@@ -180,19 +180,19 @@ export function DataTable({
 					{shown.map((row, index) => (
 						<tr key={row.key} className='border-b border-[var(--rule-soft)] align-middle transition-colors hover:bg-[var(--paper-2)]'>
 							{ranked ? (
-								<td className='num w-10 py-3.5 pr-3 text-[13px] text-[var(--ink-3)]'>{index + 1}</td>
+								<td className='num w-10 py-3.5 pr-3 text-[0.8125rem] text-[var(--ink-3)]'>{index + 1}</td>
 							) : null}
 							<th scope='row' className='py-3.5 pr-4 text-left font-normal'>
 								<Link
 									href={row.href}
-									className='text-[15px] font-semibold leading-snug text-[var(--ink)] underline-offset-4 hover:text-[var(--accent)] hover:underline'
+									className='text-[0.9375rem] font-semibold leading-snug text-[var(--ink)] underline-offset-4 hover:text-[var(--accent)] hover:underline'
 								>
 									{row.name}
 								</Link>
-								{row.meta ? <p className='mt-0.5 text-[12.5px] text-[var(--ink-3)]'>{row.meta}</p> : null}
-								{row.mobile ? <p className='mt-0.5 text-[12.5px] text-[var(--ink-2)] md:hidden'>{row.mobile}</p> : null}
+								{row.meta ? <p className='mt-0.5 text-[0.78125rem] text-[var(--ink-3)]'>{row.meta}</p> : null}
+								{row.mobile ? <p className='mt-0.5 text-[0.78125rem] text-[var(--ink-2)] md:hidden'>{row.mobile}</p> : null}
 								{row.detail ? (
-									<p className='mt-2 hidden max-w-xl text-[13px] leading-6 text-[var(--ink-2)] lg:block'>{row.detail}</p>
+									<p className='mt-2 hidden max-w-xl text-[0.8125rem] leading-6 text-[var(--ink-2)] lg:block'>{row.detail}</p>
 								) : null}
 							</th>
 							{columns.map((column) => (
@@ -200,8 +200,8 @@ export function DataTable({
 									key={column.key}
 									className={`py-3.5 ${
 										column.format === 'text'
-											? 'pr-4 text-left text-[14px] text-[var(--ink-2)]'
-											: 'num whitespace-nowrap pl-4 pr-4 text-right text-[13px] tabular-nums text-[var(--ink)] sm:pl-8 lg:pl-10'
+											? 'pr-4 text-left text-[0.875rem] text-[var(--ink-2)]'
+											: 'num whitespace-nowrap pl-4 pr-4 text-right text-[0.8125rem] tabular-nums text-[var(--ink)] sm:pl-8 lg:pl-10'
 									} ${column.hideBelow ? HIDE[column.hideBelow] : ''}`}
 									// A rounded amount shows its exact figure on hover.
 									title={
@@ -219,7 +219,7 @@ export function DataTable({
 			</table>
 
 			{shown.length === 0 ? (
-				<p className='py-10 text-center text-[13.5px] text-[var(--ink-3)]'>
+				<p className='py-10 text-center text-[0.84375rem] text-[var(--ink-3)]'>
 					{query.trim() ? `Nothing here matches “${query.trim()}”.` : 'Nothing here matches these filters.'}
 				</p>
 			) : null}

@@ -22,13 +22,13 @@ export function ServicesTabs({ active, counts }: { active: 'regional' | 'lgu'; c
 							<Link
 								href={href}
 								aria-current={on ? 'page' : undefined}
-								className={`-mb-px inline-flex items-center gap-2 border-b-2 py-3 text-[14.5px] font-semibold transition ${
+								className={`-mb-px inline-flex items-center gap-2 border-b-2 py-3 text-[0.90625rem] font-semibold transition ${
 									on ? 'border-[var(--accent)] text-[var(--ink)]' : 'border-transparent text-[var(--ink-3)] hover:border-[var(--rule)] hover:text-[var(--ink)]'
 								}`}
 							>
 								<Icon size={17} weight={on ? 'duotone' : 'regular'} className={on ? 'text-[var(--accent)]' : ''} aria-hidden='true' />
 								{label}
-								<span className='tabular-nums text-[12.5px] font-medium text-[var(--ink-mute)]'>{counts[key]}</span>
+								<span className='tabular-nums text-[0.78125rem] font-medium text-[var(--ink-mute)]'>{counts[key]}</span>
 							</Link>
 						</li>
 					)

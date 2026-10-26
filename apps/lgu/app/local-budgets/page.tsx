@@ -198,7 +198,7 @@ function PerHundred() {
 				))}
 			</div>
 			<div>
-				<figcaption className='text-[15px] font-semibold text-[var(--ink)]'>
+				<figcaption className='text-[0.9375rem] font-semibold text-[var(--ink)]'>
 					For every ₱100 a BARMM local government received in FY {INCOME_YEAR}
 				</figcaption>
 				<ul className='mt-4'>
@@ -208,11 +208,11 @@ function PerHundred() {
 							<span className='num w-20 shrink-0 text-[1.25rem] font-extrabold leading-none text-[var(--ink)]'>
 								₱{p.share.toFixed(2)}
 							</span>
-							<span className='text-[14px] text-[var(--ink-2)]'>{p.label}</span>
+							<span className='text-[0.875rem] text-[var(--ink-2)]'>{p.label}</span>
 						</li>
 					))}
 				</ul>
-				<p className='mt-3 text-[12px] leading-5 text-[var(--ink-3)]'>
+				<p className='mt-3 text-[0.75rem] leading-5 text-[var(--ink-3)]'>
 					All BARMM provinces, cities and municipalities together: {billions(INCOME.total)}. From BLGF’s
 					Statements of Receipts and Expenditures; FY {INCOME_YEAR} is preliminary.
 				</p>
@@ -261,8 +261,8 @@ function ShareRow({
 	return (
 		<li className='border-b border-[var(--rule-soft)] py-3.5'>
 			<div className='flex items-baseline justify-between gap-4'>
-				<p className='text-[13.5px] font-semibold leading-snug text-[var(--ink)]'>{label}</p>
-				<p className='num shrink-0 text-[15px] font-bold leading-none' style={{ color: tone }}>
+				<p className='text-[0.84375rem] font-semibold leading-snug text-[var(--ink)]'>{label}</p>
+				<p className='num shrink-0 text-[0.9375rem] font-bold leading-none' style={{ color: tone }}>
 					{share}%
 				</p>
 			</div>
@@ -273,7 +273,7 @@ function ShareRow({
 			>
 				<div className='h-full' style={{ width: `${share}%`, background: tone }} />
 			</div>
-			<p className='mt-1.5 text-[11.5px] leading-5 text-[var(--ink-3)]'>
+			<p className='mt-1.5 text-[0.71875rem] leading-5 text-[var(--ink-3)]'>
 				{of} · {basis}
 			</p>
 		</li>
@@ -290,14 +290,14 @@ function LevelPanel({ level }: { level: Level }) {
 					<ul className='mt-5'>
 						{level.receives.map((row) => (
 							<li key={row.detail} className='flex items-baseline gap-5 border-b border-[var(--rule-soft)] py-3.5'>
-								<span className='money num w-20 shrink-0 text-[15px] font-bold leading-none text-[var(--accent)]'>
+								<span className='money num w-20 shrink-0 text-[0.9375rem] font-bold leading-none text-[var(--accent)]'>
 									{row.what}
 								</span>
 								<span className='min-w-0 flex-1'>
-									<span className='block text-[13px] leading-6 text-[var(--ink-2)]'>
+									<span className='block text-[0.8125rem] leading-6 text-[var(--ink-2)]'>
 										{row.detail}
 									</span>
-									<span className='mt-1 block font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+									<span className='mt-1 block font-mono text-[0.5625rem] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
 										{row.basis}
 									</span>
 								</span>
@@ -311,14 +311,14 @@ function LevelPanel({ level }: { level: Level }) {
 					<ul className='mt-5'>
 						{level.levies.map((row) => (
 							<li key={row.detail} className='flex items-baseline gap-5 border-b border-[var(--rule-soft)] py-3.5'>
-								<span className='money num w-20 shrink-0 text-[15px] font-bold leading-none text-[var(--brass)]'>
+								<span className='money num w-20 shrink-0 text-[0.9375rem] font-bold leading-none text-[var(--brass)]'>
 									{row.what}
 								</span>
 								<span className='min-w-0 flex-1'>
-									<span className='block text-[13px] leading-6 text-[var(--ink-2)]'>
+									<span className='block text-[0.8125rem] leading-6 text-[var(--ink-2)]'>
 										{row.detail}
 									</span>
-									<span className='mt-1 block font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+									<span className='mt-1 block font-mono text-[0.5625rem] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
 										{row.basis}
 									</span>
 								</span>
@@ -346,16 +346,16 @@ function LevelPanel({ level }: { level: Level }) {
 						))}
 					</ul>
 					{level.id === 'barangay' ? (
-						<p className='mt-4 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+						<p className='mt-4 text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
 							The treasurer may also buy directly only up to ₱1,000 at a time.{' '}
-							<span className='font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+							<span className='font-mono text-[0.5625rem] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
 								IRR art. 627
 							</span>
 						</p>
 					) : (
-						<p className='mt-4 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+						<p className='mt-4 text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
 							Plus at least ₱1,000 a year in aid to every component barangay.{' '}
-							<span className='font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+							<span className='font-mono text-[0.5625rem] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
 								Code s. 348
 							</span>
 						</p>
@@ -380,7 +380,7 @@ function Section({ id, lead, children }: { id: string; lead: string; children: R
 			<h2 id={id} className={H2}>
 				{TOC.find((item) => item.id === id)!.label}
 			</h2>
-			<p className='mt-5 text-[15px] leading-7 text-[var(--ink-2)]'>{lead}</p>
+			<p className='mt-5 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>{lead}</p>
 			{children}
 		</section>
 	)
@@ -403,13 +403,13 @@ export default function LocalBudgetsPage() {
 					{SOURCES.map((source, index) => (
 						<li key={source.name} className='grid gap-x-8 gap-y-2 border-t border-[var(--rule)] py-6 md:grid-cols-[14rem_minmax(0,1fr)]'>
 							<div>
-								<p className='num font-mono text-[11px] font-semibold text-[var(--brass)]'>{String(index + 1).padStart(2, '0')}</p>
-								<h3 className='mt-1 text-[16px] font-extrabold leading-snug tracking-[-0.01em] text-[var(--ink)]'>{source.name}</h3>
-								<p className='mt-1 text-[12.5px] leading-5 text-[var(--ink-3)]'>From {source.from.charAt(0).toLowerCase() + source.from.slice(1)}</p>
+								<p className='num font-mono text-[0.6875rem] font-semibold text-[var(--brass)]'>{String(index + 1).padStart(2, '0')}</p>
+								<h3 className='mt-1 text-[1rem] font-extrabold leading-snug tracking-[-0.01em] text-[var(--ink)]'>{source.name}</h3>
+								<p className='mt-1 text-[0.78125rem] leading-5 text-[var(--ink-3)]'>From {source.from.charAt(0).toLowerCase() + source.from.slice(1)}</p>
 							</div>
 							<div>
-								<p className='text-[15px] leading-7 text-[var(--ink-2)]'>{source.what}</p>
-								<p className='mt-1 font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>{source.basis}</p>
+								<p className='text-[0.9375rem] leading-7 text-[var(--ink-2)]'>{source.what}</p>
+								<p className='mt-1 font-mono text-[0.5625rem] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>{source.basis}</p>
 							</div>
 						</li>
 					))}
@@ -464,14 +464,14 @@ export default function LocalBudgetsPage() {
 										late ? 'bg-[var(--paper)]' : 'bg-[var(--accent)]'
 									}`}
 								/>
-								<p className='num font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-mute)]'>
+								<p className='num font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-mute)]'>
 									{late ? 'If late' : `Step ${number}`}
 								</p>
 								<p className='money num mt-2 text-[1.05rem] font-extrabold leading-none tracking-[-0.02em] text-[var(--ink)]'>
 									{step.when}
 								</p>
-								<p className='mt-3 text-[13px] leading-6 text-[var(--ink-2)]'>{step.what}</p>
-								<p className='mt-2 font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+								<p className='mt-3 text-[0.8125rem] leading-6 text-[var(--ink-2)]'>{step.what}</p>
+								<p className='mt-2 font-mono text-[0.5625rem] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
 									{step.basis}
 								</p>
 							</li>
@@ -480,13 +480,13 @@ export default function LocalBudgetsPage() {
 				</ol>
 
 				<Rise distance={12}>
-					<p className='mt-12 border-t border-[var(--rule)] pt-5 text-[13px] leading-7 text-[var(--ink-2)]'>
+					<p className='mt-12 border-t border-[var(--rule)] pt-5 text-[0.8125rem] leading-7 text-[var(--ink-2)]'>
 						<span className='font-semibold text-[var(--ink)]'>The development plan is the thing being funded.</span>{' '}
 						A local development council — the chief executive, every punong barangay, and at
 						least a quarter of its seats held by NGOs — writes the multi-year plan. The Annual
 						Investment Plan comes off it, and the budget is enacted on that plan rather than
 						beside it. The 20% development fund above is what pays for it.{' '}
-						<span className='font-mono text-[9px] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+						<span className='font-mono text-[0.5625rem] uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
 							Code s. 343 · IRR arts. 268, 269, 271
 						</span>
 					</p>

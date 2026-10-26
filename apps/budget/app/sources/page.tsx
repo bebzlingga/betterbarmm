@@ -49,7 +49,7 @@ export default function SourcesPage() {
         />
 
         <Rise distance={12}>
-          <div className="mt-10 border-t border-[var(--rule)] pt-6 text-[12.5px] leading-7 text-[var(--ink-3)]">
+          <div className="mt-10 border-t border-[var(--rule)] pt-6 text-[0.78125rem] leading-7 text-[var(--ink-3)]">
             <p>
               Page numbers printed on these pages are the Act&rsquo;s own, as it
               numbers itself. In the PDF they sit {budget.pdfPageOffset} pages
@@ -77,7 +77,7 @@ export default function SourcesPage() {
         <div className="bb-container section-band">
           {/* One column at full width (user decision): how the figures were got,
 					    then, under a rule, how they could still be wrong. */}
-          <div className="grid gap-y-8 text-[15px] leading-8 text-[var(--ink-2)]">
+          <div className="grid gap-y-8 text-[0.9375rem] leading-8 text-[var(--ink-2)]">
             <div>
               {/* Where the document itself comes from, before anything about how
                   it was read. The Ministry publishes the Acts; this workspace only

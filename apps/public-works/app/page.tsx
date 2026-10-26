@@ -43,7 +43,7 @@ export default async function PublicWorksHome({ searchParams }: { searchParams: 
 					kinds={workKinds}
 					initial={{ area, q }}
 				/>
-				<p className='mt-10 max-w-[48rem] text-[13px] leading-6 text-[var(--ink-3)]'>
+				<p className='mt-10 max-w-[48rem] text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 					A <strong className='font-semibold text-[var(--ink-2)]'>likely bid notice</strong> is a Ministry of Public Works
 					notice on PhilGEPS whose title shares the project&rsquo;s distinctive words, posted in its year or the next, for no
 					more than its amount. It is a lead to check, not a confirmed link. Sulu&rsquo;s projects are listed for the years it

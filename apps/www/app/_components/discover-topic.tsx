@@ -400,7 +400,7 @@ function DetailCards({
 											href={card.href}
 											target='_blank'
 											rel='noreferrer'
-											className='mt-6 flex items-center justify-between gap-4 border-t border-[var(--brass-line)] pt-3.5 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
+											className='mt-6 flex items-center justify-between gap-4 border-t border-[var(--brass-line)] pt-3.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
 										>
 											<span>{card.sourceLabel ?? 'Source'}</span>
 											<span aria-hidden='true'>&rarr;</span>
@@ -429,7 +429,7 @@ function DetailCards({
 									<div className='flex items-baseline justify-between gap-3'>
 										<p className='bb-label'>{card.label}</p>
 										{card.value ? (
-											<p className='font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-[var(--accent)]'>
+											<p className='font-mono text-[0.6875rem] font-bold uppercase tracking-[0.1em] text-[var(--accent)]'>
 												{card.value}
 											</p>
 										) : null}
@@ -447,7 +447,7 @@ function DetailCards({
 											href={card.href}
 											target='_blank'
 											rel='noreferrer'
-											className='mt-6 flex items-center justify-between gap-4 border-t border-[var(--rule)] pt-3 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
+											className='mt-6 flex items-center justify-between gap-4 border-t border-[var(--rule)] pt-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
 										>
 											<span>{card.sourceLabel ?? 'Source'}</span>
 											<span aria-hidden='true'>&rarr;</span>
@@ -531,10 +531,10 @@ function PeopleGroups({
 										    counter above these cards reads. A card is narrow enough that the
 										    two still pair at a glance. */}
 										<div className='flex items-baseline justify-between gap-3'>
-											<h4 className='text-[19px] font-extrabold tracking-[-0.03em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
+											<h4 className='text-[1.1875rem] font-extrabold tracking-[-0.03em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
 												{person.name}
 											</h4>
-											<span className='num shrink-0 text-[11px] font-semibold text-[var(--brass)]'>
+											<span className='num shrink-0 text-[0.6875rem] font-semibold text-[var(--brass)]'>
 												{String(index + 1).padStart(2, '0')}
 											</span>
 										</div>
@@ -548,7 +548,7 @@ function PeopleGroups({
 												href={person.href}
 												target='_blank'
 												rel='noreferrer'
-												className='mt-4 flex items-center justify-between gap-4 border-t border-[var(--rule-soft)] pt-3 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
+												className='mt-4 flex items-center justify-between gap-4 border-t border-[var(--rule-soft)] pt-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
 											>
 												<span>BCPCH source</span>
 												<span aria-hidden='true'>&rarr;</span>
@@ -598,7 +598,7 @@ export function ChapterLinkCard({
 					align === 'right' ? 'items-end text-right' : ''
 				}`}
 			>
-				<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--brass)]'>
+				<span className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-[var(--brass)]'>
 					{label}
 				</span>
 				<span className='mt-2.5 max-w-[16ch] text-2xl font-extrabold leading-tight tracking-[-0.035em] text-white sm:text-3xl'>

@@ -38,10 +38,10 @@ export function ProgramTree({ lines, depth = 0 }: { lines: ProgramLine[]; depth?
 							<p
 								className={
 									depth === 0
-										? 'text-[14px] font-bold tracking-[-0.02em] text-[var(--ink)]'
+										? 'text-[0.875rem] font-bold tracking-[-0.02em] text-[var(--ink)]'
 										: depth === 1
-											? 'text-[13.5px] font-semibold text-[var(--ink)]'
-											: 'text-[13px] text-[var(--ink-2)]'
+											? 'text-[0.84375rem] font-semibold text-[var(--ink)]'
+											: 'text-[0.8125rem] text-[var(--ink-2)]'
 								}
 								style={{ paddingInlineStart: `${depth * STEP}rem` }}
 							>
@@ -51,12 +51,12 @@ export function ProgramTree({ lines, depth = 0 }: { lines: ProgramLine[]; depth?
 							<span className='tree-leader' aria-hidden='true' />
 
 							{bare ? (
-								<span className='font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--ink-mute)]'>
+								<span className='font-mono text-[0.625rem] uppercase tracking-[0.12em] text-[var(--ink-mute)]'>
 									see below
 								</span>
 							) : (
 								<p
-									className='money whitespace-nowrap text-[13.5px] font-semibold tabular-nums text-[var(--ink)]'
+									className='money whitespace-nowrap text-[0.84375rem] font-semibold tabular-nums text-[var(--ink)]'
 								>
 									{peso(line.total)}
 								</p>
@@ -96,17 +96,17 @@ export function ObjectTree({
 						<p
 							className={
 								depth === 0
-									? 'text-[16px] font-black tracking-[-0.02em] text-[var(--ink)]'
+									? 'text-[1rem] font-black tracking-[-0.02em] text-[var(--ink)]'
 									: depth === 1
-										? 'text-[13px] font-semibold text-[var(--ink)]'
-										: 'text-[12.5px] text-[var(--ink-2)]'
+										? 'text-[0.8125rem] font-semibold text-[var(--ink)]'
+										: 'text-[0.78125rem] text-[var(--ink-2)]'
 							}
 							style={{ paddingInlineStart: `${depth * STEP}rem` }}
 						>
 							{line.name}
 							{line.amount_derived_from_children ? (
 								<span
-									className='ml-2 font-mono text-[9px] uppercase tracking-[0.12em] text-[var(--ink-mute)]'
+									className='ml-2 font-mono text-[0.5625rem] uppercase tracking-[0.12em] text-[var(--ink-mute)]'
 									title='The Act prints no subtotal on this line; it is the sum of the lines under it.'
 								>
 									summed
@@ -119,13 +119,13 @@ export function ObjectTree({
 						<p className='flex items-baseline gap-3 whitespace-nowrap'>
 							<span
 							className={`money tabular-nums text-[var(--ink)] ${
-								depth === 0 ? 'text-[16px] font-black' : 'text-[13px] font-semibold'
+								depth === 0 ? 'text-[1rem] font-black' : 'text-[0.8125rem] font-semibold'
 							}`}
 						>
 								{line.amount == null ? '—' : peso(line.amount)}
 							</span>
 							{depth === 0 && line.amount != null && whole > 0 ? (
-								<span className='money font-mono text-[11px] font-semibold text-[var(--ink-3)]'>
+								<span className='money font-mono text-[0.6875rem] font-semibold text-[var(--ink-3)]'>
 									{percent((line.amount / whole) * 100)}
 								</span>
 							) : null}

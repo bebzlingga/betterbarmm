@@ -13,7 +13,7 @@ export function LguBreadcrumb({
 	return (
 		<nav
 			aria-label='Breadcrumb'
-			className='flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'
+			className='flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'
 		>
 			<Link href='/' className='transition hover:text-[var(--brass)]'>
 				Local government
@@ -71,7 +71,7 @@ export function LguStat({
 				)}
 			</p>
 			<p className='lgu-stat-label'>{label}</p>
-			{note ? <p className='mt-2 text-[12px] leading-5 text-[var(--ink-3)]'>{note}</p> : null}
+			{note ? <p className='mt-2 text-[0.75rem] leading-5 text-[var(--ink-3)]'>{note}</p> : null}
 		</div>
 	)
 }
@@ -118,7 +118,7 @@ export function LguFigures({
 							)}
 						</p>
 						{figure.detail ? (
-							<p className='mt-3 max-w-[16rem] text-[13px] leading-[1.55] text-[var(--ink-3)]'>{figure.detail}</p>
+							<p className='mt-3 max-w-[16rem] text-[0.8125rem] leading-[1.55] text-[var(--ink-3)]'>{figure.detail}</p>
 						) : null}
 					</StaggerItem>
 				))}
@@ -187,7 +187,7 @@ export function LguMasthead({
 
 					{note ? (
 						<Rise delay={0.25} distance={14}>
-							<p className={`mt-7 text-[15px] leading-7 text-[var(--ink-2)] ${noteBeside ? 'lg:mt-0' : 'lg:max-w-[75%]'} ${noteEnd ? 'lg:text-right lg:leading-6' : ''}`}>
+							<p className={`mt-7 text-[0.9375rem] leading-7 text-[var(--ink-2)] ${noteBeside ? 'lg:mt-0' : 'lg:max-w-[75%]'} ${noteEnd ? 'lg:text-right lg:leading-6' : ''}`}>
 								{note}
 							</p>
 						</Rise>
@@ -229,10 +229,10 @@ export function ShareBar({
 	return (
 		<div>
 			<div className='flex items-baseline justify-between gap-4'>
-				<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+				<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 					{label}
 				</p>
-				<p className='num text-[13px] font-semibold text-[var(--accent)]'>{share}%</p>
+				<p className='num text-[0.8125rem] font-semibold text-[var(--accent)]'>{share}%</p>
 			</div>
 
 			<div className='bb-bar mt-3'>
@@ -254,7 +254,7 @@ export function ShareBar({
 			</div>
 
 			{caption ? (
-				<p className='mt-3 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+				<p className='mt-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
 					{ofLabel}
 				</p>
 			) : null}
@@ -275,7 +275,7 @@ export function LguSourceNote({ className = '' }: { className?: string }) {
 		<Rise className={className} distance={12}>
 			<div className='border-t border-[var(--brass-line)] pt-5'>
 				<p className='bb-label'>About these figures</p>
-				<div className='mt-4 space-y-3 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+				<div className='mt-4 space-y-3 text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
 					<p>
 						Structure from the{' '}
 						<a

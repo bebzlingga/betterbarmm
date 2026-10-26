@@ -57,7 +57,7 @@ export function StepList({
             className='flex flex-col border-b border-[var(--rule)] py-7 sm:[&:nth-child(odd)]:border-r sm:[&:nth-child(odd)]:pr-9 sm:[&:nth-child(even)]:pl-9'
           >
             <Rise delay={index * 0.05} distance={16}>
-              <p className='num text-[13px] font-semibold text-[var(--brass)]'>
+              <p className='num text-[0.8125rem] font-semibold text-[var(--brass)]'>
                 {String(index + 1).padStart(2, '0')}
               </p>
 
@@ -82,7 +82,7 @@ export function StepList({
           >
             <span className='bb-node !top-[-0.5px] hidden -translate-y-1/2 lg:block' aria-hidden='true' />
             <Rise delay={index * 0.05} distance={16}>
-              <p className='num text-[13px] font-semibold text-[var(--brass)]'>
+              <p className='num text-[0.8125rem] font-semibold text-[var(--brass)]'>
                 {String(index + 1).padStart(2, '0')}
               </p>
               <h3 className='mt-4 text-[1.15rem] font-extrabold leading-snug tracking-[-0.025em] text-[var(--ink)] sm:text-[1.3rem]'>
@@ -106,7 +106,7 @@ export function StepList({
             <span className='bb-node' aria-hidden='true' />
 
             <div className='grid gap-x-10 gap-y-3 lg:grid-cols-[minmax(0,4rem)_minmax(0,1fr)]'>
-              <p className='num text-[13px] font-semibold text-[var(--brass)]'>
+              <p className='num text-[0.8125rem] font-semibold text-[var(--brass)]'>
                 {String(index + 1).padStart(2, '0')}
               </p>
 

@@ -36,7 +36,7 @@ function Ladder() {
 						}`}
 					>
 						<div>
-							<p className='num text-[11px] font-medium text-[var(--ink-3)]'>
+							<p className='num text-[0.6875rem] font-medium text-[var(--ink-3)]'>
 								{String(index + 1).padStart(2, '0')}
 							</p>
 							<h3 className='mt-2 text-2xl font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>
@@ -52,14 +52,14 @@ function Ladder() {
 						</div>
 
 						<div>
-							<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+							<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 								You elect
 							</p>
 							<ul className='mt-3'>
 								{rung.elects.map((post) => (
 									<li
 										key={post}
-										className='flex items-baseline gap-2.5 border-b border-[var(--rule-soft)] py-2 text-[13.5px] text-[var(--ink-2)]'
+										className='flex items-baseline gap-2.5 border-b border-[var(--rule-soft)] py-2 text-[0.84375rem] text-[var(--ink-2)]'
 									>
 										<span
 											aria-hidden='true'
@@ -144,7 +144,7 @@ function Lookups() {
 							className='row-in group flex flex-col border-b border-[var(--rule)] py-6 transition hover:bg-[var(--paper-2)] sm:px-6 sm:[&:nth-child(odd)]:border-r'
 						>
 							<div className='flex items-start justify-between gap-4'>
-								<h4 className='text-[16px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
+								<h4 className='text-[1rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
 									{lookup.office}
 								</h4>
 								<ArrowUpRightIcon
@@ -181,7 +181,7 @@ export function DiscoverLguGuide() {
 				<div>
 					<div className='flex flex-wrap items-end justify-between gap-6'>
 						<div>
-							<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--ink-3)]'>
+							<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--ink-3)]'>
 								What the region contains
 							</p>
 							<h3 className='mt-3 text-2xl font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)] sm:text-3xl'>
@@ -192,7 +192,7 @@ export function DiscoverLguGuide() {
 								</span>
 							</h3>
 						</div>
-						<p className='num text-[13px] text-[var(--ink-3)]'>
+						<p className='num text-[0.8125rem] text-[var(--ink-3)]'>
 							{formatNumber(lguData.totals.population)} people · {lguCounts.populationAsOf}
 						</p>
 					</div>

@@ -37,7 +37,7 @@ export default function JournalPage() {
 			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 				{groups.map((group) => (
 					<div key={group.parliament} className='mt-14 first:mt-0'>
-						<h2 className='border-b border-[var(--brass-line)] pb-3 font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--ink)]'>
+						<h2 className='border-b border-[var(--brass-line)] pb-3 font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink)]'>
 							{PARLIAMENT_LABEL[group.parliament]} · {group.journals.length} journals
 						</h2>
 						<ul>
@@ -48,7 +48,7 @@ export default function JournalPage() {
 					</div>
 				))}
 
-				<p className='mt-12 max-w-3xl text-[13px] leading-6 text-[var(--ink-3)]'>
+				<p className='mt-12 max-w-3xl text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 					Parliament numbers its journals within each Parliament, and the published series has gaps — sittings
 					with no journal posted. Nothing after Journal No. 22 of March 2023 has been published. Source:{' '}
 					<a href='https://parliament.bangsamoro.gov.ph/journal-19/' className='rule-link' target='_blank' rel='noreferrer'>
@@ -77,13 +77,13 @@ function JournalRow({ journal }: { journal: Journal }) {
 				className='group grid gap-x-8 gap-y-2 py-5 transition hover:bg-[var(--paper-2)] sm:grid-cols-[11rem_minmax(0,1fr)_9rem]'
 			>
 				<div>
-					<p className='text-[14px] font-semibold text-[var(--ink)]'>{journalDates(journal)}</p>
-					<p className='mt-0.5 text-[12px] text-[var(--ink-3)]'>
+					<p className='text-[0.875rem] font-semibold text-[var(--ink)]'>{journalDates(journal)}</p>
+					<p className='mt-0.5 text-[0.75rem] text-[var(--ink-3)]'>
 						Journal No. {journal.number} · {journal.kind}
 					</p>
 				</div>
-				<p className='text-[13.5px] leading-6 text-[var(--ink-2)] group-hover:text-[var(--ink)]'>{journal.summary}</p>
-				<p className='num text-[12px] leading-6 text-[var(--ink-3)] sm:text-right'>
+				<p className='text-[0.84375rem] leading-6 text-[var(--ink-2)] group-hover:text-[var(--ink)]'>{journal.summary}</p>
+				<p className='num text-[0.75rem] leading-6 text-[var(--ink-3)] sm:text-right'>
 					{measures} measure{measures === 1 ? '' : 's'}
 					<br />
 					{journal.points.length} debate point{journal.points.length === 1 ? '' : 's'}

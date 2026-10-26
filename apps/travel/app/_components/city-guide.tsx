@@ -81,10 +81,10 @@ function Chips({ values, value, onChange }: { values: [string, string, number][]
 					type='button'
 					onClick={() => onChange(key)}
 					data-active={value === key}
-					className='inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--rule)] px-3.5 py-1.5 text-[13px] text-[var(--ink-2)] transition hover:border-[var(--ink)] data-[active=true]:border-[var(--ink)] data-[active=true]:bg-[var(--ink)] data-[active=true]:text-[var(--paper)]'
+					className='inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--rule)] px-3.5 py-1.5 text-[0.8125rem] text-[var(--ink-2)] transition hover:border-[var(--ink)] data-[active=true]:border-[var(--ink)] data-[active=true]:bg-[var(--ink)] data-[active=true]:text-[var(--paper)]'
 				>
 					{text}
-					<span className='num text-[11px] opacity-70'>{count}</span>
+					<span className='num text-[0.6875rem] opacity-70'>{count}</span>
 				</button>
 			))}
 		</div>
@@ -113,27 +113,27 @@ function PlaceCard({
 			)}
 			<div className='flex flex-1 flex-col p-5'>
 				<div className='flex flex-wrap items-center gap-2'>
-					<span className='rounded-full px-2.5 py-0.5 text-[11px] font-semibold text-white' style={{ background: accent }}>
+					<span className='rounded-full px-2.5 py-0.5 text-[0.6875rem] font-semibold text-white' style={{ background: accent }}>
 						{label(place.kind)}
 					</span>
 					{place.halal ? (
-						<span className='rounded-full bg-[color-mix(in_srgb,#3f8f5a_16%,transparent)] px-2.5 py-0.5 text-[11px] font-semibold text-[#2f7a48]'>
+						<span className='rounded-full bg-[color-mix(in_srgb,#3f8f5a_16%,transparent)] px-2.5 py-0.5 text-[0.6875rem] font-semibold text-[#2f7a48]'>
 							Halal
 						</span>
 					) : null}
 					{place.onBookingSites ? (
-						<span className='rounded-full bg-[var(--paper-2)] px-2.5 py-0.5 text-[11px] text-[var(--ink-3)]'>Bookable online</span>
+						<span className='rounded-full bg-[var(--paper-2)] px-2.5 py-0.5 text-[0.6875rem] text-[var(--ink-3)]'>Bookable online</span>
 					) : null}
 				</div>
-				<h3 className='mt-3 text-[16.5px] font-semibold leading-snug tracking-[-0.01em] text-[var(--ink)]'>{place.name}</h3>
+				<h3 className='mt-3 text-[1.03125rem] font-semibold leading-snug tracking-[-0.01em] text-[var(--ink)]'>{place.name}</h3>
 				{place.area ? (
-					<p className='mt-1 flex items-center gap-1 text-[12.5px] text-[var(--ink-3)]'>
+					<p className='mt-1 flex items-center gap-1 text-[0.78125rem] text-[var(--ink-3)]'>
 						<MapPinIcon size={13} aria-hidden='true' />
 						{place.area}
 					</p>
 				) : null}
-				<p className='mt-3 flex-1 text-[13.5px] leading-6 text-[var(--ink-2)]'>{place.note}</p>
-				<div className='mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-[var(--rule-soft)] pt-3 text-[12.5px]'>
+				<p className='mt-3 flex-1 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>{place.note}</p>
+				<div className='mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-[var(--rule-soft)] pt-3 text-[0.78125rem]'>
 					{place.lat != null && onMap ? (
 						<button type='button' onClick={onMap} className='inline-flex cursor-pointer items-center gap-1 font-semibold text-[var(--accent)]'>
 							<MapTrifoldIcon size={14} aria-hidden='true' />
@@ -146,7 +146,7 @@ function PlaceCard({
 							<ArrowSquareOutIcon size={13} aria-hidden='true' />
 						</a>
 					) : null}
-					<span className='ml-auto truncate text-[11.5px] text-[var(--ink-mute)]'>
+					<span className='ml-auto truncate text-[0.71875rem] text-[var(--ink-mute)]'>
 						{place.sources.map((s, i) => (
 							<a key={s.url} href={s.url} target='_blank' rel='noreferrer' className='hover:text-[var(--ink)]'>
 								{i ? ' · ' : ''}
@@ -156,7 +156,7 @@ function PlaceCard({
 					</span>
 				</div>
 				{photo ? (
-					<p className='mt-2 text-[10.5px] text-[var(--ink-mute)]'>
+					<p className='mt-2 text-[0.65625rem] text-[var(--ink-mute)]'>
 						Photo:{' '}
 						<a href={photo.source} target='_blank' rel='noreferrer' className='hover:text-[var(--ink)]'>
 							{photo.credit}, {photo.license}
@@ -172,7 +172,7 @@ function Section({ id, title, lead, children }: { id: string; title: string; lea
 	return (
 		<section id={id} className='scroll-mt-[calc(var(--sticky-top,5rem)+4.5rem)] pt-16'>
 			<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{title}</h2>
-			{lead ? <p className='mt-2 max-w-[46rem] text-[15px] leading-7 text-[var(--ink-3)]'>{lead}</p> : null}
+			{lead ? <p className='mt-2 max-w-[46rem] text-[0.9375rem] leading-7 text-[var(--ink-3)]'>{lead}</p> : null}
 			<div className='mt-7'>{children}</div>
 		</section>
 	)
@@ -192,7 +192,7 @@ function CardGrid<T>({ items, render }: { items: T[]; render: (item: T) => React
 					<button
 						type='button'
 						onClick={() => setAll(true)}
-						className='cursor-pointer rounded-full border border-[var(--ink)] px-6 py-2.5 text-[13.5px] font-semibold text-[var(--ink)] transition hover:bg-[var(--ink)] hover:text-[var(--paper)]'
+						className='cursor-pointer rounded-full border border-[var(--ink)] px-6 py-2.5 text-[0.84375rem] font-semibold text-[var(--ink)] transition hover:bg-[var(--ink)] hover:text-[var(--paper)]'
 					>
 						Show all {items.length}
 					</button>
@@ -301,25 +301,25 @@ export function CityGuideView({
 				<Image src={hero.src} alt={hero.alt} fill priority sizes='100vw' className='-z-10 object-cover' />
 				<div className='absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgba(10,10,10,0.82),rgba(10,10,10,0.25)_55%,rgba(10,10,10,0.1))]' />
 				<div className='bb-container flex min-h-[min(78vh,40rem)] flex-col justify-end pb-12 pt-32 text-white'>
-					<p className='font-[family-name:var(--font-display)] text-[11px] font-semibold uppercase tracking-[0.18em] text-white/80'>
+					<p className='font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-white/80'>
 						Travel guide · Bangsamoro
 					</p>
 					<h1 className='mt-3 font-[family-name:var(--font-display)] text-[clamp(2.6rem,7vw,5rem)] font-extrabold leading-[0.95] tracking-[-0.04em]'>
 						{guide.name}
 					</h1>
-					<p className='mt-4 max-w-[38rem] text-[16px] leading-7 text-white/85'>{intro[0]?.split('. ')[0]}.</p>
+					<p className='mt-4 max-w-[38rem] text-[1rem] leading-7 text-white/85'>{intro[0]?.split('. ')[0]}.</p>
 					<div className='mt-7 flex flex-wrap gap-2'>
 						{[
 							[`${guide.stay.length} places to stay`, 'stay'],
 							[`${guide.eat.length} places to eat`, 'eat'],
 							[`${guide.see.length} things to see`, 'see'],
 						].map(([text, id]) => (
-							<a key={id} href={`#${id}`} className='rounded-full bg-white/15 px-4 py-2 text-[13px] font-semibold text-white backdrop-blur transition hover:bg-white/25'>
+							<a key={id} href={`#${id}`} className='rounded-full bg-white/15 px-4 py-2 text-[0.8125rem] font-semibold text-white backdrop-blur transition hover:bg-white/25'>
 								{text}
 							</a>
 						))}
 					</div>
-					<p className='mt-6 text-[10.5px] text-white/60'>
+					<p className='mt-6 text-[0.65625rem] text-white/60'>
 						Photo:{' '}
 						<a href={hero.source} target='_blank' rel='noreferrer' className='hover:text-white'>
 							{hero.credit}, {hero.license}
@@ -341,7 +341,7 @@ export function CityGuideView({
 								key={tab.id}
 								href={`#${tab.id}`}
 								data-active={active === tab.id}
-								className='inline-flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-[13.5px] font-semibold text-[var(--ink-3)] transition hover:text-[var(--ink)] data-[active=true]:bg-[var(--ink)] data-[active=true]:text-[var(--paper)]'
+								className='inline-flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-[0.84375rem] font-semibold text-[var(--ink-3)] transition hover:text-[var(--ink)] data-[active=true]:bg-[var(--ink)] data-[active=true]:text-[var(--paper)]'
 							>
 								<TabIcon size={16} aria-hidden='true' />
 								{tab.label}
@@ -355,7 +355,7 @@ export function CityGuideView({
 				{/* ---- Overview ---- */}
 				<section id='overview' className='scroll-mt-[calc(var(--sticky-top,5rem)+4.5rem)] pt-14'>
 					<div className='grid gap-12 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-20'>
-						<div className='space-y-5 text-[16px] leading-8 text-[var(--ink-2)]'>
+						<div className='space-y-5 text-[1rem] leading-8 text-[var(--ink-2)]'>
 							{intro.map((p) => (
 								<p key={p.slice(0, 30)}>{p}</p>
 							))}
@@ -364,14 +364,14 @@ export function CityGuideView({
 							<dl className='grid gap-3 rounded-2xl bg-[var(--paper-2)] p-5'>
 								{facts.map((f) => (
 									<div key={f.label}>
-										<dt className='text-[11.5px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>{f.label}</dt>
-										<dd className='mt-1 text-[14px] leading-6 text-[var(--ink)]'>{f.value}</dd>
+										<dt className='text-[0.71875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>{f.label}</dt>
+										<dd className='mt-1 text-[0.875rem] leading-6 text-[var(--ink)]'>{f.value}</dd>
 									</div>
 								))}
 							</dl>
 							<div className='rounded-2xl border-l-4 border-[var(--accent)] bg-[var(--paper-2)] p-5'>
-								<p className='text-[11.5px] font-semibold uppercase tracking-[0.12em] text-[var(--accent)]'>Staying safe</p>
-								<p className='mt-2 text-[14px] leading-6 text-[var(--ink-2)]'>{safety}</p>
+								<p className='text-[0.71875rem] font-semibold uppercase tracking-[0.12em] text-[var(--accent)]'>Staying safe</p>
+								<p className='mt-2 text-[0.875rem] leading-6 text-[var(--ink-2)]'>{safety}</p>
 							</div>
 						</aside>
 					</div>
@@ -388,7 +388,7 @@ export function CityGuideView({
 									key={c.key}
 									type='button'
 									onClick={() => setLayers((l) => (on ? l.filter((k) => k !== c.key) : [...l, c.key]))}
-									className='inline-flex cursor-pointer items-center gap-2 rounded-full border px-3.5 py-1.5 text-[13px] font-semibold transition'
+									className='inline-flex cursor-pointer items-center gap-2 rounded-full border px-3.5 py-1.5 text-[0.8125rem] font-semibold transition'
 									style={on ? { background: c.color, borderColor: c.color, color: '#fff' } : { borderColor: 'var(--rule)', color: 'var(--ink-3)' }}
 								>
 									{c.label}
@@ -419,10 +419,10 @@ export function CityGuideView({
 											</div>
 										) : null}
 										<div className='p-5'>
-											<h3 className='text-[16px] font-semibold text-[var(--ink)]'>{d.name}</h3>
-											<p className='mt-2 text-[13.5px] leading-6 text-[var(--ink-2)]'>{d.note}</p>
+											<h3 className='text-[1rem] font-semibold text-[var(--ink)]'>{d.name}</h3>
+											<p className='mt-2 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>{d.note}</p>
 											{d.whereToTry.length ? (
-												<p className='mt-3 text-[12px] text-[var(--ink-3)]'>Try it at {d.whereToTry.join(', ')}</p>
+												<p className='mt-3 text-[0.75rem] text-[var(--ink-3)]'>Try it at {d.whereToTry.join(', ')}</p>
 											) : null}
 										</div>
 									</article>
@@ -435,7 +435,7 @@ export function CityGuideView({
 					</div>
 					<CardGrid items={eat.shown} render={(p) => <PlaceCard key={p.id} place={p} accent={color('eat')} onMap={() => showOnMap('eat', p.id)} />} />
 					{guide.chains.length ? (
-						<p className='mt-6 text-[13px] text-[var(--ink-3)]'>Also in the city: {guide.chains.join(', ')}.</p>
+						<p className='mt-6 text-[0.8125rem] text-[var(--ink-3)]'>Also in the city: {guide.chains.join(', ')}.</p>
 					) : null}
 				</Section>
 
@@ -453,9 +453,9 @@ export function CityGuideView({
 								<li key={e.name} className='flex gap-4 rounded-2xl bg-[var(--paper-2)] p-5'>
 									<CalendarBlankIcon size={22} className='mt-0.5 shrink-0 text-[var(--accent)]' aria-hidden='true' />
 									<div>
-										<p className='text-[12.5px] font-semibold leading-5 text-[var(--accent)]'>{e.when}</p>
-										<h3 className='mt-1 text-[16px] font-semibold text-[var(--ink)]'>{e.name}</h3>
-										<p className='mt-2 text-[13.5px] leading-6 text-[var(--ink-2)]'>{e.note}</p>
+										<p className='text-[0.78125rem] font-semibold leading-5 text-[var(--accent)]'>{e.when}</p>
+										<h3 className='mt-1 text-[1rem] font-semibold text-[var(--ink)]'>{e.name}</h3>
+										<p className='mt-2 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>{e.note}</p>
 									</div>
 								</li>
 							))}
@@ -470,9 +470,9 @@ export function CityGuideView({
 					<div className='grid grid-cols-[minmax(0,1fr)] gap-4 md:grid-cols-2'>
 						{guide.practical.map((tip) => (
 							<article key={tip.topic + tip.text.slice(0, 20)} className='rounded-2xl border border-[var(--rule)] p-5'>
-								<h3 className='text-[15px] font-semibold text-[var(--ink)]'>{tip.topic}</h3>
-								<p className='mt-2 text-[13.5px] leading-6 text-[var(--ink-2)]'>{tip.text}</p>
-								<p className='mt-3 truncate text-[11.5px] text-[var(--ink-mute)]'>
+								<h3 className='text-[0.9375rem] font-semibold text-[var(--ink)]'>{tip.topic}</h3>
+								<p className='mt-2 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>{tip.text}</p>
+								<p className='mt-3 truncate text-[0.71875rem] text-[var(--ink-mute)]'>
 									{tip.sources.map((s, i) => (
 										<a key={s.url} href={s.url} target='_blank' rel='noreferrer' className='hover:text-[var(--ink)]'>
 											{i ? ' · ' : ''}
@@ -487,7 +487,7 @@ export function CityGuideView({
 					{essentialsByKind.length ? (
 						<div className='mt-10'>
 							<h3 className='text-[1.15rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Essentials</h3>
-							<p className='mt-1 text-[13px] text-[var(--ink-3)]'>
+							<p className='mt-1 text-[0.8125rem] text-[var(--ink-3)]'>
 								Banks, hospitals, pharmacies, terminals and malls on OpenStreetMap.{' '}
 								<button type='button' onClick={() => { setLayers((l) => (l.includes('essential') ? l : [...l, 'essential'])); mapRef.current?.scrollIntoView({ behavior: 'smooth' }) }} className='cursor-pointer font-semibold text-[var(--accent)]'>
 									Show them on the map
@@ -496,10 +496,10 @@ export function CityGuideView({
 							<div className='mt-5 grid gap-x-10 gap-y-6 sm:grid-cols-2 lg:grid-cols-4'>
 								{essentialsByKind.map(([kind, names]) => (
 									<div key={kind}>
-										<p className='text-[11.5px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
+										<p className='text-[0.71875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
 											{kind}
 										</p>
-										<ul className='mt-2 grid gap-1 text-[13px] leading-5 text-[var(--ink-2)]'>
+										<ul className='mt-2 grid gap-1 text-[0.8125rem] leading-5 text-[var(--ink-2)]'>
 											{names.slice(0, 8).map((n) => (
 												<li key={n}>{n}</li>
 											))}
@@ -511,7 +511,7 @@ export function CityGuideView({
 						</div>
 					) : null}
 
-					<p className='mt-12 max-w-[52rem] text-[12px] leading-5 text-[var(--ink-mute)]'>{guide.note}</p>
+					<p className='mt-12 max-w-[52rem] text-[0.75rem] leading-5 text-[var(--ink-mute)]'>{guide.note}</p>
 				</Section>
 			</div>
 		</>

@@ -17,11 +17,11 @@ export function AccidentOpener() {
 				<h1 className='mt-2 text-[clamp(2.1rem,4.4vw,3.4rem)] font-extrabold leading-[1.05] tracking-[-0.025em] text-[var(--ink)]'>
 					Every incident on one map, with the report behind each mark.
 				</h1>
-				<p className='mt-3 text-[15.5px] leading-[1.65] text-[var(--ink-2)]'>
+				<p className='mt-3 text-[0.96875rem] leading-[1.65] text-[var(--ink-2)]'>
 					Heat for where it keeps happening; dots coloured by kind and sized by deaths. Filters, details and each report down the left.
 				</p>
 			</div>
-			<a href='#map' className='bb-btn bb-btn-solid !px-5 !py-3 !text-[10.5px]'>
+			<a href='#map' className='bb-btn bb-btn-solid !px-5 !py-3 !text-[0.65625rem]'>
 				<MapTrifoldIcon size={15} weight='bold' aria-hidden='true' />
 				Open the map
 			</a>

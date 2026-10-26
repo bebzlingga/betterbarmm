@@ -58,7 +58,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
 									href='https://betterbarmm.com/contribute'
 									target='_blank'
 									rel='noreferrer'
-									className='bb-btn bb-btn-accent !px-4 !py-0 !text-[9.5px]'
+									className='bb-btn bb-btn-accent !px-4 !py-0 !text-[0.59375rem]'
 								>
 									<HandHeartIcon size={13} weight='fill' aria-hidden='true' />
 									Contribute

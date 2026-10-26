@@ -51,7 +51,7 @@ export function DiscoverIndexRows({ rows }: { rows: DiscoverIndexRow[] }) {
 						/>
 					</span>
 
-					<span className='bb-row-num num w-10 shrink-0 self-start pt-2 text-[12px] font-semibold text-[var(--brass)] sm:w-14'>
+					<span className='bb-row-num num w-10 shrink-0 self-start pt-2 text-[0.75rem] font-semibold text-[var(--brass)] sm:w-14'>
 						{String(index + 1).padStart(2, '0')}
 					</span>
 

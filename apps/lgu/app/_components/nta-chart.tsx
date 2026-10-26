@@ -26,7 +26,7 @@ export function NtaChart({ unitKey }: { unitKey: string }) {
 		<figure className='m-0 mt-10'>
 			<figcaption className='mb-8 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
 				<h2 className='font-[family-name:var(--font-display)] text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>National Tax Allotment, by year</h2>
-				<span className='text-[12.5px] text-[var(--ink-3)]'>
+				<span className='text-[0.78125rem] text-[var(--ink-3)]'>
 					Received, as reported to BLGF; FY {finances.years.at(-1)} is preliminary. FY {ntaShares.years.join(' and ')}, lighter, are DBM&rsquo;s allocation.
 				</span>
 			</figcaption>
@@ -36,7 +36,7 @@ export function NtaChart({ unitKey }: { unitKey: string }) {
 					// the track under the label row, so the tallest one never overruns.
 					<div key={year} className='flex h-full flex-col items-center justify-end pt-6'>
 						<div className='flex w-full flex-1 flex-col items-center justify-end'>
-							<span className='num mb-1.5 whitespace-nowrap text-[9.5px] text-[var(--ink-2)] sm:text-[12.5px]'>
+							<span className='num mb-1.5 whitespace-nowrap text-[0.59375rem] text-[var(--ink-2)] sm:text-[0.78125rem]'>
 								<span className='sm:hidden'>{nta ? tiny(nta) : '—'}</span>
 								<span className='hidden sm:inline'>{nta ? short(nta) : '—'}</span>
 							</span>
@@ -60,7 +60,7 @@ export function NtaChart({ unitKey }: { unitKey: string }) {
 			</div>
 			<div className='grid gap-1.5 border-t border-[var(--rule)] pt-2 sm:gap-4' style={{ gridTemplateColumns: `repeat(${years.length}, minmax(0, 1fr))` }}>
 				{years.map(({ year }) => (
-					<span key={year} className='num text-center text-[10.5px] text-[var(--ink-3)] sm:text-[12px]'>
+					<span key={year} className='num text-center text-[0.65625rem] text-[var(--ink-3)] sm:text-[0.75rem]'>
 						<span className='sm:hidden'>’{String(year).slice(2)}</span>
 						<span className='hidden sm:inline'>{year}</span>
 					</span>

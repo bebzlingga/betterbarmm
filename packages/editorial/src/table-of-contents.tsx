@@ -74,7 +74,7 @@ export function TableOfContents({
 						<a
 							href={`#${item.id}`}
 							data-active={active === item.id}
-							className='-ml-px block border-l-2 border-transparent py-2 pl-4 text-[13.5px] leading-snug text-[var(--ink-3)] transition hover:text-[var(--ink)] data-[active=true]:border-[var(--accent)] data-[active=true]:font-semibold data-[active=true]:text-[var(--ink)]'
+							className='-ml-px block border-l-2 border-transparent py-2 pl-4 text-[0.84375rem] leading-snug text-[var(--ink-3)] transition hover:text-[var(--ink)] data-[active=true]:border-[var(--accent)] data-[active=true]:font-semibold data-[active=true]:text-[var(--ink)]'
 						>
 							{item.label}
 						</a>

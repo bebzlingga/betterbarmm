@@ -48,15 +48,15 @@ export function CraftsCatalogue() {
 			<section className='craft-weave bg-[radial-gradient(ellipse_at_75%_0%,#b4613f,#7d3f2b_45%,#3e2018)] px-4 py-16 text-[#f4e8dc] sm:px-6 lg:py-24'>
 				<div className='mx-auto grid max-w-[84rem] items-center gap-12 lg:grid-cols-[minmax(0,1fr)_26rem]'>
 					<div>
-					<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[#e7c9a9]'>
+					<p className='font-mono text-[0.65625rem] font-semibold uppercase tracking-[0.14em] text-[#e7c9a9]'>
 						{crafts.length} crafts · {peoples} peoples
 					</p>
-					<h1 className={`${serif} mt-3 max-w-4xl text-[48px] font-bold leading-[1.04] sm:text-[68px] lg:text-[80px]`}>
+					<h1 className={`${serif} mt-3 max-w-4xl text-[3rem] font-bold leading-[1.04] sm:text-[4.25rem] lg:text-[5rem]`}>
 						Living Crafts
 						<br />
 						of the Bangsamoro
 					</h1>
-					<p className={`${serif} mt-5 max-w-2xl text-[18px] leading-[1.6] text-[#ecdccd]`}>
+					<p className={`${serif} mt-5 max-w-2xl text-[1.125rem] leading-[1.6] text-[#ecdccd]`}>
 						What the region weaves, casts and carves: where each piece is made, who still makes it, and where a visitor can watch it made or buy it from the hands that made it.
 					</p>
 					</div>
@@ -90,14 +90,14 @@ export function CraftsCatalogue() {
 						/>
 					</a>
 					<div>
-						<p className='font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[#9a6a4f]'>
+						<p className='font-mono text-[0.65625rem] font-semibold uppercase tracking-[0.14em] text-[#9a6a4f]'>
 							From the Bangsamoro Commission for the Preservation of Cultural Heritage
 						</p>
-						<h2 id='pusaka' className={`${serif} mt-3 text-[40px] font-bold leading-[1.05] sm:text-[52px]`}>
+						<h2 id='pusaka' className={`${serif} mt-3 text-[2.5rem] font-bold leading-[1.05] sm:text-[3.25rem]`}>
 							Pusaka
 						</h2>
-						<p className={`${serif} mt-1 text-[19px] italic text-[#8a6d5c]`}>Embodying Prestige of the BARMM’s Cultural Properties</p>
-						<p className={`${serif} mt-5 max-w-xl text-[17px] leading-[1.65] text-[#5a3d2e]`}>
+						<p className={`${serif} mt-1 text-[1.1875rem] italic text-[#8a6d5c]`}>Embodying Prestige of the BARMM’s Cultural Properties</p>
+						<p className={`${serif} mt-5 max-w-xl text-[1.0625rem] leading-[1.65] text-[#5a3d2e]`}>
 							The commission’s own coffee-table book of the region’s heritage, province by province: 78 cultural items, from the inaul and the brassware of
 							Maguindanao to the okir and torogan of Lanao, Yakan tennun, and the tepo mats and boats of Tawi-Tawi.
 						</p>
@@ -109,21 +109,21 @@ export function CraftsCatalogue() {
 							].map(([n, label]) => (
 								<div key={label}>
 									<dt className='sr-only'>{label}</dt>
-									<dd className={`${serif} text-[30px] font-bold leading-none`}>
-										{n} <span className='font-[family-name:var(--font-dm-sans)] text-[13px] font-normal text-[#8a6d5c]'>{label}</span>
+									<dd className={`${serif} text-[1.875rem] font-bold leading-none`}>
+										{n} <span className='font-[family-name:var(--font-dm-sans)] text-[0.8125rem] font-normal text-[#8a6d5c]'>{label}</span>
 									</dd>
 								</div>
 							))}
 						</dl>
 						<div className='mt-8 flex flex-wrap items-center gap-x-6 gap-y-3'>
-							<a href={PUSAKA.pdf} target='_blank' rel='noreferrer' className={`${serif} inline-flex items-center gap-2 bg-[#3b2419] px-7 py-3 text-[15px] text-[#f4efe8] transition hover:bg-[#5a3424]`}>
-								Read the book <span className='font-[family-name:var(--font-dm-sans)] text-[12px] text-[#d9bba6]'>PDF, 17 MB</span>
+							<a href={PUSAKA.pdf} target='_blank' rel='noreferrer' className={`${serif} inline-flex items-center gap-2 bg-[#3b2419] px-7 py-3 text-[0.9375rem] text-[#f4efe8] transition hover:bg-[#5a3424]`}>
+								Read the book <span className='font-[family-name:var(--font-dm-sans)] text-[0.75rem] text-[#d9bba6]'>PDF, 17 MB</span>
 							</a>
-							<a href={PUSAKA.page} target='_blank' rel='noreferrer' className='inline-flex items-center gap-1 text-[14px] text-[#7b4a35] underline decoration-[#d9c7b5] underline-offset-4 hover:decoration-[#7b4a35]'>
+							<a href={PUSAKA.page} target='_blank' rel='noreferrer' className='inline-flex items-center gap-1 text-[0.875rem] text-[#7b4a35] underline decoration-[#d9c7b5] underline-offset-4 hover:decoration-[#7b4a35]'>
 								On the commission’s site <ArrowUpRightIcon size={12} weight='bold' aria-hidden='true' />
 							</a>
 						</div>
-						<p className='mt-6 max-w-xl text-[13px] leading-[1.6] text-[#8a6d5c]'>
+						<p className='mt-6 max-w-xl text-[0.8125rem] leading-[1.6] text-[#8a6d5c]'>
 							Posted by the commission in February 2025, it still includes Sulu, which the Supreme Court ruled out of BARMM in 2024. For children, the commission also publishes{' '}
 							<a href={PUSAKA.landung} target='_blank' rel='noreferrer' className='underline decoration-[#d9c7b5] underline-offset-4 hover:text-[#5a3424]'>
 								Landung
@@ -137,7 +137,7 @@ export function CraftsCatalogue() {
 			<div className='mx-auto max-w-[84rem] px-4 pt-14 pb-20 sm:px-6 lg:pt-20 lg:pb-28'>
 				{groups.map(({ g, list }) => (
 					<section key={g} id={g} aria-labelledby={`h-${g}`} className='mb-16 scroll-mt-24 last:mb-0'>
-						<h2 id={`h-${g}`} className={`${serif} text-[28px] font-bold`}>
+						<h2 id={`h-${g}`} className={`${serif} text-[1.75rem] font-bold`}>
 							{GROUP[g]}
 						</h2>
 						<ul className='mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4'>
@@ -154,10 +154,10 @@ export function CraftsCatalogue() {
 			{/* Where they are made: every town a craft names, on the map. */}
 			<section aria-labelledby='made' className='bg-[#efe6dc]'>
 				<div className='mx-auto max-w-[84rem] px-4 py-16 sm:px-6 lg:py-20'>
-					<h2 id='made' className={`${serif} text-[28px] font-bold`}>
+					<h2 id='made' className={`${serif} text-[1.75rem] font-bold`}>
 						Where they are made
 					</h2>
-					<p className='mt-2 max-w-2xl text-[14.5px] leading-[1.6] text-[#5a3d2e]'>
+					<p className='mt-2 max-w-2xl text-[0.90625rem] leading-[1.6] text-[#5a3d2e]'>
 						Each dot is a town a source names; the larger, the more crafts made there. A faint dot holds the crafts whose town no source names, on their province.
 					</p>
 					<div className='mt-8'>
@@ -169,19 +169,19 @@ export function CraftsCatalogue() {
 			{buyList.length ? (
 				<section aria-labelledby='buy' className='bg-[#f4efe8]'>
 					<div className='mx-auto max-w-[84rem] px-4 py-16 sm:px-6 lg:py-20'>
-						<h2 id='buy' className={`${serif} text-[28px] font-bold`}>
+						<h2 id='buy' className={`${serif} text-[1.75rem] font-bold`}>
 							Where to buy
 						</h2>
-						<p className='mt-2 max-w-2xl text-[14.5px] leading-[1.6] text-[#5a3d2e]'>Fairs, centres and shops where these crafts are sold, each as dated as its source. Check before you travel.</p>
+						<p className='mt-2 max-w-2xl text-[0.90625rem] leading-[1.6] text-[#5a3d2e]'>Fairs, centres and shops where these crafts are sold, each as dated as its source. Check before you travel.</p>
 						<ul className='mt-8 grid gap-x-12 gap-y-10 sm:grid-cols-2 lg:grid-cols-3'>
 							{buyList.map((b) => (
 								<li key={b.name + b.place} className='border-t border-[#d9c7b5] pt-4'>
-									<p className={`${serif} text-[18px] font-bold`}>{b.url ? <a href={b.url} target='_blank' rel='noreferrer' className='hover:text-[#7b4a35]'>{b.name}</a> : b.name}</p>
-									<p className='mt-0.5 flex items-center gap-1 text-[13px] text-[#8a6d5c]'>
+									<p className={`${serif} text-[1.125rem] font-bold`}>{b.url ? <a href={b.url} target='_blank' rel='noreferrer' className='hover:text-[#7b4a35]'>{b.name}</a> : b.name}</p>
+									<p className='mt-0.5 flex items-center gap-1 text-[0.8125rem] text-[#8a6d5c]'>
 										<MapPinIcon size={13} aria-hidden='true' /> {b.place}
 									</p>
-									<p className='mt-2 text-[14px] leading-[1.6] text-[#5a3d2e]'>{b.note}</p>
-									<p className='mt-2 text-[13px] text-[#5a3d2e]'>
+									<p className='mt-2 text-[0.875rem] leading-[1.6] text-[#5a3d2e]'>{b.note}</p>
+									<p className='mt-2 text-[0.8125rem] text-[#5a3d2e]'>
 										{b.crafts.length ? null : <span className='text-[#8a6d5c]'>Crafts of many kinds</span>}
 										{b.crafts.map((c, i) => (
 											<span key={c.slug}>
@@ -192,7 +192,7 @@ export function CraftsCatalogue() {
 											</span>
 										))}
 									</p>
-									<a href={b.source} target='_blank' rel='noreferrer' className='mt-2 inline-flex items-center gap-0.5 text-[11.5px] text-[#8a6d5c] hover:text-[#5a3424]'>
+									<a href={b.source} target='_blank' rel='noreferrer' className='mt-2 inline-flex items-center gap-0.5 text-[0.71875rem] text-[#8a6d5c] hover:text-[#5a3424]'>
 										Source, {monthYear(b.as_of)} <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
 									</a>
 								</li>
@@ -207,20 +207,20 @@ export function CraftsCatalogue() {
 				<div className='mx-auto max-w-[84rem] px-4 py-16 sm:px-6 lg:py-20'>
 					{festivals.length ? (
 						<>
-							<h2 id='festivals' className={`${serif} text-[28px] font-bold`}>
+							<h2 id='festivals' className={`${serif} text-[1.75rem] font-bold`}>
 								When to go
 							</h2>
-							<p className='mt-2 max-w-2xl text-[14.5px] leading-[1.6] text-[#5a3d2e]'>The festivals where these crafts are shown, worn and sold.</p>
+							<p className='mt-2 max-w-2xl text-[0.90625rem] leading-[1.6] text-[#5a3d2e]'>The festivals where these crafts are shown, worn and sold.</p>
 							<ul className='mt-8 grid gap-x-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-3'>
 								{festivals.map((f) => (
 									<li key={f.name} className='border-t border-[#d9c7b5] pt-4'>
-										<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[#9a6a4f]'>{f.month}</p>
-										<p className={`${serif} mt-1 text-[19px] font-bold`}>{f.name}</p>
-										<p className='mt-0.5 flex items-center gap-1 text-[13px] text-[#8a6d5c]'>
+										<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[#9a6a4f]'>{f.month}</p>
+										<p className={`${serif} mt-1 text-[1.1875rem] font-bold`}>{f.name}</p>
+										<p className='mt-0.5 flex items-center gap-1 text-[0.8125rem] text-[#8a6d5c]'>
 											<MapPinIcon size={13} aria-hidden='true' /> {f.place}
 										</p>
-										<p className='mt-2 text-[14px] leading-[1.6] text-[#5a3d2e]'>{f.note}</p>
-										<a href={f.source} target='_blank' rel='noreferrer' className='mt-2 inline-flex items-center gap-0.5 text-[11.5px] text-[#8a6d5c] hover:text-[#5a3424]'>
+										<p className='mt-2 text-[0.875rem] leading-[1.6] text-[#5a3d2e]'>{f.note}</p>
+										<a href={f.source} target='_blank' rel='noreferrer' className='mt-2 inline-flex items-center gap-0.5 text-[0.71875rem] text-[#8a6d5c] hover:text-[#5a3424]'>
 											Source <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
 										</a>
 									</li>
@@ -230,17 +230,17 @@ export function CraftsCatalogue() {
 					) : null}
 					{makerSupport.length ? (
 						<div className='mt-20'>
-							<h2 className={`${serif} text-[28px] font-bold`}>Help for makers</h2>
-							<p className='mt-2 max-w-2xl text-[14.5px] leading-[1.6] text-[#5a3d2e]'>What the region’s offices list for the people who weave, cast and carve: teaching, registering a workshop, better tools, a table at a fair.</p>
+							<h2 className={`${serif} text-[1.75rem] font-bold`}>Help for makers</h2>
+							<p className='mt-2 max-w-2xl text-[0.90625rem] leading-[1.6] text-[#5a3d2e]'>What the region’s offices list for the people who weave, cast and carve: teaching, registering a workshop, better tools, a table at a fair.</p>
 							<ul className='mt-6 divide-y divide-[#e4d8cb] border-y border-[#e4d8cb]'>
 								{makerSupport.map((m) => (
 									<li key={m.href}>
 										<Link href={m.href} className='group grid gap-1 py-4 sm:grid-cols-[minmax(0,1fr)_10rem] sm:gap-6'>
 											<span>
-												<span className='block text-[15.5px] font-semibold text-[#3b2419] group-hover:text-[#7b4a35]'>{m.name}</span>
-												<span className='block text-[13.5px] leading-[1.55] text-[#5a3d2e]'>{m.why}</span>
+												<span className='block text-[0.96875rem] font-semibold text-[#3b2419] group-hover:text-[#7b4a35]'>{m.name}</span>
+												<span className='block text-[0.84375rem] leading-[1.55] text-[#5a3d2e]'>{m.why}</span>
 											</span>
-											<span className='flex items-center gap-1 text-[12.5px] text-[#8a6d5c] sm:justify-end'>
+											<span className='flex items-center gap-1 text-[0.78125rem] text-[#8a6d5c] sm:justify-end'>
 												{m.office} <ArrowRightIcon size={12} aria-hidden='true' />
 											</span>
 										</Link>
@@ -252,15 +252,15 @@ export function CraftsCatalogue() {
 
 					<div className='mt-16 flex flex-col gap-4 rounded-[8px] bg-[#3b2419] p-8 text-[#f4e8dc] sm:flex-row sm:items-center sm:justify-between'>
 						<div>
-							<p className={`${serif} text-[24px] font-bold`}>A craft we have missed?</p>
-							<p className='mt-1 max-w-xl text-[14px] leading-[1.6] text-[#e7c9a9]'>Or a maker, a shop, a price or a photo of your own. Send it with a source; it is checked before it goes up, and credited to you if you like.</p>
+							<p className={`${serif} text-[1.5rem] font-bold`}>A craft we have missed?</p>
+							<p className='mt-1 max-w-xl text-[0.875rem] leading-[1.6] text-[#e7c9a9]'>Or a maker, a shop, a price or a photo of your own. Send it with a source; it is checked before it goes up, and credited to you if you like.</p>
 						</div>
-						<a href={missing} className='inline-flex shrink-0 items-center gap-2 bg-[#f4efe8] px-6 py-3 text-[14px] font-semibold text-[#3b2419] hover:bg-white'>
+						<a href={missing} className='inline-flex shrink-0 items-center gap-2 bg-[#f4efe8] px-6 py-3 text-[0.875rem] font-semibold text-[#3b2419] hover:bg-white'>
 							<EnvelopeSimpleIcon size={16} aria-hidden='true' /> Send it
 						</a>
 					</div>
 
-					<p className='mt-16 text-[12.5px] leading-[1.7] text-[#8a6d5c]'>
+					<p className='mt-16 text-[0.78125rem] leading-[1.7] text-[#8a6d5c]'>
 						Every fact here is linked to the page it came from. Photos are from Wikimedia Commons under free licences, or from the commission’s book Pusaka, which its site places in the public domain; each is credited on the photo. Items cited to Pusaka come from the book, by page.
 					</p>
 				</div>

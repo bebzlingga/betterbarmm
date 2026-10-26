@@ -52,7 +52,7 @@ export default async function SocialPage({ searchParams }: { searchParams: Promi
             key={s}
             href={`/social?status=${s}`}
             aria-current={s === status ? "page" : undefined}
-            className={`inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-[13px] font-medium transition ${s === status ? "bg-[var(--surface)] text-[var(--ink)] shadow-[var(--shadow-sm)]" : "text-[var(--ink-3)] hover:text-[var(--ink)]"}`}
+            className={`inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-[0.8125rem] font-medium transition ${s === status ? "bg-[var(--surface)] text-[var(--ink)] shadow-[var(--shadow-sm)]" : "text-[var(--ink-3)] hover:text-[var(--ink)]"}`}
           >
             {label}
             {s !== "all" && count(s) ? <span className="tabular-nums text-[var(--ink-mute)]">{count(s)}</span> : null}

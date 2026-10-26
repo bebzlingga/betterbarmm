@@ -24,7 +24,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
 			    workspaces read differently. Set here, once, for this app only:
 			    the landing site keeps the larger size. Important for the same
 			    reason as the panel below — the shared rules are unlayered. */}
-			<main className='[&_.bb-body]:text-[15px]! [&_.section-lead]:text-[15px]!'>{children}</main>
+			<main className='[&_.bb-body]:text-[0.9375rem]! [&_.section-lead]:text-[0.9375rem]!'>{children}</main>
 
 			{/* The project's ask, not the registry's. Same panel, same words, at the
 			    foot of every page of every app — one project, said once. */}

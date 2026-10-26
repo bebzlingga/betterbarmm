@@ -34,7 +34,7 @@ function Marker({ tone, children }: { tone: 'question' | 'privilege'; children: 
 
 	return (
 		<span
-			className={`mt-1 inline-block rounded-full px-1.5 py-0.5 text-[9px] font-bold uppercase leading-none tracking-[0.04em] ${tint}`}
+			className={`mt-1 inline-block rounded-full px-1.5 py-0.5 text-[0.5625rem] font-bold uppercase leading-none tracking-[0.04em] ${tint}`}
 		>
 			{children}
 		</span>
@@ -87,9 +87,9 @@ export function SittingCalendar() {
 										}`}
 									>
 										{week.sits ? (
-											<span className='num text-[11px] font-semibold leading-none'>1:00 pm</span>
+											<span className='num text-[0.6875rem] font-semibold leading-none'>1:00 pm</span>
 										) : isQuestionDay ? null : (
-											<span className='text-[11px] leading-none'>&mdash;</span>
+											<span className='text-[0.6875rem] leading-none'>&mdash;</span>
 										)}
 										{isQuestionDay ? <Marker tone='question'>Questions</Marker> : null}
 										{isPrivilegeDay ? <Marker tone='privilege'>Privilege</Marker> : null}
@@ -127,10 +127,10 @@ function VoteRow({ named, name, answer }: { named: boolean; name: string; answer
 				aria-hidden='true'
 				className={`size-2 shrink-0 rounded-full ${named ? 'bg-[var(--tone-done-fg)]' : 'bg-[var(--ink-mute)]'}`}
 			/>
-			<span className={`flex-1 text-[13px] ${named ? 'text-[var(--ink)]' : 'text-[var(--ink-mute)]'}`}>
+			<span className={`flex-1 text-[0.8125rem] ${named ? 'text-[var(--ink)]' : 'text-[var(--ink-mute)]'}`}>
 				{name}
 			</span>
-			<span className={`num text-[12px] ${named ? 'text-[var(--ink-2)]' : 'text-[var(--ink-mute)]'}`}>
+			<span className={`num text-[0.75rem] ${named ? 'text-[var(--ink-2)]' : 'text-[var(--ink-mute)]'}`}>
 				{answer}
 			</span>
 		</div>

@@ -72,7 +72,7 @@ export function LgsfExplorer({
 		<div>
 			<div className='grid grid-cols-2 gap-3 pb-6 lg:grid-cols-[minmax(0,1fr)_9rem_15rem_14rem] lg:items-end lg:gap-4 lg:pb-10'>
 				<label className='col-span-2 flex w-full min-w-0 max-w-[26rem] flex-col gap-1 lg:col-span-1'>
-					<span className='text-[12px] text-[var(--ink-3)]'>Search</span>
+					<span className='text-[0.75rem] text-[var(--ink-3)]'>Search</span>
 					<span className='flex h-10 items-center gap-3 border border-[var(--rule)] bg-[var(--paper-2)] px-3 focus-within:border-[var(--ink)]'>
 						<MagnifyingGlassIcon className='size-4 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
 						<input
@@ -82,7 +82,7 @@ export function LgsfExplorer({
 							autoComplete='off'
 							spellCheck={false}
 							placeholder='Project, town or barangay'
-							className='min-w-0 flex-1 bg-transparent text-[14px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+							className='min-w-0 flex-1 bg-transparent text-[0.875rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 						/>
 					</span>
 				</label>
@@ -91,7 +91,7 @@ export function LgsfExplorer({
 				<Select label='Province' value={area} onChange={setArea} options={[['', 'All provinces and areas'], ...areas.map((a): [string, string] => [a, a])]} />
 			</div>
 
-			<p className='mb-4 border-y border-[var(--rule-soft)] py-3 text-right text-[13px] text-[var(--ink-3)]'>
+			<p className='mb-4 border-y border-[var(--rule-soft)] py-3 text-right text-[0.8125rem] text-[var(--ink-3)]'>
 				<span className='num font-semibold text-[var(--ink)]'>{kept.length}</span> projects ·{' '}
 				<span className='num font-semibold text-[var(--ink)]'>{peso(allotted)}</span> allotted ·{' '}
 				<span className='num font-semibold text-[var(--ink)]'>{peso(released)}</span> released

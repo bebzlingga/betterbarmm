@@ -46,7 +46,7 @@ function Head({ u }: { u: OrgUnit }) {
 			<span className='font-semibold'>{tidy(u.head.name)}</span>
 			{u.head.title ? <span className='text-[var(--ink-3)]'>, {tidy(u.head.title)}</span> : null}
 			{source ? (
-				<a href={href(source)} target='_blank' rel='noreferrer' className='ml-2 inline-flex items-center gap-0.5 align-baseline text-[11px] text-[var(--ink-3)] hover:text-[var(--accent)]'>
+				<a href={href(source)} target='_blank' rel='noreferrer' className='ml-2 inline-flex items-center gap-0.5 align-baseline text-[0.6875rem] text-[var(--ink-3)] hover:text-[var(--accent)]'>
 					{when(source) ?? 'Source'} <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
 				</a>
 			) : null}
@@ -57,12 +57,12 @@ function Head({ u }: { u: OrgUnit }) {
 function Row({ u, depth }: { u: OrgUnit; depth: number }) {
 	return (
 		<div className='grid gap-x-6 gap-y-0.5 py-2.5 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]'>
-			<p className={`${depth ? 'text-[13px] font-semibold' : 'text-[14px] font-bold'} leading-snug`}>
+			<p className={`${depth ? 'text-[0.8125rem] font-semibold' : 'text-[0.875rem] font-bold'} leading-snug`}>
 				{tidy(u.name)}
-				{u.source_kind === 'law' ? <span className='ml-2 font-mono text-[9px] font-semibold whitespace-nowrap uppercase tracking-[0.12em] text-[var(--ink-mute)] opacity-60'>By law</span> : null}
-				{u.units?.length ? <span className='ml-2 text-[11.5px] font-normal text-[var(--ink-mute)]'>{count(u.units).all}</span> : null}
+				{u.source_kind === 'law' ? <span className='ml-2 font-mono text-[0.5625rem] font-semibold whitespace-nowrap uppercase tracking-[0.12em] text-[var(--ink-mute)] opacity-60'>By law</span> : null}
+				{u.units?.length ? <span className='ml-2 text-[0.71875rem] font-normal text-[var(--ink-mute)]'>{count(u.units).all}</span> : null}
 			</p>
-			<p className='text-[13px] leading-snug'>
+			<p className='text-[0.8125rem] leading-snug'>
 				<Head u={u} />
 			</p>
 		</div>
@@ -102,11 +102,11 @@ export function OfficeStructure({ org }: { org: OrgStructure }) {
 	return (
 		<section aria-labelledby='structure' className='mt-14'>
 			<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
-				<h2 id='structure' className='text-[20px] font-extrabold'>
+				<h2 id='structure' className='text-[1.25rem] font-extrabold'>
 					{/* Counts the people named, not the units: the line beside it says how many units have one. */}
 					Officials <span className='text-[var(--ink-mute)]'>{named}</span>
 				</h2>
-				<p className='text-[12.5px] text-[var(--ink-3)]'>
+				<p className='text-[0.78125rem] text-[var(--ink-3)]'>
 					{named} of {all} units with a named head{org.as_of ? `, as of ${monthYear(org.as_of)}` : ''}
 				</p>
 			</div>
@@ -116,7 +116,7 @@ export function OfficeStructure({ org }: { org: OrgStructure }) {
 				))}
 			</ul>
 			{org.sources.length ? (
-				<p className='mt-3 text-[12.5px] leading-6 text-[var(--ink-mute)] opacity-70'>
+				<p className='mt-3 text-[0.78125rem] leading-6 text-[var(--ink-mute)] opacity-70'>
 					From{' '}
 					{org.sources.map((s, i) => (
 						<span key={s.url}>

@@ -144,7 +144,7 @@ export function BillPathPreview() {
 							</span>
 
 							<span
-								className='bill-path-label text-[12.5px] leading-4 text-[var(--ink-3)] opacity-[.38]'
+								className='bill-path-label text-[0.78125rem] leading-4 text-[var(--ink-3)] opacity-[.38]'
 								style={{ animation: `bp-label-${index} ${timing}` }}
 							>
 								{step.label}

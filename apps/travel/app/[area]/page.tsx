@@ -109,18 +109,18 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 					<div className='grid gap-x-10 gap-y-6 sm:grid-cols-2 lg:grid-cols-4'>
 						<div>
 							<p className='bb-label'>When to go</p>
-							<p className='mt-2.5 text-[13.5px] leading-6 text-[var(--ink-2)]'>{area.whenToGo}</p>
+							<p className='mt-2.5 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>{area.whenToGo}</p>
 						</div>
 						<div>
 							<p className='bb-label'>Languages</p>
-							<p className='mt-2.5 text-[13.5px] leading-6 text-[var(--ink-2)]'>
+							<p className='mt-2.5 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>
 								{area.languages.join(', ')}
 								<span className='text-[var(--ink-3)]'> · Filipino and English widely understood</span>
 							</p>
 						</div>
 						<div>
 							<p className='bb-label'>Known for</p>
-							<p className='mt-2.5 text-[13.5px] leading-6 text-[var(--ink-2)]'>
+							<p className='mt-2.5 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>
 								{area.knownFor.join(' · ')}
 							</p>
 						</div>
@@ -130,7 +130,7 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 						{province && directoryProvince ? (
 							<div>
 								<p className='bb-label'>In the directory</p>
-								<p className='mt-2.5 text-[13.5px] leading-6 text-[var(--ink-2)]'>
+								<p className='mt-2.5 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>
 									{province.municipalities.length}{' '}
 									{province.municipalities.length === 1 ? 'unit' : 'cities and municipalities'}.{' '}
 									<a
@@ -200,13 +200,13 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 												key={`${leg.from}-${leg.to}-${leg.mode}`}
 												className='flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-[var(--rule-soft)] pb-2.5'
 											>
-												<dt className='text-[13.5px] text-[var(--ink-2)]'>
+												<dt className='text-[0.84375rem] text-[var(--ink-2)]'>
 													{leg.from} → {leg.to}
-													<span className='ml-2 font-mono text-[9.5px] uppercase tracking-[0.14em] text-[var(--brass)]'>
+													<span className='ml-2 font-mono text-[0.59375rem] uppercase tracking-[0.14em] text-[var(--brass)]'>
 														{leg.mode}
 													</span>
 												</dt>
-												<dd className='text-[13px] text-[var(--ink-3)]'>{leg.duration}</dd>
+												<dd className='text-[0.8125rem] text-[var(--ink-3)]'>{leg.duration}</dd>
 											</div>
 										))}
 									</dl>
@@ -262,7 +262,7 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 								<li key={unit.slug} className='border-b border-[var(--rule-soft)]'>
 									<Link href={`/${area.slug}/${unit.slug}`} className='group block py-3'>
 										<span className='block font-semibold text-[var(--ink)] transition group-hover:text-[var(--accent)]'>{unit.name}</span>
-										<span className='mt-0.5 block font-mono text-[9.5px] uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+										<span className='mt-0.5 block font-mono text-[0.59375rem] uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 											{!town ? 'Not yet researched' : town.coverage === 'none' ? 'Little found online' : `${town.whereToGo.length} ${town.whereToGo.length === 1 ? 'place' : 'places'} · ${town.stay.length} ${town.stay.length === 1 ? 'stay' : 'stays'}`}
 										</span>
 									</Link>
@@ -299,9 +299,9 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 												<div className='flex flex-wrap items-center gap-x-3 gap-y-1.5'>
 													<span className='tv-kind'>{PLACE_KIND_LABEL[place.kind]}</span>
 													{place.signature ? (
-														<span className='badge badge-plain !text-[9.5px]'>Signature</span>
+														<span className='badge badge-plain !text-[0.59375rem]'>Signature</span>
 													) : null}
-													<span className='font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+													<span className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 														{place.municipality}
 													</span>
 												</div>
@@ -309,7 +309,7 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 												<h3 className='section-title-sm mt-3'>{place.name}</h3>
 
 												{place.alsoKnownAs?.length ? (
-													<p className='mt-1.5 text-[13px] italic text-[var(--ink-3)]'>
+													<p className='mt-1.5 text-[0.8125rem] italic text-[var(--ink-3)]'>
 														Also {place.alsoKnownAs.join(', ')}
 													</p>
 												) : null}
@@ -373,14 +373,14 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 							<div className='grid content-start gap-7'>
 								<div>
 									<p className='bb-label'>Booking</p>
-									<p className='mt-3 text-[14px] leading-7 text-[var(--ink-2)]'>{lodging.booking}</p>
+									<p className='mt-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{lodging.booking}</p>
 								</div>
 
 								<GateList label='What to expect' items={lodging.expect} />
 
 								<div>
 									<p className='bb-label'>When it fills up</p>
-									<p className='mt-3 text-[14px] leading-7 text-[var(--ink-2)]'>{lodging.fillsUp}</p>
+									<p className='mt-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{lodging.fillsUp}</p>
 								</div>
 
 								<Caution label='Verify before you travel'>{lodgingCaveat}</Caution>
@@ -396,10 +396,10 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 										<article key={stay.name} className='tv-card h-full'>
 											<span className='tv-kind'>{LODGING_KIND_LABEL[stay.kind]}</span>
 											<h4 className='item-title-lg mt-3'>{stay.name}</h4>
-											<p className='mt-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+											<p className='mt-1.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 												{stay.town}
 											</p>
-											<p className='mt-3.5 flex-1 text-[13.5px] leading-7 text-[var(--ink-2)]'>
+											<p className='mt-3.5 flex-1 text-[0.84375rem] leading-7 text-[var(--ink-2)]'>
 												{stay.note}
 											</p>
 										</article>
@@ -437,10 +437,10 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 									<Link href={`/routes#${route.slug}`} className='section-title-sm rule-link-quiet'>
 										{route.name}
 									</Link>
-									<p className='mt-2 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
+									<p className='mt-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
 										{route.nights} · base {route.base}
 									</p>
-									<p className='mt-4 text-[14px] leading-7 text-[var(--ink-2)]'>{route.forWhom}</p>
+									<p className='mt-4 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{route.forWhom}</p>
 								</div>
 							))}
 						</div>
@@ -485,10 +485,10 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 										{areaFestivals.map((festival) => (
 											<div key={festival.name}>
 												<p className='item-title'>{festival.name}</p>
-												<p className='mt-1 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
+												<p className='mt-1 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
 													{festival.when}
 												</p>
-												<p className='mt-2 text-[13.5px] leading-6 text-[var(--ink-3)]'>
+												<p className='mt-2 text-[0.84375rem] leading-6 text-[var(--ink-3)]'>
 													{festival.what}
 												</p>
 											</div>

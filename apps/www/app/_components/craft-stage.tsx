@@ -14,7 +14,7 @@ import type { CraftImage, CraftModel } from '../_lib/crafts'
 
 const Scene = dynamic(() => import('./craft-scene'), {
 	ssr: false,
-	loading: () => <p className='absolute inset-0 grid place-items-center text-[12.5px] text-[#8a6d5c]'>Shaping it…</p>,
+	loading: () => <p className='absolute inset-0 grid place-items-center text-[0.78125rem] text-[#8a6d5c]'>Shaping it…</p>,
 })
 
 export function CraftStage({ name, model, images, colors = [], className = '' }: { name: string; model: CraftModel | null; images: CraftImage[]; colors?: string[]; className?: string }) {
@@ -72,11 +72,11 @@ export function CraftStage({ name, model, images, colors = [], className = '' }:
 							className='flex aspect-[4/3] w-full max-w-md items-end rounded-[4px] p-6'
 							style={{ background: `linear-gradient(135deg, ${colors.join(', ') || '#7b4a35, #c89b4a'})` }}
 						>
-							<span className='font-[family-name:var(--font-craft)] text-[28px] font-bold text-white/90 [text-shadow:0_1px_12px_rgba(0,0,0,0.35)]'>{name}</span>
+							<span className='font-[family-name:var(--font-craft)] text-[1.75rem] font-bold text-white/90 [text-shadow:0_1px_12px_rgba(0,0,0,0.35)]'>{name}</span>
 						</span>
 					)}
 				</div>
-				<figcaption className='mt-3 min-h-8 text-[11.5px] leading-4 text-[#8a6d5c] lg:ml-auto lg:max-w-[22rem] lg:text-right'>
+				<figcaption className='mt-3 min-h-8 text-[0.71875rem] leading-4 text-[#8a6d5c] lg:ml-auto lg:max-w-[22rem] lg:text-right'>
 					{photo ? (
 						<span className='line-clamp-2'>{photo.caption}</span>
 					) : model ? (
@@ -103,7 +103,7 @@ export function CraftStage({ name, model, images, colors = [], className = '' }:
 									{i < 0 ? (
 										<span className='flex flex-col items-center text-[#7b4a35]'>
 											<CubeIcon size={22} weight='duotone' aria-hidden='true' />
-											<span className='font-mono text-[9.5px] font-bold tracking-[0.12em]'>3D</span>
+											<span className='font-mono text-[0.59375rem] font-bold tracking-[0.12em]'>3D</span>
 										</span>
 									) : (
 										// eslint-disable-next-line @next/next/no-img-element

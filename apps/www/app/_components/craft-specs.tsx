@@ -42,11 +42,11 @@ export function CraftSpecs({ specs, labelClass }: { specs: (readonly [string, st
 	}, [specs])
 
 	return (
-		<dl ref={ref} className='flex flex-wrap gap-x-12 gap-y-6 text-[13.5px] leading-[1.6] sm:flex-nowrap lg:max-w-[90%]'>
+		<dl ref={ref} className='flex flex-wrap gap-x-12 gap-y-6 text-[0.84375rem] leading-[1.6] sm:flex-nowrap lg:max-w-[90%]'>
 			{/* Only what a source says: a spec it does not give is left out rather than guessed. */}
 			{specs.map(([k, v]) => (
 				<div key={k} className='min-w-[7.5rem] max-w-[20em] shrink'>
-					<dt className={`${labelClass} text-[17px] font-bold text-[#f4e8dc]`}>{k}</dt>
+					<dt className={`${labelClass} text-[1.0625rem] font-bold text-[#f4e8dc]`}>{k}</dt>
 					<dd className='mt-2 text-balance text-[#e2cbb8]'>{v}</dd>
 				</div>
 			))}

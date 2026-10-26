@@ -317,7 +317,7 @@ export function MemberIdentity({ member, titleId }: { member: Member; titleId?: 
 			{/* A new Member's background is not Parliament's biosketch — it was
 			    gathered from news and official sources, so it says where from. */}
 			{member.elected && member.phases.length === 1 && member.elected.sources.length > 0 ? (
-				<p className='mt-3 text-[12.5px] leading-6 text-[var(--ink-3)]'>
+				<p className='mt-3 text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
 					Background compiled from{' '}
 					{member.elected.sources.map((source, index) => (
 						<span key={source.url}>

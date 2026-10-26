@@ -143,7 +143,7 @@ export default function LguHomePage() {
 									<dd className='bb-figure-sm text-[var(--ink)]'>
 										<Counter value={fact.value} group={fact.group} prefix={fact.prefix} suffix={fact.suffix} decimals={fact.decimals} />
 									</dd>
-									<p className='mt-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+									<p className='mt-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 										{fact.label}
 									</p>
 								</div>
@@ -159,7 +159,7 @@ export default function LguHomePage() {
 					<h2 className='bb-display-sm text-[var(--ink)]'>
 						{lguData.totals.provinces} provinces, a city and a special area
 					</h2>
-					<p className='text-[15px] leading-7 text-[var(--ink-2)]'>
+					<p className='text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
 						Open an area to see its cities, municipalities, barangays and officials.
 					</p>
 				</div>
@@ -169,8 +169,8 @@ export default function LguHomePage() {
 				{/* The numbers here and PSA's do not agree, and saying which is which
 				    is the whole job — so it is shown, not folded away (user decision). */}
 				<aside className='mt-10 bg-[var(--paper-2)] px-6 py-6 sm:px-8'>
-					<h3 className='text-[15px] font-semibold text-[var(--ink)]'>Why this total is smaller than PSA&rsquo;s</h3>
-					<div className='mt-3 space-y-3 text-[14px] leading-7 text-[var(--ink-2)]'>
+					<h3 className='text-[0.9375rem] font-semibold text-[var(--ink)]'>Why this total is smaller than PSA&rsquo;s</h3>
+					<div className='mt-3 space-y-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>
 						<p>{lguCounts.sulnote}</p>
 						<p>{lguCounts.reconcileNote}</p>
 					</div>

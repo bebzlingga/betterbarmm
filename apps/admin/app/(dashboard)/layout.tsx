@@ -27,12 +27,12 @@ export default async function DashboardLayout({ children }: { children: React.Re
 
   const account = (
     <div className="flex items-center gap-2.5 rounded-lg px-1.5 py-1">
-      <span className="grid size-8 shrink-0 place-items-center rounded-full bg-[var(--accent)] font-[family-name:var(--font-display)] text-[11px] font-semibold text-[var(--accent-ink)]">
+      <span className="grid size-8 shrink-0 place-items-center rounded-full bg-[var(--accent)] font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold text-[var(--accent-ink)]">
         {initials(profile.name || profile.email)}
       </span>
       <div className="min-w-0 flex-1">
-        <p className="truncate text-[13px] font-medium">{profile.name || profile.email}</p>
-        <p className="text-[11px] capitalize text-[var(--ink-3)]">{profile.role}</p>
+        <p className="truncate text-[0.8125rem] font-medium">{profile.name || profile.email}</p>
+        <p className="text-[0.6875rem] capitalize text-[var(--ink-3)]">{profile.role}</p>
       </div>
       <form action={signOut}>
         <button type="submit" className="btn btn-ghost btn-sm !px-2" aria-label="Sign out" title="Sign out">
@@ -44,8 +44,8 @@ export default async function DashboardLayout({ children }: { children: React.Re
 
   const brand = (
     <Link href="/" className="flex items-center gap-2.5">
-      <span className="grid size-8 place-items-center rounded-lg bg-[var(--accent)] font-[family-name:var(--font-display)] text-[15px] font-bold text-[var(--accent-ink)]">B</span>
-      <span className="font-[family-name:var(--font-display)] text-[15px] font-semibold tracking-[-0.01em]">
+      <span className="grid size-8 place-items-center rounded-lg bg-[var(--accent)] font-[family-name:var(--font-display)] text-[0.9375rem] font-bold text-[var(--accent-ink)]">B</span>
+      <span className="font-[family-name:var(--font-display)] text-[0.9375rem] font-semibold tracking-[-0.01em]">
         BetterBARMM <span className="font-normal text-[var(--ink-3)]">Admin</span>
       </span>
     </Link>

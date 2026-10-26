@@ -23,7 +23,7 @@ export function PesoTable({ rows, years }: { rows: PesoRow[]; years: number[] })
 	return (
 		<div>
 			<div className='flex flex-wrap items-end justify-between gap-4 pb-16'>
-				<div className='flex min-h-10 flex-wrap items-center gap-x-6 gap-y-2 text-[12.5px] text-[var(--ink-2)]'>
+				<div className='flex min-h-10 flex-wrap items-center gap-x-6 gap-y-2 text-[0.78125rem] text-[var(--ink-2)]'>
 					<span className='inline-flex items-center gap-2'>
 						<span className='h-2.5 w-4 bg-[var(--ink-mute)] opacity-50' aria-hidden='true' /> Budget to buy with
 					</span>
@@ -43,8 +43,8 @@ export function PesoTable({ rows, years }: { rows: PesoRow[]; years: number[] })
 				{data.map((r) => (
 					<li key={r.key} className='grid gap-x-10 gap-y-3 border-b border-[var(--rule)] py-5 lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)_14rem]'>
 						<div className='min-w-0'>
-							<p className='text-[14.5px] font-semibold leading-6 text-[var(--ink)]'>{r.name}</p>
-							<p className='mt-1 text-[12px] leading-5 text-[var(--ink-3)]'>
+							<p className='text-[0.90625rem] font-semibold leading-6 text-[var(--ink)]'>{r.name}</p>
+							<p className='mt-1 text-[0.75rem] leading-5 text-[var(--ink-3)]'>
 								{r.offices.length === 1 ? (
 									<Link href={`/${r.offices[0]!.slug}`} className='rule-link'>
 										Its notices
@@ -64,7 +64,7 @@ export function PesoTable({ rows, years }: { rows: PesoRow[]; years: number[] })
 							<span className='h-2.5 bg-[var(--accent)]' style={{ width: `${(r.d / max) * 100}%` }} />
 							<span className='h-2.5 bg-[var(--ink)]' style={{ width: `${(r.a / max) * 100}%` }} />
 						</div>
-						<dl className='grid grid-cols-3 gap-3 text-[12px] lg:grid-cols-1 lg:gap-1 lg:text-right'>
+						<dl className='grid grid-cols-3 gap-3 text-[0.75rem] lg:grid-cols-1 lg:gap-1 lg:text-right'>
 							<div className='lg:flex lg:justify-end lg:gap-2'>
 								<dt className='text-[var(--ink-3)]'>Budget</dt>
 								<dd className='num font-semibold text-[var(--ink)]'>{peso(r.b)}</dd>

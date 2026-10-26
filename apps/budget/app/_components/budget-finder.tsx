@@ -65,10 +65,10 @@ function HitRow({
 			className='finder-hit'
 		>
 			<span className='min-w-0 flex-1 text-left'>
-				<span className='block truncate text-[15px] font-semibold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+				<span className='block truncate text-[0.9375rem] font-semibold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 					{hit.title}
 				</span>
-				<span className='mt-1 block truncate font-mono text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+				<span className='mt-1 block truncate font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
 					{KIND[hit.type]} · {hit.where}
 				</span>
 			</span>
@@ -76,7 +76,7 @@ function HitRow({
 			{/* Most provisions state no figure of their own — they are a rule about
 			    money counted elsewhere, and an invented total would be worse than
 			    a blank. */}
-			<span className='money shrink-0 text-right text-[12px] font-semibold text-[var(--ink-2)]'>
+			<span className='money shrink-0 text-right text-[0.75rem] font-semibold text-[var(--ink-2)]'>
 				{hit.amount == null ? '—' : peso(hit.amount)}
 			</span>
 		</button>
@@ -216,9 +216,9 @@ export function BudgetFinder({ children }: { children: React.ReactNode }) {
 									aria-expanded={hits.length > 0}
 									aria-controls='budget-finder-results'
 									placeholder='Health, scholarship, Marawi, bridges…'
-									className='min-w-0 flex-1 bg-transparent text-[16px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+									className='min-w-0 flex-1 bg-transparent text-[1rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 								/>
-								<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[9.5px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
+								<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
 									Esc
 								</kbd>
 							</div>
@@ -235,7 +235,7 @@ export function BudgetFinder({ children }: { children: React.ReactNode }) {
 								))}
 
 								{query.trim().length >= 2 && hits.length === 0 ? (
-									<p className='px-5 py-8 text-center text-[13.5px] leading-6 text-[var(--ink-3)]'>
+									<p className='px-5 py-8 text-center text-[0.84375rem] leading-6 text-[var(--ink-3)]'>
 										Nothing in the FY {budget.fiscalYear} Act matches “{query.trim()}”. Only this
 										one fiscal year is here, and the Act names things in its own words — try
 										“scholarship” rather than “student aid”.
@@ -243,7 +243,7 @@ export function BudgetFinder({ children }: { children: React.ReactNode }) {
 								) : null}
 
 								{query.trim().length < 2 ? (
-									<p className='px-5 py-8 text-center text-[13.5px] leading-6 text-[var(--ink-3)]'>
+									<p className='px-5 py-8 text-center text-[0.84375rem] leading-6 text-[var(--ink-3)]'>
 										Type two letters. Sectors, offices, programs, the rules attached to them
 										and the {budget.projectCount} named construction projects are all searched at
 										once — a province finds the projects in it, “bridge” finds every bridge.
@@ -251,7 +251,7 @@ export function BudgetFinder({ children }: { children: React.ReactNode }) {
 								) : null}
 							</div>
 
-							<div className='flex items-center justify-between gap-4 border-t border-[var(--rule)] px-5 py-3 font-mono text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+							<div className='flex items-center justify-between gap-4 border-t border-[var(--rule)] px-5 py-3 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
 								<span>
 									{budget.sectorCount} sectors · {budget.officeCount + budget.fundCount} offices ·{' '}
 									{budget.programCount} programs · {budget.provisionCount} rules ·{' '}
@@ -289,10 +289,10 @@ export function FinderTrigger({
 		return (
 			<button type='button' onClick={open} className={`finder-field ${className}`}>
 				<MagnifyingGlassIcon className='size-4 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
-				<span className='flex-1 text-left text-[14.5px] text-[var(--ink-mute)]'>
+				<span className='flex-1 text-left text-[0.90625rem] text-[var(--ink-mute)]'>
 					Search an office, a program, or a project near you
 				</span>
-				<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[9.5px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
+				<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
 					/
 				</kbd>
 			</button>

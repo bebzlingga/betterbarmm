@@ -37,7 +37,7 @@ export function RegionNtaTrend() {
 			<div className='grid h-48 items-end gap-1.5 sm:gap-4' style={cols}>
 				{NTA_TREND.map(({ year, total, allocated }) => (
 					<div key={year} className='flex h-full flex-col items-center justify-end'>
-						<span className='num mb-1.5 whitespace-nowrap text-[9.5px] text-[var(--ink-2)] sm:text-[12.5px]'>
+						<span className='num mb-1.5 whitespace-nowrap text-[0.59375rem] text-[var(--ink-2)] sm:text-[0.78125rem]'>
 							<span className='sm:hidden'>{(total / 1e9).toFixed(1)}B</span>
 							<span className='hidden sm:inline'>₱{(total / 1e9).toFixed(1)}B</span>
 						</span>
@@ -55,17 +55,17 @@ export function RegionNtaTrend() {
 			</div>
 			<div className='grid gap-1.5 border-t border-[var(--rule)] pt-2 sm:gap-4' style={cols}>
 				{NTA_TREND.map(({ year }) => (
-					<span key={year} className='num text-center text-[10.5px] text-[var(--ink-3)] sm:text-[12px]'>
+					<span key={year} className='num text-center text-[0.65625rem] text-[var(--ink-3)] sm:text-[0.75rem]'>
 						<span className='sm:hidden'>’{String(year).slice(2)}</span>
 						<span className='hidden sm:inline'>{year}</span>
 					</span>
 				))}
 			</div>
 			<figcaption className='mt-4 flex flex-wrap items-baseline justify-between gap-2'>
-				<span className='text-[12.5px] font-semibold text-[var(--ink)]'>
+				<span className='text-[0.78125rem] font-semibold text-[var(--ink)]'>
 					National Tax Allotment received by BARMM’s local governments, by year
 				</span>
-				<span className='text-[11px] text-[var(--ink-3)]'>
+				<span className='text-[0.6875rem] text-[var(--ink-3)]'>
 					Reported to BLGF by {Math.min(...NTA_TREND.map((y) => y.units))}–{Math.max(...NTA_TREND.filter((y) => !y.allocated).map((y) => y.units))}{' '}
 					units a year; FY {finances.years.at(-1)} is preliminary. FY {ntaShares.years.join(' and ')}, lighter, are DBM&rsquo;s allocation to all {NTA_TREND.at(-1)!.units}. The 2022 jump is the Mandanas ruling.
 				</span>

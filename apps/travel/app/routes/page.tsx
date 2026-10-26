@@ -61,7 +61,7 @@ export default function RoutesPage() {
 										<div key={day.label} className='tv-day'>
 											<p className='bb-label'>{day.label}</p>
 											<p className='item-title mt-2'>{day.where}</p>
-											<p className='mt-2.5 text-[14px] leading-7 text-[var(--ink-2)]'>{day.what}</p>
+											<p className='mt-2.5 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{day.what}</p>
 										</div>
 									))}
 								</div>

@@ -9,8 +9,8 @@ import { CheckIcon, ClockIcon, LinkIcon, MinusIcon } from '@phosphor-icons/react
    ============================================================ */
 
 const FIG = 'bb-graphic my-10 leading-[1.7] border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-7'
-const CAPTION = 'mt-5 text-[12.5px] leading-[1.7] text-[var(--ink-3)]'
-const KICKER = 'text-[10.5px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'
+const CAPTION = 'mt-5 text-[0.78125rem] leading-[1.7] text-[var(--ink-3)]'
+const KICKER = 'text-[0.65625rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'
 
 /* ---- 0. Three records, chained ---- */
 
@@ -24,7 +24,7 @@ export function Blocks() {
 	return (
 		<figure className={FIG}>
 			<p className={KICKER}>How the chain holds</p>
-			<p className='mt-2 text-[15px] font-bold leading-snug text-[var(--ink)]'>Each record carries the fingerprint of the one before it.</p>
+			<p className='mt-2 text-[0.9375rem] font-bold leading-snug text-[var(--ink)]'>Each record carries the fingerprint of the one before it.</p>
 			<ol className='!mt-6 grid !list-none items-stretch gap-3 !pl-0 sm:grid-cols-[1fr_auto_1fr_auto_1fr] [&>li+li]:!mt-0'>
 				{BLOCKS.flatMap((block, i) => [
 					...(i
@@ -35,9 +35,9 @@ export function Blocks() {
 							]
 						: []),
 					<li key={block.what} className='flex flex-col border border-[var(--rule)] bg-[var(--paper-2)] p-4'>
-						<span className='text-[13.5px] font-bold text-[var(--ink)]'>{block.what}</span>
-						<span className='mt-0.5 text-[12px] leading-[1.7] text-[var(--ink-3)]'>{block.detail}</span>
-						<span className='mt-4 grid gap-1 font-mono text-[11px]'>
+						<span className='text-[0.84375rem] font-bold text-[var(--ink)]'>{block.what}</span>
+						<span className='mt-0.5 text-[0.75rem] leading-[1.7] text-[var(--ink-3)]'>{block.detail}</span>
+						<span className='mt-4 grid gap-1 font-mono text-[0.6875rem]'>
 							<span className='flex justify-between gap-2'>
 								<span className='text-[var(--ink-mute)]'>previous</span>
 								<span className={block.prev === '—' ? 'text-[var(--ink-mute)]' : 'font-semibold text-[var(--brass)]'}>{block.prev}</span>
@@ -74,27 +74,27 @@ export function PesoTrail() {
 	return (
 		<figure className={FIG}>
 			<p className={KICKER}>Following one peso</p>
-			<p className='mt-2 text-[15px] font-bold leading-snug text-[var(--ink)]'>
+			<p className='mt-2 text-[0.9375rem] font-bold leading-snug text-[var(--ink)]'>
 				Every record carries the same linkage ID, so a line item can be traced to the contractor it paid.
 			</p>
 			<ol className='!mt-6 grid !list-none gap-0 !pl-0 sm:grid-cols-2 lg:grid-cols-4 [&>li+li]:!mt-0'>
 				{TRAIL.map((step, i) => (
 					<li key={step.stage} className='relative flex gap-3 pb-6 pr-4'>
 						<span className='flex flex-col items-center'>
-							<span className='grid size-7 shrink-0 place-items-center rounded-full border border-[var(--accent)] bg-[var(--paper)] text-[11px] font-bold text-[var(--accent)]'>
+							<span className='grid size-7 shrink-0 place-items-center rounded-full border border-[var(--accent)] bg-[var(--paper)] text-[0.6875rem] font-bold text-[var(--accent)]'>
 								{i + 1}
 							</span>
 							{i < TRAIL.length - 1 ? <span aria-hidden='true' className='mt-1 w-px flex-1 bg-[var(--rule)] sm:hidden' /> : null}
 						</span>
 						<span className='min-w-0'>
-							<span className='block text-[13.5px] font-bold text-[var(--ink)]'>{step.stage}</span>
-							<span className='block text-[12.5px] leading-[1.7] text-[var(--ink-2)]'>{step.doc}</span>
-							<span className='mt-0.5 block text-[11.5px] text-[var(--ink-mute)]'>{step.who}</span>
+							<span className='block text-[0.84375rem] font-bold text-[var(--ink)]'>{step.stage}</span>
+							<span className='block text-[0.78125rem] leading-[1.7] text-[var(--ink-2)]'>{step.doc}</span>
+							<span className='mt-0.5 block text-[0.71875rem] text-[var(--ink-mute)]'>{step.who}</span>
 						</span>
 					</li>
 				))}
 			</ol>
-			<p className='flex items-center gap-2 border-t border-[var(--rule)] pt-4 text-[12.5px] text-[var(--ink-2)]'>
+			<p className='flex items-center gap-2 border-t border-[var(--rule)] pt-4 text-[0.78125rem] text-[var(--ink-2)]'>
 				<LinkIcon size={14} weight='bold' className='shrink-0 text-[var(--accent)]' aria-hidden='true' />
 				One ID from step 1 to step 8, posted within 7 working days at each step.
 			</p>
@@ -122,14 +122,14 @@ export function Coverage() {
 	return (
 		<figure className={FIG}>
 			<p className={KICKER}>What CADENA reaches</p>
-			<p className='mt-2 text-[15px] font-bold leading-snug text-[var(--ink)]'>The trail runs to the regional border, then stops.</p>
+			<p className='mt-2 text-[0.9375rem] font-bold leading-snug text-[var(--ink)]'>The trail runs to the regional border, then stops.</p>
 			<div className='mt-6 overflow-x-auto'>
 				<table className='w-full min-w-[40rem] border-collapse text-left'>
 					<thead>
 						<tr>
 							<th className='w-[34%] pb-3 pr-3' />
 							{STAGES.map((stage) => (
-								<th key={stage} className='pb-3 text-center text-[10.5px] font-semibold uppercase tracking-[0.08em] text-[var(--ink-3)]'>
+								<th key={stage} className='pb-3 text-center text-[0.65625rem] font-semibold uppercase tracking-[0.08em] text-[var(--ink-3)]'>
 									{stage}
 								</th>
 							))}
@@ -139,8 +139,8 @@ export function Coverage() {
 						{ROWS.map((row, r) => (
 							<tr key={row.who} className={`border-t ${r === 2 ? 'border-t-2 border-dashed border-[var(--ink)]' : 'border-[var(--rule)]'}`}>
 								<td className='py-3 pr-3 align-top'>
-									<span className='block text-[13.5px] font-bold text-[var(--ink)]'>{row.who}</span>
-									<span className='block text-[11.5px] leading-[1.7] text-[var(--ink-3)]'>{row.note}</span>
+									<span className='block text-[0.84375rem] font-bold text-[var(--ink)]'>{row.who}</span>
+									<span className='block text-[0.71875rem] leading-[1.7] text-[var(--ink-3)]'>{row.note}</span>
 								</td>
 								{row.cells.map((cell, c) => (
 									<td key={c} className='py-3 text-center align-middle'>
@@ -155,7 +155,7 @@ export function Coverage() {
 					</tbody>
 				</table>
 			</div>
-			<div className='mt-4 flex flex-wrap gap-x-5 gap-y-2 text-[12px] text-[var(--ink-2)]'>
+			<div className='mt-4 flex flex-wrap gap-x-5 gap-y-2 text-[0.75rem] text-[var(--ink-2)]'>
 				{(['yes', 'part', 'no'] as const).map((cell) => (
 					<span key={cell} className='inline-flex items-center gap-2'>
 						<span className={`inline-grid size-5 place-items-center rounded-full ${MARK[cell].tone}`}>{MARK[cell].icon}</span>
@@ -186,20 +186,20 @@ export function BillPath() {
 	return (
 		<figure className={FIG}>
 			<p className={KICKER}>Where the bill stands</p>
-			<p className='mt-2 text-[15px] font-bold leading-snug text-[var(--ink)]'>Passed by one chamber, held in a House committee since May.</p>
+			<p className='mt-2 text-[0.9375rem] font-bold leading-snug text-[var(--ink)]'>Passed by one chamber, held in a House committee since May.</p>
 			<ol className='!mt-6 grid !list-none gap-4 !pl-0 sm:grid-cols-3 lg:grid-cols-6 [&>li+li]:!mt-0'>
 				{PATH.map((step) => (
 					<li key={step.what} className='border-t-2 pt-3' style={{ borderColor: step.state === 'next' ? 'var(--rule)' : 'var(--accent)' }}>
 						<span
-							className={`inline-flex items-center gap-1 text-[10.5px] font-semibold uppercase tracking-[0.1em] ${
+							className={`inline-flex items-center gap-1 text-[0.65625rem] font-semibold uppercase tracking-[0.1em] ${
 								step.state === 'now' ? 'text-[var(--accent)]' : step.state === 'done' ? 'text-[var(--ink-3)]' : 'text-[var(--ink-mute)]'
 							}`}
 						>
 							{step.state === 'done' ? <CheckIcon size={12} weight='bold' aria-hidden='true' /> : step.state === 'now' ? <ClockIcon size={12} weight='bold' aria-hidden='true' /> : null}
 							{step.state === 'done' ? 'Done' : step.state === 'now' ? 'Stuck here' : 'Still to come'}
 						</span>
-						<span className='mt-1.5 block text-[13px] font-bold leading-snug text-[var(--ink)]'>{step.what}</span>
-						<span className='num mt-0.5 block text-[11.5px] text-[var(--ink-3)]'>{step.when}</span>
+						<span className='mt-1.5 block text-[0.8125rem] font-bold leading-snug text-[var(--ink)]'>{step.what}</span>
+						<span className='num mt-0.5 block text-[0.71875rem] text-[var(--ink-3)]'>{step.when}</span>
 					</li>
 				))}
 			</ol>
@@ -214,7 +214,7 @@ export function Deadlines() {
 	return (
 		<figure className={FIG}>
 			<p className={KICKER}>The clock on each record</p>
-			<p className='mt-2 text-[15px] font-bold leading-snug text-[var(--ink)]'>Working days after a document is approved or issued.</p>
+			<p className='mt-2 text-[0.9375rem] font-bold leading-snug text-[var(--ink)]'>Working days after a document is approved or issued.</p>
 			<div className='relative mt-10 h-24'>
 				<div className='absolute inset-x-0 top-6 h-2 overflow-hidden bg-[var(--rule)]'>
 					<span className='absolute inset-y-0 left-0 bg-[var(--accent)]/25' style={{ width: mark(7) }} />
@@ -227,9 +227,9 @@ export function Deadlines() {
 					{ day: 30, top: 'Day 30', label: 'A crime: 6–15 years, up to ₱3M' },
 				].map((m) => (
 					<div key={m.day} className='absolute top-0 -translate-x-[1px]' style={{ left: mark(m.day) }}>
-						<span className='num block text-[11.5px] font-bold text-[var(--ink)]'>{m.top}</span>
+						<span className='num block text-[0.71875rem] font-bold text-[var(--ink)]'>{m.top}</span>
 						<span aria-hidden='true' className='mt-1 block h-6 w-px bg-[var(--ink)]' />
-						<span className={`mt-1 block max-w-[10rem] text-[11.5px] leading-[1.7] text-[var(--ink-2)] ${m.day === 30 ? '-translate-x-full text-right' : ''}`}>{m.label}</span>
+						<span className={`mt-1 block max-w-[10rem] text-[0.71875rem] leading-[1.7] text-[var(--ink-2)] ${m.day === 30 ? '-translate-x-full text-right' : ''}`}>{m.label}</span>
 					</div>
 				))}
 			</div>
@@ -241,7 +241,7 @@ export function Deadlines() {
 				].map(([when, what]) => (
 					<div key={when}>
 						<span className='num block text-[1.25rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>{when}</span>
-						<span className='block text-[12.5px] leading-[1.7] text-[var(--ink-3)]'>{what}</span>
+						<span className='block text-[0.78125rem] leading-[1.7] text-[var(--ink-3)]'>{what}</span>
 					</div>
 				))}
 			</div>
@@ -267,14 +267,14 @@ export function Compare() {
 	return (
 		<figure className={FIG}>
 			<p className={KICKER}>Side by side</p>
-			<p className='mt-2 text-[15px] font-bold leading-snug text-[var(--ink)]'>The national bill and the Bangsamoro&rsquo;s own.</p>
+			<p className='mt-2 text-[0.9375rem] font-bold leading-snug text-[var(--ink)]'>The national bill and the Bangsamoro&rsquo;s own.</p>
 			<div className='mt-6 overflow-x-auto'>
-				<table className='w-full min-w-[36rem] border-collapse text-left text-[13px] leading-[1.7]'>
+				<table className='w-full min-w-[36rem] border-collapse text-left text-[0.8125rem] leading-[1.7]'>
 					<thead>
 						<tr className='border-b border-[var(--ink)]'>
 							<th className='w-[26%] pb-2.5 pr-4' />
-							<th className='pb-2.5 pr-4 text-[11px] font-bold uppercase tracking-[0.08em] text-[var(--ink-3)]'>CADENA · national</th>
-							<th className='pb-2.5 text-[11px] font-bold uppercase tracking-[0.08em] text-[var(--accent)]'>A-Chain · Bangsamoro</th>
+							<th className='pb-2.5 pr-4 text-[0.6875rem] font-bold uppercase tracking-[0.08em] text-[var(--ink-3)]'>CADENA · national</th>
+							<th className='pb-2.5 text-[0.6875rem] font-bold uppercase tracking-[0.08em] text-[var(--accent)]'>A-Chain · Bangsamoro</th>
 						</tr>
 					</thead>
 					<tbody>

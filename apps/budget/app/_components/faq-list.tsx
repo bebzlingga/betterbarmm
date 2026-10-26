@@ -83,9 +83,9 @@ export function FaqSearch() {
 						? 'Maghanap — “ambulansya”, “bonus”…'
 						: 'Search — “ambulance”, “bonus”, “who approves”…'
 				}
-				className='min-w-0 flex-1 bg-transparent text-[14.5px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+				className='min-w-0 flex-1 bg-transparent text-[0.90625rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 			/>
-			<span className='num shrink-0 font-mono text-[11px] font-semibold text-[var(--ink-3)]'>
+			<span className='num shrink-0 font-mono text-[0.6875rem] font-semibold text-[var(--ink-3)]'>
 				{query ? `${found}/${entries.length}` : entries.length}
 			</span>
 			<LanguageToggle className='shrink-0' />
@@ -167,7 +167,7 @@ export function FaqList() {
 					    rather than as the start of a group. Set at 18px rather than the
 					    display scale: it has to out-rank the questions under it, which
 					    are 15.5, and nothing more. */}
-					<h2 className='border-b-2 border-[var(--accent)] pb-3 text-[18px] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
+					<h2 className='border-b-2 border-[var(--accent)] pb-3 text-[1.125rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
 						{group.title}
 					</h2>
 
@@ -179,7 +179,7 @@ export function FaqList() {
 								className='group border-b border-[var(--rule-soft)]'
 							>
 								<summary className='flex cursor-pointer list-none items-start justify-between gap-5 py-7 transition-colors duration-150 hover:text-[var(--accent)]'>
-									<span className='text-[15.5px] font-semibold leading-snug tracking-[-0.015em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
+									<span className='text-[0.96875rem] font-semibold leading-snug tracking-[-0.015em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
 										{say(entry.q, lang)}
 									</span>
 									<CaretDownIcon
@@ -190,7 +190,7 @@ export function FaqList() {
 								</summary>
 
 								<div className='pb-9'>
-									<p className='max-w-3xl text-[16px] leading-[1.7] text-[var(--ink-2)]'>{say(entry.a, lang)}</p>
+									<p className='max-w-3xl text-[1rem] leading-[1.7] text-[var(--ink-2)]'>{say(entry.a, lang)}</p>
 
 									{entry.pays || entry.notPays ? (
 										/* One row an item, not two columns of pairs. The two lists are
@@ -207,11 +207,11 @@ export function FaqList() {
 												{sayAll(entry.pays, lang).map((item) => (
 													<tr key={item} className='border-b border-[var(--rule-soft)]'>
 														<td className='w-14 py-3 pr-4 align-top'>
-															<span className='inline-flex items-center justify-center bg-[var(--accent)] px-2 py-1 font-mono text-[9px] font-black uppercase tracking-[0.14em] text-white'>
+															<span className='inline-flex items-center justify-center bg-[var(--accent)] px-2 py-1 font-mono text-[0.5625rem] font-black uppercase tracking-[0.14em] text-white'>
 																{lang === 'fil' ? 'Oo' : 'Yes'}
 															</span>
 														</td>
-														<td className='py-3 text-[14.5px] leading-[1.65] text-[var(--ink-2)]'>
+														<td className='py-3 text-[0.90625rem] leading-[1.65] text-[var(--ink-2)]'>
 															{item}
 														</td>
 													</tr>
@@ -219,11 +219,11 @@ export function FaqList() {
 												{sayAll(entry.notPays, lang).map((item) => (
 													<tr key={item} className='border-b border-[var(--rule-soft)]'>
 														<td className='w-14 py-3 pr-4 align-top'>
-															<span className='inline-flex items-center justify-center border border-[var(--rule)] px-2 py-1 font-mono text-[9px] font-black uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+															<span className='inline-flex items-center justify-center border border-[var(--rule)] px-2 py-1 font-mono text-[0.5625rem] font-black uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 																{lang === 'fil' ? 'Hindi' : 'No'}
 															</span>
 														</td>
-														<td className='py-3 text-[14.5px] leading-[1.65] text-[var(--ink-3)]'>
+														<td className='py-3 text-[0.90625rem] leading-[1.65] text-[var(--ink-3)]'>
 															{item}
 														</td>
 													</tr>
@@ -238,17 +238,17 @@ export function FaqList() {
 									    different kind of thing here. */}
 									{entry.example ? (
 										<div className='mt-6 max-w-3xl border-l-2 border-[var(--accent)] bg-[var(--paper-2)] px-6 py-5'>
-											<p className='font-mono text-[9px] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]'>
+											<p className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]'>
 												{lang === 'fil' ? 'Halimbawa' : 'For example'}
 											</p>
-											<p className='mt-3 text-[14.5px] leading-[1.7] text-[var(--ink-2)]'>
+											<p className='mt-3 text-[0.90625rem] leading-[1.7] text-[var(--ink-2)]'>
 												{say(entry.example, lang)}
 											</p>
 										</div>
 									) : null}
 
 									{entry.figure ? (
-										<p className='num mt-4 font-mono text-[10.5px] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>
+										<p className='num mt-4 font-mono text-[0.65625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>
 											{entry.figure}
 										</p>
 									) : null}
@@ -260,7 +260,7 @@ export function FaqList() {
 			))}
 
 			{shown.length === 0 ? (
-				<p className='py-16 text-center text-[14px] text-[var(--ink-3)]'>
+				<p className='py-16 text-center text-[0.875rem] text-[var(--ink-3)]'>
 					{lang === 'fil'
 						? `Walang tumutugma sa “${query.trim()}”. Subukan ang mas simpleng salita.`
 						: `Nothing here matches “${query.trim()}”. Try a plainer word — the answers are written in them.`}

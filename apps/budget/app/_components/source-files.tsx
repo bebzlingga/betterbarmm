@@ -51,7 +51,7 @@ function DownloadMenu({ files }: { files: SourceFile[] }) {
 				aria-expanded={open}
 				aria-haspopup='true'
 				onClick={() => setOpen((current) => !current)}
-				className='group/btn flex w-full items-center justify-between gap-3 border border-[var(--rule)] bg-[var(--paper)] px-4 py-3 text-left font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-2)] transition hover:border-[var(--ink)] hover:text-[var(--ink)]'
+				className='group/btn flex w-full items-center justify-between gap-3 border border-[var(--rule)] bg-[var(--paper)] px-4 py-3 text-left font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-2)] transition hover:border-[var(--ink)] hover:text-[var(--ink)]'
 			>
 				<span className='flex items-center gap-2'>
 					<DownloadSimpleIcon className='size-4 shrink-0' aria-hidden='true' />
@@ -73,12 +73,12 @@ function DownloadMenu({ files }: { files: SourceFile[] }) {
 							className='group/row block px-3 py-2.5 transition hover:bg-[var(--paper-2)]'
 						>
 							<p className='flex items-baseline justify-between gap-3'>
-								<span className='text-[13px] font-semibold text-[var(--ink)]'>{one.kind}</span>
-								<span className='money font-mono text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>
+								<span className='text-[0.8125rem] font-semibold text-[var(--ink)]'>{one.kind}</span>
+								<span className='money font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>
 									{format(one.file)}
 								</span>
 							</p>
-							<p className='mt-1 break-all font-mono text-[10px] text-[var(--ink-3)]'>{one.file}</p>
+							<p className='mt-1 break-all font-mono text-[0.625rem] text-[var(--ink-3)]'>{one.file}</p>
 						</a>
 					))}
 				</div>
@@ -111,11 +111,11 @@ export function SourceFiles({ files }: { files: SourceFile[] }) {
 							<p className='bb-label'>{kinds.length > 1 ? `${mine.length} files` : format(act.file)}</p>
 						</div>
 
-						<p className='mt-1 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
+						<p className='mt-1 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
 							{kinds.join(' · ')}
 						</p>
 
-						<p className='mt-3.5 text-[12.5px] leading-6 text-[var(--ink-2)]'>{act.role}</p>
+						<p className='mt-3.5 text-[0.78125rem] leading-6 text-[var(--ink-2)]'>{act.role}</p>
 
 						{/* `mt-auto` rather than a fixed gap: the control sits on the card's
 						    own floor however many lines the sentence above it ran to, so the
@@ -126,7 +126,7 @@ export function SourceFiles({ files }: { files: SourceFile[] }) {
 							) : (
 								<a
 									href={href(act.file)}
-									className='group/btn flex items-center gap-2 border border-[var(--rule)] bg-[var(--paper)] px-4 py-3 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-2)] transition hover:border-[var(--ink)] hover:text-[var(--ink)]'
+									className='group/btn flex items-center gap-2 border border-[var(--rule)] bg-[var(--paper)] px-4 py-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-2)] transition hover:border-[var(--ink)] hover:text-[var(--ink)]'
 								>
 									<DownloadSimpleIcon
 										className='size-4 shrink-0 transition duration-500 group-hover/btn:translate-y-0.5'

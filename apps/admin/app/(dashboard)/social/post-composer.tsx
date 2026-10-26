@@ -43,7 +43,7 @@ export function PostComposer({
               value={body}
               onChange={(e) => setBody(e.target.value)}
               placeholder="What should people know? Link to the record it comes from."
-              className="field !text-[15px]"
+              className="field !text-[0.9375rem]"
               required
             />
             <span className={`mt-1 block text-right text-xs ${body.length > LONG ? "text-[var(--warn)]" : "text-[var(--ink-mute)]"}`}>
@@ -67,7 +67,7 @@ export function PostComposer({
                 name="image"
                 type="file"
                 accept="image/*"
-                className="block text-sm file:mr-3 file:rounded-lg file:border file:border-[var(--rule-strong)] file:bg-[var(--surface)] file:px-3 file:py-1.5 file:text-[13px] file:font-semibold file:text-[var(--ink)] hover:file:bg-[var(--surface-2)]"
+                className="block text-sm file:mr-3 file:rounded-lg file:border file:border-[var(--rule-strong)] file:bg-[var(--surface)] file:px-3 file:py-1.5 file:text-[0.8125rem] file:font-semibold file:text-[var(--ink)] hover:file:bg-[var(--surface-2)]"
                 onChange={(e) => {
                   const f = e.target.files?.[0];
                   setPreview(f ? URL.createObjectURL(f) : removed ? null : imageUrl);

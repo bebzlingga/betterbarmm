@@ -55,7 +55,7 @@ function Th({ children, numeric = false, wide = false, className = '' }: { child
 	return (
 		<th
 			scope='col'
-			className={`py-3 text-[10.5px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)] ${
+			className={`py-3 text-[0.65625rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)] ${
 				numeric ? 'w-px whitespace-nowrap pl-6 text-right sm:pl-10' : wide ? 'pr-8 text-left' : 'w-px whitespace-nowrap pr-8 text-left'
 			} ${className}`}
 		>
@@ -67,12 +67,12 @@ function Th({ children, numeric = false, wide = false, className = '' }: { child
 /** Dead, injured, missing — only the figures the report gave. */
 function Counts({ a, className = '' }: { a: Accident; className?: string }) {
 	return (
-		<dl className={`num flex gap-5 text-[12px] ${className}`}>
+		<dl className={`num flex gap-5 text-[0.75rem] ${className}`}>
 			{(['deaths', 'injured', 'missing'] as const).map((key) =>
 				a[key] ? (
 					<div key={key}>
-						<dd className='text-[15px] font-extrabold text-[var(--ink)]'>{figure(a[key] as number)}</dd>
-						<dt className='font-mono text-[9.5px] uppercase tracking-[0.14em] text-[var(--ink-3)]'>{key}</dt>
+						<dd className='text-[0.9375rem] font-extrabold text-[var(--ink)]'>{figure(a[key] as number)}</dd>
+						<dt className='font-mono text-[0.59375rem] uppercase tracking-[0.14em] text-[var(--ink-3)]'>{key}</dt>
 					</div>
 				) : null,
 			)}
@@ -108,7 +108,7 @@ function Details({ a, onClose }: { a: Accident; onClose: () => void }) {
 	return (
 		<article className='bg-[var(--paper)] p-4'>
 			<div className='flex items-start justify-between gap-3'>
-				<p className='flex flex-wrap items-center gap-2 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+				<p className='flex flex-wrap items-center gap-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 					<KindIcon type={a.type} />
 					{t.label}
 					{a.kind && a.kind.toLowerCase() !== t.label.toLowerCase() ? <span className='text-[var(--ink-mute)]'>· {a.kind}</span> : null}
@@ -123,24 +123,24 @@ function Details({ a, onClose }: { a: Accident; onClose: () => void }) {
 					<XIcon size={14} weight='bold' aria-hidden='true' />
 				</button>
 			</div>
-			<h3 className='mt-2 text-[15px] font-extrabold leading-snug tracking-[-0.01em]'>{a.title}</h3>
-			<p className='mt-1 text-[12.5px] text-[var(--ink-2)]'>{place(a)}</p>
+			<h3 className='mt-2 text-[0.9375rem] font-extrabold leading-snug tracking-[-0.01em]'>{a.title}</h3>
+			<p className='mt-1 text-[0.78125rem] text-[var(--ink-2)]'>{place(a)}</p>
 			{a.deaths || a.injured || a.missing ? <Counts a={a} className='mt-3 border-t border-[var(--rule)] pt-3' /> : null}
 			{a.image ? (
 				<a href={a.image.href} target='_blank' rel='noreferrer' className='group/photo mt-3 block'>
 					{/* The outlet's photo, hot-linked and credited — a thumbnail, not a reproduction. */}
 					{/* eslint-disable-next-line @next/next/no-img-element */}
 					<img src={a.image.url} alt='' loading='lazy' className='aspect-[16/9] w-full object-cover' />
-					<span className='mt-1 block text-[10.5px] text-[var(--ink-mute)] group-hover/photo:text-[var(--ink-3)]'>Photo: {a.image.outlet}</span>
+					<span className='mt-1 block text-[0.65625rem] text-[var(--ink-mute)] group-hover/photo:text-[var(--ink-3)]'>Photo: {a.image.outlet}</span>
 				</a>
 			) : null}
-			<p className='mt-3 text-[13px] leading-[1.6] text-[var(--ink-2)]'>{a.summary}</p>
-			<p className='mt-3 text-[11.5px] leading-[1.7] text-[var(--ink-3)]'>
+			<p className='mt-3 text-[0.8125rem] leading-[1.6] text-[var(--ink-2)]'>{a.summary}</p>
+			<p className='mt-3 text-[0.71875rem] leading-[1.7] text-[var(--ink-3)]'>
 				{a.sources.length === 1 ? 'Source: ' : 'Sources: '}
 				<Sources a={a} sep=', ' />
 			</p>
 			{a.placed !== 'barangay' ? (
-				<p className='mt-2 text-[10.5px] leading-[1.6] text-[var(--ink-mute)]'>
+				<p className='mt-2 text-[0.65625rem] leading-[1.6] text-[var(--ink-mute)]'>
 					{a.municipality ? `Placed at the centre of ${a.municipality}; the report names no closer spot.` : `The report names no town, so the dot stands faintly at ${a.province}'s main town.`}
 				</p>
 			) : null}
@@ -389,8 +389,8 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 				<tbody>
 					{shown.map((a) => (
 						<tr key={a.id} id={a.id} className='border-b border-[var(--rule-soft)] align-top transition-colors hover:bg-[var(--paper-2)]'>
-							<td className='num hidden w-px whitespace-nowrap py-3.5 pr-8 text-[13px] text-[var(--ink-2)] sm:table-cell'>{accidentDate(a.date)}</td>
-							<td className='hidden w-px whitespace-nowrap py-3.5 pr-8 text-[13px] text-[var(--ink-2)] md:table-cell'>
+							<td className='num hidden w-px whitespace-nowrap py-3.5 pr-8 text-[0.8125rem] text-[var(--ink-2)] sm:table-cell'>{accidentDate(a.date)}</td>
+							<td className='hidden w-px whitespace-nowrap py-3.5 pr-8 text-[0.8125rem] text-[var(--ink-2)] md:table-cell'>
 								<span className='flex items-center gap-1.5'>
 									<KindIcon type={a.type} />
 									{a.kind || typeOf(a.type).label}
@@ -398,30 +398,30 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 							</td>
 							<th scope='row' className='py-3.5 text-left font-normal sm:pr-8'>
 								{/* On a phone the row is one column: the date and kind over the title, the figures under it. */}
-								<p className='num mb-1 flex items-center gap-1.5 text-[12px] text-[var(--ink-3)] sm:hidden'>
+								<p className='num mb-1 flex items-center gap-1.5 text-[0.75rem] text-[var(--ink-3)] sm:hidden'>
 									<KindIcon type={a.type} />
 									{accidentDate(a.date)}
 								</p>
 								<button
 									type='button'
 									onClick={() => goTo(a)}
-									className='cursor-pointer text-left text-[15px] font-semibold leading-snug text-[var(--ink)] underline-offset-4 hover:text-[var(--accent)] hover:underline'
+									className='cursor-pointer text-left text-[0.9375rem] font-semibold leading-snug text-[var(--ink)] underline-offset-4 hover:text-[var(--accent)] hover:underline'
 								>
 									{a.title}
 								</button>
-								<p className='mt-0.5 text-[12.5px] text-[var(--ink-3)]'>{place(a)}</p>
+								<p className='mt-0.5 text-[0.78125rem] text-[var(--ink-3)]'>{place(a)}</p>
 								{a.deaths || a.injured || a.missing ? (
-									<p className='num mt-1 text-[12.5px] font-semibold text-[var(--ink)] sm:hidden'>
+									<p className='num mt-1 text-[0.78125rem] font-semibold text-[var(--ink)] sm:hidden'>
 										{[a.deaths && `${figure(a.deaths)} dead`, a.injured && `${figure(a.injured)} injured`, a.missing && `${figure(a.missing)} missing`].filter(Boolean).join(' · ')}
 									</p>
 								) : null}
-								<p className='mt-2 hidden max-w-4xl text-[13px] leading-6 text-[var(--ink-2)] lg:block'>{a.summary}</p>
-								<p className='mt-1.5 text-[12px] leading-[1.7] text-[var(--ink-3)]'>
+								<p className='mt-2 hidden max-w-4xl text-[0.8125rem] leading-6 text-[var(--ink-2)] lg:block'>{a.summary}</p>
+								<p className='mt-1.5 text-[0.75rem] leading-[1.7] text-[var(--ink-3)]'>
 									<Sources a={a} />
 								</p>
 							</th>
 							{(['deaths', 'injured', 'missing'] as const).map((key) => (
-								<td key={key} className='num hidden w-px whitespace-nowrap py-3.5 pl-6 text-right text-[13px] tabular-nums text-[var(--ink)] sm:table-cell sm:pl-10'>
+								<td key={key} className='num hidden w-px whitespace-nowrap py-3.5 pl-6 text-right text-[0.8125rem] tabular-nums text-[var(--ink)] sm:table-cell sm:pl-10'>
 									{a[key] ? figure(a[key] as number) : <span className='text-[var(--ink-mute)]'>–</span>}
 								</td>
 							))}
@@ -429,9 +429,9 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 					))}
 				</tbody>
 			</table>
-			{filtered.length === 0 ? <p className='py-10 text-center text-[13.5px] text-[var(--ink-3)]'>Nothing here matches these filters.</p> : null}
+			{filtered.length === 0 ? <p className='py-10 text-center text-[0.84375rem] text-[var(--ink-3)]'>Nothing here matches these filters.</p> : null}
 			{pages > 1 ? (
-				<div className='mt-6 flex items-center justify-end gap-3 text-[13px] text-[var(--ink-3)]'>
+				<div className='mt-6 flex items-center justify-end gap-3 text-[0.8125rem] text-[var(--ink-3)]'>
 					<button
 						type='button'
 						disabled={current <= 1}
@@ -493,14 +493,14 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 									>
 										<KindIcon type={a.type} size={20} />
 										<span className='min-w-0'>
-											<span className='block text-[13px] font-medium leading-snug'>{a.title}</span>
-											<span className='num block text-[11px] text-[var(--ink-3)]'>
+											<span className='block text-[0.8125rem] font-medium leading-snug'>{a.title}</span>
+											<span className='num block text-[0.6875rem] text-[var(--ink-3)]'>
 												{accidentDate(a.date)} · {a.municipality ?? a.province}
 											</span>
 										</span>
 										{a.deaths ? (
-											<span className='num ml-4 whitespace-nowrap text-[12px] font-extrabold text-[var(--ink)]'>
-												{figure(a.deaths)} <span className='font-mono text-[9px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>dead</span>
+											<span className='num ml-4 whitespace-nowrap text-[0.75rem] font-extrabold text-[var(--ink)]'>
+												{figure(a.deaths)} <span className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>dead</span>
 											</span>
 										) : null}
 									</button>

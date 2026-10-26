@@ -71,16 +71,16 @@ export default function PlanPage() {
 														className='border-b border-[var(--rule-soft)] pb-2.5'
 													>
 														<div className='flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1'>
-															<dt className='text-[13.5px] text-[var(--ink-2)]'>
+															<dt className='text-[0.84375rem] text-[var(--ink-2)]'>
 																{leg.from} → {leg.to}
-																<span className='ml-2 font-mono text-[9.5px] uppercase tracking-[0.14em] text-[var(--brass)]'>
+																<span className='ml-2 font-mono text-[0.59375rem] uppercase tracking-[0.14em] text-[var(--brass)]'>
 																	{leg.mode}
 																</span>
 															</dt>
-															<dd className='text-[13px] text-[var(--ink-3)]'>{leg.duration}</dd>
+															<dd className='text-[0.8125rem] text-[var(--ink-3)]'>{leg.duration}</dd>
 														</div>
 														{leg.note ? (
-															<p className='mt-1.5 text-[12.5px] leading-6 text-[var(--ink-mute)]'>
+															<p className='mt-1.5 text-[0.78125rem] leading-6 text-[var(--ink-mute)]'>
 																{leg.note}
 															</p>
 														) : null}
@@ -101,7 +101,7 @@ export default function PlanPage() {
 											<Link
 												key={area.slug}
 												href={`/${area.slug}`}
-												className='flex flex-wrap items-center justify-between gap-3 border-b border-[var(--rule-soft)] py-2.5 text-[14px] text-[var(--ink-2)] transition hover:text-[var(--ink)]'
+												className='flex flex-wrap items-center justify-between gap-3 border-b border-[var(--rule-soft)] py-2.5 text-[0.875rem] text-[var(--ink-2)] transition hover:text-[var(--ink)]'
 											>
 												{area.name}
 												<Footing footing={area.footing} />
@@ -131,10 +131,10 @@ export default function PlanPage() {
 						{festivals.map((festival) => (
 							<div key={festival.name} className='border-t border-[var(--brass-line)] pt-6'>
 								<p className='item-title'>{festival.name}</p>
-								<p className='mt-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
+								<p className='mt-1.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
 									{festival.when}
 								</p>
-								<p className='mt-3 text-[13.5px] leading-6 text-[var(--ink-2)]'>{festival.what}</p>
+								<p className='mt-3 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>{festival.what}</p>
 							</div>
 						))}
 					</div>

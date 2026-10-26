@@ -150,7 +150,7 @@ export function PageHeader({
 					{description ? (
 						<Rise delay={0.32} distance={16}>
 							<p
-								className={`${column}${proseWidth}mt-8 text-[15px] leading-[1.7] text-[var(--ink-2)]`}
+								className={`${column}${proseWidth}mt-8 text-[0.9375rem] leading-[1.7] text-[var(--ink-2)]`}
 							>
 								{description}
 							</p>
@@ -200,7 +200,7 @@ export function PageHeader({
 
 				<Rise delay={0.25} distance={14}>
 					{description ? (
-						<p className='mt-6 max-w-2xl text-[15px] leading-[1.7] text-[var(--ink-2)]'>
+						<p className='mt-6 max-w-2xl text-[0.9375rem] leading-[1.7] text-[var(--ink-2)]'>
 							{description}
 						</p>
 					) : null}

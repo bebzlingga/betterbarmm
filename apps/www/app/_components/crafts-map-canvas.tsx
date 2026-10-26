@@ -88,7 +88,7 @@ export default function CraftsMapCanvas({ points, selected, onSelect }: { points
 			return false
 		}
 	})
-	if (!webgl) return <div className='flex h-full items-center justify-center p-8 text-center text-[14px] text-[#8a6d5c]'>The map needs WebGL2, which this browser does not provide. Every town is listed beside it.</div>
+	if (!webgl) return <div className='flex h-full items-center justify-center p-8 text-center text-[0.875rem] text-[#8a6d5c]'>The map needs WebGL2, which this browser does not provide. Every town is listed beside it.</div>
 	return (
 		<Map className='h-full w-full' bounds={BOUNDS} fitBoundsOptions={{ padding: 24 }} minZoom={4.5} maxZoom={12}>
 			<Layers points={points} selected={selected} onSelect={onSelect} />

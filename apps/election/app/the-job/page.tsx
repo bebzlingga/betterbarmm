@@ -65,19 +65,19 @@ function Point({
 	return (
 		<Rise distance={14}>
 			<div className='flex h-full flex-col border-t border-[var(--rule)] pt-6'>
-				<h3 className='text-[18px] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+				<h3 className='text-[1.125rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 					{title}
 				</h3>
-				<p className='mt-3 text-[15px] leading-[1.6] text-[var(--ink-2)]'>{children}</p>
+				<p className='mt-3 text-[0.9375rem] leading-[1.6] text-[var(--ink-2)]'>{children}</p>
 
 				{means ? (
-					<p className='mt-4 border-l-2 border-[var(--brass-line)] pl-3.5 text-[14px] leading-[1.55] text-[var(--ink-3)]'>
+					<p className='mt-4 border-l-2 border-[var(--brass-line)] pl-3.5 text-[0.875rem] leading-[1.55] text-[var(--ink-3)]'>
 						<span className='font-semibold text-[var(--ink-2)]'>What that gives you: </span>
 						{means}
 					</p>
 				) : null}
 
-				<p className='mt-auto pt-5 font-mono text-[10px] font-semibold uppercase leading-5 tracking-[0.14em] text-[var(--ink-3)]'>
+				<p className='mt-auto pt-5 font-mono text-[0.625rem] font-semibold uppercase leading-5 tracking-[0.14em] text-[var(--ink-3)]'>
 					{href ? (
 						<a href={href} target='_blank' rel='noreferrer' className='rule-link'>
 							{cite}
@@ -311,7 +311,7 @@ export default function TheJobPage() {
 					    next — and stacked they read as one block ending in two buttons.
 					    Set opposite each other the page closes on both at once. */}
 					<div className='mt-12 flex flex-col gap-8 border-t border-[var(--brass-line)] pt-7 lg:flex-row lg:items-start lg:justify-between lg:gap-16'>
-						<p className='max-w-[42rem] text-[16px] leading-[1.6] text-[var(--ink-3)]'>
+						<p className='max-w-[42rem] text-[1rem] leading-[1.6] text-[var(--ink-3)]'>
 							Every point on this page is drawn from Parliament&rsquo;s own rulebook and the
 							Organic Law, under the citation printed beneath it. The registry goes through all
 							thirty-four rules in full — this page is the part a voter needs before September.

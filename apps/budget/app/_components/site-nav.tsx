@@ -34,8 +34,8 @@ import { useEffect, useRef, useState } from 'react'
 
    Constants rather than the classes written per menu: they had drifted to
    three different sizes, because each was last touched on its own. */
-const MENU_NAME = 'text-[13.5px] font-bold tracking-[-0.02em] text-[var(--ink)]'
-const MENU_NOTE = 'text-[11px] font-semibold text-[var(--ink-mute)]'
+const MENU_NAME = 'text-[0.84375rem] font-bold tracking-[-0.02em] text-[var(--ink)]'
+const MENU_NOTE = 'text-[0.6875rem] font-semibold text-[var(--ink-mute)]'
 
 const sections = [
 	{ href: '/sectors', label: 'Sectors', note: 'What the money is for' },
@@ -158,7 +158,7 @@ export function SiteNav() {
 						<Link
 							href='/'
 							onClick={closeMenu}
-							className='hidden whitespace-nowrap font-[family-name:var(--font-display)] text-[10.5px] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
+							className='hidden whitespace-nowrap font-[family-name:var(--font-display)] text-[0.65625rem] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
 						>
 							Budget
 						</Link>

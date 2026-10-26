@@ -39,10 +39,10 @@ function Stat({
 			<p className='bb-figure text-[var(--ink)]'>
 				<Counter value={value} suffix={suffix} />
 			</p>
-			<p className='mt-4 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--brass)]'>
+			<p className='mt-4 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--brass)]'>
 				{label}
 			</p>
-			<p className='mt-2.5 text-[13.5px] leading-[var(--leading-body)] text-[var(--ink-2)]'>
+			<p className='mt-2.5 text-[0.84375rem] leading-[var(--leading-body)] text-[var(--ink-2)]'>
 				{note}
 			</p>
 		</div>
@@ -116,10 +116,10 @@ export function DiscoverRegionPanel({
 						<div className='mt-14'>
 							<Rise distance={12}>
 								<div className='flex items-baseline justify-between gap-4'>
-									<p className='font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--ink-3)]'>
+									<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--ink-3)]'>
 										District seats by constituency
 									</p>
-									<p className='num text-[13px] text-[var(--ink-3)]'>{total} of 80</p>
+									<p className='num text-[0.8125rem] text-[var(--ink-3)]'>{total} of 80</p>
 								</div>
 							</Rise>
 
@@ -147,10 +147,10 @@ export function DiscoverRegionPanel({
 												className='size-2.5 shrink-0 rotate-45'
 												style={{ background: SEAT_TONES[index] ?? SEAT_TONES.at(-1) }}
 											/>
-											<span className='min-w-0 flex-1 truncate text-[13px] text-[var(--ink-2)]'>
+											<span className='min-w-0 flex-1 truncate text-[0.8125rem] text-[var(--ink-2)]'>
 												{block.constituency}
 											</span>
-											<span className='num text-[13px] font-semibold text-[var(--ink)]'>
+											<span className='num text-[0.8125rem] font-semibold text-[var(--ink)]'>
 												{block.seats}
 											</span>
 										</div>
@@ -159,7 +159,7 @@ export function DiscoverRegionPanel({
 							</Stagger>
 
 							<Rise delay={0.1} distance={12}>
-								<p className='mt-7 max-w-2xl text-[12.5px] leading-6 text-[var(--ink-3)]'>
+								<p className='mt-7 max-w-2xl text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
 									Sulu is not on this list. The Supreme Court excluded it from BARMM, so it is not a
 									constituency with no seats — it is no longer part of the region. Seat figures come
 									from the{' '}
@@ -192,10 +192,10 @@ export function DiscoverRegionPanel({
 							className='group mt-6 flex items-center justify-between gap-4 border-t border-[var(--brass-line)] py-5 transition hover:border-[var(--accent)]'
 						>
 							<span>
-								<span className='block font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--brass)]'>
+								<span className='block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--brass)]'>
 									Go deeper
 								</span>
-								<span className='mt-1.5 block text-[15px] font-semibold text-[var(--ink)]'>
+								<span className='mt-1.5 block text-[0.9375rem] font-semibold text-[var(--ink)]'>
 									The 2026 Election workspace
 								</span>
 							</span>

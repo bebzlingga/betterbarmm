@@ -80,7 +80,7 @@ export default function StatsPage() {
 			<section className='bb-container bb-section'>
 				<StatsExplorer years={[...finances.years, ...ntaShares.years]} ntaOnly={ntaShares.years} fields={FIELDS} units={units} data={data} />
 
-				<div className='mt-10 space-y-2 text-[13px] leading-6 text-[var(--ink-3)]'>
+				<div className='mt-10 space-y-2 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 					<p>
 						<a href='/csv/lgus' className='rule-link font-semibold text-[var(--ink)]' download>
 							Download every unit&rsquo;s figures, every year, as CSV

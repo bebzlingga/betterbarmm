@@ -100,7 +100,7 @@ function Switch({
 			</summary>
 			{/* Every entry a row, its icon beside its name. */}
 			<div className='absolute left-0 top-full z-50 mt-1 w-[16rem] max-w-[calc(100vw-2rem)] border border-[var(--rule)] bg-[var(--paper)] p-2 normal-case tracking-normal shadow-lg'>
-				<p className='px-2 pb-2 pt-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>{heading}</p>
+				<p className='px-2 pb-2 pt-1 text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>{heading}</p>
 				<ul className='grid'>
 					{items.map((item) => {
 						const on = item.key === current
@@ -119,7 +119,7 @@ function Switch({
 									>
 										<Icon size={16} weight={on ? 'fill' : 'regular'} aria-hidden='true' />
 									</span>
-									<span className={`text-[13.5px] font-semibold leading-tight ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)]'}`}>
+									<span className={`text-[0.84375rem] font-semibold leading-tight ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)]'}`}>
 										{item.label}
 									</span>
 								</a>

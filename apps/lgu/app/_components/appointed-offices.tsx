@@ -42,9 +42,9 @@ const NEED: Record<Need, string> = { R: 'Required', O: 'Optional', '—': '—' 
 export function AppointedOffices() {
 	return (
 		<div className='mt-6 overflow-x-auto'>
-			<table className='w-full min-w-[34rem] border-collapse text-left text-[14px]'>
+			<table className='w-full min-w-[34rem] border-collapse text-left text-[0.875rem]'>
 				<thead>
-					<tr className='border-b border-[var(--ink)] text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
+					<tr className='border-b border-[var(--ink)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
 						<th className='py-3 pr-4 font-semibold'>Office</th>
 						<th className='px-3 py-3 text-right font-semibold'>Province</th>
 						<th className='px-3 py-3 text-right font-semibold'>City</th>
@@ -56,7 +56,7 @@ export function AppointedOffices() {
 						<tr key={row.office} className='border-b border-[var(--rule-soft)] align-middle'>
 							<td className='py-3 pr-4'>
 								<span className='font-semibold text-[var(--ink)]'>{row.office}</span>
-								<span className='block text-[12.5px] text-[var(--ink-3)]'>
+								<span className='block text-[0.78125rem] text-[var(--ink-3)]'>
 									{row.note ? `${row.note} · ` : ''}
 									{row.cite}
 								</span>

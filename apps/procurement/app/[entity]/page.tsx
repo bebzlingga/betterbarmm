@@ -75,21 +75,21 @@ export default async function EntityPage({ params }: { params: Promise<{ entity:
 						<ol className='mt-4'>
 							{top.map(([name, s]) => (
 								<li key={name} className='flex items-baseline justify-between gap-4 border-b border-[var(--rule)] py-3'>
-									<a href={supplierHref(name)} className='min-w-0 text-[13.5px] font-semibold leading-5 text-[var(--ink)] hover:text-[var(--accent)]'>
+									<a href={supplierHref(name)} className='min-w-0 text-[0.84375rem] font-semibold leading-5 text-[var(--ink)] hover:text-[var(--accent)]'>
 										{name}
 									</a>
-									<span className='num shrink-0 text-right text-[13px] text-[var(--ink-2)]'>
+									<span className='num shrink-0 text-right text-[0.8125rem] text-[var(--ink-2)]'>
 										<span className='font-semibold text-[var(--ink)]'>{peso(s.amount)}</span>
-										<span className='block text-[11px] text-[var(--ink-3)]'>{s.awards} {s.awards === 1 ? 'award' : 'awards'}</span>
+										<span className='block text-[0.6875rem] text-[var(--ink-3)]'>{s.awards} {s.awards === 1 ? 'award' : 'awards'}</span>
 									</span>
 								</li>
 							))}
 						</ol>
 					) : (
-						<p className='mt-3 text-[13px] leading-6 text-[var(--ink-3)]'>PhilGEPS records no award on this office&rsquo;s notices.</p>
+						<p className='mt-3 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>PhilGEPS records no award on this office&rsquo;s notices.</p>
 					)}
 					{entity.unit ? (
-						<a href={`https://lgu.betterbarmm.com/${entity.unit}`} className='rule-link mt-8 inline-block text-[13px]'>
+						<a href={`https://lgu.betterbarmm.com/${entity.unit}`} className='rule-link mt-8 inline-block text-[0.8125rem]'>
 							Its profile in the Local Government workspace
 						</a>
 					) : null}

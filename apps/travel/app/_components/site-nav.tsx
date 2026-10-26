@@ -123,7 +123,7 @@ export function SiteNav() {
 								href='https://betterbarmm.com/contribute'
 								target='_blank'
 								rel='noreferrer'
-								className='bb-btn bb-btn-accent !px-4 !py-0 !text-[9.5px]'
+								className='bb-btn bb-btn-accent !px-4 !py-0 !text-[0.59375rem]'
 							>
 								<HandHeartIcon size={13} weight='fill' aria-hidden='true' />
 								Contribute
@@ -157,7 +157,7 @@ export function SiteNav() {
 						<Link
 							href='/'
 							onClick={closeMenu}
-							className='hidden whitespace-nowrap font-[family-name:var(--font-display)] text-[10.5px] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
+							className='hidden whitespace-nowrap font-[family-name:var(--font-display)] text-[0.65625rem] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
 						>
 							Travel
 						</Link>
@@ -174,7 +174,7 @@ export function SiteNav() {
 										className='nav-menu-item'
 									>
 										<span>{area.name}</span>
-										<span className='text-[10.5px] text-[var(--ink-mute)]'>{area.base}</span>
+										<span className='text-[0.65625rem] text-[var(--ink-mute)]'>{area.base}</span>
 									</Link>
 								))
 							}
@@ -248,7 +248,7 @@ export function SiteNav() {
 										className='flex items-center justify-between gap-3 border-b border-[var(--rule-soft)] py-2.5'
 									>
 										{area.name}
-										<span className='text-[11px] text-[var(--ink-mute)]'>{area.base}</span>
+										<span className='text-[0.6875rem] text-[var(--ink-mute)]'>{area.base}</span>
 									</Link>
 								))}
 							</div>

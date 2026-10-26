@@ -85,7 +85,7 @@ export function OfficialsExplorer({
 		<div>
 			<div className='grid grid-cols-2 gap-3 pb-6 lg:grid-cols-[minmax(0,1fr)_8rem_13rem_9rem_11rem_9rem] lg:items-end lg:gap-4 lg:pb-10'>
 				<label className='col-span-2 flex w-full min-w-0 max-w-[26rem] flex-col gap-1 lg:col-span-1'>
-					<span className='text-[12px] text-[var(--ink-3)]'>Search</span>
+					<span className='text-[0.75rem] text-[var(--ink-3)]'>Search</span>
 					<span className='flex h-10 items-center gap-3 border border-[var(--rule)] bg-[var(--paper-2)] px-3 focus-within:border-[var(--ink)]'>
 						<MagnifyingGlassIcon className='size-4 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
 						<input
@@ -95,7 +95,7 @@ export function OfficialsExplorer({
 							autoComplete='off'
 							spellCheck={false}
 							placeholder='Name, town or party'
-							className='min-w-0 flex-1 bg-transparent text-[14px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+							className='min-w-0 flex-1 bg-transparent text-[0.875rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 						/>
 					</span>
 				</label>

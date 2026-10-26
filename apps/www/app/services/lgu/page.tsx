@@ -19,7 +19,7 @@ export const metadata: Metadata = pageMeta({
 })
 
 const sectionHead = 'flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'
-const eyebrow = 'font-mono text-[10.5px] font-semibold uppercase tracking-[0.14em]'
+const eyebrow = 'font-mono text-[0.65625rem] font-semibold uppercase tracking-[0.14em]'
 const linkClass = 'underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'
 
 const kindOf = (l: Lgu) => (l.kind === 'Municipality' ? 'Town' : l.kind)
@@ -69,7 +69,7 @@ export default async function LguServicesPage({ searchParams }: { searchParams: 
 					<>
 						<p className='bb-label'>What your province, city or town offers</p>
 						<h1 className='bb-display-md mt-4 text-[var(--ink)]'>Programs & services</h1>
-						<p className='mx-auto mt-4 max-w-xl text-[15px] leading-7 text-[var(--ink-2)]'>
+						<p className='mx-auto mt-4 max-w-xl text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
 							{total ? `${total} services from the Citizen’s Charters of ${listed.length} of the region’s ${lgus.length} local governments` : `The Citizen’s Charters of the region’s ${lgus.length} local governments`}: who each is for, what to bring, the fee and how long it takes.
 						</p>
 					</>
@@ -79,7 +79,7 @@ export default async function LguServicesPage({ searchParams }: { searchParams: 
 					<WithCharter listed={listed} />
 					<WithoutCharter />
 
-					<p className='mt-16 text-[13px] leading-[1.7] text-[var(--ink-3)]'>
+					<p className='mt-16 text-[0.8125rem] leading-[1.7] text-[var(--ink-3)]'>
 						{lguMeta.note} Each local government’s website, and a web search for its charter, were checked on{' '}
 						{new Date(lguMeta.charterCheckedAt).toLocaleDateString('en-PH', { month: 'long', day: 'numeric', year: 'numeric' })}. Know of a charter we missed?{' '}
 						<a href='/report' className={linkClass}>
@@ -99,28 +99,28 @@ function WithCharter({ listed }: { listed: Lgu[] }) {
 	return (
 		<section id='lgus' aria-labelledby='lgus-title' className='scroll-mt-[calc(var(--site-header-h)+1rem)]'>
 			<div className={sectionHead}>
-				<h2 id='lgus-title' className='text-[26px] font-extrabold tracking-[-0.02em]'>
+				<h2 id='lgus-title' className='text-[1.625rem] font-extrabold tracking-[-0.02em]'>
 					With a Citizen’s Charter <span className='text-[var(--ink-mute)]'>· {listed.length}</span>
 				</h2>
-				<p className='text-[13.5px] text-[var(--ink-3)]'>Each page has every service: what to bring, the fee, the time and where to go.</p>
+				<p className='text-[0.84375rem] text-[var(--ink-3)]'>Each page has every service: what to bring, the fee, the time and where to go.</p>
 			</div>
 			{listed.length ? (
 				<ul className='mt-6 grid border-t border-[var(--rule)] sm:grid-cols-2 sm:gap-4 sm:border-t-0 lg:grid-cols-3 xl:grid-cols-4'>
 					{listed.map((l) => (
 						<li key={l.key} className='bb-frame relative flex min-w-0 gap-4 border-b border-[var(--rule-soft)] bg-transparent! py-3 sm:flex-col sm:gap-0 sm:overflow-hidden sm:border sm:border-[var(--rule)] sm:py-0'>
 							<span className='relative size-16 shrink-0 overflow-hidden sm:h-28 sm:w-full'>
-								<Emblem image={lguSeal(l.key)} name={l.name} tile className='size-full text-[16px]' />
+								<Emblem image={lguSeal(l.key)} name={l.name} tile className='size-full text-[1rem]' />
 							</span>
 							<div className='flex min-w-0 flex-1 flex-col sm:p-4'>
 								<p className={`${eyebrow} text-[var(--ink-3)]`}>
 									{kindOf(l)} · {l.province}
 								</p>
-								<p className='mt-1 text-[15.5px] leading-[1.2]'>
+								<p className='mt-1 text-[0.96875rem] leading-[1.2]'>
 									<Link href={lguHref(l)} className='font-bold after:absolute after:inset-0 hover:text-[var(--accent)]'>
 										{l.name}
 									</Link>
 								</p>
-								<p className='mt-2 text-[13px] text-[var(--ink-2)]'>
+								<p className='mt-2 text-[0.8125rem] text-[var(--ink-2)]'>
 									<span className='font-semibold tabular-nums text-[var(--ink)]'>{l.services.length}</span> {l.services.length === 1 ? 'service' : 'services'}
 								</p>
 							</div>
@@ -128,7 +128,7 @@ function WithCharter({ listed }: { listed: Lgu[] }) {
 					))}
 				</ul>
 			) : (
-				<p className='mt-6 text-[14px] text-[var(--ink-3)]'>None yet.</p>
+				<p className='mt-6 text-[0.875rem] text-[var(--ink-3)]'>None yet.</p>
 			)}
 		</section>
 	)
@@ -141,10 +141,10 @@ function WithoutCharter() {
 	return (
 		<section id='no-charter' aria-labelledby='no-charter-title' className='mt-20 scroll-mt-[calc(var(--site-header-h)+1rem)] border-t border-[var(--rule)] pt-14 lg:mt-24'>
 			<div className={sectionHead}>
-				<h2 id='no-charter-title' className='text-[26px] font-extrabold tracking-[-0.02em]'>
+				<h2 id='no-charter-title' className='text-[1.625rem] font-extrabold tracking-[-0.02em]'>
 					Without one <span className='text-[var(--ink-mute)]'>· {without.length}</span>
 				</h2>
-				<p className='max-w-xl text-[13.5px] text-[var(--ink-3)]'>Every local government must publish a Citizen’s Charter: each service, what to bring, the fee and how long it takes.</p>
+				<p className='max-w-xl text-[0.84375rem] text-[var(--ink-3)]'>Every local government must publish a Citizen’s Charter: each service, what to bring, the fee and how long it takes.</p>
 			</div>
 
 			{/* A group is only named when there is another to tell it from; with one, the provinces follow the section's heading. */}
@@ -156,7 +156,7 @@ function WithoutCharter() {
 								<h3 className={`${eyebrow} text-[var(--ink-3)]`}>
 									{g.title} <span className='text-[var(--ink-mute)]'>· {list.length}</span>
 								</h3>
-								<p className='mt-1 text-[13px] text-[var(--ink-mute)]'>{g.lead}</p>
+								<p className='mt-1 text-[0.8125rem] text-[var(--ink-mute)]'>{g.lead}</p>
 							</>
 						) : null}
 						{PROVINCES.map((p) => {
@@ -164,7 +164,7 @@ function WithoutCharter() {
 							if (!inP.length) return null
 							return (
 								<div key={p.slug} className='mt-6'>
-									<p className='relative border-b border-[var(--ink)] pb-2 text-[13px] font-bold'>
+									<p className='relative border-b border-[var(--ink)] pb-2 text-[0.8125rem] font-bold'>
 										{p.name} <span className='font-normal text-[var(--ink-mute)]'>· {inP.length}</span>
 									</p>
 									{/* Each row's rule is on its top, so the last row ends without one at any column count; the first row's tuck under the province's rule, which is positioned to paint over them. */}
@@ -172,15 +172,15 @@ function WithoutCharter() {
 										{inP.map((l) => (
 											<li key={l.key} className='flex min-w-0 gap-3 border-t border-[var(--rule-soft)] py-5'>
 												<span className='size-9 shrink-0'>
-													<Emblem image={lguSeal(l.key)} name={l.name} className='size-full rounded-full text-[10px]' />
+													<Emblem image={lguSeal(l.key)} name={l.name} className='size-full rounded-full text-[0.625rem]' />
 												</span>
 												<div className='min-w-0'>
-													<p className='text-[14.5px] font-semibold leading-snug'>
-														{l.name} <span className='text-[12px] font-normal text-[var(--ink-mute)]'>{kindOf(l)}</span>
+													<p className='text-[0.90625rem] font-semibold leading-snug'>
+														{l.name} <span className='text-[0.75rem] font-normal text-[var(--ink-mute)]'>{kindOf(l)}</span>
 													</p>
-													{l.charterNote ? <p className='mt-0.5 text-[12.5px] leading-[1.5] text-[var(--ink-3)]'>{l.charterNote}</p> : null}
+													{l.charterNote ? <p className='mt-0.5 text-[0.78125rem] leading-[1.5] text-[var(--ink-3)]'>{l.charterNote}</p> : null}
 													{l.website || l.facebook || l.charter ? (
-														<p className='mt-1 flex flex-wrap gap-x-3 text-[12.5px]'>
+														<p className='mt-1 flex flex-wrap gap-x-3 text-[0.78125rem]'>
 															{l.charter ? (
 																<a href={l.charter.url} target='_blank' rel='noreferrer' className={`inline-flex items-center gap-1 ${linkClass}`}>
 																	Charter <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />

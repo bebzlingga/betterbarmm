@@ -117,7 +117,7 @@ export default function ContributePage() {
 								<article className='bb-plate relative flex h-full flex-col p-7 lg:p-8'>
 									<OkirCorner position='top-right' className='m-2 size-6 opacity-50' />
 
-									<span className='num text-[12px] font-semibold text-[var(--brass)]'>
+									<span className='num text-[0.75rem] font-semibold text-[var(--brass)]'>
 										{String(index + 1).padStart(2, '0')}
 									</span>
 
@@ -128,7 +128,7 @@ export default function ContributePage() {
 										{item.description}
 									</p>
 
-									<p className='mt-8 border-t border-[var(--rule)] pt-4 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
+									<p className='mt-8 border-t border-[var(--rule)] pt-4 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 										{item.label}
 									</p>
 								</article>

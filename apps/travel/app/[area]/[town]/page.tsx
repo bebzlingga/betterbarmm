@@ -55,7 +55,7 @@ const host = (url: string) => {
 function SourceLinks({ sources }: { sources: Source[] }) {
 	if (!sources.length) return null
 	return (
-		<p className='mt-2 flex flex-wrap gap-x-3 gap-y-1 text-[12px] text-[var(--ink-3)]'>
+		<p className='mt-2 flex flex-wrap gap-x-3 gap-y-1 text-[0.75rem] text-[var(--ink-3)]'>
 			{sources.map((source) => (
 				<a key={source.url} href={source.url} className='rule-link-quiet' rel='noopener' target='_blank'>
 					{host(source.url)}
@@ -77,13 +77,13 @@ function Listings({ label, items, empty }: { label: string; items: TownListing[]
 								<span className='item-title'>{item.name}</span>
 								<span className='tv-kind'>{item.kind}</span>
 							</div>
-							<p className='mt-1 text-[13.5px] leading-6 text-[var(--ink-2)]'>{item.note}</p>
+							<p className='mt-1 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>{item.note}</p>
 							<SourceLinks sources={item.sources} />
 						</li>
 					))}
 				</ul>
 			) : null}
-			{empty ? <p className='mt-4 text-[14px] leading-7 text-[var(--ink-2)]'>{empty}</p> : null}
+			{empty ? <p className='mt-4 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{empty}</p> : null}
 		</div>
 	)
 }
@@ -113,7 +113,7 @@ export default async function TownPage({ params }: { params: Promise<{ area: str
 						{facts.map((fact) => (
 							<div key={fact.label}>
 								<dt className='bb-label'>{fact.label}</dt>
-								<dd className='mt-2.5 text-[13.5px] leading-6 text-[var(--ink-2)]'>
+								<dd className='mt-2.5 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>
 									{fact.value}
 									<span className='text-[var(--ink-3)]'>{fact.extra}</span>
 								</dd>
@@ -145,12 +145,12 @@ export default async function TownPage({ params }: { params: Promise<{ area: str
 										<article key={spot.name} className='tv-card'>
 											<span className='tv-kind'>{SPOT_KIND_LABEL[spot.kind] ?? spot.kind}</span>
 											<h3 className='item-title-lg mt-3'>{spot.name}</h3>
-											<p className='mt-3 text-[14px] leading-7 text-[var(--ink-2)]'>{spot.summary}</p>
+											<p className='mt-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{spot.summary}</p>
 											<SourceLinks sources={spot.sources} />
 										</article>
 									))}
 									{!town.whereToGo.length ? (
-										<p className='text-[14px] leading-7 text-[var(--ink-2)] md:col-span-2'>
+										<p className='text-[0.875rem] leading-7 text-[var(--ink-2)] md:col-span-2'>
 											No attraction in {unit.name} is described in any source this guide found.
 										</p>
 									) : null}
@@ -174,12 +174,12 @@ export default async function TownPage({ params }: { params: Promise<{ area: str
 											{town.food.map((dish) => (
 												<li key={dish.name} className='border-b border-[var(--rule-soft)] pb-4'>
 													<span className='item-title'>{dish.name}</span>
-													<p className='mt-1 text-[13.5px] leading-6 text-[var(--ink-2)]'>{dish.summary}</p>
+													<p className='mt-1 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>{dish.summary}</p>
 												</li>
 											))}
 										</ul>
 									) : (
-										<p className='mt-4 text-[14px] leading-7 text-[var(--ink-2)]'>
+										<p className='mt-4 text-[0.875rem] leading-7 text-[var(--ink-2)]'>
 											See the <Link href='/food' className='rule-link'>region&rsquo;s food</Link>.
 										</p>
 									)}
@@ -207,7 +207,7 @@ export default async function TownPage({ params }: { params: Promise<{ area: str
 									<p className='bb-label'>Sources</p>
 									<ul className='mt-4 grid gap-2 sm:grid-cols-2'>
 										{town.sources.map((source) => (
-											<li key={source.url} className='text-[13px] leading-6 text-[var(--ink-3)]'>
+											<li key={source.url} className='text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 												<a href={source.url} className='rule-link-quiet' rel='noopener' target='_blank'>
 													{source.label}
 												</a>
@@ -260,7 +260,7 @@ export default async function TownPage({ params }: { params: Promise<{ area: str
 									<GateList label='What to do' items={town.whatToDo} />
 									<div>
 										<p className='bb-label'>Getting there</p>
-										<p className='mt-3 text-[14px] leading-7 text-[var(--ink-2)]'>{town.gettingThere}</p>
+										<p className='mt-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{town.gettingThere}</p>
 									</div>
 									{town.caution ? <Caution label='Before you go'>{town.caution}</Caution> : null}
 						</>

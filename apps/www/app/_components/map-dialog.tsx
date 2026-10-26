@@ -68,7 +68,7 @@ export function MapDialog({
 					<div className='flex h-14 px-4 lg:px-6 items-center justify-between gap-4'>
 						<div className='flex items-baseline gap-3'>
 							<p className='bb-label'>Interactive map</p>
-							<h2 id='map-dialog-title' className='text-[15px] font-extrabold tracking-[-0.02em]'>
+							<h2 id='map-dialog-title' className='text-[0.9375rem] font-extrabold tracking-[-0.02em]'>
 								The Bangsamoro, town by town
 							</h2>
 						</div>
@@ -87,7 +87,7 @@ export function MapDialog({
 					{data ? (
 						<MapApp data={data} />
 					) : (
-						<p className='py-24 text-center text-[14px] text-[var(--ink-3)]'>
+						<p className='py-24 text-center text-[0.875rem] text-[var(--ink-3)]'>
 							{failed ? 'The map could not be loaded. Close this and try again.' : 'Loading the map…'}
 						</p>
 					)}

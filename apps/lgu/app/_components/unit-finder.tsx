@@ -55,21 +55,21 @@ function Hit({
 			className='finder-hit'
 		>
 			<span className='min-w-0 flex-1 text-left'>
-				<span className='block truncate text-[15px] font-semibold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+				<span className='block truncate text-[0.9375rem] font-semibold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 					{entry.name}
 					{entry.unit.isCapital ? (
-						<span className='ml-2 font-mono text-[9px] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
+						<span className='ml-2 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
 							Capital
 						</span>
 					) : null}
 				</span>
-				<span className='mt-1 block truncate font-mono text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+				<span className='mt-1 block truncate font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
 					{entry.unit.isCity ? 'City' : 'Municipality'} · {entry.province.name}
 					{entry.unit.alsoKnownAs ? ` · also ${entry.unit.alsoKnownAs}` : ''}
 				</span>
 			</span>
 
-			<span className='num shrink-0 text-right text-[11.5px] text-[var(--ink-3)]'>
+			<span className='num shrink-0 text-right text-[0.71875rem] text-[var(--ink-3)]'>
 				{entry.unit.population == null ? '—' : formatNumber(entry.unit.population)}
 				<span className='ml-1 text-[var(--ink-mute)]'>people</span>
 			</span>
@@ -208,9 +208,9 @@ export function UnitFinder({ children }: { children: React.ReactNode }) {
 									aria-expanded={hits.length > 0}
 									aria-controls='finder-results'
 									placeholder='Town, city, or barangay…'
-									className='min-w-0 flex-1 bg-transparent text-[16px] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+									className='min-w-0 flex-1 bg-transparent text-[1rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 								/>
-								<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[9.5px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
+								<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
 									Esc
 								</kbd>
 							</div>
@@ -227,21 +227,21 @@ export function UnitFinder({ children }: { children: React.ReactNode }) {
 								))}
 
 								{query.trim().length >= 2 && hits.length === 0 ? (
-									<p className='px-5 py-8 text-center text-[13.5px] leading-6 text-[var(--ink-3)]'>
+									<p className='px-5 py-8 text-center text-[0.84375rem] leading-6 text-[var(--ink-3)]'>
 										Nothing in the directory matches “{query.trim()}”. Sulu is not in BARMM and is
 										not here; barangay-only names may be spelled differently in PSA&rsquo;s record.
 									</p>
 								) : null}
 
 								{query.trim().length < 2 ? (
-									<p className='px-5 py-8 text-center text-[13.5px] leading-6 text-[var(--ink-3)]'>
+									<p className='px-5 py-8 text-center text-[0.84375rem] leading-6 text-[var(--ink-3)]'>
 										Type two letters. Barangay names count too — search the village and the town
 										that holds it comes up.
 									</p>
 								) : null}
 							</div>
 
-							<div className='flex items-center justify-between gap-4 border-t border-[var(--rule)] px-5 py-3 font-mono text-[9.5px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+							<div className='flex items-center justify-between gap-4 border-t border-[var(--rule)] px-5 py-3 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
 								<span>108 cities and municipalities</span>
 								<span className='hidden sm:block'>↑↓ to move · ↵ to open</span>
 							</div>
@@ -275,10 +275,10 @@ export function FinderTrigger({
 		return (
 			<button type='button' onClick={open} className={`finder-field ${className}`}>
 				<MagnifyingGlassIcon className='size-4 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
-				<span className='flex-1 text-left text-[14.5px] text-[var(--ink-mute)]'>
+				<span className='flex-1 text-left text-[0.90625rem] text-[var(--ink-mute)]'>
 					Find your city, municipality or barangay
 				</span>
-				<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[9.5px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
+				<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
 					/
 				</kbd>
 			</button>

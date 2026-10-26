@@ -28,9 +28,9 @@ function Diff({ p }: { p: Proposal }) {
   const fields = p.action === "insert" ? Object.keys(p.after ?? {}) : changedFields(p.before, p.after);
   return (
     <div className="overflow-hidden rounded-lg border border-[var(--rule)]">
-      <table className="w-full table-fixed text-left text-[13px]">
+      <table className="w-full table-fixed text-left text-[0.8125rem]">
         <thead className="bg-[var(--surface-2)]">
-          <tr className="text-[10.5px] uppercase tracking-[0.08em] text-[var(--ink-3)]">
+          <tr className="text-[0.65625rem] uppercase tracking-[0.08em] text-[var(--ink-3)]">
             <th className="w-40 px-3 py-2 font-semibold">Field</th>
             {p.action === "update" ? <th className="px-3 py-2 font-semibold">Now on the site</th> : null}
             <th className="px-3 py-2 font-semibold">{p.action === "update" ? "At the source" : "Value"}</th>
@@ -39,7 +39,7 @@ function Diff({ p }: { p: Proposal }) {
         <tbody>
           {fields.map((f) => (
             <tr key={f} className="border-t border-[var(--rule)] align-top">
-              <td className="field-mono px-3 py-2 text-[12px] text-[var(--ink-3)]">{f}</td>
+              <td className="field-mono px-3 py-2 text-[0.75rem] text-[var(--ink-3)]">{f}</td>
               {p.action === "update" ? (
                 <td className="break-words bg-[var(--accent-soft)]/40 px-3 py-2 text-[var(--ink-3)] line-through decoration-[var(--accent)]/40">{show(p.before?.[f])}</td>
               ) : null}
@@ -93,7 +93,7 @@ export default async function UpdatesPage({ searchParams }: { searchParams: Prom
             key={s}
             href={`/updates?status=${s}`}
             aria-current={s === status ? "page" : undefined}
-            className={`rounded-md px-3 py-1.5 text-[13px] font-medium transition ${s === status ? "bg-[var(--surface)] text-[var(--ink)] shadow-[var(--shadow-sm)]" : "text-[var(--ink-3)] hover:text-[var(--ink)]"}`}
+            className={`rounded-md px-3 py-1.5 text-[0.8125rem] font-medium transition ${s === status ? "bg-[var(--surface)] text-[var(--ink)] shadow-[var(--shadow-sm)]" : "text-[var(--ink-3)] hover:text-[var(--ink)]"}`}
           >
             {label}
           </Link>

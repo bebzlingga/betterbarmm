@@ -70,7 +70,7 @@
   border-top: 1px solid var(--rule);
   padding-top: 0.85rem;
   font-family: var(--font-display);
-  font-size: 10px;
+  font-size: 0.625rem;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -232,7 +232,7 @@
    what it has to clear. */
 .tm-label {
   font-family: var(--font-display);
-  font-size: 11.5px;
+  font-size: 0.71875rem;
   font-weight: 600;
   line-height: 1.25;
   letter-spacing: -0.005em;
@@ -240,7 +240,7 @@
 
 .tm-value {
   font-family: var(--font-display);
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 700;
   line-height: 1;
   font-variant-numeric: tabular-nums;

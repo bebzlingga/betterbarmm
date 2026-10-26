@@ -138,7 +138,7 @@ export function SiteNav() {
 								href='https://betterbarmm.com/contribute'
 								target='_blank'
 								rel='noreferrer'
-								className='bb-btn bb-btn-accent !px-4 !py-0 !text-[9.5px]'
+								className='bb-btn bb-btn-accent !px-4 !py-0 !text-[0.59375rem]'
 							>
 								<HandHeartIcon size={13} weight='fill' aria-hidden='true' />
 								Contribute
@@ -172,7 +172,7 @@ export function SiteNav() {
 						<Link
 							href='/'
 							onClick={closeMenu}
-							className='hidden whitespace-nowrap font-[family-name:var(--font-display)] text-[10.5px] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
+							className='hidden whitespace-nowrap font-[family-name:var(--font-display)] text-[0.65625rem] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
 						>
 							Local government
 						</Link>
@@ -203,7 +203,7 @@ export function SiteNav() {
 										className='nav-menu-item'
 									>
 										<span>{province.name}</span>
-										<span className='num text-[10.5px] text-[var(--ink-mute)]'>
+										<span className='num text-[0.65625rem] text-[var(--ink-mute)]'>
 											{province.municipalities.length}
 										</span>
 									</Link>
@@ -293,7 +293,7 @@ export function SiteNav() {
 									Local officials
 								</Link>
 								<Link href='/ordinances' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5'>
-									Ordinances <span className='text-[12px] text-[var(--ink-3)]'>· Soon</span>
+									Ordinances <span className='text-[0.75rem] text-[var(--ink-3)]'>· Soon</span>
 								</Link>
 							</div>
 
@@ -310,7 +310,7 @@ export function SiteNav() {
 										className='flex items-center justify-between gap-3 border-b border-[var(--rule-soft)] py-2.5'
 									>
 										{province.name}
-										<span className='num text-[11px] text-[var(--ink-mute)]'>
+										<span className='num text-[0.6875rem] text-[var(--ink-mute)]'>
 											{province.municipalities.length}
 										</span>
 									</Link>
