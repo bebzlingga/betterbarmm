@@ -61,5 +61,28 @@
     "date": "2026-10-23"
    }
   ]
+ },
+ {
+  "date": "2026-10-26",
+  "type": "shooting",
+  "title": "Four shot dead as gunmen riddle a silver car in Tulunan, Datu Anggal Midtimbang",
+  "summary": "Four people riding in a silver car were killed when gunmen sprayed the vehicle with bullets on the afternoon of Monday, 26 October 2026, in Barangay Tulunan, Datu Anggal Midtimbang, Maguindanao del Sur. Col. Michael John Mangahis, the Maguindanao del Sur police provincial director, confirmed the four deaths to Radyo Bida and said the victims were not from Datu Anggal Midtimbang. They had not yet been identified.",
+  "province": "Maguindanao del Sur",
+  "municipality": "Datu Anggal Midtimbang",
+  "barangay": "Tulunan",
+  "deaths": 4,
+  "injured": null,
+  "missing": null,
+  "vehicles": [
+   "car"
+  ],
+  "sources": [
+   {
+    "outlet": "Facebook",
+    "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid032MwfdZ9PEFMcN3Y76rg1SPfe8Mioww8AvNh4tM7SWBhwe3QQX9FyvxixKkTYFNZSl&id=100068735708353",
+    "title": "BREAKING NEWS: APAT ang kumpirmadong patay nang paulanan ng bala ang isang sasakyan ngayong hapon sa Barangay Tulunan, Datu Anggal Midtimbang, Maguindanao del Sur",
+    "date": "2026-10-26"
+   }
+  ]
  }
 ]
