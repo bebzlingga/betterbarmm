@@ -139,7 +139,7 @@ export function ElectionTimeline({ phases }: { phases: TimelinePhase[] }) {
 		<div className='w-full'>
 			<div
 				ref={scrollerRef}
-				className={`timeline-scroll select-none overflow-x-auto overflow-y-hidden pb-2 pl-6 pr-6 lg:pl-[max(2rem,calc((100vw-88rem)/2+2rem))] lg:pr-8 ${
+				className={`timeline-scroll select-none overflow-x-auto overflow-y-hidden pb-2 pl-6 pr-6 lg:pl-[max(2rem,calc((100vw-var(--bb-page-width))/2+2rem))] lg:pr-8 ${
 					isDragging ? 'cursor-grabbing' : 'cursor-grab'
 				}`}
 				aria-label='Election timeline'
@@ -297,7 +297,7 @@ export function ElectionTimeline({ phases }: { phases: TimelinePhase[] }) {
 				/>
 			</div>
 
-			<p className='mt-3 pl-6 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] lg:pl-[max(2rem,calc((100vw-88rem)/2+2rem))]'>
+			<p className='mt-3 pl-6 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] lg:pl-[max(2rem,calc((100vw-var(--bb-page-width))/2+2rem))]'>
 				Drag or scroll sideways
 			</p>
 		</div>

@@ -207,7 +207,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 						: ''
 				}
 			>
-				<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
+				<div className='mx-auto max-w-[var(--bb-page-width)] px-6 lg:px-8'>
 					{/* Three tracks so the links sit on the true center of the header
 					    rather than wherever the mark and controls leave room.
 
@@ -327,7 +327,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 						<nav
 							id='site-mobile-menu'
 							aria-label='Mobile navigation'
-							className='mx-auto max-w-[88rem] px-6 py-6 text-sm text-[var(--ink-2)] lg:px-8 max-h-[calc(100dvh-7.5rem)] overflow-y-auto overscroll-contain'
+							className='mx-auto max-w-[var(--bb-page-width)] px-6 py-6 text-sm text-[var(--ink-2)] lg:px-8 max-h-[calc(100dvh-7.5rem)] overflow-y-auto overscroll-contain'
 						>
 							<p className='bb-label'>Discover BARMM</p>
 							<div className='mt-3 grid'>

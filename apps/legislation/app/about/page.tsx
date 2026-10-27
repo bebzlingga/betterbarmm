@@ -286,7 +286,7 @@ export default function AboutPage() {
 
 			</section>
 
-			<OkirRule className='mx-auto max-w-[88rem] opacity-70' />
+			<OkirRule className='mx-auto max-w-[var(--bb-page-width)] opacity-70' />
 
 			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 				<SectionHead
@@ -341,7 +341,7 @@ export default function AboutPage() {
 				</div>
 			</section>
 
-			<OkirRule className='mx-auto max-w-[88rem] opacity-70' />
+			<OkirRule className='mx-auto max-w-[var(--bb-page-width)] opacity-70' />
 
 			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 				<SectionHead

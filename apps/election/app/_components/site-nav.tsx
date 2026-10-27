@@ -81,7 +81,7 @@ export function SiteNav() {
 			data-solid={past}
 			className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'
 		>
-			<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
+			<div className='mx-auto max-w-[var(--bb-page-width)] px-6 lg:px-8'>
 				{/* Two tracks on a phone, three from `md` up.
 				 *
 				 * The center track holds a nav that is not rendered below `md`, so
@@ -165,7 +165,7 @@ export function SiteNav() {
 						<nav
 							id='election-mobile-menu'
 							aria-label='Mobile navigation'
-							className='mx-auto max-w-[88rem] px-6 py-6 text-sm text-[var(--ink-2)] lg:px-8 max-h-[calc(100dvh-7.5rem)] overflow-y-auto overscroll-contain'
+							className='mx-auto max-w-[var(--bb-page-width)] px-6 py-6 text-sm text-[var(--ink-2)] lg:px-8 max-h-[calc(100dvh-7.5rem)] overflow-y-auto overscroll-contain'
 						>
 							<p className='bb-label'>This workspace</p>
 							<div className='mt-3 grid'>

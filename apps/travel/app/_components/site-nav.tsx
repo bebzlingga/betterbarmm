@@ -146,7 +146,7 @@ export function SiteNav() {
 			data-solid={past}
 			className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'
 		>
-			<div className='mx-auto max-w-[88rem] px-6 lg:px-8'>
+			<div className='mx-auto max-w-[var(--bb-page-width)] px-6 lg:px-8'>
 				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2'>
 					<div className='flex min-w-0 items-center gap-3'>
 						<a href='https://betterbarmm.com' onClick={closeMenu} className='w-fit shrink-0'>
@@ -254,7 +254,7 @@ export function SiteNav() {
 						<nav
 							id='travel-mobile-menu'
 							aria-label='Mobile navigation'
-							className='mx-auto max-w-[88rem] px-6 py-6 text-sm text-[var(--ink-2)] lg:px-8 max-h-[calc(100dvh-7.5rem)] overflow-y-auto overscroll-contain'
+							className='mx-auto max-w-[var(--bb-page-width)] px-6 py-6 text-sm text-[var(--ink-2)] lg:px-8 max-h-[calc(100dvh-7.5rem)] overflow-y-auto overscroll-contain'
 						>
 							<div className='grid'>
 								<Link href='/' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 font-semibold text-[var(--ink)]'>

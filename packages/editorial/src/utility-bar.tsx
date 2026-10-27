@@ -161,7 +161,7 @@ export function UtilityBar({
 	const ProjectIcon = currentProject?.icon ?? FolderOpenIcon
 	return (
 		<div className={`utility-bar ${className}`}>
-			<div className='mx-auto flex max-w-[88rem] items-center justify-between gap-4 px-6 lg:px-8'>
+			<div className='mx-auto flex max-w-[var(--bb-page-width)] items-center justify-between gap-4 px-6 lg:px-8'>
 				<div className='flex items-center gap-4 sm:gap-5'>
 					<Switch
 						icon={switchIcon}

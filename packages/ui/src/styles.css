@@ -1109,9 +1109,22 @@ figcaption {
    footer share one pair of edges down the whole estate.
    ============================================================ */
 
+/* The page width, a variable so the bars that line up with the container
+   (the utility bar, each workspace's nav) take the same width. Past 1440 the
+   screen has room to spare, so the page widens a step. */
+:root {
+  --bb-page-width: 88rem;
+}
+
+@media (min-width: 1441px) {
+  :root {
+    --bb-page-width: 96rem;
+  }
+}
+
 .bb-container {
   width: 100%;
-  max-width: 88rem;
+  max-width: var(--bb-page-width);
   margin-inline: auto;
   padding-inline: 1.5rem;
 }

@@ -327,7 +327,7 @@ export function SiteNav() {
 				<nav
 					id='legislation-mobile-menu'
 					aria-label='Mobile navigation'
-					className={`mx-auto grid max-w-[88rem] overflow-hidden px-6 text-sm text-[var(--ink-2)] transition-[grid-template-rows,opacity,margin,padding] duration-200 lg:px-8 ${
+					className={`mx-auto grid max-w-[var(--bb-page-width)] overflow-hidden px-6 text-sm text-[var(--ink-2)] transition-[grid-template-rows,opacity,margin,padding] duration-200 lg:px-8 ${
 						isMenuOpen
 							? 'mb-5 grid-rows-[1fr] pt-5 opacity-100'
 							: 'mb-0 grid-rows-[0fr] pt-0 opacity-0'
