@@ -1,9 +1,215 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-10-26T23:51:29.072Z",
+ "generatedAt": "2026-10-27T13:13:07.839Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds and Google News’s index of them. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "items": [
+  {
+   "url": "https://reliefweb.int/report/philippines/joint-final-evaluation-contributing-sustainable-peace-barmm-supporting-idp-inclusion-and-displacement-resolution-measures-project-evo202613",
+   "title": "Joint Final Evaluation of “Contributing to Sustainable Peace in the BARMM by Supporting IDP Inclusion and Displacement Resolution Measures\" Project (EvO/2026/13)",
+   "source": "ReliefWeb",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-27T12:15:46.000Z",
+   "image": null,
+   "via": "https://news.google.com/rss/articles/CBMijAJBVV95cUxORVZ4eGI3UDZ4ODdNOXJTaloxQVZ0bklNdlBaaWZkZzFwam1zcnNHMWFlbzN0ams3QWpsZ2QzT1VyZTZFRFJBM0RsLVFyMXpOZVljSC1nam1rek1GZ2c5VXNGUTVKR0tzS19kZkplVFJ3LXRwYlU0ejlCVjE3ZDNudEpCaktKTEpVRm85amlITjMzQ3NJdHY2WFZ5LXlMWnBkaW8xNUJHdHBpQThNVE1fTjVsbjJZNjRYb3ZkOXF0MDlBcU9MZXMxbHNRMVVWUk5PMm0yWjFYQW1PMExfMTU4UzlLN3BzZjZDb3hMUTU2MGFmNUZrWmxWNmlaeDdfWEd6bW1Ed0t2aEIwdGJT?oc=5",
+   "checked": "2026-10-27",
+   "pictured": true
+  },
+  {
+   "url": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-peace-efforts-to-extend-pilgrimage-assistance-to-former-combatants-in-2026/?utm_source=rss&utm_medium=rss&utm_campaign=bangsamoro-peace-efforts-to-extend-pilgrimage-assistance-to-former-combatants-in-2026",
+   "title": "Bangsamoro peace efforts to extend pilgrimage assistance to former combatants in 2026",
+   "source": "Bangsamoro Government",
+   "summary": "COTABATO CITY—Former combatants of the Moro Islamic Liberation Front (MILF) and Moro National Liberation Front (MNLF), along with their immediate family members, are set to receive government-assisted Hajj (pilgrimage) assistance this year,…",
+   "feed": "Bangsamoro Government",
+   "published_at": "2026-10-27T10:29:41.000Z",
+   "image": "https://bangsamoro.gov.ph/wp-content/uploads/2026/10/IMG_20261027_163841_646-1-150x150.jpg",
+   "checked": "2026-10-27"
+  },
+  {
+   "url": "https://mindanaogoldstardaily.com/marawi-siege-compensation-to-hit-71b-this-october",
+   "title": "Marawi siege compensation to hit ₱7.1b this October",
+   "source": "Mindanao Gold Star Daily",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-27T08:39:42.000Z",
+   "image": "https://uploads.mindanaogoldstardaily.com/2026/10/marawi-compensation-board-claims-final-validation-2026-og-1200x630.jpg",
+   "via": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVmk0TWhmR3NzRkNlTGEtQjcwZkY3aFZSOGpQdl9zRHZ3My1kWENQZVhJbEtlc0dJcUxWbndsSXA0ZGlCRVFJcXBzWEc2djk4eEVXMlNrUjJwVElvUjhHZXk5NTVNdGt0N2U2OVZaSVNnUXdOYi1pX1REbW4zSGhaWldreEUxMnMtVEgw?oc=5",
+   "checked": "2026-10-27",
+   "pictured": true
+  },
+  {
+   "url": "https://www.dzrh.com.ph/post/comelec-hands-off-in-barmm-chief-minister-selection",
+   "title": "COMELEC ‘hands-off’ in BARMM chief minister selection",
+   "source": "DZRH",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-27T08:35:28.000Z",
+   "image": "https://dzrh-bucket.s3.ap-southeast-1.amazonaws.com/featuredimage/2026/10/N7iyJD-1P412dVFJtRsBt.jpeg",
+   "via": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOaUJsQWhyb2x6MUhZc3dJcVJSNm5pWEloRldtTnhfT1BhNmt0dWtyWkFkelVJV3NlQmhpOFFDT1FEd1ZzTTlLQVJOSmFqNW83WFR2N2h0Ylkwc2VhQ18zNy03bjJyNTJvNVhraGQ2Rnp1ZHpQMEJXaXNWX2RmTzNnWG8xMWJnaU0?oc=5",
+   "checked": "2026-10-27",
+   "pictured": true
+  },
+  {
+   "url": "https://www.pna.gov.ph/article/pcg-rescues-37-people-aboard-a-distressed-vessel-in-tawi-tawi",
+   "title": "PCG rescues 37 people aboard a distressed vessel in Tawi-Tawi",
+   "source": "PNA",
+   "summary": "",
+   "feed": "Google News (PH outlets)",
+   "published_at": "2026-10-27T07:45:00.000Z",
+   "image": "https://pna.gov.ph/_assets/storage/photo-assets/j6jP4GIGRgufyyZjKNKBAFQBDQdgIqWjZV7pvYwS.webp",
+   "via": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNcWdfNTRLRkpzb3FNbGxFWm42WXpUaGtqNzEwMFUwazJJWDg1aEdSNkJ5WU1NY1hxbURPbVNVWHpkdHNyQzlqTTZKb1N0bmJEb3J5cGRNSksxZXF6d3lJYjFITzJpSkNEcjU1WkNRTWJLc1pIWTJtRUNKWjVsOXJ0Y3lWaWk1c3U1dUtfVUs2akMzSUhYUDBN?oc=5",
+   "checked": "2026-10-27",
+   "pictured": true
+  },
+  {
+   "url": "https://bangsamoro.gov.ph/news/latest-news/project-tabang-delivers-assistance-to-madaris-markadz-in-maguindanao-del-norte/?utm_source=rss&utm_medium=rss&utm_campaign=project-tabang-delivers-assistance-to-madaris-markadz-in-maguindanao-del-norte",
+   "title": "Project TABANG delivers assistance to madaris, markadz in Maguindanao del Norte",
+   "source": "Bangsamoro Government",
+   "summary": "COTABATO CITY— Eleven Islamic institutions, comprising madaris and markadz in Maguindanao del Norte, received assistance from the Office of the Chief Minister’s Project Tulong Alay sa Bangsamoro nang Nangangailangan (TABANG). Under the…",
+   "feed": "Bangsamoro Government",
+   "published_at": "2026-10-27T07:39:33.000Z",
+   "image": "https://bangsamoro.gov.ph/wp-content/uploads/2026/10/tabang-150x150.jpeg",
+   "checked": "2026-10-27"
+  },
+  {
+   "url": "https://www.gmanetwork.com/news/topstories/nation/1007334/barmm-zamboanga-lead-in-illicit-cigarette-trade-study/story/",
+   "title": "BARMM, Zamboanga lead in illicit cigarette trade — study",
+   "source": "GMA News",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-27T07:27:00.000Z",
+   "image": "https://images.gmanews.tv/webpics/2026/06/bir_seizes_cigarettes_cauayan_city_062926_2026_06_29_20_45_51.jpg",
+   "via": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPNDB6YWFXTk9QS3BGS1VWTVNadXpDU3VpOEhJYkx0UWM0YUhRTHRfeUlIYzJsc1J2amNGaFg3WUdSRnY2Wml2VFFoRFlmUGZBa3ctRGJ4bjd1cWVnZVgwWGtOaVpLdm1uNExsWmdNSFh0MDBpam8zaVV2VW4tVjJIOHRqTWhPYnlIX0FfeC1welNYMTBPSi1aaWNqWjZOWDRCRkNROWY1aDJvQTY0Snh0UXM0Z01aQ1JkdEHSAb8BQVVfeXFMT0E5SUJBUHMxdm1ldzBkWThNQWg1a191SU1BanZLQjRBNThmSmV1cEd1Q0FxMmlGTU1mQ3EwdmdMNFV0SVctOWtWSDYwWnpOQldMZDNVeUlFOXdSOFRtYVRDQnljbm9MdzA3cGh1anZLNkxQVnA2MkRjc1VYbXNKUTlMMHVZNmZPZ1BtM2Ixc0VmdUo4TTdENUx4V1ZPWHlMbHRnWWpKODU5ZzM4ODB1SWxneC02UXVTRUhNeWNkTXM?oc=5",
+   "checked": "2026-10-27",
+   "pictured": true
+  },
+  {
+   "url": "https://newsinfo.inquirer.net/2330973/walang-pasok-in-person-class-suspensions-on-wednesday-oct-28",
+   "title": "WALANG PASOK: In-person class suspensions on Wednesday, Oct. 28",
+   "source": "Inquirer",
+   "summary": "MANILA, Philippines — Several areas suspended face-to-face classes on Wednesday, Oct. 28, due to health concerns and preparations for the first Bangsamoro Parliament session and Association of Southeast Asian Nations (Asean) meetings. Below…",
+   "feed": "Inquirer",
+   "published_at": "2026-10-27T07:24:50.000Z",
+   "image": "https://newsinfo.inquirer.net/files/2025/11/walang-pasok-07November2025.jpg",
+   "checked": "2026-10-27"
+  },
+  {
+   "url": "https://bangsamoro.gov.ph/news/latest-news/80-coaches-step-up-life-saving-skills-for-safeguarding-bangsamoro-athletes/?utm_source=rss&utm_medium=rss&utm_campaign=80-coaches-step-up-life-saving-skills-for-safeguarding-bangsamoro-athletes",
+   "title": "80 coaches step up life-saving skills for safeguarding Bangsamoro athletes",
+   "source": "Bangsamoro Government",
+   "summary": "COTABATO CITY—80 coaches leveled up their skills in responding to medical emergencies and protecting Bangsamoro athletes’ lives through a basic life support (BLS) training here on Oct. 12–15, 2026. Spearheaded by the Bangsamoro Sports…",
+   "feed": "Bangsamoro Government",
+   "published_at": "2026-10-27T06:59:32.000Z",
+   "image": "https://bangsamoro.gov.ph/wp-content/uploads/2026/10/IMG_20261027_100312_709-150x150.jpg",
+   "checked": "2026-10-27"
+  },
+  {
+   "url": "https://thechronicle.com.ph/pcg-rescues-37-people-from-distressed-vessel-in-tawi-tawi/",
+   "title": "PCG rescues 37 people from distressed vessel in Tawi-Tawi",
+   "source": "The Chronicle PH",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-27T06:53:31.000Z",
+   "image": "https://i0.wp.com/thechronicle.com.ph/wp-content/uploads/2026/10/857957342_1164949799436899_3422150383503914086_n.jpg?fit=810%2C540&ssl=1",
+   "via": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQYlZyM0ctMnAzb2NNOG9Cc2FVUEU4blZkNjkxNjJXVklxTkEtZ3V3bkRWWmREWk5CRGV6OUROWHpyQ0lXMENyWUlkV0FGbjhPanNERFlIM1VlSXQ2WEVSSDdJU2lPSzJUazQwMkY1S3I0RVRnNG1HMVNuQk1YTUhEdXJBTEcwcFJkRXZ0cG43Yw?oc=5",
+   "checked": "2026-10-27",
+   "pictured": true
+  },
+  {
+   "url": "https://mindanaogoldstardaily.com/how-marawi-siege-victims-can-track-compensation-claims-online",
+   "title": "How Marawi siege victims can track compensation claims online",
+   "source": "Mindanao Gold Star Daily",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-27T06:43:16.000Z",
+   "image": "https://uploads.mindanaogoldstardaily.com/2026/10/marawi-compensation-board-cpis-launch-msu-marawi-2026-og-1200x630.jpg",
+   "via": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbk5BU2FMTnlJQmJnek54cmk0a3A0RE0zMFgxZ1hsY0pndXBfZEtScTFQamlLSm1Ea05kVG9JekhnUkcxY1RpUDVMQ2NELXktWmg5bjVnT1lHRTlaNjg2SUlfTWFZRlhlOFFDVWg1T0cyNksxc2wyY0tnekI2RnlaZmM2dlpVZkFXekRRSTduVHJ3S1BTMV9WMDBDNA?oc=5",
+   "checked": "2026-10-27",
+   "pictured": true
+  },
+  {
+   "url": "https://bangsamoro.gov.ph/news/latest-news/nhcp-recognizes-bcpch-basilan-as-key-national-partner-on-93rd-founding-anniversary/?utm_source=rss&utm_medium=rss&utm_campaign=nhcp-recognizes-bcpch-basilan-as-key-national-partner-on-93rd-founding-anniversary",
+   "title": "NHCP recognizes BCPCH-Basilan as key national partner on 93rd founding anniversary",
+   "source": "Bangsamoro Government",
+   "summary": "NHCP Chairperson Regalado Trota Jose Jr. (2nd from left) presents a plaque of recognition to BCPCH Commissioners Naida Akkalan and Elmasia Madjilon at the Metropolitan Theater in Manila on Oct. 22, 2026. (Photo courtesy of NHCP) LAMITAN…",
+   "feed": "Bangsamoro Government",
+   "published_at": "2026-10-27T06:36:19.000Z",
+   "image": "https://bangsamoro.gov.ph/wp-content/uploads/2026/10/NA-150x150.jpeg",
+   "checked": "2026-10-27"
+  },
+  {
+   "url": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-govt-provides-food-aid-to-300-families-in-lebak-sultan-kudarat/",
+   "title": "Bangsamoro Gov’t provides food aid to 300 families in Lebak, Sultan Kudarat",
+   "source": "Bangsamoro Government",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-27T05:57:03.000Z",
+   "image": "https://bangsamoro.gov.ph/wp-content/uploads/2026/10/photo.png",
+   "via": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQlJxU2YxbjdJWU5sd3JoM1ZEWmJCNWwza2laQThlVWNaXzlLNk9qRGZKWFN0cnBiVmt4eXJZU09VS3dCSnZsRFZkSFVFZ0VaMTZUT1Fhbkw2T1MyNzlGdWlpYTh1UUgwRG5kQkJESVl6MHN3eGl1VzdsbkEzWHhxQnMxcHVEd3h4bEZKUkJnVWtzYl9LOW9UZnN0UW9lWlVnaDNsTWlsX1VHMXNkU3Exc1FSVFpBMHBa?oc=5",
+   "checked": "2026-10-27",
+   "pictured": true
+  },
+  {
+   "url": "https://www.rappler.com/philippines/mindanao/barmm-teduray-lambangian-tribes-ancestral-land-long-struggle/",
+   "title": "BARMM’s Teduray, Lambangian tribes win ancestral land after 2 decades of struggle",
+   "source": "Rappler",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-27T05:07:20.000Z",
+   "image": "https://www.rappler.com/tachyon/2026/10/BARMM-IPs-ancestyral-land1.jpg",
+   "via": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNT00tOWdnWk1NOXhXbGpCZUFGZkJ6amh4NjJzN182QzZCMkF1MC16dmQyRU9hR1pZempTT0tWT3pHZTU3ODFBLWk1UjhpRTQ5ZnFBQjY3UUxDZC05eG12Y3paMVR6ZVZrTXp4RTI5LVlidDFsbUFOdmlYZEt2dU5KYk9RTmxsR0tJX2FXVUp0QnhIaGtHbzhUVW0ydFVUb0lZZV85RHR1YU1jQQ?oc=5",
+   "checked": "2026-10-27",
+   "pictured": true
+  },
+  {
+   "url": "https://bangsamoro.gov.ph/news/latest-news/mole-basilan-trains-sumisip-officials-to-boost-local-employment-services/",
+   "title": "MOLE-Basilan trains Sumisip officials to boost local employment services",
+   "source": "Bangsamoro Government",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-27T03:34:21.000Z",
+   "image": null,
+   "via": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNMklCN1dnVnA2LXFFSDVaM08xOVc5UXlFdldTX2wwWG4xYk5UYXJuUVFaNlpnekpHWkJOTFBsc2g3T0h5WVNtN3loTzNXVFh6eWt5NHg2RDV3MnRZcERjaF9jNzR0cGJxZlpsSjhuOGdXUUlCRDR1dWp2X2lxdTE5RlZTNmZuVHhsQ2l6R1JrSWxCNzhhWlBwOFhnLUE1cDFGcjlwVkdDUkRrNFVuVmVCa0x2VVhRN1E?oc=5",
+   "checked": "2026-10-27",
+   "pictured": true
+  },
+  {
+   "url": "https://www.rappler.com/people/human-interest/marawi-therapy-helps-mothers-find-new-ways-connect-children/",
+   "title": "In Marawi, therapy helps mothers find new ways to connect with their children",
+   "source": "Rappler",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-27T02:16:08.000Z",
+   "image": "https://www.rappler.com/tachyon/2026/10/Marawi-therapy-1.jpg",
+   "via": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRWp2cUhjNktYaWxUUjVrVWhpUnBSVVdNcDJuZ2x3UFhwTzhwYWxOSVNOMXJyNi1Ia01YTzdQZ3NLSTJLSlJKWmJORE0xdnluS0NGUWd1NU5vbUg5WkxYZGJsTmpMWkoybnBldk1ObV9CVGo0cTN0Vm5CTFQzTFVRSzlvN0pCTWFyS3VMSHRBaU5fa01QeWtFQ1ZaUVpNMmFaT0lyRkV4SnBnZw?oc=5",
+   "checked": "2026-10-27",
+   "pictured": true
+  },
+  {
+   "url": "https://newsinfo.inquirer.net/2330774/10-year-old-indigenous-girl-found-dead-tied-to-tree-in-maguindanao",
+   "title": "10-year-old Indigenous girl found dead, tied to tree in Maguindanao",
+   "source": "Inquirer",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-27T01:56:00.000Z",
+   "image": "https://newsinfo.inquirer.net/files/2024/02/Maguindanao-del-Sur-ph-maps-2024.png",
+   "via": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWFFqMHBkVmpFallUN0E0NEdLRzh0VlNNRUlZcnltR3lmVEhfZ0hkZ2FRQWM1OWNHcTc3SzdNQ3NPV3hUODQ1RVZnQU9SbVJxYmxwcG40b1A5dmJESmJFeEpUa1Z2dU55bkIxem5oNWhldnByR0RFZmdKZWh3SFZzMXp5S01WZ3NZU1dvZWdwOFo0WTVPRUNXa0N5b3ZEZlYzYXY4NkJTQdIBrAFBVV95cUxNRDB0T0JNR2trWE51RDMxM194QWt4czFjNGlRNkhwc0J3VzBnT3dBVGtPd2RUejNaai01SXJ3bEtDRkpSMG9XVjF6d3JtdjVTdGhnWE4tQWNzakxJeUN0cG13VXA1X01MVllIVXMtNWNGUXZDM1l4d0JZQ2REQmtKLXdWaGl0dE5xbHRWaXowTWhoOUItR205aEk0YlFLVnBpV3FkNF9obnJPMGJT?oc=5",
+   "checked": "2026-10-27",
+   "pictured": true
+  },
+  {
+   "url": "https://thechronicle.com.ph/mds-ppo-participates-in-review-of-first-barmm-parliamentary-elections/",
+   "title": "MDS PPO participates in review of first BARMM parliamentary elections",
+   "source": "The Chronicle PH",
+   "summary": "",
+   "feed": "Google News (international)",
+   "published_at": "2026-10-27T01:46:42.000Z",
+   "image": "https://i0.wp.com/thechronicle.com.ph/wp-content/uploads/2026/10/864382069_1414367270848844_950738971952665990_n.jpg?fit=1200%2C618&ssl=1",
+   "via": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOX1ZweEFJaFdIbzVTQXBaTHZ1UzhLTjVuSmJNYUhKNEZLZjJoaUd2bzI0UkFxX2ctN1cxXzBTWmpXRnc4d0UzSDJpRHhWT19DYUF5ZXFIamJReXNiOEtiMkJTTFRCX1didy13REp2WDFyc3pFdFBJSE9FbnhaNW1uY0xhVmVhOVhsU2VLcHhmRnFGY0NkWHZRVnpsUlN3eHM?oc=5",
+   "checked": "2026-10-27",
+   "pictured": true
+  },
   {
    "url": "https://www.pids.gov.ph/details/news/press-releases/strong-institutions-human-capital-key-to-barmm-s-inclusive-development",
    "title": "BARMM urged to turn development gains into better services, jobs",
@@ -37,6 +243,18 @@
    "published_at": "2026-10-26T16:13:00.000Z",
    "image": "https://manilatimes.net/manilatimes/uploads/images/2026/10/26/1277203.jpg",
    "via": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNdHdvM21KbGlfbTRydlh1V2NiSWdnVXVzMFhaQ0U3TWdWS2hnb2R0aFIzTVNFdkFPU2dTRlJScF9hXzY5aGdEUmdseEFwUjlmMUFfWjdId3VPRmJrcnVCeklUeTNUel9MLVhMVkVKWG9FLWpXb2dtOVFPdFRIRHZnTVVidzlvRVg2SWI3ZzZ1NWdTZDNFOWlKcnQ0ck9ZZHJUUGgtdFczOW5wOWxmY0xuVU1KWdIBuAFBVV95cUxNZ2ltckhNZWc0T3pDTG1nZUVsd1FtN3hIMEdkNVFuUnp5UDkteXZfbDdGempWajRpR1ZnZTJYNWY0YjYweE5HdDRlSFpISTRsQV9oeUlmY2hPYmFIRHlUQ3FUZlQtaE5fbUdRYU9TaGh1dXNjdGZudGtJekNSTi1kQ2ZGYmQyY1NRakhvbERGbng0enBSSVFWVlVoM1BscFJfZzFVTHBNU3YxcFRVQ3NhMUhKaXF6ekJY?oc=5",
+   "checked": "2026-10-27",
+   "pictured": true
+  },
+  {
+   "url": "https://www.pna.gov.ph/article/4-killed-in-maguindanao-del-sur-ambush",
+   "title": "4 killed in Maguindanao del Sur ambush",
+   "source": "PNA",
+   "summary": "",
+   "feed": "Google News (PH outlets)",
+   "published_at": "2026-10-26T10:59:00.000Z",
+   "image": "https://pna.gov.ph/_assets/storage/photo-assets/uVEz9fhaOUS4pkVivdwv4gA0PZpk775CGF8nErJf.webp",
+   "via": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA4X0V4V05NdHFDYXpBTWdsbzZ4TkVnQXAyR0VHU1NRdXZ3bEJETlpGczdmZWtDZ2phRS1lZmN3WWZXTlh2WUJIdEVpNWpEQ0pCT2s0Z1c1NVZJeTQxSDVGWjRTWVV5RzBtb3RsNzk1TElpdGN5d2hBMA?oc=5",
    "checked": "2026-10-27",
    "pictured": true
   },
@@ -159,6 +377,18 @@
    "image": "https://i0.wp.com/thechronicle.com.ph/wp-content/uploads/2026/10/867028849_1428713482088059_8311688128395146848_n.jpg?fit=1200%2C524&ssl=1",
    "via": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWWc1Z3dIamp6anVuMmFGWXF6ZFo5Tk44d0kzQTZfQUV2OGFHUHJ4dEk3RFZnS2NRY0pYZ01hNy1fdC1iVElKeUtFRkFkWUtyZ0pTaGdwWVhqem1FWS1XQXp4U3Z2Nk04eXlFNWVsOHlDMHByQmRMU1haS09UN1hCMEI2Zy1wdlFIdzZNOHVOMFhxMHowTE5nWFJSVGdSMXlJ?oc=5",
    "checked": "2026-10-26",
+   "pictured": true
+  },
+  {
+   "url": "https://manilastandard.net/environmental-and-sustainability/314810458/dost-opapru-bring-science-based-solutions-to-milf-camps.html",
+   "title": "DOST, OPAPRU bring science-based solutions to MILF camps",
+   "source": "Manila Standard",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-26T03:48:14.000Z",
+   "image": "https://cdn.manilastandard.net/wp-content/uploads/2026/10/dost-opapru-milf.jpg",
+   "via": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPTkQ5YWNHd3FoTGxpT0J2b3ExaXFRX1NBeDJ4NWppb2dVRnh0OEpVVzJRUmdtaTRWRGoySFJPbWJERXRPa05JaHFhSnVMam9YQWdteFNtWEI1LTJvZ1Zpc3YwdndJMlJObmlpYUg2d1dKendGMjNtVjBKNlJTTThBa0xMWXNnRUlGOFJiQW1FeHhpR1BINVVRN3pMZzVMS0lnSWtfazFVeVVlUEczdW5JODdKV3ZpeEJCY2Nxd0Vhdjl5OG1xa01zZUR3?oc=5",
+   "checked": "2026-10-27",
    "pictured": true
   },
   {
@@ -1861,6 +2091,18 @@
    "via": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNOHNzWE5mb2lzOTQ3bmZQRGgtMFNOUEtPb01XVG1rY21qcHR3bGFUYXhWVWdyQWtxQmNVUzNGYzFEdU9DdUV4SDUxWnBCTG1LMlNqbmVxbjZLdmc3UjlkY3lXeVREc1ZSUUtEdmt0RzlEbW1kVjhxXzZhcVNHVHM5VktONU42dlBtOU1PUmJuNTJSaG5EQi1hbGlWN0JmS2ZfZFp0UVN1aXMzazdrMVA0dXFBWWVFVDBvaVlpeDJ0Y3g?oc=5",
    "title": "BARMM to advance evidence-based governance; streamline service delivery",
    "reason": "duplicate of the Bangsamoro Government feed copy, headline shortened"
+  },
+  {
+   "url": "https://news.ssbcrack.com/chinese-aircraft-carrier-liaoning-transits-basilan-strait-with-escort-destroyers/",
+   "via": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdUZkMlhyYmp0STV4MnJwN2JBSHdhR1VzckdCWGxELXljUHJhYUNuQnJyMG16YTlfbWlVZ2xXLTVZdFlRaDJra3ZLLV9iaDg2NWxjWjNfYU51U0xBSTU0QTdlQ25FSGlEWmNBZFFxa2hObEtjUVpLQ09IVU9sU1JrbGZVYnBYanlkRk9sNnhpOEZlZExDMUtvc2VmQlhoQnpWVFpCaHB1a0tiajQ?oc=5",
+   "title": "Chinese Aircraft Carrier Liaoning Transits Basilan Strait with Escort Destroyers",
+   "reason": "aggregator rewrite, not the outlet that reported it"
+  },
+  {
+   "url": "https://bangsamoro.gov.ph/news/latest-news/nhcp-recognizes-bcpch-as-key-national-partner-on-93rd-founding-anniversary/?utm_source=rss&utm_medium=rss&utm_campaign=nhcp-recognizes-bcpch-as-key-national-partner-on-93rd-founding-anniversary",
+   "via": null,
+   "title": "NHCP recognizes BCPCH as key national partner on 93rd founding anniversary",
+   "reason": "duplicate: the Bangsamoro Government posted the story twice; this copy shortened the headline"
   }
  ]
 }

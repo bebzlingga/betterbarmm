@@ -1,0 +1,30 @@
+[
+ {
+  "type": "sea",
+  "injured": 0,
+  "missing": 0,
+  "vehicles": [
+   "boat"
+  ],
+  "sources": [
+   {
+    "outlet": "The Chronicle PH",
+    "url": "https://thechronicle.com.ph/pcg-rescues-37-people-from-distressed-vessel-in-tawi-tawi/",
+    "title": "PCG rescues 37 people from distressed vessel in Tawi-Tawi",
+    "date": "2026-10-27"
+   },
+   {
+    "outlet": "PNA",
+    "url": "https://www.pna.gov.ph/article/pcg-rescues-37-people-aboard-a-distressed-vessel-in-tawi-tawi",
+    "title": "PCG rescues 37 people aboard a distressed vessel in Tawi-Tawi",
+    "date": "2026-10-27"
+   }
+  ],
+  "date": "2026-10-26",
+  "province": "Tawi-Tawi",
+  "municipality": "Panglima Sugala",
+  "deaths": 0,
+  "title": "Wooden boat M/L Alim loses its engine off Panglima Sugala; all 37 aboard towed to Bongao",
+  "summary": "The wooden-hulled M/L Alim, travelling from Tandubas to Bongao with 37 people aboard, 10 of them crew, developed engine trouble off Panglima Sugala, Tawi-Tawi, on the afternoon of Monday, 26 October 2026. Coast Guard Sub-Station Panglima Sugala answered its distress call and towed the boat to the Port of Bongao, where it arrived early that evening with everyone aboard safe."
+ }
+]
