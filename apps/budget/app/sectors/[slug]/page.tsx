@@ -1,12 +1,15 @@
 import { ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import { Rise, SectionHead } from '@betterbarmm/editorial'
-import { budgetFor, percent, peso } from '@betterbarmm/budget-data'
+import { budgetFor, percent } from '@betterbarmm/budget-data'
 import { YearLink } from '../../_components/year-link'
 import { notFound } from 'next/navigation'
 import { Masthead, StatRow } from '../../_components/budget-parts'
 import { ProvisionList } from '../../_components/provision-list'
 import { SectorIcon } from '../../_components/sector-icon'
+import { Money } from '../../_components/money'
+import { HEAD_ROW, ROW, SUB, TABLE, TD, TD_NUM, TH, TH_NUM } from '../../_components/table'
+import { BudgetTrend, sectorTrend } from '../../_components/budget-trend'
 
 /* No `generateStaticParams`. These pages read `?fy=`, so what they render
    depends on the query string and there is no one page to prerender — an
@@ -43,6 +46,7 @@ export default async function SectorPage({
 	if (!sector) notFound()
 
 	const { programs, provisions } = sectorContents(sector.tag)
+	const trend = sectorTrend(sector.slug)
 
 	// Which offices spend on this, largest first. The point of the page: a
 	// sector is almost never one ministry's business.
@@ -93,11 +97,28 @@ export default async function SectorPage({
 				/>
 			</Masthead>
 
+			{/* ---- Year on year ---- */}
+			{trend && trend.length > 1 ? (
+				<section className='bb-container section-band'>
+					<SectionHead
+						index='01'
+						eyebrow='Year on year'
+						size='sm'
+						title={`${trend.length} Acts,`}
+						titleMuted='one line.'
+						lead={`What each General Appropriations Act put under this sector, FY ${trend[0]![0]} to FY ${trend[trend.length - 1]![0]}. Sectors overlap, so these are never added across sectors.`}
+					/>
+					<div className='mt-8'>
+						<BudgetTrend series={trend} label='What each Act put under this sector' active={budget.fiscalYear} />
+					</div>
+				</section>
+			) : null}
+
 			{/* ---- Who spends it ---- */}
 			{byOffice.length > 0 ? (
 				<section className='bb-container section-band'>
 					<SectionHead
-						index='01'
+						index='02'
 						eyebrow='Who spends it'
 						size='sm'
 						title={
@@ -107,46 +128,42 @@ export default async function SectorPage({
 						lead='The Act files money by office, so a sector is scattered through it. This is the scatter, gathered.'
 					/>
 
-					<div className='mt-6'>
-						{byOffice.map((office) => (
-							<YearLink
-								key={office.slug}
-								href={`/offices/${office.slug}`}
-								/* No rule above the first: the SectionHead closes on a brass line
-								   already, and a second hairline under it reads as a mistake.
-
-								   The two trailing tracks are sized, not `auto`. Every row is its
-								   own grid, so `auto` measured each row's own content and the
-								   counts and figures came out on a different edge in every row.
-								   Fixed tracks are shared by construction, and `.money` is
-								   tabular, so the widths hold: the longest figure any sector page
-								   prints is eighteen glyphs and the longest count eleven. */
-								className='group grid items-baseline gap-x-8 gap-y-2 border-t border-[var(--rule)] py-4 transition first:border-t-0 hover:bg-[var(--paper-2)] sm:grid-cols-[minmax(0,1fr)_7rem_10.5rem]'
-							>
-								<span className='flex items-baseline gap-2 text-[0.90625rem] font-semibold tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
-									{office.name}
-									<ArrowUpRightIcon
-										className='size-3.5 shrink-0 text-[var(--ink-3)] transition duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--accent)]'
-										aria-hidden='true'
-									/>
-								</span>
-								{/* The gap is the grid's now, not a margin on this cell: with a
-								    sized track a right margin only pulled the count off its own
-								    column's edge. */}
-								<span className='money font-mono text-[0.625rem] font-medium uppercase tracking-[0.12em] text-[var(--ink-mute)] sm:text-right'>
-									{office.count} {office.count === 1 ? 'program' : 'programs'}
-								</span>
-								{/* No fixed width. At `w-28` the box was 7rem and a figure of
-								    eighteen glyphs is half as wide again, so `text-right` had
-								    nothing to align inside and the amount sat off the right edge
-								    of its own column. The track is `auto`, so letting it size to
-								    the figure puts every row's last character on one line. */}
-								<span className='money text-[0.84375rem] font-semibold text-[var(--ink)] sm:text-right'>
-									{peso(office.total)}
-								</span>
-							</YearLink>
-						))}
-					</div>
+					{/* A table (user decision): the office, how many of its programs, and what they come to. */}
+					<table className={`${TABLE} mt-6`}>
+						<caption className='sr-only'>Offices that spend on {sector.name.toLowerCase()}</caption>
+						<thead>
+							<tr className={HEAD_ROW}>
+								<th scope='col' className={TH}>
+									Office
+								</th>
+								<th scope='col' className={`${TH_NUM} hidden sm:table-cell`}>
+									Programs
+								</th>
+								<th scope='col' className={TH_NUM}>
+									Amount
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							{byOffice.map((office) => (
+								<tr key={office.slug} className={ROW}>
+									<th scope='row' className={`${TD} font-normal`}>
+										<YearLink
+											href={`/offices/${office.slug}`}
+											className='inline-flex items-baseline gap-2 text-[0.90625rem] font-semibold tracking-[-0.02em] text-[var(--ink)] transition hover:text-[var(--accent)]'
+										>
+											{office.name}
+											<ArrowUpRightIcon className='size-3.5 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
+										</YearLink>
+									</th>
+									<td className={`${TD_NUM} hidden font-mono text-[0.75rem] text-[var(--ink-3)] sm:table-cell`}>{office.count}</td>
+									<td className={TD_NUM}>
+										<Money amount={office.total} />
+									</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
 				</section>
 			) : null}
 
@@ -154,7 +171,7 @@ export default async function SectorPage({
 			{programs.length > 0 ? (
 				<section className='bb-container border-t border-[var(--rule)] section-band-bottom'>
 					<SectionHead
-						index='02'
+						index='03'
 						eyebrow='The lines themselves'
 						size='sm'
 						title={`${programs.length} ${programs.length === 1 ? 'program' : 'programs'},`}
@@ -164,31 +181,43 @@ export default async function SectorPage({
 						)} of the region's total sits in these rows, though a line counted here may be counted under another sector too.`}
 					/>
 
-					<div className='mt-6'>
-						{programs.slice(0, 40).map((program) => (
-							<article
-								key={program.id}
-								/* `first:border-t-0` for the same reason, and `items-center` so
-								   the amount sits on the middle of its row rather than on the
-								   first of the two lines beside it. */
-								className='grid items-center gap-x-10 gap-y-2 border-t border-[var(--rule)] py-4 first:border-t-0 lg:grid-cols-[minmax(0,1fr)_minmax(0,10rem)]'
-							>
-								<div className='min-w-0'>
-									<p className='text-[0.875rem] font-medium leading-snug text-[var(--ink)]'>
-										{program.path}
-									</p>
-									<p className='mt-1.5 text-[0.75rem] text-[var(--ink-3)]'>
-										<YearLink href={`/offices/${program.officeSlug}`} className='rule-link'>
+					{/* A table (user decision): the program as the Act prints its path, the office, the amount. */}
+					<table className={`${TABLE} mt-6`}>
+						<caption className='sr-only'>Programs tagged to {sector.name.toLowerCase()}</caption>
+						<thead>
+							<tr className={HEAD_ROW}>
+								<th scope='col' className={TH}>
+									Program
+								</th>
+								<th scope='col' className={`${TH} hidden lg:table-cell`}>
+									Office
+								</th>
+								<th scope='col' className={TH_NUM}>
+									Amount
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							{programs.slice(0, 40).map((program) => (
+								<tr key={program.id} className={ROW}>
+									<th scope='row' className={`${TD} font-normal`}>
+										<span className='block text-[0.875rem] font-medium leading-snug text-[var(--ink)]'>{program.path}</span>
+										<YearLink href={`/offices/${program.officeSlug}`} className={`${SUB} rule-link w-fit lg:hidden`}>
 											{program.office}
 										</YearLink>
-									</p>
-								</div>
-								<p className='money text-[0.875rem] font-semibold text-[var(--ink)] lg:text-right'>
-									{peso(program.total)}
-								</p>
-							</article>
-						))}
-					</div>
+									</th>
+									<td className={`${TD} hidden w-[16rem] text-[0.78125rem] leading-snug lg:table-cell`}>
+										<YearLink href={`/offices/${program.officeSlug}`} className='rule-link text-[var(--ink-2)]'>
+											{program.office}
+										</YearLink>
+									</td>
+									<td className={TD_NUM}>
+										<Money amount={program.total} />
+									</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
 
 					{programs.length > 40 ? (
 						<Rise distance={12}>
@@ -218,7 +247,7 @@ export default async function SectorPage({
 				<section className='bg-[var(--paper-2)]'>
 					<div className='bb-container section-band'>
 						<SectionHead
-							index='03'
+							index='04'
 							eyebrow='What the Act requires'
 							size='sm'
 							title={`${provisions.length} ${provisions.length === 1 ? 'rule' : 'rules'}`}

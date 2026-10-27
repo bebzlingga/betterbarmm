@@ -44,6 +44,12 @@ const sections = [
 	{ href: '/projects', label: 'Projects', note: 'What is being built' },
 ] as const
 
+/* How the Act is made and what its words mean: read once, not used to find a figure, so one menu between them. */
+const learn = [
+	{ href: '/process', label: 'Process', note: 'How a budget is made' },
+	{ href: '/faq', label: 'FAQs', note: 'What the words mean' },
+] as const
+
 /**
  * A menu that opens on click and closes on Escape or any pointer landing
  * outside it. A dropdown that only closes by clicking its own trigger feels
@@ -200,21 +206,16 @@ export function SiteNav() {
 							}
 						</Menu>
 
-						<YearLink
-							href='/process'
-							data-active={pathname.startsWith('/process')}
-							className='nav-item'
-						>
-							Process
-						</YearLink>
-
-						<YearLink
-							href='/faq'
-							data-active={pathname.startsWith('/faq')}
-							className='nav-item'
-						>
-							FAQs
-						</YearLink>
+						<Menu label='Learn' active={learn.some((item) => pathname.startsWith(item.href))} width='w-[16rem]'>
+							{(close) =>
+								learn.map((item) => (
+									<YearLink key={item.href} href={item.href} onClick={close} className='nav-menu-item'>
+										<span className={MENU_NAME}>{item.label}</span>
+										<span className={MENU_NOTE}>{item.note}</span>
+									</YearLink>
+								))
+							}
+						</Menu>
 
 						<YearLink
 							href='/sources'
@@ -318,27 +319,27 @@ export function SiteNav() {
 							aria-label='Mobile navigation'
 							className='mx-auto max-w-[88rem] px-6 py-6 text-sm text-[var(--ink-2)] lg:px-8 max-h-[calc(100dvh-7.5rem)] overflow-y-auto overscroll-contain'
 						>
-							<p className='bb-label'>The budget</p>
-							<div className='mt-3 grid'>
-								{[
-									...sections,
-									{ href: '/process', label: 'Process', note: 'How a budget is made' },
-									{ href: '/faq', label: 'FAQs', note: 'What the words mean' },
-									{ href: '/sources', label: 'Sources', note: 'Where the figures came from' },
-								].map(
-									(section) => (
-										<YearLink
-											key={section.href}
-											href={section.href}
-											onClick={closeMenu}
-											className='flex items-baseline justify-between gap-3 border-b border-[var(--rule-soft)] py-2.5'
-										>
-											<span className={MENU_NAME}>{section.label}</span>
-											<span className={MENU_NOTE}>{section.note}</span>
-										</YearLink>
-									),
-								)}
-							</div>
+							{[
+								{ title: 'The budget', items: [...sections, { href: '/sources', label: 'Sources', note: 'Where the figures came from' }] },
+								{ title: 'Learn', items: learn },
+							].map((group, index) => (
+								<div key={group.title} className={index ? 'mt-6' : ''}>
+									<p className='bb-label'>{group.title}</p>
+									<div className='mt-3 grid'>
+										{group.items.map((section) => (
+											<YearLink
+												key={section.href}
+												href={section.href}
+												onClick={closeMenu}
+												className='flex items-baseline justify-between gap-3 border-b border-[var(--rule-soft)] py-2.5'
+											>
+												<span className={MENU_NAME}>{section.label}</span>
+												<span className={MENU_NOTE}>{section.note}</span>
+											</YearLink>
+										))}
+									</div>
+								</div>
+							))}
 							<UtilityMenuLinks base='https://betterbarmm.com' onNavigate={closeMenu} />
 						</nav>
 					</motion.div>

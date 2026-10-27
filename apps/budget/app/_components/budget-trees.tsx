@@ -1,4 +1,5 @@
-import { percent, peso, type ObjectLine, type ProgramLine } from '@betterbarmm/budget-data'
+import { percent, type ObjectLine, type ProgramLine } from '@betterbarmm/budget-data'
+import { Money } from './money'
 
 /* ============================================================
    The two tables the Act prints for every office
@@ -58,7 +59,7 @@ export function ProgramTree({ lines, depth = 0 }: { lines: ProgramLine[]; depth?
 								<p
 									className='money whitespace-nowrap text-[0.84375rem] font-semibold tabular-nums text-[var(--ink)]'
 								>
-									{peso(line.total)}
+									<Money amount={line.total} />
 								</p>
 							)}
 						</div>
@@ -122,7 +123,7 @@ export function ObjectTree({
 								depth === 0 ? 'text-[1rem] font-black' : 'text-[0.8125rem] font-semibold'
 							}`}
 						>
-								{line.amount == null ? '—' : peso(line.amount)}
+								{line.amount == null ? '—' : <Money amount={line.amount} />}
 							</span>
 							{depth === 0 && line.amount != null && whole > 0 ? (
 								<span className='money font-mono text-[0.6875rem] font-semibold text-[var(--ink-3)]'>

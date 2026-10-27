@@ -1,12 +1,15 @@
 import { ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
-import { SectionHead, Stagger, StaggerItem } from '@betterbarmm/editorial'
-import { budgetFor, percent, peso, type Office } from '@betterbarmm/budget-data'
+import { SectionHead } from '@betterbarmm/editorial'
+import { budgetFor, percent, peso, pesoShort, type Office } from '@betterbarmm/budget-data'
 import { YearLink } from '../../_components/year-link'
 import { notFound } from 'next/navigation'
 import { ExpenseSplit, Masthead, SourceNote, StatRow } from '../../_components/budget-parts'
 import { ObjectTree, ProgramTree } from '../../_components/budget-trees'
 import { ProvisionList } from '../../_components/provision-list'
+import { Money } from '../../_components/money'
+import { HEAD_ROW, ROW, TABLE, TD, TD_NUM, TH, TH_NUM } from '../../_components/table'
+import { BudgetTrend, officeTrend } from '../../_components/budget-trend'
 
 /* No `generateStaticParams`. These pages read `?fy=`, so what they render
    depends on the query string and there is no one page to prerender — an
@@ -75,6 +78,7 @@ export default async function OfficePage({
 	// hand whenever a section moved. The ternaries below call this only when
 	// they actually render, so the count is what the reader sees.
 	let step = 0
+	const trend = officeTrend(office.slug)
 	const nextIndex = () => String(++step).padStart(2, '0')
 
 	// Where it sits among the offices that are budgeted in their own right.
@@ -143,6 +147,23 @@ export default async function OfficePage({
 
 			</Masthead>
 
+			{/* ---- Year on year ---- */}
+			{trend && trend.length > 1 ? (
+				<section className='bb-container section-band'>
+					<SectionHead
+						index={nextIndex()}
+						eyebrow='Year on year'
+						size='sm'
+						title={`${trend.length} Acts,`}
+						titleMuted='one line.'
+						lead={`What each General Appropriations Act gave this office, FY ${trend[0]![0]} to FY ${trend[trend.length - 1]![0]}. An office the Acts renamed is followed under each of its names; a year before it existed has no point.`}
+					/>
+					<div className='mt-8'>
+						<BudgetTrend series={trend} label='What each Act gave this office' active={budget.fiscalYear} />
+					</div>
+				</section>
+			) : null}
+
 			{/* ---- The split ---- */}
 			<section className='bb-container section-band'>
 				<SectionHead
@@ -151,7 +172,7 @@ export default async function OfficePage({
 					size='sm'
 					title='Salaries, running costs,'
 					titleMuted='and things built.'
-					lead={`Of the ${peso(
+					lead={`Of the ${pesoShort(
 						office.totals.total,
 					)} this office was given, this is how the Act divides it.`}
 				/>
@@ -224,7 +245,7 @@ export default async function OfficePage({
 							size='sm'
 							title={`${rules.length} ${rules.length === 1 ? 'rule is' : 'rules are'} attached`}
 							titleMuted='to this money.'
-							lead={`The special provisions for this office: the conditions Parliament put on the ${peso(
+							lead={`The special provisions for this office: the conditions Parliament put on the ${pesoShort(
 								office.totals.total,
 							)} above — who it must reach, what it may not be spent on, and what has to be reported. Quoted in full, because a paraphrase of a rule is a different rule.`}
 						/>
@@ -247,34 +268,45 @@ export default async function OfficePage({
 							office.subOffices.length === 1 ? 'agency is' : 'agencies are'
 						} budgeted`}
 						titleMuted='under this office.'
-						lead={`Each has its own appropriation and its own pages in the Act. The ${peso(
+						lead={`Each has its own appropriation and its own pages in the Act. The ${pesoShort(
 							office.totals.total,
-						)} above does not include them; together with this office they come to ${peso(
+						)} above does not include them; together with this office they come to ${pesoShort(
 							office.totalWithSubOffices,
 						)}.`}
 					/>
 
-					<Stagger gap={0.05} className='mt-6'>
-						{office.subOffices.map((sub) => (
-							<StaggerItem key={sub.slug} distance={12}>
-								<YearLink
-									href={`/offices/${sub.slug}`}
-									className='group flex items-baseline justify-between gap-6 border-t border-[var(--rule)] py-4 transition hover:border-[var(--accent)] hover:bg-[var(--paper-2)]'
-								>
-									<span className='flex items-baseline gap-2 text-[0.90625rem] font-semibold tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
-										{sub.name}
-										<ArrowUpRightIcon
-											className='size-3.5 shrink-0 text-[var(--ink-3)] transition duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--accent)]'
-											aria-hidden='true'
-										/>
-									</span>
-									<span className='money whitespace-nowrap text-[0.84375rem] font-semibold text-[var(--ink-2)] transition group-hover:text-[var(--accent)]'>
-										{peso(sub.total)}
-									</span>
-								</YearLink>
-							</StaggerItem>
-						))}
-					</Stagger>
+					{/* A table (user decision): each agency and its own appropriation. */}
+					<table className={`${TABLE} mt-6`}>
+						<caption className='sr-only'>Agencies budgeted under {office.name}</caption>
+						<thead>
+							<tr className={HEAD_ROW}>
+								<th scope='col' className={TH}>
+									Agency
+								</th>
+								<th scope='col' className={TH_NUM}>
+									Amount
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							{office.subOffices.map((sub) => (
+								<tr key={sub.slug} className={ROW}>
+									<th scope='row' className={`${TD} font-normal`}>
+										<YearLink
+											href={`/offices/${sub.slug}`}
+											className='inline-flex items-baseline gap-2 text-[0.90625rem] font-semibold tracking-[-0.02em] text-[var(--ink)] transition hover:text-[var(--accent)]'
+										>
+											{sub.name}
+											<ArrowUpRightIcon className='size-3.5 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
+										</YearLink>
+									</th>
+									<td className={TD_NUM}>
+										<Money amount={sub.total} />
+									</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
 				</section>
 			) : null}
 
@@ -287,7 +319,7 @@ export default async function OfficePage({
 						size='sm'
 						title={`${office.projects.length} named projects,`}
 						titleMuted='with the barangay on each.'
-						lead={`This office is the only one in the Act whose construction is listed project by project — ${peso(
+						lead={`This office is the only one in the Act whose construction is listed project by project — ${pesoShort(
 							office.projects.reduce((sum, project) => sum + project.amount, 0),
 						)} across ${projectsHere.length} provinces and areas, each with the road, bridge or building it pays for named.`}
 						aside={
@@ -297,25 +329,42 @@ export default async function OfficePage({
 						}
 					/>
 
-					<div className='mt-6 grid gap-x-10 gap-y-4 sm:grid-cols-2 lg:grid-cols-3'>
-						{projectsHere.map((group) => (
-							<YearLink
-								key={group.province}
-								href={`/projects?q=${encodeURIComponent(group.province)}`}
-								/* The rule takes the accent on hover along with the type. It is
-								   the only edge these cards have, so leaving it grey while the
-								   name lit up made the card look half-awake. */
-								className='group border-t border-[var(--rule)] py-4 transition hover:border-[var(--accent)] hover:bg-[var(--paper-2)]'
-							>
-								<p className='text-[0.875rem] font-semibold tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
-									{group.province}
-								</p>
-								<p className='money mt-1.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] transition group-hover:text-[var(--accent)]'>
-									{group.count} projects · {peso(group.total)}
-								</p>
-							</YearLink>
-						))}
-					</div>
+					{/* A table (user decision): each area, how many projects, what they come to; a row's name lists them. */}
+					<table className={`${TABLE} mt-6`}>
+						<caption className='sr-only'>{office.name}’s projects by area</caption>
+						<thead>
+							<tr className={HEAD_ROW}>
+								<th scope='col' className={TH}>
+									Area
+								</th>
+								<th scope='col' className={TH_NUM}>
+									Projects
+								</th>
+								<th scope='col' className={TH_NUM}>
+									Amount
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							{projectsHere.map((group) => (
+								<tr key={group.province} className={ROW}>
+									<th scope='row' className={`${TD} font-normal`}>
+										<YearLink
+											href={`/projects?q=${encodeURIComponent(group.province)}`}
+											className='inline-flex items-baseline gap-2 text-[0.90625rem] font-semibold tracking-[-0.02em] text-[var(--ink)] transition hover:text-[var(--accent)]'
+										>
+											{group.province}
+											<ArrowUpRightIcon className='size-3.5 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
+										</YearLink>
+									</th>
+									<td className={`${TD_NUM} font-mono text-[0.75rem] text-[var(--ink-3)]`}>{group.count}</td>
+									<td className={TD_NUM}>
+										<Money amount={group.total} />
+									</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
 				</section>
 			) : null}
 		</div>

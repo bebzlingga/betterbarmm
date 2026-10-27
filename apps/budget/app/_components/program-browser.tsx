@@ -1,11 +1,13 @@
 'use client'
 
 import { MagnifyingGlassIcon, PlusIcon } from '@phosphor-icons/react'
-import { EXPENSE_CLASSES, percent, peso, type ProgramRow, type Sector } from '@betterbarmm/budget-data'
+import { EXPENSE_CLASSES, percent, type ProgramRow, type Sector } from '@betterbarmm/budget-data'
 import { FilterMenu } from './filter-menu'
 import { useCarriedYear, YearLink } from './year-link'
 import { useRouter, useSearchParams } from 'next/navigation'
-import { useEffect, useMemo, useState } from 'react'
+import { Fragment, useEffect, useMemo, useState } from 'react'
+import { Money } from './money'
+import { HEAD_ROW, ROW, SUB, TABLE, TD, TD_NUM, TH, TH_NUM } from './table'
 
 /* ============================================================
    246 programs, filtered in the browser
@@ -42,6 +44,15 @@ export function ProgramBrowser({
 	   the taxonomy's own string and the menu prints the shortened one beside
 	   it. */
 	const [picked, setPicked] = useState<Set<string>>(new Set())
+	/* The rows a reader has opened. */
+	const [opened, setOpened] = useState<Set<string>>(new Set())
+	const toggleRow = (id: string) =>
+		setOpened((current) => {
+			const next = new Set(current)
+			if (next.has(id)) next.delete(id)
+			else next.add(id)
+			return next
+		})
 
 	// Keep the address bar in step, without a navigation per keystroke. The
 	// history entry is replaced rather than pushed: twenty keystrokes should
@@ -170,185 +181,195 @@ export function ProgramBrowser({
 				{query.trim() ? (
 					<>
 						{' '}
-						· <span className='money text-[var(--brass)]'>{peso(found)}</span> between them
+						· <span className='money text-[var(--brass)]'><Money amount={found} /></span> between them
 					</>
 				) : null}
 			</p>
 
+			{/* A table (user decision). A row still opens in place (user decision on the shape): the name is a button
+			    that unfolds a full-width row under it with the classes, the lines and where the rest is printed. */}
 			<div className='mt-3'>
-				{shown.map((program) => {
-					/* Both of these are on the row already — the class figures are the
-					   three numbers the list ships for every program, and the children
-					   are other rows of the same list. Nothing is fetched to open a row. */
-					const parts = EXPENSE_CLASSES.map((one) => ({
-						...one,
-						amount: program[one.key],
-						share: program.total ? (program[one.key] / program.total) * 100 : 0,
-					})).filter((one) => one.amount > 0)
-					const under = children.get(program.path) ?? []
-					const biggest = Math.max(...under.map((one) => one.total), 1)
+				<table className={TABLE}>
+					<caption className='sr-only'>Programs in the Act</caption>
+					<thead>
+						<tr className={HEAD_ROW}>
+							<th scope='col' className={TH}>
+								Program
+							</th>
+							<th scope='col' className={`${TH} hidden lg:table-cell`}>
+								Office
+							</th>
+							<th scope='col' className={TH_NUM}>
+								Amount
+							</th>
+							<th scope='col' className={`${TH_NUM} hidden sm:table-cell`}>
+								Of the budget
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						{shown.map((program) => {
+							/* Both of these are on the row already — the class figures are the
+							   three numbers the list ships for every program, and the children
+							   are other rows of the same list. Nothing is fetched to open a row. */
+							const parts = EXPENSE_CLASSES.map((one) => ({
+								...one,
+								amount: program[one.key],
+								share: program.total ? (program[one.key] / program.total) * 100 : 0,
+							})).filter((one) => one.amount > 0)
+							const under = children.get(program.path) ?? []
+							const biggest = Math.max(...under.map((one) => one.total), 1)
+							const isOpen = opened.has(program.id)
 
-					return (
-						/* `details`, not state (user decision on the shape, this on the
-						   mechanism): a row that opens is what the element is for, it
-						   works before the JavaScript arrives, Escape and the keyboard
-						   come free, and the browser's own find-in-page can reach inside a
-						   closed row. */
-						<details key={program.id} className='disclose border-t border-[var(--rule)]'>
-							{/* The `summary` is flex by the `.disclose` rule, so everything in
-							    it goes in one child. The label sits above, hard against the
-							    row's own left edge and in line with the mark under it (user
-							    decision); the mark is centerd on the title it opens rather
-							    than on the block of three lines beside it. */}
-							<summary className='group py-7'>
-								<div className='min-w-0 flex-1'>
-									<p className='bb-label leading-none'>
-										{program.level === 'sub_program' ? 'Sub-program' : 'Program'}
-										{program.costStructure ? ` · ${program.costStructure}` : ''}
-										{under.length > 0
-											? ` · ${under.length} sub-${under.length === 1 ? 'program' : 'programs'}`
-											: ''}
-									</p>
-
-									<div className='mt-3 grid items-center gap-x-10 gap-y-3 lg:grid-cols-[minmax(0,1fr)_minmax(0,11rem)]'>
-										<div className='min-w-0'>
-											<div className='flex items-center gap-2.5'>
-												{/* One mark, open or closed (user decision). What says a
-												    row is open is the second paper under it, which is the
-												    whole row rather than three pixels of it. */}
+							return (
+								<Fragment key={program.id}>
+									<tr className={`${ROW} ${isOpen ? 'border-b-0 bg-[var(--paper-2)]' : ''}`}>
+										<th scope='row' className={`${TD} font-normal`}>
+											<button
+												type='button'
+												aria-expanded={isOpen}
+												aria-controls={`program-${program.id}`}
+												onClick={() => toggleRow(program.id)}
+												className='group/row flex w-full cursor-pointer items-start gap-2.5 text-left'
+											>
 												<PlusIcon
 													weight='bold'
-													className='size-3 shrink-0 text-[var(--ink-3)] transition group-hover:text-[var(--accent)]'
+													className={`mt-1 size-3 shrink-0 text-[var(--ink-3)] transition group-hover/row:text-[var(--accent)] ${isOpen ? 'rotate-45' : ''}`}
 													aria-hidden='true'
 												/>
-												<h2 className='min-w-0 text-[0.9375rem] font-semibold leading-snug tracking-[-0.02em] text-[var(--ink)]'>
-													{program.path}
-												</h2>
-											</div>
-											{/* The office and the sector as plain text here, and as
-											    links inside the row: an anchor in a `summary` is a click
-											    that both navigates and opens the row it is leaving. Set
-											    under the title rather than under the mark. */}
-											<p className='mt-2 pl-[1.4rem] text-[0.78125rem] text-[var(--ink-3)]'>
-												{program.office} · {program.sector}
-											</p>
-										</div>
-
-										<div className='lg:text-right'>
-											<p className='money text-[0.9375rem] font-bold tracking-[-0.02em] text-[var(--ink)]'>
-												{peso(program.total)}
-											</p>
-											<p className='money mt-1.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>
-												{percent(program.share, 2)} of the budget
-											</p>
-										</div>
-									</div>
-								</div>
-							</summary>
-
-							<div className='pb-9 pl-5 lg:pl-8'>
-								<div className='flex items-baseline justify-between gap-6'>
-									<p className='bb-label leading-none'>What the money is</p>
-									<p className='money font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>
-										{parts.length} {parts.length === 1 ? 'class' : 'classes'}
-									</p>
-								</div>
-
-								{/* The three expense classes, drawn against this program's own
-								    total. Each row carries its name, its length and its figure,
-								    so the color is never the only thing telling them apart. */}
-								<dl className='mt-5'>
-									{parts.map((one) => (
-										<div
-											key={one.key}
-											className='grid items-center gap-x-6 gap-y-2 border-t border-[var(--rule)] py-3.5 first:border-t-0 sm:grid-cols-[minmax(0,15rem)_minmax(0,1fr)_minmax(0,10rem)]'
-										>
-											<dt className='flex items-center gap-2 text-[0.8125rem] font-semibold text-[var(--ink)]'>
-												<span
-													aria-hidden='true'
-													className='size-2.5 shrink-0 rotate-45'
-													style={{ background: one.tone }}
-												/>
-												{one.label}
-											</dt>
-											<dd className='rank-track'>
-												<div
-													className='rank-bar'
-													style={{ width: `${Math.max(1, one.share)}%`, background: one.tone }}
-													aria-hidden='true'
-												/>
-											</dd>
-											<dd className='money flex items-baseline justify-between gap-3 text-[0.8125rem] font-semibold text-[var(--ink)] sm:justify-end'>
-												{peso(one.amount)}
-												<span className='font-mono text-[0.625rem] uppercase tracking-[0.1em] text-[var(--ink-3)]'>
-													{percent(one.share)}
+												<span className='min-w-0'>
+													<span className='block text-[0.90625rem] font-semibold leading-snug tracking-[-0.01em] text-[var(--ink)] transition group-hover/row:text-[var(--accent)]'>
+														{program.path}
+													</span>
+													<span className={SUB}>
+														{program.level === 'sub_program' ? 'Sub-program' : 'Program'}
+														{program.costStructure ? ` · ${program.costStructure}` : ''}
+														{under.length > 0 ? ` · ${under.length} sub-${under.length === 1 ? 'program' : 'programs'}` : ''}
+														<span className='lg:hidden'> · {program.office}</span>
+													</span>
 												</span>
-											</dd>
-										</div>
-									))}
-								</dl>
+											</button>
+										</th>
+										<td className={`${TD} hidden w-[16rem] text-[0.78125rem] leading-snug text-[var(--ink-2)] lg:table-cell`}>
+											{program.office}
+											<span className={SUB}>{program.sector}</span>
+										</td>
+										<td className={TD_NUM}>
+											<Money amount={program.total} />
+										</td>
+										<td className={`${TD_NUM} hidden font-mono text-[0.75rem] text-[var(--brass)] sm:table-cell`}>{percent(program.share, 2)}</td>
+									</tr>
+									{isOpen ? (
+										<tr id={`program-${program.id}`} className='border-b border-[var(--rule-soft)] bg-[var(--paper-2)]'>
+											<td colSpan={4}>
+										<div className='pb-9 pl-5 pt-2 lg:pl-8'>
+											<div className='flex items-baseline justify-between gap-6'>
+												<p className='bb-label leading-none'>What the money is</p>
+												<p className='money font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>
+													{parts.length} {parts.length === 1 ? 'class' : 'classes'}
+												</p>
+											</div>
 
-								{under.length > 0 ? (
-									<>
-										<div className='mt-8 flex items-baseline justify-between gap-6'>
-											<p className='bb-label leading-none'>What it is divided into</p>
-											<p className='money font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>
-												{under.length} {under.length === 1 ? 'line' : 'lines'} ·{' '}
-												{peso(under.reduce((sum, one) => sum + one.total, 0))}
+											{/* The three expense classes, drawn against this program's own
+											    total. Each row carries its name, its length and its figure,
+											    so the color is never the only thing telling them apart. */}
+											<dl className='mt-5'>
+												{parts.map((one) => (
+													<div
+														key={one.key}
+														className='grid items-center gap-x-6 gap-y-2 border-t border-[var(--rule)] py-3.5 first:border-t-0 sm:grid-cols-[minmax(0,15rem)_minmax(0,1fr)_minmax(0,10rem)]'
+													>
+														<dt className='flex items-center gap-2 text-[0.8125rem] font-semibold text-[var(--ink)]'>
+															<span
+																aria-hidden='true'
+																className='size-2.5 shrink-0 rotate-45'
+																style={{ background: one.tone }}
+															/>
+															{one.label}
+														</dt>
+														<dd className='rank-track'>
+															<div
+																className='rank-bar'
+																style={{ width: `${Math.max(1, one.share)}%`, background: one.tone }}
+																aria-hidden='true'
+															/>
+														</dd>
+														<dd className='money money-light flex items-baseline justify-between gap-3 text-[0.8125rem] text-[var(--ink)] sm:justify-end'>
+															<Money amount={one.amount} />
+															<span className='font-mono text-[0.625rem] uppercase tracking-[0.1em] text-[var(--ink-3)]'>
+																{percent(one.share)}
+															</span>
+														</dd>
+													</div>
+												))}
+											</dl>
+
+											{under.length > 0 ? (
+												<>
+													<div className='mt-8 flex items-baseline justify-between gap-6'>
+														<p className='bb-label leading-none'>What it is divided into</p>
+														<p className='money font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>
+															{under.length} {under.length === 1 ? 'line' : 'lines'} ·{' '}
+															<Money amount={under.reduce((sum, one) => sum + one.total, 0)} />
+														</p>
+													</div>
+
+													<dl className='mt-5'>
+														{under.map((one) => (
+															<div
+																key={one.id}
+																className='grid items-center gap-x-6 gap-y-2 border-t border-[var(--rule)] py-3 first:border-t-0 sm:grid-cols-[minmax(0,15rem)_minmax(0,1fr)_minmax(0,10rem)]'
+															>
+																<dt className='text-[0.8125rem] leading-snug text-[var(--ink-2)]'>
+																	{one.name}
+																</dt>
+																<dd className='rank-track'>
+																	<div
+																		className='rank-bar'
+																		style={{ width: `${Math.max(1, (one.total / biggest) * 100)}%` }}
+																		aria-hidden='true'
+																	/>
+																</dd>
+																<dd className='money money-light text-[0.8125rem] text-[var(--ink)] sm:text-right'>
+																	<Money amount={one.total} />
+																</dd>
+															</div>
+														))}
+													</dl>
+												</>
+											) : null}
+
+											{/* Where the rest of this row's money is described. The Act prints
+											    the object items — salaries, fuel, equipment — per office and
+											    never per program, so this says where they are rather than
+											    splitting an office's tree across its programs. */}
+											<p className='mt-7 flex flex-wrap items-baseline gap-x-2 gap-y-1 border-t border-[var(--rule)] pt-5 text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
+												<YearLink href={`/offices/${program.officeSlug}`} className='rule-link'>
+													{program.office}
+												</YearLink>
+												<span aria-hidden='true'>·</span>
+												<YearLink href={`/sectors/${program.sectorSlug}`} className='rule-link'>
+													{program.sector}
+												</YearLink>
+												<span aria-hidden='true'>·</span>
+												<span>
+													Printed on page {program.sourcePage} of the Act. The object items behind
+													these figures — salaries, fuel, equipment — are printed per office, on
+													the office’s page.
+												</span>
 											</p>
 										</div>
-
-										<dl className='mt-5'>
-											{under.map((one) => (
-												<div
-													key={one.id}
-													className='grid items-center gap-x-6 gap-y-2 border-t border-[var(--rule)] py-3 first:border-t-0 sm:grid-cols-[minmax(0,15rem)_minmax(0,1fr)_minmax(0,10rem)]'
-												>
-													<dt className='text-[0.8125rem] leading-snug text-[var(--ink-2)]'>
-														{one.name}
-													</dt>
-													<dd className='rank-track'>
-														<div
-															className='rank-bar'
-															style={{ width: `${Math.max(1, (one.total / biggest) * 100)}%` }}
-															aria-hidden='true'
-														/>
-													</dd>
-													<dd className='money text-[0.8125rem] font-semibold text-[var(--ink)] sm:text-right'>
-														{peso(one.total)}
-													</dd>
-												</div>
-											))}
-										</dl>
-									</>
-								) : null}
-
-								{/* Where the rest of this row's money is described. The Act prints
-								    the object items — salaries, fuel, equipment — per office and
-								    never per program, so this says where they are rather than
-								    splitting an office's tree across its programs. */}
-								<p className='mt-7 flex flex-wrap items-baseline gap-x-2 gap-y-1 border-t border-[var(--rule)] pt-5 text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
-									<YearLink href={`/offices/${program.officeSlug}`} className='rule-link'>
-										{program.office}
-									</YearLink>
-									<span aria-hidden='true'>·</span>
-									<YearLink href={`/sectors/${program.sectorSlug}`} className='rule-link'>
-										{program.sector}
-									</YearLink>
-									<span aria-hidden='true'>·</span>
-									<span>
-										Printed on page {program.sourcePage} of the Act. The object items behind
-										these figures — salaries, fuel, equipment — are printed per office, on
-										the office’s page.
-									</span>
-								</p>
-							</div>
-						</details>
-					)
-				})}
+											</td>
+										</tr>
+									) : null}
+								</Fragment>
+							)
+						})}
+					</tbody>
+				</table>
 
 				{hits.length === 0 ? (
-					<p className='border-t border-[var(--rule)] py-16 text-center text-[0.84375rem] leading-7 text-[var(--ink-3)]'>
+					<p className='py-16 text-center text-[0.84375rem] leading-7 text-[var(--ink-3)]'>
 						No program in the Act says “{query.trim()}”. It names things formally and often in
 						the plural — “Scholarship” rather than “student aid”, “Farm-to-Market” rather than
 						“roads”. Try one word rather than a phrase.

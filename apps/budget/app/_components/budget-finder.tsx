@@ -3,10 +3,11 @@
 import { MagnifyingGlassIcon } from '@phosphor-icons/react'
 import { AnimatePresence, motion } from 'motion/react'
 import { EASE } from '@betterbarmm/editorial'
-import { budget, peso, searchBudget, type Hit } from '@betterbarmm/budget-data'
+import { budget, searchBudget, type Hit } from '@betterbarmm/budget-data'
 import { useRouter } from 'next/navigation'
 import { carriedYearNow, withYear } from './year-link'
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
+import { Money } from './money'
 
 /* ============================================================
    Finding the money you came for
@@ -77,7 +78,7 @@ function HitRow({
 			    money counted elsewhere, and an invented total would be worse than
 			    a blank. */}
 			<span className='money shrink-0 text-right text-[0.75rem] font-semibold text-[var(--ink-2)]'>
-				{hit.amount == null ? '—' : peso(hit.amount)}
+				{hit.amount == null ? '—' : <Money amount={hit.amount} />}
 			</span>
 		</button>
 	)

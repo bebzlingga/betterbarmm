@@ -2,6 +2,7 @@ import { ArrowLeftIcon } from '@phosphor-icons/react/ssr'
 import { Counter, LineReveal, Rise } from '@betterbarmm/editorial'
 import { EXPENSE_CLASSES, budgetFor, percent, peso, type Totals } from '@betterbarmm/budget-data'
 import { YearLink } from './year-link'
+import { Money } from './money'
 
 /* ============================================================
    The pieces every budget page is built from
@@ -333,7 +334,7 @@ export function ExpenseSplit({
 							</dt>
 							<dd className='mt-2'>
 								<p className='money text-[0.9375rem] font-semibold tracking-[-0.02em] text-[var(--ink)]'>
-									{peso(one.amount)}
+									<Money amount={one.amount} />
 								</p>
 								<p className='mt-1.5 text-[0.78125rem] leading-6 text-[var(--ink-2)]'>{one.plain}</p>
 							</dd>
@@ -400,6 +401,11 @@ export function SourceNote({
 			<YearLink href='/sources' className='rule-link'>
 				How this was compiled
 			</YearLink>
+			{/* Every line of every Act, as a table: the open data project's budget page. */}
+			{' · '}
+			<a href='https://betterbarmm.com/data/budget' className='rule-link'>
+				Download every line as CSV or JSON
+			</a>
 		</>
 	)
 

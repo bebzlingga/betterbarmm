@@ -1,4 +1,11 @@
 import { budgetFor, formatNumber, percent, peso, pesoShort } from '@betterbarmm/budget-data'
+import { Money } from './money'
+import lgu from '../../../../datasets/lgu/barmm-lgu.json'
+
+/* Each area's people, PSA 2024 census, to put the itemised projects per resident. Maguindanao before the 2022
+   split is its two provinces together; Sulu, which left the region, and region-wide projects have no figure. */
+const PEOPLE = new Map((lgu as { provinces: { name: string; population: number }[] }).provinces.map((p) => [p.name, p.population]))
+PEOPLE.set('Maguindanao', (PEOPLE.get('Maguindanao del Norte') ?? 0) + (PEOPLE.get('Maguindanao del Sur') ?? 0))
 
 /* ============================================================
    The 258 projects two ways: where, and what
@@ -106,7 +113,7 @@ function Chart({
 												{row.name}
 											</span>
 											<span className='money mt-0.5 block font-mono text-[0.625rem] text-[var(--paper)] opacity-75'>
-												{peso(row.total)} · {formatNumber(row.count)}
+												<Money amount={row.total} /> · {formatNumber(row.count)}
 											</span>
 										</p>
 									</div>
@@ -196,6 +203,11 @@ export function ProjectCharts({ fy }: { fy?: string }) {
 		.sort((a, b) => b.total - a.total)
 		.map((one) => ({ key: one.kind, name: one.kind, total: one.total, count: one.count }))
 
+	const perResident = areas
+		.filter((row) => PEOPLE.get(row.name))
+		.map((row) => ({ ...row, each: row.total / PEOPLE.get(row.name)! }))
+		.sort((x, y) => y.each - x.each)
+	const most = perResident[0]?.each ?? 1
 	const biggestArea = areas[0]
 	const smallestArea = areas[areas.length - 1]
 	const road = kinds[0]
@@ -236,6 +248,30 @@ export function ProjectCharts({ fy }: { fy?: string }) {
 			>
 				{`Mostly this money is roads: ${road?.count} of the ${projects.length} projects and ${pesoShort(road?.total ?? 0)}, against ${pesoShort(kinds[1]?.total ?? 0)} across ${kinds[1]?.count} for ${kinds[1]?.name.toLowerCase()}. But ${overlapping} projects are two things at once — a road with a bridge on it is both — so unlike the areas these columns overlap: they come to ${pesoShort(kindSum)}, ${percent((kindSum / projectsTotal - 1) * 100)} more than the projects actually cost.`}
 			</Reading>
+
+			{/* Per resident: the areas again, divided by the people who live there. */}
+			{perResident.length > 1 ? (
+				<div className='border-t border-[var(--rule)] pt-8 lg:col-span-2 lg:row-start-3'>
+					<Reading id='projects-per-resident' headline='Per resident.' className=''>
+						{`The same itemised projects divided by each area’s people in PSA’s 2024 census, used for every year. Only what the Act lists place by place is counted, so an area whose roads are funded through a ministry’s general programs looks thinner here than it is.`}
+					</Reading>
+					<ul aria-describedby='projects-per-resident' className='mt-6 grid gap-x-10 gap-y-3 sm:grid-cols-2 lg:grid-cols-3'>
+						{perResident.map((row) => (
+							<li key={row.key} className='grid grid-cols-[minmax(0,9rem)_minmax(0,1fr)_auto] items-center gap-3'>
+								<span className='truncate text-[0.78125rem] font-semibold text-[var(--ink-2)]' title={row.name}>
+									{row.name}
+								</span>
+								<span className='h-2.5'>
+									<span className='block h-full rounded-r-[4px] bg-[var(--accent)]' style={{ width: `${Math.max(2, (row.each / most) * 100)}%` }} />
+								</span>
+								<span className='money text-right font-mono text-[0.6875rem] font-semibold text-[var(--ink)]' title={`${peso(row.total)} for ${formatNumber(PEOPLE.get(row.name)!)} people`}>
+									₱{Math.round(row.each).toLocaleString('en-PH')}
+								</span>
+							</li>
+						))}
+					</ul>
+				</div>
+			) : null}
 		</div>
 	)
 }

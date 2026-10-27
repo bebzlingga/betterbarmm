@@ -1,10 +1,12 @@
 'use client'
 
 import { ArrowUpRightIcon, MagnifyingGlassIcon } from '@phosphor-icons/react'
-import { percent, peso, type Office } from '@betterbarmm/budget-data'
+import { percent, type Office } from '@betterbarmm/budget-data'
 import { YearLink } from './year-link'
 import { useMemo, useState } from 'react'
 import { ExpenseSplit } from './budget-parts'
+import { Money } from './money'
+import { HEAD_ROW, ROW, SUB, TABLE, TD, TD_NUM, TH, TH_NUM } from './table'
 
 /* ============================================================
    All 44 offices, filtered in the browser
@@ -103,55 +105,57 @@ export function OfficeList({ offices }: { offices: Office[] }) {
 				{shown.length} of {offices.length} offices
 			</p>
 
-			{/* No top margin: the first row brings 2.25rem of its own `py-9`, and
-			    the controls above already close on `pb-5`. Stacked, the three read as
-			    a break between the field and the list rather than as one block. */}
+			{/* A table (user decision): the office, how its money divides, the amount and its share of the budget, one
+			    column each. The split needs room, so it comes in at `lg`; the share at `sm`. */}
 			<div>
-				{shown.map((office) => (
-					<YearLink
-						key={office.slug}
-						href={`/offices/${office.slug}`}
-						className='group grid items-center gap-x-10 gap-y-4 border-t border-[var(--rule)] py-7 transition first:border-t-0 hover:bg-[var(--paper-2)] lg:grid-cols-[minmax(0,28rem)_minmax(0,1fr)_minmax(0,11rem)]'
-					>
-						<div className='min-w-0'>
-							{/* `leading-none`: 10px text in a 15px inherited line box put a
-							    few pixels above the caps that nothing balances at the foot. */}
-							<p className='bb-label leading-none'>
-								{office.officeType}
-								{office.parent ? ` · under ${office.parent.name}` : ''}
-							</p>
-							<h2 className='mt-2.5 flex items-baseline gap-2 text-[1.15rem] font-bold leading-tight tracking-[-0.03em] text-[var(--ink)] transition duration-500 group-hover:text-[var(--accent)]'>
-								{office.name}
-								<ArrowUpRightIcon
-									className='size-3.5 shrink-0 text-[var(--ink-3)] transition duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--accent)]'
-									aria-hidden='true'
-								/>
-							</h2>
-						</div>
-
-						{/* The split, and only the split. A length-against-the-largest bar
-						    was drawn above it here too, and the two read as one chart with
-						    a stray line over it — they encode different things, and the
-						    amount the length bar stood for is printed in full one column
-						    to the right. It stays on the home page, where ten rows are
-						    being compared and no total is repeated beside each. */}
-						<div>
-							<ExpenseSplit totals={office.totals} layout='inline' />
-						</div>
-
-						<div className='lg:text-right'>
-							<p className='money text-[1.05rem] font-bold tracking-[-0.02em] text-[var(--ink)]'>
-								{peso(office.totals.total)}
-							</p>
-							<p className='money mt-1.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>
-								{percent(office.share)} of the budget
-							</p>
-						</div>
-					</YearLink>
-				))}
+				<table className={TABLE}>
+					<caption className='sr-only'>Every office in the Act</caption>
+					<thead>
+						<tr className={HEAD_ROW}>
+							<th scope='col' className={TH}>
+								Office
+							</th>
+							<th scope='col' className={`${TH} hidden lg:table-cell`}>
+								How it divides
+							</th>
+							<th scope='col' className={TH_NUM}>
+								Amount
+							</th>
+							<th scope='col' className={`${TH_NUM} hidden sm:table-cell`}>
+								Of the budget
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						{shown.map((office) => (
+							<tr key={office.slug} className={ROW}>
+								<th scope='row' className={`${TD} font-normal`}>
+									<YearLink
+										href={`/offices/${office.slug}`}
+										className='inline-flex items-baseline gap-2 text-[0.96875rem] font-bold leading-snug tracking-[-0.02em] text-[var(--ink)] transition hover:text-[var(--accent)]'
+									>
+										{office.name}
+										<ArrowUpRightIcon className='size-3.5 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
+									</YearLink>
+									<span className={SUB}>
+										{office.officeType}
+										{office.parent ? ` · under ${office.parent.name}` : ''}
+									</span>
+								</th>
+								<td className={`${TD} hidden w-[22rem] lg:table-cell`}>
+									<ExpenseSplit totals={office.totals} layout='inline' />
+								</td>
+								<td className={TD_NUM}>
+									<Money amount={office.totals.total} />
+								</td>
+								<td className={`${TD_NUM} hidden font-mono text-[0.75rem] text-[var(--brass)] sm:table-cell`}>{percent(office.share)}</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
 
 				{shown.length === 0 ? (
-					<p className='border-t border-[var(--rule)] py-16 text-center text-[0.84375rem] leading-7 text-[var(--ink-3)]'>
+					<p className='py-16 text-center text-[0.84375rem] leading-7 text-[var(--ink-3)]'>
 						No office matches “{query.trim()}”
 						{group ? ' in that group' : ''}. The Act names offices formally — try “education” rather
 						than “schools”, or search the{' '}

@@ -3,6 +3,7 @@ import { joinRenames } from '@betterbarmm/budget-data/trends'
 
 export { joinRenames }
 import trends from '../../../../datasets/budget/trends.json'
+import { Money } from './money'
 
 /* ============================================================
    What the region has been given, year on year
@@ -264,12 +265,13 @@ export function BudgetTrend({
 				aria-hidden='true'
 				focusable='false'
 			>
-				{points.map((point) => (
+				{points.map((point, index) => (
 					<text
 						key={point.year}
 						x={point.x}
 						y={12}
-						textAnchor='middle'
+						// The two ends anchor to their own edge, as the figures above them do, or half of each year is cut off.
+						textAnchor={index === 0 ? 'start' : index === points.length - 1 ? 'end' : 'middle'}
 						className='fill-[var(--ink-3)] font-semibold'
 						style={{ fontSize: 11, letterSpacing: '0.1em' }}
 					>
@@ -280,8 +282,8 @@ export function BudgetTrend({
 
 			{/* The two ends only. Seven figures would say what the line already says. */}
 			<div className='mt-3 flex items-baseline justify-between gap-6 border-t border-[var(--rule)] pt-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
-				<span className='money'>{peso(first.total)}</span>
-				<span className='money text-[var(--ink)]'>{peso(last.total)}</span>
+				<span className='money'><Money amount={first.total} /></span>
+				<span className='money text-[var(--ink)]'><Money amount={last.total} /></span>
 			</div>
 		</figure>
 	)

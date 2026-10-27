@@ -6,6 +6,7 @@ import {
   type Sector,
 } from "@betterbarmm/budget-data";
 import { SectorIcon } from "./sector-icon";
+import { Money } from './money'
 
 /* ============================================================
    The top of the table as columns
@@ -102,7 +103,7 @@ export function SectorChart({ sectors }: { sectors: Sector[] }) {
                         {sector.name}
                       </span>
                       <span className="money mt-0.5 block font-mono text-[0.625rem] text-[var(--paper)] opacity-75">
-                        {peso(sector.total)}
+                        <Money amount={sector.total} />
                       </span>
                     </p>
                   </div>

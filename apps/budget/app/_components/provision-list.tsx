@@ -1,5 +1,6 @@
-import { peso, splitAmounts, type Provision } from '@betterbarmm/budget-data'
+import { splitAmounts, type Provision } from '@betterbarmm/budget-data'
 import { YearLink } from './year-link'
+import { Money } from './money'
 
 /* ============================================================
    The rules attached to the money
@@ -42,6 +43,9 @@ function Quoted({ text }: { text: string }) {
 	)
 }
 
+/** Shown before the rest fold away: enough to say what kind of rules these are. */
+const SHOWN = 6
+
 export function ProvisionList({
 	provisions,
 	showOffice = false,
@@ -50,81 +54,96 @@ export function ProvisionList({
 	/** On a sector page these come from many offices, so each says which. */
 	showOffice?: boolean
 }) {
+	const one = (provision: Provision) => (
+		<article
+			key={provision.id}
+			id={provision.id}
+			/* `--rule`, not `--rule-soft`: every page that renders this list sets
+			   it on the `--paper-2` band, and against a tinted ground the soft
+			   hairline (#f1f1ee on #f7f7f5) had almost nothing to be seen
+			   against. One step up is enough — these are boundaries between
+			   quoted rules of the Act, not a ledger's ruling.
+
+			   None above the first, which opens under a SectionHead that already
+			   draws a brass line of its own. */
+			className='scroll-mt-28 border-t border-[var(--rule)] py-7 first:border-t-0'
+		>
+			<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2'>
+				{/* The office hangs off the title rather than on a line of its own
+				    (user decision): a fund's rule is titled with the fund's own
+				    name, so the two lines read as the same words printed twice. */}
+				<h3 className='text-[0.9375rem] font-bold leading-tight tracking-[-0.025em] text-[var(--ink)]'>
+					{showOffice ? (
+						<YearLink href={`/offices/${provision.officeSlug}`} className='rule-link'>
+							{provision.title}
+						</YearLink>
+					) : (
+						provision.title
+					)}
+				</h3>
+
+				{provision.amount != null ? (
+					<p className='money font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>
+						of which <Money amount={provision.amount} />
+					</p>
+				) : null}
+			</div>
+
+			{/* No measure on this one: a provision is operative text quoted in
+			    full, and the figure it names sits ranged right on the line above.
+			    Held to 34em the quote ran down the left half of the page with the
+			    amount it belongs to floating alone across the gutter. */}
+			<p className='mt-3 text-[0.84375rem] leading-7 text-[var(--ink-2)]'>
+				<Quoted text={provision.text} />
+			</p>
+
+			{/* Sub-items nest more than one level in a few sections. The depth
+			    is carried on the row rather than built into nested lists: it is
+			    all the indent needs, and the fifteen rows that go two deep do
+			    not justify a tree the other four hundred would sit inside. */}
+			{provision.items.length > 0 ? (
+				<ul className='mt-4'>
+					{provision.items.map((item) => (
+						<li
+							key={item.id}
+							className='flex gap-3 py-1 text-[0.8125rem] leading-6 text-[var(--ink-2)]'
+							style={{ paddingInlineStart: `${item.depth * 1.15}rem` }}
+						>
+							<span
+								aria-hidden='true'
+								className='mt-2 size-1.5 shrink-0 rotate-45 bg-[var(--brass)]'
+							/>
+							<span className='min-w-0'>
+								<Quoted text={item.text} />
+								{item.amount != null ? (
+									<span className='money ml-2 whitespace-nowrap font-mono text-[0.625rem] font-semibold uppercase tracking-[0.1em] text-[var(--brass)]'>
+										<Money amount={item.amount} />
+									</span>
+								) : null}
+							</span>
+						</li>
+					))}
+				</ul>
+			) : null}
+		</article>
+	)
+	const rest = provisions.slice(SHOWN)
 	return (
 		<div>
-			{provisions.map((provision) => (
-				<article
-					key={provision.id}
-					id={provision.id}
-					/* `--rule`, not `--rule-soft`: every page that renders this list sets
-					   it on the `--paper-2` band, and against a tinted ground the soft
-					   hairline (#f1f1ee on #f7f7f5) had almost nothing to be seen
-					   against. One step up is enough — these are boundaries between
-					   quoted rules of the Act, not a ledger's ruling.
-
-					   None above the first, which opens under a SectionHead that already
-					   draws a brass line of its own. */
-					className='scroll-mt-28 border-t border-[var(--rule)] py-7 first:border-t-0'
-				>
-					<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2'>
-						{/* The office hangs off the title rather than on a line of its own
-						    (user decision): a fund's rule is titled with the fund's own
-						    name, so the two lines read as the same words printed twice. */}
-						<h3 className='text-[0.9375rem] font-bold leading-tight tracking-[-0.025em] text-[var(--ink)]'>
-							{showOffice ? (
-								<YearLink href={`/offices/${provision.officeSlug}`} className='rule-link'>
-									{provision.title}
-								</YearLink>
-							) : (
-								provision.title
-							)}
-						</h3>
-
-						{provision.amount != null ? (
-							<p className='money font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>
-								of which {peso(provision.amount)}
-							</p>
-						) : null}
-					</div>
-
-					{/* No measure on this one: a provision is operative text quoted in
-					    full, and the figure it names sits ranged right on the line above.
-					    Held to 34em the quote ran down the left half of the page with the
-					    amount it belongs to floating alone across the gutter. */}
-					<p className='mt-3 text-[0.84375rem] leading-7 text-[var(--ink-2)]'>
-						<Quoted text={provision.text} />
-					</p>
-
-					{/* Sub-items nest more than one level in a few sections. The depth
-					    is carried on the row rather than built into nested lists: it is
-					    all the indent needs, and the fifteen rows that go two deep do
-					    not justify a tree the other four hundred would sit inside. */}
-					{provision.items.length > 0 ? (
-						<ul className='mt-4'>
-							{provision.items.map((item) => (
-								<li
-									key={item.id}
-									className='flex gap-3 py-1 text-[0.8125rem] leading-6 text-[var(--ink-2)]'
-									style={{ paddingInlineStart: `${item.depth * 1.15}rem` }}
-								>
-									<span
-										aria-hidden='true'
-										className='mt-2 size-1.5 shrink-0 rotate-45 bg-[var(--brass)]'
-									/>
-									<span className='min-w-0'>
-										<Quoted text={item.text} />
-										{item.amount != null ? (
-											<span className='money ml-2 whitespace-nowrap font-mono text-[0.625rem] font-semibold uppercase tracking-[0.1em] text-[var(--brass)]'>
-												{peso(item.amount)}
-											</span>
-										) : null}
-									</span>
-								</li>
-							))}
-						</ul>
-					) : null}
-				</article>
-			))}
+			{provisions.slice(0, SHOWN).map(one)}
+			{/* The rest folded rather than cut: an office with thirty rules made a page ten thousand pixels long, and
+			    a reader who wants them all is one click from them. */}
+			{rest.length ? (
+				<details className='group border-t border-[var(--rule)]'>
+					<summary className='flex cursor-pointer list-none items-center gap-2 py-5 text-[0.84375rem] font-semibold text-[var(--ink)] [&::-webkit-details-marker]:hidden'>
+						<span className='rule-link group-open:hidden'>
+							Show the other {rest.length} {rest.length === 1 ? 'rule' : 'rules'}
+						</span>
+						<span className='rule-link hidden group-open:inline'>Show fewer</span>
+					</summary>
+					{rest.map(one)}
+				</details>
+			) : null}
 		</div>
 	)
 }

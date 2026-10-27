@@ -1,11 +1,13 @@
 'use client'
 
 import { MagnifyingGlassIcon } from '@phosphor-icons/react'
-import { peso, type Project } from '@betterbarmm/budget-data'
+import { type Project } from '@betterbarmm/budget-data'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { FilterMenu } from './filter-menu'
 import { useCarriedYear } from './year-link'
 import { useEffect, useMemo, useState } from 'react'
+import { Money } from './money'
+import { HEAD_ROW, ROW, SUB, TABLE, TD, TD_NUM, TH, TH_NUM } from './table'
 
 /* ============================================================
    The 258 named projects, searchable by the place they are in
@@ -37,6 +39,7 @@ export function ProjectBrowser({
 	areas,
 	kinds,
 	fiscalYear,
+	repeats = {},
 }: {
 	projects: Project[]
 	areas: { province: string; count: number; total: number }[]
@@ -47,6 +50,8 @@ export function ProjectBrowser({
 	    importing a year's figures to print its number would put both Acts in
 	    the bundle. */
 	fiscalYear: number
+	/** Each project named in other Acts too, and which years, from the page. */
+	repeats?: Record<string, number[]>
 }) {
 	const router = useRouter()
 	const params = useSearchParams()
@@ -159,38 +164,57 @@ export function ProjectBrowser({
 				className='mt-5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'
 			>
 				<span className='money text-[var(--ink)]'>{hits.length}</span> of {projects.length} projects
-				· <span className='money text-[var(--brass)]'>{peso(found)}</span>
+				· <span className='money text-[var(--brass)]'><Money amount={found} /></span>
 			</p>
 
+			{/* A table (user decision): the project, where it is and what it is, and the amount, each in its own column so
+			    a reader can run down any one of them. On a phone the area and the kind fold under the name. */}
 			<div className='mt-3'>
-				{shown.map((project) => (
-					<article
-						key={project.id}
-						className='grid items-center gap-x-10 gap-y-2 border-t border-[var(--rule)] py-7 lg:grid-cols-[minmax(0,1fr)_minmax(0,9rem)]'
-					>
-						<div className='min-w-0'>
-							<p className='bb-label'>
-								{project.province}
-								{project.kinds.length ? ` · ${project.kinds.join(', ')}` : ''}
-							</p>
-							{/* +2px, and held to nine tenths of its cell: the Act writes a project as
-							    a whole sentence, so at the larger size the longest of them ran
-							    right up to the amount beside it. */}
-							<h2 className='mt-2.5 text-[1.03125rem] font-medium leading-relaxed text-[var(--ink)] lg:max-w-[90%]'>
-								{project.project}
-							</h2>
-						</div>
-
-						<p
-							className='money text-[0.9375rem] font-bold tracking-[-0.02em] text-[var(--ink)] lg:text-right'
-						>
-							{peso(project.amount)}
-						</p>
-					</article>
-				))}
+				<table className={TABLE}>
+					<caption className='sr-only'>Projects funded in FY {fiscalYear}</caption>
+					<thead>
+						<tr className={HEAD_ROW}>
+							<th scope='col' className={TH}>
+								Project
+							</th>
+							<th scope='col' className={`${TH} hidden md:table-cell`}>
+								Area
+							</th>
+							<th scope='col' className={`${TH} hidden lg:table-cell`}>
+								What is built
+							</th>
+							<th scope='col' className={TH_NUM}>
+								Amount
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						{shown.map((project) => (
+							<tr key={project.id} className={ROW}>
+								<th scope='row' className={`${TD} font-normal`}>
+									<span className='block text-[0.90625rem] font-medium leading-snug text-[var(--ink)]'>{project.project}</span>
+									<span className={`${SUB} md:hidden`}>
+										{project.province}
+										{project.kinds.length ? ` · ${project.kinds.join(', ')}` : ''}
+									</span>
+									{repeats[project.id]?.length ? (
+										<span className='mt-1 block text-[0.71875rem] font-semibold text-[var(--brass)]'>
+											Also funded in {repeats[project.id]!.map((y) => `FY ${y}`).join(', ')}
+										</span>
+									) : null}
+								</th>
+								<td className={`${TD} hidden w-[11rem] text-[0.8125rem] text-[var(--ink-2)] md:table-cell`}>{project.province}</td>
+								<td className={`${TD} hidden w-[11rem] text-[0.8125rem] text-[var(--ink-2)] lg:table-cell`}>{project.kinds.join(', ') || '—'}</td>
+								<td className={TD_NUM}>
+									<Money amount={project.amount} />
+								</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
 
 				{hits.length === 0 ? (
-					<p className='border-t border-[var(--rule)] py-16 text-center text-[0.84375rem] leading-7 text-[var(--ink-3)]'>
+					<p className='py-16 text-center text-[0.84375rem] leading-7 text-[var(--ink-3)]'>
 						Nothing in the FY {fiscalYear} list is in “{query.trim()}”. That may simply mean
 						no project there was funded this year — this is one year of one ministry&rsquo;s
 						construction, not every public work in the region. Spellings also vary: try the

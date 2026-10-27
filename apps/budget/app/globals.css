@@ -571,3 +571,59 @@
   }
 }
 
+
+/* ============================================================
+   The projects map
+
+   The incident map's vendored mapcn, with the same few shadcn colour
+   names pointed at this estate's tokens and the same resets for
+   MapLibre's popup and attribution chrome (see apps/www's globals).
+   ============================================================ */
+
+@theme inline {
+  --color-background: var(--paper);
+  --color-foreground: var(--ink);
+  --color-muted: var(--paper-2);
+  --color-muted-foreground: var(--ink-3);
+  --color-popover: var(--paper);
+  --color-popover-foreground: var(--ink);
+  --color-border: var(--rule);
+  --color-accent: var(--paper-2);
+  --color-ring: var(--accent);
+}
+
+.maplibregl-popup-content {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+.maplibregl-popup-tip {
+  display: none !important;
+}
+.maplibregl-ctrl-attrib {
+  background: var(--paper) !important;
+  color: var(--ink-3) !important;
+  border: 1px solid var(--rule) !important;
+  font-size: 0.625rem;
+}
+.maplibregl-ctrl-attrib a {
+  color: var(--ink-3) !important;
+}
+.maplibregl-ctrl-attrib a:hover {
+  color: var(--ink) !important;
+}
+.maplibregl-ctrl-attrib-button {
+  background: transparent !important;
+}
+:root[data-theme="dark"] .maplibregl-ctrl-attrib-button {
+  filter: invert(1);
+}
+
+/* A figure in a table's amount column (user decision: "not too bold"). Down
+   from `.money`'s black to a medium, and after it in the file so source order
+   lets it win, as `.money-bold` does. In a table the column already sets the
+   figures apart; the weight no longer has to. */
+.money-light {
+  font-weight: 500;
+}

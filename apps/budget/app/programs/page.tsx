@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { budgetFor } from '@betterbarmm/budget-data'
 import { Suspense } from 'react'
+import { BrowserSkeleton } from '../_components/browser-skeleton'
 import { Masthead, SourceNote } from '../_components/budget-parts'
 import { ProgramBrowser } from '../_components/program-browser'
 
@@ -32,11 +33,7 @@ export default async function ProgramsPage({ searchParams }: { searchParams: Pro
 				{/* The browser reads `?q=`, which puts it behind a Suspense boundary or
 				    the whole route falls out of prerendering. */}
 				<Suspense
-					fallback={
-						<p className='py-16 text-center font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
-							Loading {programs.length} programs…
-						</p>
-					}
+					fallback={<BrowserSkeleton kind='programs' label={`Loading ${programs.length} programs…`} />}
 				>
 					{/* Eight chips, not 38. They are a shortcut for the commonest questions,
 					    not the index — that is the sectors page, linked beside them. */}
