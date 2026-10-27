@@ -5,7 +5,8 @@
 	"type": "module",
 	"exports": {
 		".": "./src/index.ts",
-		"./cities": "./src/cities.ts"
+		"./cities": "./src/cities.ts",
+		"./explore": "./src/explore.ts"
 	},
 	"dependencies": {
 		"@betterbarmm/lgu-data": "workspace:*"

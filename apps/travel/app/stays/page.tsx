@@ -1,14 +1,10 @@
-import Link from 'next/link'
 import type { Metadata } from 'next'
+import { notFound } from 'next/navigation'
+import { GUIDE_PAGES } from '../_lib/guide'
 
-import {
-	areaLodging,
-	LODGING_KIND_LABEL,
-	lodgingCaveat,
-	NOTABLE_STAYS_CAVEAT,
-	travelAreas,
-} from '@betterbarmm/travel-data'
-import { Caution, GateList, TravelMasthead, SectionHead } from '../_components/travel-parts'
+import { areaLodging, LODGING_KIND_LABEL, lodgingCaveat, NOTABLE_STAYS_CAVEAT, travelAreas } from '@betterbarmm/travel-data'
+import { GuideLayout, GuideSection, TravelMasthead } from '../_components/travel-parts'
+import { photosForArea } from '../_lib/media'
 
 export const metadata: Metadata = {
 	title: 'Where to sleep',
@@ -18,108 +14,76 @@ export const metadata: Metadata = {
 
 const areaNames = new Map(travelAreas.map((area) => [area.slug, area.name]))
 
+/* Where to sleep, as plain reading (user decision): each area a heading and its lodging described in one column —
+   the kinds there are, how to book, what to expect, when it fills up, the names you will hear — with no chips, boxes or
+   side panels. The guide's text is unchanged. */
 export default function StaysPage() {
+	if (!GUIDE_PAGES) notFound()
 	return (
 		<>
 			<TravelMasthead
-				kicker='Lodging across the seven areas'
+				kicker='The guide'
 				name='Where to sleep'
-				note='Built the opposite way round from the usual: this describes how lodging works in each area rather than listing establishments with rates and phone numbers that would be stale within a season. Outside Cotabato City the booking sites barely cover this region, and a property’s absence from them says nothing about whether it exists or is any good.'
+				note='This describes how lodging works in each area rather than listing establishments with rates and phone numbers that would be stale within a season. Outside Cotabato City the booking sites barely cover this region, and a property’s absence from them says nothing about whether it exists or is any good.'
+			/>
+
+			<GuideLayout
+				toc={[...areaLodging.map((e) => ({ id: e.area, title: areaNames.get(e.area) ?? e.area })), { id: 'before-you-book', title: 'Before you book' }]}
 			>
-				<div>
-					<Caution label='Verify before you travel'>{lodgingCaveat}</Caution>
-				</div>
-			</TravelMasthead>
+				{areaLodging.map((entry) => (
+					<GuideSection
+						key={entry.area}
+						id={entry.area}
+						title={areaNames.get(entry.area) ?? entry.area}
+						photo={photosForArea(entry.area)[0]}
+						lede={`Base: ${entry.base} · ${entry.kinds.map((kind) => LODGING_KIND_LABEL[kind]).join(', ')}`}
+					>
+						{entry.situation.map((paragraph) => (
+							<p key={paragraph.slice(0, 40)}>{paragraph}</p>
+						))}
 
-			{areaLodging.map((entry, index) => (
-				<section
-					key={entry.area}
-					id={entry.area}
-					className={`bb-section ${index % 2 === 1 ? 'bb-section-top' : ''}`}
-				>
-					<div className='bb-container'>
-						<SectionHead
-							index={String(index + 1).padStart(2, '0')}
-							eyebrow={`Base · ${entry.base}`}
-							title={areaNames.get(entry.area) ?? entry.area}
-							aside={
-								<Link href={`/${entry.area}`} className='rule-link-quiet'>
-									The area guide
-								</Link>
-							}
-							size='sm'
-						/>
+						<h3>Booking</h3>
+						<p>{entry.booking}</p>
 
-						<div className='mt-10 grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-16'>
-							<div>
-								<div className='flex flex-wrap items-center gap-2'>
-									{entry.kinds.map((kind) => (
-										<span key={kind} className='bb-chip'>
-											{LODGING_KIND_LABEL[kind]}
-										</span>
+						{entry.expect.length ? (
+							<>
+								<h3>What to expect</h3>
+								<ul>
+									{entry.expect.map((item) => (
+										<li key={item}>{item}</li>
 									))}
-								</div>
+								</ul>
+							</>
+						) : null}
 
-								<div className='bb-prose mt-6 max-w-2xl'>
-									{entry.situation.map((paragraph) => (
-										<p key={paragraph.slice(0, 40)}>{paragraph}</p>
-									))}
-								</div>
-							</div>
-
-							<div className='grid content-start gap-7'>
-								<div>
-									<p className='bb-label'>Booking</p>
-									<p className='mt-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{entry.booking}</p>
-								</div>
-
-								<GateList label='What to expect' items={entry.expect} />
-
-								<div>
-									<p className='bb-label'>When it fills up</p>
-									<p className='mt-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{entry.fillsUp}</p>
-								</div>
-							</div>
-						</div>
+						<h3>When it fills up</h3>
+						<p>{entry.fillsUp}</p>
 
 						{entry.notableStays.length ? (
-							<div className='mt-12 border-t border-[var(--brass-line)] pt-9'>
-								<p className='bb-label'>Names you will hear</p>
-								<div className='mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3'>
+							<>
+								<h3>Names you will hear</h3>
+								<ul>
 									{entry.notableStays.map((stay) => (
-										<article key={stay.name} className='tv-card h-full'>
-											<span className='tv-kind'>{LODGING_KIND_LABEL[stay.kind]}</span>
-											<h3 className='item-title-lg mt-3'>{stay.name}</h3>
-											<p className='mt-1.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
-												{stay.town}
-											</p>
-											<p className='mt-3.5 flex-1 text-[0.84375rem] leading-7 text-[var(--ink-2)]'>
-												{stay.note}
-											</p>
-										</article>
+										<li key={stay.name}>
+											<strong className='font-semibold text-[var(--ink)]'>{stay.name}</strong>, {stay.town} ({LODGING_KIND_LABEL[stay.kind].toLowerCase()}): {stay.note}
+										</li>
 									))}
-								</div>
-							</div>
+								</ul>
+							</>
 						) : null}
-					</div>
-				</section>
-			))}
+					</GuideSection>
+				))}
 
-			<section className='bb-section bb-section-top'>
-				<div className='bb-container'>
-					<Caution label='Not a recommendation'>{NOTABLE_STAYS_CAVEAT}</Caution>
-				</div>
-			</section>
-
-			<section className='bb-section'>
-				<div className='bb-container'>
-					<Caution label='Why there are no prices here'>
-						Not because they are secret. A number written once and read a year later is worse than no
-						number, and the ranges that would be honest across a region this varied are wide enough
-						to be useless. Ask when you book — everyone will tell you, and the answer will be current.
-					</Caution>
-				</div>
-			</section>
+				<GuideSection id='before-you-book' title='Before you book'>
+					<p>{lodgingCaveat}</p>
+					<p>{NOTABLE_STAYS_CAVEAT}</p>
+					<p>
+						There are no prices here. Not because they are secret: a number written once and read a year later is worse than
+						no number, and the ranges that would be honest across a region this varied are wide enough to be useless. Ask
+						when you book — everyone will tell you, and the answer will be current.
+					</p>
+				</GuideSection>
+			</GuideLayout>
 		</>
 	)
 }

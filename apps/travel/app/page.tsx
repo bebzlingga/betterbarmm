@@ -1,304 +1,205 @@
-import Link from 'next/link'
 import type { Metadata } from 'next'
-import { LineReveal, OkirRule, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
-import {
-	areaPoints,
-	dishes,
-	essentialDishes,
-	festivals,
-	itineraries,
-	places,
-	planSections,
-	signaturePlaces,
-	travelAreas,
-} from '@betterbarmm/travel-data'
-import { Caution, Footing, PlaceCard, SectionHead } from './_components/travel-parts'
-import { TravelMap } from './_components/travel-map'
-import { PhotoFigure } from './_components/photo-figure'
-import { photo, photoForDish, photoForPlace } from './_lib/media'
+import Link from 'next/link'
+import { Suspense } from 'react'
+import { Skeleton, SkeletonLine } from '@betterbarmm/editorial'
+import { legsForArea, travelAreas } from '@betterbarmm/travel-data'
+import { EXPLORE_KINDS, explorePlaces } from '@betterbarmm/travel-data/explore'
+import { AirplaneTiltIcon, ArrowRightIcon, BedIcon, BoatIcon, CalendarCheckIcon, CarIcon, ForkKnifeIcon, ImagesIcon, PathIcon, SunHorizonIcon } from '@phosphor-icons/react/ssr'
+import Image from 'next/image'
+import { Explorer } from './_components/explorer'
+import { SectionHead } from './_components/travel-parts'
+import { toCard } from './_lib/cards'
+import { photosForArea } from './_lib/media'
+import { GUIDE_PAGES } from './_lib/guide'
 
 export const metadata: Metadata = {
-	title: 'Traveling the Bangsamoro',
+	title: 'Travel & Places',
 	description:
-		'A written guide to the seven areas of BARMM — what there is to see, what to eat, where lodging actually exists, and an honest account of the security picture in each.',
+		'Islands, beaches, mosques, lakes, falls and heritage sites across the Bangsamoro, with photographs, what to do and eat, how to get there and what to know first.',
 }
 
-const areaNames = new Map(travelAreas.map((area) => [area.slug, area.name]))
+/* ============================================================
+   Travel & Places: the front page is the places (user decision)
+
+   Browsed the way stays are browsed — a search, a row of categories,
+   photo cards, a map a button away — and drawn in the estate's own
+   style (user decision): the crimson masthead, square ruled cards,
+   brass capitals, display type. Under it, the guide's practical
+   half, and the line every page here has to carry: this is written,
+   not an official record.
+   ============================================================ */
+
+const PLAN = [
+	{ href: '/routes', label: 'Getting around', note: 'Flights, ferries and roads between the areas', icon: PathIcon },
+	{ href: '/stays', label: 'Where to sleep', note: 'Where lodging actually exists, area by area', icon: BedIcon },
+	{ href: '/food', label: 'What to eat', note: 'Maranao, Maguindanaon, Tausug and Sama dishes', icon: ForkKnifeIcon },
+	{ href: '/plan', label: 'Plan a trip', note: 'Permits, dress, prayer times, festivals, safety', icon: CalendarCheckIcon },
+]
+
+/** The explorer's own shape while it hydrates: the band with its words (they are static), the field and the
+    ways in in grey, the categories, the cards. */
+function ExplorerSkeleton({ head }: { head: React.ReactNode }) {
+	return (
+		<div role='status' aria-busy='true'>
+			<span className='sr-only'>Loading places…</span>
+			<section className='brand-bg bb-lattice relative overflow-hidden'>
+				<div className='bb-container relative py-16 text-center lg:py-24'>
+					{head}
+					<Skeleton className='mx-auto mt-8 h-14 max-w-2xl' />
+					{GUIDE_PAGES ? (
+						<div className='mt-6 flex flex-wrap justify-center gap-2'>
+							{[7.5, 8, 7, 6.5].map((w) => (
+								<Skeleton key={w} className='h-[2.1rem] rounded-full' style={{ width: `${w}rem` }} />
+							))}
+						</div>
+					) : null}
+				</div>
+			</section>
+			<div className='border-b border-[var(--rule)]'>
+				<div className='bb-container flex gap-7 overflow-hidden pb-3 pt-4'>
+					{Array.from({ length: 13 }, (_, i) => (
+						<div key={i} className='flex shrink-0 flex-col items-center gap-2'>
+							<Skeleton className='size-[22px]' />
+							<SkeletonLine className='font-[family-name:var(--font-display)] text-[0.59375rem] uppercase' width='3rem' />
+						</div>
+					))}
+				</div>
+			</div>
+			<div className='bb-container pb-20 pt-12 lg:pt-14'>
+				<div className='grid grid-cols-1 gap-x-8 gap-y-12 lg:gap-x-[48px] lg:gap-y-14 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+					{Array.from({ length: 8 }, (_, i) => (
+						<div key={i}>
+							<Skeleton className='aspect-[4/3] w-full' />
+							<div className='pt-4'>
+								<SkeletonLine className='tv-kind' width='55%' />
+								<SkeletonLine className='mt-1.5 text-[1.0625rem] leading-snug' width='80%' />
+								<SkeletonLine className='mt-1 text-[0.84375rem] leading-[1.55]' width='95%' />
+								<SkeletonLine className='text-[0.84375rem] leading-[1.55]' width='60%' />
+							</div>
+						</div>
+					))}
+				</div>
+			</div>
+		</div>
+	)
+}
 
 export default function TravelHome() {
-	const essentials = essentialDishes()
-	const signatures = signaturePlaces()
+	const places = explorePlaces.map(toCard)
+	const areas = travelAreas.map((area) => ({ slug: area.slug, name: area.name }))
+	const head = (
+		<>
+			<p className='bb-label'>Travel &amp; Places</p>
+			<h1 className='bb-display-md mt-4 text-[var(--ink)]'>Places worth the journey</h1>
+			<p className='mx-auto mt-4 max-w-xl text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
+				{places.length} islands, beaches, mosques, lakes, falls and heritage sites across the seven areas, each with what to do,
+				what to eat, how to get there and what to know first.
+			</p>
+		</>
+	)
 
 	return (
 		<>
-			{/* ---- Masthead ------------------------------------------------- */}
-			<section className='bb-lattice relative overflow-hidden'>
+			{/* The explorer reads its filters from the address bar, so it waits on a Suspense boundary. Its header is the
+			    directory's (user decision): these words, centred on the brand band, over the search. */}
+			<Suspense fallback={<ExplorerSkeleton head={head} />}>
+				<Explorer head={head} places={places} areas={areas} kinds={EXPLORE_KINDS.map(({ key, label }) => ({ key, label }))} />
+			</Suspense>
 
-				<div className='bb-container relative py-[clamp(3.75rem,7vw,6.5rem)]'>
-					<Rise distance={12}>
-						<span className='bb-label'>The Bangsamoro, for visitors</span>
-					</Rise>
-
-					<LineReveal
-						lines={['Seven areas,', 'and how to travel them.']}
-						delay={0.06}
-						className='bb-display mt-6 text-[var(--ink)]'
-					/>
-
-					<Rise delay={0.25} distance={14}>
-						<p className='mt-8 text-[0.9375rem] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>
-							The oldest mosque in the country, kilometres of sandbar, a lake with its own fish, and the
-							least written-about food in the Philippines. This guide says what it knows, names what it
-							does not, and never averages the region into one answer.
-						</p>
-					</Rise>
-
-					<Rise delay={0.4} distance={14}>
-						<div className='mt-10 flex flex-wrap gap-3'>
-							<Link href='/plan' className='bb-btn bb-btn-solid'>
-								Plan a trip
-							</Link>
-							<Link href='/places' className='bb-btn bb-btn-ghost'>
-								{places.length} places
-							</Link>
-							<Link href='/routes' className='bb-btn bb-btn-ghost'>
-								{itineraries.length} routes
-							</Link>
-							<Link href='/food' className='bb-btn bb-btn-ghost'>
-								{dishes.length} things to eat
-							</Link>
-						</div>
-					</Rise>
-
-					<Rise delay={0.5} distance={16}>
-						<div className='mt-14 grid gap-8 lg:grid-cols-[1.25fr_1fr] lg:items-end'>
-							<PhotoFigure photo={photo('budBongao')} priority />
-							<PhotoFigure photo={photo('panampangan')} size='inset' />
-						</div>
-					</Rise>
-				</div>
-
-				<div className='bb-weave' aria-hidden='true' />
-			</section>
-
-			{/* ---- What this is, and is not --------------------------------- */}
-			<section className='bb-section'>
-				<div className='bb-container'>
-					<div className='grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-16'>
-						<div>
-							<SectionHead
-								index='01'
-								eyebrow='Before you read any of it'
-								title='This one is written,'
-								titleMuted='not captured.'
-								size='sm'
-							/>
-							<div className='bb-prose mt-6 max-w-2xl'>
-								<p>
-									Everywhere else on this estate is a record. Parliament&rsquo;s measures, COMELEC&rsquo;s
-									canvass, PSA&rsquo;s census — captured from the body that published it, and traceable
-									back to it.
-								</p>
-								<p>
-									Nobody publishes an official inventory of what there is to see in the Bangsamoro,
-									what is worth eating, or where a traveler can sleep. So this workspace is written
-									from general knowledge of the region rather than taken from a source, and it is
-									held to the rules that follow from that: no invented prices, no phone numbers, no
-									opening hours, and no establishment endorsed. Where a figure would help and is not
-									reliably known, the text says what is known instead.
-								</p>
-								<p>
-									The geography underneath it is not invented. Every place names the municipality it
-									sits in, and those come from the region's local government dataset.
-								</p>
-							</div>
-						</div>
-
-						<div className='grid content-start gap-5'>
-							<Caution label='Security, in one line'>
-								The situation varies more between these seven areas than most countries vary
-								internally. Cotabato City on an ordinary Tuesday and an interior municipality of
-								Maguindanao del Sur are not the same question. Every area page carries its own
-								account, and{' '}
-								<Link href='/plan#safety' className='rule-link'>
-									the planning page
-								</Link>{' '}
-								explains the protocol residents themselves use.
-							</Caution>
-
-							<Caution label='Sulu is not here'>
-								The Supreme Court removed Sulu from BARMM in 2024, so it is not one of the seven areas
-								below. It borders this guide&rsquo;s subject on every side and appears in it only where
-								the history or the food genuinely crosses over — marked each time it does.
-							</Caution>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* ---- The seven areas ------------------------------------------ */}
-			<section className='bb-section bb-section-top'>
-				<div className='bb-container'>
-					<SectionHead
-						index='02'
-						eyebrow='Start here'
-						title='The seven areas,'
-						titleMuted='and what each one asks of you.'
-						lead='They are BARMM’s own divisions and the same ones the local government directory uses. The badge on each says how settled travel actually is there — which is a statement about infrastructure and coordination, not a danger rating.'
-					/>
-
-					<div className='mt-12 grid gap-10 lg:grid-cols-[1fr_0.85fr] lg:items-start lg:gap-14'>
-						<TravelMap
-							points={areaPoints}
-							caption='The seven areas. The spread is the point — Bongao is roughly 600 km from Marawi, and they are reached through different cities on different islands. Approximate coordinates with a true scale bar; there is no coastline because this site holds none it can vouch for. Not for navigation.'
-						/>
-
-						<div className='bb-prose'>
-							<p>
-								Nothing about this region is compact. Tawi-Tawi sits closer to Borneo than to any
-								Philippine city of size; Lanao del Sur is highland country reached overland from
-								Iligan; the Maguindanao provinces and Cotabato City are a river delta in between. A
-								trip that tries to take in all of it spends most of itself in transit.
-							</p>
-							<p>
-								So the useful unit is the area, and the honest advice is to pick one.{' '}
-								<Link href='/routes' className='rule-link'>
-									The routes
-								</Link>{' '}
-								are built that way.
-							</p>
-						</div>
-					</div>
-
-					<Stagger className='mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3'>
-						{travelAreas.map((area) => (
-							<StaggerItem key={area.slug}>
-								<Link href={`/${area.slug}`} className='tv-card h-full'>
-									<Footing footing={area.footing} />
-
-									<h3 className='item-title-lg mt-4'>{area.name}</h3>
-
-									<p className='mt-3 flex-1 text-[0.875rem] leading-7 text-[var(--ink-2)]'>
-										{area.tagline}
-									</p>
-
-									<p className='mt-5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
-										Base · {area.base}
-									</p>
-								</Link>
-							</StaggerItem>
-						))}
-					</Stagger>
-				</div>
-			</section>
-
-			{/* ---- Signature places ----------------------------------------- */}
-			<section className='bb-section'>
-				<div className='bb-container'>
-					<SectionHead
-						index='03'
-						eyebrow='If you only do a few things'
-						title='The ones worth'
-						titleMuted='crossing the country for.'
-						aside={
-							<Link href='/places' className='rule-link-quiet'>
-								All {places.length} places
-							</Link>
-						}
-					/>
-
-					<Stagger className='mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3'>
-						{signatures.map((place) => {
-							const image = photoForPlace(place.slug)
-							return (
-								<StaggerItem key={place.slug}>
-									<div className='grid h-full content-start gap-5'>
-										{image ? <PhotoFigure photo={image} size='inset' /> : null}
-										<PlaceCard place={place} areaName={areaNames.get(place.area)} />
-									</div>
-								</StaggerItem>
-							)
-						})}
-					</Stagger>
-				</div>
-			</section>
-
-			{/* ---- Food ------------------------------------------------------ */}
-			<section className='bb-section bb-section-top'>
-				<div className='bb-container'>
-					<SectionHead
-						index='04'
-						eyebrow='The reason to come back'
-						title='Halal, coconut-heavy,'
-						titleMuted='and closer to Sabah than to Manila.'
-						lead='There is no pork and there is no single Bangsamoro cuisine — Maranao, Maguindanaon, Tausug, Sama and Yakan cooking are related and distinct. Start with these.'
-						aside={
-							<Link href='/food' className='rule-link-quiet'>
-								The food guide
-							</Link>
-						}
-					/>
-
-					<Stagger className='mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3'>
-						{essentials.map((dish) => {
-							const image = photoForDish(dish.slug)
-							return (
-								<StaggerItem key={dish.slug}>
-									<div className='grid h-full content-start gap-5'>
-										{image ? <PhotoFigure photo={image} size='inset' /> : null}
-										<article className='tv-card'>
-											<span className='tv-kind'>{dish.tradition}</span>
-											<h3 className='item-title-lg mt-3'>{dish.name}</h3>
-											<p className='mt-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{dish.summary}</p>
-										</article>
-									</div>
-								</StaggerItem>
-							)
-						})}
-					</Stagger>
-				</div>
-			</section>
-
-			{/* ---- Planning -------------------------------------------------- */}
-			<section className='bb-section'>
-				<div className='bb-container'>
-					<SectionHead
-						index='05'
-						eyebrow='The practical half'
-						title='Getting there, getting it right,'
-						titleMuted='and what to do when the signal goes.'
-						aside={
-							<Link href='/plan' className='rule-link-quiet'>
-								Plan a trip
-							</Link>
-						}
-					/>
-
-					<OkirRule className='mt-10' />
-
-					<div className='mt-10 grid gap-x-10 gap-y-8 md:grid-cols-2 xl:grid-cols-4'>
-						{planSections.map((section) => (
-							<Link key={section.slug} href={`/plan#${section.slug}`} className='group'>
-								<p className='bb-label'>{section.title}</p>
-								<p className='mt-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{section.lede}</p>
+			{/* ---- The practical half ---- */}
+			<section className='border-t border-[var(--rule)] bg-[var(--paper-2)]'>
+				<div className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
+					{GUIDE_PAGES ? (
+						<>
+					<SectionHead title='Plan the trip,' titleMuted='before you go.' />
+					<div className='mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8'>
+						{PLAN.map(({ href, label, note, icon: Glyph }) => (
+							<Link key={href} href={href} className='tv-card group'>
+								<Glyph size={24} className='text-[var(--brass)]' aria-hidden='true' />
+								<span className='mt-4 block font-[family-name:var(--font-display)] text-[1rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
+									{label}
+								</span>
+								<span className='mt-1 block text-[0.84375rem] leading-snug text-[var(--ink-3)]'>{note}</span>
 							</Link>
 						))}
 					</div>
 
-					<div className='mt-14 border-t border-[var(--brass-line)] pt-10'>
-						<p className='bb-label'>What is on</p>
-						<div className='mt-6 grid gap-x-10 gap-y-6 md:grid-cols-2 xl:grid-cols-3'>
-							{festivals.map((festival) => (
-								<div key={festival.name}>
-									<p className='item-title'>{festival.name}</p>
-									<p className='mt-1 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
-										{festival.when}
-									</p>
-									<p className='mt-2.5 text-[0.84375rem] leading-6 text-[var(--ink-3)]'>{festival.what}</p>
-								</div>
-							))}
-						</div>
-					</div>
+						</>
+					) : null}
+
+					<SectionHead title='Where to go,' titleMuted='area by area.' className={GUIDE_PAGES ? 'mt-16' : ''} />
+					{/* A simple guide to the seven areas (user decision), improved: each row a picture to know it by, what it
+					    is and how much the guide holds there, how you get in (by plane, boat or road), and when to go. */}
+					<ul className='mt-8 border-t border-[var(--ink)]'>
+						{travelAreas.map((area, index) => {
+							const leg = legsForArea(area.slug)[0]
+							const best = area.whenToGo.split(/(?<=\.)\s/)[0]
+							const placesHere = explorePlaces.filter((p) => p.area === area.slug)
+							const [lead] = photosForArea(area.slug)
+							const Way = leg?.mode === 'air' ? AirplaneTiltIcon : leg?.mode === 'sea' ? BoatIcon : CarIcon
+							return (
+								<li key={area.slug} className='border-b border-[var(--rule)]'>
+									<Link
+										href={`/${area.slug}`}
+										className='group grid grid-cols-[4.5rem_minmax(0,1fr)] gap-x-5 gap-y-4 py-6 lg:grid-cols-[2rem_6rem_minmax(0,1.15fr)_minmax(0,1fr)_minmax(0,1fr)_1.25rem] lg:items-center lg:gap-x-8'
+									>
+										<span className='hidden font-mono text-[0.75rem] font-semibold text-[var(--ink-mute)] lg:block'>{String(index + 1).padStart(2, '0')}</span>
+										<span className='relative block aspect-square overflow-hidden bg-[var(--paper-3)] lg:aspect-[4/3]'>
+											{lead ? (
+												<Image src={lead.src} alt='' fill sizes='6rem' placeholder='blur' className='object-cover transition duration-500 group-hover:scale-[1.05]' />
+											) : (
+												<span className='flex size-full items-center justify-center text-[var(--ink-mute)]'>
+													<ImagesIcon size={22} weight='duotone' aria-hidden='true' />
+												</span>
+											)}
+										</span>
+										<span className='min-w-0'>
+											<span className='block font-[family-name:var(--font-display)] text-[1.1875rem] font-extrabold tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
+												{area.name}
+											</span>
+											<span className='mt-1 block text-[0.84375rem] leading-[1.5] text-[var(--ink-3)]'>{area.tagline}</span>
+											<span className='mt-2 block font-mono text-[0.625rem] uppercase tracking-[0.12em] text-[var(--brass)]'>
+												{placesHere.length} {placesHere.length === 1 ? 'place' : 'places'} to see
+											</span>
+										</span>
+										<span className='col-span-2 flex gap-3 lg:col-span-1'>
+											<Way size={20} weight='duotone' className='mt-0.5 shrink-0 text-[var(--brass)]' aria-hidden='true' />
+											<span className='text-[0.84375rem] leading-[1.5] text-[var(--ink-2)]'>
+												<span className='tv-kind block'>Getting there</span>
+												{leg ? (
+													<>
+														{leg.from} → {leg.to}
+														<span className='block text-[0.78125rem] text-[var(--ink-3)]'>
+															By {leg.mode}, {leg.duration.charAt(0).toLowerCase()}
+															{leg.duration.slice(1)}
+														</span>
+													</>
+												) : (
+													area.gettingThere[0]?.split(/(?<=\.)\s/)[0]
+												)}
+											</span>
+										</span>
+										<span className='col-span-2 flex gap-3 lg:col-span-1'>
+											<SunHorizonIcon size={20} weight='duotone' className='mt-0.5 shrink-0 text-[var(--brass)]' aria-hidden='true' />
+											<span className='text-[0.84375rem] leading-[1.5] text-[var(--ink-2)]'>
+												<span className='tv-kind block'>Best time</span>
+												{best}
+											</span>
+										</span>
+										<ArrowRightIcon size={14} weight='bold' className='hidden text-[var(--ink-3)] transition group-hover:translate-x-1 group-hover:text-[var(--accent)] lg:block' aria-hidden='true' />
+									</Link>
+								</li>
+							)
+						})}
+					</ul>
+
+					{/* The line every page here has to carry. Full width (user decision). */}
+					<p className='mt-16 border-t border-[var(--rule)] pt-6 text-[0.8125rem] leading-[1.7] text-[var(--ink-3)]'>
+						This guide is written, not an official record: places, food and practicalities described from general knowledge
+						of the region and checked against its sources, with no invented prices, ratings or hours. Several foreign
+						governments advise against travel to parts or all of the Bangsamoro; each place says what applies to it. Check
+						locally before you go. Photographs are free-licence files from Wikimedia Commons, credited on each picture.
+					</p>
 				</div>
 			</section>
 		</>

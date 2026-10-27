@@ -1,6 +1,7 @@
 import { CtaPanel, SiteFooter } from '@betterbarmm/editorial'
 import { travelAreas } from '@betterbarmm/travel-data'
 import { SiteNav } from './site-nav'
+import { GUIDE_PAGES } from '../_lib/guide'
 
 /**
  * Every page in the workspace closes the same way: the project's ask on the
@@ -30,16 +31,20 @@ export function Shell({ children }: { children: React.ReactNode }) {
 							label: area.name,
 						})),
 					},
+					...(GUIDE_PAGES
+						? [
 					{
-						title: 'The guide',
-						links: [
-							{ href: 'https://travel.betterbarmm.com/routes', label: 'Routes' },
-							{ href: 'https://travel.betterbarmm.com/places', label: 'Places' },
-							{ href: 'https://travel.betterbarmm.com/food', label: 'Food' },
-							{ href: 'https://travel.betterbarmm.com/stays', label: 'Where to sleep' },
-							{ href: 'https://travel.betterbarmm.com/plan', label: 'Plan a trip' },
-						],
-					},
+								title: 'The guide',
+								links: [
+									{ href: 'https://travel.betterbarmm.com/routes', label: 'Routes' },
+									{ href: 'https://travel.betterbarmm.com/places', label: 'Places' },
+									{ href: 'https://travel.betterbarmm.com/food', label: 'Food' },
+									{ href: 'https://travel.betterbarmm.com/stays', label: 'Where to sleep' },
+									{ href: 'https://travel.betterbarmm.com/plan', label: 'Plan a trip' },
+								],
+							},
+						  ]
+						: []),
 				]}
 				blurb='A written guide to the seven areas of the Bangsamoro: what to see, what to eat, where lodging actually exists, and an honest account of security in each. Verify it before you travel.'
 				note='Traveling the Bangsamoro'

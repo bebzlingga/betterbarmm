@@ -81,7 +81,7 @@ function Chips({ values, value, onChange }: { values: [string, string, number][]
 					type='button'
 					onClick={() => onChange(key)}
 					data-active={value === key}
-					className='inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-[var(--rule)] px-3.5 py-1.5 text-[0.8125rem] text-[var(--ink-2)] transition hover:border-[var(--ink)] data-[active=true]:border-[var(--ink)] data-[active=true]:bg-[var(--ink)] data-[active=true]:text-[var(--paper)]'
+					className='chip chip-field cursor-pointer data-[active=true]:border-[var(--ink)] data-[active=true]:bg-[var(--ink)] data-[active=true]:text-[var(--paper)]'
 				>
 					{text}
 					<span className='num text-[0.6875rem] opacity-70'>{count}</span>
@@ -103,7 +103,7 @@ function PlaceCard({
 	onMap?: () => void
 }) {
 	return (
-		<article className='flex flex-col overflow-hidden rounded-2xl border border-[var(--rule)] bg-[var(--paper)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.35)]'>
+		<article className='flex flex-col overflow-hidden border border-[var(--rule)] bg-[var(--paper)] transition hover:border-[var(--accent)]'>
 			{photo ? (
 				<div className='relative aspect-[16/10]'>
 					<Image src={photo.src} alt={photo.alt} fill sizes='(min-width: 1024px) 33vw, 100vw' className='object-cover' />
@@ -113,19 +113,19 @@ function PlaceCard({
 			)}
 			<div className='flex flex-1 flex-col p-5'>
 				<div className='flex flex-wrap items-center gap-2'>
-					<span className='rounded-full px-2.5 py-0.5 text-[0.6875rem] font-semibold text-white' style={{ background: accent }}>
+					<span className='px-2.5 py-0.5 text-[0.6875rem] font-semibold text-white' style={{ background: accent }}>
 						{label(place.kind)}
 					</span>
 					{place.halal ? (
-						<span className='rounded-full bg-[color-mix(in_srgb,#3f8f5a_16%,transparent)] px-2.5 py-0.5 text-[0.6875rem] font-semibold text-[#2f7a48]'>
+						<span className='bg-[color-mix(in_srgb,#3f8f5a_16%,transparent)] px-2.5 py-0.5 text-[0.6875rem] font-semibold text-[#2f7a48]'>
 							Halal
 						</span>
 					) : null}
 					{place.onBookingSites ? (
-						<span className='rounded-full bg-[var(--paper-2)] px-2.5 py-0.5 text-[0.6875rem] text-[var(--ink-3)]'>Bookable online</span>
+						<span className='bg-[var(--paper-2)] px-2.5 py-0.5 text-[0.6875rem] text-[var(--ink-3)]'>Bookable online</span>
 					) : null}
 				</div>
-				<h3 className='mt-3 text-[1.03125rem] font-semibold leading-snug tracking-[-0.01em] text-[var(--ink)]'>{place.name}</h3>
+				<h3 className='mt-3 font-[family-name:var(--font-display)] text-[1.0625rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)]'>{place.name}</h3>
 				{place.area ? (
 					<p className='mt-1 flex items-center gap-1 text-[0.78125rem] text-[var(--ink-3)]'>
 						<MapPinIcon size={13} aria-hidden='true' />
@@ -171,7 +171,7 @@ function PlaceCard({
 function Section({ id, title, lead, children }: { id: string; title: string; lead?: string; children: React.ReactNode }) {
 	return (
 		<section id={id} className='scroll-mt-[calc(var(--sticky-top,5rem)+4.5rem)] pt-16'>
-			<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{title}</h2>
+			<h2 className='font-[family-name:var(--font-display)] text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{title}</h2>
 			{lead ? <p className='mt-2 max-w-[46rem] text-[0.9375rem] leading-7 text-[var(--ink-3)]'>{lead}</p> : null}
 			<div className='mt-7'>{children}</div>
 		</section>
@@ -192,7 +192,7 @@ function CardGrid<T>({ items, render }: { items: T[]; render: (item: T) => React
 					<button
 						type='button'
 						onClick={() => setAll(true)}
-						className='cursor-pointer rounded-full border border-[var(--ink)] px-6 py-2.5 text-[0.84375rem] font-semibold text-[var(--ink)] transition hover:bg-[var(--ink)] hover:text-[var(--paper)]'
+						className='bb-btn bb-btn-ghost'
 					>
 						Show all {items.length}
 					</button>
@@ -301,20 +301,20 @@ export function CityGuideView({
 				<Image src={hero.src} alt={hero.alt} fill priority sizes='100vw' className='-z-10 object-cover' />
 				<div className='absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgba(10,10,10,0.82),rgba(10,10,10,0.25)_55%,rgba(10,10,10,0.1))]' />
 				<div className='bb-container flex min-h-[min(78vh,40rem)] flex-col justify-end pb-12 pt-32 text-white'>
-					<p className='font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-white/80'>
-						Travel guide · Bangsamoro
+					<p className='!font-[family-name:var(--font-display)] text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[#f1c453]'>
+						City guide
 					</p>
-					<h1 className='mt-3 font-[family-name:var(--font-display)] text-[clamp(2.6rem,7vw,5rem)] font-extrabold leading-[0.95] tracking-[-0.04em]'>
+					<h1 className='bb-display-md mt-3 text-white'>
 						{guide.name}
 					</h1>
-					<p className='mt-4 max-w-[38rem] text-[1rem] leading-7 text-white/85'>{intro[0]?.split('. ')[0]}.</p>
+					<p className='mt-4 max-w-[56rem] text-[1rem] leading-7 text-white/85'>{intro[0]?.split('. ')[0]}.</p>
 					<div className='mt-7 flex flex-wrap gap-2'>
 						{[
 							[`${guide.stay.length} places to stay`, 'stay'],
 							[`${guide.eat.length} places to eat`, 'eat'],
 							[`${guide.see.length} things to see`, 'see'],
 						].map(([text, id]) => (
-							<a key={id} href={`#${id}`} className='rounded-full bg-white/15 px-4 py-2 text-[0.8125rem] font-semibold text-white backdrop-blur transition hover:bg-white/25'>
+							<a key={id} href={`#${id}`} className='border border-white/35 px-4 py-2 font-[family-name:var(--font-display)] text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-white transition hover:border-white hover:bg-white hover:text-[#8f2328]'>
 								{text}
 							</a>
 						))}
@@ -333,7 +333,7 @@ export function CityGuideView({
 				aria-label='Sections'
 				className='sticky top-[var(--sticky-top,5rem)] z-20 border-b border-[var(--rule)] bg-[var(--paper)]/92 backdrop-blur-xl transition-[top] duration-300'
 			>
-				<div className='bb-container flex gap-1 overflow-x-auto py-2 [scrollbar-width:none]'>
+				<div className='bb-container flex gap-7 overflow-x-auto [scrollbar-width:none]'>
 					{TABS.map((tab) => {
 						const TabIcon = tab.icon
 						return (
@@ -341,9 +341,9 @@ export function CityGuideView({
 								key={tab.id}
 								href={`#${tab.id}`}
 								data-active={active === tab.id}
-								className='inline-flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-[0.84375rem] font-semibold text-[var(--ink-3)] transition hover:text-[var(--ink)] data-[active=true]:bg-[var(--ink)] data-[active=true]:text-[var(--paper)]'
+								className='-mb-px inline-flex shrink-0 items-center gap-2 border-b-2 border-transparent py-4 font-[family-name:var(--font-display)] text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)] transition hover:text-[var(--ink)] data-[active=true]:border-[var(--accent)] data-[active=true]:text-[var(--ink)]'
 							>
-								<TabIcon size={16} aria-hidden='true' />
+								<TabIcon size={16} weight='duotone' aria-hidden='true' />
 								{tab.label}
 							</a>
 						)
@@ -361,7 +361,7 @@ export function CityGuideView({
 							))}
 						</div>
 						<aside className='grid content-start gap-4'>
-							<dl className='grid gap-3 rounded-2xl bg-[var(--paper-2)] p-5'>
+							<dl className='grid gap-3 bg-[var(--paper-2)] p-5'>
 								{facts.map((f) => (
 									<div key={f.label}>
 										<dt className='text-[0.71875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>{f.label}</dt>
@@ -369,7 +369,7 @@ export function CityGuideView({
 									</div>
 								))}
 							</dl>
-							<div className='rounded-2xl border-l-4 border-[var(--accent)] bg-[var(--paper-2)] p-5'>
+							<div className='border-l-4 border-[var(--accent)] bg-[var(--paper-2)] p-5'>
 								<p className='text-[0.71875rem] font-semibold uppercase tracking-[0.12em] text-[var(--accent)]'>Staying safe</p>
 								<p className='mt-2 text-[0.875rem] leading-6 text-[var(--ink-2)]'>{safety}</p>
 							</div>
@@ -388,7 +388,7 @@ export function CityGuideView({
 									key={c.key}
 									type='button'
 									onClick={() => setLayers((l) => (on ? l.filter((k) => k !== c.key) : [...l, c.key]))}
-									className='inline-flex cursor-pointer items-center gap-2 rounded-full border px-3.5 py-1.5 text-[0.8125rem] font-semibold transition'
+									className='inline-flex cursor-pointer items-center gap-2 border px-3.5 py-1.5 text-[0.8125rem] font-semibold transition'
 									style={on ? { background: c.color, borderColor: c.color, color: '#fff' } : { borderColor: 'var(--rule)', color: 'var(--ink-3)' }}
 								>
 									{c.label}
@@ -412,14 +412,14 @@ export function CityGuideView({
 							{guide.dishes.map((d) => {
 								const photo = Object.entries(dishPhotos).find(([w]) => d.name.toLowerCase().includes(w))?.[1]
 								return (
-									<article key={d.name} className='w-72 shrink-0 snap-start overflow-hidden rounded-2xl bg-[var(--paper-2)]'>
+									<article key={d.name} className='w-72 shrink-0 snap-start overflow-hidden bg-[var(--paper-2)]'>
 										{photo ? (
 											<div className='relative aspect-[4/3]'>
 												<Image src={photo.src} alt={photo.alt} fill sizes='18rem' className='object-cover' />
 											</div>
 										) : null}
 										<div className='p-5'>
-											<h3 className='text-[1rem] font-semibold text-[var(--ink)]'>{d.name}</h3>
+											<h3 className='font-[family-name:var(--font-display)] text-[1rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>{d.name}</h3>
 											<p className='mt-2 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>{d.note}</p>
 											{d.whereToTry.length ? (
 												<p className='mt-3 text-[0.75rem] text-[var(--ink-3)]'>Try it at {d.whereToTry.join(', ')}</p>
@@ -450,11 +450,11 @@ export function CityGuideView({
 					<Section id='events' title='When things happen'>
 						<ol className='grid grid-cols-[minmax(0,1fr)] gap-4 md:grid-cols-2'>
 							{guide.events.map((e) => (
-								<li key={e.name} className='flex gap-4 rounded-2xl bg-[var(--paper-2)] p-5'>
+								<li key={e.name} className='flex gap-4 bg-[var(--paper-2)] p-5'>
 									<CalendarBlankIcon size={22} className='mt-0.5 shrink-0 text-[var(--accent)]' aria-hidden='true' />
 									<div>
 										<p className='text-[0.78125rem] font-semibold leading-5 text-[var(--accent)]'>{e.when}</p>
-										<h3 className='mt-1 text-[1rem] font-semibold text-[var(--ink)]'>{e.name}</h3>
+										<h3 className='mt-1 font-[family-name:var(--font-display)] text-[1rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>{e.name}</h3>
 										<p className='mt-2 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>{e.note}</p>
 									</div>
 								</li>
@@ -469,8 +469,8 @@ export function CityGuideView({
 				<Section id='practical' title='Getting there and around'>
 					<div className='grid grid-cols-[minmax(0,1fr)] gap-4 md:grid-cols-2'>
 						{guide.practical.map((tip) => (
-							<article key={tip.topic + tip.text.slice(0, 20)} className='rounded-2xl border border-[var(--rule)] p-5'>
-								<h3 className='text-[0.9375rem] font-semibold text-[var(--ink)]'>{tip.topic}</h3>
+							<article key={tip.topic + tip.text.slice(0, 20)} className='border border-[var(--rule)] p-5'>
+								<h3 className='font-[family-name:var(--font-display)] text-[0.9375rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>{tip.topic}</h3>
 								<p className='mt-2 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>{tip.text}</p>
 								<p className='mt-3 truncate text-[0.71875rem] text-[var(--ink-mute)]'>
 									{tip.sources.map((s, i) => (
@@ -486,7 +486,7 @@ export function CityGuideView({
 
 					{essentialsByKind.length ? (
 						<div className='mt-10'>
-							<h3 className='text-[1.15rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Essentials</h3>
+							<h3 className='font-[family-name:var(--font-display)] text-[1.15rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Essentials</h3>
 							<p className='mt-1 text-[0.8125rem] text-[var(--ink-3)]'>
 								Banks, hospitals, pharmacies, terminals and malls on OpenStreetMap.{' '}
 								<button type='button' onClick={() => { setLayers((l) => (l.includes('essential') ? l : [...l, 'essential'])); mapRef.current?.scrollIntoView({ behavior: 'smooth' }) }} className='cursor-pointer font-semibold text-[var(--accent)]'>

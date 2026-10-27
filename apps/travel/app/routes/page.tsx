@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { notFound } from 'next/navigation'
+import { GUIDE_PAGES } from '../_lib/guide'
 
-import { itineraries, placePoints, pointForArea, travelAreas } from '@betterbarmm/travel-data'
-import { Caution, TravelMasthead, SectionHead } from '../_components/travel-parts'
-import { TravelMap } from '../_components/travel-map'
+import { itineraries, travelAreas } from '@betterbarmm/travel-data'
+import { GuideLayout, GuideSection, TravelMasthead } from '../_components/travel-parts'
+import { photosForArea } from '../_lib/media'
 
 export const metadata: Metadata = {
 	title: 'Routes',
@@ -13,86 +15,53 @@ export const metadata: Metadata = {
 
 const areaName = new Map(travelAreas.map((area) => [area.slug, area.name]))
 
+/* Routes, as plain reading (user decision): each trip a heading, who it suits, its days in order and what tends to go
+   wrong, in one column — no map beside it. The guide's text is unchanged. */
 export default function RoutesPage() {
+	if (!GUIDE_PAGES) notFound()
 	return (
 		<>
 			<TravelMasthead
-				kicker={`${itineraries.length} trips`}
+				kicker='The guide'
 				name='Routes'
 				note='Given a week, where do you go? Each route uses transport that actually exists, so none covers the whole region: Tawi-Tawi and Lanao del Sur are reached through different cities on different islands.'
 			/>
 
-			{itineraries.map((route, index) => {
-				// The route's own map: every place in the areas it covers, with the
-				// base emphasised, so the shape of the trip is visible before the days.
-				const points = route.areas.flatMap((slug) => {
-					const inArea = placePoints.filter((point) => point.area === slug)
-					const areaPoint = pointForArea(slug)
-					return inArea.length ? inArea : areaPoint ? [areaPoint] : []
-				})
-
-				return (
-					<section
+			<GuideLayout toc={[...itineraries.map((r) => ({ id: r.slug, title: r.name })), { id: 'nothing-booked', title: 'Nothing here is booked' }]}>
+				{itineraries.map((route) => (
+					<GuideSection
 						key={route.slug}
 						id={route.slug}
-						className={`bb-section ${index % 2 === 0 ? 'bb-section-top' : ''}`}
+						title={route.name}
+						photo={route.areas.flatMap(photosForArea)[0]}
+						lede={`${route.nights}, based in ${route.base} · ${route.areas.map((slug) => areaName.get(slug) ?? slug).join(', ')}`}
 					>
-						<div className='bb-container'>
-							<SectionHead
-								index={String(index + 1).padStart(2, '0')}
-								eyebrow={`${route.nights} · base ${route.base}`}
-								title={route.name}
-								lead={route.forWhom}
-								aside={
-									<span className='flex flex-wrap gap-2'>
-										{route.areas.map((slug) => (
-											<Link key={slug} href={`/${slug}`} className='rule-link-quiet'>
-												{areaName.get(slug) ?? slug}
-											</Link>
-										))}
-									</span>
-								}
-								size='sm'
-							/>
-
-							<div className='mt-10 grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-16'>
-								<div>
-									{route.days.map((day) => (
-										<div key={day.label} className='tv-day'>
-											<p className='bb-label'>{day.label}</p>
-											<p className='item-title mt-2'>{day.where}</p>
-											<p className='mt-2.5 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{day.what}</p>
-										</div>
-									))}
-								</div>
-
-								<div className='grid content-start gap-6'>
-									<TravelMap
-										points={points}
-										caption={`${route.name} — the places it passes through. Approximate coordinates with a true scale bar; not for navigation.`}
-									/>
-
-									<Caution label='What is most likely to go wrong'>{route.watchFor}</Caution>
-								</div>
+						<p>{route.forWhom}</p>
+						{route.days.map((day) => (
+							<div key={day.label}>
+								<h3>
+									{day.label} <span className='font-normal text-[var(--ink-3)]'>· {day.where}</span>
+								</h3>
+								<p>{day.what}</p>
 							</div>
-						</div>
-					</section>
-				)
-			})}
+						))}
+						<h3>What is most likely to go wrong</h3>
+						<p>{route.watchFor}</p>
+					</GuideSection>
+				))}
 
-			<section className='bb-section'>
-				<div className='bb-container'>
-					<Caution label='Nothing here is booked'>
-						These are routes, not products. No transport on them is reserved, scheduled or guaranteed,
-						the boats in particular run on weather rather than on timetables, and any of these plans
-						will be rearranged by a sea that is up. Read{' '}
+				<GuideSection id='nothing-booked' title='Nothing here is booked'>
+					<p>
+						These are routes, not products. No transport on them is reserved, scheduled or guaranteed, the boats in
+						particular run on weather rather than on timetables, and any of these plans will be rearranged by a sea that is
+						up. Read{' '}
 						<Link href='/plan' className='rule-link'>
 							the planning page
 						</Link>{' '}
 						before you commit to dates, and take local advice on the areas the week you travel.
-					</Caution>
-				</div>
-			</section>
+					</p>
+				</GuideSection>
+			</GuideLayout>
 		</>
 	)
 }

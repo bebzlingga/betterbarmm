@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
-import { OkirRule, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { notFound } from 'next/navigation'
+import { GUIDE_PAGES } from '../_lib/guide'
 import { dishes, foodNotes, type FoodTradition } from '@betterbarmm/travel-data'
-import { TravelMasthead, SectionHead } from '../_components/travel-parts'
+import { GuideLayout, GuideSection, TravelMasthead } from '../_components/travel-parts'
 import { PhotoFigure } from '../_components/photo-figure'
 import { photoForDish } from '../_lib/media'
 
@@ -23,6 +24,7 @@ const TRADITION_ORDER: FoodTradition[] = [
 ]
 
 export default function FoodPage() {
+	if (!GUIDE_PAGES) notFound()
 	const byTradition = TRADITION_ORDER.map((tradition) => ({
 		tradition,
 		list: dishes.filter((dish) => dish.tradition === tradition),
@@ -31,103 +33,64 @@ export default function FoodPage() {
 	return (
 		<>
 			<TravelMasthead
-				kicker={`${dishes.length} things to eat`}
+				kicker='The guide'
 				name='Food'
 				note='The best reason to come, and the least written-about food in the Philippines: halal, rich in coconut, turmeric and chilli, closer to Sabah and Sulawesi than to Luzon. There is no single Bangsamoro cuisine — each dish names whose it is.'
 			/>
 
-			{/* ---- How eating works ------------------------------------------ */}
-			<section className='bb-section'>
-				<div className='bb-container'>
-					<SectionHead
-						index='01'
-						eyebrow='Before the dishes'
-						title='How eating here'
-						titleMuted='actually works.'
-						size='sm'
-					/>
+			{/* Plain reading (user decision): how eating works, then each tradition's dishes, in one column. */}
+			<GuideLayout
+				toc={[
+					{ id: 'how-eating-works', title: 'How eating works' },
+					...byTradition.map((g) => ({ id: g.tradition.toLowerCase(), title: g.tradition === 'Shared' ? 'Region-wide' : `${g.tradition} cooking` })),
+					{ id: 'no-restaurants', title: 'Why no restaurants' },
+				]}
+			>
+				<GuideSection id='how-eating-works' title='How eating here actually works'>
+					{foodNotes.map((note) => (
+						<div key={note.title}>
+							<h3>{note.title}</h3>
+							<p>{note.body}</p>
+						</div>
+					))}
+				</GuideSection>
 
-					<div className='mt-10 grid gap-x-12 gap-y-9 md:grid-cols-2 xl:grid-cols-3'>
-						{foodNotes.map((note) => (
-							<div key={note.title}>
-								<p className='item-title'>{note.title}</p>
-								<p className='mt-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{note.body}</p>
+				{byTradition.map((group) => (
+					<GuideSection
+						key={group.tradition}
+						id={group.tradition.toLowerCase()}
+						title={group.tradition === 'Shared' ? 'Region-wide' : `${group.tradition} cooking`}
+						lede={group.tradition === 'Shared' ? 'Made across the region under close variations of the same name.' : undefined}
+					>
+						{group.list.map((dish) => (
+							<div key={dish.slug} id={dish.slug} className='scroll-mt-24'>
+								<h3>
+									{dish.name}
+									{dish.essential ? <span className='font-normal text-[var(--ink-3)]'> · do not leave without it</span> : null}
+								</h3>
+								{photoForDish(dish.slug) ? (
+									<div className='my-4'>
+										<PhotoFigure photo={photoForDish(dish.slug)!} size='inset' />
+									</div>
+								) : null}
+								<p>{dish.summary}</p>
+								<p>{dish.detail}</p>
+								<p>
+									<strong className='font-semibold text-[var(--ink)]'>Where to find it:</strong> {dish.whereToFind}
+								</p>
 							</div>
 						))}
-					</div>
-				</div>
-			</section>
+					</GuideSection>
+				))}
 
-			{/* ---- The dishes ------------------------------------------------ */}
-			{byTradition.map((group, index) => (
-				<section
-					key={group.tradition}
-					id={group.tradition.toLowerCase()}
-					className={`bb-section ${index % 2 === 0 ? 'bb-section-top' : ''}`}
-				>
-					<div className='bb-container'>
-						<SectionHead
-							index={String(index + 2).padStart(2, '0')}
-							eyebrow={
-								group.tradition === 'Shared'
-									? 'Made across the region under close variations of the same name'
-									: `${group.tradition} cooking`
-							}
-							title={group.tradition === 'Shared' ? 'Region-wide' : group.tradition}
-							titleMuted={`${group.list.length} ${group.list.length === 1 ? 'dish' : 'dishes'}`}
-							size='sm'
-						/>
-
-						<Stagger className='mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3'>
-							{group.list.map((dish) => (
-								<StaggerItem key={dish.slug}>
-									<article id={dish.slug} className='tv-card h-full'>
-										{photoForDish(dish.slug) ? (
-											<div className='mb-5'>
-												<PhotoFigure photo={photoForDish(dish.slug)!} size='inset' />
-											</div>
-										) : null}
-										{dish.essential ? (
-											<span className='badge badge-plain !text-[0.59375rem] self-start'>
-												Do not leave without
-											</span>
-										) : null}
-
-										<h3 className={`item-title-lg ${dish.essential ? 'mt-3' : ''}`}>{dish.name}</h3>
-
-										<p className='mt-2.5 text-[0.84375rem] leading-6 text-[var(--brass)]'>
-											{dish.summary}
-										</p>
-
-										<p className='mt-4 flex-1 text-[0.875rem] leading-7 text-[var(--ink-2)]'>
-											{dish.detail}
-										</p>
-
-										<div className='mt-5 border-t border-[var(--rule-soft)] pt-4'>
-											<p className='bb-label'>Where to find it</p>
-											<p className='mt-2 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
-												{dish.whereToFind}
-											</p>
-										</div>
-									</article>
-								</StaggerItem>
-							))}
-						</Stagger>
-					</div>
-				</section>
-			))}
-
-			<section className='bb-section'>
-				<div className='bb-container'>
-					<OkirRule />
-					<p className='mt-8 max-w-3xl text-[0.875rem] leading-7 text-[var(--ink-3)]'>
-						No restaurants are named and no prices are given. Places in this region open and close
-						faster than a guide can track, and the best cooking is in markets and in houses in any
-						case — so what is given is what to look for and roughly where that kind of place is,
-						which stays true for longer than an address would.
+				<GuideSection id='no-restaurants' title='Why no restaurants are named'>
+					<p>
+						No restaurants are named and no prices are given. Places in this region open and close faster than a guide can
+						track, and the best cooking is in markets and in houses in any case — so what is given is what to look for and
+						roughly where that kind of place is, which stays true for longer than an address would.
 					</p>
-				</div>
-			</section>
+				</GuideSection>
+			</GuideLayout>
 		</>
 	)
 }

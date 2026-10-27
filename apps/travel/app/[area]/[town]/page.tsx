@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { GUIDE_PAGES, TOWN_PAGES } from '../../_lib/guide'
 import { Rise } from '@betterbarmm/editorial'
 import {
 	findTown,
@@ -89,6 +90,7 @@ function Listings({ label, items, empty }: { label: string; items: TownListing[]
 }
 
 export default async function TownPage({ params }: { params: Promise<{ area: string; town: string }> }) {
+	if (!TOWN_PAGES) notFound()
 	const page = await load(params)
 	if (!page) notFound()
 	const { area, unit, town } = page
@@ -180,7 +182,7 @@ export default async function TownPage({ params }: { params: Promise<{ area: str
 										</ul>
 									) : (
 										<p className='mt-4 text-[0.875rem] leading-7 text-[var(--ink-2)]'>
-											See the <Link href='/food' className='rule-link'>region&rsquo;s food</Link>.
+											{GUIDE_PAGES ? <>See the <Link href='/food' className='rule-link'>region&rsquo;s food</Link>.</> : 'No dish particular to the town is recorded yet.'}
 										</p>
 									)}
 								</div>

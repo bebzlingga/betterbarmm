@@ -133,10 +133,9 @@
     transform 0.2s var(--ease);
 }
 
+/* Only the rule turns, to the accent, to say it is a link: no tint, no lift, no shadow (user decision). */
 a.tv-card:hover {
-  border-color: var(--ink);
-  background: var(--paper-2);
-  transform: translateY(-2px);
+  border-color: var(--accent);
 }
 
 .tv-kind {
@@ -167,9 +166,6 @@ a.tv-card:hover {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  a.tv-card:hover {
-    transform: none;
-  }
   .tv-card {
     transition: none;
   }
@@ -190,6 +186,15 @@ a.tv-card:hover {
   border: 1px solid var(--rule);
   background: var(--paper-2);
   aspect-ratio: 4 / 3;
+}
+
+/* A guide section's photograph (`GuideSection`): a wide band under the heading rather than a 4:3 block, so the text
+   it belongs to starts within the first screen. After `.tv-figure`, so its margin wins. */
+.tv-figure.tv-guide-photo {
+  margin-top: 2rem;
+}
+.tv-guide-photo .tv-figure-frame {
+  aspect-ratio: 21 / 9;
 }
 
 .tv-figure-img {
@@ -399,4 +404,39 @@ a.tv-card:hover {
 
 .tv-day:last-child::after {
   display: none;
+}
+
+/* A guide page's reading column (`GuideSection`): plain lists and small headings inside the prose, so the
+   practical points read as part of the text rather than as boxes beside it (user decision). */
+.bb-prose ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin-top: 1rem;
+}
+.bb-prose li + li {
+  margin-top: 0.5rem;
+}
+.bb-prose h3 {
+  margin-top: 1.75rem;
+  font-family: var(--font-display);
+  font-size: 1.0625rem;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+.bb-prose h3 + p,
+.bb-prose h3 + ul {
+  margin-top: 0.5rem;
+}
+.bb-prose p + h3,
+.bb-prose ul + h3,
+.bb-prose ul + p,
+.bb-prose p + ul {
+  margin-top: 1.25rem;
+}
+
+/* The drop cap opening an area's intro, with more air between it and the lines beside it (user decision). After the
+   estate's own rule, so this one wins. */
+.bb-dropcap::first-letter {
+  padding-right: 0.75rem;
 }

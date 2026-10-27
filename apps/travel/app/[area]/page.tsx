@@ -1,7 +1,16 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { LineReveal, OkirRule, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { GUIDE_PAGES, TOWN_PAGES } from '../_lib/guide'
+
+
+/** A place to stay's name with the words every hotel shares taken out, so two spellings of one hotel match. */
+const stayKey = (name: string) =>
+	name
+		.toLowerCase()
+		.replace(/&/g, 'and')
+		.replace(/\b(the|hotel|suites?|and|restaurant|convention|center|centre|cotabato|city)\b/g, '')
+		.replace(/[^a-z0-9]/g, '')
 import { areaHref, findProvince } from '@betterbarmm/lgu-data'
 import {
 	festivalsForArea,
@@ -9,26 +18,41 @@ import {
 	itinerariesForArea,
 	legsForArea,
 	lguForArea,
-	LODGING_KIND_LABEL,
 	lodgingCaveat,
 	lodgingForArea,
-	NOTABLE_STAYS_CAVEAT,
-	placesInArea,
-	PLACE_KIND_LABEL,
-	pointForArea,
-	pointsInArea,
 	townsInArea,
 	travelAreas,
 } from '@betterbarmm/travel-data'
-import { Caution, Footing, GateList, TravelMasthead, SectionHead } from '../_components/travel-parts'
-import { TravelMap } from '../_components/travel-map'
-import { TownMap } from '../_components/town-map'
-import { LocatorMap } from '../_components/locator-map'
-import { CityGuideView } from '../_components/city-guide'
-import { cityGuide } from '@betterbarmm/travel-data/cities'
+import { explorePlaces, staysInArea } from '@betterbarmm/travel-data/explore'
+import type { Icon } from '@phosphor-icons/react'
+import {
+	AirplaneTiltIcon,
+	ArrowRightIcon,
+	BusIcon,
+	CarIcon,
+	FirstAidIcon,
+	InfoIcon,
+	MoneyIcon,
+	ShieldCheckIcon,
+	TShirtIcon,
+	WifiHighIcon,
+	CalendarCheckIcon,
+	ForkKnifeIcon,
+	NavigationArrowIcon,
+	PathIcon,
+	ShieldWarningIcon,
+	SignpostIcon,
+	SunHorizonIcon,
+	TranslateIcon,
+} from '@phosphor-icons/react/ssr'
+import { WayList } from '../_components/travel-parts'
+import { cityGuide, type CityPlace } from '@betterbarmm/travel-data/cities'
+import Image from 'next/image'
+import { photosForArea } from '../_lib/media'
 import { cotabatoPhotos } from '../_lib/city-photos'
-import { PhotoFigure, PhotoStrip } from '../_components/photo-figure'
-import { photo, photoForPlace, photosForArea } from '../_lib/media'
+import { ExploreCard } from '../_components/explore-card'
+import { StayCard } from '../_components/stay-card'
+import { toCard } from '../_lib/cards'
 
 /**
  * Static routes win over this one, so `/places`, `/food`, `/stays` and `/plan`
@@ -59,445 +83,415 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 	const area = findTravelArea(slug)
 	if (!area) notFound()
 
-	// A city with a full guide gets the travel-app view.
-	const guide = cityGuide(area.slug)
-	if (guide) {
-		const p = cotabatoPhotos
-		return (
-			<CityGuideView
-				guide={guide}
-				intro={area.intro}
-				safety={area.safety}
-				hero={p.drone!}
-				facts={[
-					{ label: 'When to go', value: area.whenToGo },
-					{ label: 'Languages', value: `${area.languages.join(', ')}; Filipino and English widely understood` },
-					{ label: 'Known for', value: area.knownFor.join(' · ') },
-				]}
-				photos={p}
-				dishPhotos={{ pastil: photo('pastil'), tiyula: photo('tiyulaItum') }}
-			/>
-		)
-	}
 
-	const areaPlaces = placesInArea(area.slug)
 	const lodging = lodgingForArea(area.slug)
 	const province = lguForArea(area)
 	const directoryProvince = findProvince(area.slug)
-	const areaFestivals = festivalsForArea(area.slug).filter((festival) => festival.area !== 'region')
-	const photos = photosForArea(area.slug)
-	const [lead, ...gallery] = photos
+	// A city with a full guide (Cotabato City) uses this same page (user decision); its lists fill the sections below.
+	const guide = cityGuide(area.slug)
+	// The area's festivals, less any the city guide already lists among its events.
+	const guideEvents = new Set((guide?.events ?? []).map((event) => event.name.toLowerCase()))
+	const areaFestivals = festivalsForArea(area.slug).filter((festival) => festival.area !== 'region' && !guideEvents.has(festival.name.toLowerCase()))
+	// The header photograph: the area's lead, except where its city guide holds a better one for the purpose (Cotabato
+	// City's lead is the Government Center at night, too dark to carry the title; the guide's aerial view is not).
+	const lead = (guide ? cotabatoPhotos.drone : undefined) ?? photosForArea(area.slug)[0]
 	const routes = itinerariesForArea(area.slug)
 	const towns = townsInArea(area.slug)
-
-	// The area's own places, plus its dot on the region map, so the locator
-	// shows where in the Bangsamoro this is as well as what is in it.
 	const areaLegs = legsForArea(area.slug)
-	const areaPoint = pointForArea(area.slug)
-	const localPoints = pointsInArea(area.slug)
-	const mapPoints = areaPoint && !localPoints.length ? [areaPoint] : localPoints
+	const firstLeg = areaLegs[0]
+	const things = explorePlaces.filter((p) => p.area === area.slug).map(toCard)
+	const stays = staysInArea(area.slug)
+	const shownStays = new Set(stays.map((stay) => stayKey(stay.name)))
+	// The city guide's further places to stay: only those it found open — listed on a booking site or with an active page
+	// when it was compiled — since several of the others have closed (user decision). Names are compared loosely, so
+	// "The Paragon Hotel & Restaurant" is not listed again beside the card for "Paragon Hotel and Restaurant".
+	const moreStays = (guide?.stay ?? []).filter((place) => place.status === 'open' && !shownStays.has(stayKey(place.name)))
+	// The season's first sentence is the answer; the rest of it is in the section below.
+	const bestTime = area.whenToGo.split(/(?<=\.)\s/)[0]!
+
 
 	return (
 		<>
-			<TravelMasthead
-				badges={<Footing footing={area.footing} />}
-				kicker={`Base · ${area.base}`}
-				name={area.name}
-				note={area.tagline}
-			>
-				<Rise delay={0.35} distance={14}>
-					<div className='grid gap-x-10 gap-y-6 sm:grid-cols-2 lg:grid-cols-4'>
-						<div>
-							<p className='bb-label'>When to go</p>
-							<p className='mt-2.5 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>{area.whenToGo}</p>
-						</div>
-						<div>
-							<p className='bb-label'>Languages</p>
-							<p className='mt-2.5 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>
-								{area.languages.join(', ')}
-								<span className='text-[var(--ink-3)]'> · Filipino and English widely understood</span>
+			{/* The header on the area's own photograph (user decision); where the guide holds none, the dark ground alone. */}
+			<header className='relative isolate overflow-hidden bg-[#1c1a17] text-white'>
+				{lead ? (
+					<Image src={lead.src} alt={lead.alt} fill priority sizes='100vw' placeholder='blur' className='-z-10 object-cover' />
+				) : null}
+				<span aria-hidden='true' className='absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgba(12,10,8,0.92)_0%,rgba(12,10,8,0.6)_50%,rgba(12,10,8,0.25)_100%)]' />
+				<div className='bb-container flex min-h-[clamp(20rem,42vw,30rem)] flex-col justify-end pb-10 pt-24 lg:pb-12'>
+					<p className='!font-[family-name:var(--font-display)] text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[#f1c453]'>Area guide</p>
+					<h1 className='bb-display-md mt-3 text-white'>{area.name}</h1>
+					<p className='mt-4 max-w-2xl text-[1rem] leading-7 text-white/85'>{area.tagline}</p>
+
+				</div>
+				{lead ? (
+					<a href={lead.source} target='_blank' rel='noreferrer' className='absolute bottom-3 right-4 text-[0.6875rem] text-white/60 hover:text-white'>
+						{lead.credit} · {lead.license}
+					</a>
+				) : null}
+			</header>
+
+			{/* ---- The three things a visitor asks first, under the photograph (user decision), in place of the section bar ---- */}
+			<div className='border-b border-[var(--rule)]'>
+				<dl className='bb-container flex flex-wrap gap-x-16 gap-y-6 py-7'>
+					{/* How most visitors arrive: the area's first journey leg, or its first way in where it has none. */}
+					<Fact icon={NavigationArrowIcon} label='Getting there'>
+						{firstLeg ? (
+							<>
+								{firstLeg.from} → {firstLeg.to}
+								<span className='block text-[0.78125rem] text-[var(--ink-3)]'>
+									By {firstLeg.mode === 'air' ? 'air' : firstLeg.mode === 'sea' ? 'sea' : 'road'}, {firstLeg.duration.charAt(0).toLowerCase() + firstLeg.duration.slice(1)}
+								</span>
+							</>
+						) : (
+							<span className='block max-w-[24rem]'>{area.gettingThere[0]?.split(/(?<=\.)\s/)[0]}</span>
+						)}
+					</Fact>
+					<Fact icon={SunHorizonIcon} label='Best time'>
+						<span className='block max-w-[24rem]'>{bestTime}</span>
+					</Fact>
+					<Fact icon={TranslateIcon} label='Languages'>
+						{area.languages.join(', ')}
+						<span className='block text-[0.78125rem] text-[var(--ink-3)]'>Filipino and English widely understood</span>
+					</Fact>
+				</dl>
+			</div>
+
+			<div className='bb-container pb-20'>
+				{/* ---- Overview: the picture, three facts, what the place is ---- */}
+				<AreaSection id='overview' first>
+
+					{/* All of it, at the full width (user decision: no "read more"). */}
+					<div className='bb-prose !max-w-none'>
+						{area.intro.map((paragraph, index) => (
+							<p key={paragraph.slice(0, 40)} className={index === 0 ? 'bb-dropcap' : undefined}>
+								{paragraph}
 							</p>
+						))}
+					</div>
+				</AreaSection>
+
+				{/* ---- Things to do: the places, as the Explore cards ---- */}
+				{things.length ? (
+					<AreaSection
+						id='things-to-do'
+						title='Things to do'
+						lede={`${things.length} ${things.length === 1 ? 'place' : 'places'} to see in ${area.name}.`}
+						aside={
+							things.length > 8 ? (
+								<Link href={`/?area=${area.slug}`} className='rule-link text-[0.84375rem] font-semibold text-[var(--ink)]'>
+									See all {things.length}
+								</Link>
+							) : null
+						}
+					>
+						<div className='grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-[48px]'>
+							{things.slice(0, 8).map((place) => (
+								<ExploreCard key={place.slug} place={place} />
+							))}
 						</div>
-						<div>
-							<p className='bb-label'>Known for</p>
-							<p className='mt-2.5 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>
-								{area.knownFor.join(' · ')}
-							</p>
+					</AreaSection>
+				) : null}
+
+				{/* ---- Getting there and around ---- */}
+				<AreaSection id='getting-there' title='Getting there and around'>
+					<div className='grid gap-12 lg:grid-cols-2 lg:gap-14'>
+						<WayList label='Getting there' icon={NavigationArrowIcon} items={area.gettingThere} />
+						<WayList label='Getting around' icon={SignpostIcon} items={area.gettingAround} />
+					</div>
+					{areaLegs.length ? (
+						<div className='mt-12'>
+							<p className='bb-label'>How long it takes</p>
+							<dl className='mt-4 grid gap-x-14 sm:grid-cols-2'>
+								{areaLegs.map((leg) => (
+									<div key={`${leg.from}-${leg.to}-${leg.mode}`} className='flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 py-2'>
+										<dt className='text-[0.875rem] text-[var(--ink-2)]'>
+											{leg.from} → {leg.to}
+											<span className='ml-2 font-mono text-[0.59375rem] uppercase tracking-[0.14em] text-[var(--brass)]'>{leg.mode}</span>
+										</dt>
+										<dd className='text-[0.84375rem] text-[var(--ink-3)]'>{leg.duration}</dd>
+									</div>
+								))}
+							</dl>
 						</div>
-						{/* The census figures are the directory's, not this guide's, and the
-						    link says so — a traveler who wants to know how big a place is
-						    should end up on the record rather than on a number retyped here. */}
-						{province && directoryProvince ? (
-							<div>
-								<p className='bb-label'>In the directory</p>
-								<p className='mt-2.5 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>
-									{province.municipalities.length}{' '}
-									{province.municipalities.length === 1 ? 'unit' : 'cities and municipalities'}.{' '}
-									<a
-										href={`https://lgu.betterbarmm.com${areaHref(directoryProvince)}`}
-										className='rule-link'
-									>
-										Population, land area and officials
-									</a>
-									.
+					) : null}
+				</AreaSection>
+
+				{/* ---- Where to stay: the places by name, then the short version of how it works ---- */}
+				{stays.length || lodging || moreStays.length ? (
+					<AreaSection id='where-to-stay' title='Where to stay' lede={lodging?.booking}>
+						{stays.length ? (
+							<ul className='grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-[48px]'>
+								{stays.map((stay) => (
+									<StayCard key={stay.name} stay={stay} />
+								))}
+							</ul>
+						) : null}
+						{moreStays.length ? (
+							<div className='mt-12'>
+								<h3 className='font-[family-name:var(--font-display)] text-[1.125rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>
+									{moreStays.length} more places to stay
+								</h3>
+								<p className='mt-1.5 text-[0.84375rem] text-[var(--ink-3)]'>
+									Listed on a booking site or with an active page of their own as of {guide ? new Date(guide.generatedAt).toLocaleDateString('en-PH', { month: 'long', year: 'numeric' }) : 'the last check'}. Confirm before you go.
 								</p>
+								<CityList items={moreStays} />
 							</div>
 						) : null}
-					</div>
-				</Rise>
-			</TravelMasthead>
-
-			<div className='bb-container bb-section grid gap-16 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-24'>
-				<div className='min-w-0'>
-
-			{/* ---- What the place is ---------------------------------------- */}
-			<section>
-				<div>
-					<div>
-						<div className='bb-prose max-w-2xl'>
-							{area.intro.map((paragraph, index) => (
-								<p key={paragraph.slice(0, 40)} className={index === 0 ? 'bb-dropcap' : undefined}>
-									{paragraph}
-								</p>
-							))}
-						</div>
-
-
-					</div>
-				</div>
-			</section>
-
-			{/* ---- Getting there and around --------------------------------- */}
-			<section className='mt-20'>
-				<div>
-					<SectionHead
-						index='01'
-						eyebrow='The journey'
-						title='Getting there,'
-						titleMuted='and getting around once you have.'
-						size='sm'
-					/>
-
-					<div className='mt-10 grid gap-10 lg:grid-cols-[1fr_1.05fr] lg:gap-14'>
-						<div className='grid content-start gap-9'>
-							<GateList label='Getting there' items={area.gettingThere} />
-							<GateList label='Getting around' items={area.gettingAround} />
-						</div>
-
-						<div className='grid content-start gap-6'>
-							<TravelMap
-								points={mapPoints}
-								focus={areaPoint?.slug}
-								caption={`${area.name} and the places in this guide. A locator drawn from approximate coordinates — about a kilometer — with a true scale bar. There is no coastline because this site holds none it can vouch for. Not for navigation.`}
-							/>
-
-							{areaLegs.length ? (
-								<div>
-									<p className='bb-label'>How long it takes</p>
-									<dl className='mt-3.5 grid gap-2.5'>
-										{areaLegs.map((leg) => (
-											<div
-												key={`${leg.from}-${leg.to}-${leg.mode}`}
-												className='flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-[var(--rule-soft)] pb-2.5'
-											>
-												<dt className='text-[0.84375rem] text-[var(--ink-2)]'>
-													{leg.from} → {leg.to}
-													<span className='ml-2 font-mono text-[0.59375rem] uppercase tracking-[0.14em] text-[var(--brass)]'>
-														{leg.mode}
-													</span>
-												</dt>
-												<dd className='text-[0.8125rem] text-[var(--ink-3)]'>{leg.duration}</dd>
-											</div>
-										))}
-									</dl>
-								</div>
-							) : null}
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* ---- The gallery ---------------------------------------------- */}
-			{gallery.length ? (
-				<section className='mt-20'>
-					<div>
-						<p className='bb-label'>{area.name}, photographed</p>
-						<div className='mt-8'>
-							<PhotoStrip photos={gallery} />
-						</div>
-					</div>
-				</section>
-			) : (
-				<section className='mt-20'>
-					<div>
-						<Caution label='No photographs of this area'>
-							This guide holds no freely licensed photograph of {area.name} that it could use and
-							credit properly, so it shows none rather than borrowing a picture of somewhere else.
-							If you have one you would license openly,{' '}
-							<a href='https://betterbarmm.com/contribute' className='rule-link'>
-								the project would take it
-							</a>
-							.
-						</Caution>
-					</div>
-				</section>
-			)}
-
-			{/* ---- Town by town ---------------------------------------------- */}
-			<section className='mt-20'>
-				<div>
-					<SectionHead
-						index='02'
-						eyebrow='Town by town'
-						title={`${towns.length} ${towns.length === 1 ? 'city or municipality' : 'cities and municipalities'}`}
-						titleMuted='and what each one has.'
-						size='sm'
-					/>
-					<div className='mt-10 grid gap-10'>
-						<div className='max-w-[30rem]'>
-							<TownMap area={area.slug} />
-						</div>
-						<ul className='grid content-start gap-x-8 sm:grid-cols-2 xl:grid-cols-3'>
-							{towns.map(({ unit, town }) => (
-								<li key={unit.slug} className='border-b border-[var(--rule-soft)]'>
-									<Link href={`/${area.slug}/${unit.slug}`} className='group block py-3'>
-										<span className='block font-semibold text-[var(--ink)] transition group-hover:text-[var(--accent)]'>{unit.name}</span>
-										<span className='mt-0.5 block font-mono text-[0.59375rem] uppercase tracking-[0.14em] text-[var(--ink-3)]'>
-											{!town ? 'Not yet researched' : town.coverage === 'none' ? 'Little found online' : `${town.whereToGo.length} ${town.whereToGo.length === 1 ? 'place' : 'places'} · ${town.stay.length} ${town.stay.length === 1 ? 'stay' : 'stays'}`}
-										</span>
-									</Link>
-								</li>
-							))}
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			{/* ---- Places ---------------------------------------------------- */}
-			{areaPlaces.length ? (
-				<section className='mt-20'>
-					<div>
-						<SectionHead
-							index='03'
-							eyebrow='What there is to see'
-							title={`${areaPlaces.length} ${areaPlaces.length === 1 ? 'place' : 'places'}`}
-							titleMuted='in this area.'
-							aside={
-								<Link href='/places' className='rule-link-quiet'>
-									All places
-								</Link>
-							}
-							size='sm'
-						/>
-
-						<Stagger className='mt-10 grid gap-8'>
-							{areaPlaces.map((place) => (
-								<StaggerItem key={place.slug}>
-									<article className='border-t border-[var(--brass-line)] pt-8'>
-										<div className='grid gap-8 lg:grid-cols-[1.35fr_1fr] lg:gap-14'>
-											<div>
-												<div className='flex flex-wrap items-center gap-x-3 gap-y-1.5'>
-													<span className='tv-kind'>{PLACE_KIND_LABEL[place.kind]}</span>
-													{place.signature ? (
-														<span className='badge badge-plain !text-[0.59375rem]'>Signature</span>
-													) : null}
-													<span className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
-														{place.municipality}
-													</span>
-												</div>
-
-												<h3 className='section-title-sm mt-3'>{place.name}</h3>
-
-												{place.alsoKnownAs?.length ? (
-													<p className='mt-1.5 text-[0.8125rem] italic text-[var(--ink-3)]'>
-														Also {place.alsoKnownAs.join(', ')}
-													</p>
-												) : null}
-
-												<div className='bb-prose mt-5'>
-													{place.detail.map((paragraph) => (
-														<p key={paragraph.slice(0, 40)}>{paragraph}</p>
-													))}
-												</div>
-											</div>
-
-											<div className='grid content-start gap-8 lg:pt-10'>
-												{photoForPlace(place.slug) ? (
-													<PhotoFigure photo={photoForPlace(place.slug)!} size='inset' />
-												) : null}
-												<GateList label='Before you go' items={place.beforeYouGo} />
-											</div>
-										</div>
-									</article>
-								</StaggerItem>
-							))}
-						</Stagger>
-					</div>
-				</section>
-			) : null}
-
-			{/* ---- Where to sleep -------------------------------------------- */}
-			{lodging ? (
-				<section className='mt-20'>
-					<div>
-						<SectionHead
-							index={areaPlaces.length ? '04' : '03'}
-							eyebrow='Where to sleep'
-							title='What actually exists'
-							titleMuted='and how it is booked.'
-							aside={
-								<Link href='/stays' className='rule-link-quiet'>
-									Lodging across the region
-								</Link>
-							}
-							size='sm'
-						/>
-
-						<div className='mt-10 grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-16'>
-							<div>
-								<div className='flex flex-wrap items-center gap-2'>
-									{lodging.kinds.map((kind) => (
-										<span key={kind} className='bb-chip'>
-											{LODGING_KIND_LABEL[kind]}
-										</span>
-									))}
-								</div>
-
-								<div className='bb-prose mt-6 max-w-2xl'>
+						{lodging ? (
+							<div className='mt-14'>
+								<h3 className='font-[family-name:var(--font-display)] text-[1.125rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>How lodging works in {area.name}</h3>
+								<div className='bb-prose mt-4 !max-w-none'>
 									{lodging.situation.map((paragraph) => (
 										<p key={paragraph.slice(0, 40)}>{paragraph}</p>
 									))}
+									<h3>What to expect</h3>
+									<ul>
+										{lodging.expect.map((item) => (
+											<li key={item}>{item}</li>
+										))}
+									</ul>
+									<h3>When it fills up</h3>
+									<p>{lodging.fillsUp}</p>
+									<p className='text-[0.875rem] text-[var(--ink-3)]'>{lodgingCaveat}</p>
 								</div>
 							</div>
+						) : null}
+					</AreaSection>
+				) : null}
 
-							<div className='grid content-start gap-7'>
-								<div>
-									<p className='bb-label'>Booking</p>
-									<p className='mt-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{lodging.booking}</p>
-								</div>
+				{/* ---- Where to eat: the city guide's dishes and places ---- */}
+				{guide?.eat.length ? (
+					<AreaSection id='where-to-eat' title='Where to eat' lede={`${guide.eat.length} places to eat in ${area.name}, and the dishes to look for.`}>
+						{guide.dishes.length ? (
+							<div className='grid gap-x-12 gap-y-6 sm:grid-cols-2 lg:grid-cols-3'>
+								{guide.dishes.map((dish) => (
+									<div key={dish.name}>
+										<h3 className='flex items-center gap-2.5 font-[family-name:var(--font-display)] text-[1rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>
+											<ForkKnifeIcon size={18} weight='duotone' className='text-[var(--brass)]' aria-hidden='true' />
+											{dish.name}
+										</h3>
+										<p className='mt-1.5 text-[0.875rem] leading-[1.65] text-[var(--ink-2)]'>{dish.note}</p>
+										{dish.whereToTry.length ? <p className='mt-1 text-[0.8125rem] text-[var(--ink-3)]'>Try it at {dish.whereToTry.join(', ')}</p> : null}
+									</div>
+								))}
+							</div>
+						) : null}
+						<div className={guide.dishes.length ? 'mt-14' : ''}>
+							<h3 className='font-[family-name:var(--font-display)] text-[1.125rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>Places to eat</h3>
+							<CityList items={guide.eat} />
+						</div>
+					</AreaSection>
+				) : null}
 
-								<GateList label='What to expect' items={lodging.expect} />
-
-								<div>
-									<p className='bb-label'>When it fills up</p>
-									<p className='mt-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{lodging.fillsUp}</p>
-								</div>
-
-								<Caution label='Verify before you travel'>{lodgingCaveat}</Caution>
+				{/* ---- Before you go: safety, the calendar, a suggested route ---- */}
+				<AreaSection id='before-you-go' title='Before you go'>
+					{/* A row each, as Good to know (user decision): the topic and its icon on the left, the detail beside it. */}
+					<div className='grid gap-y-8'>
+						<div className='grid gap-x-12 gap-y-2 md:grid-cols-[16rem_minmax(0,1fr)]'>
+							<h3 className='flex items-start gap-2.5 font-[family-name:var(--font-display)] text-[1.0625rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>
+								<ShieldWarningIcon size={20} weight='duotone' className='mt-0.5 text-[var(--accent)]' aria-hidden='true' />
+								Safety
+							</h3>
+							<div>
+								<p className='text-[0.9375rem] leading-[1.7] text-[var(--ink-2)]'>{area.safety}</p>
 							</div>
 						</div>
-
-						{lodging.notableStays.length ? (
-							<div className='mt-14 border-t border-[var(--brass-line)] pt-10'>
-								<p className='bb-label'>Names you will hear</p>
-
-								<div className='mt-7 grid gap-5 md:grid-cols-2 xl:grid-cols-3'>
-									{lodging.notableStays.map((stay) => (
-										<article key={stay.name} className='tv-card h-full'>
-											<span className='tv-kind'>{LODGING_KIND_LABEL[stay.kind]}</span>
-											<h4 className='item-title-lg mt-3'>{stay.name}</h4>
-											<p className='mt-1.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
-												{stay.town}
+						<div className='grid gap-x-12 gap-y-2 md:grid-cols-[16rem_minmax(0,1fr)]'>
+							<h3 className='flex items-start gap-2.5 font-[family-name:var(--font-display)] text-[1.0625rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>
+								<CalendarCheckIcon size={20} weight='duotone' className='mt-0.5 text-[var(--accent)]' aria-hidden='true' />
+								When to go
+							</h3>
+							<div>
+								<p className='text-[0.9375rem] leading-[1.7] text-[var(--ink-2)]'>{area.whenToGo}</p>
+								{guide?.events.map((event) => (
+									<p key={event.name} className='mt-3 text-[0.875rem] leading-[1.7] text-[var(--ink-2)]'>
+										<strong className='font-semibold text-[var(--ink)]'>{event.name}</strong>
+										<span className='text-[var(--ink-3)]'> · {event.when}.</span> {event.note}
+									</p>
+								))}
+								{areaFestivals.map((festival) => (
+									<p key={festival.name} className='mt-3 text-[0.875rem] leading-[1.7] text-[var(--ink-2)]'>
+										<strong className='font-semibold text-[var(--ink)]'>{festival.name}</strong>
+										<span className='text-[var(--ink-3)]'> · {festival.when}.</span> {festival.what}
+									</p>
+								))}
+							</div>
+						</div>
+						{routes.length ? (
+							<div className='grid gap-x-12 gap-y-2 md:grid-cols-[16rem_minmax(0,1fr)]'>
+								<h3 className='flex items-start gap-2.5 font-[family-name:var(--font-display)] text-[1.0625rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>
+									<PathIcon size={20} weight='duotone' className='mt-0.5 text-[var(--accent)]' aria-hidden='true' />
+									{routes.length === 1 ? 'A route through here' : 'Routes through here'}
+								</h3>
+								<div>
+									{routes.map((route, index) => (
+										<div key={route.slug} className={index ? 'mt-5' : ''}>
+											{GUIDE_PAGES ? (
+												<Link href={`/routes#${route.slug}`} className='font-semibold text-[var(--ink)] rule-link'>
+													{route.name}
+												</Link>
+											) : (
+												<p className='text-[0.9375rem] font-semibold text-[var(--ink)]'>{route.name}</p>
+											)}
+											<p className='mt-0.5 text-[0.8125rem] text-[var(--ink-3)]'>
+												{route.nights}, based in {route.base}
 											</p>
-											<p className='mt-3.5 flex-1 text-[0.84375rem] leading-7 text-[var(--ink-2)]'>
-												{stay.note}
-											</p>
-										</article>
+											<p className='mt-1.5 text-[0.875rem] leading-[1.7] text-[var(--ink-2)]'>{route.forWhom}</p>
+										</div>
 									))}
-								</div>
-
-								<div className='mt-7'>
-									<Caution label='Not a recommendation'>{NOTABLE_STAYS_CAVEAT}</Caution>
 								</div>
 							</div>
 						) : null}
 					</div>
-				</section>
-			) : null}
+				</AreaSection>
 
-			{/* ---- Routes ---------------------------------------------------- */}
-			{routes.length ? (
-				<section className='mt-20'>
-					<div>
-						<SectionHead
-							index='05'
-							eyebrow='Putting it together'
-							title={routes.length === 1 ? 'A route through here' : 'Routes through here'}
-							aside={
-								<Link href='/routes' className='rule-link-quiet'>
-									All routes
-								</Link>
-							}
-							size='sm'
-						/>
-
-						<div className='mt-10 grid gap-10 lg:grid-cols-2 lg:gap-14'>
-							{routes.map((route) => (
-								<div key={route.slug}>
-									<Link href={`/routes#${route.slug}`} className='section-title-sm rule-link-quiet'>
-										{route.name}
-									</Link>
-									<p className='mt-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
-										{route.nights} · base {route.base}
-									</p>
-									<p className='mt-4 text-[0.875rem] leading-7 text-[var(--ink-2)]'>{route.forWhom}</p>
+				{/* ---- Good to know: the city guide's practical tips ---- */}
+				{guide?.practical.length ? (
+					<AreaSection id='good-to-know' title='Good to know'>
+						{/* A row each (user decision): the topic and its icon on the left, the tip beside it. */}
+						<div className='grid gap-y-8'>
+							{guide.practical.map((tip) => {
+								const TipIcon = tipIcon(tip.topic)
+								return (
+								<div key={tip.topic + tip.text.slice(0, 20)} className='grid gap-x-12 gap-y-2 md:grid-cols-[16rem_minmax(0,1fr)]'>
+									<h3 className='flex items-start gap-2.5 font-[family-name:var(--font-display)] text-[1rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>
+										<TipIcon size={20} weight='duotone' className='mt-0.5 shrink-0 text-[var(--accent)]' aria-hidden='true' />
+										{tip.topic}
+									</h3>
+									<p className='max-w-[60rem] text-[0.9375rem] leading-[1.7] text-[var(--ink-2)]'>{tip.text}</p>
 								</div>
+								)
+							})}
+						</div>
+					</AreaSection>
+				) : null}
+
+				{/* ---- Town by town ---- */}
+				{towns.length ? (
+					<AreaSection
+						id='towns'
+						title='Town by town'
+						lede={`${towns.length} ${towns.length === 1 ? 'city or municipality' : 'cities and municipalities'}${TOWN_PAGES ? ', each with its own guide' : ''}.`}
+						aside={
+							province && directoryProvince ? (
+								<a href={`https://lgu.betterbarmm.com${areaHref(directoryProvince)}`} className='rule-link inline-flex items-center gap-1.5 text-[0.84375rem] font-semibold text-[var(--ink)]'>
+									Population and officials
+									<ArrowRightIcon size={13} weight='bold' aria-hidden='true' />
+								</a>
+							) : null
+						}
+					>
+						<ul className='grid gap-x-10 sm:grid-cols-2 lg:grid-cols-3'>
+							{towns.map(({ unit, town }) => (
+								<li key={unit.slug}>
+									{TOWN_PAGES ? (
+										<Link href={`/${area.slug}/${unit.slug}`} className='group flex items-baseline justify-between gap-3 py-3'>
+											<span className='text-[0.9375rem] font-semibold text-[var(--ink)] transition group-hover:text-[var(--accent)]'>{unit.name}</span>
+											<span className='shrink-0 font-mono text-[0.5625rem] uppercase tracking-[0.12em] text-[var(--ink-3)]'>
+												{!town ? 'Not yet researched' : town.coverage === 'none' ? 'Little online' : `${town.whereToGo.length} ${town.whereToGo.length === 1 ? 'place' : 'places'} · ${town.stay.length} ${town.stay.length === 1 ? 'stay' : 'stays'}`}
+											</span>
+										</Link>
+									) : (
+										<div className='flex items-baseline justify-between gap-3 py-3'>
+											<span className='text-[0.9375rem] font-semibold text-[var(--ink)]'>{unit.name}</span>
+											<span className='shrink-0 font-mono text-[0.5625rem] uppercase tracking-[0.12em] text-[var(--ink-3)]'>
+												{!town ? 'Not yet researched' : town.coverage === 'none' ? 'Little online' : `${town.whereToGo.length} ${town.whereToGo.length === 1 ? 'place' : 'places'} · ${town.stay.length} ${town.stay.length === 1 ? 'stay' : 'stays'}`}
+											</span>
+										</div>
+									)}
+								</li>
 							))}
-						</div>
-					</div>
-				</section>
-			) : null}
-
-			{/* ---- Onward ---------------------------------------------------- */}
-			<section className='mt-20'>
-				<div>
-					<OkirRule />
-					<div className='mt-10'>
-						<p className='bb-label'>The other areas</p>
-						<LineReveal
-							lines={['Six more, and none of them', 'travels like this one.']}
-							className='bb-display-sm mt-5 text-[var(--ink)]'
-						/>
-						<div className='mt-8 flex flex-wrap gap-2.5'>
-							{travelAreas
-								.filter((other) => other.slug !== area.slug)
-								.map((other) => (
-									<Link key={other.slug} href={`/${other.slug}`} className='bb-btn bb-btn-ghost'>
-										{other.name}
-									</Link>
-								))}
-						</div>
-					</div>
-				</div>
-			</section>
-				</div>
-
-				<aside className='order-first grid content-start gap-6 lg:order-none'>
-					<LocatorMap areaSlug={area.slug} label={area.name} />
-							{lead ? <PhotoFigure photo={lead} priority size='inset' /> : null}
-
-							<Caution label='Security in this area'>{area.safety}</Caution>
-
-							{areaFestivals.length ? (
-								<div className='border border-[var(--rule)] p-5'>
-									<p className='bb-label'>What is on</p>
-									<div className='mt-4 grid gap-4'>
-										{areaFestivals.map((festival) => (
-											<div key={festival.name}>
-												<p className='item-title'>{festival.name}</p>
-												<p className='mt-1 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
-													{festival.when}
-												</p>
-												<p className='mt-2 text-[0.84375rem] leading-6 text-[var(--ink-3)]'>
-													{festival.what}
-												</p>
-											</div>
-										))}
-									</div>
-								</div>
-							) : null}
-				</aside>
+						</ul>
+					</AreaSection>
+				) : null}
 			</div>
 		</>
 	)
 }
+
+/** One section of an area page: an anchor for the bar above, a heading and a line under it, and what it holds. */
+function AreaSection({
+	id,
+	title,
+	lede,
+	aside,
+	first = false,
+	children,
+}: {
+	id: string
+	title?: string
+	lede?: string
+	aside?: React.ReactNode
+	first?: boolean
+	children: React.ReactNode
+}) {
+	return (
+		<section id={id} className={`scroll-mt-[calc(var(--sticky-top,0px)+1.5rem)] ${first ? 'pt-14 lg:pt-16' : 'mt-16 border-t border-[var(--rule)] pt-14'}`}>
+			{title ? (
+				<div className='mb-8 flex flex-wrap items-end justify-between gap-x-8 gap-y-2'>
+					<div>
+						<h2 className='font-[family-name:var(--font-display)] text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{title}</h2>
+						{lede ? <p className='mt-2 max-w-[52rem] text-[0.9375rem] leading-7 text-[var(--ink-3)]'>{lede}</p> : null}
+					</div>
+					{aside}
+				</div>
+			) : null}
+			{children}
+		</section>
+	)
+}
+
+/** A fact in the row under the header: an icon, its label, its value. */
+function Fact({ icon: Glyph, label, children }: { icon: Icon; label: string; children: React.ReactNode }) {
+	return (
+		<div className='flex gap-3.5'>
+			<Glyph size={24} weight='duotone' className='mt-0.5 shrink-0 text-[var(--brass)]' aria-hidden='true' />
+			<div>
+				<dt className='tv-kind'>{label}</dt>
+				<dd className='mt-1 text-[0.9375rem] leading-snug text-[var(--ink)]'>{children}</dd>
+			</div>
+		</div>
+	)
+}
+
+/** A city guide's places as a compact list: the name, its kind and street, and the note from its source. */
+function CityList({ items }: { items: CityPlace[] }) {
+	return (
+		<ul className='mt-5 grid gap-x-12 gap-y-2 sm:grid-cols-2 lg:grid-cols-3'>
+			{items.map((item) => (
+				<li key={item.id} className='py-3'>
+					<p className='!font-[family-name:var(--font-display)] text-[0.9375rem] font-extrabold leading-snug tracking-[-0.015em] text-[var(--ink)]'>
+						{item.website ? (
+							<a href={item.website} target='_blank' rel='noreferrer' className='hover:text-[var(--accent)]'>
+								{item.name}
+							</a>
+						) : (
+							item.name
+						)}
+					</p>
+					<p className='mt-0.5 font-mono text-[0.59375rem] uppercase tracking-[0.12em] text-[var(--brass)]'>
+						{item.kind}
+						{item.halal ? ' · halal' : ''}
+					</p>
+					{item.area ? <p className='mt-1 text-[0.78125rem] text-[var(--ink-3)]'>{item.area}</p> : null}
+					<p className='mt-1.5 text-[0.84375rem] leading-[1.6] text-[var(--ink-2)]'>{item.note}</p>
+				</li>
+			))}
+		</ul>
+	)
+}
+
+/** A practical tip's icon, read off its topic. */
+const TIP_ICONS: [RegExp, Icon][] = [
+	[/air/i, AirplaneTiltIcon],
+	[/road/i, CarIcon],
+	[/around|transport/i, BusIcon],
+	[/money|cash|atm/i, MoneyIcon],
+	[/connect|signal|sim|internet/i, WifiHighIcon],
+	[/dress|conduct|manner/i, TShirtIcon],
+	[/safety|checkpoint/i, ShieldCheckIcon],
+	[/emergenc|hospital|health/i, FirstAidIcon],
+]
+const tipIcon = (topic: string): Icon => TIP_ICONS.find(([pattern]) => pattern.test(topic))?.[1] ?? InfoIcon
+

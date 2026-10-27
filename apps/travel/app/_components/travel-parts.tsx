@@ -1,4 +1,19 @@
 import { LineReveal, Rise } from '@betterbarmm/editorial'
+import type { TravelPhoto } from '../_lib/media'
+import { PhotoFigure } from './photo-figure'
+import {
+	AirplaneTiltIcon,
+	BoatIcon,
+	BusIcon,
+	CarIcon,
+	MopedIcon,
+	MotorcycleIcon,
+	MountainsIcon,
+	PathIcon,
+	SignpostIcon,
+	VanIcon,
+} from '@phosphor-icons/react/ssr'
+import type { Icon } from '@phosphor-icons/react'
 import { FOOTING_LABEL, PLACE_KIND_LABEL, type Place, type TravelFooting } from '@betterbarmm/travel-data'
 
 /* ============================================================
@@ -53,18 +68,21 @@ export function TravelMasthead({
 	kicker,
 	name,
 	note,
+	compact = false,
 	children,
 }: {
 	badges?: React.ReactNode
 	kicker: string
 	name: string
 	note?: string
+	/** Less air above and below (user decision), for a page whose photographs follow straight after — a place. */
+	compact?: boolean
 	children?: React.ReactNode
 }) {
 	return (
 		<>
 			<section className='bb-lattice brand-bg relative overflow-hidden'>
-				<div className='bb-container relative py-[clamp(3.75rem,7vw,6.5rem)]'>
+				<div className={`bb-container relative ${compact ? 'py-10 lg:py-12' : 'py-[clamp(3.75rem,7vw,6.5rem)]'}`}>
 					<Rise distance={12}>
 						<div className='flex flex-wrap items-center gap-2.5'>
 							{badges}
@@ -73,7 +91,7 @@ export function TravelMasthead({
 					</Rise>
 
 					<div className='lg:grid lg:grid-cols-[1.1fr_1fr] lg:items-end lg:gap-16'>
-						<LineReveal lines={[name]} delay={0.06} className='bb-display-md mt-5 text-[var(--ink)]' />
+						<LineReveal lines={[name]} delay={0.06} className={`bb-display-md mt-5 text-[var(--ink)] ${compact ? '!leading-[1.08]' : ''}`} />
 						{note ? (
 							<Rise delay={0.25} distance={14}>
 								<p className='mt-7 text-[0.9375rem] leading-7 text-[var(--ink-2)] lg:mt-0 lg:text-right lg:leading-6'>{note}</p>
@@ -86,8 +104,8 @@ export function TravelMasthead({
 			</section>
 
 			{children ? (
-				<section className='bg-[var(--paper-2)]'>
-					<div className='bb-container py-10'>{children}</div>
+				<section>
+					<div className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>{children}</div>
 				</section>
 			) : null}
 		</>
@@ -128,6 +146,62 @@ export function SectionHead({
 	)
 }
 
+/**
+ * One section of a guide page, written as general reading (user decision): a heading, an optional line under it, and
+ * the text in one column — no side panels, maps or summary boxes beside it.
+ */
+export function GuideSection({
+	id,
+	title,
+	lede,
+	photo,
+	children,
+}: {
+	id?: string
+	title: string
+	lede?: string
+	/** A photograph under the heading, where one belongs to the section (user decision: photos where useful). */
+	photo?: TravelPhoto
+	children: React.ReactNode
+}) {
+	return (
+		<section id={id} className='scroll-mt-[calc(var(--sticky-top,0px)+1.5rem)] border-t border-[var(--rule)] py-12 first:border-t-0 lg:py-16'>
+			<div className='max-w-[52rem]'>
+				<h2 className='font-[family-name:var(--font-display)] text-[1.625rem] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)]'>{title}</h2>
+				{lede ? <p className='mt-2 text-[0.9375rem] leading-7 text-[var(--ink-3)]'>{lede}</p> : null}
+				{photo ? <PhotoFigure photo={photo} className='tv-guide-photo' /> : null}
+				<div className='bb-prose mt-8 !max-w-none'>{children}</div>
+			</div>
+		</section>
+	)
+}
+
+/**
+ * A guide page's body (user decision): the sections down the left, and beside them a list of the page's sections that
+ * stays in view, so a long page can be read in any order and the right side is not left empty.
+ */
+export function GuideLayout({ toc, children }: { toc: { id: string; title: string }[]; children: React.ReactNode }) {
+	return (
+		<div className='bb-container grid gap-x-16 pb-16 lg:grid-cols-[minmax(0,1fr)_16rem]'>
+			<div className='min-w-0'>{children}</div>
+			<nav aria-label='On this page' className='hidden lg:block'>
+				<div className='sticky top-[calc(var(--sticky-top,0px)+2rem)] mt-12 border-l-2 border-[var(--brass)] pl-5 transition-[top] duration-300 lg:mt-16'>
+					<p className='bb-label'>On this page</p>
+					<ol className='mt-4 grid gap-2.5'>
+						{toc.map((item) => (
+							<li key={item.id}>
+								<a href={`#${item.id}`} className='text-[0.84375rem] leading-snug text-[var(--ink-3)] transition hover:text-[var(--accent)]'>
+									{item.title}
+								</a>
+							</li>
+						))}
+					</ol>
+				</div>
+			</nav>
+		</div>
+	)
+}
+
 /** A bulleted list where the marker is the estate's lozenge. */
 export function GateList({ items, label }: { items: string[]; label?: string }) {
 	if (!items.length) return null
@@ -141,6 +215,51 @@ export function GateList({ items, label }: { items: string[]; label?: string }) 
 						{item}
 					</li>
 				))}
+			</ul>
+		</div>
+	)
+}
+
+/** How an item travels, read off its own words: the first match wins, so "fly … then overland" is a flight. */
+const WAYS: [RegExp, Icon][] = [
+	[/airport|\bfly\b|flights?\b|by air/i, AirplaneTiltIcon],
+	[/ferr|boat|banca|fast craft|roro|crossing|sea conditions/i, BoatIcon],
+	[/habal-habal/i, MotorcycleIcon],
+	[/tricycle|multicab/i, MopedIcon],
+	[/\bbus(es)?\b/i, BusIcon],
+	[/\bvans?\b|jeepney/i, VanIcon],
+	[/hired vehicle|driver|ride-hailing|taxi/i, CarIcon],
+	[/uphill|rough/i, MountainsIcon],
+	[/road|overland|highway/i, PathIcon],
+]
+
+const wayIcon = (item: string): Icon => WAYS.find(([pattern]) => pattern.test(item))?.[1] ?? SignpostIcon
+
+/**
+ * Getting there, or getting around: one column (user decision), each line led by the way it travels — a plane, a
+ * boat, a van, a tricycle — so the list can be read down the icons before the words.
+ */
+export function WayList({ items, label, icon: Heading }: { items: string[]; label: string; icon: Icon }) {
+	if (!items.length) return null
+
+	return (
+		<div>
+			<h3 className='flex items-center gap-2.5 font-[family-name:var(--font-display)] text-[1.125rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
+				<Heading size={20} className='text-[var(--accent)]' aria-hidden='true' />
+				{label}
+			</h3>
+			<ul className='mt-4 grid gap-1'>
+				{items.map((item) => {
+					const Glyph = wayIcon(item)
+					return (
+						<li key={item} className='flex gap-4 py-2.5'>
+							<span className='grid size-10 shrink-0 place-items-center border border-[var(--rule)] bg-[var(--paper-2)] text-[var(--brass)]'>
+								<Glyph size={19} aria-hidden='true' />
+							</span>
+							<span className='self-center text-[0.9375rem] leading-[1.65] text-[var(--ink-2)]'>{item}</span>
+						</li>
+					)
+				})}
 			</ul>
 		</div>
 	)

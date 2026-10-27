@@ -1,6 +1,6 @@
 'use client'
 
-import { CaretDownIcon, HandHeartIcon, SquaresFourIcon } from '@phosphor-icons/react'
+import { CaretDownIcon, HandHeartIcon, HeartIcon, SquaresFourIcon } from '@phosphor-icons/react'
 import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo, UtilityMenuLinks } from '@betterbarmm/editorial'
 import { AnimatePresence, motion } from 'motion/react'
 import { travelAreas } from '@betterbarmm/travel-data'
@@ -8,10 +8,10 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import { ThemeToggle } from './theme-toggle'
+import { GUIDE_PAGES } from '../_lib/guide'
 
 const guide = [
 	{ href: '/routes', label: 'Routes' },
-	{ href: '/places', label: 'Places' },
 	{ href: '/food', label: 'Food' },
 	{ href: '/stays', label: 'Where to sleep' },
 	{ href: '/plan', label: 'Plan a trip' },
@@ -112,6 +112,7 @@ export function SiteNav() {
 			    reader actually needs mid-page is the bar under it. */}
 			<UtilityBar
 				base='https://betterbarmm.com'
+				current='travel'
 				className='bb-strip bg-[var(--paper-2)]'
 				switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
 				end={
@@ -159,11 +160,16 @@ export function SiteNav() {
 							onClick={closeMenu}
 							className='hidden whitespace-nowrap font-[family-name:var(--font-display)] text-[0.65625rem] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
 						>
-							Travel
+							Travel &amp; Places
 						</Link>
 					</div>
 
 					<nav className='hidden items-center justify-end gap-1 md:flex'>
+						{/* The places, browsed like stays: the front page. */}
+						<Link href='/' data-active={pathname === '/' || pathname.startsWith('/places')} className='nav-item'>
+							Explore
+						</Link>
+
 						<Menu label='Areas' active={isAreaActive} width='w-[19rem]'>
 							{(close) =>
 								travelAreas.map((area) => (
@@ -180,18 +186,30 @@ export function SiteNav() {
 							}
 						</Menu>
 
+						{GUIDE_PAGES ? (
 						<Menu label='The guide' active={isGuideActive} width='w-[15rem]'>
-							{(close) =>
-								guide.map((item) => (
-									<Link key={item.href} href={item.href} onClick={close} className='nav-menu-item'>
-										{item.label}
-									</Link>
-								))
-							}
-						</Menu>
+								{(close) =>
+									guide.map((item) => (
+										<Link key={item.href} href={item.href} onClick={close} className='nav-menu-item'>
+											{item.label}
+										</Link>
+									))
+								}
+							</Menu>
+						) : null}
 					</nav>
 
 					<div className='flex items-center justify-end gap-1.5'>
+						{/* The places this browser has hearted. */}
+						<Link
+							href='/saved'
+							data-active={pathname === '/saved'}
+							aria-label='Saved places'
+							className='nav-item inline-flex items-center gap-1.5'
+						>
+							<HeartIcon size={15} weight={pathname === '/saved' ? 'fill' : 'bold'} aria-hidden='true' />
+							<span className='hidden lg:inline'>Saved</span>
+						</Link>
 
 						<button
 							type='button'
@@ -238,7 +256,16 @@ export function SiteNav() {
 							aria-label='Mobile navigation'
 							className='mx-auto max-w-[88rem] px-6 py-6 text-sm text-[var(--ink-2)] lg:px-8 max-h-[calc(100dvh-7.5rem)] overflow-y-auto overscroll-contain'
 						>
-							<p className='bb-label'>Areas</p>
+							<div className='grid'>
+								<Link href='/' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 font-semibold text-[var(--ink)]'>
+									Explore places
+								</Link>
+								<Link href='/saved' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 font-semibold text-[var(--ink)]'>
+									Saved
+								</Link>
+							</div>
+
+							<p className='bb-label mt-7'>Areas</p>
 							<div className='mt-3 grid'>
 								{travelAreas.map((area) => (
 									<Link
@@ -253,6 +280,8 @@ export function SiteNav() {
 								))}
 							</div>
 
+							{GUIDE_PAGES ? (
+								<>
 							<p className='bb-label mt-7'>The guide</p>
 							<div className='mt-3 grid'>
 								{guide.map((item) => (
@@ -266,6 +295,8 @@ export function SiteNav() {
 									</Link>
 								))}
 							</div>
+								</>
+							) : null}
 
 							<UtilityMenuLinks base='https://betterbarmm.com' onNavigate={closeMenu} />
 						</nav>

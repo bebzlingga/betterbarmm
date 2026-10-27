@@ -16,7 +16,6 @@ export type MapPin = { id: string; lat: number; lon: number; name: string; categ
 export type MapCategory = { key: string; label: string; color: string }
 
 const TILE = 256
-const MIN_ZOOM = 11
 const MAX_ZOOM = 18
 
 /** World pixel position at zoom z. */
@@ -35,16 +34,31 @@ export function TileMap({
 	selected,
 	onSelect,
 	height = 460,
+	minZoom = 11,
+	focusZoom = 15,
+	card,
+	legend = true,
 }: {
 	pins: MapPin[]
 	categories: MapCategory[]
 	/** The pin to open, from outside the map (a card the reader tapped). */
 	selected?: string | null
 	onSelect?: (id: string | null) => void
-	height?: number
+	/** Pixels, or 'fill' to take the height of the box it is put in. */
+	height?: number | 'fill'
+	/** How far out the reader may zoom: 11 for a town, 6 for the region. */
+	minZoom?: number
+	/** The zoom a pin chosen from outside the map is brought to. */
+	focusZoom?: number
+	/** The open pin's card, in place of the name, note and map link. */
+	card?: (pin: MapPin) => React.ReactNode
+	/** The colour key under the map. */
+	legend?: boolean
 }) {
+	const MIN_ZOOM = minZoom
 	const box = useRef<HTMLDivElement>(null)
 	const [width, setWidth] = useState(0)
+	const [boxHeight, setBoxHeight] = useState(typeof height === 'number' ? height : 0)
 	const [view, setView] = useState<{ z: number; cx: number; cy: number } | null>(null)
 	const [open, setOpen] = useState<string | null>(null)
 	const drag = useRef<{ x: number; y: number; cx: number; cy: number } | null>(null)
@@ -53,15 +67,19 @@ export function TileMap({
 	useEffect(() => {
 		const el = box.current
 		if (!el) return
-		const observer = new ResizeObserver(([entry]) => setWidth(entry!.contentRect.width))
+		const observer = new ResizeObserver(([entry]) => {
+			setWidth(entry!.contentRect.width)
+			setBoxHeight(entry!.contentRect.height)
+		})
 		observer.observe(el)
 		return () => observer.disconnect()
 	}, [])
 
-	// Fit the pins once the width is known, and again when the set changes.
+	// Fit the pins once the size is known, and again when the set changes.
 	const fitKey = pins.map((p) => p.id).join(',')
 	useEffect(() => {
-		if (!width || !pins.length) return
+		const height = boxHeight
+		if (!width || !height || !pins.length) return
 		const lats = pins.map((p) => p.lat)
 		const lons = pins.map((p) => p.lon)
 		const [s, n, w, e] = [Math.min(...lats), Math.max(...lats), Math.min(...lons), Math.max(...lons)]
@@ -74,14 +92,14 @@ export function TileMap({
 		const c = project((s + n) / 2, (w + e) / 2, z)
 		setView({ z, cx: c.x, cy: c.y })
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [width, height, fitKey])
+	}, [width, boxHeight, fitKey])
 
 	// A pin chosen outside the map: open it and bring it into view.
 	useEffect(() => {
 		if (!selected || !view) return
 		const pin = pins.find((p) => p.id === selected)
 		if (!pin) return
-		const z = Math.max(view.z, 15)
+		const z = Math.max(view.z, focusZoom)
 		const c = project(pin.lat, pin.lon, z)
 		setView({ z, cx: c.x, cy: c.y })
 		setOpen(selected)
@@ -97,12 +115,12 @@ export function TileMap({
 		})
 
 	const tiles: { key: string; x: number; y: number; url: string }[] = []
-	if (view && width) {
+	if (view && width && boxHeight) {
 		const left = view.cx - width / 2
-		const top = view.cy - height / 2
+		const top = view.cy - boxHeight / 2
 		const count = 2 ** view.z
 		for (let tx = Math.floor(left / TILE); tx <= Math.floor((left + width) / TILE); tx++)
-			for (let ty = Math.floor(top / TILE); ty <= Math.floor((top + height) / TILE); ty++) {
+			for (let ty = Math.floor(top / TILE); ty <= Math.floor((top + boxHeight) / TILE); ty++) {
 				if (ty < 0 || ty >= count) continue
 				const wrapped = ((tx % count) + count) % count
 				tiles.push({
@@ -117,7 +135,7 @@ export function TileMap({
 	const place = (p: MapPin) => {
 		if (!view) return { x: -999, y: -999 }
 		const q = project(p.lat, p.lon, view.z)
-		return { x: q.x - view.cx + width / 2, y: q.y - view.cy + height / 2 }
+		return { x: q.x - view.cx + width / 2, y: q.y - view.cy + boxHeight / 2 }
 	}
 
 	const choose = (id: string | null) => {
@@ -126,11 +144,11 @@ export function TileMap({
 	}
 
 	return (
-		<figure className='m-0'>
+		<figure className={`m-0 ${height === 'fill' ? 'h-full' : ''}`}>
 			<div
 				ref={box}
-				className='relative touch-none select-none overflow-hidden rounded-2xl bg-[var(--paper-3)]'
-				style={{ height }}
+				className='relative h-full touch-none select-none overflow-hidden border border-[var(--rule)] bg-[var(--paper-3)]'
+				style={height === 'fill' ? undefined : { height }}
 				onPointerDown={(e) => {
 					if (!view) return
 					;(e.target as HTMLElement).setPointerCapture?.(e.pointerId)
@@ -151,14 +169,16 @@ export function TileMap({
 						src={t.url}
 						alt=''
 						draggable={false}
-						className='pointer-events-none absolute size-64 max-w-none dark:brightness-[0.8] dark:contrast-[1.1] dark:invert dark:hue-rotate-180'
-						style={{ left: t.x, top: t.y }}
+						/* Sized in pixels, not \`size-64\`: that is 16rem, and this estate's root type is smaller than 16px on a
+						   desktop, so tiles drawn at 16rem left seams between them. */
+						className='pointer-events-none absolute max-w-none dark:brightness-[0.8] dark:contrast-[1.1] dark:invert dark:hue-rotate-180'
+						style={{ left: t.x, top: t.y, width: TILE, height: TILE }}
 					/>
 				))}
 
 				{pins.map((p) => {
 					const { x, y } = place(p)
-					if (x < -20 || y < -20 || x > width + 20 || y > height + 20) return null
+					if (x < -20 || y < -20 || x > width + 20 || y > boxHeight + 20) return null
 					const active = open === p.id
 					return (
 						<button
@@ -184,8 +204,18 @@ export function TileMap({
 							if (!p) return null
 							const { x, y } = place(p)
 							return (
+								card ? (
+									/* A card above the pin, kept inside the map. */
+									<div
+										className='absolute z-30 w-72 overflow-hidden border border-[var(--ink)] bg-[var(--paper)] text-left shadow-[0_16px_40px_-16px_rgba(0,0,0,0.5)]'
+										style={{ left: Math.min(Math.max(x, 150), width - 150), top: Math.max(y - 40, 8), transform: `translate(-50%, ${y - 40 > 300 ? '-100%' : '0'})` }}
+										onPointerDown={(e) => e.stopPropagation()}
+									>
+										{card(p)}
+									</div>
+								) : (
 								<div
-									className='absolute z-30 w-60 -translate-x-1/2 rounded-xl bg-[var(--paper)] p-3 text-left shadow-[0_12px_32px_-12px_rgba(0,0,0,0.45)]'
+									className='absolute z-30 w-60 -translate-x-1/2 border border-[var(--ink)] bg-[var(--paper)] p-3 text-left'
 									style={{ left: Math.min(Math.max(x, 130), width - 130), top: Math.max(y - 48, 8), transform: 'translate(-50%, -100%)' }}
 									onPointerDown={(e) => e.stopPropagation()}
 								>
@@ -200,11 +230,12 @@ export function TileMap({
 										Open in a map app
 									</a>
 								</div>
+								)
 							)
 						})()
 					: null}
 
-				<div className='absolute right-3 top-3 z-30 grid overflow-hidden rounded-lg bg-[var(--paper)] shadow' onPointerDown={(e) => e.stopPropagation()}>
+				<div className='absolute right-3 top-3 z-30 grid overflow-hidden border border-[var(--rule)] bg-[var(--paper)]' onPointerDown={(e) => e.stopPropagation()}>
 					<button type='button' aria-label='Zoom in' onClick={() => zoom(1)} className='grid size-9 cursor-pointer place-items-center border-b border-[var(--rule)] text-[var(--ink)]'>
 						<PlusIcon size={16} weight='bold' />
 					</button>
@@ -224,14 +255,16 @@ export function TileMap({
 				</a>
 			</div>
 
+			{legend ? (
 			<figcaption className='mt-3 flex flex-wrap gap-x-4 gap-y-1.5'>
 				{categories.map((c) => (
 					<span key={c.key} className='inline-flex items-center gap-1.5 text-[0.75rem] text-[var(--ink-3)]'>
-						<span className='size-2.5 rounded-full' style={{ background: c.color }} aria-hidden='true' />
+						<span className='size-2.5 rotate-45' style={{ background: c.color }} aria-hidden='true' />
 						{c.label}
 					</span>
 				))}
 			</figcaption>
+			) : null}
 		</figure>
 	)
 }
